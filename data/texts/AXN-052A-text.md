@@ -5,7 +5,7 @@ title: "ZENODO DESCRIPTION FIELD CONTENT For: Glyphic Checksum: Personal Instanc
 creator: Kuro, Sen
 orcid: 0009-0000-1599-0703
 date: 2026-02-01
-content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
+content_type: Metadata packet
 license: CC-BY-4.0
 substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
 version: semi-restored v1.0

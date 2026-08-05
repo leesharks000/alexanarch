@@ -5,7 +5,7 @@ title: "EA-ERR-01: Correction of Adversarial Framing in Retrieval Architecture D
 creator: Sharks, Lee
 orcid: 0009-0000-1599-0703
 date: 2026-05-20
-content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
+content_type: Technical correction
 license: CC-BY-4.0
 substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
 version: semi-restored v1.0

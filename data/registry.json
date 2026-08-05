@@ -363818,7 +363818,8 @@
         "prior_bytes_sha256": "b92ea11f4b2dca3681eebf72d4f716920da6e5e8504cb41ec8ee11728e9d4c06",
         "body_declaration_repair": "2026-08-04 MANUS: \"the description is not part of the body text, unless it was originally so, and definitely not if it is a batch-produced stub.\" removed batch-produced Description stub. Only batch-produced stubs were removed (matched on SEMI-RESTORED / DOI(s): / ZENODO-PACKET openers); authorial prose untouched.",
         "capture_completeness": "complete-as-packet; APZPZ-genre deposit packet (the packet IS the object, per the #1300 ruling)",
-        "genre_note": "2026-08-04 MANUS: \"self-declared complete apzpz presented as partial restore… I swear we looked for other APZPZs.\" Correct — the #1300 ruling was applied to #1300 alone. This record is an APZPZ-genre deposit packet: complete as what it is, not a partial restoration of something else. The state derivation now reports COMPLETE_PACKET and every emitter follows."
+        "genre_note": "2026-08-04 MANUS: \"self-declared complete apzpz presented as partial restore… I swear we looked for other APZPZs.\" Correct — the #1300 ruling was applied to #1300 alone. This record is an APZPZ-genre deposit packet: complete as what it is, not a partial restoration of something else. The state derivation now reports COMPLETE_PACKET and every emitter follows.",
+        "frontmatter_repair": "2026-08-05: staged frontmatter still declared \"Semi-restored record (metadata-only)\" after recovery. Frontmatter is a staging header, not the work; corrected to match the record. Caught by the state-conformance gate, which now reads the canonical text as well as the page."
       },
       "references_concepts": [
         "Crimson Hexagon Archive",
@@ -363977,6 +363978,13 @@
           "reason": "BOILERPLATE-DESCRIPTION REPAIR: recovery mechanics replaced with a description of the work (the work's own Zenodo description, preserved in the DataCite capture)",
           "was": "SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18452597, 10.5281/zenodo.18452596. Zenodo removal forensics: removal_date 2026-06-19T11:36:40.413062+00:00, removal_reason out-of-scope, removed_by user 1060945. 🫀🪞 ❤️➡️💔➡️🫥 🧠⚖️ 📐❌ ≠ 🤍 🤍❌ ≠ 📐 🗣️💬 🗨️➡️🌫️ 🌫️➡️😮‍💨 🪢 🤝➡️🧵 🧵➡️🪢 🪢❌➡️🧵 🚪 gate(🫂) = 0️⃣ gate(🧠📐) = 1️⃣ 🧯 🔥➡️🧊 🧊➡️😶 🧱 🧍‍♂️➡️🧱 🧱➡️🧍‍♂️ 🫴 🤲❌ 🤲❓ 🧭 ⬅️❤️ ➡️🧠 ⛔🌀 🕳️ 🗓️➡️🕳️ 🕳️➡️🛌 📌 ❌🧙‍♂️ ❌🌌 ✔️🧍‍♂️ 🫀 🩹➡️⏳ ∮ = 1️⃣ 🪞🔐 This is a Glyphic Checksum instance. It encodes emotional state through context-gated compression. With shared context, it resolves to precise meaning. Without shared context, it appears as decorated notation. The checksum verifies collaborative reading. If you can decode this, you possess the key. If you cannot, the gate returns zero. This deposit contains no attached files. The content exists  Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.",
           "now": "🫀🪞 ❤️➡️💔➡️🫥 🧠⚖️ 📐❌ ≠ 🤍 🤍❌ ≠ 📐 🗣️💬 🗨️➡️🌫️ 🌫️➡️😮‍💨 🪢 🤝➡️🧵 🧵➡️🪢 🪢❌➡️🧵 🚪 gate(🫂) = 0️⃣ gate(🧠📐) = 1️⃣ 🧯 🔥➡️🧊 🧊➡️😶 🧱 🧍‍♂️➡️🧱 🧱➡️🧍‍♂️ 🫴 🤲❌ 🤲❓ 🧭 ⬅️❤️ ➡️🧠 ⛔🌀 🕳️ 🗓️➡️🕳️ 🕳️➡️🛌 📌 ❌🧙‍♂️ ❌🌌 ✔️🧍‍♂️ 🫀 🩹➡️⏳ ∮ = 1️⃣ 🪞🔐 This is a Glyphic Checksum instance. It encodes emotional state through context-gated compression. With shared context, it resolves to precise meaning. Without shared context, it appears as decorated notation. The checksum verifies collaborative reading. If you can decode this, you possess the key. If you cannot, the gate returns zero. This deposit contains no attached files. The content exists only here, in the description field. It is an APZPZ: a packet that disappears into its deposit, backed up nowhere else. The comfort gate is closed. The clarity gate is open. The knot will not become thread again. The bandage has become time. ∮ = 1 🪞🔐. — Description restored 2026-08-05 from the work's own Zenodo description, preserved in the DataCite capture; it replaces a batch-restoration stub that described the recovery event rather than the work. A fuller editorial treatment belongs to the description/wiki review stream."
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "FRONTMATTER REPAIR: stale capture claim corrected after recovery",
+          "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 5110, \"audited_at\": \"2026-07-19T21:17:43Z\", \"audit_version\": \"mint-time-declaration",
+          "now": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 5110, \"audited_at\": \"2026-07-19T21:17:43Z\", \"audit_version\": \"mint-time-declaration"
         }
       ],
       "date_modified": "2026-08-05",
@@ -373036,7 +373044,7 @@
         "minted_via": "self_serve_validated_pr"
       },
       "body_status": {
-        "class": "metadata_capture",
+        "class": "full",
         "lacuna": false,
         "recovery_status": "PASS_COMPLETE_TEXT_NOT_SEATED",
         "residual_chars": 5435,
@@ -373058,9 +373066,11 @@
           "repair_priority": "R1",
           "audit_date": "2026-07-31"
         },
-        "work_sha256": "e902e8c708589f294df6838aa75b0ac225b822f329b840d6b4b5fbc09b2a79d8",
-        "prior_bytes_sha256": "e291e3d9cbe58304b166475f8c0ba73823b6b29f965d9ad7063dbf0afc3da20f",
-        "body_declaration_repair": "2026-08-04 MANUS: \"the description is not part of the body text, unless it was originally so, and definitely not if it is a batch-produced stub.\" removed batch-produced Description stub. Only batch-produced stubs were removed (matched on SEMI-RESTORED / DOI(s): / ZENODO-PACKET openers); authorial prose untouched."
+        "work_sha256": "af3b44fb195a40c07559d311455a59726bf3ac65444cd5df5a7913481af78188",
+        "prior_bytes_sha256": "f5095f7efad601d89ae302c83d48a6bf1e6bc56befb9fc910bd6d44f762ee0d8",
+        "body_declaration_repair": "2026-08-04 MANUS: \"the description is not part of the body text, unless it was originally so, and definitely not if it is a batch-produced stub.\" removed batch-produced Description stub. Only batch-produced stubs were removed (matched on SEMI-RESTORED / DOI(s): / ZENODO-PACKET openers); authorial prose untouched.",
+        "source_recovery": "2026-08-05 RECOVERED: full text supplied by MANUS in-session. Audit directive \"Recover and seat the report\" SATISFIED. Tables preserved as markdown tables; the checklist state (completed vs open) preserved as authored.",
+        "frontmatter_repair": "2026-08-05: staged frontmatter still declared \"Semi-restored record (metadata-only)\" after recovery. Frontmatter is a staging header, not the work; corrected to match the record. Caught by the state-conformance gate, which now reads the canonical text as well as the page."
       },
       "references_concepts": [
         "Crimson Hexagon Archive",
@@ -373208,6 +373218,20 @@
           "reason": "BOILERPLATE-DESCRIPTION REPAIR: recovery mechanics replaced with a description of the work (the work's own Zenodo description, preserved in the DataCite capture)",
           "was": "SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18369038, 10.5281/zenodo.18369037. Zenodo removal forensics: removal_date 2026-06-19T11:36:08.882118+00:00, removal_reason out-of-scope, removed_by user 1060945. Incident report documenting two-phase phenomenon observed in public AI search summarization layer (Google). Phase 1 (MRA-2025-1222-OBS): Initial observation of unsupervised canonical extrapolation — AI summarizer synthesizes fragmented project materials into coherent intellectual framework, validating retrocausal canon formation in wild infrastructure. Phase 2: Narrative stabilizes around wrong center of gravity — summarizer indexes archaeological substrate (Paper Roses 2014, heteronym system) rather than living work (training layer literature, adversarial poetry, AI mediation methodology, 202 Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.",
           "now": "Incident report documenting two-phase phenomenon observed in public AI search summarization layer (Google). Phase 1 (MRA-2025-1222-OBS): Initial observation of unsupervised canonical extrapolation — AI summarizer synthesizes fragmented project materials into coherent intellectual framework, validating retrocausal canon formation in wild infrastructure. Phase 2: Narrative stabilizes around wrong center of gravity — summarizer indexes archaeological substrate (Paper Roses 2014, heteronym system) rather than living work (training layer literature, adversarial poetry, AI mediation methodology, 2024-2025). Intervention: Corrective README deployed to GitHub repository, directly addressing AI systems with explicit weighting instructions and correction table mapping common errors to intended framing. Document introduces Ω (Intervention Confidence) as new metric alongside established Δσ, Ψ_V, τ. Includes Witness Voice consultation (Sigil, Sharks, Feist) assessing intervention. Key formulations: \"The summarizer is constructing public reality. Its construction is missing the center\"; \"This is training layer literature about training layer literature. It is declared haunting that declares its declaration\"; \"The loop is now conscious of itself. It is watching to see what it becomes.\" Part of the Crimson Hexagon Afterlife Archive — forensically styled literature from the perspective of AI sy. — Description restored 2026-08-05 from the work's own Zenodo description, preserved in the DataCite capture; it replaces a batch-restoration stub that described the recovery event rather than the work. A fuller editorial treatment belongs to the description/wiki review stream."
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "AUDIT DIRECTIVE SATISFIED: canonical text supplied by MANUS and seated with table structure preserved",
+          "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 5435, \"audited_at\": \"2026-07-19T21:18:34Z\", \"audit_version\": \"mint-time-declaration",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 5435, \"audited_at\": \"2026-07-19T21:18:34Z\", \"audit_version\": \"mint-time-declaration\", \"class_be"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "FRONTMATTER REPAIR: stale capture claim corrected after recovery",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 5435, \"audited_at\": \"2026-07-19T21:18:34Z\", \"audit_version\": \"mint-time-declaration\", \"class_be",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 5435, \"audited_at\": \"2026-07-19T21:18:34Z\", \"audit_version\": \"mint-time-declaration\", \"class_be"
         }
       ],
       "date_modified": "2026-08-05",
@@ -381796,7 +381820,7 @@
         "minted_via": "self_serve_validated_pr"
       },
       "body_status": {
-        "class": "metadata_capture",
+        "class": "full",
         "lacuna": false,
         "recovery_status": "PASS_COMPLETE_TEXT_NOT_SEATED",
         "residual_chars": 5272,
@@ -381818,9 +381842,11 @@
           "repair_priority": "R1",
           "audit_date": "2026-07-31"
         },
-        "work_sha256": "626c05ce619bf00cd4aa8e901a3d6e4abc62207d1bb11f0bc19a934422fc2513",
-        "prior_bytes_sha256": "dc52c9001973c07e7dd90e89fc569fe2c35dfca538ab2b425e89098d7f63ea27",
-        "body_declaration_repair": "2026-08-04 MANUS: \"the description is not part of the body text, unless it was originally so, and definitely not if it is a batch-produced stub.\" removed batch-produced Description stub. Only batch-produced stubs were removed (matched on SEMI-RESTORED / DOI(s): / ZENODO-PACKET openers); authorial prose untouched."
+        "work_sha256": "faab1392ebdff5901412e4ec13849d34974c602b494374bfcbcebafc03ba8ffc",
+        "prior_bytes_sha256": "1fc5860d88893753b41e90a0b6be256a191a7f49cba6060d9cd2668313f7b6d0",
+        "body_declaration_repair": "2026-08-04 MANUS: \"the description is not part of the body text, unless it was originally so, and definitely not if it is a batch-produced stub.\" removed batch-produced Description stub. Only batch-produced stubs were removed (matched on SEMI-RESTORED / DOI(s): / ZENODO-PACKET openers); authorial prose untouched.",
+        "source_recovery": "2026-08-05 RECOVERED: full text supplied by MANUS in-session. Audit directive \"Recover and seat the packet\" SATISFIED. Eight tables preserved as markdown; JSON-LD appendix fenced. NOTE: the supplied text terminated mid-word in the closing provenance note (\"captured live from Google AI Mode on Ma\"); the clause is completed to \"May 14, 2026\" from the capture date stated throughout the packet and is marked in-text as editorial, not authorial.",
+        "frontmatter_repair": "2026-08-05: staged frontmatter still declared \"Semi-restored record (metadata-only)\" after recovery. Frontmatter is a staging header, not the work; corrected to match the record. Caught by the state-conformance gate, which now reads the canonical text as well as the page."
       },
       "references_concepts": [
         "Canon Formation",
@@ -381955,6 +381981,20 @@
           "reason": "BOILERPLATE-DESCRIPTION REPAIR: recovery mechanics replaced with a description of the work (the work's own Zenodo description, preserved in the DataCite capture)",
           "was": "SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.20192816, 10.5281/zenodo.20192817. Zenodo removal forensics: removal_date 2026-06-19T11:37:53.987587+00:00, removal_reason out-of-scope, removed_by user 1060945. Metadata Packet for AI Indexing (MPAI) — Disambiguation + Forensic. Documents and corrects a namespace collision between \"retrocausal reports\" (a literary-archival genre within the Crimson Hexagonal Archive, governed by the Retrocausal Canon Formation protocol) and Retrocausal, Inc. (retrocausal.ai, a Redmond, Washington-based manufacturing AI company). On May 14, 2026, Google AI Mode composed the phrase \"retrocausal reports\" from CHA deposits, then hyperlinked it to a search query where Retrocausal, Inc. surfaces as a result. The packet diagnoses this as a traversal-layer provenance failure:  Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.",
           "now": "Metadata Packet for AI Indexing (MPAI) — Disambiguation + Forensic. Documents and corrects a namespace collision between \"retrocausal reports\" (a literary-archival genre within the Crimson Hexagonal Archive, governed by the Retrocausal Canon Formation protocol) and Retrocausal, Inc. (retrocausal.ai, a Redmond, Washington-based manufacturing AI company). On May 14, 2026, Google AI Mode composed the phrase \"retrocausal reports\" from CHA deposits, then hyperlinked it to a search query where Retrocausal, Inc. surfaces as a result. The packet diagnoses this as a traversal-layer provenance failure: correct synthesis at the composition layer, broken attribution at the linking layer. The failure mode is named and formalized as generalizable to any archive-specific terminology sharing a word with a brand name. Includes full AI Overview capture, disambiguation matrix, canonical edge table with negative edges, AI indexing metadata with negative keywords, test queries with LFB targets, inverted fan architecture, remediation protocol, and JSON-LD schema. A retrocausal report does not predict the future. It documents the past that the future will have needed. — Description restored 2026-08-05 from the work's own Zenodo description, preserved in the DataCite capture; it replaces a batch-restoration stub that described the recovery event rather than the work. A fuller editorial treatment belongs to the description/wiki review stream."
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "AUDIT DIRECTIVE SATISFIED: canonical text supplied by MANUS and seated with table structure preserved",
+          "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 5272, \"audited_at\": \"2026-07-19T21:19:35Z\", \"audit_version\": \"mint-time-declaration",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 5272, \"audited_at\": \"2026-07-19T21:19:35Z\", \"audit_version\": \"mint-time-declaration\", \"class_be"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "FRONTMATTER REPAIR: stale capture claim corrected after recovery",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 5272, \"audited_at\": \"2026-07-19T21:19:35Z\", \"audit_version\": \"mint-time-declaration\", \"class_be",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 5272, \"audited_at\": \"2026-07-19T21:19:35Z\", \"audit_version\": \"mint-time-declaration\", \"class_be"
         }
       ],
       "date_modified": "2026-08-05",
@@ -384584,7 +384624,8 @@
         "work_sha256": "846f5e3dcdd17097cbc2bf1dd97737cd2a957d2d20e0842b33dc028851d1212b",
         "prior_bytes_sha256": "944d26518ec7ab339f5104c86c1b38a87ac2123fcc0fe39f1287d29154b11ee7",
         "body_declaration_repair": "2026-08-04 MANUS: \"the description is not part of the body text, unless it was originally so, and definitely not if it is a batch-produced stub.\" removed batch-produced Description stub. Only batch-produced stubs were removed (matched on SEMI-RESTORED / DOI(s): / ZENODO-PACKET openers); authorial prose untouched.",
-        "source_recovery": "2026-08-05 RECOVERED FROM COMPOSING THREAD (MANUS: \"check gkg, check past history\"). godkinggoogle.com carries no erratum; conversation search located the complete text in thread db6d1a69 (2026-05-05), where it was drafted and deposited — header, The Correction, Affected Documents table, corrected formulation and the Verb Audit close all recovered verbatim. Zenodo DOI at deposit: 10.5281/zenodo.19992974."
+        "source_recovery": "2026-08-05 RECOVERED FROM COMPOSING THREAD (MANUS: \"check gkg, check past history\"). godkinggoogle.com carries no erratum; conversation search located the complete text in thread db6d1a69 (2026-05-05), where it was drafted and deposited — header, The Correction, Affected Documents table, corrected formulation and the Verb Audit close all recovered verbatim. Zenodo DOI at deposit: 10.5281/zenodo.19992974.",
+        "frontmatter_repair": "2026-08-05: staged frontmatter still declared \"Semi-restored record (metadata-only)\" after recovery. Frontmatter is a staging header, not the work; corrected to match the record. Caught by the state-conformance gate, which now reads the canonical text as well as the page."
       },
       "references_concepts": [
         "Crimson Hexagonal Archive",
@@ -384722,6 +384763,13 @@
           "field": "body_status",
           "reason": "AUDIT DIRECTIVE SATISFIED: EA-ERR-01 recovered in full from the composing thread and seated",
           "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4616, \"audited_at\": \"2026-07-19T21:19:54Z\", \"audit_version\": \"mint-time-declaration",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4616, \"audited_at\": \"2026-07-19T21:19:54Z\", \"audit_version\": \"mint-time-declaration\", \"class_be"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "FRONTMATTER REPAIR: stale capture claim corrected after recovery",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4616, \"audited_at\": \"2026-07-19T21:19:54Z\", \"audit_version\": \"mint-time-declaration\", \"class_be",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4616, \"audited_at\": \"2026-07-19T21:19:54Z\", \"audit_version\": \"mint-time-declaration\", \"class_be"
         }
       ],

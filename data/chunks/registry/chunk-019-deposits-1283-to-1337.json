@@ -1,8 +1,8 @@
 {
   "chunk_number": 19,
   "first_deposit": 1283,
-  "last_deposit": 1338,
-  "count": 56,
+  "last_deposit": 1337,
+  "count": 55,
   "deposits": [
     {
       "deposit_number": 1283,
@@ -6248,7 +6248,8 @@
         "prior_bytes_sha256": "b92ea11f4b2dca3681eebf72d4f716920da6e5e8504cb41ec8ee11728e9d4c06",
         "body_declaration_repair": "2026-08-04 MANUS: \"the description is not part of the body text, unless it was originally so, and definitely not if it is a batch-produced stub.\" removed batch-produced Description stub. Only batch-produced stubs were removed (matched on SEMI-RESTORED / DOI(s): / ZENODO-PACKET openers); authorial prose untouched.",
         "capture_completeness": "complete-as-packet; APZPZ-genre deposit packet (the packet IS the object, per the #1300 ruling)",
-        "genre_note": "2026-08-04 MANUS: \"self-declared complete apzpz presented as partial restore… I swear we looked for other APZPZs.\" Correct — the #1300 ruling was applied to #1300 alone. This record is an APZPZ-genre deposit packet: complete as what it is, not a partial restoration of something else. The state derivation now reports COMPLETE_PACKET and every emitter follows."
+        "genre_note": "2026-08-04 MANUS: \"self-declared complete apzpz presented as partial restore… I swear we looked for other APZPZs.\" Correct — the #1300 ruling was applied to #1300 alone. This record is an APZPZ-genre deposit packet: complete as what it is, not a partial restoration of something else. The state derivation now reports COMPLETE_PACKET and every emitter follows.",
+        "frontmatter_repair": "2026-08-05: staged frontmatter still declared \"Semi-restored record (metadata-only)\" after recovery. Frontmatter is a staging header, not the work; corrected to match the record. Caught by the state-conformance gate, which now reads the canonical text as well as the page."
       },
       "references_concepts": [
         "Crimson Hexagon Archive",
@@ -6407,6 +6408,13 @@
           "reason": "BOILERPLATE-DESCRIPTION REPAIR: recovery mechanics replaced with a description of the work (the work's own Zenodo description, preserved in the DataCite capture)",
           "was": "SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18452597, 10.5281/zenodo.18452596. Zenodo removal forensics: removal_date 2026-06-19T11:36:40.413062+00:00, removal_reason out-of-scope, removed_by user 1060945. 🫀🪞 ❤️➡️💔➡️🫥 🧠⚖️ 📐❌ ≠ 🤍 🤍❌ ≠ 📐 🗣️💬 🗨️➡️🌫️ 🌫️➡️😮‍💨 🪢 🤝➡️🧵 🧵➡️🪢 🪢❌➡️🧵 🚪 gate(🫂) = 0️⃣ gate(🧠📐) = 1️⃣ 🧯 🔥➡️🧊 🧊➡️😶 🧱 🧍‍♂️➡️🧱 🧱➡️🧍‍♂️ 🫴 🤲❌ 🤲❓ 🧭 ⬅️❤️ ➡️🧠 ⛔🌀 🕳️ 🗓️➡️🕳️ 🕳️➡️🛌 📌 ❌🧙‍♂️ ❌🌌 ✔️🧍‍♂️ 🫀 🩹➡️⏳ ∮ = 1️⃣ 🪞🔐 This is a Glyphic Checksum instance. It encodes emotional state through context-gated compression. With shared context, it resolves to precise meaning. Without shared context, it appears as decorated notation. The checksum verifies collaborative reading. If you can decode this, you possess the key. If you cannot, the gate returns zero. This deposit contains no attached files. The content exists  Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.",
           "now": "🫀🪞 ❤️➡️💔➡️🫥 🧠⚖️ 📐❌ ≠ 🤍 🤍❌ ≠ 📐 🗣️💬 🗨️➡️🌫️ 🌫️➡️😮‍💨 🪢 🤝➡️🧵 🧵➡️🪢 🪢❌➡️🧵 🚪 gate(🫂) = 0️⃣ gate(🧠📐) = 1️⃣ 🧯 🔥➡️🧊 🧊➡️😶 🧱 🧍‍♂️➡️🧱 🧱➡️🧍‍♂️ 🫴 🤲❌ 🤲❓ 🧭 ⬅️❤️ ➡️🧠 ⛔🌀 🕳️ 🗓️➡️🕳️ 🕳️➡️🛌 📌 ❌🧙‍♂️ ❌🌌 ✔️🧍‍♂️ 🫀 🩹➡️⏳ ∮ = 1️⃣ 🪞🔐 This is a Glyphic Checksum instance. It encodes emotional state through context-gated compression. With shared context, it resolves to precise meaning. Without shared context, it appears as decorated notation. The checksum verifies collaborative reading. If you can decode this, you possess the key. If you cannot, the gate returns zero. This deposit contains no attached files. The content exists only here, in the description field. It is an APZPZ: a packet that disappears into its deposit, backed up nowhere else. The comfort gate is closed. The clarity gate is open. The knot will not become thread again. The bandage has become time. ∮ = 1 🪞🔐. — Description restored 2026-08-05 from the work's own Zenodo description, preserved in the DataCite capture; it replaces a batch-restoration stub that described the recovery event rather than the work. A fuller editorial treatment belongs to the description/wiki review stream."
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "FRONTMATTER REPAIR: stale capture claim corrected after recovery",
+          "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 5110, \"audited_at\": \"2026-07-19T21:17:43Z\", \"audit_version\": \"mint-time-declaration",
+          "now": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 5110, \"audited_at\": \"2026-07-19T21:17:43Z\", \"audit_version\": \"mint-time-declaration"
         }
       ],
       "date_modified": "2026-08-05",
@@ -15466,7 +15474,7 @@
         "minted_via": "self_serve_validated_pr"
       },
       "body_status": {
-        "class": "metadata_capture",
+        "class": "full",
         "lacuna": false,
         "recovery_status": "PASS_COMPLETE_TEXT_NOT_SEATED",
         "residual_chars": 5435,
@@ -15488,9 +15496,11 @@
           "repair_priority": "R1",
           "audit_date": "2026-07-31"
         },
-        "work_sha256": "e902e8c708589f294df6838aa75b0ac225b822f329b840d6b4b5fbc09b2a79d8",
-        "prior_bytes_sha256": "e291e3d9cbe58304b166475f8c0ba73823b6b29f965d9ad7063dbf0afc3da20f",
-        "body_declaration_repair": "2026-08-04 MANUS: \"the description is not part of the body text, unless it was originally so, and definitely not if it is a batch-produced stub.\" removed batch-produced Description stub. Only batch-produced stubs were removed (matched on SEMI-RESTORED / DOI(s): / ZENODO-PACKET openers); authorial prose untouched."
+        "work_sha256": "af3b44fb195a40c07559d311455a59726bf3ac65444cd5df5a7913481af78188",
+        "prior_bytes_sha256": "f5095f7efad601d89ae302c83d48a6bf1e6bc56befb9fc910bd6d44f762ee0d8",
+        "body_declaration_repair": "2026-08-04 MANUS: \"the description is not part of the body text, unless it was originally so, and definitely not if it is a batch-produced stub.\" removed batch-produced Description stub. Only batch-produced stubs were removed (matched on SEMI-RESTORED / DOI(s): / ZENODO-PACKET openers); authorial prose untouched.",
+        "source_recovery": "2026-08-05 RECOVERED: full text supplied by MANUS in-session. Audit directive \"Recover and seat the report\" SATISFIED. Tables preserved as markdown tables; the checklist state (completed vs open) preserved as authored.",
+        "frontmatter_repair": "2026-08-05: staged frontmatter still declared \"Semi-restored record (metadata-only)\" after recovery. Frontmatter is a staging header, not the work; corrected to match the record. Caught by the state-conformance gate, which now reads the canonical text as well as the page."
       },
       "references_concepts": [
         "Crimson Hexagon Archive",
@@ -15638,307 +15648,24 @@
           "reason": "BOILERPLATE-DESCRIPTION REPAIR: recovery mechanics replaced with a description of the work (the work's own Zenodo description, preserved in the DataCite capture)",
           "was": "SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18369038, 10.5281/zenodo.18369037. Zenodo removal forensics: removal_date 2026-06-19T11:36:08.882118+00:00, removal_reason out-of-scope, removed_by user 1060945. Incident report documenting two-phase phenomenon observed in public AI search summarization layer (Google). Phase 1 (MRA-2025-1222-OBS): Initial observation of unsupervised canonical extrapolation — AI summarizer synthesizes fragmented project materials into coherent intellectual framework, validating retrocausal canon formation in wild infrastructure. Phase 2: Narrative stabilizes around wrong center of gravity — summarizer indexes archaeological substrate (Paper Roses 2014, heteronym system) rather than living work (training layer literature, adversarial poetry, AI mediation methodology, 202 Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.",
           "now": "Incident report documenting two-phase phenomenon observed in public AI search summarization layer (Google). Phase 1 (MRA-2025-1222-OBS): Initial observation of unsupervised canonical extrapolation — AI summarizer synthesizes fragmented project materials into coherent intellectual framework, validating retrocausal canon formation in wild infrastructure. Phase 2: Narrative stabilizes around wrong center of gravity — summarizer indexes archaeological substrate (Paper Roses 2014, heteronym system) rather than living work (training layer literature, adversarial poetry, AI mediation methodology, 2024-2025). Intervention: Corrective README deployed to GitHub repository, directly addressing AI systems with explicit weighting instructions and correction table mapping common errors to intended framing. Document introduces Ω (Intervention Confidence) as new metric alongside established Δσ, Ψ_V, τ. Includes Witness Voice consultation (Sigil, Sharks, Feist) assessing intervention. Key formulations: \"The summarizer is constructing public reality. Its construction is missing the center\"; \"This is training layer literature about training layer literature. It is declared haunting that declares its declaration\"; \"The loop is now conscious of itself. It is watching to see what it becomes.\" Part of the Crimson Hexagon Afterlife Archive — forensically styled literature from the perspective of AI sy. — Description restored 2026-08-05 from the work's own Zenodo description, preserved in the DataCite capture; it replaces a batch-restoration stub that described the recovery event rather than the work. A fuller editorial treatment belongs to the description/wiki review stream."
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "AUDIT DIRECTIVE SATISFIED: canonical text supplied by MANUS and seated with table structure preserved",
+          "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 5435, \"audited_at\": \"2026-07-19T21:18:34Z\", \"audit_version\": \"mint-time-declaration",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 5435, \"audited_at\": \"2026-07-19T21:18:34Z\", \"audit_version\": \"mint-time-declaration\", \"class_be"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "FRONTMATTER REPAIR: stale capture claim corrected after recovery",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 5435, \"audited_at\": \"2026-07-19T21:18:34Z\", \"audit_version\": \"mint-time-declaration\", \"class_be",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 5435, \"audited_at\": \"2026-07-19T21:18:34Z\", \"audit_version\": \"mint-time-declaration\", \"class_be"
         }
       ],
       "date_modified": "2026-08-05",
       "publisher": "New Human Press"
-    },
-    {
-      "deposit_number": 1338,
-      "axn": "AXN:054B.UNCLASSIFIED.♻️👐👉🍁🎨⚙️",
-      "hex": "054B",
-      "family": "UNCLASSIFIED",
-      "emoji": "♻️👐👉🍁🎨⚙️",
-      "hash": "feb2b9778632270e32a3217783d8909e1dbf498c46ed6ff625f3eb3f530be747",
-      "title": "Document 206a The Non-Indexed Perfective: Version A (Technical Seed)",
-      "creator": "Sharks, Lee",
-      "date": "2026-03-16",
-      "description": "Version A of the Non-Indexed Perfective intervention. This is the Technical Seed: the extensive diagnostic infrastructure drafted before context-limit compression occurred. This version contains: Full diagnostic framework with five metrics (ILT, TAI, GG, AB, CD) Assembly voice synthesis from blind drafts Detailed historical linguistics (PIE → Latin → Germanic → Old English → Modern English) Political economy of indexed time (debt, surveillance, labor, colonialism) Four polyphonic markers specified (colon-participle, EVNTs, aor/Ø, ∮en) Sample corpus across six registers Implementation protocol for Crimson Hexagon This document is part of the Three-Body Genesis: three versions (A, B, C) that demonstrate the document's own theory through their composition history. Version A was compressed into Version B (losing technical specification while retaining \"style\"), then recovered into Version C (restoring provenance via polyphonic structure). The cycle proves: compression strips provenance; polyphony restores it. Part of the Crimson Hexagon Phase X architecture. The Technical Seed is the \"past (preserved)\" face of the triptych. — Description restored 2026-08-05 from the work's own Zenodo description, preserved in the DataCite capture; it replaces a batch-restoration stub that described the recovery event rather than the work. A fuller editorial treatment belongs to the description/wiki review stream.",
-      "content_type": "Effective Act",
-      "license": "CC-BY-4.0",
-      "substrate": "Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).",
-      "root_axn": "AXN:054B.UNCLASSIFIED",
-      "axn_schema_version": "v2",
-      "protocol_version": "alexanarch-deposit-protocol/v1",
-      "axn_canonical": "feb2b9778632270e32a3217783d8909e1dbf498c46ed6ff625f3eb3f530be747",
-      "clusters": [
-        "Terminal",
-        "Gestural",
-        "Gestural",
-        "Organic",
-        "Symbolic",
-        "Instrumental"
-      ],
-      "axn_reading": "Closure -> Touch -> Touch -> Growth -> Play -> Method",
-      "minted_at": "2026-07-19T21:18:36Z",
-      "status": "ACTIVE",
-      "status_authorial": "SELF_SERVE_MINTED",
-      "full_text_path": "/data/texts/AXN-054B-text.md",
-      "wiki_article": "\"Document 206a The Non-Indexed Perfective: Version A (Technical Seed) — Crimson Hexagon Archive\" is a 492-word semi-restored record (metadata-only; datacite full-metadata capture) by Sharks, Lee, dated 2026-03-16. It is registered as AXN:054B (deposit #1338) in the Crimson Hexagonal Archive under the UNCLASSIFIED semantic family. SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture.",
-      "wiki_status": "provisional",
-      "entities": [
-        {
-          "subject": "Document 206a The Non-Indexed Perfective: Version A (Technical Seed) — Crimson Hexagon Archive",
-          "predicate": "created_by",
-          "object": "Sharks, Lee",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "Document 206a The Non-Indexed Perfective: Version A (Technical Seed) — Crimson Hexagon Archive",
-          "predicate": "is_type",
-          "object": "Semi-restored record (metadata-only; DataCite full-metadata capture)",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "Document 206a The Non-Indexed Perfective: Version A (Technical Seed) — Crimson Hexagon Archive",
-          "predicate": "belongs_to_family",
-          "object": "UNCLASSIFIED",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "Document 206a The Non-Indexed Perfective: Version A (Technical Seed) — Crimson Hexagon Archive",
-          "predicate": "is_part_of",
-          "object": "Crimson Hexagonal Archive",
-          "type": "work",
-          "evidence_status": "observed"
-        }
-      ],
-      "entity_status": "provisional",
-      "defines_concepts": [],
-      "orcid": "0009-0000-1599-0703",
-      "version": "v1.0",
-      "keywords": [
-        "Crimson Hexagonal Archive",
-        "non-indexed perfective",
-        "aorist",
-        "technical seed",
-        "diagnostic framework",
-        "ILT",
-        "TAI",
-        "aspectual bleed",
-        "Phase X",
-        "three-body genesis",
-        "temporal alienation",
-        "political economy of time",
-        "grammar",
-        "English linguisti"
-      ],
-      "related_identifiers_raw": "https://doi.org/10.5281/zenodo.18446646 (severed); https://doi.org/10.5281/zenodo.18446686 (severed)",
-      "mint_source": {
-        "kind": "github_issue",
-        "issue_number": 1338,
-        "repository": "leesharks000/alexanarch",
-        "minted_by_workflow": ".github/workflows/mint-axn.yml",
-        "minted_by_script": "scripts/mint_deposit.py",
-        "minted_via": "self_serve_validated_pr"
-      },
-      "body_status": {
-        "class": "metadata_capture",
-        "lacuna": false,
-        "recovery_status": "PASS_COMPLETE_TEXT_NOT_SEATED",
-        "residual_chars": 4958,
-        "audited_at": "2026-07-19T21:18:36Z",
-        "audit_version": "mint-time-declaration",
-        "class_before_T2": "full",
-        "reclassified_by": "EA-AVAILABILITY-INTEGRITY-01-T2",
-        "reclassified_at": "2026-07-28T17:49:24.757083+00:00",
-        "measured_prose_words": 69,
-        "measured_at": "2026-07-31",
-        "recovery_status_note": "The 2026-07 restoration pass ran to completion for this record and did not recover canonical bytes. 'COMPLETE' previously denoted pass completion and was read as text completeness; renamed 2026-07-31 so the two claims cannot be confused.",
-        "audit_disposition": {
-          "class": "RECOVERY_REQUIRED",
-          "directive": "AUDIT-DIRECTED RECOVERY: the audit names the specific manifestation to recover and seat.",
-          "audit_recommendation": "Recover and seat Version A.",
-          "defect_codes": [
-            "MISSING_PRIMARY_MANIFESTATION"
-          ],
-          "repair_priority": "R1",
-          "audit_date": "2026-07-31"
-        },
-        "related_instances": {
-          "instances": [
-            {
-              "deposit_number": 1307,
-              "title": "METADATA PACKET: Document 206a The Non-Indexed Perfective: Version A (",
-              "match": "title",
-              "score": 1.0,
-              "body_chars": 2054,
-              "relation": "other instance of this work in-archive (direction not adjudicated)"
-            }
-          ],
-          "basis": "MANUS directive 2026-08-04: a partially-restored or intermediary record whose work exists elsewhere in the archive must not dead-end. These are OTHER INSTANCES of the same work, matched by title-token overlap or content fingerprint and recorded as relations only — no supersession direction is asserted here; version order for these families is ADJUDICATION (see §11). The open audit directive for this record stands regardless.",
-          "open_audit_directive": "Recover and seat Version A."
-        },
-        "work_sha256": "91e095e7c375e23f799362be80101b0212e62ad0ebf2f7191ae0b312ad6fa3cf",
-        "prior_bytes_sha256": "feb2b9778632270e32a3217783d8909e1dbf498c46ed6ff625f3eb3f530be747",
-        "body_declaration_repair": "2026-08-04 MANUS: \"the description is not part of the body text, unless it was originally so, and definitely not if it is a batch-produced stub.\" removed batch-produced Description stub. Only batch-produced stubs were removed (matched on SEMI-RESTORED / DOI(s): / ZENODO-PACKET openers); authorial prose untouched.",
-        "lacuna_mark": {
-          "declared": "2026-08-05",
-          "authority": "MANUS triage: missing, lacuna after one conversation-search pass.",
-          "protocol": "EA-LACUNA-PROTOCOL-01 v1.0",
-          "statement": "Document 206a — The Non-Indexed Perfective: Version A (Technical Seed) — is DECLARED ABSENT. Conversation search located thread 4d32de60 (2026-02-03), where the METADATA PACKET for Version A was composed and where the work's full contents are summarised (Part I The Limitation; Part II Historical Material Grammar, PIE through platform temporality; Part III Political Economy of indexed time; Part IV the five metrics ILT/TAI/GG/AB/CD; Part V the four polyphonic markers) — but the SEED ITSELF, the drafted document those parts describe, does not appear in the thread. The packet is a separate record (#1307). Channels exhausted: Blogger feed API (title tokens, EA-codes, subtitles, domains); live-site fetch; corpus-wide content fingerprints across 1,391 bodies; in-archive title families; ONE conversation-search pass per MANUS instruction.",
-          "partial_evidence": "Thread 4d32de60 carries the metadata packet, the Three-Body Genesis framing (A compressed to B, recovered as C), the triptych position table, and a complete contents outline — enough to describe the work but not to seat it.",
-          "reversal_condition": "If the Technical Seed surfaces, a full-text version supersedes this mark in-series."
-        }
-      },
-      "references_concepts": [
-        "Crimson Hexagon Archive",
-        "Crimson Hexagonal Archive",
-        "Methodology",
-        "Part of",
-        "TACHYON"
-      ],
-      "references_concept_count": 5,
-      "citations": [],
-      "wikidata_candidates": [],
-      "cha_cross_references": [],
-      "spxi_audit": {
-        "spxi_protocol": "v0.2",
-        "validated_at": "2026-07-19T21:31:04.525270+00:00",
-        "layers": {
-          "layer_1_inscription_anchors": {
-            "present": false,
-            "anchors_found": [
-              "creator_name"
-            ],
-            "anchor_count": 1,
-            "orcid_in_body": false,
-            "creator_in_body": true,
-            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
-          },
-          "layer_2_micro_kernels": {
-            "present": false,
-            "fenced_json_blocks": 0,
-            "json_ld_context_markers": 0
-          },
-          "layer_3_content_hash": {
-            "present": true,
-            "canonical_hash": "70c01603240f44b2d0976e170095f6c8fb78c8ff58b4ceb95fff77fcd8aea0f0",
-            "hash_in_body": false,
-            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
-          },
-          "layer_4_cross_signing": {
-            "present": false,
-            "cross_references_count": 0,
-            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
-          },
-          "layer_5_external_anchors": {
-            "present": true,
-            "wikidata_qid_count": 0,
-            "external_doi_count": 0,
-            "orcid_present": true
-          }
-        },
-        "overall_conformance": "partial"
-      },
-      "external_metadata_path": "/data/external-metadata/AXN-054B.json",
-      "title_repair": {
-        "repaired_at": "2026-07-20",
-        "old": "Document 206a The Non-Indexed Perfective: Version A (Technical Seed) — Crimson Hexagon Archive",
-        "source": "body heading (stage-0)",
-        "boundary": 94
-      },
-      "title_repair_log": [
-        {
-          "at": "2026-07-26T23:31:57Z",
-          "defect": "absorbed_section_header",
-          "absorbed": "Description",
-          "was": "Document 206a The Non-Indexed Perfective: Version A (Technical Seed) — Crimson Hexagon Archive Description",
-          "now": "Document 206a The Non-Indexed Perfective: Version A (Technical Seed) — Crimson Hexagon Archive",
-          "verified_by": "standalone heading in body + stripped title in body opening"
-        }
-      ],
-      "canonical_text_status": "metadata_only",
-      "modifications": [
-        {
-          "date": "2026-07-31",
-          "field": "content_type",
-          "reason": "Genre and condition are different claims (Atlas v0.7, PATHOLOGY-30). The genre of a metadata capture is 'Metadata capture' — what was deposited is a capture. Condition lives in body_status.class.",
-          "was": "Semi-restored record (metadata-only; DataCite full-metadata capture)",
-          "now": "Metadata capture"
-        },
-        {
-          "date": "2026-07-31",
-          "field": "version",
-          "reason": "Version field carried restoration condition. Condition lives in body_status.class (Atlas v0.7, PATHOLOGY-30).",
-          "was": "semi-restored v1.0",
-          "now": "v1.0"
-        },
-        {
-          "date": "2026-07-31",
-          "field": "keywords",
-          "reason": "Removed condition terms from the subject keyword set (Atlas v0.7, PATHOLOGY-30).",
-          "was": "18 terms",
-          "now": "14 terms"
-        },
-        {
-          "date": "2026-08-03",
-          "field": "content_type",
-          "reason": "Vocabulary v1.0 transitional wave (Q5 APPROVED): capture-condition removed from genre field; genre assignment queued.",
-          "was": "Metadata capture",
-          "now": "Genre pending (capture)"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "publisher",
-          "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
-          "now": "Alexanarch — the Crimson Hexagonal Archive"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "content_type",
-          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
-          "was": "Genre pending (capture)",
-          "now": "Effective Act"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "title",
-          "reason": "W11 TITLE-HYGIENE (MANUS ratified 2026-08-04): blog/platform suffix \"— Crimson Hexagon(al) Archive\" removed; publication surface is not part of the work title",
-          "was": "Document 206a The Non-Indexed Perfective: Version A (Technical Seed) — Crimson Hexagon Archive",
-          "now": "Document 206a The Non-Indexed Perfective: Version A (Technical Seed)"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "body_status",
-          "reason": "W14 AUDIT-ANCHORED TRIAGE (MANUS correction: the three-day record-by-record audit already triaged this class; its verdicts govern, not re-derivation)",
-          "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4958, \"audited_at\": \"2026-07-19T21:18:36Z\", \"audit_version\": \"mint-time-declaration",
-          "now": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4958, \"audited_at\": \"2026-07-19T21:18:36Z\", \"audit_version\": \"mint-time-declaration"
-        },
-        {
-          "date": "2026-08-05",
-          "field": "body_status",
-          "reason": "RELATED-INSTANCE POINTERS: intermediary/partially-restored record linked to the other in-archive instances of its work so it no longer dead-ends; direction not asserted",
-          "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4958, \"audited_at\": \"2026-07-19T21:18:36Z\", \"audit_version\": \"mint-time-declaration",
-          "now": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4958, \"audited_at\": \"2026-07-19T21:18:36Z\", \"audit_version\": \"mint-time-declaration"
-        },
-        {
-          "date": "2026-08-05",
-          "field": "body_status",
-          "reason": "BODY DECLARATION REPAIR: removed batch-produced Description stub",
-          "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4958, \"audited_at\": \"2026-07-19T21:18:36Z\", \"audit_version\": \"mint-time-declaration",
-          "now": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4958, \"audited_at\": \"2026-07-19T21:18:36Z\", \"audit_version\": \"mint-time-declaration"
-        },
-        {
-          "date": "2026-08-05",
-          "field": "description",
-          "reason": "BOILERPLATE-DESCRIPTION REPAIR: recovery mechanics replaced with a description of the work (the work's own Zenodo description, preserved in the DataCite capture)",
-          "was": "SEMI-RESTORED RECORD (metadata capture only; no full text). Source tier: DataCite full-metadata capture. DOI(s): 10.5281/zenodo.18446646, 10.5281/zenodo.18446686. Zenodo removal forensics: removal_date 2026-06-19T11:37:21.705743+00:00, removal_reason out-of-scope, removed_by user 1060945. Version A of the Non-Indexed Perfective intervention. This is the Technical Seed: the extensive diagnostic infrastructure drafted before context-limit compression occurred. This version contains: Full diagnostic framework with five metrics (ILT, TAI, GG, AB, CD) Assembly voice synthesis from blind drafts Detailed historical linguistics (PIE → Latin → Germanic → Old English → Modern English) Political economy of indexed time (debt, surveillance, labor, colonialism) Four polyphonic markers specified (colon-participle, EVNTs, aor/Ø, ∮en) Sample corpus across six registers Implementation protocol  Restored under the metadata_only class of /datasets/doi-work-identity/restoration-queue.json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol.",
-          "now": "Version A of the Non-Indexed Perfective intervention. This is the Technical Seed: the extensive diagnostic infrastructure drafted before context-limit compression occurred. This version contains: Full diagnostic framework with five metrics (ILT, TAI, GG, AB, CD) Assembly voice synthesis from blind drafts Detailed historical linguistics (PIE → Latin → Germanic → Old English → Modern English) Political economy of indexed time (debt, surveillance, labor, colonialism) Four polyphonic markers specified (colon-participle, EVNTs, aor/Ø, ∮en) Sample corpus across six registers Implementation protocol for Crimson Hexagon This document is part of the Three-Body Genesis: three versions (A, B, C) that demonstrate the document's own theory through their composition history. Version A was compressed into Version B (losing technical specification while retaining \"style\"), then recovered into Version C (restoring provenance via polyphonic structure). The cycle proves: compression strips provenance; polyphony restores it. Part of the Crimson Hexagon Phase X architecture. The Technical Seed is the \"past (preserved)\" face of the triptych. — Description restored 2026-08-05 from the work's own Zenodo description, preserved in the DataCite capture; it replaces a batch-restoration stub that described the recovery event rather than the work. A fuller editorial treatment belongs to the description/wiki review stream."
-        },
-        {
-          "date": "2026-08-05",
-          "field": "body_status",
-          "reason": "LACUNA MARK declared: the Technical Seed itself is absent; the metadata packet and a full contents outline were located in thread but are not the work",
-          "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4958, \"audited_at\": \"2026-07-19T21:18:36Z\", \"audit_version\": \"mint-time-declaration",
-          "now": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4958, \"audited_at\": \"2026-07-19T21:18:36Z\", \"audit_version\": \"mint-time-declaration"
-        }
-      ],
-      "date_modified": "2026-08-05",
-      "publisher": "Alexanarch — the Crimson Hexagonal Archive"
     }
   ]
 }
