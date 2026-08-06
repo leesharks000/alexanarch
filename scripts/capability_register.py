@@ -237,6 +237,23 @@ def probe_axn_resolver():
     return {"measure": 1, "detail": f"{d['hex']} resolves with full form"}
 
 
+def probe_node_declaration():
+    """The federation declaration must match live registry state. Generating it is
+    not enough: a generator with a bug would automate the lie instead of ending it,
+    so this compares PUBLISHED values against the PUBLISHED registry."""
+    d = get_json("/.well-known/axn-node.json")
+    reg = get_json("/data/registry.json", timeout=120)
+    deps = reg["deposits"] if isinstance(reg, dict) else reg
+    actual = len(deps)
+    declared = d.get("deposit_count")
+    assert declared == actual, (
+        f"node declaration advertises {declared} deposits, registry holds {actual} "
+        f"— divergence {abs(actual - (declared or 0))}. This is F1: a root node lying "
+        f"about its own state is how a federation silently diverges.")
+    assert d.get("registry_head"), "declaration carries no registry_head"
+    return {"measure": actual, "detail": "declared deposit_count == live registry"}
+
+
 PROBES = {
     "body-search": probe_body_search,
     "metadata-search": probe_metadata_search,
@@ -251,6 +268,7 @@ PROBES = {
     "stamp-page": probe_stamp_page,
     "lexical": probe_lexical,
     "axn-resolver": probe_axn_resolver,
+    "node-declaration": probe_node_declaration,
 }
 
 

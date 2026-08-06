@@ -45,3 +45,15 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+# ── F1 (2026-08-06): the federation declaration is COMPUTED on every commit.
+# It once advertised 342 fewer deposits than the archive held, for nineteen days.
+# A stale root head is how a federation silently diverges, so the number is made
+# uncomputable by hand rather than merely corrected.
+try:
+    import subprocess as _sp, sys as _sys, pathlib as _pl
+    _sp.run([_sys.executable, str(_pl.Path(__file__).resolve().parent / "generate_node_declaration.py")],
+            check=False)
+except Exception as _e:
+    print(f"  (node declaration not regenerated: {_e})")

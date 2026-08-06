@@ -67,6 +67,11 @@
   {
    "path": "/data/doi-resolution-index.json",
    "why": "DOI resolution index"
+  },
+  {
+   "path": "/.well-known/axn-node.json",
+   "must_contain_key": "registry_head",
+   "why": "the federation declaration — a stale root head is how peers silently diverge (F1)"
   }
  ]
 }
