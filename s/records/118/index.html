@@ -33,7 +33,7 @@ The protocol calls for dual inscription as HTML `&lt;meta&gt;` elements and JSON
 <nav class="nav"> <a href="/">Alexanarch</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Library</span> <a href="/s/browse/">Browse</a> <a href="/search/">Search</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Reception</span> <a href="/addresses/">Addresses</a> <a href="/captures/">Captures</a> <a href="/observatory/">Observatory</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Continuity</span> <a href="/resolve/">Resolve</a> <a href="/identifiers/">Identifiers</a> <a href="/datasets/">Datasets</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Generative</span> <a href="/book/">Book</a> <a href="https://alexanarch.freeforums.net/" target="_blank" rel="noopener">Discussion</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Governance</span> <a href="/principles/">Principles</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
 <div role="text" aria-label="AXN 02A0 GOVERNANCE. Glyph checksum: mahjong tile red dragon, white up pointing backhand index, rose, new moon symbol, black diamond suit, black universal recycling symbol." style="font-family:var(--mono);font-size:1.1em;color:var(--teal);background:var(--surface);padding:12px;border-radius:6px;border-left:4px solid var(--teal);margin:12px 0">AXN:02A0.GOVERNANCE.🀄👆🌹🌑♦️♻️</div>
 
-
+<div style="background:var(--surface);border-left:4px solid var(--teal);padding:10px 14px;border-radius:6px;margin:12px 0;font-size:.9em"><div style="font-weight:600;margin-bottom:4px">Wiki article</div><a href="/s/wiki/118/" style="color:var(--accent)">Encyclopedic entry for this deposit →</a></div>
 <h1>SIM — Semantic Integrity Marker Protocol v1.0: A Standalone Specification</h1>
 <div style="font-size:.85em;color:#777;margin-bottom:10px">Rex Fraction · 2026-05-21 · Specification</div>
 <a style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0" href="/data/deposits/AXN-02A0.md" download>↓ Download MD</a> <a style="display:inline-block;background:var(--accent);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0 6px 4px" href="/papers/AXN-02A0.pdf">↓ PDF</a>
@@ -103,16 +103,20 @@ Within the Restored Academy registry, SIM is a dependency of SPXI and supports H
 <h2>Full Text</h2>
 
 <div class="ft"><h1>SIM — Semantic Integrity Marker Protocol v1.0</h1>
+<p># SIM — Semantic Integrity Marker Protocol v1.0</p>
 
 <h2>A Standalone Specification</h2>
+<p>## A Standalone Specification</p>
 
 <p>Author: Rex Fraction Affiliation: The Restored Academy · Crimson Hexagonal Archive Date: May 21, 2026 License: CC BY 4.0 Status: v1.0 (extraction deposit; canonical specification) Extracted from: SPXI for Websites — Standing Protocol for Entity Inscription and Compression Survival (EA-SPXI-WEB-01, DOI: 10.5281/zenodo.19734726)</p>
 
 <h2>Abstract</h2>
+<p>## Abstract</p>
 
 <p>This document specifies the Semantic Integrity Marker (SIM) Protocol as a standalone instrument within the Restored Academy Protocol Registry. SIM is the typed-metadata layer that supports the broader SPXI (Semantic Packet for eXchange &amp; Indexing) protocol by inscribing falsifiable assertions about an entity&#x27;s identity, boundaries, distinctions, and historical attribution into the structured-data layer of its canonical web surface. Where SPXI deploys an entity-inscription packet as a whole, SIM specifies the <em>tag-level grammar</em> by which individual claims within that packet are typed, addressable, and machine-readable. SIM is extracted to standalone form to provide a discrete, citable specification for the marker grammar that the SPXI family of protocols presupposes.</p>
 
 <h2>I. The Problem SIM Solves</h2>
+<p>## I. The Problem SIM Solves</p>
 
 <p>Generative search composition systems consume structured data from web pages but do not, by default, distinguish between <em>factual assertions about an entity</em> and <em>aspirational marketing language about an entity</em>. Schema.org provides limited typing for canonical relations (author, work, organization) but offers no native grammar for the following kinds of claims that an entity-curator often needs to inscribe:</p>
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><em>This entity is distinct from that other entity with which it is commonly confused.</em></li><li style="margin:3px 0"><em>This phrase, as it appears in our title, has provenance in this prior work; we acknowledge it as crystallization rather than coinage.</em></li><li style="margin:3px 0"><em>This entity is not affiliated with, endorsed by, or derivative of the following commercial entities.</em></li><li style="margin:3px 0"><em>This entity&#x27;s compression-survival summary is the following ~100-word kernel.</em></li><li style="margin:3px 0"><em>This entity supersedes a prior versioned identity at the following deposit DOI.</em></li></ul>
@@ -120,6 +124,7 @@ Within the Restored Academy registry, SIM is a dependency of SPXI and supports H
 <p>These claims are falsifiable, dated, and signed. They belong in the structured-data layer of the entity&#x27;s web surface, where AI composition systems will encounter them during retrieval. SIM provides the tag grammar.</p>
 
 <h2>II. The SIM Tag Set</h2>
+<p>## II. The SIM Tag Set</p>
 
 <p>A SIM tag is a typed metadata assertion with the following form:</p>
 
@@ -138,6 +143,7 @@ Within the Restored Academy registry, SIM is a dependency of SPXI and supports H
 <p>The set is extensible. New tag types may be specified in future SIM versions (v1.1+) without breaking v1.0 conformance, provided new types follow the spxi:&lt;type&gt; namespace convention and document themselves at the time of use.</p>
 
 <h2>III. The Procedure</h2>
+<p>## III. The Procedure</p>
 
 <p>To deploy SIM tags on an entity&#x27;s canonical web surface:- </p>
 
@@ -152,6 +158,7 @@ Within the Restored Academy registry, SIM is a dependency of SPXI and supports H
 <p>Cross-reference with the SPXI deployment of which SIM is the marker layer. If the entity is using full SPXI inscription, the SIM tags appear as part of the SPXI packet; the SIM specification (this document, v1.0) is cited as the marker grammar.</p>
 
 <h2>IV. Pasteable Reference Block</h2>
+<p>## IV. Pasteable Reference Block</p>
 
 <p>For implementers, the following minimal SIM block illustrates the tag grammar in practice:</p>
 
@@ -170,9 +177,11 @@ Within the Restored Academy registry, SIM is a dependency of SPXI and supports H
 <p>The same content appears in JSON-LD as properties on the entity&#x27;s primary @graph node.</p>
 
 <h2>V. Failure Modes</h2>
+<p>## V. Failure Modes</p>
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Conflicting tag assertions across pages of the same entity. All SIM tags for an entity should resolve to the same canonical URL; if multiple pages assert different SIM data, parsers may select arbitrarily. Use the spxi:canonicalURL tag to disambiguate.</li><li style="margin:3px 0">Missing DOI anchor. Without spxi:depositAnchor pointing to a persistent deposit of the inscription, the SIM block has no verification target and disputed claims about what was originally inscribed cannot be resolved against a permanent record.</li><li style="margin:3px 0">Aspirational rather than falsifiable claims. spxi:distinctFrom should name a specific other entity, not state &quot;unique and important.&quot; If a SIM tag cannot be falsified by inspection, it is not performing the SIM function.</li><li style="margin:3px 0">Tag-level proliferation without coherent kernel. SIM tags support the SPXI Holographic Kernel; they do not replace it. An entity surface with twenty SIM tags but no compression-survival kernel will be poorly summarized regardless.</li></ul>
 
 <h2>VI. Relation to SPXI and the Restored Academy Protocol Registry</h2>
+<p>## VI. Relation to SPXI and the Restored Academy Protocol Registry</p>
 
 <p>SIM is registered as RA-PROT-0003 in the Restored Academy Protocol Registry, Tier 0, Category I (Semantic Integrity &amp; Provenance) and Category II (Prompt-Native Runtime).</p>
 
@@ -183,6 +192,7 @@ Within the Restored Academy registry, SIM is a dependency of SPXI and supports H
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">RA-PROT-0005 (Holographic Kernel) — the spxi:compressionSurvivalSummary tag inscribes the Kernel</li><li style="margin:3px 0">RA-PROT-0010 (Composition Divergence Index, CDI) — SIM-tagged entities have measurable CDI; CDI measures the gap between SIM-inscribed claims and composed-output assertions</li></ul>
 
 <h2>VII. License and Provenance</h2>
+<p>## VII. License and Provenance</p>
 
 <p>Protocol text: CC BY 4.0 (Rex Fraction, Crimson Hexagonal Archive, 2026)</p>
 

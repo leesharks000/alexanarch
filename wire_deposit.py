@@ -930,6 +930,7 @@ def regenerate_static_page(d, eidx, registry=None):
                 # link, and never inline anything but a known image host.
                 _im = re.match(r'^\s*!?\[[^\]]*\]\((https?://[^\s\)]+|/[^\s\)]+\.(?:png|jpe?g|gif|webp|svg))(?:\s+&quot;[^&]*&quot;)?\)\s*$', line, re.I) \
                       or re.match(r'^\s*(https?://\S+\.(?:png|jpe?g|gif|webp))\s*$', line, re.I) \
+                      or re.match(r'^\s*[-*]\s+(https://blogger\.googleusercontent\.com/img/\S+)\s*$', line) \
                       or re.match(r'^\s*(https://blogger\.googleusercontent\.com/img/\S+)\s*$', line)
                 if _im:
                     _u = _im.group(1)
@@ -1291,6 +1292,19 @@ def regenerate_static_page(d, eidx, registry=None):
                 f'<a href="/s/records/{_rel["deposit_number"]}/" style="color:var(--accent)">'
                 f'#{_rel["deposit_number"]} — {esc(str(_rel.get("title",""))[:80])}</a>'
                 f'<div style="color:#666;font-size:.88em;margin-top:4px">{esc(str(_rel.get("relation","")))}</div></div>')
+
+    # WIKI LINK (MANUS 2026-08-06): the wiki page links to its record, but the
+    # record never linked back — a one-directional relation on a surface MANUS
+    # identifies as "a primary compression surface for the work" and which AI
+    # Overview is already citing. A reader on a record could not reach its
+    # article.
+    if (d.get('wiki_article') or '').strip():
+        rel_block += (
+            '<div style="background:var(--surface);border-left:4px solid var(--teal);padding:10px 14px;'
+            'border-radius:6px;margin:12px 0;font-size:.9em">'
+            '<div style="font-weight:600;margin-bottom:4px">Wiki article</div>'
+            f'<a href="/s/wiki/{d["deposit_number"]}/" style="color:var(--accent)">'
+            f'Encyclopedic entry for this deposit →</a></div>')
 
     _pt = _bs.get('primary_text_attachment') if isinstance(_bs, dict) else None
     if _pt and _pt.get('attachment'):

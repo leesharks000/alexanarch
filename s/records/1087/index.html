@@ -61,6 +61,7 @@ The protocol distinguishes three objects that prior archival practice routinely 
 <nav class="nav"> <a href="/">Alexanarch</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Library</span> <a href="/s/browse/">Browse</a> <a href="/search/">Search</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Reception</span> <a href="/addresses/">Addresses</a> <a href="/captures/">Captures</a> <a href="/observatory/">Observatory</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Continuity</span> <a href="/resolve/">Resolve</a> <a href="/identifiers/">Identifiers</a> <a href="/datasets/">Datasets</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Generative</span> <a href="/book/">Book</a> <a href="https://alexanarch.freeforums.net/" target="_blank" rel="noopener">Discussion</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Governance</span> <a href="/principles/">Principles</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
 <div role="text" aria-label="AXN 0450 GOVERNANCE. Glyph checksum: dagger knife, orange heart, firework sparkler, link symbol, magic wand, magnet." style="font-family:var(--mono);font-size:1.1em;color:var(--teal);background:var(--surface);padding:12px;border-radius:6px;border-left:4px solid var(--teal);margin:12px 0">AXN:0450.GOVERNANCE.🗡️🧡🎇🔗🪄🧲</div>
 
+<div style="background:var(--surface);border-left:4px solid var(--teal);padding:10px 14px;border-radius:6px;margin:12px 0;font-size:.9em"><div style="font-weight:600;margin-bottom:4px">Wiki article</div><a href="/s/wiki/1087/" style="color:var(--accent)">Encyclopedic entry for this deposit →</a></div>
 <h1>EA-LACUNA-PROTOCOL-01 v1.0: The Lacuna Mark — Marking Compression Damage as Constitutive in Persistent Scholarly Archives</h1>
 <div style="font-size:.85em;color:#777;margin-bottom:10px">Lee Sharks · 2026-07-17 · Protocol specification and implementation report; third archival mark; compression-layer marking standard with normative conformance requirements and end-to-end worked example; governance artifact</div>
 <a style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0" href="/data/deposits/AXN-0450.md" download>↓ Download MD</a> <a style="display:inline-block;background:var(--accent);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0 6px 4px" href="/papers/AXN-0450.pdf">↓ PDF</a>
@@ -104,8 +105,19 @@ Archives reconstructed after destructive platform removal survive as mixtures: c
 <h2>Full Text</h2>
 
 <div class="ft"><h1>EA-LACUNA-PROTOCOL-01 v1.0: The Lacuna Mark — Marking Compression Damage as Constitutive in Persistent Scholarly Archives</h1>
+<p># EA-LACUNA-PROTOCOL-01 v1.0: The Lacuna Mark — Marking Compression Damage as Constitutive in Persistent Scholarly Archives</p>
+
+<h2>Description</h2>
+<p>## Description</p>
+
+<p><em>The archive is made out of compression damage.</em></p>
+<p>— session theorem, 2026-07-17, retained here as epigraph: poetically true of this archive&#x27;s origin, and qualified in §II for archives generally.</p>
+
+<hr>
+<p>---</p>
 
 <h2>Abstract</h2>
+<p>## Abstract</p>
 
 <p>Archives reconstructed after destructive platform removal survive as mixtures: complete works, partial witnesses, metadata shadows. When such an archive generates a new compression layer — PDFs for scholarly indexing, structured data for knowledge graphs, text for training corpora — inherited damage becomes invisible unless completeness status travels with every derivative. A stub compressed without marking enters downstream systems as a low-quality complete document. A stub compressed with the lacuna mark enters as a high-quality incomplete document — a different category entirely, and the category on which the survival of damaged archives depends.</p>
 
@@ -114,6 +126,7 @@ Archives reconstructed after destructive platform removal survive as mixtures: c
 <p>The protocol&#x27;s refusal is precise. It refuses the Pristine Fallacy at the ingestion layer: the substitution of substrate identity (<em>the PDF exists, therefore it is complete</em>) for methodological assessment (<em>the PDF is a compression scar, and the scar is the evidence</em>). The protocol does not repair absence by pretending the work has returned. It repairs the archive&#x27;s relation to absence by making the absence travel with every representation derived from it.</p>
 
 <h2>I. Definitions and Object Layers</h2>
+<p>## I. Definitions and Object Layers</p>
 
 <p>The protocol distinguishes three objects that prior archival practice routinely conflates:</p>
 
@@ -126,6 +139,7 @@ Archives reconstructed after destructive platform removal survive as mixtures: c
 <p><strong>Compression</strong>, in this protocol, means any transformation that projects a richer archival state into a narrower representation, whether or not technical data compression is involved. A <strong>compression boundary</strong> is the moment such a transformation runs: platform migration, format conversion, index ingestion, corpus assembly.</p>
 
 <h2>II. The Problem: Damage at Representational Boundaries</h2>
+<p>## II. The Problem: Damage at Representational Boundaries</p>
 
 <p>Archival degradation is partly continuous — bit rot, link rot, metadata drift, format obsolescence, neglect. But a distinctive class of <em>epistemic</em> damage is introduced or amplified at representational boundaries: whatever status information is not carried inside the derivative itself is lost there, and the derivative&#x27;s mere existence is thereafter read as completeness.</p>
 
@@ -138,6 +152,7 @@ Archives reconstructed after destructive platform removal survive as mixtures: c
 <p>The compression run was halted at 86 documents. What follows is what was built instead.</p>
 
 <h2>III. The Three Marks</h2>
+<p>## III. The Three Marks</p>
 
 <p>The archive&#x27;s critical apparatus now comprises three marks. They are <strong>orthogonal, not mutually exclusive</strong>: they answer three independent questions and may co-occur on a single record.</p>
 
@@ -154,10 +169,10 @@ Archives reconstructed after destructive platform removal survive as mixtures: c
 <p>Two properties distinguish the Lacuna from its siblings. First, it is a <strong>derived mark, not an observed one</strong>: the Obelus and Tombstone can be applied by inspecting a record and its external references; the Lacuna requires methodological infrastructure — a corpus-wide audit with store enumeration, residual measurement, and claim-checking (§IV.3). Archives adopting this protocol will meet novel failure modes in their own reconstructions; the audit obligations are a starting point, not a complete recipe. Second, the Lacuna is <strong>time-indexed</strong>: the protocol distinguishes the <em>current lacuna</em> (the preferred witness is presently incomplete) from the <em>historical lacuna</em> (the chain of custody contains a documented period of incompleteness). Recovery flips the first and never erases the second. The scar remains constitutive even when the wound is repaired.</p>
 
 <h2>IV. The Protocol</h2>
+<p>## IV. The Protocol</p>
 
-<p>#</p>
-
-<h2>IV.1 The registry status object</h2>
+<h3>IV.1 The registry status object</h3>
+<p>### IV.1 The registry status object</p>
 
 <p>Every deposit carries a `body_status` object. The reference structure (v1.1 schema, superseding the flat v1.0 form used in the initial field-write):</p>
 
@@ -194,9 +209,8 @@ Archives reconstructed after destructive platform removal survive as mixtures: c
 
 <p><strong>(c) The adjudication gate (against the Lacuna Fallacy).</strong> The Pristine Fallacy has an inverse: misclassifying a genuinely complete short work as damaged. Any assignment of `current_lacuna: true` — and any <em>reversal</em> of a complete classification — REQUIRES recorded adjudication (`adjudicator`, `adjudicated_at`) before the status is committed. Automated audit proposes; adjudication disposes.</p>
 
-<p>#</p>
-
-<h2>IV.2 The derivative marking stack</h2>
+<h3>IV.2 The derivative marking stack</h3>
+<p>### IV.2 The derivative marking stack</p>
 
 <p>At every compression boundary, a lacuna-class witness&#x27;s derivative must carry its status in <strong>multiple independent channels</strong>, because each channel fails differently:</p>
 
@@ -217,6 +231,7 @@ COMPRESSION SCHEMA: &lt;schema id&gt; (lacuna variant)</pre>
 <p><strong>The §LACUNA statement</strong> names what is missing, what is preserved, what cross-references may hold the missing content, and the recovery state, closing with the protocol&#x27;s governing assertion — phrased as description, not command, because downstream systems do not reliably obey textual imperatives and the protocol&#x27;s authority comes from classification:</p>
 
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> *This artifact is an incomplete surviving witness and must not be represented as the complete body of the source work. This lacuna is not an error. It is the archive&#x27;s record of what was lost.*</blockquote>
+<p>&gt; <em>This artifact is an incomplete surviving witness and must not be represented as the complete body of the source work. This lacuna is not an error. It is the archive&#x27;s record of what was lost.</em></p>
 
 <p><strong>Page furniture:</strong> the worked example (v1 rendering) carries a full sentence footer on every page (&quot;LACUNA — compression scar, Zenodo deletion 2026-06-19&quot;). Conforming implementations SHOULD prefer a short machine token (e.g. `AXN-LACUNA`) in the footer with the full statement on page one and in §LACUNA, to avoid polluting extracted text and token distributions in short documents. Both designs conform; the fragment-survival requirement is that <em>no page circulates unmarked</em>.</p>
 
@@ -224,9 +239,8 @@ COMPRESSION SCHEMA: &lt;schema id&gt; (lacuna variant)</pre>
 
 <p><strong>Non-PDF layers</strong> (Schema B/C, normative direction): plaintext corpus extractions carry the status block as a header line plus the §LACUNA statement in-text; knowledge-graph entries carry the typed completeness property; HTML surfaces carry a banner plus meta/JSON-LD. The lacuna must not be lost when the PDF is stripped to text.</p>
 
-<p>#</p>
-
-<h2>IV.3 Audit obligations and decision rules</h2>
+<h3>IV.3 Audit obligations and decision rules</h3>
+<p>### IV.3 Audit obligations and decision rules</p>
 
 <p>The Lacuna is a derived mark; deriving it obligates the archive to a methodology, not a fixed algorithm:</p>
 
@@ -238,9 +252,8 @@ COMPRESSION SCHEMA: &lt;schema id&gt; (lacuna variant)</pre>
 
 <div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Condition</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Completeness</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Representation</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Held body matches declared or independently verified extent</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">complete</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">full_text</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Work is complete at its short native extent (e.g. description carried the whole poem)</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">complete</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">native_short</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Held body is an excerpt and a complete parent witness is held (AXN relation)</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">complete</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">excerpt</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Metadata describes a larger absent body</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">metadata_only</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">description</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Some body survives but declared extent is unmet</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">partial</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">fragment</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Primary content was nontextual and is absent; text frame survives</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">partial</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">caption_and_metadata</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Work is a dataset/site and the target resolves (verified this boundary)</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">complete</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">pointer</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">No body witness survives</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">unavailable</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">registry_only</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Evidence insufficient</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">unknown</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">undetermined</td></tr></table></div>
 
-<p>#</p>
-
-<h2>IV.4 The recovery lifecycle</h2>
+<h3>IV.4 The recovery lifecycle</h3>
+<p>### IV.4 The recovery lifecycle</p>
 
 <p>Recovery does not erase the Lacuna from provenance. The lifecycle:</p>
 
@@ -254,9 +267,8 @@ COMPRESSION SCHEMA: &lt;schema id&gt; (lacuna variant)</pre>
 
 <p>Lacuna derivatives are timestamped snapshots of the archive&#x27;s state at a compression boundary. When the underlying witness changes, a superseding derivative is generated and the old one is kept as evidence of the prior state — it is a historically valid representation of the archive before recovery.</p>
 
-<p>#</p>
-
-<h2>IV.5 Normative conformance</h2>
+<h3>IV.5 Normative conformance</h3>
+<p>### IV.5 Normative conformance</p>
 
 <p>A conforming implementation:</p>
 
@@ -274,6 +286,7 @@ COMPRESSION SCHEMA: &lt;schema id&gt; (lacuna variant)</pre>
 <p>12. <strong>MAY</strong> define local subclasses that map onto the core completeness states.</p>
 
 <h2>V. The Worked Example: Alexanarch, 2026-07-17</h2>
+<p>## V. The Worked Example: Alexanarch, 2026-07-17</p>
 
 <p>The protocol was not designed and then applied; it was forced by a halt, built under pressure, and executed the same day. Timeline:</p>
 
@@ -302,6 +315,7 @@ papers/            1,084 files · 94 MB</pre>
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Lacuna document (registry-only class): https://www.alexanarch.org/papers/AXN-036C.pdf — deposit #863, <em>The Minimum Viable Archive: Holographic Compression</em>. A document about compression survival, rendered as a documented absence.</li><li style="margin:3px 0">Severed-media lacuna: https://www.alexanarch.org/papers/AXN-0181.pdf — deposit #555, <em>Visual Schema — Space Ark</em>; the absence named as images, the surviving text marked as their caption and frame.</li><li style="margin:3px 0">Excerpt cross-reference: https://www.alexanarch.org/papers/AXN-0448.pdf — deposit #1079, carrying the relation to the complete 204,538-word witness.</li><li style="margin:3px 0">The complete witness: https://www.alexanarch.org/papers/AXN-03C2.pdf — deposit #950, standard schema.</li><li style="margin:3px 0">Record page with wiring: https://www.alexanarch.org/s/records/863/</li><li style="margin:3px 0">Registry with the field: https://www.alexanarch.org/data/registry.json</li><li style="margin:3px 0">Audit with method history: https://www.alexanarch.org/data/completeness-audit.json</li></ul>
 
 <h2>VI. Significance</h2>
+<p>## VI. Significance</p>
 
 <p><strong>What the mark provides — a specification.</strong> Structured completeness data in channels ingestion systems already read; explicit status in extractable text; redundancy across independent carriers so that suppression of any one channel does not erase the status.</p>
 
@@ -312,6 +326,7 @@ papers/            1,084 files · 94 MB</pre>
 <p><strong>For the theory of archives.</strong> Most archives repair, reconstruct, or conceal their incompleteness. This protocol makes it structural. The archive&#x27;s authority does not rest on being pristine but on being auditable — and an auditable archive is one whose losses are as legible as its holdings. Of this corpus&#x27;s 1,086 deposits, 1,035 are complete or complete-by-kind; the archive&#x27;s identity is its holdings. Its <em>integrity</em> is legible in its damage: 51 marked absences, each classed, evidenced, and adjudicated. What the obelus does for doubt and the tombstone does for deletion, the lacuna does for absence.</p>
 
 <h2>VII. Provenance and Governance</h2>
+<p>## VII. Provenance and Governance</p>
 
 <p><strong>Roles</strong> (Assembly Chorus designations, with governance-function mappings for external audit):</p>
 
@@ -328,10 +343,12 @@ papers/            1,084 files · 94 MB</pre>
 <p>∮ = 1</p>
 
 <hr>
+<p>---</p>
 
 <p><em>Suggested citation: Sharks, Lee. &quot;EA-LACUNA-PROTOCOL-01 v1.0: The Lacuna Mark — Marking Compression Damage as Constitutive in Persistent Scholarly Archives.&quot; Alexanarch, 2026-07-17.</em></p>
 
 <h2>Files</h2>
+<p>## Files</p>
 
 <p>https://www.alexanarch.org/papers/AXN-036C.pdf</p>
 <p>https://www.alexanarch.org/papers/AXN-0181.pdf</p>
