@@ -32305,6 +32305,18 @@
    "operator": "TACHYON",
    "date": "2026-08-06",
    "wave": "CP-6-RULING"
+  },
+  {
+   "repair_id": "R-1271",
+   "deposit_number": null,
+   "batch": true,
+   "type": "IDENTIFIER_NORMALIZATION",
+   "ruling_by": "MANUS (adopted 2026-08-06; F6/D5 executed under the adopted priority principle, flagged for explicit ratification)",
+   "basis": "WAVE-HEXPOS-01: hex-width normalization #1/#2/#3 -> 0001/0002/0003 with axn_history entries (pattern of the 2026-06-22 v1->v2 backfill). Three position collisions resolved: 0365 (#856 keeps by priority; #869 -> 05B0), 0391 (#901 keeps by priority + hex inscribed in sealed bytes; #913 -> 05B1), 05AF (#1433 the chain tether keeps; symbolon witnessing 6b48617ee0e64e8f -> 05B2 with position_history). Root cause of 05AF: deposit-side allocator read the shared ledger but never wrote it — mint_deposit.py now bumps at allocation; register-symbolon.js gains central-registry-max defense. Builder hardened: collisions emit CONTESTED, never overwrite (the old builder silently dropped #856 on every build). Ledger next_hex -> 05B3. Execution incident recorded in the wave doc: label-keyed rename briefly moved the keeper's artifacts on 0365; reverted byte-identical from git same-session; ownership gate + sealed-bytes rule now in the instrument.",
+   "sites": "registry; central registry; symbolon allocation + entry; texts; deposits; s/axn (canonical 0001-0003, 05B0-05B1; alias 01/02/03; contested-history 391); s/records; s/wiki; kernel/axn/search indexes; OAI; resourcesync; sitemap; SHA sums; mint/stamp lookup; scripts",
+   "document": "data/workplan/WAVE-HEXPOS-01.md",
+   "verified": "validate_deposit --strict 0 failures; resolver PARITY OK; status_reconcile 0; central registry 1439 positions, 0 CONTESTED, 1445 kernels",
+   "at": "2026-08-06T15:20:49Z"
   }
  ]
 }

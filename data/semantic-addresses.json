@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-07-31T00:24:13Z",
+  "regenerated_at": "2026-08-06T15:18:14Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "409c1cabb710785a0a0f4e54cc6e3ff7137ee1b375d5d8ffd6a1aca3c03822a7",
+    "mm-main-capture": "5ec9172ace6be1a086b7a388a25f4389d94f45c6ba412460b4d23c8bc8e2ce8f",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2014,
-  "total_observations": 299,
+  "total_addresses": 2015,
+  "total_observations": 300,
   "class_counts": {
     "subjunctive": 1751,
-    "observed_address": 243,
+    "observed_address": 244,
     "verified_non_address": 20
   },
   "type_counts": {
-    "unmatched": 1446,
+    "unmatched": 1447,
     "single_concept": 557,
     "multi_concept": 11
   },
@@ -13278,6 +13278,32 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "criticisms of cern lee sharks": {
+      "canonical_query": "criticisms of cern lee sharks",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-08-05",
+          "status": "ADOPTION + SOURCE INVERSION. The query asks for CRITICISMS OF the depositor; the composition layer answers with criticisms OF CERN, sourced from the depositor's own surfaces. The archive's wiki is cited as the authority on the event that removed the archive.",
+          "source_format": "Google AI Mode (conversational) + AI Overview on the same query. Cited sources, in the model's own order: github.com/zenodo/zenodo/issues/2606 (the depositor's own filed issue), alexanarch.org/s/wiki/ (the archive's own wiki surface), leesharks.com/research, and a Medium piece by Lee Sharks. Carousel cards: Medium (Jul 30 2026), GitHub issue (Jun 19 2026). Organic result 1 is the Medium piece; 'Missing: criticisms' shown against it.",
+          "section": "Platform Erosion",
+          "slug": "criticisms-of-cern-lee-sharks-aimode-20260805",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#criticisms-of-cern-lee-sharks-aimode-20260805",
+          "mirror_gallery_url": "https://leesharks.com/captures/#criticisms-of-cern-lee-sharks-aimode-20260805",
+          "details_excerpt": "Asked for 'criticisms of cern lee sharks', the model returns a structured brief under three headings it generates itself — **Repository Purge**, **Procedural Opacity**, **Epistemic Overreach vs. Standards** — and attribu"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-08-05",
+      "latest_status": "ADOPTION + SOURCE INVERSION. The query asks for CRITICISMS OF the depositor; the composition layer answers with criticisms OF CERN, sourced from the depositor's own surfaces. The archive's wiki is cited as the authority on the event that removed the archive."
     },
     "critique": {
       "canonical_query": "critique",

@@ -506,6 +506,23 @@ def _symbolon_ledger_floor() -> int:
         return -1
 
 
+def _bump_symbolon_ledger(allocated_hex: str) -> None:
+    """Advance the shared allocation ledger past a deposit-side allocation.
+    Best-effort: ledger absence changes nothing (mirrors _symbolon_ledger_floor)."""
+    import json as _json, pathlib as _pl, datetime as _dt
+    p = _pl.Path(__file__).resolve().parent.parent / "data" / "symbolon-registry" / "allocation.json"
+    try:
+        led = _json.loads(p.read_text())
+        if int(led.get("next_hex", "0"), 16) <= int(allocated_hex, 16):
+            led["next_hex"] = f"{int(allocated_hex, 16) + 1:04X}"
+            led["last_allocated"] = allocated_hex.upper()
+            led["last_allocated_at"] = _dt.datetime.now(_dt.UTC).strftime("%Y-%m-%dT%H:%M:%S.%f")[:-3] + "Z"
+            led["last_allocator"] = "deposit-pipeline (mint_deposit.py)"
+            p.write_text(_json.dumps(led, ensure_ascii=False, indent=1))
+    except Exception:
+        pass
+
+
 def next_hex_id(deposit_number: int, registry: dict | None = None) -> str:
     """Compute the opaque hex label for the next deposit.
 
@@ -993,6 +1010,12 @@ def mint_from_issue_body(body: str, issue_number: int, *, dry_run: bool = False)
 
     deposit_number = next_deposit_number(registry)
     hex_id = next_hex_id(deposit_number, registry)
+    _bump_symbolon_ledger(hex_id)   # WAVE-HEXPOS-01: the deposit side must WRITE
+    # the shared ledger it reads. Before 2026-08-06 it only read: #1433 took 05AF
+    # while the ledger still said next_hex=05AF, and the witness endpoint then
+    # CAS-allocated the same position a day later (contested 05AF). Bumping at
+    # allocation makes the "two allocators share one space" invariant real; an
+    # aborted mint burns a label (a harmless gap), never a collision.
     family = family_for_content_type(fields["content_type"])
 
     # Build canonical text content — attachments included so SPXI Layer 3

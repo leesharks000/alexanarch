@@ -142,7 +142,24 @@ module.exports = async (req, res) => {
     if (!lr.ok) break;
     const lj = await lr.json();
     const ledger = JSON.parse(Buffer.from(lj.content, "base64").toString("utf8"));
-    const candidate = ledger.next_hex;
+    // WAVE-HEXPOS-01 defense-in-depth: even if a deposit-side mint failed to bump
+    // this ledger, never allocate at or below the highest position the central
+    // registry already holds (contested 05AF, 2026-08-05, was exactly this gap).
+    let candidate = ledger.next_hex;
+    try {
+      const cr = await fetch("https://www.alexanarch.org/data/axn-central-registry.json");
+      if (cr.ok) {
+        const cj = await cr.json();
+        let maxPos = 0;
+        for (const k in (cj.positions || {})) {
+          const v = parseInt(k, 16);
+          if (!isNaN(v) && v > maxPos) maxPos = v;
+        }
+        if (maxPos >= parseInt(candidate, 16)) {
+          candidate = (maxPos + 1).toString(16).toUpperCase().padStart(4, "0");
+        }
+      }
+    } catch (e) { /* registry unreachable: ledger candidate stands */ }
     const bumped = { ...ledger, next_hex: (parseInt(candidate, 16) + 1).toString(16).toUpperCase().padStart(4, "0"), last_allocated: candidate, last_allocated_at: new Date().toISOString() };
     const cas = await fetch(ledgerApi, {
       method: "PUT",

@@ -124,10 +124,15 @@ al.onclick=async()=>{
   const shaMatch=q.match(/[0-9a-f]{64}/i)||q.match(/sha256:\s*([0-9a-f]{6,64})/i);
   if(shaMatch){const s=(shaMatch[1]||shaMatch[0]).toLowerCase();
     for(const k in reg.kernels){if(k.startsWith(s)){hit=reg.kernels[k];by='kernel';break;}}}
-  if(!hit){ // by full AXN or hex position
+  if(!hit){ // by full AXN or hex position (labels are 4-char; pad short pastes; follow aliases — WAVE-HEXPOS-01)
     const hexM=q.match(/AXN:([0-9A-F]{2,4})\./i)||q.match(/^([0-9A-F]{2,4})$/i);
-    if(hexM){const hx=hexM[1].toUpperCase();if(reg.positions&&reg.positions[hx]){hit=reg.positions[hx];by='position';}}
+    if(hexM){let hx=hexM[1].toUpperCase().padStart(4,'0');
+      let e=reg.positions&&reg.positions[hx];
+      if(e&&e.alias_of){hx=e.alias_of;e=reg.positions[hx];by='position (via superseded label)';}
+      else if(e){by='position';}
+      if(e)hit=e;}
     if(!hit){for(const hx in (reg.positions||{})){if((reg.positions[hx].axn||'')===q){hit=reg.positions[hx];by='axn';break;}}}
+    if(hit&&hit.status==='CONTESTED'){vo.innerHTML='<div class="verdict" style="color:var(--accent2)">CONTESTED POSITION</div><div class="v">This position is claimed by multiple records, pending a resolution ruling: '+((hit.claimants||[]).map(c=>'#'+c.deposit_number).join(', '))+'</div>';return;}
   }
   if(hit){
     const row=(k,v)=>v?('<div style="display:flex;gap:10px;padding:5px 0;border-top:1px solid #eee"><div style="flex:0 0 118px;color:var(--dim);font-size:.72em;text-transform:uppercase;letter-spacing:.04em">'+k+'</div><div style="flex:1;font-family:var(--mono);font-size:.8em;word-break:break-all">'+v+'</div></div>'):'';

@@ -4,7 +4,7 @@
   "title": "Alexanarch Protocol Index",
   "purpose": "Central machine-readable catalog of all Alexanarch protocols, schemas, and data registries. Single source of truth — every other document (AGENTS.md, DEPOSIT-FLOW.md, scripts, workflows) MUST pull from this index, not duplicate it. If this file disagrees with any other surface, this file wins and the other surface is wrong.",
   "index_version": "v1.1",
-  "last_updated": "2026-08-04",
+  "last_updated": "2026-08-06",
   "operator_directive": {
     "for_new_instances": [
       "STOP before any action.",
@@ -517,17 +517,17 @@
   "state": {
     "canonical_path": "/data/state.json",
     "description": "Canonical generated source for all displayed counts. Read this rather than hand-maintaining counts here.",
-    "content_sha256": "d20e6f05ef0e1428b3d2b395173d62d599687acc384594e346a8a1bcf1ce9792"
+    "content_sha256": "eb1f28d211ebfaa66705efa63633fb32ad7703bf026f769e20d074fa7e762a3f"
   },
   "surface_hashes": {
     "algorithm": "sha256",
-    "hashed_at": "2026-08-04T08:59:19Z",
+    "hashed_at": "2026-08-06T15:19:35Z",
     "files": {
-      "data/registry.json": "af69f9e62b3f968bcd778c7c0d0de65c7362b4d8779f2cc1d7f8d0a2c8fc7e9c",
-      "api/search-index.json": "48e993cbe69d4f770c9f14fe3b83f318cba3b72a43e855a87b2e6f77af2fdeb1",
-      "api/body-index.json": "235ad08f870dba98b0aae27f94f901e72cae9ee6b8e4725a965eeacdf17e2eef",
-      "api/axn-index.json": "f4ad1fd16f1f478f40b03c968845b883f3ef515bd4f4bbdf8043362d6ef8adcb",
-      "data/doi-resolution-index.json": "f5edfe0458dc84344aaea462d1705f17412db3267eb196167174319368586f22"
+      "data/registry.json": "1fe0d2f886f05f39f0350d0dfe029bd3ecd78fe252c3469bc94e3fa0976e67f4",
+      "api/search-index.json": "13315d211973fc90e35be3bfa7b8f02cc9ec16ffad01d09e8d740083234a24e7",
+      "api/body-index.json": "84559456d4fac11eec34cb6487e3be912942b1fc9eecfe27d0916752d610ea2a",
+      "api/axn-index.json": "2bbb58b8505e167778ef4791aa560690f9c2c63c9d35bbc8ac3750b91357ed79",
+      "data/doi-resolution-index.json": "a58841cf8a763a747cded1e8bd9d2a0934077ab8778bd660ca878fff4563bef2"
     }
   }
 }
