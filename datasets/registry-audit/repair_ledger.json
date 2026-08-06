@@ -32387,6 +32387,17 @@
    "sites": "scripts/capability_register.py (new); data/api/capability-register.json (new); .github/workflows/validate-registry.yml; scripts/deposit_pipeline.py",
    "verified": "8/8 capabilities held and floored from live production measurement; simulated regression correctly failed with named shortfall",
    "at": "2026-08-06T21:49:29Z"
+  },
+  {
+   "repair_id": "R-1278",
+   "deposit_number": 1435,
+   "batch": false,
+   "type": "DEPOSIT_WITH_PRECONDITION_CLOSED",
+   "ruling_by": "MANUS (2026-08-06: incorporate the reviews and deposit)",
+   "basis": "Minted #1435 AXN:05B4.GOVERNANCE.🟤🔎🖊️○♈🍄 — AXN as Distributed Identifier v2.0, Assembly synthesis of four blind drafts revised under five reviews. F1 CLOSED FIRST, as a ratification precondition rather than a work item: two reviewers held that a plan whose own verified-state section documents a live 342-deposit lie cannot be ratified while the lie stands. The declaration is repaired, computed on every commit via coherence_sync, and — because generating it is insufficient and a buggy generator would automate the lie rather than end it — verified LIVE by a capability probe comparing the PUBLISHED declaration to the PUBLISHED registry (14 capabilities now floored). INCORPORATED FROM REVIEW: three labelled statement types (VERIFIED with method and timestamp / NORMATIVE / WORK), because a plan mixing measurement with intention cannot be audited; convergence recorded as PROVENANCE rather than evidence, since four models agreeing is not proof; normative invariants boxed at the front with an explicit AUTHORITY MODEL distinguishing content authority, claim provenance, registry standing, current designation, custody evidence and historical fact; the failure record as its own dated section; RFC 8785 JCS canonicalisation pinned so event chains cannot diverge across implementations; a zero-dependency verify.html required inside the BagIt package for air-gapped verification; physical media named as a transport family; Stage I resequenced so MIRROR-PROTOCOL precedes the resolution spec, since one cannot specify distributed resolution before documenting how a peer fetches and serves; the lacuna required to carry its LAST VERIFIED HASH, which is what makes it a recovery target rather than a bookmark; an economic model capping any single funder at 30% of nodes; the acceptance test as a nine-point scriptable cascade; and the peer recruitment rewritten to proceed only on explicit consent, with the depositor's name kept in the operational record rather than the public plan until she says otherwise.",
+   "sites": "data/registry.json; data/texts/AXN-05B4-text.md; data/workplan/; s/records/1435; s/wiki/1435; s/axn/05B4; central registry 1441 positions; OAI; scripts/generate_node_declaration.py (new); scripts/coherence_sync.py; data/api/endpoint-contract.json; scripts/capability_register.py",
+   "verified": "validate_deposit --strict 0 failures, index consistency OK; namespace clean; node declaration --check matches registry; wiki 661 words, 10 concepts, 10 entity triples seated",
+   "at": "2026-08-06T22:17:37Z"
   }
  ]
 }
