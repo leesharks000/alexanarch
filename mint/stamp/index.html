@@ -196,7 +196,7 @@ function kind(f){
   return 'text';
 }
 
-async function stampImage(buf,axn0g,axn0h,mime){
+async function stampImage(buf,axn0g,axn0h,mime,addr){
   const blob=new Blob([buf],{type:mime});
   const img=await createImageBitmap(blob);
   const STRIP=Math.max(44,Math.round(img.height*0.045));
@@ -208,7 +208,13 @@ async function stampImage(buf,axn0g,axn0h,mime){
   const fs=Math.max(13,Math.round(STRIP*0.34));
   x.font=fs+'px "IBM Plex Mono",monospace';
   x.textBaseline='middle';
-  const line=`AXN kernel ${axn0g} · sha256:${axn0h.slice(0,16)}… · ${new Date().toISOString().slice(0,10)} · alexanarch.org`;
+  // CHIASTIC INSCRIPTION (v0.3): when an address has been assigned it leads the
+  // band, because a finder needs the address; the kernel follows, because a
+  // verifier needs that. Inscribing the address is not circular — an address is
+  // assigned at the registry, not derived from these bytes.
+  const line=addr
+    ? `${addr} · kernel sha256:${axn0h.slice(0,16)}… · ${new Date().toISOString().slice(0,10)} · alexanarch.org`
+    : `AXN kernel ${axn0g} · sha256:${axn0h.slice(0,16)}… · ${new Date().toISOString().slice(0,10)} · alexanarch.org`;
   x.fillText(line,Math.round(STRIP*0.3),img.height+STRIP/2);
   const out=await new Promise(r=>c.toBlob(b=>r(b),'image/png'));
   return {bytes:new Uint8Array(await out.arrayBuffer()),
@@ -218,11 +224,13 @@ async function stampImage(buf,axn0g,axn0h,mime){
           ext:'.stamped.png'};
 }
 
-async function stampPdf(buf,axn0g,axn0h){
+async function stampPdf(buf,axn0g,axn0h,addr){
   const {PDFDocument,rgb,StandardFonts}=PDFLib;
   const doc=await PDFDocument.load(buf,{ignoreEncryption:true});
   const font=await doc.embedFont(StandardFonts.Courier);
-  const line=`AXN kernel [${axn0h.slice(0,12)}] sha256:${axn0h.slice(0,16)}... ${new Date().toISOString().slice(0,10)} alexanarch.org`;
+  const line=addr
+    ? `${addr.replace(/[^\x20-\x7E]/g,'')} kernel sha256:${axn0h.slice(0,16)}... ${new Date().toISOString().slice(0,10)} alexanarch.org`
+    : `AXN kernel [${axn0h.slice(0,12)}] sha256:${axn0h.slice(0,16)}... ${new Date().toISOString().slice(0,10)} alexanarch.org`;
   // Draw an opaque white band + stamp INSIDE the existing page area at the bottom of the LAST page.
   // Drawing within the original media box means no viewer box-clipping can hide it — robust across
   // iOS Preview, Chrome, Acrobat. (Added-margin approach was clipped by per-page CropBoxes in merged
@@ -243,9 +251,9 @@ async function stampPdf(buf,axn0g,axn0h){
           ext:'.stamped.pdf'};
 }
 
-function stampText(buf,axn0g,axn0h){
+function stampText(buf,axn0g,axn0h,addr){
   const dec=new TextDecoder().decode(buf);
-  const stamp=`\n\n<!-- AXN-STAMP-BEGIN\nAXN-KERNEL: ${axn0g}\nSHA256: ${axn0h}\nDATE: ${new Date().toISOString().slice(0,10)}\nSPEC: AXN-SYMBOLON-SPEC v0.2 (alexanarch #1432)\nAXN-STAMP-END -->\n`;
+  const stamp=`\n\n<!-- AXN-STAMP-BEGIN\n${addr?`AXN: ${addr}\n`:''}AXN-KERNEL: ${axn0g}\nSHA256: ${axn0h}\nDATE: ${new Date().toISOString().slice(0,10)}\nSPEC: AXN-SYMBOLON-SPEC v0.3 (chiastic inscription)\nAXN-STAMP-END -->\n`;
   const bytes=new TextEncoder().encode(dec+stamp);
   return {bytes,
           geometry:{format:'text',method:'suffix_comment_block',delimiters:['<!-- AXN-STAMP-BEGIN','AXN-STAMP-END -->'],
@@ -272,6 +280,7 @@ go.onclick=async()=>{
       spec_record:"https://www.alexanarch.org/s/records/1432/",
       spec_axn:"AXN:05A9.OPERATIVE.🐚🌪️🕖🫵⏩○",
       reconstruction_class:"content-addressed",
+      stamp_generation:1,   // 1 = kernel-only band; 2 = addressed band (chiastic, v0.3)
       axn0:{glyphs:g0,sha256:h0,role:"identity kernel of the sealed core (the original, pre-stamp bytes)"},
       axn1:{glyphs:g1,sha256:h1,role:"kernel of the stamped file as it circulates (tamper witness; not a name)"},
       manifest:[{part:1,filename:FILE.name,sha256:h0,bytes:buf.length}],
@@ -317,6 +326,42 @@ go.onclick=async()=>{
                 else{ ro.innerHTML=ro.innerHTML.replace(' · storing…',' <span style="color:var(--accent2)">· identity witnessed; file storage did not complete — use the <a href="/deposit/">deposit transport</a> to store it.</span>'); }
               }catch(e){ ro.innerHTML=ro.innerHTML.replace(' · storing…',' <span style="color:var(--accent2)">· identity witnessed; file too large for this route — use the <a href="/deposit/">deposit transport</a>.</span>'); }
             }
+          }
+          // ── PASS 3 · CHIASTIC RE-STAMP (v0.3, optional and idempotent) ──
+          // What is HELD is unaddressed; what TRAVELS is addressed. The sealed core
+          // stays as it is — the archive never re-stamps stored bytes. This produces
+          // the ADDRESSED CIRCULATING COPY from the same original bytes, and refreshes
+          // AXN1 through the endpoint's existing re-stamp path.
+          if(axnStr){
+            const rs=document.createElement('button');
+            rs.textContent='Re-stamp with the address';
+            rs.style.cssText='margin-top:10px;background:var(--accent)';
+            rs.onclick=async()=>{
+              rs.disabled=true; rs.textContent='re-stamping…';
+              try{
+                let r2;
+                if(k==='png')r2=await stampImage(buf,g0,h0,'image/png',axnStr);
+                else if(k==='jpeg')r2=await stampImage(buf,g0,h0,'image/jpeg',axnStr);
+                else if(k==='pdf')r2=await stampPdf(buf,g0,h0,axnStr);
+                else r2=stampText(buf,g0,h0,axnStr);
+                const h2=await sha256(r2.bytes), g2=glyphs(h2);
+                const b2=new Blob([r2.bytes],{type:k==='pdf'?'application/pdf':(k==='text'?'text/plain':'image/png')});
+                dS.href=URL.createObjectURL(b2); dS.download=base+'.addressed'+r2.ext.replace('.stamped','');
+                dS.textContent='addressed stamped file';
+                // Seed A follows the artifact: generation 2, AXN1 refreshed, AXN0 untouched
+                seedA.stamp_generation=2;
+                seedA.inscribed_address=axnStr;
+                seedA.axn1={glyphs:g2,sha256:h2,role:"kernel of the ADDRESSED stamped copy (tamper witness; not a name)"};
+                seedA.stamp_geometry=r2.geometry;
+                const sB=new Blob([JSON.stringify(seedA,null,1)],{type:'application/json'});
+                dJ.href=URL.createObjectURL(sB);
+                await fetch('/api/register-symbolon',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(seedA)});
+                rs.textContent='re-stamped — the copy now carries its address';
+                rs.style.background='var(--teal)';
+              }catch(e){ rs.disabled=false; rs.textContent='re-stamp failed: '+e.message; }
+            };
+            ro.appendChild(document.createElement('br'));
+            ro.appendChild(rs);
           }
           // bind copy LAST, after any storage rewrite, so the element still exists
           const box=document.getElementById('axnbox');

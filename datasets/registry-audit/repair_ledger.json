@@ -32398,6 +32398,17 @@
    "sites": "data/registry.json; data/texts/AXN-05B4-text.md; data/workplan/; s/records/1435; s/wiki/1435; s/axn/05B4; central registry 1441 positions; OAI; scripts/generate_node_declaration.py (new); scripts/coherence_sync.py; data/api/endpoint-contract.json; scripts/capability_register.py",
    "verified": "validate_deposit --strict 0 failures, index consistency OK; namespace clean; node declaration --check matches registry; wiki 661 words, 10 concepts, 10 entity triples seated",
    "at": "2026-08-06T22:17:37Z"
+  },
+  {
+   "repair_id": "R-1279",
+   "deposit_number": null,
+   "batch": true,
+   "type": "CHIASTIC_INSCRIPTION_AND_ATLAS",
+   "ruling_by": "MANUS (2026-08-06: do the chiasmus, carefully — data in and out must stay synced; and the atlas must remain a current map)",
+   "basis": "CHIASMUS IMPLEMENTED, additively. The three stampers now accept an optional assigned ADDRESS; when present it leads the band and the kernel follows, because a finder needs the address and a verifier needs the kernel. Pass 3 (re-stamp) is offered only after registration returns an AXN, is idempotent, and re-stamps the ORIGINAL bytes — the sealed core is never re-stamped, so what is HELD stays unaddressed and what TRAVELS carries its address. NO ENDPOINT CHANGE WAS REQUIRED: register-symbolon.js already implements exactly this path — same AXN0, changed AXN1, stamp_history appended, sealed core untouched. Seed A gains stamp_generation (1 = kernel-only band, 2 = addressed) plus inscribed_address, so generation-1 entries stay valid and resolvable and nothing already circulating is deprecated. Scope verified before shipping: buf, g0, h0, k and seedA all live in the same function scope as the injection point, and the branch keys match the existing dispatch. ATLAS v1.0: the map had fallen behind the network in three places — the /api/ to /data/api/ publication move and its six-day outage, the SECOND MINT SURFACE at axnidentifiers.org/stamp/ which is the first cross-origin mint route and means the atlas can no longer assume requests originate at alexanarch, and the self-verifying constitution mirror. Four pathologies registered: publication invisible to disk-reading validators; undocumented mint route; mirrored governance without verification; and deployment as an unmapped dependency, since commit is not publication and a deploy limit blocked everything twice today. The addendum also records that the second stamper is NOT a peer — same administrator, platform and billing, so under the LOCKSS test it is one custody domain with the archive, and a richer diagram must not be mistaken for a more distributed network.",
+   "sites": "mint/stamp/index.html (3 stampers + pass 3); datasets/dataflow-atlas/atlas-v1.0-addendum.md (new); axnidentifiers stamp/, constitution/, assets/axn-node.js",
+   "verified": "validate --strict 0 failures; index consistency OK; namespace clean; all inline JS blocks pass node --check; variable scope confirmed at the injection point",
+   "at": "2026-08-06T23:48:05Z"
   }
  ]
 }
