@@ -2,6 +2,66 @@
 <nav class="nav"> <a href="/">Alexanarch</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Library</span> <a href="/s/browse/">Browse</a> <a href="/search/">Search</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Reception</span> <a href="/addresses/">Addresses</a> <a href="/captures/">Captures</a> <a href="/observatory/">Observatory</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Continuity</span> <a href="/resolve/">Resolve</a> <a href="/identifiers/">Identifiers</a> <a href="/datasets/">Datasets</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Generative</span> <a href="/book/">Book</a> <a href="https://alexanarch.freeforums.net/" target="_blank" rel="noopener">Discussion</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Governance</span> <a href="/principles/">Principles</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
 <h1>Alexanarch Wiki</h1>
 <p style="color:#555;font-size:.92em;margin-bottom:16px">1,434 encyclopedic entries auto-projected from <code>data/registry.json</code>. Each entry summarizes a deposit and lists the concepts it defines. Alphabetical by title. Machine-readable dataset: <a href="/data/wiki-entries.json"><code>/data/wiki-entries.json</code></a>.</p>
+
+<div class="filterbar" style="margin:14px 0 18px">
+  <label for="axnflt" style="position:absolute;left:-9999px">Filter entries</label>
+  <input id="axnflt" type="search" autocomplete="off"
+         placeholder="Filter 1,434 entries — title, AXN, number, creator"
+         style="width:100%;font-family:var(--sans,sans-serif);font-size:.95em;padding:9px 12px;
+                border:1px solid var(--border,#e0e0e0);border-radius:6px;background:var(--surface,#fff);color:inherit">
+  <div style="display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;margin-top:6px;
+              font-size:.78em;color:var(--dim,#777)">
+    <span id="axnfltcount" aria-live="polite">1,434 entries</span>
+    <span>·</span>
+    <span>filters this page only —
+      <a id="axnfltfull" href="/search/">search every deposit's full text</a></span>
+  </div>
+</div>
+<script>
+(function(){
+  var box = document.getElementById('axnflt');
+  if (!box) return;                                  // no widget, no behaviour
+  var rows = Array.prototype.slice.call(document.querySelectorAll('.entry-row'));
+  if (!rows.length) return;                          // never blank a page we cannot see
+  var count = document.getElementById('axnfltcount');
+  var full  = document.getElementById('axnfltfull');
+  var timer = null;
+
+  function apply() {
+    var q = box.value.trim().toLowerCase();
+    var toks = q.split(/\s+/).filter(Boolean);
+    var shown = 0;
+    for (var i = 0; i < rows.length; i++) {
+      var r = rows[i];
+      if (!r.__hay) r.__hay = (r.textContent || '').toLowerCase();
+      var ok = true;
+      for (var j = 0; j < toks.length; j++) {
+        if (r.__hay.indexOf(toks[j]) === -1) { ok = false; break; }
+      }
+      r.style.display = ok ? '' : 'none';
+      if (ok) shown++;
+    }
+    count.textContent = q
+      ? shown.toLocaleString() + ' of ' + rows.length.toLocaleString() + ' entries'
+      : rows.length.toLocaleString() + ' entries';
+    full.href = q ? '/search/?q=' + encodeURIComponent(q) : '/search/';
+    // shareable: the filtered view survives a copied URL and the back button
+    try {
+      var u = new URL(location);
+      q ? u.searchParams.set('f', q) : u.searchParams.delete('f');
+      history.replaceState(null, '', u);
+    } catch (e) {}
+  }
+
+  box.addEventListener('input', function () {
+    clearTimeout(timer); timer = setTimeout(apply, 90);
+  });
+  var init = new URLSearchParams(location.search).get('f');
+  if (init) box.value = init;
+  apply();
+})();
+</script>
+
 <div style="font-size:.85em;color:#777;margin:16px 0 8px">1434 entries · sorted alphabetically</div>
 <div class="entry-row"><div><a href="/s/wiki/842/">&quot;Apocalyptic Philosophy: Deleuze and Guattari and the Return of Vision&quot; — Source Disambiguation — EA-MPAI-APOCALYPTIC-01 v1.2 — Disambiguation Packet (Source-Level)</a></div><div class="entry-meta"><span style="font-family:var(--mono);color:var(--teal)">AXN:0357.ARCHIVAL.🖐️📏🗼🟢🫶🌌</span> · 2026-06-17 · #842 · defines 0 · refby 0</div></div>
 <div class="entry-row"><div><a href="/s/wiki/596/">&quot;DON&#x27;T BE EVIL,&quot; MY ASS: THE COST OF LEGIBILITY — How Predatory Compression at Civilizational Scale Destroys the Human Capacity for Transformation</a></div><div class="entry-meta"><span style="font-family:var(--mono);color:var(--teal)">AXN:01B3.GOVERNANCE.🎶🎲⛵➖☁️🀄</span> · 2026-03-22 · #596 · defines 1 · refby 0</div></div>

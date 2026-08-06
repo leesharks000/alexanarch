@@ -182,6 +182,61 @@ def probe_resourcesync():
     return {"measure": urls, "detail": f"resources listed; {hashed} with verifiable hashes"}
 
 
+def probe_browse_filter():
+    """Browse: complete static list AND a working filter. Both, or neither counts.
+    RELATIONAL: the static rows must survive the filter's presence — a filter that
+    replaced the list would break crawlers and archival capture."""
+    ct, raw = get("/s/browse/")
+    s = raw.decode("utf-8", "replace")
+    rows = len(re.findall(r'href="/s/records/\d+/"', s))
+    assert rows > 1000, f"browse lists only {rows} records — the static list is the point"
+    assert "axnflt" in s, "browse has no filter widget"
+    assert "search every deposit" in s, "browse filter does not route onward to full-text search"
+    return {"measure": rows, "detail": "static rows, with filter present"}
+
+
+def probe_wiki():
+    """Wiki: complete static entry list AND a filter, on the page the LAST
+    generator writes. A filter here was once silently overwritten."""
+    ct, raw = get("/s/wiki/")
+    s = raw.decode("utf-8", "replace")
+    rows = len(re.findall(r'class="entry-row"', s))
+    assert rows > 1000, f"wiki lists only {rows} entries"
+    assert "axnflt" in s, ("wiki has no filter widget — it was previously destroyed by "
+                           "publish_wiki_entries.py rewriting the page after it was added")
+    return {"measure": rows, "detail": "static entries, with filter present"}
+
+
+def probe_stamp_page():
+    """The instrument itself: client-side stamping and verification must be served."""
+    ct, raw = get("/mint/stamp/")
+    s = raw.decode("utf-8", "replace")
+    for needle, why in [("AXN_GLYPHS", "the glyph table"),
+                        ("crypto.subtle.digest", "client-side hashing"),
+                        ("axn-central-registry.json", "the verify lookup"),
+                        ("pdf-lib", "PDF stamping")]:
+        assert needle in s, f"stamp page missing {why} ({needle})"
+    return {"measure": len(s), "detail": "stamp+verify page bytes with all four capabilities"}
+
+
+def probe_lexical():
+    """The minted-term surface."""
+    d = get_json("/data/lexical-minting-registry.json", timeout=90)
+    terms = d.get("terms") or []
+    assert len(terms) > 5000, f"lexical registry holds only {len(terms)} terms"
+    return {"measure": len(terms), "detail": "minted lexical terms"}
+
+
+def probe_axn_resolver():
+    """Every hex position resolves to a page carrying its full AXN."""
+    reg = json.loads((ROOT / "data/registry.json").read_text())
+    d = reg["deposits"][-1]
+    ct, raw = get(f"/s/axn/{d['hex']}/")
+    s = raw.decode("utf-8", "replace")
+    assert d["axn"] in s, f"resolver page for {d['hex']} does not carry the full AXN"
+    return {"measure": 1, "detail": f"{d['hex']} resolves with full form"}
+
+
 PROBES = {
     "body-search": probe_body_search,
     "metadata-search": probe_metadata_search,
@@ -191,6 +246,11 @@ PROBES = {
     "record-pages": probe_record_pages,
     "symbolon-store": probe_symbolon_store,
     "resourcesync": probe_resourcesync,
+    "browse-filter": probe_browse_filter,
+    "wiki": probe_wiki,
+    "stamp-page": probe_stamp_page,
+    "lexical": probe_lexical,
+    "axn-resolver": probe_axn_resolver,
 }
 
 

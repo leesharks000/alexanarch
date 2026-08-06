@@ -185,6 +185,11 @@ def regenerate_browse(reg, dry_run=False):
     })
 
     parts = [BROWSE_HEADER.format(total=total, jsonld=jsonld).replace('__NAVBAR_TOKEN__', render_navbar()[len('<nav class="nav">'):-len('</nav>')])]
+    # P2 filter — progressive enhancement over the complete static list. The full
+    # list stays in the HTML for crawlers and no-JS readers; the widget only hides
+    # non-matching rows and routes onward to full-text search.
+    from filter_widget import filter_widget
+    parts.append(filter_widget('a[href^="/s/records/"]', 'deposits', total))
     for d in sorted_deps:
         n = d.get("deposit_number") or d.get("issue_number") or 0
         if n == 0:

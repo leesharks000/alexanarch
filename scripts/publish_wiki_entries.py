@@ -233,6 +233,14 @@ def render_index_page(entries: list) -> str:
         f'</p>'
     )
 
+    # P2 filter — injected HERE, by the LAST writer of this file. A filter added
+    # by regenerate_surfaces.py was previously destroyed by this script rewriting
+    # the page afterwards; the feature was never rejected, only overwritten.
+    import sys as _sys, pathlib as _pl
+    _sys.path.insert(0, str(_pl.Path(__file__).resolve().parent))
+    from filter_widget import filter_widget
+    parts.append(filter_widget('.entry-row', 'entries', len(entries)))
+
     parts.append('<div style="font-size:.85em;color:#777;margin:16px 0 8px">'
                  f'{len(entries)} entries · sorted alphabetically</div>')
 
