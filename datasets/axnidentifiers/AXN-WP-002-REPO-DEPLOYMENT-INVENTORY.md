@@ -46,3 +46,10 @@
 8. Trust pages (free promise M-006, wind-down, prohibited claims) unpublished (WP-204/302).
 
 **Bottom line:** the protocol layer, witness pipeline, storage, lookup, and propagation already run in production and were stress-tested by a real external depositor. The build is: attach two domains, publish the constitution (spec+promises), wire time-anchoring and checkout, template the receipt. Nothing core needs inventing. ∮ = 1
+
+---
+## STATUS 2026-08-06 (supersedes deployment rows above where they conflict)
+Standalone repo `leesharks000/axn-identifiers` seeded (landing migrated + design/specimen-v0.1/v0.2).
+Domains: all four spellings owned; **axnidentifiers.org canonical**, others 308. Vercel project
+`alexanarch-qf1g` retired; fresh import of the standalone repo replaces it. Naming incident + node
+registration: datasets/dataflow-atlas/atlas-v0.9-addendum.md.
