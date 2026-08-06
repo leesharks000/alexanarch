@@ -7,7 +7,7 @@ the canonical entry's target under the envelope gate."""
 import json, sys, os
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 idx = json.load(open(f'{ROOT}/data/doi-resolution-index.json'))
-api = json.load(open(f'{ROOT}/api/doi-axn-map.json'))['map']
+api = json.load(open(f'{ROOT}/data/api/doi-axn-map.json'))['map']
 maps = idx['mappings']
 fails = []
 # first-occurrence selection (what /resolve/ shows)

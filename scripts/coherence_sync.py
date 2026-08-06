@@ -22,16 +22,16 @@ def main():
     n, reg_updated = reg['total_deposits'], reg['last_updated']
     now = datetime.datetime.now(datetime.UTC).strftime('%Y-%m-%dT%H:%M:%SZ')
 
-    api = json.load(open('api/index.json'))
+    api = json.load(open('data/api/index.json'))
     api['last_updated'] = now[:10]
     dep = api.setdefault('registries', {}).setdefault('deposits', {})
     dep['current_count'] = n
     dep['last_updated'] = reg_updated
     surfaces = {p: sha(p) for p in (
-        'data/registry.json', 'api/search-index.json', 'api/body-index.json',
-        'api/axn-index.json', 'data/doi-resolution-index.json')}
+        'data/registry.json', 'data/api/search-index.json', 'data/api/body-index.json',
+        'data/api/axn-index.json', 'data/doi-resolution-index.json')}
     api['surface_hashes'] = {'algorithm': 'sha256', 'hashed_at': now, 'files': surfaces}
-    json.dump(api, open('api/index.json', 'w'), ensure_ascii=False, indent=2)
+    json.dump(api, open('data/api/index.json', 'w'), ensure_ascii=False, indent=2)
 
     dr = json.load(open('data/doi-resolution-index.json'))
     mappings = len(dr['mappings'])

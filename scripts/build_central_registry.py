@@ -17,7 +17,7 @@ import json, pathlib, datetime, re, sys
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 reg = json.loads((ROOT/"data/registry.json").read_text())
 deps = reg["deposits"] if isinstance(reg, dict) else reg
-try: kidx = json.loads((ROOT/"api/kernel-index.json").read_text()).get("kernels", {})
+try: kidx = json.loads((ROOT/"data/api/kernel-index.json").read_text()).get("kernels", {})
 except Exception: kidx = {}
 sha_by_axn = {v["axn"]: k for k, v in kidx.items()}
 

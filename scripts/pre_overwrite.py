@@ -64,7 +64,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 RECEIPT_LOG = REPO_ROOT / "data" / "pre-overwrite-receipts.log"
-INDEX_PATH = REPO_ROOT / "api" / "index.json"
+INDEX_PATH = REPO_ROOT / "data" / "api" / "index.json"
 
 # ANSI color codes for stdout warnings
 RED = "\033[31m"

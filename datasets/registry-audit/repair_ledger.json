@@ -32340,6 +32340,18 @@
    "sites": "scripts/verify_symbolon_store.py (new); scripts/regenerate_surfaces.py; scripts/build_resourcesync.py; scripts/deposit_pipeline.py (stage+order+registry); api/register-symbolon.js; data/symbolon-registry/entries/*.json (6); data/symbolon-registry/MANIFEST.json (new); SHA256SUMS.txt; resourcesync/resourcelist.xml",
    "verified": "5/5 cores hash-match their kernels; sha256sum -c 1409 OK 0 failed; resourcelist carries 5 cores with hash+length; AXN:05AD verified_at now dated",
    "at": "2026-08-06T18:03:00Z"
+  },
+  {
+   "repair_id": "R-1274",
+   "deposit_number": null,
+   "batch": true,
+   "type": "PUBLICATION_NAMESPACE_COLLISION",
+   "ruling_by": "MANUS (search audit relayed 2026-08-06)",
+   "basis": "P0. The root api/ directory is Vercel's FUNCTIONS namespace: non-executable files placed there are not published as static assets and 404 with an HTML error page. Every static JSON in the archive lived there — 1,012 files — so the outage was never search-specific. Confirmed dark in production: /api/index.json (the canonical protocol catalog DEPOSIT-FLOW.md declares authoritative), /api/axn-index.json, /api/kernel-index.json, /api/search-index.json, /api/body-shards/manifest.json, and /api/doi-axn-map.json — the DOI resolver's map, standing in for 1,935 severed Zenodo DOIs, which means /go/ has been resolving against a 404 for as long as this has held. Search's 'Unexpected token T' was a symptom: it parsed 'The page could not be found' as JSON. The bytes were correct in git throughout; only the publication path was wrong, which is exactly why every local check passed — a class of defect no local validator could see. REPAIR: all 1,012 static files moved to data/api/ (history preserved via git mv); api/ now holds only oai.js and register-symbolon.js; a vercel.json rewrite maps /api/:path*.json to /data/api/:path*.json so all 3,412 HTML surfaces and every machine reader keep their advertised URLs. 25 generators repointed at source; two validators (bootstrap_familiarization, validate_deposit) taught to resolve the public /api path to its disk location; a double-substitution (data/data/api) caught and repaired in 8 files before shipping; bootstrap's missing-file branch fixed to report rather than crash the reporter (KeyError on 'version'). New scripts/audit_static_namespace.py asserts the namespace stays clean and, with --live, requires the advertised URLs to return JSON rather than merely HTTP 200 — an HTML 404 returns 404, but a misconfigured rewrite could return 200 with HTML, which is the exact shape of this incident.",
+   "sites": "api/ (1012 files moved); data/api/**; vercel.json (rewrite); 25 scripts; scripts/audit_static_namespace.py (new)",
+   "verified": "bootstrap --strict OVERALL STATUS OK; validate_deposit --strict 0 failures + index consistency OK; resolver PARITY OK 1935 keys; namespace audit CLEAN",
+   "outstanding": "P1 search-client defects (undeclared debounce timer, no HTTP/content-type validation, keyword_phrases vs keywords contract mismatch, case-normalisation vs preserved series keys, silent shard failure, no pagination, query not synced to ?q=); P2 Browse and Wiki filters",
+   "at": "2026-08-06T19:55:14Z"
   }
  ]
 }

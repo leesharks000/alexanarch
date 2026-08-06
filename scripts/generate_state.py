@@ -148,11 +148,11 @@ def build_state() -> dict:
             'browse_index': file_info('data/browse-index.json'),
         },
         'protocols': {
-            'deposit': file_info('api/deposit-protocol.json'),
-            'axn': file_info('api/axn-protocol.json'),
-            'enrichment': file_info('api/enrichment-protocol.json'),
-            'lifecycle': file_info('api/lifecycle-protocol.json'),
-            'deposit_schema': file_info('api/deposit-schema.json'),
+            'deposit': file_info('data/api/deposit-protocol.json'),
+            'axn': file_info('data/api/axn-protocol.json'),
+            'enrichment': file_info('data/api/enrichment-protocol.json'),
+            'lifecycle': file_info('data/api/lifecycle-protocol.json'),
+            'deposit_schema': file_info('data/api/deposit-schema.json'),
         },
         'consumed_by': [
             'api/index.json (counts under registries.deposits.current_count etc.)',

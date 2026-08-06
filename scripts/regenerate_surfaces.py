@@ -1386,7 +1386,7 @@ def regenerate_search_index(reg, dry_run=False):
         },
     }
 
-    target = REPO_ROOT / "api" / "search-index.json"
+    target = REPO_ROOT / "data" / "api" / "search-index.json"
     payload = json.dumps(output, ensure_ascii=False, indent=2)
     if dry_run:
         print(f"  [DRY] would write {target} ({len(payload):,} bytes)")

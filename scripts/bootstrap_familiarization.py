@@ -56,7 +56,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-INDEX_PATH = REPO_ROOT / "api" / "index.json"
+INDEX_PATH = REPO_ROOT / "data" / "api" / "index.json"
 
 
 def sha256_of_file(path):
@@ -80,13 +80,22 @@ def verify_section(section_obj, label, results):
             results.append({
                 "section": label, "key": key, "status": "NO_HASH",
                 "path": path, "claimed": claimed, "actual": None,
+                "version": entry.get("current_version") or entry.get("version_label") or "—",
             })
             continue
-        file_path = REPO_ROOT / path.lstrip("/")
+        # PUBLIC PATH vs DISK PATH (2026-08-06): protocols keep advertising
+        # /api/*.json — that URL is canonical and still resolves via rewrite —
+        # but the bytes now live outside the Vercel functions namespace, which
+        # does not publish static files. Resolve the public path to disk here.
+        disk = path.lstrip("/")
+        if disk.startswith("api/") and disk.endswith(".json"):
+            disk = "data/" + disk
+        file_path = REPO_ROOT / disk
         if not file_path.exists():
             results.append({
                 "section": label, "key": key, "status": "FILE_MISSING",
                 "path": path, "claimed": claimed, "actual": None,
+                "version": entry.get("current_version") or entry.get("version_label") or "—",
             })
             continue
         actual = sha256_of_file(file_path)

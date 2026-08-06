@@ -45,7 +45,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SIDECAR_DIR = REPO_ROOT / "data" / "external-metadata"
 REGISTRY_PATH = REPO_ROOT / "data" / "registry.json"
-SCHEMA_PATH = REPO_ROOT / "api" / "schemas" / "external-metadata.schema.json"
+SCHEMA_PATH = REPO_ROOT / "data" / "api" / "schemas" / "external-metadata.schema.json"
 
 DOI_RE = re.compile(r"^10\.5281/zenodo\.[0-9]+$")
 AXN_RE = re.compile(r"^AXN:[0-9A-Fa-f]{2,4}\.[A-Z]+\..+$")

@@ -39,7 +39,7 @@ from datetime import date
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INDEX = os.path.join(ROOT, 'data', 'doi-resolution-index.json')
-APIMAP = os.path.join(ROOT, 'api', 'doi-axn-map.json')
+APIMAP = os.path.join(ROOT, 'data', 'api', 'doi-axn-map.json')
 REGISTRY = os.path.join(ROOT, 'data', 'registry.json')
 
 BASE = 'https://alexanarch.org'

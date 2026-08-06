@@ -39,7 +39,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 ADDR_JSON = REPO_ROOT / "data" / "semantic-addresses.json"
-BODY_INDEX = REPO_ROOT / "api" / "body-index.json"
+BODY_INDEX = REPO_ROOT / "data" / "api" / "body-index.json"
 REGISTRY = REPO_ROOT / "data" / "registry.json"
 ADDR_DIR = REPO_ROOT / "addresses"
 SITEMAP = REPO_ROOT / "sitemap.xml"

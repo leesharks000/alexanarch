@@ -124,7 +124,7 @@ machine index: <a href="/api/axn-index.json">/api/axn-index.json</a></p>
     json.dump({"name":"Alexanarch AXN resolver index","rule":"https://www.alexanarch.org/axn/<HEX>/",
                "canonical":"https://www.alexanarch.org/api/axn-index.json",
                "total": len(idx), "generated": r['deposits'][-1].get('date','') or '', "map": idx},
-              open(ROOT/'api/axn-index.json','w'), ensure_ascii=False, separators=(",",":"))
+              open(ROOT/'data/api/axn-index.json','w'), ensure_ascii=False, separators=(",",":"))
     with open(ROOT/'sitemap-axn.xml','w') as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
         for hx in sorted(idx): f.write(f'  <url><loc>https://www.alexanarch.org/s/axn/{hx}/</loc></url>\n')

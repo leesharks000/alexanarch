@@ -39,7 +39,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 
-PROTOCOL_PATH = REPO_ROOT / "api" / "deposit-protocol.json"
+PROTOCOL_PATH = REPO_ROOT / "data" / "api" / "deposit-protocol.json"
 
 
 def count_emoji_graphemes(s):
@@ -72,7 +72,7 @@ def load_index():
     """Load the central protocol index. Returns None if it doesn't exist
     (allows backwards compatibility with environments that haven't deployed
     the index yet)."""
-    idx_path = REPO_ROOT / "api" / "index.json"
+    idx_path = REPO_ROOT / "data" / "api" / "index.json"
     if not idx_path.exists():
         return None
     with open(idx_path) as f:
@@ -92,7 +92,12 @@ def verify_index_consistency(idx):
             claimed = entry.get("content_sha256")
             if not claimed or not path:
                 continue
-            file_path = REPO_ROOT / path.lstrip("/")
+            # public path stays /api/*.json (canonical, rewrite-backed); the
+            # bytes live outside the functions namespace. Resolve to disk.
+            disk = path.lstrip("/")
+            if disk.startswith("api/") and disk.endswith(".json"):
+                disk = "data/" + disk
+            file_path = REPO_ROOT / disk
             if not file_path.exists():
                 failures.append(("IDX-001",
                                  f"index references {path} ({section_name}/{key}) but file is missing"))

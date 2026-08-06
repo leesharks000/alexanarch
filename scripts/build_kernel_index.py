@@ -13,5 +13,5 @@ for d in reg['deposits']:
                   "record": f"/s/records/{d['deposit_number']}/"}
 out = {"description": "Full SHA-256 identity kernel → registered AXN. The reverse lookup: enter bytes, hash them, find the record.",
        "count": len(idx), "kernels": idx}
-(ROOT/'api/kernel-index.json').write_text(json.dumps(out, ensure_ascii=False, separators=(',',':')) + '\n')
+(ROOT/'data/api/kernel-index.json').write_text(json.dumps(out, ensure_ascii=False, separators=(',',':')) + '\n')
 print("kernel-index:", len(idx), "kernels")

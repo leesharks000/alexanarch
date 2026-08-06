@@ -56,7 +56,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-INDEX_PATH = REPO_ROOT / "api" / "index.json"
+INDEX_PATH = REPO_ROOT / "data" / "api" / "index.json"
 
 
 def sha256_of_file(path):

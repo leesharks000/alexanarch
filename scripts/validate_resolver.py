@@ -36,7 +36,7 @@ from collections import Counter
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INDEX = os.path.join(ROOT, 'data', 'doi-resolution-index.json')
-APIMAP = os.path.join(ROOT, 'api', 'doi-axn-map.json')
+APIMAP = os.path.join(ROOT, 'data', 'api', 'doi-axn-map.json')
 REGISTRY = os.path.join(ROOT, 'data', 'registry.json')
 SETJSON = os.path.join(ROOT, 'datasets', 'set.json')
 

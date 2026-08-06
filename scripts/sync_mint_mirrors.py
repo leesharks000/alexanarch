@@ -47,7 +47,7 @@ def main():
                 print('   would update'); continue
             f.write_text(payload, encoding='utf-8')
             kf.write_text(kidx, encoding='utf-8')
-            subprocess.run(['git','-C',td,'add','mint/index.html','api/kernel-index.json'], check=True)
+            subprocess.run(['git','-C',td,'add','mint/index.html','data/api/kernel-index.json'], check=True)
             subprocess.run(['git','-C',td,'-c','user.email=tachyon@alexanarch.org',
                             '-c','user.name=TACHYON','commit','-q','-m',
                             'Sync /mint/ mirror from alexanarch canonical'], check=True)

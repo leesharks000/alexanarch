@@ -37,7 +37,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 REGISTRY_PATH = REPO_ROOT / "data" / "registry.json"
 DEPOSITS_DIR = REPO_ROOT / "data" / "deposits"
-OUTPUT_PATH = REPO_ROOT / "api" / "body-index.json"
+OUTPUT_PATH = REPO_ROOT / "data" / "api" / "body-index.json"
 
 # Reuse the primary index's tokenization discipline verbatim
 _STOPWORDS = frozenset({
