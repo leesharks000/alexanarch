@@ -1,10 +1,10 @@
 {
- "next_hex": "05B3",
+ "next_hex": "05B4",
  "note": "Shared AXN position ledger. Consumed by /api/register-symbolon via compare-and-swap and honored by scripts/mint_deposit.py next_hex_id(). A position is an address, not a verification: witnessed-unverified entries hold real positions pending byte verification.",
  "initialized": "2026-08-02",
  "sequence_authority": "max(registry hex, this ledger) — the two allocators share one space and can never collide",
- "last_allocated": "05B2",
- "last_allocated_at": "2026-08-06T15:14:54Z",
+ "last_allocated": "05B3",
+ "last_allocated_at": "2026-08-06T17:33:40.611Z",
  "invariant": "ONE KERNEL, ONE POSITION. The witness endpoint dedupes against both the symbolon entries and the main registry's kernel index before allocating; the deposit pipeline refuses to mint a kernel the witness layer already positioned. The stamp is authority-independent and can be made offline by anyone — uniqueness is enforced at the allocation gate, the only place it can be.",
  "position_width": {
   "current": "4 hex digits (16^4 = 65,536 positions)",
@@ -12,5 +12,6 @@
   "migration": "backward-compatible: existing 4-digit positions remain valid (leading zeros implicit). Change is to the allocator zero-pad width in next_hex_id() and the ledger. Trigger when allocation approaches 0xF000-ish, leaving headroom for the cutover.",
   "note": "At current pace (~1,450 positions used) the runway is long. This is inscribed now so whoever nears the ceiling finds the end was designed, not discovered."
  },
- "reallocation_2026_08_06": "05B0/05B1/05B2 assigned by MANUS ruling under WAVE-HEXPOS-01 Phase 2 (contested 0365/0391/05AF); next_hex advanced past them"
+ "reallocation_2026_08_06": "05B0/05B1/05B2 assigned by MANUS ruling under WAVE-HEXPOS-01 Phase 2 (contested 0365/0391/05AF); next_hex advanced past them",
+ "last_allocator": "deposit-pipeline (mint_deposit.py)"
 }
