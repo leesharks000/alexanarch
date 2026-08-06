@@ -32376,6 +32376,17 @@
    "verified": "audit_static_namespace.py --live exit 0; OAI Identify/ListMetadataFormats/ListSets/ListIdentifiers/ListRecords 200 text/xml; search index 16,211 tokens + 371 series + 6,001 keywords served",
    "outstanding": "P2 — progressive filters on Browse and Wiki (static list retained for crawlers, client-side filter layered on); P3 — Graph, Lexical and Citations adapters",
    "at": "2026-08-06T21:42:11Z"
+  },
+  {
+   "repair_id": "R-1277",
+   "deposit_number": null,
+   "batch": true,
+   "type": "ANTI_REGRESSION_GUARD",
+   "ruling_by": "MANUS (2026-08-06: 'I need it to be punitive, for any fresh instance to carelessly break, then erase, careful work')",
+   "basis": "FALSE ALARM CORRECTED FIRST: search was NOT reset. Body-text search is fully intact and live — 995 shards serving, and body hits exceed metadata by roughly 4x (sappho 356 body vs 81 metadata; tachyon 625 vs 113). The client retains shardFor(), the AND-intersection across metadata AND body, the body source label and its ranking boost. The failure was in MY VERIFICATION, not the code: I wrote a regression test that queried only the metadata tables and reported its numbers as the whole of search, which made hours of working full-text infrastructure appear erased. A false alarm is not a harmless error — it costs the trust the work depends on. GUARD BUILT: scripts/capability_register.py declares every capability with a live probe and a FLOOR, the minimum measurement that still counts as working. Floors only ever rise. A run measuring below its floor FAILS and names the measurement, the floor and the date the floor was set. --ratchet raises floors that were exceeded, so the archive permanently refuses to accept less than it has already achieved. NO SCRIPT MAY LOWER A FLOOR — that is a human act, made by hand in the register with a reason in the commit message, so a capability can never be quietly abandoned by an instance that found it inconvenient. Crucially several probes carry RELATIONAL assertions rather than bare counts: body-search hits MUST exceed metadata hits for three control terms, so a probe exercising only half a capability fails as loudly as a broken capability — the specific defense against the false-erasure mode. Eight capabilities floored at first measurement: body-search 1120, metadata-search 16211, doi-resolution 1935, oai-pmh 3100, static-publication 14, record-pages 1434, symbolon-store 5, resourcesync 1378. Gated in CI (validate-registry.yml) and in deposit_pipeline stage_commit, both check=True. Verified biting: an artificially raised floor produced CAPABILITY LOSS with the exact shortfall named.",
+   "sites": "scripts/capability_register.py (new); data/api/capability-register.json (new); .github/workflows/validate-registry.yml; scripts/deposit_pipeline.py",
+   "verified": "8/8 capabilities held and floored from live production measurement; simulated regression correctly failed with named shortfall",
+   "at": "2026-08-06T21:49:29Z"
   }
  ]
 }

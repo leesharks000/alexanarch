@@ -477,6 +477,11 @@ def stage_commit(args):
     # surfaces cannot be fetched is not deposited, it is only written. This
     # refuses the commit rather than reporting after it. check=True on purpose.
     sh([sys.executable, SCRIPTS / "audit_static_namespace.py"], check=True)
+    # CAPABILITY GATE: the archive refuses to commit a state in which something
+    # it could already do has stopped working. Floors only rise; a script may
+    # never lower one. This is the guard against a fresh instance carelessly
+    # breaking, then erasing, work that took sessions to build.
+    sh([sys.executable, SCRIPTS / "capability_register.py"], check=True)
     reg, d = deposit_by_number(args.deposit_number)
     n, axn, title = args.deposit_number, d["axn"], d.get("title", "")[:80]
     # T3 (EA-AVAILABILITY-INTEGRITY-01, audit #1413 H3): every commit carries
