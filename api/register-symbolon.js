@@ -202,6 +202,25 @@ module.exports = async (req, res) => {
     family,
     registered: new Date().toISOString(),
     status: verified ? "witnessed-verified" : "witnessed-unverified",
+    // VERIFICATION IS DATED (2026-08-06): a status without a timestamp is a
+    // memory, not a measurement. Entries previously read "witnessed-verified"
+    // with verified_at null, so a depositor could not tell WHEN her bytes were
+    // last checked. Both fields are set at ingest and re-stamped on every run
+    // of scripts/verify_symbolon_store.py, which re-hashes stored cores against
+    // their kernels — the identifier IS the expected hash, so re-verification
+    // needs no external truth and can run forever.
+    verified_at: verified ? new Date().toISOString() : null,
+    last_verified_at: verified ? new Date().toISOString() : null,
+    verification_method: verified
+      ? "sha256 of stored bytes compared to the AXN₀ kernel at ingest"
+      : null,
+    core_stored: !!retrieval,
+    custody: {
+      terms: "Stored cores live in this archive's public version-controlled repository and are served without account, login, or expiry. Any change or removal appears as a dated commit; nothing is silently deleted.",
+      single_point_of_failure: "One administrator, one code host, one serving platform. Durable against link rot, accidental overwrite and quiet editing; NOT durable against a platform decision — this archive was itself terminated elsewhere in June 2026. A registry entry is a record, not a promise of perpetual hosting.",
+      mirror_freely: "Listed with hash and length in /resourcesync/resourcelist.xml and /data/symbolon-registry/MANIFEST.json, and checksummed in /SHA256SUMS.txt. Fetch, hash, compare — copying requires no permission and verification requires no trust in this archive. Independent custody means a copy held by someone who is not this archive's administrator, on a platform it does not use.",
+      depositor_holds: "The depositor's own original plus the Seed A sidecar can prove the work anywhere, with or without this archive. That is the point of splitting the identifier in two.",
+    },
     retrieval,
     note: "The registry witnesses the tuple and its internal consistency (glyphs recomputed from hashes at ingest). Seed B was not seen; verification against bytes is a separate act per SPEC §9.",
     spec: "AXN-SYMBOLON-SPEC v0.2 · https://www.alexanarch.org/s/records/1432/",

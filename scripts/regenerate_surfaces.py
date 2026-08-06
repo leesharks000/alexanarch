@@ -574,6 +574,25 @@ def regenerate_sha256sums(reg, dry_run=False):
             except Exception:
                 pass
 
+    # SEALED CORES (2026-08-06): stored symbolon originals belong in the
+    # real-file manifest. They were absent from it entirely — a depositor could
+    # not run `sha256sum -c` against the file this archive holds on her behalf,
+    # and a mirror operator had nothing to check a copy against. Their expected
+    # hash is not a separate assertion: it IS the AXN0 kernel, so these lines
+    # are self-checking. Written from bytes on disk, like the text lines above.
+    sym_dir = REPO_ROOT / "data/symbolon-registry/files"
+    sym_count = 0
+    if sym_dir.is_dir():
+        for sf in sorted(sym_dir.iterdir()):
+            if not sf.is_file() or sf.name.startswith("."):
+                continue
+            try:
+                sh = hashlib.sha256(sf.read_bytes()).hexdigest()
+                file_lines.append(f"{sh}  {sf.relative_to(REPO_ROOT).as_posix()}")
+                sym_count += 1
+            except Exception:
+                pass
+
     file_lines.sort()
     semantic_lines.sort()
     file_out = "\n".join(file_lines) + "\n"
@@ -590,7 +609,7 @@ def regenerate_sha256sums(reg, dry_run=False):
     _receipt(sha_target)
     with open(sha_target, "w", encoding="utf-8") as f:
         f.write(file_out)
-    print(f"  ✓ SHA256SUMS.txt ({len(file_lines)} file lines, real paths, sha256sum -c verifiable)")
+    print(f"  ✓ SHA256SUMS.txt ({len(file_lines)} file lines incl. {sym_count} sealed cores, real paths, sha256sum -c verifiable)")
 
     _receipt(rec_target)
     with open(rec_target, "w", encoding="utf-8") as f:

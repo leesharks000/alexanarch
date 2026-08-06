@@ -125,7 +125,7 @@ REGISTRY = REPO_ROOT / "data" / "registry.json"
 
 STAGE_ORDER = [
     "mint", "validate", "record", "pdf", "body-index",
-    "wiki", "sitemap", "oai", "interlink", "enrich", "identity", "commit", "verify",
+    "wiki", "sitemap", "oai", "interlink", "enrich", "symbolon", "identity", "commit", "verify",
     "announce",
 ]
 
@@ -415,6 +415,17 @@ def stage_enrich(args):
         "--wikidata", "--openalex", "--datacite", "--spxi"], check=False)
 
 
+def stage_symbolon(args):
+    """Re-verify stored sealed cores against their kernels; refresh the mirror
+    manifest. Runs on every mint so "verified" carries a date rather than a
+    memory, and so a newly stamped core enters the checksum manifest and the
+    harvest feed in the same commit that creates it — not whenever someone
+    remembers. check=True on purpose: a nonzero exit is an integrity alert
+    (stored bytes not hashing to their kernel), and swallowing it would turn a
+    substituted core into a silent pass."""
+    sh([sys.executable, SCRIPTS / "verify_symbolon_store.py"], check=True)
+
+
 def stage_identity(args):
     """Work-level identity: concept resolution + mirror consolidation.
 
@@ -539,7 +550,8 @@ STAGES = {
     "mint": stage_mint, "validate": stage_validate, "record": stage_record,
     "pdf": stage_pdf, "body-index": stage_body_index, "wiki": stage_wiki,
     "sitemap": stage_sitemap, "interlink": stage_interlink,
-    "enrich": stage_enrich, "identity": stage_identity,
+    "enrich": stage_enrich, "symbolon": stage_symbolon,
+    "identity": stage_identity,
     "commit": stage_commit, "verify": stage_verify,
     "oai": stage_oai,
     "announce": stage_announce,

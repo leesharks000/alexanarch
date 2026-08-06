@@ -32329,6 +32329,17 @@
    "verified": "validate_deposit --strict 0 failures; central registry 0 CONTESTED; wiki article 656 words seated; 5 concepts, 10 entity triples",
    "outstanding": "papers/AXN-05B3.pdf (LaTeX unavailable in session container); citation_extractor/concept_backlink (API-tier, forbidden internally)",
    "at": "2026-08-06T17:40:02Z"
+  },
+  {
+   "repair_id": "R-1273",
+   "deposit_number": null,
+   "batch": true,
+   "type": "CUSTODY_INFRASTRUCTURE",
+   "ruling_by": "MANUS (2026-08-06, prompted by Depositor E.'s question of her own file: 'where is the original PDF actually stored, and under what conditions?')",
+   "basis": "A depositor asked the right question and the honest answer exposed three gaps, all now closed at the generators rather than by hand. (1) DATED VERIFICATION: entries read 'witnessed-verified' with verified_at null — a status that was a memory, not a measurement. New scripts/verify_symbolon_store.py re-hashes every stored sealed core against its AXN0 kernel (the identifier IS the expected hash, so verification is self-contained and needs no external truth), records verified_at + last_verified_at + method + byte length, raises witnessed-unverified to witnessed-verified on evidence, and NEVER silently repairs a mismatch — a stored core that does not hash to its kernel is corruption or substitution, both findings, so it writes integrity_alert and exits nonzero. First run: 5 cores verified, 1 identity-only witnessing, 0 alerts. (2) CHECKSUM MANIFEST: sealed cores were absent from SHA256SUMS.txt entirely, so a depositor could not run `sha256sum -c` against the file this archive holds for her. regenerate_surfaces.py now writes them from bytes on disk; verified 1409 OK / 0 failed. (3) HARVEST FEED: cores were absent from ResourceSync, so the store was public but not mirrorable-without-asking — the only kind of public that survives an account termination. build_resourcesync.py now publishes each core WITH rs:md hash='sha-256:...' and length, so a harvester can verify what it fetched without trusting this archive; plus data/symbolon-registry/MANIFEST.json as the mirror operator's file. DURABILITY: new 'symbolon' pipeline stage runs verification on every mint before commit (check=True — an integrity alert must not be swallowed), so future stamped files enter the manifest and the feed in the same commit that creates them. api/register-symbolon.js now stamps verified_at/last_verified_at/verification_method at ingest and records an explicit custody block naming the single point of failure (one administrator, one code host, one serving platform; durable against link rot and quiet editing, NOT against a platform decision) and the mirror-freely terms. The archive states its own weakness in the record rather than in a promise.",
+   "sites": "scripts/verify_symbolon_store.py (new); scripts/regenerate_surfaces.py; scripts/build_resourcesync.py; scripts/deposit_pipeline.py (stage+order+registry); api/register-symbolon.js; data/symbolon-registry/entries/*.json (6); data/symbolon-registry/MANIFEST.json (new); SHA256SUMS.txt; resourcesync/resourcelist.xml",
+   "verified": "5/5 cores hash-match their kernels; sha256sum -c 1409 OK 0 failed; resourcelist carries 5 cores with hash+length; AXN:05AD verified_at now dated",
+   "at": "2026-08-06T18:03:00Z"
   }
  ]
 }

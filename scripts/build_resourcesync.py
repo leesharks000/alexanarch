@@ -82,6 +82,26 @@ def main():
         f'    <lastmod>{r["datestamp"]}</lastmod>\n'
         f'    <rs:md hash="" length="" type="text/html"/>\n  </url>\n'
         for r in recs]
+    # SEALED CORES (2026-08-06): stored symbolon originals are published to the
+    # harvest feed WITH their hash and length. Record URLs above carry empty
+    # hash/length because an HTML surface is regenerated; a sealed core is fixed
+    # bytes whose expected hash IS its AXN0 kernel, so a harvester can verify
+    # what it fetched without asking this archive anything. That is the property
+    # that makes a mirror trustworthy while its source is not: publishing the
+    # bytes public was never enough — they must be checkable and copyable
+    # without permission, or "public" ends when an account does.
+    try:
+        man = json.loads((ROOT / "data/symbolon-registry/MANIFEST.json").read_text())
+        for c in man.get("cores", []):
+            urls.append(
+                f'  <url>\n    <loc>{c["retrieval"]}</loc>\n'
+                f'    <lastmod>{(c.get("last_verified_at") or t)[:10]}</lastmod>\n'
+                f'    <rs:md hash="sha-256:{c["sha256"]}" length="{c["bytes"]}"'
+                f' type="application/octet-stream"/>\n  </url>\n')
+    except Exception as e:
+        print(f"resourcesync: sealed-core manifest unavailable ({e}) — "
+              f"cores NOT published this run (run scripts/verify_symbolon_store.py)")
+
     (RS / "resourcelist.xml").write_text(doc(
         "resourcelist", urls, up=f"{BASE}/resourcesync/capabilitylist.xml",
         extra_md=f' at="{t}" completed="{t}"'))
