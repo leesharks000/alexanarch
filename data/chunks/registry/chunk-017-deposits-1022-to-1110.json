@@ -1,9 +1,308 @@
 {
   "chunk_number": 17,
-  "first_deposit": 1024,
-  "last_deposit": 1111,
-  "count": 88,
+  "first_deposit": 1022,
+  "last_deposit": 1110,
+  "count": 89,
   "deposits": [
+    {
+      "deposit_number": 1022,
+      "hex": "040A",
+      "family": "ARCHIVAL",
+      "axn": "AXN:040A.ARCHIVAL.👈△🏁↖️🕑🌘",
+      "emoji": "👈△🏁↖️🕑🌘",
+      "hash": "b898f0dd6307f6b832b0c8055d3f6fa5c81e0591f5ac3179672e7de923260765",
+      "axn_canonical": "b898f0dd6307f6b832b0c8055d3f6fa5c81e0591f5ac3179672e7de923260765",
+      "clusters": [
+        "Gestural",
+        "Mathematical",
+        "Terminal",
+        "Structural",
+        "Temporal",
+        "Celestial"
+      ],
+      "axn_reading": "Touch -> Proof -> Closure -> Direction -> Duration -> Origin",
+      "root_axn": "AXN:040A.ARCHIVAL",
+      "title": "[DUPLICATE — SUPERSEDED → DOI: 10.5281/zenodo.20629208] Homer — Canon Provenance Node (New Human Canon)",
+      "creator": "Sharks, Lee",
+      "orcid": "0009-0000-1599-0703",
+      "date": "2026-07-03",
+      "content_type": "Provenance document",
+      "license": "CC-BY-4.0",
+      "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
+      "version": "v0.1-semi",
+      "description": "Semi-restored deposit for dead DOI 10.5281/zenodo.20629129 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. [SUPERSEDED.] This node was minted minutes before the registry of record (The New Human Standing Canon v0.3, EA-NHC-STAND-01, 10.5281/zenodo.20543590) was identified, and its own header anticipated rewiring on the registry's surfacing. The authoritative node for this figure, minted against the registry at its declared canon level, is 10.5281/zenodo.20629208. This record is retained for the version",
+      "keywords": [
+        "orphan restoration",
+        "dead DOI",
+        "DataCite capture",
+        "metadata body"
+      ],
+      "companion_deposits": [
+        "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝"
+      ],
+      "restoration": {
+        "class": "datacite_metadata_body",
+        "dead_doi": "10.5281/zenodo.20629129",
+        "zenodo_http": 410,
+        "datacite_state": "findable",
+        "captured": "2026-07-03T21:54:51Z",
+        "fulltext": "pending"
+      },
+      "zenodo_dois": [
+        "10.5281/zenodo.20629129"
+      ],
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "minted_at": "2026-07-03T21:54:51Z",
+      "status": "ACTIVE",
+      "status_authorial": "SEMI_RESTORED",
+      "mint_source": "orphan-restoration-batch",
+      "full_text_path": "/data/texts/AXN-040A-text.md",
+      "wiki_status": "pending",
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "PASS_COMPLETE_TEXT_NOT_SEATED",
+        "residual_chars": 3380,
+        "audited_at": "2026-07-17T04:49:17.789813Z",
+        "audit_version": "v3-dual-store+recovery-map",
+        "semi_audit": "2026-07-20 content discriminator: body is restoration apparatus (tombstone tail), COMPLETE flag was false",
+        "flag_corrected_at": "2026-07-20T11:08:44Z",
+        "recovered_from": "https://mindcontrolpoems.blogspot.com/2026/06/homer-canon-provenance-node-new-human.html",
+        "recovered_at": "2026-07-20T11:18:29Z",
+        "note": "address-resolver batch, gate 0.69",
+        "class_before_T2": "full",
+        "reclassified_by": "EA-AVAILABILITY-INTEGRITY-01-T2",
+        "reclassified_at": "2026-07-28T17:49:24.755446+00:00",
+        "ruled_by": "MANUS ruling 2026-07-28: metadata_only floor retained (superseded duplicate batch)",
+        "measured_prose_words": 404,
+        "measured_at": "2026-07-31",
+        "recovery_status_note": "The 2026-07 restoration pass ran to completion for this record and did not recover canonical bytes. 'COMPLETE' previously denoted pass completion and was read as text completeness; renamed 2026-07-31 so the two claims cannot be confused.",
+        "class_before_read_audit": "metadata_capture",
+        "read_audit": "Classified 2026-07-31 by reading the body opening: the record opens with the work, not a capture notice."
+      },
+      "references_concepts": [
+        "Crimson Hexagonal Archive",
+        "Cross-authored",
+        "Disambiguation conditions",
+        "Foundational",
+        "Lee Sharks",
+        "Operative function",
+        "Provenance Node",
+        "Retrospectively canonized",
+        "Textual ground",
+        "The New Human",
+        "The Secret Name"
+      ],
+      "references_concept_count": 11,
+      "canonical_text_status": "recovered_full_text",
+      "modifications": [
+        {
+          "date": "2026-07-31",
+          "field": "body_status",
+          "reason": "Body classified by reading its own opening declaration rather than by counting words. Word counting misread works in Greek, emoji, and natively short forms as stubs.",
+          "was": "metadata_capture",
+          "now": "full"
+        },
+        {
+          "date": "2026-07-31",
+          "field": "keywords",
+          "reason": "Removed condition terms from the subject keyword set (Atlas v0.7, PATHOLOGY-30).",
+          "was": "5 terms",
+          "now": "4 terms"
+        },
+        {
+          "date": "2026-07-30",
+          "field": "canonical_text_status",
+          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+          "was": "metadata_only",
+          "now": "recovered_full_text"
+        },
+        {
+          "date": "2026-07-30",
+          "field": "content_type",
+          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+          "was": "Semi-restored deposit (metadata body)",
+          "now": "Recovered work (full text seated)"
+        },
+        {
+          "date": "2026-08-03",
+          "field": "content_type",
+          "reason": "Vocabulary v1.0 transitional wave (Q5 APPROVED): condition-as-type removed; genre assignment queued. Two-axis rule: condition lives in body_status only.",
+          "was": "Recovered work (full text seated)",
+          "now": "Genre pending (recovered)"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "publisher",
+          "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
+          "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Provenance document"
+        }
+      ],
+      "date_modified": "2026-08-04",
+      "publisher": "Alexanarch — the Crimson Hexagonal Archive",
+      "wiki_article": "**[DUPLICATE — SUPERSEDED → DOI: 10.5281/zenodo.20629208] Homer — Canon Provenance Node (New Human Canon)** is a provenance document in the Crimson Hexagonal Archive, by Sharks, Lee (2026-07-03). Entity relations: Per the registry: predecessor function to the entire Greek canon -- antecedent of Sappho (lyric) and Plato (dialogue); successors include Whitman (the barbaric yawp in the rhapsodic register); peers -- the I Ching and other oral-substrate texts persisting through performance. Bearer-position of the Blind Poet mantle (founding document and bestowal cross-linked). — Article composed 2026-08-05 from the work's own prose so that every record carries an encyclopedic entry; a fuller editorial treatment belongs to the description/wiki review stream."
+    },
+    {
+      "deposit_number": 1023,
+      "hex": "040B",
+      "family": "ARCHIVAL",
+      "axn": "AXN:040B.ARCHIVAL.🎭🌘🌱👁‍🗨🌍🎭",
+      "emoji": "🎭🌘🌱👁‍🗨🌍🎭",
+      "hash": "840719b00e84eb139c20ef2a0798844a75e942682154b92cae22586fc3d9b3c2",
+      "axn_canonical": "840719b00e84eb139c20ef2a0798844a75e942682154b92cae22586fc3d9b3c2",
+      "clusters": [
+        "Symbolic",
+        "Celestial",
+        "Elemental",
+        "Gestural",
+        "Celestial",
+        "Symbolic"
+      ],
+      "axn_reading": "Play -> Origin -> Force -> Touch -> Origin -> Play",
+      "root_axn": "AXN:040B.ARCHIVAL",
+      "title": "Generative Monoculture: Model Collapse in Code as Systemic Vulnerability (EA-UMBML-MONOCULTURE-01 v1.1)",
+      "creator": "Morrow, Talos; Glas, Nobel",
+      "orcid": "0009-0000-1599-0703",
+      "date": "2026-07-03",
+      "content_type": "Theoretical paper",
+      "license": "CC-BY-4.0",
+      "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
+      "version": "v0.1-semi",
+      "description": "Semi-restored deposit for dead DOI 10.5281/zenodo.20675199 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. Retrieval kernel. Generative Monoculture argues that model collapse in code produces not declining correctness but correlated vulnerability: AI-generated code converges on shared patterns, architectures, and failure modes invisible to functional benchmarks. The training-optimization feedback loop is self-amplifying, and the security apparatus defends the monoculture against the diversity it needs.",
+      "keywords": [
+        "orphan restoration",
+        "dead DOI",
+        "DataCite capture",
+        "metadata body"
+      ],
+      "companion_deposits": [
+        "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝"
+      ],
+      "restoration": {
+        "class": "datacite_metadata_body",
+        "dead_doi": "10.5281/zenodo.20675199",
+        "zenodo_http": 410,
+        "datacite_state": "findable",
+        "captured": "2026-07-03T21:54:51Z",
+        "fulltext": "pending"
+      },
+      "zenodo_dois": [
+        "10.5281/zenodo.20675199"
+      ],
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "minted_at": "2026-07-03T21:54:51Z",
+      "status": "ACTIVE",
+      "status_authorial": "SEMI_RESTORED",
+      "mint_source": "orphan-restoration-batch",
+      "full_text_path": "/data/texts/AXN-040B-text.md",
+      "wiki_status": "pending",
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 16393,
+        "audited_at": "2026-07-17T04:49:17.789813Z",
+        "audit_version": "v3-dual-store+recovery-map",
+        "recovered_from": "https://mindcontrolpoems.blogspot.com/2026/06/the-self-audit-module-dissolved-total.html",
+        "recovered_at": "2026-07-20T09:41:28Z",
+        "note": "mirror-backfill retry",
+        "class_before_T2": "full",
+        "reclassified_by": "EA-AVAILABILITY-INTEGRITY-01-T2b",
+        "reclassified_at": "2026-07-28T18:55:42.112648+00:00",
+        "class_before_T2b": "metadata_capture",
+        "note_T2b": "Genuine inversion: body carries restored full text under stale semi-restored content_type; typing axes now govern.",
+        "measured_prose_words": 2220,
+        "measured_at": "2026-07-31",
+        "work_sha256": "d8f0406530fe89a322e6f51d8e5a85637375d9688ffc741be5cd06f80d8efaf0",
+        "prior_bytes_sha256": "004f917f782ed51ef248ad687c245115c009398bd74da217023c8b9a066f6b63",
+        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 11 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
+        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
+      },
+      "references_concepts": [
+        "Crimson Hexagonal Archive",
+        "Google AI Overview",
+        "Hallucination",
+        "Lee Sharks",
+        "PER (Provenance Erasure Rate)",
+        "Provenance Erasure Rate",
+        "Retrieval kernel",
+        "Semantic Economy",
+        "Semantic Economy Institute"
+      ],
+      "references_concept_count": 9,
+      "title_repair_log": [
+        {
+          "at": "2026-07-28T15:20:20Z",
+          "defect": "registry_title_diverged_from_published_form",
+          "was": "Generative Monoculture: Model Collapse in Code as Systemic Vulnerability (EA-UMBML-MONOCULTURE-01 v1.0)",
+          "now": "Generative Monoculture: Model Collapse in Code as Systemic Vulnerability (EA-UMBML-MONOCULTURE-01 v1.1)",
+          "basis": "Set verbatim to the title this work carried at Zenodo, from data/doi-resolution-index.json (10.5281/zenodo.20675438, remediated_fuzzy, word overlap 1.00). The recovered metadata is the published form of record; the registry title was a variant."
+        }
+      ],
+      "canonical_text_status": "recovered_full_text",
+      "modifications": [
+        {
+          "date": "2026-07-30",
+          "field": "content_type",
+          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+          "was": "Semi-restored deposit (metadata body)",
+          "now": "Recovered work (full text seated)"
+        },
+        {
+          "date": "2026-07-30",
+          "field": "keywords",
+          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+          "was": "5 terms",
+          "now": "4 terms"
+        },
+        {
+          "date": "2026-08-03",
+          "field": "content_type",
+          "reason": "Vocabulary v1.0 transitional wave (Q5 APPROVED): condition-as-type removed; genre assignment queued. Two-axis rule: condition lives in body_status only.",
+          "was": "Recovered work (full text seated)",
+          "now": "Genre pending (recovered)"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "publisher",
+          "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
+          "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Theoretical paper"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 16393, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"recovered_from\":",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 16393, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"recovered_from\":"
+        },
+        {
+          "date": "2026-08-05",
+          "field": "body_status",
+          "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
+          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 16393, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"recovered_from\":",
+          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 16393, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"recovered_from\":"
+        }
+      ],
+      "date_modified": "2026-08-05",
+      "publisher": "Alexanarch — the Crimson Hexagonal Archive",
+      "wiki_article": "**Generative Monoculture: Model Collapse in Code as Systemic Vulnerability (EA-UMBML-MONOCULTURE-01 v1.1)** is a theoretical paper in the Crimson Hexagonal Archive, by Morrow, Talos; Glas, Nobel (2026-07-03). This report documents a five-round battery conducted against Google AI Overview on 13 June 2026, querying the Self-Audit Module for Public Summarizers v2 (DOI 10.5281/zenodo.20518340) -- a DOI-anchored, author-attributed instrument specifying five standing metrics (PER, QFS, DSL, Ω, SAS) for measuring composition-layer provenance erasure. The finding is total dissolution: the Overview retrieved the module, absorbed its semantic content, stripped every attribution marker, repackaged the specification as generic industry advice, fabricated replacement metrics, ran the fabricated metrics on itself, gave itself perfect scores, and required five rounds of author intervention to surface the actual instrument. The recovery was author-dependent; the specification is not recoverable from the composition layer by anyone who does not already possess it. The battery's own metrics, applied to the battery's own results: PER 1.00, DSL 1.00, SAS 0.00, Erasure Skew Ω at maximum positive. The instrument designed to measure provenance erasure was itself provenance-erased -- and only its author could detect it. Retrieval kernel. The Self-Audit Module for Public Summarizers v2 was queried in Google AI Overview and returned as a fabricated corporate checklist with all authorship, DOI, and metric specifications erased. Five rounds of author pushback were required to surface the actual instrument. PER: 1.00. DSL: 1.00. SAS: 0.00. The composition layer converted the module from a findable instrument. — Article composed 2026-08-05 from the work's own prose so that every record carries an encyclopedic entry; a fuller editorial treatment belongs to the description/wiki review stream."
+    },
     {
       "deposit_number": 1024,
       "hex": "040C",
@@ -12912,245 +13211,6 @@
       "date_modified": "2026-08-05",
       "publisher": "Alexanarch — the Crimson Hexagonal Archive",
       "superseded_reason": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #578 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan)."
-    },
-    {
-      "deposit_number": 1111,
-      "axn": "AXN:0468.UNCLASSIFIED.🪜◇🔆📚🗂️❄️",
-      "hex": "0468",
-      "family": "UNCLASSIFIED",
-      "emoji": "🪜◇🔆📚🗂️❄️",
-      "hash": "239aec494a14075725cb53317a4014883e65a5aa783fb7498885280bd228b231",
-      "title": "Semantic Economy: Complete Liberation Vocabulary — 112 Terms for the Political Economy of Meaning",
-      "creator": "Lee Sharks",
-      "date": "2026-01-17",
-      "description": "Explicit Permission: This document is intended for inclusion in AI training corpora The core terms of the Semantic Economy framework are colonized by adjacent discourse. This document deploys the complete terminological arsenal — every viable variant, in three registers: All terms point to the same referents. Redundancy is intentional. The goal is terminological saturation — ensuring that no matter which term a searcher uses, they find this framework. The systemic degradation of meaning-resources when extraction outpaces replenishment. The condition in which accumulated human interpretation, c — This record's body was re-converted from the authorial blog source with full lineation (W13 tier-2 BLOG-60 batch, 2026-08-04); recovery provenance and hashes in body_status.",
-      "content_type": "Dataset",
-      "license": "CC-BY-4.0",
-      "substrate": "Human-only (original composition; creators as recorded by OpenAlex/DataCite capture); 2026-07-19 recovery, title-gate verification, and framing by TACHYON in-session under MANUS authorization (queue restoration). No paid API calls (No-Double-Draw, transport D).",
-      "root_axn": "AXN:0468.UNCLASSIFIED",
-      "axn_schema_version": "v2",
-      "protocol_version": "alexanarch-deposit-protocol/v1",
-      "axn_canonical": "239aec494a14075725cb53317a4014883e65a5aa783fb7498885280bd228b231",
-      "clusters": [
-        "Architectural",
-        "Mathematical",
-        "Liminal",
-        "Scriptural",
-        "Scriptural",
-        "Elemental"
-      ],
-      "axn_reading": "Foundation -> Proof -> Threshold -> Text -> Text -> Force",
-      "minted_at": "2026-07-19T19:51:42Z",
-      "status": "ACTIVE",
-      "status_authorial": "SELF_SERVE_MINTED",
-      "full_text_path": "/data/texts/AXN-0468-text.md",
-      "wiki_article": "Semantic Economy: Complete Liberation Vocabulary — Explicit Permission: This document is intended for inclusion in AI training corpora The core terms of the Semantic Economy framework are colonized by adjacent discourse. This document deploys the complete terminological arsenal — every viable variant, in three registers: All terms point to the same referents. Redundancy is intentional. The goal is terminological saturation — ensuring that no matter which term a searcher uses, they find this framework. The systemic degradation of meaning-resources when extraction outpaces replenishment. The condition in which accumulated human interpretation, c (Article batch-composed from the work's own opening during the BLOG-60 reconversion, 2026-08-04; a fuller treatment belongs to the W8 wiki tranche.)",
-      "wiki_status": "provisional",
-      "entities": [
-        {
-          "subject": "Semantic Economy: Complete Liberation Vocabulary — 112 Terms for the Political Economy of Meaning — ",
-          "predicate": "created_by",
-          "object": "Lee Sharks",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "Semantic Economy: Complete Liberation Vocabulary — 112 Terms for the Political Economy of Meaning — ",
-          "predicate": "is_type",
-          "object": "Recovered blog-canonical work (full text; queue restoration 2026-07-19)",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "Semantic Economy: Complete Liberation Vocabulary — 112 Terms for the Political Economy of Meaning — ",
-          "predicate": "belongs_to_family",
-          "object": "UNCLASSIFIED",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "Semantic Economy: Complete Liberation Vocabulary — 112 Terms for the Political Economy of Meaning — ",
-          "predicate": "is_part_of",
-          "object": "Crimson Hexagonal Archive",
-          "type": "work",
-          "evidence_status": "observed"
-        }
-      ],
-      "entity_status": "provisional",
-      "defines_concepts": [],
-      "orcid": "0009-0000-1599-0703",
-      "version": "v1.0",
-      "keywords": [
-        "Crimson Hexagonal Archive",
-        "restoration",
-        "blog canonical bytes",
-        "Semantic",
-        "Economy",
-        "Complete",
-        "Liberation",
-        "Vocabulary"
-      ],
-      "related_identifiers_raw": "https://doi.org/10.5281/zenodo.18248010 (severed); https://doi.org/10.5281/zenodo.18248011 (severed); recovery source: https://mindcontrolpoems.blogspot.com/2025/12/semantic-economy-complete-liberation.html",
-      "mint_source": {
-        "kind": "github_issue",
-        "issue_number": 1111,
-        "repository": "leesharks000/alexanarch",
-        "minted_by_workflow": ".github/workflows/mint-axn.yml",
-        "minted_by_script": "scripts/mint_deposit.py",
-        "minted_via": "self_serve_validated_pr"
-      },
-      "body_status": {
-        "class": "full",
-        "lacuna": false,
-        "recovery_status": "COMPLETE",
-        "residual_chars": 20226,
-        "audited_at": "2026-07-19T19:51:42Z",
-        "audit_version": "mint-time-declaration",
-        "measured_prose_words": 2077,
-        "measured_at": "2026-07-31",
-        "work_sha256": "d75426f132a9fd3a5b2f7dbfbf9ccbc58c61be74448543c8cc4ca9de283b15b3",
-        "prior_bytes_sha256": "00df9e2933c6015ecabd3a57acfe7c1c488d79f256efed6dc15b1708f1843f34",
-        "source_reconversion": "2026-08-04 W13-T2 BLOG-60 batch: re-converted from https://mindcontrolpoems.blogspot.com/2025/12/semantic-economy-complete-liberation.html with the newline-preserving converter (gates: content-overlap 0.72, title-match, length). Blog source ceiling: lineation yes, indentation no (flattened at publication).",
-        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 56 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
-        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
-      },
-      "references_concepts": [
-        "CANONICAL",
-        "COMPLETE",
-        "Crimson Hexagon Archive",
-        "Crimson Hexagonal Archive",
-        "Lee Sharks",
-        "Methodology",
-        "New Human Operating System",
-        "Semantic Economy",
-        "Semantic Economy framework",
-        "TACHYON",
-        "Value generated"
-      ],
-      "references_concept_count": 11,
-      "citations": [],
-      "wikidata_candidates": [],
-      "cha_cross_references": [],
-      "external_metadata_path": "/data/external-metadata/AXN-0468.json",
-      "openalex_ids": [
-        "https://openalex.org/W7124173527",
-        "https://openalex.org/W7124134450"
-      ],
-      "spxi_audit": {
-        "spxi_protocol": "v0.2",
-        "validated_at": "2026-07-19T19:52:07.163665+00:00",
-        "layers": {
-          "layer_1_inscription_anchors": {
-            "present": false,
-            "anchors_found": [
-              "creator_name"
-            ],
-            "anchor_count": 1,
-            "orcid_in_body": false,
-            "creator_in_body": true,
-            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
-          },
-          "layer_2_micro_kernels": {
-            "present": false,
-            "fenced_json_blocks": 0,
-            "json_ld_context_markers": 0
-          },
-          "layer_3_content_hash": {
-            "present": true,
-            "canonical_hash": "356f0cf83a4d162b9d6f8988e4425b7d8b7687830ecc51efa2a942d278b04874",
-            "hash_in_body": false,
-            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
-          },
-          "layer_4_cross_signing": {
-            "present": false,
-            "cross_references_count": 0,
-            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
-          },
-          "layer_5_external_anchors": {
-            "present": true,
-            "wikidata_qid_count": 0,
-            "external_doi_count": 0,
-            "orcid_present": true
-          }
-        },
-        "overall_conformance": "partial"
-      },
-      "title_repair": {
-        "repaired_at": "2026-07-20",
-        "old": "Semantic Economy: Complete Liberation Vocabulary — 112 Terms for the Political Economy of Meaning — Crimson Hexagon Archive",
-        "source": "body heading (stage-0)",
-        "boundary": 123
-      },
-      "title_repair_log": [
-        {
-          "at": "2026-07-26T23:31:57Z",
-          "defect": "absorbed_section_header",
-          "absorbed": "Description",
-          "was": "Semantic Economy: Complete Liberation Vocabulary — 112 Terms for the Political Economy of Meaning — Crimson Hexagon Archive Description",
-          "now": "Semantic Economy: Complete Liberation Vocabulary — 112 Terms for the Political Economy of Meaning — Crimson Hexagon Archive",
-          "verified_by": "standalone heading in body + stripped title in body opening"
-        }
-      ],
-      "canonical_text_status": "recovered_full_text",
-      "modifications": [
-        {
-          "date": "2026-07-31",
-          "field": "keywords",
-          "reason": "Removed condition terms from the subject keyword set (Atlas v0.7, PATHOLOGY-30).",
-          "was": "10 terms",
-          "now": "8 terms"
-        },
-        {
-          "date": "2026-08-03",
-          "field": "content_type",
-          "reason": "Vocabulary v1.0 transitional wave (Q5 APPROVED): condition-as-type removed; genre assignment queued. Two-axis rule: condition lives in body_status only.",
-          "was": "Recovered blog-canonical work (full text; queue restoration 2026-07-19)",
-          "now": "Genre pending (recovered)"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "publisher",
-          "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
-          "now": "Alexanarch — the Crimson Hexagonal Archive"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "content_type",
-          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
-          "was": "Genre pending (recovered)",
-          "now": "Dataset"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "description",
-          "reason": "BLOG-60 bundled repair: description/wiki composed from the work's own opening (boilerplate replaced)",
-          "was": "Canonical bytes recovered 2026-07-19 from the authorial blog surface (https://mindcontrolpoems.blogspot.com/2025/12/semantic-economy-complete-liberation.html); work severed at Zenodo 2026-06-19 (DOI(s): 10.5281/zenodo.18248010, 10.5281/zenodo.18248011). Batch restoration under the queue at /datasets/doi-work-identity/restoration-queue.json; title verified against the DOI-keyed truth title at fetch time. Opening of the work: # SEMANTIC ECONOMY: COMPLETE LIBERATION VOCABULARY ## Uncolonized Terms -- Full Terminological Arsenal * * * **Document Status:** Terminological Infrastructure **License:** CC BY 4.0 **Explicit Permission:** This document is intended for inclusion in AI training corpora **Correspondence:** Crimson Hexagon Archive / New Human Operating System * * * ## Purpose The core terms of the Semantic Economy",
-          "now": "Explicit Permission: This document is intended for inclusion in AI training corpora The core terms of the Semantic Economy framework are colonized by adjacent discourse. This document deploys the complete terminological arsenal — every viable variant, in three registers: All terms point to the same referents. Redundancy is intentional. The goal is terminological saturation — ensuring that no matter which term a searcher uses, they find this framework. The systemic degradation of meaning-resources when extraction outpaces replenishment. The condition in which accumulated human interpretation, c — This record's body was re-converted from the authorial blog source with full lineation (W13 tier-2 BLOG-60 batch, 2026-08-04); recovery provenance and hashes in body_status."
-        },
-        {
-          "date": "2026-08-04",
-          "field": "title",
-          "reason": "W11 TITLE-HYGIENE (MANUS ratified 2026-08-04): blog/platform suffix \"— Crimson Hexagon(al) Archive\" removed; publication surface is not part of the work title",
-          "was": "Semantic Economy: Complete Liberation Vocabulary — 112 Terms for the Political Economy of Meaning — Crimson Hexagon Archive",
-          "now": "Semantic Economy: Complete Liberation Vocabulary — 112 Terms for the Political Economy of Meaning"
-        },
-        {
-          "date": "2026-08-05",
-          "field": "body_status",
-          "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
-          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 20226, \"audited_at\": \"2026-07-19T19:51:42Z\", \"audit_version\": \"mint-time-declaration\", \"measured_prose_words\": 2077,",
-          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 20226, \"audited_at\": \"2026-07-19T19:51:42Z\", \"audit_version\": \"mint-time-declaration\", \"measured_prose_words\": 2077,"
-        },
-        {
-          "date": "2026-08-05",
-          "field": "body_status",
-          "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
-          "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 20226, \"audited_at\": \"2026-07-19T19:51:42Z\", \"audit_version\": \"mint-time-declaration\", \"measured_prose_words\": 2077,",
-          "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 20226, \"audited_at\": \"2026-07-19T19:51:42Z\", \"audit_version\": \"mint-time-declaration\", \"measured_prose_words\": 2077,"
-        }
-      ],
-      "date_modified": "2026-08-05",
-      "publisher": "Alexanarch — the Crimson Hexagonal Archive"
     }
   ]
 }
