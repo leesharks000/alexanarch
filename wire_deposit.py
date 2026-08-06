@@ -639,6 +639,24 @@ def _render_inline(text):
     return t
 
 
+def _clean_apparatus(html_frag):
+    """Convert markdown headings the body renderer left literal inside the
+    restoration wrapper. Added 2026-08-06.
+
+    The W10 split happens AFTER html conversion, so any heading line the body
+    renderer did not convert survives into the apparatus block as a literal
+    '# Title' — visible on all 128 wrapper records. The wrapper is apparatus,
+    so its headings render as bold lines rather than document headings, which
+    keeps them out of the page's heading outline.
+    """
+    import re as _re
+    def _h(m):
+        return '<p style="font-weight:600;margin:8px 0 2px">' + m.group(2).strip() + '</p>'
+    out = _re.sub(r'(?m)^\s*(#{1,6})\s+(.+?)\s*$', _h, html_frag)
+    out = _re.sub(r'(>)\s*(#{1,6})\s+([^<]+)', lambda m: m.group(1) + '<strong>' + m.group(3).strip() + '</strong>', out)
+    return out
+
+
 def regenerate_static_page(d, eidx, registry=None):
     """Regenerate the static HTML page for a deposit with full enrichment.
 
@@ -1018,7 +1036,7 @@ def regenerate_static_page(d, eidx, registry=None):
             '<summary style="cursor:pointer;font-weight:600;color:#777;font-size:.9em">'
             'Restoration apparatus — methodology, falsification conditions, recovery note '
             '(provenance of the recovered bytes; the work follows below)</summary>'
-            '<div class="ft" style="font-size:.88em;color:#555">' + fulltext_marked[:_cut] + '</div></details>'
+            '<div class="ft" style="font-size:.88em;color:#555">' + _clean_apparatus(fulltext_marked[:_cut]) + '</div></details>'
         )
         fulltext_marked = fulltext_marked[_cut:]
 
