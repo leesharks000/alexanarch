@@ -120,8 +120,8 @@
   ],
   "rewrites": [
     {
-      "source": "/api/:path*.json",
-      "destination": "/data/api/:path*.json"
+      "source": "/api/(.*)\\.json",
+      "destination": "/data/api/$1.json"
     },
     {
       "source": "/axn/constitution(.*)",
