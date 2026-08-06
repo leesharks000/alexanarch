@@ -32364,6 +32364,18 @@
    "verified": "namespace gate passes locally; live gate correctly FAILS while the repair sits unpublished behind Vercel's 24h deploy rate limit — the guardian's first act was to detect the real outage it was built for",
    "outstanding": "Vercel deployment rate limit — retry in 24h, then run scripts/audit_static_namespace.py --live FIRST. Workflow-scope note RESOLVED same session: the alexanarch remote was authenticated with the older PAT, which lacked workflow scope; the newer token holds it. Both endpoint-guardian.yml and the validate-registry.yml gate step are now on main, and the remote is repointed to the capable token. All four enforcement points are live.",
    "at": "2026-08-06T20:12:20Z"
+  },
+  {
+   "repair_id": "R-1276",
+   "deposit_number": null,
+   "batch": true,
+   "type": "SEARCH_CLIENT_REPAIR",
+   "ruling_by": "MANUS (search audit relayed 2026-08-06)",
+   "basis": "P0 CONFIRMED RESOLVED IN PRODUCTION: the namespace repair deployed. All 14 contracted endpoints verified live and returning parseable JSON — audit_static_namespace.py --live exits 0. /api/doi-axn-map.json serves 1,935 mappings, so the DOI resolver standing in for the severed Zenodo identifiers is restored. OAI-PMH verified executing: Identify, ListMetadataFormats, ListSets, ListIdentifiers and ListRecords all return 200 text/xml with valid envelopes and working resumption tokens (100 ids per page). P1 CLIENT DEFECTS, all six repaired at source now that live data could confirm them: (1) the debounce variable `timer` was never declared, so the first keystroke threw ReferenceError — declared, and the query is now synced to ?q= so a result set is shareable; (2) fetch had no status or content-type validation, which is why an HTML 404 page became 'Unexpected token T' naming neither URL nor status — a fetchJson() helper now checks ok, checks content-type, and names both on failure; (3) CONTRACT MISMATCH confirmed against the live index: the generator emits keywords/creators/content_types/hex_labels while the client read a keyword_phrases table that has never existed, so keyword, creator, content-type and hex lookups all silently returned nothing — all four tables now consulted; (4) series and identifier keys are case-PRESERVED by design (AXN:0006, EA-*, MPAI-*, SPXI-*) while the client lowercased every query, making exactly the identifiers that matter most unsearchable — case-tolerant lookup added; (5) shard fetch failures were swallowed into {} so the page could silently become metadata-only while still claiming full-text search — degradation is now reported once, explicitly; (6) load failure messages now name the failing URL and status.",
+   "sites": "search/index.html; verified live: 14 endpoints, 5 OAI verbs, 1,935 DOI mappings",
+   "verified": "audit_static_namespace.py --live exit 0; OAI Identify/ListMetadataFormats/ListSets/ListIdentifiers/ListRecords 200 text/xml; search index 16,211 tokens + 371 series + 6,001 keywords served",
+   "outstanding": "P2 — progressive filters on Browse and Wiki (static list retained for crawlers, client-side filter layered on); P3 — Graph, Lexical and Citations adapters",
+   "at": "2026-08-06T21:42:11Z"
   }
  ]
 }

@@ -52,26 +52,38 @@ input#q:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(
   const $results = document.getElementById('results');
   let idx = null;
   let browse = null;
+  let bodySearchLive = true;   // flips false the moment a shard fails, and is reported
+
+  async function fetchJson(url) {
+    let r;
+    try { r = await fetch(url); }
+    catch (e) { throw new Error(url + ' — network error: ' + e.message); }
+    if (!r.ok) throw new Error(url + ' — HTTP ' + r.status + ' ' + r.statusText);
+    const ct = (r.headers.get('content-type') || '').toLowerCase();
+    if (ct.indexOf('json') === -1)
+      throw new Error(url + ' — served as ' + (ct || 'no content-type') + ', expected JSON');
+    return r.json();
+  }
 
   async function boot() {
     try {
-      const [idxRes, brRes] = await Promise.all([
-        fetch('/api/search-index.json'),
-        fetch('/data/browse-index.json')
-      ]);
-      idx = await idxRes.json();
-      const br = await brRes.json();
+      // HTTP 200 is not JSON. The 2026-07-31 namespace collision served an HTML
+      // 404 page here and the parser threw on the letter T of "The page could
+      // not be found" — an opaque error naming neither the URL nor the status.
+      idx = await fetchJson('/api/search-index.json');
+      const br = await fetchJson('/data/browse-index.json');
       browse = {};
       for (const d of br.deposits) browse[d.n] = d;
       $status.textContent =
         'Ready. ' + idx.total_deposits + ' deposits · ' +
         idx.counts.generic_tokens + ' tokens · ' +
         idx.counts.series_prefix_terms + ' series prefixes · ' +
-        idx.counts.keyword_phrases + ' keyword phrases.';
+        idx.counts.keyword_phrases + ' keyword phrases · full text ready.';
       const initial = new URLSearchParams(location.search).get('q');
       if (initial) { $q.value = initial; render(initial); }
     } catch (e) {
-      $status.textContent = 'Failed to load search index: ' + e.message;
+      // name the URL and the status, so the next failure is diagnosable in one read
+      $status.textContent = 'SEARCH UNAVAILABLE — ' + e.message;
     }
   }
 
@@ -81,18 +93,36 @@ input#q:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(
     if (pref.length < 2) pref = (pref + '_').slice(0,2) || '__';
     if (!(pref in shardCache)) {
       try {
-        const r = await fetch('/api/body-shards/' + pref + '.json');
-        shardCache[pref] = r.ok ? await r.json() : {};
-      } catch (e) { shardCache[pref] = {}; }
+        shardCache[pref] = await fetchJson('/api/body-shards/' + pref + '.json');
+      } catch (e) {
+        shardCache[pref] = {};
+        if (bodySearchLive) {   // report the degradation once, do not pretend
+          bodySearchLive = false;
+          $status.textContent += '  ·  FULL-TEXT SEARCH UNAVAILABLE (' + e.message +
+            ') — showing metadata matches only.';
+        }
+      }
     }
     return shardCache[pref];
   }
 
   function metaHits(tok) {
     const out = new Set();
-    for (const table of [idx.index, idx.series_prefixes, idx.keyword_phrases]) {
+    // the generator emits `keywords`, `creators`, `content_types` and `hex_labels`.
+    // The client read a `keyword_phrases` table that has never existed, so keyword,
+    // creator, content-type and hex lookups all silently returned nothing.
+    for (const table of [idx.index, idx.series_prefixes, idx.keywords,
+                         idx.creators, idx.content_types, idx.hex_labels]) {
       if (!table) continue;
-      if (table[tok]) table[tok].forEach(n => out.add(n));
+      // series and identifier keys are case-PRESERVED by design (AXN:0006, EA-*,
+      // MPAI-*, SPXI-*). A lowercased query could never match them, which is why
+      // exactly the identifiers that matter most were unsearchable.
+      let hit = table[tok] || table[tok.toUpperCase()] || table[tok.toLowerCase()];
+      if (!hit && tok.length > 3) {
+        const up = tok.toUpperCase();
+        for (const k in table) { if (k.toUpperCase() === up) { hit = table[k]; break; } }
+      }
+      if (hit) hit.forEach(n => out.add(n));
     }
     return out;
   }
@@ -159,9 +189,16 @@ input#q:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(
     }).join('');
   }
 
+  let timer = null;   // was never declared: the first keystroke threw ReferenceError
   $q.addEventListener('input', function() {
     clearTimeout(timer);
-    timer = setTimeout(function() { render($q.value); }, 80);
+    timer = setTimeout(function() {
+      render($q.value);
+      // query synced to the URL so a result set is shareable and back/forward works
+      const u = new URL(location); const v = $q.value.trim();
+      v ? u.searchParams.set('q', v) : u.searchParams.delete('q');
+      history.replaceState(null, '', u);
+    }, 120);
   });
 
   boot();
