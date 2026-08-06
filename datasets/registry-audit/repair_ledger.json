@@ -32317,6 +32317,18 @@
    "document": "data/workplan/WAVE-HEXPOS-01.md",
    "verified": "validate_deposit --strict 0 failures; resolver PARITY OK; status_reconcile 0; central registry 1439 positions, 0 CONTESTED, 1445 kernels",
    "at": "2026-08-06T15:20:49Z"
+  },
+  {
+   "repair_id": "R-1272",
+   "deposit_number": 1434,
+   "batch": false,
+   "type": "DEPOSIT_MINT_AND_DEFECT_RECORD",
+   "ruling_by": "MANUS (deposit directed 2026-08-06)",
+   "basis": "Minted #1434 AXN:05B3.OPERATIVE.❄️🔐⊗∮🎭🏷️ — axnidentifiers.org product surface source, transport D (No-Double-Draw, direct repo write, no API call), with design language specimens v0.1/v0.2, brand apparatus, and WAVE-HEXPOS-01 + atlas v0.9 addendum as supplementary apparatus. Two defects found and recorded during the mint: (1) KEYWORDS COLLAPSE — the issue-body parser took a newline-delimited keyword block as ONE value, so the sealed frontmatter carries 18 terms in a single YAML entry; canonical bytes are the hash source and the glyphs derive from them, so the bytes STAND and an erratum is recorded, registry field split to 18 and authoritative for display (MODE-17 defect class; #1093 erratum precedent). (2) ENRICH EXCEPTION ZEROES AUTHORED FIELDS — enrich_deposit.py step-6 assemble raised and its except branch sets wiki_article=None with entities/defines_concepts=[], which step 7 writes unconditionally, silently destroying in-session LLM-tier authorship in the same function documented (MANUS 2026-08-05) to preserve a written article and merely report absence. Re-applied after enrichment; ORDER LESSON for transport D: apply the LLM tier AFTER interlink/enrich, never before. PDF stage failed in-container (LaTeX lmodern.sty absent) — queued, not silently skipped.",
+   "sites": "data/registry.json; data/texts/AXN-05B3-text.md; data/deposits; s/records/1434; s/wiki/1434; s/axn/05B3; browse/search/chunks/sitemap; central registry (1440 positions); OAI (1373); concept map; SHA sums",
+   "verified": "validate_deposit --strict 0 failures; central registry 0 CONTESTED; wiki article 656 words seated; 5 concepts, 10 entity triples",
+   "outstanding": "papers/AXN-05B3.pdf (LaTeX unavailable in session container); citation_extractor/concept_backlink (API-tier, forbidden internally)",
+   "at": "2026-08-06T17:40:02Z"
   }
  ]
 }
