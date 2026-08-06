@@ -621,6 +621,24 @@ def _mark_superseded_appendix(html):
     return html[:start] + banner + html[start:] + "</div>"
 
 
+def _render_inline(text):
+    """Render a description's inline markdown. Added 2026-08-06.
+
+    The description block escaped its field and emitted it raw, so authored
+    emphasis reached readers as literal underscores and asterisks — MANUS on
+    #1121: "record conformance at the human display end is a mess." The same
+    defect had been found and fixed on the wiki pages the day before; it was
+    present here and went unnoticed because every check measured FIELDS rather
+    than reading a RENDERED PAGE end to end. Escaping happens first.
+    """
+    import re as _re
+    t = htmlmod.escape(str(text or ''))
+    t = _re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', t)
+    t = _re.sub(r'(?<!\*)\*([^*\n]+)\*(?!\*)', r'<em>\1</em>', t)
+    t = _re.sub(r'`([^`]+)`', r'<code>\1</code>', t)
+    return t
+
+
 def regenerate_static_page(d, eidx, registry=None):
     """Regenerate the static HTML page for a deposit with full enrichment.
 
@@ -1386,7 +1404,7 @@ def regenerate_static_page(d, eidx, registry=None):
 <a style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0" href="/data/deposits/AXN-{hex_id}.md" download>↓ Download MD</a> <a style="display:inline-block;background:var(--accent);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0 6px 4px" href="/papers/AXN-{hex_id.zfill(4)}.pdf">↓ PDF</a>
 <div style="margin:8px 0">{kw_html}</div>
 <h2>Description</h2>
-<p style="font-size:.9em">{esc(d.get("description",""))}</p>
+<p style="font-size:.9em">{_render_inline(d.get("description",""))}</p>
 {external_metadata_html}
 {version_history}
 {mods_html}

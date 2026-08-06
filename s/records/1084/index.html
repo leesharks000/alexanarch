@@ -101,23 +101,23 @@ address := (canonical_query, [variant, ...], target_surface_class)
 <h2>Description</h2>
 <p style="font-size:.9em"># EA-SEMANTIC-ADDRESSES-01 v1.1 — The Semantic Addresses Framework
 
-**Author:** Lee Sharks ([ORCID: 0009-0000-1599-0703](https://orcid.org/0009-0000-1599-0703))
-**Institution:** Semantic Economy Institute
-**Version:** 1.1
-**Date:** 2026-07-16
-**License:** CC BY 4.0
-**Companion:** [EA-SPXI-01](./EA-SPXI-01.md) — Semantic Packet for eXchange &amp; Indexing
+<strong>Author:</strong> Lee Sharks ([ORCID: 0009-0000-1599-0703](https://orcid.org/0009-0000-1599-0703))
+<strong>Institution:</strong> Semantic Economy Institute
+<strong>Version:</strong> 1.1
+<strong>Date:</strong> 2026-07-16
+<strong>License:</strong> CC BY 4.0
+<strong>Companion:</strong> [EA-SPXI-01](./EA-SPXI-01.md) — Semantic Packet for eXchange &amp; Indexing
 
 ---
 
 ## Changelog
 
-- **v1.1 (2026-07-16)** — Classification refinement: `observed_address` and `unrated` collapsed into one class. Prefix-match normalization for statuses added (specialty variants of `ADOPTION` etc. classify identically to the base form). Positive prefix set widened to include `FAIR_TREATMENT`, `PARTIAL`, `DEMAND SIGNAL`, `MANTLE CONSOLIDATION`, `FUNCTIONAL ADDRESS`. Negative prefix set widened to include `DISSOLUTION`, `CORRECTION`. See §2.1 rationale.
-- **v1.0 (2026-07-16)** — Initial framework publication.
+- <strong>v1.1 (2026-07-16)</strong> — Classification refinement: <code>observed_address</code> and <code>unrated</code> collapsed into one class. Prefix-match normalization for statuses added (specialty variants of <code>ADOPTION</code> etc. classify identically to the base form). Positive prefix set widened to include <code>FAIR_TREATMENT</code>, <code>PARTIAL</code>, <code>DEMAND SIGNAL</code>, <code>MANTLE CONSOLIDATION</code>, <code>FUNCTIONAL ADDRESS</code>. Negative prefix set widened to include <code>DISSOLUTION</code>, <code>CORRECTION</code>. See §2.1 rationale.
+- <strong>v1.0 (2026-07-16)</strong> — Initial framework publication.
 
 ## Abstract
 
-A **Semantic Address** is a specific query (or family of variants) posed to a composition-layer surface — Google AI Overview, AI Mode, ChatGPT search, Perplexity, Claude, or any other summarizer-of-record — for which a machine-generated response can be observed. The framework here specifies (1) the formal definition of a Semantic Address, (2) the observation classes into which each address falls at any given moment, (3) the tributary registry from which observations are drawn, (4) the union algorithm that produces a deterministic canonical dataset from those tributaries, and (5) the JSON schema of the canonical output.
+A <strong>Semantic Address</strong> is a specific query (or family of variants) posed to a composition-layer surface — Google AI Overview, AI Mode, ChatGPT search, Perplexity, Claude, or any other summarizer-of-record — for which a machine-generated response can be observed. The framework here specifies (1) the formal definition of a Semantic Address, (2) the observation classes into which each address falls at any given moment, (3) the tributary registry from which observations are drawn, (4) the union algorithm that produces a deterministic canonical dataset from those tributaries, and (5) the JSON schema of the canonical output.
 
 Semantic Addresses are the reception surface. SPXI is the reception packet. Together they constitute the reception plumbing of the Semantic Economy: SPXI encodes what a work is; the Semantic Address encodes where a work can be found. A work with an SPXI packet and no Semantic Address is not measurably received. A Semantic Address without an SPXI packet is a channel with nothing traveling through it.
 
@@ -125,11 +125,11 @@ Semantic Addresses are the reception surface. SPXI is the reception packet. Toge
 
 ### 1.1 Semantic Address
 
-A **Semantic Address** is a canonical query form paired with the set of composition-layer surfaces on which the query can be posed. Formally:
+A <strong>Semantic Address</strong> is a canonical query form paired with the set of composition-layer surfaces on which the query can be posed. Formally:
 
-```
+``<code>
 address := (canonical_query, [variant, ...], target_surface_class)
-``` […full text at full_text_path]</p>
+</code>`` […full text at full_text_path]</p>
 
 
 <section style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid var(--rule,rgba(127,127,127,.3));font-size:.85em"><div style="font-weight:600;margin-bottom:.3rem">Record modifications</div><ul style="margin:0;padding-left:1.1rem"><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">publisher</strong>: PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies</li></ul><div style="opacity:.65;margin-top:.4rem;font-size:.92em">The deposited text is immutable; these are changes to the record's metadata and declared state.</div></section>

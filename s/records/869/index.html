@@ -55,7 +55,7 @@ The dataset’s 12,032 entries are extracted registry objects, not necessarily 1
 
 The body preserves two different counts. Its opening historical description says 12,015 minted terms across 555 deposits, pruned from 16,877 raw extractions. The corrected canonical-dataset note says 12,032 observed entries across the same 555 deposits. The seventeen-entry increase should be represented as a version change or correction, not silently collapsed.
 
-The record is also a major availability-integrity artifact. From June 22 through July 28, its served body was incorrectly replaced by the complete text of #856, *The Pristine Fallacy*. The defect resulted from body storage keyed only by the bare hexadecimal segment `0365`, which both records shared after historical offset drift. The full AXN values distinguished them, but the resolver did not.
+The record is also a major availability-integrity artifact. From June 22 through July 28, its served body was incorrectly replaced by the complete text of #856, <em>The Pristine Fallacy</em>. The defect resulted from body storage keyed only by the bare hexadecimal segment <code>0365</code>, which both records shared after historical offset drift. The full AXN values distinguished them, but the resolver did not.
 
 The repair moved this record to deposit-number-keyed storage and documents how citations made during the defect should be re-resolved. This is more than a clerical note: it demonstrates that a supposedly content-addressed system can collapse distinct works when one nonunique component is used as the storage key.
 
