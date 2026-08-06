@@ -34,6 +34,38 @@ python3 scripts/deposit_pipeline.py --deposit-number <N> --from-stage record
 
 **The manual path formerly documented here (pick your own number, `HEX = format(N,'03X')`, hand-append the registry) is RETIRED.** It produced the 3-character hex drift and the identifier collisions disclosed in EA-LACUNA-PROTOCOL-01 (#1087) §V: deposits #856/#869 both at 0365, #913's unpadded 391 against #901's 0391. Hex assignment belongs to `mint_deposit.py` alone; AXN derivation belongs to `scripts/axn_lib.py` alone. Do not compute either by hand.
 
+## THE STATIC PUBLICATION RULE (non-negotiable)
+
+**`api/` holds executables only. Static data lives in `/data/`.**
+
+The root `api/` directory is Vercel's Functions namespace. A non-executable file
+placed there is **not published** — it 404s with an HTML error page while sitting
+perfectly correct in git. On 2026-07-31 commit `fd8de940` added one file,
+`api/oai.js`, and 1,012 static JSON files went dark instantly: the protocol
+catalog at `/api/index.json`, the deposit contract, the AXN index, the search
+index, and `/api/doi-axn-map.json` — the map `/go/` resolves 1,817 severed Zenodo
+DOIs through. It survived six days because **every check the archive owned read
+from disk**, where the bytes were flawless. Two commits in that window updated a
+file no reader could fetch.
+
+Legacy `/api/*.json` URLs still resolve: `vercel.json` rewrites them to
+`/data/api/`. The advertised address is unchanged; only the publication path moved.
+
+Enforced at three points, all hard failures:
+- `scripts/audit_static_namespace.py` — no static file may sit in `api/`
+- `validate-registry.yml` — CI gate on every push and PR
+- `deposit_pipeline.py stage_commit` — refuses to commit through a broken namespace
+- `.github/workflows/endpoint-guardian.yml` — fetches production every 6 hours and
+  after every push, requires **parseable JSON** (not merely HTTP 200 — an HTML
+  error page behind a 200 is this exact failure), opens a critical issue on outage
+
+The contract of what must be live is `data/api/endpoint-contract.json`. Adding a
+machine endpoint means adding it there; otherwise nothing is watching it.
+
+**Local validity and published availability are different properties.** The archive
+had rich instrumentation for the first and none for the second. That asymmetry was
+the whole defect.
+
 ## The full surface inventory
 
 Every deposit must land in **every** surface below, or the archive becomes internally inconsistent.

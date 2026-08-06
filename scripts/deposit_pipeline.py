@@ -473,6 +473,10 @@ def stage_identity(args):
 
 
 def stage_commit(args):
+    # STATIC PUBLICATION GATE (fd8de940, 2026-07-31): a deposit whose machine
+    # surfaces cannot be fetched is not deposited, it is only written. This
+    # refuses the commit rather than reporting after it. check=True on purpose.
+    sh([sys.executable, SCRIPTS / "audit_static_namespace.py"], check=True)
     reg, d = deposit_by_number(args.deposit_number)
     n, axn, title = args.deposit_number, d["axn"], d.get("title", "")[:80]
     # T3 (EA-AVAILABILITY-INTEGRITY-01, audit #1413 H3): every commit carries

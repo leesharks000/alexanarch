@@ -98,6 +98,14 @@ jobs:
             exit 1
           }
 
+      - name: Static publication gate (fd8de940 class — NON-NEGOTIABLE)
+        run: |
+          # A static file in api/ is invisible in production. On 2026-07-31 one
+          # added .js file turned api/ into Vercel's functions namespace and took
+          # 1,012 static files dark for six days while every other check passed,
+          # because they all read from disk. This gate reads the namespace.
+          python3 scripts/audit_static_namespace.py
+
       - name: Resolver acceptance gate (P0-1 / R4)
         run: |
           python3 scripts/sync_resolver.py --check

@@ -1,0 +1,72 @@
+{
+ "description": "Advertised machine endpoints. Every path here MUST return parseable JSON in production. Enforced by scripts/audit_static_namespace.py --live, by CI, and by the deposit pipeline before any commit. Added after the 2026-07-31 functions-namespace collision (commit fd8de940) took 1,012 static files dark for six days while every local check passed.",
+ "rule": "HTTP 200 is not availability. The body must parse as JSON and carry its required key. An HTML error page served with status 200 must fail exactly as hard as a 404.",
+ "generated": "2026-08-06",
+ "endpoints": [
+  {
+   "path": "/api/index.json",
+   "must_contain_key": "index_version",
+   "why": "the protocol catalog DEPOSIT-FLOW.md declares authoritative"
+  },
+  {
+   "path": "/api/deposit-protocol.json",
+   "must_contain_key": "protocol_version",
+   "why": "the deposit contract every submission is validated against"
+  },
+  {
+   "path": "/api/axn-protocol.json",
+   "must_contain_key": "protocol_version",
+   "why": "AXN derivation contract"
+  },
+  {
+   "path": "/api/doi-axn-map.json",
+   "must_contain_key": "map",
+   "why": "the DOI resolver's map — /go/ resolves 1,817 severed Zenodo DOIs through this"
+  },
+  {
+   "path": "/api/axn-index.json",
+   "why": "machine index advertised by every AXN resolver page"
+  },
+  {
+   "path": "/api/kernel-index.json",
+   "must_contain_key": "kernels",
+   "why": "kernel to AXN lookup"
+  },
+  {
+   "path": "/api/search-index.json",
+   "why": "metadata search index"
+  },
+  {
+   "path": "/api/body-index.json",
+   "why": "full-text body index"
+  },
+  {
+   "path": "/api/body-shards/manifest.json",
+   "why": "shard manifest for body search"
+  },
+  {
+   "path": "/data/registry.json",
+   "must_contain_key": "deposits",
+   "why": "the canonical registry"
+  },
+  {
+   "path": "/data/browse-index.json",
+   "must_contain_key": "deposits",
+   "why": "compact deposit list"
+  },
+  {
+   "path": "/data/axn-central-registry.json",
+   "must_contain_key": "positions",
+   "why": "every allocated position across all mint routes"
+  },
+  {
+   "path": "/data/symbolon-registry/MANIFEST.json",
+   "must_contain_key": "cores",
+   "why": "sealed-core mirror manifest depositors are told to check"
+  },
+  {
+   "path": "/data/doi-resolution-index.json",
+   "why": "DOI resolution index"
+  }
+ ]
+}
