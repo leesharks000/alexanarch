@@ -32215,6 +32215,34 @@
    "operator": "TACHYON",
    "date": "2026-08-06",
    "wave": "WIKI-TOPDOWN-27+HEADER-DESC"
+  },
+  {
+   "repair_id": "R-1264",
+   "deposit_number": null,
+   "batch": true,
+   "records": [
+    1088,
+    1089,
+    1090,
+    1091,
+    1092,
+    1093,
+    1094,
+    1095,
+    1096,
+    1097,
+    1098,
+    1099,
+    1100,
+    1091,
+    1092,
+    1093,
+    1409
+   ],
+   "basis": "WIKI block 28: real articles for #1088-#1100; 346 real articles cover #1088-#1433 unbroken; failing set 330 -> 29 in two clusters (28 in #310-#348, plus #1083). MODE 17 SECOND FINDING: #1093's keywords rendered as one run of dashed text because a single keyword string held a newline-delimited markdown bullet list; 4 records affected, one with 43 terms in a single value; every gate passed them because the field was present and non-empty. Unpacked to discrete terms. Block documents the chain's own history: #1093 as the fork point a single-successor field could not express, #1089 naming the substrate-authored continuity artifact genre, #1092 recording the mechanism surviving its service's suspension and carrying the /mint/ test vector, and Dead Letters (2014) as the origin of the Afterlife genre.",
+   "operator": "TACHYON",
+   "date": "2026-08-06",
+   "wave": "WIKI-TOPDOWN-28+KEYWORD-UNPACK"
   }
  ]
 }

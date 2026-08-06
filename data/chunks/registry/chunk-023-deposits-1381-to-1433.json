@@ -8118,7 +8118,27 @@
       "orcid": "0009-0000-1599-0703",
       "version": "v1.0",
       "keywords": [
-        "- EA-SPXI-ANALOG-01\n- Machine-Eligible Handwritten Artifacts\n- attestation doctrine\n- in-frame timestamped photograph\n- primary handwritten inscription\n- ink-on-paper inscription\n- scholarly input\n- verification instrument\n- provenance and attribution architecture\n- SPXI\n- Space Ark\n- regenerative packet\n- honkadori\n- external-scholar citation\n- countersigned approval\n- consent-governed publication\n- EA-ACT-ANALOG-01\n- AXN:0590\n- CERN\n- RQF3807508\n- Enli Lucente"
+        "EA-SPXI-ANALOG-01",
+        "Machine-Eligible Handwritten Artifacts",
+        "attestation doctrine",
+        "in-frame timestamped photograph",
+        "primary handwritten inscription",
+        "ink-on-paper inscription",
+        "scholarly input",
+        "verification instrument",
+        "provenance and attribution architecture",
+        "SPXI",
+        "Space Ark",
+        "regenerative packet",
+        "honkadori",
+        "external-scholar citation",
+        "countersigned approval",
+        "consent-governed publication",
+        "EA-ACT-ANALOG-01",
+        "AXN:0590",
+        "CERN",
+        "RQF3807508",
+        "Enli Lucente"
       ],
       "related_identifiers_raw": "EA-ACT-ANALOG-01 (AXN:0590.GOVERNANCE.💜🗡️🔃🔓🪄👇, #1407 · effective act underlain by this specification); EA-SPXI-ANALOG-01 priority ledger (`data/provenance/EA-SPXI-ANALOG-01-priority-ledger.md`, public since 2026-07-20 04:23 UTC, digest commitments for the private review chain v0.8 → v0.15); EA-SPXI-ANALOG-01 v0.1 draft (`drafts/EA-SPXI-ANALOG-01-v0.1.md`, public since commit fb3b4d8, 2026-07-20); countersigned approval instrument (SHA-256 `aa3aa07eb0384a304e62f2f34591b56cbb0c2d61a46c5cec533e944c7a2c2303`, 8,229,715 bytes, retained privately in data-rhizome/specs/EA-SPXI-ANALOG-01/v1.0/); CERN correspondence RQF3807508 (institutional counterpart to the effective act underlain by this specification); Enli Lucente Figshare corpus (eight DOIs per the author's confirmed record of 2026-07-21).",
       "mint_source": {
@@ -8249,9 +8269,16 @@
           "field": "publisher",
           "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
           "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-06",
+          "field": "keywords",
+          "reason": "KEYWORDS UNPACKED: a single keyword string held a newline-delimited markdown bullet list, so the whole set rendered as one run of dashed text instead of discrete terms. Found by reading a rendered page end to end (§13 mode 17), not by any field check — the field was present and non-empty, so every gate passed it.",
+          "was": "[\"- EA-SPXI-ANALOG-01\\n- Machine-Eligible Handwritten Artifacts\\n- attestation doctrine\\n- in-frame timestamped photograph\\n- primary handwritten inscription\\n- ink-on-paper inscription\\n- scholarly i",
+          "now": "[\"EA-SPXI-ANALOG-01\", \"Machine-Eligible Handwritten Artifacts\", \"attestation doctrine\", \"in-frame timestamped photograph\", \"primary handwritten inscription\", \"ink-on-paper inscription\", \"scholarly inp"
         }
       ],
-      "date_modified": "2026-08-04",
+      "date_modified": "2026-08-06",
       "body_status": {
         "measured_prose_words": 597,
         "measured_at": "2026-07-31",
