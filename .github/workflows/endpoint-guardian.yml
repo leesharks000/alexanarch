@@ -1,0 +1,108 @@
+name: Endpoint Guardian
+
+# THE LAYER NOTHING WAS WATCHING.
+#
+# On 2026-07-31 commit fd8de940 added api/oai.js. That single file turned the
+# root api/ directory into Vercel's functions namespace, and 1,012 static JSON
+# files stopped being published — including the protocol catalog, the deposit
+# contract, the AXN index, the search index, and the DOI resolver's map, which
+# stands in for 1,817 severed Zenodo DOIs. Every local check kept passing,
+# because the bytes on disk were perfect. Nothing fetched a URL.
+#
+# It went undetected for six days and was found only because search failed
+# loudly enough for a human to report it. Two commits in that window wrote
+# updates into a file no reader could fetch.
+#
+# This workflow is the missing sense organ: it fetches what the archive
+# ADVERTISES, from production, and requires real JSON — because an HTML error
+# page served with status 200 is the exact shape of this failure and must fail
+# just as hard as a 404. It runs after every push to main, on a schedule so a
+# platform-side change cannot hide between commits, and on demand.
+#
+# On failure it opens a critical issue. Static publication is the archive's
+# central design commitment; its loss is an incident, not a warning.
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '17 */6 * * *'   # every six hours: a platform can break this without a commit
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Namespace gate (local, always)
+        run: python3 scripts/audit_static_namespace.py
+
+      - name: Live endpoint gate (production must serve real JSON)
+        id: live
+        run: |
+          # Deploys can lag a push. Retry before declaring an outage, so this
+          # reports publication failure rather than deployment latency.
+          for attempt in 1 2 3 4; do
+            if python3 scripts/audit_static_namespace.py --live; then
+              echo "verified on attempt $attempt"; exit 0
+            fi
+            echo "attempt $attempt failed; waiting for deploy to settle…"
+            sleep 60
+          done
+          echo "FAILED after 4 attempts over 4 minutes."
+          exit 1
+
+      - name: Open critical issue
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = [
+              '## Static publication is broken',
+              '',
+              'One or more advertised machine endpoints are not serving parseable JSON',
+              'in production. See the failing step for the exact paths.',
+              '',
+              '### This is the fd8de940 class of failure',
+              'On 2026-07-31 a single added `api/oai.js` turned the root `api/` directory',
+              "into Vercel's functions namespace, and 1,012 static JSON files stopped being",
+              'published — the protocol catalog, the deposit contract, the AXN index, the',
+              'search index, and the DOI resolver map standing in for 1,817 severed DOIs.',
+              'Every local check passed the whole time, because the bytes on disk were',
+              'correct. **Local validity and published availability are different properties.**',
+              '',
+              '### First moves',
+              '1. `python3 scripts/audit_static_namespace.py` — is a static file sitting in `api/`?',
+              '2. `python3 scripts/audit_static_namespace.py --live` — which endpoints, which failure mode?',
+              '3. If the body is HTML with status 200, a rewrite is misrouting — check `vercel.json`.',
+              '4. Static data belongs in `/data/`. `api/` holds executables only.',
+              '',
+              '_Opened automatically by Endpoint Guardian. The archive publishes static files;',
+              'when it stops, that is an incident._',
+            ].join('\n');
+            const title = 'CRITICAL: advertised machine endpoints are not serving JSON';
+            const open = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'endpoint-outage',
+            });
+            if (open.data.length === 0) {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title, body, labels: ['endpoint-outage', 'critical'],
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: open.data[0].number,
+                body: `Still failing as of ${new Date().toISOString()} (run ${context.runId}).`,
+              });
+            }
