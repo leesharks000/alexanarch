@@ -106,6 +106,13 @@ jobs:
           # because they all read from disk. This gate reads the namespace.
           python3 scripts/audit_static_namespace.py
 
+      - name: Capability register (no silent loss of finished work)
+        run: |
+          # Floors only rise. A run measuring below a floor fails the build and
+          # names the number, the floor, and the date the floor was set.
+          # Lowering a floor is a human act, made by hand, with a reason.
+          python3 scripts/capability_register.py
+
       - name: Resolver acceptance gate (P0-1 / R4)
         run: |
           python3 scripts/sync_resolver.py --check
