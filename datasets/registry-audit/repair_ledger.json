@@ -32432,6 +32432,17 @@
    "verified": "validate --strict 0 failures; index consistency OK; namespace clean; 60-page rendered sample shows 0 modifications-before-work and 1 multi-h1; corpus-wide 6 of 1435 multi-h1 remain",
    "outstanding": "PASS 2: 6 record pages still carry an empty stray h1 (#1007, #1234, #692, #693, #72, #75) — embedded markup the demotion regex does not reach. Also the wiki link/inline duplication (defect B) not yet resolved.",
    "at": "2026-08-07T04:01:21Z"
+  },
+  {
+   "repair_id": "R-1281",
+   "deposit_number": null,
+   "batch": true,
+   "type": "RECORD_DISPLAY_PASS_2",
+   "ruling_by": "MANUS (pass 2 authorized)",
+   "basis": "THE SIX MULTI-H1 PAGES WERE MY DETECTOR, NOT THE PAGES. Counting <h1 across raw HTML matched inside <script type=application/ld+json> blocks, where browsers do not parse tags at all. Measured correctly — script and style content excluded — all 1,435 record pages carry EXACTLY ONE visible h1, and none carry zero. Third time in one session a coarse detector reported a defect that was not there; script exclusion should have been in the first measurement. THE ESCAPING FIX IS REAL AND SEPARATE: documents that DISCUSS html were having their examples eaten by the browser. SPXI for Websites (#72) writes 'One <h1 per page (entity name)' as a conformance rule and the page emitted it raw, so the browser opened a heading and swallowed the sentence — a document about markup conformance was being silently unmade by the markup it described. The rule adopted is general and needs no whitelist: AN UNCLOSED TAG ON A LINE IS TEXT, NOT MARKUP. A '<' beginning a tag with no '>' before the newline is escaped; legitimate embedded html, which closes, is untouched. WIKI DUPLICATION RESOLVED per ruling: the pre-record callout advertising an encyclopedic entry stood above the record while the full article was rendered in its entirety further down — a reader met a box promoting something they were about to be handed. Callout removed; the article stays inline and the link becomes a quiet pointer beneath it, so /s/wiki/N/ remains reachable and separately harvestable without announcing itself twice.",
+   "sites": "wire_deposit.py; all 1,435 record pages regenerated",
+   "verified": "80-page rendered sample, script content excluded: 0 pages without exactly one h1, 0 wiki duplications, 0 modifications-before-work; corpus-wide 1435/1435 exactly one visible h1; validate --strict 0 failures; reader path on #1230 is Description → Wiki Article → Full Text → Processing apparatus → External Metadata → Record modifications → Traversal",
+   "at": "2026-08-07T04:30:40Z"
   }
  ]
 }

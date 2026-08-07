@@ -1065,6 +1065,24 @@ def regenerate_static_page(d, eidx, registry=None):
     # already declares it — so a reader's outline showed the same document three
     # times and a crawler saw three competing document headings. In-body headings
     # are demoted one level; the page keeps a single h1.
+    # AN UNCLOSED TAG ON A LINE IS TEXT, NOT MARKUP. Documents that DISCUSS html
+    # were having their examples eaten by the browser: SPXI for Websites (#72)
+    # writes "One <h1 per page (entity name)" as a conformance rule, and the page
+    # emitted it raw, so the browser opened a heading and swallowed the sentence.
+    # The rule that a tag must close on its own line separates prose about markup
+    # from markup, without a whitelist and without touching legitimate embedded html.
+    def _escape_unclosed(line):
+        out, i = [], 0
+        while i < len(line):
+            c = line[i]
+            if c == '<' and i + 1 < len(line) and (line[i+1].isalpha() or line[i+1] == '/'):
+                close = line.find('>', i)
+                if close == -1:
+                    out.append('&lt;'); i += 1; continue
+            out.append(c); i += 1
+        return ''.join(out)
+    fulltext_marked = '\n'.join(_escape_unclosed(l) for l in fulltext_marked.split('\n'))
+
     fulltext_marked = re.sub(r'<h3([ >])', r'<h4\1', fulltext_marked)
     fulltext_marked = re.sub(r'</h3>', '</h4>', fulltext_marked)
     fulltext_marked = re.sub(r'<h2([ >])', r'<h3\1', fulltext_marked)
@@ -1257,7 +1275,14 @@ def regenerate_static_page(d, eidx, registry=None):
         wiki_text = esc(d['wiki_article'])
         wiki_text = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', wiki_text)
         wiki_text = re.sub(r'\*([^*]+)\*', r'<em>\1</em>', wiki_text)
-        wiki_html = f'<h2>Wiki Article</h2>\n<div style="background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:16px;margin:8px 0;font-size:.88em;line-height:1.75;color:#333">{wiki_text}</div>'
+        wiki_html = (
+            f'<h2>Wiki Article</h2>\n'
+            f'<div style="background:#f8f9fa;border:1px solid var(--border);border-radius:6px;'
+            f'padding:16px;margin:8px 0;font-size:.88em;line-height:1.75;color:#333">{wiki_text}'
+            f'<div style="margin-top:12px;padding-top:9px;border-top:1px solid var(--border);'
+            f'font-size:.88em;color:#666">Also published as a standalone entry: '
+            f'<a href="/s/wiki/{d["deposit_number"]}/" style="color:var(--accent)">'
+            f'/s/wiki/{d["deposit_number"]}/</a></div></div>')
     
     # Concepts section
     concepts_html = ''
@@ -1381,13 +1406,12 @@ def regenerate_static_page(d, eidx, registry=None):
     # identifies as "a primary compression surface for the work" and which AI
     # Overview is already citing. A reader on a record could not reach its
     # article.
-    if (d.get('wiki_article') or '').strip():
-        rel_block += (
-            '<div style="background:var(--surface);border-left:4px solid var(--teal);padding:10px 14px;'
-            'border-radius:6px;margin:12px 0;font-size:.9em">'
-            '<div style="font-weight:600;margin-bottom:4px">Wiki article</div>'
-            f'<a href="/s/wiki/{d["deposit_number"]}/" style="color:var(--accent)">'
-            f'Encyclopedic entry for this deposit →</a></div>')
+    # The wiki callout used to sit HERE, above the record, duplicating the full
+    # article rendered further down — a reader met a box advertising an article
+    # they were about to be given in its entirety. The article stays inline; the
+    # link becomes a quiet pointer beside it, so the wiki page remains reachable
+    # (it is separately harvested and cited) without announcing itself twice.
+    pass
 
     _pt = _bs.get('primary_text_attachment') if isinstance(_bs, dict) else None
     if _pt and _pt.get('attachment'):
