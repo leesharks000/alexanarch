@@ -32443,6 +32443,18 @@
    "sites": "wire_deposit.py; all 1,435 record pages regenerated",
    "verified": "80-page rendered sample, script content excluded: 0 pages without exactly one h1, 0 wiki duplications, 0 modifications-before-work; corpus-wide 1435/1435 exactly one visible h1; validate --strict 0 failures; reader path on #1230 is Description → Wiki Article → Full Text → Processing apparatus → External Metadata → Record modifications → Traversal",
    "at": "2026-08-07T04:30:40Z"
+  },
+  {
+   "repair_id": "R-1282",
+   "deposit_number": null,
+   "batch": true,
+   "type": "CAPTURE_CITABILITY_AND_RECOVERY",
+   "ruling_by": "MANUS (2026-08-07: captures need the ability to cite and link individually; check the atlas and capture flows first, lots of moving parts)",
+   "basis": "CHECKING FIRST FOUND TWO DEFECTS, one of them data loss. (1) CITATION NEVER WORKED: the registry has always BUILT links of the form gallery/#slug and NO gallery has ever set the anchor they point at, so every 'Screenshot →' landed a reader on the top of a page with hundreds of captures beneath it. Nothing was broken in any way a status code would reveal — the links resolved and told you nothing. Fixed at the archive, which is now the canonical citation target because the archive is the authority: every card carries id=slug, and because the gallery is client-rendered with filters and paging a bare fragment cannot be left to the browser — the page clears filters, finds which page holds the slug, renders it, scrolls and marks the card. Each capture gains a copyable ¶ Cite affordance. (2) TWO SLUG COLLISIONS found and disambiguated by date in the one window where that was free: no anchor had ever resolved, so nothing could have cited the ambiguous form. That window is now closed and slugs are permanent, because a renamed slug silently breaks every citation to it and leaves no error behind. (3) PATHOLOGY-35, THE MIRROR OUTLIVED ITS SOURCE: the published dataset held 240 captures and the source held 228 of them — twelve dated 2026-07-31 existed ONLY in the mirror, and both files declared version 9.31, two artifacts claiming one version with different contents. They had been written to the mirror directly, bypassing source, which put them one successful sync from deletion. During the audit a sync run DID delete the snapshot outright, resolving its source to a machinemediation path absent from this container; restored from git within the session, and the twelve then restored to source under non-destruction. Registry 230 → 242, v9.32.",
+   "sites": "captures/index.html; data/EA-WG-CAPTURES-01.json (citation grammar + 12 restored + 2 slugs disambiguated); scripts/audit_capture_citability.py (new); datasets/dataflow-atlas/atlas-v1.0-addendum.md §7",
+   "verified": "242 captures, 242 unique slugs, citation grammar declared, gate passes; validate --strict 0 failures; namespace clean; dataset mirror restored and unmodified",
+   "outstanding": "machinemediation.org/captures/ serves the registry but is NOT in the declared galleries list. The three external galleries live in repos not available here and still need the id=slug anchor so a citation resolves at a mirror as well as at the archive.",
+   "at": "2026-08-07T05:54:05Z"
   }
  ]
 }

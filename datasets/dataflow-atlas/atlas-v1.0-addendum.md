@@ -169,3 +169,91 @@ custody domain with the archive**, not a peer.
 
 > Two surfaces are not two custodians. The atlas must not let a richer diagram be
 > mistaken for a more distributed network.
+
+---
+
+## §7 · CAPTURE REGISTRY — flow, citation, and the mirror that outlived its source
+
+**Class:** OBSERVATION.registry · **Audited 2026-08-07 at MANUS's instruction**
+
+```
+data/EA-WG-CAPTURES-01.json                    ← SOURCE OF TRUTH
+  ├─ captures/index.html          alexanarch gallery — CANONICAL CITATION TARGET
+  ├─ sync_capture_dataset.py  ──→ datasets/capture-registry/   (published dataset)
+  ├─ resolve_capture_links.py ──→ data/capture-deposit-links.json
+  ├─ build_semantic_addresses.py ─→ data/semantic-addresses.json
+  ├─ godkinggoogle.vercel.app/captures     mirror (separate repo)
+  ├─ leesharks.com/captures                mirror (separate repo)
+  └─ machinemediation.org/captures/        mirror — SERVES BUT IS NOT DECLARED
+```
+
+### 7.1 · Citation grammar (new)
+
+```
+https://www.alexanarch.org/captures/#{slug}
+```
+
+**The archive is the canonical citation target because the archive is the
+authority.** Galleries are mirrors, deploy separately, and may lag; a mirror link
+is a convenience, never a citation.
+
+**The defect this closes.** The registry has always *built* links of the form
+`gallery/#slug`, and **no gallery has ever set the anchor they point at.** Every
+"Screenshot →" landed a reader on the top of a page with hundreds of captures
+beneath it. Nothing was broken in any way a status code would reveal — the links
+resolved, and told you nothing.
+
+Because the gallery is client-rendered with filters and paging, a bare fragment
+cannot be left to the browser. The page now clears filters, finds which page
+holds the slug, renders it, scrolls, and marks the card. *A citation that only
+resolves when the reader is already on the right page is not a citation.*
+
+### 7.2 · Slug rules — binding
+
+1. Every capture has a **unique, anchor-safe** slug.
+2. **Slugs are permanent once published.** A renamed slug silently breaks every
+   citation to it and, unlike a dead URL, leaves no error behind — the reader
+   lands elsewhere and is not told.
+3. Renames before citability was possible are exempt and recorded in
+   `slug_history`. Two collisions were disambiguated by date on 2026-08-07 for
+   exactly this reason: no anchor had ever resolved, so nothing could have cited
+   the ambiguous form. **That window is now closed.**
+4. `scripts/audit_capture_citability.py` enforces 1–3 and checks that a slug
+   published in the dataset snapshot still exists in source.
+
+### 7.3 · ADDING A CAPTURE — required sequence
+
+```
+1. Add the entry to data/EA-WG-CAPTURES-01.json          (SOURCE, never a mirror)
+2. Give it a unique date-suffixed slug                    (…-YYYYMMDD)
+3. Place images under data/captures/YYYY-MM-DD-slug/      (the archive holds them;
+                                                           galleries render, not host)
+4. python3 scripts/audit_capture_citability.py            (must pass)
+5. Bump total_captures and version
+6. After deploy: confirm /captures/#{slug} RESOLVES TO THE CARD
+7. Cite it as https://www.alexanarch.org/captures/#{slug}
+```
+
+**A capture that cannot be cited is not published; it is only stored.**
+
+### 7.4 · PATHOLOGY-35 · The mirror outlived its source
+
+On 2026-08-07 the published dataset held **240** captures and the source held
+**228 of them**: twelve captures dated 2026-07-31 existed *only* in the mirror.
+Both files declared **version 9.31** — two artifacts claiming one version with
+different contents, which is the failure mode a version number exists to prevent.
+
+They were almost certainly written to the mirror directly, bypassing source. That
+put them on borrowed time: `sync_capture_dataset.py` publishes source → dataset,
+so **the next successful sync would have erased them.** During this audit a sync
+run did delete the snapshot outright (it resolved its source to a
+machinemediation path absent from the working container); it was restored from
+git within the same session, and the twelve were then restored to source under
+non-destruction.
+
+**Rule:** the mirror is written *from* source, never *to*. A value that exists
+only downstream is not published — it is stranded, and one sync from gone.
+
+**Standing caution:** `sync_capture_dataset.py` resolves inputs from paths outside
+this repository and deletes outputs it cannot source. It must not be run
+speculatively, and never without `git status` checked afterward.

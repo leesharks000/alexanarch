@@ -57,6 +57,9 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:6px}
 .footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--border);font-size:0.78em;color:var(--dim)}
 .glyph{margin-top:8px;color:var(--accent)}
 .kbd{font-family:var(--mono);background:#f0f4f8;padding:1px 5px;border-radius:3px;font-size:0.92em}
+.cap-cite{cursor:pointer;font-variant-numeric:tabular-nums}
+.cap-card{scroll-margin-top:76px;transition:box-shadow .5s,border-color .5s}
+.cap-card.cap-targeted{border-color:var(--accent);box-shadow:0 0 0 3px rgba(155,27,27,.14)}
 </style>
 </head>
 <body>
@@ -198,14 +201,21 @@ loadCaptures().then(function(cap){
           descHtml = '<div class="cap-desc">'+desc+'</div>';
         }
       }
+      // CITABLE CAPTURE. The registry has always BUILT gallery/#slug links, and no
+      // gallery has ever set the anchor they point at — so every deep link it
+      // advertised landed on a page top. The archive is the authority, so the
+      // canonical citation target is here, and the mirrors are mirrors.
+      var citeUrl = 'https://www.alexanarch.org/captures/#' + e.slug;
       var galleryLink = primaryGallery + '/#' + e.slug;
-      var actions = '<a href="'+galleryLink+'" target="_blank" rel="noopener">Screenshot →</a>';
+      var actions = '<a href="#'+e.slug+'" class="cap-cite" data-cite="'+citeUrl+
+                    '" title="Copy a link to this capture">¶ Cite</a>';
+      actions += ' <a href="'+galleryLink+'" target="_blank" rel="noopener">Screenshot →</a>';
       // Forward-reference to /addresses/?q= (page lives at item 8.3)
       actions += ' <a href="/addresses/?q='+encodeURIComponent(e.q||'')+'">As address →</a>';
       if(e.search_url){
         actions += ' <a href="'+e.search_url+'" target="_blank" rel="noopener">Re-run search →</a>';
       }
-      return '<div class="cap-card">'+
+      return '<div class="cap-card" id="'+escapeHtml(e.slug||'')+'">'+
         '<div class="cap-head">'+
           '<span class="cap-section">'+escapeHtml(e.s||'Unsectioned')+'</span>'+
           '<span class="cap-date">'+escapeHtml(e.date||'')+'</span>'+
@@ -227,7 +237,52 @@ loadCaptures().then(function(cap){
       '<button id="next"'+(page>=totalPages-1?' disabled':'')+'>Next →</button>';
     document.getElementById('prev').onclick = function(){ if(page>0){ page--; render(); window.scrollTo(0,0); } };
     document.getElementById('next').onclick = function(){ if(page<totalPages-1){ page++; render(); window.scrollTo(0,0); } };
+
+    // copy-to-clipboard on the cite mark, with the URL always visible in href
+    document.querySelectorAll('.cap-cite').forEach(function(a){
+      a.addEventListener('click', function(ev){
+        ev.preventDefault();
+        var url = a.dataset.cite;
+        history.replaceState(null, '', '#' + url.split('#')[1]);
+        if(navigator.clipboard){
+          navigator.clipboard.writeText(url).then(function(){
+            var t = a.textContent; a.textContent = '¶ Copied';
+            setTimeout(function(){ a.textContent = t; }, 1400);
+          });
+        }
+      });
+    });
   }
+
+  /* RESOLVE A DEEP LINK. A capture may sit behind an active filter or on a later
+     page, so a bare #slug cannot be left to the browser: clear the filters, find
+     which page holds it, render that page, then scroll and mark it. A citation
+     that only works when the reader is already looking at the right page is not
+     a citation. */
+  function gotoSlug(slug){
+    if(!slug) return false;
+    var i = entries.findIndex(function(e){ return e.slug === slug; });
+    if(i === -1) return false;
+    activeSection = 'all'; activeStatus = 'all';
+    var q = document.getElementById('search'); if(q) q.value = '';
+    document.querySelectorAll('.fbtn').forEach(function(x){
+      x.classList.toggle('active', x.dataset.section === 'all' || x.dataset.status === 'all');
+    });
+    var pool = filtered();
+    var j = pool.findIndex(function(e){ return e.slug === slug; });
+    if(j === -1) return false;
+    page = Math.floor(j / pageSize);
+    render();
+  if(location.hash) gotoSlug(location.hash.slice(1));
+    var el = document.getElementById(slug);
+    if(el){
+      el.scrollIntoView({block:'start'});
+      el.classList.add('cap-targeted');
+      setTimeout(function(){ el.classList.remove('cap-targeted'); }, 2600);
+    }
+    return true;
+  }
+  window.addEventListener('hashchange', function(){ gotoSlug(location.hash.slice(1)); });
 
   document.getElementById('section-filter').addEventListener('click', function(ev){
     var b = ev.target.closest('.fbtn');
