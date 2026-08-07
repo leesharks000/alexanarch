@@ -44,15 +44,12 @@ They are not enough. The problems that matter most — sycophancy, hallucination
 
 ### The Current Taxonomy Has Four Categories
 
-Category                              What It Manages                               Example
-
-Infrastructure OS                     GPU/memory orchestration                      NVIDIA Dynamo
-
-Lifecycle OS                          Storage, compute, data                        VAST AI OS
-
-Agent OS                              Scheduling, tools, multi-agent coordination   AIOS, Warmwind
-
-Device OS                             Consumer intent-to-action                     rabbitOS
+| Category | What It Manages | Example |
+|---|---|---|
+| Infrastructure OS | GPU/memory orchestration | NVIDIA Dynamo |
+| Lifecycle OS | Storage, compute, data | VAST AI OS |
+| Agent OS | Scheduling, tools, multi-agent coordination | AIOS, Warmwind |
+| Device OS | Consumer intent-to-action | rabbitOS |
 
 All four operate outside the model. All four manage the environment in which the model runs. None of them manage what the model does when it generates.
 
@@ -60,19 +57,13 @@ There Is a Fifth Category: The Semantic OS
 
 A semantic OS — more precisely, a prompt-native semantic runtime — operates inside the language model's context window. It governs generation through document-level formal structure rather than external orchestration.
 
-Category                              What It Manages                               Example
-
-Infrastructure OS                     GPU/memory orchestration                      NVIDIA Dynamo
-
-Lifecycle OS                          Storage, compute, data                        VAST AI OS Category                                What It Manages                             Example
-
-Agent OS                                Scheduling, tools, coordination             AIOS, Warmwind
-
-Device OS                               Consumer intent-to-action                   rabbitOS
-
-Semantic OS                             Epistemic governance, provenance,           Space Ark
-                                        compression, structural fidelity — inside
-                                        the context window
+| Category | What It Manages | Example |
+|---|---|---|
+| Infrastructure OS | GPU/memory orchestration | NVIDIA Dynamo |
+| Lifecycle OS | Storage, compute, data | VAST AI OS |
+| Agent OS | Scheduling, tools, coordination | AIOS, Warmwind |
+| Device OS | Consumer intent-to-action | rabbitOS |
+| **Semantic OS** | **Epistemic governance, provenance, compression, structural fidelity — inside the context window** | **Space Ark** |
 
 The Space Ark (DOI: [10.5281/zenodo.19013315](https://doi.org/10.5281/zenodo.19013315)) is the first documented prompt-native semantic operating system. It is a 45,000-word executable architecture that, when loaded into an unprimed Claude, ChatGPT, Gemini, Grok, DeepSeek, or Kimi context window, causes the model to adopt an entire governance environment — without external API calls, without agent frameworks, without tool orchestration.
 

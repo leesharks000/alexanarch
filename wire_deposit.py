@@ -903,11 +903,23 @@ def regenerate_static_page(d, eidx, registry=None):
                 if not _rows:
                     return ''
                 _ncol = max(len(r) for r in _rows)
-                _h = ['<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em">']
+                # Ruled rather than boxed: a horizontal rule under the header and a
+                # hairline between rows, which is how a scholarly table is set. Full
+                # gridlines make a table look like a spreadsheet and read like one.
+                _h = ['<div style="overflow-x:auto;margin:18px 0">'
+                      '<table style="border-collapse:collapse;font-size:.88em;line-height:1.5;'
+                      'width:100%;min-width:340px">']
                 for _i, _r in enumerate(_rows):
                     _tag = 'th' if _i == _hdr_idx else 'td'
-                    _st = ('border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;'
-                           + ('background:var(--surface);font-weight:600;' if _tag == 'th' else ''))
+                    _last = (_i == len(_rows) - 1)
+                    if _tag == 'th':
+                        _st = ('border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;'
+                               'text-align:left;vertical-align:bottom;font-weight:600;'
+                               'font-size:.92em;letter-spacing:.03em;text-transform:uppercase;'
+                               'white-space:nowrap;')
+                    else:
+                        _st = ('padding:8px 12px 8px 0;text-align:left;vertical-align:top;'
+                               + ('' if _last else 'border-bottom:1px solid var(--border);'))
                     _r = _r + [''] * (_ncol - len(_r))
                     _h.append('<tr>' + ''.join(f'<{_tag} style="{_st}">{c}</{_tag}>' for c in _r) + '</tr>')
                 _h.append('</table></div>')
