@@ -482,6 +482,11 @@ def stage_commit(args):
     # never lower one. This is the guard against a fresh instance carelessly
     # breaking, then erasing, work that took sessions to build.
     sh([sys.executable, SCRIPTS / "capability_register.py"], check=True)
+    # CAPTURE CITABILITY: a capture that cannot be cited is not published, only
+    # stored. Links are data written when the capture is added, never assembled
+    # at render time by whichever gallery is running.
+    sh([sys.executable, SCRIPTS / "audit_capture_citability.py"], check=True)
+    sh([sys.executable, SCRIPTS / "build_capture_links.py", "--check"], check=True)
     reg, d = deposit_by_number(args.deposit_number)
     n, axn, title = args.deposit_number, d["axn"], d.get("title", "")[:80]
     # T3 (EA-AVAILABILITY-INTEGRITY-01, audit #1413 H3): every commit carries

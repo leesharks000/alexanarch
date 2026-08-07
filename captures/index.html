@@ -205,8 +205,12 @@ loadCaptures().then(function(cap){
       // gallery has ever set the anchor they point at — so every deep link it
       // advertised landed on a page top. The archive is the authority, so the
       // canonical citation target is here, and the mirrors are mirrors.
-      var citeUrl = 'https://www.alexanarch.org/captures/#' + e.slug;
-      var galleryLink = primaryGallery + '/#' + e.slug;
+      // Prefer the link RECORDED on the capture; only fall back to assembling one.
+      // Assembly-at-render is how the anchors went unset for months: every gallery
+      // built its own link and none of them owned the target.
+      var citeUrl = e.cite || ('https://www.alexanarch.org/captures/#' + e.slug);
+      var mirror = (e.links || []).filter(function(l){ return l.authority === 'mirror'; })[0];
+      var galleryLink = mirror ? mirror.url : (primaryGallery + '/#' + e.slug);
       var actions = '<a href="#'+e.slug+'" class="cap-cite" data-cite="'+citeUrl+
                     '" title="Copy a link to this capture">¶ Cite</a>';
       actions += ' <a href="'+galleryLink+'" target="_blank" rel="noopener">Screenshot →</a>';
