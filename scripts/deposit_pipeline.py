@@ -487,6 +487,10 @@ def stage_commit(args):
     # at render time by whichever gallery is running.
     sh([sys.executable, SCRIPTS / "audit_capture_citability.py"], check=True)
     sh([sys.executable, SCRIPTS / "build_capture_links.py", "--check"], check=True)
+    # the static gallery is regenerated so a new capture is crawlable, not merely
+    # stored — the list in the HTML is what makes its anchor mean anything to a
+    # reader that does not execute JavaScript.
+    sh([sys.executable, SCRIPTS / "build_capture_gallery.py"])
     reg, d = deposit_by_number(args.deposit_number)
     n, axn, title = args.deposit_number, d["axn"], d.get("title", "")[:80]
     # T3 (EA-AVAILABILITY-INTEGRITY-01, audit #1413 H3): every commit carries

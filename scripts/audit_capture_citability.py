@@ -72,6 +72,24 @@ def main():
         except Exception as e:
             fails.append(f"could not read the published snapshot: {e}")
 
+    # DISCOVERABILITY. Citable-by-people and citable-by-machines are different
+    # properties. The gallery was client-rendered for months, so a crawler saw 717
+    # characters and none of the captures — a registry ABOUT machine reception,
+    # unreadable by machines. The static list is what makes an anchor mean
+    # something to a reader that does not execute JavaScript.
+    page = ROOT / "captures/index.html"
+    if page.exists():
+        pg = page.read_text(errors="replace")
+        static = pg.count('class="cap-card" id=')
+        if static < len(entries):
+            fails.append(f"the gallery pre-renders {static} of {len(entries)} captures; the rest "
+                         f"exist only after JavaScript runs, so their anchors are invisible to "
+                         f"any reader that does not execute it")
+        if "application/ld+json" not in pg:
+            fails.append("the gallery declares no JSON-LD; the registry is undescribed to machines")
+        if 'rel="describedby"' not in pg:
+            fails.append("the gallery carries no Signposting to the registry JSON")
+
     if a.live and not fails:
         try:
             with urllib.request.urlopen(

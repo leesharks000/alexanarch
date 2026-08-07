@@ -32455,6 +32455,17 @@
    "verified": "242 captures, 242 unique slugs, citation grammar declared, gate passes; validate --strict 0 failures; namespace clean; dataset mirror restored and unmodified",
    "outstanding": "machinemediation.org/captures/ serves the registry but is NOT in the declared galleries list. The three external galleries live in repos not available here and still need the id=slug anchor so a citation resolves at a mirror as well as at the archive.",
    "at": "2026-08-07T05:54:05Z"
+  },
+  {
+   "repair_id": "R-1283",
+   "deposit_number": null,
+   "batch": true,
+   "type": "CAPTURE_MACHINE_READABILITY",
+   "ruling_by": "MANUS (2026-08-07: are the capture entries machine-legible?)",
+   "basis": "MEASURED ANSWER: the data was legible, the captures were not discoverable — different properties, and the gap was the fd8de940 disease in a second location. A non-executing crawler at /captures/ received 717 CHARACTERS of navigation and a heading and ZERO of 242 captures. No JSON-LD, no noscript, no static list; the registry absent from sitemap and ResourceSync; the page carrying only rel=canonical; and /datasets/capture-registry/ returning 404 because the directory had no index, so the published dataset was reachable only by guessing filenames. The sharpest form of it: every citation anchor existed only after JavaScript ran, so captures had just been made citable BY PEOPLE and remained uncitable BY MACHINES — for a registry whose entire subject is machine reception, close to self-defeating. Two hundred and forty-two dated observations of machine behaviour, unreadable by machines. REPAIR: build_capture_gallery.py pre-renders all 242 as anchored cards between markers, taking crawlable text from 717 to 324,757 characters, with the existing script still taking over for filtering and paging — progressive enhancement, the shape already used for browse and wiki. Adds a JSON-LD Dataset description, Signposting (describedby, item, cite-as), a noscript note, an index for the dataset directory, sitemap entries, and the registry in ResourceSync with a verifiable sha-256. The citability gate now checks DISCOVERABILITY too — pre-rendered count against entry count, JSON-LD present, Signposting present — verified by stripping the static block and watching it fail. Gallery regeneration runs in stage_commit so a new capture is crawlable rather than merely stored.",
+   "sites": "scripts/build_capture_gallery.py (new); captures/index.html; datasets/capture-registry/index.html (new); sitemap.xml; resourcesync/resourcelist.xml; scripts/audit_capture_citability.py; scripts/deposit_pipeline.py",
+   "verified": "242 anchored cards in HTML; crawlable text 717 → 324,757 chars; JSON-LD + 3 signposts; gate catches removal of the static block; validate --strict 0 failures; namespace clean",
+   "at": "2026-08-07T06:22:39Z"
   }
  ]
 }
