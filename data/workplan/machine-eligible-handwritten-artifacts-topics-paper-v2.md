@@ -794,6 +794,15 @@ to one.
 
 ---
 
+## References
+
+**Full bibliography with retrieval paths, DOIs, and per-source read-status:**
+`data/workplan/topics-paper-references.md` — 104 sources, of which 17 read in
+substance, 58 located by secondary description only, and 29 archive-internal and
+verified. **A paper about citations that resolve must have citations that resolve;**
+v2.0 of this paper shipped without an apparatus, which was a failure of exactly the
+kind the project documents.
+
 ## Note on evidence and status
 
 Internal works cited by AXN and record number, verified against the registry at 1,437
