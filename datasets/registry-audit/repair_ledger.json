@@ -32466,6 +32466,18 @@
    "sites": "scripts/build_capture_gallery.py (new); captures/index.html; datasets/capture-registry/index.html (new); sitemap.xml; resourcesync/resourcelist.xml; scripts/audit_capture_citability.py; scripts/deposit_pipeline.py",
    "verified": "242 anchored cards in HTML; crawlable text 717 → 324,757 chars; JSON-LD + 3 signposts; gate catches removal of the static block; validate --strict 0 failures; namespace clean",
    "at": "2026-08-07T06:22:39Z"
+  },
+  {
+   "repair_id": "R-1284",
+   "deposit_number": null,
+   "batch": true,
+   "type": "MISIDENTIFICATION_AUDIT",
+   "ruling_by": "MANUS (2026-08-07: this claims to be the source code for mary lee labor but isnt; and this is the wrong caesura)",
+   "basis": "TWO MISIDENTIFICATIONS, both confirmed against external evidence rather than inferred. #1346 CAESURA: the record captures Zenodo 19425445/19425446, a COMBINED deposit whose own description states it is a three-document fulfillment pair — (a) the Luke 20:24-25 hermeneutic, (b) the formal sigma-FC specification, (c) the integrity lock. The 2026-08-04 strict-pairing pass matched it to #629 alone at title overlap 0.67 and content probe 0.83, and declared #629 its complete version. But #629 is document (b), a SIBLING COMPONENT, and the hermeneutic reading the title actually names is #630. The blog confirms all three as separate posts and the archive holds all three as #628, #629 and #630. The forward pointer sent readers to the specification when they asked for the reading. Replaced with the full component list. THE GENERAL LESSON, which is why this matters beyond one record: similarity matching found a real relation and mislabelled it. Siblings resemble each other — that is what makes them siblings — so a strict-pairing score cannot by itself distinguish a complete version from a companion, and 15 of 19 capture-paired records carry title overlap below 0.80 and should be re-examined on the same suspicion. #1208 MARYLEELABOR: the record declares maryleelabor.org site source with content_type Software / executable apparatus, and holds the Jim Ware letter instead — no HTML, no CSS, no JavaScript, and the letter's opening line present. The 2026-07-19 restoration queue recovered a blog surface and seated the wrong work. The duplicate-witness supersession to #844 then rested on that error: the two records were judged the same work because the same body had been seated in both, so the supersession certified a sameness the error had manufactured. The real source is live at maryleelabor.org and held at leesharks000/maryleelabor-org. Flagged RECOVERY_REQUIRED, nothing deleted, supersession left standing but marked pending a ruling on whether to seat the source or retitle the record to the work it holds.",
+   "sites": "data/registry.json (#1208, #1346); s/records/1208; s/records/1346",
+   "verified": "blog search confirms three separate Caesura posts; archive holds #628/#629/#630; maryleelabor.org returns 200 and leesharks000/maryleelabor-org exists; validate --strict 0 failures",
+   "outstanding": "15 capture-paired records with title overlap below 0.80 require re-examination for the sibling-versus-complete-version error. #1208 awaits a MANUS ruling.",
+   "at": "2026-08-07T18:08:07Z"
   }
  ]
 }
