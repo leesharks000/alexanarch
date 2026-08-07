@@ -36,6 +36,42 @@ def tokens(t):
     return {w for w in re.findall(r"[a-z0-9]+", (t or "").lower()) if len(w) > 2}
 
 
+def rendered_pointers():
+    """Read the pointer AS RENDERED, from the record pages a visitor sees.
+
+    The first version of this audit read one registry field, body_status.full_version,
+    and reported 51 records. The rendered population is 332 pages carrying a status
+    banner, of which 162 make a RESOLVABLE forward pointer to another record — 117
+    duplicate-witness supersessions and 45 capture pairings. Both defects MANUS found
+    live in this population and only one of them was in the field I searched.
+
+    A field is where a value is stored. A banner is what the reader is told. Auditing
+    the first and reporting it as the second is how a count comes out three times
+    too small.
+    """
+    import html as _h
+    out = []
+    for r in sorted((ROOT / "s/records").glob("*/index.html")):
+        try:
+            t = r.read_text(errors="replace")
+        except Exception:
+            continue
+        head = t[:t.find(">Full Text<")] if ">Full Text<" in t else t
+        txt = _h.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", head)))
+        m = re.search(r"(record of standing for this work is|Complete version:|Full version:)"
+                      r"\s*#?(\d{1,4})", txt, re.I)
+        if not m:
+            continue
+        kind = ("duplicate-witness" if "standing" in m.group(1).lower() else "capture-pairing")
+        basis = ""
+        b = re.search(r"(strict pairing[^A-Z]{0,200}|Duplicate witness[^A-Z]{0,220})", txt)
+        if b:
+            basis = b.group(1)
+        out.append({"n": int(r.parent.name), "target": int(m.group(2)),
+                    "kind": kind, "basis": basis})
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--md", action="store_true", help="emit a markdown review sheet")
@@ -45,36 +81,24 @@ def main():
     D = {d["deposit_number"]: d for d in reg}
     rows = []
 
-    for d in reg:
-        bs = d.get("body_status") or {}
-        fv = bs.get("full_version")
-        if not isinstance(fv, dict):
-            continue
-        tgt = fv.get("deposit_number")
-        basis = fv.get("basis", "")
+    for ptr in rendered_pointers():
+        d = D.get(ptr["n"]) or {}
+        t = D.get(ptr["target"]) or {}
+        basis = ptr["basis"]
         ov = re.search(r"title overlap ([\d.]+)", basis)
         pr = re.search(r"content probe ([\d.]+)", basis)
         sz = re.search(r"full body ([\d,]+)c vs capture ([\d,]+)c", basis)
-        t = D.get(tgt) or {}
-
         a_tok, b_tok = tokens(d.get("title")), tokens(t.get("title"))
-        shared = a_tok & b_tok
-        only_capture = a_tok - b_tok
-        only_target = b_tok - a_tok
-
-        # A capture is a FRAGMENT of its target: the target's title should contain
-        # most of the capture's distinctive words. Words the capture has and the
-        # target lacks are the tell — they name something the target is not about.
         rows.append({
-            "n": d["deposit_number"], "axn": d.get("axn", ""),
-            "title": d.get("title", ""), "target": tgt,
+            "n": ptr["n"], "kind": ptr["kind"], "axn": d.get("axn", ""),
+            "title": d.get("title", ""), "target": ptr["target"],
             "target_title": t.get("title", ""),
             "overlap": float(ov.group(1)) if ov else None,
             "probe": float(pr.group(1)) if pr else None,
             "full_c": int(sz.group(1).replace(",", "")) if sz else None,
             "cap_c": int(sz.group(2).replace(",", "")) if sz else None,
-            "unmatched_in_capture": sorted(only_capture)[:6],
-            "unmatched_in_target": sorted(only_target)[:6],
+            "unmatched_in_capture": sorted(a_tok - b_tok)[:6],
+            "unmatched_in_target": sorted(b_tok - a_tok)[:6],
         })
 
     for r in rows:
