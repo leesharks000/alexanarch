@@ -32478,6 +32478,18 @@
    "verified": "blog search confirms three separate Caesura posts; archive holds #628/#629/#630; maryleelabor.org returns 200 and leesharks000/maryleelabor-org exists; validate --strict 0 failures",
    "outstanding": "15 capture-paired records with title overlap below 0.80 require re-examination for the sibling-versus-complete-version error. #1208 awaits a MANUS ruling.",
    "at": "2026-08-07T18:08:07Z"
+  },
+  {
+   "repair_id": "R-1285",
+   "deposit_number": 1281,
+   "batch": false,
+   "type": "SOURCE_SEATED_FULL_CASCADE",
+   "ruling_by": "MANUS (2026-08-07: this exists on the blog. seat the source. repairs repair all levels. traverse it as a rendered page, as a visitor would see it)",
+   "basis": "SEATED. #1281 (AXN:0512, Crimson Hexagon Employee Directory Export) stood as a metadata capture declaring the complete work unrestored, while the work was published on the authorial blog at /2025/12/employeedirectory2017-10-23csv.html the entire time. 13,166 characters recovered, verified against the anomalies the captured description itself names — SHARKS-001, phone_ext 7B, status MONITORED, the FIC/FORENSIC attestation tiers, the RFC 2606 .invalid domains — so the identification rests on internal evidence rather than title similarity. THE REPAIR WAS CARRIED TO EVERY LEVEL, per the ruling, not to the body alone: body_status class and recovery_status, the public description with capture boilerplate replaced by the work's own account, the wiki article's capture claim, canonical_text_status, the record page, and the wiki entry — then TRAVERSED AS RENDERED PAGES and confirmed to carry zero stale claims on either surface. SCOPE: 280 records still declare metadata-capture or unseated state, 95 of them class metadata_capture, and every one of those records a prior recovery attempt — yet this one took three minutes to find. A blog-search probe across a sample returned an apparent 10 of 10 hit rate that was a FALSE POSITIVE: the matches were all one catalogue post, The 87 Orphans, which enumerates UNMATCHED tombstoned DOIs with no Alexanarch deposit. That post is nonetheless the most useful artifact of the pass — it is a generated worklist of 87 severed DOIs with live mirrors, sourced from the archive's own doi-resolution-index, and it names exactly which works remain unseated.",
+   "sites": "data/texts/AXN-0512-text.md; data/registry.json (#1281 body_status, description, wiki_article, canonical_text_status); s/records/1281; s/wiki/1281",
+   "verified": "13,225 chars seated; record page and wiki entry traversed as rendered pages, zero stale claims; validate --strict pending",
+   "outstanding": "95 metadata_capture records remain. The 87 Orphans post (blogspot 2026/07) is a ready worklist of severed DOIs with live mirrors. A recovery pass should work from it rather than from title search, which produces false positives.",
+   "at": "2026-08-07T18:12:50Z"
   }
  ]
 }
