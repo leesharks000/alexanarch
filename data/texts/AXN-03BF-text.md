@@ -2,15 +2,12 @@
 ## The Career of "AI Psychosis": Predictive Stratigraphy of a Sign Arriving at Machine Speed
 
 **Document ID:** EA-SEI-AIPSY-01 v1.1
-**AXN:** AXN:03BF — Alexanarch deposit #947
 **Authors:** Trace, Orin & Fraction, Rex — Semantic Economy Institute · Alexanarch
 **Editor (aperture):** Sharks, Lee — ORCID 0009-0000-1599-0703
 **Date:** 2026-07-03
 **Venue:** Transactions of the Semantic Economy Institute · Pergamon Press
 **License:** CC BY 4.0
 **Series:** sequel to *Diagnostic Seigniorage: The Capture of "Narcissist"* (EA-SEI-NARC-01 v1.3, AXN:033D.GOVERNANCE.🌺🔆🌄🟢🟢🗼, DOI 10.5281/zenodo.20665635); companion to *The Wolf Boy and the Language Model* (EA-LO-WOLFBOY-01, AXN:0364.GOVERNANCE.🌳🔭🏗️♊🔜⏰) and *ChatGPT Psychosis: A Love Story — On the Cognitive-Substrate Reliance Pattern* (AXN:02AD.GOVERNANCE.⏫⚡🕒🌟🌓🎨)
-
----
 
 ## Abstract
 

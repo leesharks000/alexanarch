@@ -43,10 +43,6 @@ The first mint was truncated by a parser boundary defect and corrected in place 
 
 The first mint was truncated by a parser boundary defect and corrected in place the same day under the protocol’s correction rule.</p>
 
-<h2>Version history</h2><p class="subtle" style="color:#777;font-size:.85em;margin-bottom:8px">Series: <code style="font-family:var(--mono);font-size:.85em">SERIES-EA-PROVENANCE-METADATA</code></p><ul style="list-style:none;padding-left:0;font-size:.92em;line-height:1.8"><li>○ <a href="/s/records/941/">#941 v0.1</a> <span style="color:#999;font-size:.85em">(superseded)</span></li><li style="font-weight:500">● #942 v0.2 <span style="color:var(--teal);font-size:.85em">— current</span> <span style="color:#777;font-weight:normal">← this deposit</span></li></ul>
-<section style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid var(--rule,rgba(127,127,127,.3));font-size:.85em"><div style="font-weight:600;margin-bottom:.3rem">Record modifications</div><ul style="margin:0;padding-left:1.1rem"><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">publisher</strong>: PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-06</span> — <strong style="font-weight:600">description</strong>: DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)</li></ul><div style="opacity:.65;margin-top:.4rem;font-size:.92em">The deposited text is immutable; these are changes to the record's metadata and declared state.</div></section>
-
-<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/941/" style="color:var(--accent);text-decoration:none">#941 EA-PROVENANCE-METADATA-01 v0.1: Granular Provenance Metadata for AI-Mediated Deposits</a></span><span style="flex:1"><a href="/s/records/943/" style="color:var(--accent);text-decoration:none">#943 Whitespace as Provenance: Representation Pipelines and the Extinction of Compositional A</a> →</span></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">This deposit cites (2)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/941/" style="color:var(--accent);text-decoration:none">#941 EA-PROVENANCE-METADATA-01 v0.1: Granular Provenance Metadata for AI-Mediated Deposits</a> <span style="opacity:.6;font-size:.85em">by AXN</span></li><li style="margin:.15rem 0"><a href="/s/records/928/" style="color:var(--accent);text-decoration:none">#928 EA-MANDALA-SURFACE-01 v0.1: SURFACE Integration — The Sun Station, Public Canonization, </a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li></ul></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">Cited by (1)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/943/" style="color:var(--accent);text-decoration:none">#943 Whitespace as Provenance: Representation Pipelines and the Extinction of Compositional A</a> <span style="opacity:.6;font-size:.85em">by AXN</span></li></ul></div></section>
 <h2>Wiki Article</h2>
 <div style="background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:16px;margin:8px 0;font-size:.88em;line-height:1.75;color:#333"><strong>Granular Provenance Metadata v0.2</strong> extends the provenance schema below the semantic layer.
 
@@ -61,19 +57,19 @@ The version also formalizes repository versioning. Every substantive version rec
 
 <h2>Full Text</h2>
 
-<div class="ft"><h1>EA-PROVENANCE-METADATA-01 v0.2: Spatial-Typographic Mediation, Representation Pipeline, and the Versioning Protocol</h1>
+<div class="ft"><h2>EA-PROVENANCE-METADATA-01 v0.2: Spatial-Typographic Mediation, Representation Pipeline, and the Versioning Protocol</h2>
 <p># EA-PROVENANCE-METADATA-01 v0.2: Spatial-Typographic Mediation, Representation Pipeline, and the Versioning Protocol</p>
 
-<h2>Description</h2>
+<h3>Description</h3>
 <p>## Description</p>
 
 <p>Minor version update to the granular provenance metadata schema (predecessor: EA-PROVENANCE-METADATA-01 v0.1, AXN:03B9, deposit #941). Adds an eighth mediation type — spatial-typographic mediation — covering spatial composition, typographic composition, prosodic notation, stanzaic and group structure, manuscript features, and pre-tokenization source format. Adds a structured representation_pipeline field recording, per deposit, the chain from source artifact through digitization, normalization, serialization, tokenization, and model access modality, with a four-value status vocabulary: compositionally_invisible, compositionally_reduced, compositionally_faithful, compositionally_operational. Includes worked examples for Pearl (double invisibility: non-OCR PDF) and Snub-Poemed (image-canonical calligram). Formalizes the archive&#x27;s versioning protocol (§10) as standing convention: every version its own deposit; successor declares ancestry via version_series_id / predecessor_axn; predecessor marked superseded_by via registry-only edit; latest-version resolution by following the superseded chain to tip; correction distinct from versioning. All v0.1 declarations remain valid under schema_version 0.1.0.</p>
 
-<h1>EA-PROVENANCE-METADATA-01 v0.2</h1>
+<h2>EA-PROVENANCE-METADATA-01 v0.2</h2>
 <p># EA-PROVENANCE-METADATA-01 v0.2</p>
-<h2>Granular Provenance Metadata for AI-Mediated Deposits</h2>
+<h3>Granular Provenance Metadata for AI-Mediated Deposits</h3>
 <p>## Granular Provenance Metadata for AI-Mediated Deposits</p>
-<h3>Minor Version Update — Spatial-Typographic Mediation and Representation Pipeline</h3>
+<h4>Minor Version Update — Spatial-Typographic Mediation and Representation Pipeline</h4>
 <p>### Minor Version Update — Spatial-Typographic Mediation and Representation Pipeline</p>
 
 <p><strong>Author:</strong> Lee Sharks (MANUS), Crimson Hexagonal Archive / Alexanarch</p>
@@ -84,7 +80,7 @@ The version also formalizes repository versioning. Every substantive version rec
 
 <hr>
 <p>---</p>
-<h2>§0. What changed and why</h2>
+<h3>§0. What changed and why</h3>
 <p>## §0. What changed and why</p>
 
 <p>v0.1 (AXN:03B9) established a seven-type mediation taxonomy (propositional, structural, linguistic, translational, research, editorial, transformational) and five attestation questions (proposition origination, model language retention, review chain, seam recoverability, responsibility structure). All of that is preserved unchanged.</p>
@@ -101,7 +97,7 @@ The version also formalizes repository versioning. Every substantive version rec
 
 <hr>
 <p>---</p>
-<h2>§1–§7. Unchanged from v0.1</h2>
+<h3>§1–§7. Unchanged from v0.1</h3>
 <p>## §1–§7. Unchanged from v0.1</p>
 
 <p>Sections §1 through §7 of v0.1 (AXN:03B9) are incorporated by reference. The seven original mediation types, five attestation questions, schema field definitions (for fields in §4 as of v0.1), coupling to the triadic foundation, workplan, and closing observations are unchanged. Only the additions are documented here.</p>
@@ -110,7 +106,7 @@ The version also formalizes repository versioning. Every substantive version rec
 
 <hr>
 <p>---</p>
-<h2>§2.8 Spatial-typographic mediation (new in v0.2)</h2>
+<h3>§2.8 Spatial-typographic mediation (new in v0.2)</h3>
 <p>## §2.8 Spatial-typographic mediation (new in v0.2)</p>
 
 <p><strong>Spatial-typographic mediation.</strong> The composition&#x27;s spatial, typographic, prosodic, stanzaic, or manuscript features carry semantic weight and were affected by the production process, or are relevant to the deposit&#x27;s current representational status in the archive.</p>
@@ -137,7 +133,7 @@ The version also formalizes repository versioning. Every substantive version rec
 
 <hr>
 <p>---</p>
-<h2>§2.9 Representation pipeline (new in v0.2)</h2>
+<h3>§2.9 Representation pipeline (new in v0.2)</h3>
 <p>## §2.9 Representation pipeline (new in v0.2)</p>
 
 <p>The eight mediation types record what happened during production. The representation pipeline field records what the deposit&#x27;s text <em>is</em> in its current form in the archive — what compositional features survived the chain from source artifact to archive operating layer, and what was lost at each stage.</p>
@@ -170,7 +166,7 @@ The version also formalizes repository versioning. Every substantive version rec
 
 <hr>
 <p>---</p>
-<h2>§4. Schema (v0.2 additions)</h2>
+<h3>§4. Schema (v0.2 additions)</h3>
 <p>## §4. Schema (v0.2 additions)</p>
 
 <p>The v0.1 schema (reproduced in full at AXN:03B9) is extended with the following new fields, nested within the existing `provenance_metadata` structure.</p>
@@ -344,7 +340,7 @@ The version also formalizes repository versioning. Every substantive version rec
 
 <hr>
 <p>---</p>
-<h2>§5. Coupling to the archive&#x27;s broader work (updated)</h2>
+<h3>§5. Coupling to the archive&#x27;s broader work (updated)</h3>
 <p>## §5. Coupling to the archive&#x27;s broader work (updated)</p>
 
 <p>v0.1 coupled the schema to the triadic foundation (bearing, provenance debt, heteronymy) as three principles the schema serves operationally. v0.2 adds a fourth coupling.</p>
@@ -359,7 +355,7 @@ The version also formalizes repository versioning. Every substantive version rec
 
 <hr>
 <p>---</p>
-<h2>§8. Companion deposits and next work (updated from v0.1)</h2>
+<h3>§8. Companion deposits and next work (updated from v0.1)</h3>
 <p>## §8. Companion deposits and next work (updated from v0.1)</p>
 
 <p>From v0.1, carrying forward:</p>
@@ -370,7 +366,7 @@ The version also formalizes repository versioning. Every substantive version rec
 
 <hr>
 <p>---</p>
-<h2>§9. Closing observation (updated)</h2>
+<h3>§9. Closing observation (updated)</h3>
 <p>## §9. Closing observation (updated)</p>
 
 <p>v0.1 closed: <em>&quot;The schema is not a solution to the problem of AI-mediated authorship. It is a record of what the problem consists of, deposit by deposit.&quot;</em></p>
@@ -388,7 +384,7 @@ The version also formalizes repository versioning. Every substantive version rec
 <hr>
 <p>---</p>
 
-<h2>§10. Versioning protocol (formalized with this deposit)</h2>
+<h3>§10. Versioning protocol (formalized with this deposit)</h3>
 <p>## §10. Versioning protocol (formalized with this deposit)</p>
 
 <p>This deposit is the first to be minted under the archive&#x27;s formalized versioning protocol, stated here as standing convention. The protocol names and stabilizes a practice already present in the registry in scattered form (version_series_id on the TACHYON continuity series; predecessor_axn / superseded_by_axn on the Compositional Defiguration series).</p>
@@ -411,11 +407,20 @@ The version also formalizes repository versioning. Every substantive version rec
 
 <p>This protocol governs schema versions, specification versions, paper revisions minted as new deposits, and registry-instrument versions (Capture Registry, Reception Registry). It does not govern the book-of-conversations FD-range deposits, which are append-structured rather than versioned.</p>
 
-<h2>Files</h2>
+<h3>Files</h3>
 <p>## Files</p>
 
 <p>https://github.com/leesharks000/alexanarch/blob/main/data/texts/</p>
 </div>
+
+<!-- APPARATUS BLOC — everything below records how this record was processed,
+     not what the work says. It follows the work because a reader came for the
+     work. (MANUS standing rule, 2026-08-06: recording of method or modification
+     does not appear in body text.) -->
+
+<h2>Version history</h2><p class="subtle" style="color:#777;font-size:.85em;margin-bottom:8px">Series: <code style="font-family:var(--mono);font-size:.85em">SERIES-EA-PROVENANCE-METADATA</code></p><ul style="list-style:none;padding-left:0;font-size:.92em;line-height:1.8"><li>○ <a href="/s/records/941/">#941 v0.1</a> <span style="color:#999;font-size:.85em">(superseded)</span></li><li style="font-weight:500">● #942 v0.2 <span style="color:var(--teal);font-size:.85em">— current</span> <span style="color:#777;font-weight:normal">← this deposit</span></li></ul>
+<section style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid var(--rule,rgba(127,127,127,.3));font-size:.85em"><div style="font-weight:600;margin-bottom:.3rem">Record modifications</div><ul style="margin:0;padding-left:1.1rem"><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">publisher</strong>: PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-06</span> — <strong style="font-weight:600">description</strong>: DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)</li></ul><div style="opacity:.65;margin-top:.4rem;font-size:.92em">The deposited text is immutable; these are changes to the record's metadata and declared state.</div></section>
+<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/941/" style="color:var(--accent);text-decoration:none">#941 EA-PROVENANCE-METADATA-01 v0.1: Granular Provenance Metadata for AI-Mediated Deposits</a></span><span style="flex:1"><a href="/s/records/943/" style="color:var(--accent);text-decoration:none">#943 Whitespace as Provenance: Representation Pipelines and the Extinction of Compositional A</a> →</span></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">This deposit cites (2)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/941/" style="color:var(--accent);text-decoration:none">#941 EA-PROVENANCE-METADATA-01 v0.1: Granular Provenance Metadata for AI-Mediated Deposits</a> <span style="opacity:.6;font-size:.85em">by AXN</span></li><li style="margin:.15rem 0"><a href="/s/records/928/" style="color:var(--accent);text-decoration:none">#928 EA-MANDALA-SURFACE-01 v0.1: SURFACE Integration — The Sun Station, Public Canonization, </a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li></ul></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">Cited by (1)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/943/" style="color:var(--accent);text-decoration:none">#943 Whitespace as Provenance: Representation Pipelines and the Extinction of Compositional A</a> <span style="opacity:.6;font-size:.85em">by AXN</span></li></ul></div></section>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

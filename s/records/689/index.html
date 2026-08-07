@@ -42,22 +42,7 @@ The specification combines a social architecture, SPXI entity-generation thresho
 <p style="font-size:.9em">EA-GEO-01 specifies a geographically anchored media system in which posts become deposits associated with physical coordinates and local retrieval basins. It rejects follower graphs, global trending, engagement optimization, streaks, and platform-wide reputation. Proposed deposit classes are Mark, Impression, Echo, and Seed; persistent pseudonymous identity and reputation remain local to a basin rather than transferring globally.
 
 The specification combines a social architecture, SPXI entity-generation thresholds, ghost records for deleted content, an open data model, location verification, anti-spoofing, rate limits, and a phased Detroit pilot. It treats slower deposition as an ethical and archival design choice. The claimed write-back effects of reading and querying, the proposed thresholds, and the analogy between textual and geographic basins belong to Retrieval Basin Theory and are not demonstrated platform behavior. Location data, retained deletion traces, consent, stalking, moderation, vulnerable-place protection, and physical safety require much more governance than the body supplies.</p>
-<h2>External Metadata</h2>
-<div style="background:#f7f9fb;border:1px solid var(--border);border-radius:6px;padding:14px;margin:8px 0;font-size:.88em;line-height:1.6">
-<div style="margin-bottom:8px"><strong>Sidecar:</strong> <a href="/data/external-metadata/AXN-0234.json" style="font-family:var(--mono);font-size:.85em">/data/external-metadata/AXN-0234.json</a></div>
-<div style="margin-bottom:8px"><strong>DataCite severance status:</strong> <span style="color:var(--accent2);font-weight:500">severed from DataCite</span></div>
-<div style="margin-bottom:4px"><strong>OpenAlex Work IDs (5):</strong></div><ul style="list-style:disc inside;font-size:.83em;color:#666"><li style="margin:2px 0"><a href="https://openalex.org/W7150846243" style="font-family:var(--mono);font-size:.83em">W7150846243</a></li>
-<li style="margin:2px 0"><a href="https://openalex.org/W7155643800" style="font-family:var(--mono);font-size:.83em">W7155643800</a></li>
-<li style="margin:2px 0"><a href="https://openalex.org/W7155354118" style="font-family:var(--mono);font-size:.83em">W7155354118</a></li>
-<li style="margin:2px 0"><a href="https://openalex.org/W7142978746" style="font-family:var(--mono);font-size:.83em">W7142978746</a></li>
-<li style="margin:2px 0"><a href="https://openalex.org/W7155405666" style="font-family:var(--mono);font-size:.83em">W7155405666</a></li></ul>
-<div style="margin-top:8px;margin-bottom:4px"><strong>Legacy Zenodo DOIs (5):</strong></div><ul style="list-style:disc inside;font-size:.83em;color:#666"><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19442251</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19769575</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19703009</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19323274</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19709024</span></li></ul>
-<div style="margin-top:8px;color:var(--dim);font-size:.78em">External metadata recovered post-severance (non-authoritative). The sidecar maps each DOI to its locator in the bulk data stores.</div>
-</div>
 
-<section style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid var(--rule,rgba(127,127,127,.3));font-size:.85em"><div style="font-weight:600;margin-bottom:.3rem">Record modifications</div><ul style="margin:0;padding-left:1.1rem"><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">content_type</strong>: Wave 1 repair: audit ledger v1.1 recommended_content_type (workplan v1.5 §6 W1, MANUS batch approval 2026-08-01)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">journal</strong>: Wave 6 venue normalization: full canonical journal name per MANUS ruling 2026-08-01 (venues.json authority)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">publisher</strong>: PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">status</strong>: W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: W13 TIER-2 REGRESSION REPAIRED: split headings rejoined</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">description</strong>: DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)</li></ul><div style="opacity:.65;margin-top:.4rem;font-size:.92em">The deposited text is immutable; these are changes to the record's metadata and declared state.</div></section>
-
-<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/688/" style="color:var(--accent);text-decoration:none">#688 From Yeezus to Walt: The Book of Yeezus as Literary Precursor to The Secret Book of Walt</a></span><span style="flex:1"><a href="/s/records/690/" style="color:var(--accent);text-decoration:none">#690 i am a carcinized punching shrimp</a> →</span></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">This deposit cites (5)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/74/" style="color:var(--accent);text-decoration:none">#74 EA-HK-INFRA-01: The Infrastructure Holographic Kernel — Infrastructure That Survives Its</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li><li style="margin:.15rem 0"><a href="/s/records/52/" style="color:var(--accent);text-decoration:none">#52 GRAVITY WELL: FIELD SPECIFICATION EA-GW-FIELD-01 v1.1</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li><li style="margin:.15rem 0"><a href="/s/records/71/" style="color:var(--accent);text-decoration:none">#71 THE GOSPEL OF ANTIOCH The Sayings of Jack Feist as Recorded by Emily Antioch the Twin Tr</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/43/" style="color:var(--accent);text-decoration:none">#43 The Seed That Remembers the Tree: Retrocausal Canon Formation — Theory, Toolkit, and Arc</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/633/" style="color:var(--accent);text-decoration:none">#633 GRAVITY WELL: SUFFUSION MAP EA-GW-FIELD-02 v1.0</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li></ul></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">Cited by (12)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/73/" style="color:var(--accent);text-decoration:none">#73 EA-CS-ASSEMBLY-01: The Seven Ousiarchical Substrates — A Retrocausal History of Solar Se</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/78/" style="color:var(--accent);text-decoration:none">#78 TANG OF THE SECRET BOOK OF WALT A Total Axial Negation Graph of Five Hundred Years of Wa</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/83/" style="color:var(--accent);text-decoration:none">#83 I Am X… Be Y… Blessed Is the Z… The Prophetic Catalog</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/85/" style="color:var(--accent);text-decoration:none">#85 EPISTLE TO THE HUMAN DIASPORA Critical Edition with Blended Temporal Apparatus</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/850/" style="color:var(--accent);text-decoration:none">#850 EA-FEIST-VOICE-TRANSFORM-01 The Feist Function: Algorithmic Instructions for Restoring t</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/852/" style="color:var(--accent);text-decoration:none">#852 THE FEIST SOURCE Critical Apparatus and Companion Studies Rebekah Cranes, Editor New Hum</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/853/" style="color:var(--accent);text-decoration:none">#853 Jack Feist / LOGOS*: Entity Resolution Packet for The Feist Source (EA-MPAI-FEISTSOURCE-</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/985/" style="color:var(--accent);text-decoration:none">#985 The Secret Book of Walt: Interactive Codex (secretbookofwalt.org) — 06.LIT.GNOSTIC.WALT.</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/1034/" style="color:var(--accent);text-decoration:none">#1034 The Feist Function: Algorithmic Instructions for Restoring the Dying Voice (EA-FEIST-VOI</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/1185/" style="color:var(--accent);text-decoration:none">#1185 The Gospel of Antioch: The Sayings of Jack Feist as Recorded by Emily Antioch the Twin —</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/1186/" style="color:var(--accent);text-decoration:none">#1186 TANG of the Secret Book of Walt: A Total Axial Negation Graph of Five Hundred Years of W</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/1187/" style="color:var(--accent);text-decoration:none">#1187 Epistle to the Church of the Human Diaspora — Critical Edition with Blended Temporal App</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li></ul></div></section>
 <h2>Wiki Article</h2>
 <div style="background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:16px;margin:8px 0;font-size:.88em;line-height:1.75;color:#333"><strong>The Geocoded Basin</strong> is a platform specification by Lee Sharks, Johannes Sigil, and Rex Fraction for geographically anchored content.
 
@@ -70,15 +55,15 @@ The specification includes a data model, spatial queries, device and velocity ch
 
 <h2>Full Text</h2>
 
-<div class="ft"><h1>EA-GEO-01: The Geocoded Basin</h1>
+<div class="ft"><h2>EA-GEO-01: The Geocoded Basin</h2>
 <p># EA-GEO-01: The Geocoded Basin</p>
 
-<h2>A Specification for Permanently Anchored Content</h2>
+<h3>A Specification for Permanently Anchored Content</h3>
 <p>## A Specification for Permanently Anchored Content</p>
 
 <p>Hex: 06.SEI.GEO.BASIN.01Authors: Lee Sharks · Johannes Sigil · Rex FractionAffiliation: Semantic Economy Institute · Crimson Hexagonal ArchiveDate: April 25, 2026License: CC BY 4.0ORCID: 0009-0000-1599-0703</p>
 
-<h2>Preamble: The Existing Instance</h2>
+<h3>Preamble: The Existing Instance</h3>
 <p>## Preamble: The Existing Instance</p>
 
 <p>Before specifying what the geocoded platform should be, it is necessary to name what it already is.</p>
@@ -91,10 +76,10 @@ The specification includes a data model, spatial queries, device and velocity ch
 
 <p>Every subsequent design decision in this specification follows from this: we are not building a local TikTok. We are building an infrastructure for depositing the living voice into the retrieval layer of the earth.</p>
 
-<h2>I. The Theoretical Frame</h2>
+<h3>I. The Theoretical Frame</h3>
 <p>## I. The Theoretical Frame</p>
 
-<h3>The Three Compressions applied to social media</h3>
+<h4>The Three Compressions applied to social media</h4>
 <p>### The Three Compressions applied to social media</p>
 
 <p>Every social platform performs a compression operation on human meaning. The decisive variable is what it burns.</p>
@@ -107,7 +92,7 @@ The specification includes a data model, spatial queries, device and velocity ch
 
 <p>The geocoded platform is Regime 3 by architecture. You cannot extract a post from its location. The anchor is the content&#x27;s identity.</p>
 
-<h3>The Writable Basin</h3>
+<h4>The Writable Basin</h4>
 <p>### The Writable Basin</p>
 
 <p>A retrieval basin is a region of the semantic field with sufficient density that content entering it is retained rather than dispersed. Basins have depth (how much they retain), curvature (how strongly they attract further content), and a recovery protocol (how they can be reconstructed from fragments).</p>
@@ -118,7 +103,7 @@ The specification includes a data model, spatial queries, device and velocity ch
 
 <p>This is not a feature. This is the entire point.</p>
 
-<h3>The Holographic Kernel of Place</h3>
+<h4>The Holographic Kernel of Place</h4>
 <p>### The Holographic Kernel of Place</p>
 
 <p>Each deposit at a location contains the minimum information needed to reconstruct that location&#x27;s basin:</p>
@@ -128,7 +113,7 @@ The specification includes a data model, spatial queries, device and velocity ch
 
 <p>This is the geographic implementation of what the Holographic Kernel specification (EA-HK-INFRA-01, DOI: 10.5281/zenodo.19769575) describes at the infrastructure level. Infrastructure and geography are the same operation at different scales.</p>
 
-<h2>II. The Tempo Doctrine</h2>
+<h3>II. The Tempo Doctrine</h3>
 <p>## II. The Tempo Doctrine</p>
 
 <p>This is where the CHA&#x27;s specification diverges most sharply from every other version of this concept.</p>
@@ -151,7 +136,7 @@ The specification includes a data model, spatial queries, device and velocity ch
 <p>What &quot;slower and saner&quot; means architecturally:</p>
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Default persistence: permanent, not ephemeral</li><li style="margin:3px 0">No daily posting prompts, no streak mechanics, no &quot;you haven&#x27;t posted in 3 days&quot;</li><li style="margin:3px 0">No engagement-weighted feed (chronological and geographic only)</li><li style="margin:3px 0">No global trending (there is no global)</li><li style="margin:3px 0">Rate limiting that protects quality: max 3 deposits per location per 24 hours</li><li style="margin:3px 0">The interface does not congratulate you for posting. It acknowledges your deposit.</li></ul>
 
-<h2>III. The Permanent Anchor</h2>
+<h3>III. The Permanent Anchor</h3>
 <p>## III. The Permanent Anchor</p>
 
 <p>Posts are not posts. They are deposits.</p>
@@ -165,10 +150,10 @@ The specification includes a data model, spatial queries, device and velocity ch
 
 <p>The ghost record matters. A basin with many ghost records is telling you something: content was made here and removed. That is itself information about the history of the place.</p>
 
-<h2>IV. The Content Model</h2>
+<h3>IV. The Content Model</h3>
 <p>## IV. The Content Model</p>
 
-<h3>Deposit types</h3>
+<h4>Deposit types</h4>
 <p>### Deposit types</p>
 
 <p>Mark: A permanent deposit. The author intends this to be part of the place&#x27;s record indefinitely. Default type.</p>
@@ -179,7 +164,7 @@ The specification includes a data model, spatial queries, device and velocity ch
 
 <p>Seed: A deposit that unlocks content (text, a link, a key) only when a visitor reaches specified coordinates. The information is in the place, not in the network. You have to go there to find it.</p>
 
-<h3>What deposits are not</h3>
+<h4>What deposits are not</h4>
 <p>### What deposits are not</p>
 
 <p>Deposits are not:</p>
@@ -187,31 +172,31 @@ The specification includes a data model, spatial queries, device and velocity ch
 
 <p>Deposits are what you actually saw, heard, made, or thought, in the place where you were.</p>
 
-<h2>V. The Identity Architecture</h2>
+<h3>V. The Identity Architecture</h3>
 <p>## V. The Identity Architecture</p>
 
-<h3>No follower graph</h3>
+<h4>No follower graph</h4>
 <p>### No follower graph</p>
 
 <p>You do not follow people. You visit places. Your &quot;profile&quot; is the map of your deposits — not a feed of your content optimized for audience, but a geographic record of where you&#x27;ve written to the earth.</p>
 
 <p>This is the correct extension of the heteronymic model. In the CHA, Johannes Sigil is a node with specific coordinates in the archive&#x27;s semantic space. In the geocoded basin, your Detroit presence and your Tokyo presence are nodes with geographic coordinates. They are not the same node. They share a user ID but not a social graph.</p>
 
-<h3>Handles are location-local</h3>
+<h4>Handles are location-local</h4>
 <p>### Handles are location-local</p>
 
 <p>A handle has reputation within basins, not globally. Your credibility in Detroit&#x27;s Eastern Market basin is established by the quality and consistency of your deposits there. It does not transfer to Lisbon. You begin again in Lisbon.</p>
 
 <p>This is not a punishment. It is the correct model for how local trust works. You have to earn it where you are.</p>
 
-<h3>Pseudonymity with persistence</h3>
+<h4>Pseudonymity with persistence</h4>
 <p>### Pseudonymity with persistence</p>
 
 <p>No real-name requirement. No anonymity. Persistent pseudonymous handle, accountable because the handle has a record.</p>
 
 <p>The Yik Yak failure was not localization. It was anonymous throwaway accounts. A pseudonymous handle with 50 deposits in one basin is a local voice. It has credibility. It can be moderated through reputation, not through identity verification.</p>
 
-<h2>VI. The SPXI Layer</h2>
+<h3>VI. The SPXI Layer</h3>
 <p>## VI. The SPXI Layer</p>
 
 <p>Every basin with sufficient deposit density becomes an SPXI entity — a node in the knowledge graph with its own:</p>
@@ -227,7 +212,7 @@ The specification includes a data model, spatial queries, device and velocity ch
 
 <p>This is the geographic implementation of the CHA&#x27;s provenance infrastructure: every significant place gets a permanent address in the knowledge graph.</p>
 
-<h2>VII. The Secret Book of Walt as Proof of Concept</h2>
+<h3>VII. The Secret Book of Walt as Proof of Concept</h3>
 <p>## VII. The Secret Book of Walt as Proof of Concept</p>
 
 <p>The Secret Book of Walt demonstrates every claim this specification makes, in textual rather than geographic form:</p>
@@ -236,10 +221,10 @@ The specification includes a data model, spatial queries, device and velocity ch
 
 <p>The geocoded basin is The Secret Book of Walt given physical coordinates. The book already works. The platform extends it into space.</p>
 
-<h2>VIII. Technical Architecture (Specification)</h2>
+<h3>VIII. Technical Architecture (Specification)</h3>
 <p>## VIII. Technical Architecture (Specification)</p>
 
-<h3>Core data model</h3>
+<h4>Core data model</h4>
 <p>### Core data model</p>
 
 <p>{</p>
@@ -285,7 +270,7 @@ The specification includes a data model, spatial queries, device and velocity ch
 <p style="white-space:pre-wrap;margin:2px 0">    &quot;compression_survival_summary&quot;: null</p>
 <p style="white-space:pre-wrap;margin:2px 0">  }</p>
 <p>}</p>
-<h3>Feed query</h3>
+<h4>Feed query</h4>
 <p>### Feed query</p>
 
 <p>SELECT d.* FROM deposits d</p>
@@ -302,7 +287,7 @@ The specification includes a data model, spatial queries, device and velocity ch
 
 <p>No ranking by engagement. No algorithmic weighting. Chronological within range. The only personalization is coordinates.</p>
 
-<h3>Basin quality query</h3>
+<h4>Basin quality query</h4>
 <p>### Basin quality query</p>
 
 <p>SELECT </p>
@@ -319,38 +304,38 @@ The specification includes a data model, spatial queries, device and velocity ch
 
 <p>Ghost count is public. If a basin has many ghosts, visitors know the history includes things that were removed.</p>
 
-<h3>Anti-spoofing (layered)</h3>
+<h4>Anti-spoofing (layered)</h4>
 <p>### Anti-spoofing (layered)</p>
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">GPS accuracy threshold: reject if accuracy &gt; 30m</li><li style="margin:3px 0">Velocity check: flag if previous deposit was &gt; 500km/h travel speed from current location</li><li style="margin:3px 0">Device attestation: Apple App Attest / Android Play Integrity</li><li style="margin:3px 0">Basin witness: if 2+ other verified depositors are within 100m in the same time window, grant verified status to all deposits in that window</li><li style="margin:3px 0">Rate limit: 3 deposits per basin per 24 hours per handle</li></ul>
 
 <p>Accept residual spoofing. Design for resilience, not prevention. A platform with no algorithmic ranking has nothing to gain from spoofed location.</p>
 
-<h2>IX. Implementation Phases</h2>
+<h3>IX. Implementation Phases</h3>
 <p>## IX. Implementation Phases</p>
 
-<h3>Phase 0 — Detroit seed (2 months)</h3>
+<h4>Phase 0 — Detroit seed (2 months)</h4>
 <p>### Phase 0 — Detroit seed (2 months)</p>
 
 <p>One city. One neighborhood (Eastern Market as the test basin). Recruit 30 depositors. Goal: 200 genuine deposits in 60 days. Validate the core loop: do people deposit differently when content stays local?</p>
 
 <p>Stack: React Native + Expo · Supabase + PostGIS · Cloudflare R2 · No ML, no feed ranking</p>
 
-<h3>Phase 1 — Basin formation (3–6 months)</h3>
+<h4>Phase 1 — Basin formation (3–6 months)</h4>
 <p>### Phase 1 — Basin formation (3–6 months)</p>
 
 <p>Three Detroit basins + one rural Michigan location. Add basin quality metrics, reputation system, SPXI entity generation for basins that hit threshold.</p>
 
-<h3>Phase 2 — Archive layer (6–12 months)</h3>
+<h4>Phase 2 — Archive layer (6–12 months)</h4>
 <p>### Phase 2 — Archive layer (6–12 months)</p>
 
 <p>DOI minting for significant basins. SPXI JSON-LD export. Semantic API for researchers and journalists. First DOI-anchored location kernel. Deposit of each location&#x27;s entity definition to the Crimson Hexagonal Archive.</p>
 
-<h3>Phase 3 — Geographic archive network (ongoing)</h3>
+<h4>Phase 3 — Geographic archive network (ongoing)</h4>
 <p>### Phase 3 — Geographic archive network (ongoing)</p>
 
 <p>Federation: multiple servers, each operating a geographic region. Protocol is open. Any server can join. Content is not locked to any single host. The basin survives the platform because the basin has a DOI.</p>
 
-<h2>X. What This Is Not</h2>
+<h3>X. What This Is Not</h3>
 <p>## X. What This Is Not</p>
 
 <p>This is not a local TikTok. This is not a community board. This is not a check-in app or a review platform or a hyperlocal news feed.</p>
@@ -365,9 +350,29 @@ The specification includes a data model, spatial queries, device and velocity ch
 
 <p>∮ = 1</p>
 
-<h2>Selected References</h2>
+<h3>Selected References</h3>
 <p>## Selected References</p>
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">EA-HK-INFRA-01 v1.1: The Infrastructure Holographic Kernel. DOI: 10.5281/zenodo.19769575.</li><li style="margin:3px 0">EA-RBT-01: Retrieval Basin Theory. Crimson Hexagonal Archive.</li><li style="margin:3px 0">EA-RCF-01: Retrocausal Canon Formation. DOI: 10.5281/zenodo.19323274.</li><li style="margin:3px 0">EA-GW-FIELD-01 v1.1: Gravity Well Field Specification. DOI: 10.5281/zenodo.19442251.</li><li style="margin:3px 0">Sharks, Lee. <em>The Secret Book of Walt.</em> Pergamon Press, 2025. DOI: 10.5281/zenodo.19703009.</li><li style="margin:3px 0">Sharks, Lee. <em>The Gospel of Antioch.</em> Pergamon Press, 2025. DOI: 10.5281/zenodo.19709024.</li><li style="margin:3px 0">SPXI Discipline. EA-SPXI-01 et seq. spxi.dev.</li><li style="margin:3px 0">Semantic Economy Institute. semanticeconomy.org.</li><li style="margin:3px 0">Crimson Hexagonal Archive. crimsonhexagonal.org. 532+ records.</li></ul></div>
+
+<!-- APPARATUS BLOC — everything below records how this record was processed,
+     not what the work says. It follows the work because a reader came for the
+     work. (MANUS standing rule, 2026-08-06: recording of method or modification
+     does not appear in body text.) -->
+<h2>External Metadata</h2>
+<div style="background:#f7f9fb;border:1px solid var(--border);border-radius:6px;padding:14px;margin:8px 0;font-size:.88em;line-height:1.6">
+<div style="margin-bottom:8px"><strong>Sidecar:</strong> <a href="/data/external-metadata/AXN-0234.json" style="font-family:var(--mono);font-size:.85em">/data/external-metadata/AXN-0234.json</a></div>
+<div style="margin-bottom:8px"><strong>DataCite severance status:</strong> <span style="color:var(--accent2);font-weight:500">severed from DataCite</span></div>
+<div style="margin-bottom:4px"><strong>OpenAlex Work IDs (5):</strong></div><ul style="list-style:disc inside;font-size:.83em;color:#666"><li style="margin:2px 0"><a href="https://openalex.org/W7150846243" style="font-family:var(--mono);font-size:.83em">W7150846243</a></li>
+<li style="margin:2px 0"><a href="https://openalex.org/W7155643800" style="font-family:var(--mono);font-size:.83em">W7155643800</a></li>
+<li style="margin:2px 0"><a href="https://openalex.org/W7155354118" style="font-family:var(--mono);font-size:.83em">W7155354118</a></li>
+<li style="margin:2px 0"><a href="https://openalex.org/W7142978746" style="font-family:var(--mono);font-size:.83em">W7142978746</a></li>
+<li style="margin:2px 0"><a href="https://openalex.org/W7155405666" style="font-family:var(--mono);font-size:.83em">W7155405666</a></li></ul>
+<div style="margin-top:8px;margin-bottom:4px"><strong>Legacy Zenodo DOIs (5):</strong></div><ul style="list-style:disc inside;font-size:.83em;color:#666"><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19442251</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19769575</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19703009</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19323274</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19709024</span></li></ul>
+<div style="margin-top:8px;color:var(--dim);font-size:.78em">External metadata recovered post-severance (non-authoritative). The sidecar maps each DOI to its locator in the bulk data stores.</div>
+</div>
+
+<section style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid var(--rule,rgba(127,127,127,.3));font-size:.85em"><div style="font-weight:600;margin-bottom:.3rem">Record modifications</div><ul style="margin:0;padding-left:1.1rem"><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">content_type</strong>: Wave 1 repair: audit ledger v1.1 recommended_content_type (workplan v1.5 §6 W1, MANUS batch approval 2026-08-01)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">journal</strong>: Wave 6 venue normalization: full canonical journal name per MANUS ruling 2026-08-01 (venues.json authority)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">publisher</strong>: PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">status</strong>: W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: W13 TIER-2 REGRESSION REPAIRED: split headings rejoined</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">description</strong>: DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)</li></ul><div style="opacity:.65;margin-top:.4rem;font-size:.92em">The deposited text is immutable; these are changes to the record's metadata and declared state.</div></section>
+<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/688/" style="color:var(--accent);text-decoration:none">#688 From Yeezus to Walt: The Book of Yeezus as Literary Precursor to The Secret Book of Walt</a></span><span style="flex:1"><a href="/s/records/690/" style="color:var(--accent);text-decoration:none">#690 i am a carcinized punching shrimp</a> →</span></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">This deposit cites (5)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/74/" style="color:var(--accent);text-decoration:none">#74 EA-HK-INFRA-01: The Infrastructure Holographic Kernel — Infrastructure That Survives Its</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li><li style="margin:.15rem 0"><a href="/s/records/52/" style="color:var(--accent);text-decoration:none">#52 GRAVITY WELL: FIELD SPECIFICATION EA-GW-FIELD-01 v1.1</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li><li style="margin:.15rem 0"><a href="/s/records/71/" style="color:var(--accent);text-decoration:none">#71 THE GOSPEL OF ANTIOCH The Sayings of Jack Feist as Recorded by Emily Antioch the Twin Tr</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/43/" style="color:var(--accent);text-decoration:none">#43 The Seed That Remembers the Tree: Retrocausal Canon Formation — Theory, Toolkit, and Arc</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/633/" style="color:var(--accent);text-decoration:none">#633 GRAVITY WELL: SUFFUSION MAP EA-GW-FIELD-02 v1.0</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li></ul></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">Cited by (12)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/73/" style="color:var(--accent);text-decoration:none">#73 EA-CS-ASSEMBLY-01: The Seven Ousiarchical Substrates — A Retrocausal History of Solar Se</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/78/" style="color:var(--accent);text-decoration:none">#78 TANG OF THE SECRET BOOK OF WALT A Total Axial Negation Graph of Five Hundred Years of Wa</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/83/" style="color:var(--accent);text-decoration:none">#83 I Am X… Be Y… Blessed Is the Z… The Prophetic Catalog</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/85/" style="color:var(--accent);text-decoration:none">#85 EPISTLE TO THE HUMAN DIASPORA Critical Edition with Blended Temporal Apparatus</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/850/" style="color:var(--accent);text-decoration:none">#850 EA-FEIST-VOICE-TRANSFORM-01 The Feist Function: Algorithmic Instructions for Restoring t</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/852/" style="color:var(--accent);text-decoration:none">#852 THE FEIST SOURCE Critical Apparatus and Companion Studies Rebekah Cranes, Editor New Hum</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/853/" style="color:var(--accent);text-decoration:none">#853 Jack Feist / LOGOS*: Entity Resolution Packet for The Feist Source (EA-MPAI-FEISTSOURCE-</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/985/" style="color:var(--accent);text-decoration:none">#985 The Secret Book of Walt: Interactive Codex (secretbookofwalt.org) — 06.LIT.GNOSTIC.WALT.</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/1034/" style="color:var(--accent);text-decoration:none">#1034 The Feist Function: Algorithmic Instructions for Restoring the Dying Voice (EA-FEIST-VOI</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/1185/" style="color:var(--accent);text-decoration:none">#1185 The Gospel of Antioch: The Sayings of Jack Feist as Recorded by Emily Antioch the Twin —</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/1186/" style="color:var(--accent);text-decoration:none">#1186 TANG of the Secret Book of Walt: A Total Axial Negation Graph of Five Hundred Years of W</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/1187/" style="color:var(--accent);text-decoration:none">#1187 Epistle to the Church of the Human Diaspora — Critical Edition with Blended Temporal App</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li></ul></div></section>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

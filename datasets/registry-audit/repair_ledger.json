@@ -32420,6 +32420,18 @@
    "sites": "scripts/filter_widget.py; s/browse/index.html; s/wiki/index.html; scripts/capability_register.py",
    "verified": "harness execution of the shipped client against the regenerated page: filter returns 22/1435 and preserves display:block",
    "at": "2026-08-07T00:32:11Z"
+  },
+  {
+   "repair_id": "R-1280",
+   "deposit_number": null,
+   "batch": true,
+   "type": "APPARATUS_SEPARATION_AND_RESTORATION",
+   "ruling_by": "MANUS (2026-08-06: 'recording of method or modification should not appear in body text' — new standing rule; restoration authorized)",
+   "basis": "THE IMMUTABILITY RULE WAS VIOLATED BY ACCRETION, not deletion. Restoration notes, body-head-gate language, severed-DOI lines, self-referential AXN headers and retained metadata-capture appendices had been written INTO bodies that then present themselves as faithfully restored text. On #1230 the work is 7,913 characters and the apparatus around it was 4,659 — a reader asking for an open letter received the letter plus 59% again of prose describing how the letter was processed. 52 bodies carried such apparatus; scripts/separate_apparatus.py lifts it into data/restoration-apparatus/HEX.json and flags the record, destroying nothing. The head lift is LINE-SURGICAL after a first cut was found to take a paper's own title and subtitle wholesale (AXN-03C1) — headings and prose stay; only lines recording method or modification are lifted. A body that would drop below 30% is skipped and reported, because that signature means the detector is wrong about which part is the work; zero were skipped. FAITHFUL RE-RESTORATION of #1230: the 2026-07-28 recovery had lost EVERY paragraph break, gluing sentences together ('Dear Jim,I know your name now'). Rather than inferring breaks, the text was re-recovered from the same authorial surface the record itself names — mindcontrolpoems.blogspot.com — restoring 34 paragraph breaks and eliminating all 19 glued-word signatures. That is repair toward fidelity: the bytes now match the source the record already declared. DISPLAY: the record template reordered so the work precedes the apparatus about the work — external metadata, version history, record modifications and traversal now follow the full text as a bloc; in-body headings demoted so one h1 per page (was 90% of records carrying two or three, which presented one document as three to crawlers and screen readers); the retained superseded appendix now fenced at its HEAD with a plain warning that it describes an earlier state, instead of a correction buried at its foot three screens later.",
+   "sites": "scripts/separate_apparatus.py (new); data/restoration-apparatus/ (52 files, new); data/texts/ (52 bodies); data/texts/AXN-04DF-text.md (re-restored); wire_deposit.py; all 1,435 record pages regenerated",
+   "verified": "validate --strict 0 failures; index consistency OK; namespace clean; 60-page rendered sample shows 0 modifications-before-work and 1 multi-h1; corpus-wide 6 of 1435 multi-h1 remain",
+   "outstanding": "PASS 2: 6 record pages still carry an empty stray h1 (#1007, #1234, #692, #693, #72, #75) — embedded markup the demotion regex does not reach. Also the wiki link/inline duplication (defect B) not yet resolved.",
+   "at": "2026-08-07T04:01:21Z"
   }
  ]
 }

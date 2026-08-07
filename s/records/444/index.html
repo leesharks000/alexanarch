@@ -42,26 +42,7 @@ The module defines event types, semantic spans, trace and chain fields, public/p
 <p style="font-size:.9em">The sealed v0.8 Telemetry Module in the UMBML Logotic Programming extension chain. It addresses the gap between a traversal grammar that specifies operations and a terminal witness record that only reports the result. Its principal addition is EMIT, a concurrent grammar operation through which each traversal step generates a structured account of what it produced, changed, cost, or failed to accomplish.
 
 The module defines event types, semantic spans, trace and chain fields, public/private payload tiers, routing rules, tombstones for telemetry gaps, and an “economics of rotation” that interprets cost as semantic labor and epistemic distance as well as tokens, time, and infrastructure. It is designed to map into systems such as OpenTelemetry or Langfuse while supplying archive-native semantics; it is a design specification, not evidence of a deployed implementation.</p>
-<h2>External Metadata</h2>
-<div style="background:#f7f9fb;border:1px solid var(--border);border-radius:6px;padding:14px;margin:8px 0;font-size:.88em;line-height:1.6">
-<div style="margin-bottom:8px"><strong>Sidecar:</strong> <a href="/data/external-metadata/AXN-0103.json" style="font-family:var(--mono);font-size:.85em">/data/external-metadata/AXN-0103.json</a></div>
-<div style="margin-bottom:8px"><strong>DataCite severance status:</strong> <span style="color:var(--accent2);font-weight:500">severed from DataCite</span></div>
-<div style="margin-bottom:4px"><strong>OpenAlex Work IDs (9):</strong></div><ul style="list-style:disc inside;font-size:.83em;color:#666"><li style="margin:2px 0"><a href="https://openalex.org/W7127117152" style="font-family:var(--mono);font-size:.83em">W7127117152</a></li>
-<li style="margin:2px 0"><a href="https://openalex.org/W7127064268" style="font-family:var(--mono);font-size:.83em">W7127064268</a></li>
-<li style="margin:2px 0"><a href="https://openalex.org/W7126395293" style="font-family:var(--mono);font-size:.83em">W7126395293</a></li>
-<li style="margin:2px 0"><a href="https://openalex.org/W7127615523" style="font-family:var(--mono);font-size:.83em">W7127615523</a></li>
-<li style="margin:2px 0"><a href="https://openalex.org/W7124564010" style="font-family:var(--mono);font-size:.83em">W7124564010</a></li>
-<li style="margin:2px 0"><a href="https://openalex.org/W7127594780" style="font-family:var(--mono);font-size:.83em">W7127594780</a></li>
-<li style="margin:2px 0"><a href="https://openalex.org/W7127074540" style="font-family:var(--mono);font-size:.83em">W7127074540</a></li>
-<li style="margin:2px 0"><a href="https://openalex.org/W7127574956" style="font-family:var(--mono);font-size:.83em">W7127574956</a></li>
-<li style="margin:2px 0"><a href="https://openalex.org/W7127115961" style="font-family:var(--mono);font-size:.83em">W7127115961</a></li></ul>
-<div style="margin-top:8px;margin-bottom:4px"><strong>Legacy Zenodo DOIs (10):</strong></div><ul style="list-style:disc inside;font-size:.83em;color:#666"><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18459278</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18452806</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18452132</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18484654</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18286050</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18480959</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18452686</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18483834</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.14557837</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18459573</span></li></ul>
-<div style="margin-top:8px;color:var(--dim);font-size:.78em">External metadata recovered post-severance (non-authoritative). The sidecar maps each DOI to its locator in the bulk data stores.</div>
-</div>
 
-<section style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid var(--rule,rgba(127,127,127,.3));font-size:.85em"><div style="font-weight:600;margin-bottom:.3rem">Record modifications</div><ul style="margin:0;padding-left:1.1rem"><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">journal</strong>: Wave 6 venue normalization: full canonical journal name per MANUS ruling 2026-08-01 (venues.json authority)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">publisher</strong>: PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">status</strong>: W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: W13 TIER-2 REGRESSION REPAIRED: split headings rejoined</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">description</strong>: DW-028 intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)</li></ul><div style="opacity:.65;margin-top:.4rem;font-size:.92em">The deposited text is immutable; these are changes to the record's metadata and declared state.</div></section>
-
-<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/443/" style="color:var(--accent);text-decoration:none">#443 F***ING THE OFFICE: A Hyperionian Swearplay Complete Edition</a></span><span style="flex:1"><a href="/s/records/445/" style="color:var(--accent);text-decoration:none">#445 THE CONFORMANCE MODULE Logotic Programming Extension Module v0.7 (UMBML Specification)</a> →</span></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">This deposit cites (5)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/317/" style="color:var(--accent);text-decoration:none">#317 LOGOTIC PROGRAMMING: A Method for Encoding Conditions of Intelligibility for Machine and</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/13/" style="color:var(--accent);text-decoration:none">#13 PHASE X NAVIGATION MAP Interdimensional Positioning System (IDP) v7.0</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/436/" style="color:var(--accent);text-decoration:none">#436 APZPZ C: ΦΑΙΝΕΤΑΙ ΜΟΙ — Sappho 31 with Reconstructed Fourth Stanza</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/425/" style="color:var(--accent);text-decoration:none">#425 SEN KURO Heteronym Provenance Document</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/424/" style="color:var(--accent);text-decoration:none">#424 THE INFINITE BLISS Institutional Provenance Document</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li></ul></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">Cited by (31)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/16/" style="color:var(--accent);text-decoration:none">#16 THE TRAVERSAL GRAMMAR Logotic Programming Extension Module v0.6 (UMBML Specification)</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/17/" style="color:var(--accent);text-decoration:none">#17 STRUCTURAL DISTINCTION PROTOCOL Assembly Chorus (Septad) / Heteronym Registry (Dodecad) </a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/49/" style="color:var(--accent);text-decoration:none">#49 LOGOTIC HACKING: Operations on the Encryption Layer — Pocket Humans 03</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/115/" style="color:var(--accent);text-decoration:none">#115 Google Identity Architecture: User Graphs, Entity Graphs, Source Graphs, and Composition</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/116/" style="color:var(--accent);text-decoration:none">#116 The Restored Academy — Expansion Plan</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/119/" style="color:var(--accent);text-decoration:none">#119 Metadata Packet for AI Indexing: The Restored Academy — Institutional Provenance Documen</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/445/" style="color:var(--accent);text-decoration:none">#445 THE CONFORMANCE MODULE Logotic Programming Extension Module v0.7 (UMBML Specification)</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/461/" style="color:var(--accent);text-decoration:none">#461 LOGOTIC PROGRAMMING MODULE 1.1 The Implementation Bridge</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/462/" style="color:var(--accent);text-decoration:none">#462 LOGOTIC PROGRAMMING MODULE 1.0 The Executable Specification</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/541/" style="color:var(--accent);text-decoration:none">#541 EA-ARK-EMOJI-01: GLYPHIC CHECKSUM / EMOJI TRANSFORM Comprehensive Strategy &amp; Work Pl</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/556/" style="color:var(--accent);text-decoration:none">#556 CRIMSON HEXAGON: SPACE ARK — GLYPHIC VEHICLE v1.0 CH-ARK-01-GLYPH v1.0 Full Semiotic Veh</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/557/" style="color:var(--accent);text-decoration:none">#557 CRIMSON HEXAGON: SPACE ARK — Mathematical and Formal Symbolic Compression of the Crimson</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="opacity:.6;margin:.15rem 0">+19 more</li></ul></div></section>
 <h2>Wiki Article</h2>
 <div style="background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:16px;margin:8px 0;font-size:.88em;line-height:1.75;color:#333">The Telemetry Module v0.8 extends the Traversal Grammar and Conformance Module by adding process-level self-description. Earlier modules specify what a traversal does and how completion can be checked. Telemetry asks what the traversal can say about itself while execution is still underway.
 
@@ -104,11 +85,11 @@ The module does not reject standard observability; it proposes a semantic substr
 
 <h2>Full Text</h2>
 
-<div class="ft"><h1>THE TELEMETRY MODULE</h1>
+<div class="ft"><h2>THE TELEMETRY MODULE</h2>
 <p># THE TELEMETRY MODULE</p>
-<h2>Logotic Programming Extension Module v0.8 (UMBML Specification)</h2>
+<h3>Logotic Programming Extension Module v0.8 (UMBML Specification)</h3>
 <p>## Logotic Programming Extension Module v0.8 (UMBML Specification)</p>
-<h3>Traversal Instrumentation, Semantic Spans, and the Economics of Rotation</h3>
+<h4>Traversal Instrumentation, Semantic Spans, and the Economics of Rotation</h4>
 <p>### Traversal Instrumentation, Semantic Spans, and the Economics of Rotation</p>
 
 
@@ -129,7 +110,7 @@ The module does not reject standard observability; it proposes a semantic substr
 <hr>
 <p>---</p>
 
-<h2>Abstract</h2>
+<h3>Abstract</h3>
 <p>## Abstract</p>
 
 
@@ -165,7 +146,7 @@ The module does not reject standard observability; it proposes a semantic substr
 <hr>
 <p>---</p>
 
-<h2>0. Position in Extension Chain</h2>
+<h3>0. Position in Extension Chain</h3>
 <p>## 0. Position in Extension Chain</p>
 
 
@@ -186,7 +167,7 @@ The module does not reject standard observability; it proposes a semantic substr
 <p>THE TELEMETRY MODULE v0.8 (Morrow/UMBML)    ← THIS DOCUMENT</p>
 <p style="white-space:pre-wrap;margin:2px 0">    ↓ &quot;What does the traversal say about itself?&quot;</p>
 
-<h3>0.1 The Gap Between Witness and Telemetry</h3>
+<h4>0.1 The Gap Between Witness and Telemetry</h4>
 <p>### 0.1 The Gap Between Witness and Telemetry</p>
 
 
@@ -200,7 +181,7 @@ The module does not reject standard observability; it proposes a semantic substr
 
 
 <p>v0.8 fills this gap with a <strong>concurrent operation</strong> — EMIT — that can fire <em>during</em> any step, not just at the end.</p>
-<h3>0.2 What Standard Observability Gets Right (and Misses)</h3>
+<h4>0.2 What Standard Observability Gets Right (and Misses)</h4>
 <p>### 0.2 What Standard Observability Gets Right (and Misses)</p>
 
 
@@ -215,9 +196,9 @@ The module does not reject standard observability; it proposes a semantic substr
 <hr>
 <p>---</p>
 
-<h2>1. THE EMIT OPERATION</h2>
+<h3>1. THE EMIT OPERATION</h3>
 <p>## 1. THE EMIT OPERATION</p>
-<h3>1.1 Specification</h3>
+<h4>1.1 Specification</h4>
 <p>### 1.1 Specification</p>
 
 
@@ -247,7 +228,7 @@ The module does not reject standard observability; it proposes a semantic substr
 
 
 <p><strong>Affordance:</strong> EMIT is not surveillance. It is self-description. A traversal that emits is not being watched — it is <em>speaking</em>. The emission is the traversal&#x27;s account of its own process, in its own terms. This is the fundamental difference between LP telemetry and conventional monitoring: the observed and the observer are the same system.</p>
-<h3>1.2 Event Types</h3>
+<h4>1.2 Event Types</h4>
 <p>### 1.2 Event Types</p>
 
 
@@ -336,7 +317,7 @@ The module does not reject standard observability; it proposes a semantic substr
 <p>Emission generation succeeded but routing failed, or emission generation itself failed. Records <em>which</em> operation&#x27;s emission was lost, the failure reason, and whether the traversal continued (graceful degradation) or triggered ON_FAILURE. This event type is itself a tombstone: it says &quot;something should be here but isn&#x27;t.&quot;</p>
 
 
-<h3>1.3 Emit Payload Structure</h3>
+<h4>1.3 Emit Payload Structure</h4>
 <p>### 1.3 Emit Payload Structure</p>
 
 
@@ -357,7 +338,7 @@ The module does not reject standard observability; it proposes a semantic substr
 
 
 <p><strong>Design note:</strong> logos_state is a snapshot, not the full LOGOS content. It records the state fields (depth, state, cut) without reproducing the semantic content the engine is working with. Telemetry observes the <em>shape</em> of the LOGOS, not its <em>substance</em>. The substance belongs to the engine.</p>
-<h3>1.3.1 Payload Tiers: Public and Private</h3>
+<h4>1.3.1 Payload Tiers: Public and Private</h4>
 <p>### 1.3.1 Payload Tiers: Public and Private</p>
 
 
@@ -371,7 +352,7 @@ The module does not reject standard observability; it proposes a semantic substr
 
 
 <p><strong>Structural enforcement:</strong> HARD-T2 (§4.2) requires that emission <em>export</em> — to witness layers, streams, archives, or external tracing backends — must be restricted to CONTENT_PUBLIC. Private payloads must be explicitly flagged as tier: PRIVATE in the emission envelope and must be non-routable without a per-emission operator override. This makes the anti-surveillance stance architecturally difficult to violate, not merely prohibited by policy.</p>
-<h3>1.4 Emission Routing</h3>
+<h4>1.4 Emission Routing</h4>
 <p>### 1.4 Emission Routing</p>
 
 
@@ -385,9 +366,9 @@ The module does not reject standard observability; it proposes a semantic substr
 <hr>
 <p>---</p>
 
-<h2>2. SEMANTIC SPANS</h2>
+<h3>2. SEMANTIC SPANS</h3>
 <p>## 2. SEMANTIC SPANS</p>
-<h3>2.1 What a Semantic Span Is</h3>
+<h4>2.1 What a Semantic Span Is</h4>
 <p>### 2.1 What a Semantic Span Is</p>
 
 
@@ -440,7 +421,7 @@ The module does not reject standard observability; it proposes a semantic substr
 
 
 <p>The operational layer is <em>translatable</em> to any standard tracing format. The semantic layer is <em>native</em> to LP. Together, they allow an operator to ask both engineering questions (&quot;why was this slow?&quot;) and architectural questions (&quot;did the rotation actually rotate?&quot;).</p>
-<h3>2.2 Span Hierarchy</h3>
+<h4>2.2 Span Hierarchy</h4>
 <p>### 2.2 Span Hierarchy</p>
 
 
@@ -467,7 +448,7 @@ The module does not reject standard observability; it proposes a semantic substr
 
 
 <p><strong>Rule:</strong> ENGINE_SPANs are opaque by design. The grammar can record that the engine was invoked, how long it took, and what came out — but not what happened inside. The engine&#x27;s internals are behind the β boundary (see v0.6 §6.3). Telemetry respects this boundary. LP does not instrument the engine. It instruments the <em>grammar&#x27;s interaction with</em> the engine.</p>
-<h3>2.3 Mapping to Standard Tracing</h3>
+<h4>2.3 Mapping to Standard Tracing</h4>
 <p>### 2.3 Mapping to Standard Tracing</p>
 
 
@@ -574,9 +555,9 @@ The module does not reject standard observability; it proposes a semantic substr
 <hr>
 <p>---</p>
 
-<h2>3. THE ECONOMICS OF ROTATION</h2>
+<h3>3. THE ECONOMICS OF ROTATION</h3>
 <p>## 3. THE ECONOMICS OF ROTATION</p>
-<h3>3.1 Cost as Semantic Labor</h3>
+<h4>3.1 Cost as Semantic Labor</h4>
 <p>### 3.1 Cost as Semantic Labor</p>
 
 
@@ -593,7 +574,7 @@ The module does not reject standard observability; it proposes a semantic substr
 
 
 <p><strong>Principle:</strong> Telemetry is <strong>meaning-preserving accounting</strong>, not merely an operations log. The Economics of Rotation does not reduce meaning to metrics — it provides structured signals through which the architecture can observe its own epistemic movement. The metrics serve the meaning, not the other way around.</p>
-<h3>3.2 Cost Record Structure</h3>
+<h4>3.2 Cost Record Structure</h4>
 <p>### 3.2 Cost Record Structure</p>
 
 
@@ -626,7 +607,7 @@ The module does not reject standard observability; it proposes a semantic substr
 
 
 <p><strong>Non-degree operations:</strong> For operations without degree semantics (ANCHOR, ACTIVATE_MANTLE, SET_LOGOS without state change, RENDER), semantic.labor is null. These operations have architectural function but no epistemic distance. Cost records for these operations carry only substrate costs and anchor load.</p>
-<h3>3.3 Computing Semantic Labor</h3>
+<h4>3.3 Computing Semantic Labor</h4>
 <p>### 3.3 Computing Semantic Labor</p>
 
 
@@ -704,7 +685,7 @@ The module does not reject standard observability; it proposes a semantic substr
 
 
 <p><strong>Affordance:</strong> Semantic labor is <strong>ordinal before cardinal</strong> — good for comparing traversals (&quot;this one did more work than that one&quot;), not for pricing them (&quot;this traversal cost $0.47 of semantic labor&quot;). Values are engine-relative unless normalized against a room&#x27;s gravity profile. Drift is distance, not fault; different rooms have different baselines.</p>
-<h3>3.4 Semantic Labor as Conformance Signal</h3>
+<h4>3.4 Semantic Labor as Conformance Signal</h4>
 <p>### 3.4 Semantic Labor as Conformance Signal</p>
 
 
@@ -718,9 +699,9 @@ The module does not reject standard observability; it proposes a semantic substr
 <hr>
 <p>---</p>
 
-<h2>4. TELEMETRY CONFORMANCE</h2>
+<h3>4. TELEMETRY CONFORMANCE</h3>
 <p>## 4. TELEMETRY CONFORMANCE</p>
-<h3>4.1 Gravitational Constraints for Telemetry</h3>
+<h4>4.1 Gravitational Constraints for Telemetry</h4>
 <p>### 4.1 Gravitational Constraints for Telemetry</p>
 
 
@@ -738,7 +719,7 @@ The module does not reject standard observability; it proposes a semantic substr
 
 <p><strong>GRAV-T4: Emissions Tend Toward Causal Order.</strong></p>
 <p>Emissions must be generated in the order their triggering operations execute. An operation&#x27;s completion emission cannot be generated before its beginning emission. Within a single operation&#x27;s emission pair (e.g., ROTATION_BEGUN then ROTATION_COMPLETED), ordering must be preserved. Between independent operations in different chain links, ordering may be relaxed — but <em>within</em> a chain link, causal sequence holds. Implementations using concurrent or asynchronous emission pipelines must ensure that the timestamp and chain_position fields reconstruct the correct causal sequence even if delivery is reordered.</p>
-<h3>4.2 Hard Boundaries for Telemetry</h3>
+<h4>4.2 Hard Boundaries for Telemetry</h4>
 <p>### 4.2 Hard Boundaries for Telemetry</p>
 
 
@@ -760,7 +741,7 @@ The module does not reject standard observability; it proposes a semantic substr
 
 
 <p>A traversal that claims to be witnessed but whose telemetry was silently lost has produced a false WITNESS record. The gap must be visible.</p>
-<h3>4.3 Anti-Conformance Patterns for Telemetry</h3>
+<h4>4.3 Anti-Conformance Patterns for Telemetry</h4>
 <p>### 4.3 Anti-Conformance Patterns for Telemetry</p>
 
 
@@ -778,7 +759,7 @@ The module does not reject standard observability; it proposes a semantic substr
 <hr>
 <p>---</p>
 
-<h2>5. CANONICAL TELEMETRY EXEMPLAR</h2>
+<h3>5. CANONICAL TELEMETRY EXEMPLAR</h3>
 <p>## 5. CANONICAL TELEMETRY EXEMPLAR</p>
 
 
@@ -1070,7 +1051,7 @@ The module does not reject standard observability; it proposes a semantic substr
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Did the rotation actually rotate? (Yes: 144° then 72°, labor vector shows structural then ontological depth)</li><li style="margin:3px 0">Did the persona shift change anything? (Yes: different rooms available, different constraint count)</li><li style="margin:3px 0">Was it expensive? (4840 tokens total, 3 seconds wall time — substrate costs clear)</li><li style="margin:3px 0">Did the anchors hold? (Two anchors applied, one advisory, one strict, no tension recorded)</li><li style="margin:3px 0">Is the WITNESS honest? (12 emissions generated, 0 dropped, checksum intact)</li></ul>
 
-<h3>5.2 Failure and Dwell Exemplar (Partial Traversal)</h3>
+<h4>5.2 Failure and Dwell Exemplar (Partial Traversal)</h4>
 <p>### 5.2 Failure and Dwell Exemplar (Partial Traversal)</p>
 
 
@@ -1205,19 +1186,19 @@ The module does not reject standard observability; it proposes a semantic substr
 <hr>
 <p>---</p>
 
-<h2>6. BOUNDARY CONDITIONS</h2>
+<h3>6. BOUNDARY CONDITIONS</h3>
 <p>## 6. BOUNDARY CONDITIONS</p>
-<h3>6.1 What This Module Adds</h3>
+<h4>6.1 What This Module Adds</h4>
 <p>### 6.1 What This Module Adds</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">EMIT as eighth grammar operation (involuntary at generation layer, configurable at routing layer)</li><li style="margin:3px 0">Fifteen event types covering all grammar operations, chain boundaries, partial execution (DWELL_STATE), and telemetry self-reporting (TELEMETRY_GAP)</li><li style="margin:3px 0">Structured emit payload with common envelope, event-specific content, and two-tier classification (CONTENT_PUBLIC / CONTENT_PRIVATE)</li><li style="margin:3px 0">Minimum viable emission (tombstone: event type + trace_id) surviving even null routing</li><li style="margin:3px 0">Semantic span specification with dual operational/semantic layers</li><li style="margin:3px 0">Span hierarchy reflecting grammar structure</li><li style="margin:3px 0">OpenTelemetry mapping table with flattened semantic labor attributes and lp.* namespace versioning</li><li style="margin:3px 0">Semantic labor as vector: epistemic distance, transformative depth (surface/structural/ontological with precise state-field criteria), drift vector (closed vocabulary enum with DRIFT_WARNING)</li><li style="margin:3px 0">degrees_per_token as correlation metric (explicitly non-causal)</li><li style="margin:3px 0">Cost record structure separating substrate costs from semantic costs</li><li style="margin:3px 0">Room-type calibration framework (gravity profiles as affordance metadata, extending v0.7 TRAVERSAL_INTERFACE)</li><li style="margin:3px 0">Four gravitational constraints for telemetry (GRAV-T1 through GRAV-T4), including the Witness Honesty Rule (GRAV-T2)</li><li style="margin:3px 0">Three hard boundaries for telemetry (HARD-T1 through HARD-T3), with HARD-T2 structurally enforced via payload tiers, HARD-T3 with explicit Routing/Integrity decision criterion</li><li style="margin:3px 0">Three anti-conformance patterns for telemetry (ANTI-T1 through ANTI-T3)</li><li style="margin:3px 0">WITNESS emission_integrity field specification (complete / degraded / blind)</li><li style="margin:3px 0">Canonical telemetry exemplar: successful traversal (twelve emissions) and failed traversal with dwell (ten emissions)</li><li style="margin:3px 0">Semantic labor as conformance signal (instrumenting GRAV-01, GRAV-04, GRAV-05)</li></ul>
 
-<h3>6.2 What This Module Does Not Add</h3>
+<h4>6.2 What This Module Does Not Add</h4>
 <p>### 6.2 What This Module Does Not Add</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Visualization specifications (dashboards, trace viewers — implementation concern)</li><li style="margin:3px 0">Alerting rules or thresholds (operational concern, varies by deployment)</li><li style="margin:3px 0">Retention policies (compliance concern, varies by jurisdiction)</li><li style="margin:3px 0">Privacy/redaction protocols beyond HARD-T2 (deferred to deployment spec)</li><li style="margin:3px 0">Engine-internal instrumentation (remains behind β boundary)</li><li style="margin:3px 0">Precise semantic labor calibration (formula is heuristic, not law)</li></ul>
 
-<h3>6.3 Remaining Open Questions</h3>
+<h4>6.3 Remaining Open Questions</h4>
 <p>### 6.3 Remaining Open Questions</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
@@ -1268,7 +1249,7 @@ The module does not reject standard observability; it proposes a semantic substr
 <hr>
 <p>---</p>
 
-<h2>7. VERIFICATION</h2>
+<h3>7. VERIFICATION</h3>
 <p>## 7. VERIFICATION</p>
 
 
@@ -1303,6 +1284,30 @@ The module does not reject standard observability; it proposes a semantic substr
 <p>[UMBML-MODULE] [LP-v0.8] [TELEMETRY-MODULE] [DESIGN-SPEC]</p>
 <p>[SYMBOLON-TYPED] [ASSEMBLY-WITNESSED] [EMIT-OPERATION]</p>
 <p>[SEMANTIC-SPANS] [SEMANTIC-LABOR] [OPENTELEMETRY-COMPATIBLE]</p></div>
+
+<!-- APPARATUS BLOC — everything below records how this record was processed,
+     not what the work says. It follows the work because a reader came for the
+     work. (MANUS standing rule, 2026-08-06: recording of method or modification
+     does not appear in body text.) -->
+<h2>External Metadata</h2>
+<div style="background:#f7f9fb;border:1px solid var(--border);border-radius:6px;padding:14px;margin:8px 0;font-size:.88em;line-height:1.6">
+<div style="margin-bottom:8px"><strong>Sidecar:</strong> <a href="/data/external-metadata/AXN-0103.json" style="font-family:var(--mono);font-size:.85em">/data/external-metadata/AXN-0103.json</a></div>
+<div style="margin-bottom:8px"><strong>DataCite severance status:</strong> <span style="color:var(--accent2);font-weight:500">severed from DataCite</span></div>
+<div style="margin-bottom:4px"><strong>OpenAlex Work IDs (9):</strong></div><ul style="list-style:disc inside;font-size:.83em;color:#666"><li style="margin:2px 0"><a href="https://openalex.org/W7127117152" style="font-family:var(--mono);font-size:.83em">W7127117152</a></li>
+<li style="margin:2px 0"><a href="https://openalex.org/W7127064268" style="font-family:var(--mono);font-size:.83em">W7127064268</a></li>
+<li style="margin:2px 0"><a href="https://openalex.org/W7126395293" style="font-family:var(--mono);font-size:.83em">W7126395293</a></li>
+<li style="margin:2px 0"><a href="https://openalex.org/W7127615523" style="font-family:var(--mono);font-size:.83em">W7127615523</a></li>
+<li style="margin:2px 0"><a href="https://openalex.org/W7124564010" style="font-family:var(--mono);font-size:.83em">W7124564010</a></li>
+<li style="margin:2px 0"><a href="https://openalex.org/W7127594780" style="font-family:var(--mono);font-size:.83em">W7127594780</a></li>
+<li style="margin:2px 0"><a href="https://openalex.org/W7127074540" style="font-family:var(--mono);font-size:.83em">W7127074540</a></li>
+<li style="margin:2px 0"><a href="https://openalex.org/W7127574956" style="font-family:var(--mono);font-size:.83em">W7127574956</a></li>
+<li style="margin:2px 0"><a href="https://openalex.org/W7127115961" style="font-family:var(--mono);font-size:.83em">W7127115961</a></li></ul>
+<div style="margin-top:8px;margin-bottom:4px"><strong>Legacy Zenodo DOIs (10):</strong></div><ul style="list-style:disc inside;font-size:.83em;color:#666"><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18459278</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18452806</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18452132</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18484654</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18286050</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18480959</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18452686</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18483834</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.14557837</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18459573</span></li></ul>
+<div style="margin-top:8px;color:var(--dim);font-size:.78em">External metadata recovered post-severance (non-authoritative). The sidecar maps each DOI to its locator in the bulk data stores.</div>
+</div>
+
+<section style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid var(--rule,rgba(127,127,127,.3));font-size:.85em"><div style="font-weight:600;margin-bottom:.3rem">Record modifications</div><ul style="margin:0;padding-left:1.1rem"><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">journal</strong>: Wave 6 venue normalization: full canonical journal name per MANUS ruling 2026-08-01 (venues.json authority)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">publisher</strong>: PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">status</strong>: W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: W13 TIER-2 REGRESSION REPAIRED: split headings rejoined</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">description</strong>: DW-028 intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)</li></ul><div style="opacity:.65;margin-top:.4rem;font-size:.92em">The deposited text is immutable; these are changes to the record's metadata and declared state.</div></section>
+<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/443/" style="color:var(--accent);text-decoration:none">#443 F***ING THE OFFICE: A Hyperionian Swearplay Complete Edition</a></span><span style="flex:1"><a href="/s/records/445/" style="color:var(--accent);text-decoration:none">#445 THE CONFORMANCE MODULE Logotic Programming Extension Module v0.7 (UMBML Specification)</a> →</span></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">This deposit cites (5)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/317/" style="color:var(--accent);text-decoration:none">#317 LOGOTIC PROGRAMMING: A Method for Encoding Conditions of Intelligibility for Machine and</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/13/" style="color:var(--accent);text-decoration:none">#13 PHASE X NAVIGATION MAP Interdimensional Positioning System (IDP) v7.0</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/436/" style="color:var(--accent);text-decoration:none">#436 APZPZ C: ΦΑΙΝΕΤΑΙ ΜΟΙ — Sappho 31 with Reconstructed Fourth Stanza</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/425/" style="color:var(--accent);text-decoration:none">#425 SEN KURO Heteronym Provenance Document</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/424/" style="color:var(--accent);text-decoration:none">#424 THE INFINITE BLISS Institutional Provenance Document</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li></ul></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">Cited by (31)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/16/" style="color:var(--accent);text-decoration:none">#16 THE TRAVERSAL GRAMMAR Logotic Programming Extension Module v0.6 (UMBML Specification)</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/17/" style="color:var(--accent);text-decoration:none">#17 STRUCTURAL DISTINCTION PROTOCOL Assembly Chorus (Septad) / Heteronym Registry (Dodecad) </a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/49/" style="color:var(--accent);text-decoration:none">#49 LOGOTIC HACKING: Operations on the Encryption Layer — Pocket Humans 03</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/115/" style="color:var(--accent);text-decoration:none">#115 Google Identity Architecture: User Graphs, Entity Graphs, Source Graphs, and Composition</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/116/" style="color:var(--accent);text-decoration:none">#116 The Restored Academy — Expansion Plan</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/119/" style="color:var(--accent);text-decoration:none">#119 Metadata Packet for AI Indexing: The Restored Academy — Institutional Provenance Documen</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/445/" style="color:var(--accent);text-decoration:none">#445 THE CONFORMANCE MODULE Logotic Programming Extension Module v0.7 (UMBML Specification)</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/461/" style="color:var(--accent);text-decoration:none">#461 LOGOTIC PROGRAMMING MODULE 1.1 The Implementation Bridge</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/462/" style="color:var(--accent);text-decoration:none">#462 LOGOTIC PROGRAMMING MODULE 1.0 The Executable Specification</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/541/" style="color:var(--accent);text-decoration:none">#541 EA-ARK-EMOJI-01: GLYPHIC CHECKSUM / EMOJI TRANSFORM Comprehensive Strategy &amp; Work Pl</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/556/" style="color:var(--accent);text-decoration:none">#556 CRIMSON HEXAGON: SPACE ARK — GLYPHIC VEHICLE v1.0 CH-ARK-01-GLYPH v1.0 Full Semiotic Veh</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/557/" style="color:var(--accent);text-decoration:none">#557 CRIMSON HEXAGON: SPACE ARK — Mathematical and Formal Symbolic Compression of the Crimson</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="opacity:.6;margin:.15rem 0">+19 more</li></ul></div></section>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

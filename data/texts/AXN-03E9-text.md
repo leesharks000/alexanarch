@@ -1,11 +1,7 @@
 # Screenrooms and Silver Bullets — Poems by Rhys Owens (11.NH2.RHYS.01)
 
-**AXN:** AXN:03E9 — Alexanarch deposit #989 (self-reference in root form by pre-hash necessity)
-**Restoration status:** RESTORED (v0.2) — full text recovered and seated as the canonical body. Recovered from semantic-economy repository: 06.NH.LUNAR.01_Screenrooms_and_Silver_Bullets.md, 2026-07-04, matched by exact title and version; the v0.1 metadata-body deposit is superseded by this recorded correction. Zenodo record remains HTTP 410; DataCite metadata retained as appendix.
 **Dead DOI:** 10.5281/zenodo.19889972
 **Creators (as recorded by DataCite):** Owens, Rhys
-
----
 
 <!-- 06.NH.LUNAR.01 | Fourteen poems operating between analog horror and affect literacy — the screenroom as a construct for layering memory, media, and embodiment into a single perceptual chamber where the body authenticates what the mind cannot verify. -->
 

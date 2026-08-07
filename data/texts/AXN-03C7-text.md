@@ -1,14 +1,10 @@
 # EA-MANDALA-07 v1.0: मण्डलम्: पुनरावर्तक-मायायाः तन्त्रम् (Sanskrit-English Facing Edition)
 
-**AXN:** AXN:03C7 — Alexanarch deposit #955 (self-reference in root form by pre-hash necessity)
-**Restoration status:** SEMI-RESTORED — metadata-body deposit. This machine-facing static page is the canonical deposit. Its body is the complete DataCite metadata record for a work whose Zenodo record returns HTTP 410 (Gone) while DataCite serves the identifier as findable — the metadata layer and content layer in formal disagreement about the work's existence. Full text pending restoration from authorial originals; on restoration, this deposit upgrades by recorded correction (new hash, new glyph, remediation note).
 **Dead DOI:** 10.5281/zenodo.19296663 (Zenodo record tombstoned; account termination 2026-06-19)
 **DataCite state at capture (2026-07-03):** findable · client cern.zenodo
 **Creators (as recorded by DataCite):** Sharks, Lee; Sigil, Johannes
 **Publication year (as recorded):** 2026
 **Provenance:** severance record at data/doi-resolution-index.json (severance_class: orphan → restored-semi); capture evidence at data/datacite-recapture-2026-07-03.json and the sift corpus of 2026-06.
-
----
 
 ## Description (as recorded by DataCite)
 

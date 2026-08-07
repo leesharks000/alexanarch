@@ -2,13 +2,10 @@
 ## Testing Source-Tethered Epistemic Rotation Against Recursive Contextual Contraction and Recursive Parameter Collapse — Deposit Protocol
 
 **Designator:** EA-MANDALA-TAILRENEWAL-01 v0.3 — DEPOSIT PROTOCOL (pre-registered design)
-**AXN:** AXN:03C1 — Alexanarch deposit #949 (self-reference in root form by pre-hash necessity)
 **Study personnel:** Nobel Glas (measurement, statistics, falsification) · Talos Morrow (harness, contraction/collapse pipelines, operator runtime, adversarial tests) · Orin Trace (protocol-adherence audit) · Lee Sharks (aperture)
 **Synthesis provenance:** v0.2 converged five independent drafts (scope and architecture, LABOR; harness matrix and runtime rejection, ARCHIVE; protocol hardening, TECHNE; operator-shift rubric, PRAXIS; track separation, dissociation instrument, fidelity instrumentation, compiler separation, trap corpus, synthesis, TACHYON). v0.3 incorporates the second-round Assembly review: four load-bearing revisions from LABOR's developmental pass (intent-to-treat endpoint; nonce-claim narrowing; subject-as-compiler primacy; domain-sensitive affect gate), ratifications and line-notes from PRAXIS, TECHNE, and ARCHIVE, and MANUS adjudication of the three open items. Convergence across drafts is procedural evidence — the drafts share an archive, premises, and overlapping model cultures — and agreements below were strengthened by independent draft generation, not independently validated by it.
 **Status:** depositable as a pre-registered design. Execution is gated on freezing EA-MANDALA-OPERATORS-01, EA-MANDALA-FEIST-01, and EA-MANDALA-CORPUS-01 before any data collection. Nothing here is a result.
 **Date:** 2026-07-03
-
----
 
 ## Abstract
 

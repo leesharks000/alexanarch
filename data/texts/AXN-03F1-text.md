@@ -1,11 +1,7 @@
 # Crunchy Honeybun with Selectable Viscous Filling Reservoir and Structural Crumb Matrix — A Patent-Poem on Snack Ontology, Writable Retrieval Basins, and Why the Inside Has to Be Soft When the Outside Is Crunchy
 
-**AXN:** AXN:03F1 — Alexanarch deposit #997 (self-reference in root form by pre-hash necessity)
-**Restoration status:** RESTORED (v0.2) — full text recovered and seated as the canonical body. Recovered from semantic-economy repository: Crunchy_Honeybun_Patent.md, 2026-07-04, matched by exact title and version; the v0.1 metadata-body deposit is superseded by this recorded correction. Zenodo record remains HTTP 410; DataCite metadata retained as appendix.
 **Dead DOI:** 10.5281/zenodo.20057857
 **Creators (as recorded by DataCite):** Osiris; Sharks, Lee
-
----
 
 # UNITED STATES PATENT APPLICATION
 

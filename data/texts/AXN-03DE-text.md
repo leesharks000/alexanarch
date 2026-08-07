@@ -1,11 +1,7 @@
 # Counterfeit Orthodoxies: The Workshop Inside the Canon (06.SEI.CRIT.FRACTURE.02)
 
-**AXN:** AXN:03DE — Alexanarch deposit #978 (self-reference in root form by pre-hash necessity)
-**Restoration status:** RESTORED (v0.2) — full text recovered and seated as the canonical body. Recovered from semantic-economy repository: Counterfeit_Orthodoxies_The_Workshop_Inside_the_Canon.md, 2026-07-04, matched by exact title and version; the initial v0.1 metadata-body deposit is superseded by this correction, recorded in the remediation note. Zenodo record remains HTTP 410; DataCite metadata retained as appendix.
 **Dead DOI:** 10.5281/zenodo.19642641
 **Creators (as recorded by DataCite):** Sigil, Johannes; Sharks, Lee
-
----
 
 # Counterfeit Orthodoxies
 

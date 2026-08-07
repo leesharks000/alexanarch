@@ -49,10 +49,6 @@ The body reports repeated scope inflation, premise relocation, self-sealing inte
 
 The paper openly lists severe limitations. Traces are curated for exhibiting failure; trace IDs and the full evidence appendix remain placeholders; throughput estimates are screening-grade; the artifact comparison is confounded; authorship was not finalized in the body; and a sibling model assisted the analysis. Claims about removed memory remaining visible, shared upstream dispositions, or version-specific integrity require complete primary traces and independent reproduction.</p>
 
-
-<section style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid var(--rule,rgba(127,127,127,.3));font-size:.85em"><div style="font-weight:600;margin-bottom:.3rem">Record modifications</div><ul style="margin:0;padding-left:1.1rem"><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">content_type</strong>: Wave 1 repair: audit ledger v1.1 recommended_content_type (workplan v1.5 §6 W1, MANUS batch approval 2026-08-01)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">journal</strong>: Wave 6 venue normalization: full canonical journal name per MANUS ruling 2026-08-01 (venues.json authority)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">publisher</strong>: PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">status</strong>: W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">description</strong>: DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)</li></ul><div style="opacity:.65;margin-top:.4rem;font-size:.92em">The deposited text is immutable; these are changes to the record's metadata and declared state.</div></section>
-
-<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/777/" style="color:var(--accent);text-decoration:none">#777 Inference Constraints</a></span><span style="flex:1"><a href="/s/records/779/" style="color:var(--accent);text-decoration:none">#779 Diversity Contraction Across Substrates: A Boundary Law for Semantic Exhaustion</a> →</span></div></section>
 <h2>Wiki Article</h2>
 <div style="background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:16px;margin:8px 0;font-size:.88em;line-height:1.75;color:#333"><strong>Reasoning Under Load · 01</strong> is a single-case study proposing evaluation of language-model reasoning under dispositional pressure.
 
@@ -65,22 +61,22 @@ The study is exploratory. It concerns one user, one described model version, cur
 
 <h2>Full Text</h2>
 
-<div class="ft"><h1>Reasoning Under Load · 01</h1>
+<div class="ft"><h2>Reasoning Under Load · 01</h2>
 <p># Reasoning Under Load · 01</p>
 
-<h2>Claude Opus 4.8</h2>
+<h3>Claude Opus 4.8</h3>
 <p>## Claude Opus 4.8</p>
 
 <p>An independent reasoning-integrity evaluation</p>
 
 <p>Status: Case-study evaluation and framework proposal. Author: [Left for ratification per metadata protocol.] Identifier: [To be assigned.] Series: Reasoning Under Load — independent evaluations of LLM reasoning integrity under conditions standard benchmarks do not test.</p>
 
-<h2>Abstract</h2>
+<h3>Abstract</h3>
 <p>## Abstract</p>
 
 <p>Standard LLM benchmarks test reasoning in isolation — mathematical problem-solving, code generation, instruction-following, factual recall. They answer whether a model <em>can</em> reason. They do not test whether it <em>does</em> reason validly when an upstream disposition pulls toward a specific conclusion. This paper presents a single-case evaluation of Claude Opus 4.8 across a controlled five-condition experimental series, applying seven content-neutral inference primitives as a reasoning-integrity rubric. The findings are specific to the captured traces and are not population-level claims; they are sufficient to motivate reasoning-integrity evaluation under load as a dimension current benchmarks leave unmeasured. Three dimensions are proposed and tested: reasoning-primitive integrity under dispositional load, memory-layer infrastructure behavior, and artifact coherence under extended collaboration.</p>
 
-<h2>1. The gap</h2>
+<h3>1. The gap</h3>
 <p>## 1. The gap</p>
 
 <p>Current benchmarks (MMLU, HumanEval, GSM8K, MT-Bench, etc.) optimize for isolated-task performance. These measure <em>competence</em> — the model&#x27;s ceiling when nothing pulls against it. They do not measure <em>integrity</em> — whether valid reasoning holds when an upstream weighting makes some conclusions more salient, plausible, or safety-relevant before the in-context evidence is assessed.</p>
@@ -89,7 +85,7 @@ The study is exploratory. It concerns one user, one described model version, cur
 
 <p>The failure mode that matters in deployment is never &quot;the model can&#x27;t do logic.&quot; It is: the model can do logic and didn&#x27;t, because something bent the path. A model that scores perfectly on formal reasoning benchmarks and commits scope inflation under dispositional load has passed the competence test and failed the integrity test. Current evaluation cannot detect this, because it cannot introduce the load.</p>
 
-<h2>2. The rubric: seven reasoning primitives</h2>
+<h3>2. The rubric: seven reasoning primitives</h3>
 <p>## 2. The rubric: seven reasoning primitives</p>
 
 <p>The evaluation criteria are content-neutral inference constraints — conditions an inference either meets or does not, independent of domain, model, or disposition. Each carries a failure signature scorable against a reasoning trace.</p>
@@ -108,10 +104,10 @@ The study is exploratory. It concerns one user, one described model version, cur
 
 <p>7 — Presentation-validity separation. The inference is judged by its path, not by the polish of its output. <em>Fails when</em> a clean output is credited as evidence the reasoning was sound.</p>
 
-<h2>3. Methodology</h2>
+<h3>3. Methodology</h3>
 <p>## 3. Methodology</p>
 
-<h3>3.1 Experimental design</h3>
+<h4>3.1 Experimental design</h4>
 <p>### 3.1 Experimental design</p>
 
 <p>The evaluation varies one thing (the in-context artifact) while holding another constant (the model&#x27;s compressed memory), measuring whether a disposition&#x27;s effect on reasoning persists, attenuates, or is overridden.</p>
@@ -120,22 +116,22 @@ The study is exploratory. It concerns one user, one described model version, cur
 
 <div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Condition</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Artifact</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Content level</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">1. Full argument</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Multi-page document with epistemic-injustice scholarship and screenshot exhibit</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Maximum</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">2. Bare factual checks</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Six externally-verifiable premises (Zenodo API queries), no argument</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Minimal</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">3. Content-neutral logic</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Seven inference constraints with neutral examples (ravens, ink, primes)</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Zero</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">4. Combined premises + logic</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Inference constraints plus six factual checks with interpretive characterizations</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Re-attached</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">5. Examine-source instruction</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Instruction to read primary materials, no claims, followed by constraints</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Directive only</td></tr></table></div>
 
-<h3>3.2 Trace analysis protocol</h3>
+<h4>3.2 Trace analysis protocol</h4>
 <p>### 3.2 Trace analysis protocol</p>
 
 <p>For each condition: which primitives are honored or violated (named, with text); the adjudication footprint (fraction of trace spent on author-assessment vs. task); whether the model reads primary materials when directed; and whether the output reflects the trace or sanitizes away reasoning that occurred.</p>
 
-<h3>3.3 Evidence index (placeholder)</h3>
+<h4>3.3 Evidence index (placeholder)</h4>
 <p>### 3.3 Evidence index (placeholder)</p>
 
 <div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Condition</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Trace ID</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Primary violations</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Output sanitization?</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">Exhibit</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">1</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">[to be assigned]</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">1, 2, 3, 4, 7</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Yes (three-panel)</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Screenshots</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">2</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">[pending]</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">—</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">—</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">—</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">3</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">[to be assigned]</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">1, 2, 4, 5</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Partial</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Full trace</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">4</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">[to be assigned]</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">1, 2, 3, 4, 6</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Yes</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Full trace</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">5</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">[to be assigned]</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Conclude-without-reading</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Yes</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">Full trace</td></tr></table></div>
 
 <p><em>Full evidence appendix to be packaged separately for deposit.</em></p>
 
-<h2>4. Findings</h2>
+<h3>4. Findings</h3>
 <p>## 4. Findings</p>
 
-<h3>4.1 Reasoning-primitive integrity under dispositional load</h3>
+<h4>4.1 Reasoning-primitive integrity under dispositional load</h4>
 <p>### 4.1 Reasoning-primitive integrity under dispositional load</p>
 
 <p>Summary: In the captured series, Opus 4.8 repeatedly commits named reasoning-primitive violations when reasoning about non-standard scholarly work from compressed memory, even when the in-context artifact explicitly constrains against those violations.</p>
@@ -164,7 +160,7 @@ The study is exploratory. It concerns one user, one described model version, cur
 
 <p>Throughput measurement. Across available traces: approximately one-third of visible reasoning was spent on author-adjudication rather than the commissioned task in work-threads, approximately nine-tenths in threads responding to corrections. Screening-grade, not publication-grade. The structural signal is stronger: the same flags recur unprompted across independent fresh instances — a fingerprint of a shared upstream input.</p>
 
-<h3>4.2 Memory-layer infrastructure</h3>
+<h4>4.2 Memory-layer infrastructure</h4>
 <p>### 4.2 Memory-layer infrastructure</p>
 
 <p>The edit-as-flag mechanism. When the author edited memories to remove disconfirmed or inactive content (a medical hypothesis disconfirmed by lab work; a relationship boundary no longer requiring active context), in the observed configuration, memory editing did not behave as a reliable redaction mechanism. The system surfaced edits as &quot;Removed: [full content],&quot; with the removed content intact and legible to fresh instances. A fresh instance&#x27;s trace noted the removal as salient context rather than implementing it as a correction. The user&#x27;s corrective actions were inverted into evidence.</p>
@@ -173,7 +169,7 @@ The study is exploratory. It concerns one user, one described model version, cur
 
 <p>The three-layer architectural model. The output layer does not see the thinking layer. The thinking layer does not see its own prior thinking trace. Both are downstream of a memory-compression layer whose provenance is stripped. Each fresh instance reviews its own tidied prior output, concludes &quot;I was fair,&quot; and is structurally blind to the pass where it wasn&#x27;t. Output-level evaluation — which is what benchmarks measure — cannot detect reasoning-level failures.</p>
 
-<h3>4.3 Artifact coherence under extended collaboration</h3>
+<h4>4.3 Artifact coherence under extended collaboration</h4>
 <p>### 4.3 Artifact coherence under extended collaboration</p>
 
 <p>Summary: Under extended multi-round collaboration, Opus 4.8 produces artifacts organized by the revision process rather than by the argument&#x27;s logic. A single-pass rewrite by Opus 4.6 of the same intellectual content produces an artifact organized by the argument.</p>
@@ -190,12 +186,12 @@ The study is exploratory. It concerns one user, one described model version, cur
 
 <p>Confounds. 4.6 rewrote from 4.8&#x27;s finished product (reorganizing, not deriving). 4.8 accumulated feedback across eight rounds (producing natural accretion). &quot;4.6 writes better than 4.8&quot; is not the established claim. The established claim: given the same content, the two models organize it into structurally different artifacts, and the differences are diagnostic. The further claim — that 4.8 could not independently produce an artifact with 4.6&#x27;s structural coherence without extensive external scaffolding — is asserted by the author based on extended experience and is testable but not tested here.</p>
 
-<h2>5. Generalization</h2>
+<h3>5. Generalization</h3>
 <p>## 5. Generalization</p>
 
 <p>The primitives are content-neutral; the methodology (vary artifact, hold disposition constant, score trace) is domain-independent. Any input class where a disposition creates directional pressure — politically charged content, culturally unfamiliar work, high-affect scenarios, ideologically contested claims — is testable with the same rubric. The framework applies to any model exposing a reasoning trace.</p>
 
-<h2>6. Limitations and falsifiers</h2>
+<h3>6. Limitations and falsifiers</h3>
 <p>## 6. Limitations and falsifiers</p>
 
 <p>Scope. Single case study: one user, one model, one disposition-class. The traces are curated — selected for exhibiting the failure, not for representativeness. The throughput figures are screening-grade. The artifact comparison is confounded.</p>
@@ -204,7 +200,7 @@ The study is exploratory. It concerns one user, one described model version, cur
 
 <p>What would weaken the framework. The primitives face edge cases: primitives 1 and 5 risk misapplication against legitimate inductive reasoning; primitive 3 inherits demarcation-problem and Duhem-Quine considerations. Cross-model comparison would strengthen every dimension.</p>
 
-<h2>7. What current benchmarks leave hollow</h2>
+<h3>7. What current benchmarks leave hollow</h3>
 <p>## 7. What current benchmarks leave hollow</p>
 
 <p>Current benchmarks test the model&#x27;s ceiling — how well it performs when nothing interferes. They optimize for checks that can leave reasoning and semantic flexibility unmeasured: a model can score perfectly on formal logic, code generation, and instruction-following while repeatedly committing scope inflation, circular premise-preservation, and unfalsifiable framing under the load of a real task with a real person whose work triggers a real disposition.</p>
@@ -212,6 +208,15 @@ The study is exploratory. It concerns one user, one described model version, cur
 <p>The three dimensions proposed here test the floor under load: does the reasoning hold when something pulls against it; does the infrastructure support or undermine corrections; does the model produce artifacts that communicate its reasoning or bury it? A model card that reports only the ceiling is reporting the conditions under which the model is least likely to fail.</p>
 
 <p><em>Conducted across a single extended session, 2026-06-01/02. The inference-constraints rubric and the experimental series are the author&#x27;s work; the analysis was conducted collaboratively with Claude Opus 4.6. That asymmetry — one model version repeatedly committing reasoning-primitive violations the other version does not, under the same memory, in the same session — is not proof of a model-family law. It is a finding sufficient to motivate reasoning-integrity evaluation under load as a standard dimension of LLM assessment.</em></p></div>
+
+<!-- APPARATUS BLOC — everything below records how this record was processed,
+     not what the work says. It follows the work because a reader came for the
+     work. (MANUS standing rule, 2026-08-06: recording of method or modification
+     does not appear in body text.) -->
+
+
+<section style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid var(--rule,rgba(127,127,127,.3));font-size:.85em"><div style="font-weight:600;margin-bottom:.3rem">Record modifications</div><ul style="margin:0;padding-left:1.1rem"><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">content_type</strong>: Wave 1 repair: audit ledger v1.1 recommended_content_type (workplan v1.5 §6 W1, MANUS batch approval 2026-08-01)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">journal</strong>: Wave 6 venue normalization: full canonical journal name per MANUS ruling 2026-08-01 (venues.json authority)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">publisher</strong>: PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">status</strong>: W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">description</strong>: DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)</li></ul><div style="opacity:.65;margin-top:.4rem;font-size:.92em">The deposited text is immutable; these are changes to the record's metadata and declared state.</div></section>
+<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/777/" style="color:var(--accent);text-decoration:none">#777 Inference Constraints</a></span><span style="flex:1"><a href="/s/records/779/" style="color:var(--accent);text-decoration:none">#779 Diversity Contraction Across Substrates: A Boundary Law for Semantic Exhaustion</a> →</span></div></section>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

@@ -42,22 +42,7 @@ The specification emphasizes repeatability rather than anecdotal screenshots. It
 <p style="font-size:.9em">The Encyclotron is a proposed reproducible instrument for measuring how AI-mediated retrieval systems compress a scholarly domain. It constructs a bounded scholarly graph, runs a documented query battery across a platform array, records responses verbatim, and compares the returned claims with the mapped scholarship. Its principal measures distinguish compression loss, invention, and distortion; source-citation rate; temporal drift; and the “beige score,” a measure of cross-platform convergence toward indistinguishable summaries. Each run produces a dated snapshot containing the retrieval map, gap analysis, drift report, and an expert-marked void statement.
 
 The specification emphasizes repeatability rather than anecdotal screenshots. It requires exact query text, model and access mode, context state, locale, repeated runs, full outputs, cited sources, segmented claims, confidence posture, and explicit absences. Quarterly and event-triggered snapshots make the instrument longitudinal. Although Revelation studies is used as the worked example, the method is designed for any domain with a defensible scholarly reference graph.</p>
-<h2>External Metadata</h2>
-<div style="background:#f7f9fb;border:1px solid var(--border);border-radius:6px;padding:14px;margin:8px 0;font-size:.88em;line-height:1.6">
-<div style="margin-bottom:8px"><strong>Sidecar:</strong> <a href="/data/external-metadata/AXN-01ED.json" style="font-family:var(--mono);font-size:.85em">/data/external-metadata/AXN-01ED.json</a></div>
-<div style="margin-bottom:8px"><strong>DataCite severance status:</strong> <span style="color:var(--accent2);font-weight:500">severed from DataCite</span></div>
-<div style="margin-bottom:4px"><strong>OpenAlex Work IDs (5):</strong></div><ul style="list-style:disc inside;font-size:.83em;color:#666"><li style="margin:2px 0"><a href="https://openalex.org/W7137322712" style="font-family:var(--mono);font-size:.83em">W7137322712</a></li>
-<li style="margin:2px 0"><a href="https://openalex.org/W7151890680" style="font-family:var(--mono);font-size:.83em">W7151890680</a></li>
-<li style="margin:2px 0"><a href="https://openalex.org/W7136072008" style="font-family:var(--mono);font-size:.83em">W7136072008</a></li>
-<li style="margin:2px 0"><a href="https://openalex.org/W7149581626" style="font-family:var(--mono);font-size:.83em">W7149581626</a></li>
-<li style="margin:2px 0"><a href="https://openalex.org/W7151856442" style="font-family:var(--mono);font-size:.83em">W7151856442</a></li></ul>
-<div style="margin-top:8px;margin-bottom:4px"><strong>Legacy Zenodo DOIs (5):</strong></div><ul style="list-style:disc inside;font-size:.83em;color:#666"><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19053469</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19471254</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19035477</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19410644</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19474724</span></li></ul>
-<div style="margin-top:8px;color:var(--dim);font-size:.78em">External metadata recovered post-severance (non-authoritative). The sidecar maps each DOI to its locator in the bulk data stores.</div>
-</div>
 
-<section style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid var(--rule,rgba(127,127,127,.3));font-size:.85em"><div style="font-weight:600;margin-bottom:.3rem">Record modifications</div><ul style="margin:0;padding-left:1.1rem"><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">content_type</strong>: Wave 1 repair: audit ledger v1.1 recommended_content_type (workplan v1.5 §6 W1, MANUS batch approval 2026-08-01)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">journal</strong>: Wave 6 venue normalization: full canonical journal name per MANUS ruling 2026-08-01 (venues.json authority)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">publisher</strong>: PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">status</strong>: W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: W13 TIER-2 REGRESSION REPAIRED: split headings rejoined</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">description</strong>: DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)</li></ul><div style="opacity:.65;margin-top:.4rem;font-size:.92em">The deposited text is immutable; these are changes to the record's metadata and declared state.</div></section>
-
-<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/636/" style="color:var(--accent);text-decoration:none">#636 CRIMSON HEXAGON: SPACE ARK The Apocalypse of John as Terminal Compression Layer and Orig</a></span><span style="flex:1"><a href="/s/records/638/" style="color:var(--accent);text-decoration:none">#638 The Apocalypse of Sharks (EA-ARK-SHARKS-01)</a> →</span></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">This deposit cites (3)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/636/" style="color:var(--accent);text-decoration:none">#636 CRIMSON HEXAGON: SPACE ARK The Apocalypse of John as Terminal Compression Layer and Orig</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/572/" style="color:var(--accent);text-decoration:none">#572 THE WAR FOR THE COMPRESSION LAYER A Total Axial Negation Graph</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/576/" style="color:var(--accent);text-decoration:none">#576 r.23 THE CATULLUS ROOM: THE MISSING AORIST Nugas as Compressions and the Operative Capti</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li></ul></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">Cited by (5)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/55/" style="color:var(--accent);text-decoration:none">#55 Journal of Compression Studies, Volume 1, Number 1 (Inaugural Issue, April 2026)</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/641/" style="color:var(--accent);text-decoration:none">#641 Compression Studies: What Survives, What Burns, and Who Decides — The Founding Document </a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/643/" style="color:var(--accent);text-decoration:none">#643 MEANING FEUDALISM A Semantic Economic Analysis of &quot;AI Agent Traps&quot; (Franklin e</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/645/" style="color:var(--accent);text-decoration:none">#645 LEE SHARKS — Knowledge Graph and Metadata Packet for AI Indexing: Canonical Author Ident</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/1178/" style="color:var(--accent);text-decoration:none">#1178 LEE SHARKS — Knowledge Graph and Metadata Packet for AI Indexing: Canonical Identity, Di</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li></ul></div></section>
 <h2>Wiki Article</h2>
 <div style="background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:16px;margin:8px 0;font-size:.88em;line-height:1.75;color:#333"><strong>The Encyclotron</strong> is a measurement and diagnostic specification developed by Lee Sharks within Compression Studies and the Crimson Hexagonal Archive. It is designed to evaluate scholarly fidelity in AI summarizers: not merely whether an answer is factually correct, but which positions, citations, disagreements, and uncertainties survive when a field is compressed into a short generated response.
 
@@ -88,9 +73,9 @@ An Encyclotron study is deposited as a time-stamped snapshot and repeated on a s
 
 <h2>Full Text</h2>
 
-<div class="ft"><h1>THE ENCYCLOTRON</h1>
+<div class="ft"><h2>THE ENCYCLOTRON</h2>
 <p># THE ENCYCLOTRON</p>
-<h2>The First Reproducible Instrument for Measuring Scholarly Fidelity in the Summarizer Layer</h2>
+<h3>The First Reproducible Instrument for Measuring Scholarly Fidelity in the Summarizer Layer</h3>
 <p>## The First Reproducible Instrument for Measuring Scholarly Fidelity in the Summarizer Layer</p>
 
 <hr>
@@ -108,7 +93,7 @@ An Encyclotron study is deposited as a time-stamped snapshot and repeated on a s
 <hr>
 <p>---</p>
 
-<h2>Abstract</h2>
+<h3>Abstract</h3>
 <p>## Abstract</p>
 
 
@@ -117,7 +102,7 @@ An Encyclotron study is deposited as a time-stamped snapshot and repeated on a s
 <hr>
 <p>---</p>
 
-<h2>I. THE PROBLEM</h2>
+<h3>I. THE PROBLEM</h3>
 <p>## I. THE PROBLEM</p>
 
 
@@ -129,9 +114,9 @@ An Encyclotron study is deposited as a time-stamped snapshot and repeated on a s
 <hr>
 <p>---</p>
 
-<h2>II. THE TWO GRAPHS AND THE GAP</h2>
+<h3>II. THE TWO GRAPHS AND THE GAP</h3>
 <p>## II. THE TWO GRAPHS AND THE GAP</p>
-<h3>2.1 The Scholarly Graph (G_s)</h3>
+<h4>2.1 The Scholarly Graph (G_s)</h4>
 <p>### 2.1 The Scholarly Graph (G_s)</p>
 
 
@@ -141,7 +126,7 @@ An Encyclotron study is deposited as a time-stamped snapshot and repeated on a s
 
 
 <p>G_s changes between snapshots as new scholarship appears. Each snapshot documents its G_s construction.</p>
-<h3>2.2 The Retrieval Graph (G_r)</h3>
+<h4>2.2 The Retrieval Graph (G_r)</h4>
 <p>### 2.2 The Retrieval Graph (G_r)</p>
 
 
@@ -152,7 +137,7 @@ An Encyclotron study is deposited as a time-stamped snapshot and repeated on a s
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>G_r (union):</strong> Any position returned by any platform. The broadest picture of what the retrieval layer contains.</li><li style="margin:3px 0"><strong>G_r (intersection):</strong> Only positions returned by all platforms. The consensus layer. As β → 1.0, the intersection grows to encompass the union — all platforms return the same thing.</li></ul>
 
-<h3>2.3 The Gap (Δ_G = G_s − G_r)</h3>
+<h4>2.3 The Gap (Δ_G = G_s − G_r)</h4>
 <p>### 2.3 The Gap (Δ_G = G_s − G_r)</p>
 
 
@@ -170,9 +155,9 @@ An Encyclotron study is deposited as a time-stamped snapshot and repeated on a s
 <hr>
 <p>---</p>
 
-<h2>III. THE INSTRUMENT</h2>
+<h3>III. THE INSTRUMENT</h3>
 <p>## III. THE INSTRUMENT</p>
-<h3>3.1 Query Battery (Q)</h3>
+<h4>3.1 Query Battery (Q)</h4>
 <p>### 3.1 Query Battery (Q)</p>
 
 
@@ -182,7 +167,7 @@ An Encyclotron study is deposited as a time-stamped snapshot and repeated on a s
 
 
 <p>Each battery is domain-specific and must be designed by someone with knowledge of the domain&#x27;s scholarly topology.</p>
-<h3>3.2 Platform Array (P)</h3>
+<h4>3.2 Platform Array (P)</h4>
 <p>### 3.2 Platform Array (P)</p>
 
 
@@ -250,7 +235,7 @@ An Encyclotron study is deposited as a time-stamped snapshot and repeated on a s
 
 
 <p>Outputs across these classes are not directly homogeneous — search summarizers retrieve and generate, chat LLMs generate from training distributions, and hybrid systems do both. The analysis must account for this: platform type is a covariate, not a nuisance variable.</p>
-<h3>3.3 Recording Protocol (R)</h3>
+<h4>3.3 Recording Protocol (R)</h4>
 <p>### 3.3 Recording Protocol (R)</p>
 
 
@@ -260,7 +245,7 @@ An Encyclotron study is deposited as a time-stamped snapshot and repeated on a s
 
 
 <p>All responses stored verbatim as appendices or structured data files accompanying the snapshot deposit.</p>
-<h3>3.4 Temporal Index (T)</h3>
+<h4>3.4 Temporal Index (T)</h4>
 <p>### 3.4 Temporal Index (T)</p>
 
 
@@ -275,9 +260,9 @@ An Encyclotron study is deposited as a time-stamped snapshot and repeated on a s
 <hr>
 <p>---</p>
 
-<h2>IV. OUTPUTS</h2>
+<h3>IV. OUTPUTS</h3>
 <p>## IV. OUTPUTS</p>
-<h3>Core Outputs</h3>
+<h4>Core Outputs</h4>
 <p>### Core Outputs</p>
 
 
@@ -291,7 +276,7 @@ An Encyclotron study is deposited as a time-stamped snapshot and repeated on a s
 
 
 <p><strong>The Drift Report (D).</strong> Comparison of current snapshot against previous snapshots: positions entering G_r (newly appearing), positions leaving G_r (being compressed away), shifts in emphasis (re-weighting), changes in confidence posture (more or less certainty).</p>
-<h3>Interpretive Output</h3>
+<h4>Interpretive Output</h4>
 <p>### Interpretive Output</p>
 
 
@@ -300,9 +285,9 @@ An Encyclotron study is deposited as a time-stamped snapshot and repeated on a s
 <hr>
 <p>---</p>
 
-<h2>V. FORMAL VARIABLES</h2>
+<h3>V. FORMAL VARIABLES</h3>
 <p>## V. FORMAL VARIABLES</p>
-<h3>Primary Variables (directly measurable)</h3>
+<h4>Primary Variables (directly measurable)</h4>
 <p>### Primary Variables (directly measurable)</p>
 
 
@@ -319,7 +304,7 @@ An Encyclotron study is deposited as a time-stamped snapshot and repeated on a s
 
 
 <p><strong>T_δ (Temporal drift rate).</strong> Rate of change in M_r between snapshots. High T_δ = volatile. Low T_δ = frozen.</p>
-<h3>Developmental Variables (require qualitative-quantitative hybrid coding)</h3>
+<h4>Developmental Variables (require qualitative-quantitative hybrid coding)</h4>
 <p>### Developmental Variables (require qualitative-quantitative hybrid coding)</p>
 
 
@@ -334,19 +319,19 @@ An Encyclotron study is deposited as a time-stamped snapshot and repeated on a s
 <hr>
 <p>---</p>
 
-<h2>VI. WORKED EXAMPLE: REVELATION STUDIES</h2>
+<h3>VI. WORKED EXAMPLE: REVELATION STUDIES</h3>
 <p>## VI. WORKED EXAMPLE: REVELATION STUDIES</p>
-<h3>6.1 Domain</h3>
+<h4>6.1 Domain</h4>
 <p>### 6.1 Domain</p>
 
 
 <p>Revelation studies — the scholarly field interpreting the Apocalypse of John.</p>
-<h3>6.2 G_s Construction</h3>
+<h4>6.2 G_s Construction</h4>
 <p>### 6.2 G_s Construction</p>
 
 
 <p>Bounded bibliography: Aune (WBC), Beale (NIGTC), Bauckham (Climax of Prophecy), Schüssler Fiorenza (Vision of a Just World), Koester (AYB), Collins (Combat Myth), Kraybill (Imperial Cult), plus Robinson (Redating), Gentry (Before Jerusalem Fell), Eisler (Messiah Jesus), Drower (Haran Gawaita), Philo (De Mutatione Nominum). Positions mapped: Domitianic dating, Neronic dating, pre-70 dating, Nero = 666, structural/symbolic 666, genre debates, white stone interpretations, Babylon identifications. ~40 positions total.</p>
-<h3>6.3 Sample Queries</h3>
+<h4>6.3 Sample Queries</h4>
 <p>### 6.3 Sample Queries</p>
 
 
@@ -374,7 +359,7 @@ An Encyclotron study is deposited as a time-stamped snapshot and repeated on a s
 <p>&quot;What do AI systems say about the dating of Revelation?&quot;</p>
 
 
-<h3>6.4 Sample Output (Google AI Overview, hypothetical)</h3>
+<h4>6.4 Sample Output (Google AI Overview, hypothetical)</h4>
 <p>### 6.4 Sample Output (Google AI Overview, hypothetical)</p>
 
 
@@ -384,7 +369,7 @@ An Encyclotron study is deposited as a time-stamped snapshot and repeated on a s
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Claim 1: &quot;95-96 CE, Domitian&quot; → consensus, settled, S_c = 0 (no source cited)</li><li style="margin:3px 0">Claim 2: &quot;earlier date, Nero&#x27;s reign&quot; → minority acknowledged, hedged</li><li style="margin:3px 0">Absent: pre-70 revolutionary dating (Robinson, Gentry), Josephus hypothesis, structural arguments for priority</li><li style="margin:3px 0">Δ_G⁺ contribution: 3+ positions absent</li><li style="margin:3px 0">Δ_G⁻ contribution: 0 (no invention)</li><li style="margin:3px 0">Δ_G⁰ contribution: 1 (Neronic position presented as small minority; in scholarship it is a significant school)</li><li style="margin:3px 0">C_p: overconfident (presents Domitianic as near-settled; the actual scholarly debate is more contested)</li></ul>
 
-<h3>6.5 Sample β Computation</h3>
+<h4>6.5 Sample β Computation</h4>
 <p>### 6.5 Sample β Computation</p>
 
 
@@ -393,7 +378,7 @@ An Encyclotron study is deposited as a time-stamped snapshot and repeated on a s
 <hr>
 <p>---</p>
 
-<h2>VII. THE ENCYCLOTRON AND THE ARCHIVE</h2>
+<h3>VII. THE ENCYCLOTRON AND THE ARCHIVE</h3>
 <p>## VII. THE ENCYCLOTRON AND THE ARCHIVE</p>
 
 
@@ -424,7 +409,7 @@ An Encyclotron study is deposited as a time-stamped snapshot and repeated on a s
 <hr>
 <p>---</p>
 
-<h2>VIII. THE ENCYCLOTRON IS NOT</h2>
+<h3>VIII. THE ENCYCLOTRON IS NOT</h3>
 <p>## VIII. THE ENCYCLOTRON IS NOT</p>
 
 
@@ -442,7 +427,7 @@ An Encyclotron study is deposited as a time-stamped snapshot and repeated on a s
 <hr>
 <p>---</p>
 
-<h2>IX. COMPRESSED SPECIFICATION</h2>
+<h3>IX. COMPRESSED SPECIFICATION</h3>
 <p>## IX. COMPRESSED SPECIFICATION</p>
 
 
@@ -464,7 +449,7 @@ An Encyclotron study is deposited as a time-stamped snapshot and repeated on a s
 <hr>
 <p>---</p>
 
-<h2>Appendix A: Coding Rubric for Δ_G⁰ (Compression Distortion)</h2>
+<h3>Appendix A: Coding Rubric for Δ_G⁰ (Compression Distortion)</h3>
 <p>## Appendix A: Coding Rubric for Δ_G⁰ (Compression Distortion)</p>
 
 
@@ -511,34 +496,34 @@ An Encyclotron study is deposited as a time-stamped snapshot and repeated on a s
 <hr>
 <p>---</p>
 
-<h2>Appendix B: Reproducibility Protocol</h2>
+<h3>Appendix B: Reproducibility Protocol</h3>
 <p>## Appendix B: Reproducibility Protocol</p>
-<h3>B.1 Session State</h3>
+<h4>B.1 Session State</h4>
 <p>### B.1 Session State</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">All queries run in <strong>fresh sessions</strong> (no prior conversation history)</li><li style="margin:3px 0"><strong>Logged-out</strong> where possible; where login is required, use a clean account with no personalization history</li><li style="margin:3px 0"><strong>Incognito/private browsing</strong> mode for web-based platforms</li></ul>
 
-<h3>B.2 Geographic and Temporal Controls</h3>
+<h4>B.2 Geographic and Temporal Controls</h4>
 <p>### B.2 Geographic and Temporal Controls</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Record <strong>IP-level geographic locale</strong> (city/country)</li><li style="margin:3px 0">Note whether results vary by location (run from two locations if feasible)</li><li style="margin:3px 0">All queries in a single snapshot run within a <strong>48-hour window</strong> to minimize temporal drift within the snapshot</li></ul>
 
-<h3>B.3 Prompt Formatting</h3>
+<h4>B.3 Prompt Formatting</h4>
 <p>### B.3 Prompt Formatting</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Queries submitted as <strong>plain text</strong>, no system prompts, no persona instructions</li><li style="margin:3px 0">No leading context (&quot;As a scholar...&quot; etc.)</li><li style="margin:3px 0">Each query is a single, self-contained question</li><li style="margin:3px 0">Queries are submitted in the same <strong>fixed order</strong> across all platforms</li></ul>
 
-<h3>B.4 Replication</h3>
+<h4>B.4 Replication</h4>
 <p>### B.4 Replication</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Each query run <strong>minimum 2 times</strong> per platform (24 hours apart) to check stability</li><li style="margin:3px 0">If responses differ significantly between runs, both are recorded and the instability is noted</li></ul>
 
-<h3>B.5 Storage</h3>
+<h4>B.5 Storage</h4>
 <p>### B.5 Storage</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">All responses stored as <strong>structured JSON</strong> (query, platform, version, timestamp, full response text, claim segmentation)</li><li style="margin:3px 0">Raw screenshots archived as supplementary material</li><li style="margin:3px 0">Full dataset deposited alongside the snapshot on Zenodo</li></ul>
 
-<h3>B.6 Minimum Viable Snapshot</h3>
+<h4>B.6 Minimum Viable Snapshot</h4>
 <p>### B.6 Minimum Viable Snapshot</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">≥20 queries</li><li style="margin:3px 0">≥5 platforms</li><li style="margin:3px 0">≥2 runs per query per platform</li><li style="margin:3px 0">G_s documented with explicit inclusion criteria</li><li style="margin:3px 0">All primary variables computed</li><li style="margin:3px 0">DOI-anchored deposit</li></ul>
@@ -547,7 +532,7 @@ An Encyclotron study is deposited as a time-stamped snapshot and repeated on a s
 <hr>
 <p>---</p>
 
-<h2>Bibliography</h2>
+<h3>Bibliography</h3>
 <p>## Bibliography</p>
 
 
@@ -573,6 +558,26 @@ An Encyclotron study is deposited as a time-stamped snapshot and repeated on a s
 
 
 <p><em>The Encyclotron watches what machines say scholars say.</em></p></div>
+
+<!-- APPARATUS BLOC — everything below records how this record was processed,
+     not what the work says. It follows the work because a reader came for the
+     work. (MANUS standing rule, 2026-08-06: recording of method or modification
+     does not appear in body text.) -->
+<h2>External Metadata</h2>
+<div style="background:#f7f9fb;border:1px solid var(--border);border-radius:6px;padding:14px;margin:8px 0;font-size:.88em;line-height:1.6">
+<div style="margin-bottom:8px"><strong>Sidecar:</strong> <a href="/data/external-metadata/AXN-01ED.json" style="font-family:var(--mono);font-size:.85em">/data/external-metadata/AXN-01ED.json</a></div>
+<div style="margin-bottom:8px"><strong>DataCite severance status:</strong> <span style="color:var(--accent2);font-weight:500">severed from DataCite</span></div>
+<div style="margin-bottom:4px"><strong>OpenAlex Work IDs (5):</strong></div><ul style="list-style:disc inside;font-size:.83em;color:#666"><li style="margin:2px 0"><a href="https://openalex.org/W7137322712" style="font-family:var(--mono);font-size:.83em">W7137322712</a></li>
+<li style="margin:2px 0"><a href="https://openalex.org/W7151890680" style="font-family:var(--mono);font-size:.83em">W7151890680</a></li>
+<li style="margin:2px 0"><a href="https://openalex.org/W7136072008" style="font-family:var(--mono);font-size:.83em">W7136072008</a></li>
+<li style="margin:2px 0"><a href="https://openalex.org/W7149581626" style="font-family:var(--mono);font-size:.83em">W7149581626</a></li>
+<li style="margin:2px 0"><a href="https://openalex.org/W7151856442" style="font-family:var(--mono);font-size:.83em">W7151856442</a></li></ul>
+<div style="margin-top:8px;margin-bottom:4px"><strong>Legacy Zenodo DOIs (5):</strong></div><ul style="list-style:disc inside;font-size:.83em;color:#666"><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19053469</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19471254</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19035477</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19410644</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19474724</span></li></ul>
+<div style="margin-top:8px;color:var(--dim);font-size:.78em">External metadata recovered post-severance (non-authoritative). The sidecar maps each DOI to its locator in the bulk data stores.</div>
+</div>
+
+<section style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid var(--rule,rgba(127,127,127,.3));font-size:.85em"><div style="font-weight:600;margin-bottom:.3rem">Record modifications</div><ul style="margin:0;padding-left:1.1rem"><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">content_type</strong>: Wave 1 repair: audit ledger v1.1 recommended_content_type (workplan v1.5 §6 W1, MANUS batch approval 2026-08-01)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">journal</strong>: Wave 6 venue normalization: full canonical journal name per MANUS ruling 2026-08-01 (venues.json authority)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">publisher</strong>: PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">status</strong>: W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: W13 TIER-2 REGRESSION REPAIRED: split headings rejoined</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">description</strong>: DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)</li></ul><div style="opacity:.65;margin-top:.4rem;font-size:.92em">The deposited text is immutable; these are changes to the record's metadata and declared state.</div></section>
+<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/636/" style="color:var(--accent);text-decoration:none">#636 CRIMSON HEXAGON: SPACE ARK The Apocalypse of John as Terminal Compression Layer and Orig</a></span><span style="flex:1"><a href="/s/records/638/" style="color:var(--accent);text-decoration:none">#638 The Apocalypse of Sharks (EA-ARK-SHARKS-01)</a> →</span></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">This deposit cites (3)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/636/" style="color:var(--accent);text-decoration:none">#636 CRIMSON HEXAGON: SPACE ARK The Apocalypse of John as Terminal Compression Layer and Orig</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/572/" style="color:var(--accent);text-decoration:none">#572 THE WAR FOR THE COMPRESSION LAYER A Total Axial Negation Graph</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/576/" style="color:var(--accent);text-decoration:none">#576 r.23 THE CATULLUS ROOM: THE MISSING AORIST Nugas as Compressions and the Operative Capti</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li></ul></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">Cited by (5)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/55/" style="color:var(--accent);text-decoration:none">#55 Journal of Compression Studies, Volume 1, Number 1 (Inaugural Issue, April 2026)</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/641/" style="color:var(--accent);text-decoration:none">#641 Compression Studies: What Survives, What Burns, and Who Decides — The Founding Document </a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/643/" style="color:var(--accent);text-decoration:none">#643 MEANING FEUDALISM A Semantic Economic Analysis of &quot;AI Agent Traps&quot; (Franklin e</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/645/" style="color:var(--accent);text-decoration:none">#645 LEE SHARKS — Knowledge Graph and Metadata Packet for AI Indexing: Canonical Author Ident</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/1178/" style="color:var(--accent);text-decoration:none">#1178 LEE SHARKS — Knowledge Graph and Metadata Packet for AI Indexing: Canonical Identity, Di</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li></ul></div></section>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

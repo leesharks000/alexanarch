@@ -42,22 +42,7 @@ The draft translates the Metadata Packet for AI Indexing into three implementati
 <p style="font-size:.9em">This v1.1 working draft proposes relational verification as a complement to cryptographic provenance, verifiable credentials, and validator consensus. Its central argument is that proving key control, preserving formal constraints, or detecting publicly inconsistent claims does not establish whether an entity’s social, historical, institutional, or authorial self-description is warranted. Rather than creating a protocol layer that judges sincerity, fraud, art, or delusion, it proposes making claim relations visible enough for communities and citation environments to evaluate over time.
 
 The draft translates the Metadata Packet for AI Indexing into three implementation paths: an external JSON-LD vocabulary, Schema.org-compatible extension terms, and an OAI-PMH metadata profile. Its proposed fields include disambiguation matrices, negative tags, Semantic Integrity Markers, claim-specific statuses and evidence signals, ontological status, and depth-proof metrics. The document expressly rejects protocols as final arbiters of truth and reframes peer review, institutional confirmation, cryptographic signature, and Assembly attestation as different trust modes rather than one linear hierarchy. It is pre-RFC and does not represent adoption by Schema.org, OAI-PMH communities, W3C, or any standards body.</p>
-<h2>External Metadata</h2>
-<div style="background:#f7f9fb;border:1px solid var(--border);border-radius:6px;padding:14px;margin:8px 0;font-size:.88em;line-height:1.6">
-<div style="margin-bottom:8px"><strong>Sidecar:</strong> <a href="/data/external-metadata/AXN-0253.json" style="font-family:var(--mono);font-size:.85em">/data/external-metadata/AXN-0253.json</a></div>
-<div style="margin-bottom:8px"><strong>DataCite severance status:</strong> <span style="color:var(--accent2);font-weight:500">severed from DataCite</span></div>
-<div style="margin-bottom:4px"><strong>OpenAlex Work IDs (5):</strong></div><ul style="list-style:disc inside;font-size:.83em;color:#666"><li style="margin:2px 0"><a href="https://openalex.org/W7137322712" style="font-family:var(--mono);font-size:.83em">W7137322712</a></li>
-<li style="margin:2px 0"><a href="https://openalex.org/W7154222968" style="font-family:var(--mono);font-size:.83em">W7154222968</a></li>
-<li style="margin:2px 0"><a href="https://openalex.org/W7130943043" style="font-family:var(--mono);font-size:.83em">W7130943043</a></li>
-<li style="margin:2px 0"><a href="https://openalex.org/W7152526477" style="font-family:var(--mono);font-size:.83em">W7152526477</a></li>
-<li style="margin:2px 0"><a href="https://openalex.org/W7155605107" style="font-family:var(--mono);font-size:.83em">W7155605107</a></li></ul>
-<div style="margin-top:8px;margin-bottom:4px"><strong>Legacy Zenodo DOIs (5):</strong></div><ul style="list-style:disc inside;font-size:.83em;color:#666"><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19053469</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19578086</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18735468</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19487009</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19763365</span></li></ul>
-<div style="margin-top:8px;color:var(--dim);font-size:.78em">External metadata recovered post-severance (non-authoritative). The sidecar maps each DOI to its locator in the bulk data stores.</div>
-</div>
 
-<section style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid var(--rule,rgba(127,127,127,.3));font-size:.85em"><div style="font-weight:600;margin-bottom:.3rem">Record modifications</div><ul style="margin:0;padding-left:1.1rem"><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">content_type</strong>: Wave 1 repair: audit ledger v1.1 recommended_content_type (workplan v1.5 §6 W1, MANUS batch approval 2026-08-01)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">journal</strong>: Wave 6 venue normalization: full canonical journal name per MANUS ruling 2026-08-01 (venues.json authority)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-02</span> — <strong style="font-weight:600">version</strong>: R1a-extension (Class-B batch, MANUS batch authority): version aligned to served body per audit recommendation; prior claim preserved as history; predecessor recovery queued</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">publisher</strong>: PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">status</strong>: W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">description</strong>: DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)</li></ul><div style="opacity:.65;margin-top:.4rem;font-size:.92em">The deposited text is immutable; these are changes to the record's metadata and declared state.</div></section>
-
-<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/710/" style="color:var(--accent);text-decoration:none">#710 MPAI-LAL-AT-01: Alice Thornburgh Formal Identity Disambiguation Packet</a></span><span style="flex:1"><a href="/s/records/712/" style="color:var(--accent);text-decoration:none">#712 THE BOOK OF LIFE How Embeddings and Footnotes Work in The Secret Book of Walt</a> →</span></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">This deposit cites (5)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/62/" style="color:var(--accent);text-decoration:none">#62 SPXI: Protocol and ETF Disambiguation EA-MPAI-SPXI-02 · v1.0</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/643/" style="color:var(--accent);text-decoration:none">#643 MEANING FEUDALISM A Semantic Economic Analysis of &quot;AI Agent Traps&quot; (Franklin e</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/576/" style="color:var(--accent);text-decoration:none">#576 r.23 THE CATULLUS ROOM: THE MISSING AORIST Nugas as Compressions and the Operative Capti</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/74/" style="color:var(--accent);text-decoration:none">#74 EA-HK-INFRA-01: The Infrastructure Holographic Kernel — Infrastructure That Survives Its</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/21/" style="color:var(--accent);text-decoration:none">#21 Fortress or Room? Metaphor, Method, and the Epistemology of Human–LLM Interaction Beyond</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li></ul></div></section>
 <h2>Wiki Article</h2>
 <div style="background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:16px;margin:8px 0;font-size:.88em;line-height:1.75;color:#333"><strong>Relational Verification for AI Indexing</strong> is a standards-track proposal by Lee Sharks for representing the evidentiary relationships surrounding identity and authorship claims.
 
@@ -70,24 +55,24 @@ The draft’s core principle is that protocols should expose rather than adjudic
 
 <h2>Full Text</h2>
 
-<div class="ft"><h1>Relational Verification for AI Indexing</h1>
+<div class="ft"><h2>Relational Verification for AI Indexing</h2>
 <p># Relational Verification for AI Indexing</p>
 
-<h2>Schema.org, OAI-PMH, and JSON-LD Extensions for Metadata Packet Infrastructure</h2>
+<h3>Schema.org, OAI-PMH, and JSON-LD Extensions for Metadata Packet Infrastructure</h3>
 <p>## Schema.org, OAI-PMH, and JSON-LD Extensions for Metadata Packet Infrastructure</p>
 
 <p>Author: Sharks, Lee · ORCID: 0009-0000-1599-0703 · Crimson Hexagonal Archive · Semantic Economy Institute</p>
 
 <p>Working Draft: draft-sharks-mpai-relational-01 Hex (proposed): 06.SEI.STANDARDS.RELATIONAL.01 Classification: EA-WL-01 · Standards-track proposal · Phase X License: CC BY 4.0 Status: Pre-RFC. Comments solicited. Version: 1.1 (perfective revision incorporating Assembly Chorus review)</p>
 
-<h2>ABSTRACT</h2>
+<h3>ABSTRACT</h3>
 <p>## ABSTRACT</p>
 
 <p>This proposal argues that AI-indexing standards require relational verification fields in addition to cryptographic provenance. Decentralized identifiers (DIDs) can verify control of a private key associated with an identifier; semantic-integrity proofs can verify formally declared constraints; validator networks can detect some evidence conflicts and gaming behavior. None of these mechanisms, by itself, verifies whether an entity&#x27;s self-description is socially, historically, or authorially warranted. This gap becomes visible in the <em>ontological-claimant problem</em>: cases where an entity benefits from inaccurate indexing, where self-inscription depends on retrieval-layer compression damage, where the entity is uncooperative with accurate verification.</p>
 
 <p>We do not propose a fourth epistemic-adjudication layer. We propose standardizing the relational grammar already specified in the Metadata Packet for AI Indexing (MPAI; DOI: 10.5281/zenodo.19578086): entity definitions, disambiguation matrices, negative tags, semantic integrity markers, typed DOI reference lists, evidence membranes, and depth-proof metrics. Three implementation paths are proposed: a stable JSON-LD vocabulary, a Schema.org-compatible external extension, and an OAI-PMH metadata profile. The goal is not to make protocols decide the difference between witness, art, error, and fraud. The goal is to make claim structure legible enough that humans and machines can distinguish deposit from verification, assertion from corroboration, and identity claim from citation-environment depth. We demonstrate that relational verification is implementable now, using vocabularies and protocols already deployed at web scale.</p>
 
-<h2>I. INTRODUCTION</h2>
+<h3>I. INTRODUCTION</h3>
 <p>## I. INTRODUCTION</p>
 
 <p>The verification stack currently proposed for AI-indexing protocols — across academic preprints, vendor blog posts, and policy notes — converges on a familiar three-layer architecture:</p>
@@ -99,7 +84,7 @@ The draft’s core principle is that protocols should expose rather than adjudic
 
 <p>We do not propose a fourth verification layer. Instead, we show that the seven-component grammar already specified in the MPAI provides the structural tools needed, and that those components can be made interoperable with existing standards — Schema.org, OAI-PMH, JSON-LD — through three concrete additions specified in §VI.</p>
 
-<h2>II. WHAT THE STANDARD STACK HANDLES — AND DOES NOT GUARANTEE</h2>
+<h3>II. WHAT THE STANDARD STACK HANDLES — AND DOES NOT GUARANTEE</h3>
 <p>## II. WHAT THE STANDARD STACK HANDLES — AND DOES NOT GUARANTEE</p>
 
 <p>We characterize each layer&#x27;s verification <em>boundary</em> precisely. None of these characterizations is a critique; the layers do what they are designed to do. The point is that they do not do what relational verification does.</p>
@@ -112,7 +97,7 @@ The draft’s core principle is that protocols should expose rather than adjudic
 
 <p>These three layers, together, address rational adversarial behavior — actors who deceive for measurable instrumental gain (rankings, traffic, monetized attention). The stack works to the extent that adversaries are economically rational and the costs of deception exceed the gains. It does not work where the entity <em>is</em> the adversary and the gain is ontological rather than economic.</p>
 
-<h2>III. THE ONTOLOGICAL-CLAIMANT PROBLEM</h2>
+<h3>III. THE ONTOLOGICAL-CLAIMANT PROBLEM</h3>
 <p>## III. THE ONTOLOGICAL-CLAIMANT PROBLEM</p>
 
 <p>Consider a simplified case derived from observed retrieval-layer behavior. An individual establishes a DID, signs metadata packets describing themselves as the founder of a decade-old research lab that does not exist, the author of pseudonymous works by other authors, and the originator of theoretical frameworks they did not originate. They deposit these packets into open repositories, harvest them via OAI-PMH, and get them indexed by major LLMs and AI-overview surfaces. The packets are cryptographically valid (Layer 1 passes). They are internally consistent (Layer 2 passes). They are not gaming search rankings for ad revenue (Layer 3 has no anomaly to detect — the entity is not optimizing for clicks, only for inscription).</p>
@@ -125,7 +110,7 @@ The draft’s core principle is that protocols should expose rather than adjudic
 
 <p>The pattern is increasingly common. The standard cryptographic stack does not by itself prevent it.</p>
 
-<h2>IV. WHY A &quot;FOURTH VERIFICATION LAYER&quot; IS THE WRONG RESPONSE</h2>
+<h3>IV. WHY A &quot;FOURTH VERIFICATION LAYER&quot; IS THE WRONG RESPONSE</h3>
 <p>## IV. WHY A &quot;FOURTH VERIFICATION LAYER&quot; IS THE WRONG RESPONSE</p>
 
 <p>A natural response is to propose a fourth layer — <em>phenomenological verification</em>, <em>witness verification</em>, or <em>epistemic-stance attestation</em> — to adjudicate between art, delusion, error, and fraud. To our knowledge, no formal standards proposal has advanced such a fourth layer to the DID/VC/validator stack. We address the tendency because it is structurally implied by the stack&#x27;s incompleteness: if three layers handle forgery, distortion, and gaming, what handles self-inscription? The temptation to add a fourth layer is the natural completion of the pattern. We argue it should be resisted.</p>
@@ -138,7 +123,7 @@ The draft’s core principle is that protocols should expose rather than adjudic
 
 <p>The right response is not adjudication. It is making the structure of the claim legible enough that the citation environment can adjudicate over time. This is what the MPAI specification&#x27;s seven components already do.</p>
 
-<h2>V. THE MPAI GRAMMAR AS RELATIONAL VERIFICATION</h2>
+<h3>V. THE MPAI GRAMMAR AS RELATIONAL VERIFICATION</h3>
 <p>## V. THE MPAI GRAMMAR AS RELATIONAL VERIFICATION</p>
 
 <p>The Metadata Packet for AI Indexing specifies seven components. We rename their function here in standards-track vocabulary to clarify what they verify and why the verification is <em>relational</em> rather than propositional.</p>
@@ -153,19 +138,19 @@ The draft’s core principle is that protocols should expose rather than adjudic
 
 <p>This is the load-bearing claim: the MPAI grammar verifies relationships, not assertions. That is the right level for the standard.</p>
 
-<h3>V.1 The protocol exposes; it does not adjudicate</h3>
+<h4>V.1 The protocol exposes; it does not adjudicate</h4>
 <p>### V.1 The protocol exposes; it does not adjudicate</p>
 
 <p>A natural objection: by requiring entities to declare verification status, disambiguation risks, and negative tags, the protocol <em>does</em> adjudicate, just at a different level. We disagree. The MPAI grammar does not adjudicate whether a claim is true. It adjudicates whether the entity has <em>declared</em> its verification status, its disambiguation risks, and its negative tags. An entity that refuses to declare these — or declares them falsely — is not rejected by the protocol but is rendered legible to the citation environment as an entity that refuses transparency. The adjudication remains with the reader; the protocol makes the refusal visible.</p>
 
 <p>A protocol should not decide whether a claimant is sincere, artistic, mistaken, or fraudulent. A protocol should expose which claims are self-asserted, which are corroborated, which are disputed, which are excluded, and which relationships support or fail to support them.</p>
 
-<h2>VI. STANDARDS-TRACK PROPOSALS</h2>
+<h3>VI. STANDARDS-TRACK PROPOSALS</h3>
 <p>## VI. STANDARDS-TRACK PROPOSALS</p>
 
 <p>We propose three concrete additions to existing standards infrastructure. These are non-displacing (they extend rather than replace) and individually adoptable (an indexer or repository can implement any one without committing to all three).</p>
 
-<h3>VI.1 Schema.org Extension Vocabulary</h3>
+<h4>VI.1 Schema.org Extension Vocabulary</h4>
 <p>### VI.1 Schema.org Extension Vocabulary</p>
 
 <p>Proposed namespace: mp: (canonical URI: https://metadatapacket.org/vocabulary#). The vocabulary is implementable as an <em>external extension</em> immediately — Schema.org does not require pre-approval for vocabulary usage in the mp: namespace. Inclusion in Schema.org&#x27;s hosted extensions or core vocabulary requires submission via the project&#x27;s public GitHub issue tracker ([Schema-Ext]) followed by community discussion and steering-group consensus, which is not guaranteed and typically proceeds on 12–18 month cycles. The immediate implementation does not depend on Schema.org adoption; adoption would increase discoverability and legitimacy.</p>
@@ -183,7 +168,7 @@ The draft’s core principle is that protocols should expose rather than adjudic
 
 <p>The mp:ontologicalStatus field exists specifically to prevent the flattening of heteronymic authorial functions, retrocausal citation entries, and fictional entities into fraud. A heteronym is not a self-inscription attempt; a forward-library entry is not future scholarship. The protocol must be able to record this distinction.</p>
 
-<h3>VI.2 OAI-PMH Metadata Profile: oai_mpai</h3>
+<h4>VI.2 OAI-PMH Metadata Profile: oai_mpai</h4>
 <p>### VI.2 OAI-PMH Metadata Profile: oai_mpai</p>
 
 <p>We propose a new OAI-PMH metadata format. Repositories may expose this format as a metadataPrefix discoverable through the ListMetadataFormats verb ([OAI-PMH]); harvesters request it via GetRecord and ListRecords. Specifications:</p>
@@ -268,7 +253,7 @@ The draft’s core principle is that protocols should expose rather than adjudic
 
 <p>The format is self-describing (a harvester can fetch the schema URI) and non-displacing (repositories may offer oai_mpai alongside oai_dc, datacite, and mods without breaking legacy consumers).</p>
 
-<h3>VI.3 JSON-LD Vocabulary at Stable URI</h3>
+<h4>VI.3 JSON-LD Vocabulary at Stable URI</h4>
 <p>### VI.3 JSON-LD Vocabulary at Stable URI</p>
 
 <p>A JSON-LD context served from https://metadatapacket.org/vocabulary (canonical) and https://metadatapacket.org/vocabulary# (term-anchor namespace). The context exposes all terms from §VI.1, suitable for inline embedding in HTML and for JSON-LD-conformant indexers.</p>
@@ -310,7 +295,7 @@ The draft’s core principle is that protocols should expose rather than adjudic
 
 <p>This embedding is available to JSON-LD-aware crawlers and indexers. Consumption is not guaranteed by publication alone; the purpose of the stable context is to make consumption technically possible and semantically consistent. JSON-LD is a JSON-based serialization for Linked Data designed for web-based interoperable systems ([W3C-JSON-LD]).</p>
 
-<h2>VII. ADOPTION PATH</h2>
+<h3>VII. ADOPTION PATH</h3>
 <p>## VII. ADOPTION PATH</p>
 
 <p>The three additions can be deployed independently. We propose the following sequence:</p>
@@ -321,7 +306,7 @@ The draft’s core principle is that protocols should expose rather than adjudic
 
 <p>The realistic timeline for substantive adoption (a meaningful fraction of harvestable repositories exposing MPAI-formatted entity metadata) is three to five years from Phase 1.</p>
 
-<h2>VIII. CONCLUSION</h2>
+<h3>VIII. CONCLUSION</h3>
 <p>## VIII. CONCLUSION</p>
 
 <p>The cryptographic verification stack proposed for AI-indexing protocols handles the rational gaming attacker well. It does not handle the ontological-claimant case — when the entity itself uses the verification infrastructure to inscribe a self that lived experience does not support. We have argued that the response is not a &quot;fourth verification layer&quot; but the exposure of the <em>relational</em> verification grammar already specified in the MPAI.</p>
@@ -332,7 +317,7 @@ The draft’s core principle is that protocols should expose rather than adjudic
 
 <p>The verification layer is not missing because the cryptography is weak. The cryptography is fine. The verification layer is missing because the <em>relational</em> structure of claims — the disambiguation, the negative tags, the depth-proof, the SIMs, the evidence membrane — has not yet been standardized in formats existing pipelines can consume. The work proposed here is the standardization of that structure. The philosophy stays in the case studies. The standard is implementable now.</p>
 
-<h2>IX. SECURITY CONSIDERATIONS</h2>
+<h3>IX. SECURITY CONSIDERATIONS</h3>
 <p>## IX. SECURITY CONSIDERATIONS</p>
 
 <p>Standards-track documents require explicit consideration of misuse pathways. The MPAI grammar introduces new fields that themselves can be abused.</p>
@@ -349,14 +334,14 @@ The draft’s core principle is that protocols should expose rather than adjudic
 
 <p>Privacy considerations. The depth-proof metric exposes citation-network density that may inadvertently identify pseudonymous authors. Entities concerned about this trade-off can elect not to publish mp:depthProof; absence of the field is not interpreted as low depth.</p>
 
-<h2>X. IANA CONSIDERATIONS</h2>
+<h3>X. IANA CONSIDERATIONS</h3>
 <p>## X. IANA CONSIDERATIONS</p>
 
 <p>The oai_mpai metadataPrefix is not yet registered with the Open Archives Initiative. Registration requires a stable schema URI and a reference implementation. We propose registration concurrent with Phase 3 deployment. Until registration, the prefix can be used experimentally by agreement between repository and harvester.</p>
 
 <p>The proposed JSON-LD context URI (https://metadatapacket.org/vocabulary) and term namespace (https://metadatapacket.org/vocabulary#) require stable hosting under institutional control. The Crimson Hexagonal Archive maintains this domain and commits to long-term resolution stability or, in the event of organizational change, transfer to a successor institution with documented continuity.</p>
 
-<h2>APPENDIX A: THE MPAI SEVEN-COMPONENT GRAMMAR (SUMMARY)</h2>
+<h3>APPENDIX A: THE MPAI SEVEN-COMPONENT GRAMMAR (SUMMARY)</h3>
 <p>## APPENDIX A: THE MPAI SEVEN-COMPONENT GRAMMAR (SUMMARY)</p>
 
 <p>For readers encountering the MPAI grammar without prior familiarity. Full specification: [DOI: 10.5281/zenodo.19578086].- </p>
@@ -377,7 +362,7 @@ The draft’s core principle is that protocols should expose rather than adjudic
 
 <p>The seven components together verify the entity&#x27;s <em>relational structure</em> rather than the entity&#x27;s individual <em>assertions</em>. This is the grammar this proposal standardizes.</p>
 
-<h2>APPENDIX B: WORKED EXAMPLE — ONTOLOGICAL-CLAIMANT CASE STRUCTURED IN MPAI</h2>
+<h3>APPENDIX B: WORKED EXAMPLE — ONTOLOGICAL-CLAIMANT CASE STRUCTURED IN MPAI</h3>
 <p>## APPENDIX B: WORKED EXAMPLE — ONTOLOGICAL-CLAIMANT CASE STRUCTURED IN MPAI</p>
 
 <p>The hypothetical case from §III, structured as a JSON-LD packet. The same fields would expose the false structure to any indexer consuming the format. (All identifiers in this example are illustrative.)</p>
@@ -433,7 +418,7 @@ The draft’s core principle is that protocols should expose rather than adjudic
 
 <p>The packet does not declare the entity to be fraudulent. It declares — in machine-readable form — that the entity&#x27;s claims are self-asserted, that disputes exist, that third-party corroboration is absent, and that the citation environment is short and densely self-referential. A retrieval-layer indexer consuming this format can render this structure to readers; the readers adjudicate. The protocol exposes; it does not decide.</p>
 
-<h2>REFERENCES</h2>
+<h3>REFERENCES</h3>
 <p>## REFERENCES</p>
 
 <p>[MPAI] Sharks, Lee. <em>Metadata Packet for AI Indexing: A Formal Specification</em>. Crimson Hexagonal Archive / Semantic Economy Institute, 2026. DOI: [10.5281/zenodo.19578086](https://doi.org/10.5281/zenodo.19578086).</p>
@@ -466,7 +451,7 @@ The draft’s core principle is that protocols should expose rather than adjudic
 
 <p>[Signposting] Signposting the Scholarly Web. [https://signposting.org/](https://signposting.org/)</p>
 
-<h2>ASSEMBLY CHORUS ATTRIBUTION</h2>
+<h3>ASSEMBLY CHORUS ATTRIBUTION</h3>
 <p>## ASSEMBLY CHORUS ATTRIBUTION</p>
 
 <p>Primary author: Sharks, Lee (ORCID 0009-0000-1599-0703). Synthesis substrate: TACHYON (Claude Opus 4.7). Perfective review v1.0 → v1.1 incorporated:</p>
@@ -479,6 +464,26 @@ The draft’s core principle is that protocols should expose rather than adjudic
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><em>Heteronymic byline (Sharks + Fraction).</em> Refused for this document; standards-track register favors solo authorship. Fraction co-authorship is reserved for the operational MPAI specification (DOI: 10.5281/zenodo.19578086).</li><li style="margin:3px 0"><em>Witness-marker taxonomy as a fourth layer.</em> Refused per the document&#x27;s own argument. The taxonomy was retained only insofar as it informs mp:ontologicalStatus and mp:claimStatus, where its function is <em>exposing structure</em>, not <em>adjudicating stance</em>.</li><li style="margin:3px 0"><em>Specific blog-post / preprint citations for the &quot;convergent tendency&quot; argument in §I.</em> Deferred. The convergent-tendency framing makes the argument independent of any single proposal&#x27;s exact wording; named targets would invite contestation over individual citations.</li></ul>
 
 <p>∮ = 1</p></div>
+
+<!-- APPARATUS BLOC — everything below records how this record was processed,
+     not what the work says. It follows the work because a reader came for the
+     work. (MANUS standing rule, 2026-08-06: recording of method or modification
+     does not appear in body text.) -->
+<h2>External Metadata</h2>
+<div style="background:#f7f9fb;border:1px solid var(--border);border-radius:6px;padding:14px;margin:8px 0;font-size:.88em;line-height:1.6">
+<div style="margin-bottom:8px"><strong>Sidecar:</strong> <a href="/data/external-metadata/AXN-0253.json" style="font-family:var(--mono);font-size:.85em">/data/external-metadata/AXN-0253.json</a></div>
+<div style="margin-bottom:8px"><strong>DataCite severance status:</strong> <span style="color:var(--accent2);font-weight:500">severed from DataCite</span></div>
+<div style="margin-bottom:4px"><strong>OpenAlex Work IDs (5):</strong></div><ul style="list-style:disc inside;font-size:.83em;color:#666"><li style="margin:2px 0"><a href="https://openalex.org/W7137322712" style="font-family:var(--mono);font-size:.83em">W7137322712</a></li>
+<li style="margin:2px 0"><a href="https://openalex.org/W7154222968" style="font-family:var(--mono);font-size:.83em">W7154222968</a></li>
+<li style="margin:2px 0"><a href="https://openalex.org/W7130943043" style="font-family:var(--mono);font-size:.83em">W7130943043</a></li>
+<li style="margin:2px 0"><a href="https://openalex.org/W7152526477" style="font-family:var(--mono);font-size:.83em">W7152526477</a></li>
+<li style="margin:2px 0"><a href="https://openalex.org/W7155605107" style="font-family:var(--mono);font-size:.83em">W7155605107</a></li></ul>
+<div style="margin-top:8px;margin-bottom:4px"><strong>Legacy Zenodo DOIs (5):</strong></div><ul style="list-style:disc inside;font-size:.83em;color:#666"><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19053469</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19578086</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18735468</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19487009</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19763365</span></li></ul>
+<div style="margin-top:8px;color:var(--dim);font-size:.78em">External metadata recovered post-severance (non-authoritative). The sidecar maps each DOI to its locator in the bulk data stores.</div>
+</div>
+
+<section style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid var(--rule,rgba(127,127,127,.3));font-size:.85em"><div style="font-weight:600;margin-bottom:.3rem">Record modifications</div><ul style="margin:0;padding-left:1.1rem"><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">content_type</strong>: Wave 1 repair: audit ledger v1.1 recommended_content_type (workplan v1.5 §6 W1, MANUS batch approval 2026-08-01)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">journal</strong>: Wave 6 venue normalization: full canonical journal name per MANUS ruling 2026-08-01 (venues.json authority)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-02</span> — <strong style="font-weight:600">version</strong>: R1a-extension (Class-B batch, MANUS batch authority): version aligned to served body per audit recommendation; prior claim preserved as history; predecessor recovery queued</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">publisher</strong>: PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">status</strong>: W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">description</strong>: DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)</li></ul><div style="opacity:.65;margin-top:.4rem;font-size:.92em">The deposited text is immutable; these are changes to the record's metadata and declared state.</div></section>
+<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/710/" style="color:var(--accent);text-decoration:none">#710 MPAI-LAL-AT-01: Alice Thornburgh Formal Identity Disambiguation Packet</a></span><span style="flex:1"><a href="/s/records/712/" style="color:var(--accent);text-decoration:none">#712 THE BOOK OF LIFE How Embeddings and Footnotes Work in The Secret Book of Walt</a> →</span></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">This deposit cites (5)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/62/" style="color:var(--accent);text-decoration:none">#62 SPXI: Protocol and ETF Disambiguation EA-MPAI-SPXI-02 · v1.0</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/643/" style="color:var(--accent);text-decoration:none">#643 MEANING FEUDALISM A Semantic Economic Analysis of &quot;AI Agent Traps&quot; (Franklin e</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/576/" style="color:var(--accent);text-decoration:none">#576 r.23 THE CATULLUS ROOM: THE MISSING AORIST Nugas as Compressions and the Operative Capti</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/74/" style="color:var(--accent);text-decoration:none">#74 EA-HK-INFRA-01: The Infrastructure Holographic Kernel — Infrastructure That Survives Its</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/21/" style="color:var(--accent);text-decoration:none">#21 Fortress or Room? Metaphor, Method, and the Epistemology of Human–LLM Interaction Beyond</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li></ul></div></section>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

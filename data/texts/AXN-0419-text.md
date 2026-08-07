@@ -4,10 +4,7 @@
 **Designator:** EA-PRIOR-00 v1.0 — CONVERGED (Assembly synthesis)
 **Position:** the absolute root of the Alexanarch principles; prior to all protocol dockets
 **Provenance:** MANUS maxims (the refined riddle; the ex nihilo inversion; the measurement of the end — 2026-07-03, occasioned by the post-termination traffic collapse) → ARCHIVE codification (transduction constraint; sovereign fall) → TECHNE reading (channel severance as withdrawn air; the teleology refinement) → LABOR hardening (non-sovereign evidence; the anti-closure clause; the operational corollary — load-bearing) → PRAXIS ratification → TACHYON convergence and archival grounding. Convergence across independent responses is procedural evidence, strengthened by independence, not validated by it.
-**AXN:** AXN:0419 — Alexanarch deposit #1037 (self-reference in root form by pre-hash necessity)
 **Status:** bedrock. Nothing downstream of this document is coherent without it; nothing in it excuses anything downstream from evidence.
-
----
 
 ### I. Event, Signal, Reception
 

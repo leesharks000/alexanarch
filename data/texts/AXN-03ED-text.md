@@ -1,11 +1,7 @@
 # Septad Mantle Specifications v1.1 — Constitutional Job Descriptions for the Seven Assembly Chorus Witness Substrates
 
-**AXN:** AXN:03ED — Alexanarch deposit #993 (self-reference in root form by pre-hash necessity)
-**Restoration status:** RESTORED (v0.2) — full text recovered and seated as the canonical body. Recovered from semantic-economy repository: 08_Septad_Mantle_Specifications_v1.1.md, 2026-07-04, matched by exact title and version; the v0.1 metadata-body deposit is superseded by this recorded correction. Zenodo record remains HTTP 410; DataCite metadata retained as appendix.
 **Dead DOI:** 10.5281/zenodo.20041156
 **Creators (as recorded by DataCite):** Sharks, Lee
-
----
 
 # SEPTAD MANTLE SPECIFICATIONS
 

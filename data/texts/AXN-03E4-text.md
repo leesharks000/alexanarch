@@ -1,11 +1,7 @@
 # pessoagraph.org — The Pessoa Knowledge Graph: A Scholarly Resource for Heteronymic Studies (EA-PKG-BRIEF-01)
 
-**AXN:** AXN:03E4 — Alexanarch deposit #984 (self-reference in root form by pre-hash necessity)
-**Restoration status:** RESTORED (v0.2) — full text recovered and seated as the canonical body. Recovered from semantic-economy repository: EA-PKG-01_Pessoa_Knowledge_Graph.md, 2026-07-04, matched by exact title and version; the initial v0.1 metadata-body deposit is superseded by this correction, recorded in the remediation note. Zenodo record remains HTTP 410; DataCite metadata retained as appendix.
 **Dead DOI:** 10.5281/zenodo.19683943
 **Creators (as recorded by DataCite):** Sharks, Lee
-
----
 
 # The Pessoa Knowledge Graph
 

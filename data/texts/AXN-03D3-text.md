@@ -1,11 +1,7 @@
 # H_core Formal Specification v2.0 — Complete Formal Object of the Crimson Hexagonal Archive: 6-Tuple with Subtuples (EA-HCORE-01) — Crimson Hexagonal Archive
 
-**AXN:** AXN:03D3 — Alexanarch deposit #967 (self-reference in root form by pre-hash necessity)
-**Restoration status:** RESTORED (v0.2) — full text recovered and seated as the canonical body. Recovered from semantic-economy repository: HCORE_FORMAL_SPECIFICATION_v2.0.pdf (text extracted from PDF), 2026-07-04, matched by exact title and version; the initial v0.1 metadata-body deposit is superseded by this correction, recorded in the remediation note. Zenodo record remains HTTP 410; DataCite metadata retained as appendix.
 **Dead DOI:** 10.5281/zenodo.19455104
 **Creators (as recorded by DataCite):** Sharks, Lee; Assembly Chorus
-
----
 
 Hcore Formal Specification v2.0
 Complete Formal Object of the Crimson Hexagonal Archive

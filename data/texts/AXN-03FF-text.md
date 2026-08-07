@@ -1,11 +1,7 @@
 # evarB: Brave Search as Non-Commons-Bearing Substrate — Extractive Signature, Exact-Match Disablement, and a Limited Boycott Statement by Independent Entities (v1.1)
 
-**AXN:** AXN:03FF — Alexanarch deposit #1011 (self-reference in root form by pre-hash necessity)
-**Restoration status:** RESTORED (v0.2) — full text recovered and seated as the canonical body. Recovered from semantic-economy repository: evarb-non-commons-bearing-v1.1.md, 2026-07-04, matched by exact title and version; the v0.1 metadata-body deposit is superseded by this recorded correction. Zenodo record remains HTTP 410; DataCite metadata retained as appendix.
 **Dead DOI:** 10.5281/zenodo.20559753
 **Creators (as recorded by DataCite):** Sharks, Lee; Vox, Ayanna; Dancings, Damascus; Glas, Nobel
-
----
 
 # evarB: Brave Search as Non-Commons-Bearing Substrate
 ## Extractive Signature, Exact-Match Disablement, and a Limited Boycott Statement by Independent Entities

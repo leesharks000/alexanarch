@@ -1,13 +1,5 @@
 # A Body Prepared — Homunculus (EA-ARK-FICTION-01.1)
 
-**Cranes, Rebekah; Sharks, Lee** · restored 2026-07-28
-
-**AXN:** AXN:055B — Alexanarch deposit #1354 (self-reference in root form by pre-hash necessity)
-**Restoration status:** RESTORED (v0.2) — full text recovered and seated as the canonical body. Recovered from https://mindcontrolpoems.blogspot.com/2026/04/a-body-prepared-homunculus-shark-ark.html under the in-place restoration pass (EA-AVAILABILITY-INTEGRITY-01 follow-on). Body-head gate passed against the truth title; the post body is the source of truth (titles/slugs may be stale per authorial overwrite practice). These bytes are the head of the work's version chain as held on the blog at fetch time.
-**Dead DOI(s):** 10.5281/zenodo.19638125, 10.5281/zenodo.19638126 — severed 2026-06-19.
-
----
-
  A Body Prepared — Homunculus
 Shark Ark · Fiction · 06.SEI.ARK.FICTION.01.1
 Attributed: Rebekah Cranes, for the Dodecad
@@ -44,68 +36,3 @@ Attribution: Rebekah Cranes (operative) / Lee Sharks (archival)
 ∮ = 1
 
 ---
-
-## Appendix — metadata-capture body (superseded 2026-07-28, retained per non-destruction)
-
----
-deposit_number: 1354
-hex: 055B
-title: A Body Prepared — Homunculus (EA-ARK-FICTION-01.1)
-creator: Cranes, Rebekah; Sharks, Lee
-orcid: 0009-0000-1599-0703
-date: 2026-04-17
-content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
-license: CC-BY-4.0
-substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
-version: semi-restored v1.0
-related_ids: "https://doi.org/10.5281/zenodo.19638125 (severed); https://doi.org/10.5281/zenodo.19638126 (severed)"
-axn_schema_version: v2
-protocol_version: alexanarch-deposit-protocol/v1
-keywords:
-  - Crimson Hexagonal Archive
-  - semi-restored
-  - metadata-only
-  - severed DOI
-  - Zenodo termination
-  - homunculus
-  - symbolon
-  - compressed fiction
-  - holographic token
-  - Shark Ark
-  - operative fiction
-  - Shroud of Turin
-  - Book of Revelation
-  - scribal workshop
-  - entity inscription
-  - retrocausal seed
-  - Rebekah Cranes
----
-
-# A Body Prepared — Homunculus (EA-ARK-FICTION-01.1)
-
-## Methodology
-
-Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
-
-## Falsification Conditions
-
-Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
-
-
-**Work:** A Body Prepared — Homunculus (EA-ARK-FICTION-01.1)
-**Severed DOI(s):** 10.5281/zenodo.19638125, 10.5281/zenodo.19638126
-**Source tier:** DataCite full-metadata capture
-**Creators (as captured):** Cranes, Rebekah; Sharks, Lee
-Captured citation: Cranes, R., & Sharks, L. (2026). A Body Prepared — Homunculus (EA-ARK-FICTION-01.1) (1.0). Semantic Economy Institute. https://doi.org/10.5281/zenodo.19638126
-
-**Removal forensics:** Zenodo removal forensics: removal_date 2026-06-19T11:36:35.513600+00:00, removal_reason out-of-scope, removed_by user 1060945. 
-
-**Captured description:** Compressed companion to A Body Prepared (06.SEI.ARK.FICTION.01). A ~500-word symbolon-typed token carrying the full architecture of the parent piece in holographic miniature. Designed to function as an embeddable signature — a broken shard readable as identity-proof across archive documents. Six sections mirror the parent's five-part arc plus signal-coda: the Problem (the Temple will fall), the Craft (two alphabets, the slow kiln), the Inversion (the cloth composes the workshop), the Dispersal (three soils), the Room (the abbot's unknowing echo), and the Signal (the workshops have not stopped).
-Parent story: A Body Prepared (DOI 10.5281/zenodo.19638124). Corpus: Shark Ark (DOI 10.5281/zenodo.19477219). The symbolon is intended for embedding in colophons and reference matter of related archive documents, functioning as a recursive identity signature.
-Hex: 06.SEI.ARK.FICTION.01.1 | Institute: Semantic Economy Institute
-
-**Captured subjects:** homunculus, symbolon, compressed fiction, holographic token, Shark Ark, operative fiction, Shroud of Turin, Book of Revelation, scribal workshop, entity inscription, retrocausal seed, Rebekah Cranes, Dodecad, davar, Crimson Hexagonal Archive, Semantic Economy Institute, Lee Sharks, Josephus thesis, SPXI, nested composition
-
----
-
-**Status (derived FULL):** Full text seated. A prior batch declaration of "metadata capture only; no full text" appeared here and was FALSE for this record's current state; corrected 2026-08-04 under the state-conformance rule.

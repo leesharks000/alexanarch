@@ -1,11 +1,7 @@
 # The Orthonym Becomes a Heteronym: Facebook and the Industrialization of Unconscious Identity-Construction
 
-**AXN:** AXN:03F0 — Alexanarch deposit #996 (self-reference in root form by pre-hash necessity)
-**Restoration status:** RESTORED (v0.2) — full text recovered and seated as the canonical body. Recovered from semantic-economy repository: Sigil_Orthonym_Becomes_Heteronym.md, 2026-07-04, matched by exact title and version; the v0.1 metadata-body deposit is superseded by this recorded correction. Zenodo record remains HTTP 410; DataCite metadata retained as appendix.
 **Dead DOI:** 10.5281/zenodo.20057788
 **Creators (as recorded by DataCite):** Sigil, Johannes
-
----
 
 # The Orthonym Becomes a Heteronym
 ## Facebook and the Industrialization of Unconscious Identity-Construction

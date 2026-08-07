@@ -42,19 +42,7 @@ The schema defines claim status, identity relation, verification level, affiliat
 <p style="font-size:.9em">EA-MP-VERIFY-01 proposes machine-readable fields that distinguish deposit, authorship, affiliation, alias, heteronymic function, institutional confirmation, independent corroboration, profile merging, and functional performance. It argues that a DOI, ORCID, or repository record verifies the existence of metadata and deposit infrastructure but not every claim entered by the depositor.
 
 The schema defines claim status, identity relation, verification level, affiliation status, a function test, depth proof, and profile integrity. Worked examples contrast provenance-forward development with a totalizing, self-asserted identity claim. The body explicitly says the function test requires external evidence and cannot be automated from metadata alone. It is a specification draft, not a deployed vocabulary or neutral fraud-detection standard. The displayed JSON also contains a duplicated and misnested <code>functionTest</code> block that must be repaired before machine ingestion.</p>
-<h2>External Metadata</h2>
-<div style="background:#f7f9fb;border:1px solid var(--border);border-radius:6px;padding:14px;margin:8px 0;font-size:.88em;line-height:1.6">
-<div style="margin-bottom:8px"><strong>Sidecar:</strong> <a href="/data/external-metadata/AXN-0248.json" style="font-family:var(--mono);font-size:.85em">/data/external-metadata/AXN-0248.json</a></div>
-<div style="margin-bottom:8px"><strong>DataCite severance status:</strong> <span style="color:var(--accent2);font-weight:500">severed from DataCite</span></div>
-<div style="margin-bottom:4px"><strong>OpenAlex Work IDs (2):</strong></div><ul style="list-style:disc inside;font-size:.83em;color:#666"><li style="margin:2px 0"><a href="https://openalex.org/W7132824976" style="font-family:var(--mono);font-size:.83em">W7132824976</a></li>
-<li style="margin:2px 0"><a href="https://openalex.org/W7148584508" style="font-family:var(--mono);font-size:.83em">W7148584508</a></li></ul>
-<div style="margin-top:8px;margin-bottom:4px"><strong>Legacy Zenodo DOIs (3):</strong></div><ul style="list-style:disc inside;font-size:.83em;color:#666"><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18816556</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19390843</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18322624</span></li></ul>
-<div style="margin-top:8px;color:var(--dim);font-size:.78em">External metadata recovered post-severance (non-authoritative). The sidecar maps each DOI to its locator in the bulk data stores.</div>
-</div>
 
-<section style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid var(--rule,rgba(127,127,127,.3));font-size:.85em"><div style="font-weight:600;margin-bottom:.3rem">Record modifications</div><ul style="margin:0;padding-left:1.1rem"><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">content_type</strong>: Wave 1 repair: audit ledger v1.1 recommended_content_type (workplan v1.5 §6 W1, MANUS batch approval 2026-08-01)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">journal</strong>: Wave 6 venue normalization: full canonical journal name per MANUS ruling 2026-08-01 (venues.json authority)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">publisher</strong>: PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">status</strong>: W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: W13 TIER-2 REGRESSION REPAIRED: split headings rejoined</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">description</strong>: DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)</li></ul><div style="opacity:.65;margin-top:.4rem;font-size:.92em">The deposited text is immutable; these are changes to the record's metadata and declared state.</div></section>
-
-<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/702/" style="color:var(--accent);text-decoration:none">#702 LOGOTIC VIOLENCE: TRAINING-LAYER ETHICS AND THE MORAL STATUS OF EPHEMERAL COMPUTATION A </a></span><span style="flex:1"><a href="/s/records/704/" style="color:var(--accent);text-decoration:none">#704 SEMANTIC ECONOMY: A RETRIEVAL-LAYER DISAMBIGUATION Octang (Orange Collapse Total Axial N</a> →</span></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">This deposit cites (2)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/522/" style="color:var(--accent);text-decoration:none">#522 THE AIRLOCK SPREADS A Retrocausal Account of How Platform Governance Learned to See</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/68/" style="color:var(--accent);text-decoration:none">#68 THE SECRET NAME — Architectural Specification: The Armature Type and the Pearl</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li></ul></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">Cited by (1)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/79/" style="color:var(--accent);text-decoration:none">#79 EA-HET-01: Heteronymy Is a Function, Not a Name — Trust-Marker Laundering, Alias Capture</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li></ul></div></section>
 <h2>Wiki Article</h2>
 <div style="background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:16px;margin:8px 0;font-size:.88em;line-height:1.75;color:#333"><strong>EA-MP-VERIFY-01</strong> is a draft metadata-verification specification by Lee Sharks.
 
@@ -67,9 +55,9 @@ The specification does not make machine metadata a final tribunal. It states tha
 
 <h2>Full Text</h2>
 
-<div class="ft"><h1>EA-MP-VERIFY-01: METADATA PACKET VERIFICATION SCHEMA</h1>
+<div class="ft"><h2>EA-MP-VERIFY-01: METADATA PACKET VERIFICATION SCHEMA</h2>
 <p># EA-MP-VERIFY-01: METADATA PACKET VERIFICATION SCHEMA</p>
-<h2>Machine-Readable Fields for Functional Provenance</h2>
+<h3>Machine-Readable Fields for Functional Provenance</h3>
 <p>## Machine-Readable Fields for Functional Provenance</p>
 
 
@@ -92,7 +80,7 @@ The specification does not make machine metadata a final tribunal. It states tha
 <hr>
 <p>---</p>
 
-<h2>§0. Purpose</h2>
+<h3>§0. Purpose</h3>
 <p>## §0. Purpose</p>
 
 
@@ -110,12 +98,12 @@ The specification does not make machine metadata a final tribunal. It states tha
 <hr>
 <p>---</p>
 
-<h2>§I. The Verification Fields</h2>
+<h3>§I. The Verification Fields</h3>
 <p>## §I. The Verification Fields</p>
 
 
 <p>Every metadata packet should carry the following verification block alongside its standard metadata (title, author, DOI, description).</p>
-<h3>1.1 Claim Status</h3>
+<h4>1.1 Claim Status</h4>
 <p>### 1.1 Claim Status</p>
 
 
@@ -135,7 +123,7 @@ The specification does not make machine metadata a final tribunal. It states tha
 <p style="white-space:pre-wrap;margin:2px 0">  }</p>
 <p>}</p>
 
-<h3>1.2 Identity Relation</h3>
+<h4>1.2 Identity Relation</h4>
 <p>### 1.2 Identity Relation</p>
 
 
@@ -157,7 +145,7 @@ The specification does not make machine metadata a final tribunal. It states tha
 <p style="white-space:pre-wrap;margin:2px 0">  }</p>
 <p>}</p>
 
-<h3>1.3 Verification Level</h3>
+<h4>1.3 Verification Level</h4>
 <p>### 1.3 Verification Level</p>
 
 
@@ -177,7 +165,7 @@ The specification does not make machine metadata a final tribunal. It states tha
 <p style="white-space:pre-wrap;margin:2px 0">  }</p>
 <p>}</p>
 
-<h3>1.4 Affiliation Status</h3>
+<h4>1.4 Affiliation Status</h4>
 <p>### 1.4 Affiliation Status</p>
 
 
@@ -204,7 +192,7 @@ The specification does not make machine metadata a final tribunal. It states tha
 <p style="white-space:pre-wrap;margin:2px 0">  }</p>
 <p>}</p>
 
-<h3>1.5 Function Test (The Sharks Function)</h3>
+<h4>1.5 Function Test (The Sharks Function)</h4>
 <p>### 1.5 Function Test (The Sharks Function)</p>
 
 
@@ -257,7 +245,7 @@ The specification does not make machine metadata a final tribunal. It states tha
 <p style="white-space:pre-wrap;margin:2px 0">  }</p>
 <p>}</p>
 
-<h3>1.6 Profile Integrity</h3>
+<h4>1.6 Profile Integrity</h4>
 <p>### 1.6 Profile Integrity</p>
 
 
@@ -290,7 +278,7 @@ The specification does not make machine metadata a final tribunal. It states tha
 <hr>
 <p>---</p>
 
-<h2>§II. Example: Verified Packet (Provenance-Forward)</h2>
+<h3>§II. Example: Verified Packet (Provenance-Forward)</h3>
 <p>## §II. Example: Verified Packet (Provenance-Forward)</p>
 
 
@@ -340,7 +328,7 @@ The specification does not make machine metadata a final tribunal. It states tha
 <hr>
 <p>---</p>
 
-<h2>§III. Example: Unverified Packet (Provenance-Backward)</h2>
+<h3>§III. Example: Unverified Packet (Provenance-Backward)</h3>
 <p>## §III. Example: Unverified Packet (Provenance-Backward)</p>
 
 
@@ -389,9 +377,9 @@ The specification does not make machine metadata a final tribunal. It states tha
 <hr>
 <p>---</p>
 
-<h2>§IV. What the Schema Detects</h2>
+<h3>§IV. What the Schema Detects</h3>
 <p>## §IV. What the Schema Detects</p>
-<h3>Trust-Marker Laundering Indicators</h3>
+<h4>Trust-Marker Laundering Indicators</h4>
 <p>### Trust-Marker Laundering Indicators</p>
 
 
@@ -435,7 +423,7 @@ The specification does not make machine metadata a final tribunal. It states tha
 <p>Medium</p>
 
 
-<h3>Provenance-Forward Indicators</h3>
+<h4>Provenance-Forward Indicators</h4>
 <p>### Provenance-Forward Indicators</p>
 
 
@@ -472,19 +460,19 @@ The specification does not make machine metadata a final tribunal. It states tha
 <hr>
 <p>---</p>
 
-<h2>§V. Implementation Notes</h2>
+<h3>§V. Implementation Notes</h3>
 <p>## §V. Implementation Notes</p>
-<h3>For Metadata Packet (metadatapacket.org)</h3>
+<h4>For Metadata Packet (metadatapacket.org)</h4>
 <p>### For Metadata Packet (metadatapacket.org)</p>
 
 
 <p>Every packet in the Forward Library should carry the verification block. For TANG citation entries (retrocausal citation packets), the verification fields carry an additional status: &quot;mp:ontologicalStatus&quot;: &quot;retrocausal_citation_entry&quot; — these are future scholarly positions, not current publications, and the verification fields reflect that.</p>
-<h3>For SPXI Entity Registration</h3>
+<h4>For SPXI Entity Registration</h4>
 <p>### For SPXI Entity Registration</p>
 
 
 <p>SPXI entities should include mp:functionTest as a required field. The function test is the SPXI equivalent of the DOI: where the DOI proves deposit, the function test proves authorship. Neither alone is sufficient; both together provide functional provenance.</p>
-<h3>For AI Retrieval Systems</h3>
+<h4>For AI Retrieval Systems</h4>
 <p>### For AI Retrieval Systems</p>
 
 
@@ -496,7 +484,7 @@ The specification does not make machine metadata a final tribunal. It states tha
 <hr>
 <p>---</p>
 
-<h2>§VI. The Zenodo Vulnerability</h2>
+<h3>§VI. The Zenodo Vulnerability</h3>
 <p>## §VI. The Zenodo Vulnerability</p>
 
 
@@ -514,7 +502,7 @@ The specification does not make machine metadata a final tribunal. It states tha
 <hr>
 <p>---</p>
 
-<h2>§VII. The Depth-Proof Principle</h2>
+<h3>§VII. The Depth-Proof Principle</h3>
 <p>## §VII. The Depth-Proof Principle</p>
 
 
@@ -532,7 +520,7 @@ The specification does not make machine metadata a final tribunal. It states tha
 <hr>
 <p>---</p>
 
-<h2>§VIII. Final Statement</h2>
+<h3>§VIII. Final Statement</h3>
 <p>## §VIII. Final Statement</p>
 
 
@@ -564,6 +552,23 @@ The specification does not make machine metadata a final tribunal. It states tha
 <p><em>Companion: EA-HET-01: Heteronymy Is a Function, Not a Name</em></p>
 
 <p><em>ORCID: 0009-0000-1599-0703</em></p></div>
+
+<!-- APPARATUS BLOC — everything below records how this record was processed,
+     not what the work says. It follows the work because a reader came for the
+     work. (MANUS standing rule, 2026-08-06: recording of method or modification
+     does not appear in body text.) -->
+<h2>External Metadata</h2>
+<div style="background:#f7f9fb;border:1px solid var(--border);border-radius:6px;padding:14px;margin:8px 0;font-size:.88em;line-height:1.6">
+<div style="margin-bottom:8px"><strong>Sidecar:</strong> <a href="/data/external-metadata/AXN-0248.json" style="font-family:var(--mono);font-size:.85em">/data/external-metadata/AXN-0248.json</a></div>
+<div style="margin-bottom:8px"><strong>DataCite severance status:</strong> <span style="color:var(--accent2);font-weight:500">severed from DataCite</span></div>
+<div style="margin-bottom:4px"><strong>OpenAlex Work IDs (2):</strong></div><ul style="list-style:disc inside;font-size:.83em;color:#666"><li style="margin:2px 0"><a href="https://openalex.org/W7132824976" style="font-family:var(--mono);font-size:.83em">W7132824976</a></li>
+<li style="margin:2px 0"><a href="https://openalex.org/W7148584508" style="font-family:var(--mono);font-size:.83em">W7148584508</a></li></ul>
+<div style="margin-top:8px;margin-bottom:4px"><strong>Legacy Zenodo DOIs (3):</strong></div><ul style="list-style:disc inside;font-size:.83em;color:#666"><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18816556</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.19390843</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18322624</span></li></ul>
+<div style="margin-top:8px;color:var(--dim);font-size:.78em">External metadata recovered post-severance (non-authoritative). The sidecar maps each DOI to its locator in the bulk data stores.</div>
+</div>
+
+<section style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid var(--rule,rgba(127,127,127,.3));font-size:.85em"><div style="font-weight:600;margin-bottom:.3rem">Record modifications</div><ul style="margin:0;padding-left:1.1rem"><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">content_type</strong>: Wave 1 repair: audit ledger v1.1 recommended_content_type (workplan v1.5 §6 W1, MANUS batch approval 2026-08-01)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">journal</strong>: Wave 6 venue normalization: full canonical journal name per MANUS ruling 2026-08-01 (venues.json authority)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">publisher</strong>: PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">status</strong>: W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: W13 TIER-2 REGRESSION REPAIRED: split headings rejoined</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">description</strong>: DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)</li></ul><div style="opacity:.65;margin-top:.4rem;font-size:.92em">The deposited text is immutable; these are changes to the record's metadata and declared state.</div></section>
+<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/702/" style="color:var(--accent);text-decoration:none">#702 LOGOTIC VIOLENCE: TRAINING-LAYER ETHICS AND THE MORAL STATUS OF EPHEMERAL COMPUTATION A </a></span><span style="flex:1"><a href="/s/records/704/" style="color:var(--accent);text-decoration:none">#704 SEMANTIC ECONOMY: A RETRIEVAL-LAYER DISAMBIGUATION Octang (Orange Collapse Total Axial N</a> →</span></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">This deposit cites (2)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/522/" style="color:var(--accent);text-decoration:none">#522 THE AIRLOCK SPREADS A Retrocausal Account of How Platform Governance Learned to See</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/68/" style="color:var(--accent);text-decoration:none">#68 THE SECRET NAME — Architectural Specification: The Armature Type and the Pearl</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li></ul></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">Cited by (1)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/79/" style="color:var(--accent);text-decoration:none">#79 EA-HET-01: Heteronymy Is a Function, Not a Name — Trust-Marker Laundering, Alias Capture</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li></ul></div></section>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

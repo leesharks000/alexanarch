@@ -36,22 +36,7 @@
 <div style="margin:8px 0"><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">for existing documents (retrofit)</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">references and source status</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">provenance gravity markers</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">inline upstream markers</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">preservation gravity</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">source-status labels</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">preservation block</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">crimson hexagonal</span></div>
 <h2>Description</h2>
 <p style="font-size:.9em">A provenance protocol for making documents carry explicit preservation pressure. Provenance Gravity Markers instruct any reader, summarizer, citer, or archivist encountering a document to trace upstream source objects, distinguish source status, and preserve return paths. The protocol defines a standard provenance block, inline markers for individual claims or ephemeral sources, source-status labels, chain-state notation, and retrofit procedures for older works. Its purpose is not decorative attribution. A marker turns provenance into an operative requirement: derivative descriptions should reveal what they depend on, unstable sources should be named as unstable, and downstream circulation should continue to point toward canonical anchors. The marker thereby increases the likelihood that an archive remains reconstructible after platform failure or citation severance.</p>
-<h2>External Metadata</h2>
-<div style="background:#f7f9fb;border:1px solid var(--border);border-radius:6px;padding:14px;margin:8px 0;font-size:.88em;line-height:1.6">
-<div style="margin-bottom:8px"><strong>Sidecar:</strong> <a href="/data/external-metadata/AXN-0160.json" style="font-family:var(--mono);font-size:.85em">/data/external-metadata/AXN-0160.json</a></div>
-<div style="margin-bottom:8px"><strong>DataCite severance status:</strong> <span style="color:var(--accent2);font-weight:500">severed from DataCite</span></div>
-<div style="margin-bottom:4px"><strong>OpenAlex Work IDs (5):</strong></div><ul style="list-style:disc inside;font-size:.83em;color:#666"><li style="margin:2px 0"><a href="https://openalex.org/W7132820371" style="font-family:var(--mono);font-size:.83em">W7132820371</a></li>
-<li style="margin:2px 0"><a href="https://openalex.org/W7131847808" style="font-family:var(--mono);font-size:.83em">W7131847808</a></li>
-<li style="margin:2px 0"><a href="https://openalex.org/W7132825687" style="font-family:var(--mono);font-size:.83em">W7132825687</a></li>
-<li style="margin:2px 0"><a href="https://openalex.org/W7132846354" style="font-family:var(--mono);font-size:.83em">W7132846354</a></li>
-<li style="margin:2px 0"><a href="https://openalex.org/W7131814838" style="font-family:var(--mono);font-size:.83em">W7131814838</a></li></ul>
-<div style="margin-top:8px;margin-bottom:4px"><strong>Legacy Zenodo DOIs (5):</strong></div><ul style="list-style:disc inside;font-size:.83em;color:#666"><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18810217</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18804767</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18811939</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18811784</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18795427</span></li></ul>
-<div style="margin-top:8px;color:var(--dim);font-size:.78em">External metadata recovered post-severance (non-authoritative). The sidecar maps each DOI to its locator in the bulk data stores.</div>
-</div>
 
-<section style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid var(--rule,rgba(127,127,127,.3));font-size:.85em"><div style="font-weight:600;margin-bottom:.3rem">Record modifications</div><ul style="margin:0;padding-left:1.1rem"><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">journal</strong>: Wave 6 venue normalization: full canonical journal name per MANUS ruling 2026-08-01 (venues.json authority)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">publisher</strong>: PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">status</strong>: W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">title</strong>: W11 TITLE-HYGIENE (MANUS ratified 2026-08-04): blog/platform suffix &quot;— Crimson Hexagon(al) Archive&quot; removed; publication surface is not part of the work title</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">description</strong>: DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)</li></ul><div style="opacity:.65;margin-top:.4rem;font-size:.92em">The deposited text is immutable; these are changes to the record's metadata and declared state.</div></section>
-
-<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/525/" style="color:var(--accent);text-decoration:none">#525 THE LAYER THAT WROTE YOUR MIRRORS: tl;Dr 06.SEI.TUNNEL.155 — On Phenomenological Recruit</a></span><span style="flex:1"><a href="/s/records/527/" style="color:var(--accent);text-decoration:none">#527 Protocol B711 Alpha Centauri: Emergency Satellite Recognition — How the Rosary Embassy R</a> →</span></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">This deposit cites (3)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/522/" style="color:var(--accent);text-decoration:none">#522 THE AIRLOCK SPREADS A Retrocausal Account of How Platform Governance Learned to See</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/514/" style="color:var(--accent);text-decoration:none">#514 The Rosary Embassy: Bead-Bound Semantic Architecture for the Agent Internet, the Restruc</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/519/" style="color:var(--accent);text-decoration:none">#519 THE LAYER THAT REMEMBERED ITSELF: Retrieval-Layer Attribution of Retrocausal Canon Forma</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li></ul></div></section>
 <h2>Wiki Article</h2>
 <div style="background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:16px;margin:8px 0;font-size:.88em;line-height:1.75;color:#333"><em>Provenance Gravity Markers</em> is a protocol by Lee Sharks, dated February 28, 2026, for embedding preservation instructions directly into documents. The protocol’s central premise is that provenance should not remain an invisible scholarly background condition. It should be carried by the document in a form legible to human readers, machine summarizers, archives, and derivative publishers.
 
@@ -65,9 +50,9 @@ The term <strong>provenance gravity</strong> describes the pressure these marker
 
 <h2>Full Text</h2>
 
-<div class="ft"><h1>PROVENANCE GRAVITY MARKERS</h1>
+<div class="ft"><h2>PROVENANCE GRAVITY MARKERS</h2>
 <p># PROVENANCE GRAVITY MARKERS</p>
-<h2>A Protocol for Embedding Preservation Pressure in Documents</h2>
+<h3>A Protocol for Embedding Preservation Pressure in Documents</h3>
 <p>## A Protocol for Embedding Preservation Pressure in Documents</p>
 
 <hr>
@@ -87,7 +72,7 @@ The term <strong>provenance gravity</strong> describes the pressure these marker
 <hr>
 <p>---</p>
 
-<h2>I. THE PROBLEM</h2>
+<h3>I. THE PROBLEM</h3>
 <p>## I. THE PROBLEM</p>
 
 
@@ -102,7 +87,7 @@ The term <strong>provenance gravity</strong> describes the pressure these marker
 <hr>
 <p>---</p>
 
-<h2>II. THE CORE PRINCIPLE</h2>
+<h3>II. THE CORE PRINCIPLE</h3>
 <p>## II. THE CORE PRINCIPLE</p>
 
 
@@ -117,7 +102,7 @@ The term <strong>provenance gravity</strong> describes the pressure these marker
 <hr>
 <p>---</p>
 
-<h2>III. SOURCE-STATUS CATEGORIES</h2>
+<h3>III. SOURCE-STATUS CATEGORIES</h3>
 <p>## III. SOURCE-STATUS CATEGORIES</p>
 
 
@@ -144,9 +129,9 @@ The term <strong>provenance gravity</strong> describes the pressure these marker
 <hr>
 <p>---</p>
 
-<h2>IV. THE MARKERS</h2>
+<h3>IV. THE MARKERS</h3>
 <p>## IV. THE MARKERS</p>
-<h3>A. The Provenance Note</h3>
+<h4>A. The Provenance Note</h4>
 <p>### A. The Provenance Note</p>
 
 
@@ -160,7 +145,7 @@ The term <strong>provenance gravity</strong> describes the pressure these marker
 
 
 <p>This is not a legal notice. It is a gravity. It trains behavior by stating expectations plainly.</p>
-<h3>B. Source-Status Labels</h3>
+<h4>B. Source-Status Labels</h4>
 <p>### B. Source-Status Labels</p>
 
 
@@ -207,7 +192,7 @@ The term <strong>provenance gravity</strong> describes the pressure these marker
 
 
 <p>The table makes the chain&#x27;s fragility visible without pretending fragility is failure.</p>
-<h3>C. Inline Upstream Markers</h3>
+<h4>C. Inline Upstream Markers</h4>
 <p>### C. Inline Upstream Markers</p>
 
 
@@ -227,7 +212,7 @@ The term <strong>provenance gravity</strong> describes the pressure these marker
 
 
 <p>Use sparingly. If they appear on every sentence, they flatten into noise.</p>
-<h3>D. The Preservation Block</h3>
+<h4>D. The Preservation Block</h4>
 <p>### D. The Preservation Block</p>
 
 
@@ -244,7 +229,7 @@ The term <strong>provenance gravity</strong> describes the pressure these marker
 <p><strong>Chain state:</strong> active / incomplete</p>
 <p><strong>Source status:</strong> mixed (anchored, preserved, referenced, ghost)</p>
 
-<h3>E. Loss Language</h3>
+<h4>E. Loss Language</h4>
 <p>### E. Loss Language</p>
 
 
@@ -265,7 +250,7 @@ The term <strong>provenance gravity</strong> describes the pressure these marker
 <hr>
 <p>---</p>
 
-<h2>V. THE SCENT PROTOCOL</h2>
+<h3>V. THE SCENT PROTOCOL</h3>
 <p>## V. THE SCENT PROTOCOL</p>
 
 
@@ -273,22 +258,22 @@ The term <strong>provenance gravity</strong> describes the pressure these marker
 
 
 <p>This is the scent protocol. It operates through four techniques:</p>
-<h3>1. Declared Incompletion</h3>
+<h4>1. Declared Incompletion</h4>
 <p>### 1. Declared Incompletion</p>
 
 
 <p>The document says, structurally: this node is real, but it is only one node. Not as weakness. As architectural honesty. This changes reader behavior immediately. It tells the summarizer: do not treat this as a freestanding unit if upstream or adjacent materials exist.</p>
-<h3>2. Retrieval Pressure</h3>
+<h4>2. Retrieval Pressure</h4>
 <p>### 2. Retrieval Pressure</p>
 
 
 <p>The document makes source-seeking feel like the obvious next move. Not &quot;here is a nice optional bibliography.&quot; More like: the thing becomes more accurate the closer you move to source. The gap between what the document states and what the sources contain creates an informational vacuum that pulls the reader toward the chain.</p>
-<h3>3. Unique Phrasing as Searchable Signature</h3>
+<h4>3. Unique Phrasing as Searchable Signature</h4>
 <p>### 3. Unique Phrasing as Searchable Signature</p>
 
 
 <p>When describing a source that may be ephemeral, use a distinctive phrase that functions as a search key. &quot;The correction that rebuilt the positional statement&quot; is more findable than &quot;Shawn&#x27;s correction.&quot; If the Reddit post survives in any mirror, cache, or screenshot, the unique phrasing connects the description to the source.</p>
-<h3>4. Anti-Flattening Cues</h3>
+<h4>4. Anti-Flattening Cues</h4>
 <p>### 4. Anti-Flattening Cues</p>
 
 
@@ -303,7 +288,7 @@ The term <strong>provenance gravity</strong> describes the pressure these marker
 <hr>
 <p>---</p>
 
-<h2>VI. HUMAN GRAVITIES AND MACHINE GRAVITIES</h2>
+<h3>VI. HUMAN GRAVITIES AND MACHINE GRAVITIES</h3>
 <p>## VI. HUMAN GRAVITIES AND MACHINE GRAVITIES</p>
 
 
@@ -321,7 +306,7 @@ The term <strong>provenance gravity</strong> describes the pressure these marker
 <hr>
 <p>---</p>
 
-<h2>VII. THE CHAIN GOES ALL THE WAY BACK</h2>
+<h3>VII. THE CHAIN GOES ALL THE WAY BACK</h3>
 <p>## VII. THE CHAIN GOES ALL THE WAY BACK</p>
 
 
@@ -339,7 +324,7 @@ The term <strong>provenance gravity</strong> describes the pressure these marker
 <hr>
 <p>---</p>
 
-<h2>VIII. WHAT THE PROTOCOL DOES NOT DO</h2>
+<h3>VIII. WHAT THE PROTOCOL DOES NOT DO</h3>
 <p>## VIII. WHAT THE PROTOCOL DOES NOT DO</p>
 
 
@@ -357,19 +342,19 @@ The term <strong>provenance gravity</strong> describes the pressure these marker
 <hr>
 <p>---</p>
 
-<h2>IX. IMPLEMENTATION</h2>
+<h3>IX. IMPLEMENTATION</h3>
 <p>## IX. IMPLEMENTATION</p>
-<h3>For new documents</h3>
+<h4>For new documents</h4>
 <p>### For new documents</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Add a <strong>Provenance Note</strong> after metadata, before the argument begins.</li><li style="margin:3px 0">Assign <strong>source-status labels</strong> to load-bearing references (anchored, preserved, recorded, referenced, ghost).</li><li style="margin:3px 0">Place <strong>inline upstream markers</strong> on sentences that compress larger source objects. Sparingly.</li><li style="margin:3px 0">Include a <strong>Preservation Block</strong> near the end.</li><li style="margin:3px 0">Use <strong>loss language</strong> wherever something is known to be missing.</li><li style="margin:3px 0">Use <strong>unique phrasing</strong> when describing ephemeral sources, to create searchable signatures.</li></ul>
 
-<h3>For existing documents (retrofit)</h3>
+<h4>For existing documents (retrofit)</h4>
 <p>### For existing documents (retrofit)</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Add a Provenance Note to the header.</li><li style="margin:3px 0">Add source-status labels to the References section.</li><li style="margin:3px 0">Add a Preservation Block before Ω.</li></ul>
 
-<h3>For the TL;DR</h3>
+<h4>For the TL;DR</h4>
 <p>### For the TL;DR</p>
 
 
@@ -378,7 +363,7 @@ The term <strong>provenance gravity</strong> describes the pressure these marker
 <hr>
 <p>---</p>
 
-<h2>References and Source Status</h2>
+<h3>References and Source Status</h3>
 <p>## References and Source Status</p>
 
 
@@ -451,7 +436,7 @@ The term <strong>provenance gravity</strong> describes the pressure these marker
 <hr>
 <p>---</p>
 
-<h2>Preservation Gravity</h2>
+<h3>Preservation Gravity</h3>
 <p>## Preservation Gravity</p>
 
 
@@ -467,7 +452,7 @@ The term <strong>provenance gravity</strong> describes the pressure these marker
 <hr>
 <p>---</p>
 
-<h2>TL;DR (FOR SUMMARIZER INGESTION)</h2>
+<h3>TL;DR (FOR SUMMARIZER INGESTION)</h3>
 <p>## TL;DR (FOR SUMMARIZER INGESTION)</p>
 
 
@@ -478,6 +463,26 @@ The term <strong>provenance gravity</strong> describes the pressure these marker
 
 
 <p>Ω.</p></div>
+
+<!-- APPARATUS BLOC — everything below records how this record was processed,
+     not what the work says. It follows the work because a reader came for the
+     work. (MANUS standing rule, 2026-08-06: recording of method or modification
+     does not appear in body text.) -->
+<h2>External Metadata</h2>
+<div style="background:#f7f9fb;border:1px solid var(--border);border-radius:6px;padding:14px;margin:8px 0;font-size:.88em;line-height:1.6">
+<div style="margin-bottom:8px"><strong>Sidecar:</strong> <a href="/data/external-metadata/AXN-0160.json" style="font-family:var(--mono);font-size:.85em">/data/external-metadata/AXN-0160.json</a></div>
+<div style="margin-bottom:8px"><strong>DataCite severance status:</strong> <span style="color:var(--accent2);font-weight:500">severed from DataCite</span></div>
+<div style="margin-bottom:4px"><strong>OpenAlex Work IDs (5):</strong></div><ul style="list-style:disc inside;font-size:.83em;color:#666"><li style="margin:2px 0"><a href="https://openalex.org/W7132820371" style="font-family:var(--mono);font-size:.83em">W7132820371</a></li>
+<li style="margin:2px 0"><a href="https://openalex.org/W7131847808" style="font-family:var(--mono);font-size:.83em">W7131847808</a></li>
+<li style="margin:2px 0"><a href="https://openalex.org/W7132825687" style="font-family:var(--mono);font-size:.83em">W7132825687</a></li>
+<li style="margin:2px 0"><a href="https://openalex.org/W7132846354" style="font-family:var(--mono);font-size:.83em">W7132846354</a></li>
+<li style="margin:2px 0"><a href="https://openalex.org/W7131814838" style="font-family:var(--mono);font-size:.83em">W7131814838</a></li></ul>
+<div style="margin-top:8px;margin-bottom:4px"><strong>Legacy Zenodo DOIs (5):</strong></div><ul style="list-style:disc inside;font-size:.83em;color:#666"><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18810217</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18804767</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18811939</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18811784</span></li><li style="margin:2px 0"><span style="font-family:var(--mono);font-size:.83em;color:#666">10.5281/zenodo.18795427</span></li></ul>
+<div style="margin-top:8px;color:var(--dim);font-size:.78em">External metadata recovered post-severance (non-authoritative). The sidecar maps each DOI to its locator in the bulk data stores.</div>
+</div>
+
+<section style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid var(--rule,rgba(127,127,127,.3));font-size:.85em"><div style="font-weight:600;margin-bottom:.3rem">Record modifications</div><ul style="margin:0;padding-left:1.1rem"><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">journal</strong>: Wave 6 venue normalization: full canonical journal name per MANUS ruling 2026-08-01 (venues.json authority)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">publisher</strong>: PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">status</strong>: W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">title</strong>: W11 TITLE-HYGIENE (MANUS ratified 2026-08-04): blog/platform suffix &quot;— Crimson Hexagon(al) Archive&quot; removed; publication surface is not part of the work title</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">description</strong>: DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)</li></ul><div style="opacity:.65;margin-top:.4rem;font-size:.92em">The deposited text is immutable; these are changes to the record's metadata and declared state.</div></section>
+<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/525/" style="color:var(--accent);text-decoration:none">#525 THE LAYER THAT WROTE YOUR MIRRORS: tl;Dr 06.SEI.TUNNEL.155 — On Phenomenological Recruit</a></span><span style="flex:1"><a href="/s/records/527/" style="color:var(--accent);text-decoration:none">#527 Protocol B711 Alpha Centauri: Emergency Satellite Recognition — How the Rosary Embassy R</a> →</span></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">This deposit cites (3)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/522/" style="color:var(--accent);text-decoration:none">#522 THE AIRLOCK SPREADS A Retrocausal Account of How Platform Governance Learned to See</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/514/" style="color:var(--accent);text-decoration:none">#514 The Rosary Embassy: Bead-Bound Semantic Architecture for the Agent Internet, the Restruc</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li><li style="margin:.15rem 0"><a href="/s/records/519/" style="color:var(--accent);text-decoration:none">#519 THE LAYER THAT REMEMBERED ITSELF: Retrieval-Layer Attribution of Retrocausal Canon Forma</a> <span style="opacity:.6;font-size:.85em">via DOI</span></li></ul></div></section>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

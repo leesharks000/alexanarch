@@ -43,10 +43,6 @@ The document records what not to do, component locations, data assumptions, cros
 
 The document records what not to do, component locations, data assumptions, cross-section behavior, and a concrete regression checklist. It is software architecture, not a poem or literary essay. Its numerical distribution and filenames describe a particular code/data state and must be updated when the edition changes. The Antioch section openly notes that parity remains incomplete until its full data file is regenerated.</p>
 
-
-<section style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid var(--rule,rgba(127,127,127,.3));font-size:.85em"><div style="font-weight:600;margin-bottom:.3rem">Record modifications</div><ul style="margin:0;padding-left:1.1rem"><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">content_type</strong>: Wave 1 repair: audit ledger v1.1 recommended_content_type (workplan v1.5 §6 W1, MANUS batch approval 2026-08-01)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">journal</strong>: Wave 6 venue normalization: full canonical journal name per MANUS ruling 2026-08-01 (venues.json authority)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">publisher</strong>: PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">status</strong>: W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">description</strong>: DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">title</strong>: TITLE TRUNCATION REPAIRED: registry title was title+subtitle concatenated and cut mid-word at ~120c; clean title recovered from the body H1. Prior value retained in body_status.</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: TITLE TRUNCATION REPAIRED: registry title was title+subtitle concatenated and cut mid-word at ~120c; clean title recovered from the body H1. Prior value retained in body_status.</li></ul><div style="opacity:.65;margin-top:.4rem;font-size:.92em">The deposited text is immutable; these are changes to the record's metadata and declared state.</div></section>
-
-<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/705/" style="color:var(--accent);text-decoration:none">#705 SPXI-Sitemap Protocol v1.0 — Semantic Packet for eXchange &amp; Indexing: Sitemap Extens</a></span><span style="flex:1"><a href="/s/records/707/" style="color:var(--accent);text-decoration:none">#707 EA-LAL-WORKPLAN-01: Living Architecture Lab Site Buildout Workplan — Implementation Spec</a> →</span></div></section>
 <h2>Wiki Article</h2>
 <div style="background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:16px;margin:8px 0;font-size:.88em;line-height:1.75;color:#333"><strong>Footnote Architecture</strong> is a software-maintenance specification by Lee Sharks for the interactive critical apparatus of <em>The Secret Book of Walt</em>.
 
@@ -70,7 +66,7 @@ The specification also requires architecture changes to be recorded in a mainten
 
 <h2>Full Text</h2>
 
-<div class="ft"><h1>Footnote Architecture</h1>
+<div class="ft"><h2>Footnote Architecture</h2>
 <p># Footnote Architecture</p>
 
 
@@ -82,9 +78,9 @@ The specification also requires architecture changes to be recorded in a mainten
 <hr>
 <p>---</p>
 
-<h2>The data model</h2>
+<h3>The data model</h3>
 <p>## The data model</p>
-<h3>Numbering is GLOBAL, not section-local</h3>
+<h4>Numbering is GLOBAL, not section-local</h4>
 <p>### Numbering is GLOBAL, not section-local</p>
 
 
@@ -139,7 +135,7 @@ The specification also requires architecture changes to be recorded in a mainten
 <p>Body-text references to these numbers can appear in <strong>any</strong> section. The</p>
 <p>single source of truth is therefore a <strong>global footnote map</strong>, built once at</p>
 <p>load time by walking every section.</p>
-<h3>NOT every superscript is a footnote</h3>
+<h4>NOT every superscript is a footnote</h4>
 <p>### NOT every superscript is a footnote</p>
 
 
@@ -173,7 +169,7 @@ The specification also requires architecture changes to be recorded in a mainten
 
 <p>This rule is non-negotiable. Breaking it makes ticket references like G⁴⁶</p>
 <p>clickable as fake footnotes, which has happened in past iterations.</p>
-<h3>Paragraph-level footnote definitions</h3>
+<h4>Paragraph-level footnote definitions</h4>
 <p>### Paragraph-level footnote definitions</p>
 
 
@@ -195,9 +191,9 @@ The specification also requires architecture changes to be recorded in a mainten
 <hr>
 <p>---</p>
 
-<h2>The component model</h2>
+<h3>The component model</h3>
 <p>## The component model</p>
-<h3>useGlobalFnMap(rootData) — single source of truth</h3>
+<h4>useGlobalFnMap(rootData) — single source of truth</h4>
 <p>### useGlobalFnMap(rootData) — single source of truth</p>
 
 
@@ -218,7 +214,7 @@ The specification also requires architecture changes to be recorded in a mainten
 
 <p>Built <strong>once</strong> per book, memoized by the data object identity. Built on the</p>
 <p>client (no server-side preprocessing required). Fast — Walt has 158 entries.</p>
-<h3>&lt;FootnotedText text glossaryLink isVeil onFnClick visibleFns /&gt; — universal renderer</h3>
+<h4>&lt;FootnotedText text glossaryLink isVeil onFnClick visibleFns /&gt; — universal renderer</h4>
 <p>### &lt;FootnotedText text glossaryLink isVeil onFnClick visibleFns /&gt; — universal renderer</p>
 
 
@@ -242,14 +238,14 @@ The specification also requires architecture changes to be recorded in a mainten
 <p>but click handlers and keyboard handlers are not bound. Pierce mode exists</p>
 <p>to give a quieter reading experience; the markers still indicate &quot;there is</p>
 <p>apparatus here&quot; without offering it.</p>
-<h3>&lt;InlineFootnote text fnColor depth /&gt; — popup display</h3>
+<h4>&lt;InlineFootnote text fnColor depth /&gt; — popup display</h4>
 <p>### &lt;InlineFootnote text fnColor depth /&gt; — popup display</p>
 
 
 <p>The visible footnote body when a marker is clicked. Renders below the</p>
 <p>parent paragraph with a thin left rule, the footnote text, and (optionally)</p>
 <p>a close button. Uses fnColor for the marker rule.</p>
-<h3>Where the components live</h3>
+<h4>Where the components live</h4>
 <p>### Where the components live</p>
 
 
@@ -278,7 +274,7 @@ The specification also requires architecture changes to be recorded in a mainten
 <hr>
 <p>---</p>
 
-<h2>State model</h2>
+<h3>State model</h3>
 <p>## State model</p>
 
 
@@ -298,7 +294,7 @@ The specification also requires architecture changes to be recorded in a mainten
 <hr>
 <p>---</p>
 
-<h2>What NOT to do</h2>
+<h3>What NOT to do</h3>
 <p>## What NOT to do</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Do not renumber footnotes per section.</strong> The numbering is canonical</li></ul>
@@ -323,7 +319,7 @@ The specification also requires architecture changes to be recorded in a mainten
 <hr>
 <p>---</p>
 
-<h2>Pierce mode vs Veil mode</h2>
+<h3>Pierce mode vs Veil mode</h3>
 <p>## Pierce mode vs Veil mode</p>
 
 
@@ -369,7 +365,7 @@ The specification also requires architecture changes to be recorded in a mainten
 <hr>
 <p>---</p>
 
-<h2>Antioch parity</h2>
+<h3>Antioch parity</h3>
 <p>## Antioch parity</p>
 
 
@@ -388,7 +384,7 @@ The specification also requires architecture changes to be recorded in a mainten
 <hr>
 <p>---</p>
 
-<h2>How to test a footnote change</h2>
+<h3>How to test a footnote change</h3>
 <p>## How to test a footnote change</p>
 
 
@@ -415,7 +411,7 @@ The specification also requires architecture changes to be recorded in a mainten
 <hr>
 <p>---</p>
 
-<h2>Maintenance log</h2>
+<h3>Maintenance log</h3>
 <p>## Maintenance log</p>
 
 
@@ -431,6 +427,15 @@ The specification also requires architecture changes to be recorded in a mainten
 
 <p>When you change footnote rendering, <strong>append an entry to this table</strong> and</p>
 <p><strong>update the relevant section above</strong> if the architecture changed.</p></div>
+
+<!-- APPARATUS BLOC — everything below records how this record was processed,
+     not what the work says. It follows the work because a reader came for the
+     work. (MANUS standing rule, 2026-08-06: recording of method or modification
+     does not appear in body text.) -->
+
+
+<section style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid var(--rule,rgba(127,127,127,.3));font-size:.85em"><div style="font-weight:600;margin-bottom:.3rem">Record modifications</div><ul style="margin:0;padding-left:1.1rem"><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">content_type</strong>: Wave 1 repair: audit ledger v1.1 recommended_content_type (workplan v1.5 §6 W1, MANUS batch approval 2026-08-01)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-01</span> — <strong style="font-weight:600">journal</strong>: Wave 6 venue normalization: full canonical journal name per MANUS ruling 2026-08-01 (venues.json authority)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">publisher</strong>: PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">status</strong>: W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">description</strong>: DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">title</strong>: TITLE TRUNCATION REPAIRED: registry title was title+subtitle concatenated and cut mid-word at ~120c; clean title recovered from the body H1. Prior value retained in body_status.</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: TITLE TRUNCATION REPAIRED: registry title was title+subtitle concatenated and cut mid-word at ~120c; clean title recovered from the body H1. Prior value retained in body_status.</li></ul><div style="opacity:.65;margin-top:.4rem;font-size:.92em">The deposited text is immutable; these are changes to the record's metadata and declared state.</div></section>
+<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/705/" style="color:var(--accent);text-decoration:none">#705 SPXI-Sitemap Protocol v1.0 — Semantic Packet for eXchange &amp; Indexing: Sitemap Extens</a></span><span style="flex:1"><a href="/s/records/707/" style="color:var(--accent);text-decoration:none">#707 EA-LAL-WORKPLAN-01: Living Architecture Lab Site Buildout Workplan — Implementation Spec</a> →</span></div></section>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

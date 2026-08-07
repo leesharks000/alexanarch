@@ -1,11 +1,7 @@
 # The Haitch Portuna Minting Procedure, v1.2 (Provisional)
 
-**AXN:** AXN:03FD — Alexanarch deposit #1009 (self-reference in root form by pre-hash necessity)
-**Restoration status:** RESTORED (v0.2) — full text recovered and seated as the canonical body. Recovered from semantic-economy repository: haitch-portuna-minting-procedure-v1.2.md, 2026-07-04, matched by exact title and version; the initial v0.1 metadata-body deposit is superseded by this correction, recorded in the remediation note. Zenodo record remains HTTP 410; DataCite metadata retained as appendix.
 **Dead DOI:** 10.5281/zenodo.20413064
 **Creators (as recorded by DataCite):** Sharks, Lee
-
----
 
 <!--
 HOLOGRAPHIC KERNEL — SPXI Protocol v0.2 distributed provenance architecture

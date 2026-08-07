@@ -657,6 +657,10 @@ def _clean_apparatus(html_frag):
     return out
 
 
+def _html_escape(t):
+    return (t.replace('&','&amp;').replace('<','&lt;').replace('>','&gt;'))
+
+
 def regenerate_static_page(d, eidx, registry=None):
     """Regenerate the static HTML page for a deposit with full enrichment.
 
@@ -1025,6 +1029,49 @@ def regenerate_static_page(d, eidx, registry=None):
     # not the work. Presentation-level fix, kernel-orthodox: bytes untouched;
     # the wrapper renders as a collapsed apparatus section and Full Text is
     # anchored at the canonical rule.
+    # Apparatus lifted OUT of the body by scripts/separate_apparatus.py is
+    # rendered here, after the work. Nothing was destroyed — it moved to where
+    # apparatus belongs, and the store path is published on the record.
+    lifted_apparatus_html = ''
+    _ap = d.get('apparatus_path')
+    if _ap:
+        try:
+            import json as _json
+            _a = _json.load(open('.' + _ap))
+            _parts = []
+            if _a.get('head_apparatus'):
+                _parts.append('<div style="font-family:ui-monospace,monospace;font-size:.82em;'
+                              'white-space:pre-wrap;color:#555">' + _html_escape(_a['head_apparatus']) + '</div>')
+            if _a.get('tail_apparatus'):
+                _parts.append('<details style="margin-top:10px"><summary style="cursor:pointer;'
+                              'font-size:.85em;color:#666">Superseded metadata-capture body '
+                              '(retained, not destroyed) — this describes an earlier state of the '
+                              'record and does not describe it as it now stands</summary>'
+                              '<div style="font-family:ui-monospace,monospace;font-size:.78em;'
+                              'white-space:pre-wrap;color:#666;margin-top:8px">'
+                              + _html_escape(_a['tail_apparatus']) + '</div></details>')
+            if _parts:
+                lifted_apparatus_html = (
+                    '<h2>Processing apparatus</h2><div style="background:#fafafa;border:1px solid '
+                    'var(--border);border-radius:6px;padding:14px;margin:10px 0">'
+                    '<div style="font-size:.85em;color:#666;margin-bottom:8px">Restoration and '
+                    'modification notes, lifted out of the deposited body so the body is the work. '
+                    'Nothing was destroyed: the full lifted text is at '
+                    '<a href="' + _ap + '">' + _ap + '</a>.</div>' + ''.join(_parts) + '</div>')
+        except Exception:
+            lifted_apparatus_html = ''
+
+    # ONE H1 PER PAGE. The body carries the work's own title, and the record page
+    # already declares it — so a reader's outline showed the same document three
+    # times and a crawler saw three competing document headings. In-body headings
+    # are demoted one level; the page keeps a single h1.
+    fulltext_marked = re.sub(r'<h3([ >])', r'<h4\1', fulltext_marked)
+    fulltext_marked = re.sub(r'</h3>', '</h4>', fulltext_marked)
+    fulltext_marked = re.sub(r'<h2([ >])', r'<h3\1', fulltext_marked)
+    fulltext_marked = re.sub(r'</h2>', '</h3>', fulltext_marked)
+    fulltext_marked = re.sub(r'<h1([ >])', r'<h2\1', fulltext_marked)
+    fulltext_marked = re.sub(r'</h1>', '</h2>', fulltext_marked)
+
     apparatus_html = ''
     _W10_MARK = 'Canonical bytes below the rule'
     if _W10_MARK in fulltext_marked:
@@ -1423,17 +1470,22 @@ def regenerate_static_page(d, eidx, registry=None):
 <div style="margin:8px 0">{kw_html}</div>
 <h2>Description</h2>
 <p style="font-size:.9em">{_render_inline(d.get("description",""))}</p>
-{external_metadata_html}
-{version_history}
-{mods_html}
 {files_html}
-{traversal_html}
 {wiki_html}
 {concepts_html}
 {triples_html}
 <h2>Full Text</h2>
 {apparatus_html}
 <div class="ft">{fulltext_marked}</div>
+{lifted_apparatus_html}
+<!-- APPARATUS BLOC — everything below records how this record was processed,
+     not what the work says. It follows the work because a reader came for the
+     work. (MANUS standing rule, 2026-08-06: recording of method or modification
+     does not appear in body text.) -->
+{external_metadata_html}
+{version_history}
+{mods_html}
+{traversal_html}
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>'''

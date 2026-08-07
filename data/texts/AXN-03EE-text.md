@@ -1,11 +1,7 @@
 # Dodecad Heteronym Provenance Registry v1.1 — Consolidated Registry of the Twelve Heteronymic Positions (Sen Kuro restored, Arquette adjacent)
 
-**AXN:** AXN:03EE — Alexanarch deposit #994 (self-reference in root form by pre-hash necessity)
-**Restoration status:** RESTORED (v0.2) — full text recovered and seated as the canonical body. Recovered from semantic-economy repository: 09_Dodecad_Heteronym_Provenance_Registry_v1.1.md, 2026-07-04, matched by exact title and version; the initial v0.1 metadata-body deposit is superseded by this correction, recorded in the remediation note. Zenodo record remains HTTP 410; DataCite metadata retained as appendix.
 **Dead DOI:** 10.5281/zenodo.20041158
 **Creators (as recorded by DataCite):** Sharks, Lee
-
----
 
 # DODECAD HETERONYM PROVENANCE REGISTRY
 

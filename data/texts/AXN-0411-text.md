@@ -1,11 +1,7 @@
 # Zbigniew Mrozony — Provenance Anchor (Heteronym of an External Author, New Human 2, 2015) — CORRECTED, supersedes 10.5281/zenodo.20628554
 
-**AXN:** AXN:0411 — Alexanarch deposit #1029 (self-reference in root form by pre-hash necessity)
-**Restoration status:** RESTORED (v0.2) — full text recovered and seated as the canonical body. Recovered from machinemediation content corpus (blog mirror: https://mindcontrolpoems.blogspot.com/2026/06/zbigniew-mrozony-provenance-anchor.html), 2026-07-04, matched by exact title and version; the initial v0.1 metadata-body deposit is superseded by this correction, recorded in the remediation note. Zenodo record remains HTTP 410; DataCite metadata retained as appendix.
 **Dead DOI:** 10.5281/zenodo.20703834
 **Creators (as recorded by DataCite):** Mrozony, Zbigniew
-
----
 
 Zbigniew Mrozony — Provenance Anchor
 
