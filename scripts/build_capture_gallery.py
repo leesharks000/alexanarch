@@ -35,20 +35,61 @@ BEGIN = "<!-- CAPTURES-STATIC-BEGIN -->"
 END = "<!-- CAPTURES-STATIC-END -->"
 
 
+IMG_BASES = {
+    # Bare filenames were written against the leesharks gallery's own captures
+    # directory; entries added later carry absolute URLs. Neither form was ever
+    # rendered by ANY gallery — the JS render function never referenced imgs at
+    # all — so a citation to a capture has always landed on text describing an
+    # image nobody could see.
+    "bare": "https://leesharks.com/captures/",
+    "repo": "https://www.alexanarch.org/",
+}
+
+
+def image_urls(e):
+    """Resolve the three recorded forms into fetchable URLs."""
+    out = []
+    for i in (e.get("imgs") or e.get("images") or []):
+        if not isinstance(i, str):
+            continue
+        if i.startswith("http"):
+            out.append(i)
+        elif i.startswith("data/captures/"):
+            out.append(IMG_BASES["repo"] + i)
+        else:
+            out.append(IMG_BASES["bare"] + i.lstrip("/"))
+    return out
+
+
 def card(e):
     esc = html.escape
     slug = e.get("slug", "")
-    d = (e.get("d") or "")
+    d = e.get("d") or ""
     mt = e.get("mt") or "unrated"
+    q = e.get("q") or slug
+    date = e.get("date") or ""
     cite = e.get("cite") or f"https://www.alexanarch.org/captures/#{slug}"
+
+    urls = image_urls(e)
+    if urls:
+        thumbs = "".join(
+            f'<a href="{esc(u)}" target="_blank" rel="noopener">'
+            f'<img loading="lazy" src="{esc(u)}" '
+            f'alt="Screen capture for the query &quot;{esc(q)}&quot;, dated {esc(date)}.">'
+            f'</a>' for u in urls)
+        imgs_html = f'<div class="cap-imgs">{thumbs}</div>'
+    else:
+        imgs_html = ('<div class="cap-noimg">no capture image held for this entry</div>')
+
     return (
         f'<div class="cap-card" id="{esc(slug)}">'
         f'<div class="cap-head"><span class="cap-section">{esc(e.get("s") or "Unsectioned")}</span>'
-        f'<span class="cap-date">{esc(e.get("date") or "")}</span></div>'
+        f'<span class="cap-date">{esc(date)}</span></div>'
         f'<div class="cap-query">{esc(e.get("q") or "")}</div>'
         f'<div class="cap-status-row">'
         f'<span class="cap-status cap-status-{esc(mt.split()[0].lower())}">{esc(mt)}</span>'
         f'<span class="cap-sf">{esc(e.get("sf") or "")}</span></div>'
+        f'{imgs_html}'
         f'<div class="cap-desc">{esc(d)}</div>'
         f'<div class="cap-actions"><a href="{esc(cite)}">¶ Cite</a></div>'
         f'</div>')
