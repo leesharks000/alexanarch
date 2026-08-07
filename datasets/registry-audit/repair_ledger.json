@@ -32409,6 +32409,17 @@
    "sites": "mint/stamp/index.html (3 stampers + pass 3); datasets/dataflow-atlas/atlas-v1.0-addendum.md (new); axnidentifiers stamp/, constitution/, assets/axn-node.js",
    "verified": "validate --strict 0 failures; index consistency OK; namespace clean; all inline JS blocks pass node --check; variable scope confirmed at the injection point",
    "at": "2026-08-06T23:48:05Z"
+  },
+  {
+   "repair_id": "R-1280",
+   "deposit_number": null,
+   "batch": true,
+   "type": "FILTER_DISPLAY_BUG",
+   "ruling_by": "MANUS (2026-08-06: search works in incognito, browse does not)",
+   "basis": "REAL DEFECT, found by executing the shipped widget against the live page rather than inspecting it. The filter assigned style.display='' to matching rows. Browse rows carry inline style=\"display:block\", so assigning '' STRIPS that declaration and the anchor reverts to display:inline — and because apply() ran once at init even with an empty query, all 1,434 rows lost their block display the moment the page loaded, collapsing a stacked list into one inline run. Search was unaffected, which is why search worked in incognito and browse did not. FIX at source in filter_widget.py: capture each row's original display value once (__disp) and restore it on match rather than assigning ''; and skip the initial apply() entirely when there is no ?f= query, so a page with nothing to filter is never touched. Verified by harness against the regenerated page: 22 of 1,435 for 'sappho', and display value on a visible row is now 'block' rather than ''. PROBE HARDENED — the deeper lesson: browse-filter and wiki probes were passing while the widget was destroying the page, because they asserted the widget EXISTED. Presence is not function. Both probes now assert the restore logic is present and that the display-stripping pattern has not returned.",
+   "sites": "scripts/filter_widget.py; s/browse/index.html; s/wiki/index.html; scripts/capability_register.py",
+   "verified": "harness execution of the shipped client against the regenerated page: filter returns 22/1435 and preserves display:block",
+   "at": "2026-08-07T00:32:11Z"
   }
  ]
 }

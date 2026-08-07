@@ -192,6 +192,14 @@ def probe_browse_filter():
     assert rows > 1000, f"browse lists only {rows} records — the static list is the point"
     assert "axnflt" in s, "browse has no filter widget"
     assert "search every deposit" in s, "browse filter does not route onward to full-text search"
+    # FUNCTION, not presence. The previous probe passed while the widget was
+    # destroying the page: it assigned style.display='' on match, which strips the
+    # inline display:block these rows carry, collapsing 1,434 stacked rows into one
+    # inline run at load. A probe that only checks the widget EXISTS would have
+    # reported this capability healthy forever.
+    assert "__disp" in s, ("browse filter does not preserve each row's original display value "
+                           "— assigning '' strips inline display:block and breaks the page")
+    assert "display = ok ? ''" not in s, "browse filter reintroduces the display-stripping bug"
     return {"measure": rows, "detail": "static rows, with filter present"}
 
 
@@ -204,6 +212,7 @@ def probe_wiki():
     assert rows > 1000, f"wiki lists only {rows} entries"
     assert "axnflt" in s, ("wiki has no filter widget — it was previously destroyed by "
                            "publish_wiki_entries.py rewriting the page after it was added")
+    assert "__disp" in s, "wiki filter does not preserve each row's original display value"
     return {"measure": rows, "detail": "static entries, with filter present"}
 
 

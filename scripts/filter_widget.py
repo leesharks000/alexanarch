@@ -63,7 +63,12 @@ def filter_widget(row_selector: str, noun: str, total: int,
       for (var j = 0; j < toks.length; j++) {{
         if (r.__hay.indexOf(toks[j]) === -1) {{ ok = false; break; }}
       }}
-      r.style.display = ok ? '' : 'none';
+      // Restore the row's ORIGINAL display value, never ''. Browse rows carry an
+      // inline style="display:block", and assigning '' strips it — which turned
+      // 1,434 stacked rows into one inline run the moment the page loaded,
+      // because apply() runs once at init even with an empty query.
+      if (r.__disp === undefined) r.__disp = r.style.display || '';
+      r.style.display = ok ? r.__disp : 'none';
       if (ok) shown++;
     }}
     count.textContent = q
@@ -82,8 +87,8 @@ def filter_widget(row_selector: str, noun: str, total: int,
     clearTimeout(timer); timer = setTimeout(apply, 90);
   }});
   var init = new URLSearchParams(location.search).get('f');
-  if (init) box.value = init;
-  apply();
+  if (init) {{ box.value = init; apply(); }}
+  else {{ count.textContent = rows.length.toLocaleString() + ' {noun}'; }}
 }})();
 </script>
 """
