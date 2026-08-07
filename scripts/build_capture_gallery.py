@@ -82,7 +82,9 @@ def card(e):
         imgs_html = ('<div class="cap-noimg">no capture image held for this entry</div>')
 
     return (
-        f'<div class="cap-card" id="{esc(slug)}">'
+        f'<div class="cap-card" id="{esc(slug)}" '
+        f'data-section="{esc(e.get("s") or "Unsectioned")}" '
+        f'data-status="{esc(mt.split()[0].lower())}">'
         f'<div class="cap-head"><span class="cap-section">{esc(e.get("s") or "Unsectioned")}</span>'
         f'<span class="cap-date">{esc(date)}</span></div>'
         f'<div class="cap-query">{esc(e.get("q") or "")}</div>'
