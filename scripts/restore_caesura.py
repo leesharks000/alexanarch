@@ -91,6 +91,25 @@ def convert(body_html):
                     md.append("|" + "|".join(["---"] * len(cells)) + "|")
             if md:
                 out.append("\n".join(md))
+    # A PIPE TABLE FLATTENED INTO A PARAGRAPH is still a table. The blog sometimes
+    # carries a markdown table inside a single <p>, so it arrives as one long run of
+    # "| a | b | |---|---| | c | d |". Rendered as prose that is unreadable; split it
+    # back onto rows at every "| |" seam and at the header separator.
+    def _unflatten(t):
+        if t.count("|") < 8 or "\n" in t.strip():
+            return t
+        if not re.match(r"^\s*\|", t):
+            return t
+        rows = re.split(r"\|\s*\|", t)
+        rows = [r.strip().strip("|").strip() for r in rows]
+        rows = ["| " + r + " |" for r in rows if r]
+        # normalise the separator row so renderers recognise the table
+        rows = [re.sub(r"^\|\s*-+(\s*\|\s*-+)*\s*\|$",
+                       lambda m: "|" + "|".join(["---"] * (m.group(0).count("|") - 1)) + "|",
+                       r) for r in rows]
+        return "\n".join(rows)
+    out = [_unflatten(o) for o in out]
+
     # collapse the runs of rules the blog uses as section spacers
     text = "\n\n".join(out)
     text = re.sub(r"(\n\n---){2,}", "\n\n---", text)
