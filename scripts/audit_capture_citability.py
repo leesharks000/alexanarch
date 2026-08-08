@@ -72,6 +72,22 @@ def main():
         except Exception as e:
             fails.append(f"could not read the published snapshot: {e}")
 
+    # THE FLOW MUST BE DISPLAYED where a writer will meet it. Declaring it in the
+    # atlas was insufficient — every one of the three flow failures was committed by
+    # someone with no reason to consult an atlas.
+    if "_FLOW" not in r:
+        fails.append("the registry does not declare its own data flow as its first key; a program "
+                     "opening it to write meets data before it meets the rule")
+    gal = ROOT / "captures/index.html"
+    if gal.exists():
+        g = gal.read_text(errors="replace")
+        if 'id="capture-flow"' not in g:
+            fails.append("the gallery does not display the data flow; a surface that renders FROM "
+                         "the registry must say so where a reader or crawler will see it")
+    ds = ROOT / "datasets/capture-registry/index.html"
+    if ds.exists() and "capture-flow" not in ds.read_text(errors="replace"):
+        fails.append("the published dataset surface does not display the data flow")
+
     # DISCOVERABILITY. Citable-by-people and citable-by-machines are different
     # properties. The gallery was client-rendered for months, so a crawler saw 717
     # characters and none of the captures — a registry ABOUT machine reception,

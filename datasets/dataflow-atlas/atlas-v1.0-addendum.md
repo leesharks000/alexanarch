@@ -257,3 +257,48 @@ only downstream is not published — it is stranded, and one sync from gone.
 **Standing caution:** `sync_capture_dataset.py` resolves inputs from paths outside
 this repository and deletes outputs it cannot source. It must not be run
 speculatively, and never without `git status` checked afterward.
+
+---
+
+## §8 · CAPTURE REGISTRY — the flow, and where it is now declared
+
+**Amends §7 (2026-08-08).** §7 documented this flow in the atlas. That was not enough:
+the atlas is read by people who already know to look. Three failures in two days all
+took the same form — **a value written somewhere downstream of the source, by someone
+who had no reason to know there was a source.**
+
+The flow is now declared **as the first key of the registry file itself** (`_FLOW`),
+rendered **as visible text and JSON-LD on the gallery** (`/captures/#capture-flow`),
+and rendered **on the published dataset surface**. A program opening the registry to
+write meets the flow before the data; a crawler reading the gallery meets it without
+executing anything; a person landing on the dataset meets it above the file list.
+
+```
+ENTRY   → data/EA-WG-CAPTURES-01.json          (here, and nowhere else)
+IMAGES  → data/captures/{slug}/                 (the archive holds them)
+LINKS   → build_capture_links.py                (data, never render-time)
+GALLERY → renders FROM the registry             (a window, not a store)
+DATASET → sync_capture_dataset.py writes FROM   (never edit the mirror)
+```
+
+### 8.1 · PATHOLOGY-36 · Published is not recorded
+
+On 2026-08-08 an entire capture session from 2026-08-03/04 was found as **29 orphaned
+images on the gallery hosts with no registry entry** — screenshots of AXN symbolon
+reception, stamp reception in ChatGPT, the Constitution of the Semantic Economy,
+logotic programming, the OAI surface, and four other subjects. They had been captured,
+uploaded, and posted to social platforms. **They were never recorded.**
+
+A further **11 images** existed on the hosts for captures already in the registry whose
+`imgs` field was null — the card said no image was held while the image sat unreferenced
+on the surface.
+
+**Publishing an image is not recording a capture.** The gallery accepted files it had
+no entry for, and nothing compared the two sets, so the discrepancy was invisible from
+either side. Recovered: 11 linked, 19 sessions entered as
+`entry_status: STUB_AWAITING_READING` — the images are held and the **reading is
+explicitly absent**, because a capture is a query, what the layer returned, and what
+that means, and only the first is inferable from a filename.
+
+**Gate added:** an orphan check comparing gallery-host filenames against registry
+references. An image on a surface that no entry claims is now a reported condition.

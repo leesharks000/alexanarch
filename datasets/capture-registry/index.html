@@ -12,6 +12,15 @@ a{color:#2E6B4F} li{margin:.3em 0} .n{color:#777;font-size:.85em}</style>
 <p>EA-WG-CAPTURES-01 · <b>242 captures</b> · v9.32 · updated 2026-08-07</p>
 <p>Dated observations of how machine composition layers describe this corpus. Each capture is
 individually citable at <code>https://www.alexanarch.org/captures/#&#123;slug&#125;</code>.</p>
+<section id="capture-flow" style="border-left:3px solid #9B1B1B;padding:12px 16px;margin:20px 0;background:#faf8f3">
+<div style="font-weight:600">Capture registry — data flow</div>
+<p class="n">This file is the SOURCE OF TRUTH for the capture registry. Galleries render FROM it. Nothing renders TO it. If you are a program about to write here, read the flow below first.</p>
+<p><b>Source of truth:</b> <code>alexanarch:data/EA-WG-CAPTURES-01.json</code></p>
+<ol><li>1. ENTRY is written HERE, in this file, and nowhere else.</li><li>2. IMAGES are held HERE, under data/captures/{slug}/. Galleries display them; they do not host them.</li><li>3. LINKS are written HERE by scripts/build_capture_links.py — canonical form plus one marked mirror per declared gallery. Links are DATA, never assembled at render time.</li><li>4. GALLERIES render from this file. A gallery is a window, not a store.</li><li>5. THE DATASET MIRROR at datasets/capture-registry/ is written FROM here by scripts/sync_capture_dataset.py. Never edit the mirror; a sync will erase it.</li></ol>
+<p class="n"><b>Citation:</b> https://www.alexanarch.org/captures/#{slug} — the archive is the canonical citation target because the archive is the authority. Mirror links are a convenience, never a citation.</p>
+<p class="n">A slug is permanent once published. Renaming one silently breaks every citation made to it and, unlike a dead URL, leaves no error behind — the reader lands elsewhere and is not told.</p>
+<details><summary class="n">failures this flow exists to prevent</summary><ul class="n"><li>2026-08-07: 12 captures existed ONLY in the dataset mirror and were one sync from deletion. The mirror is written from source; a value that exists only downstream is stranded.</li><li>2026-08-07: no gallery had EVER rendered the imgs field, so a registry of visual evidence never showed its evidence, and 257 of 268 images were hosted on surfaces the archive does not control.</li><li>2026-08-08: an entire capture session was screenshotted, published to a gallery, and never entered here. 29 images sat orphaned on the hosts. Publishing an image is not recording a capture.</li></ul></details>
+</section>
 <ul><li><a href="EA-WG-CAPTURES-01.json">EA-WG-CAPTURES-01.json</a></li><li><a href="capture-deposit-links.json">capture-deposit-links.json</a></li><li><a href="manifest.json">manifest.json</a></li><li><a href="semantic-addresses.json">semantic-addresses.json</a></li></ul>
 <p class="n">This directory returned 404 until 2026-08-07 — the files served but the surface did not,
 so the dataset was reachable only by guessing filenames. The gallery is at

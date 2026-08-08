@@ -127,6 +127,41 @@ def main():
             return 1
         page = page.replace(anchor, f'<div id="captures">\n{block}\n</div>')
 
+    # THE FLOW, DISPLAYED. A gallery renders FROM the registry and never TO it, and
+    # that has to be visible on the surface itself — not only in the source file —
+    # because the surface is where a machine or a person forms the idea that this is
+    # a place to write. Emitted as visible text AND as machine-readable JSON so a
+    # crawler meets it without executing anything.
+    flow = r.get("_FLOW") or {}
+    if flow:
+        steps = "".join(f"<li>{html.escape(x)}</li>" for x in flow.get("flow", []))
+        flow_html = (
+            '<section id="capture-flow" style="border:1px solid var(--border);border-left:3px solid '
+            'var(--accent);border-radius:6px;padding:14px 16px;margin:18px 0;font-size:.86em;'
+            'line-height:1.6">'
+            '<div style="font-weight:600;margin-bottom:6px">Capture registry — data flow</div>'
+            f'<div style="color:var(--dim);margin-bottom:8px">{html.escape(flow.get("READ_THIS_FIRST",""))}</div>'
+            f'<div><b>Source of truth:</b> <code>{html.escape(flow.get("source_of_truth",""))}</code></div>'
+            f'<ol style="margin:8px 0 8px 1.1em;padding:0">{steps}</ol>'
+            f'<div style="color:var(--dim)"><b>Citation:</b> {html.escape(flow.get("citation",""))}</div>'
+            f'<div style="color:var(--dim);margin-top:5px">{html.escape(flow.get("slugs_are_permanent",""))}</div>'
+            '<div style="margin-top:8px"><a href="/data/EA-WG-CAPTURES-01.json">the registry itself</a>'
+            ' &middot; <a href="/datasets/capture-registry/">published dataset</a></div>'
+            '</section>')
+        ld_flow = ('<script type="application/ld+json">' +
+                   json.dumps({"@context":"https://schema.org","@type":"CreativeWork",
+                               "name":"Capture registry data flow",
+                               "isPartOf":{"@type":"Dataset","name":"EA-WG-CAPTURES-01"},
+                               "text":flow.get("READ_THIS_FIRST",""),
+                               "step":flow.get("flow",[]),
+                               "url":"https://www.alexanarch.org/captures/#capture-flow"},
+                              ensure_ascii=False) + "</script>")
+        page = re.sub(r'<section id="capture-flow".*?</section>\n?', "", page, flags=re.S)
+        page = re.sub(r'<script type="application/ld\+json">\{"@context": ?"https://schema.org", ?"@type": ?"CreativeWork".*?</script>\n?', "", page, flags=re.S)
+        marker = '<div id="captures">'
+        if marker in page:
+            page = page.replace(marker, flow_html + "\n" + ld_flow + "\n" + marker, 1)
+
     # JSON-LD: the registry described as a dataset, once
     ld = {
         "@context": "https://schema.org", "@type": "Dataset",
@@ -151,7 +186,10 @@ def main():
         '<link rel="describedby" href="https://www.alexanarch.org/data/EA-WG-CAPTURES-01.json" type="application/json">\n'
         '<link rel="item" href="https://www.alexanarch.org/data/EA-WG-CAPTURES-01.json" type="application/json">\n'
         '<link rel="cite-as" href="https://www.alexanarch.org/captures/">\n')
-    page = re.sub(r'<script type="application/ld\+json">.*?</script>\n?', "", page, flags=re.S)
+    # Strip only the Dataset block. A blanket strip also removed the data-flow
+    # declaration emitted moments earlier — the flow is the thing this file exists
+    # to make unmissable, and a cleanup regex was quietly deleting it.
+    page = re.sub(r'<script type="application/ld\+json">\s*\{"@context":\s*"https://schema\.org",\s*"@type":\s*"Dataset".*?</script>\n?', "", page, flags=re.S)
     page = re.sub(r'<link rel="(describedby|item|cite-as)"[^>]*>\n?', "", page)
     page = page.replace("</head>", signposts + ldblock + "</head>", 1)
 

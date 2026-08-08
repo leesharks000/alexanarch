@@ -1,8 +1,31 @@
 {
+ "_FLOW": {
+  "READ_THIS_FIRST": "This file is the SOURCE OF TRUTH for the capture registry. Galleries render FROM it. Nothing renders TO it. If you are a program about to write here, read the flow below first.",
+  "source_of_truth": "alexanarch:data/EA-WG-CAPTURES-01.json",
+  "flow": [
+   "1. ENTRY is written HERE, in this file, and nowhere else.",
+   "2. IMAGES are held HERE, under data/captures/{slug}/. Galleries display them; they do not host them.",
+   "3. LINKS are written HERE by scripts/build_capture_links.py — canonical form plus one marked mirror per declared gallery. Links are DATA, never assembled at render time.",
+   "4. GALLERIES render from this file. A gallery is a window, not a store.",
+   "5. THE DATASET MIRROR at datasets/capture-registry/ is written FROM here by scripts/sync_capture_dataset.py. Never edit the mirror; a sync will erase it."
+  ],
+  "citation": "https://www.alexanarch.org/captures/#{slug} — the archive is the canonical citation target because the archive is the authority. Mirror links are a convenience, never a citation.",
+  "slugs_are_permanent": "A slug is permanent once published. Renaming one silently breaks every citation made to it and, unlike a dead URL, leaves no error behind — the reader lands elsewhere and is not told.",
+  "gates": [
+   "scripts/audit_capture_citability.py — every capture citable and discoverable; runs in CI and stage_commit",
+   "scripts/build_capture_links.py --check — every capture carries its canonical citation and mirrors",
+   "scripts/build_capture_gallery.py — regenerates the static gallery so a new capture is crawlable, not merely stored"
+  ],
+  "failures_this_flow_exists_to_prevent": [
+   "2026-08-07: 12 captures existed ONLY in the dataset mirror and were one sync from deletion. The mirror is written from source; a value that exists only downstream is stranded.",
+   "2026-08-07: no gallery had EVER rendered the imgs field, so a registry of visual evidence never showed its evidence, and 257 of 268 images were hosted on surfaces the archive does not control.",
+   "2026-08-08: an entire capture session was screenshotted, published to a gallery, and never entered here. 29 images sat orphaned on the hosts. Publishing an image is not recording a capture."
+  ]
+ },
  "registry_id": "EA-WG-CAPTURES-01",
- "version": "9.32",
- "date": "2026-08-07",
- "total_captures": 242,
+ "version": "9.33",
+ "date": "2026-08-08",
+ "total_captures": 261,
  "author": "Lee Sharks",
  "orcid": "0009-0000-1599-0703",
  "license": "CC-BY-4.0",
@@ -69,7 +92,8 @@
     }
    ],
    "imgs": [
-    "data/captures/autonomous-semantic-warfare/autonomous-semantic-warfare-expanded.png"
+    "data/captures/autonomous-semantic-warfare/autonomous-semantic-warfare-expanded.png",
+    "data/captures/autonomous-semantic-warfare/autonomous-semantic-warfare.png"
    ],
    "links": [
     {
@@ -95,7 +119,11 @@
    ],
    "cite": "https://www.alexanarch.org/captures/#autonomous-semantic-warfare",
    "imgs_origin": [
-    "https://leesharks.com/captures/autonomous-semantic-warfare-expanded.png"
+    "https://leesharks.com/captures/autonomous-semantic-warfare-expanded.png",
+    "https://leesharks.com/captures/autonomous-semantic-warfare.png"
+   ],
+   "record_note": [
+    "Image existed on the gallery host and was referenced by no registry entry; linked 2026-08-08."
    ]
   },
   {
@@ -194,7 +222,8 @@
     }
    ],
    "imgs": [
-    "data/captures/i-hereby-abolish-toilet-paper/i-hereby-abolish-toilet-paper-recapture.png"
+    "data/captures/i-hereby-abolish-toilet-paper/i-hereby-abolish-toilet-paper-recapture.png",
+    "data/captures/i-hereby-abolish-toilet-paper/i-hereby-abolish-toilet-paper.png"
    ],
    "links": [
     {
@@ -220,7 +249,11 @@
    ],
    "cite": "https://www.alexanarch.org/captures/#i-hereby-abolish-toilet-paper",
    "imgs_origin": [
-    "https://leesharks.com/captures/i-hereby-abolish-toilet-paper-recapture.png"
+    "https://leesharks.com/captures/i-hereby-abolish-toilet-paper-recapture.png",
+    "https://leesharks.com/captures/i-hereby-abolish-toilet-paper.png"
+   ],
+   "record_note": [
+    "Image existed on the gallery host and was referenced by no registry entry; linked 2026-08-08."
    ]
   },
   {
@@ -1391,7 +1424,9 @@
    "exact": false,
    "imgs": [
     "data/captures/combat-scholasticism-lee-sharks/combat-scholasticism-1.png",
-    "data/captures/combat-scholasticism-lee-sharks/combat-scholasticism-2.png"
+    "data/captures/combat-scholasticism-lee-sharks/combat-scholasticism-2.png",
+    "data/captures/combat-scholasticism-lee-sharks/combat-scholasticism-lee-sharks-1.png",
+    "data/captures/combat-scholasticism-lee-sharks/combat-scholasticism-lee-sharks-2.png"
    ],
    "links": [
     {
@@ -1418,7 +1453,13 @@
    "cite": "https://www.alexanarch.org/captures/#combat-scholasticism-lee-sharks",
    "imgs_origin": [
     "https://leesharks.com/captures/combat-scholasticism-1.png",
-    "https://leesharks.com/captures/combat-scholasticism-2.png"
+    "https://leesharks.com/captures/combat-scholasticism-2.png",
+    "https://leesharks.com/captures/combat-scholasticism-lee-sharks-1.png",
+    "https://leesharks.com/captures/combat-scholasticism-lee-sharks-2.png"
+   ],
+   "record_note": [
+    "Image existed on the gallery host and was referenced by no registry entry; linked 2026-08-08.",
+    "Image existed on the gallery host and was referenced by no registry entry; linked 2026-08-08."
    ]
   },
   {
@@ -1591,7 +1632,8 @@
    ],
    "exact": false,
    "imgs": [
-    "data/captures/cross-substrate-semantic-laborers/cross-substrate-semantic-laborers-2.png"
+    "data/captures/cross-substrate-semantic-laborers/cross-substrate-semantic-laborers-2.png",
+    "data/captures/cross-substrate-semantic-laborers/cross-substrate-semantic-laborers.png"
    ],
    "links": [
     {
@@ -1617,7 +1659,11 @@
    ],
    "cite": "https://www.alexanarch.org/captures/#cross-substrate-semantic-laborers",
    "imgs_origin": [
-    "https://leesharks.com/captures/cross-substrate-semantic-laborers-2.png"
+    "https://leesharks.com/captures/cross-substrate-semantic-laborers-2.png",
+    "https://leesharks.com/captures/cross-substrate-semantic-laborers.png"
+   ],
+   "record_note": [
+    "Image existed on the gallery host and was referenced by no registry entry; linked 2026-08-08."
    ]
   },
   {
@@ -3463,7 +3509,8 @@
    "exact": true,
    "imgs": [
     "data/captures/operative-feminism-20260615/operative-feminism-1.png",
-    "data/captures/operative-feminism-20260615/operative-feminism-2.png"
+    "data/captures/operative-feminism-20260615/operative-feminism-2.png",
+    "data/captures/operative-feminism-20260615/operative-feminism.png"
    ],
    "slug_history": [
     {
@@ -3498,7 +3545,11 @@
    "cite": "https://www.alexanarch.org/captures/#operative-feminism-20260615",
    "imgs_origin": [
     "https://leesharks.com/captures/operative-feminism-1.png",
-    "https://leesharks.com/captures/operative-feminism-2.png"
+    "https://leesharks.com/captures/operative-feminism-2.png",
+    "https://leesharks.com/captures/operative-feminism.png"
+   ],
+   "record_note": [
+    "Image existed on the gallery host and was referenced by no registry entry; linked 2026-08-08."
    ]
   },
   {
@@ -4592,7 +4643,8 @@
    ],
    "imgs": [
     "data/captures/semantic-commodity-form/semantic-commodity-form-recapture-1.png",
-    "data/captures/semantic-commodity-form/semantic-commodity-form-recapture-2.png"
+    "data/captures/semantic-commodity-form/semantic-commodity-form-recapture-2.png",
+    "data/captures/semantic-commodity-form/semantic-commodity-form.png"
    ],
    "links": [
     {
@@ -4619,7 +4671,11 @@
    "cite": "https://www.alexanarch.org/captures/#semantic-commodity-form",
    "imgs_origin": [
     "https://leesharks.com/captures/semantic-commodity-form-recapture-1.png",
-    "https://leesharks.com/captures/semantic-commodity-form-recapture-2.png"
+    "https://leesharks.com/captures/semantic-commodity-form-recapture-2.png",
+    "https://leesharks.com/captures/semantic-commodity-form.png"
+   ],
+   "record_note": [
+    "Image existed on the gallery host and was referenced by no registry entry; linked 2026-08-08."
    ]
   },
   {
@@ -6388,7 +6444,8 @@
    ],
    "imgs": [
     "data/captures/johannes-sigil/johannes-sigil-grundrisse-1.png",
-    "data/captures/johannes-sigil/johannes-sigil-grundrisse-2.png"
+    "data/captures/johannes-sigil/johannes-sigil-grundrisse-2.png",
+    "data/captures/johannes-sigil/johannes-sigil.png"
    ],
    "links": [
     {
@@ -6415,7 +6472,11 @@
    "cite": "https://www.alexanarch.org/captures/#johannes-sigil",
    "imgs_origin": [
     "https://leesharks.com/captures/johannes-sigil-grundrisse-1.png",
-    "https://leesharks.com/captures/johannes-sigil-grundrisse-2.png"
+    "https://leesharks.com/captures/johannes-sigil-grundrisse-2.png",
+    "https://leesharks.com/captures/johannes-sigil.png"
+   ],
+   "record_note": [
+    "Image existed on the gallery host and was referenced by no registry entry; linked 2026-08-08."
    ]
   },
   {
@@ -6437,7 +6498,8 @@
    ],
    "imgs": [
     "data/captures/johannes-sigil-grundrisse/johannes-sigil-grundrisse-1.png",
-    "data/captures/johannes-sigil-grundrisse/johannes-sigil-grundrisse-2.png"
+    "data/captures/johannes-sigil-grundrisse/johannes-sigil-grundrisse-2.png",
+    "data/captures/johannes-sigil-grundrisse/johannes-sigil-grundrisse-3.png"
    ],
    "links": [
     {
@@ -6464,7 +6526,11 @@
    "cite": "https://www.alexanarch.org/captures/#johannes-sigil-grundrisse",
    "imgs_origin": [
     "https://leesharks.com/captures/johannes-sigil-grundrisse-1.png",
-    "https://leesharks.com/captures/johannes-sigil-grundrisse-2.png"
+    "https://leesharks.com/captures/johannes-sigil-grundrisse-2.png",
+    "https://leesharks.com/captures/johannes-sigil-grundrisse-3.png"
+   ],
+   "record_note": [
+    "Image existed on the gallery host and was referenced by no registry entry; linked 2026-08-08."
    ]
   },
   {
@@ -7173,7 +7239,9 @@
    "sf": "AI Mode, 12 sites (W + Co + Me)",
    "d": "BROAD MATCH. AI Mode (chat-style interface, not standard AI Overview). 22:57 timestamp shown. 'The phrase you are referencing connects the ancient Greek poet Sappho and a contemporary literary response titled <em>Day and Night: Conversations with Sapphic Desire</em> by author Rebekah Crane.' <strong>Name collapse:</strong> the heteronym is rendered 'Rebekah Crane' (singular) rather than the canonical 'Rebekah Cranes' (plural) — a precise echo of the real young-adult novelist Rebekah Crane. The composition layer is blending the heteronym\\'s identity with the real author of the same near-name. <strong>The Structure: The Sapphic Stanza:</strong> 'A specific four-line (quatrain) poetic meter that Sappho made famous. It consists of: Three long lines (eleven syllables each, following a strict hendecasyllabic meter); One short closing line (five syllables, known as an Adonic line).' (Wikipedia) <strong>The Modern Adaptation: Rebekah Crane\\'s Work:</strong> 'In her 2026 collection Day and Night: Conversations with Sapphic Desire, writer Rebekah Crane engages...' (cut off). The title is real — 'Day and Night: Conversations with Sapphic Desire' is a Crimson Hexagonal Archive deposit (30 hits in community search). The text is retrievable; the heteronym\\'s name is partially absorbed by the homonymous real author. This is a name-collapse artifact: <em>the archive entity assimilated into the more populous real-world surface</em>. Compare to the 'who is lee sharks' capture (Mary Lee great-white). Heteronym identity is the consistent failure mode at the name-collision sites. [2026-07-27 IMAGE CORRECTION: the screenshot formerly linked to this record depicted a different capture and has been withdrawn; see image_status. Transcription unaffected.]",
    "images": [],
-   "imgs": [],
+   "imgs": [
+    "data/captures/sappho-rebekah-stanza/sappho-rebekah-stanza.png"
+   ],
    "image_status": {
     "state": "MISFILED_AT_CAPTURE",
     "found": "2026-07-27",
@@ -7203,7 +7271,10 @@
      "note": "renders from the archive's registry; may lag a deploy"
     }
    ],
-   "cite": "https://www.alexanarch.org/captures/#sappho-rebekah-stanza"
+   "cite": "https://www.alexanarch.org/captures/#sappho-rebekah-stanza",
+   "imgs_origin": [
+    "godkinggoogle:captures/sappho-rebekah-stanza.png (403 to fetchers; recovered via API)"
+   ]
   },
   {
    "s": "Heteronyms",
@@ -10103,7 +10174,8 @@
    ],
    "imgs": [
     "data/captures/restored-academy/restored-academy-johannes-sigil-1.png",
-    "data/captures/restored-academy/restored-academy-johannes-sigil-2.png"
+    "data/captures/restored-academy/restored-academy-johannes-sigil-2.png",
+    "data/captures/restored-academy/restored-academy.png"
    ],
    "links": [
     {
@@ -10130,7 +10202,11 @@
    "cite": "https://www.alexanarch.org/captures/#restored-academy",
    "imgs_origin": [
     "https://leesharks.com/captures/restored-academy-johannes-sigil-1.png",
-    "https://leesharks.com/captures/restored-academy-johannes-sigil-2.png"
+    "https://leesharks.com/captures/restored-academy-johannes-sigil-2.png",
+    "https://leesharks.com/captures/restored-academy.png"
+   ],
+   "record_note": [
+    "Image existed on the gallery host and was referenced by no registry entry; linked 2026-08-08."
    ]
   },
   {
@@ -10368,6 +10444,719 @@
    "imgs_origin": [
     "https://leesharks.com/captures/vpcor.png"
    ]
+  },
+  {
+   "s": "Unsectioned",
+   "slug": "20260803-constitution-se-aimode",
+   "q": "the constitution of the semantic economy",
+   "date": "2026-08-03",
+   "sf": "AI Mode",
+   "mt": "UNREAD — stub",
+   "d": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer returned, and what that means — only the first is inferable from a filename. Do not cite this entry as an observation until it is completed.",
+   "entry_status": "STUB_AWAITING_READING",
+   "imgs": [
+    "data/captures/20260803-constitution-se-aimode/20260803-constitution-se-aimode-1.png",
+    "data/captures/20260803-constitution-se-aimode/20260803-constitution-se-aimode-2.png"
+   ],
+   "recovered": "2026-08-08 from the gallery hosts, where the images were orphaned — present on the surface, absent from the registry.",
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/#20260803-constitution-se-aimode",
+     "authority": "canonical",
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#20260803-constitution-se-aimode",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#20260803-constitution-se-aimode",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://machinemediation.org/captures/#20260803-constitution-se-aimode",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "cite": "https://www.alexanarch.org/captures/#20260803-constitution-se-aimode"
+  },
+  {
+   "s": "Unsectioned",
+   "slug": "20260803-constitution-se-overview",
+   "q": "the constitution of the semantic economy",
+   "date": "2026-08-03",
+   "sf": "AI Overview",
+   "mt": "UNREAD — stub",
+   "d": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer returned, and what that means — only the first is inferable from a filename. Do not cite this entry as an observation until it is completed.",
+   "entry_status": "STUB_AWAITING_READING",
+   "imgs": [
+    "data/captures/20260803-constitution-se-overview/20260803-constitution-se-overview.png"
+   ],
+   "recovered": "2026-08-08 from the gallery hosts, where the images were orphaned — present on the surface, absent from the registry.",
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/#20260803-constitution-se-overview",
+     "authority": "canonical",
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#20260803-constitution-se-overview",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#20260803-constitution-se-overview",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://machinemediation.org/captures/#20260803-constitution-se-overview",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "cite": "https://www.alexanarch.org/captures/#20260803-constitution-se-overview"
+  },
+  {
+   "s": "Unsectioned",
+   "slug": "20260803-logotic-programming-aimode-signedin",
+   "q": "logotic programming",
+   "date": "2026-08-03",
+   "sf": "AI Mode, signed in",
+   "mt": "UNREAD — stub",
+   "d": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer returned, and what that means — only the first is inferable from a filename. Do not cite this entry as an observation until it is completed.",
+   "entry_status": "STUB_AWAITING_READING",
+   "imgs": [
+    "data/captures/20260803-logotic-programming-aimode-signedin/20260803-logotic-programming-aimode-signedin.png"
+   ],
+   "recovered": "2026-08-08 from the gallery hosts, where the images were orphaned — present on the surface, absent from the registry.",
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/#20260803-logotic-programming-aimode-signedin",
+     "authority": "canonical",
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#20260803-logotic-programming-aimode-signedin",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#20260803-logotic-programming-aimode-signedin",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://machinemediation.org/captures/#20260803-logotic-programming-aimode-signedin",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "cite": "https://www.alexanarch.org/captures/#20260803-logotic-programming-aimode-signedin"
+  },
+  {
+   "s": "Unsectioned",
+   "slug": "20260803-stamp-reception-chatgpt",
+   "q": "AXN symbolon stamp",
+   "date": "2026-08-03",
+   "sf": "ChatGPT",
+   "mt": "UNREAD — stub",
+   "d": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer returned, and what that means — only the first is inferable from a filename. Do not cite this entry as an observation until it is completed.",
+   "entry_status": "STUB_AWAITING_READING",
+   "imgs": [
+    "data/captures/20260803-stamp-reception-chatgpt/20260803-stamp-reception-chatgpt-215610.png",
+    "data/captures/20260803-stamp-reception-chatgpt/20260803-stamp-reception-chatgpt-215616.png",
+    "data/captures/20260803-stamp-reception-chatgpt/20260803-stamp-reception-chatgpt-215620.png",
+    "data/captures/20260803-stamp-reception-chatgpt/20260803-stamp-reception-chatgpt-215624.png",
+    "data/captures/20260803-stamp-reception-chatgpt/20260803-stamp-reception-chatgpt-215627.png"
+   ],
+   "recovered": "2026-08-08 from the gallery hosts, where the images were orphaned — present on the surface, absent from the registry.",
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/#20260803-stamp-reception-chatgpt",
+     "authority": "canonical",
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#20260803-stamp-reception-chatgpt",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#20260803-stamp-reception-chatgpt",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://machinemediation.org/captures/#20260803-stamp-reception-chatgpt",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "cite": "https://www.alexanarch.org/captures/#20260803-stamp-reception-chatgpt"
+  },
+  {
+   "s": "Unsectioned",
+   "slug": "20260803-stamp-reception-chatgpt-mandala",
+   "q": "20260803 stamp reception chatgpt mandala",
+   "date": "2026-08-03",
+   "sf": "",
+   "mt": "UNREAD — stub",
+   "d": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer returned, and what that means — only the first is inferable from a filename. Do not cite this entry as an observation until it is completed.",
+   "entry_status": "STUB_AWAITING_READING",
+   "imgs": [
+    "data/captures/20260803-stamp-reception-chatgpt-mandala/20260803-stamp-reception-chatgpt-mandala.png"
+   ],
+   "recovered": "2026-08-08 from the gallery hosts, where the images were orphaned — present on the surface, absent from the registry.",
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/#20260803-stamp-reception-chatgpt-mandala",
+     "authority": "canonical",
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#20260803-stamp-reception-chatgpt-mandala",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#20260803-stamp-reception-chatgpt-mandala",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://machinemediation.org/captures/#20260803-stamp-reception-chatgpt-mandala",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "cite": "https://www.alexanarch.org/captures/#20260803-stamp-reception-chatgpt-mandala"
+  },
+  {
+   "s": "Unsectioned",
+   "slug": "20260803-symbolon-incognito-aimode",
+   "q": "symbolon",
+   "date": "2026-08-03",
+   "sf": "AI Mode, incognito",
+   "mt": "UNREAD — stub",
+   "d": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer returned, and what that means — only the first is inferable from a filename. Do not cite this entry as an observation until it is completed.",
+   "entry_status": "STUB_AWAITING_READING",
+   "imgs": [
+    "data/captures/20260803-symbolon-incognito-aimode/20260803-symbolon-incognito-aimode.png"
+   ],
+   "recovered": "2026-08-08 from the gallery hosts, where the images were orphaned — present on the surface, absent from the registry.",
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/#20260803-symbolon-incognito-aimode",
+     "authority": "canonical",
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#20260803-symbolon-incognito-aimode",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#20260803-symbolon-incognito-aimode",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://machinemediation.org/captures/#20260803-symbolon-incognito-aimode",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "cite": "https://www.alexanarch.org/captures/#20260803-symbolon-incognito-aimode"
+  },
+  {
+   "s": "Unsectioned",
+   "slug": "20260803-symbolon-incognito-overview",
+   "q": "symbolon",
+   "date": "2026-08-03",
+   "sf": "AI Overview, incognito",
+   "mt": "UNREAD — stub",
+   "d": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer returned, and what that means — only the first is inferable from a filename. Do not cite this entry as an observation until it is completed.",
+   "entry_status": "STUB_AWAITING_READING",
+   "imgs": [
+    "data/captures/20260803-symbolon-incognito-overview/20260803-symbolon-incognito-overview.png"
+   ],
+   "recovered": "2026-08-08 from the gallery hosts, where the images were orphaned — present on the surface, absent from the registry.",
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/#20260803-symbolon-incognito-overview",
+     "authority": "canonical",
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#20260803-symbolon-incognito-overview",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#20260803-symbolon-incognito-overview",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://machinemediation.org/captures/#20260803-symbolon-incognito-overview",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "cite": "https://www.alexanarch.org/captures/#20260803-symbolon-incognito-overview"
+  },
+  {
+   "s": "Unsectioned",
+   "slug": "20260803-symbolon-signedin-aimode",
+   "q": "symbolon",
+   "date": "2026-08-03",
+   "sf": "AI Mode, signed in",
+   "mt": "UNREAD — stub",
+   "d": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer returned, and what that means — only the first is inferable from a filename. Do not cite this entry as an observation until it is completed.",
+   "entry_status": "STUB_AWAITING_READING",
+   "imgs": [
+    "data/captures/20260803-symbolon-signedin-aimode/20260803-symbolon-signedin-aimode-1.png",
+    "data/captures/20260803-symbolon-signedin-aimode/20260803-symbolon-signedin-aimode-2.png"
+   ],
+   "recovered": "2026-08-08 from the gallery hosts, where the images were orphaned — present on the surface, absent from the registry.",
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/#20260803-symbolon-signedin-aimode",
+     "authority": "canonical",
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#20260803-symbolon-signedin-aimode",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#20260803-symbolon-signedin-aimode",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://machinemediation.org/captures/#20260803-symbolon-signedin-aimode",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "cite": "https://www.alexanarch.org/captures/#20260803-symbolon-signedin-aimode"
+  },
+  {
+   "s": "Unsectioned",
+   "slug": "20260803-symbolon-signedin-overview",
+   "q": "symbolon",
+   "date": "2026-08-03",
+   "sf": "AI Overview, signed in",
+   "mt": "UNREAD — stub",
+   "d": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer returned, and what that means — only the first is inferable from a filename. Do not cite this entry as an observation until it is completed.",
+   "entry_status": "STUB_AWAITING_READING",
+   "imgs": [
+    "data/captures/20260803-symbolon-signedin-overview/20260803-symbolon-signedin-overview.png"
+   ],
+   "recovered": "2026-08-08 from the gallery hosts, where the images were orphaned — present on the surface, absent from the registry.",
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/#20260803-symbolon-signedin-overview",
+     "authority": "canonical",
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#20260803-symbolon-signedin-overview",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#20260803-symbolon-signedin-overview",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://machinemediation.org/captures/#20260803-symbolon-signedin-overview",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "cite": "https://www.alexanarch.org/captures/#20260803-symbolon-signedin-overview"
+  },
+  {
+   "s": "Unsectioned",
+   "slug": "20260804-alexanarch-oai-overview",
+   "q": "alexanarch OAI",
+   "date": "2026-08-04",
+   "sf": "AI Overview",
+   "mt": "UNREAD — stub",
+   "d": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer returned, and what that means — only the first is inferable from a filename. Do not cite this entry as an observation until it is completed.",
+   "entry_status": "STUB_AWAITING_READING",
+   "imgs": [
+    "data/captures/20260804-alexanarch-oai-overview/20260804-alexanarch-oai-overview.png"
+   ],
+   "recovered": "2026-08-08 from the gallery hosts, where the images were orphaned — present on the surface, absent from the registry.",
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/#20260804-alexanarch-oai-overview",
+     "authority": "canonical",
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#20260804-alexanarch-oai-overview",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#20260804-alexanarch-oai-overview",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://machinemediation.org/captures/#20260804-alexanarch-oai-overview",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "cite": "https://www.alexanarch.org/captures/#20260804-alexanarch-oai-overview"
+  },
+  {
+   "s": "Unsectioned",
+   "slug": "20260804-jackfeist-ark-aimode",
+   "q": "jack feist ark",
+   "date": "2026-08-04",
+   "sf": "AI Mode",
+   "mt": "UNREAD — stub",
+   "d": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer returned, and what that means — only the first is inferable from a filename. Do not cite this entry as an observation until it is completed.",
+   "entry_status": "STUB_AWAITING_READING",
+   "imgs": [
+    "data/captures/20260804-jackfeist-ark-aimode/20260804-jackfeist-ark-aimode.png"
+   ],
+   "recovered": "2026-08-08 from the gallery hosts, where the images were orphaned — present on the surface, absent from the registry.",
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/#20260804-jackfeist-ark-aimode",
+     "authority": "canonical",
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#20260804-jackfeist-ark-aimode",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#20260804-jackfeist-ark-aimode",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://machinemediation.org/captures/#20260804-jackfeist-ark-aimode",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "cite": "https://www.alexanarch.org/captures/#20260804-jackfeist-ark-aimode"
+  },
+  {
+   "s": "Unsectioned",
+   "slug": "20260804-leesharks-completeworks-overview",
+   "q": "lee sharks complete works",
+   "date": "2026-08-04",
+   "sf": "AI Overview",
+   "mt": "UNREAD — stub",
+   "d": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer returned, and what that means — only the first is inferable from a filename. Do not cite this entry as an observation until it is completed.",
+   "entry_status": "STUB_AWAITING_READING",
+   "imgs": [
+    "data/captures/20260804-leesharks-completeworks-overview/20260804-leesharks-completeworks-overview.png"
+   ],
+   "recovered": "2026-08-08 from the gallery hosts, where the images were orphaned — present on the surface, absent from the registry.",
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/#20260804-leesharks-completeworks-overview",
+     "authority": "canonical",
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#20260804-leesharks-completeworks-overview",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#20260804-leesharks-completeworks-overview",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://machinemediation.org/captures/#20260804-leesharks-completeworks-overview",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "cite": "https://www.alexanarch.org/captures/#20260804-leesharks-completeworks-overview"
+  },
+  {
+   "s": "Unsectioned",
+   "slug": "20260804-mindcontrolpoems-blog-signedout",
+   "q": "mindcontrolpoems blog",
+   "date": "2026-08-04",
+   "sf": "signed out",
+   "mt": "UNREAD — stub",
+   "d": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer returned, and what that means — only the first is inferable from a filename. Do not cite this entry as an observation until it is completed.",
+   "entry_status": "STUB_AWAITING_READING",
+   "imgs": [
+    "data/captures/20260804-mindcontrolpoems-blog-signedout/20260804-mindcontrolpoems-blog-signedout.png"
+   ],
+   "recovered": "2026-08-08 from the gallery hosts, where the images were orphaned — present on the surface, absent from the registry.",
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/#20260804-mindcontrolpoems-blog-signedout",
+     "authority": "canonical",
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#20260804-mindcontrolpoems-blog-signedout",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#20260804-mindcontrolpoems-blog-signedout",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://machinemediation.org/captures/#20260804-mindcontrolpoems-blog-signedout",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "cite": "https://www.alexanarch.org/captures/#20260804-mindcontrolpoems-blog-signedout"
+  },
+  {
+   "s": "Unsectioned",
+   "slug": "20260804-rebekahcranes-sappho-overview",
+   "q": "rebekah cranes sappho",
+   "date": "2026-08-04",
+   "sf": "AI Overview",
+   "mt": "UNREAD — stub",
+   "d": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer returned, and what that means — only the first is inferable from a filename. Do not cite this entry as an observation until it is completed.",
+   "entry_status": "STUB_AWAITING_READING",
+   "imgs": [
+    "data/captures/20260804-rebekahcranes-sappho-overview/20260804-rebekahcranes-sappho-overview.png"
+   ],
+   "recovered": "2026-08-08 from the gallery hosts, where the images were orphaned — present on the surface, absent from the registry.",
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/#20260804-rebekahcranes-sappho-overview",
+     "authority": "canonical",
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#20260804-rebekahcranes-sappho-overview",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#20260804-rebekahcranes-sappho-overview",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://machinemediation.org/captures/#20260804-rebekahcranes-sappho-overview",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "cite": "https://www.alexanarch.org/captures/#20260804-rebekahcranes-sappho-overview"
+  },
+  {
+   "s": "Unsectioned",
+   "slug": "anti-suppression-differential-crediting",
+   "q": "anti suppression differential crediting",
+   "date": null,
+   "sf": "",
+   "mt": "UNREAD — stub",
+   "d": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer returned, and what that means — only the first is inferable from a filename. Do not cite this entry as an observation until it is completed.",
+   "entry_status": "STUB_AWAITING_READING",
+   "imgs": [
+    "data/captures/anti-suppression-differential-crediting/anti-suppression-differential-crediting-20260725.png"
+   ],
+   "recovered": "2026-08-08 from the gallery hosts, where the images were orphaned — present on the surface, absent from the registry.",
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/#anti-suppression-differential-crediting",
+     "authority": "canonical",
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#anti-suppression-differential-crediting",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#anti-suppression-differential-crediting",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://machinemediation.org/captures/#anti-suppression-differential-crediting",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "cite": "https://www.alexanarch.org/captures/#anti-suppression-differential-crediting"
+  },
+  {
+   "s": "Unsectioned",
+   "slug": "anti-suppression-infrastructure-quoted-longitudinal",
+   "q": "\"anti-suppression infrastructure\" (quoted, longitudinal)",
+   "date": null,
+   "sf": "",
+   "mt": "UNREAD — stub",
+   "d": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer returned, and what that means — only the first is inferable from a filename. Do not cite this entry as an observation until it is completed.",
+   "entry_status": "STUB_AWAITING_READING",
+   "imgs": [
+    "data/captures/anti-suppression-infrastructure-quoted-longitudinal/anti-suppression-infrastructure-quoted-longitudinal-1.png",
+    "data/captures/anti-suppression-infrastructure-quoted-longitudinal/anti-suppression-infrastructure-quoted-longitudinal-2.png"
+   ],
+   "recovered": "2026-08-08 from the gallery hosts, where the images were orphaned — present on the surface, absent from the registry.",
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/#anti-suppression-infrastructure-quoted-longitudinal",
+     "authority": "canonical",
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#anti-suppression-infrastructure-quoted-longitudinal",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#anti-suppression-infrastructure-quoted-longitudinal",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://machinemediation.org/captures/#anti-suppression-infrastructure-quoted-longitudinal",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "cite": "https://www.alexanarch.org/captures/#anti-suppression-infrastructure-quoted-longitudinal"
+  },
+  {
+   "s": "Unsectioned",
+   "slug": "anti-suppression-infrastructure-unquoted",
+   "q": "anti-suppression infrastructure (unquoted)",
+   "date": null,
+   "sf": "",
+   "mt": "UNREAD — stub",
+   "d": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer returned, and what that means — only the first is inferable from a filename. Do not cite this entry as an observation until it is completed.",
+   "entry_status": "STUB_AWAITING_READING",
+   "imgs": [
+    "data/captures/anti-suppression-infrastructure-unquoted/anti-suppression-infrastructure-unquoted-1.png",
+    "data/captures/anti-suppression-infrastructure-unquoted/anti-suppression-infrastructure-unquoted-2.png"
+   ],
+   "recovered": "2026-08-08 from the gallery hosts, where the images were orphaned — present on the surface, absent from the registry.",
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/#anti-suppression-infrastructure-unquoted",
+     "authority": "canonical",
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#anti-suppression-infrastructure-unquoted",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#anti-suppression-infrastructure-unquoted",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://machinemediation.org/captures/#anti-suppression-infrastructure-unquoted",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "cite": "https://www.alexanarch.org/captures/#anti-suppression-infrastructure-unquoted"
+  },
+  {
+   "s": "Unsectioned",
+   "slug": "writable-retrieval-basin",
+   "q": "writable retrieval basin",
+   "date": null,
+   "sf": "",
+   "mt": "UNREAD — stub",
+   "d": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer returned, and what that means — only the first is inferable from a filename. Do not cite this entry as an observation until it is completed.",
+   "entry_status": "STUB_AWAITING_READING",
+   "imgs": [
+    "data/captures/writable-retrieval-basin/writable-retrieval-basin-3.png",
+    "data/captures/writable-retrieval-basin/writable-retrieval-basin-4.png"
+   ],
+   "recovered": "2026-08-08 from the gallery hosts, where the images were orphaned — present on the surface, absent from the registry.",
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/#writable-retrieval-basin",
+     "authority": "canonical",
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#writable-retrieval-basin",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#writable-retrieval-basin",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://machinemediation.org/captures/#writable-retrieval-basin",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "cite": "https://www.alexanarch.org/captures/#writable-retrieval-basin"
+  },
+  {
+   "s": "Unsectioned",
+   "slug": "zenodo-packet-zpzp-recapture",
+   "q": "zenodo packet ZPZP (recapture)",
+   "date": null,
+   "sf": "",
+   "mt": "UNREAD — stub",
+   "d": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer returned, and what that means — only the first is inferable from a filename. Do not cite this entry as an observation until it is completed.",
+   "entry_status": "STUB_AWAITING_READING",
+   "imgs": [
+    "data/captures/zenodo-packet-zpzp-recapture/zenodo-packet-zpzp-recapture-1.png",
+    "data/captures/zenodo-packet-zpzp-recapture/zenodo-packet-zpzp-recapture-2.png"
+   ],
+   "recovered": "2026-08-08 from the gallery hosts, where the images were orphaned — present on the surface, absent from the registry.",
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/#zenodo-packet-zpzp-recapture",
+     "authority": "canonical",
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#zenodo-packet-zpzp-recapture",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#zenodo-packet-zpzp-recapture",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://machinemediation.org/captures/#zenodo-packet-zpzp-recapture",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "cite": "https://www.alexanarch.org/captures/#zenodo-packet-zpzp-recapture"
   }
  ],
  "category_order": [

@@ -32490,6 +32490,18 @@
    "verified": "13,225 chars seated; record page and wiki entry traversed as rendered pages, zero stale claims; validate --strict pending",
    "outstanding": "95 metadata_capture records remain. The 87 Orphans post (blogspot 2026/07) is a ready worklist of severed DOIs with live mirrors. A recovery pass should work from it rather than from title search, which produces false positives.",
    "at": "2026-08-07T18:12:50Z"
+  },
+  {
+   "repair_id": "R-1286",
+   "batch": true,
+   "deposit_number": null,
+   "type": "ORPHANED_CAPTURES_RECOVERED_AND_FLOW_DECLARED",
+   "ruling_by": "MANUS (2026-08-08: 'if it doesnt exist it's because it wasnt added when it was declared added or because its been erased since. i have that very capture posted to tiktok and twitter. whered it go?')",
+   "basis": "MANUS WAS RIGHT AND I WAS WRONG TO REPORT ABSENCE AS NON-EXISTENCE. Comparing gallery-host filenames against registry references found 43 orphaned images — files published to the galleries that no registry entry claimed. 29 of them are an entire capture session from 2026-08-03/04: AXN symbolon reception signed-in and incognito, stamp reception in ChatGPT across six shots, the Constitution of the Semantic Economy, logotic programming, the alexanarch OAI surface, jack feist ark, lee sharks complete works, the blog signed-out, and rebekah cranes sappho — precisely the identifier-reception material MANUS named. They were captured, uploaded, and posted externally. They were never recorded. A further 11 images existed for captures ALREADY in the registry whose imgs field was null, so the card said no image was held while the image sat unreferenced on the surface. RECOVERED: 11 linked to their existing captures, one of them only retrievable through the GitHub API because godkinggoogle returns 403 to fetchers; 19 sessions entered from the 29 orphans with entry_status STUB_AWAITING_READING, images held and the READING EXPLICITLY ABSENT, because a capture is a query, what the layer returned, and what that means, and only the first is inferable from a filename. Registry 242 to 261, v9.33. THE FLOW IS NOW DECLARED WHERE A WRITER MEETS IT. Documenting it in the atlas was insufficient: every one of the three flow failures in two days was committed by someone with no reason to consult an atlas. It is now the FIRST KEY of the registry file itself, so a program opening it to write meets the rule before the data; rendered as visible text and JSON-LD on the gallery at /captures/#capture-flow, so a crawler meets it without executing anything; and rendered on the published dataset surface above the file list. The citability gate enforces all three placements, and one bug was caught in the making: a cleanup regex stripping the Dataset JSON-LD was also deleting the flow block emitted moments earlier — the declaration this work exists to make unmissable was being quietly removed by a tidy-up.",
+   "sites": "data/EA-WG-CAPTURES-01.json (_FLOW first key, 19 stubs, 11 links); data/captures/ (30 images recovered); captures/index.html; datasets/capture-registry/index.html; scripts/build_capture_gallery.py; scripts/audit_capture_citability.py; datasets/dataflow-atlas/atlas-v1.0-addendum.md §8 + PATHOLOGY-36",
+   "verified": "261 captures, 261 unique slugs, citability and link gates pass, flow displayed on registry/gallery/dataset and enforced, validate --strict 0 failures",
+   "outstanding": "The 19 stubs need their readings written — MANUS was present for those sessions and I was not. PATHOLOGY-36 recorded: publishing an image is not recording a capture.",
+   "at": "2026-08-08T14:47:53Z"
   }
  ]
 }
