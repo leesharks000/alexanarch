@@ -1458,6 +1458,41 @@ def regenerate_static_page(d, eidx, registry=None):
     # (it is separately harvested and cited) without announcing itself twice.
     pass
 
+    # HELD ARTIFACTS (2026-08-08). The registry's `attachments` array was carried in
+    # the data and rendered nowhere, so a record could hold a file and give a reader
+    # no way to fetch it. Surfaced here with size, page count and SHA-256, because a
+    # download whose hash is not shown cannot be checked against the record that
+    # serves it — and an archive that asks to be mirrored has to make that cheap.
+    _atts = d.get('attachments') or []
+    _served = [a for a in _atts if isinstance(a, dict)
+               and str(a.get('url', '')).startswith('https://www.alexanarch.org/')]
+    if _served:
+        _rows = []
+        for a in _served:
+            _meta = []
+            if a.get('size'):
+                _meta.append(f"{a['size']:,} bytes")
+            if a.get('pages'):
+                _meta.append(f"{a['pages']} pages")
+            if a.get('sha256'):
+                _meta.append(f"sha256 {esc(str(a['sha256'])[:16])}\u2026")
+            _rows.append(
+                '<div style="padding:7px 0;border-top:1px solid var(--border)">'
+                f'<a href="{esc(a["url"])}" style="color:var(--accent);font-weight:500">'
+                f'{esc(a.get("filename", "file"))}</a> '
+                f'<span style="color:#888;font-size:.88em">({" \u00b7 ".join(_meta)})</span>'
+                + (f'<div style="color:#666;font-size:.88em;margin-top:2px">'
+                   f'{esc(str(a.get("role", "")))}</div>' if a.get('role') else '')
+                + '</div>')
+        rel_block += (
+            '<div style="background:var(--surface);border-left:4px solid var(--accent);'
+            'padding:10px 14px;border-radius:6px;margin:12px 0;font-size:.9em">'
+            '<div style="font-weight:600;margin-bottom:2px">Held artifacts &mdash; '
+            f'{len(_served)} file{"s" if len(_served) != 1 else ""}, served by this archive</div>'
+            '<div style="color:#666;font-size:.88em;margin-bottom:2px">Fetch, hash, compare. '
+            'Copying requires no permission and verification requires no trust in this archive.</div>'
+            + ''.join(_rows) + '</div>')
+
     _pt = _bs.get('primary_text_attachment') if isinstance(_bs, dict) else None
     if _pt and _pt.get('attachment'):
         rel_block += (
