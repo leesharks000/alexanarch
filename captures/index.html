@@ -57,6 +57,13 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:6px}
 .footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--border);font-size:0.78em;color:var(--dim)}
 .glyph{margin-top:8px;color:var(--accent)}
 .kbd{font-family:var(--mono);background:#f0f4f8;padding:1px 5px;border-radius:3px;font-size:0.92em}
+.pager{display:flex;gap:14px;align-items:center;justify-content:center;margin:26px 0 8px;
+  font-family:ui-monospace,Menlo,monospace;font-size:.85em}
+.pager button{font:inherit;padding:6px 14px;border:1px solid var(--border);background:var(--surface);
+  color:inherit;border-radius:5px;cursor:pointer}
+.pager button:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
+.pager button:disabled{opacity:.38;cursor:default}
+.pager #pageinfo{color:var(--dim);min-width:9em;text-align:center}
 .cap-imgs{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 4px}
 .cap-imgs img{max-width:180px;max-height:150px;border:1px solid var(--border);border-radius:4px;
   object-fit:cover;background:#f4f4f4;display:block}
@@ -840,7 +847,11 @@ Operative Semiotics &amp; Numismatics: The Counter-Tokens: In essays like Coinag
 <div class="cap-card" id="vpcor" data-section="Sites &amp; Surfaces" data-status="unrated"><div class="cap-head"><span class="cap-section">Sites &amp; Surfaces</span><span class="cap-date">2026-06-13</span></div><div class="cap-query">vpcor</div><div class="cap-status-row"><span class="cap-status cap-status-unrated">unrated</span><span class="cap-sf">Search + AI Overview</span></div><div class="cap-imgs"><a href="https://www.alexanarch.org/data/captures/vpcor/vpcor.png" target="_blank" rel="noopener"><img loading="lazy" src="https://www.alexanarch.org/data/captures/vpcor/vpcor.png" alt="Screen capture for the query &quot;vpcor&quot;, dated 2026-06-13."></a></div><div class="cap-desc">vpcor.org ranks first. Knowledge panel: founding date, Ayanna Vox. AI Overview: &#x27;Vox Populi, community outreach, and rhizome — models of decentralized, grassroots organizing.&#x27; Zenodo: The Lee Sharks Prestigious 10000 MacArthur Genius Grants Poetry Prize.</div><div class="cap-actions"><a href="https://www.alexanarch.org/captures/#vpcor">¶ Cite</a></div></div>
 <!-- CAPTURES-STATIC-END -->
 </div>
-<div class="pager" id="pager"></div>
+<div class="pager" id="pager">
+  <button id="prev" type="button">‹ previous</button>
+  <span id="pageinfo"></span>
+  <button id="next" type="button">next ›</button>
+</div>
 
 <div class="footer">
   <div><strong>Alexanarch</strong> &middot; Read from <a href="/data/EA-WG-CAPTURES-01.json"><span class="kbd">data/EA-WG-CAPTURES-01.json</span></a> &middot; canonical record at <a href="/records/?id=3">deposit #3</a></div>
@@ -982,6 +993,8 @@ loadCaptures().then(function(cap){
       (totalPages > 1 ? '  ·  page ' + (page+1) + ' of ' + totalPages : '');
     var pg = document.getElementById('pager');
     if(pg) pg.style.display = totalPages > 1 ? '' : 'none';
+    var pi = document.getElementById('pageinfo');
+    if(pi) pi.textContent = 'page ' + (page+1) + ' of ' + totalPages;
     var pv = document.getElementById('prev'), nx = document.getElementById('next');
     if(pv) pv.disabled = page === 0;
     if(nx) nx.disabled = page >= totalPages - 1;
@@ -1005,7 +1018,12 @@ loadCaptures().then(function(cap){
     page = 0; render();
     var idx = (window.__shown || []).indexOf(el);
     if(idx >= 0){ page = Math.floor(idx / pageSize); render(); }
-    el.scrollIntoView({block:'start'});
+    // Defer the scroll past the paint: the browser performs its own jump to the
+    // fragment before this script runs, and scrolling during the same frame can be
+    // overridden by that jump landing on a card render() has just hidden.
+    requestAnimationFrame(function(){
+      requestAnimationFrame(function(){ el.scrollIntoView({block:'start'}); });
+    });
     el.classList.add('cap-targeted');
     setTimeout(function(){ el.classList.remove('cap-targeted'); }, 2600);
     return true;
@@ -1046,6 +1064,24 @@ loadCaptures().then(function(cap){
   }
 
   render();
+
+  /* PAGINATION. The prev/next handlers were lost when render() was rewritten from a
+     rebuild into a filter — the buttons remained in the page and did nothing, so a
+     reader could see 24 of 242 captures and had no way to reach the rest. */
+  var _prev = document.getElementById('prev'), _next = document.getElementById('next');
+  if(_prev) _prev.onclick = function(){ if(page > 0){ page--; render(); window.scrollTo(0,0); } };
+  if(_next) _next.onclick = function(){ page++; render(); window.scrollTo(0,0); };
+
+  /* DEEP LINK, RESOLVED AFTER THE FIRST RENDER.
+     The browser jumps to #slug on load, then the first render() hides that card
+     because it is not on page one, and the reader is left at whatever now occupies
+     that scroll position — which is what MANUS saw as "displays the correct one for
+     a second, then bounces to anti-suppression at the bottom of page one." The
+     resolver must therefore run AFTER the first render and re-page to the target. */
+  if(location.hash){
+    var _s = decodeURIComponent(location.hash.slice(1));
+    if(!gotoSlug(_s)) render();
+  }
 });
 </script>
 

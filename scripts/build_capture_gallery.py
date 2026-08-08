@@ -107,6 +107,17 @@ def main():
              f'Filtering and paging need JavaScript. The complete list of '
              f'{len(entries)} captures is below.</p></noscript>\n{cards}\n{END}')
 
+    # The pager buttons were previously injected by the old JS render(); when render
+    # became a DOM filter they vanished, leaving a reader able to see one page of 242
+    # captures with no way to reach the rest. They are now real markup, and this
+    # guard keeps a regeneration from dropping them again.
+    if 'id="prev"' not in page:
+        page = page.replace('<div class="pager" id="pager"></div>',
+            '<div class="pager" id="pager">\n'
+            '  <button id="prev" type="button">\u2039 previous</button>\n'
+            '  <span id="pageinfo"></span>\n'
+            '  <button id="next" type="button">next \u203a</button>\n</div>')
+
     if BEGIN in page:
         page = re.sub(re.escape(BEGIN) + r".*?" + re.escape(END), lambda _: block, page, flags=re.S)
     else:
