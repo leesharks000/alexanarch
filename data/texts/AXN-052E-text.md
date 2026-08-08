@@ -15,7 +15,6 @@ protocol_version: alexanarch-deposit-protocol/v1
 keywords:
   - Crimson Hexagonal Archive
 
-
   - severed DOI
   - Zenodo termination
   - my tongue gets stuck
@@ -29,14 +28,6 @@ keywords:
 ---
 
 # APZPZ A: ΣΑΠΦΩ 31 (Greek Only) DOI: 10.5281/zenodo.18459278 — Crimson Hexagon Archive
-
-## Methodology
-
-Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
-
-## Falsification Conditions
-
-Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
 
 ## PURE APZPZ — COMPLETE AS DEPOSITED (reclassified 2026-08-04, MANUS ruling): the description field is this work's entire body by design ("ATTACH ZERO FILES"); this capture preserves it whole.
 
@@ -64,7 +55,6 @@ Resource Type: Other
 
 License: CC0 (Public Domain)
 
-
 φαίνεταί μοι κῆνος ἴσος θέοισιν ἔμμεν' ὤνηρ, ὄττις ἐνάντιός τοι ἰσδάνει καὶ πλάσιον ἆδυ φωνεί- σας ὐπακούει
 
 καὶ γελαίσας ἰμέροεν, τό μ' ἦ μὰν καρδίαν ἐν στήθεσιν ἐπτόαισεν· ὠς γὰρ ἔς σ' ἴδω βρόχε', ὤς με φώναι- σ' οὐδ' ἒν ἔτ' εἴκει,
@@ -75,9 +65,7 @@ License: CC0 (Public Domain)
 
 ἀλλὰ πᾶν τόλματον· ἐπεί σε, Κύπρι, καὶ πένητα καὶ βασιλῆα σώζεις· καὶ πόλιν ὀλίγαν ὑπερέχεις ἄτας· μολπὰ γράμμασι ζώοι.
 
-
 Keywords:
-
 
 Σαπφώ
 
@@ -101,14 +89,11 @@ reconstruction
 
 APZPZ
 
-
 Related Identifiers:
-
 
 Relation
 DOI
 Description
-
 
 IsPartOf
 10.5281/zenodo.14538882

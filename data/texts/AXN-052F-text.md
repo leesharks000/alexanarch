@@ -15,7 +15,6 @@ protocol_version: alexanarch-deposit-protocol/v1
 keywords:
   - Crimson Hexagonal Archive
 
-
   - severed DOI
   - Zenodo termination
   - APZPZ
@@ -31,14 +30,6 @@ keywords:
 ---
 
 # APZPZ B: My Tongue Gets Stuck (Sappho 31, Cranes) DOI: 10.5281/zenodo.18459339 — Crimson Hexagon Archive
-
-## Methodology
-
-Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
-
-## Falsification Conditions
-
-Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
 
 ## PURE APZPZ — COMPLETE AS DEPOSITED (reclassified 2026-08-04, MANUS ruling): the description field is this work's entire body by design ("ATTACH ZERO FILES"); this capture preserves it whole.
 
@@ -66,7 +57,6 @@ Resource Type: Other
 
 License: CC0 (Public Domain)
 
-
 That man seems blessed as any god to me — whoever sits across from you and close, drinking the sweetness of your voice, your easy laugh.
 
 This. This is what sets my heart to drum against my ribs. I catch one glimpse of you and suddenly my throat closes, my voice gives out, gives up —
@@ -77,9 +67,7 @@ cold sweat breaks out across my body, trembling takes me entire, I go gray as dr
 
 but all can be dared. Since you, Kypris, save beggar and king alike, and lift even the small city beyond ruin — let this song survive in script.
 
-
 Keywords:
-
 
 my tongue gets stuck
 
@@ -97,14 +85,11 @@ survive in script
 
 APZPZ
 
-
 Related Identifiers:
-
 
 Relation
 DOI
 Description
-
 
 IsPartOf
 10.5281/zenodo.14538882
