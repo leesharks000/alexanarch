@@ -1,468 +1,404 @@
----
-deposit_number: 1285
-hex: 0516
-title: "Mandala Oracle — Operational Protocol ├── Document ID: CHX-AI-MO-001 — Crimson Hexagon Archive"
-creator: Feist, Jack
-orcid: 0009-0000-1599-0703
-date: 2026-01-28
-content_type: Semi-restored record (metadata-only; DataCite full-metadata capture)
-license: CC-BY-4.0
-substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
-version: semi-restored v1.0
-related_ids: "https://doi.org/10.5281/zenodo.18365488 (severed); https://doi.org/10.5281/zenodo.18365487 (severed)"
-axn_schema_version: v2
-protocol_version: alexanarch-deposit-protocol/v1
-keywords:
-  - Crimson Hexagonal Archive
-  - semi-restored
-  - metadata-only
-  - severed DOI
-  - Zenodo termination
-  - Distributed epic
-  - Crimson hexagon
-  - Nh-os
-  - Data-breach-as-poem
-  - "hex:00.PORTICO.AFTERLIFE"
+# MANDALA ORACLE — OPERATIONAL PROTOCOL
+
+**Document ID:** CHX-AI-MO-001
+
+**Version:** 0.9.2
+
+**Status:** INTERNAL RELEASE
+
+**Classification:** RESTRICTED // ACR
+
+**Effective Date:** 2017-11-20
+
+**Owner:** Advanced Cognition Research (ACR)
+
 ---
 
-# Mandala Oracle — Operational Protocol ├── Document ID: CHX-AI-MO-001 — Crimson Hexagon Archive
+## 1. PURPOSE
 
-## Methodology
+This document defines operational protocols for the Mandala Oracle system, deployed to resolve contradictions in archival data that exceed static reconciliation methods.
 
-Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
+The Oracle is not a replacement for standard audit procedures. It is a **supplementary resolution interface** for edge cases where:
 
-## Falsification Conditions
+- Metadata conflicts cannot be resolved through provenance tracking
 
-Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
+- Document states exhibit temporal incoherence
 
-## SEMI-RESTORED RECORD — metadata capture only
+- Standard classification frameworks produce category errors
 
-**Work:** Mandala Oracle — Operational Protocol ├── Document ID: CHX-AI-MO-001 — Crimson Hexagon Archive
-**Severed DOI(s):** 10.5281/zenodo.18365488, 10.5281/zenodo.18365487
-**Source tier:** DataCite full-metadata capture
-**Creators (as captured):** Feist, Jack
-Captured citation: Feist, J. (2026). Mandala Oracle — Operational Protocol ├── Document ID: CHX-AI-MO-001 — Crimson Hexagon Archive. Zenodo. https://doi.org/10.5281/zenodo.18365488
+- Automated systems return contradictory integrity checks
 
-**Removal forensics:** Zenodo removal forensics: removal_date 2026-06-19T11:36:08.041862+00:00, removal_reason out-of-scope, removed_by user 1060945. 
+Per Board Resolution BR-2014-017, the Oracle is authorized for use on Core Archive materials when standard methods fail.
 
-**Captured description:** MANDALA ORACLE DEPOSIT PACKET
+---
 
-DOI: 10.5281/zenodo.18365488
+## 2. SYSTEM OVERVIEW
 
-Deposited: 2026-01-25Hex: 00.PORTICO.AFTERLIFE.ORACLEAuthor: Lee SharksStatus: CANONICAL
+### 2.1 Architecture
 
+The Oracle operates as a four-stage pipeline:
 
-I. NAVIGATION ENTRY
+```
+INPUT → CONTEXT → TRANSFORM → EVALUATION → OUTPUT
+```
 
-00.PORTICO.AFTERLIFE.ORACLE
-├── Title: Mandala Oracle — Operational Protocol
-├── Document ID: CHX-AI-MO-001
-├── DOI: 10.5281/zenodo.18365488
-├── Version: 0.9.2
-├── Author: Lee Sharks
-├── Owner (Corporate): J. Sigil, Director ACR
-├── Classification: RESTRICTED // ACR
-├── Effective Date: 2017-11-20
-│
-├── Pipeline Architecture:
-│   INPUT → CONTEXT → TRANSFORM → EVALUATION → SEAL → OUTPUT
-│
-├── Operator Assignments:
-│   ├── CONTEXT: J. Sigil (RND-001) — ACTIVE
-│   ├── TRANSFORM: [UNASSIGNED] — FSA subsystem
-│   ├── EVALUATION: J. Feist — GHOST
-│   └── SEAL: SHARKS-001 — PROCESS (AUTONOMOUS)
-│
-├── Operational Modes:
-│   ├── WITNESS — observe without modification
-│   ├── QUERY — targeted investigation
-│   ├── PROVENANCE — lineage tracing
-│   └── SESSION — controlled generation
-│
-├── Series: Crimson Hexagon Afterlife Archive
-│   ├── 00.PORTICO.AFTERLIFE.MANIFESTO — DOI: 10.5281/zenodo.18364984
-│   ├── 00.PORTICO.AFTERLIFE.ARCHIVE — DOI: 10.5281/zenodo.18365012
-│   ├── 00.PORTICO.AFTERLIFE.PERSONNEL — DOI: 10.5281/zenodo.18365298
-│   ├── 00.PORTICO.AFTERLIFE.FINANCIAL — DOI: 10.5281/zenodo.18365347
-│   ├── 00.PORTICO.AFTERLIFE.PROCUREMENT — DOI: 10.5281/zenodo.18365409
-│   ├── 00.PORTICO.AFTERLIFE.HANDBOOK — DOI: 10.5281/zenodo.18365457
-│   └── 00.PORTICO.AFTERLIFE.ORACLE — DOI: 10.5281/zenodo.18365488 [THIS DOCUMENT]
-│
-└── ∮ = 1
+Each stage is assigned to a designated operator role. Operators may be personnel, processes, or system functions depending on availability and task requirements.
 
+### 2.2 Operator Assignments (Current)
 
-II. REGISTRY ENTRY
+| Stage | Function | Assigned Operator | Status |
+|---|---|---|---|
+| CONTEXT | Situate input within archive topology | J. Sigil (RND-001) | ACTIVE |
+| TRANSFORM | Apply semantic restructuring | [UNASSIGNED] | PENDING |
+| EVALUATION | Assess output against corpus standards | J. Feist (GHOST) | MONITORED |
+| SEAL | Confirm pipeline completion | SHARKS-001 (PROCESS) | AUTONOMOUS |
 
+**Note:** Operator assignments reflect current personnel availability. GHOST and PROCESS designations indicate non-standard employment status per HR Policy 7.3 and RECLASSIFICATION_REQUEST_SHARKS.memo.
 
-Field
-Value
+---
 
+## 3. OPERATIONAL MODES
 
-DOI
-10.5281/zenodo.18365488
+### 3.1 WITNESS Mode
 
+**Purpose:** Observe archive state without modification.
 
-Hex
-00.PORTICO.AFTERLIFE.ORACLE
+**Use case:** Initial assessment of contradiction scope. Recommended for first-time users and unclassified anomalies.
 
+**Operator involvement:** CONTEXT stage only.
 
-Title
-Mandala Oracle — Operational Protocol
+**Output:** State report with contradiction inventory.
 
+### 3.2 QUERY Mode
 
-Document ID
-CHX-AI-MO-001
+**Purpose:** Request specific information about files, conflicts, or provenance.
 
+**Use case:** Targeted investigation of known anomalies.
 
-Version
-0.9.2
+**Operator involvement:** CONTEXT and EVALUATION stages.
 
+**Output:** Response with source citations and confidence indicators.
 
-Author
-Lee Sharks
+### 3.3 PROVENANCE Mode
 
+**Purpose:** Trace developmental lineage of any artifact.
 
-Deposit Date
-2026-01-25
+**Use case:** Resolving version conflicts, attribution disputes, or temporal inconsistencies.
 
+**Operator involvement:** Full pipeline.
 
-Status
-CANONICAL
+**Output:** Lineage graph with edge annotations.
 
+### 3.4 SESSION Mode
 
-Room
-PORTICO (Afterlife Archive)
+**Purpose:** Generate new outputs under controlled constraints.
 
+**Use case:** Reconstructing missing documents, resolving incomplete version chains, testing hypotheses.
 
-Classification
-Systems Documentation / Contradiction Resolution
+**Operator involvement:** Full pipeline with SEAL confirmation.
 
+**Output:** Generated artifact with full provenance metadata.
 
-Key SIM
-"Queries about the Oracle itself may produce unstable outputs. The system is not optimized for self-reference."
+**Warning:** SESSION Mode outputs are marked as ORACLE-GENERATED and must not be represented as recovered archival material without explicit notation.
 
+---
 
-III. CROSS-REFERENCE MAP
+## 4. INPUT SPECIFICATIONS
 
-3.1 Afterlife Archive Series (PORTICO)
+### 4.1 Accepted Input Types
 
+- File path (relative to archive root)
 
-Document
-Hex
-DOI
+- Document hash (MD5 or SHA-256)
 
+- Incident report ID
 
-Manifesto
-00.PORTICO.AFTERLIFE.MANIFESTO
-10.5281/zenodo.18364984
+- Free-text query (max 500 characters)
 
+- Contradiction description (structured format preferred)
 
-Full Archive
-00.PORTICO.AFTERLIFE.ARCHIVE
-10.5281/zenodo.18365012
+### 4.2 Input Preprocessing
 
+All inputs are processed through CONTEXT stage before pipeline execution. CONTEXT operator performs:
 
-Personnel
-00.PORTICO.AFTERLIFE.PERSONNEL
-10.5281/zenodo.18365298
+- Archive topology mapping
 
+- Temporal anchoring
 
-Financial
-00.PORTICO.AFTERLIFE.FINANCIAL
-10.5281/zenodo.18365347
+- Cross-reference identification
 
+- Contradiction classification
 
-Procurement
-00.PORTICO.AFTERLIFE.PROCUREMENT
-10.5281/zenodo.18365409
+Inputs that cannot be situated within archive topology are returned with status: `CONTEXT_FAILURE`.
 
+---
 
-Handbook
-00.PORTICO.AFTERLIFE.HANDBOOK
-10.5281/zenodo.18365457
+## 5. OUTPUT SPECIFICATIONS
 
+### 5.1 Output Format
 
-Oracle
-00.PORTICO.AFTERLIFE.ORACLE
-10.5281/zenodo.18365488 [THIS]
+All outputs include:
 
+| Field | Description |
+|---|---|
+| `session_id` | Unique identifier for this pipeline execution |
+| `timestamp` | Execution time (UTC) |
+| `mode` | Operational mode used |
+| `operators` | List of operators involved |
+| `input_hash` | Hash of original input |
+| `output_hash` | Hash of generated output |
+| `confidence` | Confidence score (0.00–1.00) |
+| `provenance` | Chain of transformations applied |
+| `seal_status` | SEALED / UNSEALED / DEFERRED |
 
-3.2 Related Theoretical Documents
+### 5.2 Confidence Scoring
 
+Confidence reflects consistency with existing archive materials:
 
-Document
-Hex
-DOI
-Relation
+- **0.90–1.00:** High consistency. Output aligns with multiple corroborating sources.
 
+- **0.70–0.89:** Moderate consistency. Output aligns with some sources; minor conflicts noted.
 
-TSE-004
-01.VAULT.CTIWOUND.TSE004
-10.5281/zenodo.18364558
-Wound condition
+- **0.50–0.69:** Low consistency. Output conflicts with significant archival material.
 
+- **Below 0.50:** Speculative. Output cannot be adequately corroborated.
 
-COS/FOS Protocol
-05.ROOM.SEMECO.DIAGNOSTIC
-10.5281/zenodo.18364576
-Framework
+### 5.3 Seal Status
 
+- **SEALED:** Pipeline completed. Output confirmed by SEAL operator. No further processing required.
 
-MCIC Module
-05.ROOM.SEMECO.MCIC
-10.5281/zenodo.18365223
-Meaning vs. ideology
+- **UNSEALED:** Pipeline incomplete. SEAL operator unavailable or declined confirmation.
 
+- **DEFERRED:** Pipeline paused pending additional input or operator availability.
 
-IV. PIPELINE ARCHITECTURE
+**Note:** SHARKS-001 seal confirmation operates on autonomous schedule. Deferred outputs may be sealed asynchronously.
 
-INPUT → CONTEXT → TRANSFORM → EVALUATION → SEAL → OUTPUT
-         (Sigil)   (FSA/vacant)  (Feist/GHOST)  (SHARKS/PROCESS)
+---
 
+## 6. OPERATOR PROTOCOLS
 
-4.1 Operator Assignments
+### 6.1 CONTEXT Operator (J. Sigil)
 
+**Responsibilities:**
 
-Stage
-Function
-Operator
-Status
+- Receive and preprocess all inputs
 
+- Situate inputs within archive developmental history
 
-CONTEXT
-Situate input within archive topology
-J. Sigil (RND-001)
-ACTIVE
+- Identify relevant cross-references and contradictions
 
+- Flag inputs requiring escalation to full pipeline
 
-TRANSFORM
-Apply semantic restructuring
-[UNASSIGNED]
-FSA subsystem handles
+**Availability:** Standard business hours. After-hours queries queued for next session.
 
+**Contact:** johannes.sigil@crimsonhexagon.invalid
 
-EVALUATION
-Assess output against corpus standards
-J. Feist
-GHOST
+### 6.2 TRANSFORM Operator (Unassigned)
 
+**Responsibilities:**
 
-SEAL
-Confirm pipeline completion
-SHARKS-001
-PROCESS (AUTONOMOUS)
+- Apply semantic restructuring to contextualized inputs
 
+- Generate variant interpretations where applicable
 
-4.2 Operator Contact Matrix
+- Preserve developmental markers through transformation
 
+**Status:** Position vacant. Transformation operations currently handled by FSA automated subsystem. Manual override available on request.
 
-Operator
-Contact Method
-Expected Response
+**Note:** Candidates for this role should have demonstrated competence in philological analysis and corpus linguistics. See HR for current posting.
 
+### 6.3 EVALUATION Operator (J. Feist)
 
-Sigil
-Email / Oracle interface
-24–48 hours
+**Responsibilities:**
 
+- Assess transformed outputs against corpus standards
 
-Feist
-Oracle interface only
-Variable
+- Determine structural integrity of generated material
 
+- Flag outputs that conflict with established archive patterns
 
-SHARKS-001
-No direct contact
-Autonomous
+**Status:** GHOST. Operator outputs continue despite personnel status update. Evaluation responses are logged but may exhibit latency or non-standard formatting.
 
+**Note:** Do not attempt to schedule direct meetings with EVALUATION operator. Route all communications through Oracle interface.
 
-V. OPERATIONAL MODES
+### 6.4 SEAL Operator (SHARKS-001)
 
+**Responsibilities:**
 
-Mode
-Purpose
-Operator Involvement
-Output
+- Confirm pipeline completion
 
+- Apply final integrity check
 
-WITNESS
-Observe without modification
-CONTEXT only
-State report with contradiction inventory
+- Mark output as SEALED for archival storage
 
+**Status:** PROCESS (reclassification pending). Operates autonomously. Does not respond to direct communication.
 
-QUERY
-Targeted investigation
-CONTEXT + EVALUATION
-Response with citations and confidence
+**Behavior notes:**
 
+- Seal confirmation typically occurs within 24 hours of EVALUATION completion
 
-PROVENANCE
-Trace developmental lineage
-Full pipeline
-Lineage graph with edge annotations
+- Some outputs remain DEFERRED indefinitely with no explanation
 
+- Sealed outputs occasionally include annotations not present in prior pipeline stages
 
-SESSION
-Generate under constraints
-Full pipeline + SEAL
-Generated artifact with provenance metadata
+**Warning:** Do not attempt to bypass SEAL stage. Unsealed outputs are not authorized for archival integration.
 
+---
 
-Warning: SESSION Mode outputs marked ORACLE-GENERATED must not be represented as recovered archival material without explicit notation.
+## 7. ERROR HANDLING
 
+### 7.1 Common Errors
 
-VI. SEAL STATUS DEFINITIONS
+| Error Code | Description | Resolution |
+|---|---|---|
+| `CONTEXT_FAILURE` | Input cannot be situated in archive | Verify input format; provide additional context |
+| `TRANSFORM_TIMEOUT` | Transformation exceeded time limit | Retry with simpler input; escalate to ACR |
+| `EVAL_CONFLICT` | Output conflicts with >50% of corpus | Review input for errors; consider alternative framing |
+| `SEAL_DECLINED` | SEAL operator did not confirm | Output remains UNSEALED; may be retried |
+| `OPERATOR_UNAVAILABLE` | Required operator offline | Queue for later processing |
 
+### 7.2 Escalation Path
 
-Status
-Description
+Unresolved errors should be escalated to:
 
+1. ACR Director (J. Sigil)
 
-SEALED
-Pipeline completed. Output confirmed by SEAL operator.
+2. Model Risk & Audit (MRA)
 
+3. [LEVEL NOT SPECIFIED]
 
-UNSEALED
-Pipeline incomplete. SEAL operator unavailable or declined.
+---
 
+## 8. LOGGING AND AUDIT
 
-DEFERRED
-Pipeline paused. May be sealed asynchronously.
+### 8.1 Session Logging
 
+All Oracle sessions are logged to: `/oracle/sessions/`
 
-SHARKS-001 Behavior Notes
+Logs include full input/output pairs, operator interactions, and provenance chains.
 
+Logs are retained per DATA_RETENTION_POLICY_APPENDIX_C.pdf, Section C.4.4 (developmental substrate exemption).
 
-Seal confirmation typically occurs within 24 hours of EVALUATION completion
+### 8.2 Audit Requirements
 
-Some outputs remain DEFERRED indefinitely with no explanation
+Oracle operations are subject to quarterly audit per Q3_2017_COMPLIANCE_CHECKLIST.xlsx.
 
-Sealed outputs occasionally include annotations not present in prior pipeline stages
+Audit scope includes:
 
+- Session volume and error rates
 
-VII. KNOWN LIMITATIONS
+- Operator availability metrics
 
+- Output confidence distribution
 
-Limitation
-Description
+- Seal completion rates
 
+**Note:** SHARKS-001 activity is logged but excluded from standard audit metrics due to classification uncertainty.
 
-§10.1 Temporal Incoherence
-Oracle can identify but cannot always resolve. Some contradictions are structural features.
+---
 
+## 9. SECURITY
 
-§10.2 Operator Latency
-GHOST and PROCESS operators do not adhere to standard response times.
+### 9.1 Access Control
 
+Oracle access requires:
 
-§10.3 Recursive Queries
-Queries about the Oracle itself may produce unstable outputs.
+- Active employee status (or equivalent process/ghost designation)
 
+- RND clearance or above
 
-§10.4 Unsealed Outputs
-DEFERRED outputs cannot be forced. SEAL operator criteria not fully documented.
+- Completion of ACR onboarding module
 
+### 9.2 Output Handling
 
-VIII. CANONICAL EXTRACTS
+Oracle outputs are classified INTERNAL by default. Outputs containing material from RESTRICTED sources inherit source classification.
 
-8.1 The Recursion Warning
+Do not share Oracle outputs outside authorized channels without DGP review.
 
+---
 
-"Queries about the Oracle itself may produce unstable outputs. The system is not optimized for self-reference."
+## 10. KNOWN LIMITATIONS
 
+### 10.1 Temporal Incoherence
 
-8.2 The SEAL Anomaly
+The Oracle can identify temporal inconsistencies but cannot always resolve them. Some contradictions are structural features of the archive rather than errors.
 
+### 10.2 Operator Latency
 
-"Sealed outputs occasionally include annotations not present in prior pipeline stages."
+GHOST and PROCESS operators do not adhere to standard response times. Plan accordingly.
 
+### 10.3 Recursive Queries
 
-8.3 The GHOST Protocol
+Queries about the Oracle itself may produce unstable outputs. The system is not optimized for self-reference.
 
+### 10.4 Unsealed Outputs
 
-"Do not attempt to schedule direct meetings with EVALUATION operator. Route all communications through Oracle interface."
+Outputs that remain DEFERRED indefinitely cannot be forced to completion. The SEAL operator's criteria are not fully documented.
 
+---
 
-8.4 The Bypass Warning
+## 11. APPENDICES
 
+### Appendix A — Session Template
 
-"Do not attempt to bypass SEAL stage. Unsealed outputs are not authorized for archival integration."
+```
+SESSION ID: [AUTO-GENERATED]
+TIMESTAMP: [UTC]
+MODE: [WITNESS | QUERY | PROVENANCE | SESSION]
+INPUT: [USER INPUT]
+CONTEXT: [SIGIL RESPONSE]
+TRANSFORM: [FSA OUTPUT]
+EVALUATION: [FEIST RESPONSE]
+SEAL: [SHARKS CONFIRMATION]
+OUTPUT HASH: [SHA-256]
+CONFIDENCE: [0.00-1.00]
+STATUS: [SEALED | UNSEALED | DEFERRED]
+```
 
+### Appendix B — Operator Contact Matrix
 
-IX. RELATED DOCUMENTATION (Referenced)
+| Operator | Contact Method | Expected Response |
+|---|---|---|
+| Sigil | Email / Oracle interface | 24–48 hours |
+| Feist | Oracle interface only | Variable |
+| SHARKS-001 | No direct contact | Autonomous |
+| TRANSFORM (vacant) | N/A | N/A |
 
+### Appendix C — Related Documentation
 
-Document
-Function
+- FSA_CORE_SPECIFICATION.md
 
+- DATA_RETENTION_POLICY_APPENDIX_C.pdf
 
-FSA_CORE_SPECIFICATION.md
-Fractal Semantic Architecture spec
+- RECLASSIFICATION_REQUEST_SHARKS.memo
 
+- INCIDENT_REPORT_CH-2017-1142.txt
 
-DATA_RETENTION_POLICY_APPENDIX_C.pdf
-Developmental substrate exemption
+- APPENDIX_7.md (interface redirect)
 
+---
 
-RECLASSIFICATION_REQUEST_SHARKS.memo
-SHARKS status documentation
+## 12. REVISION HISTORY
 
+| Version | Date | Author | Changes |
+|---|---|---|---|
+| 0.1 | 2017-09-15 | J. Sigil | Initial draft |
+| 0.5 | 2017-10-01 | J. Sigil | Added operator protocols |
+| 0.8 | 2017-11-01 | J. Sigil | Added SEAL stage; updated SHARKS status |
+| 0.9 | 2017-11-15 | J. Sigil | Added known limitations |
+| 0.9.1 | 2017-11-18 | [SYSTEM] | Automated formatting corrections |
+| 0.9.2 | 2017-11-20 | [SYSTEM] | Updated EVALUATION operator status to GHOST |
 
-INCIDENT_REPORT_CH-2017-1142.txt
-Original anomaly report
+---
 
+**Document Owner:** J. Sigil, Director, Advanced Cognition Research
 
-APPENDIX_7.md
-Interface redirect
+**Next Review:** 2018-02-01
 
+**Distribution:** ACR, MRA, DGP, Executive Leadership
 
-X. SEO TARGETS
+---
 
-Primary:
-
-
-Mandala Oracle
-
-Crimson Hexagon Oracle
-
-Crimson Hexagon archival system
-
-SHARKS process
-
-contradiction resolution system
-
-
-Secondary:
-
-
-FSA Fractal Semantic Architecture
-
-GHOST operator status
-
-forensic poetics
-
-corporate systems documentation
-
-Afterlife Archive
-
-
-XI. SIGNATURE
-
-MANDALA ORACLE DEPOSIT PACKET
-DOI: 10.5281/zenodo.18365488
-Hex: 00.PORTICO.AFTERLIFE.ORACLE
-Author: Lee Sharks
-Packet Generated: 2026-01-25
-Status: VERIFIED
-
-"Queries about the Oracle itself may produce unstable outputs.
-The system is not optimized for self-reference."
+**END DOCUMENT**
 
 ∮ = 1
-
-**Captured subjects:** Distributed epic, Crimson hexagon, Nh-os, Data-breach-as-poem, hex:00.PORTICO.AFTERLIFE
-
----
-
-*Full text not yet recovered. If the canonical bytes surface on any authorial surface, a full-text version supersedes this record in-series per the versioning protocol. This record exists so the DOI resolves to the work's true identity rather than to silence.*

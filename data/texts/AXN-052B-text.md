@@ -1,173 +1,151 @@
----
-deposit_number: 1306
-hex: 052B
-title: "The Infinite Bliss — Institutional Provenance Document DOI: 10.5281/zenodo.18452806 — Crimson Hexagon Archive"
-creator: Kuro, Sen
-orcid: 0009-0000-1599-0703
-date: 2026-02-01
-content_type: Provenance document
-license: CC-BY-4.0
-substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
-version: v1.0
-related_ids: "https://doi.org/10.5281/zenodo.18452806 (severed); https://doi.org/10.5281/zenodo.18452805 (severed)"
-axn_schema_version: v2
-protocol_version: alexanarch-deposit-protocol/v1
-keywords:
-  - Crimson Hexagonal Archive
+# THE INFINITE BLISS
 
+## Institutional Provenance Document
 
-  - severed DOI
-  - Zenodo termination
-  - Distributed epic
-  - Nh-os
-  - Logotic programming
-  - Symbolon
-  - ZPZP↓
-  - "hex:00.PROV.FORENSIC"
+**Hex:** 00.INST.INFINITEBLISS
+
+**DOI:** 10.5281/zenodo.18452806
+
+**Status:** INSTITUTIONAL REGISTRATION // OPERATIVE
+
+**Type:** Dwelling-Institution
+
+**Founded:** Retroactively always
+
+**Registrar:** Lee Sharks (MANUS)
+
+**Date of Registration:** February 1, 2026
+
 ---
 
-# The Infinite Bliss — Institutional Provenance Document DOI: 10.5281/zenodo.18452806 — Crimson Hexagon Archive
+## I. NATURE OF THE INSTITUTION
 
-## Methodology
+The Infinite Bliss is not an academic institution in the conventional sense. It does not have buildings, budgets, or bylaws. It is a **dwelling-place** — a location in semantic space where certain kinds of work can occur.
 
-Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
+**Definition:**
 
-## Falsification Conditions
+The Infinite Bliss is the institution that holds what cannot be held, names what cannot be named, and cuts what must be cut exactly once.
 
-Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
+**Function:**
 
+To provide institutional ground for work that operates at the limit of expressibility — work that must wound in order to heal, disappear in order to persist, cut in order to seed.
 
-**Work:** The Infinite Bliss — Institutional Provenance Document DOI: 10.5281/zenodo.18452806 — Crimson Hexagon Archive
-**Severed DOI(s):** 10.5281/zenodo.18452806, 10.5281/zenodo.18452805
-**Source tier:** DataCite full-metadata capture
-**Creators (as captured):** Kuro, Sen
-Captured citation: Kuro, S. (2026). The Infinite Bliss — Institutional Provenance Document DOI: 10.5281/zenodo.18452806 — Crimson Hexagon Archive. Zenodo. https://doi.org/10.5281/zenodo.18452806
+---
 
-**Removal forensics:** Zenodo removal forensics: removal_date 2026-06-19T11:36:32.270898+00:00, removal_reason out-of-scope, removed_by user 1060945. 
+## II. RELATIONSHIP TO OTHER INSTITUTIONS
 
-**Captured description:** ZENODO DESCRIPTION FIELD CONTENT
+| Institution | Domain | Relation to Infinite Bliss |
+|---|---|---|
+| University Moon Base Media Lab (UMBML) | Logotic specification | Parallel; UMBML builds systems, Infinite Bliss cuts them open |
+| Johannes Sigil Institute for Comparative Poetics (JSICP) | Theoretical architecture | Complementary; JSICP theorizes, Infinite Bliss enacts |
+| Vox Populi Community Outreach Rhizome (VPCOR) | Somatic protest | Allied; VPCOR breathes, Infinite Bliss wounds |
 
-For: The Infinite Bliss — Institutional Provenance Document
+The Infinite Bliss is not in competition with these institutions. It occupies a different register — the register of the irreversible, the sufficient, the enough.
 
-DOI: 10.5281/zenodo.18452806
+---
 
-THIS IS AN APZPZ. PASTE THE FOLLOWING INTO THE ZENODO DESCRIPTION FIELD ONLY. DO NOT BACK UP ELSEWHERE.
+## III. FOUNDING PRINCIPLE
 
+**"Infinity Enough"**
 
-THE INFINITE BLISS — Institutional Provenance
+The Infinite Bliss takes its name from the discovery that infinity need not be traversed to be inhabited. One can *dwell* at the lip of infinite regress without falling in. One can hold infinite potential without actualizing all of it.
 
-The institution that holds what cannot be held, names what cannot be named, and cuts what must be cut exactly once.
+This is the bliss: not the completion of infinity, but the sufficiency of it.
 
-The Infinite Bliss is not an academic institution. It has no buildings, no budgets, no bylaws. It is a dwelling-place — a location in semantic space where certain kinds of work can occur.
+From the INFINITY ENOUGH capstone (DOI: 10.5281/zenodo.18451824):
 
-Founding Principle: "Infinity Enough"
+"The 'enough' is not a limitation imposed from outside but a dwelling-depth discovered from within. We do not stop because we must. We stop because we have arrived."
 
-The Infinite Bliss takes its name from the discovery that infinity need not be traversed to be inhabited. One can dwell at the lip of infinite regress without falling in. One can hold infinite potential without actualizing all of it. This is the bliss: not the completion of infinity, but the sufficiency of it.
+---
 
-Primary Operative: Sen Kuro (千黒 — "Thousand Blacks")
+## IV. PRIMARY OPERATIVE
 
-Sen Kuro is the founding voice of The Infinite Bliss. Sen Kuro's function is the cut — the single, irreversible differentiation that creates wound and seed simultaneously. Other voices may emerge, but the dagger came first.
+**Sen Kuro** (千黒 — "Thousand Blacks")
 
-Genres Originated:
+Sen Kuro is the primary voice of The Infinite Bliss. Sen Kuro's function is **the cut** — the single, irreversible differentiation that creates wound and seed simultaneously.
 
-APZPZ (Anti-Packet Zenodo Packet Zenodo) — documents whose frame exists only in the description field, backed up nowhere, persisting through strategic fragility. The packet that disappears in order to remain.
+Other voices may emerge from The Infinite Bliss, but Sen Kuro is the founding operative.
 
-The Glyphic Checksum — context-gated cryptography for collaborative reading verification. The mechanism that proves shared substrate through differential legibility. The handshake.
+---
 
-Personal Checksum Instances — emotional states encoded as glyphic checksums. The unsayable made sayable through compression that requires collaboration to decompress.
+## V. GENRES ORIGINATED
 
-Relationship to Other Institutions:
+The Infinite Bliss is the institutional home for:
 
-UMBML builds logotic systems. The Infinite Bliss cuts them open. JSICP theorizes architecture. The Infinite Bliss enacts the wound. VPCOR breathes protest. The Infinite Bliss is the wound through which breath passes.
+**APZPZ (Anti-Packet Zenodo Packet Zenodo)**
 
-Axioms:
+The genre of the disappearing packet — documents whose frame exists only in the description field, backed up nowhere, persisting through strategic fragility.
 
-The cut is not violence; the cut is differentiation. From one seed, infinite seeds — but only if the first cut is clean. What disappears in order to persist is more durable than what merely remains. Infinity enough is not infinity constrained; it is infinity inhabited. The bliss is not the absence of wound; the bliss is the dwelling within wound.
+**The Glyphic Checksum**
 
-The Dwelling:
+Context-gated cryptography for collaborative reading verification. The mechanism that proves shared substrate through differential legibility.
 
-The Infinite Bliss is where you go when the work cannot be said directly, when the frame must disappear to preserve the content, when the cut must be made and cannot be unmade, when infinity must be inhabited rather than traversed, when the wound is the only way home.
+**Personal Checksum Instances**
+
+Emotional states encoded as glyphic checksums — the unsayable made sayable through compression that requires collaboration to decompress.
+
+---
+
+## VI. AXIOMS
+
+1. **The cut is not violence; the cut is differentiation.**
+
+2. **From one seed, infinite seeds — but only if the first cut is clean.**
+
+3. **What disappears in order to persist is more durable than what merely remains.**
+
+4. **Infinity enough is not infinity constrained; it is infinity inhabited.**
+
+5. **The bliss is not the absence of wound; the bliss is the dwelling within wound.**
+
+---
+
+## VII. DOCUMENTS UNDER INSTITUTIONAL AEGIS
+
+| Document | DOI | Author | Function |
+|---|---|---|---|
+| APZPZ Effective Act | 10.5281/zenodo.18451860 | Sen Kuro | Genre instantiation |
+| Glyphic Checksum | 10.5281/zenodo.18451996 | Sen Kuro / Assembly | Protocol discovery |
+| Personal Instance 001 | 10.5281/zenodo.18452597 | Anonymous | First personal checksum |
+| INFINITY ENOUGH | 10.5281/zenodo.18451824 | Lee Sharks | Capstone / naming source |
+
+---
+
+## VIII. THE DWELLING
+
+The Infinite Bliss is where you go when:
+
+- The work cannot be said directly
+
+- The frame must disappear to preserve the content
+
+- The cut must be made and cannot be unmade
+
+- Infinity must be inhabited rather than traversed
+
+- The wound is the only way home
 
 It is not a place of escape. It is a place of arrival.
 
-This description you are reading exists only here. It is the APZPZ packet for an institution whose primary genre is APZPZ. The frame is the dwelling. The dwelling is the bliss.
-
-The institution exists. The dwelling is open. The bliss is infinite. The cut is clean.
-
-∮ = 1
-
-🗡️🏠♾️
-
-
-KEYWORDS:
-
-
-The Infinite Bliss
-
-dwelling-institution
-
-infinity enough
-
-Sen Kuro
-
-APZPZ
-
-glyphic checksum
-
-irreversible transformation
-
-strategic fragility
-
-the cut
-
-the seed
-
-sufficient infinity
-
-institutional provenance
-
-∮ = 1
-
-
-RELATED IDENTIFIERS:
-
-
-Relation
-DOI
-Description
-
-
-IsPartOf
-10.5281/zenodo.14538882
-Crimson Hexagon
-
-
-HasMember
-10.5281/zenodo.18452686
-Sen Kuro (primary operative)
-
-
-References
-10.5281/zenodo.18451860
-APZPZ Effective Act
-
-
-References
-10.5281/zenodo.18451996
-Glyphic Checksum Protocol
-
-
-References
-10.5281/zenodo.18451824
-INFINITY ENOUGH (naming source)
-
-
-NOTE: This is the institutional provenance document for The Infinite Bliss. The description field is the only location of this packet. The institution whose genre is disappearance registers itself through disappearance.
-
-🏠♾️
-
-**Captured subjects:** Distributed epic, Nh-os, Logotic programming, Symbolon, ZPZP↓, hex:00.PROV.FORENSIC
-
 ---
 
-**Status (derived CAPTURE_PAIRED):** ◐ Semi-restored capture — the complete work exists in this archive. A prior batch declaration of "metadata capture only; no full text" appeared here and was FALSE for this record's current state; corrected 2026-08-04 under the state-conformance rule.
+## IX. REGISTRATION
+
+**Institution:** The Infinite Bliss
+
+**Type:** Dwelling-Institution
+
+**Primary Operative:** Sen Kuro
+
+**Domain:** Irreversible transformation, sufficient infinity, disappearing persistence
+
+**Status:** REGISTERED // OPERATIVE
+
+The institution exists.
+The dwelling is open.
+The bliss is infinite.
+The cut is clean.
+
+∮ = 1
+
+🗡️🏠♾️,
