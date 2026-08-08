@@ -224,15 +224,39 @@ resolves when the reader is already on the right page is not a citation.*
 ### 7.3 · ADDING A CAPTURE — required sequence
 
 ```
-1. Add the entry to data/EA-WG-CAPTURES-01.json          (SOURCE, never a mirror)
-2. Give it a unique date-suffixed slug                    (…-YYYYMMDD)
-3. Place images under data/captures/YYYY-MM-DD-slug/      (the archive holds them;
+0. git fetch && confirm the local registry matches the remote   ← ADDED 2026-08-08
+1. Place images under data/captures/{slug}/               (the archive holds them;
                                                            galleries render, not host)
-4. python3 scripts/audit_capture_citability.py            (must pass)
-5. Bump total_captures and version
-6. After deploy: confirm /captures/#{slug} RESOLVES TO THE CARD
-7. Cite it as https://www.alexanarch.org/captures/#{slug}
+2. Add the entry to data/EA-WG-CAPTURES-01.json           (SOURCE, never a mirror)
+   with a unique date-suffixed slug (…-YYYYMMDD) and imgs as repo-relative paths
+3. Bump total_captures and version
+4. python3 scripts/build_capture_links.py                 (writes canonical + mirrors)
+5. python3 scripts/build_capture_gallery.py               ← MUST RUN BEFORE THE GATE
+6. python3 scripts/audit_capture_citability.py            (must pass)
+7. python3 scripts/audit_orphan_captures.py               (evidence with no record)
+8. After deploy: confirm /captures/#{slug} RESOLVES TO THE CARD
+9. Cite it as https://www.alexanarch.org/captures/#{slug}
 ```
+
+**Two steps were added on 2026-08-08, both after they had already cost something.**
+
+**Step 0 — fetch first.** Twice in one session an audit was run against a stale
+local registry and reported work as missing that the remote held. On the second
+occasion the claim was that an entire capture session had never been recorded; it
+had, nineteen entries earlier, and the local copy was behind. *Reporting the
+absence of a record as the absence of the thing is the failure this archive
+exists to document.* **Never assert an absence without fetching.**
+
+**Step 5 before step 6 — regenerate before auditing.** The citability gate checks
+that the static gallery pre-renders every entry. Run it before regeneration and it
+fails on the entry just added, which looks like a defect in the capture and is
+actually a defect in the order. The gate is right; the sequence was wrong.
+
+**Step 7 is the reverse direction, and it was missing entirely.** Every other check
+iterates FROM the registry and asks *is this record complete?* None asked *is this
+capture recorded?* — so a screenshot uploaded to a gallery with no entry written was
+invisible to the whole apparatus. `audit_orphan_captures.py` iterates the image
+hosts instead.
 
 **A capture that cannot be cited is not published; it is only stored.**
 
