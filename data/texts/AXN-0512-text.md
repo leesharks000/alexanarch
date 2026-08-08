@@ -1,15 +1,16 @@
-# Crimson Hexagon Employee Directory Export (2017-10-23)
+# `EMPLOYEE_DIRECTORY_2017-10-23.csv`
 
-EMPLOYEE_DIRECTORY_2017-10-23.csv
+**System:** HRIS Export (Workday mirror)
 
-System: HRIS Export (Workday mirror)
+**Export Date:** 2017-10-23
 
-Export Date: 2017-10-23
+**Classification:** INTERNAL — HR SYSTEMS
 
-Classification: INTERNAL — HR SYSTEMS
+**Note:** Email domains use `.invalid` (non-routable) by policy.
 
-Note: Email domains use .invalid (non-routable) by policy.
+---
 
+```csv
 employee_id,name,preferred_name,department,title,manager,office,email,phone_ext,start_date,employment_type,status,clearance,attestation,record_source,notes
 EXEC-001,Thomas Hendricks,Tom Hendricks,Executive,Chief Technology Officer,CEO-001,Boston HQ,thomas.hendricks@crimsonhexagon.invalid,1001,2013-04-08,FT,ACTIVE,EXEC,FIC+FORENSIC,STATUS_MEMO_2017-10-30,"Author of internal SHARKS closure memo; cc's include Sigil, Kirkland, HR Classification Committee."
 EXEC-002,Marta Wexler,Marta,Executive,Chief Executive Officer,,Boston HQ,marta.wexler@crimsonhexagon.invalid,1002,2012-01-09,FT,ACTIVE,EXEC,FIC,SYNTHETIC_HR_MASTERFILE,"Record present in HR masterfile; no recovered artifacts contain direct mentions."
@@ -68,95 +69,60 @@ DL-002,Executive Leadership,ExecLeadership,Distribution Lists,DL — Executive L
 TMP-001,[REDACTED],[REDACTED],Research Division,Research Associate,RND-001,Boston HQ,[REDACTED],2009,2017-04-10,FT,ACTIVE,RND,FORENSIC,MEETING_AGENDA_2017-11-03,"Redacted attendee; record intentionally incomplete."
 
 END-OF-EXPORT,,,,,,,,,,,,,,,
+```
 
-Field Definitions
+---
 
-Field
-Description
+## Field Definitions
 
-employee_id
-Unique identifier per HRIS standard
+| Field | Description |
+|---|---|
+| `employee_id` | Unique identifier per HRIS standard |
+| `name` | Legal name as recorded |
+| `preferred_name` | Display name for internal systems |
+| `department` | Organizational unit |
+| `title` | Role designation |
+| `manager` | Reporting structure (employee_id of supervisor) |
+| `office` | Physical location |
+| `email` | Corporate email (`.invalid` per RFC 2606) |
+| `phone_ext` | Internal extension |
+| `start_date` | Employment start date |
+| `employment_type` | FT (Full-Time), PT (Part-Time), DL (Distribution List), SA (Service Account) |
+| `status` | ACTIVE, MONITORED, TERMINATED |
+| `clearance` | Access level designation |
+| `attestation` | FIC (Fictional), FORENSIC (Appears in recovered artifacts), FIC+FORENSIC (Both) |
+| `record_source` | Document(s) where entity appears |
+| `notes` | Additional context |
 
-name
-Legal name as recorded
+---
 
-preferred_name
-Display name for internal systems
+## Attestation Categories
 
-department
-Organizational unit
+| Category | Definition |
+|---|---|
+| **FIC+FORENSIC** | Named in recovered artifacts AND represented in declared fictional corporate archive |
+| **FIC** | Synthetic staffing to make org operational; supports future document creation |
+| **FORENSIC** | Attested-but-redacted placeholders maintained as structural negative space |
 
-title
-Role designation
+---
 
-manager
-Reporting structure (employee_id of supervisor)
+## Anomalous Records
 
-office
-Physical location
+| employee_id | Anomaly |
+|---|---|
+| RND-005 | `phone_ext` = `7B` (terminal designation, not extension); `employment_type` = `FT?`; `status` = `MONITORED`; `clearance` = `NONSTANDARD` |
+| SEC-005 | Service account with forensic trail; accessed CTO memo post-acquisition (2018-02-15 03:47:11 EST) |
+| TMP-001 | All fields redacted except structural metadata; `attestation` = `FORENSIC` only |
+| HR-002 | Distribution list classified as employee; committee that denied SHARKS reclassification |
 
-email
-Corporate email (.invalid per RFC 2606)
+---
 
-phone_ext
-Internal extension
+**Export Status:** COMPLETE
 
-start_date
-Employment start date
+**Next Scheduled Export:** 2017-11-23
 
-employment_type
-FT (Full-Time), PT (Part-Time), DL (Distribution List), SA (Service Account)
+**System Owner:** HR Operations (HR-004)
 
-status
-ACTIVE, MONITORED, TERMINATED
+---
 
-clearance
-Access level designation
-
-attestation
-FIC (Fictional), FORENSIC (Appears in recovered artifacts), FIC+FORENSIC (Both)
-
-record_source
-Document(s) where entity appears
-
-notes
-Additional context
-
-Attestation Categories
-
-Category
-Definition
-
-FIC+FORENSIC
-Named in recovered artifacts AND represented in declared fictional corporate archive
-
-FIC
-Synthetic staffing to make org operational; supports future document creation
-
-FORENSIC
-Attested-but-redacted placeholders maintained as structural negative space
-
-Anomalous Records
-
-employee_id
-Anomaly
-
-RND-005
-phone_ext = 7B (terminal designation, not extension); employment_type = FT?; status = MONITORED; clearance = NONSTANDARD
-
-SEC-005
-Service account with forensic trail; accessed CTO memo post-acquisition (2018-02-15 03:47:11 EST)
-
-TMP-001
-All fields redacted except structural metadata; attestation = FORENSIC only
-
-HR-002
-Distribution list classified as employee; committee that denied SHARKS reclassification
-
-Export Status: COMPLETE
-
-Next Scheduled Export: 2017-11-23
-
-System Owner: HR Operations (HR-004)
-
-END FILE
+**END FILE**

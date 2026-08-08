@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""restore_caesura.py — restore the three Caesura documents from their blog originals.
+"""restore_caesura.py — restore records from their blog originals, structure intact.\n\nAlso used as a converter by other in-session restorations: convert() turns a Blogger\npost body into markdown that keeps headings, tables, ordered procedures and fenced\ncode with its language hint. The flattening it exists to prevent is the reason #1281\nheld a 42-row CSV as running prose and three tables as bare line streams.
 
 WHY
 The three records were seated at roughly 55-65% of their sources: #630 held 32 of 57
@@ -62,8 +62,15 @@ def convert(body_html):
             if t and t != "\xa0":
                 out.append(t)
         elif tag == "pre":
+            # carry the language hint when the source declares one: the blog marks
+            # its CSV blocks <code class="language-csv">, and a fence without the
+            # hint renders as undifferentiated monospace
+            lang = ""
+            lm = re.search(r'class="[^"]*language-(\w+)', inner)
+            if lm:
+                lang = lm.group(1)
             t = html.unescape(re.sub(r"<[^>]+>", "", inner)).strip("\n")
-            out.append("```\n" + t + "\n```")
+            out.append(f"```{lang}\n" + t + "\n```")
         elif tag in ("ul", "ol"):
             items = re.findall(r"<li\b[^>]*>(.*?)</li>", inner, re.S)
             for i, it in enumerate(items, 1):
