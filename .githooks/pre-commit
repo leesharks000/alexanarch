@@ -1,0 +1,15 @@
+#!/bin/sh
+# The federation declaration must never lag the registry it describes.
+#
+# registry_head is a sha256 of data/registry.json, so ANY registry edit changes it
+# — a metadata repair, a wiki tier, a record modification. The CI gate therefore
+# failed on every registry-touching commit made outside deposit_pipeline, which is
+# most hand repairs. That is the gate working correctly and the workflow being wrong:
+# a guard that fires constantly gets routed around, and a routed-around guard is
+# worse than none.
+#
+# Install once:  git config core.hooksPath .githooks
+if git diff --cached --name-only | grep -q '^data/registry\.json$'; then
+  python3 scripts/generate_node_declaration.py >/dev/null 2>&1 && \
+    git add .well-known/axn-node.json 2>/dev/null
+fi
