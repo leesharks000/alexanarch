@@ -15,7 +15,7 @@
   "depositor_holds": "The depositor's own original plus the Seed A sidecar can prove the work anywhere, with or without this archive. That is the point of splitting the identifier in two."
  },
  "retrieval": "https://www.alexanarch.org/data/symbolon-registry/files/f44484207b05b9a8-image__8_.png",
- "note": "The registry witnesses the tuple and its internal consistency (glyphs recomputed from hashes at ingest). Seed B was not seen; verification against bytes is a separate act per SPEC §9.",
+ "note": "The registry witnesses the tuple and its internal consistency (glyphs recomputed from hashes at ingest). Seed B was not seen; verification against bytes is a separate act per SPEC §9. [Stamp re-applied 2026-08-08; AXN1 refreshed to the current stamped form. Sealed core (AXN0) unchanged.]",
  "spec": "AXN-SYMBOLON-SPEC v0.2 · https://www.alexanarch.org/s/records/1432/",
  "tuple": {
   "axn0": {
@@ -23,8 +23,8 @@
    "sha256": "f44484207b05b9a81400287bc0798d0c34e141e85938ae66668def9ebe7c0a64"
   },
   "axn1": {
-   "glyphs": "💎🔙🎯🜁↙️🟤",
-   "sha256": "1cf355a0dcc901faf4feb3966ca630558b79ec0cac4926c27da1f3b99b379866"
+   "glyphs": "⚪🪟🎨🍃○☿",
+   "sha256": "c72586189ba298f778993cdf99d963f1344b8d7e1ccd26163c516486139b1ba7"
   }
  },
  "position_note": "The hex position is a registry address allocated from the shared AXN sequence (data/symbolon-registry/allocation.json). An address is not a verification.",
@@ -67,5 +67,18 @@
   "generator": "https://www.alexanarch.org/mint/stamp/ (client-side; WebCrypto)",
   "family": "GENERATIVE",
   "registration": "kernel is authority-independent; registry witnessing via https://www.alexanarch.org/deposit/ or by sending this sidecar to the archive"
- }
+ },
+ "stamp_history": [
+  {
+   "axn1": {
+    "glyphs": "💎🔙🎯🜁↙️🟤",
+    "sha256": "1cf355a0dcc901faf4feb3966ca630558b79ec0cac4926c27da1f3b99b379866"
+   },
+   "until": "2026-08-08T20:11:16.852Z"
+  },
+  {
+   "axn1_replaced": "1cf355a0dcc901faf4feb3966ca630558b79ec0cac4926c27da1f3b99b379866",
+   "at": "2026-08-08T20:11:16.852Z"
+  }
+ ]
 }
