@@ -70,6 +70,14 @@ def card(e):
     date = e.get("date") or ""
     cite = e.get("cite") or f"https://www.alexanarch.org/captures/#{slug}"
 
+    # DUALLY FUNCTIONAL. The button copies a citation a person can paste; the card
+    # carries the same facts as schema.org microdata a crawler can extract without
+    # executing anything. Previously the action was a bare anchor to #slug — which
+    # navigated to the card the reader was already looking at, and so appeared to
+    # do nothing at all.
+    citation = (f'Sharks, Lee. "{q}" [machine-composition capture {slug}], {date}. '
+                f'AI Overview Capture Registry (EA-WG-CAPTURES-01), Alexanarch. {cite}')
+
     urls = image_urls(e)
     if urls:
         thumbs = "".join(
@@ -84,16 +92,26 @@ def card(e):
     return (
         f'<div class="cap-card" id="{esc(slug)}" '
         f'data-section="{esc(e.get("s") or "Unsectioned")}" '
-        f'data-status="{esc(mt.split()[0].lower())}">'
+        f'data-status="{esc(mt.split()[0].lower())}" '
+        f'itemscope itemtype="https://schema.org/CreativeWork">'
+        f'<meta itemprop="identifier" content="{esc(cite)}">'
+        f'<meta itemprop="isPartOf" content="EA-WG-CAPTURES-01">'
+        f'<meta itemprop="creator" content="Sharks, Lee">'
+        f'<meta itemprop="citation" content="{esc(citation)}">'
         f'<div class="cap-head"><span class="cap-section">{esc(e.get("s") or "Unsectioned")}</span>'
-        f'<span class="cap-date">{esc(date)}</span></div>'
-        f'<div class="cap-query">{esc(e.get("q") or "")}</div>'
+        f'<span class="cap-date" itemprop="dateCreated">{esc(date)}</span></div>'
+        f'<div class="cap-query" itemprop="name">{esc(e.get("q") or "")}</div>'
         f'<div class="cap-status-row">'
         f'<span class="cap-status cap-status-{esc(mt.split()[0].lower())}">{esc(mt)}</span>'
         f'<span class="cap-sf">{esc(e.get("sf") or "")}</span></div>'
         f'{imgs_html}'
-        f'<div class="cap-desc">{esc(d)}</div>'
-        f'<div class="cap-actions"><a href="{esc(cite)}">¶ Cite</a></div>'
+        f'<div class="cap-desc" itemprop="description">{esc(d)}</div>'
+        f'<div class="cap-actions">'
+        f'<button type="button" class="cap-cite" data-cite="{esc(cite)}" '
+        f'data-citation="{esc(citation)}" '
+        f'aria-label="Copy a citation for this capture">¶ Cite</button>'
+        f'<a class="cap-permalink" href="{esc(cite)}" rel="bookmark">permalink</a>'
+        f'</div>'
         f'</div>')
 
 

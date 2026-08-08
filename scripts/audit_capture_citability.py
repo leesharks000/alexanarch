@@ -103,6 +103,24 @@ def main():
                          f"any reader that does not execute it")
         if "application/ld+json" not in pg:
             fails.append("the gallery declares no JSON-LD; the registry is undescribed to machines")
+        # THE AFFORDANCE MUST BE WIRED. The cite control shipped as a bare anchor
+        # to #slug with no handler class, so clicking it navigated to the card the
+        # reader was already on. It looked functional and did nothing — the worst
+        # of the three states, because a broken control that reports success is
+        # not distinguishable from one that works.
+        n_btn = pg.count('class="cap-cite"')
+        if n_btn < len(entries):
+            fails.append(f"{n_btn} of {len(entries)} cards carry a cite control; "
+                         f"the rest offer no way to cite what they display")
+        if "closest('.cap-cite')" not in pg:
+            fails.append("no delegated handler for the cite control: the button renders "
+                         "and does nothing when clicked")
+        if 'data-citation=' not in pg:
+            fails.append("the cite control copies no citation, only a bare URL")
+        if 'itemtype="https://schema.org/CreativeWork"' not in pg:
+            fails.append("captures carry no machine-readable citation microdata; "
+                         "a crawler can read the prose and not the attribution")
+
         if 'rel="describedby"' not in pg:
             fails.append("the gallery carries no Signposting to the registry JSON")
 
