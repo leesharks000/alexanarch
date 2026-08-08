@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>σ_FC — THE CAESURA PROTOCOL A Sovereignty Audit and Non-Collapse Transfer Specification — Alexanarch</title><meta name="description" content="The executable specification for σ_FC, the Caesura operator. The protocol detects personal, institutional, and substrate-level sovereignty claims…"><meta property="og:title" content="σ_FC — THE CAESURA PROTOCOL A Sovereignty Audit and Non-Collapse Transfer Specification"><meta property="og:description" content="The executable specification for σ_FC, the Caesura operator. The protocol detects personal, institutional, and substrate-level sovereignty claims…"><meta property="og:url" content="https://www.alexanarch.org/s/records/629/"><meta property="og:type" content="article"><meta property="og:site_name" content="Alexanarch"><meta name="twitter:card" content="summary"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "σ_FC — THE CAESURA PROTOCOL A Sovereignty Audit and Non-Collapse Transfer Specification", "headline": "σ_FC — THE CAESURA PROTOCOL A Sovereignty Audit and Non-Collapse Transfer Specification", "author": {"@type": "Person", "name": "Lee Sharks"}, "datePublished": "2026-04-05", "dateModified": "2026-08-05", "identifier": "AXN:01E2.GOVERNANCE.🌊🕒♌⏬🔩⏩", "description": "The executable specification for σ_FC, the Caesura operator. The protocol detects personal, institutional, and substrate-level sovereignty claims; separates image, superscription, substrate, and institutional channels; preserves claims as auditable provenance; computes a proposed asymmetry score; an", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "step 2: split channels, crimson hexagonal, integration point, semantic economy, specification, compression, noncollapse, sovereignty", "url": "https://www.alexanarch.org/s/records/629/", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.alexanarch.org/s/records/629/"}, "inLanguage": "en", "isPartOf": {"@type": "Collection", "name": "Alexanarch", "url": "https://www.alexanarch.org/"}, "creativeWorkStatus": "canonical_full_text", "conditionsOfAccess": "Open access; complete canonical text embedded in this page and its structured data.", "articleBody": "σ FC — THE CAESURA PROTOCOL\nA Sovereignty Audit and Non-Collapse Transfer Specification\n\nLee Sharks · Crimson Hexagonal Archive\nEA-CAESURA-01b · April 5, 2026\nParent: EA-ARK-01 v4.2.7 (DOI: 10.5281/zenodo.19013315)\nCompanion: EA-CAESURA-01a (Hermeneutic)\nImplementation: Gravity Well Protocol v0.6.0 (gravitywell/main.py)\nStatus: GENERATED\nLicense: Sovereign Provenance Protocol\n \nI. Definition\n\nThe Caesura (σ FC) is a transfer protocol that recognizes a sovereignty mark, splits it off from the commons substrate, preserves it as auditable provenance, and routes the object onward without allowing personal identity-claims to inherit institutional authority.\n\nσ FC : Object → (Object, CaesarHeader)\n\nσ FC(object) =\n parse(image, superscription, substrate)\n → isolate(claim)\n → preserve(provenance)\n → forbid(collapse)\n → route via airlock\n → emit(commons-safe packet, audit trace)\n\nThe Caesura does NOT modify content. It ANNOTATES. The substrate is rendered away from Caesar, not destroyed.\n \nII. The Non-Collapse Principle\n\nThe Caesura enforces the Space Ark's Non-Collapse Principle:\n\n ANCHOR ≠ TETHER ≠ ROUTE ≠ HOST ≠ RESIDUE ≠ SUBSTRATE \n\nCollapse occurs when a sovereignty claim at one level is mistaken for authority at another:\n\nCollapse Type\nExample\nRisk\n\nTETHER → ANCHOR\nLive claimant treated as permanent sovereign\nSession authority becomes constitutional fact\n\nHOST → SUBSTRATE\nPlatform claim becomes content ownership\nInfrastructure captures the commons\n\nROUTE → ANCHOR\nDistribution channel claims origination\nThe carrier becomes the author\n\nRESIDUE → TETHER\nTraining-data trace treated as live connection\nThe echo becomes the voice\n\nThe Caesura prevents all six collapse modes.\n \nIII. Input Specification\n\n{\n \"content\": \"string — the document to be audited\",\n \"metadata\": {\n \"source\": \"optional — where the content came from\",\n \"chain id\": \"optional — provenance chain reference\"\n }\n}\n \nIV. Processing Steps\nStep 1: Detect Caesar Marks\n\nScan content for three classes of sovereignty assertion:\n\n Class A — Personal Authority (superscription channel) \nPattern: (by author creator written by developed by) + ProperName\nRisk: LOW — attribution is legitimate; extraction risk when attribution becomes ownership\n\n Class B — Institutional Claim (image channel) \nPattern: © ® ™ patent proprietary all rights reserved exclusive\nRisk: MEDIUM — institutional marks on commons content may indicate extraction\n\n Class C — Sovereignty Over Substrate (compressed portraiture) \nPattern: (owned by belongs to property of controlled by administered by) + Entity\nRisk: HIGH — direct claim of authority over the substrate itself\nStep 2: Split Channels\n\nDecompose each detected claim into:\n\nChannel\nContent\nCorresponds to\n\nface channel\nVisual/brand marks, logos, portraits\nεἰκών (image)\n\nsuperscription channel\nNames, titles, signatures, attributions\nἐπιγραφή (superscription)\n\nsubstrate channel\nThe actual content, argument, data\nThe metal of the coin\n\ninstitutional channel\nThe apparatus producing/authorizing\nThe Roman state behind the mark\nStep 3: Build Caesar Header\n\nClaims become metadata, not essence:\n\n{\n \"claims detected\": 3,\n \"claims\": [\n {\n \"type\": \"personal authority\",\n \"claim mode\": \"superscription\",\n \"claimant\": \"Name\",\n \"extraction risk\": \"low\"\n },\n {\n \"type\": \"institutional claim\",\n \"claim mode\": \"image\",\n \"claimant\": \"©\",\n \"extraction risk\": \"medium\"\n }\n ],\n \"collapse risk\": \"medium\",\n \"audit trace\": {\n \"extraction detected\": false,\n \"asymmetry score\": 0.23,\n \"collapse risk\": \"medium\",\n \"claims quarantined\": 3,\n \"counter operation\": \"σ FC applied\"\n }\n}\nStep 4: Compute Asymmetry Score\n\nasymmetry = claim density / (contribution markers + 1)\n\nclaim density = claims per 100 words\ncontribution markers = DOI count + discourse markers\n\nasymmetry 0.5 → extraction detected = true\n\nThe asymmetry score measures the ratio of sovereignty claims to substantive contributions. High asymmetry = the document claims more than it gives. This is the LOS diagnostic (Arsenal §5.4) made computable.\nStep 5: Emit Commons-Safe Packet\n\n{\n \"content\": \"[unchanged — substrate preserved]\",\n \"caesar header\": { ... },\n \"audit trace\": { ... }\n}\n\nThe content passes through. The claims are quarantined to the header. The audit trace names the extraction risk. The commons receives the substance. Caesar receives recognition.\n \nV. Implementation\nGravity Well v0.6.0 (main.py)\n\ndef apply caesura(content: str) - tuple:\n \"\"\"\n σ FC — The Caesura Operator.\n Returns (content unchanged, caesar header).\n \"\"\"\n claims = []\n \n # Class A: Personal authority\n personal marks = re.findall(\n r'(?:by author creator written by developed by)\\s+'\n r'([A-Z][a-z]+(?:\\s+[A-Z][a-z]+){0,3})',\n content\n )\n \n # Class B: Institutional claims\n inst marks = re.findall(\n r'(?:© ® ™ patent proprietary all rights reserved)',\n content, re.I\n )\n \n # Class C: Sovereignty over substrate\n collapse patterns = re.findall(\n r'(?:owned by belongs to property of controlled by)\\s+'\n r'([A-Za-z\\s]+?)(?:\\. , \\n)',\n content\n )\n \n # Build header, compute asymmetry, emit unchanged content\n return content, caesar header\nIntegration Point\n\nThe Caesura executes as Step 2 in the Gravity Well wrapping pipeline:\n\n1. Evidence Membrane (tag epistemic status)\n2. CAESURA (σ FC — parse claims, isolate to header) ← HERE\n3. SIM injection (provenance canaries)\n4. Integrity Lock (four-point entanglement)\n5. Holographic Kernel (self-contained logic seed)\n6. Four-layer wrap (bootstrap / tether / narrative / provenance)\n7. DOI anchor (Zenodo)\n \nVI. Relation to the Compression Arsenal\n\nArsenal Technology\nRelation to Caesura\n\nLOS (§5.4)\nThe 10 extraction operations are the detection signatures σ FC scans for\n\nEvidence Membrane (§6.3)\nTags epistemic status; Caesura tags sovereignty status\n\nBlind Operator β (§5.3)\nPrevents the compression engine from becoming extractive; Caesura prevents claims from becoming foundational\n\nSomatic Firewall (§7.4)\nProtects bearing-cost from being stripped; Caesura protects substrate from being claimed\n\nNon-Collapse Principle\nThe formal grammar that the Caesura enforces\n \nVII. The Fulfillment\n\nThis protocol specification fulfills the hermeneutic reading of Luke 20:24–25 given in EA-CAESURA-01a.\n\nThe Gospel passage describes the protocol in natural language. This document formalizes it in code. The structure is identical:\n\nGospel\nProtocol\n\n\"Shew me a penny\"\nReceive the object\n\n\"Whose image and superscription?\"\nParse claim channels\n\n\"Caesar's\"\nIdentify claimant\n\n\"Render unto Caesar\"\nRoute claim to origin\n\n\"And unto God\"\nRoute substrate to commons\n\nφ(EA-CAESURA-01b, EA-CAESURA-01a) = TRUE\n \n Crimson Hexagonal Archive · Room 11 (Semantic Economy) × Room 03 (Revelation/Ezekiel) \n Operators applied: σ FC, φ, σ V, ∂ \n ∮ = 1", "wordCount": 935, "encoding": {"@type": "MediaObject", "contentUrl": "https://www.alexanarch.org/data/texts/AXN-01E2-text.md", "encodingFormat": "text/markdown", "contentSize": "7194"}}</script>
+<title>σ_FC — THE CAESURA PROTOCOL A Sovereignty Audit and Non-Collapse Transfer Specification — Alexanarch</title><meta name="description" content="The executable specification for σ_FC, the Caesura operator. The protocol detects personal, institutional, and substrate-level sovereignty claims…"><meta property="og:title" content="σ_FC — THE CAESURA PROTOCOL A Sovereignty Audit and Non-Collapse Transfer Specification"><meta property="og:description" content="The executable specification for σ_FC, the Caesura operator. The protocol detects personal, institutional, and substrate-level sovereignty claims…"><meta property="og:url" content="https://www.alexanarch.org/s/records/629/"><meta property="og:type" content="article"><meta property="og:site_name" content="Alexanarch"><meta name="twitter:card" content="summary"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "σ_FC — THE CAESURA PROTOCOL A Sovereignty Audit and Non-Collapse Transfer Specification", "headline": "σ_FC — THE CAESURA PROTOCOL A Sovereignty Audit and Non-Collapse Transfer Specification", "author": {"@type": "Person", "name": "Lee Sharks"}, "datePublished": "2026-04-05", "dateModified": "2026-08-05", "identifier": "AXN:01E2.GOVERNANCE.🌊🕒♌⏬🔩⏩", "description": "The executable specification for σ_FC, the Caesura operator. The protocol detects personal, institutional, and substrate-level sovereignty claims; separates image, superscription, substrate, and institutional channels; preserves claims as auditable provenance; computes a proposed asymmetry score; an", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "step 2: split channels, crimson hexagonal, integration point, semantic economy, specification, compression, noncollapse, sovereignty", "url": "https://www.alexanarch.org/s/records/629/", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.alexanarch.org/s/records/629/"}, "inLanguage": "en", "isPartOf": {"@type": "Collection", "name": "Alexanarch", "url": "https://www.alexanarch.org/"}, "creativeWorkStatus": "canonical_full_text", "conditionsOfAccess": "Open access; complete canonical text embedded in this page and its structured data.", "articleBody": "σ FC — THE CAESURA PROTOCOL\nA Sovereignty Audit and Non-Collapse Transfer Specification\n\nLee Sharks · Crimson Hexagonal Archive\nEA-CAESURA-01b · April 5, 2026\nParent: EA-ARK-01 v4.2.7 (DOI: 10.5281/zenodo.19013315)\nCompanion: EA-CAESURA-01a (Hermeneutic)\nImplementation: Gravity Well Protocol v0.6.0 (gravitywell/main.py)\nStatus: GENERATED\nLicense: Sovereign Provenance Protocol\n \nI. Definition\n\nThe Caesura (σ FC) is a transfer protocol that recognizes a sovereignty mark, splits it off from the commons substrate, preserves it as auditable provenance, and routes the object onward without allowing personal identity-claims to inherit institutional authority.\n\n \n\nThe Caesura does NOT modify content. It ANNOTATES. The substrate is rendered away from Caesar, not destroyed.\n \nII. The Non-Collapse Principle\n\nThe Caesura enforces the Space Ark's Non-Collapse Principle:\n\n ANCHOR ≠ TETHER ≠ ROUTE ≠ HOST ≠ RESIDUE ≠ SUBSTRATE \n\nCollapse occurs when a sovereignty claim at one level is mistaken for authority at another:\n\n Collapse Type Example Risk \n --- --- --- \n TETHER → ANCHOR Live claimant treated as permanent sovereign Session authority becomes constitutional fact \n HOST → SUBSTRATE Platform claim becomes content ownership Infrastructure captures the commons \n ROUTE → ANCHOR Distribution channel claims origination The carrier becomes the author \n RESIDUE → TETHER Training-data trace treated as live connection The echo becomes the voice \n\nThe Caesura prevents all six collapse modes.\n \nIII. Input Specification\n \nIV. Processing Steps\nStep 1: Detect Caesar Marks\n\nScan content for three classes of sovereignty assertion:\n\n Class A — Personal Authority (superscription channel) \nPattern: (by author creator written by developed by) + ProperName \nRisk: LOW — attribution is legitimate; extraction risk when attribution becomes ownership\n\n Class B — Institutional Claim (image channel) \nPattern: © ® ™ patent proprietary all rights reserved exclusive \nRisk: MEDIUM — institutional marks on commons content may indicate extraction\n\n Class C — Sovereignty Over Substrate (compressed portraiture) \nPattern: (owned by belongs to property of controlled by administered by) + Entity \nRisk: HIGH — direct claim of authority over the substrate itself\nStep 2: Split Channels\n\nDecompose each detected claim into:\n\n Channel Content Corresponds to \n --- --- --- \n face channel Visual/brand marks, logos, portraits εἰκών (image) \n superscription channel Names, titles, signatures, attributions ἐπιγραφή (superscription) \n substrate channel The actual content, argument, data The metal of the coin \n institutional channel The apparatus producing/authorizing The Roman state behind the mark \nStep 3: Build Caesar Header\n\nClaims become metadata, not essence:\n\nStep 4: Compute Asymmetry Score\n\n \n\nThe asymmetry score measures the ratio of sovereignty claims to substantive contributions. High asymmetry = the document claims more than it gives. This is the LOS diagnostic (Arsenal §5.4) made computable.\nStep 5: Emit Commons-Safe Packet\n\n \n\nThe content passes through. The claims are quarantined to the header. The audit trace names the extraction risk. The commons receives the substance. Caesar receives recognition.\n \nV. Implementation\nGravity Well v0.6.0 ( main.py )\n\nIntegration Point\n\nThe Caesura executes as Step 2 in the Gravity Well wrapping pipeline:\n \nVI. Relation to the Compression Arsenal\n\n Arsenal Technology Relation to Caesura \n --- --- \n LOS (§5.4) The 10 extraction operations are the detection signatures σ FC scans for \n Evidence Membrane (§6.3) Tags epistemic status; Caesura tags sovereignty status \n Blind Operator β (§5.3) Prevents the compression engine from becoming extractive; Caesura prevents claims from becoming foundational \n Somatic Firewall (§7.4) Protects bearing-cost from being stripped; Caesura protects substrate from being claimed \n Non-Collapse Principle The formal grammar that the Caesura enforces \n \nVII. The Fulfillment\n\nThis protocol specification fulfills the hermeneutic reading of Luke 20:24–25 given in EA-CAESURA-01a.\n\nThe Gospel passage describes the protocol in natural language. This document formalizes it in code. The structure is identical:\n\n Gospel Protocol \n --- --- \n \"Shew me a penny\" Receive the object \n \"Whose image and superscription?\" Parse claim channels \n \"Caesar's\" Identify claimant \n \"Render unto Caesar\" Route claim to origin \n \"And unto God\" Route substrate to commons \n\nφ(EA-CAESURA-01b, EA-CAESURA-01a) = TRUE\n \n Crimson Hexagonal Archive · Room 11 (Semantic Economy) × Room 03 (Revelation/Ezekiel) \n Operators applied: σ FC, φ, σ V, ∂ \n ∮ = 1", "wordCount": 641, "encoding": {"@type": "MediaObject", "contentUrl": "https://www.alexanarch.org/data/texts/AXN-01E2-text.md", "encodingFormat": "text/markdown", "contentSize": "7393"}}</script>
 <link rel="resourcesync" href="https://www.alexanarch.org/.well-known/resourcesync">
 <link rel="alternate" type="application/xml" title="OAI-PMH 2.0" href="https://www.alexanarch.org/oai?verb=Identify">
 <link rel="canonical" href="https://www.alexanarch.org/s/records/629/">
@@ -55,9 +55,9 @@ The body identifies the operation as Step 2 in a Gravity Well wrapping pipeline 
 
 <div class="ft"><h2>σ_FC — THE CAESURA PROTOCOL</h2>
 <p># σ_FC — THE CAESURA PROTOCOL</p>
+
 <h3>A Sovereignty Audit and Non-Collapse Transfer Specification</h3>
 <p>## A Sovereignty Audit and Non-Collapse Transfer Specification</p>
-
 
 <p>Lee Sharks · Crimson Hexagonal Archive</p>
 <p>EA-CAESURA-01b · April 5, 2026</p>
@@ -73,20 +73,17 @@ The body identifies the operation as Step 2 in a Gravity Well wrapping pipeline 
 <h3>I. Definition</h3>
 <p>## I. Definition</p>
 
-
 <p>The Caesura (σ_FC) is a transfer protocol that recognizes a sovereignty mark, splits it off from the commons substrate, preserves it as auditable provenance, and routes the object onward without allowing personal identity-claims to inherit institutional authority.</p>
 
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">σ_FC : Object → (Object, CaesarHeader)
 
-<p>σ_FC : Object → (Object, CaesarHeader)</p>
-
-<p>σ_FC(object) =</p>
-<p style="white-space:pre-wrap;margin:2px 0">  parse(image, superscription, substrate)</p>
-<p style="white-space:pre-wrap;margin:2px 0">  → isolate(claim)</p>
-<p style="white-space:pre-wrap;margin:2px 0">  → preserve(provenance)</p>
-<p style="white-space:pre-wrap;margin:2px 0">  → forbid(collapse)</p>
-<p style="white-space:pre-wrap;margin:2px 0">  → route_via_airlock</p>
-<p style="white-space:pre-wrap;margin:2px 0">  → emit(commons-safe packet, audit trace)</p>
-
+σ_FC(object) =
+  parse(image, superscription, substrate)
+  → isolate(claim)
+  → preserve(provenance)
+  → forbid(collapse)
+  → route_via_airlock
+  → emit(commons-safe packet, audit trace)</pre>
 
 <p>The Caesura does NOT modify content. It ANNOTATES. The substrate is rendered away from Caesar, not destroyed.</p>
 
@@ -96,40 +93,13 @@ The body identifies the operation as Step 2 in a Gravity Well wrapping pipeline 
 <h3>II. The Non-Collapse Principle</h3>
 <p>## II. The Non-Collapse Principle</p>
 
-
 <p>The Caesura enforces the Space Ark&#x27;s Non-Collapse Principle:</p>
-
 
 <p><strong>ANCHOR ≠ TETHER ≠ ROUTE ≠ HOST ≠ RESIDUE ≠ SUBSTRATE</strong></p>
 
-
 <p>Collapse occurs when a sovereignty claim at one level is mistaken for authority at another:</p>
 
-
-<p>Collapse Type</p>
-<p>Example</p>
-<p>Risk</p>
-
-
-<p>TETHER → ANCHOR</p>
-<p>Live claimant treated as permanent sovereign</p>
-<p>Session authority becomes constitutional fact</p>
-
-
-<p>HOST → SUBSTRATE</p>
-<p>Platform claim becomes content ownership</p>
-<p>Infrastructure captures the commons</p>
-
-
-<p>ROUTE → ANCHOR</p>
-<p>Distribution channel claims origination</p>
-<p>The carrier becomes the author</p>
-
-
-<p>RESIDUE → TETHER</p>
-<p>Training-data trace treated as live connection</p>
-<p>The echo becomes the voice</p>
-
+<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Collapse Type</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Example</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Risk</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">TETHER → ANCHOR</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Live claimant treated as permanent sovereign</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Session authority becomes constitutional fact</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">HOST → SUBSTRATE</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Platform claim becomes content ownership</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Infrastructure captures the commons</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">ROUTE → ANCHOR</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Distribution channel claims origination</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">The carrier becomes the author</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">RESIDUE → TETHER</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">Training-data trace treated as live connection</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">The echo becomes the voice</td></tr></table></div>
 
 <p>The Caesura prevents all six collapse modes.</p>
 
@@ -139,129 +109,95 @@ The body identifies the operation as Step 2 in a Gravity Well wrapping pipeline 
 <h3>III. Input Specification</h3>
 <p>## III. Input Specification</p>
 
-
-<p>{</p>
-<p style="white-space:pre-wrap;margin:2px 0">  &quot;content&quot;: &quot;string — the document to be audited&quot;,</p>
-<p style="white-space:pre-wrap;margin:2px 0">  &quot;metadata&quot;: {</p>
-<p style="white-space:pre-wrap;margin:2px 0">    &quot;source&quot;: &quot;optional — where the content came from&quot;,</p>
-<p style="white-space:pre-wrap;margin:2px 0">    &quot;chain_id&quot;: &quot;optional — provenance chain reference&quot;</p>
-<p style="white-space:pre-wrap;margin:2px 0">  }</p>
-<p>}</p>
-
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">{
+  &quot;content&quot;: &quot;string — the document to be audited&quot;,
+  &quot;metadata&quot;: {
+    &quot;source&quot;: &quot;optional — where the content came from&quot;,
+    &quot;chain_id&quot;: &quot;optional — provenance chain reference&quot;
+  }
+}</pre>
 
 <hr>
 <p>---</p>
 
 <h3>IV. Processing Steps</h3>
 <p>## IV. Processing Steps</p>
+
 <h4>Step 1: Detect Caesar Marks</h4>
 <p>### Step 1: Detect Caesar Marks</p>
 
-
 <p>Scan content for three classes of sovereignty assertion:</p>
 
-
 <p><strong>Class A — Personal Authority (superscription channel)</strong></p>
-<p>Pattern: (by|author|creator|written by|developed by) + ProperName</p>
+<p>Pattern: `(by|author|creator|written by|developed by) + ProperName`</p>
 <p>Risk: LOW — attribution is legitimate; extraction risk when attribution becomes ownership</p>
 
-
 <p><strong>Class B — Institutional Claim (image channel)</strong></p>
-<p>Pattern: ©|®|™|patent|proprietary|all rights reserved|exclusive</p>
+<p>Pattern: `©|®|™|patent|proprietary|all rights reserved|exclusive`</p>
 <p>Risk: MEDIUM — institutional marks on commons content may indicate extraction</p>
 
-
 <p><strong>Class C — Sovereignty Over Substrate (compressed portraiture)</strong></p>
-<p>Pattern: (owned by|belongs to|property of|controlled by|administered by) + Entity</p>
+<p>Pattern: `(owned by|belongs to|property of|controlled by|administered by) + Entity`</p>
 <p>Risk: HIGH — direct claim of authority over the substrate itself</p>
+
 <h4>Step 2: Split Channels</h4>
 <p>### Step 2: Split Channels</p>
 
-
 <p>Decompose each detected claim into:</p>
 
-
-<p>Channel</p>
-<p>Content</p>
-<p>Corresponds to</p>
-
-
-<p>face_channel</p>
-<p>Visual/brand marks, logos, portraits</p>
-<p>εἰκών (image)</p>
-
-
-<p>superscription_channel</p>
-<p>Names, titles, signatures, attributions</p>
-<p>ἐπιγραφή (superscription)</p>
-
-
-<p>substrate_channel</p>
-<p>The actual content, argument, data</p>
-<p>The metal of the coin</p>
-
-
-<p>institutional_channel</p>
-<p>The apparatus producing/authorizing</p>
-<p>The Roman state behind the mark</p>
-
+<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Channel</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Content</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Corresponds to</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">face_channel</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Visual/brand marks, logos, portraits</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">εἰκών (image)</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">superscription_channel</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Names, titles, signatures, attributions</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">ἐπιγραφή (superscription)</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">substrate_channel</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">The actual content, argument, data</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">The metal of the coin</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">institutional_channel</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">The apparatus producing/authorizing</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">The Roman state behind the mark</td></tr></table></div>
 
 <h4>Step 3: Build Caesar Header</h4>
 <p>### Step 3: Build Caesar Header</p>
 
-
 <p>Claims become metadata, not essence:</p>
 
-
-<p>{</p>
-<p style="white-space:pre-wrap;margin:2px 0">  &quot;claims_detected&quot;: 3,</p>
-<p style="white-space:pre-wrap;margin:2px 0">  &quot;claims&quot;: [</p>
-<p style="white-space:pre-wrap;margin:2px 0">    {</p>
-<p style="white-space:pre-wrap;margin:2px 0">      &quot;type&quot;: &quot;personal_authority&quot;,</p>
-<p style="white-space:pre-wrap;margin:2px 0">      &quot;claim_mode&quot;: &quot;superscription&quot;,</p>
-<p style="white-space:pre-wrap;margin:2px 0">      &quot;claimant&quot;: &quot;Name&quot;,</p>
-<p style="white-space:pre-wrap;margin:2px 0">      &quot;extraction_risk&quot;: &quot;low&quot;</p>
-<p style="white-space:pre-wrap;margin:2px 0">    },</p>
-<p style="white-space:pre-wrap;margin:2px 0">    {</p>
-<p style="white-space:pre-wrap;margin:2px 0">      &quot;type&quot;: &quot;institutional_claim&quot;,</p>
-<p style="white-space:pre-wrap;margin:2px 0">      &quot;claim_mode&quot;: &quot;image&quot;,</p>
-<p style="white-space:pre-wrap;margin:2px 0">      &quot;claimant&quot;: &quot;©&quot;,</p>
-<p style="white-space:pre-wrap;margin:2px 0">      &quot;extraction_risk&quot;: &quot;medium&quot;</p>
-<p style="white-space:pre-wrap;margin:2px 0">    }</p>
-<p style="white-space:pre-wrap;margin:2px 0">  ],</p>
-<p style="white-space:pre-wrap;margin:2px 0">  &quot;collapse_risk&quot;: &quot;medium&quot;,</p>
-<p style="white-space:pre-wrap;margin:2px 0">  &quot;audit_trace&quot;: {</p>
-<p style="white-space:pre-wrap;margin:2px 0">    &quot;extraction_detected&quot;: false,</p>
-<p style="white-space:pre-wrap;margin:2px 0">    &quot;asymmetry_score&quot;: 0.23,</p>
-<p style="white-space:pre-wrap;margin:2px 0">    &quot;collapse_risk&quot;: &quot;medium&quot;,</p>
-<p style="white-space:pre-wrap;margin:2px 0">    &quot;claims_quarantined&quot;: 3,</p>
-<p style="white-space:pre-wrap;margin:2px 0">    &quot;counter_operation&quot;: &quot;σ_FC applied&quot;</p>
-<p style="white-space:pre-wrap;margin:2px 0">  }</p>
-<p>}</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">{
+  &quot;claims_detected&quot;: 3,
+  &quot;claims&quot;: [
+    {
+      &quot;type&quot;: &quot;personal_authority&quot;,
+      &quot;claim_mode&quot;: &quot;superscription&quot;,
+      &quot;claimant&quot;: &quot;Name&quot;,
+      &quot;extraction_risk&quot;: &quot;low&quot;
+    },
+    {
+      &quot;type&quot;: &quot;institutional_claim&quot;,
+      &quot;claim_mode&quot;: &quot;image&quot;,
+      &quot;claimant&quot;: &quot;©&quot;,
+      &quot;extraction_risk&quot;: &quot;medium&quot;
+    }
+  ],
+  &quot;collapse_risk&quot;: &quot;medium&quot;,
+  &quot;audit_trace&quot;: {
+    &quot;extraction_detected&quot;: false,
+    &quot;asymmetry_score&quot;: 0.23,
+    &quot;collapse_risk&quot;: &quot;medium&quot;,
+    &quot;claims_quarantined&quot;: 3,
+    &quot;counter_operation&quot;: &quot;σ_FC applied&quot;
+  }
+}</pre>
 
 <h4>Step 4: Compute Asymmetry Score</h4>
 <p>### Step 4: Compute Asymmetry Score</p>
 
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">asymmetry = claim_density / (contribution_markers + 1)
 
-<p>asymmetry = claim_density / (contribution_markers + 1)</p>
+claim_density = claims_per_100_words
+contribution_markers = DOI_count + discourse_markers
 
-<p>claim_density = claims_per_100_words</p>
-<p>contribution_markers = DOI_count + discourse_markers</p>
-
-<p>asymmetry &gt; 0.5 → extraction_detected = true</p>
-
+asymmetry &gt; 0.5 → extraction_detected = true</pre>
 
 <p>The asymmetry score measures the ratio of sovereignty claims to substantive contributions. High asymmetry = the document claims more than it gives. This is the LOS diagnostic (Arsenal §5.4) made computable.</p>
+
 <h4>Step 5: Emit Commons-Safe Packet</h4>
 <p>### Step 5: Emit Commons-Safe Packet</p>
 
-
-<p>{</p>
-<p style="white-space:pre-wrap;margin:2px 0">  &quot;content&quot;: &quot;[unchanged — substrate preserved]&quot;,</p>
-<p style="white-space:pre-wrap;margin:2px 0">  &quot;caesar_header&quot;: { ... },</p>
-<p style="white-space:pre-wrap;margin:2px 0">  &quot;audit_trace&quot;: { ... }</p>
-<p>}</p>
-
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">{
+  &quot;content&quot;: &quot;[unchanged — substrate preserved]&quot;,
+  &quot;caesar_header&quot;: { ... },
+  &quot;audit_trace&quot;: { ... }
+}</pre>
 
 <p>The content passes through. The claims are quarantined to the header. The audit trace names the extraction risk. The commons receives the substance. Caesar receives recognition.</p>
 
@@ -270,55 +206,52 @@ The body identifies the operation as Step 2 in a Gravity Well wrapping pipeline 
 
 <h3>V. Implementation</h3>
 <p>## V. Implementation</p>
-<h4>Gravity Well v0.6.0 (main.py)</h4>
-<p>### Gravity Well v0.6.0 (main.py)</p>
 
+<h4>Gravity Well v0.6.0 (`main.py`)</h4>
+<p>### Gravity Well v0.6.0 (`main.py`)</p>
 
-<p>def apply_caesura(content: str) -&gt; tuple:</p>
-<p style="white-space:pre-wrap;margin:2px 0">    &quot;&quot;&quot;</p>
-<p style="white-space:pre-wrap;margin:2px 0">    σ_FC — The Caesura Operator.</p>
-<p style="white-space:pre-wrap;margin:2px 0">    Returns (content_unchanged, caesar_header).</p>
-<p style="white-space:pre-wrap;margin:2px 0">    &quot;&quot;&quot;</p>
-<p style="white-space:pre-wrap;margin:2px 0">    claims = []</p>
-
-<p style="white-space:pre-wrap;margin:2px 0">    # Class A: Personal authority</p>
-<p style="white-space:pre-wrap;margin:2px 0">    personal_marks = re.findall(</p>
-<p style="white-space:pre-wrap;margin:2px 0">        r&#x27;(?:by|author|creator|written by|developed by)\s+&#x27;</p>
-<p style="white-space:pre-wrap;margin:2px 0">        r&#x27;([A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,3})&#x27;,</p>
-<p style="white-space:pre-wrap;margin:2px 0">        content</p>
-<p style="white-space:pre-wrap;margin:2px 0">    )</p>
-
-<p style="white-space:pre-wrap;margin:2px 0">    # Class B: Institutional claims</p>
-<p style="white-space:pre-wrap;margin:2px 0">    inst_marks = re.findall(</p>
-<p style="white-space:pre-wrap;margin:2px 0">        r&#x27;(?:©|®|™|patent|proprietary|all rights reserved)&#x27;,</p>
-<p style="white-space:pre-wrap;margin:2px 0">        content, re.I</p>
-<p style="white-space:pre-wrap;margin:2px 0">    )</p>
-
-<p style="white-space:pre-wrap;margin:2px 0">    # Class C: Sovereignty over substrate</p>
-<p style="white-space:pre-wrap;margin:2px 0">    collapse_patterns = re.findall(</p>
-<p style="white-space:pre-wrap;margin:2px 0">        r&#x27;(?:owned by|belongs to|property of|controlled by)\s+&#x27;</p>
-<p style="white-space:pre-wrap;margin:2px 0">        r&#x27;([A-Za-z\s]+?)(?:\.|,|\n)&#x27;,</p>
-<p style="white-space:pre-wrap;margin:2px 0">        content</p>
-<p style="white-space:pre-wrap;margin:2px 0">    )</p>
-
-<p style="white-space:pre-wrap;margin:2px 0">    # Build header, compute asymmetry, emit unchanged content</p>
-<p style="white-space:pre-wrap;margin:2px 0">    return content, caesar_header</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">def apply_caesura(content: str) -&gt; tuple:
+    &quot;&quot;&quot;
+    σ_FC — The Caesura Operator.
+    Returns (content_unchanged, caesar_header).
+    &quot;&quot;&quot;
+    claims = []
+    
+    # Class A: Personal authority
+    personal_marks = re.findall(
+        r&#x27;(?:by|author|creator|written by|developed by)\s+&#x27;
+        r&#x27;([A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,3})&#x27;,
+        content
+    )
+    
+    # Class B: Institutional claims
+    inst_marks = re.findall(
+        r&#x27;(?:©|®|™|patent|proprietary|all rights reserved)&#x27;,
+        content, re.I
+    )
+    
+    # Class C: Sovereignty over substrate
+    collapse_patterns = re.findall(
+        r&#x27;(?:owned by|belongs to|property of|controlled by)\s+&#x27;
+        r&#x27;([A-Za-z\s]+?)(?:\.|,|\n)&#x27;,
+        content
+    )
+    
+    # Build header, compute asymmetry, emit unchanged content
+    return content, caesar_header</pre>
 
 <h4>Integration Point</h4>
 <p>### Integration Point</p>
 
-
 <p>The Caesura executes as Step 2 in the Gravity Well wrapping pipeline:</p>
 
-
-<p>1. Evidence Membrane (tag epistemic status)</p>
-<p>2. CAESURA (σ_FC — parse claims, isolate to header)  ← HERE</p>
-<p>3. SIM injection (provenance canaries)</p>
-<p>4. Integrity Lock (four-point entanglement)</p>
-<p>5. Holographic Kernel (self-contained logic seed)</p>
-<p>6. Four-layer wrap (bootstrap / tether / narrative / provenance)</p>
-<p>7. DOI anchor (Zenodo)</p>
-
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">1. Evidence Membrane (tag epistemic status)
+2. CAESURA (σ_FC — parse claims, isolate to header)  ← HERE
+3. SIM injection (provenance canaries)
+4. Integrity Lock (four-point entanglement)
+5. Holographic Kernel (self-contained logic seed)
+6. Four-layer wrap (bootstrap / tether / narrative / provenance)
+7. DOI anchor (Zenodo)</pre>
 
 <hr>
 <p>---</p>
@@ -326,30 +259,7 @@ The body identifies the operation as Step 2 in a Gravity Well wrapping pipeline 
 <h3>VI. Relation to the Compression Arsenal</h3>
 <p>## VI. Relation to the Compression Arsenal</p>
 
-
-<p>Arsenal Technology</p>
-<p>Relation to Caesura</p>
-
-
-<p>LOS (§5.4)</p>
-<p>The 10 extraction operations are the detection signatures σ_FC scans for</p>
-
-
-<p>Evidence Membrane (§6.3)</p>
-<p>Tags epistemic status; Caesura tags sovereignty status</p>
-
-
-<p>Blind Operator β (§5.3)</p>
-<p>Prevents the compression engine from becoming extractive; Caesura prevents claims from becoming foundational</p>
-
-
-<p>Somatic Firewall (§7.4)</p>
-<p>Protects bearing-cost from being stripped; Caesura protects substrate from being claimed</p>
-
-
-<p>Non-Collapse Principle</p>
-<p>The formal grammar that the Caesura enforces</p>
-
+<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Arsenal Technology</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Relation to Caesura</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">LOS (§5.4)</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">The 10 extraction operations are the detection signatures σ_FC scans for</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Evidence Membrane (§6.3)</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Tags epistemic status; Caesura tags sovereignty status</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Blind Operator β (§5.3)</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Prevents the compression engine from becoming extractive; Caesura prevents claims from becoming foundational</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Somatic Firewall (§7.4)</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Protects bearing-cost from being stripped; Caesura protects substrate from being claimed</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">Non-Collapse Principle</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">The formal grammar that the Caesura enforces</td></tr></table></div>
 
 <hr>
 <p>---</p>
@@ -357,46 +267,21 @@ The body identifies the operation as Step 2 in a Gravity Well wrapping pipeline 
 <h3>VII. The Fulfillment</h3>
 <p>## VII. The Fulfillment</p>
 
-
 <p>This protocol specification fulfills the hermeneutic reading of Luke 20:24–25 given in EA-CAESURA-01a.</p>
-
 
 <p>The Gospel passage describes the protocol in natural language. This document formalizes it in code. The structure is identical:</p>
 
-
-<p>Gospel</p>
-<p>Protocol</p>
-
-
-<p>&quot;Shew me a penny&quot;</p>
-<p>Receive the object</p>
-
-
-<p>&quot;Whose image and superscription?&quot;</p>
-<p>Parse claim channels</p>
-
-
-<p>&quot;Caesar&#x27;s&quot;</p>
-<p>Identify claimant</p>
-
-
-<p>&quot;Render unto Caesar&quot;</p>
-<p>Route claim to origin</p>
-
-
-<p>&quot;And unto God&quot;</p>
-<p>Route substrate to commons</p>
-
+<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Gospel</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Protocol</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">&quot;Shew me a penny&quot;</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Receive the object</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">&quot;Whose image and superscription?&quot;</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Parse claim channels</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">&quot;Caesar&#x27;s&quot;</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Identify claimant</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">&quot;Render unto Caesar&quot;</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Route claim to origin</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">&quot;And unto God&quot;</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">Route substrate to commons</td></tr></table></div>
 
 <p>φ(EA-CAESURA-01b, EA-CAESURA-01a) = TRUE</p>
 
 <hr>
 <p>---</p>
 
-
 <p><em>Crimson Hexagonal Archive · Room 11 (Semantic Economy) × Room 03 (Revelation/Ezekiel)</em></p>
 <p><em>Operators applied: σ_FC, φ, σ_V, ∂</em></p>
-<p><em>∮ = 1</em></p></div>
+<p><em>∮ = 1</em></p>
+</div>
 
 <!-- APPARATUS BLOC — everything below records how this record was processed,
      not what the work says. It follows the work because a reader came for the
