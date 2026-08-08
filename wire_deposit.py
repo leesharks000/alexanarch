@@ -1144,11 +1144,43 @@ def regenerate_static_page(d, eidx, registry=None):
             '</div>'
         )
     elif registry and status == 'SUPERSEDED' and superseded_by_n:
-        by_v = ''
-        for sib in registry.get('deposits', []):
-            if sib.get('deposit_number') == superseded_by_n:
-                by_v = sib.get('version', '')
+        # CURRENT MEANS CURRENT (2026-08-08). The pointer names the IMMEDIATE
+        # successor, which is right — a chain v1 -> v2 -> v3 is a lineage and each
+        # link is true. But the banner said "Current version: #N" about that
+        # immediate successor, and on a chain of any length the immediate successor
+        # is not current. #1216 announced #832 as current while #832's own page
+        # announced it was superseded by #1217. Seventeen records pointed at a
+        # superseded record under the word "Current", the longest chain running six
+        # deep. Resolve to the TERMINAL for the label; keep the immediate link
+        # beside it so the lineage stays visible and nothing is flattened away.
+        _by_index = {sib.get('deposit_number'): sib for sib in registry.get('deposits', [])}
+
+        def _sup_target(rec):
+            _bs = (rec or {}).get('body_status') or {}
+            return _bs.get('superseded_by') or (rec or {}).get('superseded_by_deposit_number')
+
+        _terminal = superseded_by_n
+        _hops = 0
+        _seen = {dn, superseded_by_n}
+        while True:
+            _nxt = _sup_target(_by_index.get(_terminal))
+            if not _nxt or _nxt in _seen or _nxt not in _by_index:
                 break
+            _seen.add(_nxt)
+            _terminal = _nxt
+            _hops += 1
+            if _hops > 12:      # a cycle guard: a lineage this long is a defect itself
+                break
+        _chain_note = ''
+        if _terminal != superseded_by_n:
+            _imm = _by_index.get(superseded_by_n) or {}
+            _chain_note = (
+                f'<div style="color:#78350f;font-size:.86em;margin-top:6px">'
+                f'Immediate successor: <a href="/s/records/{superseded_by_n}/" '
+                f'style="color:var(--accent)">#{superseded_by_n} {esc(_imm.get("version",""))}</a>'
+                f' &middot; {_hops + 1} step(s) to current.</div>')
+        superseded_by_n = _terminal
+        by_v = (_by_index.get(_terminal) or {}).get('version', '')
         version_banner = (
             '<div style="background:#fef3c7;border-left:4px solid #d97706;padding:12px 16px;'
             'border-radius:6px;margin:12px 0;font-size:.92em">'
@@ -1166,6 +1198,7 @@ def regenerate_static_page(d, eidx, registry=None):
                 f'<div style="color:#78350f">The record of standing for this work is <a href="/s/records/{superseded_by_n}/" '
                 f'style="color:var(--accent);font-weight:500">#{superseded_by_n}</a></div>'
             )
+            + _chain_note
             + (f'<div style="color:#78350f;font-size:.88em;margin-top:6px">{esc(superseded_reason)}</div>' if superseded_reason else '')
             + '</div>'
         )

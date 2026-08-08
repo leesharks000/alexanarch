@@ -137,6 +137,28 @@ def main():
     for f in fails:
         print(f"  FAIL  {f}", file=sys.stderr)
 
+    # SUPERSESSION TERMINALITY (2026-08-08). A banner reading "Current version: #N"
+    # must name a record that IS current. Seventeen records named their immediate
+    # successor under that word while the successor was itself superseded: #1216
+    # announced #832 as current on a page where #832 announced it was superseded by
+    # #1217, and the DOI registry lineage ran six deep. The pointer was right and the
+    # label was the defect, so wire_deposit now walks to the terminal for the label
+    # and prints the immediate link beside it. This checks the RENDERING.
+    import re as _re, json as _json
+    _reg = _json.loads((ROOT / 'data/registry.json').read_text())
+    _D = {x['deposit_number']: x for x in _reg['deposits']}
+    def _sup(_r):
+        _b = (_r or {}).get('body_status') or {}
+        return _b.get('superseded_by') or (_r or {}).get('superseded_by_deposit_number')
+    _bad = []
+    for _p in sorted((ROOT / 's/records').glob('*/index.html')):
+        _m = _re.search(r'Current version:.*?#(\d+)', _p.read_text(errors='replace'), _re.S)
+        if _m and _sup(_D.get(int(_m.group(1)))):
+            _bad.append(f"#{_p.parent.name}->#{_m.group(1)}")
+    if _bad:
+        fails.append(f"{len(_bad)} record(s) name a SUPERSEDED record as the current "
+                     f"version: {', '.join(_bad[:6])}")
+
     if fails:
         print("\n" + "=" * 74, file=sys.stderr)
         print("STATIC PUBLICATION IS BROKEN — the fd8de940 class of failure:", file=sys.stderr)
