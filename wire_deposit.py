@@ -581,6 +581,16 @@ def _drop_duplicated_description(fulltext, description):
         nxt = re.search(r"<h[123][ >]", after, re.I)
     else:
         nxt = re.search(r"^##+\s+\S", after, re.M)
+    # W14b (2026-08-09): the cut fires only when the section actually RESTATES
+    # the field — its normalized length must not materially exceed the field's.
+    # Before this guard, a section whose opening matched but which carried
+    # additional content (tables, extended prose beyond the field) was
+    # swallowed whole; observed on #1 (tables lost) the moment the W14
+    # heading-duplication heal stopped defeating the prefix match. A dedup
+    # that can delete content the field does not hold is not a dedup.
+    _section = after[:nxt.start()] if nxt else after
+    if len(norm(_section)) > max(len(norm(description)) * 1.25, len(norm(description)) + 200):
+        return fulltext
     tail = after[nxt.start():] if nxt else ""
     return fulltext[:m.start()].rstrip() + ("\n\n" + tail.lstrip() if tail.strip() else "\n")
 
@@ -880,6 +890,32 @@ def regenerate_static_page(d, eidx, registry=None):
                 _fence_parts[_pi] = _w13_reflow(_fence_parts[_pi])
             raw = '```'.join(_fence_parts)
             lines = raw.split('\n')
+            # W14 wrap-mode switch: paragraph merging activates ONLY for bodies
+            # that are statistically hard-wrapped (many mid-length prose lines
+            # ending mid-sentence). House canonical bodies flow one line per
+            # paragraph, and line-oriented blocks (SPXI provenance stanzas,
+            # key:value rows, flush-left verse) use single newlines
+            # meaningfully — those bodies render line-per-<p> exactly as
+            # before. Known-answer tested against #1 (verse+stanzas), #1437
+            # (flowing), #1443 (hard-wrapped) on 2026-08-09.
+            _prose_idx = [i for i, l in enumerate(lines)
+                          if l.strip() and l[:1] not in (' ', '\t')
+                          and not l.lstrip().startswith(('#', '|', '-', '>', '`', '!', '<'))]
+            def _next_nonblank(i):
+                for j in range(i + 1, len(lines)):
+                    if lines[j].strip():
+                        return lines[j].lstrip()
+                return ''
+            # Wrap evidence requires a lowercase CONTINUATION on the following
+            # line: key:value stanzas ("**Packet ID:** …" rows) and headed
+            # blocks never continue lowercase, while a hard-wrapped sentence
+            # almost always does. This is what keeps #1437's metadata stanzas
+            # rendering line-per-<p> while #1443's wrapped prose merges.
+            _wrapped = [i for i in _prose_idx
+                        if 55 <= len(lines[i]) <= 95
+                        and not lines[i].rstrip().rstrip('*_').endswith(('.', ':', ';', '!', '?'))
+                        and _next_nonblank(i)[:1].islower()]
+            _wrap_mode = len(_prose_idx) >= 8 and (len(_wrapped) / len(_prose_idx)) > 0.25
             ft_lines = []
             in_pre = False
             pre_buf = []
@@ -889,6 +925,19 @@ def regenerate_static_page(d, eidx, registry=None):
                           'margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333')
             _tbl_buf = []
             _list_buf = []
+            _p_buf = []
+            def _p_flush():
+                # W14 (2026-08-09, #1443/#1444 repair): paragraphs accumulate across
+                # single newlines and flush at structural boundaries. Canonical bodies
+                # flow, but a hard-wrapped source must not render as one <p> per
+                # wrap. Inline emphasis is applied to the JOINED text so bold/italic
+                # spanning a source wrap survives.
+                if _p_buf:
+                    _joined = ' '.join(_p_buf)
+                    _joined = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', _joined)
+                    _joined = re.sub(r'\*([^*]+)\*', r'<em>\1</em>', _joined)
+                    ft_lines.append(f'<p>{_joined}</p>')
+                    _p_buf.clear()
             def _flush_table(buf):
                 # buf: escaped |-lines. A separator row (---) marks the previous row as header.
                 _rows = []
@@ -927,6 +976,7 @@ def regenerate_static_page(d, eidx, registry=None):
             for line in lines:
                 stripped = line.strip()
                 if stripped.startswith('```'):
+                    _p_flush()
                     if not in_pre:
                         in_pre = True
                         pre_buf = []
@@ -941,6 +991,7 @@ def regenerate_static_page(d, eidx, registry=None):
                     continue
                 img_match = _img_re.match(stripped)
                 if img_match:
+                    _p_flush()
                     alt = esc(img_match.group(1))
                     src = img_match.group(2)
                     if not src.startswith('/'):
@@ -955,6 +1006,7 @@ def regenerate_static_page(d, eidx, registry=None):
                 line = esc(line)
                 # W13 tier 1.5: table buffer — consecutive |-lines become a real table
                 if line.lstrip().startswith('|'):
+                    _p_flush()
                     _tbl_buf.append(line.strip())
                     continue
                 elif _tbl_buf:
@@ -962,6 +1014,7 @@ def regenerate_static_page(d, eidx, registry=None):
                     _tbl_buf = []
                 # W13 tier 1.5: list buffer — consecutive '- ' lines become a <ul>
                 if line.startswith('- '):
+                    _p_flush()
                     _li = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', line[2:])
                     _li = re.sub(r'\*([^*]+)\*', r'<em>\1</em>', _li)
                     _list_buf.append(_li)
@@ -969,12 +1022,17 @@ def regenerate_static_page(d, eidx, registry=None):
                 elif _list_buf:
                     ft_lines.append('<ul style="margin:8px 0 8px 22px;padding:0">' + ''.join(f'<li style="margin:3px 0">{x}</li>' for x in _list_buf) + '</ul>')
                     _list_buf = []
-                if line.startswith('# '): ft_lines.append(f'<h1>{line[2:]}</h1>')
-                elif line.startswith('## '): ft_lines.append(f'<h2>{line[3:]}</h2>')
-                elif line.startswith('### '): ft_lines.append(f'<h3>{line[4:]}</h3>')
-                elif line.startswith('#### '): ft_lines.append(f'<h4>{line[5:]}</h4>')
-                elif line.startswith('---'): ft_lines.append('<hr>')
-                elif line.startswith('&gt;'): ft_lines.append(f'<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0">{line[4:]}</blockquote>')
+                # W14: each structural line flushes the paragraph buffer and
+                # CONTINUES — the missing continue here was the heading-duplication
+                # defect (a converted <hN> followed by the literal '<p># ...' from
+                # the fall-through into the image chain below, live on every
+                # heading-bearing record rendered since the 2026-08-04 image block).
+                if line.startswith('# '): _p_flush(); ft_lines.append(f'<h1>{line[2:]}</h1>'); continue
+                if line.startswith('## '): _p_flush(); ft_lines.append(f'<h2>{line[3:]}</h2>'); continue
+                if line.startswith('### '): _p_flush(); ft_lines.append(f'<h3>{line[4:]}</h3>'); continue
+                if line.startswith('#### '): _p_flush(); ft_lines.append(f'<h4>{line[5:]}</h4>'); continue
+                if line.startswith('---'): _p_flush(); ft_lines.append('<hr>'); continue
+                if line.startswith('&gt;'): _p_flush(); ft_lines.append(f'<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0">{line[4:]}</blockquote>'); continue
                 # IMAGE RENDERING (MANUS 2026-08-04: "long image url blob — why
                 # not just include the image?"). Markdown image syntax and bare
                 # image URLs were rendering as 240-character raw URLs. 88 records,
@@ -985,6 +1043,7 @@ def regenerate_static_page(d, eidx, registry=None):
                       or re.match(r'^\s*[-*]\s+(https://blogger\.googleusercontent\.com/img/\S+)\s*$', line) \
                       or re.match(r'^\s*(https://blogger\.googleusercontent\.com/img/\S+)\s*$', line)
                 if _im:
+                    _p_flush()
                     _u = _im.group(1)
                     ft_lines.append(
                         f'<figure style="margin:14px 0"><a href="{esc(_u)}" target="_blank" rel="noopener">'
@@ -992,18 +1051,41 @@ def regenerate_static_page(d, eidx, registry=None):
                         f'style="max-width:100%;height:auto;border-radius:6px;border:1px solid var(--border)">'
                         f'</a></figure>')
                     continue
-                elif line.strip():
-                    line = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', line)
-                    line = re.sub(r'\*([^*]+)\*', r'<em>\1</em>', line)
+                elif line[:1] in (' ', '\t') and line.strip():
                     # SOURCE-282 addendum (2026-08-04): leading whitespace is
                     # prosodic structure (indentation clusters, staggered
                     # arrangements); preserve it instead of letting HTML
-                    # collapse it. Applies only to lines that carry it.
-                    if line[:1] in (' ', '\t'):
-                        ft_lines.append(f'<p style="white-space:pre-wrap;margin:2px 0">{line}</p>')
+                    # collapse it. Applies only to lines that carry it —
+                    # rendered per-line with per-line emphasis, byte-compatible
+                    # with the pre-W14 output for poetry records.
+                    _p_flush()
+                    _l = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', line)
+                    _l = re.sub(r'\*([^*]+)\*', r'<em>\1</em>', _l)
+                    ft_lines.append(f'<p style="white-space:pre-wrap;margin:2px 0">{_l}</p>')
+                elif line.strip():
+                    if _wrap_mode:
+                        # Line-precise continuation: merge only when the PREVIOUS
+                        # buffered line is shaped like a mid-sentence wrap (long,
+                        # no terminal punctuation) AND this line reads as its
+                        # continuation. Key:value stanza rows and short standalone
+                        # lines therefore keep their own <p> even inside a
+                        # hard-wrapped body (#1437's packet header, tested).
+                        _prev = _p_buf[-1] if _p_buf else ''
+                        _cont = (_p_buf
+                                 and len(_prev) >= 45
+                                 and not _prev.rstrip().rstrip('*_').endswith(('.', ':', ';', '!', '?'))
+                                 and (line[:1].islower() or line[:1] == '('
+                                      or _prev.rstrip().endswith((',', '\u2014', '\u2013'))))
+                        if not _cont:
+                            _p_flush()
+                        _p_buf.append(line)
                     else:
-                        ft_lines.append(f'<p>{line}</p>')
-                else: ft_lines.append('')
+                        _l = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', line)
+                        _l = re.sub(r'\*([^*]+)\*', r'<em>\1</em>', _l)
+                        ft_lines.append(f'<p>{_l}</p>')
+                else:
+                    _p_flush(); ft_lines.append('')
+            _p_flush()
             if _tbl_buf:
                 ft_lines.append(_flush_table(_tbl_buf))
             if _list_buf:
