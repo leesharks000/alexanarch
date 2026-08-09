@@ -282,6 +282,14 @@ EXTRACTION_TOOL = {
 # --- utility helpers ------------------------------------------------------
 
 
+# Restored 2026-08-09 (TACHYON, MINT #1443 session): constant was lost in a
+# refactor; build_entities() references it at ~line 920. List per the Dodecad.
+HETERONYMS = [
+    "Johannes Sigil", "Rex Fraction", "Damascus Dancings", "Rebekah Cranes",
+    "Talos Morrow", "Ichabod Spellings", "Jack Feist", "Nobel Glas",
+    "Dr. Orin Trace", "Ayanna Vox", "Sparrow Wells", "Sen Kuro", "Lee Sharks",
+]
+
 def _log(msg: str, *, prefix: str = "enrich") -> None:
     print(f"[{prefix}] {msg}", flush=True)
 

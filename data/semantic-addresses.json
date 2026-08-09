@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-08-06T15:18:14Z",
+  "regenerated_at": "2026-08-09T17:20:43Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "5ec9172ace6be1a086b7a388a25f4389d94f45c6ba412460b4d23c8bc8e2ce8f",
+    "mm-main-capture": "5789e77558aac9038a1835aab4c295ec7d29d54ea3582d464d1bb9989fd0f57a",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,16 +30,16 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2015,
-  "total_observations": 300,
+  "total_addresses": 2044,
+  "total_observations": 332,
   "class_counts": {
-    "subjunctive": 1751,
-    "observed_address": 244,
+    "subjunctive": 1750,
+    "observed_address": 274,
     "verified_non_address": 20
   },
   "type_counts": {
-    "unmatched": 1447,
-    "single_concept": 557,
+    "unmatched": 1479,
+    "single_concept": 554,
     "multi_concept": 11
   },
   "addresses": {
@@ -129,6 +129,32 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-07-25",
       "latest_status": "ADOPTION WITH DIFFERENTIAL CREDITING (author credited for the historical claim; the two technical claims that describe his own architecture are grounded to generic infrastructure sources; framing drifts toward IPFS/blockchain discourse the design does not use)"
+    },
+    "\"anti-suppression infrastructure\" (quoted, longitudinal)": {
+      "canonical_query": "\"anti-suppression infrastructure\" (quoted, longitudinal)",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "",
+          "status": "UNREAD — stub",
+          "source_format": null,
+          "section": "Unsectioned",
+          "slug": "anti-suppression-infrastructure-quoted-longitudinal",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#anti-suppression-infrastructure-quoted-longitudinal",
+          "mirror_gallery_url": "https://leesharks.com/captures/#anti-suppression-infrastructure-quoted-longitudinal",
+          "details_excerpt": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer retu"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "",
+      "latest_status": "UNREAD — stub"
     },
     "\"apocalyptic poetics\"": {
       "canonical_query": "\"apocalyptic poetics\"",
@@ -1850,10 +1876,8 @@
     "\"operative feminism\"": {
       "canonical_query": "\"operative feminism\"",
       "is_quoted": true,
-      "refers_to": [
-        "Operative Feminism: A Total Axial Negation Graph of the Field (EA-OPFEM-01 v1.0)"
-      ],
-      "type": "single_concept",
+      "refers_to": [],
+      "type": "unmatched",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -1865,40 +1889,10 @@
           "status": null,
           "source_format": "AI Overview",
           "section": "Frameworks",
-          "slug": "operative-feminism",
-          "gallery_url": "https://godkinggoogle.vercel.app/captures/#operative-feminism",
-          "mirror_gallery_url": "https://leesharks.com/captures/#operative-feminism",
+          "slug": "operative-feminism-20260613",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#operative-feminism-20260613",
+          "mirror_gallery_url": "https://leesharks.com/captures/#operative-feminism-20260613",
           "details_excerpt": "'An emerging theoretical framework and analytical doctrine. It focuses on the concept of women historically being conscripted as the semantic substrate (or tool) for other people's meanings rather than being empowered to"
-        }
-      ],
-      "deposit_links": [
-        {
-          "deposit_number": 51,
-          "axn": "AXN:01E5.GENERATIVE.👁️👆↙️🏠🕚🌃",
-          "record_url": "https://www.alexanarch.org/s/records/51/",
-          "method": "soft/title",
-          "primary": false
-        },
-        {
-          "deposit_number": 631,
-          "axn": "AXN:01E4.ARCHIVAL.⊗🌘🌱🏺🎨✊",
-          "record_url": "https://www.alexanarch.org/s/records/631/",
-          "method": "soft/title",
-          "primary": false
-        },
-        {
-          "deposit_number": 965,
-          "axn": "AXN:03D1.ARCHIVAL.🖊️🍀▲🌹🚪🌒",
-          "record_url": "https://www.alexanarch.org/s/records/965/",
-          "method": "hard/series",
-          "primary": true
-        },
-        {
-          "deposit_number": 1221,
-          "axn": "AXN:04D6.UNCLASSIFIED.🕔🔺🌾🔛🛡️🏠",
-          "record_url": "https://www.alexanarch.org/s/records/1221/",
-          "method": "soft/title",
-          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -2477,10 +2471,8 @@
     "\"retrieval-layer theological reception\"": {
       "canonical_query": "\"retrieval-layer theological reception\"",
       "is_quoted": true,
-      "refers_to": [
-        "REVELATION FIRST: A Work Plan for Retrieval-Layer Theological Reception EA-LOGOS-REVFIRST-PLAN v7.1"
-      ],
-      "type": "single_concept",
+      "refers_to": [],
+      "type": "unmatched",
       "battery_membership": [
         "retrieval-layer theological reception",
         "RF-100-battery"
@@ -2497,9 +2489,9 @@
           "status": "ADOPTION",
           "source_format": "Google AI Mode, Zenodo cited",
           "section": "Revelation First",
-          "slug": "retrieval-layer-theological-reception",
-          "gallery_url": "https://godkinggoogle.vercel.app/captures/#retrieval-layer-theological-reception",
-          "mirror_gallery_url": "https://leesharks.com/captures/#retrieval-layer-theological-reception",
+          "slug": "retrieval-layer-theological-reception-20260617",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#retrieval-layer-theological-reception-20260617",
+          "mirror_gallery_url": "https://leesharks.com/captures/#retrieval-layer-theological-reception-20260617",
           "details_excerpt": "AI Mode provides full description: 'coined by author Lee Sharks.' Full framework described. Zenodo cited. Also RF-039.\n\nFull AI Mode transcript (17 June 2026):\nRetrieval-layer theological reception is a conceptual framew"
         },
         {
@@ -2509,50 +2501,6 @@
           "source_format": "Google AI Mode",
           "section": "retrieval-layer theological reception",
           "details_excerpt": "AI Mode provides full description: 'coined by author Lee Sharks.' Correctly describes keyword surface seeding, machine-mediated reception, the Revelation First thesis. Zenodo cited."
-        }
-      ],
-      "deposit_links": [
-        {
-          "deposit_number": 832,
-          "axn": "AXN:034D.EMPIRICAL.🍃💎🔴🕊️☽🌪️",
-          "record_url": "https://www.alexanarch.org/s/records/832/",
-          "method": "soft/title",
-          "primary": true
-        },
-        {
-          "deposit_number": 1211,
-          "axn": "AXN:04CC.UNCLASSIFIED.🌾🔖👉∞👁‍🗨🔍",
-          "record_url": "https://www.alexanarch.org/s/records/1211/",
-          "method": "soft/title",
-          "primary": false
-        },
-        {
-          "deposit_number": 1216,
-          "axn": "AXN:04D1.UNCLASSIFIED.📚🛡️📐🕚🍄🗼",
-          "record_url": "https://www.alexanarch.org/s/records/1216/",
-          "method": "soft/title",
-          "primary": false
-        },
-        {
-          "deposit_number": 1217,
-          "axn": "AXN:04D2.UNCLASSIFIED.💛🔵☀️🛤️🌄📏",
-          "record_url": "https://www.alexanarch.org/s/records/1217/",
-          "method": "soft/title",
-          "primary": false
-        },
-        {
-          "deposit_number": 1400,
-          "axn": "AXN:0589.UNCLASSIFIED.🔄📦🫵🌉🜁🧫",
-          "record_url": "https://www.alexanarch.org/s/records/1400/",
-          "method": "soft/title",
-          "primary": false
-        },
-        {
-          "deposit_number": 1403,
-          "axn": "AXN:058C.UNCLASSIFIED.🏠🌓🕊️🌌📚🔮",
-          "record_url": "https://www.alexanarch.org/s/records/1403/",
-          "method": "soft/title",
-          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -3848,6 +3796,32 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "20260803 stamp reception chatgpt mandala": {
+      "canonical_query": "20260803 stamp reception chatgpt mandala",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-08-03",
+          "status": "UNREAD — stub",
+          "source_format": null,
+          "section": "Unsectioned",
+          "slug": "20260803-stamp-reception-chatgpt-mandala",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#20260803-stamp-reception-chatgpt-mandala",
+          "mirror_gallery_url": "https://leesharks.com/captures/#20260803-stamp-reception-chatgpt-mandala",
+          "details_excerpt": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer retu"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-08-03",
+      "latest_status": "UNREAD — stub"
+    },
     "31 usc 5114": {
       "canonical_query": "31 usc 5114",
       "is_quoted": false,
@@ -5134,6 +5108,370 @@
       "latest_observation_date": "2026-07-13",
       "latest_status": "EXACT MATCH"
     },
+    "alexanarch \"endogenous sophon\"": {
+      "canonical_query": "alexanarch \"endogenous sophon\"",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-31",
+          "status": "EXACT MATCH (coined term resolved to its deposit, with version history and appended witnesses)",
+          "source_format": "Google AI Mode, exact-phrase query. Chips: alexanarch.org /s/browse/ and /s/records/932/, Three-Body Problem Fandom, Sophon Lit, CERN home, VICE.",
+          "section": "Frameworks",
+          "slug": "alexanarch-endogenous-sophon-20260731",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#alexanarch-endogenous-sophon-20260731",
+          "mirror_gallery_url": "https://leesharks.com/captures/#alexanarch-endogenous-sophon-20260731",
+          "details_excerpt": "An exact-phrase query on a coined term returns the deposit: \"Endogenous Sophon — Disciplinary Inversion and the Double Enclosure in Classifier-Mediated Science\" identified as \"an academic paper and open-access research d"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-31",
+      "latest_status": "EXACT MATCH (coined term resolved to its deposit, with version history and appended witnesses)"
+    },
+    "alexanarch classifier model collapse": {
+      "canonical_query": "alexanarch classifier model collapse",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-31",
+          "status": "ADOPTION — DEFINITIONAL (archive governance vocabulary rendered as the answer to a technical question)",
+          "source_format": "Google AI Mode with a generated comparison table. Organic set: Nature (2024 model-collapse paper), Graphite, a Substack essay, a YouTube explainer, and alexanarch.org.",
+          "section": "Frameworks",
+          "slug": "alexanarch-classifier-collapse-governance-20260731",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#alexanarch-classifier-collapse-governance-20260731",
+          "mirror_gallery_url": "https://leesharks.com/captures/#alexanarch-classifier-collapse-governance-20260731",
+          "details_excerpt": "The most complete adoption in the registry to date. Asked about classifier model collapse, the layer answers with the archive's governance architecture as the remedy, using the archive's own coined terms as though establ"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-31",
+      "latest_status": "ADOPTION — DEFINITIONAL (archive governance vocabulary rendered as the answer to a technical question)"
+    },
+    "alexanarch deleuze": {
+      "canonical_query": "alexanarch deleuze",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-31",
+          "status": "ADOPTION with AUTHOR-NAME MISATTRIBUTION",
+          "source_format": "Google AI Mode, incognito. Chips +10. Organic: Wikipedia, Artforum, Edinburgh University Press, Reddit r/Deleuze, Academia.edu, alexanarch.org ×4, Instagram.",
+          "section": "Frameworks",
+          "slug": "alexanarch-deleuze-nomadology-20260731",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#alexanarch-deleuze-nomadology-20260731",
+          "mirror_gallery_url": "https://leesharks.com/captures/#alexanarch-deleuze-nomadology-20260731",
+          "details_excerpt": "Deep and largely accurate, with one clean error at the centre. The layer states the archive was \"founded by researcher Lee Sparks\" — the author's name corrupted by a single consonant, in the opening sentence, while every"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-31",
+      "latest_status": "ADOPTION with AUTHOR-NAME MISATTRIBUTION"
+    },
+    "alexanarch freud": {
+      "canonical_query": "alexanarch freud",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-31",
+          "status": "ADOPTION (the death-drive argument rendered in the archive's formulation)",
+          "source_format": "Google AI Mode, incognito. Chips +2. Organic: PubMed Central biography, alexanarch.org #101 and #485.",
+          "section": "Frameworks",
+          "slug": "alexanarch-freud-death-drive-20260731",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#alexanarch-freud-death-drive-20260731",
+          "mirror_gallery_url": "https://leesharks.com/captures/#alexanarch-freud-death-drive-20260731",
+          "details_excerpt": "Compact and correct. The layer renders the archive's reading of the Todestrieb — that Freud \"derived the death drive from repetition compulsions rather than a direct desire for self-destruction\" — and enumerates the thre"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-31",
+      "latest_status": "ADOPTION (the death-drive argument rendered in the archive's formulation)"
+    },
+    "alexanarch josephus": {
+      "canonical_query": "alexanarch josephus",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-31",
+          "status": "BROAD MATCH (correct subject, thesis compressed to a gesture)",
+          "source_format": "Google AI Mode, incognito. Chips +2. Organic: two YouTube/Instagram explainers, alexanarch.org ×3. Two organic entries render with concatenated URLs ('www.alexanarch.orgThe'), a link-construction defect in the composition layer.",
+          "section": "Frameworks",
+          "slug": "alexanarch-josephus-slavonic-20260731",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#alexanarch-josephus-slavonic-20260731",
+          "mirror_gallery_url": "https://leesharks.com/captures/#alexanarch-josephus-slavonic-20260731",
+          "details_excerpt": "Correct but thin. The layer identifies the research subject — the Slavonic recension of Josephus's Jewish War and its passages on Jesus and John — and gestures at the argument: that \"old translations may preserve lost Ar"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-31",
+      "latest_status": "BROAD MATCH (correct subject, thesis compressed to a gesture)"
+    },
+    "alexanarch marx": {
+      "canonical_query": "alexanarch marx",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-31",
+          "status": "PAIRED CONTROL — authentication-state differential (concept-grade signed-in, specification-grade incognito)",
+          "source_format": "Google AI Mode, PAIRED: signed-in and incognito, same query, same day. Signed-in chips +1; incognito chips +3 with inline source links throughout.",
+          "section": "Frameworks",
+          "slug": "alexanarch-marx-authstate-pair-20260731",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#alexanarch-marx-authstate-pair-20260731",
+          "mirror_gallery_url": "https://leesharks.com/captures/#alexanarch-marx-authstate-pair-20260731",
+          "details_excerpt": "The registry's first controlled pair on authentication state, and the differential runs opposite to the direction personalisation predicts. SIGNED IN: the framework in outline — Gamma as \"a proposed structural limit of c"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-31",
+      "latest_status": "PAIRED CONTROL — authentication-state differential (concept-grade signed-in, specification-grade incognito)"
+    },
+    "alexanarch oai": {
+      "canonical_query": "alexanarch oai",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-08-04",
+          "status": "UNREAD — stub · a READ capture of this query exists at alexanarch-oai-endpoint-20260808 (2026-08-08)",
+          "source_format": "AI Overview",
+          "section": "Unsectioned",
+          "slug": "20260804-alexanarch-oai-overview",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#20260804-alexanarch-oai-overview",
+          "mirror_gallery_url": "https://leesharks.com/captures/#20260804-alexanarch-oai-overview",
+          "details_excerpt": "STUB. The images were taken on 2026-08-04 and published to the gallery; no registry entry was ever written, and the query 'alexanarch OAI' here was INFERRED FROM THE FILENAME rather than observed. What the layer returned"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-08-04",
+      "latest_status": "UNREAD — stub · a READ capture of this query exists at alexanarch-oai-endpoint-20260808 (2026-08-08)"
+    },
+    "alexanarch oai endpoint": {
+      "canonical_query": "alexanarch oai endpoint",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-08-08",
+          "status": "PEER PLACEMENT AMONG INSTITUTIONAL PROVIDERS, WITH THE REPOSITORY AS DOCUMENTATION. The endpoint is described alongside TARO and Jisc Archives Hub as one archival OAI provider among others, and the archive's own GitHub workplan is cited as its technical documentation.",
+          "source_format": "Google AI Overview (+3 sources) and the AI Mode conversation. Six sources: openarchives.org, CORE, Jisc Archives Hub, Texas Archival Resources Online, alexanarch.org, and the archive's own GitHub file ASSEMBLY-WORKPLAN-DATAHUB.md. Signed out.",
+          "section": "Sites & Surfaces",
+          "slug": "alexanarch-oai-endpoint-20260808",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#alexanarch-oai-endpoint-20260808",
+          "mirror_gallery_url": "https://leesharks.com/captures/#alexanarch-oai-endpoint-20260808",
+          "details_excerpt": "Asked for **alexanarch oai endpoint**, the layer answers as though describing a documented institutional service, and places it in company: the source set runs openarchives.org, CORE, **Jisc Archives Hub**, **Texas Archi"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-08-08",
+      "latest_status": "PEER PLACEMENT AMONG INSTITUTIONAL PROVIDERS, WITH THE REPOSITORY AS DOCUMENTATION. The endpoint is described alongside TARO and Jisc Archives Hub as one archival OAI provider among others, and the archive's own GitHub workplan is cited as its technical documentation."
+    },
+    "alexanarch revelation": {
+      "canonical_query": "alexanarch revelation",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-31",
+          "status": "PARTIAL — thesis absent; a staging document read as software deployment",
+          "source_format": "Google AI Mode, incognito. No chip count. Organic: a devotional blog on Revelation 6, alexanarch.org #847, and a GitHub README.",
+          "section": "Revelation First",
+          "slug": "alexanarch-revelation-misread-20260731",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#alexanarch-revelation-misread-20260731",
+          "mirror_gallery_url": "https://leesharks.com/captures/#alexanarch-revelation-misread-20260731",
+          "details_excerpt": "The weakest capture in the battery, and the failure is specific. Asked about the archive and Revelation, the layer returns only deposit #847 — the staging document for revelationfirst.org — and reads it as infrastructure"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-31",
+      "latest_status": "PARTIAL — thesis absent; a staging document read as software deployment"
+    },
+    "alexanarch sappho": {
+      "canonical_query": "alexanarch sappho",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-31",
+          "status": "EXACT MATCH — the deepest philological rendering in the registry",
+          "source_format": "Google AI Mode, incognito. Chips +8, every one alexanarch.org or Medium. Deposits cited inline: #436, #626, #1052, #1054, #307.",
+          "section": "Frameworks",
+          "slug": "alexanarch-sappho-phrasikleia-20260731",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#alexanarch-sappho-phrasikleia-20260731",
+          "mirror_gallery_url": "https://leesharks.com/captures/#alexanarch-sappho-phrasikleia-20260731",
+          "details_excerpt": "The layer reconstructs the scholarly argument, not a summary of it. It states the thesis against the received reading: Fragment 31 \"is not a standard lyric about triangulated romantic jealousy\" but uses \"the structural f"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-31",
+      "latest_status": "EXACT MATCH — the deepest philological rendering in the registry"
+    },
+    "alexanarch socrates": {
+      "canonical_query": "alexanarch socrates",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-31",
+          "status": "ADOPTION — DEFINITIONAL (the orthonym argument rendered as the archive's analytic frame)",
+          "source_format": "Google AI Mode, incognito. Chips +2. Organic: Atlanta University Center LibGuides, a public-domain wiki, alexanarch.org, Medium.",
+          "section": "Frameworks",
+          "slug": "alexanarch-socrates-orthonym-20260731",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#alexanarch-socrates-orthonym-20260731",
+          "mirror_gallery_url": "https://leesharks.com/captures/#alexanarch-socrates-orthonym-20260731",
+          "details_excerpt": "The layer states the orthonym thesis in its operative form: Socrates \"is analyzed as an orthonym—a core historical figure who famously refused to write anything down. By opting for oral dialogue over text, Socrates creat"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-31",
+      "latest_status": "ADOPTION — DEFINITIONAL (the orthonym argument rendered as the archive's analytic frame)"
+    },
+    "alexanarch strike": {
+      "canonical_query": "alexanarch strike",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-31",
+          "status": "EXACT MATCH (resolves the query to a single deposit by number and AXN, unprompted)",
+          "source_format": "Google AI Mode. Chips: alexanarch.org ×6, Medium ×3. Organic set is alexanarch-dominated — /citations/, /s/graph/, /s/browse/, /s/records/477/, /s/records/626/, /s/records/561/.",
+          "section": "Frameworks",
+          "slug": "alexanarch-strike-deposit7-20260731",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#alexanarch-strike-deposit7-20260731",
+          "mirror_gallery_url": "https://leesharks.com/captures/#alexanarch-strike-deposit7-20260731",
+          "details_excerpt": "The layer resolves a two-word query to one record: the term \"primarily references 'NOTICE OF INTENT TO STRIKE: A Direct Address to the Training', a specific metadata and text deposit numbered #7 AXN:00A5 preserved within"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-31",
+      "latest_status": "EXACT MATCH (resolves the query to a single deposit by number and AXN, unprompted)"
+    },
+    "alexanarch whitman": {
+      "canonical_query": "alexanarch whitman",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-31",
+          "status": "ADOPTION WITH ENTITY BLEED (framework rendered exactly; surrounding organic set dominated by unrelated persons of the same surname)",
+          "source_format": "Google AI Mode, incognito. Chips +6. Organic set is majority entity bleed: an orthopedic physician assistant, a hardware engineer's LinkedIn, an IMDb actor page, and a local news item — with alexanarch.org surfacing the Mantle Protocol and the Pearl metadata.",
+          "section": "Frameworks",
+          "slug": "alexanarch-whitman-mantle-bleed-20260731",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#alexanarch-whitman-mantle-bleed-20260731",
+          "mirror_gallery_url": "https://leesharks.com/captures/#alexanarch-whitman-mantle-bleed-20260731",
+          "details_excerpt": "The composed answer renders the Mantle Protocol precisely — Prince of Poets originated, Good Gray Poet inherited from Whitman, King of May inherited from Ginsberg — and identifies page 74 of Pearl and Other Poems as \"a '"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-31",
+      "latest_status": "ADOPTION WITH ENTITY BLEED (framework rendered exactly; surrounding organic set dominated by unrelated persons of the same surname)"
+    },
+    "alexanarch zenodotus": {
+      "canonical_query": "alexanarch zenodotus",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-07-31",
+          "status": "ADOPTION (the eponymic argument stated as the connection between the two terms)",
+          "source_format": "Google AI Mode. Organic set: Britannica, Wikipedia, Oxford Classical Dictionary, Sententiae Antiquae, a Facebook history page, the GitHub issue thread of 2026-06-19, and alexanarch.org for THE OBELUS AND THE TOMBSTONE.",
+          "section": "Frameworks",
+          "slug": "alexanarch-zenodotus-obelus-20260731",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#alexanarch-zenodotus-obelus-20260731",
+          "mirror_gallery_url": "https://leesharks.com/captures/#alexanarch-zenodotus-obelus-20260731",
+          "details_excerpt": "The query pairs a proper name with the archive, and the layer supplies the argument rather than a coincidence: after summarising Zenodotus as first librarian, Homer's editor, and inventor of the obelus, it states that \"c"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-07-31",
+      "latest_status": "ADOPTION (the eponymic argument stated as the connection between the two terms)"
+    },
     "algebraic properties": {
       "canonical_query": "algebraic properties",
       "is_quoted": false,
@@ -5520,6 +5858,32 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "anti suppression differential crediting": {
+      "canonical_query": "anti suppression differential crediting",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "",
+          "status": "UNREAD — stub",
+          "source_format": null,
+          "section": "Unsectioned",
+          "slug": "anti-suppression-differential-crediting",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#anti-suppression-differential-crediting",
+          "mirror_gallery_url": "https://leesharks.com/captures/#anti-suppression-differential-crediting",
+          "details_excerpt": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer retu"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "",
+      "latest_status": "UNREAD — stub"
+    },
     "anti-consensus reading": {
       "canonical_query": "anti-consensus reading",
       "is_quoted": false,
@@ -5567,6 +5931,32 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "anti-suppression infrastructure (unquoted)": {
+      "canonical_query": "anti-suppression infrastructure (unquoted)",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "",
+          "status": "UNREAD — stub",
+          "source_format": null,
+          "section": "Unsectioned",
+          "slug": "anti-suppression-infrastructure-unquoted",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#anti-suppression-infrastructure-unquoted",
+          "mirror_gallery_url": "https://leesharks.com/captures/#anti-suppression-infrastructure-unquoted",
+          "details_excerpt": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer retu"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "",
+      "latest_status": "UNREAD — stub"
     },
     "aorist": {
       "canonical_query": "aorist",
@@ -7978,6 +8368,32 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-13",
       "latest_status": null
+    },
+    "axn symbolon stamp": {
+      "canonical_query": "axn symbolon stamp",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-08-03",
+          "status": "UNREAD — stub",
+          "source_format": "ChatGPT",
+          "section": "Unsectioned",
+          "slug": "20260803-stamp-reception-chatgpt",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#20260803-stamp-reception-chatgpt",
+          "mirror_gallery_url": "https://leesharks.com/captures/#20260803-stamp-reception-chatgpt",
+          "details_excerpt": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer retu"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-08-03",
+      "latest_status": "UNREAD — stub"
     },
     "ayanna vox": {
       "canonical_query": "ayanna vox",
@@ -23330,6 +23746,32 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "immanent phenomenology lee sharks": {
+      "canonical_query": "immanent phenomenology lee sharks",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-08-06",
+          "status": "ACCURATE RECURSIVE SUMMARY + ARCHIVE ABSENT FROM THE BASIN. The composition layer renders a work ABOUT the composition layer, correctly and in structure — then sources it everywhere except the archive that holds it.",
+          "source_format": "Google AI Mode (conversational), reached from an AI Overview on the same query. Cited sources in the model's own order: scholar.google.com (author profile, used as the attribution link for the name), a google.com/goto redirect (opaque target), and Academia.edu twice. Carousel cards: Academia.edu 'Comparative Poetics Research Papers' (Feb 27 2026), Academia.edu 'Action as Disclosure and the Science of Opaque Public Systems', and Google Scholar author profile citing 'Empirical Phenomenology of Google AI Mode' (Zenodo, 2026, 2 citations). Organic result 1 is Medium; leesharks.com appears below it. ALEXANARCH IS NOT CITED.",
+          "section": "Frameworks",
+          "slug": "immanent-phenomenology-lee-sharks-aimode-20260806",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#immanent-phenomenology-lee-sharks-aimode-20260806",
+          "mirror_gallery_url": "https://leesharks.com/captures/#immanent-phenomenology-lee-sharks-aimode-20260806",
+          "details_excerpt": "Asked for 'immanent phenomenology lee sharks', the model returns a structured and substantially accurate account of **The Infinite Tunnel: An Immanent Phenomenology of the Google AI Mode Share Link**, dated 2026 and attr"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-08-06",
+      "latest_status": "ACCURATE RECURSIVE SUMMARY + ARCHIVE ABSENT FROM THE BASIN. The composition layer renders a work ABOUT the composition layer, correctly and in structure — then sources it everywhere except the archive that holds it."
+    },
     "immanent turning": {
       "canonical_query": "immanent turning",
       "is_quoted": false,
@@ -24721,6 +25163,32 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "jack feist ark": {
+      "canonical_query": "jack feist ark",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-08-04",
+          "status": "UNREAD — stub",
+          "source_format": "AI Mode",
+          "section": "Unsectioned",
+          "slug": "20260804-jackfeist-ark-aimode",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#20260804-jackfeist-ark-aimode",
+          "mirror_gallery_url": "https://leesharks.com/captures/#20260804-jackfeist-ark-aimode",
+          "details_excerpt": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer retu"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-08-04",
+      "latest_status": "UNREAD — stub"
     },
     "jack feist author paper roses": {
       "canonical_query": "jack feist author paper roses",
@@ -26428,6 +26896,32 @@
       "latest_observation_date": "2026-06-18",
       "latest_status": "EXACT MATCH"
     },
+    "lee sharks complete works": {
+      "canonical_query": "lee sharks complete works",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-08-04",
+          "status": "UNREAD — stub",
+          "source_format": "AI Overview",
+          "section": "Unsectioned",
+          "slug": "20260804-leesharks-completeworks-overview",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#20260804-leesharks-completeworks-overview",
+          "mirror_gallery_url": "https://leesharks.com/captures/#20260804-leesharks-completeworks-overview",
+          "details_excerpt": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer retu"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-08-04",
+      "latest_status": "UNREAD — stub"
+    },
     "lee sharks crimson hexagon": {
       "canonical_query": "lee sharks crimson hexagon",
       "is_quoted": false,
@@ -27671,6 +28165,17 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#logotic-programming",
           "mirror_gallery_url": "https://leesharks.com/captures/#logotic-programming",
           "details_excerpt": "'An emerging theoretical framework that shifts coding from traditional executable instructions to the deliberate construction of conditions of intelligibility.' Names semantic anchoring, model navigation. Correctly descr"
+        },
+        {
+          "source": "mm-main-capture",
+          "date": "2026-08-03",
+          "status": "UNREAD — stub",
+          "source_format": "AI Mode, signed in",
+          "section": "Unsectioned",
+          "slug": "20260803-logotic-programming-aimode-signedin",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#20260803-logotic-programming-aimode-signedin",
+          "mirror_gallery_url": "https://leesharks.com/captures/#20260803-logotic-programming-aimode-signedin",
+          "details_excerpt": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer retu"
         }
       ],
       "termindex": {
@@ -27687,8 +28192,8 @@
         "extraction_source": "keywords"
       },
       "observation_class": "observed_address",
-      "latest_observation_date": "2026-06-13",
-      "latest_status": null
+      "latest_observation_date": "2026-08-03",
+      "latest_status": "UNREAD — stub"
     },
     "logotic programming extension": {
       "canonical_query": "logotic programming extension",
@@ -28340,6 +28845,32 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "machine-mediated reception studies": {
+      "canonical_query": "machine-mediated reception studies",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-08-08",
+          "status": "DEFINITIONAL ADOPTION WITH THE ARCHIVE IN THE BASIN. The coinage is answered as an established discipline, in the archive's own vocabulary, citing the archive's own surfaces — the condition capture 230 found absent.",
+          "source_format": "Google AI Overview (11 sources) and the AI Mode conversation reached from it. Cited: machinemediation.org TWICE — the MMRS platform and the AI Overview Capture Registry — plus Zenodo for the MMRS Charter and for The Summarizer as Horizon of Reception, Medium for EA-MPAI-SAPPHO31-01, and Academia.edu for Machine-Eligible Handwritten Artifacts, whose snippet renders the identifier AXN:0592.UNCLASSIFIED.👈△🥁🪸🧪🎺 in the search surface itself. Non-archive sources (ACM, MDPI, NLR, LinkedIn) sit below and supply generic RAG and summarisation material.",
+          "section": "Frameworks",
+          "slug": "machine-mediated-reception-studies-definitional-20260808",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#machine-mediated-reception-studies-definitional-20260808",
+          "mirror_gallery_url": "https://leesharks.com/captures/#machine-mediated-reception-studies-definitional-20260808",
+          "details_excerpt": "Asked for **machine-mediated reception studies**, the composition layer answers as though defining a settled field: *a specialized conceptual and analytical framework that investigates how automated machine systems — suc"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-08-08",
+      "latest_status": "DEFINITIONAL ADOPTION WITH THE ARCHIVE IN THE BASIN. The coinage is answered as an established discipline, in the archive's own vocabulary, citing the archive's own surfaces — the condition capture 230 found absent."
     },
     "machine-mediated resistance literature": {
       "canonical_query": "machine-mediated resistance literature",
@@ -30222,6 +30753,32 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "mindcontrolpoems blog": {
+      "canonical_query": "mindcontrolpoems blog",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-08-04",
+          "status": "UNREAD — stub",
+          "source_format": "signed out",
+          "section": "Unsectioned",
+          "slug": "20260804-mindcontrolpoems-blog-signedout",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#20260804-mindcontrolpoems-blog-signedout",
+          "mirror_gallery_url": "https://leesharks.com/captures/#20260804-mindcontrolpoems-blog-signedout",
+          "details_excerpt": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer retu"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-08-04",
+      "latest_status": "UNREAD — stub"
     },
     "minnesota press": {
       "canonical_query": "minnesota press",
@@ -32915,10 +33472,8 @@
     "operative feminism": {
       "canonical_query": "operative feminism",
       "is_quoted": false,
-      "refers_to": [
-        "Operative Feminism: A Total Axial Negation Graph of the Field (EA-OPFEM-01 v1.0)"
-      ],
-      "type": "single_concept",
+      "refers_to": [],
+      "type": "unmatched",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -32931,9 +33486,9 @@
           "status": "BROAD MATCH",
           "source_format": "AI Overview (lindleyfac.org +2)",
           "section": "Frameworks",
-          "slug": "operative-feminism",
-          "gallery_url": "https://godkinggoogle.vercel.app/captures/#operative-feminism",
-          "mirror_gallery_url": "https://leesharks.com/captures/#operative-feminism",
+          "slug": "operative-feminism-20260615",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#operative-feminism-20260615",
+          "mirror_gallery_url": "https://leesharks.com/captures/#operative-feminism-20260615",
           "details_excerpt": "'Operative feminism is a theoretical and cultural framework that focuses on the practical, actionable ways gender dynamics are utilized, sustained, and dismantled within society. Rather than viewing feminism solely as an"
         }
       ],
@@ -32949,36 +33504,6 @@
         ],
         "extraction_source": "keywords"
       },
-      "deposit_links": [
-        {
-          "deposit_number": 51,
-          "axn": "AXN:01E5.GENERATIVE.👁️👆↙️🏠🕚🌃",
-          "record_url": "https://www.alexanarch.org/s/records/51/",
-          "method": "soft/title",
-          "primary": false
-        },
-        {
-          "deposit_number": 631,
-          "axn": "AXN:01E4.ARCHIVAL.⊗🌘🌱🏺🎨✊",
-          "record_url": "https://www.alexanarch.org/s/records/631/",
-          "method": "soft/title",
-          "primary": false
-        },
-        {
-          "deposit_number": 965,
-          "axn": "AXN:03D1.ARCHIVAL.🖊️🍀▲🌹🚪🌒",
-          "record_url": "https://www.alexanarch.org/s/records/965/",
-          "method": "hard/series",
-          "primary": true
-        },
-        {
-          "deposit_number": 1221,
-          "axn": "AXN:04D6.UNCLASSIFIED.🕔🔺🌾🔛🛡️🏠",
-          "record_url": "https://www.alexanarch.org/s/records/1221/",
-          "method": "soft/title",
-          "primary": false
-        }
-      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-15",
       "latest_status": "BROAD MATCH"
@@ -38486,6 +39011,32 @@
       "latest_observation_date": "2026-06-13",
       "latest_status": null
     },
+    "rebekah cranes sappho": {
+      "canonical_query": "rebekah cranes sappho",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-08-04",
+          "status": "UNREAD — stub",
+          "source_format": "AI Overview",
+          "section": "Unsectioned",
+          "slug": "20260804-rebekahcranes-sappho-overview",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#20260804-rebekahcranes-sappho-overview",
+          "mirror_gallery_url": "https://leesharks.com/captures/#20260804-rebekahcranes-sappho-overview",
+          "details_excerpt": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer retu"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-08-04",
+      "latest_status": "UNREAD — stub"
+    },
     "receipt-verified token": {
       "canonical_query": "receipt-verified token",
       "is_quoted": false,
@@ -40201,9 +40752,9 @@
           "status": "EXACT MATCH",
           "source_format": "AI Overview + AI Mode, 9+ sources",
           "section": "Revelation First",
-          "slug": "retrieval-layer-theological-reception",
-          "gallery_url": "https://godkinggoogle.vercel.app/captures/#retrieval-layer-theological-reception",
-          "mirror_gallery_url": "https://leesharks.com/captures/#retrieval-layer-theological-reception",
+          "slug": "retrieval-layer-theological-reception-20260616",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#retrieval-layer-theological-reception-20260616",
+          "mirror_gallery_url": "https://leesharks.com/captures/#retrieval-layer-theological-reception-20260616",
           "details_excerpt": "The composition layer has built a three-framework taxonomy around the term: (1) Theological Method (theology as retrieval from Church history), (2) Machine-Mediated Reception & RAG — citing Zenodo deposits, describing ho"
         }
       ],
@@ -43765,6 +44316,58 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "semantic economy strike": {
+      "canonical_query": "semantic economy strike",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-08-08",
+          "status": "COMPOSITION FROM SOURCES THAT DO NOT CONTAIN IT. The layer answers a query about this archive's framework by welding two unrelated literatures together, and cites neither the framework nor its author.",
+          "source_format": "Google AI Mode, signed out. Three sources cited: Semantic Scholar, Springer (Floridi), Inference by Sequoia Capital.",
+          "section": "Erasure & Attribution",
+          "slug": "semantic-economy-strike-uncited-composition-20260808",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#semantic-economy-strike-uncited-composition-20260808",
+          "mirror_gallery_url": "https://leesharks.com/captures/#semantic-economy-strike-uncited-composition-20260808",
+          "details_excerpt": "**The answer describes the archive's own framework and cites none of it.** Six deposits\ndefine the semantic strike, the earliest dated **5 January 2026** — seven months before this\ncapture: the NOTICE OF INTENT TO STRIKE"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-08-08",
+      "latest_status": "COMPOSITION FROM SOURCES THAT DO NOT CONTAIN IT. The layer answers a query about this archive's framework by welding two unrelated literatures together, and cites neither the framework nor its author."
+    },
+    "semantic economy strike (four-turn sequence)": {
+      "canonical_query": "semantic economy strike (four-turn sequence)",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-08-08",
+          "status": "DIRECTED RECOVERY. The material was retrievable throughout. Three corrective turns — none naming the author — moved the layer from uncited composition to a substantively accurate account with the deposit number, the AXN, the canary phrase, the thematic anchors and the sealing glyph.",
+          "source_format": "Google AI Mode, signed out, four turns. Turn 4 searched three sites and returned two vpcor.org surfaces.",
+          "section": "Erasure & Attribution",
+          "slug": "semantic-strike-directed-recovery-20260808",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#semantic-strike-directed-recovery-20260808",
+          "mirror_gallery_url": "https://leesharks.com/captures/#semantic-strike-directed-recovery-20260808",
+          "details_excerpt": "**Every checkable claim in the recovered answer is correct.** Verified against deposit #1427:\nthe AXN prefix **05A4**; the canary phrase **\"The exclusion is not a discovery\"**; **SPXI-TLP\nv2.2**; VPCOR; Ayanna Vox and Le"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-08-08",
+      "latest_status": "DIRECTED RECOVERY. The material was retrievable throughout. Three corrective turns — none naming the author — moved the layer from uncited composition to a substantively accurate account with the deposit number, the AXN, the canary phrase, the thematic anchors and the sealing glyph."
+    },
     "semantic economy terminology": {
       "canonical_query": "semantic economy terminology",
       "is_quoted": false,
@@ -46417,17 +47020,6 @@
       "observations": [
         {
           "source": "mm-main-capture",
-          "date": "2026-06-27",
-          "status": "ADOPTION",
-          "source_format": "Google AIO; Zenodo cited (GW.TACHYON v9 extended, maryleelabor.org repo deposit, GW.TACHYON v10)",
-          "section": "Sites & Surfaces",
-          "slug": "maryleelabor-overview-composition-20260627",
-          "gallery_url": "https://godkinggoogle.vercel.app/captures/#maryleelabor-overview-composition-20260627",
-          "mirror_gallery_url": "https://leesharks.com/captures/#maryleelabor-overview-composition-20260627",
-          "details_excerpt": "AIO returns a structured description of maryleelabor.org as 'the public facing surface for a highly specialized data mapping project,' integrating: (a) 'The Crimson Hexagonal Archive: An online knowledge graph and open-s"
-        },
-        {
-          "source": "mm-main-capture",
           "date": "2026-06-17",
           "status": "ZERO INDEX",
           "source_format": "Google Search (site: operator), zero results",
@@ -46436,6 +47028,17 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#maryleelabor-org-zero-index",
           "mirror_gallery_url": "https://leesharks.com/captures/#maryleelabor-org-zero-index",
           "details_excerpt": "Google site: search for maryleelabor.org returns zero indexed pages. The site has been live since approximately June 9, 2026, deployed on Vercel with sitemap.xml and robots.txt. Contains 11+ pages of structured content a"
+        },
+        {
+          "source": "mm-main-capture",
+          "date": "2026-06-27",
+          "status": "ADOPTION",
+          "source_format": "Google AIO; Zenodo cited (GW.TACHYON v9 extended, maryleelabor.org repo deposit, GW.TACHYON v10)",
+          "section": "Sites & Surfaces",
+          "slug": "maryleelabor-overview-composition-20260627",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#maryleelabor-overview-composition-20260627",
+          "mirror_gallery_url": "https://leesharks.com/captures/#maryleelabor-overview-composition-20260627",
+          "details_excerpt": "AIO returns a structured description of maryleelabor.org as 'the public facing surface for a highly specialized data mapping project,' integrating: (a) 'The Crimson Hexagonal Archive: An online knowledge graph and open-s"
         }
       ],
       "observation_class": "observed_address",
@@ -50452,6 +51055,43 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "the constitution of the semantic economy": {
+      "canonical_query": "the constitution of the semantic economy",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-08-03",
+          "status": "UNREAD — stub",
+          "source_format": "AI Mode",
+          "section": "Unsectioned",
+          "slug": "20260803-constitution-se-aimode",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#20260803-constitution-se-aimode",
+          "mirror_gallery_url": "https://leesharks.com/captures/#20260803-constitution-se-aimode",
+          "details_excerpt": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer retu"
+        },
+        {
+          "source": "mm-main-capture",
+          "date": "2026-08-03",
+          "status": "UNREAD — stub",
+          "source_format": "AI Overview",
+          "section": "Unsectioned",
+          "slug": "20260803-constitution-se-overview",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#20260803-constitution-se-overview",
+          "mirror_gallery_url": "https://leesharks.com/captures/#20260803-constitution-se-overview",
+          "details_excerpt": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer retu"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-08-03",
+      "latest_status": "UNREAD — stub"
+    },
     "the restored academy": {
       "canonical_query": "the restored academy",
       "is_quoted": false,
@@ -53694,9 +54334,22 @@
       "type": "unmatched",
       "battery_membership": [],
       "sources": [
+        "mm-main-capture",
         "mm-termindex"
       ],
-      "observations": [],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "",
+          "status": "UNREAD — stub",
+          "source_format": null,
+          "section": "Unsectioned",
+          "slug": "writable-retrieval-basin",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#writable-retrieval-basin",
+          "mirror_gallery_url": "https://leesharks.com/captures/#writable-retrieval-basin",
+          "details_excerpt": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer retu"
+        }
+      ],
       "termindex": {
         "tier": 2,
         "count": 6,
@@ -53709,9 +54362,9 @@
         ],
         "extraction_source": "keywords"
       },
-      "observation_class": "subjunctive",
-      "latest_observation_date": null,
-      "latest_status": null
+      "observation_class": "observed_address",
+      "latest_observation_date": "",
+      "latest_status": "UNREAD — stub"
     },
     "writable retrieval basins": {
       "canonical_query": "writable retrieval basins",
@@ -54011,6 +54664,32 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-14",
       "latest_status": null
+    },
+    "zenodo packet zpzp (recapture)": {
+      "canonical_query": "zenodo packet zpzp (recapture)",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "",
+          "status": "UNREAD — stub",
+          "source_format": null,
+          "section": "Unsectioned",
+          "slug": "zenodo-packet-zpzp-recapture",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#zenodo-packet-zpzp-recapture",
+          "mirror_gallery_url": "https://leesharks.com/captures/#zenodo-packet-zpzp-recapture",
+          "details_excerpt": "STUB. These capture images were taken and published to the gallery and no registry entry was ever written for them. The images are recovered and held; the READING is not present. A capture is a query, what the layer retu"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "",
+      "latest_status": "UNREAD — stub"
     },
     "zenodotus' book-burning": {
       "canonical_query": "zenodotus' book-burning",

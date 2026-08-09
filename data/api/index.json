@@ -4,7 +4,7 @@
   "title": "Alexanarch Protocol Index",
   "purpose": "Central machine-readable catalog of all Alexanarch protocols, schemas, and data registries. Single source of truth — every other document (AGENTS.md, DEPOSIT-FLOW.md, scripts, workflows) MUST pull from this index, not duplicate it. If this file disagrees with any other surface, this file wins and the other surface is wrong.",
   "index_version": "v1.1",
-  "last_updated": "2026-08-06",
+  "last_updated": "2026-08-09",
   "operator_directive": {
     "for_new_instances": [
       "STOP before any action.",
@@ -166,7 +166,7 @@
       "name": "Deposit Registry (the AXN registry)",
       "canonical_path": "/data/registry.json",
       "purpose": "Canonical list of every deposit. Drives home-page Recent Deposits, browse page, sitemap, chunks. THE source of truth — all other surfaces are derived.",
-      "current_count": 1434,
+      "current_count": 1444,
       "validates_against": [
         "/api/schemas/deposit-entry.schema.json"
       ],
@@ -521,12 +521,12 @@
   },
   "surface_hashes": {
     "algorithm": "sha256",
-    "hashed_at": "2026-08-06T22:12:38Z",
+    "hashed_at": "2026-08-09T17:20:44Z",
     "files": {
-      "data/registry.json": "a8ede6e9304354d3a395fd5172ed778fbf6950b614c3727a3d75e59aa40aec8c",
-      "data/api/search-index.json": "91880d856bd0d2f0b1ae13a2af5973eadfa5e41fb2a3ffba53f37795e6e7ba11",
-      "data/api/body-index.json": "3649c389e6775b875fa3f2bc0f826a97dfcc02345b29a145f159925d001467d2",
-      "data/api/axn-index.json": "b4e0d4056105c61c45b82b70380b8e8c4fd88927ae6805b6d9d926d00835177b",
+      "data/registry.json": "7c7af9b1a13b87b8f5522c7c88cbab359dabaa20f228084742b8f3ff51756b9c",
+      "data/api/search-index.json": "ef5ff479e6977f3da3d5fa82646515f30655603200d8537f9cf2ea36b3a6680e",
+      "data/api/body-index.json": "f905d58ed175ad32fa6eadeec06b68d0da25d6c06e7e99f3903090bc3f05f698",
+      "data/api/axn-index.json": "0c22aa4301e51577c93c0e986769716e66efe369d4db39b5b89376dd93ec2358",
       "data/doi-resolution-index.json": "a58841cf8a763a747cded1e8bd9d2a0934077ab8778bd660ca878fff4563bef2"
     }
   }

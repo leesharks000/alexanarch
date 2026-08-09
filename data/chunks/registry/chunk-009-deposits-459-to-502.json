@@ -578,7 +578,13 @@
         "work_sha256": "393f11f7cabc5b6c9aa62d5cc44506c7042c7836a262cb9b109756892dd1e6f9",
         "prior_bytes_sha256": "4d05a05f440f0520ab07649bb3befb357a5788b89c6767e6fd0aeaf91abc5f76",
         "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 22 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
-        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
+        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write.",
+        "possible_same_work": {
+          "deposit_number": 1317,
+          "found": "2026-08-08 traversal audit",
+          "evidence": "Both are Document 247, both dated 2026-02-06, with 41% sentence overlap — enough to be one work at two lengths and not enough to assert it. Flagged for reading, not resolved. The traversal series is exactly where a similarity score should not be trusted: these logs share their apparatus, their operator, their system under test and their format, so two different sessions can reach 0.98 containment, which is how #1254 came to be superseded to a traversal it has nothing to do with.",
+          "status": "unread"
+        }
       },
       "canonical_text_status": "canonical_full_text",
       "modifications": [
@@ -639,7 +645,14 @@
         }
       ],
       "date_modified": "2026-08-05",
-      "publisher": "Pergamon Press"
+      "publisher": "Pergamon Press",
+      "record_modifications": [
+        {
+          "date": "2026-08-08",
+          "field": "body_status",
+          "note": "TRAVERSAL AUDIT: possible same work as #1317. Flagged for reading."
+        }
+      ]
     },
     {
       "axn": "AXN:0116.GOVERNANCE.💙🔀🪟🪞♅🌕",
