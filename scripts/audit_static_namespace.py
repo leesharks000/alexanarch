@@ -190,7 +190,16 @@ def main():
     # prose standing where an account of the work belongs. Both are real and neither
     # is a publication failure, so they are counted here and repaired in their own
     # pass rather than stopping every deploy.
-    _stub = _scan(r'structured data rather than prose|belongs to the description/wiki review stream')
+    # NARROWED 2026-08-08. The first version flagged every mention of the review
+    # stream, and 50 of the 65 hits were an HONEST CLOSING DISCLOSURE — "Article
+    # composed from the work's own prose so that every record carries an
+    # encyclopedic entry; a fuller editorial treatment belongs to the
+    # description/wiki review stream." That is true, useful, and exactly the kind of
+    # self-report this archive should carry. Flagging it as a defect nearly caused a
+    # batch edit that would have DELETED the disclosure from 63 records. Only the
+    # false claim is a defect: a field asserting the body is not prose.
+    _stub = _scan(r'deposited body is (a )?structured (data|document)[^.]*?'
+                  r'(rather than prose|without introductory prose)')
     _prov = _scan(r'^\s*(DOI\(s\):|Source tier:)|Zenodo removal forensics')
     if _stub or _prov:
         print(f"  note  {len(_stub)} record(s) carry a placeholder description/wiki stub; "
