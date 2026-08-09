@@ -90,7 +90,18 @@ def check_deposit(n: int):
         fails.append(("RENDER-001", "record page missing"))
     else:
         h = rec.read_text(encoding="utf-8")
-        arts = h.count("<p>#") + h.count("<p>---</p>") + h.count("<p>&gt;")
+        # A markdown heading is "# " — hash, SPACE, text. A paragraph opening
+        # "#NewHuman" is a hashtag and one opening "#1287's truth title" is a
+        # deposit reference in a sentence. Both are correct prose and neither is
+        # an unconverted heading. Requiring the space removes 5 false positives
+        # found on 2026-08-09 across #1442 (four hashtag lines quoted verbatim
+        # from the source posts) and #1445 (a sentence beginning with a record
+        # number). Checking for the literal marker rather than the syntax would
+        # push an editor to alter deposited text to satisfy a checker.
+        import re as _re3
+        arts = (len(_re3.findall(r"<p>#{1,6} ", h))
+                + h.count("<p>---</p>")
+                + h.count("<p>&gt; "))
         if arts:
             fails.append(("RENDER-001",
                           f"record page carries {arts} literal-markdown artifact(s) "
