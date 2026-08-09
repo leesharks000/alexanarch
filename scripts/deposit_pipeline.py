@@ -124,8 +124,17 @@ SCRIPTS = REPO_ROOT / "scripts"
 REGISTRY = REPO_ROOT / "data" / "registry.json"
 
 STAGE_ORDER = [
-    "mint", "validate", "record", "pdf", "body-index",
-    "wiki", "sitemap", "oai", "interlink", "enrich", "symbolon", "identity", "commit", "verify",
+    "mint", "validate", "pdf", "body-index",
+    "wiki", "sitemap", "oai", "interlink", "enrich", "symbolon", "identity",
+    # record renders AFTER interlink/enrich (2026-08-09): the page carries
+    # Cross-References from the citation graph, so the graph must exist first.
+    # #1443/#1444 rendered empty traversal sections under the old order.
+    "record",
+    # completeness: per-deposit contract deposit-completeness/v1 — wiki
+    # substance, concepts, related, lexical receipt, citation edges,
+    # artifact-free render, verified files. Fails closed before commit.
+    "completeness",
+    "commit", "verify",
     "announce",
 ]
 
@@ -564,8 +573,14 @@ def stage_announce(args):
         "--reason=deposit minted"])
 
 
+def stage_completeness(args):
+    sh([sys.executable, SCRIPTS / "deposit_completeness.py",
+        "--deposit-number", str(args.deposit_number)], check=True)
+
+
 STAGES = {
     "mint": stage_mint, "validate": stage_validate, "record": stage_record,
+    "completeness": stage_completeness,
     "pdf": stage_pdf, "body-index": stage_body_index, "wiki": stage_wiki,
     "sitemap": stage_sitemap, "interlink": stage_interlink,
     "enrich": stage_enrich, "symbolon": stage_symbolon,

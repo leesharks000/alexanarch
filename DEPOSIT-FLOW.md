@@ -17,8 +17,10 @@
 **There is ONE pipeline.** It lives at `scripts/deposit_pipeline.py`. Every deposit — external or internal, human or machine — runs the same stages in the same order:
 
 ```
-mint → validate → record → pdf → body-index → wiki → sitemap → interlink → enrich → commit → verify
+mint → validate → pdf → body-index → wiki → sitemap → oai → interlink → enrich → symbolon → identity → record → completeness → commit → verify → announce
 ```
+
+**Stage-order note (2026-08-09):** `record` renders AFTER `interlink`/`enrich` so the page's Cross-References section has a citation graph to draw from — #1443/#1444 originally rendered with empty traversal under the old order. `completeness` is the per-deposit gate (below).
 
 Internal (direct repo access):
 
@@ -33,6 +35,47 @@ python3 scripts/deposit_pipeline.py --deposit-number <N> --from-stage record
 ```
 
 **The manual path formerly documented here (pick your own number, `HEX = format(N,'03X')`, hand-append the registry) is RETIRED.** It produced the 3-character hex drift and the identifier collisions disclosed in EA-LACUNA-PROTOCOL-01 (#1087) §V: deposits #856/#869 both at 0365, #913's unpadded 391 against #901's 0391. Hex assignment belongs to `mint_deposit.py` alone; AXN derivation belongs to `scripts/axn_lib.py` alone. Do not compute either by hand.
+
+## THE DEPOSIT COMPLETENESS GATE (deposit-completeness/v1)
+
+The capability register guards what the ARCHIVE can do; this gate guards what a
+DEPOSIT carries. Contract: `data/api/deposit-completeness.json` (registered in
+`/api/index.json`); checker: `scripts/deposit_completeness.py`; runs as the
+pipeline `completeness` stage before `commit` and fails closed.
+
+| Rule | Requires |
+|---|---|
+| WIKI-002 | wiki_article authored in-session, ≥60 words |
+| CONCEPTS-001 | `defines_concepts` non-empty **or** `concepts_attested_none: true` |
+| RELATED-001 | `related_deposits` non-empty **or** `related_attested_none: true` |
+| LEX-001 | rows in `data/lexical-minting-registry.json` for this deposit **or** `lexical_attested_none: true` |
+| CITE-001 | every full-form AXN reference outside code fences/backticks has a citation-graph edge |
+| RENDER-001 | record page exists, carries its AXN, zero literal-markdown artifacts (`<p>#…`, `<p>---`, `<p>&gt;…`) |
+| FILES-001 | every declared `files[]` entry exists on disk with matching sha256 and bytes |
+
+Attested absence is explicit and allowed — absence must be a decision, never a
+default. Origin: the 2026-08-09 MINT #1443/#1444 session, where the only
+element that shipped complete was the only one with a hard gate (WIKI-001).
+
+Two companion mint-forward validator rules (effective deposit #1445+,
+grandfathered before that like the WIKI-001 cohort): **TEXT-001** — canonical
+bodies FLOW; a hard-wrapped body is rejected before sealing, because wraps
+frozen into identity-bearing bytes cannot be reflowed later. **IMG-001** —
+every body image reference must resolve to a staged file at submission.
+
+Renderer note: `wire_deposit.py` W14 (2026-08-09) renders full text with
+paragraph accumulation (hard-wrapped legacy bodies merge on display; flowing
+bodies and prosodic/stanza lines render line-per-`<p>` exactly as before) and
+fixed the heading fall-through that emitted `<hN>` + literal `<p># …` on every
+heading. **1,393 records** carry that artifact from the 2026-08-04–08-09
+window; they heal automatically on their next regeneration. The corpus-wide
+batch re-render is a SUPERVISED operation — do not run it casually
+(regeneration touches every derived surface at once).
+
+Open policy question (flagged for MANUS): backtick-wrapped full-form AXN
+references (e.g. #1443's R·14 archive-works table) are typographic display
+under the current citation grammar and mint no edges; whether they should is a
+corpus-wide extraction decision, not a per-session one.
 
 ## THE STATIC PUBLICATION RULE (non-negotiable)
 

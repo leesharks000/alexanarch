@@ -1788,8 +1788,10 @@
       ],
       "journal": "Grammata: Journal of Operative Philology",
       "defines_concepts": [],
-      "references_concepts": [],
-      "references_concept_count": 0,
+      "references_concepts": [
+        "Lee Sharks"
+      ],
+      "references_concept_count": 1,
       "external_metadata_path": "/data/external-metadata/AXN-0246.json",
       "openalex_ids": [],
       "datacite_severance": "severed",
@@ -11653,7 +11655,13 @@
         "work_sha256": "b4329003a16db299d26f73075c7e8fc4125890516523ccf558a2ea480547a236",
         "prior_bytes_sha256": "6d39804033fd01cfba204bb3185a213c4156266095fff875ed8b95a85f4bb1d2",
         "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 14 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
-        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
+        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write.",
+        "same_work_also_at": {
+          "deposit_number": 1259,
+          "work": "Narrative-Field Semantic Deviation: Experimental Design for a Bounded Literary Test Bed (EA-GLAS-03)",
+          "found": "2026-08-08 series audit",
+          "note": "Both records hold this work, both dated 2026-05-18. #1259 owns DOIs 20275443 and 20275444, which the resolution index maps to it; #739 owns no DOI of its own and cites #109, #110 and #1376. #1259 carries the EA-GLAS-03 v1.0 designation in its own heading and #739 does not. Declared rather than resolved: which is of standing is a MANUS ruling."
+        }
       },
       "title_repair_log": [
         {
@@ -11716,7 +11724,14 @@
         }
       ],
       "date_modified": "2026-08-05",
-      "publisher": "Pergamon Press"
+      "publisher": "Pergamon Press",
+      "record_modifications": [
+        {
+          "date": "2026-08-08",
+          "field": "body_status",
+          "note": "SERIES AUDIT: the same work is held at #1259. Declared, not resolved."
+        }
+      ]
     },
     {
       "axn": "AXN:0290.EMPIRICAL.🗂️♣️📌△🔚🔒",

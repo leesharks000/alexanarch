@@ -2841,7 +2841,12 @@
         "work_sha256": "4cd20dbecd34da47e6d4a5bb4c196d2dac11e97c120a8f63c906825bec4f5193",
         "prior_bytes_sha256": "7deb4cad7bafa72e1eae8aa569b68a1d6c71a71801d5c16721a8efe4b352eac2",
         "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 14 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
-        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
+        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write.",
+        "same_work_also_at": {
+          "deposit_number": 1254,
+          "work": "Traversal Log: The Sigil Installation (2026-02-25)",
+          "note": "Both hold this traversal. Declared, not resolved; which is of standing is a MANUS ruling."
+        }
       },
       "canonical_text_status": "canonical_full_text",
       "modifications": [

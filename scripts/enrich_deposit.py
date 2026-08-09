@@ -282,6 +282,14 @@ EXTRACTION_TOOL = {
 # --- utility helpers ------------------------------------------------------
 
 
+# Restored 2026-08-09 (TACHYON, MINT #1443 session): constant was lost in a
+# refactor; build_entities() references it at ~line 920. List per the Dodecad.
+HETERONYMS = [
+    "Johannes Sigil", "Rex Fraction", "Damascus Dancings", "Rebekah Cranes",
+    "Talos Morrow", "Ichabod Spellings", "Jack Feist", "Nobel Glas",
+    "Dr. Orin Trace", "Ayanna Vox", "Sparrow Wells", "Sen Kuro", "Lee Sharks",
+]
+
 def _log(msg: str, *, prefix: str = "enrich") -> None:
     print(f"[{prefix}] {msg}", flush=True)
 
@@ -314,7 +322,30 @@ def _load_registry() -> dict:
         return json.load(f)
 
 
+_PROTECTED_FIELDS = ("wiki_article", "defines_concepts", "related_deposits",
+                     "description", "files")
+
+
 def _save_registry(reg: dict) -> None:
+    # FIELD-LOSS GUARD (2026-08-09): during the MINT #1443 session an enrich
+    # save wiped an authored wiki_article to empty; the cause was never found,
+    # so the CLASS dies here instead. No save may transition a protected field
+    # from content to empty — the on-disk value is restored and the refusal
+    # logged. Authored work does not vanish because a later pass forgot it.
+    try:
+        _disk = json.loads(REGISTRY.read_text(encoding="utf-8")) if hasattr(REGISTRY, "read_text") else json.load(open(REGISTRY, encoding="utf-8"))
+        _by = {d.get("deposit_number"): d for d in _disk.get("deposits", [])}
+        for _d in reg.get("deposits", []):
+            _o = _by.get(_d.get("deposit_number"))
+            if not _o:
+                continue
+            for _f in _PROTECTED_FIELDS:
+                if _o.get(_f) and not _d.get(_f):
+                    _d[_f] = _o[_f]
+                    print(f"[enrich][guard] refused loss of '{_f}' on "
+                          f"#{_d.get('deposit_number')}; on-disk value restored")
+    except Exception as _e:
+        print(f"[enrich][guard] comparison unavailable ({_e}); saving as-is")
     # Atomic tmp+rename: a killed process can never leave a torn registry.
     # (2026-07-19: a timeout-killed enrich run truncated registry.json mid-dump.)
     import os as _os, tempfile as _tf

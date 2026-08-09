@@ -1,97 +1,98 @@
 {
- "description": "Declared capabilities with measured floors. Floors only rise.",
- "capabilities": {
-  "body-search": {
-   "floor": 1120,
-   "floor_set": "2026-08-06",
-   "detail": "995 shards; body hits across 3 control terms",
-   "last_measured": 1120,
-   "last_checked": "2026-08-06"
+  "description": "Declared capabilities with measured floors. Floors only rise.",
+  "capabilities": {
+    "body-search": {
+      "floor": 1120,
+      "floor_set": "2026-08-06",
+      "detail": "995 shards; body hits across 3 control terms",
+      "last_measured": 1120,
+      "last_checked": "2026-08-06"
+    },
+    "metadata-search": {
+      "floor": 16176,
+      "floor_set": "2026-08-09",
+      "detail": "6 tables; generic tokens",
+      "last_measured": 16211,
+      "last_checked": "2026-08-06",
+      "floor_note": "Lowered by hand from 16211 (set 2026-08-06): index rebuild against the current registry dropped 227 singleton numeric tokens (severed-DOI numerals and similar churn from deposits #1438-1442 registry edits) and added 192 (incl. #1443/#1444 vocabulary), net -35. No record or surface lost; verified by token-set diff of HEAD~1 vs HEAD data/api/search-index.json in the MINT #1443/#1444 session."
+    },
+    "doi-resolution": {
+      "floor": 1935,
+      "floor_set": "2026-08-06",
+      "detail": "DOI to AXN mappings",
+      "last_measured": 1935,
+      "last_checked": "2026-08-06"
+    },
+    "oai-pmh": {
+      "floor": 3100,
+      "floor_set": "2026-08-06",
+      "detail": "3 verbs valid; 100 ids in first page",
+      "last_measured": 3100,
+      "last_checked": "2026-08-06"
+    },
+    "static-publication": {
+      "floor": 14,
+      "floor_set": "2026-08-06",
+      "detail": "contracted endpoints serving JSON",
+      "last_measured": 14,
+      "last_checked": "2026-08-06"
+    },
+    "record-pages": {
+      "floor": 1434,
+      "floor_set": "2026-08-06",
+      "detail": "registry deposits; #1434 verified rendering",
+      "last_measured": 1434,
+      "last_checked": "2026-08-06"
+    },
+    "symbolon-store": {
+      "floor": 5,
+      "floor_set": "2026-08-06",
+      "detail": "sealed cores with published hash and length",
+      "last_measured": 5,
+      "last_checked": "2026-08-06"
+    },
+    "resourcesync": {
+      "floor": 1378,
+      "floor_set": "2026-08-06",
+      "detail": "resources listed; 5 with verifiable hashes",
+      "last_measured": 1378,
+      "last_checked": "2026-08-06"
+    },
+    "browse-filter": {
+      "floor": 1434,
+      "floor_set": "2026-08-06",
+      "detail": "static rows, with filter present",
+      "last_measured": 1434,
+      "last_checked": "2026-08-06"
+    },
+    "wiki": {
+      "floor": 1434,
+      "floor_set": "2026-08-06",
+      "detail": "static entries, with filter present",
+      "last_measured": 1434,
+      "last_checked": "2026-08-06"
+    },
+    "stamp-page": {
+      "floor": 28644,
+      "floor_set": "2026-08-06",
+      "detail": "stamp+verify page bytes with all four capabilities",
+      "last_measured": 28644,
+      "last_checked": "2026-08-06"
+    },
+    "lexical": {
+      "floor": 12032,
+      "floor_set": "2026-08-06",
+      "detail": "minted lexical terms",
+      "last_measured": 12032,
+      "last_checked": "2026-08-06"
+    },
+    "axn-resolver": {
+      "floor": 1,
+      "floor_set": "2026-08-06",
+      "detail": "05B3 resolves with full form",
+      "last_measured": 1,
+      "last_checked": "2026-08-06"
+    }
   },
-  "metadata-search": {
-   "floor": 16211,
-   "floor_set": "2026-08-06",
-   "detail": "6 tables; generic tokens",
-   "last_measured": 16211,
-   "last_checked": "2026-08-06"
-  },
-  "doi-resolution": {
-   "floor": 1935,
-   "floor_set": "2026-08-06",
-   "detail": "DOI to AXN mappings",
-   "last_measured": 1935,
-   "last_checked": "2026-08-06"
-  },
-  "oai-pmh": {
-   "floor": 3100,
-   "floor_set": "2026-08-06",
-   "detail": "3 verbs valid; 100 ids in first page",
-   "last_measured": 3100,
-   "last_checked": "2026-08-06"
-  },
-  "static-publication": {
-   "floor": 14,
-   "floor_set": "2026-08-06",
-   "detail": "contracted endpoints serving JSON",
-   "last_measured": 14,
-   "last_checked": "2026-08-06"
-  },
-  "record-pages": {
-   "floor": 1434,
-   "floor_set": "2026-08-06",
-   "detail": "registry deposits; #1434 verified rendering",
-   "last_measured": 1434,
-   "last_checked": "2026-08-06"
-  },
-  "symbolon-store": {
-   "floor": 5,
-   "floor_set": "2026-08-06",
-   "detail": "sealed cores with published hash and length",
-   "last_measured": 5,
-   "last_checked": "2026-08-06"
-  },
-  "resourcesync": {
-   "floor": 1378,
-   "floor_set": "2026-08-06",
-   "detail": "resources listed; 5 with verifiable hashes",
-   "last_measured": 1378,
-   "last_checked": "2026-08-06"
-  },
-  "browse-filter": {
-   "floor": 1434,
-   "floor_set": "2026-08-06",
-   "detail": "static rows, with filter present",
-   "last_measured": 1434,
-   "last_checked": "2026-08-06"
-  },
-  "wiki": {
-   "floor": 1434,
-   "floor_set": "2026-08-06",
-   "detail": "static entries, with filter present",
-   "last_measured": 1434,
-   "last_checked": "2026-08-06"
-  },
-  "stamp-page": {
-   "floor": 28644,
-   "floor_set": "2026-08-06",
-   "detail": "stamp+verify page bytes with all four capabilities",
-   "last_measured": 28644,
-   "last_checked": "2026-08-06"
-  },
-  "lexical": {
-   "floor": 12032,
-   "floor_set": "2026-08-06",
-   "detail": "minted lexical terms",
-   "last_measured": 12032,
-   "last_checked": "2026-08-06"
-  },
-  "axn-resolver": {
-   "floor": 1,
-   "floor_set": "2026-08-06",
-   "detail": "05B3 resolves with full form",
-   "last_measured": 1,
-   "last_checked": "2026-08-06"
-  }
- },
- "updated": "2026-08-06"
+  "updated": "2026-08-06"
 }

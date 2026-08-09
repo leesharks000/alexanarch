@@ -1,0 +1,90 @@
+{
+ "axn": "AXN:05CA.GENERATIVE.☀️⚫🎨🔵🐝🕑",
+ "position": "05CA",
+ "family": "GENERATIVE",
+ "registered": "2026-08-09T16:38:58.415Z",
+ "status": "witnessed-verified",
+ "verified_at": "2026-08-09T16:39:04.885Z",
+ "last_verified_at": "2026-08-09T17:16:42Z",
+ "verification_method": "sha256 of stored bytes compared to the entry's AXN0 kernel; the identifier is the expected hash, so verification is self-contained",
+ "core_stored": true,
+ "custody": {
+  "terms": "Stored cores live in this archive's public version-controlled repository and are served without account, login, or expiry. Any change or removal appears as a dated commit; nothing is silently deleted.",
+  "single_point_of_failure": "One administrator, one code host, one serving platform. Durable against link rot, accidental overwrite and quiet editing; NOT durable against a platform decision — this archive was itself terminated elsewhere in June 2026. A registry entry is a record, not a promise of perpetual hosting.",
+  "mirror_freely": "Listed with hash and length in /resourcesync/resourcelist.xml and /data/symbolon-registry/MANIFEST.json, and checksummed in /SHA256SUMS.txt. Fetch, hash, compare — copying requires no permission and verification requires no trust in this archive. Independent custody means a copy held by someone who is not this archive's administrator, on a platform it does not use.",
+  "depositor_holds": "The depositor's own original plus the Seed A sidecar can prove the work anywhere, with or without this archive. That is the point of splitting the identifier in two."
+ },
+ "retrieval": "https://www.alexanarch.org/data/symbolon-registry/files/0bc886c57d6397e8-0DF6D311-944D-4C8B-AB1B-B361A90AA1D5.jpg",
+ "note": "The registry witnesses the tuple and its internal consistency (glyphs recomputed from hashes at ingest). Seed B was not seen; verification against bytes is a separate act per SPEC §9. [Stamp re-applied 2026-08-09; AXN1 refreshed to the current stamped form. Sealed core (AXN0) unchanged.] [Stamp re-applied 2026-08-09; AXN1 refreshed to the current stamped form. Sealed core (AXN0) unchanged.]",
+ "spec": "AXN-SYMBOLON-SPEC v0.2 · https://www.alexanarch.org/s/records/1432/",
+ "tuple": {
+  "axn0": {
+   "glyphs": "☀️⚫🎨🔵🐝🕑",
+   "sha256": "0bc886c57d6397e8448541f3b3a4f55af7bb98020c036dc61d8dea880b674d6a"
+  },
+  "axn1": {
+   "glyphs": "🤙■🌇⏰🗡️🔗",
+   "sha256": "be9ee4615a3309c3acf0ba8b49cf7bbe76fb30654146162605763c75b78f2f02"
+  }
+ },
+ "position_note": "The hex position is a registry address allocated from the shared AXN sequence (data/symbolon-registry/allocation.json). An address is not a verification.",
+ "seed_a": {
+  "axn_spec": "AXN-SYMBOLON-SPEC v0.2",
+  "spec_record": "https://www.alexanarch.org/s/records/1432/",
+  "spec_axn": "AXN:05A9.OPERATIVE.🐚🌪️🕖🫵⏩○",
+  "reconstruction_class": "content-addressed",
+  "stamp_generation": 1,
+  "axn0": {
+   "glyphs": "☀️⚫🎨🔵🐝🕑",
+   "sha256": "0bc886c57d6397e8448541f3b3a4f55af7bb98020c036dc61d8dea880b674d6a",
+   "role": "identity kernel of the sealed core (the original, pre-stamp bytes)"
+  },
+  "axn1": {
+   "glyphs": "🤙■🌇⏰🗡️🔗",
+   "sha256": "be9ee4615a3309c3acf0ba8b49cf7bbe76fb30654146162605763c75b78f2f02",
+   "role": "kernel of the stamped file as it circulates (tamper witness; not a name)"
+  },
+  "manifest": [
+   {
+    "part": 1,
+    "filename": "0DF6D311-944D-4C8B-AB1B-B361A90AA1D5.jpg",
+    "sha256": "0bc886c57d6397e8448541f3b3a4f55af7bb98020c036dc61d8dea880b674d6a",
+    "bytes": 484814
+   }
+  ],
+  "stamp_geometry": {
+   "format": "image/png",
+   "method": "appended_footer_strip",
+   "strip_px": 92,
+   "original_px": {
+    "w": 1536,
+    "h": 2048
+   },
+   "strip_stamp": "crop to original_px then compare pixels; byte-identical strip NOT possible for raster (re-encode); AXN₀ verification requires Seed B = the original file",
+   "strip_reversible": false
+  },
+  "created": "2026-08-09T16:38:59.522Z",
+  "generator": "https://www.alexanarch.org/mint/stamp/ (client-side; WebCrypto)",
+  "family": "GENERATIVE",
+  "registration": "kernel is authority-independent; registry witnessing via https://www.alexanarch.org/deposit/ or by sending this sidecar to the archive"
+ },
+ "stamp_history": [
+  {
+   "axn1": {
+    "glyphs": "🤙■🌇⏰🗡️🔗",
+    "sha256": "be9ee4615a3309c3acf0ba8b49cf7bbe76fb30654146162605763c75b78f2f02"
+   },
+   "until": "2026-08-09T16:39:07.454Z"
+  },
+  {
+   "axn1_replaced": "be9ee4615a3309c3acf0ba8b49cf7bbe76fb30654146162605763c75b78f2f02",
+   "at": "2026-08-09T16:39:07.454Z"
+  },
+  {
+   "axn1_replaced": "3a368ffa318738bdfd3122a06406dabfa2dc61777fb6d49d3ca99407de3066c7",
+   "at": "2026-08-09T16:39:17.379Z"
+  }
+ ],
+ "core_bytes": 484814,
+ "core_path": "/data/symbolon-registry/files/0bc886c57d6397e8-0DF6D311-944D-4C8B-AB1B-B361A90AA1D5.jpg"
+}
