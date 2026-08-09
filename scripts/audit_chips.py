@@ -1,6 +1,16 @@
 #!/usr/bin/env python3
 """audit_chips.py — enforce the chip bibliographic standard across every fleet surface.
 
+SCOPE — THE LIBRARY IS EXCLUDED (MANUS ruling, 2026-08-09)
+
+The chip standard governs SATELLITE SURFACES, not alexanarch. The library retains
+its own format because IT IS THE SOURCE: its record pages are what the chips on
+every other surface point AT, and a citing convention has no business rewriting the
+thing it cites. An earlier run of this script reported 4,324 violations on
+alexanarch. Those were not violations. They were the library's own house format,
+and flagging them was the same category error as a bibliography demanding that a
+book's own title page conform to the bibliography's citation style.
+
 WHY THIS EXISTS
 
 The standard is written down. MSP-ROLLOUT names the contract classes and types them
@@ -95,10 +105,19 @@ def main():
     a = ap.parse_args()
     D = registry()
 
+    # The library is the source and keeps its own format. Named by directory and by
+    # the presence of data/registry.json, so a rename cannot silently re-include it.
+    def _is_library(p):
+        return (p / 'data' / 'registry.json').exists()
+
     roots = ([pathlib.Path(a.path)] if a.path else
              [p for p in sorted(pathlib.Path('/home/claude').iterdir())
-              if (p / 'index.html').exists() and (p / '.git').exists()] if a.fleet else
+              if (p / 'index.html').exists() and (p / '.git').exists()
+              and not _is_library(p)] if a.fleet else
              [ROOT])
+    if a.fleet:
+        print("  scope: satellite surfaces. alexanarch is excluded — the library is the\n"
+              "         source and retains its own format (MANUS ruling 2026-08-09).\n")
 
     total_h = 0
     for r in roots:

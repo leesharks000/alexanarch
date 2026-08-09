@@ -1,1 +1,42 @@
-{"as_of":"2026-07-08 (v1.4 — final Phase 14 sweep, ~all actionable fixed)","resolver_state_at_scan":"v3.11.0 (1,938 mappings)","total_anchored_links":59462,"by_verdict":{"ambiguous":11710,"consistent":1373,"external_ok":271,"href_disagrees_resolver":13,"href_disagrees_text":1,"href_wrong_target":1,"no_id":45954,"unknown":139},"fixes_applied_v1_3_to_v1_4":{"phase_14a_comprehensive_matcher":88,"phase_14b_context_doi_routing":532,"phase_14c_final_residual":130,"total_v1_4":750},"cumulative_session_totals":{"phase_10_url_and_anchor_text":8462,"phase_12_inventory_driven":448,"phase_13_per_citation_doi_typo":827,"phase_14_comprehensive_sweep":750,"grand_total":10487}}
+{
+ "as_of": "2026-07-08 (v1.4 — final Phase 14 sweep, ~all actionable fixed)",
+ "resolver_state_at_scan": "v3.11.0 (1,938 mappings)",
+ "total_anchored_links": 59462,
+ "by_verdict": {
+  "ambiguous": 11710,
+  "consistent": 1373,
+  "external_ok": 271,
+  "href_disagrees_resolver": 13,
+  "href_disagrees_text": 1,
+  "href_wrong_target": 1,
+  "no_id": 45954,
+  "unknown": 139
+ },
+ "fixes_applied_v1_3_to_v1_4": {
+  "phase_14a_comprehensive_matcher": 88,
+  "phase_14b_context_doi_routing": 532,
+  "phase_14c_final_residual": 130,
+  "total_v1_4": 750
+ },
+ "cumulative_session_totals": {
+  "phase_10_url_and_anchor_text": 8462,
+  "phase_12_inventory_driven": 448,
+  "phase_13_per_citation_doi_typo": 827,
+  "phase_14_comprehensive_sweep": 750,
+  "grand_total": 10487
+ },
+ "authority": {
+  "status": "NOT A SOURCE OF TRUTH — derived, superseded, retained as history",
+  "ruled": "2026-08-09, MANUS",
+  "why": "Significant link repair has been performed IN PLACE on individual sites since this scan and was never backpropagated here. The sites are authoritative; this file records what a scan saw on 2026-07-08 and nothing since. A verdict in this file may have been acted on, reversed, or rendered moot by a page that no longer exists in that form.",
+  "coverage_when_measured": {
+   "at": "2026-08-09",
+   "links_scanned_2026_07_08": 59462,
+   "links_present_2026_08_09": 194780,
+   "coverage_fraction": 0.305,
+   "note": "31% of the current corpus. Of what it did scan, 45,954 were no_id, 11,710 ambiguous and 139 unknown — so confident verdicts covered roughly 3% of the scan. It is a sample, not an inventory, and it is a month stale against a corpus that has tripled."
+  },
+  "do_not": "Do not use this file to plan a batch operation, to decide whether a link is correct, or as evidence that a link was fixed. Read the site.",
+  "if_an_inventory_is_needed": "Rebuild it from the sites, and treat the rebuild as derived on the day it runs rather than as a standing authority. Any inventory of a living corpus is a photograph."
+ }
+}
