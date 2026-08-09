@@ -31,22 +31,7 @@ keywords:
 
 # PHASE X NAVIGATION MAP (Document 210) DOI: 10.5281/zenodo.18452156 — Crimson Hexagon Archive
 
-## Methodology
-
-Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
-
-## Falsification Conditions
-
-Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
-
-
-**Work:** PHASE X NAVIGATION MAP (Document 210) DOI: 10.5281/zenodo.18452156 — Crimson Hexagon Archive
-**Severed DOI(s):** 10.5281/zenodo.18452156, 10.5281/zenodo.18452155
-**Source tier:** DataCite full-metadata capture
-**Creators (as captured):** Cranes, Rebekah
-Captured citation: Cranes, R. (2026). PHASE X NAVIGATION MAP (Document 210) DOI: 10.5281/zenodo.18452156 — Crimson Hexagon Archive. Zenodo. https://doi.org/10.5281/zenodo.18452156
-
-**Removal forensics:** Zenodo removal forensics: removal_date 2026-06-19T11:37:25.793316+00:00, removal_reason out-of-scope, removed_by user 1060945. 
+**PURE APZPZ — COMPLETE AS DEPOSITED** (reclassified 2026-08-08, on the 2026-08-04 MANUS ruling for this genre): the description field is this work's entire body by design ("DO NOT BACK UP ELSEWHERE. DO NOT ATTACH THIS FILE"); this record preserves it whole.
 
 **Captured description:** ZENODO DESCRIPTION FIELD CONTENT
 
