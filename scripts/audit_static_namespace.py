@@ -159,6 +159,29 @@ def main():
         fails.append(f"{len(_bad)} record(s) name a SUPERSEDED record as the current "
                      f"version: {', '.join(_bad[:6])}")
 
+    # AVAILABILITY CLAIMS MUST MATCH AVAILABILITY (2026-08-08). Thirty-nine restored
+    # records carried the sentence "This record is a metadata capture; the complete
+    # work is not seated here" in their description field, which renders into the
+    # page's META DESCRIPTION — the layer search engines and summarizers read. Each
+    # was serving its full work to a human while telling every crawler the work was
+    # absent. On an archive whose subject is machine-mediated reception, that is the
+    # worst possible place for the claim to be wrong.
+    import re as _re2, json as _j2
+    _r2 = _j2.loads((ROOT / 'data/registry.json').read_text())
+    _stale = _re2.compile(r'this record is a metadata capture|the complete work is not seated here|'
+                          r'\bis held as a \*{0,2}metadata capture', _re2.I)
+    _bad2 = []
+    for _d in _r2['deposits']:
+        if (_d.get('body_status') or {}).get('class') != 'full':
+            continue
+        for _f in ('description', 'wiki_article'):
+            if _stale.search(str(_d.get(_f) or '')):
+                _bad2.append(f"#{_d['deposit_number']}/{_f}")
+                break
+    if _bad2:
+        fails.append(f"{len(_bad2)} record(s) declare class=full while asserting the work is "
+                     f"not held: {', '.join(_bad2[:6])}")
+
     if fails:
         print("\n" + "=" * 74, file=sys.stderr)
         print("STATIC PUBLICATION IS BROKEN — the fd8de940 class of failure:", file=sys.stderr)
