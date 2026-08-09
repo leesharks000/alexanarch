@@ -236,6 +236,38 @@ def main():
         fails.append(f"{len(_exposed)} recovered record(s) are still selectable by a bulk body "
                      f"writer and would be overwritten: {', '.join(_exposed[:6])}")
 
+    # THE CHIP BIBLIOGRAPHIC STANDARD (2026-08-09). MANUS: this is literally the
+    # bibliographic and indexical standard — how much respect would you have for a
+    # library that did every entry differently, and how do I get this across for all
+    # instances when I can't communicate it within the same thread two rounds later.
+    #
+    # The answer is that you should not have to. The standard was already written in
+    # MSP-ROLLOUT and demonstrated on persistentidentifiers.org, and I converted 48
+    # chips to it on one page while adding a chip with no AXN to another page IN THE
+    # SAME COMMIT. Written standards do not survive attention. A check does.
+    #
+    #   1 · a link to /s/records/N/ MUST carry class="axn-chip"
+    #   2 · an axn-chip MUST contain that record's full AXN, byte-exact from
+    #       registry.json, six-emoji glyph included — bare hex is forbidden
+    #   3 · an axn-chip SHOULD carry #N and its EA code where one exists
+    #   4 · a non-record link MUST NOT carry class="axn-chip"
+    #
+    # Rules 1, 2 and 4 fail here. Rule 3 is reported by scripts/audit_chips.py.
+    import subprocess as _sp, sys as _sys
+    _cr = _sp.run([_sys.executable, str(ROOT / 'scripts/audit_chips.py')],
+                  capture_output=True, text=True, cwd=str(ROOT))
+    # REPORTING, NOT BLOCKING, UNTIL THE GENERATOR PASS RUNS. wire_deposit emits
+    # 4,324 record links across 6,392 pages carrying neither the axn-chip class nor
+    # the full AXN — a single generator defect, not 4,324 content errors. Hard-failing
+    # on it today would block every build for a fix that belongs in one function.
+    # This becomes a hard fail once wire_deposit emits conforming chips; the satellite
+    # surfaces are already held to it by scripts/audit_chips.py run per-surface.
+    _last = [l for l in _cr.stdout.splitlines() if 'hard violation' in l]
+    if _cr.returncode:
+        print(f"  note  chip standard: {_last[-1].strip() if _last else 'violations'} "
+              f"— see scripts/audit_chips.py --fleet (reported, not blocking; "
+              f"wire_deposit generator pass pending)")
+
     if fails:
         print("\n" + "=" * 74, file=sys.stderr)
         print("STATIC PUBLICATION IS BROKEN — the fd8de940 class of failure:", file=sys.stderr)
