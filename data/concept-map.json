@@ -3,14 +3,14 @@
   "name": "Concept Map — work-level identity and current-version resolution",
   "description": "Restores the concept-identifier function lost with the terminated Zenodo account. Alexanarch mints a fresh hex per deposit, so every version of a work is an independent object with no link to its siblings; a reader arriving at an old version cannot learn that a newer one exists. Each concept here names a work and points at its current version. Programme families — distinct works sharing an identifier — are listed separately and carry no version pointer, because conflating the two would resolve one work to another. Every family records the basis on which it was detected so any confidence tier can be discarded independently.",
   "generated_by": "scripts/build_concept_map.py",
-  "generated_at": "2026-08-06T17:39:40Z",
+  "generated_at": "2026-08-09T14:31:13Z",
   "totals": {
-    "deposits": 1434,
+    "deposits": 1440,
     "concepts": 63,
     "deposits_in_concepts": 143,
-    "singletons": 1291,
+    "singletons": 1297,
     "needs_review": 17,
-    "program_families": 41
+    "program_families": 42
   },
   "basis_counts": {
     "version/implicit": 39,
@@ -3415,6 +3415,28 @@
           "title": "MPAI: Source Disambiguation for \"Apocalyptic Philosophy: Deleuze and Guattari and the Return of Vision\" (EA-MPAI-APOCALYPTIC-01 v1.2)",
           "date": "2026-07-03",
           "record_url": "https://www.alexanarch.org/s/records/1033/"
+        }
+      ]
+    },
+    {
+      "program_id": "EA-MPAI-DOI",
+      "program_url": "https://www.alexanarch.org/s/program/ea-mpai-doi/",
+      "note": "Distinct works sharing a programme identifier. This is a collection, not a version family: no current-version pointer is asserted.",
+      "member_count": 2,
+      "members": [
+        {
+          "deposit_number": 868,
+          "axn": "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝",
+          "title": "DOIs ≠ Persistent Identifiers: 871 Cases of Public Metadata Erasure and Identifier Severance in DataCite (EA-MPAI-DOI-IMPERMANENCE-01)",
+          "date": "2026-06-22",
+          "record_url": "https://www.alexanarch.org/s/records/868/"
+        },
+        {
+          "deposit_number": 1437,
+          "axn": "AXN:05B7.OPERATIVE.♦️🌌📌🦅🌑💜",
+          "title": "DOI Alternatives Are Complementary Infrastructures, Not Equivalent Replacements — A Fair Comparison of DOI, Handle, ARK, URN:NBN, PURL, SWHID, CID, and AXN (EA-MPAI-DOI-ALTERNATIVES-01 v1.0)",
+          "date": "2026-08-07",
+          "record_url": "https://www.alexanarch.org/s/records/1437/"
         }
       ]
     },
