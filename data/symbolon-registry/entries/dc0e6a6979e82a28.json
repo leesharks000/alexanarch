@@ -15,7 +15,7 @@
   "depositor_holds": "The depositor's own original plus the Seed A sidecar can prove the work anywhere, with or without this archive. That is the point of splitting the identifier in two."
  },
  "retrieval": "https://www.alexanarch.org/data/symbolon-registry/files/dc0e6a6979e82a28-image__17_.png",
- "note": "The registry witnesses the tuple and its internal consistency (glyphs recomputed from hashes at ingest). Seed B was not seen; verification against bytes is a separate act per SPEC §9.",
+ "note": "The registry witnesses the tuple and its internal consistency (glyphs recomputed from hashes at ingest). Seed B was not seen; verification against bytes is a separate act per SPEC §9. [Stamp re-applied 2026-08-09; AXN1 refreshed to the current stamped form. Sealed core (AXN0) unchanged.]",
  "spec": "AXN-SYMBOLON-SPEC v0.2 · https://www.alexanarch.org/s/records/1432/",
  "tuple": {
   "axn0": {
@@ -23,8 +23,8 @@
    "sha256": "dc0e6a6979e82a286e2e7ee719965fd2800ceb0b435f3f943895167f52368e5d"
   },
   "axn1": {
-   "glyphs": "↖️🦅🕕🔓△△",
-   "sha256": "dd7f67fa9898ad63e356d7cd599a3ac99d8238bd6a7136e0bbc34ee57db8bf5a"
+   "glyphs": "🔩🍁🌋🎯🪝🏔️",
+   "sha256": "3177155534163ad4fc16b097bb371ed9c033288bf931464b4e06c4b683ca121f"
   }
  },
  "position_note": "The hex position is a registry address allocated from the shared AXN sequence (data/symbolon-registry/allocation.json). An address is not a verification.",
@@ -67,5 +67,18 @@
   "generator": "https://www.alexanarch.org/mint/stamp/ (client-side; WebCrypto)",
   "family": "OPERATIVE",
   "registration": "kernel is authority-independent; registry witnessing via https://www.alexanarch.org/deposit/ or by sending this sidecar to the archive"
- }
+ },
+ "stamp_history": [
+  {
+   "axn1": {
+    "glyphs": "↖️🦅🕕🔓△△",
+    "sha256": "dd7f67fa9898ad63e356d7cd599a3ac99d8238bd6a7136e0bbc34ee57db8bf5a"
+   },
+   "until": "2026-08-09T00:42:49.148Z"
+  },
+  {
+   "axn1_replaced": "dd7f67fa9898ad63e356d7cd599a3ac99d8238bd6a7136e0bbc34ee57db8bf5a",
+   "at": "2026-08-09T00:42:49.148Z"
+  }
+ ]
 }
