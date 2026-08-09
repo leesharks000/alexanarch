@@ -129,6 +129,13 @@ def score(q_toks, p):
     tc = sum(1 for w in q_toks if w in t_toks) / max(1, len(q_toks))
     body = norm(p["text"][:2500])
     bc = sum(1 for w in q_toks if w in body) / max(1, len(q_toks))
+    # LENGTH IS NOT RELEVANCE. A 38,500-character post — the Symbolon Architecture
+    # module, four times the median — surfaced as the top hit for SIX unrelated
+    # records simply by containing enough vocabulary to match anything. Body
+    # containment is damped for posts far above median length, so a long document
+    # has to match on its TITLE to rank; its body alone cannot carry it.
+    if p.get("chars", 0) > 15000:
+        bc *= 0.6
     return tc, bc
 
 

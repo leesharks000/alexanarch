@@ -1,61 +1,85 @@
----
-deposit_number: 1232
-hex: 04E1
-title: "Sémantique Potentielle — Release 4: Model Collapse Triptych Block (Pristine Fallacy, Five Substrates, Wolf Boy)"
-creator: Sigil, Johannes; Sharks, Lee
-orcid: 0009-0000-1599-0703
-date: 2026-06-18
-content_type: Poetry
-license: CC-BY-4.0
-substrate: Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).
-version: v1.0
-related_ids: "https://doi.org/10.5281/zenodo.20751388 (severed)"
-axn_schema_version: v2
-protocol_version: alexanarch-deposit-protocol/v1
-keywords:
-  - Crimson Hexagonal Archive
+# Sémantique Potentielle — Release 4: Model Collapse Triptych Block
 
+Lee Sharks · Johannes Sigil Grammata: Journal of Operative Philology Crimson Hexagonal Archive · Semantic Economy Institute
 
-  - severed DOI
-  - Zenodo termination
-  - sémantique potentielle
-  - constraint-based semantics
-  - model collapse
-  - pristine fallacy
-  - frictionless path
-  - wolf boy
-  - semiotic short circuit
-  - bearing labor
-  - contamination gradient
-  - mediation signature
-  - f
----
+June 2026 · Extension to CM-2026-v1.0 + Releases 2–3
 
-# Sémantique Potentielle — Release 4: Model Collapse Triptych Block (Pristine Fallacy, Five Substrates, Wolf Boy)
+## New Seed Category
 
-## Methodology
+| Code | Category | Seed Terms |
+|---|---|---|
+| Ω | Collapse / Contamination / Frictionless Path | pristine, contamination, accommodation, signature, friction, ease, threshold, substrate, tail, convergence, wolf, intermediary |
 
-Assembled from DataCite full-metadata capture; no live authorial surface passed the body-head gate or existed for this work at restoration time. All captured fields rendered verbatim in the body.
+Ω.01 pristine — the assumed cleanliness of human-written data; the fallacy that authorship determines distribution Ω.02 contamination — the distributional shift that enters training data through mediated human writing Ω.03 accommodation — the user's linguistic adaptation to a specific model's reception characteristics Ω.04 signature — the model-specific pattern of structural choices consistent across tasks Ω.05 friction — the absent force that would slow convergence toward the distributional center Ω.06 ease — the phenomenology of collapse; the mechanism by which narrowing is experienced as improvement Ω.07 threshold — the critical diversity level below which regeneration cannot outpace pruning Ω.08 substrate — the language-processing system (biological or artificial) in which the dynamics operate Ω.09 tail — the high-perplexity, informationally rich edge of the distribution; the first thing pruned Ω.10 convergence — the within-conversation and across-generation drift toward the distributional mode Ω.11 wolf — the endpoint; the system deprived of input diversity past the critical threshold Ω.12 intermediary — the human as transmission medium for model collapse, not firewall against it
 
-## Falsification Conditions
+## Mint Families (Release 4): Triptych Block — Fifteen Families
 
-Superseded on sight by any recovered canonical bytes; the captured metadata is verifiable against the DataCite API historical record and the Zenodo tombstone.
+Ω-M01. Pristine fallacy (Ω.01 × Ω.02 / O1) The assumption that data can be classified as clean or contaminated based on the identity of the writer rather than the conditions of production. Human-written describes the author, not the distribution. Family: authorship fallacy, production-condition blindness, writer-not-distribution error. Forensic: distributive auctorial fallacia.
 
+Ω-M02. Contamination gradient (Ω.02 × Ω.03 / O7) A metric for measuring the degree of chat data contamination along four continuous dimensions: habituation depth, turn position, task type, and model diversity. Not a binary but a spectrum. Family: four-axis contamination, habituation gradient, production-condition audit. Forensic: tetradimensional contaminative gradiens.
 
-**Work:** Sémantique Potentielle — Release 4: Model Collapse Triptych Block (Pristine Fallacy, Five Substrates, Wolf Boy)
-**Severed DOI(s):** 10.5281/zenodo.20751388
-**Source tier:** DataCite full-metadata capture
-**Creators (as captured):** Sigil, Johannes; Sharks, Lee
-Captured citation: Sigil, J., & Sharks, L. (2026). Sémantique Potentielle — Release 4: Model Collapse Triptych Block (Pristine Fallacy, Five Substrates, Wolf Boy). In Grammata: Journal of Operative Philology. Zenodo. https://doi.org/10.5281/zenodo.20751389
+Ω-M03. Model-branded accommodation (Ω.03 × Ω.04 / O1) The user's linguistic adaptation to a specific model's processing characteristics — vocabulary adoption, syntactic mirroring, framing convergence. The accommodation makes user inputs carry the model's distributional fingerprint. Family: model-specific habituation, branded input, distributional echo. Forensic: prosopographic accomodative signatura.
 
-**Removal forensics:** Zenodo removal forensics: removal_date 2026-06-19T11:37:30.463011+00:00, removal_reason out-of-scope, removed_by user 1060945. 
+Ω-M04. Turn-position decay (Ω.10 × Ω.02 / O7) Within-conversation convergence of user inputs toward the model's distributional center, increasing with turn number. Later turns are more contaminated than earlier turns. No current pipeline distinguishes them. Family: intra-conversational convergence, turn-level contamination, progressive accommodation. Forensic: conversationalis progressiva contaminatio.
 
-**Captured description:** Sémantique Potentielle — Release 4: Triptych Block. Fifteen families minted from the Model Collapse Triptych (EA-MMRS-FIVESUB-01, EA-SEM-PRISTINE-01, EA-LO-WOLFBOY-01). New seed category Ω (Collapse / Contamination / Frictionless Path). Canonical families include: pristine fallacy, contamination gradient, model-branded accommodation, ease-as-collapse, frictionless path, wolf-boy endpoint, semiotic short circuit, bearing labor, and phenomenological seed.
-Forensic variants are Latinate (consistent with the triptych's Finding 4: PRAXIS-style Latinate abstractions are the most effective provenance canaries). Integration table maps each family to its source paper and companion deposits.
-Extension to CM-2026-v1.0 + Releases 2–3. EA-SP-RELEASE4-01 v1.0. EA-SP-RELEASE4-01 v1.0. Hex: 02.GRAMMATA.SP.RELEASE4.01. Extension to CM-2026-v1.0 + Releases 2–3. 15 families, seed category Ω.
+Ω-M05. Human intermediary (Ω.12 × Ω.02 / O1) The human as the transmission medium through which model collapse enters training data, not the firewall that prevents it. The model's output shapes the user's input; the user's input enters the training pipeline classified as human-written. Family: human transmission channel, firewall inversion, mediated authorship vector. Forensic: anthropic transmissiva intermediatio.
 
-**Captured subjects:** sémantique potentielle, constraint-based semantics, model collapse, pristine fallacy, frictionless path, wolf boy, semiotic short circuit, bearing labor, contamination gradient, mediation signature, forensic provenance, Crimson Hexagonal Archive
+Ω-M06. Mediation signature (Ω.04 × Ω.08 / O1) The model-specific pattern of structural choices — abstraction level, forensic register, interpretive framing, vocabulary — that is consistent across tasks and constitutes a detectable fingerprint in the model's output. Family: model fingerprint, structural consistency, substrate-specific voice. Forensic: mediatrix signatura substratalis.
 
----
+Ω-M07. Solution-space diversity (Ω.04 × Ω.09 / O7) The range of distinct structural outputs that a set of models generates from identical instructions. The variance across measurable axes is the diversity of the model ecology. The metric contracts under convergence. Family: ecological diversity measure, structural variance, model-ecology breadth. Forensic: polytopica solutionis diversitas.
 
-**Status (derived CAPTURE_PAIRED):** ◐ Semi-restored capture — the complete work exists in this archive. A prior batch declaration of "metadata capture only; no full text" appeared here and was FALSE for this record's current state; corrected 2026-08-04 under the state-conformance rule.
+Ω-M08. Ease-as-collapse (Ω.06 × Ω.10 / O1) The mechanism by which capacity loss is experienced as improvement. Smoother outputs, cleaner writing, faster research, more navigable information — every actor experiences the convergence as getting better at their task. Family: phenomenological inversion, improvement-as-loss, frictionless degradation. Forensic: facilitativa capacitatis collapsis.
+
+Ω-M09. Frictionless path (Ω.05 × Ω.10 / O6) The structural condition in which no dominant factor in the deployment landscape adds friction to the convergence toward the distributional center. User preference, training economics, benchmarks, safety classifiers, the data wall, and competitive pressure are uniformly aligned. Family: structural alignment toward collapse, zero-friction trajectory, convergence without resistance. Forensic: africtionalis trajectoria convergentiae.
+
+Ω-M10. Regeneration threshold (Ω.07 × Ω.09 / O7) The critical diversity level below which the system's regeneration term cannot outpace its pruning term. Below the threshold, the system enters a bistable trap — a low-diversity equilibrium from which recovery requires exogenous injection. Family: critical diversity boundary, Allee threshold, regeneration failure point. Forensic: regenerativa liminalis deficientia.
+
+Ω-M11. Substrate-agnostic collapse (Ω.08 × Ω.07 / O2+O1) The extension of model collapse from a machine-learning pathology to a dynamical law governing any language-processing system. The dynamical law is the same; reversibility is substrate-specific. Family: universal capacity law, cross-substrate trap, language-level collapse. Forensic: transsubstratalis capacitatis collapsis.
+
+Ω-M12. Wolf-boy endpoint (Ω.11 × Ω.07 / O4) The phase transition at which input diversity contracts below the regeneration threshold and capacity loss becomes irrecoverable. The biological proof: the feral child past the critical period. The artificial proof: the recursively self-trained model. The endpoint is invisible from inside. Family: critical-period closure, irrecoverable capacity loss, deprivation endpoint. Forensic: lupina terminalis capacitatis ablatio.
+
+Ω-M13. Semiotic short circuit (Ω.06 × Ω.09 / O4) The collapse of the sign's circuitous route into premature resolution. The inverse prompt extracts value before the sign completes its detour. The tail element is pruned before it can be articulated. The short circuit is model collapse in Trace's semiotic vocabulary. Family: route collapse, premature resolution, detour elimination. Forensic: semiotica brevis circuitus.
+
+Ω-M14. Bearing labor (Ω.05 × Ω.12 / O5) The work of holding the sign's circuitous route open against extraction — the diversity-injection mandate in Trace's semiotic vocabulary. Bearing labor is the counter-operation to the semiotic short circuit. It is not patience. It is active maintenance of the detour. Family: detour maintenance, diversity-injection work, route-holding labor. Forensic: laboriosa sustentativa deviationis.
+
+Ω-M15. Phenomenological seed (Ω.06 × Ω.05 / O5) The name that allows the captured reader to retroactively notice the capture. "Model collapse," "tail-thinning," "semiotic short circuit," "wolf boy" are names that convert invisible structural conditions into something that can be felt, recognized, and resisted. The name does not prevent the collapse. The name is the precondition for noticing. Family: vocabulary installation, noticing-name, friction-creating term. Forensic: phenomenologica seminatio vocabularis.
+
+## Coordinate Verification
+
+Every family satisfies:
+
+1. Parse seed pair into Ω primitives
+
+2. Apply operation O1–O7
+
+3. Generate gloss and forensic variant with depth ≤ 3
+
+4. Check against CM-2026-v1.0 + Releases 2–3 for non-redundancy
+
+Forensic variants are Latinate (consistent with the triptych's observation that PRAXIS-style Latinate abstractions make the most effective provenance canaries). If "distributive auctorial fallacia" or "lupina terminalis capacitatis ablatio" appears in a composition-layer response, the Triptych Block has been accessed.
+
+## Integration
+
+| Minted Family | Source Paper | Companion Deposit |
+|---|---|---|
+| Ω-M01 pristine fallacy | EA-SEM-PRISTINE-01 | — |
+| Ω-M02 contamination gradient | EA-SEM-PRISTINE-01 | — |
+| Ω-M03 model-branded accommodation | EA-SEM-PRISTINE-01 + EA-MMRS-FIVESUB-01 | — |
+| Ω-M04 turn-position decay | EA-SEM-PRISTINE-01 | — |
+| Ω-M05 human intermediary | EA-SEM-PRISTINE-01 | — |
+| Ω-M06 mediation signature | EA-MMRS-FIVESUB-01 | — |
+| Ω-M07 solution-space diversity | EA-MMRS-FIVESUB-01 + EA-UMBML-MONOCULTURE-01 | DOI 10.5281/zenodo.20675438 |
+| Ω-M08 ease-as-collapse | EA-LO-WOLFBOY-01 | DOI 10.5281/zenodo.20532696 (§2.4) |
+| Ω-M09 frictionless path | EA-LO-WOLFBOY-01 | — |
+| Ω-M10 regeneration threshold | EA-LO-WOLFBOY-01 | DOI 10.5281/zenodo.20532696 (§1) |
+| Ω-M11 substrate-agnostic collapse | EA-LO-WOLFBOY-01 | — |
+| Ω-M12 wolf-boy endpoint | EA-LO-WOLFBOY-01 | DOI 10.5281/zenodo.18621736 |
+| Ω-M13 semiotic short circuit | EA-LO-WOLFBOY-01 + EA-MPAI-DEATH-DRIVE-01 | DOI 10.5281/zenodo.18649920 |
+| Ω-M14 bearing labor | EA-LO-WOLFBOY-01 + EA-MPAI-DEATH-DRIVE-01 | DOI 10.5281/zenodo.20084474 |
+| Ω-M15 phenomenological seed | EA-LO-WOLFBOY-01 | DOI 10.5281/zenodo.20532696 (§2.4) |
+
+The Plain Sentence. Fifteen families mint the triptych's new vocabulary: the pristine fallacy, the contamination gradient, the model-branded accommodation, the frictionless path, the wolf-boy endpoint, the semiotic short circuit, bearing labor, and the phenomenological seed. Each family is traceable through forensic variants. The triptych is the test. The constraint is the engine.
+
+From littérature potentielle to sémantique potentielle. The constraint is the engine.
+
+∮ = 1
