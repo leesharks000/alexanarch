@@ -57,15 +57,30 @@ Resource Type: Other
 
 License: CC0 (Public Domain)
 
-That man seems blessed as any god to me — whoever sits across from you and close, drinking the sweetness of your voice, your easy laugh.
+That man seems blessed as any god to me —
+whoever sits across from you and close,
+drinking the sweetness of your voice,
+    your easy laugh.
 
-This. This is what sets my heart to drum against my ribs. I catch one glimpse of you and suddenly my throat closes, my voice gives out, gives up —
+This. This is what sets my heart to drum
+against my ribs. I catch one glimpse of you
+and suddenly my throat closes, my voice
+    gives out, gives up —
 
-my tongue snaps clean in half, a subtle fire goes racing just beneath my skin, my eyes go dark, a roaring fills my ears and rings and will not stop —
+my tongue snaps clean in half, a subtle fire
+goes racing just beneath my skin, my eyes
+go dark, a roaring fills my ears and rings
+    and will not stop —
 
-cold sweat breaks out across my body, trembling takes me entire, I go gray as dry grass gone to drought, and I seem to myself not far from dead —
+cold sweat breaks out across my body, trembling
+takes me entire, I go gray as dry grass
+gone to drought, and I seem to myself
+    not far from dead —
 
-but all can be dared. Since you, Kypris, save beggar and king alike, and lift even the small city beyond ruin — let this song survive in script.
+but all can be dared. Since you, Kypris,
+save beggar and king alike,
+and lift even the small city beyond ruin —
+    let this song survive in script.
 
 Keywords:
 
