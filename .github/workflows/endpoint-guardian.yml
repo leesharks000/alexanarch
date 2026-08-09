@@ -26,7 +26,10 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: '17 */6 * * *'   # every six hours: a platform can break this without a commit
+    - cron: '17 5 * * *'   # daily. Every six hours was chosen because a platform can
+    # break an endpoint without a commit, which is still true — but this also runs
+    # on every push, so live checking already happens on each change. The cron is
+    # the floor for quiet days, and daily is a sufficient floor.
   workflow_dispatch:
 
 permissions:

@@ -1,7 +1,9 @@
 name: GoatCounter snapshot
 on:
   schedule:
-    - cron: '0 */6 * * *'   # every 6 hours
+    - cron: '0 5 */2 * *'   # every other day, 05:00 UTC — this workflow commits,
+    # and a commit is a deploy. Four analytics snapshots a day cost four builds;
+    # GoatCounter retains the underlying data regardless of when it is mirrored.
   workflow_dispatch: {}     # manual runs from Actions tab
 permissions:
   contents: write

@@ -1,10 +1,14 @@
 name: Deposit fan-out
+# DEPLOY BUDGET (2026-08-09). This workflow COMMITS, and it fired on every push
+# touching data/registry.json — so a single registry edit produced two deploys:
+# the push itself, then fanout's commit. On 2026-08-09 that ran twelve times.
+# The push trigger is removed and the schedule moved to every other day. Fan-out
+# is a propagation job with a high-water mark in data/fanout-state.json; it loses
+# nothing by running less often, it only propagates later. Use workflow_dispatch
+# when a deposit needs to reach its surfaces immediately.
 on:
-  push:
-    branches: [main]
-    paths: ["data/registry.json"]
   schedule:
-    - cron: "23 3 * * *"
+    - cron: "23 3 */2 * *"   # every other day, 03:23 UTC
   workflow_dispatch: {}
 permissions:
   contents: write
