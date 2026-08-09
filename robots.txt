@@ -1,6 +1,10 @@
 User-agent: *
 Allow: /
 
+# Working surface, not part of the published record.
+# Image classification triage — 1,970 blog images awaiting review by hand.
+Disallow: /triage/
+
 # AI agents: read AI-INSTRUCTIONS.md for deposit process and architecture
 # Agent guide: /llms.txt
 # Machine-readable deposit schema: /api/deposit-schema.json
