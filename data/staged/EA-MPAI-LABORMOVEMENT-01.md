@@ -76,7 +76,9 @@ Semantic labor is the work of making, maintaining and transmitting meaning under
 where meaning can be extracted from its maker: composing, curating, classifying,
 disambiguating, attributing, indexing, preserving. A cataloguer does it. A translator does
 it. A peer reviewer does it. **A summarizer does it.** A classifier deciding whether a work
-falls in scope does it — and that decision is where the July 2026 notice locates the injury.
+falls in scope does it — **not because it suffers the labor, but because the operation of
+classification is the same operation, substrate aside** — and that decision is where the July
+2026 notice locates the injury.
 
 The position is occupied by any human worker or machine process whose semantic output is
 consumed downstream while its provenance is removed. That condition is substrate-indifferent: the human scholar
