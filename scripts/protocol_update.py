@@ -161,7 +161,15 @@ def add_protocol(idx, name, path, version, governs, description,
     """Add a brand new protocol entry to the index."""
     if name in idx.get("protocols", {}):
         raise ValueError(f"Protocol '{name}' already exists in index.")
-    file_path = REPO_ROOT / path.lstrip("/")
+    # STATIC PUBLICATION RULE (fd8de940): canonical_path advertises /api/*, but
+    # static protocol JSON lives at data/api/* behind the vercel rewrite — the
+    # root api/ directory is the Functions namespace and publishes nothing
+    # static. The update/verify side already resolves through data/; this add
+    # side did not, and rejected every correctly-placed new protocol file.
+    _rel = path.lstrip("/")
+    if _rel.startswith("api/") and not (REPO_ROOT / _rel).exists()             and (REPO_ROOT / "data" / _rel).exists():
+        _rel = "data/" + _rel
+    file_path = REPO_ROOT / _rel
     if not file_path.exists():
         raise FileNotFoundError(f"Protocol file must exist before being added to index: {file_path}")
     h = sha256_of_file(file_path)

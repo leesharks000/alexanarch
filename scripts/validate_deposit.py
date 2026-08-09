@@ -243,6 +243,53 @@ def validate_entry_required_fields(entry, enforce_all=False):
     if isinstance(d, str) and d.strip() and not re.match(r"^\d{4}-\d{2}-\d{2}$", d.strip()):
         failures.append(("REQ-006", f"date must be ISO 8601 YYYY-MM-DD; got {d!r}"))
 
+    # TEXT-001 / IMG-001 (2026-08-09, mint-forward from #1445; #1443/#1444 are
+    # the precedent defects, sealed and grandfathered like the WIKI-001 cohort
+    # above). TEXT-001: canonical bodies FLOW — a hard-wrapped body renders as
+    # fragment-paragraphs and its wraps are frozen into the identity-bearing
+    # bytes forever; reject BEFORE sealing. Detector mirrors wire_deposit W14:
+    # mid-length prose lines without terminal punctuation whose next line
+    # continues lowercase. IMG-001: every body image reference must resolve to
+    # a staged file — an image the record promises and does not hold is a
+    # broken deposit at birth.
+    try:
+        _dn = int(entry.get("deposit_number") or 0)
+    except Exception:
+        _dn = 0
+    if _dn >= 1445:
+        from pathlib import Path as _P
+        _root = _P(__file__).resolve().parent.parent
+        _tp = str(entry.get("full_text_path") or "").lstrip("/")
+        _body = ""
+        if _tp and (_root / _tp).exists():
+            _raw = (_root / _tp).read_text(encoding="utf-8")
+            _seg = _raw.split("\n---\n")
+            _body = _seg[-1] if len(_seg) > 1 else _raw
+        if _body:
+            _lines = _body.split("\n")
+            _pi = [i for i, l in enumerate(_lines)
+                   if l.strip() and l[:1] not in (" ", "\t")
+                   and not l.lstrip().startswith(("#", "|", "-", ">", "`", "!", "<"))]
+            def _nx(i):
+                for j in range(i + 1, len(_lines)):
+                    if _lines[j].strip():
+                        return _lines[j].lstrip()
+                return ""
+            _wr = [i for i in _pi
+                   if 55 <= len(_lines[i]) <= 95
+                   and not _lines[i].rstrip().rstrip("*_").endswith((".", ":", ";", "!", "?"))
+                   and _nx(i)[:1].islower()]
+            if len(_pi) >= 8 and (len(_wr) / len(_pi)) > 0.25:
+                failures.append(("TEXT-001",
+                    f"body appears hard-wrapped ({len(_wr)}/{len(_pi)} prose lines "
+                    "break mid-sentence); canonical bodies flow — wrapping is "
+                    "display's job, and sealed bytes cannot be reflowed later"))
+            import re as _re
+            for _ref in _re.findall(r"!\[[^\]]*\]\((/(?:data/attachments|files)/[^\s\)]+)\)", _body):
+                if not (_root / _ref.lstrip("/")).exists():
+                    failures.append(("IMG-001",
+                        f"body image reference does not resolve on disk: {_ref}"))
+
     # BODY-001: canonical bytes must not be a template stub.
     bs = entry.get("body_status") or {}
     wc = bs.get("word_count") if isinstance(bs, dict) else None
