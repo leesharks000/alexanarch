@@ -206,6 +206,36 @@ def main():
               f"{len(_prov)} carry capture provenance prose where the work should be described "
               f"(reported, not blocking)")
 
+    # RESTORATION IS OVERWRITABLE (2026-08-08). Bodies recovered by hand can be
+    # destroyed by a later bulk run, and the archive would not notice: the file is
+    # simply different afterwards. Two scripts write deposit bodies in bulk and each
+    # selects its own targets, so a record is safe only while it stays outside those
+    # selections. This check enforces that from the outside.
+    #
+    #   restore_in_place.py  targets canonical_text_status == 'metadata_only'
+    #   propagate_record_state.py  tombstones lifecycle_state == 'withdrawn_external'
+    #
+    # A record holding recovered full text must be in neither set. If one appears
+    # here, a repair set the body and left a status field behind, and the next bulk
+    # run will overwrite the work.
+    import json as _j3
+    _r3 = _j3.loads((ROOT / 'data/registry.json').read_text())
+    _exposed = []
+    for _d in _r3['deposits']:
+        _bs = _d.get('body_status') or {}
+        _recovered = bool(_bs.get('restored_from_authorial_surface')
+                          or _bs.get('structure_reflow')
+                          or str(_bs.get('recovery_status', '')).startswith('COMPLETE_TEXT'))
+        if not _recovered:
+            continue
+        if _d.get('canonical_text_status') == 'metadata_only':
+            _exposed.append(f"#{_d['deposit_number']} (restore_in_place would refetch)")
+        if _d.get('lifecycle_state') == 'withdrawn_external':
+            _exposed.append(f"#{_d['deposit_number']} (propagate_record_state would tombstone)")
+    if _exposed:
+        fails.append(f"{len(_exposed)} recovered record(s) are still selectable by a bulk body "
+                     f"writer and would be overwritten: {', '.join(_exposed[:6])}")
+
     if fails:
         print("\n" + "=" * 74, file=sys.stderr)
         print("STATIC PUBLICATION IS BROKEN — the fd8de940 class of failure:", file=sys.stderr)

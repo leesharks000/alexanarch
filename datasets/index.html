@@ -78,6 +78,35 @@ h2:first-of-type{margin-top:0}
 <p class="section-intro">Canonical sources of truth. Editing these is the only way to change what the site shows.</p>
 
 <div class="ds">
+<div class="ds-head"><span class="ds-name">data/blog-index.json</span>
+<span class="ds-meta">10.3 MB &middot; <strong>2,809</strong> posts</span></div>
+<div class="ds-desc">Complete index of the authorial publication surface,
+mindcontrolpoems.blogspot.com, built from the Blogger feed: every post with its title,
+URL, publication date, length and first 4,000 characters of text. Built 2026-08-08.
+<strong>It should have existed before the first restoration pass.</strong> Every pass
+before it derived a candidate URL from a deposit title and fetched that one URL; when the
+guess was wrong the work was recorded unrecoverable, and when the guess was right the gate
+could still reject it. Two measured cases: a record whose truth title carried a DOI its
+source predates by five weeks, scored 0.43 against a 0.75 gate; and a record whose correct
+URL sat unread in the queue's own field while the matcher scored six others. The index
+takes four minutes to build.</div>
+<div class="ds-actions"><a href="/data/blog-index.json">Raw JSON</a></div>
+</div>
+<div class="ds">
+<div class="ds-head"><span class="ds-name">data/blog-deposit-map.json</span>
+<span class="ds-meta">0.8 MB &middot; <strong>994</strong> provisional pairings</span></div>
+<div class="ds-desc">Blog post &harr; deposit mapping for posts published 2026-01-01 or
+later, the Zenodo-deposit era. 1,075 posts in scope; 994
+provisionally mapped; 81 with no deposit found.
+<strong>Every entry carries status: provisional and read: false</strong>, plus a field naming
+what would settle it &mdash; a shared DOI, document ID or hex coordinate in both bodies,
+because a title alone does not. The generator validates itself against eight hand-checked
+pairs and refuses to build below 8/8. Confidence bands: 971
+strong, 12 good, 11 weak &mdash;
+read the weak ones first.</div>
+<div class="ds-actions"><a href="/data/blog-deposit-map.json">Raw JSON</a></div>
+</div>
+<div class="ds">
   <div class="ds-head">
     <span class="ds-name">data/registry.json</span>
     <span class="ds-meta">5.97 MB &middot; <strong id="ct-deposits" data-count="registry.json:total_deposits">1,433</strong> deposits</span>
