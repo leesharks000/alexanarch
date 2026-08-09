@@ -71,6 +71,15 @@ def audit_file(p, D):
         is_chip = 'axn-chip' in cls
         rec = REC.search(href)
 
+        # DOORS ARE NOT CHIPS. The MSP contract has .doors — a flex row of verb-led
+        # navigation whose links carry .w-chip — and it is a different class from
+        # .axn-chip with a different job: a door says what you can DO, a chip says
+        # what a thing IS. "Read the specification" inside <div class="doors"> is a
+        # door correctly formed, and demanding an identifier there would replace a
+        # verb with a hex string. Recognised by the w-chip class rather than by
+        # guessing from the anchor text.
+        if 'w-chip' in cls:
+            continue
         if rec and not is_chip:
             n = int(rec.group(1))
             d = D.get(n)
