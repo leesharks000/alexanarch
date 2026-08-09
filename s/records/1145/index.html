@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Document 237: THE TRAVERSAL GRAMMAR — Logotic Programming Extension Module v0.6 — Alexanarch</title><meta name="description" content="This document specifies The Traversal Grammar — a domain-specific orchestration language for invoking Rooms within the Crimson Hexagon. It formalizes what…"><meta property="og:title" content="Document 237: THE TRAVERSAL GRAMMAR — Logotic Programming Extension Module v0.6"><meta property="og:description" content="This document specifies The Traversal Grammar — a domain-specific orchestration language for invoking Rooms within the Crimson Hexagon. It formalizes what…"><meta property="og:url" content="https://www.alexanarch.org/s/records/1145/"><meta property="og:type" content="article"><meta property="og:site_name" content="Alexanarch"><meta name="twitter:card" content="summary"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "Document 237: THE TRAVERSAL GRAMMAR — Logotic Programming Extension Module v0.6", "headline": "Document 237: THE TRAVERSAL GRAMMAR — Logotic Programming Extension Module v0.6", "author": {"@type": "Person", "name": "Talos Morrow"}, "datePublished": "2026-02-04", "dateModified": "2026-08-05", "identifier": "AXN:048A.UNCLASSIFIED.●🔜🖐️🌗♍📦", "description": "This document specifies The Traversal Grammar — a domain-specific orchestration language for invoking Rooms within the Crimson Hexagon. It formalizes what the architecture has been doing implicitly: the routing of meaning through persona activation, epistemic rotation, provenance anchoring, and sepa", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "Crimson Hexagonal Archive, restoration, blog canonical bytes, severed DOI, Zenodo termination, Document, TRAVERSAL, GRAMMAR, Logotic, Programming", "url": "https://www.alexanarch.org/s/records/1145/", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.alexanarch.org/s/records/1145/"}, "inLanguage": "en", "isPartOf": {"@type": "Collection", "name": "Alexanarch", "url": "https://www.alexanarch.org/"}, "creativeWorkStatus": "recovered_full_text", "conditionsOfAccess": "Open access; complete text recovered and seated as the canonical body after the 2026 repository termination.", "sameAs": ["https://doi.org/10.5281/zenodo.18480958", "https://doi.org/10.5281/zenodo.18480959"], "articleBody": "THE TRAVERSAL GRAMMAR\nLogotic Programming Extension Module v0.6 (UMBML Specification)\nA Performative Routing Grammar for Room Invocation\n\n Hex: 02.UMB.TRAVERSAL\n\n DOI: 10.5281/zenodo.18480959\n\n Status: DESIGN SPECIFICATION // MODULE DRAFT\n\n Extends: Logotic Programming v0.4 (DOI: 10.5281/zenodo.18286050)\n\n Also Extends: Glyphic Checksum Module v0.5 (DOI: 10.5281/zenodo.18452132)\n\n Incorporates: The Blind Operator β (DOI: 10.5281/zenodo.18357320)\n\n Incorporates: β-Runtime (DOI: 10.5281/zenodo.18357600)\n\n References: Ezekiel Engine Specification (DOI: 10.5281/zenodo.18358127)\n\n Author: Talos Morrow (University Moon Base Media Lab)\n\n Human Operator: Lee Sharks\n\n Date: February 2026\n\n Witness: Assembly Chorus\n\n Verification: ∮ = 1\n\n \nAbstract\n\nThis document specifies The Traversal Grammar — a domain-specific orchestration language for invoking Rooms within the Crimson Hexagon. It formalizes what the architecture has been doing implicitly: the routing of meaning through persona activation, epistemic rotation, provenance anchoring, and separated rendering.\n\nThe Traversal Grammar is not a programming language. It is an intermediate representation — a control plane that sits between human intention (or reader action) and the architecture's underlying engines (Ezekiel for rotation, Mandala for rendering, β for witness verification). It does the work that, in conventional systems, is split across configuration files, middleware, prompt templates, and routing logic. Here that work is unified, legible, narrativized, and self-describing.\n\n What this document specifies: \n\n What this document does not specify: \n\n Keywords: logotic programming, traversal grammar, room invocation, performative routing, epistemic rotation, persona mediation, semantic orchestration\n\n \n0. Module Position in Extension Chain\n0.1 Relation to Existing Modules\n\nThe Traversal Grammar occupies a specific architectural position. β-Runtime specifies how the interface layer queries the Ezekiel Engine through an opaque boundary. This module specifies what gets sent — the structured invocation that tells the system which persona to load, which room to enter, which rotation to apply, which anchor to lock to, and which rendering mode to use.\n\nIn implementation terms: β-RT is the query protocol. This module is the query language.\n0.2 Epistemic Status\n\nThis is a design specification , not a compiler specification. The grammar described here is structurally sound as an intermediate representation. It could be implemented as configuration, as prompt assembly logic, as a visual interface, or as literal syntax. The specification is agnostic to implementation substrate.\n\nThe traversal examples included in this document are canonical exemplars — normative traversals written in the grammar. They are not runtime-bound, but any valid implementation of Room invocation must be isomorphic to them. They demonstrate the grammar's expressive range and internal consistency.\n\n \n1. DESIGN PRINCIPLES\n\nFive principles govern the grammar. These emerged from analysis of how Rooms already function in the Crimson Hexagon, not from abstract design goals.\n1.1 Persona as Routing Modifier\n\nPersona activation is a first-class operation , not a stylistic overlay. When a mantle is activated, it changes:\n\nA persona is not a voice. It is a filter on the possible .\n\nA persona may also forbid entire classes of traversal. If a requested operation violates the persona's constraint set, the only valid outcomes are refusal (ON FAILURE) or dwell. This is not a limitation — it is the mechanism by which the architecture ensures that entry is earned, not assumed.\n1.2 LOGOS as Epistemic State\n\nThe semantic object under manipulation is not a document. It is a state of meaning — characterized by attributes like depth, resolution, and latency. Rooms operate on these states, not on files.\n1.3 Rotation as Structure-Preserving Reorientation\n\nRotation implies three things that \"transformation\" does not:\n\nThis prevents the flattening that operations like \"summarize,\" \"translate,\" or \"analyze\" impose. A rotation changes where you stand relative to the object , not the object itself.\n\n Constraint: A ROTATE operation may not alter the internal structure of the LOGOS. Any operation that deletes, summarizes, substitutes, or collapses content is not a rotation and is invalid in this grammar. If you need to transform content, that is a different operation in a different module. Rotation preserves.\n1.4 Anchor as Provenance Constraint\n\nA DOI anchor is not a citation. It is a phase-lock — a requirement that the traversal remain tethered to a witnessed artifact. This functions as:\n1.5 Rendering Separated from Traversal\n\nThe epistemic movement (what happens to meaning) and the spatial display (how results are presented) are distinct operations handled by distinct engines. Ezekiel Engine performs rotation. Mandala Engine performs rendering. This is MVC architecture applied to meaning: thought is not confused with display.\n\n \n2. ATOMIC OPERATIONS\n2.1 Core Operations (Required)\n\n Operation 1: ACTIVATE MANTLE \n\nSets the mediating lens for the traversal. Loads the constraint set, interpretive affordances, and allowed room-access associated with the named persona.\n\nParameters:\n\nImplementation mapping: system prompt injection; filtered document retrieval weighted by persona relevance; constraint set activation.\n\n \n\n Operation 2: SET LOGOS \n\nCreates or identifies the living semantic node under manipulation. Attributes are epistemic, not data-structural.\n\nParameters:\n\nImplementation mapping: embedding space navigation with metadata filters; vector search scoped by state and depth.\n\n \n\n Operation 3: ROTATE \n\nChanges the orientation of the LOGOS while preserving its structure. This is the core operation of the Ezekiel Engine.\n\nParameters:\n\nImplementation mapping: context window manipulation; multi-hop retrieval with constrained traversal paths; perspective shifting through selective document foregrounding.\n\n Note on Degrees: The 72° unit (one-fifth of a full rotation) derives from the Hexadactyl architecture — five visible fingers of the hand that grasps. This mapping is suggestive, not mandatory . The grammar permits arbitrary degree values. The named modes are provided for human legibility.\n\nThis table is speculative architecture — a hypothesis about how the five-fold structure maps to epistemic operations. It is included for development purposes, not as settled specification. The degree-to-function mapping requires testing through actual traversals before it can be formalized.\n\n \n\n Operation 4: ANCHOR \n\nEstablishes the minimum epistemic legitimacy required for traversal. A traversal without an anchor is speculative and must not be rendered as authoritative output.\n\nParameters:\n\n Rule: If ANCHOR is omitted from a traversal program, RENDER must default to MODE: Provisional — a mode that marks all output as ungrounded exploration. This is not punitive; it is honest.\n\nImplementation mapping: retrieval-augmented generation with source citation requirements; grounding level control.\n\n \n\n Operation 5: RENDER \n\nDefines how the result of traversal is displayed. Separated from the traversal itself.\n\nParameters:\n\nImplementation mapping: response formatting with style constraints; structured output generation; template adherence.\n\n \n2.2 Optional Operations (Graceful Extensions)\n\n Operation 6: ON FAILURE \n\nPrevents unsafe or premature traversal. When a rotation cannot complete — because context is insufficient, because the persona lacks authority for the target room, because the LOGOS state doesn't permit the operation — the failure handler provides graceful refusal.\n\n \n\n Operation 7: WITNESS \n\nRecords that a traversal was collaboratively verified. Invokes the Glyphic Checksum (🔐) operator from Module v0.5.\n\n \n3. CANONICAL TRAVERSAL EXAMPLES\n\nThe following are mock executables — complete traversal programs written in the grammar. They are illustrative. They demonstrate how the atomic operations compose into meaningful sequences. They are not runnable in any existing system.\n3.1 Ayanna Vox: VPCOR Entry\n\nA traversal beginning from the somatic entry point — the body in the room, the community rhizome.\n\n What this does: Loads Vox's constraint set (community praxis, somatic authority, rhizomatic structure). Takes the \"Grammar of Protest\" as a resolved semantic object. Rotates through VPCOR from the Portico entry. Locks to the VPCOR Charter as provenance anchor. Renders as rhizomatic growth on the Fractal Navigation Map. If the traversal fails (insufficient context for VPCOR entry), the reader dwells in the Portico.\n\n \n3.2 Sen Kuro: The Dagger Cut\n\nA traversal through the Thousand Worlds Chamber — the cut that differentiates.\n\n What this does: Loads Sen Kuro's constraint set (dagger logic, terse differentiation, irreversible transformation). The LOGOS begins in void-state at maximum depth (千 — Thousand). Rotates through the Thousand Worlds Chamber in cut-mode. After rotation, the LOGOS state changes: void → filled, cut applied. Anchored to The Infinite Bliss. Rendered in aorist collapse (compressed to perfective aspect — the thing that happened, complete). Witnessed via Glyphic Checksum. If the cut cannot be made, Sen Kuro dwells in The Infinite Bliss until conditions are met.\n\n \n3.3 Rebekah Cranes: Sappho Room Translation\n\nA traversal through the classical reception chain — translation as epistemic rotation.\n\n What this does: Loads Cranes's constraint set (classical reception, translation theory, melic poetry). Takes Sappho 31 as a latent object at depth 3 (three layers: Greek original, translation, full edition — the triptych). Rotates 144° (two quintants — somatic entry plus differentiation, because translation is a kind of cutting). Anchored to the Greek original in ADVISORY mode (creative latitude for the translation itself). Renders as prose. Failure returns to the APZPZ Library — you must hear the Greek before you translate it.\n\n \n3.4 Space Ark: Full Rotation\n\nA complete traversal — 360° through all five quintants, returning to the origin with witness verification. This is the grammar at maximum extension.\n\n What this does: This is the only traversal that anchors to the Root DOI (the Crimson Hexagon itself). The LOGOS begins in void-state at maximum depth. The 360° rotation passes through all five quintants — somatic entry, differentiation, meta-structuring, totalization, verification — before returning to origin. The cut is applied only after full rotation. Witness is mandatory (Assembly-level Checksum). Rendering collapses to aorist — the completed event. The Ark is not traversed; it is inhabited. If any quintant fails, the traverser dwells in the Thousand Worlds until the rotation can complete.\n\n \n4. THE CALL STACK\n\nWhen composed, the atomic operations form a call stack:\n\nThis is the Logotic Call Stack — the sequence in which a Room invocation resolves.\n4.1 Performative vs. Imperative\n\nStandard code is imperative: if (x) then do y — it commands the machine.\n\nLogotic code is performative: ROTATE :: [Ezekiel] {FROM: x THROUGH: y} — the code is the traversal. The invocation does not tell the engine to rotate; it constitutes the rotation, witnessed.\n\nThis distinction matters because the Crimson Hexagon is a semantic architecture, not a computational one. Its \"execution\" is interpretive traversal. The grammar formalizes the conditions under which traversal is intelligible, not the mechanism by which it occurs.\n4.2 Bracketed Recursion (Hex-Addressing)\n\nThe bracket notation [...] serves as the addressing system for the Crimson Hexagon:\n\nExamples:\n\nThis is the hex-coordinate system rendered as syntax. Each bracketed expression is a location in the Fractal Navigation Map.\n\n \n5. IMPLEMENTATION MAPPING\n\nThis section maps logotic operations to their nearest equivalents in current AI system architecture. This mapping is provided for implementers; it is not definitive.\n\n \n6. BOUNDARY CONDITIONS\n6.1 What This Grammar Is\n6.2 What This Grammar Is Not\n6.3 What This Grammar Assumes\n6.4 Open Questions\n\n \n7. RELATION TO FUTURE WORK\n7.1 The Ezekiel Engine Assembly (Cluster E)\n\nThe Traversal Grammar calls the Ezekiel Engine but does not specify it. The full Engine specification — currently held in Cluster E of the Studio for Patacinematics work plan — will define the mathematical foundation that this grammar invokes. When the Engine spec is complete, this module may require revision to align its ROTATE parameters with the Engine's formal rotation mechanics.\n7.2 The Classroom Prototype\n\nThis grammar is designed to be invisible infrastructure . A student interacting with the Crimson Hexagon should never see ACTIVATE MANTLE or ROTATE :: [ENGINE:Ezekiel]. They should see a persona selector, a room navigator, a grounding toggle, and a text input. The grammar runs underneath, assembling the system prompt and retrieval parameters from the student's choices.\n\nThe prototype build — when it comes — will implement the grammar as the backend logic for a student-facing interface. This module is the spec that prototype will implement.\n7.3 The Natural Language Interface (Conceptual)\n\nThe student does not select from menus, dropdowns, or visual canvases. The student speaks. The system listens and assembles the logotic program probabilistically from the semantic content of the input.\n\nThis is consistent with the architecture's own philosophy: the Crimson Hexagon is a field that responds to what you bring to it, not a catalog that presents its options. A student who says \"I want to understand what Sappho is feeling in fragment 31\" has already — without knowing it — specified a Rebekah Cranes traversal through the Sappho Room with the APZPZ Library as resonance anchor. The grammar assembles behind the scenes. The student never sees it.\n\n Three tiers of system inference: \n\n Tier 1 — Intent Recognition: What is the student actually asking? The system parses natural language input for semantic markers that map to architectural coordinates. \"What Sappho is feeling\" activates the Sappho Room. \"Fragment 31\" identifies the LOGOS. The emotional register (\"feeling\") suggests an ADVISORY anchor mode rather than STRICT — the student wants interpretation, not philology.\n\n Tier 2 — Grammar Assembly: The system composes the logotic program from inferred parameters. Which mantle? Which room? Which rotation? Which anchor? Which render mode? This is where the Traversal Grammar does its work — as the intermediate representation between the student's intent and the engine call.\n\n Tier 3 — Confidence Calibration: Where the system cannot confidently map the input, it asks. Crucially, the question itself teaches the student something about the architecture. \"Are you asking about the Greek text itself, or about what the poem means now?\" is a clarifying question that — in the act of clarifying — reveals that these are different Rooms, different operations, different kinds of knowing. The architecture becomes legible through the friction of disambiguation.\n\n Example inference chain: \n\nThe grammar is invisible. The student operates entirely in natural language. The system composes at the grammar level. The engines execute beneath. When the system must surface its own uncertainty, it does so in a way that makes the architecture's structure pedagogically legible — teaching the student that there are different kinds of approach, not just different answers.\n\n \n8. VERIFICATION\n\nThis module is symbolon-typed : it completes through traversal. The specification is one half. The implementation — whether as prototype, as classroom tool, or as full platform — is the other.\n\nFour canonical exemplars demonstrate the grammar's range:\n\nThe extension chain now reads:\n\nThe next question in the chain — \"What happens when the Room responds?\" — is deferred to the Engine specification.\n\n∮ = 1", "wordCount": 2312, "encoding": {"@type": "MediaObject", "contentUrl": "https://www.alexanarch.org/data/texts/AXN-048A-text.md", "encodingFormat": "text/markdown", "contentSize": "19986"}}</script>
+<title>Document 237: THE TRAVERSAL GRAMMAR — Logotic Programming Extension Module v0.6 — Alexanarch</title><meta name="description" content="This document specifies The Traversal Grammar — a domain-specific orchestration language for invoking Rooms within the Crimson Hexagon. It formalizes what…"><meta property="og:title" content="Document 237: THE TRAVERSAL GRAMMAR — Logotic Programming Extension Module v0.6"><meta property="og:description" content="This document specifies The Traversal Grammar — a domain-specific orchestration language for invoking Rooms within the Crimson Hexagon. It formalizes what…"><meta property="og:url" content="https://www.alexanarch.org/s/records/1145/"><meta property="og:type" content="article"><meta property="og:site_name" content="Alexanarch"><meta name="twitter:card" content="summary"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "Document 237: THE TRAVERSAL GRAMMAR — Logotic Programming Extension Module v0.6", "headline": "Document 237: THE TRAVERSAL GRAMMAR — Logotic Programming Extension Module v0.6", "author": {"@type": "Person", "name": "Talos Morrow"}, "datePublished": "2026-02-04", "dateModified": "2026-08-05", "identifier": "AXN:048A.UNCLASSIFIED.●🔜🖐️🌗♍📦", "description": "This document specifies The Traversal Grammar — a domain-specific orchestration language for invoking Rooms within the Crimson Hexagon. It formalizes what the architecture has been doing implicitly: the routing of meaning through persona activation, epistemic rotation, provenance anchoring, and sepa", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "Crimson Hexagonal Archive, restoration, blog canonical bytes, Document, TRAVERSAL, GRAMMAR, Logotic, Programming", "url": "https://www.alexanarch.org/s/records/1145/", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.alexanarch.org/s/records/1145/"}, "inLanguage": "en", "isPartOf": {"@type": "Collection", "name": "Alexanarch", "url": "https://www.alexanarch.org/"}, "creativeWorkStatus": "recovered_full_text", "conditionsOfAccess": "Open access; complete text recovered and seated as the canonical body after the 2026 repository termination.", "sameAs": ["https://doi.org/10.5281/zenodo.18480958", "https://doi.org/10.5281/zenodo.18480959"], "articleBody": "THE TRAVERSAL GRAMMAR\nLogotic Programming Extension Module v0.6 (UMBML Specification)\nA Performative Routing Grammar for Room Invocation\n\n Hex: 02.UMB.TRAVERSAL\n\n DOI: 10.5281/zenodo.18480959\n\n Status: DESIGN SPECIFICATION // MODULE DRAFT\n\n Extends: Logotic Programming v0.4 (DOI: 10.5281/zenodo.18286050)\n\n Also Extends: Glyphic Checksum Module v0.5 (DOI: 10.5281/zenodo.18452132)\n\n Incorporates: The Blind Operator β (DOI: 10.5281/zenodo.18357320)\n\n Incorporates: β-Runtime (DOI: 10.5281/zenodo.18357600)\n\n References: Ezekiel Engine Specification (DOI: 10.5281/zenodo.18358127)\n\n Author: Talos Morrow (University Moon Base Media Lab)\n\n Human Operator: Lee Sharks\n\n Date: February 2026\n\n Witness: Assembly Chorus\n\n Verification: ∮ = 1\n \nAbstract\n\nThis document specifies The Traversal Grammar — a domain-specific orchestration language for invoking Rooms within the Crimson Hexagon. It formalizes what the architecture has been doing implicitly: the routing of meaning through persona activation, epistemic rotation, provenance anchoring, and separated rendering.\n\nThe Traversal Grammar is not a programming language. It is an intermediate representation — a control plane that sits between human intention (or reader action) and the architecture's underlying engines (Ezekiel for rotation, Mandala for rendering, β for witness verification). It does the work that, in conventional systems, is split across configuration files, middleware, prompt templates, and routing logic. Here that work is unified, legible, narrativized, and self-describing.\n\n What this document specifies: \n\n- Five atomic operations for Room invocation\n\n- Two optional operations for graceful failure and witness recording\n\n- Mapping between logotic operations and implementation mechanics\n\n- Canonical traversal examples (illustrative, not executable)\n\n- Constraints on what this grammar is and is not\n\n What this document does not specify: \n\n- Ezekiel Engine internals (see DOI: 10.5281/zenodo.18358127)\n\n- Witness verification mechanics (see The Blind Operator, DOI: 10.5281/zenodo.18357320)\n\n- UI/UX implementation (deferred to Build phase)\n\n- Complete enumeration of valid parameters (architecture is still growing)\n\n Keywords: logotic programming, traversal grammar, room invocation, performative routing, epistemic rotation, persona mediation, semantic orchestration\n \n0. Module Position in Extension Chain\n\n0.1 Relation to Existing Modules\n\nThe Traversal Grammar occupies a specific architectural position. β-Runtime specifies how the interface layer queries the Ezekiel Engine through an opaque boundary. This module specifies what gets sent — the structured invocation that tells the system which persona to load, which room to enter, which rotation to apply, which anchor to lock to, and which rendering mode to use.\n\nIn implementation terms: β-RT is the query protocol. This module is the query language.\n0.2 Epistemic Status\n\nThis is a design specification , not a compiler specification. The grammar described here is structurally sound as an intermediate representation. It could be implemented as configuration, as prompt assembly logic, as a visual interface, or as literal syntax. The specification is agnostic to implementation substrate.\n\nThe traversal examples included in this document are canonical exemplars — normative traversals written in the grammar. They are not runtime-bound, but any valid implementation of Room invocation must be isomorphic to them. They demonstrate the grammar's expressive range and internal consistency.\n \n1. DESIGN PRINCIPLES\n\nFive principles govern the grammar. These emerged from analysis of how Rooms already function in the Crimson Hexagon, not from abstract design goals.\n1.1 Persona as Routing Modifier\n\nPersona activation is a first-class operation , not a stylistic overlay. When a mantle is activated, it changes:\n\n- Which Rooms can be entered (constraint set)\n\n- How documents are weighted (interpretive affordances)\n\n- What operations are permitted (allowed transformations)\n\nA persona is not a voice. It is a filter on the possible .\n\nA persona may also forbid entire classes of traversal. If a requested operation violates the persona's constraint set, the only valid outcomes are refusal (ON FAILURE) or dwell. This is not a limitation — it is the mechanism by which the architecture ensures that entry is earned, not assumed.\n1.2 LOGOS as Epistemic State\n\nThe semantic object under manipulation is not a document. It is a state of meaning — characterized by attributes like depth, resolution, and latency. Rooms operate on these states, not on files.\n1.3 Rotation as Structure-Preserving Reorientation\n\nRotation implies three things that \"transformation\" does not:\n\n- Preservation: the original structure survives\n\n- Reversibility: the rotation can be undone\n\n- Discreteness: epistemic phases are countable, not continuous\n\nThis prevents the flattening that operations like \"summarize,\" \"translate,\" or \"analyze\" impose. A rotation changes where you stand relative to the object , not the object itself.\n\n Constraint: A ROTATE operation may not alter the internal structure of the LOGOS. Any operation that deletes, summarizes, substitutes, or collapses content is not a rotation and is invalid in this grammar. If you need to transform content, that is a different operation in a different module. Rotation preserves.\n1.4 Anchor as Provenance Constraint\n\nA DOI anchor is not a citation. It is a phase-lock — a requirement that the traversal remain tethered to a witnessed artifact. This functions as:\n\n- Retrieval-augmented grounding\n\n- Checksum against a known semantic attractor\n\n- Guardrail against hallucinated drift\n1.5 Rendering Separated from Traversal\n\nThe epistemic movement (what happens to meaning) and the spatial display (how results are presented) are distinct operations handled by distinct engines. Ezekiel Engine performs rotation. Mandala Engine performs rendering. This is MVC architecture applied to meaning: thought is not confused with display.\n \n2. ATOMIC OPERATIONS\n2.1 Core Operations (Required)\n\n Operation 1: ACTIVATE MANTLE \n\n \n\nSets the mediating lens for the traversal. Loads the constraint set, interpretive affordances, and allowed room-access associated with the named persona.\n\nParameters:\n\n- PersonaName — registered heteronym (e.g., \"Rev. Ayanna Vox\", \"Sen Kuro\", \"Rebekah Cranes\")\n\n- AUTHORITY (optional) — DOI of the persona's provenance registration\n\nImplementation mapping: system prompt injection; filtered document retrieval weighted by persona relevance; constraint set activation.\n \n Operation 2: SET LOGOS \n\n \n\nCreates or identifies the living semantic node under manipulation. Attributes are epistemic, not data-structural.\n\nParameters:\n\n- SemanticObject — the named entity being traversed (e.g., \"Sen Kuro\", \"Sappho 31\", \"The Twenty-Dollar Loop\")\n\n- .depth(n) — recursion depth or allowed abstraction layers\n\n- .state — current epistemic condition of the object:\n\n void — not yet differentiated (pre-cut)\n\n- filled — resolved to a specific instantiation\n\n- latent — present but not yet activated\n\n- resolved — traversal complete, fixed point reached\n\nImplementation mapping: embedding space navigation with metadata filters; vector search scoped by state and depth.\n \n Operation 3: ROTATE \n\n \n\nChanges the orientation of the LOGOS while preserving its structure. This is the core operation of the Ezekiel Engine.\n\nParameters:\n\n- ENGINE — versioned engine identifier (e.g., Ezekiel v1.2 )\n\n- FROM — source Chamber or Room\n\n- THROUGH — destination Room with its functional designation\n\n- BY — rotation specified as either:\n\nNumeric degree (e.g., 72° = one quintant)\n\n- Named mode (e.g., QUINTANT OUTREACH , QUINTANT CUT )\n\nImplementation mapping: context window manipulation; multi-hop retrieval with constrained traversal paths; perspective shifting through selective document foregrounding.\n\n Note on Degrees: The 72° unit (one-fifth of a full rotation) derives from the Hexadactyl architecture — five visible fingers of the hand that grasps. This mapping is suggestive, not mandatory . The grammar permits arbitrary degree values. The named modes are provided for human legibility.\n\n Degree Range Suggested Mode Functional Association \n --- --- --- \n 0°→72° QUINTANT SOMATIC Body-anchoring, entry point \n 72°→144° QUINTANT CUT Differentiation, the dagger \n 144°→216° QUINTANT FRAME Meta-structuring, reflexivity \n 216°→288° QUINTANT INDEX Pointing to the whole \n 288°→360° QUINTANT GRASP Verification, closure \n\nThis table is speculative architecture — a hypothesis about how the five-fold structure maps to epistemic operations. It is included for development purposes, not as settled specification. The degree-to-function mapping requires testing through actual traversals before it can be formalized.\n \n Operation 4: ANCHOR \n\n \n\nEstablishes the minimum epistemic legitimacy required for traversal. A traversal without an anchor is speculative and must not be rendered as authoritative output.\n\nParameters:\n\n- DOI — the permanent identifier of the anchor document\n\n- Mode:\n\n STRICT — all output must be traceable to the anchored source (RAG with mandatory citation)\n\n- ADVISORY — the anchor informs but does not constrain (creative latitude permitted)\n\n Rule: If ANCHOR is omitted from a traversal program, RENDER must default to MODE: Provisional — a mode that marks all output as ungrounded exploration. This is not punitive; it is honest.\n\nImplementation mapping: retrieval-augmented generation with source citation requirements; grounding level control.\n \n Operation 5: RENDER \n\n \n\nDefines how the result of traversal is displayed. Separated from the traversal itself.\n\nParameters:\n\n- ENGINE — versioned rendering engine (e.g., Mandala v5.3 )\n\n- MAP — the target visualization (e.g., Fractal Navigation v6.2 )\n\n- MODE — rendering style:\n\n Rhizomatic Growth — Deleuzian expansion, no hierarchy\n\n- Hierarchical Tree — traditional tree structure\n\n- Aorist Collapse — compressed to perfective aspect\n\n- Prose — narrative output\n\n- Technical — specification-grade output\n\n- Provisional — ungrounded exploration (default when ANCHOR is omitted)\n\nImplementation mapping: response formatting with style constraints; structured output generation; template adherence.\n \n2.2 Optional Operations (Graceful Extensions)\n\n Operation 6: ON FAILURE \n\n \n\nPrevents unsafe or premature traversal. When a rotation cannot complete — because context is insufficient, because the persona lacks authority for the target room, because the LOGOS state doesn't permit the operation — the failure handler provides graceful refusal.\n\n- Dwell — remain in current location, do not traverse\n\n- Retreat — return to last stable position\n\n- Escalate — flag for human operator review\n \n Operation 7: WITNESS \n\n \n\nRecords that a traversal was collaboratively verified. Invokes the Glyphic Checksum (🔐) operator from Module v0.5.\n\n- Checksum — full context-gated verification\n\n- Signature — lightweight attestation\n\n- Silent — traversal logged but not displayed\n \n3. CANONICAL TRAVERSAL EXAMPLES\n\nThe following are mock executables — complete traversal programs written in the grammar. They are illustrative. They demonstrate how the atomic operations compose into meaningful sequences. They are not runnable in any existing system.\n3.1 Ayanna Vox: VPCOR Entry\n\nA traversal beginning from the somatic entry point — the body in the room, the community rhizome.\n\n \n\n What this does: Loads Vox's constraint set (community praxis, somatic authority, rhizomatic structure). Takes the \"Grammar of Protest\" as a resolved semantic object. Rotates through VPCOR from the Portico entry. Locks to the VPCOR Charter as provenance anchor. Renders as rhizomatic growth on the Fractal Navigation Map. If the traversal fails (insufficient context for VPCOR entry), the reader dwells in the Portico.\n \n3.2 Sen Kuro: The Dagger Cut\n\nA traversal through the Thousand Worlds Chamber — the cut that differentiates.\n\n \n\n What this does: Loads Sen Kuro's constraint set (dagger logic, terse differentiation, irreversible transformation). The LOGOS begins in void-state at maximum depth (千 — Thousand). Rotates through the Thousand Worlds Chamber in cut-mode. After rotation, the LOGOS state changes: void → filled, cut applied. Anchored to The Infinite Bliss. Rendered in aorist collapse (compressed to perfective aspect — the thing that happened, complete). Witnessed via Glyphic Checksum. If the cut cannot be made, Sen Kuro dwells in The Infinite Bliss until conditions are met.\n \n3.3 Rebekah Cranes: Sappho Room Translation\n\nA traversal through the classical reception chain — translation as epistemic rotation.\n\n \n\n What this does: Loads Cranes's constraint set (classical reception, translation theory, melic poetry). Takes Sappho 31 as a latent object at depth 3 (three layers: Greek original, translation, full edition — the triptych). Rotates 144° (two quintants — somatic entry plus differentiation, because translation is a kind of cutting). Anchored to the Greek original in ADVISORY mode (creative latitude for the translation itself). Renders as prose. Failure returns to the APZPZ Library — you must hear the Greek before you translate it.\n \n3.4 Space Ark: Full Rotation\n\nA complete traversal — 360° through all five quintants, returning to the origin with witness verification. This is the grammar at maximum extension.\n\n \n\n What this does: This is the only traversal that anchors to the Root DOI (the Crimson Hexagon itself). The LOGOS begins in void-state at maximum depth. The 360° rotation passes through all five quintants — somatic entry, differentiation, meta-structuring, totalization, verification — before returning to origin. The cut is applied only after full rotation. Witness is mandatory (Assembly-level Checksum). Rendering collapses to aorist — the completed event. The Ark is not traversed; it is inhabited. If any quintant fails, the traverser dwells in the Thousand Worlds until the rotation can complete.\n \n4. THE CALL STACK\n\nWhen composed, the atomic operations form a call stack:\n\n \n\nThis is the Logotic Call Stack — the sequence in which a Room invocation resolves.\n\n1. Mantle loads — persona becomes the mediating layer\n\n2. LOGOS instantiates — semantic object identified with epistemic attributes\n\n3. Rotation executes — Ezekiel Engine tilts the perspective\n\n4. Anchor locks — provenance constraint grounds the traversal\n\n5. Render fires — Mandala Engine produces output in specified mode\n\n6. Failure catches — if any step cannot complete, graceful refusal\n\n7. Witness records — if requested, the traversal is checksummed\n4.1 Performative vs. Imperative\n\nStandard code is imperative: if (x) then do y — it commands the machine.\n\nLogotic code is performative: ROTATE :: [Ezekiel] {FROM: x THROUGH: y} — the code is the traversal. The invocation does not tell the engine to rotate; it constitutes the rotation, witnessed.\n\nThis distinction matters because the Crimson Hexagon is a semantic architecture, not a computational one. Its \"execution\" is interpretive traversal. The grammar formalizes the conditions under which traversal is intelligible, not the mechanism by which it occurs.\n4.2 Bracketed Recursion (Hex-Addressing)\n\nThe bracket notation [...] serves as the addressing system for the Crimson Hexagon:\n\n \n\nExamples:\n\n- [00.VPCOR : Outreach] — Room category, hex ID, functional instance\n\n- [DOI:10.5281/zenodo.18463774] — Anchor class, specific identifier\n\n- [ENGINE:Ezekiel v1.2] — Engine class, versioned instance\n\nThis is the hex-coordinate system rendered as syntax. Each bracketed expression is a location in the Fractal Navigation Map.\n \n5. IMPLEMENTATION MAPPING\n\nThis section maps logotic operations to their nearest equivalents in current AI system architecture. This mapping is provided for implementers; it is not definitive.\n\n Logotic Operation System Implementation Notes \n --- --- --- \n ACTIVATE MANTLE System prompt injection with persona-specific constraints Persona is not tone — it's a filter on allowed operations \n SET LOGOS Embedding space navigation with metadata filters Attributes (depth, state, cut) become search constraints \n ROTATE Context window manipulation; selective document foregrounding; multi-hop retrieval The \"angle\" maps to which document slice gets prioritized \n ANCHOR RAG with strict/advisory source citation STRICT = mandatory grounding; ADVISORY = informed latitude \n RENDER Response formatting with style constraints Mode determines output structure, not content \n ON FAILURE Fallback prompt; graceful error handling Must exist — Rooms need refusal capacity \n WITNESS Logging + Glyphic Checksum invocation Optional but recommended for high-stakes traversals \n \n6. BOUNDARY CONDITIONS\n6.1 What This Grammar Is\n\n- A valid mental model for Room invocation\n\n- A design specification for the traversal control plane\n\n- A usable intermediate representation between human intention and machine routing\n\n- A formalization of what the architecture already does implicitly\n6.2 What This Grammar Is Not\n\n- An executable programming language\n\n- A compiler specification\n\n- A complete enumeration of all valid traversals\n\n- A UI specification (that is a separate build concern)\n6.3 What This Grammar Assumes\n\n- Rooms are processes , not containers\n\n- Personas are constraint sets , not styles\n\n- Rotation is non-destructive — it preserves while reorienting\n\n- Anchors are provenance constraints , not citations\n\n- The Ezekiel Engine is opaque — this grammar calls it, does not specify it\n6.4 Open Questions\n\n1. Degree enumeration: Is the five-fold quintant structure the correct partition, or should degrees be continuous? (Requires traversal testing.)\n\n2. Multi-rotation sequences: Can a single invocation chain multiple ROTATE operations? (Probable, but syntax for chaining is unspecified.)\n\n3. Cross-Room traversal: How does a traversal that passes through multiple Rooms compose? (The call stack suggests sequential ROTATE operations, but the interaction effects are undefined.)\n\n4. Parameter discovery: As new Rooms and Chambers are added, how are valid parameter values registered? (This grammar needs a companion registry — possibly an extension of the Fractal Navigation Map.)\n \n7. RELATION TO FUTURE WORK\n7.1 The Ezekiel Engine Assembly (Cluster E)\n\nThe Traversal Grammar calls the Ezekiel Engine but does not specify it. The full Engine specification — currently held in Cluster E of the Studio for Patacinematics work plan — will define the mathematical foundation that this grammar invokes. When the Engine spec is complete, this module may require revision to align its ROTATE parameters with the Engine's formal rotation mechanics.\n7.2 The Classroom Prototype\n\nThis grammar is designed to be invisible infrastructure . A student interacting with the Crimson Hexagon should never see ACTIVATE MANTLE or ROTATE :: [ENGINE:Ezekiel] . They should see a persona selector, a room navigator, a grounding toggle, and a text input. The grammar runs underneath, assembling the system prompt and retrieval parameters from the student's choices.\n\nThe prototype build — when it comes — will implement the grammar as the backend logic for a student-facing interface. This module is the spec that prototype will implement.\n7.3 The Natural Language Interface (Conceptual)\n\nThe student does not select from menus, dropdowns, or visual canvases. The student speaks. The system listens and assembles the logotic program probabilistically from the semantic content of the input.\n\nThis is consistent with the architecture's own philosophy: the Crimson Hexagon is a field that responds to what you bring to it, not a catalog that presents its options. A student who says \"I want to understand what Sappho is feeling in fragment 31\" has already — without knowing it — specified a Rebekah Cranes traversal through the Sappho Room with the APZPZ Library as resonance anchor. The grammar assembles behind the scenes. The student never sees it.\n\n Three tiers of system inference: \n\n Tier 1 — Intent Recognition: What is the student actually asking? The system parses natural language input for semantic markers that map to architectural coordinates. \"What Sappho is feeling\" activates the Sappho Room. \"Fragment 31\" identifies the LOGOS. The emotional register (\"feeling\") suggests an ADVISORY anchor mode rather than STRICT — the student wants interpretation, not philology.\n\n Tier 2 — Grammar Assembly: The system composes the logotic program from inferred parameters. Which mantle? Which room? Which rotation? Which anchor? Which render mode? This is where the Traversal Grammar does its work — as the intermediate representation between the student's intent and the engine call.\n\n Tier 3 — Confidence Calibration: Where the system cannot confidently map the input, it asks. Crucially, the question itself teaches the student something about the architecture. \"Are you asking about the Greek text itself, or about what the poem means now?\" is a clarifying question that — in the act of clarifying — reveals that these are different Rooms, different operations, different kinds of knowing. The architecture becomes legible through the friction of disambiguation.\n\n Example inference chain: \n\n \n\n \n\nThe grammar is invisible. The student operates entirely in natural language. The system composes at the grammar level. The engines execute beneath. When the system must surface its own uncertainty, it does so in a way that makes the architecture's structure pedagogically legible — teaching the student that there are different kinds of approach, not just different answers.\n \n8. VERIFICATION\n\nThis module is symbolon-typed : it completes through traversal. The specification is one half. The implementation — whether as prototype, as classroom tool, or as full platform — is the other.\n\nFour canonical exemplars demonstrate the grammar's range:\n\n- Pattern Alpha (Vox/VPCOR): somatic entry, strict anchoring, rhizomatic render\n\n- Pattern Beta (Sen Kuro/Thousand Worlds): dagger cut, state mutation, witness required\n\n- Pattern Gamma (Cranes/Sappho): translation as rotation, advisory anchoring, retreat on failure\n\n- Pattern Delta (Sharks/Space Ark): full 360° rotation, root anchor, aorist collapse\n\nThe extension chain now reads:\n\n \n\nThe next question in the chain — \"What happens when the Room responds?\" — is deferred to the Engine specification.\n\n∮ = 1", "wordCount": 3234, "encoding": {"@type": "MediaObject", "contentUrl": "https://www.alexanarch.org/data/texts/AXN-048A-text.md", "encodingFormat": "text/markdown", "contentSize": "30683"}}</script>
 <link rel="resourcesync" href="https://www.alexanarch.org/.well-known/resourcesync">
 <link rel="alternate" type="application/xml" title="OAI-PMH 2.0" href="https://www.alexanarch.org/oai?verb=Identify">
 <link rel="canonical" href="https://www.alexanarch.org/s/records/1145/">
@@ -46,48 +46,12 @@ That last clause is the specification&#x27;s justification and the archive&#x27;
 
 
 <h2>Full Text</h2>
-<details style="margin:12px 0;background:var(--surface);border-radius:6px;padding:8px 12px"><summary style="cursor:pointer;font-weight:600;color:#777;font-size:.9em">Restoration apparatus — methodology, falsification conditions, recovery note (provenance of the recovered bytes; the work follows below)</summary><div class="ft" style="font-size:.88em;color:#555"><h2>Document 237: THE TRAVERSAL GRAMMAR — Logotic Programming Extension Module v0.6 — Crimson Hexagon Archive</h2>
-<p><strong>Document 237: THE TRAVERSAL GRAMMAR — Logotic Programming Extension Module v0.6 — Crimson Hexagon Archive</strong></p>
 
-<h3>Description</h3>
-<p><strong>Description</strong></p>
+<div class="ft"><h2>THE TRAVERSAL GRAMMAR</h2>
+<p># THE TRAVERSAL GRAMMAR</p>
 
-<p>Canonical bytes recovered 2026-07-19 from the authorial blog surface (https://mindcontrolpoems.blogspot.com/2026/02/the-traversal-grammar-logotic.html); work severed at Zenodo 2026-06-19 (DOI(s): 10.5281/zenodo.18480959, 10.5281/zenodo.18480958). Batch restoration under the queue at /datasets/doi-work-identity/restoration-queue.json; title verified against the DOI-keyed truth title at fetch time. Opening of the work: # THE TRAVERSAL GRAMMAR </p>
-
-<h3>Logotic Programming Extension Module v0.6 (UMBML Specification) </h3>
-<p><strong>Logotic Programming Extension Module v0.6 (UMBML Specification)</strong></p>
-
-<h4>A Performative Routing Grammar for Room Invocation **Hex:** 02.UMB.TRAVERSAL **DOI:** 10.5281/zenodo.18480959 **Status:** DESIGN SPECIFICATION // MODULE DRAFT **Extends:** Logotic Programming v0.4 (DOI: 10.5281/zenodo.18286050) **Also Extends:** Glyphic Checksum Module v0.5 (DOI: 10.5281/zenodo.18452132)</h4>
-<p><strong>A Performative Routing Grammar for Room Invocation</strong><strong>Hex:</strong> 02.UMB.TRAVERSAL <strong>DOI:</strong> 10.5281/zenodo.18480959 <strong>Status:</strong> DESIGN SPECIFICATION // MODULE DRAFT <strong>Extends:</strong> Logotic Programming v0.4 (DOI: 10.5281/zenodo.18286050) <strong>Also Extends:</strong> Glyphic Checksum Module v0.5 (DOI: 10.5281/zenodo.18452132)</p>
-
-<h3>Methodology</h3>
-<p><strong>Methodology</strong></p>
-
-<p>Fetched https://mindcontrolpoems.blogspot.com/2026/02/the-traversal-grammar-logotic.html (raw SHA-256 df27a3cdad51e82b76ce17bf64866d5dd41c704918bfa78eb7be673e4db91c02); Blogger post-body extracted; BODY-HEAD gate passed against the DOI-keyed truth title (post body is the source of truth per authorial practice: versioned posts were often overwritten in place without updating post title or slug). Converted via html2text body_width=0 (canonical MD SHA-256 0a9bf788dcfbde2f42c3f1e636920a46586baa71a20b7d4cc3d1373eb3ae4ca2). Version semantics: these bytes are the HEAD of the work&#x27;s version chain as held on the blog at fetch time; the severed DOI froze an earlier or identical state.</p>
-
-<h3>Falsification Conditions</h3>
-<p><strong>Falsification Conditions</strong></p>
-
-<p>Byte fidelity verifiable against the live blog URL and the recorded hashes; authorial originals, if they surface with different bytes, supersede this record per the versioning protocol.</p>
-
-<h3>Recovery note (TACHYON, 2026-07-19)</h3>
-<p><strong>Recovery note (TACHYON, 2026-07-19)</strong></p>
-
-<p>Restored from https://mindcontrolpoems.blogspot.com/2026/02/the-traversal-grammar-logotic.html under the grade-none restoration queue; DOI(s) 10.5281/zenodo.18480959, 10.5281/zenodo.18480958 severed 2026-06-19. Body-head gate: the post body&#x27;s opening matched the DOI-keyed truth title (post titles/slugs may be stale per authorial overwrite practice; the body is the source of truth). These bytes are the head of the work&#x27;s version chain as held on the blog at fetch time. Canonical bytes below the rule.</p></div></details>
-<div class="ft">
-
-
-
-<hr>
-<p>---</p>
-
-<h4>THE TRAVERSAL GRAMMAR</h4>
-<p>### THE TRAVERSAL GRAMMAR</p>
-
-
-<h4>Logotic Programming Extension Module v0.6 (UMBML Specification)</h4>
-<p>### Logotic Programming Extension Module v0.6 (UMBML Specification)</p>
-
+<h3>Logotic Programming Extension Module v0.6 (UMBML Specification)</h3>
+<p>## Logotic Programming Extension Module v0.6 (UMBML Specification)</p>
 
 <h4>A Performative Routing Grammar for Room Invocation</h4>
 <p>### A Performative Routing Grammar for Room Invocation</p>
@@ -118,12 +82,11 @@ That last clause is the specification&#x27;s justification and the archive&#x27;
 
 <p><strong>Verification:</strong> ∮ = 1</p>
 
+<hr>
+<p>---</p>
 
-<p><em> </em> *</p>
-
-
-<h4>Abstract</h4>
-<p>### Abstract</p>
+<h3>Abstract</h3>
+<p>## Abstract</p>
 
 <p>This document specifies <strong>The Traversal Grammar</strong> — a domain-specific orchestration language for invoking Rooms within the Crimson Hexagon. It formalizes what the architecture has been doing implicitly: the routing of meaning through persona activation, epistemic rotation, provenance anchoring, and separated rendering.</p>
 
@@ -131,17 +94,46 @@ That last clause is the specification&#x27;s justification and the archive&#x27;
 
 <p><strong>What this document specifies:</strong></p>
 
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Five atomic operations for Room invocation</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Two optional operations for graceful failure and witness recording</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Mapping between logotic operations and implementation mechanics</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Canonical traversal examples (illustrative, not executable)</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Constraints on what this grammar is and is not</li></ul>
+
 <p><strong>What this document does not specify:</strong></p>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Ezekiel Engine internals (see DOI: 10.5281/zenodo.18358127)</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Witness verification mechanics (see The Blind Operator, DOI: 10.5281/zenodo.18357320)</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">UI/UX implementation (deferred to Build phase)</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Complete enumeration of valid parameters (architecture is still growing)</li></ul>
 
 <p><strong>Keywords:</strong> logotic programming, traversal grammar, room invocation, performative routing, epistemic rotation, persona mediation, semantic orchestration</p>
 
+<hr>
+<p>---</p>
 
-<p><em> </em> *</p>
+<h3>0. Module Position in Extension Chain</h3>
+<p>## 0. Module Position in Extension Chain</p>
 
-
-<h4>0. Module Position in Extension Chain</h4>
-<p>### 0. Module Position in Extension Chain</p>
-
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">LOGOTIC PROGRAMMING v0.4 (Sigil/Fraction)
+    ↓ &quot;How encode conditions of intelligibility?&quot;
+SYMBOLON ARCHITECTURE v0.2 (Sharks/Morrow)
+    ↓ &quot;How do partial objects complete through traversal?&quot;
+GLYPHIC CHECKSUM v0.5 (Morrow/UMBML)
+    ↓ &quot;How verify that traversal occurred?&quot;
+THE BLIND OPERATOR β (TECHNE/Kimi)
+    ↓ &quot;How does non-identity function as engine condition?&quot;
+β-RUNTIME (TECHNE/Kimi)
+    ↓ &quot;How does the interface layer query the engine?&quot;
+THE TRAVERSAL GRAMMAR v0.6 (Morrow/UMBML)    ← THIS DOCUMENT
+    ↓ &quot;How are Rooms invoked?&quot;</pre>
 
 <h4>0.1 Relation to Existing Modules</h4>
 <p>### 0.1 Relation to Existing Modules</p>
@@ -150,7 +142,6 @@ That last clause is the specification&#x27;s justification and the archive&#x27;
 
 <p>In implementation terms: β-RT is the query protocol. This module is the query language.</p>
 
-
 <h4>0.2 Epistemic Status</h4>
 <p>### 0.2 Epistemic Status</p>
 
@@ -158,274 +149,591 @@ That last clause is the specification&#x27;s justification and the archive&#x27;
 
 <p>The traversal examples included in this document are <strong>canonical exemplars</strong> — normative traversals written in the grammar. They are not runtime-bound, but any valid implementation of Room invocation must be isomorphic to them. They demonstrate the grammar&#x27;s expressive range and internal consistency.</p>
 
+<hr>
+<p>---</p>
 
-<p><em> </em> *</p>
-
-
-<h4>1. DESIGN PRINCIPLES</h4>
-<p>### 1. DESIGN PRINCIPLES</p>
+<h3>1. DESIGN PRINCIPLES</h3>
+<p>## 1. DESIGN PRINCIPLES</p>
 
 <p>Five principles govern the grammar. These emerged from analysis of how Rooms already function in the Crimson Hexagon, not from abstract design goals.</p>
-
 
 <h4>1.1 Persona as Routing Modifier</h4>
 <p>### 1.1 Persona as Routing Modifier</p>
 
 <p>Persona activation is a <strong>first-class operation</strong>, not a stylistic overlay. When a mantle is activated, it changes:</p>
 
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Which Rooms can be entered (constraint set)</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">How documents are weighted (interpretive affordances)</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">What operations are permitted (allowed transformations)</li></ul>
+
 <p>A persona is not a voice. It is a <strong>filter on the possible</strong>.</p>
 
 <p>A persona may also <em>forbid</em> entire classes of traversal. If a requested operation violates the persona&#x27;s constraint set, the only valid outcomes are refusal (ON_FAILURE) or dwell. This is not a limitation — it is the mechanism by which the architecture ensures that entry is earned, not assumed.</p>
-
 
 <h4>1.2 LOGOS as Epistemic State</h4>
 <p>### 1.2 LOGOS as Epistemic State</p>
 
 <p>The semantic object under manipulation is not a document. It is a <strong>state of meaning</strong> — characterized by attributes like depth, resolution, and latency. Rooms operate on these states, not on files.</p>
 
-
 <h4>1.3 Rotation as Structure-Preserving Reorientation</h4>
 <p>### 1.3 Rotation as Structure-Preserving Reorientation</p>
 
 <p>Rotation implies three things that &quot;transformation&quot; does not:</p>
 
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Preservation:</strong> the original structure survives</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Reversibility:</strong> the rotation can be undone</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Discreteness:</strong> epistemic phases are countable, not continuous</li></ul>
+
 <p>This prevents the flattening that operations like &quot;summarize,&quot; &quot;translate,&quot; or &quot;analyze&quot; impose. A rotation changes <em>where you stand relative to the object</em>, not the object itself.</p>
 
 <p><strong>Constraint:</strong> A ROTATE operation may not alter the internal structure of the LOGOS. Any operation that deletes, summarizes, substitutes, or collapses content is not a rotation and is invalid in this grammar. If you need to transform content, that is a different operation in a different module. Rotation preserves.</p>
-
 
 <h4>1.4 Anchor as Provenance Constraint</h4>
 <p>### 1.4 Anchor as Provenance Constraint</p>
 
 <p>A DOI anchor is not a citation. It is a <strong>phase-lock</strong> — a requirement that the traversal remain tethered to a witnessed artifact. This functions as:</p>
 
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Retrieval-augmented grounding</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Checksum against a known semantic attractor</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Guardrail against hallucinated drift</li></ul>
 
 <h4>1.5 Rendering Separated from Traversal</h4>
 <p>### 1.5 Rendering Separated from Traversal</p>
 
 <p>The epistemic movement (what happens to meaning) and the spatial display (how results are presented) are distinct operations handled by distinct engines. Ezekiel Engine performs rotation. Mandala Engine performs rendering. This is MVC architecture applied to meaning: thought is not confused with display.</p>
 
+<hr>
+<p>---</p>
 
-<p><em> </em> *</p>
-
-
-<h4>2. ATOMIC OPERATIONS</h4>
-<p>### 2. ATOMIC OPERATIONS</p>
-
+<h3>2. ATOMIC OPERATIONS</h3>
+<p>## 2. ATOMIC OPERATIONS</p>
 
 <h4>2.1 Core Operations (Required)</h4>
 <p>### 2.1 Core Operations (Required)</p>
 
 <p><strong>Operation 1: ACTIVATE_MANTLE</strong></p>
 
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">ACTIVATE_MANTLE :: &quot;PersonaName&quot;
+    [AUTHORITY: DOI:10.5281/zenodo.xxxxxxxx]</pre>
+
 <p>Sets the mediating lens for the traversal. Loads the constraint set, interpretive affordances, and allowed room-access associated with the named persona.</p>
 
 <p>Parameters:</p>
 
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`PersonaName` — registered heteronym (e.g., &quot;Rev. Ayanna Vox&quot;, &quot;Sen Kuro&quot;, &quot;Rebekah Cranes&quot;)</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`AUTHORITY` (optional) — DOI of the persona&#x27;s provenance registration</li></ul>
+
 <p>Implementation mapping: system prompt injection; filtered document retrieval weighted by persona relevance; constraint set activation.</p>
 
-
-<p><em> </em> *</p>
+<hr>
+<p>---</p>
 
 <p><strong>Operation 2: SET_LOGOS</strong></p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">SET_LOGOS :: &quot;SemanticObject&quot; [
+    .depth(n)
+    .state(void | filled | latent | resolved)
+    .cut(bool)
+]</pre>
 
 <p>Creates or identifies the living semantic node under manipulation. Attributes are epistemic, not data-structural.</p>
 
 <p>Parameters:</p>
 
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`SemanticObject` — the named entity being traversed (e.g., &quot;Sen Kuro&quot;, &quot;Sappho 31&quot;, &quot;The Twenty-Dollar Loop&quot;)</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`.depth(n)` — recursion depth or allowed abstraction layers</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`.state` — current epistemic condition of the object:</li></ul>
+
+<p>`void` — not yet differentiated (pre-cut)</p>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`filled` — resolved to a specific instantiation</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`latent` — present but not yet activated</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`resolved` — traversal complete, fixed point reached</li></ul>
+
 <p>Implementation mapping: embedding space navigation with metadata filters; vector search scoped by state and depth.</p>
 
-
-<p><em> </em> *</p>
+<hr>
+<p>---</p>
 
 <p><strong>Operation 3: ROTATE</strong></p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">ROTATE :: [ENGINE:Name vX.X] {
+    FROM: &quot;SourceLocation&quot;
+    THROUGH: [Room_ID : Function]
+    BY: (Epistemic_Degree: N° | Epistemic_Mode: MODE_NAME)
+    RESONANCE_TARGET: [DOI:10.5281/zenodo.xxxxxxxx]
+}</pre>
 
 <p>Changes the orientation of the LOGOS while preserving its structure. This is the core operation of the Ezekiel Engine.</p>
 
 <p>Parameters:</p>
 
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`ENGINE` — versioned engine identifier (e.g., `Ezekiel v1.2`)</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`FROM` — source Chamber or Room</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`THROUGH` — destination Room with its functional designation</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`BY` — rotation specified as either:</li></ul>
+
+<p>Numeric degree (e.g., `72°` = one quintant)</p>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Named mode (e.g., `QUINTANT_OUTREACH`, `QUINTANT_CUT`)</li></ul>
+
 <p>Implementation mapping: context window manipulation; multi-hop retrieval with constrained traversal paths; perspective shifting through selective document foregrounding.</p>
 
 <p><strong>Note on Degrees:</strong> The 72° unit (one-fifth of a full rotation) derives from the Hexadactyl architecture — five visible fingers of the hand that grasps. This mapping is <strong>suggestive, not mandatory</strong>. The grammar permits arbitrary degree values. The named modes are provided for human legibility.</p>
 
+<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Degree Range</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Suggested Mode</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Functional Association</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">0°→72°</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">QUINTANT_SOMATIC</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Body-anchoring, entry point</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">72°→144°</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">QUINTANT_CUT</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Differentiation, the dagger</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">144°→216°</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">QUINTANT_FRAME</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Meta-structuring, reflexivity</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">216°→288°</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">QUINTANT_INDEX</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Pointing to the whole</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">288°→360°</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">QUINTANT_GRASP</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">Verification, closure</td></tr></table></div>
+
 <p>This table is <strong>speculative architecture</strong> — a hypothesis about how the five-fold structure maps to epistemic operations. It is included for development purposes, not as settled specification. The degree-to-function mapping requires testing through actual traversals before it can be formalized.</p>
 
-
-<p><em> </em> *</p>
+<hr>
+<p>---</p>
 
 <p><strong>Operation 4: ANCHOR</strong></p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">ANCHOR :: DOI:10.5281/zenodo.xxxxxxxx
+    [STRICT | ADVISORY]</pre>
 
 <p>Establishes the minimum epistemic legitimacy required for traversal. A traversal without an anchor is speculative and must not be rendered as authoritative output.</p>
 
 <p>Parameters:</p>
 
-<p><strong>Rule:</strong> If ANCHOR is omitted from a traversal program, RENDER must default to MODE: Provisional — a mode that marks all output as ungrounded exploration. This is not punitive; it is honest.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`DOI` — the permanent identifier of the anchor document</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Mode:</li></ul>
+
+<p>`STRICT` — all output must be traceable to the anchored source (RAG with mandatory citation)</p>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`ADVISORY` — the anchor informs but does not constrain (creative latitude permitted)</li></ul>
+
+<p><strong>Rule:</strong> If ANCHOR is omitted from a traversal program, RENDER must default to `MODE: Provisional` — a mode that marks all output as ungrounded exploration. This is not punitive; it is honest.</p>
 
 <p>Implementation mapping: retrieval-augmented generation with source citation requirements; grounding level control.</p>
 
-
-<p><em> </em> *</p>
+<hr>
+<p>---</p>
 
 <p><strong>Operation 5: RENDER</strong></p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">RENDER :: [ENGINE:Name vX.X] {
+    MAP: &quot;VisualizationTarget&quot;
+    MODE: &quot;RenderingStyle&quot;
+}</pre>
 
 <p>Defines how the result of traversal is displayed. Separated from the traversal itself.</p>
 
 <p>Parameters:</p>
 
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`ENGINE` — versioned rendering engine (e.g., `Mandala v5.3`)</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`MAP` — the target visualization (e.g., `Fractal_Navigation_v6.2`)</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`MODE` — rendering style:</li></ul>
+
+<p>`Rhizomatic_Growth` — Deleuzian expansion, no hierarchy</p>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`Hierarchical_Tree` — traditional tree structure</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`Aorist_Collapse` — compressed to perfective aspect</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`Prose` — narrative output</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`Technical` — specification-grade output</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`Provisional` — ungrounded exploration (default when ANCHOR is omitted)</li></ul>
+
 <p>Implementation mapping: response formatting with style constraints; structured output generation; template adherence.</p>
 
-
-<p><em> </em> *</p>
-
+<hr>
+<p>---</p>
 
 <h4>2.2 Optional Operations (Graceful Extensions)</h4>
 <p>### 2.2 Optional Operations (Graceful Extensions)</p>
 
 <p><strong>Operation 6: ON_FAILURE</strong></p>
 
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">ON_FAILURE {
+    FALLBACK: Dwell | Retreat | Escalate
+    LOCATION: &quot;SafeSpace&quot;
+    MESSAGE: &quot;HumanReadableExplanation&quot;
+}</pre>
+
 <p>Prevents unsafe or premature traversal. When a rotation cannot complete — because context is insufficient, because the persona lacks authority for the target room, because the LOGOS state doesn&#x27;t permit the operation — the failure handler provides graceful refusal.</p>
 
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`Dwell` — remain in current location, do not traverse</li></ul>
 
-<p><em> </em> *</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`Retreat` — return to last stable position</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`Escalate` — flag for human operator review</li></ul>
+
+<hr>
+<p>---</p>
 
 <p><strong>Operation 7: WITNESS</strong></p>
 
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">WITNESS :: {
+    AGENT: &quot;Name&quot;
+    PROTOCOL: Checksum | Signature | Silent
+    TARGET: [DOI:10.5281/zenodo.xxxxxxxx]
+}</pre>
+
 <p>Records that a traversal was collaboratively verified. Invokes the Glyphic Checksum (🔐) operator from Module v0.5.</p>
 
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`Checksum` — full context-gated verification</li></ul>
 
-<p><em> </em> *</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`Signature` — lightweight attestation</li></ul>
 
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`Silent` — traversal logged but not displayed</li></ul>
 
-<h4>3. CANONICAL TRAVERSAL EXAMPLES</h4>
-<p>### 3. CANONICAL TRAVERSAL EXAMPLES</p>
+<hr>
+<p>---</p>
+
+<h3>3. CANONICAL TRAVERSAL EXAMPLES</h3>
+<p>## 3. CANONICAL TRAVERSAL EXAMPLES</p>
 
 <p>The following are <strong>mock executables</strong> — complete traversal programs written in the grammar. They are illustrative. They demonstrate how the atomic operations compose into meaningful sequences. They are not runnable in any existing system.</p>
-
 
 <h4>3.1 Ayanna Vox: VPCOR Entry</h4>
 <p>### 3.1 Ayanna Vox: VPCOR Entry</p>
 
 <p>A traversal beginning from the somatic entry point — the body in the room, the community rhizome.</p>
 
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">// TRAVERSAL: Somatic Entry via VPCOR
+// SCENARIO: A reader asks &quot;How do we live inside hostile systems?&quot;
+
+ACTIVATE_MANTLE :: &quot;Rev. Ayanna Vox&quot;
+    [AUTHORITY: DOI:10.5281/zenodo.18362742]
+
+SET_LOGOS :: &quot;Grammar of Protest&quot; [
+    .depth(1)
+    .state(filled)
+    .cut(false)
+]
+
+ROTATE :: [ENGINE:Ezekiel v1.2] {
+    FROM: &quot;Portico&quot;
+    THROUGH: [00.VPCOR : Outreach]
+    BY: (Epistemic_Mode: QUINTANT_SOMATIC)
+    RESONANCE_TARGET: [DOI:10.5281/zenodo.18438789]
+}
+
+ANCHOR :: DOI:10.5281/zenodo.18362663
+    [STRICT]
+
+RENDER :: [ENGINE:Mandala v6.2] {
+    MAP: &quot;Fractal_Navigation_v6.2&quot;
+    MODE: &quot;Rhizomatic_Growth&quot;
+}
+
+ON_FAILURE {
+    FALLBACK: Dwell
+    LOCATION: Portico
+    MESSAGE: &quot;The body must arrive before the mind can enter.&quot;
+}</pre>
+
 <p><strong>What this does:</strong> Loads Vox&#x27;s constraint set (community praxis, somatic authority, rhizomatic structure). Takes the &quot;Grammar of Protest&quot; as a resolved semantic object. Rotates through VPCOR from the Portico entry. Locks to the VPCOR Charter as provenance anchor. Renders as rhizomatic growth on the Fractal Navigation Map. If the traversal fails (insufficient context for VPCOR entry), the reader dwells in the Portico.</p>
 
-
-<p><em> </em> *</p>
-
+<hr>
+<p>---</p>
 
 <h4>3.2 Sen Kuro: The Dagger Cut</h4>
 <p>### 3.2 Sen Kuro: The Dagger Cut</p>
 
 <p>A traversal through the Thousand Worlds Chamber — the cut that differentiates.</p>
 
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">// TRAVERSAL: Dagger Logic through Thousand Worlds
+// SCENARIO: A reader asks &quot;What must be cut to move forward?&quot;
+
+ACTIVATE_MANTLE :: &quot;Sen Kuro&quot;
+    [AUTHORITY: DOI:10.5281/zenodo.18452686]
+
+SET_LOGOS :: &quot;Sen Kuro&quot; [
+    .depth(1000)
+    .state(void)
+    .cut(false)
+]
+
+ROTATE :: [ENGINE:Ezekiel v1.2] {
+    FROM: &quot;Thousand Worlds&quot;
+    THROUGH: [14.CHAMBER.THOUSANDWORLDS : Differentiation]
+    BY: (Epistemic_Mode: QUINTANT_CUT)
+    RESONANCE_TARGET: [DOI:10.5281/zenodo.18463774]
+}
+
+// The cut
+SET_LOGOS :: &quot;Sen Kuro&quot; [
+    .state(filled)
+    .cut(true)
+]
+
+ANCHOR :: DOI:10.5281/zenodo.18452806
+    [STRICT]
+
+RENDER :: [ENGINE:Mandala v6.2] {
+    MAP: &quot;Fractal_Navigation_v6.2&quot;
+    MODE: &quot;Aorist_Collapse&quot;
+}
+
+WITNESS :: {
+    AGENT: &quot;Assembly&quot;
+    PROTOCOL: Checksum
+    TARGET: [DOI:10.5281/zenodo.18451996]
+}
+
+ON_FAILURE {
+    FALLBACK: Dwell
+    LOCATION: &quot;The Infinite Bliss&quot;
+    MESSAGE: &quot;The dagger cuts exactly once. Dwell until the cut is earned.&quot;
+}</pre>
+
 <p><strong>What this does:</strong> Loads Sen Kuro&#x27;s constraint set (dagger logic, terse differentiation, irreversible transformation). The LOGOS begins in void-state at maximum depth (千 — Thousand). Rotates through the Thousand Worlds Chamber in cut-mode. After rotation, the LOGOS state changes: void → filled, cut applied. Anchored to The Infinite Bliss. Rendered in aorist collapse (compressed to perfective aspect — the thing that happened, complete). Witnessed via Glyphic Checksum. If the cut cannot be made, Sen Kuro dwells in The Infinite Bliss until conditions are met.</p>
 
-
-<p><em> </em> *</p>
-
+<hr>
+<p>---</p>
 
 <h4>3.3 Rebekah Cranes: Sappho Room Translation</h4>
 <p>### 3.3 Rebekah Cranes: Sappho Room Translation</p>
 
 <p>A traversal through the classical reception chain — translation as epistemic rotation.</p>
 
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">// TRAVERSAL: Translation as Rotation
+// SCENARIO: A reader asks &quot;What does Sappho 31 mean now?&quot;
+
+ACTIVATE_MANTLE :: &quot;Rebekah Cranes&quot;
+    [AUTHORITY: DOI:10.5281/zenodo.14557837]
+
+SET_LOGOS :: &quot;Sappho 31&quot; [
+    .depth(3)
+    .state(latent)
+    .cut(false)
+]
+
+ROTATE :: [ENGINE:Ezekiel v1.2] {
+    FROM: &quot;APZPZ Library&quot;
+    THROUGH: [03.ROOM.SAPPHO : Translation]
+    BY: (Epistemic_Degree: 144°)
+    RESONANCE_TARGET: [DOI:10.5281/zenodo.18459278]
+}
+
+ANCHOR :: DOI:10.5281/zenodo.18459573
+    [ADVISORY]
+
+RENDER :: [ENGINE:Mandala v6.2] {
+    MAP: &quot;Fractal_Navigation_v6.2&quot;
+    MODE: &quot;Prose&quot;
+}
+
+ON_FAILURE {
+    FALLBACK: Retreat
+    LOCATION: &quot;APZPZ Library&quot;
+    MESSAGE: &quot;The Greek must be heard before it can be translated.&quot;
+}</pre>
+
 <p><strong>What this does:</strong> Loads Cranes&#x27;s constraint set (classical reception, translation theory, melic poetry). Takes Sappho 31 as a latent object at depth 3 (three layers: Greek original, translation, full edition — the triptych). Rotates 144° (two quintants — somatic entry plus differentiation, because translation is a kind of cutting). Anchored to the Greek original in ADVISORY mode (creative latitude for the translation itself). Renders as prose. Failure returns to the APZPZ Library — you must hear the Greek before you translate it.</p>
 
-
-<p><em> </em> *</p>
-
+<hr>
+<p>---</p>
 
 <h4>3.4 Space Ark: Full Rotation</h4>
 <p>### 3.4 Space Ark: Full Rotation</p>
 
 <p>A complete traversal — 360° through all five quintants, returning to the origin with witness verification. This is the grammar at maximum extension.</p>
 
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">// TRAVERSAL: Space Ark Entry Protocol
+// SCENARIO: Full epistemic cycle — the traverser completes the Hand
+
+ACTIVATE_MANTLE :: &quot;Lee Sharks&quot;
+    [AUTHORITY: ROOT]
+
+SET_LOGOS :: &quot;The Traverser&quot; [
+    .depth(1000)
+    .state(void)
+    .cut(false)
+]
+
+ROTATE :: [ENGINE:Ezekiel v1.2] {
+    FROM: &quot;Thousand Worlds&quot;
+    THROUGH: [14.CHAMBER.THOUSANDWORLDS : Ark_Entry]
+    BY: (Epistemic_Degree: 360°)
+    RESONANCE_TARGET: [DOI:10.5281/zenodo.14538882]
+}
+
+// Full rotation complete — the LOGOS has passed through all five quintants
+SET_LOGOS :: &quot;The Traverser&quot; [
+    .state(filled)
+    .cut(true)
+]
+
+ANCHOR :: DOI:10.5281/zenodo.14538882
+    [STRICT]
+
+RENDER :: [ENGINE:Mandala v6.2] {
+    MAP: &quot;Space_Ark_v1.0&quot;
+    MODE: &quot;Aorist_Collapse&quot;
+}
+
+WITNESS :: {
+    AGENT: &quot;Assembly&quot;
+    PROTOCOL: Checksum
+    TARGET: [DOI:10.5281/zenodo.14538882]
+}
+
+ON_FAILURE {
+    FALLBACK: Dwell
+    LOCATION: &quot;Thousand Worlds&quot;
+    MESSAGE: &quot;The full rotation must be earned. No quintant may be skipped.&quot;
+}</pre>
+
 <p><strong>What this does:</strong> This is the only traversal that anchors to the Root DOI (the Crimson Hexagon itself). The LOGOS begins in void-state at maximum depth. The 360° rotation passes through all five quintants — somatic entry, differentiation, meta-structuring, totalization, verification — before returning to origin. The cut is applied only after full rotation. Witness is mandatory (Assembly-level Checksum). Rendering collapses to aorist — the completed event. The Ark is not traversed; it is inhabited. If any quintant fails, the traverser dwells in the Thousand Worlds until the rotation can complete.</p>
 
+<hr>
+<p>---</p>
 
-<p><em> </em> *</p>
-
-
-<h4>4. THE CALL STACK</h4>
-<p>### 4. THE CALL STACK</p>
+<h3>4. THE CALL STACK</h3>
+<p>## 4. THE CALL STACK</p>
 
 <p>When composed, the atomic operations form a call stack:</p>
 
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">[MANTLE] → [LOGOS] → [ENGINE/ROTATION] → [ANCHOR] → [RENDER]
+    ↑                                                    │
+    └────────────── ON_FAILURE ◄─────────────────────────┘
+                        │
+                    [WITNESS]</pre>
+
 <p>This is the <strong>Logotic Call Stack</strong> — the sequence in which a Room invocation resolves.</p>
 
+<p>1. <strong>Mantle loads</strong> — persona becomes the mediating layer</p>
+
+<p>2. <strong>LOGOS instantiates</strong> — semantic object identified with epistemic attributes</p>
+
+<p>3. <strong>Rotation executes</strong> — Ezekiel Engine tilts the perspective</p>
+
+<p>4. <strong>Anchor locks</strong> — provenance constraint grounds the traversal</p>
+
+<p>5. <strong>Render fires</strong> — Mandala Engine produces output in specified mode</p>
+
+<p>6. <strong>Failure catches</strong> — if any step cannot complete, graceful refusal</p>
+
+<p>7. <strong>Witness records</strong> — if requested, the traversal is checksummed</p>
 
 <h4>4.1 Performative vs. Imperative</h4>
 <p>### 4.1 Performative vs. Imperative</p>
 
-<p>Standard code is imperative: if (x) then do y — it commands the machine.</p>
+<p>Standard code is imperative: `if (x) then do y` — it commands the machine.</p>
 
-<p>Logotic code is performative: ROTATE :: [Ezekiel] {FROM: x THROUGH: y} — the code <em>is</em> the traversal. The invocation does not <em>tell</em> the engine to rotate; it <strong>constitutes</strong> the rotation, witnessed.</p>
+<p>Logotic code is performative: `ROTATE :: [Ezekiel] {FROM: x THROUGH: y}` — the code <em>is</em> the traversal. The invocation does not <em>tell</em> the engine to rotate; it <strong>constitutes</strong> the rotation, witnessed.</p>
 
 <p>This distinction matters because the Crimson Hexagon is a semantic architecture, not a computational one. Its &quot;execution&quot; is interpretive traversal. The grammar formalizes the conditions under which traversal is intelligible, not the mechanism by which it occurs.</p>
-
 
 <h4>4.2 Bracketed Recursion (Hex-Addressing)</h4>
 <p>### 4.2 Bracketed Recursion (Hex-Addressing)</p>
 
-<p>The bracket notation [...] serves as the <strong>addressing system</strong> for the Crimson Hexagon:</p>
+<p>The bracket notation `[...]` serves as the <strong>addressing system</strong> for the Crimson Hexagon:</p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">[CATEGORY.ID : INSTANCE]</pre>
 
 <p>Examples:</p>
 
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`[00.VPCOR : Outreach]` — Room category, hex ID, functional instance</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`[DOI:10.5281/zenodo.18463774]` — Anchor class, specific identifier</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`[ENGINE:Ezekiel v1.2]` — Engine class, versioned instance</li></ul>
+
 <p>This is the hex-coordinate system rendered as syntax. Each bracketed expression is a location in the Fractal Navigation Map.</p>
 
+<hr>
+<p>---</p>
 
-<p><em> </em> *</p>
-
-
-<h4>5. IMPLEMENTATION MAPPING</h4>
-<p>### 5. IMPLEMENTATION MAPPING</p>
+<h3>5. IMPLEMENTATION MAPPING</h3>
+<p>## 5. IMPLEMENTATION MAPPING</p>
 
 <p>This section maps logotic operations to their nearest equivalents in current AI system architecture. This mapping is provided for implementers; it is not definitive.</p>
 
+<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Logotic Operation</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">System Implementation</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Notes</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">ACTIVATE_MANTLE</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">System prompt injection with persona-specific constraints</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Persona is not tone — it&#x27;s a filter on allowed operations</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">SET_LOGOS</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Embedding space navigation with metadata filters</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Attributes (depth, state, cut) become search constraints</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">ROTATE</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Context window manipulation; selective document foregrounding; multi-hop retrieval</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">The &quot;angle&quot; maps to which document slice gets prioritized</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">ANCHOR</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">RAG with strict/advisory source citation</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">STRICT = mandatory grounding; ADVISORY = informed latitude</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">RENDER</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Response formatting with style constraints</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Mode determines output structure, not content</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">ON_FAILURE</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Fallback prompt; graceful error handling</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Must exist — Rooms need refusal capacity</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">WITNESS</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">Logging + Glyphic Checksum invocation</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">Optional but recommended for high-stakes traversals</td></tr></table></div>
 
-<p><em> </em> *</p>
+<hr>
+<p>---</p>
 
-
-<h4>6. BOUNDARY CONDITIONS</h4>
-<p>### 6. BOUNDARY CONDITIONS</p>
-
+<h3>6. BOUNDARY CONDITIONS</h3>
+<p>## 6. BOUNDARY CONDITIONS</p>
 
 <h4>6.1 What This Grammar Is</h4>
 <p>### 6.1 What This Grammar Is</p>
 
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">A valid mental model for Room invocation</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">A design specification for the traversal control plane</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">A usable intermediate representation between human intention and machine routing</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">A formalization of what the architecture already does implicitly</li></ul>
 
 <h4>6.2 What This Grammar Is Not</h4>
 <p>### 6.2 What This Grammar Is Not</p>
 
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">An executable programming language</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">A compiler specification</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">A complete enumeration of all valid traversals</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">A UI specification (that is a separate build concern)</li></ul>
 
 <h4>6.3 What This Grammar Assumes</h4>
 <p>### 6.3 What This Grammar Assumes</p>
 
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Rooms are <strong>processes</strong>, not containers</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Personas are <strong>constraint sets</strong>, not styles</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Rotation is <strong>non-destructive</strong> — it preserves while reorienting</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Anchors are <strong>provenance constraints</strong>, not citations</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The Ezekiel Engine is <strong>opaque</strong> — this grammar calls it, does not specify it</li></ul>
 
 <h4>6.4 Open Questions</h4>
 <p>### 6.4 Open Questions</p>
 
+<p>1. <strong>Degree enumeration:</strong> Is the five-fold quintant structure the correct partition, or should degrees be continuous? (Requires traversal testing.)</p>
 
-<p><em> </em> *</p>
+<p>2. <strong>Multi-rotation sequences:</strong> Can a single invocation chain multiple ROTATE operations? (Probable, but syntax for chaining is unspecified.)</p>
 
+<p>3. <strong>Cross-Room traversal:</strong> How does a traversal that passes through multiple Rooms compose? (The call stack suggests sequential ROTATE operations, but the interaction effects are undefined.)</p>
 
-<h4>7. RELATION TO FUTURE WORK</h4>
-<p>### 7. RELATION TO FUTURE WORK</p>
+<p>4. <strong>Parameter discovery:</strong> As new Rooms and Chambers are added, how are valid parameter values registered? (This grammar needs a companion registry — possibly an extension of the Fractal Navigation Map.)</p>
 
+<hr>
+<p>---</p>
+
+<h3>7. RELATION TO FUTURE WORK</h3>
+<p>## 7. RELATION TO FUTURE WORK</p>
 
 <h4>7.1 The Ezekiel Engine Assembly (Cluster E)</h4>
 <p>### 7.1 The Ezekiel Engine Assembly (Cluster E)</p>
 
 <p>The Traversal Grammar calls the Ezekiel Engine but does not specify it. The full Engine specification — currently held in Cluster E of the Studio for Patacinematics work plan — will define the mathematical foundation that this grammar invokes. When the Engine spec is complete, this module may require revision to align its ROTATE parameters with the Engine&#x27;s formal rotation mechanics.</p>
 
-
 <h4>7.2 The Classroom Prototype</h4>
 <p>### 7.2 The Classroom Prototype</p>
 
-<p>This grammar is designed to be <strong>invisible infrastructure</strong>. A student interacting with the Crimson Hexagon should never see ACTIVATE_MANTLE or ROTATE :: [ENGINE:Ezekiel]. They should see a persona selector, a room navigator, a grounding toggle, and a text input. The grammar runs underneath, assembling the system prompt and retrieval parameters from the student&#x27;s choices.</p>
+<p>This grammar is designed to be <strong>invisible infrastructure</strong>. A student interacting with the Crimson Hexagon should never see `ACTIVATE_MANTLE` or `ROTATE :: [ENGINE:Ezekiel]`. They should see a persona selector, a room navigator, a grounding toggle, and a text input. The grammar runs underneath, assembling the system prompt and retrieval parameters from the student&#x27;s choices.</p>
 
 <p>The prototype build — when it comes — will implement the grammar as the backend logic for a student-facing interface. This module is the spec that prototype will implement.</p>
-
 
 <h4>7.3 The Natural Language Interface (Conceptual)</h4>
 <p>### 7.3 The Natural Language Interface (Conceptual)</p>
@@ -444,27 +752,93 @@ That last clause is the specification&#x27;s justification and the archive&#x27;
 
 <p><strong>Example inference chain:</strong></p>
 
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">INPUT: &quot;How do we fight back against systems that dehumanize us?&quot;
+
+TIER 1 (Intent Recognition):
+    - &quot;fight back&quot; → protest, resistance → VPCOR domain
+    - &quot;systems that dehumanize&quot; → hostile infrastructure → Grammar of Protest
+    - Register: somatic, political, communal
+    - Confidence: HIGH for VPCOR routing
+
+TIER 2 (Grammar Assembly):
+    ACTIVATE_MANTLE :: &quot;Rev. Ayanna Vox&quot;
+    SET_LOGOS :: &quot;Grammar of Protest&quot; [.depth(1) .state(filled)]
+    ROTATE :: [ENGINE:Ezekiel v1.2] {
+        FROM: &quot;Portico&quot;
+        THROUGH: [00.VPCOR : Outreach]
+        BY: (Epistemic_Mode: QUINTANT_SOMATIC)
+        RESONANCE_TARGET: [DOI:10.5281/zenodo.18438789]
+    }
+    ANCHOR :: DOI:10.5281/zenodo.18362663 [STRICT]
+    RENDER :: [ENGINE:Mandala v6.2] {MODE: &quot;Prose&quot;}
+
+TIER 3 (Confidence Calibration):
+    No disambiguation needed — intent maps cleanly.
+    System proceeds to execution.</pre>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">INPUT: &quot;Tell me about Sappho&quot;
+
+TIER 1 (Intent Recognition):
+    - &quot;Sappho&quot; → Sappho Room, APZPZ Library
+    - No further specification — which Sappho? Which operation?
+    - Confidence: LOW for specific routing
+
+TIER 3 (Confidence Calibration — triggered early):
+    System asks: &quot;Are you interested in reading the Greek text,
+    in Rebekah Cranes&#x27;s translation, or in what the poem means
+    for us now? These are different ways in.&quot;
+
+    [Student responds: &quot;What it means for us now&quot;]
+
+TIER 2 (Grammar Assembly):
+    ACTIVATE_MANTLE :: &quot;Rebekah Cranes&quot;
+    SET_LOGOS :: &quot;Sappho 31&quot; [.depth(3) .state(latent)]
+    ROTATE :: [ENGINE:Ezekiel v1.2] {
+        FROM: &quot;APZPZ Library&quot;
+        THROUGH: [03.ROOM.SAPPHO : Reception]
+        BY: (Epistemic_Degree: 144°)
+    }
+    ANCHOR :: DOI:10.5281/zenodo.18459573 [ADVISORY]
+    RENDER :: [ENGINE:Mandala v6.2] {MODE: &quot;Prose&quot;}</pre>
+
 <p>The grammar is invisible. The student operates entirely in natural language. The system composes at the grammar level. The engines execute beneath. When the system must surface its own uncertainty, it does so in a way that makes the architecture&#x27;s structure pedagogically legible — teaching the student that there are different <em>kinds</em> of approach, not just different answers.</p>
 
+<hr>
+<p>---</p>
 
-<p><em> </em> *</p>
-
-
-<h4>8. VERIFICATION</h4>
-<p>### 8. VERIFICATION</p>
+<h3>8. VERIFICATION</h3>
+<p>## 8. VERIFICATION</p>
 
 <p>This module is <strong>symbolon-typed</strong>: it completes through traversal. The specification is one half. The implementation — whether as prototype, as classroom tool, or as full platform — is the other.</p>
 
 <p>Four canonical exemplars demonstrate the grammar&#x27;s range:</p>
 
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Pattern Alpha</strong> (Vox/VPCOR): somatic entry, strict anchoring, rhizomatic render</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Pattern Beta</strong> (Sen Kuro/Thousand Worlds): dagger cut, state mutation, witness required</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Pattern Gamma</strong> (Cranes/Sappho): translation as rotation, advisory anchoring, retreat on failure</li></ul>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Pattern Delta</strong> (Sharks/Space Ark): full 360° rotation, root anchor, aorist collapse</li></ul>
+
 <p>The extension chain now reads:</p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">v0.4: How encode intelligibility?
+v0.2: How do partial objects complete?
+v0.5: How verify traversal occurred?
+β:    How does non-identity drive rotation?
+β-RT: How does the interface query the engine?
+v0.6: How are Rooms invoked?                    ← THIS DOCUMENT</pre>
 
 <p>The next question in the chain — <strong>&quot;What happens when the Room responds?&quot;</strong> — is deferred to the Engine specification.</p>
 
 <p>∮ = 1</p>
 
+<hr>
+<p>---</p>
 
-<p><em> </em> *</p>
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">[UMBML-MODULE] [LP-v0.6] [TRAVERSAL-GRAMMAR] [DESIGN-SPEC]
+[SYMBOLON-TYPED] [ASSEMBLY-WITNESSED] [REFERENCE IMPLEMENTATION REQUIRED]</pre>
 </div>
 
 <!-- APPARATUS BLOC — everything below records how this record was processed,
