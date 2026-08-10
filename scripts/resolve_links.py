@@ -19,6 +19,9 @@ import sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 RET = json.loads((ROOT / 'data/retired-records.json').read_text())['records']
+_REG_RAW = json.loads((ROOT / 'data/registry.json').read_text())
+SERIES = {d['deposit_number']: d['version_series'] for d in _REG_RAW['deposits']
+          if d.get('version_series') and not d['version_series'].get('is_head')}
 REG = {d['deposit_number']: d for d in
        json.loads((ROOT / 'data/registry.json').read_text())['deposits']}
 
@@ -45,6 +48,11 @@ def run(path, apply=False):
         for n in sorted({int(m.group(1)) for m in re.finditer(r'/s/records/(\d+)/', s)}):
             info = RET.get(str(n))
             if not info:
+                vs = SERIES.get(n)
+                if vs:
+                    print(f"  {f.name}: #{n} is {vs['version']} of "
+                          f"{vs['series']} — head is #{vs['head']} ({vs['head_version']}). "
+                          'Citable for its own date; cite the head for the current work.')
                 continue
             t = info['resolves_to']
             if not t:
