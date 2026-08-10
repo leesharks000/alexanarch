@@ -1,0 +1,84 @@
+{
+ "axn": "AXN:05D4.UNCLASSIFIED.🌒🎵🎪🎹⊕🌈",
+ "position": "05D4",
+ "family": "UNCLASSIFIED",
+ "registered": "2026-08-10T00:41:53.686Z",
+ "status": "witnessed-verified",
+ "verified_at": "2026-08-10T00:41:58.380Z",
+ "last_verified_at": null,
+ "verification_method": null,
+ "core_stored": false,
+ "custody": {
+  "terms": "Stored cores live in this archive's public version-controlled repository and are served without account, login, or expiry. Any change or removal appears as a dated commit; nothing is silently deleted.",
+  "single_point_of_failure": "One administrator, one code host, one serving platform. Durable against link rot, accidental overwrite and quiet editing; NOT durable against a platform decision — this archive was itself terminated elsewhere in June 2026. A registry entry is a record, not a promise of perpetual hosting.",
+  "mirror_freely": "Listed with hash and length in /resourcesync/resourcelist.xml and /data/symbolon-registry/MANIFEST.json, and checksummed in /SHA256SUMS.txt. Fetch, hash, compare — copying requires no permission and verification requires no trust in this archive. Independent custody means a copy held by someone who is not this archive's administrator, on a platform it does not use.",
+  "depositor_holds": "The depositor's own original plus the Seed A sidecar can prove the work anywhere, with or without this archive. That is the point of splitting the identifier in two."
+ },
+ "retrieval": "https://www.alexanarch.org/data/symbolon-registry/files/01878589961e7b4e-9DF94A2B-6AD0-4248-9862-1D2D50AB7B5A.jpg",
+ "note": "The registry witnesses the tuple and its internal consistency (glyphs recomputed from hashes at ingest). Seed B was not seen; verification against bytes is a separate act per SPEC §9. [Stamp re-applied 2026-08-10; AXN1 refreshed to the current stamped form. Sealed core (AXN0) unchanged.]",
+ "spec": "AXN-SYMBOLON-SPEC v0.2 · https://www.alexanarch.org/s/records/1432/",
+ "tuple": {
+  "axn0": {
+   "glyphs": "🌒🎵🎪🎹⊕🌈",
+   "sha256": "01878589961e7b4ec98ae2ac2f06aef05ba1c1f0898238d45a9b29e20d56b817"
+  },
+  "axn1": {
+   "glyphs": "🎺💧⏰▽∮🪨",
+   "sha256": "8b116199951bed7bb225a59798b9ec0ec865f71050b77bddec548fa3fb814ae5"
+  }
+ },
+ "position_note": "The hex position is a registry address allocated from the shared AXN sequence (data/symbolon-registry/allocation.json). An address is not a verification.",
+ "seed_a": {
+  "axn_spec": "AXN-SYMBOLON-SPEC v0.2",
+  "spec_record": "https://www.alexanarch.org/s/records/1432/",
+  "spec_axn": "AXN:05A9.OPERATIVE.🐚🌪️🕖🫵⏩○",
+  "reconstruction_class": "content-addressed",
+  "stamp_generation": 1,
+  "axn0": {
+   "glyphs": "🌒🎵🎪🎹⊕🌈",
+   "sha256": "01878589961e7b4ec98ae2ac2f06aef05ba1c1f0898238d45a9b29e20d56b817",
+   "role": "identity kernel of the sealed core (the original, pre-stamp bytes)"
+  },
+  "axn1": {
+   "glyphs": "🌟🏙️🔎🕊️🧬🌓",
+   "sha256": "09e5587e3b02b3f521e2f04649f36697c0e7f2a9bad281a25df8d715c2d66309",
+   "role": "kernel of the stamped file as it circulates (tamper witness; not a name)"
+  },
+  "manifest": [
+   {
+    "part": 1,
+    "filename": "9DF94A2B-6AD0-4248-9862-1D2D50AB7B5A.jpg",
+    "sha256": "01878589961e7b4ec98ae2ac2f06aef05ba1c1f0898238d45a9b29e20d56b817",
+    "bytes": 326876
+   }
+  ],
+  "stamp_geometry": {
+   "format": "image/png",
+   "method": "appended_footer_strip",
+   "strip_px": 69,
+   "original_px": {
+    "w": 2048,
+    "h": 1536
+   },
+   "strip_stamp": "crop to original_px then compare pixels; byte-identical strip NOT possible for raster (re-encode); AXN₀ verification requires Seed B = the original file",
+   "strip_reversible": false
+  },
+  "created": "2026-08-10T00:41:52.191Z",
+  "generator": "https://www.alexanarch.org/mint/stamp/ (client-side; WebCrypto)",
+  "family": "UNCLASSIFIED",
+  "registration": "kernel is authority-independent; registry witnessing via https://www.alexanarch.org/deposit/ or by sending this sidecar to the archive"
+ },
+ "stamp_history": [
+  {
+   "axn1": {
+    "glyphs": "🌟🏙️🔎🕊️🧬🌓",
+    "sha256": "09e5587e3b02b3f521e2f04649f36697c0e7f2a9bad281a25df8d715c2d66309"
+   },
+   "until": "2026-08-10T00:42:00.622Z"
+  },
+  {
+   "axn1_replaced": "09e5587e3b02b3f521e2f04649f36697c0e7f2a9bad281a25df8d715c2d66309",
+   "at": "2026-08-10T00:42:00.622Z"
+  }
+ ]
+}
