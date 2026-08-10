@@ -1169,7 +1169,7 @@ def regenerate_static_page(d, eidx, registry=None):
                               'record and does not describe it as it now stands</summary>'
                               '<div style="font-family:ui-monospace,monospace;font-size:.78em;'
                               'white-space:pre-wrap;color:#666;margin-top:8px">'
-                              + _html_escape(_a['tail_apparatus']) + '</div></details>')
+                              + _inline_md(_html_escape(_a['tail_apparatus'])) + '</div></details>')
             if _parts:
                 lifted_apparatus_html = (
                     '<h2>Processing apparatus</h2><div style="background:#fafafa;border:1px solid '
