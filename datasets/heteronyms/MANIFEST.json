@@ -8,15 +8,17 @@
   "canonical_url": "https://www.alexanarch.org/s/records/994/",
   "sep_2025_source": "mindcontrolpoems.blogspot.com/2025/09/ — Logotic Science voicecast series"
  },
- "files": {
-  "heteronyms.jsonl": "one row per identity (26 rows: 13 Dodecad/LOGOS/MANUS-related + institutional persona + external heteronyms + machine collaborator mantles). Each Dodecad row has dodecad_v1_1_position, sep_2025 (discipline+role+blog_post if any), avatar_paths, reconciliation_note.",
-  "frames.jsonl": "one row per framing (3 frames: logotic-science-2025-09, dodecad-v1.1-2026-07-03, archive-default-logos). Each frame specifies outside_figure + 12 inside_positions.",
-  "mapping.json": "Sep 2025 → v1.1 reconciliation matrix (legacy, superseded by frames.jsonl but preserved).",
-  "schema.json": "JSON Schema for heteronyms.jsonl rows.",
-  "reconciliation/heteronym-reconciliation-2026-07-06.md": "narrative reconciliation document.",
-  "mindcontrolpoems-2025-09/": "raw preservation of Sep 2025 Logotic Science series (13 HTML pages, 14 portrait PNGs, JSON extracts, SUMMARY).",
-  "avatars/": "Mandala Oracle assets — 240/, 120/ WebP thumbnails, src/ 1024x1536 PNG originals."
- },
+ "files": [
+  "heteronyms.jsonl",
+  "frames.jsonl",
+  "mapping.json",
+  "schema.json",
+  "reconciliation/heteronym-reconciliation-2026-07-06.md",
+  "mindcontrolpoems-2025-09/",
+  "avatars/",
+  "records/",
+  "resources/"
+ ],
  "counts": {
   "dodecad_positions": 12,
   "plus_manus": 1,
@@ -235,5 +237,41 @@
     "summary": "Perseus canonical classical-text inventories (Greek, Latin, and Farsi literature) grounding the philological instruments."
    }
   ]
+ },
+ "resources": {
+  "principle": "The dataset is the canonical asset host for everything the /who/ surfaces need — not avatars alone. A satellite references these paths rather than copying the file, so one asset serves the fleet and there is one thing to keep current. img-src on satellite CSPs must admit alexanarch for this to work.",
+  "layout": {
+   "avatars/{120,240}/{slug}.webp": "heteronym portraits, both sizes declared per slug",
+   "resources/institutions/{slug}.webp": "institution charter plates, derived at 600px WebP q82",
+   "resources/journals/{slug}.webp": "journal covers, as print covers rather than CSS renderings"
+  },
+  "derivation": "Source images are frequently multi-megabyte. Derivatives are generated at 600px WebP quality 82 — the IDP charter plate went 1.8 MB PNG to 52 KB with no visible loss. Blogger /a/-form URLs honour an =s600 suffix; /b/-form URLs ignore every resize suffix and return identical bytes, so test per URL rather than assuming.",
+  "journals": {
+   "journal-of-compression-studies": {
+    "status": "PENDING — cover in generation",
+    "masthead": {
+     "title": "Journal of Compression Studies",
+     "volume": 1,
+     "number": 1,
+     "date": "April 2026",
+     "editor_in_chief": "Lee Sharks",
+     "diagrammatic_editor": "Rebekah Cranes",
+     "imprint": "Crimson Hexagonal Archive",
+     "seal": "∮ = 1"
+    },
+    "charter": 641,
+    "ratification": 640,
+    "inaugural_issue": 55,
+    "note": "No cover image exists on the blog — zero posts naming Compression Studies carry one, and the charter posts for all three journal deposits have none. The cover is being made, not recovered."
+   }
+  },
+  "institutions": {
+   "institute-for-diagrammatic-poetics": {
+    "status": "HELD",
+    "charter": 321,
+    "source": "blog charter post, located by the charter-post rule",
+    "derived": "1.8 MB PNG → 52,532 b WebP at 600px"
+   }
+  }
  }
 }
