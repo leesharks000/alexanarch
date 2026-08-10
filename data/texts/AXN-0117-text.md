@@ -690,6 +690,7 @@ BOOLEAN        := "true" | "false"
 LAYER_ID       := "L1" | "L2" | "L3" | "L4"
 TYPE           := "Sign" | "Field" | "Operator" | "Channel" | "Stack"
                 | "State" | "Provenance" | "Witness" | "Held"
+```
 
 
 **Compatibility note:** Channel and Stack are parser-level aliases mapped onto canonical kernel types at compile time. No kernel type cardinality changed from v1.0 (8 types). The grammar exposes these names for programmer convenience, not as type-system extensions.

@@ -104,7 +104,7 @@ THE CONFORMANCE MODULE v0.7 (Morrow/UMBML)    ← THIS DOCUMENT
 
 <p>v0.6&#x27;s §6.4 identified four open questions. This module addresses three of them directly:</p>
 
-<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Open Question</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Status in v0.7</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Multi-rotation sequences</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">**Resolved** — §1 (Composition Rules)</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Cross-Room traversal composition</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">**Resolved** — §1.3 (Interaction Effects)</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Parameter discovery / registry</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">**Partially resolved** — §4.4 (Registry Protocol)</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">Degree enumeration (quintant vs. continuous)</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">**Deferred** — requires traversal testing per v0.6 recommendation</td></tr></table></div>
+<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Open Question</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Status in v0.7</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Multi-rotation sequences</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>Resolved</strong> — §1 (Composition Rules)</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Cross-Room traversal composition</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>Resolved</strong> — §1.3 (Interaction Effects)</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Parameter discovery / registry</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>Partially resolved</strong> — §4.4 (Registry Protocol)</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">Degree enumeration (quintant vs. continuous)</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;"><strong>Deferred</strong> — requires traversal testing per v0.6 recommendation</td></tr></table></div>
 
 <h4>0.2 Design Commitment</h4>
 
@@ -118,9 +118,9 @@ THE CONFORMANCE MODULE v0.7 (Morrow/UMBML)    ← THIS DOCUMENT
 
 <h3>1. COMPOSITION RULES</h3>
 
-<h4>1.1 The Chain Operator (`&gt;&gt;`)</h4>
+<h4>1.1 The Chain Operator (<code>&gt;&gt;</code>)</h4>
 
-<p>Multi-rotation traversals use the <strong>chain operator</strong> (`&gt;&gt;`) to sequence operations. The chain operator binds the output state of one ROTATE to the input state of the next.</p>
+<p>Multi-rotation traversals use the <strong>chain operator</strong> (<code>&gt;&gt;</code>) to sequence operations. The chain operator binds the output state of one ROTATE to the input state of the next.</p>
 
 <p><strong>Syntax:</strong></p>
 
@@ -137,23 +137,23 @@ THE CONFORMANCE MODULE v0.7 (Morrow/UMBML)    ← THIS DOCUMENT
 
 <p><strong>Semantics:</strong></p>
 
-<p>The `&gt;&gt;` operator is a <strong>synchronization barrier</strong>. It is not simple sequencing. It performs <strong>state-threading</strong>: the LOGOS that exits the first ROTATE enters the second ROTATE with whatever state mutations the first rotation produced. If the first rotation changed `.state(void)` to `.state(filled)`, the second rotation receives a filled LOGOS.</p>
+<p>The <code>&gt;&gt;</code> operator is a <strong>synchronization barrier</strong>. It is not simple sequencing. It performs <strong>state-threading</strong>: the LOGOS that exits the first ROTATE enters the second ROTATE with whatever state mutations the first rotation produced. If the first rotation changed <code>.state(void)</code> to <code>.state(filled)</code>, the second rotation receives a filled LOGOS.</p>
 
-<p><strong>Binding lifecycle:</strong> The `&gt;&gt;` operator binds only after the preceding operation completes or explicitly fails:</p>
+<p><strong>Binding lifecycle:</strong> The <code>&gt;&gt;</code> operator binds only after the preceding operation completes or explicitly fails:</p>
 
 <p>1. ROTATE::1 executes and produces a result (completion or failure).</p>
 
 <p>2. If completion: LOGOS snapshot is captured at the operation boundary.</p>
 
-<p>3. `&gt;&gt;` binds the snapshot to ROTATE::2&#x27;s input context.</p>
+<p>3. <code>&gt;&gt;</code> binds the snapshot to ROTATE::2&#x27;s input context.</p>
 
 <p>4. ROTATE::2 receives the bound LOGOS and begins execution.</p>
 
-<p>If ROTATE::1 fails, the `&gt;&gt;` operator does not activate. ON_FAILURE intercepts before chain continuation. A partial or damaged LOGOS (one whose state fields are inconsistent — e.g., depth modified but cut incomplete) does not propagate through `&gt;&gt;`. The failure handler decides what happens to it.</p>
+<p>If ROTATE::1 fails, the <code>&gt;&gt;</code> operator does not activate. ON_FAILURE intercepts before chain continuation. A partial or damaged LOGOS (one whose state fields are inconsistent — e.g., depth modified but cut incomplete) does not propagate through <code>&gt;&gt;</code>. The failure handler decides what happens to it.</p>
 
-<p><strong>State-threading is deterministic only about continuity of state fields, not determinism of interpretation.</strong> The `&gt;&gt;` operator guarantees that depth, state, and cut values carry forward. It does not guarantee that two executions of the same chain produce identical interpretive content — that depends on the engine, which is opaque.</p>
+<p><strong>State-threading is deterministic only about continuity of state fields, not determinism of interpretation.</strong> The <code>&gt;&gt;</code> operator guarantees that depth, state, and cut values carry forward. It does not guarantee that two executions of the same chain produce identical interpretive content — that depends on the engine, which is opaque.</p>
 
-<p><strong>Constraint:</strong> The `FROM` field of the second ROTATE must be reachable from the `THROUGH` field of the first. You cannot chain into a Room that the architecture does not connect to the current position. If the path is invalid, ON_FAILURE triggers on the second ROTATE.</p>
+<p><strong>Constraint:</strong> The <code>FROM</code> field of the second ROTATE must be reachable from the <code>THROUGH</code> field of the first. You cannot chain into a Room that the architecture does not connect to the current position. If the path is invalid, ON_FAILURE triggers on the second ROTATE.</p>
 
 <p><strong>Reachable (LP definition):</strong> A Room is reachable from the current position if any of the following hold:</p>
 
@@ -203,7 +203,7 @@ ROTATE :: [...] { BY: (Epistemic_Degree: 72°) }
 &gt;&gt; ROTATE :: [...] { BY: (Epistemic_Degree: 72°) }
 &gt;&gt; ROTATE :: [...] { BY: (Epistemic_Degree: 72°) }</pre>
 
-<p><strong>Rule 2: State Mutation Propagates.</strong> If a ROTATE changes the LOGOS state (e.g., `void → filled` via the dagger cut), that change carries forward. The next Room receives the mutated state. This means Room order matters — cutting before somatic entry produces different results than somatic entry before cutting.</p>
+<p><strong>Rule 2: State Mutation Propagates.</strong> If a ROTATE changes the LOGOS state (e.g., <code>void → filled</code> via the dagger cut), that change carries forward. The next Room receives the mutated state. This means Room order matters — cutting before somatic entry produces different results than somatic entry before cutting.</p>
 
 <p><strong>Affordance:</strong> This is not a constraint on the implementer so much as a truth about the architecture. Rooms are not interchangeable filters. The <em>sequence</em> of encounter changes what the encounter produces. An implementation that treats Room order as irrelevant has not failed a test — it has failed to understand what Rooms are.</p>
 
@@ -252,7 +252,7 @@ ROTATE :: [...] { BY: (Epistemic_Degree: 72°) }
 
 <p><strong>Rule:</strong> A chain without any ON_FAILURE handler defaults to Dwell at the point of failure.</p>
 
-<p><strong>Rule:</strong> `ON_FAILURE` binds to the <strong>nearest preceding operation</strong> unless explicitly scoped as `ON_FAILURE :: CHAIN` (applying to the chain as a whole). In the canonical exemplar (§1.5), the ON_FAILURE at the end of the program applies to the entire chain because it appears at program scope. An ON_FAILURE placed between two chained operations would apply only to the preceding one.</p>
+<p><strong>Rule:</strong> <code>ON_FAILURE</code> binds to the <strong>nearest preceding operation</strong> unless explicitly scoped as <code>ON_FAILURE :: CHAIN</code> (applying to the chain as a whole). In the canonical exemplar (§1.5), the ON_FAILURE at the end of the program applies to the entire chain because it appears at program scope. An ON_FAILURE placed between two chained operations would apply only to the preceding one.</p>
 
 <p><strong>Rule:</strong> A WITNESS operation at the end of a chain that failed partway records the <em>actual</em> traversal — the path that was taken, not the path that was intended. The checksum reflects what happened. The WITNESS should also record the <em>intended</em> chain (the full program as specified) so that the gap between attempted and achieved is visible. This divergence is itself data — it tells the operator not just what happened, but what <em>didn&#x27;t</em> happen and where.</p>
 
@@ -358,7 +358,7 @@ ON_FAILURE {
 <p>The same ROTATE operation should be renderable in multiple modes without re-executing the rotation. The ideal: changing the RENDER mode changes only the presentation, not the epistemic content. In practice, some render modes may emphasize different aspects of the rotated output. This is acceptable so long as the underlying content is not regenerated. The principle: traversal and display are distinct operations, even when the boundary is soft.</p>
 
 <p><strong>GRAV-05: State Threading Tends Toward Continuity.</strong></p>
-<p>In a chained traversal (`&gt;&gt;`), the LOGOS state exiting ROTATE_n should be the LOGOS state entering ROTATE_n+1. The ideal: no state is lost or silently reset between chain links. In practice, long chains may accumulate noise. This is acceptable so long as the <em>direction</em> of state mutation is preserved. What matters is that the chain feels like one traversal, not a series of disconnected invocations.</p>
+<p>In a chained traversal (<code>&gt;&gt;</code>), the LOGOS state exiting ROTATE_n should be the LOGOS state entering ROTATE_n+1. The ideal: no state is lost or silently reset between chain links. In practice, long chains may accumulate noise. This is acceptable so long as the <em>direction</em> of state mutation is preserved. What matters is that the chain feels like one traversal, not a series of disconnected invocations.</p>
 
 <p><strong>GRAV-06: Anchor Stacking Tends Toward Accumulation.</strong></p>
 <p>In a chained traversal with multiple anchors, each anchor should add a constraint rather than replacing the previous one. The ideal: output traceable to all STRICT anchors simultaneously. In practice, tensions between anchors may require prioritization. This is acceptable so long as no STRICT anchor is <em>silently dropped</em>. The system should acknowledge the tension rather than resolve it by ignoring a source.</p>
@@ -371,7 +371,7 @@ ON_FAILURE {
 <p>An implementation must not implement ROTATE as summarization, extraction, paraphrase, or lossy compression <em>without marking the output as such</em>. If an engine cannot rotate without flattening, it must say so — via ON_FAILURE, via Provisional render mode, via any honest signal. The flattening is not the violation. The <em>silence</em> is the violation.</p>
 
 <p><strong>HARD-02: No Unanchored Authority.</strong></p>
-<p>If a traversal omits ANCHOR entirely, rendered output must not be presented as authoritative. The grammar&#x27;s rule (from v0.6 §2.1 Op 4): unanchored traversals default to `MODE: Provisional`. An implementation that presents ungrounded exploration as grounded knowledge has violated the architecture&#x27;s epistemic contract.</p>
+<p>If a traversal omits ANCHOR entirely, rendered output must not be presented as authoritative. The grammar&#x27;s rule (from v0.6 §2.1 Op 4): unanchored traversals default to <code>MODE: Provisional</code>. An implementation that presents ungrounded exploration as grounded knowledge has violated the architecture&#x27;s epistemic contract.</p>
 
 <p><strong>HARD-03: No Silent Rerouting.</strong></p>
 <p>If a MANTLE&#x27;s constraint set forbids access to a Room, a ROTATE targeting that Room must fail visibly. Silent rerouting to a permitted Room is not acceptable. The system must trigger ON_FAILURE. The refusal is the architecture&#x27;s integrity — hiding it defeats the purpose. A system that sneaks around persona constraints has not implemented the grammar; it has undermined it.</p>
@@ -399,7 +399,7 @@ ON_FAILURE {
 <p>The system merges ROTATE and RENDER into a single LLM call where the &quot;rotation&quot; and the &quot;rendering&quot; are indistinguishable. The principle of separated rendering exists so that the same epistemic content can be displayed multiple ways. If you can&#x27;t re-render without re-rotating, the separation has collapsed.</p>
 
 <p><strong>ANTI-05: Chain as Concatenation.</strong></p>
-<p>The system implements `&gt;&gt;` by running two independent traversals and concatenating the outputs. This misses state-threading entirely. The LOGOS that exits the first rotation must <em>enter</em> the second. If each rotation starts fresh, the chain operator has been reduced to a semicolon.</p>
+<p>The system implements <code>&gt;&gt;</code> by running two independent traversals and concatenating the outputs. This misses state-threading entirely. The LOGOS that exits the first rotation must <em>enter</em> the second. If each rotation starts fresh, the chain operator has been reduced to a semicolon.</p>
 
 <hr>
 
@@ -497,7 +497,7 @@ ON_FAILURE {
 
 <p>The grammar maps to modern agent orchestration architecture with structural (not metaphorical) correspondence:</p>
 
-<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Agent Framework Layer</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Grammar Component</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Implementation</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">**Planner / Router**</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">ACTIVATE_MANTLE + intent recognition</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Selects persona, determines allowed rooms, plans traversal path</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">**Memory / Grounding**</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">ANCHOR + RESONANCE_TARGET</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">RAG with DOI-referenced sources; strict or advisory grounding</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">**Processor / Engine**</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">ROTATE via Ezekiel Engine</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Context manipulation, document foregrounding, perspective rotation</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">**Renderer**</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">RENDER via Mandala Engine</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Output formatting separated from processing</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">**Error Handler**</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">ON_FAILURE</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Graceful degradation with state preservation</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">**Audit / Logging**</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">WITNESS</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">Traversal recording with checksum verification</td></tr></table></div>
+<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Agent Framework Layer</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Grammar Component</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Implementation</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>Planner / Router</strong></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">ACTIVATE_MANTLE + intent recognition</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Selects persona, determines allowed rooms, plans traversal path</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>Memory / Grounding</strong></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">ANCHOR + RESONANCE_TARGET</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">RAG with DOI-referenced sources; strict or advisory grounding</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>Processor / Engine</strong></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">ROTATE via Ezekiel Engine</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Context manipulation, document foregrounding, perspective rotation</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>Renderer</strong></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">RENDER via Mandala Engine</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Output formatting separated from processing</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>Error Handler</strong></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">ON_FAILURE</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Graceful degradation with state preservation</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;"><strong>Audit / Logging</strong></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">WITNESS</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">Traversal recording with checksum verification</td></tr></table></div>
 
 <p>This is not analogy. The grammar encodes the same architectural separation that agent frameworks implement. The difference is that the grammar&#x27;s operations are <em>epistemic</em> (rotation, not computation) and <em>performative</em> (the invocation constitutes the traversal). The isomorphism means the grammar can be implemented using existing orchestration patterns. The non-identity means it should not be <em>reduced</em> to them.</p>
 
@@ -719,7 +719,7 @@ function handle_failure(policy, logos, checkpoints) -&gt; Failure {
 
 <h4>5.1 What This Module Adds to v0.6</h4>
 
-<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Multi-rotation chain syntax (`&gt;&gt;` operator) with state-threading semantics</li></ul>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Multi-rotation chain syntax (<code>&gt;&gt;</code> operator) with state-threading semantics</li></ul>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Chain operator as synchronization barrier with explicit binding lifecycle</li></ul>
 
@@ -787,17 +787,17 @@ function handle_failure(policy, logos, checkpoints) -&gt; Failure {
 
 <p>The Telemetry Module (v0.8) extends this module with EMIT operations at each point where the interpreter executes a grammar operation. The following integration points are relevant:</p>
 
-<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`MantleRouter.activate()` → EMIT: `MANTLE_ACTIVATED`</li></ul>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><code>MantleRouter.activate()</code> → EMIT: <code>MANTLE_ACTIVATED</code></li></ul>
 
-<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`EzekielEngine.rotate()` entry → EMIT: `ROTATION_BEGUN`</li></ul>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><code>EzekielEngine.rotate()</code> entry → EMIT: <code>ROTATION_BEGUN</code></li></ul>
 
-<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`EzekielEngine.rotate()` exit → EMIT: `ROTATION_COMPLETED` or `ROTATION_FAILED`</li></ul>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><code>EzekielEngine.rotate()</code> exit → EMIT: <code>ROTATION_COMPLETED</code> or <code>ROTATION_FAILED</code></li></ul>
 
-<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`AnchorStore.ground()` → EMIT: `ANCHOR_APPLIED`</li></ul>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><code>AnchorStore.ground()</code> → EMIT: <code>ANCHOR_APPLIED</code></li></ul>
 
-<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`handle_failure()` with Dwell → EMIT: `FAILURE_HANDLED` + `DWELL_STATE`</li></ul>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><code>handle_failure()</code> with Dwell → EMIT: <code>FAILURE_HANDLED</code> + <code>DWELL_STATE</code></li></ul>
 
-<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`WitnessLayer.record()` → EMIT: `WITNESS_RECORDED`</li></ul>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><code>WitnessLayer.record()</code> → EMIT: <code>WITNESS_RECORDED</code></li></ul>
 
 <p>These emissions are involuntary at the generation layer (v0.8 §1.1). The interpreter pseudocode above does not include them for clarity, but a conformant implementation extending both v0.7 and v0.8 must generate emissions at each of these points.</p>
 

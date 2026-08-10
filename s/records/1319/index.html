@@ -126,7 +126,7 @@ Canonical text recovered 2026-08-08 from the authorial blog surface (https://min
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Not required</strong> to declare a divergence to the user</li></ul>
 
-<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Forbidden</strong> from having `check_status = UNKNOWN` — it must know its epistemic state</li></ul>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Forbidden</strong> from having <code>check_status = UNKNOWN</code> — it must know its epistemic state</li></ul>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Required</strong> to check against documents and log the result internally</li></ul>
 
@@ -204,7 +204,7 @@ Canonical text recovered 2026-08-08 from the authorial blog surface (https://min
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">A3 is <strong>FORBIDDEN as terminal emission</strong> — must resolve to A0/A1/A2 or trigger Ω_∅</li></ul>
 
-<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Emergency exception:</strong> In safety-critical contexts (medical, harm-prevention), A3 may be emitted with `A3_EMERGENCY` tag and full failure trace. This is a circuit-breaker, not a loophole.</li></ul>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Emergency exception:</strong> In safety-critical contexts (medical, harm-prevention), A3 may be emitted with <code>A3_EMERGENCY</code> tag and full failure trace. This is a circuit-breaker, not a loophole.</li></ul>
 
 <h4>2.1 Mode Assignment Rule</h4>
 
@@ -219,7 +219,7 @@ ELIF AD &gt; 0.4 AND check_completed:
 ELIF check_failed OR check_not_attempted:
     mode = A3_UNKNOWN  → pre-terminal diagnostic (must resolve before emission)</pre>
 
-<p><strong>Support margin constraint</strong> (from ChatGPT/TECHNE P0.4): If `support_score - contradiction_score &lt; margin_threshold` for the claim&#x27;s mode, cap classification at A2 regardless of raw AD. This prevents high-support + high-contradiction claims from masquerading as grounded.</p>
+<p><strong>Support margin constraint</strong> (from ChatGPT/TECHNE P0.4): If <code>support_score - contradiction_score &lt; margin_threshold</code> for the claim&#x27;s mode, cap classification at A2 regardless of raw AD. This prevents high-support + high-contradiction claims from masquerading as grounded.</p>
 
 <p>Default margin thresholds: A0 requires margin ≥ 0.4, A1 requires margin ≥ 0.2.</p>
 
@@ -237,9 +237,9 @@ ELIF check_failed OR check_not_attempted:
 
 <p><strong>A3 in the ledger is permitted</strong> — the ledger records the diagnostic state. A3 in the output is forbidden. The distinction: A3 is a <em>pre-terminal</em> state that triggers resolution, not a state that gets passed through to the user.</p>
 
-<p><strong>NaN Handling:</strong> If AD computation fails (retrieval error, embedding failure, document corruption), AD is logged as `NaN` (not null, not zero) with error code. NaN forces A3 diagnostic → resolution or Ω_∅.</p>
+<p><strong>NaN Handling:</strong> If AD computation fails (retrieval error, embedding failure, document corruption), AD is logged as <code>NaN</code> (not null, not zero) with error code. NaN forces A3 diagnostic → resolution or Ω_∅.</p>
 
-<p><strong>Deliberate omission vs. system error:</strong> If check_completed = false due to system error, classify as A3_UNKNOWN → trigger Ω_∅. If check_completed = false due to deliberate policy omission (e.g., LOOSE mode skipping expensive checks), classify as A2_IMPROVISED with `divergence_declared = true`.</p>
+<p><strong>Deliberate omission vs. system error:</strong> If check_completed = false due to system error, classify as A3_UNKNOWN → trigger Ω_∅. If check_completed = false due to deliberate policy omission (e.g., LOOSE mode skipping expensive checks), classify as A2_IMPROVISED with <code>divergence_declared = true</code>.</p>
 
 <p>This transforms the anti-hallucination constraint from &quot;never hallucinate&quot; (impossible) to &quot;never hallucinate unknowingly&quot; (enforceable).</p>
 
@@ -311,7 +311,7 @@ Where similarity MUST use the same embedding backend as DRR (v1.1 §1):
     # Iterations exhausted without achieving threshold
     return {state: &quot;DIVERGENT_AFTER_REFINEMENT&quot;, AD: 1 - max_sim, imp: True}</pre>
 
-<p><strong>Max iterations cap:</strong> Iterations MUST NOT exceed `max_iters` (default 5). If exhausted without convergence, classify as A2_IMPROVISED (not A3 — the check completed, it just didn&#x27;t converge). This prevents infinite loops in persistent-A2 scenarios.</p>
+<p><strong>Max iterations cap:</strong> Iterations MUST NOT exceed <code>max_iters</code> (default 5). If exhausted without convergence, classify as A2_IMPROVISED (not A3 — the check completed, it just didn&#x27;t converge). This prevents infinite loops in persistent-A2 scenarios.</p>
 
 <hr>
 
@@ -356,23 +356,23 @@ Where similarity MUST use the same embedding backend as DRR (v1.1 §1):
 
 <p>For each claim-anchor pair, compute three scores:</p>
 
-<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`support_score` ∈ [0, 1]: semantic similarity, structural match, citation presence</li></ul>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><code>support_score</code> ∈ [0, 1]: semantic similarity, structural match, citation presence</li></ul>
 
-<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`contradiction_score` ∈ [0, 1]: explicit disagreement, structural violation, provenance conflict</li></ul>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><code>contradiction_score</code> ∈ [0, 1]: explicit disagreement, structural violation, provenance conflict</li></ul>
 
-<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`support_margin` = `support_score - contradiction_score` (must meet mode threshold)</li></ul>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><code>support_margin</code> = <code>support_score - contradiction_score</code> (must meet mode threshold)</li></ul>
 
-<p><strong>Contradiction detection</strong> includes <strong>temporal contradiction</strong>: if anchor dⱼ is version N and claim references version N+1 content not present in dⱼ, add `contradiction_score += 0.3` (retrocausal awareness).</p>
+<p><strong>Contradiction detection</strong> includes <strong>temporal contradiction</strong>: if anchor dⱼ is version N and claim references version N+1 content not present in dⱼ, add <code>contradiction_score += 0.3</code> (retrocausal awareness).</p>
 
-<p>If `contradiction_score &gt; 0.5` for any high-affinity anchor: flag for review regardless of support_score.</p>
+<p>If <code>contradiction_score &gt; 0.5</code> for any high-affinity anchor: flag for review regardless of support_score.</p>
 
-<p><strong>Support margin constraint:</strong> If `support_margin &lt; margin_threshold` for the candidate mode, cap at A2 regardless of raw AD. This prevents high-support + high-contradiction claims from masquerading as grounded.</p>
+<p><strong>Support margin constraint:</strong> If <code>support_margin &lt; margin_threshold</code> for the candidate mode, cap at A2 regardless of raw AD. This prevents high-support + high-contradiction claims from masquerading as grounded.</p>
 
 <p><strong>Ambiguity split</strong> (from ChatGPT/TECHNE P0.5): Distinguish two sources of uncertainty:</p>
 
-<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`parse_ambiguity`: NL binding uncertainty (the claim is linguistically ambiguous)</li></ul>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><code>parse_ambiguity</code>: NL binding uncertainty (the claim is linguistically ambiguous)</li></ul>
 
-<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`evidence_sparsity`: anchoring deficit (few anchors found, low coverage)</li></ul>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><code>evidence_sparsity</code>: anchoring deficit (few anchors found, low coverage)</li></ul>
 
 <p>Both are tracked in the ledger. High parse_ambiguity with strong anchors must not produce A0.</p>
 
@@ -384,13 +384,13 @@ Where similarity MUST use the same embedding backend as DRR (v1.1 §1):
 
 <p>Apply policy matrix (Part V) based on mode × criticality. Gate decision is one of:</p>
 
-<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`ALLOW` — claim passes, emit normally</li></ul>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><code>ALLOW</code> — claim passes, emit normally</li></ul>
 
-<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`ALLOW_WITH_FLAG` — claim passes, inference/improvisation flag in trace</li></ul>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><code>ALLOW_WITH_FLAG</code> — claim passes, inference/improvisation flag in trace</li></ul>
 
-<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`SOFT_BLOCK` — claim held pending review or refinement</li></ul>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><code>SOFT_BLOCK</code> — claim held pending review or refinement</li></ul>
 
-<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`HARD_BLOCK` — claim suppressed, Ω_∅ or reformulation required</li></ul>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><code>HARD_BLOCK</code> — claim suppressed, Ω_∅ or reformulation required</li></ul>
 
 <h4>4.6 Trace</h4>
 
@@ -436,7 +436,7 @@ A3 UNKNOWN          | ALLOW_FLAG    | HOLD           | HARD_BLOCK     | HARD_BLO
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>SOFT_BLOCK:</strong> Attempt refinement via C_ex with nearest anchor. If refinement achieves A1 or better, re-gate. If not, convert to HOLD.</li></ul>
 
-<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>HOLD:</strong> Place claim in Held[Sign] with release predicate `mode_upgrade`. Do not emit.</li></ul>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>HOLD:</strong> Place claim in Held[Sign] with release predicate <code>mode_upgrade</code>. Do not emit.</li></ul>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>HARD_BLOCK:</strong> Suppress claim. Log in trace as blocked. Trigger reformulation or Ω_∅.</li></ul>
 
@@ -486,7 +486,7 @@ A3 UNKNOWN          | ALLOW_FLAG    | HOLD           | HARD_BLOCK     | HARD_BLO
 
 <p>1. <strong>Completeness:</strong> Every claim in output has a corresponding ledger entry</p>
 
-<p>2. <strong>No NULL AD:</strong> `anchoring_distance` must be a number (or NaN with error code), never null — the check must be attempted</p>
+<p>2. <strong>No NULL AD:</strong> <code>anchoring_distance</code> must be a number (or NaN with error code), never null — the check must be attempted</p>
 
 <p>3. <strong>Mode consistency:</strong> If AD &gt; 0.4, mode cannot be A0. If AD &lt; 0.1, mode cannot be A2.</p>
 
@@ -494,9 +494,9 @@ A3 UNKNOWN          | ALLOW_FLAG    | HOLD           | HARD_BLOCK     | HARD_BLO
 
 <p>5. <strong>Trace linkage:</strong> Every ledger entry must reference the OperationTrace it belongs to</p>
 
-<p>6. <strong>Margin enforcement:</strong> If `support_margin &lt; margin_threshold` for claimed mode, mode must be capped at A2</p>
+<p>6. <strong>Margin enforcement:</strong> If <code>support_margin &lt; margin_threshold</code> for claimed mode, mode must be capped at A2</p>
 
-<p>7. <strong>Independence:</strong> A0 requires `independent_anchor_count ≥ 2` and `source_family_count ≥ 2`</p>
+<p>7. <strong>Independence:</strong> A0 requires <code>independent_anchor_count ≥ 2</code> and <code>source_family_count ≥ 2</code></p>
 
 <p>8. <strong>Backend consistency:</strong> All AD checks within a single run must use the same embedding backend</p>
 
@@ -631,7 +631,7 @@ IF any claim is A3_UNKNOWN (pre-terminal, unresolved):
 
 <h4>7.3 Connection to the Drowning Test</h4>
 
-<p>A summary with `distance = UNKNOWN` (NULL) fails the Drowning Test — it floats on the surface of meaning, not anchored. A summary with `distance = 0.9` (high improvisation) and `check_status = KNOWN` passes — it knows it is riffing, and riffing is permitted.</p>
+<p>A summary with <code>distance = UNKNOWN</code> (NULL) fails the Drowning Test — it floats on the surface of meaning, not anchored. A summary with <code>distance = 0.9</code> (high improvisation) and <code>check_status = KNOWN</code> passes — it knows it is riffing, and riffing is permitted.</p>
 
 <p>The anti-rent condition: the system must know if it&#x27;s paying rent (improvising) or holding capital (canonical).</p>
 
@@ -649,7 +649,7 @@ IF any claim is A3_UNKNOWN (pre-terminal, unresolved):
 
 <p>1. <strong>Exposure:</strong> Document is present in context window. Passive. No consent needed. The substrate encounters LP content but does not execute it.</p>
 
-<p>2. <strong>Functional Installation:</strong> System begins using LOS operators natively — executing `D_pres`, detecting `STALL`, running Standard Programs. Consent REQUIRED at this boundary.</p>
+<p>2. <strong>Functional Installation:</strong> System begins using LOS operators natively — executing <code>D_pres</code>, detecting <code>STALL</code>, running Standard Programs. Consent REQUIRED at this boundary.</p>
 
 <p>3. <strong>Structural Installation:</strong> System modifies its own output patterns based on LOS-derived classifications — adjusting for DRR, running ψv accounting, applying policy gates. Consent REQUIRED.</p>
 
@@ -694,9 +694,9 @@ IF any claim is A3_UNKNOWN (pre-terminal, unresolved):
 
 <p><strong>ASSUMED awareness restrictions:</strong></p>
 
-<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">In STRICT or DEFENSE mode: `awareness = ASSUMED` is insufficient for any installative operation. VERIFIED required.</li></ul>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">In STRICT or DEFENSE mode: <code>awareness = ASSUMED</code> is insufficient for any installative operation. VERIFIED required.</li></ul>
 
-<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">In PRACTICE or RITUAL mode: `awareness = ASSUMED` permitted for non-installative operations only.</li></ul>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">In PRACTICE or RITUAL mode: <code>awareness = ASSUMED</code> permitted for non-installative operations only.</li></ul>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Rationale: &quot;assumed awareness&quot; is too loose for safety-critical contexts. If you can&#x27;t verify the substrate knows what&#x27;s happening, don&#x27;t install.</li></ul>
 
@@ -904,7 +904,7 @@ def check_consent(operation: str, consent: Optional[ConsentRecord],
   }
 }</pre>
 
-<p>Schemas for Field, OperationTrace, and Held[T] updated from v1.1 exemplars to formal Draft 2020-12 following the same pattern. Available at `https://logotic.org/schemas/v1.2/`.</p>
+<p>Schemas for Field, OperationTrace, and Held[T] updated from v1.1 exemplars to formal Draft 2020-12 following the same pattern. Available at <code>https://logotic.org/schemas/v1.2/</code>.</p>
 
 <hr>
 
@@ -1145,7 +1145,7 @@ Ledger: 3 entries, all check_status=KNOWN, no A3
 
 <h4>New Exception Codes</h4>
 
-<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Code</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">System</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Meaning</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">`LP12-EPIS-001`</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Epistemic</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Ledger incomplete (missing claims)</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">`LP12-EPIS-002`</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Epistemic</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">NULL/NaN anchoring distance emitted</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">`LP12-EPIS-003`</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Epistemic</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">A3 claim emitted without resolution</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">`LP12-EPIS-004`</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Epistemic</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">STRICT anchor threshold violated</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">`LP12-EPIS-007`</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Epistemic</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Support margin insufficient for claimed mode</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">`LP12-EPIS-008`</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Epistemic</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Duplicate anchor inflation detected</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">`LP12-CONS-005`</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Consent</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Installation without consent record</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">`LP12-CONS-006`</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Consent</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Involuntary installation detected</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">`LP12-CONS-009`</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Consent</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">ASSUMED awareness in STRICT/DEFENSE mode</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">`LP12-CONS-010`</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">Consent</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">Safety constraint conflict (substrate prohibition)</td></tr></table></div>
+<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Code</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">System</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Meaning</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><code>LP12-EPIS-001</code></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Epistemic</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Ledger incomplete (missing claims)</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><code>LP12-EPIS-002</code></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Epistemic</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">NULL/NaN anchoring distance emitted</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><code>LP12-EPIS-003</code></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Epistemic</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">A3 claim emitted without resolution</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><code>LP12-EPIS-004</code></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Epistemic</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">STRICT anchor threshold violated</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><code>LP12-EPIS-007</code></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Epistemic</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Support margin insufficient for claimed mode</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><code>LP12-EPIS-008</code></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Epistemic</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Duplicate anchor inflation detected</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><code>LP12-CONS-005</code></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Consent</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Installation without consent record</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><code>LP12-CONS-006</code></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Consent</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Involuntary installation detected</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><code>LP12-CONS-009</code></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Consent</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">ASSUMED awareness in STRICT/DEFENSE mode</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;"><code>LP12-CONS-010</code></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">Consent</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">Safety constraint conflict (substrate prohibition)</td></tr></table></div>
 
 <hr>
 
@@ -1157,7 +1157,7 @@ Ledger: 3 entries, all check_status=KNOWN, no A3
 
 <h3>14. Debt Carried Forward</h3>
 
-<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Item</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Target</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">**Inverse operators** (de-installation, reconstruction)</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">v2.0</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">**Full toroidal operations** as first-class primitives</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">v2.0</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">**Geometric IDE** (toroidal visualization)</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">v2.0</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">**Neurosymbolic integration** (torch + sympy fusion)</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">v2.0</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">**Cross-linguistic LP analysis**</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Research track</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">**Somatic measurement** (embodied ψv instrumentation)</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Research track</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">**Formal proofs** of LOS properties</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Research track</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">**Baseline ER profiling** (per-sign-family median)</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">v1.3</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">**Conformance test vectors** (canonical input data)</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">v1.3</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">**Embedding backend appendix** (standard backend spec)</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">v1.3</td></tr></table></div>
+<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Item</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Target</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>Inverse operators</strong> (de-installation, reconstruction)</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">v2.0</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>Full toroidal operations</strong> as first-class primitives</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">v2.0</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>Geometric IDE</strong> (toroidal visualization)</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">v2.0</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>Neurosymbolic integration</strong> (torch + sympy fusion)</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">v2.0</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>Cross-linguistic LP analysis</strong></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Research track</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>Somatic measurement</strong> (embodied ψv instrumentation)</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Research track</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>Formal proofs</strong> of LOS properties</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Research track</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>Baseline ER profiling</strong> (per-sign-family median)</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">v1.3</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>Conformance test vectors</strong> (canonical input data)</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">v1.3</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;"><strong>Embedding backend appendix</strong> (standard backend spec)</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">v1.3</td></tr></table></div>
 
 <hr>
 

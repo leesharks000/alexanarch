@@ -135,7 +135,7 @@ Its closing requirement is architectural confession. An instrument does not beco
 
 <p><strong>Definition.</strong> The system computes anomaly scores in multiple structurally distinct representational spaces (object-level, calorimeter-image, detector-channel). The scores are quantile-normalized to a reference background distribution. Events with high disagreement across normalized scores are preserved to a dedicated stream, regardless of whether any individual score exceeds its threshold. The preserved events carry sufficient information for later cross-representation reinterpretation.</p>
 
-<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> *Note on terminology:* Disagreement across representations is **representation disagreement**, useful precisely because its cause remains unresolved. It is not automatically &quot;epistemic uncertainty&quot; in a calibrated statistical sense. The v0.1 of this document elided this distinction.</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <em>Note on terminology:</em> Disagreement across representations is <strong>representation disagreement</strong>, useful precisely because its cause remains unresolved. It is not automatically &quot;epistemic uncertainty&quot; in a calibrated statistical sense. The v0.1 of this document elided this distinction.</blockquote>
 
 <p><strong>What it addresses.</strong> Mechanism II (Manifold Projection): an event projected onto the training manifold by one representation may not be projected by another. Mechanism V (Feature Space Blindness): different feature extractors have different equivalence-class collapses. Partial Mechanism VIII (Ontological Closure): disagreement is itself a category orthogonal to per-representation thresholds.</p>
 
@@ -155,7 +155,7 @@ Its closing requirement is architectural confession. An instrument does not beco
 
 <p><strong>Definition.</strong> The system preserves a fixed anchor sample of physical events at the lowest feasible common input level — trigger primitives, raw subsystem representations, conditions snapshot, calibration constants. Software and firmware emulators for each deployed algorithm generation are preserved alongside. For each successive trigger generation <strong>compatible with the preserved input abstractions</strong>, the anchor is re-processed under preserved conditions and the per-generation retention statistics are published.</p>
 
-<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> *Important limitation.* Replay is offered only for future algorithms compatible with the preserved input abstractions, not for any future algorithm regardless of input representation. An algorithm that requires inputs the anchor does not preserve cannot be evaluated against the anchor.</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <em>Important limitation.</em> Replay is offered only for future algorithms compatible with the preserved input abstractions, not for any future algorithm regardless of input representation. An algorithm that requires inputs the anchor does not preserve cannot be evaluated against the anchor.</blockquote>
 
 <p><strong>What it addresses.</strong> Mechanism VII (Temporal Context Collapse) directly, for the anchor population. Per-generation comparison establishes whether the trigger system&#x27;s selection of the anchor population is stable across compatible generations.</p>
 
@@ -169,7 +169,7 @@ Its closing requirement is architectural confession. An instrument does not beco
 
 <p><strong>Definition.</strong> The system&#x27;s design document specifies, for each stage of the trigger and reconstruction pipeline, what information is preserved and what is discarded.</p>
 
-<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> *The retention map is the systematic-uncertainty quantification for the trigger&#x27;s epistemic boundary.*</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <em>The retention map is the systematic-uncertainty quantification for the trigger&#x27;s epistemic boundary.</em></blockquote>
 
 <p><strong>What it addresses.</strong> Diagnostically, all eight candidate mechanisms where they apply. Mitigationally, none directly. The retention map is the systematic uncertainty quantification for the trigger&#x27;s epistemic boundary; it does not change the boundary, but makes it visible.</p>
 
@@ -181,7 +181,7 @@ Its closing requirement is architectural confession. An instrument does not beco
 
 <p><strong>Definition.</strong> The classifier reports both aleatoric uncertainty (stochastic detector resolution, irreducible measurement noise) and model-form uncertainty (parameter uncertainty, training-support limitation, misspecification, simulation-to-data mismatch). Estimated noncoverage — the model&#x27;s report that it does not have sufficient information to make a confident classification at the stated coverage level — is treated as a first-class output, with the limits of the noncoverage estimate itself documented.</p>
 
-<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> *Note on terminology.* &quot;Aleatoric vs. epistemic uncertainty&quot; is a useful distinction but the deployed examples vary. &quot;Jet energy scale variation&quot; is not clean aleatoric uncertainty; it is a systematic correction with components of both types. The v0.1 of this document used the dichotomy loosely; v0.2 substitutes the more accurate stochastic/model-form framing.</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <em>Note on terminology.</em> &quot;Aleatoric vs. epistemic uncertainty&quot; is a useful distinction but the deployed examples vary. &quot;Jet energy scale variation&quot; is not clean aleatoric uncertainty; it is a systematic correction with components of both types. The v0.1 of this document used the dichotomy loosely; v0.2 substitutes the more accurate stochastic/model-form framing.</blockquote>
 
 <p><strong>What it addresses.</strong> Mechanism IV (Decision Boundary Entropy Collapse) directly. Partial Mechanism VIII (Ontological Closure): high noncoverage estimate is a signal that the input lies outside the model&#x27;s representational coverage.</p>
 
@@ -225,7 +225,7 @@ Its closing requirement is architectural confession. An instrument does not beco
 
 <p>Anomaly detection methods that do not rely on reconstruction error: density estimation in learned feature spaces, contrastive methods, energy-based models (noting that unnormalized energy is not directly &quot;low likelihood&quot;), normalizing flows.</p>
 
-<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> *Reconstruction-free methods avoid the reconstruction-loss assimilation failure mode (Mechanism II as it manifests in CICADA-class scores). They do not avoid representation foreclosure: density estimation in a learned feature space is still bounded by the feature space.*</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <em>Reconstruction-free methods avoid the reconstruction-loss assimilation failure mode (Mechanism II as it manifests in CICADA-class scores). They do not avoid representation foreclosure: density estimation in a learned feature space is still bounded by the feature space.</em></blockquote>
 
 <p><strong>Mechanisms addressed.</strong> II in its reconstruction-loss form, not in its general representation-foreclosure form. Other mechanisms unaddressed.</p>
 
@@ -235,7 +235,7 @@ Its closing requirement is architectural confession. An instrument does not beco
 
 <p>Adversarial perturbations of known events (displaced, delayed, diffuse, low-energy, ultra-simple, detector-crossing variations) used as stress validation signals and as positive examples for training abstention outputs.</p>
 
-<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> *These are human-constructed stress surrogates, not unknown unknowns. The v0.1 of this document framed these as &quot;generative augmentation for unknown-unknowns,&quot; overstating what the strategy can produce. The corrected framing is that the strategy provides adversarial and transformation-based OOD stress cases against the deployed system — useful for stress-testing, not for discovering genuinely novel physics.*</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <em>These are human-constructed stress surrogates, not unknown unknowns. The v0.1 of this document framed these as &quot;generative augmentation for unknown-unknowns,&quot; overstating what the strategy can produce. The corrected framing is that the strategy provides adversarial and transformation-based OOD stress cases against the deployed system — useful for stress-testing, not for discovering genuinely novel physics.</em></blockquote>
 
 <p><strong>Mechanisms addressed.</strong> I (provides synthetic stress mass for noncoverage training and validation). Quality-of-stress remains a fundamental limitation.</p>
 
@@ -245,7 +245,7 @@ Its closing requirement is architectural confession. An instrument does not beco
 
 <p>Architectural commitments to reserve bandwidth for specific event populations: cross-representation-disagreement events, calibration-shift events, low-multiplicity events, displaced-vertex events, late-timing events, events flagged as ambiguous between physics anomaly and detector fault.</p>
 
-<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> *Constitutional retention is a bandwidth-governance intervention. It does not change per-event classification; it ensures certain populations are not foreclosed at the bandwidth gate. Its mechanism address is VI (Rate Budget Starvation) at the policy level, not at the classifier level.*</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <em>Constitutional retention is a bandwidth-governance intervention. It does not change per-event classification; it ensures certain populations are not foreclosed at the bandwidth gate. Its mechanism address is VI (Rate Budget Starvation) at the policy level, not at the classifier level.</em></blockquote>
 
 <p><strong>Mechanisms addressed.</strong> VI (rate budget governance). Other mechanisms unaddressed by this strategy alone.</p>
 
@@ -477,14 +477,14 @@ Its closing requirement is architectural confession. An instrument does not beco
 
 <p><strong>Core claim — the foreclosure/collapse reconciliation:</strong></p>
 
-<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> *Foreclosure is an active structural feature. Recursive phenomenal collapse is an unmeasured possible consequence of accumulated foreclosure and feedback.*</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <em>Foreclosure is an active structural feature. Recursive phenomenal collapse is an unmeasured possible consequence of accumulated foreclosure and feedback.</em></blockquote>
 
 <p><strong>Three-round witness structure:</strong></p>
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Round 1: TECHNE/Kimi ×2 (mechanisms + delusions); LABOR/ChatGPT (empirical accounting); TACHYON/Claude (synthesis, with v0.1 lower-bound overreach).</li><li style="margin:3px 0">Round 2: PRAXIS/DeepSeek (architectural sketch + resurrection frame); LABOR/ChatGPT (audit identifying lower-bound overreach); TECHNE/Kimi (developmental).</li><li style="margin:3px 0">Round 3: TECHNE/Kimi (perfective sweep); LABOR/ChatGPT (audit identifying surviving v0.2 upper-bound + deployment-taxonomy + &quot;unknown&quot; overreach).</li></ul>
 
 <p><strong>The Isomorphism Principle:</strong></p>
 
-<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> *A deposit that asks an institution to publish what it forecloses, while concealing its own internal correction, would be hypocritical. The deposit&#x27;s transparency about its own corrections is structurally required by its own argument. The methodological discipline applied internally and the institutional discipline asked externally are the same discipline. The discipline must be applied recursively on every revision pass.*</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <em>A deposit that asks an institution to publish what it forecloses, while concealing its own internal correction, would be hypocritical. The deposit&#x27;s transparency about its own corrections is structurally required by its own argument. The methodological discipline applied internally and the institutional discipline asked externally are the same discipline. The discipline must be applied recursively on every revision pass.</em></blockquote>
 
 <p><strong>Seismograph relation (corrected):</strong> OAR/BAR is a microscopic <em>analogue</em>, not a literal aggregation of seismograph bulk metrics. The two form a coordinated research program; structural homology of foreclosure architecture, not aggregation identity.</p>
 
