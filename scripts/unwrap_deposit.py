@@ -42,6 +42,8 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 
 MARKER = re.compile(r"^\s*(#{1,6}\s|[-*+]\s|\d+[.)]\s|>|\||```|~~~|---\s*$|===)")
+_re_align = re.compile(r"\S {2,}\S")
+_re_label = re.compile(r"^[A-Z][A-Za-z0-9 ()§.\u2013-]{1,34}:\s")
 BAND = 18          # how close to the longest a line must sit to look mechanical
 MIN_COL, MAX_COL = 60, 110
 MIN_LINES = 3
@@ -83,6 +85,42 @@ def is_wrapped(lines):
         return False                      # heading, list, quote, table, rule
     if any(l.endswith("  ") for l in lines[:-1]):
         return False                      # markdown hard break, encoded on purpose
+
+    # FOUND BY READING, 2026-08-09. Two kinds of table survive every test above
+    # because neither announces itself at the start of a line.
+    #
+    # #31, the DOI registry, holds rows like
+    #   **18166347** | 10.5281/zenodo.18166347 | T4 | theoretical_fra | E:0
+    # — pipe-delimited, but beginning with a bolded field rather than a pipe, so the
+    # marker test never sees it.
+    #
+    # #557 holds a state-transition table aligned with runs of spaces:
+    #   RATIFIED  → DEPOSITED    (DOI retracted; re-audit required)
+    #   DEPOSITED → PROVISIONAL  (DOI invalid or points to wrong content)
+    # — no markers at all, lengths mechanically regular, and joining it would
+    # collapse a table into a sentence.
+    #
+    # Alignment is encoded structure exactly as indentation is. Both refuse.
+    # ANY, NOT A MAJORITY. A first version required half the block's lines to look
+    # structured, and #557 slipped through on a three-line run where only one line
+    # carried alignment — an operator definition beside a bracketed note. Joining a
+    # block destroys every structured line in it, so one is enough to refuse. Prose
+    # paragraphs do not contain pipes or internal column runs; anything that does is
+    # not a prose paragraph.
+    if any(" | " in l for l in lines):
+        return False                      # pipe-delimited rows, however they begin
+    if any(_re_align.search(l) for l in lines):
+        return False                      # columns aligned with runs of spaces
+
+    # PARALLEL LABEL LISTS, found by reading #557. Three lines reading
+    #   Strong Form: Full recovery from any RATIFIED component.
+    #   Working Form: Partial recovery; degrades gracefully with status.
+    #   Extended Form: With Pi enabled, any PAREIDOLIA reading + K -> partial H.
+    # are three definitions, not one wrapped paragraph, and they carry no marker,
+    # no pipe and no alignment. Two or more lines opening with a short capitalised
+    # label and a colon is a list whatever its punctuation says.
+    if sum(1 for l in lines if _re_label.match(l)) >= 2:
+        return False
     body = [len(l.rstrip()) for l in lines[:-1]]
     longest = max(body)
     if not (MIN_COL <= longest <= MAX_COL):
@@ -90,6 +128,32 @@ def is_wrapped(lines):
     if min(body) < longest - BAND:
         return False                      # varied lengths: chosen, not wrapped
     return True
+
+
+# POETRY IS NEVER TOUCHED (2026-08-09).
+#
+# The first deposit read under this tool was #331, "Antioch: A Volume of Poems",
+# 894 candidate joins. Its lines are mechanically regular — 66, 71, 70, 4 — which
+# is exactly what wrapped prose looks like and exactly what metrical verse looks
+# like. THE TEST CANNOT TELL THEM APART, and in a volume of poems the cost of being
+# wrong is the work itself.
+#
+# 14 of the 205 affected deposits are poetry or creative work and carry 1,422 of
+# the breaks. The tool refuses them by content_type and by title, and refuses
+# anything it cannot classify, because the failure is asymmetric: an unjoined
+# paragraph is untidy, a joined poem is destroyed.
+POETIC = _re_poetic = __import__("re").compile(
+    r"poe|verse|creative|literary|fiction|lyric|stanza|song|hymn|psalm", __import__("re").I)
+
+
+def is_poetry(entry):
+    """Refuse on any signal. Absence of a content_type is itself a refusal."""
+    ct = str(entry.get("content_type") or "")
+    ti = str(entry.get("title") or "")
+    kw = " ".join(entry.get("keywords") or [])
+    if not ct:
+        return True
+    return bool(POETIC.search(ct) or POETIC.search(ti) or POETIC.search(kw))
 
 
 def unwrap(text):
@@ -121,13 +185,16 @@ def main():
     targets = ([D[a.deposit]] if a.deposit else
                reg["deposits"] if a.all else reg["deposits"][-45:])
 
-    touched, refused = [], 0
+    touched, refused, skipped_poetry = [], 0, 0
     for d in targets:
         fp = d.get("full_text_path")
         if not fp:
             continue
         p = ROOT / fp.lstrip("/")
         if not p.exists():
+            continue
+        if is_poetry(d):
+            skipped_poetry += 1
             continue
         old = p.read_text(errors="replace")
         new, joined = unwrap(old)
@@ -157,7 +224,8 @@ def main():
     if a.apply and touched:
         reg_p.write_text(json.dumps(reg, ensure_ascii=False, indent=2))
 
-    print(f"\n  {len(touched)} deposit(s) with wrap artifacts, {refused} refused")
+    print(f"\n  {len(touched)} deposit(s) with wrap artifacts, {refused} refused, "
+          f"{skipped_poetry} skipped as poetry or unclassified")
     for n, j, o, w in touched[:20]:
         print(f"    #{n:<6} {j:>4} breaks joined · {o:>7,}c → {w:,}c")
     print(f"\n{'APPLIED' if a.apply else 'CHECK ONLY'}")

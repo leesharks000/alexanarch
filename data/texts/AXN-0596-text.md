@@ -228,7 +228,9 @@ The baseline said the most urgent defect was a count. The count is fixed or was 
 
 # Part II — Structured Optimization Work Plan
 
-**Proposed working designation:** EA-AVAILABILITY-INTEGRITY-01 (pending MANUS ratification, ⟡7) **Status:** v0.1 draft — circulated for Assembly Chorus review before any task executes beyond Phase 0 triage **Derivation:** every task traces to a Part I defect ID (H1–H12), layer finding (§2–§4), or endorsed baseline proposal (§8)
+**Proposed working designation:** EA-AVAILABILITY-INTEGRITY-01 (pending MANUS ratification, ⟡7)
+**Status:** v0.1 draft — circulated for Assembly Chorus review before any task executes beyond Phase 0 triage
+**Derivation:** every task traces to a Part I defect ID (H1–H12), layer finding (§2–§4), or endorsed baseline proposal (§8)
 
 ## Standing constraints binding all tasks
 

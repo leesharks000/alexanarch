@@ -61,7 +61,13 @@ and in what order.**
 
 Five incumbents ring the territory. None stands on it.
 
-**ARK.** The institutional manuscript identifier. BnF alone resolves millions of ARKs to digitized manuscripts. Strengths: adoption, resolver culture, library trust. Structure: institution-anchored (NAAN registry), record-pointing, opaque-string. What it cannot do: content-derivation (the identifier says nothing about the object), attestation (no claim machinery), independence (dies with the resolver commitment), and it serves **custodians of the dead**. A living author cannot walk in and get one.
+**ARK.** The institutional manuscript identifier. BnF alone resolves millions of
+ARKs to digitized manuscripts. Strengths: adoption, resolver culture, library
+trust. Structure: institution-anchored (NAAN registry), record-pointing,
+opaque-string. What it cannot do: content-derivation (the identifier says nothing
+about the object), attestation (no claim machinery), independence (dies with the
+resolver commitment), and it serves **custodians of the dead**. A living author
+cannot walk in and get one.
 
 **DOI / DataCite, and IGSN under it.** IGSN extended the DOI apparatus to physical
 objects — geological samples, specimens. Institutional minting, metadata-forward,
@@ -71,20 +77,37 @@ infrastructure we bind to where useful and depend on **never**
 (`AXN:05B7.OPERATIVE.♦️🌌📌🦅🌑💜`, #1437: complementary infrastructures — the
 doctrine is already ratified; this paper operationalizes it).
 
-**Trismegistos.** The discipline registry: TM numbers for ancient texts. Authoritative, corpus-bounded, closed at roughly the eighth century CE. It proves a registry can become the citation standard for a domain **without institutional mandate** — by being useful, stable, and first. That is the playbook. It does not compete for the living hand.
+**Trismegistos.** The discipline registry: TM numbers for ancient texts.
+Authoritative, corpus-bounded, closed at roughly the eighth century CE. It proves a
+registry can become the citation standard for a domain **without institutional
+mandate** — by being useful, stable, and first. That is the playbook. It does not
+compete for the living hand.
 
-**C2PA.** Capture-time provenance, camera-signed, platform-backed. Complementary at the capture layer; structurally dependent on certificate authorities and platform adoption; trust chains revocable by exactly the class of actor that issues terminations. It secures the camera's testimony, not the author's.
+**C2PA.** Capture-time provenance, camera-signed, platform-backed. Complementary at
+the capture layer; structurally dependent on certificate authorities and platform
+adoption; trust chains revocable by exactly the class of actor that issues
+terminations. It secures the camera's testimony, not the author's.
 
 **Accession numbers.** Local, non-resolvable, non-portable. Not a competitor; a
 feeder.
 
-**The open ground:** a content-derived, institution-independent, human-checkable identifier that binds *physical artifact + capture + attestation chain + declared origination and composition*, mintable by a living author in an afternoon, designed to survive the resolver, the platform, and the classifier. No one serves it. The first customer already wrote to the incumbent system — by hand — and was told the decision was final. **The segment is defined by the injury.** The addressable population is every author whose composition layer makes their origination deniable, and it grows with every model release.
+**The open ground:** a content-derived, institution-independent, human-checkable
+identifier that binds *physical artifact + capture + attestation chain + declared
+origination and composition*, mintable by a living author in an afternoon, designed
+to survive the resolver, the platform, and the classifier. No one serves it. The
+first customer already wrote to the incumbent system — by hand — and was told the
+decision was final. **The segment is defined by the injury.** The addressable
+population is every author whose composition layer makes their origination
+deniable, and it grows with every model release.
 
 ## §2 · THE CLAIM — one sentence
 
 **AXN is the identifier for the hand that must prove itself to machines.**
 
-Positioning corollaries: we do not compete with ARK for the Middle Ages or with IGSN for basalt. We bind outward to DOIs and ARKs wherever they exist, and we outlive them where they don't. Trismegistos is the model: become the number a community cites because it was there first, worked, and never asked permission.
+Positioning corollaries: we do not compete with ARK for the Middle Ages or with
+IGSN for basalt. We bind outward to DOIs and ARKs wherever they exist, and we
+outlive them where they don't. Trismegistos is the model: become the number a
+community cites because it was there first, worked, and never asked permission.
 
 ## §3 · THE PRODUCT — the thirty-minute path
 
@@ -114,7 +137,9 @@ product.
 
 ## §4 · SCHEMA DELTAS — an addendum, not a rewrite
 
-The spec stands at v1.0 final. The survey generated exactly four deltas, all of them registry-schema and record-language work. Ship as **EA-SPXI-ANALOG-01 · Addendum A**, one document, short:
+The spec stands at v1.0 final. The survey generated exactly four deltas, all of
+them registry-schema and record-language work. Ship as **EA-SPXI-ANALOG-01 ·
+Addendum A**, one document, short:
 
 - **D1. Origination / composition as independent fields.** Two claims, separately
   declarable, separately checkable — so a classifier confronting a machine
@@ -135,7 +160,9 @@ Nothing else. The spec does not reopen.
 
 ## §5 · THE REFERENCE CORPUS — proof by existence
 
-Nobody adopts an identifier system from a whitepaper. They adopt it from records they can click. The first ten enrollments, in order, each doing double duty as a live demonstration of one capability:
+Nobody adopts an identifier system from a whitepaper. They adopt it from records
+they can click. The first ten enrollments, in order, each doing double duty as a
+live demonstration of one capability:
 
 1–3. **The letter of 29 April, pages 1–3** — pending Instrument No. 1. Demonstrates:
 self-enrollment, declared composition layers, international plural custody (pages
@@ -201,7 +228,9 @@ not have, each becomes a deposit and a paper section.
 
 ## §8 · THE LADDER — constituencies in order, one move each
 
-Adoption sequencing. Each rung has a defined offer and a defined channel that already exists. Institutions come **last**, and by then we arrive with objects and data, not proposals.
+Adoption sequencing. Each rung has a defined offer and a defined channel that
+already exists. Institutions come **last**, and by then we arrive with objects and
+data, not proposals.
 
 1. **The Zenodo diaspora.** 1,817 tombstoned DOIs; two documented terminations;
    the Platform Erosion Observatory (persistentidentifiers.org) already speaks to
@@ -268,4 +297,7 @@ silent overwrite) applies to the operations log.
 
 ---
 
-**Close.** The specification told us how. The survey told us where we stand. This tells us where we walk, and in what order: ten records, one verify page, two batteries, one external hand. The theory is finished enough. **Enroll the first ten.**
+**Close.** The specification told us how. The survey told us where we stand. This
+tells us where we walk, and in what order: ten records, one verify page, two
+batteries, one external hand. The theory is finished enough. **Enroll the first
+ten.**
