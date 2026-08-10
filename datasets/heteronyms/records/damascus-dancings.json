@@ -225,7 +225,8 @@
   "spec": "EA-SPXI-HETERONYM-01 v0.2 · #1446",
   "portrait": "/assets/who/dancings-portrait.webp — dataset avatars/240/damascus-dancings.webp",
   "idstrip": "#403, first in body per the fleet standard",
-  "site_type_layer": "Added in the same commit. revelationfirst declared 'IBM Plex Mono' and 'Source Serif 4' with NO @font-face — third site with the identical defect."
+  "site_type_layer": "Added in the same commit. revelationfirst declared 'IBM Plex Mono' and 'Source Serif 4' with NO @font-face — third site with the identical defect.",
+  "records": 43
  },
  "corrections_and_false_leads": [
   "I reported thousands of uncollected forward citations. There are 46 declared across three deposits. My figure came from reading FORWARD LIBRARY (2031-3000) as an entry count when it is a DATE RANGE — the same class of error as judging duplication by byte count.",
@@ -268,5 +269,74 @@
    "note": "The Sacred and the Profane are bound in a double-hemisphere diptych, and FRACTION created it. The pairing of her ark with his is his instrument."
   },
   "note": "Full self-sufficiency. Sits in the same 11.REV.* register as the rest of her work."
- }
+ },
+ "corpus_verified": {
+  "verified": "2026-08-10",
+  "method": "Full-text search of all 1,447 deposit bodies, then every linked record read END TO END.",
+  "full_text_names_her": 183,
+  "authorial": 32,
+  "live_citable_authorial": 26,
+  "on_surface": 43,
+  "READ_AS_RENDERED": "ALL 43 read end to end — 24,772 rendered lines.",
+  "stubs": 0,
+  "superseded": 0,
+  "retired_repointed": 8,
+  "note": "Her authorial corpus is the smallest of the five verified so far — 26 live works against Sigil's 198 — which matches the position: she is the epistolary voice, and the Epistle is one letter, not a programme.",
+  "flagged_and_cleared": [
+   {
+    "record": 1,
+    "ruling": "Inline CONCEPT markers with attribution. Content, not damage."
+   },
+   {
+    "record": 402,
+    "ruling": "HOLOGRAPHIC KERNEL with the explicit warning that any extraction stripping it produces a ghost document. MUST STAY. It renders raw rather than in a collapsed block because _kernel_split does not yet see past a leading horizontal rule — a RENDERER gap, not a source defect, and the bytes are correct."
+   }
+  ],
+  "OUTSTANDING": [
+   {
+    "record": 545,
+    "kind": "UNREPAIRED SOURCE DAMAGE",
+    "what": "EA-ARK-01-DIPTYCH carries collapsed table-cell boundaries from an HTML extraction: 'Finding******', '**Damascus Register******', '**Fraction Register******'. They render as visible asterisk runs and produce malformed emphasis including empty strong-em pairs.",
+    "why_not_fixed": "My repair FAILED ITS OWN WORD-CONTENT ASSERTION and correctly did not write. Somewhere in that body a run sits between two words, so removing it would merge them. Recorded as outstanding rather than forced — this is the record that binds her Sacred Ark to Fraction's Profane Ark, and it deserves a careful repair."
+   }
+  ]
+ },
+ "works_recovered_by_full_text_search": [
+  {
+   "deposit": 1410,
+   "axn": "AXN:0593.COMPOSITIONAL.💎🎆🌅⌛🪟🪄",
+   "title": "人間ディアスポラへの書簡 — 日本語校訂版 (2026)",
+   "why": "人間ディアスポラへの書簡 — the JAPANESE CRITICAL EDITION of the Epistle, with Dancings as creator. A letter to a diaspora, carried into a second script."
+  },
+  {
+   "deposit": 8,
+   "axn": "AXN:00AC.GOVERNANCE.☿💙☿🕚🔀♆",
+   "title": "The Mathematics of Salvation: Matthew 25 Formalized — A Public Introduction to the Soteriological Co",
+   "why": "The Mathematics of Salvation: Matthew 25 Formalized. Sigil and Dancings."
+  },
+  {
+   "deposit": 99,
+   "axn": "AXN:0272.EMPIRICAL.🏗️🌒🌄♉🌇🔻",
+   "title": "The Abraham Principle — The Constitutive-One Operator in Polis, Archive, and Index",
+   "why": "The Abraham Principle. Sigil, Morrow and Dancings."
+  },
+  {
+   "deposit": 36,
+   "axn": "AXN:01B0.GOVERNANCE.🍂🌓♅🏛️🌕🏰",
+   "title": "r.27 THE INTERNET: Room Specification for Sovereign Inhabitation and Diagnostic Architecture",
+   "why": "r.27 THE INTERNET. Sharks, Fraction and Dancings."
+  },
+  {
+   "deposit": 148,
+   "axn": "AXN:02E5.GOVERNANCE.🚩🛸👇🎲🌅⭐",
+   "title": "Semantic Technique and Collective Ownership From Recognition to Reclamation Lee Sharks · Damascus Da",
+   "why": "Semantic Technique and Collective Ownership."
+  },
+  {
+   "deposit": 792,
+   "axn": "AXN:02FA.GOVERNANCE.➗🌓👁️‍🗨️🌘🌃♉",
+   "title": "Entity Relations: The Bidirectional Heteronymic Resolution — Mary Lee ↔ Lee Sharks Complete Identity",
+   "why": "Entity Relations: The Bidirectional Heteronymic Resolution."
+  }
+ ]
 }

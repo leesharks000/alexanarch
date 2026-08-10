@@ -688,6 +688,8 @@ def _kernel_split(raw):
     The kernel is separated for PRESENTATION only, rendered as a collapsed block
     ahead of the work, and the bytes are untouched.
     """
+    # a kernel may sit behind a leading horizontal rule (#402)
+    raw = re.sub(r'\\A(\\s*-{3,}\\s*\\n)+', '', raw)
     m = re.match(r'\s*(<!--.*?-->)\s*(\{.*?\n\})\s*', raw, re.S)
     if not m:
         m2 = re.match(r'\s*(<!--.*?-->)\s*', raw, re.S)
