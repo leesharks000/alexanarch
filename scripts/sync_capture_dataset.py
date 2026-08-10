@@ -35,7 +35,13 @@ DEST = ROOT / "datasets" / "capture-registry"
 
 # member name → where it comes from ("mm" = the source-of-truth working copy)
 MEMBERS = {
-    "EA-WG-CAPTURES-01.json": ("mm", "data/registry.json"),
+    # SOURCE CORRECTED 2026-08-09: the registry's own _FLOW block declares
+    # alexanarch:data/EA-WG-CAPTURES-01.json the source of truth (adopted
+    # 2026-08-07 after 12 captures were found stranded in this very mirror).
+    # This map still pointed at the machinemediation working copy, so a sync
+    # would have overwritten the published dataset from a downstream mirror —
+    # the same failure inverted. The registry is now read from source.
+    "EA-WG-CAPTURES-01.json": ("local", "data/EA-WG-CAPTURES-01.json"),
     "capture-deposit-links.json": ("local", "data/capture-deposit-links.json"),
     "semantic-addresses.json": ("local", "data/semantic-addresses.json"),
 }
@@ -90,12 +96,13 @@ def main():
         "date": reg_date,
         "description": (
             "Dated captures of machine-composition reception events against the Crimson "
-            "Hexagonal Archive's entities and frameworks. Authored on machinemediation.org "
-            "and published here; this copy is generated, never hand-edited. The manifest is "
+            "Hexagonal Archive's entities and frameworks. Authored in the archive at "
+            "data/EA-WG-CAPTURES-01.json and published here; this copy is generated, "
+            "never hand-edited. The manifest is "
             "rebuilt from the files actually present, so it cannot declare a member the "
             "dataset does not hold."),
-        "canonical_home": "https://www.machinemediation.org/captures/",
-        "source_of_truth": "machinemediation.org — data/registry.json",
+        "canonical_home": "https://www.alexanarch.org/captures/",
+        "source_of_truth": "alexanarch — data/EA-WG-CAPTURES-01.json (see the registry's _FLOW block)",
         "total_captures": total_captures,
         "generated_by": "scripts/sync_capture_dataset.py",
         "generated_at": now,
