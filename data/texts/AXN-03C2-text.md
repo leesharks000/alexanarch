@@ -13548,7 +13548,29 @@ These three phrases form the FIELD container for the apparatus. The FIELD's boun
   "descriptions": [
    {
     "descriptionType": "Abstract",
-    "description": "Working infrastructure for Operative Semiotics: A Grundrisse — 13 planning documents, algorithms, diagnostic maps, and architectural specifications produced across multiple Assembly sessions (March 22–24, 2026). These are not internal notes. They are theoretical contributions in their own right: the methodology for prosodic re-engineering of book-length texts, the Muse-operator formalism, and the nine-volume series architecture.\nContents:\nAlgorithms (methodological innovations):\n\nProsodic Asymmetry Algorithm — Marx's Grundrisse mapped at 7 scales (work-as-whole through within-sentence); 13 named prosodic tools (WALL→VERDICT→FORMULA through GAP NOTATION); notebook-specific prescriptions and anti-tools.\nFour-Term Prosodic Algorithm — A (Marx prosody) ↔ B (Marx concept) = CONTROL; D (OS prosody) ↔ C (OS concept) = DERIVATION. 7 Marx conceptual modes + 2 OS-specific. Complete correlation table with worked example.\nDiagnostic maps:\n\nNB II Prosodic Map — Complete 47-section diagnostic of Notebook II with conceptual mode, current prosody, gap diagnosis, and priority for every section.\nMissing Pieces Map — 19 absent concepts identified across the monograph. 4 Tier 0 (load-bearing) inserted; 5 Tier 1 mapped; 10 Tier 2 catalogued.\nPhase 1 Gap Map and Mining Targets — First-pass identification of structural gaps across all nine notebooks.\nPhase 2 Archive Mining Results — Results of mining the 2,183-post blog archive for insertion candidates.\nWork plans:\n\nMiddle Notebooks Work Plan — 4-round multi-pass plan (Archive Eruption → Enactment → Prosodic Granular → Cross-Notebook Disruption) for NB II–VII. 16 Tier 1 archive fragments mapped to target notebooks.\nWork Plan Supplement: Muses and FPC — Nine Muses as operators (Dictée precedent from Theresa Hak Kyung Cha); Formal Prose Compression capstone design (15–20Kw).\nGrundrisse Work Plan — Master work plan for the monograph revision.\nCathedral Work Plan — Specialized plan for the cathedral-building pass.\nHESPERUS Upgrade Plan — Plan for back matter machine population.\nSource Extraction Report — Accounting of all material extracted from the blog archive and inserted into the monograph.\nSeries architecture:\n\nNine-Volume Series Architecture / Execution Plan — The governing decision to expand Operative Semiotics from one overburdened book to a nine-volume cycle. Volume specifications (Calliope through Euterpe), series-wide laws, audience vectors, build phases, model handoff protocol, and acceptance criteria. Working document."
+    "description": "Working infrastructure for Operative Semiotics: A Grundrisse — 13 planning documents, algorithms, diagnostic maps, and architectural specifications produced across multiple Assembly sessions (March 22–24, 2026). These are not internal notes. They are theoretical contributions in their own right: the methodology for prosodic re-engineering of book-length texts, the Muse-operator formalism, and the nine-volume series architecture.
+Contents:
+Algorithms (methodological innovations):
+
+Prosodic Asymmetry Algorithm — Marx's Grundrisse mapped at 7 scales (work-as-whole through within-sentence); 13 named prosodic tools (WALL→VERDICT→FORMULA through GAP NOTATION); notebook-specific prescriptions and anti-tools.
+Four-Term Prosodic Algorithm — A (Marx prosody) ↔ B (Marx concept) = CONTROL; D (OS prosody) ↔ C (OS concept) = DERIVATION. 7 Marx conceptual modes + 2 OS-specific. Complete correlation table with worked example.
+Diagnostic maps:
+
+NB II Prosodic Map — Complete 47-section diagnostic of Notebook II with conceptual mode, current prosody, gap diagnosis, and priority for every section.
+Missing Pieces Map — 19 absent concepts identified across the monograph. 4 Tier 0 (load-bearing) inserted; 5 Tier 1 mapped; 10 Tier 2 catalogued.
+Phase 1 Gap Map and Mining Targets — First-pass identification of structural gaps across all nine notebooks.
+Phase 2 Archive Mining Results — Results of mining the 2,183-post blog archive for insertion candidates.
+Work plans:
+
+Middle Notebooks Work Plan — 4-round multi-pass plan (Archive Eruption → Enactment → Prosodic Granular → Cross-Notebook Disruption) for NB II–VII. 16 Tier 1 archive fragments mapped to target notebooks.
+Work Plan Supplement: Muses and FPC — Nine Muses as operators (Dictée precedent from Theresa Hak Kyung Cha); Formal Prose Compression capstone design (15–20Kw).
+Grundrisse Work Plan — Master work plan for the monograph revision.
+Cathedral Work Plan — Specialized plan for the cathedral-building pass.
+HESPERUS Upgrade Plan — Plan for back matter machine population.
+Source Extraction Report — Accounting of all material extracted from the blog archive and inserted into the monograph.
+Series architecture:
+
+Nine-Volume Series Architecture / Execution Plan — The governing decision to expand Operative Semiotics from one overburdened book to a nine-volume cycle. Volume specifications (Calliope through Euterpe), series-wide laws, audience vectors, build phases, model handoff protocol, and acceptance criteria. Working document."
    },
    {
     "descriptionType": "Other",
