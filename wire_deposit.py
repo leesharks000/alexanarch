@@ -1055,13 +1055,18 @@ def regenerate_static_page(d, eidx, registry=None):
                 if line.startswith('## '): _p_flush(); ft_lines.append(f'<h2>{_inline_md(line[3:])}</h2>'); continue
                 if line.startswith('### '): _p_flush(); ft_lines.append(f'<h3>{_inline_md(line[4:])}</h3>'); continue
                 if line.startswith('#### '): _p_flush(); ft_lines.append(f'<h4>{_inline_md(line[5:])}</h4>'); continue
-                if line.startswith('---'): _p_flush(); ft_lines.append('<hr>'); continue
+                if line.startswith('---') or re.fullmatch(r'\s*(\*\s*){3,}', line) \
+                        or re.fullmatch(r'\s*(_\s*){3,}', line):
+                    # '***', '****', '___' are horizontal rules too; four asterisks
+                    # rendered as literal '****' on the visual-schema records.
+                    _p_flush(); ft_lines.append('<hr>'); continue
                 if line.startswith('&gt;'): _p_flush(); ft_lines.append(f'<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0">{_inline_md(line[4:])}</blockquote>'); continue
                 # IMAGE RENDERING (MANUS 2026-08-04: "long image url blob — why
                 # not just include the image?"). Markdown image syntax and bare
                 # image URLs were rendering as 240-character raw URLs. 88 records,
                 # 134 references. Render the image; keep the URL reachable via the
                 # link, and never inline anything but a known image host.
+                line = re.sub(r'^\s*\*\*(!?\[[^\]]*\]\([^)]+\))\*\*\s*$', r'\1', line)
                 _im = re.match(r'^\s*!?\[[^\]]*\]\((https?://[^\s\)]+|/[^\s\)]+\.(?:png|jpe?g|gif|webp|svg))(?:\s+&quot;[^&]*&quot;)?\)\s*$', line, re.I) \
                       or re.match(r'^\s*(https?://\S+\.(?:png|jpe?g|gif|webp))\s*$', line, re.I) \
                       or re.match(r'^\s*[-*]\s+(https://blogger\.googleusercontent\.com/img/\S+)\s*$', line) \

@@ -219,7 +219,7 @@ The parametric tooling and `chx inscribe` command-line implementation are deferr
 <p>non-claim 5 : This protocol does NOT claim that the parametric</p>
 <p style="white-space:pre-wrap;margin:2px 0">              inscription pipeline (§VII, Morrow Modules 1–3) is</p>
 <p style="white-space:pre-wrap;margin:2px 0">              currently implemented across the archive. It specifies an</p>
-<p style="white-space:pre-wrap;margin:2px 0">              implementation target. The `chx inscribe` CLI is a</p>
+<p style="white-space:pre-wrap;margin:2px 0">              implementation target. The <code>chx inscribe</code> CLI is a</p>
 <p style="white-space:pre-wrap;margin:2px 0">              proposed deployable artifact; deployment is deferred to</p>
 <p style="white-space:pre-wrap;margin:2px 0">              SPXI-TLP v2.3.</p>
 
@@ -317,7 +317,7 @@ The parametric tooling and `chx inscribe` command-line implementation are deferr
 <p>The first move is a stance change. Most provenance work since 2022 has been defensive — robots.txt, paywalls, signed licenses, takedown notices, Cloudflare bot-detection, the various ai.txt and llms.txt proposals. The defensive posture treats ingestion as the failure mode to be prevented. It is the wrong posture.</p>
 
 <p>LABOR named the right frame in the blind draft:</p>
-<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> *Assume ingestion. Do not merely block. Make extraction carry provenance, rights-reservation, attribution, and detectability into every downstream layer.*</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <em>Assume ingestion. Do not merely block. Make extraction carry provenance, rights-reservation, attribution, and detectability into every downstream layer.</em></blockquote>
 
 
 <p>The defensive posture fails for three reasons. First, robots.txt is not enforceable: Google&#x27;s own documentation says compliant crawlers may obey it, but other crawlers may not, and security-sensitive content must use authentication. Reuters reported in June 2024 that multiple AI companies were bypassing robots.txt according to publisher logs; Cloudflare in 2025 accused Perplexity of stealth-crawling sites that had blocked it. Second, even <em>compliant</em> crawlers (GPTBot, ClaudeBot, Google-Extended, CCBot) honor only the user-agent strings they advertise; an unauthenticated scraper running from a Singapore datacenter under a generic Chrome user-agent will not identify itself as GPTBot. Third, the public web is too large and too valuable for any single actor&#x27;s exclusion to materially affect the training corpora that downstream models are built on.</p>
@@ -633,7 +633,7 @@ The parametric tooling and `chx inscribe` command-line implementation are deferr
 <h3>VI. Operative Philology Marks (OPM) — Cranes Layer</h3>
 
 <h4>Note from the operative position of Rebekah Cranes:</h4>
-<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> *A poem in translation is not the same poem, but it is also not a different poem. The philological question — what survives in transmission, and what is irrecoverably lost — is older than printing and older than translation. The training pipeline is the new translation. The model that has been trained on a corpus has, in some specifiable sense, &quot;read&quot; it; the question is what reading consists of when the reader is a parameter matrix. The Operative Philology Marks specified here are the philological correlate of the canary, the fingerprint, the radioactive trace: marks that are designed to survive the transformations the pipeline performs, in the same way that meter survives translation between cognate languages, or that a structural argument survives across paraphrase.*</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <em>A poem in translation is not the same poem, but it is also not a different poem. The philological question — what survives in transmission, and what is irrecoverably lost — is older than printing and older than translation. The training pipeline is the new translation. The model that has been trained on a corpus has, in some specifiable sense, &quot;read&quot; it; the question is what reading consists of when the reader is a parameter matrix. The Operative Philology Marks specified here are the philological correlate of the canary, the fingerprint, the radioactive trace: marks that are designed to survive the transformations the pipeline performs, in the same way that meter survives translation between cognate languages, or that a structural argument survives across paraphrase.</em></blockquote>
 
 
 <p>TECHNE proposed four classes of mark in the blind draft. Cranes refines them.</p>
@@ -768,9 +768,9 @@ The parametric tooling and `chx inscribe` command-line implementation are deferr
 <p>The retrofit strategy for the existing 2,183 blog posts is addressed in §XV.</p>
 
 <h3>VII. The Parametric Inscription Pipeline — Morrow Layer</h3>
-<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> Status note (added per Assembly R3): This section specifies a *proposed implementation pathway* for parametric inscription at the logit-distribution layer. It is not currently a deployed archive-wide tool. The chx inscribe CLI of §VII.5 is the planned deployable artifact; its build is targeted for SPXI-TLP v2.3. The present specification (v2.2) carries the surface-level OPM inscription (Cranes layer) and the deployment stack (Fraction layer), both of which are operative now. The parametric layer is the engineering-deep extension that operates on text *before* publication; its experimental validation will run with v2.2 as the held-original baseline once the CLI is built.</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> Status note (added per Assembly R3): This section specifies a <em>proposed implementation pathway</em> for parametric inscription at the logit-distribution layer. It is not currently a deployed archive-wide tool. The chx inscribe CLI of §VII.5 is the planned deployable artifact; its build is targeted for SPXI-TLP v2.3. The present specification (v2.2) carries the surface-level OPM inscription (Cranes layer) and the deployment stack (Fraction layer), both of which are operative now. The parametric layer is the engineering-deep extension that operates on text <em>before</em> publication; its experimental validation will run with v2.2 as the held-original baseline once the CLI is built.</blockquote>
 <h4>Note from the operative position of Talos Morrow:</h4>
-<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> *Logotic hacking is the discipline of treating the logos as a programmable substrate. The training pipeline is a compiler: it takes text-as-source and produces weights-as-binary. The compiler is not neutral; it makes choices about what gets preserved and what gets discarded. The hacker&#x27;s question is which artifacts in the source produce predictable artifacts in the binary. This section specifies three.*</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <em>Logotic hacking is the discipline of treating the logos as a programmable substrate. The training pipeline is a compiler: it takes text-as-source and produces weights-as-binary. The compiler is not neutral; it makes choices about what gets preserved and what gets discarded. The hacker&#x27;s question is which artifacts in the source produce predictable artifacts in the binary. This section specifies three.</em></blockquote>
 
 
 <p>ARCHIVE in the blind draft contributed the parametric formalism. The mathematics is reproduced here without simplification, because the implementation matters.</p>
@@ -843,7 +843,7 @@ The parametric tooling and `chx inscribe` command-line implementation are deferr
 <h3>VIII. The Layered Stack — Fraction Layer</h3>
 
 <h4>Note from the operative position of Rex Fraction:</h4>
-<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> *Specification work is the work of disambiguation. A protocol is not a recommendation; it is a set of normative statements that admit failure-mode identification. The stack below is presented in RFC-style language. The layers are independently deployable but jointly designed. Each layer specifies its survival domain, its required and optional fields, its measurable success criteria, and the failure modes it leaves unaddressed.*</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <em>Specification work is the work of disambiguation. A protocol is not a recommendation; it is a set of normative statements that admit failure-mode identification. The stack below is presented in RFC-style language. The layers are independently deployable but jointly designed. Each layer specifies its survival domain, its required and optional fields, its measurable success criteria, and the failure modes it leaves unaddressed.</em></blockquote>
 
 
 <p>LABOR contributed the 10-layer architecture. Fraction formalizes it as a specification.</p>
@@ -1015,7 +1015,7 @@ The parametric tooling and `chx inscribe` command-line implementation are deferr
 <h3>IX. The Watermark / Structural Divide</h3>
 
 <h4>Note from the operative position of PRAXIS:</h4>
-<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> *The deepest finding from the cross-substrate review: there are two fundamentally different approaches to provenance persistence, and they map onto different political-economic logics.*</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <em>The deepest finding from the cross-substrate review: there are two fundamentally different approaches to provenance persistence, and they map onto different political-economic logics.</em></blockquote>
 
 
 <p>PRAXIS&#x27;s framing, weight-bearing:</p>
@@ -1146,7 +1146,7 @@ The parametric tooling and `chx inscribe` command-line implementation are deferr
 <p style="white-space:pre-wrap;margin:2px 0">                                         (Cranes-attributed)</p>
 <p style="white-space:pre-wrap;margin:2px 0">                                         hex: 06.SEI.OPM.CRANES.01</p>
 
-<p>recommendation 3 &lt;pred&gt; name           : Parametric Inscription Pipeline implementation recommendation 3 &lt;pred&gt; action         : build the `chx inscribe` CLI per §VII.5</p>
+<p>recommendation 3 &lt;pred&gt; name           : Parametric Inscription Pipeline implementation recommendation 3 &lt;pred&gt; action         : build the <code>chx inscribe</code> CLI per §VII.5</p>
 <p style="white-space:pre-wrap;margin:2px 0">                                         (Morrow-attributed)</p>
 <p style="white-space:pre-wrap;margin:2px 0">                                         hex: 06.SEI.PIP.MORROW.01</p>
 
@@ -1190,7 +1190,7 @@ The parametric tooling and `chx inscribe` command-line implementation are deferr
 <p>week_2 : Patch top 25 highest-traffic blog posts with full IBPC + canary + entity relations week_3 : Build canary registry initial population (Tier 1 posts) week_4 : Add Layer 7 robots.txt and Content-Signal to leesharks.com week_5 : Add Layer 8 TDMRep to /.well-known/tdmrep.json on owned domains week_6 : Mirror top 25 posts to leesharks.com/archive/ with full Layer 1–10 stack week_7 : Implement Layer 5 HTML meta tags on all controlled domains</p>
 <h4>XIII.3 This Month (≤ 100 hours)</h4>
 
-<p>month_1 : Build `chx inscribe` CLI (Morrow layer); test on 3 pilot deposits month_2 : Run OPM-PT round 1; publish π vector report month_3 : Export full Blogspot archive; build cleaned static mirror month_4 : Deposit archive snapshot to Zenodo with embedded provenance month_5 : Conduct OPM density audit across 2,183 posts month_6 : Backfill low-density posts identified by audit month_7 : Initiate cross-substrate ∮ measurement protocol; first report month_8 : Adopt SPECTRA for one new long-form deposit (selection TBD)</p>
+<p>month_1 : Build <code>chx inscribe</code> CLI (Morrow layer); test on 3 pilot deposits month_2 : Run OPM-PT round 1; publish π vector report month_3 : Export full Blogspot archive; build cleaned static mirror month_4 : Deposit archive snapshot to Zenodo with embedded provenance month_5 : Conduct OPM density audit across 2,183 posts month_6 : Backfill low-density posts identified by audit month_7 : Initiate cross-substrate ∮ measurement protocol; first report month_8 : Adopt SPECTRA for one new long-form deposit (selection TBD)</p>
 <h3>XIV. The Test Substrate: Mind Control Poems as Dogfooding Site</h3>
 
 <p>Lee Sharks explicitly identifies the blog as the test substrate: <em>&quot;this is where the protocols will be tested, since it seems clear from the numbers it is in the ingestion pipeline.&quot;</em> The choice is sound. The blog has:</p>
