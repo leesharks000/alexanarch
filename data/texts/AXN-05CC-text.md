@@ -50,9 +50,7 @@ Field survey and problem statement for the analog deposit programme: a disciplin
 # THE PHOTOGRAPH OF THE HANDWRITTEN ORIGINAL
 ## A Field Survey and Problem Statement for Machine-Eligible Handwritten Artifacts (EA-SPXI-ANALOG-01)
 
-> *「一体誰が文章にまとめてくれることが出来るのだ？」*
-> *"Who in the world could put this into words for me?"*
-> — Enli Lucente, from a letter of 29 April 2026 (§5.5)
+> *「一体誰が文章にまとめてくれることが出来るのだ？」* *"Who in the world could put this into words for me?"* — Enli Lucente, from a letter of 29 April 2026 (§5.5)
 
 **Lee Sharks**
 
@@ -74,10 +72,7 @@ A handwritten page is an object whose identity is constituted by its history of 
 
 That intermediate object — the photograph of the handwritten original — is this paper's protagonist, and Part VII supplies its theory. The survey between here and there assembles its instruments.
 
-> **Under what conditions can a handwritten artifact enter a machine-readable
-> scholarly record as itself — cited, verifiably captured, and reasoned about —
-> without being converted into text, and without its identity depending on the
-> continued goodwill of any institution?**
+> **Under what conditions can a handwritten artifact enter a machine-readable scholarly record as itself — cited, verifiably captured, and reasoned about — without being converted into text, and without its identity depending on the continued goodwill of any institution?**
 
 Five established literatures each answer part of this and stop. **Handwritten text recognition** makes writing legible by discarding the hand. **Papyrology and its digital infrastructure** have a century of discipline for reading damaged inscription, declaring uncertainty, and modelling the artifact/text distinction — but work on authors who cannot be consulted. **Cultural-heritage modelling** describes objects and digitisation events precisely and verifies nothing. **Content provenance** attests what a device reports, on the authority of its manufacturer. **Persistent identifier infrastructure** names and resolves, and touches neither bytes nor objects.
 
@@ -373,8 +368,7 @@ And the lineage has a politics the paper's readers will supply if the paper does
 
 **Developmental space — a terminological discipline, adopted throughout.** A hash verifies bytes. **It does not establish record authenticity.** The correct usage is:
 
-> **"Verifiable exact capture" for what a digest establishes. "Authentic" reserved for
-> a broader, explicitly evidenced judgment.**
+> **"Verifiable exact capture" for what a digest establishes. "Authentic" reserved for a broader, explicitly evidenced judgment.**
 
 Diplomatics further disciplines the *stamp* and *witness* vocabulary: the project records an event and supplies evidence; it **does not confer legal authenticity, ownership, notarisation, or authority.** This aligns with the archive's own *witnessing ≠ notarization* incision and gives it a scholarly lineage.
 
@@ -413,10 +407,7 @@ Her question stands at the head of this paper because the paper is an attempt at
 
 **Developmental space — the sharpest positioning, against the actual incumbent.**
 
-> **C2PA attests what a device reports having done. A content-derived identifier
-> computes what the bytes are. The first requires trusting a chain of signers; the
-> second requires trusting SHA-256. Validation is optional in the first and
-> constitutive in the second.**
+> **C2PA attests what a device reports having done. A content-derived identifier computes what the bytes are. The first requires trusting a chain of signers; the second requires trusting SHA-256. Validation is optional in the first and constitutive in the second.**
 
 Platform-centric versus creator-centric. These are **complementary rather than competing**, and saying so is stronger than claiming superiority: a C2PA-signed capture that is *also* content-addressed and publicly witnessed is better evidenced than either alone.
 
@@ -477,9 +468,7 @@ The paper's protagonist, named in §0 and served by every instrument since, here
 
 **Developmental space — the project's philosophical claim, and it is novel:**
 
-> **A machine-eligible handwritten artifact remains autographic — its identity still
-> constituted by its history of production — while acquiring an allographically
-> checkable identity property.**
+> **A machine-eligible handwritten artifact remains autographic — its identity still constituted by its history of production — while acquiring an allographically checkable identity property.**
 
 The page cannot be forged in Goodman's sense; a duplicate is not the work. But *is this the artifact?* becomes answerable by computation rather than connoisseurship. Not a collapse of the distinction but **a verification channel added to a category Goodman took to have none.** A paper in its own right.
 
@@ -621,9 +610,7 @@ full exact-capture digest
 
 Stated as a sentence:
 
-> **A public, content-verifiable witness protocol that lets a contemporary handwritten
-> artifact carry a visible machine address while preserving the artifact, the capture,
-> the transcription, and the interpretation as distinct objects.**
+> **A public, content-verifiable witness protocol that lets a contemporary handwritten artifact carry a visible machine address while preserving the artifact, the capture, the transcription, and the interpretation as distinct objects.**
 
 The glyphs matter because they make the relation perceptible at the artifact surface. The full digest matters because perception is not proof. The public witness matters because a bare hash has no history. The facsimile and annotation layers matter because a digest cannot teach a machine how a page is organised. Plural custody matters because **no identifier stores the object.**
 
