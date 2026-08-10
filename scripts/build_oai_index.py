@@ -40,6 +40,15 @@ OUT = ROOT / "data" / "oai-index.json"
 FAMILY = re.compile(r"AXN:[0-9A-Fa-f]+\.([A-Z]+)\.")
 
 
+def _datestamp(d):
+    """When this metadata record last changed, per the archive's own history."""
+    mods = [m.get("date", "")[:10] for m in (d.get("record_modifications") or [])
+            if m.get("date")]
+    dm = (d.get("date_modified") or "")[:10]
+    candidates = [x for x in mods + [dm] if x]
+    return max(candidates) if candidates else (d.get("date") or "")[:10]
+
+
 def dc_type(d):
     ct = str(d.get("content_type") or "").strip()
     return ct or "Text"
@@ -99,7 +108,28 @@ def main():
             kws = [k.strip() for k in kws.split(",") if k.strip()]
         recs.append({
             "id": n,
-            "datestamp": (d.get("date_modified") or d.get("date") or "")[:10],
+            # OAI DATESTAMP = WHEN THIS METADATA RECORD LAST CHANGED (2026-08-09).
+            #
+            # It was taking date_modified, which a bulk pass writes whether or not
+            # anything changed. A live harvest on 2026-08-09 showed the result: 939
+            # records stamped 2026-08-05 with ZERO record_modifications logged that
+            # day, while 2026-08-09 carried 48 real modifications and stamped only 4
+            # records. The field recorded bulk touches and missed actual edits, which
+            # is exactly backwards and makes selective harvesting useless — a
+            # harvester asking from= gets everything or nothing, and can never be
+            # told what is genuinely new.
+            #
+            # The archive already records real changes: every repair appends to
+            # record_modifications with its date. That is the authoritative history,
+            # so the datestamp is now the LATEST of those dates, and falls back to
+            # date_modified only where no modification has ever been logged. Taking
+            # the max of both means a real edit always advances the stamp and a
+            # no-op bulk write can never rewind it.
+            #
+            # The deposit's own `date` is deliberately NOT used: that is when the
+            # WORK was made, which belongs in dc:date and is emitted there. A 2014
+            # poem deposited in 2026 is new to a harvester in 2026.
+            "datestamp": _datestamp(d),
             "date": (d.get("date") or "")[:10],
             "title": d.get("title") or "",
             "creator": d.get("creator") or "",
