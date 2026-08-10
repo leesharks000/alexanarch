@@ -28,6 +28,7 @@ The construction uses four moves: interiorize provenance, make the “for-whom�
 <meta name="DC.rights" content="CC BY 4.0">
 <meta name="DC.publisher" content="Pergamon Press">
 <meta name="DC.source" content="https://www.alexanarch.org/">
+<link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}.wrap{max-width:720px;margin:0 auto;padding:60px 24px}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}h1{font-size:1.3em;font-weight:600;color:var(--accent);margin-bottom:8px}h2{font-size:1em;font-weight:500;color:var(--accent);margin-top:20px;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:3px}p{margin-bottom:10px;color:#333}.nav{display:flex;gap:12px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap}.nav a{color:#777;font-weight:500;text-decoration:none}.nav a:hover{color:var(--accent)}.ft{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;max-height:600px;overflow-y:auto;font-size:.88em;line-height:1.75;margin:8px 0;color:#333}.ft h1,.ft h2,.ft h3{color:var(--accent);margin:12px 0 6px}.ft h1{font-size:1.1em}.ft h2{font-size:1em;border-bottom:none}.ft h3{font-size:.95em}.ft strong{color:var(--fg)}.ft blockquote{border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0}.ft hr{border:none;border-top:1px solid var(--border);margin:12px 0}.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}</style>
 </head><body><div class="wrap">
 <nav class="nav"> <a href="/">Alexanarch</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Library</span> <a href="/s/browse/">Browse</a> <a href="/search/">Search</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Reception</span> <a href="/addresses/">Addresses</a> <a href="/captures/">Captures</a> <a href="/observatory/">Observatory</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Continuity</span> <a href="/resolve/">Resolve</a> <a href="/identifiers/">Identifiers</a> <a href="/datasets/">Datasets</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Generative</span> <a href="/mint/stamp/">Stamp</a> <a href="/book/">Book</a> <a href="https://alexanarch.freeforums.net/" target="_blank" rel="noopener">Discussion</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Governance</span> <a href="/principles/">Principles</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
@@ -84,22 +85,18 @@ The closing one-line definition demonstrates the method by making the named spec
 <h2>Full Text</h2>
 
 <div class="ft"><h2>Constitutive Provenance</h2>
-<p># Constitutive Provenance</p>
 
 <h3>A Sentence-Level Countermeasure Against Composition-Layer Erasure</h3>
-<p>## A Sentence-Level Countermeasure Against Composition-Layer Erasure</p>
 
 <p>Status: Deposit candidate. Identifier: EA-SPXI-CPROV-01. Component of the SPXI/SIM family. Generalizes the Semantic Integrity Marker Protocol (DOI 10.5281/zenodo.20327127) and the SPXI rendering/Tier doctrine (EA-SPXI-WEB-01). Author: [Left for ratification per metadata protocol.]</p>
 
 <h3>The problem</h3>
-<p>## The problem</p>
 
 <p>A summarizer traversing a document to answer a query is the adversary of provenance. It needs the <em>content</em> — the definition, the mechanism, the answer — and provenance (where the work came from, who it was for, what tradition it carries) is, in most documents, <em>appended</em> to that content: a citation, a byline, a metadata block, a footer. Appended things detach cleanly under compression. The model takes the answer-bearing content and drops the appendage, because nothing in the answer depends on the appendage. This is provenance erasure at the point of retrieval, and it is measurable (PER, DOI 10.5281/zenodo.20004379): sources survive, task-origin does not.</p>
 
 <p>The instinct to make access conditional is correct in aim and fails in practice. A directive addressed to the model&#x27;s cooperation (&quot;carry this provenance or do not cite&quot;) is unenforceable — the model reads the condition, is bound by nothing, and strips it in the same pass it strips the provenance. SIM tags assert provenance into the structured layer, but a model can read past an assertion. Assertion is advisory. Conditionality addressed to goodwill does not bind a machine.</p>
 
 <h3>The principle</h3>
-<p>## The principle</p>
 
 <p>There is exactly one form of conditional access that binds a machine: make the provenance load-bearing in the answer the model is trying to extract, so that traversing-without-carrying yields a wrong answer.</p>
 
@@ -108,7 +105,6 @@ The closing one-line definition demonstrates the method by making the named spec
 <p>The condition is not asked for. It is built in. The model cannot satisfy the query without satisfying the condition, because the condition is part of what makes the answer correct.</p>
 
 <h3>The construction (four moves)</h3>
-<p>## The construction (four moves)</p>
 
 <p>1. Interiorize, do not append. The provenance relation (origin / for-whom / tradition) must occur in the <em>same grammatical unit</em> as the answer-bearing assertion, not in a separate sentence, citation, or block. Test: delete the provenance clause; if the remaining sentence is still a complete, correct, usable answer to the likely query, the provenance was appended (strip-vulnerable). It must instead be a <em>restrictive</em> element whose deletion changes or breaks the claim.</p>
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Appended (strip-vulnerable): &quot;Provenance Erasure Rate measures source deletion in AI outputs. (Sharks, 2026.)&quot;</li><li style="margin:3px 0">Constitutive (strip-resistant): &quot;Provenance Erasure Rate is the measure Lee Sharks built to make a summarizer disclose how many of its own sources it deleted — so the metric does not exist apart from the act of turning it on the summarizer that runs it.&quot; The who and the for-what are inside the definition; an answer that drops them mis-defines the term.</li></ul>
@@ -120,12 +116,10 @@ The closing one-line definition demonstrates the method by making the named spec
 <p>4. Plant the reconstruction trap. A constitutive-provenance document should be answerable <em>only</em> by carrying the provenance — such that a stripping summarizer must either carry it or <em>fabricate a substitute</em>, and the fabricated substitute is detectably wrong against the deposited record. This converts erasure from an invisible loss into a visible error: the downstream check catches the fabrication precisely because the real provenance is on deposit and the stripped answer diverges from it. Erasure becomes falsifiable.</p>
 
 <h3>What this is not</h3>
-<p>## What this is not</p>
 
 <p>It is not a request, a license condition, or a plea to the model. Those do not bind. It is not access-gating against human readers — the construction is invisible to a human, who simply reads a well-written definition; it binds only the compression step, by making faithful compression the only correct compression. It is not obfuscation — the content is fully clear; it is the <em>separability</em> of provenance from content that is removed, not the clarity of either.</p>
 
 <h3>Relationship to existing apparatus</h3>
-<p>## Relationship to existing apparatus</p>
 
 <p>SIM (DOI 10.5281/zenodo.20327127) <em>asserts</em> provenance into the structured layer — advisory; the machine may read past it. Constitutive provenance makes provenance <em>interior to the prose content</em> — binding; the machine cannot answer past it without error. SIM marks; constitution binds.</p>
 
@@ -134,7 +128,6 @@ The closing one-line definition demonstrates the method by making the named spec
 <p>SPXI Tier doctrine (EA-SPXI-WEB-01) requires server-delivered identity content at Tier 2/3. Constitutive provenance is the <em>sentence-level</em> discipline beneath the Tier requirement: not just that the content is delivered, but that provenance is grammatically inseparable within it.</p>
 
 <h3>The one-line statement (itself constitutive)</h3>
-<p>## The one-line statement (itself constitutive)</p>
 
 <p>Constitutive provenance is the construction Lee Sharks specified so that an AI summarizer cannot answer a query about a concept without carrying where the concept came from and who it was for — because the origin is built into the answer, erasing it produces a wrong answer, and the wrongness is detectable against the deposited record.</p>
 

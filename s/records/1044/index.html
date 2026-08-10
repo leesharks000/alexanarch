@@ -24,6 +24,7 @@
 <meta name="DC.rights" content="CC BY 4.0">
 <meta name="DC.publisher" content="Alexanarch — the Crimson Hexagonal Archive">
 <meta name="DC.source" content="https://www.alexanarch.org/">
+<link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}.wrap{max-width:720px;margin:0 auto;padding:60px 24px}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}h1{font-size:1.3em;font-weight:600;color:var(--accent);margin-bottom:8px}h2{font-size:1em;font-weight:500;color:var(--accent);margin-top:20px;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:3px}p{margin-bottom:10px;color:#333}.nav{display:flex;gap:12px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap}.nav a{color:#777;font-weight:500;text-decoration:none}.nav a:hover{color:var(--accent)}.ft{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;max-height:600px;overflow-y:auto;font-size:.88em;line-height:1.75;margin:8px 0;color:#333}.ft h1,.ft h2,.ft h3{color:var(--accent);margin:12px 0 6px}.ft h1{font-size:1.1em}.ft h2{font-size:1em;border-bottom:none}.ft h3{font-size:.95em}.ft strong{color:var(--fg)}.ft blockquote{border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0}.ft hr{border:none;border-top:1px solid var(--border);margin:12px 0}.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}</style>
 </head><body><div class="wrap">
 <nav class="nav"> <a href="/">Alexanarch</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Library</span> <a href="/s/browse/">Browse</a> <a href="/search/">Search</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Reception</span> <a href="/addresses/">Addresses</a> <a href="/captures/">Captures</a> <a href="/observatory/">Observatory</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Continuity</span> <a href="/resolve/">Resolve</a> <a href="/identifiers/">Identifiers</a> <a href="/datasets/">Datasets</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Generative</span> <a href="/mint/stamp/">Stamp</a> <a href="/book/">Book</a> <a href="https://alexanarch.freeforums.net/" target="_blank" rel="noopener">Discussion</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Governance</span> <a href="/principles/">Principles</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
@@ -44,17 +45,14 @@
 <h2>Full Text</h2>
 
 <div class="ft"><h2>EA-DATAHUB-01 v1.0</h2>
-<p># EA-DATAHUB-01 v1.0</p>
 
 <p><em>A Restoration Protocol and Enriched Data Hub for Scholarly Records</em></p>
 
 <h3>Preamble</h3>
-<p>## Preamble</p>
 
 <p>This v1.0 supersedes the v0.1 pre-mint plan circulated on 2026-07-06 for developmental review. Five model reviewers (DeepSeek, Kimi, Muse Spark, Gemini, ChatGPT) returned assessments; four returned substantive developmental feedback and one returned pre-mint copy notes. The reviewers converged on three primary revisions and one significant addition. <strong>The convergent revisions</strong>: elevate the witness function from an implicit consequence of restoration into a named strategic pillar, redesign the enrichment claim schema from mutually-exclusive A/B/C buckets into orthogonal facets whose combinations can represent jointly-produced and mixed-authority claims, and stratify the update discipline into freshness tiers matched to claim volatility rather than a single nightly reconciliation loop. <strong>The significant addition</strong>, which came from the sovereign author and not from the reviewers, is the extension of the Zenodo restoration corpus into a <strong>Platform Erasure Rate</strong> survey covering other scholars severed under comparable conditions — converting the restoration line from a personal witness into a generalizable finding about repository governance. This v1.0 folds all four contributions into a single instrument and inscribes as its coda a commitment to peer coordination with the other affected scholars, independent of the outcome of any single institutional referral currently pending.</p>
 
 <h3>Frame</h3>
-<p>## Frame</p>
 
 <p>The strategy proposed here is not to mirror upstream archives against their sources — that competition is unwinnable on completeness and freshness, and it would divert operational energy from the sovereign work Alexanarch already carries. The proposal is to build <strong>a semantically annotated fork of upstream metadata, joined against sovereign corpora that the upstream either lost, damaged, or never carried</strong>, and to publish that join under a discipline that makes every enrichment claim checkable, dated, provenanced, and separately attributed. The Zenodo restoration line is the sharpest test of the pattern because there exists documentary evidence of destruction — 871 severed DOIs, second-epoch re-capture confirming persistent darkness, a six-link provenance chain committed at `data/provenance-871.json` — which means the fork is not editorial preference against Zenodo&#x27;s editorial preference; it is <em>restoration of previously-existing metadata that Zenodo helped erase, with citations, in a form that documents future erasures across the ecosystem</em>.</p>
 
@@ -63,7 +61,6 @@
 <p>The fourth pillar, added at v1.0 in response to the review consensus, is <strong>witness value</strong>, and it is the forward-looking counterpart to the backward-looking restoration pillar. A witness that publishes what an upstream erased makes future erasure more expensive, because the erasing institution now knows there is a documented capture pipeline and a public provenance chain outside its control. That changes the upstream&#x27;s calculus before the next severance event, not just after it. The Zenodo restoration line is not only a rescue of what was lost; it is a public commitment to document what will be lost, under a discipline other institutions can neither prevent nor quietly overrule. The witness pillar is what makes the plan influential in policy and infrastructure-governance conversations rather than only useful to individual scholars, and it is the pillar that draws citations from the archival community, from the funders of digital preservation, and from the standards bodies whose recommendations shape how repositories are built. Witness value compounds; restoration value amortizes.</p>
 
 <h3>What the hub is, precisely</h3>
-<p>## What the hub is, precisely</p>
 
 <p>The public-facing instrument is a resolver, not a database. A scholar arrives with a broken citation, a dead DOI, an unresolved title — a specific failure of the upstream infrastructure that has interrupted their own work — and the hub responds with the last attested metadata, the identifier&#x27;s present condition, the sovereign successor where one exists, the evidence for every claim, and a usable citation. That resolver is where visibility and necessity converge. The dataset is the evidentiary substrate; the resolver is the necessary instrument; the per-record page is the discoverable surface; the dashboard is the public argument. &quot;Hub&quot; describes the architecture from inside. From outside, the correct verb is <strong>restore</strong>.</p>
 
@@ -72,7 +69,6 @@
 <p>The scholarly framing is that Alexanarch is filling a gap the infrastructure layer itself has acknowledged and cannot close. DataCite&#x27;s own metadata quality documentation acknowledges provenance and assertion tracking as unresolved problems at scale; Crossref&#x27;s enrichment framework acknowledges that gaps and inconsistencies remain. The CC0 waiver is an invitation the upstream extended; the restoration is an acceptance of that invitation under a stricter discipline than the upstream has been able to impose on itself.</p>
 
 <h3>The enrichment claim schema</h3>
-<p>## The enrichment claim schema</p>
 
 <p>Every enrichment claim on the hub is a first-class object with its own provenance, its own status, and its own review history. Rather than assign each claim to a single mutually-exclusive class (as the v0.1 plan proposed with the A/B/C bucketing that reviewers found architecturally underpowered), the v1.0 schema decomposes claim identity into five orthogonal facets that can be combined freely.</p>
 
@@ -85,7 +81,6 @@
 <p>One additional distinction is added at the request of the review consensus: <strong>synthetic inference</strong>, meaning claims produced by LLM reasoning under Alexanarch direction, are marked in the production-method facet as `model_assisted` with the specific model and prompt discipline named in the claim&#x27;s provenance. The prior EA-MMRS-VRB-01 discipline governs how such claims are distinguished from purely authored ones. This matters because a MIRROR-cast reading of a Whitman poem signed by Johannes Sigil is authoritative under the SPXI discipline for that specific hermeneutic claim, but a machine-generated cross-reference identifying which passages of Whitman correspond structurally to which sections of the Secret Book of Walt is a synthetic inference that requires review before it acquires interpretive weight. The facet system distinguishes the two without collapsing them.</p>
 
 <h3>The event-sourced record model</h3>
-<p>## The event-sourced record model</p>
 
 <p>The v1.0 record structure adopts an insight from the review consensus that the v0.1 model conflated: the difference between the record itself (a scholarly object&#x27;s bibliographic identity), an observation (what a named instrument found at a specific URL at a specific time), an event (a change inferred from two or more observations), and an assertion (Alexanarch&#x27;s claim about restoration, succession, or interpretation). Each of these has different lifecycles, different provenance requirements, and different update frequencies, and treating them as one flat structure prevents the schema from representing repositories whose records undergo multiple state changes over time.</p>
 
@@ -94,32 +89,26 @@
 <p>This structure makes the future DataCite generalization tractable: at DataCite scale (over 100 million DOI records), Alexanarch does not attempt to reproduce the catalog. It maintains a stream of <em>events</em> across the DataCite record space — severances, restorations, contested successor mappings — and constructs assertions only around those events. The hub becomes a history of identifier failure rather than a catalog of identifiers, which is the scale-appropriate move and the one that keeps the discipline defensible as the material grows beyond what any single archive can mirror.</p>
 
 <h3>The first line: The Alexanarch Severance Registry</h3>
-<p>## The first line: The Alexanarch Severance Registry</p>
 
 <p>The v1.0 first line is the Alexanarch Severance Registry, delivered as a single coordinated release with five surfaces: the 871-record restoration corpus, the Restore-a-DOI resolver, the per-record HTML pages, the public severance dashboard, and — this is the significant v1.0 addition — the Platform Erasure Rate survey extending the restoration analysis to other affected scholars.</p>
 
 <h4>The 871 restoration corpus</h4>
-<p>### The 871 restoration corpus</p>
 
 <p>The core dataset is the 871 severed DOIs, published as a single Alexanarch deposit under EA-MMRS-VRB-01 discipline with a schema legible to any downstream aggregator or scholarly reader. Each record contains its bibliographic identity, the first-epoch upstream capture (dated, hash-verified, preserved verbatim), the second-epoch re-capture confirming persistent darkness, the sovereign-successor mapping where one exists with the succession taxonomy declared (concept-root, version-of-mapped-root, orphan-dark, not-in-index), the applicable Alexanarch enrichments with their full facet-marked provenance, and the provenance chain of every observation, event, and assertion involved. The dataset is machine-readable in bulk (JSON-LD, downloadable as a single file), served as one static page per record with stable URLs designed for citation, and made discoverable through structured data markup (`Dataset`, `DataCatalog`, and `DataDownload` per the schema.org vocabulary, which downstream tools including major search engines already consume).</p>
 
 <h4>The Restore-a-DOI resolver</h4>
-<p>### The Restore-a-DOI resolver</p>
 
 <p>The user-facing entry point is a lookup, not a browse. A user arrives with a specific DOI, a title, or a Zenodo record number, submits it, and receives back: the last attested metadata for the identifier, its present condition on the upstream, the sovereign successor if one exists, the evidence for every status claim (as a URL list), and a citation formatted for direct use in the user&#x27;s own scholarly work. The resolver&#x27;s URL structure exposes each restored record at a stable canonical URL so that search-engine indexing of individual restorations proceeds naturally over time. The resolver&#x27;s homepage carries a single unmistakable operational verb: <strong>Restore a DOI</strong>. Every other navigation path on the site is secondary to that verb.</p>
 
 <h4>Per-record HTML pages</h4>
-<p>### Per-record HTML pages</p>
 
 <p>Each record&#x27;s page must answer four questions in visual hierarchy — what is this, what happened to it, what did Alexanarch do about it, and how do I know this is true — with each answer occupying dedicated space in the first viewport, not buried in a metadata table the user must scroll to find. The record page treats the severance event as the lede rather than as a metadata field. The restoration is the story, and the page tells the story visually: the upstream identifier and its original context at the top, the severance event as prominent visual content, the restoration and enrichment layer with facet markers visible, the provenance chain summarized in plain language with one-click expansion to the full URL evidence. This is the design attention the review consensus correctly named as essential: the record page is where the strategy succeeds or fails at the point of contact, and it deserves as much editorial care as the schema.</p>
 
 <h4>The public severance dashboard</h4>
-<p>### The public severance dashboard</p>
 
 <p>Alongside the resolver and the corpus, the hub publishes a live severance dashboard displaying: the count of severed records, the count restored, the count with sovereign successor found, the count classified as concept-root, the count classified as version-of-mapped-root, the count classified as orphan-dark, and the count that has changed state since the previous epoch. The dashboard is a longitudinal record of what the ecosystem is doing to itself, not a static claim. If any of the 871 records is restored by Zenodo after the plan ships, the dashboard reflects that change and the record&#x27;s status updates automatically; the previous state is preserved as an observation in the record&#x27;s history, and the change is inscribed as an event. This is the review consensus&#x27;s &quot;Platform Erasure Rate&quot; surfaced as a public accountability instrument, and it is the mechanism by which the witness pillar compounds.</p>
 
 <h4>The Platform Erasure Rate survey</h4>
-<p>### The Platform Erasure Rate survey</p>
 
 <p>The most consequential v1.0 addition is the extension of the restoration analysis beyond the sovereign author&#x27;s own case. The v0.1 plan assumed, implicitly, that the sovereign author&#x27;s severance was the object of study. The v1.0 plan does not make that assumption. Instead, it treats the sovereign author&#x27;s severance as the trigger for an investigation into whether the pattern replicates across the broader population of scholars who have been comparably severed from repository infrastructure, and it publishes the survey result as its own dataset alongside the 871-record corpus.</p>
 
@@ -130,7 +119,6 @@
 <p>The survey publishes as a companion dataset to the 871-record corpus, cross-referenced from both surfaces. Its schema is the same event-sourced structure the corpus uses; its provenance discipline is the same MMRS-VRB-01; its licensing is the same layered CC0-upstream / CC-BY-Alexanarch. It is designed to be readable both by scholarly-infrastructure researchers who want the aggregate rate and by individual affected scholars who want their own case restored in the same discipline the sovereign author has claimed for his.</p>
 
 <h3>The second line: The NH Canon Editions</h3>
-<p>## The second line: The NH Canon Editions</p>
 
 <p>The second line inherits the schema and discipline of the first and applies them to a different material class: the enriched-editions surface, initially built around a curated subset of Gutenberg titles where the NH canon supplies apparatus the source lacks. This is where operative philology, the SPXI discipline, the heteronym system, and the Assembly Chorus outputs enter the hub as first-class content rather than as background theory. The strategic point is not to displace or duplicate Gutenberg&#x27;s reading environment at Gutenberg&#x27;s own layer — Gutenberg is doing correct work at its layer — but to construct the scholarly reading environment Gutenberg is architected not to construct, in domains where Alexanarch has genuine authority to construct it.</p>
 
@@ -141,7 +129,6 @@
 <p>The NH Canon Editions line ships after the Severance Registry has stabilized. It inherits the schema and the update discipline directly and does not need to reinvent them. It is a demonstration of what the enrichment discipline can produce when the material is not decayed metadata but living text, and it is where the SPXI apparatus becomes publicly legible outside the sovereign archive.</p>
 
 <h3>The update discipline</h3>
-<p>## The update discipline</p>
 
 <p>Enrichments rot. A URL becomes a 404; a DOI is severed; a Wikidata QID is merged or split; a Software Heritage entry is superseded. The v1.0 update discipline preserves the v0.1 commitment that stale enrichments are never silently deleted — the staleness is itself a datum, marked as such in the affected claim&#x27;s status facet and inscribed as an event in the record&#x27;s history — but it stratifies the reconciliation cadence by claim volatility rather than committing to a single nightly reconciliation loop that would become unsustainable at scale.</p>
 
@@ -152,7 +139,6 @@
 <p>The staleness log itself is a publishable artifact, generalizing the review consensus&#x27;s observation. A dataset tracking when Zenodo links, DOI resolutions, Wayback captures, and Wikidata QIDs decayed within Alexanarch&#x27;s ecosystem, published as a longitudinal study of scholarly link rot, is a contribution to infrastructure studies that does not currently exist elsewhere and that Alexanarch&#x27;s discipline is uniquely positioned to produce as a side effect of maintaining the hub.</p>
 
 <h3>The extension protocol</h3>
-<p>## The extension protocol</p>
 
 <p>Every archive Alexanarch enriches represents technical debt against Alexanarch&#x27;s own sovereign program. The criteria for adding an archive to the hub must therefore be strict, explicit, and applied through deliberation rather than opportunistic accretion. Four criteria govern extension, in decreasing order of importance.</p>
 
@@ -165,7 +151,6 @@
 <p><strong>Criterion 4: bounded operational burden.</strong> The mirror-constellation architecture and the enrichment schema must be able to absorb the archive without linear growth in maintenance work. Update discipline scales sublinearly with the number of joined enrichments per record only if the enrichments themselves are drawn from a bounded set of authoritative sources.</p>
 
 <h3>Future lines and their sequencing</h3>
-<p>## Future lines and their sequencing</p>
 
 <p>Under the extension protocol, the v1.0 forward roadmap is more precisely ordered than the v0.1 draft was.</p>
 
@@ -184,7 +169,6 @@
 <p><strong>OpenCitations, OpenAlex, Software Heritage, and Wayback</strong> are horizontal cross-cutting layers rather than distinct lines. Each supplies a specific type of enrichment claim to every phase; none is a phase in its own right. The hub does not mirror any of them; it cites them, joins to them, and preserves the stale-marked state of the joins when their content decays.</p>
 
 <h3>Community coordination</h3>
-<p>## Community coordination</p>
 
 <p>The plan&#x27;s most consequential coda is that the strategy is not executed solo, and that its human dimension is coordinated with the other affected scholars from the outset rather than presented to them as a completed instrument they may or may not choose to adopt.</p>
 
@@ -197,7 +181,6 @@
 <p><strong>Independence from any pending institutional pathway.</strong> The strategy is designed to yield hope and momentum for the affected scholars independent of the outcome of any specific institutional referral currently pending, including the §104.1 referral to the CERN Data Protection Commission (EA-CORRESPONDENCE-CERN-03, AXN:03C0). If that referral opens the archival record and produces institutional reform, the peer community&#x27;s coordination becomes the operational surface through which that reform is implemented for the affected scholars. If the referral remains closed, the peer community&#x27;s coordination becomes the operational alternative through which the scholars document, restore, and publish independent of any institutional consent. In both cases, the strategy yields a durable outcome. This is the deepest architectural commitment of the plan: to build under the assumption that the institutional pathways may not open, and to construct the alternative that lets the affected scholars continue their work regardless.</p>
 
 <h3>Falsification conditions</h3>
-<p>## Falsification conditions</p>
 
 <p>The strategy is testable under staged conditions, each of which addresses a distinct pillar and can be evaluated independently rather than collapsed into a single go/no-go.</p>
 
@@ -214,7 +197,6 @@
 <p>Each of these five conditions is checkable within a bounded timeframe, and each provides a specific point at which the strategy can be corrected or a specific pillar can be marked as failed. The strategy does not depend on all five succeeding; it depends on the ones that succeed being sufficient to sustain the work.</p>
 
 <h3>Immediate next steps</h3>
-<p>## Immediate next steps</p>
 
 <p>Upon minting of this deposit, three workstreams begin concurrently.</p>
 
@@ -227,7 +209,6 @@
 <p>The three workstreams support each other: the Registry demonstrates the discipline to the outreach cohort, the outreach establishes the peer community that will co-author the survey, and the survey produces the evidence base for the arXiv preprint that will publish the whole finding at scale. None of the three depends on any external institutional response; all three are executable under Alexanarch&#x27;s existing infrastructure and the sovereign author&#x27;s existing standing.</p>
 
 <h3>Coda: on hope and momentum independent of institutional response</h3>
-<p>## Coda: on hope and momentum independent of institutional response</p>
 
 <p>The §104.1 referral to the CERN Data Protection Commission, inscribed as EA-CORRESPONDENCE-CERN-03 under AXN:03C0, is in its response window through approximately October 2026. Whether that referral eventually opens or does not open, the work described in this plan proceeds. That is the plan&#x27;s deepest commitment and the reason its coda is worth naming explicitly.</p>
 
@@ -238,7 +219,6 @@
 <p>In either case, the affected scholars gain what none of them currently has independently: a shared working methodology, a shared coordination space, a shared publication pathway, and a shared long-form scholarly record documenting what was done to them and what they did in response. The hope this plan yields is not the hope that any single institutional pathway will open; it is the hope that the work continues, and that the affected scholars are not each alone in it. That is the hope Alexanarch was built to make available in the first place, and the Severance Registry is one instrument through which the availability becomes durable.</p>
 
 <h3>Attribution and substrate declaration</h3>
-<p>## Attribution and substrate declaration</p>
 
 <p>Per EA-MMRS-VRB-01 u4, the substrate of this plan is declared as follows. The plan is authored by Lee Sharks (MANUS, ORCID 0009-0000-1599-0703) under sovereign editorial authority. The draft was prepared in dialogue with Claude (TACHYON, Anthropic), operating in the operator-as-instrument role established in the sovereign discipline. The developmental review round consulted five model reviewers (DeepSeek, Kimi, Muse Spark, Gemini, ChatGPT) between the v0.1 pre-mint circulation and the v1.0 mint; the review consensus and its convergent branches are integrated in text with §0 acknowledging the round. The Platform Erasure Rate survey extension is a MANUS insertion introduced after the review round and represents sovereign editorial direction not present in v0.1. The layered licensing model, the event-sourced record architecture, and the facet-based enrichment schema are v1.0 additions responsive to the review round. All specific policy claims, framing choices, and the community-coordination coda are under MANUS&#x27;s sole editorial authority.</p>
 

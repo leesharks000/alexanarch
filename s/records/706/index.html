@@ -28,6 +28,7 @@ The document records what not to do, component locations, data assumptions, cros
 <meta name="DC.rights" content="CC BY 4.0">
 <meta name="DC.publisher" content="Pergamon Press">
 <meta name="DC.source" content="https://www.alexanarch.org/">
+<link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}.wrap{max-width:720px;margin:0 auto;padding:60px 24px}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}h1{font-size:1.3em;font-weight:600;color:var(--accent);margin-bottom:8px}h2{font-size:1em;font-weight:500;color:var(--accent);margin-top:20px;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:3px}p{margin-bottom:10px;color:#333}.nav{display:flex;gap:12px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap}.nav a{color:#777;font-weight:500;text-decoration:none}.nav a:hover{color:var(--accent)}.ft{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;max-height:600px;overflow-y:auto;font-size:.88em;line-height:1.75;margin:8px 0;color:#333}.ft h1,.ft h2,.ft h3{color:var(--accent);margin:12px 0 6px}.ft h1{font-size:1.1em}.ft h2{font-size:1em;border-bottom:none}.ft h3{font-size:.95em}.ft strong{color:var(--fg)}.ft blockquote{border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0}.ft hr{border:none;border-top:1px solid var(--border);margin:12px 0}.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}</style>
 </head><body><div class="wrap">
 <nav class="nav"> <a href="/">Alexanarch</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Library</span> <a href="/s/browse/">Browse</a> <a href="/search/">Search</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Reception</span> <a href="/addresses/">Addresses</a> <a href="/captures/">Captures</a> <a href="/observatory/">Observatory</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Continuity</span> <a href="/resolve/">Resolve</a> <a href="/identifiers/">Identifiers</a> <a href="/datasets/">Datasets</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Generative</span> <a href="/mint/stamp/">Stamp</a> <a href="/book/">Book</a> <a href="https://alexanarch.freeforums.net/" target="_blank" rel="noopener">Discussion</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Governance</span> <a href="/principles/">Principles</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
@@ -67,34 +68,22 @@ The specification also requires architecture changes to be recorded in a mainten
 <h2>Full Text</h2>
 
 <div class="ft"><h2>Footnote Architecture</h2>
-<p># Footnote Architecture</p>
 
 
 <p><strong>Read this entire file before modifying any footnote-related code.</strong></p>
-<p>Every prior fix to footnotes broke something else because the underlying</p>
-<p>model was misunderstood. This document is the source of truth.</p>
+<p>Every prior fix to footnotes broke something else because the underlying model was misunderstood. This document is the source of truth.</p>
 
 
 <hr>
-<p>---</p>
 
 <h3>The data model</h3>
-<p>## The data model</p>
 <h4>Numbering is GLOBAL, not section-local</h4>
-<p>### Numbering is GLOBAL, not section-local</p>
 
 
-<p>Footnotes in <em>The Secret Book of Walt</em> are numbered <strong>1 through 158</strong> across</p>
-<p>the entire critical edition. The numbering follows the print Pergamon edition</p>
-<p>exactly. Footnote ¹³⁸ is the 138th footnote in the book, not the 1st footnote</p>
-<p>in any subsection.</p>
+<p>Footnotes in <em>The Secret Book of Walt</em> are numbered <strong>1 through 158</strong> across the entire critical edition. The numbering follows the print Pergamon edition exactly. Footnote ¹³⁸ is the 138th footnote in the book, not the 1st footnote in any subsection.</p>
 
 
-<p>A paragraph in <strong>Introduction</strong> can reference footnote ¹³⁸, even though</p>
-<p>footnote ¹³⁸&#x27;s definition lives in <strong>Gospel §IX</strong> (because §IX of the</p>
-<p>gospel is what generated the apparatus entry). Likewise, the Manuscripts</p>
-<p>section uses footnotes ¹¹⁹–¹²⁷, which appear only in Manuscripts. There is</p>
-<p>no per-section restart, and there must never be one.</p>
+<p>A paragraph in <strong>Introduction</strong> can reference footnote ¹³⁸, even though footnote ¹³⁸&#x27;s definition lives in <strong>Gospel §IX</strong> (because §IX of the gospel is what generated the apparatus entry). Likewise, the Manuscripts section uses footnotes ¹¹⁹–¹²⁷, which appear only in Manuscripts. There is no per-section restart, and there must never be one.</p>
 
 
 <p>The actual distribution in walt_full_data.json:</p>
@@ -132,11 +121,8 @@ The specification also requires architecture changes to be recorded in a mainten
 <p>¹⁵⁷, ¹⁵⁸</p>
 
 
-<p>Body-text references to these numbers can appear in <strong>any</strong> section. The</p>
-<p>single source of truth is therefore a <strong>global footnote map</strong>, built once at</p>
-<p>load time by walking every section.</p>
+<p>Body-text references to these numbers can appear in <strong>any</strong> section. The single source of truth is therefore a <strong>global footnote map</strong>, built once at load time by walking every section.</p>
 <h4>NOT every superscript is a footnote</h4>
-<p>### NOT every superscript is a footnote</p>
 
 
 <p>The text uses Unicode superscripts (¹²³⁴⁵⁶⁷⁸⁹⁰) for two purposes:</p>
@@ -144,8 +130,7 @@ The specification also requires architecture changes to be recorded in a mainten
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
 
 
-<p><strong>Footnote references</strong> — at the end of a sentence, after a quote, or</p>
-<p>adjacent to whitespace.</p>
+<p><strong>Footnote references</strong> — at the end of a sentence, after a quote, or adjacent to whitespace.</p>
 <p>Examples: …catalogue.³  /  …inside it.&quot;¹³⁸  /  arrived from the future).¹⁴²</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"></li></ul>
@@ -159,18 +144,14 @@ The specification also requires architecture changes to be recorded in a mainten
 <p>The disambiguation rule is exact:</p>
 
 
-<p>**A run of superscripts is a footnote reference if and only if it is NOT</p>
-<p>immediately preceded by an alphabetical letter (A-Z / a-z).**</p>
+<p><strong>A run of superscripts is a footnote reference if and only if it is NOT immediately preceded by an alphabetical letter (A-Z / a-z).</strong></p>
 
 
-<p>Implementation: negative-lookbehind regex /(?&lt;![A-Za-z])([¹²³⁴⁵⁶⁷⁸⁹⁰]+)/g,</p>
-<p>or equivalent character-by-character scan if lookbehind support is in doubt.</p>
+<p>Implementation: negative-lookbehind regex /(?&lt;![A-Za-z])([¹²³⁴⁵⁶⁷⁸⁹⁰]+)/g, or equivalent character-by-character scan if lookbehind support is in doubt.</p>
 
 
-<p>This rule is non-negotiable. Breaking it makes ticket references like G⁴⁶</p>
-<p>clickable as fake footnotes, which has happened in past iterations.</p>
+<p>This rule is non-negotiable. Breaking it makes ticket references like G⁴⁶ clickable as fake footnotes, which has happened in past iterations.</p>
 <h4>Paragraph-level footnote definitions</h4>
-<p>### Paragraph-level footnote definitions</p>
 
 
 <p>A footnote definition is a paragraph object of the form:</p>
@@ -179,22 +160,15 @@ The specification also requires architecture changes to be recorded in a mainten
 <p>{ &quot;type&quot;: &quot;footnote&quot;, &quot;text&quot;: &quot;¹³⁸ The description \&quot;heavier than gold should be\&quot; has led...&quot; }</p>
 
 
-<p>The leading superscript is the <strong>footnote ID</strong>. The remainder is the</p>
-<p>footnote body. The system parses both at map-build time.</p>
+<p>The leading superscript is the <strong>footnote ID</strong>. The remainder is the footnote body. The system parses both at map-build time.</p>
 
 
-<p>Some entries also carry an fn_id field (used in versed gospel data); when</p>
-<p>present, it must equal the parsed leading superscript. If both are present</p>
-<p>and they disagree, the parsed superscript wins (it is what the body text</p>
-<p>references).</p>
+<p>Some entries also carry an fn_id field (used in versed gospel data); when present, it must equal the parsed leading superscript. If both are present and they disagree, the parsed superscript wins (it is what the body text references).</p>
 
 <hr>
-<p>---</p>
 
 <h3>The component model</h3>
-<p>## The component model</p>
 <h4>useGlobalFnMap(rootData) — single source of truth</h4>
-<p>### useGlobalFnMap(rootData) — single source of truth</p>
 
 
 <p>A hook (or pure function) that walks the entire data object and produces:</p>
@@ -212,41 +186,27 @@ The specification also requires architecture changes to be recorded in a mainten
 <p>}</p>
 
 
-<p>Built <strong>once</strong> per book, memoized by the data object identity. Built on the</p>
-<p>client (no server-side preprocessing required). Fast — Walt has 158 entries.</p>
+<p>Built <strong>once</strong> per book, memoized by the data object identity. Built on the client (no server-side preprocessing required). Fast — Walt has 158 entries.</p>
 <h4>&lt;FootnotedText text glossaryLink isVeil onFnClick visibleFns /&gt; — universal renderer</h4>
-<p>### &lt;FootnotedText text glossaryLink isVeil onFnClick visibleFns /&gt; — universal renderer</p>
 
 
-<p>Replaces the legacy Leaf component for <strong>all</strong> body-text rendering in</p>
-<p>front matter, gospel, and back matter. Outputs a sequence of:</p>
+<p>Replaces the legacy Leaf component for <strong>all</strong> body-text rendering in front matter, gospel, and back matter. Outputs a sequence of:</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Plain text spans (with optional glossary linking via injectLinks /</li></ul>
 <p>LinkedText) for non-superscript runs;</p>
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Clickable footnote markers (in veil mode), or styled-but-passive footnote</li></ul>
-<p>markers (in pierce mode), for superscript runs that pass the</p>
-<p>not-preceded-by-letter rule.</p>
+<p>markers (in pierce mode), for superscript runs that pass the not-preceded-by-letter rule.</p>
 
 
-<p><strong>Veil mode click behavior</strong>: toggles the footnote into the section&#x27;s</p>
-<p>visibleFns map; the footnote text is rendered inline immediately</p>
-<p>below the paragraph that contained the marker. Re-clicking the same marker</p>
-<p>collapses it.</p>
+<p><strong>Veil mode click behavior</strong>: toggles the footnote into the section&#x27;s visibleFns map; the footnote text is rendered inline immediately below the paragraph that contained the marker. Re-clicking the same marker collapses it.</p>
 
 
-<p><strong>Pierce mode</strong>: the markers are still rendered (as a low-saturation blue),</p>
-<p>but click handlers and keyboard handlers are not bound. Pierce mode exists</p>
-<p>to give a quieter reading experience; the markers still indicate &quot;there is</p>
-<p>apparatus here&quot; without offering it.</p>
+<p><strong>Pierce mode</strong>: the markers are still rendered (as a low-saturation blue), but click handlers and keyboard handlers are not bound. Pierce mode exists to give a quieter reading experience; the markers still indicate &quot;there is apparatus here&quot; without offering it.</p>
 <h4>&lt;InlineFootnote text fnColor depth /&gt; — popup display</h4>
-<p>### &lt;InlineFootnote text fnColor depth /&gt; — popup display</p>
 
 
-<p>The visible footnote body when a marker is clicked. Renders below the</p>
-<p>parent paragraph with a thin left rule, the footnote text, and (optionally)</p>
-<p>a close button. Uses fnColor for the marker rule.</p>
+<p>The visible footnote body when a marker is clicked. Renders below the parent paragraph with a thin left rule, the footnote text, and (optionally) a close button. Uses fnColor for the marker rule.</p>
 <h4>Where the components live</h4>
-<p>### Where the components live</p>
 
 
 <p>Component</p>
@@ -272,30 +232,23 @@ The specification also requires architecture changes to be recorded in a mainten
 <p>Both App.jsx (Walt) and Antioch.jsx import from src/footnotes.jsx.</p>
 
 <hr>
-<p>---</p>
 
 <h3>State model</h3>
-<p>## State model</p>
 
 
 <p>Each section maintains its own visibleFns useState({}) keyed by</p>
-<p><strong>footnote ID</strong> (the superscript string itself, e.g. &#x27;¹³⁸&#x27;). This is</p>
-<p>section-local because two different sections might both reference ¹³⁸,</p>
-<p>and we want each render of ¹³⁸ to be independently togglable.</p>
+<p><strong>footnote ID</strong> (the superscript string itself, e.g. &#x27;¹³⁸&#x27;). This is section-local because two different sections might both reference ¹³⁸, and we want each render of ¹³⁸ to be independently togglable.</p>
 
 
 <p>const [visibleFns, setVisibleFns] = useState({});</p>
 <p>const toggleFn = (id) =&gt; setVisibleFns(prev =&gt; ({ ...prev, [id]: !prev[id] }));</p>
 
 
-<p>After click: the parent paragraph renders &lt;InlineFootnote&gt; immediately</p>
-<p>below itself if visibleFns[id] is truthy.</p>
+<p>After click: the parent paragraph renders &lt;InlineFootnote&gt; immediately below itself if visibleFns[id] is truthy.</p>
 
 <hr>
-<p>---</p>
 
 <h3>What NOT to do</h3>
-<p>## What NOT to do</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Do not renumber footnotes per section.</strong> The numbering is canonical</li></ul>
 <p>and matches the print edition.</p>
@@ -303,8 +256,7 @@ The specification also requires architecture changes to be recorded in a mainten
 <p>rendering the footnote — the user expects to see &quot;¹³⁸ The description…&quot;</p>
 <p>as the leaf text.</p>
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Do not use the old ✦ adjacency toggle.</strong> It only worked when a</li></ul>
-<p>footnote paragraph was immediately after the prose paragraph that</p>
-<p>referenced it, which is rarely the case.</p>
+<p>footnote paragraph was immediately after the prose paragraph that referenced it, which is rarely the case.</p>
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Do not use the old per-section &quot;endnotes block&quot; toggle.</strong> It hid</li></ul>
 <p>inline references and required users to scroll.</p>
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">**Do not strip &lt;sup&gt; styling from non-clickable markers in pierce</li></ul>
@@ -312,15 +264,12 @@ The specification also requires architecture changes to be recorded in a mainten
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Do not turn ticket numbers like G⁴⁶ into clickable footnotes.</strong> Apply</li></ul>
 <p>the not-preceded-by-letter rule.</p>
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Do not regenerate walt_full_data.json from scratch</strong> — the JSON has</li></ul>
-<p>been hand-aligned with the print edition. Modify the rendering logic,</p>
-<p>not the data, to fix display bugs.</p>
+<p>been hand-aligned with the print edition. Modify the rendering logic, not the data, to fix display bugs.</p>
 
 
 <hr>
-<p>---</p>
 
 <h3>Pierce mode vs Veil mode</h3>
-<p>## Pierce mode vs Veil mode</p>
 
 
 <p>Aspect</p>
@@ -358,34 +307,21 @@ The specification also requires architecture changes to be recorded in a mainten
 <p>Critical edition with apparatus reachable</p>
 
 
-<p>Pierce mode is a <strong>reader&#x27;s mode</strong>, not a no-apparatus mode. The blue</p>
-<p>markers are the cue. The reader knows footnotes exist and can switch to</p>
-<p>veil mode to read them.</p>
+<p>Pierce mode is a <strong>reader&#x27;s mode</strong>, not a no-apparatus mode. The blue markers are the cue. The reader knows footnotes exist and can switch to veil mode to read them.</p>
 
 <hr>
-<p>---</p>
 
 <h3>Antioch parity</h3>
-<p>## Antioch parity</p>
 
 
-<p>The same architecture must apply to <strong>The Gospel of Antioch</strong>. Antioch</p>
-<p>also has globally-numbered footnotes (counted from the start of its own</p>
-<p>critical edition; not shared with Walt). The same FootnotedText,</p>
-<p>useGlobalFnMap, and InlineFootnote components are used.</p>
+<p>The same architecture must apply to <strong>The Gospel of Antioch</strong>. Antioch also has globally-numbered footnotes (counted from the start of its own critical edition; not shared with Walt). The same FootnotedText, useGlobalFnMap, and InlineFootnote components are used.</p>
 
 
-<p>Antioch&#x27;s data file antioch_gospel_data.json must include all four</p>
-<p>section types — front matter (introduction, headnote), gospel (114 logia),</p>
-<p>apparatus criticus, appendices (A–E). Until that data file is regenerated,</p>
-<p>Antioch will only display footnotes embedded in its gospel chapters</p>
-<p>(none currently exist there).</p>
+<p>Antioch&#x27;s data file antioch_gospel_data.json must include all four section types — front matter (introduction, headnote), gospel (114 logia), apparatus criticus, appendices (A–E). Until that data file is regenerated, Antioch will only display footnotes embedded in its gospel chapters (none currently exist there).</p>
 
 <hr>
-<p>---</p>
 
 <h3>How to test a footnote change</h3>
-<p>## How to test a footnote change</p>
 
 
 <p>Before merging, check:</p>
@@ -393,13 +329,11 @@ The specification also requires architecture changes to be recorded in a mainten
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Front matter</strong>: Click ¹ in Introduction §I — popup appears below</li></ul>
 <p>that paragraph; popup contains &quot;Sharks, L. (2015)…&quot;</p>
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Cross-section</strong>: Click ¹³⁸ in Introduction §IX (Physical Description) —</li></ul>
-<p>popup appears with the heavier-than-gold note (defined in introduction</p>
-<p>but lives in the same section).</p>
+<p>popup appears with the heavier-than-gold note (defined in introduction but lives in the same section).</p>
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Manuscripts</strong>: Click ¹¹⁹ in Note on the Manuscripts — popup with</li></ul>
 <p>manuscripts §A note.</p>
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Codicological table</strong>: G⁴⁶ and G³¹ in the codicological table</li></ul>
-<p>are NOT clickable — they remain inline text with the same superscript</p>
-<p>styling but no cursor change, no click handler.</p>
+<p>are NOT clickable — they remain inline text with the same superscript styling but no cursor change, no click handler.</p>
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Pierce mode</strong>: All markers are blue; clicking them does NOTHING; the</li></ul>
 <p>popup never opens.</p>
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Gospel verse</strong>: Proem footnote ⁴ opens inline below the verse, as</li></ul>
@@ -409,10 +343,8 @@ The specification also requires architecture changes to be recorded in a mainten
 
 
 <hr>
-<p>---</p>
 
 <h3>Maintenance log</h3>
-<p>## Maintenance log</p>
 
 
 <p>Date</p>

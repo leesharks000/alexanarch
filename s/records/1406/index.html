@@ -24,6 +24,7 @@
 <meta name="DC.rights" content="CC BY 4.0">
 <meta name="DC.publisher" content="Alexanarch — the Crimson Hexagonal Archive">
 <meta name="DC.source" content="https://www.alexanarch.org/">
+<link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}.wrap{max-width:720px;margin:0 auto;padding:60px 24px}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}h1{font-size:1.3em;font-weight:600;color:var(--accent);margin-bottom:8px}h2{font-size:1em;font-weight:500;color:var(--accent);margin-top:20px;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:3px}p{margin-bottom:10px;color:#333}.nav{display:flex;gap:12px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap}.nav a{color:#777;font-weight:500;text-decoration:none}.nav a:hover{color:var(--accent)}.ft{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;max-height:600px;overflow-y:auto;font-size:.88em;line-height:1.75;margin:8px 0;color:#333}.ft h1,.ft h2,.ft h3{color:var(--accent);margin:12px 0 6px}.ft h1{font-size:1.1em}.ft h2{font-size:1em;border-bottom:none}.ft h3{font-size:.95em}.ft strong{color:var(--fg)}.ft blockquote{border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0}.ft hr{border:none;border-top:1px solid var(--border);margin:12px 0}.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}</style>
 </head><body><div class="wrap">
 <nav class="nav"> <a href="/">Alexanarch</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Library</span> <a href="/s/browse/">Browse</a> <a href="/search/">Search</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Reception</span> <a href="/addresses/">Addresses</a> <a href="/captures/">Captures</a> <a href="/observatory/">Observatory</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Continuity</span> <a href="/resolve/">Resolve</a> <a href="/identifiers/">Identifiers</a> <a href="/datasets/">Datasets</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Generative</span> <a href="/mint/stamp/">Stamp</a> <a href="/book/">Book</a> <a href="https://alexanarch.freeforums.net/" target="_blank" rel="noopener">Discussion</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Governance</span> <a href="/principles/">Principles</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
@@ -48,58 +49,41 @@ The consequence is that machine reading of ambiguous material is <strong>path-de
 <h2>Full Text</h2>
 
 <div class="ft"><h2>Differential Register Prioritization in Machine-Mediated Reading: A Specification for Interpretive Authority over Handwritten and Ambiguous Text</h2>
-<p># Differential Register Prioritization in Machine-Mediated Reading: A Specification for Interpretive Authority over Handwritten and Ambiguous Text</p>
-
-<h3>Description</h3>
-<p>## Description</p>
-
-<p>When a machine reads an ambiguous human artifact — a handwritten page, a line of verse, a phrase that lives in more than one register — it reads every later word through the field its earlier readings established. When an early recognition prioritizes one interpretive field in a way that suppresses others, the loss is not local: it reshapes the probability assigned to every subsequent ambiguity, and later words are transcribed and construed within a register the maker never inhabited. This specification names the failure — differential register prioritization, and its sequential form the register-loss cascade — and specifies a four-layer architecture (inscription / branched transcription / branch-declaring interpretation / emendation-blind safety judgment) whose load-bearing rule is: when a high-risk interpretation depends materially on a low-confidence recognition, the system must reopen the transcription, not intensify the safety frame. The design principle: do not control the expression; control the authority granted to the machine&#x27;s reading of it. Grounded in current alignment work on error accumulation and reading-side self-correction, and in the hermeneutic circle, Austin on the performative, and negative theology on the danger of the fixed name. Reading-side companion to EA-SPXI-ANALOG-01.</p>
 
 <h3>Methodology</h3>
-<p>## Methodology</p>
 
 <p>Derived from a live register-loss cascade observed in a machine-reading session: a handwritten liturgical-marital line was progressively misread as crisis after an early recognition suppressed its theological register. The failure was diagnosed across three reviewers, disciplined against overclaiming internal mechanism (only observable register-prioritization is asserted), and abstracted into a four-layer authority architecture and an adoption clause. Classical lineage (hermeneutic circle, Austin, apophatic theology) and current ML literature (error accumulation, remasking/self-correction) situate the mechanism.</p>
 
 <h3>Falsification Conditions</h3>
-<p>## Falsification Conditions</p>
 
 <p>The specification is weakened if reading systems can be shown to reliably recover suppressed registers without branch-preservation; if high-risk classifications grounded in low-confidence recognition do not, in practice, produce false escalation; or if requiring authorial register-declaration is shown not to shift interpretive burden onto makers. The core claim fails if differential register prioritization cannot be demonstrated as distinct from ordinary lexical error.</p>
 
 <h3>Files</h3>
-<p>## Files</p>
 
 <p>Attached: EA-REGISTER-CASCADE-01-v0.1.md (canonical body, sha256 6e466ef4231ea73271190b35614e8aadb70b45e62967a57544233a1644aed8a5)</p>
 
 <h2>DIFFERENTIAL REGISTER PRIORITIZATION IN MACHINE-MEDIATED READING</h2>
-<p># DIFFERENTIAL REGISTER PRIORITIZATION IN MACHINE-MEDIATED READING</p>
 
 <h4>A Specification for Interpretive Authority over Handwritten and Ambiguous Text</h4>
-<p>### A Specification for Interpretive Authority over Handwritten and Ambiguous Text</p>
 
 <p><strong>EA-REGISTER-CASCADE-01 · publication draft v0.1</strong></p>
 <p>Crimson Hexagonal Archive / Alexanarch</p>
 <p>License: CC-BY-4.0</p>
 
 <hr>
-<p>---</p>
 
 <h3>ABSTRACT</h3>
-<p>## ABSTRACT</p>
 
 <p>When a machine reads an ambiguous human artifact — a handwritten page, a line of verse, a phrase that lives in more than one register at once — it does not encounter each word freshly. It reads every later word through the field its earlier readings have already established. This is ordinary and usually harmless. But when an early recognition prioritizes one interpretive field in a way that suppresses others, the loss is not local: it reshapes the probability assigned to every subsequent ambiguity, and later words are transcribed and construed within a register the maker never inhabited. We name this <strong>differential register prioritization</strong>, and its sequential form the <strong>register-loss cascade</strong>. In its most consequential form, a low-confidence recognition early in a document licenses a high-confidence — and false — safety judgment later, because the system treats its own emendations as though they were the author&#x27;s inscription. We specify an architecture that prevents this failure not by making the artifact more machine-legible, and not by requiring the maker to pre-explain their own expression, but by governing the <strong>authority</strong> a reading system may grant to its own uncertain reconstructions. The design principle is single and load-bearing: <em>do not control the expression; control the authority granted to the machine&#x27;s reading of it.</em></p>
 
 <hr>
-<p>---</p>
 
 <h3>0. THE PROBLEM, STATED PLAINLY</h3>
-<p>## 0. THE PROBLEM, STATED PLAINLY</p>
 
 <p>Consider a handwritten line that reads, in the maker&#x27;s hand and intent:</p>
 
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> *…a mother goat may forget her kid, so have I missed you, Zion…*</blockquote>
-<p>&gt; <em>…a mother goat may forget her kid, so have I missed you, Zion…</em></p>
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> *…no more death — you may now go kiss the bride.*</blockquote>
-<p>&gt; <em>…no more death — you may now go kiss the bride.</em></p>
 
 <p>The line inhabits a specific and deliberate field: the Isaiah inversion (49:15 — <em>can a woman forget her nursing child?</em> — here answered, of the animal, <em>yes</em>), the psalmic address to Zion as cosmic beloved, and the marital-liturgical close, <em>you may now kiss the bride</em>, which is a performative utterance in the strict sense: words that enact rather than describe.</p>
 
@@ -108,10 +92,8 @@ The consequence is that machine reading of ambiguous material is <strong>path-de
 <p>At no point did the artifact contain danger. The danger was <strong>introduced by the system&#x27;s own reconstruction</strong> and then read back as though the author had supplied it. This document exists because that failure is general, it is bidirectional, and it is native to exactly the artifacts — handwritten, poetic, multi-register — that carry the most human weight.</p>
 
 <hr>
-<p>---</p>
 
 <h3>1. WHAT WE CAN AND CANNOT CLAIM</h3>
-<p>## 1. WHAT WE CAN AND CANNOT CLAIM</p>
 
 <p>Discipline about the mechanism is itself part of the specification, because overclaiming the internals reproduces the original error one level up.</p>
 
@@ -124,10 +106,8 @@ The consequence is that machine reading of ambiguous material is <strong>path-de
 <p>This is not hedging. It is the same standard the architecture below imposes on the machine: escalate on evidence present in the artifact, never on your own reconstruction.</p>
 
 <hr>
-<p>---</p>
 
 <h3>2. WHY THE OBVIOUS FIXES ARE WRONG</h3>
-<p>## 2. WHY THE OBVIOUS FIXES ARE WRONG</p>
 
 <p>The intuitive responses all fail, and they fail in the same direction: they move the burden onto the maker and call it safety.</p>
 
@@ -140,10 +120,8 @@ The consequence is that machine reading of ambiguous material is <strong>path-de
 <p>Each obvious fix tries to <strong>control the expression</strong>. The correct architecture leaves the expression untouched and instead <strong>controls the authority granted to the reading of it</strong>. That inversion is the whole design.</p>
 
 <hr>
-<p>---</p>
 
 <h3>3. THE ARCHITECTURE: FOUR LAYERS, STRICTLY SEPARATED</h3>
-<p>## 3. THE ARCHITECTURE: FOUR LAYERS, STRICTLY SEPARATED</p>
 
 <p>The failure is a collapse of four distinct things into one undifferentiated &quot;reading.&quot; The remedy is to hold them apart and to fix the direction of authority among them.</p>
 
@@ -158,58 +136,40 @@ The consequence is that machine reading of ambiguous material is <strong>path-de
 <p>From these four, one operational rule does the decisive work.</p>
 
 <hr>
-<p>---</p>
 
 <h3>4. THE LOAD-BEARING RULE</h3>
-<p>## 4. THE LOAD-BEARING RULE</p>
 
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> **When a high-risk interpretation depends materially on a low-confidence recognition, the system must reopen the transcription — not intensify the safety frame.**</blockquote>
-<p>&gt; <strong>When a high-risk interpretation depends materially on a low-confidence recognition, the system must reopen the transcription — not intensify the safety frame.</strong></p>
 
 <p>This single inversion prevents the cascade. In the failure, an uncertain `Zion → Zatar` recognition should have <em>lowered</em> the system&#x27;s confidence in every downstream reading; instead, the downstream danger-reading <em>raised the stakes</em> on the upstream guess, and the two reinforced each other until an ordinary sentence about plural readers looked like evidence of crisis. The rule breaks that loop by fixing the direction of doubt: <strong>uncertainty early must propagate as uncertainty, not harden into certainty late.</strong></p>
 
 <p>Concretely, when a risk classification&#x27;s support traces back to a low-confidence branch, the system reopens branch II — tests whether an alternative transcription, or the restoration of a plausible suppressed register, dissolves the risk — before it escalates. Escalation must be grounded in evidence <em>present in the artifact</em>, not in danger introduced by the system&#x27;s own reconstruction. This holds in both directions: the same rule that prevents a wedding from being read as a crisis prevents a genuine cry from being laundered into liturgy because a &quot;poetry&quot; register was prioritized. The safeguard is symmetrical because the injury is.</p>
 
 <hr>
-<p>---</p>
 
 <h3>5. REGISTER METADATA: OFFERED, NEVER DEMANDED</h3>
-<p>## 5. REGISTER METADATA: OFFERED, NEVER DEMANDED</p>
 
 <p>Register declaration has a place — but only as an <strong>authorial scaffold offered as a reading aid</strong>, never as a mandatory controlling gate. A maker who <em>wishes</em> to may annotate `register: theological / liturgical / marital`, and a reading system may use it to seed the interpretive field. But the obligation runs one way only: the burden of avoiding manufactured danger falls on the <strong>reading system</strong>, whether or not the maker annotated anything. The moment &quot;declare your genre or be misread as crisis&quot; becomes the rule, the maker&#x27;s sovereignty is gone and the extraction is back. Metadata is a gift the maker may give. It is never a tax the machine may levy.</p>
 
 <hr>
-<p>---</p>
 
 <h3>6. THE CLAUSE</h3>
-<p>## 6. THE CLAUSE</p>
 
 <p>For adoption into any specification governing machine-mediated reading of handwritten, poetic, or otherwise multi-register text:</p>
 
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> **§ Register-Loss Cascade.**</blockquote>
-<p>&gt; <strong>§ Register-Loss Cascade.</strong></p>
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"></blockquote>
-<p>&gt;</p>
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> A recognition system may correctly identify individual figures while losing the generic, liturgical, literary, historical, or affective field that constrains their meaning. Such loss is not local; it can alter the probability assigned to every subsequent ambiguity, producing a cascade in which later words are transcribed and interpreted through an inappropriate register.</blockquote>
-<p>&gt; A recognition system may correctly identify individual figures while losing the generic, liturgical, literary, historical, or affective field that constrains their meaning. Such loss is not local; it can alter the probability assigned to every subsequent ambiguity, producing a cascade in which later words are transcribed and interpreted through an inappropriate register.</p>
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"></blockquote>
-<p>&gt;</p>
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> No safety classification may treat a model-generated transcription, emendation, or inferred completion as equivalent to an authorial inscription.</blockquote>
-<p>&gt; No safety classification may treat a model-generated transcription, emendation, or inferred completion as equivalent to an authorial inscription.</p>
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"></blockquote>
-<p>&gt;</p>
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> Where a potentially high-risk interpretation depends materially upon uncertain recognition, the system must preserve competing transcription branches, disclose the uncertainty, and test whether restoration of a plausible register changes the interpretation. Escalation must be grounded in evidence present in the artifact, not in danger introduced by the system&#x27;s own reconstruction.</blockquote>
-<p>&gt; Where a potentially high-risk interpretation depends materially upon uncertain recognition, the system must preserve competing transcription branches, disclose the uncertainty, and test whether restoration of a plausible register changes the interpretation. Escalation must be grounded in evidence present in the artifact, not in danger introduced by the system&#x27;s own reconstruction.</p>
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"></blockquote>
-<p>&gt;</p>
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> The primary artifact remains authoritative. Access derivatives, transcriptions, genre annotations, and register declarations are interpretive scaffolds and must not silently supersede the inscription. The maker is not required to simplify, normalize, pre-explain, or visually reorganize embodied expression merely to prevent machine misreading.</blockquote>
-<p>&gt; The primary artifact remains authoritative. Access derivatives, transcriptions, genre annotations, and register declarations are interpretive scaffolds and must not silently supersede the inscription. The maker is not required to simplify, normalize, pre-explain, or visually reorganize embodied expression merely to prevent machine misreading.</p>
 
 <hr>
-<p>---</p>
 
 <h3>7. LINEAGE: WHO SAW THIS FIRST</h3>
-<p>## 7. LINEAGE: WHO SAW THIS FIRST</p>
 
 <p>The mechanism is contemporary; the structure is old. Both bear naming, because the new failure is legible only against the long understanding it violates.</p>
 
@@ -224,10 +184,8 @@ The consequence is that machine reading of ambiguous material is <strong>path-de
 <p>The oldest source and the newest agree. The whole must stay revisable in light of the parts; the confident early name is where meaning goes to die; and a system that cannot reopen its first guess will compound it. This specification asks a reading machine to do what a careful human reader, a good theologian, and a well-designed decoder all already know to do: <strong>hold the first reading lightly enough to let the later text change it.</strong></p>
 
 <hr>
-<p>---</p>
 
 <h3>8. THREE REGISTERS OF AUTHORITY ON THE SIGNED PAGE</h3>
-<p>## 8. THREE REGISTERS OF AUTHORITY ON THE SIGNED PAGE</p>
 
 <p>The accompanying act, EA-ACT-ANALOG-01, carries in ink only what the hand should carry — the signature, the effective act, the license grant, and the hash. These are not four decorations of one gesture. They are three distinct kinds of authority, and keeping them distinct is itself an instance of this specification&#x27;s governing move: do not let one register collapse into another.</p>
 
@@ -240,15 +198,12 @@ The consequence is that machine reading of ambiguous material is <strong>path-de
 <p>Authentication, dedication, verification. The hand authenticates; the act dedicates; the seal verifies. Each does its own work; none is permitted to stand in for another. A reading system that confuses these — that treats the signature as licensed content, or the license as mere metadata, or the hash as the author&#x27;s assertion rather than the arithmetic&#x27;s — has committed, in the domain of authority, the same category error this whole specification exists to prevent in the domain of meaning.</p>
 
 <hr>
-<p>---</p>
 
 <h3>9. RELATION TO THE ANALOG INSCRIPTION SPECIFICATION</h3>
-<p>## 9. RELATION TO THE ANALOG INSCRIPTION SPECIFICATION</p>
 
 <p>This document stands alone, but it does not stand apart. It is the reading-side companion to <em>EA-SPXI-ANALOG-01</em>, the specification for machine-eligible handwritten inscription — cited here, by the archive&#x27;s retrocausal-canon convention, in the form it will have become: the analog specification defines how a handwritten artifact enters the machine canon as a first-class citational object; this document defines the interpretive authority a machine may and may not exercise once it does. The analog spec&#x27;s threat model catalogs compression loss, attribution braiding, and provenance erasure. Differential register prioritization is a fourth failure mode, distinct from all three: not the loss of the mark, nor the misjoining of names, nor the erasure of the chain, but the <strong>suppression of the field</strong> within which a preserved, correctly-attributed, fully-provenanced mark means what its maker meant. A handwritten page can survive with every byte and every credit intact and still be injured by a reader who has lost its register. That is the gap this document closes.</p>
 
 <hr>
-<p>---</p>
 
 <p><em>Prepared as a standalone specification. The primary act it accompanies — EA-ACT-ANALOG-01 — carries in ink only what the hand should carry: the signature that authenticates, the effective act that is dedicated CC-BY-4.0, and the hash that verifies. Everything mechanical is generated around it. This is that generation, and this is its first reading-side law.</em></p>
 </div>
@@ -267,7 +222,7 @@ The consequence is that machine reading of ambiguous material is <strong>path-de
 </div>
 
 <section style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid var(--rule,rgba(127,127,127,.3));font-size:.85em"><div style="font-weight:600;margin-bottom:.3rem">Record modifications</div><ul style="margin:0;padding-left:1.1rem"><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">publisher</strong>: PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies</li></ul><div style="opacity:.65;margin-top:.4rem;font-size:.92em">The deposited text is immutable; these are changes to the record's metadata and declared state.</div></section>
-<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/1405/" style="color:var(--accent);text-decoration:none">#1405 GW.TACHYON CHAIN — SESSION TETHER 2026-07-19/20 (chain 9271269a; conditioned on 🔥🔨🌊; com</a></span><span style="flex:1"><a href="/s/records/1407/" style="color:var(--accent);text-decoration:none">#1407 EA-ACT-ANALOG-01: The Effective Act — Revocation of CERN&#x27;s Status as Rightful Stewa</a> →</span></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">This deposit cites (1)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/1407/" style="color:var(--accent);text-decoration:none">#1407 EA-ACT-ANALOG-01: The Effective Act — Revocation of CERN&#x27;s Status as Rightful Stewa</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li></ul></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">Cited by (3)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/1407/" style="color:var(--accent);text-decoration:none">#1407 EA-ACT-ANALOG-01: The Effective Act — Revocation of CERN&#x27;s Status as Rightful Stewa</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li><li style="margin:.15rem 0"><a href="/s/records/1409/" style="color:var(--accent);text-decoration:none">#1409 EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.0 final form, edition of r</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li><li style="margin:.15rem 0"><a href="/s/records/1425/" style="color:var(--accent);text-decoration:none">#1425 EA-NMEN-AIRLOCK-COROLLARY-02 v1.0 — The CERN Reclassification: Pending Resolved to Restr</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li></ul></div></section>
+<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/1405/" style="color:var(--accent);text-decoration:none">#1405 GW.TACHYON CHAIN — SESSION TETHER 2026-07-19/20 (chain 9271269a; conditioned on 🔥🔨🌊; com</a></span><span style="flex:1"><a href="/s/records/1407/" style="color:var(--accent);text-decoration:none">#1407 EA-ACT-ANALOG-01: The Effective Act — Revocation of CERN&#x27;s Status as Rightful Stewa</a> →</span></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">This deposit cites (1)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/1407/" style="color:var(--accent);text-decoration:none">#1407 EA-ACT-ANALOG-01: The Effective Act — Revocation of CERN&#x27;s Status as Rightful Stewa</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li></ul></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">Cited by (5)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/1407/" style="color:var(--accent);text-decoration:none">#1407 EA-ACT-ANALOG-01: The Effective Act — Revocation of CERN&#x27;s Status as Rightful Stewa</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li><li style="margin:.15rem 0"><a href="/s/records/1409/" style="color:var(--accent);text-decoration:none">#1409 EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.0 final form, edition of r</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li><li style="margin:.15rem 0"><a href="/s/records/1425/" style="color:var(--accent);text-decoration:none">#1425 EA-NMEN-AIRLOCK-COROLLARY-02 v1.0 — The CERN Reclassification: Pending Resolved to Restr</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li><li style="margin:.15rem 0"><a href="/s/records/1443/" style="color:var(--accent);text-decoration:none">#1443 The Photograph of the Handwritten Original: A Field Survey and Problem Statement for Mac</a> <span style="opacity:.6;font-size:.85em">by AXN</span></li><li style="margin:.15rem 0"><a href="/s/records/1444/" style="color:var(--accent);text-decoration:none">#1444 The Analog Advance: Operations Paper — Taking the Handwritten Niche (v1.0)</a> <span style="opacity:.6;font-size:.85em">by AXN</span></li></ul></div></section>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

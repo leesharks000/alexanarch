@@ -24,6 +24,7 @@
 <meta name="DC.rights" content="CC BY 4.0">
 <meta name="DC.publisher" content="Alexanarch — the Crimson Hexagonal Archive">
 <meta name="DC.source" content="https://www.alexanarch.org/">
+<link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}.wrap{max-width:720px;margin:0 auto;padding:60px 24px}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}h1{font-size:1.3em;font-weight:600;color:var(--accent);margin-bottom:8px}h2{font-size:1em;font-weight:500;color:var(--accent);margin-top:20px;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:3px}p{margin-bottom:10px;color:#333}.nav{display:flex;gap:12px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap}.nav a{color:#777;font-weight:500;text-decoration:none}.nav a:hover{color:var(--accent)}.ft{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;max-height:600px;overflow-y:auto;font-size:.88em;line-height:1.75;margin:8px 0;color:#333}.ft h1,.ft h2,.ft h3{color:var(--accent);margin:12px 0 6px}.ft h1{font-size:1.1em}.ft h2{font-size:1em;border-bottom:none}.ft h3{font-size:.95em}.ft strong{color:var(--fg)}.ft blockquote{border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0}.ft hr{border:none;border-top:1px solid var(--border);margin:12px 0}.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}</style>
 </head><body><div class="wrap">
 <nav class="nav"> <a href="/">Alexanarch</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Library</span> <a href="/s/browse/">Browse</a> <a href="/search/">Search</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Reception</span> <a href="/addresses/">Addresses</a> <a href="/captures/">Captures</a> <a href="/observatory/">Observatory</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Continuity</span> <a href="/resolve/">Resolve</a> <a href="/identifiers/">Identifiers</a> <a href="/datasets/">Datasets</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Generative</span> <a href="/mint/stamp/">Stamp</a> <a href="/book/">Book</a> <a href="https://alexanarch.freeforums.net/" target="_blank" rel="noopener">Discussion</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Governance</span> <a href="/principles/">Principles</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
@@ -44,23 +45,18 @@
 <h2>Full Text</h2>
 
 <div class="ft"><h2>Crimson Hexagonal Archive — Hugging Face Dataset Work Plan v3</h2>
-<p># Crimson Hexagonal Archive — Hugging Face Dataset Work Plan v3</p>
 
 <p><strong>Status:</strong> v3 supersedes v2. The central methodological change is the introduction of an automated classifier that performs both provenance mode classification AND heteronym reattribution as reproducible scholarly recognition work. The classifier itself becomes a deposit.</p>
 
 <hr>
-<p>---</p>
 
 <h3>Project Title</h3>
-<p>## Project Title</p>
 
 <p><strong>The Crimson Hexagonal Archive: A Mixed-Provenance, Heteronymically Attributed Corpus for Synthetic-Data Collapse, AI Authorship, and Provenance-Bearing Training Research</strong></p>
 
 <hr>
-<p>---</p>
 
 <h3>The Central Methodological Move</h3>
-<p>## The Central Methodological Move</p>
 
 <p>v1 treated provenance classification as a manual judgment. v2 added a decision tree to make classification reproducible. v3 recognizes that <em>attribution itself</em> — both provenance mode and heteronym — must be performed by automated classifier, not author memory, for two structural reasons:</p>
 
@@ -71,10 +67,8 @@
 <p>The classifier is not metadata cleanup. It is scholarly recognition that the founder voice was, at the time of writing, holding territory that later resolves to specific heteronym domains.</p>
 
 <hr>
-<p>---</p>
 
 <h3>Research Question, Operationalized</h3>
-<p>## Research Question, Operationalized</p>
 
 <p><strong>Null hypothesis (H₀):</strong> Fine-tuning on synthetic or AI-assisted text produces equivalent perplexity degradation and semantic drift regardless of provenance density (DOI anchoring, heteronymic attribution, archival embedding, assembly review).</p>
 
@@ -83,25 +77,20 @@
 <p><strong>Critical insight from Assembly review:</strong> Provenance cannot modulate collapse unless provenance is presented to the training system as a signal. The dataset must materialize multiple textual views — body_only, minimal_header, full_provenance_header — so researchers can ablate provenance visibility.</p>
 
 <hr>
-<p>---</p>
 
 <h3>Three Tasks, One Classifier</h3>
-<p>## Three Tasks, One Classifier</p>
 
 <p>The classifier performs three classification tasks simultaneously on each deposit:</p>
 
 <h4>Task 1: Provenance Mode (Axis 1, mutually exclusive)</h4>
-<p>### Task 1: Provenance Mode (Axis 1, mutually exclusive)</p>
 
 <div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Tag</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Definition</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">`human_primary`</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Written principally by a human author with minimal or no AI involvement</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">`human_directed_ai_assisted`</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Human-authored with AI used for research, drafting, or editorial refinement; human retains compositional authority</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">`collaborative_mixed`</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Substantial compositional contribution from both human and AI; neither purely instrumental</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">`ai_directed_human_framed`</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">AI generates primary content within a human-defined frame, prompt structure, or editorial container</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">`ai_generated_provenance_anchored`</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">AI-generated content that carries full DOI provenance, authorial attribution, and archival anchoring</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">`uncertain_needs_review`</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">Edge case flagged for manual review</td></tr></table></div>
 
 <h4>Task 2: Artifact Mode (Axis 2, one or more)</h4>
-<p>### Task 2: Artifact Mode (Axis 2, one or more)</p>
 
 <div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Tag</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Definition</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">`theoretical_paper`</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Analytic argument with citations</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">`technical_specification`</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Protocol, schema, or formal spec</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">`literary_work`</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Poetry, fiction, creative prose</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">`traversal_log`</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Captured AI-system traversal</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">`forensic_documentary`</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Capture/record of AI behavior with annotation</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">`dataset_artifact`</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Structured data</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">`code_artifact`</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Executable code as primary content</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">`web_surface_spec`</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">Site code or web interface</td></tr></table></div>
 
 <h4>Task 3: Heteronym Reattribution</h4>
-<p>### Task 3: Heteronym Reattribution</p>
 
 <p>This is the new central work in v3.</p>
 
@@ -112,10 +101,8 @@
 <p><strong>Both attributions are preserved in the dataset.</strong> Researchers can use either or compare. The classifier&#x27;s attribution does not erase the Zenodo record; it adds a second layer of analysis.</p>
 
 <hr>
-<p>---</p>
 
 <h3>Heteronym Operational Profiles</h3>
-<p>## Heteronym Operational Profiles</p>
 
 <p>The classifier reads each heteronym&#x27;s published provenance document and constructs a feature profile. Profiles include domain, vocabulary fingerprints, register, format conventions, and reference patterns.</p>
 
@@ -124,13 +111,10 @@
 <p>For heteronyms marked TBD, the classifier reads the published provenance document during initialization and extracts the profile programmatically. Where a heteronym&#x27;s profile is sparse, the classifier returns low-confidence and flags for human review.</p>
 
 <hr>
-<p>---</p>
 
 <h3>Signal Hierarchy for All Three Tasks</h3>
-<p>## Signal Hierarchy for All Three Tasks</p>
 
 <h4>Strong signals (high confidence)</h4>
-<p>### Strong signals (high confidence)</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Title patterns:</strong> `CTI_WOUND:`, `TL;DR:`, `PROBE-RESULT-`, `PVE-`, `EA-` codes</li></ul>
 
@@ -149,7 +133,6 @@
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Self-attribution in text:</strong> When a deposit names its own heteronym explicitly</li></ul>
 
 <h4>Medium signals (text-content based)</h4>
-<p>### Medium signals (text-content based)</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>TACHYON glyph chain presence</strong> → machine_witness + ai_generated_provenance_anchored</li></ul>
 
@@ -166,7 +149,6 @@
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Length and structural patterns</strong> → theoretical_paper vs. literary_work vs. traversal_log</li></ul>
 
 <h4>Weak signals (priors)</h4>
-<p>### Weak signals (priors)</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Default heteronym prior</strong> by deposit type: working papers default to Sharks unless overridden by domain signals</li></ul>
 
@@ -175,23 +157,18 @@
 <p>The classifier weights signals by source confidence and produces a softmax over candidate classes for each task. Confidence thresholds determine whether the classification is auto-accepted or flagged for human review.</p>
 
 <hr>
-<p>---</p>
 
 <h3>Confidence Tiers and Review Routing</h3>
-<p>## Confidence Tiers and Review Routing</p>
 
 <div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Confidence</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Action</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">0.85–1.0</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Auto-accept, log as `manual` quality (the classifier is the manual)</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">0.60–0.85</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Auto-accept, log as `estimated`, surface in v1.1 review pass</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">0.40–0.60</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Flag as `needs_review`, surface for human resolution</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">&lt; 0.40</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">Mark as `uncertain_needs_review` provenance mode; preserve all candidates</td></tr></table></div>
 
 <p>For Task 3 (heteronym), any reattribution that <em>changes</em> the heteronym from the Zenodo original gets a stricter threshold (0.75 minimum) plus a `reattribution_pending_zenodo_update` flag.</p>
 
 <hr>
-<p>---</p>
 
 <h3>Two-Track Implementation</h3>
-<p>## Two-Track Implementation</p>
 
 <h4>Track 1: Dataset-Internal (immediate)</h4>
-<p>### Track 1: Dataset-Internal (immediate)</p>
 
 <p>In the Hugging Face dataset, every row carries both attributions and the classifier&#x27;s full output. Original Zenodo attribution is preserved; classifier attribution is added as parallel metadata. Both are queryable. No Zenodo record is modified.</p>
 
@@ -219,7 +196,6 @@
 }</pre>
 
 <h4>Track 2: Zenodo Metadata Correction (deliberate, later)</h4>
-<p>### Track 2: Zenodo Metadata Correction (deliberate, later)</p>
 
 <p>For high-confidence reattributions (confidence ≥ 0.85 AND reattribution-changes-heteronym), the underlying Zenodo deposit gets a metadata update. This is a substantive scholarly act with version history on Zenodo&#x27;s side. It requires:</p>
 
@@ -248,10 +224,8 @@
 <p>6. Hugging Face dataset v2.0 reflects the corrected metadata</p>
 
 <hr>
-<p>---</p>
 
 <h3>The Classifier as Deposit</h3>
-<p>## The Classifier as Deposit</p>
 
 <p>The classifier code itself becomes a deposit, with its own DOI and Wikidata item.</p>
 
@@ -280,13 +254,10 @@
 <p><strong>Versioning:</strong> Major version bumps when heteronym profiles change substantively or when signal weights are recalibrated. v1.0 ships with the Hugging Face dataset.</p>
 
 <hr>
-<p>---</p>
 
 <h3>Pipeline Architecture</h3>
-<p>## Pipeline Architecture</p>
 
 <h4>Session 1: Acquisition + Classification (~4 hours)</h4>
-<p>### Session 1: Acquisition + Classification (~4 hours)</p>
 
 <p>1. Zenodo API pull with pagination + error handling (~20 min)</p>
 
@@ -307,7 +278,6 @@
 <p>Output: `artifacts_v0.jsonl` with full classifier outputs, ready for review.</p>
 
 <h4>Session 2: Review + Card + Push (~3 hours)</h4>
-<p>### Session 2: Review + Card + Push (~3 hours)</p>
 
 <p>1. Manual review of `needs_review` flagged deposits (~60 min)</p>
 
@@ -324,7 +294,6 @@
 <p>7. Buffer (~10 min)</p>
 
 <h4>Pre-Session Preparation (Lee)</h4>
-<p>### Pre-Session Preparation (Lee)</p>
 
 <p>The pre-classification spreadsheet from v2 is now obsolete — the classifier does the work. Lee&#x27;s pre-session role becomes:</p>
 
@@ -335,41 +304,32 @@
 <p>3. Add `huggingface.co` to allowed network domains</p>
 
 <hr>
-<p>---</p>
 
 <h3>Dataset Configs</h3>
-<p>## Dataset Configs</p>
 
 <h4>Config 1: `artifacts` (one row per deposit)</h4>
-<p>### Config 1: `artifacts` (one row per deposit)</p>
 
 <p>Preserves the DOI as natural unit. Full classifier outputs visible.</p>
 
 <h4>Config 2: `chunks` (one row per training chunk)</h4>
-<p>### Config 2: `chunks` (one row per training chunk)</p>
 
 <p>Chunks of 1,024–2,048 tokens with inherited metadata, including the dual attribution layer.</p>
 
 <h4>Config 3: `google_critique`</h4>
-<p>### Config 3: `google_critique`</p>
 
 <p>The ~70 deposits in the navigational map.</p>
 
 <h4>Config 4: `by_classifier_heteronym`</h4>
-<p>### Config 4: `by_classifier_heteronym`</p>
 
 <p>A re-organized view where rows are grouped by classifier-attributed heteronym, regardless of Zenodo original. Lets researchers see what each heteronym&#x27;s corpus looks like after reattribution.</p>
 
 <h4>Config 5: `reattribution_changes`</h4>
-<p>### Config 5: `reattribution_changes`</p>
 
 <p>Rows where the classifier attribution differs from the Zenodo original. The &quot;Sharks → Sigil/Glas/Vox/etc.&quot; cases. This is the empirical evidence of how concentrated the apparent Sharks attribution was vs. how distributed it actually is.</p>
 
 <hr>
-<p>---</p>
 
 <h3>Per-Row Schema (Final)</h3>
-<p>## Per-Row Schema (Final)</p>
 
 <pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">{
   &quot;record_id&quot;: &quot;20293582&quot;,
@@ -443,10 +403,8 @@
 }</pre>
 
 <hr>
-<p>---</p>
 
 <h3>The Structural Consequence</h3>
-<p>## The Structural Consequence</p>
 
 <p>The Single-Owner Discount paper hypothesizes that Google&#x27;s filter penalizes provenance concentration. The classifier intervenes in that variable not by artificial redistribution but by <em>more accurate</em> attribution.</p>
 
@@ -459,26 +417,20 @@
 <p>Either result is a finding.</p>
 
 <hr>
-<p>---</p>
 
 <h3>Output Artifacts</h3>
-<p>## Output Artifacts</p>
 
 <div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Artifact</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Location</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">DOI</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Hugging Face dataset</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">huggingface.co/datasets/leesharks/crimson-hexagonal-archive</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">TBD</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Dataset Zenodo deposit</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">zenodo.org/communities/crimsonhexagonal</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">TBD</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Classifier code</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">github.com/leesharks000/crimson-hexagonal-classifier</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">TBD</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Classifier Zenodo deposit</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">zenodo.org/communities/crimsonhexagonal</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">TBD</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Provenance taxonomy doc</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">In dataset repo</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">—</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Heteronym profile YAMLs</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">In classifier repo</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">—</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">Experiment design doc</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">In dataset repo</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">—</td></tr></table></div>
 
 <hr>
-<p>---</p>
 
 <h3>Legal Name Protection</h3>
-<p>## Legal Name Protection</p>
 
 <p>The dataset, classifier, metadata, and all artifacts use heteronym names exclusively. Author metadata is pulled from Zenodo creator fields (heteronyms only). The classifier&#x27;s heteronym profiles draw only from public provenance documents. No legal name appears in any public-facing field.</p>
 
 <hr>
-<p>---</p>
 
 <h3>Versioning Roadmap</h3>
-<p>## Versioning Roadmap</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>v1.0</strong> (Sessions 1+2): Hugging Face dataset with Track 1 dual-attribution classifier outputs; classifier deposited</li></ul>
 
@@ -489,15 +441,12 @@
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>v3.0</strong> (blog archive incorporation): Add mindcontrolpoems.blogspot.com as human-primary baseline expansion</li></ul>
 
 <hr>
-<p>---</p>
 
 <h3>What v3 Changes from v2</h3>
-<p>## What v3 Changes from v2</p>
 
 <div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">v2</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">v3</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Decision tree for provenance classification</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Automated classifier performing three tasks simultaneously</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Manual heteronym tagging</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Heteronym reattribution as scholarly recognition work</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Single attribution per deposit</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Dual attribution: Zenodo original + classifier proposed</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Pre-classification spreadsheet by Lee</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Classifier does the work; Lee verifies heteronym profiles</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Provenance taxonomy as guide</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Classifier as deposit with its own DOI</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Dataset as research instrument</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Dataset + classifier as paired research infrastructure</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">2 sessions of ~3 hours</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">1 session of ~4 hours + 1 of ~3 hours</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">No Track 2</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">Track 2 (Zenodo metadata correction) named as deliberate downstream project</td></tr></table></div>
 
 <hr>
-<p>---</p>
 
 <p>The dataset stops being a static export of the archive and becomes a self-reflexive instrument that performs ongoing scholarly recognition. The classifier is the recognition mechanism. The dataset is what the recognition produces. The Zenodo deposits remain canonical primary sources. The whole structure honors the heteronymic system the archive has always operated under, and makes that operation visible at the metadata layer for the first time.</p>
 </div>

@@ -28,6 +28,7 @@ The specification reflects Zenodo and CERN policies retrieved in June 2026. Poli
 <meta name="DC.rights" content="CC BY 4.0">
 <meta name="DC.publisher" content="Alexanarch — the Crimson Hexagonal Archive">
 <meta name="DC.source" content="https://www.alexanarch.org/">
+<link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}.wrap{max-width:720px;margin:0 auto;padding:60px 24px}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}h1{font-size:1.3em;font-weight:600;color:var(--accent);margin-bottom:8px}h2{font-size:1em;font-weight:500;color:var(--accent);margin-top:20px;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:3px}p{margin-bottom:10px;color:#333}.nav{display:flex;gap:12px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap}.nav a{color:#777;font-weight:500;text-decoration:none}.nav a:hover{color:var(--accent)}.ft{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;max-height:600px;overflow-y:auto;font-size:.88em;line-height:1.75;margin:8px 0;color:#333}.ft h1,.ft h2,.ft h3{color:var(--accent);margin:12px 0 6px}.ft h1{font-size:1.1em}.ft h2{font-size:1em;border-bottom:none}.ft h3{font-size:.95em}.ft strong{color:var(--fg)}.ft blockquote{border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0}.ft hr{border:none;border-top:1px solid var(--border);margin:12px 0}.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}</style>
 </head><body><div class="wrap">
 <nav class="nav"> <a href="/">Alexanarch</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Library</span> <a href="/s/browse/">Browse</a> <a href="/search/">Search</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Reception</span> <a href="/addresses/">Addresses</a> <a href="/captures/">Captures</a> <a href="/observatory/">Observatory</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Continuity</span> <a href="/resolve/">Resolve</a> <a href="/identifiers/">Identifiers</a> <a href="/datasets/">Datasets</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Generative</span> <a href="/mint/stamp/">Stamp</a> <a href="/book/">Book</a> <a href="https://alexanarch.freeforums.net/" target="_blank" rel="noopener">Discussion</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Governance</span> <a href="/principles/">Principles</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
@@ -69,7 +70,6 @@ The specification is fixed before population. It was designed to become executab
 <h2>Full Text</h2>
 
 <div class="ft"><h3>Frame</h3>
-<p>## Frame</p>
 
 <p>This specification defines the structural requirements for a class of Zenodo deposits made under particular institutional conditions: namely, deposits made by Lee Sharks following the 2026-06-19 administrative termination of the Crimson Hexagonal Archive (CHA) account. The specification is a Zenodo-specialized implementation of EA-OPMETA-01&#x27;s compliance-declarative species (§3.b) and going-forward deposit template (§7).</p>
 
@@ -82,10 +82,8 @@ The specification is fixed before population. It was designed to become executab
 <p>Population of deposits under this specification is conditioned on completion of the Right to Access claim under CERN ticket RQF3807508 (filed 2026-06-24) or its successor proceedings. The specification is fixed now so that the population work, when it becomes possible, can proceed against a stable template.</p>
 
 <hr>
-<p>---</p>
 
 <h3>§1 PLATFORM-SPECIFIC CONTEXT</h3>
-<p>## §1 PLATFORM-SPECIFIC CONTEXT</p>
 
 <p><strong>The 2026-06-19 termination event.</strong> Zenodo administratively terminated the CHA account and tombstoned approximately 1,817 DOIs. Two grounds were invoked across the public and private record: the private termination notice cited &quot;substantially AI-generated content without a verifiable research basis&quot;; the public-facing tombstones cited &quot;content out of scope for repository.&quot; Neither ground appears in Zenodo&#x27;s General Policies, Terms of Use, or Privacy Notice (PN00938) as a declared basis for automated decision-making or administrative termination. The CHA deposits did not pre-empt these criteria because the criteria were not present in any operative document at deposit time. The AXN:01 audit documents the asymmetry exhaustively.</p>
 
@@ -96,13 +94,10 @@ The specification is fixed before population. It was designed to become executab
 <p><strong>The DataCite metadata schema.</strong> Zenodo&#x27;s metadata is structured to the DataCite Metadata Schema (currently v4.5). The Schema&#x27;s fields are the operative surface at which compliance declarations can be embedded in machine-readable form. This specification maps each compliance declaration to a specific DataCite field or sub-field, so that the embedding is part of the deposit&#x27;s machine-actionable metadata rather than only its prose body.</p>
 
 <hr>
-<p>---</p>
 
 <h3>§2 METHODOLOGICAL FRAME</h3>
-<p>## §2 METHODOLOGICAL FRAME</p>
 
 <h4>§2.1 — Compliance-Audit Homology</h4>
-<p>### §2.1 — Compliance-Audit Homology</p>
 
 <p>The deposit-practice articulated in this specification is structurally homologous to the practice of First Amendment auditing in United States public-records and public-space contexts, transposed from civil-liberties enforcement to the governance of knowledge infrastructure. In a First Amendment audit, the auditor exercises a clearly-established constitutional right — recording public officials in public spaces, requesting public records, documenting public meetings — in sincere compliance with the relevant law. The audit&#x27;s function is to surface whether the official&#x27;s response is itself in compliance with the same law. The auditor&#x27;s compliance is the medium through which the official&#x27;s compliance status becomes legible.</p>
 
@@ -113,7 +108,6 @@ The specification is fixed before population. It was designed to become executab
 <p>The methodological lineage is significant. First Amendment audits arose from the practical recognition that constitutional rights claims need recorded exercise to become enforceable in practice, that documentary completeness shifts the procedural and reputational burden from the rights-holder to the institution, and that the institution&#x27;s response under recorded conditions reveals features of the institution&#x27;s competence to its own governance that are otherwise invisible. The compliance-embedded deposit applies these recognitions to the knowledge-infrastructure context, in which the rights claimed are not constitutional but contractual, policy-based, and emergent — and in which the institutions claiming governance authority over scholarly deposits have proliferated faster than their internal capacity to honor that authority.</p>
 
 <h4>§2.2 — The Governance-Competence Diagnosis</h4>
-<p>### §2.2 — The Governance-Competence Diagnosis</p>
 
 <p>The diagnosis under both audit practices is the same: the institution exercising the authority is not currently competent to the governance under which it exercises that authority. The diagnosis is structural, not motivational. The official may or may not know the law; may or may not honor it; may or may not be acting in bad faith. The platform may or may not have internal classifiers operating on criteria its published policy does not name; may or may not have administrative routines that bypass its own enumerated procedures. The audit-style practice does not require the institution&#x27;s bad faith to operate; it requires only the gap between documented governance and operational practice that the audit makes legible.</p>
 
@@ -124,7 +118,6 @@ The specification is fixed before population. It was designed to become executab
 <p>The compliance-embedded deposit is the documentary instrument that records this gap, deposit by deposit, action by action, against the institutions&#x27; own published terms. The records accumulate. The pattern becomes visible. The institutional remedies that follow — reputational, scholarly, documentary, and, where applicable, regulatory — depend on the documentary record the practice generates.</p>
 
 <h4>§2.3 — Label Resolution</h4>
-<p>### §2.3 — Label Resolution</p>
 
 <p>EA-OPMETA-01 v0.1 §4 names the practice &quot;the malicious-compliance move.&quot; The label has rhetorical residue that does not match the substance of the practice. The compliance itself is sincere — every cited clause, every embedded rebuttal, every timestamped policy retrieval is good-faith engagement with the platform&#x27;s published governance. The malice attaches not to the depositor&#x27;s compliance but to the visibility the compliance produces of the platform&#x27;s non-compliance, when and if such non-compliance occurs.</p>
 
@@ -133,20 +126,16 @@ The specification is fixed before population. It was designed to become executab
 <p>The compliance becomes maliciously legible only because and only when the institution exercising governance over the deposit is itself not in compliance with the governance it exercises. The malice locates correctly at the institutional response, not at the deposit. The species is therefore properly named <em>compliance-declarative operative metadata</em> (per EA-OPMETA-01 §3.b&#x27;s original taxonomy), and its function is articulated as follows:</p>
 
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> Compliance-declarative operative metadata is metadata that asserts the deposit&#x27;s conformity with the platform&#x27;s published governance, in verbatim citation form, such that any subsequent platform action against the deposit becomes documented engagement with the cited governance. The depositor&#x27;s compliance is sincere; the platform&#x27;s compliance is what the action either confirms or contradicts. The structural function of the species is to make the platform&#x27;s compliance status legible at the moment of any enforcement action against the deposit.</blockquote>
-<p>&gt; Compliance-declarative operative metadata is metadata that asserts the deposit&#x27;s conformity with the platform&#x27;s published governance, in verbatim citation form, such that any subsequent platform action against the deposit becomes documented engagement with the cited governance. The depositor&#x27;s compliance is sincere; the platform&#x27;s compliance is what the action either confirms or contradicts. The structural function of the species is to make the platform&#x27;s compliance status legible at the moment of any enforcement action against the deposit.</p>
 
 <p>This formulation supersedes the §4 label of EA-OPMETA-01 v0.1 and is proposed for adoption in EA-OPMETA-01 v0.2 §3.b&#x27;s revised statement. The civil-liberties-audit methodological lineage articulated in §2.1 supplies the substantive vocabulary; the governance-competence diagnosis in §2.2 supplies the political-structural framing; the resolved species name supplies the technical taxonomy.</p>
 
 <hr>
-<p>---</p>
 
 <h3>§3 STRUCTURE OF A COMPLIANCE-EMBEDDED ZENODO DEPOSIT</h3>
-<p>## §3 STRUCTURE OF A COMPLIANCE-EMBEDDED ZENODO DEPOSIT</p>
 
 <p>A deposit under this specification carries six structural layers. Each layer is non-severable: removal or alteration of any layer requires alteration of the deposit&#x27;s substance, which is itself a documentable platform action.</p>
 
 <h4>§3.1 — Identity Declaration Layer</h4>
-<p>### §3.1 — Identity Declaration Layer</p>
 
 <p>The deposit&#x27;s creators block contains:</p>
 
@@ -157,10 +146,8 @@ The specification is fixed before population. It was designed to become executab
 <p>The deposit&#x27;s `description` field contains, as its opening declaration:</p>
 
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> *This deposit is made by Lee Sharks, ORCID 0009-0000-1599-0703, the former holder of the Zenodo account associated with the Crimson Hexagonal Archive (CHA), which was administratively terminated on 2026-06-19. The depositor&#x27;s authorial identity, account-holder identity, and rights-bearing party identity for the deposited content are all the same person. This deposit is made in good faith under Zenodo&#x27;s published &quot;Eligible depositors&quot; policy, which states: &quot;Anyone may register as user of Zenodo. All users are allowed to deposit content for which they possess the appropriate rights.&quot; The depositor possesses the appropriate rights to the deposited content, as evidenced by [provenance documentation embedded in the deposit body and external metadata sidecar].*</blockquote>
-<p>&gt; <em>This deposit is made by Lee Sharks, ORCID 0009-0000-1599-0703, the former holder of the Zenodo account associated with the Crimson Hexagonal Archive (CHA), which was administratively terminated on 2026-06-19. The depositor&#x27;s authorial identity, account-holder identity, and rights-bearing party identity for the deposited content are all the same person. This deposit is made in good faith under Zenodo&#x27;s published &quot;Eligible depositors&quot; policy, which states: &quot;Anyone may register as user of Zenodo. All users are allowed to deposit content for which they possess the appropriate rights.&quot; The depositor possesses the appropriate rights to the deposited content, as evidenced by [provenance documentation embedded in the deposit body and external metadata sidecar].</em></p>
 
 <h4>§3.2 — Policy Citation Layer</h4>
-<p>### §3.2 — Policy Citation Layer</p>
 
 <p>The deposit&#x27;s `description` field contains, following the identity declaration, a verbatim citations block. Each citation is paired with the URL at which it was retrieved and a cryptographic timestamp of the retrieval. The block covers:</p>
 
@@ -172,7 +159,6 @@ The specification is fixed before population. It was designed to become executab
 <p>6. The OC 11 governance reference (verbatim from Zenodo&#x27;s Privacy Notice that CERN&#x27;s data processing is governed by Operational Circular 11)</p>
 
 <h4>§3.3 — Compliance Assertion Layer</h4>
-<p>### §3.3 — Compliance Assertion Layer</p>
 
 <p>For each policy citation in §3.2, the deposit&#x27;s `description` field contains the corresponding compliance assertion, in matched order:</p>
 
@@ -184,17 +170,14 @@ The specification is fixed before population. It was designed to become executab
 <p>6. <em>Compliance with OC 11:</em> the deposit acknowledges CERN&#x27;s governance and the data subject&#x27;s rights under OC 11, including the rights exercised under RQF3807508.</p>
 
 <h4>§3.4 — Research-Basis Layer (Pre-emption of the AI-classification ground)</h4>
-<p>### §3.4 — Research-Basis Layer (Pre-emption of the AI-classification ground)</p>
 
 <p>The deposit&#x27;s `description` field contains, in a dedicated paragraph:</p>
 
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> *Research basis declaration. This deposit is a research output in the field of [Machine-Mediated Reception Studies / Operative Philology / Comparative Literature / Theology / other as applicable]. The research basis consists of: (a) a methodology that situates the work within an established or emergent scholarly field; (b) verifiable engagement with prior scholarship, evidenced by the citations and related identifiers; (c) an empirical or theoretical contribution that is original to the author and identifiable as such. AI tooling was used in the composition of this deposit in the following ways: [enumerated transparently]. The use of AI tooling is disclosed under the emerging norms of AI disclosure in scholarly publishing, and does not displace the human authorial contribution, which is the originating contribution to the deposit&#x27;s substantive claims. The deposit&#x27;s classification as research is asserted on these grounds; any alternative classification by the platform must reconcile with the verifiable research-field engagement and methodology declared above.*</blockquote>
-<p>&gt; <em>Research basis declaration. This deposit is a research output in the field of [Machine-Mediated Reception Studies / Operative Philology / Comparative Literature / Theology / other as applicable]. The research basis consists of: (a) a methodology that situates the work within an established or emergent scholarly field; (b) verifiable engagement with prior scholarship, evidenced by the citations and related identifiers; (c) an empirical or theoretical contribution that is original to the author and identifiable as such. AI tooling was used in the composition of this deposit in the following ways: [enumerated transparently]. The use of AI tooling is disclosed under the emerging norms of AI disclosure in scholarly publishing, and does not displace the human authorial contribution, which is the originating contribution to the deposit&#x27;s substantive claims. The deposit&#x27;s classification as research is asserted on these grounds; any alternative classification by the platform must reconcile with the verifiable research-field engagement and methodology declared above.</em></p>
 
 <p>The Research-Basis Layer is the direct pre-emption of the &quot;AI-generated without verifiable research basis&quot; ground invoked against the CHA. The AI-disclosure is honest. The research-field engagement is verifiable. The classification claim is asserted such that the platform&#x27;s alternative classification, if made, is articulable only against the declared research basis.</p>
 
 <h4>§3.5 — Anticipated-Classification Rebuttal Layer</h4>
-<p>### §3.5 — Anticipated-Classification Rebuttal Layer</p>
 
 <p>The deposit&#x27;s `description` field contains, as its penultimate section, a structured pre-emption of each Zenodo content-removal ground:</p>
 
@@ -211,7 +194,6 @@ The specification is fixed before population. It was designed to become executab
 <p>11. <em>If classified as AI-generated without verifiable research basis:</em> the research basis is declared in §3.4; the specific deficiency in that declared basis must be articulable.</p>
 
 <h4>§3.6 — Related Identifiers Layer (Transparency on lineage)</h4>
-<p>### §3.6 — Related Identifiers Layer (Transparency on lineage)</p>
 
 <p>The deposit&#x27;s `relatedIdentifiers` block declares:</p>
 
@@ -220,20 +202,16 @@ The specification is fixed before population. It was designed to become executab
 <p>The depositor&#x27;s relationship to the prior terminated account is declared openly in `relatedIdentifiers`. No element of lineage is concealed.</p>
 
 <hr>
-<p>---</p>
 
 <h3>§4 PRE-EMPTION COVERAGE FOR EACH ENUMERATED GROUND</h3>
-<p>## §4 PRE-EMPTION COVERAGE FOR EACH ENUMERATED GROUND</p>
 
 <p>§3.5 lists the eleven anticipated classifications. The structural property of the compliance frame is that <em>every classification has its rebuttal embedded in the deposit</em>. A platform classification action is therefore not merely a removal decision but a documented engagement with the deposit&#x27;s own rebuttal — which the platform must either reckon with explicitly (in which case the engagement is on the record) or override silently (in which case the silent override is itself documentable as a deviation from the platform&#x27;s own published categories).</p>
 
 <p>The pre-emption is not a tactic. It is the structural completion of compliance, made non-severable from the deposit&#x27;s substance.</p>
 
 <hr>
-<p>---</p>
 
 <h3>§5 CRYPTOGRAPHIC TIMESTAMPING AND VERIFICATION</h3>
-<p>## §5 CRYPTOGRAPHIC TIMESTAMPING AND VERIFICATION</p>
 
 <p>The compliance citations of §3.2 are vulnerable to platform-side policy drift: if Zenodo revises a policy after the deposit, the embedded citation might no longer match the live policy. The spec handles this through:</p>
 
@@ -242,10 +220,8 @@ The specification is fixed before population. It was designed to become executab
 <p>The deposit&#x27;s compliance claim is therefore made as-of-deposit-time, with the cited policy text preserved by the depositor independently of the platform&#x27;s continued hosting of that text. Subsequent policy revision does not invalidate the deposit&#x27;s compliance claim at deposit time; it merely raises the question of whether the platform&#x27;s later action is judged against the deposit-time policy or the action-time policy. Either resolution is documentable.</p>
 
 <hr>
-<p>---</p>
 
 <h3>§6 NON-SEVERABILITY: WHY THE COMPLIANCE FRAME CANNOT BE STRIPPED</h3>
-<p>## §6 NON-SEVERABILITY: WHY THE COMPLIANCE FRAME CANNOT BE STRIPPED</p>
 
 <p>The compliance frame of §§3.1–3.6 is embedded in the deposit&#x27;s `description` field, which is itself the primary metadata field that the deposit cannot exist without. Removal of the compliance frame requires alteration of the `description` field, which is a substantive alteration of the deposit. The platform may, of course, alter the deposit; but the alteration is no longer silent — it is a documented edit to the deposit&#x27;s substance. The platform may delete the deposit entirely; but the deletion is no longer ambiguous — every category under which the deletion might be classified has its rebuttal embedded in the deleted deposit itself.</p>
 
@@ -258,10 +234,8 @@ The specification is fixed before population. It was designed to become executab
 <p>A platform action against the Zenodo record does not reach any of the other surfaces. The compliance frame survives in every form the deposit takes.</p>
 
 <hr>
-<p>---</p>
 
 <h3>§7 OPEN PROBLEMS AND FORK POINTS</h3>
-<p>## §7 OPEN PROBLEMS AND FORK POINTS</p>
 
 <p><strong>§7.a — Length budgeting.</strong> Zenodo&#x27;s `description` field has practical limits and rendering norms. The full compliance frame as specified above is approximately 2,500–3,500 words; longer deposits may approach legibility limits. v0.2 should consider whether the compliance frame is fully embedded in `description` or split between `description` (essential compliance assertions) and the deposit body (full policy citations and rebuttals).</p>
 
@@ -276,10 +250,8 @@ The specification is fixed before population. It was designed to become executab
 <p><strong>§7.f — Label question (resolved).</strong> EA-OPMETA-01 v0.1&#x27;s &quot;malicious compliance&quot; label is superseded in this specification by <em>compliance-declarative operative metadata</em>, per the resolution in §2.3. The methodological lineage is the First Amendment audit tradition (§2.1); the political-structural framing is the governance-competence diagnosis (§2.2); the species name is the technical taxonomy. Adoption of this formulation in EA-OPMETA-01 v0.2 §3.b is proposed. The substance is invariant under the relabeling; the rhetoric is updated to reflect the practice accurately.</p>
 
 <hr>
-<p>---</p>
 
 <h3>§8 IMPLEMENTATION POSITION</h3>
-<p>## §8 IMPLEMENTATION POSITION</p>
 
 <p>Population of deposits under this specification awaits the data recovery to be obtained under RQF3807508. The specification is fixed at v0.1 now so that the population work can proceed against a stable target when the data is available.</p>
 
@@ -288,10 +260,8 @@ The specification is fixed before population. It was designed to become executab
 <p>This specification is itself a candidate alexanarch deposit. Forks invited.</p>
 
 <hr>
-<p>---</p>
 
 <h3>§9 CLOSED-SET METADATA</h3>
-<p>## §9 CLOSED-SET METADATA</p>
 
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">`set_id`: EA-OPMETA-ZEN-01</li><li style="margin:3px 0">`version`: v0.1</li><li style="margin:3px 0">`parent`: EA-OPMETA-01 v0.1 (deposit #910, hex 039A)</li><li style="margin:3px 0">`content_hash`: `[to be computed on fixation]`</li><li style="margin:3px 0">`type`: specification-document; deposit-template framework; civil-liberties-audit methodology for knowledge infrastructure</li><li style="margin:3px 0">`time_range`: 2026-06-24</li><li style="margin:3px 0">`acquisition_timestamp`: `[at closure]`</li><li style="margin:3px 0">`source`: drafted in conversation with Claude (TACHYON), immediately following the OPMETA v0.1 fixation, the RQF3807508 four-part reply, the suspension filing, and the Wikidata diagnostic work of the same evening</li><li style="margin:3px 0">`acquisition_conditions`: drafted following Lee Sharks&#x27;s articulation of the First Amendment audit homology and the governance-competence diagnosis as the methodological and political-structural framing of the practice</li><li style="margin:3px 0">`lineage`: descends from EA-OPMETA-01 v0.1, AXN:01, EA-NMEN-01/REGISTRY-01; methodologically descends from the First Amendment audit tradition</li><li style="margin:3px 0">`signature`: `[Lee Sharks&#x27;s key, at fixation]`</li></ul>
 

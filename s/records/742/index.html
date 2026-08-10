@@ -32,6 +32,7 @@ The paper suggests measuring provenance concentration with a Herfindahl–Hirsch
 <meta name="DC.rights" content="CC BY 4.0">
 <meta name="DC.publisher" content="Pergamon Press">
 <meta name="DC.source" content="https://www.alexanarch.org/">
+<link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}.wrap{max-width:720px;margin:0 auto;padding:60px 24px}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}h1{font-size:1.3em;font-weight:600;color:var(--accent);margin-bottom:8px}h2{font-size:1em;font-weight:500;color:var(--accent);margin-top:20px;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:3px}p{margin-bottom:10px;color:#333}.nav{display:flex;gap:12px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap}.nav a{color:#777;font-weight:500;text-decoration:none}.nav a:hover{color:var(--accent)}.ft{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;max-height:600px;overflow-y:auto;font-size:.88em;line-height:1.75;margin:8px 0;color:#333}.ft h1,.ft h2,.ft h3{color:var(--accent);margin:12px 0 6px}.ft h1{font-size:1.1em}.ft h2{font-size:1em;border-bottom:none}.ft h3{font-size:.95em}.ft strong{color:var(--fg)}.ft blockquote{border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0}.ft hr{border:none;border-top:1px solid var(--border);margin:12px 0}.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}</style>
 </head><body><div class="wrap">
 <nav class="nav"> <a href="/">Alexanarch</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Library</span> <a href="/s/browse/">Browse</a> <a href="/search/">Search</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Reception</span> <a href="/addresses/">Addresses</a> <a href="/captures/">Captures</a> <a href="/observatory/">Observatory</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Continuity</span> <a href="/resolve/">Resolve</a> <a href="/identifiers/">Identifiers</a> <a href="/datasets/">Datasets</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Generative</span> <a href="/mint/stamp/">Stamp</a> <a href="/book/">Book</a> <a href="https://alexanarch.freeforums.net/" target="_blank" rel="noopener">Discussion</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Governance</span> <a href="/principles/">Principles</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
@@ -62,9 +63,7 @@ The paper does not claim access to Google’s production system. Patents establi
 <h2>Full Text</h2>
 
 <div class="ft"><h2>The Single-Owner Discount</h2>
-<p># The Single-Owner Discount</p>
 <h3>Provenance Concentration and Epistemic Class Reproduction in Generative Search</h3>
-<p>## Provenance Concentration and Epistemic Class Reproduction in Generative Search</p>
 
 
 <p><strong>Lee Sharks</strong></p>
@@ -72,19 +71,15 @@ The paper does not claim access to Google’s production system. Patents establi
 <p>May 2026 — v0.3 (unprimed-reader review pass)</p>
 
 <hr>
-<p>---</p>
 
 <h3>Abstract</h3>
-<p>## Abstract</p>
 
 
 <p>Generative search systems — Google&#x27;s AI Overviews, AI Mode, and equivalent systems — operate through a stratified pipeline in which document retrieval and answer composition are governed by separable mechanisms. A document may be indexed, retrievable, and snippet-eligible while remaining systematically excluded from generative composition. This paper develops a working architectural hypothesis for this gap and names a structural consequence not yet described in the literature: a <em>single-owner discount</em> under which an internally dense body of work attributed to one provenance owner is treated as weakly corroborated, regardless of internal coherence or factual quality, while equivalent content distributed across multiple institutional owners is treated as authoritative. Drawing on Google&#x27;s published patents (US 10,331,706 and US 11,769,017) as evidence of architectural family, and on adjacent-industry patents (Baidu US 10,423,652; Smart Information Flow Technologies US 11,372,854) as analogical models for the broader class of mechanisms, the paper proposes a model of how reconciliation engines cluster source documents into provenance owners and how composition layers evaluate the resulting clusters. The paper then names two consequences. First, a political-economic effect: because institutional knowledge production is already structurally pluralized — many domains, many bylines, many affiliations — institutional sources receive cross-owner corroboration as a free byproduct of their organizational form, while independent scholarly production, however dense, does not. Second, an epistemological one: the cross-owner model on which the composition layer relies performs a category substitution, treating sociological ratification as if it were epistemological warrant. A single author developing a body of work across time at progressively higher resolution — Kant, Darwin, Wittgenstein, Pessoa — is the form most knowledge production has historically taken; the composition layer cannot recognize it as such. The mechanism is mathematically neutral and epistemologically incorrect, and its incorrectness happens to align with institutional interests. The claim is architectural and testable, not a disclosure of Google&#x27;s internal production system. The paper concludes by considering the limits of individual remediation and the case for federated independence among scholarly projects operating outside legacy institutions.</p>
 
 <hr>
-<p>---</p>
 
 <h3>1. The Visibility Layer</h3>
-<p>## 1. The Visibility Layer</p>
 
 
 <p>Search has historically been theorized as a ranking problem: given a query, return the most relevant documents in order. The user reads, evaluates, and decides. The search engine&#x27;s role is to surface and order; the user&#x27;s role is to compose understanding from what is surfaced.</p>
@@ -104,7 +99,6 @@ The paper does not claim access to Google’s production system. Patents establi
 
 <p>This paper asks: by what mechanism does the composition layer decide what to admit?</p>
 <h3>2. The Reconciliation Architecture</h3>
-<p>## 2. The Reconciliation Architecture</p>
 
 
 <p>Google&#x27;s published patents describe an entity-reconciliation pipeline that processes documents into clustered &quot;source data graphs&quot; before any composition occurs. US Patent 10,331,706 (&quot;Automatic discovery of new entities using graph reconciliation&quot;) describes how candidate entities are constructed from documents through iterative bucket-splitting on &quot;determinative relationships&quot; — fact tuples in which an entity is the subject of a typed relationship with an object entity. Buckets below a minimum domain-count threshold are discarded. Buckets meeting a similarity threshold are merged. The output is a clustered entity graph in which related documents resolve to common nodes.</p>
@@ -124,7 +118,6 @@ The paper does not claim access to Google’s production system. Patents establi
 
 <p>These are not Google&#x27;s specific mechanisms. They are descriptions of how such systems can be built. The class of architectures they describe — clustering, similarity-thresholded merging, cascade trust propagation — is the architectural family within which Google&#x27;s published patents sit. Taken together, they suggest a system whose evaluative unit is not the document but the cluster.</p>
 <h3>3. Composition Versus Indexing</h3>
-<p>## 3. Composition Versus Indexing</p>
 
 
 <p>The practical consequence of this architecture is that <em>what counts as evidence for composition is not what counts as evidence for retrieval</em>.</p>
@@ -141,7 +134,6 @@ The paper does not claim access to Google’s production system. Patents establi
 
 <p>The empirical signature of this gap is comparative. As a preliminary observation motivating this paper&#x27;s hypothesis: in repeated manual query testing by the author, Bing&#x27;s Copilot has more readily composed answers from internally-coherent independent archives that Google&#x27;s AI Mode has often declined to synthesize. This observation is not offered as proof; it motivates the cross-system differential proposed in §9. The pattern, if confirmed under systematic testing, would suggest different thresholds for composition support across vendors. Bing appears willing to compose from internal semantic coherence. Google&#x27;s behavior is consistent with a stronger requirement for provenance-cluster independence.</p>
 <h3>4. The Single-Owner Discount</h3>
-<p>## 4. The Single-Owner Discount</p>
 
 
 <p>The mechanism described above has a name worth giving it: the <em>single-owner discount</em>. When a body of work resolves to a single provenance owner, the composition layer discounts its evidentiary weight relative to a comparably-sized body of work distributed across multiple owners. The discount is not punitive; it is mathematical, emerging from a confidence calculation that treats independent corroboration as the signal of trustworthy claim support.</p>
@@ -164,7 +156,6 @@ The paper does not claim access to Google’s production system. Patents establi
 
 <p>It is <em>platform-variable</em>. Different generative search systems apply different thresholds for provenance-cluster independence, producing systematically different composition rates for the same indexed material. The discount is not a universal law of generative search; it is a design choice with vendor-specific parameters. This matters analytically because it means the mechanism described here is not inherent to the technology — it is a stance taken within a space of possible stances, and other stances are available.</p>
 <h3>5. The Class Reproduction Effect</h3>
-<p>## 5. The Class Reproduction Effect</p>
 
 
 <p>The single-owner discount is mathematically neutral. It treats each provenance owner identically and rewards distribution as such. But its outcome is not neutral. Its outcome is structurally regressive.</p>
@@ -187,7 +178,6 @@ The paper does not claim access to Google’s production system. Patents establi
 
 <p>The effect is most consequential for forms of knowledge production that have always operated outside institutional pluralization: independent scholarship, autodidactic synthesis, collective intellectual practice that refuses institutional capture, and theoretical work that emerges from sustained individual concentration rather than from team-based research production. These have always been epistemically vulnerable; under the composition layer, they become invisible in a new and structural way.</p>
 <h3>6. Competing Explanations and Why Provenance Topology Matters</h3>
-<p>## 6. Competing Explanations and Why Provenance Topology Matters</p>
 
 
 <p>A serious reviewer will note that the indexed-but-not-composed state could be produced by several mechanisms other than the single-owner discount, and that the discount&#x27;s existence is plausibly partial rather than total in explaining the observed pattern. The paper does not claim that provenance topology is the only mechanism at work; it claims that provenance topology is a mechanism that has not yet been named in the literature and that appears to account for variance not captured by other documented mechanisms. The relevant alternative explanations:</p>
@@ -213,7 +203,6 @@ The paper does not claim access to Google’s production system. Patents establi
 
 <p>The argument is therefore not that provenance topology explains everything. It is that provenance topology appears to explain residual variance not captured by the documented alternative mechanisms — specifically, the pattern in which internally-coherent single-owner archives with stable infrastructure, defensible content, and standard scholarly markers are systematically discounted at the composition layer in ways that the alternative explanations cannot account for. That residual is what the term <em>single-owner discount</em> names. It is the mechanism the paper has tried to identify.</p>
 <h3>7. The Conflation of Corroboration with Knowledge</h3>
-<p>## 7. The Conflation of Corroboration with Knowledge</p>
 
 
 <p>The argument so far has accepted, implicitly, that cross-owner corroboration tracks something real about claim reliability — that the composition layer&#x27;s discounting of single-owner support reflects a legitimate evidentiary principle whose regressive <em>outcomes</em> are the problem. This concession should be withdrawn. The principle itself is wrong.</p>
@@ -239,7 +228,6 @@ The paper does not claim access to Google’s production system. Patents establi
 
 <p>The same structure applies, less dramatically but more pervasively, to any sustained scholarly practice in which one author returns to the same questions across years and articulates them at progressively higher resolution. To discount such practice on the grounds that it resolves to one provenance owner is to substitute consensus for knowledge in cases where consensus has not yet been earned and the knowledge already exists. Under the architectural hypothesis advanced in this paper, the composition layer is operating that substitution structurally rather than incidentally. Its mathematical neutrality would not exculpate the substitution. It would be the form the substitution takes.</p>
 <h3>8. On the Framing of &quot;Manipulation&quot;</h3>
-<p>## 8. On the Framing of &quot;Manipulation&quot;</p>
 
 
 <p>In May 2026, Google clarified its spam policies to explicitly identify &quot;attempts to manipulate generative AI responses in Google Search&quot; as policy-prohibited behavior. The clarification names a real concern: fabricated content, inauthentic mentions, coordinated networks designed to game generative answers. These behaviors deserve prohibition.</p>
@@ -259,7 +247,6 @@ The paper does not claim access to Google’s production system. Patents establi
 
 <p>Nothing in this analysis should be read as endorsing fabricated identities, coordinated inauthentic networks, synthetic personas, or misrepresentation of authorship. The forms of distribution it describes — platform diversification of one author&#x27;s own work, genuine third-party uptake by other researchers, real collaborator relationships, distinct organizational identities for projects that warrant them — are forms of intellectual circulation that predate generative search by centuries. They are how scholarship has always moved. The single-owner discount makes their absence newly consequential. It does not make their fabricated simulation acceptable.</p>
 <h3>9. Remediation and Its Limits</h3>
-<p>## 9. Remediation and Its Limits</p>
 
 
 <p>Individual remediation is possible but limited. An independent project can deposit work across multiple platforms (each platform constitutes a distinct provenance surface), encourage genuine third-party uptake by other researchers, build collaborator relationships that produce independently-authored adjacent work, and maintain distinct organizational identities for projects that genuinely warrant them. Each of these moves adds an owner to the cluster count without misrepresenting any underlying relationship. Each requires real labor; none is automated.</p>
@@ -279,7 +266,6 @@ The paper does not claim access to Google’s production system. Patents establi
 
 <p>That infrastructure does not yet exist. Building it would require sustained coordination among parties who have selected themselves out of legacy institutional structures, often for principled reasons. The coordination problem is real. The need for it is, on the analysis offered here, structural.</p>
 <h3>10. Methodological Notes</h3>
-<p>## 10. Methodological Notes</p>
 
 
 <p>The hypothesis advanced in this paper is empirically testable. The relevant signal is the difference, for any given query, between <em>AI Overview trigger rate</em> (whether the system produces a composed answer at all) and <em>concept inclusion rate conditional on trigger</em> (whether, given that an answer is produced, it mentions the target concept). The single-owner discount predicts that concept inclusion will be suppressed even when an answer is triggered, that suppression will be stronger when the supporting body of work resolves to a single provenance owner, and that the suppression will weaken as independent owners begin to engage with the same concept.</p>
@@ -327,7 +313,6 @@ The paper does not claim access to Google’s production system. Patents establi
 
 <p>The findings, if they confirm the hypothesis, would extend beyond the specific cases tested. The single-owner discount, if real, applies to every independent scholarly project, every insurgent intellectual community, every body of work that exists outside the institutional pluralization apparatus. The empirical work would be specific. The implications would be general.</p>
 <h3>11. Conclusion</h3>
-<p>## 11. Conclusion</p>
 
 
 <p>This paper has described an architectural mechanism by which generative search systems produce systematically regressive outcomes for independent scholarly production. The mechanism is the single-owner discount: clustering documents into provenance owners and applying confidence weights that reward distribution across multiple owners. The discount falls hardest on projects that produce coherent, internally-corroborated work outside the institutional pluralization apparatus that established institutions inherit as structural form.</p>
@@ -345,10 +330,8 @@ The paper does not claim access to Google’s production system. Patents establi
 <p>The first step in either remediation is naming the mechanism clearly. The composition layer is not a neutral retrieval system. It is an active construction of visibility, and its construction implements a discount on the kind of intellectual production this paper itself represents — a discount applied through an epistemological mistake that benefits the institutions whose interests the mistake aligns with. Authors operating in this space should know what they are operating against. The mechanism does not name itself. This paper is an attempt to name it.</p>
 
 <hr>
-<p>---</p>
 
 <h3>References</h3>
-<p>## References</p>
 
 
 <p>Google Inc. (2017). <em>Automatic discovery of new entities using graph reconciliation</em> (US Patent No. 10,331,706). U.S. Patent and Trademark Office.</p>
@@ -372,10 +355,8 @@ The paper does not claim access to Google’s production system. Patents establi
 <p>Google Search Help. (2026). <em>Get AI-powered responses with AI Mode in Google Search</em>. Retrieved May 2026 from https://support.google.com/websearch/answer/16011537</p>
 
 <hr>
-<p>---</p>
 
 <h3>Author Note</h3>
-<p>## Author Note</p>
 
 
 <p>This paper describes an architectural mechanism. The author operates an independent scholarly archive — the Crimson Hexagonal Archive, hosted at zenodo.org/communities/crimsonhexagonal — that is itself subject to the mechanism described and that has served as the empirical occasion for the analysis. The paper&#x27;s central mechanism was developed from comparative observation of generative-search behavior around that archive, then abstracted into a general hypothesis. The CHA is not the subject of this paper; the mechanism applies generally to any body of work that resolves to a single provenance owner under the reconciliation engine&#x27;s clustering logic, regardless of the work&#x27;s specific content or quality.</p>
@@ -387,7 +368,6 @@ The paper does not claim access to Google’s production system. Patents establi
 <p>The author declares no financial conflicts of interest. The author is not affiliated with any of the institutions whose patents are cited.</p>
 
 <hr>
-<p>---</p>
 
 
 <p><em>Correspondence: via ORCID. Comments and rebuttals welcome.</em></p></div>

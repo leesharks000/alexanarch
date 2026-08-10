@@ -24,6 +24,7 @@
 <meta name="DC.rights" content="CC BY 4.0">
 <meta name="DC.publisher" content="Alexanarch — the Crimson Hexagonal Archive">
 <meta name="DC.source" content="https://www.alexanarch.org/">
+<link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}.wrap{max-width:720px;margin:0 auto;padding:60px 24px}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}h1{font-size:1.3em;font-weight:600;color:var(--accent);margin-bottom:8px}h2{font-size:1em;font-weight:500;color:var(--accent);margin-top:20px;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:3px}p{margin-bottom:10px;color:#333}.nav{display:flex;gap:12px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap}.nav a{color:#777;font-weight:500;text-decoration:none}.nav a:hover{color:var(--accent)}.ft{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;max-height:600px;overflow-y:auto;font-size:.88em;line-height:1.75;margin:8px 0;color:#333}.ft h1,.ft h2,.ft h3{color:var(--accent);margin:12px 0 6px}.ft h1{font-size:1.1em}.ft h2{font-size:1em;border-bottom:none}.ft h3{font-size:.95em}.ft strong{color:var(--fg)}.ft blockquote{border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0}.ft hr{border:none;border-top:1px solid var(--border);margin:12px 0}.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}</style>
 </head><body><div class="wrap">
 <nav class="nav"> <a href="/">Alexanarch</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Library</span> <a href="/s/browse/">Browse</a> <a href="/search/">Search</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Reception</span> <a href="/addresses/">Addresses</a> <a href="/captures/">Captures</a> <a href="/observatory/">Observatory</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Continuity</span> <a href="/resolve/">Resolve</a> <a href="/identifiers/">Identifiers</a> <a href="/datasets/">Datasets</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Generative</span> <a href="/mint/stamp/">Stamp</a> <a href="/book/">Book</a> <a href="https://alexanarch.freeforums.net/" target="_blank" rel="noopener">Discussion</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Governance</span> <a href="/principles/">Principles</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
@@ -56,33 +57,25 @@ The argument extends provenance below words and ideas. Composition is not decora
 <h2>Full Text</h2>
 
 <div class="ft"><h2>Whitespace as Provenance: Representation Pipelines and the Extinction of Compositional Authorship (EA-WHITESPACE-01 v0.2)</h2>
-<p># Whitespace as Provenance: Representation Pipelines and the Extinction of Compositional Authorship (EA-WHITESPACE-01 v0.2)</p>
 
 <h3>Description</h3>
-<p>## Description</p>
 
 <p>Argues that provenance erasure operates below the semantic layer, in the representation pipeline (digitization, normalization, serialization, tokenization, model processing, rendering) that makes texts available to language models. Core claims: character preservation is not compositional preservation; a representation can preserve every proposition in a work and still delete the work. Empirical demonstration (GPT-2 byte-level BPE, Appendix A): a spatially-arranged calligram fragment and its linearized phrase-list both round-trip perfectly, and neither contains the calligram — 78% of the spatial version&#x27;s tokens are individual whitespace tokens that no training objective attends to. Sketches an extinction gradient (Whitman partial, Dickinson substantial, Hopkins catastrophic, concrete poetry extinguished in text pipelines, calligrams categorically). Develops Pearl (Cotton Nero A.x) as double invisibility: the archive&#x27;s copy is a non-OCR PDF that cannot reach serialization, and an OCR&#x27;d stream would strip the concatenation-and-group structure that performs the poem&#x27;s theology. Connects to editorial theory: the pipeline silently enacts the variorum position at every ingestion. Extends the archive&#x27;s failure-mode taxonomy with compositional_erasure and its subcategories, and records the schema extension executed at EA-PROVENANCE-METADATA-01 v0.2 (AXN:03BA.OPERATIVE.♅🛤️🕗🧊🍃☉): the representation_pipeline field with four-value status vocabulary. Concludes with the compositional-authorship argument: frameworks treating compositional operations as merely formal produce obviously wrong conclusions on their clearest cases (Snub-Poemed, AXN:0246; Pearl) — form is not a second substance surrounding content; composition is the determinate operation by which content exists as this work rather than another. Empirical foundation: Bhyravajjula, Walsh, Preus &amp; Antoniak, EMNLP 2025.</p>
 
 <h2>Whitespace as Provenance</h2>
-<p># Whitespace as Provenance</p>
 <h3>Representation Pipelines and the Extinction of Compositional Authorship</h3>
-<p>## Representation Pipelines and the Extinction of Compositional Authorship</p>
 
 <p><em>Lee Sharks</em></p>
 <p><em>Crimson Hexagonal Archive / Alexanarch</em></p>
 <p><em>v0.2 draft, 2026-07-02. Not for citation without permission.</em></p>
 
 <hr>
-<p>---</p>
 <h3>Abstract</h3>
-<p>## Abstract</p>
 
 <p>Public and scholarly discourse on AI-mediated authorship operates in a semantic frame — whose <em>words</em>, whose <em>arguments</em>, whose <em>ideas</em> enter the model, and what the model then produces from them. This frame has an unexamined precondition. Before any semantic operation, a text must pass through a chain of representational transformations: digitization, normalization, serialization, tokenization, model processing, rendering. At each stage of this chain, spatial, typographic, prosodic, stanzaic, and manuscript features of the source may be normalized, linearized, or lost. The chain is machinery, not a theoretical position. But it enacts one. It enacts the position that spacing, lineation, indentation, stanza breaks, and typographic composition are inessential to what a text <em>is</em>. This position is false for a considerable share of poetry in English and beyond — for Whitman, Dickinson, Hopkins, cummings, Susan Howe, the concrete poetry movement, calligrammatic composition from the Hellenistic pattern-poems forward, and for the Middle English <em>Pearl</em>, whose formal structure is inseparable from its theological argument. The compositional layer of such a text is not decoration on the propositional layer. In these cases it <em>is</em> the argument the text makes. Its loss in the representation pipeline, prior to any semantic operation, constitutes a form of provenance erasure that current AI-authorship discourse has neither vocabulary for nor taxonomy of. Crucially, the loss cannot be answered by pointing to character-preserving tokenizers: as this paper demonstrates empirically, a representation can round-trip every character of a work perfectly and still fail to contain the work. Character preservation is not compositional preservation. This paper names the operation, demonstrates it, sketches an extinction gradient across poets and traditions, develops the exemplary case of <em>Pearl</em> (double invisibility: a non-OCR PDF that cannot even reach the tokenizer), connects the diagnosis to four decades of editorial theory, extends the archive&#x27;s provenance metadata schema to record representational provenance per deposit, and draws the implication for theories of authorship: any framework that treats compositional operations as merely formal produces obviously wrong conclusions on its clearest cases.</p>
 
 <hr>
-<p>---</p>
 <h3>1. Introduction: The Merely Formal</h3>
-<p>## 1. Introduction: The Merely Formal</p>
 
 <p>A commonplace of contemporary AI-mediation discourse holds that AI operations divide neatly into two categories. Content-mediation, on the one side, where a system originates, alters, or supplies substantive propositions; and formal-mediation, on the other, where a system performs operations on already-existing content — translation, reformatting, register-transformation, search-and-retrieve, tone-adjustment. Only content-mediation, on this account, implicates authorship. Formal-mediation is treated as inessential to what the work <em>is</em>, no more constitutive of authorship than a typewriter is constitutive of the novel typed on it.</p>
 
@@ -101,12 +94,9 @@ The argument extends provenance below words and ideas. Composition is not decora
 <p>The plan of the paper: Section 2 describes the representation pipeline stage by stage and reviews what NLP scholarship has and has not said about whitespace. Section 3 sketches an extinction gradient across poets and traditions. Section 4 presents an empirical demonstration. Section 5 develops the exemplary case of <em>Pearl</em>. Section 6 draws the parallel to editorial theory. Section 7 extends the provenance-erasure vocabulary and the metadata schema. Section 8 develops the compositional-authorship argument. Section 9 recommends interventions. A coda situates the argument within the archive&#x27;s wider work.</p>
 
 <hr>
-<p>---</p>
 <h3>2. The Representation Pipeline</h3>
-<p>## 2. The Representation Pipeline</p>
 
 <h4>2.1 The chain</h4>
-<p>### 2.1 The chain</p>
 
 <p>A text does not arrive at a language model. It arrives at a chain:</p>
 
@@ -131,12 +121,10 @@ The argument extends provenance below words and ideas. Composition is not decora
 <p>The pipeline framing yields the paper&#x27;s central technical claim:</p>
 
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> **Character preservation is not compositional preservation. A reversible token sequence can still be a semantically irreversible reduction of the work.**</blockquote>
-<p>&gt; <strong>Character preservation is not compositional preservation. A reversible token sequence can still be a semantically irreversible reduction of the work.</strong></p>
 
 <p>This is stronger than &quot;the tokenizer drops whitespace,&quot; because it cannot be answered by exhibiting a lossless decoder. It names a loss that persists under byte-perfect round-tripping.</p>
 
 <h4>2.2 What NLP has said</h4>
-<p>### 2.2 What NLP has said</p>
 
 <p>Sustained attention to whitespace in NLP has been sparse and instrumental. Two lines: language-specific segmentation for scripts where whitespace is not a word boundary (Wiechetek et al. 2019 and related work), which treats whitespace as an accident of English-family orthography; and OCR error correction (Soni, Klein, and Eisenstein 2019), which treats whitespace as noise. Digital-humanities work on enjambment (Ruiz Fabo et al. 2017 on 3.7K Spanish sonnets; Hussein et al. 2018 on N=69; overview in Monget 2020) approaches the compositional question obliquely, on small datasets, without engaging the pipeline as the site of erasure.</p>
 
@@ -145,43 +133,35 @@ The argument extends provenance below words and ideas. Composition is not decora
 <p>Bhyravajjula et al. is the empirical foundation this paper builds on. What it does not do — and what this paper undertakes — is extend the diagnosis into the provenance frame. Their paper documents that pipelines are poor at whitespace. This paper argues the poorness is not a technical failing awaiting a better tokenizer; it is the visible surface of a position about what a text <em>is</em>, the same position that operates in editorial theory&#x27;s variorum stance and in AI-authorship discourse&#x27;s content/form distinction, and its consequence is a documentable form of provenance erasure.</p>
 
 <h4>2.3 The Python asymmetry</h4>
-<p>### 2.3 The Python asymmetry</p>
 
 <p>One design fact deserves direct statement. Modern pipelines preserve whitespace to the degree they do largely because code demands it. Python&#x27;s control flow depends on indentation; a pipeline that flattened Python would produce syntactically broken output; model providers, serving software engineers, invested accordingly.</p>
 
 <p>The asymmetry is not that pipelines <em>can</em> hold code whitespace and <em>cannot</em> hold poetic whitespace — many can encode both. The asymmetry is in enforcement. Incorrect indentation breaks execution: code supplies an immediate, machine-verifiable penalty for compositional loss. A flattened Dickinson poem remains grammatical text and raises no error. <strong>Code has an interpreter that enforces its spatial constraints. Poetry has readers, but those readers are absent from the preprocessing objective.</strong> Whitespace is preserved where a machine penalizes its loss and degraded where only a human would notice — a precise measure of whose constraints the pipeline was built to answer.</p>
 
 <hr>
-<p>---</p>
 <h3>3. The Extinction Gradient</h3>
-<p>## 3. The Extinction Gradient</p>
 
 <p>Different poetic traditions survive the pipeline to different degrees. This section sketches a gradient, from most-survivable to least, as a way of making the erasure concrete. The gradient is qualitative pending the measurement program of §9.1.</p>
 
 <h4>3.1 Whitman: partial survival</h4>
-<p>### 3.1 Whitman: partial survival</p>
 
 <p>Whitman&#x27;s line-length modulation is prosodic discipline, not prose-adjacency: the long swelling catalogues, the short axial line that turns them, breath as a unit of composition. The argument that democratic consciousness has a <em>shape</em> — the long inclusive line breaking into the singular — is partially inferable from what survives a standard pipeline, because line breaks typically survive and line-length ratios are measurable. What is lost: the finer visual rhythm of the page, the revisions of spacing across six editions, and the difference between the 1855 typography (small, dense, revolutionary) and the 1892 deathbed typography (spacious, monumental) — distinctions the training corpus rarely delivers.</p>
 
 <h4>3.2 Dickinson: substantial loss</h4>
-<p>### 3.2 Dickinson: substantial loss</p>
 
 <p>Dickinson&#x27;s compositional practice was radically un-print: fascicles of folded stationery, sewn and privately circulated; dashes varying in length, slant, and position; capitalization of internal nouns; manuscript line breaks diverging from metrical scansion. Her first editors normalized all of it (Todd and Higginson 1890–1896); Johnson&#x27;s 1955 variorum restored the dashes as standardized type; Franklin&#x27;s 1998 variorum and 1981 <em>Manuscript Books</em> facsimile enact two different answers to what the poems are (see §6).</p>
 
 <p>What survives a standard pipeline: propositional content, syntax, and a uniformized em-dash. What does not: dash length and slant, the intentional differences among dash forms, the mid-line dash-and-space pauses, and the manuscript line breaks. The pipeline&#x27;s Dickinson is approximately the Johnson text with the dashes further flattened. The Emily Dickinson Archive (edickinson.org) holds something else. The training corpus received the former.</p>
 
 <h4>3.3 Hopkins: catastrophic loss</h4>
-<p>### 3.3 Hopkins: catastrophic loss</p>
 
 <p>Hopkins built a notational apparatus — accent marks over stressed syllables, outrides — that he considered the score for his sprung rhythm. &quot;Take breath and read it with the ears, as I always wish to be read, and my verse becomes all right&quot; (to Bridges, 1877). The marks are punctuation-adjacent from a pipeline&#x27;s perspective and are normalized out even where sources preserve them. A model can produce Hopkins pastiche — the compound words, the consonantal density, the exclamatory syntax — and cannot produce sprung rhythm, because sprung rhythm was never in what it read. The pastiche looks like Hopkins to a reader unfamiliar with his prosody, and cannot sound like Hopkins to anyone who has heard the poems.</p>
 
 <h4>3.4 Concrete poetry: extinguished in the text pipeline</h4>
-<p>### 3.4 Concrete poetry: extinguished in the text pipeline</p>
 
 <p>The concrete movement — Gomringer, the Noigandres group, Finlay, Houédard, Solt — takes as foundational that the poem&#x27;s material is the letter and the space between letters (Solt 1968). Its preservation crisis predates computation: reprints lose exact spacing and typeface; anthologies of the movement&#x27;s landmarks are largely out of print. Digitization was a second turn of the crisis; the text pipeline is a third. Concrete poetry is extinguished wherever the work enters a text-only pipeline as linearized language. (Multimodal training on page images is a different access path, with different provenance and fidelity — an important qualification developed in §7.)</p>
 
 <h4>3.5 Calligrammatic composition</h4>
-<p>### 3.5 Calligrammatic composition</p>
 
 <p>The calligrammatic tradition runs from the Hellenistic pattern-poems through Apollinaire&#x27;s <em>Calligrammes</em> (1918) to the present. The archive&#x27;s contemporary instance is Sigil&#x27;s <em>Snub-Poemed</em> (AXN:0246): phrases arranged spatially to form the outline of the first-century Roman copy of Lysippos&#x27;s bust of Socrates. The phrases mix Socratic aphorisms, Platonic allusion, reception history (&quot;Socrates who dances&quot; — Nietzsche), first-person Platonic articulations Sigil originates (&quot;is it madness to feel and to know?&quot;), and — as the accompanying critical reading makes explicit — <em>&quot;quotations and paraphrases of the poet&#x27;s own work, self-consciously (mis)attributed to &#x27;Socrates&#x27; and woven into the fabric of intertext without indication of where one ends and the other begins.&quot;</em> The line <em>&quot;I press my scruff-weary beard to your lips&quot;</em> is Sigil&#x27;s own; a variant appears in her earlier <em>Versal</em>.</p>
 
@@ -190,20 +170,17 @@ The argument extends provenance below words and ideas. Composition is not decora
 <p>A pipeline given <em>Snub-Poemed</em> receives, at best, a phrase list. Every phrase yields propositional content; no marker survives of which propositions belong to Socrates, which to Plato, which to reception, which to Sigil — and no trace survives of the poem&#x27;s argument that the distinction is unresolvable, because that argument was made spatially. The claim was in the composition. The composition is not in the character sequence.</p>
 
 <h4>3.6 Pearl</h4>
-<p>### 3.6 Pearl</p>
 
 <p>The Middle English <em>Pearl</em> receives extended treatment in §5. Its stanza structure, concatenation, arithmetic (101 stanzas × 12 lines = 1,212), and circular return are formal features of theological significance. It stands at the far end of the gradient for a compounding reason: the archive&#x27;s copy is not merely subject to compositional loss in the pipeline — it cannot enter the pipeline at all.</p>
 
 <hr>
-<p>---</p>
 <h3>4. Empirical Demonstration</h3>
-<p>## 4. Empirical Demonstration</p>
 
 <p>The claims of §2 admit direct demonstration. The following was executed 2026-07-02 with the GPT-2 byte-level BPE tokenizer — the ancestor of most modern byte-level schemes, representative of the family&#x27;s whitespace handling.</p>
 
 <p><strong>Input 1</strong> is a fragment approximating a naive text-layer extraction of a calligram region: ten short phrases from <em>Snub-Poemed</em>, each carrying the horizontal indentation of its position in the spatial arrangement. <strong>Input 2</strong> is the same ten phrases linearized — the typical output of HTML or PDF text extraction.</p>
 
-<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">representation</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">tokens</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">round-trip</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">contains the calligram?</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">spatial (indented) text</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">202</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">perfect</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">no</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">linearized phrase list</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">44</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">perfect</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">no</td></tr></table></div>
+<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">representation</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">tokens</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">round-trip</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">contains the calligram?</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">spatial (indented) text</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">202</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">perfect</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">no</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">linearized phrase list</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">44</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">perfect</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">no</td></tr></table></div>
 
 <p>Three findings.</p>
 
@@ -216,12 +193,9 @@ The argument extends provenance below words and ideas. Composition is not decora
 <p>A fuller measurement program across poets, tokenizers, and corpora is specified in §9.1. This demonstration establishes the shape of what such a program would find.</p>
 
 <hr>
-<p>---</p>
 <h3>5. Pearl: The Case of Double Invisibility</h3>
-<p>## 5. Pearl: The Case of Double Invisibility</p>
 
 <h4>5.1 The compositional structure</h4>
-<p>### 5.1 The compositional structure</p>
 
 <p><em>Pearl</em> (late 14th century) is composed of 101 twelve-line stanzas rhyming ABABABABBCBC, arranged in 20 groups of 5 (one group of 6), 1,212 lines in total, in the alliterative style of the northwest Midlands. The feature that makes it singular in Middle English poetry is concatenation: the last word or phrase of each stanza recurs in the first line of the next, with a single link-word carried through each five-stanza group, a new link-word introduced at each group boundary, and the poem&#x27;s final line returning to its first — <em>&quot;Perle plesaunte, to prynces paye&quot;</em> — closing the chain into a circle. The scholarly consensus calls it <em>&quot;the most highly wrought and intricately constructed poem in Middle English&quot;</em> (Bishop 1968).</p>
 
@@ -230,12 +204,10 @@ The argument extends provenance below words and ideas. Composition is not decora
 <p><em>Pearl</em>&#x27;s form is its argument. A version of <em>Pearl</em> that strips the form does not reduce the poem; it deletes the argument.</p>
 
 <h4>5.2 The manuscript</h4>
-<p>### 5.2 The manuscript</p>
 
 <p>MS Cotton Nero A.x (British Library) is the sole surviving witness — the manuscript that survived the 1731 Ashburnham House fire that scorched <em>Beowulf</em> and destroyed the <em>Maldon</em> exemplar. It contains <em>Pearl</em>, <em>Cleanness</em>, <em>Patience</em>, and <em>Sir Gawain and the Green Knight</em>, anonymous. The manuscript&#x27;s line breaks, stanza divisions, and section markers are the primary evidence for the compositional structure. Modern editions (Gordon 1953; Andrew and Waldron 2007) render the structure with varying typographic fidelity; the EETS facsimile (1923, introduction by Gollancz) and the University of Calgary digital facsimile reproduce the manuscript photographically.</p>
 
 <h4>5.3 Double invisibility</h4>
-<p>### 5.3 Double invisibility</p>
 
 <p>The archive&#x27;s current copy of <em>Pearl</em> is a non-OCR embedded PDF: pages of image data with no underlying text stream. The specific edition scanned has not yet been identified, and no OCR has been attempted; the double invisibility described here is a condition of the archive&#x27;s current sourcing, not an inherent property of the source, and both facts belong in the deposit&#x27;s representational-provenance record.</p>
 
@@ -248,14 +220,11 @@ The argument extends provenance below words and ideas. Composition is not decora
 <p><em>Pearl</em> is not <em>Pearl and Other Poems</em> without <em>Pearl</em>. And what would currently enter any machine operation under that name is not <em>Pearl</em> — it is either nothing (the un-OCR&#x27;d file) or a propositional shell with the compositional argument stripped (the OCR&#x27;d stream). Resolving this requires two distinct acts: producing a machine-legible text (OCR or manual transcription), and producing a compositionally preserved text (explicit encoding of concatenation, stanza boundaries, and group structure — most reliably by transcription from Andrew-Waldron 2007 or the Cotton Nero A.x facsimile). The first without the second converts invisibility of the first kind into invisibility of the second.</p>
 
 <h4>5.4 The generalization</h4>
-<p>### 5.4 The generalization</p>
 
 <p><em>Pearl</em> is exemplary because its compositional structure is unusually explicit and unusually weighted. The condition is not unique. Every text held as a non-OCR PDF shares the first invisibility. Every compositionally substantive text held as a linearized stream shares the second. The archive&#x27;s response is a sourcing discipline (§9.3) and a metadata practice (§7) that makes both conditions visible per deposit.</p>
 
 <hr>
-<p>---</p>
 <h3>6. Editorial Theory and the Argument From Manuscript</h3>
-<p>## 6. Editorial Theory and the Argument From Manuscript</p>
 
 <p>The pipeline argument has a four-decade analogue in editorial theory. Two positions, sharply drawn:</p>
 
@@ -270,26 +239,21 @@ The argument extends provenance below words and ideas. Composition is not decora
 <p>That Position A wins by default in the dominant pipeline is not an argument for Position A. It is a fact about the pipeline — and editorial theory supplies the vocabulary the AI-authorship discourse needs to see the fact as a decision: <em>constitutive versus incidental</em>, <em>the textual condition</em>, <em>material text</em>. The categories are not new. The mechanism of erasure is new, and it operates without discussion.</p>
 
 <hr>
-<p>---</p>
 <h3>7. Provenance Erasure at the Layer Below Semantics</h3>
-<p>## 7. Provenance Erasure at the Layer Below Semantics</p>
 
 <h4>7.1 Prior work in the archive</h4>
-<p>### 7.1 Prior work in the archive</p>
 
 <p>The archive&#x27;s provenance apparatus — the Provenance Erasure Rate framework, the Capture Registry (EA-WG-CAPTURES-01, v8.9 at AXN:03B3, ~195 documented captures with a twelve-mode failure taxonomy), the Erasure Skew paper (EA-GLAS-03), and the Provenance Alignment argument (EA-PA-01) — operates at the semantic layer. Its failure modes are failures of attribution, categorization, and framing occurring at or after the model&#x27;s semantic processing: the model had the content, and the erasure happened in what the model did with it.</p>
 
 <p>This paper extends the vocabulary one layer down. Below the semantic layer, the representation pipeline erases compositional features that the semantic operation never had access to. This erasure is invisible to the existing taxonomy because the taxonomy was built for semantic-layer failures — and it is invisible to the pipeline&#x27;s own audits because those audits test character reversibility, which the erasure survives.</p>
 
 <h4>7.2 The new failure-mode category</h4>
-<p>### 7.2 The new failure-mode category</p>
 
 <p><strong>compositional_erasure</strong>: loss of spatial, typographic, prosodic, stanzaic, or manuscript features that carry semantic weight, occurring at any stage of the representation pipeline, such that downstream operations cannot preserve, transform, or attribute those features.</p>
 
 <p>Sub-categories: <strong>spatial_erasure</strong> (two-dimensional composition; calligrams, page layout); <strong>prosodic_erasure</strong> (metrical and rhythmic notation; sprung rhythm, breath-prosody); <strong>stanzaic_erasure</strong> (stanza-and-group structure; concatenation, catalogue-and-axial-line); <strong>manuscript_erasure</strong> (artifactual features; dash variation, scribal capitalization, folio layout); <strong>typographic_erasure</strong> (typeface, kerning, page design; concrete poetry, author-publisher design collaboration); <strong>source_format_erasure</strong> (loss at the acquisition or digitization step, prior to serialization — non-OCR PDFs, image scans, transcription conventions that normalized features out; this is a stage-of-occurrence category, complementing the feature-type categories above).</p>
 
 <h4>7.3 The schema extension — executed</h4>
-<p>### 7.3 The schema extension — executed</p>
 
 <p>The v0.1 zero draft of this paper proposed extending the archive&#x27;s provenance metadata schema. The extension has since been executed: <strong>EA-PROVENANCE-METADATA-01 v0.2</strong> (AXN:03BA.OPERATIVE.♅🛤️🕗🧊🍃☉, deposit #942) adds an eighth mediation type, <em>spatial-typographic mediation</em>, and a structured <strong>representation_pipeline</strong> field recording, per deposit: source artifact format; digitization method and verification; normalization applied and features affected; serialization (two-dimensional to one-dimensional, layout coordinates preserved or lost); tokenization scheme and whitespace handling; and model access modality (text retrieval, multimodal visual, compiler).</p>
 
@@ -302,12 +266,9 @@ The argument extends provenance below words and ideas. Composition is not decora
 <p>The extension is diagnostic, not merely descriptive. A text&#x27;s presence in machine-readable form is not the text&#x27;s presence in the archive. Some deposits are present-in-form only. The schema makes the difference recordable, and what is recordable is addressable.</p>
 
 <hr>
-<p>---</p>
 <h3>8. The Compositional-Authorship Argument</h3>
-<p>## 8. The Compositional-Authorship Argument</p>
 
 <h4>8.1 The framework&#x27;s collapse on its clearest cases</h4>
-<p>### 8.1 The framework&#x27;s collapse on its clearest cases</p>
 
 <p>The content/form framework — the widely held default of AI-authorship discourse, under which content-origination alone implicates authorship and compositional operations are formal — has a dependency: it requires a content/form distinction that survives inspection. On the clearest cases, it does not.</p>
 
@@ -320,12 +281,10 @@ The argument extends provenance below words and ideas. Composition is not decora
 <p>And the pipeline consequence, stated as the paper&#x27;s core sentence:</p>
 
 <blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> **A representation can preserve every proposition in a work and still delete the work.**</blockquote>
-<p>&gt; <strong>A representation can preserve every proposition in a work and still delete the work.</strong></p>
 
 <p>This is provenance erasure below the level of attribution. It erases not who produced the composition, but the composition that would make authorship legible in the first place.</p>
 
 <h4>8.2 The pipeline and the framework enact the same reduction</h4>
-<p>### 8.2 The pipeline and the framework enact the same reduction</p>
 
 <p>The representation pipeline performs in machinery what the framework performs in argument. Both treat compositional features as noise to be normalized before the real processing begins; both preserve what encodes as propositional content and shed what does not; both then find — circularly — that what remains is what mattered.</p>
 
@@ -338,34 +297,26 @@ The argument extends provenance below words and ideas. Composition is not decora
 <p>Both need extension. The pipeline needs layout-aware and compositionally annotated representation where composition carries semantic weight — a technical program already begun in Bhyravajjula et al.&#x27;s measurements and in the code-tokenization precedent, which proves the pipeline preserves what something downstream enforces. The framework needs the recognition editorial theory reached decades ago: composition is authorship-constitutive. The remedy for the erasure is not simply better tokenization. It is representational provenance — a record, per work, of which material features survived each stage of ingestion, which were lost, and which canonical artifact must remain available to recover them.</p>
 
 <hr>
-<p>---</p>
 <h3>9. Recommendations</h3>
-<p>## 9. Recommendations</p>
 
 <h4>9.1 Whitespace-Provenance Registry</h4>
-<p>### 9.1 Whitespace-Provenance Registry</p>
 
 <p>Following the Capture Registry model, a systematic instrument: sample training corpora, tokenization schemes, and test cases (Whitman, Dickinson, Hopkins, cummings, Howe, <em>Pearl</em>, concrete poetry, calligrams); measure preservation of compositional features at each pipeline stage; produce per-poet preservation profiles, per-scheme comparisons, per-corpus curation profiles, and a measured extinction gradient. The demonstration of §4 is the proof of concept; the registry is the program. Pending the registry, this paper&#x27;s gradient is case-based, and says so.</p>
 
 <h4>9.2 Metadata schema — done, pending mint</h4>
-<p>### 9.2 Metadata schema — done, pending mint</p>
 
 <p>EA-PROVENANCE-METADATA-01 v0.2 (AXN:03BA.OPERATIVE.♅🛤️🕗🧊🍃☉, deposit #942, minted concurrently with this paper) adds spatial-typographic mediation and the representation_pipeline field. Minted as successor deposit to AXN:03B9 at AXN:03BA.OPERATIVE.♅🛤️🕗🧊🍃☉, deposit #942, under the versioning protocol formalized in its §10.</p>
 
 <h4>9.3 Sourcing discipline</h4>
-<p>### 9.3 Sourcing discipline</p>
 
 <p>Compositional fidelity becomes an acquisition criterion. Non-OCR PDFs flagged and prioritized for re-sourcing; compositionally substantive works re-sourced from structure-preserving editions or transcribed from facsimiles. Immediate priorities: <strong>Pearl</strong> — identify the edition in the current PDF; transcribe from Andrew-Waldron 2007 or the Cotton Nero A.x facsimile with explicit concatenation and group markers; deposit with full representation_pipeline metadata; retain the PDF as supplementary artifact, not as the archive&#x27;s copy of the poem. <strong>Snub-Poemed</strong> — the current storage (image + critical essay + key-phrases apparatus) is compositionally correct by design: the image is the canonical artifact, the text files are apparatus; confirm this as the archive&#x27;s convention for calligrammatic works. <strong>Dickinson</strong> — the Gutenberg text is a propositional shell; deep work requires the Emily Dickinson Archive or the Franklin facsimile. <strong>Hopkins</strong> — the Gutenberg text lacks the notational apparatus; re-sourcing from a critical edition is a longer-term item. <strong>Whitman</strong> — adequate for propositional content; edition-typography distinctions unpreserved.</p>
 
 <h4>9.4 Kernel-transform compiler extension</h4>
-<p>### 9.4 Kernel-transform compiler extension</p>
 
 <p>The compiler specification (EA-MANDALA-KERNEL-TRANSFORM-01 v0.2) gains compositional preservation as a Parse-stage requirement: Layer A (skeleton) includes spatial and typographic skeleton where present; the transform response schema gains a `spatial_form` / `typographic_skeleton` field alongside `primary_output`. Without this, transforms run against <em>Snub-Poemed</em> or <em>Pearl</em> would emit enantiomorphs that lose exactly what these sources require — and no canon source can reach `compositionally_operational` status. A schema amendment to the pending compiler workplan, to be executed before the endpoint is scaffolded.</p>
 
 <hr>
-<p>---</p>
 <h3>Coda</h3>
-<p>## Coda</p>
 
 <p>The Semantic Economy framework documents the extraction of meaning-value from a commons produced by human labor. That documentation has operated at the semantic layer: attribution stripped, argument reframed, reception mediated in ways composers did not choose. This paper&#x27;s finding is that the extraction goes deeper. Below the semantic layer, the representation pipeline operates on a substrate never made available for consent or negotiation. The stanza breaks were normalized before the model saw the poem. The concatenation became content-tokens without its function. The calligram became a phrase list. What was taken at this layer was taken in silence — and the pipeline&#x27;s own audit reports the silence as success, because the characters round-trip.</p>
 
@@ -378,9 +329,7 @@ The argument extends provenance below words and ideas. Composition is not decora
 <p>The composition is the authorship. The record is the counter-friction.</p>
 
 <hr>
-<p>---</p>
 <h3>References</h3>
-<p>## References</p>
 
 <p>Andrew, M. and R. Waldron, eds. (2007). <em>The Poems of the Pearl Manuscript</em>. University of Exeter Press.</p>
 
@@ -457,23 +406,18 @@ The argument extends provenance below words and ideas. Composition is not decora
 <p>Wiechetek, L. et al. (2019). [Language-specific tokenization — full citation to be confirmed at final revision].</p>
 
 <hr>
-<p>---</p>
 
 <hr>
-<p>---</p>
 
 <h3>Appendix A — §4 Demonstration: Code and Full Output</h3>
-<p>## Appendix A — §4 Demonstration: Code and Full Output</p>
 
 <p><strong>Executed:</strong> 2026-07-02</p>
 <p><strong>Tokenizer:</strong> GPT-2 byte-level BPE (via HuggingFace `transformers`, model id `gpt2`)</p>
 <p><strong>Companion to:</strong> EA-WHITESPACE-01 v0.2 §4</p>
 
 <hr>
-<p>---</p>
 
 <h3>Code</h3>
-<p>## Code</p>
 
 <pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">from transformers import AutoTokenizer
 
@@ -504,9 +448,8 @@ for name, text in [(&quot;spatial&quot;, spatial_fragment), (&quot;linearized&qu
     print(name, len(ids), tok.decode(ids) == text)</pre>
 
 <h3>Results</h3>
-<p>## Results</p>
 
-<div style="overflow-x:auto;margin:14px 0"><table style="border-collapse:collapse;font-size:.86em"><tr><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">representation</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">input chars</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">tokens</th><th style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;background:var(--surface);font-weight:600;">round-trip identical</th></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">spatial (indented)</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">343</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">202</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">**True**</td></tr><tr><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">linearized</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">—</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">44</td><td style="border:1px solid var(--border);padding:5px 9px;text-align:left;vertical-align:top;">**True**</td></tr></table></div>
+<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">representation</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">input chars</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">tokens</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">round-trip identical</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">spatial (indented)</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">343</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">202</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">**True**</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">linearized</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">—</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">44</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">**True**</td></tr></table></div>
 
 <p><strong>Whitespace token count (spatial version):</strong> 158 of 202 tokens (78%) are</p>
 <p>pure-whitespace tokens (`Ġ` = space, `Ċ` = newline).</p>
@@ -523,7 +466,6 @@ for name, text in [(&quot;spatial&quot;, spatial_fragment), (&quot;linearized&qu
   25–29  &#x27;Ġ&#x27; × 5 ...     (the next line&#x27;s indentation begins)</pre>
 
 <h3>The three findings (as stated in §4)</h3>
-<p>## The three findings (as stated in §4)</p>
 
 <p>1. <strong>Both representations round-trip perfectly.</strong> By the criterion of</p>
 <p style="white-space:pre-wrap;margin:2px 0">   character preservation, nothing was lost in either case.</p>
@@ -538,7 +480,6 @@ for name, text in [(&quot;spatial&quot;, spatial_fragment), (&quot;linearized&qu
 <p style="white-space:pre-wrap;margin:2px 0">   reports success.</p>
 
 <h3>Note on tokenizer choice</h3>
-<p>## Note on tokenizer choice</p>
 
 <p>cl100k_base (GPT-4 family) was the intended scheme; its vocabulary file is</p>
 <p>hosted at an endpoint outside the execution environment&#x27;s network allowlist.</p>
@@ -552,15 +493,12 @@ for name, text in [(&quot;spatial&quot;, spatial_fragment), (&quot;linearized&qu
 <p>Whitespace-Provenance Registry pilot (EA-WHITESPACE-01 §9.1).</p>
 
 <hr>
-<p>---</p>
 
 <h3>Outstanding for v0.3</h3>
-<p>## Outstanding for v0.3</p>
 
 <p>Four placeholder citations (Hussein 2018; Monget 2020; Ruiz Fabo et al. 2017; Wiechetek et al. 2019) to be confirmed from the Bhyravajjula et al. bibliography. The edition scanned in the archive&#x27;s Pearl PDF to be identified for its representation_pipeline record. Companion deposits queued: Pearl re-sourcing technical note; Whitespace-Provenance Registry pilot; EA-MANDALA-KERNEL-TRANSFORM-01 spatial_form amendment.</p>
 
 <h3>Files</h3>
-<p>## Files</p>
 
 <p>https://github.com/leesharks000/alexanarch/blob/main/data/texts/</p>
 </div>
@@ -572,7 +510,7 @@ for name, text in [(&quot;spatial&quot;, spatial_fragment), (&quot;linearized&qu
 
 
 <section style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid var(--rule,rgba(127,127,127,.3));font-size:.85em"><div style="font-weight:600;margin-bottom:.3rem">Record modifications</div><ul style="margin:0;padding-left:1.1rem"><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">publisher</strong>: PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">body_status</strong>: W13 TIER-2 REGRESSION REPAIRED: split headings rejoined</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-06</span> — <strong style="font-weight:600">description</strong>: DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)</li></ul><div style="opacity:.65;margin-top:.4rem;font-size:.92em">The deposited text is immutable; these are changes to the record's metadata and declared state.</div></section>
-<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/942/" style="color:var(--accent);text-decoration:none">#942 EA-PROVENANCE-METADATA-01 v0.2: Spatial-Typographic Mediation, Representation Pipeline, </a></span><span style="flex:1"><a href="/s/records/944/" style="color:var(--accent);text-decoration:none">#944 EA-MANDALA-INSCRIPTION-01 v0.1: Anonymous Public Inscription, Anonymous Encrypted Inscri</a> →</span></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">This deposit cites (5)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/942/" style="color:var(--accent);text-decoration:none">#942 EA-PROVENANCE-METADATA-01 v0.2: Spatial-Typographic Mediation, Representation Pipeline, </a> <span style="opacity:.6;font-size:.85em">by AXN</span></li><li style="margin:.15rem 0"><a href="/s/records/941/" style="color:var(--accent);text-decoration:none">#941 EA-PROVENANCE-METADATA-01 v0.1: Granular Provenance Metadata for AI-Mediated Deposits</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li><li style="margin:.15rem 0"><a href="/s/records/825/" style="color:var(--accent);text-decoration:none">#825 AI Overview Capture Registry EA-WG-CAPTURES-01 v6.0 — 87 captures</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li><li style="margin:.15rem 0"><a href="/s/records/928/" style="color:var(--accent);text-decoration:none">#928 EA-MANDALA-SURFACE-01 v0.1: SURFACE Integration — The Sun Station, Public Canonization, </a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li><li style="margin:.15rem 0"><a href="/s/records/939/" style="color:var(--accent);text-decoration:none">#939 EA-PROVENANCE-DEBT-01 v0.2: Provenance Debt and the Extraction Economy of Unmarked Augme</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li></ul></div></section>
+<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/942/" style="color:var(--accent);text-decoration:none">#942 EA-PROVENANCE-METADATA-01 v0.2: Spatial-Typographic Mediation, Representation Pipeline, </a></span><span style="flex:1"><a href="/s/records/944/" style="color:var(--accent);text-decoration:none">#944 EA-MANDALA-INSCRIPTION-01 v0.1: Anonymous Public Inscription, Anonymous Encrypted Inscri</a> →</span></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">This deposit cites (6)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/942/" style="color:var(--accent);text-decoration:none">#942 EA-PROVENANCE-METADATA-01 v0.2: Spatial-Typographic Mediation, Representation Pipeline, </a> <span style="opacity:.6;font-size:.85em">by AXN</span></li><li style="margin:.15rem 0"><a href="/s/records/941/" style="color:var(--accent);text-decoration:none">#941 EA-PROVENANCE-METADATA-01 v0.1: Granular Provenance Metadata for AI-Mediated Deposits</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li><li style="margin:.15rem 0"><a href="/s/records/825/" style="color:var(--accent);text-decoration:none">#825 AI Overview Capture Registry EA-WG-CAPTURES-01 v6.0 — 87 captures</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li><li style="margin:.15rem 0"><a href="/s/records/928/" style="color:var(--accent);text-decoration:none">#928 EA-MANDALA-SURFACE-01 v0.1: SURFACE Integration — The Sun Station, Public Canonization, </a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li><li style="margin:.15rem 0"><a href="/s/records/939/" style="color:var(--accent);text-decoration:none">#939 EA-PROVENANCE-DEBT-01 v0.2: Provenance Debt and the Extraction Economy of Unmarked Augme</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li><li style="margin:.15rem 0"><a href="/s/records/929/" style="color:var(--accent);text-decoration:none">#929 EA-MANDALA-KERNEL-TRANSFORM-01 v0.2: The Kernel Transform Protocol — Enantiomorphic Comp</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li></ul></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">Cited by (1)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/1443/" style="color:var(--accent);text-decoration:none">#1443 The Photograph of the Handwritten Original: A Field Survey and Problem Statement for Mac</a> <span style="opacity:.6;font-size:.85em">by deposit number</span></li></ul></div></section>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

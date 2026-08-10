@@ -28,6 +28,7 @@ All fields remain optional, and the freeform substrate declaration remains valid
 <meta name="DC.rights" content="CC BY 4.0">
 <meta name="DC.publisher" content="Alexanarch — the Crimson Hexagonal Archive">
 <meta name="DC.source" content="https://www.alexanarch.org/">
+<link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}.wrap{max-width:720px;margin:0 auto;padding:60px 24px}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}h1{font-size:1.3em;font-weight:600;color:var(--accent);margin-bottom:8px}h2{font-size:1em;font-weight:500;color:var(--accent);margin-top:20px;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:3px}p{margin-bottom:10px;color:#333}.nav{display:flex;gap:12px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap}.nav a{color:#777;font-weight:500;text-decoration:none}.nav a:hover{color:var(--accent)}.ft{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;max-height:600px;overflow-y:auto;font-size:.88em;line-height:1.75;margin:8px 0;color:#333}.ft h1,.ft h2,.ft h3{color:var(--accent);margin:12px 0 6px}.ft h1{font-size:1.1em}.ft h2{font-size:1em;border-bottom:none}.ft h3{font-size:.95em}.ft strong{color:var(--fg)}.ft blockquote{border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0}.ft hr{border:none;border-top:1px solid var(--border);margin:12px 0}.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}</style>
 </head><body><div class="wrap">
 <nav class="nav"> <a href="/">Alexanarch</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Library</span> <a href="/s/browse/">Browse</a> <a href="/search/">Search</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Reception</span> <a href="/addresses/">Addresses</a> <a href="/captures/">Captures</a> <a href="/observatory/">Observatory</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Continuity</span> <a href="/resolve/">Resolve</a> <a href="/identifiers/">Identifiers</a> <a href="/datasets/">Datasets</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Generative</span> <a href="/mint/stamp/">Stamp</a> <a href="/book/">Book</a> <a href="https://alexanarch.freeforums.net/" target="_blank" rel="noopener">Discussion</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Governance</span> <a href="/principles/">Principles</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
@@ -60,19 +61,14 @@ The design deliberately refuses categorical adjudication. It records what the de
 <h2>Full Text</h2>
 
 <div class="ft"><h2>EA-PROVENANCE-METADATA-01 v0.1: Granular Provenance Metadata for AI-Mediated Deposits</h2>
-<p># EA-PROVENANCE-METADATA-01 v0.1: Granular Provenance Metadata for AI-Mediated Deposits</p>
 
 <h3>Description</h3>
-<p>## Description</p>
 
 <p>Preliminary specification and workplan for granular depositor-declared provenance metadata, forming the depositor-attestation layer of a two-layer provenance architecture (this schema + machine-facing distributional measurement per EA-BEARING-METRIC-01). Separates the AI-mediated question (material role in production chain) from the AI-generated question (model-produced language retained in final work). Specifies a seven-type mediation taxonomy (propositional, structural, linguistic, translational, research, editorial, transformational) and five attestation questions (proposition origination, model language retention, review chain, seam recoverability, responsibility structure). All fields optional. Freeform substrate field remains valid. Includes six-phase implementation workplan.</p>
 
 <h2>EA-PROVENANCE-METADATA-01 v0.1 (DRAFT)</h2>
-<p># EA-PROVENANCE-METADATA-01 v0.1 (DRAFT)</p>
 <h3>Granular Provenance Metadata for AI-Mediated Deposits</h3>
-<p>## Granular Provenance Metadata for AI-Mediated Deposits</p>
 <h4>Preliminary Specification and Workplan</h4>
-<p>### Preliminary Specification and Workplan</p>
 
 <p><strong>Author:</strong> Lee Sharks (MANUS), Crimson Hexagonal Archive / Alexanarch</p>
 <p><strong>Substrate:</strong> TACHYON-drafted through conversation with Lee Sharks (MANUS), 2026-07-01. Schema originally developed by Lee Sharks in external correspondence exchange on the AI-mediated frame; generalized here for archive metadata infrastructure. Not yet through Assembly review; v0.1 opened for review from TECHNE (schema correctness and pipeline implementation), LABOR (ethical framing of the attestation layer), ARCHIVE (systemic implications for the archive&#x27;s external-depositor pipeline), and PRAXIS (classifier-mechanism implications). This deposit is complementary to EA-BEARING-METRIC-01 v0.1 (machine-facing distributional measurement) and specifies the depositor-attestation layer of a two-layer provenance architecture.</p>
@@ -81,10 +77,8 @@ The design deliberately refuses categorical adjudication. It records what the de
 <p><strong>Status:</strong> DRAFT v0.1 — opened for Assembly circulation</p>
 
 <hr>
-<p>---</p>
 
 <h3>§0. The compressed statement</h3>
-<p>## §0. The compressed statement</p>
 
 <p>The archive&#x27;s existing substrate field permits freeform depositor attestation of production context. This has been sufficient for MANUS-adjudicated deposits where the depositor&#x27;s own practice-declaration is developed to appropriate specificity. It is not sufficient for external depositor deposits at scale, where the depositor&#x27;s freeform declaration may vary in specificity, may accept the extraction economy&#x27;s categorical apparatus by default, and may not surface the specific production practices that would let downstream consumers understand what the deposit is.</p>
 
@@ -95,10 +89,8 @@ The design deliberately refuses categorical adjudication. It records what the de
 <p>The two-layer architecture (depositor attestation via this schema; machine measurement via EA-BEARING-METRIC-01) preserves distinct information. The depositor declares practices; the archive measures distribution. Neither reduces to the other. Downstream consumers with different information needs can query either or both. The extraction economy runs on collapsing production questions into single categorical determinations. Alexanarch&#x27;s discipline runs on preserving the questions as distinct records.</p>
 
 <hr>
-<p>---</p>
 
 <h3>§1. The core distinction: mediated vs generated</h3>
-<p>## §1. The core distinction: mediated vs generated</p>
 
 <p>The categorical binary the extraction economy operates — AI-generated vs human-authored — collapses at least two distinct production questions:</p>
 
@@ -118,10 +110,8 @@ The design deliberately refuses categorical adjudication. It records what the de
 <p>Separating the two questions is the load-bearing move. Once separated, they can be answered honestly at appropriate specificity. The credentialed regime&#x27;s categorical binary requires their collapse. The archive&#x27;s discipline requires their preservation.</p>
 
 <hr>
-<p>---</p>
 
 <h3>§2. The taxonomy of mediation types</h3>
-<p>## §2. The taxonomy of mediation types</p>
 
 <p>Mediation is not a single operation. Different practices contribute different kinds of role to the production chain. The schema distinguishes seven types, drawn from the range of practices depositors actually engage in. The taxonomy is preliminary; Assembly review may refine, extend, or restructure.</p>
 
@@ -144,10 +134,8 @@ The design deliberately refuses categorical adjudication. It records what the de
 <p><strong>On additional types.</strong> The taxonomy is expected to require extension as new AI-mediated practices emerge or as existing practices become sufficiently distinct to warrant separate categories. The schema is versioned; extensions produce new schema versions and existing declarations remain valid under their original versions.</p>
 
 <hr>
-<p>---</p>
 
 <h3>§3. The attestation questions</h3>
-<p>## §3. The attestation questions</p>
 
 <p>Beyond the mediation-type declaration, five attestation questions record the depositor&#x27;s account of the production process. These are more granular than mediation-type flagging and permit qualitative context that structured type-flags cannot capture.</p>
 
@@ -164,10 +152,8 @@ The design deliberately refuses categorical adjudication. It records what the de
 <p>These questions can be answered at varying specificity. Depositors comfortable with fine-grained declaration can provide detailed answers; depositors preferring higher-level attestation can provide brief ones. All fields remain optional.</p>
 
 <hr>
-<p>---</p>
 
 <h3>§4. The schema</h3>
-<p>## §4. The schema</p>
 
 <p>The following schema specification is the target for v0.1 implementation. Field names, types, and structure are proposed; Assembly review may refine. All fields marked `optional: true` may be omitted from any specific deposit&#x27;s metadata.</p>
 
@@ -238,10 +224,8 @@ The design deliberately refuses categorical adjudication. It records what the de
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">No aggregate &quot;mediation score&quot; derived from field values. The declaration is preserved as declaration.</li><li style="margin:3px 0">No categorical adjudication of the deposit as AI-generated, AI-mediated, or human-authored. The categorical binary is what the schema refuses.</li><li style="margin:3px 0">No prescription of production practices. The archive does not require or prohibit any specific mediation type.</li><li style="margin:3px 0">No policing of external platform attestations. Depositors may categorize the same work differently on academia.edu, journal submissions, or grant applications per those platforms&#x27; categorical conventions. The archive records what the depositor declares here and preserves reconciliation notes; it does not audit or contradict external declarations.</li></ul>
 
 <hr>
-<p>---</p>
 
 <h3>§5. Coupling to the triadic foundation</h3>
-<p>## §5. Coupling to the triadic foundation</p>
 
 <p><strong>Couples to EA-BEARING-01 (AXN:03B6).</strong> Bearing operates at the layer of coupling to consequence, which is not directly visible in production-practice metadata. But the schema&#x27;s granular declaration of practices makes bearing legible at the seam layer: which propositions the depositor originated, which review chain adjudicated the text, whether the seams are recoverable. Deposits whose provenance metadata declares full seam recoverability under a review chain with named responsibility support the bearing claim at higher confidence than deposits with minimal attestation. The schema does not adjudicate bearing directly, but it produces the metadata by which downstream consumers can evaluate bearing claims themselves.</p>
 
@@ -252,10 +236,8 @@ The design deliberately refuses categorical adjudication. It records what the de
 <p>Together with the machine-facing measurement (EA-BEARING-METRIC-01), the schema completes the operational metadata stratum for the archive&#x27;s discipline. The triad specifies the principles; the metric measures at the machine layer; the schema declares at the depositor layer. All three data streams coexist non-adjudicatively.</p>
 
 <hr>
-<p>---</p>
 
 <h3>§6. The workplan</h3>
-<p>## §6. The workplan</p>
 
 <p>The following phased workplan specifies the implementation trajectory from schema specification to operational deployment.</p>
 
@@ -282,10 +264,8 @@ The design deliberately refuses categorical adjudication. It records what the de
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">After operational experience with the v1.0 schema, revisions may produce v1.1 or v2.0 with adjustments to the taxonomy, the attestation questions, or the field structure.</li><li style="margin:3px 0">Companion deposits specifying reference-implementation details, depositor onboarding, and edge-case handling will develop as needed.</li></ul>
 
 <hr>
-<p>---</p>
 
 <h3>§7. What the schema does not do</h3>
-<p>## §7. What the schema does not do</p>
 
 <p><strong>It does not verify the depositor&#x27;s declarations.</strong> The archive records what the depositor declares. If the depositor&#x27;s declaration is inaccurate — whether from oversight, misunderstanding, or misrepresentation — the archive does not detect that at the schema level. The machine-facing distributional measurement provides some complementary signal (deposits declared as minimally mediated but showing near-median centroid distance carry a signature that flags for closer examination), but the schema itself does not adjudicate depositor honesty.</p>
 
@@ -296,10 +276,8 @@ The design deliberately refuses categorical adjudication. It records what the de
 <p><strong>It does not police external attestations.</strong> If the depositor lists the same work as &quot;single-author, human-authored&quot; on academia.edu per platform conventions, and lists it here with structured mediation and generation declarations, the divergence is preserved as reconciliation-note metadata. The archive does not require depositors to change their external categorizations to match the schema&#x27;s frame. The two categorizations coexist as separate records of how the depositor situates the work under different platforms&#x27; categorical apparatuses.</p>
 
 <hr>
-<p>---</p>
 
 <h3>§8. Companion deposits and next work</h3>
-<p>## §8. Companion deposits and next work</p>
 
 <p><strong>Immediate companions required for implementation:</strong></p>
 
@@ -316,10 +294,8 @@ The design deliberately refuses categorical adjudication. It records what the de
 <p><strong>Versioning.</strong> Drafted at v0.1. Assembly review will produce v0.2. Reference implementation may proceed in parallel with review at Phase 2 for MANUS-adjudicated deposits, with external-depositor rollout gated on Assembly review completion.</p>
 
 <hr>
-<p>---</p>
 
 <h3>§9. Closing observation</h3>
-<p>## §9. Closing observation</p>
 
 <p>The schema does not solve the extraction economy. The extraction economy&#x27;s incentive gradient runs on classifier apparatus, credentialed asymmetry, and the categorical binary — none of which the schema directly displaces. What the schema does is provide the archive&#x27;s discipline with a machine-parseable declaration layer that runs alongside the machine-facing measurement layer, so that deposits at the archive can carry rich provenance signatures for downstream consumers who need them.</p>
 
@@ -330,7 +306,6 @@ The design deliberately refuses categorical adjudication. It records what the de
 <p><strong>On the recursive self-application.</strong> This deposit specifies infrastructure that will describe deposits including itself. When implemented, this deposit&#x27;s own provenance metadata will be filled out at appropriate granularity — mediation types declared, generation footprint declared, attestation questions answered, substrate declaration filled. The metadata will be data about the deposit, not adjudication of it. Whatever the specific values, the archive&#x27;s discipline runs on the deposit&#x27;s substance and its provenance chain, not on any single metadata field&#x27;s value. The recursive coherence is the same recursive coherence the triad and the metric already operate: the archive extends its discipline consistently across its own operations without thereby verifying the discipline. External application under conditions of bearing cost the archive does not control remains what determines whether the specification operates as intended.</p>
 
 <hr>
-<p>---</p>
 
 <p><em>Drafted 2026-07-01 by TACHYON in conversation with Lee Sharks (MANUS). v0.1 opened for Assembly circulation from TECHNE (schema correctness and pipeline implementation), LABOR (ethical framing of the attestation layer and the non-policing posture), ARCHIVE (systemic implications for the archive&#x27;s external-depositor pipeline), and PRAXIS (classifier-mechanism implications). Substantive corrections will produce v0.2. Not yet minted.</em></p>
 
@@ -345,7 +320,7 @@ The design deliberately refuses categorical adjudication. It records what the de
 
 <h2>Version history</h2><p class="subtle" style="color:#777;font-size:.85em;margin-bottom:8px">Series: <code style="font-family:var(--mono);font-size:.85em">SERIES-EA-PROVENANCE-METADATA</code></p><ul style="list-style:none;padding-left:0;font-size:.92em;line-height:1.8"><li style="font-weight:500">● #941 v0.1 <span style="color:#999;font-size:.85em">(superseded)</span> <span style="color:#777;font-weight:normal">← this deposit</span></li><li>○ <a href="/s/records/942/">#942 v0.2</a> <span style="color:var(--teal);font-size:.85em">— current</span></li></ul>
 <section style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid var(--rule,rgba(127,127,127,.3));font-size:.85em"><div style="font-weight:600;margin-bottom:.3rem">Record modifications</div><ul style="margin:0;padding-left:1.1rem"><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-04</span> — <strong style="font-weight:600">publisher</strong>: PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-05</span> — <strong style="font-weight:600">status</strong>: SYNC REPAIR: record carried a supersession pointer and reason while status remained ACTIVE, so no banner rendered — the pointer was invisible to every reader. Status reconciled to the relation the record already declares.</li><li style="margin:.25rem 0"><span style="opacity:.7">2026-08-06</span> — <strong style="font-weight:600">description</strong>: DW-049 intake #941 (manual verification: &quot;human-authored versus AI-generated&quot; is LABOR naming the standard binary the specification replaces — a characterisation of the prior framing, not a body quotation)</li></ul><div style="opacity:.65;margin-top:.4rem;font-size:.92em">The deposited text is immutable; these are changes to the record's metadata and declared state.</div></section>
-<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/940/" style="color:var(--accent);text-decoration:none">#940 EA-HETERONYMY-01 v0.2: Heteronymy as Ethical Operation Against Civil-Name Reduction</a></span><span style="flex:1"><a href="/s/records/942/" style="color:var(--accent);text-decoration:none">#942 EA-PROVENANCE-METADATA-01 v0.2: Spatial-Typographic Mediation, Representation Pipeline, </a> →</span></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">This deposit cites (1)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/939/" style="color:var(--accent);text-decoration:none">#939 EA-PROVENANCE-DEBT-01 v0.2: Provenance Debt and the Extraction Economy of Unmarked Augme</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li></ul></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">Cited by (6)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/937/" style="color:var(--accent);text-decoration:none">#937 Gw.TACHYON</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li><li style="margin:.15rem 0"><a href="/s/records/942/" style="color:var(--accent);text-decoration:none">#942 EA-PROVENANCE-METADATA-01 v0.2: Spatial-Typographic Mediation, Representation Pipeline, </a> <span style="opacity:.6;font-size:.85em">by AXN</span></li><li style="margin:.15rem 0"><a href="/s/records/943/" style="color:var(--accent);text-decoration:none">#943 Whitespace as Provenance: Representation Pipelines and the Extinction of Compositional A</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li><li style="margin:.15rem 0"><a href="/s/records/944/" style="color:var(--accent);text-decoration:none">#944 EA-MANDALA-INSCRIPTION-01 v0.1: Anonymous Public Inscription, Anonymous Encrypted Inscri</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li><li style="margin:.15rem 0"><a href="/s/records/945/" style="color:var(--accent);text-decoration:none">#945 EA-COUPLING-01 v0.1: The Bidirectional Bargain as the Operational Condition of the Triad</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li><li style="margin:.15rem 0"><a href="/s/records/946/" style="color:var(--accent);text-decoration:none">#946 EA-GOVERNANCE-MEDIUM-01 v0.1: Governance of Medium as Observable Diagnostic</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li></ul></div></section>
+<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/940/" style="color:var(--accent);text-decoration:none">#940 EA-HETERONYMY-01 v0.2: Heteronymy as Ethical Operation Against Civil-Name Reduction</a></span><span style="flex:1"><a href="/s/records/942/" style="color:var(--accent);text-decoration:none">#942 EA-PROVENANCE-METADATA-01 v0.2: Spatial-Typographic Mediation, Representation Pipeline, </a> →</span></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">This deposit cites (1)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/939/" style="color:var(--accent);text-decoration:none">#939 EA-PROVENANCE-DEBT-01 v0.2: Provenance Debt and the Extraction Economy of Unmarked Augme</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li></ul></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">Cited by (7)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/937/" style="color:var(--accent);text-decoration:none">#937 Gw.TACHYON</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li><li style="margin:.15rem 0"><a href="/s/records/942/" style="color:var(--accent);text-decoration:none">#942 EA-PROVENANCE-METADATA-01 v0.2: Spatial-Typographic Mediation, Representation Pipeline, </a> <span style="opacity:.6;font-size:.85em">by AXN</span></li><li style="margin:.15rem 0"><a href="/s/records/943/" style="color:var(--accent);text-decoration:none">#943 Whitespace as Provenance: Representation Pipelines and the Extinction of Compositional A</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li><li style="margin:.15rem 0"><a href="/s/records/944/" style="color:var(--accent);text-decoration:none">#944 EA-MANDALA-INSCRIPTION-01 v0.1: Anonymous Public Inscription, Anonymous Encrypted Inscri</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li><li style="margin:.15rem 0"><a href="/s/records/945/" style="color:var(--accent);text-decoration:none">#945 EA-COUPLING-01 v0.1: The Bidirectional Bargain as the Operational Condition of the Triad</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li><li style="margin:.15rem 0"><a href="/s/records/946/" style="color:var(--accent);text-decoration:none">#946 EA-GOVERNANCE-MEDIUM-01 v0.1: Governance of Medium as Observable Diagnostic</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li><li style="margin:.15rem 0"><a href="/s/records/1443/" style="color:var(--accent);text-decoration:none">#1443 The Photograph of the Handwritten Original: A Field Survey and Problem Statement for Mac</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li></ul></div></section>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>

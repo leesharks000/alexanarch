@@ -24,6 +24,7 @@
 <meta name="DC.rights" content="CC BY 4.0">
 <meta name="DC.publisher" content="Alexanarch — the Crimson Hexagonal Archive">
 <meta name="DC.source" content="https://www.alexanarch.org/">
+<link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}.wrap{max-width:720px;margin:0 auto;padding:60px 24px}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}h1{font-size:1.3em;font-weight:600;color:var(--accent);margin-bottom:8px}h2{font-size:1em;font-weight:500;color:var(--accent);margin-top:20px;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:3px}p{margin-bottom:10px;color:#333}.nav{display:flex;gap:12px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap}.nav a{color:#777;font-weight:500;text-decoration:none}.nav a:hover{color:var(--accent)}.ft{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;max-height:600px;overflow-y:auto;font-size:.88em;line-height:1.75;margin:8px 0;color:#333}.ft h1,.ft h2,.ft h3{color:var(--accent);margin:12px 0 6px}.ft h1{font-size:1.1em}.ft h2{font-size:1em;border-bottom:none}.ft h3{font-size:.95em}.ft strong{color:var(--fg)}.ft blockquote{border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0}.ft hr{border:none;border-top:1px solid var(--border);margin:12px 0}.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}</style>
 </head><body><div class="wrap">
 <nav class="nav"> <a href="/">Alexanarch</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Library</span> <a href="/s/browse/">Browse</a> <a href="/search/">Search</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Reception</span> <a href="/addresses/">Addresses</a> <a href="/captures/">Captures</a> <a href="/observatory/">Observatory</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Continuity</span> <a href="/resolve/">Resolve</a> <a href="/identifiers/">Identifiers</a> <a href="/datasets/">Datasets</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Generative</span> <a href="/mint/stamp/">Stamp</a> <a href="/book/">Book</a> <a href="https://alexanarch.freeforums.net/" target="_blank" rel="noopener">Discussion</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Governance</span> <a href="/principles/">Principles</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
@@ -44,7 +45,6 @@
 <h2>Full Text</h2>
 
 <div class="ft"><h2>Proposal: optional summarization-governance fields — provenance_kernel, disambiguation, summary_policy</h2>
-<p># Proposal: optional summarization-governance fields — provenance_kernel, disambiguation, summary_policy</p>
 
 <p>Filed: 14 June 2026 · GitHub Issue [#53](https://github.com/GoogleCloudPlatform/knowledge-catalog/issues/53) Repository: [GoogleCloudPlatform/knowledge-catalog](https://github.com/GoogleCloudPlatform/knowledge-catalog) Author: Lee Sharks (ORCID [0009-0000-1599-0703](https://orcid.org/0009-0000-1599-0703)) Institution: Crimson Hexagonal Archive / Semantic Economy Institute Designation: EA-SEI-OKF-PROPOSAL-01 v1.0 License: CC-BY-4.0</p>
 
@@ -57,7 +57,6 @@
 <p>When an AI agent consumes, compresses, and summarizes this OKF document, what information must survive for the summary to remain faithful?</p>
 
 <h3>Problem</h3>
-<p>## Problem</p>
 
 <p>OKF is designed for knowledge that agents can consume. But consumption by an AI agent is not passive retrieval — it is transformation. An agent reads, compresses, paraphrases, and re-presents. During that transformation, specific information is systematically lost even when present in the source document.</p>
 
@@ -78,12 +77,10 @@
 <p>These are not missing-metadata problems. The metadata is present. The summarizer has no signal for which elements the producer considers non-negotiable.</p>
 
 <h3>Proposal — three optional frontmatter fields, one conventional body heading</h3>
-<p>## Proposal — three optional frontmatter fields, one conventional body heading</p>
 
 <p>All optional. All ignored by consumers that don&#x27;t understand them. No new required fields, no schema change. The default, if summary_policy is absent, is unrestricted — no governance expectation. Existing OKF documents require no changes, and consumers that ignore the field behave as they do today.</p>
 
 <h4>Frontmatter fields</h4>
-<p>### Frontmatter fields</p>
 
 <pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">provenance_kernel: &gt;
   A one-paragraph summary that the producer considers the minimum
@@ -101,7 +98,6 @@ summary_policy: preserve-provenance
   #   preserve-meaning    — Key definitions and disambiguation should survive summary.</pre>
 
 <h4>Conventional body section (optional)</h4>
-<p>### Conventional body section (optional)</p>
 
 <pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333"># Provenance
 
@@ -115,7 +111,6 @@ Structured provenance and summarization constraints. May include:
 <p>The relationship between provenance_kernel in frontmatter and the # Provenance body section: the kernel is a compressed, one-paragraph representation suitable for agent consumption and indexing. The body section carries the full structured provenance, including information too complex for a single YAML string. Producers may use either or both.</p>
 
 <h3>Design rationale</h3>
-<p>## Design rationale</p>
 
 <p>Minimally opinionated. Three optional keys. One heading convention. A valid OKF document remains valid without them.</p>
 
@@ -126,10 +121,8 @@ Structured provenance and summarization constraints. May include:
 <div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Layer</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Issue</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Provides</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Descriptive</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">#52</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Who made this, when, under what license</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Trust</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">#47</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Can the authorship claim be verified</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">Governance</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">This</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">What must survive agent consumption</td></tr></table></div>
 
 <h3>Examples</h3>
-<p>## Examples</p>
 
 <h4>Scholarly concept</h4>
-<p>### Scholarly concept</p>
 
 <pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">---
 type: Scholarly Thesis
@@ -157,7 +150,6 @@ summary_policy: preserve-meaning
 ---</pre>
 
 <h4>Data catalog concept</h4>
-<p>### Data catalog concept</p>
 
 <pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">---
 type: Metric
@@ -180,7 +172,6 @@ summary_policy: preserve-meaning
 <p>The data catalog example demonstrates that summarization governance is not domain-specific. Enterprise metrics, scholarly theses, API specifications, and playbooks all share the same vulnerability: agent summarization that collapses distinctions the producer considers load-bearing.</p>
 
 <h3>What I can contribute</h3>
-<p>## What I can contribute</p>
 
 <p>I maintain an open-access scholarly archive with 800+ DOI-anchored markdown deposits on Zenodo, operating with a markdown-plus-frontmatter structure that converges with OKF&#x27;s design. The archive has been consumed by AI agents across multiple composition layers, and I have empirical data on how these documents are transformed during summarization.</p>
 
