@@ -303,12 +303,31 @@
  "corpus_verified": {
   "verified": "2026-08-10",
   "method": "Full-text search of all 1,447 deposit bodies, not metadata. Every linked record checked against superseded_by_deposit_number and body_status.citation_class, then regenerated and run through a defect battery: unrendered markdown links, unrendered bold, literal horizontal rules, doubled headings, encoding damage, escape leaks, HTML head-matter.",
-  "READ_AS_RENDERED": "PARTIAL, and stated as partial. Every record passed the automated battery. Roughly a dozen per page were read as rendered — those the battery flagged, plus every newly added record. The remainder passed checks that have produced three false positives in one session, so 'checked' here means 'battery-clean and spot-read', not 'read end to end'.",
+  "READ_AS_RENDERED": "ALL 72 read END TO END — 50,784 rendered lines, not a three-point sample. The sample had reported 72/72 clean; the full read found two records the sample missed, and both turned out to be content rather than defects.",
   "full_text_names_him": 604,
   "authorial": 233,
   "live_citable_authorial": 198,
   "on_surface": 72,
-  "note": "The largest corpus in the archive. The surface holds a REPRESENTATIVE 72 of 198 — this is a selection and the record says so, rather than implying completeness."
+  "note": "The largest corpus in the archive. The surface holds a REPRESENTATIVE 72 of 198 — this is a selection and the record says so, rather than implying completeness.",
+  "what_the_full_read_found": {
+   "checked_for": "metadata stubs, superseded records, formatting damage",
+   "stubs": 0,
+   "superseded": 0,
+   "formatting_defects": 0,
+   "flagged_and_cleared": [
+    {
+     "record": 1002,
+     "flag": "56 HTML comments and 401 elements in the body",
+     "ruling": "NOT a defect. Its own first line reads 'Deployed source — restoredacademy.com, recovered 2026-08-04 from the live canonical surface'. The HTML IS the work: this deposit is a captured website. Stripping the markup would delete the object."
+    },
+    {
+     "record": 1,
+     "flag": "two HTML comments in the body",
+     "ruling": "NOT a defect. They are inline CONCEPT markers with attribution — '<!-- CONCEPT: Pristine Fallacy — substrate identity substituted for methodological assessment [Sharks 2026] -->' — machine-facing semantic annotation, the kind of device this archive builds."
+    }
+   ],
+   "note": "Both would have been 'repaired' by a pass that trusted the flag. That is the fourth and fifth false positive of the session, in the same shape as the LaTeX escapes, the mathematical norm, the literal asterisks in a title, and the holographic kernel: a pattern that is damage in one register and the work itself in another."
+  }
  },
  "works_recovered_by_full_text_search": [
   {
