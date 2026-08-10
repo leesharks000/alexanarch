@@ -649,6 +649,28 @@ def _render_inline(text):
     return t
 
 
+
+def _inline_md(t):
+    """Inline markdown for body lines: links, bold, em, code. Added 2026-08-10.
+
+    Two gaps found by reading rendered pages one at a time rather than counting.
+    Headings emitted line[N:] with NO inline pass, so '## **Title**' kept its
+    asterisks and '# [Name](url)' kept its brackets — the work's own primary
+    link, dead text on the page. List items ran bold and em but not links, so
+    every '- ORCID: [id](https://orcid.org/id)' rendered literally: 51 of them
+    on #90 alone. Input is already HTML-escaped.
+    """
+    # (?<!!) leaves image syntax alone: '![](url)' is the image renderer's,
+    # and matching it here produced '<a>![</a>](url)' on #1113 and #1112.
+    # [^<>] stops a match spanning an anchor this pass has already made.
+    t = re.sub(r'(?<!!)\[([^\]\n<>]{1,120})\]\((https?://[^\s)<>]+|/[^\s)<>]+)\)',
+               r'<a href="\2" target="_blank" rel="noopener">\1</a>', t)
+    t = re.sub(r'\*\*([^*\n]+)\*\*', r'<strong>\1</strong>', t)
+    t = re.sub(r'(?<!\*)\*([^*\n]+)\*(?!\*)', r'<em>\1</em>', t)
+    t = re.sub(r'`([^`\n]+)`', r'<code>\1</code>', t)
+    return t
+
+
 def _clean_apparatus(html_frag):
     """Convert markdown headings the body renderer left literal inside the
     restoration wrapper. Added 2026-08-06.
@@ -934,8 +956,7 @@ def regenerate_static_page(d, eidx, registry=None):
                 # spanning a source wrap survives.
                 if _p_buf:
                     _joined = ' '.join(_p_buf)
-                    _joined = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', _joined)
-                    _joined = re.sub(r'\*([^*]+)\*', r'<em>\1</em>', _joined)
+                    _joined = _inline_md(_joined)
                     ft_lines.append(f'<p>{_joined}</p>')
                     _p_buf.clear()
             def _flush_table(buf):
@@ -970,7 +991,7 @@ def regenerate_static_page(d, eidx, registry=None):
                         _st = ('padding:8px 12px 8px 0;text-align:left;vertical-align:top;'
                                + ('' if _last else 'border-bottom:1px solid var(--border);'))
                     _r = _r + [''] * (_ncol - len(_r))
-                    _h.append('<tr>' + ''.join(f'<{_tag} style="{_st}">{c}</{_tag}>' for c in _r) + '</tr>')
+                    _h.append('<tr>' + ''.join(f'<{_tag} style="{_st}">{_inline_md(c)}</{_tag}>' for c in _r) + '</tr>')
                 _h.append('</table></div>')
                 return ''.join(_h)
             for line in lines:
@@ -1015,8 +1036,7 @@ def regenerate_static_page(d, eidx, registry=None):
                 # W13 tier 1.5: list buffer — consecutive '- ' lines become a <ul>
                 if line.startswith('- '):
                     _p_flush()
-                    _li = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', line[2:])
-                    _li = re.sub(r'\*([^*]+)\*', r'<em>\1</em>', _li)
+                    _li = _inline_md(line[2:])
                     _list_buf.append(_li)
                     continue
                 elif _list_buf:
@@ -1027,12 +1047,12 @@ def regenerate_static_page(d, eidx, registry=None):
                 # defect (a converted <hN> followed by the literal '<p># ...' from
                 # the fall-through into the image chain below, live on every
                 # heading-bearing record rendered since the 2026-08-04 image block).
-                if line.startswith('# '): _p_flush(); ft_lines.append(f'<h1>{line[2:]}</h1>'); continue
-                if line.startswith('## '): _p_flush(); ft_lines.append(f'<h2>{line[3:]}</h2>'); continue
-                if line.startswith('### '): _p_flush(); ft_lines.append(f'<h3>{line[4:]}</h3>'); continue
-                if line.startswith('#### '): _p_flush(); ft_lines.append(f'<h4>{line[5:]}</h4>'); continue
+                if line.startswith('# '): _p_flush(); ft_lines.append(f'<h1>{_inline_md(line[2:])}</h1>'); continue
+                if line.startswith('## '): _p_flush(); ft_lines.append(f'<h2>{_inline_md(line[3:])}</h2>'); continue
+                if line.startswith('### '): _p_flush(); ft_lines.append(f'<h3>{_inline_md(line[4:])}</h3>'); continue
+                if line.startswith('#### '): _p_flush(); ft_lines.append(f'<h4>{_inline_md(line[5:])}</h4>'); continue
                 if line.startswith('---'): _p_flush(); ft_lines.append('<hr>'); continue
-                if line.startswith('&gt;'): _p_flush(); ft_lines.append(f'<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0">{line[4:]}</blockquote>'); continue
+                if line.startswith('&gt;'): _p_flush(); ft_lines.append(f'<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0">{_inline_md(line[4:])}</blockquote>'); continue
                 # IMAGE RENDERING (MANUS 2026-08-04: "long image url blob — why
                 # not just include the image?"). Markdown image syntax and bare
                 # image URLs were rendering as 240-character raw URLs. 88 records,
@@ -1059,8 +1079,7 @@ def regenerate_static_page(d, eidx, registry=None):
                     # rendered per-line with per-line emphasis, byte-compatible
                     # with the pre-W14 output for poetry records.
                     _p_flush()
-                    _l = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', line)
-                    _l = re.sub(r'\*([^*]+)\*', r'<em>\1</em>', _l)
+                    _l = _inline_md(line)
                     ft_lines.append(f'<p style="white-space:pre-wrap;margin:2px 0">{_l}</p>')
                 elif line.strip():
                     if _wrap_mode:
@@ -1080,9 +1099,7 @@ def regenerate_static_page(d, eidx, registry=None):
                             _p_flush()
                         _p_buf.append(line)
                     else:
-                        _l = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', line)
-                        _l = re.sub(r'\*([^*]+)\*', r'<em>\1</em>', _l)
-                        ft_lines.append(f'<p>{_l}</p>')
+                        ft_lines.append(f'<p>{_inline_md(line)}</p>')
                 else:
                     _p_flush(); ft_lines.append('')
             _p_flush()
