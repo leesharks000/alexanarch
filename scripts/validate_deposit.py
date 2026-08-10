@@ -263,8 +263,19 @@ def validate_entry_required_fields(entry, enforce_all=False):
         _body = ""
         if _tp and (_root / _tp).exists():
             _raw = (_root / _tp).read_text(encoding="utf-8")
-            _seg = _raw.split("\n---\n")
-            _body = _seg[-1] if len(_seg) > 1 else _raw
+            # FRONTMATTER IS AT THE TOP OR IT IS NOT FRONTMATTER (2026-08-09).
+            # This split on "\n---\n" was meant to drop a YAML header, but --- is
+            # also a markdown horizontal rule, so on any body carrying rules it kept
+            # only the text after the LAST one. On #1445 that was 566 of 11,842
+            # characters: TEXT-001 was inspecting 5% of the deposit and reporting a
+            # pass on the other 95%. Same defect as the regex that ate 25,023
+            # characters of a document and the decimal point that broke the
+            # forensics strip — a pattern written against how a marker LOOKS rather
+            # than where it can legally appear. Frontmatter is anchored at position
+            # zero and nowhere else.
+            import re as _reF
+            _mF = _reF.match(r"^---\n.*?\n---\n", _raw, _reF.S)
+            _body = _raw[_mF.end():] if _mF else _raw
         if _body:
             _lines = _body.split("\n")
             _pi = [i for i, l in enumerate(_lines)
@@ -275,15 +286,45 @@ def validate_entry_required_fields(entry, enforce_all=False):
                     if _lines[j].strip():
                         return _lines[j].lstrip()
                 return ""
-            _wr = [i for i in _pi
-                   if 55 <= len(_lines[i]) <= 95
-                   and not _lines[i].rstrip().rstrip("*_").endswith((".", ":", ";", "!", "?"))
-                   and _nx(i)[:1].islower()]
-            if len(_pi) >= 8 and (len(_wr) / len(_pi)) > 0.25:
+            # ONE DEFINITION OF THE DEFECT, shared with the repair (2026-08-09).
+            # The previous detector flagged mid-length lines lacking terminal
+            # punctuation whose successor continued lowercase. That fires on
+            # ENJAMBMENT, which is a poet's deliberate break, and it happened not to
+            # fire on the archive's verse only because those bodies yielded a single
+            # candidate line each — luck, not robustness.
+            #
+            # MANUS: an artificially rendered linebreak due to container width is not
+            # a linebreak; a deliberately encoded linebreak or tab is. The signal that
+            # separates them is MECHANICAL REGULARITY. A tool wrapping at a column
+            # leaves every line but the last crowding the same maximum. Verse does not,
+            # because its lines are chosen.
+            #
+            # scripts/unwrap_deposit.py holds that test and is deliberately built to
+            # refuse: it skips indented blocks, markers, fenced code, markdown hard
+            # breaks, and any run under three lines. Validation now asks it directly,
+            # so the thing that detects a wrap and the thing that repairs one can never
+            # disagree.
+            _uw = 0
+            try:
+                import importlib.util as _ilu
+                _spec = _ilu.spec_from_file_location(
+                    "_unwrap", str(_root / "scripts" / "unwrap_deposit.py"))
+                _m = _ilu.module_from_spec(_spec)
+                _spec.loader.exec_module(_m)
+                _, _uw = _m.unwrap(_body)
+            except Exception:
+                _uw = 0
+            _wr = list(range(_uw))
+            # The guard my own edit deleted. Replacing a detector without keeping
+            # the condition that consumes it made TEXT-001 fire on every deposit,
+            # including one it had just been used to repair — a check that always
+            # fails is exactly as useless as one that never can.
+            if _uw >= 3:
                 failures.append(("TEXT-001",
-                    f"body appears hard-wrapped ({len(_wr)}/{len(_pi)} prose lines "
-                    "break mid-sentence); canonical bodies flow — wrapping is "
-                    "display's job, and sealed bytes cannot be reflowed later"))
+                    f"body carries {_uw} mechanically wrapped line break(s); "
+                    "canonical bodies flow — wrapping is display's job and sealed "
+                    "bytes cannot be reflowed later. Run scripts/unwrap_deposit.py, "
+                    "which preserves verse, indentation, lists, tables and code"))
             import re as _re
             for _ref in _re.findall(r"!\[[^\]]*\]\((/(?:data/attachments|files)/[^\s\)]+)\)", _body):
                 if not (_root / _ref.lstrip("/")).exists():

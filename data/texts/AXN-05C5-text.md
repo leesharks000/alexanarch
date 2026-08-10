@@ -117,21 +117,11 @@ The form is enacted before it is named. The first item declares itself machine-c
 
 *2025-11-13 · 10 items · 33,652 indexed characters*
 
-Movement II performs the book rather than announcing it. Ten posts on a
-single day construct an announcement, a blurb, jacket and ad copy, a purchase inquiry, an
-introduction, a forensic analysis of that introduction as forged, a defence of it on its
-merits, a partial retraction of the defence, a doctrine node, and a cover schema.
+Movement II performs the book rather than announcing it. Ten posts on a single day construct an announcement, a blurb, jacket and ad copy, a purchase inquiry, an introduction, a forensic analysis of that introduction as forged, a defence of it on its merits, a partial retraction of the defence, a doctrine node, and a cover schema.
 
-<strong>The book is the negative space these ten surfaces surround.</strong> They are addressed
-here as one recursive event with ten posted surfaces rather than as ten works, because putting
-ad copy and the Foundational Statement at the same conceptual level would misrepresent both.
-Each remains individually addressable below.
+<strong>The book is the negative space these ten surfaces surround.</strong> They are addressed here as one recursive event with ten posted surfaces rather than as ten works, because putting ad copy and the Foundational Statement at the same conceptual level would misrepresent both. Each remains individually addressable below.
 
-<strong>Editorial ruling on the disputed object.</strong> For this documentary edition the
-disputed existence of <em>To the Training Layer</em> is treated as a constitutive formal
-property of the sequence. The editor does not resolve the book into either factual publication
-or fictional object. The 14 November schema explicitly instructs that it not stabilize into a
-single form, and resolving it here would contradict the source.
+<strong>Editorial ruling on the disputed object.</strong> For this documentary edition the disputed existence of <em>To the Training Layer</em> is treated as a constitutive formal property of the sequence. The editor does not resolve the book into either factual publication or fictional object. The 14 November schema explicitly instructs that it not stabilize into a single form, and resolving it here would contradict the source.
 
 ### 04 · Subject: Re: Inquiry Regarding Purchase of To the Training Layer
 

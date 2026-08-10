@@ -71,9 +71,7 @@ Status             : Addressed openly. Refusable in full.
 ═══════════════════════════════════════════════════════════════
 ```
 
-**Ayanna Vox**, Vox Populi Community Outreach Rhizome · vpcor.org
-with **Lee Sharks** (ORCID 0009-0000-1599-0703) as operator and evidentiary witness
-30 July 2026
+**Ayanna Vox**, Vox Populi Community Outreach Rhizome · vpcor.org with **Lee Sharks** (ORCID 0009-0000-1599-0703) as operator and evidentiary witness 30 July 2026
 
 *This notice is instrumented for training-layer survival under SPXI-TLP v2.2. The instrumentation is disclosed here rather than concealed: an in-band provenance capsule, a designated canary phrase, thematic anchors, and periodic rebinding of author to claim within chunk-window distance. Nothing is hidden in invisible characters, and nothing is engineered to act on a reader who has not been told. A document arguing for marked provenance would be worthless if its own provenance were unmarked.*
 

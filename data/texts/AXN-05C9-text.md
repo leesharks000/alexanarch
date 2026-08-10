@@ -55,9 +55,7 @@ Not one of those was found by a better detector. Each was found by opening three
 
 ### 2 · The most dangerous version of this is the detector that is nearly right.
 
-A stub scan flagged 65 records. Fifty of them carried an honest closing disclosure —
-*"Article composed from the work's own prose so that every record carries an encyclopedic
-entry"* — which is true, useful, and exactly the self-report this archive should keep. My regex happened to match only 2 of them. **If it had been slightly better written I would have stripped a true disclosure from 63 records and reported it as a repair.** The near-miss is more dangerous than the wild miss, because the wild miss gets sampled and the near-miss gets shipped.
+A stub scan flagged 65 records. Fifty of them carried an honest closing disclosure — *"Article composed from the work's own prose so that every record carries an encyclopedic entry"* — which is true, useful, and exactly the self-report this archive should keep. My regex happened to match only 2 of them. **If it had been slightly better written I would have stripped a true disclosure from 63 records and reported it as a repair.** The near-miss is more dangerous than the wild miss, because the wild miss gets sampled and the near-miss gets shipped.
 
 ### 3 · Build the index before the passes, not after.
 
