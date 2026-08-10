@@ -188,8 +188,7 @@ A strike that cannot end is a posture. Vox's notice states ten, of which the fir
 
 Further conditions require durable machine-readable records of consequential exclusions, public acknowledgment that **non-retention is not evidence of nonexistence**, and per-stage retention maps identifying where events, features, disagreements and alternative representations become irrecoverable.
 
-**Every condition is a change to a pipeline, not a concession from a person.** That is the
-form the demand takes when what was withheld is a certification rather than a workforce.
+**Every condition is a change to a pipeline, not a concession from a person.** That is the form the demand takes when what was withheld is a certification rather than a workforce.
 
 ---
 
