@@ -15,7 +15,7 @@
   "depositor_holds": "The depositor's own original plus the Seed A sidecar can prove the work anywhere, with or without this archive. That is the point of splitting the identifier in two."
  },
  "retrieval": "https://www.alexanarch.org/data/symbolon-registry/files/35dd9a6186a81758-screengrab-20260809-203058.png",
- "note": "The registry witnesses the tuple and its internal consistency (glyphs recomputed from hashes at ingest). Seed B was not seen; verification against bytes is a separate act per SPEC §9.",
+ "note": "The registry witnesses the tuple and its internal consistency (glyphs recomputed from hashes at ingest). Seed B was not seen; verification against bytes is a separate act per SPEC §9. [Stamp re-applied 2026-08-10; AXN1 refreshed to the current stamped form. Sealed core (AXN0) unchanged.]",
  "spec": "AXN-SYMBOLON-SPEC v0.2 · https://www.alexanarch.org/s/records/1432/",
  "tuple": {
   "axn0": {
@@ -23,8 +23,8 @@
    "sha256": "35dd9a6186a817588f77e6c797238fc8b5d6c33f63d0536c0bffc4b2108be131"
   },
   "axn1": {
-   "glyphs": "⚫⏏️🏴💚🌉🌻",
-   "sha256": "c8f852cc2b72f28a721706497ad310a0720869d65810ff18a6aeb5a78555ac19"
+   "glyphs": "🔅🏷️🚀⭕■💥",
+   "sha256": "ed4c5dee9eebd14d4f2c627ff168161e2642ff6ba2d2c88a0e6684114712e57f"
   }
  },
  "position_note": "The hex position is a registry address allocated from the shared AXN sequence (data/symbolon-registry/allocation.json). An address is not a verification.",
@@ -67,5 +67,18 @@
   "generator": "https://www.alexanarch.org/mint/stamp/ (client-side; WebCrypto)",
   "family": "UNCLASSIFIED",
   "registration": "kernel is authority-independent; registry witnessing via https://www.alexanarch.org/deposit/ or by sending this sidecar to the archive"
- }
+ },
+ "stamp_history": [
+  {
+   "axn1": {
+    "glyphs": "⚫⏏️🏴💚🌉🌻",
+    "sha256": "c8f852cc2b72f28a721706497ad310a0720869d65810ff18a6aeb5a78555ac19"
+   },
+   "until": "2026-08-10T00:41:13.872Z"
+  },
+  {
+   "axn1_replaced": "c8f852cc2b72f28a721706497ad310a0720869d65810ff18a6aeb5a78555ac19",
+   "at": "2026-08-10T00:41:13.872Z"
+  }
+ ]
 }
