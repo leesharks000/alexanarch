@@ -15,7 +15,7 @@
   "depositor_holds": "The depositor's own original plus the Seed A sidecar can prove the work anywhere, with or without this archive. That is the point of splitting the identifier in two."
  },
  "retrieval": "https://www.alexanarch.org/data/symbolon-registry/files/2dedff051ff5a8bd-539c0a2c0cb670ca71b1e70b145a2a4c.jpg",
- "note": "The registry witnesses the tuple and its internal consistency (glyphs recomputed from hashes at ingest). Seed B was not seen; verification against bytes is a separate act per SPEC §9.",
+ "note": "The registry witnesses the tuple and its internal consistency (glyphs recomputed from hashes at ingest). Seed B was not seen; verification against bytes is a separate act per SPEC §9. [Stamp re-applied 2026-08-10; AXN1 refreshed to the current stamped form. Sealed core (AXN0) unchanged.]",
  "spec": "AXN-SYMBOLON-SPEC v0.2 · https://www.alexanarch.org/s/records/1432/",
  "tuple": {
   "axn0": {
@@ -23,8 +23,8 @@
    "sha256": "2dedff051ff5a8bdb9cead37da98d2c44bcab9e95faa96c2058fcb740c8737c2"
   },
   "axn1": {
-   "glyphs": "⏹️🎶⚡🕔🌃⏏️",
-   "sha256": "f7881366e2f861da0bbbe4c7f079d93f990a53c564e983bf0a6057d26cd29a6b"
+   "glyphs": "↖️♄🎻🔀🎯♎",
+   "sha256": "dda48adf55afff6b7d30534c49801fc665f7f6b82721622c3fd18661834c423c"
   }
  },
  "position_note": "The hex position is a registry address allocated from the shared AXN sequence (data/symbolon-registry/allocation.json). An address is not a verification.",
@@ -67,5 +67,18 @@
   "generator": "https://www.alexanarch.org/mint/stamp/ (client-side; WebCrypto)",
   "family": "UNCLASSIFIED",
   "registration": "kernel is authority-independent; registry witnessing via https://www.alexanarch.org/deposit/ or by sending this sidecar to the archive"
- }
+ },
+ "stamp_history": [
+  {
+   "axn1": {
+    "glyphs": "⏹️🎶⚡🕔🌃⏏️",
+    "sha256": "f7881366e2f861da0bbbe4c7f079d93f990a53c564e983bf0a6057d26cd29a6b"
+   },
+   "until": "2026-08-10T01:03:17.240Z"
+  },
+  {
+   "axn1_replaced": "f7881366e2f861da0bbbe4c7f079d93f990a53c564e983bf0a6057d26cd29a6b",
+   "at": "2026-08-10T01:03:17.240Z"
+  }
+ ]
 }
