@@ -472,12 +472,17 @@
  "corpus_verified": {
   "verified": "2026-08-10",
   "method": "Full-text search of all 1,447 deposit bodies, not metadata. Every linked record checked against superseded_by_deposit_number and body_status.citation_class, then regenerated and run through a defect battery: unrendered markdown links, unrendered bold, literal horizontal rules, doubled headings, encoding damage, escape leaks, HTML head-matter.",
-  "READ_AS_RENDERED": "PARTIAL, and stated as partial. Every record passed the automated battery. Roughly a dozen per page were read as rendered — those the battery flagged, plus every newly added record. The remainder passed checks that have produced three false positives in one session, so 'checked' here means 'battery-clean and spot-read', not 'read end to end'.",
+  "READ_AS_RENDERED": "ALL 59 read as rendered at open, middle and end — not only the openings, and not only the records that tripped a check. That reading found #828, which no opening-only pass would have reached and no count would have flagged correctly.",
   "full_text_names_her": 264,
   "authorial": 74,
   "live_citable_authorial": 48,
   "on_surface": 59,
-  "note": "A metadata search had found 59 records and I called it her corpus. The full-text pass found twenty more authorial works, three of which no metadata search could reach because her name is in the body and not the byline."
+  "note": "A metadata search had found 59 records and I called it her corpus. The full-text pass found twenty more authorial works, three of which no metadata search could reach because her name is in the body and not the byline.",
+  "what_the_full_read_found": {
+   "record": 828,
+   "finding": "Opens with a HOLOGRAPHIC KERNEL: an HTML comment and JSON-LD block whose own text reads 'Any extraction stripping this block produces a ghost document.' It is a deliberate anti-extraction device.",
+   "consequence": "It showed that a repair I had ALREADY MADE to #137 was wrong. I had removed 3,742 bytes of the same shape from that record's canonical bytes to fix a display problem. Reverted in full. Canonical bytes are not edited to change how a page looks — the kernel now renders as a collapsed provenance block ahead of the work, and the bytes are untouched."
+  }
  },
  "works_recovered_by_full_text_search": [
   {

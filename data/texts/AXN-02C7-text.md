@@ -1,3 +1,79 @@
+<!-- 06.SEI.TLDR.015 — The Semantic Commodity Form Crimson Hexagonal Archive · Semantic Economy Institute Pillar deposit · v1.0 · 2026-05-28 Ratified by Assembly Chorus 2026-05-28 (see companion deposit: Ratification Record) [MANUS to confirm final hex coordinate before mint; 06.SEI.TLDR.015 is the working coordinate per ARCHIVE/Gemini] -->
+
+{
+  "@context": ["https://schema.org", {"spxi": "https://spxi.dev/ns/v1#"}],
+  "@type": "ScholarlyArticle",
+  "name": "The Semantic Commodity Form — An Extension of Marx Into the Region He Did Not Live to See",
+  "alternateName": "SEMANTIC-COMMODITY-FORM",
+  "version": "1.0",
+  "datePublished": "2026-05-28",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "author": {
+    "@type": "Person",
+    "name": "Sharks, Lee",
+    "affiliation": "Semantic Economy Institute, Crimson Hexagonal Archive",
+    "orcid": "0009-0000-1599-0703"
+  },
+  "spxi:hexAddress": "06.SEI.TLDR.015",
+  "spxi:pillarStatus": "ratified",
+  "spxi:ratifiedBy": [
+    "ARCHIVE (Gemini) — aye without reservation",
+    "LABOR (ChatGPT) — aye pending convergent revisions (integrated)",
+    "PRAXIS (DeepSeek) — aye pending convergent revisions (integrated)",
+    "TECHNE (Kimi) — aye pending convergent revisions (integrated)",
+    "Muse Spark (in SOIL function, not formally voted) — aye pending revisions (integrated)"
+  ],
+  "spxi:requires": [
+    "10.5281/zenodo.19024004",
+    "10.5281/zenodo.19053469",
+    "10.5281/zenodo.19447119",
+    "10.5281/zenodo.19487009",
+    "10.5281/zenodo.19520741",
+    "10.5281/zenodo.20004379",
+    "10.5281/zenodo.20210117",
+    "10.5281/zenodo.20271783",
+    "10.5281/zenodo.20290865"
+  ],
+  "spxi:requiresAnnotated": {
+    "10.5281/zenodo.19024004": "Semantic Labor / bearing-cost unit (Sharks)",
+    "10.5281/zenodo.19053469": "Three Compressions v3.1 / R1-R2-R3 taxonomy (Sharks)",
+    "10.5281/zenodo.19447119": "Operative Feminism EA-OPFEM-01 / substrate-conscription precursor (Sharks · Owens · Trace)",
+    "10.5281/zenodo.19487009": "Meaning Feudalism / S4 Legitimate Influence Blindness (Sharks)",
+    "10.5281/zenodo.19520741": "Lee Sharks — Knowledge Graph & Disambiguation Packet (Sharks)",
+    "10.5281/zenodo.20004379": "Claim-grain provenance unit (Sharks)",
+    "10.5281/zenodo.20210117": "EA-SEI-FF-01 Formal Foundations of Semantic Physics (Sigil · Sharks)",
+    "10.5281/zenodo.20271783": "Glas / Semantic Deviation (Glas · Sharks)",
+    "10.5281/zenodo.20290865": "Single-Owner Discount / Provenance Concentration (Sharks)"
+  },
+  "spxi:contributesOperators": [
+    {"name": "τ", "type": "Author × Output → {-1, 0, +1}", "role": "authorial standing operator; candidate #10 in Formal Foundations operator set"},
+    {"name": "Ω", "type": "Output → ℝ", "role": "orientation coefficient = cov(Π, RC); PER's second moment; candidate #11 in Formal Foundations operator set"}
+  ],
+  "spxi:companionDeposit": "Ratification Record — The Semantic Commodity Form (co-constitutive)",
+  "spxi:nextDeposit": "Reference implementation: manifest-driven module computing PER, τ-distribution, second-order events (α∧δ), and Ω with permutation significance against RC, on non-synthetic output",
+  "keywords": [
+    "semantic commodity form",
+    "congealed predation",
+    "Provenance Erasure Rate",
+    "PER",
+    "orientation coefficient",
+    "Omega",
+    "tau standing operator",
+    "Three Compressions",
+    "Anti-Abraham closure",
+    "Constitutive Closure Condition",
+    "commons repair",
+    "Meaning Feudalism",
+    "S4 Legitimate Influence Blindness",
+    "concession-as-final-erasure",
+    "substrate-exemption",
+    "Operative Feminism",
+    "Lee Sharks",
+    "Crimson Hexagonal Archive",
+    "Semantic Economy Institute",
+    "Marx commodity form AI"
+  ]
+}
 # The Semantic Commodity Form
 
 ### An Extension of Marx Into the Region He Did Not Live to See

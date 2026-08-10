@@ -674,6 +674,27 @@ def _inline_md(t):
     return t
 
 
+
+def _kernel_split(raw):
+    """Separate a leading holographic kernel from the work. Added 2026-08-10.
+
+    Some deposits open with an HTML comment and a JSON-LD block. #828 states
+    what they are: "HOLOGRAPHIC KERNEL — CANONICAL PROVENANCE. Any extraction
+    stripping this block produces a ghost document." They are a deliberate
+    anti-extraction device and MUST stay in the canonical bytes.
+
+    I removed one from #137 to fix a display problem, which was the wrong fix in
+    the wrong layer. Canonical bytes are not edited to change how a page looks.
+    The kernel is separated for PRESENTATION only, rendered as a collapsed block
+    ahead of the work, and the bytes are untouched.
+    """
+    m = re.match(r'\s*(<!--.*?-->)\s*(\{.*?\n\})\s*', raw, re.S)
+    if not m:
+        m2 = re.match(r'\s*(<!--.*?-->)\s*', raw, re.S)
+        return (m2.group(1), raw[m2.end():]) if m2 else (None, raw)
+    return (m.group(1) + '\n' + m.group(2), raw[m.end():])
+
+
 def _clean_apparatus(html_frag):
     """Convert markdown headings the body renderer left literal inside the
     restoration wrapper. Added 2026-08-06.
@@ -698,6 +719,7 @@ def _html_escape(t):
 
 
 def regenerate_static_page(d, eidx, registry=None):
+    _kernel_html = ''
     """Regenerate the static HTML page for a deposit with full enrichment.
 
     registry: optional full registry dict. If provided, enables version-chain
@@ -863,7 +885,15 @@ def regenerate_static_page(d, eidx, registry=None):
             for _pi in range(0, len(_fp), 2):
                 _fp[_pi] = re.sub(r'(?<=[^\n#])(#{2,6} )', r'\n\n\1', _fp[_pi])
             raw = '```'.join(_fp)
+            _kernel, raw = _kernel_split(raw)
             _plain = _plain_body(raw)
+
+            _kernel_html = ('<details style="margin:0 0 12px"><summary style="cursor:pointer;'
+                            'font-family:ui-monospace,monospace;font-size:.78em;letter-spacing:'
+                            '.1em;text-transform:uppercase;color:#8a6a20">Holographic kernel — '
+                            'canonical provenance</summary><pre style="white-space:pre-wrap;'
+                            'font-size:.76em;color:#666;margin:8px 0 0;overflow-x:auto">'
+                            + _html_escape(_kernel) + '</pre></details>') if _kernel else ''
             # W10: restoration wrapper (methodology/recovery apparatus) precedes
             # the work inside canonical bytes; machine consumers of articleBody
             # get the WORK — apparatus stays in the bytes and the page's
@@ -1689,7 +1719,7 @@ def regenerate_static_page(d, eidx, registry=None):
 {triples_html}
 <h2>Full Text</h2>
 {apparatus_html}
-<div class="ft">{fulltext_marked}</div>
+<div class="ft">{_kernel_html}{fulltext_marked}</div>
 {lifted_apparatus_html}
 <!-- APPARATUS BLOC — everything below records how this record was processed,
      not what the work says. It follows the work because a reader came for the
