@@ -14,6 +14,60 @@ Alexanarch is a self-governing library for machine-mediated scholarship. It was 
 
 ---
 
+## RULE ZERO — A PROSE PARAGRAPH IS ONE LINE
+
+Read this before you write a single character of any deposit.
+
+**A standard prose paragraph is one logical line. Never insert a line break inside one.**
+
+Where a paragraph breaks on a reader's screen is the renderer's decision. Encoding that
+decision into the body freezes it into the identity-bearing bytes, and no downstream
+surface can undo it — not the record page, not a PDF, not a mirror, not a republication.
+A container-width break is not a line break. A deliberately encoded line break is.
+
+### Where this goes wrong, specifically
+
+You will not experience yourself as wrapping anything. The reflex fires when **prose is
+written inside code**: a Python string literal, a heredoc, a `create_file` body, a
+multi-line f-string. Source code is read at 80–100 columns, so the prose gets wrapped to
+match, and the wrap is then sealed. Every instance that has damaged this archive's line
+breaks did it exactly there, while composing something else.
+
+**If you are writing prose inside a code construct, the paragraph still gets one line —
+however long that line is, and however wrong it looks in the editor.**
+
+### Line breaks belong only where they are the work
+
+Verse lineation · list items · table rows · fenced code · indentation that carries shape ·
+markdown's two-space hard break · a byline, date or metadata field that means something by
+standing alone.
+
+These are content. Joining them is destruction, and it is not recoverable from the joined
+copy. When you cannot tell whether a break is structure or wrapping, **it is structure**,
+because the costs are not symmetric: an unjoined paragraph is untidy, a joined poem is gone.
+
+### Do not attempt to repair this with a pattern
+
+Automated unwrapping has been tried against this corpus and it damaged, in order: a volume
+of poems, pipe-delimited rows that did not begin with a pipe, space-aligned columns,
+parallel label lists, hand-set metadata blocks, bylines, hashtag lists, and note blocks.
+Each shape was invisible until a person opened the file. There is no reason to believe the
+list is complete.
+
+**Existing bodies are repaired by reading them, block by block, or not at all.**
+
+### What is enforced
+
+`scripts/mint_deposit.py` flows prose paragraphs at the canonical seam, before the SHA-256
+is taken, so a body composed with wraps is normalised once and never acquires the defect.
+`scripts/unwrap_deposit.py` holds the definition of a wrap artifact and refuses poetry,
+tables, alignment, lists and indentation outright. `validate_deposit.py` calls it, so the
+detector and the repair can never disagree.
+
+The enforcement exists because instruction alone did not hold. Follow the rule anyway.
+
+---
+
 ## The Deposit Process — Complete Specification
 
 ### Step 1: Receive or Create the Work
