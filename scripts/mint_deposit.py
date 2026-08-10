@@ -1023,6 +1023,38 @@ def mint_from_issue_body(body: str, issue_number: int, *, dry_run: bool = False)
     canonical_text = build_canonical_text(
         fields, deposit_number, hex_id, attachments=attachments,
     )
+    # NORMALISE AT THE SEAM (2026-08-09, MANUS).
+    #
+    # "Why are normal prose paragraph line breaks hardcoded in production? Why do I
+    # have to be responsible for making sure absolutely standard prose poetics are
+    # encoded in the first place, just to deposit a file?"
+    #
+    # He does not. Hard-wrapped prose was never a protocol requirement — it came
+    # from whoever composed the body wrapping at a column, a SOURCE-CODE habit
+    # carried into prose because the prose was being written inside string literals.
+    # Once sealed, those wraps are frozen into the identity-bearing bytes and every
+    # downstream rendering inherits them as fragment-paragraphs.
+    #
+    # A checker that rejects a wrapped body puts the burden back on the author. This
+    # does the job instead: prose paragraphs are joined into logical lines here, at
+    # the single point where text becomes canonical, and nothing else in the pipeline
+    # has to know. Verse, indentation, lists, tables, fenced code and markdown hard
+    # breaks are all preserved — the unwrapper is built to refuse anything it cannot
+    # prove is mechanical. Word content is verified identical before the bytes are
+    # sealed; if it is not, the original stands and the mint proceeds unchanged.
+    try:
+        import importlib.util as _ilu, re as _reN
+        _spec = _ilu.spec_from_file_location(
+            "_unwrap", str(REPO_ROOT / "scripts" / "unwrap_deposit.py"))
+        _uwm = _ilu.module_from_spec(_spec)
+        _spec.loader.exec_module(_uwm)
+        _flowed, _joined = _uwm.unwrap(canonical_text)
+        _w = lambda t: _reN.findall(r"[0-9A-Za-z\u00c0-\u024f']+", t)
+        if _joined and _w(_flowed) == _w(canonical_text):
+            canonical_text = _flowed
+    except Exception:
+        pass
+
     canonical_bytes = canonical_text.encode("utf-8")
     file_sha256 = hashlib.sha256(canonical_bytes).hexdigest()
 

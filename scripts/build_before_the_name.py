@@ -255,7 +255,10 @@ def main():
                 A(f"**[{kind}]** {note}")
             A("")
             txt = (src / f"{m['n']:03d}-{m['slug']}.txt").read_text(errors='replace')
-            A("> " + textwrap.fill(clean_excerpt(txt), 94).replace("\n", "\n> "))
+            # A blockquote is prose. Wrapping it at 94 columns froze a display
+            # decision into the deposit, which is the defect this file was later
+            # repaired for. One logical line; the renderer decides the rest.
+            A("> " + clean_excerpt(txt))
             A("")
         A("---")
         A("")
