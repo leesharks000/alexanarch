@@ -451,7 +451,7 @@ def _traversal_html(d, registry):
         e = bynum.get(n)
         if not e:
             return ''
-        t = esc(e['title'])[:88]
+        t = _inline_md(esc(e['title'])[:88])
         return (f'<a href="/s/records/{n}/" style="color:var(--accent);text-decoration:none">'
                 f'#{n} {t}</a>{extra}')
 
@@ -665,7 +665,10 @@ def _inline_md(t):
     # [^<>] stops a match spanning an anchor this pass has already made.
     t = re.sub(r'(?<!!)\[([^\]\n<>]{1,120})\]\((https?://[^\s)<>]+|/[^\s)<>]+)\)',
                r'<a href="\2" target="_blank" rel="noopener">\1</a>', t)
-    t = re.sub(r'\*\*([^*\n]+)\*\*', r'<strong>\1</strong>', t)
+    # non-greedy and asterisk-permitting: bold frequently wraps an italic,
+    # '**Kierkegaard (*Fear and Trembling*, 1843):**', and a [^*] class cannot
+    # span the inner pair — three such on #99 alone.
+    t = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', t)
     t = re.sub(r'(?<!\*)\*([^*\n]+)\*(?!\*)', r'<em>\1</em>', t)
     t = re.sub(r'`([^`\n]+)`', r'<code>\1</code>', t)
     return t
@@ -686,6 +689,7 @@ def _clean_apparatus(html_frag):
         return '<p style="font-weight:600;margin:8px 0 2px">' + m.group(2).strip() + '</p>'
     out = _re.sub(r'(?m)^\s*(#{1,6})\s+(.+?)\s*$', _h, html_frag)
     out = _re.sub(r'(>)\s*(#{1,6})\s+([^<]+)', lambda m: m.group(1) + '<strong>' + m.group(3).strip() + '</strong>', out)
+    html_frag = _inline_md(html_frag) if '**' in html_frag else html_frag
     return out
 
 
@@ -1152,7 +1156,7 @@ def regenerate_static_page(d, eidx, registry=None):
             _parts = []
             if _a.get('head_apparatus'):
                 _parts.append('<div style="font-family:ui-monospace,monospace;font-size:.82em;'
-                              'white-space:pre-wrap;color:#555">' + _html_escape(_a['head_apparatus']) + '</div>')
+                              'white-space:pre-wrap;color:#555">' + _inline_md(_html_escape(_a['head_apparatus'])) + '</div>')
             if _a.get('tail_apparatus'):
                 _parts.append('<details style="margin-top:10px"><summary style="cursor:pointer;'
                               'font-size:.85em;color:#666">Superseded metadata-capture body '
