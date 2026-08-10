@@ -300,7 +300,8 @@
     "ruling": "NOT a defect. Inline CONCEPT markers with attribution. Same ruling as on Sigil's page."
    }
   ],
-  "note": "A metadata search had put 26 records on this page, 17 of them in the live authorial set. Twelve substantial works added, including the complete field manual, the Endogenous Sophon, CloseCard, and his Telemetry Module in Morrow's Logotic series."
+  "note": "A metadata search had put 26 records on this page, 17 of them in the live authorial set. Twelve substantial works added, including the complete field manual, the Endogenous Sophon, CloseCard, and his Telemetry Module in Morrow's Logotic series.",
+  "ark_and_series_pass": "Completed 2026-08-10 after the record was first written. The Ark family required reading rather than title-matching: 45 deposits carry ARK and they are not one work."
  },
  "repairs": [
   {
@@ -313,5 +314,53 @@
    "kind": "repointed",
    "what": "Retired; repointed at #498."
   }
- ]
+ ],
+ "ark": {
+  "name": "THE SH*T — The Profane Ark",
+  "id": "EA-ARK-01-FRACTION",
+  "version": "v2.1",
+  "head": {
+   "deposit": 546,
+   "axn": "AXN:0177.EMPIRICAL.🜁⏏️🔃🪄♄🌻",
+   "title": "THE SH*T: EA-ARK-01-FRACTION v2.1 · The Accumulative Profane Encoding"
+  },
+  "creator_field": "Rex Fraction",
+  "subtitle": "The Accumulative Profane Encoding",
+  "RULING": "MANUS, 2026-08-10: Fraction has his own ark. It is NOT a version of EA-ARK-01, the main Space Ark — the many variant arks are their own things. Recorded in the registry with NOT_A_VERSION_OF pointing at EA-ARK-01 so no later pass folds it in.",
+  "diptych": {
+   "deposit": 545,
+   "axn": "AXN:0176.GOVERNANCE.🔴🔵❄️🏔️🥁🔓",
+   "title": "Crimson Hexagon: EA-ARK-01-DIPTYCH v1.0 The Sacred and the Profane: Double-Helical Semantic Physics ",
+   "note": "EA-ARK-01-DIPTYCH v1.0, The Sacred and the Profane — a double-hemisphere pairing, and FRACTION IS ITS CREATOR. So he authored the instrument that binds his own ark to Dancings's Sacred Ark; the pairing is his, not a later editorial act."
+  },
+  "counterpart": {
+   "name": "The Sacred Ark",
+   "id": "EA-ARK-01-DAMASCUS",
+   "bearer": "Damascus Dancings",
+   "head": 1255
+  },
+  "sibling_arks": {
+   "EA-ARK-EMOJI-01": "Sen Kuro — the Glyphic / Emoji Ark",
+   "EA-ARK-ASCII-01": "Rebekah Cranes — the ASCII Ark",
+   "EA-ARK-01-ARCHON": "Lee Sharks — the Sharks Ark",
+   "EA-ARK-01": "Jack Feist — the main Space Ark, head #558 v4.2.7"
+  }
+ },
+ "version_series_established": {
+  "date": "2026-08-10",
+  "why": "MANUS found two Fractal Navigation Map versions cited side by side with neither linking forward. The archive had recorded supersession ONLY for duplicate witnesses; a series of successive versions had no forward link at all, so every version looked equally current.",
+  "affects_him": [
+   {
+    "series": "EA-ARK-01-FRACTION",
+    "head": 546,
+    "note": "His own ark, distinct work."
+   },
+   {
+    "series": "EA-ARK-01",
+    "head": 558,
+    "note": "The main Ark he is NOT the head of."
+   }
+  ],
+  "rule": "A version is not retired and stays citable for its own date, unlike a duplicate witness which is never citable. A surface presenting THE work should cite the head."
+ }
 }
