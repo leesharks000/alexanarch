@@ -93,9 +93,21 @@ def transcript_block(e):
     tr = e.get("transcript") or ""
     oac = e.get("overview_at_capture") or ""
     div = e.get("divergence") or ""
-    if not (tr or oac):
+    meta = e.get("meta") or {}
+    if not (tr or oac or meta):
         return ""
     parts = []
+    if meta:
+        # Structured capture metadata (v9.41 retention rule): captured_at, surface,
+        # auth_state, client — rendered as a compact definition list inside the
+        # same collapsed element, so provenance travels with the transcript.
+        rows = "".join(
+            f'<dt>{esc(str(k))}</dt><dd>{esc(str(v))}</dd>'
+            for k, v in meta.items() if v not in (None, "", [], {})
+        )
+        if rows:
+            parts.append('<div class="cap-tr-label">Capture metadata</div>'
+                         f'<dl class="cap-tr-meta">{rows}</dl>')
     if oac:
         parts.append('<div class="cap-tr-label">AI Overview as screenshotted</div>'
                      f'<div class="cap-tr-body">{esc(oac)}</div>')

@@ -26,7 +26,7 @@
   "record_standard": "A capture is a query, what the layer returned, and what that means. Entries record the full transcript, standardized metadata (captured_at, surface, auth_state, client, tab_count where visible), and — where the composition regenerated between screenshot and transcript copy — both texts, under overview_at_capture and divergence. Recaptures of a prior query are new entries linked longitudinally in the reading; they never supersede the prior observation."
  },
  "registry_id": "EA-WG-CAPTURES-01",
- "version": "9.40",
+ "version": "9.41",
  "date": "2026-08-11",
  "total_captures": 285,
  "author": "Lee Sharks",
@@ -12298,7 +12298,7 @@
   "Mary Lee Constellation"
  ],
  "ordering": "Entries are grouped by category in the order declared in category_order, and alphabetised by slug within each category. Restored 2026-07-28 after drift: categories had become interleaved across the file and no category was internally ordered. Three Revelation First captures were additionally recategorised out of Frameworks, where they had been misfiled at the head of the file. Ordering is a property of the file and is checkable; consumers should not rely on file order for chronology, which is carried by the date field.",
- "evidence_policy": "Screen captures are preserved whenever taken and are linked from imgs and images. Where a record has no capture, the evidence field states what it rests on instead. An empty image field is never left to be read as an oversight: either the capture is linked, or its absence is declared.",
+ "evidence_policy": "Screen captures are preserved whenever taken and are linked from imgs and images. Where a record has no capture, the evidence field states what it rests on instead. An empty image field is never left to be read as an oversight: either the capture is linked, or its absence is declared. TRANSCRIPT RETENTION (ratified 2026-08-11, v9.41): every capture minted from v9.41 onward carries (1) transcript — the complete verbatim machine output as provided by MANUS at capture time, or transcript_status stating why none exists; and (2) meta — {captured_at, surface, auth_state, client}. A capture without its transcript is a caption without its photograph: the registry's subject is machine composition, and the composition itself is the evidence. Backfill of the 200-entry pre-v9.41 queue proceeds from MANUS-supplied transcripts only (data/worklists/capture-transcript-backfill.json); absence is recorded, never filled. Galleries render transcripts collapsed-by-default (details/summary) so the registry surface stays scannable while every retained transcript is crawler-readable without execution.",
  "citation": {
   "canonical_form": "https://www.alexanarch.org/captures/#{slug}",
   "rule": "Every capture is citable by its slug. The ARCHIVE is the canonical citation target because the archive is the authority; the galleries are mirrors and may lag. A mirror link is a convenience, never a citation.",
@@ -12326,5 +12326,16 @@
    "why": "These four entries were manufactured from image FILENAMES during the orphan recovery on 2026-08-08. The query 'symbolon' was inferred from the filename, not observed — and a screenshot of a query that returned nothing is not a capture of a result, it is a record of an absence, which is a different object requiring a different reading. Creating registry entries from filenames asserts that a machine said something when all that is known is that a screen was photographed. The images remain on the image hosts and in data/captures; only the false registry claims are withdrawn.",
    "images_retained": true
   }
- ]
+ ],
+ "transcript_retention": {
+  "ratified": "2026-08-11",
+  "backfill_worklist": "data/worklists/capture-transcript-backfill.json",
+  "required_fields": [
+   "transcript OR transcript_status",
+   "meta.captured_at",
+   "meta.surface",
+   "meta.auth_state",
+   "meta.client"
+  ]
+ }
 }

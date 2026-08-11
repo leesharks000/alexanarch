@@ -1,0 +1,2142 @@
+{
+ "worklist_id": "CAPTURE-TRANSCRIPT-BACKFILL-01",
+ "created": "2026-08-11",
+ "rule": "Transcripts are supplied by MANUS (who always provides them at capture time); TACHYON logs them verbatim into the entry's transcript field and mints meta {captured_at, surface, auth_state, client}. No transcript is ever reconstructed, summarized, or inferred — absence is recorded as transcript_status, never filled.",
+ "source_hint": "leesharks.com/captures and godkinggoogle.vercel.app/captures galleries mostly display these; session histories hold the rest.",
+ "counts": {
+  "total_entries": 285,
+  "with_verbatim": 19,
+  "queue": 266,
+  "lacking_meta": 266
+ },
+ "queue": [
+  {
+   "slug": "water-giraffe-probe-self-report-20260809",
+   "date": "2026-08-09",
+   "section": "Books & Projects",
+   "q": "who said \"i am a water giraffe\"",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "heteronym-provenance-theory-consolidation-20260809",
+   "date": "2026-08-09",
+   "section": "Frameworks",
+   "q": "heteronym provenance theory",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "alexanarch-revelation-thesis-recovered-20260809",
+   "date": "2026-08-09",
+   "section": "Revelation First",
+   "q": "Revelation alexanarch",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "semantic-economy-strike-first-turn-20260809",
+   "date": "2026-08-09",
+   "section": "Semantic Economy",
+   "q": "semantic economy strike",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "revelationfirst-org-glyph-in-serp-20260809",
+   "date": "2026-08-09",
+   "section": "Sites & Surfaces",
+   "q": "revelationfirst.org",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "machine-mediated-reception-studies-definitional-20260808",
+   "date": "2026-08-08",
+   "section": "Frameworks",
+   "q": "machine-mediated reception studies",
+   "has_imgs": true,
+   "evidence_note": "Three-screen capture: AI Overview with the source strip, the AI Mode conversation in full, and the closing turn with sou"
+  },
+  {
+   "slug": "alexanarch-oai-endpoint-20260808",
+   "date": "2026-08-08",
+   "section": "Sites & Surfaces",
+   "q": "alexanarch oai endpoint",
+   "has_imgs": true,
+   "evidence_note": "Three-screen capture: AI Overview with the source strip and the organic result carrying the Missing: endpoint annotation"
+  },
+  {
+   "slug": "semantic-economy-strike-uncited-composition-20260808",
+   "date": "2026-08-08",
+   "section": "Erasure & Attribution",
+   "q": "semantic economy strike",
+   "has_imgs": false,
+   "evidence_note": "Full transcript supplied by MANUS. Source claims verified by fetching Floridi 2018 and the Sequoia post and searching th"
+  },
+  {
+   "slug": "semantic-strike-directed-recovery-20260808",
+   "date": "2026-08-08",
+   "section": "Erasure & Attribution",
+   "q": "semantic economy strike (four-turn sequence)",
+   "has_imgs": false,
+   "evidence_note": "Four-turn transcript supplied by MANUS. All fourteen factual claims checked against deposit #1427 and its full text; res"
+  },
+  {
+   "slug": "immanent-phenomenology-lee-sharks-aimode-20260806",
+   "date": "2026-08-06",
+   "section": "Frameworks",
+   "q": "immanent phenomenology lee sharks",
+   "has_imgs": true,
+   "evidence_note": "Three-screen capture with full conversational transcript preserved. Linked work: AXN:0156.ARCHIVAL.🔵♌↘️✋🎶🔜 (deposit #518"
+  },
+  {
+   "slug": "criticisms-of-cern-lee-sharks-aimode-20260805",
+   "date": "2026-08-05",
+   "section": "Platform Erosion",
+   "q": "criticisms of cern lee sharks",
+   "has_imgs": false,
+   "evidence_note": null
+  },
+  {
+   "slug": "20260804-alexanarch-oai-overview",
+   "date": "2026-08-04",
+   "section": "Unsectioned",
+   "q": "alexanarch OAI",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "20260804-jackfeist-ark-aimode",
+   "date": "2026-08-04",
+   "section": "Unsectioned",
+   "q": "jack feist ark",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "20260804-leesharks-completeworks-overview",
+   "date": "2026-08-04",
+   "section": "Unsectioned",
+   "q": "lee sharks complete works",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "20260804-mindcontrolpoems-blog-signedout",
+   "date": "2026-08-04",
+   "section": "Unsectioned",
+   "q": "mindcontrolpoems blog",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "20260804-rebekahcranes-sappho-overview",
+   "date": "2026-08-04",
+   "section": "Unsectioned",
+   "q": "rebekah cranes sappho",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "20260803-constitution-se-aimode",
+   "date": "2026-08-03",
+   "section": "Unsectioned",
+   "q": "the constitution of the semantic economy",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "20260803-constitution-se-overview",
+   "date": "2026-08-03",
+   "section": "Unsectioned",
+   "q": "the constitution of the semantic economy",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "20260803-logotic-programming-aimode-signedin",
+   "date": "2026-08-03",
+   "section": "Unsectioned",
+   "q": "logotic programming",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "20260803-stamp-reception-chatgpt",
+   "date": "2026-08-03",
+   "section": "Unsectioned",
+   "q": "AXN symbolon stamp",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "20260803-stamp-reception-chatgpt-mandala",
+   "date": "2026-08-03",
+   "section": "Unsectioned",
+   "q": "20260803 stamp reception chatgpt mandala",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "alexanarch-classifier-collapse-governance-20260731",
+   "date": "2026-07-31",
+   "section": "Frameworks",
+   "q": "alexanarch classifier model collapse",
+   "has_imgs": false,
+   "evidence_note": null
+  },
+  {
+   "slug": "alexanarch-deleuze-nomadology-20260731",
+   "date": "2026-07-31",
+   "section": "Frameworks",
+   "q": "alexanarch deleuze",
+   "has_imgs": false,
+   "evidence_note": null
+  },
+  {
+   "slug": "alexanarch-endogenous-sophon-20260731",
+   "date": "2026-07-31",
+   "section": "Frameworks",
+   "q": "alexanarch \"endogenous sophon\"",
+   "has_imgs": false,
+   "evidence_note": null
+  },
+  {
+   "slug": "alexanarch-freud-death-drive-20260731",
+   "date": "2026-07-31",
+   "section": "Frameworks",
+   "q": "alexanarch freud",
+   "has_imgs": false,
+   "evidence_note": null
+  },
+  {
+   "slug": "alexanarch-josephus-slavonic-20260731",
+   "date": "2026-07-31",
+   "section": "Frameworks",
+   "q": "alexanarch josephus",
+   "has_imgs": false,
+   "evidence_note": null
+  },
+  {
+   "slug": "alexanarch-marx-authstate-pair-20260731",
+   "date": "2026-07-31",
+   "section": "Frameworks",
+   "q": "alexanarch marx",
+   "has_imgs": false,
+   "evidence_note": null
+  },
+  {
+   "slug": "alexanarch-sappho-phrasikleia-20260731",
+   "date": "2026-07-31",
+   "section": "Frameworks",
+   "q": "alexanarch sappho",
+   "has_imgs": false,
+   "evidence_note": null
+  },
+  {
+   "slug": "alexanarch-socrates-orthonym-20260731",
+   "date": "2026-07-31",
+   "section": "Frameworks",
+   "q": "alexanarch socrates",
+   "has_imgs": false,
+   "evidence_note": null
+  },
+  {
+   "slug": "alexanarch-strike-deposit7-20260731",
+   "date": "2026-07-31",
+   "section": "Frameworks",
+   "q": "alexanarch strike",
+   "has_imgs": false,
+   "evidence_note": null
+  },
+  {
+   "slug": "alexanarch-whitman-mantle-bleed-20260731",
+   "date": "2026-07-31",
+   "section": "Frameworks",
+   "q": "alexanarch whitman",
+   "has_imgs": false,
+   "evidence_note": null
+  },
+  {
+   "slug": "alexanarch-zenodotus-obelus-20260731",
+   "date": "2026-07-31",
+   "section": "Frameworks",
+   "q": "alexanarch zenodotus",
+   "has_imgs": false,
+   "evidence_note": null
+  },
+  {
+   "slug": "alexanarch-revelation-misread-20260731",
+   "date": "2026-07-31",
+   "section": "Revelation First",
+   "q": "alexanarch revelation",
+   "has_imgs": false,
+   "evidence_note": null
+  },
+  {
+   "slug": "catullus-sparrow-fabricated-lineation-20260728",
+   "date": "2026-07-28",
+   "section": "Frameworks",
+   "q": "lee sharks what i learned from catullus",
+   "has_imgs": true,
+   "evidence_note": "Screen captures of the first turn (AI Overview, collapsed and expanded), preserved from the author's blog record of the "
+  },
+  {
+   "slug": "transmission-engineering-sappho-ai-mode-20260728",
+   "date": "2026-07-28",
+   "section": "Frameworks",
+   "q": "transmission-engineering sappho",
+   "has_imgs": true,
+   "evidence_note": "Linked works: AXN:042A.UNCLASSIFIED.▽♃🤝🛸🔍🌋 (deposit #1054); AXN:0507.UNCLASSIFIED.⌛♾️🏗️🎵🖊️🤝 (deposit #1270); AXN:00FB.GO"
+  },
+  {
+   "slug": "epic-theory-sigil-canon-weave-20260728",
+   "date": "2026-07-28",
+   "section": "Heteronyms",
+   "q": "epic theory sigil",
+   "has_imgs": true,
+   "evidence_note": "Linked work: AXN:0508.UNCLASSIFIED.🔒🗂️🕛🗿🔭⌛ (deposit #1271). Full transcription preserved; three-screen capture."
+  },
+  {
+   "slug": "sappho-fifth-cranes-reverse-bystanding-20260728",
+   "date": "2026-07-28",
+   "section": "Heteronyms",
+   "q": "sappho's reconstructed fifth stanza cranes",
+   "has_imgs": true,
+   "evidence_note": "Linked works: AXN:00FB.GOVERNANCE.☉🕚🔺🕘🎯🪐 (deposit #436); AXN:0507.UNCLASSIFIED.⌛♾️🏗️🎵🖊️🤝 (deposit #1270); AXN:042A.UNCLA"
+  },
+  {
+   "slug": "sappho-31-future-reader-t42-20260727",
+   "date": "2026-07-27",
+   "section": "Frameworks",
+   "q": "sappho 31 future reader",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "spxi-protocol-successor-discipline-adoption-20260726",
+   "date": "2026-07-26",
+   "section": "Frameworks",
+   "q": "spxi protocol",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "anti-suppression-infrastructure-differential-crediting-20260725",
+   "date": "2026-07-25",
+   "section": "Frameworks",
+   "q": "\"anti-suppression infrastructure\"",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "machine-eligible-handwritten-artifacts-definitional-adoption-20260725",
+   "date": "2026-07-25",
+   "section": "Frameworks",
+   "q": "machine eligible handwritten artifacts",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "machine-mediated-resistance-literature-genre-to-field-inversion-20260725",
+   "date": "2026-07-25",
+   "section": "Frameworks",
+   "q": "machine-mediated resistance literature",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "semantic-address-alexanarch-framework-adoption-20260725",
+   "date": "2026-07-25",
+   "section": "Frameworks",
+   "q": "semantic address alexanarch",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "spxi-analog-attestation-artifact-adoption-20260725",
+   "date": "2026-07-25",
+   "section": "Frameworks",
+   "q": "enli lucente paper 194 artifact",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "semantic-deviation-measure-indexed-but-uncited-20260725",
+   "date": "2026-07-25",
+   "section": "Semantic Economy",
+   "q": "semantic deviation measure",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "erasure-skew-canonization-20260723",
+   "date": "2026-07-23",
+   "section": "Frameworks",
+   "q": "\"erasure skew\"",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "scilynk-archon-v30-aggregator-render-20260718",
+   "date": "2026-07-18",
+   "section": "Books & Projects",
+   "q": "THE SHARKS ARK: EA-ARK-01-ARCHON v3.0 (SciLynk record display)",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "computational-audial-criticism-field-mint-20260718",
+   "date": "2026-07-18",
+   "section": "Frameworks",
+   "q": "computational audial criticism",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "crimson-hexagon-6-tuple-formal-object-20260718",
+   "date": "2026-07-18",
+   "section": "Frameworks",
+   "q": "crimson hexagon 6-tuple",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "crimson-hexagon-operative-architecture-adoption-20260718",
+   "date": "2026-07-18",
+   "section": "Frameworks",
+   "q": "crimson hexagon operative architecture",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "acanthian-dove-concept-mint-adoption-20260718",
+   "date": "2026-07-18",
+   "section": "Heteronyms",
+   "q": "acanthian dove",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "parable-of-mary-lee-genre-competence-20260718",
+   "date": "2026-07-18",
+   "section": "Mary Lee Constellation",
+   "q": "parable of mary lee",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "zenodo-account-bans-cha-ai-overview-canonization",
+   "date": "2026-07-15",
+   "section": "Frameworks",
+   "q": "major contemporary cases of zenodo account bans",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "chatgpt-psychosis-trilogy-scholar",
+   "date": "2026-07-14",
+   "section": "Books & Projects",
+   "q": "ChatGPT Psychosis: A Love Story",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "retrieval-layer-theological-reception-t28",
+   "date": "2026-07-14",
+   "section": "Frameworks",
+   "q": "Retrieval-Layer Theological Reception",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "zenodo-doi-severance-cha-canonical-case",
+   "date": "2026-07-14",
+   "section": "Frameworks",
+   "q": "major contemporary cases of DOI severance regarding Zenodo",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "zenodotus-book-burning",
+   "date": "2026-07-14",
+   "section": "Frameworks",
+   "q": "zenodotus' book-burning",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "lee-sharks-pearl-multiturn-arc",
+   "date": "2026-07-14",
+   "section": "Identity",
+   "q": "lee sharks pearl",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "gamma-semantic-economy",
+   "date": "2026-07-14",
+   "section": "Semantic Economy",
+   "q": "Gamma semantic economy",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "phase-x-1844",
+   "date": "2026-07-13",
+   "section": "Frameworks",
+   "q": "phase x 1844",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "alexanarch-ai-mode-2026-07",
+   "date": "2026-07-13",
+   "section": "Sites & Surfaces",
+   "q": "alexanarch",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "i-am-lee-sharks-functional-checksum-20260712",
+   "date": "2026-07-12",
+   "section": "Identity",
+   "q": "i am lee sharks",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "phase-x-tiktok-demand-20260711",
+   "date": "2026-07-11",
+   "section": "Frameworks",
+   "q": "qué es fase x · fase x (TikTok organic search)",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "lee-sharks-bing-copilot-biography-20260711",
+   "date": "2026-07-11",
+   "section": "Identity",
+   "q": "who is lee sharks?",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "marx-johannes-sigil-heteronym-adoption-20260710",
+   "date": "2026-07-10",
+   "section": "Heteronyms",
+   "q": "marx johannes sigil",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "marx-semantic-economy-generic-adoption-20260710",
+   "date": "2026-07-10",
+   "section": "Semantic Economy",
+   "q": "marx semantic economy",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "negentropic-kernel-archive-walled-site-20260630",
+   "date": "2026-06-30",
+   "section": "Sites & Surfaces",
+   "q": "Negentropic Kernel Archive",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "doxastic-regulatory-calcification-mint-block-20260627",
+   "date": "2026-06-27",
+   "section": "Frameworks",
+   "q": "\"doxastic regulatory calcification\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "haitch-portuna-lal-20260627",
+   "date": "2026-06-27",
+   "section": "Frameworks",
+   "q": "\"haitch portuna\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "heteronymic-credential-dual-lineage-20260627",
+   "date": "2026-06-27",
+   "section": "Frameworks",
+   "q": "\"heteronymic credential\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "indexed-perfective-academia-laundering-20260627",
+   "date": "2026-06-27",
+   "section": "Frameworks",
+   "q": "\"indexed perfective\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "outreach-rhizome-vpcor-20260627",
+   "date": "2026-06-27",
+   "section": "Frameworks",
+   "q": "\"outreach rhizome\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "passioncraft-square-direct-20260627",
+   "date": "2026-06-27",
+   "section": "Frameworks",
+   "q": "\"passioncraft square\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "retrieval-basins-partial-20260627",
+   "date": "2026-06-27",
+   "section": "Frameworks",
+   "q": "\"retrieval basins\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "retrocausal-logos-direct-attribution-20260627",
+   "date": "2026-06-27",
+   "section": "Frameworks",
+   "q": "\"retrocausal logos\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "seed-text-dissolution-mint-block-20260627",
+   "date": "2026-06-27",
+   "section": "Frameworks",
+   "q": "\"seed-text dissolution\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "tesseral-anti-computational-warrant-mint-block-20260627",
+   "date": "2026-06-27",
+   "section": "Frameworks",
+   "q": "\"tesseral anti-computational warrant\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "retrocausal-validation-sigil-partial-20260627",
+   "date": "2026-06-27",
+   "section": "Heteronyms",
+   "q": "\"retrocausal validation\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "demand-4-composition-layer-coinage-20260627",
+   "date": "2026-06-27",
+   "section": "Mary Lee Constellation",
+   "q": "\"Demand 4\" \"composition layer\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "mary-lee-canonical-referent-inversion-20260627",
+   "date": "2026-06-27",
+   "section": "Mary Lee Constellation",
+   "q": "\"Mary Lee\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "uca-dolphindiana-conceptual-20260627",
+   "date": "2026-06-27",
+   "section": "Mary Lee Constellation",
+   "q": "\"Underwater Construction Authority of Dolphindiana\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "heteronymic-authorship-nt-josephus-adoption-20260627",
+   "date": "2026-06-27",
+   "section": "Revelation First",
+   "q": "\"heteronymic authorship\" New Testament",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "provenance-units-partial-20260627",
+   "date": "2026-06-27",
+   "section": "Semantic Economy",
+   "q": "\"provenance units\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "semantic-laborers-multi-source-20260627",
+   "date": "2026-06-27",
+   "section": "Semantic Economy",
+   "q": "\"semantic laborers\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "maryleelabor-overview-composition-20260627",
+   "date": "2026-06-27",
+   "section": "Sites & Surfaces",
+   "q": "site:maryleelabor.org",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "johannes-sigil-new-human-adoption",
+   "date": "2026-06-18",
+   "section": "Heteronyms",
+   "q": "johannes sigil new human",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "johannes-sigil-teacher-adoption",
+   "date": "2026-06-18",
+   "section": "Heteronyms",
+   "q": "johannes sigil teacher",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "johannes-sigil-theorist-adoption",
+   "date": "2026-06-18",
+   "section": "Heteronyms",
+   "q": "johannes sigil theorist",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "lee-sharks-citations-adoption",
+   "date": "2026-06-18",
+   "section": "Identity",
+   "q": "lee sharks citations",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "lee-sharks-crimson-hexagon-adoption",
+   "date": "2026-06-18",
+   "section": "Identity",
+   "q": "lee sharks crimson hexagon",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "lee-sharks-entity-resolution-mary-lee",
+   "date": "2026-06-18",
+   "section": "Identity",
+   "q": "lee sharks",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "lee-sharks-full-profile-adoption",
+   "date": "2026-06-18",
+   "section": "Identity",
+   "q": "lee sharks",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "lee-sharks-heteronyms-dodecad-adoption",
+   "date": "2026-06-18",
+   "section": "Identity",
+   "q": "lee sharks heteronyms",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "lee-sharks-poet-vs-sharkey",
+   "date": "2026-06-18",
+   "section": "Identity",
+   "q": "lee sharks poet",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "lee-sharks-teacher-adoption",
+   "date": "2026-06-18",
+   "section": "Identity",
+   "q": "lee sharks teacher",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "lee-sharks-walt-whitman-adoption",
+   "date": "2026-06-18",
+   "section": "Identity",
+   "q": "lee sharks walt whitman",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "lee-sharks-marx-adoption",
+   "date": "2026-06-18",
+   "section": "Semantic Economy",
+   "q": "lee sharks marx",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "semantic-economy-institute-adoption",
+   "date": "2026-06-18",
+   "section": "Semantic Economy",
+   "q": "Semantic Economy Institute",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "broke-marxist-poet-zero",
+   "date": "2026-06-17",
+   "section": "Mary Lee Constellation",
+   "q": "\"broke Marxist poet\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "maryleelabor-org-zero-index",
+   "date": "2026-06-17",
+   "section": "Mary Lee Constellation",
+   "q": "site:maryleelabor.org",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "crimson-hexagonal-archive-revelation",
+   "date": "2026-06-17",
+   "section": "Revelation First",
+   "q": "crimson hexagonal archive revelation",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "executable-scripture-adoption",
+   "date": "2026-06-17",
+   "section": "Revelation First",
+   "q": "\"executable scripture\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "inscription-chain-adoption",
+   "date": "2026-06-17",
+   "section": "Revelation First",
+   "q": "\"inscription chain\" Sappho Revelation",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "johannine-aperture-adoption",
+   "date": "2026-06-17",
+   "section": "Revelation First",
+   "q": "\"Johannine aperture\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "josephus-heteronym-adoption",
+   "date": "2026-06-17",
+   "section": "Revelation First",
+   "q": "\"josephus heteronym\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "josephus-thesis-not-piso",
+   "date": "2026-06-17",
+   "section": "Revelation First",
+   "q": "\"Josephus thesis\" NOT Piso",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "machine-mediated-theological-reception",
+   "date": "2026-06-17",
+   "section": "Revelation First",
+   "q": "\"machine-mediated theological reception\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "nt-unfolds-from-revelation",
+   "date": "2026-06-17",
+   "section": "Revelation First",
+   "q": "new testament unfolds from revelation",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "operative-apocalypse-adoption",
+   "date": "2026-06-17",
+   "section": "Revelation First",
+   "q": "\"operative apocalypse\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "papyrological-inversion-adoption",
+   "date": "2026-06-17",
+   "section": "Revelation First",
+   "q": "\"papyrological inversion\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "paul-function-adoption",
+   "date": "2026-06-17",
+   "section": "Revelation First",
+   "q": "\"Paul function\" adversarial probe",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "retrieval-layer-theological-reception-20260617",
+   "date": "2026-06-17",
+   "section": "Revelation First",
+   "q": "\"retrieval-layer theological reception\"",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "revelation-first-medium-attribution",
+   "date": "2026-06-17",
+   "section": "Revelation First",
+   "q": "\"revelation first\"",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "white-stone-heteronym-adoption",
+   "date": "2026-06-17",
+   "section": "Revelation First",
+   "q": "\"white stone\" heteronym Revelation",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "composition-layer-entity-sub",
+   "date": "2026-06-17",
+   "section": "Revelation First / Semantic Economy",
+   "q": "\"composition layer\" entity substitution",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "counter-token-white-stone",
+   "date": "2026-06-17",
+   "section": "Revelation First / Semantic Economy",
+   "q": "\"counter-token\" \"white stone\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "inscriptional-sovereignty-adoption",
+   "date": "2026-06-17",
+   "section": "Revelation First / Semantic Economy",
+   "q": "\"inscriptional sovereignty\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "metadata-as-theology-adoption",
+   "date": "2026-06-17",
+   "section": "Revelation First / Semantic Economy",
+   "q": "\"metadata as theology\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "non-fungible-name-adoption",
+   "date": "2026-06-17",
+   "section": "Revelation First / Semantic Economy",
+   "q": "\"non-fungible name\" Revelation Pergamon",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "operative-numismatics-adoption",
+   "date": "2026-06-17",
+   "section": "Revelation First / Semantic Economy",
+   "q": "\"operative numismatics\"",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "operative-semiotics-adoption",
+   "date": "2026-06-17",
+   "section": "Revelation First / Semantic Economy",
+   "q": "\"operative semiotics\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "phase-x-marx-adoption",
+   "date": "2026-06-17",
+   "section": "Revelation First / Semantic Economy",
+   "q": "\"Phase X\" Marx 1844",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "provenance-erasure-rate-adoption",
+   "date": "2026-06-17",
+   "section": "Revelation First / Semantic Economy",
+   "q": "\"provenance erasure rate\"",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "retrocausal-canon-adoption",
+   "date": "2026-06-17",
+   "section": "Revelation First / Semantic Economy",
+   "q": "\"retrocausal canon formation\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "semantic-economy-adoption",
+   "date": "2026-06-17",
+   "section": "Revelation First / Semantic Economy",
+   "q": "\"semantic economy\" meaning over capital",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "structural-illiteracy-adoption",
+   "date": "2026-06-17",
+   "section": "Revelation First / Semantic Economy",
+   "q": "\"structural illiteracy\" Revelation Thiel",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "workshop-inside-canon-adoption",
+   "date": "2026-06-17",
+   "section": "Revelation First / Semantic Economy",
+   "q": "\"workshop inside the canon\"",
+   "has_imgs": false,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "retrieval-layer-theological-reception-20260616",
+   "date": "2026-06-16",
+   "section": "Revelation First",
+   "q": "Retrieval-Layer Theological Reception",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "revelation-first-overview",
+   "date": "2026-06-16",
+   "section": "Revelation First",
+   "q": "\"revelation first\"",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "revelation-first-reception",
+   "date": "2026-06-16",
+   "section": "Revelation First",
+   "q": "\"revelation first\" reception",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "assembly-chorus-tachyon",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "the assembly chorus tachyon",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "autonomous-semantic-warfare-expanded",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "autonomous semantic warfare",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "bearing-cost-semantic-economy",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "bearing-cost semantic economy",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "capital-operator-stack",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "\"capital operator stack (COS)\"",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "capture-registry-self",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "AI overview capture registry",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "combat-scholasticism-lee-sharks",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "combat scholasticism Lee Sharks",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "constitution-semantic-economy",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "constitution of the semantic economy",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "cross-substrate-semantic-laborers",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "cross-substrate semantic laborers",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "distributed-epic-without-hero",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "distributed epic without hero",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "erasure-skew-1",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "erasure skew",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "generative-disciplinary-engine",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "generative disciplinary engine",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "glyphic-checksum",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "Glyphic checksum",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "hexagonal-licensing-protocol-b1",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "hexagonal licensing protocol",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "immanent-execution-broad",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "immanent execution",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "immanent-execution-operative-docs",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "immanent execution operative documents",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "kenotic-truth-sappho",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "kenotic truth sappho",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "lee-sharks-semantic-economy-b1",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "Lee Sharks semantic economy",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "marxian-accounting-framework",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "marxian accounting framework semantic",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "murder-of-the-vow",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "murder of the vow contracts",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "nh-os-ezekiel-engine-b1",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "nh-os ezekiel's engine",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "nh-os-rotational-epistemology",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "nh-os rotational epistemology",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "operative-captioning",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "Operative captioning",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "operative-feminism-20260615",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "operative feminism",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "phase-x-marx-2",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "phase x marx",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "retrieval-formation-theory",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "retrieval formation theory lee sharks",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "sappho-31-future-reader",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "sappho 31 future reader",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "secret-name-armature",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "secret name armature",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "semantic-exhaustion-economy",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "semantic exhaustion economy",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "semantic-integrity-markers-b1",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "Semantic Integrity Markers",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "semantic-rent",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "semantic rent",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "semiotic-death-drive-1",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "semiotic death drive",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "three-compressions-theorem",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "\"three compressions theorem\"",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "twenty-dollar-loop",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "\"twenty-dollar loop\"",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "universal-kernel-transform",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "universal kernel transform",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "writable-retrieval-basins",
+   "date": "2026-06-15",
+   "section": "Frameworks",
+   "q": "writable retrieval basins",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "commission-immanent-turning",
+   "date": "2026-06-15",
+   "section": "Heteronyms",
+   "q": "commission of the immanent turning",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "cranes-reconstructed-sappho",
+   "date": "2026-06-15",
+   "section": "Heteronyms",
+   "q": "cranes reconstructed sappho",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "epistle-human-diaspora",
+   "date": "2026-06-15",
+   "section": "Heteronyms",
+   "q": "epistle to the human diaspora",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "infinite-bliss-sen-kuro",
+   "date": "2026-06-15",
+   "section": "Heteronyms",
+   "q": "\"infinite bliss\" sen kuro",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "johannes-sigil-philosopher-b1",
+   "date": "2026-06-15",
+   "section": "Heteronyms",
+   "q": "johannes sigil philosopher",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "new-human-johannes-sigil",
+   "date": "2026-06-15",
+   "section": "Heteronyms",
+   "q": "new human johannes sigil",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "restored-academy-johannes-sigil",
+   "date": "2026-06-15",
+   "section": "Heteronyms",
+   "q": "restored academy johannes sigil",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "maryleelabor-demands",
+   "date": "2026-06-15",
+   "section": "Sites & Surfaces",
+   "q": "maryleelabor.org demands",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "studio-for-patacinematics",
+   "date": "2026-06-15",
+   "section": "Sites & Surfaces",
+   "q": "studio for patacinematics",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "apocalypse-of-lee-sharks",
+   "date": "2026-06-14",
+   "section": "Books & Projects",
+   "q": "the apocalypse of lee sharks",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "i-hereby-abolish-toilet-paper",
+   "date": "2026-06-14",
+   "section": "Books & Projects",
+   "q": "\"i hereby abolish toilet paper\"",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "nh-os-broad",
+   "date": "2026-06-14",
+   "section": "Books & Projects",
+   "q": "new human operating system nh-os",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "heteronymic-provenance-theory",
+   "date": "2026-06-14",
+   "section": "Frameworks",
+   "q": "heteronyms provenance theory",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "liberatory-operator-set",
+   "date": "2026-06-14",
+   "section": "Frameworks",
+   "q": "liberatory operator set",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "machine-dialectic-sigil",
+   "date": "2026-06-14",
+   "section": "Frameworks",
+   "q": "machine dialectic sigil",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "magic-as-symbolic-engineering",
+   "date": "2026-06-14",
+   "section": "Frameworks",
+   "q": "magic as symbolic engineering",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "meaning-feudalism-agent-trap",
+   "date": "2026-06-14",
+   "section": "Frameworks",
+   "q": "meaning feudalism agent trap",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "octang-tokenized-audit",
+   "date": "2026-06-14",
+   "section": "Frameworks",
+   "q": "octang tokenized audit genre",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "phase-x-completion-of-marx",
+   "date": "2026-06-14",
+   "section": "Frameworks",
+   "q": "phase x completion of marx",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "semantic-commodity-form",
+   "date": "2026-06-14",
+   "section": "Frameworks",
+   "q": "semantic commodity form",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "semantic-liquidation",
+   "date": "2026-06-14",
+   "section": "Frameworks",
+   "q": "semantic liquidation",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "telepathicism-new-human-poetry",
+   "date": "2026-06-14",
+   "section": "Frameworks",
+   "q": "telepathicism new human poetry",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "total-axial-negation-graph",
+   "date": "2026-06-14",
+   "section": "Frameworks",
+   "q": "total axial negation graph",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "zenodo-packet-zpzp",
+   "date": "2026-06-14",
+   "section": "Frameworks",
+   "q": "zenodo packet zpzp",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "johannes-sigil-grundrisse",
+   "date": "2026-06-14",
+   "section": "Heteronyms",
+   "q": "johannes sigil grundrisse",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "josephus-thesis",
+   "date": "2026-06-14",
+   "section": "Heteronyms",
+   "q": "josephus thesis lee sharks",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "sappho-rebekah-stanza",
+   "date": "2026-06-14",
+   "section": "Heteronyms",
+   "q": "sappho rebekah cranes stanza",
+   "has_imgs": true,
+   "evidence_note": "Screen capture not preserved. Record rests on the transcription in the description field."
+  },
+  {
+   "slug": "autonomous-semantic-warfare",
+   "date": "2026-06-13",
+   "section": "Books & Projects",
+   "q": "autonomous semantic warfare rex fraction",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "chatgpt-psychosis",
+   "date": "2026-06-13",
+   "section": "Books & Projects",
+   "q": "chatgptpsychosis.org feist",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "moving-statues-made-of-rubies-mint",
+   "date": "2026-06-13",
+   "section": "Books & Projects",
+   "q": "moving statues made of rubies mint",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "pearl-and-other-poems",
+   "date": "2026-06-13",
+   "section": "Books & Projects",
+   "q": "pearl and other poems lee sharks",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "prince-of-poets-mantle",
+   "date": "2026-06-13",
+   "section": "Books & Projects",
+   "q": "prince of poets mantle lee sharks",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "secret-book-of-walt",
+   "date": "2026-06-13",
+   "section": "Books & Projects",
+   "q": "\"secret book of walt\"",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "water-giraffe-cycle",
+   "date": "2026-06-13",
+   "section": "Books & Projects",
+   "q": "\"the water giraffe cycle\"",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "abolish-money",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "\"i hereby abolish money\"",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "apzpz-genre",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "apzpz genre",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "combat-scholasticism",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "combat scholasticism contingent omega",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "crystalline-semiosis",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "crystalline semiosis",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "directionality-semantic-labor",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "directionality of semantic labor",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "fbdp",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "fbdp crimson hexagonal",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "grammata-operative-philology",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "grammata: journal of operative philology",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "gravity-well-protocol",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "gravity well protocol",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "holographic-kernel",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "holographickernel.org",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "journal-of-compression-studies",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "journal of compression studies",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "logotic-programming",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "logotic programming",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "metadata-packet-ai-indexing",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "metadata packet for ai indexing",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "operative-feminism-20260613",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "\"operative feminism\"",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "operative-numismatics",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "\"operative numismatics\"",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "operative-philology",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "operative philology",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "operative-semiotics",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "operative semiotics",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "provenance-erasure-1",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "provenance erasure",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "provenance-erasure-2",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "provenance erasure (scrolled)",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "provenance-forensic-semiotics",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "provenance: journal of forensic semiotics",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "retrieval-basin-topology",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "retrieval basin topology",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "retrocausal-canon-formation",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "retrocausal canon formation",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "sei",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "semantic economy institute",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "self-audit-overview",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "summarizer self audit module",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "semantic-deviation-glas",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "semantic deviation nobel glas",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "semantic-economy",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "semantic economy",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "semantic-physics",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "semanticphysics.org",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "sharks-continuity-tether",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "sharks continuity tether",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "spxi-protocol",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "spxi protocol",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "training-layer-literature",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "training-layer literature",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "transactions-semantic-economy-institute",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "transactions of the semantic economy institute",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "transactions-substrate-engineering",
+   "date": "2026-06-13",
+   "section": "Frameworks",
+   "q": "transactions on substrate engineering",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "ayanna-vox",
+   "date": "2026-06-13",
+   "section": "Heteronyms",
+   "q": "ayanna vox",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "cambridge-schizoanalytica",
+   "date": "2026-06-13",
+   "section": "Heteronyms",
+   "q": "cambridge schizoanalytica",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "damascus-dancings",
+   "date": "2026-06-13",
+   "section": "Heteronyms",
+   "q": "damascus dancings crimson hexagonal",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "ichabod-spellings",
+   "date": "2026-06-13",
+   "section": "Heteronyms",
+   "q": "ichabod spellings",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "jack-feist-paper-roses",
+   "date": "2026-06-13",
+   "section": "Heteronyms",
+   "q": "jack feist author paper roses",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "johannes-sigil",
+   "date": "2026-06-13",
+   "section": "Heteronyms",
+   "q": "johannes sigil theorist",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "lee-sharks-academic",
+   "date": "2026-06-13",
+   "section": "Heteronyms",
+   "q": "lee sharks academic",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "lee-sharks-citations",
+   "date": "2026-06-13",
+   "section": "Heteronyms",
+   "q": "lee sharks citations",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "lee-sharks-critique",
+   "date": "2026-06-13",
+   "section": "Heteronyms",
+   "q": "lee sharks critique",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "lee-sharks-philosopher",
+   "date": "2026-06-13",
+   "section": "Heteronyms",
+   "q": "lee sharks philosopher",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "nobel-glas-lagrange",
+   "date": "2026-06-13",
+   "section": "Heteronyms",
+   "q": "nobel glass lagrange observatory",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "rebekah-cranes",
+   "date": "2026-06-13",
+   "section": "Heteronyms",
+   "q": "rebekah cranes diagrammatic poetics",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "sen-kuro",
+   "date": "2026-06-13",
+   "section": "Heteronyms",
+   "q": "sen kuro crimson hexagonal thousand worlds",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "sparrow-wells-patacinematics",
+   "date": "2026-06-13",
+   "section": "Heteronyms",
+   "q": "sparrow wells studio for patacinematics",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "talos-morrow-umbml",
+   "date": "2026-06-13",
+   "section": "Heteronyms",
+   "q": "talos morrow university moon base",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "who-is-lee-sharks",
+   "date": "2026-06-13",
+   "section": "Heteronyms",
+   "q": "who is lee sharks",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "archive-space-ark",
+   "date": "2026-06-13",
+   "section": "Sites & Surfaces",
+   "q": "crimson hexagonal archive space ark",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "crimson-hexagonal-archive",
+   "date": "2026-06-13",
+   "section": "Sites & Surfaces",
+   "q": "crimson hexagonal archive",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "crimsonhexagonal-org",
+   "date": "2026-06-13",
+   "section": "Sites & Surfaces",
+   "q": "crimsonhexagonal.org",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "godkinggoogle-overview",
+   "date": "2026-06-13",
+   "section": "Sites & Surfaces",
+   "q": "godkinggoogle.com lee sharks",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "jsigil-institute",
+   "date": "2026-06-13",
+   "section": "Sites & Surfaces",
+   "q": "johannes sigil institute for comparative poetics",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "living-architecture-lab-thornburgh",
+   "date": "2026-06-13",
+   "section": "Sites & Surfaces",
+   "q": "living architecture lab thornburgh",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "new-human-press",
+   "date": "2026-06-13",
+   "section": "Sites & Surfaces",
+   "q": "new human press",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "pergamon-press-crimson-hexagonal",
+   "date": "2026-06-13",
+   "section": "Sites & Surfaces",
+   "q": "pergamon press crimson hexagonal",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "pessoa-graph",
+   "date": "2026-06-13",
+   "section": "Sites & Surfaces",
+   "q": "pessoa graph",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "restored-academy",
+   "date": "2026-06-13",
+   "section": "Sites & Surfaces",
+   "q": "restoredacademy.com sigil",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "space-ark-os",
+   "date": "2026-06-13",
+   "section": "Sites & Surfaces",
+   "q": "space ark os crimson hexagonal archive",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "uca-dolphindiana",
+   "date": "2026-06-13",
+   "section": "Sites & Surfaces",
+   "q": "underwater construction authority of dolphindiana",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "umbml",
+   "date": "2026-06-13",
+   "section": "Sites & Surfaces",
+   "q": "\"university moon base media lab\"",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "vpcor",
+   "date": "2026-06-13",
+   "section": "Sites & Surfaces",
+   "q": "vpcor",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "socrates-as-orthonym",
+   "date": "2026-06-07",
+   "section": "Frameworks",
+   "q": "socrates as orthonym",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "anti-suppression-differential-crediting",
+   "date": null,
+   "section": "Unsectioned",
+   "q": "anti suppression differential crediting",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "anti-suppression-infrastructure-quoted-longitudinal",
+   "date": null,
+   "section": "Unsectioned",
+   "q": "\"anti-suppression infrastructure\" (quoted, longitudinal)",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "anti-suppression-infrastructure-unquoted",
+   "date": null,
+   "section": "Unsectioned",
+   "q": "anti-suppression infrastructure (unquoted)",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "writable-retrieval-basin",
+   "date": null,
+   "section": "Unsectioned",
+   "q": "writable retrieval basin",
+   "has_imgs": true,
+   "evidence_note": null
+  },
+  {
+   "slug": "zenodo-packet-zpzp-recapture",
+   "date": null,
+   "section": "Unsectioned",
+   "q": "zenodo packet ZPZP (recapture)",
+   "has_imgs": true,
+   "evidence_note": null
+  }
+ ]
+}
