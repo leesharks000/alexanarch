@@ -1,0 +1,60 @@
+[
+ {
+  "discovery": "Antarctic ozone hole",
+  "year": 1985,
+  "near_miss_mechanism": "quality flag designed for instrument faults; physics-vs-fault fork resolved toward fault; cross-validation data shared the wrong prior (later withdrawn)",
+  "survival_channel": "independent ground instrument (Dobson, Halley) with different failure modes",
+  "replay_redemption": "archived TOMS raw data reprocessed; hole mapped retrospectively (Stolarski 1986)",
+  "sources": [
+   "Farman et al. 1985 Nature 315:207",
+   "Bhartia & McPeters 2018 C.R. Geoscience",
+   "Stolarski et al. 1986"
+  ],
+  "modern_analog": "AutoDQM physics-vs-detector-fault fork at trigger scale; correlated validation channels"
+ },
+ {
+  "discovery": "Pulsars",
+  "year": 1967,
+  "near_miss_mechanism": "sub-threshold 'scruff' on chart output; classifiable as interference",
+  "survival_channel": "human inspection of unclassified residue (J. Bell Burnell), sustained against dismissal",
+  "replay_redemption": null,
+  "sources": [
+   "Hewish et al. 1968 Nature 217:709"
+  ],
+  "modern_analog": "no human inspects the 40 MHz stream; residue channel closed by construction"
+ },
+ {
+  "discovery": "Cosmic microwave background",
+  "year": 1965,
+  "near_miss_mechanism": "persistent residual attributable to instrument noise",
+  "survival_channel": "refusal to subtract an unexplained residual",
+  "replay_redemption": null,
+  "sources": [
+   "Penzias & Wilson 1965 ApJ 142:419"
+  ],
+  "modern_analog": "automated calibration and subtraction pipelines; residuals 'cleaned' by design"
+ },
+ {
+  "discovery": "Fast radio bursts (Lorimer burst lineage)",
+  "year": 2007,
+  "near_miss_mechanism": "single dispersed pulse outside the survey's target class",
+  "survival_channel": "archival reanalysis years after acquisition",
+  "replay_redemption": "additional early FRB later found in the same archival Parkes data; authors infer more remain (arXiv:1902.06009)",
+  "sources": [
+   "Lorimer et al. 2007 Science 318:777",
+   "Zhang et al. 2019 arXiv:1902.06009"
+  ],
+  "modern_analog": "the accidental replay bank; Protocol II is its systematization"
+ },
+ {
+  "discovery": "KIC 8462852 (Boyajian's star)",
+  "year": 2015,
+  "near_miss_mechanism": "light-curve class outside the automated planet-search templates",
+  "survival_channel": "citizen-science inspection of retained data (Planet Hunters)",
+  "replay_redemption": "Kepler data durably preserved and publicly inspectable",
+  "sources": [
+   "Boyajian et al. 2016 MNRAS 457:3988"
+  ],
+  "modern_analog": "classification-after-preservation architecture working as designed"
+ }
+]

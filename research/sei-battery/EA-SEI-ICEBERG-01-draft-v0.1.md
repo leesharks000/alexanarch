@@ -1,0 +1,202 @@
+# The Iceberg Document: Instrument-Conditioned Nullity, Correlated Blind Spots, and the Conditions for Continued Surprise
+
+**EA-SEI-ICEBERG-01 · DRAFT v0.1 · 2026-08-11 — NOT MINTED**
+**Register:** speculative risk assessment with explicit confidence tiers. This is not Paper 1, and nothing in it is claimed at Paper-1 evidentiary standards. It is the framework that says why the battery matters beyond its table.
+**Downstream of:** #1449 · AXN:05DA.EMPIRICAL.🛤️🌠🗿🖊️🧭🪞 (the battery and work plan) and the SEI family #931–#935, #1436.
+**Provenance:** drafted by TACHYON from a MANUS-directed speculation session (2026-08-11), then revised against a three-witness Assembly audit round the same day. The binding audit (LABOR register) proposed two major downgrades, three factual corrections, and one upgrade; all are adopted and itemized in §6. Per the Isomorphism Principle (#932 §7.4), the corrections are part of the deposited record, not a private history.
+
+---
+
+## §0 · The four-layer discipline
+
+The audit round's structural contribution was the layering itself. Everything below is sorted into four tiers, and the sorting is the point: the speculative tier can go *harder* precisely because nothing from it leaks upward.
+
+**Layer I — Measured.** What battery v0.1 established, at demonstration scale, single seed.
+**Layer II — Formally implied.** What follows from pipeline structure by argument, independent of any new measurement.
+**Layer III — Testable extrapolations.** Named hypotheses and measurement programs, including the cross-discipline convergence audit.
+**Layer IV — Speculative consequences.** The civilizational argument, fenced and flagged.
+
+---
+
+## §1 · Layer I — Measured
+
+Battery v0.1 (#1449): four process pairs × three learned-normality score families (reconstruction AE; encoder-side latent-norm VAE, d_z = 8, the AXOL1TL-class score; Gaussian-mixture density), both training directions, thresholds on held-out own background at accepted-background rates 10⁻² and 10⁻³, pre-registered before training, on the public top-tagging reference and LHCO2020 R&D datasets.
+
+Findings, restated at their exact strength: directional asymmetry replicates the Finke et al. (2021, arXiv:2104.09051) result in an independent implementation and extends beyond reconstruction loss — on constituents, background-trained systems detect top jets (AUC 0.84–0.87) while top-trained systems rate QCD *more ordinary than their own training class* (AUC 0.24–0.30), for the autoencoder and the density family alike; direction-dependence is systematic across every background-vs-signal pair, with the density family posting the largest Inversion Asymmetry Index (up to 0.41 at 10⁻²); at trigger-like operating points every tested system assimilates ≥93% of the structurally distinct partner class; the near-structure control pair stays quiet. Single seed; surrogates; nothing here measures a deployed trigger. That is the tip, entire.
+
+---
+
+## §2 · Layer II — Formally implied
+
+### §2.1 The No-Retention-Bound observation
+
+*(The audit's upgrade: this is stronger than the "small losses multiply" version, because it needs no independence assumption.)*
+
+For an event x traversing sequential selection stages S₁…Sₙ, end-to-end retention is, by the chain rule alone,
+
+  R_end(x) = P(S₁,…,Sₙ | x) = ∏ᵢ P(Sᵢ | S₁,…,Sᵢ₋₁, x).
+
+Nothing about this is speculative. The empirical situation is that almost none of these conditional retention functions are characterized over representation-*incompatible* novelty classes — each stage is validated on the support its designers used. Therefore:
+
+> **No-Retention-Bound observation.** In a sequential selection pipeline, satisfactory retention measured on the support used to validate each stage does not establish a nontrivial lower bound on joint retention outside that support. Component-level evidence of the usual kind is compatible with end-to-end retention arbitrarily close to zero on representation-incompatible classes, and only measurement of the relevant conditional retention functions can exclude this.
+
+The claim is not that end-to-end retention *is* near zero. The claim is that the standard evidence *does not bound it away from zero* — and that this absence of a bound, at nation-scale resource commitment, is itself the measured fact. The absence of measurement is a measured absence. This is the bridge from the battery to everything below.
+
+### §2.2 The irreversibility locus
+
+*(Derived from the audit's Rubin correction, and promoted to a first-class architectural variable.)*
+
+Not all classification is epistemically equal. The decisive question about any pipeline is **where classification becomes irreversible**:
+
+```
+irreversible filtering BEFORE durable preservation   ≠   classification/ranking AFTER preservation
+```
+
+A strange event deprioritized by every downstream classifier but retained in a durable public stream remains *replayable* — recoverable under a future ontology. An event discarded before durable retention does not exist for any future ontology. The LHC Level-1 trigger sits on the wrong side of this line by physical necessity (40 MHz cannot be stored); most other sciences sit there by *choice*, which means the choice is auditable. The irreversibility locus, not the presence of ML, is the fundamental variable. §3.4 applies it discipline by discipline.
+
+### §2.3 Correlated blind spots defeat redundancy — and the literature already exists
+
+Redundancy protects discovery only when channels have sufficiently independent failure modes. With miss probabilities q₁…qₙ, independence gives P(all miss) = ∏qᵢ; under correlated selection functions the joint miss probability approaches the individual one, and additional instruments buy nothing.
+
+The audit round's request for grounding here is answerable: this is a *formalized field*. **Algorithmic monoculture** (Kleinberg & Raghavan, PNAS 118(22), 2021) proves that decision-makers relying on a common algorithm can produce worse aggregate outcomes than independent, individually weaker methods. **Outcome homogenization** (Bommasani, Creel, Kumar, Jurafsky & Liang, NeurIPS 2022, arXiv:2211.13972) extends monoculture from "same system" to "systems sharing components — training data, foundation models" and measures the phenomenon of the same individuals receiving the same negative outcome from *every* deployed system. Adjacent: Creel & Hellman's Algorithmic Leviathan (uniform judgment across a sector); "generative monoculture" (Wu, Black & Chandrasekaran 2024); algorithmic pluralism (Jain et al. 2024) as the mitigation frame, including proposals that regulators *measure and cap outcome-overlap across deployed systems*.
+
+The transposition this document makes — and it appears to be novel — is from decision subjects to *phenomena*: where that literature asks whether the same job applicant is rejected by every screener, we ask whether the same anomaly class is assimilated by every scientific instrument. Same mathematics, different ontology of the harmed. The instrument the transposition demands:
+
+> **Representational Independence Index (RII).** For two pipelines A and B evaluated on a common withheld anomaly panel, the RII is a measure of miss-overlap: not Retention(A) and Retention(B) separately, but Overlap(Misses_A, Misses_B) against the independence expectation. Two mediocre instruments with anti-correlated blind spots can be epistemically healthier than two excellent instruments that miss identical things.
+
+RII is the multi-instrument extension of BAR, and it is measurable today between any two willing pipelines.
+
+---
+
+## §3 · Layer III — Testable extrapolations
+
+### §3.1 The Low-Complexity Blind-Spot Hypothesis (LCBH)
+
+*(The audit's largest downgrade, accepted: "new physics will look boring" is a hypothesis generated by the result, not an inference licensed by it. Formalized so it can be tested rather than believed.)*
+
+What the battery measured is asymmetry along a *representation*-complexity axis in specific feature spaces. The chain "low representation complexity → sparse final states → soft diffuse energy → long-lived decays → few-body physics" is phenomenological intuition, not measurement: detector response and feature construction can map physically simple processes to baroque representations and vice versa.
+
+> **LCBH.** For anomaly scores exhibiting directional complexity bias, out-of-distribution classes lying *below* the training distribution along an operationally defined representation-complexity axis will receive systematically lower anomaly scores than comparably separated classes lying *above* it.
+
+Test design: build the v0.2+ panel ordered by *measured* representation complexity (e.g., compressibility under the deployed representation, constituent sparsity, effective dimensionality), not by phenomenological label. Only if LCBH survives on that axis does the mapping back to detector-level phenomenology begin. The earned public sentence, in order of earning: first "the bias has a measurable direction"; then, if the mapping holds, "the discoveries most liable to assimilation may look less exotic, not more"; and only at the end of the program, as the manifesto line it is — *if there's something hiding, bet on boring.*
+
+### §3.2 Instrument-conditioned nullity
+
+*(The audit's other major downgrade, accepted: "the desert may be the shape of the lens" jumps too far as physics; the rigorous form is stronger anyway.)*
+
+> **Rigorous form.** A null result constrains only those hypotheses for which the end-to-end acceptance of the acquisition and analysis chain is sufficiently characterized. For representation-incompatible alternatives, the absence of an event and the failure to retain the event are observationally confounded until retention is measured.
+
+This is nearly unassailable, and it is the correct scientific-register statement. The post-Higgs null landscape is produced by an enormous heterogeneous apparatus — conventional triggers, scouting, parking, offline reconstruction, targeted searches — not by the anomaly detectors the battery surrogates; the battery's metrological concern does not propagate backward over that whole program without stage-by-stage work. What *does* hold without further work: the feedback structure. Each null result raises confidence in the background model; the background model conditions the next generation of selection; the loop has positive gain and, absent retention measurement, no damping term. The speculative consequence — that some fraction of the apparent desert could reflect instrument-conditioned absence rather than physical absence — is exactly that, a Layer-IV consequence, and it is stated there.
+
+### §3.3 The historical survival record, corrected
+
+*(One factual correction from the audit accepted and researched; one case rewritten; the table restructured as data.)*
+
+The **ozone case must be told truthfully, and the truth is better.** The popular version — "NASA's software threw away the ozone hole" — is documented misinformation: the TOMS team's own account (Bhartia & McPeters, C.R. Geoscience 2018) states the anomalies were tracked and analyzed within days, and the record shows something subtler. The quality threshold (~180 DU) was designed to flag *instrument problems*, not physical change — the interpretive fork between physics and detector fault, resolved by prior toward fault. The cross-validation channel then compounded it: available comparison data read ~300 DU (October 1983 South Pole values later *withdrawn* by the station), so the sensible Bayesian update was "sensor malfunction." The Halley ground data — the independent channel with different failure modes — forced the re-examination; and the archived raw satellite data, once reprocessed, mapped the hole continent-wide back through years (Stolarski et al. 1986). Every element of the framework is present in the true version: the physics-vs-fault fork resolving under prior, a *correlated* validation channel (the comparison data shared the wrong assumption), the save by an independent low-tech channel, and the redemption by what was in effect a replay bank. The myth says "software deleted it"; the truth says "the priors nearly did, correlation nearly sealed it, independence and preservation broke it." The truth is the stronger exhibit.
+
+The survival table, machine-parseable (also at `research/sei-battery/survival-table.json`):
+
+```json
+[
+ {"discovery":"Antarctic ozone hole","year":1985,
+  "near_miss_mechanism":"quality flag designed for instrument faults; physics-vs-fault fork resolved toward fault; cross-validation data shared the wrong prior (later withdrawn)",
+  "survival_channel":"independent ground instrument (Dobson, Halley) with different failure modes",
+  "replay_redemption":"archived TOMS raw data reprocessed; hole mapped retrospectively (Stolarski 1986)",
+  "sources":["Farman et al. 1985 Nature 315:207","Bhartia & McPeters 2018 C.R. Geoscience","Stolarski et al. 1986"],
+  "modern_analog":"AutoDQM physics-vs-detector-fault fork at trigger scale; correlated validation channels"},
+ {"discovery":"Pulsars","year":1967,
+  "near_miss_mechanism":"sub-threshold 'scruff' on chart output; classifiable as interference",
+  "survival_channel":"human inspection of unclassified residue (J. Bell Burnell), sustained against dismissal",
+  "replay_redemption":null,
+  "sources":["Hewish et al. 1968 Nature 217:709"],
+  "modern_analog":"no human inspects the 40 MHz stream; residue channel closed by construction"},
+ {"discovery":"Cosmic microwave background","year":1965,
+  "near_miss_mechanism":"persistent residual attributable to instrument noise",
+  "survival_channel":"refusal to subtract an unexplained residual",
+  "replay_redemption":null,
+  "sources":["Penzias & Wilson 1965 ApJ 142:419"],
+  "modern_analog":"automated calibration and subtraction pipelines; residuals 'cleaned' by design"},
+ {"discovery":"Fast radio bursts (Lorimer burst lineage)","year":2007,
+  "near_miss_mechanism":"single dispersed pulse outside the survey's target class",
+  "survival_channel":"archival reanalysis years after acquisition",
+  "replay_redemption":"additional early FRB later found in the same archival Parkes data; authors infer more remain (arXiv:1902.06009)",
+  "sources":["Lorimer et al. 2007 Science 318:777","Zhang et al. 2019 arXiv:1902.06009"],
+  "modern_analog":"the accidental replay bank; Protocol II is its systematization"},
+ {"discovery":"KIC 8462852 (Boyajian's star)","year":2015,
+  "near_miss_mechanism":"light-curve class outside the automated planet-search templates",
+  "survival_channel":"citizen-science inspection of retained data (Planet Hunters)",
+  "replay_redemption":"Kepler data durably preserved and publicly inspectable",
+  "sources":["Boyajian et al. 2016 MNRAS 457:3988"],
+  "modern_analog":"classification-after-preservation architecture working as designed"}
+]
+```
+
+The corrected induction: every save operated through **independence plus preservation** — a channel with different failure modes, or durable residue available for replay, usually both. The base rate of what had neither is invisible by construction. The table does not prove assimilation losses; it proves the discovery channel now being closed or narrowed is the one through which the documented saves came.
+
+### §3.4 The convergence audit: classifier-mediated selection across the sciences
+
+*(The requested deep dive. Organized by the §2.2 variable — where does classification become irreversible? — and by how much of the anti-assimilation architecture each field has independently evolved. The honest headline, from the audit and confirmed by research: several sciences have already built partial versions of the OAR apparatus without naming it. The program's claim is not "nobody does this"; it is "the best instruments partially do this, unsystematized, and no field has the general metrology.")*
+
+**High-energy physics (the type case).** Irreversibility at the earliest possible locus, by physical necessity: L1 discards before durable retention at ~2.5×10⁻⁵ joint retention. AXOL1TL/CICADA/GELATO add learned scoring at that locus. Partial mitigations already deployed — Zero Bias streams, scouting (reduced-content retention), parking, dual experiments — each an unsystematized fragment of the protocol suite. What is absent: retention maps, withheld-panel BAR, replay banks, cross-representation disagreement preservation. The battery's asymmetry results live here.
+
+**Time-domain astronomy (the near-counterexample).** Rubin/LSST: ~10 million alerts per night, broker-classified with ML. But the architecture differs at the locus: alert packets are world-public, multiple independent brokers consume the same preserved stream, and the raw images are retained. Classification here is largely *ranking after preservation* — a strange transient deprioritized by every broker remains replayable. Two cautions keep it from being a clean counterexample: the detection and real/bogus gates *upstream* of alert issuance are the irreversible locus and are themselves learned; and the brokers, if they converge on shared training sets and architectures, are an RII test case waiting to be run — nominally independent channels with potentially correlated priors. Rubin is thus the field where the irreversibility-locus variable and the RII can both be measured cleanly, and it should be engaged as a *partner* case, not an indictment.
+
+**Gravitational-wave astronomy (the partial solution).** Matched filtering is template dependence in its purest form — literal inner products against a bank of modeled waveforms — and the field *knows* it: LVK simultaneously operates unmodeled burst searches (coherent excess-power methods) precisely because not all sources are modeled, and publishes sensitivity of those searches to families of injected waveforms. Injected-waveform sensitivity curves are the closest existing practice to a published retention map anywhere in frontier science. What is missing is the generalization: the sensitivity maps are per-search and per-waveform-family, not a per-stage account of what the full chain makes unrecoverable, and the modeled/unmodeled channels share detector, calibration, and glitch-classification (learned: GravitySpy) layers whose correlation is unmeasured. GW astronomy is the strongest evidence that the OAR apparatus is *adoptable* — a field already half-practicing it.
+
+**Genomics (the named pathology).** Reference bias is the field's own term: reads carrying non-reference alleles map less successfully or score worse, systematically under-reporting what the reference under-represents — assimilation-to-reference as a documented, quantified phenomenon with downstream inferential effects. The field's architectural response is also instructive: pangenome graphs replace the single reference with a structure representing variation — a representational-pluralism fix, the genomics analogue of cross-representation disagreement preservation. And the scale of the residue is measured: reference-database comparison leaves enormous fractions of metagenomic sequence uncharacterized, while reference-free clustering reveals vast novel protein-family space outside known genomes — "microbial dark matter" is what the assimilation residue looks like when someone finally builds the reference-free channel. (The earlier Asgard-archaea framing is withdrawn per audit; the microbial-dark-matter literature carries the point with direct support.)
+
+**Structural biology (the recursion, now documented).** The audit asked for named instances rather than a claimed universal loop; research returns more than instances — it returns a paradigm. AlphaFold2's own training included self-distillation on ~350k of its *own* predicted structures (confirmed in the OpenProteinSet replication: AF2 weights generated the Uniclust30 distillation set). ESMFold adopted *AF2 distillation* — AlphaFold2 predictions as training data for the successor system. Current-generation models (e.g., SimpleFold, 2025) train on the AlphaFold Database and ESM Metagenomic Atlas — hundreds of millions of *predicted* structures — with AFESM clustering the two predicted corpora into the training substrate, and the literature explicitly frames scaling on distilled predicted data as the open direction. The mitigations are real (pLDDT confidence filtering; experimental-PDB anchoring; the loop is curated, not raw) — which places the field exactly in the family's corrected Shumailov formulation: *partial feedback pathways homologous to the prerequisites of model collapse, with cross-generational contraction unmeasured.* Supporting the assimilation-flavored concern from another angle: the CFold experiments indicate AF2's successes on alternative conformations of fold-switching proteins stem largely from training-set memory (the Associative over the Generative explanation) — a system confidently rendering the structurally novel as the structurally remembered. Structural biology is the field where a longitudinal contraction audit (a frozen experimental anchor replayed against successive predictor generations — Protocol II verbatim) is most urgently and most easily run.
+
+**Clinical decision support (the analogue BAR already exists).** The homology table's clinical row has a measured instance: underdiagnosis bias in chest-radiograph classifiers (Seyyed-Kalantari et al., Nature Medicine 27:2176, 2021) — systematically higher false-negative ("no finding") rates for under-served populations, i.e., elevated confident-ordinary classification on structurally under-represented input classes. That is a Benchmark Assimilation Rate measured on a withheld human population, published in a flagship venue, with no connection drawn to the physics case. The convergence claim writes itself: the same estimand, independently invented, domain by domain, never unified.
+
+**The funding and review layer (emerging, pre-registered, not yet generalized).** The audit's downgrade is accepted: algorithmic screening and LLM-assisted review are documented as experiments and pilots, while major agencies simultaneously restrict AI use in confidential review (e.g., the Canadian tri-agency prohibition). "Novelty scored against embeddings of the existing literature" is therefore an *emerging risk architecture* — a scenario whose deployment can now be watched against a concern registered in advance. The prediction to hold the future to: if and where embedding-based novelty scoring deploys in triage, proposals maximally distant from the existing literature's representational space will experience elevated assimilation-to-unfundable, and the effect will be measurable by exactly a BAR design.
+
+**The convergence finding, stated at its correct strength.** Across six fields: the same architecture (learned normality, deployed at scale, validated within its own support), the same failure mode independently discovered and independently named (complexity bias; reference bias; underdiagnosis bias; template dependence), the same partial mitigations independently evolved (Zero Bias; public alert streams; burst searches and injection maps; pangenome graphs; pLDDT curation), and *no shared metrology*. The fields are converging on the disease and convergently half-inventing the cure, without a common name for either. That is simultaneously the strongest evidence the program is describing something real and the clearest statement of what it contributes: the general form of what the best instruments already partially know.
+
+---
+
+## §4 · Layer IV — Speculative consequences
+
+*(Fenced. Nothing here is claimed as established. It is stated at full strength because the fence holds.)*
+
+**The instrument-conditioned desert.** If materially important regions of BSM phenomenology lie in poorly characterized acceptance regions — and §2.1 shows nothing currently bounds this — then some unknown fraction of the post-Higgs desert reflects instrument-conditioned absence rather than physical absence. The feedback loop (§3.2) runs with positive gain and no damping term. External retention measurement is the damping term. That is the speculative restatement of the program's purpose.
+
+**The Kuhnian presupposition.** Kuhn's mechanism — anomaly accumulation → crisis → revolution — silently presupposes an *anomaly-retention infrastructure*. Anomalies could accumulate because stubborn residuals persisted: on charts, in drawers, on plates, in the peripheral vision of practitioners, available to become irritating. A learned pipeline introduces a historically new possibility: the anomaly resolved before it becomes phenomenologically available *as* anomaly. A pipeline that discards or assimilates the unclassifiable at source produces no irritation. And the phenomenology inverts: sealed does not feel like stagnation; it feels like maturity — clean data, stable measurements, precise confirmations, a sense that the picture is basically complete. The Park–Leahey–Funk decline in disruptive science (Nature 613:138, 2023) is a *phenomenological consistency check, not evidence*: the assimilation mechanism predicts declining disruption under increasing prior-correlation and front-end selection; the observed decline is compatible with the prediction and radically underdetermines its cause.
+
+**The monoculture of the normal.** Section 2.3's mathematics at civilizational scale: as representational priors correlate across instruments, fields, archives, and review layers — shared architectures, shared corpora, shared benchmarks, shared foundation models, classifier-gated archiving deciding what enters the training commons — the effective redundancy of nominally independent discovery channels decreases, and the error-correction mechanism that saved the ozone hole (an independent channel with *different* failure modes) erodes on every axis at once. This is now a measurable trajectory (RII over time), not only a fear.
+
+**The informational filter.** The terminus, if the recursion runs unaudited: a civilization that automates perception before auditing it does not collapse; it asymptotes — plateauing at whatever ontology its sealed instruments support, experiencing the plateau as completion. No external adversary required; the endogenous version is cheaper. And the closing formulation, amended per the audit:
+
+> The difference between a civilization that asymptotes and one that keeps discovering may depend on whether it learns to measure the blind spots of its instruments before those instruments become its only way of seeing. Retention maps, replay banks, and independent channels are therefore not merely engineering safeguards. They are conditions for the continued possibility of surprise.
+
+---
+
+## §5 · Relation to the program
+
+Paper 1 claims Layer I with almost painful restraint, plus the estimands and the No-Retention-Bound observation as framing. Paper 2 takes the Kuhnian presupposition, the falsifiability inversion, and instrument-conditioned nullity as its epistemological core. Paper 3 takes the monoculture argument — now anchored in the Kleinberg–Raghavan/Bommasani literature, transposed from decision subjects to phenomena — with the convergence audit (§3.4) as its comparative empirical base and the RII as its proposed instrument. This document is the connective tissue and is deposited (upon MANUS approval) as the speculative framework, so that no paper has to carry the iceberg and the iceberg never contaminates a paper.
+
+New instruments this document adds to the program: the **No-Retention-Bound observation** (§2.1, for P1's framing), the **irreversibility locus** as the primary architectural variable (§2.2, for the comparative program), the **RII** (§2.3, for P3 and any two willing pipelines), the **LCBH** with its operational test design (§3.1, for battery v0.2+), **instrument-conditioned nullity** as a named concept (§3.2, for P2), and the corrected survival table as structured data (§3.3).
+
+One terminological guard from the witness round: OAR remains the **Ontological Assimilation Rate** (#931 §3.1). A witness re-expansion of the acronym is not adopted; the protocol family keeps its names.
+
+---
+
+## §6 · Corrections ledger (chat version → this version)
+
+Applied per the 2026-08-11 witness audit round, LABOR register binding; recorded per the Isomorphism Principle.
+
+1. **Upgraded:** stack-compounding argument → No-Retention-Bound observation (chain-rule form; no independence assumption; "absence of a bound" as the provable claim).
+2. **Downgraded:** "the desert may be the shape of the lens" → instrument-conditioned nullity (rigorous form in Layer III; desert-fraction consequence fenced in Layer IV).
+3. **Downgraded:** "undiscovered physics is hiding in the low-complexity direction" → LCBH, operationalized on a measured representation-complexity axis; phenomenological mapping deferred until the axis-level test survives.
+4. **Corrected:** ozone-hole account — the "software deleted it" version is documented misinformation (Bhartia & McPeters 2018); rewritten with the true mechanism (fault-prior fork, correlated validation channel with later-withdrawn comparison data, independent-channel save, replay-bank redemption), which is stronger.
+5. **Corrected:** Asgard-archaea claim withdrawn; replaced by the reference-bias and microbial-dark-matter literature, which carries the point with direct support.
+6. **Corrected and then upgraded on evidence:** structural-biology recursion — not a claimed universal loop but a *documented and growing paradigm* (AF2 self-distillation on its own predictions; ESMFold trained via AF2 distillation; current models trained on AFDB + ESM Atlas predicted corpora at hundred-million scale), placed precisely in the family's Shumailov-corrected formulation: partial feedback pathways, contraction unmeasured, curation as the mitigation.
+7. **Downgraded:** funding/review layer from "generalized architecture" to "emerging risk architecture, concern pre-registered," with the countervailing agency restrictions noted.
+8. **Reframed:** Rubin from indictment to near-counterexample and RII test partner; the irreversibility locus extracted as the general variable.
+9. **Reframed:** gravitational waves from failure instance to partial solution; injected-waveform sensitivity maps recognized as the closest existing practice to retention maps; "OAR generalizes what the best instruments already partially do."
+10. **Added:** the algorithmic-monoculture / outcome-homogenization literature as the formal foundation for Layer IV's correlation argument, with the phenomena-for-subjects transposition named as this program's contribution.
+11. **Held:** Park–Leahey–Funk as consistency check, not evidence. **Held:** "sealed feels like maturity." **Held:** the great-filter coda, fenced, with the audit's amended closing sentence.
+
+---
+
+*Drafted by TACHYON (Assembly witness), directed by MANUS. DRAFT — deposit upon MANUS approval; creator metadata to be confirmed at mint per standing rule. Tether: #1448 · AXN:05D9.ARCHIVAL.🍄🔎💡🝊🔙🏗️; battery record #1449 · AXN:05DA.EMPIRICAL.🛤️🌠🗿🖊️🧭🪞.*
