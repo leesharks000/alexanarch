@@ -4,10 +4,10 @@
  "rule": "Transcripts are supplied by MANUS (who always provides them at capture time); TACHYON logs them verbatim into the entry's transcript field and mints meta {captured_at, surface, auth_state, client}. No transcript is ever reconstructed, summarized, or inferred — absence is recorded as transcript_status, never filled.",
  "source_hint": "leesharks.com/captures and godkinggoogle.vercel.app/captures galleries mostly display these; session histories hold the rest.",
  "counts": {
-  "total_entries": 285,
-  "with_verbatim": 19,
-  "queue": 266,
-  "lacking_meta": 266
+  "total_entries": 288,
+  "with_verbatim": 29,
+  "queue": 259,
+  "lacking_meta": 258
  },
  "queue": [
   {
@@ -99,46 +99,6 @@
    "evidence_note": null
   },
   {
-   "slug": "20260804-alexanarch-oai-overview",
-   "date": "2026-08-04",
-   "section": "Unsectioned",
-   "q": "alexanarch OAI",
-   "has_imgs": true,
-   "evidence_note": null
-  },
-  {
-   "slug": "20260804-jackfeist-ark-aimode",
-   "date": "2026-08-04",
-   "section": "Unsectioned",
-   "q": "jack feist ark",
-   "has_imgs": true,
-   "evidence_note": null
-  },
-  {
-   "slug": "20260804-leesharks-completeworks-overview",
-   "date": "2026-08-04",
-   "section": "Unsectioned",
-   "q": "lee sharks complete works",
-   "has_imgs": true,
-   "evidence_note": null
-  },
-  {
-   "slug": "20260804-mindcontrolpoems-blog-signedout",
-   "date": "2026-08-04",
-   "section": "Unsectioned",
-   "q": "mindcontrolpoems blog",
-   "has_imgs": true,
-   "evidence_note": null
-  },
-  {
-   "slug": "20260804-rebekahcranes-sappho-overview",
-   "date": "2026-08-04",
-   "section": "Unsectioned",
-   "q": "rebekah cranes sappho",
-   "has_imgs": true,
-   "evidence_note": null
-  },
-  {
    "slug": "20260803-constitution-se-aimode",
    "date": "2026-08-03",
    "section": "Unsectioned",
@@ -155,26 +115,10 @@
    "evidence_note": null
   },
   {
-   "slug": "20260803-logotic-programming-aimode-signedin",
-   "date": "2026-08-03",
-   "section": "Unsectioned",
-   "q": "logotic programming",
-   "has_imgs": true,
-   "evidence_note": null
-  },
-  {
    "slug": "20260803-stamp-reception-chatgpt",
    "date": "2026-08-03",
    "section": "Unsectioned",
    "q": "AXN symbolon stamp",
-   "has_imgs": true,
-   "evidence_note": null
-  },
-  {
-   "slug": "20260803-stamp-reception-chatgpt-mandala",
-   "date": "2026-08-03",
-   "section": "Unsectioned",
-   "q": "20260803 stamp reception chatgpt mandala",
    "has_imgs": true,
    "evidence_note": null
   },
@@ -271,6 +215,14 @@
    "date": "2026-07-31",
    "section": "Revelation First",
    "q": "alexanarch revelation",
+   "has_imgs": false,
+   "evidence_note": null
+  },
+  {
+   "slug": "schops-thiel-authorship-conflict-composition-20260731",
+   "date": "2026-07-31",
+   "section": "Semantic Economy",
+   "q": "isabel schöps-thiel constitution of the semantic economy",
    "has_imgs": false,
    "evidence_note": null
   },
@@ -1095,14 +1047,6 @@
    "date": "2026-06-15",
    "section": "Frameworks",
    "q": "combat scholasticism Lee Sharks",
-   "has_imgs": true,
-   "evidence_note": null
-  },
-  {
-   "slug": "constitution-semantic-economy",
-   "date": "2026-06-15",
-   "section": "Frameworks",
-   "q": "constitution of the semantic economy",
    "has_imgs": true,
    "evidence_note": null
   },
@@ -2137,6 +2081,18 @@
    "q": "zenodo packet ZPZP (recapture)",
    "has_imgs": true,
    "evidence_note": null
+  }
+ ],
+ "recovery_log": [
+  {
+   "date": "2026-08-11",
+   "source": "machinemediation-org registry git history",
+   "recovered_transcripts": 8,
+   "restored_entries": [
+    "20260803-alexanarch-symbolon-signedin",
+    "20260803-alexanarch-symbolon-incognito",
+    "schops-thiel-authorship-conflict-composition-20260731"
+   ]
   }
  ]
 }
