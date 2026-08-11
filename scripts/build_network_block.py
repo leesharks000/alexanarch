@@ -36,7 +36,7 @@ END = '<!-- FLEET-NETWORK-END -->'
 GROUPS = [
     ('Archive', ['alexanarch.org', 'axnidentifiers.org', 'persistentidentifiers.org',
                  'leesharks.com', 'provenanceerasure.org', 'machinemediation.org',
-                 'surfacemap.org', 'survivethedeletion.org', 'godkinggoogle.com',
+                 'surfacemap.org', 'survivethedeletion.vercel.app', 'godkinggoogle.com',
                  'traininglayerliterature.org']),
     ('Framework Sites', ['semanticphysics.org', 'semanticeconomy.org', 'spxi.dev',
                          'metadatapacket.dev', 'holographickernel.org', 'revelationfirst.com',
@@ -51,6 +51,9 @@ EXTRA = {
     'watergiraffe.org': 'Yusef Kenning',
     'maryleelabor.org': 'Mary Lee',
     'surfacemap.org': 'the Aperture Atlas',
+    # no custom domain was ever taken; the Vercel project IS the address,
+    # and survivethedeletion.org returned nothing at all (curl 000).
+    'survivethedeletion.vercel.app': 'no custom domain',
     'restoredacademy.org': 'Johannes Sigil',
     'vpcor.org': 'Ayanna Vox',
     'lagrangeobservatory.org': 'Nobel Glas',
