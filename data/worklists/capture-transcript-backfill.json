@@ -2303,5 +2303,94 @@
    "citations_backfilled": 5
   }
  ],
- "thread_trawl_protocol": "PROVEN METHOD (2026-08-11): each capture batch was written up in a Claude session thread that contains the full verbatim transcripts — either seated in the entry-construction code or in the analysis prose. To recover a batch: (1) take the batch date from this queue; (2) conversation_search on the batch's distinctive query terms plus 'TRANSCRIPT' or 'capture'; (3) read_conversation at the hit and extract the transcript blocks verbatim; (4) write them into the entries' transcript fields with meta.transcript_provenance naming the thread and date; never reconstruct, never summarize. The 2026-08-09 batch was recovered this way from thread 2449623a (2026-08-10). Remaining queue proceeds batch-by-batch, newest first. Captures whose transcripts were only ever supplied on other substrates (ChatGPT-side sessions etc.) need MANUS export and are flagged when identified."
+ "thread_trawl_protocol": "PROVEN METHOD (2026-08-11): each capture batch was written up in a Claude session thread that contains the full verbatim transcripts — either seated in the entry-construction code or in the analysis prose. To recover a batch: (1) take the batch date from this queue; (2) conversation_search on the batch's distinctive query terms plus 'TRANSCRIPT' or 'capture'; (3) read_conversation at the hit and extract the transcript blocks verbatim; (4) write them into the entries' transcript fields with meta.transcript_provenance naming the thread and date; never reconstruct, never summarize. The 2026-08-09 batch was recovered this way from thread 2449623a (2026-08-10). Remaining queue proceeds batch-by-batch, newest first. Captures whose transcripts were only ever supplied on other substrates (ChatGPT-side sessions etc.) need MANUS export and are flagged when identified. EXACT-MATCH PROBES (MANUS, 2026-08-11): all MANUS-pasted Google transcripts end with the footer 'AI can make mistakes, so double-check responses' — conversation_search on that exact string surfaces the paste-bearing threads directly, bypassing write-up threads. A second footer variant exists on some pastes: 'AI responses may include mistakes. For financial advice, consult a professional.' Probe both. DATE-SENSITIVE MATCHING (mandatory): the registry holds multiple captures of the same query at different dates; a recovered transcript is matched to an entry by query AND capture date (thread date bounds the capture date from above), and where the date cannot be established from the thread, the transcript is seated with transcript_provenance noting the ambiguity and the entry match is confirmed with MANUS before write. Never match on query alone.",
+ "thread_recovery_map": {
+  "note": "Paste-bearing threads located by footer probe 2026-08-11. Each row: thread, thread date, transcripts sighted in search snippets (query terms), candidate queue matches. Next sessions: read_conversation per row, extract verbatim, date-match, seat.",
+  "rows": [
+   {
+    "thread": "05916dae-12ba-4908-b386-22de58727603",
+    "thread_date": "2026-04-01",
+    "sighted": [
+     "operative philology (AI Mode, incognito)",
+     "operative semiotics (AI Overview)"
+    ],
+    "queue_candidates": "pre-registry-era or early captures; check queue for operative philology/semiotics slugs; may be new-entry material"
+   },
+   {
+    "thread": "efb11d91-2013-4208-81da-f548caeac29c",
+    "thread_date": "2026-01-13",
+    "sighted": [
+     "Rebekah Cranes / Sigil Institute 'real scholarship' (Gemini; variant footer)"
+    ],
+    "queue_candidates": "Heteronyms section, early; possibly pre-registry"
+   },
+   {
+    "thread": "e29f3300-674a-4957-b598-3bfdc214ab1b",
+    "thread_date": "2026-04-11",
+    "sighted": [
+     "'i hereby abolish money' exact-match-only (zero retrieval; French Revolution substitution)"
+    ],
+    "queue_candidates": "i-hereby-abolish-* family; date-match against April entries"
+   },
+   {
+    "thread": "dae5db24-7221-4c77-a706-29923710a529",
+    "thread_date": "2026-04-20",
+    "sighted": [
+     "spxi (SPXI definitional w/ SPXI-vs-GEO)",
+     "spxi (financial ETF page, no overview)"
+    ],
+    "queue_candidates": "spxi-protocol and related; date-match April"
+   },
+   {
+    "thread": "db6d1a69-406a-4a3e-9c3e-3f110fed1ff2",
+    "thread_date": "2026-05-05",
+    "sighted": [
+     "Isabel Schöps / Lee Sharks association (contamination render)"
+    ],
+    "queue_candidates": "schops-thiel-* (restored entry 2026-07-31 is a DIFFERENT capture date — date rule applies)"
+   },
+   {
+    "thread": "2c0732ec-fb35-4697-9d0a-c996832f7e51",
+    "thread_date": "2026-06-18",
+    "sighted": [
+     "'Johannine aperture' (+2 chips, full answer)",
+     "Revelation First workplan sources"
+    ],
+    "queue_candidates": "Revelation First section June entries; johannine-aperture slug if present"
+   },
+   {
+    "thread": "ca6d8595-2247-49a5-aa2f-8fd6f615c944",
+    "thread_date": "2026-07-18",
+    "sighted": [
+     "semantic economy (Overview w/ GitHub+Medium+Academia sources, genre-of-record crystallization)"
+    ],
+    "queue_candidates": "Semantic Economy July entries; date-match 07-18 vs other semantic-economy capture dates"
+   },
+   {
+    "thread": "2edf9dc4-5f92-48fc-be8d-ea18f89ba9e4",
+    "thread_date": "2026-08-06",
+    "sighted": [
+     "CERN/Zenodo account-deletion debate (Overview citing leesharks.com/research, alexanarch wiki, Medium, GitHub)"
+    ],
+    "queue_candidates": "criticisms-of-cern-lee-sharks-aimode-20260805 or an 08-06 sibling — date rule decides"
+   },
+   {
+    "thread": "2449623a-10db-4fd2-90cd-8ecde6c1ba2d",
+    "thread_date": "2026-08-10",
+    "sighted": [
+     "2026-08-09 batch (RECOVERED)"
+    ],
+    "queue_candidates": "done"
+   },
+   {
+    "thread": "7aac888f-9b9f-4292-a657-e04384afc174",
+    "thread_date": "2026-08-10",
+    "sighted": [
+     "OAI endpoint transcript seating (RECOVERED via variant header)"
+    ],
+    "queue_candidates": "done"
+   }
+  ]
+ },
+ "overwrite_finding": "MANUS reports transcripts were present at some point and specifically overwritten; repo-history exact-match trawl (git log -S on both footers, all fleet repos, full histories) returns ZERO hits — full pastes never reached any commit. The loss is therefore session-side: pastes were condensed into write-ups before data entry. Standing consequence: from v9.41 the transcript field is a completeness requirement, and the paste is seated verbatim BEFORE any write-up prose is composed."
 }
