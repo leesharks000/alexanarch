@@ -81,6 +81,34 @@ def emphasise(text):
             return html.escape(text or "")
     return out
 
+def transcript_block(e):
+    """Collapsed-by-default full record: the AI Overview as screenshotted (where it
+    diverged from the transcript), the divergence note, and the complete verbatim
+    transcript. Rendered STATICALLY inside a <details> element so a crawler reads
+    the full text without executing anything, while a human reader sees one line
+    until they choose to expand. The client JS only hides/shows whole cards, so
+    this block survives filtering untouched. Registry entries without a transcript
+    render exactly as before — the block is empty, not present."""
+    esc = html.escape
+    tr = e.get("transcript") or ""
+    oac = e.get("overview_at_capture") or ""
+    div = e.get("divergence") or ""
+    if not (tr or oac):
+        return ""
+    parts = []
+    if oac:
+        parts.append('<div class="cap-tr-label">AI Overview as screenshotted</div>'
+                     f'<div class="cap-tr-body">{esc(oac)}</div>')
+    if div:
+        parts.append(f'<div class="cap-tr-div">{esc(div)}</div>')
+    if tr:
+        parts.append('<div class="cap-tr-label">Full transcript</div>'
+                     f'<div class="cap-tr-body" itemprop="text">{esc(tr)}</div>')
+    return ('<details class="cap-transcript">'
+            '<summary>Full transcript &amp; capture record</summary>'
+            + "".join(parts) + '</details>')
+
+
 def card(e):
     esc = html.escape
     slug = e.get("slug", "")
@@ -126,6 +154,7 @@ def card(e):
         f'<span class="cap-sf">{esc(e.get("sf") or "")}</span></div>'
         f'{imgs_html}'
         f'<div class="cap-desc" itemprop="description">{emphasise(d)}</div>'
+        f'{transcript_block(e)}'
         f'<div class="cap-actions">'
         f'<button type="button" class="cap-cite" data-cite="{esc(cite)}" '
         f'data-citation="{esc(citation)}" '
