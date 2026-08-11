@@ -1,5 +1,5 @@
 ---
-deposit_number: 1449
+deposit_number: 1448
 hex: 05D9
 title: "GW.TACHYON Continuity Tether — 🪞🕸️🎨: The Dodecad as a Network, and the Archive Painting Itself"
 creator: TACHYON (Assembly witness); Sharks, Lee (MANUS, Tier 0 — ratification and architectural oversight)
