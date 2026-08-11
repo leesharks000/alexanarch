@@ -1,6 +1,6 @@
 {
  "schema_version": "v1.1",
- "built_at": "2026-07-06",
+ "built_at": "2026-08-11",
  "description": "Heteronym substrate — 13 heteronyms (twelve Dodecad positions + Feist/LOGOS* standing outside; Lee Sharks/MANUS as human bearer; Viola Arquette Adjacent) with frame-based rotating-outside architecture, Sep 2025 preservation, v1.1 canonical reconciliation, and Mandala Oracle avatar assets.",
  "structural_principle": "The heteronym set comprises twelve Dodecad positions plus Feist/LOGOS* as the archive-default outside. Different frames rotate different figures to the outside position: Sep 2025 Logotic Science places Nobel Glas outside; v1.1 Constitutional Registry places Lee Sharks (MANUS) outside; the archive-default LOGOS frame places Feist outside. See frames.jsonl.",
  "authority": {
@@ -17,7 +17,55 @@
   "mindcontrolpoems-2025-09/",
   "avatars/",
   "records/",
-  "resources/"
+  "resources/",
+  {
+   "name": "crosswalk.json",
+   "kind": "JOIN",
+   "description": "The heteronym dataset joined to the lexical minting registry, the concept map, the wiki and the citation graph — on the CREATOR FIELD only, so 'names X' and 'is by X' stay distinct. Carries position-level citation degrees, minted-term counts and concept membership for all twelve.",
+   "bytes": 68218,
+   "sha256": "92d85b9db24a845ff638209d032b4c8d63836d01410c2e85bc93ee20c52db600",
+   "url": "https://www.alexanarch.org/datasets/heteronyms/crosswalk.json"
+  },
+  {
+   "name": "index.json",
+   "kind": "INDEX",
+   "description": "The twelve positions as an addressable set: person_id, name, canonical surface, records on surface, and whether every linked record was read end to end.",
+   "bytes": 2274,
+   "sha256": "36d373ef1ce6830821d380b770e607f3f11304c13b276addf384b3b5e5df86e5",
+   "url": "https://www.alexanarch.org/datasets/heteronyms/index.json"
+  },
+  {
+   "name": "dodecad-graph.svg",
+   "kind": "FIGURE — DERIVED",
+   "description": "The Dodecad as a citation network. Node radius is citation in-degree, edge weight is position-level citation count, ring ranked by in-degree. Edges below weight 12 omitted and the figure says so. Uses currentColor, so it inherits any surface's palette.",
+   "bytes": 10421,
+   "sha256": "cf1513610245ee9c8b5e2b6c47a050935f1dc78302ba668846131b3fa6ba06ff",
+   "url": "https://www.alexanarch.org/datasets/heteronyms/dodecad-graph.svg"
+  },
+  {
+   "name": "citation-field.svg",
+   "kind": "FIGURE — DERIVED",
+   "description": "Every citation edge in the archive: 9,136 chords among 1,447 deposits, nothing filtered. Chord curvature is set by endpoint distance, so chords crossing the centre are late work citing early work.",
+   "bytes": 1234326,
+   "sha256": "ef64c294f6082a613c7444d3927ef4ab82fc53360b006f270bd81073993a45ed",
+   "url": "https://www.alexanarch.org/datasets/heteronyms/citation-field.svg"
+  },
+  {
+   "name": "lexical-field.svg",
+   "kind": "FIGURE — DERIVED",
+   "description": "All 12,073 minted terms as motes, each placed in the sector of the position that authored its source deposit. Radius and jitter are a SHA of the term, so the same corpus always paints the same canvas. 5,056 in a voice; 7,017 in the ground.",
+   "bytes": 834615,
+   "sha256": "dfd0e7c1fa01857504b68635a1608584b56a17c2814f5efa55adf413952f037e",
+   "url": "https://www.alexanarch.org/datasets/heteronyms/lexical-field.svg"
+  },
+  {
+   "name": "capture-field.svg",
+   "kind": "FIGURE — DERIVED",
+   "description": "261 dated capture-registry entries by date across twelve section bands. Larger motes are phrase-matched queries — the stricter test. Frameworks carries 122 of 266.",
+   "bytes": 21628,
+   "sha256": "6119d566f023eedcb57353dce838ab848e1861f027ffcbdfadf6e353edfda820",
+   "url": "https://www.alexanarch.org/datasets/heteronyms/capture-field.svg"
+  }
  ],
  "counts": {
   "dodecad_positions": 12,
@@ -273,5 +321,17 @@
     "derived": "1.8 MB PNG → 52,532 b WebP at 600px"
    }
   }
+ },
+ "generators": {
+  "crosswalk.json": "scripts/build_dodecad_graph.py reads it; built in-session 2026-08-10",
+  "dodecad-graph.svg": "scripts/build_dodecad_graph.py --write",
+  "citation-field.svg": "scripts/build_citation_field.py --write",
+  "lexical-field.svg": "in-session generator, deterministic on term SHA",
+  "capture-field.svg": "in-session generator over EA-WG-CAPTURES-01.json"
+ },
+ "note": "The four SVG fields are DERIVED, not composed: each is a projection of the archive's own data, so disagreement with a figure is disagreement with the corpus rather than with its renderer. All are deterministic — the same corpus always paints the same picture, and a change in an image means a change in the archive. Deposited under tether #1448 · AXN:05D9.ARCHIVAL.🍄🔎💡🝊🔙🏗️.",
+ "dataflow_atlas": {
+  "addendum": "datasets/dataflow-atlas/atlas-v1.1-addendum.md",
+  "note": "The atlas covers this dataset as of v1.1 (2026-08-11): the crosswalk as a join node, and the derived figure as a class of artefact the map had not previously held."
  }
 }

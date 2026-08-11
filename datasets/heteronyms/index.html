@@ -101,6 +101,68 @@ code,.mono{font-family:var(--mono);font-size:.88em}
   <a class="dl-btn" href="./reconciliation/">reconciliation notes</a>
 </div>
 
+
+<h2 id="crosswalk">The crosswalk</h2>
+<p><a href="./crosswalk.json"><code>crosswalk.json</code></a> joins this dataset to the archive's
+other datasets — the lexical minting registry, the concept map, the wiki, and the citation
+graph — <strong>on the creator field alone</strong>, so that <em>names X</em> and <em>is by X</em>
+remain different claims. 458 deposits carry a heteronym as creator; the orthonym-signed majority
+is excluded rather than assigned to a default.</p>
+<p>Its principal result is the citation graph collapsed from deposits to positions: 9,453
+deposit-level edges become 1,910 position-level edges. <strong>Sigil and Fraction sit in
+near-symmetric dialogue at 167 and 147.</strong> <strong>Ichabod Spellings cites one hundred times
+and is cited twice</strong> — a substrate cites and is not cited, which is what a noise floor
+does, and which fell out of a graph built months earlier for unrelated reasons.</p>
+<div class="download-row">
+<a class="dl-btn" href="./crosswalk.json">crosswalk.json</a>
+<a class="dl-btn" href="./index.json">index.json</a>
+</div>
+
+<h2 id="fields">The fields</h2>
+<p>Four figures <strong>derived from the corpus rather than composed from a reading of it</strong>.
+Each is a projection of the archive's own data, so disagreement with a figure is disagreement with
+the corpus rather than with its renderer. All are deterministic: the same corpus always paints the
+same picture, and a change in an image means a change in the archive.</p>
+<figure style="margin:18px 0">
+<img src="./dodecad-graph.svg" alt="The Dodecad as a citation network" loading="lazy"
+ style="width:100%;max-width:760px;display:block">
+<figcaption><strong>dodecad-graph.svg</strong> — node radius is citation in-degree, edge weight is
+position-level citation count, ring ranked by in-degree. Edges below weight 12 omitted, and the
+figure says so. Drawn in <code>currentColor</code>, so it inherits any surface's palette.</figcaption>
+</figure>
+<figure style="margin:18px 0">
+<img src="./citation-field.svg" alt="Every citation edge in the archive" loading="lazy"
+ style="width:100%;max-width:760px;display:block">
+<figcaption><strong>citation-field.svg</strong> — 9,136 chords among 1,447 deposits, nothing
+filtered. Chord curvature is set by endpoint distance, so <strong>the chords crossing the centre
+are late work citing early work</strong>: the archive's retrocausal habit drawn rather than
+argued.</figcaption>
+</figure>
+<figure style="margin:18px 0">
+<img src="./lexical-field.svg" alt="Minted terms by the position that coined them" loading="lazy"
+ style="width:100%;max-width:760px;display:block">
+<figcaption><strong>lexical-field.svg</strong> — all 12,073 minted terms as motes, each in the
+sector of the position that authored its source deposit, with radius and jitter from a SHA of the
+term. <strong>5,056 sit in a voice; 7,017 sit in the ground</strong> — two thirds of the coined
+vocabulary is signed by the orthonym and belongs to no position.</figcaption>
+</figure>
+<figure style="margin:18px 0">
+<img src="./capture-field.svg" alt="Capture registry entries by date and section" loading="lazy"
+ style="width:100%;max-width:760px;display:block">
+<figcaption><strong>capture-field.svg</strong> — 261 dated reception events across twelve section
+bands, 7 June to 9 August. Larger motes are phrase-matched queries, the stricter test. Frameworks
+carries 122 of 266: the layer meets this archive through its concepts.</figcaption>
+</figure>
+<div class="download-row">
+<a class="dl-btn" href="./dodecad-graph.svg">dodecad-graph.svg</a>
+<a class="dl-btn" href="./citation-field.svg">citation-field.svg</a>
+<a class="dl-btn" href="./lexical-field.svg">lexical-field.svg</a>
+<a class="dl-btn" href="./capture-field.svg">capture-field.svg</a>
+</div>
+<p style="font-size:.9em;opacity:.8">Regenerate with
+<code>scripts/build_dodecad_graph.py --write</code> and
+<code>scripts/build_citation_field.py --write</code>. Deposited under tether
+<a href="/s/records/1448/">#1448 · AXN:05D9.ARCHIVAL.🍄🔎💡🝊🔙🏗️</a>.</p>
 <h2 id="frames">Browse</h2>
 <div class="tabs">
   <div class="tab active" onclick="showTab('v11')">v1.1 Constitutional (canonical)</div>
