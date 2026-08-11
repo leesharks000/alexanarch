@@ -37,6 +37,7 @@ GROUPS = [
     ('Archive', ['alexanarch.org', 'axnidentifiers.org', 'persistentidentifiers.org',
                  'leesharks.com', 'provenanceerasure.org', 'machinemediation.org',
                  'surfacemap.org', 'survivethedeletion.vercel.app', 'godkinggoogle.com',
+                 'crimsonhexagonal.org',
                  'traininglayerliterature.org']),
     ('Framework Sites', ['semanticphysics.org', 'semanticeconomy.org', 'spxi.dev',
                          'metadatapacket.dev', 'holographickernel.org', 'revelationfirst.com',
@@ -54,6 +55,7 @@ EXTRA = {
     # no custom domain was ever taken; the Vercel project IS the address,
     # and survivethedeletion.org returned nothing at all (curl 000).
     'survivethedeletion.vercel.app': 'no custom domain',
+    'crimsonhexagonal.org': 'the interface',
     'restoredacademy.org': 'Johannes Sigil',
     'vpcor.org': 'Ayanna Vox',
     'lagrangeobservatory.org': 'Nobel Glas',
