@@ -1678,7 +1678,7 @@ The body advertises a snapshot of more than 88 nodes and 135 edges. Those figure
 
 <p>    const b = Math.floor(107 + (48-107) * v);</p>
 
-<p>    return `rgb(${r},${g},${b})`;</p>
+<p>    return <code>rgb(${r},${g},${b})</code>;</p>
 
 <p>  }</p>
 
@@ -1803,11 +1803,11 @@ The body advertises a snapshot of more than 88 nodes and 135 edges. Those figure
 
 <p>  const tn = nodes.find(n =&gt; n.id === getId(edge.target));</p>
 
-<p>  const subj = sn?.properties?.wikidataQ || `[CREATE: ${sn?.label}]`;</p>
+<p>  const subj = sn?.properties?.wikidataQ || <code>[CREATE: ${sn?.label}]</code>;</p>
 
-<p>  const obj = tn?.properties?.wikidataQ || `[CREATE: ${tn?.label}]`;</p>
+<p>  const obj = tn?.properties?.wikidataQ || <code>[CREATE: ${tn?.label}]</code>;</p>
 
-<p>  return `${subj}\t${edge.type}\t${obj}`;</p>
+<p>  return <code>${subj}\t${edge.type}\t${obj}</code>;</p>
 
 <p>}</p>
 
@@ -1826,9 +1826,9 @@ The body advertises a snapshot of more than 88 nodes and 135 edges. Those figure
 
 <p>  (d?.nodes || []).forEach((n,i) =&gt; {</p>
 
-<p>    if (!n.id) errs.push(`Node[${i}] missing id`);</p>
+<p>    if (!n.id) errs.push(<code>Node[${i}] missing id</code>);</p>
 
-<p>    if (!TYPE_COLORS[n.type]) errs.push(`Node[${n.id||i}] invalid type: ${n.type}`);</p>
+<p>    if (!TYPE_COLORS[n.type]) errs.push(<code>Node[${n.id||i}] invalid type: ${n.type}</code>);</p>
 
 <p>  });</p>
 
@@ -1903,7 +1903,7 @@ The body advertises a snapshot of more than 88 nodes and 135 edges. Those figure
 
 <p>        if (errs.length) {</p>
 
-<p>          setError(`Topology validation: ${errs.length} errors. Showing partial data.`);</p>
+<p>          setError(<code>Topology validation: ${errs.length} errors. Showing partial data.</code>);</p>
 
 <p>        }</p>
 
@@ -1915,7 +1915,7 @@ The body advertises a snapshot of more than 88 nodes and 135 edges. Those figure
 
 <p>        console.warn(&#x27;topology-source.json unavailable, using DATA_SEED.&#x27;, err.message);</p>
 
-<p>        setError(`topology-source.json unavailable (${err.message}). Showing seed data — full topology requires JSON deploy.`);</p>
+<p>        setError(<code>topology-source.json unavailable (${err.message}). Showing seed data — full topology requires JSON deploy.</code>);</p>
 
 <p>        setData(DATA_SEED);</p>
 
@@ -2371,7 +2371,7 @@ The body advertises a snapshot of more than 88 nodes and 135 edges. Those figure
 
 <p>      } else if (d.subtype === &#x27;heteronym&#x27;) {</p>
 
-<p>        sel.append(&#x27;polygon&#x27;).attr(&#x27;class&#x27;,&#x27;main-shape&#x27;).attr(&#x27;points&#x27;, `0,-${r} ${r},0 0,${r} -${r},0`);</p>
+<p>        sel.append(&#x27;polygon&#x27;).attr(&#x27;class&#x27;,&#x27;main-shape&#x27;).attr(&#x27;points&#x27;, <code>0,-${r} ${r},0 0,${r} -${r},0</code>);</p>
 
 <p>      } else if (d.subtype === &#x27;aiWitness&#x27;) {</p>
 
@@ -2438,7 +2438,7 @@ The body advertises a snapshot of more than 88 nodes and 135 edges. Those figure
 
 <p>        &lt;div class=&quot;meta&quot;&gt;${d.status} · auth ${d.authority||0}${d.basinState ? &#x27; · &#x27;+d.basinState : &#x27;&#x27;}${vuln!=null ? &#x27; · vuln &#x27;+vuln.toFixed(2) : &#x27;&#x27;}&lt;/div&gt;</p>
 
-<p>        ${d.url ? `&lt;div class=&quot;meta&quot;&gt;${d.url.length&gt;56 ? d.url.slice(0,54)+&#x27;…&#x27; : d.url}&lt;/div&gt;` : &#x27;&#x27;}`;</p>
+<p>        ${d.url ? <code>&lt;div class=&quot;meta&quot;&gt;${d.url.length&gt;56 ? d.url.slice(0,54)+&#x27;…&#x27; : d.url}&lt;/div&gt;</code> : &#x27;&#x27;}`;</p>
 
 <p>    }).on(&#x27;mousemove&#x27;, (ev) =&gt; {</p>
 
@@ -2481,7 +2481,7 @@ The body advertises a snapshot of more than 88 nodes and 135 edges. Those figure
 
 <p>          .attr(&#x27;x2&#x27;, d =&gt; d.target.x).attr(&#x27;y2&#x27;, d =&gt; d.target.y);</p>
 
-<p>      node.attr(&#x27;transform&#x27;, d =&gt; `translate(${d.x},${d.y})`);</p>
+<p>      node.attr(&#x27;transform&#x27;, d =&gt; <code>translate(${d.x},${d.y})</code>);</p>
 
 <p>    });</p>
 
@@ -2717,7 +2717,7 @@ The body advertises a snapshot of more than 88 nodes and 135 edges. Those figure
 
 <p>        }),</p>
 
-<p>        search &amp;&amp; e(&#x27;div&#x27;, { className: &#x27;search-meta&#x27; }, `${searchMatches} match${searchMatches===1?&#x27;&#x27;:&#x27;es&#x27;}`),</p>
+<p>        search &amp;&amp; e(&#x27;div&#x27;, { className: &#x27;search-meta&#x27; }, <code>${searchMatches} match${searchMatches===1?&#x27;&#x27;:&#x27;es&#x27;}</code>),</p>
 
 
 <p>        e(&#x27;h2&#x27;, null, &#x27;View Mode&#x27;),</p>
@@ -2795,7 +2795,7 @@ The body advertises a snapshot of more than 88 nodes and 135 edges. Those figure
 
 <p>            return e(&#x27;div&#x27;, { className: &#x27;path-result&#x27; },</p>
 
-<p>              `${path.length} step${path.length===1?&#x27;&#x27;:&#x27;s&#x27;}:`,</p>
+<p>              <code>${path.length} step${path.length===1?&#x27;&#x27;:&#x27;s&#x27;}:</code>,</p>
 
 <p>              ...nodeIds.map((id, i) =&gt; {</p>
 
@@ -2862,7 +2862,7 @@ The body advertises a snapshot of more than 88 nodes and 135 edges. Those figure
 
 <p>        // Lost Nodes panel (ChatGPT)</p>
 
-<p>        lostNodes.length &gt; 0 &amp;&amp; e(&#x27;h2&#x27;, null, `Lost Nodes (${lostNodes.length})`),</p>
+<p>        lostNodes.length &gt; 0 &amp;&amp; e(&#x27;h2&#x27;, null, <code>Lost Nodes (${lostNodes.length})</code>),</p>
 
 <p>        lostNodes.length &gt; 0 &amp;&amp; e(&#x27;div&#x27;, { className: &#x27;lost-summary&#x27; },</p>
 
@@ -3033,7 +3033,7 @@ The body advertises a snapshot of more than 88 nodes and 135 edges. Those figure
 
 <p>      e(&#x27;span&#x27;, { style: { fontFamily:&#x27;var(--mono)&#x27;, fontSize:&#x27;0.62rem&#x27;, color:&#x27;var(--text-dim)&#x27;, alignSelf:&#x27;center&#x27;, marginLeft:6 }},</p>
 
-<p>        `${historyIdx+1} / ${history.length}`)</p>
+<p>        <code>${historyIdx+1} / ${history.length}</code>)</p>
 
 <p>    ),</p>
 
@@ -3228,7 +3228,7 @@ The body advertises a snapshot of more than 88 nodes and 135 edges. Those figure
 
 <p>      e(&#x27;code&#x27;, { style: { fontSize: &#x27;0.62rem&#x27;, display: &#x27;block&#x27;, background: &#x27;var(--bg2)&#x27;, padding: 8, color: &#x27;var(--text-dim)&#x27;, lineHeight: 1.5, borderRadius: 2 }},</p>
 
-<p>        `atlas.getNode(&quot;${node.id}&quot;)`)</p>
+<p>        <code>atlas.getNode(&quot;${node.id}&quot;)</code>)</p>
 
 <p>    )</p>
 
