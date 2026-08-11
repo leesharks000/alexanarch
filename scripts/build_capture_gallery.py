@@ -61,6 +61,26 @@ def image_urls(e):
     return out
 
 
+
+# Ten of the 266 findings carry <strong> and <em> in their body — deliberate
+# emphasis written by the analyst, marking the exact phrase the layer returned.
+# Blanket-escaping them printed the tags as literal text on the card, which is
+# the opposite of what emphasis is for. This escapes everything, then restores
+# ONLY those four tags. Nothing else survives: no attributes, no other element,
+# no unbalanced tag. Any richer markup in a future entry renders as text, which
+# is the safe direction to fail.
+_EMPH = re.compile(r'&lt;(/?)(strong|em|b|i)&gt;')
+
+
+def emphasise(text):
+    out = html.escape(text or "")
+    out = _EMPH.sub(r'<\1\2>', out)
+    # a lone opening tag would leak into the rest of the card
+    for t in ("strong", "em", "b", "i"):
+        if out.count(f"<{t}>") != out.count(f"</{t}>"):
+            return html.escape(text or "")
+    return out
+
 def card(e):
     esc = html.escape
     slug = e.get("slug", "")
@@ -105,7 +125,7 @@ def card(e):
         f'<span class="cap-status cap-status-{esc(mt.split()[0].lower())}">{esc(mt)}</span>'
         f'<span class="cap-sf">{esc(e.get("sf") or "")}</span></div>'
         f'{imgs_html}'
-        f'<div class="cap-desc" itemprop="description">{esc(d)}</div>'
+        f'<div class="cap-desc" itemprop="description">{emphasise(d)}</div>'
         f'<div class="cap-actions">'
         f'<button type="button" class="cap-cite" data-cite="{esc(cite)}" '
         f'data-citation="{esc(citation)}" '
