@@ -426,6 +426,39 @@ def distill_full(teacher, Xtr, Xbkg_ev, Xwith_ev, seed):
 # expensive one. WNAE remains NOT RUN.
 # ─────────────────────────────────────────────────────────────────────────────
 
+# ─────────────────────────────────────────────────────────────────────────────
+# T9 PRE-REGISTRATION — written and committed 2026-08-12 BEFORE any T9 run.
+# CHAIN-LENGTH LADDER ON THE CONSTITUENT REPRESENTATION.
+#
+# WHY. T8 found the published NAE reduces directional asymmetry on the LHCO
+# pairs with a converged sampler (energy ratio 0.95-0.98), but on the 120-dim
+# constituent pair the ratio was 0.48 — the chain had not equilibrated, so that
+# cell was reported UNINTERPRETABLE rather than as a failure of the remedy.
+# T9 asks whether the constituent cell becomes interpretable with a longer
+# chain, and whether the inversion survives if it does.
+#
+# DESIGN. Constituent pair only. K_latent = K_input in {20, 40, 80}, all other
+# settings identical to T8 (three seeds, epochs 3, 15,000 training events per
+# class, eta 0.05, sigma 0.05, buffer 1024). Report per rung: the convergence
+# diagnostic, AUC both directions, and D_A at both alphas.
+#
+# REGISTERED PREDICTIONS, stated before running:
+#   (1) The energy ratio rises monotonically with chain length and reaches the
+#       0.9-1.0 band the LHCO cells occupied by K = 80.
+#   (2) IF a rung reaches that band, the constituent inversion PERSISTS there —
+#       AUC Q on P stays below 0.5 — because T8's LHCO cells showed the remedy
+#       shrinking asymmetry without reversing an inversion, and the constituent
+#       inversion is far deeper than any asymmetry the remedy corrected.
+#   Prediction (2) is the substantive one. If a converged rung shows AUC Q on P
+#   at or above 0.5, the published remedy DOES prevent the inversion and every
+#   inversion claim in this program is bounded to non-normalized scores.
+#
+# OUTCOME CONDITIONS. If no rung reaches the band, T9 reports that the
+# constituent cell remains uninterpretable at feasible chain lengths on this
+# compute, and the question is deferred rather than answered — a null about the
+# sampler, not about the remedy.
+# ─────────────────────────────────────────────────────────────────────────────
+
 def main(which):
     R = load_state()
     t0 = time.time()
@@ -945,6 +978,92 @@ def main(which):
             print('T8 %-3s AUC %.3f / %.3f  D_A@1e-2 %+.4f  energy_ratio %.2f  (%.0fs)' % (
                 pname, r_['auc_P_on_Q']['mean'], r_['auc_Q_on_P']['mean'],
                 r_['D_A@0.01']['mean'], r_['convergence_diagnostic']['mean_ratio'], time.time() - t0), flush=True)
+            save(R)
+    if which == 'T9':
+        R['tests'].setdefault('T9_chain_ladder', {})
+        P, Q = PAIRS['T1']
+        for K in [int(x) for x in os.environ.get('T9_K', '20,40,80').split(',')]:
+            key = 'K=%d' % K
+            if key in R['tests']['T9_chain_ladder']:
+                continue
+            os.environ['T8_K'] = str(K)
+            per, ratios = [], []
+            ETA, SIG, BUF, EPOCHS, NTR9 = 0.05, 0.05, 1024, 3, 15000
+
+            def train_pub(X, seed, d):
+                torch.manual_seed(seed); g = torch.Generator().manual_seed(seed)
+                Xt = torch.tensor(X)
+                m = train_net(AE(d), X, epochs=8, seed=seed)
+                energy = lambda z: ((m(z) - z) ** 2).mean(1)
+                dec = m.dec; zdim = m.enc[-1].out_features
+                zbuf = torch.randn(BUF, zdim, generator=g)
+                opt = torch.optim.Adam(m.parameters(), lr=5e-4)
+                diag = {}
+                for ep in range(EPOCHS):
+                    perm = torch.randperm(len(Xt), generator=g)
+                    for i in range(0, len(Xt), 512):
+                        xb = Xt[perm[i:i + 512]]; nb = xb.shape[0]
+                        bidx = torch.randint(0, BUF, (nb,), generator=g)
+                        z = zbuf[bidx].clone().requires_grad_(True)
+                        for _ in range(K):
+                            xz = dec(z); ez = ((m(xz) - xz) ** 2).mean(1).sum()
+                            gz = torch.autograd.grad(ez, z)[0]
+                            with torch.no_grad():
+                                z = z - ETA * gz + SIG * torch.randn(z.shape, generator=g)
+                            z.requires_grad_(True)
+                        with torch.no_grad():
+                            zbuf[bidx] = z.detach(); neg = dec(z.detach())
+                        neg = neg.requires_grad_(True)
+                        for _ in range(K):
+                            gx = torch.autograd.grad(energy(neg).sum(), neg)[0]
+                            with torch.no_grad():
+                                neg = neg - ETA * gx + SIG * torch.randn(neg.shape, generator=g)
+                            neg.requires_grad_(True)
+                        neg = neg.detach()
+                        opt.zero_grad()
+                        e_pos, e_neg = energy(xb), energy(neg)
+                        (e_pos.mean() - e_neg.mean() + 0.1 * (e_pos ** 2).mean()).backward()
+                        opt.step()
+                        diag = {'e_data': float(e_pos.mean().detach()), 'e_neg': float(e_neg.mean().detach())}
+                diag['ratio'] = diag['e_neg'] / (diag['e_data'] + 1e-12)
+                return m, diag
+
+            def mk(Xtr, seed):
+                mu, sd = Xtr.mean(0), Xtr.std(0) + 1e-6
+                m, diag = train_pub((Xtr - mu) / sd, seed, Xtr.shape[1])
+                return {'m': m, 'mu': mu, 'sd': sd, 'diag': diag}
+
+            def sc(s_, X):
+                Z = torch.tensor((X - s_['mu']) / s_['sd'])
+                with torch.no_grad():
+                    return ((s_['m'](Z) - Z) ** 2).mean(1).numpy()
+
+            for s_ in SEEDS[:3]:
+                Ptr, Pcal, Pev = split(P, NTR9, 20000, NEV, s_)
+                Qtr, Qcal, Qev = split(Q, NTR9, 20000, NEV, s_)
+                sP, sQ = mk(Ptr, s_), mk(Qtr, s_)
+                ratios += [sP['diag']['ratio'], sQ['diag']['ratio']]
+                sPcal, sPev, sPQ = sc(sP, Pcal), sc(sP, Pev), sc(sP, Qev)
+                sQcal, sQev, sQP = sc(sQ, Qcal), sc(sQ, Qev), sc(sQ, Pev)
+                row = {'auc_P_on_Q': round(auc(sPev, sPQ), 4), 'auc_Q_on_P': round(auc(sQev, sQP), 4)}
+                for a in ALPHAS:
+                    tP, tQ = np.quantile(sPcal, 1 - a), np.quantile(sQcal, 1 - a)
+                    aPQ, aQP = float(np.mean(sPQ <= tP)), float(np.mean(sQP <= tQ))
+                    row['D_A@%g' % a] = round(aPQ - aQP, 4)
+                per.append(row)
+            mr = float(np.mean(ratios))
+            R['tests']['T9_chain_ladder'][key] = {
+                'K_latent': K, 'K_input': K, 'seeds': SEEDS[:3], 'epochs': EPOCHS,
+                'train_events_per_class': NTR9,
+                'energy_ratio_mean': round(mr, 3),
+                'energy_ratio_values': [round(r_, 3) for r_ in ratios],
+                'converged_band': bool(0.85 <= mr <= 1.15),
+                **{k: {'mean': round(float(np.mean([d[k] for d in per])), 4),
+                       'seed_values': [d[k] for d in per]} for k in per[0]}}
+            r_ = R['tests']['T9_chain_ladder'][key]
+            print('T9 %-6s ratio %.2f (band %s) | AUC %.3f / %.3f | D_A@1e-2 %+.4f  (%.0fs)' % (
+                key, mr, r_['converged_band'], r_['auc_P_on_Q']['mean'],
+                r_['auc_Q_on_P']['mean'], r_['D_A@0.01']['mean'], time.time() - t0), flush=True)
             save(R)
     save(R)
     print('elapsed %.0fs' % (time.time() - t0))
