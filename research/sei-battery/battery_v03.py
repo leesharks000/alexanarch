@@ -459,6 +459,41 @@ def distill_full(teacher, Xtr, Xbkg_ev, Xwith_ev, seed):
 # sampler, not about the remedy.
 # ─────────────────────────────────────────────────────────────────────────────
 
+# ─────────────────────────────────────────────────────────────────────────────
+# T10 PRE-REGISTRATION — written and committed 2026-08-12 BEFORE any T10 run.
+# STEP-SIZE AND NOISE-SCALE SWEEP ON THE CONSTITUENT REPRESENTATION.
+#
+# WHY. T9 ruled out chain length: the energy ratio sat at 0.40-0.48 across
+# K = 20, 40, 80 and never approached the 0.9-1.0 band the LHCO cells reached.
+# T9's own verdict named the next diagnostic — the Langevin step size and noise
+# scale, or the on-manifold decode in 120 dimensions — rather than more steps.
+# This is that sweep. It is a SAMPLER diagnostic, not a test of the remedy.
+#
+# DESIGN. Constituent pair, K = 20 fixed (T9 showed K is not binding), three
+# seeds, all else as T8. Grid over (eta, sigma):
+#   eta   in {0.01, 0.05, 0.20}
+#   sigma in {0.01, 0.05, 0.20}
+# Nine cells; report the energy ratio for each, plus AUC both directions and
+# D_A for any cell that lands in band.
+#
+# REGISTERED PREDICTIONS:
+#   (1) At least one (eta, sigma) cell reaches the 0.85-1.15 band. The ratio
+#       being pinned near 0.4 across chain lengths is the signature of a chain
+#       that equilibrates quickly to the WRONG stationary distribution, which
+#       is a step-size and noise problem, so the grid should move it.
+#   (2) The ratio increases with sigma at fixed eta — larger injected noise
+#       pushes negatives away from the low-energy manifold the decode places
+#       them on.
+#   (3) SUBSTANTIVE, conditional: in any cell that lands in band, the
+#       constituent inversion persists (AUC Q on P below 0.5).
+#
+# OUTCOME CONDITION. If no cell reaches the band, the on-manifold construction
+# itself — not its hyperparameters — is implicated on 120-dim constituents, and
+# the correct report is that this battery cannot make the constituent cell
+# interpretable at all, with the reason localised to the decode rather than
+# left vague. That would be a stronger and more useful null than T9's.
+# ─────────────────────────────────────────────────────────────────────────────
+
 def main(which):
     R = load_state()
     t0 = time.time()
@@ -1065,6 +1100,85 @@ def main(which):
                 key, mr, r_['converged_band'], r_['auc_P_on_Q']['mean'],
                 r_['auc_Q_on_P']['mean'], r_['D_A@0.01']['mean'], time.time() - t0), flush=True)
             save(R)
+    if which == 'T10':
+        R['tests'].setdefault('T10_sampler_sweep', {})
+        P, Q = PAIRS['T1']
+        K, BUF, EPOCHS, NTR10 = 20, 1024, 3, 15000
+        ETAS = [float(x) for x in os.environ.get('T10_ETA', '0.01,0.05,0.2').split(',')]
+        SIGS = [float(x) for x in os.environ.get('T10_SIG', '0.01,0.05,0.2').split(',')]
+
+        def train_pub(X, seed, d, eta, sig):
+            torch.manual_seed(seed); g = torch.Generator().manual_seed(seed)
+            Xt = torch.tensor(X)
+            m = train_net(AE(d), X, epochs=8, seed=seed)
+            energy = lambda z: ((m(z) - z) ** 2).mean(1)
+            dec = m.dec; zdim = m.enc[-1].out_features
+            zbuf = torch.randn(BUF, zdim, generator=g)
+            opt = torch.optim.Adam(m.parameters(), lr=5e-4)
+            diag = {}
+            for ep in range(EPOCHS):
+                perm = torch.randperm(len(Xt), generator=g)
+                for i in range(0, len(Xt), 512):
+                    xb = Xt[perm[i:i + 512]]; nb = xb.shape[0]
+                    bidx = torch.randint(0, BUF, (nb,), generator=g)
+                    z = zbuf[bidx].clone().requires_grad_(True)
+                    for _ in range(K):
+                        xz = dec(z); ez = ((m(xz) - xz) ** 2).mean(1).sum()
+                        gz = torch.autograd.grad(ez, z)[0]
+                        with torch.no_grad():
+                            z = z - eta * gz + sig * torch.randn(z.shape, generator=g)
+                        z.requires_grad_(True)
+                    with torch.no_grad():
+                        zbuf[bidx] = z.detach(); neg = dec(z.detach())
+                    neg = neg.requires_grad_(True)
+                    for _ in range(K):
+                        gx = torch.autograd.grad(energy(neg).sum(), neg)[0]
+                        with torch.no_grad():
+                            neg = neg - eta * gx + sig * torch.randn(neg.shape, generator=g)
+                        neg.requires_grad_(True)
+                    neg = neg.detach()
+                    opt.zero_grad()
+                    e_pos, e_neg = energy(xb), energy(neg)
+                    (e_pos.mean() - e_neg.mean() + 0.1 * (e_pos ** 2).mean()).backward()
+                    opt.step()
+                    diag = {'e_data': float(e_pos.mean().detach()), 'e_neg': float(e_neg.mean().detach())}
+            diag['ratio'] = diag['e_neg'] / (diag['e_data'] + 1e-12)
+            return m, diag
+
+        for eta in ETAS:
+            for sig in SIGS:
+                key = 'eta=%g,sigma=%g' % (eta, sig)
+                if key in R['tests']['T10_sampler_sweep']:
+                    continue
+                per, ratios = [], []
+                for s_ in SEEDS[:3]:
+                    Ptr, Pcal, Pev = split(P, NTR10, 20000, NEV, s_)
+                    Qtr, Qcal, Qev = split(Q, NTR10, 20000, NEV, s_)
+                    out = {}
+                    for tag, tr in (('P', Ptr), ('Q', Qtr)):
+                        mu, sd = tr.mean(0), tr.std(0) + 1e-6
+                        m, diag = train_pub((tr - mu) / sd, s_, tr.shape[1], eta, sig)
+                        out[tag] = {'m': m, 'mu': mu, 'sd': sd}; ratios.append(diag['ratio'])
+                    sc = lambda s_d, X: ((s_d['m'](torch.tensor((X - s_d['mu']) / s_d['sd']))
+                                          - torch.tensor((X - s_d['mu']) / s_d['sd'])) ** 2).mean(1).detach().numpy()
+                    with torch.no_grad():
+                        sPcal, sPev, sPQ = sc(out['P'], Pcal), sc(out['P'], Pev), sc(out['P'], Qev)
+                        sQcal, sQev, sQP = sc(out['Q'], Qcal), sc(out['Q'], Qev), sc(out['Q'], Pev)
+                    row = {'auc_P_on_Q': round(auc(sPev, sPQ), 4), 'auc_Q_on_P': round(auc(sQev, sQP), 4)}
+                    tP, tQ = np.quantile(sPcal, 0.99), np.quantile(sQcal, 0.99)
+                    row['D_A@0.01'] = round(float(np.mean(sPQ <= tP)) - float(np.mean(sQP <= tQ)), 4)
+                    per.append(row)
+                mr = float(np.mean(ratios))
+                R['tests']['T10_sampler_sweep'][key] = {
+                    'eta': eta, 'sigma': sig, 'K': K, 'seeds': SEEDS[:3],
+                    'energy_ratio_mean': round(mr, 3),
+                    'in_band': bool(0.85 <= mr <= 1.15),
+                    **{k: {'mean': round(float(np.mean([d[k] for d in per])), 4)} for k in per[0]}}
+                r_ = R['tests']['T10_sampler_sweep'][key]
+                print('T10 %-18s ratio %6.3f  band %-5s | AUC %.3f / %.3f  (%.0fs)' % (
+                    key, mr, r_['in_band'], r_['auc_P_on_Q']['mean'], r_['auc_Q_on_P']['mean'],
+                    time.time() - t0), flush=True)
+                save(R)
     save(R)
     print('elapsed %.0fs' % (time.time() - t0))
 
