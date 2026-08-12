@@ -494,6 +494,41 @@ def distill_full(teacher, Xtr, Xbkg_ev, Xwith_ev, seed):
 # left vague. That would be a stronger and more useful null than T9's.
 # ─────────────────────────────────────────────────────────────────────────────
 
+# ─────────────────────────────────────────────────────────────────────────────
+# T10 PRE-REGISTRATION — written and committed 2026-08-12 BEFORE any T10 run.
+# STEP-SIZE AND NOISE-SCALE SWEEP ON THE CONSTITUENT REPRESENTATION.
+#
+# WHY. T9 ruled out chain length: energy ratios sat at 0.40-0.48 across K = 20,
+# 40, 80, never reaching the 0.85-1.15 band the LHCO cells occupied. The
+# negatives are persistently at roughly half the data energy no matter how long
+# the chain runs, which points at the sampler's step geometry rather than at
+# mixing time. T10 sweeps that geometry.
+#
+# DESIGN. Constituent pair only, K fixed at the registered 20, three seeds,
+# everything else as in T8. Grid over Langevin step size eta and noise sigma:
+#   eta   in {0.01, 0.05, 0.20}
+#   sigma in {0.01, 0.05, 0.20}
+# Nine cells. Report per cell: energy ratio, whether it lands in band, AUC both
+# directions, D_A at both alphas.
+#
+# REGISTERED PREDICTIONS, stated before running:
+#   (1) At least one cell of the nine reaches the 0.85-1.15 band. The specific
+#       expectation is that LARGER eta is what does it — the chain is not
+#       descending far enough per step in 120 dimensions — with sigma mattering
+#       less.
+#   (2) In any cell that reaches the band, the constituent inversion PERSISTS
+#       (AUC Q on P below 0.5). This is the same substantive prediction T9 could
+#       not test, carried forward unchanged.
+#
+# OUTCOME CONDITIONS. If no cell reaches the band, the constituent
+# representation is recorded as one where this implementation of the published
+# construction does not equilibrate under any tested geometry, and the question
+# of whether the remedy prevents inversion there is CLOSED FOR THIS BATTERY and
+# handed to anyone with the collaboration's compute. That is a null about our
+# implementation, stated as such, and it is the honest end of this line rather
+# than a further ladder.
+# ─────────────────────────────────────────────────────────────────────────────
+
 def main(which):
     R = load_state()
     t0 = time.time()
@@ -1179,6 +1214,92 @@ def main(which):
                     key, mr, r_['in_band'], r_['auc_P_on_Q']['mean'], r_['auc_Q_on_P']['mean'],
                     time.time() - t0), flush=True)
                 save(R)
+    if which == 'T10':
+        R['tests'].setdefault('T10_sampler_geometry', {})
+        P, Q = PAIRS['T1']
+        K, BUF, EPOCHS, NTR10 = 20, 1024, 3, 15000
+        grid = [(e, sg) for e in (0.01, 0.05, 0.20) for sg in (0.01, 0.05, 0.20)]
+        only = os.environ.get('T10_CELLS')
+        if only:
+            want = set(only.split(','))
+            grid = [g for g in grid if 'eta%g_sig%g' % g in want]
+        for ETA, SIG in grid:
+            key = 'eta%g_sig%g' % (ETA, SIG)
+            if key in R['tests']['T10_sampler_geometry']:
+                continue
+
+            def train_pub(X, seed, d):
+                torch.manual_seed(seed); g = torch.Generator().manual_seed(seed)
+                Xt = torch.tensor(X)
+                m = train_net(AE(d), X, epochs=8, seed=seed)
+                energy = lambda z: ((m(z) - z) ** 2).mean(1)
+                dec = m.dec; zdim = m.enc[-1].out_features
+                zbuf = torch.randn(BUF, zdim, generator=g)
+                opt = torch.optim.Adam(m.parameters(), lr=5e-4)
+                diag = {}
+                for ep in range(EPOCHS):
+                    perm = torch.randperm(len(Xt), generator=g)
+                    for i in range(0, len(Xt), 512):
+                        xb = Xt[perm[i:i + 512]]; nb = xb.shape[0]
+                        bidx = torch.randint(0, BUF, (nb,), generator=g)
+                        z = zbuf[bidx].clone().requires_grad_(True)
+                        for _ in range(K):
+                            xz = dec(z); ez = ((m(xz) - xz) ** 2).mean(1).sum()
+                            gz = torch.autograd.grad(ez, z)[0]
+                            with torch.no_grad():
+                                z = z - ETA * gz + SIG * torch.randn(z.shape, generator=g)
+                            z.requires_grad_(True)
+                        with torch.no_grad():
+                            zbuf[bidx] = z.detach(); neg = dec(z.detach())
+                        neg = neg.requires_grad_(True)
+                        for _ in range(K):
+                            gx = torch.autograd.grad(energy(neg).sum(), neg)[0]
+                            with torch.no_grad():
+                                neg = neg - ETA * gx + SIG * torch.randn(neg.shape, generator=g)
+                            neg.requires_grad_(True)
+                        neg = neg.detach()
+                        opt.zero_grad()
+                        e_pos, e_neg = energy(xb), energy(neg)
+                        (e_pos.mean() - e_neg.mean() + 0.1 * (e_pos ** 2).mean()).backward()
+                        opt.step()
+                        diag = {'e_data': float(e_pos.mean().detach()), 'e_neg': float(e_neg.mean().detach())}
+                diag['ratio'] = diag['e_neg'] / (diag['e_data'] + 1e-12)
+                return m, diag
+
+            def mk(Xtr, seed):
+                mu, sd = Xtr.mean(0), Xtr.std(0) + 1e-6
+                m, diag = train_pub((Xtr - mu) / sd, seed, Xtr.shape[1])
+                return {'m': m, 'mu': mu, 'sd': sd, 'diag': diag}
+
+            def sc(s_, X):
+                Z = torch.tensor((X - s_['mu']) / s_['sd'])
+                with torch.no_grad():
+                    return ((s_['m'](Z) - Z) ** 2).mean(1).numpy()
+
+            per, ratios = [], []
+            for s_ in SEEDS[:3]:
+                Ptr, Pcal, Pev = split(P, NTR10, 20000, NEV, s_)
+                Qtr, Qcal, Qev = split(Q, NTR10, 20000, NEV, s_)
+                sP, sQ = mk(Ptr, s_), mk(Qtr, s_)
+                ratios += [sP['diag']['ratio'], sQ['diag']['ratio']]
+                sPcal, sPev, sPQ = sc(sP, Pcal), sc(sP, Pev), sc(sP, Qev)
+                sQcal, sQev, sQP = sc(sQ, Qcal), sc(sQ, Qev), sc(sQ, Pev)
+                row = {'auc_P_on_Q': round(auc(sPev, sPQ), 4), 'auc_Q_on_P': round(auc(sQev, sQP), 4)}
+                for a in ALPHAS:
+                    tP, tQ = np.quantile(sPcal, 1 - a), np.quantile(sQcal, 1 - a)
+                    row['D_A@%g' % a] = round(float(np.mean(sPQ <= tP)) - float(np.mean(sQP <= tQ)), 4)
+                per.append(row)
+            mr = float(np.mean(ratios))
+            R['tests']['T10_sampler_geometry'][key] = {
+                'eta': ETA, 'sigma': SIG, 'K': K, 'seeds': SEEDS[:3],
+                'energy_ratio_mean': round(mr, 3), 'converged_band': bool(0.85 <= mr <= 1.15),
+                **{k: {'mean': round(float(np.mean([d[k] for d in per])), 4),
+                       'seed_values': [d[k] for d in per]} for k in per[0]}}
+            r_ = R['tests']['T10_sampler_geometry'][key]
+            print('T10 %-16s ratio %6.2f band %-5s | AUC %.3f / %.3f | D_A %+.4f  (%.0fs)' % (
+                key, mr, r_['converged_band'], r_['auc_P_on_Q']['mean'],
+                r_['auc_Q_on_P']['mean'], r_['D_A@0.01']['mean'], time.time() - t0), flush=True)
+            save(R)
     save(R)
     print('elapsed %.0fs' % (time.time() - t0))
 
