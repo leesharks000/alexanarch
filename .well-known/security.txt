@@ -1,0 +1,51 @@
+# Alexanarch — security and integrity contact
+# RFC 9116. https://www.rfc-editor.org/rfc/rfc9116
+#
+# Alexanarch is a static, self-governing archive of machine-mediated
+# scholarship. It has no user accounts, no login, no database and no
+# server-side execution: every surface is a file, and every deposit carries a
+# content-derived AXN identifier whose glyphs are computed from the SHA-256 of
+# the deposit's own bytes. The most useful report is therefore usually not a
+# vulnerability in the ordinary sense but an INTEGRITY defect — a record whose
+# bytes no longer match its identifier, a surface that disagrees with the
+# registry, or a link that resolves somewhere it should not.
+
+Contact: https://github.com/leesharks000/alexanarch/issues
+Contact: mailto:leesharks00@gmail.com
+Expires: 2027-08-12T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://www.alexanarch.org/.well-known/security.txt
+Policy: https://www.alexanarch.org/manifest/
+Acknowledgments: https://www.alexanarch.org/s/browse/
+
+# WHAT IS WORTH REPORTING
+#
+# 1. Integrity: a deposit whose content does not hash to the AXN it carries.
+#    Verify independently — the identifier is derived from the bytes, so this
+#    is checkable by anyone without trusting the archive:
+#      curl -s https://www.alexanarch.org/data/texts/AXN-XXXX-text.md | sha256sum
+#    Cross-check against data/registry.json and SHA256SUMS.txt.
+#
+# 2. Surface disagreement: any machine-facing surface reporting a different
+#    extent from data/registry.json. These are meant to agree, and a gate
+#    (scripts/check_surface_synchrony.py) enforces it. A disagreement in the
+#    wild means the gate was bypassed.
+#
+# 3. Identifier collision or resolution failure in the AXN or DOI resolution
+#    indices.
+#
+# 4. Ordinary web security issues: header misconfiguration, injection in a
+#    rendered surface, exposure of anything that should not be public.
+#
+# NOT A VULNERABILITY
+#
+# Machine-composed content quoted inside deposits is EVIDENCE and is reproduced
+# deliberately, including where it is wrong about the archive. Screenshots and
+# transcripts of AI systems misdescribing this work are the archive's subject
+# matter, not defects in it.
+#
+# DISCLOSURE
+#
+# There is no bounty and no legal threat. Report publicly in the issue tracker
+# if the finding is not itself sensitive; report privately by email if it is.
+# Findings are credited unless the reporter asks otherwise.

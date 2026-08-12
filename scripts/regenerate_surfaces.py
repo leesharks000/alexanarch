@@ -75,7 +75,7 @@ except ImportError:
     _OVERWRITE_GUARD_AVAILABLE = False
 
 HOMEPAGE_RECENT_N = 12  # must equal the JS slice in index.html
-ALL_SURFACES = ["state", "browse", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index", "search-index", "search-static", "dynamic-counts", "semantic-addresses"]
+ALL_SURFACES = ["state", "browse", "feed", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index", "search-index", "search-static", "dynamic-counts", "semantic-addresses"]
 
 
 def _receipt(path, reason: str = "regenerate_surfaces write"):
@@ -487,6 +487,77 @@ STATIC_URLS = [
     ("https://www.alexanarch.org/AGENTS.md", 0.4),
     ("https://www.alexanarch.org/DEPOSIT-FLOW.md", 0.4),
 ]
+
+
+
+def regenerate_feed(reg, dry_run=False):
+    """Atom 1.0 feed of the most recent deposits at /feed.xml.
+
+    2026-08-12: an external audit looked for /feed.xml and found nothing. The
+    archive publishes a sitemap, an OAI-PMH endpoint, ResourceSync and a JSON
+    index — every machine-facing surface EXCEPT the one a plain feed reader
+    speaks. Syndication is the oldest and least demanding way for a follower to
+    learn that something new exists, and it costs one file.
+
+    Atom rather than RSS: it requires an explicit updated timestamp per entry
+    and a stable id, both of which the registry already carries, and it does not
+    invite the date-format ambiguity RSS 2.0 tolerates.
+    """
+    feed_n = 50
+    deposits = sorted(reg['deposits'], key=lambda d: d.get('deposit_number', 0))
+    active = [d for d in deposits if d.get('status', 'ACTIVE') != 'SUPERSEDED']
+    recent = list(reversed(active[-feed_n:]))
+    if not recent:
+        print("  ⚠ no deposits — skipping feed")
+        return
+
+    def esc(x):
+        return esc_html(str(x or ''))
+
+    newest_date = recent[0].get('date') or datetime.now(timezone.utc).strftime('%Y-%m-%d')
+    updated = '%sT00:00:00Z' % newest_date
+    lines = [
+        '<?xml version="1.0" encoding="utf-8"?>',
+        '<feed xmlns="http://www.w3.org/2005/Atom">',
+        '  <title>Alexanarch — recent deposits</title>',
+        '  <subtitle>The self-governing library for machine-mediated scholarship. '
+        'Content-derived AXN identifiers; every deposit auditable.</subtitle>',
+        '  <link href="https://www.alexanarch.org/feed.xml" rel="self" type="application/atom+xml"/>',
+        '  <link href="https://www.alexanarch.org/" rel="alternate" type="text/html"/>',
+        '  <id>https://www.alexanarch.org/</id>',
+        '  <updated>%s</updated>' % updated,
+        '  <generator uri="https://github.com/leesharks000/alexanarch">scripts/regenerate_surfaces.py</generator>',
+        '  <rights>Deposits carry their own licences; see each record.</rights>',
+    ]
+    for d in recent:
+        n = d.get('deposit_number', 0)
+        url = 'https://www.alexanarch.org/s/records/%d/' % n
+        date = d.get('date') or newest_date
+        desc = (d.get('description', '') or '')[:600]
+        if len(d.get('description', '') or '') > 600:
+            desc += '…'
+        lines += [
+            '  <entry>',
+            '    <title>%s</title>' % esc(d.get('title', '(untitled)')),
+            '    <link href="%s" rel="alternate" type="text/html"/>' % url,
+            # The AXN is the archive's own identifier and is content-derived, so it
+            # is the honest atom:id — stable, and independent of the URL scheme.
+            '    <id>urn:axn:%s</id>' % esc(d.get('axn', str(n))),
+            '    <updated>%sT00:00:00Z</updated>' % esc(date),
+            '    <author><name>%s</name></author>' % esc(d.get('creator', 'Alexanarch')),
+            '    <category term="%s"/>' % esc(d.get('content_type', '')),
+            '    <summary type="text">%s</summary>' % esc(desc),
+            '  </entry>',
+        ]
+    lines.append('</feed>')
+    out = '\n'.join(lines) + '\n'
+    path = REPO_ROOT / 'feed.xml'
+    if dry_run:
+        print("  [dry-run] feed.xml would list %d deposits" % len(recent))
+        return
+    _receipt(path, reason="regenerate_surfaces feed")
+    path.write_text(out, encoding='utf-8')
+    print("  ✓ feed.xml (%d deposits, %d bytes)" % (len(recent), len(out)))
 
 
 def regenerate_sitemap(reg, dry_run=False):
@@ -1533,7 +1604,8 @@ SURFACE_FNS = {
     "browse-index": regenerate_browse_index,
     "hex-to-deposit": regenerate_hex_to_deposit,
     "chunks": regenerate_chunks,
-    "sitemap": regenerate_sitemap,
+    "feed": regenerate_feed,
+        "sitemap": regenerate_sitemap,
     "sha256sums": regenerate_sha256sums,
     "wiki": regenerate_wiki,
     "graph": regenerate_graph,
