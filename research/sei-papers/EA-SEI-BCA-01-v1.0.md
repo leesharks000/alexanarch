@@ -274,6 +274,29 @@ for every event belonging to the population for which baseline claims are made.
 
 This is the familiar positivity principle in a new instrumental setting. An event class assigned zero probability of entering the control archive cannot subsequently be used to estimate what the primary selector would have done to that class. The scientific requirement is therefore not that the control preserve every event, which is impossible at the relevant rates, but that no capturable region be *categorically excluded by content*.
 
+### 3.1 Choosing the baseline fraction
+
+The inclusion probability p is not a free parameter. It is fixed by the precision required of the retention estimates the control exists to produce, and this determination should be stated in any BCA deployment rather than chosen by convenience.
+
+Suppose the aim is to estimate the retention of the primary selector on a withheld class Q — the fraction of Q-like events the selector would keep — to an absolute precision of epsilon at 95 percent confidence. Retention is a proportion estimated on the control sample, so the binomial requirement is
+
+    n_Q ≥ 1.96² · R(1 − R) / epsilon²
+
+where R is the retention being estimated and n_Q is the number of Q-like events reaching the control archive. Taking the conservative R = 0.5 and epsilon = 0.01 gives n_Q ≈ 9,600; for epsilon = 0.05, n_Q ≈ 384.
+
+The corresponding baseline fraction follows from the rate at which Q-like events reach the fidelity locus. If that class occurs at fraction f_Q of the incoming stream and the locus sees a total of N events in the accumulation period, then
+
+    p ≥ n_Q / (f_Q · N).
+
+Two consequences deserve emphasis, because they are the practical content of the requirement.
+
+First, **the binding constraint is the rarest class about which retention claims are to be made**, not the average event. A control fraction adequate for characterizing the bulk stream may be orders of magnitude too small to characterize a class occurring at 10⁻⁶ of the rate. A BCA deployment should therefore publish the smallest f_Q for which its control sample supports a retention estimate at the stated precision — that number is the honest scope of the deployment's claims, and it is exactly the quantity currently missing from every trigger validation record.
+
+Second, **the requirement is far weaker than it appears**, because the accumulation period is long. At a nominal collision rate of 4 × 10⁷ Hz and a 10⁷-second operational year, N is of order 4 × 10¹⁴. A control fraction of p = 10⁻⁶ then yields 4 × 10⁸ retained control events per year, sufficient to characterize retention at epsilon = 0.01 for any class occurring more often than about 2 × 10⁻⁵ of the stream. The metrological requirement is thus satisfiable at control fractions well below one part in ten thousand of the existing trigger output — which is the arithmetic reason the objection from bandwidth does not survive contact with the numbers.
+
+Third, and least obvious: **the precision requirement is asymmetric between the two things BCA measures.** Establishing that retention is high requires modest samples; establishing that retention is *near zero* on a class requires the sample to contain the class at all, which is the positivity requirement of the preceding section restated quantitatively. A control that never captures a class cannot distinguish a retention of 10⁻³ from a retention of zero, and it is precisely that distinction on which the interpretation of a null result depends.
+
+
 ---
 
 ## 4. Why sketches, random projections, and alternative neural models are not baselines
@@ -571,9 +594,59 @@ These systems were developed for their own experimental purposes; none should be
 
 The missing step is to connect them through a common statistical and provenance protocol whose explicit object is **selection metrology**.
 
+### 11.1 What each existing system does and does not measure
+
+Because these systems are the state of the art rather than merely evidence of feasibility, the contribution of BCA is best stated as a comparison against them. The following table is intended to be read as a claim about gaps, and each row is falsifiable by pointing to a published measurement that fills it.
+
+| system | what it captures | selection basis | what it does not measure |
+|---|---|---|---|
+| Zero Bias | collision data independent of physics signature | content-independent, bunch-crossing based | it supplies the training and validation background for a learned trigger, but is not analysed as a control arm for that trigger: no retention estimate for withheld classes is derived from it |
+| Level-1 Data Scouting | trigger primitives at the full crossing rate, bypassing Level-1 selection | content-independent at the tap | reduced-content records: the exact representation presented to a deployed learned selector, and that selector's own score, are not retained per event for later audit |
+| Global Trigger test crate | live inputs to candidate algorithms without controlling readout | mirrors the deployed selection | shadow decisions are used for commissioning candidate algorithms, not for estimating miss overlap between deployed and candidate selectors on withheld classes |
+| Parked and delayed streams | full events deferred for later reconstruction | passed the deployed trigger | by construction these contain only events the trigger already accepted, so they cannot bound what it rejected |
+| Open-data releases | curated subsets released publicly | passed the trigger and the curation | same limitation as parked data, one selection layer further removed |
+
+The pattern across the rows is consistent and is the paper's central claim in tabular form: each system solves one component of the control problem for its own purposes, and none is instrumented to answer the question *what does the deployed selector fail to retain, and on which classes*. The gap is not capability. It is that no component is presently designated as a control arm, with the statistical properties, provenance requirements, and published retention estimates that designation would entail.
+
+### 11.2 A rate and bandwidth budget
+
+A metrology proposal that cannot state its cost is not actionable. The following is an order-of-magnitude budget at Phase-2 scale, given as a design envelope rather than an engineering specification; the intent is to establish that the requirement is small relative to existing flows, and to make the estimate falsifiable by anyone with the operating numbers.
+
+Take a 40 MHz crossing rate and, for comparison, a Level-1 accept rate of order 10⁵ Hz.
+
+**C0, content-independent sampling.** At the fraction derived in section 3.1, p = 10⁻⁶, the C0 rate is about 40 Hz — roughly four parts in ten thousand of the Level-1 accept rate. Even at full event granularity this is a marginal addition to the readout budget, and it is the only channel that must carry high-fidelity events.
+
+**C1, predecision representation tap.** This channel is rate-dominated rather than size-dominated: it carries the selector's input representation, not the event. For an object-level input of the scale used by deployed anomaly triggers — tens of objects with a few fields each, order 100 bytes per crossing after packing — a full-rate tap is order 4 GB/s, which is the same order as existing full-rate scouting flows and is the reason C1 is specified as an extension of that infrastructure rather than a new one. Where that is unaffordable, C1 degrades gracefully: a prescaled tap at 10⁻³ costs 4 MB/s and still supports retention estimation for classes above the corresponding rate floor, at the cost of raising that floor by three orders of magnitude.
+
+**C2, statistically legible enrichment.** Enrichment channels carry known, non-uniform inclusion probabilities and are budgeted as a multiple of C0. A total enrichment allocation of 10 × C0 — about 400 Hz — allows several channels at useful depth while keeping the aggregate control allocation below one percent of the Level-1 accept rate.
+
+**C3, shadow selectors.** Shadow scoring adds compute rather than bandwidth: the decisions are single scores per crossing, order 4 bytes, so a shadow plane of four selectors is about 640 MB/s at full rate and negligible if scored only on C0 and C1 records. The dominant cost is inference capacity on the shadow path, which is precisely the cost the Global Trigger test crate already absorbs for one selector.
+
+The aggregate claim is therefore modest: **the control plane's high-fidelity component costs of order one part in a thousand of the existing trigger output, and its full-rate component is of the same order as scouting flows already in operation.** If these estimates are wrong, they are wrong in a way an operating experiment can correct with a table, which is the form of engagement this paper is intended to invite.
+
+
 ---
 
-## 12. Minimal implementation
+## 12. What the proposed measurements return: a demonstration-scale execution
+
+An architecture proposal is strengthened or weakened by whether its instruments, when run, return anything that could not have been anticipated without them. The measurements BCA is designed to support have been executed at demonstration scale on public collider datasets, under pre-registration, and deposited with their full numerical record [BATTERY]. Nothing in that work measures a deployed trigger, and no claim is made here about AXOL1TL, CICADA, GELATO, or any operating selector. What the execution establishes is narrower and sufficient for the present argument: **the measurements are not trivial, and their answers are not predictable from the quantities currently published.**
+
+Four results bear directly on the channels specified above.
+
+**The readout, not the architecture, can determine the direction of the blind spot (bears on C3).** Three anomaly scores — reconstruction error, encoder-side latent norm, and a reconstruction-plus-KL composite — were read off a single set of trained weights and evaluated at matched own-background operating points. On a QCD-versus-top pair the reconstruction readout scored the withheld class as *less* anomalous than its own training class (AUC 0.306), while the latent-norm readout, from the same weights, did not (AUC 0.739). Two scores computed from one model disagreed about which class was anomalous. A shadow-selector plane that varies architectures while holding the readout fixed would not have detected this; C3 must therefore vary readouts explicitly, and the replay bank must record which readout produced a retention decision, since the representation alone does not determine it.
+
+**Distillation alters the miss geometry rather than preserving it (bears on C1 and C3).** A teacher's scores were distilled into a small student and the student weight-quantized. On the training background, rank correlation between teacher and student reached 0.904 — by the standard by which distillation is ordinarily validated, a faithful reproduction. At a one-percent operating point, only 51 percent of the teacher's most anomalous events survived into the student's most anomalous set, falling to 30 percent at one per mille. Weight quantization contributed no systematic further loss. Teacher-to-student miss overlap, measured as a normalized association on the withheld class, ran 0.30 to 0.54: the student does not simply inherit the teacher's blind spot, it acquires a partly different one. Global agreement statistics, which are what deployment pipelines currently report, do not bound behavior at the operating point where a trigger actually selects.
+
+**Detection behavior is not transportable across representations of the same events (bears on C1).** The same physical class pair, encoded first as jet constituents and then as seven engineered jet observables computed from those same constituents, reversed the ordering of the architectures entirely: 0.838 / 0.535 / 0.873 for autoencoder, latent-norm and density scores on constituents, against 0.528 / 0.799 / 0.748 on the engineered encoding. Benchmarking a selector on one representation therefore constrains its behavior on another very weakly. This is the argument for tapping the *exact* representation presented to the deployed selector rather than a convenient reconstruction of it.
+
+**Miss correlation between models is not a stable property of the model pair (bears on C3).** Normalized miss association between architecture pairs, measured on withheld classes with intervals over seeds, ranged from 0.020 — near-independence — to above 0.5, varying by pair and by setting, and a controlled test holding the physical pair fixed while changing only the encoding failed to move one pair's association at all while moving another's threefold. Architectural plurality is therefore not a substitute for measurement: whether two selectors have complementary blind spots is an empirical quantity that must be estimated, which is what C3 exists to make estimable on deployed systems.
+
+Each of these is a measurement that a control plane of the kind specified here would render performable on an operating trigger, and none of them is currently performable at all, because the events on which they depend are discarded before any durable record exists. The demonstration-scale execution also carries its own correction ledger — seventeen recorded deviations between pre-registration and execution, six missed predictions, and one line of inquiry closed with an explicit handoff — and that record is deposited alongside the results. An architecture that asks operating experiments to publish what their instruments fail to retain is obliged to publish what its own instruments failed to do.
+
+
+---
+
+## 13. Minimal implementation
 
 A minimally viable BCA need not begin as a large new acquisition system.
 
@@ -601,7 +674,7 @@ Such a statement would make explicit exactly what the control can and cannot aud
 
 ---
 
-## 13. Limitations
+## 14. Limitations
 
 BCA does not solve the unknown-unknown problem. A probability sample can contain a phenomenon without anyone recognizing it; a phenomenon sufficiently rare may not enter the sample at all; and a physical signature erased upstream of the fidelity locus cannot be reconstructed through downstream sampling.
 
@@ -611,9 +684,12 @@ The architecture also consumes real resources. Every bit reserved for control ca
 
 Finally, the existence of a control stream does not automatically produce a useful audit. Retrospective classes still require labeling, simulation, injections, alternative reconstruction, or independent discovery channels. BCA creates the evidentiary substrate upon which those analyses can operate; it does not predetermine them.
 
+
+Three limitations follow specifically from the additions in this version. The rate and bandwidth budget of section 11.2 is an order-of-magnitude design envelope constructed from public parameters, not from operating figures; an experiment holding the real numbers may find the C1 estimate wrong by a factor, and the appropriate response is a corrected table rather than a rejection of the architecture. The baseline-fraction derivation of section 3.1 assumes independent inclusion and a stationary class rate over the accumulation period, neither of which holds exactly across running conditions, and a deployment would need to state its own effective sample. And the demonstration-scale execution reported in section 12 was performed on public datasets with small networks; it establishes that the proposed measurements return non-obvious answers, and it establishes nothing whatever about the behaviour of any operating trigger.
+
 ---
 
-## 14. Discussion: from trigger performance to trigger metrology
+## 15. Discussion: from trigger performance to trigger metrology
 
 Contemporary learned-trigger work has made impressive progress on a difficult engineering problem: how to execute sophisticated inference within latency and resource constraints that only recently would have excluded such models entirely. CMS now operates a signal-agnostic event-level anomaly trigger at Level-1; CICADA performs distilled anomaly inference at 40 MHz; and Level-1 Data Scouting is being developed precisely to open physics access beyond ordinary Level-1 accept constraints.[1–4]
 
@@ -629,7 +705,7 @@ It requires that a small portion of the acquisition architecture remain outside 
 
 ---
 
-## 15. Conclusion
+## 16. Conclusion
 
 A scientific trigger is usually evaluated by asking what interesting events it retains. A learned anomaly trigger invites a second question:
 
@@ -660,6 +736,8 @@ The baseline channel preserves the experiment's ability to determine **what that
 4. D. S. Rabady, for the CMS Collaboration. **A 40 MHz Level-1 trigger scouting system for the CMS Phase-2 upgrade.** *Nuclear Instruments and Methods in Physics Research A* 1047 (2023) 167805. DOI: 10.1016/j.nima.2022.167805.
 
 5. M. Quinnan, for the CMS Collaboration. **Anomaly Detection in the CMS L1 Trigger.** *EPJ Web of Conferences* 337 (2025) 01032. DOI: 10.1051/epjconf/202533701032.
+
+[BATTERY] Inversion Battery: pre-registered measurement of directional retention asymmetry in learned anomaly selection, versions 1.0-3.0. Deposited in the Alexanarch archive, 2026; full numerical record, executable pre-registration and correction ledger attached to the v3.0 deposit.
 
 ### Citation note
 
