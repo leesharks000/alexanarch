@@ -250,3 +250,37 @@ deviation; full-covariance exceeded the container.)
 
 *Standing protocols: AXN full-form from registry only; no legal name anywhere;
 Assembly No-Double-Draw; observations never corrected.*
+
+---
+
+## SUBMISSION PLAN — added 2026-08-11 (MANUS ruling)
+
+**Sequencing decision.** P1 does not go first. Battery v0.2 runs first, then a batch of submissions goes out to different journals simultaneously. BCA is drafted and deposit-complete but is **held for at least one more revision round** before submission.
+
+**The deposited spine (Nobel Glas, Lagrange Observatory — Framework 15, Measurement of Meaning):**
+
+| Deposit | Paper | Role | Submission status |
+|---|---|---|---|
+| #1452 · AXN:05DD.GENERATIVE.🖊️⚪🖐️🪄📌🧫 | The Irreversibility Frontier | comparative architecture; defines the profile tuple | queued for batch |
+| #1453 · AXN:05DE.OPERATIVE.🀄🕖🍂🌘🕑🕌 | Baseline Capture Architecture | constructive specification; the control group for a trigger | HELD — ≥1 revision round before submission |
+| #1454 · AXN:05DF.OPERATIVE.🔛🖐️🏷️🍁👐🧪 | Assimilation Across Accelerator Classifier Architectures | pre-registered cross-family battery | queued for batch; needs v0.2 results |
+| #1449 · AXN:05DA.EMPIRICAL.🛤️🌠🗿🖊️🧭🪞 | Battery v0.1 + program | empirical seed | deposited |
+| #1450 · AXN:05DB.GENERATIVE.⏰🚪🔜♻️🔥🫶 | The Iceberg Document | speculative framework, fenced | deposited |
+
+**Venue allocation for the batch (different journals by design — no venue sees two):**
+
+- **BCA (#1453)** → *JINST*. Same conversation and same venue as Ardino, *JINST* 21 (2026) C01024 on Phase-2 Level-1 Data Scouting; BCA's feasibility argument rests on that infrastructure. Alternates: *Computing and Software for Big Science*; *EPJ Techniques and Instrumentation*.
+- **The Irreversibility Frontier (#1452)** → *Computing and Software for Big Science* (comparative architecture across CMS/ATLAS/LHCb/CBM/Belle II). Alternate: *European Physical Journal Plus*; philosophy-of-science alternate *Synthese* if reframed toward P2.
+- **ACRB (#1454)** → *Machine Learning: Science and Technology* — the venue that published the CMS WNAE paper, so the inversion-check conversation is already there. Alternate: *SciPost Physics Core*.
+- **P1 (unwritten)** → *SciPost Physics*, after battery v0.2. Alternates *MLST*, *EPJC*.
+
+**Order of operations, ratified:**
+
+1. **Battery v0.2** — multi-seed (≥5) with bootstrap CIs; LCBH panel ordered by measured representation complexity; AXOL1TL-faithful object-level surrogate on LHCO raw; CICADA distillation rank-survival; NAE/WNAE as fourth family; per-stage retention map of the battery itself; GPU pass. **Blocking for both P1 and ACRB's results section.**
+2. **BCA revision round** — at least one, before submission. Known targets for that pass: a worked bandwidth/rate budget for the four channels at Phase-2 scale; explicit treatment of how the baseline fraction is chosen; tighter engagement with the parked-data and scouting literature as prior art rather than as feasibility evidence alone.
+3. **Batch submission** — BCA, Frontier, and ACRB to three different journals in one window, each citing the deposited AXN forms so the program spine is visible to every referee.
+4. **P1** last, written against v0.2 numbers.
+
+**Standing terminology (ratified 2026-08-11):** *irreversibility frontier* supersedes *irreversibility locus* (#1450 → #1452); cross-model *miss overlap* is the **RII** measurement family (q_A, q_B, q_AB, Δ_miss), scalar normalization still unfrozen pending simulation.
+
+**Open decisions reserved to MANUS:** author line for P1; whether v0.2 waits for GPU access or ships CPU-scale with declared bounds; pre-submission contact with the Aachen (Finke/Krämer) or Heidelberg (Dillon/Plehn/Favaro) groups; correspondence-corpus scope for P3.
