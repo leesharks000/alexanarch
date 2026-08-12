@@ -74,6 +74,7 @@ try:
 except ImportError:
     _OVERWRITE_GUARD_AVAILABLE = False
 
+HOMEPAGE_RECENT_N = 12  # must equal the JS slice in index.html
 ALL_SURFACES = ["state", "browse", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index", "search-index", "search-static", "dynamic-counts", "semantic-addresses"]
 
 
@@ -1029,14 +1030,25 @@ def regenerate_state(reg, dry_run=False):
 
 
 def regenerate_homepage_noscript(reg, dry_run=False):
-    """Rewrite the <noscript>...</noscript> block in index.html so it shows
-    the same N latest deposits the JavaScript renders. Previously hand-maintained
-    with 4 hardcoded records; now generated from registry on every regen so
-    no-JS readers and crawlers see actual current state.
+    """Server-render the latest deposits INTO #recent-deposits in index.html.
 
-    The contract: the static fallback must equal what JS would render for the
-    'Recent Deposits' section. Both pull from data/registry.json — JS at
-    runtime, this generator at build time.
+    2026-08-12 (MANUS): previously this wrote the cards into a <noscript> block,
+    leaving the visible container holding only 'Loading registry...'. That was
+    adequate for a no-JS reader but not for a crawler: agents that execute
+    JavaScript commonly skip <noscript> entirely, and agents that do not may
+    treat it as low-value. Either way the homepage presented a manifesto with
+    almost no record links, and the deposit corpus reached crawlers only through
+    the sitemap and /s/browse/.
+
+    The cards are now written as the DEFAULT CONTENT of the #recent-deposits
+    div. The existing JavaScript replaces el.innerHTML on load, so this is
+    ordinary progressive enhancement: real links in the served HTML, live
+    rendering for a browser. The <noscript> block is removed as redundant.
+
+    The contract is unchanged: the static render must equal what JS renders for
+    'Recent Deposits'. Both read data/registry.json — JS at runtime, this
+    generator at build time. HOMEPAGE_RECENT_N is the single place the count is
+    set, and the JS slice must match it.
     """
     index_path = REPO_ROOT / 'index.html'
     if not index_path.exists():
@@ -1050,7 +1062,7 @@ def regenerate_homepage_noscript(reg, dry_run=False):
     # the runtime JS view.
     deposits = sorted(reg['deposits'], key=lambda d: d.get('deposit_number', 0))
     active_deposits = [d for d in deposits if d.get('status', 'ACTIVE') != 'SUPERSEDED']
-    recent = list(reversed(active_deposits[-5:]))
+    recent = list(reversed(active_deposits[-HOMEPAGE_RECENT_N:]))
 
     cards = []
     for d in recent:
@@ -1106,31 +1118,38 @@ def regenerate_homepage_noscript(reg, dry_run=False):
         )
         cards.append(card)
 
-    new_noscript = (
-        '<noscript>\n'
-        f'<!-- Generated from data/registry.json by scripts/regenerate_surfaces.py on '
-        f'{datetime.now(timezone.utc).strftime("%Y-%m-%d")}. Latest {len(recent)} deposits, '
-        f'matching the JavaScript Recent Deposits slice. -->\n'
+    new_block = (
+        '<div id="recent-deposits" style="margin-bottom:30px">\n'
+        f'<!-- SERVER-RENDERED from data/registry.json by scripts/regenerate_surfaces.py on '
+        f'{datetime.now(timezone.utc).strftime("%Y-%m-%d")}. Latest {len(recent)} active deposits, '
+        f'matching the JavaScript Recent Deposits slice. The JS below replaces this on load; '
+        f'crawlers and no-JS readers get real record links without it. -->\n'
         + ''.join(cards) +
         '<div style="text-align:center;margin-top:12px"><a href="/s/browse/" style="color:#0a7c6a">Browse all deposits →</a></div>\n'
-        '</noscript>'
+        '</div>'
     )
 
-    html = index_path.read_text()
-    # Replace the existing noscript block
     import re
-    noscript_pattern = re.compile(r'<noscript>.*?</noscript>', re.DOTALL)
-    if not noscript_pattern.search(html):
-        print(f"  ⚠ index.html has no <noscript> block — skipping")
+    html = index_path.read_text()
+    # Replace the whole #recent-deposits container, whatever it currently holds
+    container = re.compile(r'<div id="recent-deposits".*?</div>\s*(?=<noscript>|<script>|<h2|$)', re.DOTALL)
+    m = re.search(r'<div id="recent-deposits"[^>]*>.*?\n</div>', html, re.DOTALL)
+    if not m:
+        # first-run shape: placeholder div with a single child div
+        m = re.search(r'<div id="recent-deposits"[^>]*>\s*<div[^>]*>Loading registry\.\.\.</div>\s*</div>', html, re.DOTALL)
+    if not m:
+        print("  ⚠ index.html has no #recent-deposits container — skipping")
         return
-    new_html = noscript_pattern.sub(new_noscript, html, count=1)
+    new_html = html[:m.start()] + new_block + html[m.end():]
+    # retire the now-redundant noscript duplicate, once
+    new_html = re.sub(r'<noscript>\s*<!-- Generated from data/registry\.json.*?</noscript>\s*', '', new_html, count=1, flags=re.DOTALL)
 
     if dry_run:
-        print(f"  [dry-run] index.html <noscript> would be updated to {len(recent)} latest deposits")
+        print(f"  [dry-run] index.html #recent-deposits would be server-rendered with {len(recent)} latest deposits")
         return
-    _receipt(index_path, reason="regenerate_surfaces homepage-noscript")
+    _receipt(index_path, reason="regenerate_surfaces homepage-deposits")
     index_path.write_text(new_html, encoding='utf-8')
-    print(f"  ✓ index.html <noscript> updated ({len(recent)} latest deposits, matching JS slice)")
+    print(f"  ✓ index.html #recent-deposits server-rendered ({len(recent)} latest deposits, matching JS slice)")
 
 
 def regenerate_api_index(reg, dry_run=False):
