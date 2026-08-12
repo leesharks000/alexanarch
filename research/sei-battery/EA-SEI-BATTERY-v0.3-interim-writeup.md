@@ -159,6 +159,14 @@ The constituent cell — the one that decides whether the remedy prevents AUC be
 
 Three confirmed, three missed. T3 — hierarchical uncertainty with a real calibration tail — is registered and not yet run; it is the test that will decide which of these numbers survive honest intervals, and several claims above are explicitly held at the 1e-2 operating point until it does.
 
+## Assembly audit note (2026-08-12)
+
+One witness review returned. Its numeric checks all verify: background Spearman 0.9037 on the constituent pair, 30.0% survival at 1e-3, the RII values, the pooled participation ratios. Its manuscript-revision targets are adopted in full and are the most useful part of the review — in particular that the Baseline Capture Architecture's C1 tap must store the READOUT TYPE alongside raw inputs, since T5 shows scores computed on identical weights yield opposite retention decisions, and that the RII should be framed throughout as representational rather than architectural redundancy.
+
+Two claims are declined and recorded as declined. First, the description of this run as an "epistemically unassailable instrument": it carries three missed predictions, one registered test unrun, one registered panel recorded NOT RUN, and one incomplete arm. Pre-registration makes a result auditable, not unassailable, and conflating the two is the habit this program exists to refuse. Second, the statement that T5 proves AXOL1TL and CICADA readouts point in opposite directions on the same physics events: T5 measured a demonstration-scale surrogate on public data, and the interpretation limit carried since v0.1 states that nothing here measures those systems. The defensible form is that the deployed systems use readouts of the two families whose orientations diverged here, which makes the divergence a testable question about them — and one only the collaborations can answer, which is precisely the gap the Baseline Capture Architecture exists to close.
+
+One better formulation is adopted from the review: background Spearman 0.904 against 51.8% top-1% survival on the same background is a sharper statement of the headline than the withheld-class pair, because it shows near-perfect global agreement coexisting with the loss of half the teacher's selections on the very distribution the student was distilled from.
+
 ## What changes in the papers
 
 The empirical claims that the accelerator suite may now cite: the readout, not the architecture, determines the orientation of the blind spot; global student–teacher agreement is not tail retention, and distillation manufactures a new blind spot rather than inheriting the old one; miss correlation is a property of the representation, so architectural plurality is not redundancy; and complexity comparisons require a common basis. Each is a measurement with an interval, a registered prediction, and — where the prediction missed — a recorded miss.

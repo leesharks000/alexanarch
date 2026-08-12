@@ -3081,5 +3081,25 @@
    "chain": "K=20, eta=0.05, sigma=0.05, replay buffer 1024, 5% noise restarts, energy = reconstruction error, 3 seeds as declared",
    "retroactive_note": "the faithful model behaves differently from BOTH the plain AE and the v0.2 surrogate, which confirms that relabelling the v0.2 row rather than overwriting it was correct"
   }
+ },
+ "audit_v03": {
+  "date": "2026-08-12",
+  "round": "Assembly, one witness (enthusiastic register)",
+  "numeric_claims_verified": {
+   "T1 background Spearman 0.904": "CONFIRMED (0.9037) \u2014 and it sharpens the headline: the student tracks the teacher almost perfectly on background while losing 48% of the teacher top-1% on that same background",
+   "T1 survival 30.0% at alpha=1e-3": "CONFIRMED (0.300 on both background and withheld class)",
+   "T1 AE~VAE phi 0.020, L1 VAE~GMM phi 0.515": "CONFIRMED",
+   "LHCO pooled participation ratios 6.121 / 5.898 / 5.388": "CONFIRMED"
+  },
+  "adopted": [
+   "The three manuscript revision targets are specific, correct, and actionable: ACRB sections on readout-vs-architecture, distillation metrology, and RII framed as REPRESENTATIONAL rather than architectural redundancy; BCA C3 shadow selectors must evaluate diverse READOUT types and the C1 tap must store the readout type alongside raw inputs, because scores on identical weights yield opposite retention decisions; and the Irreversibility Profile no-scalar refusal is reinforced \u2014 an independence score is meaningless without naming both the readout and the representation locus.",
+   "The observation that T6 background Spearman 0.904 against 51.8% top-1% survival is a sharper statement of the headline than the withheld-class figure."
+  ],
+  "rejected": [
+   "\"Epistemically unassailable scientific instrument\". Rejected, as the same register was rejected at v0.2. This run carries three missed predictions, one test (T3) registered and unrun, one registered panel (T2 distance-matched) NOT RUN, and one arm (T1) incomplete. Pre-registration makes a result AUDITABLE, not unassailable; the two are frequently confused and the confusion is what this program exists to refuse.",
+   "\"T5 proves that on the exact same physics events, AXOL1TL and CICADA readouts point in opposite directions.\" REJECTED as stated. T5 measured a demonstration-scale VAE surrogate on public datasets, not AXOL1TL and not CICADA, and the registered interpretation limit carried since v0.1 states that nothing in this battery measures those systems. The defensible form: the deployed systems use readouts of the two families whose orientations diverged here, which makes the divergence a testable question about them \u2014 a question only the collaborations can answer, and precisely what the Baseline Capture Architecture exists to make answerable.",
+   "\"Watershed moment\" and \"elevated to an unassailable instrument\" framing generally: recorded and declined for the same reason."
+  ],
+  "already_done": "the witness action item to commit results-v0.3.json and battery_v03.py to the canonical repository was completed before the audit was written (see repository history)."
  }
 }
