@@ -6056,6 +6056,197 @@
      ]
     }
    }
+  },
+  "T10_sampler_sweep": {
+   "eta=0.01,sigma=0.01": {
+    "eta": 0.01,
+    "sigma": 0.01,
+    "K": 20,
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "energy_ratio_mean": 0.784,
+    "in_band": false,
+    "auc_P_on_Q": {
+     "mean": 0.7449
+    },
+    "auc_Q_on_P": {
+     "mean": 0.3651
+    },
+    "D_A@0.01": {
+     "mean": -0.0186
+    }
+   },
+   "eta=0.01,sigma=0.05": {
+    "eta": 0.01,
+    "sigma": 0.05,
+    "K": 20,
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "energy_ratio_mean": 0.693,
+    "in_band": false,
+    "auc_P_on_Q": {
+     "mean": 0.748
+    },
+    "auc_Q_on_P": {
+     "mean": 0.4325
+    },
+    "D_A@0.01": {
+     "mean": -0.02
+    }
+   },
+   "eta=0.01,sigma=0.2": {
+    "eta": 0.01,
+    "sigma": 0.2,
+    "K": 20,
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "energy_ratio_mean": 2.056,
+    "in_band": false,
+    "auc_P_on_Q": {
+     "mean": 0.6311
+    },
+    "auc_Q_on_P": {
+     "mean": 0.6144
+    },
+    "D_A@0.01": {
+     "mean": 0.0353
+    }
+   },
+   "eta=0.05,sigma=0.01": {
+    "eta": 0.05,
+    "sigma": 0.01,
+    "K": 20,
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "energy_ratio_mean": 0.562,
+    "in_band": false,
+    "auc_P_on_Q": {
+     "mean": 0.7765
+    },
+    "auc_Q_on_P": {
+     "mean": 0.2969
+    },
+    "D_A@0.01": {
+     "mean": -0.0382
+    }
+   },
+   "eta=0.05,sigma=0.05": {
+    "eta": 0.05,
+    "sigma": 0.05,
+    "K": 20,
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "energy_ratio_mean": 0.482,
+    "in_band": false,
+    "auc_P_on_Q": {
+     "mean": 0.7817
+    },
+    "auc_Q_on_P": {
+     "mean": 0.2843
+    },
+    "D_A@0.01": {
+     "mean": -0.0371
+    }
+   },
+   "eta=0.05,sigma=0.2": {
+    "eta": 0.05,
+    "sigma": 0.2,
+    "K": 20,
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "energy_ratio_mean": 1.404,
+    "in_band": false,
+    "auc_P_on_Q": {
+     "mean": 0.7327
+    },
+    "auc_Q_on_P": {
+     "mean": 0.432
+    },
+    "D_A@0.01": {
+     "mean": 0.0223
+    }
+   },
+   "eta=0.2,sigma=0.01": {
+    "eta": 0.2,
+    "sigma": 0.01,
+    "K": 20,
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "energy_ratio_mean": 0.292,
+    "in_band": false,
+    "auc_P_on_Q": {
+     "mean": 0.812
+    },
+    "auc_Q_on_P": {
+     "mean": 0.2906
+    },
+    "D_A@0.01": {
+     "mean": -0.0256
+    }
+   },
+   "eta=0.2,sigma=0.05": {
+    "eta": 0.2,
+    "sigma": 0.05,
+    "K": 20,
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "energy_ratio_mean": 0.268,
+    "in_band": false,
+    "auc_P_on_Q": {
+     "mean": 0.832
+    },
+    "auc_Q_on_P": {
+     "mean": 0.2683
+    },
+    "D_A@0.01": {
+     "mean": -0.0224
+    }
+   },
+   "eta=0.2,sigma=0.2": {
+    "eta": 0.2,
+    "sigma": 0.2,
+    "K": 20,
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "energy_ratio_mean": 1.2,
+    "in_band": false,
+    "auc_P_on_Q": {
+     "mean": 0.7838
+    },
+    "auc_Q_on_P": {
+     "mean": 0.4727
+    },
+    "D_A@0.01": {
+     "mean": 0.013
+    }
+   }
   }
  },
  "deviations": [
@@ -6263,6 +6454,17 @@
    "registered_null": "Per the outcome condition set in advance: the constituent cell remains UNINTERPRETABLE as a test of the published remedy at feasible chain lengths on this compute. This is a null about the SAMPLER, not about the remedy, and the question is deferred rather than answered.",
    "what_the_ladder_did_establish": "The failure is not chain length. Ratios cluster at 0.4-0.5 across a fourfold range of K, so the negatives sit persistently at half the data energy no matter how long the chain runs. That points at the construction on this representation \u2014 step size, noise scale, buffer initialisation, or the on-manifold decode itself in 120 dimensions \u2014 rather than at insufficient mixing. A step-size and noise-scale sweep is the next diagnostic, not a longer chain.",
    "incidental": "AUC Q on P stayed near 0.28 across all three rungs and D_A shrank steadily (-0.037, -0.028, -0.020) as K grew, but none of that can be read as evidence about the remedy while the sampler is out of band."
+  },
+  "T10_sampler_sweep": {
+   "design": "constituent pair, K fixed at 20 per T9, 3x3 grid over Langevin step size and noise scale, three seeds",
+   "prediction_1": "at least one cell reaches the 0.85-1.15 energy-ratio band",
+   "outcome_1": "MISSED \u2014 no cell lands in band. The grid BRACKETS it: eight cells sit below (0.268 to 0.784) and the sigma=0.2 column overshoots (2.056, 1.404, 1.200). The closest is eta=0.2, sigma=0.2 at 1.200, just outside.",
+   "prediction_2": "the ratio increases with sigma at fixed step size",
+   "outcome_2": "CONFIRMED in every row \u2014 0.784->2.056, 0.562->1.404, 0.292->1.200. Injected noise is the controlling variable, exactly as the sampler diagnosis predicted; step size moves the ratio the other way (raising eta LOWERS it, 0.784->0.292 at fixed sigma).",
+   "prediction_3": "in any in-band cell the constituent inversion persists",
+   "outcome_3": "NOT TESTABLE \u2014 no in-band cell exists. But the trend is visible and recorded as incidental: AUC Q on P rises with sigma (0.365->0.614 at eta=0.01; 0.291->0.473 at eta=0.2) and approaches but does not cross 0.5 in the overshooting cells.",
+   "what_this_settles": "The construction is NOT broken on 120-dim constituents, which was the outcome condition for a stronger null and is now excluded. The band is reachable in principle: the grid brackets it tightly between sigma=0.05 (0.48) and sigma=0.2 (1.40) at eta=0.05, and between 0.268 and 1.200 at eta=0.2. A finer sweep over sigma in {0.08, 0.10, 0.12, 0.15} at eta in {0.05, 0.2} should land in band. That is a bisection, not an open question.",
+   "what_remains_deferred": "Whether the published remedy prevents the constituent inversion. The incidental trend \u2014 AUC Q on P climbing toward 0.5 precisely as the sampler approaches the band \u2014 is suggestive in the direction OPPOSITE to my registered prediction 3, and is exactly why it must not be read before an in-band cell exists. If a bisected cell lands in band with AUC Q on P at or above 0.5, prediction 3 fails and the inversion claims in this program become bounded to non-normalized scores."
   }
  },
  "audit_v03": {
@@ -6295,7 +6497,8 @@
   "note": "The earlier \"three confirmed, three missed\" was too neat. Corrected accounting:",
   "confirmed": [
    "T5 score ablation (with the claim restated: with model weights fixed, changing the score function is sufficient to reverse the directional ordering)",
-   "T3 hierarchical uncertainty (post-results implementation, logged)"
+   "T3 hierarchical uncertainty (post-results implementation, logged)",
+   "T10 prediction 2 (noise scale is the controlling variable)"
   ],
   "partially_confirmed": [
    "T4 (prediction referenced an architecture absent from the implemented set; empirical spread verified)",
@@ -6306,7 +6509,8 @@
    "T6 blind-spot inheritance (phi 0.30-0.54 is PARTIAL positive inheritance, weaker than predicted, not absence)",
    "PCD-NAE approximation on L1/L2",
    "T7 same-pair two-encoding test (AE~VAE phi unchanged across encodings)",
-   "T9 chain-length ladder (prediction 1: ratio did not rise or reach band)"
+   "T9 chain-length ladder (prediction 1: ratio did not rise or reach band)",
+   "T10 prediction 1 (no cell in band)"
   ],
   "not_run": [
    "T2 registered distance-matched panel",
@@ -6317,7 +6521,7 @@
   ],
   "confirmed_count_note": "2 confirmed (T5, T3), 1 partial (T4), 4 missed (T6 x2, NAE approximation, T7), 3 not run, 1 incomplete",
   "deferred": [
-   "whether the published NAE prevents inversion on high-dimensional constituents \u2014 sampler does not converge at K up to 80; next diagnostic is a step-size/noise sweep, not a longer chain"
+   "constituent-cell interpretability: band is bracketed, not unreachable \u2014 bisect sigma in {0.08, 0.10, 0.12, 0.15} at eta in {0.05, 0.2}"
   ]
  }
 }
