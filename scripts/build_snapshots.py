@@ -76,8 +76,38 @@ def _get(url: str, token: str) -> dict[str, Any]:
 
 
 def _canary(host: str, token: str) -> None:
-    """/api/v0/me: verify token works before doing expensive pulls."""
-    _get(f"{host}/api/v0/me", token)
+    """/api/v0/me: verify token works before doing expensive pulls.
+
+    2026-08-12 — the 11 August run failed here with HTTP 404 and the message
+    said only that. Probing the host WITHOUT a token returns 401, which means
+    the endpoint and host are correct and present. GoatCounter answers 404
+    rather than 403 for a token it does not recognise — a deliberate
+    non-disclosure. So a 404 HERE means the TOKEN IS GONE (deleted, revoked, or
+    the secret was rotated), not that the API moved or the site vanished.
+
+    That distinction cost a day of misdiagnosis across three audits, so the
+    error now states it rather than leaving the next reader to rediscover it.
+    """
+    try:
+        _get(f"{host}/api/v0/me", token)
+    except GoatCounterError as e:
+        msg = str(e)
+        if "HTTP 404" in msg:
+            raise GoatCounterError(
+                f"{msg}\n"
+                f"    DIAGNOSIS: /api/v0/me exists — unauthenticated it returns 401, not 404.\n"
+                f"    GoatCounter answers 404 for a token it does not recognise.\n"
+                f"    THE API TOKEN IS INVALID OR HAS BEEN DELETED.\n"
+                f"    FIX: {host}/user/api → create a token with 'Read statistics'\n"
+                f"         then update the GOATCOUNTER_API_KEY repository secret.\n"
+                f"    This is NOT an API deprecation and NOT a site outage; the /count\n"
+                f"    tracker endpoint is a separate path and keeps collecting regardless."
+            ) from e
+        if "HTTP 401" in msg:
+            raise GoatCounterError(
+                f"{msg}\n    DIAGNOSIS: token present but rejected — check it was copied whole."
+            ) from e
+        raise
 
 
 def _get_total(host: str, token: str) -> tuple[int, int]:

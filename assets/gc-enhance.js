@@ -90,6 +90,35 @@
     return snapshotPromise;
   }
 
+  /* Trailing-slash normalisation (2026-08-12, found by external audit — LABOR).
+   *
+   * GoatCounter stores paths as it receives them: '/s/records/1039', without a
+   * trailing slash. The browse enhancer below constructs '/s/records/1039/'
+   * WITH one, because that is the canonical link form on the site. Those are
+   * different object keys, so the lookup missed on 99 of 100 records and the
+   * counter rendered an em-dash even though the snapshot held a perfectly good
+   * count for that record.
+   *
+   * This is a display defect that MIMICS a data defect: it made the analytics
+   * look far worse than the underlying dataset, which is exactly the kind of
+   * instrument error this archive exists to document. Both sides are now
+   * normalised to a single canonical form before comparison, and the lookup
+   * tries the variants rather than assuming one convention won. */
+  function normPath(p) {
+    if (!p || p === 'TOTAL') return p;
+    return p.length > 1 ? p.replace(/\/+$/, '') : p;
+  }
+  function lookup(snapshot, path) {
+    var paths = snapshot && snapshot.paths;
+    if (!paths) return null;
+    if (paths[path]) return paths[path];              // exact, whichever form
+    var bare = normPath(path);
+    if (paths[bare]) return paths[bare];              // stored without slash
+    if (bare !== path && paths[bare + '/']) return paths[bare + '/'];
+    if (paths[path + '/']) return paths[path + '/'];  // stored with slash
+    return null;
+  }
+
   function renderOne(el, snapshot, suffix) {
     if (!snapshot) return showUnavailable(el);
     var path = el.getAttribute('data-gc');
@@ -98,7 +127,7 @@
       else showUnavailable(el);
       return;
     }
-    var entry = snapshot.paths && snapshot.paths[path];
+    var entry = lookup(snapshot, path);
     if (entry && typeof entry.count === 'number') show(el, entry.count, suffix);
     else showUnavailable(el);
   }

@@ -22,6 +22,15 @@ jobs:
           GOATCOUNTER_API_KEY: ${{ secrets.GOATCOUNTER_API_KEY }}
         run: python3 scripts/build_snapshots.py
 
+      # 2026-08-12: the 11 August run failed at the authenticated canary and,
+      # because the aggregator fails closed, the previous snapshot stayed in
+      # place and kept being served as though current. Nothing announced it;
+      # an external audit found it three days later. A frozen counter must
+      # announce itself, so the freshness gate runs here too and the job fails
+      # loudly rather than leaving a stale figure quietly on the site.
+      - name: Verify the snapshot actually advanced
+        run: python3 scripts/check_snapshot_freshness.py
+
       - name: Commit snapshot (if changed)
         run: |
           git config user.name "TACHYON snapshot"
