@@ -194,7 +194,31 @@ def load_state():
 
 
 def save(R):
-    json.dump(R, open(RES, 'w'), indent=1)
+    """Single-writer discipline (added 2026-08-12 after a near-miss).
+
+    Two jobs writing this file concurrently truncated it, and an hours-old job
+    holding a stale in-memory snapshot would have silently overwritten a full
+    verdict-and-deviations ledger with a pre-correction copy. Every write now
+    MERGES into whatever is on disk at write time rather than replacing it, and
+    writes atomically via a temp file, so a late finisher can add its own cell
+    without clobbering work it never saw.
+    """
+    disk = json.load(open(RES)) if os.path.exists(RES) else {}
+    for k, v in R.items():
+        if k == 'tests' and isinstance(v, dict):
+            merged = dict(disk.get('tests', {}))
+            merged.update(v)
+            disk['tests'] = merged
+        elif k in ('verdicts', 'standing_tally') and isinstance(v, dict):
+            m = dict(disk.get(k, {})); m.update(v); disk[k] = m
+        elif k == 'deviations' and isinstance(v, list):
+            seen = {d.get('id') for d in disk.get('deviations', [])}
+            disk['deviations'] = disk.get('deviations', []) + [d for d in v if d.get('id') not in seen]
+        else:
+            disk[k] = v
+    tmp = RES + '.tmp'
+    json.dump(disk, open(tmp, 'w'), indent=1)
+    os.replace(tmp, RES)
 
 
 def split(X, ntr, ncal, nev, seed):
@@ -822,7 +846,13 @@ def main(which):
             save(R)
     if which == 'T8':
         R['tests'].setdefault('T8_published_NAE', {})
+        # K_latent and K_input stay at the REGISTERED 20; seeds stay at the
+        # registered 3. Epochs and training-set size were not fixed by the T8
+        # registration and are reduced here to fit the execution window; the
+        # values actually used are recorded with every cell.
         K_LAT, K_INP, ETA, SIG, BUF = 20, 20, 0.05, 0.05, 1024
+        EPOCHS = int(os.environ.get('T8_EPOCHS', 4))
+        NTR8 = int(os.environ.get('T8_NTR', 20000))
 
         def train_published_nae(X, seed, d):
             torch.manual_seed(seed)
@@ -836,7 +866,7 @@ def main(which):
             zbuf = torch.randn(BUF, zdim, generator=g)
             opt = torch.optim.Adam(m.parameters(), lr=5e-4)
             diag = {}
-            for ep in range(10):
+            for ep in range(EPOCHS):
                 perm = torch.randperm(len(Xt), generator=g)
                 for i in range(0, len(Xt), 512):
                     xb = Xt[perm[i:i + 512]]
@@ -845,8 +875,8 @@ def main(which):
                     bidx = torch.randint(0, BUF, (nb,), generator=g)
                     z = zbuf[bidx].clone().requires_grad_(True)
                     for _ in range(K_LAT):
-                        ez = ((dec(z) - dec(z).detach()) ** 2).mean(1).sum() * 0.0 + \
-                             ((m(dec(z)) - dec(z)) ** 2).mean(1).sum()
+                        xz = dec(z)
+                        ez = ((m(xz) - xz) ** 2).mean(1).sum()
                         gz = torch.autograd.grad(ez, z)[0]
                         with torch.no_grad():
                             z = z - ETA * gz + SIG * torch.randn(z.shape, generator=g)
@@ -867,7 +897,7 @@ def main(which):
                     e_pos, e_neg = energy(xb), energy(neg)
                     loss = e_pos.mean() - e_neg.mean() + 0.1 * (e_pos ** 2).mean()
                     loss.backward(); opt.step()
-                    diag = {'e_data': float(e_pos.mean()), 'e_neg': float(e_neg.mean())}
+                    diag = {'e_data': float(e_pos.mean().detach()), 'e_neg': float(e_neg.mean().detach())}
             diag['energy_ratio_neg_over_data'] = round(diag['e_neg'] / (diag['e_data'] + 1e-12), 3)
             return m, diag
 
@@ -887,8 +917,8 @@ def main(which):
                 continue
             per, diags = [], []
             for s_ in SEEDS[:3]:
-                Ptr, Pcal, Pev = split(P, NTR, 20000, NEV, s_)
-                Qtr, Qcal, Qev = split(Q, NTR, 20000, NEV, s_)
+                Ptr, Pcal, Pev = split(P, NTR8, 20000, NEV, s_)
+                Qtr, Qcal, Qev = split(Q, NTR8, 20000, NEV, s_)
                 sP, sQ = sysd(Ptr, s_), sysd(Qtr, s_)
                 diags.append({'P': sP['diag'], 'Q': sQ['diag']})
                 sPcal, sPev, sPQ = sc(sP, Pcal), sc(sP, Pev), sc(sP, Qev)
@@ -904,6 +934,8 @@ def main(which):
             R['tests']['T8_published_NAE'][pname] = {
                 'construction': 'AE pretraining -> latent-space Langevin (On-Manifold Initialization) -> decode -> input-space Langevin -> normalized-energy objective',
                 'K_latent': K_LAT, 'K_input': K_INP, 'seeds': SEEDS[:3],
+                'epochs': EPOCHS, 'train_events_per_class': NTR8,
+                'scope_note': 'K and seeds are the registered values; epochs and training-set size were unspecified in the T8 registration and were reduced to fit the execution window — recorded here rather than declared in advance',
                 'convergence_diagnostic': {'energy_ratio_neg_over_data': [round(r_, 3) for r_ in ratios],
                                            'mean_ratio': round(float(np.mean(ratios)), 3),
                                            'reading': 'ratio near or below 1 indicates negatives reached comparable-energy regions; a ratio far above 1 means the chain did not reach the model distribution and the cell is UNINTERPRETABLE as a test of the remedy'},
