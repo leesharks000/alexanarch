@@ -327,6 +327,40 @@ def distill_full(teacher, Xtr, Xbkg_ev, Xwith_ev, seed):
 #   * the constituent pools are drawn from val.h5 AND test.h5, as registered.
 # ─────────────────────────────────────────────────────────────────────────────
 
+# ─────────────────────────────────────────────────────────────────────────────
+# T7 PRE-REGISTRATION — written and committed 2026-08-12 BEFORE any T7 run.
+#
+# WHY. v0.3 claimed "miss correlation is a property of the representation" from
+# T4, and the code audit withdrew it: the constituent panel and the engineered
+# panel differ in representation AND in task and class distributions together,
+# so representation was confounded with dataset. The audit named the fix — take
+# the SAME physical pair and encode it twice — and this is that test.
+#
+# DESIGN. One physical pair (top-tagging QCD vs top jets), two encodings of the
+# SAME events, same classes, same splits, same seeds:
+#   R1  leading-40 constituents, 120 dims (as used throughout v0.1-v0.3)
+#   R2  seven engineered jet observables computed FROM THE SAME EVENTS:
+#       jet mass, jet pT, constituent multiplicity above 1% pT fraction,
+#       girth (pT-weighted radial spread), leading-constituent pT fraction,
+#       pT dispersion, and the pT-weighted RMS of delta-R.
+#   Architectures AE, VAE, GMM; five seeds; thresholds on own held-out
+#   background at alpha in {1e-2, 1e-3}; RII phi between every architecture
+#   pair, in each representation.
+#
+# REGISTERED PREDICTION, stated before running so a miss is a result:
+#   If miss correlation is representation-conditioned, phi for a GIVEN
+#   architecture pair will differ substantially between R1 and R2 on these
+#   identical classes — specifically, AE~VAE phi will be near zero on R1
+#   (as measured in T4: 0.020) and materially higher on R2.
+#   If instead it is task-conditioned, phi will be similar across the two
+#   encodings, and the T4 finding was about the DATASETS rather than their
+#   representations — in which case the restated T4 claim also needs revising.
+#
+# LIMIT. Two encodings of one pair cannot establish a general law; they can
+# establish whether representation alone is sufficient to move phi, which is
+# exactly what the withdrawn claim asserted and what T4 could not separate.
+# ─────────────────────────────────────────────────────────────────────────────
+
 def main(which):
     R = load_state()
     t0 = time.time()
@@ -684,6 +718,66 @@ def main(which):
                 out['auc_P_on_Q']['mean'], out['auc_P_on_Q']['ci95_hier'],
                 out['auc_Q_on_P']['mean'], out['auc_Q_on_P']['ci95_hier'],
                 out['D_A@0.001']['mean'], out['D_A@0.001']['ci95_hier'], time.time() - t0), flush=True)
+            save(R)
+    if which == 'T7':
+        R['tests'].setdefault('T7', {})
+        topA = load_top('val.h5', 100000)
+        import h5py, hdf5plugin
+        def engineered(raw):
+            """Seven jet observables from the same leading-40 constituents."""
+            pt, eta, phi_ = raw[:, 0::3], raw[:, 1::3], raw[:, 2::3]
+            tot = pt.sum(1) + 1e-9
+            f = pt / tot[:, None]
+            dr = np.sqrt(eta ** 2 + phi_ ** 2)
+            mult = (f > 0.01).sum(1).astype(np.float32)
+            girth = (f * dr).sum(1)
+            lead = f.max(1)
+            disp = np.sqrt((f ** 2).sum(1))
+            rms = np.sqrt((f * dr ** 2).sum(1))
+            mass = np.sqrt(np.maximum(0.0, (tot ** 2) - ((pt * np.cos(phi_)).sum(1) ** 2
+                        + (pt * np.sin(phi_)).sum(1) ** 2 + (pt * np.sinh(eta)).sum(1) ** 2)))
+            return np.stack([mass, tot, mult, girth, lead, disp, rms], 1).astype(np.float32)
+        REPS = {'R1_constituents': {0: topA[0], 1: topA[1]},
+                'R2_engineered': {0: engineered(topA[0]), 1: engineered(topA[1])}}
+        ARCHS = ['AE', 'VAE', 'GMM']
+        for rname, cls in REPS.items():
+            if rname in R['tests']['T7']:
+                continue
+            P, Q = cls[0], cls[1]
+            masks = {a: {arch: [] for arch in ARCHS} for a in ALPHAS}
+            aucs = {arch: [] for arch in ARCHS}
+            for s_ in SEEDS:
+                Ptr, Pcal, Pev = split(P, NTR, 20000, NEV, s_)
+                Qtr, Qcal, Qev = split(Q, NTR, 20000, NEV, s_)
+                for arch in ARCHS:
+                    sysP = fit_system(arch, Ptr, s_)
+                    sPcal, sPev, sPQ = (system_score(sysP, Pcal), system_score(sysP, Pev),
+                                        system_score(sysP, Qev))
+                    aucs[arch].append(round(auc(sPev, sPQ), 4))
+                    for a in ALPHAS:
+                        masks[a][arch].append(sPQ <= np.quantile(sPcal, 1 - a))
+            out = {'auc_P_on_Q': {k: {'mean': round(float(np.mean(v)), 4), 'seed_values': v}
+                                  for k, v in aucs.items()}, 'dims': int(P.shape[1])}
+            for a in ALPHAS:
+                for i, A in enumerate(ARCHS):
+                    for B in ARCHS[i + 1:]:
+                        vals = []
+                        for k in range(len(SEEDS)):
+                            mA, mB = masks[a][A][k], masks[a][B][k]
+                            qA, qB, qAB = float(mA.mean()), float(mB.mean()), float((mA & mB).mean())
+                            vals.append(phi(qA, qB, qAB))
+                        vals = [v for v in vals if v is not None]
+                        r_ = np.random.default_rng(13)
+                        bs = r_.choice(np.asarray(vals, float), size=(4000, len(vals)), replace=True).mean(1)
+                        out['%s~%s@%g' % (A, B, a)] = {
+                            'phi_mean': round(float(np.mean(vals)), 4),
+                            'ci95_seeds': [round(float(np.percentile(bs, 2.5)), 4),
+                                           round(float(np.percentile(bs, 97.5)), 4)],
+                            'seed_values': [round(v, 4) for v in vals]}
+            R['tests']['T7'][rname] = out
+            print('T7 %-18s dims %3d | AE~VAE phi %.3f %s | AE~GMM %.3f  (%.0fs)' % (
+                rname, out['dims'], out['AE~VAE@0.01']['phi_mean'], out['AE~VAE@0.01']['ci95_seeds'],
+                out['AE~GMM@0.01']['phi_mean'], time.time() - t0), flush=True)
             save(R)
     save(R)
     print('elapsed %.0fs' % (time.time() - t0))
