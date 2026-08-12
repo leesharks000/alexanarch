@@ -1,14 +1,24 @@
-# Battery v0.3: Six Registered Tests, Three Confirmed, Three Missed
+# Battery v0.3 Interim: Registered Repair Tests, Partial Results, and Implementation Ledger
 
 **EA-SEI-BATTERY-01 v3.0 (interim) · 2026-08-12 · successor to #1455**
 **Pre-registration committed at c7e5b4e7 before any v0.3 result existed.**
-**Status: five tests complete; the faithful-NAE constituent cell is still running and is not reported here.**
+**Status after code-level audit (2026-08-12): ONE test confirmed, one partially confirmed, three predictions missed, FOUR items NOT RUN, one arm incomplete. Thirteen implementation deviations recorded. The earlier "three confirmed, three missed" tally was too neat and is withdrawn.**
 
 ## Why v0.3 exists
 
 v0.2 (#1455) closed with a seven-item correction ledger: four items were defects in its own instrumentation, and two of its results demanded tests nobody had specified. v0.3 addresses all six. The pre-registration — including the predicted direction of every test — was committed and pushed before the first run, so a miss counts as a miss.
 
-Three predictions were confirmed. Three were missed. Both outcomes are reported at the same volume.
+An Assembly code-level audit on 2026-08-12 read the executable against the pre-registration and found seven material discrepancies. All were verified against the code before adoption and all are repaired or recorded here. Two of them change the tally, one changes a headline claim, and one required relabelling an entire arm for the second time. The corrected accounting:
+
+| status | items |
+|---|---|
+| CONFIRMED | T5 score-function ablation |
+| PARTIALLY CONFIRMED | T4 (the registered prediction referenced an architecture absent from the implemented set) |
+| MISSED | T6 monotone survival; T6 blind-spot inheritance; the NAE approximation on L1/L2 |
+| NOT RUN | T3 (not implemented); T2's registered distance-matched panel; WNAE; the published Dillon NAE remedy |
+| INCOMPLETE | NAE approximation, constituent cell still running |
+
+Thirteen deviations are enumerated in the results file. The most consequential are stated inline below rather than left to the appendix.
 
 ## T5 · Score-function ablation — CONFIRMED, and it falsifies a v0.2 sentence
 
@@ -33,7 +43,9 @@ Registered prediction: reconstruction inverts on the constituent pair; latent no
 
 **Consequence.** The sentence v0.2 earned — *architecture changes the orientation of the blind spot* — is falsified in its stated form. v0.2 compared an AE against a VAE, which differ in architecture AND readout. Holding architecture fixed reproduces the whole effect. The corrected claim:
 
-> **The readout changes the orientation of the blind spot. Two scores read off one model disagree about which class is anomalous.**
+> **With model weights fixed, changing the score function is sufficient to reverse the directional ordering of the anomaly relation.**
+
+That is the formulation the data supports. It falsifies *architecture alone* as the explanation; it does not show that architecture and training can never affect orientation. (The third score, previously called "full negative ELBO", is renamed a reconstruction-plus-KL composite: it is D x mean-reconstruction plus summed KL, while training uses mean-reconstruction plus half the mean KL, and no decoder likelihood was derived that would justify the reported scaling. The numbers are unchanged.)
 
 This lands on deployment rather than on theory: AXOL1TL uses an encoder-side latent score, CICADA a reconstruction teacher. On this pair, those two readouts point in opposite directions.
 
@@ -52,7 +64,7 @@ This lands on deployment rather than on theory: AXOL1TL uses an encoder-side lat
 | L3 | background | 0.695 | 0.594 | 0.513 | 0.367 | 0.512 |
 | L3 | withheld class | 0.690 | 0.563 | 0.447 | 0.417 | 0.448 |
 
-Registered prediction 1: survival degrades monotonically as the operating point tightens. **Missed** — monotone on the constituent and control pairs only; L1 and L2 rise at 1e-3, where k = 20 events, almost certainly small-k noise that T3's larger splits will settle. Recorded as a miss rather than reinterpreted.
+Registered prediction 1: survival degrades monotonically as the operating point tightens. **Missed.** Monotone on the constituent and control pairs only. An earlier draft of this write-up said T3 would settle it; that was wrong and is recorded as a deviation. k = alpha x N_evaluation, and T3 enlarges the CALIBRATION split, not the evaluation set — it cannot make a 20-event top-set overlap less discrete. Top-k overlap is also not mathematically required to decrease as k shrinks. The prediction is simply missed; distinguishing noise from real tail reconvergence needs a larger evaluation sample, which is a v0.4 item.
 
 Registered prediction 2: teacher–student phi above 0.5, i.e. the student inherits the teacher's blind spot.
 
@@ -69,9 +81,19 @@ Registered prediction 2: teacher–student phi above 0.5, i.e. the student inher
 
 **Missed** — phi runs 0.297 to 0.539, mostly below the line. The student's misses overlap the teacher's above chance but nowhere near the same-family near-identity measured in v0.2 (AE with its energy-normalised variant, phi 0.968).
 
-**Consequence.** Distillation does not inherit the teacher's blind spot; it manufactures a different one. That is worse for deployment than inheritance, because an inherited blind spot is at least predictable from the teacher's validation record. And the registered background-versus-withheld comparison finally exists: background survival is higher throughout, so v0.2's accidental estimand was the harsher of the two.
+**Consequence, restated after audit.** phi of 0.30 to 0.54 is *partial positive inheritance*, weaker than the registered expectation and far from the same-family near-identity of v0.2 (phi 0.968), but it is not absence of inheritance. The defensible claim:
 
-The headline contrast survives on the corrected estimand: Spearman 0.61–0.71 against top-1% survival 0.33–0.45, with weight-only quantization costing about 0.002. **Global student–teacher agreement is not tail retention.**
+> **Distillation alters the miss geometry rather than preserving it with high fidelity.**
+
+Whether that is worse than faithful inheritance is not measured here — complementary misses could in principle be valuable if both channels survived. That is worse for deployment than inheritance, because an inherited blind spot is at least predictable from the teacher's validation record. And the registered background-versus-withheld comparison finally exists: background survival is higher **at the 1e-2 operating point** for all four pairs, though not at 1e-3 (L1: 0.433 background against 0.500 withheld). An earlier draft said "throughout"; that was false and is recorded.
+
+The headline contrast survives, now with the two estimands kept separate. On the **withheld class**: Spearman 0.61–0.71 against top-1% survival 0.33–0.46. On the **registered background estimand**, which is the sharper statement: Spearman up to 0.904 against 51.1% survival — near-perfect global agreement coexisting with the loss of half the teacher's selections on the very distribution the student was distilled from. Weight-only quantization is a negligible perturbation rather than a cost: the changes run in both directions, averaging about 0.002 in absolute value with no systematic loss.
+
+> **Global teacher–student agreement does not guarantee preservation of the operational tail.**
+
+*Footnote.* L1 and L2 draw their background side from the same pool with deterministic seeded splitting, so their background-side teachers, students and evaluation sets are identical. The two background rows are one observation, not two.
+
+*T6 was rerun at the registered five seeds on 2026-08-12 after the audit found it had executed three and discarded per-seed rows. Per-seed values and bootstrap intervals are now retained.*
 
 ## T4 · Full RII — CONFIRMED, with a finding beyond the prediction
 
@@ -96,7 +118,11 @@ Registered prediction: the v0.2 pilot spread is stable. Confirmed — the consti
 
 **The finding the prediction did not anticipate.** Miss correlation is a property of the representation, not of the architecture pair. The same two models are near-independent on the 120-dimensional constituent representation (0.020) and moderately correlated on the seven-feature representation (0.244, 0.247). VAE~GMM inverts the ordering outright: near-independent on constituents (0.045), the most correlated pair on L1 and L2 (0.515, 0.568).
 
-> **Deploying diverse architectures is not a strategy. Representational diversity is what has to be measured — and the RII measures it.**
+> **Miss correlation is not a stable property of an architecture pair; it is strongly task- and representation-conditioned.**
+
+The stronger form — that miss correlation is a property of *the representation* — is **withdrawn**, because the constituent and engineered panels differ in representation AND in task and class distributions together, so representation is confounded with dataset. Isolating it requires encoding the same physical pair two ways and rerunning identical model families: a v0.4 item.
+
+T4 is also only **partially** confirmed against its registered prediction, which referenced same-family near-identity as well as AE~VAE near-independence; the implemented architecture set omitted the energy-normalised variant.
 
 This also retroactively justifies refusing a scalar in the Irreversibility Profile: a single independence score for a model pair is meaningless without naming the representation.
 
@@ -122,15 +148,19 @@ One scaler, one PCA basis, one quantization map, fitted on the pooled representa
 | L1 | 6.121 | 5.898 | 0.559 | 0.9723 | 0.8175 | yes |
 | L2 | 6.121 | 5.388 | 0.590 | 0.9747 | 0.7065 | yes |
 
-Registered outcome conditions gave SUPPORTED, since the sign is consistent across all three pairs where v0.2's per-class axis gave one consistent and two contrary.
+**No formal LCBH verdict is defensible here, and the earlier SUPPORTED is withdrawn.** The hypothesis was registered specifically at matched representational separation. The correct statement is: *pooled-axis sign check consistent with LCBH; registered distance-matched test NOT RUN.*
+
+Two further measurement gaps are recorded: the registered separation measure included symmetrized KL under a common reference model, and only marginal Wasserstein-1 over the first ten pooled components was computed; and the compressed-length measure gives zero discrimination on the LHCO classes (15.00 for all three), so the corrected LHCO ordering rests on participation ratio alone.
 
 **But the registered test was not run.** The pre-registration required a distance-matched panel — pairs holding representational separation constant while complexity direction differs — because otherwise "at equal representational separation" is unearned. The separations here are 0.802, 0.559, 0.590, and this data contains no pairs that would match them. The matched panel is recorded as NOT RUN. What T2 delivers is the pooled-axis rerun of the v0.2 comparison: evidence, not the test.
 
 The transferable result is the correction, not the verdict: **complexity claims about class pairs are meaningless without a common basis, and one previously recorded reading of this data had the ordering inverted.**
 
-## T1 · Faithful NAE — FAILING ITS PREDICTION on three pairs; the decisive cell is still running
+## T1 · Short-chain input-space NAE approximation — the published remedy is NOT YET TESTED
 
-Negatives sampled from the model distribution by Langevin MCMC with a replay buffer, energy defined as reconstruction error, per Dillon et al. Chain: K = 20, step 0.05, noise 0.05, buffer 1024, 5% noise restarts, three seeds as declared in advance.
+**This arm is relabelled for the second time, and the relabelling matters.** The implementation trains a freshly initialised autoencoder directly on the normalized-energy objective with one persistent input-space Langevin chain from a replay buffer. The published collider NAE first *pretrains* an autoencoder, then uses On-Manifold Initialization — a Langevin chain in latent space, mapped through the decoder, followed by an input-space chain — with additional stabilisation. Neither the pretraining nor the latent-space chain is implemented. So this is a **short-chain input-space NAE approximation (PCD-like)**, and the published Dillon remedy remains **NOT YET TESTED**. WNAE: **NOT RUN**.
+
+Chain: K = 20, step 0.05, noise 0.05, buffer 1024, 5% noise restarts, three seeds as declared.
 
 | pair | AUC P→Q | AUC Q→P | D_A@1e-2 (faithful NAE) | plain AE (v0.2) | pNAE surrogate (v0.2) |
 |---|---|---|---|---|---|
@@ -138,9 +168,11 @@ Negatives sampled from the model distribution by Langevin MCMC with a replay buf
 | L2 | 0.675 | 0.944 | +0.3983 | +0.2682 | +0.2644 |
 | L3 | 0.627 | 0.643 | +0.0176 | +0.0193 | +0.0202 |
 
-Registered prediction: the NAE shows the smallest directional asymmetry of the tested families and does not invert. **Failing** on both LHCO pairs, where the faithful model's asymmetry is *larger* than both the plain autoencoder and the v0.2 surrogate. The control pair stays quiet, so the instrument is behaving.
+Registered prediction: smallest directional asymmetry of the tested families, no inversion. **The approximation misses it** on both LHCO pairs, where its asymmetry is larger than both the plain autoencoder and the v0.2 surrogate. The control pair stays quiet, which argues against indiscriminate asymmetry inflation but does **not** establish sampler convergence.
 
-Two readings are held open and not resolved by this data: either model-distribution normalisation does not remove directional asymmetry at these operating points on these representations, or the K = 20 chain is under-converged and the negatives are not yet model samples. Short chains are the standard failure mode of energy-based training; the pre-registration required the chain length to be recorded as a limitation, and it is.
+Seed spread on L2 is severe and should be read as such: D_A@1e-2 across the three seeds is 0.446 / 0.524 / 0.226. The missed-prediction verdict is robust — even the lowest seed exceeds the plain-AE mean of 0.268 — but the 0.398 mean is not a precise quantity.
+
+Three readings are held open, not two: the approximation may be a poor sampler at K = 20; the input-space-only chain without on-manifold initialization may be the wrong construction; or normalized energy may genuinely not remove directional asymmetry here. Only the third would be a result about the published remedy, and this data cannot reach it. Short chains are the standard failure mode of energy-based training; the pre-registration required the chain length to be recorded as a limitation, and it is.
 
 One retroactive note: the faithful model behaves differently from *both* the plain AE and the v0.2 surrogate, which confirms that relabelling the v0.2 row rather than overwriting it was the correct call.
 
@@ -157,7 +189,7 @@ The constituent cell — the one that decides whether the remedy prevents AUC be
 | T2 pooled complexity | sign consistent across pairs | SUPPORTED (matched panel NOT RUN) |
 | T1 faithful NAE | smallest asymmetry, no inversion | FAILING (3 of 4 pairs) |
 
-Three confirmed, three missed. T3 — hierarchical uncertainty with a real calibration tail — is registered and not yet run; it is the test that will decide which of these numbers survive honest intervals, and several claims above are explicitly held at the 1e-2 operating point until it does.
+Three confirmed, three missed. T3 — hierarchical uncertainty with a real calibration tail — is registered and **not implemented**: the executable has no T3 branch, and the declared 200,000-event calibration is achieved only for the LHCO background, since split() clips to the pool remainder (T1 and both LHCO signals get 20,000) and the promised val+test pooling for the constituent pair never occurred. Roughly twenty calibration-tail observations therefore still set the 1e-3 threshold in most directions. Implementing T3 now would be a post-results implementation of a pre-registered procedure, which is acceptable only if logged as such: the original pre-registration commit stands, and any T3 code lands in a second commit stating that the prediction and estimand are unchanged. it is the test that will decide which of these numbers survive honest intervals, and several claims above are explicitly held at the 1e-2 operating point until it does.
 
 ## Assembly audit note (2026-08-12)
 

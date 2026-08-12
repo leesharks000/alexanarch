@@ -360,12 +360,13 @@ def main(which):
             if pname in R['tests']['T6']:
                 continue
             per = []
-            for s_ in SEEDS[:3]:
+            for s_ in SEEDS:
                 Ptr, Pcal, Pev = split(P, NTR, CAL, NEV, s_)
                 Qtr, Qcal, Qev = split(Q, NTR, CAL, NEV, s_)
                 teacher = fit_system('AE', Ptr, s_)
                 per.append(distill_full(teacher, Ptr, Pev, Qev, s_))
-            agg = {'quantization': per[0]['quantization'], 'seeds': SEEDS[:3]}
+            agg = {'quantization': per[0]['quantization'], 'seeds': SEEDS,
+                   'per_seed': per}
             for sec in ('background', 'withheld_class'):
                 agg[sec] = {k: round(float(np.mean([d[sec][k] for d in per])), 4) for k in per[0][sec]}
             for a in ALPHAS:

@@ -141,7 +141,7 @@
       ]
      }
     },
-    "nelbo": {
+    "recon_plus_KL_composite": {
      "auc_P_on_Q": {
       "mean": 0.8426,
       "seed_values": [
@@ -329,7 +329,7 @@
       ]
      }
     },
-    "nelbo": {
+    "recon_plus_KL_composite": {
      "auc_P_on_Q": {
       "mean": 0.7956,
       "seed_values": [
@@ -517,7 +517,7 @@
       ]
      }
     },
-    "nelbo": {
+    "recon_plus_KL_composite": {
      "auc_P_on_Q": {
       "mean": 0.7748,
       "seed_values": [
@@ -705,7 +705,7 @@
       ]
      }
     },
-    "nelbo": {
+    "recon_plus_KL_composite": {
      "auc_P_on_Q": {
       "mean": 0.6717,
       "seed_values": [
@@ -766,200 +766,6 @@
        -0.0
       ]
      }
-    }
-   }
-  },
-  "T6": {
-   "T1": {
-    "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
-    "seeds": [
-     0,
-     1,
-     2
-    ],
-    "background": {
-     "spearman_student": 0.9037,
-     "spearman_quantized": 0.9036,
-     "survival@0.1": 0.718,
-     "survival_quantized@0.1": 0.7178,
-     "k@0.1": 2000.0,
-     "survival@0.01": 0.5183,
-     "survival_quantized@0.01": 0.515,
-     "k@0.01": 200.0,
-     "survival@0.001": 0.3,
-     "survival_quantized@0.001": 0.3,
-     "k@0.001": 20.0
-    },
-    "withheld_class": {
-     "spearman_student": 0.711,
-     "spearman_quantized": 0.7106,
-     "survival@0.1": 0.5465,
-     "survival_quantized@0.1": 0.5475,
-     "k@0.1": 2000.0,
-     "survival@0.01": 0.41,
-     "survival_quantized@0.01": 0.4117,
-     "k@0.01": 200.0,
-     "survival@0.001": 0.3,
-     "survival_quantized@0.001": 0.3167,
-     "k@0.001": 20.0
-    },
-    "miss_overlap@0.01": {
-     "q_teacher": 0.9713,
-     "q_student": 0.9705,
-     "q_both": 0.9553,
-     "delta_miss": 0.0126,
-     "phi": 0.447
-    },
-    "miss_overlap@0.001": {
-     "q_teacher": 0.9974,
-     "q_student": 0.9968,
-     "q_both": 0.9952,
-     "delta_miss": 0.001,
-     "phi": 0.3568
-    }
-   },
-   "L1": {
-    "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
-    "seeds": [
-     0,
-     1,
-     2
-    ],
-    "background": {
-     "spearman_student": 0.6074,
-     "spearman_quantized": 0.607,
-     "survival@0.1": 0.5055,
-     "survival_quantized@0.1": 0.5073,
-     "k@0.1": 2000.0,
-     "survival@0.01": 0.4133,
-     "survival_quantized@0.01": 0.4133,
-     "k@0.01": 200.0,
-     "survival@0.001": 0.4333,
-     "survival_quantized@0.001": 0.4333,
-     "k@0.001": 20.0
-    },
-    "withheld_class": {
-     "spearman_student": 0.6083,
-     "spearman_quantized": 0.6083,
-     "survival@0.1": 0.4482,
-     "survival_quantized@0.1": 0.4467,
-     "k@0.1": 2000.0,
-     "survival@0.01": 0.3267,
-     "survival_quantized@0.01": 0.3283,
-     "k@0.01": 200.0,
-     "survival@0.001": 0.5,
-     "survival_quantized@0.001": 0.5,
-     "k@0.001": 20.0
-    },
-    "miss_overlap@0.01": {
-     "q_teacher": 0.9714,
-     "q_student": 0.9733,
-     "q_both": 0.9539,
-     "delta_miss": 0.0083,
-     "phi": 0.3323
-    },
-    "miss_overlap@0.001": {
-     "q_teacher": 0.998,
-     "q_student": 0.998,
-     "q_both": 0.9968,
-     "delta_miss": 0.0007,
-     "phi": 0.4428
-    }
-   },
-   "L2": {
-    "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
-    "seeds": [
-     0,
-     1,
-     2
-    ],
-    "background": {
-     "spearman_student": 0.6074,
-     "spearman_quantized": 0.607,
-     "survival@0.1": 0.5055,
-     "survival_quantized@0.1": 0.5073,
-     "k@0.1": 2000.0,
-     "survival@0.01": 0.4133,
-     "survival_quantized@0.01": 0.4133,
-     "k@0.01": 200.0,
-     "survival@0.001": 0.4333,
-     "survival_quantized@0.001": 0.4333,
-     "k@0.001": 20.0
-    },
-    "withheld_class": {
-     "spearman_student": 0.6768,
-     "spearman_quantized": 0.6764,
-     "survival@0.1": 0.5172,
-     "survival_quantized@0.1": 0.517,
-     "k@0.1": 2000.0,
-     "survival@0.01": 0.3517,
-     "survival_quantized@0.01": 0.3483,
-     "k@0.01": 200.0,
-     "survival@0.001": 0.4,
-     "survival_quantized@0.001": 0.3833,
-     "k@0.001": 20.0
-    },
-    "miss_overlap@0.01": {
-     "q_teacher": 0.9762,
-     "q_student": 0.972,
-     "q_both": 0.957,
-     "delta_miss": 0.008,
-     "phi": 0.2975
-    },
-    "miss_overlap@0.001": {
-     "q_teacher": 0.9989,
-     "q_student": 0.9986,
-     "q_both": 0.998,
-     "delta_miss": 0.0005,
-     "phi": 0.5389
-    }
-   },
-   "L3": {
-    "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
-    "seeds": [
-     0,
-     1,
-     2
-    ],
-    "background": {
-     "spearman_student": 0.6954,
-     "spearman_quantized": 0.6955,
-     "survival@0.1": 0.5938,
-     "survival_quantized@0.1": 0.594,
-     "k@0.1": 2000.0,
-     "survival@0.01": 0.5133,
-     "survival_quantized@0.01": 0.5117,
-     "k@0.01": 200.0,
-     "survival@0.001": 0.3667,
-     "survival_quantized@0.001": 0.3667,
-     "k@0.001": 20.0
-    },
-    "withheld_class": {
-     "spearman_student": 0.6902,
-     "spearman_quantized": 0.6897,
-     "survival@0.1": 0.5632,
-     "survival_quantized@0.1": 0.563,
-     "k@0.1": 2000.0,
-     "survival@0.01": 0.4467,
-     "survival_quantized@0.01": 0.4483,
-     "k@0.01": 200.0,
-     "survival@0.001": 0.4167,
-     "survival_quantized@0.001": 0.4167,
-     "k@0.001": 20.0
-    },
-    "miss_overlap@0.01": {
-     "q_teacher": 0.9857,
-     "q_student": 0.9884,
-     "q_both": 0.9799,
-     "delta_miss": 0.0056,
-     "phi": 0.4371
-    },
-    "miss_overlap@0.001": {
-     "q_teacher": 0.9988,
-     "q_student": 0.9992,
-     "q_both": 0.9985,
-     "delta_miss": 0.0003,
-     "phi": 0.4035
     }
    }
   },
@@ -2792,7 +2598,2333 @@
     "note": "Registered outcome conditions: SUPPORTED if lower-complexity classes are assimilated more consistently in sign across pairs; FALSIFIED if consistently the opposite; INCONCLUSIVE if the sign varies by pair. Separation is NOT matched across these pairs, so this is the pooled-axis rerun of the v0.2 comparison, not the distance-matched test \u2014 a matched panel requires pairs holding W1 approximately constant while complexity direction differs, which this data does not contain. The matched panel is therefore registered as NOT RUN."
    }
   },
-  "T1_faithful_NAE": {
+  "T6": {
+   "T1": {
+    "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
+    "seeds": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "per_seed": [
+     {
+      "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
+      "background": {
+       "spearman_student": 0.9051,
+       "spearman_quantized": 0.905,
+       "survival@0.1": 0.709,
+       "survival_quantized@0.1": 0.7085,
+       "k@0.1": 2000,
+       "survival@0.01": 0.515,
+       "survival_quantized@0.01": 0.51,
+       "k@0.01": 200,
+       "survival@0.001": 0.15,
+       "survival_quantized@0.001": 0.15,
+       "k@0.001": 20
+      },
+      "withheld_class": {
+       "spearman_student": 0.7063,
+       "spearman_quantized": 0.7056,
+       "survival@0.1": 0.529,
+       "survival_quantized@0.1": 0.532,
+       "k@0.1": 2000,
+       "survival@0.01": 0.405,
+       "survival_quantized@0.01": 0.4,
+       "k@0.01": 200,
+       "survival@0.001": 0.25,
+       "survival_quantized@0.001": 0.25,
+       "k@0.001": 20
+      },
+      "miss_overlap@0.01": {
+       "q_teacher": 0.972,
+       "q_student": 0.973,
+       "q_both": 0.9577,
+       "delta_miss": 0.0119,
+       "phi": 0.4457
+      },
+      "miss_overlap@0.001": {
+       "q_teacher": 0.9978,
+       "q_student": 0.9969,
+       "q_both": 0.9957,
+       "delta_miss": 0.001,
+       "phi": 0.377
+      }
+     },
+     {
+      "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
+      "background": {
+       "spearman_student": 0.909,
+       "spearman_quantized": 0.909,
+       "survival@0.1": 0.7305,
+       "survival_quantized@0.1": 0.732,
+       "k@0.1": 2000,
+       "survival@0.01": 0.51,
+       "survival_quantized@0.01": 0.505,
+       "k@0.01": 200,
+       "survival@0.001": 0.45,
+       "survival_quantized@0.001": 0.45,
+       "k@0.001": 20
+      },
+      "withheld_class": {
+       "spearman_student": 0.73,
+       "spearman_quantized": 0.7298,
+       "survival@0.1": 0.565,
+       "survival_quantized@0.1": 0.5655,
+       "k@0.1": 2000,
+       "survival@0.01": 0.415,
+       "survival_quantized@0.01": 0.42,
+       "k@0.01": 200,
+       "survival@0.001": 0.35,
+       "survival_quantized@0.001": 0.4,
+       "k@0.001": 20
+      },
+      "miss_overlap@0.01": {
+       "q_teacher": 0.9695,
+       "q_student": 0.9708,
+       "q_both": 0.9545,
+       "delta_miss": 0.0133,
+       "phi": 0.458
+      },
+      "miss_overlap@0.001": {
+       "q_teacher": 0.9975,
+       "q_student": 0.9976,
+       "q_both": 0.9961,
+       "delta_miss": 0.001,
+       "phi": 0.4068
+      }
+     },
+     {
+      "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
+      "background": {
+       "spearman_student": 0.8969,
+       "spearman_quantized": 0.8967,
+       "survival@0.1": 0.7145,
+       "survival_quantized@0.1": 0.713,
+       "k@0.1": 2000,
+       "survival@0.01": 0.53,
+       "survival_quantized@0.01": 0.53,
+       "k@0.01": 200,
+       "survival@0.001": 0.3,
+       "survival_quantized@0.001": 0.3,
+       "k@0.001": 20
+      },
+      "withheld_class": {
+       "spearman_student": 0.6968,
+       "spearman_quantized": 0.6963,
+       "survival@0.1": 0.5455,
+       "survival_quantized@0.1": 0.545,
+       "k@0.1": 2000,
+       "survival@0.01": 0.41,
+       "survival_quantized@0.01": 0.415,
+       "k@0.01": 200,
+       "survival@0.001": 0.3,
+       "survival_quantized@0.001": 0.3,
+       "k@0.001": 20
+      },
+      "miss_overlap@0.01": {
+       "q_teacher": 0.9724,
+       "q_student": 0.9678,
+       "q_both": 0.9537,
+       "delta_miss": 0.0127,
+       "phi": 0.4374
+      },
+      "miss_overlap@0.001": {
+       "q_teacher": 0.9969,
+       "q_student": 0.9958,
+       "q_both": 0.9937,
+       "delta_miss": 0.001,
+       "phi": 0.2867
+      }
+     },
+     {
+      "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
+      "background": {
+       "spearman_student": 0.8995,
+       "spearman_quantized": 0.8995,
+       "survival@0.1": 0.709,
+       "survival_quantized@0.1": 0.71,
+       "k@0.1": 2000,
+       "survival@0.01": 0.515,
+       "survival_quantized@0.01": 0.515,
+       "k@0.01": 200,
+       "survival@0.001": 0.5,
+       "survival_quantized@0.001": 0.5,
+       "k@0.001": 20
+      },
+      "withheld_class": {
+       "spearman_student": 0.7058,
+       "spearman_quantized": 0.7053,
+       "survival@0.1": 0.537,
+       "survival_quantized@0.1": 0.5375,
+       "k@0.1": 2000,
+       "survival@0.01": 0.415,
+       "survival_quantized@0.01": 0.415,
+       "k@0.01": 200,
+       "survival@0.001": 0.2,
+       "survival_quantized@0.001": 0.2,
+       "k@0.001": 20
+      },
+      "miss_overlap@0.01": {
+       "q_teacher": 0.9705,
+       "q_student": 0.9689,
+       "q_both": 0.9537,
+       "delta_miss": 0.0134,
+       "phi": 0.4556
+      },
+      "miss_overlap@0.001": {
+       "q_teacher": 0.9972,
+       "q_student": 0.997,
+       "q_both": 0.9952,
+       "delta_miss": 0.0009,
+       "phi": 0.314
+      }
+     },
+     {
+      "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
+      "background": {
+       "spearman_student": 0.8998,
+       "spearman_quantized": 0.8997,
+       "survival@0.1": 0.719,
+       "survival_quantized@0.1": 0.719,
+       "k@0.1": 2000,
+       "survival@0.01": 0.485,
+       "survival_quantized@0.01": 0.495,
+       "k@0.01": 200,
+       "survival@0.001": 0.3,
+       "survival_quantized@0.001": 0.25,
+       "k@0.001": 20
+      },
+      "withheld_class": {
+       "spearman_student": 0.697,
+       "spearman_quantized": 0.6961,
+       "survival@0.1": 0.543,
+       "survival_quantized@0.1": 0.5395,
+       "k@0.1": 2000,
+       "survival@0.01": 0.415,
+       "survival_quantized@0.01": 0.415,
+       "k@0.01": 200,
+       "survival@0.001": 0.25,
+       "survival_quantized@0.001": 0.25,
+       "k@0.001": 20
+      },
+      "miss_overlap@0.01": {
+       "q_teacher": 0.9712,
+       "q_student": 0.9698,
+       "q_both": 0.9537,
+       "delta_miss": 0.0118,
+       "phi": 0.4137
+      },
+      "miss_overlap@0.001": {
+       "q_teacher": 0.9976,
+       "q_student": 0.9967,
+       "q_both": 0.9951,
+       "delta_miss": 0.0009,
+       "phi": 0.3146
+      }
+     }
+    ],
+    "background": {
+     "spearman_student": 0.9021,
+     "spearman_quantized": 0.902,
+     "survival@0.1": 0.7164,
+     "survival_quantized@0.1": 0.7165,
+     "k@0.1": 2000.0,
+     "survival@0.01": 0.511,
+     "survival_quantized@0.01": 0.511,
+     "k@0.01": 200.0,
+     "survival@0.001": 0.34,
+     "survival_quantized@0.001": 0.33,
+     "k@0.001": 20.0
+    },
+    "withheld_class": {
+     "spearman_student": 0.7072,
+     "spearman_quantized": 0.7066,
+     "survival@0.1": 0.5439,
+     "survival_quantized@0.1": 0.5439,
+     "k@0.1": 2000.0,
+     "survival@0.01": 0.412,
+     "survival_quantized@0.01": 0.413,
+     "k@0.01": 200.0,
+     "survival@0.001": 0.27,
+     "survival_quantized@0.001": 0.28,
+     "k@0.001": 20.0
+    },
+    "miss_overlap@0.01": {
+     "q_teacher": 0.9711,
+     "q_student": 0.9701,
+     "q_both": 0.9547,
+     "delta_miss": 0.0126,
+     "phi": 0.4421
+    },
+    "miss_overlap@0.001": {
+     "q_teacher": 0.9974,
+     "q_student": 0.9968,
+     "q_both": 0.9952,
+     "delta_miss": 0.001,
+     "phi": 0.3398
+    },
+    "with_intervals": {
+     "background": {
+      "spearman_student": {
+       "mean": 0.9021,
+       "ci95_seeds": [
+        0.8985,
+        0.9063
+       ],
+       "seed_values": [
+        0.9051,
+        0.909,
+        0.8969,
+        0.8995,
+        0.8998
+       ]
+      },
+      "spearman_quantized": {
+       "mean": 0.902,
+       "ci95_seeds": [
+        0.8984,
+        0.9063
+       ],
+       "seed_values": [
+        0.905,
+        0.909,
+        0.8967,
+        0.8995,
+        0.8997
+       ]
+      },
+      "survival@0.1": {
+       "mean": 0.7164,
+       "ci95_seeds": [
+        0.7101,
+        0.7239
+       ],
+       "seed_values": [
+        0.709,
+        0.7305,
+        0.7145,
+        0.709,
+        0.719
+       ]
+      },
+      "survival_quantized@0.1": {
+       "mean": 0.7165,
+       "ci95_seeds": [
+        0.71,
+        0.7247
+       ],
+       "seed_values": [
+        0.7085,
+        0.732,
+        0.713,
+        0.71,
+        0.719
+       ]
+      },
+      "k@0.1": {
+       "mean": 2000.0,
+       "ci95_seeds": [
+        2000.0,
+        2000.0
+       ],
+       "seed_values": [
+        2000,
+        2000,
+        2000,
+        2000,
+        2000
+       ]
+      },
+      "survival@0.01": {
+       "mean": 0.511,
+       "ci95_seeds": [
+        0.496,
+        0.523
+       ],
+       "seed_values": [
+        0.515,
+        0.51,
+        0.53,
+        0.515,
+        0.485
+       ]
+      },
+      "survival_quantized@0.01": {
+       "mean": 0.511,
+       "ci95_seeds": [
+        0.501,
+        0.522
+       ],
+       "seed_values": [
+        0.51,
+        0.505,
+        0.53,
+        0.515,
+        0.495
+       ]
+      },
+      "k@0.01": {
+       "mean": 200.0,
+       "ci95_seeds": [
+        200.0,
+        200.0
+       ],
+       "seed_values": [
+        200,
+        200,
+        200,
+        200,
+        200
+       ]
+      },
+      "survival@0.001": {
+       "mean": 0.34,
+       "ci95_seeds": [
+        0.24,
+        0.45
+       ],
+       "seed_values": [
+        0.15,
+        0.45,
+        0.3,
+        0.5,
+        0.3
+       ]
+      },
+      "survival_quantized@0.001": {
+       "mean": 0.33,
+       "ci95_seeds": [
+        0.22,
+        0.44
+       ],
+       "seed_values": [
+        0.15,
+        0.45,
+        0.3,
+        0.5,
+        0.25
+       ]
+      },
+      "k@0.001": {
+       "mean": 20.0,
+       "ci95_seeds": [
+        20.0,
+        20.0
+       ],
+       "seed_values": [
+        20,
+        20,
+        20,
+        20,
+        20
+       ]
+      }
+     },
+     "withheld_class": {
+      "spearman_student": {
+       "mean": 0.7072,
+       "ci95_seeds": [
+        0.6987,
+        0.7187
+       ],
+       "seed_values": [
+        0.7063,
+        0.73,
+        0.6968,
+        0.7058,
+        0.697
+       ]
+      },
+      "spearman_quantized": {
+       "mean": 0.7066,
+       "ci95_seeds": [
+        0.698,
+        0.7183
+       ],
+       "seed_values": [
+        0.7056,
+        0.7298,
+        0.6963,
+        0.7053,
+        0.6961
+       ]
+      },
+      "survival@0.1": {
+       "mean": 0.5439,
+       "ci95_seeds": [
+        0.5346,
+        0.555
+       ],
+       "seed_values": [
+        0.529,
+        0.565,
+        0.5455,
+        0.537,
+        0.543
+       ]
+      },
+      "survival_quantized@0.1": {
+       "mean": 0.5439,
+       "ci95_seeds": [
+        0.5357,
+        0.5547
+       ],
+       "seed_values": [
+        0.532,
+        0.5655,
+        0.545,
+        0.5375,
+        0.5395
+       ]
+      },
+      "k@0.1": {
+       "mean": 2000.0,
+       "ci95_seeds": [
+        2000.0,
+        2000.0
+       ],
+       "seed_values": [
+        2000,
+        2000,
+        2000,
+        2000,
+        2000
+       ]
+      },
+      "survival@0.01": {
+       "mean": 0.412,
+       "ci95_seeds": [
+        0.408,
+        0.415
+       ],
+       "seed_values": [
+        0.405,
+        0.415,
+        0.41,
+        0.415,
+        0.415
+       ]
+      },
+      "survival_quantized@0.01": {
+       "mean": 0.413,
+       "ci95_seeds": [
+        0.406,
+        0.418
+       ],
+       "seed_values": [
+        0.4,
+        0.42,
+        0.415,
+        0.415,
+        0.415
+       ]
+      },
+      "k@0.01": {
+       "mean": 200.0,
+       "ci95_seeds": [
+        200.0,
+        200.0
+       ],
+       "seed_values": [
+        200,
+        200,
+        200,
+        200,
+        200
+       ]
+      },
+      "survival@0.001": {
+       "mean": 0.27,
+       "ci95_seeds": [
+        0.23,
+        0.32
+       ],
+       "seed_values": [
+        0.25,
+        0.35,
+        0.3,
+        0.2,
+        0.25
+       ]
+      },
+      "survival_quantized@0.001": {
+       "mean": 0.28,
+       "ci95_seeds": [
+        0.23,
+        0.34
+       ],
+       "seed_values": [
+        0.25,
+        0.4,
+        0.3,
+        0.2,
+        0.25
+       ]
+      },
+      "k@0.001": {
+       "mean": 20.0,
+       "ci95_seeds": [
+        20.0,
+        20.0
+       ],
+       "seed_values": [
+        20,
+        20,
+        20,
+        20,
+        20
+       ]
+      }
+     }
+    }
+   },
+   "L1": {
+    "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
+    "seeds": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "per_seed": [
+     {
+      "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
+      "background": {
+       "spearman_student": 0.6117,
+       "spearman_quantized": 0.6119,
+       "survival@0.1": 0.5065,
+       "survival_quantized@0.1": 0.5075,
+       "k@0.1": 2000,
+       "survival@0.01": 0.425,
+       "survival_quantized@0.01": 0.425,
+       "k@0.01": 200,
+       "survival@0.001": 0.5,
+       "survival_quantized@0.001": 0.5,
+       "k@0.001": 20
+      },
+      "withheld_class": {
+       "spearman_student": 0.6016,
+       "spearman_quantized": 0.6012,
+       "survival@0.1": 0.4905,
+       "survival_quantized@0.1": 0.488,
+       "k@0.1": 2000,
+       "survival@0.01": 0.36,
+       "survival_quantized@0.01": 0.36,
+       "k@0.01": 200,
+       "survival@0.001": 0.35,
+       "survival_quantized@0.001": 0.35,
+       "k@0.001": 20
+      },
+      "miss_overlap@0.01": {
+       "q_teacher": 0.9704,
+       "q_student": 0.98,
+       "q_both": 0.9596,
+       "delta_miss": 0.0086,
+       "phi": 0.3628
+      },
+      "miss_overlap@0.001": {
+       "q_teacher": 0.9978,
+       "q_student": 0.9988,
+       "q_both": 0.9971,
+       "delta_miss": 0.0005,
+       "phi": 0.3066
+      }
+     },
+     {
+      "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
+      "background": {
+       "spearman_student": 0.5858,
+       "spearman_quantized": 0.5849,
+       "survival@0.1": 0.4985,
+       "survival_quantized@0.1": 0.4995,
+       "k@0.1": 2000,
+       "survival@0.01": 0.435,
+       "survival_quantized@0.01": 0.44,
+       "k@0.01": 200,
+       "survival@0.001": 0.45,
+       "survival_quantized@0.001": 0.45,
+       "k@0.001": 20
+      },
+      "withheld_class": {
+       "spearman_student": 0.5677,
+       "spearman_quantized": 0.569,
+       "survival@0.1": 0.421,
+       "survival_quantized@0.1": 0.4225,
+       "k@0.1": 2000,
+       "survival@0.01": 0.36,
+       "survival_quantized@0.01": 0.365,
+       "k@0.01": 200,
+       "survival@0.001": 0.7,
+       "survival_quantized@0.001": 0.7,
+       "k@0.001": 20
+      },
+      "miss_overlap@0.01": {
+       "q_teacher": 0.979,
+       "q_student": 0.99,
+       "q_both": 0.9742,
+       "delta_miss": 0.0049,
+       "phi": 0.3476
+      },
+      "miss_overlap@0.001": {
+       "q_teacher": 0.999,
+       "q_student": 0.9987,
+       "q_both": 0.9985,
+       "delta_miss": 0.0008,
+       "phi": 0.7313
+      }
+     },
+     {
+      "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
+      "background": {
+       "spearman_student": 0.6246,
+       "spearman_quantized": 0.6242,
+       "survival@0.1": 0.5115,
+       "survival_quantized@0.1": 0.515,
+       "k@0.1": 2000,
+       "survival@0.01": 0.38,
+       "survival_quantized@0.01": 0.375,
+       "k@0.01": 200,
+       "survival@0.001": 0.35,
+       "survival_quantized@0.001": 0.35,
+       "k@0.001": 20
+      },
+      "withheld_class": {
+       "spearman_student": 0.6557,
+       "spearman_quantized": 0.6546,
+       "survival@0.1": 0.433,
+       "survival_quantized@0.1": 0.4295,
+       "k@0.1": 2000,
+       "survival@0.01": 0.26,
+       "survival_quantized@0.01": 0.26,
+       "k@0.01": 200,
+       "survival@0.001": 0.45,
+       "survival_quantized@0.001": 0.45,
+       "k@0.001": 20
+      },
+      "miss_overlap@0.01": {
+       "q_teacher": 0.9647,
+       "q_student": 0.9499,
+       "q_both": 0.928,
+       "delta_miss": 0.0115,
+       "phi": 0.2866
+      },
+      "miss_overlap@0.001": {
+       "q_teacher": 0.9973,
+       "q_student": 0.9965,
+       "q_both": 0.9947,
+       "delta_miss": 0.0009,
+       "phi": 0.2906
+      }
+     },
+     {
+      "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
+      "background": {
+       "spearman_student": 0.5774,
+       "spearman_quantized": 0.5774,
+       "survival@0.1": 0.487,
+       "survival_quantized@0.1": 0.4875,
+       "k@0.1": 2000,
+       "survival@0.01": 0.36,
+       "survival_quantized@0.01": 0.355,
+       "k@0.01": 200,
+       "survival@0.001": 0.4,
+       "survival_quantized@0.001": 0.4,
+       "k@0.001": 20
+      },
+      "withheld_class": {
+       "spearman_student": 0.601,
+       "spearman_quantized": 0.6,
+       "survival@0.1": 0.4505,
+       "survival_quantized@0.1": 0.451,
+       "k@0.1": 2000,
+       "survival@0.01": 0.245,
+       "survival_quantized@0.01": 0.25,
+       "k@0.01": 200,
+       "survival@0.001": 0.35,
+       "survival_quantized@0.001": 0.35,
+       "k@0.001": 20
+      },
+      "miss_overlap@0.01": {
+       "q_teacher": 0.9691,
+       "q_student": 0.9501,
+       "q_both": 0.9326,
+       "delta_miss": 0.0119,
+       "phi": 0.3147
+      },
+      "miss_overlap@0.001": {
+       "q_teacher": 0.998,
+       "q_student": 0.9979,
+       "q_both": 0.9963,
+       "delta_miss": 0.0005,
+       "phi": 0.2394
+      }
+     },
+     {
+      "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
+      "background": {
+       "spearman_student": 0.725,
+       "spearman_quantized": 0.7248,
+       "survival@0.1": 0.602,
+       "survival_quantized@0.1": 0.601,
+       "k@0.1": 2000,
+       "survival@0.01": 0.54,
+       "survival_quantized@0.01": 0.53,
+       "k@0.01": 200,
+       "survival@0.001": 0.35,
+       "survival_quantized@0.001": 0.35,
+       "k@0.001": 20
+      },
+      "withheld_class": {
+       "spearman_student": 0.5154,
+       "spearman_quantized": 0.5159,
+       "survival@0.1": 0.4415,
+       "survival_quantized@0.1": 0.4395,
+       "k@0.1": 2000,
+       "survival@0.01": 0.405,
+       "survival_quantized@0.01": 0.41,
+       "k@0.01": 200,
+       "survival@0.001": 0.25,
+       "survival_quantized@0.001": 0.25,
+       "k@0.001": 20
+      },
+      "miss_overlap@0.01": {
+       "q_teacher": 0.9836,
+       "q_student": 0.9852,
+       "q_both": 0.975,
+       "delta_miss": 0.006,
+       "phi": 0.3917
+      },
+      "miss_overlap@0.001": {
+       "q_teacher": 0.9987,
+       "q_student": 0.9986,
+       "q_both": 0.9978,
+       "delta_miss": 0.0004,
+       "phi": 0.3327
+      }
+     }
+    ],
+    "background": {
+     "spearman_student": 0.6249,
+     "spearman_quantized": 0.6246,
+     "survival@0.1": 0.5211,
+     "survival_quantized@0.1": 0.5221,
+     "k@0.1": 2000.0,
+     "survival@0.01": 0.428,
+     "survival_quantized@0.01": 0.425,
+     "k@0.01": 200.0,
+     "survival@0.001": 0.41,
+     "survival_quantized@0.001": 0.41,
+     "k@0.001": 20.0
+    },
+    "withheld_class": {
+     "spearman_student": 0.5883,
+     "spearman_quantized": 0.5881,
+     "survival@0.1": 0.4473,
+     "survival_quantized@0.1": 0.4461,
+     "k@0.1": 2000.0,
+     "survival@0.01": 0.326,
+     "survival_quantized@0.01": 0.329,
+     "k@0.01": 200.0,
+     "survival@0.001": 0.42,
+     "survival_quantized@0.001": 0.42,
+     "k@0.001": 20.0
+    },
+    "miss_overlap@0.01": {
+     "q_teacher": 0.9734,
+     "q_student": 0.971,
+     "q_both": 0.9539,
+     "delta_miss": 0.0086,
+     "phi": 0.3407
+    },
+    "miss_overlap@0.001": {
+     "q_teacher": 0.9982,
+     "q_student": 0.9981,
+     "q_both": 0.9969,
+     "delta_miss": 0.0006,
+     "phi": 0.3801
+    },
+    "with_intervals": {
+     "background": {
+      "spearman_student": {
+       "mean": 0.6249,
+       "ci95_seeds": [
+        0.5876,
+        0.6771
+       ],
+       "seed_values": [
+        0.6117,
+        0.5858,
+        0.6246,
+        0.5774,
+        0.725
+       ]
+      },
+      "spearman_quantized": {
+       "mean": 0.6246,
+       "ci95_seeds": [
+        0.5873,
+        0.6767
+       ],
+       "seed_values": [
+        0.6119,
+        0.5849,
+        0.6242,
+        0.5774,
+        0.7248
+       ]
+      },
+      "survival@0.1": {
+       "mean": 0.5211,
+       "ci95_seeds": [
+        0.4942,
+        0.5632
+       ],
+       "seed_values": [
+        0.5065,
+        0.4985,
+        0.5115,
+        0.487,
+        0.602
+       ]
+      },
+      "survival_quantized@0.1": {
+       "mean": 0.5221,
+       "ci95_seeds": [
+        0.4954,
+        0.5635
+       ],
+       "seed_values": [
+        0.5075,
+        0.4995,
+        0.515,
+        0.4875,
+        0.601
+       ]
+      },
+      "k@0.1": {
+       "mean": 2000.0,
+       "ci95_seeds": [
+        2000.0,
+        2000.0
+       ],
+       "seed_values": [
+        2000,
+        2000,
+        2000,
+        2000,
+        2000
+       ]
+      },
+      "survival@0.01": {
+       "mean": 0.428,
+       "ci95_seeds": [
+        0.379,
+        0.487
+       ],
+       "seed_values": [
+        0.425,
+        0.435,
+        0.38,
+        0.36,
+        0.54
+       ]
+      },
+      "survival_quantized@0.01": {
+       "mean": 0.425,
+       "ci95_seeds": [
+        0.376,
+        0.481
+       ],
+       "seed_values": [
+        0.425,
+        0.44,
+        0.375,
+        0.355,
+        0.53
+       ]
+      },
+      "k@0.01": {
+       "mean": 200.0,
+       "ci95_seeds": [
+        200.0,
+        200.0
+       ],
+       "seed_values": [
+        200,
+        200,
+        200,
+        200,
+        200
+       ]
+      },
+      "survival@0.001": {
+       "mean": 0.41,
+       "ci95_seeds": [
+        0.36,
+        0.46
+       ],
+       "seed_values": [
+        0.5,
+        0.45,
+        0.35,
+        0.4,
+        0.35
+       ]
+      },
+      "survival_quantized@0.001": {
+       "mean": 0.41,
+       "ci95_seeds": [
+        0.36,
+        0.46
+       ],
+       "seed_values": [
+        0.5,
+        0.45,
+        0.35,
+        0.4,
+        0.35
+       ]
+      },
+      "k@0.001": {
+       "mean": 20.0,
+       "ci95_seeds": [
+        20.0,
+        20.0
+       ],
+       "seed_values": [
+        20,
+        20,
+        20,
+        20,
+        20
+       ]
+      }
+     },
+     "withheld_class": {
+      "spearman_student": {
+       "mean": 0.5883,
+       "ci95_seeds": [
+        0.5435,
+        0.6273
+       ],
+       "seed_values": [
+        0.6016,
+        0.5677,
+        0.6557,
+        0.601,
+        0.5154
+       ]
+      },
+      "spearman_quantized": {
+       "mean": 0.5881,
+       "ci95_seeds": [
+        0.5436,
+        0.6268
+       ],
+       "seed_values": [
+        0.6012,
+        0.569,
+        0.6546,
+        0.6,
+        0.5159
+       ]
+      },
+      "survival@0.1": {
+       "mean": 0.4473,
+       "ci95_seeds": [
+        0.4293,
+        0.4709
+       ],
+       "seed_values": [
+        0.4905,
+        0.421,
+        0.433,
+        0.4505,
+        0.4415
+       ]
+      },
+      "survival_quantized@0.1": {
+       "mean": 0.4461,
+       "ci95_seeds": [
+        0.4287,
+        0.4686
+       ],
+       "seed_values": [
+        0.488,
+        0.4225,
+        0.4295,
+        0.451,
+        0.4395
+       ]
+      },
+      "k@0.1": {
+       "mean": 2000.0,
+       "ci95_seeds": [
+        2000.0,
+        2000.0
+       ],
+       "seed_values": [
+        2000,
+        2000,
+        2000,
+        2000,
+        2000
+       ]
+      },
+      "survival@0.01": {
+       "mean": 0.326,
+       "ci95_seeds": [
+        0.271,
+        0.378
+       ],
+       "seed_values": [
+        0.36,
+        0.36,
+        0.26,
+        0.245,
+        0.405
+       ]
+      },
+      "survival_quantized@0.01": {
+       "mean": 0.329,
+       "ci95_seeds": [
+        0.275,
+        0.382
+       ],
+       "seed_values": [
+        0.36,
+        0.365,
+        0.26,
+        0.25,
+        0.41
+       ]
+      },
+      "k@0.01": {
+       "mean": 200.0,
+       "ci95_seeds": [
+        200.0,
+        200.0
+       ],
+       "seed_values": [
+        200,
+        200,
+        200,
+        200,
+        200
+       ]
+      },
+      "survival@0.001": {
+       "mean": 0.42,
+       "ci95_seeds": [
+        0.31,
+        0.56
+       ],
+       "seed_values": [
+        0.35,
+        0.7,
+        0.45,
+        0.35,
+        0.25
+       ]
+      },
+      "survival_quantized@0.001": {
+       "mean": 0.42,
+       "ci95_seeds": [
+        0.31,
+        0.56
+       ],
+       "seed_values": [
+        0.35,
+        0.7,
+        0.45,
+        0.35,
+        0.25
+       ]
+      },
+      "k@0.001": {
+       "mean": 20.0,
+       "ci95_seeds": [
+        20.0,
+        20.0
+       ],
+       "seed_values": [
+        20,
+        20,
+        20,
+        20,
+        20
+       ]
+      }
+     }
+    }
+   },
+   "L2": {
+    "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
+    "seeds": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "per_seed": [
+     {
+      "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
+      "background": {
+       "spearman_student": 0.6117,
+       "spearman_quantized": 0.6119,
+       "survival@0.1": 0.5065,
+       "survival_quantized@0.1": 0.5075,
+       "k@0.1": 2000,
+       "survival@0.01": 0.425,
+       "survival_quantized@0.01": 0.425,
+       "k@0.01": 200,
+       "survival@0.001": 0.5,
+       "survival_quantized@0.001": 0.5,
+       "k@0.001": 20
+      },
+      "withheld_class": {
+       "spearman_student": 0.7066,
+       "spearman_quantized": 0.7054,
+       "survival@0.1": 0.462,
+       "survival_quantized@0.1": 0.4605,
+       "k@0.1": 2000,
+       "survival@0.01": 0.39,
+       "survival_quantized@0.01": 0.39,
+       "k@0.01": 200,
+       "survival@0.001": 0.4,
+       "survival_quantized@0.001": 0.35,
+       "k@0.001": 20
+      },
+      "miss_overlap@0.01": {
+       "q_teacher": 0.971,
+       "q_student": 0.9809,
+       "q_both": 0.9597,
+       "delta_miss": 0.0072,
+       "phi": 0.3133
+      },
+      "miss_overlap@0.001": {
+       "q_teacher": 0.9984,
+       "q_student": 0.9989,
+       "q_both": 0.9979,
+       "delta_miss": 0.0005,
+       "phi": 0.3821
+      }
+     },
+     {
+      "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
+      "background": {
+       "spearman_student": 0.5858,
+       "spearman_quantized": 0.5849,
+       "survival@0.1": 0.4985,
+       "survival_quantized@0.1": 0.4995,
+       "k@0.1": 2000,
+       "survival@0.01": 0.435,
+       "survival_quantized@0.01": 0.44,
+       "k@0.01": 200,
+       "survival@0.001": 0.45,
+       "survival_quantized@0.001": 0.45,
+       "k@0.001": 20
+      },
+      "withheld_class": {
+       "spearman_student": 0.6143,
+       "spearman_quantized": 0.615,
+       "survival@0.1": 0.521,
+       "survival_quantized@0.1": 0.524,
+       "k@0.1": 2000,
+       "survival@0.01": 0.305,
+       "survival_quantized@0.01": 0.295,
+       "k@0.01": 200,
+       "survival@0.001": 0.4,
+       "survival_quantized@0.001": 0.4,
+       "k@0.001": 20
+      },
+      "miss_overlap@0.01": {
+       "q_teacher": 0.9823,
+       "q_student": 0.9965,
+       "q_both": 0.9801,
+       "delta_miss": 0.0012,
+       "phi": 0.1592
+      },
+      "miss_overlap@0.001": {
+       "q_teacher": 0.9996,
+       "q_student": 0.9996,
+       "q_both": 0.9995,
+       "delta_miss": 0.0004,
+       "phi": 0.8888
+      }
+     },
+     {
+      "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
+      "background": {
+       "spearman_student": 0.6246,
+       "spearman_quantized": 0.6242,
+       "survival@0.1": 0.5115,
+       "survival_quantized@0.1": 0.515,
+       "k@0.1": 2000,
+       "survival@0.01": 0.38,
+       "survival_quantized@0.01": 0.375,
+       "k@0.01": 200,
+       "survival@0.001": 0.35,
+       "survival_quantized@0.001": 0.35,
+       "k@0.001": 20
+      },
+      "withheld_class": {
+       "spearman_student": 0.7095,
+       "spearman_quantized": 0.7088,
+       "survival@0.1": 0.5685,
+       "survival_quantized@0.1": 0.5665,
+       "k@0.1": 2000,
+       "survival@0.01": 0.36,
+       "survival_quantized@0.01": 0.36,
+       "k@0.01": 200,
+       "survival@0.001": 0.4,
+       "survival_quantized@0.001": 0.4,
+       "k@0.001": 20
+      },
+      "miss_overlap@0.01": {
+       "q_teacher": 0.9754,
+       "q_student": 0.9385,
+       "q_both": 0.9311,
+       "delta_miss": 0.0156,
+       "phi": 0.4199
+      },
+      "miss_overlap@0.001": {
+       "q_teacher": 0.9987,
+       "q_student": 0.9973,
+       "q_both": 0.9967,
+       "delta_miss": 0.0006,
+       "phi": 0.3458
+      }
+     },
+     {
+      "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
+      "background": {
+       "spearman_student": 0.5774,
+       "spearman_quantized": 0.5774,
+       "survival@0.1": 0.487,
+       "survival_quantized@0.1": 0.4875,
+       "k@0.1": 2000,
+       "survival@0.01": 0.36,
+       "survival_quantized@0.01": 0.355,
+       "k@0.01": 200,
+       "survival@0.001": 0.4,
+       "survival_quantized@0.001": 0.4,
+       "k@0.001": 20
+      },
+      "withheld_class": {
+       "spearman_student": 0.6871,
+       "spearman_quantized": 0.6876,
+       "survival@0.1": 0.504,
+       "survival_quantized@0.1": 0.505,
+       "k@0.1": 2000,
+       "survival@0.01": 0.22,
+       "survival_quantized@0.01": 0.225,
+       "k@0.01": 200,
+       "survival@0.001": 0.35,
+       "survival_quantized@0.001": 0.35,
+       "k@0.001": 20
+      },
+      "miss_overlap@0.01": {
+       "q_teacher": 0.9764,
+       "q_student": 0.9595,
+       "q_both": 0.9469,
+       "delta_miss": 0.01,
+       "phi": 0.3357
+      },
+      "miss_overlap@0.001": {
+       "q_teacher": 0.9984,
+       "q_student": 0.9986,
+       "q_both": 0.9975,
+       "delta_miss": 0.0004,
+       "phi": 0.3045
+      }
+     },
+     {
+      "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
+      "background": {
+       "spearman_student": 0.725,
+       "spearman_quantized": 0.7248,
+       "survival@0.1": 0.602,
+       "survival_quantized@0.1": 0.601,
+       "k@0.1": 2000,
+       "survival@0.01": 0.54,
+       "survival_quantized@0.01": 0.53,
+       "k@0.01": 200,
+       "survival@0.001": 0.35,
+       "survival_quantized@0.001": 0.35,
+       "k@0.001": 20
+      },
+      "withheld_class": {
+       "spearman_student": 0.6386,
+       "spearman_quantized": 0.639,
+       "survival@0.1": 0.401,
+       "survival_quantized@0.1": 0.4,
+       "k@0.1": 2000,
+       "survival@0.01": 0.395,
+       "survival_quantized@0.01": 0.395,
+       "k@0.01": 200,
+       "survival@0.001": 0.45,
+       "survival_quantized@0.001": 0.4,
+       "k@0.001": 20
+      },
+      "miss_overlap@0.01": {
+       "q_teacher": 0.9747,
+       "q_student": 0.9791,
+       "q_both": 0.9619,
+       "delta_miss": 0.0076,
+       "phi": 0.3393
+      },
+      "miss_overlap@0.001": {
+       "q_teacher": 0.9984,
+       "q_student": 0.9982,
+       "q_both": 0.9975,
+       "delta_miss": 0.0008,
+       "phi": 0.4849
+      }
+     }
+    ],
+    "background": {
+     "spearman_student": 0.6249,
+     "spearman_quantized": 0.6246,
+     "survival@0.1": 0.5211,
+     "survival_quantized@0.1": 0.5221,
+     "k@0.1": 2000.0,
+     "survival@0.01": 0.428,
+     "survival_quantized@0.01": 0.425,
+     "k@0.01": 200.0,
+     "survival@0.001": 0.41,
+     "survival_quantized@0.001": 0.41,
+     "k@0.001": 20.0
+    },
+    "withheld_class": {
+     "spearman_student": 0.6712,
+     "spearman_quantized": 0.6712,
+     "survival@0.1": 0.4913,
+     "survival_quantized@0.1": 0.4912,
+     "k@0.1": 2000.0,
+     "survival@0.01": 0.334,
+     "survival_quantized@0.01": 0.333,
+     "k@0.01": 200.0,
+     "survival@0.001": 0.4,
+     "survival_quantized@0.001": 0.38,
+     "k@0.001": 20.0
+    },
+    "miss_overlap@0.01": {
+     "q_teacher": 0.976,
+     "q_student": 0.9709,
+     "q_both": 0.9559,
+     "delta_miss": 0.0083,
+     "phi": 0.3135
+    },
+    "miss_overlap@0.001": {
+     "q_teacher": 0.9987,
+     "q_student": 0.9985,
+     "q_both": 0.9978,
+     "delta_miss": 0.0005,
+     "phi": 0.4812
+    },
+    "with_intervals": {
+     "background": {
+      "spearman_student": {
+       "mean": 0.6249,
+       "ci95_seeds": [
+        0.5876,
+        0.6771
+       ],
+       "seed_values": [
+        0.6117,
+        0.5858,
+        0.6246,
+        0.5774,
+        0.725
+       ]
+      },
+      "spearman_quantized": {
+       "mean": 0.6246,
+       "ci95_seeds": [
+        0.5873,
+        0.6767
+       ],
+       "seed_values": [
+        0.6119,
+        0.5849,
+        0.6242,
+        0.5774,
+        0.7248
+       ]
+      },
+      "survival@0.1": {
+       "mean": 0.5211,
+       "ci95_seeds": [
+        0.4942,
+        0.5632
+       ],
+       "seed_values": [
+        0.5065,
+        0.4985,
+        0.5115,
+        0.487,
+        0.602
+       ]
+      },
+      "survival_quantized@0.1": {
+       "mean": 0.5221,
+       "ci95_seeds": [
+        0.4954,
+        0.5635
+       ],
+       "seed_values": [
+        0.5075,
+        0.4995,
+        0.515,
+        0.4875,
+        0.601
+       ]
+      },
+      "k@0.1": {
+       "mean": 2000.0,
+       "ci95_seeds": [
+        2000.0,
+        2000.0
+       ],
+       "seed_values": [
+        2000,
+        2000,
+        2000,
+        2000,
+        2000
+       ]
+      },
+      "survival@0.01": {
+       "mean": 0.428,
+       "ci95_seeds": [
+        0.379,
+        0.487
+       ],
+       "seed_values": [
+        0.425,
+        0.435,
+        0.38,
+        0.36,
+        0.54
+       ]
+      },
+      "survival_quantized@0.01": {
+       "mean": 0.425,
+       "ci95_seeds": [
+        0.376,
+        0.481
+       ],
+       "seed_values": [
+        0.425,
+        0.44,
+        0.375,
+        0.355,
+        0.53
+       ]
+      },
+      "k@0.01": {
+       "mean": 200.0,
+       "ci95_seeds": [
+        200.0,
+        200.0
+       ],
+       "seed_values": [
+        200,
+        200,
+        200,
+        200,
+        200
+       ]
+      },
+      "survival@0.001": {
+       "mean": 0.41,
+       "ci95_seeds": [
+        0.36,
+        0.46
+       ],
+       "seed_values": [
+        0.5,
+        0.45,
+        0.35,
+        0.4,
+        0.35
+       ]
+      },
+      "survival_quantized@0.001": {
+       "mean": 0.41,
+       "ci95_seeds": [
+        0.36,
+        0.46
+       ],
+       "seed_values": [
+        0.5,
+        0.45,
+        0.35,
+        0.4,
+        0.35
+       ]
+      },
+      "k@0.001": {
+       "mean": 20.0,
+       "ci95_seeds": [
+        20.0,
+        20.0
+       ],
+       "seed_values": [
+        20,
+        20,
+        20,
+        20,
+        20
+       ]
+      }
+     },
+     "withheld_class": {
+      "spearman_student": {
+       "mean": 0.6712,
+       "ci95_seeds": [
+        0.6376,
+        0.7039
+       ],
+       "seed_values": [
+        0.7066,
+        0.6143,
+        0.7095,
+        0.6871,
+        0.6386
+       ]
+      },
+      "spearman_quantized": {
+       "mean": 0.6712,
+       "ci95_seeds": [
+        0.6379,
+        0.7032
+       ],
+       "seed_values": [
+        0.7054,
+        0.615,
+        0.7088,
+        0.6876,
+        0.639
+       ]
+      },
+      "survival@0.1": {
+       "mean": 0.4913,
+       "ci95_seeds": [
+        0.4376,
+        0.5377
+       ],
+       "seed_values": [
+        0.462,
+        0.521,
+        0.5685,
+        0.504,
+        0.401
+       ]
+      },
+      "survival_quantized@0.1": {
+       "mean": 0.4912,
+       "ci95_seeds": [
+        0.4369,
+        0.5372
+       ],
+       "seed_values": [
+        0.4605,
+        0.524,
+        0.5665,
+        0.505,
+        0.4
+       ]
+      },
+      "k@0.1": {
+       "mean": 2000.0,
+       "ci95_seeds": [
+        2000.0,
+        2000.0
+       ],
+       "seed_values": [
+        2000,
+        2000,
+        2000,
+        2000,
+        2000
+       ]
+      },
+      "survival@0.01": {
+       "mean": 0.334,
+       "ci95_seeds": [
+        0.271,
+        0.386
+       ],
+       "seed_values": [
+        0.39,
+        0.305,
+        0.36,
+        0.22,
+        0.395
+       ]
+      },
+      "survival_quantized@0.01": {
+       "mean": 0.333,
+       "ci95_seeds": [
+        0.272,
+        0.386
+       ],
+       "seed_values": [
+        0.39,
+        0.295,
+        0.36,
+        0.225,
+        0.395
+       ]
+      },
+      "k@0.01": {
+       "mean": 200.0,
+       "ci95_seeds": [
+        200.0,
+        200.0
+       ],
+       "seed_values": [
+        200,
+        200,
+        200,
+        200,
+        200
+       ]
+      },
+      "survival@0.001": {
+       "mean": 0.4,
+       "ci95_seeds": [
+        0.37,
+        0.43
+       ],
+       "seed_values": [
+        0.4,
+        0.4,
+        0.4,
+        0.35,
+        0.45
+       ]
+      },
+      "survival_quantized@0.001": {
+       "mean": 0.38,
+       "ci95_seeds": [
+        0.36,
+        0.4
+       ],
+       "seed_values": [
+        0.35,
+        0.4,
+        0.4,
+        0.35,
+        0.4
+       ]
+      },
+      "k@0.001": {
+       "mean": 20.0,
+       "ci95_seeds": [
+        20.0,
+        20.0
+       ],
+       "seed_values": [
+        20,
+        20,
+        20,
+        20,
+        20
+       ]
+      }
+     }
+    }
+   },
+   "L3": {
+    "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
+    "seeds": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "per_seed": [
+     {
+      "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
+      "background": {
+       "spearman_student": 0.6922,
+       "spearman_quantized": 0.6925,
+       "survival@0.1": 0.5875,
+       "survival_quantized@0.1": 0.589,
+       "k@0.1": 2000,
+       "survival@0.01": 0.475,
+       "survival_quantized@0.01": 0.465,
+       "k@0.01": 200,
+       "survival@0.001": 0.3,
+       "survival_quantized@0.001": 0.3,
+       "k@0.001": 20
+      },
+      "withheld_class": {
+       "spearman_student": 0.6601,
+       "spearman_quantized": 0.66,
+       "survival@0.1": 0.5415,
+       "survival_quantized@0.1": 0.541,
+       "k@0.1": 2000,
+       "survival@0.01": 0.505,
+       "survival_quantized@0.01": 0.5,
+       "k@0.01": 200,
+       "survival@0.001": 0.5,
+       "survival_quantized@0.001": 0.5,
+       "k@0.001": 20
+      },
+      "miss_overlap@0.01": {
+       "q_teacher": 0.9848,
+       "q_student": 0.9879,
+       "q_both": 0.9794,
+       "delta_miss": 0.0065,
+       "phi": 0.4844
+      },
+      "miss_overlap@0.001": {
+       "q_teacher": 0.998,
+       "q_student": 0.999,
+       "q_both": 0.9977,
+       "delta_miss": 0.0006,
+       "phi": 0.4589
+      }
+     },
+     {
+      "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
+      "background": {
+       "spearman_student": 0.6681,
+       "spearman_quantized": 0.668,
+       "survival@0.1": 0.5645,
+       "survival_quantized@0.1": 0.564,
+       "k@0.1": 2000,
+       "survival@0.01": 0.49,
+       "survival_quantized@0.01": 0.49,
+       "k@0.01": 200,
+       "survival@0.001": 0.3,
+       "survival_quantized@0.001": 0.3,
+       "k@0.001": 20
+      },
+      "withheld_class": {
+       "spearman_student": 0.6588,
+       "spearman_quantized": 0.6585,
+       "survival@0.1": 0.544,
+       "survival_quantized@0.1": 0.543,
+       "k@0.1": 2000,
+       "survival@0.01": 0.4,
+       "survival_quantized@0.01": 0.41,
+       "k@0.01": 200,
+       "survival@0.001": 0.2,
+       "survival_quantized@0.001": 0.2,
+       "k@0.001": 20
+      },
+      "miss_overlap@0.01": {
+       "q_teacher": 0.989,
+       "q_student": 0.9902,
+       "q_both": 0.9834,
+       "delta_miss": 0.004,
+       "phi": 0.3945
+      },
+      "miss_overlap@0.001": {
+       "q_teacher": 0.9992,
+       "q_student": 0.9994,
+       "q_both": 0.9989,
+       "delta_miss": 0.0001,
+       "phi": 0.2331
+      }
+     },
+     {
+      "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
+      "background": {
+       "spearman_student": 0.7259,
+       "spearman_quantized": 0.7261,
+       "survival@0.1": 0.6295,
+       "survival_quantized@0.1": 0.629,
+       "k@0.1": 2000,
+       "survival@0.01": 0.575,
+       "survival_quantized@0.01": 0.58,
+       "k@0.01": 200,
+       "survival@0.001": 0.5,
+       "survival_quantized@0.001": 0.5,
+       "k@0.001": 20
+      },
+      "withheld_class": {
+       "spearman_student": 0.7517,
+       "spearman_quantized": 0.7507,
+       "survival@0.1": 0.604,
+       "survival_quantized@0.1": 0.605,
+       "k@0.1": 2000,
+       "survival@0.01": 0.435,
+       "survival_quantized@0.01": 0.435,
+       "k@0.01": 200,
+       "survival@0.001": 0.55,
+       "survival_quantized@0.001": 0.55,
+       "k@0.001": 20
+      },
+      "miss_overlap@0.01": {
+       "q_teacher": 0.9834,
+       "q_student": 0.9871,
+       "q_both": 0.9769,
+       "delta_miss": 0.0062,
+       "phi": 0.4325
+      },
+      "miss_overlap@0.001": {
+       "q_teacher": 0.9993,
+       "q_student": 0.9993,
+       "q_both": 0.999,
+       "delta_miss": 0.0003,
+       "phi": 0.5186
+      }
+     },
+     {
+      "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
+      "background": {
+       "spearman_student": 0.6982,
+       "spearman_quantized": 0.6979,
+       "survival@0.1": 0.5995,
+       "survival_quantized@0.1": 0.5985,
+       "k@0.1": 2000,
+       "survival@0.01": 0.515,
+       "survival_quantized@0.01": 0.51,
+       "k@0.01": 200,
+       "survival@0.001": 0.4,
+       "survival_quantized@0.001": 0.4,
+       "k@0.001": 20
+      },
+      "withheld_class": {
+       "spearman_student": 0.6669,
+       "spearman_quantized": 0.6659,
+       "survival@0.1": 0.5585,
+       "survival_quantized@0.1": 0.5595,
+       "k@0.1": 2000,
+       "survival@0.01": 0.5,
+       "survival_quantized@0.01": 0.5,
+       "k@0.01": 200,
+       "survival@0.001": 0.5,
+       "survival_quantized@0.001": 0.45,
+       "k@0.001": 20
+      },
+      "miss_overlap@0.01": {
+       "q_teacher": 0.9889,
+       "q_student": 0.9899,
+       "q_both": 0.9839,
+       "delta_miss": 0.005,
+       "phi": 0.4761
+      },
+      "miss_overlap@0.001": {
+       "q_teacher": 0.9991,
+       "q_student": 0.9993,
+       "q_both": 0.9988,
+       "delta_miss": 0.0003,
+       "phi": 0.4533
+      }
+     },
+     {
+      "quantization": "WEIGHT-ONLY 8-bit-spaced rounding; activations and arithmetic remain float. Not an FPGA fixed-point equivalent.",
+      "background": {
+       "spearman_student": 0.679,
+       "spearman_quantized": 0.6789,
+       "survival@0.1": 0.626,
+       "survival_quantized@0.1": 0.624,
+       "k@0.1": 2000,
+       "survival@0.01": 0.455,
+       "survival_quantized@0.01": 0.46,
+       "k@0.01": 200,
+       "survival@0.001": 0.55,
+       "survival_quantized@0.001": 0.55,
+       "k@0.001": 20
+      },
+      "withheld_class": {
+       "spearman_student": 0.6901,
+       "spearman_quantized": 0.6915,
+       "survival@0.1": 0.5685,
+       "survival_quantized@0.1": 0.5705,
+       "k@0.1": 2000,
+       "survival@0.01": 0.46,
+       "survival_quantized@0.01": 0.46,
+       "k@0.01": 200,
+       "survival@0.001": 0.6,
+       "survival_quantized@0.001": 0.6,
+       "k@0.001": 20
+      },
+      "miss_overlap@0.01": {
+       "q_teacher": 0.9867,
+       "q_student": 0.9899,
+       "q_both": 0.9819,
+       "delta_miss": 0.0053,
+       "phi": 0.4576
+      },
+      "miss_overlap@0.001": {
+       "q_teacher": 0.9987,
+       "q_student": 0.9989,
+       "q_both": 0.9982,
+       "delta_miss": 0.0007,
+       "phi": 0.5613
+      }
+     }
+    ],
+    "background": {
+     "spearman_student": 0.6927,
+     "spearman_quantized": 0.6927,
+     "survival@0.1": 0.6014,
+     "survival_quantized@0.1": 0.6009,
+     "k@0.1": 2000.0,
+     "survival@0.01": 0.502,
+     "survival_quantized@0.01": 0.501,
+     "k@0.01": 200.0,
+     "survival@0.001": 0.41,
+     "survival_quantized@0.001": 0.41,
+     "k@0.001": 20.0
+    },
+    "withheld_class": {
+     "spearman_student": 0.6855,
+     "spearman_quantized": 0.6853,
+     "survival@0.1": 0.5633,
+     "survival_quantized@0.1": 0.5638,
+     "k@0.1": 2000.0,
+     "survival@0.01": 0.46,
+     "survival_quantized@0.01": 0.461,
+     "k@0.01": 200.0,
+     "survival@0.001": 0.47,
+     "survival_quantized@0.001": 0.46,
+     "k@0.001": 20.0
+    },
+    "miss_overlap@0.01": {
+     "q_teacher": 0.9866,
+     "q_student": 0.989,
+     "q_both": 0.9811,
+     "delta_miss": 0.0054,
+     "phi": 0.449
+    },
+    "miss_overlap@0.001": {
+     "q_teacher": 0.9989,
+     "q_student": 0.9992,
+     "q_both": 0.9985,
+     "delta_miss": 0.0004,
+     "phi": 0.445
+    },
+    "with_intervals": {
+     "background": {
+      "spearman_student": {
+       "mean": 0.6927,
+       "ci95_seeds": [
+        0.6773,
+        0.711
+       ],
+       "seed_values": [
+        0.6922,
+        0.6681,
+        0.7259,
+        0.6982,
+        0.679
+       ]
+      },
+      "spearman_quantized": {
+       "mean": 0.6927,
+       "ci95_seeds": [
+        0.6772,
+        0.711
+       ],
+       "seed_values": [
+        0.6925,
+        0.668,
+        0.7261,
+        0.6979,
+        0.6789
+       ]
+      },
+      "survival@0.1": {
+       "mean": 0.6014,
+       "ci95_seeds": [
+        0.5806,
+        0.6221
+       ],
+       "seed_values": [
+        0.5875,
+        0.5645,
+        0.6295,
+        0.5995,
+        0.626
+       ]
+      },
+      "survival_quantized@0.1": {
+       "mean": 0.6009,
+       "ci95_seeds": [
+        0.5809,
+        0.6209
+       ],
+       "seed_values": [
+        0.589,
+        0.564,
+        0.629,
+        0.5985,
+        0.624
+       ]
+      },
+      "k@0.1": {
+       "mean": 2000.0,
+       "ci95_seeds": [
+        2000.0,
+        2000.0
+       ],
+       "seed_values": [
+        2000,
+        2000,
+        2000,
+        2000,
+        2000
+       ]
+      },
+      "survival@0.01": {
+       "mean": 0.502,
+       "ci95_seeds": [
+        0.47,
+        0.5411
+       ],
+       "seed_values": [
+        0.475,
+        0.49,
+        0.575,
+        0.515,
+        0.455
+       ]
+      },
+      "survival_quantized@0.01": {
+       "mean": 0.501,
+       "ci95_seeds": [
+        0.468,
+        0.543
+       ],
+       "seed_values": [
+        0.465,
+        0.49,
+        0.58,
+        0.51,
+        0.46
+       ]
+      },
+      "k@0.01": {
+       "mean": 200.0,
+       "ci95_seeds": [
+        200.0,
+        200.0
+       ],
+       "seed_values": [
+        200,
+        200,
+        200,
+        200,
+        200
+       ]
+      },
+      "survival@0.001": {
+       "mean": 0.41,
+       "ci95_seeds": [
+        0.32,
+        0.5
+       ],
+       "seed_values": [
+        0.3,
+        0.3,
+        0.5,
+        0.4,
+        0.55
+       ]
+      },
+      "survival_quantized@0.001": {
+       "mean": 0.41,
+       "ci95_seeds": [
+        0.32,
+        0.5
+       ],
+       "seed_values": [
+        0.3,
+        0.3,
+        0.5,
+        0.4,
+        0.55
+       ]
+      },
+      "k@0.001": {
+       "mean": 20.0,
+       "ci95_seeds": [
+        20.0,
+        20.0
+       ],
+       "seed_values": [
+        20,
+        20,
+        20,
+        20,
+        20
+       ]
+      }
+     },
+     "withheld_class": {
+      "spearman_student": {
+       "mean": 0.6855,
+       "ci95_seeds": [
+        0.6609,
+        0.7208
+       ],
+       "seed_values": [
+        0.6601,
+        0.6588,
+        0.7517,
+        0.6669,
+        0.6901
+       ]
+      },
+      "spearman_quantized": {
+       "mean": 0.6853,
+       "ci95_seeds": [
+        0.6606,
+        0.7204
+       ],
+       "seed_values": [
+        0.66,
+        0.6585,
+        0.7507,
+        0.6659,
+        0.6915
+       ]
+      },
+      "survival@0.1": {
+       "mean": 0.5633,
+       "ci95_seeds": [
+        0.5459,
+        0.5844
+       ],
+       "seed_values": [
+        0.5415,
+        0.544,
+        0.604,
+        0.5585,
+        0.5685
+       ]
+      },
+      "survival_quantized@0.1": {
+       "mean": 0.5638,
+       "ci95_seeds": [
+        0.5455,
+        0.5853
+       ],
+       "seed_values": [
+        0.541,
+        0.543,
+        0.605,
+        0.5595,
+        0.5705
+       ]
+      },
+      "k@0.1": {
+       "mean": 2000.0,
+       "ci95_seeds": [
+        2000.0,
+        2000.0
+       ],
+       "seed_values": [
+        2000,
+        2000,
+        2000,
+        2000,
+        2000
+       ]
+      },
+      "survival@0.01": {
+       "mean": 0.46,
+       "ci95_seeds": [
+        0.426,
+        0.494
+       ],
+       "seed_values": [
+        0.505,
+        0.4,
+        0.435,
+        0.5,
+        0.46
+       ]
+      },
+      "survival_quantized@0.01": {
+       "mean": 0.461,
+       "ci95_seeds": [
+        0.43,
+        0.492
+       ],
+       "seed_values": [
+        0.5,
+        0.41,
+        0.435,
+        0.5,
+        0.46
+       ]
+      },
+      "k@0.01": {
+       "mean": 200.0,
+       "ci95_seeds": [
+        200.0,
+        200.0
+       ],
+       "seed_values": [
+        200,
+        200,
+        200,
+        200,
+        200
+       ]
+      },
+      "survival@0.001": {
+       "mean": 0.47,
+       "ci95_seeds": [
+        0.33,
+        0.57
+       ],
+       "seed_values": [
+        0.5,
+        0.2,
+        0.55,
+        0.5,
+        0.6
+       ]
+      },
+      "survival_quantized@0.001": {
+       "mean": 0.46,
+       "ci95_seeds": [
+        0.32,
+        0.56
+       ],
+       "seed_values": [
+        0.5,
+        0.2,
+        0.55,
+        0.45,
+        0.6
+       ]
+      },
+      "k@0.001": {
+       "mean": 20.0,
+       "ci95_seeds": [
+        20.0,
+        20.0
+       ],
+       "seed_values": [
+        20,
+        20,
+        20,
+        20,
+        20
+       ]
+      }
+     }
+    }
+   }
+  },
+  "PCD_NAE_approximation": {
    "L1": {
     "chain": {
      "K_steps": 20,
@@ -3029,7 +5161,86 @@
    }
   }
  },
- "deviations": [],
+ "deviations": [
+  {
+   "id": "V3-D1",
+   "item": "T3 not implemented",
+   "detail": "the executable dispatches T5, T6, T4, T2 and the NAE arm; there is no T3 branch. hier_ci() exists as a helper and is unused. T3 is NOT RUN, not merely pending.",
+   "severity": "material"
+  },
+  {
+   "id": "V3-D2",
+   "item": "declared calibration size not achieved",
+   "detail": "calibration_per_class declares 200000 but split() clips to the pool remainder. Actual: T1 20k/20k, LHCO background 200k, LHCO signals 20k. The promised val.h5+test.h5 pooling for T1 did not occur \u2014 main() loads val.h5 only. The severe-tail correction has therefore NOT landed, and roughly 20 calibration-tail observations still set alpha=1e-3 in most directions.",
+   "severity": "material"
+  },
+  {
+   "id": "V3-D3",
+   "item": "T6 seed reduction, unregistered",
+   "detail": "T6 originally executed 3 of the registered 5 seeds and discarded per-seed rows. REPAIRED 2026-08-12: rerun at 5 seeds with per-seed rows retained and bootstrap intervals computed. The 3-seed values are superseded, not hidden \u2014 the rerun changed T1 background survival@1e-2 from 0.518 to 0.511 and L3 withheld from 0.447 to 0.460.",
+   "severity": "repaired"
+  },
+  {
+   "id": "V3-D4",
+   "item": "T6 small-k diagnosis was wrong",
+   "detail": "the write-up said T3 would settle the non-monotone survival at 1e-3. It cannot: k = alpha x N_eval and T3 enlarges CALIBRATION, not evaluation. Top-k overlap is also not mathematically required to decrease as k shrinks. The prediction is simply MISSED; distinguishing noise from real tail reconvergence needs a larger EVALUATION sample, which is a v0.4 item.",
+   "severity": "material \u2014 corrected claim"
+  },
+  {
+   "id": "V3-D5",
+   "item": "\"background survival higher throughout\" is false",
+   "detail": "true at alpha=1e-2 for all four pairs; false at 1e-3 for L1 (0.433 background vs 0.500 withheld) and L3. Corrected to \"at the 1e-2 operating point\".",
+   "severity": "factual correction"
+  },
+  {
+   "id": "V3-D6",
+   "item": "headline range mixed estimands",
+   "detail": "\"Spearman 0.61-0.71 vs survival 0.33-0.45\" are the WITHHELD-class numbers; the registered background estimand gives Spearman up to 0.904 with survival 0.511. Both are now reported separately.",
+   "severity": "factual correction"
+  },
+  {
+   "id": "V3-D7",
+   "item": "T4 causal claim outran the design",
+   "detail": "T1 vs L1/L2 changes representation AND task/class distributions together, so representation is confounded with dataset. \"Miss correlation is a property of the representation\" is withdrawn. Defensible: miss correlation is NOT a stable property of an architecture pair; it is strongly task/representation-conditioned. Isolating representation requires encoding the SAME physical pair two ways \u2014 a v0.4 item.",
+   "severity": "material \u2014 claim withdrawn"
+  },
+  {
+   "id": "V3-D8",
+   "item": "T4 tested a smaller architecture set than registered",
+   "detail": "the T4 prediction referenced same-family near-identity (AE with its energy-normalised variant) as well as AE~VAE near-independence, but the implemented set is AE, VAE, GMM only. T4 is PARTIALLY confirmed against its stated prediction.",
+   "severity": "scope"
+  },
+  {
+   "id": "V3-D9",
+   "item": "T2 verdict overstated; measurement incomplete",
+   "detail": "no formal LCBH verdict is defensible when the registered distance-matched test was not run. Verdict withdrawn to: pooled-axis sign check CONSISTENT with LCBH; registered matched test NOT RUN. Also: the registered separation measure included symmetrized KL under a common reference model; only marginal Wasserstein-1 over the first ten pooled PCs was computed. And zlib gives ZERO LHCO discrimination (15.00 for all three classes), so the corrected LHCO ordering rests on participation ratio alone.",
+   "severity": "material \u2014 verdict withdrawn"
+  },
+  {
+   "id": "V3-D10",
+   "item": "NAE arm relabelled",
+   "detail": "see nae_implementation_note. Verdict changed from FAILING to: published NAE remedy NOT YET TESTED; short-chain input-space approximation missed the prediction on L1 and L2. The quiet control argues against indiscriminate asymmetry inflation but does not establish sampler convergence.",
+   "severity": "material \u2014 verdict changed"
+  },
+  {
+   "id": "V3-D11",
+   "item": "T5 third score misnamed",
+   "detail": "called \"full negative ELBO\"; it is D*mean-recon + summed KL while training uses mean-recon + 0.5*mean-KL. Renamed recon_plus_KL_composite. Central T5 result untouched.",
+   "severity": "nomenclature"
+  },
+  {
+   "id": "V3-D12",
+   "item": "L1 and L2 share a background branch",
+   "detail": "both pairs draw P from L[bkg] with deterministic seeded splitting, so their background-side teachers, students and evaluation sets are IDENTICAL. Background columns for L1 and L2 are one observation, not two.",
+   "severity": "reader hazard \u2014 footnoted"
+  },
+  {
+   "id": "V3-D13",
+   "item": "NAE L2 seed spread not flagged",
+   "detail": "D_A@1e-2 across the three seeds is 0.446 / 0.524 / 0.226. The 0.398 mean is dominated by two seeds. The missed-prediction verdict is robust (even the low seed exceeds the plain-AE mean of 0.268) but the mean is not precise.",
+   "severity": "precision"
+  }
+ ],
  "status": {
   "as_of": "2026-08-12",
   "complete": [
@@ -3101,5 +5312,34 @@
    "\"Watershed moment\" and \"elevated to an unassailable instrument\" framing generally: recorded and declined for the same reason."
   ],
   "already_done": "the witness action item to commit results-v0.3.json and battery_v03.py to the canonical repository was completed before the audit was written (see repository history)."
+ },
+ "score_definitions": {
+  "recon": "reconstruction error of the decoded mean",
+  "latent": "sum of squared latent means (deployed AXOL1TL-class readout)",
+  "recon_plus_KL_composite": "D*mean-reconstruction + summed KL. NOT the model negative ELBO: training uses mean-reconstruction + 0.5*mean-KL, and no decoder likelihood is derived that would justify the reported scaling. Renamed 2026-08-12 after audit; the numbers are unchanged."
+ },
+ "nae_implementation_note": "SHORT-CHAIN INPUT-SPACE NAE APPROXIMATION (PCD-like). A freshly initialised AE is trained directly on the normalized-energy objective with one persistent input-space Langevin chain from a replay buffer. The published collider NAE (Dillon et al., arXiv:2206.14225) FIRST PRETRAINS an autoencoder, then uses On-Manifold Initialization \u2014 a Langevin chain in LATENT space, mapped through the decoder, followed by an input-space chain \u2014 with additional stabilisation. Neither the pretraining nor the latent-space chain is implemented here. The published remedy is therefore NOT YET TESTED. WNAE: NOT RUN (compute).",
+ "standing_tally": {
+  "note": "The earlier \"three confirmed, three missed\" was too neat. Corrected accounting:",
+  "confirmed": [
+   "T5 score ablation (with the claim restated: with model weights fixed, changing the score function is sufficient to reverse the directional ordering)"
+  ],
+  "partially_confirmed": [
+   "T4 (prediction referenced an architecture absent from the implemented set; empirical spread verified)"
+  ],
+  "missed": [
+   "T6 monotone survival",
+   "T6 blind-spot inheritance (phi 0.30-0.54 is PARTIAL positive inheritance, weaker than predicted, not absence)",
+   "PCD-NAE approximation on L1/L2"
+  ],
+  "not_run": [
+   "T3 (not implemented)",
+   "T2 registered distance-matched panel",
+   "WNAE",
+   "the published Dillon NAE remedy"
+  ],
+  "incomplete": [
+   "NAE approximation, constituent cell still running"
+  ]
  }
 }
