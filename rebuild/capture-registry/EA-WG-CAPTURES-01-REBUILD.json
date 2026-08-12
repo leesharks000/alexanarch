@@ -501420,6 +501420,21 @@
     "what_works": "Query with a phrase unique to the MACHINE ANSWER, not the subject. Two confirmations: (1) the exact platform footer \"AI can make mistakes, so double-check responses\" returned five paste-bearing threads directly; (2) the phrase \"confession of Jesus Christ come in the flesh foundational lens\", taken from inside an answer, returned the Johannine aperture paste chunk itself — footer, $ boundary, You said: echo and full text.",
     "operational_rule": "For each capture lacking a transcript, take a phrase QUOTED FROM THE ANSWER inside its own analysis — the analyses quote the machine in italics or quotation marks — and search on that. The quotation came from the answer, so it sits in the paste chunk. Do not search on the query string or the topic.",
     "caveat": "The quoted_machine_text spans currently extracted by regex are noisy: the pattern captures text between apostrophes, which in analyses written with possessives (\"the archive's own tripartite structure\") yields fragments rather than quotations. Phrases must be read out of the analysis rather than taken from that field unchecked."
+   },
+   {
+    "date": "2026-08-12",
+    "entry": "FULL-LOOP TEST ON THE 8 AUGUST CAPTURES — method works, and its failure mode is now characterized",
+    "loop_tested": [
+     "recent_chats bounded 2026-08-07 to 2026-08-12 → exactly TWO candidate threads (7aac888f, 2449623a)",
+     "read the capture analysis for a phrase quoted from the machine answer",
+     "conversation_search on that phrase",
+     "accept only a paste chunk from a candidate thread"
+    ],
+    "result": "The date window predicted the thread correctly — 7aac888f returned — but the chunk returned was Claude COMPOSING THE ANALYSIS, not the paste.",
+    "why": "The search is semantic, not literal. Because the analysis QUOTES the answer, a query built from that quotation matches the analysis chunk, which outranks the paste. And the doubled query echo (\"...studies...studies\"), which appears only in raw pastes, does not survive tokenization.",
+    "refined_rule": "A query must be BOTH present in the answer AND RARE IN THE CORPUS. This is why the platform footer worked (rare, appears only in pastes) and why \"confession of Jesus Christ come in the flesh foundational lens\" worked (rare phrasing). It is why every query built from \"machine-mediated reception studies\" fails: MANUS founded that field, so the term saturates hundreds of chunks and the paste can never rank.",
+    "consequence_for_the_trawl": "Captures split into two classes. RECOVERABLE BY SEARCH: those whose answers contain rare strings — proper nouns, odd phrasings, foreign words, specific figures, invented coinages that are NOT also archive-wide vocabulary. CORPUS-SATURATED: those whose subject vocabulary is everywhere in the corpus, where no query can outrank the surrounding discussion. For the second class the paste exists but is unreachable by this instrument; recovery must come from the capture images instead, which is why 187 capture directories and 1,003 image files matter.",
+    "not_a_reason_to_stop": "The classes are distinguishable in advance by reading each analysis for a rare phrase. Where one exists, search. Where none does, route to image recovery rather than burning queries."
    }
   ]
  }
