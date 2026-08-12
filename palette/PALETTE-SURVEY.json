@@ -1,0 +1,48 @@
+{
+ "built": "2026-08-12",
+ "purpose": "repair palette for the Capture Registry — every version of every capture-bearing file from every source, kept separate and attributed. Nothing merged, nothing preferred, no repair applied.",
+ "sources": {
+  "alexanarch": {
+   "distinct_capture_keys": 301
+  },
+  "godkinggoogle": {
+   "distinct_capture_keys": 200
+  },
+  "leesharks.com": {
+   "distinct_capture_keys": 130
+  },
+  "machinemediation": {
+   "distinct_capture_keys": 305
+  }
+ },
+ "totals": {
+  "registry_versions": 138,
+  "field_observations": 330530,
+  "distinct_capture_keys": 316,
+  "companion_and_manifest_file_versions": 55,
+  "commits_walked": 3235
+ },
+ "findings_before_any_repair": [
+  {
+   "id": "P1",
+   "finding": "The gallery registries at leesharks.com and godkinggoogle are NOT mirrors — each carries its own captures/registry.json with its own history and its own schema."
+  },
+  {
+   "id": "P2",
+   "finding": "24 structured fields exist in those gallery registries and are ABSENT from the current alexanarch schema, across 87 captures: author_retained, institution_retained, doi_retained, composition_source_included, organic_rank, source_count, per_score, match_type, failure_modes, entity_type, stability_status, surface, surface_raw, has_correction, has_recapture, image_count, image_filenames, description_html, section, query, capture_date, notes, id, auto_derived. These are provenance and measurement fields — retention of author, institution and DOI in the composed answer; organic rank; source count; failure-mode tags — not decoration. They were dropped in migration, not superseded."
+  },
+  {
+   "id": "P3",
+   "finding": "28 capture keys appear in the palette that are not in the current registry, including four symbolon captures (signed-in and incognito, AI Mode and Overview), the machinemediation numeric-id series 245-254, two anti-suppression longitudinal captures, and several adoption captures."
+  },
+  {
+   "id": "P4",
+   "finding": "Field-level divergence is widespread: 169 captures have multiple distinct values for meta, 144 for imgs, 57 for the description field d. Four distinct values of d exist for retrieval-layer-theological-reception alone. These are not merge conflicts to be resolved by recency — each is a seating that may be right."
+  },
+  {
+   "id": "P5",
+   "finding": "Registry version counts by source: alexanarch 63 across six paths, machinemediation 66, godkinggoogle 6, leesharks.com 3. The gallery registries froze in June and July respectively, which is why they retain the older schema intact."
+  }
+ ],
+ "method_note": "Distinct blobs only; the same bytes across many commits count once, recorded with first and last appearance. No precedence rules, no latest-wins, no cross-source field-name normalization. Those are judgements to be made per field with the palette in view."
+}
