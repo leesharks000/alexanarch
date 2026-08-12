@@ -1163,10 +1163,21 @@ def regenerate_api_index(reg, dry_run=False):
     hand-curated descriptive content. It updates only the fields that have
     documented, derivable values.
     """
-    idx_path = REPO_ROOT / 'api' / 'index.json'
-    if not idx_path.exists():
-        print(f"  ⚠ {idx_path} not found — skipping")
-        return
+    # 2026-08-12: the generator looked in api/ while the file has always lived at
+    # data/api/index.json, so this stage silently no-opped every run and the
+    # machine-authority counts froze at whatever was last hand-edited. The file
+    # declares itself the single source of truth — "if this file disagrees with
+    # any other surface, this file wins" — so a silent skip here is the most
+    # consequential failure in the surface set. Both paths are now tried, and a
+    # miss is loud.
+    idx_path = None
+    for cand in (REPO_ROOT / 'data' / 'api' / 'index.json', REPO_ROOT / 'api' / 'index.json'):
+        if cand.exists():
+            idx_path = cand
+            break
+    if idx_path is None:
+        raise SystemExit("FATAL: api/index.json not found at data/api/ or api/ — "
+                         "the machine-authority index cannot be left stale silently.")
     with open(idx_path) as f:
         idx = json.load(f)
 

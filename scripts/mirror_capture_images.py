@@ -48,6 +48,9 @@ def safe_name(u):
 
 
 def main():
+    if not REG.exists():
+        print("SKIP: the Capture Registry is withdrawn from publication (quarantine/capture-registry-20260812/) and under reconstruction; nothing to process.")
+        return 0
     ap = argparse.ArgumentParser()
     ap.add_argument("--apply", action="store_true")
     ap.add_argument("--dry-run", action="store_true")

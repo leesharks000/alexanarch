@@ -39,6 +39,16 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--live", action="store_true")
     a = ap.parse_args()
+    # 2026-08-12: the Capture Registry is WITHDRAWN from publication (see
+    # quarantine/capture-registry-20260812/ and rebuild/capture-registry/).
+    # There is nothing published to audit for citability, and this gate must
+    # not block deposits of unrelated work while the rebuild proceeds. When the
+    # registry returns, this resumes automatically.
+    if not REG.exists():
+        print("SKIP: %s is absent — the Capture Registry is withdrawn from "
+              "publication and under reconstruction. Citability cannot be "
+              "audited for a surface that is not published." % REG.name)
+        return 0
     r = json.loads(REG.read_text())
     entries = r["entries"]
     fails = []

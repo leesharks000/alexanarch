@@ -70,6 +70,9 @@ def host_images(pat):
 
 
 def main():
+    if not REG.exists():
+        print("SKIP: the Capture Registry is withdrawn from publication (quarantine/capture-registry-20260812/) and under reconstruction; nothing to process.")
+        return 0
     ap = argparse.ArgumentParser()
     ap.add_argument("--link", action="store_true", help="attach matchable images to their entries")
     ap.add_argument("--stubs", action="store_true", help="emit a stub sheet for unrecorded captures")

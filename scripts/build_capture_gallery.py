@@ -188,6 +188,9 @@ def card(e):
 
 
 def main():
+    if not REG.exists():
+        print("SKIP: the Capture Registry is withdrawn from publication (quarantine/capture-registry-20260812/) and under reconstruction; nothing to process.")
+        return 0
     r = json.loads(REG.read_text())
     entries = r["entries"]
     page = PAGE.read_text()

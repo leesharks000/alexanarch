@@ -264,6 +264,9 @@ def build():
 
 
 def main():
+    if not CAPTURES.exists():
+        print("SKIP: the Capture Registry is withdrawn from publication (quarantine/capture-registry-20260812/) and under reconstruction; nothing to process.")
+        return 0
     ap = argparse.ArgumentParser()
     ap.add_argument('--captures', default=None)
     ap.add_argument('--dry-run', action='store_true')

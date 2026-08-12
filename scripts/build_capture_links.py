@@ -41,6 +41,9 @@ def links_for(slug, galleries):
 
 
 def main():
+    if not REG.exists():
+        print("SKIP: the Capture Registry is withdrawn from publication (quarantine/capture-registry-20260812/) and under reconstruction; nothing to process.")
+        return 0
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true")
     a = ap.parse_args()

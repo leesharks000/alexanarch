@@ -134,6 +134,13 @@ STAGE_ORDER = [
     # substance, concepts, related, lexical receipt, citation edges,
     # artifact-free render, verified files. Fails closed before commit.
     "completeness",
+    # surfaces + synchrony (2026-08-12): the pipeline regenerated record pages,
+    # sitemap, OAI and wiki but NOT browse, search-index or api/index — so every
+    # deposit between full regenerate_surfaces runs was invisible to the
+    # archive's own PRIMARY discovery index, the one api/index.json instructs
+    # agents to use first. Found by external audit at a 1444/1445/1456 split.
+    # These two stages run before commit and fail closed.
+    "surfaces", "synchrony",
     "commit", "verify",
     "announce",
 ]
@@ -578,9 +585,28 @@ def stage_completeness(args):
         "--deposit-number", str(args.deposit_number)], check=True)
 
 
+def stage_surfaces(args):
+    """Bring the discovery surfaces to registry head.
+
+    browse, browse-index, api-index, search-index, search-static, state and the
+    homepage projection are what a machine visitor reads to learn the archive's
+    extent. They are not per-deposit artifacts, so they were never in this
+    pipeline — which is precisely how they fell eleven deposits behind.
+    """
+    sh([sys.executable, SCRIPTS / "regenerate_surfaces.py", "--only",
+        "state", "browse", "browse-index", "api-index", "search-index",
+        "search-static", "homepage-noscript"], check=True)
+
+
+def stage_synchrony(args):
+    """Fail closed if any machine-facing surface disagrees with registry head."""
+    sh([sys.executable, SCRIPTS / "check_surface_synchrony.py"], check=True)
+
+
 STAGES = {
     "mint": stage_mint, "validate": stage_validate, "record": stage_record,
     "completeness": stage_completeness,
+    "surfaces": stage_surfaces, "synchrony": stage_synchrony,
     "pdf": stage_pdf, "body-index": stage_body_index, "wiki": stage_wiki,
     "sitemap": stage_sitemap, "interlink": stage_interlink,
     "enrich": stage_enrich, "symbolon": stage_symbolon,
