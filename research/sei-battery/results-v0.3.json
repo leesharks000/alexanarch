@@ -5361,6 +5361,246 @@
      ]
     }
    }
+  },
+  "T7": {
+   "R1_constituents": {
+    "auc_P_on_Q": {
+     "AE": {
+      "mean": 0.8378,
+      "seed_values": [
+       0.8345,
+       0.8394,
+       0.8386,
+       0.8385,
+       0.8379
+      ]
+     },
+     "VAE": {
+      "mean": 0.5345,
+      "seed_values": [
+       0.531,
+       0.5365,
+       0.5366,
+       0.5485,
+       0.5197
+      ]
+     },
+     "GMM": {
+      "mean": 0.873,
+      "seed_values": [
+       0.8731,
+       0.8743,
+       0.8675,
+       0.875,
+       0.8753
+      ]
+     }
+    },
+    "dims": 120,
+    "AE~VAE@0.01": {
+     "phi_mean": 0.0203,
+     "ci95_seeds": [
+      0.016,
+      0.0251
+     ],
+     "seed_values": [
+      0.0168,
+      0.0242,
+      0.0288,
+      0.014,
+      0.0177
+     ]
+    },
+    "AE~GMM@0.01": {
+     "phi_mean": 0.263,
+     "ci95_seeds": [
+      0.2389,
+      0.289
+     ],
+     "seed_values": [
+      0.2498,
+      0.2855,
+      0.3032,
+      0.2197,
+      0.2568
+     ]
+    },
+    "VAE~GMM@0.01": {
+     "phi_mean": 0.0455,
+     "ci95_seeds": [
+      0.0378,
+      0.0531
+     ],
+     "seed_values": [
+      0.0328,
+      0.0558,
+      0.0453,
+      0.0396,
+      0.0542
+     ]
+    },
+    "AE~VAE@0.001": {
+     "phi_mean": 0.0024,
+     "ci95_seeds": [
+      -0.0023,
+      0.0114
+     ],
+     "seed_values": [
+      -0.0021,
+      -0.0017,
+      -0.0024,
+      0.0204,
+      -0.0023
+     ]
+    },
+    "AE~GMM@0.001": {
+     "phi_mean": 0.1149,
+     "ci95_seeds": [
+      0.09,
+      0.1399
+     ],
+     "seed_values": [
+      0.1569,
+      0.1351,
+      0.0901,
+      0.077,
+      0.1156
+     ]
+    },
+    "VAE~GMM@0.001": {
+     "phi_mean": 0.1528,
+     "ci95_seeds": [
+      0.1186,
+      0.1783
+     ],
+     "seed_values": [
+      0.1856,
+      0.178,
+      0.0859,
+      0.1499,
+      0.1644
+     ]
+    }
+   },
+   "R2_engineered": {
+    "auc_P_on_Q": {
+     "AE": {
+      "mean": 0.5275,
+      "seed_values": [
+       0.5239,
+       0.5228,
+       0.5137,
+       0.5413,
+       0.5356
+      ]
+     },
+     "VAE": {
+      "mean": 0.7993,
+      "seed_values": [
+       0.8,
+       0.7739,
+       0.8095,
+       0.8063,
+       0.8066
+      ]
+     },
+     "GMM": {
+      "mean": 0.7475,
+      "seed_values": [
+       0.7475,
+       0.7434,
+       0.755,
+       0.7477,
+       0.7437
+      ]
+     }
+    },
+    "dims": 7,
+    "AE~VAE@0.01": {
+     "phi_mean": 0.0188,
+     "ci95_seeds": [
+      0.0046,
+      0.0329
+     ],
+     "seed_values": [
+      -0.0007,
+      -0.0034,
+      0.032,
+      0.0345,
+      0.0314
+     ]
+    },
+    "AE~GMM@0.01": {
+     "phi_mean": 0.2955,
+     "ci95_seeds": [
+      0.2446,
+      0.3512
+     ],
+     "seed_values": [
+      0.2545,
+      0.2222,
+      0.3455,
+      0.3854,
+      0.2698
+     ]
+    },
+    "VAE~GMM@0.01": {
+     "phi_mean": 0.1478,
+     "ci95_seeds": [
+      0.1133,
+      0.1819
+     ],
+     "seed_values": [
+      0.1914,
+      0.1382,
+      0.0795,
+      0.1941,
+      0.1359
+     ]
+    },
+    "AE~VAE@0.001": {
+     "phi_mean": -0.0007,
+     "ci95_seeds": [
+      -0.001,
+      -0.0004
+     ],
+     "seed_values": [
+      -0.0003,
+      -0.0008,
+      -0.0012,
+      -0.0007,
+      -0.0005
+     ]
+    },
+    "AE~GMM@0.001": {
+     "phi_mean": 0.1683,
+     "ci95_seeds": [
+      0.0635,
+      0.301
+     ],
+     "seed_values": [
+      0.0996,
+      0.034,
+      0.2135,
+      0.4192,
+      0.075
+     ]
+    },
+    "VAE~GMM@0.001": {
+     "phi_mean": 0.0137,
+     "ci95_seeds": [
+      -0.0013,
+      0.0432
+     ],
+     "seed_values": [
+      -0.0007,
+      -0.0007,
+      -0.0017,
+      -0.0007,
+      0.0725
+     ]
+    }
+   }
   }
  },
  "deviations": [
@@ -5528,6 +5768,15 @@
      "evaluation_per_class": 20000
     }
    }
+  },
+  "T7": {
+   "design": "same physical pair (top-tagging QCD vs top), two encodings of the SAME events, same classes/splits/seeds; pre-registered at commit before the run",
+   "prediction": "AE~VAE phi near zero on constituents and materially higher on the engineered encoding",
+   "outcome": "MISSED",
+   "evidence": "AE~VAE phi 0.020 [0.016, 0.025] on constituents vs 0.019 [0.005, 0.033] on the engineered encoding of the same events \u2014 intervals overlap almost completely",
+   "consequence": "the restated T4 claim needs revising in turn. Holding the task fixed and swapping encodings leaves that architecture pair near-independent in both, so the cross-panel variation in v0.2/T4 was driven substantially by TASK and class distribution, not by representation per se. Honest formulation: miss correlation is not a stable property of an architecture pair, and the variation across panels is not explained by representation alone.",
+   "unpredicted_1": "VAE~GMM DOES move with representation: 0.045 [0.038, 0.053] on constituents vs 0.148 [0.113, 0.182] on engineered, intervals disjoint. Representation moves some architecture pairs and not others \u2014 finer structure than either version of the claim allowed.",
+   "unpredicted_2": "THE AUC ORDERING INVERTS ACROSS ENCODINGS OF THE SAME EVENTS. Constituents: AE 0.838, VAE 0.535, GMM 0.873. Engineered features of the same events: AE 0.528, VAE 0.799, GMM 0.748. The architectures trade places entirely depending on how the events are written down. Deployment consequence: an architecture detection behaviour is NOT transportable across representations of the same events, so benchmarking a trigger model on one encoding says little about another."
   }
  },
  "audit_v03": {
@@ -5568,7 +5817,8 @@
   "missed": [
    "T6 monotone survival",
    "T6 blind-spot inheritance (phi 0.30-0.54 is PARTIAL positive inheritance, weaker than predicted, not absence)",
-   "PCD-NAE approximation on L1/L2"
+   "PCD-NAE approximation on L1/L2",
+   "T7 same-pair two-encoding test (AE~VAE phi unchanged across encodings)"
   ],
   "not_run": [
    "T2 registered distance-matched panel",
@@ -5577,6 +5827,7 @@
   ],
   "incomplete": [
    "NAE approximation, constituent cell still running"
-  ]
+  ],
+  "confirmed_count_note": "2 confirmed (T5, T3), 1 partial (T4), 4 missed (T6 x2, NAE approximation, T7), 3 not run, 1 incomplete"
  }
 }
