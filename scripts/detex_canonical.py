@@ -53,10 +53,10 @@ MACROS = [
     (r'\\mathcal\s+([A-Za-z])', r'\1'),
     (r'\\getau', ' >= tau'),
     (r'\\simBernoulli', ' ~ Bernoulli'),
-    (r'\\inR', ' in R'),
+    (r'\\in(?=[A-Za-z])', ' \u2208 '),
     (r'\\succ', ' > '),
-    (r'\\xrightarrow\{([^{}]*)\}', r' --[\1]--> '),
-    (r'\\xleftarrow\{([^{}]*)\}', r' <--[\1]-- '),
+    (r'\\xrightarrow\{([^{}]*)\}', ' \u2014[\\1]\u2192 '),
+    (r'\\xleftarrow\{([^{}]*)\}', ' \u2190[\\1]\u2014 '),
     (r'\\mathrm\{([^{}]*)\}', r'\1'),
     (r'\\mathbb\{([^{}]*)\}', r'\1'),
     (r'\\mathcal\{([^{}]*)\}', r'\1'),
@@ -78,8 +78,8 @@ SYMBOLS = {
     r'\\equiv': '=', r'\\propto': '∝', r'\\pm': '±', r'\\ll': '<<', r'\\gg': '>>',
     r'\\in': '∈', r'\\notin': '∉', r'\\subset': '⊂', r'\\subseteq': '⊆',
     r'\\cap': '∩', r'\\cup': '∪', r'\\emptyset': '{}', r'\\setminus': '\\',
-    r'\\rightarrow': '->', r'\\to': '->', r'\\leftarrow': '<-', r'\\Rightarrow': '=>',
-    r'\\mapsto': '|->', r'\\longrightarrow': '-->', r'\\implies': '=>',
+    r'\\rightarrow': '→', r'\\to': '→', r'\\leftarrow': '←', r'\\Rightarrow': '⇒',
+    r'\\mapsto': '↦', r'\\longrightarrow': '⟶', r'\\implies': '⇒',
     r'\\forall': 'for all ', r'\\exists': 'there exists ', r'\\land': ' and ', r'\\lor': ' or ',
     r'\\neg': 'not ', r'\\infty': 'infinity', r'\\partial': 'd', r'\\nabla': 'grad',
     r'\\sum': 'sum', r'\\prod': 'product', r'\\int': 'integral', r'\\max': 'max', r'\\min': 'min',
@@ -92,6 +92,23 @@ SYMBOLS = {
     r'\\chi': 'chi', r'\\psi': 'psi', r'\\Psi': 'Psi', r'\\omega': 'omega', r'\\Omega': 'Omega',
     r'\\mathfrak I': 'I', r'\\ast': '*', r'\\star': '*', r'\\circ': 'o',
 }
+
+
+SUB = {'0':'₀','1':'₁','2':'₂','3':'₃','4':'₄','5':'₅','6':'₆','7':'₇','8':'₈','9':'₉',
+       'i':'ᵢ','j':'ⱼ','k':'ₖ','n':'ₙ','a':'ₐ','e':'ₑ','o':'ₒ','x':'ₓ','t':'ₜ','r':'ᵣ',
+       's':'ₛ','u':'ᵤ','v':'ᵥ','p':'ₚ','m':'ₘ','l':'ₗ','h':'ₕ','+':'₊','-':'₋','(':'₍',')':'₎'}
+SUP = {'0':'⁰','1':'¹','2':'²','3':'³','4':'⁴','5':'⁵','6':'⁶','7':'⁷','8':'⁸','9':'⁹',
+       '*':'*','+':'⁺','-':'⁻','(':'⁽',')':'⁾','i':'ⁱ','n':'ⁿ'}
+
+
+def _script(txt, table):
+    """Render an index in Unicode script characters when every character maps;
+    otherwise fall back to a bracketed form. Underscores are avoided entirely
+    because the record renderer reads them as markdown emphasis — the canonical
+    body must survive every surface, not only the PDF."""
+    if txt and all(c in table for c in txt):
+        return ''.join(table[c] for c in txt)
+    return '[' + txt + ']'
 
 
 def _inner(s, _passes=2):
@@ -116,9 +133,11 @@ def _one_pass(s):
         s = re.sub(pat + r'(?![A-Za-z])', rep.replace('\\', '\\\\'), s)
     # subscripts / superscripts: X_{i-1} -> X_(i-1); X^{*} -> X*
     s = re.sub(r'\^\{\\?\*\}', '*', s)
-    s = re.sub(r'\^\{([^{}]*)\}', r'^(\1)', s)
-    s = re.sub(r'_\{([^{}]*)\}', r'_(\1)', s)
     s = re.sub(r'\^\\ast', '*', s)
+    s = re.sub(r'\^\{([^{}]*)\}', lambda m: _script(m.group(1), SUP), s)
+    s = re.sub(r'_\{([^{}]*)\}', lambda m: _script(m.group(1), SUB), s)
+    s = re.sub(r'\^([A-Za-z0-9*])', lambda m: _script(m.group(1), SUP), s)
+    s = re.sub(r'_([A-Za-z0-9])', lambda m: _script(m.group(1), SUB), s)
     s = s.replace('\\{', '{').replace('\\}', '}').replace('\\%', '%').replace('\\&', '&')
     s = re.sub(r'[ \t]+', ' ', s)
     return s.strip()

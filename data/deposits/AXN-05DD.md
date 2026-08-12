@@ -212,39 +212,39 @@ The second is the subject of this paper.
 
 Let an experiment be represented as a sequence of data states
 
-    X_0
-    --[T_1]-->
-    X_1
-    --[T_2]-->
+    X₀
+    —[T₁]→
+    X₁
+    —[T₂]→
     ...
-    --[T_n]-->
-    X_n ,
+    —[Tₙ]→
+    Xₙ ,
 
-where X_0 is the earliest physically available detector state considered by the analysis and each T_i is a transformation: electronics processing, compression, clustering, reconstruction, feature extraction, learned embedding, or another mapping.
+where X₀ is the earliest physically available detector state considered by the analysis and each Tᵢ is a transformation: electronics processing, compression, clustering, reconstruction, feature extraction, learned embedding, or another mapping.
 
 At selected stages, an event-content-dependent gate
 
-    G_i(X_i)∈{0,1}
+    Gᵢ(Xᵢ)∈{0,1}
 
 may determine whether the data continue through the ordinary acquisition path.
 
-Let C_i denote the existence of an independently durable copy or statistically interpretable bypass at or upstream of stage i.
+Let Cᵢ denote the existence of an independently durable copy or statistically interpretable bypass at or upstream of stage i.
 
 This simple representation exposes two kinds of loss that are usually conflated.
 
 ### 2.1 Representational irreversibility
 
-A transformation T_i is **representationally irreversible** with respect to a scientific distinction when it is many-to-one for that distinction and no sufficiently faithful upstream representation survives.
+A transformation Tᵢ is **representationally irreversible** with respect to a scientific distinction when it is many-to-one for that distinction and no sufficiently faithful upstream representation survives.
 
 For example,
 
-    X_(i-1)!= X'_(i-1)
+    Xᵢ₋₁!= X'ᵢ₋₁
 
 may nevertheless yield
 
-    T_i(X_(i-1))=T_i(X'_(i-1)).
+    Tᵢ(Xᵢ₋₁)=Tᵢ(X'ᵢ₋₁).
 
-If the difference between X_(i-1) and X'_(i-1) later becomes scientifically important, the downstream representation cannot recover it.
+If the difference between Xᵢ₋₁ and X'ᵢ₋₁ later becomes scientifically important, the downstream representation cannot recover it.
 
 No machine learning is required for this form of loss. Thresholds, clustering rules, zero suppression, object definitions, and lossy compression can all create it.
 
@@ -252,7 +252,7 @@ No machine learning is required for this form of loss. Thresholds, clustering ru
 
 A stage is **retention-irreversible** when
 
-    G_i(X_i)=0
+    Gᵢ(Xᵢ)=0
 
 causes the event to leave the durable scientific record and no independent control or replay path preserves sufficient information to reconsider the decision.
 
@@ -278,7 +278,7 @@ A useful architecture should therefore be described by an **Irreversibility Prof
     =
     (
     F^\*,
-    R^\*_(in),
+    R^\*ᵢₙ,
     rho^\*,
     Delta t^\*,
     B^\*,
@@ -288,7 +288,7 @@ A useful architecture should therefore be described by an **Irreversibility Prof
 Here:
 
 - F^\* is the **fidelity locus**: the representation available at the first consequential irreversible gate;
-- R^\*_(in) is the event or data rate entering that locus;
+- R^\*ᵢₙ is the event or data rate entering that locus;
 - rho^\* is the fraction surviving the gate into the relevant durable path;
 - Delta t^\* is the **replay horizon**: how long a predecision or higher-fidelity state remains recoverable before deletion;
 - B^\* describes the existence, rate, and fidelity of content-independent or otherwise statistically legible bypass channels;
@@ -539,13 +539,13 @@ The table makes one point visible immediately.
 The relevant architectural spectrum is not:
 
     non-ML
-    -->
+    ⟶
     ML.
 
 It is:
 
     selection before durable rich representation
-    -->
+    ⟶
     selection after durable or replayable rich representation.
 
 Machine learning can appear anywhere along that spectrum.
@@ -563,8 +563,8 @@ For an acquisition architecture A, define
     E(A)
     =
     {
-    Q in Q :
-    R_(A)(Q)
+    Q ∈ Q :
+    R[A](Q)
     can be estimated from surviving evidence
     }.
 
@@ -599,16 +599,16 @@ The companion No-Retention-Bound observation states that validation of individua
 
 The irreversibility frontier determines when that abstract lack of a bound becomes historically unrecoverable.
 
-Suppose a novelty class Q traverses stages S_1,...,S_n. Its end-to-end retention is
+Suppose a novelty class Q traverses stages S₁,...,Sₙ. Its end-to-end retention is
 
-    R_(end)(Q)
+    R[end](Q)
     =
-    product_(i=1)^(n)
-    P_Q
+    product[i=1]ⁿ
+    P[Q]
     (
-    S_i=1
+    Sᵢ=1
     |
-    S_1=...=S_(i-1)=1
+    S₁=...=Sᵢ₋₁=1
     ).
 
 If no representative Q-like events survive a sufficiently early stage, the relevant conditional term cannot be estimated retrospectively from the experiment's stored corpus.
@@ -641,13 +641,13 @@ It is that learned selectors can make their priors harder to enumerate.
 
 For a threshold trigger,
 
-    p_T > 20\ GeV
+    p[T] > 20\ GeV
 
 states an explicit boundary.
 
 For a learned selector,
 
-    s_theta(g(x))>tau
+    sₜheta(g(x))>tau
 
 defines a boundary whose geometry depends jointly on representation, training distribution, objective, architecture, quantization, compiler transformation, and deployment state.
 

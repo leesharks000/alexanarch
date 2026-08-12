@@ -179,17 +179,17 @@ Learned selection changes the epistemic form of the problem. An event may now be
 
 The methodological concern is not that such selectors are learned. Nor is it that they sometimes make errors. Any finite-bandwidth acquisition system necessarily makes errors relative to some possible future scientific objective. The concern is narrower: **the data required to measure the selector's errors may itself be destroyed by the selector.**
 
-Suppose a deployed selection function f_theta(x) maps an event representation x to a score, and an event is durably retained when
+Suppose a deployed selection function fₜheta(x) maps an event representation x to a score, and an event is durably retained when
 
-    f_theta(x)>=tau .
+    fₜheta(x)>=tau .
 
 For a retrospectively specified class Q, its operational retention is
 
-    R_f(Q;tau)
+    R[f](Q;tau)
     =
-    P_(X~ Q)[f_theta(X)>=tau].
+    P[X~ Q][fₜheta(X)>=tau].
 
-If events for which f_theta(X)<tau disappear before any independent sample is preserved, then R_f(Q;tau) may be impossible to estimate once Q becomes scientifically interesting. The instrument has not merely selected the evidence used to answer a scientific question. It has selected the evidence available for auditing its own selection.
+If events for which fₜheta(X)<tau disappear before any independent sample is preserved, then R[f](Q;tau) may be impossible to estimate once Q becomes scientifically interesting. The instrument has not merely selected the evidence used to answer a scientific question. It has selected the evidence available for auditing its own selection.
 
 This circularity is especially consequential for anomaly detection. The advertised scientific objective is sensitivity to classes that were not specified in advance; yet ordinary efficiency studies necessarily use classes that *can* be specified in advance. The unknown class therefore occupies a structurally different position from the benchmark signal. It is the class for which the selector's retention function matters most and for which direct validation is least available.
 
@@ -233,19 +233,19 @@ CMS Level-1 Data Scouting offers a concrete example of this distinction. The Pha
 
 ## 3. The minimal control: content-independent probability sampling
 
-Let X_i denote the event available at the fidelity locus. Before the learned selector's decision is allowed to determine whether X_i survives, define an independent inclusion variable
+Let Xᵢ denote the event available at the fidelity locus. Before the learned selector's decision is allowed to determine whether Xᵢ survives, define an independent inclusion variable
 
-    B_i ~ Bernoulli(pi_i).
+    Bᵢ ~ Bernoulli(piᵢ).
 
-When B_i=1, the event—or the highest-fidelity representation permitted by the control bandwidth—is retained regardless of its anomaly score, reconstructed category, trigger signature, or apparent physical interest.
+When Bᵢ=1, the event—or the highest-fidelity representation permitted by the control bandwidth—is retained regardless of its anomaly score, reconstructed category, trigger signature, or apparent physical interest.
 
 The strongest and simplest design uses a constant inclusion probability,
 
-    pi_i=p,
+    piᵢ=p,
 
 so that
 
-    P(B_i=1| X_i=x)=p
+    P(Bᵢ=1| Xᵢ=x)=p
 
 for every capturable x.
 
@@ -257,7 +257,7 @@ A fixed periodic prescale—every Nth event—may appear equivalent, but periodi
 
 The C0 channel has a second requirement:
 
-    pi_i>0
+    piᵢ>0
 
 for every event belonging to the population for which baseline claims are made.
 
@@ -292,15 +292,15 @@ Uniform full-fidelity sampling supplies the clean control, but its statistical p
 Let g(X) be the exact representation consumed by the deployed classifier. The **C1 representation tap** records, at the highest sustainable rate,
 
     [
-    g(X_i),
-    f_theta(g(X_i)),
-    tau_i,
-    D_i,
-    V_i,
-    C_i
+    g(Xᵢ),
+    fₜheta(g(Xᵢ)),
+    tauᵢ,
+    Dᵢ,
+    Vᵢ,
+    Cᵢ
     ],
 
-where D_i is the classifier's decision, V_i records the complete model/firmware version, and C_i records relevant detector and run conditions.
+where Dᵢ is the classifier's decision, Vᵢ records the complete model/firmware version, and Cᵢ records relevant detector and run conditions.
 
 C1 need not retain the complete event. Its purpose is to retain **the evidence required to reconstruct the selector's decision surface**.
 
@@ -324,11 +324,11 @@ Their conjunction is substantially more powerful than either alone.
 
 A content-independent probability sample is inefficient for phenomena with extremely small prevalence. If a class Q occurs with prevalence q, N events reach the baseline locus, and each is sampled with probability p, then the expected number of captured instances is
 
-    E[n_Q]=Npq.
+    E[n[Q]]=Npq.
 
 For small q,
 
-    P(n_Q=0)≈ e^(-Npq).
+    P(n[Q]=0)≈ e[-Npq].
 
 No baseline architecture defeats this arithmetic. It cannot guarantee that an arbitrarily rare unknown event will survive.
 
@@ -336,7 +336,7 @@ The proper response is not to contaminate the C0 control, but to introduce a sep
 
 Suppose events are partitioned into coarse strata h(X), and events in stratum h are sampled with probability
 
-    pi(X)=pi_(h(X)).
+    pi(X)=pi[h(X)].
 
 The sampling probability may deliberately be increased for low-multiplicity events, unusual occupancy patterns, particular detector conditions, extreme values of simple primitives, or regions proposed by a streaming sketch. Provided that the inclusion mechanism is recorded and
 
@@ -346,17 +346,17 @@ the sample remains statistically interpretable.
 
 For a retrospectively defined class A, the retention of selector f can then be estimated by inverse-probability weighting:
 
-    est. R_f(A)
+    est. R[f](A)
     =
     (
-    sum_(i:B_i=1)
-    pi_i^(-1)
-    indicator(X_i∈ A)
-    indicator(f(X_i) >= tau)
+    sum[i:Bᵢ=1]
+    piᵢ⁻¹
+    indicator(Xᵢ∈ A)
+    indicator(f(Xᵢ) >= tau)
     )/(
-    sum_(i:B_i=1)
-    pi_i^(-1)
-    indicator(X_i∈ A)
+    sum[i:Bᵢ=1]
+    piᵢ⁻¹
+    indicator(Xᵢ∈ A)
     ).
 
 The point is not that this estimator solves every covariate-shift or rare-event problem. It is that **content-sensitive enrichment can remain auditable if its sampling law is explicit**.
@@ -375,28 +375,28 @@ The distinction provides an architecture with both epistemic cleanliness and pra
 
 A further plane addresses a different failure mode: even if several selectors individually perform well, their errors may overlap.
 
-Let f_A,f_B,...,f_k be candidate anomaly or classification systems operating on the same event representation. In **C3 shadow mode**, all selectors score the event, but their decisions do not determine whether the event enters the control archive.
+Let f[A],f[B],...,fₖ be candidate anomaly or classification systems operating on the same event representation. In **C3 shadow mode**, all selectors score the event, but their decisions do not determine whether the event enters the control archive.
 
 For each selector j, define a miss indicator on a subsequently identified class Q,
 
-    M_j(X)=
-    indicator[f_j(X)<tau_j].
+    Mⱼ(X)=
+    indicator[fⱼ(X)<tauⱼ].
 
 A baseline sample then permits measurement not merely of individual miss rates
 
-    q_j=P(M_j=1),
+    qⱼ=P(Mⱼ=1),
 
 but of joint misses,
 
-    q_(jk)=P(M_j=1,M_k=1).
+    qⱼₖ=P(Mⱼ=1,Mₖ=1).
 
 Under independent failures, the expected overlap is
 
-    q_jq_k.
+    qⱼqₖ.
 
 The excess
 
-    Delta_(jk)=q_(jk)-q_jq_k
+    Deltaⱼₖ=qⱼₖ-qⱼqₖ
 
 measures positive or negative miss dependence at the chosen operating points.
 
@@ -430,13 +430,13 @@ BCA therefore requires a **replay bank**. Each retained event should be bound, w
 
 The purpose is temporal separation.
 
-At time t_0, the experiment does not know which future anomaly class will matter. It therefore cannot construct a representative validation panel for that class.
+At time t₀, the experiment does not know which future anomaly class will matter. It therefore cannot construct a representative validation panel for that class.
 
-At time t_1, some phenomenon Q may be defined through another experiment, another trigger stream, a later theoretical development, an improved reconstruction, or an archival discovery.
+At time t₁, some phenomenon Q may be defined through another experiment, another trigger stream, a later theoretical development, an improved reconstruction, or an archival discovery.
 
 If the relevant C0/C1 material survives, the original selector can then be asked retrospectively:
 
-    What would the instrument at t_0 have done to Q?
+    What would the instrument at t₀ have done to Q?
 
 A replay bank therefore converts some portion of otherwise irrecoverable epistemic uncertainty into a delayed measurement problem.
 
@@ -448,11 +448,11 @@ This is different from simply preserving training data. Training corpora charact
 
 The principal BCA output is not a single “bias score.” It is a **retention map**.
 
-For a family of retrospectively specified classes or controlled perturbations Q_lambda, indexed by physical or representational coordinates lambda,
+For a family of retrospectively specified classes or controlled perturbations Qₗambda, indexed by physical or representational coordinates lambda,
 
-    R_f(lambda;tau)
+    R[f](lambda;tau)
     =
-    P_(X~ Q_lambda)
+    P[X~ Qₗambda]
     [f(X)>=tau].
 
 The coordinates might encode multiplicity, sparsity, constituent structure, energy scale, topology, detector occupancy, representation complexity, or any other axis for which a suitable panel can be constructed.
@@ -484,7 +484,7 @@ The optimal discovery selector and the optimal measurement of selection bias sol
 
 A discovery channel asks
 
-    max_f E[scientific utility of retained events]
+    max[f] E[scientific utility of retained events]
 
 subject to a bandwidth constraint.
 

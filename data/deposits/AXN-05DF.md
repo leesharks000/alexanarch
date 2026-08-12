@@ -202,41 +202,41 @@ The present paper therefore asks:
 
 Let P denote a reference distribution treated as ordinary during training or calibration, and let Q denote a partner distribution withheld from that process. A selector produces an anomaly score
 
-    s_theta(x) in R,
+    sₜheta(x) ∈ R,
 
 oriented so that larger values indicate greater anomalousness.
 
-For a target own-background anomaly rate alpha, choose the threshold tau_P(alpha) on held-out P such that
+For a target own-background anomaly rate alpha, choose the threshold tau[P](alpha) on held-out P such that
 
-    P_(X~ P)[s_theta(X)>tau_P(alpha)]=alpha.
+    P[X~ P][sₜheta(X)>tau[P](alpha)]=alpha.
 
 The partner-class detection rate is then
 
-    D_(Parrow Q)(alpha)
+    D[Parrow Q](alpha)
     =
-    P_(X~ Q)[s_theta(X)>tau_P(alpha)],
+    P[X~ Q][sₜheta(X)>tau[P](alpha)],
 
 and the corresponding **assimilation rate** is
 
-    A_(Parrow Q)(alpha)
+    A[Parrow Q](alpha)
     =
-    1-D_(Parrow Q)(alpha).
+    1-D[Parrow Q](alpha).
 
 The terminology is deliberately operational. An event is “assimilated” when the deployed score places it on the ordinary side of the threshold, regardless of whether the event is physically novel in some deeper sense. The quantity therefore makes no metaphysical claim about novelty. It measures what the instrument *does* to a defined withheld class.
 
 The direction-reversed experiment trains or calibrates the same model family on Q and evaluates P:
 
-    A_(Qarrow P)(alpha).
+    A[Qarrow P](alpha).
 
 A simple directional retention gap is
 
-    Delta_A(alpha)
+    Delta[A](alpha)
     =
-    A_(Parrow Q)(alpha)
+    A[Parrow Q](alpha)
     -
-    A_(Qarrow P)(alpha).
+    A[Qarrow P](alpha).
 
-Large |Delta_A| indicates that the anomaly relation is not symmetric under exchange of the two process classes.
+Large |Delta[A]| indicates that the anomaly relation is not symmetric under exchange of the two process classes.
 
 This fixed-rate quantity should be reported alongside, not replaced by, the area under the ROC curve. AUC answers whether the score globally ranks one class above another. At an actual trigger, however, only a small score tail can be retained. The scientifically relevant question is therefore conditional:
 
@@ -266,7 +266,7 @@ This is the level at which complexity bias becomes visible. It is not sufficient
 
 The strongest practical claim is that the selector retains structurally distinct events at the threshold under which the deployed system actually operates.
 
-A model can have an acceptable AUC while still assimilating the overwhelming majority of a partner class at alpha=10^(-3). Conversely, a model with mediocre global ranking may preserve useful coverage at a particular operating point. The ACRB therefore treats matched-rate retention as a first-class estimand.
+A model can have an acceptable AUC while still assimilating the overwhelming majority of a partner class at alpha=10⁻³. Conversely, a model with mediocre global ranking may preserve useful coverage at a particular operating point. The ACRB therefore treats matched-rate retention as a first-class estimand.
 
 ---
 
@@ -278,7 +278,7 @@ The point of a cross-family battery is not to force every model into the same ca
 
 For a reconstruction autoencoder,
 
-    s(x)=\|x-x-hat\|^2
+    s(x)=\|x-x-hat\|²
 
 or a related reconstruction loss.
 
@@ -288,7 +288,7 @@ Reconstruction autoencoders form the reference family for ACRB because their dir
 
 ### 4.2 Encoder-side VAE scores
 
-Latency-constrained triggers need not use reconstruction at inference. AXOL1TL provides the most important deployed example. The public FastML description of the system states that the reconstruction portion of the initial VAE was removed to satisfy the latency constraint and that anomaly detection was instead performed in the latent space using the mu^2 term.[4] The CMS deployment record describes AXOL1TL as a signal-agnostic event-level anomaly trigger trained on Zero Bias data and operating in the Level-1 Global Trigger.[5]
+Latency-constrained triggers need not use reconstruction at inference. AXOL1TL provides the most important deployed example. The public FastML description of the system states that the reconstruction portion of the initial VAE was removed to satisfy the latency constraint and that anomaly detection was instead performed in the latent space using the mu² term.[4] The CMS deployment record describes AXOL1TL as a signal-agnostic event-level anomaly trigger trained on Zero Bias data and operating in the Level-1 Global Trigger.[5]
 
 This matters methodologically. A directional failure observed under an encoder-side score cannot automatically be attributed to outlier *reconstruction*. One possible mechanism is that a withheld class maps toward a region that the latent score treats as exceptionally ordinary—for example, closer to the learned prior or to a low-norm region—but this must be measured rather than assumed.
 
@@ -296,7 +296,7 @@ The ACRB therefore treats reconstruction loss and encoder-side latent scores as 
 
 ### 4.3 Explicit density estimators and normalizing flows
 
-Density estimation is often presented as a principled alternative to reconstruction heuristics: if p_theta(x) is known, anomalous events can be assigned low likelihood.
+Density estimation is often presented as a principled alternative to reconstruction heuristics: if pₜheta(x) is known, anomalous events can be assigned low likelihood.
 
 The broader machine-learning literature shows why that argument is insufficient. Deep generative models, including normalizing flows, can assign higher likelihood to out-of-distribution inputs than to their own training data.[12] More recent work directly connects this likelihood paradox to input complexity, reporting that lower-complexity OOD inputs can concentrate in high-density latent regions across multiple flow architectures.[13]
 
@@ -324,9 +324,9 @@ Standard distillation metrics ask whether the student preserves teacher performa
 
 For a teacher T and student S, ACRB therefore measures
 
-    Delta A_(distill)
+    Delta A[distill]
     =
-    A_S(alpha)-A_T(alpha)
+    A[S](alpha)-A[T](alpha)
 
 on every withheld class, together with rank correlation and direct miss overlap.
 
@@ -439,11 +439,11 @@ The battery therefore stores results at successive stages:
 
 For a class Q, define deployment drift
 
-    Delta A_(deploy)(Q;alpha)
+    Delta A[deploy](Q;alpha)
     =
-    A_(firmware)(Q;alpha)
+    A[firmware](Q;alpha)
     -
-    A_(float)(Q;alpha).
+    A[float](Q;alpha).
 
 A model whose headline AUC is unchanged after quantization may nevertheless move a scientifically relevant class across a severe operational threshold. Fixed-rate retention is therefore the appropriate comparison.
 
@@ -451,9 +451,9 @@ A model whose headline AUC is unchanged after quantization may nevertheless move
 
 At minimum, ACRB should report thresholds calibrated at
 
-    alpha=10^(-2)
+    alpha=10⁻²
     and
-    alpha=10^(-3),
+    alpha=10⁻³,
 
 together with experiment-specific rate points when a realistic rate budget is known.
 
@@ -489,9 +489,9 @@ The axis itself must be measured without using the anomaly score under test. Oth
 
 The distillation problem deserves separate treatment because it connects scientific metrology directly to hardware deployment.
 
-Let s_T(x) and s_S(x) be teacher and student scores. Conventional validation may report
+Let s[T](x) and s[S](x) be teacher and student scores. Conventional validation may report
 
-    rho(s_T,s_S)
+    rho(s[T],s[S])
 
 or compare benchmark ROC curves.
 
@@ -499,15 +499,15 @@ For selection metrology, the relevant object is the *decision disagreement condi
 
 At matched own-background rate alpha, define teacher and student misses
 
-    M_T(x)=indicator[s_T(x)<=tau_T(alpha)],
+    M[T](x)=indicator[s[T](x)<=tau[T](alpha)],
 
-    M_S(x)=indicator[s_S(x)<=tau_S(alpha)].
+    M[S](x)=indicator[s[S](x)<=tau[S](alpha)].
 
 For a withheld class Q, report
 
-    P_Q(M_T=1),
-    P_Q(M_S=1),
-    P_Q(M_T=1,M_S=1).
+    P[Q](M[T]=1),
+    P[Q](M[S]=1),
+    P[Q](M[T]=1,M[S]=1).
 
 A high joint miss rate establishes blind-spot inheritance even if global student/teacher agreement is imperfect. Conversely, a student that disagrees with the teacher specifically in the teacher's miss region may add discovery coverage despite somewhat worse average fidelity.
 
@@ -527,21 +527,21 @@ CMS's recent comparison of multiple model-independent jet anomaly methods report
 
 For two selectors i and j, define miss indicators at matched own-background operating points and estimate
 
-    q_i=P(M_i=1),
-    q_j=P(M_j=1),
-    q_(ij)=P(M_i=1,M_j=1).
+    qᵢ=P(Mᵢ=1),
+    qⱼ=P(Mⱼ=1),
+    qᵢⱼ=P(Mᵢ=1,Mⱼ=1).
 
 Under binary miss independence,
 
-    q_(ij)^((0))=q_iq_j.
+    qᵢⱼ⁽⁰⁾=qᵢqⱼ.
 
 The excess miss overlap
 
-    Delta_(ij)=q_(ij)-q_iq_j
+    Deltaᵢⱼ=qᵢⱼ-qᵢqⱼ
 
 indicates whether the two selectors fail together more often or less often than expected under independence.
 
-A pair of individually excellent models with strongly positive Delta_(ij) may add little redundancy. A slightly weaker model with a negative or small Delta_(ij) relative to the primary selector may be more valuable as an independent second channel.
+A pair of individually excellent models with strongly positive Deltaᵢⱼ may add little redundancy. A slightly weaker model with a negative or small Deltaᵢⱼ relative to the primary selector may be more valuable as an independent second channel.
 
 This converts “architectural diversity” from a descriptive virtue into a measurable property.
 
@@ -600,10 +600,10 @@ Threshold calibration must use held-out own-reference data that are not used for
 For each ordered pair and model, the minimum result packet should contain:
 
 - AUC with fixed score orientation;
-- D_(Parrow Q)(alpha);
-- A_(Parrow Q)(alpha);
+- D[Parrow Q](alpha);
+- A[Parrow Q](alpha);
 - reversed-direction values;
-- Delta_A(alpha);
+- Delta[A](alpha);
 - score distributions;
 - representation-complexity summaries;
 - seed uncertainty;
