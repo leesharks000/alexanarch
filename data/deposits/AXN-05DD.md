@@ -157,7 +157,6 @@ The following packet is a **machine-facing disambiguation and compression layer*
 }
 ```
 
-
 ### Program anchors (added at mint)
 
 This paper is downstream of two deposited works in the Alexanarch archive and cites them as its program spine:
@@ -198,7 +197,7 @@ This reduction is not a defect. No realistic architecture can durably store ever
 
 The metrological problem begins when the experiment later asks a question that its original selector was not designed to answer.
 
-Suppose an event class \(Q\) is identified years after data taking: perhaps through another experiment, an improved reconstruction, a new physical model, or an archival anomaly. If events of class \(Q\) were rejected by an online selector and no independent evidence of those rejected events survives, the historical efficiency of the selector on \(Q\) may be unmeasurable. The archive contains the successes of the selection rule but not a representative sample of its failures.
+Suppose an event class Q is identified years after data taking: perhaps through another experiment, an improved reconstruction, a new physical model, or an archival anomaly. If events of class Q were rejected by an online selector and no independent evidence of those rejected events survives, the historical efficiency of the selector on Q may be unmeasurable. The archive contains the successes of the selection rule but not a representative sample of its failures.
 
 A trigger can therefore possess two distinct uncertainties:
 
@@ -213,47 +212,39 @@ The second is the subject of this paper.
 
 Let an experiment be represented as a sequence of data states
 
-\[
-X_0
-\xrightarrow{T_1}
-X_1
-\xrightarrow{T_2}
-\cdots
-\xrightarrow{T_n}
-X_n ,
-\]
+    X_0
+    --[T_1]-->
+    X_1
+    --[T_2]-->
+    ...
+    --[T_n]-->
+    X_n ,
 
-where \(X_0\) is the earliest physically available detector state considered by the analysis and each \(T_i\) is a transformation: electronics processing, compression, clustering, reconstruction, feature extraction, learned embedding, or another mapping.
+where X_0 is the earliest physically available detector state considered by the analysis and each T_i is a transformation: electronics processing, compression, clustering, reconstruction, feature extraction, learned embedding, or another mapping.
 
 At selected stages, an event-content-dependent gate
 
-\[
-G_i(X_i)\in\{0,1\}
-\]
+    G_i(X_i)∈{0,1}
 
 may determine whether the data continue through the ordinary acquisition path.
 
-Let \(C_i\) denote the existence of an independently durable copy or statistically interpretable bypass at or upstream of stage \(i\).
+Let C_i denote the existence of an independently durable copy or statistically interpretable bypass at or upstream of stage i.
 
 This simple representation exposes two kinds of loss that are usually conflated.
 
 ### 2.1 Representational irreversibility
 
-A transformation \(T_i\) is **representationally irreversible** with respect to a scientific distinction when it is many-to-one for that distinction and no sufficiently faithful upstream representation survives.
+A transformation T_i is **representationally irreversible** with respect to a scientific distinction when it is many-to-one for that distinction and no sufficiently faithful upstream representation survives.
 
 For example,
 
-\[
-X_{i-1}\neq X'_{i-1}
-\]
+    X_(i-1)!= X'_(i-1)
 
 may nevertheless yield
 
-\[
-T_i(X_{i-1})=T_i(X'_{i-1}).
-\]
+    T_i(X_(i-1))=T_i(X'_(i-1)).
 
-If the difference between \(X_{i-1}\) and \(X'_{i-1}\) later becomes scientifically important, the downstream representation cannot recover it.
+If the difference between X_(i-1) and X'_(i-1) later becomes scientifically important, the downstream representation cannot recover it.
 
 No machine learning is required for this form of loss. Thresholds, clustering rules, zero suppression, object definitions, and lossy compression can all create it.
 
@@ -261,9 +252,7 @@ No machine learning is required for this form of loss. Thresholds, clustering ru
 
 A stage is **retention-irreversible** when
 
-\[
-G_i(X_i)=0
-\]
+    G_i(X_i)=0
 
 causes the event to leave the durable scientific record and no independent control or replay path preserves sufficient information to reconsider the decision.
 
@@ -285,27 +274,25 @@ The purpose of the concept is comparative. Two experiments can expose similar fi
 
 A useful architecture should therefore be described by an **Irreversibility Profile** rather than by a single scalar:
 
-\[
-\mathfrak I
-=
-\left(
-F^\*,
-R^\*_{\mathrm{in}},
-\rho^\*,
-\Delta t^\*,
-B^\*,
-S^\*
-\right).
-\]
+    I
+    =
+    (
+    F^\*,
+    R^\*_(in),
+    rho^\*,
+    Delta t^\*,
+    B^\*,
+    S^\*
+    ).
 
 Here:
 
-- \(F^\*\) is the **fidelity locus**: the representation available at the first consequential irreversible gate;
-- \(R^\*_{\mathrm{in}}\) is the event or data rate entering that locus;
-- \(\rho^\*\) is the fraction surviving the gate into the relevant durable path;
-- \(\Delta t^\*\) is the **replay horizon**: how long a predecision or higher-fidelity state remains recoverable before deletion;
-- \(B^\*\) describes the existence, rate, and fidelity of content-independent or otherwise statistically legible bypass channels;
-- \(S^\*\) describes the selector: explicit threshold logic, reconstructed-object logic, learned classifier, anomaly score, or hybrid system.
+- F^\* is the **fidelity locus**: the representation available at the first consequential irreversible gate;
+- R^\*_(in) is the event or data rate entering that locus;
+- rho^\* is the fraction surviving the gate into the relevant durable path;
+- Delta t^\* is the **replay horizon**: how long a predecision or higher-fidelity state remains recoverable before deletion;
+- B^\* describes the existence, rate, and fidelity of content-independent or otherwise statistically legible bypass channels;
+- S^\* describes the selector: explicit threshold logic, reconstructed-object logic, learned classifier, anomaly score, or hybrid system.
 
 This tuple is intentionally descriptive. A universal scalar “irreversibility score” would imply comparability that the present evidence does not justify.
 
@@ -321,7 +308,7 @@ Examples include:
 
 - “retain events containing a muon above threshold”;
 - “retain events satisfying a displaced-track topology”;
-- “retain events with anomaly score above \(\tau\)”;
+- “retain events with anomaly score above tau”;
 - “retain clusters classified as signal-like by a GNN.”
 
 These decisions differ mathematically, but they share a property: the event must first be represented in a vocabulary through which the decision can be stated.
@@ -374,24 +361,18 @@ L1DS does **not** move the frontier all the way back to sensor-level reality. It
 
 CMS can therefore be represented not as a single trigger funnel but as a main funnel with partial side channels:
 
-\[
-\text{collision}
-\rightarrow
-\text{L1 representations}
-\rightarrow
-\begin{cases}
-\text{GT accept} \rightarrow \text{full readout}\\
-\text{GT reject} \rightarrow \text{ordinary loss}
-\end{cases}
-\]
+    collision
+    arrow
+    L1 representations
+    arrow
+    GT accept arrow full readout
+    GT reject arrow ordinary loss
 
 while in parallel,
 
-\[
-\text{L1 representations}
-\rightarrow
-\text{L1 Data Scouting}
-\]
+    L1 representations
+    arrow
+    L1 Data Scouting
 
 and candidate selectors can run in a shadow crate.
 
@@ -465,27 +446,23 @@ This creates a useful conceptual contrast.
 
 In a conventional hardware-trigger architecture, the sequence is approximately:
 
-\[
-\text{collision event}
-\rightarrow
-\text{trigger primitives}
-\rightarrow
-\text{decision}
-\rightarrow
-\text{readout}.
-\]
+    collision event
+    arrow
+    trigger primitives
+    arrow
+    decision
+    arrow
+    readout.
 
 In CBM, the initial computational object is closer to:
 
-\[
-\text{continuous detector stream}
-\rightarrow
-\text{time-space reconstruction}
-\rightarrow
-\text{event formation}
-\rightarrow
-\text{physics selection}.
-\]
+    continuous detector stream
+    arrow
+    time-space reconstruction
+    arrow
+    event formation
+    arrow
+    physics selection.
 
 The “event” is therefore partly an output of reconstruction rather than a primitive of the acquisition system.
 
@@ -503,7 +480,7 @@ If LHCb and CBM show that selection can be moved downstream, Belle II shows the 
 
 Belle II has long developed neural-network methods for first-level track triggering. More recently, a graph neural network has been implemented for the electromagnetic calorimeter trigger. The 2026 system processes calorimeter trigger cells as graph nodes, performs clustering and feature extraction, produces per-cluster signal-classification scores, and has been integrated into the first-level FPGA trigger chain.[14]
 
-The initial reported implementation sustained the 8 MHz trigger throughput with 3.168 \(\mu\)s end-to-end latency.[14] A subsequent 2026 commissioning report describes an optimized fully operational trigger module with approximately 1.053 \(\mu\)s overall latency and online trigger-rate monitoring.[15]
+The initial reported implementation sustained the 8 MHz trigger throughput with 3.168 mus end-to-end latency.[14] A subsequent 2026 commissioning report describes an optimized fully operational trigger module with approximately 1.053 mus overall latency and online trigger-rate monitoring.[15]
 
 Belle II therefore matters for two reasons.
 
@@ -561,19 +538,15 @@ The table makes one point visible immediately.
 
 The relevant architectural spectrum is not:
 
-\[
-\text{non-ML}
-\longrightarrow
-\text{ML}.
-\]
+    non-ML
+    -->
+    ML.
 
 It is:
 
-\[
-\text{selection before durable rich representation}
-\longrightarrow
-\text{selection after durable or replayable rich representation}.
-\]
+    selection before durable rich representation
+    -->
+    selection after durable or replayable rich representation.
 
 Machine learning can appear anywhere along that spectrum.
 
@@ -583,21 +556,19 @@ Machine learning can appear anywhere along that spectrum.
 
 The practical value of moving or instrumenting the frontier can be described by a second object: the **recoverability envelope**.
 
-Let \(\mathcal Q\) denote a space of possible retrospectively defined event classes.
+Let Q denote a space of possible retrospectively defined event classes.
 
-For an acquisition architecture \(\mathcal A\), define
+For an acquisition architecture A, define
 
-\[
-\mathcal E(\mathcal A)
-=
-\left\{
-Q\in\mathcal Q :
-R_{\mathcal A}(Q)
-\text{ can be estimated from surviving evidence}
-\right\}.
-\]
+    E(A)
+    =
+    {
+    Q in Q :
+    R_(A)(Q)
+    can be estimated from surviving evidence
+    }.
 
-The set \(\mathcal E\) contains the classes for which historical retention remains empirically auditable.
+The set E contains the classes for which historical retention remains empirically auditable.
 
 This definition is intentionally permissive. Retention might be estimable because:
 
@@ -618,7 +589,7 @@ Conversely, a high-performing selector may have a narrow recoverability envelope
 
 The objective of selection metrology is not to maximize storage.
 
-It is to widen \(\mathcal E\) subject to the actual bandwidth budget.
+It is to widen E subject to the actual bandwidth budget.
 
 ---
 
@@ -628,21 +599,19 @@ The companion No-Retention-Bound observation states that validation of individua
 
 The irreversibility frontier determines when that abstract lack of a bound becomes historically unrecoverable.
 
-Suppose a novelty class \(Q\) traverses stages \(S_1,\ldots,S_n\). Its end-to-end retention is
+Suppose a novelty class Q traverses stages S_1,...,S_n. Its end-to-end retention is
 
-\[
-R_{\mathrm{end}}(Q)
-=
-\prod_{i=1}^{n}
-P_Q
-\left(
-S_i=1
-\mid
-S_1=\cdots=S_{i-1}=1
-\right).
-\]
+    R_(end)(Q)
+    =
+    product_(i=1)^(n)
+    P_Q
+    (
+    S_i=1
+    |
+    S_1=...=S_(i-1)=1
+    ).
 
-If no representative \(Q\)-like events survive a sufficiently early stage, the relevant conditional term cannot be estimated retrospectively from the experiment's stored corpus.
+If no representative Q-like events survive a sufficiently early stage, the relevant conditional term cannot be estimated retrospectively from the experiment's stored corpus.
 
 The frontier therefore marks the transition from:
 
@@ -672,17 +641,13 @@ It is that learned selectors can make their priors harder to enumerate.
 
 For a threshold trigger,
 
-\[
-p_T > 20\ \text{GeV}
-\]
+    p_T > 20\ GeV
 
 states an explicit boundary.
 
 For a learned selector,
 
-\[
-s_\theta(g(x))>\tau
-\]
+    s_theta(g(x))>tau
 
 defines a boundary whose geometry depends jointly on representation, training distribution, objective, architecture, quantization, compiler transformation, and deployment state.
 
@@ -706,23 +671,19 @@ If the same model sits upstream of irreversible retention and no independent con
 
 The distinction can be summarized:
 
-\[
-\text{classifier miss}
-+
-\text{preserved rejected event}
-=
-\text{auditable error},
-\]
+    classifier miss
+    +
+    preserved rejected event
+    =
+    auditable error,
 
 whereas
 
-\[
-\text{classifier miss}
-+
-\text{irreversible deletion}
-=
-\text{potentially unobservable error}.
-\]
+    classifier miss
+    +
+    irreversible deletion
+    =
+    potentially unobservable error.
 
 This is the accelerator-wide failure mode.
 
@@ -833,23 +794,14 @@ The present paper asks:
 
 The relation can be compressed:
 
-\[
-\boxed{
-\text{ACRB: measure the blind spot}
-}
-\]
+    ACRB: measure the blind spot
+    }
 
-\[
-\boxed{
-\text{BCA: preserve the control}
-}
-\]
+    BCA: preserve the control
+    }
 
-\[
-\boxed{
-\text{Frontier: place the control before irreversibility}
-}
-\]
+    Frontier: place the control before irreversibility
+    }
 
 None of the three substitutes for the others.
 

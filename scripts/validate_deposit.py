@@ -243,6 +243,37 @@ def validate_entry_required_fields(entry, enforce_all=False):
     if isinstance(d, str) and d.strip() and not re.match(r"^\d{4}-\d{2}-\d{2}$", d.strip()):
         failures.append(("REQ-006", f"date must be ISO 8601 YYYY-MM-DD; got {d!r}"))
 
+    # MATH-001 (ratified 2026-08-12, MANUS, after deposits #1452-#1454).
+    # LaTeX renders in a PDF. The CANONICAL BODY is what the record page, the
+    # wiki, the body index, the OAI dissemination and every machine reader
+    # actually see, and there it is raw backslash macros — a reader meets
+    # "\[ X_0 \xrightarrow{T_1} X_1 \]" where the paper says an acquisition
+    # chain. Canonical text therefore uses PLAIN-TEXT mathematical notation;
+    # scripts/detex_canonical.py performs the conversion.
+    _hex = entry.get("hex")
+    if _hex:
+        _p = REPO_ROOT / "data" / "texts" / f"AXN-{_hex}-text.md"
+        if _p.exists():
+            try:
+                _t = _p.read_text(encoding="utf-8")
+            except Exception:
+                _t = ""
+            # YAML frontmatter carries strings with escaped \n; not LaTeX.
+            if _t.startswith("---"):
+                _j = _t.find("\n---\n", 3)
+                if _j > 0:
+                    _t = _t[_j + 5:]
+            _disp = len(re.findall(r"\\\[", _t)) + _t.count("$$") // 2
+            _inl = len(re.findall(r"\\\(", _t))
+            _mac = len(set(m for m in re.findall(r"\\[A-Za-z]{2,}", _t) if m[1] not in "ntr" or len(m) < 3 or m[2].islower() is False))
+            if _disp or _inl or _mac:
+                failures.append((
+                    "MATH-001",
+                    f"canonical text carries LaTeX ({_disp} display, {_inl} inline, "
+                    f"{_mac} distinct macros); use plain-text notation in the body "
+                    f"(LaTeX is fine in the PDF) — run "
+                    f"scripts/detex_canonical.py --deposits {entry.get('deposit_number')} --apply"))
+
     # TEXT-001 / IMG-001 (2026-08-09, mint-forward from #1445; #1443/#1444 are
     # the precedent defects, sealed and grandfathered like the WIKI-001 cohort
     # above). TEXT-001: canonical bodies FLOW — a hard-wrapped body renders as
