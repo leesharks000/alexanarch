@@ -5895,6 +5895,167 @@
      ]
     }
    }
+  },
+  "T9_chain_ladder": {
+   "K=20": {
+    "K_latent": 20,
+    "K_input": 20,
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "epochs": 3,
+    "train_events_per_class": 15000,
+    "energy_ratio_mean": 0.482,
+    "energy_ratio_values": [
+     0.482,
+     0.461,
+     0.451,
+     0.306,
+     0.574,
+     0.617
+    ],
+    "converged_band": false,
+    "auc_P_on_Q": {
+     "mean": 0.7817,
+     "seed_values": [
+      0.7941,
+      0.7917,
+      0.7594
+     ]
+    },
+    "auc_Q_on_P": {
+     "mean": 0.2843,
+     "seed_values": [
+      0.2863,
+      0.2439,
+      0.3227
+     ]
+    },
+    "D_A@0.01": {
+     "mean": -0.0371,
+     "seed_values": [
+      -0.0449,
+      -0.0433,
+      -0.0232
+     ]
+    },
+    "D_A@0.001": {
+     "mean": -0.0036,
+     "seed_values": [
+      -0.005,
+      -0.0031,
+      -0.0027
+     ]
+    }
+   },
+   "K=40": {
+    "K_latent": 40,
+    "K_input": 40,
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "epochs": 3,
+    "train_events_per_class": 15000,
+    "energy_ratio_mean": 0.397,
+    "energy_ratio_values": [
+     0.44,
+     0.45,
+     0.295,
+     0.285,
+     0.43,
+     0.483
+    ],
+    "converged_band": false,
+    "auc_P_on_Q": {
+     "mean": 0.8085,
+     "seed_values": [
+      0.8007,
+      0.8255,
+      0.7994
+     ]
+    },
+    "auc_Q_on_P": {
+     "mean": 0.3083,
+     "seed_values": [
+      0.363,
+      0.2481,
+      0.3137
+     ]
+    },
+    "D_A@0.01": {
+     "mean": -0.0283,
+     "seed_values": [
+      -0.0322,
+      -0.0218,
+      -0.0309
+     ]
+    },
+    "D_A@0.001": {
+     "mean": -0.002,
+     "seed_values": [
+      -0.0017,
+      -0.0014,
+      -0.0028
+     ]
+    }
+   },
+   "K=80": {
+    "K_latent": 80,
+    "K_input": 80,
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "epochs": 3,
+    "train_events_per_class": 15000,
+    "energy_ratio_mean": 0.421,
+    "energy_ratio_values": [
+     0.426,
+     0.416,
+     0.402,
+     0.383,
+     0.447,
+     0.453
+    ],
+    "converged_band": false,
+    "auc_P_on_Q": {
+     "mean": 0.8306,
+     "seed_values": [
+      0.8242,
+      0.8432,
+      0.8245
+     ]
+    },
+    "auc_Q_on_P": {
+     "mean": 0.2735,
+     "seed_values": [
+      0.3008,
+      0.2349,
+      0.2847
+     ]
+    },
+    "D_A@0.01": {
+     "mean": -0.0199,
+     "seed_values": [
+      -0.0179,
+      -0.0181,
+      -0.0236
+     ]
+    },
+    "D_A@0.001": {
+     "mean": -0.0022,
+     "seed_values": [
+      -0.002,
+      -0.002,
+      -0.0027
+     ]
+    }
+   }
   }
  },
  "deviations": [
@@ -6092,6 +6253,16 @@
    "half_missed": "On the constituent pair the remedy does NOT prevent inversion: AUC Q on P 0.284, against the plain AE 0.241 \u2014 still far below chance. BUT the diagnostic reads 0.48 there, half the LHCO values, which means the negatives sit at markedly lower energy than the data and the chain has not equilibrated on the 120-dimensional representation. Per the registration, that cell is reported as UNINTERPRETABLE as a test of the remedy rather than as a failure of it. The registered diagnostic did exactly the work it was added to do: it separates a null from a non-run, which the two previous attempts could not.",
    "scope": "K_latent and K_input at the registered 20 and three seeds as registered; epochs reduced to 3 and training set to 15,000 per class to fit the execution window \u2014 neither was fixed by the T8 registration, and both are recorded per cell. A longer chain and fuller training on the constituent representation is the outstanding item.",
    "consequence": "The correct statement about the published remedy, after three attempts: it measurably reduces directional asymmetry where the sampler converges, and the battery cannot yet say whether it prevents inversion on high-dimensional constituents because the sampler does not converge there at K = 20. Both halves are results; neither is a verdict on the method."
+  },
+  "T9_chain_ladder": {
+   "design": "constituent pair only; K_latent = K_input in {20, 40, 80}; all else identical to T8",
+   "prediction_1": "energy ratio rises monotonically with chain length and reaches the 0.9-1.0 band by K=80",
+   "outcome_1": "MISSED \u2014 ratios 0.482, 0.397, 0.421: not monotone, and quadrupling the chain moved nothing. The chain length is not the binding constraint on this representation.",
+   "prediction_2": "if a rung converges, the inversion persists (AUC Q on P below 0.5)",
+   "outcome_2": "NOT TESTABLE from this ladder \u2014 no rung reached the band, so the registered condition for prediction 2 was never met.",
+   "registered_null": "Per the outcome condition set in advance: the constituent cell remains UNINTERPRETABLE as a test of the published remedy at feasible chain lengths on this compute. This is a null about the SAMPLER, not about the remedy, and the question is deferred rather than answered.",
+   "what_the_ladder_did_establish": "The failure is not chain length. Ratios cluster at 0.4-0.5 across a fourfold range of K, so the negatives sit persistently at half the data energy no matter how long the chain runs. That points at the construction on this representation \u2014 step size, noise scale, buffer initialisation, or the on-manifold decode itself in 120 dimensions \u2014 rather than at insufficient mixing. A step-size and noise-scale sweep is the next diagnostic, not a longer chain.",
+   "incidental": "AUC Q on P stayed near 0.28 across all three rungs and D_A shrank steadily (-0.037, -0.028, -0.020) as K grew, but none of that can be read as evidence about the remedy while the sampler is out of band."
   }
  },
  "audit_v03": {
@@ -6134,7 +6305,8 @@
    "T6 monotone survival",
    "T6 blind-spot inheritance (phi 0.30-0.54 is PARTIAL positive inheritance, weaker than predicted, not absence)",
    "PCD-NAE approximation on L1/L2",
-   "T7 same-pair two-encoding test (AE~VAE phi unchanged across encodings)"
+   "T7 same-pair two-encoding test (AE~VAE phi unchanged across encodings)",
+   "T9 chain-length ladder (prediction 1: ratio did not rise or reach band)"
   ],
   "not_run": [
    "T2 registered distance-matched panel",
@@ -6143,6 +6315,9 @@
   "incomplete": [
    "NAE approximation, constituent cell still running"
   ],
-  "confirmed_count_note": "2 confirmed (T5, T3), 1 partial (T4), 4 missed (T6 x2, NAE approximation, T7), 3 not run, 1 incomplete"
+  "confirmed_count_note": "2 confirmed (T5, T3), 1 partial (T4), 4 missed (T6 x2, NAE approximation, T7), 3 not run, 1 incomplete",
+  "deferred": [
+   "whether the published NAE prevents inversion on high-dimensional constituents \u2014 sampler does not converge at K up to 80; next diagnostic is a step-size/noise sweep, not a longer chain"
+  ]
  }
 }
