@@ -5159,6 +5159,208 @@
      ]
     }
    }
+  },
+  "T3": {
+   "L1": {
+    "calibration_achieved": {
+     "P_calibration": 200000,
+     "Q_calibration": 20000,
+     "evaluation_per_class": 20000
+    },
+    "bootstrap": "HIERARCHICAL: 2000 outer draws; seeds resampled with replacement, then events resampled within each seed",
+    "auc_P_on_Q": {
+     "mean": 0.6887,
+     "ci95_hier": [
+      0.6714,
+      0.704
+     ]
+    },
+    "auc_Q_on_P": {
+     "mean": 0.868,
+     "ci95_hier": [
+      0.8613,
+      0.875
+     ]
+    },
+    "M_A@0.01": {
+     "mean": 0.8946,
+     "ci95_hier": [
+      0.8833,
+      0.9064
+     ]
+    },
+    "D_A@0.01": {
+     "mean": 0.1584,
+     "ci95_hier": [
+      0.1455,
+      0.1712
+     ]
+    },
+    "M_A@0.001": {
+     "mean": 0.9778,
+     "ci95_hier": [
+      0.9709,
+      0.984
+     ]
+    },
+    "D_A@0.001": {
+     "mean": 0.0413,
+     "ci95_hier": [
+      0.0298,
+      0.054
+     ]
+    }
+   },
+   "L2": {
+    "calibration_achieved": {
+     "P_calibration": 200000,
+     "Q_calibration": 20000,
+     "evaluation_per_class": 20000
+    },
+    "bootstrap": "HIERARCHICAL: 2000 outer draws; seeds resampled with replacement, then events resampled within each seed",
+    "auc_P_on_Q": {
+     "mean": 0.6645,
+     "ci95_hier": [
+      0.6216,
+      0.7105
+     ]
+    },
+    "auc_Q_on_P": {
+     "mean": 0.9081,
+     "ci95_hier": [
+      0.9026,
+      0.9165
+     ]
+    },
+    "M_A@0.01": {
+     "mean": 0.8408,
+     "ci95_hier": [
+      0.8239,
+      0.8588
+     ]
+    },
+    "D_A@0.01": {
+     "mean": 0.2715,
+     "ci95_hier": [
+      0.23,
+      0.309
+     ]
+    },
+    "M_A@0.001": {
+     "mean": 0.9587,
+     "ci95_hier": [
+      0.9515,
+      0.9647
+     ]
+    },
+    "D_A@0.001": {
+     "mean": 0.0807,
+     "ci95_hier": [
+      0.0686,
+      0.0951
+     ]
+    }
+   },
+   "L3": {
+    "calibration_achieved": {
+     "P_calibration": 20000,
+     "Q_calibration": 20000,
+     "evaluation_per_class": 20000
+    },
+    "bootstrap": "HIERARCHICAL: 2000 outer draws; seeds resampled with replacement, then events resampled within each seed",
+    "auc_P_on_Q": {
+     "mean": 0.61,
+     "ci95_hier": [
+      0.5891,
+      0.6231
+     ]
+    },
+    "auc_Q_on_P": {
+     "mean": 0.6739,
+     "ci95_hier": [
+      0.6652,
+      0.6843
+     ]
+    },
+    "M_A@0.01": {
+     "mean": 0.9772,
+     "ci95_hier": [
+      0.9736,
+      0.9799
+     ]
+    },
+    "D_A@0.01": {
+     "mean": 0.0167,
+     "ci95_hier": [
+      0.0113,
+      0.0223
+     ]
+    },
+    "M_A@0.001": {
+     "mean": 0.9979,
+     "ci95_hier": [
+      0.9968,
+      0.9986
+     ]
+    },
+    "D_A@0.001": {
+     "mean": 0.0022,
+     "ci95_hier": [
+      0.001,
+      0.0041
+     ]
+    }
+   },
+   "T1": {
+    "calibration_achieved": {
+     "P_calibration": 120000,
+     "Q_calibration": 120000,
+     "evaluation_per_class": 20000
+    },
+    "bootstrap": "HIERARCHICAL: 2000 outer draws; seeds resampled with replacement, then events resampled within each seed",
+    "auc_P_on_Q": {
+     "mean": 0.8376,
+     "ci95_hier": [
+      0.835,
+      0.84
+     ]
+    },
+    "auc_Q_on_P": {
+     "mean": 0.241,
+     "ci95_hier": [
+      0.2374,
+      0.2446
+     ]
+    },
+    "M_A@0.01": {
+     "mean": 0.9831,
+     "ci95_hier": [
+      0.9823,
+      0.9839
+     ]
+    },
+    "D_A@0.01": {
+     "mean": -0.026,
+     "ci95_hier": [
+      -0.0275,
+      -0.0242
+     ]
+    },
+    "M_A@0.001": {
+     "mean": 0.9982,
+     "ci95_hier": [
+      0.9978,
+      0.9984
+     ]
+    },
+    "D_A@0.001": {
+     "mean": -0.003,
+     "ci95_hier": [
+      -0.0036,
+      -0.0026
+     ]
+    }
+   }
   }
  },
  "deviations": [
@@ -5239,6 +5441,12 @@
    "item": "NAE L2 seed spread not flagged",
    "detail": "D_A@1e-2 across the three seeds is 0.446 / 0.524 / 0.226. The 0.398 mean is dominated by two seeds. The missed-prediction verdict is robust (even the low seed exceeds the plain-AE mean of 0.268) but the mean is not precise.",
    "severity": "precision"
+  },
+  {
+   "id": "V3-D14",
+   "item": "T3 implemented after results existed",
+   "detail": "The pre-registration specified T3 before any run; the executable shipped without the branch. Implemented 2026-08-12 in a separate commit that states the prediction and estimands are unchanged from commit c7e5b4e7, which stands unedited. The registered 200,000 calibration is now achieved where the pools allow it (LHCO background 200,000; constituent pair 120,000 per class via the registered val+test pooling) and the ACHIEVED size is recorded per pair rather than declared. LHCO signal directions remain at 20,000 because those pools hold only 100,000 events.",
+   "severity": "procedural \u2014 logged, not concealed"
   }
  ],
  "status": {
@@ -5291,6 +5499,35 @@
    "two_readings": "either model-distribution normalisation does not remove directional asymmetry at these operating points on these representations, or the K=20 Langevin chain is under-converged so the negatives are not yet model samples. Short chains are the standard failure mode of energy-based training; the pre-registration required the chain length to be recorded as a limitation, and it is.",
    "chain": "K=20, eta=0.05, sigma=0.05, replay buffer 1024, 5% noise restarts, energy = reconstruction error, 3 seeds as declared",
    "retroactive_note": "the faithful model behaves differently from BOTH the plain AE and the v0.2 surrogate, which confirms that relabelling the v0.2 row rather than overwriting it was correct"
+  },
+  "T3": {
+   "implementation": "POST-RESULTS implementation of a pre-registered procedure. Original registration commit c7e5b4e7 stands unedited; prediction and estimands unchanged; only the execution is new. Logged as such.",
+   "prediction": "qualitative conclusions survive; fourth-decimal differences at alpha=1e-3 do not, and any claim resting on them is withdrawn",
+   "outcome": "CONFIRMED",
+   "evidence": "with hierarchical intervals over seeds AND events, and calibration raised to 120,000 per class on the constituent pair (val.h5 + test.h5 pooled as registered) and 200,000 on the LHCO background: the constituent inversion survives (AUC Q->P 0.241, interval [0.237, 0.245], entirely below chance); LHCO direction-dependence survives with D_A@1e-2 intervals excluding zero; the control stays quiet. The v0.2 seed-only intervals were not systematically too narrow \u2014 hierarchical intervals are comparable in width and the point estimates shift only in the third decimal (L1 0.1548 -> 0.1584, L2 0.2682 -> 0.2715).",
+   "what_it_withdraws": "at alpha=1e-3 the LHCO signal-trained directions still calibrate on only 20,000 events, because the signal pools hold 100,000 and 60k train + 20k evaluation leaves no more. The constituent pair is now genuinely well calibrated at 120,000 per class. Fourth-decimal comparisons at 1e-3 remain unsupported for L1, L2 and L3 and no claim should rest on them.",
+   "calibration_achieved": {
+    "L1": {
+     "P_calibration": 200000,
+     "Q_calibration": 20000,
+     "evaluation_per_class": 20000
+    },
+    "L2": {
+     "P_calibration": 200000,
+     "Q_calibration": 20000,
+     "evaluation_per_class": 20000
+    },
+    "L3": {
+     "P_calibration": 20000,
+     "Q_calibration": 20000,
+     "evaluation_per_class": 20000
+    },
+    "T1": {
+     "P_calibration": 120000,
+     "Q_calibration": 120000,
+     "evaluation_per_class": 20000
+    }
+   }
   }
  },
  "audit_v03": {
@@ -5322,7 +5559,8 @@
  "standing_tally": {
   "note": "The earlier \"three confirmed, three missed\" was too neat. Corrected accounting:",
   "confirmed": [
-   "T5 score ablation (with the claim restated: with model weights fixed, changing the score function is sufficient to reverse the directional ordering)"
+   "T5 score ablation (with the claim restated: with model weights fixed, changing the score function is sufficient to reverse the directional ordering)",
+   "T3 hierarchical uncertainty (post-results implementation, logged)"
   ],
   "partially_confirmed": [
    "T4 (prediction referenced an architecture absent from the implemented set; empirical spread verified)"
@@ -5333,7 +5571,6 @@
    "PCD-NAE approximation on L1/L2"
   ],
   "not_run": [
-   "T3 (not implemented)",
    "T2 registered distance-matched panel",
    "WNAE",
    "the published Dillon NAE remedy"

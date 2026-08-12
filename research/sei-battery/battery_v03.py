@@ -306,6 +306,27 @@ def distill_full(teacher, Xtr, Xbkg_ev, Xwith_ev, seed):
     return out
 
 
+# ─────────────────────────────────────────────────────────────────────────────
+# T3 IMPLEMENTATION NOTE — added 2026-08-12, AFTER v0.3 results existed.
+#
+# The pre-registration (commit c7e5b4e7) specified T3 before any run; the
+# executable shipped without a T3 branch, which the code audit caught. This
+# code is therefore a POST-RESULTS IMPLEMENTATION OF A PRE-REGISTERED
+# PROCEDURE. The original registration commit stands unedited; the prediction
+# and the estimands are unchanged from it:
+#   PREDICTION (unchanged): qualitative conclusions — the constituent inversion,
+#   LHCO direction-dependence, quiet control — survive; fourth-decimal
+#   differences at alpha = 1e-3 do NOT, and any claim resting on them is
+#   withdrawn.
+# What changes here is only that the procedure is now actually executed.
+#
+# Two registration gaps this closes, both recorded as deviations V3-D1/V3-D2:
+#   * calibration is drawn as large as each pool permits and the ACHIEVED size
+#     is recorded per direction, rather than a declared 200k that split()
+#     silently clipped;
+#   * the constituent pools are drawn from val.h5 AND test.h5, as registered.
+# ─────────────────────────────────────────────────────────────────────────────
+
 def main(which):
     R = load_state()
     t0 = time.time()
@@ -592,6 +613,77 @@ def main(which):
             print('T1nae %-3s AUC %.3f / %.3f  D_A@1e-2 %+.4f  (%.0fs)' % (
                 pname, r_['auc_P_on_Q']['mean'], r_['auc_Q_on_P']['mean'],
                 r_['D_A@0.01']['mean'], time.time() - t0), flush=True)
+            save(R)
+    if which == 'T3':
+        R['tests'].setdefault('T3', {})
+        # registered: constituent pools from val.h5 AND test.h5
+        topA = load_top('val.h5', 100000); topB = load_top('test.h5', 100000)
+        TOP = {k: np.concatenate([topA[k], topB[k]]) for k in (0, 1)}
+        P3 = {'T1': (TOP[0], TOP[1]), 'L1': (L['bkg'], L['sig2']),
+              'L2': (L['bkg'], L['sig3']), 'L3': (L['sig2'], L['sig3'])}
+        only = os.environ.get('ONLY_PAIR')
+        for pname, (P, Q) in P3.items():
+            if pname in R['tests']['T3'] or (only and pname != only):
+                continue
+            per_seed = []
+            achieved = {}
+            for s_ in SEEDS:
+                Ptr, Pcal, Pev = split(P, NTR, CAL, NEV, s_)
+                Qtr, Qcal, Qev = split(Q, NTR, CAL, NEV, s_)
+                achieved = {'P_calibration': int(len(Pcal)), 'Q_calibration': int(len(Qcal)),
+                            'evaluation_per_class': int(len(Pev))}
+                sysP, sysQ = fit_system('AE', Ptr, s_), fit_system('AE', Qtr, s_)
+                per_seed.append({
+                    'sPcal': system_score(sysP, Pcal), 'sPev': system_score(sysP, Pev),
+                    'sPQ': system_score(sysP, Qev), 'sQcal': system_score(sysQ, Qcal),
+                    'sQev': system_score(sysQ, Qev), 'sQP': system_score(sysQ, Pev)})
+            # HIERARCHICAL bootstrap: resample seeds, then events within each seed
+            rng = np.random.default_rng(3)
+            B = 2000
+            draws = {'auc_P_on_Q': [], 'auc_Q_on_P': []}
+            for a in ALPHAS:
+                draws['M_A@%g' % a] = []; draws['D_A@%g' % a] = []
+            for _ in range(B):
+                si = rng.integers(0, len(per_seed), len(per_seed))
+                acc = {k: [] for k in draws}
+                for k_ in si:
+                    d = per_seed[k_]
+                    rs = lambda v: v[rng.integers(0, len(v), len(v))]
+                    sPcal, sPev, sPQ = rs(d['sPcal']), rs(d['sPev']), rs(d['sPQ'])
+                    sQcal, sQev, sQP = rs(d['sQcal']), rs(d['sQev']), rs(d['sQP'])
+                    acc['auc_P_on_Q'].append(auc(sPev, sPQ))
+                    acc['auc_Q_on_P'].append(auc(sQev, sQP))
+                    for a in ALPHAS:
+                        tP, tQ = np.quantile(sPcal, 1 - a), np.quantile(sQcal, 1 - a)
+                        aPQ, aQP = float(np.mean(sPQ <= tP)), float(np.mean(sQP <= tQ))
+                        acc['M_A@%g' % a].append((aPQ + aQP) / 2)
+                        acc['D_A@%g' % a].append(aPQ - aQP)
+                for k in draws:
+                    draws[k].append(np.mean(acc[k]))
+            out = {'calibration_achieved': achieved,
+                   'bootstrap': 'HIERARCHICAL: %d outer draws; seeds resampled with replacement, then events resampled within each seed' % B}
+            # point estimates from the unresampled data
+            for k, f in (('auc_P_on_Q', lambda d: auc(d['sPev'], d['sPQ'])),
+                         ('auc_Q_on_P', lambda d: auc(d['sQev'], d['sQP']))):
+                out[k] = {'mean': round(float(np.mean([f(d) for d in per_seed])), 4),
+                          'ci95_hier': [round(float(np.percentile(draws[k], 2.5)), 4),
+                                        round(float(np.percentile(draws[k], 97.5)), 4)]}
+            for a in ALPHAS:
+                ms, ds = [], []
+                for d in per_seed:
+                    tP, tQ = np.quantile(d['sPcal'], 1 - a), np.quantile(d['sQcal'], 1 - a)
+                    aPQ, aQP = float(np.mean(d['sPQ'] <= tP)), float(np.mean(d['sQP'] <= tQ))
+                    ms.append((aPQ + aQP) / 2); ds.append(aPQ - aQP)
+                for lbl, vals in (('M_A@%g' % a, ms), ('D_A@%g' % a, ds)):
+                    out[lbl] = {'mean': round(float(np.mean(vals)), 4),
+                                'ci95_hier': [round(float(np.percentile(draws[lbl], 2.5)), 4),
+                                              round(float(np.percentile(draws[lbl], 97.5)), 4)]}
+            R['tests']['T3'][pname] = out
+            print('T3 %-3s cal %d/%d | AUC %.3f %s / %.3f %s | D_A@1e-3 %+.4f %s  (%.0fs)' % (
+                pname, achieved['P_calibration'], achieved['Q_calibration'],
+                out['auc_P_on_Q']['mean'], out['auc_P_on_Q']['ci95_hier'],
+                out['auc_Q_on_P']['mean'], out['auc_Q_on_P']['ci95_hier'],
+                out['D_A@0.001']['mean'], out['D_A@0.001']['ci95_hier'], time.time() - t0), flush=True)
             save(R)
     save(R)
     print('elapsed %.0fs' % (time.time() - t0))
