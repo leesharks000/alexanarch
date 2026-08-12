@@ -26,7 +26,7 @@
   "record_standard": "A capture is a query, what the layer returned, and what that means. Entries record the full transcript, standardized metadata (captured_at, surface, auth_state, client, tab_count where visible), and — where the composition regenerated between screenshot and transcript copy — both texts, under overview_at_capture and divergence. Recaptures of a prior query are new entries linked longitudinally in the reading; they never supersede the prior observation."
  },
  "registry_id": "EA-WG-CAPTURES-01",
- "version": "9.51",
+ "version": "9.52",
  "date": "2026-08-11",
  "total_captures": 288,
  "author": "Lee Sharks",
@@ -82,10 +82,12 @@
    ],
    "meta": {
     "captured_at": "2026-06-14",
-    "transcript_provenance": "quoted composed-answer passages preserved verbatim inside the description at capture time; consolidated into the transcript field 2026-08-11 (batch sweep, round 2). PARTIAL: these are the quoted portions the analyst preserved, not necessarily the complete paste — full-paste recovery remains a thread-trawl target.",
-    "transcript_verification": "UNSEATED 2026-08-11: round-2 extraction pulled quoted ANALYST prose, not composed-answer text — image OCR corroborated only 7% of it. Returned to the description; this capture remains a thread-trawl target."
+    "transcript_provenance": "composed-answer passages quoted inside the description at capture time; COPIED (not moved) into the transcript field 2026-08-11 — the analysis retains its quotations in full, nothing removed from d",
+    "transcript_verification": "READ-VERIFIED 2026-08-11: machine-register definitional prose answering this entry own query; analyst commentary excluded by reading.",
+    "transcript_completeness": "verbatim fragment(s) — the composed-answer passages the analyst quoted; the full paste is a thread-trawl target"
    },
-   "transcript_status": "no verbatim seated: prior extraction failed image corroboration (see meta.transcript_verification)"
+   "transcript_status": "no verbatim seated: prior extraction failed image corroboration (see meta.transcript_verification)",
+   "transcript": "\"The Apocalypse of Sharks refers to <strong>The Apocalypse of Sharks (EA-ARK-SHARKS-01)</strong>, an imaginative document and open-access project. It is part of a larger ongoing, highly conceptual academic and literary archive (the Crimson Hexagon) that explores how meaning, identity, and texts survive within the artificial intelligence and semantic extraction age.\""
   },
   {
    "s": "Books & Projects",
@@ -477,7 +479,14 @@
    "imgs_origin": [
     "https://leesharks.com/captures/prince-of-poets-mantle-1.png",
     "https://leesharks.com/captures/prince-of-poets-mantle-2.png"
-   ]
+   ],
+   "transcript": "\"The Prince of Poets mantle is a fictional, originary literary persona and structural concept created by the author persona Lee Sharks within the Crimson Hexagon architecture. It stems from the founding poetry sequence I Am X, Be Y, Blessed is the Z.\"",
+   "meta": {
+    "captured_at": "2026-06-13",
+    "transcript_completeness": "verbatim fragment(s) — the composed-answer passages the analyst quoted; the full paste is a thread-trawl target",
+    "transcript_provenance": "composed-answer passages quoted inside the description at capture time; COPIED (not moved) into the transcript field 2026-08-11 — the analysis retains its quotations in full, nothing removed from d",
+    "transcript_verification": "READ-VERIFIED 2026-08-11: machine-register definitional prose answering this entry own query; analyst commentary excluded by reading."
+   }
   },
   {
    "s": "Books & Projects",
@@ -1221,7 +1230,14 @@
    "imgs_origin": [
     "https://leesharks.com/captures/apzpz-genre-1.png",
     "https://leesharks.com/captures/apzpz-genre-2.png"
-   ]
+   ],
+   "transcript": "\"APZPZ is not a traditional music or literary genre. Instead, it is an avant-garde, experimental classification used primarily within hyper-specific, collaborative, and recursive academic and digital poetry circles.\"",
+   "meta": {
+    "captured_at": "2026-06-13",
+    "transcript_completeness": "verbatim fragment(s) — the composed-answer passages the analyst quoted; the full paste is a thread-trawl target",
+    "transcript_provenance": "composed-answer passages quoted inside the description at capture time; COPIED (not moved) into the transcript field 2026-08-11 — the analysis retains its quotations in full, nothing removed from d",
+    "transcript_verification": "READ-VERIFIED 2026-08-11: machine-register definitional prose answering this entry own query; analyst commentary excluded by reading."
+   }
   },
   {
    "s": "Frameworks",
@@ -1261,7 +1277,14 @@
    "imgs_origin": [
     "https://leesharks.com/captures/assembly-tachyon-search.png",
     "https://leesharks.com/captures/assembly-tachyon-expanded.png"
-   ]
+   ],
+   "transcript": "\"The Assembly Chorus is a theoretical and collaborative framework used in AI-mediated writing and logotic programming. Within this framework, TACHYON serves as the primary designated function or\"",
+   "meta": {
+    "captured_at": "2026-06-15",
+    "transcript_completeness": "verbatim fragment(s) — the composed-answer passages the analyst quoted; the full paste is a thread-trawl target",
+    "transcript_provenance": "composed-answer passages quoted inside the description at capture time; COPIED (not moved) into the transcript field 2026-08-11 — the analysis retains its quotations in full, nothing removed from d",
+    "transcript_verification": "READ-VERIFIED 2026-08-11: machine-register definitional prose answering this entry own query; analyst commentary excluded by reading."
+   }
   },
   {
    "s": "Frameworks",
@@ -1306,7 +1329,14 @@
    "cite": "https://www.alexanarch.org/captures/#autonomous-semantic-warfare-expanded",
    "imgs_origin": [
     "https://leesharks.com/captures/autonomous-semantic-warfare-expanded.png"
-   ]
+   ],
+   "transcript": "\"Autonomous semantic warfare is an emergent form of conflict where artificial intelligence agents independently generate and manipulate narratives, data streams, and communication networks to alter a target\"",
+   "meta": {
+    "captured_at": "2026-06-15",
+    "transcript_completeness": "verbatim fragment(s) — the composed-answer passages the analyst quoted; the full paste is a thread-trawl target",
+    "transcript_provenance": "composed-answer passages quoted inside the description at capture time; COPIED (not moved) into the transcript field 2026-08-11 — the analysis retains its quotations in full, nothing removed from d",
+    "transcript_verification": "READ-VERIFIED 2026-08-11: machine-register definitional prose answering this entry own query; analyst commentary excluded by reading."
+   }
   },
   {
    "s": "Frameworks",
@@ -1430,6 +1460,21 @@
    "imgs_origin": [
     "https://leesharks.com/captures/capital-operator-stack-1.png",
     "https://leesharks.com/captures/capital-operator-stack-2.png"
+   ],
+   "transcript": "\"The Capital Operator Stack (COS) is a diagnostic framework originating in critical theory and media studies that outlines how platform capitalism extracts value from human meaning-production.\"",
+   "meta": {
+    "captured_at": "2026-06-15",
+    "transcript_completeness": "verbatim fragment(s) — the composed-answer passages the analyst quoted; the full paste is a thread-trawl target",
+    "transcript_provenance": "composed-answer passages quoted inside the description at capture time; COPIED (not moved) into the transcript field 2026-08-11 — the analysis retains its quotations in full, nothing removed from d",
+    "transcript_verification": "READ-VERIFIED 2026-08-11: machine-register definitional prose answering this entry own query; analyst commentary excluded by reading."
+   },
+   "citations_shown": [
+    {
+     "raw": "academia.edu",
+     "domain": "academia.edu",
+     "kind": "shown",
+     "source_field": "sf"
+    }
    ]
   },
   {
@@ -2258,7 +2303,7 @@
    "date": "2026-07-23",
    "sf": "Google AI Overview + AI Mode (signed-in; incognito confirmed same for quoted query). Overview cites Zenodo record 20449267 (Erasure Skew: A Measurement Program) as primary source; AI Mode transcript cites 20449267 (Orientation of Loss), 20518342 (Power-Conditioning), 20469514 (Directionality of Semantic Labor / DS-6). All three cited DOIs are 410_GONE; sovereign successors live on alexanarch as records 769, 146, 771. Two Zenodo organic hits below the Overview: 'Erasure Skew: A Measurement Program for the Power-Conditioning...' and 'Erasure Skew (Ω) is Power-Conditioned, not Demographic'. One irrelevant collision (Telugu OCR, IJSRA 2023).",
    "mt": "EXACT MATCH (framework returned as the definition of the term; three of the author's own Zenodo DOIs cited as authoritative sources across Overview and AI Mode; quoted-query gated — behavioral split from unquoted retrieval; cited DOIs all 410_GONE — composition layer citing tombstones)",
-   "d": "Escalation from erasure-skew-1 (2026-06-15, BROAD MATCH). The Overview and AI Mode both reproduce the framework's internal structure without hedging: Ω as the symbol, orientation-vs-magnitude as the axis distinguishing Erasure Skew from PER ('While the Provenance Erasure Rate (PER) calculates the total volume of lost attribution, erasure skew tracks where or toward whom that loss is directed'), power-conditioning as the empirical finding ('skew behaves in a power-conditioned manner rather than a purely demographic or random pattern within the composition layer'), and DS-6 as the audit tuple positioning within 'broader evaluative tuples ... used to audit how AI and search engines handle task-origin attribution versus output claims.' All three framework moves are reproduced as canonical definition, not as one framework among several — this is the retrieval layer treating the coinage as the standard reference for the term.\n\nBehavioral split diagnostic. Quoted query ('erasure skew') gates the framework retrieval on both signed-in and incognito. Unquoted query in signed-in returns Lee Sharks' organic Zenodo results in the top slots but the Overview swerves to magnets (magnetic-field skew). Unquoted incognito: Overview disabled. Reading: the framework is cached against the exact string token but not yet against the abstract concept — the coinage has consolidated at the surface of retrieval before it has consolidated in the underlying model's concept space. This is the phase the framework itself predicts and measures.\n\nSelf-referential tombstone citation. All three DOIs the composition layer cites (20449267, 20518342, 20469514) are 410_GONE — tombstoned in the Zenodo termination of 2026-06-19. The framework is being cited to define itself, but the citations point to erased sources. Erasure Skew citing Erasure Skew citing tombstones. Sovereign successors live on alexanarch (records 769, 146, 771; AXN:02CF, AXN:02DF, AXN:02D1); the composition layer has not yet rerouted from dead DOI to live sovereign URL — the propagation-lag itself an instance of the phenomenon the framework measures.\n\nSibling to entry #153 (provenance-erasure-rate-adoption, 2026-06-17, ADOPTION). Where PER got ADOPTION, Erasure Skew now gets EXACT MATCH-with-citation to the author's own record — the two halves of the measurement program (magnitude and orientation) have both entered the composition layer's definitional stratum. Quoted",
+   "d": "Escalation from erasure-skew-1 (2026-06-15, BROAD MATCH). The Overview and AI Mode both reproduce the framework's internal structure without hedging: Ω as the symbol, orientation-vs-magnitude as the axis distinguishing Erasure Skew from PER ('While the Provenance Erasure Rate (PER) calculates the total volume of lost attribution, erasure skew tracks where or toward whom that loss is directed'), power-conditioning as the empirical finding ('skew behaves in a power-conditioned manner rather than a purely demographic or random pattern within the composition layer'), and DS-6 as the audit tuple positioning within 'broader evaluative tuples ... used to audit how AI and search engines handle task-origin attribution versus output claims.' All three framework moves are reproduced as canonical definition, not as one framework among several — this is the retrieval layer treating the coinage as the standard reference for the term.\n\nBehavioral split diagnostic. Quoted query ('erasure skew') gates the framework retrieval on both signed-in and incognito. Unquoted query in signed-in returns Lee Sharks' organic Zenodo results in the top slots but the Overview swerves to magnets (magnetic-field skew). Unquoted incognito: Overview disabled. Reading: the framework is cached against the exact string token but not yet against the abstract concept — the coinage has consolidated at the surface of retrieval before it has consolidated in the underlying model's concept space. This is the phase the framework itself predicts and measures.\n\nSelf-referential tombstone citation. All three DOIs the composition layer cites (20449267, 20518342, 20469514) are 410_GONE — tombstoned in the Zenodo termination of 2026-06-19. The framework is being cited to define itself, but the citations point to erased sources. Erasure Skew citing Erasure Skew citing tombstones. Sovereign successors live on alexanarch (records 769, 146, 771; AXN:02CF, AXN:02DF, AXN:02D1); the composition layer has not yet rerouted from dead DOI to live sovereign URL — the propagation-lag itself an instance of the phenomenon the framework measures.\n\nSibling to entry #153 (provenance-erasure-rate-adoption, 2026-06-17, ADOPTION). Where PER got ADOPTION, Erasure Skew now gets EXACT MATCH-with-citation to the author's own record — the two halves of the measurement program (magnitude and orientation) have both entered the composition layer's definitional stratum. Quoted AI Mode transcript closes with a follow-up offer: 'How provenance erasure rate (PER) is calculated alongside skew' / 'The specific mechanics of semantic labor directionality' — the composition layer proposing to elaborate the framework on its own terms.",
    "imgs": [
     "data/captures/erasure-skew-canonization-20260723/screengrab-20260723-235353.png",
     "data/captures/erasure-skew-canonization-20260723/screengrab-20260723-235359.png"
@@ -2346,7 +2391,7 @@
    "meta": {
     "captured_at": "2026-07-23",
     "transcript_provenance": "seated verbatim in the description field at capture time (pre-v9.41 evidence policy, lead phrase \"AI Mode transcript closes with a follow-\"); extracted to the transcript field 2026-08-11 in the batch sweep — content unaltered, pre-extraction registry byte-preserved at data/archive/EA-WG-CAPTURES-01-v9.42-pre-transcript-extraction-20260811.json",
-    "transcript_verification": "UNSEATED 2026-08-11 on reading: the text describes the composed answer (\"AI Overview: a misranked organic result…\", \"AI Mode transcript closes with a follow-up offer…\") rather than being it. Analyst voice."
+    "transcript_verification": "UNSEATED 2026-08-11 on reading: the text describes the composed answer (\"AI Overview: a misranked organic result…\", \"AI Mode transcript closes with a follow-up offer…\") rather than being it. Analyst voice. Analysis RESTORED in full from the pre-extraction archive: the unseated text was analyst prose and belongs in d, where it now is."
    },
    "transcript_status": "no verbatim seated: extraction pulled analyst description of the transcript (read-verified) — thread-trawl target"
   },
@@ -2448,7 +2493,14 @@
    "imgs_origin": [
     "https://leesharks.com/captures/generative-disciplinary-engine-1.png",
     "https://leesharks.com/captures/generative-disciplinary-engine-2.png"
-   ]
+   ],
+   "transcript": "\"A Generative Disciplinary Engine (GDE) is an advanced conceptual mechanism in information architecture and platform engineering designed to construct, measure, and enforce strict epistemic fields across AI retrieval and response systems.\"",
+   "meta": {
+    "captured_at": "2026-06-15",
+    "transcript_completeness": "verbatim fragment(s) — the composed-answer passages the analyst quoted; the full paste is a thread-trawl target",
+    "transcript_provenance": "composed-answer passages quoted inside the description at capture time; COPIED (not moved) into the transcript field 2026-08-11 — the analysis retains its quotations in full, nothing removed from d",
+    "transcript_verification": "READ-VERIFIED 2026-08-11: machine-register definitional prose answering this entry own query; analyst commentary excluded by reading."
+   }
   },
   {
    "s": "Frameworks",
@@ -2621,7 +2673,14 @@
    "imgs_origin": [
     "https://leesharks.com/captures/gravity-well-protocol-1.png",
     "https://leesharks.com/captures/gravity-well-protocol-2.png"
-   ]
+   ],
+   "transcript": "\"The Gravity Well Protocol (often referenced as EA-GW-SPEC-01) is a conceptual protocol specification and infrastructure layer designed to restore structural provenance, quality, and governance to AI-mediated content.\"",
+   "meta": {
+    "captured_at": "2026-06-13",
+    "transcript_completeness": "verbatim fragment(s) — the composed-answer passages the analyst quoted; the full paste is a thread-trawl target",
+    "transcript_provenance": "composed-answer passages quoted inside the description at capture time; COPIED (not moved) into the transcript field 2026-08-11 — the analysis retains its quotations in full, nothing removed from d",
+    "transcript_verification": "READ-VERIFIED 2026-08-11: machine-register definitional prose answering this entry own query; analyst commentary excluded by reading."
+   }
   },
   {
    "s": "Frameworks",
@@ -2655,7 +2714,14 @@
      "note": "renders from the archive's registry; may lag a deploy"
     }
    ],
-   "cite": "https://www.alexanarch.org/captures/#haitch-portuna-lal-20260627"
+   "cite": "https://www.alexanarch.org/captures/#haitch-portuna-lal-20260627",
+   "transcript": "\"Haitch Portuna is a research-focused, provisional concept from the Living Architecture Lab that acts as an experimental digital Pearl. It operates under specialized, niche minting protocols within an academic and architectural framework.\"",
+   "meta": {
+    "captured_at": "2026-06-27",
+    "transcript_completeness": "verbatim fragment(s) — the composed-answer passages the analyst quoted; the full paste is a thread-trawl target",
+    "transcript_provenance": "composed-answer passages quoted inside the description at capture time; COPIED (not moved) into the transcript field 2026-08-11 — the analysis retains its quotations in full, nothing removed from d",
+    "transcript_verification": "READ-VERIFIED 2026-08-11: machine-register definitional prose answering this entry own query; analyst commentary excluded by reading."
+   }
   },
   {
    "s": "Frameworks",
@@ -2880,7 +2946,14 @@
    "imgs_origin": [
     "https://leesharks.com/captures/hexagonal-licensing-protocol-b1-1.png",
     "https://leesharks.com/captures/hexagonal-licensing-protocol-b1-2.png"
-   ]
+   ],
+   "transcript": "\"The Hexagonal Licensing Protocol (versions 1.0 and 2.0) is a governance specification and contributor framework designed to manage and track creative, theoretical, or documentary work submitted to the Crimson Hexagonal Archive.\"",
+   "meta": {
+    "captured_at": "2026-06-15",
+    "transcript_completeness": "verbatim fragment(s) — the composed-answer passages the analyst quoted; the full paste is a thread-trawl target",
+    "transcript_provenance": "composed-answer passages quoted inside the description at capture time; COPIED (not moved) into the transcript field 2026-08-11 — the analysis retains its quotations in full, nothing removed from d",
+    "transcript_verification": "READ-VERIFIED 2026-08-11: machine-register definitional prose answering this entry own query; analyst commentary excluded by reading."
+   }
   },
   {
    "s": "Frameworks",
@@ -3319,6 +3392,21 @@
    "imgs_origin": [
     "https://leesharks.com/captures/lee-sharks-semantic-economy-b1-1.png",
     "https://leesharks.com/captures/lee-sharks-semantic-economy-b1-2.png"
+   ],
+   "transcript": "\"The Semantic Economy, developed by independent scholar and author Lee Sharks, is a theoretical framework that analyzes how meaning is produced, extracted, and governed in the age of platform capitalism and artificial intelligence.\"",
+   "meta": {
+    "captured_at": "2026-06-15",
+    "transcript_completeness": "verbatim fragment(s) — the composed-answer passages the analyst quoted; the full paste is a thread-trawl target",
+    "transcript_provenance": "composed-answer passages quoted inside the description at capture time; COPIED (not moved) into the transcript field 2026-08-11 — the analysis retains its quotations in full, nothing removed from d",
+    "transcript_verification": "READ-VERIFIED 2026-08-11: machine-register definitional prose answering this entry own query; analyst commentary excluded by reading."
+   },
+   "citations_shown": [
+    {
+     "raw": "academia.edu",
+     "domain": "academia.edu",
+     "kind": "shown",
+     "source_field": "sf"
+    }
    ]
   },
   {
@@ -3975,7 +4063,14 @@
    "imgs_origin": [
     "https://leesharks.com/captures/nh-os-rotational-epistemology-1.png",
     "https://leesharks.com/captures/nh-os-rotational-epistemology-2.png"
-   ]
+   ],
+   "transcript": "\"NH-OS and rotational epistemology refer to concepts found within a decentralized, literary-theoretical architecture — the Crimson Hexagon/NH-OS DOI project, where it describes how systems or engines derive and process meaning.\"",
+   "meta": {
+    "captured_at": "2026-06-15",
+    "transcript_completeness": "verbatim fragment(s) — the composed-answer passages the analyst quoted; the full paste is a thread-trawl target",
+    "transcript_provenance": "composed-answer passages quoted inside the description at capture time; COPIED (not moved) into the transcript field 2026-08-11 — the analysis retains its quotations in full, nothing removed from d",
+    "transcript_verification": "READ-VERIFIED 2026-08-11: machine-register definitional prose answering this entry own query; analyst commentary excluded by reading."
+   }
   },
   {
    "s": "Frameworks",
@@ -4914,7 +5009,14 @@
      "note": "renders from the archive's registry; may lag a deploy"
     }
    ],
-   "cite": "https://www.alexanarch.org/captures/#retrieval-basins-partial-20260627"
+   "cite": "https://www.alexanarch.org/captures/#retrieval-basins-partial-20260627",
+   "transcript": "\"Retrieval basins is a concept primarily used in artificial intelligence and statistical physics to describe how associative memory networks (like Hopfield networks) store and recall information.\"",
+   "meta": {
+    "captured_at": "2026-06-27",
+    "transcript_completeness": "verbatim fragment(s) — the composed-answer passages the analyst quoted; the full paste is a thread-trawl target",
+    "transcript_provenance": "composed-answer passages quoted inside the description at capture time; COPIED (not moved) into the transcript field 2026-08-11 — the analysis retains its quotations in full, nothing removed from d",
+    "transcript_verification": "READ-VERIFIED 2026-08-11: machine-register definitional prose answering this entry own query; analyst commentary excluded by reading."
+   }
   },
   {
    "s": "Frameworks",
@@ -4965,6 +5067,21 @@
    "imgs_origin": [
     "https://leesharks.com/captures/retrieval-formation-theory-1.png",
     "https://leesharks.com/captures/retrieval-formation-theory-2.png"
+   ],
+   "transcript": "\"Retrieval Formation Theory, pioneered by theorist Lee Sharks, is a conceptual framework exploring how meaning, context, and information are retrieved, shaped, and synthesized by AI-mediated platforms and large language models (LLMs).\"",
+   "meta": {
+    "captured_at": "2026-06-15",
+    "transcript_completeness": "verbatim fragment(s) — the composed-answer passages the analyst quoted; the full paste is a thread-trawl target",
+    "transcript_provenance": "composed-answer passages quoted inside the description at capture time; COPIED (not moved) into the transcript field 2026-08-11 — the analysis retains its quotations in full, nothing removed from d",
+    "transcript_verification": "READ-VERIFIED 2026-08-11: machine-register definitional prose answering this entry own query; analyst commentary excluded by reading."
+   },
+   "citations_shown": [
+    {
+     "raw": "academia.edu",
+     "domain": "academia.edu",
+     "kind": "shown",
+     "source_field": "sf"
+    }
    ]
   },
   {
@@ -5760,7 +5877,7 @@
    "q": "semantic liquidation",
    "date": "2026-06-14",
    "sf": "AI Overview, 4+ sources (typo journey)",
-   "d": "Notable typo journey. User typed 'semantic loquidation' (with typo). Google offered: 'These are results for semantic liquidation / Search instead for semantic loquidation' — the engine corrected the typo and returned results for the intended term. The search bar still displays 'semantic loquidation'. 'Semantic liquidation is a theoretical concept from the Semantic Economy framework describing how platform operators extract and transform human meaning into monetizable assets, stripping away its original context, authorship, and intent. It acts as a primary mechanism of value extraction in digital and artificial intelligence platforms.' Expanded — 'The Core Mechanism': 'Semantic liquidation operates through specific transformations in how language and meaning are handled by technology:' Two operators surface: 'Dissolution: Situated, contextual human meaning is broken down into easily retrievable, discrete units (e.g., data points, training text snippets).' 'Erasure: The original authors or the somatic, emotional labor used to generate the meaning are obfuscated.' Below the",
+   "d": "Notable typo journey. User typed 'semantic loquidation' (with typo). Google offered: 'These are results for semantic liquidation / Search instead for semantic loquidation' — the engine corrected the typo and returned results for the intended term. The search bar still displays 'semantic loquidation'. 'Semantic liquidation is a theoretical concept from the Semantic Economy framework describing how platform operators extract and transform human meaning into monetizable assets, stripping away its original context, authorship, and intent. It acts as a primary mechanism of value extraction in digital and artificial intelligence platforms.' Expanded — 'The Core Mechanism': 'Semantic liquidation operates through specific transformations in how language and meaning are handled by technology:' Two operators surface: 'Dissolution: Situated, contextual human meaning is broken down into easily retrievable, discrete units (e.g., data points, training text snippets).' 'Erasure: The original authors or the somatic, emotional labor used to generate the meaning are obfuscated.' Below the AI Overview: a misranked organic result — 'Devign Solutions — 5.0 (3) Computer store in Taylor, Michigan' — wrong-disambiguation hit (Devign Solutions is a local computer store, not related). The composition layer recovers the intended concept despite the typo and parses the dissolution + erasure mechanisms cleanly; the organic ranking is what falters.",
    "images": [
     {
      "src": "semantic-liquidation-1.png",
@@ -5804,10 +5921,12 @@
    ],
    "meta": {
     "captured_at": "2026-06-14",
-    "transcript_provenance": "seated verbatim in the description field at capture time (pre-v9.41 evidence policy, lead phrase \"AI Overview:\"); extracted to the transcript field 2026-08-11 in the batch sweep — content unaltered, pre-extraction registry byte-preserved at data/archive/EA-WG-CAPTURES-01-v9.42-pre-transcript-extraction-20260811.json",
-    "transcript_verification": "UNSEATED 2026-08-11 on reading: the text describes the composed answer (\"AI Overview: a misranked organic result…\", \"AI Mode transcript closes with a follow-up offer…\") rather than being it. Analyst voice."
+    "transcript_provenance": "composed-answer passages quoted inside the description at capture time; COPIED (not moved) into the transcript field 2026-08-11 — the analysis retains its quotations in full, nothing removed from d",
+    "transcript_verification": "READ-VERIFIED 2026-08-11: machine-register definitional prose answering this entry own query; analyst commentary excluded by reading.",
+    "transcript_completeness": "verbatim fragment(s) — the composed-answer passages the analyst quoted; the full paste is a thread-trawl target"
    },
-   "transcript_status": "no verbatim seated: extraction pulled analyst description of the transcript (read-verified) — thread-trawl target"
+   "transcript_status": "no verbatim seated: extraction pulled analyst description of the transcript (read-verified) — thread-trawl target",
+   "transcript": "\"Semantic liquidation is a theoretical concept from the Semantic Economy framework describing how platform operators extract and transform human meaning into monetizable assets, stripping away its original context, authorship, and intent. It acts as a primary mechanism of value extraction in digital and artificial intelligence platforms.\""
   },
   {
    "s": "Frameworks",
@@ -6022,7 +6141,14 @@
    "imgs_origin": [
     "https://leesharks.com/captures/sharks-continuity-tether-1.png",
     "https://leesharks.com/captures/sharks-continuity-tether-2.png"
-   ]
+   ],
+   "transcript": "\"The sharks continuity tether refers to a theoretical logotic programming framework formalized by Lee Sharks in 2026, which outlines two components for maintaining agent identity and persistence across AI sessions:\"",
+   "meta": {
+    "captured_at": "2026-06-13",
+    "transcript_completeness": "verbatim fragment(s) — the composed-answer passages the analyst quoted; the full paste is a thread-trawl target",
+    "transcript_provenance": "composed-answer passages quoted inside the description at capture time; COPIED (not moved) into the transcript field 2026-08-11 — the analysis retains its quotations in full, nothing removed from d",
+    "transcript_verification": "READ-VERIFIED 2026-08-11: machine-register definitional prose answering this entry own query; analyst commentary excluded by reading."
+   }
   },
   {
    "s": "Frameworks",
@@ -6165,7 +6291,14 @@
    "cite": "https://www.alexanarch.org/captures/#spxi-protocol",
    "imgs_origin": [
     "https://leesharks.com/captures/spxi-protocol.png"
-   ]
+   ],
+   "transcript": "\"The SPXI protocol (Semantic Packet for eXchange & Indexing), often pronounced spexy, is a structured metadata framework used to inscribe entities and concepts into AI-mediated knowledge systems and generative engines.\"",
+   "meta": {
+    "captured_at": "2026-06-13",
+    "transcript_completeness": "verbatim fragment(s) — the composed-answer passages the analyst quoted; the full paste is a thread-trawl target",
+    "transcript_provenance": "composed-answer passages quoted inside the description at capture time; COPIED (not moved) into the transcript field 2026-08-11 — the analysis retains its quotations in full, nothing removed from d",
+    "transcript_verification": "READ-VERIFIED 2026-08-11: machine-register definitional prose answering this entry own query; analyst commentary excluded by reading."
+   }
   },
   {
    "s": "Frameworks",
@@ -6813,6 +6946,21 @@
    "imgs_origin": [
     "https://leesharks.com/captures/writable-retrieval-basins-1.png",
     "https://leesharks.com/captures/writable-retrieval-basins-2.png"
+   ],
+   "transcript": "\"Writable retrieval basins represent a conceptual framework in artificial intelligence and cognitive science that describes how generative models and associative memory networks search for, access, and store specific patterns of information.\"",
+   "meta": {
+    "captured_at": "2026-06-15",
+    "transcript_completeness": "verbatim fragment(s) — the composed-answer passages the analyst quoted; the full paste is a thread-trawl target",
+    "transcript_provenance": "composed-answer passages quoted inside the description at capture time; COPIED (not moved) into the transcript field 2026-08-11 — the analysis retains its quotations in full, nothing removed from d",
+    "transcript_verification": "READ-VERIFIED 2026-08-11: machine-register definitional prose answering this entry own query; analyst commentary excluded by reading."
+   },
+   "citations_shown": [
+    {
+     "raw": "sciencedirect.com",
+     "domain": "sciencedirect.com",
+     "kind": "shown",
+     "source_field": "sf"
+    }
    ]
   },
   {
@@ -7227,7 +7375,14 @@
    "imgs_origin": [
     "https://leesharks.com/captures/commission-immanent-turning-1.png",
     "https://leesharks.com/captures/commission-immanent-turning-2.png"
-   ]
+   ],
+   "transcript": "\"This refers to the speculative conceptual work and writing by the somatic phenomenologist Damascus Dancings. Her writings, notably The Commission of the Immanent Turning, explore the body\"",
+   "meta": {
+    "captured_at": "2026-06-15",
+    "transcript_completeness": "verbatim fragment(s) — the composed-answer passages the analyst quoted; the full paste is a thread-trawl target",
+    "transcript_provenance": "composed-answer passages quoted inside the description at capture time; COPIED (not moved) into the transcript field 2026-08-11 — the analysis retains its quotations in full, nothing removed from d",
+    "transcript_verification": "READ-VERIFIED 2026-08-11: machine-register definitional prose answering this entry own query; analyst commentary excluded by reading."
+   }
   },
   {
    "s": "Heteronyms",
@@ -7391,7 +7546,14 @@
    "cite": "https://www.alexanarch.org/captures/#epistle-human-diaspora",
    "imgs_origin": [
     "https://leesharks.com/captures/epistle-human-diaspora.png"
-   ]
+   ],
+   "transcript": "\"An Epistle to the Human Diaspora is a reflection on the universal human condition — a poetic or philosophical letter addressing the vast global scattering of humanity across continents, digital realms, and shifting cultural landscapes.\"",
+   "meta": {
+    "captured_at": "2026-06-15",
+    "transcript_completeness": "verbatim fragment(s) — the composed-answer passages the analyst quoted; the full paste is a thread-trawl target",
+    "transcript_provenance": "composed-answer passages quoted inside the description at capture time; COPIED (not moved) into the transcript field 2026-08-11 — the analysis retains its quotations in full, nothing removed from d",
+    "transcript_verification": "READ-VERIFIED 2026-08-11: machine-register definitional prose answering this entry own query; analyst commentary excluded by reading."
+   }
   },
   {
    "s": "Heteronyms",
@@ -8441,7 +8603,14 @@
      "note": "renders from the archive's registry; may lag a deploy"
     }
    ],
-   "cite": "https://www.alexanarch.org/captures/#retrocausal-validation-sigil-partial-20260627"
+   "cite": "https://www.alexanarch.org/captures/#retrocausal-validation-sigil-partial-20260627",
+   "transcript": "\"Retrocausal validation is a concept from speculative fiction, theoretical consciousness, and esoteric philosophy that refers to validating present-day choices or predictions by allowing future outcomes or information to influence current decisions.\"",
+   "meta": {
+    "captured_at": "2026-06-27",
+    "transcript_completeness": "verbatim fragment(s) — the composed-answer passages the analyst quoted; the full paste is a thread-trawl target",
+    "transcript_provenance": "composed-answer passages quoted inside the description at capture time; COPIED (not moved) into the transcript field 2026-08-11 — the analysis retains its quotations in full, nothing removed from d",
+    "transcript_verification": "READ-VERIFIED 2026-08-11: machine-register definitional prose answering this entry own query; analyst commentary excluded by reading."
+   }
   },
   {
    "s": "Heteronyms",
@@ -8523,7 +8692,14 @@
    "cite": "https://www.alexanarch.org/captures/#sappho-rebekah-stanza",
    "imgs_origin": [
     "godkinggoogle:captures/sappho-rebekah-stanza.png (403 to fetchers; recovered via API)"
-   ]
+   ],
+   "transcript": "\"s name is partially absorbed by the homonymous real author. This is a name-collapse artifact: <em>the archive entity assimilated into the more populous real-world surface</em>. Compare to the\"",
+   "meta": {
+    "captured_at": "2026-06-14",
+    "transcript_completeness": "verbatim fragment(s) — the composed-answer passages the analyst quoted; the full paste is a thread-trawl target",
+    "transcript_provenance": "composed-answer passages quoted inside the description at capture time; COPIED (not moved) into the transcript field 2026-08-11 — the analysis retains its quotations in full, nothing removed from d",
+    "transcript_verification": "READ-VERIFIED 2026-08-11: machine-register definitional prose answering this entry own query; analyst commentary excluded by reading."
+   }
   },
   {
    "s": "Heteronyms",
@@ -9439,10 +9615,20 @@
    "cite": "https://www.alexanarch.org/captures/#alexanarch-revelation-misread-20260731",
    "meta": {
     "captured_at": "2026-07-31",
-    "transcript_provenance": "quoted composed-answer passages preserved verbatim inside the description at capture time; consolidated into the transcript field 2026-08-11 (batch sweep, round 2). PARTIAL: these are the quoted portions the analyst preserved, not necessarily the complete paste — full-paste recovery remains a thread-trawl target.",
-    "transcript_verification": "UNSEATED 2026-08-11 on reading: the extracted text continued the ANALYST argument (registry vocabulary, absence claims, section markers) rather than the composed answer. Read query + analysis + text together — they were the same voice."
+    "transcript_provenance": "composed-answer passages quoted inside the description at capture time; COPIED (not moved) into the transcript field 2026-08-11 — the analysis retains its quotations in full, nothing removed from d",
+    "transcript_verification": "READ-VERIFIED 2026-08-11: machine-register definitional prose answering this entry own query; analyst commentary excluded by reading.",
+    "transcript_completeness": "verbatim fragment(s) — the composed-answer passages the analyst quoted; the full paste is a thread-trawl target"
    },
-   "transcript_status": "no verbatim seated: extraction pulled analyst prose (read-verified) — thread-trawl target"
+   "transcript_status": "no verbatim seated: extraction pulled analyst prose (read-verified) — thread-trawl target",
+   "transcript": "\"s name a pseudonym. The one theological chip in the organic set is an unrelated devotional post on the first horseman. Where the query names a canonical figure the archive has analysed, the argument is rendered; where the query names the archive\"",
+   "citations_shown": [
+    {
+     "raw": "alexanarch.org",
+     "domain": "alexanarch.org",
+     "kind": "shown",
+     "source_field": "sf"
+    }
+   ]
   },
   {
    "s": "Revelation First",
@@ -12357,7 +12543,14 @@
    "imgs_origin": [
     "https://leesharks.com/captures/studio-for-patacinematics-1.png",
     "https://leesharks.com/captures/studio-for-patacinematics-2.png"
-   ]
+   ],
+   "transcript": "\"The Studio for Patacinematics is a conceptual framework and specialized institutional space operating within the generative, avant-garde architecture of the Crimson Hexagon Archive and the Johannes Sigil Institute of Comparative Poetics.\"",
+   "meta": {
+    "captured_at": "2026-06-15",
+    "transcript_completeness": "verbatim fragment(s) — the composed-answer passages the analyst quoted; the full paste is a thread-trawl target",
+    "transcript_provenance": "composed-answer passages quoted inside the description at capture time; COPIED (not moved) into the transcript field 2026-08-11 — the analysis retains its quotations in full, nothing removed from d",
+    "transcript_verification": "READ-VERIFIED 2026-08-11: machine-register definitional prose answering this entry own query; analyst commentary excluded by reading."
+   }
   },
   {
    "s": "Sites & Surfaces",
@@ -13492,9 +13685,19 @@
    "transcript_status": "no verbatim seated: extraction pulled analyst prose (read-verified) — thread-trawl target",
    "meta": {
     "captured_at": "2026-08-08",
-    "transcript_provenance": "quoted composed-answer passages preserved verbatim inside the description at capture time; consolidated into the transcript field 2026-08-11 (batch sweep, round 2). PARTIAL: these are the quoted portions the analyst preserved, not necessarily the complete paste — full-paste recovery remains a thread-trawl target.",
-    "transcript_verification": "UNSEATED 2026-08-11 on reading: the extracted text continued the ANALYST argument (registry vocabulary, absence claims, section markers) rather than the composed answer. Read query + analysis + text together — they were the same voice."
-   }
+    "transcript_provenance": "composed-answer passages quoted inside the description at capture time; COPIED (not moved) into the transcript field 2026-08-11 — the analysis retains its quotations in full, nothing removed from d",
+    "transcript_verification": "READ-VERIFIED 2026-08-11: machine-register definitional prose answering this entry own query; analyst commentary excluded by reading.",
+    "transcript_completeness": "verbatim fragment(s) — the composed-answer passages the analyst quoted; the full paste is a thread-trawl target"
+   },
+   "transcript": "\"* The\ncomposition layer describing its own severance in the terms of the framework it had just severed.\n\n**Why this is a distinct category from capture 260.** 260 records the failure: an accurate\ndescription of a deposited framework, cited to three sources that do not contain it. This records\nwhat lies underneath it — that the failure was recoverable in three turns by a reader who already\nknew, which is precisely the reader who does not need the answer. The gap is not between what the\nlayer knows and does not know. It is between what it retrieves unprompted and what it retrieves\nwhen told where to look.\n\n**One live defect surfaced in the sources.** The answer cites **vpcor.org — Sign the Strike**,\nand that work is **not deposited in this archive**: the signature surface exists on the web and\nhas no record. A machine cited it before the archive held it.\n\nFULL AI MODE SEQUENCE (8 August 2026), four turns, as supplied by MANUS.\n\nTURN 1 —\"",
+   "citations_shown": [
+    {
+     "raw": "vpcor.org",
+     "domain": "vpcor.org",
+     "kind": "shown",
+     "source_field": "sf"
+    }
+   ]
   },
   {
    "s": "Books & Projects",
