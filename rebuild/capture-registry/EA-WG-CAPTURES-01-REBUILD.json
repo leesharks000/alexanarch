@@ -501411,6 +501411,15 @@
      }
     ],
     "critical_finding": "The 36 marker-declared June transcripts already seated are CONDENSATIONS of the raw pastes, not the pastes themselves. Verified on \"Johannine aperture\": the seated version (921 chars) drops a parenthetical gloss, the source-pointer sentence and the machine's closing offer, all present in the raw paste. Those 36 must be re-verified against the raw pastes and superseded where the paste is found. The platform footer is the completeness seal: a recovery terminating in \"AI can make mistakes, so double-check responses\" is provably whole; one that does not is a snippet of unknown extent and must be marked as such."
+   },
+   {
+    "date": "2026-08-12",
+    "entry": "SEARCH-METHOD DIAGNOSIS — why pasted transcripts were not yielding",
+    "correction_of": "An earlier trawl note claimed the August captures were recorded from images alone. MANUS corrected this: they were recorded from images AND full transcript pastes. The pastes exist; the failure was in the search method.",
+    "diagnosis": "conversation_search returns ONE CHUNK per thread, ranked against the query. Querying by TOPIC — \"heteronym dodecad\", \"machine-mediated reception studies\" — matches hundreds of chunks across a corpus where those terms are everywhere, so the chunk returned is whatever discusses the topic, never the paste. The right thread comes back; the wrong chunk comes with it.",
+    "what_works": "Query with a phrase unique to the MACHINE ANSWER, not the subject. Two confirmations: (1) the exact platform footer \"AI can make mistakes, so double-check responses\" returned five paste-bearing threads directly; (2) the phrase \"confession of Jesus Christ come in the flesh foundational lens\", taken from inside an answer, returned the Johannine aperture paste chunk itself — footer, $ boundary, You said: echo and full text.",
+    "operational_rule": "For each capture lacking a transcript, take a phrase QUOTED FROM THE ANSWER inside its own analysis — the analyses quote the machine in italics or quotation marks — and search on that. The quotation came from the answer, so it sits in the paste chunk. Do not search on the query string or the topic.",
+    "caveat": "The quoted_machine_text spans currently extracted by regex are noisy: the pattern captures text between apostrophes, which in analyses written with possessives (\"the archive's own tripartite structure\") yields fragments rather than quotations. Phrases must be read out of the analysis rather than taken from that field unchecked."
    }
   ]
  }
