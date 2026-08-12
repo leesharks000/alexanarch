@@ -1,0 +1,174 @@
+{
+  "schema": "EA-WG-CAPTURES-UNIFIED-SCHEMA",
+  "version": "1.0-draft",
+  "date": "2026-08-12",
+  "status": "PROPOSAL — not applied to any record. Built for MANUS review before any repair.",
+  "purpose": "A single per-capture metadata schema wide enough to hold every field that has ever appeared in any version of the Capture Registry, in any of its four hosting repositories, so that data recovered from any version can be slotted without loss, without renaming, and without adjudication. This schema does not decide which value is correct where versions disagree. It provides a slot for each, plus the provenance needed to decide later.",
+  "derivation": {
+    "sources_surveyed": ["alexanarch", "leesharks.com", "godkinggoogle", "machinemediation"],
+    "registry_versions": 138,
+    "field_observations": 330530,
+    "distinct_capture_keys": 316,
+    "distinct_fields_observed": 74,
+    "commits_walked": 3235,
+    "palette": "palette/capture-palette.sqlite"
+  },
+
+  "design_rules": [
+    "NO FIELD IS DROPPED. Every one of the 74 observed fields has a slot, including the 24 that the migration discarded and the ones only one capture ever used.",
+    "NO FIELD IS RENAMED SILENTLY. Where two versions used different names for the same thing, both names are retained and the relationship is recorded in `aliases` with an explicit note on whether the semantics are identical or merely similar.",
+    "NO VALUE IS PREFERRED. Where versions disagree, all values are held in `variants` with their source, version and date. Selection is a later, separate, per-field act.",
+    "PROVENANCE TRAVELS WITH THE VALUE, not with the record. Each field instance carries where it came from, so a capture may hold a `d` from v8.3 and an `imgs` from v9.55 without the record as a whole claiming a single origin.",
+    "EVIDENCE AND READING ARE SEPARATED. The single largest defect in the withdrawn registry was the conflation of machine output with analyst commentary about it. This schema places them in different top-level blocks and requires that anything in `machine_output` be traceable to a capture-time record, never derived from `analysis`.",
+    "CLAIMS ABOUT VERIFICATION STATE WHAT WAS DONE. `verification` entries record the act performed, by whom, on what date, against what evidence — never a bare status word."
+  ],
+
+  "field_map": {
+    "identity": {
+      "slug": {"observed_in": 4, "captures": 306, "note": "primary key in all later versions"},
+      "id": {"observed_in": 3, "captures": 97, "note": "June gallery key AND machinemediation numeric key (245-254). TWO DIFFERENT KEY SCHEMES SHARE THIS NAME — must be disambiguated per source, not merged."},
+      "slug_history": {"observed_in": 2, "captures": 4, "note": "prior slugs where a capture was renamed"},
+      "axn": {"observed_in": 1, "captures": 3},
+      "axn_note": {"observed_in": 1, "captures": 3},
+      "supersedes": {"observed_in": 2, "captures": 2},
+      "superseded_by": {"observed_in": 2, "captures": 1},
+      "prior": {"observed_in": 1, "captures": 2}
+    },
+
+    "query_and_surface": {
+      "q": {"observed_in": 4, "captures": 306, "note": "the query as issued"},
+      "query": {"observed_in": 3, "captures": 97, "aliases": ["q"], "semantics": "APPEARS EQUIVALENT to q; both retained pending per-record check, since June values are unquoted while later ones sometimes carry quotation marks that are themselves part of the query"},
+      "exact": {"observed_in": 4, "captures": 56, "note": "TYPE COLLISION: boolean 'true' in some versions, a query string in others. Must be split into exact_match_flag and exact_query_string at slotting time."},
+      "search_url": {"observed_in": 3, "captures": 70},
+      "surface": {"observed_in": 3, "captures": 97, "note": "AI Overview / AI Mode / knowledge panel"},
+      "surface_raw": {"observed_in": 2, "captures": 87, "note": "unnormalized surface string as recorded at capture"},
+      "sf": {"observed_in": 4, "captures": 306, "note": "surface-and-sources provenance line; short values are a bare surface name, long values carry surface, source count, cited sources and framing. NOT a single semantic field — a compressed provenance string that later versions overloaded."},
+      "auth_state": {"observed_in": 1, "captures": 10, "note": "signed-in vs incognito; the authentication-state pairs depend on it"},
+      "capture_method": {"observed_in": 1, "captures": 10},
+      "capture_class": {"observed_in": 1, "captures": 1},
+      "date": {"observed_in": 4, "captures": 316},
+      "capture_date": {"observed_in": 2, "captures": 87, "aliases": ["date"], "semantics": "APPEARS EQUIVALENT; retained separately because June records carry both and they are not always identical"}
+    },
+
+    "machine_output": {
+      "_rule": "Only capture-time verbatim machine text belongs here. Nothing in this block may be derived from analysis, extracted from a description, or reconstructed by OCR. OCR belongs in evidence.",
+      "d": {"observed_in": 4, "captures": 306, "max_len": 6333, "CRITICAL": "SEMANTICS CHANGED ACROSS VERSIONS AND THIS IS THE CENTRAL RECONCILIATION PROBLEM. In the June v8.x registries the v8.3 addendum states that 70 of 71 Revelation entries carry FULL VERBATIM AI MODE TRANSCRIPTS in `d`. In later versions `d` is a description that may quote machine text inside analyst prose. The same field name therefore holds primary evidence in one era and commentary in another. Every `d` must be classified per record and per version before it is slotted into machine_output or analysis."},
+      "transcript": {"observed_in": 2, "captures": 233, "max_len": 5690, "WARNING": "Values dated 2026-08-11/12 in alexanarch are largely fabrications: 119 of 207 are verbatim substrings of their own record's `d`, seated by automated extraction. Values sourced from machinemediation companion files and manifests are independent. Provenance must be checked per value; the field name alone certifies nothing."},
+      "transcript_status": {"observed_in": 2, "captures": 54},
+      "overview_at_capture": {"observed_in": 2, "captures": 6},
+      "description_html": {"observed_in": 2, "captures": 87, "max_len": 2823, "note": "June gallery field; contains quoted machine text inside analyst framing. Byte-identical to `d` for 49 captures, which is how the era's `d` semantics were established."},
+      "available_readings": {"observed_in": 2, "captures": 1, "max_len": 5142, "note": "explicit multi-reading record; the schema should generalize this rather than treat it as an exception"},
+      "divergence": {"observed_in": 2, "captures": 6, "note": "composition regenerated between screenshot and transcript copy — a first-class finding, not an error"}
+    },
+
+    "citations_and_sources": {
+      "citations_shown": {"observed_in": 2, "captures": 99, "note": "structured; kind values composed/chip/organic/shown/mentioned/bystander"},
+      "citations": {"observed_in": 1, "captures": 4, "aliases": ["citations_shown"], "semantics": "EARLIER, DIFFERENT SHAPE — do not merge without inspection"},
+      "citations_note": {"observed_in": 2, "captures": 89},
+      "sources": {"observed_in": 2, "captures": 1},
+      "source_count": {"observed_in": 2, "captures": 87, "note": "count of sources shown at capture time"},
+      "organic_rank": {"observed_in": 2, "captures": 87, "note": "rank of the organic result; DROPPED IN MIGRATION"},
+      "links": {"observed_in": 2, "captures": 292},
+      "related": {"observed_in": 3, "captures": 42, "note": "TYPE COLLISION: deposit numbers in some versions, capture slugs in others"},
+      "cite": {"observed_in": 2, "captures": 292}
+    },
+
+    "measurement_flags": {
+      "_note": "ALL SIX WERE DROPPED IN MIGRATION AND EXIST ONLY IN THE JUNE GALLERY REGISTRIES. They are per-capture measurements of what the composed answer retained — the registry's actual instrument readings.",
+      "author_retained": {"observed_in": 2, "captures": 87},
+      "institution_retained": {"observed_in": 2, "captures": 87},
+      "doi_retained": {"observed_in": 2, "captures": 87},
+      "composition_source_included": {"observed_in": 2, "captures": 87},
+      "per_score": {"observed_in": 2, "captures": 87, "note": "provenance erasure rate score"},
+      "match_type": {"observed_in": 2, "captures": 87, "note": "BROAD / EXACT / PARTIAL", "aliases": ["mt"], "semantics": "mt in later versions holds both a match type AND free-text finding prose — an overload that must be split"}
+    },
+
+    "classification": {
+      "s": {"observed_in": 4, "captures": 306, "note": "section; short values are a section name, long values are finding prose. OVERLOADED."},
+      "section": {"observed_in": 2, "captures": 87, "aliases": ["s"]},
+      "entity_type": {"observed_in": 2, "captures": 87, "note": "framework / site / institution / person"},
+      "failure_modes": {"observed_in": 2, "captures": 87, "note": "tag array: provenance_erasure, hedging, compositional_bystanding, generic_absorption, stability_re_capture_confirmed"},
+      "stability_status": {"observed_in": 2, "captures": 87, "note": "first_capture / drifted / recapture_stable"},
+      "has_correction": {"observed_in": 2, "captures": 87},
+      "has_recapture": {"observed_in": 2, "captures": 87},
+      "mt": {"observed_in": 4, "captures": 219, "note": "see match_type; overloaded across eras"},
+      "auto_derived": {"observed_in": 2, "captures": 87, "note": "whether the entry was machine-generated rather than authored — directly relevant to the present repair"},
+      "entry_status": {"observed_in": 2, "captures": 23},
+      "finding": {"observed_in": 1, "captures": 10},
+      "analysis": {"observed_in": 1, "captures": 1},
+      "artifact": {"observed_in": 1, "captures": 1}
+    },
+
+    "evidence": {
+      "imgs": {"observed_in": 4, "captures": 275},
+      "images": {"observed_in": 4, "captures": 146, "aliases": ["imgs"], "semantics": "SIMILAR BUT NOT IDENTICAL — differing path conventions across hosts; both retained"},
+      "image_filenames": {"observed_in": 2, "captures": 87, "aliases": ["imgs", "images"]},
+      "image_count": {"observed_in": 2, "captures": 87},
+      "imgs_origin": {"observed_in": 2, "captures": 142, "note": "original host URLs before mirroring"},
+      "image_status": {"observed_in": 2, "captures": 4, "note": "structured, includes MISFILED_AT_CAPTURE findings"},
+      "image_lacuna": {"observed_in": 2, "captures": 9, "note": "named unrecoverable files — an absence record, must never be silently dropped"},
+      "note_image": {"observed_in": 2, "captures": 1},
+      "ocr_text": {"observed_in": 2, "captures": 53, "note": "MACHINE-READ FROM SCREENSHOTS, NOT A TRANSCRIPT. Belongs to evidence, never to machine_output."},
+      "ocr_provenance": {"observed_in": 2, "captures": 53},
+      "evidence": {"observed_in": 2, "captures": 83, "note": "free-text account of what evidence exists, including explicit statements that none was preserved"},
+      "manifest_ref": {"observed_in": 2, "captures": 1},
+      "verify": {"observed_in": 2, "captures": 6}
+    },
+
+    "record_history": {
+      "meta": {"observed_in": 2, "captures": 223, "WARNING": "Introduced 2026-08-11 by the withdrawn repair passes. Contains transcript_provenance and transcript_verification strings, 207 of which assert a per-entry read that was not performed. Retained for audit; NOT to be treated as verification."},
+      "recovered": {"observed_in": 2, "captures": 19},
+      "restored_note": {"observed_in": 2, "captures": 15},
+      "record_note": {"observed_in": 2, "captures": 9},
+      "interface_observation": {"observed_in": 2, "captures": 1, "note": "MANUS-reported interface behaviour, explicitly not reproduced by the assistant"},
+      "notes": {"observed_in": 2, "captures": 87, "note": "always empty in observed data; slot retained"}
+    }
+  },
+
+  "unified_record_shape": {
+    "_comment": "The shape a reconstructed capture takes. Every leaf that can vary across versions is a list of provenanced variants rather than a bare value.",
+    "key": {"slug": "string", "aliases": ["prior slugs, numeric ids, gallery ids"], "key_scheme_note": "which source used which scheme"},
+    "query_and_surface": {"<field>": [{"value": "…", "source": "leesharks.com", "registry_version": "v8.3", "blob": "sha", "date": "2026-06-14"}]},
+    "machine_output": {
+      "records": [{
+        "text": "verbatim machine text",
+        "field_of_origin": "d | transcript | description_html | companion_file",
+        "source": "…", "registry_version": "…", "blob": "…", "date": "…",
+        "completeness": "whole | fragment | unknown",
+        "footer_present": "true | false | unknown",
+        "evidence_class": "capture-time paste | companion file | manifest field | UNVERIFIED-DERIVED",
+        "derived_from_analysis": "true | false | unknown"
+      }]
+    },
+    "analysis": {"records": [{"text": "…", "field_of_origin": "d | mt | s | sf | finding", "source": "…", "date": "…"}]},
+    "citations_and_sources": {"…": "as above, provenanced variants"},
+    "measurement_flags": {"…": "as above, provenanced variants"},
+    "classification": {"…": "as above, provenanced variants"},
+    "evidence": {"images": [], "ocr": [], "lacunae": [], "statements": []},
+    "verification": [{
+      "act": "what was actually done, in words",
+      "performed_by": "MANUS | TACHYON | other",
+      "date": "…",
+      "against": "what evidence was in view",
+      "result": "…",
+      "_rule": "No bare status words. An entry that cannot describe the act performed is not a verification entry."
+    }],
+    "open_questions": ["per-record list of what remains undecided, carried explicitly rather than resolved by default"]
+  },
+
+  "reconciliation_problems_requiring_MANUS_ruling": [
+    {"id": "R1", "problem": "`d` changes meaning across eras: verbatim transcript in v8.x, description in v9.x. Needs a per-record classification rule, or a per-record judgement.", "affects": "306 captures"},
+    {"id": "R2", "problem": "`id` holds two incompatible key schemes (June gallery slugs, machinemediation numerics 245-254).", "affects": "97 captures"},
+    {"id": "R3", "problem": "`exact` is boolean in some versions and a query string in others.", "affects": "56 captures"},
+    {"id": "R4", "problem": "`mt` and `s` are overloaded: each holds a controlled value in early versions and free-text finding prose in later ones.", "affects": "219 and 306 captures"},
+    {"id": "R5", "problem": "`related` holds deposit numbers in some versions and capture slugs in others.", "affects": "42 captures"},
+    {"id": "R6", "problem": "The six measurement flags exist only in June and only for 87 captures. Whether they are recoverable for later captures, or simply absent, is a matter of fact to be established, not inferred.", "affects": "87 captures with data, 229 without"},
+    {"id": "R7", "problem": "The 2026-08-11/12 `transcript` and `meta` values are largely assistant-fabricated. Proposed disposition: quarantine the whole field-generation, retain for audit, and rebuild from v8.x `d` plus companion files. Requires MANUS ruling before any is carried forward.", "affects": "207 transcripts, 223 meta blocks"},
+    {"id": "R8", "problem": "28 capture keys exist in the palette but not in the withdrawn registry, including four symbolon authentication-state captures and the machinemediation 245-254 series.", "affects": "28 captures"}
+  ],
+
+  "outstanding_recovery_targets": [
+    "EA-WG-CAPTURES-01.md — 131KB comprehensive annotated record of 176 captures, attached to Zenodo deposit 10.5281/zenodo.20741160, tombstoned 2026-06-19 ('User was blocked'). Not present in any repository. Only remaining avenue is the Wayback Machine, which is blocked from the assistant's network and must be checked from a browser.",
+    "The generating session for that markdown, if the content was written into the thread rather than assembled programmatically."
+  ]
+}
