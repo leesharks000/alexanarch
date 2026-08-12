@@ -94,7 +94,8 @@ def transcript_block(e):
     oac = e.get("overview_at_capture") or ""
     div = e.get("divergence") or ""
     meta = e.get("meta") or {}
-    if not (tr or oac or meta):
+    ocr = e.get("ocr_text") or ""
+    if not (tr or oac or meta or ocr):
         return ""
     parts = []
     if meta:
@@ -116,8 +117,18 @@ def transcript_block(e):
     if tr:
         parts.append('<div class="cap-tr-label">Full transcript</div>'
                      f'<div class="cap-tr-body" itemprop="text">{esc(tr)}</div>')
+    if ocr:
+        # MACHINE-READ, NOT THE PASTE. Rendered so the capture is legible and searchable
+        # where its verbatim transcript has not been recovered; labelled at every point of
+        # contact so it can never be mistaken for composed-layer output.
+        parts.append('<div class="cap-tr-label">Screenshot text (machine-read, not verbatim)</div>'
+                     f'<div class="cap-tr-note">{esc(e.get("ocr_provenance") or "Optical reading of the held screenshots; not the transcript.")}</div>'
+                     f'<div class="cap-tr-body cap-tr-ocr">{esc(ocr)}</div>')
+    label = ("Full transcript &amp; capture record" if tr
+             else ("Screenshot text (machine-read) &amp; capture record" if ocr
+                   else "Capture record"))
     return ('<details class="cap-transcript">'
-            '<summary>Full transcript &amp; capture record</summary>'
+            f'<summary>{label}</summary>'
             + "".join(parts) + '</details>')
 
 
