@@ -10,7 +10,9 @@
   "lacking_meta": 238,
   "with_citations_shown": 48,
   "queue_rows_with_ocr_probe": 85,
-  "image_corroborated": 72
+  "image_corroborated": 72,
+  "register_passing": 68,
+  "unconfirmed": 18
  },
  "queue": [
   {
@@ -1650,5 +1652,5 @@
   ]
  },
  "overwrite_finding": "MANUS reports transcripts were present at some point and specifically overwritten; repo-history exact-match trawl (git log -S on both footers, all fleet repos, full histories) returns ZERO hits — full pastes never reached any commit. The loss is therefore session-side: pastes were condensed into write-ups before data entry. Standing consequence: from v9.41 the transcript field is a completeness requirement, and the paste is seated verbatim BEFORE any write-up prose is composed.",
- "verification_rule": "SEAT VERIFICATION (ratified 2026-08-11 after MANUS called the spot check): every seated transcript is checked against OCR of its own screenshots. >=35% token coverage → meta.transcript_verification records image-corroborated with the percentage; below that the seat is UNSEATED and returned to the description, because low coverage means the extractor pulled ANALYST prose rather than composed-answer text. Entries with no image evidence are marked unverified rather than assumed good. The registry never claims a transcript the evidence does not support."
+ "verification_rule": "SEAT VERIFICATION (ratified 2026-08-11 after MANUS called the spot check): every seated transcript is checked against OCR of its own screenshots. >=35% token coverage → meta.transcript_verification records image-corroborated with the percentage; below that the seat is UNSEATED and returned to the description, because low coverage means the extractor pulled ANALYST prose rather than composed-answer text. Entries with no image evidence are marked unverified rather than assumed good. The registry never claims a transcript the evidence does not support. TWO-TEST STANDARD (extended 2026-08-11 at MANUS's challenge): image corroboration is the primary test, run against ALL screenshots not a sample. Where images cannot corroborate — none held, or they capture a different surface than the seated text — a REGISTER TEST decides: composed-answer markers (definitional register, 'Would you like', bracketed source numbers, the platform footer, 'Key/Core Concepts') versus analyst markers (bold shouted findings, deposit numbers, AXN forms, 'the composition layer', 'longitudinal pair'). A seat passes only if it reads as machine output. Failing both tests, the seat is marked unconfirmed and becomes a thread-trawl priority — it is NOT silently counted as a transcript."
 }
