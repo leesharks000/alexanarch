@@ -361,6 +361,47 @@ def distill_full(teacher, Xtr, Xbkg_ev, Xwith_ev, seed):
 # exactly what the withdrawn claim asserted and what T4 could not separate.
 # ─────────────────────────────────────────────────────────────────────────────
 
+# ─────────────────────────────────────────────────────────────────────────────
+# T8 PRE-REGISTRATION — written and committed 2026-08-12 BEFORE any T8 run.
+# THE PUBLISHED NAE REMEDY, third attempt, this time with the construction the
+# paper actually specifies.
+#
+# HISTORY OF THIS ARM, stated because it is the point. v0.2 shipped a Gaussian-
+# perturbation surrogate and called it NAE (deviation D1). v0.3 shipped an
+# input-space PCD chain and called it faithful (deviation V3-D10). Both were
+# relabelled after audit rather than overwritten. The published collider NAE
+# (Dillon, Favaro, Plehn, Sorrenson, Kramer, SciPost Phys. Core 6 (2023) 074;
+# arXiv:2206.14225) specifies:
+#     (a) PRETRAIN an ordinary autoencoder on the training class;
+#     (b) ON-MANIFOLD INITIALIZATION: run a Langevin chain in LATENT space,
+#         decode the resulting latent samples through the trained decoder to
+#         obtain on-manifold negatives;
+#     (c) run a further Langevin chain in INPUT space starting from those
+#         decoded negatives;
+#     (d) train the normalized-energy objective against those negatives, with
+#         a replay buffer and stabilisation.
+# T8 implements (a)-(d). If it still fails to converge, that is reported as a
+# sampler outcome, not as a verdict on the remedy.
+#
+# REGISTERED PREDICTION, stated before running:
+#   On the LHCO pairs the published NAE shows SMALLER directional asymmetry
+#   |D_A@1e-2| than the plain AE (0.155 on L1, 0.268 on L2 from T3), and on the
+#   constituent pair it does NOT invert (AUC Q on P >= 0.5, against the plain
+#   AE's 0.241). If either fails, the remedy does not remedy the failure mode
+#   this battery measures, at this scale, on these representations.
+#
+# REGISTERED CONVERGENCE DIAGNOSTIC, so a null is interpretable rather than
+# ambiguous: report mean negative-sample energy relative to mean data energy at
+# the end of training. A sampler that has converged should place negatives at
+# comparable or lower energy than data under the normalized objective; a ratio
+# far above 1 indicates the chain never reached the model distribution, and the
+# result is then reported as UNINTERPRETABLE rather than as a failure of NAE.
+#
+# DECLARED SCOPE: three seeds (as for the earlier NAE arms); K_latent = 20,
+# K_input = 20; LHCO pairs first, constituent pair last since it is the
+# expensive one. WNAE remains NOT RUN.
+# ─────────────────────────────────────────────────────────────────────────────
+
 def main(which):
     R = load_state()
     t0 = time.time()
@@ -778,6 +819,100 @@ def main(which):
             print('T7 %-18s dims %3d | AE~VAE phi %.3f %s | AE~GMM %.3f  (%.0fs)' % (
                 rname, out['dims'], out['AE~VAE@0.01']['phi_mean'], out['AE~VAE@0.01']['ci95_seeds'],
                 out['AE~GMM@0.01']['phi_mean'], time.time() - t0), flush=True)
+            save(R)
+    if which == 'T8':
+        R['tests'].setdefault('T8_published_NAE', {})
+        K_LAT, K_INP, ETA, SIG, BUF = 20, 20, 0.05, 0.05, 1024
+
+        def train_published_nae(X, seed, d):
+            torch.manual_seed(seed)
+            g = torch.Generator().manual_seed(seed)
+            Xt = torch.tensor(X)
+            # (a) pretrain an ordinary autoencoder
+            m = train_net(AE(d), X, epochs=8, seed=seed)
+            energy = lambda z: ((m(z) - z) ** 2).mean(1)
+            enc, dec = m.enc, m.dec
+            zdim = enc[-1].out_features
+            zbuf = torch.randn(BUF, zdim, generator=g)
+            opt = torch.optim.Adam(m.parameters(), lr=5e-4)
+            diag = {}
+            for ep in range(10):
+                perm = torch.randperm(len(Xt), generator=g)
+                for i in range(0, len(Xt), 512):
+                    xb = Xt[perm[i:i + 512]]
+                    nb = xb.shape[0]
+                    # (b) ON-MANIFOLD INITIALIZATION: Langevin in LATENT space
+                    bidx = torch.randint(0, BUF, (nb,), generator=g)
+                    z = zbuf[bidx].clone().requires_grad_(True)
+                    for _ in range(K_LAT):
+                        ez = ((dec(z) - dec(z).detach()) ** 2).mean(1).sum() * 0.0 + \
+                             ((m(dec(z)) - dec(z)) ** 2).mean(1).sum()
+                        gz = torch.autograd.grad(ez, z)[0]
+                        with torch.no_grad():
+                            z = z - ETA * gz + SIG * torch.randn(z.shape, generator=g)
+                        z.requires_grad_(True)
+                    with torch.no_grad():
+                        zbuf[bidx] = z.detach()
+                        neg = dec(z.detach())          # decode to on-manifold negatives
+                    # (c) further Langevin chain in INPUT space
+                    neg = neg.requires_grad_(True)
+                    for _ in range(K_INP):
+                        gx = torch.autograd.grad(energy(neg).sum(), neg)[0]
+                        with torch.no_grad():
+                            neg = neg - ETA * gx + SIG * torch.randn(neg.shape, generator=g)
+                        neg.requires_grad_(True)
+                    neg = neg.detach()
+                    # (d) normalized-energy objective
+                    opt.zero_grad()
+                    e_pos, e_neg = energy(xb), energy(neg)
+                    loss = e_pos.mean() - e_neg.mean() + 0.1 * (e_pos ** 2).mean()
+                    loss.backward(); opt.step()
+                    diag = {'e_data': float(e_pos.mean()), 'e_neg': float(e_neg.mean())}
+            diag['energy_ratio_neg_over_data'] = round(diag['e_neg'] / (diag['e_data'] + 1e-12), 3)
+            return m, diag
+
+        def sysd(Xtr, seed):
+            mu, sd = Xtr.mean(0), Xtr.std(0) + 1e-6
+            m, diag = train_published_nae((Xtr - mu) / sd, seed, Xtr.shape[1])
+            return {'m': m, 'mu': mu, 'sd': sd, 'diag': diag}
+
+        def sc(s_, X):
+            Z = torch.tensor((X - s_['mu']) / s_['sd'])
+            with torch.no_grad():
+                return ((s_['m'](Z) - Z) ** 2).mean(1).numpy()
+
+        only = os.environ.get('ONLY_PAIR')
+        for pname, (P, Q) in PAIRS.items():
+            if pname in R['tests']['T8_published_NAE'] or (only and pname != only):
+                continue
+            per, diags = [], []
+            for s_ in SEEDS[:3]:
+                Ptr, Pcal, Pev = split(P, NTR, 20000, NEV, s_)
+                Qtr, Qcal, Qev = split(Q, NTR, 20000, NEV, s_)
+                sP, sQ = sysd(Ptr, s_), sysd(Qtr, s_)
+                diags.append({'P': sP['diag'], 'Q': sQ['diag']})
+                sPcal, sPev, sPQ = sc(sP, Pcal), sc(sP, Pev), sc(sP, Qev)
+                sQcal, sQev, sQP = sc(sQ, Qcal), sc(sQ, Qev), sc(sQ, Pev)
+                row = {'auc_P_on_Q': round(auc(sPev, sPQ), 4), 'auc_Q_on_P': round(auc(sQev, sQP), 4)}
+                for a in ALPHAS:
+                    tP, tQ = np.quantile(sPcal, 1 - a), np.quantile(sQcal, 1 - a)
+                    aPQ, aQP = float(np.mean(sPQ <= tP)), float(np.mean(sQP <= tQ))
+                    row['M_A@%g' % a] = round((aPQ + aQP) / 2, 4)
+                    row['D_A@%g' % a] = round(aPQ - aQP, 4)
+                per.append(row)
+            ratios = [d[k]['energy_ratio_neg_over_data'] for d in diags for k in ('P', 'Q')]
+            R['tests']['T8_published_NAE'][pname] = {
+                'construction': 'AE pretraining -> latent-space Langevin (On-Manifold Initialization) -> decode -> input-space Langevin -> normalized-energy objective',
+                'K_latent': K_LAT, 'K_input': K_INP, 'seeds': SEEDS[:3],
+                'convergence_diagnostic': {'energy_ratio_neg_over_data': [round(r_, 3) for r_ in ratios],
+                                           'mean_ratio': round(float(np.mean(ratios)), 3),
+                                           'reading': 'ratio near or below 1 indicates negatives reached comparable-energy regions; a ratio far above 1 means the chain did not reach the model distribution and the cell is UNINTERPRETABLE as a test of the remedy'},
+                **{k: {'mean': round(float(np.mean([d[k] for d in per])), 4),
+                       'seed_values': [d[k] for d in per]} for k in per[0]}}
+            r_ = R['tests']['T8_published_NAE'][pname]
+            print('T8 %-3s AUC %.3f / %.3f  D_A@1e-2 %+.4f  energy_ratio %.2f  (%.0fs)' % (
+                pname, r_['auc_P_on_Q']['mean'], r_['auc_Q_on_P']['mean'],
+                r_['D_A@0.01']['mean'], r_['convergence_diagnostic']['mean_ratio'], time.time() - t0), flush=True)
             save(R)
     save(R)
     print('elapsed %.0fs' % (time.time() - t0))
