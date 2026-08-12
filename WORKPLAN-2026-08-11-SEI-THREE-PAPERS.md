@@ -261,9 +261,9 @@ Assembly No-Double-Draw; observations never corrected.*
 
 | Deposit | Paper | Role | Submission status |
 |---|---|---|---|
-| #1452 · AXN:05DD.GENERATIVE.🖊️⚪🖐️🪄📌🧫 | The Irreversibility Frontier | comparative architecture; defines the profile tuple | queued for batch |
-| #1453 · AXN:05DE.OPERATIVE.🀄🕖🍂🌘🕑🕌 | Baseline Capture Architecture | constructive specification; the control group for a trigger | HELD — ≥1 revision round before submission |
-| #1454 · AXN:05DF.OPERATIVE.🔛🖐️🏷️🍁👐🧪 | Assimilation Across Accelerator Classifier Architectures | pre-registered cross-family battery | queued for batch; needs v0.2 results |
+| #1452 · AXN:05DD.GENERATIVE.🌉🕒⏰🕕▲🧪 | The Irreversibility Frontier | comparative architecture; defines the profile tuple | queued for batch |
+| #1453 · AXN:05DE.OPERATIVE.🎨🌺🐝❤️♋🎶 | Baseline Capture Architecture | constructive specification; the control group for a trigger | HELD — ≥1 revision round before submission |
+| #1454 · AXN:05DF.OPERATIVE.🛸🧫●□🔙🌉 | Assimilation Across Accelerator Classifier Architectures | pre-registered cross-family battery | queued for batch; needs v0.2 results |
 | #1449 · AXN:05DA.EMPIRICAL.🛤️🌠🗿🖊️🧭🪞 | Battery v0.1 + program | empirical seed | deposited |
 | #1450 · AXN:05DB.GENERATIVE.⏰🚪🔜♻️🔥🫶 | The Iceberg Document | speculative framework, fenced | deposited |
 
@@ -284,3 +284,5 @@ Assembly No-Double-Draw; observations never corrected.*
 **Standing terminology (ratified 2026-08-11):** *irreversibility frontier* supersedes *irreversibility locus* (#1450 → #1452); cross-model *miss overlap* is the **RII** measurement family (q_A, q_B, q_AB, Δ_miss), scalar normalization still unfrozen pending simulation.
 
 **Open decisions reserved to MANUS:** author line for P1; whether v0.2 waits for GPU access or ships CPU-scale with declared bounds; pre-submission contact with the Aachen (Finke/Krämer) or Heidelberg (Dillon/Plehn/Favaro) groups; correspondence-corpus scope for P3.
+
+**AXN restoration note (2026-08-12).** The three deposits were minted with truncated canonical text: the mint parser terminates the Body field at the next known form label, and these papers carry `### Keywords`, `### Version`, `### Methodology` and `### Falsification Conditions` as their own section headings, so only front matter and abstract were seated (9.5k of 42–60k chars) under a `full` body status. Bodies restored in place 2026-08-12; because the AXN is content-derived, hash, glyph and AXN were recomputed same-family. Superseded forms, for anyone holding a citation from the first hours: 05DD 🖊️⚪🖐️🪄📌🧫 → 🌉🕒⏰🕕▲🧪; 05DE 🀄🕖🍂🌘🕑🕌 → 🎨🌺🐝❤️♋🎶; 05DF 🔛🖐️🏷️🍁👐🧪 → 🛸🧫●□🔙🌉. Root cause fixed in `scripts/mint_deposit.py`: the Body field now terminates only at `### Terms` or end of input.

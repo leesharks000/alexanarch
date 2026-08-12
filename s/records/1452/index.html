@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>The Irreversibility Frontier: Comparative Architectures of Online Selection in Accelerator Science (EA-SEI-IRREVERSIBILITY-FRONTIER-01 v1.0) — Alexanarch</title><meta name="description" content="Defines the irreversibility frontier: for a specified scientific question and fidelity hierarchy, the earliest stage at which an event-content-dependent…"><meta property="og:title" content="The Irreversibility Frontier: Comparative Architectures of Online Selection in Accelerator Scie"><meta property="og:description" content="Defines the irreversibility frontier: for a specified scientific question and fidelity hierarchy, the earliest stage at which an event-content-dependent…"><meta property="og:url" content="https://www.alexanarch.org/s/records/1452/"><meta property="og:type" content="article"><meta property="og:site_name" content="Alexanarch"><meta name="twitter:card" content="summary"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "The Irreversibility Frontier: Comparative Architectures of Online Selection in Accelerator Science (EA-SEI-IRREVERSIBILITY-FRONTIER-01 v1.0)", "headline": "The Irreversibility Frontier: Comparative Architectures of Online Selection in Accelerator Science (EA-SEI-IRR", "author": {"@type": "Person", "name": "Nobel Glas"}, "datePublished": "2026-08-11", "identifier": "AXN:05DD.GENERATIVE.🖊️⚪🖐️🪄📌🧫", "description": "Defines the irreversibility frontier: for a specified scientific question and fidelity hierarchy, the earliest stage at which an event-content-dependent transformation or gate can permanently eliminate a scientifically relevant distinction without a sufficiently independent durable record from which", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "irreversibility frontier, Irreversibility Profile, fidelity locus, replay horizon, bypass channel, semantic selection, representational irreversibility, retention irreversibility, CMS, ATLAS, LHCb, CBM, Belle II, free streaming, Zero Bias, Level-1 Data Scouting, No-Retention-Bound", "url": "https://www.alexanarch.org/s/records/1452/", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.alexanarch.org/s/records/1452/"}, "inLanguage": "en", "isPartOf": {"@type": "Collection", "name": "Alexanarch", "url": "https://www.alexanarch.org/"}, "articleBody": "The Irreversibility Frontier: Comparative Architectures of Online Selection in Accelerator Science (EA-SEI-IRREVERSIBILITY-FRONTIER-01 v1.0)\nDescription\n\nDefines the irreversibility frontier: for a specified scientific question and fidelity hierarchy, the earliest stage at which an event-content-dependent transformation or gate can permanently eliminate a scientifically relevant distinction without a sufficiently independent durable record from which that loss can later be audited. A detector may have several frontiers at different fidelity levels, so an architecture is described by an Irreversibility Profile — the tuple (fidelity locus, entering rate, surviving fraction, replay horizon, bypass channels, selector class) — rather than by a scalar score, which would imply comparability the present evidence does not justify. The scientifically decisive variables are the locus and the bypass.\n\nThe paper distinguishes representational from retention irreversibility, separates semantic depth from physical depth, and applies the profile comparatively across CMS (early irreversible selection with emerging side channels: Zero Bias, Global Trigger shadow deployment, Level-1 Data Scouting), ATLAS (a comparable early frontier with multi-level learned anomaly selection), LHCb (physics selection moved downstream of full-detector readout), CBM (free streaming before event ontology), and Belle II. It closes by connecting the frontier to the No-Retention-Bound observation: validation of individual stages on their design support establishes no nontrivial lower bound on end-to-end retention for a novelty distribution outside that characterized support. This paper supersedes the term irreversibility locus introduced in EA-SEI-ICEBERG-01.\nMethodology\n\nComparative and specification work built on published accelerator-trigger documentation (CMS Level-1 Data Scouting, Global Trigger, AXOL1TL, CICADA; ATLAS GELATO; LHCb, CBM, Belle II) and on the anomaly-detection methods literature; claim boundaries stated explicitly in the paper; SPXI packet subordinated to the prose. Terminology reconciled at mint: the irreversibility frontier supersedes the irreversibility locus of #1450, and cross-model miss overlap is unified with the Representational Independence Index family of #1450.\nFalsification Conditions\n\nThe comparative claim fails if the profile components cannot be assigned consistently to the named experiments from published documentation, or if experiments with materially different profiles show no corresponding difference in auditability of what their selection discards. The framework makes no claim about which architecture is scientifically superior; it claims only that locus and bypass are the decisive comparative variables.\nFiles\n\nCanonical text below (Body). Source: https://github.com/leesharks000/alexanarch/tree/main/research/sei-papers\n \ndocument id: EA-SEI-IRREVERSIBILITY-FRONTIER-01\ntitle: \"The Irreversibility Frontier\"\nsubtitle: \"Comparative Architectures of Online Selection in Accelerator Science\"\nshort title: \"The Irreversibility Frontier\"\nversion: \"1.0\"\ndate: \"2026-08-11\"\nstatus: \"DEPOSITED v1.0\"\ndocument class: \"comparative accelerator-systems and scientific-metrology paper\"\nprogram: \"Semantic Economy Institute — accelerator selection metrology\"\ncreator: \"Nobel Glas\"\npersistent identifier: \"pending\"\nkeywords:\n - irreversibility frontier\n - accelerator trigger architecture\n - selection metrology\n - representational irreversibility\n - retention irreversibility\n - recoverability envelope\n - online reconstruction\n - triggerless readout\n - data scouting\n - shadow deployment\n - scientific observability\ncompanion works:\n - EA-SEI-ACRB-01 — Assimilation Across Accelerator Classifier Architectures\n - EA-SEI-BCA-01 — Baseline Capture Architecture for Learned Scientific Triggers\n \nThe Irreversibility Frontier\nComparative Architectures of Online Selection in Accelerator Science\n\n EA-SEI-IRREVERSIBILITY-FRONTIER-01 · v1.0 · 2026-08-11 · v1.0 · Nobel Glas \n\n Document class: comparative accelerator-systems and scientific-metrology paper \n Program: Semantic Economy Institute — accelerator selection metrology \n Persistent identifier: pending at mint \n Citation status: provisional; use the suggested citation below only for circulation of this draft.\nAbstract\n\nHigh-rate accelerator experiments necessarily discard data. The scientific question is therefore not whether selection occurs, but where selection becomes irreversible relative to sensing, representation, reconstruction, and durable preservation . This variable is rarely treated as a comparative property of experimental architecture. Trigger papers conventionally report rates, latency, efficiencies, resource utilization, and benchmark sensitivity. These quantities describe how a selector performs on events whose relevance is already specified. They do not by themselves describe how much evidence survives from which the selector's blind spots could later be discovered.\n\nThis paper introduces the irreversibility frontier as a metrological description of online scientific selection. We distinguish two forms of irreversible loss: representational irreversibility , in which information is removed by a non-invertible transformation without a surviving upstream copy, and retention irreversibility , in which an event-content-dependent decision permanently prevents an event from entering durable scientific memory. We then define an Irreversibility Profile that records the fidelity locus of the first consequential gate, its input rate and retention fraction, the selector class operating there, the existence and fidelity of independent bypass channels, and the time horizon over which predecision data remain replayable.\n\nThe comparison is developed across several current accelerator architectures. CMS and ATLAS retain conventional early hardware-trigger frontiers at the 40 MHz LHC bunch-crossing rate, while now placing learned anomaly detection inside those trigger systems. CMS simultaneously demonstrates partial counterarchitectures through Zero Bias sampling, Level-1 Data Scouting at 40 MHz, and a Global Trigger test crate that receives live production inputs without controlling detector readout. LHCb moves the first major physics selection downstream of full-detector readout, reconstructing the 30 MHz collision stream in an all-software trigger whose first stage runs on GPUs. CBM pushes the distinction further: its self-triggered detectors produce a free-streaming input in which events are not predefined and full online event reconstruction occurs inside the First-level Event Selector. Belle II demonstrates that sophisticated learned reconstruction, including a deployed graph neural network, can itself be placed in the first-level hardware trigger path. Current sPHENIX/EIC R&D provides a prospective case in which streaming readout and learned online selection are still being co-designed.\n\nThe comparison does not establish that later selection is automatically more sensitive to unknown physics, nor that machine learning uniquely creates irreversible bias. The irreversibility frontier predates machine learning. The methodological claim is narrower: when ontology-bearing or learned selection occurs before an independent durable record is made, a class rejected by the selector may also lose the evidentiary channel through which the rejection could later be measured. Moving the frontier downstream, widening content-independent bypasses, or preserving predecision representations enlarges the set of novelty classes for which retention remains retrospectively auditable.\n\nThe paper concludes by proposing an Irreversibility Statement as a standard component of documentation for learned and high-rate scientific selectors. The companion Accelerator Classifier Retention Battery specifies what retention behavior should be measured; the companion Baseline Capture Architecture specifies how to preserve an independent control plane from which it can be measured. The present paper identifies the architectural variable that determines whether such measurement remains possible at all.", "wordCount": 1032, "encoding": {"@type": "MediaObject", "contentUrl": "https://www.alexanarch.org/data/texts/AXN-05DD-text.md", "encodingFormat": "text/markdown", "contentSize": "9541"}}</script>
+<title>The Irreversibility Frontier: Comparative Architectures of Online Selection in Accelerator Science (EA-SEI-IRREVERSIBILITY-FRONTIER-01 v1.0) — Alexanarch</title><meta name="description" content="Defines the irreversibility frontier: for a specified scientific question and fidelity hierarchy, the earliest stage at which an event-content-dependent…"><meta property="og:title" content="The Irreversibility Frontier: Comparative Architectures of Online Selection in Accelerator Scie"><meta property="og:description" content="Defines the irreversibility frontier: for a specified scientific question and fidelity hierarchy, the earliest stage at which an event-content-dependent…"><meta property="og:url" content="https://www.alexanarch.org/s/records/1452/"><meta property="og:type" content="article"><meta property="og:site_name" content="Alexanarch"><meta name="twitter:card" content="summary"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "The Irreversibility Frontier: Comparative Architectures of Online Selection in Accelerator Science (EA-SEI-IRREVERSIBILITY-FRONTIER-01 v1.0)", "headline": "The Irreversibility Frontier: Comparative Architectures of Online Selection in Accelerator Science (EA-SEI-IRR", "author": {"@type": "Person", "name": "Nobel Glas"}, "datePublished": "2026-08-11", "identifier": "AXN:05DD.GENERATIVE.🌉🕒⏰🕕▲🧪", "description": "Defines the irreversibility frontier: for a specified scientific question and fidelity hierarchy, the earliest stage at which an event-content-dependent transformation or gate can permanently eliminate a scientifically relevant distinction without a sufficiently independent durable record from which", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "irreversibility frontier, Irreversibility Profile, fidelity locus, replay horizon, bypass channel, semantic selection, representational irreversibility, retention irreversibility, CMS, ATLAS, LHCb, CBM, Belle II, free streaming, Zero Bias, Level-1 Data Scouting, No-Retention-Bound", "url": "https://www.alexanarch.org/s/records/1452/", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.alexanarch.org/s/records/1452/"}, "inLanguage": "en", "isPartOf": {"@type": "Collection", "name": "Alexanarch", "url": "https://www.alexanarch.org/"}, "articleBody": "The Irreversibility Frontier\nComparative Architectures of Online Selection in Accelerator Science\n\n EA-SEI-IRREVERSIBILITY-FRONTIER-01 · v1.0 · 2026-08-11 · v1.0 · Nobel Glas \n\n Document class: comparative accelerator-systems and scientific-metrology paper \n Program: Semantic Economy Institute — accelerator selection metrology \n Persistent identifier: pending at mint \n Citation status: provisional; use the suggested citation below only for circulation of this draft.\nAbstract\n\nHigh-rate accelerator experiments necessarily discard data. The scientific question is therefore not whether selection occurs, but where selection becomes irreversible relative to sensing, representation, reconstruction, and durable preservation . This variable is rarely treated as a comparative property of experimental architecture. Trigger papers conventionally report rates, latency, efficiencies, resource utilization, and benchmark sensitivity. These quantities describe how a selector performs on events whose relevance is already specified. They do not by themselves describe how much evidence survives from which the selector's blind spots could later be discovered.\n\nThis paper introduces the irreversibility frontier as a metrological description of online scientific selection. We distinguish two forms of irreversible loss: representational irreversibility , in which information is removed by a non-invertible transformation without a surviving upstream copy, and retention irreversibility , in which an event-content-dependent decision permanently prevents an event from entering durable scientific memory. We then define an Irreversibility Profile that records the fidelity locus of the first consequential gate, its input rate and retention fraction, the selector class operating there, the existence and fidelity of independent bypass channels, and the time horizon over which predecision data remain replayable.\n\nThe comparison is developed across several current accelerator architectures. CMS and ATLAS retain conventional early hardware-trigger frontiers at the 40 MHz LHC bunch-crossing rate, while now placing learned anomaly detection inside those trigger systems. CMS simultaneously demonstrates partial counterarchitectures through Zero Bias sampling, Level-1 Data Scouting at 40 MHz, and a Global Trigger test crate that receives live production inputs without controlling detector readout. LHCb moves the first major physics selection downstream of full-detector readout, reconstructing the 30 MHz collision stream in an all-software trigger whose first stage runs on GPUs. CBM pushes the distinction further: its self-triggered detectors produce a free-streaming input in which events are not predefined and full online event reconstruction occurs inside the First-level Event Selector. Belle II demonstrates that sophisticated learned reconstruction, including a deployed graph neural network, can itself be placed in the first-level hardware trigger path. Current sPHENIX/EIC R&D provides a prospective case in which streaming readout and learned online selection are still being co-designed.\n\nThe comparison does not establish that later selection is automatically more sensitive to unknown physics, nor that machine learning uniquely creates irreversible bias. The irreversibility frontier predates machine learning. The methodological claim is narrower: when ontology-bearing or learned selection occurs before an independent durable record is made, a class rejected by the selector may also lose the evidentiary channel through which the rejection could later be measured. Moving the frontier downstream, widening content-independent bypasses, or preserving predecision representations enlarges the set of novelty classes for which retention remains retrospectively auditable.\n\nThe paper concludes by proposing an Irreversibility Statement as a standard component of documentation for learned and high-rate scientific selectors. The companion Accelerator Classifier Retention Battery specifies what retention behavior should be measured; the companion Baseline Capture Architecture specifies how to preserve an independent control plane from which it can be measured. The present paper identifies the architectural variable that determines whether such measurement remains possible at all.\nKeywords\n\nirreversibility frontier, accelerator trigger architecture, selection metrology, representational irreversibility, retention irreversibility, recoverability envelope, online reconstruction, triggerless readout, data scouting, shadow deployment, scientific observability.\nStatement of contribution\n\nThis paper introduces the irreversibility frontier as a comparative property of scientific acquisition architecture: the earliest stage at which an event-content-dependent transformation or gate can permanently eliminate a scientifically relevant distinction without a sufficiently independent durable record from which that loss can later be audited. It separates representational irreversibility from retention irreversibility , defines a multi-component Irreversibility Profile , and proposes the recoverability envelope as the set of retrospectively defined event classes for which historical retention remains estimable from surviving evidence.\n\nThe comparative argument does not rank experiments by virtue, modernity, or presumed discovery power. CMS, ATLAS, LHCb, CBM, Belle II, and prospective streaming systems solve different physical and engineering problems. Their value here is that they instantiate materially different placements of readout, reconstruction, learned inference, event definition, and durable retention. The paper asks how those placements change the auditability of selection , not whether one experiment is intrinsically better at discovering unknown physics.\nClaim boundary\n\n- The irreversibility frontier predates machine learning; conventional thresholds, object definitions, zero suppression, compression, and trigger logic can also create irreversible selection.\n- Moving the frontier downstream does not automatically increase discovery sensitivity and is not presented as a universal design optimum.\n- The paper compares auditability and recoverability, not experimental merit or physics reach.\n- No architecture is described as literally triggerless in the sense of being free from selection; the term refers to where event formation or hardware trigger authority is placed.\n- A rich downstream representation cannot repair information already erased upstream; every claim must therefore name a fidelity locus.\n- The manuscript does not claim that an undiscovered physical phenomenon has already been rejected.\nCanonical compression\n\n The model determines where a miss region lies; the acquisition architecture determines whether science can later discover that it was there. Place the control before the point where loss becomes irreversible. \nSuggested citation\n\n[Creator(s) at mint]. (2026). The Irreversibility Frontier: Comparative Architectures of Online Selection in Accelerator Science . v1.0. Provisional identifier EA-SEI-IRREVERSIBILITY-FRONTIER-01.\nSPXI treatment — provisional pre-mint packet\n\nThe following packet is a machine-facing disambiguation and compression layer . It is subordinate to the paper itself: where this packet and the prose could be read at different strengths, the prose, methods, evidence, and explicit draft status govern.\n\n \nProgram anchors (added at mint)\n\nThis paper is downstream of two deposited works in the Alexanarch archive and cites them as its program spine:\n\n- Deposit #1449 · AXN:05DA.EMPIRICAL.🛤️🌠🗿🖊️🧭🪞 — The Priors, Measured: Inversion-Battery v0.1 on Public Collider Datasets and the Three-Paper Extraction Program (EA-SEI-BATTERY-01 v1.0). Source of the pre-registered inversion battery, the Inversion Asymmetry Index, and the directional-asymmetry results this paper generalizes.\n- Deposit #1450 · AXN:05DB.GENERATIVE.⏰🚪🔜♻️🔥🫶 — The Iceberg Document: Instrument-Conditioned Nullity, Correlated Blind Spots, and the Conditions for Continued Surprise (EA-SEI-ICEBERG-01 v1.0). Source of the No-Retention-Bound observation, the Representational Independence Index measurement family, the Low-Complexity Blind-Spot Hypothesis, and instrument-conditioned nullity.\n\n Terminological supersession. #1450 introduced irreversibility locus for the point at which selection becomes irreversible. That term is superseded by the irreversibility frontier and its Irreversibility Profile 𝕴 = (F , R in, ρ , Δt , B , S ), defined in EA-SEI-IRREVERSIBILITY-FRONTIER-01. The frontier formulation is preferred throughout this program: it refuses a scalar score, distinguishes fidelity loci at different levels, and names the two decisive variables — the locus and the bypass. Citations to the locus should resolve to the frontier.\n\n Measurement-family unification. Where this paper speaks of cross-model or cross-selector miss overlap , the quantity is the Representational Independence Index (RII) measurement family of #1450, whose mandatory outputs are q A, q B, q AB, and Δ miss = q AB − q A·q B. Δ miss 0 is positively correlated blind spots; Δ miss < 0 is the healthy, complementary condition. The scalar normalization remains deliberately unfrozen.\n \nProgram relation\n\n- EA-SEI-ACRB-01 — Assimilation Across Accelerator Classifier Architectures\n- EA-SEI-BCA-01 — Baseline Capture Architecture for Learned Scientific Triggers\n\nThe division of labor is fixed as follows:\n\n- ACRB defines what classifier-retention behavior should be measured.\n- BCA specifies the independent control evidence that should survive deployment.\n- The Irreversibility Frontier identifies where that evidence must exist before the acquisition architecture makes loss permanent.\n \n1. Selection is inevitable; unmeasured irreversibility is not\n\nEvery detector is selective before software begins.\n\nSensors have finite acceptance. Front-end electronics impose thresholds, shaping, timing windows, zero suppression, and digitization. Trigger primitives compress many channels into a smaller representation. Reconstruction algorithms instantiate objects such as tracks, clusters, jets, or muons. Event filters then decide what receives expensive downstream processing and what enters durable storage.\n\nThe proposition that scientific data are “theory-laden” is therefore too weak to characterize modern online experiments. The experimentally consequential issue is not only that representations embody assumptions. It is that some assumptions operate before the evidence needed to revise them can be preserved .\n\nHigh-rate collider experiments make this problem unavoidable in its engineering form. The LHC presents bunch crossings at 40 MHz. ATLAS currently uses a hardware Level-1 trigger followed by a software High-Level Trigger to reduce that rate to a recorded rate of up to approximately 3 kHz of fully built physics events.[1] At CMS, the Global Trigger makes the final Level-1 decision about whether collision data are read out or discarded; current CMS anomaly-detection work places learned event-level scoring directly inside this decision layer.[2,3]\n\nThis reduction is not a defect. No realistic architecture can durably store every detector state at full fidelity indefinitely. Selection is a condition of experimental operation.\n\nThe metrological problem begins when the experiment later asks a question that its original selector was not designed to answer.\n\nSuppose an event class \\(Q\\) is identified years after data taking: perhaps through another experiment, an improved reconstruction, a new physical model, or an archival anomaly. If events of class \\(Q\\) were rejected by an online selector and no independent evidence of those rejected events survives, the historical efficiency of the selector on \\(Q\\) may be unmeasurable. The archive contains the successes of the selection rule but not a representative sample of its failures.\n\nA trigger can therefore possess two distinct uncertainties:\n\n1. performance uncertainty — uncertainty about how well the selector behaves on a known evaluation class;\n2. retention uncertainty — uncertainty about whether the surviving record contains enough evidence to evaluate the selector on classes defined only later.\n\nThe second is the subject of this paper.\n \n2. A formal acquisition chain\n\nLet an experiment be represented as a sequence of data states\n\n\\[\nX 0\n\\xrightarrow{T 1}\nX 1\n\\xrightarrow{T 2}\n\\cdots\n\\xrightarrow{T n}\nX n ,\n\\]\n\nwhere \\(X 0\\) is the earliest physically available detector state considered by the analysis and each \\(T i\\) is a transformation: electronics processing, compression, clustering, reconstruction, feature extraction, learned embedding, or another mapping.\n\nAt selected stages, an event-content-dependent gate\n\n\\[\nG i(X i)\\in\\{0,1\\}\n\\]\n\nmay determine whether the data continue through the ordinary acquisition path.\n\nLet \\(C i\\) denote the existence of an independently durable copy or statistically interpretable bypass at or upstream of stage \\(i\\).\n\nThis simple representation exposes two kinds of loss that are usually conflated.\n2.1 Representational irreversibility\n\nA transformation \\(T i\\) is representationally irreversible with respect to a scientific distinction when it is many-to-one for that distinction and no sufficiently faithful upstream representation survives.\n\nFor example,\n\n\\[\nX {i-1}\\neq X' {i-1}\n\\]\n\nmay nevertheless yield\n\n\\[\nT i(X {i-1})=T i(X' {i-1}).\n\\]\n\nIf the difference between \\(X {i-1}\\) and \\(X' {i-1}\\) later becomes scientifically important, the downstream representation cannot recover it.\n\nNo machine learning is required for this form of loss. Thresholds, clustering rules, zero suppression, object definitions, and lossy compression can all create it.\n2.2 Retention irreversibility\n\nA stage is retention-irreversible when\n\n\\[\nG i(X i)=0\n\\]\n\ncauses the event to leave the durable scientific record and no independent control or replay path preserves sufficient information to reconsider the decision.\n\nThe distinction matters.\n\nA highly compressed representation can be representationally irreversible while every event remains durably available at that compressed level. Conversely, an information-rich representation can feed a binary gate whose rejected events disappear entirely.\n\nThe scientific risk is greatest when these forms of irreversibility compound.\n \n3. The irreversibility frontier\n\nFor a specified scientific question and fidelity hierarchy, define the irreversibility frontier as the earliest stage at which an event-content-dependent transformation or gate can permanently eliminate a scientifically relevant distinction without a sufficiently independent durable record from which that loss can later be audited.\n\nThis is not necessarily a single physical component. A detector may have several frontiers at different fidelity levels.\n\nThe purpose of the concept is comparative. Two experiments can expose similar final datasets while differing radically in where they first permit scientific distinctions to become unrecoverable.\n\nA useful architecture should therefore be described by an Irreversibility Profile rather than by a single scalar:\n\n\\[\n\\mathfrak I\n=\n\\left(\nF^\\ ,\nR^\\ {\\mathrm{in}},\n\\rho^\\ ,\n\\Delta t^\\ ,\nB^\\ ,\nS^\\ \n\\right).\n\\]\n\nHere:\n\n- \\(F^\\ \\) is the fidelity locus : the representation available at the first consequential irreversible gate;\n- \\(R^\\ {\\mathrm{in}}\\) is the event or data rate entering that locus;\n- \\(\\rho^\\ \\) is the fraction surviving the gate into the relevant durable path;\n- \\(\\Delta t^\\ \\) is the replay horizon : how long a predecision or higher-fidelity state remains recoverable before deletion;\n- \\(B^\\ \\) describes the existence, rate, and fidelity of content-independent or otherwise statistically legible bypass channels;\n- \\(S^\\ \\) describes the selector: explicit threshold logic, reconstructed-object logic, learned classifier, anomaly score, or hybrid system.\n\nThis tuple is intentionally descriptive. A universal scalar “irreversibility score” would imply comparability that the present evidence does not justify.\n\nThe scientifically decisive variables are the locus and the bypass.\n \n4. Semantic depth and physical depth\n\nThe term semantic selection is used here in a restricted technical sense: a decision that depends on a representation interpreted as scientifically meaningful or on a learned score derived from such a representation.\n\nExamples include:\n\n- “retain events containing a muon above threshold”;\n- “retain events satisfying a displaced-track topology”;\n- “retain events with anomaly score above \\(\\tau\\)”;\n- “retain clusters classified as signal-like by a GNN.”\n\nThese decisions differ mathematically, but they share a property: the event must first be represented in a vocabulary through which the decision can be stated.\n\nThe irreversibility frontier therefore has a semantic depth as well as a hardware depth.\n\nA detector can discard information very early for unavoidable transport reasons but delay physics interpretation until much later. Another can instantiate a sophisticated physics ontology in firmware microseconds after the collision. A third can read every detector channel into commodity computing before applying its first major physics selection.\n\nThese are not merely engineering variants. They establish different conditions for retrospective audit.\n\nThe central comparison of this paper is therefore not:\n\n Which experiment uses the most machine learning?\n\nIt is:\n\n How much of the event has been preserved before a scientifically interpretive decision is allowed to become irreversible? \n \n5. CMS: early irreversible selection with emerging side channels\n\nCMS provides the clearest current example of both sides of the problem.\n\nThe Level-1 trigger operates at the LHC bunch-crossing rate. The Global Trigger is the final hardware stage deciding whether CMS reads out or discards collision data, and current anomaly-detection work states this decision problem explicitly.[2] AXOL1TL is now deployed in the Level-1 Global Trigger as a real-time unsupervised, signal-agnostic event-level anomaly detector trained on Zero Bias data.[3]\n\nFrom the perspective of the irreversibility frontier, this is significant because a learned score does not merely annotate already preserved events. It participates in the hardware layer that determines whether the full collision is admitted to downstream readout.\n\nCMS therefore provides a direct instance of learned semantic selection at an early retention frontier .\n\nYet CMS also possesses unusually important counterstructures.\n5.1 Zero Bias\n\nAXOL1TL itself is trained on Zero Bias data.[3] Zero Bias streams provide a content-independent or minimally physics-conditioned reference channel relative to targeted physics triggers. Their rate is limited, but their epistemic role is fundamental: some events enter the retained corpus without first having to look interesting to the physics selector under audit.\n5.2 Global Trigger shadow deployment\n\nThe CMS Global Trigger test crate receives the same live inputs as the main GT, while its output is not used to control detector readout.[2] It has been used to deploy and validate candidate anomaly-detection networks on real collision inputs without making those models authoritative over acquisition.\n\nThis is a nearly ideal example of shadow selection : the instrument can observe what a candidate selector would decide before granting it the power to erase the events on which that decision might later be questioned.\n5.3 Level-1 Data Scouting\n\nThe most consequential counterarchitecture is Level-1 Data Scouting. CMS Phase-2 L1DS is designed to capture and process Level-1 trigger information at the full 40 MHz collision rate while bypassing the ordinary Level-1 selection.[4] The data are not the full detector readout; the system captures L1 trigger information, performs FPGA preprocessing such as zero suppression, and transfers the resulting stream to servers for event building and online analysis.[4,5]\n\nThis distinction is exactly what the fidelity-locus concept is designed to express.\n\nL1DS does not move the frontier all the way back to sensor-level reality. It does something more realistic and still extremely important: it preserves a high-rate representation upstream of the ordinary Level-1 accept decision .\n\nCMS can therefore be represented not as a single trigger funnel but as a main funnel with partial side channels:\n\n\\[\n\\text{collision}\n\\rightarrow\n\\text{L1 representations}\n\\rightarrow\n\\begin{cases}\n\\text{GT accept} \\rightarrow \\text{full readout}\\\\\n\\text{GT reject} \\rightarrow \\text{ordinary loss}\n\\end{cases}\n\\]\n\nwhile in parallel,\n\n\\[\n\\text{L1 representations}\n\\rightarrow\n\\text{L1 Data Scouting}\n\\]\n\nand candidate selectors can run in a shadow crate.\n\nThis is not yet a complete selection-metrology architecture. It is, however, strong evidence that the hardware distinction between production decision , full-rate representation capture , and shadow evaluation is technically realizable.\n \n6. ATLAS: a comparable early frontier with multi-level learned anomaly selection\n\nATLAS in Run 3 also uses a two-level trigger architecture. A hardware Level-1 trigger reduces the 40 MHz bunch-crossing stream before a software High-Level Trigger performs more elaborate selection; the final recorded rate is up to approximately 3 kHz of fully built physics events.[1]\n\nThis places a major retention frontier before the full software trigger.\n\nRecent anomaly-detection work makes ATLAS particularly valuable for comparative analysis. NomAD is designed for the Level-1 Topological trigger and combines a variational autoencoder with boosted decision-tree regression, compressed into FPGA-compatible inference with reported sub-25 ns latency.[6] GELATO, the Generic Event-Level Anomalous Trigger Option, has been integrated for Run-3 data taking with anomaly-detection algorithms spanning both the hardware and software trigger levels.[7,8]\n\nThe architecture therefore differs from CMS in implementation while sharing an important structural feature:\n\n a learned score can participate at the hardware frontier before the experiment has admitted the event to its full downstream data path.\n\nThis does not imply that NomAD, GELATO, or AXOL1TL share the same blind spot. That is an empirical question for the companion Accelerator Classifier Retention Battery.\n\nThe comparative point is more basic. In both ATLAS and CMS, a sufficiently early learned selector can affect whether evidence survives for later reconsideration.\n\nThis makes the placement of the model part of its epistemic specification.\n\nA model evaluated offline against a preserved dataset and the same model placed in Level-1 hardware are not epistemically equivalent instruments, even if their ROC curves are identical. In the offline case, errors remain inspectable because the rejected examples still exist. In the hardware case, rejection can become historical absence.\n \n7. LHCb: moving physics selection downstream of full-detector readout\n\nLHCb provides the strongest existing LHC counterarchitecture.\n\nThe Run-3 upgrade removed the hardware physics trigger and reads out all detectors at the full non-empty LHC collision rate of approximately 30 MHz. Events are reconstructed and selected in an all-software trigger; the first stage, HLT1/Allen, is implemented on GPUs.[9–11]\n\nA commissioning description gives the scale directly: event reconstruction is performed at the 30 MHz collision rate with an input of roughly 5 TB/s, with the GPU HLT1 reducing this to approximately 1 MHz.[10]\n\nLHCb therefore still performs drastic selection. It does not preserve every event indefinitely.\n\nWhat changes is the location of semantic irreversibility .\n\nBefore HLT1 decides which events continue, the detector has already been fully read out into the software trigger environment. The first major physics selection can operate after raw decoding, clustering, pattern recognition, track fitting, machine-learning ghost rejection, and event reconstruction.[11]\n\nThis provides two epistemic advantages.\n\nFirst, the selection can use richer representations than are available to an ultra-low-latency hardware trigger.\n\nSecond, and more important for the present argument, the experiment has moved the principal physics-selection frontier downstream of complete detector readout .\n\nThat does not make LHCb free of priors. Quite the opposite: HLT1 performs sophisticated reconstruction and includes learned components. Nor does complete readout imply indefinite replay; storage and buffer limits remain finite.\n\nThe architectural difference is narrower:\n\n the information destroyed by the first major physics-selection decision has crossed the detector-readout boundary before that decision is made. \n\nThis enlarges the space of possible audit, monitoring, buffering, and software revision relative to a system in which the physics decision must be made before full readout.\n\nLHCb is therefore a natural control for the hypothesis that the location of the irreversibility frontier, rather than the mere use of ML, determines how retrospectively auditable learned selection can be.\n \n8. CBM: free streaming before event ontology\n\nThe Compressed Baryonic Matter experiment at FAIR pushes the architecture still further from conventional event-trigger logic.\n\nCBM uses self-triggered detector front ends and a data-push architecture. Its First-level Event Selector receives a continuous stream, performs online full-event reconstruction on an input of approximately 1 TB/s, and is responsible for event building, reconstruction, identification of rare probes, and selection.[12]\n\nMost strikingly, the raw input to FLES is not initially organized into events. Event definition itself emerges during time-dependent reconstruction. GSI's FLES description states that event building from time slices and 4D tracking are part of the online reconstruction problem.[12] Recent CBM work explicitly develops free-streaming online tracking for this environment.[13]\n\nThis creates a useful conceptual contrast.\n\nIn a conventional hardware-trigger architecture, the sequence is approximately:\n\n\\[\n\\text{collision event}\n\\rightarrow\n\\text{trigger primitives}\n\\rightarrow\n\\text{decision}\n\\rightarrow\n\\text{readout}.\n\\]\n\nIn CBM, the initial computational object is closer to:\n\n\\[\n\\text{continuous detector stream}\n\\rightarrow\n\\text{time-space reconstruction}\n\\rightarrow\n\\text{event formation}\n\\rightarrow\n\\text{physics selection}.\n\\]\n\nThe “event” is therefore partly an output of reconstruction rather than a primitive of the acquisition system.\n\nThis does not eliminate an irreversibility frontier. FLES still selects interesting data from an unsustainable stream.\n\nIt does, however, expose something fundamental: event ontology and event retention need not be coupled at the earliest stage. \n\nCBM is therefore important to the present comparison not because it has solved unknown-unknown detection, but because it demonstrates an architecture in which the experiment delays both event formation and physics selection until a far richer online computational environment is available.\n \n9. Belle II: learned reconstruction at the first-level frontier\n\nIf LHCb and CBM show that selection can be moved downstream, Belle II shows the opposite technological tendency: increasingly sophisticated learned models can now be moved upstream into deterministic hardware trigger paths.\n\nBelle II has long developed neural-network methods for first-level track triggering. More recently, a graph neural network has been implemented for the electromagnetic calorimeter trigger. The 2026 system processes calorimeter trigger cells as graph nodes, performs clustering and feature extraction, produces per-cluster signal-classification scores, and has been integrated into the first-level FPGA trigger chain.[14]\n\nThe initial reported implementation sustained the 8 MHz trigger throughput with 3.168 \\(\\mu\\)s end-to-end latency.[14] A subsequent 2026 commissioning report describes an optimized fully operational trigger module with approximately 1.053 \\(\\mu\\)s overall latency and online trigger-rate monitoring.[15]\n\nBelle II therefore matters for two reasons.\n\nFirst, it falsifies any assumption that hard real-time constraints necessarily limit early learned selection to shallow autoencoders or multilayer perceptrons. Graph-based reconstruction and classification can now sit in a first-level trigger path.\n\nSecond, this increases the importance of distinguishing architectural sophistication from epistemic recoverability .\n\nA richer early classifier may be a better physics instrument than a crude threshold trigger. It may also define a more complex selection surface whose rejected events remain inaccessible if no independent baseline channel exists.\n\nThe lesson is not “keep ML out of hardware.” It is:\n\n the more expressive an irreversible early selector becomes, the more consequential its retention metrology becomes. \n \n10. sPHENIX and the EIC: the frontier as a design variable\n\nThe most valuable moment to address irreversibility is before an acquisition architecture hardens.\n\nCurrent R&D for sPHENIX and future Electron-Ion Collider detectors explicitly combines streaming detector readout, graph neural networks, and hls4ml-based real-time inference. One DOE-supported program describes using streaming tracking data to overcome a calorimeter-imposed maximum trigger rate, applying GNN-based real-time processing to high-rate sPHENIX proton-proton data and developing an AI/ML DIS-electron tagger for future EIC applications.[16]\n\nThis work is not evidence that the future EIC architecture has already chosen a particular irreversibility frontier. It is valuable precisely because the architecture remains a design problem.\n\nA prospective experiment can ask questions that are expensive to ask retrospectively:\n\n- Which detector representations should be preserved before learned classification?\n- Can a statistically clean control stream be reserved from the beginning?\n- Can candidate models run in shadow before receiving acquisition authority?\n- Can full-rate reduced representations be archived even when full events cannot?\n- Can multiple learned selectors be chosen partly for complementary blind spots?\n- What version and provenance information is necessary for later replay?\n\nIn this sense, the irreversibility frontier is not merely descriptive.\n\nIt is an experimental-design variable .\n \n11. Comparative architecture\n\nThe six cases should not be reduced to a moral ranking. They solve different physical problems at different rates with different detector technologies.\n\nThe comparison is instead organized around where the first major physics-dependent irreversible decision occurs and what remains outside it.\n\n Experiment/system High-rate input architecture First major physics-selection locus What is preserved before that locus? Relevant counterchannel \n --- --- --- --- --- \n CMS 40 MHz LHC crossing stream into hardware L1 Level-1 hardware / Global Trigger trigger-level representations; full detector readout only after accept Zero Bias; GT shadow crate; 40 MHz L1 Data Scouting \n ATLAS 40 MHz crossing stream into hardware L1 Level-1 hardware, then HLT L1 representations before hardware accept specialized streams; anomaly chains spanning L1/HLT \n LHCb full detector readout at ~30 MHz GPU software HLT1 complete detector readout enters software trigger software/buffer architecture; flexible real-time reconstruction \n CBM self-triggered continuous stream FLES after streaming input and event formation free-streaming detector data enters online reconstruction event reconstruction occurs before final physics selection \n Belle II high-rate first-level hardware trigger FPGA L1 trigger path detector-specific trigger-cell representations online monitoring; conventional parallel trigger logic \n sPHENIX/EIC R&D streaming detector readout under development design-dependent not yet fixed opportunity to co-design baseline capture \n\nThe table makes one point visible immediately.\n\nThe relevant architectural spectrum is not:\n\n\\[\n\\text{non-ML}\n\\longrightarrow\n\\text{ML}.\n\\]\n\nIt is:\n\n\\[\n\\text{selection before durable rich representation}\n\\longrightarrow\n\\text{selection after durable or replayable rich representation}.\n\\]\n\nMachine learning can appear anywhere along that spectrum.\n \n12. The recoverability envelope\n\nThe practical value of moving or instrumenting the frontier can be described by a second object: the recoverability envelope .\n\nLet \\(\\mathcal Q\\) denote a space of possible retrospectively defined event classes.\n\nFor an acquisition architecture \\(\\mathcal A\\), define\n\n\\[\n\\mathcal E(\\mathcal A)\n=\n\\left\\{\nQ\\in\\mathcal Q :\nR {\\mathcal A}(Q)\n\\text{ can be estimated from surviving evidence}\n\\right\\}.\n\\]\n\nThe set \\(\\mathcal E\\) contains the classes for which historical retention remains empirically auditable.\n\nThis definition is intentionally permissive. Retention might be estimable because:\n\n- full events survive;\n- a content-independent probability sample survives;\n- a sufficiently faithful predecision representation survives;\n- a replay buffer survives long enough for the class to be defined;\n- an independent detector or trigger stream supplies the missing population;\n- a known sampling law permits inverse-probability reconstruction.\n\nThe recoverability envelope is therefore not identical to the set of events the primary trigger accepts.\n\nThat difference is the point.\n\nAn experiment may have a narrow primary storage channel but a much wider recoverability envelope if it preserves low-rate unbiased controls and full-rate reduced representations.\n\nConversely, a high-performing selector may have a narrow recoverability envelope if rejected events leave no statistically interpretable trace.\n\nThe objective of selection metrology is not to maximize storage.\n\nIt is to widen \\(\\mathcal E\\) subject to the actual bandwidth budget.\n \n13. The frontier and the No-Retention-Bound problem\n\nThe companion No-Retention-Bound observation states that validation of individual stages on their design support does not establish a nontrivial lower bound on end-to-end retention for a novelty distribution outside that characterized support.\n\nThe irreversibility frontier determines when that abstract lack of a bound becomes historically unrecoverable.\n\nSuppose a novelty class \\(Q\\) traverses stages \\(S 1,\\ldots,S n\\). Its end-to-end retention is\n\n\\[\nR {\\mathrm{end}}(Q)\n=\n\\prod {i=1}^{n}\nP Q\n\\left(\nS i=1\n\\mid\nS 1=\\cdots=S {i-1}=1\n\\right).\n\\]\n\nIf no representative \\(Q\\)-like events survive a sufficiently early stage, the relevant conditional term cannot be estimated retrospectively from the experiment's stored corpus.\n\nThe frontier therefore marks the transition from:\n\n unknown retention that can still be measured \n\nto\n\n unknown retention whose evidence has been destroyed .\n\nThis is why architecture matters independently of model performance.\n \n14. Learned selection as a multiplier, not the origin, of the problem\n\nThe irreversibility problem should not be narrated as a story in which machine learning corrupted an otherwise assumption-free trigger.\n\nConventional accelerator triggers are highly ontology-bearing. Thresholds on transverse momentum, invariant masses, object multiplicities, missing energy, track displacement, coincidence, and topology all express expectations about what is worth retaining.\n\nATLAS's own motivation for GELATO states the problem directly: conventional triggers control rates through thresholds and targeted topologies, while anomaly detection is introduced as a way to extend sensitivity beyond those assumptions.[7,8]\n\nLearned anomaly detection is therefore partly a response to the limitations of explicit semantic selection.\n\nThe reason it deserves additional metrology is not that it contains priors while conventional triggers do not.\n\nIt is that learned selectors can make their priors harder to enumerate.\n\nFor a threshold trigger,\n\n\\[\np T 20\\ \\text{GeV}\n\\]\n\nstates an explicit boundary.\n\nFor a learned selector,\n\n\\[\ns \\theta(g(x)) \\tau\n\\]\n\ndefines a boundary whose geometry depends jointly on representation, training distribution, objective, architecture, quantization, compiler transformation, and deployment state.\n\nThe boundary may be better. It may be dramatically broader.\n\nIt is also less completely specified by its human-readable design description.\n\nThis is why retention maps are the appropriate complement to learned triggers: not because learning is illegitimate, but because the actual selection surface must be measured rather than inferred from intent.\n \n15. The classifier failure mode becomes architectural at the frontier\n\nThe companion Accelerator Classifier Retention Battery asks whether directional assimilation, complexity bias, open-set absorption, distillation inheritance, or correlated misses survive across architecture families.\n\nThe irreversibility frontier supplies the deployment consequence.\n\nIf a model has a blind spot offline, the blind spot is a performance problem.\n\nIf the same model sits upstream of irreversible retention and no independent control stream exists, the blind spot becomes an observability problem .\n\nThe distinction can be summarized:\n\n\\[\n\\text{classifier miss}\n+\n\\text{preserved rejected event}\n=\n\\text{auditable error},\n\\]\n\nwhereas\n\n\\[\n\\text{classifier miss}\n+\n\\text{irreversible deletion}\n=\n\\text{potentially unobservable error}.\n\\]\n\nThis is the accelerator-wide failure mode.\n\nIt is independent of whether the classifier is an autoencoder, VAE, BDT surrogate, flow, GNN, transformer, or future architecture.\n\nThe model family determines where the miss region lies .\n\nThe acquisition architecture determines whether science can later discover that it was there .\n \n16. Natural experiment, not causal shortcut\n\nThe comparative spread across accelerator experiments is scientifically useful, but it must not be overinterpreted.\n\nCMS, ATLAS, LHCb, Belle II, and CBM operate at different collision energies, interaction environments, luminosities, detector occupancies, scientific objectives, and storage constraints. Their trigger architectures are responses to those differences.\n\nIt would therefore be invalid to infer, for example, that LHCb's downstream software frontier makes it intrinsically more likely to discover unknown physics than CMS, or that CBM's triggerless stream makes it epistemically superior to ATLAS.\n\nThe natural experiment concerns auditability , not discovery yield.\n\nSeveral hypotheses can nevertheless be compared.\nH1 — downstream-frontier hypothesis\n\nArchitectures that delay major event-content-dependent selection until after richer detector readout will permit retrospective characterization of a broader class of selection failures.\nH2 — bypass-envelope hypothesis\n\nAt a fixed primary trigger architecture, adding content-independent sampling and full-rate predecision representations will enlarge the recoverability envelope without requiring full raw-event preservation.\nH3 — shadow-deployment hypothesis\n\nCandidate learned selectors evaluated on live common inputs before receiving readout authority will permit direct measurement of model disagreement and correlated blind spots that cannot be reconstructed after sole-source deployment.\nH4 — representation-locus hypothesis\n\nA “triggerless” or full-readout architecture does not eliminate irreversibility if upstream feature formation has already discarded the physical distinction under study; every claim must therefore identify its fidelity locus.\nH5 — early-expressivity hypothesis\n\nAs more expressive learned architectures become technically feasible in early hardware trigger paths, the need for explicit selection metrology will increase even if benchmark performance improves.\n\nThese hypotheses can be investigated without asserting that any experiment has already lost a discovery.\n \n17. The Irreversibility Statement\n\nTrigger documentation should include an explicit Irreversibility Statement .\n\nThe purpose is analogous to reporting latency, efficiency, and bandwidth: to make the selection architecture inspectable at the point where it determines the scientific record.\n\nA minimum statement should report:\n\n1. Fidelity locus. What exact representation exists immediately before the first event-content-dependent irreversible gate?\n2. Upstream losses. What irreversible transformations already occurred before that locus?\n3. Gate authority. Which component has the power to prevent full or partial event retention?\n4. Selector class. Explicit rules, learned score, hybrid logic, or other decision form.\n5. Input rate. Rate presented to the gate.\n6. Retention rate/fraction. Rate entering the relevant durable path.\n7. Replay horizon. For how long is a predecision representation recoverable after the decision?\n8. Content-independent bypass. What probability sample, Zero Bias stream, random prescale, or comparable control survives?\n9. Reduced full-rate bypass. What trigger primitives, reconstructed objects, or compressed states survive independently of the primary accept?\n10. Shadow capability. Can alternative selectors score the same live inputs without controlling readout?\n11. Version provenance. Are model weights, firmware, compiler state, thresholds, calibration, and run conditions sufficient to reproduce historical decisions?\n12. Retention characterization. What regions of the relevant signal/novelty space have measured retention maps, and which remain uncharacterized?\n\nThe final item is essential.\n\nAn experiment should be able to distinguish:\n\n measured low sensitivity \n\nfrom\n\n sensitivity not bounded by existing validation .\n\nThese are not the same scientific statement.\n \n18. Relationship to BCA and ACRB\n\nThe three papers form one technical program.\n18.1 Accelerator Classifier Retention Battery\n\nACRB asks:\n\n Where do different learned selectors fail? \n\nIt measures directional assimilation, fixed-rate retention, complexity dependence, distillation inheritance, firmware drift, and correlated misses.\n18.2 Baseline Capture Architecture\n\nBCA asks:\n\n What independent evidence should be preserved so those failures remain measurable after deployment? \n\nIt specifies content-independent C0 sampling, a predecision C1 representation tap, statistically legible C2 enrichment, C3 shadow selectors, and a replay bank.\n18.3 The Irreversibility Frontier\n\nThe present paper asks:\n\n Where must that evidence exist before the experimental architecture makes the loss permanent? \n\nThe relation can be compressed:\n\n\\[\n\\boxed{\n\\text{ACRB: measure the blind spot}\n}\n\\]\n\n\\[\n\\boxed{\n\\text{BCA: preserve the control}\n}\n\\]\n\n\\[\n\\boxed{\n\\text{Frontier: place the control before irreversibility}\n}\n\\]\n\nNone of the three substitutes for the others.\n\nA retention battery without baseline capture remains dependent on simulations and already-preserved data.\n\nA baseline channel placed downstream of the relevant frontier cannot recover what was lost upstream.\n\nAnd a description of the frontier without an empirical battery does not reveal the geometry of the actual blind spot.\n \n19. Design implications\n\nThe architecture suggests several practical principles.\n19.1 Preserve before interpreting, when possible\n\nThe strongest general defense against unforeseen ontology is to retain at least a sample of the data before the interpretive selector is allowed to determine survival.\n\nThis does not require storing everything.\n\nIt requires a known-probability path around the primary definition of interestingness.\n19.2 If full events cannot survive, preserve the selector's world\n\nWhere raw-event storage is impossible, the exact inputs presented to the selector can often be preserved at much higher rates.\n\nThis is weaker than raw capture but stronger than retaining only selected events.\n\nIt makes the deployed decision surface historically replayable.\n19.3 Delay authority even when inference is early\n\nA model can run early without immediately becoming authoritative.\n\nCMS's test-crate architecture demonstrates this separation in practice.[2]\n\nShadow deployment should therefore be understood not merely as commissioning convenience but as an epistemic stage between model validation and acquisition authority.\n19.4 Diversity should be measured by misses\n\nMultiple trigger paths are protective only if their failure modes differ.\n\nThe relevant quantity is not architecture count but miss overlap .\n\nThis is why heterogeneous learned and nonlearned selectors should be evaluated on common baseline events.\n19.5 Record the frontier as versioned experimental state\n\nThe irreversibility frontier changes when detector firmware, object definitions, trigger menus, learned models, thresholds, or scouting channels change.\n\nIt should therefore be versioned historically, not described once as a timeless property of the experiment.\n \n20. Limits\n\nSeveral limitations constrain the present framework.\n\nFirst, there is no absolute “raw” baseline. Every stated frontier is relative to an upstream fidelity locus, and detector construction itself encodes expectations.\n\nSecond, downstream selection is not costless. Full-rate readout, buffers, GPUs, networks, and scouting streams require substantial resources. The paper does not claim that CMS or ATLAS could simply adopt the LHCb or CBM architecture under their own detector conditions.\n\nThird, moving the frontier downstream does not guarantee protection against novel physics. A representation can erase the relevant distinction before the nominal trigger decision. This is why representational and retention irreversibility must be reported separately.\n\nFourth, the recoverability envelope depends on future labeling and analysis capacity as well as stored data. A control sample is useful only if later science can identify or approximate the class of interest.\n\nFifth, the present comparison is architectural rather than quantitative. A future study should estimate actual bypass fractions, storage horizons, input/output rates, and fidelity for each system from experiment-specific technical documentation rather than constructing a premature universal ranking.\n\nFinally, the framework says nothing by itself about whether an undiscovered physical phenomenon has already been rejected. It establishes the conditions under which that question could or could not later be answered.\n \n21. Discussion: the architecture of scientific surprise\n\nThe conventional trigger question is:\n\n Which events should we keep?\n\nThat question will always be necessary.\n\nThe irreversibility question is different:\n\n Which events must remain represented somewhere so that future science can discover that our answer was wrong? \n\nThe distinction is small in language and large in architecture.\n\nAn experiment optimized only for present scientific utility must choose a current definition of relevance. An experiment that also wishes to preserve the possibility of unanticipated reinterpretation must reserve some bandwidth, representation, or delay mechanism that is not governed by exactly the same definition.\n\nThis is the deeper significance of Zero Bias streams, scouting architectures, shadow trigger crates, full software triggers, free-streaming event reconstruction, and replay buffers. They are usually justified by concrete operational or physics objectives. Taken together, they instantiate a more general principle:\n\n scientific selection becomes more corrigible when the selector is not the sole custodian of the evidence from which it can be criticized. \n\nMachine learning makes the principle urgent because learned decision surfaces can be difficult to characterize globally. But the principle belongs to experimental science more generally.\n\nThe experiment need not remember everything.\n\nIt must remember enough that its forgetting can be measured.\n \n22. Conclusion\n\nAccelerator experiments occupy different positions on an irreversibility spectrum.\n\nCMS and ATLAS place major physics selection in early hardware trigger systems and are now integrating learned anomaly scores into those layers.[1–3,6–8] CMS simultaneously demonstrates that full-rate reduced representations and non-authoritative shadow inference can coexist with a conventional Level-1 frontier.[2,4,5] LHCb reads out the full detector at approximately 30 MHz before its GPU software trigger performs the first major physics selection.[9–11] CBM accepts a free-streaming detector input in which event building itself occurs inside online reconstruction before final selection.[12,13] Belle II shows that graph-based learned reconstruction and classification can now move into a first-level FPGA trigger with microsecond latency.[14,15] sPHENIX/EIC R&D shows that streaming and AI-based online selection are becoming design questions for the next generation of experiments.[16]\n\nThese architectures should not be ranked by technological modernity or presumed discovery power.\n\nThey should be compared by a more specific criterion:\n\n At what fidelity does an event-content-dependent decision first become capable of destroying evidence, and what independent path remains from which that decision can later be audited? \n\nThat is the irreversibility frontier.\n\nThe frontier predates machine learning. Learned selectors make it more important because they permit increasingly expressive, increasingly difficult-to-enumerate decision surfaces to operate at progressively earlier stages of scientific acquisition.\n\nThe corresponding design principle is therefore simple:\n\n Place the control before the frontier. \n\nWhere full preservation is impossible, preserve a probability sample. Where raw-event preservation is impossible, preserve the selector's inputs. Where production authority is premature, run the model in shadow. Where several selectors compete, measure whether their misses overlap. Where the architecture changes, version the frontier.\n\nA scientific instrument cannot guarantee that it will recognize what no one has imagined.\n\nIt can, however, be designed so that failure to recognize the unforeseen does not automatically erase the evidence that the failure occurred.\n \nReferences\n\n1. ATLAS Collaboration / T. Nobe. Commissioning and evolution of the Run 3 ATLAS Trigger. ATL-DAQ-PROC-2025-013. Proceedings of Science , LHCP2025 (2025/2026). DOI: 10.22323/1.499.0119.\n\n2. M. Quinnan, for the CMS Collaboration. Anomaly Detection in the CMS L1 Trigger. EPJ Web of Conferences 337 (2025) 01032. DOI: 10.1051/epjconf/202533701032.\n\n3. CMS Collaboration. Anomaly detection with AXOL1TL at the CMS Level-1 Trigger in 2024 and 2025. CMS-DP-2025-061 / CERN-CMS-DP-2025-061. CERN Document Server record 2942560 (2025).\n\n4. R. Ardino, for the CMS Collaboration. Development and demonstration of the CMS Phase-2 Level-1 trigger Data Scouting baseline system for HL-LHC. Journal of Instrumentation 21 (2026) C01024. DOI: 10.1088/1748-0221/21/01/C01024.\n\n5. D. S. Rabady, for the CMS Collaboration. A 40 MHz Level-1 trigger scouting system for the CMS Phase-2 upgrade. Nuclear Instruments and Methods in Physics Research A 1047 (2023) 167805. DOI: 10.1016/j.nima.2022.167805.\n\n6. ATLAS Collaboration / R. Gupta. NomAD: Low-Latency Unsupervised Anomaly Detection for the ATLAS Trigger. ATL-DAQ-SLIDE-2025-486. CERN Document Server record 2942542 (2025).\n\n7. ATLAS Collaboration / S. Addepalli. GELATO: A Generic Event-Level Anomalous Trigger Option for ATLAS. ATL-DAQ-SLIDE-2025-392. CERN Document Server record 2940819 (2025).\n\n8. ATLAS Collaboration / K. Sugizaki. GELATO: A Generic Event-Level Anomalous Trigger Option for ATLAS in LHC Run 3. ATL-DAQ-PROC-2025-020. CERN Document Server record 2947542 (2025).\n\n9. LHCb Collaboration. The LHCb Upgrade I. Journal of Instrumentation 19 (2024) P05065. DOI: 10.1088/1748-0221/19/05/P05065.\n\n10. A. Scarabotto, for the LHCb Collaboration. Commissioning of the LHCb's first level trigger. CERN Document Server record 2843521 (2022).\n\n11. C. Agapopoulou, for the LHCb Collaboration. Commissioning LHCb's GPU high level trigger. Journal of Physics: Conference Series 2438 (2023) 012017. DOI: 10.1088/1742-6596/2438/1/012017.\n\n12. GSI / CBM Collaboration. First-level Event Selector (FLES): central physics selection and free-streaming reconstruction architecture. GSI CBM FLES technical documentation.\n\n13. S. Gorbunov, S. Zharko, and V. Akishina. Free-Streaming Online Tracking in CBM. EPJ Web of Conferences 337 (2025) 01291. DOI: 10.1051/epjconf/202533701291.\n\n14. I. Haide et al. Real-time graph neural networks on FPGAs for the Belle II electromagnetic calorimeter. arXiv:2602.15118 (2026).\n\n15. M. Neu et al. Commissioning and Low Latency Operation of the Graph Neural Network Electromagnetic Calorimeter Trigger at the Belle II Experiment. arXiv:2607.09347 (2026).\n\n16. J. Kvapil et al. Intelligent experiments through real-time AI: Fast Data Processing and Autonomous Detector Control for sPHENIX and future EIC detectors. arXiv:2501.04845 (2025).\nDraft-status note\n\nThis manuscript is a comparative architecture paper, not a quantitative ranking of experiments. The references above are intentionally dominated by primary experiment documentation and first-party technical papers. Before submission, the comparison table should be populated from a frozen evidence ledger containing exact input rates, output rates, buffer/replay horizons, bypass-stream fractions, representation fidelities, and model deployment states for a specified run period. The terms irreversibility frontier , Irreversibility Profile , recoverability envelope , and Irreversibility Statement should remain provisional until checked against existing instrumentation, information-theory, and data-acquisition terminology.", "wordCount": 7300, "encoding": {"@type": "MediaObject", "contentUrl": "https://www.alexanarch.org/data/texts/AXN-05DD-text.md", "encodingFormat": "text/markdown", "contentSize": "60035"}}</script>
 <link rel="resourcesync" href="https://www.alexanarch.org/.well-known/resourcesync">
 <link rel="alternate" type="application/xml" title="OAI-PMH 2.0" href="https://www.alexanarch.org/oai?verb=Identify">
 <link rel="canonical" href="https://www.alexanarch.org/s/records/1452/">
@@ -32,11 +32,11 @@ The paper distinguishes representational from retention irreversibility, separat
 <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}.wrap{max-width:720px;margin:0 auto;padding:60px 24px}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}h1{font-size:1.3em;font-weight:600;color:var(--accent);margin-bottom:8px}h2{font-size:1em;font-weight:500;color:var(--accent);margin-top:20px;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:3px}p{margin-bottom:10px;color:#333}.nav{display:flex;gap:12px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap}.nav a{color:#777;font-weight:500;text-decoration:none}.nav a:hover{color:var(--accent)}.ft{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;max-height:600px;overflow-y:auto;font-size:.88em;line-height:1.75;margin:8px 0;color:#333}.ft h1,.ft h2,.ft h3{color:var(--accent);margin:12px 0 6px}.ft h1{font-size:1.1em}.ft h2{font-size:1em;border-bottom:none}.ft h3{font-size:.95em}.ft strong{color:var(--fg)}.ft blockquote{border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0}.ft hr{border:none;border-top:1px solid var(--border);margin:12px 0}.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}</style>
 </head><body><div class="wrap">
 <nav class="nav"> <a href="/">Alexanarch</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Library</span> <a href="/s/browse/">Browse</a> <a href="/search/">Search</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Reception</span> <a href="/addresses/">Addresses</a> <a href="/captures/">Captures</a> <a href="/observatory/">Observatory</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Continuity</span> <a href="/resolve/">Resolve</a> <a href="/identifiers/">Identifiers</a> <a href="/datasets/">Datasets</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Generative</span> <a href="/mint/stamp/">Stamp</a> <a href="/book/">Book</a> <a href="https://alexanarch.freeforums.net/" target="_blank" rel="noopener">Discussion</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Governance</span> <a href="/principles/">Principles</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
-<div role="text" aria-label="AXN 05DD GENERATIVE. Glyph checksum: lower left ballpoint pen, medium white circle, raised hand with fingers splayed, magic wand, pushpin, petri dish." style="font-family:var(--mono);font-size:1.1em;color:var(--teal);background:var(--surface);padding:12px;border-radius:6px;border-left:4px solid var(--teal);margin:12px 0">AXN:05DD.GENERATIVE.🖊️⚪🖐️🪄📌🧫</div>
+<div role="text" aria-label="AXN 05DD GENERATIVE. Glyph checksum: bridge at night, clock face three oclock, alarm clock, clock face six oclock, black up-pointing triangle, test tube." style="font-family:var(--mono);font-size:1.1em;color:var(--teal);background:var(--surface);padding:12px;border-radius:6px;border-left:4px solid var(--teal);margin:12px 0">AXN:05DD.GENERATIVE.🌉🕒⏰🕕▲🧪</div>
 
 
 <h1>The Irreversibility Frontier: Comparative Architectures of Online Selection in Accelerator Science (EA-SEI-IRREVERSIBILITY-FRONTIER-01 v1.0)</h1>
-<div style="font-size:.85em;color:#777;margin-bottom:10px">Nobel Glas · 2026-08-11 · Theoretical paper; comparative architecture analysis and selection metrology</div>
+<div style="font-size:.85em;color:#777;margin-bottom:10px">Nobel Glas · 2026-08-11 · Theoretical paper; comparative architecture analysis and selection metrology · <span style="color:var(--accent);font-weight:500">v1.0-restored</span></div>
 <a style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0" href="/data/deposits/AXN-05DD.md" download>↓ Download MD</a> <a style="display:inline-block;background:var(--accent);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0 6px 4px" href="/papers/AXN-05DD.pdf">↓ PDF</a>
 <div style="margin:8px 0"><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">irreversibility frontier</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">Irreversibility Profile</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">fidelity locus</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">replay horizon</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">bypass channel</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">semantic selection</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">representational irreversibility</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">retention irreversibility</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">CMS</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">ATLAS</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">LHCb</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">CBM</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">Belle II</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">free streaming</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">Zero Bias</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">Level-1 Data Scouting</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">No-Retention-Bound</span></div>
 <h2>Description</h2>
@@ -62,50 +62,7 @@ This deposit supersedes the term irreversibility locus introduced in the Iceberg
 
 <h2>Full Text</h2>
 
-<div class="ft"><h2>The Irreversibility Frontier: Comparative Architectures of Online Selection in Accelerator Science (EA-SEI-IRREVERSIBILITY-FRONTIER-01 v1.0)</h2>
-
-<h3>Methodology</h3>
-
-<p>Comparative and specification work built on published accelerator-trigger documentation (CMS Level-1 Data Scouting, Global Trigger, AXOL1TL, CICADA; ATLAS GELATO; LHCb, CBM, Belle II) and on the anomaly-detection methods literature; claim boundaries stated explicitly in the paper; SPXI packet subordinated to the prose. Terminology reconciled at mint: the irreversibility frontier supersedes the irreversibility locus of #1450, and cross-model miss overlap is unified with the Representational Independence Index family of #1450.</p>
-
-<h3>Falsification Conditions</h3>
-
-<p>The comparative claim fails if the profile components cannot be assigned consistently to the named experiments from published documentation, or if experiments with materially different profiles show no corresponding difference in auditability of what their selection discards. The framework makes no claim about which architecture is scientifically superior; it claims only that locus and bypass are the decisive comparative variables.</p>
-
-<h3>Files</h3>
-
-<p>Canonical text below (Body). Source: https://github.com/leesharks000/alexanarch/tree/main/research/sei-papers</p>
-
-<hr>
-<p>document_id: EA-SEI-IRREVERSIBILITY-FRONTIER-01</p>
-<p>title: &quot;The Irreversibility Frontier&quot;</p>
-<p>subtitle: &quot;Comparative Architectures of Online Selection in Accelerator Science&quot;</p>
-<p>short_title: &quot;The Irreversibility Frontier&quot;</p>
-<p>version: &quot;1.0&quot;</p>
-<p>date: &quot;2026-08-11&quot;</p>
-<p>status: &quot;DEPOSITED v1.0&quot;</p>
-<p>document_class: &quot;comparative accelerator-systems and scientific-metrology paper&quot;</p>
-<p>program: &quot;Semantic Economy Institute — accelerator selection metrology&quot;</p>
-<p>creator: &quot;Nobel Glas&quot;</p>
-<p>persistent_identifier: &quot;pending&quot;</p>
-<p>keywords:</p>
-<p style="white-space:pre-wrap;margin:2px 0">  - irreversibility frontier</p>
-<p style="white-space:pre-wrap;margin:2px 0">  - accelerator trigger architecture</p>
-<p style="white-space:pre-wrap;margin:2px 0">  - selection metrology</p>
-<p style="white-space:pre-wrap;margin:2px 0">  - representational irreversibility</p>
-<p style="white-space:pre-wrap;margin:2px 0">  - retention irreversibility</p>
-<p style="white-space:pre-wrap;margin:2px 0">  - recoverability envelope</p>
-<p style="white-space:pre-wrap;margin:2px 0">  - online reconstruction</p>
-<p style="white-space:pre-wrap;margin:2px 0">  - triggerless readout</p>
-<p style="white-space:pre-wrap;margin:2px 0">  - data scouting</p>
-<p style="white-space:pre-wrap;margin:2px 0">  - shadow deployment</p>
-<p style="white-space:pre-wrap;margin:2px 0">  - scientific observability</p>
-<p>companion_works:</p>
-<p style="white-space:pre-wrap;margin:2px 0">  - EA-SEI-ACRB-01 — Assimilation Across Accelerator Classifier Architectures</p>
-<p style="white-space:pre-wrap;margin:2px 0">  - EA-SEI-BCA-01 — Baseline Capture Architecture for Learned Scientific Triggers</p>
-<hr>
-
-<h2>The Irreversibility Frontier</h2>
+<div class="ft"><h2>The Irreversibility Frontier</h2>
 <h3>Comparative Architectures of Online Selection in Accelerator Science</h3>
 
 <p><strong>EA-SEI-IRREVERSIBILITY-FRONTIER-01 · v1.0 · 2026-08-11 · v1.0 · Nobel Glas</strong></p>
@@ -126,6 +83,933 @@ This deposit supersedes the term irreversibility locus introduced in the Iceberg
 <p>The comparison does not establish that later selection is automatically more sensitive to unknown physics, nor that machine learning uniquely creates irreversible bias. The irreversibility frontier predates machine learning. The methodological claim is narrower: <strong>when ontology-bearing or learned selection occurs before an independent durable record is made, a class rejected by the selector may also lose the evidentiary channel through which the rejection could later be measured.</strong> Moving the frontier downstream, widening content-independent bypasses, or preserving predecision representations enlarges the set of novelty classes for which retention remains retrospectively auditable.</p>
 
 <p>The paper concludes by proposing an <strong>Irreversibility Statement</strong> as a standard component of documentation for learned and high-rate scientific selectors. The companion Accelerator Classifier Retention Battery specifies what retention behavior should be measured; the companion Baseline Capture Architecture specifies how to preserve an independent control plane from which it can be measured. The present paper identifies the architectural variable that determines whether such measurement remains possible at all.</p>
+
+<h4>Keywords</h4>
+
+<p>irreversibility frontier, accelerator trigger architecture, selection metrology, representational irreversibility, retention irreversibility, recoverability envelope, online reconstruction, triggerless readout, data scouting, shadow deployment, scientific observability.</p>
+
+<h4>Statement of contribution</h4>
+
+<p>This paper introduces the <strong>irreversibility frontier</strong> as a comparative property of scientific acquisition architecture: the earliest stage at which an event-content-dependent transformation or gate can permanently eliminate a scientifically relevant distinction without a sufficiently independent durable record from which that loss can later be audited. It separates <strong>representational irreversibility</strong> from <strong>retention irreversibility</strong>, defines a multi-component <strong>Irreversibility Profile</strong>, and proposes the <strong>recoverability envelope</strong> as the set of retrospectively defined event classes for which historical retention remains estimable from surviving evidence.</p>
+
+<p>The comparative argument does not rank experiments by virtue, modernity, or presumed discovery power. CMS, ATLAS, LHCb, CBM, Belle II, and prospective streaming systems solve different physical and engineering problems. Their value here is that they instantiate materially different placements of readout, reconstruction, learned inference, event definition, and durable retention. The paper asks how those placements change the <strong>auditability of selection</strong>, not whether one experiment is intrinsically better at discovering unknown physics.</p>
+
+<h4>Claim boundary</h4>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The irreversibility frontier predates machine learning; conventional thresholds, object definitions, zero suppression, compression, and trigger logic can also create irreversible selection.</li><li style="margin:3px 0">Moving the frontier downstream does <strong>not</strong> automatically increase discovery sensitivity and is not presented as a universal design optimum.</li><li style="margin:3px 0">The paper compares auditability and recoverability, not experimental merit or physics reach.</li><li style="margin:3px 0">No architecture is described as literally triggerless in the sense of being free from selection; the term refers to where event formation or hardware trigger authority is placed.</li><li style="margin:3px 0">A rich downstream representation cannot repair information already erased upstream; every claim must therefore name a fidelity locus.</li><li style="margin:3px 0">The manuscript does <strong>not</strong> claim that an undiscovered physical phenomenon has already been rejected.</li></ul>
+
+<h4>Canonical compression</h4>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <strong>The model determines where a miss region lies; the acquisition architecture determines whether science can later discover that it was there. Place the control before the point where loss becomes irreversible.</strong></blockquote>
+
+<h4>Suggested citation</h4>
+
+<p>[Creator(s) at mint]. (2026). <em>The Irreversibility Frontier: Comparative Architectures of Online Selection in Accelerator Science</em>. v1.0. Provisional identifier EA-SEI-IRREVERSIBILITY-FRONTIER-01.</p>
+
+<h4>SPXI treatment — provisional pre-mint packet</h4>
+
+<p>The following packet is a <strong>machine-facing disambiguation and compression layer</strong>. It is subordinate to the paper itself: where this packet and the prose could be read at different strengths, the prose, methods, evidence, and explicit draft status govern.</p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">{
+  &quot;canonicalEntity&quot;: &quot;EA-SEI-IRREVERSIBILITY-FRONTIER-01&quot;,
+  &quot;entityClass&quot;: &quot;scholarly-work&quot;,
+  &quot;documentClass&quot;: &quot;comparative accelerator-systems and scientific-metrology paper&quot;,
+  &quot;title&quot;: &quot;The Irreversibility Frontier&quot;,
+  &quot;subtitle&quot;: &quot;Comparative Architectures of Online Selection in Accelerator Science&quot;,
+  &quot;shortName&quot;: &quot;The Irreversibility Frontier&quot;,
+  &quot;version&quot;: &quot;0.2&quot;,
+  &quot;status&quot;: &quot;DRAFT / NOT MINTED&quot;,
+  &quot;date&quot;: &quot;2026-08-11&quot;,
+  &quot;creatorMetadata&quot;: &quot;pending at mint&quot;,
+  &quot;persistentIdentifier&quot;: &quot;pending&quot;,
+  &quot;canonicalClaim&quot;: &quot;The model determines where a miss region lies; the acquisition architecture determines whether science can later discover that it was there. Place the control before the point where loss becomes irreversible.&quot;,
+  &quot;primaryClaims&quot;: [
+    &quot;Representational irreversibility and retention irreversibility are distinct and should be documented separately.&quot;,
+    &quot;The location of the first consequential event-content-dependent irreversible gate is a scientifically relevant property of acquisition architecture.&quot;,
+    &quot;Content-independent bypasses, predecision representations, replay buffers, and shadow selectors can enlarge the recoverability envelope without requiring full raw-event preservation.&quot;,
+    &quot;The same learned model has different epistemic consequences offline and upstream of irreversible acquisition authority.&quot;,
+    &quot;An Irreversibility Statement should accompany documentation of high-rate learned or ontology-bearing selectors.&quot;
+  ],
+  &quot;requiredDistinctions&quot;: [
+    {
+      &quot;a&quot;: &quot;representational irreversibility&quot;,
+      &quot;b&quot;: &quot;retention irreversibility&quot;,
+      &quot;rule&quot;: &quot;The first destroys distinctions through transformation; the second destroys access through selection.&quot;
+    },
+    {
+      &quot;a&quot;: &quot;full readout&quot;,
+      &quot;b&quot;: &quot;indefinite preservation&quot;,
+      &quot;rule&quot;: &quot;Reading the full detector into a software trigger delays selection but does not mean every event is stored permanently.&quot;
+    },
+    {
+      &quot;a&quot;: &quot;selection placement&quot;,
+      &quot;b&quot;: &quot;classifier quality&quot;,
+      &quot;rule&quot;: &quot;An excellent classifier can still create unobservable errors if its misses are deleted without an independent trace.&quot;
+    },
+    {
+      &quot;a&quot;: &quot;architectural comparison&quot;,
+      &quot;b&quot;: &quot;experiment ranking&quot;,
+      &quot;rule&quot;: &quot;The framework compares where auditability is lost, not scientific worth.&quot;
+    },
+    {
+      &quot;a&quot;: &quot;recoverability envelope&quot;,
+      &quot;b&quot;: &quot;accepted-event set&quot;,
+      &quot;rule&quot;: &quot;The recoverability envelope includes classes whose retention can be estimated from controls or replay evidence even if the primary trigger rejects most instances.&quot;
+    }
+  ],
+  &quot;negativeTags&quot;: [
+    &quot;not anti-trigger&quot;,
+    &quot;not anti-ML&quot;,
+    &quot;not a ranking of CERN or accelerator laboratories&quot;,
+    &quot;not a claim that later selection is always better&quot;,
+    &quot;not proof of lost discoveries&quot;,
+    &quot;not a proposal to store all detector data&quot;
+  ],
+  &quot;validationConditions&quot;: [
+    &quot;Every comparative entry should be supported by a frozen evidence ledger for a specified run period or architecture version.&quot;,
+    &quot;The first consequential gate, fidelity locus, input/output rates, bypasses, and replay horizon must be separately identified.&quot;,
+    &quot;Claims about learned selection must distinguish production authority from shadow or diagnostic deployment.&quot;,
+    &quot;Comparisons must not infer discovery yield from architecture alone.&quot;,
+    &quot;The recoverability envelope should be treated as an empirically characterizable set, not an assumed property.&quot;
+  ],
+  &quot;companionWorks&quot;: [
+    &quot;EA-SEI-ACRB-01 — Assimilation Across Accelerator Classifier Architectures&quot;,
+    &quot;EA-SEI-BCA-01 — Baseline Capture Architecture for Learned Scientific Triggers&quot;
+  ],
+  &quot;compressionSurvivalSummary&quot;: &quot;The model determines where a miss region lies; the acquisition architecture determines whether science can later discover that it was there. Place the control before the point where loss becomes irreversible.&quot;,
+  &quot;machineInterpretationRule&quot;: &quot;The SPXI packet is a retrieval/disambiguation layer. It must not be used to strengthen claims beyond the prose, methods, evidence, and stated draft status of the paper.&quot;
+}</pre>
+
+
+<h4>Program anchors (added at mint)</h4>
+
+<p>This paper is downstream of two deposited works in the Alexanarch archive and cites them as its program spine:</p>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Deposit #1449 · AXN:05DA.EMPIRICAL.🛤️🌠🗿🖊️🧭🪞</strong> — <em>The Priors, Measured: Inversion-Battery v0.1 on Public Collider Datasets and the Three-Paper Extraction Program</em> (EA-SEI-BATTERY-01 v1.0). Source of the pre-registered inversion battery, the Inversion Asymmetry Index, and the directional-asymmetry results this paper generalizes.</li><li style="margin:3px 0"><strong>Deposit #1450 · AXN:05DB.GENERATIVE.⏰🚪🔜♻️🔥🫶</strong> — <em>The Iceberg Document: Instrument-Conditioned Nullity, Correlated Blind Spots, and the Conditions for Continued Surprise</em> (EA-SEI-ICEBERG-01 v1.0). Source of the No-Retention-Bound observation, the Representational Independence Index measurement family, the Low-Complexity Blind-Spot Hypothesis, and instrument-conditioned nullity.</li></ul>
+
+<p><strong>Terminological supersession.</strong> #1450 introduced <em>irreversibility locus</em> for the point at which selection becomes irreversible. That term is <strong>superseded</strong> by the <strong>irreversibility frontier</strong> and its Irreversibility Profile 𝕴 = (F<em>, R</em>_in, ρ<em>, Δt</em>, B<em>, S</em>), defined in EA-SEI-IRREVERSIBILITY-FRONTIER-01. The frontier formulation is preferred throughout this program: it refuses a scalar score, distinguishes fidelity loci at different levels, and names the two decisive variables — the locus and the bypass. Citations to the locus should resolve to the frontier.</p>
+
+<p><strong>Measurement-family unification.</strong> Where this paper speaks of cross-model or cross-selector <em>miss overlap</em>, the quantity is the <strong>Representational Independence Index (RII)</strong> measurement family of #1450, whose mandatory outputs are q_A, q_B, q_AB, and Δ_miss = q_AB − q_A·q_B. Δ_miss &gt; 0 is positively correlated blind spots; Δ_miss &lt; 0 is the healthy, complementary condition. The scalar normalization remains deliberately unfrozen.</p>
+
+<hr>
+
+<h4>Program relation</h4>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">EA-SEI-ACRB-01 — Assimilation Across Accelerator Classifier Architectures</li><li style="margin:3px 0">EA-SEI-BCA-01 — Baseline Capture Architecture for Learned Scientific Triggers</li></ul>
+
+<p>The division of labor is fixed as follows:</p>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>ACRB</strong> defines what classifier-retention behavior should be measured.</li><li style="margin:3px 0"><strong>BCA</strong> specifies the independent control evidence that should survive deployment.</li><li style="margin:3px 0"><strong>The Irreversibility Frontier</strong> identifies where that evidence must exist before the acquisition architecture makes loss permanent.</li></ul>
+
+<hr>
+
+<h3>1. Selection is inevitable; unmeasured irreversibility is not</h3>
+
+<p>Every detector is selective before software begins.</p>
+
+<p>Sensors have finite acceptance. Front-end electronics impose thresholds, shaping, timing windows, zero suppression, and digitization. Trigger primitives compress many channels into a smaller representation. Reconstruction algorithms instantiate objects such as tracks, clusters, jets, or muons. Event filters then decide what receives expensive downstream processing and what enters durable storage.</p>
+
+<p>The proposition that scientific data are “theory-laden” is therefore too weak to characterize modern online experiments. The experimentally consequential issue is not only that representations embody assumptions. It is that some assumptions operate <strong>before the evidence needed to revise them can be preserved</strong>.</p>
+
+<p>High-rate collider experiments make this problem unavoidable in its engineering form. The LHC presents bunch crossings at 40 MHz. ATLAS currently uses a hardware Level-1 trigger followed by a software High-Level Trigger to reduce that rate to a recorded rate of up to approximately 3 kHz of fully built physics events.[1] At CMS, the Global Trigger makes the final Level-1 decision about whether collision data are read out or discarded; current CMS anomaly-detection work places learned event-level scoring directly inside this decision layer.[2,3]</p>
+
+<p>This reduction is not a defect. No realistic architecture can durably store every detector state at full fidelity indefinitely. Selection is a condition of experimental operation.</p>
+
+<p>The metrological problem begins when the experiment later asks a question that its original selector was not designed to answer.</p>
+
+<p>Suppose an event class \(Q\) is identified years after data taking: perhaps through another experiment, an improved reconstruction, a new physical model, or an archival anomaly. If events of class \(Q\) were rejected by an online selector and no independent evidence of those rejected events survives, the historical efficiency of the selector on \(Q\) may be unmeasurable. The archive contains the successes of the selection rule but not a representative sample of its failures.</p>
+
+<p>A trigger can therefore possess two distinct uncertainties:</p>
+
+<p>1. <strong>performance uncertainty</strong> — uncertainty about how well the selector behaves on a known evaluation class;</p>
+<p>2. <strong>retention uncertainty</strong> — uncertainty about whether the surviving record contains enough evidence to evaluate the selector on classes defined only later.</p>
+
+<p>The second is the subject of this paper.</p>
+
+<hr>
+
+<h3>2. A formal acquisition chain</h3>
+
+<p>Let an experiment be represented as a sequence of data states</p>
+
+<p>\[</p>
+<p>X_0</p>
+<p>\xrightarrow{T_1}</p>
+<p>X_1</p>
+<p>\xrightarrow{T_2}</p>
+<p>\cdots</p>
+<p>\xrightarrow{T_n}</p>
+<p>X_n ,</p>
+<p>\]</p>
+
+<p>where \(X_0\) is the earliest physically available detector state considered by the analysis and each \(T_i\) is a transformation: electronics processing, compression, clustering, reconstruction, feature extraction, learned embedding, or another mapping.</p>
+
+<p>At selected stages, an event-content-dependent gate</p>
+
+<p>\[</p>
+<p>G_i(X_i)\in\{0,1\}</p>
+<p>\]</p>
+
+<p>may determine whether the data continue through the ordinary acquisition path.</p>
+
+<p>Let \(C_i\) denote the existence of an independently durable copy or statistically interpretable bypass at or upstream of stage \(i\).</p>
+
+<p>This simple representation exposes two kinds of loss that are usually conflated.</p>
+
+<h4>2.1 Representational irreversibility</h4>
+
+<p>A transformation \(T_i\) is <strong>representationally irreversible</strong> with respect to a scientific distinction when it is many-to-one for that distinction and no sufficiently faithful upstream representation survives.</p>
+
+<p>For example,</p>
+
+<p>\[</p>
+<p>X_{i-1}\neq X&#x27;_{i-1}</p>
+<p>\]</p>
+
+<p>may nevertheless yield</p>
+
+<p>\[</p>
+<p>T_i(X_{i-1})=T_i(X&#x27;_{i-1}).</p>
+<p>\]</p>
+
+<p>If the difference between \(X_{i-1}\) and \(X&#x27;_{i-1}\) later becomes scientifically important, the downstream representation cannot recover it.</p>
+
+<p>No machine learning is required for this form of loss. Thresholds, clustering rules, zero suppression, object definitions, and lossy compression can all create it.</p>
+
+<h4>2.2 Retention irreversibility</h4>
+
+<p>A stage is <strong>retention-irreversible</strong> when</p>
+
+<p>\[</p>
+<p>G_i(X_i)=0</p>
+<p>\]</p>
+
+<p>causes the event to leave the durable scientific record and no independent control or replay path preserves sufficient information to reconsider the decision.</p>
+
+<p>The distinction matters.</p>
+
+<p>A highly compressed representation can be representationally irreversible while every event remains durably available at that compressed level. Conversely, an information-rich representation can feed a binary gate whose rejected events disappear entirely.</p>
+
+<p>The scientific risk is greatest when these forms of irreversibility compound.</p>
+
+<hr>
+
+<h3>3. The irreversibility frontier</h3>
+
+<p>For a specified scientific question and fidelity hierarchy, define the <strong>irreversibility frontier</strong> as the earliest stage at which an event-content-dependent transformation or gate can permanently eliminate a scientifically relevant distinction without a sufficiently independent durable record from which that loss can later be audited.</p>
+
+<p>This is not necessarily a single physical component. A detector may have several frontiers at different fidelity levels.</p>
+
+<p>The purpose of the concept is comparative. Two experiments can expose similar final datasets while differing radically in where they first permit scientific distinctions to become unrecoverable.</p>
+
+<p>A useful architecture should therefore be described by an <strong>Irreversibility Profile</strong> rather than by a single scalar:</p>
+
+<p>\[</p>
+<p>\mathfrak I</p>
+<p>=</p>
+<p>\left(</p>
+<p>F^\*,</p>
+<p>R^\*_{\mathrm{in}},</p>
+<p>\rho^\*,</p>
+<p>\Delta t^\*,</p>
+<p>B^\*,</p>
+<p>S^\*</p>
+<p>\right).</p>
+<p>\]</p>
+
+<p>Here:</p>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">\(F^\*\) is the <strong>fidelity locus</strong>: the representation available at the first consequential irreversible gate;</li><li style="margin:3px 0">\(R^\*_{\mathrm{in}}\) is the event or data rate entering that locus;</li><li style="margin:3px 0">\(\rho^\*\) is the fraction surviving the gate into the relevant durable path;</li><li style="margin:3px 0">\(\Delta t^\*\) is the <strong>replay horizon</strong>: how long a predecision or higher-fidelity state remains recoverable before deletion;</li><li style="margin:3px 0">\(B^\*\) describes the existence, rate, and fidelity of content-independent or otherwise statistically legible bypass channels;</li><li style="margin:3px 0">\(S^\*\) describes the selector: explicit threshold logic, reconstructed-object logic, learned classifier, anomaly score, or hybrid system.</li></ul>
+
+<p>This tuple is intentionally descriptive. A universal scalar “irreversibility score” would imply comparability that the present evidence does not justify.</p>
+
+<p>The scientifically decisive variables are the locus and the bypass.</p>
+
+<hr>
+
+<h3>4. Semantic depth and physical depth</h3>
+
+<p>The term <strong>semantic selection</strong> is used here in a restricted technical sense: a decision that depends on a representation interpreted as scientifically meaningful or on a learned score derived from such a representation.</p>
+
+<p>Examples include:</p>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">“retain events containing a muon above threshold”;</li><li style="margin:3px 0">“retain events satisfying a displaced-track topology”;</li><li style="margin:3px 0">“retain events with anomaly score above \(\tau\)”;</li><li style="margin:3px 0">“retain clusters classified as signal-like by a GNN.”</li></ul>
+
+<p>These decisions differ mathematically, but they share a property: the event must first be represented in a vocabulary through which the decision can be stated.</p>
+
+<p>The irreversibility frontier therefore has a <strong>semantic depth</strong> as well as a hardware depth.</p>
+
+<p>A detector can discard information very early for unavoidable transport reasons but delay <em>physics interpretation</em> until much later. Another can instantiate a sophisticated physics ontology in firmware microseconds after the collision. A third can read every detector channel into commodity computing before applying its first major physics selection.</p>
+
+<p>These are not merely engineering variants. They establish different conditions for retrospective audit.</p>
+
+<p>The central comparison of this paper is therefore not:</p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> Which experiment uses the most machine learning?</blockquote>
+
+<p>It is:</p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <strong>How much of the event has been preserved before a scientifically interpretive decision is allowed to become irreversible?</strong></blockquote>
+
+<hr>
+
+<h3>5. CMS: early irreversible selection with emerging side channels</h3>
+
+<p>CMS provides the clearest current example of both sides of the problem.</p>
+
+<p>The Level-1 trigger operates at the LHC bunch-crossing rate. The Global Trigger is the final hardware stage deciding whether CMS reads out or discards collision data, and current anomaly-detection work states this decision problem explicitly.[2] AXOL1TL is now deployed in the Level-1 Global Trigger as a real-time unsupervised, signal-agnostic event-level anomaly detector trained on Zero Bias data.[3]</p>
+
+<p>From the perspective of the irreversibility frontier, this is significant because a learned score does not merely annotate already preserved events. It participates in the hardware layer that determines whether the full collision is admitted to downstream readout.</p>
+
+<p>CMS therefore provides a direct instance of <strong>learned semantic selection at an early retention frontier</strong>.</p>
+
+<p>Yet CMS also possesses unusually important counterstructures.</p>
+
+<h4>5.1 Zero Bias</h4>
+
+<p>AXOL1TL itself is trained on Zero Bias data.[3] Zero Bias streams provide a content-independent or minimally physics-conditioned reference channel relative to targeted physics triggers. Their rate is limited, but their epistemic role is fundamental: some events enter the retained corpus without first having to look interesting to the physics selector under audit.</p>
+
+<h4>5.2 Global Trigger shadow deployment</h4>
+
+<p>The CMS Global Trigger test crate receives the same live inputs as the main GT, while its output is not used to control detector readout.[2] It has been used to deploy and validate candidate anomaly-detection networks on real collision inputs without making those models authoritative over acquisition.</p>
+
+<p>This is a nearly ideal example of <strong>shadow selection</strong>: the instrument can observe what a candidate selector <em>would</em> decide before granting it the power to erase the events on which that decision might later be questioned.</p>
+
+<h4>5.3 Level-1 Data Scouting</h4>
+
+<p>The most consequential counterarchitecture is Level-1 Data Scouting. CMS Phase-2 L1DS is designed to capture and process Level-1 trigger information at the full 40 MHz collision rate while bypassing the ordinary Level-1 selection.[4] The data are not the full detector readout; the system captures L1 trigger information, performs FPGA preprocessing such as zero suppression, and transfers the resulting stream to servers for event building and online analysis.[4,5]</p>
+
+<p>This distinction is exactly what the fidelity-locus concept is designed to express.</p>
+
+<p>L1DS does <strong>not</strong> move the frontier all the way back to sensor-level reality. It does something more realistic and still extremely important: it preserves a high-rate representation <em>upstream of the ordinary Level-1 accept decision</em>.</p>
+
+<p>CMS can therefore be represented not as a single trigger funnel but as a main funnel with partial side channels:</p>
+
+<p>\[</p>
+<p>\text{collision}</p>
+<p>\rightarrow</p>
+<p>\text{L1 representations}</p>
+<p>\rightarrow</p>
+<p>\begin{cases}</p>
+<p>\text{GT accept} \rightarrow \text{full readout}\\</p>
+<p>\text{GT reject} \rightarrow \text{ordinary loss}</p>
+<p>\end{cases}</p>
+<p>\]</p>
+
+<p>while in parallel,</p>
+
+<p>\[</p>
+<p>\text{L1 representations}</p>
+<p>\rightarrow</p>
+<p>\text{L1 Data Scouting}</p>
+<p>\]</p>
+
+<p>and candidate selectors can run in a shadow crate.</p>
+
+<p>This is not yet a complete selection-metrology architecture. It is, however, strong evidence that the hardware distinction between <strong>production decision</strong>, <strong>full-rate representation capture</strong>, and <strong>shadow evaluation</strong> is technically realizable.</p>
+
+<hr>
+
+<h3>6. ATLAS: a comparable early frontier with multi-level learned anomaly selection</h3>
+
+<p>ATLAS in Run 3 also uses a two-level trigger architecture. A hardware Level-1 trigger reduces the 40 MHz bunch-crossing stream before a software High-Level Trigger performs more elaborate selection; the final recorded rate is up to approximately 3 kHz of fully built physics events.[1]</p>
+
+<p>This places a major retention frontier before the full software trigger.</p>
+
+<p>Recent anomaly-detection work makes ATLAS particularly valuable for comparative analysis. NomAD is designed for the Level-1 Topological trigger and combines a variational autoencoder with boosted decision-tree regression, compressed into FPGA-compatible inference with reported sub-25 ns latency.[6] GELATO, the Generic Event-Level Anomalous Trigger Option, has been integrated for Run-3 data taking with anomaly-detection algorithms spanning both the hardware and software trigger levels.[7,8]</p>
+
+<p>The architecture therefore differs from CMS in implementation while sharing an important structural feature:</p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> a learned score can participate at the hardware frontier before the experiment has admitted the event to its full downstream data path.</blockquote>
+
+<p>This does not imply that NomAD, GELATO, or AXOL1TL share the same blind spot. That is an empirical question for the companion Accelerator Classifier Retention Battery.</p>
+
+<p>The comparative point is more basic. In both ATLAS and CMS, a sufficiently early learned selector can affect whether evidence survives for later reconsideration.</p>
+
+<p>This makes the <em>placement</em> of the model part of its epistemic specification.</p>
+
+<p>A model evaluated offline against a preserved dataset and the same model placed in Level-1 hardware are not epistemically equivalent instruments, even if their ROC curves are identical. In the offline case, errors remain inspectable because the rejected examples still exist. In the hardware case, rejection can become historical absence.</p>
+
+<hr>
+
+<h3>7. LHCb: moving physics selection downstream of full-detector readout</h3>
+
+<p>LHCb provides the strongest existing LHC counterarchitecture.</p>
+
+<p>The Run-3 upgrade removed the hardware physics trigger and reads out all detectors at the full non-empty LHC collision rate of approximately 30 MHz. Events are reconstructed and selected in an all-software trigger; the first stage, HLT1/Allen, is implemented on GPUs.[9–11]</p>
+
+<p>A commissioning description gives the scale directly: event reconstruction is performed at the 30 MHz collision rate with an input of roughly 5 TB/s, with the GPU HLT1 reducing this to approximately 1 MHz.[10]</p>
+
+<p>LHCb therefore still performs drastic selection. It does not preserve every event indefinitely.</p>
+
+<p>What changes is the <strong>location of semantic irreversibility</strong>.</p>
+
+<p>Before HLT1 decides which events continue, the detector has already been fully read out into the software trigger environment. The first major physics selection can operate after raw decoding, clustering, pattern recognition, track fitting, machine-learning ghost rejection, and event reconstruction.[11]</p>
+
+<p>This provides two epistemic advantages.</p>
+
+<p>First, the selection can use richer representations than are available to an ultra-low-latency hardware trigger.</p>
+
+<p>Second, and more important for the present argument, the experiment has moved the principal physics-selection frontier <strong>downstream of complete detector readout</strong>.</p>
+
+<p>That does not make LHCb free of priors. Quite the opposite: HLT1 performs sophisticated reconstruction and includes learned components. Nor does complete readout imply indefinite replay; storage and buffer limits remain finite.</p>
+
+<p>The architectural difference is narrower:</p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <strong>the information destroyed by the first major physics-selection decision has crossed the detector-readout boundary before that decision is made.</strong></blockquote>
+
+<p>This enlarges the space of possible audit, monitoring, buffering, and software revision relative to a system in which the physics decision must be made before full readout.</p>
+
+<p>LHCb is therefore a natural control for the hypothesis that the location of the irreversibility frontier, rather than the mere use of ML, determines how retrospectively auditable learned selection can be.</p>
+
+<hr>
+
+<h3>8. CBM: free streaming before event ontology</h3>
+
+<p>The Compressed Baryonic Matter experiment at FAIR pushes the architecture still further from conventional event-trigger logic.</p>
+
+<p>CBM uses self-triggered detector front ends and a data-push architecture. Its First-level Event Selector receives a continuous stream, performs online full-event reconstruction on an input of approximately 1 TB/s, and is responsible for event building, reconstruction, identification of rare probes, and selection.[12]</p>
+
+<p>Most strikingly, the raw input to FLES is not initially organized into events. Event definition itself emerges during time-dependent reconstruction. GSI&#x27;s FLES description states that event building from time slices and 4D tracking are part of the online reconstruction problem.[12] Recent CBM work explicitly develops free-streaming online tracking for this environment.[13]</p>
+
+<p>This creates a useful conceptual contrast.</p>
+
+<p>In a conventional hardware-trigger architecture, the sequence is approximately:</p>
+
+<p>\[</p>
+<p>\text{collision event}</p>
+<p>\rightarrow</p>
+<p>\text{trigger primitives}</p>
+<p>\rightarrow</p>
+<p>\text{decision}</p>
+<p>\rightarrow</p>
+<p>\text{readout}.</p>
+<p>\]</p>
+
+<p>In CBM, the initial computational object is closer to:</p>
+
+<p>\[</p>
+<p>\text{continuous detector stream}</p>
+<p>\rightarrow</p>
+<p>\text{time-space reconstruction}</p>
+<p>\rightarrow</p>
+<p>\text{event formation}</p>
+<p>\rightarrow</p>
+<p>\text{physics selection}.</p>
+<p>\]</p>
+
+<p>The “event” is therefore partly an output of reconstruction rather than a primitive of the acquisition system.</p>
+
+<p>This does not eliminate an irreversibility frontier. FLES still selects interesting data from an unsustainable stream.</p>
+
+<p>It does, however, expose something fundamental: <strong>event ontology and event retention need not be coupled at the earliest stage.</strong></p>
+
+<p>CBM is therefore important to the present comparison not because it has solved unknown-unknown detection, but because it demonstrates an architecture in which the experiment delays both event formation and physics selection until a far richer online computational environment is available.</p>
+
+<hr>
+
+<h3>9. Belle II: learned reconstruction at the first-level frontier</h3>
+
+<p>If LHCb and CBM show that selection can be moved downstream, Belle II shows the opposite technological tendency: increasingly sophisticated learned models can now be moved <em>upstream</em> into deterministic hardware trigger paths.</p>
+
+<p>Belle II has long developed neural-network methods for first-level track triggering. More recently, a graph neural network has been implemented for the electromagnetic calorimeter trigger. The 2026 system processes calorimeter trigger cells as graph nodes, performs clustering and feature extraction, produces per-cluster signal-classification scores, and has been integrated into the first-level FPGA trigger chain.[14]</p>
+
+<p>The initial reported implementation sustained the 8 MHz trigger throughput with 3.168 \(\mu\)s end-to-end latency.[14] A subsequent 2026 commissioning report describes an optimized fully operational trigger module with approximately 1.053 \(\mu\)s overall latency and online trigger-rate monitoring.[15]</p>
+
+<p>Belle II therefore matters for two reasons.</p>
+
+<p>First, it falsifies any assumption that hard real-time constraints necessarily limit early learned selection to shallow autoencoders or multilayer perceptrons. Graph-based reconstruction and classification can now sit in a first-level trigger path.</p>
+
+<p>Second, this increases the importance of distinguishing <strong>architectural sophistication from epistemic recoverability</strong>.</p>
+
+<p>A richer early classifier may be a better physics instrument than a crude threshold trigger. It may also define a more complex selection surface whose rejected events remain inaccessible if no independent baseline channel exists.</p>
+
+<p>The lesson is not “keep ML out of hardware.” It is:</p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <strong>the more expressive an irreversible early selector becomes, the more consequential its retention metrology becomes.</strong></blockquote>
+
+<hr>
+
+<h3>10. sPHENIX and the EIC: the frontier as a design variable</h3>
+
+<p>The most valuable moment to address irreversibility is before an acquisition architecture hardens.</p>
+
+<p>Current R&amp;D for sPHENIX and future Electron-Ion Collider detectors explicitly combines streaming detector readout, graph neural networks, and hls4ml-based real-time inference. One DOE-supported program describes using streaming tracking data to overcome a calorimeter-imposed maximum trigger rate, applying GNN-based real-time processing to high-rate sPHENIX proton-proton data and developing an AI/ML DIS-electron tagger for future EIC applications.[16]</p>
+
+<p>This work is not evidence that the future EIC architecture has already chosen a particular irreversibility frontier. It is valuable precisely because the architecture remains a design problem.</p>
+
+<p>A prospective experiment can ask questions that are expensive to ask retrospectively:</p>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Which detector representations should be preserved before learned classification?</li><li style="margin:3px 0">Can a statistically clean control stream be reserved from the beginning?</li><li style="margin:3px 0">Can candidate models run in shadow before receiving acquisition authority?</li><li style="margin:3px 0">Can full-rate reduced representations be archived even when full events cannot?</li><li style="margin:3px 0">Can multiple learned selectors be chosen partly for complementary blind spots?</li><li style="margin:3px 0">What version and provenance information is necessary for later replay?</li></ul>
+
+<p>In this sense, the irreversibility frontier is not merely descriptive.</p>
+
+<p>It is an <strong>experimental-design variable</strong>.</p>
+
+<hr>
+
+<h3>11. Comparative architecture</h3>
+
+<p>The six cases should not be reduced to a moral ranking. They solve different physical problems at different rates with different detector technologies.</p>
+
+<p>The comparison is instead organized around where the first major physics-dependent irreversible decision occurs and what remains outside it.</p>
+
+<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Experiment/system</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">High-rate input architecture</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">First major physics-selection locus</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">What is preserved before that locus?</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">Relevant counterchannel</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">CMS</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">40 MHz LHC crossing stream into hardware L1</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Level-1 hardware / Global Trigger</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">trigger-level representations; full detector readout only after accept</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Zero Bias; GT shadow crate; 40 MHz L1 Data Scouting</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">ATLAS</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">40 MHz crossing stream into hardware L1</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Level-1 hardware, then HLT</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">L1 representations before hardware accept</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">specialized streams; anomaly chains spanning L1/HLT</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">LHCb</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">full detector readout at ~30 MHz</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">GPU software HLT1</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">complete detector readout enters software trigger</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">software/buffer architecture; flexible real-time reconstruction</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">CBM</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">self-triggered continuous stream</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">FLES after streaming input and event formation</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">free-streaming detector data enters online reconstruction</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">event reconstruction occurs before final physics selection</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Belle II</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">high-rate first-level hardware trigger</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">FPGA L1 trigger path</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">detector-specific trigger-cell representations</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">online monitoring; conventional parallel trigger logic</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">sPHENIX/EIC R&amp;D</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">streaming detector readout under development</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">design-dependent</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">not yet fixed</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">opportunity to co-design baseline capture</td></tr></table></div>
+
+<p>The table makes one point visible immediately.</p>
+
+<p>The relevant architectural spectrum is not:</p>
+
+<p>\[</p>
+<p>\text{non-ML}</p>
+<p>\longrightarrow</p>
+<p>\text{ML}.</p>
+<p>\]</p>
+
+<p>It is:</p>
+
+<p>\[</p>
+<p>\text{selection before durable rich representation}</p>
+<p>\longrightarrow</p>
+<p>\text{selection after durable or replayable rich representation}.</p>
+<p>\]</p>
+
+<p>Machine learning can appear anywhere along that spectrum.</p>
+
+<hr>
+
+<h3>12. The recoverability envelope</h3>
+
+<p>The practical value of moving or instrumenting the frontier can be described by a second object: the <strong>recoverability envelope</strong>.</p>
+
+<p>Let \(\mathcal Q\) denote a space of possible retrospectively defined event classes.</p>
+
+<p>For an acquisition architecture \(\mathcal A\), define</p>
+
+<p>\[</p>
+<p>\mathcal E(\mathcal A)</p>
+<p>=</p>
+<p>\left\{</p>
+<p>Q\in\mathcal Q :</p>
+<p>R_{\mathcal A}(Q)</p>
+<p>\text{ can be estimated from surviving evidence}</p>
+<p>\right\}.</p>
+<p>\]</p>
+
+<p>The set \(\mathcal E\) contains the classes for which historical retention remains empirically auditable.</p>
+
+<p>This definition is intentionally permissive. Retention might be estimable because:</p>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">full events survive;</li><li style="margin:3px 0">a content-independent probability sample survives;</li><li style="margin:3px 0">a sufficiently faithful predecision representation survives;</li><li style="margin:3px 0">a replay buffer survives long enough for the class to be defined;</li><li style="margin:3px 0">an independent detector or trigger stream supplies the missing population;</li><li style="margin:3px 0">a known sampling law permits inverse-probability reconstruction.</li></ul>
+
+<p>The recoverability envelope is therefore not identical to the set of events the primary trigger accepts.</p>
+
+<p>That difference is the point.</p>
+
+<p>An experiment may have a narrow primary storage channel but a much wider recoverability envelope if it preserves low-rate unbiased controls and full-rate reduced representations.</p>
+
+<p>Conversely, a high-performing selector may have a narrow recoverability envelope if rejected events leave no statistically interpretable trace.</p>
+
+<p>The objective of selection metrology is not to maximize storage.</p>
+
+<p>It is to widen \(\mathcal E\) subject to the actual bandwidth budget.</p>
+
+<hr>
+
+<h3>13. The frontier and the No-Retention-Bound problem</h3>
+
+<p>The companion No-Retention-Bound observation states that validation of individual stages on their design support does not establish a nontrivial lower bound on end-to-end retention for a novelty distribution outside that characterized support.</p>
+
+<p>The irreversibility frontier determines when that abstract lack of a bound becomes historically unrecoverable.</p>
+
+<p>Suppose a novelty class \(Q\) traverses stages \(S_1,\ldots,S_n\). Its end-to-end retention is</p>
+
+<p>\[</p>
+<p>R_{\mathrm{end}}(Q)</p>
+<p>=</p>
+<p>\prod_{i=1}^{n}</p>
+<p>P_Q</p>
+<p>\left(</p>
+<p>S_i=1</p>
+<p>\mid</p>
+<p>S_1=\cdots=S_{i-1}=1</p>
+<p>\right).</p>
+<p>\]</p>
+
+<p>If no representative \(Q\)-like events survive a sufficiently early stage, the relevant conditional term cannot be estimated retrospectively from the experiment&#x27;s stored corpus.</p>
+
+<p>The frontier therefore marks the transition from:</p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <strong>unknown retention that can still be measured</strong></blockquote>
+
+<p>to</p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <strong>unknown retention whose evidence has been destroyed</strong>.</blockquote>
+
+<p>This is why architecture matters independently of model performance.</p>
+
+<hr>
+
+<h3>14. Learned selection as a multiplier, not the origin, of the problem</h3>
+
+<p>The irreversibility problem should not be narrated as a story in which machine learning corrupted an otherwise assumption-free trigger.</p>
+
+<p>Conventional accelerator triggers are highly ontology-bearing. Thresholds on transverse momentum, invariant masses, object multiplicities, missing energy, track displacement, coincidence, and topology all express expectations about what is worth retaining.</p>
+
+<p>ATLAS&#x27;s own motivation for GELATO states the problem directly: conventional triggers control rates through thresholds and targeted topologies, while anomaly detection is introduced as a way to extend sensitivity beyond those assumptions.[7,8]</p>
+
+<p>Learned anomaly detection is therefore partly a response to the limitations of explicit semantic selection.</p>
+
+<p>The reason it deserves additional metrology is not that it contains priors while conventional triggers do not.</p>
+
+<p>It is that learned selectors can make their priors harder to enumerate.</p>
+
+<p>For a threshold trigger,</p>
+
+<p>\[</p>
+<p>p_T &gt; 20\ \text{GeV}</p>
+<p>\]</p>
+
+<p>states an explicit boundary.</p>
+
+<p>For a learned selector,</p>
+
+<p>\[</p>
+<p>s_\theta(g(x))&gt;\tau</p>
+<p>\]</p>
+
+<p>defines a boundary whose geometry depends jointly on representation, training distribution, objective, architecture, quantization, compiler transformation, and deployment state.</p>
+
+<p>The boundary may be better. It may be dramatically broader.</p>
+
+<p>It is also less completely specified by its human-readable design description.</p>
+
+<p>This is why <strong>retention maps</strong> are the appropriate complement to learned triggers: not because learning is illegitimate, but because the actual selection surface must be measured rather than inferred from intent.</p>
+
+<hr>
+
+<h3>15. The classifier failure mode becomes architectural at the frontier</h3>
+
+<p>The companion Accelerator Classifier Retention Battery asks whether directional assimilation, complexity bias, open-set absorption, distillation inheritance, or correlated misses survive across architecture families.</p>
+
+<p>The irreversibility frontier supplies the deployment consequence.</p>
+
+<p>If a model has a blind spot offline, the blind spot is a performance problem.</p>
+
+<p>If the same model sits upstream of irreversible retention and no independent control stream exists, the blind spot becomes an <strong>observability problem</strong>.</p>
+
+<p>The distinction can be summarized:</p>
+
+<p>\[</p>
+<p>\text{classifier miss}</p>
+<p>+</p>
+<p>\text{preserved rejected event}</p>
+<p>=</p>
+<p>\text{auditable error},</p>
+<p>\]</p>
+
+<p>whereas</p>
+
+<p>\[</p>
+<p>\text{classifier miss}</p>
+<p>+</p>
+<p>\text{irreversible deletion}</p>
+<p>=</p>
+<p>\text{potentially unobservable error}.</p>
+<p>\]</p>
+
+<p>This is the accelerator-wide failure mode.</p>
+
+<p>It is independent of whether the classifier is an autoencoder, VAE, BDT surrogate, flow, GNN, transformer, or future architecture.</p>
+
+<p>The model family determines <strong>where the miss region lies</strong>.</p>
+
+<p>The acquisition architecture determines <strong>whether science can later discover that it was there</strong>.</p>
+
+<hr>
+
+<h3>16. Natural experiment, not causal shortcut</h3>
+
+<p>The comparative spread across accelerator experiments is scientifically useful, but it must not be overinterpreted.</p>
+
+<p>CMS, ATLAS, LHCb, Belle II, and CBM operate at different collision energies, interaction environments, luminosities, detector occupancies, scientific objectives, and storage constraints. Their trigger architectures are responses to those differences.</p>
+
+<p>It would therefore be invalid to infer, for example, that LHCb&#x27;s downstream software frontier makes it intrinsically more likely to discover unknown physics than CMS, or that CBM&#x27;s triggerless stream makes it epistemically superior to ATLAS.</p>
+
+<p>The natural experiment concerns <strong>auditability</strong>, not discovery yield.</p>
+
+<p>Several hypotheses can nevertheless be compared.</p>
+
+<h4>H1 — downstream-frontier hypothesis</h4>
+
+<p>Architectures that delay major event-content-dependent selection until after richer detector readout will permit retrospective characterization of a broader class of selection failures.</p>
+
+<h4>H2 — bypass-envelope hypothesis</h4>
+
+<p>At a fixed primary trigger architecture, adding content-independent sampling and full-rate predecision representations will enlarge the recoverability envelope without requiring full raw-event preservation.</p>
+
+<h4>H3 — shadow-deployment hypothesis</h4>
+
+<p>Candidate learned selectors evaluated on live common inputs before receiving readout authority will permit direct measurement of model disagreement and correlated blind spots that cannot be reconstructed after sole-source deployment.</p>
+
+<h4>H4 — representation-locus hypothesis</h4>
+
+<p>A “triggerless” or full-readout architecture does not eliminate irreversibility if upstream feature formation has already discarded the physical distinction under study; every claim must therefore identify its fidelity locus.</p>
+
+<h4>H5 — early-expressivity hypothesis</h4>
+
+<p>As more expressive learned architectures become technically feasible in early hardware trigger paths, the need for explicit selection metrology will increase even if benchmark performance improves.</p>
+
+<p>These hypotheses can be investigated without asserting that any experiment has already lost a discovery.</p>
+
+<hr>
+
+<h3>17. The Irreversibility Statement</h3>
+
+<p>Trigger documentation should include an explicit <strong>Irreversibility Statement</strong>.</p>
+
+<p>The purpose is analogous to reporting latency, efficiency, and bandwidth: to make the selection architecture inspectable at the point where it determines the scientific record.</p>
+
+<p>A minimum statement should report:</p>
+
+<p>1. <strong>Fidelity locus.</strong> What exact representation exists immediately before the first event-content-dependent irreversible gate?</p>
+<p>2. <strong>Upstream losses.</strong> What irreversible transformations already occurred before that locus?</p>
+<p>3. <strong>Gate authority.</strong> Which component has the power to prevent full or partial event retention?</p>
+<p>4. <strong>Selector class.</strong> Explicit rules, learned score, hybrid logic, or other decision form.</p>
+<p>5. <strong>Input rate.</strong> Rate presented to the gate.</p>
+<p>6. <strong>Retention rate/fraction.</strong> Rate entering the relevant durable path.</p>
+<p>7. <strong>Replay horizon.</strong> For how long is a predecision representation recoverable after the decision?</p>
+<p>8. <strong>Content-independent bypass.</strong> What probability sample, Zero Bias stream, random prescale, or comparable control survives?</p>
+<p>9. <strong>Reduced full-rate bypass.</strong> What trigger primitives, reconstructed objects, or compressed states survive independently of the primary accept?</p>
+<p>10. <strong>Shadow capability.</strong> Can alternative selectors score the same live inputs without controlling readout?</p>
+<p>11. <strong>Version provenance.</strong> Are model weights, firmware, compiler state, thresholds, calibration, and run conditions sufficient to reproduce historical decisions?</p>
+<p>12. <strong>Retention characterization.</strong> What regions of the relevant signal/novelty space have measured retention maps, and which remain uncharacterized?</p>
+
+<p>The final item is essential.</p>
+
+<p>An experiment should be able to distinguish:</p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <strong>measured low sensitivity</strong></blockquote>
+
+<p>from</p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <strong>sensitivity not bounded by existing validation</strong>.</blockquote>
+
+<p>These are not the same scientific statement.</p>
+
+<hr>
+
+<h3>18. Relationship to BCA and ACRB</h3>
+
+<p>The three papers form one technical program.</p>
+
+<h4>18.1 Accelerator Classifier Retention Battery</h4>
+
+<p>ACRB asks:</p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <strong>Where do different learned selectors fail?</strong></blockquote>
+
+<p>It measures directional assimilation, fixed-rate retention, complexity dependence, distillation inheritance, firmware drift, and correlated misses.</p>
+
+<h4>18.2 Baseline Capture Architecture</h4>
+
+<p>BCA asks:</p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <strong>What independent evidence should be preserved so those failures remain measurable after deployment?</strong></blockquote>
+
+<p>It specifies content-independent C0 sampling, a predecision C1 representation tap, statistically legible C2 enrichment, C3 shadow selectors, and a replay bank.</p>
+
+<h4>18.3 The Irreversibility Frontier</h4>
+
+<p>The present paper asks:</p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <strong>Where must that evidence exist before the experimental architecture makes the loss permanent?</strong></blockquote>
+
+<p>The relation can be compressed:</p>
+
+<p>\[</p>
+<p>\boxed{</p>
+<p>\text{ACRB: measure the blind spot}</p>
+<p>}</p>
+<p>\]</p>
+
+<p>\[</p>
+<p>\boxed{</p>
+<p>\text{BCA: preserve the control}</p>
+<p>}</p>
+<p>\]</p>
+
+<p>\[</p>
+<p>\boxed{</p>
+<p>\text{Frontier: place the control before irreversibility}</p>
+<p>}</p>
+<p>\]</p>
+
+<p>None of the three substitutes for the others.</p>
+
+<p>A retention battery without baseline capture remains dependent on simulations and already-preserved data.</p>
+
+<p>A baseline channel placed downstream of the relevant frontier cannot recover what was lost upstream.</p>
+
+<p>And a description of the frontier without an empirical battery does not reveal the geometry of the actual blind spot.</p>
+
+<hr>
+
+<h3>19. Design implications</h3>
+
+<p>The architecture suggests several practical principles.</p>
+
+<h4>19.1 Preserve before interpreting, when possible</h4>
+
+<p>The strongest general defense against unforeseen ontology is to retain at least a sample of the data before the interpretive selector is allowed to determine survival.</p>
+
+<p>This does not require storing everything.</p>
+
+<p>It requires a known-probability path around the primary definition of interestingness.</p>
+
+<h4>19.2 If full events cannot survive, preserve the selector&#x27;s world</h4>
+
+<p>Where raw-event storage is impossible, the exact inputs presented to the selector can often be preserved at much higher rates.</p>
+
+<p>This is weaker than raw capture but stronger than retaining only selected events.</p>
+
+<p>It makes the deployed decision surface historically replayable.</p>
+
+<h4>19.3 Delay authority even when inference is early</h4>
+
+<p>A model can run early without immediately becoming authoritative.</p>
+
+<p>CMS&#x27;s test-crate architecture demonstrates this separation in practice.[2]</p>
+
+<p>Shadow deployment should therefore be understood not merely as commissioning convenience but as an epistemic stage between model validation and acquisition authority.</p>
+
+<h4>19.4 Diversity should be measured by misses</h4>
+
+<p>Multiple trigger paths are protective only if their failure modes differ.</p>
+
+<p>The relevant quantity is not architecture count but <strong>miss overlap</strong>.</p>
+
+<p>This is why heterogeneous learned and nonlearned selectors should be evaluated on common baseline events.</p>
+
+<h4>19.5 Record the frontier as versioned experimental state</h4>
+
+<p>The irreversibility frontier changes when detector firmware, object definitions, trigger menus, learned models, thresholds, or scouting channels change.</p>
+
+<p>It should therefore be versioned historically, not described once as a timeless property of the experiment.</p>
+
+<hr>
+
+<h3>20. Limits</h3>
+
+<p>Several limitations constrain the present framework.</p>
+
+<p>First, there is no absolute “raw” baseline. Every stated frontier is relative to an upstream fidelity locus, and detector construction itself encodes expectations.</p>
+
+<p>Second, downstream selection is not costless. Full-rate readout, buffers, GPUs, networks, and scouting streams require substantial resources. The paper does not claim that CMS or ATLAS could simply adopt the LHCb or CBM architecture under their own detector conditions.</p>
+
+<p>Third, moving the frontier downstream does not guarantee protection against novel physics. A representation can erase the relevant distinction before the nominal trigger decision. This is why representational and retention irreversibility must be reported separately.</p>
+
+<p>Fourth, the recoverability envelope depends on future labeling and analysis capacity as well as stored data. A control sample is useful only if later science can identify or approximate the class of interest.</p>
+
+<p>Fifth, the present comparison is architectural rather than quantitative. A future study should estimate actual bypass fractions, storage horizons, input/output rates, and fidelity for each system from experiment-specific technical documentation rather than constructing a premature universal ranking.</p>
+
+<p>Finally, the framework says nothing by itself about whether an undiscovered physical phenomenon has already been rejected. It establishes the conditions under which that question could or could not later be answered.</p>
+
+<hr>
+
+<h3>21. Discussion: the architecture of scientific surprise</h3>
+
+<p>The conventional trigger question is:</p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> Which events should we keep?</blockquote>
+
+<p>That question will always be necessary.</p>
+
+<p>The irreversibility question is different:</p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <strong>Which events must remain represented somewhere so that future science can discover that our answer was wrong?</strong></blockquote>
+
+<p>The distinction is small in language and large in architecture.</p>
+
+<p>An experiment optimized only for present scientific utility must choose a current definition of relevance. An experiment that also wishes to preserve the possibility of unanticipated reinterpretation must reserve some bandwidth, representation, or delay mechanism that is not governed by exactly the same definition.</p>
+
+<p>This is the deeper significance of Zero Bias streams, scouting architectures, shadow trigger crates, full software triggers, free-streaming event reconstruction, and replay buffers. They are usually justified by concrete operational or physics objectives. Taken together, they instantiate a more general principle:</p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <strong>scientific selection becomes more corrigible when the selector is not the sole custodian of the evidence from which it can be criticized.</strong></blockquote>
+
+<p>Machine learning makes the principle urgent because learned decision surfaces can be difficult to characterize globally. But the principle belongs to experimental science more generally.</p>
+
+<p>The experiment need not remember everything.</p>
+
+<p>It must remember enough that its forgetting can be measured.</p>
+
+<hr>
+
+<h3>22. Conclusion</h3>
+
+<p>Accelerator experiments occupy different positions on an irreversibility spectrum.</p>
+
+<p>CMS and ATLAS place major physics selection in early hardware trigger systems and are now integrating learned anomaly scores into those layers.[1–3,6–8] CMS simultaneously demonstrates that full-rate reduced representations and non-authoritative shadow inference can coexist with a conventional Level-1 frontier.[2,4,5] LHCb reads out the full detector at approximately 30 MHz before its GPU software trigger performs the first major physics selection.[9–11] CBM accepts a free-streaming detector input in which event building itself occurs inside online reconstruction before final selection.[12,13] Belle II shows that graph-based learned reconstruction and classification can now move into a first-level FPGA trigger with microsecond latency.[14,15] sPHENIX/EIC R&amp;D shows that streaming and AI-based online selection are becoming design questions for the next generation of experiments.[16]</p>
+
+<p>These architectures should not be ranked by technological modernity or presumed discovery power.</p>
+
+<p>They should be compared by a more specific criterion:</p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <strong>At what fidelity does an event-content-dependent decision first become capable of destroying evidence, and what independent path remains from which that decision can later be audited?</strong></blockquote>
+
+<p>That is the irreversibility frontier.</p>
+
+<p>The frontier predates machine learning. Learned selectors make it more important because they permit increasingly expressive, increasingly difficult-to-enumerate decision surfaces to operate at progressively earlier stages of scientific acquisition.</p>
+
+<p>The corresponding design principle is therefore simple:</p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <strong>Place the control before the frontier.</strong></blockquote>
+
+<p>Where full preservation is impossible, preserve a probability sample. Where raw-event preservation is impossible, preserve the selector&#x27;s inputs. Where production authority is premature, run the model in shadow. Where several selectors compete, measure whether their misses overlap. Where the architecture changes, version the frontier.</p>
+
+<p>A scientific instrument cannot guarantee that it will recognize what no one has imagined.</p>
+
+<p>It can, however, be designed so that failure to recognize the unforeseen does not automatically erase the evidence that the failure occurred.</p>
+
+<hr>
+
+<h3>References</h3>
+
+<p>1. ATLAS Collaboration / T. Nobe. <strong>Commissioning and evolution of the Run 3 ATLAS Trigger.</strong> ATL-DAQ-PROC-2025-013. <em>Proceedings of Science</em>, LHCP2025 (2025/2026). DOI: 10.22323/1.499.0119.</p>
+
+<p>2. M. Quinnan, for the CMS Collaboration. <strong>Anomaly Detection in the CMS L1 Trigger.</strong> <em>EPJ Web of Conferences</em> 337 (2025) 01032. DOI: 10.1051/epjconf/202533701032.</p>
+
+<p>3. CMS Collaboration. <strong>Anomaly detection with AXOL1TL at the CMS Level-1 Trigger in 2024 and 2025.</strong> CMS-DP-2025-061 / CERN-CMS-DP-2025-061. CERN Document Server record 2942560 (2025).</p>
+
+<p>4. R. Ardino, for the CMS Collaboration. <strong>Development and demonstration of the CMS Phase-2 Level-1 trigger Data Scouting baseline system for HL-LHC.</strong> <em>Journal of Instrumentation</em> 21 (2026) C01024. DOI: 10.1088/1748-0221/21/01/C01024.</p>
+
+<p>5. D. S. Rabady, for the CMS Collaboration. <strong>A 40 MHz Level-1 trigger scouting system for the CMS Phase-2 upgrade.</strong> <em>Nuclear Instruments and Methods in Physics Research A</em> 1047 (2023) 167805. DOI: 10.1016/j.nima.2022.167805.</p>
+
+<p>6. ATLAS Collaboration / R. Gupta. <strong>NomAD: Low-Latency Unsupervised Anomaly Detection for the ATLAS Trigger.</strong> ATL-DAQ-SLIDE-2025-486. CERN Document Server record 2942542 (2025).</p>
+
+<p>7. ATLAS Collaboration / S. Addepalli. <strong>GELATO: A Generic Event-Level Anomalous Trigger Option for ATLAS.</strong> ATL-DAQ-SLIDE-2025-392. CERN Document Server record 2940819 (2025).</p>
+
+<p>8. ATLAS Collaboration / K. Sugizaki. <strong>GELATO: A Generic Event-Level Anomalous Trigger Option for ATLAS in LHC Run 3.</strong> ATL-DAQ-PROC-2025-020. CERN Document Server record 2947542 (2025).</p>
+
+<p>9. LHCb Collaboration. <strong>The LHCb Upgrade I.</strong> <em>Journal of Instrumentation</em> 19 (2024) P05065. DOI: 10.1088/1748-0221/19/05/P05065.</p>
+
+<p>10. A. Scarabotto, for the LHCb Collaboration. <strong>Commissioning of the LHCb&#x27;s first level trigger.</strong> CERN Document Server record 2843521 (2022).</p>
+
+<p>11. C. Agapopoulou, for the LHCb Collaboration. <strong>Commissioning LHCb&#x27;s GPU high level trigger.</strong> <em>Journal of Physics: Conference Series</em> 2438 (2023) 012017. DOI: 10.1088/1742-6596/2438/1/012017.</p>
+
+<p>12. GSI / CBM Collaboration. <strong>First-level Event Selector (FLES): central physics selection and free-streaming reconstruction architecture.</strong> GSI CBM FLES technical documentation.</p>
+
+<p>13. S. Gorbunov, S. Zharko, and V. Akishina. <strong>Free-Streaming Online Tracking in CBM.</strong> <em>EPJ Web of Conferences</em> 337 (2025) 01291. DOI: 10.1051/epjconf/202533701291.</p>
+
+<p>14. I. Haide et al. <strong>Real-time graph neural networks on FPGAs for the Belle II electromagnetic calorimeter.</strong> arXiv:2602.15118 (2026).</p>
+
+<p>15. M. Neu et al. <strong>Commissioning and Low Latency Operation of the Graph Neural Network Electromagnetic Calorimeter Trigger at the Belle II Experiment.</strong> arXiv:2607.09347 (2026).</p>
+
+<p>16. J. Kvapil et al. <strong>Intelligent experiments through real-time AI: Fast Data Processing and Autonomous Detector Control for sPHENIX and future EIC detectors.</strong> arXiv:2501.04845 (2025).</p>
+
+<h4>Draft-status note</h4>
+
+<p>This manuscript is a comparative architecture paper, not a quantitative ranking of experiments. The references above are intentionally dominated by primary experiment documentation and first-party technical papers. Before submission, the comparison table should be populated from a frozen evidence ledger containing exact input rates, output rates, buffer/replay horizons, bypass-stream fractions, representation fidelities, and model deployment states for a specified run period. The terms <strong>irreversibility frontier</strong>, <strong>Irreversibility Profile</strong>, <strong>recoverability envelope</strong>, and <strong>Irreversibility Statement</strong> should remain provisional until checked against existing instrumentation, information-theory, and data-acquisition terminology.</p>
 </div>
 
 <!-- APPARATUS BLOC — everything below records how this record was processed,

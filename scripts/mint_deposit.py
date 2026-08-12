@@ -267,6 +267,21 @@ def extract_field(body: str, label: str) -> str:
         "Body",
     )
     _label_alt = "|".join(re.escape(l) for l in _KNOWN_LABELS)
+    # 2026-08-12 (deposits #1452–#1454): the boundary set above is correct for
+    # ordinary deposits and WRONG for the Body field of a formal paper. Papers
+    # carry "### Keywords", "### Version", "### Methodology" and
+    # "### Falsification Conditions" as their OWN section headings, so the Body
+    # terminated at the first of them and only the front matter and abstract were
+    # seated — 9.5k of 42–60k characters, silently, with a "full" body_status.
+    # The Body field is the LAST field in the paper deposit form by construction,
+    # so its only legitimate terminator is "### Terms" or end of input.
+    if label.lower() == "body":
+        pattern = r"###\s+Body\s*\n\s*(.*?)(?=\n###\s+Terms\s*\n|\Z)"
+        m = re.search(pattern, body, re.DOTALL | re.IGNORECASE)
+        if not m:
+            return ""
+        val = m.group(1).strip()
+        return "" if val in ("_No response_", "None", "_None_") else val
     pattern = rf"###\s+{re.escape(label)}\s*\n\s*(.*?)(?=\n###\s+(?:{_label_alt})\s*\n|\Z)"
     m = re.search(pattern, body, re.DOTALL | re.IGNORECASE)
     if not m:
