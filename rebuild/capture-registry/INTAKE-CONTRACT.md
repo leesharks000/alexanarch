@@ -1,0 +1,56 @@
+# Capture Registry — intake and normalization contract
+
+Set by MANUS, 2026-08-13. Every rule below is a defect this registry actually
+sustained, not a precaution against a hypothetical one.
+
+## Data in
+
+A new capture is **not seated** unless it carries all four:
+
+| field | why |
+|---|---|
+| `transcript` | 20 observations carried claims with **no evidence at all**. A capture without machine text is an assertion. |
+| `date` | 5 carried the **string `"null"`** as a date, breaking every longitudinal comparison silently. `YYYY-MM-DD`, Michigan local. |
+| `surface` | 60 sat at `UNRESOLVED` and could not be re-run, compared across surfaces, or counted by layer. |
+| `auth.authenticated` **and** `auth.incognito` | A blanket date rule assigned "signed in" to 161 observations and **destroyed the corpus's only authentication-controlled pair**. Two independent dimensions; never inferred. |
+
+## Routing
+
+The address key is the **exact issued string**, NFC-normalised and trimmed, and
+nothing else. Case preserved, punctuation preserved, **quotation marks preserved**.
+
+- **Exact match** → the capture is an **observation of that record**, not a new capture.
+- **No match** → a **new record**.
+
+**Quoted and unquoted are different addresses.** `«operative semiotics»` held 5 of
+5 archive cards quoted and 1 of 8 unquoted, and by 13 August resolved *only* under
+the exact-phrase operator. Folding the two forms together would erase the
+decisive measured variable in the corpus.
+
+Sub-rounds are never captures. A round is a turn within one sitting where the
+operator changed the query and said so — *"I modified to"*, *"I retired with"*. A
+bare label naming the next query is a **separator between captures**, not a pivot.
+
+## Normalization
+
+The same derivations, by the same functions, on every capture: defects from the
+controlled list; PER as a **four-unit vector** with the scalar as its projection;
+citations relation-typed; the source strip split only under three guards; OCR
+reflowed for reading with **every word character preserved**.
+
+Twelve failure modes. **Not extended by invention.**
+
+## Data out
+
+One writable authority: `rebuild/capture-registry/EA-WG-CAPTURES-01-REBUILD.json`.
+Everything else — the public projection, the gallery, the links file, the semantic
+addresses, the mirror — is **derived and says so**. Nothing writes back.
+
+Three gates run on every build:
+
+- `check_gallery_js.js` — executes the page's scripts against a stub DOM. `node --check` is a *syntax* check and passed for a full day while the page was broken.
+- `check_render_determinism.py` — builds twice and compares bytes. A registry whose public surface changes without its data changing cannot support a longitudinal claim.
+- `capture_intake.py` — refuses a capture that cannot be read.
+
+**NULL is never zero.** An apparatus not captured has an unknown count.
+**Absence is a claim**, and a claim needs every place the thing could be.
