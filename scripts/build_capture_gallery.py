@@ -54,7 +54,11 @@ def image_urls(e):
             continue
         if i.startswith("http"):
             out.append(i)
-        elif i.startswith("data/captures/"):
+        elif i.startswith("data/"):
+            # ANY repo-relative path, not just data/captures/. The narrower test
+            # sent 21 images under data/capture-mirrors/ and data/captures-images/
+            # to the leesharks host, where every one 404s because the file lives
+            # HERE. A path that starts with data/ is this repository's.
             out.append(IMG_BASES["repo"] + i)
         else:
             out.append(IMG_BASES["bare"] + i.lstrip("/"))
@@ -178,16 +182,34 @@ def card(e):
         f'<span class="cap-defect cap-defect-{esc(x)}" title="{esc(LABEL.get(x, x))}">{esc(x)}</span>'
         for x in defects) + '</div>') if defects else ''
 
+    # IMAGE SHAPE FOLLOWS THE LEESHARKS GALLERY, which solved this already:
+    # ONE thumbnail in the header at a fixed 80x140, the REST inside the expand,
+    # and where there is no image a FRAME OF THE SAME SHAPE rather than a line of
+    # text — so the column edge never breaks and a missing image is visibly a
+    # missing image.
+    #
+    # Every img carries onerror="this.style.display='none'". Bare filenames used
+    # to fall through to the leesharks mirror and 404 for the 312 images that
+    # live in THIS repo, which printed a broken-image icon and its alt text as
+    # body copy. Unresolved images are now omitted upstream; this is the belt to
+    # that braces.
     urls = image_urls(e)
+    alt = f'Screen capture for the query &quot;{esc(q)}&quot;, dated {esc(date)}.'
     if urls:
-        thumbs = "".join(
+        imgs_html = (
+            f'<a class="cap-thumb-link" href="{esc(urls[0])}" target="_blank" rel="noopener">'
+            f'<img class="cap-thumb" loading="lazy" src="{esc(urls[0])}" alt="{alt}" '
+            f'onerror="this.parentNode.outerHTML=\'<div class=&quot;cap-nothumb&quot;>image<br>404</div>\'">'
+            f'</a>')
+        extra = urls[1:]
+        gallery = ('<div class="cap-gallery">' + "".join(
             f'<a href="{esc(u)}" target="_blank" rel="noopener">'
-            f'<img loading="lazy" src="{esc(u)}" '
-            f'alt="Screen capture for the query &quot;{esc(q)}&quot;, dated {esc(date)}.">'
-            f'</a>' for u in urls)
-        imgs_html = f'<div class="cap-imgs">{thumbs}</div>'
+            f'<img loading="lazy" src="{esc(u)}" alt="{alt}" '
+            f'onerror="this.parentNode.style.display=\'none\'"></a>' for u in extra)
+            + '</div>') if extra else ''
     else:
-        imgs_html = ('<div class="cap-noimg">no capture image held for this entry</div>')
+        imgs_html = '<div class="cap-nothumb">no<br>image</div>'
+        gallery = ''
 
     return (
         f'<div class="cap-card" id="{esc(slug)}" '
@@ -205,8 +227,11 @@ def card(e):
         f'<div class="cap-status-row">'
         f'<span class="cap-status cap-status-{esc(mt.split()[0].lower())}">{esc(mt)}</span>'
         f'<span class="cap-sf">{esc(e.get("sf") or "")}</span></div>'
-        f'{imgs_html}'
+        f'<div class="cap-row">{imgs_html}'
+        f'<div class="cap-body">'
         f'<div class="cap-desc" itemprop="description">{emphasise(d)}</div>'
+        f'{gallery}'
+        f'</div></div>'
         f'{transcript_block(e)}'
         f'<div class="cap-actions">'
         # THREE ACTIONS, ONE DELEGATED HANDLER. All carry class cap-act; the
