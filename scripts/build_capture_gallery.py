@@ -668,6 +668,20 @@ def main():
     page = page.replace("</head>", signposts + ldblock + "</head>", 1)
 
     PAGE.write_text(page)
+    # RUNTIME GATE. node --check is a SYNTAX check and passed all day while the
+    # page was broken: an undefined identifier is legal syntax and fails only
+    # when executed. Two real faults hid behind three clean syntax reports —
+    # CAPTURE_SOURCES destroyed with the fallback it lived beside, and a defect
+    # filter calling a function scoped inside another block's closure. Execute
+    # the page's scripts against a stub DOM before declaring a build good.
+    import subprocess
+    _g = subprocess.run(["node", "scripts/check_gallery_js.js", str(PAGE)],
+                        capture_output=True, text=True)
+    if _g.returncode != 0:
+        print(_g.stdout + _g.stderr)
+        raise SystemExit("RUNTIME GATE FAILED — page written but its scripts throw. Fix before publishing.")
+    print("  " + _g.stdout.strip())
+
     print(f"static gallery: {len(entries)} anchored cards rendered into the page "
           f"({len(page):,} bytes) + JSON-LD Dataset + Signposting")
     return 0

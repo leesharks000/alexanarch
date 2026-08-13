@@ -10975,9 +10975,19 @@ Sources cited:</div><div class="cap-tr-label">Sources (4) <span class="cap-tr-wa
 // of bug where a version bump renames the file and the page 404-hangs.
 // If both fail, we render a visible error state instead of an infinite spinner.
   /* v9.6 FALLBACK REMOVED 2026-08-13. v9.6 is one-flat-capture-per-row; v10 is
-     address -> observations. Falling back silently across an ONTOLOGY CHANGE is
+     address -> observations. Falling back silently ACROSS AN ONTOLOGY CHANGE is
      worse than showing an unavailable state: a stale representation must not
-     masquerade as a current measurement. Fail visibly instead. */
+     masquerade as a current measurement. Fail visibly instead.
+
+     THE DECLARATION ITSELF WAS DESTROYED WHEN THE FALLBACK WAS REMOVED — both
+     URLs sat on one line, so deleting the line deleted CAPTURE_SOURCES, and the
+     loader iterated an undefined array. Every count and every filter is built
+     from that fetch, so all three filter rows and the record count rendered
+     EMPTY while the static cards, which need no JavaScript, rendered fine. That
+     is exactly the failure mode the static-first design exists to survive, and
+     exactly why it must still be caught. */
+  var CAPTURE_SOURCES = ['/data/EA-WG-CAPTURES-01.json'];
+
 
 function loadCaptures(){
   return CAPTURE_SOURCES.reduce(function(chain, url){
@@ -11272,11 +11282,15 @@ loadCaptures().then(function(cap){
   var _dh = document.getElementById('defect-filter');
   if(_dh){
     var counts = {};
-    cards().forEach(function(el){
+    /* SELF-CONTAINED. cards() lives one brace deep inside block 1's loader closure,
+       so calling it from this block threw ReferenceError and the defect filter
+       never populated — invisibly, because a filter that renders nothing looks
+       the same as a filter with nothing to show. Query the DOM directly. */
+    Array.prototype.slice.call(document.querySelectorAll('#captures .cap-card')).forEach(function(el){
       (el.dataset.defects||'').split(/\s+/).filter(Boolean).forEach(function(d){ counts[d]=(counts[d]||0)+1; });
     });
     var keys = Object.keys(counts).sort(function(a,b){ return counts[b]-counts[a]; });
-    if(!keys.length){ _dh.parentNode.style.display='none'; }
+    if(!keys.length){ if(_dh.parentNode) _dh.parentNode.style.display='none'; }
     else {
       _dh.innerHTML = '<button class="fbtn active" data-defect="all">all</button>' +
         keys.map(function(k){ return '<button class="fbtn" data-defect="'+k+'">'+k+
