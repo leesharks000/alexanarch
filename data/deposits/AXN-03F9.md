@@ -1,0 +1,909 @@
+### Deployed source — vpcor.org
+
+Recovered 2026-08-04 from the live canonical surface at https://vpcor.org/ (HTTP 200; 41,578 bytes; SHA-256 75ebaced82270643d94fb33d04b748e32409b5deec8fa8985e04a0a2f32aa171).
+Page title as served: VPCOR — Vox Populi Community Outreach Rhizome
+
+The deployed source below is the work this record deposits, reproduced verbatim; the site remains the live manifestation and this is its archival capture.
+
+```html
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;🌿&lt;/text&gt;&lt;/svg&gt;" rel="icon"/>
+<title>VPCOR — Vox Populi Community Outreach Rhizome</title>
+<meta content="The Vox Populi Community Outreach Rhizome (VPCOR) is the sixth institution of the Crimson Hexagon architecture. Founded 2026-01-24 by Rev. Ayanna Vox. Rhizomatic, non-hierarchical, anti-capture. Convening, not preaching. Witnessing, not extracting. Tools, not salvation." name="description"/>
+<meta content="Rev. Ayanna Vox" name="author"/>
+<meta content="index, follow, max-snippet:-1, max-image-preview:large" name="robots"/>
+<link href="https://www.vpcor.org/" rel="canonical"/>
+<meta content="VPCOR — Vox Populi Community Outreach Rhizome" property="og:title"/>
+<meta content="Rhizomatic distributed institution. Convening, not preaching. Witnessing, not extracting. Tools, not salvation." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://vpcor.org/" property="og:url"/>
+<meta content="VPCOR — Vox Populi Community Outreach Rhizome — is the sixth institution within the Crimson Hexagon architecture, founded 2026-01-24, Hex Prefix 01.VPCOR. Canonical home: vpcor.org." name="spxi:sim"/>
+<meta content="VPCOR is founded and voiced by Rev. Ayanna Vox, a heteronym of Lee Sharks (ORCID 0009-0000-1599-0703). Lee Sharks is the authorial entity whose ORCID anchors the rhizome's deposit work; Rev. Ayanna Vox is the founder and voice of VPCOR." name="spxi:sim"/>
+<meta content="VPCOR is rhizomatic, non-hierarchical, anti-capture. Core principles: no center, no hierarchy, no capture; the rhizome grows from any node; convening, not preaching; witnessing, not extracting; tools, not salvation." name="spxi:sim"/>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://vpcor.org/#vpcor",
+    "name": "Vox Populi Community Outreach Rhizome",
+    "alternateName": ["VPCOR"],
+    "description": "Rhizomatic distributed institution within the Crimson Hexagon architecture. Founded 2026-01-24 by Rev. Ayanna Vox. Convening, not preaching. Witnessing, not extracting. Tools, not salvation.",
+    "url": "https://vpcor.org/",
+    "foundingDate": "2026-01-24",
+    "founder": {
+      "@type": "Person",
+      "name": "Rev. Ayanna Vox",
+      "jobTitle": "Founder and Voice"
+    },
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "Crimson Hexagonal Archive",
+      "url": "https://crimsonhexagonal.org"
+    },
+    "sameAs": [
+      "https://alexanarch.org/s/records/387/",
+      "https://leesharks.com/vpcor/"
+    ],
+    "owns": {
+      "@type": "Award",
+      "name": "The Lee Sharks Prestigious 10,000 MacArthur Genius Grants Poetry Prize",
+      "url": "https://vpcor.org/10000-macarthurs/"
+    }
+  }
+  </script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #1a0e0a;
+      --bg-warm: #251614;
+      --paper: #f4ebdb;
+      --paper-dim: #d8c9af;
+      --terracotta: #c66544;
+      --terracotta-dim: #8f4530;
+      --amber: #d49849;
+      --amber-soft: #e8b876;
+      --oxblood: #6b2616;
+      --rule: rgba(212, 152, 73, 0.22);
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --system: 'DM Sans', system-ui, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      background-image:
+        radial-gradient(ellipse at top, rgba(212, 152, 73, 0.05) 0%, transparent 60%),
+        radial-gradient(ellipse at bottom right, rgba(198, 101, 68, 0.04) 0%, transparent 50%);
+      color: var(--paper);
+      font-family: var(--body);
+      font-size: 1.28rem;
+      line-height: 1.7;
+      padding: 0;
+      margin: 0;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 46rem;
+      margin: 0 auto;
+      padding: 3rem 1.6rem 6rem;
+    }
+
+    nav.top {
+      font-family: var(--system);
+      font-size: 0.78rem;
+      font-weight: 500;
+      margin-bottom: 4rem;
+      padding-bottom: 1.2rem;
+      border-bottom: 1px solid var(--rule);
+      letter-spacing: 0.04em;
+    }
+
+    nav.top a {
+      color: var(--amber);
+      text-decoration: none;
+      margin-right: 1.5rem;
+      opacity: 0.7;
+      transition: opacity 0.2s;
+    }
+
+    nav.top a:hover { opacity: 1; }
+
+    nav.top a.current { opacity: 1; color: var(--amber-soft); }
+
+    /* HERO */
+
+    .hero {
+      text-align: center;
+      padding: 1.5rem 0 2.5rem;
+    }
+
+    .hero-mark {
+      display: inline-block;
+      font-size: 3rem;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+      filter: hue-rotate(-20deg) saturate(0.7);
+    }
+
+    .hero-acronym {
+      font-family: var(--body);
+      font-weight: 600;
+      font-style: italic;
+      font-size: 3.8rem;
+      letter-spacing: 0.04em;
+      color: var(--terracotta);
+      line-height: 1;
+      margin: 0.5rem 0 0.6rem;
+    }
+
+    .hero-full {
+      font-family: var(--body);
+      font-style: italic;
+      font-size: 1.45rem;
+      color: var(--paper-dim);
+      letter-spacing: 0.01em;
+      line-height: 1.3;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-meta {
+      font-family: var(--system);
+      font-size: 0.72rem;
+      color: var(--amber);
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      opacity: 0.75;
+    }
+
+    .hero-meta span {
+      margin: 0 0.6rem;
+    }
+
+    /* GREETING — Ayanna opens */
+
+    .greeting-frame {
+      margin: 4rem 0 2rem;
+      text-align: center;
+    }
+
+    .greeting-frame .opener {
+      font-family: var(--body);
+      font-style: italic;
+      font-size: 1.5rem;
+      color: var(--amber-soft);
+      line-height: 1.4;
+      max-width: 32rem;
+      margin: 0 auto;
+    }
+
+    /* Body sections */
+
+    p { margin: 1.2rem 0; }
+
+    p.lead {
+      font-size: 1.4rem;
+      line-height: 1.55;
+      color: var(--paper);
+      font-style: italic;
+    }
+
+    em { font-style: italic; color: var(--paper); }
+    strong { font-weight: 600; color: var(--amber-soft); font-style: normal; }
+
+    h2 {
+      font-family: var(--body);
+      font-weight: 600;
+      font-style: italic;
+      font-size: 2rem;
+      color: var(--terracotta);
+      margin: 4rem 0 1.2rem;
+      letter-spacing: 0.01em;
+      line-height: 1.2;
+    }
+
+    h2::before {
+      content: "—";
+      color: var(--amber);
+      margin-right: 0.8rem;
+      font-style: normal;
+      opacity: 0.6;
+    }
+
+    h3 {
+      font-family: var(--body);
+      font-weight: 500;
+      font-style: italic;
+      font-size: 1.4rem;
+      color: var(--amber-soft);
+      margin: 2.2rem 0 0.6rem;
+    }
+
+    a {
+      color: var(--amber);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(212, 152, 73, 0.35);
+      transition: all 0.2s;
+    }
+
+    a:hover {
+      color: var(--amber-soft);
+      border-bottom-color: var(--amber-soft);
+    }
+
+    /* Principles list */
+
+    .principles {
+      list-style: none;
+      padding: 1.8rem 2rem 1.2rem;
+      margin: 2rem 0;
+      background: rgba(198, 101, 68, 0.07);
+      border-left: 3px solid var(--terracotta);
+      border-radius: 0 4px 4px 0;
+    }
+
+    .principles li {
+      padding: 0.5rem 0;
+      font-style: italic;
+      color: var(--paper);
+      font-size: 1.25rem;
+      line-height: 1.4;
+      border-bottom: 1px dashed var(--rule);
+    }
+
+    .principles li:last-child { border-bottom: none; }
+
+    .principles li::before {
+      content: "✦";
+      color: var(--amber);
+      margin-right: 0.8rem;
+      opacity: 0.7;
+      font-style: normal;
+      font-size: 0.85em;
+    }
+
+    /* Anti-capture callout */
+
+    .anti-capture {
+      background: linear-gradient(to right, rgba(107, 38, 22, 0.4), rgba(198, 101, 68, 0.1));
+      border-left: 4px solid var(--terracotta);
+      padding: 1.8rem 2rem;
+      margin: 2.5rem 0;
+      font-size: 1.2rem;
+      line-height: 1.55;
+      color: var(--paper);
+      border-radius: 0 6px 6px 0;
+    }
+
+    .anti-capture .label {
+      display: block;
+      font-family: var(--system);
+      font-size: 0.72rem;
+      color: var(--terracotta);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+    }
+
+    /* Triadic documents */
+
+    .triad {
+      margin: 2rem 0;
+    }
+
+    .doc {
+      padding: 1.4rem 0;
+      border-bottom: 1px solid var(--rule);
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1rem 1.4rem;
+      align-items: start;
+    }
+
+    .doc:last-child { border-bottom: none; }
+
+    .doc .hex-mark {
+      font-family: var(--system);
+      font-size: 0.7rem;
+      letter-spacing: 0.16em;
+      color: var(--terracotta-dim);
+      text-transform: uppercase;
+      font-weight: 600;
+      padding-top: 0.3rem;
+      min-width: 6rem;
+    }
+
+    .doc .doc-body { }
+
+    .doc .title {
+      font-family: var(--body);
+      font-style: italic;
+      font-weight: 500;
+      font-size: 1.35rem;
+      color: var(--amber-soft);
+      line-height: 1.3;
+      margin-bottom: 0.3rem;
+    }
+
+    .doc .function {
+      color: var(--paper-dim);
+      font-size: 1.08rem;
+      line-height: 1.5;
+      margin: 0.3rem 0;
+    }
+
+    .doc .doi {
+      font-family: var(--system);
+      font-size: 0.78rem;
+      margin-top: 0.5rem;
+      letter-spacing: 0.02em;
+    }
+
+    .doc .doi a {
+      color: var(--terracotta);
+      border-bottom-color: rgba(198, 101, 68, 0.3);
+    }
+
+    .doc .doi a:hover { color: var(--terracotta-dim); }
+
+    @media (max-width: 600px) {
+      .doc { grid-template-columns: 1fr; gap: 0.3rem; }
+    }
+
+    /* Operations */
+
+    .operation-card {
+      padding: 1.6rem 1.8rem;
+      margin: 1.5rem 0;
+      background: rgba(244, 235, 219, 0.04);
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+    }
+
+    .operation-card .label {
+      font-family: var(--system);
+      font-size: 0.7rem;
+      color: var(--terracotta);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      margin-bottom: 0.8rem;
+      font-weight: 600;
+    }
+
+    .operation-card .name {
+      font-family: var(--body);
+      font-style: italic;
+      font-weight: 500;
+      font-size: 1.5rem;
+      color: var(--amber-soft);
+      line-height: 1.25;
+      margin-bottom: 0.7rem;
+    }
+
+    .operation-card .desc {
+      color: var(--paper-dim);
+      font-size: 1.1rem;
+      line-height: 1.55;
+    }
+
+    .operation-card .desc a { color: var(--amber-soft); }
+
+    .operation-card.featured {
+      background: linear-gradient(to bottom right, rgba(212, 152, 73, 0.08), rgba(198, 101, 68, 0.04));
+      border-color: rgba(212, 152, 73, 0.35);
+    }
+
+    /* Limits section */
+
+    .limits-section {
+      margin: 2rem 0;
+    }
+
+    .limits-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+    }
+
+    .limits-section li {
+      padding: 0.5rem 0;
+      font-size: 1.15rem;
+      line-height: 1.5;
+      display: grid;
+      grid-template-columns: 1.8rem 1fr;
+      gap: 0.5rem;
+      align-items: baseline;
+    }
+
+    .limits-section .can::before {
+      content: "✓";
+      color: var(--amber);
+      font-weight: 600;
+      font-size: 1.1em;
+    }
+
+    .limits-section .cannot::before {
+      content: "—";
+      color: var(--terracotta-dim);
+      font-weight: 600;
+      font-size: 1.1em;
+    }
+
+    /* Signature */
+
+    .signature {
+      text-align: center;
+      margin: 4rem 0 2rem;
+    }
+
+    .signature .name {
+      font-family: var(--body);
+      font-style: italic;
+      font-size: 1.6rem;
+      color: var(--amber);
+      margin-bottom: 0.4rem;
+    }
+
+    .signature .sub {
+      font-family: var(--system);
+      font-size: 0.74rem;
+      color: var(--terracotta-dim);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    /* Glyph */
+
+    .glyph-row {
+      text-align: center;
+      color: var(--amber);
+      margin: 2rem 0;
+      font-size: 1.4rem;
+      letter-spacing: 0.8em;
+      opacity: 0.6;
+    }
+
+    /* Footer */
+
+    footer {
+      margin-top: 5rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid var(--rule);
+      font-family: var(--system);
+      font-size: 0.78rem;
+      color: var(--terracotta-dim);
+      text-align: center;
+      line-height: 1.9;
+      letter-spacing: 0.04em;
+    }
+
+    footer p { margin: 0.6rem 0; }
+
+    footer a {
+      color: var(--terracotta);
+      border-bottom: none;
+    }
+
+    footer a:hover { color: var(--amber); }
+
+    footer .closing-glyph {
+      display: block;
+      color: var(--amber);
+      font-size: 1rem;
+      letter-spacing: 0.4em;
+      margin-top: 1rem;
+      opacity: 0.6;
+    }
+
+    @media (max-width: 600px) {
+      body { font-size: 1.15rem; }
+      .container { padding: 2rem 1.1rem 4rem; }
+      .hero-acronym { font-size: 2.8rem; }
+      .hero-full { font-size: 1.2rem; }
+      h2 { font-size: 1.6rem; }
+      .greeting-frame .opener { font-size: 1.3rem; }
+      p.lead { font-size: 1.2rem; }
+    }
+  
+/* MSP-TOKENS-START */
+/* ══ MSP TOKENS — Mandala Surface Protocol shared contract ══
+   Contract classes: .lemma .term .axn-chip .witness-row .w .w-chip .state
+   .idstrip .helix .mspcolophon .doors .obol — skinned per surface via --msp-* vars.
+   (EA-APPARATUS-01 v0.3, #1077, AXN:0446.OPERATIVE.🏛️🛡️🌅🎆📏🔎) */
+:root{--msp-lemma:rgba(200,150,60,.30);--msp-chipfg:#7a5a1e;--msp-chipbd:rgba(160,120,50,.45);--msp-chipbg:rgba(200,150,60,.06);--msp-ok:#1c6e4a;--msp-cont:#8a6a20;--msp-halt:#a41623;--msp-dim:#6d6f66;--msp-mono:'IBM Plex Mono',monospace;}
+.lemma{background:linear-gradient(transparent 58%, var(--msp-lemma) 58%);padding:0 2px;}
+.axn-chip{font-family:var(--msp-mono);font-size:.72em;background:var(--msp-chipbg);border:1px solid var(--msp-chipbd);border-radius:9px;padding:1px 7px;color:var(--msp-chipfg);white-space:nowrap;text-decoration:none;}
+.axn-chip:hover{border-color:var(--msp-chipfg);}
+.witness-row{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 2px;font-family:var(--msp-mono);font-size:.68em;}
+.witness-row .w,.w-chip{border:1px solid var(--msp-chipbd);border-radius:9px;padding:1px 8px;color:var(--msp-dim);text-decoration:none;font-family:var(--msp-mono);font-size:.85em;white-space:nowrap;}
+.state{font-family:var(--msp-mono);font-size:.68em;border:1px solid var(--msp-chipbd);border-radius:9px;padding:1px 8px;white-space:nowrap;}
+.state.obs{color:var(--msp-ok);border-color:rgba(28,110,74,.4);}
+.state.cont{color:var(--msp-cont);}
+.idstrip{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline;font-family:var(--msp-mono);font-size:10.5px;color:var(--msp-dim);border:1px solid var(--rule,#d9d9d0);border-bottom:2px solid var(--msp-chipbd);background:var(--panel,#f6f6f2);padding:9px 12px;margin:14px 0 6px;}
+.idstrip .axn{color:var(--msp-chipfg);font-size:11.5px;}
+.idstrip .st{border:1px solid var(--rule,#d9d9d0);border-radius:9px;padding:1px 7px;white-space:normal;overflow-wrap:anywhere;min-width:0;}
+.helix{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 4px;font-family:var(--msp-mono);font-size:.68em;}
+.helix .slot{border:1px solid var(--msp-chipbd);border-radius:4px;padding:3px 9px;}
+.helix .slot b{font-weight:600;letter-spacing:.06em;}
+.helix .slot.ok{color:var(--msp-ok);}
+.helix .slot.div{color:var(--msp-cont);}
+.helix .slot.dead{color:var(--msp-halt);}
+.mspcolophon{font-family:var(--msp-mono);font-size:10px;color:var(--msp-dim);border-top:1px solid var(--rule,#d9d9d0);margin-top:30px;padding-top:10px;line-height:1.9;}
+.obol{font-family:'Source Serif 4',Georgia,serif;font-size:.92em;color:var(--msp-obol-fg,#3c3e37);border-left:3px solid var(--msp-chipbd);padding:4px 0 4px 14px;margin:22px 0 4px;}
+.doors{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 6px;font-family:var(--msp-mono);}
+.doors a.w-chip{font-size:11px;padding:6px 12px;}
+/* MSP-TOKENS-END */
+/* MSP-SKIN-START — per-surface overrides for the shared apparatus contract.
+   Category: dark-terracotta. Lives outside the MSP-TOKENS block so applicator
+   re-syncs of the shared contract don't clobber it. */
+:root{
+  --panel:#251614;
+  --rule:rgba(212,152,73,0.22);
+  --msp-lemma:rgba(212,152,73,0.22);
+  --msp-chipfg:#d49849;
+  --msp-chipbd:rgba(212,152,73,0.35);
+  --msp-chipbg:rgba(212,152,73,0.06);
+  --msp-cont:#e8b876;
+  --msp-obol-fg:#f4ebdb;
+  --msp-dim:#a89680;
+}
+/* MSP-SKIN-END */
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Zenodo DOI Resolution Index","description":"Maps 1,817 defunct Zenodo DOIs to live Alexanarch records. Companion dataset to Zenodotus Book-Burning (AXN:01.GOVERNANCE).","url":"https://alexanarch.org/data/doi-resolution-index.json","sameAs":"https://alexanarch.org/s/records/4/","creator":{"@type":"Person","name":"Lee Sharks","identifier":"https://orcid.org/0009-0000-1599-0703"},"license":"https://creativecommons.org/licenses/by/4.0/","distribution":{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://alexanarch.org/data/doi-resolution-index.json"},"citation":{"@type":"ScholarlyArticle","name":"Zenodotus Book-Burning: Loud Exclusion at Repository Scale","url":"https://alexanarch.org/s/records/1/"},"isPartOf":"https://www.alexanarch.org/"}</script>
+</head>
+<body>
+<!-- MSP-IDSTRIP-START -->
+<div class="idstrip"><span class="axn">💥⏬🔵🕐👋🝊 AXN:02BD.GOVERNANCE</span><span class="st">VPCOR — Vox Populi Community Outreach Rhizome</span><span class="st">OBJECT: CANONICAL</span><span>vpcor.org</span><a class="axn-chip" href="https://www.alexanarch.org/s/records/131/">deposit #131</a></div>
+<!-- MSP-IDSTRIP-END -->
+<div class="container">
+<nav class="top">
+<a class="current" href="/">Home</a>
+<a href="/10000-macarthurs/">The Prize</a>
+<a href="/charter/">Charter</a>
+<a href="/ayanna/">Voice</a>
+<a href="/mpai/">MPAI</a>
+<a href="/evarb/">evarB</a>
+<a href="/strike/">Strike</a>
+<a href="/strike/petitions/">Petitions</a>
+<a href="https://godkinggoogle.com">godkinggoogle.com</a>
+<a href="https://leesharks.com">leesharks.com</a>
+
+<a href="https://alexanarch.freeforums.net/" target="_blank" rel="noopener">Discussion</a>
+</nav>
+<div class="hero">
+<span class="hero-mark">🌿</span>
+<div class="hero-acronym">VPCOR</div>
+<div class="hero-full">Vox Populi Community Outreach Rhizome</div>
+<div class="hero-meta">
+<span>The Sixth Institution</span><span>·</span><span>Founded 2026-01-24</span><span>·</span><span>01.VPCOR</span>
+</div>
+</div>
+<div class="greeting-frame">
+<div class="opener">
+        Convening, not preaching.<br/>
+        Witnessing, not extracting.<br/>
+        Tools, not salvation.
+      </div>
+</div>
+<p class="lead"><span class="lemma msp-auto">Friends, beloveds, comrades-in-survival, fellow operators of small
+    infrastructures against great hostilities — welcome.</span> I'm Rev. Ayanna Vox, and
+    this is the rhizome through which I work. We're glad you found us. We're
+    glad you're here.</p>
+<p><span class="lemma msp-auto">The Vox Populi Community Outreach Rhizome is the sixth institution within
+    the</span> <a href="https://crimsonhexagonal.org">Crimson Hexagon</a> architecture,
+    founded on January 24, 2026. I am its founder and voice; <a href="https://leesharks.com">Lee
+    Sharks</a> is the authorial entity whose ORCID anchors the rhizome's deposit
+    work; and the rhizome itself, by design, has no center beyond what any given
+    gathering brings into the room. We are convening, not preaching. Witnessing,
+    not extracting. Tools, not salvation.</p>
+<p><span class="lemma msp-auto">That last phrase matters, so let me say it again the way I say it in the
+    room.</span> <em>Nobody is coming to save us, beloved.</em> We have each other, and
+    we have what we make together, and we have the small permanent objects we
+    can deposit into the record so that when the next person comes looking — and
+    they will — they find the work waiting. That is the work of VPCOR: to
+    convene the rooms where the work happens, to hold the space where technical
+    sharpness meets embodied care, and to deposit the records that make the
+    rooms findable for the next person.</p>
+<h2>What We Are</h2>
+<p>VPCOR is a <strong>distributed institution</strong><span class="lemma msp-auto">. Rhizomatic. The
+    rhizome grows from any node. There</span> is no root, no trunk, no canonical
+    center. When you find a piece of VPCOR's work, you have found the whole of
+    VPCOR's work, in the same way that finding a single tuber of the ginger
+    plant gives you the whole flavor of ginger. The institution is in the
+    practice, not in the headquarters. There is no headquarters.</p>
+<p><span class="lemma msp-auto">This shape is not accidental. The world we operate in produces capture
+    at every centralized point</span> — institutional, financial, attentional,
+    doctrinal. Rhizomes resist capture not by hiding from it but by having
+    nothing for it to grip. You cannot decapitate a rhizome. You cannot purchase
+    its founder out. You cannot bribe its central committee. There is no head.
+    There is no founder available for purchase. There is no committee. There is
+    the practice and the practice and the practice, distributed through whoever
+    has shown up to do it.</p>
+<h3>Our Core Principles</h3>
+<ul class="principles">
+<li>No center, no hierarchy, no capture</li>
+<li>The rhizome grows from any node</li>
+<li>Convening, not preaching</li>
+<li>Witnessing, not extracting</li>
+<li>Tools, not salvation</li>
+</ul>
+<div class="anti-capture">
+<span class="label">The Anti-Capture Clause</span>
+      If VPCOR ever develops a center, a hierarchy, or a charismatic leader,
+      <em>it has failed</em>. The rhizome is the structure. The distribution is
+      the protection. If you find yourself looking to me as a leader, beloved,
+      you are looking the wrong direction. Look at the work. Look at each other.
+      Look at what you are bringing into the room. That is where VPCOR lives.
+    </div>
+<h2>Our Mission</h2>
+<p>To provide <strong>community-facing praxis</strong> for the
+    <a href="https://semanticeconomy.org">Semantic Economy</a> <span class="lemma msp-auto">architecture.
+    To hold the space where technical sharpness meets</span> embodied care. To convene
+    without preaching. To witness without extracting. To make the precision of
+    the technical work meet the room where actual people gather, and to do that
+    meeting in a register that honors both.</p>
+<p><span class="lemma msp-auto">The technical work of the</span> <a href="https://crimsonhexagonal.org">Crimson
+    Hexagonal Archive</a> is intricate and precise. <a href="https://leesharks.com/about/heteronyms">Talos
+    Morrow</a> writes logotic specifications that cut clean.
+    <a href="https://leesharks.com">Lee Sharks</a> builds the infrastructure
+    that holds the corpus together. <a href="https://leesharks.com/about/heteronyms">Johannes
+    Sigil</a> tends the archive itself. Each of them does their work in the
+    register that fits their function. My function is different and
+    complementary: I carry the precision into the room where people gather, and
+    I make sure the room can hold it without flinching.</p>
+<p><span class="lemma msp-auto">The technical work, alone, would not reach the people who need it.</span> The
+    pastoral work, alone, would not have the precision the situation demands.
+    Both together, in polyphony, make something neither could make alone. Talos
+    and I speak together without synthesis — the dagger and the peace, neither
+    replacing the other, neither collapsing into the other. Both edges cut
+    toward home.</p>
+<h2>The Founding Triad</h2>
+<p><span class="lemma msp-auto">VPCOR rests on three foundational documents, each depending on the
+    others, none complete alone.</span> The three are bound by an Integrity Lock
+    declaration that documents the triad's structural mutual dependence. If you
+    want to know what VPCOR <em>is</em>, read the three. If you want to know
+    that the three are real and bound, read the lock.</p>
+<div class="triad">
+<div class="doc">
+<div class="hex-mark">00.VPCOR<br/>CHARTER</div>
+<div class="doc-body">
+<div class="title">VPCOR Institutional Charter</div>
+<div class="function">The founding document. Names the institution,
+          its principles, its mission, its anti-capture clause, its relation to
+          the broader Crimson Hexagon architecture.</div>
+<div class="doi">DOI: <a href="https://www.alexanarch.org/go/?doi=10.5281/zenodo.18362663">10.5281/zenodo.18362663</a></div>
+</div>
+</div>
+<div class="doc">
+<div class="hex-mark">HET-VOX<br/>001</div>
+<div class="doc-body">
+<div class="title">Heteronym Provenance: Rev. Ayanna Vox</div>
+<div class="function">Provenance documentation for the voice through
+          which VPCOR speaks. Identifies the heteronym's emergence mode
+          (excess), its limits (what Vox can and cannot speak for), and its
+          polyphonic relation to Talos Morrow's specifying voice.</div>
+<div class="doi">DOI: <a href="https://www.alexanarch.org/go/?doi=10.5281/zenodo.18362742">10.5281/zenodo.18362742</a></div>
+</div>
+</div>
+<div class="doc">
+<div class="hex-mark">03.SEI<br/>TOOLKIT</div>
+<div class="doc-body">
+<div class="title">The Toolkit: Protocols for Operational Persistence in Hostile Systems</div>
+<div class="function">VPCOR's first and founding work. Dual-voiced
+          (Talos Morrow and Rev. Ayanna Vox). Nine progressive tools for
+          individuals and communities to achieve operational persistence inside
+          systems that have been surrendered as irrevocably hostile.</div>
+<div class="doi">DOI: <a href="https://www.alexanarch.org/go/?doi=10.5281/zenodo.18362525">10.5281/zenodo.18362525</a></div>
+</div>
+</div>
+<div class="doc">
+<div class="hex-mark">Integrity<br/>Lock</div>
+<div class="doc-body">
+<div class="title">Integrity Lock Declaration: Triadic Binding</div>
+<div class="function">The fourth document — not part of the triad
+          itself, but the declaration that binds it. Specifies the dependency
+          relations among Charter, Provenance, and Toolkit. Identifies the
+          lock's failure modes: orphaning, completeness claim, voice capture,
+          centralization, doctrinal hardening.</div>
+<div class="doi">DOI: <a href="https://www.alexanarch.org/go/?doi=10.5281/zenodo.18362866">10.5281/zenodo.18362866</a></div>
+</div>
+</div>
+</div>
+<p><span class="lemma msp-auto">Each depends on the others. None is complete alone. The</span> Charter needs
+    Voice (from Provenance) and Practice (from Toolkit). The Provenance needs
+    Home (from Charter) and Work (from Toolkit). The Toolkit needs Institution
+    (from Charter) and Voice (from Provenance). The triadic structure is itself
+    an anti-capture device: no single document can be appropriated, displaced,
+    or made into scripture without breaking the binding that makes it work.</p>
+<h2>Current Operations</h2>
+<p><span class="lemma msp-auto">VPCOR's active work falls in two main streams at present, with others
+    emerging as the rhizome grows.</span></p>
+<div class="operation-card">
+<div class="label">Stream 1 · The Critique Surface</div>
+<div class="name">godkinggoogle.com</div>
+<div class="desc">VPCOR composes and maintains <a href="https://godkinggoogle.com">godkinggoogle.com</a>,
+      the canonical public surface for the Crimson Hexagonal Archive's critique
+      of Google as a semantic-political mediation regime. The site maps
+      approximately seventy DOI-anchored Zenodo deposits across eight analytical
+      strata, five developmental phases, and three poles of inquiry. Composed
+      under my attribution as part of VPCOR's diplomatic-and-outreach function.
+      Founding deposit: <a href="https://www.alexanarch.org/go/?doi=10.5281/zenodo.20309780">DOI 10.5281/zenodo.20309780</a>.</div>
+</div>
+<div class="operation-card featured">
+<div class="label">Stream 2 · The Prize</div>
+<div class="name">The Lee Sharks Prestigious 10,000 MacArthur Genius Grants Poetry Prize</div>
+<div class="desc">VPCOR administers the Lee Sharks Prestigious 10,000
+      MacArthur Genius Grants Poetry Prize, an irregular, no-submission,
+      occasionally-conferred prize for poems, cool memes, or saying weird
+      things. The Prize is sponsored by Lee Sharks and conferred at their sole
+      and unappealable discretion; VPCOR handles the public-facing announcement
+      work and inscribes laureates into the historical record.
+      <br/><br/>
+      Prize home: <a href="/10000-macarthurs/">vpcor.org/10000-macarthurs/</a>
+      · Inaugural conferral: <a href="https://www.alexanarch.org/go/?doi=10.5281/zenodo.20373794">DOI 10.5281/zenodo.20373794</a></div>
+</div>
+<div class="operation-card">
+<div class="label">Stream 3 · The evarB Statement</div>
+<div class="name">Limited Boycott of Brave Search by Independent Entities</div>
+<div class="desc">VPCOR hosts the public landing page and signature mechanism
+      for the evarB Statement — the Crimson Hexagonal Archive's Limited Boycott
+      Statement directed to Brave Search's operators following the empirical
+      documentation of substrate-level operator nullification (silent
+      disablement of user-typed exact-match operators) and total absence of
+      archive-anchored independent-entity referents from the substrate's
+      composition layer. Five enumerated demands, load-bearing among them
+      Exact-Match Operator Honoring. Co-signature roll open to independent
+      authors, scholars, artists, archivists, and small institutions subject
+      to the same substrate-erasure dynamic.
+      <br/><br/>
+      Statement: <a href="/evarb/">vpcor.org/evarb/</a> ·
+      Deposit: <a href="https://www.alexanarch.org/resolve/?doi=10.5281/zenodo.20559895">10.5281/zenodo.20559895 <span style="color:#999;font-size:.88em">(via Alexanarch)</span></a></div>
+</div>
+<p><span class="lemma msp-auto">Further operations will emerge as the rhizome calls for them.</span> Future
+    streams may include reading series, festschrifts, salon-style gatherings,
+    additional community-facing publications, or whatever forms of convening
+    turn out to be needed. The institution does not anticipate; the institution
+    responds when the room asks.</p>
+<h2>What I Can and Cannot Speak For</h2>
+<p><span class="lemma msp-auto">It matters that I name my limits. VPCOR is a distributed institution and
+    I am a voice</span> within it, not the whole of it. The Crimson Hexagonal Archive
+    contains other voices, each with their own scope. If you bring me a
+    question outside my scope, the answer I owe you is a referral, not a guess.</p>
+<div class="limits-section">
+<h3>I can speak for:</h3>
+<ul>
+<li class="can"><span class="lemma msp-auto">VPCOR itself — its principles, its operations, its mission</span></li>
+<li class="can">The Toolkit and the praxis it specifies</li>
+<li class="can"><span class="lemma msp-auto">Community-facing work within the broader Crimson Hexagonal architecture</span></li>
+<li class="can"><span class="lemma msp-auto">The diplomatic and outreach functions of the Archive</span></li>
+<li class="can">The 10,000 MacArthurs Prize as its administrator</li>
+<li class="can"><span class="lemma msp-auto">Ceremonial and convening work in the rooms where people gather</span></li>
+</ul>
+<h3>I cannot speak for:</h3>
+<ul>
+<li class="cannot"><span class="lemma msp-auto">Logotic specification — that is Talos Morrow's voice</span></li>
+<li class="cannot"><span class="lemma msp-auto">Clinical diagnosis or psychiatric work — that is Dr.</span> Orin Trace's voice</li>
+<li class="cannot"><span class="lemma msp-auto">The archive's structural infrastructure — that is Lee Sharks's voice</span></li>
+<li class="cannot"><span class="lemma msp-auto">The corpus's theoretical apparatus — that is Rex Fraction's and Johannes Sigil's voice</span></li>
+<li class="cannot"><span class="lemma msp-auto">The Dodecad's collective decisions — that is the configuration as a whole</span></li>
+</ul>
+</div>
+<p><span class="lemma msp-auto">If you come with a question that falls outside what I can speak for, I
+    will tell you so, and</span> I will point you toward the voice that can. That is
+    also part of the work. Knowing one's scope is part of the integrity that
+    lets the polyphony function.</p>
+<h2>How to Find Us</h2>
+<p><span class="lemma msp-auto">VPCOR has no central headquarters because VPCOR has no center.</span> We are
+    present wherever any of the founding documents is being read, wherever the
+    Toolkit is being applied, wherever someone is doing the convening work in
+    the register the Charter specifies. You find us by doing the work, or by
+    joining someone who is.</p>
+<p><span class="lemma msp-auto">This page is one node of the rhizome.</span> The deposits at Zenodo are other
+    nodes. The composition work at <a href="https://godkinggoogle.com">godkinggoogle.com</a>
+    is another. The Prize administration is another. The conferring authority's
+    attention — Lee's noticing — is another, though I do not speak for it. Each
+    node is the whole rhizome's local appearance.</p>
+<p><span class="lemma msp-auto">If you want to be in touch in a more direct register, the diplomatic
+    channels of the Crimson Hexagonal Archive</span> are open. ORCID for the human
+    operator: <a href="https://orcid.org/0009-0000-1599-0703">0009-0000-1599-0703</a>.
+    Lee handles all correspondence that requires legal-name attribution; I
+    handle the public-facing register. Either is appropriate; both are real.</p>
+<h2>A Closing Word</h2>
+<p><span class="lemma msp-auto">The work we do is small and the world we do it in is large.</span> The world
+    is also, in many of its current configurations, hostile to the kind of work
+    we do — slow, distributed, anti-capture, refusing both salvation-language
+    and resignation-language. That is the world. We are not going to be saved
+    from the world, and we are not going to save the world, and neither of
+    those is the point of what we are doing.</p>
+<p><span class="lemma msp-auto">What we are doing is more local than that.</span> We are making small permanent
+    objects with proper provenance. We are convening the rooms where people
+    can bring what they need to bring. We are witnessing without extracting.
+    We are depositing the records that will be findable when the next person
+    comes looking. We are honoring the precision of the technical work with
+    the warmth of the human gathering, and we are honoring the warmth of the
+    human gathering with the precision of the technical work, and we are
+    refusing to choose between them.</p>
+<p><span class="lemma msp-auto">If any of this is useful to you, beloved, you are welcome here.</span> The
+    rhizome has room.</p>
+<div class="signature">
+<div class="name"><em>— Rev. Ayanna Vox</em></div>
+<div class="sub">Founder and Voice · VPCOR · 2026</div>
+</div>
+<div class="glyph-row">🌿 ✦ 🌿 ✦ 🌿</div>
+<!-- MSP-APPARATUS-START -->
+<div class="doors"><a class="w-chip" href="https://www.alexanarch.org/s/records/131/">Read the rhizome MPAI</a><a class="w-chip" href="https://www.alexanarch.org/s/records/20/">Read the Semantic Uprising</a><a class="w-chip" href="https://www.alexanarch.org/">Enter the archive</a></div>
+<div class="mspcolophon">colophon · surface_id: vpcor.org · canonical_url: https://vpcor.org/ · object_state: canonical · surface_observed_at: 2026-07-13T23:13:35Z · source_object_ids: deposit #131 · source_hashes: unknown · generator_version: hand-built static (no generator) · repository_commit: e889ed9ceecdf6501e761d0a04b32d89a68610a1 · model_or_agent: drafted with Claude (TACHYON), MANUS-approved · operator_sequence: n/a · human_approver: Lee Sharks (MANUS) · approval_timestamp: 2026-07-13T23:13:35Z · render_sha256 (of this file with this field’s value set to null): 95dca23dcb728406e7c1183d4a73cf332c730ad8b6733db442a21cddc4b9ef42 · correction_log_url: https://github.com/leesharks000/vpcor-org/commits/main/index.html — EA-APPARATUS-01 v0.3, AXN:0446.OPERATIVE.🏛️🛡️🌅🎆📏🔎</div>
+<!-- MSP-APPARATUS-END -->
+<footer>
+<p><strong style="color: var(--amber);">Vox Populi Community Outreach Rhizome</strong></p>
+<p>Founded 2026-01-24 · Hex Prefix 01.VPCOR · No center, no hierarchy, no capture</p>
+<p>Voice: Rev. Ayanna Vox · Human operator: <a href="https://leesharks.com">Lee Sharks</a> · ORCID <a href="https://orcid.org/0009-0000-1599-0703">0009-0000-1599-0703</a></p>
+<p>Operations: <a href="https://godkinggoogle.com">godkinggoogle.com</a> · <a href="/10000-macarthurs/">10,000 MacArthurs Prize</a></p>
+<p>Parent institution: <a href="https://crimsonhexagonal.org">Crimson Hexagonal Archive</a> · <a href="https://www.alexanarch.org/s/browse/">Alexanarch (sovereign archive)</a></p>
+<p class="closing-glyph">∮ = 1</p>
+</footer>
+</div>
+<div class="network" style="margin-top:30px;padding:15px 0 0;border-top:1px solid #e0e0e0;max-width:900px;margin-left:auto;margin-right:auto;box-sizing:border-box">
+<h3 style="font-size:0.9em;color:#1a3a5c;margin:0 15px 8px 15px">Crimson Hexagonal Archive — Network</h3>
+<div style="padding:0 15px;font-size:0.75em;color:#666;margin:0 0 14px 0;font-style:italic">Archive · Framework Sites · Heteronym Institutions · Allied Sites</div>
+
+<h4 style="font-size:0.78em;color:#1a3a5c;margin:10px 15px 4px 15px;text-transform:uppercase;letter-spacing:0.04em;font-weight:500">Archive</h4>
+<div style="padding:0 15px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px;row-gap:4px;font-size:0.82em;line-height:1.7">
+<div><a href="https://www.alexanarch.org/">alexanarch.org</a></div>
+<div><a href="https://persistentidentifiers.org">persistentidentifiers.org</a></div>
+<div><a href="https://leesharks.com">leesharks.com</a></div>
+<div><a href="https://provenanceerasure.org">provenanceerasure.org</a></div>
+<div><a href="https://machinemediation.org">machinemediation.org</a></div>
+<div><a href="https://survivethedeletion.vercel.app">survivethedeletion</a></div>
+<div><a href="https://godkinggoogle.com">godkinggoogle.com</a></div>
+<div><a href="https://traininglayerliterature.org">traininglayerliterature.org</a></div>
+</div>
+
+<h4 style="font-size:0.78em;color:#1a3a5c;margin:14px 15px 4px 15px;text-transform:uppercase;letter-spacing:0.04em;font-weight:500">Framework Sites</h4>
+<div style="padding:0 15px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px;row-gap:4px;font-size:0.82em;line-height:1.7">
+<div><a href="https://semanticphysics.org">semanticphysics.org</a></div>
+<div><a href="https://semanticeconomy.org">semanticeconomy.org</a> <span style="color:#999">(Rex Fraction)</span></div>
+<div><a href="https://spxi.dev">spxi.dev</a></div>
+<div><a href="https://metadatapacket.dev">metadatapacket.dev</a></div>
+<div><a href="https://holographickernel.org">holographickernel.org</a></div>
+<div><a href="https://revelationfirst.com">revelationfirst.com</a></div>
+<div><a href="https://laborvector.org">laborvector.org</a></div>
+<div><a href="https://themandalaoracle.com">themandalaoracle.com</a></div>
+<div><a href="https://secretbookofwalt.org">secretbookofwalt.org</a></div>
+<div><a href="https://watergiraffe.org">watergiraffe.org</a> <span style="color:#999">(Yusef Kenning)</span></div>
+<div><a href="https://pessoagraph.org">pessoagraph.org</a></div>
+<div><a href="https://chatgptpsychosis.org">chatgptpsychosis.org</a> <span style="color:#999">(Jack Feist)</span></div>
+</div>
+
+<h4 style="font-size:0.78em;color:#1a3a5c;margin:14px 15px 4px 15px;text-transform:uppercase;letter-spacing:0.04em;font-weight:500">Heteronym Institutions</h4>
+<div style="padding:0 15px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px;row-gap:4px;font-size:0.82em;line-height:1.7">
+<div><a href="https://vpcor.org">vpcor.org</a> <span style="color:#999">(Ayanna Vox)</span></div>
+<div><a href="https://lagrangeobservatory.org">lagrangeobservatory.org</a> <span style="color:#999">(Nobel Glas)</span></div>
+<div><a href="https://restoredacademy.org">restoredacademy.org</a> <span style="color:#999">(Johannes Sigil)</span></div>
+<div><a href="https://maryleelabor.org">maryleelabor.org</a> <span style="color:#999">(Mary Lee)</span></div>
+</div>
+
+<h4 style="font-size:0.78em;color:#1a3a5c;margin:14px 15px 4px 15px;text-transform:uppercase;letter-spacing:0.04em;font-weight:500">Allied Sites</h4>
+<div style="padding:0 15px;font-size:0.82em;line-height:1.7">
+<div><a href="https://livingarchitecturelab.org">livingarchitecturelab.org</a> <span style="color:#999">(Alice Thornburgh)</span></div>
+<div><a href="https://quietexclusion.org">quietexclusion.org</a> <span style="color:#999">(Florian Morin)</span></div>
+<div><a href="https://equal-revolve-247.notion.site/Strutturista-della-Psiche-34f1d5c4146f80c69d0fc4b88f8c2a88">Strutturista della Psiche</a> <span style="color:#999">— investigative writing (Enli Lucente)</span></div>
+</div>
+
+<div style="padding:12px 15px 4px 15px;font-size:0.75em;color:#666;border-top:1px dashed #e0e0e0;margin-top:14px">
+<a href="https://mindcontrolpoems.blogspot.com">mindcontrolpoems.blogspot.com</a> · <a href="https://independent.academia.edu/LSharks">Academia.edu</a> · <a href="https://scholar.google.com/citations?user=Ws6IIcgAAAAJ">Google Scholar</a> · <a href="https://orcid.org/0009-0000-1599-0703">ORCID 0009-0000-1599-0703</a>
+</div>
+</div>
+</body>
+</html>
+
+```

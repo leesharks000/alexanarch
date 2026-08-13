@@ -33,6 +33,47 @@ def check_deposit(n: int):
         return [("EXIST-001", f"deposit #{n} not in registry")]
     hexid = entry.get("hex", "")
 
+    # ── BODY-001 / BODY-002 ────────────────────────────────────────────────
+    # Added 2026-08-13 after TACHYON asserted "31 bodiless deposits" on the
+    # strength of checking ONE path convention, and proposed a remedy that
+    # would have cut 104KB from AXN-0434 and collapsed three versions of
+    # Machine-Mediated Resistance Literature into one file.
+    #
+    # THE ARCHIVE STORES EVERY BODY TWICE, ON PURPOSE:
+    #   data/texts/AXN-<HEX>-text.md   canonical text; the AXN hash is over this
+    #   data/deposits/AXN-<HEX>.md     download alias; YAML frontmatter + body
+    # A deposit is not complete until BOTH resolve, and the alias is not an
+    # alias if it carries only frontmatter.
+    #
+    # ABSENCE IS A CLAIM, AND A CLAIM NEEDS EVERY PLACE THE THING COULD BE.
+    text_p = ROOT / f"data/texts/AXN-{hexid}-text.md"
+    depo_p = ROOT / f"data/deposits/AXN-{hexid}.md"
+    have_text, have_depo = text_p.exists(), depo_p.exists()
+
+    if not (have_text and have_depo):
+        missing = " and ".join(
+            p for p, ok in ((str(text_p), have_text), (str(depo_p), have_depo)) if not ok)
+        fails.append(("BODY-001",
+                      f"body absent at {missing}; a deposit must resolve under BOTH "
+                      f"path conventions, never one"))
+    else:
+        # BODY-002 — the alias must carry the work, not just its metadata.
+        # Frontmatter runs to the second '---'. What follows must be substantial
+        # relative to the canonical text, or the alias is a stub that serves a
+        # header to anyone who fetches the deposit.
+        raw = depo_p.read_text(encoding="utf-8", errors="replace")
+        body = raw
+        if raw.lstrip().startswith("---"):
+            parts = raw.lstrip().split("---", 2)
+            if len(parts) == 3:
+                body = parts[2]
+        canon = len(text_p.read_text(encoding="utf-8", errors="replace"))
+        if canon > 2000 and len(body.strip()) < canon * 0.5:
+            fails.append(("BODY-002",
+                          f"download alias is a STUB: {len(body.strip())} bytes of body "
+                          f"against {canon} bytes of canonical text. Rebuild the alias as "
+                          f"frontmatter + full canonical text."))
+
     # WIKI-002 — authored substance, not merely non-empty
     if len(str(entry.get("wiki_article") or "").split()) < 60:
         fails.append(("WIKI-002", "wiki_article under 60 words; author it in-session"))
