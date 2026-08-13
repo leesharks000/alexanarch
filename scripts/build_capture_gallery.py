@@ -85,56 +85,96 @@ def emphasise(text):
             return html.escape(text or "")
     return out
 
-def transcript_block(e):
-    """Collapsed-by-default full record: the AI Overview as screenshotted (where it
-    diverged from the transcript), the divergence note, and the complete verbatim
-    transcript. Rendered STATICALLY inside a <details> element so a crawler reads
-    the full text without executing anything, while a human reader sees one line
-    until they choose to expand. The client JS only hides/shows whole cards, so
-    this block survives filtering untouched. Registry entries without a transcript
-    render exactly as before — the block is empty, not present."""
+def para(text):
+    """Analyst prose is written in paragraphs. Render them as paragraphs."""
     esc = html.escape
-    tr = e.get("transcript") or ""
-    oac = e.get("overview_at_capture") or ""
-    div = e.get("divergence") or ""
-    meta = e.get("meta") or {}
-    ocr = e.get("ocr_text") or ""
-    if not (tr or oac or meta or ocr):
-        return ""
-    parts = []
-    if meta:
-        # Structured capture metadata (v9.41 retention rule): captured_at, surface,
-        # auth_state, client — rendered as a compact definition list inside the
-        # same collapsed element, so provenance travels with the transcript.
-        rows = "".join(
-            f'<dt>{esc(str(k))}</dt><dd>{esc(str(v))}</dd>'
-            for k, v in meta.items() if v not in (None, "", [], {})
-        )
-        if rows:
-            parts.append('<div class="cap-tr-label">Capture metadata</div>'
-                         f'<dl class="cap-tr-meta">{rows}</dl>')
-    if oac:
-        parts.append('<div class="cap-tr-label">AI Overview as screenshotted</div>'
-                     f'<div class="cap-tr-body">{esc(oac)}</div>')
-    if div:
-        parts.append(f'<div class="cap-tr-div">{esc(div)}</div>')
-    if tr:
-        parts.append('<div class="cap-tr-label">Full transcript</div>'
-                     f'<div class="cap-tr-body" itemprop="text">{esc(tr)}</div>')
-    if ocr:
-        # MACHINE-READ, NOT THE PASTE. Rendered so the capture is legible and searchable
-        # where its verbatim transcript has not been recovered; labelled at every point of
-        # contact so it can never be mistaken for composed-layer output.
-        parts.append('<div class="cap-tr-label">Screenshot text (machine-read, not verbatim)</div>'
-                     f'<div class="cap-tr-note">{esc(e.get("ocr_provenance") or "Optical reading of the held screenshots; not the transcript.")}</div>'
-                     f'<div class="cap-tr-body cap-tr-ocr">{esc(ocr)}</div>')
-    label = ("Full transcript &amp; capture record" if tr
-             else ("Screenshot text (machine-read) &amp; capture record" if ocr
-                   else "Capture record"))
-    return ('<details class="cap-transcript">'
-            f'<summary>{label}</summary>'
-            + "".join(parts) + '</details>')
+    return "".join(f'<p>{emphasise(b.strip())}</p>'
+                   for b in re.split(r'\n\s*\n', str(text or '')) if b.strip())
 
+
+def transcript_block(e):
+    """THE FULL RECORD, collapsed by default and complete inside.
+
+    These are rich records and have been displayed as such in every instantiation
+    of the registry. A projection that carried only a one-paragraph finding put
+    67% of the available prose out of reach — including 230 KB of analyst reading
+    across 246 observations that reached NO surface at all until 2026-08-13.
+
+    Everything is rendered STATICALLY inside <details> so a crawler reads it
+    without executing anything, while a reader sees one line until they expand.
+    The client JS only hides and shows whole cards, so this survives filtering.
+
+    Order is deliberate: what the analyst saw, then what the analyst wrote at
+    length, then the sources with their snippets, then the collisions, then the
+    machine's own words, then the open questions. Evidence class travels with the
+    transcript so OCR is never mistaken for a paste.
+    """
+    esc = html.escape
+    reading = e.get("reading") or ""
+    analysis = e.get("analysis") or ""
+    tr = e.get("transcript") or ""
+    cites = e.get("cite_list") or []
+    coll = e.get("collisions") or []
+    oq = e.get("oq") or []
+    if not (reading or analysis or tr or cites or coll or oq):
+        return ""
+
+    meta = {
+        "captured": e.get("date"), "surface": e.get("surface"),
+        "auth state": e.get("auth"), "evidence class": e.get("ev"),
+        "PER": e.get("per"),
+        "PER units retained": (", ".join(k for k, v in (e.get("per_v") or {}).items() if v)
+                               or "none") if e.get("per_v") else None,
+        "failure modes": ", ".join(e.get("modes") or []) or None,
+        "citations read": e.get("cites"),
+        "observation id": e.get("obs_id"), "address id": e.get("addr_id"),
+    }
+    parts = []
+    rows = "".join(f'<dt>{esc(str(k))}</dt><dd>{esc(str(v))}</dd>'
+                   for k, v in meta.items() if v not in (None, "", [], {}))
+    if rows:
+        parts.append('<div class="cap-tr-label">Capture record</div>'
+                     f'<dl class="cap-tr-meta">{rows}</dl>')
+    if reading:
+        parts.append('<div class="cap-tr-label">Reading</div>'
+                     f'<div class="cap-tr-prose">{para(reading)}</div>')
+    if analysis:
+        parts.append('<div class="cap-tr-label">Analysis '
+                     '<span class="cap-tr-warn">analyst prose, not machine text</span></div>'
+                     f'<div class="cap-tr-prose">{para(analysis)}</div>')
+    if cites:
+        rows = "".join(
+            '<li>' +
+            (f'<a href="{esc(c["url"])}" target="_blank" rel="noopener">{esc(str(c.get("site") or "source"))}</a>'
+             if c.get("url") else f'<b>{esc(str(c.get("site") or "source"))}</b>') +
+            (f' <span class="cap-rel">{esc(str(c.get("rel") or ""))}</span>' if c.get("rel") else '') +
+            (f'<div class="cap-ct">{esc(str(c["title"]))}</div>' if c.get("title") else '') +
+            (f'<div class="cap-cs">{esc(str(c["snip"]))}</div>' if c.get("snip") else '') +
+            (f'<div class="cap-cn">{esc(str(c["note"]))}</div>' if c.get("note") else '') +
+            '</li>' for c in cites)
+        parts.append(f'<div class="cap-tr-label">Sources as cited ({len(cites)})</div>'
+                     f'<ol class="cap-cites">{rows}</ol>')
+    if coll:
+        rows = "".join(
+            f'<li><b>{esc(str(c.get("with") or ""))}</b>'
+            f'<div class="cap-cn">via {esc(str(c.get("via") or ""))}</div>'
+            + (f'<div class="cap-cs">{esc(str(c["ev"]))}</div>' if c.get("ev") else '')
+            + '</li>' for c in coll)
+        parts.append('<div class="cap-tr-label">Collision register</div>'
+                     f'<ul class="cap-cites">{rows}</ul>')
+    if tr:
+        cls = e.get("transcript_class") or ""
+        note = " · ".join(x for x in (cls, e.get("transcript_complete"), e.get("transcript_read")) if x)
+        parts.append('<div class="cap-tr-label">Machine text, verbatim</div>'
+                     + (f'<div class="cap-tr-warn-line">{esc(note)}</div>' if note else '')
+                     + f'<div class="cap-tr-body" itemprop="text">{esc(tr)}</div>')
+    if oq:
+        parts.append('<div class="cap-tr-label">Open questions</div>'
+                     '<ul class="cap-cites">' + "".join(f'<li>{esc(str(x))}</li>' for x in oq) + '</ul>')
+    n = sum(len(x) for x in (reading, analysis, tr))
+    return ('<details class="cap-transcript"><summary>Full record'
+            + (f' — {n:,} characters, {len(cites)} sources' if n else '')
+            + '</summary>' + "".join(parts) + '</details>')
 
 def card(e):
     esc = html.escape
