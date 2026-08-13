@@ -225,10 +225,52 @@ def transcript_block(e, gallery=''):
         answer, strip = split_source_strip(tr, cites)
         parts.append('<div class="cap-tr-label">Machine text, verbatim</div>'
                      + (f'<div class="cap-tr-warn-line">{esc(note)}</div>' if note else '')
-                     + f'<div class="cap-tr-body" itemprop="text">{esc(answer)}</div>'
-                     + ('<div class="cap-tr-striplabel">source strip, as pasted &mdash; '
-                        'the same sources listed above, run together by the copy</div>'
-                        f'<div class="cap-tr-strip">{esc(strip)}</div>' if strip else ''))
+                     + f'<div class="cap-tr-body" itemprop="text">{esc(answer)}</div>')
+        if strip:
+            # SEPARATING THE STRIP FROM THE ANSWER IS HALF THE JOB. Rendering it as
+            # one grey block just moves the blob. MANUS: "now there are *two*
+            # undifferentiated source blobs, instead of one. absolutely not… put
+            # some headers in it. separate sources."
+            #
+            # The sources are already extracted, so each one's own title marks
+            # where its segment begins. Split the strip at those points and give
+            # every segment the source's name as a header. Anything before the
+            # first match is kept and labelled honestly as unattributed.
+            cuts = []
+            for c in cites:
+                for key in (c.get("title"), c.get("site")):
+                    k = (key or "").strip()
+                    if len(k) < 8:
+                        continue
+                    i = strip.find(k)
+                    if i >= 0:
+                        cuts.append((i, c, k))
+                        break
+            cuts.sort(key=lambda z: z[0])
+            segs = []
+            if cuts and cuts[0][0] > 0:
+                segs.append((None, strip[:cuts[0][0]].strip()))
+            for n_, (i, c, k) in enumerate(cuts):
+                j = cuts[n_ + 1][0] if n_ + 1 < len(cuts) else len(strip)
+                segs.append((c, strip[i:j].strip()))
+            if not cuts:
+                segs = [(None, strip)]
+            rows = ""
+            for c, seg in segs:
+                if not seg:
+                    continue
+                if c:
+                    name = esc(str(c.get("site") or c.get("title") or "source"))
+                    rel = esc(str(c.get("rel") or ""))
+                    head = (f'<div class="cap-srchead"><b>{name}</b>'
+                            + (f' <span class="cap-rel">{rel}</span>' if rel else '') + '</div>')
+                else:
+                    head = ('<div class="cap-srchead cap-srchead-un"><b>unattributed segment</b> '
+                            '<span class="cap-rel">no cited source matches this text</span></div>')
+                rows += f'<li>{head}<div class="cap-srcbody">{esc(seg)}</div></li>'
+            parts.append('<div class="cap-tr-label">Source strip, as pasted '
+                         f'<span class="cap-tr-warn">{len([x for x in segs if x[0]])} sources, run together by the copy</span></div>'
+                         f'<ol class="cap-srclist">{rows}</ol>')
     # SUB-ROUNDS BELONG TO THE PARENT AND ARE NEVER A CAPTURE. Presenting them as
     # captures inflated the count and corrupted every per-capture measurement in
     # the dataset — PER, defect rates, voice quotient denominators, all of it.
