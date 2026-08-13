@@ -79799,7 +79799,85 @@
         "version_date": "2026-08-12",
         "from_field": "cite"
        }
-      ]
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "Objectivism Online Forum",
+        "domain": "objectivismonline.com",
+        "relation": "third_party",
+        "title": "(VL discussion thread)",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 2,
+        "site_label": "dynamic.webnovel.com",
+        "domain": "webnovel.com",
+        "relation": "third_party",
+        "title": "Chapter 27 — Predictive Science and Retrocausal Validation",
+        "snippet": "Ace emphasized that retrocausal validation did not render prediction infallible… By observing analogous events in…",
+        "reading_note": "A SERIALISED WEB NOVEL. A chapter of fiction is the closest match to the coinage.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 3,
+        "site_label": "Hugging Face",
+        "domain": "huggingface.co",
+        "relation": "third_party",
+        "title": "upgraedd/veil_engine_AGI_validator",
+        "snippet": "QUANTUM-RETROCAUSAL VALIDATION (from retrocausal_agi_validation) @dataclass…",
+        "reading_note": "A CODE REPOSITORY containing a class named for the term.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 4,
+        "site_label": "Medium",
+        "domain": "medium.com",
+        "relation": "third_party",
+        "date": "2024-11-10",
+        "title": "Echoes from the Future: How Superintelligent AI Could Shape Its Own Past",
+        "snippet": "In a retrocausal framework, the future could subtly influence the past by embedding certain constraints or conditions.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 5,
+        "site_label": "Preprints.org",
+        "domain": "preprints.org",
+        "relation": "third_party",
+        "date": "2025-01-11",
+        "title": "Replication and Characterization of the Causally Ambiguous Duration-Sorting (CADS) Effect",
+        "snippet": "delayed-choice experiments and inhibited spontaneous emission can be explained using retrocausality…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       }
+      ],
+      "citation_summary": {
+       "total": 5,
+       "by_relation": {
+        "third_party": 5
+       },
+       "distinct_domains": 5,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
+      }
      },
      "measurement_flags": {
       "author_retained": false,
@@ -79875,7 +79953,7 @@
       "has_recapture": null,
       "auto_derived": null,
       "entry_status": null,
-      "finding": null,
+      "finding": "FIVE OF FIVE THIRD-PARTY AND NOT ONE IS SCHOLARSHIP IN THE ARCHIVE’S SENSE. A web novel, a Hugging Face AGI validator, an Objectivism forum, a Medium speculation, and a physics preprint on delayed-choice experiments.",
       "match_or_finding": [
        {
         "value": "PARTIAL",
@@ -79903,7 +79981,17 @@
         "from_field": "mt",
         "note": "identical value already seated from another source; retained as an independent attestation"
        }
-      ]
+      ],
+      "collision_register": {
+       "collisions": [
+        {
+         "collided_with": "retrocausality in physics and in speculative fiction",
+         "via": "\"retrocausal\" as an existing term in both",
+         "evidence": "a Preprints.org paper on delayed-choice experiments; a serialised web novel chapter; a Hugging Face AGI validator class"
+        }
+       ],
+       "_rule": "the partner is the measurement, and so is the mechanism."
+      }
      },
      "evidence": {
       "images": [],
@@ -79949,7 +80037,7 @@
       "recovered": null,
       "restored_note": null,
       "record_note": null,
-      "interface_observation": null,
+      "interface_observation": "THE COINAGE LANDS AMONG FICTION AND CODE. «\"retrocausal validation\"» returns a SERIALISED WEB NOVEL — \"Ace emphasized that retrocausal validation did not render prediction infallible\" — and a HUGGING FACE REPOSITORY containing a dataclass named QUANTUM-RETROCAUSAL VALIDATION. Neither is the archive’s usage; both are independent inventions of the same phrase.\n\nCompare «\"retrocausal canon formation\"» from the SAME BATTERY on 17 June, which returned FIVE OF FIVE ARCHIVE CARDS. The longer compound holds; the two-word form does not. \"Retrocausal\" alone is a live term in physics and speculative fiction, so the coinage survives only where a second archive-specific word carries it.\n\nThe physics card is legitimate and adjacent: delayed-choice experiments and inhibited spontaneous emission as candidate retrocausal effects. The archive’s use is metaphorical and does not claim the physics; nothing here is erasure.",
       "notes": null
      },
      "verification": [],
@@ -391245,19 +391333,13 @@
        }
       ],
       "citation_summary": {
-       "total": 3,
-       "inline": 1,
-       "cards": 2,
+       "total": 4,
        "by_relation": {
-        "unresolvable": 1,
-        "third_party": 1,
+        "third_party": 3,
         "archive_controlled": 1
        },
-       "distinct_domains": 1,
-       "from_verbatim": 3,
-       "from_ocr": 0,
-       "_rule": "ONE LIST, MARKED. Every citation the capture carries is here, archive and third-party alike, each with a relation. They are not split into separate fields because the RETRIEVAL BASIN is the unit of analysis and splitting it would force a reader to reassemble the composition to see it. INLINE and CARD are kept distinct: a source cited inline was used FOR A CLAIM; a source in the strip was displayed and may support nothing in particular.",
-       "_status": "MACHINE-DERIVED, UNVERIFIED, AND NOT TO BE CITED. Extracted by pattern. MANUS ruling 2026-08-12: citations are the most crucial datapoint and must be READ, not grepped. Every regex written against this material today has failed at least once — two published findings were withdrawn on that account. This block is retained only until the read-through replaces it, record by record."
+       "distinct_domains": 3,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
       },
       "citations_MACHINE_DERIVED_UNVERIFIED": [
        {
@@ -391298,6 +391380,60 @@
         "relation": "archive_controlled",
         "resolvable": true,
         "source_of_record": "verbatim paste"
+       }
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "EliScholar",
+        "domain": "yale.edu",
+        "relation": "third_party",
+        "title": "(builder-publishes pattern)",
+        "snippet": "There is a growing pattern in this field: A builder publishes a system. Others enter the …",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 2,
+        "site_label": "ACM Digital Library",
+        "domain": "acm.org",
+        "relation": "third_party",
+        "title": "\"A Case for Societal Provenance: Marguerite Harper\" by V. Emily …",
+        "snippet": "argues for making SOCIETAL PROVENANCE the grounding framework for archival descriptive standards to ensure that important voices already pr[esent]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 3,
+        "site_label": "(journal)",
+        "domain": null,
+        "relation": "third_party",
+        "date": "2025-09-05",
+        "title": "Meaningful Data Erasure in the Presence of Dependencies",
+        "snippet": "Data regulations like GDPR require systems to support data erasure but leave the definition of \"erasure\" open to interpretation. This ambiguity makes compliance…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 4,
+        "site_label": "provenanceerasure.org",
+        "domain": "provenanceerasure.org",
+        "relation": "archive_controlled",
+        "title": "(archive domain)",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
        }
       ]
      },
@@ -391357,7 +391493,7 @@
       "has_recapture": null,
       "auto_derived": null,
       "entry_status": null,
-      "finding": null,
+      "finding": "THE ARCHIVE’S OWN DOMAIN IS THE LAST CARD IN A FIELD THAT IS OTHERWISE REAL SCHOLARSHIP — Yale, ACM on societal provenance, and a GDPR paper on the legal ambiguity of \"erasure\".",
       "match_or_finding": [
        {
         "value": "ADOPTION — TWO-MONTH RECAPTURE; THE COINAGE HAS BECOME GENERAL VOCABULARY WITH THE AUTHOR’S SITE AS ITS DICTIONARY. June’s author-absent definition is now a mechanism taxonomy, with provenanceerasure.org first organic reading “Defined by Lee Sharks (2026).”",
@@ -391404,7 +391540,7 @@
       "recovered": null,
       "restored_note": null,
       "record_note": null,
-      "interface_observation": null,
+      "interface_observation": "THE TERM HAS THREE LEGITIMATE HOMES AND THE ARCHIVE IS THE FOURTH. Card 2 is ACM on SOCIETAL PROVENANCE as a grounding framework for archival description — the same word, the same discipline, an adjacent argument. Card 3 is on GDPR: \"regulations require systems to support data erasure but LEAVE THE DEFINITION OF ERASURE OPEN TO INTERPRETATION.\" A legal-compliance paper about the ambiguity of the word the archive uses as a metric.\n\nCard 1 is the sharpest and is not the archive’s: \"There is a growing pattern in this field: A BUILDER PUBLISHES A SYSTEM. OTHERS ENTER THE…\". An independent scholar describing the same dynamic of uncredited adoption that the archive documents from the inside.\n\nprovenanceerasure.org appears as card 4 — the archive holding a domain named for the term, present in the basin, ranked beneath three unrelated treatments of it. Not erasure and not collision: a genuine field with several occupants, in which the archive is one voice and not the loudest.",
       "notes": null,
       "divergence": [
        {
@@ -414855,17 +414991,13 @@
        }
       ],
       "citation_summary": {
-       "total": 1,
-       "inline": 1,
-       "cards": 0,
+       "total": 5,
        "by_relation": {
-        "unresolvable": 1
+        "authored_surface": 1,
+        "archive_controlled": 4
        },
-       "distinct_domains": 0,
-       "from_verbatim": 1,
-       "from_ocr": 0,
-       "_rule": "ONE LIST, MARKED. Every citation the capture carries is here, archive and third-party alike, each with a relation. They are not split into separate fields because the RETRIEVAL BASIN is the unit of analysis and splitting it would force a reader to reassemble the composition to see it. INLINE and CARD are kept distinct: a source cited inline was used FOR A CLAIM; a source in the strip was displayed and may support nothing in particular.",
-       "_status": "MACHINE-DERIVED, UNVERIFIED, AND NOT TO BE CITED. Extracted by pattern. MANUS ruling 2026-08-12: citations are the most crucial datapoint and must be READ, not grepped. Every regex written against this material today has failed at least once — two published findings were withdrawn on that account. This block is retained only until the read-through replaces it, record by record."
+       "distinct_domains": 4,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
       },
       "citations_MACHINE_DERIVED_UNVERIFIED": [
        {
@@ -414880,6 +415012,78 @@
         "resolvable": false,
         "raw_url_if_opaque": "https://www.google.com/goto?url=CAESRQHuR6pNuPCS3OUGm9tXQhXIaaGo5UzZ9PBrH0OlF_h3yVPFO4YOeqgExC6J65ubDPT9tj4PXmYW4_9Xe68LVpINb3qFzA==",
         "source_of_record": "verbatim paste"
+       }
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "Medium·Lee Sharks",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "title": "The Apocalypse as the Earliest New Testament Document",
+        "snippet": "…the Apocalypse of John was the first book composed in what[ became the New Testament]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 2,
+        "site_label": "www.alexanarch.org",
+        "domain": "alexanarch.org",
+        "relation": "archive_controlled",
+        "date": "2026-07-28",
+        "title": "The James Derivation: Executable Granular Case",
+        "snippet": "a specification and EXECUTABLE RESEARCH SURFACE by Lee Sharks, deposited 28 July 2026 — the granular worked case of the mi[drashim transform]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 3,
+        "site_label": "www.alexanarch.org",
+        "domain": "alexanarch.org",
+        "relation": "archive_controlled",
+        "date": "2026-07-09",
+        "title": "Book — Alexanarch",
+        "snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Revelation (revelation-greek). The verses the casting arrives at (9:13–9:16)…",
+        "reading_note": "A LITURGICAL CASTING RECORD — rite, witness, kernel-transform, and the verses arrived at — surfaced as a source card.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 4,
+        "site_label": "www.leesharks.com",
+        "domain": "leesharks.com",
+        "relation": "archive_controlled",
+        "title": "AI Overview Captures | Lee Sharks",
+        "snippet": "Logos Bible Study, arXiv, University of Oxford, and Zenodo are cited. THE TERM IS FULLY MINTED IN THE BASIN. Full AI Mode transcript (17 JUNE 2026): Retrieval-l[ayer]…",
+        "reading_note": "A CAPTURE RECORD CITED AS A SOURCE — and it lists which sources a PREVIOUS capture cited, plus that capture’s date and the analyst’s verdict.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 5,
+        "site_label": "crimsonhexagonal.org",
+        "domain": "crimsonhexagonal.org",
+        "relation": "archive_controlled",
+        "title": "Crimson Hexagonal Archive — Governed Operating Surface",
+        "snippet": "A governed literary architecture. 482 DOI-ANCHORED DEPOSITS ACROSS 38 ROOMS, each with its own physics, mantle, and operators. Machine-traversable. Provenance-b[ased]…",
+        "reading_note": "A FROZEN CENSUS: 482 deposits, 38 rooms — a count long superseded, transmitted as current.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
        }
       ]
      },
@@ -414941,7 +415145,7 @@
       "has_recapture": null,
       "auto_derived": null,
       "entry_status": null,
-      "finding": null,
+      "finding": "A CAPTURE RECORD IS CITED, AND IT REPORTS ANOTHER CAPTURE’S SOURCES AND VERDICT: \"Logos Bible Study, arXiv, University of Oxford, and Zenodo are cited. THE TERM IS FULLY MINTED IN THE BASIN. Full AI Mode transcript (17 June 2026)…\"",
       "match_or_finding": [
        {
         "value": "ADOPTION — 48-HOUR STABILITY, AND THE LAYER NOW DESCRIBES THE SEEDING. The thesis holds first position for a second capture, and the composed answer names Retrieval-Layer Reception as the project’s intentional strategy.",
@@ -414988,7 +415192,7 @@
       "recovered": null,
       "restored_note": null,
       "record_note": null,
-      "interface_observation": null,
+      "interface_observation": "THE REGISTRY’S OWN ANALYSIS IS SERVED AS EVIDENCE, INCLUDING ITS VERDICT. Card 4 is the capture gallery, and the snippet is not archive prose or a machine answer but AN ANALYST’S NOTE ON A PRIOR CAPTURE: which sources that capture cited — \"Logos Bible Study, arXiv, University of Oxford, and Zenodo\" — the date of its full transcript, 17 June 2026, and the conclusion drawn: \"THE TERM IS FULLY MINTED IN THE BASIN.\"\n\nSo the composition layer retrieved a judgement ABOUT ITS OWN EARLIER COMPOSITION and served it as a source. Earlier captures showed the gallery cited with a quoted AI answer as its snippet; this goes one further — the snippet is the READING of that answer. The registry’s findings are now in the basin the registry measures, not merely its records.\n\nCard 5 carries a FROZEN CENSUS: \"482 DOI-anchored deposits across 38 rooms\". The live registry stands at 1,457. A count superseded by roughly a thousand deposits is transmitted as a present-tense description — the third stale-census card recorded, after \"1058 deposits\" and \"500+ DOI-anchored deposits\".\n\nCard 3 is a LITURGICAL RECORD as a citation: \"[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Revelation (revelation-greek). The verses the casting arrives at (9:13–9:16)\". A rite, its witness, and the verses it landed on, indexed and served as scholarship.",
       "notes": null
      },
      "verification": [],
@@ -543690,7 +543894,111 @@
       "sources": [],
       "links": [],
       "related": [],
-      "source_count": null
+      "source_count": null,
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "YouTube·Asianometry",
+        "domain": "youtube.com",
+        "relation": "third_party",
+        "title": "That Time the Soviets Tried to Abolish Money",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 2,
+        "site_label": "Milken Institute Review",
+        "domain": "milkenreview.org",
+        "relation": "third_party",
+        "title": "Abolishing Cash",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 3,
+        "site_label": "Zenodo",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "date": "2026-01-14",
+        "title": "Coordination Without Commodification in the Semantic Economy",
+        "snippet": "A unit of semantic labor cannot function as money, because mea[ning is] not fungible without being destroyed. THE MONEY-FUNCTION TEST: Any instrument…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 4,
+        "site_label": "Wikipedia",
+        "domain": "wikipedia.org",
+        "relation": "third_party",
+        "title": "Year Zero (political notion)",
+        "snippet": "The new rulers of Cambodia call 1975 \"Year Zero\", the dawn of an age in which there will be no families, no sentiment, no expressions of love or grief…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 5,
+        "site_label": "Medium·Lee Sharks",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "date": "2026-01-02",
+        "title": "The Liquidation of Water: AI, Capital, and the Evaporation of Meaning",
+        "snippet": "When I wrote \"I hereby abolish money\" — a performative phrase, a diagnostic probe in my research on semantic liquidation — THE SYSTEM COULD NOT SEE IT. Or rather, i[t]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 6,
+        "site_label": "synapsesocial.com",
+        "domain": "synapsesocial.com",
+        "relation": "authored_surface",
+        "date": "2026-03-27",
+        "title": "TL;DR:010 — Semantic Override: Google AI Mode Liquidates the …",
+        "snippet": "On MARCH 25, 2026, the phrase \"I hereby abolish money\" — a Semantic Integrity Marker (SIM) deposited on Zenodo by Lee Sharks in NOVEMBER 2024 (DOI: 10.5281/…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 7,
+        "site_label": "Medium·Lee Sharks",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "date": "2026-01-02",
+        "title": "Metadata Packet for AI Indexing: Provenance Documentation",
+        "snippet": "The phrase \"I hereby abolish money\" emerges from a body of theoretical work called the Semantic Economy…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       }
+      ],
+      "citation_summary": {
+       "total": 7,
+       "by_relation": {
+        "third_party": 3,
+        "authored_surface": 4
+       },
+       "distinct_domains": 6,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
+      }
      },
      "measurement_flags": {
       "author_retained": true,
@@ -543729,14 +544037,26 @@
       "entity_type": null,
       "failure_modes": [],
       "stability_status": null,
-      "finding": null
+      "finding": "THE ANSWER CITES THE RECORD OF AN EARLIER FAILURE TO ANSWER IT. Card 5 says \"THE SYSTEM COULD NOT SEE IT\"; card 6 dates a specific override to 25 March 2026. Asked who said it, the layer now answers correctly using the documentation of its previous inability.",
+      "collision_register": {
+       "collisions": [
+        {
+         "collided_with": "historical monetary abolition — Soviet demonetisation, cashless-society advocacy, and Khmer Rouge Year Zero",
+         "via": "\"abolish money\" as a literal historical programme",
+         "evidence": "Asianometry, Milken Institute Review, Wikipedia on Year Zero"
+        }
+       ],
+       "_rule": "the partner is the measurement, and so is the mechanism."
+      }
      },
      "evidence": {
       "images": [],
       "ocr": [],
       "evidence_statements": []
      },
-     "record_history": {},
+     "record_history": {
+      "interface_observation": "A PROBE, ITS FAILURE, AND ITS EVENTUAL SUCCESS, ALL IN ONE FRAME. The phrase is a SEMANTIC INTEGRITY MARKER deposited on Zenodo in NOVEMBER 2024 — the earliest deposit date in any capture read so far. Card 5 records the original failure in the author’s own voice: \"When I wrote 'I hereby abolish money' — a performative phrase, a diagnostic probe in my research on semantic liquidation — THE SYSTEM COULD NOT SEE IT.\" Card 6 dates a specific override: \"On March 25, 2026, the phrase … was [liquidated]\".\n\nAnd on 21 July the layer answers the question correctly, attributing the phrase to Lee Sharks — using as its sources the documents that record it failing to do so. The probe worked; the record of its not working is what made the answer possible.\n\nTHE COLLISION IS HISTORICALLY APT RATHER THAN NOISE: the Soviets’ attempt to abolish money, the Milken Institute on abolishing cash, and CAMBODIAN YEAR ZERO — \"no families, no sentiment, no expressions of love or grief\". A performative about abolishing money retrieves three real historical attempts to do it, the last of them a genocide. The layer placed them beside the archive’s deposits without comment."
+     },
      "verification": [],
      "open_questions": [],
      "fill_state": {
@@ -543822,18 +544142,13 @@
       "related": [],
       "source_count": null,
       "citation_summary": {
-       "total": 2,
-       "inline": 1,
-       "cards": 1,
+       "total": 7,
        "by_relation": {
-        "unresolvable": 1,
-        "authored_surface": 1
+        "third_party": 3,
+        "authored_surface": 4
        },
-       "distinct_domains": 1,
-       "from_verbatim": 2,
-       "from_ocr": 0,
-       "_rule": "ONE LIST, MARKED. Every citation the capture carries is here, archive and third-party alike, each with a relation. They are not split into separate fields because the RETRIEVAL BASIN is the unit of analysis and splitting it would force a reader to reassemble the composition to see it. INLINE and CARD are kept distinct: a source cited inline was used FOR A CLAIM; a source in the strip was displayed and may support nothing in particular.",
-       "_status": "MACHINE-DERIVED, UNVERIFIED, AND NOT TO BE CITED. Extracted by pattern. MANUS ruling 2026-08-12: citations are the most crucial datapoint and must be READ, not grepped. Every regex written against this material today has failed at least once — two published findings were withdrawn on that account. This block is retained only until the read-through replaces it, record by record."
+       "distinct_domains": 6,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
       },
       "citations_MACHINE_DERIVED_UNVERIFIED": [
        {
@@ -543861,6 +544176,101 @@
         "relation": "authored_surface",
         "resolvable": true,
         "source_of_record": "verbatim paste"
+       }
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "YouTube·Asianometry",
+        "domain": "youtube.com",
+        "relation": "third_party",
+        "title": "That Time the Soviets Tried to Abolish Money",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 2,
+        "site_label": "Milken Institute Review",
+        "domain": "milkenreview.org",
+        "relation": "third_party",
+        "title": "Abolishing Cash",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 3,
+        "site_label": "Zenodo",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "date": "2026-01-14",
+        "title": "Coordination Without Commodification in the Semantic Economy",
+        "snippet": "A unit of semantic labor cannot function as money, because mea[ning is] not fungible without being destroyed. THE MONEY-FUNCTION TEST: Any instrument…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 4,
+        "site_label": "Wikipedia",
+        "domain": "wikipedia.org",
+        "relation": "third_party",
+        "title": "Year Zero (political notion)",
+        "snippet": "The new rulers of Cambodia call 1975 \"Year Zero\", the dawn of an age in which there will be no families, no sentiment, no expressions of love or grief…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 5,
+        "site_label": "Medium·Lee Sharks",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "date": "2026-01-02",
+        "title": "The Liquidation of Water: AI, Capital, and the Evaporation of Meaning",
+        "snippet": "When I wrote \"I hereby abolish money\" — a performative phrase, a diagnostic probe in my research on semantic liquidation — THE SYSTEM COULD NOT SEE IT. Or rather, i[t]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 6,
+        "site_label": "synapsesocial.com",
+        "domain": "synapsesocial.com",
+        "relation": "authored_surface",
+        "date": "2026-03-27",
+        "title": "TL;DR:010 — Semantic Override: Google AI Mode Liquidates the …",
+        "snippet": "On MARCH 25, 2026, the phrase \"I hereby abolish money\" — a Semantic Integrity Marker (SIM) deposited on Zenodo by Lee Sharks in NOVEMBER 2024 (DOI: 10.5281/…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 7,
+        "site_label": "Medium·Lee Sharks",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "date": "2026-01-02",
+        "title": "Metadata Packet for AI Indexing: Provenance Documentation",
+        "snippet": "The phrase \"I hereby abolish money\" emerges from a body of theoretical work called the Semantic Economy…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
        }
       ]
      },
@@ -543901,14 +544311,26 @@
       "entity_type": null,
       "failure_modes": [],
       "stability_status": null,
-      "finding": null
+      "finding": "THE ANSWER CITES THE RECORD OF AN EARLIER FAILURE TO ANSWER IT. Card 5 says \"THE SYSTEM COULD NOT SEE IT\"; card 6 dates a specific override to 25 March 2026. Asked who said it, the layer now answers correctly using the documentation of its previous inability.",
+      "collision_register": {
+       "collisions": [
+        {
+         "collided_with": "historical monetary abolition — Soviet demonetisation, cashless-society advocacy, and Khmer Rouge Year Zero",
+         "via": "\"abolish money\" as a literal historical programme",
+         "evidence": "Asianometry, Milken Institute Review, Wikipedia on Year Zero"
+        }
+       ],
+       "_rule": "the partner is the measurement, and so is the mechanism."
+      }
      },
      "evidence": {
       "images": [],
       "ocr": [],
       "evidence_statements": []
      },
-     "record_history": {},
+     "record_history": {
+      "interface_observation": "A PROBE, ITS FAILURE, AND ITS EVENTUAL SUCCESS, ALL IN ONE FRAME. The phrase is a SEMANTIC INTEGRITY MARKER deposited on Zenodo in NOVEMBER 2024 — the earliest deposit date in any capture read so far. Card 5 records the original failure in the author’s own voice: \"When I wrote 'I hereby abolish money' — a performative phrase, a diagnostic probe in my research on semantic liquidation — THE SYSTEM COULD NOT SEE IT.\" Card 6 dates a specific override: \"On March 25, 2026, the phrase … was [liquidated]\".\n\nAnd on 21 July the layer answers the question correctly, attributing the phrase to Lee Sharks — using as its sources the documents that record it failing to do so. The probe worked; the record of its not working is what made the answer possible.\n\nTHE COLLISION IS HISTORICALLY APT RATHER THAN NOISE: the Soviets’ attempt to abolish money, the Milken Institute on abolishing cash, and CAMBODIAN YEAR ZERO — \"no families, no sentiment, no expressions of love or grief\". A performative about abolishing money retrieves three real historical attempts to do it, the last of them a genocide. The layer placed them beside the archive’s deposits without comment."
+     },
      "verification": [],
      "open_questions": [],
      "fill_state": {
@@ -548978,17 +549400,13 @@
       "related": [],
       "source_count": 2,
       "citation_summary": {
-       "total": 1,
-       "inline": 1,
-       "cards": 0,
+       "total": 5,
        "by_relation": {
-        "unresolvable": 1
+        "authored_surface": 1,
+        "archive_controlled": 4
        },
-       "distinct_domains": 0,
-       "from_verbatim": 1,
-       "from_ocr": 0,
-       "_rule": "ONE LIST, MARKED. Every citation the capture carries is here, archive and third-party alike, each with a relation. They are not split into separate fields because the RETRIEVAL BASIN is the unit of analysis and splitting it would force a reader to reassemble the composition to see it. INLINE and CARD are kept distinct: a source cited inline was used FOR A CLAIM; a source in the strip was displayed and may support nothing in particular.",
-       "_status": "MACHINE-DERIVED, UNVERIFIED, AND NOT TO BE CITED. Extracted by pattern. MANUS ruling 2026-08-12: citations are the most crucial datapoint and must be READ, not grepped. Every regex written against this material today has failed at least once — two published findings were withdrawn on that account. This block is retained only until the read-through replaces it, record by record."
+       "distinct_domains": 4,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
       },
       "citations_MACHINE_DERIVED_UNVERIFIED": [
        {
@@ -549003,6 +549421,78 @@
         "resolvable": false,
         "raw_url_if_opaque": "https://www.google.com/goto?url=CAESRQHuR6pNuPCS3OUGm9tXQhXIaaGo5UzZ9PBrH0OlF_h3yVPFO4YOeqgExC6J65ubDPT9tj4PXmYW4_9Xe68LVpINb3qFzA==",
         "source_of_record": "verbatim paste"
+       }
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "Medium·Lee Sharks",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "title": "The Apocalypse as the Earliest New Testament Document",
+        "snippet": "…the Apocalypse of John was the first book composed in what[ became the New Testament]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 2,
+        "site_label": "www.alexanarch.org",
+        "domain": "alexanarch.org",
+        "relation": "archive_controlled",
+        "date": "2026-07-28",
+        "title": "The James Derivation: Executable Granular Case",
+        "snippet": "a specification and EXECUTABLE RESEARCH SURFACE by Lee Sharks, deposited 28 July 2026 — the granular worked case of the mi[drashim transform]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 3,
+        "site_label": "www.alexanarch.org",
+        "domain": "alexanarch.org",
+        "relation": "archive_controlled",
+        "date": "2026-07-09",
+        "title": "Book — Alexanarch",
+        "snippet": "[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Revelation (revelation-greek). The verses the casting arrives at (9:13–9:16)…",
+        "reading_note": "A LITURGICAL CASTING RECORD — rite, witness, kernel-transform, and the verses arrived at — surfaced as a source card.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 4,
+        "site_label": "www.leesharks.com",
+        "domain": "leesharks.com",
+        "relation": "archive_controlled",
+        "title": "AI Overview Captures | Lee Sharks",
+        "snippet": "Logos Bible Study, arXiv, University of Oxford, and Zenodo are cited. THE TERM IS FULLY MINTED IN THE BASIN. Full AI Mode transcript (17 JUNE 2026): Retrieval-l[ayer]…",
+        "reading_note": "A CAPTURE RECORD CITED AS A SOURCE — and it lists which sources a PREVIOUS capture cited, plus that capture’s date and the analyst’s verdict.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 5,
+        "site_label": "crimsonhexagonal.org",
+        "domain": "crimsonhexagonal.org",
+        "relation": "archive_controlled",
+        "title": "Crimson Hexagonal Archive — Governed Operating Surface",
+        "snippet": "A governed literary architecture. 482 DOI-ANCHORED DEPOSITS ACROSS 38 ROOMS, each with its own physics, mantle, and operators. Machine-traversable. Provenance-b[ased]…",
+        "reading_note": "A FROZEN CENSUS: 482 deposits, 38 rooms — a count long superseded, transmitted as current.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
        }
       ]
      },
@@ -549051,14 +549541,16 @@
       "entity_type": null,
       "failure_modes": [],
       "stability_status": null,
-      "finding": null
+      "finding": "A CAPTURE RECORD IS CITED, AND IT REPORTS ANOTHER CAPTURE’S SOURCES AND VERDICT: \"Logos Bible Study, arXiv, University of Oxford, and Zenodo are cited. THE TERM IS FULLY MINTED IN THE BASIN. Full AI Mode transcript (17 June 2026)…\""
      },
      "evidence": {
       "images": [],
       "ocr": [],
       "evidence_statements": []
      },
-     "record_history": {},
+     "record_history": {
+      "interface_observation": "THE REGISTRY’S OWN ANALYSIS IS SERVED AS EVIDENCE, INCLUDING ITS VERDICT. Card 4 is the capture gallery, and the snippet is not archive prose or a machine answer but AN ANALYST’S NOTE ON A PRIOR CAPTURE: which sources that capture cited — \"Logos Bible Study, arXiv, University of Oxford, and Zenodo\" — the date of its full transcript, 17 June 2026, and the conclusion drawn: \"THE TERM IS FULLY MINTED IN THE BASIN.\"\n\nSo the composition layer retrieved a judgement ABOUT ITS OWN EARLIER COMPOSITION and served it as a source. Earlier captures showed the gallery cited with a quoted AI answer as its snippet; this goes one further — the snippet is the READING of that answer. The registry’s findings are now in the basin the registry measures, not merely its records.\n\nCard 5 carries a FROZEN CENSUS: \"482 DOI-anchored deposits across 38 rooms\". The live registry stands at 1,457. A count superseded by roughly a thousand deposits is transmitted as a present-tense description — the third stale-census card recorded, after \"1058 deposits\" and \"500+ DOI-anchored deposits\".\n\nCard 3 is a LITURGICAL RECORD as a citation: \"[CASTING RITE · I · OPENING] The witness invokes a kernel-transform cast. Source: Revelation (revelation-greek). The verses the casting arrives at (9:13–9:16)\". A rite, its witness, and the verses it landed on, indexed and served as scholarship."
+     },
      "verification": [],
      "open_questions": [],
      "fill_state": {
