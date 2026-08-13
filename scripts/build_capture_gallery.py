@@ -149,6 +149,35 @@ def card(e):
     citation = (f'Sharks, Lee. "{q}" [machine-composition capture {slug}], {date}. '
                 f'AI Overview Capture Registry (EA-WG-CAPTURES-01), Alexanarch. {cite}')
 
+    # RE-RUN opens the SAME semantic address live, so a capture is a repeatable
+    # experiment and any reader can see the current state against this dated
+    # baseline. The URL is DATA, built by the pipeline and carried on the entry —
+    # never assembled here, because the query must be reproduced exactly,
+    # quotation marks included. Quoting is the decisive variable in this corpus:
+    # «operative semiotics» held 5/5 archive cards quoted and 1/8 unquoted.
+    rerun = e.get("rerun")
+    rerun_btn = (
+        f'<a class="cap-cite cap-act cap-rerun" data-act="rerun" '
+        f'data-rerun="{esc(rerun)}" href="{esc(rerun)}" target="_blank" '
+        f'rel="noopener" aria-label="Run this same query now and compare with '
+        f'this capture">↻ Re-run</a>') if rerun else ''
+
+    # THE DEFECT RIBBON IS ON THE FACE OF THE CARD, not behind an expander.
+    # MANUS: "if its invisible i wont check it, if i dont check it it will
+    # drift." Every defect here was invisible when it happened.
+    defects = e.get("defects") or []
+    LABEL = {
+        'truncated-by-interface': 'answer truncated by interface — absence here is absence from the VISIBLE portion',
+        'unsupported-citations': 'CITATIONS UNSUPPORTED by this transcript — do not count',
+        'citations-null': 'citation apparatus not captured — count is NULL, not zero',
+        'surface-unresolved': 'surface unresolved',
+        'date-unresolved': 'date unresolved',
+        'analysis-without-finding': 'analysis present, no finding written',
+    }
+    defect_ribbon = ('<div class="cap-defects">' + ''.join(
+        f'<span class="cap-defect cap-defect-{esc(x)}" title="{esc(LABEL.get(x, x))}">{esc(x)}</span>'
+        for x in defects) + '</div>') if defects else ''
+
     urls = image_urls(e)
     if urls:
         thumbs = "".join(
@@ -164,6 +193,7 @@ def card(e):
         f'<div class="cap-card" id="{esc(slug)}" '
         f'data-section="{esc(e.get("s") or "Unsectioned")}" '
         f'data-status="{esc(mt.split()[0].lower())}" '
+        f'data-defects="{esc(" ".join(defects))}" '
         f'itemscope itemtype="https://schema.org/CreativeWork">'
         f'<meta itemprop="identifier" content="{esc(cite)}">'
         f'<meta itemprop="isPartOf" content="EA-WG-CAPTURES-01">'
@@ -179,11 +209,22 @@ def card(e):
         f'<div class="cap-desc" itemprop="description">{emphasise(d)}</div>'
         f'{transcript_block(e)}'
         f'<div class="cap-actions">'
-        f'<button type="button" class="cap-cite" data-cite="{esc(cite)}" '
-        f'data-citation="{esc(citation)}" '
+        # THREE ACTIONS, ONE DELEGATED HANDLER. All carry class cap-act; the
+        # container binds once. The working page records why: a per-render
+        # handler "bound to nothing, and the action was a bare anchor to #slug
+        # — it appeared to do nothing because it did nothing."
+        f'<button type="button" class="cap-cite cap-act" data-act="cite" '
+        f'data-cite="{esc(cite)}" data-citation="{esc(citation)}" '
         f'aria-label="Copy a citation for this capture">¶ Cite</button>'
+        # COPY LINK is distinct from cite by design: cite yields something
+        # pasteable into a document, this yields the bare address.
+        f'<button type="button" class="cap-cite cap-act" data-act="link" '
+        f'data-cite="{esc(cite)}" '
+        f'aria-label="Copy the permalink to this capture">⛓ Link</button>'
+        + rerun_btn +
         f'<a class="cap-permalink" href="{esc(cite)}" rel="bookmark">permalink</a>'
         f'</div>'
+        f'{defect_ribbon}'
         f'</div>')
 
 
