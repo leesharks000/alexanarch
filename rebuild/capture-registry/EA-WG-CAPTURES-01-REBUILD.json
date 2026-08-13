@@ -14090,17 +14090,13 @@
        }
       ],
       "citation_summary": {
-       "total": 5,
-       "inline": 3,
-       "cards": 2,
+       "total": 4,
        "by_relation": {
-        "authored_surface": 5
+        "authored_surface": 3,
+        "third_party": 1
        },
-       "distinct_domains": 1,
-       "from_verbatim": 5,
-       "from_ocr": 0,
-       "_rule": "ONE LIST, MARKED. Every citation the capture carries is here, archive and third-party alike, each with a relation. They are not split into separate fields because the RETRIEVAL BASIN is the unit of analysis and splitting it would force a reader to reassemble the composition to see it. INLINE and CARD are kept distinct: a source cited inline was used FOR A CLAIM; a source in the strip was displayed and may support nothing in particular.",
-       "_status": "MACHINE-DERIVED, UNVERIFIED, AND NOT TO BE CITED. Extracted by pattern. MANUS ruling 2026-08-12: citations are the most crucial datapoint and must be READ, not grepped. Every regex written against this material today has failed at least once — two published findings were withdrawn on that account. This block is retained only until the read-through replaces it, record by record."
+       "distinct_domains": 2,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
       },
       "citations_MACHINE_DERIVED_UNVERIFIED": [
        {
@@ -14168,6 +14164,64 @@
         "resolvable": true,
         "source_of_record": "verbatim paste"
        }
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "Zenodo",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "date": "2026-05-31",
+        "title": "Directionality of Semantic Labor: A Layered, Computable Measure",
+        "snippet": "Specifies a layered, computable measure of the direction in which a synthetic system's labor flows relative to the user's commissioned task…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 2,
+        "site_label": "International Journal of Science and Research Archive (IJSRA)",
+        "domain": "ijsra.net",
+        "relation": "third_party",
+        "date": "2023-01-14",
+        "title": "Comprehensive study of deep learning based Telugu OCR: A survey",
+        "snippet": "The segmentation will be stronger (to sound, ERASURE, SKEW, etc.), making this recognizer’s work easier…",
+        "reading_note": "The two words appear in a LIST OF OCR NOISE TYPES — erasure and skew as separate image defects — not as a compound term.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 3,
+        "site_label": "zenodo.org",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "date": "2026-05-29",
+        "title": "Erasure Skew: A Measurement Program for the Power-Conditioning",
+        "snippet": "Where the Provenance Erasure Rate (PER) measures the MAGNITUDE of provenance loss, Erasure Skew measures its ORIENTATION — whether the loss falls evenly across…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 4,
+        "site_label": "zenodo.org",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "date": "2026-06-03",
+        "title": "Erasure Skew (Ω) is Power-Conditioned, not Demographic — A Classifier-Correction for the Composition Layer",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       }
       ]
      },
      "measurement_flags": {
@@ -14231,7 +14285,7 @@
       "has_recapture": null,
       "auto_derived": null,
       "entry_status": null,
-      "finding": null,
+      "finding": "THREE OF FOUR AUTHORED, AND THE METRIC PAIR IS COMPOSED CORRECTLY: PER measures magnitude, Erasure Skew measures orientation. The one collision is a Telugu OCR paper where \"erasure\" and \"skew\" are adjacent items in a list of image defects.",
       "match_or_finding": [
        {
         "value": "EXACT MATCH (framework returned as the definition of the term; three of the author's own Zenodo DOIs cited as authoritative sources across Overview and AI Mode; quoted-query gated — behavioral split from unquoted retrieval; cited DOIs all 410_GONE — composition layer citing tombstones)",
@@ -14250,7 +14304,17 @@
         "from_field": "mt",
         "note": "identical value already seated from another source; retained as an independent attestation"
        }
-      ]
+      ],
+      "collision_register": {
+       "collisions": [
+        {
+         "collided_with": "Telugu OCR image-noise taxonomy",
+         "via": "ADJACENCY INSIDE AN ENUMERATION — \"erasure\" and \"skew\" as consecutive items in a parenthetical list of defects, not a compound term",
+         "evidence": "IJSRA survey on deep-learning Telugu OCR"
+        }
+       ],
+       "_rule": "the partner is the measurement, and so is the mechanism."
+      }
      },
      "evidence": {
       "images": [
@@ -14367,7 +14431,7 @@
       "recovered": null,
       "restored_note": null,
       "record_note": null,
-      "interface_observation": null,
+      "interface_observation": "A COLLISION THAT IS NOT EVEN A PHRASE. Card 2 is a Telugu OCR survey in which the words appear as separate entries in a list of noise types: \"stronger (to sound, ERASURE, SKEW, etc.)\". There is no compound term there — the retrieval matched two words that happen to sit beside each other inside a parenthesis. This is the weakest collision mechanism yet recorded, below whitespace matching: ADJACENCY INSIDE AN ENUMERATION.\n\nThe three archive cards carry the metric pair intact and in the right relation — PER for magnitude, Ω for orientation, and the classifier-correction that the skew is power-conditioned rather than demographic. The distinction the deposits exist to draw survives composition.",
       "notes": null
      },
      "verification": [],
@@ -61105,7 +61169,59 @@
         "version_date": "2026-08-12",
         "from_field": "cite"
        }
-      ]
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "Zenodo",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "date": "2026-06-15",
+        "title": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception",
+        "snippet": "PAPYROLOGICAL INVERSION section added (P52/P98/P46 material record). MPAI specification and executive summary with FAQs added. 11,310 words.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 2,
+        "site_label": "Zenodo",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "date": "2026-06-14",
+        "title": "Revelation First: A Work Plan (earlier version)",
+        "snippet": "… papyrological inversion), literary-genetic argument (Revelation makes sense as first; nothing else does), political dimension (Josephus as …",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 3,
+        "site_label": "Medium·Lee Sharks",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "date": "2026-06-14",
+        "title": "The Apocalypse as the Earliest New Testament Document",
+        "snippet": "… papyrological inversion (P52/P98/P46), and the literary-genetic thesis: the NT unfolds from Revelation’s seed via the MIDRASHIM TRANSFORM.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       }
+      ],
+      "citation_summary": {
+       "total": 3,
+       "by_relation": {
+        "authored_surface": 3
+       },
+       "distinct_domains": 2,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
+      }
      },
      "measurement_flags": {
       "author_retained": true,
@@ -61175,7 +61291,7 @@
       "has_recapture": null,
       "auto_derived": null,
       "entry_status": null,
-      "finding": null,
+      "finding": "THREE OF THREE AUTHORED, NO THIRD PARTY AT ALL, AND THE PAPYRUS SIGLA SURVIVE: P52, P98, P46 carried into every card.",
       "match_or_finding": [
        {
         "value": "ADOPTION",
@@ -61249,7 +61365,7 @@
       "recovered": null,
       "restored_note": null,
       "record_note": null,
-      "interface_observation": null,
+      "interface_observation": "A COINAGE WITH NO COMPETITION AND NO DILUTION. Three cards, all archive, and the composed answer offers to compare \"this papyrological framework\" to traditional New Testament dating — treating the coinage as a framework in good standing. No papyrology card, no Wikipedia, no theology site.\n\nThe manuscript sigla P52, P98 and P46 transmit intact through every card, as do the version notes: \"Papyrological Inversion section added … 11,310 words\". Compare «\"provenance erasure rate\"» on the SAME DAY, where five archive cards produced an answer naming nobody. Here three archive cards produce an answer that treats the framework as the framework. The difference is not the source set — it is what the layer did with it.",
       "notes": null
      },
      "verification": [],
@@ -121275,12 +121391,13 @@
         "relation": "third_party",
         "title": "Stream Alexanarch music",
         "snippet": "Your way (prod. anticøn) 2:23, 3y · In the Pines (prod. Darkslayrr) 2:08, 3y · Somebody (prod. faang) 1:20, 4y · Control (prod.…",
-        "reading_note": "A MUSIC PRODUCER using the name Alexanarch, active three to four years before the archive took it.",
+        "reading_note": "ALEX ANARCH — two words. Not a prior occupant of \"Alexanarch\" but a DIFFERENT NAME matched across a space. MANUS, 2026-08-12: \"technically, that dude is Alex Anarch, he does not seem to be currently active.\" Retrieval treated the token boundary as optional.",
         "position": "card",
         "url": null,
         "source_of_record": "verbatim paste",
         "read_by": "TACHYON",
-        "read_date": "2026-08-12"
+        "read_date": "2026-08-12",
+        "collision_mechanism": "whitespace-insensitive match on a distinct name"
        },
        {
         "order": 2,
@@ -121373,12 +121490,13 @@
       "collision_register": {
        "collisions": [
         {
-         "collided_with": "Alexanarch, a music producer on SoundCloud",
-         "via": "the name itself, in use three to four years earlier",
-         "evidence": "SoundCloud artist page with tracks dated 3y and 4y"
+         "collided_with": "Alex Anarch, a music producer on SoundCloud, apparently inactive",
+         "via": "A WHITESPACE-INSENSITIVE MATCH — \"Alex Anarch\" is two words and a different name; the retrieval layer treated the space as optional",
+         "evidence": "SoundCloud artist page, tracks dated 3y and 4y",
+         "note": "NOT a prior claim on the coined name. The distinction matters: \"crimson hexagon\" collides with a company that holds that exact name, and \"orthonym\" collides through a shared Greek root. This collides through TOKENISATION — the boundary between two words being ignored. Nothing about it establishes that anyone used \"Alexanarch\" before the archive did."
         }
        ],
-       "_rule": "the partner is the measurement."
+       "_rule": "the partner is the measurement, and so is the mechanism."
       }
      },
      "evidence": {
@@ -121387,7 +121505,7 @@
       "evidence_statements": []
      },
      "record_history": {
-      "interface_observation": "THE FIGURES ARRIVE WITH THEIR AUDIT TRAIL. Card 2 carries the count AND how to check it: \"of 1,817 affected DOIs, 871 (47.9%) now return HTTP 404 from DataCite’s public metadata API at api.datacite.org/dois/{doi} — independently verifiable\". Card 3 carries the refinement that matters legally: \"851 of the 871 severed DOIs are UNIQUE WORKS: they share no title with any preserved DOI and are not an alternate version of a preserved record\" — the disposal of the obvious rebuttal, retrieved alongside the claim.\n\nCard 1 is a genuine prior occupant of the name: a SoundCloud musician recording as Alexanarch, with tracks dated three and four years ago. This corrects an assumption in an earlier reading of «alexanarch sappho room», where I wrote that \"alexanarch\" is \"a coined name with no prior occupant\". It has one. The collision is quieter than \"crimson hexagon\" — one artist rather than a market-analytics firm — but it exists and predates the archive’s use."
+      "interface_observation": "THE FIGURES ARRIVE WITH THEIR AUDIT TRAIL. Card 2 carries the count AND how to check it: \"of 1,817 affected DOIs, 871 (47.9%) now return HTTP 404 from DataCite’s public metadata API at api.datacite.org/dois/{doi} — independently verifiable\". Card 3 carries the refinement that matters legally: \"851 of the 871 severed DOIs are UNIQUE WORKS: they share no title with any preserved DOI and are not an alternate version of a preserved record\" — the disposal of the obvious rebuttal, retrieved alongside the claim.\n\nCard 1 is a genuine prior occupant of the name: a SoundCloud musician recording as Alexanarch, with tracks dated three and four years ago. This corrects an assumption in an earlier reading of «alexanarch sappho room», where I wrote that \"alexanarch\" is \"a coined name with no prior occupant\". It has one. The collision is quieter than \"crimson hexagon\" — one artist rather than a market-analytics firm — but it exists and predates the archive’s use.\n\nCORRECTION, MANUS 2026-08-12: I wrote that \"alexanarch\" HAS A PRIOR OCCUPANT and corrected an earlier reading on that basis. Both statements were too strong. The SoundCloud artist is ALEX ANARCH — two words, a different name, apparently inactive. The layer matched across the space.\n\nSo the original reading stands after all: \"alexanarch\" as a single token has no prior occupant, which is why it holds a total archive basin where \"crimson hexagon\" does not. What this capture adds is a distinct collision mechanism — WHITESPACE-INSENSITIVE MATCHING — which belongs in the register beside root-sharing, acronym contest and exact-name contest, and which is weaker than all three: it establishes nothing about prior use."
      },
      "verification": [],
      "open_questions": [],
@@ -131928,18 +132046,14 @@
        }
       ],
       "citation_summary": {
-       "total": 2,
-       "inline": 2,
-       "cards": 0,
+       "total": 4,
        "by_relation": {
-        "archive_controlled": 1,
-        "third_party": 1
+        "archive_controlled": 2,
+        "third_party": 1,
+        "authored_surface": 1
        },
        "distinct_domains": 2,
-       "from_verbatim": 2,
-       "from_ocr": 0,
-       "_rule": "ONE LIST, MARKED. Every citation the capture carries is here, archive and third-party alike, each with a relation. They are not split into separate fields because the RETRIEVAL BASIN is the unit of analysis and splitting it would force a reader to reassemble the composition to see it. INLINE and CARD are kept distinct: a source cited inline was used FOR A CLAIM; a source in the strip was displayed and may support nothing in particular.",
-       "_status": "MACHINE-DERIVED, UNVERIFIED, AND NOT TO BE CITED. Extracted by pattern. MANUS ruling 2026-08-12: citations are the most crucial datapoint and must be READ, not grepped. Every regex written against this material today has failed at least once — two published findings were withdrawn on that account. This block is retained only until the read-through replaces it, record by record."
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
       },
       "citations_MACHINE_DERIVED_UNVERIFIED": [
        {
@@ -131967,6 +132081,60 @@
         "resolvable": true,
         "raw_url_if_opaque": null,
         "source_of_record": "verbatim paste"
+       }
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "position": "inline",
+        "url": "https://www.alexanarch.org/s/records/847/",
+        "domain": "alexanarch.org",
+        "relation": "archive_controlled",
+        "title": "(deposit #847)",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 2,
+        "site_label": "Leah Adams",
+        "domain": null,
+        "relation": "third_party",
+        "date": "2016-06-21",
+        "title": "The Rider on the White Horse ~ Revelation 6",
+        "snippet": "Tradition asserts this first horseman represents the Antichrist…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 3,
+        "site_label": "www.alexanarch.org",
+        "domain": "alexanarch.org",
+        "relation": "archive_controlled",
+        "date": "2026-06-17",
+        "title": "REVELATION FIRST — Staging Document for revelationfirst.org",
+        "snippet": "\"All Instruments, Materials, and Impact Tracking Date\" is a 1,306-word short work by Lee Sharks…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 4,
+        "site_label": "github.com",
+        "domain": "github.com",
+        "relation": "authored_surface",
+        "title": "the-mandala-oracle/README.md at main · leesharks000/the-mandala-oracle",
+        "snippet": "The following are settled and should orient implementation. Integration with alexanarch as substrate. This repository includes ALEXANARCH AS A GIT SUBMODULE at …",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
        }
       ]
      },
@@ -132035,7 +132203,7 @@
       "has_recapture": null,
       "auto_derived": null,
       "entry_status": null,
-      "finding": null,
+      "finding": "THE ARCHIVE IS CITED AS A GIT SUBMODULE OF ANOTHER PROJECT. A README card describes \"integration with alexanarch as substrate\" — the archive appearing in the sourcing as a dependency rather than as a publication.",
       "match_or_finding": [
        {
         "value": "PARTIAL — thesis absent; a staging document read as software deployment",
@@ -132091,7 +132259,7 @@
        }
       ],
       "record_note": null,
-      "interface_observation": null,
+      "interface_observation": "THE ARCHIVE AS BUILD DEPENDENCY. Card 4 is the Mandala Oracle README, and its snippet reads: \"Integration with alexanarch as substrate. This repository includes ALEXANARCH AS A GIT SUBMODULE.\" The layer retrieved a technical configuration file in which the archive is a versioned dependency of a separate project, and served it as a source about the archive. Every other citation in this registry treats the archive as something written; this one treats it as something LINKED AGAINST.\n\nThe staging document card is also worth noting for what it exposes: \"All Instruments, Materials, and IMPACT TRACKING\" — the apparatus for measuring the thesis’s reception, surfaced by the reception it measures.\n\nOne clean third-party card: a 2016 devotional on the rider of the white horse in Revelation 6.",
       "notes": null
      },
      "verification": [],
@@ -523652,17 +523820,12 @@
       "cite": null,
       "citation_summary": {
        "total": 3,
-       "inline": 2,
-       "cards": 1,
        "by_relation": {
-        "third_party": 1,
-        "archive_controlled": 2
+        "third_party": 2,
+        "archive_controlled": 1
        },
-       "distinct_domains": 2,
-       "from_verbatim": 3,
-       "from_ocr": 0,
-       "_rule": "ONE LIST, MARKED. Every citation the capture carries is here, archive and third-party alike, each with a relation. They are not split into separate fields because the RETRIEVAL BASIN is the unit of analysis and splitting it would force a reader to reassemble the composition to see it. INLINE and CARD are kept distinct: a source cited inline was used FOR A CLAIM; a source in the strip was displayed and may support nothing in particular.",
-       "_status": "MACHINE-DERIVED, UNVERIFIED, AND NOT TO BE CITED. Extracted by pattern. MANUS ruling 2026-08-12: citations are the most crucial datapoint and must be READ, not grepped. Every regex written against this material today has failed at least once — two published findings were withdrawn on that account. This block is retained only until the read-through replaces it, record by record."
+       "distinct_domains": 3,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
       },
       "citations_MACHINE_DERIVED_UNVERIFIED": [
        {
@@ -523703,6 +523866,50 @@
         "relation": "archive_controlled",
         "resolvable": true,
         "source_of_record": "verbatim paste"
+       }
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "Florida Department of Environmental Protection",
+        "domain": "floridadep.gov",
+        "relation": "third_party",
+        "date": "2013-08-16",
+        "title": "references and design aids",
+        "snippet": "Design Example for RETENTION BASIN Recovery … For most sandy soils the fillable porosity (f) is approximately 0.2 to 0.3.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 2,
+        "site_label": "AMiner",
+        "domain": "aminer.cn",
+        "relation": "third_party",
+        "title": "Acta Paediatrica | Paediatrics Journal | Wiley Online Library",
+        "snippet": "It is a weak act of inscription inside a WRITABLE RETRIEVAL BASIN. The retrieval basin is writable but not obedient. RBT formalizes how AI retrieval systems …",
+        "reading_note": "THE ARCHIVE’S OWN SENTENCES APPEAR UNDER A PAEDIATRICS JOURNAL TITLE on an aggregator. The card is titled Acta Paediatrica; the snippet is Retrieval Basin Topology.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 3,
+        "site_label": "restoredacademy.org",
+        "domain": "restoredacademy.org",
+        "relation": "archive_controlled",
+        "date": "2026-05-21",
+        "title": "The Restored Academy Charter — Metadata Packet for AI Indexing",
+        "snippet": "Protocols that build durable, machine-readable, retrieval-resistant archives. Includes Writable Retrieval Basin, Retrieval Basin Topology, Retrieval …",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
        }
       ]
      },
@@ -523750,13 +523957,15 @@
        }
       ],
       "entity_type": null,
-      "failure_modes": [],
+      "failure_modes": [
+       "visual_bleed"
+      ],
       "stability_status": null,
       "has_correction": null,
       "has_recapture": null,
       "auto_derived": null,
       "entry_status": null,
-      "finding": null,
+      "finding": "THE ARCHIVE’S TEXT IS SERVED UNDER A PAEDIATRICS JOURNAL’S TITLE. An AMiner card titled \"Acta Paediatrica | Paediatrics Journal | Wiley Online Library\" carries, as its snippet, verbatim archive prose about Retrieval Basin Topology.",
       "match_or_finding": [
        {
         "value": "KERNEL MATCH",
@@ -523801,7 +524010,7 @@
       "recovered": null,
       "restored_note": null,
       "record_note": null,
-      "interface_observation": null,
+      "interface_observation": "A CONTENT-TO-TITLE MISMATCH AT THE AGGREGATOR, NOT AT THE COMPOSITION LAYER. Card 2 is AMiner. Its TITLE is \"Acta Paediatrica | Paediatrics Journal | Wiley Online Library\". Its SNIPPET is the archive’s own writing: \"It is a weak act of inscription inside a writable retrieval basin. The retrieval basin is writable but not obedient. RBT formalizes how AI retrieval systems…\"\n\nA paediatrics journal listing is carrying paragraphs of semantic-infrastructure theory. Google did not do this; Google faithfully surfaced what the aggregator holds. The defect is upstream, in AMiner’s record, and the composition layer transmitted it whole — which is the same shape as the PhilPapers \"Rebekah Crane\" suffix drop: an index-layer corruption propagating downstream intact.\n\nThe third collision is cleaner and almost funny: the Florida Department of Environmental Protection on RETENTION BASIN design and the fillable porosity of sandy soils. \"Basin\" retrieves hydrology for the second time in the corpus, after «retrieval basins» pulled BBC river geography in June.",
       "notes": null
      },
      "verification": [],
@@ -538234,7 +538443,59 @@
       "sources": [],
       "links": [],
       "related": [],
-      "source_count": null
+      "source_count": null,
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "Zenodo",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "date": "2026-06-15",
+        "title": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception",
+        "snippet": "PAPYROLOGICAL INVERSION section added (P52/P98/P46 material record). MPAI specification and executive summary with FAQs added. 11,310 words.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 2,
+        "site_label": "Zenodo",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "date": "2026-06-14",
+        "title": "Revelation First: A Work Plan (earlier version)",
+        "snippet": "… papyrological inversion), literary-genetic argument (Revelation makes sense as first; nothing else does), political dimension (Josephus as …",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 3,
+        "site_label": "Medium·Lee Sharks",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "date": "2026-06-14",
+        "title": "The Apocalypse as the Earliest New Testament Document",
+        "snippet": "… papyrological inversion (P52/P98/P46), and the literary-genetic thesis: the NT unfolds from Revelation’s seed via the MIDRASHIM TRANSFORM.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       }
+      ],
+      "citation_summary": {
+       "total": 3,
+       "by_relation": {
+        "authored_surface": 3
+       },
+       "distinct_domains": 2,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
+      }
      },
      "measurement_flags": {
       "author_retained": true,
@@ -538273,14 +538534,16 @@
       "entity_type": null,
       "failure_modes": [],
       "stability_status": null,
-      "finding": null
+      "finding": "THREE OF THREE AUTHORED, NO THIRD PARTY AT ALL, AND THE PAPYRUS SIGLA SURVIVE: P52, P98, P46 carried into every card."
      },
      "evidence": {
       "images": [],
       "ocr": [],
       "evidence_statements": []
      },
-     "record_history": {},
+     "record_history": {
+      "interface_observation": "A COINAGE WITH NO COMPETITION AND NO DILUTION. Three cards, all archive, and the composed answer offers to compare \"this papyrological framework\" to traditional New Testament dating — treating the coinage as a framework in good standing. No papyrology card, no Wikipedia, no theology site.\n\nThe manuscript sigla P52, P98 and P46 transmit intact through every card, as do the version notes: \"Papyrological Inversion section added … 11,310 words\". Compare «\"provenance erasure rate\"» on the SAME DAY, where five archive cards produced an answer naming nobody. Here three archive cards produce an answer that treats the framework as the framework. The difference is not the source set — it is what the layer did with it."
+     },
      "verification": [],
      "open_questions": [],
      "fill_state": {
@@ -541105,17 +541368,13 @@
       "related": [],
       "source_count": 1,
       "citation_summary": {
-       "total": 5,
-       "inline": 3,
-       "cards": 2,
+       "total": 4,
        "by_relation": {
-        "authored_surface": 5
+        "authored_surface": 3,
+        "third_party": 1
        },
-       "distinct_domains": 1,
-       "from_verbatim": 5,
-       "from_ocr": 0,
-       "_rule": "ONE LIST, MARKED. Every citation the capture carries is here, archive and third-party alike, each with a relation. They are not split into separate fields because the RETRIEVAL BASIN is the unit of analysis and splitting it would force a reader to reassemble the composition to see it. INLINE and CARD are kept distinct: a source cited inline was used FOR A CLAIM; a source in the strip was displayed and may support nothing in particular.",
-       "_status": "MACHINE-DERIVED, UNVERIFIED, AND NOT TO BE CITED. Extracted by pattern. MANUS ruling 2026-08-12: citations are the most crucial datapoint and must be READ, not grepped. Every regex written against this material today has failed at least once — two published findings were withdrawn on that account. This block is retained only until the read-through replaces it, record by record."
+       "distinct_domains": 2,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
       },
       "citations_MACHINE_DERIVED_UNVERIFIED": [
        {
@@ -541183,6 +541442,64 @@
         "resolvable": true,
         "source_of_record": "verbatim paste"
        }
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "Zenodo",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "date": "2026-05-31",
+        "title": "Directionality of Semantic Labor: A Layered, Computable Measure",
+        "snippet": "Specifies a layered, computable measure of the direction in which a synthetic system's labor flows relative to the user's commissioned task…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 2,
+        "site_label": "International Journal of Science and Research Archive (IJSRA)",
+        "domain": "ijsra.net",
+        "relation": "third_party",
+        "date": "2023-01-14",
+        "title": "Comprehensive study of deep learning based Telugu OCR: A survey",
+        "snippet": "The segmentation will be stronger (to sound, ERASURE, SKEW, etc.), making this recognizer’s work easier…",
+        "reading_note": "The two words appear in a LIST OF OCR NOISE TYPES — erasure and skew as separate image defects — not as a compound term.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 3,
+        "site_label": "zenodo.org",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "date": "2026-05-29",
+        "title": "Erasure Skew: A Measurement Program for the Power-Conditioning",
+        "snippet": "Where the Provenance Erasure Rate (PER) measures the MAGNITUDE of provenance loss, Erasure Skew measures its ORIENTATION — whether the loss falls evenly across…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 4,
+        "site_label": "zenodo.org",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "date": "2026-06-03",
+        "title": "Erasure Skew (Ω) is Power-Conditioned, not Demographic — A Classifier-Correction for the Composition Layer",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       }
       ]
      },
      "measurement_flags": {
@@ -541224,14 +541541,26 @@
       "entity_type": null,
       "failure_modes": [],
       "stability_status": null,
-      "finding": null
+      "finding": "THREE OF FOUR AUTHORED, AND THE METRIC PAIR IS COMPOSED CORRECTLY: PER measures magnitude, Erasure Skew measures orientation. The one collision is a Telugu OCR paper where \"erasure\" and \"skew\" are adjacent items in a list of image defects.",
+      "collision_register": {
+       "collisions": [
+        {
+         "collided_with": "Telugu OCR image-noise taxonomy",
+         "via": "ADJACENCY INSIDE AN ENUMERATION — \"erasure\" and \"skew\" as consecutive items in a parenthetical list of defects, not a compound term",
+         "evidence": "IJSRA survey on deep-learning Telugu OCR"
+        }
+       ],
+       "_rule": "the partner is the measurement, and so is the mechanism."
+      }
      },
      "evidence": {
       "images": [],
       "ocr": [],
       "evidence_statements": []
      },
-     "record_history": {},
+     "record_history": {
+      "interface_observation": "A COLLISION THAT IS NOT EVEN A PHRASE. Card 2 is a Telugu OCR survey in which the words appear as separate entries in a list of noise types: \"stronger (to sound, ERASURE, SKEW, etc.)\". There is no compound term there — the retrieval matched two words that happen to sit beside each other inside a parenthesis. This is the weakest collision mechanism yet recorded, below whitespace matching: ADJACENCY INSIDE AN ENUMERATION.\n\nThe three archive cards carry the metric pair intact and in the right relation — PER for magnitude, Ω for orientation, and the classifier-correction that the skew is power-conditioned rather than demographic. The distinction the deposits exist to draw survives composition."
+     },
      "verification": [],
      "open_questions": [],
      "fill_state": {
