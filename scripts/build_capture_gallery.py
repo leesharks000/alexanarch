@@ -189,6 +189,25 @@ def transcript_block(e, gallery=''):
         parts.append('<div class="cap-tr-label">Machine text, verbatim</div>'
                      + (f'<div class="cap-tr-warn-line">{esc(note)}</div>' if note else '')
                      + f'<div class="cap-tr-body" itemprop="text">{esc(tr)}</div>')
+    ses = e.get("session") or {}
+    if ses.get("continues_into") or ses.get("continued_from"):
+        # THE SESSION SURVIVES THE FRAGMENTATION. A session is bounded by the
+        # paste; where the interface forced one sitting into separate pastes the
+        # rounds are joined by the operator's own note, never merged, because a
+        # published slug is permanent. Read as separate addresses these are
+        # unrelated captures; read as one session the 12 June chain is a
+        # controlled single-variable experiment.
+        rows = ""
+        for x in (ses.get("continued_from") or []):
+            rows += ('<li>continues from <a href="#' + esc(x["slug"]) + '">'
+                     + esc(str(x.get("q") or x["slug"])) + '</a>'
+                     '<div class="cap-cn">' + esc(str(x.get("why") or "")) + '</div></li>')
+        for x in (ses.get("continues_into") or []):
+            rows += ('<li>continues into <a href="#' + esc(x["slug"]) + '">'
+                     + esc(str(x.get("q") or x["slug"])) + '</a>'
+                     '<div class="cap-cn">' + esc(str(x.get("why") or "")) + '</div></li>')
+        parts.append('<div class="cap-tr-label">Session</div>'
+                     '<ul class="cap-cites">' + rows + '</ul>')
     if oq:
         parts.append('<div class="cap-tr-label">Open questions</div>'
                      '<ul class="cap-cites">' + "".join(f'<li>{esc(str(x))}</li>' for x in oq) + '</ul>')
