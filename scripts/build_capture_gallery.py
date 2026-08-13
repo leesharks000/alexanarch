@@ -157,6 +157,54 @@ def split_source_strip(text, cites):
     return text[:cut].rstrip(), text[cut:].strip()
 
 
+def reflow_ocr(text):
+    """Render-only normalisation of an OCR stream. THE STORED RECORD IS UNTOUCHED.
+
+    An OCR stream is a screenshot read by a machine: the line breaks are wherever
+    the IMAGE wrapped, not where the answer did, so a sentence arrives cut into
+    four. Rendering that raw makes the answer look like garble the layer produced,
+    when the garble is an artifact of the read.
+
+    Three conservative operations, none of which can lose a character:
+      1. Lift the leading `--- filename.png ---` marker out as a caption.
+      2. Rejoin a line to the next when the break is MID-SENTENCE — the line does
+         not end in terminal punctuation and the next begins lowercase or with a
+         continuation. A break before a bullet, a heading, a URL or a capitalised
+         new sentence is KEPT, because that break was in the answer.
+      3. Collapse runs of blank lines.
+
+    Nothing is deleted. Rejoining inserts a space and never removes text, so the
+    rendered string contains every word the OCR produced, in order.
+    """
+    t = str(text or "")
+    cap = ""
+    m = re.match(r'\s*---\s*([^\n]+?)\s*---\s*\n', t)
+    if m:
+        cap = m.group(1)
+        t = t[m.end():]
+    lines = [l.rstrip() for l in t.split("\n")]
+    out = []
+    for ln in lines:
+        if not ln.strip():
+            if out and out[-1] != "":
+                out.append("")
+            continue
+        if not out or out[-1] == "":
+            out.append(ln.strip())
+            continue
+        prev = out[-1]
+        starts_new = bool(re.match(r'^([\u2022\-\*\u00b7\u25aa]|\d+[\.\)]|https?:|=|\+|\|)', ln.strip())) \
+            or ln.strip()[:1].isupper() and re.search(r'[\.\!\?:]$', prev) \
+            or re.match(r'^[A-Z][A-Za-z ]{0,28}:$', ln.strip())
+        ends_closed = bool(re.search(r'[\.\!\?:;\u2014]$', prev))
+        if starts_new or ends_closed:
+            out.append(ln.strip())
+        else:
+            out[-1] = prev + " " + ln.strip()
+    body = "\n".join(out).strip()
+    return cap, body
+
+
 def _urlq(q):
     import urllib.parse
     return urllib.parse.quote_plus(str(q or ""))
@@ -264,13 +312,16 @@ def transcript_block(e, gallery=''):
         # throughout. Calling it "machine text, verbatim" invites a reader to
         # treat garble as something the layer said. It is labelled for what it is.
         _isocr = (e.get("ev") == "ocr") or ("OCR" in str(cls).upper())
+        _ocap, _obody = reflow_ocr(answer) if _isocr else ("", "")
         _lbl = ('OCR stream <span class="cap-tr-warn">screenshot read by machine &mdash; '
                 'chrome, line breaks and character errors are artifacts of the read, '
                 'NOT of the answer</span>') if _isocr else 'Machine text, verbatim'
         parts.append(f'<div class="cap-tr-label">{_lbl}</div>'
                      + (f'<div class="cap-tr-warn-line">{esc(note)}</div>' if note else '')
-                     + f'<div class="cap-tr-body{" cap-tr-ocr" if _isocr else ""}" '
-                       f'itemprop="text">{mark_inline_cites(answer)}</div>')
+                     + (('<div class="cap-ocr-cap">' + esc(_ocap) + '</div>' if _ocap else '')
+                        + f'<div class="cap-tr-body cap-tr-ocr" itemprop="text">{esc(_obody)}</div>'
+                        if _isocr else
+                        f'<div class="cap-tr-body" itemprop="text">{mark_inline_cites(answer)}</div>'))
         # The strip is no longer rendered separately — each segment now sits with
         # its own source above, so the reader sees one list, not two.
     # EACH DATED OBSERVATION EXPANDS ON ITS OWN. A record observed twice is two
@@ -296,6 +347,10 @@ def transcript_block(e, gallery=''):
             if _o.get("reading"):
                 _in += ('<div class="cap-tr-label">Reading</div>'
                         f'<div class="cap-tr-prose">{para(_o["reading"])}</div>')
+            if _o.get("transcript"):
+                _ans, _ = split_source_strip(_o["transcript"], _o.get("cite_list") or [])
+                _in += ('<div class="cap-tr-label">Machine text, verbatim</div>'
+                        f'<div class="cap-tr-body">{mark_inline_cites(_ans)}</div>')
             _oc = _o.get("cite_list") or []
             if _oc:
                 _r = ""
@@ -318,10 +373,6 @@ def transcript_block(e, gallery=''):
                 _in += ('<div class="cap-tr-label">Analysis '
                         '<span class="cap-tr-warn">analyst prose, not machine text</span></div>'
                         f'<div class="cap-tr-prose">{para(_o["analysis"])}</div>')
-            if _o.get("transcript"):
-                _ans, _ = split_source_strip(_o["transcript"], _o.get("cite_list") or [])
-                _in += ('<div class="cap-tr-label">Machine text, verbatim</div>'
-                        f'<div class="cap-tr-body">{mark_inline_cites(_ans)}</div>')
             _rows += (f'<details class="cap-obs" id="{esc(_o["slug"])}">'
                       f'<summary><b>{esc(str(_o.get("date") or "undated"))}</b> '
                       f'<span class="cap-obsn">observation {_i} of {len(_obs)}</span> '
