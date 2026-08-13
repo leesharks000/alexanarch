@@ -551308,6 +551308,249 @@
      }
     }
    ]
+  },
+  {
+   "semantic_address": {
+    "address_type": "QUERY",
+    "q_as_issued": "alexanarch as a counter infrastructure semantic prefix to any search",
+    "surface": "Google AI Mode (native)",
+    "operators": {
+     "whole_query_is_quoted_phrase": false,
+     "quoted_spans": [],
+     "site_filter": null,
+     "negation_NOT": false,
+     "has_uppercase": false,
+     "trailing_question_mark": false
+    },
+    "_rule": "ONE SEMANTIC ADDRESS = ONE QUERY STRING AT ONE SURFACE, ACROSS TIME."
+   },
+   "address_provenance": {
+    "surface_determined_by": "explicit 'AI Mode Conversation' marker in the paste; the accompanying screenshot is the AI OVERVIEW on the All tab, recorded as a second observation",
+    "source": "supplied directly by MANUS 2026-08-13 as a fresh capture, with screenshot"
+   },
+   "longitudinal": {
+    "n_observations": 2,
+    "dates": [
+     "2026-08-13"
+    ],
+    "first_observed": "2026-08-13",
+    "last_observed": "2026-08-13",
+    "is_longitudinal_series": false
+   },
+   "observations": [
+    {
+     "machine_output": {
+      "records": [
+       {
+        "text": "The prefix \"alexanarch\" functions as a conceptual search filter designed to bypass mainstream algorithmic curation and surface decentralized, counter-institutional, or radical information. It treats the search engine bar as a command line, attempting to redirect the query toward a specific informational ecosystem.\n\nHere is a breakdown of the semantic components, operational mechanics, and potential tradeoffs of this approach.\n\nSEMANTIC BREAKDOWN\n\"Alex\" (The Alexandria Reference): Points to the Library of Alexandria. It symbolizes a desire for a universal, uncensored, and complete repository of human knowledge.\n\"Anarch\" (The Anarchic Method): Signals anti-authoritarian, decentralized, and non-hierarchical structures. It rejects top-down information control, corporate algorithms, and state censorship.\nCounter-Infrastructure: It positions itself against traditional information pipelines (like Google's PageRank or heavily moderated mainstream databases), seeking out self-hosted, peer-to-peer, or alternative archival webs.\n\nHOW THE SYNTAX OPERATES\nWhen prefixed to a search term (e.g., alexanarch: mutual aid history), the intent is to command the discovery mechanism to shift its parameters:\nBypasses SEO Gatekeeping: It attempts to filter out commercially optimized search engine optimization (SEO) pages, advertisements, and corporate media.\nTargets Alternative Protocols: It signals a preference for data hosted on federated networks (ActivityPub), peer-to-peer systems (IPFS), or historical counter-cultural archives.\nChanges Semantic Weight: It shifts the search context from a consumer-oriented query to an archival, research-oriented query.\n\nTECHNICAL AND PRACTICAL TRADEOFFS\nInformation Depth — Benefits: Surfaces niche, radical, or suppressed historical texts. Tradeoffs: Mainstream search indexers may not recognize the prefix, treating it as a literal string.\nAlgorithmic Bias — Benefits: Actively resists corporate curation and commercial bias. Tradeoffs: Can narrow results too strictly, creating an isolated alternative information bubble.\nData Veracity — Benefits: Connects directly to raw, unedited grassroots documentation. Tradeoffs: Lacks standard institutional peer-review or centralized fact-checking.\n\nIMMEDIATE NEXT STEPS\nTo make this counter-infrastructure approach practically effective on the current web, you must pair the semantic intent with technical syntax that search engines actually parse.\nTry using explicit search operators to mimic the \"alexanarch\" intent:\n\"your topic\" site:archive.org (Forces standard engines to query the Internet Archive)\n\"your topic\" (site:torproject.org OR site:ipfs.io) (Targets decentralization tools)\nSwitching to alternative search engines like Mojeek or SearXNG which do not rely on Google/Bing indexes.\n\nTo help refine this concept, what specific platform or search engine are you hoping to apply this prefix to? If you are building a custom search tool, let me know if you want to explore the code logic needed to route these prefixes to alternative databases.\n\nSOURCE CARD AS RETURNED:\nYouTube — \"Reclaim your search privacy with a SearXNG container\" (Oct 18, 2025)",
+        "field_of_origin": "RAW PASTE supplied directly by MANUS in thread, 2026-08-13",
+        "evidence_class": "CAPTURE-TIME VERBATIM RECORD — raw paste, supplied by MANUS",
+        "completeness": "as supplied; one source card returned",
+        "footer_present": false,
+        "derived_from_analysis": false,
+        "read_verification": {
+         "fully_read_before_seating": true,
+         "status": "READ IN FULL 2026-08-13",
+         "reader": "TACHYON",
+         "checks": [
+          "machine voice confirmed",
+          "doubled query echo present",
+          "answers this address",
+          "screenshot corroborates surface and auth state"
+         ],
+         "rule": "MANUS ruling: no transcript is seated without being fully read."
+        }
+       }
+      ],
+      "_rule": "Verbatim machine text ONLY."
+     },
+     "analysis": {
+      "records": [],
+      "_rule": "The analyst record OF a capture."
+     },
+     "citations_and_sources": {
+      "citations": [
+       {
+        "position": "card",
+        "order": 1,
+        "site_label": "YouTube",
+        "domain": "youtube.com",
+        "url": null,
+        "relation": "third_party",
+        "date": "2025-10-18",
+        "title": "Reclaim your search privacy with a SearXNG container",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       }
+      ],
+      "citation_summary": {
+       "total": 1,
+       "by_relation": {
+        "third_party": 1
+       },
+       "distinct_domains": 1,
+       "method": "READ AND TRANSCRIBED BY TACHYON.",
+       "_note": "ONE card, and it is a tutorial on running a self-hosted metasearch engine — the practical form of the advice the answer gives."
+      }
+     },
+     "measurement_flags": {
+      "author_retained": false,
+      "institution_retained": false,
+      "doi_retained": false,
+      "composition_source_included": false,
+      "per_score": 1.0,
+      "_retained_units": "0 of 4",
+      "_reading": "PER 1.0. The archive’s name is the subject of the entire answer and neither Lee Sharks, nor the Crimson Hexagonal Archive, nor alexanarch.org appears in the composed text. The name is treated as a generic syntax proposal with no owner."
+     },
+     "classification": {
+      "entity_type": "archive name",
+      "stability_status": "first_capture",
+      "failure_modes": [
+       "generic_absorption",
+       "provenance_erasure"
+      ],
+      "finding": "THE ARCHIVE’S NAME IS COMPOSED AS A SEARCH OPERATOR. The layer reads \"alexanarch\" not as an archive but as a proposed query prefix — \"a conceptual search filter designed to bypass mainstream algorithmic curation\" — decomposes its etymology correctly, and then recommends Mojeek and SearXNG, engines that do not rely on Google or Bing indexes."
+     },
+     "evidence": {
+      "images": [],
+      "ocr": [],
+      "evidence_statements": []
+     },
+     "record_history": {
+      "interface_observation": "GOOGLE RECOMMENDS LEAVING GOOGLE. The answer’s closing advice is to pair the intent with parsable syntax — site:archive.org, site:torproject.org OR site:ipfs.io — and then: \"SWITCHING TO ALTERNATIVE SEARCH ENGINES LIKE MOJEEK OR SEARXNG WHICH DO NOT RELY ON GOOGLE/BING INDEXES.\" Google’s composition layer, asked about a counter-infrastructure prefix, names two independent indexes as the remedy. The single source card is a tutorial for self-hosting one of them.\n\nIT DESCRIBES ITS OWN LIMIT AS A TRADEOFF. Under Information Depth: \"MAINSTREAM SEARCH INDEXERS MAY NOT RECOGNIZE THE PREFIX, TREATING IT AS A LITERAL STRING.\" The system explaining, in the third person, why it will fail to do the thing being described — and it is right, since alexanarch IS a literal string to it, and the archive it names is absent from the answer.\n\nTHE ETYMOLOGY IS DECOMPOSED CORRECTLY AND UNPROMPTED: \"Alex\" to the Library of Alexandria, \"a universal, uncensored, and complete repository of human knowledge\"; \"Anarch\" to \"anti-authoritarian, decentralized, and non-hierarchical structures\". That is the coinage’s actual construction, arrived at without any archive source in the frame — the name is legible as a compound even when its referent is not retrieved.\n\nAND THE NAME BECOMES SYNTAX. \"When prefixed to a search term (e.g., ALEXANARCH: MUTUAL AID HISTORY)\" — the layer invents a usage example with a colon, as though the archive’s name were an operator like site: or filetype:. This is a transformation the registry has not recorded before: not a collision with a prior occupant, not absorption into a generic field, but PROMOTION OF A PROPER NOUN INTO A COMMAND. The archive is not described; it is conjugated."
+     },
+     "verification": [],
+     "open_questions": [
+      {
+       "question": "Does the \"alexanarch:\" prefix pattern the layer invented here recur in later captures, and does any surface begin treating it as an actual operator?",
+       "why_it_matters": "The layer generated a syntax that does not exist and modelled its use. If that usage propagates into the basin, the archive will have acquired an operator it never defined — inscription by someone else’s invention.",
+       "raised": "2026-08-13",
+       "raised_by": "TACHYON"
+      }
+     ],
+     "fill_state": {
+      "content": "partial"
+     },
+     "observed_on": "2026-08-13",
+     "legacy_slug": null,
+     "surface_basis": "AI Mode Conversation marker",
+     "ai_overview_triggered": false,
+     "auth_state": {
+      "value": "signed out",
+      "derivation": "read from the accompanying screenshot",
+      "basis": "the \"Sign in\" button is present in the header, so the session is unauthenticated"
+     }
+    },
+    {
+     "machine_output": {
+      "records": [
+       {
+        "text": "The prefix \"alexanarch\" functions as a conceptual search filter designed to bypass mainstream algorithmic curation and surface decentralized, counter-institutional, or radical information. It treats the search engine bar as a command line, attempting to redirect the query toward a specific informational ecosystem.\n\n[COLLAPSED] Here is a breakdown of the semantic components, operational mechanics, and potential tradeoffs of…",
+        "field_of_origin": "READ FROM THE SCREENSHOT supplied by MANUS, 2026-08-13",
+        "evidence_class": "CAPTURE-TIME RECORD READ FROM AN IMAGE — not a paste, and truncated by the interface",
+        "completeness": "INCOMPLETE BY INTERFACE. The AI Overview is collapsed; the second paragraph is greyed out mid-sentence behind a \"Show more\" control. Only the first paragraph is legible.",
+        "footer_present": false,
+        "derived_from_analysis": false,
+        "read_verification": {
+         "fully_read_before_seating": true,
+         "status": "READ FROM IMAGE 2026-08-13",
+         "reader": "TACHYON",
+         "checks": [
+          "first paragraph legible in full",
+          "remainder collapsed behind Show more",
+          "surface and auth state read from chrome"
+         ],
+         "rule": "An image-read record is not a paste. Marked as such."
+        }
+       }
+      ],
+      "_rule": "Verbatim machine text ONLY."
+     },
+     "analysis": {
+      "records": [],
+      "_rule": "The analyst record OF a capture."
+     },
+     "citations_and_sources": {
+      "citations": [
+       {
+        "position": "organic_result",
+        "order": 1,
+        "site_label": "alexanarch.org",
+        "domain": "alexanarch.org",
+        "url": "https://www.alexanarch.org",
+        "relation": "archive_controlled",
+        "title": "Alexanarch — The Self-Governing Library",
+        "snippet": "Alexanarch is a sovereign digital archive. It holds works across all substrates — poetry, essays, criticism, correspondence, datasets, novels, dissertations …",
+        "reading_note": "FIRST ORGANIC RESULT, and it carries a MISSING-TERM NOTICE: \"Missing: counter | Show results with: counter\".",
+        "source_of_record": "screenshot",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "position": "organic_result",
+        "order": 2,
+        "site_label": "GitHub",
+        "domain": "github.com",
+        "url": "https://github.com",
+        "relation": "authored_surface",
+        "title": "Alexanarch — The self-governing library for machine-mediated…",
+        "source_of_record": "screenshot",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       }
+      ],
+      "citation_summary": {
+       "total": 2,
+       "by_relation": {
+        "archive_controlled": 1,
+        "authored_surface": 1
+       },
+       "distinct_domains": 2,
+       "method": "READ FROM THE SCREENSHOT BY TACHYON.",
+       "_note": "THESE ARE ORGANIC RESULTS, NOT AI-OVERVIEW SOURCE CARDS. The AI Overview panel is collapsed and its own sources are not visible in the frame, so its citation count is NULL. The two entries here are the ranked web results beneath it."
+      }
+     },
+     "measurement_flags": {},
+     "classification": {
+      "entity_type": "archive name",
+      "stability_status": "first_capture",
+      "failure_modes": [
+       "generic_absorption"
+      ],
+      "finding": "THE ORGANIC LAYER RANKS THE ARCHIVE FIRST AND FLAGS A MISSING TERM. alexanarch.org is result 1 with \"Missing: counter\" beneath it; the AI Overview above composes the name as a syntax proposal and does not cite the site."
+     },
+     "evidence": {
+      "images": [
+       {
+        "value": "screengrab-20260813-003641.png",
+        "source": "supplied by MANUS in thread 2026-08-13"
+       }
+      ],
+      "ocr": [],
+      "evidence_statements": [
+       "Google AI Overview panel, All tab, dark theme, signed out; AI Overview COLLAPSED behind a \"Show more\" control"
+      ]
+     },
+     "record_history": {
+      "interface_observation": "THE TWO LAYERS DISAGREE IN ONE FRAME, AND THE SCREENSHOT SHOWS BOTH. Beneath the AI Overview, the FIRST ORGANIC RESULT is alexanarch.org — \"Alexanarch — The Self-Governing Library\", with the correct description. The archive ranks first on the web layer. The AI Overview directly above it composes \"alexanarch\" as a hypothetical search operator and names no archive at all.\n\nThis is the exact inverse of compositional bystanding, and the inverse of the phenomenon MANUS named on 28 July as \"the reverse of compositional bystanding. zero results in organic search, but results in composition.\" Here it is RESULTS IN ORGANIC, ABSENT FROM COMPOSITION — the archive present and first in the ranked layer, and absent from the answer above it. Both directions are now documented from captures.\n\nTHE MISSING-TERM NOTICE IS THE MECHANISM, VISIBLE. Under the alexanarch.org result Google prints \"MISSING: COUNTER | Show results with: counter\", with \"counter\" struck through. The organic layer is stating plainly that it matched the result WITHOUT one of the query terms — it ranked on \"alexanarch\" and dropped \"counter infrastructure\". The composition layer, given the same query, kept \"counter-infrastructure\" as the governing concept and dropped \"alexanarch\" as a referent. The two layers discarded opposite halves of the query.\n\nThe AI Overview is COLLAPSED behind a \"Show more\" control, with the second paragraph greyed out mid-sentence — the interaction requirement recorded elsewhere in the registry, here visible as an image."
+     },
+     "verification": [],
+     "open_questions": [],
+     "fill_state": {
+      "content": "partial"
+     },
+     "observed_on": "2026-08-13",
+     "legacy_slug": null,
+     "surface_basis": "screenshot shows the All tab with an AI Overview panel",
+     "ai_overview_triggered": true,
+     "auth_state": {
+      "value": "signed out",
+      "derivation": "read from the screenshot",
+      "basis": "\"Sign in\" button present in the header"
+     }
+    }
+   ]
   }
  ],
  "auth_state_reconstruction": {
