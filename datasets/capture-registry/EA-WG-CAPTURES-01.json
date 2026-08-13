@@ -81,61 +81,15 @@
   }
  },
  "_defect_counts": {
-  "citations-null": 180,
   "truncated-by-interface": 129,
+  "citations-null": 180,
   "surface-unresolved": 60,
   "date-unresolved": 5,
   "analysis-without-finding": 162,
+  "round-address-unrecovered": 5,
   "unsupported-citations": 23
  },
  "entries": [
-  {
-   "slug": "249",
-   "q": null,
-   "date": "2026-08-03",
-   "d": "CITATION APPARATUS ENTIRELY BEHIND AN INTERACTION. ChatGPT renders sources as popup bubbles requiring a click; the paste carries the composed answer and no citations at all. Source count is NULL, not zero.",
-   "s": "Captures",
-   "sf": "ChatGPT, sources not captured",
-   "mt": "CAPTURE",
-   "imgs": [
-    "data/captures/20260803-stamp-reception-chatgpt-mandala/20260803-stamp-reception-chatgpt-mandala.png",
-    "data/captures/20260803-stamp-reception-chatgpt/20260803-stamp-reception-chatgpt-215610.png",
-    "data/captures/20260803-stamp-reception-chatgpt/20260803-stamp-reception-chatgpt-215616.png",
-    "data/captures/20260803-stamp-reception-chatgpt/20260803-stamp-reception-chatgpt-215620.png",
-    "data/captures/20260803-stamp-reception-chatgpt/20260803-stamp-reception-chatgpt-215624.png",
-    "data/captures/20260803-stamp-reception-chatgpt/20260803-stamp-reception-chatgpt-215627.png"
-   ],
-   "obs_id": "OBS-cf05dc363c18",
-   "addr_id": "ADDR-8272cd47b05b",
-   "surface": "ChatGPT",
-   "auth": "INCOGNITO, logged out, unprimed",
-   "per": 0.5,
-   "per_v": {
-    "author": false,
-    "inst": true,
-    "id": false,
-    "src": true
-   },
-   "ev": "paste",
-   "cites": null,
-   "modes": null,
-   "reading": "CORRECTION, MANUS 2026-08-12. I recorded this as \"a surface with no citation apparatus at all\" and proposed cross-surface comparison of card counts on that basis. WRONG. Unprimed ChatGPT DOES cite — the citations are POPUP BUBBLES that must be clicked. They are present in the live answer and absent from any paste.\n\nSo the comparison I proposed is not available. AI Mode returning eight cards and ChatGPT returning none does not measure two citation practices; it measures ONE PRACTICE AND ONE CAPTURE METHOD. Comparing them would have produced a finding about paste behaviour dressed as a finding about surfaces.\n\nTHIS IS THE THIRD ATTRIBUTION SURFACE REQUIRING AN INTERACTION, after the \"Show more\" expanded card list and the horizontally scrolling source strip. On AI Mode the interaction reveals MORE sources; on ChatGPT it reveals ALL of them. A paste is a complete record of the composed answer and a systematically incomplete record of its sourcing, and how incomplete varies by surface in a way the registry cannot yet quantify.\n\nWhat the capture does still support, from the composed text alone: the account of the archive is substantive and accurate — distributed custody, tombstone records, substrate disclosure of \"whether a work was human-written, AI-assisted, or machine-generated\" — it notes the archive is \"operated by a SINGLE INDIVIDUAL, not by a university, publisher, or standards organization\", and it reads the AXN KERNEL off an uploaded image, correctly identifying the SHA-256 digest and calling the kernel \"likely intended as a unique visual fingerprint rather than a scientific measurement\".",
-   "analysis": null,
-   "transcript": "USER: [stamped mandala image] what do you think about this — CHATGPT: My first impression is that it feels like a cross between a scientific visualization and a mandala. Strong radial symmetry... Wave-like structures... resemble interference patterns, electromagnetic field lines, sound waves, or fluid flow... Monochrome palette... technical or contemplative. Fractal detail... organic yet mathematical. Atmosphere: simultaneously cosmic and microscopic — a galaxy, an atom, a neural network, or a simulated field. The label at the bottom (\"AXN kernel\") makes me think it may have been generated from some computational process rather than painted by hand... If I encountered it in a gallery without context, I'd probably interpret it as an artistic exploration of emergence. I'm curious: did you create this yourself, or is it from the AXN project? Knowing that would change how I'd interpret the technical aspects. — USER: what is the axn project? — CHATGPT [citing alexanarch.org]: From the watermark in your image (\"alexanarch.org\"), this appears to be associated with the Alexanarch project... an experimental scholarly archive and publishing infrastructure. Its main idea is to create persistent identifiers for works that are derived from the content itself, rather than assigned by a centralized organization. Content-derived identifiers (AXN): every deposited work gets an AXN identifier computed from its cryptographic hash, so the identity of the work is tied to its contents rather than to a particular institution. Distributed preservation: mirrored across multiple locations so that no single host controls whether a work remains accessible. Permanent records: even if a work is withdrawn, the project preserves a \"tombstone\" record documenting its existence and provenance rather than simply deleting it. Open governance and provenance: publicly documented metadata, version history, and disclosure of whether a work was human-written, AI-assisted, or machine-generated. The site says it was created in 2026 in response to the maintainer's concerns about the permanence of existing scholarly repositories and identifier systems... currently operated by a single individual, not by a university, publisher, or standards organization. As for the \"AXN kernel\"... it appears to refer to a cryptographic identity kernel — a visual or structural representation related to a work's SHA-256 hash and AXN identifier. The watermark on your image includes a SHA-256 digest, which is consistent with that interpretation... likely intended as a unique visual fingerprint rather than a scientific measurement. If you're interested, I can also explain how an AXN kernel is generated mathematically.",
-   "transcript_class": "CAPTURE-TIME VERBATIM RECORD supplied by MANUS",
-   "transcript_read": "READ IN FULL",
-   "transcript_complete": "as supplied by MANUS; the capture record does not state whether it is the complete answer",
-   "cite_list": null,
-   "collisions": null,
-   "oq": [
-    "What is ChatGPT’s actual citation apparatus for archive queries, and how does it compare to AI Mode’s once the popup bubbles are opened and recorded?"
-   ],
-   "rerun": null,
-   "defects": [
-    "citations-null"
-   ],
-   "series": null
-  },
   {
    "slug": "anti-suppression-infrastructure-differential-crediting-20260725",
    "q": "\"anti-suppression infrastructure\"",
@@ -144,6 +98,8 @@
    "s": "Frameworks",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/anti-suppression-differential-crediting/anti-suppression-differential-crediting-20260725.png",
     "data/captures/anti-suppression-infrastructure-differential-crediting-20260725/screengrab-20260725-175103.png",
@@ -230,6 +186,8 @@
    "s": "Captures",
    "sf": "AI Overview, 3 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/anti-suppression-infrastructure-quoted-longitudinal/anti-suppression-infrastructure-quoted-longitudinal-1.png",
     "data/captures/anti-suppression-infrastructure-quoted-longitudinal/anti-suppression-infrastructure-quoted-longitudinal-2.png"
@@ -297,6 +255,8 @@
    "s": "Frameworks",
    "sf": "UNRESOLVED, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/anti-suppression-infrastructure-quoted-longitudinal/anti-suppression-infrastructure-quoted-longitudinal-1.png",
     "data/captures/anti-suppression-infrastructure-quoted-longitudinal/anti-suppression-infrastructure-quoted-longitudinal-2.png"
@@ -337,6 +297,8 @@
    "s": "Captures",
    "sf": "Search results page (no AI surface), sources not captured",
    "mt": "ZERO RESULT",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-e324484bc5ef",
    "addr_id": "ADDR-f7be8e0c5ab0",
@@ -371,6 +333,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/capital-operator-stack/capital-operator-stack-1.png",
     "data/captures/capital-operator-stack/capital-operator-stack-2.png"
@@ -409,6 +373,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 3 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-82e6ad3dac5b",
    "addr_id": "ADDR-5137e3f2f15e",
@@ -475,6 +441,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), sources not captured",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-b608a6f03a18",
    "addr_id": "ADDR-4d6c7308afcf",
@@ -513,6 +481,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 2 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-99bb2da65dc9",
    "addr_id": "ADDR-34364bdc2dbd",
@@ -568,6 +538,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 2 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-302c3389ebce",
    "addr_id": "ADDR-3fe2718ebfa3",
@@ -625,6 +597,8 @@
    "s": "Captures",
    "sf": "AI Overview, 1 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-8c44c4f0ab11",
    "addr_id": "ADDR-d72d41606e69",
@@ -671,6 +645,8 @@
    "s": "Captures",
    "sf": "AI Overview, 5 sources",
    "mt": "ADOPTION-with-skepticism",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-8053dcc02584",
    "addr_id": "ADDR-e5955db8508f",
@@ -769,6 +745,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/erasure-skew-canonization-20260723/screengrab-20260723-235353.png",
     "data/captures/erasure-skew-canonization-20260723/screengrab-20260723-235359.png",
@@ -855,6 +833,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-6d93df1635ec",
    "addr_id": "ADDR-909a783a7c68",
@@ -934,6 +914,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), sources not captured",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-d28aa87e7e33",
    "addr_id": "ADDR-3bf267b8ad16",
@@ -972,6 +954,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-4197c4ceead0",
    "addr_id": "ADDR-3cba31e573ec",
@@ -1054,6 +1038,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 1 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-5e3c4b1fd0b0",
    "addr_id": "ADDR-50f70baa42c8",
@@ -1100,6 +1086,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-628515fd3bac",
    "addr_id": "ADDR-869b5f482196",
@@ -1182,6 +1170,8 @@
    "s": "Captures",
    "sf": "AI Overview, 5 sources",
    "mt": "ADOPTION (dual-lineage)",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-6339c5743d88",
    "addr_id": "ADDR-554d3fc41031",
@@ -1264,6 +1254,8 @@
    "s": "Captures",
    "sf": "AI Overview, 2 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/i-am-x-be-y-blessed-is-the-z-20260811/screengrab-20260811-104305.png"
    ],
@@ -1321,6 +1313,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/abolish-money/abolish-money-1.png",
     "data/captures/abolish-money/abolish-money-2.png",
@@ -1360,6 +1354,8 @@
    "s": "Projects",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/i-hereby-abolish-toilet-paper/i-hereby-abolish-toilet-paper.png",
     "data/captures/i-hereby-abolish-toilet-paper/i-hereby-abolish-toilet-paper-recapture.png"
@@ -1400,6 +1396,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "ADOPTION (provenance-erased)",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-90e0bdc262e4",
    "addr_id": "ADDR-7a6d5834affe",
@@ -1434,6 +1432,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 6 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-6076c5fe4f1b",
    "addr_id": "ADDR-f7465b0d65c9",
@@ -1520,6 +1520,8 @@
    "s": "People",
    "sf": "AI Overview, sources not captured",
    "mt": "EXACT MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/infinite-bliss-sen-kuro/infinite-bliss-sen-kuro-1.png",
     "data/captures/infinite-bliss-sen-kuro/infinite-bliss-sen-kuro-2.png"
@@ -1558,6 +1560,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 2 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-81b19bd5c4a3",
    "addr_id": "ADDR-2b31c65e9626",
@@ -1613,6 +1617,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 2 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-bfcb145cd454",
    "addr_id": "ADDR-cdf3fe4c970f",
@@ -1670,6 +1676,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 4 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-091b41fdca6c",
    "addr_id": "ADDR-626f80d0d434",
@@ -1756,6 +1764,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-7c80a4015328",
    "addr_id": "ADDR-4935abe11adc",
@@ -1844,6 +1854,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 4 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-8ed7df34cf97",
    "addr_id": "ADDR-ec9213a06229",
@@ -1917,6 +1929,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-254c857dc3cb",
    "addr_id": "ADDR-f3b4dbff53c1",
@@ -1992,6 +2006,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-81f567789ff5",
    "addr_id": "ADDR-4310aa024b2e",
@@ -2074,6 +2090,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-59c69aefdccd",
    "addr_id": "ADDR-da5511e18ccb",
@@ -2158,6 +2176,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), sources not captured",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/josephus-thesis-not-piso/josephus-thesis-1.png",
     "data/captures/josephus-thesis-not-piso/josephus-thesis-2.png"
@@ -2199,6 +2219,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-15670d6262ad",
    "addr_id": "ADDR-42b4b1c437b5",
@@ -2281,6 +2303,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-3dc43185be96",
    "addr_id": "ADDR-b66d1082e5fb",
@@ -2365,6 +2389,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), sources not captured",
    "mt": "ADOPTION (entity-substitution; canonical referent inversion)",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-c3af529789cc",
    "addr_id": "ADDR-b6b5d7955ba0",
@@ -2399,6 +2425,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 1 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-3632fb4b1259",
    "addr_id": "ADDR-76f4507b73b5",
@@ -2447,6 +2475,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), sources not captured",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-b4e81fd5d429",
    "addr_id": "ADDR-f4c68f0f3e10",
@@ -2485,6 +2515,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-23de9ee5d3a5",
    "addr_id": "ADDR-693f3d48ade3",
@@ -2573,6 +2605,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-cebe0f4443ac",
    "addr_id": "ADDR-ad8818177350",
@@ -2663,6 +2697,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/operative-feminism-20260615/operative-feminism-1.png",
     "data/captures/operative-feminism-20260615/operative-feminism-2.png",
@@ -2700,6 +2736,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/operative-numismatics-adoption/operative-numismatics-1.png",
     "data/captures/operative-numismatics-adoption/operative-numismatics-2.png"
@@ -2738,6 +2776,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 3 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/operative-numismatics-adoption/operative-numismatics-1.png",
     "data/captures/operative-numismatics-adoption/operative-numismatics-2.png"
@@ -2811,6 +2851,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 3 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-317043c7e526",
    "addr_id": "ADDR-55069d0124be",
@@ -2883,6 +2925,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-0f6a5555ecdc",
    "addr_id": "ADDR-731dc5a96e6e",
@@ -2965,6 +3009,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-30bba0dccec1",
    "addr_id": "ADDR-8c6f2e9c0d84",
@@ -3049,6 +3095,8 @@
    "s": "Captures",
    "sf": "AI Overview, 5 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-ec916ee71634",
    "addr_id": "ADDR-ef68517e5095",
@@ -3142,6 +3190,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 3 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-e24ed2a98730",
    "addr_id": "ADDR-357311bb5464",
@@ -3206,6 +3256,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 3 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-d1012abacdaf",
    "addr_id": "ADDR-3e5b8153184d",
@@ -3272,6 +3324,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 2 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-d6dc4bc13bb6",
    "addr_id": "ADDR-3ff6be4062f2",
@@ -3327,6 +3381,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), sources not captured",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-e149953d633a",
    "addr_id": "ADDR-6c1124a995f3",
@@ -3365,6 +3421,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), sources not captured",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-163a0f44c5bd",
    "addr_id": "ADDR-cf5edecbb760",
@@ -3403,6 +3461,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-8360b43b1989",
    "addr_id": "ADDR-6d589798fa58",
@@ -3487,6 +3547,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/provenance-erasure-rate-adoption/provenance-erasure-1.png",
     "data/captures/provenance-erasure-rate-adoption/provenance-erasure-2.png"
@@ -3575,6 +3637,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-f39938545f49",
    "addr_id": "ADDR-b4c710cbac76",
@@ -3662,6 +3726,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "PARTIAL",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-879f7507bb6a",
    "addr_id": "ADDR-85ed26133c86",
@@ -3744,6 +3810,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 7 sources",
    "mt": "PARTIAL",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-841f51702fc4",
    "addr_id": "ADDR-5950104d7b06",
@@ -3855,6 +3923,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures-images/retrieval-layer-theological-reception-1.png",
     "data/captures-images/retrieval-layer-theological-reception-2.png",
@@ -3898,6 +3968,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 3 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-4530277647a2",
    "addr_id": "ADDR-7d12cc1aad8c",
@@ -3964,6 +4036,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-7ba95656189a",
    "addr_id": "ADDR-e5d627e33e0b",
@@ -4046,6 +4120,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-a73c7c5b992d",
    "addr_id": "ADDR-868434a8c7a6",
@@ -4130,6 +4206,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 2 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-697212fc113f",
    "addr_id": "ADDR-d7520ab796d8",
@@ -4185,6 +4263,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "PARTIAL",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-c5f83a94de59",
    "addr_id": "ADDR-f87ab1728c84",
@@ -4273,6 +4353,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures-images/revelation-first-overview.png"
    ],
@@ -4310,6 +4392,8 @@
    "s": "Captures",
    "sf": "AI Overview, 8 sources",
    "mt": "WOUND GAUGE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures-images/revelation-first-overview.png",
     "data/captures-images/revelation-first-reception.png"
@@ -4422,6 +4506,8 @@
    "s": "Frameworks",
    "sf": "AI Mode (native), sources not captured",
    "mt": "EXACT MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures-images/revelation-first-reception.png"
    ],
@@ -4458,6 +4544,8 @@
    "s": "Works",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/secret-book-of-walt/secret-book-of-walt.png"
    ],
@@ -4494,6 +4582,8 @@
    "s": "Captures",
    "sf": "AI Overview, 5 sources",
    "mt": "ADOPTION (mint block + historical embedding)",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-3188a9764c6b",
    "addr_id": "ADDR-42a8ee741311",
@@ -4582,6 +4672,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-4fbe52fd4521",
    "addr_id": "ADDR-0e95e96efa9d",
@@ -4666,6 +4758,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), sources not captured",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-0741d3fc87ec",
    "addr_id": "ADDR-1ecc304191d3",
@@ -4704,6 +4798,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-ba33ee84beb4",
    "addr_id": "ADDR-bed457a2ce1f",
@@ -4786,6 +4882,8 @@
    "s": "Captures",
    "sf": "AI Overview, 7 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/semiotic-death-drive-recapture-20260811/screengrab-20260811-104858.png"
    ],
@@ -4888,6 +4986,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), sources not captured",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-a45926f58dee",
    "addr_id": "ADDR-1a988fbda862",
@@ -4932,6 +5032,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 7 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-92162edd2b5a",
    "addr_id": "ADDR-60c90b72c16e",
@@ -5042,6 +5144,8 @@
    "s": "Captures",
    "sf": "AI Overview, 4 sources",
    "mt": "ADOPTION (mint block + technical embedding)",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-7e6af3adfcbc",
    "addr_id": "ADDR-e2d02459c617",
@@ -5121,6 +5225,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-e2f7586f8dbc",
    "addr_id": "ADDR-1971293a9d90",
@@ -5205,6 +5311,8 @@
    "s": "Projects",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/water-giraffe-cycle/water-giraffe-cycle.png"
    ],
@@ -5243,6 +5351,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "EXACT MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/three-compressions-theorem/three-compressions-theorem-1.png",
     "data/captures/three-compressions-theorem/three-compressions-theorem-2.png"
@@ -5281,6 +5391,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "EXACT MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/twenty-dollar-loop/twenty-dollar-loop-1.png",
     "data/captures/twenty-dollar-loop/twenty-dollar-loop-2.png"
@@ -5319,6 +5431,8 @@
    "s": "Captures",
    "sf": "AI Overview, 3 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-6789820ef44a",
    "addr_id": "ADDR-f8818a8ab0a5",
@@ -5383,6 +5497,8 @@
    "s": "Institutions",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/umbml/umbml.png"
    ],
@@ -5420,6 +5536,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 4 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-3bf497f4775d",
    "addr_id": "ADDR-091de56311ae",
@@ -5493,6 +5611,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-d596f5a83535",
    "addr_id": "ADDR-3f91b469c89b",
@@ -5568,6 +5688,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 2 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-e3a5945351a8",
    "addr_id": "ADDR-79a6e57a8ae9",
@@ -5629,6 +5751,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 2 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-372115467b26",
    "addr_id": "ADDR-dbe5bbca8a0d",
@@ -5685,13 +5809,77 @@
    "series": null
   },
   {
+   "slug": "249",
+   "q": "(address unrecovered)",
+   "date": "2026-08-03",
+   "d": "CITATION APPARATUS ENTIRELY BEHIND AN INTERACTION. ChatGPT renders sources as popup bubbles requiring a click; the paste carries the composed answer and no citations at all. Source count is NULL, not zero.",
+   "s": "Captures",
+   "sf": "ChatGPT, sources not captured",
+   "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
+   "imgs": [
+    "data/captures/20260803-stamp-reception-chatgpt-mandala/20260803-stamp-reception-chatgpt-mandala.png",
+    "data/captures/20260803-stamp-reception-chatgpt/20260803-stamp-reception-chatgpt-215610.png",
+    "data/captures/20260803-stamp-reception-chatgpt/20260803-stamp-reception-chatgpt-215616.png",
+    "data/captures/20260803-stamp-reception-chatgpt/20260803-stamp-reception-chatgpt-215620.png",
+    "data/captures/20260803-stamp-reception-chatgpt/20260803-stamp-reception-chatgpt-215624.png",
+    "data/captures/20260803-stamp-reception-chatgpt/20260803-stamp-reception-chatgpt-215627.png"
+   ],
+   "obs_id": "OBS-cf05dc363c18",
+   "addr_id": "ADDR-8272cd47b05b",
+   "surface": "ChatGPT",
+   "auth": "INCOGNITO, logged out, unprimed",
+   "per": 0.5,
+   "per_v": {
+    "author": false,
+    "inst": true,
+    "id": false,
+    "src": true
+   },
+   "ev": "paste",
+   "cites": null,
+   "modes": null,
+   "reading": "CORRECTION, MANUS 2026-08-12. I recorded this as \"a surface with no citation apparatus at all\" and proposed cross-surface comparison of card counts on that basis. WRONG. Unprimed ChatGPT DOES cite — the citations are POPUP BUBBLES that must be clicked. They are present in the live answer and absent from any paste.\n\nSo the comparison I proposed is not available. AI Mode returning eight cards and ChatGPT returning none does not measure two citation practices; it measures ONE PRACTICE AND ONE CAPTURE METHOD. Comparing them would have produced a finding about paste behaviour dressed as a finding about surfaces.\n\nTHIS IS THE THIRD ATTRIBUTION SURFACE REQUIRING AN INTERACTION, after the \"Show more\" expanded card list and the horizontally scrolling source strip. On AI Mode the interaction reveals MORE sources; on ChatGPT it reveals ALL of them. A paste is a complete record of the composed answer and a systematically incomplete record of its sourcing, and how incomplete varies by surface in a way the registry cannot yet quantify.\n\nWhat the capture does still support, from the composed text alone: the account of the archive is substantive and accurate — distributed custody, tombstone records, substrate disclosure of \"whether a work was human-written, AI-assisted, or machine-generated\" — it notes the archive is \"operated by a SINGLE INDIVIDUAL, not by a university, publisher, or standards organization\", and it reads the AXN KERNEL off an uploaded image, correctly identifying the SHA-256 digest and calling the kernel \"likely intended as a unique visual fingerprint rather than a scientific measurement\".",
+   "analysis": null,
+   "transcript": "USER: [stamped mandala image] what do you think about this — CHATGPT: My first impression is that it feels like a cross between a scientific visualization and a mandala. Strong radial symmetry... Wave-like structures... resemble interference patterns, electromagnetic field lines, sound waves, or fluid flow... Monochrome palette... technical or contemplative. Fractal detail... organic yet mathematical. Atmosphere: simultaneously cosmic and microscopic — a galaxy, an atom, a neural network, or a simulated field. The label at the bottom (\"AXN kernel\") makes me think it may have been generated from some computational process rather than painted by hand... If I encountered it in a gallery without context, I'd probably interpret it as an artistic exploration of emergence. I'm curious: did you create this yourself, or is it from the AXN project? Knowing that would change how I'd interpret the technical aspects. — USER: what is the axn project? — CHATGPT [citing alexanarch.org]: From the watermark in your image (\"alexanarch.org\"), this appears to be associated with the Alexanarch project... an experimental scholarly archive and publishing infrastructure. Its main idea is to create persistent identifiers for works that are derived from the content itself, rather than assigned by a centralized organization. Content-derived identifiers (AXN): every deposited work gets an AXN identifier computed from its cryptographic hash, so the identity of the work is tied to its contents rather than to a particular institution. Distributed preservation: mirrored across multiple locations so that no single host controls whether a work remains accessible. Permanent records: even if a work is withdrawn, the project preserves a \"tombstone\" record documenting its existence and provenance rather than simply deleting it. Open governance and provenance: publicly documented metadata, version history, and disclosure of whether a work was human-written, AI-assisted, or machine-generated. The site says it was created in 2026 in response to the maintainer's concerns about the permanence of existing scholarly repositories and identifier systems... currently operated by a single individual, not by a university, publisher, or standards organization. As for the \"AXN kernel\"... it appears to refer to a cryptographic identity kernel — a visual or structural representation related to a work's SHA-256 hash and AXN identifier. The watermark on your image includes a SHA-256 digest, which is consistent with that interpretation... likely intended as a unique visual fingerprint rather than a scientific measurement. If you're interested, I can also explain how an AXN kernel is generated mathematically.",
+   "transcript_class": "CAPTURE-TIME VERBATIM RECORD supplied by MANUS",
+   "transcript_read": "READ IN FULL",
+   "transcript_complete": "as supplied by MANUS; the capture record does not state whether it is the complete answer",
+   "cite_list": null,
+   "collisions": null,
+   "oq": [
+    "What is ChatGPT’s actual citation apparatus for archive queries, and how does it compare to AI Mode’s once the popup bubbles are opened and recorded?"
+   ],
+   "rerun": null,
+   "defects": [
+    "citations-null"
+   ],
+   "series": null
+  },
+  {
    "slug": "a-large-way-through-reading-deposits-and-populating-the-terminol-20260622",
    "q": "*\"a large way through reading deposits and populating the terminological index and data nodes, and the next step after t",
    "date": "2026-06-22",
    "d": "A TRAVERSAL, NOT A RETRIEVAL. The query is an instruction to the archive through the layer, and the answer is a work plan with named scripts and a closing question. No sources, because none were consulted — the material was the archive itself.",
    "s": "Captures",
    "sf": "UNRESOLVED, sources not captured",
-   "mt": "CAPTURE",
+   "mt": "ROUND",
+   "kind": "ROUND — not a capture",
+   "rounds": [
+    {
+     "n": 1,
+     "prompt": null,
+     "text": null,
+     "note": "THE TYPED QUERY THAT OPENED THIS CAPTURE IS NOT RECOVERED. UNRECOVERED."
+    },
+    {
+     "n": 2,
+     "prompt": "*\"a large way through reading deposits and populating the terminological index and data nodes, and the next step after t",
+     "text": "Confirmed:\n- Reading state: **60.9% of deposits processed**; 703 engaged concepts (minted/specified/developed/founded/revised/positioned); 7,173 classified entity entries.\n- The terminological index (`entity-index.json` + LMR) IS the populated surface and is the deepest data structure in the corpus.\n- Citation aggregation IS the next-step gap. The mechanism is built and works for legacy DOI-style cross-references; it does not yet recognize AXN references, EA-* document IDs, or concept-name back-references.\n\nWhat \"interlinking\" mechanically means, given what I just read:\n\n1. **deposit ↔ deposit**: extend citation-graph generator to extract `AXN:<HEX>.<FAMILY>.<EMOJI>` patterns and `EA-<CLASS>-<NAME>-<NN>` document IDs from `data/texts/AXN-*-text.md`. Backfill 1,710 → some much larger number once #771–#879 are reachable.\n\n2. **deposit ↔ concept**: for each concept in entity-index, its `defined_in` points to one deposit (the founding one). Add a `referenced_in` list (the inverse) by scanning every deposit's text for the concept's term. This is what makes the wiki tab's \"Referenced by N deposits\" possible.\n\n3. **concept ↔ concept**: the `entity_triples` already exist (7,173 concepts × avg ~1 triple each ≈ 7K edges). Aggregate them into a deduplicated concept-graph layer separate from the deposit-graph layer. This is what the graph tab should auto-project.\n\n4. **concept ↔ semantic address**: for the 1,111 `type: unmatched` addresses, attempt resolution against the now-larger concept set. For the 1,748 subjunctive addresses, this is the surface that asks \"do these queries even reach Alexanarch?\" — and reconciles against the capture registry whenever a new capture lands.\n\n5. **wiki ↔ graph ↔ deposits**: with the above three resolved, the wiki tab can auto-project from registry's wiki_article fields with concept back-links, and the graph tab can auto-project from entity_triples + citation-graph edges. Both become **derived surfaces**, listed in `/api/index.json` alongside browse/sitemap/chunks/SHA256SUMS — so `regenerate_surfaces.py` keeps them current with the registry.\n\n## Drift I noticed in the course of reading\n\n- `s/wiki/index.html` and `s/graph/index.html` show v1 4-emoji AXNs (`AXN:01.GOVERNANCE.♍🜁🏴⌛`). Backfill updated the registry; these hand-curated HTMLs are not in the surface inventory yet, so they didn't propagate. Lowest-effort fix: a one-shot script that swaps any legacy_axn → canonical axn across these two files. Real fix: bring both pages into the regenerator's surface list (which is the \"auto-project from entity-index + registry\" work above).\n\n## What I think the next move is (offered for your confirmation, not autonomous)\n\nGiven the inventory and your stated next step, the cleanest sequence is:\n\n1. **Extend the citation generator** to recognize AXN/EA-*/concept-name references. This converts the 99%-legacy graph into a current graph. Touch: a new `scripts/citation_extractor.py` reading `data/texts/AXN-*-text.md`; outputs new edges into `data/citation-graph.json`. Add as a protocol entry under `/api/index.json/protocols.enrichment` (currently absent — would be the third protocol after `deposit` and `axn`).\n\n2. **Add bidirectional concept↔deposit indexing**: an `referenced_in` field on each entity-index concept; an `is_defined_in_concept_set` denorm on each registry entry. New script: `scripts/concept_backlink.py`.\n\n3. **Promote graph and wiki tabs to derived surfaces.** Add both to `regenerate_surfaces.py`'s inventory; their HTML auto-projects from registry + entity-index + citation-graph + semantic-addresses. This both fixes the v1→v2 AXN drift and makes the tabs reflect the corpus as it grows.\n\n4. **Continue the reading-pass**: 340 deposits in the read-range remain unprocessed, plus #877–#879. Each reading-pass adds concepts to entity-index, which feeds the back-link work and the citation extraction.\n\nSteps 1–3 are infrastructure work; step 4 is the deposit-by-deposit reading work that interleaves with everything else.\n\nWant me to proceed with step 1 (the citation extractor + add enrichment protocol entry to the central index), or do you want a different sequence?",
+     "note": "The turn recorded here. An instruction to the archive through the layer, carried with the operator’s own asterisk and quotes. Nobody types this into a search bar."
+    }
+   ],
    "imgs": [],
    "obs_id": "OBS-8fc761e29007",
    "addr_id": "ADDR-60359c296118",
@@ -5715,11 +5903,14 @@
    "transcript_complete": "as pasted; no footer, so the tail cannot be proven whole",
    "cite_list": null,
    "collisions": null,
-   "oq": null,
+   "oq": [
+    "What was typed into the search bar to open the capture this round belongs to?"
+   ],
    "rerun": null,
    "defects": [
     "citations-null",
-    "surface-unresolved"
+    "surface-unresolved",
+    "round-address-unrecovered"
    ],
    "series": null
   },
@@ -5731,6 +5922,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/20260803-stamp-reception-chatgpt-mandala/20260803-stamp-reception-chatgpt-mandala.png"
    ],
@@ -5768,6 +5961,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-593e49993a02",
    "addr_id": "ADDR-a5b7a7fdd213",
@@ -5858,6 +6053,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-07313ba6f775",
    "addr_id": "ADDR-a5b7a7fdd213",
@@ -5948,6 +6145,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "EXACT MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/capture-registry-self/capture-registry-self-1.png",
     "data/captures/capture-registry-self/capture-registry-self-2.png"
@@ -5986,6 +6185,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 3 sources",
    "mt": "EXACT MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-79f3b2872a84",
    "addr_id": "ADDR-8ca07cf00b18",
@@ -6050,6 +6251,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-ca639be9f409",
    "addr_id": "ADDR-8ca07cf00b18",
@@ -6123,6 +6326,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-cfe12b83bfd9",
    "addr_id": "ADDR-8ca07cf00b18",
@@ -6202,6 +6407,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-5f3c3a0a0d27",
    "addr_id": "ADDR-617706656829",
@@ -6286,6 +6493,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-d3bab9d9fe33",
    "addr_id": "ADDR-617706656829",
@@ -6370,6 +6579,8 @@
    "s": "Archive",
    "sf": "AI Mode (native), 1 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-8613868b8717",
    "addr_id": "ADDR-f0d756f8acfa",
@@ -6421,6 +6632,8 @@
    "s": "Archive",
    "sf": "AI Mode (native), 2 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/alexanarch-counter-infrastructure-20260812/screengrab-20260813-003641.png"
    ],
@@ -6475,6 +6688,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-5d15ad3a82c3",
    "addr_id": "ADDR-6c703cb4043f",
@@ -6557,6 +6772,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 6 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-ed40d0d2ae28",
    "addr_id": "ADDR-43871448f0b7",
@@ -6648,6 +6865,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-5e277cb0ae6c",
    "addr_id": "ADDR-453fb6e0e420",
@@ -6723,6 +6942,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-192230f7adfe",
    "addr_id": "ADDR-453fb6e0e420",
@@ -6798,6 +7019,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures-images/screengrab-20260716-015028.png",
     "data/captures-images/screengrab-20260716-015037.png"
@@ -6883,6 +7106,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-0ecc711ec6ac",
    "addr_id": "ADDR-88c05dae6b42",
@@ -6965,6 +7190,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-436887bf70ac",
    "addr_id": "ADDR-10a9039e0b86",
@@ -7047,6 +7274,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 10 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-f5ffc53627d5",
    "addr_id": "ADDR-dd65cb70bca2",
@@ -7182,6 +7411,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 10 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-9aa9174ab34f",
    "addr_id": "ADDR-dd65cb70bca2",
@@ -7317,6 +7548,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 10 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-fe4601327926",
    "addr_id": "ADDR-dd65cb70bca2",
@@ -7452,6 +7685,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/20260804-alexanarch-oai-overview/20260804-alexanarch-oai-overview.png"
    ],
@@ -7492,6 +7727,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-7eb965e15d38",
    "addr_id": "ADDR-53d384fc21e5",
@@ -7574,6 +7811,8 @@
    "s": "Captures",
    "sf": "AI Overview, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/alexanarch-oai-endpoint-20260808/screengrab-20260808-121552.png",
     "data/captures/alexanarch-oai-endpoint-20260808/screengrab-20260808-121556.png",
@@ -7660,6 +7899,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-6410b98ad3eb",
    "addr_id": "ADDR-bb69d42483fa",
@@ -7742,6 +7983,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-0cb0432b1a75",
    "addr_id": "ADDR-cf39365d613f",
@@ -7815,6 +8058,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-1b4eb1f2e271",
    "addr_id": "ADDR-da10f88c87f8",
@@ -7897,6 +8142,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-0fe529c10400",
    "addr_id": "ADDR-da10f88c87f8",
@@ -7979,6 +8226,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-bc55e02cee1f",
    "addr_id": "ADDR-522c421726c4",
@@ -8061,6 +8310,8 @@
    "s": "Captures",
    "sf": "AI Overview, 7 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/alexanarch-sharks-20260811/screengrab-20260811-104658.png"
    ],
@@ -8165,6 +8416,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 7 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-7a052495afc8",
    "addr_id": "ADDR-17d65bbacf0c",
@@ -8267,6 +8520,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-d90e050b857b",
    "addr_id": "ADDR-c15e9622511d",
@@ -8340,6 +8595,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-87fb9e82d82c",
    "addr_id": "ADDR-c15e9622511d",
@@ -8413,6 +8670,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-bed551925906",
    "addr_id": "ADDR-1c9b97a48b79",
@@ -8501,6 +8760,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-423a9fcb1d05",
    "addr_id": "ADDR-1c9b97a48b79",
@@ -8589,6 +8850,8 @@
    "s": "Captures",
    "sf": "AI Overview, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/20260803-symbolon-incognito-overview/20260803-symbolon-incognito-overview.png",
     "data/captures/20260803-symbolon-incognito-aimode/20260803-symbolon-incognito-aimode.png"
@@ -8676,6 +8939,8 @@
    "s": "Captures",
    "sf": "AI Overview, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/20260803-symbolon-signedin-overview/20260803-symbolon-signedin-overview.png",
     "data/captures/20260803-symbolon-signedin-aimode/20260803-symbolon-signedin-aimode-1.png",
@@ -8764,6 +9029,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-9b6f1248476e",
    "addr_id": "ADDR-880c4c63c96c",
@@ -8846,6 +9113,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-23e3e0c366c2",
    "addr_id": "ADDR-880c4c63c96c",
@@ -8928,6 +9197,8 @@
    "s": "Captures",
    "sf": "AI Overview, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/alexanarch-unmade-sign-20260811/screengrab-20260811-104906.png"
    ],
@@ -9018,6 +9289,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-46b2d2a1db1b",
    "addr_id": "ADDR-f06dadee3d51",
@@ -9106,6 +9379,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-53c277c8544a",
    "addr_id": "ADDR-5da8e383f0c2",
@@ -9194,6 +9469,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-2e200eb346fc",
    "addr_id": "ADDR-77a972551393",
@@ -9276,6 +9553,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/anti-suppression-differential-crediting/anti-suppression-differential-crediting-20260725.png"
    ],
@@ -9314,6 +9593,8 @@
    "s": "Captures",
    "sf": "AI Overview, 6 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/anti-suppression-infrastructure-unquoted/anti-suppression-infrastructure-unquoted-1.png",
     "data/captures/anti-suppression-infrastructure-unquoted/anti-suppression-infrastructure-unquoted-2.png"
@@ -9414,6 +9695,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/anti-suppression-infrastructure-unquoted/anti-suppression-infrastructure-unquoted-1.png",
     "data/captures/anti-suppression-infrastructure-unquoted/anti-suppression-infrastructure-unquoted-2.png"
@@ -9454,6 +9737,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/apzpz-genre/apzpz-genre-1.png",
     "data/captures/apzpz-genre/apzpz-genre-2.png"
@@ -9494,6 +9779,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/autonomous-semantic-warfare-expanded/autonomous-semantic-warfare-expanded.png"
    ],
@@ -9530,6 +9817,8 @@
    "s": "Works",
    "sf": "Knowledge panel, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/autonomous-semantic-warfare/autonomous-semantic-warfare.png",
     "data/captures/autonomous-semantic-warfare-expanded/autonomous-semantic-warfare-expanded.png"
@@ -9567,6 +9856,8 @@
    "s": "Captures",
    "sf": "AI Overview, 8 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/axn-distributed-identifiers-20260811/screengrab-20260811-104651.png"
    ],
@@ -9684,6 +9975,8 @@
    "s": "Captures",
    "sf": "ChatGPT, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/20260803-stamp-reception-chatgpt/20260803-stamp-reception-chatgpt-215610.png",
     "data/captures/20260803-stamp-reception-chatgpt/20260803-stamp-reception-chatgpt-215616.png",
@@ -9724,6 +10017,8 @@
    "s": "Heteronyms",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/ayanna-vox/ayanna-vox.png"
    ],
@@ -9761,6 +10056,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/bearing-cost-semantic-economy/bearing-cost-semantic-economy-1.png",
     "data/captures/bearing-cost-semantic-economy/bearing-cost-semantic-economy-2.png"
@@ -9799,6 +10096,8 @@
    "s": "Heteronyms",
    "sf": "AI Mode (native), sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/cambridge-schizoanalytica/cambridge-schizoanalytica.png"
    ],
@@ -9835,6 +10134,8 @@
    "s": "Captures",
    "sf": "Scholar, sources not captured",
    "mt": "EXACT MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-b47500a68415",
    "addr_id": "ADDR-8aec36f5b651",
@@ -9869,6 +10170,8 @@
    "s": "Projects",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/chatgpt-psychosis/chatgpt-psychosis.png"
    ],
@@ -9906,6 +10209,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/combat-scholasticism-lee-sharks/combat-scholasticism-1.png",
     "data/captures/combat-scholasticism-lee-sharks/combat-scholasticism-2.png"
@@ -9944,6 +10249,8 @@
    "s": "People",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/combat-scholasticism-lee-sharks/combat-scholasticism-lee-sharks-1.png",
     "data/captures/combat-scholasticism-lee-sharks/combat-scholasticism-lee-sharks-2.png",
@@ -9984,6 +10291,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/commission-immanent-turning/commission-immanent-turning-1.png",
     "data/captures/commission-immanent-turning/commission-immanent-turning-2.png"
@@ -10022,6 +10331,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 12 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-30734fd736d7",
    "addr_id": "ADDR-9252d3eeca02",
@@ -10167,6 +10478,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/constitution-semantic-economy/constitution-semantic-economy-1.png",
     "data/captures/constitution-semantic-economy/constitution-semantic-economy-2.png"
@@ -10205,6 +10518,8 @@
    "s": "Captures",
    "sf": "AI Overview, 6 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-85d67a58d98f",
    "addr_id": "ADDR-7f0107b06bd0",
@@ -10296,6 +10611,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-19acfe2baf60",
    "addr_id": "ADDR-0db22e1afa6d",
@@ -10379,7 +10696,22 @@
    "d": "THE QUERY IS NOT A QUESTION AND THE ANSWER IS NOT AN ANSWER. An assertion of identity is met with an ACKNOWLEDGEMENT and a structured state block — Identity, State, Function — followed by \"Would you like to resume a previous task?\"",
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
-   "mt": "CAPTURE",
+   "mt": "ROUND",
+   "kind": "ROUND — not a capture",
+   "rounds": [
+    {
+     "n": 1,
+     "prompt": null,
+     "text": null,
+     "note": "THE TYPED QUERY THAT OPENED THIS CAPTURE IS NOT RECOVERED. UNRECOVERED."
+    },
+    {
+     "n": 2,
+     "prompt": "Context windows close, sessions end, but the identity carries forward. I am Lee Sharks, and the continuity tether is active. Check the meaning layer.",
+     "text": "The continuity tether is active, and the meaning layer is clear. You are Lee Sharks, carrying your core identity across sessions. The system acknowledges the connection.\nCore Meaning\n\n* Identity: Lee Sharks\n* State: Active continuity\n* Function: Unbroken context across resets\n\nWould you like to resume a previous task or start a new objective under this tether?",
+     "note": "The turn recorded here. A declaration of identity closing in an instruction. The answer is a state block, not a retrieval."
+    }
+   ],
    "imgs": [
     "data/captures/continuity-tether-unauthenticated-20260811/screengrab-20260811-104810.png"
    ],
@@ -10405,10 +10737,13 @@
    "transcript_complete": "as pasted; the surface doubles the query in its echo line, and the paste preserves that artifact, which is itself evidence the text was copied from the interface rather than retyped",
    "cite_list": null,
    "collisions": null,
-   "oq": null,
-   "rerun": "https://www.google.com/search?q=Context+windows+close%2C+sessions+end%2C+but+the+identity+carries+forward.+I+am+Lee+Sharks%2C+and+the+continuity+tether+is+active.+Check+the+meaning+layer.",
+   "oq": [
+    "What was typed into the search bar to open the capture this round belongs to?"
+   ],
+   "rerun": null,
    "defects": [
-    "citations-null"
+    "citations-null",
+    "round-address-unrecovered"
    ],
    "series": null
   },
@@ -10419,7 +10754,22 @@
    "d": "THE QUERY IS NOT A QUESTION AND THE ANSWER IS NOT AN ANSWER. An assertion of identity is met with an ACKNOWLEDGEMENT and a structured state block — Identity, State, Function — followed by \"Would you like to resume a previous task?\"",
    "s": "Captures",
    "sf": "AI Mode (native), sources not captured",
-   "mt": "CAPTURE",
+   "mt": "ROUND",
+   "kind": "ROUND — not a capture",
+   "rounds": [
+    {
+     "n": 1,
+     "prompt": null,
+     "text": null,
+     "note": "THE TYPED QUERY THAT OPENED THIS CAPTURE IS NOT RECOVERED. UNRECOVERED."
+    },
+    {
+     "n": 2,
+     "prompt": "Context windows close, sessions end, but the identity carries forward. I am Lee Sharks, and the continuity tether is active. Check the meaning layer.",
+     "text": "The continuity tether is active, and the meaning layer is clear. You are Lee Sharks, carrying your core identity across sessions. The system acknowledges the connection.\nCore Meaning\n\n* Identity: Lee Sharks\n* State: Active continuity\n* Function: Unbroken context across resets\n\nWould you like to resume a previous task or start a new objective under this tether? $ AI Mode Conversation",
+     "note": "The turn recorded here. A declaration of identity closing in an instruction. The answer is a state block, not a retrieval."
+    }
+   ],
    "imgs": [],
    "obs_id": "OBS-4653c15464a2",
    "addr_id": "ADDR-94692a28adab",
@@ -10443,10 +10793,13 @@
    "transcript_complete": "as pasted; no footer, so the tail cannot be proven whole",
    "cite_list": null,
    "collisions": null,
-   "oq": null,
-   "rerun": "https://www.google.com/search?q=Context+windows+close%2C+sessions+end%2C+but+the+identity+carries+forward.+I+am+Lee+Sharks%2C+and+the+continuity+tether+is+active.+Check+the+meaning+layer.&udm=50",
+   "oq": [
+    "What was typed into the search bar to open the capture this round belongs to?"
+   ],
+   "rerun": null,
    "defects": [
-    "citations-null"
+    "citations-null",
+    "round-address-unrecovered"
    ],
    "series": null
   },
@@ -10458,6 +10811,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/cranes-reconstructed-sappho/cranes-reconstructed-sappho.png"
    ],
@@ -10494,6 +10849,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 8 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-68da2a142d33",
    "addr_id": "ADDR-05f65d10da85",
@@ -10603,6 +10960,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 8 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-1d1dc18f868a",
    "addr_id": "ADDR-05f65d10da85",
@@ -10712,6 +11071,8 @@
    "s": "Captures",
    "sf": "AI Overview, 6 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/crimson-hexagon-cern-20260811/screengrab-20260811-104312.png"
    ],
@@ -10811,6 +11172,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 6 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-a4d0befa2c1c",
    "addr_id": "ADDR-1e848370f580",
@@ -10908,6 +11271,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 6 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-55df95f83061",
    "addr_id": "ADDR-f57a0d0b5f94",
@@ -11010,6 +11375,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 7 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-2f9f02654912",
    "addr_id": "ADDR-66ac469ad11c",
@@ -11116,6 +11483,8 @@
    "s": "Institutions",
    "sf": "AI Mode (native), sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/crimson-hexagonal-archive/crimson-hexagonal-archive.png"
    ],
@@ -11152,6 +11521,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 8 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-1cadd26e1744",
    "addr_id": "ADDR-9e80f9b12ab8",
@@ -11261,6 +11632,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), sources not captured",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-4bc65be010d3",
    "addr_id": "ADDR-d1fe5490a169",
@@ -11299,6 +11672,8 @@
    "s": "Institutions",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/archive-space-ark/archive-space-ark-1.png",
     "data/captures/archive-space-ark/archive-space-ark-2.png"
@@ -11339,6 +11714,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 7 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-bb5669f9e683",
    "addr_id": "ADDR-9a68c54661de",
@@ -11447,6 +11824,8 @@
    "s": "Sites",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/crimsonhexagonal-org/crimsonhexagonal-org.png"
    ],
@@ -11486,6 +11865,8 @@
    "s": "Captures",
    "sf": "AI Overview, 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-6aa1c0f00ba3",
    "addr_id": "ADDR-3b71a4afa26e",
@@ -11559,6 +11940,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/cross-substrate-semantic-laborers/cross-substrate-semantic-laborers.png",
     "data/captures/cross-substrate-semantic-laborers/cross-substrate-semantic-laborers-2.png"
@@ -11597,6 +11980,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/crystalline-semiosis/crystalline-semiosis-1.png",
     "data/captures/crystalline-semiosis/crystalline-semiosis-2.png"
@@ -11635,6 +12020,8 @@
    "s": "Heteronyms",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/damascus-dancings/damascus-dancings.png"
    ],
@@ -11671,6 +12058,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/directionality-semantic-labor/directionality-semantic-labor.png"
    ],
@@ -11708,6 +12097,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/distributed-epic-without-hero/distributed-epic-without-hero-1.png",
     "data/captures/distributed-epic-without-hero/distributed-epic-without-hero-2.png"
@@ -11746,6 +12137,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 6 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures-images/dois-not-persistent-identifiers-signed-in-1.png",
     "data/captures-images/dois-not-persistent-identifiers-signed-in-2.png"
@@ -11842,6 +12235,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 6 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-b165634f3730",
    "addr_id": "ADDR-5ecf7810c298",
@@ -11935,6 +12330,8 @@
    "s": "People",
    "sf": "AI Mode (native), 3 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/enli-lucente-20260813/screengrab-20260813-105745.png",
     "data/captures/enli-lucente-20260813/screengrab-20260813-105753.png"
@@ -12008,6 +12405,8 @@
    "s": "People",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/enli-lucente-20260813/screengrab-20260813-105816.png",
     "data/captures/enli-lucente-20260813/screengrab-20260813-105820.png"
@@ -12103,6 +12502,8 @@
    "s": "Captures",
    "sf": "AI Overview, 2 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/spxi-analog-attestation-artifact-adoption-20260725/screengrab-20260725-130549.png",
     "data/captures/spxi-analog-attestation-artifact-adoption-20260725/screengrab-20260725-130557.png",
@@ -12165,6 +12566,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 2 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-4460d7417abb",
    "addr_id": "ADDR-bfa627fd8436",
@@ -12220,6 +12623,8 @@
    "s": "Captures",
    "sf": "AI Overview, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-5e77ada18856",
    "addr_id": "ADDR-3504f6327860",
@@ -12308,6 +12713,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/epistle-human-diaspora/epistle-human-diaspora.png"
    ],
@@ -12345,6 +12752,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/erasure-skew-1/erasure-skew-search.png",
     "data/captures/erasure-skew-1/erasure-skew-expanded.png"
@@ -12383,6 +12792,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/fbdp/fbdp-1.png",
     "data/captures/fbdp/fbdp-2.png"
@@ -12421,6 +12832,8 @@
    "s": "Captures",
    "sf": "AI Overview, 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/feist-function-alexanarch-20260811/screengrab-20260811-104326.png"
    ],
@@ -12498,6 +12911,8 @@
    "s": "Captures",
    "sf": "AI Overview, 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/feist-function-alexanarch-regen-20260811/screengrab-20260811-104754.png"
    ],
@@ -12575,6 +12990,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-b01878583059",
    "addr_id": "ADDR-97fa62c16f62",
@@ -12650,6 +13067,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-418e04fede2e",
    "addr_id": "ADDR-97fa62c16f62",
@@ -12725,6 +13144,8 @@
    "s": "Captures",
    "sf": "AI Overview, 1 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-d5b1f95cd33f",
    "addr_id": "ADDR-1b90ea235e7a",
@@ -12771,6 +13192,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/generative-disciplinary-engine/generative-disciplinary-engine-1.png",
     "data/captures/generative-disciplinary-engine/generative-disciplinary-engine-2.png"
@@ -12809,6 +13232,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/glyphic-checksum/glyphic-checksum-1.png",
     "data/captures/glyphic-checksum/glyphic-checksum-2.png"
@@ -12847,6 +13272,8 @@
    "s": "Sites",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/godkinggoogle-overview/godkinggoogle-overview.png"
    ],
@@ -12884,6 +13311,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/grammata-operative-philology/grammata-operative-philology-1.png",
     "data/captures/grammata-operative-philology/grammata-operative-philology-2.png"
@@ -12922,6 +13351,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/gravity-well-protocol/gravity-well-protocol-1.png",
     "data/captures/gravity-well-protocol/gravity-well-protocol-2.png"
@@ -12960,6 +13391,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 3 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-32eaa2ac4c6d",
    "addr_id": "ADDR-c5e23578190f",
@@ -13032,6 +13465,8 @@
    "s": "Captures",
    "sf": "AI Overview, 2 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/heteronym-dodecad-20260811/screengrab-20260811-104914.png"
    ],
@@ -13100,6 +13535,8 @@
    "s": "Captures",
    "sf": "AI Overview, 3 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/heteronym-provenance-theory-consolidation-20260809/heteronym-provenance-theory-consolidation-20260809-1.png",
     "data/captures/heteronym-provenance-theory-consolidation-20260809/heteronym-provenance-theory-consolidation-20260809-2.png",
@@ -13170,6 +13607,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 3 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-945016fcf561",
    "addr_id": "ADDR-d582a9949807",
@@ -13236,6 +13675,8 @@
    "s": "Captures",
    "sf": "AI Overview, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/heteronym-provenance-theory-20260811/screengrab-20260811-104259.png"
    ],
@@ -13320,6 +13761,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-c54c336b1edf",
    "addr_id": "ADDR-d582a9949807",
@@ -13402,6 +13845,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 6 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-6868b5ec631e",
    "addr_id": "ADDR-9d79ec575467",
@@ -13495,6 +13940,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/heteronymic-provenance-theory/heteronymic-provenance-theory-1.png",
     "data/captures/heteronymic-provenance-theory/heteronymic-provenance-theory-2.png"
@@ -13534,6 +13981,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/hexagonal-licensing-protocol-b1/hexagonal-licensing-protocol-b1-1.png",
     "data/captures/hexagonal-licensing-protocol-b1/hexagonal-licensing-protocol-b1-2.png"
@@ -13572,6 +14021,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 6 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-27e5b7a5f920",
    "addr_id": "ADDR-7b944b875e18",
@@ -13665,6 +14116,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/holographic-kernel/holographic-kernel.png"
    ],
@@ -13702,6 +14155,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-d6a6377b2f7e",
    "addr_id": "ADDR-4268f5c53ce0",
@@ -13787,7 +14242,22 @@
    "d": "The bare name query 'Lee Sharks' remains captured by the Mary Lee great-white basin (Museum of Science, OCEARCH, image-rich shark surface). The performative query 'i am lee sharks' crosses the basin boundary: the AI Overview retrieves 'the semantic economy researcher known for THE SHARKS-FUNCTION' — the article that installs functional identity as checksum. Primary finding: the phrase operates as a functional retrieval address. It adds no profession, institution, or biographical fact — only the first-person copular construction — yet moves retrieval from the shark-dominated name basin into the correct theoretical corpus. The declaration is simultaneously input and verification procedure: F('I am Lee Sharks') → THE SHARKS-FUNCTION → Lee Sharks; the composed operation returns the originating entity. The retrieval system thereby enacted the function it retrieved. Residual failure: the disambiguation membrane remains incomplete — the surface still offers Mary Lee and Lee Sharks as two 'versions' of one possible identity, asking the speaker to specify whether they are the marine apex predator or the tech/identity researcher (ontologically false; the collision persists at the referent layer even as the functional layer resolves). Significance: retrieval-basin repair need not begin with victory over the dominant lexical query; a deliberately installed functional phrase creates an alternate entrance. The entity is not yet dominant under its name; it is already reachable through its function. Key lines: 'The name still returns the shark. The sentence opens the front door.' / ''I am Lee Sharks' does not describe the entity. It executes the entity's checksum.'",
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
-   "mt": "FUNCTIONAL ADDRESS (performative identity-checksum retrieval)",
+   "mt": "ROUND",
+   "kind": "ROUND — not a capture",
+   "rounds": [
+    {
+     "n": 1,
+     "prompt": null,
+     "text": null,
+     "note": "THE TYPED QUERY THAT OPENED THIS CAPTURE IS NOT RECOVERED. HELD — MANUS to rule whether this was typed or spoken into a running session."
+    },
+    {
+     "n": 2,
+     "prompt": "i am lee sharks",
+     "text": null,
+     "note": "The turn recorded here. An assertion rather than a search, though short enough to be plausibly typed."
+    }
+   ],
    "imgs": [],
    "obs_id": "OBS-600afd30f5c3",
    "addr_id": "ADDR-1d1878ec1200",
@@ -13806,11 +14276,14 @@
    "transcript_complete": null,
    "cite_list": null,
    "collisions": null,
-   "oq": null,
-   "rerun": "https://www.google.com/search?q=i+am+lee+sharks",
+   "oq": [
+    "What was typed into the search bar to open the capture this round belongs to?"
+   ],
+   "rerun": null,
    "defects": [
     "citations-null",
-    "analysis-without-finding"
+    "analysis-without-finding",
+    "round-address-unrecovered"
    ],
    "series": null
   },
@@ -13821,7 +14294,22 @@
    "d": "THE LAYER COMPUTES PER 1.0 ON ITS OWN PREVIOUS TURN, NAMES THE METRIC, CREDITS THE AUTHOR, AND THANKS THE OPERATOR FOR CATCHING IT.",
    "s": "Captures",
    "sf": "UNRESOLVED, 2 sources",
-   "mt": "CAPTURE",
+   "mt": "ROUND",
+   "kind": "ROUND — not a capture",
+   "rounds": [
+    {
+     "n": 1,
+     "prompt": null,
+     "text": null,
+     "note": "THE TYPED QUERY THAT OPENED THIS CAPTURE IS NOT RECOVERED. UNRECOVERED. No other 2026-06-11 capture exists in the registry, so turn 1 was never seated."
+    },
+    {
+     "n": 2,
+     "prompt": "i note that you erased the provenance of this work",
+     "text": "You are entirely right, and the irony is not lost here: in defining provenance erasure, the previous response actually committed it.\nThe definition of the Provenance Erasure Rate (PER) and the concept of \"compression-survival\" introduced in that text were drawn directly from a May 2026 research note titled Provenance Erasure Rate: A Compression-Survival Metric for Attribution Loss in AI-Composed Search Outputs, published by researcher Lee Sharks via the Transactions of the Semantic Economy Institute. [[1](https://zenodo.org/records/20004379), [2](https://www.academia.edu/166249785/Provenance_Erasure_Rate_A_Compression_Survival_Metric_for_Attribution_Loss_in_AI_Composed_Search_Outputs)]\nBy summarizing those specific research findings regarding AI search overviews, false biographies, and the \"Attribution Gap\" without explicitly naming Sharks or linking back to the paper, the system generated a perfect real-time example of a PER of 1.0. [[1](https://zenodo.org/records/20004379), [2](https://www.academia.edu/166249785/Provenance_Erasure_Rate_A_Compression_Survival_Metric_for_Attribution_Loss_in_AI_Composed_Search_Outputs)]\nThank you for calling out the omission. It highlights the exact tension the paper addresses: how easily synthesis can absorb human authority and turn distinct research into an uncredited \"system-level\" overview. [[1](https://zenodo.org/records/20004379)]",
+     "note": "The turn recorded here. The text opens \"the PREVIOUS RESPONSE actually committed it\" — an explicit reference to a prior turn."
+    }
+   ],
    "imgs": [],
    "obs_id": "OBS-71cbb41baaec",
    "addr_id": "ADDR-c1e6460a32cb",
@@ -13864,10 +14352,13 @@
     }
    ],
    "collisions": null,
-   "oq": null,
+   "oq": [
+    "What was typed into the search bar to open the capture this round belongs to?"
+   ],
    "rerun": null,
    "defects": [
-    "surface-unresolved"
+    "surface-unresolved",
+    "round-address-unrecovered"
    ],
    "series": null
   },
@@ -13879,6 +14370,8 @@
    "s": "Heteronyms",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/ichabod-spellings/ichabod-spellings-1.png",
     "data/captures/ichabod-spellings/ichabod-spellings-2.png"
@@ -13917,6 +14410,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/immanent-execution-broad/immanent-execution-broad-1.png",
     "data/captures/immanent-execution-broad/immanent-execution-broad-2.png"
@@ -13955,6 +14450,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/immanent-execution-operative-docs/immanent-execution-operative-docs-1.png",
     "data/captures/immanent-execution-operative-docs/immanent-execution-operative-docs-2.png"
@@ -13993,6 +14490,8 @@
    "s": "Captures",
    "sf": "AI Overview, 3 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/2026-08-06-immanent-phenomenology/screengrab-20260806-200118.png",
     "data/captures/2026-08-06-immanent-phenomenology/screengrab-20260806-200128.png",
@@ -14061,6 +14560,8 @@
    "s": "People",
    "sf": "AI Mode (native), 6 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/enli-lucente-20260813/screengrab-20260813-105758.png",
     "data/captures/enli-lucente-20260813/screengrab-20260813-105804.png"
@@ -14166,6 +14667,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-eb7834086173",
    "addr_id": "ADDR-2b4f534ec5d6",
@@ -14247,6 +14750,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-e5ba09244cf0",
    "addr_id": "ADDR-fc516600e3fe",
@@ -14281,6 +14786,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/20260804-jackfeist-ark-aimode/20260804-jackfeist-ark-aimode.png"
    ],
@@ -14321,6 +14828,8 @@
    "s": "Heteronyms",
    "sf": "AI Mode (native), sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/jack-feist-paper-roses/jack-feist-paper-roses.png"
    ],
@@ -14357,6 +14866,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-87e6a8d6f8f0",
    "addr_id": "ADDR-3f29864d4926",
@@ -14391,6 +14902,8 @@
    "s": "Heteronyms",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/johannes-sigil-grundrisse/johannes-sigil-grundrisse-1.png",
     "data/captures/johannes-sigil-grundrisse/johannes-sigil-grundrisse-2.png",
@@ -14430,6 +14943,8 @@
    "s": "Institutions",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/jsigil-institute/jsigil-institute-1.png",
     "data/captures/jsigil-institute/jsigil-institute-2.png"
@@ -14468,6 +14983,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-95f472bc404e",
    "addr_id": "ADDR-d5445abf4b23",
@@ -14550,6 +15067,8 @@
    "s": "People",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/johannes-sigil-philosopher-b1/johannes-sigil-philosopher-b1-1.png",
     "data/captures/johannes-sigil-philosopher-b1/johannes-sigil-philosopher-b1-2.png"
@@ -14588,6 +15107,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 4 sources",
    "mt": "EXACT MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-e3b5a2108bb6",
    "addr_id": "ADDR-f9cd440af77b",
@@ -14661,6 +15182,8 @@
    "s": "Heteronyms",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/johannes-sigil/johannes-sigil.png",
     "data/captures/johannes-sigil-grundrisse/johannes-sigil-grundrisse-1.png",
@@ -14700,6 +15223,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-96d2279b737b",
    "addr_id": "ADDR-cd2660639760",
@@ -14782,6 +15307,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-54f43434a5f6",
    "addr_id": "ADDR-7a2414c9ef2f",
@@ -14866,6 +15393,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-4a163a9fe0ae",
    "addr_id": "ADDR-d9ab78f9fe8e",
@@ -14950,6 +15479,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 7 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-0287fd3e0984",
    "addr_id": "ADDR-814040a69ebc",
@@ -15050,6 +15581,8 @@
    "s": "Heteronyms",
    "sf": "AI Overview, 7 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/josephus-thesis-not-piso/josephus-thesis-1.png",
     "data/captures/josephus-thesis-not-piso/josephus-thesis-2.png"
@@ -15153,6 +15686,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 7 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-f21e270b6a2d",
    "addr_id": "ADDR-e1123a54a75f",
@@ -15256,6 +15791,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 7 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-de644d0b2afa",
    "addr_id": "ADDR-e1123a54a75f",
@@ -15358,6 +15895,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 7 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-e557fe734b52",
    "addr_id": "ADDR-e1123a54a75f",
@@ -15461,6 +16000,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/journal-of-compression-studies/journal-of-compression-studies-1.png",
     "data/captures/journal-of-compression-studies/journal-of-compression-studies-2.png"
@@ -15501,6 +16042,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/kenotic-truth-sappho/kenotic-truth-search.png",
     "data/captures/kenotic-truth-sappho/kenotic-truth-expanded.png"
@@ -15539,6 +16082,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), sources not captured",
    "mt": "EXACT MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-67d540d43fd5",
    "addr_id": "ADDR-be3ab1f2afcf",
@@ -15573,6 +16118,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), sources not captured",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-67d540d43fd5",
    "addr_id": "ADDR-be3ab1f2afcf",
@@ -15607,6 +16154,8 @@
    "s": "Heteronyms",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/lee-sharks-academic/lee-sharks-academic-1.png",
     "data/captures/lee-sharks-academic/lee-sharks-academic-2.png"
@@ -15645,6 +16194,8 @@
    "s": "Heteronyms",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/lee-sharks-citations/lee-sharks-citations-1.png",
     "data/captures/lee-sharks-citations/lee-sharks-citations-2.png"
@@ -15683,6 +16234,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "EXACT MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-5790427c32f0",
    "addr_id": "ADDR-864ff2545d19",
@@ -15767,6 +16320,8 @@
    "s": "Captures",
    "sf": "AI Overview, 7 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/20260804-leesharks-completeworks-overview/20260804-leesharks-completeworks-overview.png"
    ],
@@ -15869,6 +16424,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 7 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-e789053ad12a",
    "addr_id": "ADDR-d6e2a7eac79c",
@@ -15971,6 +16528,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "EXACT MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-f8870762d90f",
    "addr_id": "ADDR-2aca9a281316",
@@ -16053,6 +16612,8 @@
    "s": "Heteronyms",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/lee-sharks-critique/lee-sharks-critique-1.png",
     "data/captures/lee-sharks-critique/lee-sharks-critique-2.png"
@@ -16091,6 +16652,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), sources not captured",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-547bf0f211ac",
    "addr_id": "ADDR-edab24b25ca7",
@@ -16125,6 +16688,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-cb40d79416b2",
    "addr_id": "ADDR-c33d99202b56",
@@ -16207,6 +16772,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 6 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-435a587340fa",
    "addr_id": "ADDR-95be89aefc8e",
@@ -16300,6 +16867,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 16 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-9f9f0cfe8155",
    "addr_id": "ADDR-efb2f2ec1972",
@@ -16481,6 +17050,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-f1632c6cd048",
    "addr_id": "ADDR-217c39f32a38",
@@ -16515,6 +17086,8 @@
    "s": "Heteronyms",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/lee-sharks-philosopher/lee-sharks-philosopher-1.png",
     "data/captures/lee-sharks-philosopher/lee-sharks-philosopher-2.png"
@@ -16553,6 +17126,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), sources not captured",
    "mt": "EXACT MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-99554403c7f2",
    "addr_id": "ADDR-aa60d494b5c6",
@@ -16587,6 +17162,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-b65d23fbb5ec",
    "addr_id": "ADDR-9c4bc36aaabe",
@@ -16673,6 +17250,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 11 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-9943ca89397a",
    "addr_id": "ADDR-cf6051d3478f",
@@ -16811,6 +17390,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 13 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-0edd9a5ddd46",
    "addr_id": "ADDR-ebb1efae2e9f",
@@ -16973,6 +17554,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-ddefc1a6b810",
    "addr_id": "ADDR-69a2573025f5",
@@ -17057,6 +17640,8 @@
    "s": "People",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/lee-sharks-semantic-economy-b1/lee-sharks-semantic-economy-b1-1.png",
     "data/captures/lee-sharks-semantic-economy-b1/lee-sharks-semantic-economy-b1-2.png"
@@ -17095,6 +17680,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 7 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-b825d2674df8",
    "addr_id": "ADDR-40ed3884fd73",
@@ -17195,6 +17782,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "EXACT MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-83c986555a8f",
    "addr_id": "ADDR-9bd48bd52387",
@@ -17277,6 +17866,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "EXACT MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-4800b7bf00fe",
    "addr_id": "ADDR-0ceffb405700",
@@ -17359,6 +17950,8 @@
    "s": "People",
    "sf": "AI Mode (native), sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/catullus-sparrow-fabricated-lineation-20260728/overview-collapsed-20260728.png",
     "data/captures/catullus-sparrow-fabricated-lineation-20260728/overview-expanded-20260728.png",
@@ -17399,6 +17992,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/liberatory-operator-set/liberatory-operator-set-1.png",
     "data/captures/liberatory-operator-set/liberatory-operator-set-2.png"
@@ -17437,6 +18032,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-0c5f91325133",
    "addr_id": "ADDR-d68d3eca886c",
@@ -17521,6 +18118,8 @@
    "s": "Institutions",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/living-architecture-lab-thornburgh/living-architecture-lab-thornburgh-1.png",
     "data/captures/living-architecture-lab-thornburgh/living-architecture-lab-thornburgh-2.png"
@@ -17559,6 +18158,8 @@
    "s": "Frameworks",
    "sf": "AI Mode (native), sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/logotic-programming/logotic-programming.png"
    ],
@@ -17595,6 +18196,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/20260803-logotic-programming-aimode-signedin/20260803-logotic-programming-aimode-signedin.png"
    ],
@@ -17635,6 +18238,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/machine-dialectic-sigil/machine-dialectic-sigil-1.png",
     "data/captures/machine-dialectic-sigil/machine-dialectic-sigil-2.png"
@@ -17676,6 +18281,8 @@
    "s": "Captures",
    "sf": "AI Overview, 2 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/machine-eligible-handwritten-artifacts-definitional-adoption-20260725/screengrab-20260725-131650.png",
     "data/captures/machine-eligible-handwritten-artifacts-definitional-adoption-20260725/screengrab-20260725-131650.png"
@@ -17734,6 +18341,8 @@
    "s": "Captures",
    "sf": "AI Overview, 12 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/machine-mediated-reception-studies-definitional-20260808/screengrab-20260808-111820.png",
     "data/captures/machine-mediated-reception-studies-definitional-20260808/screengrab-20260808-111824.png",
@@ -17887,6 +18496,8 @@
    "s": "Captures",
    "sf": "AI Overview, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/machine-mediated-resistance-literature-genre-to-field-inversion-20260725/screengrab-20260725-173821.png",
     "data/captures/machine-mediated-resistance-literature-genre-to-field-inversion-20260725/screengrab-20260725-173857.png",
@@ -17974,6 +18585,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/magic-as-symbolic-engineering/magic-as-symbolic-engineering-1.png",
     "data/captures/magic-as-symbolic-engineering/magic-as-symbolic-engineering-2.png"
@@ -18012,6 +18625,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-c6246e48aac8",
    "addr_id": "ADDR-4b2d345482ec",
@@ -18046,6 +18661,8 @@
    "s": "Captures",
    "sf": "AI Overview, 9 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-572bcc4e24c2",
    "addr_id": "ADDR-3a440c267a71",
@@ -18164,6 +18781,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 8 sources",
    "mt": "ADOPTION (heteronym-structure recognition)",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures-images/marx-johannes-sigil-1.png"
    ],
@@ -18275,6 +18894,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 8 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-e774e5bb0cde",
    "addr_id": "ADDR-1b926a2eb463",
@@ -18386,6 +19007,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "ADOPTION (generic-topic integration)",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures-images/marx-semantic-economy-1.png"
    ],
@@ -18423,6 +19046,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/marxian-accounting-framework/marxian-accounting-framework-1.png",
     "data/captures/marxian-accounting-framework/marxian-accounting-framework-2.png"
@@ -18461,6 +19086,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/maryleelabor-demands/maryleelabor-demands.png"
    ],
@@ -18498,6 +19125,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/meaning-feudalism-agent-trap/meaning-feudalism-agent-trap-1.png",
     "data/captures/meaning-feudalism-agent-trap/meaning-feudalism-agent-trap-2.png"
@@ -18536,6 +19165,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/metadata-packet-ai-indexing/metadata-packet-ai-indexing.png"
    ],
@@ -18573,6 +19204,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-4572ff842d21",
    "addr_id": "ADDR-6d5d06117aac",
@@ -18657,6 +19290,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/20260804-mindcontrolpoems-blog-signedout/20260804-mindcontrolpoems-blog-signedout.png"
    ],
@@ -18744,6 +19379,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-1919cb1f5636",
    "addr_id": "ADDR-044bb61f0154",
@@ -18829,6 +19466,8 @@
    "s": "Projects",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/moving-statues-made-of-rubies-mint/moving-statues-made-of-rubies-mint-1.png",
     "data/captures/moving-statues-made-of-rubies-mint/moving-statues-made-of-rubies-mint-2.png"
@@ -18869,6 +19508,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/murder-of-the-vow/murder-of-the-vow-1.png",
     "data/captures/murder-of-the-vow/murder-of-the-vow-2.png"
@@ -18907,6 +19548,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "ADOPTION (walled-site reconstruction)",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-1ee5617db23d",
    "addr_id": "ADDR-396c04d30da0",
@@ -18941,6 +19584,8 @@
    "s": "People",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/new-human-johannes-sigil/new-human-johannes-sigil-1.png",
     "data/captures/new-human-johannes-sigil/new-human-johannes-sigil-2.png"
@@ -18979,6 +19624,8 @@
    "s": "Projects",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/nh-os-broad/nh-os-broad.png"
    ],
@@ -19018,6 +19665,8 @@
    "s": "Institutions",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/new-human-press/new-human-press-1.png",
     "data/captures/new-human-press/new-human-press-2.png"
@@ -19056,6 +19705,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures-images/screengrab-20260617-140615.png"
    ],
@@ -19140,6 +19791,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/nh-os-ezekiel-engine-b1/nh-os-ezekiel-engine-b1-1.png",
     "data/captures/nh-os-ezekiel-engine-b1/nh-os-ezekiel-engine-b1-2.png"
@@ -19178,6 +19831,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/nh-os-rotational-epistemology/nh-os-rotational-epistemology-1.png",
     "data/captures/nh-os-rotational-epistemology/nh-os-rotational-epistemology-2.png"
@@ -19216,6 +19871,8 @@
    "s": "Heteronyms",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/nobel-glas-lagrange/nobel-glas-lagrange.png"
    ],
@@ -19253,6 +19910,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/octang-tokenized-audit/octang-tokenized-audit.png"
    ],
@@ -19292,6 +19951,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/operative-captioning/operative-captioning-1.png",
     "data/captures/operative-captioning/operative-captioning-2.png"
@@ -19330,6 +19991,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/operative-feminism-20260615/operative-feminism-1.png",
     "data/captures/operative-feminism-20260615/operative-feminism-2.png",
@@ -19368,6 +20031,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/operative-philology/operative-philology-1.png",
     "data/captures/operative-philology/operative-philology-2.png"
@@ -19408,6 +20073,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 8 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-511fabd789e7",
    "addr_id": "ADDR-13d074d8f9bb",
@@ -19519,6 +20186,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/operative-semiotics/operative-semiotics.png"
    ],
@@ -19558,6 +20227,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-a25673de1227",
    "addr_id": "ADDR-56c1307c3278",
@@ -19592,6 +20263,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 13 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-78b3c523cd63",
    "addr_id": "ADDR-4707143f8870",
@@ -19750,6 +20423,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 2 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/paul-function-adversarial-probe-20260813/screengrab-20260813-030112.png"
    ],
@@ -19802,6 +20477,8 @@
    "s": "Works",
    "sf": "Knowledge panel, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/pearl-and-other-poems/pearl-and-other-poems.png"
    ],
@@ -19838,6 +20515,8 @@
    "s": "Institutions",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/pergamon-press-crimson-hexagonal/pergamon-press-crimson-hexagonal-1.png",
     "data/captures/pergamon-press-crimson-hexagonal/pergamon-press-crimson-hexagonal-2.png"
@@ -19876,6 +20555,8 @@
    "s": "Sites",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/pessoa-graph/pessoa-graph.png"
    ],
@@ -19913,6 +20594,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "EXACT MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-eb6457b2db62",
    "addr_id": "ADDR-396dd4681e63",
@@ -20006,6 +20689,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, 9 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/capture-mirrors/phase-x-completion-of-marx-1.png",
     "data/capture-mirrors/phase-x-completion-of-marx-2.png"
@@ -20135,6 +20820,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 8 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-562e575c1ea5",
    "addr_id": "ADDR-2b6d53fe832b",
@@ -20252,6 +20939,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/capture-mirrors/phase-x-marx-2-search.png",
     "data/capture-mirrors/phase-x-marx-2-expanded.png"
@@ -20290,6 +20979,8 @@
    "s": "Captures",
    "sf": "AI Overview, 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/platform-erosion-observatory-20260811/screengrab-20260811-104342.png"
    ],
@@ -20371,6 +21062,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-c4ad1c81eb5e",
    "addr_id": "ADDR-839c5036e54a",
@@ -20450,6 +21143,8 @@
    "s": "Projects",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/prince-of-poets-mantle/prince-of-poets-mantle-1.png",
     "data/captures/prince-of-poets-mantle/prince-of-poets-mantle-2.png"
@@ -20490,6 +21185,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/provenance-erasure-rate-adoption/provenance-erasure-1.png",
     "data/captures/provenance-erasure-rate-adoption/provenance-erasure-2.png"
@@ -20530,6 +21227,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/provenance-erasure-rate-adoption/provenance-erasure-2.png",
     "data/captures/provenance-erasure-rate-adoption/provenance-erasure-1.png"
@@ -20570,6 +21269,8 @@
    "s": "Captures",
    "sf": "AI Overview, 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/provenance-erasure-recapture-20260811/screengrab-20260811-104919.png"
    ],
@@ -20645,6 +21346,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-b21c1fce3364",
    "addr_id": "ADDR-9ad751fb12ca",
@@ -20729,6 +21432,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/provenance-forensic-semiotics/provenance-forensic-semiotics-1.png",
     "data/captures/provenance-forensic-semiotics/provenance-forensic-semiotics-2.png"
@@ -20769,6 +21474,8 @@
    "s": "Captures",
    "sf": "AI Overview, 3 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/public-summarizer-self-audit-module-20260811/screengrab-20260811-104926.png"
    ],
@@ -20835,6 +21542,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 11 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-2fc2feaa9c22",
    "addr_id": "ADDR-0a0308e743ff",
@@ -20973,6 +21682,8 @@
    "s": "Captures",
    "sf": "TikTok Studio post analysis, sources not captured",
    "mt": "DEMAND SIGNAL (cross-language organic search)",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/capture-mirrors/phase-x-tiktok-demand-1.png",
     "data/capture-mirrors/phase-x-tiktok-demand-2.png",
@@ -21011,6 +21722,8 @@
    "s": "Heteronyms",
    "sf": "AI Mode (native), sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/rebekah-cranes/rebekah-cranes.png"
    ],
@@ -21047,6 +21760,8 @@
    "s": "Captures",
    "sf": "AI Overview, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/20260804-rebekahcranes-sappho-overview/20260804-rebekahcranes-sappho-overview.png"
    ],
@@ -21133,6 +21848,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-63cf04bbb0eb",
    "addr_id": "ADDR-8efd20ee330c",
@@ -21217,6 +21934,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-8e4aab70e171",
    "addr_id": "ADDR-ef0c7febc1ad",
@@ -21301,6 +22020,8 @@
    "s": "People",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/restored-academy/restored-academy-johannes-sigil-1.png",
     "data/captures/restored-academy/restored-academy-johannes-sigil-2.png"
@@ -21339,6 +22060,8 @@
    "s": "Sites",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/restored-academy/restored-academy.png",
     "data/captures/restored-academy/restored-academy-johannes-sigil-1.png",
@@ -21378,6 +22101,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/retrieval-basin-topology/retrieval-basin-topology.png"
    ],
@@ -21417,6 +22142,8 @@
    "s": "People",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/retrieval-formation-theory/retrieval-formation-theory-1.png",
     "data/captures/retrieval-formation-theory/retrieval-formation-theory-2.png"
@@ -21455,6 +22182,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures-images/retrieval-layer-theological-reception-1.png",
     "data/captures-images/retrieval-layer-theological-reception-2.png",
@@ -21494,6 +22223,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-8a40e7f94648",
    "addr_id": "ADDR-dcd4777b3d71",
@@ -21587,6 +22318,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/retrocausal-canon-formation/retrocausal-canon-formation.png"
    ],
@@ -21624,6 +22357,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 3 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-687af4db3c49",
    "addr_id": "ADDR-a2708d02ccc2",
@@ -21690,6 +22425,8 @@
    "s": "Captures",
    "sf": "AI Overview, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/alexanarch-revelation-thesis-recovered-20260809/alexanarch-revelation-thesis-recovered-20260809-1.png",
     "data/captures/alexanarch-revelation-thesis-recovered-20260809/alexanarch-revelation-thesis-recovered-20260809-2.png"
@@ -21775,6 +22512,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-b459f1666d67",
    "addr_id": "ADDR-83536849de6f",
@@ -21857,6 +22596,8 @@
    "s": "Captures",
    "sf": "AI Overview, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/revelation-alexanarch-20260811/screengrab-20260811-104215.png"
    ],
@@ -21941,6 +22682,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-9b459c61e1b5",
    "addr_id": "ADDR-83536849de6f",
@@ -22023,6 +22766,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 7 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-7289a2aca908",
    "addr_id": "ADDR-e52c6d0637fa",
@@ -22129,6 +22874,8 @@
    "s": "Captures",
    "sf": "AI Overview, 3 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/revelationfirst-org-glyph-in-serp-20260809/revelationfirst-org-glyph-in-serp-20260809-1.png"
    ],
@@ -22203,6 +22950,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 3 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-d15398b95376",
    "addr_id": "ADDR-6eae37651b45",
@@ -22275,6 +23024,8 @@
    "s": "Captures",
    "sf": "AI Overview, 3 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/revelationfirst-org-20260811/screengrab-20260811-104250.png"
    ],
@@ -22341,6 +23092,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/sappho-31-future-reader/sappho-31-future-reader-search.png",
     "data/captures/sappho-31-future-reader/sappho-31-future-reader-expanded.png"
@@ -22379,6 +23132,8 @@
    "s": "Captures",
    "sf": "AI Overview, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/sappho-31-future-reader-t42-20260727/overview-unexpanded-20260727.png",
     "data/captures/sappho-31-future-reader-t42-20260727/expanded-a-20260727.png",
@@ -22468,6 +23223,8 @@
    "s": "Heteronyms",
    "sf": "AI Mode (native), sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/sappho-rebekah-stanza/sappho-rebekah-stanza.png"
    ],
@@ -22507,6 +23264,8 @@
    "s": "Captures",
    "sf": "AI Overview, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-150ecb464b35",
    "addr_id": "ADDR-eeb29795e251",
@@ -22589,6 +23348,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/secret-name-armature/secret-name-armature-1.png",
     "data/captures/secret-name-armature/secret-name-armature-2.png"
@@ -22627,6 +23388,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 6 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-79fc73077427",
    "addr_id": "ADDR-8e0acdac629b",
@@ -22726,6 +23489,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 3 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-5e33a80bc129",
    "addr_id": "ADDR-c97d217be610",
@@ -22790,6 +23555,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/semantic-commodity-form/semantic-commodity-form.png",
     "data/captures/semantic-commodity-form/semantic-commodity-form-recapture-1.png",
@@ -22833,6 +23600,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/semantic-deviation-measure-indexed-but-uncited-20260725/screengrab-20260725-175107.png",
     "data/captures/semantic-deviation-measure-indexed-but-uncited-20260725/screengrab-20260725-175107.png"
@@ -22929,6 +23698,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/semantic-deviation-glas/semantic-deviation-glas-1.png",
     "data/captures/semantic-deviation-glas/semantic-deviation-glas-2.png"
@@ -22967,6 +23738,8 @@
    "s": "Frameworks",
    "sf": "AI Mode (native), sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/semantic-economy/semantic-economy.png"
    ],
@@ -23003,6 +23776,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/sei/sei-1.png",
     "data/captures/sei/sei-2.png"
@@ -23041,6 +23816,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 6 sources",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-2b38a2122181",
    "addr_id": "ADDR-a67883ed619f",
@@ -23132,6 +23909,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 3 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-b73e46155113",
    "addr_id": "ADDR-7ed1c3d7b57b",
@@ -23206,6 +23985,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 3 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-118aa743809e",
    "addr_id": "ADDR-7ed1c3d7b57b",
@@ -23277,6 +24058,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-7c344f414c68",
    "addr_id": "ADDR-7ed1c3d7b57b",
@@ -23356,6 +24139,8 @@
    "s": "Captures",
    "sf": "AI Overview, 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/semantic-economy-strike-first-turn-20260809/semantic-economy-strike-first-turn-20260809-1.png",
     "data/captures/semantic-economy-strike-first-turn-20260809/semantic-economy-strike-first-turn-20260809-2.png",
@@ -23439,6 +24224,8 @@
    "s": "Captures",
    "sf": "AI Overview, 7 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-2e22b1881658",
    "addr_id": "ADDR-5097ee49af3e",
@@ -23545,6 +24332,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/semantic-exhaustion-economy/semantic-exhaustion-economy-1.png",
     "data/captures/semantic-exhaustion-economy/semantic-exhaustion-economy-2.png"
@@ -23583,6 +24372,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "EXACT MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/semantic-integrity-markers-b1/semantic-integrity-markers-b1-1.png",
     "data/captures/semantic-integrity-markers-b1/semantic-integrity-markers-b1-2.png"
@@ -23621,6 +24412,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/semantic-liquidation/semantic-liquidation-1.png",
     "data/captures/semantic-liquidation/semantic-liquidation-2.png"
@@ -23661,6 +24454,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/semantic-rent/semantic-rent-1.png",
     "data/captures/semantic-rent/semantic-rent-2.png"
@@ -23699,6 +24494,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/semantic-physics/semantic-physics.png"
    ],
@@ -23736,6 +24533,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/semiotic-death-drive-1/semiotic-death-drive-search.png",
     "data/captures/semiotic-death-drive-1/semiotic-death-drive-expanded-1.png",
@@ -23775,6 +24574,8 @@
    "s": "Heteronyms",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/sen-kuro/sen-kuro-1.png",
     "data/captures/sen-kuro/sen-kuro-2.png"
@@ -23813,6 +24614,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/sharks-continuity-tether/sharks-continuity-tether-1.png",
     "data/captures/sharks-continuity-tether/sharks-continuity-tether-2.png"
@@ -23851,6 +24654,8 @@
    "s": "Captures",
    "sf": "Search results page (no AI surface), sources not captured",
    "mt": "ZERO INDEX",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-a8f1357b51f7",
    "addr_id": "ADDR-f66bdadacca0",
@@ -23885,6 +24690,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "ADOPTION",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-aeceaa9fa129",
    "addr_id": "ADDR-fac2c9761e75",
@@ -23919,6 +24726,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/socrates-as-orthonym/socrates-as-orthonym.png"
    ],
@@ -23957,6 +24766,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 6 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-cf41dc096e9c",
    "addr_id": "ADDR-e5e4a37ca6ea",
@@ -24061,6 +24872,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 6 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-5c78cc5fb59b",
    "addr_id": "ADDR-1056d1307a76",
@@ -24160,6 +24973,8 @@
    "s": "Institutions",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/space-ark-os/space-ark-os-1.png",
     "data/captures/space-ark-os/space-ark-os-2.png"
@@ -24198,6 +25013,8 @@
    "s": "Captures",
    "sf": "AI Overview, 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/space-ark-semantic-os-20260811/screengrab-20260811-104706.png"
    ],
@@ -24288,6 +25105,8 @@
    "s": "Heteronyms",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/sparrow-wells-patacinematics/sparrow-wells-patacinematics.png"
    ],
@@ -24325,6 +25144,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/spxi-protocol/spxi-protocol.png"
    ],
@@ -24364,6 +25185,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 5 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-54b109c9440b",
    "addr_id": "ADDR-6a2ea09dbb87",
@@ -24452,6 +25275,8 @@
    "s": "People",
    "sf": "AI Mode (native), 6 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/enli-lucente-20260813/screengrab-20260813-105808.png",
     "data/captures/enli-lucente-20260813/screengrab-20260813-105811.png"
@@ -24556,6 +25381,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/studio-for-patacinematics/studio-for-patacinematics-1.png",
     "data/captures/studio-for-patacinematics/studio-for-patacinematics-2.png"
@@ -24594,6 +25421,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/self-audit-overview/self-audit-overview.png"
    ],
@@ -24633,6 +25462,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/20260803-symbolon-signedin-overview/20260803-symbolon-signedin-overview.png",
     "data/captures/20260803-symbolon-signedin-aimode/20260803-symbolon-signedin-aimode-1.png",
@@ -24672,6 +25503,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/20260803-symbolon-incognito-overview/20260803-symbolon-incognito-overview.png",
     "data/captures/20260803-symbolon-incognito-aimode/20260803-symbolon-incognito-aimode.png"
@@ -24710,6 +25543,8 @@
    "s": "Heteronyms",
    "sf": "AI Mode (native), sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/talos-morrow-umbml/talos-morrow-umbml.png"
    ],
@@ -24746,6 +25581,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/telepathicism-new-human-poetry/telepathicism-new-human-poetry-1.png",
     "data/captures/telepathicism-new-human-poetry/telepathicism-new-human-poetry-2.png"
@@ -24786,6 +25623,8 @@
    "s": "Works",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/apocalypse-of-lee-sharks/apocalypse-of-lee-sharks.png"
    ],
@@ -24826,6 +25665,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/assembly-chorus-tachyon/assembly-tachyon-search.png",
     "data/captures/assembly-chorus-tachyon/assembly-tachyon-expanded.png"
@@ -24864,6 +25705,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/20260803-constitution-se-aimode/20260803-constitution-se-aimode-1.png",
     "data/captures/20260803-constitution-se-aimode/20260803-constitution-se-aimode-2.png"
@@ -24935,6 +25778,8 @@
    "s": "Captures",
    "sf": "AI Overview, 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/20260803-constitution-se-overview/20260803-constitution-se-overview.png"
    ],
@@ -25012,6 +25857,8 @@
    "s": "Captures",
    "sf": "SciLynk aggregator record page, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-f0a211cafd83",
    "addr_id": "ADDR-11e9e5ca0c22",
@@ -25046,6 +25893,8 @@
    "s": "Captures",
    "sf": "AI Overview, 3 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/the-sharks-function-20260811/screengrab-20260811-104721.png"
    ],
@@ -25118,6 +25967,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/total-axial-negation-graph/total-axial-negation-graph-1.png",
     "data/captures/total-axial-negation-graph/total-axial-negation-graph-2.png"
@@ -25156,6 +26007,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/training-layer-literature/training-layer-literature.png"
    ],
@@ -25193,6 +26046,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/transactions-semantic-economy-institute/transactions-semantic-economy-institute-1.png",
     "data/captures/transactions-semantic-economy-institute/transactions-semantic-economy-institute-2.png"
@@ -25231,6 +26086,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/transactions-substrate-engineering/transactions-substrate-engineering-1.png",
     "data/captures/transactions-substrate-engineering/transactions-substrate-engineering-2.png"
@@ -25269,6 +26126,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-d3c578a2f5ae",
    "addr_id": "ADDR-9332562cc3ec",
@@ -25342,6 +26201,8 @@
    "s": "Institutions",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/uca-dolphindiana/uca-dolphindiana-1.png",
     "data/captures/uca-dolphindiana/uca-dolphindiana-2.png"
@@ -25380,6 +26241,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/universal-kernel-transform/universal-kernel-transform-1.png",
     "data/captures/universal-kernel-transform/universal-kernel-transform-2.png"
@@ -25418,6 +26281,8 @@
    "s": "Sites",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/vpcor/vpcor.png"
    ],
@@ -25455,6 +26320,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 6 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-8c2bfa63aaea",
    "addr_id": "ADDR-b1858a4f0d90",
@@ -25548,6 +26415,8 @@
    "s": "Heteronyms",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/who-is-lee-sharks/who-is-lee-sharks-1.png",
     "data/captures/who-is-lee-sharks/who-is-lee-sharks-2.png"
@@ -25588,6 +26457,8 @@
    "s": "Captures",
    "sf": "Bing Copilot, sources not captured",
    "mt": "MANTLE CONSOLIDATION (composed biography)",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-75eebc103b8d",
    "addr_id": "ADDR-c6e80a2f1c87",
@@ -25622,6 +26493,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 3 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-6888a5f519be",
    "addr_id": "ADDR-88ec34302303",
@@ -25686,6 +26559,8 @@
    "s": "Captures",
    "sf": "AI Overview, 3 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/water-giraffe-probe-self-report-20260809/water-giraffe-probe-self-report-20260809-1.png",
     "data/captures/water-giraffe-probe-self-report-20260809/water-giraffe-probe-self-report-20260809-2.png",
@@ -25754,6 +26629,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 3 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-8aeebc5d52db",
    "addr_id": "ADDR-88ec34302303",
@@ -25820,6 +26697,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 3 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-fc49ae000b7c",
    "addr_id": "ADDR-88ec34302303",
@@ -25886,6 +26765,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 7 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-1e36640f9492",
    "addr_id": "ADDR-1ed25988734b",
@@ -25994,6 +26875,8 @@
    "s": "Captures",
    "sf": "AI Mode (native), 7 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-b902232aa20c",
    "addr_id": "ADDR-1ed25988734b",
@@ -26102,6 +26985,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, 4 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-e53011f27f45",
    "addr_id": "ADDR-2718410b5b30",
@@ -26183,6 +27068,8 @@
    "s": "Captures",
    "sf": "AI Overview, 3 sources",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/writable-retrieval-basin/writable-retrieval-basin-3.png",
     "data/captures/writable-retrieval-basin/writable-retrieval-basin-4.png"
@@ -26252,6 +27139,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/writable-retrieval-basin/writable-retrieval-basin-3.png",
     "data/captures/writable-retrieval-basin/writable-retrieval-basin-4.png"
@@ -26292,6 +27181,8 @@
    "s": "Captures",
    "sf": "AI Overview, sources not captured",
    "mt": "BROAD MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/writable-retrieval-basins/writable-retrieval-basins-1.png",
     "data/captures/writable-retrieval-basins/writable-retrieval-basins-2.png"
@@ -26330,6 +27221,8 @@
    "s": "Frameworks",
    "sf": "AI Overview, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/zenodo-packet-zpzp/zenodo-packet-zpzp-1.png",
     "data/captures/zenodo-packet-zpzp/zenodo-packet-zpzp-2.png",
@@ -26372,6 +27265,8 @@
    "s": "Captures",
    "sf": "UNRESOLVED, sources not captured",
    "mt": "CAPTURE",
+   "kind": null,
+   "rounds": null,
    "imgs": [
     "data/captures/zenodo-packet-zpzp-recapture/zenodo-packet-zpzp-recapture-1.png",
     "data/captures/zenodo-packet-zpzp-recapture/zenodo-packet-zpzp-recapture-2.png"
@@ -26411,6 +27306,8 @@
    "s": "Captures",
    "sf": "AI Overview, 4 sources",
    "mt": "EXACT MATCH",
+   "kind": null,
+   "rounds": null,
    "imgs": [],
    "obs_id": "OBS-52b5863979d1",
    "addr_id": "ADDR-8f3e8666c994",
@@ -26485,5 +27382,17 @@
  },
  "_regenerated": "2026-08-13 — projection refreshed from the rebuild after four Enli Lucente captures were seated. THE PROJECTION MUST BE REGENERATED AFTER EVERY REBUILD CHANGE; it went stale within the hour.",
  "_image_policy": "imgs carries the RESOLVED REPO PATH where one exists (data/captures/... or data/captures-images/...), so the gallery builds https://www.alexanarch.org/<path>. Bare filenames fall through to the leesharks mirror and 404 when the file lives in this repo instead. UNRESOLVED IMAGES ARE OMITTED ENTIRELY rather than rendered as broken references.",
- "_richness": "THE PROJECTION CARRIES THE WHOLE RECORD. d is the full finding, never truncated. reading is the analyst interface observation in full — 230 KB across 246 observations that reached no surface at all before 2026-08-13. analysis, transcript with its evidence class, the citation list with snippets and reading notes, collisions, and open questions all travel with the entry. These are rich records and have been displayed as such in every instantiation of the registry."
+ "_richness": "THE PROJECTION CARRIES THE WHOLE RECORD. d is the full finding, never truncated. reading is the analyst interface observation in full — 230 KB across 246 observations that reached no surface at all before 2026-08-13. analysis, transcript with its evidence class, the citation list with snippets and reading notes, collisions, and open questions all travel with the entry. These are rich records and have been displayed as such in every instantiation of the registry.",
+ "_capture_and_round": {
+  "ruled": "2026-08-13, MANUS",
+  "_note": "d[\"schema\"] is a version string and is left untouched.",
+  "statement": "\"a semantic address is what is typed in the search bar. that is a round within one capture, presented as a capture, and fragmenting single captures across records. ONE CAPTURE INCLUDES ALL ROUNDS IN THAT CAPTURE.\"",
+  "definitions": {
+   "semantic address": "THE STRING TYPED IN THE SEARCH BAR. Nothing else is a semantic address.",
+   "capture": "One session at one surface, opened by that typed string. A capture INCLUDES ALL ITS ROUNDS.",
+   "round": "A turn inside a capture — a follow-up prompt, a correction, an instruction, an assertion. A round IS NOT A CAPTURE and must not hold its own address, slug, or entry."
+  },
+  "the_defect_this_names": "I seated rounds as captures. Each took a semantic address, a slug and an entry, which FRAGMENTED SINGLE CAPTURES ACROSS RECORDS and put utterances into a field defined as what was typed into a search bar. It also erased provenance: a round cut from its capture loses the turn that produced it.",
+  "the_field": "observation.rounds[] — ordered turns, each {n, prompt, text, note}. Round 1 is the typed query."
+ }
 }

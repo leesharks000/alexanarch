@@ -130,6 +130,21 @@ def transcript_block(e, gallery=''):
         "observation id": e.get("obs_id"), "address id": e.get("addr_id"),
     }
     parts = []
+    # ROUNDS FIRST, because a round divorced from its capture erases provenance.
+    # MANUS: "a semantic address is what is typed in the search bar. that is a
+    # round within one capture, presented as a capture, and fragmenting single
+    # captures across records. ONE CAPTURE INCLUDES ALL ROUNDS IN THAT CAPTURE."
+    rounds = e.get("rounds") or []
+    if rounds:
+        rows = "".join(
+            f'<li><b>round {esc(str(r.get("n")))}</b>'
+            + (f'<div class="cap-ct">{esc(str(r["prompt"]))}</div>' if r.get("prompt")
+               else '<div class="cap-cn">not recovered</div>')
+            + (f'<div class="cap-cn">{esc(str(r["note"]))}</div>' if r.get("note") else '')
+            + '</li>' for r in rounds)
+        parts.append('<div class="cap-tr-label">Rounds '
+                     '<span class="cap-tr-warn">this record is a ROUND, not a capture</span></div>'
+                     f'<ol class="cap-cites">{rows}</ol>')
     # THE REMAINING CAPTURES, inside the expand. The leesharks gallery put its
     # gallery in the collapsed entry-body and showed ONE thumbnail up top; a
     # capture with six screenshots should show its first and keep the rest one
