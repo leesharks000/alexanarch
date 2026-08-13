@@ -4,7 +4,7 @@
   "title": "Alexanarch Protocol Index",
   "purpose": "Central machine-readable catalog of all Alexanarch protocols, schemas, and data registries. Single source of truth — every other document (AGENTS.md, DEPOSIT-FLOW.md, scripts, workflows) MUST pull from this index, not duplicate it. If this file disagrees with any other surface, this file wins and the other surface is wrong.",
   "index_version": "v1.1",
-  "last_updated": "2026-08-12",
+  "last_updated": "2026-08-13",
   "operator_directive": {
     "for_new_instances": [
       "STOP before any action.",
@@ -177,7 +177,7 @@
       "name": "Deposit Registry (the AXN registry)",
       "canonical_path": "/data/registry.json",
       "purpose": "Canonical list of every deposit. Drives home-page Recent Deposits, browse page, sitemap, chunks. THE source of truth — all other surfaces are derived.",
-      "current_count": 1456,
+      "current_count": 1457,
       "validates_against": [
         "/api/schemas/deposit-entry.schema.json"
       ],
@@ -535,16 +535,16 @@
   "state": {
     "canonical_path": "/data/state.json",
     "description": "Canonical generated source for all displayed counts. Read this rather than hand-maintaining counts here.",
-    "content_sha256": "b59db1fff9eb0d0d51c7646c22fc4460b5af970d257e8d35dda061c9b8a5c787"
+    "content_sha256": "84bb43fe0b9f3cc66963bdb5c519f90e58b65bf2ee575945badadb8863d309e2"
   },
   "surface_hashes": {
     "algorithm": "sha256",
-    "hashed_at": "2026-08-12T20:09:10Z",
+    "hashed_at": "2026-08-13T02:53:43Z",
     "files": {
-      "data/registry.json": "43fbfcc0ef9fad8fe3519a65d93cb1d8f89e942b1ae77b9d58485606dc45b643",
-      "data/api/search-index.json": "396e2e3a701f42755c894242e1c85ba1edf20929d06ea9e32b93d99ada514078",
-      "data/api/body-index.json": "e3cab88e126451ce3f8e140b426a784ac4860042e81e64d2f811715ab78ce74e",
-      "data/api/axn-index.json": "d3ecc731693fd42411a9444a7f0dee349ff9cc0f17570fdf44dd553e1faefa03",
+      "data/registry.json": "2423783caa5560f4f9587d5431690cc16802a13e30d25cf94c08fceecdabf7cd",
+      "data/api/search-index.json": "39d0c69be5f2a229e0cb9f3bd0d170df10c50af6ddbe96c2bbd498a888d3032f",
+      "data/api/body-index.json": "0ae3747a896c33731569b0c6effeb52d9125a0c46fb9b371a8ce7c076abe6818",
+      "data/api/axn-index.json": "c2f23c6b5e1604471fb3b4bb4863ab69db94134a9a60eb453332dc94b505cc3f",
       "data/doi-resolution-index.json": "caf736adeb7ebdb0db104c3c01de00ea2b027a17f7b11bb8a42f33c3b2594366"
     }
   }

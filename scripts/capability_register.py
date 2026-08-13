@@ -151,11 +151,22 @@ def probe_static_publication():
 
 
 def probe_record_pages():
-    """Human record surfaces render with their identifier."""
+    """Human record surfaces render with their identifier.
+
+    PROBES THE NEWEST *PUBLISHED* DEPOSIT, NOT deps[-1]. This gate runs BEFORE
+    git push, so at commit time deps[-1] is the deposit being committed and its
+    page cannot be live yet — the probe would 404 on a healthy archive and halt
+    a correct commit. That is what happened on #1457.
+
+    The gate exists to catch REGRESSION in capability that already existed.
+    Verifying the NEW deposit's page is stage_verify's job, after the push and
+    the deploy wait. So this asks the last deposit that had a chance to deploy.
+    """
     reg = json.loads((ROOT / "data/registry.json").read_text())
     deps = reg["deposits"]
-    n = deps[-1]["deposit_number"]
-    axn = deps[-1]["axn"]
+    published = deps[-2] if len(deps) > 1 else deps[-1]
+    n = published["deposit_number"]
+    axn = published["axn"]
     ct, raw = get(f"/s/records/{n}/")
     s = raw.decode("utf-8", "replace")
     assert axn.split(".")[0] in s, f"record #{n} does not carry its AXN"
@@ -238,8 +249,11 @@ def probe_lexical():
 
 def probe_axn_resolver():
     """Every hex position resolves to a page carrying its full AXN."""
+    # Same reason as probe_record_pages: the newest deposit is not yet pushed
+    # when this gate runs, so the resolver page for its hex cannot exist.
     reg = json.loads((ROOT / "data/registry.json").read_text())
-    d = reg["deposits"][-1]
+    deps = reg["deposits"]
+    d = deps[-2] if len(deps) > 1 else deps[-1]
     ct, raw = get(f"/s/axn/{d['hex']}/")
     s = raw.decode("utf-8", "replace")
     assert d["axn"] in s, f"resolver page for {d['hex']} does not carry the full AXN"

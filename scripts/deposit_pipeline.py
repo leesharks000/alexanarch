@@ -593,9 +593,14 @@ def stage_surfaces(args):
     extent. They are not per-deposit artifacts, so they were never in this
     pipeline — which is precisely how they fell eleven deposits behind.
     """
-    sh([sys.executable, SCRIPTS / "regenerate_surfaces.py", "--only",
-        "state", "browse", "browse-index", "api-index", "search-index",
-        "search-static", "homepage-noscript"], check=True)
+    # regenerate_surfaces.py takes --only as ONE comma-joined string, not as
+    # separate positional arguments. Passing them separately made argparse read
+    # the second onward as positionals and fail the stage — which is how deposit
+    # #1457 first tripped it. Valid names are enumerated in that script.
+    surfaces = ("state,browse,browse-index,api-index,search-index,"
+                "search-static,homepage-noscript")
+    sh([sys.executable, SCRIPTS / "regenerate_surfaces.py", "--only", surfaces],
+       check=True)
 
 
 def stage_synchrony(args):
