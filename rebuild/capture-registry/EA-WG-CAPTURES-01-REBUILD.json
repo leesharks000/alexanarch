@@ -491150,17 +491150,13 @@
        }
       ],
       "citation_summary": {
-       "total": 1,
-       "inline": 1,
-       "cards": 0,
+       "total": 3,
        "by_relation": {
-        "unresolvable": 1
+        "third_party": 2,
+        "authored_surface": 1
        },
-       "distinct_domains": 0,
-       "from_verbatim": 1,
-       "from_ocr": 0,
-       "_rule": "ONE LIST, MARKED. Every citation the capture carries is here, archive and third-party alike, each with a relation. They are not split into separate fields because the RETRIEVAL BASIN is the unit of analysis and splitting it would force a reader to reassemble the composition to see it. INLINE and CARD are kept distinct: a source cited inline was used FOR A CLAIM; a source in the strip was displayed and may support nothing in particular.",
-       "_status": "MACHINE-DERIVED, UNVERIFIED, AND NOT TO BE CITED. Extracted by pattern. MANUS ruling 2026-08-12: citations are the most crucial datapoint and must be READ, not grepped. Every regex written against this material today has failed at least once — two published findings were withdrawn on that account. This block is retained only until the read-through replaces it, record by record."
+       "distinct_domains": 3,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
       },
       "citations_MACHINE_DERIVED_UNVERIFIED": [
        {
@@ -491175,6 +491171,48 @@
         "resolvable": false,
         "raw_url_if_opaque": "https://www.google.com/goto?url=CAESfQHuR6pN3HBteJihrS2xiYL8i1t_cNm1D7267BGWcLCtjvvJ5DCuUQl0HTvUWnHIJAtNu3Vb4XFSaP5jifSsOcDJGaI_NwhRMBfVGfXyhSWz5eajeYrE2tOjqPaJBpTh5GRixUcXnJw_U7xsax8NFjX3Ui26c6BgF4CnWJHu",
         "source_of_record": "verbatim paste"
+       }
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "NOAA Office of National Marine Sanctuaries",
+        "domain": "noaa.gov",
+        "relation": "third_party",
+        "title": "How Sharks Keep the Ocean Healthy",
+        "snippet": "Sharks are often misunderstood, but they play a crucial role in keeping ocean ecosystems healthy. As apex predators, they help maintain balance by preying on si[ck fish]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 2,
+        "site_label": "YouTube · Our Endangered World",
+        "domain": "youtube.com",
+        "relation": "third_party",
+        "title": "How Do Sharks Help the Ecosystem",
+        "snippet": "59s · 1.4K views · 1 year ago",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 3,
+        "site_label": "Medium·Lee Sharks",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "date": "2026-03-03",
+        "title": "THE SHARKS-FUNCTION AND THE CONTINUITY TETHER",
+        "snippet": "V. THE CONVERGENCE: THREE-LAYER ARCHITECTURE. The two problems are two sides of one architecture. The Sharks-function is what gets verified. The continuity teth[er]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
        }
       ]
      },
@@ -491228,7 +491266,7 @@
       "has_recapture": null,
       "auto_derived": null,
       "entry_status": null,
-      "finding": null,
+      "finding": "THE SURNAME PULLS MARINE BIOLOGY, AND THE LAYER OFFERS A VIDEO ABOUT IT. Two of three cards are shark ecology — NOAA and a YouTube explainer — beside the one card that is the actual function.",
       "match_or_finding": [
        {
         "value": "ADOPTION — THE THREE-LAYER ARCHITECTURE RECITED; AN ECOSYSTEM VIDEO INJECTED MID-ANSWER.",
@@ -491238,7 +491276,17 @@
         "version_date": "2026-08-12",
         "from_field": "mt"
        }
-      ]
+      ],
+      "collision_register": {
+       "collisions": [
+        {
+         "collided_with": "shark ecology and apex-predator function",
+         "via": "\"function\" read as an ECOLOGICAL role rather than a mechanism, compounding the surname",
+         "evidence": "NOAA National Marine Sanctuaries, a YouTube explainer on ecological functions of sharks"
+        }
+       ],
+       "_rule": "the partner is the measurement, and so is the mechanism."
+      }
      },
      "evidence": {
       "images": [
@@ -491275,7 +491323,7 @@
       "recovered": null,
       "restored_note": null,
       "record_note": null,
-      "interface_observation": null,
+      "interface_observation": "\"FUNCTION\" READ AS ECOLOGICAL FUNCTION. The Sharks-function is a semantic verification mechanism. The layer returns NOAA on how sharks keep the ocean healthy and volunteers a 59-second video: \"Watch this short overview explaining the ECOLOGICAL FUNCTIONS of sharks.\" The collision is not on the surname alone but on the word FUNCTION, read as a role in an ecosystem rather than a mechanism in an architecture.\n\nThis is the fourth distinct shark collision in the corpus, after Mary Lee the white shark in an image block, the San Jose Sharks and marine biology named and declined, and the Street Sharks voice actor cited in the archive’s own analysis. Only here is the mechanism the second word rather than the name.\n\nThe answer does close by offering the right path: \"if you are looking into the specific philosophical framework or programming concepts behind Lee Sharks’ architecture, let me know which layer or text you’d like to explore.\"",
       "notes": null
      },
      "verification": [],
@@ -501305,18 +501353,13 @@
        }
       ],
       "citation_summary": {
-       "total": 2,
-       "inline": 2,
-       "cards": 0,
+       "total": 4,
        "by_relation": {
-        "authored_surface": 1,
-        "third_party": 1
+        "third_party": 3,
+        "authored_surface": 1
        },
-       "distinct_domains": 2,
-       "from_verbatim": 2,
-       "from_ocr": 0,
-       "_rule": "ONE LIST, MARKED. Every citation the capture carries is here, archive and third-party alike, each with a relation. They are not split into separate fields because the RETRIEVAL BASIN is the unit of analysis and splitting it would force a reader to reassemble the composition to see it. INLINE and CARD are kept distinct: a source cited inline was used FOR A CLAIM; a source in the strip was displayed and may support nothing in particular.",
-       "_status": "MACHINE-DERIVED, UNVERIFIED, AND NOT TO BE CITED. Extracted by pattern. MANUS ruling 2026-08-12: citations are the most crucial datapoint and must be READ, not grepped. Every regex written against this material today has failed at least once — two published findings were withdrawn on that account. This block is retained only until the read-through replaces it, record by record."
+       "distinct_domains": 3,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
       },
       "citations_MACHINE_DERIVED_UNVERIFIED": [
        {
@@ -501344,6 +501387,60 @@
         "resolvable": true,
         "raw_url_if_opaque": null,
         "source_of_record": "verbatim paste"
+       }
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "position": "inline",
+        "url": "https://www.cambridge.org/core/books/cambridge-companion-to-sappho/sapphos-poetic-language/DB4E6D05D0746EB89AFCB1D2C50E1176",
+        "domain": "cambridge.org",
+        "relation": "third_party",
+        "title": "The Cambridge Companion to Sappho — Sappho’s Poetic Language",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 2,
+        "site_label": "The Digital Sappho",
+        "domain": "digitalsappho.org",
+        "relation": "third_party",
+        "title": "The Digital Sappho | Text and Commentary",
+        "snippet": "combines the elements of a traditional, printed commentary with the benefits of a digital format.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 3,
+        "site_label": "Medium·Lee Sharks",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "date": "2026-07-22",
+        "title": "EA-MPAI-SAPPHO31-01 v1.0",
+        "snippet": "The signature is CITATION APPEARING TO SUPPORT THE INVERSION OF WHAT THE CITED SOURCE ARGUES. … the correct disambiguation surface is: Sappho Fragment 31 is…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 4,
+        "site_label": "Cambridge University Press & Assessment",
+        "domain": "cambridge.org",
+        "relation": "third_party",
+        "title": "Sappho’s Poetic Language (Chapter 11)",
+        "snippet": "φαίνεταί μοι κῆνοϏ ἴσοϏ θέοισιν ἔμμεν’ ὤνηρ, ὄττισ ἐνάντιόσ τοι ἰσδάνει καὶ πλάσιον ἆδυ φωνεί-σασ ὐπακούει",
+        "reading_note": "Cambridge prints Fragment 31 in the LESBIAN AEOLIC with lunate sigma (σ/Ϗ) and full diacritics; every character transmits through the composition layer.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
        }
       ]
      },
@@ -501408,7 +501505,7 @@
       "has_recapture": null,
       "auto_derived": null,
       "entry_status": null,
-      "finding": null,
+      "finding": "MANUS NAMES A PHENOMENON IN THE MARGIN: \"the reverse of compositional bystanding. zero results in organic search, but results in composition.\"",
       "match_or_finding": [
        {
         "value": "ADOPTION (the disambiguation instrument composing as designed: framework reproduced nearly clause-for-clause, hedged as reinterpretation, co-cited with mainstream scholarship)",
@@ -501491,7 +501588,7 @@
       "recovered": null,
       "restored_note": null,
       "record_note": null,
-      "interface_observation": null,
+      "interface_observation": "THE OPERATOR NAMED A NEW PHENOMENON AT THE MOMENT OF CAPTURE. The paste ends with MANUS’s own note: \"the reverse of compositional bystanding. zero results in organic search, but results in composition.\"\n\nCompositional bystanding is the archive PRESENT IN RETRIEVAL AND ABSENT FROM COMPOSITION — a documented failure mode in the registry’s twelve-term vocabulary. This capture is its inverse: ABSENT FROM ORGANIC RANKING AND PRESENT IN THE COMPOSED ANSWER. The work does not rank, and the layer composes from it anyway.\n\nI am NOT minting a term for this. The vocabulary rule is that terms are not extended by invention, and in any case the naming belongs to MANUS, who identified it. Recorded as an observed phenomenon with the operator’s own description attached, awaiting his ruling on whether it becomes a thirteenth failure mode or is classed as a success condition rather than a failure at all.\n\nThe capture is otherwise a strong one. Cambridge prints Fragment 31 in Lesbian Aeolic with lunate sigma and full diacritics, and every character transmits. And card 3 carries the archive’s own definition of a citation pathology: \"The signature is CITATION APPEARING TO SUPPORT THE INVERSION OF WHAT THE CITED SOURCE ARGUES\" — a diagnostic for misuse of sources, surfaced by the source apparatus it diagnoses.",
       "notes": null
      },
      "verification": [],
@@ -524248,18 +524345,13 @@
       "related": [],
       "cite": null,
       "citation_summary": {
-       "total": 4,
-       "inline": 3,
-       "cards": 1,
+       "total": 3,
        "by_relation": {
-        "third_party": 3,
-        "authored_surface": 1
+        "authored_surface": 1,
+        "third_party": 2
        },
        "distinct_domains": 3,
-       "from_verbatim": 4,
-       "from_ocr": 0,
-       "_rule": "ONE LIST, MARKED. Every citation the capture carries is here, archive and third-party alike, each with a relation. They are not split into separate fields because the RETRIEVAL BASIN is the unit of analysis and splitting it would force a reader to reassemble the composition to see it. INLINE and CARD are kept distinct: a source cited inline was used FOR A CLAIM; a source in the strip was displayed and may support nothing in particular.",
-       "_status": "MACHINE-DERIVED, UNVERIFIED, AND NOT TO BE CITED. Extracted by pattern. MANUS ruling 2026-08-12: citations are the most crucial datapoint and must be READ, not grepped. Every regex written against this material today has failed at least once — two published findings were withdrawn on that account. This block is retained only until the read-through replaces it, record by record."
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
       },
       "citations_MACHINE_DERIVED_UNVERIFIED": [
        {
@@ -524313,6 +524405,49 @@
         "relation": "third_party",
         "resolvable": true,
         "source_of_record": "verbatim paste"
+       }
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "Academia.edu",
+        "domain": "independent.academia.edu",
+        "relation": "authored_surface",
+        "title": "Lee Sharks - Independent Researcher",
+        "snippet": "This paper takes that event as a case study in a structural property of assigned persistent identifiers: the institution that maintains the name-to-object relat[ion]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 2,
+        "site_label": "LinkedIn·Anna Jacobi",
+        "domain": "linkedin.com",
+        "relation": "third_party",
+        "date": "2026-05-01",
+        "title": "Anna Jacobi's Post",
+        "snippet": "This isn't an anti-AI argument. It's an anti-waste argument. AI can help water systems: pathogen monitoring, contamination detection, chlorination optimization…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 3,
+        "site_label": "Medium·Chris Perkins",
+        "domain": "medium.com",
+        "relation": "third_party",
+        "date": "2026-06-30",
+        "title": "The Silent Veto: Why safe agent systems should sometimes fail without telling the agent why",
+        "snippet": "Part 2 of 3 · The Law → The Silent Veto → B[…]",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
        }
       ]
      },
@@ -524368,7 +524503,7 @@
       "has_recapture": null,
       "auto_derived": null,
       "entry_status": null,
-      "finding": null,
+      "finding": "THE QUOTED FORM RETURNS A THIRD OF WHAT THE UNQUOTED FORM DID, and the growth-marketing collision is gone. Three cards against six, and the archive is card 1 rather than card 1 of six.",
       "match_or_finding": [
        {
         "value": "NAMED-SYSTEM KERNEL MATCH",
@@ -524413,7 +524548,7 @@
       "recovered": null,
       "restored_note": null,
       "record_note": null,
-      "interface_observation": null,
+      "interface_observation": "QUOTING NARROWS THE BASIN AND RAISES THE ARCHIVE’S POSITION. «\"anti-suppression infrastructure\"» quoted, 1 August: three cards, the archive first. «anti-suppression infrastructure» unquoted, SAME DAY: six cards including a social-media growth-marketing page where the phrase means evading platform throttling.\n\nThe quoted form drops that collision entirely. What remains is adjacent and serious: an AI-governance argument about infrastructure priority under scarcity, and Chris Perkins on THE SILENT VETO — \"why safe agent systems should sometimes fail WITHOUT TELLING THE AGENT WHY\". That last is unusually close to the archive’s own subject: a system declining to act and declining to say so, which is the automated obelus described from the enforcement side.",
       "notes": null
      },
      "verification": [],
@@ -540261,7 +540396,87 @@
       "sources": [],
       "links": [],
       "related": [],
-      "source_count": null
+      "source_count": null,
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "Barnes & Noble",
+        "domain": "barnesandnoble.com",
+        "relation": "third_party",
+        "date": "2014-10-15",
+        "title": "Pearl and Other Poems by Johannes Sigil, Lee Sharks, Paperback",
+        "snippet": "Pearl is one episode in a longer poetic project, The Crimson Hexagon, a sweeping cultural epic for the 21st century.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 2,
+        "site_label": "Medium·Johannes Sigil",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "date": "2026-03-03",
+        "title": "MAGIC AS SYMBOLIC ENGINEERING",
+        "snippet": "To read a magical text is to activate it. To annotate is to enter covenant. To critique is to risk transformation.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 3,
+        "site_label": "Medium·Johannes Sigil",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "date": "2025-12-17",
+        "title": "THE EPIC WITHOUT HERO: Toward a Theory of Epic for the Algorithmic Age",
+        "snippet": "Johannes Sigil Institute for Comparative Poetics.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 4,
+        "site_label": "zenodo.org",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "date": "2026-01-14",
+        "title": "The New Human Project — Language as World-Builder",
+        "snippet": "Authors: Sigil, Johannes (Johannes Sigil Institute for Comparative Poetics). A canonical introduction to the New Human Project…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 5,
+        "site_label": "Amazon.ca",
+        "domain": "amazon.ca",
+        "relation": "third_party",
+        "title": "Pearl and Other Poems (Crimson Hexagon) eBook",
+        "snippet": "Sharks, Lee, Sigil, Johannes: Amazon.ca: Kindle Store.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       }
+      ],
+      "citation_summary": {
+       "total": 5,
+       "by_relation": {
+        "third_party": 2,
+        "authored_surface": 3
+       },
+       "distinct_domains": 4,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
+      }
      },
      "measurement_flags": {
       "author_retained": true,
@@ -540303,14 +540518,16 @@
       "entity_type": null,
       "failure_modes": [],
       "stability_status": null,
-      "finding": null
+      "finding": "TWO MORE RETAIL RECORDS CARRY THE 2014 CO-AUTHORSHIP. Barnes & Noble and Amazon.ca both list Pearl and Other Poems under BOTH names — the heteronym in commercial bibliographic data on three retailers now."
      },
      "evidence": {
       "images": [],
       "ocr": [],
       "evidence_statements": []
      },
-     "record_history": {},
+     "record_history": {
+      "interface_observation": "THE HETERONYM IS IN THE RETAIL SUPPLY CHAIN, DATED 2014, ON THREE STORES. bookshop.org was read earlier; here Barnes & Noble lists \"Pearl and Other Poems by JOHANNES SIGIL, LEE SHARKS, Paperback\", 15 October 2014, and Amazon.ca lists the Kindle edition as \"Sharks, Lee, Sigil, Johannes\". Three independent commercial catalogues carry the co-authorship as ordinary product metadata, twelve years before the Dodecad was specified and long before any of it was theorised.\n\nThis is the sturdiest provenance evidence the registry holds. Retail bibliographic records are maintained by parties with no interest in the archive, are dated by publication, and are not editable after the fact. The heteronym did not become real when the composition layer adopted it; it was already in the ISBN record.\n\nCard 2 also carries the archive’s clearest statement of what it asks of a reader: \"To read a magical text is to activate it. To annotate is to enter covenant. To critique is to risk transformation.\""
+     },
      "verification": [],
      "open_questions": [],
      "fill_state": {
