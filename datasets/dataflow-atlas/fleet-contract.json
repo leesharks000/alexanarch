@@ -1,0 +1,43 @@
+{
+ "_id": "CAPTURE REGISTRY — FLEET CONTRACT",
+ "_set": "2026-08-13",
+ "_by": "MANUS, executed by TACHYON",
+ "_one_line": "ONE CANONICAL STORE. ONE PROJECTION. RENDERERS RENDER. RETIRED STORES ARE VERSIONED, NEVER DELETED.",
+ "_why": "The registry had lived at four nodes under four regimes — v10.0/300 at alexanarch, v9.55/288 at machinemediation, v9.4/202 at godkinggoogle, v7.2/131 at leesharks — with two of them holding stores nothing read. A human saw 300 records while a crawler reading a gallery repository found 131, at a version two months old, with nothing saying it was superseded.",
+ "roles": {
+  "canonical_store": {
+   "node": "alexanarch",
+   "path": "rebuild/capture-registry/EA-WG-CAPTURES-01-REBUILD.json",
+   "rule": "THE ONLY THING WRITTEN TO. Entry is written here and nowhere else."
+  },
+  "public_projection": {
+   "node": "alexanarch",
+   "path": "data/EA-WG-CAPTURES-01.json",
+   "rule": "DERIVED from the canonical store for publication. Regenerated after every change; it went stale within an hour once."
+  },
+  "renderer": {
+   "nodes": [
+    "leesharks.com",
+    "godkinggoogle.com"
+   ],
+   "rule": "Fetches the projection at render time and STORES NOTHING. A gallery is a window, not a store.",
+   "status": "store retired 2026-08-13; last contents kept as a dated snapshot beside the pointer"
+  },
+  "hosted_mirror": {
+   "nodes": [
+    "machinemediation.org"
+   ],
+   "rule": "Holds a COPY of the projection, so it must be re-synced and must declare its own freshness.",
+   "status": "UNRESOLVED — MANUS ruling outstanding on whether this becomes a renderer or stays a hosted mirror with a sync step and a staleness banner. Its data/registry.json still declares the OLD source of truth (alexanarch:data/...) rather than the rebuild."
+  }
+ },
+ "intake": "One contract: alexanarch:rebuild/capture-registry/INTAKE-CONTRACT.md. Nodes REFERENCE it; none restates it.",
+ "freeze": "datasets/dataflow-atlas/fleet-freeze-20260813.json — all four nodes with version, date, counts and sha256 before normalization.",
+ "gates": [
+  "scripts/capture_intake.py — refuses a capture that cannot be read",
+  "scripts/check_gallery_js.js — executes the page scripts; node --check is a syntax check and passed while the page was broken",
+  "scripts/check_render_determinism.py — two builds must be byte-identical",
+  "scripts/check_fleet_sync.py — a node declaring a count or version divergent from canonical fails the build"
+ ],
+ "versioning_rule": "MANUS: \"retired stores keep their bytes as dated snapshots. we are versioning, not tombstoning.\""
+}

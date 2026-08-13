@@ -1,0 +1,70 @@
+{
+ "_what": "FLEET FREEZE taken 2026-08-13 before capture-registry normalization. Nothing is deleted before it is described.",
+ "_rule": "MANUS: \"retired stores keep their bytes as dated snapshots. we are versioning, not tombstoning.\"",
+ "nodes": [
+  {
+   "node": "alexanarch",
+   "repo": "repo",
+   "path": "data/EA-WG-CAPTURES-01.json",
+   "declared_role": "canonical projection",
+   "version": "10.0",
+   "date": "2026-08-13",
+   "declared_total": 300,
+   "entries": 300,
+   "address_count": 300,
+   "observation_count": 395,
+   "sha256": "03c7863735c1ddd346a1bd2e3b776d6f98b1f2893d6920ae9ea9674a415b338e",
+   "bytes": 6565625,
+   "repo_head": "c0c32f2a6095",
+   "declares_source_of_truth": "alexanarch:rebuild/capture-registry/EA-WG-CAPTURES-01-REBUILD.json"
+  },
+  {
+   "node": "machinemediation.org",
+   "repo": "src-machinemediation-org",
+   "path": "data/registry.json",
+   "declared_role": "hosted mirror",
+   "version": "9.55",
+   "date": "2026-08-11",
+   "declared_total": 288,
+   "entries": 288,
+   "address_count": null,
+   "observation_count": null,
+   "sha256": "1b79e9e54b5a005b434853187258bb5a7ccbe0dd8ea925a9a4c2edd4f1649cca",
+   "bytes": 1332422,
+   "repo_head": "0c811cad3d22",
+   "declares_source_of_truth": "alexanarch:data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "node": "godkinggoogle.com",
+   "repo": "src-godkinggoogle",
+   "path": "captures/registry.json",
+   "declared_role": "retired store",
+   "version": "9.4",
+   "date": "2026-07-13",
+   "declared_total": 202,
+   "entries": 202,
+   "address_count": null,
+   "observation_count": null,
+   "sha256": "81a2100d1b22d92e3ee0dba52c518c4fe38c0f5dc674e55fb13b03389467a86e",
+   "bytes": 282846,
+   "repo_head": "4809f7cf7f6a",
+   "declares_source_of_truth": "None"
+  },
+  {
+   "node": "leesharks.com",
+   "repo": "src-leesharks.com",
+   "path": "captures/registry.json",
+   "declared_role": "retired store",
+   "version": "7.2",
+   "date": "2026-06-15",
+   "declared_total": 131,
+   "entries": 131,
+   "address_count": null,
+   "observation_count": null,
+   "sha256": "27b7ecd4ae6c35230ee212eeb1a311d774c392c1889b7b3d1f5cfcf2affa03dd",
+   "bytes": 164234,
+   "repo_head": "a27ec6288f36",
+   "declares_source_of_truth": "None"
+  }
+ ]
+}
