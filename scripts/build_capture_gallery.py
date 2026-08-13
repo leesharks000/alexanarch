@@ -103,6 +103,42 @@ def mark_inline_cites(text):
     return out
 
 
+def split_source_strip(text, cites):
+    """A paste carries the composed answer AND the source strip, run together.
+
+    MANUS: "within the transcripts, citation cards appear as a garbled blob
+    with no differentiation from transcript body." The citations are already
+    extracted, so the strip is grep-identifiable — this finds where it starts
+    and renders it apart, WITHOUT altering a byte of the verbatim record.
+
+    Conservative by design: it only splits on a cited title or snippet found
+    in the last 60% of the text, and only when two or more distinct cited
+    sources appear at or after that point. One stray match is not a strip.
+    """
+    if not cites or len(text) < 400:
+        return text, ""
+    floor = int(len(text) * 0.40)
+    marks = []
+    for c in cites:
+        for key in (c.get("title"), (c.get("snip") or "")[:60], c.get("site")):
+            k = (key or "").strip()
+            if len(k) < 14:
+                continue
+            i = text.find(k, floor)
+            if i >= 0:
+                marks.append(i)
+                break
+    if len(marks) < 2:
+        return text, ""
+    cut = min(marks)
+    return text[:cut].rstrip(), text[cut:].strip()
+
+
+def _urlq(q):
+    import urllib.parse
+    return urllib.parse.quote_plus(str(q or ""))
+
+
 def para(text):
     """Analyst prose is written in paragraphs. Render them as paragraphs."""
     esc = html.escape
@@ -188,17 +224,56 @@ def transcript_block(e, gallery=''):
                      '<span class="cap-tr-warn">analyst prose, not machine text</span></div>'
                      f'<div class="cap-tr-prose">{para(analysis)}</div>')
     if cites:
-        rows = "".join(
-            '<li>' +
-            (f'<a href="{esc(c["url"])}" target="_blank" rel="noopener">{esc(str(c.get("site") or "source"))}</a>'
-             if c.get("url") else f'<b>{esc(str(c.get("site") or "source"))}</b>') +
-            (f' <span class="cap-rel">{esc(str(c.get("rel") or ""))}</span>' if c.get("rel") else '') +
-            (f'<div class="cap-ct">{esc(str(c["title"]))}</div>' if c.get("title") else '') +
-            (f'<div class="cap-cs">{esc(str(c["snip"]))}</div>' if c.get("snip") else '') +
-            (f'<div class="cap-cn">{esc(str(c["note"]))}</div>' if c.get("note") else '') +
-            '</li>' for c in cites)
-        parts.append(f'<div class="cap-tr-label">Sources as cited ({len(cites)})</div>'
-                     f'<ol class="cap-cites">{rows}</ol>')
+        # ONE CITATION SECTION, NOT THREE. The extracted card and its as-pasted
+        # segment are THE SAME SOURCE seen two ways — what the layer showed, and
+        # what the copy produced. Splitting them across "Sources as cited" and
+        # "Source strip" made two lists of the same thing and left the reader to
+        # match them up. They are merged here, one entry per source.
+        strip_for = {}
+        if tr:
+            _, _strip = split_source_strip(tr, cites)
+            if _strip:
+                cuts = []
+                for c in cites:
+                    for key in (c.get("title"), c.get("site")):
+                        k = (key or "").strip()
+                        if len(k) < 8:
+                            continue
+                        i = _strip.find(k)
+                        if i >= 0:
+                            cuts.append((i, c))
+                            break
+                cuts.sort(key=lambda z: z[0])
+                for n_, (i, c) in enumerate(cuts):
+                    j = cuts[n_ + 1][0] if n_ + 1 < len(cuts) else len(_strip)
+                    strip_for[id(c)] = _strip[i:j].strip()
+                if cuts and cuts[0][0] > 0:
+                    strip_for["__unattributed__"] = _strip[:cuts[0][0]].strip()
+        rows = ""
+        for c in cites:
+            nm = esc(str(c.get("site") or "source"))
+            head = (f'<a href="{esc(c["url"])}" target="_blank" rel="noopener">{nm}</a>'
+                    if c.get("url") else f'<b>{nm}</b>')
+            rel = esc(str(c.get("rel") or ""))
+            seg = strip_for.get(id(c))
+            rows += ('<li>'
+                     f'<div class="cap-srchead">{head}'
+                     + (f' <span class="cap-rel">{rel}</span>' if rel else '') + '</div>'
+                     + (f'<div class="cap-ct">{esc(str(c["title"]))}</div>' if c.get("title") else '')
+                     + (f'<div class="cap-cs">{esc(str(c["snip"]))}</div>' if c.get("snip") else '')
+                     + (f'<div class="cap-cn">{esc(str(c["note"]))}</div>' if c.get("note") else '')
+                     + (f'<div class="cap-aspasted"><span class="cap-aspasted-l">as pasted</span>'
+                        f'{esc(seg)}</div>' if seg else '')
+                     + '</li>')
+        un = strip_for.get("__unattributed__")
+        if un:
+            rows += ('<li><div class="cap-srchead cap-srchead-un"><b>unattributed segment</b> '
+                     '<span class="cap-rel">no cited source matches this text</span></div>'
+                     f'<div class="cap-aspasted">{esc(un)}</div></li>')
+        parts.append(f'<div class="cap-tr-label">Sources ({len(cites)}) '
+                     '<span class="cap-tr-warn">as cited, and as the copy produced them</span></div>'
+                     f'<ol class="cap-srclist">{rows}</ol>')
+
     if coll:
         rows = "".join(
             f'<li><b>{esc(str(c.get("with") or ""))}</b>'
@@ -207,36 +282,6 @@ def transcript_block(e, gallery=''):
             + '</li>' for c in coll)
         parts.append('<div class="cap-tr-label">Collision register</div>'
                      f'<ul class="cap-cites">{rows}</ul>')
-    def split_source_strip(text, cites):
-        """A paste carries the composed answer AND the source strip, run together.
-
-        MANUS: "within the transcripts, citation cards appear as a garbled blob
-        with no differentiation from transcript body." The citations are already
-        extracted, so the strip is grep-identifiable — this finds where it starts
-        and renders it apart, WITHOUT altering a byte of the verbatim record.
-
-        Conservative by design: it only splits on a cited title or snippet found
-        in the last 60% of the text, and only when two or more distinct cited
-        sources appear at or after that point. One stray match is not a strip.
-        """
-        if not cites or len(text) < 400:
-            return text, ""
-        floor = int(len(text) * 0.40)
-        marks = []
-        for c in cites:
-            for key in (c.get("title"), (c.get("snip") or "")[:60], c.get("site")):
-                k = (key or "").strip()
-                if len(k) < 14:
-                    continue
-                i = text.find(k, floor)
-                if i >= 0:
-                    marks.append(i)
-                    break
-        if len(marks) < 2:
-            return text, ""
-        cut = min(marks)
-        return text[:cut].rstrip(), text[cut:].strip()
-
     if tr:
         cls = e.get("transcript_class") or ""
         note = " · ".join(x for x in (cls, e.get("transcript_complete"), e.get("transcript_read")) if x)
@@ -244,91 +289,43 @@ def transcript_block(e, gallery=''):
         parts.append('<div class="cap-tr-label">Machine text, verbatim</div>'
                      + (f'<div class="cap-tr-warn-line">{esc(note)}</div>' if note else '')
                      + f'<div class="cap-tr-body" itemprop="text">{mark_inline_cites(answer)}</div>')
-        if strip:
-            # SEPARATING THE STRIP FROM THE ANSWER IS HALF THE JOB. Rendering it as
-            # one grey block just moves the blob. MANUS: "now there are *two*
-            # undifferentiated source blobs, instead of one. absolutely not… put
-            # some headers in it. separate sources."
-            #
-            # The sources are already extracted, so each one's own title marks
-            # where its segment begins. Split the strip at those points and give
-            # every segment the source's name as a header. Anything before the
-            # first match is kept and labelled honestly as unattributed.
-            cuts = []
-            for c in cites:
-                for key in (c.get("title"), c.get("site")):
-                    k = (key or "").strip()
-                    if len(k) < 8:
-                        continue
-                    i = strip.find(k)
-                    if i >= 0:
-                        cuts.append((i, c, k))
-                        break
-            cuts.sort(key=lambda z: z[0])
-            segs = []
-            if cuts and cuts[0][0] > 0:
-                segs.append((None, strip[:cuts[0][0]].strip()))
-            for n_, (i, c, k) in enumerate(cuts):
-                j = cuts[n_ + 1][0] if n_ + 1 < len(cuts) else len(strip)
-                segs.append((c, strip[i:j].strip()))
-            if not cuts:
-                segs = [(None, strip)]
-            rows = ""
-            for c, seg in segs:
-                if not seg:
-                    continue
-                if c:
-                    name = esc(str(c.get("site") or c.get("title") or "source"))
-                    rel = esc(str(c.get("rel") or ""))
-                    head = (f'<div class="cap-srchead"><b>{name}</b>'
-                            + (f' <span class="cap-rel">{rel}</span>' if rel else '') + '</div>')
-                else:
-                    head = ('<div class="cap-srchead cap-srchead-un"><b>unattributed segment</b> '
-                            '<span class="cap-rel">no cited source matches this text</span></div>')
-                rows += f'<li>{head}<div class="cap-srcbody">{esc(seg)}</div></li>'
-            parts.append('<div class="cap-tr-label">Source strip, as pasted '
-                         f'<span class="cap-tr-warn">{len([x for x in segs if x[0]])} sources, run together by the copy</span></div>'
-                         f'<ol class="cap-srclist">{rows}</ol>')
-    # SUB-ROUNDS BELONG TO THE PARENT AND ARE NEVER A CAPTURE. Presenting them as
-    # captures inflated the count and corrupted every per-capture measurement in
-    # the dataset — PER, defect rates, voice quotient denominators, all of it.
-    rl = e.get("rounds") or []
-    if len(rl) > 1:
-        rows = ""
-        for r in rl:
-            rows += ('<li><b>round ' + esc(str(r.get("n"))) + '</b> &middot; '
-                     + esc(str(r.get("q") or "")) +
-                     ('<div class="cap-cn">' + esc(str(r.get("note") or "")) + '</div>' if r.get("note") else '') +
-                     ('<div class="cap-cs">' + esc(str(r.get("finding") or "")) + '</div>' if r.get("finding") else '') +
-                     ('<div class="cap-tr-body">' + esc(str(r.get("text") or "")) + '</div>' if r.get("text") else '') +
-                     '</li>')
-        parts.append('<div class="cap-tr-label">Rounds in this capture ('
-                     + str(len(rl)) + ')</div>'
-                     '<ul class="cap-cites">' + rows + '</ul>')
-
-    # ONE RECORD, N OBSERVATIONS. An address observed on three dates is one
-    # record with three observations — not three captures. MANUS: "different date
-    # captures are part of the same capture record." Rendering them as separate
-    # cards produced the doubling: same query, different dates, some paste and
-    # some OCR, side by side as if unrelated.
-    obs = e.get("observations") or []
-    if len(obs) > 1:
-        rows = ""
-        for i, o in enumerate(obs, 1):
-            bits = " &middot; ".join(x for x in (
-                str(o.get("date") or ""), str(o.get("surface") or ""),
-                str(o.get("auth") or ""), ("%s evidence" % o["ev"]) if o.get("ev") else "",
-                ("%s sources" % o["cites"]) if o.get("cites") else "sources not captured",
-                ("PER %s" % o["per"]) if o.get("per") is not None else "") if x)
-            rows += (f'<li id="{esc(o["slug"])}"><div class="cap-obshead"><b>observation {i} of {len(obs)}</b> '
-                     f'<span class="cap-rel">{esc(bits)}</span></div>'
-                     + (f'<div class="cap-obsfind">{emphasise(str(o.get("d") or ""))}</div>' if o.get("d") else "")
-                     + ('<div class="cap-cn">' + esc(" &middot; ".join(o["defects"])) + '</div>'
-                        if o.get("defects") else "")
-                     + '</li>')
-        parts.insert(0, f'<div class="cap-tr-label">Observations ({len(obs)}) '
-                        f'<span class="cap-tr-warn">one record, {len(obs)} dated observations</span></div>'
-                        f'<ol class="cap-obslist">{rows}</ol>')
+        # The strip is no longer rendered separately — each segment now sits with
+        # its own source above, so the reader sees one list, not two.
+    # EACH DATED OBSERVATION EXPANDS ON ITS OWN. A record observed twice is two
+    # encounters; a flat list gave no way to read one without the others, and no
+    # way to tell them apart at a glance. Each is its own <details>, anchored on
+    # its own slug, so a link to an observation opens that observation.
+    _obs = e.get("observations") or []
+    if len(_obs) > 1:
+        _rows = ""
+        for _i, _o in enumerate(_obs, 1):
+            _bits = " &middot; ".join(x for x in (
+                str(_o.get("surface") or ""), str(_o.get("auth") or ""),
+                ("%s evidence" % _o["ev"]) if _o.get("ev") else "",
+                ("%s sources" % _o["cites"]) if _o.get("cites") else "sources not captured",
+                ("PER %s" % _o["per"]) if _o.get("per") is not None else "") if x)
+            _in = ""
+            if _o.get("d"):
+                _in += f'<div class="cap-obsfind">{emphasise(str(_o["d"]))}</div>'
+            if _o.get("defects"):
+                _in += ('<div class="cap-defects">' +
+                        "".join(f'<span class="cap-defect">{esc(x)}</span>' for x in _o["defects"]) +
+                        '</div>')
+            if _o.get("reading"):
+                _in += ('<div class="cap-tr-label">Reading</div>'
+                        f'<div class="cap-tr-prose">{para(_o["reading"])}</div>')
+            if _o.get("transcript"):
+                _ans, _ = split_source_strip(_o["transcript"], _o.get("cite_list") or [])
+                _in += ('<div class="cap-tr-label">Machine text, verbatim</div>'
+                        f'<div class="cap-tr-body">{mark_inline_cites(_ans)}</div>')
+            _rows += (f'<details class="cap-obs" id="{esc(_o["slug"])}">'
+                      f'<summary><b>{esc(str(_o.get("date") or "undated"))}</b> '
+                      f'<span class="cap-obsn">observation {_i} of {len(_obs)}</span> '
+                      f'<span class="cap-rel">{_bits}</span></summary>'
+                      f'<div class="cap-obsbody">{_in}</div></details>')
+        parts.insert(0, f'<div class="cap-tr-label">Observations ({len(_obs)}) '
+                        '<span class="cap-tr-warn">one record &mdash; each encounter opens on its own</span></div>'
+                        f'<div class="cap-obswrap">{_rows}</div>')
 
     ses = e.get("session") or {}
     if ses.get("continues_into") or ses.get("continued_from"):
@@ -380,12 +377,32 @@ def card(e):
     # never assembled here, because the query must be reproduced exactly,
     # quotation marks included. Quoting is the decisive variable in this corpus:
     # «operative semiotics» held 5/5 archive cards quoted and 1/8 unquoted.
-    rerun = e.get("rerun")
-    rerun_btn = (
-        f'<a class="cap-cite cap-act cap-rerun" data-act="rerun" '
-        f'data-rerun="{esc(rerun)}" href="{esc(rerun)}" target="_blank" '
-        f'rel="noopener" aria-label="Run this same query now and compare with '
-        f'this capture">↻ Re-run</a>') if rerun else ''
+    # RE-RUN DEFAULTS TO GENERAL SEARCH. MANUS: "general search should be
+    # default." AI Mode is a SECOND button, offered only where AI Mode was a
+    # native capture surface for this record — never the default, because the
+    # default must not pre-decide the surface being measured.
+    #
+    # INCOGNITO CANNOT BE OPENED FROM A LINK. No web page may open a private
+    # window: it is a browser security boundary with no parameter and no API.
+    # The Link button copies the URL so it can be pasted into one. pws=0 is NOT
+    # used — it is undocumented and unverified, and an unverified parameter on a
+    # measurement URL is exactly the kind of thing that manufactures a finding.
+    _q = e.get("q") or ""
+    _base = ("https://www.google.com/search?q=" + _urlq(_q)) if _q else ""
+    _surfaces = e.get("surfaces") or []
+    rerun_btn = ""
+    if _base:
+        rerun_btn = (f'<a class="cap-cite cap-act cap-rerun" data-act="rerun" '
+                     f'data-rerun="{esc(_base)}" href="{esc(_base)}" target="_blank" rel="noopener" '
+                     f'title="Runs this query in general Google search. To run it signed out, copy '
+                     f'the link and open it in a private window — a page cannot open one for you.">'
+                     f'\u21bb Re-run</a>')
+        if any("AI Mode" in str(x) for x in _surfaces):
+            _ai = _base + "&udm=50"
+            rerun_btn += (f'<a class="cap-cite cap-act cap-rerun cap-rerun-ai" data-act="rerun" '
+                          f'data-rerun="{esc(_ai)}" href="{esc(_ai)}" target="_blank" rel="noopener" '
+                          f'title="AI Mode was a native capture surface for this record.">'
+                          f'\u21bb AI Mode</a>')
 
     # THE DEFECT RIBBON IS ON THE FACE OF THE CARD, not behind an expander.
     # MANUS: "if its invisible i wont check it, if i dont check it it will
