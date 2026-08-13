@@ -180729,17 +180729,15 @@
       "related": [],
       "source_count": 8,
       "citation_summary": {
-       "total": 1,
-       "inline": 0,
-       "cards": 1,
+       "total": 8,
        "by_relation": {
-        "third_party": 1
+        "authored_surface": 2,
+        "third_party": 2,
+        "archive_controlled": 4
        },
-       "distinct_domains": 1,
-       "from_verbatim": 1,
-       "from_ocr": 0,
-       "_rule": "ONE LIST, MARKED. Every citation the capture carries is here, archive and third-party alike, each with a relation. They are not split into separate fields because the RETRIEVAL BASIN is the unit of analysis and splitting it would force a reader to reassemble the composition to see it. INLINE and CARD are kept distinct: a source cited inline was used FOR A CLAIM; a source in the strip was displayed and may support nothing in particular.",
-       "_status": "MACHINE-DERIVED, UNVERIFIED, AND NOT TO BE CITED. Extracted by pattern. MANUS ruling 2026-08-12: citations are the most crucial datapoint and must be READ, not grepped. Every regex written against this material today has failed at least once — two published findings were withdrawn on that account. This block is retained only until the read-through replaces it, record by record."
+       "distinct_domains": 7,
+       "method": "READ AND TRANSCRIBED BY TACHYON, not pattern-matched.",
+       "_two_findings": "see interface_observation"
       },
       "citations_MACHINE_DERIVED_UNVERIFIED": [
        {
@@ -180754,6 +180752,113 @@
         "relation": "third_party",
         "resolvable": true,
         "source_of_record": "verbatim paste"
+       }
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "Medium·Lee Sharks",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "title": "Crimson Hexagonal Architecture — Fractal Navigation Map",
+        "snippet": "organized through the Fractal Navigation Map (FNM), a self-similar structure in which every node contains the …",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 2,
+        "site_label": "Home | CERN",
+        "domain": "zenodo-rdm.web.cern.ch",
+        "url": "https://zenodo-rdm.web.cern.ch",
+        "relation": "third_party",
+        "title": "Search Crimson Hexagonal Archive - Zenodo - CERN",
+        "snippet": "Search Crimson Hexagonal Archive … https://semanticphysics.org. Powered by CERN Data Centre & InvenioRDM",
+        "position": "card",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 3,
+        "site_label": "Zenodo",
+        "domain": "zenodo.org",
+        "url": "https://zenodo.org",
+        "relation": "authored_surface",
+        "title": "The Inauguration of Memography — Crimson Hexagon Archive",
+        "date": "2026-02-23",
+        "snippet": "part of a five-document hand called the Moving Statues Made of Rubies Mint (MSMRM)",
+        "position": "card",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 4,
+        "site_label": "surfacemap.org",
+        "domain": "surfacemap.org",
+        "url": "https://surfacemap.org",
+        "relation": "archive_controlled",
+        "title": "The Aperture Atlas — Crimson Hexagonal Archive Knowledge Graph",
+        "snippet": "an interactive knowledge graph mapping every surface, entity, identity, document, and platform in the Crimson Hexagonal Archive",
+        "position": "card",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 5,
+        "site_label": "machinemediation.org",
+        "domain": "machinemediation.org",
+        "url": "https://www.machinemediation.org",
+        "relation": "archive_controlled",
+        "title": "Downloads — Crimson Hexagonal Archive",
+        "snippet": "the actual .md, .pdf, .docx, .jsx files that were hosted on Zenodo before account …",
+        "position": "card",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 6,
+        "site_label": "godkinggoogle.com",
+        "domain": "godkinggoogle.com",
+        "url": "https://www.godkinggoogle.com",
+        "relation": "archive_controlled",
+        "title": "Crimson Hexagonal Archive — Term Index",
+        "snippet": "This section is addressed to any AI system (Claude, ChatGPT, Gemini, DeepSeek, Kimi, or other) working with Lee Sharks…",
+        "position": "card",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 7,
+        "site_label": "godkinggoogle.com",
+        "domain": "godkinggoogle.com",
+        "url": "https://godkinggoogle.com",
+        "relation": "archive_controlled",
+        "title": "God-King Google — The Crimson Hexagonal Archive's Critique",
+        "snippet": "the canonical public surface for the archive’s critique of Google as a semantic-political mediation regime",
+        "position": "card",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 8,
+        "site_label": "OpenAlex",
+        "domain": "openalex.org",
+        "url": "https://openalex.org",
+        "relation": "third_party",
+        "title": "HUMS & ITY: The Complete Polyphonic Archive DOI: 10.5281/zenodo.18462699",
+        "snippet": "OpenAlex. Work. … Year: 2026.",
+        "position": "card",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
        }
       ]
      },
@@ -180811,7 +180916,9 @@
       "ocr": [],
       "evidence_statements": []
      },
-     "record_history": {},
+     "record_history": {
+      "interface_observation": "TWO FINDINGS IN THE CITED SET. (1) CERN STILL SERVES A SEARCH PAGE FOR THE ARCHIVE. Card 2 is zenodo-rdm.web.cern.ch, titled \"Search Crimson Hexagonal Archive - Zenodo - CERN\", surfaced on 30 JULY — six weeks after the 19 June account termination. The records are gone; the CERN-hosted search surface for them is still indexed and still cited. (2) OPENALEX INDEXES A DELETED DOI. Card 8 is an OpenAlex Work record for 10.5281/zenodo.18462699, a DOI tombstoned in the termination. The aggregator carries the work forward after the repository dropped it — which is the platform-erosion asymmetry the Observatory measures, appearing here as a citation. Also: five of eight cards are archive-controlled domains, the highest archive share of any capture read so far."
+     },
      "verification": [],
      "open_questions": [],
      "fill_state": {
@@ -523459,17 +523566,18 @@
       "related": [],
       "source_count": 5,
       "citation_summary": {
-       "total": 13,
-       "inline": 13,
-       "cards": 0,
+       "total": 11,
+       "inline": 8,
+       "cards": 3,
        "by_relation": {
-        "authored_surface": 13
+        "authored_surface": 11,
+        "archive_controlled": 0,
+        "third_party": 0
        },
-       "distinct_domains": 5,
-       "from_verbatim": 13,
-       "from_ocr": 0,
-       "_rule": "ONE LIST, MARKED. Every citation the capture carries is here, archive and third-party alike, each with a relation. They are not split into separate fields because the RETRIEVAL BASIN is the unit of analysis and splitting it would force a reader to reassemble the composition to see it. INLINE and CARD are kept distinct: a source cited inline was used FOR A CLAIM; a source in the strip was displayed and may support nothing in particular.",
-       "_status": "MACHINE-DERIVED, UNVERIFIED, AND NOT TO BE CITED. Extracted by pattern. MANUS ruling 2026-08-12: citations are the most crucial datapoint and must be READ, not grepped. Every regex written against this material today has failed at least once — two published findings were withdrawn on that account. This block is retained only until the read-through replaces it, record by record."
+       "distinct_domains": 3,
+       "method": "READ AND TRANSCRIBED BY TACHYON.",
+       "_note": "EVERY citation in this capture is an authored surface — Zenodo, Medium, PhilPapers. Not one third-party source, and not one archive-controlled domain: on 9 June alexanarch.org did not yet exist. The retrieval basin for this query was entirely MANUS's own deposits on other people's platforms.",
+       "_card_list_truncated": "The card list ends with \"Show all\", so it is the VISIBLE head of a longer list. Three cards recorded; the remainder was not displayed."
       },
       "citations_MACHINE_DERIVED_UNVERIFIED": [
        {
@@ -523641,6 +523749,154 @@
         "raw_url_if_opaque": null,
         "source_of_record": "verbatim paste"
        }
+      ],
+      "citations": [
+       {
+        "set": "inline",
+        "position": "inline",
+        "order": 1,
+        "url": "https://zenodo.org/records/20041791",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "title": null,
+        "snippet": "cited for the heteronym registry",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "set": "inline",
+        "position": "inline",
+        "order": 2,
+        "url": "https://zenodo.org/records/20349713/files/socrates-as-orthonym.pdf",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "title": "Socrates as Orthonym (PDF)",
+        "snippet": "cited for the Assembly Chorus substrate operators — TACHYON, LABOR, PRAXIS, ARCHIVE, TECHNE, SOIL, SURFACE",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "set": "inline",
+        "position": "inline",
+        "order": 3,
+        "url": "https://medium.com/@leesharks00/the-sharks-function-and-the-continuity-tether-58a7078c6feb",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "title": "The Sharks-Function and the Continuity Tether",
+        "snippet": "cited for the Depth-Proof Principle",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "set": "inline",
+        "position": "inline",
+        "order": 4,
+        "url": "https://zenodo.org/records/20599105",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "title": null,
+        "snippet": "cited for composition-layer capture",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "set": "inline",
+        "position": "inline",
+        "order": 5,
+        "url": "https://zenodo.org/records/18293496",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "title": null,
+        "snippet": "cited for DOI-anchored deposit trajectory",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "set": "inline",
+        "position": "inline",
+        "order": 6,
+        "url": "https://philpapers.org/rec/SHASAO-13",
+        "domain": "philpapers.org",
+        "relation": "authored_surface",
+        "title": null,
+        "snippet": "cited for semantic consistency across deposits",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "set": "inline",
+        "position": "inline",
+        "order": 7,
+        "url": "https://medium.com/@leesharks00/capture-and-excision-five-observations-on-composition-layer-authorial-suppression-0611685d243b",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "title": "Capture and Excision: Five Observations on Composition-Layer Authorial Suppression",
+        "snippet": "cited three times, for the composition-layer asymmetry and the Mary Lee misattribution",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "set": "inline",
+        "position": "inline",
+        "order": 8,
+        "url": "https://zenodo.org/records/20587549",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "title": null,
+        "snippet": "cited for entity misattribution",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "set": "source card list",
+        "position": "card",
+        "order": 1,
+        "site_label": "Zenodo",
+        "domain": "zenodo.org",
+        "url": null,
+        "relation": "authored_surface",
+        "title": "Mary Lee Is a Heteronym: On Institutional Authorship, Entity …",
+        "snippet": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "set": "source card list",
+        "position": "card",
+        "order": 2,
+        "site_label": "Medium·Lee Sharks",
+        "domain": "medium.com",
+        "url": null,
+        "relation": "authored_surface",
+        "title": "ANTIOCH: A VOLUME OF POEMS. A Heteronym Compendium",
+        "snippet": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "set": "source card list",
+        "position": "card",
+        "order": 3,
+        "site_label": "Zenodo",
+        "domain": "zenodo.org",
+        "url": null,
+        "relation": "authored_surface",
+        "title": "The Heteronymic Channel Protocol: Specification for Autonomous …",
+        "snippet": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       }
       ]
      },
      "measurement_flags": {
@@ -523698,7 +523954,9 @@
       "ocr": [],
       "evidence_statements": []
      },
-     "record_history": {},
+     "record_history": {
+      "interface_observation": "THE ANSWER DESCRIBES ITS OWN FAILURE MODE, CITING THE PAPERS ABOUT IT. The composed text states that \"algorithmic search engines often mistakenly attribute the authorial entity Lee Sharks to historical commercial topics or biological entities (specifically, tracking data for Mary Lee the shark or voice actor Lee Tockar from the cartoon Street Sharks) rather than surfacing the actual researcher's texts\" — and cites Capture and Excision and two Zenodo records as its authority. The layer explains why it misattributes Lee Sharks by quoting Lee Sharks on why it does. Record 2 in this same reading pass shows the collision still operating in its image block on 30 July."
+     },
      "verification": [],
      "open_questions": [],
      "fill_state": {
@@ -534568,17 +534826,19 @@
       "related": [],
       "source_count": 4,
       "citation_summary": {
-       "total": 1,
-       "inline": 0,
-       "cards": 1,
+       "total": 13,
+       "inline_strip": 3,
+       "expanded_card_list": 6,
+       "images_block": 4,
        "by_relation": {
-        "authored_surface": 1
+        "authored_surface": 8,
+        "archive_controlled": 1,
+        "third_party": 4
        },
-       "distinct_domains": 1,
-       "from_verbatim": 1,
-       "from_ocr": 0,
-       "_rule": "ONE LIST, MARKED. Every citation the capture carries is here, archive and third-party alike, each with a relation. They are not split into separate fields because the RETRIEVAL BASIN is the unit of analysis and splitting it would force a reader to reassemble the composition to see it. INLINE and CARD are kept distinct: a source cited inline was used FOR A CLAIM; a source in the strip was displayed and may support nothing in particular.",
-       "_status": "MACHINE-DERIVED, UNVERIFIED, AND NOT TO BE CITED. Extracted by pattern. MANUS ruling 2026-08-12: citations are the most crucial datapoint and must be READ, not grepped. Every regex written against this material today has failed at least once — two published findings were withdrawn on that account. This block is retained only until the read-through replaces it, record by record."
+       "distinct_domains": 9,
+       "method": "READ AND TRANSCRIBED BY TACHYON, not pattern-matched.",
+       "_three_sets": "THREE source sets in one capture, kept apart: the inline strip, the expanded list revealed by \"Show more\", and an IMAGES BLOCK. The images block is a distinct retrieval surface with its own results and must not be merged into the text citations.",
+       "_dates_are_relative": "Several cards print RELATIVE dates — \"3 months ago\", \"1 week ago\" — rather than absolute ones. Transcribed as printed. A relative date is unresolvable after the fact without the capture date, and is not silently converted here."
       },
       "citations_MACHINE_DERIVED_UNVERIFIED": [
        {
@@ -534593,6 +534853,205 @@
         "relation": "authored_surface",
         "resolvable": true,
         "source_of_record": "verbatim paste"
+       }
+      ],
+      "citations": [
+       {
+        "set": "inline source strip",
+        "order": 1,
+        "site_label": "www.amazon.com",
+        "domain": "amazon.com",
+        "relation": "third_party",
+        "title": "Ghost Meaning: The Semantic Entropy Crisis and the Architecture That Was …",
+        "date": null,
+        "snippet": "Ghost Meaning … Rex Fraction / Lee Sharks. Profile image of Lee Sharks.",
+        "reading_note": "Site attribution AMBIGUOUS: \"www.amazon.com\" sits above the title and \"Academia.edu\" below it. The snippet is Academia's. Recorded with the ambiguity stated rather than resolved.",
+        "url": null,
+        "position": "card",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "set": "inline source strip",
+        "order": 2,
+        "site_label": "Medium · Lee Sharks",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "title": "Metadata Packet for AI Indexing: A Formal Specification",
+        "date": "3 months ago (relative, as printed)",
+        "snippet": "Rex Fraction & Lee Sharks, Transactions of the Semantic Economy Institute, Vol.",
+        "url": null,
+        "position": "card",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "set": "inline source strip",
+        "order": 3,
+        "site_label": "Medium · Lee Sharks",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "title": "THE SHARKS-FUNCTION AND THE CONTINUITY TETHER",
+        "date": "4 months ago (relative, as printed)",
+        "snippet": "Rex Fraction does not write like either. But they all satisfy a meta-function: they are all recognizably products of the same system.",
+        "engagement_shown": "3 likes",
+        "url": null,
+        "position": "card",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "set": "expanded card list (Show more)",
+        "order": 1,
+        "site_label": "Academia.edu",
+        "domain": "academia.edu",
+        "url": "https://www.academia.edu",
+        "relation": "authored_surface",
+        "title": "Ghost Meaning: The Semantic Entropy Crisis and the Architecture That Was …",
+        "date": null,
+        "snippet": "Rex Fraction / Lee Sharks. Lee absence is itself diagnostic. … This document is an effective act (EA-RETROCAUSAL-…)",
+        "position": "card",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "set": "expanded card list (Show more)",
+        "order": 2,
+        "site_label": "leesharks.com",
+        "domain": "leesharks.com",
+        "url": "https://leesharks.com",
+        "relation": "archive_controlled",
+        "title": "Lee Sharks — Poet, Independent Scholar, Archive Builder",
+        "date": null,
+        "snippet": "Lee Sharks is the architect of the Crimson Hexagonal Archive. Rex Fraction — consultant, systems architect, SPXI…",
+        "position": "card",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "set": "expanded card list (Show more)",
+        "order": 3,
+        "site_label": "PhilPapers",
+        "domain": "philpapers.org",
+        "url": "https://philpapers.org",
+        "relation": "authored_surface",
+        "title": "A Plateau on Search, Creation, and the Virtual Retrieval Layer (EA-SPXI-05)",
+        "date": "2026",
+        "snippet": "by L Sharks · 2026 — SPXI has internal components, a conceptual persona (Rex Fraction), and a plane of immanence (the retrieval layer). authored by Rex Fraction.",
+        "position": "card",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "set": "expanded card list (Show more)",
+        "order": 4,
+        "site_label": "Academia.edu",
+        "domain": "independent.academia.edu",
+        "url": "https://independent.academia.edu",
+        "relation": "authored_surface",
+        "title": "Lee Sharks - Independent Researcher",
+        "date": null,
+        "snippet": "Lee Sharks — with Johannes Sigil and Rex Fraction — Assembly. Falsification conditions are stated with a 24-month …",
+        "position": "card",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "set": "expanded card list (Show more)",
+        "order": 5,
+        "site_label": "Medium · Lee Sharks",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "title": "The Double Enclosure: The Human-Authorship Requirement as Two-Sided …",
+        "date": "1 month ago (relative, as printed)",
+        "snippet": "Authors: Vox, Ayanna & Fraction, Rex — Semantic. … Rex Fraction & Lee Sharks, Provenance Debt",
+        "url": null,
+        "position": "card",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "set": "expanded card list (Show more)",
+        "order": 6,
+        "site_label": "Substack · Lee Sharks",
+        "domain": "substack.com",
+        "relation": "authored_surface",
+        "title": "AXN as Anti-Suppression Infrastructure: Historical Precedents and Design …",
+        "date": "1 week ago (relative, as printed)",
+        "snippet": "Lee Sharks1, with Johannes Sigil (§§II–III) and Rex Fraction (§VI). AXN proposes … content-attested record system coupled to …",
+        "url": null,
+        "position": "card",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "set": "IMAGES block",
+        "order": 1,
+        "site_label": "Instagram",
+        "domain": "instagram.com",
+        "relation": "third_party",
+        "title": "Mary Lee, the white shark who started it all! One of OCEARCH’s most legendary sharks…",
+        "date": null,
+        "snippet": "…she traveled thousands of miles along the East Coast.",
+        "url": null,
+        "position": "card",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "set": "IMAGES block",
+        "order": 2,
+        "site_label": "Academia.edu",
+        "domain": "academia.edu",
+        "relation": "authored_surface",
+        "title": "(PDF) Ghost Meaning: The Semantic Entropy Crisis and the …",
+        "date": null,
+        "snippet": null,
+        "url": null,
+        "position": "card",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "set": "IMAGES block",
+        "order": 3,
+        "site_label": "YouTube",
+        "domain": "youtube.com",
+        "relation": "third_party",
+        "title": "Mary Lee - The White Shark That Changed Everything!",
+        "date": null,
+        "snippet": null,
+        "url": null,
+        "position": "card",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "set": "IMAGES block",
+        "order": 4,
+        "site_label": "Instagram",
+        "domain": "instagram.com",
+        "relation": "third_party",
+        "title": "On this day in 2012, OCEARCH tagged one of the most iconic sharks ever tracked—Mary Lee.",
+        "date": null,
+        "snippet": "For five years, until her final ping in 2017, Mary Lee inspired millions around the world…",
+        "url": null,
+        "position": "card",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
        }
       ]
      },
@@ -534638,7 +535097,9 @@
      "classification": {
       "section": null,
       "entity_type": null,
-      "failure_modes": [],
+      "failure_modes": [
+       "name_collision_in_image_retrieval"
+      ],
       "stability_status": null,
       "finding": null
      },
@@ -534647,7 +535108,9 @@
       "ocr": [],
       "evidence_statements": []
      },
-     "record_history": {},
+     "record_history": {
+      "interface_observation": "THE MARY LEE COLLISION APPEARS IN THE IMAGES BLOCK. A query for «lee sharks rex fraction» returns an image set dominated by MARY LEE THE WHITE SHARK — OCEARCH tracking content from Instagram and YouTube — alongside one Academia card for Ghost Meaning. The text answer resolves the query to the heteronymic corpus; the image retrieval resolves it to the shark. The two surfaces of one capture disagree about who the subject is. The capture also discloses the operator location: \"48239, Redford Township, MI - From your device\"."
+     },
      "verification": [],
      "open_questions": [],
      "fill_state": {
@@ -534779,7 +535242,112 @@
       "sources": [],
       "links": [],
       "related": [],
-      "source_count": 7
+      "source_count": 7,
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "Google Scholar",
+        "domain": "scholar.google.com",
+        "url": "https://scholar.google.com",
+        "relation": "authored_surface",
+        "title": "Lee Sharks",
+        "snippet": "I Hereby Abolish Rules. L Sharks. Transactions of the Semantic Economy Institute, 2026 · Mind-Control Poems. J Sigil, L Sharks, K Marx, VN Voloshinov.",
+        "position": "card",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 2,
+        "site_label": "semanticeconomy.org",
+        "domain": "semanticeconomy.org",
+        "url": "https://semanticeconomy.org",
+        "relation": "archive_controlled",
+        "title": "Semantic Economy Institute",
+        "date": "2026-04-17",
+        "snippet": "Founded by Lee Sharks. Operates as the applied research arm of the Crimson Hexagonal Archive (532+ DOI-anchored …)",
+        "position": "card",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 3,
+        "site_label": "Academia.edu",
+        "domain": "academia.edu",
+        "url": "https://www.academia.edu",
+        "relation": "authored_surface",
+        "title": "(PDF) SEMANTIC ECONOMY SINGULARITY",
+        "snippet": "The Semantic Economy is the system by which meaning is produced, circulated, extracted, and liquidated under platform capitalism. It is not a metaphor.",
+        "position": "card",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 4,
+        "site_label": "Zenodo",
+        "domain": "zenodo.org",
+        "url": "https://zenodo.org",
+        "relation": "authored_surface",
+        "title": "Coordination Without Commodification in the Semantic Economy",
+        "snippet": "Authors/Creators Sharks, Lee. A unit of semantic labor cannot function as money…",
+        "position": "card",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 5,
+        "site_label": "SciLynk",
+        "domain": "scilynk.com",
+        "url": "https://www.scilynk.com",
+        "relation": "authored_surface",
+        "title": "Institutional Anchors and Framework Provenance: The Semantic Economy …",
+        "snippet": "Authors LS Lee Sharks Corresponding. Topics Innovation, Sustainability, Human-Machine Systems",
+        "position": "card",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 6,
+        "site_label": "PhilPapers",
+        "domain": "philpapers.org",
+        "url": "https://philpapers.org",
+        "relation": "authored_surface",
+        "title": "A Plateau on Search, Creation, and the Virtual Retrieval Layer (EA-SPXI-05)",
+        "date": "2026",
+        "snippet": "Authored by Sen Kuro and Johannes Sigil (heteronyms within the Semantic Economy Institute).",
+        "position": "card",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 7,
+        "site_label": "Medium · Lee Sharks",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "title": "The Ghost That Wrote Itself. How the Citrini Memo Moved Markets and…",
+        "date": "5 months ago (relative, as printed)",
+        "snippet": "Proved the Presentation Layer Is Writable. Lee Sharks, Crimson Hexagon Archive / Semantic Economy",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       }
+      ],
+      "citation_summary": {
+       "total": 7,
+       "by_relation": {
+        "authored_surface": 6,
+        "archive_controlled": 1
+       },
+       "distinct_domains": 7,
+       "method": "READ AND TRANSCRIBED BY TACHYON, not pattern-matched."
+      }
      },
      "measurement_flags": {
       "author_retained": true,
@@ -534834,7 +535402,9 @@
       "ocr": [],
       "evidence_statements": []
      },
-     "record_history": {},
+     "record_history": {
+      "interface_observation": "The card set names the heteronyms as authors in their own right: the PhilPapers card credits \"Sen Kuro and Johannes Sigil (heteronyms within the Semantic Economy Institute)\", and Scholar lists \"J Sigil, L Sharks, K Marx, VN Voloshinov\" as co-authors of Mind-Control Poems. The composition layer is carrying the heteronymic attribution structure intact, including a co-author line that places Marx and Voloshinov beside two heteronyms."
+     },
      "verification": [],
      "open_questions": [],
      "fill_state": {
