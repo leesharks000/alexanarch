@@ -61,13 +61,20 @@ def check_deposit(n: int):
         # Frontmatter runs to the second '---'. What follows must be substantial
         # relative to the canonical text, or the alias is a stub that serves a
         # header to anyone who fetches the deposit.
-        raw = depo_p.read_text(encoding="utf-8", errors="replace")
-        body = raw
-        if raw.lstrip().startswith("---"):
-            parts = raw.lstrip().split("---", 2)
-            if len(parts) == 3:
-                body = parts[2]
-        canon = len(text_p.read_text(encoding="utf-8", errors="replace"))
+        def _strip_frontmatter(raw: str) -> str:
+            if raw.lstrip().startswith("---"):
+                parts = raw.lstrip().split("---", 2)
+                if len(parts) == 3:
+                    return parts[2]
+            return raw
+
+        # BOTH sides are stripped before comparison. Comparing an alias BODY
+        # against a canonical file INCLUDING its frontmatter made #1095 a false
+        # positive: its body is 1,057 bytes on both sides, and only the 1,068
+        # bytes of YAML on the canonical side tripped the threshold.
+        body = _strip_frontmatter(depo_p.read_text(encoding="utf-8", errors="replace"))
+        canon = len(_strip_frontmatter(
+            text_p.read_text(encoding="utf-8", errors="replace")).strip())
         if canon > 2000 and len(body.strip()) < canon * 0.5:
             fails.append(("BODY-002",
                           f"download alias is a STUB: {len(body.strip())} bytes of body "
