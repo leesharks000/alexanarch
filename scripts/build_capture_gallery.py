@@ -85,6 +85,24 @@ def emphasise(text):
             return html.escape(text or "")
     return out
 
+def mark_inline_cites(text):
+    """Inline citation markers are invisible inside prose.
+
+    A composed answer carries its attributions as bracketed markers — [1], [[2]],
+    [1](url) — run straight into the sentence, so a reader cannot see where the
+    layer attributed and where it simply asserted. That distinction is the whole
+    subject of this registry, and it was being rendered as ordinary text.
+
+    Escapes everything first, then wraps ONLY the markers. Nothing else survives.
+    """
+    out = html.escape(text or "")
+    out = re.sub(r'\[\[(\d+)\]\([^)]*\)\]', r'<span class="cap-inline-cite">[\1]</span>', out)
+    out = re.sub(r'\[(\d+)\]\([^)]*\)', r'<span class="cap-inline-cite">[\1]</span>', out)
+    out = re.sub(r'(?<!\w)\[(\d{1,2}(?:\s*,\s*\d{1,2})*)\](?!\()',
+                 r'<span class="cap-inline-cite">[\1]</span>', out)
+    return out
+
+
 def para(text):
     """Analyst prose is written in paragraphs. Render them as paragraphs."""
     esc = html.escape
@@ -225,7 +243,7 @@ def transcript_block(e, gallery=''):
         answer, strip = split_source_strip(tr, cites)
         parts.append('<div class="cap-tr-label">Machine text, verbatim</div>'
                      + (f'<div class="cap-tr-warn-line">{esc(note)}</div>' if note else '')
-                     + f'<div class="cap-tr-body" itemprop="text">{esc(answer)}</div>')
+                     + f'<div class="cap-tr-body" itemprop="text">{mark_inline_cites(answer)}</div>')
         if strip:
             # SEPARATING THE STRIP FROM THE ANSWER IS HALF THE JOB. Rendering it as
             # one grey block just moves the blob. MANUS: "now there are *two*
@@ -287,6 +305,30 @@ def transcript_block(e, gallery=''):
         parts.append('<div class="cap-tr-label">Rounds in this capture ('
                      + str(len(rl)) + ')</div>'
                      '<ul class="cap-cites">' + rows + '</ul>')
+
+    # ONE RECORD, N OBSERVATIONS. An address observed on three dates is one
+    # record with three observations — not three captures. MANUS: "different date
+    # captures are part of the same capture record." Rendering them as separate
+    # cards produced the doubling: same query, different dates, some paste and
+    # some OCR, side by side as if unrelated.
+    obs = e.get("observations") or []
+    if len(obs) > 1:
+        rows = ""
+        for i, o in enumerate(obs, 1):
+            bits = " &middot; ".join(x for x in (
+                str(o.get("date") or ""), str(o.get("surface") or ""),
+                str(o.get("auth") or ""), ("%s evidence" % o["ev"]) if o.get("ev") else "",
+                ("%s sources" % o["cites"]) if o.get("cites") else "sources not captured",
+                ("PER %s" % o["per"]) if o.get("per") is not None else "") if x)
+            rows += (f'<li id="{esc(o["slug"])}"><div class="cap-obshead"><b>observation {i} of {len(obs)}</b> '
+                     f'<span class="cap-rel">{esc(bits)}</span></div>'
+                     + (f'<div class="cap-obsfind">{emphasise(str(o.get("d") or ""))}</div>' if o.get("d") else "")
+                     + ('<div class="cap-cn">' + esc(" &middot; ".join(o["defects"])) + '</div>'
+                        if o.get("defects") else "")
+                     + '</li>')
+        parts.insert(0, f'<div class="cap-tr-label">Observations ({len(obs)}) '
+                        f'<span class="cap-tr-warn">one record, {len(obs)} dated observations</span></div>'
+                        f'<ol class="cap-obslist">{rows}</ol>')
 
     ses = e.get("session") or {}
     if ses.get("continues_into") or ses.get("continued_from"):
@@ -372,6 +414,10 @@ def card(e):
     # live in THIS repo, which printed a broken-image icon and its alt text as
     # body copy. Unresolved images are now omitted upstream; this is the belt to
     # that braces.
+    ds = e.get("dates") or ([date] if date else [])
+    datespan = (f"{ds[0]} \u2013 {ds[-1]}  ({len(e.get('observations') or [])} obs)"
+                if len(ds) > 1 else (ds[0] if ds else ""))
+
     urls = image_urls(e)
     alt = f'Screen capture for the query &quot;{esc(q)}&quot;, dated {esc(date)}.'
     if urls:
@@ -401,7 +447,7 @@ def card(e):
         f'<meta itemprop="creator" content="Sharks, Lee">'
         f'<meta itemprop="citation" content="{esc(citation)}">'
         f'<div class="cap-head"><span class="cap-section">{esc(e.get("s") or "Unsectioned")}</span>'
-        f'<span class="cap-date" itemprop="dateCreated">{esc(date)}</span></div>'
+        f'<span class="cap-date" itemprop="dateCreated">{esc(datespan)}</span></div>'
         f'<div class="cap-query" itemprop="name">{esc(e.get("q") or "")}</div>'
         f'<div class="cap-status-row">'
         f'<span class="cap-status cap-status-{esc(mt.split()[0].lower())}">{esc(mt)}</span>'

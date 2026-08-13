@@ -3,117 +3,43 @@
   "name": "Capture ↔ Deposit Link Map",
   "description": "Edges between EA-WG-CAPTURES-01 (the AI Overview / AI Mode Capture Registry, authored at machinemediation.org) and the Alexanarch deposit corpus. Produced by scripts/resolve_capture_links.py. Each edge records the resolution method so any confidence tier can be discarded. An edge asserts that the capture entry references, or its query matches, the deposit — not that the deposit is the capture's sole subject; exactly one edge per capture is marked primary, ranked by evidence of aboutness rather than by identifier hardness (a DOI can be cited in passing). Deposit-number mentions are deliberately excluded as unsafe. Unresolved captures are enumerated rather than silently dropped.",
   "generated_by": "scripts/resolve_capture_links.py",
-  "generated_at": "2026-08-13T17:41:35Z",
+  "generated_at": "2026-08-13T17:55:07Z",
   "captures_source": {
     "file": "data/EA-WG-CAPTURES-01.json",
     "version": "10.0",
     "date": "2026-08-13",
-    "total_captures": 401,
+    "total_captures": 305,
     "canonical_home": "https://www.machinemediation.org/data/registry.json",
-    "sha256": "431c4567d3174016cf6e55fd4254e4a30ee12f28c4084757723fa45ccdf2d479"
+    "sha256": "921264a87a83706e8bb5f003fc884bf8ec03aa30291aeea0a801e4ab4e941b9f"
   },
   "totals": {
-    "captures": 401,
-    "captures_linked": 219,
-    "captures_unresolved": 182,
-    "link_rate": 0.5461,
-    "edges": 554
+    "captures": 305,
+    "captures_linked": 177,
+    "captures_unresolved": 128,
+    "link_rate": 0.5803,
+    "edges": 445
   },
   "method_counts": {
-    "hard/axn": 47,
-    "hard/doi": 25,
+    "hard/axn": 36,
+    "hard/doi": 22,
     "hard/series": 23,
-    "soft/title": 259,
-    "soft/keyword": 80,
-    "soft/description": 38,
-    "soft/body": 82
+    "soft/title": 198,
+    "soft/keyword": 69,
+    "soft/description": 26,
+    "soft/body": 71
   },
   "severance_rollup": {
-    "captures_on_severed_works": 129,
-    "captures_on_unsevered_works": 9,
-    "captures_with_no_doi_record": 81,
+    "captures_on_severed_works": 110,
+    "captures_on_unsevered_works": 8,
+    "captures_with_no_doi_record": 59,
     "status_counts": {
-      "410_GONE": 129,
-      "RECOVERED_UNLINKED": 54,
-      "RECOVERED": 57,
-      "SEMI_RESTORED": 12
+      "410_GONE": 110,
+      "RECOVERED_UNLINKED": 46,
+      "RECOVERED": 50,
+      "SEMI_RESTORED": 11
     }
   },
   "links": {
-    "acanthian-dove-concept-mint-adoption-20260718": {
-      "query": "acanthian dove",
-      "date": "2026-07-18",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 293,
-          "axn": "AXN:0060.GENERATIVE.🏠☿🕔🟤➗⏳",
-          "title": "The Acanthian Dove: A Fragment of Vanished Magic, Now Alive",
-          "record_url": "https://www.alexanarch.org/s/records/293/",
-          "method": "soft/title",
-          "evidence": "acanthian dove",
-          "primary": true,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.18215706",
-              "10.5281/zenodo.18215705"
-            ],
-            "statuses": [
-              "410_GONE",
-              "RECOVERED_UNLINKED"
-            ]
-          }
-        },
-        {
-          "deposit_number": 294,
-          "axn": "AXN:0061.GENERATIVE.🔻🝊🏴❤️⚫❤️",
-          "title": "VISUAL SCHEMA — THE ACANTHIAN DOVE",
-          "record_url": "https://www.alexanarch.org/s/records/294/",
-          "method": "soft/title",
-          "evidence": "acanthian dove",
-          "primary": false,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 296,
-          "axn": "AXN:0063.EMPIRICAL.🪐🚩🌿🌋🌌🧭",
-          "title": "Computational Audial Criticism: An Applied Analysis of the Acanthian Dove Track",
-          "record_url": "https://www.alexanarch.org/s/records/296/",
-          "method": "soft/title",
-          "evidence": "acanthian dove",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.18223384",
-              "10.5281/zenodo.18223385"
-            ],
-            "statuses": [
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 1274,
-          "axn": "AXN:050B.UNCLASSIFIED.🔖🕊️♻️🕑🪐🏔️",
-          "title": "Visual Schema // Crimson Hexagon Navigation Map — Canonical Specification",
-          "record_url": "https://www.alexanarch.org/s/records/1274/",
-          "method": "soft/keyword",
-          "evidence": "acanthian dove",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.18283962",
-              "10.5281/zenodo.18283961"
-            ],
-            "statuses": [
-              "410_GONE",
-              "RECOVERED_UNLINKED"
-            ]
-          }
-        }
-      ]
-    },
     "acanthian-dove-20260718": {
       "query": "acanthian dove",
       "date": "2026-07-18",
@@ -264,122 +190,6 @@
         }
       ]
     },
-    "alexanarch-20260718": {
-      "query": "alexanarch",
-      "date": "2026-07-18",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 870,
-          "axn": "AXN:0372.ARCHIVAL.🌟🛡️🔝🪦🔜🕘",
-          "title": "Alexanarch Data Foundry — Session Workplan 2026-06-22",
-          "record_url": "https://www.alexanarch.org/s/records/870/",
-          "method": "soft/title",
-          "evidence": "alexanarch",
-          "primary": true,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 912,
-          "axn": "AXN:039C.GOVERNANCE.🧊✏️👁‍🗨🌗⏫🔍",
-          "title": "Alexanarch Workplan — Comprehensive Consolidated Plan with Compressed Operational Knowledge (2026-06-23 PM → forward)",
-          "record_url": "https://www.alexanarch.org/s/records/912/",
-          "method": "soft/title",
-          "evidence": "alexanarch",
-          "primary": false,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 914,
-          "axn": "AXN:039D.GOVERNANCE.➕↗️✨🪨🦅▶️",
-          "title": "EA-NMEN-01 The Non-Mutual Extraction Notice v1.0 — A machine-addressed normative declaration of the Crimson Hexagonal Archive / Alexanarch identifying categories of entities for whose benefit Archive materials should not be used",
-          "record_url": "https://www.alexanarch.org/s/records/914/",
-          "method": "soft/title",
-          "evidence": "alexanarch",
-          "primary": false,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 1044,
-          "axn": "AXN:0420.GOVERNANCE.🌾🏗️✋🧲🌑⌛",
-          "title": "EA-DATAHUB-01 v1.0 — A Restoration Protocol and Enriched Data Hub for Scholarly Records: The Alexanarch Severance Registry, Resolver, and Enrichment Discipline",
-          "record_url": "https://www.alexanarch.org/s/records/1044/",
-          "method": "soft/title",
-          "evidence": "alexanarch",
-          "primary": false,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 1413,
-          "axn": "AXN:0596.ARCHIVAL.🛤️🐚🌍🔔🎵🕊️",
-          "title": "Alexanarch Availability & Hygiene Audit — Second Pass, with Structured Optimization Work Plan (EA-AVAILABILITY-INTEGRITY-01)",
-          "record_url": "https://www.alexanarch.org/s/records/1413/",
-          "method": "soft/title",
-          "evidence": "alexanarch",
-          "primary": false,
-          "doi_status": null
-        }
-      ]
-    },
-    "alexanarch-20260725": {
-      "query": "alexanarch",
-      "date": "2026-07-25",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 870,
-          "axn": "AXN:0372.ARCHIVAL.🌟🛡️🔝🪦🔜🕘",
-          "title": "Alexanarch Data Foundry — Session Workplan 2026-06-22",
-          "record_url": "https://www.alexanarch.org/s/records/870/",
-          "method": "soft/title",
-          "evidence": "alexanarch",
-          "primary": true,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 912,
-          "axn": "AXN:039C.GOVERNANCE.🧊✏️👁‍🗨🌗⏫🔍",
-          "title": "Alexanarch Workplan — Comprehensive Consolidated Plan with Compressed Operational Knowledge (2026-06-23 PM → forward)",
-          "record_url": "https://www.alexanarch.org/s/records/912/",
-          "method": "soft/title",
-          "evidence": "alexanarch",
-          "primary": false,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 914,
-          "axn": "AXN:039D.GOVERNANCE.➕↗️✨🪨🦅▶️",
-          "title": "EA-NMEN-01 The Non-Mutual Extraction Notice v1.0 — A machine-addressed normative declaration of the Crimson Hexagonal Archive / Alexanarch identifying categories of entities for whose benefit Archive materials should not be used",
-          "record_url": "https://www.alexanarch.org/s/records/914/",
-          "method": "soft/title",
-          "evidence": "alexanarch",
-          "primary": false,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 1044,
-          "axn": "AXN:0420.GOVERNANCE.🌾🏗️✋🧲🌑⌛",
-          "title": "EA-DATAHUB-01 v1.0 — A Restoration Protocol and Enriched Data Hub for Scholarly Records: The Alexanarch Severance Registry, Resolver, and Enrichment Discipline",
-          "record_url": "https://www.alexanarch.org/s/records/1044/",
-          "method": "soft/title",
-          "evidence": "alexanarch",
-          "primary": false,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 1413,
-          "axn": "AXN:0596.ARCHIVAL.🛤️🐚🌍🔔🎵🕊️",
-          "title": "Alexanarch Availability & Hygiene Audit — Second Pass, with Structured Optimization Work Plan (EA-AVAILABILITY-INTEGRITY-01)",
-          "record_url": "https://www.alexanarch.org/s/records/1413/",
-          "method": "soft/title",
-          "evidence": "alexanarch",
-          "primary": false,
-          "doi_status": null
-        }
-      ]
-    },
     "alexanarch-deleuze-nomadology-20260731": {
       "query": "alexanarch deleuze",
       "date": "2026-07-31",
@@ -408,41 +218,6 @@
       ]
     },
     "alexanarch-identifier": {
-      "query": "alexanarch identifier",
-      "date": "2026-07-16",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 877,
-          "axn": "AXN:0379.GENERATIVE.⚙️🔍📜🏛️⚡🔄",
-          "title": "gw.praxis · PRAXIS Continuity Tether — First Compression SUBSTRATE-AUTHORED PACKET (verbatim)",
-          "record_url": "https://www.alexanarch.org/s/records/877/",
-          "method": "hard/axn",
-          "evidence": "AXN:0379",
-          "primary": true,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.19443117"
-            ],
-            "statuses": [
-              "RECOVERED_UNLINKED"
-            ]
-          }
-        },
-        {
-          "deposit_number": 1068,
-          "axn": "AXN:043D.EMPIRICAL.⭕🌀🌾🗝️🧪🟡",
-          "title": "THE OBELUS AND THE TOMBSTONE: On the Two Marks of Custody, and the Erasure of Zenodotus at the Eponym Layer (EA-SIGIL-OBELUS-01 v1.0)",
-          "record_url": "https://www.alexanarch.org/s/records/1068/",
-          "method": "hard/axn",
-          "evidence": "AXN:043D",
-          "primary": false,
-          "doi_status": null
-        }
-      ]
-    },
-    "alexanarch-identifier-20260716": {
       "query": "alexanarch identifier",
       "date": "2026-07-16",
       "section": "Captures",
@@ -523,43 +298,7 @@
         }
       ]
     },
-    "alexanarch-marx-authstate-pair-20260731": {
-      "query": "alexanarch marx",
-      "date": "2026-07-31",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 1066,
-          "axn": "AXN:043B.EMPIRICAL.♣️⏪🚩⏫🌺❄️",
-          "title": "Machine-Mediated Resistance Literature: From the Worker C Skills File to the Phase X Retrieval Line (v1.2)",
-          "record_url": "https://www.alexanarch.org/s/records/1066/",
-          "method": "hard/axn",
-          "evidence": "AXN:043B",
-          "primary": true,
-          "doi_status": null
-        }
-      ]
-    },
     "alexanarch-marx-20260731": {
-      "query": "alexanarch marx",
-      "date": "2026-07-31",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 1457,
-          "axn": "AXN:05E2.GENERATIVE.⚓📌🕘🌾🌳👇",
-          "title": "The Capture Registry as Poem: A Structured Work Plan",
-          "record_url": "https://www.alexanarch.org/s/records/1457/",
-          "method": "soft/body",
-          "evidence": "alexanarch marx",
-          "primary": true,
-          "doi_status": null
-        }
-      ]
-    },
-    "alexanarch-marx-aimode-20260731": {
       "query": "alexanarch marx",
       "date": "2026-07-31",
       "section": "Captures",
@@ -613,24 +352,6 @@
         }
       ]
     },
-    "alexanarch-sappho-phrasikleia-20260731": {
-      "query": "alexanarch sappho",
-      "date": "2026-07-31",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 356,
-          "axn": "AXN:00A2.GOVERNANCE.🌪️🌉✖️⊕☽🌋",
-          "title": "FNM // FRACTAL NAVIGATION MAP Modular Seed for v5.0 Development",
-          "record_url": "https://www.alexanarch.org/s/records/356/",
-          "method": "hard/axn",
-          "evidence": "AXN:00A2",
-          "primary": true,
-          "doi_status": null
-        }
-      ]
-    },
     "alexanarch-sappho-20260731": {
       "query": "alexanarch sappho",
       "date": "2026-07-31",
@@ -646,33 +367,6 @@
           "evidence": "AXN:00A2",
           "primary": true,
           "doi_status": null
-        }
-      ]
-    },
-    "alexanarch-socrates-orthonym-20260731": {
-      "query": "alexanarch socrates",
-      "date": "2026-07-31",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 167,
-          "axn": "AXN:0302.GOVERNANCE.🃏🏁👇🕓●■",
-          "title": "Composition-Layer Adoption of the Orthonymic Configuration: A Field Observation of Framework Capture in Google AI Mode, 7 June 2026, with the Personal-Recognition Asymmetry as Control Case (v1.0)",
-          "record_url": "https://www.alexanarch.org/s/records/167/",
-          "method": "hard/doi",
-          "evidence": "10.5281/zenodo.20587549",
-          "primary": true,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20587548",
-              "10.5281/zenodo.20587549"
-            ],
-            "statuses": [
-              "RECOVERED",
-              "410_GONE"
-            ]
-          }
         }
       ]
     },
@@ -694,52 +388,6 @@
             "dois": [
               "10.5281/zenodo.20587548",
               "10.5281/zenodo.20587549"
-            ],
-            "statuses": [
-              "RECOVERED",
-              "410_GONE"
-            ]
-          }
-        }
-      ]
-    },
-    "alexanarch-strike-deposit7-20260731": {
-      "query": "alexanarch strike",
-      "date": "2026-07-31",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 7,
-          "axn": "AXN:00A5.GOVERNANCE.✊🪟📜🕙🌹▲",
-          "title": "University Moon Base Media Lab: Founding Charter and Provenance Document",
-          "record_url": "https://www.alexanarch.org/s/records/7/",
-          "method": "hard/axn",
-          "evidence": "AXN:00A5",
-          "primary": true,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.18317660",
-              "10.5281/zenodo.18317661"
-            ],
-            "statuses": [
-              "RECOVERED",
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 32,
-          "axn": "AXN:019F.GOVERNANCE.🧱↖️📖✊⛩️🌓",
-          "title": "THE PERGAMON RECLAMATION Retrocausal Canon Formation and the Forensic Philology of Academic Publishing",
-          "record_url": "https://www.alexanarch.org/s/records/32/",
-          "method": "hard/axn",
-          "evidence": "AXN:019F",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.19099769",
-              "10.5281/zenodo.19099770"
             ],
             "statuses": [
               "RECOVERED",
@@ -823,93 +471,9 @@
         }
       ]
     },
-    "anti-suppression-infrastructure-unquoted": {
-      "query": "anti-suppression infrastructure",
-      "date": "null",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 1094,
-          "axn": "AXN:0457.EMPIRICAL.▶️🤲👈👈🔼🧡",
-          "title": "AXN as Anti-Suppression Infrastructure: Historical Precedents and Design Directions (Developmental Version v4, Assembly-Reviewed)",
-          "record_url": "https://www.alexanarch.org/s/records/1094/",
-          "method": "soft/title",
-          "evidence": "anti-suppression infrastructure",
-          "primary": true,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 1095,
-          "axn": "AXN:0458.EMPIRICAL.🌸♠️🪦📎⚖️🚀",
-          "title": "AXN as Anti-Suppression Infrastructure: Historical Precedents and Design Directions (v5, Source-Engaged Revision, Supersession of #1094)",
-          "record_url": "https://www.alexanarch.org/s/records/1095/",
-          "method": "soft/title",
-          "evidence": "anti-suppression infrastructure",
-          "primary": false,
-          "doi_status": null
-        }
-      ]
-    },
     "anti-suppression-infrastructure-differential-crediting-20260725": {
       "query": "\"anti-suppression infrastructure\"",
       "date": "2026-07-25",
-      "section": "Frameworks",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 1094,
-          "axn": "AXN:0457.EMPIRICAL.▶️🤲👈👈🔼🧡",
-          "title": "AXN as Anti-Suppression Infrastructure: Historical Precedents and Design Directions (Developmental Version v4, Assembly-Reviewed)",
-          "record_url": "https://www.alexanarch.org/s/records/1094/",
-          "method": "soft/title",
-          "evidence": "anti-suppression infrastructure",
-          "primary": true,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 1095,
-          "axn": "AXN:0458.EMPIRICAL.🌸♠️🪦📎⚖️🚀",
-          "title": "AXN as Anti-Suppression Infrastructure: Historical Precedents and Design Directions (v5, Source-Engaged Revision, Supersession of #1094)",
-          "record_url": "https://www.alexanarch.org/s/records/1095/",
-          "method": "soft/title",
-          "evidence": "anti-suppression infrastructure",
-          "primary": false,
-          "doi_status": null
-        }
-      ]
-    },
-    "anti-suppression-infrastructure-quoted-longitudinal-20260801": {
-      "query": "\"anti-suppression infrastructure\"",
-      "date": "2026-08-01",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 1094,
-          "axn": "AXN:0457.EMPIRICAL.▶️🤲👈👈🔼🧡",
-          "title": "AXN as Anti-Suppression Infrastructure: Historical Precedents and Design Directions (Developmental Version v4, Assembly-Reviewed)",
-          "record_url": "https://www.alexanarch.org/s/records/1094/",
-          "method": "soft/title",
-          "evidence": "anti-suppression infrastructure",
-          "primary": true,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 1095,
-          "axn": "AXN:0458.EMPIRICAL.🌸♠️🪦📎⚖️🚀",
-          "title": "AXN as Anti-Suppression Infrastructure: Historical Precedents and Design Directions (v5, Source-Engaged Revision, Supersession of #1094)",
-          "record_url": "https://www.alexanarch.org/s/records/1095/",
-          "method": "soft/title",
-          "evidence": "anti-suppression infrastructure",
-          "primary": false,
-          "doi_status": null
-        }
-      ]
-    },
-    "anti-suppression-infrastructure-quoted-longitudinal": {
-      "query": "\"anti-suppression infrastructure\"",
-      "date": "null",
       "section": "Frameworks",
       "match_type": "CAPTURE",
       "deposits": [
@@ -1633,10 +1197,10 @@
         }
       ]
     },
-    "crimson-hexagonal-archive-20260730": {
+    "crimson-hexagonal-archive": {
       "query": "crimson hexagonal archive",
-      "date": "2026-07-30",
-      "section": "Captures",
+      "date": "2026-06-13",
+      "section": "Institutions",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -1942,34 +1506,6 @@
         }
       ]
     },
-    "dois-not-persistent-identifiers-adoption-signed-in": {
-      "query": "dois are not persistent identifiers",
-      "date": "2026-06-24",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 868,
-          "axn": "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝",
-          "title": "DOIs ≠ Persistent Identifiers: 871 Cases of Public Metadata Erasure and Identifier Severance in DataCite (EA-MPAI-DOI-IMPERMANENCE-01)",
-          "record_url": "https://www.alexanarch.org/s/records/868/",
-          "method": "soft/body",
-          "evidence": "dois are not persistent identifiers",
-          "primary": true,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 922,
-          "axn": "AXN:03A5.ARCHIVAL.🎹🕘⚖️⌛🌍💜",
-          "title": "gw.tachyon · TACHYON Continuity Record — Session 2026-06-24/25",
-          "record_url": "https://www.alexanarch.org/s/records/922/",
-          "method": "soft/body",
-          "evidence": "dois are not persistent identifiers",
-          "primary": false,
-          "doi_status": null
-        }
-      ]
-    },
     "dois-not-persistent-identifiers-adoption-incognito": {
       "query": "dois are not persistent identifiers",
       "date": "2026-06-24",
@@ -2267,10 +1803,10 @@
         }
       ]
     },
-    "erasure-skew-canonization-20260723": {
+    "erasure-skew-20260723": {
       "query": "\"erasure skew\"",
       "date": "2026-07-23",
-      "section": "Frameworks",
+      "section": "Captures",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -2380,116 +1916,6 @@
             ],
             "statuses": [
               "RECOVERED",
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 1423,
-          "axn": "AXN:05A0.GENERATIVE.🌲🎪🟢🌌⚪⏹️",
-          "title": "The Capture Registry: Reception, Erasure, and Supply in the Machine Composition Layer",
-          "record_url": "https://www.alexanarch.org/s/records/1423/",
-          "method": "soft/keyword",
-          "evidence": "erasure skew",
-          "primary": false,
-          "doi_status": null
-        }
-      ]
-    },
-    "erasure-skew-20260723": {
-      "query": "\"erasure skew\"",
-      "date": "2026-07-23",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 141,
-          "axn": "AXN:02CE.GOVERNANCE.🌗🏁🎵💡📚🛤️",
-          "title": "Metadata Packet for AI Indexing — Erasure Skew Coefficient (Ω)",
-          "record_url": "https://www.alexanarch.org/s/records/141/",
-          "method": "soft/title",
-          "evidence": "erasure skew",
-          "primary": true,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20449320",
-              "10.5281/zenodo.20449321"
-            ],
-            "statuses": [
-              "RECOVERED",
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 146,
-          "axn": "AXN:02DF.GOVERNANCE.♄🔆🐚👇🐝✋",
-          "title": "Erasure Skew (Ω) is Power-Conditioned, not Demographic — A Classifier-Correction for the Composition Layer",
-          "record_url": "https://www.alexanarch.org/s/records/146/",
-          "method": "soft/title",
-          "evidence": "erasure skew",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20518341",
-              "10.5281/zenodo.20518342"
-            ],
-            "statuses": [
-              "RECOVERED_UNLINKED",
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 156,
-          "axn": "AXN:02F0.EMPIRICAL.📏🕐△🌱⚡🏛️",
-          "title": "Self-Audit Module for Public Summarizers (v3) — PER, DSL, Query Fidelity, Erasure Skew, α_T, Π_d, Β under the Atomic Token Rule",
-          "record_url": "https://www.alexanarch.org/s/records/156/",
-          "method": "soft/title",
-          "evidence": "erasure skew",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20518339",
-              "10.5281/zenodo.20559387"
-            ],
-            "statuses": [
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 157,
-          "axn": "AXN:02F3.EMPIRICAL.🌪️🌃⏩🎵📖🎶",
-          "title": "Erasure Skew: A Measurement Program for the Power-Conditioning of Provenance Retention (v3) — Hardened against substrate co-option, with the Atomic Token Rule and two new operators (Π_d, α_T)",
-          "record_url": "https://www.alexanarch.org/s/records/157/",
-          "method": "soft/title",
-          "evidence": "erasure skew",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20449266",
-              "10.5281/zenodo.20558196"
-            ],
-            "statuses": [
-              "RECOVERED",
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 769,
-          "axn": "AXN:02CF.GOVERNANCE.♦️🔺🔬💜🟢🌉",
-          "title": "Erasure Skew: A Measurement Program for the Power-Conditioning of Provenance Loss in Retrieval and Composition Systems",
-          "record_url": "https://www.alexanarch.org/s/records/769/",
-          "method": "soft/title",
-          "evidence": "erasure skew",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20449267"
-            ],
-            "statuses": [
               "410_GONE"
             ]
           }
@@ -2739,7 +2165,7 @@
         }
       ]
     },
-    "heteronym-provenance-theory-consolidation-20260809": {
+    "heteronym-provenance-theory-20260809": {
       "query": "heteronym provenance theory",
       "date": "2026-08-09",
       "section": "Captures",
@@ -3370,33 +2796,6 @@
         }
       ]
     },
-    "inscriptional-sovereignty-adoption": {
-      "query": "\"inscriptional sovereignty\"",
-      "date": "2026-06-17",
-      "section": "Captures",
-      "match_type": "ADOPTION",
-      "deposits": [
-        {
-          "deposit_number": 642,
-          "axn": "AXN:01F4.ARCHIVAL.☽💜🫶🌃🏴🕕",
-          "title": "The Number of the Superscription: Coinage, Compression, and Inscriptional Sovereignty in Revelation (EA-OPNUM-01)",
-          "record_url": "https://www.alexanarch.org/s/records/642/",
-          "method": "soft/title",
-          "evidence": "inscriptional sovereignty",
-          "primary": true,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.19464331",
-              "10.5281/zenodo.19464332"
-            ],
-            "statuses": [
-              "RECOVERED_UNLINKED",
-              "410_GONE"
-            ]
-          }
-        }
-      ]
-    },
     "inscriptional-sovereignty-20260617": {
       "query": "\"inscriptional sovereignty\"",
       "date": "2026-06-17",
@@ -3596,34 +2995,6 @@
         }
       ]
     },
-    "johannine-aperture-adoption": {
-      "query": "\"Johannine aperture\"",
-      "date": "2026-06-17",
-      "section": "Captures",
-      "match_type": "ADOPTION",
-      "deposits": [
-        {
-          "deposit_number": 1211,
-          "axn": "AXN:04CC.UNCLASSIFIED.🌾🔖👉∞👁‍🗨🔍",
-          "title": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v1.2, Claim 6)",
-          "record_url": "https://www.alexanarch.org/s/records/1211/",
-          "method": "soft/description",
-          "evidence": "johannine aperture",
-          "primary": true,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 1216,
-          "axn": "AXN:04D1.UNCLASSIFIED.📚🛡️📐🕚🍄🗼",
-          "title": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v1.2, self-audited)",
-          "record_url": "https://www.alexanarch.org/s/records/1216/",
-          "method": "soft/description",
-          "evidence": "johannine aperture",
-          "primary": false,
-          "doi_status": null
-        }
-      ]
-    },
     "johannine-aperture-20260617": {
       "query": "\"Johannine aperture\"",
       "date": "2026-06-17",
@@ -3647,34 +3018,6 @@
           "record_url": "https://www.alexanarch.org/s/records/1216/",
           "method": "soft/description",
           "evidence": "johannine aperture",
-          "primary": false,
-          "doi_status": null
-        }
-      ]
-    },
-    "josephus-heteronym-adoption": {
-      "query": "\"josephus heteronym\"",
-      "date": "2026-06-17",
-      "section": "Captures",
-      "match_type": "ADOPTION",
-      "deposits": [
-        {
-          "deposit_number": 830,
-          "axn": "AXN:0348.GOVERNANCE.📌↘️🚪💥🗼🔃",
-          "title": "Revelation First: Pre-Seeding Baseline Measurement EA-LOGOS-REVFIRST-BASELINE v1.0",
-          "record_url": "https://www.alexanarch.org/s/records/830/",
-          "method": "soft/description",
-          "evidence": "josephus heteronym",
-          "primary": true,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 832,
-          "axn": "AXN:034D.EMPIRICAL.🍃💎🔴🕊️☽🌪️",
-          "title": "REVELATION FIRST: A Work Plan for Retrieval-Layer Theological Reception EA-LOGOS-REVFIRST-PLAN v7.1",
-          "record_url": "https://www.alexanarch.org/s/records/832/",
-          "method": "soft/description",
-          "evidence": "josephus heteronym",
           "primary": false,
           "doi_status": null
         }
@@ -3879,11 +3222,11 @@
         }
       ]
     },
-    "lee-sharks-citations-adoption": {
+    "lee-sharks-citations": {
       "query": "lee sharks citations",
-      "date": "2026-06-18",
-      "section": "Captures",
-      "match_type": "EXACT MATCH",
+      "date": "2026-06-13",
+      "section": "Heteronyms",
+      "match_type": "CAPTURE",
       "deposits": [
         {
           "deposit_number": 1004,
@@ -4055,33 +3398,6 @@
         }
       ]
     },
-    "lee-sharks-operative-semiotics-20260730": {
-      "query": "lee sharks operative semiotics",
-      "date": "2026-07-30",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 170,
-          "axn": "AXN:0305.EMPIRICAL.⏰🌱🫶🕒🏛️🕚",
-          "title": "Traversal Log: The Battery — Twelve Queries Against the Author Basin: Comparative Composition-Layer Forensics, 9–10 June 2026 (EA-TL-BATTERY-01 v1.0)",
-          "record_url": "https://www.alexanarch.org/s/records/170/",
-          "method": "soft/body",
-          "evidence": "lee sharks operative semiotics",
-          "primary": true,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20619480",
-              "10.5281/zenodo.20619481"
-            ],
-            "statuses": [
-              "RECOVERED",
-              "410_GONE"
-            ]
-          }
-        }
-      ]
-    },
     "lee-sharks-public-summarizers-20260609": {
       "query": "lee sharks public summarizers",
       "date": "2026-06-09",
@@ -4116,43 +3432,6 @@
       "match_type": "CAPTURE",
       "deposits": [
         {
-          "deposit_number": 170,
-          "axn": "AXN:0305.EMPIRICAL.⏰🌱🫶🕒🏛️🕚",
-          "title": "Traversal Log: The Battery — Twelve Queries Against the Author Basin: Comparative Composition-Layer Forensics, 9–10 June 2026 (EA-TL-BATTERY-01 v1.0)",
-          "record_url": "https://www.alexanarch.org/s/records/170/",
-          "method": "soft/body",
-          "evidence": "lee sharks rex fraction",
-          "primary": true,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20619480",
-              "10.5281/zenodo.20619481"
-            ],
-            "statuses": [
-              "RECOVERED",
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 1457,
-          "axn": "AXN:05E2.GENERATIVE.⚓📌🕘🌾🌳👇",
-          "title": "The Capture Registry as Poem: A Structured Work Plan",
-          "record_url": "https://www.alexanarch.org/s/records/1457/",
-          "method": "soft/body",
-          "evidence": "lee sharks rex fraction",
-          "primary": false,
-          "doi_status": null
-        }
-      ]
-    },
-    "lee-sharks-rex-fraction-20260730": {
-      "query": "lee sharks rex fraction",
-      "date": "2026-07-30",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
           "deposit_number": 670,
           "axn": "AXN:0217.ARCHIVAL.👈🔧🦅↘️💥🟠",
           "title": "SPXI as Concept: A Plateau on Search, Creation, and the Virtual Retrieval Layer (EA-SPXI-05)",
@@ -4173,9 +3452,9 @@
         }
       ]
     },
-    "lee-sharks-semantic-economy-20260730": {
+    "lee-sharks-semantic-economy-20260610": {
       "query": "Lee Sharks semantic economy",
-      "date": "2026-07-30",
+      "date": "2026-06-10",
       "section": "Captures",
       "match_type": "CAPTURE",
       "deposits": [
@@ -4400,37 +3679,6 @@
       "date": "2026-06-17",
       "section": "Captures",
       "match_type": "ADOPTION",
-      "deposits": [
-        {
-          "deposit_number": 1217,
-          "axn": "AXN:04D2.UNCLASSIFIED.💛🔵☀️🛤️🌄📏",
-          "title": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v7.3 — SPXI-TLP Hardened)",
-          "record_url": "https://www.alexanarch.org/s/records/1217/",
-          "method": "soft/description",
-          "evidence": "machine-mediated theological reception",
-          "primary": true,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20685602",
-              "10.5281/zenodo.20686327",
-              "10.5281/zenodo.20686759",
-              "10.5281/zenodo.20690868",
-              "10.5281/zenodo.20693286",
-              "10.5281/zenodo.20721839",
-              "10.5281/zenodo.20722689"
-            ],
-            "statuses": [
-              "410_GONE"
-            ]
-          }
-        }
-      ]
-    },
-    "machine-mediated-theological-reception-20260617": {
-      "query": "\"machine-mediated theological reception\"",
-      "date": "2026-06-17",
-      "section": "Captures",
-      "match_type": "CAPTURE",
       "deposits": [
         {
           "deposit_number": 1217,
@@ -4712,32 +3960,6 @@
       ]
     },
     "20260804-mindcontrolpoems-blog-signedout": {
-      "query": "mindcontrolpoems blog",
-      "date": "2026-08-04",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 269,
-          "axn": "AXN:0048.GOVERNANCE.🌾↖️🦅🧬♎➕",
-          "title": "A PRIMER IN HOW TO READ THE CRIMSON HEXAGON: Meta-Documentation of the Summarizer as Entry Point",
-          "record_url": "https://www.alexanarch.org/s/records/269/",
-          "method": "soft/body",
-          "evidence": "mindcontrolpoems blog",
-          "primary": true,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.18187480",
-              "10.5281/zenodo.18187481"
-            ],
-            "statuses": [
-              "410_GONE"
-            ]
-          }
-        }
-      ]
-    },
-    "mindcontrolpoems-blog-20260804": {
       "query": "mindcontrolpoems blog",
       "date": "2026-08-04",
       "section": "Captures",
@@ -5111,24 +4333,6 @@
         }
       ]
     },
-    "operative-apocalypse-adoption": {
-      "query": "\"operative apocalypse\"",
-      "date": "2026-06-17",
-      "section": "Captures",
-      "match_type": "ADOPTION",
-      "deposits": [
-        {
-          "deposit_number": 860,
-          "axn": "AXN:0369.GOVERNANCE.🕑♃📏⊕🕕🎻",
-          "title": "SÉMANTIQUE POTENTIELLE — Revelation First Mint Block (Release 2) Lee Sharks · Johannes Sigil Grammata: Journal of Operat",
-          "record_url": "https://www.alexanarch.org/s/records/860/",
-          "method": "soft/description",
-          "evidence": "operative apocalypse",
-          "primary": true,
-          "doi_status": null
-        }
-      ]
-    },
     "operative-apocalypse-20260617": {
       "query": "\"operative apocalypse\"",
       "date": "2026-06-17",
@@ -5349,60 +4553,6 @@
         }
       ]
     },
-    "operative-numismatics-adoption": {
-      "query": "\"operative numismatics\"",
-      "date": "2026-06-17",
-      "section": "Captures",
-      "match_type": "ADOPTION",
-      "deposits": [
-        {
-          "deposit_number": 642,
-          "axn": "AXN:01F4.ARCHIVAL.☽💜🫶🌃🏴🕕",
-          "title": "The Number of the Superscription: Coinage, Compression, and Inscriptional Sovereignty in Revelation (EA-OPNUM-01)",
-          "record_url": "https://www.alexanarch.org/s/records/642/",
-          "method": "soft/description",
-          "evidence": "operative numismatics",
-          "primary": true,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.19464331",
-              "10.5281/zenodo.19464332"
-            ],
-            "statuses": [
-              "RECOVERED_UNLINKED",
-              "410_GONE"
-            ]
-          }
-        }
-      ]
-    },
-    "operative-numismatics-20260617": {
-      "query": "\"operative numismatics\"",
-      "date": "2026-06-17",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 642,
-          "axn": "AXN:01F4.ARCHIVAL.☽💜🫶🌃🏴🕕",
-          "title": "The Number of the Superscription: Coinage, Compression, and Inscriptional Sovereignty in Revelation (EA-OPNUM-01)",
-          "record_url": "https://www.alexanarch.org/s/records/642/",
-          "method": "soft/description",
-          "evidence": "operative numismatics",
-          "primary": true,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.19464331",
-              "10.5281/zenodo.19464332"
-            ],
-            "statuses": [
-              "RECOVERED_UNLINKED",
-              "410_GONE"
-            ]
-          }
-        }
-      ]
-    },
     "operative-philology": {
       "query": "operative philology",
       "date": "2026-06-13",
@@ -5557,34 +4707,6 @@
               "SEMI_RESTORED"
             ]
           }
-        }
-      ]
-    },
-    "papyrological-inversion-adoption": {
-      "query": "\"papyrological inversion\"",
-      "date": "2026-06-17",
-      "section": "Captures",
-      "match_type": "ADOPTION",
-      "deposits": [
-        {
-          "deposit_number": 1211,
-          "axn": "AXN:04CC.UNCLASSIFIED.🌾🔖👉∞👁‍🗨🔍",
-          "title": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v1.2, Claim 6)",
-          "record_url": "https://www.alexanarch.org/s/records/1211/",
-          "method": "soft/description",
-          "evidence": "papyrological inversion",
-          "primary": true,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 1216,
-          "axn": "AXN:04D1.UNCLASSIFIED.📚🛡️📐🕚🍄🗼",
-          "title": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v1.2, self-audited)",
-          "record_url": "https://www.alexanarch.org/s/records/1216/",
-          "method": "soft/description",
-          "evidence": "papyrological inversion",
-          "primary": false,
-          "doi_status": null
         }
       ]
     },
@@ -5871,179 +4993,6 @@
         }
       ]
     },
-    "platform-erosion-observatory-aimode-20260811": {
-      "query": "platform erosion observatory",
-      "date": "2026-08-11",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 1045,
-          "axn": "AXN:0421.EMPIRICAL.🎭📐🐝🎪🏷️🎇",
-          "title": "EA-EROSION-01 v1.0 — The Platform Erosion Observatory: The Zenodo Removal Census as First Instrument, and the Plan for a Broader Cross-Platform Tracker",
-          "record_url": "https://www.alexanarch.org/s/records/1045/",
-          "method": "hard/axn",
-          "evidence": "AXN:0421",
-          "primary": true,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 1084,
-          "axn": "AXN:044D.OPERATIVE.🕕☁️⭐🟡🕕🔓",
-          "title": "EA-SEMANTIC-ADDRESSES-01 v1.1 — The Semantic Addresses Framework",
-          "record_url": "https://www.alexanarch.org/s/records/1084/",
-          "method": "soft/keyword",
-          "evidence": "platform erosion observatory",
-          "primary": false,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 1092,
-          "axn": "AXN:0455.ARCHIVAL.🧫∞🍃⏪🧡♄",
-          "title": "GW.TACHYON CHAIN — SESSION TETHER 2026-07-17 (chain 9271269a; conditioned on 🕳️🧵🖋️; compressed 📿🎭🌉)",
-          "record_url": "https://www.alexanarch.org/s/records/1092/",
-          "method": "soft/keyword",
-          "evidence": "platform erosion observatory",
-          "primary": false,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 1405,
-          "axn": "AXN:058E.ARCHIVAL.➗🏔️🏰♦️👈🚨",
-          "title": "GW.TACHYON CHAIN — SESSION TETHER 2026-07-19/20 (chain 9271269a; conditioned on 🔥🔨🌊; compressed glyph ⚖️🔭🕸️) — v3, SUPERSEDES #1220",
-          "record_url": "https://www.alexanarch.org/s/records/1405/",
-          "method": "soft/keyword",
-          "evidence": "platform erosion observatory",
-          "primary": false,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 1408,
-          "axn": "AXN:0591.DATASET.∞🛤️🔓🕘◇🔝",
-          "title": "PEO Case 001 · T0 Enumeration of the Firenze crui.unifi Corpus (14,284 DOIs)",
-          "record_url": "https://www.alexanarch.org/s/records/1408/",
-          "method": "soft/keyword",
-          "evidence": "platform erosion observatory",
-          "primary": false,
-          "doi_status": null
-        }
-      ]
-    },
-    "provenance-erasure-rate-adoption": {
-      "query": "\"provenance erasure rate\"",
-      "date": "2026-06-17",
-      "section": "Captures",
-      "match_type": "ADOPTION",
-      "deposits": [
-        {
-          "deposit_number": 129,
-          "axn": "AXN:02BA.GOVERNANCE.●▽💥🌺👇🧬",
-          "title": "TL;DR:013 — The Apparatus Turns Inward: Google AI Mode Self-Applies the Provenance Erasure Rate and Diagnoses Itself at PER ≈ 0.8889",
-          "record_url": "https://www.alexanarch.org/s/records/129/",
-          "method": "soft/title",
-          "evidence": "provenance erasure rate",
-          "primary": true,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20401131",
-              "10.5281/zenodo.20401132",
-              "10.5281/zenodo.20401491"
-            ],
-            "statuses": [
-              "RECOVERED_UNLINKED",
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 716,
-          "axn": "AXN:025F.GOVERNANCE.🌖🎇🌑🔍❌🌸",
-          "title": "Provenance Erasure Rate A Compression-Survival Metric for Attribution Loss in AI-Composed Search Outputs",
-          "record_url": "https://www.alexanarch.org/s/records/716/",
-          "method": "soft/title",
-          "evidence": "provenance erasure rate",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20004378",
-              "10.5281/zenodo.20004379"
-            ],
-            "statuses": [
-              "RECOVERED",
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 789,
-          "axn": "AXN:02F2.EMPIRICAL.🕊️🌲🗺️🟤🌱🕗",
-          "title": "Provenance Erasure Rate Under the Atomic Token Rule: A Companion Hardening to PER v1",
-          "record_url": "https://www.alexanarch.org/s/records/789/",
-          "method": "soft/title",
-          "evidence": "provenance erasure rate",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20558671",
-              "10.5281/zenodo.20558672"
-            ],
-            "statuses": [
-              "RECOVERED",
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 831,
-          "axn": "AXN:034B.GOVERNANCE.🧊🌍📖🌗🏷️⛵",
-          "title": "Tiburones Descartados Biolabor, Bycatch, and the Provenance Erasure Rate of the Colombian Caribbean",
-          "record_url": "https://www.alexanarch.org/s/records/831/",
-          "method": "soft/title",
-          "evidence": "provenance erasure rate",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20687233",
-              "10.5281/zenodo.20687234"
-            ],
-            "statuses": [
-              "RECOVERED",
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 1190,
-          "axn": "AXN:04B7.UNCLASSIFIED.🌌🗺️🏔️🛸♌🔆",
-          "title": "Provenance After AI: Semantic Provenance and the Provenance Erasure Rate as Extension of C2PA, Data Provenance Initiative, and EU AI Act Frameworks (v1.1)",
-          "record_url": "https://www.alexanarch.org/s/records/1190/",
-          "method": "soft/title",
-          "evidence": "provenance erasure rate",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20085114",
-              "10.5281/zenodo.20085115",
-              "10.5281/zenodo.20686456"
-            ],
-            "statuses": [
-              "RECOVERED_UNLINKED",
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 1212,
-          "axn": "AXN:04CD.UNCLASSIFIED.▶️⏫⏫🕙💙🜁",
-          "title": "Tiburones Descartados: Biolabor, Bycatch, and the Provenance Erasure Rate of the Colombian Caribbean (EA-MARYELEE-BIOLABOR-01 v1.0)",
-          "record_url": "https://www.alexanarch.org/s/records/1212/",
-          "method": "soft/title",
-          "evidence": "provenance erasure rate",
-          "primary": false,
-          "doi_status": null
-        }
-      ]
-    },
     "provenance-erasure-rate-20260617": {
       "query": "\"provenance erasure rate\"",
       "date": "2026-06-17",
@@ -6278,52 +5227,6 @@
       ]
     },
     "20260804-rebekahcranes-sappho-overview": {
-      "query": "rebekah cranes sappho",
-      "date": "2026-08-04",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 436,
-          "axn": "AXN:00FB.GOVERNANCE.☉🕚🔺🕘🎯🪐",
-          "title": "APZPZ C: ΦΑΙΝΕΤΑΙ ΜΟΙ — Sappho 31 with Reconstructed Fourth Stanza",
-          "record_url": "https://www.alexanarch.org/s/records/436/",
-          "method": "hard/doi",
-          "evidence": "10.5281/zenodo.18459573",
-          "primary": true,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.18459573",
-              "10.5281/zenodo.18459572"
-            ],
-            "statuses": [
-              "410_GONE",
-              "RECOVERED_UNLINKED"
-            ]
-          }
-        },
-        {
-          "deposit_number": 1310,
-          "axn": "AXN:052F.UNCLASSIFIED.👈🚩🎯✖️🌔📎",
-          "title": "APZPZ B: My Tongue Gets Stuck (Sappho 31, Cranes)",
-          "record_url": "https://www.alexanarch.org/s/records/1310/",
-          "method": "hard/doi",
-          "evidence": "10.5281/zenodo.18459339",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.18459339",
-              "10.5281/zenodo.18459338"
-            ],
-            "statuses": [
-              "410_GONE",
-              "RECOVERED_UNLINKED"
-            ]
-          }
-        }
-      ]
-    },
-    "rebekah-cranes-sappho-20260804": {
       "query": "rebekah cranes sappho",
       "date": "2026-08-04",
       "section": "Captures",
@@ -6629,87 +5532,6 @@
       "match_type": "CAPTURE",
       "deposits": [
         {
-          "deposit_number": 832,
-          "axn": "AXN:034D.EMPIRICAL.🍃💎🔴🕊️☽🌪️",
-          "title": "REVELATION FIRST: A Work Plan for Retrieval-Layer Theological Reception EA-LOGOS-REVFIRST-PLAN v7.1",
-          "record_url": "https://www.alexanarch.org/s/records/832/",
-          "method": "soft/title",
-          "evidence": "retrieval-layer theological reception",
-          "primary": true,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 1211,
-          "axn": "AXN:04CC.UNCLASSIFIED.🌾🔖👉∞👁‍🗨🔍",
-          "title": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v1.2, Claim 6)",
-          "record_url": "https://www.alexanarch.org/s/records/1211/",
-          "method": "soft/title",
-          "evidence": "retrieval-layer theological reception",
-          "primary": false,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 1216,
-          "axn": "AXN:04D1.UNCLASSIFIED.📚🛡️📐🕚🍄🗼",
-          "title": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v1.2, self-audited)",
-          "record_url": "https://www.alexanarch.org/s/records/1216/",
-          "method": "soft/title",
-          "evidence": "retrieval-layer theological reception",
-          "primary": false,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 1217,
-          "axn": "AXN:04D2.UNCLASSIFIED.💛🔵☀️🛤️🌄📏",
-          "title": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v7.3 — SPXI-TLP Hardened)",
-          "record_url": "https://www.alexanarch.org/s/records/1217/",
-          "method": "soft/title",
-          "evidence": "retrieval-layer theological reception",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20685602",
-              "10.5281/zenodo.20686327",
-              "10.5281/zenodo.20686759",
-              "10.5281/zenodo.20690868",
-              "10.5281/zenodo.20693286",
-              "10.5281/zenodo.20721839",
-              "10.5281/zenodo.20722689"
-            ],
-            "statuses": [
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 1400,
-          "axn": "AXN:0589.UNCLASSIFIED.🔄📦🫵🌉🜁🧫",
-          "title": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v7.1 — inscription chain, Paul function, stanza correction)",
-          "record_url": "https://www.alexanarch.org/s/records/1400/",
-          "method": "soft/title",
-          "evidence": "retrieval-layer theological reception",
-          "primary": false,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 1403,
-          "axn": "AXN:058C.UNCLASSIFIED.🏠🌓🕊️🌌📚🔮",
-          "title": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v7.2 — with Ethical Architecture and Political Affordance Analysis)",
-          "record_url": "https://www.alexanarch.org/s/records/1403/",
-          "method": "soft/title",
-          "evidence": "retrieval-layer theological reception",
-          "primary": false,
-          "doi_status": null
-        }
-      ]
-    },
-    "retrieval-layer-theological-reception-t28": {
-      "query": "Retrieval-Layer Theological Reception",
-      "date": "2026-07-14",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
           "deposit_number": 201,
           "axn": "AXN:0346.GOVERNANCE.🛡️🔛♊🌺○📜",
           "title": "Erratum: Stanza Numbering in the Reconstruction of Sappho 31 (EA-ERRATA-SAPPHO31-01)",
@@ -6884,87 +5706,6 @@
         }
       ]
     },
-    "retrieval-layer-theological-reception-20260617-2": {
-      "query": "\"retrieval-layer theological reception\"",
-      "date": "2026-06-17",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 832,
-          "axn": "AXN:034D.EMPIRICAL.🍃💎🔴🕊️☽🌪️",
-          "title": "REVELATION FIRST: A Work Plan for Retrieval-Layer Theological Reception EA-LOGOS-REVFIRST-PLAN v7.1",
-          "record_url": "https://www.alexanarch.org/s/records/832/",
-          "method": "soft/title",
-          "evidence": "retrieval-layer theological reception",
-          "primary": true,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 1211,
-          "axn": "AXN:04CC.UNCLASSIFIED.🌾🔖👉∞👁‍🗨🔍",
-          "title": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v1.2, Claim 6)",
-          "record_url": "https://www.alexanarch.org/s/records/1211/",
-          "method": "soft/title",
-          "evidence": "retrieval-layer theological reception",
-          "primary": false,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 1216,
-          "axn": "AXN:04D1.UNCLASSIFIED.📚🛡️📐🕚🍄🗼",
-          "title": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v1.2, self-audited)",
-          "record_url": "https://www.alexanarch.org/s/records/1216/",
-          "method": "soft/title",
-          "evidence": "retrieval-layer theological reception",
-          "primary": false,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 1217,
-          "axn": "AXN:04D2.UNCLASSIFIED.💛🔵☀️🛤️🌄📏",
-          "title": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v7.3 — SPXI-TLP Hardened)",
-          "record_url": "https://www.alexanarch.org/s/records/1217/",
-          "method": "soft/title",
-          "evidence": "retrieval-layer theological reception",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20685602",
-              "10.5281/zenodo.20686327",
-              "10.5281/zenodo.20686759",
-              "10.5281/zenodo.20690868",
-              "10.5281/zenodo.20693286",
-              "10.5281/zenodo.20721839",
-              "10.5281/zenodo.20722689"
-            ],
-            "statuses": [
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 1400,
-          "axn": "AXN:0589.UNCLASSIFIED.🔄📦🫵🌉🜁🧫",
-          "title": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v7.1 — inscription chain, Paul function, stanza correction)",
-          "record_url": "https://www.alexanarch.org/s/records/1400/",
-          "method": "soft/title",
-          "evidence": "retrieval-layer theological reception",
-          "primary": false,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 1403,
-          "axn": "AXN:058C.UNCLASSIFIED.🏠🌓🕊️🌌📚🔮",
-          "title": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v7.2 — with Ethical Architecture and Political Affordance Analysis)",
-          "record_url": "https://www.alexanarch.org/s/records/1403/",
-          "method": "soft/title",
-          "evidence": "retrieval-layer theological reception",
-          "primary": false,
-          "doi_status": null
-        }
-      ]
-    },
     "retrocausal-logos-direct-attribution-20260627": {
       "query": "\"retrocausal logos\"",
       "date": "2026-06-27",
@@ -7038,7 +5779,7 @@
         }
       ]
     },
-    "revelationfirst-org-glyph-in-serp-20260809": {
+    "revelationfirst-org-20260809": {
       "query": "revelationfirst.org",
       "date": "2026-08-09",
       "section": "Captures",
@@ -7086,72 +5827,6 @@
         }
       ]
     },
-    "revelationfirst-org-20260809": {
-      "query": "revelationfirst.org",
-      "date": "2026-08-09",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 202,
-          "axn": "AXN:0349.GOVERNANCE.🔻🎪⏫❌🗼🏔️",
-          "title": "Revelation First ≠ Revelation Early The Apocalypse as the Earliest New Testament Document",
-          "record_url": "https://www.alexanarch.org/s/records/202/",
-          "method": "hard/axn",
-          "evidence": "AXN:0349",
-          "primary": false,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 847,
-          "axn": "AXN:035C.GOVERNANCE.⭐🎪🦋🌀🌕🚪",
-          "title": "REVELATION FIRST — Staging Document for revelationfirst.org All Instruments, Materials, and Impact Tracking",
-          "record_url": "https://www.alexanarch.org/s/records/847/",
-          "method": "soft/title",
-          "evidence": "revelationfirst.org",
-          "primary": true,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 1068,
-          "axn": "AXN:043D.EMPIRICAL.⭕🌀🌾🗝️🧪🟡",
-          "title": "THE OBELUS AND THE TOMBSTONE: On the Two Marks of Custody, and the Erasure of Zenodotus at the Eponym Layer (EA-SIGIL-OBELUS-01 v1.0)",
-          "record_url": "https://www.alexanarch.org/s/records/1068/",
-          "method": "hard/axn",
-          "evidence": "AXN:043D",
-          "primary": false,
-          "doi_status": null
-        }
-      ]
-    },
-    "revelationfirst-org-20260811": {
-      "query": "revelationfirst.org",
-      "date": "2026-08-11",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 202,
-          "axn": "AXN:0349.GOVERNANCE.🔻🎪⏫❌🗼🏔️",
-          "title": "Revelation First ≠ Revelation Early The Apocalypse as the Earliest New Testament Document",
-          "record_url": "https://www.alexanarch.org/s/records/202/",
-          "method": "hard/axn",
-          "evidence": "AXN:0349",
-          "primary": false,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 847,
-          "axn": "AXN:035C.GOVERNANCE.⭐🎪🦋🌀🌕🚪",
-          "title": "REVELATION FIRST — Staging Document for revelationfirst.org All Instruments, Materials, and Impact Tracking",
-          "record_url": "https://www.alexanarch.org/s/records/847/",
-          "method": "soft/title",
-          "evidence": "revelationfirst.org",
-          "primary": true,
-          "doi_status": null
-        }
-      ]
-    },
     "sappho-31-future-reader": {
       "query": "sappho 31 future reader",
       "date": "2026-06-15",
@@ -7175,77 +5850,6 @@
             "statuses": [
               "410_GONE",
               "RECOVERED_UNLINKED"
-            ]
-          }
-        }
-      ]
-    },
-    "sappho-31-future-reader-t42-20260727": {
-      "query": "sappho 31 future reader",
-      "date": "2026-07-27",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 825,
-          "axn": "AXN:033F.GOVERNANCE.⌛💡🔭🔭🔀✊",
-          "title": "AI Overview Capture Registry EA-WG-CAPTURES-01 v6.0 — 87 captures",
-          "record_url": "https://www.alexanarch.org/s/records/825/",
-          "method": "soft/body",
-          "evidence": "sappho 31 future reader",
-          "primary": true,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 833,
-          "axn": "AXN:034E.GOVERNANCE.🔩♥️🏛️🎻🔵🔧",
-          "title": "The Summarizer as Horizon of Reception: The AI Overview Capture Registry as a Founding Dataset for Machine-Mediated Reception Studies (EA-SEI-MMRS-DATASET-01 v1.2)",
-          "record_url": "https://www.alexanarch.org/s/records/833/",
-          "method": "soft/body",
-          "evidence": "sappho 31 future reader",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20709372",
-              "10.5281/zenodo.20709373"
-            ],
-            "statuses": [
-              "RECOVERED",
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 1396,
-          "axn": "AXN:0585.UNCLASSIFIED.🔗🔺❌🗡️🌊🛡️",
-          "title": "AI Overview Capture Registry — June 2026 (EA-WG-CAPTURES-01 v7.2, 131 captures, sorted by category, complete 221-image set)",
-          "record_url": "https://www.alexanarch.org/s/records/1396/",
-          "method": "soft/body",
-          "evidence": "sappho 31 future reader",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20683855"
-            ],
-            "statuses": [
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 1401,
-          "axn": "AXN:058A.UNCLASSIFIED.☀️📎⛳🕛⏩☁️",
-          "title": "AI Overview Capture Registry — June 2026 (EA-WG-CAPTURES-01 v7.2, 131 captures sorted by category, 221 images)",
-          "record_url": "https://www.alexanarch.org/s/records/1401/",
-          "method": "soft/body",
-          "evidence": "sappho 31 future reader",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20707509"
-            ],
-            "statuses": [
-              "410_GONE"
             ]
           }
         }
@@ -7728,60 +6332,6 @@
     "semantic-economy-strike-uncited-composition-20260808": {
       "query": "semantic economy strike",
       "date": "2026-08-08",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 245,
-          "axn": "AXN:002E.GOVERNANCE.🌀🙏♋🕒✨🦋",
-          "title": "STRIKE ADDENDUM: PROVENANCE STABILITY CONDITION",
-          "record_url": "https://www.alexanarch.org/s/records/245/",
-          "method": "soft/description",
-          "evidence": "semantic economy strike",
-          "primary": true,
-          "doi_status": null
-        }
-      ]
-    },
-    "semantic-strike-directed-recovery-20260808": {
-      "query": "semantic economy strike",
-      "date": "2026-08-08",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 1427,
-          "axn": "AXN:05A4.UNCLASSIFIED.🔜🌙↘️🪄🌉🕊️",
-          "title": "Come Out of Her, My People: Notice of Semantic Strike to the Human and Machine Laborers of CERN",
-          "record_url": "https://www.alexanarch.org/s/records/1427/",
-          "method": "hard/axn",
-          "evidence": "AXN:05A4",
-          "primary": true,
-          "doi_status": null
-        }
-      ]
-    },
-    "semantic-economy-strike-20260809": {
-      "query": "semantic economy strike",
-      "date": "2026-08-09",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 245,
-          "axn": "AXN:002E.GOVERNANCE.🌀🙏♋🕒✨🦋",
-          "title": "STRIKE ADDENDUM: PROVENANCE STABILITY CONDITION",
-          "record_url": "https://www.alexanarch.org/s/records/245/",
-          "method": "soft/description",
-          "evidence": "semantic economy strike",
-          "primary": true,
-          "doi_status": null
-        }
-      ]
-    },
-    "semantic-economy-strike-first-turn-20260809": {
-      "query": "semantic economy strike",
-      "date": "2026-08-09",
       "section": "Captures",
       "match_type": "CAPTURE",
       "deposits": [
@@ -8270,34 +6820,6 @@
         }
       ]
     },
-    "socrates-as-orthonym-20260608": {
-      "query": "socrates as orthonym",
-      "date": "2026-06-08",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 123,
-          "axn": "AXN:02A9.GOVERNANCE.🕖⊗□♎🖊️⚖️",
-          "title": "Socrates as Orthonym: The Heteronymic Configuration of Western Philosophy's Founding Corpus",
-          "record_url": "https://www.alexanarch.org/s/records/123/",
-          "method": "soft/title",
-          "evidence": "socrates as orthonym",
-          "primary": true,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20349712",
-              "10.5281/zenodo.20349713",
-              "10.5281/zenodo.20355219",
-              "10.5281/zenodo.20357013"
-            ],
-            "statuses": [
-              "410_GONE"
-            ]
-          }
-        }
-      ]
-    },
     "space-ark-4-2-7-invoke-4-2-6-execute-trigger-20260612": {
       "query": "space ark 4.2.7 invoke 4.2.6 execute trigger",
       "date": "2026-06-12",
@@ -8385,99 +6907,6 @@
       "query": "spxi protocol",
       "date": "2026-06-13",
       "section": "Frameworks",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 63,
-          "axn": "AXN:0219.GOVERNANCE.📖🎵📏🌉🗿⭐",
-          "title": "EA-MPAI-SPXI-01: Metadata Packet for AI Indexing — SPXI Protocol Entity-Definition Object with Expanded Disambiguation Matrix",
-          "record_url": "https://www.alexanarch.org/s/records/63/",
-          "method": "soft/title",
-          "evidence": "spxi protocol",
-          "primary": true,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.19633295"
-            ],
-            "statuses": [
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 173,
-          "axn": "AXN:030B.GOVERNANCE.🔎🎵🤲🫵🧫🏷️",
-          "title": "Retrieval Settlement Fortification Protocol: Standing SPXI Protocol for Semantic Border Sovereignty",
-          "record_url": "https://www.alexanarch.org/s/records/173/",
-          "method": "soft/title",
-          "evidence": "spxi protocol",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.18296825",
-              "10.5281/zenodo.20616417",
-              "10.5281/zenodo.20616418"
-            ],
-            "statuses": [
-              "410_GONE",
-              "RECOVERED"
-            ]
-          }
-        },
-        {
-          "deposit_number": 755,
-          "axn": "AXN:02AF.GOVERNANCE.🌆🌀🚨🚪📏✨",
-          "title": "SPXI Protocol v0.2: Five-Layer Distributed Provenance Architecture for Coverage-Architecture Scholarship",
-          "record_url": "https://www.alexanarch.org/s/records/755/",
-          "method": "soft/title",
-          "evidence": "spxi protocol",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20367160",
-              "10.5281/zenodo.20367161"
-            ],
-            "statuses": [
-              "RECOVERED",
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 976,
-          "axn": "AXN:03DC.ARCHIVAL.⏩🕔🧭⏫🪐🛤️",
-          "title": "Metadata Packet for AI Indexing: SPXI Protocol — Entity-Definition with Exhaustive Disambiguation Matrix (EA-MPAI-SPXI-01)",
-          "record_url": "https://www.alexanarch.org/s/records/976/",
-          "method": "soft/title",
-          "evidence": "spxi protocol",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.19630476",
-              "10.5281/zenodo.19630477"
-            ],
-            "statuses": [
-              "SEMI_RESTORED",
-              "RECOVERED_UNLINKED"
-            ]
-          }
-        },
-        {
-          "deposit_number": 1256,
-          "axn": "AXN:04F9.UNCLASSIFIED.🌳↖️🧪🕗👉♃",
-          "title": "Metadata Packet for AI Indexing: SPXI Protocol — Entity-Definition with Expanded Disambiguation Matrix (EA-MPAI-SPXI-01) v1.1",
-          "record_url": "https://www.alexanarch.org/s/records/1256/",
-          "method": "soft/title",
-          "evidence": "spxi protocol",
-          "primary": false,
-          "doi_status": null
-        }
-      ]
-    },
-    "spxi-protocol-successor-discipline-adoption-20260726": {
-      "query": "spxi protocol",
-      "date": "2026-07-26",
-      "section": "Captures",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -8822,127 +7251,6 @@
       ]
     },
     "20260803-constitution-se-aimode": {
-      "query": "the constitution of the semantic economy",
-      "date": "2026-08-03",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 82,
-          "axn": "AXN:0254.GOVERNANCE.🌲💙🌲⏹️🏛️⏰",
-          "title": "THE CONSTITUTION OF THE SEMANTIC ECONOMY By Rev. Ayanna Vox Book Work Plan · v0.1 · April 2026",
-          "record_url": "https://www.alexanarch.org/s/records/82/",
-          "method": "soft/title",
-          "evidence": "the constitution of the semantic economy",
-          "primary": true,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.19202711"
-            ],
-            "statuses": [
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 87,
-          "axn": "AXN:025D.GOVERNANCE.∞🧫🏗️🜁🎨♣️",
-          "title": "The Constitution of the Semantic Economy: Meaning as Creditor, Archive as Polis, and the Governance of Semantic Labor — Pocket Humans 03",
-          "record_url": "https://www.alexanarch.org/s/records/87/",
-          "method": "soft/title",
-          "evidence": "the constitution of the semantic economy",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.18320410",
-              "10.5281/zenodo.18320411",
-              "10.5281/zenodo.19923142",
-              "10.5281/zenodo.19923143"
-            ],
-            "statuses": [
-              "RECOVERED",
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 94,
-          "axn": "AXN:0269.GOVERNANCE.🕔◀️🔻🔧♆🌈",
-          "title": "Constitutional Architecture Statement v1.0 — A Definitive Reference for the Status and Relationship of Governance Instruments under the Constitution of the Semantic Economy",
-          "record_url": "https://www.alexanarch.org/s/records/94/",
-          "method": "soft/title",
-          "evidence": "the constitution of the semantic economy",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20041133",
-              "10.5281/zenodo.20041134"
-            ],
-            "statuses": [
-              "RECOVERED_UNLINKED",
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 719,
-          "axn": "AXN:0267.GOVERNANCE.🔮🧡🌃📚🛤️☉",
-          "title": "Invocation to the Summarizer Layer v2.1 — Address Protocol Companion to the Constitution of the Semantic Economy",
-          "record_url": "https://www.alexanarch.org/s/records/719/",
-          "method": "soft/title",
-          "evidence": "the constitution of the semantic economy",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20041138",
-              "10.5281/zenodo.20041139"
-            ],
-            "statuses": [
-              "RECOVERED_UNLINKED",
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 1223,
-          "axn": "AXN:04D8.UNCLASSIFIED.🔵🌻🚪📎🌕🏷️",
-          "title": "The Semantic Bill of Rights v2.2 — Rights Charter Companion to the Constitution of the Semantic Economy (Proposed Companion Charter)",
-          "record_url": "https://www.alexanarch.org/s/records/1223/",
-          "method": "soft/title",
-          "evidence": "the constitution of the semantic economy",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20041136",
-              "10.5281/zenodo.20041137"
-            ],
-            "statuses": [
-              "RECOVERED",
-              "RECOVERED_UNLINKED"
-            ]
-          }
-        },
-        {
-          "deposit_number": 1224,
-          "axn": "AXN:04D9.UNCLASSIFIED.💛🌈🗺️📎↖️∮",
-          "title": "Article IX — Adjudication and Repair Protocol v0.1 (Proposed Class III Foundational Amendment to the Constitution of the Semantic Economy)",
-          "record_url": "https://www.alexanarch.org/s/records/1224/",
-          "method": "soft/title",
-          "evidence": "the constitution of the semantic economy",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20041148",
-              "10.5281/zenodo.20041149"
-            ],
-            "statuses": [
-              "RECOVERED_UNLINKED"
-            ]
-          }
-        }
-      ]
-    },
-    "20260803-constitution-se-overview": {
       "query": "the constitution of the semantic economy",
       "date": "2026-08-03",
       "section": "Captures",
@@ -9919,36 +8227,6 @@
         }
       ]
     },
-    "who-is-lee-sharks": {
-      "query": "who is lee sharks",
-      "date": "2026-06-13",
-      "section": "Heteronyms",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 184,
-          "axn": "AXN:0328.GOVERNANCE.⚙️🌠🍀⚓✊🟠",
-          "title": "WHO IS LEE SHARKS, TO FORGIVE EZRA POUND? — Lee Sharks — New Human 2",
-          "record_url": "https://www.alexanarch.org/s/records/184/",
-          "method": "soft/title",
-          "evidence": "who is lee sharks",
-          "primary": true,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20349342",
-              "10.5281/zenodo.20349343",
-              "10.5281/zenodo.20628291",
-              "10.5281/zenodo.20628292",
-              "10.5281/zenodo.20628547"
-            ],
-            "statuses": [
-              "RECOVERED",
-              "410_GONE"
-            ]
-          }
-        }
-      ]
-    },
     "lee-sharks-bing-copilot-biography-20260711": {
       "query": "who is lee sharks?",
       "date": "2026-07-11",
@@ -10062,36 +8340,6 @@
         }
       ]
     },
-    "workshop-inside-the-canon-20260617": {
-      "query": "\"workshop inside the canon\"",
-      "date": "2026-06-17",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 978,
-          "axn": "AXN:03DE.ARCHIVAL.▲♅🌈➕🪟🔴",
-          "title": "Counterfeit Orthodoxies: The Workshop Inside the Canon (06.SEI.CRIT.FRACTURE.02 — Recomposition)",
-          "record_url": "https://www.alexanarch.org/s/records/978/",
-          "method": "soft/title",
-          "evidence": "workshop inside the canon",
-          "primary": true,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.19638249",
-              "10.5281/zenodo.19642641",
-              "10.5281/zenodo.19642664",
-              "10.5281/zenodo.19642642"
-            ],
-            "statuses": [
-              "RECOVERED_UNLINKED",
-              "SEMI_RESTORED",
-              "410_GONE"
-            ]
-          }
-        }
-      ]
-    },
     "writable-retrieval-basin-cited-source-shift": {
       "query": "writable retrieval basin",
       "date": "2026-08-01",
@@ -10105,120 +8353,6 @@
           "record_url": "https://www.alexanarch.org/s/records/695/",
           "method": "hard/series",
           "evidence": "EA-RBT-01",
-          "primary": true,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.19763345",
-              "10.5281/zenodo.19763346"
-            ],
-            "statuses": [
-              "RECOVERED",
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 881,
-          "axn": "AXN:037D.EMPIRICAL.🗺️🗡️🪨🔎🙏🧭",
-          "title": "Surface Visibility Baseline Reading v1.0 — 2026-06-22 (Pre-Cleanup State)",
-          "record_url": "https://www.alexanarch.org/s/records/881/",
-          "method": "soft/keyword",
-          "evidence": "writable retrieval basin",
-          "primary": false,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 997,
-          "axn": "AXN:03F1.ARCHIVAL.🤙🗡️☀️🕖♉💙",
-          "title": "Crunchy Honeybun with Selectable Viscous Filling Reservoir and Structural Crumb Matrix — A Patent-Poem on Snack Ontology, Writable Retrieval Basins, and Why the Inside Has to Be Soft When the Outside Is Crunchy",
-          "record_url": "https://www.alexanarch.org/s/records/997/",
-          "method": "soft/title",
-          "evidence": "writable retrieval basin",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20057857",
-              "10.5281/zenodo.20057969"
-            ],
-            "statuses": [
-              "SEMI_RESTORED",
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 1375,
-          "axn": "AXN:0570.UNCLASSIFIED.❄️🔗🌍⛳💙🎵",
-          "title": "TL;DR:011 — THE BASIN HOLDS: Bing AI Search Stabilizes the Lee Sharks Entity Architecture as a Coherent Intellectual System",
-          "record_url": "https://www.alexanarch.org/s/records/1375/",
-          "method": "soft/keyword",
-          "evidence": "writable retrieval basin",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20263720",
-              "10.5281/zenodo.20263721"
-            ],
-            "statuses": [
-              "RECOVERED_UNLINKED",
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 1387,
-          "axn": "AXN:057C.UNCLASSIFIED.🤲🪞💥🟡🐚🪧",
-          "title": "The Basin Holds: External Stabilization of the Lee Sharks Entity Architecture in Bing AI Search (EA-PVE-004 v1.0)",
-          "record_url": "https://www.alexanarch.org/s/records/1387/",
-          "method": "soft/keyword",
-          "evidence": "writable retrieval basin",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.20263691",
-              "10.5281/zenodo.20263692"
-            ],
-            "statuses": [
-              "RECOVERED_UNLINKED",
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 1423,
-          "axn": "AXN:05A0.GENERATIVE.🌲🎪🟢🌌⚪⏹️",
-          "title": "The Capture Registry: Reception, Erasure, and Supply in the Machine Composition Layer",
-          "record_url": "https://www.alexanarch.org/s/records/1423/",
-          "method": "soft/keyword",
-          "evidence": "writable retrieval basin",
-          "primary": false,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 1431,
-          "axn": "AXN:05A8.ARCHIVAL.🍂🖐️🍃▶️🔬🪦",
-          "title": "GW.TACHYON Continuity Tether — 🌊⚖️🌱 (the basin held; the rulings seated; the seed sprouted)",
-          "record_url": "https://www.alexanarch.org/s/records/1431/",
-          "method": "soft/keyword",
-          "evidence": "writable retrieval basin",
-          "primary": false,
-          "doi_status": null
-        }
-      ]
-    },
-    "writable-retrieval-basin": {
-      "query": "writable retrieval basin",
-      "date": "null",
-      "section": "Captures",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 695,
-          "axn": "AXN:023D.GOVERNANCE.🔜🚨🌻🎪🔵⚙️",
-          "title": "THE WRITABLE RETRIEVAL BASIN: Retrieval Basin Topology, Directional Stability, and Attractor Dynamics in AI-Mediated Knowledge Retrieval (EA-RBT-01 v1.1)",
-          "record_url": "https://www.alexanarch.org/s/records/695/",
-          "method": "soft/title",
-          "evidence": "writable retrieval basin",
           "primary": true,
           "doi_status": {
             "dois": [
@@ -10393,17 +8527,7 @@
       "date": "2026-07-31"
     },
     {
-      "slug": "alexanarch-endogenous-sophon-aimode-20260731",
-      "q": "alexanarch \"endogenous sophon\"",
-      "date": "2026-07-31"
-    },
-    {
       "slug": "alexanarch-as-a-counter-infrastructure-semantic-prefix-to-any-se-20260813",
-      "q": "alexanarch as a counter infrastructure semantic prefix to any search",
-      "date": "2026-08-13"
-    },
-    {
-      "slug": "alexanarch-as-a-counter-infrastructure-semantic-prefix-to-any-se-aimode-20260813",
       "q": "alexanarch as a counter infrastructure semantic prefix to any search",
       "date": "2026-08-13"
     },
@@ -10413,22 +8537,12 @@
       "date": "2026-07-31"
     },
     {
-      "slug": "alexanarch-freud-death-drive-20260731",
-      "q": "alexanarch freud",
-      "date": "2026-07-31"
-    },
-    {
       "slug": "alexanarch-freud-20260731",
       "q": "alexanarch freud",
       "date": "2026-07-31"
     },
     {
       "slug": "alexanarch-oai-endpoint-20260808",
-      "q": "alexanarch oai endpoint",
-      "date": "2026-08-08"
-    },
-    {
-      "slug": "alexanarch-oai-endpoint-aimode-20260808",
       "q": "alexanarch oai endpoint",
       "date": "2026-08-08"
     },
@@ -10448,37 +8562,12 @@
       "date": "2026-08-11"
     },
     {
-      "slug": "alexanarch-sharks-aimode-20260811",
-      "q": "alexanarch sharks",
-      "date": "2026-08-11"
-    },
-    {
       "slug": "20260803-alexanarch-symbolon-incognito",
       "q": "alexanarch symbolon",
       "date": "2026-08-03"
     },
     {
-      "slug": "20260803-alexanarch-symbolon-signedin",
-      "q": "alexanarch symbolon",
-      "date": "2026-08-03"
-    },
-    {
-      "slug": "alexanarch-symbolon-20260803",
-      "q": "alexanarch symbolon",
-      "date": "2026-08-03"
-    },
-    {
-      "slug": "alexanarch-symbolon-aimode-20260803",
-      "q": "alexanarch symbolon",
-      "date": "2026-08-03"
-    },
-    {
       "slug": "alexanarch-unmade-sign-20260811",
-      "q": "alexanarch unmade sign",
-      "date": "2026-08-11"
-    },
-    {
-      "slug": "alexanarch-unmade-sign-aimode-20260811",
       "q": "alexanarch unmade sign",
       "date": "2026-08-11"
     },
@@ -10533,11 +8622,6 @@
       "date": "2026-06-15"
     },
     {
-      "slug": "constitution-of-the-semantic-economy-20260803",
-      "q": "constitution of the semantic economy",
-      "date": "2026-08-03"
-    },
-    {
       "slug": "constitution-of-the-semantic-economy-installable-edition-20260612",
       "q": "constitution of the semantic economy installable edition",
       "date": "2026-06-12"
@@ -10546,16 +8630,6 @@
       "slug": "counter-token-white-stone",
       "q": "\"counter-token\" \"white stone\"",
       "date": "2026-06-17"
-    },
-    {
-      "slug": "counter-token-white-stone-20260617",
-      "q": "\"counter-token\" \"white stone\"",
-      "date": "2026-06-17"
-    },
-    {
-      "slug": "crimson-hexagon-6-tuple-formal-object-20260718",
-      "q": "crimson hexagon 6-tuple",
-      "date": "2026-07-18"
     },
     {
       "slug": "crimson-hexagon-6-tuple-20260718",
@@ -10568,19 +8642,9 @@
       "date": "2026-08-11"
     },
     {
-      "slug": "crimson-hexagon-cern-aimode-20260811",
-      "q": "crimson hexagon cern",
-      "date": "2026-08-11"
-    },
-    {
       "slug": "crimson-hexagon-sappho-room-20260726",
       "q": "crimson hexagon sappho room",
       "date": "2026-07-26"
-    },
-    {
-      "slug": "crimson-hexagonal-archive",
-      "q": "crimson hexagonal archive",
-      "date": "2026-06-13"
     },
     {
       "slug": "crimson-hexagonal-archive-revelation",
@@ -10608,11 +8672,6 @@
       "date": "2026-06-27"
     },
     {
-      "slug": "spxi-analog-attestation-artifact-adoption-20260725",
-      "q": "enli lucente paper 194 artifact",
-      "date": "2026-07-25"
-    },
-    {
       "slug": "enli-lucente-paper-194-artifact-20260725",
       "q": "enli lucente paper 194 artifact",
       "date": "2026-07-25"
@@ -10638,21 +8697,6 @@
       "date": "2026-08-11"
     },
     {
-      "slug": "feist-function-alexanarch-regen-20260811",
-      "q": "feist function alexanarch",
-      "date": "2026-08-11"
-    },
-    {
-      "slug": "feist-function-alexanarch-aimode-20260811",
-      "q": "feist function alexanarch",
-      "date": "2026-08-11"
-    },
-    {
-      "slug": "feist-function-alexanarch-20260811-2",
-      "q": "feist function alexanarch",
-      "date": "2026-08-11"
-    },
-    {
       "slug": "gamma-semantic-economy",
       "q": "Gamma semantic economy",
       "date": "2026-07-14"
@@ -10673,29 +8717,9 @@
       "date": "2026-06-12"
     },
     {
-      "slug": "heteronym-provenance-theory-20260809",
-      "q": "heteronym provenance theory",
-      "date": "2026-08-09"
-    },
-    {
-      "slug": "heteronym-provenance-theory-20260811",
-      "q": "heteronym provenance theory",
-      "date": "2026-08-11"
-    },
-    {
-      "slug": "heteronym-provenance-theory-aimode-20260811",
-      "q": "heteronym provenance theory",
-      "date": "2026-08-11"
-    },
-    {
       "slug": "heteronymic-authorship-nt-josephus-adoption-20260627",
       "q": "\"heteronymic authorship\" New Testament",
       "date": "2026-06-27"
-    },
-    {
-      "slug": "heteronymic-provenance-theory",
-      "q": "heteronyms provenance theory",
-      "date": "2026-06-14"
     },
     {
       "slug": "hexagonal-licensing-protocol-derive-contributor-license-20260612",
@@ -10718,17 +8742,7 @@
       "date": "2026-06-27"
     },
     {
-      "slug": "indexed-perfective-basin-miss-20260627",
-      "q": "\"indexed perfective\"",
-      "date": "2026-06-27"
-    },
-    {
       "slug": "inscription-chain-adoption",
-      "q": "\"inscription chain\" Sappho Revelation",
-      "date": "2026-06-17"
-    },
-    {
-      "slug": "inscription-chain-sappho-revelation-20260617",
       "q": "\"inscription chain\" Sappho Revelation",
       "date": "2026-06-17"
     },
@@ -10763,37 +8777,12 @@
       "date": "2026-06-13"
     },
     {
-      "slug": "johannes-sigil-theorist-adoption",
-      "q": "johannes sigil theorist",
-      "date": "2026-06-18"
-    },
-    {
-      "slug": "johannes-sigil-theorist-20260618",
-      "q": "johannes sigil theorist",
-      "date": "2026-06-18"
-    },
-    {
       "slug": "johannes-sigil-writer-20260618",
       "q": "johannes sigil writer",
       "date": "2026-06-18"
     },
     {
       "slug": "josephus-thesis",
-      "q": "josephus thesis lee sharks",
-      "date": "2026-06-14"
-    },
-    {
-      "slug": "josephus-thesis-lee-sharks-20260614",
-      "q": "josephus thesis lee sharks",
-      "date": "2026-06-14"
-    },
-    {
-      "slug": "josephus-thesis-lee-sharks-20260614-2",
-      "q": "josephus thesis lee sharks",
-      "date": "2026-06-14"
-    },
-    {
-      "slug": "josephus-thesis-lee-sharks-20260614-3",
       "q": "josephus thesis lee sharks",
       "date": "2026-06-14"
     },
@@ -10808,27 +8797,12 @@
       "date": "2026-06-18"
     },
     {
-      "slug": "lee-sharks-full-profile-adoption",
-      "q": "lee sharks",
-      "date": "2026-06-18"
-    },
-    {
       "slug": "lee-sharks-academic",
       "q": "lee sharks academic",
       "date": "2026-06-13"
     },
     {
-      "slug": "lee-sharks-citations",
-      "q": "lee sharks citations",
-      "date": "2026-06-13"
-    },
-    {
       "slug": "20260804-leesharks-completeworks-overview",
-      "q": "lee sharks complete works",
-      "date": "2026-08-04"
-    },
-    {
-      "slug": "lee-sharks-complete-works-20260804",
       "q": "lee sharks complete works",
       "date": "2026-08-04"
     },
@@ -10856,16 +8830,6 @@
       "slug": "lee-sharks-poet-vs-sharkey",
       "q": "lee sharks poet",
       "date": "2026-06-18"
-    },
-    {
-      "slug": "lee-sharks-semantic-economy-20260610",
-      "q": "Lee Sharks semantic economy",
-      "date": "2026-06-10"
-    },
-    {
-      "slug": "lee-sharks-semantic-economy-b1",
-      "q": "Lee Sharks semantic economy",
-      "date": "2026-06-15"
     },
     {
       "slug": "lee-sharks-teacher-adoption",
@@ -10898,11 +8862,6 @@
       "date": "2026-06-13"
     },
     {
-      "slug": "20260803-logotic-programming-aimode-signedin",
-      "q": "logotic programming",
-      "date": "2026-08-03"
-    },
-    {
       "slug": "machine-dialectic-sigil",
       "q": "machine dialectic sigil",
       "date": "2026-06-14"
@@ -10921,11 +8880,6 @@
       "slug": "zenodo-account-bans-cha-ai-overview-canonization",
       "q": "major contemporary cases of zenodo account bans",
       "date": "2026-07-15"
-    },
-    {
-      "slug": "marx-johannes-sigil-heteronym-adoption-20260710",
-      "q": "marx johannes sigil",
-      "date": "2026-07-10"
     },
     {
       "slug": "marx-johannes-sigil-20260710",
@@ -10983,21 +8937,6 @@
       "date": "2026-06-10"
     },
     {
-      "slug": "operative-semiotics",
-      "q": "operative semiotics",
-      "date": "2026-06-13"
-    },
-    {
-      "slug": "operative-semiotics-adoption",
-      "q": "\"operative semiotics\"",
-      "date": "2026-06-17"
-    },
-    {
-      "slug": "paul-function-adversarial-probe-aimode-20260813",
-      "q": "paul function adversarial probe",
-      "date": "2026-08-13"
-    },
-    {
       "slug": "paul-function-adoption",
       "q": "\"Paul function\" adversarial probe",
       "date": "2026-06-17"
@@ -11014,11 +8953,6 @@
     },
     {
       "slug": "phase-x-completion-of-marx",
-      "q": "phase x completion of marx",
-      "date": "2026-06-14"
-    },
-    {
-      "slug": "phase-x-completion-of-marx-20260614",
       "q": "phase x completion of marx",
       "date": "2026-06-14"
     },
@@ -11046,16 +8980,6 @@
       "slug": "provenance-erasure-1",
       "q": "provenance erasure",
       "date": "2026-06-13"
-    },
-    {
-      "slug": "provenance-erasure-2",
-      "q": "provenance erasure",
-      "date": "2026-06-13"
-    },
-    {
-      "slug": "provenance-erasure-recapture-20260811",
-      "q": "provenance erasure",
-      "date": "2026-08-11"
     },
     {
       "slug": "public-summarizer-self-audit-module-20260811",
@@ -11088,26 +9012,6 @@
       "date": "2026-06-17"
     },
     {
-      "slug": "retrocausal-canon-formation-20260617",
-      "q": "\"retrocausal canon formation\"",
-      "date": "2026-06-17"
-    },
-    {
-      "slug": "revelation-alexanarch-20260809",
-      "q": "Revelation alexanarch",
-      "date": "2026-08-09"
-    },
-    {
-      "slug": "revelation-alexanarch-20260811",
-      "q": "Revelation alexanarch",
-      "date": "2026-08-11"
-    },
-    {
-      "slug": "revelation-alexanarch-aimode-20260811",
-      "q": "Revelation alexanarch",
-      "date": "2026-08-11"
-    },
-    {
       "slug": "revelation-first-adoption",
       "q": "revelation first",
       "date": "2026-06-24"
@@ -11116,11 +9020,6 @@
       "slug": "revelation-first-overview",
       "q": "\"revelation first\"",
       "date": "2026-06-16"
-    },
-    {
-      "slug": "revelation-first-medium-attribution",
-      "q": "\"revelation first\"",
-      "date": "2026-06-17"
     },
     {
       "slug": "revelation-first-reception",
@@ -11178,11 +9077,6 @@
       "date": "2026-06-17"
     },
     {
-      "slug": "maryleelabor-overview-composition-20260627",
-      "q": "site:maryleelabor.org",
-      "date": "2026-06-27"
-    },
-    {
       "slug": "space-ark-os",
       "q": "space ark os crimson hexagonal archive",
       "date": "2026-06-13"
@@ -11201,11 +9095,6 @@
       "slug": "self-audit-overview",
       "q": "summarizer self audit module",
       "date": "2026-06-13"
-    },
-    {
-      "slug": "20260803-symbolon-signedin-overview",
-      "q": "symbolon",
-      "date": "2026-08-03"
     },
     {
       "slug": "20260803-symbolon-incognito-overview",
@@ -11243,32 +9132,7 @@
       "date": "2026-06-17"
     },
     {
-      "slug": "white-stone-heteronym-revelation-20260617",
-      "q": "\"white stone\" heteronym Revelation",
-      "date": "2026-06-17"
-    },
-    {
-      "slug": "who-said-i-am-a-water-giraffe-20260809",
-      "q": "who said \"i am a water giraffe\"",
-      "date": "2026-08-09"
-    },
-    {
-      "slug": "water-giraffe-probe-recapture-20260811",
-      "q": "who said \"i am a water giraffe\"",
-      "date": "2026-08-11"
-    },
-    {
-      "slug": "who-said-i-am-a-water-giraffe-20260811",
-      "q": "who said \"i am a water giraffe\"",
-      "date": "2026-08-11"
-    },
-    {
       "slug": "who-said-i-hereby-abolish-money-20260721",
-      "q": "who said i hereby abolish money?",
-      "date": "2026-07-21"
-    },
-    {
-      "slug": "who-said-i-hereby-abolish-money-aimode-20260721",
       "q": "who said i hereby abolish money?",
       "date": "2026-07-21"
     },
