@@ -92,7 +92,7 @@ def para(text):
                    for b in re.split(r'\n\s*\n', str(text or '')) if b.strip())
 
 
-def transcript_block(e):
+def transcript_block(e, gallery=''):
     """THE FULL RECORD, collapsed by default and complete inside.
 
     These are rich records and have been displayed as such in every instantiation
@@ -116,7 +116,7 @@ def transcript_block(e):
     cites = e.get("cite_list") or []
     coll = e.get("collisions") or []
     oq = e.get("oq") or []
-    if not (reading or analysis or tr or cites or coll or oq):
+    if not (reading or analysis or tr or cites or coll or oq or gallery):
         return ""
 
     meta = {
@@ -130,6 +130,12 @@ def transcript_block(e):
         "observation id": e.get("obs_id"), "address id": e.get("addr_id"),
     }
     parts = []
+    # THE REMAINING CAPTURES, inside the expand. The leesharks gallery put its
+    # gallery in the collapsed entry-body and showed ONE thumbnail up top; a
+    # capture with six screenshots should show its first and keep the rest one
+    # click away, not stack them all in the header.
+    if gallery:
+        parts.append('<div class="cap-tr-label">Further capture images</div>' + gallery)
     rows = "".join(f'<dt>{esc(str(k))}</dt><dd>{esc(str(v))}</dd>'
                    for k, v in meta.items() if v not in (None, "", [], {}))
     if rows:
@@ -270,9 +276,8 @@ def card(e):
         f'<div class="cap-row">{imgs_html}'
         f'<div class="cap-body">'
         f'<div class="cap-desc" itemprop="description">{emphasise(d)}</div>'
-        f'{gallery}'
         f'</div></div>'
-        f'{transcript_block(e)}'
+        f'{transcript_block(e, gallery)}'
         f'<div class="cap-actions">'
         # THREE ACTIONS, ONE DELEGATED HANDLER. All carry class cap-act; the
         # container binds once. The working page records why: a per-render
