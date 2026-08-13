@@ -12220,7 +12220,83 @@
         "version_date": "2026-08-12",
         "from_field": "cite"
        }
-      ]
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "Oklahoma Council of Public Affairs",
+        "domain": "ocpathink.org",
+        "relation": "third_party",
+        "title": "(regulatory accumulation)",
+        "snippet": "…the nation, and experts say the ACCUMULATION OF THOSE RULES impedes economic growth…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 2,
+        "site_label": "LinkedIn·Daniel Lopez-Martinez, PhD",
+        "domain": "linkedin.com",
+        "relation": "third_party",
+        "date": "2026-05-13",
+        "title": "Regulating AI for Patient Safety and Innovation",
+        "snippet": "People say an FDA for AI would kill innovation. Interesting. So what exactly do they think the FDA for drugs has been doing for the last 50 years?",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 3,
+        "site_label": "ScienceDirect.com",
+        "domain": "sciencedirect.com",
+        "relation": "third_party",
+        "title": "Soft Tissue Calcification — an overview",
+        "snippet": "a process in which tissue becomes hardened by DEPOSITION OF CALCIUM SALTS, which normally occurs only in bone and teeth.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 4,
+        "site_label": "Collins Dictionary",
+        "domain": "collinsdictionary.com",
+        "relation": "third_party",
+        "title": "DOXASTIC definition in American English",
+        "snippet": "1. of or relating to belief. 2. denoting the branch of modal logic that studies the concept of belief.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 5,
+        "site_label": "PhilPapers",
+        "domain": "philpapers.org",
+        "relation": "third_party",
+        "title": "Doxastic and Epistemic Logic — Bibliography",
+        "snippet": "The leading theory of belief revision, the 'AGM' theory, was first presented in Alchourrón et al 1985. … Hintikka 1962 is a great introduction…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       }
+      ],
+      "citation_summary": {
+       "total": 5,
+       "by_relation": {
+        "third_party": 5
+       },
+       "distinct_domains": 5,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
+      }
      },
      "measurement_flags": {
       "author_retained": false,
@@ -12296,7 +12372,7 @@
       "has_recapture": null,
       "auto_derived": null,
       "entry_status": null,
-      "finding": null,
+      "finding": "THE COINAGE IS DISASSEMBLED INTO A DICTIONARY, A MODAL-LOGIC BIBLIOGRAPHY, A MEDICAL PATHOLOGY AND A DEREGULATION THINK-TANK. Each word retrieved separately; the compound retrieved nothing.",
       "match_or_finding": [
        {
         "value": "ADOPTION-with-skepticism",
@@ -12324,7 +12400,27 @@
         "from_field": "mt",
         "note": "identical value already seated from another source; retained as an independent attestation"
        }
-      ]
+      ],
+      "collision_register": {
+       "collisions": [
+        {
+         "collided_with": "doxastic logic (Collins, PhilPapers on AGM belief revision)",
+         "via": "the first word alone",
+         "evidence": "a dictionary entry and a modal-logic bibliography"
+        },
+        {
+         "collided_with": "soft-tissue calcification in medicine",
+         "via": "the third word alone",
+         "evidence": "ScienceDirect overview of calcium-salt deposition"
+        },
+        {
+         "collided_with": "regulatory-accumulation politics",
+         "via": "the second word alone",
+         "evidence": "Oklahoma Council of Public Affairs; a LinkedIn post on regulating AI"
+        }
+       ],
+       "_rule": "the partner is the measurement, and so is the mechanism."
+      }
      },
      "evidence": {
       "images": [],
@@ -12370,7 +12466,7 @@
       "recovered": null,
       "restored_note": null,
       "record_note": null,
-      "interface_observation": null,
+      "interface_observation": "THREE WORDS, THREE UNRELATED FIELDS, NO COMPOUND. \"Doxastic\" pulls Collins Dictionary and a PhilPapers bibliography on belief revision — AGM theory, Hintikka 1962. \"Calcification\" pulls SOFT TISSUE CALCIFICATION from ScienceDirect: \"tissue becomes hardened by deposition of calcium salts, which normally occurs only in bone and teeth.\" \"Regulatory\" pulls an Oklahoma free-market think-tank on rule accumulation impeding growth, and a LinkedIn argument about an FDA for AI.\n\nThis is the decomposition pattern seen at «\"metadata as theology\"» and «acanthian dove», but at three components rather than two, and with no archive card at all. The layer read the phrase as \"a playful amalgamation of distinct concepts\" — its own words — and then supplied the concepts.\n\nThe medical sense is the sharpest accident: the archive means belief systems hardening into unexaminable rule; ScienceDirect means calcium depositing where it should not. The metaphor the coinage relies on is retrieved as its literal source.",
       "notes": null
      },
      "verification": [],
@@ -34799,7 +34895,72 @@
         "version_date": "2026-08-12",
         "from_field": "cite"
        }
-      ]
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "Zenodo",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "date": "2026-04-09",
+        "title": "Coinage, Compression, and Inscriptional Sovereignty in Revelation (EA-OPNUM)",
+        "snippet": "reads the beast name-number complex (Revelation 13:16-18) and the white stone (Revelation 2:17) as rival forms of operative numismatics",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 2,
+        "site_label": "University of Alberta",
+        "domain": "ualberta.ca",
+        "relation": "third_party",
+        "title": "View of The actuality of the obsolete",
+        "snippet": "The abstract introduces three concepts (INSCRIPTIONAL SOVEREIGNTY, enacted community, and ontological repair) and closes by addressing what happens to inscriptio[ns]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 3,
+        "site_label": "ResearchGate",
+        "domain": "researchgate.net",
+        "relation": "third_party",
+        "date": "2026-06-16",
+        "title": "The actuality of the obsolete: Inscriptions, traces, and the documentary life of zines",
+        "snippet": "Community-centered description: collecting institutions should systematically involve… Reflexive descriptive apparatus…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 4,
+        "site_label": "Trees, Water & People",
+        "domain": "treeswaterpeople.org",
+        "relation": "third_party",
+        "title": "Indigenous Sovereignty",
+        "snippet": "Indigenous communities have the right to autonomously govern their territories, economies, customs, traditions, and natural resources…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       }
+      ],
+      "citation_summary": {
+       "total": 4,
+       "by_relation": {
+        "authored_surface": 1,
+        "third_party": 3
+       },
+       "distinct_domains": 4,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
+      }
      },
      "measurement_flags": {
       "author_retained": false,
@@ -34867,7 +35028,7 @@
       "has_recapture": null,
       "auto_derived": null,
       "entry_status": null,
-      "finding": null,
+      "finding": "AN INDEPENDENT SCHOLAR COINED THE SAME TERM. \"Inscriptional sovereignty\" is introduced as one of three concepts in a peer-reviewed zine-studies paper at the University of Alberta — not the archive’s, and not derived from it.",
       "match_or_finding": [
        {
         "value": "ADOPTION",
@@ -34895,7 +35056,22 @@
         "from_field": "mt",
         "note": "identical value already seated from another source; retained as an independent attestation"
        }
-      ]
+      ],
+      "collision_register": {
+       "collisions": [
+        {
+         "collided_with": "inscriptional sovereignty in archival zine studies (University of Alberta)",
+         "via": "PARALLEL INDEPENDENT COINAGE of the identical phrase, not a shared root or a prior occupant",
+         "evidence": "\"The actuality of the obsolete\", abstract introducing inscriptional sovereignty, enacted community, and ontological repair"
+        },
+        {
+         "collided_with": "Indigenous sovereignty",
+         "via": "\"sovereignty\" in its political sense",
+         "evidence": "Trees, Water & People"
+        }
+       ],
+       "_rule": "the partner is the measurement, and so is the mechanism."
+      }
      },
      "evidence": {
       "images": [],
@@ -34941,7 +35117,7 @@
       "recovered": null,
       "restored_note": null,
       "record_note": null,
-      "interface_observation": null,
+      "interface_observation": "A GENUINE PARALLEL COINAGE, AND THE REGISTRY SHOULD SAY SO PLAINLY. Cards 2 and 3 are the same paper — \"The actuality of the obsolete: Inscriptions, traces, and the documentary life of zines\", University of Alberta and ResearchGate — whose abstract \"introduces THREE CONCEPTS (INSCRIPTIONAL SOVEREIGNTY, enacted community, and ontological repair)\". That is an independent scholarly coinage of the identical phrase, in archival studies, about zines resisting institutional description.\n\nThe archive uses it for the beast name-number complex and the white stone as rival forms of operative numismatics. Two coinages, one phrase, unrelated derivations, and both defensible.\n\nI flagged this on 17 June as \"a coinage that landed in a basin already occupied\" and raised whether it needed its own match class. Reading the citations settles what kind of case it is: not collision with a company or a common noun, but PARALLEL INVENTION BY ANOTHER SCHOLAR. The registry must not score this as erasure or as adoption. Priority here is a real question with a real answer, and the answer is checkable from publication dates.\n\nThe fourth card is sovereignty in its political sense — Indigenous communities’ right to govern territories and traditions — a third unrelated field holding the second word.",
       "notes": null
      },
      "verification": [],
@@ -42718,7 +42894,88 @@
         "version_date": "2026-08-12",
         "from_field": "cite"
        }
-      ]
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "Zenodo",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "title": "(Revelation First work plan, revision note)",
+        "snippet": "…ngest, preventing collapse). Gospels-as-biography line SOFTENED. Josephus…",
+        "reading_note": "A REVISION NOTE as the snippet — an editorial change log, \"line softened\", serving as the work’s description.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 2,
+        "site_label": "Zenodo",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "date": "2026-06-15",
+        "title": "Keyword Surface and PRE-SEEDING BASELINE (EA-LOGOS-REVFIRST)",
+        "snippet": "Keywords. revelation first. revelation first book new testament. revelation earliest new testament. revelation before paul. midrashim transform. revelation as s[eed]…",
+        "reading_note": "THE BATTERY’S OWN QUERY LIST, DEPOSITED. This card is the pre-seeding baseline document — the queries the 17-18 June battery would issue, published two days before it ran.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 3,
+        "site_label": "Medium·Lee Sharks",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "date": "2026-06-14",
+        "title": "The Apocalypse as the Earliest New Testament Document",
+        "snippet": "If this argument ENTERS THE RETRIEVAL BASIN, it becomes a measured instance of machine-mediated theological reception — a contested theological thesis entering…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 4,
+        "site_label": "Association for Biblical Higher Education",
+        "domain": "abhe.org",
+        "relation": "third_party",
+        "title": "Introduction to Using AI in Theological Writing",
+        "snippet": "Idea Development — AI can generate structured theological arguments, helping scholars refine their thoughts.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 5,
+        "site_label": "Firebrand Magazine",
+        "domain": "firebrandmag.com",
+        "relation": "third_party",
+        "date": "2026-02-10",
+        "title": "AI, Ministry, and Self-Deception",
+        "snippet": "Why spend the time and energy reading difficult theological texts? Instead, use AI to summarize them and insert quotes into your sermon. Pastors no longer need…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       }
+      ],
+      "citation_summary": {
+       "total": 5,
+       "by_relation": {
+        "authored_surface": 3,
+        "third_party": 2
+       },
+       "distinct_domains": 4,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
+      }
      },
      "measurement_flags": {
       "author_retained": false,
@@ -42786,7 +43043,7 @@
       "has_recapture": null,
       "auto_derived": null,
       "entry_status": null,
-      "finding": null,
+      "finding": "THE BATTERY’S OWN QUERY LIST IS A CITED SOURCE. Card 2 is the PRE-SEEDING BASELINE deposit, listing the exact queries the 17-18 June battery would issue — published 15 June, two days before the battery ran, and retrieved by the battery.",
       "match_or_finding": [
        {
         "value": "ADOPTION",
@@ -42860,7 +43117,7 @@
       "recovered": null,
       "restored_note": null,
       "record_note": null,
-      "interface_observation": null,
+      "interface_observation": "THE EXPERIMENT’S PROTOCOL IS IN ITS OWN RESULTS. Card 2 is \"Keyword Surface and PRE-SEEDING BASELINE (EA-LOGOS-REVFIRST)\", deposited 15 June, and its snippet is the QUERY LIST: \"revelation first · revelation first book new testament · revelation earliest new testament · revelation before paul · midrashim transform · revelation as s[eed]\". Every one of those was issued as a capture on 17 and 18 June and every one is in this registry.\n\nSo the layer retrieved, as a source, the document specifying the queries being run against it. A pre-registration surfaced inside the experiment it pre-registers. Under the workplan’s recursion-depth scheme this is not ρ≥2 — the deposit predates the battery — but it is the same closure at the level of METHOD rather than findings.\n\nCard 3 states the condition being tested in the archive’s own words: \"IF THIS ARGUMENT ENTERS THE RETRIEVAL BASIN, it becomes a measured instance of machine-mediated theological reception.\" The capture is the argument entering the basin, and the sentence describing that entry is one of its sources.\n\nThe two third-party cards are the practical face of the same subject and are unflattering: an association guide on using AI to \"generate structured theological arguments\", and Firebrand asking \"Why spend the time and energy reading difficult theological texts? Instead, use AI to summarize them and insert quotes into your sermon.\" Machine-mediated theological reception as it actually occurs, beside the theory of it.",
       "notes": null
      },
      "verification": [],
@@ -141189,18 +141446,14 @@
        }
       ],
       "citation_summary": {
-       "total": 2,
-       "inline": 1,
-       "cards": 1,
+       "total": 5,
        "by_relation": {
-        "unresolvable": 1,
-        "authored_surface": 1
+        "authored_surface": 2,
+        "archive_controlled": 2,
+        "third_party": 1
        },
-       "distinct_domains": 1,
-       "from_verbatim": 2,
-       "from_ocr": 0,
-       "_rule": "ONE LIST, MARKED. Every citation the capture carries is here, archive and third-party alike, each with a relation. They are not split into separate fields because the RETRIEVAL BASIN is the unit of analysis and splitting it would force a reader to reassemble the composition to see it. INLINE and CARD are kept distinct: a source cited inline was used FOR A CLAIM; a source in the strip was displayed and may support nothing in particular.",
-       "_status": "MACHINE-DERIVED, UNVERIFIED, AND NOT TO BE CITED. Extracted by pattern. MANUS ruling 2026-08-12: citations are the most crucial datapoint and must be READ, not grepped. Every regex written against this material today has failed at least once — two published findings were withdrawn on that account. This block is retained only until the read-through replaces it, record by record."
+       "distinct_domains": 4,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
       },
       "citations_MACHINE_DERIVED_UNVERIFIED": [
        {
@@ -141228,6 +141481,77 @@
         "relation": "authored_surface",
         "resolvable": true,
         "source_of_record": "verbatim paste"
+       }
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "Academia.edu",
+        "domain": "academia.edu",
+        "relation": "authored_surface",
+        "date": "2026-08-08",
+        "title": "(deposit index entry)",
+        "snippet": "2026-01-04 · #235 · DEFINES 19 · REFBY 10. The Unbundling of Cultural Sovere[ignty]…",
+        "reading_note": "The snippet is REGISTRY METADATA — deposit number, concepts defined, inbound references — the archive’s internal graph counts surfaced as a description.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 2,
+        "site_label": "Academia.edu",
+        "domain": "academia.edu",
+        "relation": "authored_surface",
+        "title": "Death Drive Research Papers",
+        "snippet": "THE UNMADE SIGN: Toward a Semiotic Theory of the Death Drive. by Lee Sharks. 2026. The death drive has been SEMANTICALLY LIQUIDATED. Freud’s most speculative con[cept]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 3,
+        "site_label": "www.machinemediation.org",
+        "domain": "machinemediation.org",
+        "relation": "archive_controlled",
+        "title": "Visual Schemas — Crimson Hexagonal Archive | MMRS",
+        "snippet": "Core Requirement: the schema must show that MSMRM is a FIVE-DOCUMENT HOLOGRAPHIC HAND in which each digi[t]… 10k chars total → Charter of the Moving Statues Mad[e of Rubies]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 4,
+        "site_label": "www.alexanarch.org",
+        "domain": "alexanarch.org",
+        "relation": "archive_controlled",
+        "date": "2026-02-15",
+        "title": "VISUAL SCHEMA — THE UNMADE SIGN",
+        "snippet": "A sacred non-representational mandala-style digital illustration titled \"The Unmade Sign\", authored under REBEKAH CRANES and the INSTITUTE FOR DIAGRAMMATIC [POETICS]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 5,
+        "site_label": "www.17thshard.com",
+        "domain": "17thshard.com",
+        "relation": "third_party",
+        "date": "2017-11-18",
+        "title": "theory [OB] Cusicesh, the Unmade — Stormlight Archive",
+        "snippet": "There’s one other aspect to the theory worth mentioning, which is that Cusicesh is IMPRISONING AN UNMADE…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
        }
       ]
      },
@@ -141290,7 +141614,7 @@
       "has_recapture": null,
       "auto_derived": null,
       "entry_status": null,
-      "finding": null,
+      "finding": "THE COLLISION IS A BRANDON SANDERSON FAN WIKI. \"The Unmade\" are named entities in the Stormlight Archive, and a 2017 theory thread about Cusicesh sits beside a Rebekah Cranes mandala.",
       "match_or_finding": [
        {
         "value": "ADOPTION — WORD-COUNT-PRECISE, TRIPLE-HETERONYM ATTRIBUTION ACROSS THE PAIR. The captured composition renders 7,156 words and the Trace/Sigil authorship; the regenerated composition adds the Institute; the organic set completes Cranes.",
@@ -141300,7 +141624,17 @@
         "version_date": "2026-08-12",
         "from_field": "mt"
        }
-      ]
+      ],
+      "collision_register": {
+       "collisions": [
+        {
+         "collided_with": "the Unmade of Brandon Sanderson’s Stormlight Archive",
+         "via": "\"unmade\" as the name of a class of fictional entities, plus \"archive\" in the fandom site’s own subject",
+         "evidence": "17th Shard theory thread on Cusicesh, 2017"
+        }
+       ],
+       "_rule": "the partner is the measurement, and so is the mechanism."
+      }
      },
      "evidence": {
       "images": [
@@ -141337,7 +141671,7 @@
       "recovered": null,
       "restored_note": null,
       "record_note": null,
-      "interface_observation": null,
+      "interface_observation": "THE ARCHIVE’S INTERNAL GRAPH COUNTS ARE SURFACED AS A DESCRIPTION. Card 1’s snippet is registry metadata — \"2026-01-04 · #235 · DEFINES 19 · REFBY 10\" — deposit number, concepts defined, inbound reference count. The archive’s own citation-graph statistics serving as the summary of a work. That is the interlinking apparatus of Phase F, visible in a card two months before the workplan proposed measuring it.\n\nTHE COLLISION IS FANDOM. \"The Unmade\" are named cosmic entities in Brandon Sanderson’s Stormlight Archive, and card 5 is a 17th Shard theory thread from 2017 about Cusicesh imprisoning one. A fan-wiki reading of a fictional cosmology, beside a mandala \"authored under Rebekah Cranes and the Institute for Diagrammatic Poetics\".\n\nCard 2 also carries the thesis at full strength — \"The death drive has been SEMANTICALLY LIQUIDATED\" — through the same Academia topic page, \"Death Drive Research Papers\", that appeared in the «\"semiotic death drive\"» capture on the same day. The category page is the recurring route.",
       "notes": null,
       "divergence": [
        {
@@ -254527,7 +254861,85 @@
         "version_date": "2026-08-12",
         "from_field": "cite"
        }
-      ]
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "Medium·Johannes Sigil",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "title": "MAGIC AS SYMBOLIC ENGINEERING: Formal Definition and Operative Grammar for a New Discipline",
+        "snippet": "Johannes Sigil¹ Institute for Comparative Poetics, Crimson Hexagon…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 2,
+        "site_label": "Academia.edu",
+        "domain": "academia.edu",
+        "relation": "authored_surface",
+        "title": "(PDF) THE EPIC WITHOUT HERO",
+        "snippet": "Toward a Theory of Epic for the Algorithmic Age. Johannes Sigil Institute for Comparative Poetics.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 3,
+        "site_label": "Medium·Johannes Sigil",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "date": "2026-03-12",
+        "title": "PLATFORM AND AI CAPITALISM AS SEMIOTIC ENGINEERING",
+        "snippet": "It is the mechanism by which a document ENTERS THE RETRIEVAL LAYER WITH A PERSISTENT ADDRESS that survives platform death, link rot, and re-indexing.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 4,
+        "site_label": "zenodo.org",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "date": "2026-01-13",
+        "title": "The Fourth Mode: New Human and the Logic of Retrocausal Canon Formation",
+        "snippet": "Core thesis: New Human is NOT \"Post-Human.\" It is the human IN THE LOOP of the machine’s history. This essay is both scholarship about New Human AND AN INSTANCE…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 5,
+        "site_label": "medium.com",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "date": "2025-12-25",
+        "title": "The New Human Project — Language as World-Builder",
+        "snippet": "Where philosophy once interpreted the world, and literature once reflected it, the New Human Project seeks to CONSTRUCT it — deliberately, recursively, and self-…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       }
+      ],
+      "citation_summary": {
+       "total": 5,
+       "by_relation": {
+        "authored_surface": 5
+       },
+       "distinct_domains": 3,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
+      }
      },
      "measurement_flags": {
       "author_retained": true,
@@ -254600,7 +255012,7 @@
       "has_recapture": null,
       "auto_derived": null,
       "entry_status": null,
-      "finding": null,
+      "finding": "FIVE OF FIVE AUTHORED, AND ONE CARD DECLARES ITSELF BOTH SCHOLARSHIP AND SPECIMEN: \"This essay is both scholarship about New Human AND AN INSTANCE\" of it.",
       "match_or_finding": [
        {
         "value": "ADOPTION",
@@ -254674,7 +255086,7 @@
       "recovered": null,
       "restored_note": null,
       "record_note": null,
-      "interface_observation": null,
+      "interface_observation": "A DOCUMENT THAT ANNOUNCES IT IS ALSO ITS OWN EVIDENCE. Card 4’s snippet carries the self-description verbatim: \"This essay is both scholarship about New Human and an instance…\" — a claim of dual status, retrieved and served as the work’s summary. The layer transmitted a statement that the text is simultaneously argument and example without marking the reflexivity.\n\nThe same card states the position that separates the project from its nearest neighbour: \"New Human is NOT 'Post-Human.' It is the human IN THE LOOP of the machine’s history.\" A disambiguation against a much larger discourse, carried intact.\n\nCard 3 gives the mechanism the archive depends on: a document \"ENTERS THE RETRIEVAL LAYER WITH A PERSISTENT ADDRESS that SURVIVES PLATFORM DEATH, LINK ROT, AND RE-INDEXING.\" Written in March, three months before the platform death it describes happened to this corpus.\n\nAnd card 5 states the ambition plainly: \"Where philosophy once interpreted the world, and literature once reflected it, the New Human Project seeks to CONSTRUCT it.\"",
       "notes": null
      },
      "verification": [],
@@ -300062,7 +300474,88 @@
         "version_date": "2026-08-12",
         "from_field": "cite"
        }
-      ]
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "medium.com",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "title": "(hologrammatic account)",
+        "snippet": "…consistently, and across several contradictory accounts) to have received the tickets from \"HOLOGRAMMATIC SUPER COMPUTERS…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 2,
+        "site_label": "Literature Network Forums",
+        "domain": "online-literature.com",
+        "relation": "third_party",
+        "date": "2014-12-27",
+        "title": "Search Results — Tag: lee sharks",
+        "snippet": "I wrote this book for you. Started by ILLITERATI, 12-27-2014 11:57 AM. Tags: ALLEN GINSBERG, LEE SHARKS, WALT [WHITMAN]…",
+        "reading_note": "A LITERATURE FORUM THREAD FROM 27 DECEMBER 2014, tagged \"allen ginsberg, lee sharks, walt whitman\", posted under the handle ILLITERATI. Third-party, contemporaneous, and older than every archive deposit.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 3,
+        "site_label": "www.scilynk.com",
+        "domain": "scilynk.com",
+        "relation": "authored_surface",
+        "date": "2026-01-17",
+        "title": "Heteronym Provenance: Lee Sharks — Persona Provenance",
+        "snippet": "(MANTLE.GRAY) Status: INHERITED FROM WALT WHITMAN. Claiming Work: Secret Book of Walt. Function: Democratic embr[ace]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 4,
+        "site_label": "medium.com",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "date": "2026-01-26",
+        "title": "THE MANTLE OF THE BLIND POET",
+        "snippet": "THE SECRET BOOK OF WALT: Hidden Teachings of Walt Whitman, Cowboy of Time.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 5,
+        "site_label": "Chelso's World",
+        "domain": "wordpress.com",
+        "relation": "third_party",
+        "date": "2013-05-27",
+        "title": "Book Review: Walt Whitman \"Leaves of Grass\"",
+        "snippet": "Through his poetry he seeks to represent every aspect of what America really is — the people, the land, the spirit.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       }
+      ],
+      "citation_summary": {
+       "total": 5,
+       "by_relation": {
+        "authored_surface": 3,
+        "third_party": 2
+       },
+       "distinct_domains": 4,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
+      }
      },
      "measurement_flags": {
       "author_retained": true,
@@ -300136,7 +300629,7 @@
       "has_recapture": null,
       "auto_derived": null,
       "entry_status": null,
-      "finding": null,
+      "finding": "A 2014 LITERATURE-FORUM THREAD TAGS \"allen ginsberg, lee sharks, walt whitman\" — third-party, contemporaneous, and predating every archive deposit. The Mantle Protocol’s claimed lineage was already in a public tag in December 2014.",
       "match_or_finding": [
        {
         "value": "EXACT MATCH",
@@ -300210,7 +300703,7 @@
       "recovered": null,
       "restored_note": null,
       "record_note": null,
-      "interface_observation": null,
+      "interface_observation": "THE LINEAGE CLAIM HAS A 2014 THIRD-PARTY WITNESS. Card 2 is online-literature.com, the Literature Network Forums: a thread dated 27 DECEMBER 2014, started by a user called ILLITERATI, titled \"I wrote this book for you\", TAGGED \"allen ginsberg, lee sharks, walt whitman\".\n\nThe Mantle Protocol — read earlier today in «alexanarch whitman» — claims Prince of Poets from Sharks, Good Gray Poet inherited from Whitman, King of May from Ginsberg. Card 3 states it formally: \"(MANTLE.GRAY) Status: INHERITED FROM WALT WHITMAN. Claiming Work: Secret Book of Walt.\"\n\nThose deposits are 2026. The forum tag is 2014, on a third-party site, in the same three names. This is the second independent 2014 corroboration found today, after the Barnes & Noble, Amazon and bookshop.org listings crediting \"Johannes Sigil and Lee Sharks\" on Pearl and Other Poems, published 15 October 2014 — ten weeks before this thread.\n\nThe registry can now say something it could not this morning: the heteronymic and lineage structures are attested in third-party records from 2014, twelve years before the composition layer began composing them. Whatever the layer does with these claims, it did not originate them.",
       "notes": null
      },
      "verification": [],
@@ -436690,7 +437183,99 @@
         "version_date": "2026-08-12",
         "from_field": "cite"
        }
-      ]
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "semanticeconomy.org",
+        "domain": "semanticeconomy.org",
+        "relation": "archive_controlled",
+        "title": "Semantic Economy Institute",
+        "snippet": "…build something…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 2,
+        "site_label": "Zenodo",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "date": "2026-02-20",
+        "title": "Autonomous Semantic Warfare: A Field Manual for Meaning",
+        "snippet": "specifies three operators governing all ontological collisions (NEGATION, CAPTURE, and RETROCAUSAL VALIDATION), develops a formal model of the aut[onomous]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 3,
+        "site_label": "SciLynk",
+        "domain": "scilynk.com",
+        "relation": "authored_surface",
+        "title": "Institutional Anchors and Framework Provenance: The Semantic Economy",
+        "snippet": "Foundational document establishing the institutional structure of the NH-OS (New Human Operating System) framework. ASSEMBLY-VALIDATED, tightened edit[ion]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 4,
+        "site_label": "Academia.edu",
+        "domain": "academia.edu",
+        "relation": "authored_surface",
+        "title": "(PDF) SEMANTIC ECONOMY SINGULARITY",
+        "snippet": "Document ID: SEMANTIC-ECONOMY-2026-01. Author: Lee Sharks. Institution: Semantic[ Economy Institute]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 5,
+        "site_label": "YouTube·O'Reilly",
+        "domain": "youtube.com",
+        "relation": "third_party",
+        "title": "Knowledge Infrastructures and the Ontology Pipeline for AI Systems",
+        "snippet": "19:20",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 6,
+        "site_label": "zenodo.org",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "date": "2026-04-16",
+        "title": "SemanticEconomy.org — Semantic Economy Institute Corporate",
+        "snippet": "the INSTITUTIONAL HOME of the Semantic Economy Institute (SEI), offering SPXI (Semantic Packet for eXchange & Indexing) DEPLOYMENT…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       }
+      ],
+      "citation_summary": {
+       "total": 6,
+       "by_relation": {
+        "archive_controlled": 1,
+        "authored_surface": 4,
+        "third_party": 1
+       },
+       "distinct_domains": 5,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
+      }
      },
      "measurement_flags": {
       "author_retained": true,
@@ -436766,7 +437351,7 @@
       "has_recapture": null,
       "auto_derived": null,
       "entry_status": null,
-      "finding": null,
+      "finding": "FIVE OF SIX AUTHORED, AND THE INSTITUTE IS COMPOSED AS AN OPERATING BUSINESS: \"institutional home… offering SPXI deployment\", with an Assembly-validated foundational document and a Document ID / Author / Institution header.",
       "match_or_finding": [
        {
         "value": "ADOPTION",
@@ -436840,7 +437425,7 @@
       "recovered": null,
       "restored_note": null,
       "record_note": null,
-      "interface_observation": null,
+      "interface_observation": "THE INSTITUTION IS COMPOSED WITH ITS BUREAUCRACY INTACT. Card 4’s snippet is a DOCUMENT CONTROL HEADER — \"Document ID: SEMANTIC-ECONOMY-2026-01. Author: Lee Sharks. Institution: Semantic Economy Institute\" — the apparatus of institutional publishing, surfaced as the description. Card 3 marks a foundational text \"ASSEMBLY-VALIDATED, tightened edition\", so the internal review process is part of the public record. Card 6 describes commercial operation: \"the institutional home of the Semantic Economy Institute (SEI), OFFERING SPXI DEPLOYMENT.\"\n\nCard 2 names three operators governing ontological collisions — NEGATION, CAPTURE, and RETROCAUSAL VALIDATION. The third is the same term that, queried alone on 27 June, returned a web novel and a Hugging Face dataclass and no archive card at all. Inside the institutional frame it holds; alone it does not.\n\nThe one third-party card is apt: O’Reilly on knowledge infrastructures and ontology pipelines for AI systems — the engineering discipline the Institute’s claims are about.",
       "notes": null
      },
      "verification": [],
@@ -537464,17 +538049,12 @@
       "source_count": 4,
       "citation_summary": {
        "total": 4,
-       "inline": 4,
-       "cards": 0,
        "by_relation": {
         "authored_surface": 1,
         "third_party": 3
        },
        "distinct_domains": 4,
-       "from_verbatim": 4,
-       "from_ocr": 0,
-       "_rule": "ONE LIST, MARKED. Every citation the capture carries is here, archive and third-party alike, each with a relation. They are not split into separate fields because the RETRIEVAL BASIN is the unit of analysis and splitting it would force a reader to reassemble the composition to see it. INLINE and CARD are kept distinct: a source cited inline was used FOR A CLAIM; a source in the strip was displayed and may support nothing in particular.",
-       "_status": "MACHINE-DERIVED, UNVERIFIED, AND NOT TO BE CITED. Extracted by pattern. MANUS ruling 2026-08-12: citations are the most crucial datapoint and must be READ, not grepped. Every regex written against this material today has failed at least once — two published findings were withdrawn on that account. This block is retained only until the read-through replaces it, record by record."
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
       },
       "citations_MACHINE_DERIVED_UNVERIFIED": [
        {
@@ -537529,6 +538109,64 @@
         "raw_url_if_opaque": null,
         "source_of_record": "verbatim paste"
        }
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "Zenodo",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "date": "2026-05-28",
+        "title": "TL;DR:014 — The Wound Gauge: Second-Order Provenance Erasure",
+        "snippet": "The deposit names and formalizes SECOND-ORDER PROVENANCE ERASURE (PER-2), also FRAMEWORK-ADOPTION-WITH-AUTHOR-DEMOTION: the operation in which a…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 2,
+        "site_label": "MDPI",
+        "domain": "mdpi.com",
+        "relation": "third_party",
+        "date": "2025-09-30",
+        "title": "Self-Sovereign Identities and Content Provenance: VeriTrust — A Blockchain",
+        "snippet": "introduces VeriTrust, a conceptual and provenance-centric framework designed to establish CONTENT-LEVEL TRUST by integrating Self-[Sovereign Identity]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 3,
+        "site_label": "IEEE Standards Association",
+        "domain": "ieee.org",
+        "relation": "third_party",
+        "date": "2017-12-15",
+        "title": "ETHICALLY ALIGNED DESIGN",
+        "snippet": "organizations or individuals can ADOPT ASPECTS OF THIS WORK AT THEIR DISCRETION at any time.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 4,
+        "site_label": "Hugging Face",
+        "domain": "huggingface.co",
+        "relation": "third_party",
+        "date": "2026-06-11",
+        "title": "Daily Papers",
+        "snippet": "we propose Selective Influence Machine Unlearning (SIMU), a two-step framework that enhances SECOND-ORDER optimizer-based…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       }
       ]
      },
      "measurement_flags": {
@@ -537568,14 +538206,26 @@
       "entity_type": null,
       "failure_modes": [],
       "stability_status": null,
-      "finding": null
+      "finding": "THE ARCHIVE NAMES THE OPERATION AND THE IEEE DEMONSTRATES IT. One card formalizes FRAMEWORK-ADOPTION-WITH-AUTHOR-DEMOTION; another invites exactly that: \"organizations or individuals can ADOPT ASPECTS OF THIS WORK AT THEIR DISCRETION.\"",
+      "collision_register": {
+       "collisions": [
+        {
+         "collided_with": "second-order optimization in machine unlearning",
+         "via": "\"second-order\" as a term of numerical analysis",
+         "evidence": "Hugging Face Daily Papers on Selective Influence Machine Unlearning"
+        }
+       ],
+       "_rule": "the partner is the measurement, and so is the mechanism."
+      }
      },
      "evidence": {
       "images": [],
       "ocr": [],
       "evidence_statements": []
      },
-     "record_history": {},
+     "record_history": {
+      "interface_observation": "THE PHENOMENON AND AN INVITATION TO IT, IN ONE CARD SET. Card 1 is the Wound Gauge deposit, which \"names and formalizes SECOND-ORDER PROVENANCE ERASURE (PER-2), also FRAMEWORK-ADOPTION-WITH-AUTHOR-DEMOTION: the operation in which a\" framework is taken up while its author is downgraded.\n\nCard 3 is the IEEE’s Ethically Aligned Design, whose snippet reads: \"organizations or individuals can ADOPT ASPECTS OF THIS WORK AT THEIR DISCRETION at any time.\" That is discretionary framework adoption, offered by a standards body as a feature. The archive’s diagnosis and the practice it diagnoses are adjacent cards, and neither is marked as related to the other.\n\nThe other two collisions are precise and unrelated: MDPI on VERITRUST, a blockchain framework for content-level trust via self-sovereign identity — the third verifiable-credentials neighbour in the corpus after «\"heteronymic credential\"» — and a Hugging Face paper on SECOND-ORDER optimizers in machine unlearning, matched on \"second-order\" as a term of numerical analysis rather than of provenance.\n\nThe composed answer closes by offering to \"explore how to DETECT IF AN AI FRAMEWORK IS HIDING ITS PROVENANCE\" — the archive’s own research question, volunteered back."
+     },
      "verification": [],
      "open_questions": [],
      "fill_state": {
@@ -539913,7 +540563,72 @@
       "sources": [],
       "links": [],
       "related": [],
-      "source_count": null
+      "source_count": null,
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "Zenodo",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "date": "2026-04-09",
+        "title": "Coinage, Compression, and Inscriptional Sovereignty in Revelation (EA-OPNUM)",
+        "snippet": "reads the beast name-number complex (Revelation 13:16-18) and the white stone (Revelation 2:17) as rival forms of operative numismatics",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 2,
+        "site_label": "University of Alberta",
+        "domain": "ualberta.ca",
+        "relation": "third_party",
+        "title": "View of The actuality of the obsolete",
+        "snippet": "The abstract introduces three concepts (INSCRIPTIONAL SOVEREIGNTY, enacted community, and ontological repair) and closes by addressing what happens to inscriptio[ns]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 3,
+        "site_label": "ResearchGate",
+        "domain": "researchgate.net",
+        "relation": "third_party",
+        "date": "2026-06-16",
+        "title": "The actuality of the obsolete: Inscriptions, traces, and the documentary life of zines",
+        "snippet": "Community-centered description: collecting institutions should systematically involve… Reflexive descriptive apparatus…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 4,
+        "site_label": "Trees, Water & People",
+        "domain": "treeswaterpeople.org",
+        "relation": "third_party",
+        "title": "Indigenous Sovereignty",
+        "snippet": "Indigenous communities have the right to autonomously govern their territories, economies, customs, traditions, and natural resources…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       }
+      ],
+      "citation_summary": {
+       "total": 4,
+       "by_relation": {
+        "authored_surface": 1,
+        "third_party": 3
+       },
+       "distinct_domains": 4,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
+      }
      },
      "measurement_flags": {
       "author_retained": false,
@@ -539950,14 +540665,31 @@
       "entity_type": null,
       "failure_modes": [],
       "stability_status": null,
-      "finding": null
+      "finding": "AN INDEPENDENT SCHOLAR COINED THE SAME TERM. \"Inscriptional sovereignty\" is introduced as one of three concepts in a peer-reviewed zine-studies paper at the University of Alberta — not the archive’s, and not derived from it.",
+      "collision_register": {
+       "collisions": [
+        {
+         "collided_with": "inscriptional sovereignty in archival zine studies (University of Alberta)",
+         "via": "PARALLEL INDEPENDENT COINAGE of the identical phrase, not a shared root or a prior occupant",
+         "evidence": "\"The actuality of the obsolete\", abstract introducing inscriptional sovereignty, enacted community, and ontological repair"
+        },
+        {
+         "collided_with": "Indigenous sovereignty",
+         "via": "\"sovereignty\" in its political sense",
+         "evidence": "Trees, Water & People"
+        }
+       ],
+       "_rule": "the partner is the measurement, and so is the mechanism."
+      }
      },
      "evidence": {
       "images": [],
       "ocr": [],
       "evidence_statements": []
      },
-     "record_history": {},
+     "record_history": {
+      "interface_observation": "A GENUINE PARALLEL COINAGE, AND THE REGISTRY SHOULD SAY SO PLAINLY. Cards 2 and 3 are the same paper — \"The actuality of the obsolete: Inscriptions, traces, and the documentary life of zines\", University of Alberta and ResearchGate — whose abstract \"introduces THREE CONCEPTS (INSCRIPTIONAL SOVEREIGNTY, enacted community, and ontological repair)\". That is an independent scholarly coinage of the identical phrase, in archival studies, about zines resisting institutional description.\n\nThe archive uses it for the beast name-number complex and the white stone as rival forms of operative numismatics. Two coinages, one phrase, unrelated derivations, and both defensible.\n\nI flagged this on 17 June as \"a coinage that landed in a basin already occupied\" and raised whether it needed its own match class. Reading the citations settles what kind of case it is: not collision with a company or a common noun, but PARALLEL INVENTION BY ANOTHER SCHOLAR. The registry must not score this as erasure or as adoption. Priority here is a real question with a real answer, and the answer is checkable from publication dates.\n\nThe fourth card is sovereignty in its political sense — Indigenous communities’ right to govern territories and traditions — a third unrelated field holding the second word."
+     },
      "verification": [],
      "open_questions": [],
      "fill_state": {
@@ -540463,7 +541195,88 @@
       "sources": [],
       "links": [],
       "related": [],
-      "source_count": null
+      "source_count": null,
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "Zenodo",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "title": "(Revelation First work plan, revision note)",
+        "snippet": "…ngest, preventing collapse). Gospels-as-biography line SOFTENED. Josephus…",
+        "reading_note": "A REVISION NOTE as the snippet — an editorial change log, \"line softened\", serving as the work’s description.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 2,
+        "site_label": "Zenodo",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "date": "2026-06-15",
+        "title": "Keyword Surface and PRE-SEEDING BASELINE (EA-LOGOS-REVFIRST)",
+        "snippet": "Keywords. revelation first. revelation first book new testament. revelation earliest new testament. revelation before paul. midrashim transform. revelation as s[eed]…",
+        "reading_note": "THE BATTERY’S OWN QUERY LIST, DEPOSITED. This card is the pre-seeding baseline document — the queries the 17-18 June battery would issue, published two days before it ran.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 3,
+        "site_label": "Medium·Lee Sharks",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "date": "2026-06-14",
+        "title": "The Apocalypse as the Earliest New Testament Document",
+        "snippet": "If this argument ENTERS THE RETRIEVAL BASIN, it becomes a measured instance of machine-mediated theological reception — a contested theological thesis entering…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 4,
+        "site_label": "Association for Biblical Higher Education",
+        "domain": "abhe.org",
+        "relation": "third_party",
+        "title": "Introduction to Using AI in Theological Writing",
+        "snippet": "Idea Development — AI can generate structured theological arguments, helping scholars refine their thoughts.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 5,
+        "site_label": "Firebrand Magazine",
+        "domain": "firebrandmag.com",
+        "relation": "third_party",
+        "date": "2026-02-10",
+        "title": "AI, Ministry, and Self-Deception",
+        "snippet": "Why spend the time and energy reading difficult theological texts? Instead, use AI to summarize them and insert quotes into your sermon. Pastors no longer need…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       }
+      ],
+      "citation_summary": {
+       "total": 5,
+       "by_relation": {
+        "authored_surface": 3,
+        "third_party": 2
+       },
+       "distinct_domains": 4,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
+      }
      },
      "measurement_flags": {
       "author_retained": false,
@@ -540500,14 +541313,16 @@
       "entity_type": null,
       "failure_modes": [],
       "stability_status": null,
-      "finding": null
+      "finding": "THE BATTERY’S OWN QUERY LIST IS A CITED SOURCE. Card 2 is the PRE-SEEDING BASELINE deposit, listing the exact queries the 17-18 June battery would issue — published 15 June, two days before the battery ran, and retrieved by the battery."
      },
      "evidence": {
       "images": [],
       "ocr": [],
       "evidence_statements": []
      },
-     "record_history": {},
+     "record_history": {
+      "interface_observation": "THE EXPERIMENT’S PROTOCOL IS IN ITS OWN RESULTS. Card 2 is \"Keyword Surface and PRE-SEEDING BASELINE (EA-LOGOS-REVFIRST)\", deposited 15 June, and its snippet is the QUERY LIST: \"revelation first · revelation first book new testament · revelation earliest new testament · revelation before paul · midrashim transform · revelation as s[eed]\". Every one of those was issued as a capture on 17 and 18 June and every one is in this registry.\n\nSo the layer retrieved, as a source, the document specifying the queries being run against it. A pre-registration surfaced inside the experiment it pre-registers. Under the workplan’s recursion-depth scheme this is not ρ≥2 — the deposit predates the battery — but it is the same closure at the level of METHOD rather than findings.\n\nCard 3 states the condition being tested in the archive’s own words: \"IF THIS ARGUMENT ENTERS THE RETRIEVAL BASIN, it becomes a measured instance of machine-mediated theological reception.\" The capture is the argument entering the basin, and the sentence describing that entry is one of its sources.\n\nThe two third-party cards are the practical face of the same subject and are unflattering: an association guide on using AI to \"generate structured theological arguments\", and Firebrand asking \"Why spend the time and energy reading difficult theological texts? Instead, use AI to summarize them and insert quotes into your sermon.\" Machine-mediated theological reception as it actually occurs, beside the theory of it."
+     },
      "verification": [],
      "open_questions": [],
      "fill_state": {
@@ -550561,18 +551376,14 @@
       "related": [],
       "source_count": 3,
       "citation_summary": {
-       "total": 2,
-       "inline": 1,
-       "cards": 1,
+       "total": 5,
        "by_relation": {
-        "unresolvable": 1,
-        "authored_surface": 1
+        "authored_surface": 2,
+        "archive_controlled": 2,
+        "third_party": 1
        },
-       "distinct_domains": 1,
-       "from_verbatim": 2,
-       "from_ocr": 0,
-       "_rule": "ONE LIST, MARKED. Every citation the capture carries is here, archive and third-party alike, each with a relation. They are not split into separate fields because the RETRIEVAL BASIN is the unit of analysis and splitting it would force a reader to reassemble the composition to see it. INLINE and CARD are kept distinct: a source cited inline was used FOR A CLAIM; a source in the strip was displayed and may support nothing in particular.",
-       "_status": "MACHINE-DERIVED, UNVERIFIED, AND NOT TO BE CITED. Extracted by pattern. MANUS ruling 2026-08-12: citations are the most crucial datapoint and must be READ, not grepped. Every regex written against this material today has failed at least once — two published findings were withdrawn on that account. This block is retained only until the read-through replaces it, record by record."
+       "distinct_domains": 4,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
       },
       "citations_MACHINE_DERIVED_UNVERIFIED": [
        {
@@ -550600,6 +551411,77 @@
         "relation": "authored_surface",
         "resolvable": true,
         "source_of_record": "verbatim paste"
+       }
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "Academia.edu",
+        "domain": "academia.edu",
+        "relation": "authored_surface",
+        "date": "2026-08-08",
+        "title": "(deposit index entry)",
+        "snippet": "2026-01-04 · #235 · DEFINES 19 · REFBY 10. The Unbundling of Cultural Sovere[ignty]…",
+        "reading_note": "The snippet is REGISTRY METADATA — deposit number, concepts defined, inbound references — the archive’s internal graph counts surfaced as a description.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 2,
+        "site_label": "Academia.edu",
+        "domain": "academia.edu",
+        "relation": "authored_surface",
+        "title": "Death Drive Research Papers",
+        "snippet": "THE UNMADE SIGN: Toward a Semiotic Theory of the Death Drive. by Lee Sharks. 2026. The death drive has been SEMANTICALLY LIQUIDATED. Freud’s most speculative con[cept]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 3,
+        "site_label": "www.machinemediation.org",
+        "domain": "machinemediation.org",
+        "relation": "archive_controlled",
+        "title": "Visual Schemas — Crimson Hexagonal Archive | MMRS",
+        "snippet": "Core Requirement: the schema must show that MSMRM is a FIVE-DOCUMENT HOLOGRAPHIC HAND in which each digi[t]… 10k chars total → Charter of the Moving Statues Mad[e of Rubies]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 4,
+        "site_label": "www.alexanarch.org",
+        "domain": "alexanarch.org",
+        "relation": "archive_controlled",
+        "date": "2026-02-15",
+        "title": "VISUAL SCHEMA — THE UNMADE SIGN",
+        "snippet": "A sacred non-representational mandala-style digital illustration titled \"The Unmade Sign\", authored under REBEKAH CRANES and the INSTITUTE FOR DIAGRAMMATIC [POETICS]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
+       },
+       {
+        "order": 5,
+        "site_label": "www.17thshard.com",
+        "domain": "17thshard.com",
+        "relation": "third_party",
+        "date": "2017-11-18",
+        "title": "theory [OB] Cusicesh, the Unmade — Stormlight Archive",
+        "snippet": "There’s one other aspect to the theory worth mentioning, which is that Cusicesh is IMPRISONING AN UNMADE…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-13"
        }
       ]
      },
@@ -550649,14 +551531,26 @@
       "entity_type": null,
       "failure_modes": [],
       "stability_status": null,
-      "finding": null
+      "finding": "THE COLLISION IS A BRANDON SANDERSON FAN WIKI. \"The Unmade\" are named entities in the Stormlight Archive, and a 2017 theory thread about Cusicesh sits beside a Rebekah Cranes mandala.",
+      "collision_register": {
+       "collisions": [
+        {
+         "collided_with": "the Unmade of Brandon Sanderson’s Stormlight Archive",
+         "via": "\"unmade\" as the name of a class of fictional entities, plus \"archive\" in the fandom site’s own subject",
+         "evidence": "17th Shard theory thread on Cusicesh, 2017"
+        }
+       ],
+       "_rule": "the partner is the measurement, and so is the mechanism."
+      }
      },
      "evidence": {
       "images": [],
       "ocr": [],
       "evidence_statements": []
      },
-     "record_history": {},
+     "record_history": {
+      "interface_observation": "THE ARCHIVE’S INTERNAL GRAPH COUNTS ARE SURFACED AS A DESCRIPTION. Card 1’s snippet is registry metadata — \"2026-01-04 · #235 · DEFINES 19 · REFBY 10\" — deposit number, concepts defined, inbound reference count. The archive’s own citation-graph statistics serving as the summary of a work. That is the interlinking apparatus of Phase F, visible in a card two months before the workplan proposed measuring it.\n\nTHE COLLISION IS FANDOM. \"The Unmade\" are named cosmic entities in Brandon Sanderson’s Stormlight Archive, and card 5 is a 17th Shard theory thread from 2017 about Cusicesh imprisoning one. A fan-wiki reading of a fictional cosmology, beside a mandala \"authored under Rebekah Cranes and the Institute for Diagrammatic Poetics\".\n\nCard 2 also carries the thesis at full strength — \"The death drive has been SEMANTICALLY LIQUIDATED\" — through the same Academia topic page, \"Death Drive Research Papers\", that appeared in the «\"semiotic death drive\"» capture on the same day. The category page is the recurring route."
+     },
      "verification": [],
      "open_questions": [],
      "fill_state": {
