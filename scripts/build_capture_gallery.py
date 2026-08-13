@@ -473,7 +473,17 @@ def transcript_block(e, gallery=''):
 def card(e):
     esc = html.escape
     slug = e.get("slug", "")
-    d = e.get("d") or ""
+    # THE CARD CUTS ITS OWN BLURB. The full finding lives in the data so every
+    # renderer can choose; cutting upstream gave three mirrors a 330-character
+    # stub they could not undo.
+    _dfull = str(e.get("d") or "")
+    if len(_dfull) > 330:
+        _cut = _dfull[:330]
+        _m = re.search(r'[\.\!\?\u2014;]\s[^\.]*$', _cut)
+        _cut = _cut[:_m.start() + 1] if _m and _m.start() > 180 else _cut.rsplit(' ', 1)[0]
+        d = _cut.rstrip(' ,;\u2014-') + '\u2026'
+    else:
+        d = _dfull
     mt = e.get("mt") or "unrated"
     q = e.get("q") or slug
     date = e.get("date") or ""
