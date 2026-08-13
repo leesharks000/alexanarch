@@ -189,6 +189,23 @@ def transcript_block(e, gallery=''):
         parts.append('<div class="cap-tr-label">Machine text, verbatim</div>'
                      + (f'<div class="cap-tr-warn-line">{esc(note)}</div>' if note else '')
                      + f'<div class="cap-tr-body" itemprop="text">{esc(tr)}</div>')
+    # SUB-ROUNDS BELONG TO THE PARENT AND ARE NEVER A CAPTURE. Presenting them as
+    # captures inflated the count and corrupted every per-capture measurement in
+    # the dataset — PER, defect rates, voice quotient denominators, all of it.
+    rl = e.get("rounds") or []
+    if len(rl) > 1:
+        rows = ""
+        for r in rl:
+            rows += ('<li><b>round ' + esc(str(r.get("n"))) + '</b> &middot; '
+                     + esc(str(r.get("q") or "")) +
+                     ('<div class="cap-cn">' + esc(str(r.get("note") or "")) + '</div>' if r.get("note") else '') +
+                     ('<div class="cap-cs">' + esc(str(r.get("finding") or "")) + '</div>' if r.get("finding") else '') +
+                     ('<div class="cap-tr-body">' + esc(str(r.get("text") or "")) + '</div>' if r.get("text") else '') +
+                     '</li>')
+        parts.append('<div class="cap-tr-label">Rounds in this capture ('
+                     + str(len(rl)) + ')</div>'
+                     '<ul class="cap-cites">' + rows + '</ul>')
+
     ses = e.get("session") or {}
     if ses.get("continues_into") or ses.get("continued_from"):
         # THE SESSION SURVIVES THE FRAGMENTATION. A session is bounded by the
