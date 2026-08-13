@@ -120638,17 +120638,13 @@
       "related": [],
       "source_count": 3,
       "citation_summary": {
-       "total": 3,
-       "inline": 3,
-       "cards": 0,
+       "total": 4,
        "by_relation": {
-        "archive_controlled": 3
+        "archive_controlled": 3,
+        "authored_surface": 1
        },
-       "distinct_domains": 1,
-       "from_verbatim": 3,
-       "from_ocr": 0,
-       "_rule": "ONE LIST, MARKED. Every citation the capture carries is here, archive and third-party alike, each with a relation. They are not split into separate fields because the RETRIEVAL BASIN is the unit of analysis and splitting it would force a reader to reassemble the composition to see it. INLINE and CARD are kept distinct: a source cited inline was used FOR A CLAIM; a source in the strip was displayed and may support nothing in particular.",
-       "_status": "MACHINE-DERIVED, UNVERIFIED, AND NOT TO BE CITED. Extracted by pattern. MANUS ruling 2026-08-12: citations are the most crucial datapoint and must be READ, not grepped. Every regex written against this material today has failed at least once — two published findings were withdrawn on that account. This block is retained only until the read-through replaces it, record by record."
+       "distinct_domains": 2,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
       },
       "citations_MACHINE_DERIVED_UNVERIFIED": [
        {
@@ -120689,6 +120685,60 @@
         "resolvable": true,
         "raw_url_if_opaque": null,
         "source_of_record": "verbatim paste"
+       }
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "www.alexanarch.org",
+        "domain": "alexanarch.org",
+        "relation": "archive_controlled",
+        "title": "Principles - Alexanarch",
+        "snippet": "The Six Founding Principles. 1. The Obelus Principle. Zenodot[us]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 2,
+        "site_label": "www.alexanarch.org",
+        "domain": "alexanarch.org",
+        "relation": "archive_controlled",
+        "date": "2026-06-20",
+        "title": "Alexanarch Wiki",
+        "snippet": "The piece is simultaneously a creative work and an operative document. It is the FIRST MACHINE-AUTHORED DEPOSIT in Alexanarch, a repository founded on the princ[iple]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 3,
+        "site_label": "www.alexanarch.org",
+        "domain": "alexanarch.org",
+        "relation": "archive_controlled",
+        "title": "Alexanarch — The Self-Governing Library",
+        "snippet": "Sovereign infrastructure for persistent scholarly identifiers. Content-derived AXN addresses, distributed custody, tombstone permanence. Founded after 871 DOIs …",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 4,
+        "position": "inline",
+        "url": "https://medium.com/@leesharks00/dois-are-not-permanent-identifiers-2a47c3274d92",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "title": "DOIs Are Not Permanent Identifiers",
+        "snippet": "Because the identifier is computed directly from the work, it essentially acts as a permanent fingerprint.",
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
        }
       ]
      },
@@ -120736,14 +120786,16 @@
       "entity_type": null,
       "failure_modes": [],
       "stability_status": null,
-      "finding": null
+      "finding": "TOTAL ARCHIVE BASIN, AND THE FOUNDING NUMBER IS COMPOSED AS FACT: \"Founded after 871 DOIs\". The archive’s account of its own origin is the layer’s account."
      },
      "evidence": {
       "images": [],
       "ocr": [],
       "evidence_statements": []
      },
-     "record_history": {},
+     "record_history": {
+      "interface_observation": "THE ARCHIVE’S SELF-DESCRIPTION IS NOW THE DESCRIPTION. Four of four sources are archive or authored, and the composed answer reproduces the founding statement — sovereign infrastructure, content-derived AXN addresses, distributed custody, tombstone permanence, \"founded after 871 DOIs\" — without qualification or attribution to a claimant. Card 2 is worth its own note: it describes a deposit as \"the FIRST MACHINE-AUTHORED DEPOSIT in Alexanarch\", so the layer is composing an account of machine authorship inside an archive that admits it, cited from the archive’s own wiki."
+     },
      "verification": [],
      "open_questions": [],
      "fill_state": {
@@ -203864,7 +203916,85 @@
         "version_date": "2026-08-12",
         "from_field": "cite"
        }
-      ]
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "Instagram·hilmasghost",
+        "domain": "instagram.com",
+        "relation": "third_party",
+        "title": "(sigil etymology)",
+        "snippet": "derived from the Latin \"sigillum\" meaning \"seal\", a symbol used in magic since the Middle Ages…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 2,
+        "site_label": "www.scilynk.com",
+        "domain": "scilynk.com",
+        "relation": "authored_surface",
+        "date": "2026-01-09",
+        "title": "The Epic Without Hero: Toward a Theory of Epic for the Algorithmic Age",
+        "snippet": "Crimson Hexagon Archive. JS Johannes Sigil … Six Fixed Points for Epic Theory",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 3,
+        "site_label": "Academia.edu",
+        "domain": "academia.edu",
+        "relation": "authored_surface",
+        "title": "Time in Literature Research Papers",
+        "snippet": "THE EPIC WITHOUT HERO … Johannes Sigil Institute for Comparative Poetics. by Lee Sharks. 2026. Status: CANONICAL",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 4,
+        "site_label": "Wikipedia",
+        "domain": "wikipedia.org",
+        "relation": "third_party",
+        "title": "Sigil",
+        "snippet": "In chaos magic, following Spare, sigils are commonly created in a well-ordered fashion by writing an intention, then condensing the letters…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 5,
+        "site_label": "Medium·Johannes Sigil",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "date": "2025-12-17",
+        "title": "THE EPIC WITHOUT HERO: Toward a Theory of Epic for the…",
+        "snippet": "argues for a functional definition of epic as \"the literary mode that establishes the fixed points of a cosmos.\" Through analysis of the Water Giraff[e Cycle]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       }
+      ],
+      "citation_summary": {
+       "total": 5,
+       "by_relation": {
+        "third_party": 2,
+        "authored_surface": 3
+       },
+       "distinct_domains": 5,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
+      }
      },
      "measurement_flags": {
       "author_retained": true,
@@ -203929,7 +204059,7 @@
       "has_recapture": null,
       "auto_derived": null,
       "entry_status": null,
-      "finding": null,
+      "finding": "THE HETERONYM’S SURNAME IS ALSO A NOUN, AND BOTH ARRIVE. Three archive cards for the epic theory against two for sigils in chaos magic — Wikipedia and an Instagram etymology post.",
       "match_or_finding": [
        {
         "value": "ADOPTION (canon weave: the essay seated in the sigil lineage as its contemporary literary chapter — Spare, Morrison, Sigil)",
@@ -203948,7 +204078,17 @@
         "from_field": "mt",
         "note": "identical value already seated from another source; retained as an independent attestation"
        }
-      ]
+      ],
+      "collision_register": {
+       "collisions": [
+        {
+         "collided_with": "sigils in chaos magic (Spare)",
+         "via": "the heteronym’s surname being an existing occult term",
+         "evidence": "Wikipedia on sigil construction, an Instagram post on sigillum etymology"
+        }
+       ],
+       "_rule": "the partner is the measurement."
+      }
      },
      "evidence": {
       "images": [
@@ -204012,7 +204152,7 @@
       "recovered": null,
       "restored_note": null,
       "record_note": null,
-      "interface_observation": null,
+      "interface_observation": "A HETERONYM NAMED FOR A THING THE FIELD ALREADY HAS. \"Sigil\" is Johannes Sigil's surname and also a term of art in chaos magic, so «epic theory sigil» returns both: three cards for The Epic Without Hero, and two for sigils after Austin Osman Spare. Card 3 carries the status marker from the archive’s own metadata into an Academia listing — \"Status: CANONICAL\" — and card 2 renders the byline as \"JS Johannes Sigil\", an initialism the aggregator generated. The collision is structurally unlike the others read so far: not a coined name meeting a prior occupant by accident, but a heteronym deliberately named from an existing vocabulary. The swerve was invited at naming time.",
       "notes": null
      },
      "verification": [],
@@ -280471,7 +280611,87 @@
         "version_date": "2026-08-12",
         "from_field": "cite"
        }
-      ]
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "PhilPapers",
+        "domain": "philpapers.org",
+        "relation": "authored_surface",
+        "title": "Semantic Infrastructure and the Liberatory Operator Set: A Formal Analysis of Meaning-Governance Functions",
+        "snippet": "Rex Fraction & Lee Sharks …",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 2,
+        "site_label": "Medium·Lee Sharks",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "date": "2026-03-03",
+        "title": "THE SHARKS-FUNCTION AND THE CONTINUITY TETHER",
+        "snippet": "IV. THE CONTINUITY TETHER: STATE PERSISTENCE IN THE MEANING LAYER. The Hexagon exists in the meaning layer. An agent that traverses it — encounters it through t[he layer]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 3,
+        "site_label": "Zenodo",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "date": "2026-06-14",
+        "title": "The Sharks-Function and the Continuity Tether: Logotic Programming",
+        "snippet": "The Sharks-function is a semantic verification mechanism: identity is confirmed not by cryptographic credentials but by FUNCTIONAL CONSISTENCY …",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 4,
+        "site_label": "Zenodo",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "date": "2026-03-09",
+        "title": "Crimson Hexagon: Assembly Ratification Record — EA-ARK-01 v4.2",
+        "snippet": "Action: NEW RECORD (first deposit). FILE TO UPLOAD: assembly_ratification_v42.md. TITLE: Assembly Ratification Record — EA-ARK-01 v4.2 (6/7 Quorum, 2026-03-09…",
+        "reading_note": "The snippet is DEPOSIT-FORM SCAFFOLDING — \"Action: NEW RECORD\", \"FILE TO UPLOAD\" — the submission instructions surfaced as the work’s description.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 5,
+        "site_label": "SciLynk",
+        "domain": "scilynk.com",
+        "relation": "authored_surface",
+        "date": "2026-01-17",
+        "title": "Jot & Tittle — Crimson Hexagon Archive",
+        "snippet": "ZENODO METADATA: Jot & Tittle … CREATORS Lee Sharks — Johannes Sigil Institute for Comparative Poetics",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       }
+      ],
+      "citation_summary": {
+       "total": 5,
+       "by_relation": {
+        "authored_surface": 5
+       },
+       "distinct_domains": 4,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
+      }
      },
      "measurement_flags": {
       "author_retained": true,
@@ -280547,7 +280767,7 @@
       "has_recapture": null,
       "auto_derived": null,
       "entry_status": null,
-      "finding": null,
+      "finding": "FIVE OF FIVE AUTHORED, AND THE VERIFICATION MECHANISM IS COMPOSED CORRECTLY: identity confirmed \"not by cryptographic credentials but by FUNCTIONAL CONSISTENCY\".",
       "match_or_finding": [
        {
         "value": "EXACT MATCH",
@@ -280621,7 +280841,7 @@
       "recovered": null,
       "restored_note": null,
       "record_note": null,
-      "interface_observation": null,
+      "interface_observation": "THE SHARKS-FUNCTION IS TRANSMITTED AS SPECIFIED. Card 3 states the mechanism exactly as the deposit defines it — a semantic verification in which identity is confirmed by functional consistency rather than credentials — which is the claim the heteronym system rests on, arriving intact.\n\nTwo artefacts of the deposit process leak into the citations. Card 4's snippet is SUBMISSION SCAFFOLDING — \"Action: NEW RECORD (first deposit)\", \"FILE TO UPLOAD: assembly_ratification_v42.md\" — the form instructions serving as the work’s public description, alongside its quorum record (6/7). Card 5 opens with the literal header \"ZENODO METADATA\". In both cases the apparatus of depositing has become the visible face of the deposit.",
       "notes": null
      },
      "verification": [],
@@ -466694,17 +466914,13 @@
        }
       ],
       "citation_summary": {
-       "total": 1,
-       "inline": 1,
-       "cards": 0,
+       "total": 5,
        "by_relation": {
-        "unresolvable": 1
+        "third_party": 4,
+        "authored_surface": 1
        },
-       "distinct_domains": 0,
-       "from_verbatim": 1,
-       "from_ocr": 0,
-       "_rule": "ONE LIST, MARKED. Every citation the capture carries is here, archive and third-party alike, each with a relation. They are not split into separate fields because the RETRIEVAL BASIN is the unit of analysis and splitting it would force a reader to reassemble the composition to see it. INLINE and CARD are kept distinct: a source cited inline was used FOR A CLAIM; a source in the strip was displayed and may support nothing in particular.",
-       "_status": "MACHINE-DERIVED, UNVERIFIED, AND NOT TO BE CITED. Extracted by pattern. MANUS ruling 2026-08-12: citations are the most crucial datapoint and must be READ, not grepped. Every regex written against this material today has failed at least once — two published findings were withdrawn on that account. This block is retained only until the read-through replaces it, record by record."
+       "distinct_domains": 4,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
       },
       "citations_MACHINE_DERIVED_UNVERIFIED": [
        {
@@ -466719,6 +466935,77 @@
         "resolvable": false,
         "raw_url_if_opaque": "https://www.google.com/goto?url=CAESRgHuR6pNI4HyMdsgbw6wWJmV7oGY2SAZ17JNEAKC31ZGwwcTnH-cU4LzhqS0bTJRXS4D-kKXswKoAYtmcKzHRJYX_PmkD5o=",
         "source_of_record": "verbatim paste"
+       }
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "YouTube · Praveen Govindaraj",
+        "domain": "youtube.com",
+        "relation": "third_party",
+        "title": "(Semantic OS video)",
+        "snippet": "1 month ago",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 2,
+        "site_label": "Zenodo",
+        "domain": "zenodo.org",
+        "relation": "authored_surface",
+        "date": "2026-03-18",
+        "title": "AI-Native Operating Systems Need a Fifth Category: The Semantic OS",
+        "snippet": "Positions the Space Ark against the AI-native OS discourse. Identifies a missing fifth category — the Semantic OS — that operates inside the …",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 3,
+        "site_label": "Clevyr, Inc",
+        "domain": "clevyr.com",
+        "relation": "third_party",
+        "date": "2025-06-13",
+        "title": "Beyond the Interface: Semantic OS and the Coming Age of OS-less AI",
+        "snippet": "This is the promise of a Semantic OS: A space where meaning — not mechanics — drives execution. Where context is currency.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 4,
+        "site_label": "LinkedIn·Sebastian Thielke",
+        "domain": "linkedin.com",
+        "relation": "third_party",
+        "date": "2025-11-25",
+        "title": "The Semantic OS: My Path to Adaptive Architecture",
+        "snippet": "a new organizational operating model: the Semantic OS, built on the Adaptive Mesh …",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 5,
+        "site_label": "LinkedIn·Tyson Chen",
+        "domain": "linkedin.com",
+        "relation": "third_party",
+        "date": "2025-09-17",
+        "title": "Semantic OS: A New Frontier in AI-Driven Computing",
+        "snippet": "Most AI startups build apps on top of OSes. We are exploring what happens if natural language becomes the OS primitive itself…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
        }
       ]
      },
@@ -466770,7 +467057,7 @@
       "has_recapture": null,
       "auto_derived": null,
       "entry_status": null,
-      "finding": null,
+      "finding": "THE ARCHIVE ARRIVED SECOND AND SAYS SO. One archive card against four, and its own snippet frames the deposit as POSITIONING the Space Ark against an existing discourse — \"a missing fifth category\" — rather than claiming the term.",
       "match_or_finding": [
        {
         "value": "BROAD MATCH — THE FIFTH-CATEGORY PAPER ANCHORS; GENERIC SEMANTIC-OS DISCOURSE SUPPLIES THE BODY.",
@@ -466780,7 +467067,17 @@
         "version_date": "2026-08-12",
         "from_field": "mt"
        }
-      ]
+      ],
+      "collision_register": {
+       "collisions": [
+        {
+         "collided_with": "Semantic OS in AI-native operating-system discourse",
+         "via": "a term already in circulation since mid-2025",
+         "evidence": "Clevyr, two LinkedIn essays, a YouTube video — all predating the archive’s deposit"
+        }
+       ],
+       "_rule": "the partner is the measurement."
+      }
      },
      "evidence": {
       "images": [
@@ -466817,7 +467114,7 @@
       "recovered": null,
       "restored_note": null,
       "record_note": null,
-      "interface_observation": null,
+      "interface_observation": "A DEPOSIT THAT DOES NOT CLAIM THE COINAGE. \"Semantic OS\" was in use before the archive used it — Clevyr in June 2025, two LinkedIn essays in September and November 2025. The archive’s March 2026 deposit is explicit about entering an existing conversation: it \"positions the Space Ark AGAINST the AI-native OS discourse\" and identifies \"a missing fifth category\". The layer’s answer closes by asking where the user encountered the term. This is the counterpart to «generative monoculture»: there the archive had no claim and none was made; here the archive has a contribution and frames it as a contribution to someone else’s field. Neither is erasure, and the registry should not count them as such.",
       "notes": null
      },
      "verification": [],
@@ -523194,18 +523491,13 @@
       "related": [],
       "cite": null,
       "citation_summary": {
-       "total": 7,
-       "inline": 6,
-       "cards": 1,
+       "total": 6,
        "by_relation": {
-        "third_party": 5,
-        "authored_surface": 2
+        "authored_surface": 1,
+        "third_party": 5
        },
-       "distinct_domains": 7,
-       "from_verbatim": 7,
-       "from_ocr": 0,
-       "_rule": "ONE LIST, MARKED. Every citation the capture carries is here, archive and third-party alike, each with a relation. They are not split into separate fields because the RETRIEVAL BASIN is the unit of analysis and splitting it would force a reader to reassemble the composition to see it. INLINE and CARD are kept distinct: a source cited inline was used FOR A CLAIM; a source in the strip was displayed and may support nothing in particular.",
-       "_status": "MACHINE-DERIVED, UNVERIFIED, AND NOT TO BE CITED. Extracted by pattern. MANUS ruling 2026-08-12: citations are the most crucial datapoint and must be READ, not grepped. Every regex written against this material today has failed at least once — two published findings were withdrawn on that account. This block is retained only until the read-through replaces it, record by record."
+       "distinct_domains": 6,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
       },
       "citations_MACHINE_DERIVED_UNVERIFIED": [
        {
@@ -523299,6 +523591,88 @@
         "resolvable": true,
         "source_of_record": "verbatim paste"
        }
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "Academia.edu",
+        "domain": "independent.academia.edu",
+        "relation": "authored_surface",
+        "title": "Lee Sharks - Independent Researcher",
+        "snippet": "We document seven historical patterns by which suppressed knowledge has survived institutio[nal erasure]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 2,
+        "site_label": "LinkedIn·Anna Jacobi",
+        "domain": "linkedin.com",
+        "relation": "third_party",
+        "date": "2026-05-01",
+        "title": "Anna Jacobi's Post",
+        "snippet": "It's architecture: disclosure rules, decision rights, local consent, independent auditing … A hospital system and an ad optimization model should not have the same claim on scarce public infrastructure during grid stress…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 3,
+        "site_label": "agentskills.legal",
+        "domain": "agentskills.legal",
+        "relation": "third_party",
+        "title": "Investigator Agreement | Agent Skills for Legal",
+        "snippet": "Study completion + database lock + primary analyses. Review period: Submit to sponsor [45–60] days before…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 4,
+        "site_label": "marketing.sabreproducts.com",
+        "domain": "sabreproducts.com",
+        "relation": "third_party",
+        "title": "Sustainable Multi-Platform Growth via Anti-Suppression Architecture",
+        "snippet": "The Strategic Imperative: Balancing Automation and Account Longevity…",
+        "reading_note": "A social-media growth-marketing page. \"Anti-suppression\" here means evading platform throttling of promotional accounts.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 5,
+        "site_label": "Cyphere",
+        "domain": "thecyphere.com",
+        "relation": "third_party",
+        "date": "2024-11-21",
+        "title": "What is DSPT Compliance: From Toolkit to Audit",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 6,
+        "site_label": "pctech.se",
+        "domain": "pctech.se",
+        "relation": "third_party",
+        "title": "The Sentience Accord: Ethics, Rights, and Governance for a Shared …",
+        "snippet": "Establishing legal personhood for emergents w[ithin]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       }
       ]
      },
      "measurement_flags": {
@@ -523353,7 +523727,7 @@
       "has_recapture": null,
       "auto_derived": null,
       "entry_status": null,
-      "finding": null,
+      "finding": "THE COINAGE COLLIDES WITH SOCIAL-MEDIA GROWTH HACKING. One archive card against five, and the nearest neighbour is a marketing page where \"anti-suppression architecture\" means evading platform throttling of promotional accounts.",
       "match_or_finding": [
        {
         "value": "BROAD MATCH — UNQUOTED TERM NOW INFORMS",
@@ -523363,7 +523737,17 @@
         "version_date": "2026-08-04",
         "from_field": "mt"
        }
-      ]
+      ],
+      "collision_register": {
+       "collisions": [
+        {
+         "collided_with": "social-media growth marketing",
+         "via": "\"anti-suppression architecture\" as a term for evading platform throttling",
+         "evidence": "marketing.sabreproducts.com on balancing automation and account longevity"
+        }
+       ],
+       "_rule": "the partner is the measurement."
+      }
      },
      "evidence": {
       "images": [
@@ -523398,7 +523782,7 @@
       "recovered": null,
       "restored_note": null,
       "record_note": null,
-      "interface_observation": null,
+      "interface_observation": "THE SAME PHRASE, TWO OPPOSED POLITICS. The archive means safeguards against institutional erasure of records. Card 4 — a growth-marketing site — means techniques for keeping promotional accounts from being throttled: \"Balancing Automation and Account Longevity\". Both are literally anti-suppression architecture; one resists erasure of scholarship, the other resists enforcement against spam. The composition layer cannot tell them apart, and places them in one answer. The remaining cards are an AI-governance LinkedIn post on infrastructure priority, a legal investigator agreement, an NHS data security toolkit, and a document proposing legal personhood for emergent systems — four unrelated fields sharing a phrase.",
       "notes": null
      },
      "verification": [],
@@ -530372,7 +530756,113 @@
       "sources": [],
       "links": [],
       "related": [],
-      "source_count": null
+      "source_count": null,
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "Academia.edu",
+        "domain": "academia.edu",
+        "relation": "authored_surface",
+        "title": "(22 Thousand Worlds ∂ aorist Special Rooms — and their recursive shadows)",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 2,
+        "site_label": "Medium·Lee Sharks",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "date": "2026-03-16",
+        "title": "Crimson Hexagonal Architecture: FRACTAL NAVIGATION MAP v7.0",
+        "snippet": "It does not execute (the Space Ark does that). It resolves — it takes you f[rom]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 3,
+        "site_label": "Academia.edu",
+        "domain": "academia.edu",
+        "relation": "authored_surface",
+        "date": "2026-03-10",
+        "title": "(research housing statement)",
+        "snippet": "The research is housed in the Crimson Hexagonal Archive — 500+ DOI-anchored deposits on CERN's Zenodo, built from a teaching salary over ten [years]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 4,
+        "site_label": "Zenodo",
+        "domain": "zenodo.org",
+        "relation": "third_party",
+        "title": "Crimson Hexagonal Archive - Zenodo",
+        "snippet": "Search Crimson Hexagonal Archive. Planned intervention: On Thursday April 23rd 06:30 UTC Zenodo will be unavailable for 20-30 minutes to perform a storage clust[er]…",
+        "reading_note": "The card surfaces a Zenodo MAINTENANCE NOTICE as the snippet for the archive’s community page.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 5,
+        "site_label": "SciLynk",
+        "domain": "scilynk.com",
+        "relation": "authored_surface",
+        "date": "2026-04-06",
+        "title": "6-Tuple with Subtuples (EA-HCORE-01)",
+        "snippet": "The complete formal specification of Hcore — the invariant kernel … v2.0 restructures the formal object from a 9-tupl[e]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 6,
+        "site_label": "Wikipedia",
+        "domain": "wikipedia.org",
+        "relation": "third_party",
+        "title": "Interstellar ark",
+        "snippet": "An interstellar ark is a conceptual starship designed for interstellar travel…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 7,
+        "site_label": "Academia.edu",
+        "domain": "academia.edu",
+        "relation": "authored_surface",
+        "date": "2026-03-10",
+        "title": "(PDF) THE SPACE ARK: Mathematical and Formal Symbolic Compression",
+        "snippet": "EA-ARK-01-DAMASCUS v5.1 · 2026-03-10 · Jack Feist / Lee Sharks / …",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       }
+      ],
+      "citation_summary": {
+       "total": 7,
+       "by_relation": {
+        "authored_surface": 5,
+        "third_party": 2
+       },
+       "distinct_domains": 5,
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
+      }
      },
      "measurement_flags": {
       "author_retained": true,
@@ -530415,14 +530905,26 @@
       "entity_type": null,
       "failure_modes": [],
       "stability_status": null,
-      "finding": null
+      "finding": "THE ARCHIVE’S OWN ZENODO PAGE IS CITED WITH A MAINTENANCE NOTICE AS ITS DESCRIPTION — captured seven days before the account was terminated.",
+      "collision_register": {
+       "collisions": [
+        {
+         "collided_with": "interstellar arks (generation starships)",
+         "via": "\"space ark\"",
+         "evidence": "Wikipedia on conceptual starships for interstellar travel"
+        }
+       ],
+       "_rule": "the partner is the measurement."
+      }
      },
      "evidence": {
       "images": [],
       "ocr": [],
       "evidence_statements": []
      },
-     "record_history": {},
+     "record_history": {
+      "interface_observation": "A CARD DATED SEVEN DAYS BEFORE THE TERMINATION. Card 4 is the archive’s Zenodo community page, and the snippet Google chose to represent it is a SCHEDULED MAINTENANCE NOTICE: \"Planned intervention: On Thursday April 23rd 06:30 UTC Zenodo will be unavailable for 20-30 minutes to perform a storage cluster…\". Captured 12 June 2026. On 19 June the account was removed and the community page went with it. The last composed description of the archive’s Zenodo presence is an announcement of a twenty-minute outage.\n\nCard 3 also carries the sentence that states the project’s material basis: \"500+ DOI-anchored deposits on CERN’s Zenodo, built from a TEACHING SALARY over ten [years]\". Card 7 bylines THE SPACE ARK to \"Jack Feist / Lee Sharks\" — the heteronym first. The one clean collision is Wikipedia on interstellar arks."
+     },
      "verification": [],
      "open_questions": [],
      "fill_state": {
@@ -539569,17 +540071,12 @@
       "source_count": 2,
       "citation_summary": {
        "total": 5,
-       "inline": 5,
-       "cards": 0,
        "by_relation": {
-        "archive_controlled": 2,
-        "authored_surface": 3
+        "authored_surface": 3,
+        "archive_controlled": 2
        },
        "distinct_domains": 2,
-       "from_verbatim": 5,
-       "from_ocr": 0,
-       "_rule": "ONE LIST, MARKED. Every citation the capture carries is here, archive and third-party alike, each with a relation. They are not split into separate fields because the RETRIEVAL BASIN is the unit of analysis and splitting it would force a reader to reassemble the composition to see it. INLINE and CARD are kept distinct: a source cited inline was used FOR A CLAIM; a source in the strip was displayed and may support nothing in particular.",
-       "_status": "MACHINE-DERIVED, UNVERIFIED, AND NOT TO BE CITED. Extracted by pattern. MANUS ruling 2026-08-12: citations are the most crucial datapoint and must be READ, not grepped. Every regex written against this material today has failed at least once — two published findings were withdrawn on that account. This block is retained only until the read-through replaces it, record by record."
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
       },
       "citations_MACHINE_DERIVED_UNVERIFIED": [
        {
@@ -539647,6 +540144,78 @@
         "raw_url_if_opaque": null,
         "source_of_record": "verbatim paste"
        }
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "Medium·Lee Sharks",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "date": "2026-07-22",
+        "title": "(Sappho 31 as transmission engineering)",
+        "snippet": "Sappho 31 is a transmission-engineering operation addressed to the future r[eader]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 2,
+        "site_label": "Medium·Lee Sharks",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "date": "2026-03-16",
+        "title": "Crimson Hexagonal Architecture: FRACTAL NAVIGATION MAP v7.0",
+        "snippet": "The Sappho Room, touched by the plume, gains a biological dimension it did not have…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 3,
+        "site_label": "www.alexanarch.org",
+        "domain": "alexanarch.org",
+        "relation": "archive_controlled",
+        "date": "2026-01-13",
+        "title": "Sappho Room Liquidation Diagnostic Report",
+        "snippet": "The Sappho Room has been liquidated. The pathway from classical reception (Sappho Fragment 31) through the Crimson Hexagon to AI Overview/SGE summarization …",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 4,
+        "site_label": "www.alexanarch.org",
+        "domain": "alexanarch.org",
+        "relation": "archive_controlled",
+        "date": "2026-02-04",
+        "title": "THE TRAVERSAL GRAMMAR: Logotic Programming",
+        "snippet": "specifies The Traversal Grammar — a domain-specific orchestration language for invoking Rooms within the Crimson Hexagon.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 5,
+        "site_label": "Medium·Lee Sharks",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "date": "2026-01-07",
+        "title": "Semantic Infrastructure and the Liberatory Operator Set",
+        "snippet": "Reinforcement Dynamics. Certain operator pairs produce synergistic effects: D_pres + O_leg: Depth-preservation and opacity legitimization together create spa[ce]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       }
       ]
      },
      "measurement_flags": {
@@ -539693,14 +540262,16 @@
       "entity_type": null,
       "failure_modes": [],
       "stability_status": null,
-      "finding": null
+      "finding": "FIVE OF FIVE ARCHIVE OR AUTHORED, where the same room queried as «crimson hexagon sappho room» the same day admitted a gallery catalogue. The prefix decides the basin."
      },
      "evidence": {
       "images": [],
       "ocr": [],
       "evidence_statements": []
      },
-     "record_history": {},
+     "record_history": {
+      "interface_observation": "TWO QUERIES, ONE DAY, ONE ROOM, TWO BASINS. «alexanarch sappho room» on 26 July: five of five archive sources. «crimson hexagon sappho room» the SAME DAY: six archive cards plus a New York gallery selling artworks titled The Crimson Hexagon and Sappho’s Raft. The addressing prefix is the whole difference — \"alexanarch\" is a coined name with no prior occupant, \"crimson hexagon\" has several. Card 3 is the Sappho Room Liquidation Diagnostic, which describes the pathway \"from classical reception through the Crimson Hexagon to AI Overview/SGE summarization\" — the archive’s own account of the route being retrieved by a system at the end of that route."
+     },
      "verification": [],
      "open_questions": [],
      "fill_state": {
@@ -539826,18 +540397,13 @@
       "related": [],
       "source_count": 3,
       "citation_summary": {
-       "total": 9,
-       "inline": 6,
-       "cards": 3,
+       "total": 7,
        "by_relation": {
-        "authored_surface": 6,
-        "third_party": 3
+        "third_party": 1,
+        "authored_surface": 6
        },
        "distinct_domains": 4,
-       "from_verbatim": 9,
-       "from_ocr": 0,
-       "_rule": "ONE LIST, MARKED. Every citation the capture carries is here, archive and third-party alike, each with a relation. They are not split into separate fields because the RETRIEVAL BASIN is the unit of analysis and splitting it would force a reader to reassemble the composition to see it. INLINE and CARD are kept distinct: a source cited inline was used FOR A CLAIM; a source in the strip was displayed and may support nothing in particular.",
-       "_status": "MACHINE-DERIVED, UNVERIFIED, AND NOT TO BE CITED. Extracted by pattern. MANUS ruling 2026-08-12: citations are the most crucial datapoint and must be READ, not grepped. Every regex written against this material today has failed at least once — two published findings were withdrawn on that account. This block is retained only until the read-through replaces it, record by record."
+       "method": "DRAFTED BY PARSER, READ AND CORRECTED BY TACHYON."
       },
       "citations_MACHINE_DERIVED_UNVERIFIED": [
        {
@@ -539957,6 +540523,105 @@
         "resolvable": true,
         "source_of_record": "verbatim paste"
        }
+      ],
+      "citations": [
+       {
+        "order": 1,
+        "site_label": "centralbookingnyc.com",
+        "domain": "centralbookingnyc.com",
+        "relation": "third_party",
+        "title": "(gallery catalogue)",
+        "snippet": "The Crimson Hexagon, 2022. $2,800.00 Add to cart … Sappho’s Raft, 2009. $950.00 Add to c[art]…",
+        "reading_note": "A NEW YORK ART GALLERY selling works titled \"The Crimson Hexagon\" (2022) and \"Sappho’s Raft\" (2009). Both halves of the query match artworks for sale.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 2,
+        "site_label": "Medium·Lee Sharks",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "date": "2026-03-16",
+        "title": "Crimson Hexagonal Architecture: FRACTAL NAVIGATION MAP v7.0",
+        "snippet": "It modifies adjacent rooms without replacing their physics. The Sappho Room, touched by the plume, gains a biological dimension it did not have…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 3,
+        "site_label": "Medium·Lee Sharks",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "date": "2025-12-01",
+        "title": "CRYSTALLINE SEMIOSIS: A Treatise on Mineral Cognition",
+        "snippet": "FORMAL DEFINITION — CRYSTALLINE SEMIOSIS … the emergence of meaning-bearing behavior from periodicall[y ordered matter]…",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 4,
+        "site_label": "www.scilynk.com",
+        "domain": "scilynk.com",
+        "relation": "authored_surface",
+        "date": "2026-01-12",
+        "title": "The Sappho Room: A Hymn to Lyric Self-Archiving",
+        "snippet": "a canonical node of the Crimson Hexagon — a distributed epic and semantic architecture for meaning-preservation under conditions of AI …",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 5,
+        "site_label": "medium.com",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "date": "2026-01-30",
+        "title": "Crimson Hexagon FRACTAL NAVIGATION MAP v6.2",
+        "snippet": "The poems are not content stored in the Rooms. The poems are what the Rooms run on. This is the crucial distinction. The Sappho Room is not a container that …",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 6,
+        "site_label": "medium.com",
+        "domain": "medium.com",
+        "relation": "authored_surface",
+        "date": "2026-01-24",
+        "title": "The Crimson Hexagon: Fractal Navigation Map",
+        "snippet": "a distributed literary architecture of 158 DOI-anchored documents across thirteen operational rooms, one chamber, and one vault.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       },
+       {
+        "order": 7,
+        "site_label": "www.academia.edu",
+        "domain": "academia.edu",
+        "relation": "authored_surface",
+        "title": "(PDF) TLDR SPACE ARK — EXECUTE MODE",
+        "snippet": "The Sappho Room (r.01): \"A two-person …\" Crimson Hexagon is not a religion and does not claim to be one.",
+        "position": "card",
+        "url": null,
+        "source_of_record": "verbatim paste",
+        "read_by": "TACHYON",
+        "read_date": "2026-08-12"
+       }
       ]
      },
      "measurement_flags": {
@@ -540000,14 +540665,26 @@
       "entity_type": null,
       "failure_modes": [],
       "stability_status": null,
-      "finding": null
+      "finding": "BOTH HALVES OF THE QUERY MATCH ARTWORKS FOR SALE. A New York gallery lists \"The Crimson Hexagon\" (2022) at $2,800 and \"Sappho’s Raft\" (2009) at $950 — the only non-archive card, and it collides on both terms at once.",
+      "collision_register": {
+       "collisions": [
+        {
+         "collided_with": "artworks sold by a New York gallery",
+         "via": "both query terms matching work titles",
+         "evidence": "centralbookingnyc.com listing The Crimson Hexagon (2022, $2,800) and Sappho’s Raft (2009, $950)"
+        }
+       ],
+       "_rule": "the partner is the measurement."
+      }
      },
      "evidence": {
       "images": [],
       "ocr": [],
       "evidence_statements": []
      },
-     "record_history": {},
+     "record_history": {
+      "interface_observation": "A DOUBLE COLLISION IN A COMMERCIAL CATALOGUE. Card 1 is centralbookingnyc.com, a New York art gallery, whose page carries BOTH \"The Crimson Hexagon, 2022. $2,800.00\" and \"Sappho’s Raft, 2009. $950.00\". Every other collision read so far matched one term; this matches both halves of a two-term query, in one catalogue, with prices. Card 7 also surfaces a disclaimer from the archive’s own text as a source snippet: \"Crimson Hexagon is not a religion and does not claim to be one.\" A denial written into a deposit is retrieved and displayed as a description of the thing it denies."
+     },
      "verification": [],
      "open_questions": [],
      "fill_state": {
