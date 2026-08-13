@@ -86,34 +86,39 @@ def emphasise(text):
     return out
 
 def mark_inline_cites(text):
-    """Inline citation markers are invisible inside prose.
+    """Inline citation markers are invisible inside prose. Mark them ONCE.
 
-    A composed answer carries its attributions as bracketed markers — [1], [[2]],
-    [1](url) — run straight into the sentence, so a reader cannot see where the
-    layer attributed and where it simply asserted. That distinction is the whole
-    subject of this registry, and it was being rendered as ordinary text.
+    A composed answer carries its attributions as bracketed markers run straight
+    into the sentence, so a reader cannot see where the layer attributed and
+    where it simply asserted — the distinction this registry exists to measure.
 
-    Escapes everything first, then wraps ONLY the markers. Nothing else survives.
+    IDEMPOTENT BY CONSTRUCTION. The first version ran three regexes in sequence,
+    and the third matched the [1] that the first had already wrapped, producing
+    912 nested spans. This one finds every marker in a SINGLE pass over the
+    escaped text and rebuilds the string, so a marker cannot be wrapped twice
+    however many times the function is applied.
     """
     out = html.escape(text or "")
-    out = re.sub(r'\[\[(\d+)\]\([^)]*\)\]', r'<span class="cap-inline-cite">[\1]</span>', out)
-    out = re.sub(r'\[(\d+)\]\([^)]*\)', r'<span class="cap-inline-cite">[\1]</span>', out)
-    out = re.sub(r'(?<!\w)\[(\d{1,2}(?:\s*,\s*\d{1,2})*)\](?!\()',
-                 r'<span class="cap-inline-cite">[\1]</span>', out)
-    return out
+    pat = re.compile(
+        r'\[\[(\d+)\]\([^)]*\)\]'            # [[1](url)]
+        r'|\[(\d+)\]\([^)]*\)'                 # [1](url)
+        r'|(?<!\w)\[(\d{1,2}(?:\s*,\s*\d{1,2})*)\](?!\()')   # [1] or [1, 2]
+    def wrap(m):
+        n = m.group(1) or m.group(2) or m.group(3)
+        return f'<span class="cap-inline-cite">[{n}]</span>'
+    return pat.sub(wrap, out)
 
 
 def split_source_strip(text, cites):
     """A paste carries the composed answer AND the source strip, run together.
 
-    MANUS: "within the transcripts, citation cards appear as a garbled blob
-    with no differentiation from transcript body." The citations are already
-    extracted, so the strip is grep-identifiable — this finds where it starts
-    and renders it apart, WITHOUT altering a byte of the verbatim record.
+    The citations are already extracted, so the strip is grep-identifiable; this
+    finds where it starts so the answer can be shown as the answer, WITHOUT
+    altering a byte of the verbatim record.
 
-    Conservative by design: it only splits on a cited title or snippet found
-    in the last 60% of the text, and only when two or more distinct cited
-    sources appear at or after that point. One stray match is not a strip.
+    Conservative by design: it splits only on a cited title or snippet found in
+    the last 60% of the text, and only where two or more distinct cited sources
+    appear at or after that point. One stray match is not a strip.
     """
     if not cites or len(text) < 400:
         return text, ""
@@ -314,6 +319,28 @@ def transcript_block(e, gallery=''):
             if _o.get("reading"):
                 _in += ('<div class="cap-tr-label">Reading</div>'
                         f'<div class="cap-tr-prose">{para(_o["reading"])}</div>')
+            _oc = _o.get("cite_list") or []
+            if _oc:
+                _r = ""
+                for _c in _oc:
+                    _nm = esc(str(_c.get("site") or "source"))
+                    _hd = (f'<a href="{esc(_c["url"])}" target="_blank" rel="noopener">{_nm}</a>'
+                           if _c.get("url") else f'<b>{_nm}</b>')
+                    _r += ('<li><div class="cap-srchead">' + _hd
+                           + (f' <span class="cap-rel">{esc(str(_c.get("rel") or ""))}</span>' if _c.get("rel") else '')
+                           + '</div>'
+                           + (f'<div class="cap-ct">{esc(str(_c["title"]))}</div>' if _c.get("title") else '')
+                           + (f'<div class="cap-cs">{esc(str(_c["snip"]))}</div>' if _c.get("snip") else '')
+                           + '</li>')
+                _in += (f'<div class="cap-tr-label">Sources ({len(_oc)})</div>'
+                        f'<ol class="cap-srclist">{_r}</ol>')
+            elif "citations-null" in (_o.get("defects") or []):
+                _in += ('<div class="cap-tr-label">Sources</div>'
+                        '<div class="cap-tr-warn-line">NOT CAPTURED \u2014 count is NULL, not zero.</div>')
+            if _o.get("analysis"):
+                _in += ('<div class="cap-tr-label">Analysis '
+                        '<span class="cap-tr-warn">analyst prose, not machine text</span></div>'
+                        f'<div class="cap-tr-prose">{para(_o["analysis"])}</div>')
             if _o.get("transcript"):
                 _ans, _ = split_source_strip(_o["transcript"], _o.get("cite_list") or [])
                 _in += ('<div class="cap-tr-label">Machine text, verbatim</div>'
@@ -350,8 +377,18 @@ def transcript_block(e, gallery=''):
         parts.append('<div class="cap-tr-label">Open questions</div>'
                      '<ul class="cap-cites">' + "".join(f'<li>{esc(str(x))}</li>' for x in oq) + '</ul>')
     n = sum(len(x) for x in (reading, analysis, tr))
+    # NULL IS NOT ZERO. A record whose citation apparatus was never captured has
+    # an UNKNOWN source count, not a count of nought. Writing "0 sources" on a
+    # card that also carries the citations-null defect makes the interface
+    # contradict the measurement it is displaying.
+    if cites:
+        srcs = f', {len(cites)} sources'
+    elif "citations-null" in (e.get("defects") or []):
+        srcs = ', sources not captured'
+    else:
+        srcs = ', 0 sources'
     return ('<details class="cap-transcript"><summary>Full record'
-            + (f' — {n:,} characters, {len(cites)} sources' if n else '')
+            + (f' \u2014 {n:,} characters{srcs}' if n else '')
             + '</summary>' + "".join(parts) + '</details>')
 
 def card(e):
