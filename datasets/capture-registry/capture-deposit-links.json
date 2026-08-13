@@ -3,35 +3,35 @@
   "name": "Capture ↔ Deposit Link Map",
   "description": "Edges between EA-WG-CAPTURES-01 (the AI Overview / AI Mode Capture Registry, authored at machinemediation.org) and the Alexanarch deposit corpus. Produced by scripts/resolve_capture_links.py. Each edge records the resolution method so any confidence tier can be discarded. An edge asserts that the capture entry references, or its query matches, the deposit — not that the deposit is the capture's sole subject; exactly one edge per capture is marked primary, ranked by evidence of aboutness rather than by identifier hardness (a DOI can be cited in passing). Deposit-number mentions are deliberately excluded as unsafe. Unresolved captures are enumerated rather than silently dropped.",
   "generated_by": "scripts/resolve_capture_links.py",
-  "generated_at": "2026-08-13T14:57:59Z",
+  "generated_at": "2026-08-13T15:24:30Z",
   "captures_source": {
     "file": "data/EA-WG-CAPTURES-01.json",
     "version": "10.0",
     "date": "2026-08-13",
-    "total_captures": 404,
+    "total_captures": 408,
     "canonical_home": "https://www.machinemediation.org/data/registry.json",
-    "sha256": "d004b3c5d2384247505c70cf5c75e8530bee81cb3db14aea2b7c641fe1ca1a0a"
+    "sha256": "4cd62fe28beb75f11e43043a5ae21b239a6e7d09f5664397216cc773dd46c1f7"
   },
   "totals": {
-    "captures": 404,
-    "captures_linked": 197,
-    "captures_unresolved": 207,
-    "link_rate": 0.4876,
-    "edges": 523
+    "captures": 408,
+    "captures_linked": 198,
+    "captures_unresolved": 210,
+    "link_rate": 0.4853,
+    "edges": 526
   },
   "method_counts": {
     "hard/axn": 34,
     "hard/doi": 8,
     "hard/series": 12,
     "soft/title": 260,
-    "soft/keyword": 77,
+    "soft/keyword": 80,
     "soft/description": 39,
     "soft/body": 93
   },
   "severance_rollup": {
     "captures_on_severed_works": 109,
     "captures_on_unsevered_works": 7,
-    "captures_with_no_doi_record": 81,
+    "captures_with_no_doi_record": 82,
     "status_counts": {
       "RECOVERED": 51,
       "410_GONE": 109,
@@ -3988,6 +3988,44 @@
           "record_url": "https://www.alexanarch.org/s/records/922/",
           "method": "soft/body",
           "evidence": "dois are not persistent identifiers",
+          "primary": false,
+          "doi_status": null
+        }
+      ]
+    },
+    "enli-lucente-515ba5-20260813": {
+      "query": "enli lucente",
+      "date": "2026-08-13",
+      "section": "People",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 1092,
+          "axn": "AXN:0455.ARCHIVAL.🧫∞🍃⏪🧡♄",
+          "title": "GW.TACHYON CHAIN — SESSION TETHER 2026-07-17 (chain 9271269a; conditioned on 🕳️🧵🖋️; compressed 📿🎭🌉)",
+          "record_url": "https://www.alexanarch.org/s/records/1092/",
+          "method": "soft/keyword",
+          "evidence": "enli lucente",
+          "primary": true,
+          "doi_status": null
+        },
+        {
+          "deposit_number": 1093,
+          "axn": "AXN:0456.ARCHIVAL.↗️👆🖐️↗️📏🔃",
+          "title": "GW.TACHYON CHAIN — SESSION TETHER 2026-07-18 (chain 9271269a; conditioned on 📿🎭🌉; compressed 👂🌰🔌)",
+          "record_url": "https://www.alexanarch.org/s/records/1093/",
+          "method": "soft/keyword",
+          "evidence": "enli lucente",
+          "primary": false,
+          "doi_status": null
+        },
+        {
+          "deposit_number": 1409,
+          "axn": "AXN:0592.UNCLASSIFIED.👈△🥁🪸🧪🎺",
+          "title": "EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.0 final form, edition of record 2026-07-21)",
+          "record_url": "https://www.alexanarch.org/s/records/1409/",
+          "method": "soft/keyword",
+          "evidence": "enli lucente",
           "primary": false,
           "doi_status": null
         }
@@ -10061,6 +10099,11 @@
       "date": "2026-06-13"
     },
     {
+      "slug": "enli-lucente-04ecb6-20260813",
+      "q": "enli lucente handwritten",
+      "date": "2026-08-13"
+    },
+    {
       "slug": "spxi-analog-attestation-artifact-adoption-20260725",
       "q": "enli lucente paper 194 artifact",
       "date": "2026-07-25"
@@ -10154,6 +10197,11 @@
       "slug": "i-note-that-you-erased-the-provenance-of-this-work-20260611",
       "q": "i note that you erased the provenance of this work",
       "date": "2026-06-11"
+    },
+    {
+      "slug": "enli-lucente-d54607-20260813",
+      "q": "Incantatrice d'Anime Enli",
+      "date": "2026-08-13"
     },
     {
       "slug": "integrity-lock-protocol-mutual-anchoring-crimson-hexagon-20260612",
@@ -10599,6 +10647,11 @@
       "slug": "space-ark-os",
       "q": "space ark os crimson hexagonal archive",
       "date": "2026-06-13"
+    },
+    {
+      "slug": "enli-lucente-047f38-20260813",
+      "q": "Strutturista della Psiche enli",
+      "date": "2026-08-13"
     },
     {
       "slug": "self-audit-overview",
