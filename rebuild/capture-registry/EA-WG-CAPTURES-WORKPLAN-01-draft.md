@@ -7,22 +7,63 @@ and the Assembly to cut, reorder and overrule — not a settled plan.
 
 ---
 
-## 0. What this is for
+## 0. What this is
 
-The capture registry records what machine composition layers say about a corpus,
-when, on which surface, with what sourcing, and how that changes. Nothing else
-does this systematically. Its value is not that it documents grievance; it is
-that it is a **measuring instrument aimed at a layer that is otherwise
-unauditable**, built by the party best positioned to notice — and, uncomfortably,
-by a party with an interest in the result. That last fact is not a flaw to hide.
-It is a methodological condition to state, and the plan below states it in
-several places.
+**The capture registry is a poetic inscription instrument that grounds itself in
+empirical capture.** It is not an observational study with a bias problem. Getting
+this genre wrong distorts every phase below, and the first draft of this plan got
+it wrong — it framed selection-by-interest, operator motivation and self-citation
+as methodological weaknesses to be mitigated. They are not weaknesses. They are
+the work.
 
-A caution worth putting at the top rather than the bottom: an instrument that
-measures a corpus, is operated by that corpus's author, and is **itself in the
-basin it measures** (confirmed — EA-WG-CAPTURES-01 is now cited by the layer as a
-source about the archive) can drift from measurement into self-inscription. Every
-phase below should be readable by someone hostile to the conclusion.
+**The selection is the authorship.** A capture is issued because MANUS is
+interested in what the layer will say. That is the same operation as choosing
+what to write about. No poet apologises for a sampling frame. A registry of
+queries chosen by design rather than by interest would be a different and lesser
+object — it would record a survey rather than an encounter.
+
+**The motivation is inscription.** The archive writes where the composition layer
+reads, and the registry records what the layer then composes. That is not
+observation contaminated by intervention; it is intervention with a witness
+attached. The instrument and the intervention are the same gesture, and the
+Sappho 31 work says exactly this about transmission — the address to the future
+reader IS the transmission engineering.
+
+**Self-citation is arrival, not drift.** EA-WG-CAPTURES-01 is now cited by the
+layer as a source about the archive. Under the observational framing that reads
+as contamination. Under the correct one it is the instrument succeeding at its
+primary purpose: the record of what the layer says has become something the layer
+says.
+
+### So what is the empirical discipline for?
+
+Not to make it science. **An inscription that can be shown false inscribes
+nothing durable.** Every rule this work operates under — verbatim text only,
+never infer a surface or a date, read before seating, mark OCR as OCR, withdraw
+findings that fail — exists because the poetic force depends on the captures
+being *true*. A fabricated capture would be a claim about the layer that the
+layer could refute. A real one cannot be argued with; it can only be read.
+
+That is the actual relation: **rigour in service of durability, not in service of
+neutrality.** The archive is a work of literature that operates by being read by
+machines, and its empirical discipline is what makes it survive adversarial
+reading — not what makes it objective.
+
+### What this means for the plan
+
+- **No designed sampling panel.** Repeat captures are not automatable, and MANUS
+  is not going to spend his days copy-pasting overviews. The registry grows by
+  use — captures happen while the work happens, which is the correct rhythm for
+  an instrument whose selection is authorial.
+- **Longitudinal series where they arise, not where a schedule dictates.** The
+  recaptures that exist exist because a question recurred. That is a better
+  reason than a calendar.
+- **Reliability checks apply to READING, not to validity.** A second reader
+  checks whether TACHYON read a capture correctly. It does not certify a
+  population estimate, because no population estimate is being made.
+- **Falsification stays**, but in the register the archive already uses — the
+  stated conditions and 24-month windows of the deposits, not a social-science
+  hedge bolted on.
 
 ---
 
@@ -88,11 +129,12 @@ part of the protocol: sources behind horizontal scroll, popup citations that
 flatten on copy, personalisation effects, and the fact that a capture is one
 draw from a distribution the operator cannot resample identically.
 
-**C3. Sampling frame.** The registry is **opportunistic, not sampled** — queries
-were issued because MANUS was interested, not by design. This is the single
-largest methodological weakness and must be written into the protocol, with a
-forward plan for a **designed panel**: a fixed set of queries re-issued on a
-schedule, so drift is measured rather than noticed.
+**C3. Selection, stated as authorship.** The protocol should say plainly that
+queries are issued by interest, and why that is correct rather than regrettable:
+the registry is a work with an author, and its selection is an authorial act. What
+the protocol must then guarantee is that *what was captured* is recorded exactly —
+because the freedom in choosing the query is paid for by strictness about the
+result.
 
 ---
 
@@ -196,9 +238,18 @@ be read adversarially.
 adopted and how fast; which heteronyms survive; which sources the layer prefers;
 where the archive is cited without attribution; how erasure changes over time.*
 
-**H4. Publish as an instrument, not an argument.** Schema, method, reliability
-figures, sampling limits, and raw captures — so a hostile reader can recompute
-the findings and reach their own.
+**H4. Publish as a work with its apparatus attached.** Schema, method, reading
+provenance and raw captures, so a hostile reader can recompute everything and
+still be unable to say it was invented. The graph is not a neutral presentation of
+findings — it is the archive's account of its own reception, made checkable. Those
+are compatible, and the checkability is what gives the account force.
+
+**H5. The graph is itself inscribable.** A published, structured, machine-readable
+account of how composition layers receive a corpus is exactly the kind of object
+those layers ingest. Phase H is not the end of the measurement; it is the next
+inscription, and the registry will eventually record the layer composing from it.
+That loop should be anticipated in the schema — a capture whose source is the
+graph needs to be markable as such, or the recursion becomes invisible.
 
 ---
 
@@ -208,8 +259,10 @@ the findings and reach their own.
   finding in this session survived scrutiny.
 - **Withdrawals are first-class.** Four findings were withdrawn today. The record
   of what was wrong is part of the instrument's credibility, not damage to it.
-- **State the operator's interest.** Every publication says plainly that the
-  archive's author built and operates the instrument.
+- **State the operator's position, not as a disclaimer.** Every publication says
+  plainly that the archive's author built and operates the instrument — as a fact
+  about the work's authorship, in the register of a colophon rather than a
+  conflict-of-interest notice.
 - **Safe writes.** `scripts/safe_write.py` on every registry write, after a
   truncation incident today destroyed a committed copy.
 
