@@ -264,14 +264,17 @@ def build():
 
 
 def main():
-    if not CAPTURES.exists():
-        print("SKIP: the Capture Registry is withdrawn from publication (quarantine/capture-registry-20260812/) and under reconstruction; nothing to process.")
-        return 0
+    # `global` must precede every read of the name in this scope. A withdrawal
+    # guard added on 2026-08-12 was inserted ABOVE it and read CAPTURES.exists(),
+    # which made the whole module a SyntaxError — so the resolver had not run
+    # since. Retired 2026-08-13 on reseating: data/EA-WG-CAPTURES-01.json is live
+    # again, generated from the rebuild, with analyst prose and machine text held
+    # in separate fields.
+    global CAPTURES
     ap = argparse.ArgumentParser()
     ap.add_argument('--captures', default=None)
     ap.add_argument('--dry-run', action='store_true')
     a = ap.parse_args()
-    global CAPTURES
     if a.captures:
         CAPTURES = a.captures
     p = build()
