@@ -151,7 +151,13 @@ def transcript_block(e, gallery=''):
     # click away, not stack them all in the header.
     if gallery:
         parts.append('<div class="cap-tr-label">Further capture images</div>' + gallery)
-    rows = "".join(f'<dt>{esc(str(k))}</dt><dd>{esc(str(v))}</dd>'
+    # Row tint groups so the table reads at a glance: capture conditions in one
+    # tone, measurement in another, identifiers in a third.
+    GROUP = {"captured": "cond", "surface": "cond", "auth state": "cond", "evidence class": "cond",
+             "PER": "meas", "PER units retained": "meas", "failure modes": "meas", "citations read": "meas",
+             "observation id": "ident", "address id": "ident"}
+    rows = "".join(f'<dt class="g-{GROUP.get(k,"cond")}">{esc(str(k))}</dt>'
+                   f'<dd class="g-{GROUP.get(k,"cond")}">{esc(str(v))}</dd>'
                    for k, v in meta.items() if v not in (None, "", [], {}))
     if rows:
         parts.append('<div class="cap-tr-label">Capture record</div>'
@@ -183,12 +189,46 @@ def transcript_block(e, gallery=''):
             + '</li>' for c in coll)
         parts.append('<div class="cap-tr-label">Collision register</div>'
                      f'<ul class="cap-cites">{rows}</ul>')
+    def split_source_strip(text, cites):
+        """A paste carries the composed answer AND the source strip, run together.
+
+        MANUS: "within the transcripts, citation cards appear as a garbled blob
+        with no differentiation from transcript body." The citations are already
+        extracted, so the strip is grep-identifiable — this finds where it starts
+        and renders it apart, WITHOUT altering a byte of the verbatim record.
+
+        Conservative by design: it only splits on a cited title or snippet found
+        in the last 60% of the text, and only when two or more distinct cited
+        sources appear at or after that point. One stray match is not a strip.
+        """
+        if not cites or len(text) < 400:
+            return text, ""
+        floor = int(len(text) * 0.40)
+        marks = []
+        for c in cites:
+            for key in (c.get("title"), (c.get("snip") or "")[:60], c.get("site")):
+                k = (key or "").strip()
+                if len(k) < 14:
+                    continue
+                i = text.find(k, floor)
+                if i >= 0:
+                    marks.append(i)
+                    break
+        if len(marks) < 2:
+            return text, ""
+        cut = min(marks)
+        return text[:cut].rstrip(), text[cut:].strip()
+
     if tr:
         cls = e.get("transcript_class") or ""
         note = " · ".join(x for x in (cls, e.get("transcript_complete"), e.get("transcript_read")) if x)
+        answer, strip = split_source_strip(tr, cites)
         parts.append('<div class="cap-tr-label">Machine text, verbatim</div>'
                      + (f'<div class="cap-tr-warn-line">{esc(note)}</div>' if note else '')
-                     + f'<div class="cap-tr-body" itemprop="text">{esc(tr)}</div>')
+                     + f'<div class="cap-tr-body" itemprop="text">{esc(answer)}</div>'
+                     + ('<div class="cap-tr-striplabel">source strip, as pasted &mdash; '
+                        'the same sources listed above, run together by the copy</div>'
+                        f'<div class="cap-tr-strip">{esc(strip)}</div>' if strip else ''))
     # SUB-ROUNDS BELONG TO THE PARENT AND ARE NEVER A CAPTURE. Presenting them as
     # captures inflated the count and corrupted every per-capture measurement in
     # the dataset — PER, defect rates, voice quotient denominators, all of it.
