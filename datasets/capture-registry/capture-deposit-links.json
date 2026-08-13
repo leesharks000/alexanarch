@@ -3,20 +3,20 @@
   "name": "Capture ↔ Deposit Link Map",
   "description": "Edges between EA-WG-CAPTURES-01 (the AI Overview / AI Mode Capture Registry, authored at machinemediation.org) and the Alexanarch deposit corpus. Produced by scripts/resolve_capture_links.py. Each edge records the resolution method so any confidence tier can be discarded. An edge asserts that the capture entry references, or its query matches, the deposit — not that the deposit is the capture's sole subject; exactly one edge per capture is marked primary, ranked by evidence of aboutness rather than by identifier hardness (a DOI can be cited in passing). Deposit-number mentions are deliberately excluded as unsafe. Unresolved captures are enumerated rather than silently dropped.",
   "generated_by": "scripts/resolve_capture_links.py",
-  "generated_at": "2026-08-13T17:55:07Z",
+  "generated_at": "2026-08-13T18:32:17Z",
   "captures_source": {
     "file": "data/EA-WG-CAPTURES-01.json",
     "version": "10.0",
     "date": "2026-08-13",
-    "total_captures": 305,
+    "total_captures": 300,
     "canonical_home": "https://www.machinemediation.org/data/registry.json",
-    "sha256": "921264a87a83706e8bb5f003fc884bf8ec03aa30291aeea0a801e4ab4e941b9f"
+    "sha256": "e0d1911363404bc0552d986722e378ff07ce85ebb82f5d154cc8b9a854472972"
   },
   "totals": {
-    "captures": 305,
+    "captures": 300,
     "captures_linked": 177,
-    "captures_unresolved": 128,
-    "link_rate": 0.5803,
+    "captures_unresolved": 123,
+    "link_rate": 0.59,
     "edges": 445
   },
   "method_counts": {
@@ -8512,11 +8512,6 @@
   },
   "unresolved": [
     {
-      "slug": "20260803-stamp-reception-chatgpt-mandala",
-      "q": "20260803 stamp reception chatgpt mandala",
-      "date": "2026-08-03"
-    },
-    {
       "slug": "249",
       "q": "20260803-stamp-reception-chatgpt-mandala.png",
       "date": "2026-08-03"
@@ -8582,19 +8577,9 @@
       "date": "2026-07-31"
     },
     {
-      "slug": "anti-suppression-differential-crediting",
-      "q": "anti suppression differential crediting",
-      "date": "null"
-    },
-    {
       "slug": "autonomous-semantic-warfare",
       "q": "autonomous semantic warfare rex fraction",
       "date": "2026-06-13"
-    },
-    {
-      "slug": "20260803-stamp-reception-chatgpt",
-      "q": "AXN symbolon stamp",
-      "date": "2026-08-03"
     },
     {
       "slug": "chatgpt-psychosis",
@@ -9097,11 +9082,6 @@
       "date": "2026-06-13"
     },
     {
-      "slug": "20260803-symbolon-incognito-overview",
-      "q": "symbolon",
-      "date": "2026-08-03"
-    },
-    {
       "slug": "talos-morrow-umbml",
       "q": "talos morrow university moon base",
       "date": "2026-06-13"
@@ -9145,11 +9125,6 @@
       "slug": "zenodo-packet-zpzp",
       "q": "zenodo packet zpzp",
       "date": "2026-06-14"
-    },
-    {
-      "slug": "zenodo-packet-zpzp-recapture",
-      "q": "zenodo packet ZPZP",
-      "date": "null"
     }
   ]
 }

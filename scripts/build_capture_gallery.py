@@ -112,22 +112,36 @@ def mark_inline_cites(text):
 def split_source_strip(text, cites):
     """A paste carries the composed answer AND the source strip, run together.
 
-    The citations are already extracted, so the strip is grep-identifiable; this
-    finds where it starts so the answer can be shown as the answer, WITHOUT
-    altering a byte of the verbatim record.
+    The citations are already extracted, so the strip is grep-identifiable. This
+    finds where it begins so the answer reads as the answer, WITHOUT altering a
+    byte of the verbatim record — only the rendering separates them.
 
-    Conservative by design: it splits only on a cited title or snippet found in
-    the last 60% of the text, and only where two or more distinct cited sources
-    appear at or after that point. One stray match is not a strip.
+    CAUTION IS THE WHOLE DESIGN HERE. Cutting a transcript in the wrong place
+    would silently truncate what the layer said, which is worse than leaving a
+    blob. Three guards, all of which must pass:
+
+      1. TWO OR MORE distinct cited sources must be found. One stray match is
+         not a strip.
+      2. The match must fall in the last 60% of the text.
+      3. THE MATCHED STRING MUST NOT APPEAR IN THE FIRST 40%. A title that also
+         occurs in the answer body is a phrase the layer used, not a strip
+         boundary, and cutting there would amputate the answer.
+
+    Guard 3 is what lets the title floor come down from 14 characters to 10 —
+    six transcripts had two or more cited titles sitting uncut in their tails
+    purely because the titles were short.
     """
     if not cites or len(text) < 400:
         return text, ""
     floor = int(len(text) * 0.40)
+    head = text[:floor]
     marks = []
     for c in cites:
-        for key in (c.get("title"), (c.get("snip") or "")[:60], c.get("site")):
+        for key, minlen in ((c.get("title"), 10), ((c.get("snip") or "")[:60], 14), (c.get("site"), 14)):
             k = (key or "").strip()
-            if len(k) < 14:
+            if len(k) < minlen:
+                continue
+            if k in head:            # guard 3 — it is answer text, not a boundary
                 continue
             i = text.find(k, floor)
             if i >= 0:
@@ -136,6 +150,10 @@ def split_source_strip(text, cites):
     if len(marks) < 2:
         return text, ""
     cut = min(marks)
+    # Never cut so early that the "answer" is shorter than the strip by a wide
+    # margin — that pattern means the match was inside the answer after all.
+    if cut < len(text) * 0.15:
+        return text, ""
     return text[:cut].rstrip(), text[cut:].strip()
 
 
@@ -228,57 +246,6 @@ def transcript_block(e, gallery=''):
         parts.append('<div class="cap-tr-label">Analysis '
                      '<span class="cap-tr-warn">analyst prose, not machine text</span></div>'
                      f'<div class="cap-tr-prose">{para(analysis)}</div>')
-    if cites:
-        # ONE CITATION SECTION, NOT THREE. The extracted card and its as-pasted
-        # segment are THE SAME SOURCE seen two ways — what the layer showed, and
-        # what the copy produced. Splitting them across "Sources as cited" and
-        # "Source strip" made two lists of the same thing and left the reader to
-        # match them up. They are merged here, one entry per source.
-        strip_for = {}
-        if tr:
-            _, _strip = split_source_strip(tr, cites)
-            if _strip:
-                cuts = []
-                for c in cites:
-                    for key in (c.get("title"), c.get("site")):
-                        k = (key or "").strip()
-                        if len(k) < 8:
-                            continue
-                        i = _strip.find(k)
-                        if i >= 0:
-                            cuts.append((i, c))
-                            break
-                cuts.sort(key=lambda z: z[0])
-                for n_, (i, c) in enumerate(cuts):
-                    j = cuts[n_ + 1][0] if n_ + 1 < len(cuts) else len(_strip)
-                    strip_for[id(c)] = _strip[i:j].strip()
-                if cuts and cuts[0][0] > 0:
-                    strip_for["__unattributed__"] = _strip[:cuts[0][0]].strip()
-        rows = ""
-        for c in cites:
-            nm = esc(str(c.get("site") or "source"))
-            head = (f'<a href="{esc(c["url"])}" target="_blank" rel="noopener">{nm}</a>'
-                    if c.get("url") else f'<b>{nm}</b>')
-            rel = esc(str(c.get("rel") or ""))
-            seg = strip_for.get(id(c))
-            rows += ('<li>'
-                     f'<div class="cap-srchead">{head}'
-                     + (f' <span class="cap-rel">{rel}</span>' if rel else '') + '</div>'
-                     + (f'<div class="cap-ct">{esc(str(c["title"]))}</div>' if c.get("title") else '')
-                     + (f'<div class="cap-cs">{esc(str(c["snip"]))}</div>' if c.get("snip") else '')
-                     + (f'<div class="cap-cn">{esc(str(c["note"]))}</div>' if c.get("note") else '')
-                     + (f'<div class="cap-aspasted"><span class="cap-aspasted-l">as pasted</span>'
-                        f'{esc(seg)}</div>' if seg else '')
-                     + '</li>')
-        un = strip_for.get("__unattributed__")
-        if un:
-            rows += ('<li><div class="cap-srchead cap-srchead-un"><b>unattributed segment</b> '
-                     '<span class="cap-rel">no cited source matches this text</span></div>'
-                     f'<div class="cap-aspasted">{esc(un)}</div></li>')
-        parts.append(f'<div class="cap-tr-label">Sources ({len(cites)}) '
-                     '<span class="cap-tr-warn">as cited, and as the copy produced them</span></div>'
-                     f'<ol class="cap-srclist">{rows}</ol>')
-
     if coll:
         rows = "".join(
             f'<li><b>{esc(str(c.get("with") or ""))}</b>'
@@ -291,9 +258,19 @@ def transcript_block(e, gallery=''):
         cls = e.get("transcript_class") or ""
         note = " · ".join(x for x in (cls, e.get("transcript_complete"), e.get("transcript_read")) if x)
         answer, strip = split_source_strip(tr, cites)
-        parts.append('<div class="cap-tr-label">Machine text, verbatim</div>'
+        # AN OCR STREAM IS NOT A VERBATIM TRANSCRIPT. It is a screenshot read by a
+        # machine, with browser furniture, header chrome and page tail mixed into
+        # the answer, line breaks wherever the image wrapped, and character errors
+        # throughout. Calling it "machine text, verbatim" invites a reader to
+        # treat garble as something the layer said. It is labelled for what it is.
+        _isocr = (e.get("ev") == "ocr") or ("OCR" in str(cls).upper())
+        _lbl = ('OCR stream <span class="cap-tr-warn">screenshot read by machine &mdash; '
+                'chrome, line breaks and character errors are artifacts of the read, '
+                'NOT of the answer</span>') if _isocr else 'Machine text, verbatim'
+        parts.append(f'<div class="cap-tr-label">{_lbl}</div>'
                      + (f'<div class="cap-tr-warn-line">{esc(note)}</div>' if note else '')
-                     + f'<div class="cap-tr-body" itemprop="text">{mark_inline_cites(answer)}</div>')
+                     + f'<div class="cap-tr-body{" cap-tr-ocr" if _isocr else ""}" '
+                       f'itemprop="text">{mark_inline_cites(answer)}</div>')
         # The strip is no longer rendered separately — each segment now sits with
         # its own source above, so the reader sees one list, not two.
     # EACH DATED OBSERVATION EXPANDS ON ITS OWN. A record observed twice is two
@@ -373,6 +350,57 @@ def transcript_block(e, gallery=''):
                      '<div class="cap-cn">' + esc(str(x.get("why") or "")) + '</div></li>')
         parts.append('<div class="cap-tr-label">Session</div>'
                      '<ul class="cap-cites">' + rows + '</ul>')
+    if cites:
+        # ONE CITATION SECTION, NOT THREE. The extracted card and its as-pasted
+        # segment are THE SAME SOURCE seen two ways — what the layer showed, and
+        # what the copy produced. Splitting them across "Sources as cited" and
+        # "Source strip" made two lists of the same thing and left the reader to
+        # match them up. They are merged here, one entry per source.
+        strip_for = {}
+        if tr:
+            _, _strip = split_source_strip(tr, cites)
+            if _strip:
+                cuts = []
+                for c in cites:
+                    for key in (c.get("title"), c.get("site")):
+                        k = (key or "").strip()
+                        if len(k) < 8:
+                            continue
+                        i = _strip.find(k)
+                        if i >= 0:
+                            cuts.append((i, c))
+                            break
+                cuts.sort(key=lambda z: z[0])
+                for n_, (i, c) in enumerate(cuts):
+                    j = cuts[n_ + 1][0] if n_ + 1 < len(cuts) else len(_strip)
+                    strip_for[id(c)] = _strip[i:j].strip()
+                if cuts and cuts[0][0] > 0:
+                    strip_for["__unattributed__"] = _strip[:cuts[0][0]].strip()
+        rows = ""
+        for c in cites:
+            nm = esc(str(c.get("site") or "source"))
+            head = (f'<a href="{esc(c["url"])}" target="_blank" rel="noopener">{nm}</a>'
+                    if c.get("url") else f'<b>{nm}</b>')
+            rel = esc(str(c.get("rel") or ""))
+            seg = strip_for.get(id(c))
+            rows += ('<li>'
+                     f'<div class="cap-srchead">{head}'
+                     + (f' <span class="cap-rel">{rel}</span>' if rel else '') + '</div>'
+                     + (f'<div class="cap-ct">{esc(str(c["title"]))}</div>' if c.get("title") else '')
+                     + (f'<div class="cap-cs">{esc(str(c["snip"]))}</div>' if c.get("snip") else '')
+                     + (f'<div class="cap-cn">{esc(str(c["note"]))}</div>' if c.get("note") else '')
+                     + (f'<div class="cap-aspasted"><span class="cap-aspasted-l">as pasted</span>'
+                        f'{esc(seg)}</div>' if seg else '')
+                     + '</li>')
+        un = strip_for.get("__unattributed__")
+        if un:
+            rows += ('<li><div class="cap-srchead cap-srchead-un"><b>unattributed segment</b> '
+                     '<span class="cap-rel">no cited source matches this text</span></div>'
+                     f'<div class="cap-aspasted">{esc(un)}</div></li>')
+        parts.append(f'<div class="cap-tr-label">Sources ({len(cites)}) '
+                     '<span class="cap-tr-warn">as cited, and as the copy produced them</span></div>'
+                     f'<ol class="cap-srclist">{rows}</ol>')
+
     if oq:
         parts.append('<div class="cap-tr-label">Open questions</div>'
                      '<ul class="cap-cites">' + "".join(f'<li>{esc(str(x))}</li>' for x in oq) + '</ul>')
@@ -434,6 +462,15 @@ def card(e):
                      f'title="Runs this query in general Google search. To run it signed out, copy '
                      f'the link and open it in a private window — a page cannot open one for you.">'
                      f'\u21bb Re-run</a>')
+        _alt = e.get("rerun_alt")
+        if _alt:
+            # THE OTHER FORM OF THE SAME ADDRESS. Quoting is the decisive measured
+            # variable here, and the two forms have come apart entirely on at
+            # least one term. One click puts them side by side.
+            _au = "https://www.google.com/search?q=" + _urlq(_alt["q"])
+            rerun_btn += (f'<a class="cap-cite cap-act cap-rerun cap-rerun-alt" data-act="rerun" '
+                          f'data-rerun="{esc(_au)}" href="{esc(_au)}" target="_blank" rel="noopener" '
+                          f'title="{esc(_alt["why"])}">\u21bb {esc(_alt["label"])}</a>')
         if any("AI Mode" in str(x) for x in _surfaces):
             _ai = _base + "&udm=50"
             rerun_btn += (f'<a class="cap-cite cap-act cap-rerun cap-rerun-ai" data-act="rerun" '
