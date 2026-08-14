@@ -35,7 +35,7 @@ DETERMINISM. Sorted keys, sorted addresses, no clock in the payload except the
 explicit build date. Two runs are byte-identical; `check_render_determinism.py`
 depends on it.
 """
-import json, pathlib, sys, hashlib, unicodedata, argparse, collections
+import json, pathlib, sys, hashlib, unicodedata, argparse, collections, re
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 CANON = ROOT / "rebuild/capture-registry/EA-WG-CAPTURES-01-REBUILD.json"
@@ -223,11 +223,15 @@ def project_obs(obs, addr, taken=None):
 _SLUGS = set()
 
 
-def project_addr(addr):
-    obs = sorted(addr.get("observations") or [], key=lambda o: str(o.get("observed_on") or ""))
-    if not obs:
+def project_group(addrs):
+    """One entry per issued string, however many canonical addresses carry it."""
+    lead_addr = addrs[0]
+    pairs = [(o, a) for a in addrs for o in (a.get("observations") or [])]
+    pairs.sort(key=lambda p: str(p[0].get("observed_on") or ""))
+    if not pairs:
         return None
-    rows = [project_obs(o, addr, _SLUGS) for o in obs]
+    rows = [project_obs(o, a, _SLUGS) for o, a in pairs]
+    addr = lead_addr
     # THE DISPLAY IMAGE IS INHERITED FROM THE ADDRESS. «alexanarch» showed
     # "no image" while holding three observations, because the entry only ever
     # looked at the one it was built from. Most recent imaged observation wins.
@@ -244,17 +248,51 @@ def project_addr(addr):
         entry["img_urls"] = imaged[0]["img_urls"]
         entry["imgs"] = imaged[0]["imgs"]
         entry["_display_image_from"] = imaged[0]["obs_id"]
+    # A NON-QUERY ADDRESS still needs a label. Six addresses carry no issued
+    # string — artifact and record renders, not searches. The published
+    # projection labelled the ChatGPT one with its first image filename; that
+    # rule is kept, so the card shows what was captured instead of a bare id.
+    if not entry.get("q"):
+        imgs = [i for r in rows for i in (r.get("imgs") or []) if i]
+        # The label goes in `q`, because that is the field the gallery renders
+        # as the card title. Held in a private key it rendered SIX BLANK CARDS —
+        # verified only against the data, where it looked correct, and not
+        # against the page, where it did not. q_kind keeps the distinction.
+        entry["q"] = imgs[0] if imgs else lead["slug"]
+        entry["q_kind"] = "non-query"
     entry["cite"] = ("https://www.alexanarch.org/captures/#" + lead["slug"]) if lead["slug"] else None
     entry["d_full"] = lead["d"]
     entry["d_truncated"] = bool(lead["d"] and len(lead["d"]) > 240)
     return entry
 
 
+def sort_key(e):
+    """A quotation mark is not a letter. Sorting on the raw string clustered
+    every quoted address at the head of the list under `"`, so `"erasure skew"`
+    filed before `alexanarch`. Sort on the first alphanumeric run."""
+    q = str(e.get("q") or "")
+    stripped = re.sub(r'^[^0-9A-Za-z\u00C0-\u024F]+', "", q)
+    return (stripped.lower() or "\uffff", str(e.get("slug") or ""))
+
+
 def build(canon):
     _SLUGS.clear()
-    entries = [project_addr(a) for a in canon["addresses"]]
-    entries = [e for e in entries if e]
-    entries.sort(key=lambda e: (str(e.get("q") or "\uffff").lower(), str(e.get("slug") or "")))
+    # STRING-KEYED, per the intake contract: the address IS the exact issued
+    # string and nothing else. Canonical still declares (q_as_issued, surface)
+    # and holds 52 strings split across two or three entries, so projecting
+    # canonical's grain reintroduced the doubling the projection had already
+    # fixed — «"anti-suppression infrastructure"» rendered as three separate
+    # captures, 60 surplus cards in all. Surface is an observation field.
+    groups, order = {}, []
+    for a in canon["addresses"]:
+        q = nfc(a["semantic_address"].get("q_as_issued"))
+        key = ("q", q) if q not in (None, "None") else ("addr", a["semantic_address"].get("address_id"))
+        if key not in groups:
+            groups[key] = []
+            order.append(key)
+        groups[key].append(a)
+    entries = [e for e in (project_group(groups[k]) for k in order) if e]
+    entries.sort(key=sort_key)
     obs_count = sum(e["n_observations"] for e in entries)
     return {
         "registry_id": "EA-WG-CAPTURES-01",
