@@ -163,6 +163,22 @@ def main():
         _dupe = [i for i, n in _ids.items() if n > 1]
         if _dupe:
             fails.append(f"{len(_dupe)} duplicate element id(s) — #{_dupe[0]} resolves ambiguously")
+
+    # FIELD SHAPES THE RENDERER DEREFERENCES. A `collisions` value written as a
+    # plain string instead of a list of {with, via, ev} dicts crashed the gallery
+    # build on 2026-08-14 with AttributeError deep inside a generator — the data
+    # was already written and committed before anything noticed. Checked here, in
+    # the data, before a renderer meets it.
+    for _e in entries:
+        for _o in (_e.get("observations") or [_e]):
+            _c = _o.get("collisions")
+            if _c is not None and not isinstance(_c, list):
+                fails.append(f"{_o.get('slug')}: collisions is {type(_c).__name__}, must be a list of objects")
+            elif isinstance(_c, list):
+                for _x in _c:
+                    if not isinstance(_x, dict) or "with" not in _x:
+                        fails.append(f"{_o.get('slug')}: a collisions entry lacks the 'with' key")
+                        break
         if n_btn < len(entries):
             fails.append(f"{n_btn} of {len(entries)} cards carry a cite control; "
                          f"the rest offer no way to cite what they display")
