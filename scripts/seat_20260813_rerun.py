@@ -6,8 +6,16 @@ WHY THESE ADDRESSES. Every one had NO IMAGE. Sixteen of the seventeen carried th
 Recaptured with frames, they are confirmed Overview popups — the retraction is
 now corroborated by evidence rather than by attestation alone.
 
-AUTH. Signed in, NOT incognito: Google has disabled AI Overview in incognito, so
-the authentication-controlled pair is no longer obtainable on this surface.
+AUTH. Signed in, NOT incognito. CORRECTED: I first recorded that Google had
+disabled AI Overview in incognito and that the authentication-controlled pair was
+therefore gone. Wrong — the operator has observed this many times: it is a SWITCH
+GOOGLE TOGGLES, on and off, periodically. Intermittent, not withdrawn.
+
+That makes availability a measurable property of the instrument rather than an
+obstacle to measurement. 96 observations here are both incognito AND Overview,
+and each dates a moment the switch was ON. The OFF windows are invisible: a query
+that produced no Overview was never seated, so an unattempted incognito capture
+and a refused one look identical in this record. NULL is not zero.
 
 SURFACE. Overview for sixteen. `"broke Marxist poet"` is AI Mode native, and for
 the first time the determination rests on the FRAME: the AI Mode tab is SELECTED
