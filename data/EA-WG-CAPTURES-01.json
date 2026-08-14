@@ -1,4 +1,22 @@
 {
+ "_FLOW": {
+  "_READ_THIS_FIRST": "ONE CANONICAL STORE, ONE PROJECTION, RENDERERS RENDER. This file is the PROJECTION. Canonical is rebuild/capture-registry/EA-WG-CAPTURES-01-REBUILD.json. Surfaces are DERIVED from this file and must never be written to by hand: captures/index.html by scripts/build_capture_gallery.py; leesharks.com and godkinggoogle.com FETCH this file at render; machinemediation.org HOSTS a copy, refreshed by its own scripts/sync_capture_mirror.py. A copy without a refresh path becomes a claim about the past presented identically to a claim about the present.",
+  "writing_to_this_file": "INTAKE adds an observation and is safe. REPAIR touches an existing record and is not: on 2026-08-13 forty captures were seated without incident and EVERY DESTRUCTIVE ACT WAS A FIX. Before touching an existing record: state what you believe is broken and the evidence, SEARCH THE ARCHIVE AGAINST THAT BELIEF, keep it in its own commit, and verify against the RENDERED PAGE rather than the data. See rebuild/capture-registry/PIPELINE.md and the reading_canon block below.",
+  "slugs_are_permanent": "A renamed slug silently breaks every citation made to it and leaves no error behind — the reader lands somewhere else and is not told. Record any change in the entry's slug_history.",
+  "version_moves_with_content": "Downstream nodes detect staleness by comparing version and count. A content change that leaves the version alone defeats the only mechanism they have."
+ },
+ "citation": {
+  "canonical_form": "Sharks, Lee. \"{q}\". EA-WG-CAPTURES-01, capture {slug}, {date}. Crimson Hexagonal Archive / Alexanarch. https://www.alexanarch.org/captures/#{slug}",
+  "anchor_form": "https://www.alexanarch.org/captures/#{slug}",
+  "registry_form": "Sharks, Lee. EA-WG-CAPTURES-01: AI Overview Capture Registry. Crimson Hexagonal Archive / Alexanarch. https://www.alexanarch.org/data/EA-WG-CAPTURES-01.json",
+  "fields": {
+   "q": "the exact issued string, NFC-normalised; quotation marks are significant",
+   "slug": "stable anchor; permanent once published",
+   "date": "the capture date, not the seating date"
+  },
+  "granularity": "The citable unit is the ADDRESS (one card, one anchor). An address may carry several observations; cite the address and name the date of the observation meant.",
+  "_note": "Declared 2026-08-14. The registry had built anchors of the form captures/#slug since before any gallery set them, and had never stated the grammar a consumer should use."
+ },
  "registry_id": "EA-WG-CAPTURES-01",
  "version": "10.7",
  "date": "2026-08-14",
@@ -827,7 +845,17 @@
     {
      "url": "https://www.alexanarch.org/captures/#10-000-macarthur-genius-grants-20260813",
      "authority": "canonical",
-     "note": "the archive holds the registry and the images; citations resolve here"
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#10-000-macarthur-genius-grants-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#10-000-macarthur-genius-grants-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
     }
    ],
    "cite": "https://www.alexanarch.org/captures/#10-000-macarthur-genius-grants-20260813",
@@ -1853,7 +1881,17 @@
     {
      "url": "https://www.alexanarch.org/captures/#ai-overview-capture-registry-20260813",
      "authority": "canonical",
-     "note": "the archive holds the registry and the images; citations resolve here"
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#ai-overview-capture-registry-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#ai-overview-capture-registry-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
     }
    ],
    "cite": "https://www.alexanarch.org/captures/#ai-overview-capture-registry-20260813",
@@ -5941,7 +5979,17 @@
     {
      "url": "https://www.alexanarch.org/captures/#alexanarch-records-20260813",
      "authority": "canonical",
-     "note": "the archive holds the registry and the images; citations resolve here"
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#alexanarch-records-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#alexanarch-records-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
     }
    ],
    "cite": "https://www.alexanarch.org/captures/#alexanarch-records-20260813",
@@ -8012,7 +8060,17 @@
     {
      "url": "https://www.alexanarch.org/captures/#alexanarch-surface-weather-observatory-20260813",
      "authority": "canonical",
-     "note": "the archive holds the registry and the images; citations resolve here"
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#alexanarch-surface-weather-observatory-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#alexanarch-surface-weather-observatory-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
     }
    ],
    "cite": "https://www.alexanarch.org/captures/#alexanarch-surface-weather-observatory-20260813",
@@ -9954,7 +10012,17 @@
     {
      "url": "https://www.alexanarch.org/captures/#alexanarch-boats-20260813",
      "authority": "canonical",
-     "note": "the archive holds the registry and the images; citations resolve here"
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#alexanarch-boats-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#alexanarch-boats-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
     }
    ],
    "cite": "https://www.alexanarch.org/captures/#alexanarch-boats-20260813",
@@ -10246,7 +10314,17 @@
     {
      "url": "https://www.alexanarch.org/captures/#alexanarch-classics-20260813",
      "authority": "canonical",
-     "note": "the archive holds the registry and the images; citations resolve here"
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#alexanarch-classics-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#alexanarch-classics-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
     }
    ],
    "cite": "https://www.alexanarch.org/captures/#alexanarch-classics-20260813",
@@ -10502,7 +10580,17 @@
     {
      "url": "https://www.alexanarch.org/captures/#alexanarch-datasets-20260813",
      "authority": "canonical",
-     "note": "the archive holds the registry and the images; citations resolve here"
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#alexanarch-datasets-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#alexanarch-datasets-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
     }
    ],
    "cite": "https://www.alexanarch.org/captures/#alexanarch-datasets-20260813",
@@ -10722,7 +10810,17 @@
     {
      "url": "https://www.alexanarch.org/captures/#alexanarch-omega-20260813",
      "authority": "canonical",
-     "note": "the archive holds the registry and the images; citations resolve here"
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#alexanarch-omega-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#alexanarch-omega-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
     }
    ],
    "cite": "https://www.alexanarch.org/captures/#alexanarch-omega-20260813",
@@ -10888,7 +10986,17 @@
     {
      "url": "https://www.alexanarch.org/captures/#alexanarch-revelation-20260813",
      "authority": "canonical",
-     "note": "the archive holds the registry and the images; citations resolve here"
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#alexanarch-revelation-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#alexanarch-revelation-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
     }
    ],
    "cite": "https://www.alexanarch.org/captures/#alexanarch-revelation-20260813",
@@ -13404,7 +13512,17 @@
     {
      "url": "https://www.alexanarch.org/captures/#chatgpt-psychosis-a-love-story-20260813-2142",
      "authority": "canonical",
-     "note": "the archive holds the registry and the images; citations resolve here"
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#chatgpt-psychosis-a-love-story-20260813-2142",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#chatgpt-psychosis-a-love-story-20260813-2142",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
     }
    ],
    "cite": "https://www.alexanarch.org/captures/#chatgpt-psychosis-a-love-story-20260813-2142",
@@ -20541,7 +20659,17 @@
     {
      "url": "https://www.alexanarch.org/captures/#endogenous-sophon-alexanarch-20260813",
      "authority": "canonical",
-     "note": "the archive holds the registry and the images; citations resolve here"
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#endogenous-sophon-alexanarch-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#endogenous-sophon-alexanarch-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
     }
    ],
    "cite": "https://www.alexanarch.org/captures/#endogenous-sophon-alexanarch-20260813",
@@ -21737,7 +21865,17 @@
     {
      "url": "https://www.alexanarch.org/captures/#epic-without-hero-20260813",
      "authority": "canonical",
-     "note": "the archive holds the registry and the images; citations resolve here"
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#epic-without-hero-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#epic-without-hero-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
     }
    ],
    "cite": "https://www.alexanarch.org/captures/#epic-without-hero-20260813",
@@ -37458,7 +37596,17 @@
     {
      "url": "https://www.alexanarch.org/captures/#lee-sharks-the-network-is-the-porm-20260813",
      "authority": "canonical",
-     "note": "the archive holds the registry and the images; citations resolve here"
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#lee-sharks-the-network-is-the-porm-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#lee-sharks-the-network-is-the-porm-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
     }
    ],
    "cite": "https://www.alexanarch.org/captures/#lee-sharks-the-network-is-the-porm-20260813",
@@ -59199,7 +59347,17 @@
     {
      "url": "https://www.alexanarch.org/captures/#semantic-samizdat-20260813",
      "authority": "canonical",
-     "note": "the archive holds the registry and the images; citations resolve here"
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#semantic-samizdat-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#semantic-samizdat-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
     }
    ],
    "cite": "https://www.alexanarch.org/captures/#semantic-samizdat-20260813",
@@ -61546,7 +61704,17 @@
     {
      "url": "https://www.alexanarch.org/captures/#stable-visionary-loci-20260813",
      "authority": "canonical",
-     "note": "the archive holds the registry and the images; citations resolve here"
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#stable-visionary-loci-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#stable-visionary-loci-20260813",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
     }
    ],
    "cite": "https://www.alexanarch.org/captures/#stable-visionary-loci-20260813",
@@ -66492,7 +66660,17 @@
     {
      "url": "https://www.alexanarch.org/captures/#who-is-johannes-sigil-20260814",
      "authority": "canonical",
-     "note": "the archive holds the registry, the transcript and the frame"
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://godkinggoogle.vercel.app/captures/#who-is-johannes-sigil-20260814",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://leesharks.com/captures/#who-is-johannes-sigil-20260814",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
     }
    ],
    "cite": "https://www.alexanarch.org/captures/#who-is-johannes-sigil-20260814",

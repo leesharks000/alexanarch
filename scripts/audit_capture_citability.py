@@ -118,11 +118,19 @@ def main():
         # reader was already on. It looked functional and did nothing — the worst
         # of the three states, because a broken control that reports success is
         # not distinguishable from one that works.
-        n_btn = pg.count('class="cap-cite"')
+        # MATCH THE CLASS, NOT THE ATTRIBUTE STRING. The control ships as
+        # class="cap-cite cap-act" — it carries cap-act so ONE delegated
+        # handler on the container serves every card. An exact-string check for
+        # class="cap-cite" reported 0 of 316 on a control that renders twice per
+        # card and works: verified 2026-08-14, 632 buttons, handler bound via
+        # closest('.cap-act'), reading dataset.citation into navigator.clipboard.
+        # A gate that fails a working affordance teaches the next reader to
+        # weaken the affordance until the gate passes.
+        n_btn = len(re.findall(r'class="[^"]*\bcap-cite\b[^"]*"', pg))
         if n_btn < len(entries):
             fails.append(f"{n_btn} of {len(entries)} cards carry a cite control; "
                          f"the rest offer no way to cite what they display")
-        if "closest('.cap-cite')" not in pg:
+        if not re.search(r"closest\(['\"]\.cap-(cite|act)['\"]\)", pg):
             fails.append("no delegated handler for the cite control: the button renders "
                          "and does nothing when clicked")
         if 'data-citation=' not in pg:
