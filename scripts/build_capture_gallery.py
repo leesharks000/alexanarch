@@ -305,17 +305,7 @@ def transcript_block(e, gallery=''):
     if tr:
         cls = e.get("transcript_class") or ""
         note = " · ".join(x for x in (cls, e.get("transcript_complete"), e.get("transcript_read")) if x)
-        # THE WRAPPER SUPERSEDES THE SPLITTER. Where a formal wrapper was granted
-        # the citation cards were already extracted at intake, so there is no
-        # strip left in the transcript to find. Guard 3 inside the splitter only
-        # protects titles occurring in the first 40%, so a cleaned body that
-        # quotes a cited title late remains cuttable — «"the network is the
-        # poem"» is exactly that shape. Skip it rather than risk amputating an
-        # answer that was already correctly separated.
-        if (e.get("wrapper") or "") == "granted":
-            answer, strip = tr, ""
-        else:
-            answer, strip = split_source_strip(tr, cites)
+        answer, strip = split_source_strip(tr, cites)
         # AN OCR STREAM IS NOT A VERBATIM TRANSCRIPT. It is a screenshot read by a
         # machine, with browser furniture, header chrome and page tail mixed into
         # the answer, line breaks wherever the image wrapped, and character errors
