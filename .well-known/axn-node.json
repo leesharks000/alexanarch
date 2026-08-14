@@ -1,37 +1,11 @@
 {
- "$schema": "https://alexanarch.org/data/specs/AXN-MINT-ENDPOINT-SPEC-v0.1.md",
- "node": "alexanarch.org",
- "operator": "Lee Sharks (ORCID 0009-0000-1599-0703)",
- "protocol_versions": [
-  "axn/v2"
- ],
- "roles": [
-  "mint",
-  "resolve",
-  "preserve",
-  "observe",
-  "semantic"
- ],
- "registry_head": "2423783caa5560f4f9587d5431690cc16802a13e30d25cf94c08fceecdabf7cd",
- "highest_deposit": 1457,
- "deposit_count": 1457,
- "declared_at": "2026-08-13T02:53:43Z",
- "surfaces": {
-  "mint_verify": "https://www.alexanarch.org/mint/",
-  "registry": "https://www.alexanarch.org/data/registry.json",
-  "resolver": "https://www.alexanarch.org/resolve/",
-  "doi_resolution_index": "https://www.alexanarch.org/data/doi-resolution-index.json",
-  "manifests": "https://www.alexanarch.org/data/",
-  "canonical_implementation": "https://github.com/leesharks000/alexanarch/blob/main/scripts/axn_lib.py"
- },
- "peers_url": "https://www.alexanarch.org/rhizome/peers.json",
- "ledger_url": "https://www.alexanarch.org/rhizome/ledger.json",
- "last_reconciliation": null,
- "note": "First node of the AXN-speaking network. Peer list is live and empty; the socket precedes the plug. Any independently administered node holding verified copies may declare itself and request listing.",
+ "registry_head": "623b3975e8b11c99f58dca748fdefedb06c8eb1e347b4a8096250fded7bdfe60",
+ "highest_deposit": 1458,
+ "deposit_count": 1458,
+ "declared_at": "2026-08-14T17:38:15Z",
  "position_count": 1444,
  "kernel_count": 1449,
  "sealed_cores": 31,
- "peer_count": 0,
  "generated_by": "scripts/generate_node_declaration.py",
  "generation_note": "Every measured field on this declaration is computed from registry state on each commit and verified live afterwards. It is never typed by hand. A root node that advertises a stale head is how a federation silently diverges."
 }
