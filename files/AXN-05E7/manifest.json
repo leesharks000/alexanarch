@@ -1,0 +1,3448 @@
+{
+ "registry": "EA-WG-CAPTURES-01",
+ "version": "10.9",
+ "date": "2026-08-14",
+ "addresses": 328,
+ "captures": 470,
+ "files": 428,
+ "total_bytes": 202873210,
+ "files_manifest": [
+  {
+   "filename": "EA-WG-CAPTURES-01.json",
+   "path": "/data/EA-WG-CAPTURES-01.json",
+   "bytes": 7729527,
+   "sha256": "4cabba55945ac0d980596f57f7b9605ae11f0af785ffb2d3fcfec07842101c24",
+   "media_type": "application/json",
+   "role": "projection — the published registry, what every gallery renders from"
+  },
+  {
+   "filename": "EA-WG-CAPTURES-01-REBUILD.json",
+   "path": "/rebuild/capture-registry/EA-WG-CAPTURES-01-REBUILD.json",
+   "bytes": 21486566,
+   "sha256": "2bbb465893a9188e89bc0d4e8ba83466ab515114337dc4078f2c8bd07d53ee89",
+   "media_type": "application/json",
+   "role": "canonical store — the one writable authority"
+  },
+  {
+   "filename": "PIPELINE.md",
+   "path": "/rebuild/capture-registry/PIPELINE.md",
+   "bytes": 6379,
+   "sha256": "123e2d7fec943174e2e8850621306058005c1d1e09a6a0789caffc9b21fc44e7",
+   "media_type": "text/markdown",
+   "role": "pipeline — intake and repair procedure"
+  },
+  {
+   "filename": "INTAKE-CONTRACT.md",
+   "path": "/rebuild/capture-registry/INTAKE-CONTRACT.md",
+   "bytes": 2943,
+   "sha256": "9ea56ca1c2504af0331e1aff124f4f24b7d7e478ebb879486f058aba11fd919b",
+   "media_type": "text/markdown",
+   "role": "intake contract"
+  },
+  {
+   "filename": "capture-deposit-links.json",
+   "path": "/data/capture-deposit-links.json",
+   "bytes": 328004,
+   "sha256": "561748ed6a202d8e67533281ecec1f202ef557f774f6db33f7570e32b873d0bc",
+   "media_type": "application/json",
+   "role": "capture→deposit join, auditable ladder"
+  },
+  {
+   "filename": "semantic-addresses.json",
+   "path": "/data/semantic-addresses.json",
+   "bytes": 1794164,
+   "sha256": "53edafff0f236ef38a9008ee69c3e391583c276914a56b9f4136f13d483f8266",
+   "media_type": "application/json",
+   "role": "semantic addresses folded from every capture query"
+  },
+  {
+   "filename": "index.html",
+   "path": "/captures/index.html",
+   "bytes": 4814409,
+   "sha256": "a4633027ff67850082e93a3407036e2f4bc8cbc35352be1f9520f7830485f960",
+   "media_type": "text/html",
+   "role": "rendered gallery — 328 anchored cards"
+  },
+  {
+   "filename": "EA-WG-CAPTURES-01.json",
+   "path": "/datasets/capture-registry/EA-WG-CAPTURES-01.json",
+   "bytes": 6764309,
+   "sha256": "6754f2c0cd938c4f42966fce6c03a570111ac9c070adcdf4667d27d3fa843594",
+   "media_type": "application/json",
+   "role": "published dataset mirror"
+  },
+  {
+   "filename": "screengrab-20260813-164549.png",
+   "path": "/data/captures/10-000-macarthur-genius-grants-20260813/screengrab-20260813-164549.png",
+   "bytes": 367403,
+   "sha256": "c4fc5f7576590f5cca34ab4dfa2d42aafbaf59b76febe135d44bcd8b08e3472d",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for 10-000-macarthur-genius-grants-20260813"
+  },
+  {
+   "filename": "screengrab-20260806-200118.png",
+   "path": "/data/captures/2026-08-06-immanent-phenomenology/screengrab-20260806-200118.png",
+   "bytes": 348207,
+   "sha256": "c6d89139c42f5924d7adf2627575227982f22080c6d7d76041d6a8cff71a2c45",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for 2026-08-06-immanent-phenomenology"
+  },
+  {
+   "filename": "screengrab-20260806-200128.png",
+   "path": "/data/captures/2026-08-06-immanent-phenomenology/screengrab-20260806-200128.png",
+   "bytes": 363597,
+   "sha256": "8fcda50ff3596477a2483d86b51f87f8dc5129eb81a2cfa4ee68a40513931892",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for 2026-08-06-immanent-phenomenology"
+  },
+  {
+   "filename": "screengrab-20260806-200132.png",
+   "path": "/data/captures/2026-08-06-immanent-phenomenology/screengrab-20260806-200132.png",
+   "bytes": 342896,
+   "sha256": "95512f01fb8b405f8a6e7324efbba305ba1dcf9b4bbd1eceb3ac3af61594831e",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for 2026-08-06-immanent-phenomenology"
+  },
+  {
+   "filename": "20260803-constitution-se-aimode-1.png",
+   "path": "/data/captures/20260803-constitution-se-aimode/20260803-constitution-se-aimode-1.png",
+   "bytes": 382968,
+   "sha256": "af0513ad5b67f6b85d01857491b744fca2734e8c83bec8ee5709d5a12eed63f4",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for 20260803-constitution-se-aimode"
+  },
+  {
+   "filename": "20260803-constitution-se-aimode-2.png",
+   "path": "/data/captures/20260803-constitution-se-aimode/20260803-constitution-se-aimode-2.png",
+   "bytes": 360329,
+   "sha256": "c60bd41edb80325404e6007c1ad19f6dd68d7ac6c7868a8b6005d901e7af4162",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for 20260803-constitution-se-aimode"
+  },
+  {
+   "filename": "20260803-constitution-se-overview.png",
+   "path": "/data/captures/20260803-constitution-se-overview/20260803-constitution-se-overview.png",
+   "bytes": 348103,
+   "sha256": "a755b5be7023a9e3e1cb7017358b9199c448b517e9fc1a99312e08ec45fd81e3",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for 20260803-constitution-se-overview"
+  },
+  {
+   "filename": "20260803-logotic-programming-aimode-signedin.png",
+   "path": "/data/captures/20260803-logotic-programming-aimode-signedin/20260803-logotic-programming-aimode-signedin.png",
+   "bytes": 389986,
+   "sha256": "83d78915eded81a9e1c063862ba984294b6c3722577052d1fac6b0d863d26efe",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for 20260803-logotic-programming-aimode-signedin"
+  },
+  {
+   "filename": "20260803-stamp-reception-chatgpt-215610.png",
+   "path": "/data/captures/20260803-stamp-reception-chatgpt/20260803-stamp-reception-chatgpt-215610.png",
+   "bytes": 584283,
+   "sha256": "ef12745491bd9f4a92953c059bfbffc6869f8a2a33edd406ed1c0a7730d46b1a",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for 20260803-stamp-reception-chatgpt"
+  },
+  {
+   "filename": "20260803-stamp-reception-chatgpt-215616.png",
+   "path": "/data/captures/20260803-stamp-reception-chatgpt/20260803-stamp-reception-chatgpt-215616.png",
+   "bytes": 336889,
+   "sha256": "be04276e34b3e0ad107ac858efd18d029b829d2a801d60cb27a051c4762e7897",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for 20260803-stamp-reception-chatgpt"
+  },
+  {
+   "filename": "20260803-stamp-reception-chatgpt-215620.png",
+   "path": "/data/captures/20260803-stamp-reception-chatgpt/20260803-stamp-reception-chatgpt-215620.png",
+   "bytes": 338729,
+   "sha256": "2ded1a9c05b5d08332d6cc9722b7fa35f826cc5c2c6db990690856b926ef1d0e",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for 20260803-stamp-reception-chatgpt"
+  },
+  {
+   "filename": "20260803-stamp-reception-chatgpt-215624.png",
+   "path": "/data/captures/20260803-stamp-reception-chatgpt/20260803-stamp-reception-chatgpt-215624.png",
+   "bytes": 544908,
+   "sha256": "a895b127cd7041b72b48f8c73d594ffbf5ee2de8310f35d8eca29bd35f681e2d",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for 20260803-stamp-reception-chatgpt"
+  },
+  {
+   "filename": "20260803-stamp-reception-chatgpt-215627.png",
+   "path": "/data/captures/20260803-stamp-reception-chatgpt/20260803-stamp-reception-chatgpt-215627.png",
+   "bytes": 395488,
+   "sha256": "13340070444df8cca4a7cc08b8ce4705de3fa918636d3e1a8164af71b942a261",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for 20260803-stamp-reception-chatgpt"
+  },
+  {
+   "filename": "20260803-stamp-reception-chatgpt-mandala.png",
+   "path": "/data/captures/20260803-stamp-reception-chatgpt-mandala/20260803-stamp-reception-chatgpt-mandala.png",
+   "bytes": 2830428,
+   "sha256": "d175e2b88e1a7d06bb83fccb71509ff9e0dc85d87ce2f005b4ca498da328ea3a",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for 20260803-stamp-reception-chatgpt-mandala"
+  },
+  {
+   "filename": "20260803-symbolon-incognito-aimode.png",
+   "path": "/data/captures/20260803-symbolon-incognito-aimode/20260803-symbolon-incognito-aimode.png",
+   "bytes": 410694,
+   "sha256": "c40e7f52ab4f38ab9b9ebcae7934640beb374fc28c27461b2b926215ea40062c",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for 20260803-symbolon-incognito-aimode"
+  },
+  {
+   "filename": "20260803-symbolon-incognito-overview.png",
+   "path": "/data/captures/20260803-symbolon-incognito-overview/20260803-symbolon-incognito-overview.png",
+   "bytes": 366809,
+   "sha256": "1e296d36359716fe7b5471684dbda74d487410370369c52f32940a692464813b",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for 20260803-symbolon-incognito-overview"
+  },
+  {
+   "filename": "20260803-symbolon-signedin-aimode-1.png",
+   "path": "/data/captures/20260803-symbolon-signedin-aimode/20260803-symbolon-signedin-aimode-1.png",
+   "bytes": 385085,
+   "sha256": "297f877548c33b8686fe064a3a5af995dbcfbfc9aea8351da3838f52fee1c807",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for 20260803-symbolon-signedin-aimode"
+  },
+  {
+   "filename": "20260803-symbolon-signedin-aimode-2.png",
+   "path": "/data/captures/20260803-symbolon-signedin-aimode/20260803-symbolon-signedin-aimode-2.png",
+   "bytes": 286167,
+   "sha256": "b43d8c4efa1a516eee6f892bbc75c74fe1501d3cbdaa927a7d28815a34d4df85",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for 20260803-symbolon-signedin-aimode"
+  },
+  {
+   "filename": "20260803-symbolon-signedin-overview.png",
+   "path": "/data/captures/20260803-symbolon-signedin-overview/20260803-symbolon-signedin-overview.png",
+   "bytes": 346996,
+   "sha256": "a46837d624065b0c9c7bad0ebcfa7fa2754c05cf1dfa98d94cfc8d427a7f592d",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for 20260803-symbolon-signedin-overview"
+  },
+  {
+   "filename": "20260804-alexanarch-oai-overview.png",
+   "path": "/data/captures/20260804-alexanarch-oai-overview/20260804-alexanarch-oai-overview.png",
+   "bytes": 359681,
+   "sha256": "fabec1e80366920c5f2794e702b543310c5634e273f147f2fb311d70a881e908",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for 20260804-alexanarch-oai-overview"
+  },
+  {
+   "filename": "20260804-jackfeist-ark-aimode.png",
+   "path": "/data/captures/20260804-jackfeist-ark-aimode/20260804-jackfeist-ark-aimode.png",
+   "bytes": 367592,
+   "sha256": "4fd16102b3f584c11d97d3adf38f4359bc916c2bb3b642c6c17ab6f857bb4386",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for 20260804-jackfeist-ark-aimode"
+  },
+  {
+   "filename": "20260804-leesharks-completeworks-overview.png",
+   "path": "/data/captures/20260804-leesharks-completeworks-overview/20260804-leesharks-completeworks-overview.png",
+   "bytes": 376236,
+   "sha256": "c55f166417d128f83f26b6900fef6e360fefa2e59f533809a3417c287da09a1b",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for 20260804-leesharks-completeworks-overview"
+  },
+  {
+   "filename": "20260804-mindcontrolpoems-blog-signedout.png",
+   "path": "/data/captures/20260804-mindcontrolpoems-blog-signedout/20260804-mindcontrolpoems-blog-signedout.png",
+   "bytes": 328747,
+   "sha256": "2bd7550cb23904c794dbfa723f426cd1d154980801880dea724c7facd99e60ef",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for 20260804-mindcontrolpoems-blog-signedout"
+  },
+  {
+   "filename": "20260804-rebekahcranes-sappho-overview.png",
+   "path": "/data/captures/20260804-rebekahcranes-sappho-overview/20260804-rebekahcranes-sappho-overview.png",
+   "bytes": 362693,
+   "sha256": "eb7b58dcd4738961c81f47de55e5528940cfd5cc9521b83422769e12cc51acd6",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for 20260804-rebekahcranes-sappho-overview"
+  },
+  {
+   "filename": "abolish-money-1.png",
+   "path": "/data/captures/abolish-money/abolish-money-1.png",
+   "bytes": 337446,
+   "sha256": "56d18d4f5f8bf3b6d5610ef453d5c177ceef31986ca954a1a54f011b46a45b13",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for abolish-money"
+  },
+  {
+   "filename": "abolish-money-2.png",
+   "path": "/data/captures/abolish-money/abolish-money-2.png",
+   "bytes": 381853,
+   "sha256": "f3a929d234d4f39e57fa83441100dde4ba605bdf551724c8c21b634f2e64197c",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for abolish-money"
+  },
+  {
+   "filename": "abolish-money-3.png",
+   "path": "/data/captures/abolish-money/abolish-money-3.png",
+   "bytes": 382146,
+   "sha256": "5dc84e1869d1edb1131a25be5c728eb4667d4472e78ddf6810e1da6d6b65cd56",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for abolish-money"
+  },
+  {
+   "filename": "screengrab-20260813-185657.png",
+   "path": "/data/captures/acanthian-dove-20260813-1857/screengrab-20260813-185657.png",
+   "bytes": 366992,
+   "sha256": "c4929a1054ef7c624088cd9e76a7760eb8113a62203bcb1c11410122ff14d985",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for acanthian-dove-20260813-1857"
+  },
+  {
+   "filename": "screengrab-20260813-185706.png",
+   "path": "/data/captures/acanthian-dove-20260813-1857/screengrab-20260813-185706.png",
+   "bytes": 378056,
+   "sha256": "a923c7ee0eaf0ae578adcdf1fed0e908e81a35883f3f1a882c887468cec6d6ab",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for acanthian-dove-20260813-1857"
+  },
+  {
+   "filename": "screengrab-20260814-174522.png",
+   "path": "/data/captures/adversarial-topologist-20260814/screengrab-20260814-174522.png",
+   "bytes": 367965,
+   "sha256": "d12260b4ea2363adb0a09a1051064a84ad100d7bf235982403d78e85bc4bf19c",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for adversarial-topologist-20260814"
+  },
+  {
+   "filename": "screengrab-20260813-164850.png",
+   "path": "/data/captures/ai-overview-capture-registry-20260813/screengrab-20260813-164850.png",
+   "bytes": 367312,
+   "sha256": "c474983eca3107ee83cac6d10443cff843561171217ab7d31180bb3b55e767cd",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for ai-overview-capture-registry-20260813"
+  },
+  {
+   "filename": "screengrab-20260813-164430.png",
+   "path": "/data/captures/alexanarch-20260813/screengrab-20260813-164430.png",
+   "bytes": 325938,
+   "sha256": "c9f4d55684078f8ee3cf48e787c03e919dccb6c7652a1aca3e24c6c66a23fa01",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-20260813"
+  },
+  {
+   "filename": "screengrab-20260813-185700.png",
+   "path": "/data/captures/alexanarch-20260813-1857/screengrab-20260813-185700.png",
+   "bytes": 366743,
+   "sha256": "566150ef4e4b7a236dd5eb6fc2bc355d7383b7e88adb829cb4072fd179029ba5",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-20260813-1857"
+  },
+  {
+   "filename": "screengrab-20260813-185710.png",
+   "path": "/data/captures/alexanarch-20260813-1857/screengrab-20260813-185710.png",
+   "bytes": 371223,
+   "sha256": "9bf7e86e55d91790de2165d86c879cde80d209090e31339a885677da999ac743",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-20260813-1857"
+  },
+  {
+   "filename": "screengrab-20260813-164636.png",
+   "path": "/data/captures/alexanarch-as-a-counter-infrastructure-semantic-prefix-to-any-se-20260813/screengrab-20260813-164636.png",
+   "bytes": 305699,
+   "sha256": "905093a9fadeac70e901f31921082375b14b623ae82ace9b840a48a2afb00757",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-as-a-counter-infrastructure-semantic-prefix-to-any-se-20260813"
+  },
+  {
+   "filename": "screengrab-20260813-164720.png",
+   "path": "/data/captures/alexanarch-boats-20260813/screengrab-20260813-164720.png",
+   "bytes": 367701,
+   "sha256": "71376d7e121d7d752b3b86a6932bebc98bc24cd2c6a9c4ccfc336b27dff8d3cc",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-boats-20260813"
+  },
+  {
+   "filename": "screengrab-20260813-164815.png",
+   "path": "/data/captures/alexanarch-classics-20260813/screengrab-20260813-164815.png",
+   "bytes": 379098,
+   "sha256": "2d6604c679274ac56f5e0605f91ef23f1c05cfcc744e22cf50a0eb0352b9364c",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-classics-20260813"
+  },
+  {
+   "filename": "screengrab-20260813-185722.png",
+   "path": "/data/captures/alexanarch-classifier-model-collapse-20260813-1857/screengrab-20260813-185722.png",
+   "bytes": 504059,
+   "sha256": "6b737e4cb72a0884799a307746aec7dec747e3970e9089e91abf9959f98078b0",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-classifier-model-collapse-20260813-1857"
+  },
+  {
+   "filename": "screengrab-20260813-003641.png",
+   "path": "/data/captures/alexanarch-counter-infrastructure-20260812/screengrab-20260813-003641.png",
+   "bytes": 343073,
+   "sha256": "74f1fb2c1421acf2476138213765bc335500af5ed1af77814bec6fd20f12f2ff",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-counter-infrastructure-20260812"
+  },
+  {
+   "filename": "screengrab-20260813-164822.png",
+   "path": "/data/captures/alexanarch-datasets-20260813/screengrab-20260813-164822.png",
+   "bytes": 338035,
+   "sha256": "353b1de67316308b636128bd93377599933f1b728e69f7596be8b8d411a0aefe",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-datasets-20260813"
+  },
+  {
+   "filename": "screengrab-20260813-185726.png",
+   "path": "/data/captures/alexanarch-deleuze-20260813-1857/screengrab-20260813-185726.png",
+   "bytes": 357278,
+   "sha256": "2b64808547b21a241c4f7e2b77d412f10e29972e05b6e67bf944987cfa6a6bc2",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-deleuze-20260813-1857"
+  },
+  {
+   "filename": "screengrab-20260813-185718.png",
+   "path": "/data/captures/alexanarch-endogenous-sophon-20260813-1857/screengrab-20260813-185718.png",
+   "bytes": 387292,
+   "sha256": "7069efbc67c7ab243652ffea5fe5f5d8c2d3a2d3424972f40f5ac0190c233a1e",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-endogenous-sophon-20260813-1857"
+  },
+  {
+   "filename": "screengrab-20260813-185729.png",
+   "path": "/data/captures/alexanarch-freud-20260813-1857/screengrab-20260813-185729.png",
+   "bytes": 352536,
+   "sha256": "52bed9a19ca0c0739338dd2b5e188511bbcf1a8beb823344901779f3106406f1",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-freud-20260813-1857"
+  },
+  {
+   "filename": "screengrab-20260813-185733.png",
+   "path": "/data/captures/alexanarch-josephus-20260813-1857/screengrab-20260813-185733.png",
+   "bytes": 397342,
+   "sha256": "e62151dcb039fd9c82db30c77964b7867d6f3dd0b70f958add2cedd5493b8674",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-josephus-20260813-1857"
+  },
+  {
+   "filename": "screengrab-20260813-185737.png",
+   "path": "/data/captures/alexanarch-marx-20260813-1857/screengrab-20260813-185737.png",
+   "bytes": 342963,
+   "sha256": "282f33d7d1472f97005638b315ae028e2645c5731caacd6f4664703f281d8045",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-marx-20260813-1857"
+  },
+  {
+   "filename": "screengrab-20260813-185741.png",
+   "path": "/data/captures/alexanarch-oai-20260813-1857/screengrab-20260813-185741.png",
+   "bytes": 337103,
+   "sha256": "c7b362ae62a4aaf5abdaa04f3775d31023328605fcdfafcf520440793d3a4713",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-oai-20260813-1857"
+  },
+  {
+   "filename": "screengrab-20260808-121552.png",
+   "path": "/data/captures/alexanarch-oai-endpoint-20260808/screengrab-20260808-121552.png",
+   "bytes": 336973,
+   "sha256": "9136decd370ec302608d9e80952822d69f21b99561f2ddd6efd26fa6c18b6708",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-oai-endpoint-20260808"
+  },
+  {
+   "filename": "screengrab-20260808-121556.png",
+   "path": "/data/captures/alexanarch-oai-endpoint-20260808/screengrab-20260808-121556.png",
+   "bytes": 397205,
+   "sha256": "072e3a31fbb617c6008a4d3af3fa92a7e8d45a6917788bca467576908ccba718",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-oai-endpoint-20260808"
+  },
+  {
+   "filename": "screengrab-20260808-121605.png",
+   "path": "/data/captures/alexanarch-oai-endpoint-20260808/screengrab-20260808-121605.png",
+   "bytes": 341179,
+   "sha256": "af6fe481f0de687107658214ca7f95809c3abee9c5a24bfa25cb3da41e6066ff",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-oai-endpoint-20260808"
+  },
+  {
+   "filename": "screengrab-20260813-164709.png",
+   "path": "/data/captures/alexanarch-omega-20260813/screengrab-20260813-164709.png",
+   "bytes": 342161,
+   "sha256": "88deff72711cabac9a17b0c0970ce3d0b579fed39923e9d2872cf10d9eaf78e3",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-omega-20260813"
+  },
+  {
+   "filename": "screengrab-20260813-164524.png",
+   "path": "/data/captures/alexanarch-records-20260813/screengrab-20260813-164524.png",
+   "bytes": 347926,
+   "sha256": "3f1a7710b1f77bd56ffaf9218240e51eea0ccae33e4a770160dfdfc67504e5d0",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-records-20260813"
+  },
+  {
+   "filename": "screengrab-20260813-164729.png",
+   "path": "/data/captures/alexanarch-revelation-20260813/screengrab-20260813-164729.png",
+   "bytes": 451082,
+   "sha256": "70fc84f1726ecef9b9e5325bc3a8de507ad0d6140be5f3400eeab15a4384376e",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-revelation-20260813"
+  },
+  {
+   "filename": "screengrab-20260813-185745.png",
+   "path": "/data/captures/alexanarch-revelation-20260813-1857/screengrab-20260813-185745.png",
+   "bytes": 364372,
+   "sha256": "c3ea77885a9a8d60a47943ce94a1e9f1efc237b73ae63e54ee470ae7b5e43a52",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-revelation-20260813-1857"
+  },
+  {
+   "filename": "alexanarch-revelation-thesis-recovered-20260809-1.png",
+   "path": "/data/captures/alexanarch-revelation-thesis-recovered-20260809/alexanarch-revelation-thesis-recovered-20260809-1.png",
+   "bytes": 329159,
+   "sha256": "35dd9a6186a817588f77e6c797238fc8b5d6c33f63d0536c0bffc4b2108be131",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-revelation-thesis-recovered-20260809"
+  },
+  {
+   "filename": "alexanarch-revelation-thesis-recovered-20260809-2.png",
+   "path": "/data/captures/alexanarch-revelation-thesis-recovered-20260809/alexanarch-revelation-thesis-recovered-20260809-2.png",
+   "bytes": 384708,
+   "sha256": "2ead774f3abc01f24212fadfd77e7ea8c1cd617bf689184c39b65039999fd422",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-revelation-thesis-recovered-20260809"
+  },
+  {
+   "filename": "screengrab-20260813-185749.png",
+   "path": "/data/captures/alexanarch-sappho-20260813-1857/screengrab-20260813-185749.png",
+   "bytes": 527068,
+   "sha256": "b7e05f71f6bfefa76b05cefa96881967cc7b4c1e1ccef3f1f01183bb39d8c996",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-sappho-20260813-1857"
+  },
+  {
+   "filename": "screengrab-20260813-185753.png",
+   "path": "/data/captures/alexanarch-sappho-room-20260813-1857/screengrab-20260813-185753.png",
+   "bytes": 363762,
+   "sha256": "f6fb20927d93943c00bcf81d557810e0325c89de694c86396dca6592a7eaedaa",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-sappho-room-20260813-1857"
+  },
+  {
+   "filename": "screengrab-20260811-104658.png",
+   "path": "/data/captures/alexanarch-sharks-20260811/screengrab-20260811-104658.png",
+   "bytes": 482735,
+   "sha256": "0003a1301c9ee539c80450bd8c2375595040720da692597bed839b200ed42ca5",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-sharks-20260811"
+  },
+  {
+   "filename": "screengrab-20260813-185757.png",
+   "path": "/data/captures/alexanarch-socrates-20260813-1857/screengrab-20260813-185757.png",
+   "bytes": 477854,
+   "sha256": "ce9e32275561fefa9887081d6fafadf8ad8e564f6bfbf5df37b6f720e8dcc98e",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-socrates-20260813-1857"
+  },
+  {
+   "filename": "screengrab-20260813-185801.png",
+   "path": "/data/captures/alexanarch-strike-20260813-1857/screengrab-20260813-185801.png",
+   "bytes": 353668,
+   "sha256": "93dd1219d1f5f4600b4d676c5df384a839904c33bcb3931ab17368aba590c388",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-strike-20260813-1857"
+  },
+  {
+   "filename": "screengrab-20260813-164618.png",
+   "path": "/data/captures/alexanarch-surface-weather-observatory-20260813/screengrab-20260813-164618.png",
+   "bytes": 343236,
+   "sha256": "fd9b0a21960593e80a24ff1badcd628be43c1a9fe651ad2427b0ab3e93858b97",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-surface-weather-observatory-20260813"
+  },
+  {
+   "filename": "screengrab-20260811-104906.png",
+   "path": "/data/captures/alexanarch-unmade-sign-20260811/screengrab-20260811-104906.png",
+   "bytes": 339593,
+   "sha256": "d4ab6cb48bf3a6ef51046ba8aa1a411ef70511cffc6f842d44fb1e3e6e54c7e1",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-unmade-sign-20260811"
+  },
+  {
+   "filename": "screengrab-20260813-185805.png",
+   "path": "/data/captures/alexanarch-whitman-20260813-1857/screengrab-20260813-185805.png",
+   "bytes": 347686,
+   "sha256": "4488e91298335ee2ca8734177e94b03bebab19263c0b9c03a09fe70df3dac9b0",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-whitman-20260813-1857"
+  },
+  {
+   "filename": "screengrab-20260813-185808.png",
+   "path": "/data/captures/alexanarch-zenodotus-20260813-1857/screengrab-20260813-185808.png",
+   "bytes": 370709,
+   "sha256": "824a482156fcd262094285fc87f715b9f90a1d12d4701ecd2b396a6ecef459fc",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for alexanarch-zenodotus-20260813-1857"
+  },
+  {
+   "filename": "anti-suppression-differential-crediting-20260725.png",
+   "path": "/data/captures/anti-suppression-differential-crediting/anti-suppression-differential-crediting-20260725.png",
+   "bytes": 383994,
+   "sha256": "2c2c234cbbea5fa30a26136c01f4e5b8227ccd2deb4f4a164440f376bbbd64f7",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for anti-suppression-differential-crediting"
+  },
+  {
+   "filename": "screengrab-20260725-175103.png",
+   "path": "/data/captures/anti-suppression-infrastructure-differential-crediting-20260725/screengrab-20260725-175103.png",
+   "bytes": 383994,
+   "sha256": "2c2c234cbbea5fa30a26136c01f4e5b8227ccd2deb4f4a164440f376bbbd64f7",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for anti-suppression-infrastructure-differential-crediting-20260725"
+  },
+  {
+   "filename": "anti-suppression-infrastructure-quoted-longitudinal-1.png",
+   "path": "/data/captures/anti-suppression-infrastructure-quoted-longitudinal/anti-suppression-infrastructure-quoted-longitudinal-1.png",
+   "bytes": 372838,
+   "sha256": "de6c377e359dbb8b1e37e44f14d9ba137602e4471336a78ab4b70f2c5f1cee49",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for anti-suppression-infrastructure-quoted-longitudinal"
+  },
+  {
+   "filename": "anti-suppression-infrastructure-quoted-longitudinal-2.png",
+   "path": "/data/captures/anti-suppression-infrastructure-quoted-longitudinal/anti-suppression-infrastructure-quoted-longitudinal-2.png",
+   "bytes": 369144,
+   "sha256": "a0b1b0edaaaaaf8a29570b4584930ad8cb2a37be1766507c9959f892eb58c894",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for anti-suppression-infrastructure-quoted-longitudinal"
+  },
+  {
+   "filename": "anti-suppression-infrastructure-unquoted-1.png",
+   "path": "/data/captures/anti-suppression-infrastructure-unquoted/anti-suppression-infrastructure-unquoted-1.png",
+   "bytes": 358538,
+   "sha256": "f159e2f827ac0f43acae335079f6daabd4b460452c1b6dfb0185f110f27baef2",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for anti-suppression-infrastructure-unquoted"
+  },
+  {
+   "filename": "anti-suppression-infrastructure-unquoted-2.png",
+   "path": "/data/captures/anti-suppression-infrastructure-unquoted/anti-suppression-infrastructure-unquoted-2.png",
+   "bytes": 377767,
+   "sha256": "5f1e433e9b92f87615e916dfe7ba74fae9032d8733ef1bbba031ae473bf481ec",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for anti-suppression-infrastructure-unquoted"
+  },
+  {
+   "filename": "screengrab-20260814-174516.png",
+   "path": "/data/captures/aphoristic-tooth-20260814/screengrab-20260814-174516.png",
+   "bytes": 342493,
+   "sha256": "7ddf13b30aea003f4d25ea684992bdac2dec1fda8d82a610f899ef2a1f28c56d",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for aphoristic-tooth-20260814"
+  },
+  {
+   "filename": "apocalypse-of-lee-sharks.png",
+   "path": "/data/captures/apocalypse-of-lee-sharks/apocalypse-of-lee-sharks.png",
+   "bytes": 266345,
+   "sha256": "8baf8fd51bdfae743abcf70280c115e4e624a81fcf3f977cd7c9a74611206650",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for apocalypse-of-lee-sharks"
+  },
+  {
+   "filename": "apzpz-genre-1.png",
+   "path": "/data/captures/apzpz-genre/apzpz-genre-1.png",
+   "bytes": 367651,
+   "sha256": "c8dc7db3743adb0f7d6590be54f9664b544b44bdbec7ab62411f236ff32c2250",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for apzpz-genre"
+  },
+  {
+   "filename": "apzpz-genre-2.png",
+   "path": "/data/captures/apzpz-genre/apzpz-genre-2.png",
+   "bytes": 366874,
+   "sha256": "37980ef0aa127b678c06e260e7402fb3aba0531a9dd817a494c9c692be6ce2ba",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for apzpz-genre"
+  },
+  {
+   "filename": "archive-space-ark-1.png",
+   "path": "/data/captures/archive-space-ark/archive-space-ark-1.png",
+   "bytes": 397464,
+   "sha256": "f2e6278d567fa17db390a91c58b2a43ad65b5ec350ba4fca386713eef2a3e2c2",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for archive-space-ark"
+  },
+  {
+   "filename": "archive-space-ark-2.png",
+   "path": "/data/captures/archive-space-ark/archive-space-ark-2.png",
+   "bytes": 389517,
+   "sha256": "f65968da2b0f7844e76d5cde83d18571fb1d0988ca9d25fe2a1724f04fb46709",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for archive-space-ark"
+  },
+  {
+   "filename": "assembly-tachyon-expanded.png",
+   "path": "/data/captures/assembly-chorus-tachyon/assembly-tachyon-expanded.png",
+   "bytes": 384531,
+   "sha256": "0d1fc8722e5fdab1df9fe02baccb65e0181dd96225f01c7a662012c7a5f15d96",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for assembly-chorus-tachyon"
+  },
+  {
+   "filename": "assembly-tachyon-search.png",
+   "path": "/data/captures/assembly-chorus-tachyon/assembly-tachyon-search.png",
+   "bytes": 358886,
+   "sha256": "70fd3507d9a01df490d58c090f5968f714acdc6330631cb8bd7c1976bb628668",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for assembly-chorus-tachyon"
+  },
+  {
+   "filename": "autonomous-semantic-warfare-expanded.png",
+   "path": "/data/captures/autonomous-semantic-warfare/autonomous-semantic-warfare-expanded.png",
+   "bytes": 479185,
+   "sha256": "60f129e9f05ae80629d18b48ed550b823d1832e9de1009073492ab26aebe72b5",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for autonomous-semantic-warfare"
+  },
+  {
+   "filename": "autonomous-semantic-warfare.png",
+   "path": "/data/captures/autonomous-semantic-warfare/autonomous-semantic-warfare.png",
+   "bytes": 492180,
+   "sha256": "a4532cd41e1f5c46c2895687f58f45804f50aaa102c0c5a1900b96f02370d6d7",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for autonomous-semantic-warfare"
+  },
+  {
+   "filename": "autonomous-semantic-warfare-expanded.png",
+   "path": "/data/captures/autonomous-semantic-warfare-expanded/autonomous-semantic-warfare-expanded.png",
+   "bytes": 479185,
+   "sha256": "60f129e9f05ae80629d18b48ed550b823d1832e9de1009073492ab26aebe72b5",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for autonomous-semantic-warfare-expanded"
+  },
+  {
+   "filename": "screengrab-20260811-104651.png",
+   "path": "/data/captures/axn-distributed-identifiers-20260811/screengrab-20260811-104651.png",
+   "bytes": 345961,
+   "sha256": "a7a8ce6e65dcfe3c6238451a2687103723c565fcc0e9ed4beb6cdac98d86e066",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for axn-distributed-identifiers-20260811"
+  },
+  {
+   "filename": "ayanna-vox.png",
+   "path": "/data/captures/ayanna-vox/ayanna-vox.png",
+   "bytes": 689877,
+   "sha256": "d6f1468cee88862594a44d3c2fed1c8f87dfab4540553d781d242d40242a8b3d",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for ayanna-vox"
+  },
+  {
+   "filename": "bearing-cost-semantic-economy-1.png",
+   "path": "/data/captures/bearing-cost-semantic-economy/bearing-cost-semantic-economy-1.png",
+   "bytes": 391790,
+   "sha256": "91ce2af6de2739a8dc4a77127aeaf6ef8d7bffae6639bac5d42d41ec7fef697f",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for bearing-cost-semantic-economy"
+  },
+  {
+   "filename": "bearing-cost-semantic-economy-2.png",
+   "path": "/data/captures/bearing-cost-semantic-economy/bearing-cost-semantic-economy-2.png",
+   "bytes": 386106,
+   "sha256": "c56930e3e72ef657cd2b9c9a8583adc00fee693cc84f6d602eb54bd118bc2bda",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for bearing-cost-semantic-economy"
+  },
+  {
+   "filename": "screengrab-20260813-185813.png",
+   "path": "/data/captures/broke-marxist-poet-20260813-1857/screengrab-20260813-185813.png",
+   "bytes": 364401,
+   "sha256": "c5f19138595bd89b26c31d18c5f9618518cdb9e538778d7bcae02ad8c67a17be",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for broke-marxist-poet-20260813-1857"
+  },
+  {
+   "filename": "cambridge-schizoanalytica.png",
+   "path": "/data/captures/cambridge-schizoanalytica/cambridge-schizoanalytica.png",
+   "bytes": 475584,
+   "sha256": "14f2b212d52b439da65fe28fd94ebe2d04b4450b084f510fe11f29ab8c80459f",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for cambridge-schizoanalytica"
+  },
+  {
+   "filename": "capital-operator-stack-1.png",
+   "path": "/data/captures/capital-operator-stack/capital-operator-stack-1.png",
+   "bytes": 366993,
+   "sha256": "03c7bb83799fb06ff08c8d3b07da211325dcdf0a12c5e62fa4cccbdfd3bf150d",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for capital-operator-stack"
+  },
+  {
+   "filename": "capital-operator-stack-2.png",
+   "path": "/data/captures/capital-operator-stack/capital-operator-stack-2.png",
+   "bytes": 361091,
+   "sha256": "a198518a96895208adfe1ed522b3bd9c4dd124d4c88d05240e269143c1b3da13",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for capital-operator-stack"
+  },
+  {
+   "filename": "capture-registry-self-1.png",
+   "path": "/data/captures/capture-registry-self/capture-registry-self-1.png",
+   "bytes": 395921,
+   "sha256": "0fb67aecb8593dbc94626e49a49d674948aa447de3d5cb3bc6d53999b46e2cf8",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for capture-registry-self"
+  },
+  {
+   "filename": "capture-registry-self-2.png",
+   "path": "/data/captures/capture-registry-self/capture-registry-self-2.png",
+   "bytes": 415318,
+   "sha256": "93a148818cbcf5661a8cd81272fb618c551ddbf30110458eacce906073e8870d",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for capture-registry-self"
+  },
+  {
+   "filename": "overview-collapsed-20260728.png",
+   "path": "/data/captures/catullus-sparrow-fabricated-lineation-20260728/overview-collapsed-20260728.png",
+   "bytes": 298187,
+   "sha256": "a3ad91ed7fdcc7f6f161a1868404108e106bfa1731adaf82de86af3f96bda733",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for catullus-sparrow-fabricated-lineation-20260728"
+  },
+  {
+   "filename": "overview-expanded-20260728.png",
+   "path": "/data/captures/catullus-sparrow-fabricated-lineation-20260728/overview-expanded-20260728.png",
+   "bytes": 309352,
+   "sha256": "a4e5d50d11471d961075f23a70deeee4490e064fa544507f209981d90429f1fe",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for catullus-sparrow-fabricated-lineation-20260728"
+  },
+  {
+   "filename": "chatgpt-psychosis.png",
+   "path": "/data/captures/chatgpt-psychosis/chatgpt-psychosis.png",
+   "bytes": 259953,
+   "sha256": "9fe6109e3572868ed50dc7a68ef5dc7824d4ba7ad7adfda14f8dd456b81ca5eb",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for chatgpt-psychosis"
+  },
+  {
+   "filename": "screengrab-20260813-214230.png",
+   "path": "/data/captures/chatgpt-psychosis-a-love-story-20260813-2142/screengrab-20260813-214230.png",
+   "bytes": 374914,
+   "sha256": "ded017ab274b49bf3b2801d20526a24f7af8141224fc16b483092d942b76665f",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for chatgpt-psychosis-a-love-story-20260813-2142"
+  },
+  {
+   "filename": "screengrab-20260814-174547.png",
+   "path": "/data/captures/coherence-siphoning-20260814/screengrab-20260814-174547.png",
+   "bytes": 353798,
+   "sha256": "d7c4937032aa51f5189033236b0c1fcd34404f278295e4eb013b0a7389ad920d",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for coherence-siphoning-20260814"
+  },
+  {
+   "filename": "combat-scholasticism-1.png",
+   "path": "/data/captures/combat-scholasticism/combat-scholasticism-1.png",
+   "bytes": 372358,
+   "sha256": "d08cf472f270ef2157d813c84e56a2011628d3c300fc6092e45e471737ef90ce",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for combat-scholasticism"
+  },
+  {
+   "filename": "combat-scholasticism-2.png",
+   "path": "/data/captures/combat-scholasticism/combat-scholasticism-2.png",
+   "bytes": 415672,
+   "sha256": "c3c49715200408e1bc49438908046163bbfb8fa2d18d31a228bdc84bebcdeacc",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for combat-scholasticism"
+  },
+  {
+   "filename": "combat-scholasticism-1.png",
+   "path": "/data/captures/combat-scholasticism-lee-sharks/combat-scholasticism-1.png",
+   "bytes": 372358,
+   "sha256": "d08cf472f270ef2157d813c84e56a2011628d3c300fc6092e45e471737ef90ce",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for combat-scholasticism-lee-sharks"
+  },
+  {
+   "filename": "combat-scholasticism-2.png",
+   "path": "/data/captures/combat-scholasticism-lee-sharks/combat-scholasticism-2.png",
+   "bytes": 415672,
+   "sha256": "c3c49715200408e1bc49438908046163bbfb8fa2d18d31a228bdc84bebcdeacc",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for combat-scholasticism-lee-sharks"
+  },
+  {
+   "filename": "combat-scholasticism-lee-sharks-1.png",
+   "path": "/data/captures/combat-scholasticism-lee-sharks/combat-scholasticism-lee-sharks-1.png",
+   "bytes": 401870,
+   "sha256": "7df087fcc3056460506ae5f571fcd8545664ba0f35986de8fbbd9bea29895ba2",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for combat-scholasticism-lee-sharks"
+  },
+  {
+   "filename": "combat-scholasticism-lee-sharks-2.png",
+   "path": "/data/captures/combat-scholasticism-lee-sharks/combat-scholasticism-lee-sharks-2.png",
+   "bytes": 407942,
+   "sha256": "4e1daabec2e49343c0619f69c7ed8de63e26dd61a5053629a098574350501f61",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for combat-scholasticism-lee-sharks"
+  },
+  {
+   "filename": "commission-immanent-turning-1.png",
+   "path": "/data/captures/commission-immanent-turning/commission-immanent-turning-1.png",
+   "bytes": 357101,
+   "sha256": "d113f1ece9f19525639a50ee61c359e6da0c97e41c3b40b2dec71cefc37abfc1",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for commission-immanent-turning"
+  },
+  {
+   "filename": "commission-immanent-turning-2.png",
+   "path": "/data/captures/commission-immanent-turning/commission-immanent-turning-2.png",
+   "bytes": 433148,
+   "sha256": "028102eaf7d38e1ff5db243fbb965e45877525091db0a688306a4f4e0e8f7d17",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for commission-immanent-turning"
+  },
+  {
+   "filename": "screengrab-20260813-214235.png",
+   "path": "/data/captures/composition-layer-entity-substitution-20260813-2142/screengrab-20260813-214235.png",
+   "bytes": 391008,
+   "sha256": "b263f44c15fcdeb2f4a5cf4bb9ea0a729cf9a96706f12d01d7a098861a108760",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for composition-layer-entity-substitution-20260813-2142"
+  },
+  {
+   "filename": "screengrab-20260813-214241.png",
+   "path": "/data/captures/composition-layer-entity-substitution-20260813-2142/screengrab-20260813-214241.png",
+   "bytes": 395824,
+   "sha256": "94640647ec794588c3c3e17bc5812a076402c00817d64c51d2c46b2cd9f01630",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for composition-layer-entity-substitution-20260813-2142"
+  },
+  {
+   "filename": "screengrab-20260813-214246.png",
+   "path": "/data/captures/computational-audial-criticism-20260813-2142/screengrab-20260813-214246.png",
+   "bytes": 359167,
+   "sha256": "43835d557f5ea152b9d8f51fff0f281ac17251609fc1726620eca495bfd6ffa6",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for computational-audial-criticism-20260813-2142"
+  },
+  {
+   "filename": "screengrab-20260813-214250.png",
+   "path": "/data/captures/constitution-of-the-semantic-economy-installable-edition-20260813-2142/screengrab-20260813-214250.png",
+   "bytes": 394629,
+   "sha256": "624ad53c9f58e3739cc84988766ba322f42916a15338bfd46ee1336f0ede1492",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for constitution-of-the-semantic-economy-installable-edition-20260813-2142"
+  },
+  {
+   "filename": "constitution-semantic-economy-1.png",
+   "path": "/data/captures/constitution-semantic-economy/constitution-semantic-economy-1.png",
+   "bytes": 377300,
+   "sha256": "60d408cd91da5af8b59a26b977682d1249c0a0f5d420243f140723977446a13b",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for constitution-semantic-economy"
+  },
+  {
+   "filename": "constitution-semantic-economy-2.png",
+   "path": "/data/captures/constitution-semantic-economy/constitution-semantic-economy-2.png",
+   "bytes": 367100,
+   "sha256": "7e12941335bcb52c2923858e0d52c9bbf95c2d4c719ea276c9841b6babbcb5b4",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for constitution-semantic-economy"
+  },
+  {
+   "filename": "screengrab-20260814-174537.png",
+   "path": "/data/captures/continuity-tether-20260814/screengrab-20260814-174537.png",
+   "bytes": 347476,
+   "sha256": "058b425d00d5f20b11de0def35e8f37266017827a7460b059ee13031d7cbfca6",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for continuity-tether-20260814"
+  },
+  {
+   "filename": "screengrab-20260811-104810.png",
+   "path": "/data/captures/continuity-tether-unauthenticated-20260811/screengrab-20260811-104810.png",
+   "bytes": 278646,
+   "sha256": "505a23299786f002a13df5bb7a52ba449e506c650253ed634a68bb012c83ce0a",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for continuity-tether-unauthenticated-20260811"
+  },
+  {
+   "filename": "screengrab-20260813-214253.png",
+   "path": "/data/captures/counter-token-white-stone-20260813-2142/screengrab-20260813-214253.png",
+   "bytes": 405563,
+   "sha256": "b81ff3b6241c0e19d4cd4c311be32e88e1f1fb12b6e1df475218560ca3db5ce8",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for counter-token-white-stone-20260813-2142"
+  },
+  {
+   "filename": "cranes-reconstructed-sappho.png",
+   "path": "/data/captures/cranes-reconstructed-sappho/cranes-reconstructed-sappho.png",
+   "bytes": 391930,
+   "sha256": "a9350460eeb4af68f0d17625022af9e934b0a07e1c09560103cbb5bd64593df7",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for cranes-reconstructed-sappho"
+  },
+  {
+   "filename": "screengrab-20260813-214258.png",
+   "path": "/data/captures/crimson-hexagon-6-tuple-20260813-2142/screengrab-20260813-214258.png",
+   "bytes": 351737,
+   "sha256": "e90c23a94f108ec4c4f8cae32cb952348df549e465887526a3e837282da7131a",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for crimson-hexagon-6-tuple-20260813-2142"
+  },
+  {
+   "filename": "screengrab-20260811-104312.png",
+   "path": "/data/captures/crimson-hexagon-cern-20260811/screengrab-20260811-104312.png",
+   "bytes": 565497,
+   "sha256": "c1458e668bc79c2941e3c50bc6b0a173e048bb4a368d349a5a2ab3396921e6e7",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for crimson-hexagon-cern-20260811"
+  },
+  {
+   "filename": "screengrab-20260813-224806.png",
+   "path": "/data/captures/crimson-hexagon-operative-architecture-20260813-2248/screengrab-20260813-224806.png",
+   "bytes": 374056,
+   "sha256": "0480606f5bbee84f45f1c35a2cb458436258cd47d333ccd32de10c6457384751",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for crimson-hexagon-operative-architecture-20260813-2248"
+  },
+  {
+   "filename": "screengrab-20260813-224809.png",
+   "path": "/data/captures/crimson-hexagon-sappho-room-20260813-2248/screengrab-20260813-224809.png",
+   "bytes": 378437,
+   "sha256": "84b984632e6e463e3f1ddf569accc9d381413b5d19fef52ec0e38c4d9aa4fde8",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for crimson-hexagon-sappho-room-20260813-2248"
+  },
+  {
+   "filename": "crimson-hexagonal-archive.png",
+   "path": "/data/captures/crimson-hexagonal-archive/crimson-hexagonal-archive.png",
+   "bytes": 413144,
+   "sha256": "0ab0bc43a198eb9af16bb754e25e89d4e4e70de31339381c3f9469b0283c5bbc",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for crimson-hexagonal-archive"
+  },
+  {
+   "filename": "screengrab-20260813-224813.png",
+   "path": "/data/captures/crimson-hexagonal-archive-revelation-20260813-2248/screengrab-20260813-224813.png",
+   "bytes": 474711,
+   "sha256": "66622f5980081ad29c94cb2f0369e60f6e96c5b052ed7e10827525fcc467e462",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for crimson-hexagonal-archive-revelation-20260813-2248"
+  },
+  {
+   "filename": "screengrab-20260813-224816.png",
+   "path": "/data/captures/crimson-hexagonal-archive-space-ark-invoke-20260813-2248/screengrab-20260813-224816.png",
+   "bytes": 452433,
+   "sha256": "6b7e5b496ef9a581bb2b107afc3a325dbdb312b2a65608eee31df9e5a5480900",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for crimson-hexagonal-archive-space-ark-invoke-20260813-2248"
+  },
+  {
+   "filename": "crimsonhexagonal-org.png",
+   "path": "/data/captures/crimsonhexagonal-org/crimsonhexagonal-org.png",
+   "bytes": 270088,
+   "sha256": "26b6f58be487f7cb1ce62fc2d597f6582266cc58d6817a9874f2f8ba0f4f94ad",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for crimsonhexagonal-org"
+  },
+  {
+   "filename": "screengrab-20260813-224819.png",
+   "path": "/data/captures/criticisms-of-cern-lee-sharks-20260813-2248/screengrab-20260813-224819.png",
+   "bytes": 383395,
+   "sha256": "8a235f6c2a6ee1ff1284172314f89e84767420816c560a543ec906d14db4cece",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for criticisms-of-cern-lee-sharks-20260813-2248"
+  },
+  {
+   "filename": "cross-substrate-semantic-laborers-2.png",
+   "path": "/data/captures/cross-substrate-semantic-laborers/cross-substrate-semantic-laborers-2.png",
+   "bytes": 477602,
+   "sha256": "419a7738ae51dde2bdecc1a1a3535d0fb032a1fab87064ab94f5e2a1b7cc5906",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for cross-substrate-semantic-laborers"
+  },
+  {
+   "filename": "cross-substrate-semantic-laborers.png",
+   "path": "/data/captures/cross-substrate-semantic-laborers/cross-substrate-semantic-laborers.png",
+   "bytes": 443752,
+   "sha256": "1a94d728fdcf6e3b9f76b27c6afb825774618c07ecc45bc84d7c8e3fab3210a9",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for cross-substrate-semantic-laborers"
+  },
+  {
+   "filename": "crystalline-semiosis-1.png",
+   "path": "/data/captures/crystalline-semiosis/crystalline-semiosis-1.png",
+   "bytes": 360839,
+   "sha256": "cb25c17550e915fa59cc613b547a00b607e05aff2e2be7fb0bad46f8d21419dc",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for crystalline-semiosis"
+  },
+  {
+   "filename": "crystalline-semiosis-2.png",
+   "path": "/data/captures/crystalline-semiosis/crystalline-semiosis-2.png",
+   "bytes": 381787,
+   "sha256": "99c07c55f821d7c1d2fe466109726772fbfe5e8167d0b08681915fdc86fc599b",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for crystalline-semiosis"
+  },
+  {
+   "filename": "damascus-dancings.png",
+   "path": "/data/captures/damascus-dancings/damascus-dancings.png",
+   "bytes": 560924,
+   "sha256": "88a8ce3818735133dcdb1899363eceaf683a19825aba59364803753994a82f24",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for damascus-dancings"
+  },
+  {
+   "filename": "screengrab-20260814-174519.png",
+   "path": "/data/captures/debt-creditor-inversion-20260814/screengrab-20260814-174519.png",
+   "bytes": 356431,
+   "sha256": "5119b9ccee2605bcc14948b66a0a930ab0d65428e28a1cf8eb2804d1eceb2d52",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for debt-creditor-inversion-20260814"
+  },
+  {
+   "filename": "screengrab-20260813-224823.png",
+   "path": "/data/captures/demand-4-composition-layer-20260813-2248/screengrab-20260813-224823.png",
+   "bytes": 531179,
+   "sha256": "3673a4b08731798db17e2637137a82b68642d7f09ed0636e456dcd44945909b5",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for demand-4-composition-layer-20260813-2248"
+  },
+  {
+   "filename": "directionality-semantic-labor.png",
+   "path": "/data/captures/directionality-semantic-labor/directionality-semantic-labor.png",
+   "bytes": 264021,
+   "sha256": "2f11a5af53a20906e4cd8e1c03ed666c0b8358279ca0fd4d52dba229e17211f4",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for directionality-semantic-labor"
+  },
+  {
+   "filename": "distributed-epic-without-hero-1.png",
+   "path": "/data/captures/distributed-epic-without-hero/distributed-epic-without-hero-1.png",
+   "bytes": 338499,
+   "sha256": "05fed6c0f6fa764f6a4d1496cd45315fb07662947ed682808cfe52902cba6071",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for distributed-epic-without-hero"
+  },
+  {
+   "filename": "distributed-epic-without-hero-2.png",
+   "path": "/data/captures/distributed-epic-without-hero/distributed-epic-without-hero-2.png",
+   "bytes": 385817,
+   "sha256": "a8c6ae452421a29f72a904ceed5a3bb535e64760ead1d3e075705b2128024202",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for distributed-epic-without-hero"
+  },
+  {
+   "filename": "screengrab-20260813-224826.png",
+   "path": "/data/captures/doxastic-regulatory-calcification-20260813-2248/screengrab-20260813-224826.png",
+   "bytes": 363605,
+   "sha256": "18a91152c2345e5399840c37adf7b8ba8cc0aa3441429196dc5b53d8dbcac006",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for doxastic-regulatory-calcification-20260813-2248"
+  },
+  {
+   "filename": "screengrab-20260814-174544.png",
+   "path": "/data/captures/emily-antioch-20260814/screengrab-20260814-174544.png",
+   "bytes": 497488,
+   "sha256": "c9815d4652287e4a2c2d9f548811bd272674bd8c7a897da2e3e31384153ab5c4",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for emily-antioch-20260814"
+  },
+  {
+   "filename": "screengrab-20260813-164420.png",
+   "path": "/data/captures/endogenous-sophon-alexanarch-20260813/screengrab-20260813-164420.png",
+   "bytes": 340069,
+   "sha256": "1f57c5c7d0a035211024b84ea5e96b18738edfb20df4f6d659fb4088b792698b",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for endogenous-sophon-alexanarch-20260813"
+  },
+  {
+   "filename": "screengrab-20260813-105745.png",
+   "path": "/data/captures/enli-lucente-20260813/screengrab-20260813-105745.png",
+   "bytes": 363255,
+   "sha256": "1723036933b6fddf985d6f2cafaedcd669008b4bf5fd57050c877fff4ecaf24c",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for enli-lucente-20260813"
+  },
+  {
+   "filename": "screengrab-20260813-105753.png",
+   "path": "/data/captures/enli-lucente-20260813/screengrab-20260813-105753.png",
+   "bytes": 384719,
+   "sha256": "487a2b1ab75780001ece232c89c9c6452026f06772f7b002a830f261af94be03",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for enli-lucente-20260813"
+  },
+  {
+   "filename": "screengrab-20260813-105758.png",
+   "path": "/data/captures/enli-lucente-20260813/screengrab-20260813-105758.png",
+   "bytes": 353056,
+   "sha256": "e60c47c8b0e536c8dc0d21c37818344fa1b92dea8dadc1ed53af02c890d7ca99",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for enli-lucente-20260813"
+  },
+  {
+   "filename": "screengrab-20260813-105804.png",
+   "path": "/data/captures/enli-lucente-20260813/screengrab-20260813-105804.png",
+   "bytes": 411039,
+   "sha256": "9e4a51bab3561aa858d280332bf9af00859a149ff50063aa01b45314c3f1f1c0",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for enli-lucente-20260813"
+  },
+  {
+   "filename": "screengrab-20260813-105808.png",
+   "path": "/data/captures/enli-lucente-20260813/screengrab-20260813-105808.png",
+   "bytes": 388758,
+   "sha256": "17d368995f7aed08578b16b594c382046429370e5ed7295822f161d62a4d9baf",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for enli-lucente-20260813"
+  },
+  {
+   "filename": "screengrab-20260813-105811.png",
+   "path": "/data/captures/enli-lucente-20260813/screengrab-20260813-105811.png",
+   "bytes": 421975,
+   "sha256": "f6efc26b32af3ef82a8eebe9692d5b91ddd6da5c868f4a635fc14967b3289b36",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for enli-lucente-20260813"
+  },
+  {
+   "filename": "screengrab-20260813-105816.png",
+   "path": "/data/captures/enli-lucente-20260813/screengrab-20260813-105816.png",
+   "bytes": 480649,
+   "sha256": "e30a32795963b473c9e478420c1d3e1d8b38a72876ec00e96831fdebe37afa6b",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for enli-lucente-20260813"
+  },
+  {
+   "filename": "screengrab-20260813-105820.png",
+   "path": "/data/captures/enli-lucente-20260813/screengrab-20260813-105820.png",
+   "bytes": 407629,
+   "sha256": "7878b1c90f114e9a77b1be841218eb2b30f71b6d8c8ce86b3a08c622bf45b126",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for enli-lucente-20260813"
+  },
+  {
+   "filename": "screengrab-20260813-224829.png",
+   "path": "/data/captures/epic-theory-sigil-20260813-2248/screengrab-20260813-224829.png",
+   "bytes": 379995,
+   "sha256": "9d8e1683cceee04aea0d56fda033b2be12634cde864580cb4b743cf11afbe0a0",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for epic-theory-sigil-20260813-2248"
+  },
+  {
+   "filename": "screengrab-20260813-164543.png",
+   "path": "/data/captures/epic-without-hero-20260813/screengrab-20260813-164543.png",
+   "bytes": 396583,
+   "sha256": "ee42a5d5722dd279cb7776f91dd856745f89ffde433d43ad3c68225a6f640119",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for epic-without-hero-20260813"
+  },
+  {
+   "filename": "epistle-human-diaspora.png",
+   "path": "/data/captures/epistle-human-diaspora/epistle-human-diaspora.png",
+   "bytes": 372244,
+   "sha256": "085a36748b48715072595ce543f320fbd1f56f0e465d3419184faaeca59c25fd",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for epistle-human-diaspora"
+  },
+  {
+   "filename": "erasure-skew-expanded.png",
+   "path": "/data/captures/erasure-skew-1/erasure-skew-expanded.png",
+   "bytes": 420253,
+   "sha256": "646a6bf95fbeae2b57cd62e6f9db51e4ce4707d8ed11b0a20a7b92019eb00390",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for erasure-skew-1"
+  },
+  {
+   "filename": "erasure-skew-search.png",
+   "path": "/data/captures/erasure-skew-1/erasure-skew-search.png",
+   "bytes": 309718,
+   "sha256": "1c286a7f65f4816069355b515238c7397d64d9355c0d078eed77cce753b23516",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for erasure-skew-1"
+  },
+  {
+   "filename": "screengrab-20260723-235353.png",
+   "path": "/data/captures/erasure-skew-canonization-20260723/screengrab-20260723-235353.png",
+   "bytes": 368423,
+   "sha256": "e31b726482e6dfc88d40d06c08ac222a20d177953aae02709fc7497cf6d1dc0b",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for erasure-skew-canonization-20260723"
+  },
+  {
+   "filename": "screengrab-20260723-235359.png",
+   "path": "/data/captures/erasure-skew-canonization-20260723/screengrab-20260723-235359.png",
+   "bytes": 390809,
+   "sha256": "8221bbaa8174934171cda167eab4be8a143ec6a5ecebb1f00ee44b9f7b307fcb",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for erasure-skew-canonization-20260723"
+  },
+  {
+   "filename": "fbdp-1.png",
+   "path": "/data/captures/fbdp/fbdp-1.png",
+   "bytes": 446792,
+   "sha256": "fcfb4fe9795bd3b88243cb353b56884722f27a70a5babf2f79a18e4cc32321db",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for fbdp"
+  },
+  {
+   "filename": "fbdp-2.png",
+   "path": "/data/captures/fbdp/fbdp-2.png",
+   "bytes": 366212,
+   "sha256": "ac59a5cb160e8b742d85f04a2e67d93abf8db95cb5979d524fa4eeb4a9386524",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for fbdp"
+  },
+  {
+   "filename": "screengrab-20260811-104326.png",
+   "path": "/data/captures/feist-function-alexanarch-20260811/screengrab-20260811-104326.png",
+   "bytes": 354960,
+   "sha256": "425e64ce6688b8ac2f4c39a421e5eccb4a81dd8e92fbe6b63d81720bff989cb8",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for feist-function-alexanarch-20260811"
+  },
+  {
+   "filename": "screengrab-20260811-104754.png",
+   "path": "/data/captures/feist-function-alexanarch-regen-20260811/screengrab-20260811-104754.png",
+   "bytes": 336085,
+   "sha256": "1842801e79eac45b4517ef5faa789ad76cea9e00b0720455b157c02cee0fcfec",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for feist-function-alexanarch-regen-20260811"
+  },
+  {
+   "filename": "screengrab-20260813-224835.png",
+   "path": "/data/captures/gamma-semantic-economy-20260813-2248/screengrab-20260813-224835.png",
+   "bytes": 378802,
+   "sha256": "42bb49e2208668da899ccca52a30dc3cddead0e0fe240c2d6efe983a95c634ac",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for gamma-semantic-economy-20260813-2248"
+  },
+  {
+   "filename": "generative-disciplinary-engine-1.png",
+   "path": "/data/captures/generative-disciplinary-engine/generative-disciplinary-engine-1.png",
+   "bytes": 502989,
+   "sha256": "65d23130d492a7a6a0e310e3b93ddb9567f30b1a652034687050c7bd04ce1c98",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for generative-disciplinary-engine"
+  },
+  {
+   "filename": "generative-disciplinary-engine-2.png",
+   "path": "/data/captures/generative-disciplinary-engine/generative-disciplinary-engine-2.png",
+   "bytes": 478419,
+   "sha256": "f519e713676f7e0fd489c214f89482b7fc78e3bfb63d5ae7f29637ea6a2f6591",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for generative-disciplinary-engine"
+  },
+  {
+   "filename": "screengrab-20260813-224838.png",
+   "path": "/data/captures/generative-monoculture-20260813-2248/screengrab-20260813-224838.png",
+   "bytes": 382339,
+   "sha256": "3bd59644b8d39bf83af87afebd770174056ba6b20686a20ada4fe664def4956a",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for generative-monoculture-20260813-2248"
+  },
+  {
+   "filename": "glyphic-checksum-1.png",
+   "path": "/data/captures/glyphic-checksum/glyphic-checksum-1.png",
+   "bytes": 376508,
+   "sha256": "0019d85c3bbe2ec8bf99ad1bdfaf0047d5afeb0675738611a5a9dfc0cb0fbf1a",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for glyphic-checksum"
+  },
+  {
+   "filename": "glyphic-checksum-2.png",
+   "path": "/data/captures/glyphic-checksum/glyphic-checksum-2.png",
+   "bytes": 422488,
+   "sha256": "8c8c5cac5c66281d02fed1b7f0a96d58a8b2138a5d8d1bb6d49d51c9bac26fa4",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for glyphic-checksum"
+  },
+  {
+   "filename": "godkinggoogle-overview.png",
+   "path": "/data/captures/godkinggoogle-overview/godkinggoogle-overview.png",
+   "bytes": 259647,
+   "sha256": "031fa1b2640337b9ece76fd7ab4e2f18ef60b118471b199bc30fcc88b235174d",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for godkinggoogle-overview"
+  },
+  {
+   "filename": "grammata-operative-philology-1.png",
+   "path": "/data/captures/grammata-operative-philology/grammata-operative-philology-1.png",
+   "bytes": 365701,
+   "sha256": "6527e39e46bcf5d9c4adc5f03187ecf762b5bca6eec3a619eae40d079d7f2d5f",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for grammata-operative-philology"
+  },
+  {
+   "filename": "grammata-operative-philology-2.png",
+   "path": "/data/captures/grammata-operative-philology/grammata-operative-philology-2.png",
+   "bytes": 333325,
+   "sha256": "e1ee5f334c068f6624f83fa0fb405c1a83f77f827f5667f481b9848f7172dad3",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for grammata-operative-philology"
+  },
+  {
+   "filename": "gravity-well-protocol-1.png",
+   "path": "/data/captures/gravity-well-protocol/gravity-well-protocol-1.png",
+   "bytes": 371599,
+   "sha256": "ab73c7b3809bb9fc7f0ac624ebab321ff27a41df36919e7ebcbaab53e0dd8545",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for gravity-well-protocol"
+  },
+  {
+   "filename": "gravity-well-protocol-2.png",
+   "path": "/data/captures/gravity-well-protocol/gravity-well-protocol-2.png",
+   "bytes": 389559,
+   "sha256": "e2d4efc20ff83b450953a8285ee2e9ab39df7cb798a183efb76d57b0197e798b",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for gravity-well-protocol"
+  },
+  {
+   "filename": "screengrab-20260813-224841.png",
+   "path": "/data/captures/gravity-well-protocol-tachyon-reconstitute-zenodo-20260813-2248/screengrab-20260813-224841.png",
+   "bytes": 393497,
+   "sha256": "40d4f3e0ba12e88e9ceb5a29c2753b2d9d0ebc8886da171f7af964fe8287a5b0",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for gravity-well-protocol-tachyon-reconstitute-zenodo-20260813-2248"
+  },
+  {
+   "filename": "screengrab-20260813-224851.png",
+   "path": "/data/captures/haitch-portuna-20260813-2248/screengrab-20260813-224851.png",
+   "bytes": 332850,
+   "sha256": "24cf364b4caff6521e55a377e0ffec47f5d7e80624fd9824dfe1c00d15257a81",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for haitch-portuna-20260813-2248"
+  },
+  {
+   "filename": "screengrab-20260811-104914.png",
+   "path": "/data/captures/heteronym-dodecad-20260811/screengrab-20260811-104914.png",
+   "bytes": 339188,
+   "sha256": "b5cb7b663a23a5967188bab960390279cb75979d31a47ea2e1ea46b6bf67abc9",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for heteronym-dodecad-20260811"
+  },
+  {
+   "filename": "screengrab-20260811-104259.png",
+   "path": "/data/captures/heteronym-provenance-theory-20260811/screengrab-20260811-104259.png",
+   "bytes": 416725,
+   "sha256": "b7bbd7ea0218901203c81a7e42df4c663b68bf5d10266eb2e5a9a08c73df2b34",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for heteronym-provenance-theory-20260811"
+  },
+  {
+   "filename": "heteronym-provenance-theory-consolidation-20260809-1.png",
+   "path": "/data/captures/heteronym-provenance-theory-consolidation-20260809/heteronym-provenance-theory-consolidation-20260809-1.png",
+   "bytes": 363448,
+   "sha256": "a8a73933e597e0240f06947327c2645c070f786fe17294b2361a841c85410374",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for heteronym-provenance-theory-consolidation-20260809"
+  },
+  {
+   "filename": "heteronym-provenance-theory-consolidation-20260809-2.png",
+   "path": "/data/captures/heteronym-provenance-theory-consolidation-20260809/heteronym-provenance-theory-consolidation-20260809-2.png",
+   "bytes": 427817,
+   "sha256": "45611b46cf2561e0016acf88efd9356c7345c1647c91b4d020f4f7a6cdfc6fb1",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for heteronym-provenance-theory-consolidation-20260809"
+  },
+  {
+   "filename": "heteronym-provenance-theory-consolidation-20260809-3.png",
+   "path": "/data/captures/heteronym-provenance-theory-consolidation-20260809/heteronym-provenance-theory-consolidation-20260809-3.png",
+   "bytes": 387613,
+   "sha256": "a70d4d878b99f1448e15da65471df0587ce354b02ac8e28d0785d1371470e5bc",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for heteronym-provenance-theory-consolidation-20260809"
+  },
+  {
+   "filename": "screengrab-20260813-224855.png",
+   "path": "/data/captures/heteronymic-authorship-new-testament-20260813-2248/screengrab-20260813-224855.png",
+   "bytes": 346472,
+   "sha256": "0ea11d34672bdc22b1737e82da42d76e2551a090a1da5d3b33a3d1fe4c829d10",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for heteronymic-authorship-new-testament-20260813-2248"
+  },
+  {
+   "filename": "screengrab-20260814-004919.png",
+   "path": "/data/captures/heteronymic-credential-20260814-0049/screengrab-20260814-004919.png",
+   "bytes": 364885,
+   "sha256": "24f6ba94f02c6a6fd5f39c6f649bcefc08d930852491c52ba2994306217c832e",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for heteronymic-credential-20260814-0049"
+  },
+  {
+   "filename": "heteronymic-provenance-theory-1.png",
+   "path": "/data/captures/heteronymic-provenance-theory/heteronymic-provenance-theory-1.png",
+   "bytes": 281162,
+   "sha256": "f2bf544e2c2da95809ca04f19311c65931628010af8450965f15448dff1b3889",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for heteronymic-provenance-theory"
+  },
+  {
+   "filename": "heteronymic-provenance-theory-2.png",
+   "path": "/data/captures/heteronymic-provenance-theory/heteronymic-provenance-theory-2.png",
+   "bytes": 249768,
+   "sha256": "baf598760aea2e936745b215ca5b046eb499057c94f2c5b4750ebe1be1b79759",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for heteronymic-provenance-theory"
+  },
+  {
+   "filename": "hexagonal-licensing-protocol-b1-1.png",
+   "path": "/data/captures/hexagonal-licensing-protocol-b1/hexagonal-licensing-protocol-b1-1.png",
+   "bytes": 382080,
+   "sha256": "c309f25981e1f55f03e41e4a7d41b4368a406bb2f9af871820b73f5b90c69ad9",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for hexagonal-licensing-protocol-b1"
+  },
+  {
+   "filename": "hexagonal-licensing-protocol-b1-2.png",
+   "path": "/data/captures/hexagonal-licensing-protocol-b1/hexagonal-licensing-protocol-b1-2.png",
+   "bytes": 374630,
+   "sha256": "f591538afcf12c4c7b60a01d0e13328b58437f7279cedf0ae8e6719a55772bf0",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for hexagonal-licensing-protocol-b1"
+  },
+  {
+   "filename": "screengrab-20260814-004922.png",
+   "path": "/data/captures/hexagonal-licensing-protocol-derive-contributor-license-20260814-0049/screengrab-20260814-004922.png",
+   "bytes": 387811,
+   "sha256": "bae821d211166e3d8838535d719f7b29ecabb350db5d1b65796c1fb6955c03b1",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for hexagonal-licensing-protocol-derive-contributor-license-20260814-0049"
+  },
+  {
+   "filename": "holographic-kernel.png",
+   "path": "/data/captures/holographic-kernel/holographic-kernel.png",
+   "bytes": 237143,
+   "sha256": "8d7f987dc3e52d8722e8c2ce71b2d01ee22d347a05012e740ceaa9bad6a043ed",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for holographic-kernel"
+  },
+  {
+   "filename": "screengrab-20260814-004926.png",
+   "path": "/data/captures/how-do-i-invoke-the-space-ark-crimson-hexagonal-archive-20260814-0049/screengrab-20260814-004926.png",
+   "bytes": 398165,
+   "sha256": "79a1c994676775311a1c58f9114bdbcdbf8f76b97d4db2eb8cd0b9f44495cc99",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for how-do-i-invoke-the-space-ark-crimson-hexagonal-archive-20260814-0049"
+  },
+  {
+   "filename": "screengrab-20260811-104305.png",
+   "path": "/data/captures/i-am-x-be-y-blessed-is-the-z-20260811/screengrab-20260811-104305.png",
+   "bytes": 298742,
+   "sha256": "04bca588048c8ef83f8ac0cefcfa7057472529655ac1d4711c3a9a87a3d62b15",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for i-am-x-be-y-blessed-is-the-z-20260811"
+  },
+  {
+   "filename": "i-hereby-abolish-toilet-paper-recapture.png",
+   "path": "/data/captures/i-hereby-abolish-toilet-paper/i-hereby-abolish-toilet-paper-recapture.png",
+   "bytes": 257759,
+   "sha256": "2f45a5f02d61bc7d7e5550265c13339ad79668766562c773cc731191cfe9a46f",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for i-hereby-abolish-toilet-paper"
+  },
+  {
+   "filename": "i-hereby-abolish-toilet-paper.png",
+   "path": "/data/captures/i-hereby-abolish-toilet-paper/i-hereby-abolish-toilet-paper.png",
+   "bytes": 357297,
+   "sha256": "7caabcbb14ef705009604953a4aec0fede1a7627cceca80eb673fe0138eb63e8",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for i-hereby-abolish-toilet-paper"
+  },
+  {
+   "filename": "ichabod-spellings-1.png",
+   "path": "/data/captures/ichabod-spellings/ichabod-spellings-1.png",
+   "bytes": 340837,
+   "sha256": "b2f591d2b34914558093a7bb62a34c1de5fbd431ef477ad413fc18093e438f65",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for ichabod-spellings"
+  },
+  {
+   "filename": "ichabod-spellings-2.png",
+   "path": "/data/captures/ichabod-spellings/ichabod-spellings-2.png",
+   "bytes": 400533,
+   "sha256": "41fd2a252ea49b0482eaf2d8f8bcbeba7ef3142ed6f566b1ab991f60c6c61733",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for ichabod-spellings"
+  },
+  {
+   "filename": "immanent-execution-broad-1.png",
+   "path": "/data/captures/immanent-execution-broad/immanent-execution-broad-1.png",
+   "bytes": 337148,
+   "sha256": "668155227110a06023d203567538ec191d25d57f4691676f79645cee4c867ea6",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for immanent-execution-broad"
+  },
+  {
+   "filename": "immanent-execution-broad-2.png",
+   "path": "/data/captures/immanent-execution-broad/immanent-execution-broad-2.png",
+   "bytes": 351298,
+   "sha256": "74df12bd7325335d7d5aafebdd6871e4dd38e682dc56ec2160b94db30a278c35",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for immanent-execution-broad"
+  },
+  {
+   "filename": "immanent-execution-operative-docs-1.png",
+   "path": "/data/captures/immanent-execution-operative-docs/immanent-execution-operative-docs-1.png",
+   "bytes": 375611,
+   "sha256": "e1e1dbb073d2846bbebc4ef313457e65023ad86b93dfcf889657397f1b7e2b7b",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for immanent-execution-operative-docs"
+  },
+  {
+   "filename": "immanent-execution-operative-docs-2.png",
+   "path": "/data/captures/immanent-execution-operative-docs/immanent-execution-operative-docs-2.png",
+   "bytes": 412178,
+   "sha256": "7e07ee221fdca466f665e0cb5ed68628fd674929f43a4fe0c13a66c419b1149f",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for immanent-execution-operative-docs"
+  },
+  {
+   "filename": "screengrab-20260814-004930.png",
+   "path": "/data/captures/indexed-perfective-20260814-0049/screengrab-20260814-004930.png",
+   "bytes": 352696,
+   "sha256": "c4a62fb25eb94c12dda1595a998e44dfbcdbd98a15720b056708bc022cda6527",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for indexed-perfective-20260814-0049"
+  },
+  {
+   "filename": "infinite-bliss-sen-kuro-1.png",
+   "path": "/data/captures/infinite-bliss-sen-kuro/infinite-bliss-sen-kuro-1.png",
+   "bytes": 346481,
+   "sha256": "86f4bea8a618f961e2343ac265b299408e3f93d367b4d3098de7a4ac734cad88",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for infinite-bliss-sen-kuro"
+  },
+  {
+   "filename": "infinite-bliss-sen-kuro-2.png",
+   "path": "/data/captures/infinite-bliss-sen-kuro/infinite-bliss-sen-kuro-2.png",
+   "bytes": 351746,
+   "sha256": "6eaebfb4a3d268b9ce1d0e1172697fbd42dcf2010b6172eddb59e752c0f5d0ca",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for infinite-bliss-sen-kuro"
+  },
+  {
+   "filename": "screengrab-20260814-004933.png",
+   "path": "/data/captures/inscription-chain-sappho-revelation-20260814-0049/screengrab-20260814-004933.png",
+   "bytes": 367238,
+   "sha256": "de72c7c6196430706f980b18f97d0e5c86ad1db3f4a7075fc3871a5a30b9f1e3",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for inscription-chain-sappho-revelation-20260814-0049"
+  },
+  {
+   "filename": "screengrab-20260814-004936.png",
+   "path": "/data/captures/integrity-lock-protocol-mutual-anchoring-crimson-hexagon-20260814-0049/screengrab-20260814-004936.png",
+   "bytes": 436457,
+   "sha256": "b74e03626cdd2d96aa16a09a5a1fc14a47730fe1ff6373ccc2b40f5890661859",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for integrity-lock-protocol-mutual-anchoring-crimson-hexagon-20260814-0049"
+  },
+  {
+   "filename": "jack-feist-paper-roses.png",
+   "path": "/data/captures/jack-feist-paper-roses/jack-feist-paper-roses.png",
+   "bytes": 264139,
+   "sha256": "ec83b3fdf1e3df3de8cd2125475049d1384f3f77319e0996f4847cb810ecc08e",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for jack-feist-paper-roses"
+  },
+  {
+   "filename": "screengrab-20260814-004940.png",
+   "path": "/data/captures/johannes-aigil-20260814-0049/screengrab-20260814-004940.png",
+   "bytes": 389669,
+   "sha256": "733a0a8c34edeebc22940fb2643bbf72a057e636facf31bedc3f7a34afc7ffb7",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for johannes-aigil-20260814-0049"
+  },
+  {
+   "filename": "johannes-sigil-grundrisse-1.png",
+   "path": "/data/captures/johannes-sigil/johannes-sigil-grundrisse-1.png",
+   "bytes": 278842,
+   "sha256": "1f40617fac60d97097d68053f7fa6020e400e3b92f64c96d48197c472adbb6da",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for johannes-sigil"
+  },
+  {
+   "filename": "johannes-sigil-grundrisse-2.png",
+   "path": "/data/captures/johannes-sigil/johannes-sigil-grundrisse-2.png",
+   "bytes": 254793,
+   "sha256": "3204171cafe8e5968da4fc754858774435285be80575163577977b962dcc1d22",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for johannes-sigil"
+  },
+  {
+   "filename": "johannes-sigil.png",
+   "path": "/data/captures/johannes-sigil/johannes-sigil.png",
+   "bytes": 252098,
+   "sha256": "b530e0990e3e2b24b6c90fd24378efcaef296a71f7f1f04155d5ef5d1355f4d6",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for johannes-sigil"
+  },
+  {
+   "filename": "johannes-sigil-grundrisse-1.png",
+   "path": "/data/captures/johannes-sigil-grundrisse/johannes-sigil-grundrisse-1.png",
+   "bytes": 278842,
+   "sha256": "1f40617fac60d97097d68053f7fa6020e400e3b92f64c96d48197c472adbb6da",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for johannes-sigil-grundrisse"
+  },
+  {
+   "filename": "johannes-sigil-grundrisse-2.png",
+   "path": "/data/captures/johannes-sigil-grundrisse/johannes-sigil-grundrisse-2.png",
+   "bytes": 254793,
+   "sha256": "3204171cafe8e5968da4fc754858774435285be80575163577977b962dcc1d22",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for johannes-sigil-grundrisse"
+  },
+  {
+   "filename": "johannes-sigil-grundrisse-3.png",
+   "path": "/data/captures/johannes-sigil-grundrisse/johannes-sigil-grundrisse-3.png",
+   "bytes": 256595,
+   "sha256": "dfcefef2bff0d0d42095608ade2e2d0a9e005ba9b04c3547215394bfb96e1df9",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for johannes-sigil-grundrisse"
+  },
+  {
+   "filename": "screengrab-20260814-004942.png",
+   "path": "/data/captures/johannes-sigil-new-human-20260814-0049/screengrab-20260814-004942.png",
+   "bytes": 371032,
+   "sha256": "8ff87f30da20474b506a3cc2d045d4ae773c80891d26d9633ed250dcbcf5eacb",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for johannes-sigil-new-human-20260814-0049"
+  },
+  {
+   "filename": "johannes-sigil-philosopher-b1-1.png",
+   "path": "/data/captures/johannes-sigil-philosopher-b1/johannes-sigil-philosopher-b1-1.png",
+   "bytes": 459021,
+   "sha256": "e61bce8fd59fbacd76155d5236c9febcb78cb83a24d501e8b721d6a991860c6e",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for johannes-sigil-philosopher-b1"
+  },
+  {
+   "filename": "johannes-sigil-philosopher-b1-2.png",
+   "path": "/data/captures/johannes-sigil-philosopher-b1/johannes-sigil-philosopher-b1-2.png",
+   "bytes": 480356,
+   "sha256": "b11c2e101058904cb2acf1982d944415e46aab42e37f819c4860e333a21ad474",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for johannes-sigil-philosopher-b1"
+  },
+  {
+   "filename": "screengrab-20260814-004945.png",
+   "path": "/data/captures/johannes-sigil-teacher-20260814-0049/screengrab-20260814-004945.png",
+   "bytes": 381325,
+   "sha256": "3100371ec61d39ffb8e1ac193ba0defaec92f651e57b2f90da60287ee4ad2146",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for johannes-sigil-teacher-20260814-0049"
+  },
+  {
+   "filename": "screengrab-20260814-004948.png",
+   "path": "/data/captures/johannes-sigil-writer-20260814-0049/screengrab-20260814-004948.png",
+   "bytes": 350732,
+   "sha256": "d8d20bfc012272e34ff37795d2eac74a0c661acd85c4d19a8acf816fea2fb53b",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for johannes-sigil-writer-20260814-0049"
+  },
+  {
+   "filename": "screengrab-20260814-004951.png",
+   "path": "/data/captures/johannine-aperture-20260814-0049/screengrab-20260814-004951.png",
+   "bytes": 387163,
+   "sha256": "ceca7e21896a3c6e5a1279ef01c3adf1b5211f976ab1257aba98872eb613b125",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for johannine-aperture-20260814-0049"
+  },
+  {
+   "filename": "screengrab-20260814-004956.png",
+   "path": "/data/captures/josephus-heteronym-20260814-0049/screengrab-20260814-004956.png",
+   "bytes": 361778,
+   "sha256": "045816abad6880f61fe20757e96dc4d780ddc282829514065e214348acd07fc0",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for josephus-heteronym-20260814-0049"
+  },
+  {
+   "filename": "josephus-thesis-1.png",
+   "path": "/data/captures/josephus-thesis/josephus-thesis-1.png",
+   "bytes": 291860,
+   "sha256": "5824aea471e74b35f370115b964b25d19f51207aa16e41f700933926d43f3f81",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for josephus-thesis"
+  },
+  {
+   "filename": "josephus-thesis-2.png",
+   "path": "/data/captures/josephus-thesis/josephus-thesis-2.png",
+   "bytes": 245374,
+   "sha256": "5548a8331a0d5d60b1db9495b9d630e589d3722529929ec4bb2f8e5863c5cbd7",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for josephus-thesis"
+  },
+  {
+   "filename": "josephus-thesis-1.png",
+   "path": "/data/captures/josephus-thesis-not-piso/josephus-thesis-1.png",
+   "bytes": 291860,
+   "sha256": "5824aea471e74b35f370115b964b25d19f51207aa16e41f700933926d43f3f81",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for josephus-thesis-not-piso"
+  },
+  {
+   "filename": "josephus-thesis-2.png",
+   "path": "/data/captures/josephus-thesis-not-piso/josephus-thesis-2.png",
+   "bytes": 245374,
+   "sha256": "5548a8331a0d5d60b1db9495b9d630e589d3722529929ec4bb2f8e5863c5cbd7",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for josephus-thesis-not-piso"
+  },
+  {
+   "filename": "journal-of-compression-studies-1.png",
+   "path": "/data/captures/journal-of-compression-studies/journal-of-compression-studies-1.png",
+   "bytes": 394115,
+   "sha256": "64f20908751fc6069bfb490a12862f069efdf330caf24642830ae8b5c66d9018",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for journal-of-compression-studies"
+  },
+  {
+   "filename": "journal-of-compression-studies-2.png",
+   "path": "/data/captures/journal-of-compression-studies/journal-of-compression-studies-2.png",
+   "bytes": 372404,
+   "sha256": "d9a7451e7e68f4c8d6bce006676d2ed2377469f66bb845cc85f7d13f349ad490",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for journal-of-compression-studies"
+  },
+  {
+   "filename": "jsigil-institute-1.png",
+   "path": "/data/captures/jsigil-institute/jsigil-institute-1.png",
+   "bytes": 418126,
+   "sha256": "ae514a8c9811a34c432498164d554710a3bae7dd35c1103b9fc3c57c84f9da73",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for jsigil-institute"
+  },
+  {
+   "filename": "jsigil-institute-2.png",
+   "path": "/data/captures/jsigil-institute/jsigil-institute-2.png",
+   "bytes": 391144,
+   "sha256": "630a4e6c5c83b7f07a7d3a6fecff27d07e2eb2393f4cb4756c28f4e6b91e7e18",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for jsigil-institute"
+  },
+  {
+   "filename": "screengrab-20260814-174549.png",
+   "path": "/data/captures/keeffe-problem-20260814/screengrab-20260814-174549.png",
+   "bytes": 389818,
+   "sha256": "64e8b1acb72962b0d967ea0d0da5724a24a87877da1103b2d4b79b0fa05f63b2",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for keeffe-problem-20260814"
+  },
+  {
+   "filename": "kenotic-truth-expanded.png",
+   "path": "/data/captures/kenotic-truth-sappho/kenotic-truth-expanded.png",
+   "bytes": 379670,
+   "sha256": "ef51780d4bd8fdaa738c03f59a22b1f861f9885a3a1434f6c1e92406303fddd1",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for kenotic-truth-sappho"
+  },
+  {
+   "filename": "kenotic-truth-search.png",
+   "path": "/data/captures/kenotic-truth-sappho/kenotic-truth-search.png",
+   "bytes": 484796,
+   "sha256": "ea70db4a4dee4ef35dc955d58ed8b03be3f22e1ebc823172c2e488c41e898842",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for kenotic-truth-sappho"
+  },
+  {
+   "filename": "lee-sharks-academic-1.png",
+   "path": "/data/captures/lee-sharks-academic/lee-sharks-academic-1.png",
+   "bytes": 463578,
+   "sha256": "98730e9a4e16f7fbcbfcdbd00e98e58388dca56178d66fac20d0861ad664f8d5",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for lee-sharks-academic"
+  },
+  {
+   "filename": "lee-sharks-academic-2.png",
+   "path": "/data/captures/lee-sharks-academic/lee-sharks-academic-2.png",
+   "bytes": 377663,
+   "sha256": "5c76fa391d3f58ccd44eba21ecd2e1bc07110e85730b4c23c100c10f3f0f0ad0",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for lee-sharks-academic"
+  },
+  {
+   "filename": "lee-sharks-citations-1.png",
+   "path": "/data/captures/lee-sharks-citations/lee-sharks-citations-1.png",
+   "bytes": 440586,
+   "sha256": "448013871d9c38be57cf87a44566961161cd9a19a32811b196a20feaf9c4b31f",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for lee-sharks-citations"
+  },
+  {
+   "filename": "lee-sharks-citations-2.png",
+   "path": "/data/captures/lee-sharks-citations/lee-sharks-citations-2.png",
+   "bytes": 404627,
+   "sha256": "8c9eac10a84f34bff20d02175430b1b83851ff082c31a47a3e47d5c42044dea8",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for lee-sharks-citations"
+  },
+  {
+   "filename": "screengrab-20260814-004959.png",
+   "path": "/data/captures/lee-sharks-crimson-hexagon-20260814-0049/screengrab-20260814-004959.png",
+   "bytes": 534943,
+   "sha256": "fc98cd4b035133df4fa674542a36fdd4adef7254c8ce5d579d89e36733a816b9",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for lee-sharks-crimson-hexagon-20260814-0049"
+  },
+  {
+   "filename": "lee-sharks-critique-1.png",
+   "path": "/data/captures/lee-sharks-critique/lee-sharks-critique-1.png",
+   "bytes": 359512,
+   "sha256": "9ade0906a626d7b2e5c100a56e07f1871828c58e89821a8011a484331e8c93b7",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for lee-sharks-critique"
+  },
+  {
+   "filename": "lee-sharks-critique-2.png",
+   "path": "/data/captures/lee-sharks-critique/lee-sharks-critique-2.png",
+   "bytes": 355248,
+   "sha256": "0499a50b544c7a514078f5a28d904bfed8595cbf511102a4290d0c6c4624f3e4",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for lee-sharks-critique"
+  },
+  {
+   "filename": "screengrab-20260814-005002.png",
+   "path": "/data/captures/lee-sharks-marx-20260814-0049/screengrab-20260814-005002.png",
+   "bytes": 390944,
+   "sha256": "267320bc4ca1acf7e545715f5175636782a141dd00f82de793164aa32c7343f2",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for lee-sharks-marx-20260814-0049"
+  },
+  {
+   "filename": "screengrab-20260814-005005.png",
+   "path": "/data/captures/lee-sharks-operative-semiotics-20260814-0049/screengrab-20260814-005005.png",
+   "bytes": 378550,
+   "sha256": "f8fd3fb37ef11797f86407e9afb53f3efc46328db50f2df5c2dbe10092943cc7",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for lee-sharks-operative-semiotics-20260814-0049"
+  },
+  {
+   "filename": "screengrab-20260814-005008.png",
+   "path": "/data/captures/lee-sharks-pearl-20260814-0049/screengrab-20260814-005008.png",
+   "bytes": 368777,
+   "sha256": "f4f2e7f1111e44dfe0739863655fdb947ef15cae3f0da3adba3256ffe1504b5b",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for lee-sharks-pearl-20260814-0049"
+  },
+  {
+   "filename": "lee-sharks-philosopher-1.png",
+   "path": "/data/captures/lee-sharks-philosopher/lee-sharks-philosopher-1.png",
+   "bytes": 353623,
+   "sha256": "78fc65f48a8466594ff026fd5df843c92b8c169f4b55614608d59ffb42f2b652",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for lee-sharks-philosopher"
+  },
+  {
+   "filename": "lee-sharks-philosopher-2.png",
+   "path": "/data/captures/lee-sharks-philosopher/lee-sharks-philosopher-2.png",
+   "bytes": 397558,
+   "sha256": "60dd0ceb9c42ed2508331cdc59b907e778e528d3ec0ca0bda75b4a9c2936ae3c",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for lee-sharks-philosopher"
+  },
+  {
+   "filename": "screengrab-20260814-005011.png",
+   "path": "/data/captures/lee-sharks-public-summarizers-20260814-0049/screengrab-20260814-005011.png",
+   "bytes": 635231,
+   "sha256": "b1002a533e69575874172ebb4dd1cadc1f5b22a31dedfc376e160f37125e7871",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for lee-sharks-public-summarizers-20260814-0049"
+  },
+  {
+   "filename": "lee-sharks-semantic-economy-b1-1.png",
+   "path": "/data/captures/lee-sharks-semantic-economy-b1/lee-sharks-semantic-economy-b1-1.png",
+   "bytes": 384412,
+   "sha256": "02324db6e210fe09c2ff9e5bd3681a9db02176569f383578e4ba407d571f8cd4",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for lee-sharks-semantic-economy-b1"
+  },
+  {
+   "filename": "lee-sharks-semantic-economy-b1-2.png",
+   "path": "/data/captures/lee-sharks-semantic-economy-b1/lee-sharks-semantic-economy-b1-2.png",
+   "bytes": 362068,
+   "sha256": "7daf37d43da762c99b3e11639a8a8ef6f98ba3b3899a529fa813001fdf1ce6e9",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for lee-sharks-semantic-economy-b1"
+  },
+  {
+   "filename": "screengrab-20260813-164359.png",
+   "path": "/data/captures/lee-sharks-the-network-is-the-porm-20260813/screengrab-20260813-164359.png",
+   "bytes": 374685,
+   "sha256": "87a948cb047273bdce6f1ff32c1af9b6e55a0705624d1ac81d5d9e4f26db05af",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for lee-sharks-the-network-is-the-porm-20260813"
+  },
+  {
+   "filename": "liberatory-operator-set-1.png",
+   "path": "/data/captures/liberatory-operator-set/liberatory-operator-set-1.png",
+   "bytes": 386396,
+   "sha256": "f9f07d209d015bf931cf9c91a1f817aca6970e4ad92dc439bacd334a37dd19d1",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for liberatory-operator-set"
+  },
+  {
+   "filename": "liberatory-operator-set-2.png",
+   "path": "/data/captures/liberatory-operator-set/liberatory-operator-set-2.png",
+   "bytes": 357840,
+   "sha256": "0cea468850f6d90dd570ed72cb8949b0fc3e676d455b602a40ec7f6194c348ea",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for liberatory-operator-set"
+  },
+  {
+   "filename": "living-architecture-lab-thornburgh-1.png",
+   "path": "/data/captures/living-architecture-lab-thornburgh/living-architecture-lab-thornburgh-1.png",
+   "bytes": 373989,
+   "sha256": "0ece6ca889693b23be0c9e6546005d25e3f68b4aac84383ad59f188439e405db",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for living-architecture-lab-thornburgh"
+  },
+  {
+   "filename": "living-architecture-lab-thornburgh-2.png",
+   "path": "/data/captures/living-architecture-lab-thornburgh/living-architecture-lab-thornburgh-2.png",
+   "bytes": 379014,
+   "sha256": "434a330b88818b355b2ec0db9a6f406cfc1515094d8be388524c525d62089abb",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for living-architecture-lab-thornburgh"
+  },
+  {
+   "filename": "screengrab-20260814-174534.png",
+   "path": "/data/captures/logotic-loop-20260814/screengrab-20260814-174534.png",
+   "bytes": 327958,
+   "sha256": "d73898292d61b17ff0fbf6ef4b86bfb2b7238d89971001c2393d58effd2e515b",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for logotic-loop-20260814"
+  },
+  {
+   "filename": "logotic-programming.png",
+   "path": "/data/captures/logotic-programming/logotic-programming.png",
+   "bytes": 356319,
+   "sha256": "7da0c7a87d06d74e79beeccda1c71ab4b52add2a779c4e96e1f5743b8b3bdc3e",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for logotic-programming"
+  },
+  {
+   "filename": "machine-dialectic-sigil-1.png",
+   "path": "/data/captures/machine-dialectic-sigil/machine-dialectic-sigil-1.png",
+   "bytes": 544002,
+   "sha256": "da607b6509157527c7525667e4b372d690a2b2ac5ddfb8f7bcaa667b18fb7fb7",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for machine-dialectic-sigil"
+  },
+  {
+   "filename": "machine-dialectic-sigil-2.png",
+   "path": "/data/captures/machine-dialectic-sigil/machine-dialectic-sigil-2.png",
+   "bytes": 476205,
+   "sha256": "1e807b433d9a358b1e42abfecb34ec473cea7eee4d560ef30c55f66ba56e1174",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for machine-dialectic-sigil"
+  },
+  {
+   "filename": "screengrab-20260725-131650.png",
+   "path": "/data/captures/machine-eligible-handwritten-artifacts-definitional-adoption-20260725/screengrab-20260725-131650.png",
+   "bytes": 423179,
+   "sha256": "b9043a94acc665d3c687d1ab1482417c8db363a7e5c0193174c03237107a9a94",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for machine-eligible-handwritten-artifacts-definitional-adoption-20260725"
+  },
+  {
+   "filename": "screengrab-20260808-111820.png",
+   "path": "/data/captures/machine-mediated-reception-studies-definitional-20260808/screengrab-20260808-111820.png",
+   "bytes": 402644,
+   "sha256": "66ec1d4497f3da6971dbd32e6967cc499848c25e77bd179d4c580fa93fd4735d",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for machine-mediated-reception-studies-definitional-20260808"
+  },
+  {
+   "filename": "screengrab-20260808-111824.png",
+   "path": "/data/captures/machine-mediated-reception-studies-definitional-20260808/screengrab-20260808-111824.png",
+   "bytes": 385694,
+   "sha256": "88b708e198e303cd61342ae5c5b108c97df9bac708467a515630b6cff3866d20",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for machine-mediated-reception-studies-definitional-20260808"
+  },
+  {
+   "filename": "screengrab-20260808-111836.png",
+   "path": "/data/captures/machine-mediated-reception-studies-definitional-20260808/screengrab-20260808-111836.png",
+   "bytes": 349068,
+   "sha256": "f1d495e00595368203cda4236edf1f49be37a9f16dddf75a960029efb1183237",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for machine-mediated-reception-studies-definitional-20260808"
+  },
+  {
+   "filename": "screengrab-20260725-173821.png",
+   "path": "/data/captures/machine-mediated-resistance-literature-genre-to-field-inversion-20260725/screengrab-20260725-173821.png",
+   "bytes": 371245,
+   "sha256": "970554d20fc0a55587ef10f31247ec78804f9e6b7be32a59c51a8fbe0cf6077b",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for machine-mediated-resistance-literature-genre-to-field-inversion-20260725"
+  },
+  {
+   "filename": "screengrab-20260725-173857.png",
+   "path": "/data/captures/machine-mediated-resistance-literature-genre-to-field-inversion-20260725/screengrab-20260725-173857.png",
+   "bytes": 437031,
+   "sha256": "4664e924a3a93d667ce38535fd3518a150a23b7db8fc289f30b022dc90632162",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for machine-mediated-resistance-literature-genre-to-field-inversion-20260725"
+  },
+  {
+   "filename": "magic-as-symbolic-engineering-1.png",
+   "path": "/data/captures/magic-as-symbolic-engineering/magic-as-symbolic-engineering-1.png",
+   "bytes": 395529,
+   "sha256": "87701e6e3f190dd6c46454deabba1cc8b10ca31ec305531e20934c8e70f45318",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for magic-as-symbolic-engineering"
+  },
+  {
+   "filename": "magic-as-symbolic-engineering-2.png",
+   "path": "/data/captures/magic-as-symbolic-engineering/magic-as-symbolic-engineering-2.png",
+   "bytes": 363929,
+   "sha256": "59cd14ece6b09f16fe44ac86896e8a6d9ea5835c19f93fa7697a351deacbea4f",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for magic-as-symbolic-engineering"
+  },
+  {
+   "filename": "marxian-accounting-framework-1.png",
+   "path": "/data/captures/marxian-accounting-framework/marxian-accounting-framework-1.png",
+   "bytes": 441471,
+   "sha256": "38db667e1b9c45dfd362855543fc8887a917f56de7bab2a91de6ee455ea51359",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for marxian-accounting-framework"
+  },
+  {
+   "filename": "marxian-accounting-framework-2.png",
+   "path": "/data/captures/marxian-accounting-framework/marxian-accounting-framework-2.png",
+   "bytes": 377226,
+   "sha256": "f0efdbae821eeef8a68cf9efa14133c63fc43b38c65c19bcb640a62e8748ce7f",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for marxian-accounting-framework"
+  },
+  {
+   "filename": "maryleelabor-demands.png",
+   "path": "/data/captures/maryleelabor-demands/maryleelabor-demands.png",
+   "bytes": 369802,
+   "sha256": "6c94f823946294832e3aa2dea7fe895977ddeefd565f8e3fbc360410fbafe42f",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for maryleelabor-demands"
+  },
+  {
+   "filename": "meaning-feudalism-agent-trap-1.png",
+   "path": "/data/captures/meaning-feudalism-agent-trap/meaning-feudalism-agent-trap-1.png",
+   "bytes": 358808,
+   "sha256": "9c0d9e0e81b59e8907583b2eb342b165c79ddde4ff5ba60c15463bd2d955dea0",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for meaning-feudalism-agent-trap"
+  },
+  {
+   "filename": "meaning-feudalism-agent-trap-2.png",
+   "path": "/data/captures/meaning-feudalism-agent-trap/meaning-feudalism-agent-trap-2.png",
+   "bytes": 381172,
+   "sha256": "a20f38d456dadcdfbe71d1beb8235771d500a566a1d9e75df8fb8dd5109ac659",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for meaning-feudalism-agent-trap"
+  },
+  {
+   "filename": "metadata-packet-ai-indexing.png",
+   "path": "/data/captures/metadata-packet-ai-indexing/metadata-packet-ai-indexing.png",
+   "bytes": 261821,
+   "sha256": "7789fed49cc87d7536626b73a9ce66a06270ec3b0624d5ece313f70bb69ca760",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for metadata-packet-ai-indexing"
+  },
+  {
+   "filename": "moving-statues-made-of-rubies-mint-1.png",
+   "path": "/data/captures/moving-statues-made-of-rubies-mint/moving-statues-made-of-rubies-mint-1.png",
+   "bytes": 701842,
+   "sha256": "6b71a493498f96c1a8213f5e21082ea8e08ba05748382b7e273bf2296e8fa5c6",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for moving-statues-made-of-rubies-mint"
+  },
+  {
+   "filename": "moving-statues-made-of-rubies-mint-2.png",
+   "path": "/data/captures/moving-statues-made-of-rubies-mint/moving-statues-made-of-rubies-mint-2.png",
+   "bytes": 369893,
+   "sha256": "b186b009e910bfdff477841f2fc16d801875e2d6c5dfd9d5c646ab01e0966c40",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for moving-statues-made-of-rubies-mint"
+  },
+  {
+   "filename": "murder-of-the-vow-1.png",
+   "path": "/data/captures/murder-of-the-vow/murder-of-the-vow-1.png",
+   "bytes": 331085,
+   "sha256": "ceb747e60a79501a89612ba867054fd35f8efef718a3836489a43a5bee9244c9",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for murder-of-the-vow"
+  },
+  {
+   "filename": "murder-of-the-vow-2.png",
+   "path": "/data/captures/murder-of-the-vow/murder-of-the-vow-2.png",
+   "bytes": 373450,
+   "sha256": "a5dc34a6bad3d50449c3923784baba46d35d0de6362f0a4a0291fba1dffa1399",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for murder-of-the-vow"
+  },
+  {
+   "filename": "new-human-johannes-sigil-1.png",
+   "path": "/data/captures/new-human-johannes-sigil/new-human-johannes-sigil-1.png",
+   "bytes": 407793,
+   "sha256": "3561571c43262e149fa9d68ce2632353bd6dd00f9f177c41cad495d207f382ae",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for new-human-johannes-sigil"
+  },
+  {
+   "filename": "new-human-johannes-sigil-2.png",
+   "path": "/data/captures/new-human-johannes-sigil/new-human-johannes-sigil-2.png",
+   "bytes": 413852,
+   "sha256": "a672c880b323f6b39d5c0bbbf196da822eb625a5e2956fe3e9bfaebc1a903c1d",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for new-human-johannes-sigil"
+  },
+  {
+   "filename": "new-human-press-1.png",
+   "path": "/data/captures/new-human-press/new-human-press-1.png",
+   "bytes": 415084,
+   "sha256": "d1b15f143b50313738c726b94e0185bb395dcf6b5b459bcc14cc421b1f90a63e",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for new-human-press"
+  },
+  {
+   "filename": "new-human-press-2.png",
+   "path": "/data/captures/new-human-press/new-human-press-2.png",
+   "bytes": 437524,
+   "sha256": "9c00f683163cbaec98ecc44ba5bf131882c5fe8f21f26d3db3a55cde9295db43",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for new-human-press"
+  },
+  {
+   "filename": "nh-os-broad.png",
+   "path": "/data/captures/nh-os-broad/nh-os-broad.png",
+   "bytes": 259204,
+   "sha256": "47269f74ed9ab88e6053b39384f8c84093285d58efc23a0a00ffc6397f521b18",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for nh-os-broad"
+  },
+  {
+   "filename": "nh-os-ezekiel-engine-b1-1.png",
+   "path": "/data/captures/nh-os-ezekiel-engine-b1/nh-os-ezekiel-engine-b1-1.png",
+   "bytes": 369286,
+   "sha256": "f83d9fdec77704156f3c6772d721b201d7b91eee27b6dbeb9cf2afb3517dbb31",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for nh-os-ezekiel-engine-b1"
+  },
+  {
+   "filename": "nh-os-ezekiel-engine-b1-2.png",
+   "path": "/data/captures/nh-os-ezekiel-engine-b1/nh-os-ezekiel-engine-b1-2.png",
+   "bytes": 375526,
+   "sha256": "27ba8bf3c1a65d3b68a912f3a4254d265fcbec530459dafdd375caded7dc62f6",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for nh-os-ezekiel-engine-b1"
+  },
+  {
+   "filename": "nh-os-rotational-epistemology-1.png",
+   "path": "/data/captures/nh-os-rotational-epistemology/nh-os-rotational-epistemology-1.png",
+   "bytes": 431956,
+   "sha256": "4791b879df0c75388997b0eb718ede5d8de85e3ea93f11669bf74b9ba4ad7bad",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for nh-os-rotational-epistemology"
+  },
+  {
+   "filename": "nh-os-rotational-epistemology-2.png",
+   "path": "/data/captures/nh-os-rotational-epistemology/nh-os-rotational-epistemology-2.png",
+   "bytes": 482730,
+   "sha256": "7af215cee6698a6eeb0320b9fdc2d0a788d6651855f61a1a8ae75d767f17c075",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for nh-os-rotational-epistemology"
+  },
+  {
+   "filename": "nobel-glas-lagrange.png",
+   "path": "/data/captures/nobel-glas-lagrange/nobel-glas-lagrange.png",
+   "bytes": 254807,
+   "sha256": "f945362392c82da2f49d95bd79e793c8bf48231a1e30685cb5c3ded6700bae21",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for nobel-glas-lagrange"
+  },
+  {
+   "filename": "octang-tokenized-audit.png",
+   "path": "/data/captures/octang-tokenized-audit/octang-tokenized-audit.png",
+   "bytes": 245250,
+   "sha256": "3b54040b2ea399eaf7c9653dcc298eb56ee57aaf582b2ab9feab9fb6639439fc",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for octang-tokenized-audit"
+  },
+  {
+   "filename": "operative-captioning-1.png",
+   "path": "/data/captures/operative-captioning/operative-captioning-1.png",
+   "bytes": 539273,
+   "sha256": "df6786ff2aa6b9baa8fc01d1fedd31f0855d4ef932918c3b60af29d4e14346c5",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for operative-captioning"
+  },
+  {
+   "filename": "operative-captioning-2.png",
+   "path": "/data/captures/operative-captioning/operative-captioning-2.png",
+   "bytes": 365868,
+   "sha256": "3405279b14e6080aacc6abf968cfb146a0fecb6c277299bf872de5a5002d90ca",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for operative-captioning"
+  },
+  {
+   "filename": "operative-feminism-1.png",
+   "path": "/data/captures/operative-feminism-20260613/operative-feminism-1.png",
+   "bytes": 333194,
+   "sha256": "4d9c7809262a4b76b4e8a0f5a53904c29abb75362e40af61907600609af7944b",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for operative-feminism-20260613"
+  },
+  {
+   "filename": "operative-feminism-2.png",
+   "path": "/data/captures/operative-feminism-20260613/operative-feminism-2.png",
+   "bytes": 368084,
+   "sha256": "621c38cb312ec14b60628373e82c386b5d9c9b3c52074bdfc813aa50dbf0a568",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for operative-feminism-20260613"
+  },
+  {
+   "filename": "operative-feminism-1.png",
+   "path": "/data/captures/operative-feminism-20260615/operative-feminism-1.png",
+   "bytes": 333194,
+   "sha256": "4d9c7809262a4b76b4e8a0f5a53904c29abb75362e40af61907600609af7944b",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for operative-feminism-20260615"
+  },
+  {
+   "filename": "operative-feminism-2.png",
+   "path": "/data/captures/operative-feminism-20260615/operative-feminism-2.png",
+   "bytes": 368084,
+   "sha256": "621c38cb312ec14b60628373e82c386b5d9c9b3c52074bdfc813aa50dbf0a568",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for operative-feminism-20260615"
+  },
+  {
+   "filename": "operative-feminism.png",
+   "path": "/data/captures/operative-feminism-20260615/operative-feminism.png",
+   "bytes": 326693,
+   "sha256": "74a907d55ccf64295fb3cad17389cb54e0b02da38317266a22f2f050680c8535",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for operative-feminism-20260615"
+  },
+  {
+   "filename": "operative-numismatics-1.png",
+   "path": "/data/captures/operative-numismatics/operative-numismatics-1.png",
+   "bytes": 381610,
+   "sha256": "ab70f455e30116f26f0462c1a5884654c4d725b01bf6e935b185375449981be0",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for operative-numismatics"
+  },
+  {
+   "filename": "operative-numismatics-2.png",
+   "path": "/data/captures/operative-numismatics/operative-numismatics-2.png",
+   "bytes": 382599,
+   "sha256": "7351642a8a932c6806ea3b82437064199d33ef6e41cbe46bbcb55701248aa625",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for operative-numismatics"
+  },
+  {
+   "filename": "operative-numismatics-1.png",
+   "path": "/data/captures/operative-numismatics-adoption/operative-numismatics-1.png",
+   "bytes": 381610,
+   "sha256": "ab70f455e30116f26f0462c1a5884654c4d725b01bf6e935b185375449981be0",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for operative-numismatics-adoption"
+  },
+  {
+   "filename": "operative-numismatics-2.png",
+   "path": "/data/captures/operative-numismatics-adoption/operative-numismatics-2.png",
+   "bytes": 382599,
+   "sha256": "7351642a8a932c6806ea3b82437064199d33ef6e41cbe46bbcb55701248aa625",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for operative-numismatics-adoption"
+  },
+  {
+   "filename": "operative-philology-1.png",
+   "path": "/data/captures/operative-philology/operative-philology-1.png",
+   "bytes": 489847,
+   "sha256": "ab7fc4bcaa11fcc2aef8f9a724eb96e10e0f0d35909e4ea3789960d987b05e77",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for operative-philology"
+  },
+  {
+   "filename": "operative-philology-2.png",
+   "path": "/data/captures/operative-philology/operative-philology-2.png",
+   "bytes": 513974,
+   "sha256": "4dbc81e989e949dee997147f330e471e0d55d165f4b0f2e750c21253283d62fa",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for operative-philology"
+  },
+  {
+   "filename": "operative-semiotics.png",
+   "path": "/data/captures/operative-semiotics/operative-semiotics.png",
+   "bytes": 284944,
+   "sha256": "3b35020a998a75898838c79ba84b12b959a894e0c68ce13279733295dad87c84",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for operative-semiotics"
+  },
+  {
+   "filename": "screengrab-20260813-164649.png",
+   "path": "/data/captures/operative-semiotics-20260813/screengrab-20260813-164649.png",
+   "bytes": 354979,
+   "sha256": "7e019e7622a48d5a8cb8c67a654f5844a3caaa6fe07380521a64d8530299caa3",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for operative-semiotics-20260813"
+  },
+  {
+   "filename": "screengrab-20260813-030112.png",
+   "path": "/data/captures/paul-function-adversarial-probe-20260813/screengrab-20260813-030112.png",
+   "bytes": 324748,
+   "sha256": "6596f6795ddb6d0f9e556bc921179157d6a2a21f4507a46cb6b15e234a711556",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for paul-function-adversarial-probe-20260813"
+  },
+  {
+   "filename": "pearl-and-other-poems.png",
+   "path": "/data/captures/pearl-and-other-poems/pearl-and-other-poems.png",
+   "bytes": 427104,
+   "sha256": "4101c5c0f9801e57dd93cd2de42e0fc8bd34ad8958b3cd84d49eeaca1cdbe77c",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for pearl-and-other-poems"
+  },
+  {
+   "filename": "pergamon-press-crimson-hexagonal-1.png",
+   "path": "/data/captures/pergamon-press-crimson-hexagonal/pergamon-press-crimson-hexagonal-1.png",
+   "bytes": 447288,
+   "sha256": "9a5520bd636a71de2d34bde4f70fa47a9393ba52a0f6f663e0b7275d0dc644a4",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for pergamon-press-crimson-hexagonal"
+  },
+  {
+   "filename": "pergamon-press-crimson-hexagonal-2.png",
+   "path": "/data/captures/pergamon-press-crimson-hexagonal/pergamon-press-crimson-hexagonal-2.png",
+   "bytes": 375202,
+   "sha256": "ba9ba4af1ced04b60003e8fa5884af8aec493189c1b35d32ec2693dc096c8d49",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for pergamon-press-crimson-hexagonal"
+  },
+  {
+   "filename": "pessoa-graph.png",
+   "path": "/data/captures/pessoa-graph/pessoa-graph.png",
+   "bytes": 292677,
+   "sha256": "8f1f3984b567dd2e088ab4179ee1419119658328934cf89a92c908463682ed88",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for pessoa-graph"
+  },
+  {
+   "filename": "phase-x-completion-of-marx-1.png",
+   "path": "/data/captures/phase-x-completion-of-marx/phase-x-completion-of-marx-1.png",
+   "bytes": 339576,
+   "sha256": "5a338795a3de66d620340e328ef08c30d6c573438898d3f0e9f5eff3655b16b7",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for phase-x-completion-of-marx"
+  },
+  {
+   "filename": "phase-x-completion-of-marx-2.png",
+   "path": "/data/captures/phase-x-completion-of-marx/phase-x-completion-of-marx-2.png",
+   "bytes": 351916,
+   "sha256": "5c44a8814c88a87f0a674aea54d674a399393b2a44182a065a7a7f0f59b9778f",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for phase-x-completion-of-marx"
+  },
+  {
+   "filename": "phase-x-marx-2-expanded.png",
+   "path": "/data/captures/phase-x-marx-2/phase-x-marx-2-expanded.png",
+   "bytes": 378551,
+   "sha256": "75e15f1c1b759f65a652a00ae8602ebf2de11b55b7f4dbaa0813917c06eca262",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for phase-x-marx-2"
+  },
+  {
+   "filename": "phase-x-marx-2-search.png",
+   "path": "/data/captures/phase-x-marx-2/phase-x-marx-2-search.png",
+   "bytes": 316962,
+   "sha256": "f09c5706e45b392d6d38fb92bbc99de5ef84e43c8395d4de2b450e242aed15e1",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for phase-x-marx-2"
+  },
+  {
+   "filename": "screengrab-20260811-104342.png",
+   "path": "/data/captures/platform-erosion-observatory-20260811/screengrab-20260811-104342.png",
+   "bytes": 419102,
+   "sha256": "6ca9a408f11c34a4da74241ace528889a781ea478222bfa27b8174f621fef738",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for platform-erosion-observatory-20260811"
+  },
+  {
+   "filename": "prince-of-poets-mantle-1.png",
+   "path": "/data/captures/prince-of-poets-mantle/prince-of-poets-mantle-1.png",
+   "bytes": 369525,
+   "sha256": "b51c4c347c64db0be59d50de8d83645ffe5a42222955bb1677ec198fd4118c9f",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for prince-of-poets-mantle"
+  },
+  {
+   "filename": "prince-of-poets-mantle-2.png",
+   "path": "/data/captures/prince-of-poets-mantle/prince-of-poets-mantle-2.png",
+   "bytes": 338041,
+   "sha256": "7412b2cb68b51357282df828cf539aecb78452fd62d3b36436f9f33d5432f358",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for prince-of-poets-mantle"
+  },
+  {
+   "filename": "provenance-erasure-1.png",
+   "path": "/data/captures/provenance-erasure-1/provenance-erasure-1.png",
+   "bytes": 244788,
+   "sha256": "a2b31bbcd4f7be4e170ad58b745a956401c0b86bb6f05c4a6bc0b1075486aaa7",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for provenance-erasure-1"
+  },
+  {
+   "filename": "provenance-erasure-2.png",
+   "path": "/data/captures/provenance-erasure-1/provenance-erasure-2.png",
+   "bytes": 260396,
+   "sha256": "dd965414174202e6a538dad7f401e6786a8cc6fc1b9d6b2301d18b740dbfeba9",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for provenance-erasure-1"
+  },
+  {
+   "filename": "provenance-erasure-1.png",
+   "path": "/data/captures/provenance-erasure-2/provenance-erasure-1.png",
+   "bytes": 244788,
+   "sha256": "a2b31bbcd4f7be4e170ad58b745a956401c0b86bb6f05c4a6bc0b1075486aaa7",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for provenance-erasure-2"
+  },
+  {
+   "filename": "provenance-erasure-2.png",
+   "path": "/data/captures/provenance-erasure-2/provenance-erasure-2.png",
+   "bytes": 260396,
+   "sha256": "dd965414174202e6a538dad7f401e6786a8cc6fc1b9d6b2301d18b740dbfeba9",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for provenance-erasure-2"
+  },
+  {
+   "filename": "provenance-erasure-1.png",
+   "path": "/data/captures/provenance-erasure-rate-adoption/provenance-erasure-1.png",
+   "bytes": 244788,
+   "sha256": "a2b31bbcd4f7be4e170ad58b745a956401c0b86bb6f05c4a6bc0b1075486aaa7",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for provenance-erasure-rate-adoption"
+  },
+  {
+   "filename": "provenance-erasure-2.png",
+   "path": "/data/captures/provenance-erasure-rate-adoption/provenance-erasure-2.png",
+   "bytes": 260396,
+   "sha256": "dd965414174202e6a538dad7f401e6786a8cc6fc1b9d6b2301d18b740dbfeba9",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for provenance-erasure-rate-adoption"
+  },
+  {
+   "filename": "screengrab-20260811-104919.png",
+   "path": "/data/captures/provenance-erasure-recapture-20260811/screengrab-20260811-104919.png",
+   "bytes": 319412,
+   "sha256": "93bb97dc2ba52796449afb1eaa3c310720535dc2da3bb29577d8ca036b2492f1",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for provenance-erasure-recapture-20260811"
+  },
+  {
+   "filename": "provenance-forensic-semiotics-1.png",
+   "path": "/data/captures/provenance-forensic-semiotics/provenance-forensic-semiotics-1.png",
+   "bytes": 316725,
+   "sha256": "3e9f971b553a8581221df955c9b5459290f159ebc8e82d88837fc1326ad65e83",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for provenance-forensic-semiotics"
+  },
+  {
+   "filename": "provenance-forensic-semiotics-2.png",
+   "path": "/data/captures/provenance-forensic-semiotics/provenance-forensic-semiotics-2.png",
+   "bytes": 380229,
+   "sha256": "3a4245394da63f9b8c073384fdc83e4daee8410269001025f5abeed3e20a274a",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for provenance-forensic-semiotics"
+  },
+  {
+   "filename": "screengrab-20260811-104926.png",
+   "path": "/data/captures/public-summarizer-self-audit-module-20260811/screengrab-20260811-104926.png",
+   "bytes": 324197,
+   "sha256": "06d23a4a96bd9140bafea2ec46c06d79b2be2e391702e29015a5fe2a9c0527a1",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for public-summarizer-self-audit-module-20260811"
+  },
+  {
+   "filename": "rebekah-cranes.png",
+   "path": "/data/captures/rebekah-cranes/rebekah-cranes.png",
+   "bytes": 280348,
+   "sha256": "e9382e1e07752ebcb7b218b8ae1f22911d1ef3c129a8cc18a77ea2b833e0d0cb",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for rebekah-cranes"
+  },
+  {
+   "filename": "restored-academy-johannes-sigil-1.png",
+   "path": "/data/captures/restored-academy/restored-academy-johannes-sigil-1.png",
+   "bytes": 408160,
+   "sha256": "33e4e98fce8d69804ed7ea3ebf3734cde8b82f26cdf2397c15a90eb6fbbb17c0",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for restored-academy"
+  },
+  {
+   "filename": "restored-academy-johannes-sigil-2.png",
+   "path": "/data/captures/restored-academy/restored-academy-johannes-sigil-2.png",
+   "bytes": 398205,
+   "sha256": "b9fd8f69c438b179e2480b2f120b4e6d945c0b3733a96bf7fb79db17b0323a69",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for restored-academy"
+  },
+  {
+   "filename": "restored-academy.png",
+   "path": "/data/captures/restored-academy/restored-academy.png",
+   "bytes": 284884,
+   "sha256": "236d814de66ac4c55fdd5bdad9d236493ab2eac0c15f6f7bf32158215d2dbb0d",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for restored-academy"
+  },
+  {
+   "filename": "restored-academy-johannes-sigil-1.png",
+   "path": "/data/captures/restored-academy-johannes-sigil/restored-academy-johannes-sigil-1.png",
+   "bytes": 408160,
+   "sha256": "33e4e98fce8d69804ed7ea3ebf3734cde8b82f26cdf2397c15a90eb6fbbb17c0",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for restored-academy-johannes-sigil"
+  },
+  {
+   "filename": "restored-academy-johannes-sigil-2.png",
+   "path": "/data/captures/restored-academy-johannes-sigil/restored-academy-johannes-sigil-2.png",
+   "bytes": 398205,
+   "sha256": "b9fd8f69c438b179e2480b2f120b4e6d945c0b3733a96bf7fb79db17b0323a69",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for restored-academy-johannes-sigil"
+  },
+  {
+   "filename": "retrieval-basin-topology.png",
+   "path": "/data/captures/retrieval-basin-topology/retrieval-basin-topology.png",
+   "bytes": 375201,
+   "sha256": "0305115e063d35f9433b3fb69b2bc89316d15bd0626780dedef0f2aaf9d88a37",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for retrieval-basin-topology"
+  },
+  {
+   "filename": "retrieval-formation-theory-1.png",
+   "path": "/data/captures/retrieval-formation-theory/retrieval-formation-theory-1.png",
+   "bytes": 366906,
+   "sha256": "6ce2a60ec01a94f9aae726e080d5ac968f1a6f9d7bcaa820971224985b0b3940",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for retrieval-formation-theory"
+  },
+  {
+   "filename": "retrieval-formation-theory-2.png",
+   "path": "/data/captures/retrieval-formation-theory/retrieval-formation-theory-2.png",
+   "bytes": 401564,
+   "sha256": "5bb955ffb7f6e05fa66034ccc5533ceafaa62a492e74ab1273fcfcef38c584cb",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for retrieval-formation-theory"
+  },
+  {
+   "filename": "retrocausal-canon-formation.png",
+   "path": "/data/captures/retrocausal-canon-formation/retrocausal-canon-formation.png",
+   "bytes": 287711,
+   "sha256": "d3ae69d53a19096c3385a7a79bf36e9d96115b84fa86ce85bf6da2292b6bf98e",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for retrocausal-canon-formation"
+  },
+  {
+   "filename": "screengrab-20260814-174525.png",
+   "path": "/data/captures/retrocausal-logos-20260814/screengrab-20260814-174525.png",
+   "bytes": 384107,
+   "sha256": "80be6989c1356aa857abf78eb26c8873fddf7f9fff6ca7754cf48022a565ac7d",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for retrocausal-logos-20260814"
+  },
+  {
+   "filename": "screengrab-20260814-174528.png",
+   "path": "/data/captures/retrocausal-operator-20260814/screengrab-20260814-174528.png",
+   "bytes": 355138,
+   "sha256": "b29c753503a61524215a337424e67fa65e62665ade077e8f34a41fedc2189406",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for retrocausal-operator-20260814"
+  },
+  {
+   "filename": "screengrab-20260811-104215.png",
+   "path": "/data/captures/revelation-alexanarch-20260811/screengrab-20260811-104215.png",
+   "bytes": 343674,
+   "sha256": "63cf313ab33ca251dc88d38d4b7e1c695df114f1672e07c2162c31bb4eb0e539",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for revelation-alexanarch-20260811"
+  },
+  {
+   "filename": "screengrab-20260811-104250.png",
+   "path": "/data/captures/revelationfirst-org-20260811/screengrab-20260811-104250.png",
+   "bytes": 346536,
+   "sha256": "f14add27fbf6b512f4025c26770618bbd490d4b87c4482eef30b673f55d19ff5",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for revelationfirst-org-20260811"
+  },
+  {
+   "filename": "revelationfirst-org-glyph-in-serp-20260809-1.png",
+   "path": "/data/captures/revelationfirst-org-glyph-in-serp-20260809/revelationfirst-org-glyph-in-serp-20260809-1.png",
+   "bytes": 336768,
+   "sha256": "03bf9f011f3284f8c75f3e180cb34707e15cdcc688985c06602285b5dd9eb2f1",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for revelationfirst-org-glyph-in-serp-20260809"
+  },
+  {
+   "filename": "sappho-31-future-reader-expanded.png",
+   "path": "/data/captures/sappho-31-future-reader/sappho-31-future-reader-expanded.png",
+   "bytes": 411704,
+   "sha256": "76f1beb273af2e017bc6000c6435688042ed89f5cb8a4f871490be6d11c61eed",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for sappho-31-future-reader"
+  },
+  {
+   "filename": "sappho-31-future-reader-search.png",
+   "path": "/data/captures/sappho-31-future-reader/sappho-31-future-reader-search.png",
+   "bytes": 634568,
+   "sha256": "bfe297dcbb417c970b4deafca8d4b5c154cd6ca88484c782e4121b3063cb364f",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for sappho-31-future-reader"
+  },
+  {
+   "filename": "expanded-a-20260727.png",
+   "path": "/data/captures/sappho-31-future-reader-t42-20260727/expanded-a-20260727.png",
+   "bytes": 391546,
+   "sha256": "a4c5a6f5023e97643a078b44d0ceae5ca64564d1ab518e502cf135dddea7d807",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for sappho-31-future-reader-t42-20260727"
+  },
+  {
+   "filename": "expanded-b-20260727.png",
+   "path": "/data/captures/sappho-31-future-reader-t42-20260727/expanded-b-20260727.png",
+   "bytes": 323563,
+   "sha256": "d6c8f0cb093ef7017ace1907d48066bf665dfd5116c90ebbc722de398c68e518",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for sappho-31-future-reader-t42-20260727"
+  },
+  {
+   "filename": "overview-unexpanded-20260727.png",
+   "path": "/data/captures/sappho-31-future-reader-t42-20260727/overview-unexpanded-20260727.png",
+   "bytes": 444180,
+   "sha256": "3df7a4e2c6c5d626d111ccffd33c24a8df0223fee6316357271e957d03210055",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for sappho-31-future-reader-t42-20260727"
+  },
+  {
+   "filename": "sappho-rebekah-stanza.png",
+   "path": "/data/captures/sappho-rebekah-stanza/sappho-rebekah-stanza.png",
+   "bytes": 256595,
+   "sha256": "dfcefef2bff0d0d42095608ade2e2d0a9e005ba9b04c3547215394bfb96e1df9",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for sappho-rebekah-stanza"
+  },
+  {
+   "filename": "secret-book-of-walt.png",
+   "path": "/data/captures/secret-book-of-walt/secret-book-of-walt.png",
+   "bytes": 394326,
+   "sha256": "1a95e4d904ee46c5da03dda1b07b81cf9425efb1a17b2ebb72dc6a6a9f2914cd",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for secret-book-of-walt"
+  },
+  {
+   "filename": "secret-name-armature-1.png",
+   "path": "/data/captures/secret-name-armature/secret-name-armature-1.png",
+   "bytes": 322449,
+   "sha256": "bfeb4ba93d253299f248dcadcb2d4c57813b9f98c30049a6c2ce20cdc9e7cd47",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for secret-name-armature"
+  },
+  {
+   "filename": "secret-name-armature-2.png",
+   "path": "/data/captures/secret-name-armature/secret-name-armature-2.png",
+   "bytes": 369820,
+   "sha256": "364684553f36657a358c26d131c9f85b0cf23cdbb9d7e0d7b721548356acf8da",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for secret-name-armature"
+  },
+  {
+   "filename": "sei-1.png",
+   "path": "/data/captures/sei/sei-1.png",
+   "bytes": 378620,
+   "sha256": "28c41808c659e1d2fb15588ff36130248feefec89c9d43cb8b7f30b9970a76a5",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for sei"
+  },
+  {
+   "filename": "sei-2.png",
+   "path": "/data/captures/sei/sei-2.png",
+   "bytes": 345031,
+   "sha256": "410f02b40cb8a162966a914b10f22b9c88f81b31b41025916a54cf08cab93652",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for sei"
+  },
+  {
+   "filename": "self-audit-overview.png",
+   "path": "/data/captures/self-audit-overview/self-audit-overview.png",
+   "bytes": 374611,
+   "sha256": "07b3661d0de0ecd349c3e8d45d34c1bab03795141008cd8d59ad275099fdb205",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for self-audit-overview"
+  },
+  {
+   "filename": "semantic-commodity-form-recapture-1.png",
+   "path": "/data/captures/semantic-commodity-form/semantic-commodity-form-recapture-1.png",
+   "bytes": 255209,
+   "sha256": "d2487793087477955a5790375824025c7605e5f6937130698913c3da673944df",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semantic-commodity-form"
+  },
+  {
+   "filename": "semantic-commodity-form-recapture-2.png",
+   "path": "/data/captures/semantic-commodity-form/semantic-commodity-form-recapture-2.png",
+   "bytes": 271276,
+   "sha256": "959cc110b7158c37f1f640dcd5a1ab77b3b8c401039786cf8bafba1146cbfcbb",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semantic-commodity-form"
+  },
+  {
+   "filename": "semantic-commodity-form.png",
+   "path": "/data/captures/semantic-commodity-form/semantic-commodity-form.png",
+   "bytes": 451324,
+   "sha256": "36586fd3d1cadb0061070a68d4fcc0edd29e17bef0e25c820c85203ea7c1b8fb",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semantic-commodity-form"
+  },
+  {
+   "filename": "semantic-deviation-glas-1.png",
+   "path": "/data/captures/semantic-deviation-glas/semantic-deviation-glas-1.png",
+   "bytes": 399913,
+   "sha256": "9adcb4e03b345e983f47d6418371749d14d709592b568646fea4d71af99e1459",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semantic-deviation-glas"
+  },
+  {
+   "filename": "semantic-deviation-glas-2.png",
+   "path": "/data/captures/semantic-deviation-glas/semantic-deviation-glas-2.png",
+   "bytes": 381804,
+   "sha256": "f60dfcdedb5cf932eef6dc0717693ff5e9b2e23ef097782574964f40ca48c50f",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semantic-deviation-glas"
+  },
+  {
+   "filename": "screengrab-20260725-175107.png",
+   "path": "/data/captures/semantic-deviation-measure-indexed-but-uncited-20260725/screengrab-20260725-175107.png",
+   "bytes": 430735,
+   "sha256": "c111c7c8e3bef0a2b796b8e53577554ecac06bca9db7d6da110528c0519ecd98",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semantic-deviation-measure-indexed-but-uncited-20260725"
+  },
+  {
+   "filename": "semantic-economy.png",
+   "path": "/data/captures/semantic-economy/semantic-economy.png",
+   "bytes": 307249,
+   "sha256": "3562dd54b0a78352097be5ea0d439aed3eb35fc4dd5ad53c745633c205efebec",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semantic-economy"
+  },
+  {
+   "filename": "screengrab-20260813-164516.png",
+   "path": "/data/captures/semantic-economy-20260813/screengrab-20260813-164516.png",
+   "bytes": 327671,
+   "sha256": "3190a0f75c8aa7b64a3744d434464f57efd39377cc2f9a1f3349c778a4e98aa7",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semantic-economy-20260813"
+  },
+  {
+   "filename": "semantic-economy-strike-first-turn-20260809-1.png",
+   "path": "/data/captures/semantic-economy-strike-first-turn-20260809/semantic-economy-strike-first-turn-20260809-1.png",
+   "bytes": 342914,
+   "sha256": "f4e51f9aa2edc6fd66c6cbcb30f68f79f3b3ec3306eafe418241731397f84533",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semantic-economy-strike-first-turn-20260809"
+  },
+  {
+   "filename": "semantic-economy-strike-first-turn-20260809-2.png",
+   "path": "/data/captures/semantic-economy-strike-first-turn-20260809/semantic-economy-strike-first-turn-20260809-2.png",
+   "bytes": 400353,
+   "sha256": "60fd43c3d42d0253e74f32fc8c3c41c94a59bead04733eb1add5d191a925004c",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semantic-economy-strike-first-turn-20260809"
+  },
+  {
+   "filename": "semantic-economy-strike-first-turn-20260809-3.png",
+   "path": "/data/captures/semantic-economy-strike-first-turn-20260809/semantic-economy-strike-first-turn-20260809-3.png",
+   "bytes": 343850,
+   "sha256": "5f87254a6d2808a00055f7972ea38d108185a301e220f98f9e1203946312f216",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semantic-economy-strike-first-turn-20260809"
+  },
+  {
+   "filename": "screengrab-20260814-174541.png",
+   "path": "/data/captures/semantic-exhaustion-broad-20260814/screengrab-20260814-174541.png",
+   "bytes": 346389,
+   "sha256": "8f4a9e4ffdc8cc66c6f019b4aab930c430317035474d7ff821131f3229a7aa1e",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semantic-exhaustion-broad-20260814"
+  },
+  {
+   "filename": "semantic-exhaustion-economy-1.png",
+   "path": "/data/captures/semantic-exhaustion-economy/semantic-exhaustion-economy-1.png",
+   "bytes": 400752,
+   "sha256": "c8e4bffaa2c95e1b0b42746ba1a10fe686f2dff0ffe4557aafe66a42ae002876",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semantic-exhaustion-economy"
+  },
+  {
+   "filename": "semantic-exhaustion-economy-2.png",
+   "path": "/data/captures/semantic-exhaustion-economy/semantic-exhaustion-economy-2.png",
+   "bytes": 367688,
+   "sha256": "84eaa14533e0a53cd5646ff89eee73cee29373317de036a10447e1d5a75be76d",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semantic-exhaustion-economy"
+  },
+  {
+   "filename": "screengrab-20260814-174511.png",
+   "path": "/data/captures/semantic-exhaustion-quoted-20260814/screengrab-20260814-174511.png",
+   "bytes": 363702,
+   "sha256": "c12e448c5ee88e7bd548dbf8f96eee55719bed4ca583ea454226128157c79fba",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semantic-exhaustion-quoted-20260814"
+  },
+  {
+   "filename": "semantic-integrity-markers-b1-1.png",
+   "path": "/data/captures/semantic-integrity-markers-b1/semantic-integrity-markers-b1-1.png",
+   "bytes": 405740,
+   "sha256": "4e7bf92d2d677cc67e2c0c3784e2430280417928115864952443ebbd9f9585bf",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semantic-integrity-markers-b1"
+  },
+  {
+   "filename": "semantic-integrity-markers-b1-2.png",
+   "path": "/data/captures/semantic-integrity-markers-b1/semantic-integrity-markers-b1-2.png",
+   "bytes": 394633,
+   "sha256": "6554bb6aa074fb75985dfa153b16267693f940c4f78e19a9901e88e22988cbfb",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semantic-integrity-markers-b1"
+  },
+  {
+   "filename": "semantic-liquidation-1.png",
+   "path": "/data/captures/semantic-liquidation/semantic-liquidation-1.png",
+   "bytes": 512410,
+   "sha256": "7cb2d216bced9f3236132077c6ff7fa0256d2c8eebf170a8131d37cd405a8c3e",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semantic-liquidation"
+  },
+  {
+   "filename": "semantic-liquidation-2.png",
+   "path": "/data/captures/semantic-liquidation/semantic-liquidation-2.png",
+   "bytes": 330430,
+   "sha256": "2374d40458005b00a9826ddd561e880dc6a0bd02f35814971c5b50ba5e1f3116",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semantic-liquidation"
+  },
+  {
+   "filename": "screengrab-20260814-174532.png",
+   "path": "/data/captures/semantic-peace-20260814/screengrab-20260814-174532.png",
+   "bytes": 361491,
+   "sha256": "e32567fb941c3f061a0f4d98fb11198f8aed16e9088f17285a9e17dd281a1739",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semantic-peace-20260814"
+  },
+  {
+   "filename": "semantic-physics.png",
+   "path": "/data/captures/semantic-physics/semantic-physics.png",
+   "bytes": 251766,
+   "sha256": "2fa5463c8f8a37a6e700721ac38aa9facf9051ecf2f8de4198d307b8038957f5",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semantic-physics"
+  },
+  {
+   "filename": "semantic-rent-1.png",
+   "path": "/data/captures/semantic-rent/semantic-rent-1.png",
+   "bytes": 313744,
+   "sha256": "40029ed11a6536ae30f4e1aff159a1ca4a8165142a6798fa8f1c02eb4cc76e6c",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semantic-rent"
+  },
+  {
+   "filename": "semantic-rent-2.png",
+   "path": "/data/captures/semantic-rent/semantic-rent-2.png",
+   "bytes": 354676,
+   "sha256": "3cedc05cbcbc66e341213822f033bed24fdefb02e729ecf30e3a398dc6c0914c",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semantic-rent"
+  },
+  {
+   "filename": "screengrab-20260813-164451.png",
+   "path": "/data/captures/semantic-samizdat-20260813/screengrab-20260813-164451.png",
+   "bytes": 343293,
+   "sha256": "a22ad77d045c5b8e1588df197e2ac352ec23b004c4c725879e2bcb92d1b6430f",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semantic-samizdat-20260813"
+  },
+  {
+   "filename": "semiotic-death-drive-expanded-1.png",
+   "path": "/data/captures/semiotic-death-drive-1/semiotic-death-drive-expanded-1.png",
+   "bytes": 358544,
+   "sha256": "46657b0289346356edd7a712f2ee7d387a0c8dd81b6e2d389725d00e510f3480",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semiotic-death-drive-1"
+  },
+  {
+   "filename": "semiotic-death-drive-expanded-2.png",
+   "path": "/data/captures/semiotic-death-drive-1/semiotic-death-drive-expanded-2.png",
+   "bytes": 377078,
+   "sha256": "ae9fc801930c1a8d7fd4f1a5d6bc40d68a5f408b6f424d6ffe69ad10915e3e68",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semiotic-death-drive-1"
+  },
+  {
+   "filename": "semiotic-death-drive-search.png",
+   "path": "/data/captures/semiotic-death-drive-1/semiotic-death-drive-search.png",
+   "bytes": 380877,
+   "sha256": "916b8e83264f7ec5232655a3aef223bbce231b5250ee9a9aa473266f8765c24f",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semiotic-death-drive-1"
+  },
+  {
+   "filename": "screengrab-20260811-104858.png",
+   "path": "/data/captures/semiotic-death-drive-recapture-20260811/screengrab-20260811-104858.png",
+   "bytes": 342344,
+   "sha256": "1bbb23def07dc17374f3ff66a56a58b829bf0550cc79d8c072ec247c56882fbf",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for semiotic-death-drive-recapture-20260811"
+  },
+  {
+   "filename": "sen-kuro-1.png",
+   "path": "/data/captures/sen-kuro/sen-kuro-1.png",
+   "bytes": 474232,
+   "sha256": "ac85e2f5afc80e9aa2a786b107add53dd755d8056529c4e4e0ce8e7f128faa32",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for sen-kuro"
+  },
+  {
+   "filename": "sen-kuro-2.png",
+   "path": "/data/captures/sen-kuro/sen-kuro-2.png",
+   "bytes": 525759,
+   "sha256": "5928b2a781ba2a1ec051dd6d296b872af6cb5e9fd438cec78ff4451c9597308d",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for sen-kuro"
+  },
+  {
+   "filename": "sharks-continuity-tether-1.png",
+   "path": "/data/captures/sharks-continuity-tether/sharks-continuity-tether-1.png",
+   "bytes": 340137,
+   "sha256": "d0ac363bdd7a27c366ffb930de90d9eca6b3b848d0ce6c604ff1bab7dbe0c469",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for sharks-continuity-tether"
+  },
+  {
+   "filename": "sharks-continuity-tether-2.png",
+   "path": "/data/captures/sharks-continuity-tether/sharks-continuity-tether-2.png",
+   "bytes": 342775,
+   "sha256": "8c3b9390de194bddfc97527ce0f2600bc2bffd56b8bbe598e89c41be242b8c54",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for sharks-continuity-tether"
+  },
+  {
+   "filename": "socrates-as-orthonym.png",
+   "path": "/data/captures/socrates-as-orthonym/socrates-as-orthonym.png",
+   "bytes": 512663,
+   "sha256": "8194432afcac2aa01ff0e6e9e28203192bd70e3192caec7247175eb131397c9c",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for socrates-as-orthonym"
+  },
+  {
+   "filename": "space-ark-os-1.png",
+   "path": "/data/captures/space-ark-os/space-ark-os-1.png",
+   "bytes": 367927,
+   "sha256": "e9b99750d859c8ae7bc04d97f847153a83466b0d0bdc31ede6c0708c6eeb04ed",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for space-ark-os"
+  },
+  {
+   "filename": "space-ark-os-2.png",
+   "path": "/data/captures/space-ark-os/space-ark-os-2.png",
+   "bytes": 380088,
+   "sha256": "7bb683518aa4f560340736e0e21e4792531a25182412072228e1abc71fece59b",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for space-ark-os"
+  },
+  {
+   "filename": "screengrab-20260811-104706.png",
+   "path": "/data/captures/space-ark-semantic-os-20260811/screengrab-20260811-104706.png",
+   "bytes": 372312,
+   "sha256": "f82c3442e8cbaa2dce55351abf3bc67ba11f9360c47fb654a4a5feb671917422",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for space-ark-semantic-os-20260811"
+  },
+  {
+   "filename": "sparrow-wells-patacinematics.png",
+   "path": "/data/captures/sparrow-wells-patacinematics/sparrow-wells-patacinematics.png",
+   "bytes": 244306,
+   "sha256": "733e387dc3fd30f88f9fdf0a09d04ff9f7d682e6c0e028e4cd2222a641efab36",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for sparrow-wells-patacinematics"
+  },
+  {
+   "filename": "screengrab-20260725-130549.png",
+   "path": "/data/captures/spxi-analog-attestation-artifact-adoption-20260725/screengrab-20260725-130549.png",
+   "bytes": 378499,
+   "sha256": "9072dfea12683fe668d84fcc5701d86339ddbb353abe0cd97a05d43f0f6992d8",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for spxi-analog-attestation-artifact-adoption-20260725"
+  },
+  {
+   "filename": "screengrab-20260725-130557.png",
+   "path": "/data/captures/spxi-analog-attestation-artifact-adoption-20260725/screengrab-20260725-130557.png",
+   "bytes": 459855,
+   "sha256": "75159bf454151580dd9f70c8109602a279fec75dfc5e44ff6113c2228a17fffd",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for spxi-analog-attestation-artifact-adoption-20260725"
+  },
+  {
+   "filename": "spxi-protocol.png",
+   "path": "/data/captures/spxi-protocol/spxi-protocol.png",
+   "bytes": 224528,
+   "sha256": "09f4d69fbbc24a7c620dcf9efc0779759af55f4b766c480f6ad76048a0564174",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for spxi-protocol"
+  },
+  {
+   "filename": "screengrab-20260813-164407.png",
+   "path": "/data/captures/stable-visionary-loci-20260813/screengrab-20260813-164407.png",
+   "bytes": 339219,
+   "sha256": "284614ed96967a5a894cf31fdb3cdcd9dd87aab7273c8c0b3f3d0248b5caf702",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for stable-visionary-loci-20260813"
+  },
+  {
+   "filename": "studio-for-patacinematics-1.png",
+   "path": "/data/captures/studio-for-patacinematics/studio-for-patacinematics-1.png",
+   "bytes": 499769,
+   "sha256": "526787a03314d25527096ae6881b647c2d97febc171c303d4b116e69214b0e2f",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for studio-for-patacinematics"
+  },
+  {
+   "filename": "studio-for-patacinematics-2.png",
+   "path": "/data/captures/studio-for-patacinematics/studio-for-patacinematics-2.png",
+   "bytes": 369241,
+   "sha256": "607054f6b0631831a0b2cadd478b4eca9edac832a7389be058c9015cba6f138c",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for studio-for-patacinematics"
+  },
+  {
+   "filename": "talos-morrow-umbml.png",
+   "path": "/data/captures/talos-morrow-umbml/talos-morrow-umbml.png",
+   "bytes": 299309,
+   "sha256": "1acd1e922e4657d353d66ac1708c7cc47d3131e0a44abe0d578a0fd577c2593e",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for talos-morrow-umbml"
+  },
+  {
+   "filename": "telepathicism-new-human-poetry-1.png",
+   "path": "/data/captures/telepathicism-new-human-poetry/telepathicism-new-human-poetry-1.png",
+   "bytes": 377262,
+   "sha256": "0469fc77913971dfef72a0eb4ade3c3778c5a592237d16507ba7f94a2253059f",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for telepathicism-new-human-poetry"
+  },
+  {
+   "filename": "telepathicism-new-human-poetry-2.png",
+   "path": "/data/captures/telepathicism-new-human-poetry/telepathicism-new-human-poetry-2.png",
+   "bytes": 355357,
+   "sha256": "c1faf2627ee6245d77f1744b84790d5ae2ef1c3973e098baf370c837633958cb",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for telepathicism-new-human-poetry"
+  },
+  {
+   "filename": "screengrab-20260813-164533.png",
+   "path": "/data/captures/the-network-is-the-poem-20260813/screengrab-20260813-164533.png",
+   "bytes": 317657,
+   "sha256": "f4c1d385bceaac5d174e931e7cab29f69047ed6069b324120c3f15aa430904f5",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for the-network-is-the-poem-20260813"
+  },
+  {
+   "filename": "screengrab-20260811-104721.png",
+   "path": "/data/captures/the-sharks-function-20260811/screengrab-20260811-104721.png",
+   "bytes": 322401,
+   "sha256": "0d4568fd87092319907ff274999fd6fae0dcbe6a0f9f450f61adabc8016d3407",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for the-sharks-function-20260811"
+  },
+  {
+   "filename": "three-compressions-theorem-1.png",
+   "path": "/data/captures/three-compressions-theorem/three-compressions-theorem-1.png",
+   "bytes": 333957,
+   "sha256": "414920ff97b8e328c564b8fc408c63136f443ea8895acf4cf7501301553da52f",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for three-compressions-theorem"
+  },
+  {
+   "filename": "three-compressions-theorem-2.png",
+   "path": "/data/captures/three-compressions-theorem/three-compressions-theorem-2.png",
+   "bytes": 394245,
+   "sha256": "0b7c9dd7ef5d9b0f2574e1b66261451d3ab2eee8609d9fa3906c774e1ea0fae7",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for three-compressions-theorem"
+  },
+  {
+   "filename": "total-axial-negation-graph-1.png",
+   "path": "/data/captures/total-axial-negation-graph/total-axial-negation-graph-1.png",
+   "bytes": 355133,
+   "sha256": "8b06bd64881ec93bf3400a2872d5d1b1d46682ffac6a892c796b2b83a4968e0e",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for total-axial-negation-graph"
+  },
+  {
+   "filename": "total-axial-negation-graph-2.png",
+   "path": "/data/captures/total-axial-negation-graph/total-axial-negation-graph-2.png",
+   "bytes": 343231,
+   "sha256": "754dcd7f52ae5fbbe4ccd458397fe73a54a18708d58bd66cf30a04c6d6e703f2",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for total-axial-negation-graph"
+  },
+  {
+   "filename": "training-layer-literature.png",
+   "path": "/data/captures/training-layer-literature/training-layer-literature.png",
+   "bytes": 267911,
+   "sha256": "d0e6feb32eb12b25b64afb11b326716859d0e8112bfeb8332d4d37de3083e2d6",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for training-layer-literature"
+  },
+  {
+   "filename": "transactions-semantic-economy-institute-1.png",
+   "path": "/data/captures/transactions-semantic-economy-institute/transactions-semantic-economy-institute-1.png",
+   "bytes": 396249,
+   "sha256": "47559a82baba834a762626c8e00b3d45f7ae9528cd59a01c5ace875c6d1fc238",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for transactions-semantic-economy-institute"
+  },
+  {
+   "filename": "transactions-semantic-economy-institute-2.png",
+   "path": "/data/captures/transactions-semantic-economy-institute/transactions-semantic-economy-institute-2.png",
+   "bytes": 386578,
+   "sha256": "15b9c3c78c75e9e767773cee4aabcb804d5d416ff7fd91bd6480c24cf479c389",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for transactions-semantic-economy-institute"
+  },
+  {
+   "filename": "transactions-substrate-engineering-1.png",
+   "path": "/data/captures/transactions-substrate-engineering/transactions-substrate-engineering-1.png",
+   "bytes": 373330,
+   "sha256": "90abcb01bbd3673e5822c76d00029acd06bec6bd4db5cef9d5c83d444899a27e",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for transactions-substrate-engineering"
+  },
+  {
+   "filename": "transactions-substrate-engineering-2.png",
+   "path": "/data/captures/transactions-substrate-engineering/transactions-substrate-engineering-2.png",
+   "bytes": 405160,
+   "sha256": "7dbd9188ed1ce135d471f5e7b10e8ed7c233df7866d2729fac2a676d0ce83245",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for transactions-substrate-engineering"
+  },
+  {
+   "filename": "twenty-dollar-loop-1.png",
+   "path": "/data/captures/twenty-dollar-loop/twenty-dollar-loop-1.png",
+   "bytes": 364355,
+   "sha256": "bd9b2e0fbadaf0787e7c9acf73fe25003dab0884a10236d803306fb8b0038ff6",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for twenty-dollar-loop"
+  },
+  {
+   "filename": "twenty-dollar-loop-2.png",
+   "path": "/data/captures/twenty-dollar-loop/twenty-dollar-loop-2.png",
+   "bytes": 423758,
+   "sha256": "7c425392572796323f8268dbd48aeb3e83def1996d8c99424447c0cb7092338b",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for twenty-dollar-loop"
+  },
+  {
+   "filename": "uca-dolphindiana-1.png",
+   "path": "/data/captures/uca-dolphindiana/uca-dolphindiana-1.png",
+   "bytes": 378672,
+   "sha256": "774d8038b2b363175ce20343e8b7f7b3cb4e7df5ef21a386ccc0089ed9d2b609",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for uca-dolphindiana"
+  },
+  {
+   "filename": "uca-dolphindiana-2.png",
+   "path": "/data/captures/uca-dolphindiana/uca-dolphindiana-2.png",
+   "bytes": 384837,
+   "sha256": "d9579c527dc427b28375878ab2e715a71e0eb6365f2b7aff5c60f355ec157825",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for uca-dolphindiana"
+  },
+  {
+   "filename": "umbml.png",
+   "path": "/data/captures/umbml/umbml.png",
+   "bytes": 417297,
+   "sha256": "688df5ef02d7647a773fa4297b0cb0ffa809c176b6f5cb0eae1ebc9683bbe97f",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for umbml"
+  },
+  {
+   "filename": "universal-kernel-transform-1.png",
+   "path": "/data/captures/universal-kernel-transform/universal-kernel-transform-1.png",
+   "bytes": 407231,
+   "sha256": "caa5b9289ab2e4eb94565dc937c345015d6823291e66ea4c349c0cea827b61c9",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for universal-kernel-transform"
+  },
+  {
+   "filename": "universal-kernel-transform-2.png",
+   "path": "/data/captures/universal-kernel-transform/universal-kernel-transform-2.png",
+   "bytes": 375753,
+   "sha256": "9181f779c3ff4b2f6c0100e9b79b973e24d79509d02f5f434d1fdc46000e14be",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for universal-kernel-transform"
+  },
+  {
+   "filename": "vpcor.png",
+   "path": "/data/captures/vpcor/vpcor.png",
+   "bytes": 372433,
+   "sha256": "6ace3e28e5622ac09921f5a7c57002c131efc476f81ba13886489e83743dddfe",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for vpcor"
+  },
+  {
+   "filename": "water-giraffe-cycle.png",
+   "path": "/data/captures/water-giraffe-cycle/water-giraffe-cycle.png",
+   "bytes": 501692,
+   "sha256": "bb14d81d21bd7ec3dfcee144a691f95014e96e844e158de335ff8ced7a0c449e",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for water-giraffe-cycle"
+  },
+  {
+   "filename": "water-giraffe-probe-self-report-20260809-1.png",
+   "path": "/data/captures/water-giraffe-probe-self-report-20260809/water-giraffe-probe-self-report-20260809-1.png",
+   "bytes": 348304,
+   "sha256": "60341a356f0e1eee1a002de6f982fe415f7148234a29a2eeed2a90d457be73bc",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for water-giraffe-probe-self-report-20260809"
+  },
+  {
+   "filename": "water-giraffe-probe-self-report-20260809-2.png",
+   "path": "/data/captures/water-giraffe-probe-self-report-20260809/water-giraffe-probe-self-report-20260809-2.png",
+   "bytes": 372566,
+   "sha256": "c0bf33a802a26aa14c18d9268f75cbdc14fccc9d12f38d6dae642728719dc050",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for water-giraffe-probe-self-report-20260809"
+  },
+  {
+   "filename": "water-giraffe-probe-self-report-20260809-3.png",
+   "path": "/data/captures/water-giraffe-probe-self-report-20260809/water-giraffe-probe-self-report-20260809-3.png",
+   "bytes": 329985,
+   "sha256": "e48063eed6808aa3f216a18d6485c7bee65dc2610de9585f6cd5b50a8b0ad8df",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for water-giraffe-probe-self-report-20260809"
+  },
+  {
+   "filename": "screengrab-20260814-125304.png",
+   "path": "/data/captures/who-is-johannes-sigil-20260814/screengrab-20260814-125304.png",
+   "bytes": 303183,
+   "sha256": "80fde6d5ed0fcc19f1ff648a0e7cae10a3c9904dbe46ed41ed33c021f72dd4b9",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for who-is-johannes-sigil-20260814"
+  },
+  {
+   "filename": "who-is-lee-sharks-1.png",
+   "path": "/data/captures/who-is-lee-sharks/who-is-lee-sharks-1.png",
+   "bytes": 429301,
+   "sha256": "0dbf1251b33916aadd067b970fbe940648d2d5cff21d21f213c1e02cd7f4ee21",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for who-is-lee-sharks"
+  },
+  {
+   "filename": "who-is-lee-sharks-2.png",
+   "path": "/data/captures/who-is-lee-sharks/who-is-lee-sharks-2.png",
+   "bytes": 495404,
+   "sha256": "7b3c4dbd4a50487de28db1f99079256778b2d677d1e87f9dcfc546c718338fc9",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for who-is-lee-sharks"
+  },
+  {
+   "filename": "screengrab-20260813-164613.png",
+   "path": "/data/captures/who-is-lee-sharks-20260813/screengrab-20260813-164613.png",
+   "bytes": 341890,
+   "sha256": "a13dc51c0b9db48c9e65aa6aead61b7c7b55dc956d4a939345f2440022fb9633",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for who-is-lee-sharks-20260813"
+  },
+  {
+   "filename": "writable-retrieval-basin-3.png",
+   "path": "/data/captures/writable-retrieval-basin/writable-retrieval-basin-3.png",
+   "bytes": 378727,
+   "sha256": "a262c06a34ea06abbbfe7a8916e05eeb8b56aa63d6eddbb1dfe49c5293b17f4b",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for writable-retrieval-basin"
+  },
+  {
+   "filename": "writable-retrieval-basin-4.png",
+   "path": "/data/captures/writable-retrieval-basin/writable-retrieval-basin-4.png",
+   "bytes": 384509,
+   "sha256": "2ab6c332a2334255e8e3efc5f1782678582d666e9f7d94cc4af55a70643941d0",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for writable-retrieval-basin"
+  },
+  {
+   "filename": "writable-retrieval-basins-1.png",
+   "path": "/data/captures/writable-retrieval-basins/writable-retrieval-basins-1.png",
+   "bytes": 458614,
+   "sha256": "d00a1e3732bcd31cc42473f365c2543e23c3a071286f8dad3b21ec3cd073b31c",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for writable-retrieval-basins"
+  },
+  {
+   "filename": "writable-retrieval-basins-2.png",
+   "path": "/data/captures/writable-retrieval-basins/writable-retrieval-basins-2.png",
+   "bytes": 455234,
+   "sha256": "a044b9a63cf5411722d862d1ce6feffc55367a2910e92b294e70e52228016ec5",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for writable-retrieval-basins"
+  },
+  {
+   "filename": "zenodo-packet-zpzp-1.png",
+   "path": "/data/captures/zenodo-packet-zpzp/zenodo-packet-zpzp-1.png",
+   "bytes": 328755,
+   "sha256": "eca55fc404a0fc26a60154f0f178d9f78a915bc559ba75d6c184f08eb40199fb",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for zenodo-packet-zpzp"
+  },
+  {
+   "filename": "zenodo-packet-zpzp-2.png",
+   "path": "/data/captures/zenodo-packet-zpzp/zenodo-packet-zpzp-2.png",
+   "bytes": 358820,
+   "sha256": "60e61063d4320798ec88814ae920d8a6c09de647b9fe03d30575d306e2582265",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for zenodo-packet-zpzp"
+  },
+  {
+   "filename": "zenodo-packet-zpzp-recapture-1.png",
+   "path": "/data/captures/zenodo-packet-zpzp-recapture/zenodo-packet-zpzp-recapture-1.png",
+   "bytes": 233467,
+   "sha256": "5da744b7f8c768ff08b6ea9d3294a6a419c88ec6f477c51c256b2cfaf2031a27",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for zenodo-packet-zpzp-recapture"
+  },
+  {
+   "filename": "zenodo-packet-zpzp-recapture-2.png",
+   "path": "/data/captures/zenodo-packet-zpzp-recapture/zenodo-packet-zpzp-recapture-2.png",
+   "bytes": 284135,
+   "sha256": "69e8a02dc72c9bc9e415fba48fa339fdd422eb20fb19b3f857d163ec0ae747db",
+   "media_type": "image/png",
+   "role": "capture evidence — frame for zenodo-packet-zpzp-recapture"
+  }
+ ],
+ "bundle": {
+  "filename": "EA-WG-CAPTURES-01-v10.9.tar.gz",
+  "bytes": 9101260,
+  "sha256": "7e6f3d77ebba1a6579020f2361664f494616e30064fbf8d41b329ac855ec20c8",
+  "contains": [
+   "data/EA-WG-CAPTURES-01.json",
+   "rebuild/capture-registry/",
+   "data/capture-deposit-links.json",
+   "data/semantic-addresses.json",
+   "datasets/capture-registry/",
+   "captures/index.html"
+  ]
+ }
+}
