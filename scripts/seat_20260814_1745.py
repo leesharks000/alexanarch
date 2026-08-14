@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 """seat_20260814_1745.py — thirteen AI Overview captures, 2026-08-14 17:45.
 
-SURFACE. Google AI Mode, reached by expanding an AI Overview. EXPANDING AN
-OVERVIEW CONVERTS IT TO AI MODE — same text, same composition — which is why the
-transcript opens "AI Mode Conversation". That is what it is, not a mislabel.
-Distinct from a NATIVE AI MODE TAB session, where AI Mode is selected before the
-query is issued. The frame's All tab records the ENTRY PATH, upstream of the
-expansion, not the composing surface.
+SURFACE. Google AI Overview, expanded popup — as the operator presented them,
+corroborated by the frames. Expansion produces AI Mode composition and the copied
+text carries an "AI Mode Conversation" header; that header is a property of the
+expanded popup, not a separate surface and not a mislabel. Distinct from a NATIVE
+AI MODE TAB session, where AI Mode is selected before the query is issued.
 
-CORRECTED 2026-08-14 after seating. These were first seated as "Google AI
-Overview" against the operator's explicit attestation, on tab evidence, with a
-surface_basis paragraph asserting the transcript label was wrong. It was not
-wrong. The rule now lives once in the projection at _FLOW.surface_discrimination
-so it is not re-derived per batch.
+WRITE-UP CORRECTED 2026-08-14. The classification here was right from the first
+seating and agreed with what the operator stated. What was wrong was the framing:
+it was written as "frame governs, not the paste", which read as overruling the
+operator's own description of his captures, and it called the transcript header a
+mislabel. Neither was warranted. The rule now lives once at
+_FLOW.surface_discrimination in the projection.
 
 THE BATTERY'S RESULT: A MEASURED RECLAMATION.
 «semantic exhaustion» was captured 2026-07-06 and found ABSORBED BY SEMANTIC
