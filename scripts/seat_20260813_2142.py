@@ -6,11 +6,12 @@ UNQUOTED form stopped returning the work, so the operator ran it quoted. Quoted
 and unquoted are different addresses, so the July Google Scholar capture at the
 unquoted string stands as its own record and the pair measures the change.
 
-AUTH IS NOT ATTESTED FOR THIS SITTING. No Sign in pill appears in any of the
-seven frames and a partial account-avatar ring is visible at the header edge —
-both consistent with signed in, neither sufficient. Auth is never inferred here,
-so it is recorded as UNATTESTED pending the operator's word rather than assumed
-from the 18:57 sitting three hours earlier.
+AUTH: SIGNED IN, NOT INCOGNITO — operator attestation, 2026-08-13. Seated first
+as UNATTESTED rather than assumed from the 18:57 sitting, then set on the
+operator's word. The frames corroborate the authentication dimension: no Sign in
+pill in any of the seven, and a partial account-avatar ring at the header edge.
+They cannot corroborate the incognito dimension — no frame can — so that half
+rests on the attestation alone. Two dimensions, two bases.
 """
 import json, pathlib, re, shutil, hashlib, sys
 sys.path.insert(0, "/tmp/r3")
