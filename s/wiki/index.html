@@ -19,6 +19,18 @@
 </div>
 <script>
 (function(){
+  // WAIT FOR THE ROWS. This widget renders ABOVE the list it filters, because
+  // that is where a filter bar belongs — so at parse time NOT ONE ROW EXISTS.
+  // Querying here returned an empty list, the length guard below fired, and the
+  // filter silently never bound: 1,460 rows present, filter inert, no error
+  // anywhere. The guard written to protect the page was what disabled it.
+  // Found 2026-08-14 on /s/browse/ and /s/wiki/, where the script sat at byte
+  // 4,939 and the first row at 7,007.
+  function ready(fn) {
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fn);
+    else fn();
+  }
+  ready(function(){
   var box = document.getElementById('axnflt');
   if (!box) return;                                  // no widget, no behaviour
   var rows = Array.prototype.slice.call(document.querySelectorAll('.entry-row'));
@@ -64,6 +76,7 @@
   var init = new URLSearchParams(location.search).get('f');
   if (init) { box.value = init; apply(); }
   else { count.textContent = rows.length.toLocaleString() + ' entries'; }
+  });
 })();
 </script>
 
