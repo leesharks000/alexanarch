@@ -45,6 +45,62 @@ One contract, canonical at `rebuild/capture-registry/INTAKE-CONTRACT.md`. Nodes
 surface, and both auth dimensions. Exact-string address match — **quotation marks
 significant** — decides observation versus new record.
 
+The path from screenshot to citable entry is `rebuild/capture-registry/PIPELINE.md`.
+Both are now reachable from `AGENTS.md` — the STOP block and the catalog table —
+because until 2026-08-13 they were referenced from nowhere and an instance
+arriving at the front door could not find them.
+
+## Two modes, and only one is dangerous — 2026-08-13
+
+**INTAKE** adds an observation that did not exist. Forty captures were seated
+across four sittings that day and intake broke nothing, twice.
+
+**REPAIR** touches a record that already exists. Four repairs broke the dataset
+the same day, and *every destructive act was a fix*: a projector that
+reintroduced the doubling the projection had already resolved (60 surplus cards,
+`"anti-suppression infrastructure"` rendering three times); a schema reseat in a
+shape 406 seated observations do not use, blanking auth and PER on twenty cards;
+six cards rendering blank titles because a display label sat in a key the gallery
+does not read; and a correct citation note destroyed by a "correction" made
+without searching the archive — twice, in both directions, over one SoundCloud
+card.
+
+None of these was a parsing failure. The doubling was stated plainly in the
+commit that fixed it four rounds earlier. The blank titles came from a renderer
+line already read. The schema divergence would have taken five records to see.
+**No gate catches "did not look."**
+
+What is in place now:
+
+- **`reading_canon`** inside `data/EA-WG-CAPTURES-01.json` — six seated records,
+  each teaching one thing a new instance otherwise gets wrong: the baseline shape
+  and a collision held evenly; a longitudinal series across dates and auth
+  states; a non-query address on a non-Google surface with a null citation count;
+  absence as measurement; the collision register and its `via` mechanism; and a
+  record that corrects itself.
+- **The repair posture**, in PIPELINE.md and AGENTS.md §6: state the belief and
+  its evidence, search the archive against it, one operation per commit, verify
+  against the rendered artifact and state what was not verified.
+- **One operation per commit** is the only property that actually saved the
+  dataset that day — the revert was clean because intake and repair had not been
+  mixed.
+
+## The projector
+
+**Still does not exist**, and its absence is a standing item rather than a
+resolved one. Nothing in the repository derives `data/EA-WG-CAPTURES-01.json`
+from the rebuild; nine scripts read it and none writes it. One was built on
+2026-08-13, shipped three regressions, and was reverted with everything else.
+Until it exists, the capture registry is maintained by seating directly into the
+published projection, and the canonical store at
+`rebuild/capture-registry/EA-WG-CAPTURES-01-REBUILD.json` is behind it.
+
+**A carry-layer diff is the acceptance test when it is rebuilt** — regenerate the
+published projection from canonical and compare only the fields that are carried
+rather than computed. That test, run once, found that the previous builder had
+been silently whitespace-collapsing transcripts at projection time: a cleaning
+step inside a layer that must never clean, invisible to every other check.
+
 ## Gates
 
 `capture_intake.py` refuses an unreadable capture · `check_gallery_js.js`

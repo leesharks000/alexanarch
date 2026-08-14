@@ -9,7 +9,13 @@ You are about to operate on Alexanarch infrastructure. Before any action:
 3. Attach the receipt to any commit, deposit, or PR you create. Workflows mechanically enforce this — missing receipt is rejected.
 4. If you're about to **modify a protocol JSON or a schema**: do NOT hand-edit. Use **`python3 scripts/protocol_update.py --protocol <name> --description '...'`**. This is the only supported path. The tool bumps version, recomputes hashes, updates the central index, and appends change_logs atomically.
 
+5. If you're about to touch the **capture registry** (`data/EA-WG-CAPTURES-01.json`): read **`rebuild/capture-registry/PIPELINE.md`** and the **`reading_canon`** block inside the registry itself — six seated records, each teaching one thing a new instance otherwise gets wrong. Then read **`rebuild/capture-registry/INTAKE-CONTRACT.md`**, in which every rule is a defect the registry actually sustained.
+
+6. **INTAKE AND REPAIR ARE DIFFERENT MODES.** Adding an observation is safe; touching an existing record is not. On 2026-08-13 forty captures were seated without incident and **every destructive act that day was a *fix*** — a projector that reintroduced doubling the projection had already resolved, a reseat in a schema 406 records do not use, six cards rendered blank, and a correct citation note destroyed by a "correction." If you are about to improve something, you are in the dangerous mode: state what you believe is broken and the evidence, **search the archive against that belief**, keep it in its own commit, and verify against the rendered artifact rather than the data.
+
 **Why this exists:** new instances arriving without familiarization, hand-editing protocols, and propagating drift was the single largest source of regressions in this infrastructure. The central index + bootstrap + update tool is the structural fix. Behavioral exhortation does not work; mechanical verification does.
+
+**Why §5–6 exist:** the failures they name were not parsing failures. Every one was a *reading* failure — the doubling was stated plainly in the commit that fixed it, the blank cards came from a renderer line already read, the schema divergence would have taken five records to see. No gate catches "did not look." Exemplars might.
 
 ---
 
@@ -40,6 +46,10 @@ Pull from the index — these are just the entry points. The index has the compl
 | **Sitemap (derived)** | `/sitemap.xml` | All crawlable URLs |
 | **Checksums (derived)** | `/SHA256SUMS.txt` | Content-addressable manifest |
 | **Record pages (derived)** | `/s/records/<N>/index.html` | Per-deposit canonical page |
+| **Capture registry** | `/data/EA-WG-CAPTURES-01.json` | Machine-composition captures: addresses, observations, citations, PER. Carries its own `reading_canon` |
+| **Capture pipeline** | `rebuild/capture-registry/PIPELINE.md` | Intake path, and the intake/repair mode distinction |
+| **Capture intake contract** | `rebuild/capture-registry/INTAKE-CONTRACT.md` | Admit / route / normalise / emit. Every rule is a defect actually sustained |
+| **Capture gallery (derived)** | `/captures/index.html` | Built by `scripts/build_capture_gallery.py` from the registry |
 
 The "derived" surfaces all flow from `/data/registry.json`. The script that brings them back into agreement is `scripts/regenerate_surfaces.py`. The mint workflow runs this automatically; manual registry edits must do it explicitly.
 
@@ -54,6 +64,10 @@ The "derived" surfaces all flow from `/data/registry.json`. The script that brin
 | Modify a protocol | `python3 scripts/protocol_update.py --protocol <name> --description '...'` |
 | Add a new protocol | Write the JSON, then `python3 scripts/protocol_update.py --add-protocol <name> --path ... --version ... --governs ...` |
 | Bring derived surfaces into agreement | `python3 scripts/regenerate_surfaces.py` |
+| Seat a capture | Read `reading_canon` first, then `rebuild/capture-registry/PIPELINE.md` |
+| Gate a capture before seating | `python3 scripts/capture_intake.py <capture.json>` |
+| Rebuild the capture gallery | `python3 scripts/build_capture_gallery.py` then `node scripts/check_gallery_js.js` |
+| Repair an existing capture record | PIPELINE.md §"there are two modes" — state the belief, search the archive, one commit, verify the rendered page |
 | Backfill non-v2 AXNs | `python3 scripts/backfill_axn_compliance.py` (idempotent; was used once on 2026-06-22) |
 | Verify the central index | `python3 scripts/protocol_update.py --verify-index` |
 
