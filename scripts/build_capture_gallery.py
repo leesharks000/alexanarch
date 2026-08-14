@@ -373,7 +373,17 @@ def transcript_block(e, gallery=''):
                 _in += ('<div class="cap-tr-label">Analysis '
                         '<span class="cap-tr-warn">analyst prose, not machine text</span></div>'
                         f'<div class="cap-tr-prose">{para(_o["analysis"])}</div>')
-            _rows += (f'<details class="cap-obs" id="{esc(_o["slug"])}">'
+            # DO NOT REPEAT THE CARD'S OWN ID. An address slug is inherited
+            # from whichever observation was seated first, so on 104 addresses
+            # that observation's <details> carried the same id as the card that
+            # contains it — invalid HTML, and #slug is ambiguous between the two.
+            # The card already anchors it, so the capture remains citable at
+            # exactly the same URL; only the redundant inner id is dropped.
+            # read the card slug from the entry: the local `slug` is not bound
+            # until line ~482, well below this block
+            _oid = (f' id="{esc(_o["slug"])}"'
+                    if _o.get("slug") and _o["slug"] != e.get("slug") else "")
+            _rows += (f'<details class="cap-obs"{_oid}>'
                       f'<summary><b>{esc(str(_o.get("date") or "undated"))}</b> '
                       f'<span class="cap-obsn">observation {_i} of {len(_obs)}</span> '
                       f'<span class="cap-rel">{_bits}</span></summary>'
@@ -595,10 +605,19 @@ def card(e):
     # so when its one observation carries a slug of its own — three do, named for
     # what they found rather than for the address — that slug resolved nowhere
     # and the capture could not be cited.
+    # ONLY WHERE NO <details> RENDERS. A multi-observation address already
+    # anchors each capture on its own <details class="cap-obs" id="{slug}">, so
+    # emitting an alias there produces TWO elements with the same id — invalid
+    # HTML, and the browser jumps to whichever comes first. That is what happened
+    # when this guard was dropped on 2026-08-14: ~240 duplicate ids. The alias
+    # exists solely for the SOLITARY case, where no <details> is written and an
+    # observation slug that differs from the card id would otherwise resolve
+    # nowhere.
+    _obs_all = e.get("observations") or []
     _alias = "".join(
         '<span class="cap-alias" id="%s"></span>' % esc(_o["slug"])
-        for _o in (e.get("observations") or [])
-        if _o.get("slug") and _o["slug"] != slug
+        for _o in _obs_all
+        if len(_obs_all) == 1 and _o.get("slug") and _o["slug"] != slug
     )
 
     return (
@@ -683,19 +702,31 @@ def main():
     flow = r.get("_FLOW") or {}
     if flow:
         steps = "".join(f"<li>{html.escape(x)}</li>" for x in flow.get("flow", []))
+        extras = "".join(
+            f'<div style="color:var(--dim);margin-top:5px">{html.escape(flow[k])}</div>'
+            for k in ("writing_to_this_file", "version_moves_with_content", "surface_discrimination")
+            if flow.get(k))
+        # COLLAPSED <details>, NOT AN OPEN <section>. The page carried a
+        # hand-written <details id="capture-flow"> that this emitter's removal
+        # regex — which matched only its own <section> form — could not see. When
+        # _FLOW was added to the projection on 2026-08-14 the dormant emitter
+        # woke and produced a SECOND block: same id, half-empty, because it reads
+        # READ_THIS_FIRST/source_of_truth/flow/citation and the new _FLOW used
+        # different key names. Two blocks, one duplicate id, labels with nothing
+        # after them. One block now, generated from data, in the form the page
+        # already used.
         flow_html = (
-            '<section id="capture-flow" style="border:1px solid var(--border);border-left:3px solid '
-            'var(--accent);border-radius:6px;padding:14px 16px;margin:18px 0;font-size:.86em;'
-            'line-height:1.6">'
-            '<div style="font-weight:600;margin-bottom:6px">Capture registry — data flow</div>'
+            '<details id="capture-flow" class="cap-flow"><summary>Capture registry — data flow '
+            '<span class="cap-flow-tag">machine-facing</span></summary><div class="cap-flow-body">'
             f'<div style="color:var(--dim);margin-bottom:8px">{html.escape(flow.get("READ_THIS_FIRST",""))}</div>'
             f'<div><b>Source of truth:</b> <code>{html.escape(flow.get("source_of_truth",""))}</code></div>'
             f'<ol style="margin:8px 0 8px 1.1em;padding:0">{steps}</ol>'
             f'<div style="color:var(--dim)"><b>Citation:</b> {html.escape(flow.get("citation",""))}</div>'
             f'<div style="color:var(--dim);margin-top:5px">{html.escape(flow.get("slugs_are_permanent",""))}</div>'
+            + extras +
             '<div style="margin-top:8px"><a href="/data/EA-WG-CAPTURES-01.json">the registry itself</a>'
             ' &middot; <a href="/datasets/capture-registry/">published dataset</a></div>'
-            '</section>')
+            '</div></details>')
         ld_flow = ('<script type="application/ld+json">' +
                    json.dumps({"@context":"https://schema.org","@type":"CreativeWork",
                                "name":"Capture registry data flow",
@@ -704,7 +735,9 @@ def main():
                                "step":flow.get("flow",[]),
                                "url":"https://www.alexanarch.org/captures/#capture-flow"},
                               ensure_ascii=False) + "</script>")
+        # remove BOTH historical forms, or the old one survives beside the new one
         page = re.sub(r'<section id="capture-flow".*?</section>\n?', "", page, flags=re.S)
+        page = re.sub(r'<details id="capture-flow".*?</details>\n?', "", page, flags=re.S)
         page = re.sub(r'<script type="application/ld\+json">\{"@context": ?"https://schema.org", ?"@type": ?"CreativeWork".*?</script>\n?', "", page, flags=re.S)
         marker = '<div id="captures">'
         if marker in page:

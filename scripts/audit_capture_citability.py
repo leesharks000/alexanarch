@@ -150,6 +150,19 @@ def main():
             fails.append(f"only {n_oanchor} of {len(set(oslugs))} observations are anchored in the page")
         if n_ocite < len(obs):
             fails.append(f"only {n_ocite} of {len(obs)} observations carry a citation")
+
+        # AN ANCHOR THAT APPEARS TWICE IS NOT AN ANCHOR. Duplicate ids are
+        # invalid HTML and #slug becomes ambiguous — the browser jumps to
+        # whichever element parsed first, so a citation lands somewhere the
+        # citer did not choose. Two causes, both found 2026-08-14: the alias
+        # span emitted alongside a <details> that already carried the id, and a
+        # first observation whose slug is the card's own slug repeating it on
+        # the inner <details>.
+        import collections as _c
+        _ids = _c.Counter(re.findall(r'id="([^"]+)"', pg))
+        _dupe = [i for i, n in _ids.items() if n > 1]
+        if _dupe:
+            fails.append(f"{len(_dupe)} duplicate element id(s) — #{_dupe[0]} resolves ambiguously")
         if n_btn < len(entries):
             fails.append(f"{n_btn} of {len(entries)} cards carry a cite control; "
                          f"the rest offer no way to cite what they display")

@@ -1,8 +1,19 @@
 {
  "_FLOW": {
-  "_READ_THIS_FIRST": "ONE CANONICAL STORE, ONE PROJECTION, RENDERERS RENDER. This file is the PROJECTION. Canonical is rebuild/capture-registry/EA-WG-CAPTURES-01-REBUILD.json. Surfaces are DERIVED from this file and must never be written to by hand: captures/index.html by scripts/build_capture_gallery.py; leesharks.com and godkinggoogle.com FETCH this file at render; machinemediation.org HOSTS a copy, refreshed by its own scripts/sync_capture_mirror.py. A copy without a refresh path becomes a claim about the past presented identically to a claim about the present.",
+  "READ_THIS_FIRST": "THE CANONICAL STORE IS rebuild/capture-registry/EA-WG-CAPTURES-01-REBUILD.json. This file is DERIVED from it for publication; galleries render FROM this file and nothing renders TO it. Exactly one writable authority: the rebuild. If you are a program about to write here, read the flow below first.",
+  "source_of_truth": "alexanarch:data/EA-WG-CAPTURES-01.json",
+  "flow": [
+   "ENTRY is written to the CANONICAL STORE (the rebuild), and nowhere else. This file is regenerated from it.",
+   "IMAGES are held HERE, under data/captures/{slug}/. Galleries display them; they do not host them.",
+   "LINKS are written HERE by scripts/build_capture_links.py — canonical form plus one marked mirror per declared gallery. Links are DATA, never assembled at render time.",
+   "GALLERIES render from this file. A gallery is a window, not a store.",
+   "ARCHIVE LINKS are computed by scripts/resolve_capture_links.py into data/capture-deposit-links.json — the capture→deposit join on an auditable ladder (hard/axn, hard/doi, hard/series, soft/title, soft/keyword, soft/body, soft/description). Run it after every intake; a stale links file silently strands new captures outside the semantic-address graph.",
+   "SEMANTIC ADDRESSES: scripts/build_semantic_addresses.py folds every capture query into data/semantic-addresses.json as an observation address carrying those deposit links. Run it after the resolver.",
+   "THE DATASET MIRROR at datasets/capture-registry/ is written FROM here by scripts/sync_capture_dataset.py. Never edit the mirror; a sync will erase it. Run it last, never speculatively, and check git status afterward."
+  ],
+  "citation": "The citable unit is the CAPTURE — one surface, one semantic address, one date — at captures/#{observation_slug}. The ADDRESS is also citable at captures/#{address_slug}. See the citation block for the full grammar.",
+  "slugs_are_permanent": "A slug is permanent once published. Renaming one silently breaks every citation made to it and, unlike a dead URL, leaves no error behind — the reader lands elsewhere and is not told. Record any change in slug_history.",
   "writing_to_this_file": "INTAKE adds an observation and is safe. REPAIR touches an existing record and is not: on 2026-08-13 forty captures were seated without incident and EVERY DESTRUCTIVE ACT WAS A FIX. Before touching an existing record: state what you believe is broken and the evidence, SEARCH THE ARCHIVE AGAINST THAT BELIEF, keep it in its own commit, and verify against the RENDERED PAGE rather than the data. See rebuild/capture-registry/PIPELINE.md and the reading_canon block below.",
-  "slugs_are_permanent": "A renamed slug silently breaks every citation made to it and leaves no error behind — the reader lands somewhere else and is not told. Record any change in the entry's slug_history.",
   "version_moves_with_content": "Downstream nodes detect staleness by comparing version and count. A content change that leaves the version alone defeats the only mechanism they have.",
   "surface_discrimination": "AN EXPANDED AI OVERVIEW IS STILL AN AI OVERVIEW. Expansion produces AI Mode composition and the copied text carries an «AI Mode Conversation» header — that header is a property of the expanded popup, not a different surface, and it is not a mislabel. Record surface='Google AI Overview' with surface_state noting the popup was expanded. This is distinct from a NATIVE AI MODE TAB session, where the AI Mode tab is selected before the query is issued; there, surface='Google AI Mode'. The frame corroborates: an expanded Overview shows the All tab selected under an AI Overview header."
  },
