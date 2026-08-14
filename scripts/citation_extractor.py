@@ -64,7 +64,12 @@ from datetime import datetime, timezone
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
 # Patterns used for extraction. Capture groups give the identifying token.
-PAT_AXN_FULL = re.compile(r'AXN:[0-9A-F]{2,4}\.[A-Z]+\.[^\s\.\'",;<>\)]{1,16}')
+# MARKDOWN EMPHASIS IS NOT PART OF A GLYPH. Footnote citations write
+# **AXN:014F.EMPIRICAL.🪨📋🗿🕓🌘🜁**, and the old class admitted the closing
+# asterisks into the glyph, producing an AXN that resolves to no deposit — so
+# the citation matched, yielded a malformed identifier, and silently wrote no
+# edge. Found 2026-08-14 on #1460, whose footnotes cite #512 and #121.
+PAT_AXN_FULL = re.compile(r'AXN:[0-9A-F]{2,4}\.[A-Z]+\.[^\s\.\'",;<>\)\*_`\]]{1,16}')
 PAT_AXN_HEX = re.compile(r'(?<![\w\-])AXN-([0-9A-F]{2,4})(?![0-9A-F])')
 PAT_EA_ID = re.compile(r'(?<![\w\-])EA(?:-[A-Z]+){2,4}-\d+(?!\d)')
 # Bare #N — must be preceded by whitespace, opening paren/bracket, comma, semicolon,

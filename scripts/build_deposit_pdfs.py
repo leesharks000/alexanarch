@@ -468,9 +468,21 @@ def render_pdf(wrapper_md: str, out_path: Path, timeout: int = 120,
         with tempfile.NamedTemporaryFile("w", suffix=".md", delete=False, encoding="utf-8") as tf:
             tf.write(wrapper_md)
             tmp_md = tf.name
+        # A FONT THAT CAN SPELL THE ARCHIVE'S OWN WORDS.
+        # pandoc's default template loads Latin Modern, which has no polytonic
+        # Greek. xelatex then drops every unmapped character AND RETURNS 0: the
+        # PDF builds, looks finished, and is missing the text. Measured
+        # 2026-08-14: 277 deposits on disk carry Greek, 340,250 codepoints in
+        # total, and every PDF of them had been silently emptied of it —
+        # including the Sappho, Longinus and Josephus work, where the Greek is
+        # the evidence. DejaVu covers polytonic with breathings and accents.
+        # Verified by round-trip: build, pdftotext, compare.
         cmd = [
             "pandoc", tmp_md, "-o", str(out_path),
             "--pdf-engine=xelatex", "--no-highlight",
+            "-V", "mainfont=DejaVu Serif",
+            "-V", "sansfont=DejaVu Sans",
+            "-V", "monofont=DejaVu Sans Mono",
         ]
         result = subprocess.run(
             cmd, capture_output=True, text=True,
