@@ -127,6 +127,29 @@ def main():
         # A gate that fails a working affordance teaches the next reader to
         # weaken the affordance until the gate passes.
         n_btn = len(re.findall(r'class="[^"]*\bcap-cite\b[^"]*"', pg))
+
+        # THE CITABLE UNIT IS THE OBSERVATION, NOT ONLY THE ADDRESS.
+        # ONE SURFACE + ONE SEMANTIC ADDRESS + ONE DATE = ONE CAPTURE. The
+        # gallery has always anchored each observation as
+        # <details class="cap-obs" id="{observation_slug}">, but the declared
+        # grammar named the ADDRESS as the citable unit, so a reader citing one
+        # system's behaviour had to cite an address carrying several. The
+        # address slug is inherited from whichever observation was seated first:
+        # «who is lee sharks?» is anchored at a slug naming Bing Copilot while
+        # holding ChatGPT, Perplexity and Google AI Overview captures too.
+        # Observation slugs are anchors, so a collision silently resolves two
+        # distinct captures to one. Checked here.
+        obs = [o for e in entries for o in (e.get("observations") or [])]
+        oslugs = [o.get("slug") for o in obs if o.get("slug")]
+        odup = len(oslugs) - len(set(oslugs))
+        n_oanchor = sum(1 for sl in set(oslugs) if f'id="{sl}"' in pg)
+        n_ocite = sum(1 for o in obs if o.get("cite"))
+        if odup:
+            fails.append(f"{odup} observation slug collision(s); two captures would share one anchor")
+        if n_oanchor < len(set(oslugs)):
+            fails.append(f"only {n_oanchor} of {len(set(oslugs))} observations are anchored in the page")
+        if n_ocite < len(obs):
+            fails.append(f"only {n_ocite} of {len(obs)} observations carry a citation")
         if n_btn < len(entries):
             fails.append(f"{n_btn} of {len(entries)} cards carry a cite control; "
                          f"the rest offer no way to cite what they display")
@@ -153,7 +176,8 @@ def main():
         except Exception as e:
             fails.append(f"live gallery unreachable: {e}")
 
-    print(f"captures: {len(entries)} · unique slugs: {len(set(slugs))} · "
+    n_obs = sum(len(e.get('observations') or [e]) for e in entries)
+    print(f"addresses: {len(entries)} · captures: {n_obs} · unique slugs: {len(slugs)} · "
           f"citation grammar: {'declared' if cit else 'ABSENT'}")
     for f in fails:
         print(f"  FAIL  {f}", file=sys.stderr)

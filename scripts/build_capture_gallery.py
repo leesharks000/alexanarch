@@ -588,12 +588,25 @@ def card(e):
         imgs_html = '<div class="cap-nothumb">no<br>image</div>'
         gallery = ''
 
+    # EVERY CAPTURE GETS AN ANCHOR, INCLUDING THE SOLITARY ONES.
+    # ONE SURFACE + ONE SEMANTIC ADDRESS + ONE DATE = ONE CAPTURE, citable at
+    # captures/#{observation_slug}. Multi-observation addresses take that anchor
+    # from the <details> above. A SINGLE-observation address renders no <details>,
+    # so when its one observation carries a slug of its own — three do, named for
+    # what they found rather than for the address — that slug resolved nowhere
+    # and the capture could not be cited.
+    _alias = "".join(
+        '<span class="cap-alias" id="%s"></span>' % esc(_o["slug"])
+        for _o in (e.get("observations") or [])
+        if _o.get("slug") and _o["slug"] != slug
+    )
+
     return (
         f'<div class="cap-card" id="{esc(slug)}" '
         f'data-section="{esc(e.get("s") or "Unsectioned")}" '
         f'data-status="{esc(mt.split()[0].lower())}" '
         f'data-defects="{esc(" ".join(defects))}" '
-        f'itemscope itemtype="https://schema.org/CreativeWork">'
+        f'itemscope itemtype="https://schema.org/CreativeWork">' + _alias +
         f'<meta itemprop="identifier" content="{esc(cite)}">'
         f'<meta itemprop="isPartOf" content="EA-WG-CAPTURES-01">'
         f'<meta itemprop="creator" content="Sharks, Lee">'
