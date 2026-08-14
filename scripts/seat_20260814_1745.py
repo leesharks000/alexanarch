@@ -1,13 +1,18 @@
 #!/usr/bin/env python3
 """seat_20260814_1745.py — thirteen AI Overview captures, 2026-08-14 17:45.
 
-SURFACE RULING. Every pasted transcript opens "AI Mode Conversation". Every
-frame shows the **All** tab selected with an AI Overview header. The
-discriminator established 2026-08-13 stands: AI MODE SELECTS ITS TAB, EXPANDED
-OVERVIEW DOES NOT. These are Overviews. The "AI Mode Conversation" string is the
-expanded-popup copy label, not a surface claim — the same mislabel that carried
-into 16 of 17 captures on 2026-08-13 before it was caught. Recorded per
-observation so no later reader re-derives it from the paste.
+SURFACE. Google AI Mode, reached by expanding an AI Overview. EXPANDING AN
+OVERVIEW CONVERTS IT TO AI MODE — same text, same composition — which is why the
+transcript opens "AI Mode Conversation". That is what it is, not a mislabel.
+Distinct from a NATIVE AI MODE TAB session, where AI Mode is selected before the
+query is issued. The frame's All tab records the ENTRY PATH, upstream of the
+expansion, not the composing surface.
+
+CORRECTED 2026-08-14 after seating. These were first seated as "Google AI
+Overview" against the operator's explicit attestation, on tab evidence, with a
+surface_basis paragraph asserting the transcript label was wrong. It was not
+wrong. The rule now lives once in the projection at _FLOW.surface_discrimination
+so it is not re-derived per batch.
 
 THE BATTERY'S RESULT: A MEASURED RECLAMATION.
 «semantic exhaustion» was captured 2026-07-06 and found ABSORBED BY SEMANTIC
