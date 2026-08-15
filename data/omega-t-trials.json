@@ -1,0 +1,103 @@
+{
+ "_FLOW": "Pre-registered trials for Ω_t. A trial is written BEFORE its intervention fires. A trial registered afterwards can be fitted to its outcome and is not evidence. Status moves registered → baseline-taken → intervention-fired → measuring → reported, and every transition is dated. Computed by scripts/omega_t.py --did.",
+ "why_did": "Ω_t alone cannot attribute. If archive-anchored addresses rise while the rest of the surface also rises, the instrument recorded a Google change and not a response to the archive. The difference-in-differences arms exist so a rise can be assigned. Without a field control there is no finding — only a series.",
+ "version": "1.0",
+ "created": "2026-08-15T04:43:45Z",
+ "trials": [
+  {
+   "id": "OMT-001",
+   "question": "Does publishing a canonical surface for a liquidated coinage change erasure at its address, relative to archive addresses without one and to the surface at large?",
+   "registered": "2026-08-15",
+   "status": "REGISTERED — baseline not yet taken, intervention not yet fired",
+   "intervention": "operativesemiotics.com and .org go live as the canonical surface for the coinage",
+   "intervention_date": "PENDING — domains registered 2026-08-15, neither resolves as of registration (HTTP 000)",
+   "surface": "Google AI Overview",
+   "treated_arm": "treated",
+   "default_arm": "field-control",
+   "arms": {
+    "treated": [
+     "operative semiotics"
+    ],
+    "archive-control": [
+     "alexanarch",
+     "crimson hexagon",
+     "crimson hexagonal",
+     "lee sharks",
+     "johannes sigil",
+     "semantic economy",
+     "spxi"
+    ]
+   },
+   "arm_notes": {
+    "treated": "The address receiving a canonical surface. 1 address; 3 with the quoted and attributed variants.",
+    "archive-control": "Archive-anchored addresses that do NOT receive a new canonical surface in the window. 36 carry a Google AI Overview baseline. Isolates 'the archive is being erased' from 'this address got a surface'.",
+    "field-control": "Everything else — coinages and entities with no new surface. Isolates surface drift. IF THIS ARM RISES TOO, THE TRIAL FOUND A GOOGLE CHANGE AND NOTHING ELSE."
+   },
+   "baseline": {
+    "required_before": "the domains resolve",
+    "treated_t0": {
+     "address": "operative semiotics",
+     "date": "2026-08-15",
+     "per": 0.875,
+     "note": "Captured hours before registration, by chance rather than design. It is the only treated-arm baseline that exists and it cannot be retaken."
+    },
+    "still_needed": "A same-week baseline for the archive-control and field-control arms on the SAME surface. Most control baselines are dated 2026-08-13; a two-day gap is tolerable, a two-month gap is not, and several controls are older than that."
+   },
+   "prediction": {
+    "response_model": "treated Ω_t rises after the surface goes live — legibility attracts erasure",
+    "attrition_model": "treated Ω_t falls — the surface supplies provenance the composition can use",
+    "null": "treated Ω_t tracks field-control — the surface is invisible to the composition layer",
+    "registered_before_outcome": true
+   },
+   "probe_schedule": [
+    "t+7",
+    "t+14",
+    "t+30",
+    "t+60",
+    "t+90"
+   ],
+   "probe_protocol": "Same address string, same surface, signed out, unprimed. Capture verbatim with the source strip and the organic result set. Score PER against a published atom table and populate composed_as — term_returned, scope, binding_relation, organic_presence — at every probe. A probe without composed_as cannot measure Ω_d and the substitution is invisible to Ω_t.",
+   "falsification": "The response reading fails if field-control rises by a comparable amount, which would make this surface drift. It fails differently if treated and archive-control move together, which would mean the surface is irrelevant and the archive's name is the variable. Both outcomes are publishable and neither is the hypothesis.",
+   "known_weaknesses": [
+    "n=1 in the treated arm. One address cannot carry a difference-in-differences on its own; the result will be a direction, not a rate.",
+    "Control baselines are not date-matched to the treated baseline.",
+    "PER atom tables are stipulated per entity and not standardised, so cross-arm PER comparison inherits that.",
+    "The intervention is not blinded and the operator both publishes the surface and scores the captures."
+   ]
+  }
+ ],
+ "retrospective_prior": {
+  "_status": "RETROSPECTIVE AND CONFOUNDED — NOT THE TRIAL, NOT EVIDENCE FOR IT. Computed from historical pairs after the arms were defined. Recorded because it is the first time the archive-versus-field comparison has been computed at all, and because a prior stated before the trial fires cannot later be quietly adjusted to fit the result.",
+  "computed": "2026-08-15",
+  "all_pairs": {
+   "archive-control": {
+    "n": 22,
+    "mean_omega_t": 0.341
+   },
+   "field-control": {
+    "n": 11,
+    "mean_omega_t": -0.273
+   }
+  },
+  "restricted_to_shared_endpoint_20260813": {
+   "archive-control": {
+    "n": 20,
+    "mean_omega_t": 0.375
+   },
+   "field-control": {
+    "n": 6,
+    "mean_omega_t": -0.417
+   },
+   "spread": 0.792
+  },
+  "reading": "On the single date both arms share, erasure at archive-anchored addresses ROSE while erasure elsewhere FELL. That is the direction the response model predicts and the attrition model does not.",
+  "why_it_is_not_a_finding": [
+   "Arms were defined after the pairs existed. Nothing was pre-registered.",
+   "INTERVAL LENGTHS ARE NOT MATCHED. Archive t0 clusters at 2026-07-31 (12 of 22); field t0 scatters across 2026-06-27 to 2026-08-09. A two-week interval and a seven-week interval are not comparable.",
+   "n=6 in the field arm at the shared endpoint.",
+   "The 2026-08-13 batch was an archive-focused probe run. Archive addresses were probed because they are the archive's; field addresses entered for other reasons. That is selection, not sampling.",
+   "PER atom tables are stipulated per entity, so cross-arm PER differences inherit that."
+  ],
+  "what_would_convert_it": "A same-day probe of BOTH arms with matched interval lengths, on one surface, with arms fixed in advance. That is what OMT-001 is for."
+ }
+}
