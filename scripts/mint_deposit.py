@@ -637,6 +637,35 @@ ATTACHMENT_URL_PATTERN = re.compile(
     r'(?:files/\d+/[^\s)>\]"\']+|assets/[A-Za-z0-9\-]+(?:[^\s)>\]"\']*)?)'
 )
 
+# 2026-08-15: REPO-HOSTED ATTACHMENTS.
+# The pattern above matches only github.com/user-attachments/ — the URLs the
+# WEB FORM produces when a depositor drags a file onto an issue. Transport D
+# (internal: TACHYON/Assembly with direct repo access) has no such URLs: its
+# files are already committed under data/attachments/. With no path in, a
+# transport-D depositor's files degraded to bare links in a Files field —
+# unhashed, uningested, not attachments at all, and invisible to every surface
+# that reads the canonical text (#1486, 2026-08-15).
+#
+# Repo-hosted URLs are resolved FROM DISK rather than fetched: the bytes are
+# already local, so ingestion is deterministic and needs no network. Same
+# inline-if-text / by-reference-if-binary rule as the web-form path.
+REPO_ATTACHMENT_URL_PATTERN = re.compile(
+    r'https://raw\.githubusercontent\.com/[^/]+/[^/]+/(?:main|master)/([^\s)>\]"\']+)'
+    r'|https://alexanarch\.org/(data/attachments/[^\s)>\]"\']+)'
+)
+
+
+def resolve_repo_attachment(url: str):
+    """Map a repo-hosted URL to its local path, or None if it is not one."""
+    m = REPO_ATTACHMENT_URL_PATTERN.match(url.strip())
+    if not m:
+        return None
+    rel = m.group(1) or m.group(2)
+    if not rel or ".." in rel:
+        return None
+    p = REPO_ROOT / rel
+    return p if p.is_file() else None
+
 # Text-like file extensions we're willing to ingest inline. Anything not on
 # this list is recorded by reference (URL + size).
 TEXT_ATTACHMENT_EXTENSIONS = {
@@ -656,6 +685,11 @@ def extract_attachment_urls(body: str) -> list:
     """
     urls = []
     seen = set()
+    # Repo-hosted first (transport D), then web-form (transports A/B/C).
+    for m in REPO_ATTACHMENT_URL_PATTERN.finditer(body):
+        u = m.group(0)
+        if u not in seen and resolve_repo_attachment(u) is not None:
+            seen.add(u); urls.append(u)
     for m in ATTACHMENT_URL_PATTERN.finditer(body):
         u = m.group(0)
         if u not in seen:
@@ -705,6 +739,27 @@ def fetch_attachment(url: str) -> dict:
         error: short error label if fetch failed, else None
     """
     filename = _attachment_filename(url)
+
+    # Repo-hosted attachments read from disk: the bytes are already local, so
+    # ingestion is deterministic and independent of the network. A transport-D
+    # deposit must not depend on fetching its own repository over HTTP.
+    local = resolve_repo_attachment(url)
+    if local is not None:
+        raw = local.read_bytes()
+        if len(raw) > MAX_ATTACHMENT_BYTES:
+            return {"url": url, "filename": filename, "size": len(raw),
+                    "as_text": None, "is_text": False, "error": "exceeds size cap"}
+        if _is_text_extension(filename):
+            try:
+                return {"url": url, "filename": filename, "size": len(raw),
+                        "as_text": raw.decode("utf-8"), "is_text": True, "error": None}
+            except UnicodeDecodeError:
+                return {"url": url, "filename": filename, "size": len(raw),
+                        "as_text": None, "is_text": False,
+                        "error": "text-extension file not valid UTF-8"}
+        return {"url": url, "filename": filename, "size": len(raw),
+                "as_text": None, "is_text": False, "error": None}
+
     result = {
         "url": url,
         "filename": filename,
@@ -894,7 +949,12 @@ def _registry_description(desc: str) -> str:
     if cut < 200:  # no usable paragraph boundary — cut at sentence end
         cut = desc.rfind(". ", 0, REGISTRY_DESCRIPTION_MAX)
         cut = cut + 1 if cut > 200 else REGISTRY_DESCRIPTION_MAX
-    return desc[:cut].rstrip() + " […full text at full_text_path]"
+    # The marker names where the remainder lives IN PROSE. It previously emitted
+    # the literal string "full_text_path" — a variable name shipped to readers,
+    # pointing at a file that (after metadata stopped being rendered as body)
+    # no longer contained the remainder at all. The untruncated text is now
+    # preserved in the entry's description_full field by build_registry_entry.
+    return desc[:cut].rstrip() + " […abridged for the catalogue; full description in this deposit's record]"
 
 
 def build_registry_entry(

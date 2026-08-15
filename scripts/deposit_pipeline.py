@@ -580,6 +580,19 @@ def stage_announce(args):
         "--reason=deposit minted"])
 
 
+def stage_rendered(args):
+    """Validate the record AS A READER SEES IT — the last gate before commit.
+
+    Added 2026-08-15. #1486 passed every data-level gate while its page showed a
+    stale AXN, the [DEPOSIT] prefix, a doubled description, metadata rendered as
+    body, and the literal token "full_text_path". The operator caught it; no gate
+    did, because the depositor had checked a <title> tag and a raw GitHub file.
+    A raw file is not a rendered page. check=True: a reader-visible defect is a
+    failed deposit."""
+    sh([sys.executable, SCRIPTS / "check_rendered_record.py", str(args.deposit_number)],
+       check=True)
+
+
 def stage_completeness(args):
     sh([sys.executable, SCRIPTS / "deposit_completeness.py",
         "--deposit-number", str(args.deposit_number)], check=True)
@@ -610,6 +623,7 @@ def stage_synchrony(args):
 
 STAGES = {
     "mint": stage_mint, "validate": stage_validate, "record": stage_record,
+    "rendered": stage_rendered,
     "completeness": stage_completeness,
     "surfaces": stage_surfaces, "synchrony": stage_synchrony,
     "pdf": stage_pdf, "body-index": stage_body_index, "wiki": stage_wiki,
