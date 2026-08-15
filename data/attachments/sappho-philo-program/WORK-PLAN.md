@@ -60,7 +60,7 @@ So that every piece below inherits the same honest boundary:
 
 **Not established.** Sappho's material presence in Philo. The name is absent (documented null on two independent corpora). The historical claim remains modular.
 
-**The inference the program advances, and its form.** Osmosis and text-working predict *different kinds* of evidence, not different amounts. Diffuse influence produces **resemblance** — shared vocabulary, family likeness. It does not produce **systematic inversion at every joint**. Catullus occupies the reader-socket and flips exit polarity; Philo occupies the voice-socket and flips entrance causality; each inverts exactly the parameter his position requires. Atmosphere gives haze; operation gives inversion. What the collation contains is inversion. The program's job is to make that comparison measurable rather than rhetorical — which is what the Phaedrus control (§4, C1) exists to do.
+**The inference the program advances, and its form.** Osmosis and text-working predict *different kinds* of evidence, not different amounts. Diffuse influence produces **resemblance** — shared vocabulary, family likeness. It does not produce **systematic inversion at every joint**. Catullus occupies the reader-socket and flips exit polarity; Philo occupies the voice-socket and flips entrance causality; each inverts exactly the parameter his position requires. Atmosphere gives haze; operation gives inversion. What the collation contains is inversion. The program's job is to make that comparison measurable rather than rhetorical — which is what **F-1 (target discrimination)** and **A1.4 (the residue test)** exist to do. *(An earlier draft assigned this to a "Phaedrus control" at §4/C1; that control was withdrawn as confounded — see A1.1.)*
 
 ---
 
@@ -91,7 +91,7 @@ The joints are cut by **load-bearing claim**, not by topic. A piece exists where
 **P3 · The method paper — *Transform-Reconstruction Testing*.**
 *Claim:* a claimed relation of textual descent can be specified as an executable transform and tested by blind multi-substrate reconstruction, with named contamination diagnostics.
 *Contents:* the general method (specify → seal → transmit blind → score on open slots); the diagnostic battery (LXX-vs-author spelling tests; census/output audit; unmotivated-rare-word flags; **divergence at underdetermined slots as the derivation signature**); the two failure modes discovered *by* the method — **attestation induction** (asking for recognition creates it; withdrawn in v2) and **spec-leak** (rule-glosses that translate the target; disclosed in v3 audit); the perturbation and specificity controls; the reflexivity rule (*convergence at a spec-determined slot is not evidence*).
-**Strategic note: this piece is unconditionally robust.** If the Phaedrus control kills P2's specificity claim, P3 does not weaken — it *strengthens*, because a method that kills its author's own hypothesis is thereby demonstrated to be a test rather than a rhetoric. P3 should be drafted so that it never depends on P2's verdict.
+**Strategic note: this piece is unconditionally robust.** If the specificity tests (F-1, A1.4) kill P2's central claim, P3 does not weaken — it *strengthens*, because a method that kills its author's own hypothesis is thereby demonstrated to be a test rather than a rhetoric. P3 should be drafted so that it never depends on P2's verdict.
 *Venue:* *Digital Scholarship in the Humanities* / *Computational Culture* / *Digital Humanities Quarterly*.
 *Reach:* this is the piece that makes the Marx reconstruction, the Josephus seams and the Sappho work one **program** rather than a set of readings. Highest long-run value.
 
@@ -151,8 +151,13 @@ Armenian-only *Quaestiones* (outside every census — must be stated as a limit 
 
 ## §4. Controls outstanding — the critical path
 
-**C1 · The Phaedrus control. HIGHEST PRIORITY IN THE PROGRAM.**
-Run the C/L/Λ pipeline with ***Phaedrus* 244–245 as the source instead of Sappho 31.** If the Platonic mania-passage alone regenerates *Heres* 249–266, Sappho does no work and osmosis-through-Plato is sufficient — **P2's central claim collapses.** If it does not, the operations that *fail* to appear are exactly the ones that require the poem, and "far less supported" becomes a measured comparative rather than a rhetorical one. **This is the single objection a competent reviewer raises first. Run it before writing more of P2.**
+**C1 · ~~The Phaedrus control~~ — WITHDRAWN. DO NOT RUN AS SPECIFIED.** → superseded by **A1.4 (the residue test)** and **F-1 (target discrimination)**.
+
+> The withdrawn text read: *"Run the pipeline with Phaedrus 244–245 as the source instead of Sappho 31. If the Platonic mania-passage alone regenerates Heres 249–266, Sappho does no work and osmosis-through-Plato is sufficient — P2's central claim collapses."*
+>
+> **Why that is wrong, and it is wrong twice over.** It treats *Phaedrus* 244–245 as an independent alternative source. But the passage is, on this program's own reading, very likely itself a transform of Sappho 31. **If it is, then 31, the Phaedrus passage, and Heres 249–266 are the same structure under transform — and a Phaedrus→Philo success yields no additional material for determining 31's presence in Philo in either direction.** The test is not merely non-discriminating; on the question it was built to settle it is *informationally empty*.
+>
+> The precondition is therefore R-1: establish whether the *Phaedrus* passage is itself a mapping **before** asking anything about the relay. That is not a courtesy to the hypothesis; it is what makes the next question answerable at all. See A1.4.
 
 **C2–C4 · Perturbation, specificity, and the inverse ORDER key — HELD IN HALF B §4.** The perturbation variant's exact modification, the specificity control's expected divergence, and — most importantly — **the order key for the inverse run** are in the counterpart half. The order key is the sharpest instrument in the battery precisely because it cannot be retrieved: anyone can recall a famous poem; nobody recalls a permutation rule. Publishing it would destroy it.
 
@@ -166,7 +171,7 @@ Run the C/L/Λ pipeline with ***Phaedrus* 244–245 as the source instead of Sap
 
 ```
 NOW ──> consolidate in-thread materials into P0        (context-window risk; do first)
-   └──> C1 Phaedrus control                            (gates P2; run before writing)
+   └──> F-1 target discrimination + A1.4 residue test   (gates P2; run before writing)
           ├── passes ──> P2 drafting  ──┐
           └── fails   ──> P2 rescoped; P3 UNAFFECTED   │
    └──> C5 v4 spec ──> C2, C3, C4 runs ──> P1 final ───┼──> P4 (needs P2 + Catullus/Phaedrus scans)
@@ -203,6 +208,23 @@ NOW ──> consolidate in-thread materials into P0        (context-window risk;
 ---
 ---
 
+# READING NOTE — HOW THE ADDENDA BIND
+
+**The addenda correct the body. Where they do, the body now says so inline.**
+
+This document accumulated nine addenda in a single day, each correcting something
+earlier. For a while the corrections lived only in the addenda while the corrected
+text stood unmarked — so §4's withdrawn Phaedrus control still read as
+"HIGHEST PRIORITY IN THE PROGRAM. Run it before writing more of P2," four sections
+above the addendum withdrawing it. A reader working forward would have run a test
+this program had already established was empty.
+
+Superseded passages are **kept**, because the sequence of corrections is part of
+what this program records. But each now carries an inline marker naming what
+replaced it. **Where a marker and the passage beneath it disagree, the marker wins.**
+
+---
+
 # ADDENDUM 1 — CONTROL REDESIGN: THE TAILORING PROBLEM AND THE FIT FILTER
 *(2026-08-15, following operator's objection to the Phaedrus control as specified)*
 
@@ -212,7 +234,11 @@ As written in §4/C1 it treats *Phaedrus* 244–245 as an **alternative source**
 
 - **H1** Philo works the poem directly · **H2** Philo works Plato, who worked the poem (relay) · **H3** Philo works Plato, who did not (Plato-origin; Sappho irrelevant)
 
-and it separates H1 from (H2 ∨ H3) only. **H2 and H3 are the pair that matters**, and a Phaedrus→Philo success is consistent with both. Run naively, it would have produced a result that looked decisive and settled nothing.
+and it separates H1 from (H2 ∨ H3) only. **H2 and H3 are the pair that matters**, and a Phaedrus→Philo success is consistent with both.
+
+**The sharper statement, which is the operator's and is stronger than the above.** The failure is not that the control fails to discriminate. It is that the control is **informationally empty on the question it was built to settle**. If the *Phaedrus* passage is itself a transform of Sappho 31 — as this program's own reading holds it very likely is — then **Sappho 31, *Phaedrus* 244–245, and *Heres* 249–266 are the same structure under transform.** Showing that one of them can generate another tells you nothing whatever about 31's presence in Philo, *in either direction*, because you have shown only that a structure can generate itself.
+
+Run naively, it would have produced a result that looked decisive and settled nothing — and would have done so in whichever direction it came out.
 
 ## A1.2 — The deeper problem the objection exposes: **the transform is tailored.**
 
@@ -440,11 +466,15 @@ Stating this operator exposes that it is the same primitive as the others with a
 
 ## A4.3 — The operator, compressed
 
+> **SUPERSEDED by A6.6.** The form below is the weaker of two candidates. Both are filed in Half B §3 and are withheld here, because an operator form read before the run is a prompt, not a hypothesis.
+
 > **Sublimity is the receiver's becoming the source's continuation.**
 
 Operator form: `OCCUPY(continuation)` — with the reflexive clause that makes it a treatise rather than a poem: *and state the occupation as the criterion.*
 
 ## A4.4 — Derivation sketch, and an honest partition
+
+> **PARTLY REVERSED by A5.1–A5.3.** This section concedes chapters 16–42 to genre-furniture. That concession was pattern-matching on chapter titles with the text unread; the figures are the anatomy of the break and are operator-derived. The concession is preserved as the record of an error, not as a finding.
 
 What the operator reaches, in the treatise's own vocabulary (all verified in the TEI this session):
 
@@ -590,7 +620,9 @@ This connects directly to the material the Ω erratum already carries: Diotima's
 - **ἀνάστημα (7.2) as "resurrection."** The word means elevation, stature, standing-up; the resurrection sense belongs to ἀνάστασις in LXX/NT usage — contemporary, so the sense is *in the air*, and the root-play with κατεξανάστασις three lines later is real. But the resurrection reading is **available, not proven**, and must be marked as available wherever it is used.
 - **"Magical treatise" as a genre claim.** Supported by the operation-structure (below), not yet by a demonstration.
 
-## A6.5 — The genre test (runnable; this is what makes A6.1 a claim rather than an image)
+## A6.5 — The genre test
+
+> **RITUAL-CORPUS ARM STRUCK by A7.1.** PGM and the lamellae are instrumental; this tradition is constitutive. The handbook arm stands as the negative control. (runnable; this is what makes A6.1 a claim rather than an image)
 
 The treatise's *operation-structure* is the structure of a technical manual for acquiring a power:
 
@@ -633,6 +665,8 @@ Those are different technologies that happen to share an ambient vocabulary of p
 
 ## A7.2 — The claim, in three separable parts
 
+> **SUPERSEDED by A8.1.** Exclusivity is not a third empirical claim; it is analytic, given individuation by object. The two-part split in A8.1 replaces the three-part split below.
+
 > This is a distinct discipline — **logotic engineering** — with a monopoly on the technique, uniquely entrusted with it, and uniquely carrying it forward; its peers are Sappho, Plato, Revelation, Damascius, and the rest of the line.
 
 Three claims, of descending testability:
@@ -642,6 +676,8 @@ Three claims, of descending testability:
 3. **EXCLUSIVITY** — monopoly; uniquely entrusted; uniquely carried forward. *The strongest and most dangerous, and the one that most needs a control set.*
 
 ## A7.3 — The circularity danger, stated plainly
+
+> **MEMBERSHIP CRITERIA SUPERSEDED by A8.2.** The structural criteria and the carrier/receiver gate below excluded Catullus, the least disputable member — which is how they were known to be wrong. Membership is demonstrable handling; carrier/receiver survives only as a role description. The circularity warning itself stands.
 
 If membership is defined by the operation and tested by the operation, the tradition is defined into existence and no result can fail. **The test must be able to say no.** Two requirements:
 
