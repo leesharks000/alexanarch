@@ -102,7 +102,16 @@ def update_protocol(idx, protocol_name, description, new_version=None):
     path = entry["canonical_path"]
     file_path = REPO_ROOT / path.lstrip("/")
     if not file_path.exists():
-        raise FileNotFoundError(f"Protocol file does not exist: {file_path}")
+        # canonical_path is the PUBLISHED URL path (/api/...), which is served from
+        # data/api/. Resolving it against the repo root alone finds nothing, so the
+        # reconciler could not repair the very hash it is for. Found 2026-08-14 when
+        # [IDX-002] fired on axn-protocol.json and this script could not fix it.
+        alt = REPO_ROOT / "data" / path.lstrip("/")
+        if alt.exists():
+            file_path = alt
+        else:
+            raise FileNotFoundError(
+                f"Protocol file does not exist at {file_path} or {alt}")
 
     # Validate the protocol JSON parses
     with open(file_path) as f:

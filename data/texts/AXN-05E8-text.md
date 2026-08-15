@@ -43,11 +43,12 @@ Falsified by a re-run at the same address, surface and auth state returning prod
 > **SUPERSEDED_BY:** EA-SEMSTACK-01 §I · EA-SEMSTACK-INTEGRATION-01 §II, §III
 > **EFFECTIVE:** 2026-08-14, the same day as first issue
 >
-> **Three propositions in this document are corrected elsewhere and should not be cited from here:**
+> **Four propositions in this document are corrected elsewhere and should not be cited from here:**
 >
 > 1. **§I's claim that semantic rent "has never been measured" is FALSE.** Rent was formalised at deposit **#449**, *The Dagger Applied*, 7 February 2026: **Semantic Rent = P(W)₍retained₎ − P(W)₍transmitted₎**. That is the canonical formula.
 > 2. **The four-term product R = U · S · (1 − A) · D is NOT the canonical rent formula.** It is retained as an *event decomposition* — a record of how the SPXI case was first decomposed — and is demoted in authority. Where the two differ, #449 governs.
-> 3. **The supply term is NOT uninstrumented.** It is the `enclosing` span class in DSL, weighted −1.5. See EA-SEMSTACK-INTEGRATION-01 §II.
+> 3. **The acknowledgment claim is FALSE.** This document records the composition as acknowledging at "source level only" and naming no institution. **The Semantic Economy Institute IS named in the first pass** — *"a 2026 protocol/methodology created by the Semantic Economy Institute."* The layer named the ORGANISATION and withheld the PERSONS, the corpus, the commercial interest and the identifier: **PER-M 1.00 with PER-C 0.67**, not blanket omission. Computed in #1470; the dimensional decomposition is #1469.
+> 4. **The supply term is NOT uninstrumented.** It is the `enclosing` span class in DSL, weighted −1.5. See EA-SEMSTACK-INTEGRATION-01 §II.
 >
 > **Also corrected:** this document treats the session's invocation of PER as self-recognition. It is a **Β measurement** — the Audit-Performance Bifurcation Operator, threshold 0.5. See EA-SEMSTACK-INTEGRATION-01 §III.
 >

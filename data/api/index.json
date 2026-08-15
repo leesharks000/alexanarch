@@ -4,7 +4,7 @@
   "title": "Alexanarch Protocol Index",
   "purpose": "Central machine-readable catalog of all Alexanarch protocols, schemas, and data registries. Single source of truth — every other document (AGENTS.md, DEPOSIT-FLOW.md, scripts, workflows) MUST pull from this index, not duplicate it. If this file disagrees with any other surface, this file wins and the other surface is wrong.",
   "index_version": "v1.1",
-  "last_updated": "2026-08-14",
+  "last_updated": "2026-08-15",
   "operator_directive": {
     "for_new_instances": [
       "STOP before any action.",
@@ -84,7 +84,7 @@
       "canonical_implementations": {
         "python": "scripts/axn_lib.py"
       },
-      "last_updated": "2026-06-22"
+      "last_updated": "2026-08-15"
     },
     "enrichment": {
       "name": "enrichment",
@@ -530,12 +530,19 @@
       "changes": [
         "Added new protocol 'deposit-completeness' at /api/deposit-completeness.json: "
       ]
+    },
+    {
+      "index_version": "v1.1",
+      "date": "2026-08-15",
+      "changes": [
+        "Updated protocol 'axn': path resolution verified"
+      ]
     }
   ],
   "state": {
     "canonical_path": "/data/state.json",
     "description": "Canonical generated source for all displayed counts. Read this rather than hand-maintaining counts here.",
-    "content_sha256": "c524c5f642fd8dff7ee5923589cfc8d91ace1cbe51d05a364fc7faccc0c80d9d"
+    "content_sha256": "29536a0ebd29cd51d6f6bda512b91dbebdaada9956b35a51120161d0f8866aaa"
   },
   "surface_hashes": {
     "algorithm": "sha256",

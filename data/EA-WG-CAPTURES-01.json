@@ -21598,7 +21598,16 @@
      "auth_basis": "OPERATOR ATTESTATION: signed in, non-incognito, all thirteen.",
      "cite": "https://www.alexanarch.org/captures/#emily-antioch-20260814",
      "citable_unit": "observation — one surface, one address, one date",
-     "surface_state": "expanded popup (emits AI Mode composition and header)"
+     "surface_state": "expanded popup (emits AI Mode composition and header)",
+     "defect_probe": {
+      "date": "2026-08-14",
+      "target": "scilynk.com",
+      "method": "HTTP fetch of the site search for the entity",
+      "result": "INCONCLUSIVE — NOT A FINDING EITHER WAY",
+      "reason": "SciLynk is a client-rendered Next.js application. The search response contains only a __NEXT_DATA__ payload echoing the query; no result markup, no byline, no affiliation field is served to a non-executing client. The spurious 'Edgewell Personal Care' attachment and the mangled 'LSLee' byline observed in the AI Overview source card could therefore not be confirmed or excluded at the aggregator.",
+      "what_would_settle_it": "Fetch the document page directly with a JavaScript-executing client, or inspect the aggregator's own metadata export, and compare the affiliation field against the deposit's creator field. Until then the question of whether the deposit or the aggregator introduced the attachment remains open.",
+      "recorded_as": "observed defect, undiagnosed — unchanged from the original seating"
+     }
     }
    ],
    "n_observations": 1,
@@ -21631,7 +21640,16 @@
    "d_full": "A HETERONYM RECOVERED WITH A FABRICATED CORPORATE AFFILIATION. Emily Antioch the Twin is identified against The Gospel of Antioch. But the SciLynk card renders the byline as «LSLee Sharks · EDGEWELL PERSONAL CARE (UNITED STATES)» — a razor and personal-care manufacturer, attached as institutional affiliation, with the creator's name mangled to «LSLee».",
    "d_truncated": true,
    "transcript_raw": null,
-   "surface_state": "expanded popup (emits AI Mode composition and header)"
+   "surface_state": "expanded popup (emits AI Mode composition and header)",
+   "defect_probe": {
+    "date": "2026-08-14",
+    "target": "scilynk.com",
+    "method": "HTTP fetch of the site search for the entity",
+    "result": "INCONCLUSIVE — NOT A FINDING EITHER WAY",
+    "reason": "SciLynk is a client-rendered Next.js application. The search response contains only a __NEXT_DATA__ payload echoing the query; no result markup, no byline, no affiliation field is served to a non-executing client. The spurious 'Edgewell Personal Care' attachment and the mangled 'LSLee' byline observed in the AI Overview source card could therefore not be confirmed or excluded at the aggregator.",
+    "what_would_settle_it": "Fetch the document page directly with a JavaScript-executing client, or inspect the aggregator's own metadata export, and compare the affiliation field against the deposit's creator field. Until then the question of whether the deposit or the aggregator introduced the attachment remains open.",
+    "recorded_as": "observed defect, undiagnosed — unchanged from the original seating"
+   }
   },
   {
    "slug": "endogenous-sophon-alexanarch-20260813",
