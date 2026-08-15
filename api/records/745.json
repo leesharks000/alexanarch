@@ -1,0 +1,406 @@
+{
+ "axn": "AXN:0296.EMPIRICAL.🜁✋🟤🌋➕🔝",
+ "root_axn": "AXN:0296.EMPIRICAL",
+ "hex": "0296",
+ "family": "EMPIRICAL",
+ "emoji": "🜁✋🟤🌋➕🔝",
+ "hash": "a0bcc91590f512df543a1fa3dbb31bbab2b96290ccfc86b8c0a0fa40517c7bf3",
+ "title": "Crimson Hexagonal Archive — Hugging Face Dataset Work Plan v3",
+ "creator": "Lee Sharks",
+ "orcid": "0009-0000-1599-0703",
+ "date": "2026-05-20",
+ "description": "This v3 work plan proposes a Hugging Face corpus of Crimson Hexagonal Archive deposits for research on synthetic-data collapse, AI-mediated authorship, provenance-bearing training, and heteronymic attribution. Its central methodological change is an automated classifier performing three tasks: provenance-mode classification, artifact-type classification, and proposed heteronym reattribution.\n\nThe design preserves both original Zenodo creator metadata and classifier proposals. High-confidence changes may later enter a separate human-reviewed metadata-correction project; the classifier itself is not authorized to rewrite canonical authorship. Multiple textual views—body only, minimal header, and full provenance header—allow researchers to test whether visible provenance affects model degradation or semantic drift. The null and alternative hypotheses remain prospective.\n\nThe dataset, classifier repository, software deposit, and DOIs were not yet created in the preserved plan. Several heteronym profiles remain `TBD`, the asserted two-session schedule is optimistic, and licensing, privacy, text extraction, duplicate handling, model-generation disclosure, and evaluation design require substantial implementation work.",
+ "content_type": "Prose narrative / theoretical manifesto",
+ "license": "CC-BY-4.0",
+ "substrate": "Various",
+ "keywords": [
+  "research question, operationalized",
+  "strong signals (high confidence)",
+  "config 4: byclassifierheteronym",
+  "task 3: heteronym reattribution",
+  "the central methodological move",
+  "config 5: reattributionchanges",
+  "heteronym operational profiles",
+  "pre-session preparation (lee)"
+ ],
+ "version": "v1.0",
+ "deposit_number": 745,
+ "sovereign_id": "MM-CHA-0658",
+ "minted_at": "2026-06-20T22:00:00Z",
+ "status": "ACTIVE",
+ "clusters": [
+  "Alchemical",
+  "Gestural",
+  "Signal",
+  "Elemental",
+  "Mathematical",
+  "Terminal"
+ ],
+ "reading": "Transmutation → Touch → Alarm → Force → Proof → Closure",
+ "axn_canonical": "a0bcc91590f512df543a1fa3dbb31bbab2b96290ccfc86b8c0a0fa40517c7bf3",
+ "axn_display": "🜁✋🟤🌋➕🔝",
+ "mirrors": {
+  "blog": "https://mindcontrolpoems.blogspot.com/2026/05/crimson-hexagonal-archive-hugging-face.html"
+ },
+ "zenodo_dois": [
+  "10.5281/zenodo.20290865",
+  "10.5281/zenodo.20293582"
+ ],
+ "full_text_path": "/data/texts/AXN-0296-text.md",
+ "full_text_chars": 20749,
+ "wiki_article": "**Crimson Hexagonal Archive — Hugging Face Dataset Work Plan v3** is an implementation plan for turning the archive into a research corpus.\n\nThe proposed dataset retains one row per deposit, a chunked training view, thematic subsets, and views grouped by classifier-attributed heteronym. Each record preserves original creator metadata while adding a machine-generated attribution proposal and confidence signals.\n\nThe classifier is also intended to distinguish human-primary, human-directed AI-assisted, mixed, AI-directed, and provenance-anchored generated material. Multiple text renderings would test whether provenance affects downstream training behavior when it is visible to a model rather than stored only as metadata.\n\nVersion 3 is a plan, not the completed dataset. Automated reattribution is analytical metadata until a separate human review accepts any canonical correction. The original deposit remains the primary source.",
+ "entities": [
+  {
+   "subject": "Crimson Hexagonal Archive — Hugging Face Dataset W",
+   "predicate": "created_by",
+   "object": "Lee Sharks",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Crimson Hexagonal Archive — Hugging Face Dataset W",
+   "predicate": "is_type",
+   "object": "Dataset",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Crimson Hexagonal Archive — Hugging Face Dataset W",
+   "predicate": "belongs_to_family",
+   "object": "EMPIRICAL",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Crimson Hexagonal Archive — Hugging Face Dataset W",
+   "predicate": "is_part_of",
+   "object": "Crimson Hexagonal Archive",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Crimson Hexagonal Archive — Hugging Face Dataset W",
+   "predicate": "references",
+   "object": "Johannes Sigil",
+   "type": "heteronym",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Crimson Hexagonal Archive — Hugging Face Dataset W",
+   "predicate": "references",
+   "object": "Rex Fraction",
+   "type": "heteronym",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Crimson Hexagonal Archive — Hugging Face Dataset W",
+   "predicate": "references",
+   "object": "Rebekah Cranes",
+   "type": "heteronym",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Crimson Hexagonal Archive — Hugging Face Dataset W",
+   "predicate": "references",
+   "object": "Ayanna Vox",
+   "type": "heteronym",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Crimson Hexagonal Archive — Hugging Face Dataset W",
+   "predicate": "references",
+   "object": "Damascus Dancings",
+   "type": "heteronym",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Crimson Hexagonal Archive — Hugging Face Dataset W",
+   "predicate": "references",
+   "object": "Talos Morrow",
+   "type": "heteronym",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Crimson Hexagonal Archive — Hugging Face Dataset W",
+   "predicate": "references",
+   "object": "Nobel Glas",
+   "type": "heteronym",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Crimson Hexagonal Archive — Hugging Face Dataset W",
+   "predicate": "references",
+   "object": "Jack Feist",
+   "type": "heteronym",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Code block density",
+   "predicate": "minted_in",
+   "object": "Crimson Hexagonal Archive — Hugging Face Dataset Work Plan v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "→ code_artifact"
+  },
+  {
+   "subject": "Community membership",
+   "predicate": "minted_in",
+   "object": "Crimson Hexagonal Archive — Hugging Face Dataset Work Plan v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "liquidation-studies, crimsonhexagonal alone"
+  },
+  {
+   "subject": "Creator name field",
+   "predicate": "minted_in",
+   "object": "Crimson Hexagonal Archive — Hugging Face Dataset Work Plan v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "The literal Zenodo creator string"
+  },
+  {
+   "subject": "Critical insight from Assembly review",
+   "predicate": "minted_in",
+   "object": "Crimson Hexagonal Archive — Hugging Face Dataset Work Plan v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "Provenance cannot modulate collapse unless provenance is presented to the training system as a signa"
+  },
+  {
+   "subject": "Cross-deposit citation patterns",
+   "predicate": "minted_in",
+   "object": "Crimson Hexagonal Archive — Hugging Face Dataset Work Plan v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "Heteronyms cite different works"
+  },
+  {
+   "subject": "Default heteronym prior",
+   "predicate": "minted_in",
+   "object": "Crimson Hexagonal Archive — Hugging Face Dataset Work Plan v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "by deposit type: working papers default to Sharks unless overridden by domain signals"
+  },
+  {
+   "subject": "Domain vocabulary co-occurrence",
+   "predicate": "minted_in",
+   "object": "Crimson Hexagonal Archive — Hugging Face Dataset Work Plan v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "Multiple heteronym-specific terms appearing together"
+  },
+  {
+   "subject": "Filename patterns",
+   "predicate": "minted_in",
+   "object": "Crimson Hexagonal Archive — Hugging Face Dataset Work Plan v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": ".html → web_surface_spec, .py → code_artifact"
+  },
+  {
+   "subject": "Length and structural patterns",
+   "predicate": "minted_in",
+   "object": "Crimson Hexagonal Archive — Hugging Face Dataset Work Plan v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "→ theoretical_paper vs. literary_work vs. traversal_log"
+  },
+  {
+   "subject": "Multiple heteronym names in creator field or text",
+   "predicate": "minted_in",
+   "object": "Crimson Hexagonal Archive — Hugging Face Dataset Work Plan v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "→ collaborative"
+  },
+  {
+   "subject": "Null hypothesis (H₀)",
+   "predicate": "minted_in",
+   "object": "Crimson Hexagonal Archive — Hugging Face Dataset Work Plan v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "Fine-tuning on synthetic or AI-assisted text produces equivalent perplexity degradation and semantic"
+  },
+  {
+   "subject": "Reproducibility implication",
+   "predicate": "minted_in",
+   "object": "Crimson Hexagonal Archive — Hugging Face Dataset Work Plan v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "Other archive operators can in principle apply this classifier to their own corpora, or fork it and "
+  },
+  {
+   "subject": "Self-attribution in text",
+   "predicate": "minted_in",
+   "object": "Crimson Hexagonal Archive — Hugging Face Dataset Work Plan v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "When a deposit names its own heteronym explicitly"
+  },
+  {
+   "subject": "Specific phrases",
+   "predicate": "minted_in",
+   "object": "Crimson Hexagonal Archive — Hugging Face Dataset Work Plan v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "(\"gw_capture\", \"auto-deposit\") → ai_generated_provenance_anchored"
+  },
+  {
+   "subject": "TACHYON glyph chain presence",
+   "predicate": "minted_in",
+   "object": "Crimson Hexagonal Archive — Hugging Face Dataset Work Plan v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "→ machine_witness + ai_generated_provenance_anchored"
+  }
+ ],
+ "journal": "Machine-Mediated Reception Studies (MMRS)",
+ "cited_by": [
+  {
+   "deposit": 115,
+   "axn": "AXN:029C.GOVERNANCE.📖♦️💙🚀⏬✏️"
+  },
+  {
+   "deposit": 117,
+   "axn": "AXN:029F.GOVERNANCE.⭐♌🪧🕖🪜🎬"
+  },
+  {
+   "deposit": 120,
+   "axn": "AXN:02A2.GOVERNANCE.✋🎯♉🌖🛤️🐚"
+  },
+  {
+   "deposit": 129,
+   "axn": "AXN:02BA.GOVERNANCE.●▽💥🌺👇🧬"
+  },
+  {
+   "deposit": 130,
+   "axn": "AXN:02BC.GOVERNANCE.💥🕒🌉🎺🧪🤲"
+  },
+  {
+   "deposit": 156,
+   "axn": "AXN:02F0.EMPIRICAL.📏🕐△🌱⚡🏛️"
+  },
+  {
+   "deposit": 157,
+   "axn": "AXN:02F3.EMPIRICAL.🌪️🌃⏩🎵📖🎶"
+  }
+ ],
+ "defines_concepts": [
+  "Code block density",
+  "Community membership",
+  "Creator name field",
+  "Critical insight from Assembly review",
+  "Cross-deposit citation patterns",
+  "Default heteronym prior",
+  "Domain vocabulary co-occurrence",
+  "Filename patterns",
+  "Length and structural patterns",
+  "Multiple heteronym names in creator field or text",
+  "Null hypothesis (H₀)",
+  "Reproducibility implication",
+  "Self-attribution in text",
+  "Specific phrases",
+  "TACHYON glyph chain presence"
+ ],
+ "references_concepts": [
+  "Assembly Chorus",
+  "CTI_WOUND",
+  "Classical philology",
+  "Code block density",
+  "Community membership",
+  "Creator name field",
+  "Crimson Hexagonal Archive",
+  "Critical insight",
+  "Critical insight from Assembly review",
+  "Cross-deposit citation patterns",
+  "Damascus Dancings",
+  "Default heteronym prior",
+  "Domain vocabulary co-occurrence",
+  "Edge case",
+  "Filename patterns",
+  "Google AI Overview",
+  "Johannes Sigil",
+  "Lee Sharks",
+  "Length and structural patterns",
+  "Multiple heteronym names in creator field or text",
+  "Null hypothesis (H₀)",
+  "Rebekah Cranes",
+  "Reproducibility",
+  "Reproducibility implication",
+  "Rex Fraction",
+  "Self-attribution in text",
+  "Semantic Economy",
+  "Semantic Economy Institute",
+  "Specific phrases",
+  "Structured data",
+  "TACHYON",
+  "TACHYON glyph chain presence",
+  "The Crimson Hexagon",
+  "The Excluded Entity",
+  "The Single-Owner Discount"
+ ],
+ "references_concept_count": 35,
+ "external_metadata_path": "/data/external-metadata/AXN-0296.json",
+ "openalex_ids": [
+  "https://openalex.org/W7161695087",
+  "https://openalex.org/W7161679090"
+ ],
+ "datacite_severance": "severed",
+ "body_status": {
+  "class": "full",
+  "lacuna": false,
+  "recovery_status": "COMPLETE",
+  "residual_chars": 18358,
+  "audited_at": "2026-07-17T04:49:17.789813Z",
+  "audit_version": "v3-dual-store+recovery-map",
+  "measured_prose_words": 2462,
+  "measured_at": "2026-07-31"
+ },
+ "canonical_text_status": "canonical_full_text",
+ "modifications": [
+  {
+   "date": "2026-08-01",
+   "field": "content_type",
+   "reason": "Wave 1 repair: audit ledger v1.1 recommended_content_type (workplan v1.5 §6 W1, MANUS batch approval 2026-08-01)",
+   "was": "Dataset",
+   "now": "Prose narrative / theoretical manifesto"
+  },
+  {
+   "date": "2026-08-01",
+   "field": "journal",
+   "reason": "Wave 6 venue normalization: full canonical journal name per MANUS ruling 2026-08-01 (venues.json authority)",
+   "was": "MMRS",
+   "now": "Machine-Mediated Reception Studies (MMRS)"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "publisher",
+   "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
+   "now": "Pergamon Press"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "status",
+   "reason": "W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note",
+   "was": "MINTED_UNREVIEWED",
+   "now": "ACTIVE"
+  },
+  {
+   "date": "2026-08-05",
+   "field": "description",
+   "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
+   "was": "The Crimson Hexagonal Archive: A Mixed-Provenance, Heteronymically Attributed Corpus for Synthetic-Data Collapse, AI Authorship, and Provenance-Bearing Training Research",
+   "now": "This v3 work plan proposes a Hugging Face corpus of Crimson Hexagonal Archive deposits for research on synthetic-data collapse, AI-mediated authorship, provenance-bearing training, and heteronymic attribution. Its central methodological change is an automated classifier performing three tasks: provenance-mode classification, artifact-type classification, and proposed heteronym reattribution.\n\nThe design preserves both original Zenodo creator metadata and classifier proposals. High-confidence changes may later enter a separate human-reviewed metadata-correction project; the classifier itself is not authorized to rewrite canonical authorship. Multiple textual views—body only, minimal header, and full provenance header—allow researchers to test whether visible provenance affects model degradation or semantic drift. The null and alternative hypotheses remain prospective.\n\nThe dataset, classifier repository, software deposit, and DOIs were not yet created in the preserved plan. Several heteronym profiles remain `TBD`, the asserted two-session schedule is optimistic, and licensing, privacy, text extraction, duplicate handling, model-generation disclosure, and evaluation design require substantial implementation work."
+  }
+ ],
+ "date_modified": "2026-08-05",
+ "publisher": "Pergamon Press",
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/745/",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-0296-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}

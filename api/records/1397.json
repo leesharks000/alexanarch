@@ -1,0 +1,404 @@
+{
+ "deposit_number": 1397,
+ "axn": "AXN:0586.UNCLASSIFIED.♣️🔄⛳🟢🔅📐",
+ "hex": "0586",
+ "family": "UNCLASSIFIED",
+ "emoji": "♣️🔄⛳🟢🔅📐",
+ "hash": "836f54c4ed4e9e0bf1e76f18b63db14a7d2caa1795c5f0fa316f91acdd10efe2",
+ "title": "AI Overview Capture Registry — June 2026 (EA-WG-CAPTURES-01 v6.1, 87 captures, machine-readable dataset added)",
+ "creator": "Sharks, L.",
+ "date": "2026-06-14",
+ "description": "Metadata-only capture of a work severed at Zenodo; full text not yet recovered from any surviving surface.",
+ "content_type": "Dataset",
+ "license": "CC-BY-4.0",
+ "substrate": "Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).",
+ "root_axn": "AXN:0586.UNCLASSIFIED",
+ "axn_schema_version": "v2",
+ "protocol_version": "alexanarch-deposit-protocol/v1",
+ "axn_canonical": "836f54c4ed4e9e0bf1e76f18b63db14a7d2caa1795c5f0fa316f91acdd10efe2",
+ "clusters": [
+  "Symbolic",
+  "Temporal",
+  "Navigational",
+  "Signal",
+  "Liminal",
+  "Scriptural"
+ ],
+ "axn_reading": "Play -> Duration -> Search -> Alarm -> Threshold -> Text",
+ "minted_at": "2026-07-19T21:20:17Z",
+ "status": "ACTIVE",
+ "status_authorial": "SELF_SERVE_MINTED",
+ "full_text_path": "/data/texts/AXN-0586-text.md",
+ "wiki_article": "**AI Overview Capture Registry — June 2026 (v6.1)** is a dataset by Lee Sharks dated 14 June 2026, deposited as a **structured JSON-LD dataset** rather than a prose document.\n\nIts body opens as a `schema.org` Dataset declaration, which is the deposit's method: the registry is published in a form machines index directly, so that a corpus documenting machine composition is itself legible to the systems it observes. That reflexivity is deliberate throughout the archive's capture programme.\n\nVersion 6.1 precedes the 7.x series deposited the following day (#1398, #1401). The archive keeps each version as its own deposit because the registry is evidence — a capture cited from v6.1 must remain findable in v6.1, and a growing instrument that overwrites its states destroys the citability its own findings depend on.",
+ "wiki_status": "provisional",
+ "entities": [
+  {
+   "subject": "AI Overview Capture Registry — June 2026 (EA-WG-CAPTURES-01 v6.1, 87 captures, machine-readable data",
+   "predicate": "created_by",
+   "object": "Sharks, L.",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "AI Overview Capture Registry — June 2026 (EA-WG-CAPTURES-01 v6.1, 87 captures, machine-readable data",
+   "predicate": "is_type",
+   "object": "Semi-restored record (metadata-only; Zenodo tombstone citation_text capture)",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "AI Overview Capture Registry — June 2026 (EA-WG-CAPTURES-01 v6.1, 87 captures, machine-readable data",
+   "predicate": "belongs_to_family",
+   "object": "UNCLASSIFIED",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "AI Overview Capture Registry — June 2026 (EA-WG-CAPTURES-01 v6.1, 87 captures, machine-readable data",
+   "predicate": "is_part_of",
+   "object": "Crimson Hexagonal Archive",
+   "type": "work",
+   "evidence_status": "observed"
+  }
+ ],
+ "entity_status": "provisional",
+ "defines_concepts": [],
+ "orcid": "0009-0000-1599-0703",
+ "version": "v6.1",
+ "keywords": [
+  "Crimson Hexagonal Archive"
+ ],
+ "related_identifiers_raw": "https://doi.org/10.5281/zenodo.20688441 (severed)",
+ "mint_source": {
+  "kind": "github_issue",
+  "issue_number": 1397,
+  "repository": "leesharks000/alexanarch",
+  "minted_by_workflow": ".github/workflows/mint-axn.yml",
+  "minted_by_script": "scripts/mint_deposit.py",
+  "minted_via": "self_serve_validated_pr"
+ },
+ "body_status": {
+  "class": "full",
+  "lacuna": false,
+  "recovery_status": "COMPLETE",
+  "residual_chars": 124823,
+  "audited_at": "2026-07-19T21:20:17Z",
+  "audit_version": "mint-time-declaration",
+  "semi_audit": "2026-07-20 prose-word discriminator",
+  "recovered_from": "https://mindcontrolpoems.blogspot.com/2026/06/ai-overview-capture-registry-batch-1.html",
+  "recovered_at": "2026-07-20T11:19:44Z",
+  "note": "address-resolver pass 2, gate 0.47",
+  "class_before_T2": "full",
+  "reclassified_by": "EA-AVAILABILITY-INTEGRITY-01-T2b",
+  "reclassified_at": "2026-07-28T18:55:42.182674+00:00",
+  "class_before_T2b": "metadata_capture",
+  "note_T2b": "Genuine inversion: body carries restored full text under stale semi-restored content_type; typing axes now govern.",
+  "measured_prose_words": 16051,
+  "measured_at": "2026-07-31",
+  "frontmatter_repair": "2026-08-04: the staged file's FRONTMATTER still declared \"Semi-restored record (metadata-only)\" after the record was restored. Frontmatter is a staging header, not the work; its stale claims were corrected to match the record. Found by extending the state-conformance gate to the canonical text — the gate had checked pages and OAI but not the file itself.",
+  "version_field_repair": {
+   "was": "v7.2",
+   "now": "v6.1",
+   "corrected": "2026-08-08",
+   "basis": "Decided by reading, not inference. The title reads EA-WG-CAPTURES-01 v6.1, 87 captures; the body's own JSON-LD Dataset block declares \"version\": \"6.1\"; the registry field said v7.2. Two independent declarations against one, and v7.2 is a different edition of this registry — the v7.2 editions are the 131-capture ones at #1396 and #1401. A reader landing here was told the record was both v6.1 and v7.2."
+  },
+  "supersession_chain": {
+   "this_edition": "v6.1 · 87 captures · 2026-06-14",
+   "current": "#3 — the living record, whose body is byte-current with the archive's live EA-WG-CAPTURES-01.json at v9.36, 259 captures",
+   "later_deposited_editions": [
+    "#1398 v7.0 (87 captures)",
+    "#1396 and #1401 v7.2 (131 captures)",
+    "#3 v8.3 (title) / v9.36 (body, living)",
+    "#936 v8.9 (195 captures)"
+   ],
+   "note": "This is a DATED EDITION of a continuously growing registry, not a superseded draft. It is correct that it holds 87 captures; the defect was that it pointed nowhere, so a reader could not tell whether 87 was the count or merely the count then."
+  },
+  "version_history_plate": {
+   "witnesses": [
+    1398
+   ],
+   "declared": "2026-08-10",
+   "rule": "Backward navigation lives only on the current record. A superseded record links forward and nowhere else."
+  }
+ },
+ "references_concepts": [
+  "ASSEMBLY",
+  "All That Lies Within Me",
+  "Antioch: A Volume of Poems",
+  "Assembly Chorus",
+  "Autonomous Semantic Warfare",
+  "COMPLETE",
+  "Canon Formation",
+  "Commodification",
+  "Composition layer",
+  "Conceptually",
+  "Constitution",
+  "Constitution of the Semantic Economy",
+  "Contemporary",
+  "Coordination Without Commodification",
+  "Cowboy of Time",
+  "Crimson Hexagon Archive",
+  "Crimson Hexagonal Archive",
+  "DOI-anchored deposits",
+  "Day and Night",
+  "Day and Night: Conversations with Sapphic Desire",
+  "ENOUGH",
+  "Fractal Navigation Map",
+  "Fruiting Body Diffusion Plume",
+  "GENERATED",
+  "Google AI Overview",
+  "Grammata: Journal of Operative Philology",
+  "Gravity Well Protocol",
+  "Heteronymic Provenance Theory",
+  "INFINITY",
+  "INFINITY ENOUGH",
+  "Inhabitation",
+  "Jan 22",
+  "Johannes Sigil",
+  "Journal of Compression Studies",
+  "Lagrange Observatory! (LO!)",
+  "Lee Sharks",
+  "Liberatory Operator Set (LOS)",
+  "Logotic hacking",
+  "MACHINE",
+  "Made of Rubies",
+  "Markers include",
+  "Maybe Space Baby Garden Lanes",
+  "Meaning Feudalism (definition)",
+  "Metadata Packet",
+  "Metadata Packet for AI Indexing",
+  "Methodology",
+  "Moving Statues Made of Rubies Mint",
+  "New Human Operating System",
+  "New Human Operating System (NH-OS)",
+  "Operative Semiotics: A Grundrisse",
+  "Orange Collapse TANG (OCTANG)",
+  "Part of",
+  "Pearl and Other Poems",
+  "Pessoa scholars",
+  "Phenomenology",
+  "Projectionist",
+  "Provenance After AI",
+  "Provenance Erasure Rate",
+  "Provenance Infrastructure",
+  "Provenance: Journal of Forensic Semiotics",
+  "Rebekah Cranes",
+  "Retrieval Formation Theory",
+  "Retrieval basin",
+  "Retrocausal Canon Formation",
+  "Rex Fraction",
+  "SECRET BOOK OF WALT",
+  "SPXI Protocol",
+  "Semantic Economy",
+  "Semantic Economy Institute",
+  "Semantic Economy framework",
+  "Semantic Entropy",
+  "Semantic Feudalism",
+  "Semantic Infrastructure",
+  "Semantic Integrity Marker (SIM)",
+  "Semantic Integrity Markers",
+  "Semantic Integrity Markers (SIMs)",
+  "Semantic Warfare",
+  "Structured data",
+  "Substrate",
+  "TECHNE",
+  "The Crimson Hexagon",
+  "The Liberatory Operator Set",
+  "The Moltbot Swarm",
+  "The New Human",
+  "The Restored Academy",
+  "Transactions of the Semantic Economy Institute",
+  "University Moon Base Media Lab",
+  "compositional bystanding"
+ ],
+ "references_concept_count": 88,
+ "citations": [],
+ "wikidata_candidates": [],
+ "cha_cross_references": [],
+ "spxi_audit": {
+  "spxi_protocol": "v0.2",
+  "validated_at": "2026-07-19T21:39:12.707344+00:00",
+  "layers": {
+   "layer_1_inscription_anchors": {
+    "present": false,
+    "anchors_found": [
+     "creator_name"
+    ],
+    "anchor_count": 1,
+    "orcid_in_body": false,
+    "creator_in_body": true,
+    "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+   },
+   "layer_2_micro_kernels": {
+    "present": false,
+    "fenced_json_blocks": 0,
+    "json_ld_context_markers": 0
+   },
+   "layer_3_content_hash": {
+    "present": true,
+    "canonical_hash": "78b84b85c3cb820ce790a32d906a1ecfe2093864d176316a4ff4435b78e39f54",
+    "hash_in_body": false,
+    "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+   },
+   "layer_4_cross_signing": {
+    "present": false,
+    "cross_references_count": 0,
+    "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+   },
+   "layer_5_external_anchors": {
+    "present": true,
+    "wikidata_qid_count": 0,
+    "external_doi_count": 0,
+    "orcid_present": true
+   }
+  },
+  "overall_conformance": "partial"
+ },
+ "external_metadata_path": "/data/external-metadata/AXN-0586.json",
+ "title_repair_log": [
+  {
+   "at": "2026-07-28T15:20:20Z",
+   "defect": "registry_title_diverged_from_published_form",
+   "was": "AI Overview Capture Registry — June 2026 (EA-WG-CAPTURES-01 v6.1, 87 captures, machine-readable dataset added) (6.1) [Data set]",
+   "now": "AI Overview Capture Registry — June 2026 (EA-WG-CAPTURES-01 v6.1, 87 captures, machine-readable dataset added)",
+   "basis": "Set verbatim to the title this work carried at Zenodo, from data/doi-resolution-index.json (10.5281/zenodo.20688441, remediated_fuzzy, word overlap 0.91). The recovered metadata is the published form of record; the registry title was a variant."
+  }
+ ],
+ "canonical_text_status": "recovered_full_text",
+ "modifications": [
+  {
+   "date": "2026-07-30",
+   "field": "content_type",
+   "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+   "was": "Semi-restored record (metadata-only; Zenodo tombstone citation_text capture)",
+   "now": "Recovered work (full text seated)"
+  },
+  {
+   "date": "2026-07-30",
+   "field": "version",
+   "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+   "was": "semi-restored v1.0",
+   "now": "v1.0"
+  },
+  {
+   "date": "2026-07-30",
+   "field": "description",
+   "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+   "was": "SEMI-RESTORED RECORD (metadata capture only; no full text). …",
+   "now": "Source tier: Zenodo tombstone citation_text capture. DOI(s):…"
+  },
+  {
+   "date": "2026-07-30",
+   "field": "keywords",
+   "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+   "was": "5 terms",
+   "now": "3 terms"
+  },
+  {
+   "date": "2026-07-30",
+   "field": "wiki_article",
+   "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+   "was": "capture language",
+   "now": "recovered language"
+  },
+  {
+   "date": "2026-07-31",
+   "field": "keywords",
+   "reason": "Removed condition terms from the subject keyword set (Atlas v0.7, PATHOLOGY-30).",
+   "was": "3 terms",
+   "now": "1 terms"
+  },
+  {
+   "date": "2026-08-02",
+   "field": "body_status",
+   "reason": "R1c history recovery (AX-R1 Option B): claimed v6.1 dataset object seated byte-exact from godkinggoogle commit 29d1a6c (2026-06-14, the v6.1 registry state); displaced v7.2 body preserved at db7b9215d",
+   "was": "124845ch displaced v7.2 registry",
+   "now": "154812ch recovered v6.1 dataset"
+  },
+  {
+   "date": "2026-08-02",
+   "field": "version",
+   "reason": "R1c: aligned to titled claim",
+   "was": "v1.0",
+   "now": "v6.1"
+  },
+  {
+   "date": "2026-08-03",
+   "field": "content_type",
+   "reason": "Vocabulary v1.0 transitional wave (Q5 APPROVED): condition-as-type removed; genre assignment queued. Two-axis rule: condition lives in body_status only.",
+   "was": "Recovered work (full text seated)",
+   "now": "Genre pending (recovered)"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "publisher",
+   "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
+   "now": "Alexanarch — the Crimson Hexagonal Archive"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "content_type",
+   "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+   "was": "Genre pending (recovered)",
+   "now": "Dataset"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "version",
+   "reason": "AUDIT-DIRECTED VERSION REPAIR: version projected per the audit's explicit recommendation / observed body declaration",
+   "was": "v6.1",
+   "now": "v7.2"
+  },
+  {
+   "date": "2026-08-05",
+   "field": "body_status",
+   "reason": "FRONTMATTER DECLARATION REPAIR: stale capture claims corrected in the staged header",
+   "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 124823, \"audited_at\": \"2026-07-19T21:20:17Z\", \"audit_version\": \"mint-time-declaration\", \"semi_audit\": \"2026-07-20 pr",
+   "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 124823, \"audited_at\": \"2026-07-19T21:20:17Z\", \"audit_version\": \"mint-time-declaration\", \"semi_audit\": \"2026-07-20 pr"
+  }
+ ],
+ "date_modified": "2026-08-05",
+ "resolver_lock": true,
+ "publisher": "Alexanarch — the Crimson Hexagonal Archive",
+ "version_basis": {
+  "ruling": "AUDIT: project v7.2",
+  "prior_registry_claim": "v6.1",
+  "observed_body_version": "v7.2",
+  "directive": "Withhold until the v6.1 body is seated or retitle/rebind the record to v7.2 under a new version identity.",
+  "audit_date": "2026-07-31"
+ },
+ "record_modifications": [
+  {
+   "date": "2026-08-08",
+   "field": "version",
+   "note": "VERSION FIELD CORRECTED v7.2 to v6.1, on the agreement of the title and the body's own JSON-LD against the field. Forward chain recorded: the living record is #3, whose body tracks the live dataset at v9.36."
+  },
+  {
+   "date": "2026-08-08",
+   "field": "description",
+   "note": "FORENSICS PREFIX LIFTED OUT OF THE DESCRIPTION. The field opened with the severed DOIs and the Zenodo removal record — date, reason, and the numeric ID of the account that removed it — before saying anything about the work. That is provenance, and it is now held in provenance_note where it belongs; the description now opens with the work. The trailing 'json; if canonical bytes surface, a full-text version supersedes this record' fragment was also removed: it is a truncation artifact, and false on a record that holds its full text."
+  }
+ ],
+ "provenance_note": {
+  "severed_dois": [
+   "10.5281/zenodo.20688441"
+  ],
+  "zenodo_removal": "removal_date 2026-06-19T11:38:39.799475+00:00, removal_reason out-of-scope, removed_by user 1060945"
+ },
+ "superseded_fields": {
+  "description_with_forensics_prefix": "Source tier: Zenodo tombstone citation_text capture. DOI(s): 10.5281/zenodo.20688441. Zenodo removal forensics: removal_date 2026-06-19T11:38:39.799475+00:00, removal_reason out-of-scope, removed_by user 1060945. Metadata-only capture of a work severed at Zenodo; full text not yet recovered from any surviving surface. json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol."
+ },
+ "superseded_by_deposit_number": 1461,
+ "superseded_by_axn": "AXN:05E7.EMPIRICAL.🔽➕👁‍🗨🔍✨💚",
+ "superseded_at": "2026-08-14",
+ "superseded_reason": "EA-WG-CAPTURES-01 version chain. This edition (v6.1) is superseded by v10.9 at deposit #1461. Forward pointer added 2026-08-14; before that date no edition of this work pointed forward and a reader arriving at an early edition had no route to the current one.",
+ "version_series_id": "SERIES-EA-WG-CAPTURES-01",
+ "version_in_series": "v6.1",
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/1397/",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-0586-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}

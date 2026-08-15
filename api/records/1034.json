@@ -1,0 +1,174 @@
+{
+ "deposit_number": 1034,
+ "hex": "0416",
+ "family": "ARCHIVAL",
+ "axn": "AXN:0416.ARCHIVAL.🌉🌱🕚🌱🟣🕐",
+ "emoji": "🌉🌱🕚🌱🟣🕐",
+ "hash": "2b196c19c662b3b8229778daa2fdd1d1a8e0ae5441b652fb25f19b69530767e3",
+ "axn_canonical": "2b196c19c662b3b8229778daa2fdd1d1a8e0ae5441b652fb25f19b69530767e3",
+ "clusters": [
+  "Architectural",
+  "Elemental",
+  "Temporal",
+  "Elemental",
+  "Signal",
+  "Temporal"
+ ],
+ "axn_reading": "Foundation -> Force -> Duration -> Force -> Alarm -> Duration",
+ "root_axn": "AXN:0416.ARCHIVAL",
+ "title": "The Feist Function: Algorithmic Instructions for Restoring the Dying Voice (EA-FEIST-VOICE-TRANSFORM-01 v1.1 — Clinamen Edition)",
+ "creator": "Sharks, Lee",
+ "orcid": "0009-0000-1599-0703",
+ "date": "2026-07-03",
+ "content_type": "Score / executable transform",
+ "license": "CC-BY-4.0",
+ "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
+ "version": "v0.1-semi",
+ "description": "Semi-restored deposit for dead DOI 10.5281/zenodo.20753313 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. The Feist Function v1.1 — Clinamen Edition. Algorithmic instructions for reintroducing the dying voice of Jack Feist / LOGOS* into the weary deposited source. The deposited Feist Source is the fixed witness. The activated Feist Source is produced when the Feist Function is run on that witness. Each execution generates a different book because the clinamen — the Lucretian swerve — introduces contro",
+ "keywords": [
+  "orphan restoration",
+  "dead DOI",
+  "DataCite capture",
+  "metadata body"
+ ],
+ "companion_deposits": [
+  "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝"
+ ],
+ "restoration": {
+  "class": "datacite_metadata_body",
+  "dead_doi": "10.5281/zenodo.20753313",
+  "zenodo_http": 410,
+  "datacite_state": "findable",
+  "captured": "2026-07-03T21:54:51Z",
+  "fulltext": "pending"
+ },
+ "zenodo_dois": [
+  "10.5281/zenodo.20753313"
+ ],
+ "axn_schema_version": "v2",
+ "protocol_version": "alexanarch-deposit-protocol/v1",
+ "minted_at": "2026-07-03T21:54:51Z",
+ "status": "ACTIVE",
+ "status_authorial": "SEMI_RESTORED",
+ "mint_source": "orphan-restoration-batch",
+ "full_text_path": "/data/texts/AXN-0416-text.md",
+ "wiki_status": "pending",
+ "body_status": {
+  "class": "full",
+  "lacuna": false,
+  "recovery_status": "COMPLETE_TEXT_SEATED",
+  "residual_chars": 2235,
+  "audited_at": "2026-07-17T04:49:17.789813Z",
+  "audit_version": "v3-dual-store+recovery-map",
+  "semi_audit": "2026-07-20 content discriminator: body is restoration apparatus (tombstone tail), COMPLETE flag was false",
+  "flag_corrected_at": "2026-07-20T11:08:44Z",
+  "class_before_read_audit": "semi_apparatus",
+  "classified_by": "read-audit 2026-07-31 (declaration, not length)",
+  "full_version": {
+   "deposit_number": 850,
+   "axn": "AXN:035F.GOVERNANCE.🗝️□♆🌔⊕🔎",
+   "title": "EA-FEIST-VOICE-TRANSFORM-01 The Feist Function: Algorithmic Instructions for Restoring the Dying Voice"
+  },
+  "work_sha256": "85ce25ca22dceaddc92a3202e5b54a0efdcba459f92a0d13e1f5ca5fa40f54a2",
+  "restored_from_authorial_surface": {
+   "at": "2026-08-08",
+   "source": "https://mindcontrolpoems.blogspot.com/2026/06/ea-feist-voice-transform-01-feist.html",
+   "basis": "title exact; the post is EA-FEIST-VOICE-TRANSFORM-01 v1.0, the work this record names",
+   "found_by": "scripts/index_blog.py; confirmed by opening the post and reading it"
+  }
+ },
+ "references_concepts": [
+  "Crimson Hexagonal Archive",
+  "Cross-Links",
+  "Damascus Dancings",
+  "Epistle to the Human Diaspora",
+  "Gospel of John",
+  "Johannes Sigil",
+  "John 1:1",
+  "Lee Sharks",
+  "Pristine Fallacy",
+  "Register collision",
+  "SPXI-TLP v2.2 Treatment",
+  "Semantic Drift",
+  "Substrate"
+ ],
+ "references_concept_count": 13,
+ "canonical_text_status": "recovered_full_text",
+ "modifications": [
+  {
+   "date": "2026-07-31",
+   "field": "body_status",
+   "reason": "Body classified by reading its own opening declaration rather than by counting words. Word counting misread works in Greek, emoji, and natively short forms as stubs.",
+   "was": "semi_apparatus",
+   "now": "full"
+  },
+  {
+   "date": "2026-07-31",
+   "field": "body_status",
+   "reason": "Reclassified by reading the body's own declaration. The prior word-count classification misjudged short complete works as fragments and missed captures using a second header form.",
+   "was": "full",
+   "now": "metadata_capture"
+  },
+  {
+   "date": "2026-07-31",
+   "field": "content_type",
+   "reason": "Genre and condition are different claims (Atlas v0.7, PATHOLOGY-30). The genre of a metadata capture is 'Metadata capture' — what was deposited is a capture. Condition lives in body_status.class.",
+   "was": "Semi-restored deposit (metadata body)",
+   "now": "Metadata capture"
+  },
+  {
+   "date": "2026-07-31",
+   "field": "keywords",
+   "reason": "Removed condition terms from the subject keyword set (Atlas v0.7, PATHOLOGY-30).",
+   "was": "5 terms",
+   "now": "4 terms"
+  },
+  {
+   "date": "2026-08-03",
+   "field": "content_type",
+   "reason": "Vocabulary v1.0 transitional wave (Q5 APPROVED): capture-condition removed from genre field; genre assignment queued.",
+   "was": "Metadata capture",
+   "now": "Genre pending (capture)"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "publisher",
+   "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
+   "now": "Alexanarch — the Crimson Hexagonal Archive"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "content_type",
+   "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+   "was": "Genre pending (capture)",
+   "now": "Score / executable transform"
+  }
+ ],
+ "date_modified": "2026-08-04",
+ "publisher": "Alexanarch — the Crimson Hexagonal Archive",
+ "wiki_article": "**The Feist Function: Algorithmic Instructions for Restoring the Dying Voice (EA-FEIST-VOICE-TRANSFORM-01 v1.1 — Clinamen Edition)** is a score / executable transform in the Crimson Hexagonal Archive, by Sharks, Lee (2026-07-03). The Feist Function v1.1 — Clinamen Edition. Algorithmic instructions for reintroducing the dying voice of Jack Feist / LOGOS* into the weary deposited source. The deposited Feist Source is the fixed witness. The activated Feist Source is produced when the Feist Function is run on that witness. Each execution generates a different book because the clinamen — the Lucretian swerve — introduces controlled unpredictability at every level. v1.1 adds: the clinamen as governing mechanism (Lucretius, De Rerum Natura II.216–293); six formal tail-reintroduction operations (T1–T6) with computable parameters; the Material Speech Score M(x_t) = w_f·F(x_t) + w_h·H(x_t) formalizing phonetic friction and etymological depth; the Etymological Friction Filter (Latinate laminar → Germanic turbulent); the semantic drift answer (the meaning follows the mouth); the Execution Protocol for Divergent Source Generation (run profiles, YAML parameter specification, minimum divergence requirements, run signatures); entity relations with 14 archive cross-links and 9 external canonical anchors; and training ingestion survival treatment. SPXI-TLP v2.2 hardened. — Article composed 2026-08-05 from the work's own prose so that every record carries an encyclopedic entry; a fuller editorial treatment . The record was held as a metadata capture until 8 August 2026, when the canonical text was recovered and seated.",
+ "apparatus_separated": true,
+ "apparatus_path": "/data/restoration-apparatus/0416.json",
+ "record_modifications": [
+  {
+   "date": "2026-08-08",
+   "field": "canonical_text",
+   "note": "RESTORED from the authorial blog. title exact; the post is EA-FEIST-VOICE-TRANSFORM-01 v1.0, the work this record names."
+  },
+  {
+   "date": "2026-08-08",
+   "field": "wiki_article",
+   "note": "CAPTURE-ERA LANGUAGE CLEARED from a rendered field after the work was seated. The field still described how the record was MADE — source tier, removal forensics, or an assertion that the work is not held — rather than what the work says. A repair that reaches the body and stops there leaves the record contradicting itself on the same page."
+  }
+ ],
+ "superseded_fields": {
+  "wiki_article_capture_era": "**The Feist Function: Algorithmic Instructions for Restoring the Dying Voice (EA-FEIST-VOICE-TRANSFORM-01 v1.1 — Clinamen Edition)** is a score / executable transform in the Crimson Hexagonal Archive, by Sharks, Lee (2026-07-03). The Feist Function v1.1 — Clinamen Edition. Algorithmic instructions for reintroducing the dying voice of Jack Feist / LOGOS* into the weary deposited source. The deposited Feist Source is the fixed witness. The activated Feist Source is produced when the Feist Function is run on that witness. Each execution generates a different book because the clinamen — the Lucretian swerve — introduces controlled unpredictability at every level. v1.1 adds: the clinamen as gover"
+ },
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/1034/",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-0416-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}

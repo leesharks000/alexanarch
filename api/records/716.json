@@ -1,0 +1,302 @@
+{
+ "axn": "AXN:025F.GOVERNANCE.🌖🎇🌑🔍❌🌸",
+ "root_axn": "AXN:025F.GOVERNANCE",
+ "hex": "025F",
+ "family": "GOVERNANCE",
+ "emoji": "🌖🎇🌑🔍❌🌸",
+ "hash": "05e80056ef709774a7afbfa9c397ad6770fb8a1ab8abaf7b37e48a8480eab8cf",
+ "title": "Provenance Erasure Rate A Compression-Survival Metric for Attribution Loss in AI-Composed Search Outputs",
+ "creator": "Lee Sharks",
+ "orcid": "0009-0000-1599-0703",
+ "date": "2026-05-03",
+ "description": "This research note introduces Provenance Erasure Rate (PER) as the weighted proportion of source-dependent claims in an AI-composed output that appear without explicit attribution. It distinguishes attribution survival from factual support, citation precision, retrieval faithfulness, and semantic similarity. A system can preserve content while erasing the authorial or documentary relation that made the content available.\n\nThe note defines PER-eligible claims, an attribution indicator, and claim-granularity weights; gives limiting cases; and presents a single documented Google AI Overview as a motivating example. That case reportedly recomposed real fragments from *Pearl* into a false author biography while attributing none of them. The body carefully identifies this as one nonrepresentative instance involving the author himself. PER remains a candidate metric requiring annotation rules, source-dependence adjudication, inter-rater reliability, benchmark construction, and comparative evaluation. It measures attribution loss, not hallucination, truth, intent, copyright liability, or total economic harm.",
+ "content_type": "Research note / metric proposal",
+ "license": "CC-BY-4.0",
+ "substrate": "Various",
+ "keywords": [
+  "compositional authority transfer",
+  "provenance erasure rate",
+  "compressionsurvival",
+  "three compressions",
+  "crimson hexagonal",
+  "semantic economy",
+  "c_dep(o) ⊆ c(o)",
+  "ai overview"
+ ],
+ "version": "v1.0",
+ "deposit_number": 716,
+ "sovereign_id": "MM-CHA-0603",
+ "minted_at": "2026-06-20T22:00:00Z",
+ "status": "ACTIVE",
+ "clusters": [
+  "Celestial",
+  "Liminal",
+  "Celestial",
+  "Navigational",
+  "Liminal",
+  "Organic"
+ ],
+ "reading": "Origin → Threshold → Origin → Search → Threshold → Growth",
+ "axn_canonical": "05e80056ef709774a7afbfa9c397ad6770fb8a1ab8abaf7b37e48a8480eab8cf",
+ "axn_display": "🌖🎇🌑🔍❌🌸",
+ "mirrors": {
+  "blog": "https://mindcontrolpoems.blogspot.com/2026/05/provenance-erasure-rate-compression.html"
+ },
+ "zenodo_dois": [
+  "10.5281/zenodo.19643841",
+  "10.5281/zenodo.19053469",
+  "10.5281/zenodo.19476757",
+  "10.5281/zenodo.18320411"
+ ],
+ "full_text_path": "/data/texts/AXN-025F-text.md",
+ "full_text_chars": 21306,
+ "wiki_article": "**Provenance Erasure Rate** is a metric proposed by Lee Sharks for measuring attribution loss in AI-generated synthesis.\n\nPER begins with the source-dependent claims in an output: claims that quote, paraphrase, summarize, transform, or materially depend on identifiable sources. Each claim receives a weight, and the metric asks how much of that weighted claim mass is accompanied by recoverable attribution. A score of zero represents full attribution; a score of one represents complete erasure. Outputs with no source-dependent claims fall outside the metric.\n\nThe proposal is designed to complement citation-support and summarization metrics. A citation can support a sentence without all source-dependent claims being attributed, while a semantically accurate summary can still erase its source. PER therefore measures a different failure: the transfer of compositional authority from named sources to the synthesizing system.\n\nThe motivating case is a single archived AI Overview in which fragments of a literary work were reportedly converted into false biographical claims. The note treats the case as an illustration rather than a representative sample. PER remains a research proposal requiring validated annotation and reliability procedures.",
+ "entities": [
+  {
+   "subject": "Provenance Erasure Rate A Compression-Survival Met",
+   "predicate": "created_by",
+   "object": "Lee Sharks",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Provenance Erasure Rate A Compression-Survival Met",
+   "predicate": "is_type",
+   "object": "Provenance document",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Provenance Erasure Rate A Compression-Survival Met",
+   "predicate": "belongs_to_family",
+   "object": "GOVERNANCE",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Provenance Erasure Rate A Compression-Survival Met",
+   "predicate": "is_part_of",
+   "object": "Crimson Hexagonal Archive",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Provenance Erasure Rate A Compression-Survival Met",
+   "predicate": "references",
+   "object": "Jack Feist",
+   "type": "heteronym",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Provenance Erasure Rate A Compression-Survival Met",
+   "predicate": "engages",
+   "object": "Semantic Economy",
+   "type": "concept",
+   "evidence_status": "inferred"
+  },
+  {
+   "subject": "Provenance Erasure Rate A Compression-Survival Met",
+   "predicate": "engages",
+   "object": "Three Compressions",
+   "type": "concept",
+   "evidence_status": "inferred"
+  },
+  {
+   "subject": "C_dep(O) ⊆ C(O)",
+   "predicate": "minted_in",
+   "object": "Provenance Erasure Rate A Compression-Survival Metric for At",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "be the subset of source-dependent claims."
+  },
+  {
+   "subject": "Claim segmentation",
+   "predicate": "minted_in",
+   "object": "Provenance Erasure Rate A Compression-Survival Metric for At",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "PER requires segmenting outputs into discrete claims. Claim boundaries are not always clear. We prop"
+  },
+  {
+   "subject": "Cross-model validation",
+   "predicate": "minted_in",
+   "object": "Provenance Erasure Rate A Compression-Survival Metric for At",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "The metric has been developed through a single motivating case study. Validation across multiple mod"
+  },
+  {
+   "subject": "Grain assignment",
+   "predicate": "minted_in",
+   "object": "Provenance Erasure Rate A Compression-Survival Metric for At",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "The grain weighting is currently manual. Automated assignment using a separate LLM (not the system u"
+  },
+  {
+   "subject": "PER",
+   "predicate": "minted_in",
+   "object": "Provenance Erasure Rate A Compression-Survival Metric for At",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "**Fraction of source-dependent claims that lose attribution**"
+  },
+  {
+   "subject": "PER-eligible",
+   "predicate": "minted_in",
+   "object": "Provenance Erasure Rate A Compression-Survival Metric for At",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "(source-dependent) if it quotes, paraphrases, summarizes, transforms, or depends on a specific sourc"
+  },
+  {
+   "subject": "Provenance Erasure Rate",
+   "predicate": "minted_in",
+   "object": "Provenance Erasure Rate A Compression-Survival Metric for At",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "$$PER(S, O) = 1 - \\frac{\\sum_{j} A_j \\cdot g_j}{\\sum_{j} g_j}$$"
+  },
+  {
+   "subject": "Source identification",
+   "predicate": "minted_in",
+   "object": "Provenance Erasure Rate A Compression-Survival Metric for At",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "PER is fully computable for retrieval-augmented systems where the source corpus is identifiable. For"
+  },
+  {
+   "subject": "Table 1: Pearl Fragment Mapping",
+   "predicate": "minted_in",
+   "object": "Provenance Erasure Rate A Compression-Survival Metric for At",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "AI Overview claim"
+  }
+ ],
+ "journal": "Machine-Mediated Reception Studies (MMRS)",
+ "references_concepts": [
+  "C_dep(O) ⊆ C(O)",
+  "Claim segmentation",
+  "Constitution",
+  "Constitution of the Semantic Economy",
+  "Crimson Hexagonal Archive",
+  "Cross-model validation",
+  "DOI-anchored deposits",
+  "Google AI Overview",
+  "Grain assignment",
+  "Implications",
+  "Lee Sharks",
+  "Methodology",
+  "ORCID: 0009-0000-1599-0703",
+  "PER-eligible",
+  "PVE-003: The Attribution Scar",
+  "Pearl and Other Poems",
+  "Provenance Erasure Rate",
+  "Provenance Erasure Rate (PER)",
+  "Semantic Economy",
+  "Semantic Economy Institute",
+  "Semantic Economy framework",
+  "Source identification",
+  "Supplementary",
+  "Table 1: Pearl Fragment Mapping",
+  "The AI",
+  "The Retrieval Settlement",
+  "The Three Compressions v3.1",
+  "We propose"
+ ],
+ "defines_concepts": [
+  "Claim segmentation",
+  "C_dep(O) ⊆ C(O)",
+  "Cross-model validation",
+  "Grain assignment",
+  "PER",
+  "PER-eligible",
+  "Provenance Erasure Rate",
+  "Source identification",
+  "Table 1: Pearl Fragment Mapping"
+ ],
+ "references_concept_count": 28,
+ "external_metadata_path": "/data/external-metadata/AXN-025F.json",
+ "openalex_ids": [
+  "https://openalex.org/W7154857658",
+  "https://openalex.org/W7137322712",
+  "https://openalex.org/W7151982301",
+  "https://openalex.org/W7125129957"
+ ],
+ "datacite_severance": "severed",
+ "body_status": {
+  "class": "full",
+  "lacuna": false,
+  "recovery_status": "COMPLETE",
+  "residual_chars": 20019,
+  "audited_at": "2026-07-17T04:49:17.789813Z",
+  "audit_version": "v3-dual-store+recovery-map",
+  "measured_prose_words": 2750,
+  "measured_at": "2026-07-31",
+  "work_sha256": "e1faeaa1d0150aeb19cb2856fb20791f837af5dfa2279bd96fe6518e1c47d4d7",
+  "prior_bytes_sha256": "e0d570d480c13e5068a3304ce27092673bb24acc4eeb4e00e6ce178db8fbfc8e",
+  "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 11 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
+  "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
+ },
+ "canonical_text_status": "canonical_full_text",
+ "modifications": [
+  {
+   "date": "2026-08-01",
+   "field": "content_type",
+   "reason": "Wave 1 repair: audit ledger v1.1 recommended_content_type (workplan v1.5 §6 W1, MANUS batch approval 2026-08-01)",
+   "was": "Provenance document",
+   "now": "Research note / metric proposal"
+  },
+  {
+   "date": "2026-08-01",
+   "field": "journal",
+   "reason": "Wave 6 venue normalization: full canonical journal name per MANUS ruling 2026-08-01 (venues.json authority)",
+   "was": "MMRS",
+   "now": "Machine-Mediated Reception Studies (MMRS)"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "publisher",
+   "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
+   "now": "Pergamon Press"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "status",
+   "reason": "W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note",
+   "was": "MINTED_UNREVIEWED",
+   "now": "ACTIVE"
+  },
+  {
+   "date": "2026-08-05",
+   "field": "body_status",
+   "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
+   "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 20019, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+   "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 20019, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
+  },
+  {
+   "date": "2026-08-05",
+   "field": "body_status",
+   "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
+   "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 20019, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+   "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 20019, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
+  },
+  {
+   "date": "2026-08-05",
+   "field": "description",
+   "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
+   "was": "AI retrieval systems increasingly compose answers from human-authored sources. Existing evaluation frameworks ask whether generated claims are factual, whether citations support claims, or whether cited passages are relevant.",
+   "now": "This research note introduces Provenance Erasure Rate (PER) as the weighted proportion of source-dependent claims in an AI-composed output that appear without explicit attribution. It distinguishes attribution survival from factual support, citation precision, retrieval faithfulness, and semantic similarity. A system can preserve content while erasing the authorial or documentary relation that made the content available.\n\nThe note defines PER-eligible claims, an attribution indicator, and claim-granularity weights; gives limiting cases; and presents a single documented Google AI Overview as a motivating example. That case reportedly recomposed real fragments from *Pearl* into a false author biography while attributing none of them. The body carefully identifies this as one nonrepresentative instance involving the author himself. PER remains a candidate metric requiring annotation rules, source-dependence adjudication, inter-rater reliability, benchmark construction, and comparative evaluation. It measures attribution loss, not hallucination, truth, intent, copyright liability, or total economic harm."
+  }
+ ],
+ "date_modified": "2026-08-05",
+ "publisher": "Pergamon Press",
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/716/",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-025F-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}

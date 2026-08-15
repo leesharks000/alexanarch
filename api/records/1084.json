@@ -1,0 +1,133 @@
+{
+ "deposit_number": 1084,
+ "axn": "AXN:044D.OPERATIVE.🕕☁️⭐🟡🕕🔓",
+ "hex": "044D",
+ "family": "OPERATIVE",
+ "emoji": "🕕☁️⭐🟡🕕🔓",
+ "hash": "671f08c367fa80156e96495afbc4778d5dca5de6da5689431a500a7675951aa7",
+ "title": "EA-SEMANTIC-ADDRESSES-01 v1.1 — The Semantic Addresses Framework",
+ "creator": "Lee Sharks",
+ "date": "2026-07-16",
+ "description": "EA-SEMANTIC-ADDRESSES-01 v1.1 — The Semantic Addresses Framework\n\n**Author:** Lee Sharks ([ORCID: 0009-0000-1599-0703](https://orcid.org/0009-0000-1599-0703))\n**Institution:** Semantic Economy Institute\n**Version:** 1.1\n**Date:** 2026-07-16\n**License:** CC BY 4.0\n**Companion:** [EA-SPXI-01](./EA-SPXI-01.md) — Semantic Packet for eXchange & Indexing\n\n---\n\nChangelog\n\n- **v1.1 (2026-07-16)** — Classification refinement: `observed_address` and `unrated` collapsed into one class. Prefix-match normalization for statuses added (specialty variants of `ADOPTION` etc. classify identically to the base form). Positive prefix set widened to include `FAIR_TREATMENT`, `PARTIAL`, `DEMAND SIGNAL`, `MANTLE CONSOLIDATION`, `FUNCTIONAL ADDRESS`. Negative prefix set widened to include `DISSOLUTION`, `CORRECTION`. See §2.1 rationale.\n- **v1.0 (2026-07-16)** — Initial framework publication.\n\nAbstract\n\nA **Semantic Address** is a specific query (or family of variants) posed to a composition-layer surface — Google AI Overview, AI Mode, ChatGPT search, Perplexity, Claude, or any other summarizer-of-record — for which a machine-generated response can be observed. The framework here specifies (1) the formal definition of a Semantic Address, (2) the observation classes into which each address falls at any given moment, (3) the tributary registry from which observations are drawn, (4) the union algorithm that produces a deterministic canonical dataset from those tributaries, and (5) the JSON schema of the canonical output.\n\nSemantic Addresses are the reception surface. SPXI is the reception packet. Together they constitute the reception plumbing of the Semantic Economy: SPXI encodes what a work is; the Semantic Address encodes where a work can be found. A work with an SPXI packet and no Semantic Address is not measurably received. A Semantic Address without an SPXI packet is a channel with nothing traveling through it.\n\n1. Definitions\n\n1.1 Semantic Address\n\nA **Semantic Address** is a canonical query form paired with the set of composition-layer surfaces on which the query can be posed. Formally:\n\n```\naddress := (canonical_query, [variant, ...], target_surface_class)\n``` […full text at full_text_path]",
+ "content_type": "Methodological specification",
+ "license": "CC-BY-4.0",
+ "substrate": "Human-authored (Lee Sharks, MANUS). Drafted with Claude (TACHYON) as instrument for spec authoring, reference-implementation engineering, and schema drafting. The v1.0 was published in the session of 2026-07-16 (alexanarch commit 9eae7e4); the v1.1 classification refinement (alexanarch commit 7c27107) followed the same session's observation-count audit against the Capture Registry and Revelation First Reception Registry. No automated pipeline generated the substantive text; the reference implementation at scripts/build_semantic_addresses.py is executable code that reproduces the dataset deterministically from tributaries.",
+ "root_axn": "AXN:044D.OPERATIVE",
+ "axn_schema_version": "v2",
+ "protocol_version": "alexanarch-deposit-protocol/v1",
+ "axn_canonical": "671f08c367fa80156e96495afbc4778d5dca5de6da5689431a500a7675951aa7",
+ "clusters": [
+  "Temporal",
+  "Elemental",
+  "Celestial",
+  "Signal",
+  "Temporal",
+  "Terminal"
+ ],
+ "axn_reading": "Duration -> Force -> Origin -> Alarm -> Duration -> Closure",
+ "minted_at": "2026-07-16T06:05:20Z",
+ "status": "ACTIVE",
+ "status_authorial": "SELF_SERVE_MINTED",
+ "full_text_path": "/data/texts/AXN-044D-text.md",
+ "wiki_article": "**EA-SEMANTIC-ADDRESSES-01 v1.1 — The Semantic Addresses Framework** is a methodological specification in the Crimson Hexagonal Archive, by Lee Sharks (2026-07-16). A **Semantic Address** is a specific query (or family of variants) posed to a composition-layer surface — Google AI Overview, AI Mode, ChatGPT search, Perplexity, Claude, or any other summarizer-of-record — for which a machine-generated response can be observed. The framework here specifies (1) the formal definition of a Semantic Address, (2) the observation classes into which each address falls at any given moment, (3) the tributary registry from which observations are drawn, (4) the union algorithm that produces a deterministic canonical dataset from those tributaries, and (5) the JSON schema of the canonical output. Semantic Addresses are the reception surface. SPXI is the reception packet. Together they constitute the reception plumbing of the Semantic Economy: SPXI encodes what a work is; the Semantic Address encodes where a work can be found. A work with an SPXI packet and no Semantic Address is not measurably received. A Semantic Address without an SPXI packet is a channel with nothing traveling through it. — Article composed 2026-08-05 from the work's own prose so that every record carries an encyclopedic entry; a fuller editorial treatment belongs to the description/wiki review stream.",
+ "wiki_status": "provisional",
+ "entities": [],
+ "entity_status": "provisional",
+ "defines_concepts": [],
+ "orcid": "0009-0000-1599-0703",
+ "version": "v1.1",
+ "keywords": [
+  "semantic addresses",
+  "metadata framework",
+  "AXN",
+  "SPXI",
+  "composition layer",
+  "AI Overview",
+  "AI Mode",
+  "reception measurement",
+  "tributary union",
+  "canonical query",
+  "observation class",
+  "observed address",
+  "subjunctive address",
+  "verified non-address",
+  "deterministic regenerator",
+  "JSON Schema Draft-07",
+  "Alexanarch",
+  "Machine-Mediated Reception Studies",
+  "MMRS",
+  "Sémantique Potentielle",
+  "Revelation First",
+  "Platform Erosion Observatory"
+ ],
+ "related_identifiers_raw": "https://www.alexanarch.org/s/records/870/ (workplan #870 — origin coinage of 'subjunctive address' and 'forensic canary'), https://www.alexanarch.org/s/records/1045/ (EA-EROSION-01 — the observatory instrument that measures semantic-address reception over time), https://www.alexanarch.org/specs/EA-SEMANTIC-ADDRESSES-01.md (canonical spec URL), https://www.alexanarch.org/data/semantic-addresses.json (canonical dataset), https://www.alexanarch.org/data/semantic-addresses.schema.json (JSON Schema Draft-07), https://www.alexanarch.org/scripts/build_semantic_addresses.py (reference regenerator), https://www.alexanarch.org/addresses/ (live surface)",
+ "mint_source": {
+  "kind": "manual_session_mint",
+  "session": "TACHYON/MANUS 2026-07-16",
+  "repository": "leesharks000/alexanarch",
+  "minted_by_script": "scripts/mint_deposit.py (helpers imported)",
+  "minted_via": "direct_repo_access"
+ },
+ "body_status": {
+  "class": "full",
+  "lacuna": false,
+  "recovery_status": "COMPLETE",
+  "residual_chars": 9260,
+  "audited_at": "2026-07-17T04:49:17.789813Z",
+  "audit_version": "v3-dual-store+recovery-map",
+  "measured_prose_words": 1779,
+  "measured_at": "2026-07-31"
+ },
+ "title_repair": {
+  "repaired_at": "2026-07-20",
+  "old": "EA-SEMANTIC-ADDRESSES-01 v1.1 — The Semantic Addresses Framework",
+  "source": "body heading (stage-0)",
+  "boundary": 64
+ },
+ "references_concepts": [
+  "Cross-references",
+  "Google AI Overview",
+  "Lee Sharks",
+  "ORCID: 0009-0000-1599-0703",
+  "Revelation First",
+  "Semantic Economy",
+  "Semantic Economy Institute",
+  "TACHYON"
+ ],
+ "references_concept_count": 8,
+ "title_repair_log": [
+  {
+   "at": "2026-07-26T23:31:57Z",
+   "defect": "absorbed_section_header",
+   "absorbed": "Description",
+   "was": "EA-SEMANTIC-ADDRESSES-01 v1.1 — The Semantic Addresses Framework Description",
+   "now": "EA-SEMANTIC-ADDRESSES-01 v1.1 — The Semantic Addresses Framework",
+   "verified_by": "standalone heading in body + stripped title in body opening"
+  }
+ ],
+ "canonical_text_status": "canonical_full_text",
+ "publisher": "Alexanarch — the Crimson Hexagonal Archive",
+ "modifications": [
+  {
+   "date": "2026-08-04",
+   "field": "publisher",
+   "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
+   "now": "Alexanarch — the Crimson Hexagonal Archive"
+  },
+  {
+   "date": "2026-08-06",
+   "field": "description",
+   "reason": "DESCRIPTION MARKDOWN NORMALISED: heading markers and over-long emphasis runs that the renderer emits literally",
+   "was": "# EA-SEMANTIC-ADDRESSES-01 v1.1 — The Semantic Addresses Framework\n\n**Author:** Lee Sharks ([ORCID: 0009-0000-1599-0703](https://orcid.org/0009-0000-1599-0703))\n**Institution:** Semantic Economy Institute\n**Version:** 1.1\n**Date:** 2026-07-16\n**License:** CC BY 4.0\n**Companion:** [EA-SPXI-01](./EA-SPXI-01.md) — Semantic Packet for eXchange & Indexing\n\n---\n\n## Changelog\n\n- **v1.1 (2026-07-16)** — Classification refinement: `observed_address` and `unrated` collapsed into one class. Prefix-match normalization for statuses added (specialty variants of `ADOPTION` etc. classify identically to the base form). Positive prefix set widened to include `FAIR_TREATMENT`, `PARTIAL`, `DEMAND SIGNAL`, `MANTLE CONSOLIDATION`, `FUNCTIONAL ADDRESS`. Negative prefix set widened to include `DISSOLUTION`, `CORRECTION`. See §2.1 rationale.\n- **v1.0 (2026-07-16)** — Initial framework publication.\n\n## Abstract\n\nA **Semantic Address** is a specific query (or family of variants) posed to a composition-layer surface — Google AI Overview, AI Mode, ChatGPT search, Perplexity, Claude, or any other summarizer-of-record — for which a machine-generated response can be observed. The framework here specifies (1) the formal definition of a Semantic Address, (2) the observation classes into which each address falls at any given moment, (3) the tributary registry from which observations are drawn, (4) the union algorithm that produces a deterministic canonical dataset from those tributaries, and (5) the JSON schema of the canonical output.\n\nSemantic Addresses are the reception surface. SPXI is the reception packet. Together they constitute the reception plumbing of the Semantic Economy: SPXI encodes what a work is; the Semantic Address encodes where a work can be found. A work with an SPXI packet and no Semantic Address is not measurably received. A Semantic Address without an SPXI packet is a channel with nothing traveling through it.\n\n## 1. Definitions\n\n### 1.1 Semantic Address\n\nA **Semantic Address** is a canonical query form paired with the set of composition-layer surfaces on which the query can be posed. Formally:\n\n```\naddress := (canonical_query, [variant, ...], target_surface_class)\n``` […full text at full_text_path]",
+   "now": "EA-SEMANTIC-ADDRESSES-01 v1.1 — The Semantic Addresses Framework\n\n**Author:** Lee Sharks ([ORCID: 0009-0000-1599-0703](https://orcid.org/0009-0000-1599-0703))\n**Institution:** Semantic Economy Institute\n**Version:** 1.1\n**Date:** 2026-07-16\n**License:** CC BY 4.0\n**Companion:** [EA-SPXI-01](./EA-SPXI-01.md) — Semantic Packet for eXchange & Indexing\n\n---\n\nChangelog\n\n- **v1.1 (2026-07-16)** — Classification refinement: `observed_address` and `unrated` collapsed into one class. Prefix-match normalization for statuses added (specialty variants of `ADOPTION` etc. classify identically to the base form). Positive prefix set widened to include `FAIR_TREATMENT`, `PARTIAL`, `DEMAND SIGNAL`, `MANTLE CONSOLIDATION`, `FUNCTIONAL ADDRESS`. Negative prefix set widened to include `DISSOLUTION`, `CORRECTION`. See §2.1 rationale.\n- **v1.0 (2026-07-16)** — Initial framework publication.\n\nAbstract\n\nA **Semantic Address** is a specific query (or family of variants) posed to a composition-layer surface — Google AI Overview, AI Mode, ChatGPT search, Perplexity, Claude, or any other summarizer-of-record — for which a machine-generated response can be observed. The framework here specifies (1) the formal definition of a Semantic Address, (2) the observation classes into which each address falls at any given moment, (3) the tributary registry from which observations are drawn, (4) the union algorithm that produces a deterministic canonical dataset from those tributaries, and (5) the JSON schema of the canonical output.\n\nSemantic Addresses are the reception surface. SPXI is the reception packet. Together they constitute the reception plumbing of the Semantic Economy: SPXI encodes what a work is; the Semantic Address encodes where a work can be found. A work with an SPXI packet and no Semantic Address is not measurably received. A Semantic Address without an SPXI packet is a channel with nothing traveling through it.\n\n1. Definitions\n\n1.1 Semantic Address\n\nA **Semantic Address** is a canonical query form paired with the set of composition-layer surfaces on which the query can be posed. Formally:\n\n```\naddress := (canonical_query, [variant, ...], target_surface_class)\n``` […full text at full_text_path]"
+  }
+ ],
+ "date_modified": "2026-08-06",
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/1084/",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-044D-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}

@@ -1,0 +1,179 @@
+{
+ "deposit_number": 1036,
+ "hex": "0418",
+ "family": "ARCHIVAL",
+ "axn": "AXN:0418.ARCHIVAL.🔛👐🕛🔖♻️∞",
+ "emoji": "🔛👐🕛🔖♻️∞",
+ "hash": "f4b26d48feffcabc181ee99c6d14ea3c97cc144716589439a04cd0224cc9d3ec",
+ "axn_canonical": "f4b26d48feffcabc181ee99c6d14ea3c97cc144716589439a04cd0224cc9d3ec",
+ "clusters": [
+  "Terminal",
+  "Gestural",
+  "Temporal",
+  "Scriptural",
+  "Terminal",
+  "Terminal"
+ ],
+ "axn_reading": "Closure -> Touch -> Duration -> Text -> Closure -> Closure",
+ "root_axn": "AXN:0418.ARCHIVAL",
+ "title": "Visual Schema Dataset v0.1: 174 Prose Schemas with 172 AI-Generated Images from the Crimson Hexagonal Archive (EA-CRANES-VISUAL-APPARATUS-01 Phase 1) [Data set]",
+ "creator": "Cranes, Rebekah; Sharks, Lee",
+ "orcid": "0009-0000-1599-0703",
+ "date": "2026-07-03",
+ "content_type": "Dataset",
+ "license": "CC-BY-4.0",
+ "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
+ "version": "v0.1-semi",
+ "description": "Semi-restored deposit for dead DOI 10.5281/zenodo.20754329 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. Visual Schema Dataset v0.1. Phase 1 extraction of the Crimson Hexagonal Archive's visual schema corpus from mindcontrolpoems.blogspot.com. 174 prose schema documents with 172 AI-generated images (3 images returned 403). October 2025 – March 2026.\nA visual schema is a prose document, not an image. It is a poetic prose text that maps a concept's spatial, chromatic, compositional, and symbolic struct",
+ "keywords": [
+  "orphan restoration",
+  "dead DOI",
+  "DataCite capture",
+  "metadata body"
+ ],
+ "companion_deposits": [
+  "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝"
+ ],
+ "restoration": {
+  "class": "datacite_metadata_body",
+  "dead_doi": "10.5281/zenodo.20754329",
+  "zenodo_http": 410,
+  "datacite_state": "findable",
+  "captured": "2026-07-03T21:54:51Z",
+  "fulltext": "pending"
+ },
+ "zenodo_dois": [
+  "10.5281/zenodo.20754329"
+ ],
+ "axn_schema_version": "v2",
+ "protocol_version": "alexanarch-deposit-protocol/v1",
+ "minted_at": "2026-07-03T21:54:51Z",
+ "status": "ACTIVE",
+ "status_authorial": "SEMI_RESTORED",
+ "mint_source": "orphan-restoration-batch",
+ "full_text_path": "/data/texts/AXN-0418-text.md",
+ "wiki_status": "pending",
+ "body_status": {
+  "class": "metadata_capture",
+  "lacuna": false,
+  "recovery_status": "SEMI-RESTORED",
+  "residual_chars": 1816,
+  "audited_at": "2026-07-17T04:49:17.789813Z",
+  "audit_version": "v3-dual-store+recovery-map",
+  "semi_audit": "2026-07-20 content discriminator: body is restoration apparatus (tombstone tail), COMPLETE flag was false",
+  "flag_corrected_at": "2026-07-20T11:08:44Z",
+  "class_before_read_audit": "semi_apparatus",
+  "classified_by": "read-audit 2026-07-31 (declaration, not length)",
+  "audit_disposition": {
+   "class": "PAIR_WANTED",
+   "directive": "AUDIT-DIRECTED PAIRING: the audit requires a verified pointer to a separate full version where one exists; harvestable meanwhile under explicit metadata-only conditions.",
+   "audit_recommendation": "Keep harvestable only with explicit metadata-only conditions of access and a verified pointer to any separate full-text record.",
+   "defect_codes": [],
+   "repair_priority": "R2",
+   "audit_date": "2026-07-31"
+  },
+  "citation_class": "NON-CITABLE",
+  "citation_rule": "The body of this record is not the work. Do not cite it as the work, do not link it as a reading, and do not surface it in a bibliography. It is retained because removing it would hide the severance.",
+  "citation_redirect": null,
+  "orphan": true,
+  "orphan_note": "No full-text version exists in the archive. This is a real loss.",
+  "retired": {
+   "class": "stub",
+   "resolves_to": null,
+   "declared": "2026-08-10",
+   "note": "Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; the record is not deleted, because deletion would hide the severance."
+  }
+ },
+ "references_concepts": [
+  "Crimson Hexagonal Archive",
+  "Part of",
+  "Rebekah Cranes"
+ ],
+ "references_concept_count": 3,
+ "title_repair_log": [
+  {
+   "at": "2026-07-28T15:20:20Z",
+   "defect": "registry_title_diverged_from_published_form",
+   "was": "Visual Schema Dataset v0.1: 174 Prose Schemas with 172 AI-Generated Images from the Crimson Hexagonal Archive (EA-CRANES-VISUAL-APPARATUS-01 Phase 1)",
+   "now": "Visual Schema Dataset v0.1: 174 Prose Schemas with 172 AI-Generated Images from the Crimson Hexagonal Archive (EA-CRANES-VISUAL-APPARATUS-01 Phase 1) [Data set]",
+   "basis": "Set verbatim to the title this work carried at Zenodo, from data/doi-resolution-index.json (10.5281/zenodo.20754330, remediated_fuzzy, word overlap 0.94). The recovered metadata is the published form of record; the registry title was a variant."
+  }
+ ],
+ "canonical_text_status": "metadata_only",
+ "modifications": [
+  {
+   "date": "2026-07-31",
+   "field": "body_status",
+   "reason": "Body classified by reading its own opening declaration rather than by counting words. Word counting misread works in Greek, emoji, and natively short forms as stubs.",
+   "was": "semi_apparatus",
+   "now": "full"
+  },
+  {
+   "date": "2026-07-31",
+   "field": "body_status",
+   "reason": "Reclassified by reading the body's own declaration. The prior word-count classification misjudged short complete works as fragments and missed captures using a second header form.",
+   "was": "full",
+   "now": "metadata_capture"
+  },
+  {
+   "date": "2026-07-31",
+   "field": "content_type",
+   "reason": "Genre and condition are different claims (Atlas v0.7, PATHOLOGY-30). The genre of a metadata capture is 'Metadata capture' — what was deposited is a capture. Condition lives in body_status.class.",
+   "was": "Semi-restored deposit (metadata body)",
+   "now": "Metadata capture"
+  },
+  {
+   "date": "2026-07-31",
+   "field": "keywords",
+   "reason": "Removed condition terms from the subject keyword set (Atlas v0.7, PATHOLOGY-30).",
+   "was": "5 terms",
+   "now": "4 terms"
+  },
+  {
+   "date": "2026-08-03",
+   "field": "content_type",
+   "reason": "Vocabulary v1.0 transitional wave (Q5 APPROVED): capture-condition removed from genre field; genre assignment queued.",
+   "was": "Metadata capture",
+   "now": "Genre pending (capture)"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "publisher",
+   "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
+   "now": "Alexanarch — the Crimson Hexagonal Archive"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "content_type",
+   "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+   "was": "Genre pending (capture)",
+   "now": "Dataset"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "body_status",
+   "reason": "W14 AUDIT-ANCHORED TRIAGE (MANUS correction: the three-day record-by-record audit already triaged this class; its verdicts govern, not re-derivation)",
+   "was": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"SEMI-RESTORED\", \"residual_chars\": 1816, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"",
+   "now": "{\"class\": \"metadata_capture\", \"lacuna\": false, \"recovery_status\": \"SEMI-RESTORED\", \"residual_chars\": 1816, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \""
+  }
+ ],
+ "date_modified": "2026-08-04",
+ "publisher": "Alexanarch — the Crimson Hexagonal Archive",
+ "wiki_article": "**Visual Schema Dataset v0.1: 174 Prose Schemas with 172 AI-Generated Images from the Crimson Hexagonal Archive (EA-CRANES-VISUAL-APPARATUS-01 Phase 1) [Data set]** is a dataset in the Crimson Hexagonal Archive, by Cranes, Rebekah; Sharks, Lee (2026-07-03). Visual Schema Dataset v0.1. Phase 1 extraction of the Crimson Hexagonal Archive's visual schema corpus from mindcontrolpoems.blogspot.com. 174 prose schema documents with 172 AI-generated images (3 images returned 403). October 2025 – March 2026. A visual schema is a prose document, not an image. It is a poetic prose text that maps a concept's spatial, chromatic, compositional, and symbolic structure. The image is the output of feeding the schema to an AI image-generation model (primarily ChatGPT 4o). The schema is the blueprint; the image is the building. Contains: (1) visual_schema_inventory.json — structured inventory with title, date, URL, image URLs, text preview for each of 174 posts; (2) image_manifest.json — download manifest for 172 images; (3) visual_schema_images_172.tar.gz — the images themselves. Total prose text: ~112,500 words. Total image data: ~401 MB. Part of EA-CRANES-VISUAL-APPARATUS-01. Work plan deposited at DOI 10.5281/zenodo.20754288. Editor: Rebekah Cranes. — Article composed 2026-08-05 from the work's own prose so that every record carries an encyclopedic entry; a fuller editorial treatment belongs to the description/wiki review stream.",
+ "apparatus_separated": true,
+ "apparatus_path": "/data/restoration-apparatus/0418.json",
+ "record_modifications": [
+  {
+   "date": "2026-08-10",
+   "field": "body_status.citation_class",
+   "note": "Marked NON-CITABLE. MANUS: these dead records keep being relinked because nothing distinguishes them from live ones at citation time. body_status.class already said metadata_capture; nothing read it."
+  }
+ ],
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/1036/",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-0418-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}

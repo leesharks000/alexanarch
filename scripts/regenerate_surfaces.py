@@ -76,7 +76,7 @@ except ImportError:
     _OVERWRITE_GUARD_AVAILABLE = False
 
 HOMEPAGE_RECENT_N = 12  # must equal the JS slice in index.html
-ALL_SURFACES = ["state", "browse", "feed", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index", "search-index", "search-static", "capture-gallery", "dynamic-counts", "semantic-addresses"]
+ALL_SURFACES = ["state", "browse", "feed", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index", "search-index", "search-static", "capture-gallery", "record-api", "dynamic-counts", "semantic-addresses"]
 
 
 def _receipt(path, reason: str = "regenerate_surfaces write"):
@@ -1678,6 +1678,7 @@ SURFACE_FNS = {
     "search-index": regenerate_search_index,
     "search-static": regenerate_search_static,
     "capture-gallery": None,  # populated below
+    "record-api": None,  # populated below
     "dynamic-counts": None,  # populated below (forward-reference to preserve declaration order)
 }
 
@@ -1854,6 +1855,23 @@ def regenerate_capture_gallery(reg, dry_run=False):
         raise RuntimeError("build_capture_gallery.py failed — the page is now STALE, not merely unbuilt")
 
 
+def regenerate_record_api(reg, dry_run=False):
+    """Emit api/records/<n>.json for every deposit (delegates to build_record_api).
+
+    REGISTERED 2026-08-15, same lesson as capture-gallery the same morning: a
+    build step outside the sweep is a build step that will be forgotten."""
+    if dry_run:
+        print("Record API: (dry run) would run scripts/build_record_api.py")
+        return
+    r = subprocess.run([sys.executable, str(REPO_ROOT / "scripts/build_record_api.py")],
+                       capture_output=True, text=True, cwd=str(REPO_ROOT))
+    sys.stdout.write(r.stdout)
+    if r.returncode != 0:
+        sys.stdout.write(r.stderr)
+        raise RuntimeError("build_record_api.py failed — the API is now STALE, not merely unbuilt")
+
+
+SURFACE_FNS["record-api"] = regenerate_record_api
 SURFACE_FNS["capture-gallery"] = regenerate_capture_gallery
 SURFACE_FNS["dynamic-counts"] = regenerate_dynamic_counts
 

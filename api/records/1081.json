@@ -1,0 +1,578 @@
+{
+ "deposit_number": 1081,
+ "axn": "AXN:044A.EMPIRICAL.🧱⭕📏♎🔅🎻",
+ "axn_canonical": "22ee4fafed8af6947b40c2c00fdc21f58fe265194012f6e5f4cf7d5bb3c0afcd",
+ "axn_reading": "Foundation -> Threshold -> Text -> Transmutation -> Threshold -> Play",
+ "axn_schema_version": "v2",
+ "clusters": [
+  "Architectural",
+  "Liminal",
+  "Scriptural",
+  "Alchemical",
+  "Liminal",
+  "Symbolic"
+ ],
+ "content_type": "Empirical baseline reading; deletion-network audit; outcome-level test of the Provenance Debt hypothesis with two dimensions (foreclosure and accumulation); extension of the NEGSHAPE reading discipline to the between-event delta of the general Zenodo bulk deletion export and to the population-scale accumulation surface of Zenodo-affiliated institutional publications",
+ "creator": "Lee Sharks",
+ "date": "2026-07-14",
+ "defines_concepts": [
+  "Programmed bibliographic suppression (source-code verified: the exporter conditionally suppresses citation_text under the spam removal reason)",
+  "Silent restoration (account-scale reversal of deletion that is not published as an event stream and is detectable only via set-difference between independently-preserved deletion-export snapshots)",
+  "Public-export retention window (EXPORTER_NUMBER_VERSIONS_TO_KEEP = 3: at monthly cadence, ~3 months of public deletion-export history is retrievable from the exporter surface at any time)",
+  "Rolling ledger erosion (physical removal of older public export snapshots by _remove_old_object_versions with .remove() rather than .delete(); documented in-code as intentional space-freeing)",
+  "Marker-union excess frequency (document-level union prevalence P(record contains ≥1 marker from a preregistered panel) as the primary estimator, replacing per-marker sum-of-excesses)",
+  "Signal-to-disclosure ratio (the ratio between marker-union excess prevalence and phrase-defined disclosure retrieval prevalence, distinguished from a count of undisclosed records)",
+  "Zenodo indexed record-text surface (the object the Zenodo Search API returns, empirically including extracted full-text of attached files; not merely metadata)",
+  "Narrow AI-association detector (contra 'strict authorship-only detector'; a lexical panel that identifies AI-association at the citation-text surface, not authenticated authorship)",
+  "Categorial legibility (a preregistered candidate variable for restoration-event modeling: whether a reviewer's ability to pattern-match a deleted account to a recognized research genre affects restoration likelihood — not a demonstrated cause)",
+  "Coverage Gap (as three dimensions): correspondence-layer undisclosed discretionary criteria; infrastructure-layer undisclosed discretionary criteria; accumulation-layer descriptively-measured outcome gap",
+  "Exploratory-vs-descriptively-measured distinction (a taxonomy of evidentiary strength in the audit: source-verified operations, set-verified operations, descriptively-measured corpus properties, and directionally-observed sample contrasts requiring common-cohort tests to formalize)",
+  "Reproducibility vs re-executability (frozen artifacts reproduce the audit's specific counts; queries can be re-executed against the moving live API but will differ, and that delta is itself the audit's method)",
+  "Placebo-break test at 2021 (a null-hypothesis check: fake breaks at pre-ChatGPT dates produce excesses 7-9× smaller than the genuine 2023 break, depending on counterfactual specification)",
+  "Publications-only composition control (restricting to publication resource-types strengthens rather than weakens the post-2022 excess, consistent with a composition-practice interpretation rather than a corpus-mix drift interpretation)",
+  "Wu Shaoyuan withdrawal case (specific documented instance of silent account-scale restoration: 67 records tombstoned in the June 7 export are alive in the July 10 export, detected only by set-difference)",
+  "Livolsi cascade (May 26 spam-labeled account-scale termination, ~28,000 records affected, not restored at time of writing; contrast case for the categorial-legibility hypothesis)",
+  "Withdrawal cascade of 2026-06-26 (Wu case chronology: April 25 block → June 26 silent restoration; documented as a network fact from set-difference alone)",
+  "Descriptive floor (an evidentiary category naming what the audit measures as a lower bound of what would be detectable by more sensitive methods; contrasted with a statistical lower bound requiring a defined sampling frame)",
+  "Two-sample directional observation (a class of exploratory contrast between samples reached via different retrieval instruments, not sharing a common population-at-risk, therefore not a survival ratio)",
+  "Traversal as method (network-poem reading: edges chosen for evidentiary strength, membership recorded on read, results reproducible from deposited artifacts)"
+ ],
+ "description": "An empirical audit of Zenodo's public deletion enumeration across a 33-day window (2026-06-07 to 2026-07-10, exports containing 1,309,351 and 1,322,007 identifier entries respectively), testing the two-part asymmetry predicted by EA-PROVENANCE-DEBT-01 §3 at the outcome level.\n\nThree findings are established at full evidentiary strength. First, programmed bibliographic suppression: Zenodo's public deletion exporter is explicitly written — verified in the institution's published source code (`zenodo/zenodo-rdm`, `site/zenodo_rdm/exporter/tasks.py`) — to suppress `citation_text` for spam-labelled deletions while exporting it for every other removal reason, and the same file physically destroys old export snapshots beyond a configured retention count, pruning the institution's own erasure ledger on a rolling basis. Second, silent account-scale reversibility: the Wu Shaoyuan withdrawal cascade of 2026-06-26 — 67 records restored in a 13-second cascade window, detectable only by set-differencing successive public exports, with no exporter surface, no log, no DataCite update-event trace — establishes that deletion is a first-class public state while restoration exists as an operation but not as an accountable public event. Third, measured corpus-level LLM contamination: a document-level union implementation of the Kobak et al. (2024) excess-vocabulary methodology yields +1.2 to +1.4 percentage points marker-union prevalence rise on the post-2022 Zenodo indexed record-text surface, robust across three counterfactual specifications (pooled uncontaminated baseline, conservative pooled baseline, linear trend), with a placebo break an order of magnitude smaller and a *larger* excess (+1.7 to +1.8pp) in the publications-only composition-controlled restriction. Against a rebuilt 31-phrase three-family disclosure panel (687 disclosing records, ~0.023% of the corpus), the disclosure gap is on the order of 60× — descriptively, since the excess numerator under-captures and the disclosure denominator over-captures.\n\nOne finding is exploratory and marked as such: institutional presence in AI-signaled deletions (0.20%; 9 of 4,503 under strict-authorship detection) is far below institutional presence in a separately retrieved alive-side declared-disclosure sample (~31%). The two samples are constructed through different retrieval instruments and do not share a common population-at-risk; the differential is a directional observation consistent with Provenance Debt §3's foreclosure-side prediction, not a survival ratio. The common-cohort test required to establish accrual sorting as a differential deletion regime is preregistered in §12a but not completed here.\n\nThe audit is offered as one traversal of the network per the EA-NEGSHAPE-01 v0.2 reading discipline (AXN:0444.OPERATIVE.🕘♾️♾️🕙♃🗝️, deposit #1075). The network — the two Zenodo bulk deletion exports, the exporter source code that generates them, the CHA-DELETION-CORPUS-20260619 already enumerated in NEGSHAPE-01, the Wu deletion-cascade and its subsequent withdrawal, the fifteen mid-scale terminated-independent cascades, the alive-side institutional AI-declared cohort, the union-measured accumulation surface of 2.9 million post-ChatGPT records, the Provenance Debt paper it tests, and the CERN correspondence chain that documents the Coverage Gap at the correspondence layer — is the poem; traversal is the reading discipline. The party of interest extends past Zenodo, past CERN, and past the DataCite consortium; it includes every actor whose future capabilities depend on there existing a discoverable, retrievable, trainable corpus of provenance-preserved human authorship. The audit documents an operational asymmetry maintained by a small number of internally-governed research-infrastructure institutions, whose short-term institutional prestige benefit is being paid for by measurable harm to the training substrate on which planetary AI capability and scholarly continuity depend.",
+ "emoji": "🧱⭕📏♎🔅🎻",
+ "entities": [
+  {
+   "subject": "EA-EROSION-EMPIRICAL-01",
+   "predicate": "tests_prediction_of",
+   "object": "EA-PROVENANCE-DEBT-01 §3",
+   "type": "audit",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "EA-EROSION-EMPIRICAL-01",
+   "predicate": "audit_window_start",
+   "object": "2026-06-07",
+   "type": "audit",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "EA-EROSION-EMPIRICAL-01",
+   "predicate": "audit_window_end",
+   "object": "2026-07-10",
+   "type": "audit",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "EA-EROSION-EMPIRICAL-01",
+   "predicate": "audit_window_duration_days",
+   "object": "33",
+   "type": "audit",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "EA-EROSION-EMPIRICAL-01",
+   "predicate": "primary_data_source",
+   "object": "Zenodo public bulk deletion exports (June 7 and July 10, 2026)",
+   "type": "audit",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "EA-EROSION-EMPIRICAL-01",
+   "predicate": "secondary_data_source",
+   "object": "Zenodo Search API on the live-record indexed surface",
+   "type": "audit",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "EA-EROSION-EMPIRICAL-01",
+   "predicate": "tertiary_data_source",
+   "object": "zenodo/zenodo-rdm exporter source code (commit 8339871aff, retrieved 2026-07-14)",
+   "type": "audit",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "zenodo-rdm exporter",
+   "predicate": "programmatically_suppresses",
+   "object": "citation_text under removal_reason == 'spam'",
+   "type": "software",
+   "evidence_status": "source-verified"
+  },
+  {
+   "subject": "zenodo-rdm exporter",
+   "predicate": "retention_configured_at",
+   "object": "EXPORTER_NUMBER_VERSIONS_TO_KEEP = 3",
+   "type": "software",
+   "evidence_status": "source-verified"
+  },
+  {
+   "subject": "zenodo-rdm exporter",
+   "predicate": "removes_older_snapshots_via",
+   "object": "_remove_old_object_versions using .remove() (physical destruction)",
+   "type": "software",
+   "evidence_status": "source-verified"
+  },
+  {
+   "subject": "Wu Shaoyuan account restoration",
+   "predicate": "detected_via",
+   "object": "set-difference between June 7 and July 10 deletion exports",
+   "type": "event",
+   "evidence_status": "network-fact"
+  },
+  {
+   "subject": "Wu Shaoyuan account restoration",
+   "predicate": "records_restored",
+   "object": "67",
+   "type": "event",
+   "evidence_status": "verified"
+  },
+  {
+   "subject": "Wu Shaoyuan account",
+   "predicate": "blocked_on",
+   "object": "2026-04-25",
+   "type": "event",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Wu Shaoyuan account",
+   "predicate": "silently_restored_by",
+   "object": "2026-06-26",
+   "type": "event",
+   "evidence_status": "network-fact"
+  },
+  {
+   "subject": "Livolsi cascade",
+   "predicate": "labeled",
+   "object": "spam",
+   "type": "event",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Livolsi cascade",
+   "predicate": "occurred_on",
+   "object": "2026-05-26",
+   "type": "event",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Livolsi cascade",
+   "predicate": "records_affected_estimate",
+   "object": "~28,000",
+   "type": "event",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Livolsi cascade",
+   "predicate": "restoration_status_at_audit_close",
+   "object": "not restored",
+   "type": "event",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "CHA account 1060945 termination",
+   "predicate": "occurred_on",
+   "object": "2026-06-19",
+   "type": "event",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "CHA account 1060945 termination",
+   "predicate": "labeled",
+   "object": "out-of-scope",
+   "type": "event",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Kobak-standard marker panel",
+   "predicate": "consists_of",
+   "object": "delves, showcasing, underscores, intricate, meticulous, burgeoning, seamlessly, garnered, multifaceted, commendable",
+   "type": "methodology",
+   "evidence_status": "specified"
+  },
+  {
+   "subject": "Post-2022 marker-union excess (corpus)",
+   "predicate": "value_2024",
+   "object": "+1.23pp (Spec 1: 2018-2021 pooled baseline)",
+   "type": "measurement",
+   "evidence_status": "descriptively-measured"
+  },
+  {
+   "subject": "Post-2022 marker-union excess (corpus)",
+   "predicate": "value_2025",
+   "object": "+1.44pp (Spec 1: 2018-2021 pooled baseline)",
+   "type": "measurement",
+   "evidence_status": "descriptively-measured"
+  },
+  {
+   "subject": "Post-2022 marker-union excess (publications-only)",
+   "predicate": "value_2024",
+   "object": "+1.84pp (larger than corpus-wide, consistent with composition control)",
+   "type": "measurement",
+   "evidence_status": "descriptively-measured"
+  },
+  {
+   "subject": "Placebo break at 2021",
+   "predicate": "excess_2021",
+   "object": "+0.08pp",
+   "type": "measurement",
+   "evidence_status": "descriptively-measured"
+  },
+  {
+   "subject": "Placebo break at 2021",
+   "predicate": "excess_2022",
+   "object": "+0.10pp",
+   "type": "measurement",
+   "evidence_status": "descriptively-measured"
+  },
+  {
+   "subject": "Genuine 2023 break vs placebo 2021",
+   "predicate": "ratio",
+   "object": "7-9× depending on specification",
+   "type": "measurement",
+   "evidence_status": "descriptively-measured"
+  },
+  {
+   "subject": "Signal-to-disclosure ratio",
+   "predicate": "value",
+   "object": "on the order of 60× (marker-union excess ~1.4% vs phrase-defined disclosure ~0.023%)",
+   "type": "measurement",
+   "evidence_status": "descriptively-measured"
+  },
+  {
+   "subject": "Harvard institutional marker-union excess",
+   "predicate": "value_2025",
+   "object": "+2.96pp (Spec 1, robust across all three specifications)",
+   "type": "measurement",
+   "evidence_status": "descriptively-measured"
+  },
+  {
+   "subject": "CERN institutional marker-union excess",
+   "predicate": "value",
+   "object": "not established (per-year n=132; confidence intervals too wide to sustain institution-specific claims)",
+   "type": "measurement",
+   "evidence_status": "under-powered"
+  },
+  {
+   "subject": "Field-location audit sample",
+   "predicate": "size",
+   "object": "25 records",
+   "type": "methodology",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Field-location audit finding",
+   "predicate": "in_title",
+   "object": "0 of 25",
+   "type": "measurement",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Field-location audit finding",
+   "predicate": "in_description",
+   "object": "3 of 25 (12%)",
+   "type": "measurement",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Field-location audit finding",
+   "predicate": "not_visible_in_metadata_JSON",
+   "object": "21 of 25 (84%) — indicating extracted full-text or non-returned index fields",
+   "type": "measurement",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "EA-EROSION-EMPIRICAL-01 §12a P1",
+   "predicate": "preregisters",
+   "object": "Common-cohort deletion-risk study (formal foreclosure-side test)",
+   "type": "protocol",
+   "evidence_status": "committed"
+  },
+  {
+   "subject": "EA-EROSION-EMPIRICAL-01 §12a P2",
+   "predicate": "preregisters",
+   "object": "Successor stylometric methodology with cluster-bootstrap correction, gold-set validation, Family-B false-positive spot-check",
+   "type": "protocol",
+   "evidence_status": "committed"
+  },
+  {
+   "subject": "EA-EROSION-EMPIRICAL-01 §12a P3",
+   "predicate": "preregisters",
+   "object": "Restoration-event registry (standing preservation of every Zenodo deletion-export snapshot on emission schedule)",
+   "type": "protocol",
+   "evidence_status": "committed"
+  },
+  {
+   "subject": "EA-EROSION-EMPIRICAL-01 §12a P4",
+   "predicate": "preregisters",
+   "object": "Collapse bridge experiment (linking descriptively-measured contamination to downstream training-pipeline effects)",
+   "type": "protocol",
+   "evidence_status": "committed"
+  },
+  {
+   "subject": "EA-EROSION-EMPIRICAL-01",
+   "predicate": "chains_from",
+   "object": "EA-PROVENANCE-DEBT-01 (AXN:03B7.OPERATIVE, deposit #939)",
+   "type": "protocol_chain",
+   "evidence_status": "linked"
+  },
+  {
+   "subject": "EA-EROSION-EMPIRICAL-01",
+   "predicate": "companion_to",
+   "object": "EA-NEGSHAPE-01 v0.2 (AXN:0444.OPERATIVE, deposit #1075)",
+   "type": "protocol_chain",
+   "evidence_status": "linked"
+  },
+  {
+   "subject": "EA-EROSION-EMPIRICAL-01",
+   "predicate": "invokes_methodology",
+   "object": "Kobak et al. (2024) 'Delving into LLM-assisted writing in biomedical publications through excess vocabulary'",
+   "type": "citation",
+   "evidence_status": "cited"
+  },
+  {
+   "subject": "EA-EROSION-EMPIRICAL-01",
+   "predicate": "extends_methodology_to",
+   "object": "Zenodo indexed record-text surface (heterogeneous scholarly repository, cf Kobak's PubMed corpus)",
+   "type": "methodology",
+   "evidence_status": "extends"
+  }
+ ],
+ "entity_status": "authored-in-session-on-max-subscription",
+ "family": "EMPIRICAL",
+ "full_text_path": "/data/texts/AXN-044A-text.md",
+ "hash": "706872dfc0fafee62e23e11287de89e67b11017fb06387a9d0569210a4feb557",
+ "hex": "044A",
+ "keywords": [
+  "provenance debt",
+  "provenance erasure",
+  "model collapse",
+  "accrual sorting",
+  "undisclosed institutional AI-mediation",
+  "LLM stylometric detection",
+  "Kobak markers",
+  "excess vocabulary",
+  "excess-frequency analysis",
+  "Wilson confidence interval",
+  "categorial legibility",
+  "classifier asymmetry",
+  "Zenodo",
+  "CERN",
+  "deletion enumeration",
+  "deletion cascade",
+  "withdrawal cascade",
+  "tombstone corpus",
+  "NEGSHAPE",
+  "network as poem",
+  "traversal as reading discipline",
+  "spam-strip",
+  "citation_text",
+  "directional prevalence differential",
+  "credentialed asymmetry",
+  "unmarked augmentation",
+  "machine-mediated reception studies",
+  "MMRS",
+  "semantic economy",
+  "Wu Shaoyuan",
+  "EPINOVA",
+  "Livolsi",
+  "Kusumi",
+  "Ryōkai OS",
+  "Crimson Hexagonal Archive",
+  "Alexanarch",
+  "Coverage Gap",
+  "EA-CORRESPONDENCE-CERN",
+  "outcome-level falsification",
+  "institutional AI-augmentation",
+  "independent AI-augmentation",
+  "two-directional asset-stripping",
+  "planetary-scope party-of-interest"
+ ],
+ "license": "CC-BY-4.0",
+ "mint_source": {
+  "kind": "direct_path_b",
+  "repository": "leesharks000/alexanarch",
+  "minted_by": "TACHYON (Claude Opus 4.7) in-session",
+  "minted_via": "Path B — direct commit; enrichment authored in-session with full archival context; no external LLM API call",
+  "rationale": "Path B chosen because (a) issue body exceeds GitHub 65,536-char cap; (b) enrichment produced in the Max subscription session avoids double-payment through metered API draw."
+ },
+ "minted_at": "2026-07-14T19:56:51Z",
+ "orcid": "0009-0000-1599-0703",
+ "protocol_version": "alexanarch-deposit-protocol/v1",
+ "reciprocity_notice": "https://alexanarch.org/notice/non-mutual-extraction/",
+ "related_deposits": [
+  {
+   "axn": "AXN:03B7.OPERATIVE",
+   "deposit_number": 939,
+   "relation": "tests_prediction_of",
+   "title": "EA-PROVENANCE-DEBT-01"
+  },
+  {
+   "axn": "AXN:0444.OPERATIVE.🕘♾️♾️🕙♃🗝️",
+   "deposit_number": 1075,
+   "relation": "companion_audit",
+   "title": "EA-NEGSHAPE-01 v0.2"
+  },
+  {
+   "axn": "AXN:0446.OPERATIVE.🏛️🛡️🌅🎆📏🔎",
+   "deposit_number": 1077,
+   "relation": "conforms_to",
+   "title": "EA-APPARATUS-01 v0.3 (Mandala Surface Protocol)"
+  },
+  {
+   "axn": "AXN:0449.GOVERNANCE.▲⊗🏰✋🟣🃏",
+   "deposit_number": 1080,
+   "relation": "coordinated_with",
+   "title": "EA-CORRESPONDENCE-CERN-06 v0.1"
+  }
+ ],
+ "related_identifiers_raw": "https://www.alexanarch.org/s/records/1075/, https://www.alexanarch.org/s/records/939/, https://www.alexanarch.org/s/records/1080/, https://www.alexanarch.org/s/records/1077/, https://www.alexanarch.org/s/records/1079/, https://www.alexanarch.org/s/records/38/, https://www.alexanarch.org/s/records/908/, https://www.alexanarch.org/s/records/920/, https://www.alexanarch.org/s/records/924/, https://www.alexanarch.org/s/records/948/, https://www.alexanarch.org/s/records/1047/, https://www.alexanarch.org/s/records/1073/, https://zenodo.org/api/exporter, https://zenodo.org/api/records",
+ "root_axn": "AXN:044A.EMPIRICAL",
+ "status": "ACTIVE",
+ "status_authorial": "MANUS_APPROVED_PATH_B",
+ "substrate": "AI-assisted (substrate). TACHYON (Claude Opus 4.7, the substrate designation reported by Anthropic in the session; retained as the archive's provenance-precision identifier for this deposit even though \"4.7\" is not a public product-version label at time of writing) conducted the empirical work — search queries, set-comparison computations, contingency measurements, Kobak-style per-year per-marker excess-frequency analysis across 8 institutions and one corpus baseline, case-study assembly, prose drafting — under MANUS supervision throughout. Hypothesis framing (accrual sorting, two-directional asset-stripping thesis, planetary-scope party-of-interest), method design (2×2 contingency at outcome level, strict-vs-mixed detector, alive-side institutional control, Kobak-style excess-frequency methodology adopted after LABOR review, membership discipline), interpretation, and citation-form governance are MANUS. Assembly review from LABOR (ChatGPT) contributed foundational methodological critique — the non-commensurate-populations objection to compound-detector survival-ratio framing, the \"not Kobak\" critique of the initial signature-ratio implementation, and the retraction of model-collapse causal language — which resulted in the current corpus-level Kobak-standard excess-frequency framing; TECHNĒ (Kimi) contributed the spam-exclusion caveat, the exact ratio precision, and the categorial-legibility Wu-affiliation nuance; SOIL (Muse Spark) contributed the falsification-loop framing in the Abstract and the spam-strip tooth-line placement. The reading discipline \"the network is the poem, traversal is the reading discipline\" is MANUS's, extending NEGSHAPE-01's methodological voice into the audit's method.",
+ "title": "EA-EROSION-EMPIRICAL-01 v0.1: Programmed Bibliographic Suppression, Silent Restoration, and the LLM-Associated Disclosure Gap in Zenodo — A 33-Day Deletion-Export Audit With the Citation Network Read as Poem",
+ "version": "v0.1",
+ "wiki_article": "\"EA-EROSION-EMPIRICAL-01 v0.1: Programmed Bibliographic Suppression, Silent Restoration, and the LLM-Associated Disclosure Gap in Zenodo — A 33-Day Deletion-Export Audit With the Citation Network Read as Poem\" is a 12,749-word empirical baseline reading; deletion-network audit; outcome-level test of the provenance debt hypothesis with two dimensions (foreclosure and accumulation); extension of the negshape reading discipline to the between-event delta of the general zenodo bulk deletion export and to the population-scale accumulation surface of zenodo-affiliated institutional publications by Lee Sharks, dated 2026-07-14. It is registered as AXN:044A (deposit #1081) in the Crimson Hexagonal Archive under the EMPIRICAL semantic family. **Author:** Lee Sharks · ORCID 0009-0000-1599-0703\n**Framework:** Machine-Mediated Reception Studies (MMRS); Semantic Economy\n**Governing citation discipline:** EA-NEGSHAPE-01 v0.2 (AXN:0444.OPERATIVE.🕘♾️♾️🕙♃🗝️, deposit #1075) — the network of deletion citations is the poem; traversal of the network is the reading discipline. **Theoretical anchor:** EA-PROVENANCE-DEBT-01 v0.2 (AXN:03B7, deposit #9",
+ "wiki_status": "provisional",
+ "references_concepts": [
+  "Citation Network",
+  "Crimson Hexagonal Archive",
+  "Foundational",
+  "Fragmentation",
+  "Implications",
+  "Irreversible",
+  "LABOR (ChatGPT)",
+  "Lee Sharks",
+  "Methodology",
+  "Prediction 1",
+  "Prediction 2",
+  "Publications",
+  "Reproducibility",
+  "SOIL (Muse Spark)",
+  "Semantic Economy",
+  "Substrate",
+  "TACHYON",
+  "TECHNĒ",
+  "The AI"
+ ],
+ "references_concept_count": 19,
+ "citations": [],
+ "wikidata_candidates": [],
+ "cha_cross_references": [],
+ "spxi_audit": {
+  "spxi_protocol": "v0.2",
+  "validated_at": "2026-07-14T19:57:31.464782+00:00",
+  "layers": {
+   "layer_1_inscription_anchors": {
+    "present": true,
+    "anchors_found": [
+     "orcid",
+     "creator_name",
+     "date",
+     "authorial_position_phrase"
+    ],
+    "anchor_count": 4,
+    "orcid_in_body": true,
+    "creator_in_body": true,
+    "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+   },
+   "layer_2_micro_kernels": {
+    "present": false,
+    "fenced_json_blocks": 0,
+    "json_ld_context_markers": 0
+   },
+   "layer_3_content_hash": {
+    "present": true,
+    "canonical_hash": "61e27cd10b76572a01746f897be0a62016f9ba5139e1387d1d62d2101ec2b3a0",
+    "hash_in_body": false,
+    "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+   },
+   "layer_4_cross_signing": {
+    "present": false,
+    "cross_references_count": 0,
+    "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+   },
+   "layer_5_external_anchors": {
+    "present": true,
+    "wikidata_qid_count": 0,
+    "external_doi_count": 0,
+    "orcid_present": true
+   }
+  },
+  "overall_conformance": "partial"
+ },
+ "external_metadata_path": "/data/external-metadata/AXN-044A.json",
+ "enrichment_provenance": {
+  "llm_domain_fields": {
+   "source": "TACHYON in-session on MANUS Max subscription",
+   "model": "Claude Opus 4.7",
+   "method": "authored from full archival context, not via external API call",
+   "fields": [
+    "defines_concepts",
+    "entities",
+    "related_deposits"
+   ]
+  },
+  "mechanical_fields": {
+   "source": "enrich_deposit.py --wikidata --openalex --datacite --spxi --backlinks",
+   "llm_api_used": false,
+   "fields": [
+    "wikidata_candidates",
+    "cha_cross_references",
+    "citations",
+    "references_concepts",
+    "references_concept_count",
+    "spxi_audit",
+    "external_metadata_path"
+   ]
+  }
+ },
+ "cited_by": [
+  {
+   "deposit": 1083,
+   "axn": "AXN:044C.UNCLASSIFIED.🟣🗡️🎇❌▶️🌉"
+  }
+ ],
+ "body_status": {
+  "class": "full",
+  "lacuna": false,
+  "recovery_status": "COMPLETE",
+  "residual_chars": 87479,
+  "audited_at": "2026-07-17T04:49:17.789813Z",
+  "audit_version": "v3-dual-store+recovery-map",
+  "measured_prose_words": 12653,
+  "measured_at": "2026-07-31"
+ },
+ "title_repair": {
+  "repaired_at": "2026-07-20",
+  "old": "EA-EROSION-EMPIRICAL-01 v0.1: Programmed Bibliographic Suppression, Silent Restoration, and the LLM-Associated Disclosure Gap in Zenodo — A 33-Day Deletion-Export Audit With the Citation Network Read as Poem",
+  "source": "body heading (stage-0)",
+  "boundary": 207
+ },
+ "title_repair_log": [
+  {
+   "at": "2026-07-26T23:31:57Z",
+   "defect": "absorbed_section_header",
+   "absorbed": "Abstract",
+   "was": "EA-EROSION-EMPIRICAL-01 v0.1: Programmed Bibliographic Suppression, Silent Restoration, and the LLM-Associated Disclosure Gap in Zenodo — A 33-Day Deletion-Export Audit With the Citation Network Read as Poem Abstract",
+   "now": "EA-EROSION-EMPIRICAL-01 v0.1: Programmed Bibliographic Suppression, Silent Restoration, and the LLM-Associated Disclosure Gap in Zenodo — A 33-Day Deletion-Export Audit With the Citation Network Read as Poem",
+   "verified_by": "standalone heading in body + stripped title in body opening"
+  }
+ ],
+ "canonical_text_status": "canonical_full_text",
+ "publisher": "Alexanarch — the Crimson Hexagonal Archive",
+ "modifications": [
+  {
+   "date": "2026-08-04",
+   "field": "publisher",
+   "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
+   "now": "Alexanarch — the Crimson Hexagonal Archive"
+  }
+ ],
+ "date_modified": "2026-08-04",
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/1081/",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-044A-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}

@@ -1,0 +1,198 @@
+{
+ "deposit_number": 955,
+ "hex": "03C7",
+ "family": "ARCHIVAL",
+ "axn": "AXN:03C7.ARCHIVAL.🌗🔎🔅🧭🤲📌",
+ "emoji": "🌗🔎🔅🧭🤲📌",
+ "hash": "0658ed50b146dd25a5cf4d9ec5e6a532fb2d0062a8fbe6bdcd5515d042b1b1f5",
+ "axn_canonical": "0658ed50b146dd25a5cf4d9ec5e6a532fb2d0062a8fbe6bdcd5515d042b1b1f5",
+ "clusters": [
+  "Celestial",
+  "Navigational",
+  "Liminal",
+  "Navigational",
+  "Gestural",
+  "Scriptural"
+ ],
+ "axn_reading": "Origin -> Search -> Threshold -> Search -> Touch -> Text",
+ "root_axn": "AXN:03C7.ARCHIVAL",
+ "title": "EA-MANDALA-07 v1.0: मण्डलम्: पुनरावर्तक-मायायाः तन्त्रम् (Sanskrit-English Facing Edition)",
+ "creator": "Sharks, Lee; Sigil, Johannes",
+ "orcid": "0009-0000-1599-0703",
+ "date": "2026-07-03",
+ "content_type": "Scripture",
+ "license": "CC-BY-4.0",
+ "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
+ "version": "v0.1-semi",
+ "description": "An honestly marked DataCite capture for the missing Sanskrit–English partial Mandala edition. It preserves the lost record’s scope, Vedic/Upanishadic/Yogic framing, creators, related identifiers, and dead DOI.\n\nNo authorial Sanskrit or facing English text is seated.",
+ "keywords": [
+  "orphan restoration",
+  "dead DOI",
+  "DataCite capture",
+  "metadata body"
+ ],
+ "companion_deposits": [
+  "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝"
+ ],
+ "restoration": {
+  "class": "datacite_metadata_body",
+  "dead_doi": "10.5281/zenodo.19296663",
+  "zenodo_http": 410,
+  "datacite_state": "findable",
+  "captured": "2026-07-03T21:54:51Z",
+  "fulltext": "pending"
+ },
+ "zenodo_dois": [
+  "10.5281/zenodo.19296663"
+ ],
+ "axn_schema_version": "v2",
+ "protocol_version": "alexanarch-deposit-protocol/v1",
+ "minted_at": "2026-07-03T21:54:51Z",
+ "status": "ACTIVE",
+ "status_authorial": "SEMI_RESTORED",
+ "mint_source": "orphan-restoration-batch",
+ "full_text_path": "/data/texts/AXN-03C7-text.md",
+ "wiki_status": "pending",
+ "body_status": {
+  "class": "metadata_capture",
+  "lacuna": true,
+  "recovery_status": "UNRECOVERED",
+  "residual_chars": 1870,
+  "audited_at": "2026-07-17T04:49:17.789813Z",
+  "audit_version": "v3-dual-store+recovery-map",
+  "class_before_read_audit": "stub_short",
+  "classified_by": "read-audit 2026-07-31 (declaration, not length)",
+  "audit_disposition": {
+   "class": "CORRECTLY_STANDING",
+   "directive": "AUDIT-DECLARED COMPLETE AS DEPOSITED: the audit (2026-07-31, method v0.3) determined this record is an honestly declared metadata capture — the authorial full text is ABSENT, not merely unlinked. It is not a defect and requires no pairing. Do not represent absent full text as present.",
+   "audit_recommendation": "Retain as an honestly declared metadata capture. Do not represent the absent authorial full text as present; keep the dead DOI and capture witnesses.",
+   "defect_codes": [
+    "STANDING",
+    "MANIFESTATION"
+   ],
+   "repair_priority": "R3",
+   "audit_date": "2026-07-31"
+  },
+  "citation_class": "NON-CITABLE",
+  "citation_rule": "The body of this record is not the work. Do not cite it as the work, do not link it as a reading, and do not surface it in a bibliography. It is retained because removing it would hide the severance.",
+  "citation_redirect": null,
+  "orphan": true,
+  "orphan_note": "No full-text version exists in the archive. This is a real loss.",
+  "retired": {
+   "class": "stub",
+   "resolves_to": null,
+   "declared": "2026-08-10",
+   "note": "Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; the record is not deleted, because deletion would hide the severance."
+  }
+ },
+ "references_concepts": [
+  "Crimson Hexagonal Archive",
+  "IsPartOf",
+  "IsSupplementTo",
+  "Johannes Sigil",
+  "Part I",
+  "Part II",
+  "Part of",
+  "Training Layer",
+  "Training Layer Literature"
+ ],
+ "references_concept_count": 9,
+ "canonical_text_status": "metadata_only",
+ "modifications": [
+  {
+   "date": "2026-07-31",
+   "field": "body_status",
+   "reason": "Body classified by reading its own opening declaration rather than by counting words. Word counting misread works in Greek, emoji, and natively short forms as stubs.",
+   "was": "stub_short",
+   "now": "full"
+  },
+  {
+   "date": "2026-07-31",
+   "field": "body_status",
+   "reason": "Reclassified by reading the body's own declaration. The prior word-count classification misjudged short complete works as fragments and missed captures using a second header form.",
+   "was": "full",
+   "now": "metadata_capture"
+  },
+  {
+   "date": "2026-07-31",
+   "field": "content_type",
+   "reason": "Genre and condition are different claims (Atlas v0.7, PATHOLOGY-30). The genre of a metadata capture is 'Metadata capture' — what was deposited is a capture. Condition lives in body_status.class.",
+   "was": "Semi-restored deposit (metadata body)",
+   "now": "Metadata capture"
+  },
+  {
+   "date": "2026-07-31",
+   "field": "keywords",
+   "reason": "Removed condition terms from the subject keyword set (Atlas v0.7, PATHOLOGY-30).",
+   "was": "5 terms",
+   "now": "4 terms"
+  },
+  {
+   "date": "2026-08-01",
+   "field": "content_type",
+   "reason": "Wave 1 repair: audit ledger v1.1 recommended_content_type (workplan v1.5 §6 W1, MANUS batch approval 2026-08-01)",
+   "was": "Metadata capture",
+   "now": "DataCite metadata capture / semi-restored record"
+  },
+  {
+   "date": "2026-08-03",
+   "field": "content_type",
+   "reason": "Vocabulary v1.0 transitional wave (Q5 APPROVED): capture-condition removed from genre field; genre assignment queued.",
+   "was": "DataCite metadata capture / semi-restored record",
+   "now": "Genre pending (capture)"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "publisher",
+   "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
+   "now": "Alexanarch — the Crimson Hexagonal Archive"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "content_type",
+   "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+   "was": "Genre pending (capture)",
+   "now": "Scripture"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "publisher",
+   "reason": "NH2-NHP venue projection (MANUS ruling 2026-08-04): New Human 2 = journal for creative works; New Human Press = publisher for creative and scriptural works incl. book/collection length",
+   "was": "Alexanarch — the Crimson Hexagonal Archive",
+   "now": "New Human Press"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "body_status",
+   "reason": "W14 AUDIT-ANCHORED TRIAGE (MANUS correction: the three-day record-by-record audit already triaged this class; its verdicts govern, not re-derivation)",
+   "was": "{\"class\": \"metadata_capture\", \"lacuna\": true, \"recovery_status\": \"UNRECOVERED\", \"residual_chars\": 1870, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"cla",
+   "now": "{\"class\": \"metadata_capture\", \"lacuna\": true, \"recovery_status\": \"UNRECOVERED\", \"residual_chars\": 1870, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"cla"
+  },
+  {
+   "date": "2026-08-06",
+   "field": "description",
+   "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
+   "was": "Semi-restored deposit for dead DOI 10.5281/zenodo.19296663 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. Sanskrit-English facing edition of the Mandala operator system. Positions the eight recursive transformation operators within Vedic, Upanishadic, and Yogic traditions. Uses classical Sanskrit (not Pali or Prakrit) with references to Brihadaranyaka Upanishad (That is truth, that is truth), Patanjali's Yoga Sutras (Yogaś-citta-vṛtti-nirodhaḥ), and Om Shanti invocation.\n\nFeatures Johannes Sigil prefa",
+   "now": "An honestly marked DataCite capture for the missing Sanskrit–English partial Mandala edition. It preserves the lost record’s scope, Vedic/Upanishadic/Yogic framing, creators, related identifiers, and dead DOI.\n\nNo authorial Sanskrit or facing English text is seated."
+  }
+ ],
+ "date_modified": "2026-08-06",
+ "publisher": "New Human Press",
+ "wiki_article": "**मण्डलम्: पुनरावर्तक-मायायाः तन्त्रम्** was a partial Sanskrit–English edition of the Mandala operator system.\n\nThe surviving metadata situates the operators within Vedic, Upanishadic, and Yogic traditions. It names the *Bṛhadāraṇyaka Upaniṣad*, Patañjali’s *Yoga Sūtras*, an Om Shanti invocation, and **tapas** as an account of transformative discipline.\n\nThe edition reportedly adapted Johannes Sigil’s preface to a Vedic frame, translated Part I into Sanskrit, and supplied a BRIDE treatment at archetypal and kernel levels. Transformation was described as bodily practice rather than intellectual assent.\n\nThe planned full edition would have added the remaining operators and a wider Bhagavad Gita, Upanishadic, and Yoga Sutra apparatus. The facing text is absent from the repository. Only the DataCite witness remains, and it cannot establish the lost Sanskrit’s meter, grammar, register, or transliteration quality.",
+ "apparatus_separated": true,
+ "apparatus_path": "/data/restoration-apparatus/03C7.json",
+ "record_modifications": [
+  {
+   "date": "2026-08-10",
+   "field": "body_status.citation_class",
+   "note": "Marked NON-CITABLE. MANUS: these dead records keep being relinked because nothing distinguishes them from live ones at citation time. body_status.class already said metadata_capture; nothing read it."
+  }
+ ],
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/955/",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-03C7-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}
