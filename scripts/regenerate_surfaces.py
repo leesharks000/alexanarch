@@ -46,6 +46,7 @@ The script is idempotent — running it twice produces the same result.
 """
 
 import argparse
+import subprocess
 import hashlib
 import json
 import os
@@ -75,7 +76,7 @@ except ImportError:
     _OVERWRITE_GUARD_AVAILABLE = False
 
 HOMEPAGE_RECENT_N = 12  # must equal the JS slice in index.html
-ALL_SURFACES = ["state", "browse", "feed", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index", "search-index", "search-static", "dynamic-counts", "semantic-addresses"]
+ALL_SURFACES = ["state", "browse", "feed", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index", "search-index", "search-static", "capture-gallery", "dynamic-counts", "semantic-addresses"]
 
 
 def _receipt(path, reason: str = "regenerate_surfaces write"):
@@ -1676,6 +1677,7 @@ SURFACE_FNS = {
     "api-index": regenerate_api_index,
     "search-index": regenerate_search_index,
     "search-static": regenerate_search_static,
+    "capture-gallery": None,  # populated below
     "dynamic-counts": None,  # populated below (forward-reference to preserve declaration order)
 }
 
@@ -1832,6 +1834,27 @@ def regenerate_dynamic_counts(reg, dry_run=False):
             print(f"      {spec}: {old!r} → {new!r}")
 
 
+def regenerate_capture_gallery(reg, dry_run=False):
+    """Rebuild the pre-rendered capture cards by delegating to build_capture_gallery.py.
+
+    REGISTERED 2026-08-15. It was a standalone script and therefore never ran as
+    part of a regeneration sweep: twelve captures sat seated-and-committed while
+    the live page served the previous 331 for hours, because nothing in the
+    standard post-seating sequence touched it. A build step outside the sweep is
+    a build step that will be forgotten."""
+    if dry_run:
+        print("Capture gallery: (dry run) would run scripts/build_capture_gallery.py")
+        return
+    print("Rebuilding capture gallery …")
+    r = subprocess.run([sys.executable, str(REPO_ROOT / "scripts/build_capture_gallery.py")],
+                       capture_output=True, text=True, cwd=str(REPO_ROOT))
+    sys.stdout.write(r.stdout)
+    if r.returncode != 0:
+        sys.stdout.write(r.stderr)
+        raise RuntimeError("build_capture_gallery.py failed — the page is now STALE, not merely unbuilt")
+
+
+SURFACE_FNS["capture-gallery"] = regenerate_capture_gallery
 SURFACE_FNS["dynamic-counts"] = regenerate_dynamic_counts
 
 
