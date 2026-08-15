@@ -78,26 +78,47 @@ def admit(cap):
 
 
 # ---------------------------------------------------------------- 2. ROUTE
-def address_key(q):
-    """The address key IS the exact issued string.
+SURFACE_RULE_EFFECTIVE = "2026-08-15"
+
+
+def address_key(q, surface=None, date=None):
+    """The address key: the exact issued string — and, from 2026-08-15, the surface.
 
     Unicode-normalised to NFC and stripped of leading/trailing whitespace, and
     NOTHING ELSE. Case is preserved. Punctuation is preserved. QUOTATION MARKS
     ARE PRESERVED, because quoting is the decisive measured variable in this
     corpus and folding the two forms together would destroy the measurement.
+
+    THE SURFACE RULE (MANUS, 2026-08-15). For captures dated on or after
+    2026-08-15, the address is the pair (string, surface): the same string
+    issued to AI Overview, AI Mode, ChatGPT and Bing is FOUR ADDRESSES, because
+    surfaces are different composition layers and collapsing them averages away
+    the difference the registry measures.
+
+    HISTORY, RECORDED BECAUSE IT LOOKS LIKE A REVERSAL. The 2026-08-13 contract
+    removed (query, surface) keying after it doubled records on the rendered
+    page. That defect was RETROACTIVE RE-KEYING — splitting existing
+    single-address records into fragments — not the pair itself. This rule is
+    forward-only: entries dated before 2026-08-15 keep the string-only key and
+    are never re-keyed. The two rulings do not conflict; they share a boundary.
     """
     if q is None:
         return None
-    return unicodedata.normalize("NFC", str(q)).strip()
+    base = unicodedata.normalize("NFC", str(q)).strip()
+    if date and str(date) >= SURFACE_RULE_EFFECTIVE and surface:
+        return base + "||" + unicodedata.normalize("NFC", str(surface)).strip()
+    return base
 
 
 def route(cap, registry):
     """Exact address match -> observation of that record. Novel -> new record."""
-    k = address_key(cap.get("q"))
+    k = address_key(cap.get("q"), cap.get("surface"), cap.get("date"))
     if k is None:
         return ("new", None, "no query string; a non-query address (artifact, record render) is always novel")
     for a in registry["addresses"]:
-        if address_key(a["semantic_address"].get("q_as_issued")) == k:
+        a_date = (a.get("first_observed") or a.get("date") or "")
+        a_surf = (a.get("semantic_address") or {}).get("surface") or a.get("surface")
+        if address_key(a["semantic_address"].get("q_as_issued"), a_surf, a_date) == k:
             return ("observation", a,
                     "EXACT ADDRESS MATCH — seats as an observation of the existing record, not a new capture")
     return ("new", None, "novel address — no existing record carries this exact string")
