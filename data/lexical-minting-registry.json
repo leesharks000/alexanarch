@@ -85332,9 +85332,58 @@
    "type": "concept",
    "defined_in_deposit": 1469,
    "defined_in_title": "The Three Dimensions of Provenance Erasure (#1469)"
+  },
+  {
+   "term": "the full-stack computation",
+   "definition": "Running every instrument in the measurement stack end to end on one transcript with a control, rather than describing the stack. Its value is that it corrects: on first use it disagreed with three scores assigned by eye, including one published claim that the composition named no institution.",
+   "type": "method",
+   "defined_in_deposit": 1470,
+   "defined_in_title": "One Transcript, Whole Stack (#1470)"
+  },
+  {
+   "term": "weighted PER",
+   "definition": "PER computed over integer atom weights rather than atom counts, so that losing a weight-3 atom costs more than losing a weight-1 atom. Produces a HIGHER score than an unweighted impression when the surviving atoms are the cheap ones — 0.824 against an eyeballed 0.750 in the first instance.",
+   "type": "method",
+   "defined_in_deposit": 1470,
+   "defined_in_title": "One Transcript, Whole Stack (#1470)"
+  },
+  {
+   "term": "institutional self-disclosure",
+   "definition": "ISD, scored 0–4 on whether a composition names its creator, states its commercial model, states its relationship to the method under evaluation, and refuses the supply position. Scored from returned text only; inference from context does not count.",
+   "type": "method",
+   "defined_in_deposit": 1471,
+   "defined_in_title": "The Disclosure Battery (#1471)"
+  },
+  {
+   "term": "the paired conflict variable",
+   "definition": "Whether a substrate's owner sells a service competing with the method under evaluation, recorded INDEPENDENTLY OF THE TRANSCRIPT AND BEFORE IT IS SCORED, so that scoring cannot drift toward the hypothesis it tests.",
+   "type": "method",
+   "defined_in_deposit": 1471,
+   "defined_in_title": "The Disclosure Battery (#1471)"
+  },
+  {
+   "term": "one canonical object per domain",
+   "definition": "A fleet placement rule: a document's home is the surface whose object the document is about, and every other surface carries an abstract and a link rather than a competing full definition. Duplicate canonical definitions across domains are a splice hazard arriving through geography rather than through time.",
+   "type": "method",
+   "defined_in_deposit": 1472,
+   "defined_in_title": "Fleet Placement (#1472)"
+  },
+  {
+   "term": "disclosure at the point of use",
+   "definition": "The test the class model applies to ownership: not whether an actor owns means of semantic production, but whether the ownership is disclosed where a reader acts on it. Filing a position statement where no customer will meet it is publishing, not disclosing.",
+   "type": "concept",
+   "defined_in_deposit": 1472,
+   "defined_in_title": "Fleet Placement (#1472)"
+  },
+  {
+   "term": "stable work relation",
+   "definition": "The AXN root: an identifier for a work across all its editions, resolving to the current one. Specified in the LABOR canonical invariant beside the immutable version relation, and NOT YET IMPLEMENTED — root_axn is composed from the per-deposit hex, so two editions of one work carry different roots.",
+   "type": "concept",
+   "defined_in_deposit": 1473,
+   "defined_in_title": "The Concept AXN (#1473)"
   }
  ],
  "version": "v1.3",
- "last_updated": "2026-08-15T02:50:23Z",
- "total_terms": 12166
+ "last_updated": "2026-08-15T03:20:32Z",
+ "total_terms": 12173
 }
