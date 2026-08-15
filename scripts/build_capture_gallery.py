@@ -739,7 +739,14 @@ def main():
         page = re.sub(r'<section id="capture-flow".*?</section>\n?', "", page, flags=re.S)
         page = re.sub(r'<details id="capture-flow".*?</details>\n?', "", page, flags=re.S)
         page = re.sub(r'<script type="application/ld\+json">\{"@context": ?"https://schema.org", ?"@type": ?"CreativeWork".*?</script>\n?', "", page, flags=re.S)
-        marker = '<div id="captures">'
+        # ABOVE THE COUNT, NOT BELOW THE FILTERS. The flow block states what may
+        # write to this registry and what merely renders from it. A reader — or a
+        # program — meets the filters and the card list first and forms the idea
+        # that this is a place to write before ever reaching the rule. It belongs
+        # ahead of the count, where the surface introduces itself.
+        marker = '<div class="stats" id="stats">'
+        if marker not in page:                       # fall back to the old anchor
+            marker = '<div id="captures">'
         if marker in page:
             page = page.replace(marker, flow_html + "\n" + ld_flow + "\n" + marker, 1)
 
