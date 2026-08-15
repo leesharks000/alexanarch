@@ -85297,9 +85297,44 @@
    "type": "method",
    "defined_in_deposit": 1468,
    "defined_in_title": "Measurement Stack Workplan (EA-SEMSTACK-WORKPLAN-01)"
+  },
+  {
+   "term": "PER-M",
+   "definition": "MINIMAL provenance: author, title, date, claim boundary. Who said it, in what work, when, and where the claim stops. Loss here is loss of the person. Scored over the M-dimension's own weights, so PER-M = 1.00 denotes total loss of the minimal dimension and not of everything.",
+   "type": "concept",
+   "defined_in_deposit": 1469,
+   "defined_in_title": "The Three Dimensions of Provenance Erasure (#1469)"
+  },
+  {
+   "term": "attribution atom",
+   "definition": "One declared, weighted element of the required provenance set A(N) for an entity, belonging to exactly one dimension. Atoms are fixed and published BEFORE the composition is read; a PER reported without its atom table is not reproducible and should not be cited as a measurement.",
+   "type": "method",
+   "defined_in_deposit": 1469,
+   "defined_in_title": "The Three Dimensions of Provenance Erasure (#1469)"
+  },
+  {
+   "term": "atomic scoring rules",
+   "definition": "Six rules making the M/C/D taxonomy reproducible: atoms declared and weighted in advance; presence explicit with no inference from context; an empty citation bracket a violation per se; citing a domain never counting as citing an author; integer weights 1–3 with 3 reserved for atoms without which the work cannot be attributed or retrieved; one dimension per atom, splitting any atom that appears to belong to two.",
+   "type": "method",
+   "defined_in_deposit": 1469,
+   "defined_in_title": "The Three Dimensions of Provenance Erasure (#1469)"
+  },
+  {
+   "term": "the empty bracket violation",
+   "definition": "An unfilled citation bracket is a protocol violation in itself, independent of whether the missing atom is recoverable elsewhere. It is not a pointer. A pointer must be filled: a named source, a stated author, a resolvable identifier.",
+   "type": "concept",
+   "defined_in_deposit": 1469,
+   "defined_in_title": "The Three Dimensions of Provenance Erasure (#1469)"
+  },
+  {
+   "term": "citing the domain is not citing the author",
+   "definition": "A source strip satisfies the source atom and nothing else. A composition can carry four source cards and still score PER-M = 1.00 — total loss at the personal layer. Observed 2026-08-14 at «spxi protocol», where four returned sources accompanied the omission of producer, archival authority, corpus, commercial interest and identifier.",
+   "type": "concept",
+   "defined_in_deposit": 1469,
+   "defined_in_title": "The Three Dimensions of Provenance Erasure (#1469)"
   }
  ],
  "version": "v1.3",
- "last_updated": "2026-08-15T01:12:14Z",
- "total_terms": 12161
+ "last_updated": "2026-08-15T02:50:23Z",
+ "total_terms": 12166
 }
