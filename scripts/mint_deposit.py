@@ -332,9 +332,28 @@ def parse_issue_body(body: str) -> dict:
     validate_deposit.py field map is the partial source of truth; this is
     the complete map.
     """
+def strip_issue_prefix(title):
+    """Remove the GitHub issue-title convention from the WORK's title.
+
+    Deposit issues are titled "[DEPOSIT] <work title>" so they are findable in
+    the issue list. That bracket is transport metadata: it belongs to the issue,
+    never to the work. Left in place it propagates into the registry title, the
+    canonical text frontmatter, the record <title>, the OAI record, the wiki
+    entry, the citation graph label and every downstream surface -- and it has,
+    three times (#1458, #1486, #1487), each time by an internal depositor who
+    copied a prior body as a template.
+
+    Documenting the rule did not stop it. Stripping it here does, because this
+    is the single point every transport passes through.
+    """
+    if not title:
+        return title
+    return re.sub(r'^\s*\[\s*deposit\s*\]\s*', '', title, flags=re.I).strip()
+
+
     return {
         "protocol_version": extract_field(body, "Protocol Version"),
-        "title": extract_field(body, "Title"),
+        "title": strip_issue_prefix(extract_field(body, "Title")),
         "creator": extract_field(body, "Creator"),
         "orcid": extract_field(body, "ORCID"),
         "date": extract_field(body, "Date"),
@@ -826,13 +845,15 @@ def build_canonical_text(
     fm_lines.append("---")
 
     body_sections = []
-    if fields.get("description"):
+    # 2026-08-15: description/methodology/falsification are METADATA. They live
+    # in the registry entry and render on the record page from there. Emitting
+    # them into the canonical text too meant the description appeared twice on
+    # every record, and -- worse -- that a deposit whose depositor supplied no
+    # Body field produced a "canonical text" made entirely of metadata, with the
+    # work itself absent from its own deposit (#1486, #1487). The canonical text
+    # is the WORK. Only the title survives here, as the document's heading.
+    if fields.get("title"):
         body_sections.append(f"# {fields['title']}\n")
-        body_sections.append(f"## Description\n\n{fields['description']}\n")
-    if fields.get("methodology"):
-        body_sections.append(f"## Methodology\n\n{fields['methodology']}\n")
-    if fields.get("falsification"):
-        body_sections.append(f"## Falsification Conditions\n\n{fields['falsification']}\n")
     # Attached file content (text ingested inline, binary by reference)
     if attachments:
         for att in attachments:

@@ -132,6 +132,40 @@ def check_deposit(n: int):
                           "citation-graph edges for this deposit; run "
                           "scripts/citation_extractor.py"))
 
+    # ── BODY-003 ───────────────────────────────────────────────────────────
+    # Added 2026-08-15 after #1486 and #1487 minted with a canonical text made
+    # ENTIRELY of metadata sections -- Description, Methodology, Falsification,
+    # Files -- and no work in it at all. Both passed every gate then in force:
+    # the files existed, the alias resolved, the byte counts matched, because
+    # the same emptiness was faithfully written to both paths.
+    #
+    # BODY-001 asks whether a body exists. BODY-002 asks whether the two copies
+    # agree. NEITHER ASKS WHETHER THE THING IS THE WORK. A deposit whose text is
+    # its own metadata re-rendered is a deposit of its own catalogue card.
+    #
+    # The depositor supplies the work through the Body field. If a deposit is
+    # genuinely metadata-only -- a pointer record, a tether stub -- that is a
+    # decision, and it is declared, not defaulted into by omission.
+    if have_text:
+        raw = text_p.read_text(encoding="utf-8", errors="replace")
+        after_fm = raw.split("---", 2)[2] if raw.lstrip().startswith("---") and len(raw.split("---", 2)) == 3 else raw
+        META_HEADS = ("## Description", "## Methodology", "## Falsification Conditions",
+                      "## Files", "## Keywords", "## Terms", "## Related Identifiers")
+        substantive = []
+        for block in after_fm.split("\n## "):
+            head = ("## " + block.split("\n", 1)[0].strip()) if not block.startswith("#") else block.split("\n", 1)[0].strip()
+            if any(head.startswith(m) for m in META_HEADS):
+                continue
+            substantive.append(block)
+        body_chars = sum(len(b) for b in substantive)
+        title_only = body_chars < 400
+        if title_only and not entry.get("metadata_only_attested"):
+            fails.append(("BODY-003",
+                          f"canonical text carries {body_chars} chars outside metadata sections "
+                          f"(Description/Methodology/Falsification/Files): the work is absent from "
+                          f"its own deposit. Supply it via the Body field, or set "
+                          f"metadata_only_attested: true to declare a pointer record."))
+
     # RENDER-001 — the record as a reader sees it
     rec = ROOT / f"s/records/{n}/index.html"
     if not rec.exists():
