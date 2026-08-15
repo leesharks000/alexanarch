@@ -1494,7 +1494,13 @@ def regenerate_static_page(d, eidx, registry=None):
             info = eidx['concepts'].get(term, {})
             defn = esc(info.get('definition', ''))
             ctype = esc(info.get('type', ''))
-            concept_items.append(f'<div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">{esc(term)}</strong> <span style="font-size:.75em;color:#999">[{ctype}]</span><br><span style="font-size:.85em;color:#444">{defn}</span></div>')
+            # 2026-08-15: emit the type-bracket and the definition line ONLY when
+            # they have content. Most deposits record concepts as bare strings, so
+            # every one of them was rendering a literal empty "[]" and a blank
+            # line under the term -- archive-wide, on every record page.
+            _tag = f' <span style="font-size:.75em;color:#999">[{ctype}]</span>' if ctype else ''
+            _def = f'<br><span style="font-size:.85em;color:#444">{defn}</span>' if defn else ''
+            concept_items.append(f'<div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">{esc(term)}</strong>{_tag}{_def}</div>')
         concepts_html = f'<h2>Concepts Defined</h2>\n' + '\n'.join(concept_items)
     
     # Entity triples section
