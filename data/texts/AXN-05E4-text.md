@@ -1,7 +1,7 @@
 ---
 deposit_number: 1458
 hex: 05E4
-title: "[DEPOSIT] The Echo and the Stamp: Peri Hypsous as a Theory of Transmissional Inscription, with a Constrained Reconstruction of Its Lost Ending"
+title: "The Echo and the Stamp: Peri Hypsous as a Theory of Transmissional Inscription, with a Constrained Reconstruction of Its Lost Ending"
 creator: Sharks, Lee
 orcid: 0009-0000-1599-0703
 date: 2026-08-14
@@ -37,7 +37,7 @@ keywords:
   - machine-mediated reception studies
 ---
 
-# [DEPOSIT] The Echo and the Stamp: Peri Hypsous as a Theory of Transmissional Inscription, with a Constrained Reconstruction of Its Lost Ending
+# The Echo and the Stamp: Peri Hypsous as a Theory of Transmissional Inscription, with a Constrained Reconstruction of Its Lost Ending
 
 ## Description
 
