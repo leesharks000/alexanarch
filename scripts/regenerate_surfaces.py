@@ -930,6 +930,13 @@ fetch("/data/wiki-entries.json").then(function(r){return r.json()}).then(functio
 
 
 CITATION_GRAPH_PATH = REPO_ROOT / "data" / "citation-graph.json"
+# THE ORPHANED GRAPHS. citation-graph-external.json (external works) and
+# citation-graph-freeform.json (reference-section and TANG entries) have been
+# written on every run and read by NOTHING but their own extractors — 7,645
+# edges reaching zero surfaces, which is why the citation system behaved as
+# internal-only while the data said otherwise. Consumed here.
+CITATION_EXTERNAL_PATH = REPO_ROOT / "data" / "citation-graph-external.json"
+CITATION_FREEFORM_PATH = REPO_ROOT / "data" / "citation-graph-freeform.json"
 GRAPH_PATH = REPO_ROOT / "s" / "graph" / "index.html"
 
 
@@ -977,17 +984,49 @@ def regenerate_graph(reg, dry_run=False):
             via = e.get("via") or "cites"
             deposit_triples.append((src, via, tgt, "observed"))
 
+    # External and freeform edges, projected with their ontic status visible.
+    def _load_json(path):
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return None
+
+    ext_graph = _load_json(CITATION_EXTERNAL_PATH)
+    ff_graph = _load_json(CITATION_FREEFORM_PATH)
+
+    external_triples = []
+    for e in ((ext_graph or {}).get("edges") or [])[:400]:
+        src = e.get("source_axn") or f"#{e.get('source_deposit')}"
+        tgt = e.get("target_bibkey") or "?"
+        # ontic_status is 'unverified' on every external edge; it is rendered as
+        # [inferred] rather than [observed] so the surface never implies these
+        # have been adjudicated. They have not.
+        external_triples.append((src, e.get("via") or "cites", tgt, "inferred"))
+
+    freeform_triples = []
+    for e in ((ff_graph or {}).get("edges") or [])[:300]:
+        src = e.get("source_axn") or f"#{e.get('source_deposit')}"
+        tgt = e.get("target_bibkey") or "?"
+        freeform_triples.append((src, e.get("via") or "cites", tgt, "inferred"))
+
     total_concept_edges = sum(len((c.get("entity_triples") or [])) for c in (eidx or {}).get("concepts", {}).values()) if eidx else 0
     total_citation_edges = len((citation_graph or {}).get("edges") or [])
+    total_external_edges = len((ext_graph or {}).get("edges") or [])
+    total_freeform_edges = len((ff_graph or {}).get("edges") or [])
 
     parts = []
     parts.append(_GRAPH_HTML_HEAD)
 
     parts.append(
         f'<p style="color:var(--dim);margin-bottom:8px">'
-        f'<strong>{total_concept_edges + total_citation_edges:,}</strong> total edges '
-        f'projected from <code>data/entity-index.json</code> '
-        f'and <code>data/citation-graph.json</code>. '
+        f'<strong>{total_concept_edges + total_citation_edges + total_external_edges + total_freeform_edges:,}</strong> total edges '
+        f'projected from <code>data/entity-index.json</code>, '
+        f'<code>citation-graph.json</code> ({total_citation_edges:,} internal), '
+        f'<code>citation-graph-external.json</code> ({total_external_edges:,} external), '
+        f'and <code>citation-graph-freeform.json</code> ({total_freeform_edges:,} reference-section). '
+        f'External and reference-section edges carry <code>ontic_status: unverified</code> '
+        f'and are rendered <span class="ev evi">[inferred]</span> — they have not been adjudicated. '
         f'<span class="ev evo">[observed]</span> '
         f'<span class="ev evi">[inferred]</span> '
         f'<span class="ev evp">[performative]</span></p>\n'
@@ -1019,6 +1058,30 @@ def regenerate_graph(reg, dry_run=False):
                 f'<span class="eo">{esc_html(o)} <span class="ev evo">[observed]</span></span>'
                 f'</div>\n'
             )
+
+    if external_triples:
+        parts.append('<h2 style="font-size:1em;margin-top:18px;border-bottom:1px solid var(--border);padding-bottom:4px">'
+                     f'External Citations <span style="color:var(--dim);font-weight:400;font-size:0.85em">'
+                     f'(showing first {len(external_triples):,} of {total_external_edges:,})</span></h2>\n')
+        for s, p, o, ev in external_triples:
+            parts.append(
+                f'<div class="er">'
+                f'<span class="es">{esc_html(s)}</span>'
+                f'<span class="ep">{esc_html(p)}</span>'
+                f'<span class="eo">{esc_html(o)} <span class="ev evi">[inferred]</span></span>'
+                f'</div>\n')
+
+    if freeform_triples:
+        parts.append('<h2 style="font-size:1em;margin-top:18px;border-bottom:1px solid var(--border);padding-bottom:4px">'
+                     f'Reference-Section Citations <span style="color:var(--dim);font-weight:400;font-size:0.85em">'
+                     f'(showing first {len(freeform_triples):,} of {total_freeform_edges:,})</span></h2>\n')
+        for s, p, o, ev in freeform_triples:
+            parts.append(
+                f'<div class="er">'
+                f'<span class="es">{esc_html(s)}</span>'
+                f'<span class="ep">{esc_html(p)}</span>'
+                f'<span class="eo">{esc_html(o)} <span class="ev evi">[inferred]</span></span>'
+                f'</div>\n')
 
     parts.append(_GRAPH_HTML_TAIL)
 
