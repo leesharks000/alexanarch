@@ -1,11 +1,12 @@
 # MRET v1.0 — distribution report
 
-**1484 deposits.** Mean 0.8303 · median 0.8333.
+**1484 deposits.** Mean 0.8312 · median 0.8333.
 
 | band | records |
 |---|---|
 | <0.70 | 2 |
-| 0.80+ | 1450 |
+| 1.00 | 8 |
+| 0.80+ | 1442 |
 | 0.70+ | 32 |
 
 ## Per-axis fill
@@ -17,7 +18,7 @@
 | human_read | 1.0 |
 | identity | 0.9997 |
 | machine_read | 0.9989 |
-| retrieval | 0.0 |
+| retrieval | 0.0054 |
 
 retrieval_summary is a new field; its fill rate IS the backlog. Scoring absence, rather than not scoring, is what makes the backlog a measurement instead of a silence.
 

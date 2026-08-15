@@ -1,11 +1,12 @@
 {
  "instrument": "MRET v1.0 — Machine Retrieval Eligibility Test (executable gate)",
  "deposits": 1484,
- "mean": 0.8303,
+ "mean": 0.8312,
  "median": 0.8333,
  "distribution": {
   "<0.70": 2,
-  "0.80+": 1450,
+  "1.00": 8,
+  "0.80+": 1442,
   "0.70+": 32
  },
  "axis_fill": {
@@ -14,7 +15,7 @@
   "human_read": 1.0,
   "identity": 0.9997,
   "machine_read": 0.9989,
-  "retrieval": 0.0
+  "retrieval": 0.0054
  },
  "note_on_retrieval_axis": "retrieval_summary is a new field; its fill rate IS the backlog. Scoring absence, rather than not scoring, is what makes the backlog a measurement instead of a silence.",
  "worst_20": [
@@ -16466,72 +16467,6 @@
    "retrieval": 0.0
   },
   {
-   "n": 1476,
-   "axn": "AXN:05F6.PHILOLOGICAL.○▽🕌🔄🛸🔵",
-   "mret": 0.8333,
-   "identity": 1,
-   "bibliography": 1,
-   "description": 1,
-   "machine_read": 1,
-   "human_read": 1,
-   "retrieval": 0.0
-  },
-  {
-   "n": 1477,
-   "axn": "AXN:05F7.PHILOLOGICAL.🦋💛🔬▽🔝⏰",
-   "mret": 0.8333,
-   "identity": 1,
-   "bibliography": 1,
-   "description": 1,
-   "machine_read": 1,
-   "human_read": 1,
-   "retrieval": 0.0
-  },
-  {
-   "n": 1478,
-   "axn": "AXN:05F8.PHILOLOGICAL.🔃🪨🧡▽◀️♈",
-   "mret": 0.8333,
-   "identity": 1,
-   "bibliography": 1,
-   "description": 1,
-   "machine_read": 1,
-   "human_read": 1,
-   "retrieval": 0.0
-  },
-  {
-   "n": 1480,
-   "axn": "AXN:05FA.GOVERNANCE.↖️🌿🕘⚖️🪞♌",
-   "mret": 0.8333,
-   "identity": 1,
-   "bibliography": 1,
-   "description": 1,
-   "machine_read": 1,
-   "human_read": 1,
-   "retrieval": 0.0
-  },
-  {
-   "n": 1481,
-   "axn": "AXN:05FB.GOVERNANCE.🔍∞🤲🙏⚙️🔆",
-   "mret": 0.8333,
-   "identity": 1,
-   "bibliography": 1,
-   "description": 1,
-   "machine_read": 1,
-   "human_read": 1,
-   "retrieval": 0.0
-  },
-  {
-   "n": 1482,
-   "axn": "AXN:05FD.ARCHIVAL.📚🪸🏗️☿🛤️⌛",
-   "mret": 0.8333,
-   "identity": 1,
-   "bibliography": 1,
-   "description": 1,
-   "machine_read": 1,
-   "human_read": 1,
-   "retrieval": 0.0
-  },
-  {
    "n": 1483,
    "axn": "AXN:05FE.PHILOLOGICAL.👉✊✨👆❌❄️",
    "mret": 0.8333,
@@ -16543,26 +16478,92 @@
    "retrieval": 0.0
   },
   {
-   "n": 1484,
-   "axn": "AXN:05FF.PHILOLOGICAL.🔬🌪️↖️⏪🔖🎨",
-   "mret": 0.8333,
+   "n": 1476,
+   "axn": "AXN:05F6.PHILOLOGICAL.○▽🕌🔄🛸🔵",
+   "mret": 1.0,
    "identity": 1,
    "bibliography": 1,
    "description": 1,
    "machine_read": 1,
    "human_read": 1,
-   "retrieval": 0.0
+   "retrieval": 1.0
+  },
+  {
+   "n": 1477,
+   "axn": "AXN:05F7.PHILOLOGICAL.🦋💛🔬▽🔝⏰",
+   "mret": 1.0,
+   "identity": 1,
+   "bibliography": 1,
+   "description": 1,
+   "machine_read": 1,
+   "human_read": 1,
+   "retrieval": 1.0
+  },
+  {
+   "n": 1478,
+   "axn": "AXN:05F8.PHILOLOGICAL.🔃🪨🧡▽◀️♈",
+   "mret": 1.0,
+   "identity": 1,
+   "bibliography": 1,
+   "description": 1,
+   "machine_read": 1,
+   "human_read": 1,
+   "retrieval": 1.0
+  },
+  {
+   "n": 1480,
+   "axn": "AXN:05FA.GOVERNANCE.↖️🌿🕘⚖️🪞♌",
+   "mret": 1.0,
+   "identity": 1,
+   "bibliography": 1,
+   "description": 1,
+   "machine_read": 1,
+   "human_read": 1,
+   "retrieval": 1.0
+  },
+  {
+   "n": 1481,
+   "axn": "AXN:05FB.GOVERNANCE.🔍∞🤲🙏⚙️🔆",
+   "mret": 1.0,
+   "identity": 1,
+   "bibliography": 1,
+   "description": 1,
+   "machine_read": 1,
+   "human_read": 1,
+   "retrieval": 1.0
+  },
+  {
+   "n": 1482,
+   "axn": "AXN:05FD.ARCHIVAL.📚🪸🏗️☿🛤️⌛",
+   "mret": 1.0,
+   "identity": 1,
+   "bibliography": 1,
+   "description": 1,
+   "machine_read": 1,
+   "human_read": 1,
+   "retrieval": 1.0
+  },
+  {
+   "n": 1484,
+   "axn": "AXN:05FF.PHILOLOGICAL.🔬🌪️↖️⏪🔖🎨",
+   "mret": 1.0,
+   "identity": 1,
+   "bibliography": 1,
+   "description": 1,
+   "machine_read": 1,
+   "human_read": 1,
+   "retrieval": 1.0
   },
   {
    "n": 1485,
    "axn": "AXN:0600.GOVERNANCE.📜📏🔼🔬🔝🕗",
-   "mret": 0.8333,
+   "mret": 1.0,
    "identity": 1,
    "bibliography": 1,
    "description": 1,
    "machine_read": 1,
    "human_read": 1,
-   "retrieval": 0.0
+   "retrieval": 1.0
   }
  ]
 }
