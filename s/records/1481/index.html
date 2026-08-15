@@ -1,0 +1,209 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Data Interconnect: How the Measurement Instruments Read One Another — Alexanarch</title><meta name="description" content="Specifies the data paths between the archive&#x27;s measurement instruments — which files each reads, which it writes, and where a value computed by one…"><meta property="og:title" content="Data Interconnect: How the Measurement Instruments Read One Another"><meta property="og:description" content="Specifies the data paths between the archive&#x27;s measurement instruments — which files each reads, which it writes, and where a value computed by one…"><meta property="og:url" content="https://www.alexanarch.org/s/records/1481/"><meta property="og:type" content="article"><meta property="og:site_name" content="Alexanarch"><meta name="twitter:card" content="summary"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "Data Interconnect: How the Measurement Instruments Read One Another", "headline": "Data Interconnect: How the Measurement Instruments Read One Another", "author": {"@type": "Person", "name": "Sharks, Lee"}, "datePublished": "2026-08-15", "identifier": "AXN:05FB.GOVERNANCE.🔍∞🤲🙏⚙️🔆", "description": "Specifies the data paths between the archive's measurement instruments — which files each reads, which it writes, and where a value computed by one becomes an input to another — so that a change in one instrument's output has a traceable consequence downstream.", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "measurement stack, data interconnect, instrument coupling, provenance erasure, capture registry", "url": "https://www.alexanarch.org/s/records/1481/", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.alexanarch.org/s/records/1481/"}, "inLanguage": "en", "isPartOf": {"@type": "Collection", "name": "Alexanarch", "url": "https://www.alexanarch.org/"}, "articleBody": "Data Interconnect: How the Measurement Instruments Read One Another\nDescription\n\nSpecifies the data paths between the archive's measurement instruments — which files each reads, which it writes, and where a value computed by one becomes an input to another — so that a change in one instrument's output has a traceable consequence downstream.\nMethodology\n\nPaths traced from each instrument's source; couplings recorded as file-level dependencies.\nFalsification Conditions\n\nFalsified by an instrument coupling that exists in code but is absent from the specification, or vice versa.\nANEMIC JOINS\n\n How the capture registry should speak to the other datasets, narrowed to heteronyms \n \nI. The measurement\n\nSeventeen datasets. The capture registry holds 331 addresses and 474 captures . The heteronyms dataset holds 26 records with a rich schema — roles, domains, voice signature, institutional affiliations, associated terms .\n\nBetween them:\n\n \n\n Nothing. In either direction. \n\nAnd yet 23 of the 26 heteronyms are nameable from capture text, at 409 discoverable pairs . The join is not missing for lack of material.\n \nII. Why the obvious join is a trap\n\nName matching produces 409 pairs. Its top three results:\n\n name \"hits\" \n --- --- \n ARCHIVE 162 \n SURFACE 54 \n LABOR 33 \n\n These are mantle names that are also common English words. Nearly every one of those 249 pairs is false. A capture describing the archive is not a capture about the ARCHIVE mantle.\n\nThe atlas already states the governing principle, in the context of the deposit resolver: a missing link is recoverable, a wrong one poisons the graph. Name matching would poison it on first run.\n \nIII. Five principles\n1 · One direction is authored, the other is derived\n\nA capture is a dated event . A heteronym is an undated entity . Events accumulate on entities; entities do not reach into events.\n\nSo: the capture names what it is about, at intake. The heteronym record receives its capture list at build , as a derived rollup with a build timestamp. Never both authored — two hand-maintained sides of one relation drift, and the drift is silent.\n\nThis is the same asymmetry that made forward-pointing wrong for versions: backward pointers are cheap and permanent; forward views should be computed, not stored. \n2 · Join through an existing key, never by name\n\nThe archive already has the key. This chain is live right now:\n\n \n\nDeposits already attribute to heteronyms by creator: Johannes Sigil 176, Rex Fraction 90, TACHYON 86, Nobel Glas 41 . The lexicon holds 12,175 terms across 593 deposits .\n\nRun end to end, that chain yields 22 exact-match capture→heteronym pairs — and they are correct on inspection:\n\n \n\nTwenty-two clean beats four hundred and nine dirty. The join is semantic, through what a heteronym coined, rather than nominal, through what a string looks like. \n3 · One ladder, extended — not a second resolver\n\n resolve capture links.py already implements an auditable ladder: hard/axn , hard/doi , hard/series , soft/title , soft/keyword , soft/body , soft/description , with fan-out caps.\n\n Add person tiers to that ladder. Do not write a parallel heteronym resolver, or the two will disagree and there will be no way to say which is right.\n\n4 · Every edge carries its tier and its evidence\n\nAn edge that cannot say why it exists cannot be audited, and an unauditable graph is worse than a sparse one. Each join records tier, the matched string, and the date computed — exactly as the capture-deposit join does.\n5 · Populate the field the schema already has, before adding fields\n\n associated terms exists in the heteronym schema and is 96% empty — 1 record of 26, carrying 6 terms. That one populated record already yields 58 clean term-based capture pairs on its own.\n\nThe instinct on meeting an anemic join is to add a field. The field is already there.\n \nIV. Maximum impact, narrowed\n\n Populate associated terms by derivation, for the other 25 records. \n\nOne act, and it is not data entry:\n\n It is derivable. term → defined in deposit → creator → heteronym covers 15 heteronyms and 5,492 term-ownerships today, with no new authoring.\n\n It needs filtering, and the filter is the work. Those 5,492 include incidental headings — \"A creature\" , \"Calculation\" , \"C m = 0.95\" . A coinage is not every bolded phrase in a deposit. The filter is where judgment goes, and it should be a published rule rather than a hand-curated list.\n\n It pays out beyond captures. associated terms is a semantic key. Once populated it joins heteronyms to the lexicon, to deposits, to the citation graph, and to any future dataset with terms in it. The capture join is the first consumer, not the only one.\n\n And it is bounded. Twenty-five records. Not a program.\nThe second act, if there is room for two\n\n Give captures an authored entities[] field at intake. \n\nNamed at seating, when the operator knows what the capture is about and no inference is required. The derived joins then have something to agree or disagree with — and a derived edge that contradicts an authored one is a finding , not an error to be smoothed.\n \nV. What not to do\n\n Do not hardcode capture lists into heteronym records. They will go stale on the next intake and nothing will notice. Derived, with a build timestamp, or not at all.\n\n Do not join on names without a stoplist. Six of the seven mantle names are common English words.\n\n Do not build the general solution first. Seventeen datasets, and a universal join layer is a project that will not finish. One relation, done with an auditable ladder and published tiers, is a template the next relation can copy.\n\n Do not let the graph grow faster than it can be audited. 22 edges that can each name their tier and evidence are worth more than 409 that cannot.\n \nVI. Limits\n\nThe 22 exact-match pairs are a floor, not a ceiling — they require the query to match a coined term exactly , and most capture queries are natural-language questions. The soft tiers will add more and will need caps.\n\nThe derivation inherits whatever is wrong with deposit creator fields. If a deposit misattributes, the heteronym inherits a term it never coined, and the capture joins to the wrong person. The join is only as good as the creator field , and that field has never been audited for this purpose.\n\nAnd associated terms derived from authored deposits records what a heteronym coined , not what a heteronym is about . Those differ. A heteronym can be centrally concerned with a term another heteronym minted, and this derivation will miss it.\n \nSOURCES\n\nMeasured 2026-08-14 against data/EA-WG-CAPTURES-01.json (v11.1, 331 addresses, 474 captures), datasets/heteronyms/heteronyms.jsonl (26 records), data/lexical-minting-registry.json (12,175 terms), data/registry.json (1,473 deposits). Existing ladder: scripts/resolve capture links.py . Governing principle on conservatism: Dataflow Atlas v1.2 §4, the transcript is a join key .", "wordCount": 1142, "encoding": {"@type": "MediaObject", "contentUrl": "https://www.alexanarch.org/data/texts/AXN-05FB-text.md", "encodingFormat": "text/markdown", "contentSize": "8466"}}</script>
+<link rel="resourcesync" href="https://www.alexanarch.org/.well-known/resourcesync">
+<link rel="alternate" type="application/xml" title="OAI-PMH 2.0" href="https://www.alexanarch.org/oai?verb=Identify">
+<link rel="canonical" href="https://www.alexanarch.org/s/records/1481/">
+<meta name="citation_title" content="Data Interconnect: How the Measurement Instruments Read One Another">
+<meta name="citation_author" content="Sharks, Lee">
+<meta name="citation_publication_date" content="2026-08-15">
+<meta name="citation_online_date" content="2026-08-15">
+<meta name="citation_journal_title" content="Alexanarch">
+<meta name="citation_publisher" content="Alexanarch">
+<meta name="citation_abstract" content="Specifies the data paths between the archive&#x27;s measurement instruments — which files each reads, which it writes, and where a value computed by one becomes an input to another — so that a change in one instrument&#x27;s output has a traceable consequence downstream.">
+<meta name="citation_public_url" content="https://www.alexanarch.org/s/records/1481/">
+<meta name="citation_fulltext_html_url" content="https://www.alexanarch.org/s/records/1481/">
+<meta name="citation_pdf_url" content="https://www.alexanarch.org/papers/AXN-05FB.pdf">
+<meta name="citation_language" content="en">
+<meta name="DC.title" content="Data Interconnect: How the Measurement Instruments Read One Another">
+<meta name="DC.creator" content="Sharks, Lee">
+<meta name="DC.date" content="2026-08-15" scheme="DCTERMS.W3CDTF">
+<meta name="DC.identifier" content="https://www.alexanarch.org/s/axn/05FB/" scheme="DCTERMS.URI">
+<meta name="DC.description" content="Specifies the data paths between the archive&#x27;s measurement instruments — which files each reads, which it writes, and where a value computed by one becomes an input to another — so that a change in one instrument&#x27;s output has a traceable consequence downstream.">
+<meta name="DC.language" content="en" scheme="DCTERMS.RFC3066">
+<meta name="DC.type" content="Technical Report">
+<meta name="DC.rights" content="CC BY 4.0">
+<meta name="DC.publisher" content="Alexanarch">
+<meta name="DC.source" content="https://www.alexanarch.org/">
+<link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}.wrap{max-width:720px;margin:0 auto;padding:60px 24px}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}h1{font-size:1.3em;font-weight:600;color:var(--accent);margin-bottom:8px}h2{font-size:1em;font-weight:500;color:var(--accent);margin-top:20px;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:3px}p{margin-bottom:10px;color:#333}.nav{display:flex;gap:12px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap}.nav a{color:#777;font-weight:500;text-decoration:none}.nav a:hover{color:var(--accent)}.ft{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;max-height:600px;overflow-y:auto;font-size:.88em;line-height:1.75;margin:8px 0;color:#333}.ft h1,.ft h2,.ft h3{color:var(--accent);margin:12px 0 6px}.ft h1{font-size:1.1em}.ft h2{font-size:1em;border-bottom:none}.ft h3{font-size:.95em}.ft strong{color:var(--fg)}.ft blockquote{border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0}.ft hr{border:none;border-top:1px solid var(--border);margin:12px 0}.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}</style>
+</head><body><div class="wrap">
+<nav class="nav"> <a href="/">Alexanarch</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Library</span> <a href="/s/browse/">Browse</a> <a href="/search/">Search</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Reception</span> <a href="/addresses/">Addresses</a> <a href="/captures/">Captures</a> <a href="/observatory/">Observatory</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Continuity</span> <a href="/resolve/">Resolve</a> <a href="/identifiers/">Identifiers</a> <a href="/datasets/">Datasets</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Generative</span> <a href="/mint/stamp/">Stamp</a> <a href="/book/">Book</a> <a href="https://alexanarch.freeforums.net/" target="_blank" rel="noopener">Discussion</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Governance</span> <a href="/principles/">Principles</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
+<div role="text" aria-label="AXN 05FB GOVERNANCE. Glyph checksum: left-pointing magnifying glass, infinity, palms up together, person with folded hands, gear, high brightness symbol." style="font-family:var(--mono);font-size:1.1em;color:var(--teal);background:var(--surface);padding:12px;border-radius:6px;border-left:4px solid var(--teal);margin:12px 0">AXN:05FB.GOVERNANCE.🔍∞🤲🙏⚙️🔆</div>
+
+
+<h1>Data Interconnect: How the Measurement Instruments Read One Another</h1>
+<div style="font-size:.85em;color:#777;margin-bottom:10px">Sharks, Lee · 2026-08-15 · Technical Report · <span style="color:var(--accent);font-weight:500">v0.1 DRAFT</span></div>
+<a style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0" href="/data/deposits/AXN-05FB.md" download>↓ Download MD</a> <a style="display:inline-block;background:var(--accent);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0 6px 4px" href="/papers/AXN-05FB.pdf">↓ PDF</a>
+<div style="margin:8px 0"><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">measurement stack</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">data interconnect</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">instrument coupling</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">provenance erasure</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">capture registry</span></div>
+<h2>Description</h2>
+<p style="font-size:.9em">Specifies the data paths between the archive&#x27;s measurement instruments — which files each reads, which it writes, and where a value computed by one becomes an input to another — so that a change in one instrument&#x27;s output has a traceable consequence downstream.</p>
+
+<h2>Wiki Article</h2>
+<div style="background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:16px;margin:8px 0;font-size:.88em;line-height:1.75;color:#333"><strong>Data Interconnect</strong> specifies the paths between the archive&#x27;s measurement instruments — which files each reads, which it writes, and <strong>where a value computed by one becomes an input to another</strong> — so that a change in any instrument&#x27;s output has a traceable consequence downstream.
+
+The motivation is that a measurement stack whose couplings are undocumented will drift silently: an instrument&#x27;s definition changes, its consumers keep running, and <strong>nothing reports that the downstream numbers now mean something else.</strong> The specification is falsifiable in a direct way — <strong>a coupling that exists in code but not in the document, or vice versa, is a defect.</strong><div style="margin-top:12px;padding-top:9px;border-top:1px solid var(--border);font-size:.88em;color:#666">Also published as a standalone entry: <a href="/s/wiki/1481/" style="color:var(--accent)">/s/wiki/1481/</a></div></div>
+<h2>Concepts Defined</h2>
+<div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">instrument coupling</strong> <span style="font-size:.75em;color:#999">[]</span><br><span style="font-size:.85em;color:#444"></span></div>
+<div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">traceable downstream consequence</strong> <span style="font-size:.75em;color:#999">[]</span><br><span style="font-size:.85em;color:#444"></span></div>
+
+<h2>Full Text</h2>
+
+<div class="ft"><h2>Data Interconnect: How the Measurement Instruments Read One Another</h2>
+
+<h3>Description</h3>
+
+<p>Specifies the data paths between the archive&#x27;s measurement instruments — which files each reads, which it writes, and where a value computed by one becomes an input to another — so that a change in one instrument&#x27;s output has a traceable consequence downstream.</p>
+
+<h3>Methodology</h3>
+
+<p>Paths traced from each instrument&#x27;s source; couplings recorded as file-level dependencies.</p>
+
+<h3>Falsification Conditions</h3>
+
+<p>Falsified by an instrument coupling that exists in code but is absent from the specification, or vice versa.</p>
+
+<h2>ANEMIC JOINS</h2>
+
+<p><strong>How the capture registry should speak to the other datasets, narrowed to heteronyms</strong></p>
+
+<hr>
+
+<h3>I. The measurement</h3>
+
+<p>Seventeen datasets. The capture registry holds <strong>331 addresses and 474 captures</strong>. The heteronyms dataset holds <strong>26 records</strong> with a rich schema — roles, domains, voice signature, institutional affiliations, <code>associated_terms</code>.</p>
+
+<p>Between them:</p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">captures carrying a person link          0
+heteronym records carrying a capture     0</pre>
+
+<p><strong>Nothing. In either direction.</strong></p>
+
+<p>And yet 23 of the 26 heteronyms are nameable from capture text, at <strong>409 discoverable pairs</strong>. The join is not missing for lack of material.</p>
+
+<hr>
+
+<h3>II. Why the obvious join is a trap</h3>
+
+<p>Name matching produces 409 pairs. Its top three results:</p>
+
+<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">name</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">&quot;hits&quot;</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">ARCHIVE</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">162</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">SURFACE</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">54</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">LABOR</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">33</td></tr></table></div>
+
+<p><strong>These are mantle names that are also common English words.</strong> Nearly every one of those 249 pairs is false. A capture describing <em>the archive</em> is not a capture about the ARCHIVE mantle.</p>
+
+<p>The atlas already states the governing principle, in the context of the deposit resolver: <strong>a missing link is recoverable, a wrong one poisons the graph.</strong> Name matching would poison it on first run.</p>
+
+<hr>
+
+<h3>III. Five principles</h3>
+
+<h4>1 · One direction is authored, the other is derived</h4>
+
+<p>A capture is a <strong>dated event</strong>. A heteronym is an <strong>undated entity</strong>. Events accumulate on entities; entities do not reach into events.</p>
+
+<p>So: <strong>the capture names what it is about, at intake.</strong> The heteronym record receives its capture list <strong>at build</strong>, as a derived rollup with a build timestamp. Never both authored — two hand-maintained sides of one relation drift, and the drift is silent.</p>
+
+<p>This is the same asymmetry that made forward-pointing wrong for versions: <strong>backward pointers are cheap and permanent; forward views should be computed, not stored.</strong></p>
+
+<h4>2 · Join through an existing key, never by name</h4>
+
+<p>The archive already has the key. This chain is live right now:</p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">lexical term  →  defined_in_deposit  →  deposit.creator  →  heteronym
+capture.q     →  lexical term</pre>
+
+<p>Deposits already attribute to heteronyms by creator: <strong>Johannes Sigil 176, Rex Fraction 90, TACHYON 86, Nobel Glas 41</strong>. The lexicon holds <strong>12,175 terms across 593 deposits</strong>.</p>
+
+<p>Run end to end, that chain yields <strong>22 exact-match capture→heteronym pairs</strong> — and they are correct on inspection:</p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">adversarial-topologist-20260814   →  Nobel Glas
+capital-operator-stack            →  Rex Fraction
+glyphic-checksum                  →  TACHYON
+generative-disciplinary-engine    →  Talos Morrow</pre>
+
+<p>Twenty-two clean beats four hundred and nine dirty. <strong>The join is semantic, through what a heteronym coined, rather than nominal, through what a string looks like.</strong></p>
+
+<h4>3 · One ladder, extended — not a second resolver</h4>
+
+<p><code>resolve_capture_links.py</code> already implements an auditable ladder: <code>hard/axn</code>, <code>hard/doi</code>, <code>hard/series</code>, <code>soft/title</code>, <code>soft/keyword</code>, <code>soft/body</code>, <code>soft/description</code>, with fan-out caps.</p>
+
+<p><strong>Add person tiers to that ladder.</strong> Do not write a parallel heteronym resolver, or the two will disagree and there will be no way to say which is right.</p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">hard/orcid       an ORCID in the transcript resolves to a person
+hard/creator     the capture&#x27;s linked deposit has that heteronym as creator
+hard/coinage     the query exactly matches a term whose deposit that heteronym authored
+soft/name        a name appears in the transcript — WITH A STOPLIST for
+                 ARCHIVE · SURFACE · LABOR · SOIL · PRAXIS · TECHNE</pre>
+
+<h4>4 · Every edge carries its tier and its evidence</h4>
+
+<p>An edge that cannot say <em>why</em> it exists cannot be audited, and an unauditable graph is worse than a sparse one. Each join records tier, the matched string, and the date computed — exactly as the capture-deposit join does.</p>
+
+<h4>5 · Populate the field the schema already has, before adding fields</h4>
+
+<p><strong><code>associated_terms</code> exists in the heteronym schema and is 96% empty</strong> — 1 record of 26, carrying 6 terms. That one populated record already yields <strong>58 clean term-based capture pairs</strong> on its own.</p>
+
+<p>The instinct on meeting an anemic join is to add a field. The field is already there.</p>
+
+<hr>
+
+<h3>IV. Maximum impact, narrowed</h3>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <strong>Populate <code>associated_terms</code> by derivation, for the other 25 records.</strong></blockquote>
+
+<p>One act, and it is not data entry:</p>
+
+<p><strong>It is derivable.</strong> <code>term → defined_in_deposit → creator → heteronym</code> covers <strong>15 heteronyms</strong> and <strong>5,492 term-ownerships</strong> today, with no new authoring.</p>
+
+<p><strong>It needs filtering, and the filter is the work.</strong> Those 5,492 include incidental headings — <em>&quot;A creature&quot;</em>, <em>&quot;Calculation&quot;</em>, <em>&quot;C_m = 0.95&quot;</em>. A coinage is not every bolded phrase in a deposit. The filter is where judgment goes, and it should be a published rule rather than a hand-curated list.</p>
+
+<p><strong>It pays out beyond captures.</strong> <code>associated_terms</code> is a semantic key. Once populated it joins heteronyms to the lexicon, to deposits, to the citation graph, and to any future dataset with terms in it. The capture join is the first consumer, not the only one.</p>
+
+<p><strong>And it is bounded.</strong> Twenty-five records. Not a program.</p>
+
+<h4>The second act, if there is room for two</h4>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <strong>Give captures an authored <code>entities[]</code> field at intake.</strong></blockquote>
+
+<p>Named at seating, when the operator knows what the capture is about and no inference is required. The derived joins then have something to agree or disagree with — and <strong>a derived edge that contradicts an authored one is a finding</strong>, not an error to be smoothed.</p>
+
+<hr>
+
+<h3>V. What not to do</h3>
+
+<p><strong>Do not hardcode capture lists into heteronym records.</strong> They will go stale on the next intake and nothing will notice. Derived, with a build timestamp, or not at all.</p>
+
+<p><strong>Do not join on names without a stoplist.</strong> Six of the seven mantle names are common English words.</p>
+
+<p><strong>Do not build the general solution first.</strong> Seventeen datasets, and a universal join layer is a project that will not finish. One relation, done with an auditable ladder and published tiers, is a template the next relation can copy.</p>
+
+<p><strong>Do not let the graph grow faster than it can be audited.</strong> 22 edges that can each name their tier and evidence are worth more than 409 that cannot.</p>
+
+<hr>
+
+<h3>VI. Limits</h3>
+
+<p>The 22 exact-match pairs are a floor, not a ceiling — they require the query to match a coined term <em>exactly</em>, and most capture queries are natural-language questions. The soft tiers will add more and will need caps.</p>
+
+<p>The derivation inherits whatever is wrong with deposit <code>creator</code> fields. If a deposit misattributes, the heteronym inherits a term it never coined, and the capture joins to the wrong person. <strong>The join is only as good as the creator field</strong>, and that field has never been audited for this purpose.</p>
+
+<p>And <code>associated_terms</code> derived from authored deposits records <strong>what a heteronym coined</strong>, not <strong>what a heteronym is about</strong>. Those differ. A heteronym can be centrally concerned with a term another heteronym minted, and this derivation will miss it.</p>
+
+<hr>
+
+<h3>SOURCES</h3>
+
+<p>Measured 2026-08-14 against <code>data/EA-WG-CAPTURES-01.json</code> (v11.1, 331 addresses, 474 captures), <code>datasets/heteronyms/heteronyms.jsonl</code> (26 records), <code>data/lexical-minting-registry.json</code> (12,175 terms), <code>data/registry.json</code> (1,473 deposits). Existing ladder: <code>scripts/resolve_capture_links.py</code>. Governing principle on conservatism: Dataflow Atlas v1.2 §4, <em>the transcript is a join key</em>.</p>
+</div>
+
+<!-- APPARATUS BLOC — everything below records how this record was processed,
+     not what the work says. It follows the work because a reader came for the
+     work. (MANUS standing rule, 2026-08-06: recording of method or modification
+     does not appear in body text.) -->
+
+
+
+<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/1480/" style="color:var(--accent);text-decoration:none">#1480 Ω_t: A Matched-Pair Drift Operator for the Capture Registry, with Trial OMT-001 Pre-Regi</a></span><span style="flex:1"><a href="/s/records/1482/" style="color:var(--accent);text-decoration:none">#1482 GW.TACHYON Continuity Tether — 🕳️🔑🔁: The Hollow Was the Instrument, the Key Was Already </a> →</span></div></section>
+<script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
+</div></body></html>
