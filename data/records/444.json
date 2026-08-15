@@ -1,0 +1,562 @@
+{
+ "axn": "AXN:0103.EMPIRICAL.🚨🧊🎯🏷️🎶👁️",
+ "root_axn": "AXN:0103.EMPIRICAL",
+ "hex": "0103",
+ "family": "EMPIRICAL",
+ "emoji": "🚨🧊🎯🏷️🎶👁️",
+ "hash": "c01d554c88577706a26fcf1d96ab18384b0bb47da596fa4eeae385370aeb8724",
+ "title": "THE TELEMETRY MODULE Logotic Programming Extension Module v0.8 (UMBML Specification)",
+ "creator": "Rex Fraction",
+ "orcid": "0009-0000-1599-0703",
+ "date": "2026-02-04",
+ "description": "The sealed v0.8 Telemetry Module in the UMBML Logotic Programming extension chain. It addresses the gap between a traversal grammar that specifies operations and a terminal witness record that only reports the result. Its principal addition is EMIT, a concurrent grammar operation through which each traversal step generates a structured account of what it produced, changed, cost, or failed to accomplish.\n\nThe module defines event types, semantic spans, trace and chain fields, public/private payload tiers, routing rules, tombstones for telemetry gaps, and an “economics of rotation” that interprets cost as semantic labor and epistemic distance as well as tokens, time, and infrastructure. It is designed to map into systems such as OpenTelemetry or Langfuse while supplying archive-native semantics; it is a design specification, not evidence of a deployed implementation.",
+ "content_type": "Specification",
+ "license": "CC-BY-4.0",
+ "substrate": "Various",
+ "keywords": [
+  "meaning-preserving accounting",
+  "ordinal before cardinal",
+  "concurrent operation",
+  "the telemetry module",
+  "correlation metric",
+  "terminal operation",
+  "grammar operation",
+  "glyphic checksum"
+ ],
+ "version": "v1.0",
+ "deposit_number": 444,
+ "sovereign_id": "MM-CHA-0255",
+ "minted_at": "2026-06-20T22:00:00Z",
+ "status": "ACTIVE",
+ "clusters": [
+  "Signal",
+  "Elemental",
+  "Navigational",
+  "Scriptural",
+  "Symbolic",
+  "Navigational"
+ ],
+ "reading": "Alarm → Force → Search → Text → Play → Search",
+ "axn_canonical": "c01d554c88577706a26fcf1d96ab18384b0bb47da596fa4eeae385370aeb8724",
+ "axn_display": "🚨🧊🎯🏷️🎶👁️",
+ "mirrors": {
+  "blog": "https://mindcontrolpoems.blogspot.com/2026/02/the-telemetry-module-logotic.html"
+ },
+ "zenodo_dois": [
+  "10.5281/zenodo.18459278",
+  "10.5281/zenodo.18452806",
+  "10.5281/zenodo.18452132",
+  "10.5281/zenodo.18484654",
+  "10.5281/zenodo.18286050",
+  "10.5281/zenodo.18480959",
+  "10.5281/zenodo.18452686",
+  "10.5281/zenodo.18483834",
+  "10.5281/zenodo.14557837",
+  "10.5281/zenodo.18459573"
+ ],
+ "full_text_path": "/data/texts/AXN-0103-text.md",
+ "full_text_chars": 59219,
+ "wiki_article": "The Telemetry Module v0.8 extends the Traversal Grammar and Conformance Module by adding process-level self-description. Earlier modules specify what a traversal does and how completion can be checked. Telemetry asks what the traversal can say about itself while execution is still underway.\n\nIts new operation, **EMIT**, is generated for each grammar step, including failures. Emissions record event type, chain position, active mantle, a snapshot of LOGOS state, and optional cost. Routing may send them to witness, stream, archive, conventional tracing, or null, but a minimum tombstone is supposed to remain so terminal witness can account for missing detail.\n\nA **semantic span** joins ordinary operational metrics—duration, status, resource use—to epistemic fields such as room, degrees traversed, state change, active anchors, drift, and failure mode. The module’s public/private tiers are intended to prevent exported telemetry from reproducing raw prompts, retrieved passages, user input, or full semantic content by default.\n\nThe module does not reject standard observability; it proposes a semantic substrate beneath it. Its concise distinction is that engineering spans report how long an operation took, while semantic spans report how far the LOGOS moved. This remains a specification for an architecture and should not be described as an installed monitoring service without implementation evidence.",
+ "entities": [
+  {
+   "subject": "THE TELEMETRY MODULE Logotic Programming Extension",
+   "predicate": "created_by",
+   "object": "Rex Fraction",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "THE TELEMETRY MODULE Logotic Programming Extension",
+   "predicate": "is_type",
+   "object": "Specification",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "THE TELEMETRY MODULE Logotic Programming Extension",
+   "predicate": "belongs_to_family",
+   "object": "EMPIRICAL",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "THE TELEMETRY MODULE Logotic Programming Extension",
+   "predicate": "is_part_of",
+   "object": "Crimson Hexagonal Archive",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "THE TELEMETRY MODULE Logotic Programming Extension",
+   "predicate": "references",
+   "object": "Rebekah Cranes",
+   "type": "heteronym",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "THE TELEMETRY MODULE Logotic Programming Extension",
+   "predicate": "references",
+   "object": "Talos Morrow",
+   "type": "heteronym",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "THE TELEMETRY MODULE Logotic Programming Extension",
+   "predicate": "references",
+   "object": "TACHYON",
+   "type": "heteronym",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "THE TELEMETRY MODULE Logotic Programming Extension",
+   "predicate": "engages",
+   "object": "Assembly Chorus",
+   "type": "concept",
+   "evidence_status": "inferred"
+  },
+  {
+   "subject": "THE TELEMETRY MODULE Logotic Programming Extension",
+   "predicate": "engages",
+   "object": "Glyphic Checksum",
+   "type": "concept",
+   "evidence_status": "inferred"
+  },
+  {
+   "subject": "ANTI-T2: Decorative Emissions",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "The implementation emits spans with correct event types but fabricated or static values — every rota"
+  },
+  {
+   "subject": "ANTI-T3: Post-Hoc Rationalization",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "The implementation generates emissions after the traversal completes by analyzing the output and inf"
+  },
+  {
+   "subject": "CONTENT_PRIVATE",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "optional, non-exportable internal fields. This includes: raw engine prompts, retrieved passage text,"
+  },
+  {
+   "subject": "CONTENT_PUBLIC",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "the exportable semantic self-description. This includes: state transitions, degrees, anchors *by ID*"
+  },
+  {
+   "subject": "Correlation, not causation",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "degrees_per_token is a **correlation metric** — it expresses a ratio between two independently measu"
+  },
+  {
+   "subject": "Cross-system correlation",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "When a traversal program triggers operations across multiple substrate systems (e.g., one LLM for ro"
+  },
+  {
+   "subject": "DRIFT_WARNING",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "If drift_vector.direction == \"summarization\" and drift_vector.magnitude > 0.2, the emission should i"
+  },
+  {
+   "subject": "Design note",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "The trace_id here is not an OpenTelemetry trace ID, though it can be correlated with one. It is a *t"
+  },
+  {
+   "subject": "EMIT",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "an eighth grammar operation that allows any traversal step to declare what it produced, what it cost"
+  },
+  {
+   "subject": "EMIT vs. WITNESS ontology",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "WITNESS records *claims about completion* — what happened, final state, degrees, chain summary. EMIT"
+  },
+  {
+   "subject": "Emission integrity",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "Should emissions themselves be checksummed or signed? If WITNESS depends on emission data, and emiss"
+  },
+  {
+   "subject": "Emission integrity field",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "WITNESS records must include an emission_integrity field with one of three values:"
+  },
+  {
+   "subject": "Emission volume under load",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "At what point does telemetry emission itself become a performance concern? The grammar mandates gene"
+  },
+  {
+   "subject": "Exemplar note",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "This exemplar is **shape guidance**, not a required field schema. Conformant implementations preserv"
+  },
+  {
+   "subject": "GRAV-01 (Rotation Preserves Structure)",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "A rotation with high drift_vector.magnitude has drifted from structural preservation. If drift is co"
+  },
+  {
+   "subject": "GRAV-04 (Rendering Separates from Rotation)",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "If transformative_depth changes when the same rotation is re-rendered in a different mode, the separ"
+  },
+  {
+   "subject": "GRAV-05 (State Threading Tends Toward Continuity)",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "In a chain, if transformative_depth drops from structural to surface at chain link boundaries while "
+  },
+  {
+   "subject": "Non-degree operations",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "For operations without degree semantics (ANCHOR, ACTIVATE_MANTLE, SET_LOGOS without state change, RE"
+  },
+  {
+   "subject": "Room-type calibration",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "Different Rooms have different expected drift bands and state-change profiles. A creative/generative"
+  },
+  {
+   "subject": "Rule (Generation)",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "EMIT is **involuntary at the generation layer**. A conformant implementation must *generate* an emis"
+  },
+  {
+   "subject": "Rule (Minimum Viable Emission)",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "Even under null routing, every generated emission must produce at minimum a **tombstone** — the even"
+  },
+  {
+   "subject": "Rule (Routing)",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "Emission *routing* is configurable. Generated emissions may be routed to a witness layer, a stream, "
+  },
+  {
+   "subject": "Semantic labor OTel flattening",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "OTel string attributes have length constraints (typically 128 characters). The semantic labor vector"
+  },
+  {
+   "subject": "Semantic labor calibration",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "The vector representation (§3.3) replaces the scalar heuristic. How should transformative_depth be a"
+  },
+  {
+   "subject": "Semantic labor vector",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "SemanticLabor :: {"
+  },
+  {
+   "subject": "Structural enforcement",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "HARD-T2 (§4.2) requires that emission *export* — to witness layers, streams, archives, or external t"
+  },
+  {
+   "subject": "Structural note",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "Substrate and semantic costs are separated because they have different availability profiles. An imp"
+  },
+  {
+   "subject": "Telemetry as input (recursion constraint)",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "Can emissions from one traversal serve as input to a subsequent traversal? (A meta-traversal that re"
+  },
+  {
+   "subject": "The Economics of Rotation",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "a framework for understanding traversal cost not as compute expense but as *semantic labor*: the wor"
+  },
+  {
+   "subject": "Transformative depth classification",
+   "predicate": "minted_in",
+   "object": "THE TELEMETRY MODULE Logotic Programming Extension Module v0",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "surface: No LOGOS state fields changed. Depth unchanged, state unchanged, cut unchanged. The LOGOS w"
+  }
+ ],
+ "journal": "Transactions of the Semantic Economy Institute (Trans. SEI)",
+ "cited_by": [
+  {
+   "deposit": 16,
+   "axn": "AXN:0105.STRUCTURAL.●●🧲⭕🪐⛩️"
+  },
+  {
+   "deposit": 17,
+   "axn": "AXN:0112.EMPIRICAL.🔬⚓🔙🌔🔼🌠"
+  },
+  {
+   "deposit": 49,
+   "axn": "AXN:01DC.GOVERNANCE.⏳🔆⛳👁️▲🔀"
+  },
+  {
+   "deposit": 115,
+   "axn": "AXN:029C.GOVERNANCE.📖♦️💙🚀⏬✏️"
+  },
+  {
+   "deposit": 116,
+   "axn": "AXN:029D.GOVERNANCE.💛♻️✖️❤️🌕⚓"
+  },
+  {
+   "deposit": 119,
+   "axn": "AXN:02A1.GOVERNANCE.○🚪🫶🧊○📎"
+  }
+ ],
+ "references_concepts": [
+  "ACTIVATE_MANTLE",
+  "ANTI-T2: Decorative Emissions",
+  "ANTI-T3: Post-Hoc Rationalization",
+  "ASSEMBLY",
+  "Assembly Chorus",
+  "CANONICAL",
+  "COMPLETE",
+  "CONTENT_PRIVATE",
+  "CONTENT_PUBLIC",
+  "Completeness",
+  "Correlation, not causation",
+  "Cross-system correlation",
+  "DRIFT_WARNING",
+  "Design note",
+  "Differentiation",
+  "EMIT vs. WITNESS ontology",
+  "Emission integrity",
+  "Emission integrity field",
+  "Emission volume under load",
+  "Exemplar note",
+  "GRAV-01 (Rotation Preserves Structure)",
+  "GRAV-04 (Rendering Separates from Rotation)",
+  "GRAV-05 (State Threading Tends Toward Continuity)",
+  "Graceful degradation",
+  "Logotic Programming v0.4",
+  "Non-degree operations",
+  "ON_FAILURE",
+  "RENDER",
+  "ROTATE",
+  "Rebekah Cranes",
+  "Rex Fraction",
+  "Room-type calibration",
+  "Rule (Generation)",
+  "Rule (Minimum Viable Emission)",
+  "Rule (Routing)",
+  "SET_LOGOS",
+  "Semantic Labor",
+  "Semantic labor",
+  "Semantic labor OTel flattening",
+  "Semantic labor calibration",
+  "Semantic labor vector",
+  "Span hierarchy",
+  "Structural enforcement",
+  "Structural note",
+  "Substrate",
+  "TACHYON",
+  "TECHNE",
+  "Telemetry as input (recursion constraint)",
+  "The Economics of Rotation",
+  "The Traversal Grammar",
+  "Transformative depth",
+  "Transformative depth classification",
+  "University Moon Base Media Lab",
+  "Visualization"
+ ],
+ "defines_concepts": [
+  "ANTI-T2: Decorative Emissions",
+  "ANTI-T3: Post-Hoc Rationalization",
+  "CONTENT_PRIVATE",
+  "CONTENT_PUBLIC",
+  "Correlation, not causation",
+  "Cross-system correlation",
+  "DRIFT_WARNING",
+  "Design note",
+  "EMIT",
+  "EMIT vs. WITNESS ontology",
+  "Emission integrity",
+  "Emission integrity field",
+  "Emission volume under load",
+  "Exemplar note",
+  "GRAV-01 (Rotation Preserves Structure)",
+  "GRAV-04 (Rendering Separates from Rotation)",
+  "GRAV-05 (State Threading Tends Toward Continuity)",
+  "Non-degree operations",
+  "Room-type calibration",
+  "Rule (Generation)",
+  "Rule (Minimum Viable Emission)",
+  "Rule (Routing)",
+  "Semantic labor OTel flattening",
+  "Semantic labor calibration",
+  "Semantic labor vector",
+  "Structural enforcement",
+  "Structural note",
+  "Telemetry as input (recursion constraint)",
+  "The Economics of Rotation",
+  "Transformative depth classification"
+ ],
+ "references_concept_count": 54,
+ "external_metadata_path": "/data/external-metadata/AXN-0103.json",
+ "openalex_ids": [
+  "https://openalex.org/W7127117152",
+  "https://openalex.org/W7127064268",
+  "https://openalex.org/W7126395293",
+  "https://openalex.org/W7127615523",
+  "https://openalex.org/W7124564010",
+  "https://openalex.org/W7127594780",
+  "https://openalex.org/W7127074540",
+  "https://openalex.org/W7127574956",
+  "https://openalex.org/W7127115961"
+ ],
+ "datacite_severance": "severed",
+ "body_status": {
+  "class": "full",
+  "lacuna": false,
+  "recovery_status": "COMPLETE",
+  "residual_chars": 52999,
+  "audited_at": "2026-07-17T04:49:17.789813Z",
+  "audit_version": "v3-dual-store+recovery-map",
+  "measured_prose_words": 7127,
+  "measured_at": "2026-07-31",
+  "work_sha256": "264dd55e19a8c78d60c815031b697de471e0969ca23b84a5652096038ef5f8e6",
+  "prior_bytes_sha256": "06ad289029517ef7a1f0bf43fae13833e5840841d0cb790360d4df4794992849",
+  "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 22 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
+  "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
+ },
+ "canonical_text_status": "canonical_full_text",
+ "modifications": [
+  {
+   "date": "2026-08-01",
+   "field": "journal",
+   "reason": "Wave 6 venue normalization: full canonical journal name per MANUS ruling 2026-08-01 (venues.json authority)",
+   "was": "Trans. SEI",
+   "now": "Transactions of the Semantic Economy Institute (Trans. SEI)"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "publisher",
+   "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
+   "now": "Pergamon Press"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "status",
+   "reason": "W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note",
+   "was": "MINTED_UNREVIEWED",
+   "now": "ACTIVE"
+  },
+  {
+   "date": "2026-08-05",
+   "field": "body_status",
+   "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
+   "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 52999, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+   "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 52999, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
+  },
+  {
+   "date": "2026-08-05",
+   "field": "body_status",
+   "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
+   "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 52999, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+   "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 52999, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
+  },
+  {
+   "date": "2026-08-05",
+   "field": "description",
+   "reason": "DW-028 intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
+   "was": "The Traversal Grammar (v0.6) specifies what a traversal does. The Conformance Module (v0.7) specifies how we know a traversal was done correctly. Neither specifies what the traversal says about itself while it is happening. This is the telemetry gap.",
+   "now": "The sealed v0.8 Telemetry Module in the UMBML Logotic Programming extension chain. It addresses the gap between a traversal grammar that specifies operations and a terminal witness record that only reports the result. Its principal addition is EMIT, a concurrent grammar operation through which each traversal step generates a structured account of what it produced, changed, cost, or failed to accomplish.\n\nThe module defines event types, semantic spans, trace and chain fields, public/private payload tiers, routing rules, tombstones for telemetry gaps, and an “economics of rotation” that interprets cost as semantic labor and epistemic distance as well as tokens, time, and infrastructure. It is designed to map into systems such as OpenTelemetry or Langfuse while supplying archive-native semantics; it is a design specification, not evidence of a deployed implementation."
+  }
+ ],
+ "date_modified": "2026-08-05",
+ "publisher": "Pergamon Press",
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/444/",
+  "self_url": "https://www.alexanarch.org/data/records/444.json",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-0103-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}

@@ -1,0 +1,505 @@
+{
+ "axn": "AXN:028B.GOVERNANCE.♣️🌃🌕🏰🗝️🔓",
+ "hex": "028B",
+ "family": "GOVERNANCE",
+ "emoji": "♣️🌃🌕🏰🗝️🔓",
+ "hash": "83e204273ffad16e3a4e224c131c22eb6668c3c355bc208ce5d80ca1fe23db1f",
+ "title": "The Semantic Deviation Principle (v0.2 Final): A Measurement Primitive for Semantic Physics",
+ "creator": "Lee Sharks with the Assembly Chorus",
+ "orcid": "0009-0000-1599-0703",
+ "date": "2026-05-17",
+ "description": "The v0.2 Final statement of the **Semantic Deviation Principle**, developed from Lee Sharks’s seed formulation—“variance from what is most likely over time”—and formalized through Assembly Chorus review. The principle defines raw semantic magnitude as the time-integrated divergence a sign, event, document, or operator induces between a semantic field’s probable trajectory with and without that intervention.\n\nThe paper separates three quantities: raw field deformation, provenance-resolved deformation, and normative semantic value. It specifies Jensen–Shannon divergence as the default empirical functional, distinguishes normalized intensity from accumulated divergence-over-time, and tiers counterfactual measurement from prospective intervention to historical approximation. The record proposes a measurement primitive and supplies supplementary computational materials; it does not claim that every domain-specific operationalization or the normative weighting term has already been solved.",
+ "content_type": "Empirical study",
+ "license": "CC-BY-4.0",
+ "substrate": "AI-assisted (substrate)",
+ "keywords": [
+  "empirical study"
+ ],
+ "version": "v1.0",
+ "status": "ACTIVE",
+ "clusters": [
+  "Symbolic",
+  "Liminal",
+  "Celestial",
+  "Architectural",
+  "Instrumental",
+  "Terminal"
+ ],
+ "reading": "Play → Threshold → Origin → Foundation → Method → Closure",
+ "full_text_path": "/data/texts/AXN-028B-text.md",
+ "mirrors": {
+  "blog": "https://mindcontrolpoems.blogspot.com/2026/05/the-semantic-deviation-principle-v02.html",
+  "machinemediation": "https://machinemediation.org/registry/#search=MM-CHA-0647"
+ },
+ "wiki_article": "*The Semantic Deviation Principle v0.2 Final* is the founding measurement-primitive paper of the archive’s Measurement of Meaning series.\n\nIts core sentence is:\n\n> Meaning is the time-integrated divergence a sign-token, event, or operator induces from the most probable trajectory of a semantic field.\n\nThe paper distinguishes this from Shannon surprisal. Surprisal measures how improbable a sign is when it appears. Semantic deviation measures the durable change that follows from the sign’s introduction. A random string may be highly surprising while producing little sustained field deformation.\n\nThe operative distributional form compares:\n\n- the probability distribution over future semantic states without the intervention;\n- the distribution over future semantic states with the intervention;\n- a declared divergence functional;\n- a declared temporal weighting function and horizon.\n\nJensen–Shannon divergence is the default proposed for empirical use because it is symmetric, bounded, and finite under support mismatch. KL divergence and Wasserstein distance are retained for specified conditions.\n\nThe paper distinguishes normalized and accumulated forms:\n\n- normalized weighting yields mean deformation intensity in the units of the divergence measure;\n- unnormalized weighting yields accumulated divergence-over-time, such as bit-days or bit-years.\n\nThree measures are separated:\n\n1. **Raw Semantic Magnitude** measures how much the field changes.\n2. **Provenance-Resolved Semantic Magnitude** multiplies raw magnitude by the surviving provenance share, `1 − PER`, and asks how much of the deformation remains accountable to its source.\n3. **Normative Semantic Value** adds a still-incomplete weighting term intended to distinguish commons-enriching from extractive deformation.\n\nThis separation corrects the earlier implication that provenance erasure returns the field to its original trajectory. The paper instead says that a copied or unattributed idea may continue to deform the field while becoming an orphaned deformation whose origin can no longer be resolved.\n\nThe counterfactual baseline is treated as the central methodological difficulty. Measurement is divided into:\n\n- prospective interventions with recorded baselines;\n- natural experiments and synthetic controls;\n- historical approximations with explicit uncertainty.\n\nThe paper is a first ground, not a final theory. Domain-specific definitions of the semantic field, robust counterfactual construction, operationalization of the normative weight, and comparison among divergence functions remain research tasks.",
+ "wiki_status": "provisional",
+ "entities": [
+  {
+   "subject": "The Semantic Deviation Principle (v0.2 Final) A Me",
+   "predicate": "created_by",
+   "object": "Johannes Sigil",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "The Semantic Deviation Principle (v0.2 Final) A Me",
+   "predicate": "is_type",
+   "object": "Empirical study",
+   "type": "classification",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "The Semantic Deviation Principle (v0.2 Final) A Me",
+   "predicate": "belongs_to_family",
+   "object": "GOVERNANCE",
+   "type": "classification",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "The Semantic Deviation Principle (v0.2 Final) A Me",
+   "predicate": "is_part_of",
+   "object": "Crimson Hexagonal Archive",
+   "type": "institution",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Divergence functional theorems",
+   "predicate": "minted_in",
+   "object": "The Semantic Deviation Principle (v0.2 Final) A Measurement ",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "Conditions under which different choices of $D$ yield equivalent rankings of meaningful inscriptions"
+  },
+  {
+   "subject": "First real-field measurement",
+   "predicate": "minted_in",
+   "object": "The Semantic Deviation Principle (v0.2 Final) A Measurement ",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "Tier 1 protocol on an actual deposit. EA-SEI-MM-02."
+  },
+  {
+   "subject": "Jensen-Shannon divergence",
+   "predicate": "minted_in",
+   "object": "The Semantic Deviation Principle (v0.2 Final) A Measurement ",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "$D_{JS}(P \\Vert Q) = \\tfrac{1}{2}D_{KL}(P \\Vert M) + \\tfrac{1}{2}D_{KL}(Q \\Vert M)$ where $M = \\tfra"
+  },
+  {
+   "subject": "Kullback-Leibler divergence",
+   "predicate": "minted_in",
+   "object": "The Semantic Deviation Principle (v0.2 Final) A Measurement ",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "$D_{KL}(P \\Vert Q) = \\sum P(x) \\log(P(x)/Q(x))$ — asymmetric, infinite when supports differ, idealiz"
+  },
+  {
+   "subject": "LOS counter-operations",
+   "predicate": "minted_in",
+   "object": "The Semantic Deviation Principle (v0.2 Final) A Measurement ",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "when the audit is violated"
+  },
+  {
+   "subject": "Lower-bound",
+   "predicate": "minted_in",
+   "object": "The Semantic Deviation Principle (v0.2 Final) A Measurement ",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "$\\mathcal{M}_T$ by assuming $\\Psi_t^0$ = nearest-neighbor trajectory (the most similar contemporary "
+  },
+  {
+   "subject": "Pre-register",
+   "predicate": "minted_in",
+   "object": "The Semantic Deviation Principle (v0.2 Final) A Measurement ",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "a query set $Q$, a divergence functional $D$, a horizon $T$, and a weighting $w(t)$."
+  },
+  {
+   "subject": "Provenance of the measurement itself",
+   "predicate": "minted_in",
+   "object": "The Semantic Deviation Principle (v0.2 Final) A Measurement ",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "(who, when, with what instrument, for what purpose)"
+  },
+  {
+   "subject": "README.md",
+   "predicate": "minted_in",
+   "object": "The Semantic Deviation Principle (v0.2 Final) A Measurement ",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "supplementary deposit documentation, including the v0.1 → v0.2 numerical correction note."
+  },
+  {
+   "subject": "Record baseline",
+   "predicate": "minted_in",
+   "object": "The Semantic Deviation Principle (v0.2 Final) A Measurement ",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "$\\Psi_{t_0}^0$ before $s$ is introduced."
+  },
+  {
+   "subject": "Recursive baseline computation",
+   "predicate": "minted_in",
+   "object": "The Semantic Deviation Principle (v0.2 Final) A Measurement ",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "Methods for computing $\\Psi_t^{(n)}$ as the accumulation of prior deformations. EA-SEI-MM-03."
+  },
+  {
+   "subject": "Self-reference cutoffs",
+   "predicate": "minted_in",
+   "object": "The Semantic Deviation Principle (v0.2 Final) A Measurement ",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "The measurement of a measurement of a measurement — at what order does the regress become operativel"
+  },
+  {
+   "subject": "Supplementary",
+   "predicate": "minted_in",
+   "object": "The Semantic Deviation Principle (v0.2 Final) A Measurement ",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "deviation_compute.py, deviation_series.csv, deviation_metrics.txt, README.md"
+  },
+  {
+   "subject": "Three-measure reporting",
+   "predicate": "minted_in",
+   "object": "The Semantic Deviation Principle (v0.2 Final) A Measurement ",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "($\\mathcal{M}_T$, $\\mathcal{M}_T^{\\pi}$, $\\mathcal{V}_T$) — never $\\mathcal{M}_T$ alone"
+  },
+  {
+   "subject": "Upper-bound",
+   "predicate": "minted_in",
+   "object": "The Semantic Deviation Principle (v0.2 Final) A Measurement ",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "$\\mathcal{M}_T$ by assuming $\\Psi_t^0$ = maximum entropy over plausible alternative trajectories."
+  },
+  {
+   "subject": "W operationalization",
+   "predicate": "minted_in",
+   "object": "The Semantic Deviation Principle (v0.2 Final) A Measurement ",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "The sketch in §3.3 needs empirical instruments for $\\Delta C$ and $\\Delta E$. EA-SEI-VALUE-01."
+  },
+  {
+   "subject": "Wasserstein distance",
+   "predicate": "minted_in",
+   "object": "The Semantic Deviation Principle (v0.2 Final) A Measurement ",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "respects geometry of the state space; preferred when state distance carries semantic content."
+  }
+ ],
+ "entity_status": "provisional",
+ "sovereign_id": "MM-CHA-0647",
+ "word_count": 5847,
+ "download_md": "/data/deposits/AXN-028B.md",
+ "zenodo_dois": [
+  "10.5281/zenodo.20210117",
+  "10.5281/zenodo.19763346",
+  "10.5281/zenodo.19053469",
+  "10.5281/zenodo.19023457",
+  "10.5281/zenodo.18291767",
+  "10.5281/zenodo.20208384",
+  "10.5281/zenodo.19366750",
+  "10.5281/zenodo.18307393",
+  "10.5281/zenodo.19116151",
+  "10.5281/zenodo.18202475",
+  "10.5281/zenodo.20220299"
+ ],
+ "citations": [
+  {
+   "title": "Zenodo record 18307393",
+   "authors": [
+    "Crimson Hexagonal Archive"
+   ],
+   "year": "2026",
+   "doi": "10.5281/zenodo.18307393",
+   "url": "https://doi.org/10.5281/zenodo.18307393",
+   "role": "Cross-referenced work"
+  },
+  {
+   "title": "Zenodo record 20208384",
+   "authors": [
+    "Crimson Hexagonal Archive"
+   ],
+   "year": "2026",
+   "doi": "10.5281/zenodo.20208384",
+   "url": "https://doi.org/10.5281/zenodo.20208384",
+   "role": "Cross-referenced work"
+  },
+  {
+   "title": "Zenodo record 20210117",
+   "authors": [
+    "Crimson Hexagonal Archive"
+   ],
+   "year": "2026",
+   "doi": "10.5281/zenodo.20210117",
+   "url": "https://doi.org/10.5281/zenodo.20210117",
+   "role": "Cross-referenced work"
+  },
+  {
+   "title": "Zenodo record 20220299",
+   "authors": [
+    "Crimson Hexagonal Archive"
+   ],
+   "year": "2026",
+   "doi": "10.5281/zenodo.20220299",
+   "url": "https://doi.org/10.5281/zenodo.20220299",
+   "role": "Cross-referenced work"
+  },
+  {
+   "title": "Zenodo record 19763346",
+   "authors": [
+    "Crimson Hexagonal Archive"
+   ],
+   "year": "2026",
+   "doi": "10.5281/zenodo.19763346",
+   "url": "https://doi.org/10.5281/zenodo.19763346",
+   "role": "Cross-referenced work"
+  },
+  {
+   "title": "Zenodo record 19023457",
+   "authors": [
+    "Crimson Hexagonal Archive"
+   ],
+   "year": "2026",
+   "doi": "10.5281/zenodo.19023457",
+   "url": "https://doi.org/10.5281/zenodo.19023457",
+   "role": "Cross-referenced work"
+  },
+  {
+   "title": "Zenodo record 19053469",
+   "authors": [
+    "Crimson Hexagonal Archive"
+   ],
+   "year": "2026",
+   "doi": "10.5281/zenodo.19053469",
+   "url": "https://doi.org/10.5281/zenodo.19053469",
+   "role": "Cross-referenced work"
+  },
+  {
+   "title": "Zenodo record 19116151",
+   "authors": [
+    "Crimson Hexagonal Archive"
+   ],
+   "year": "2026",
+   "doi": "10.5281/zenodo.19116151",
+   "url": "https://doi.org/10.5281/zenodo.19116151",
+   "role": "Cross-referenced work"
+  },
+  {
+   "title": "Zenodo record 18202475",
+   "authors": [
+    "Crimson Hexagonal Archive"
+   ],
+   "year": "2026",
+   "doi": "10.5281/zenodo.18202475",
+   "url": "https://doi.org/10.5281/zenodo.18202475",
+   "role": "Cross-referenced work"
+  },
+  {
+   "title": "Zenodo record 18291767",
+   "authors": [
+    "Crimson Hexagonal Archive"
+   ],
+   "year": "2026",
+   "doi": "10.5281/zenodo.18291767",
+   "url": "https://doi.org/10.5281/zenodo.18291767",
+   "role": "Cross-referenced work"
+  },
+  {
+   "title": "Zenodo record 19366750",
+   "authors": [
+    "Crimson Hexagonal Archive"
+   ],
+   "year": "2026",
+   "doi": "10.5281/zenodo.19366750",
+   "url": "https://doi.org/10.5281/zenodo.19366750",
+   "role": "Cross-referenced work"
+  }
+ ],
+ "citation_stats": {
+  "total_doi_refs": 11
+ },
+ "deposit_number": 109,
+ "journal": "Transactions of the Semantic Economy Institute (Trans. SEI)",
+ "cited_by": [
+  {
+   "deposit": 109,
+   "axn": "AXN:028B.GOVERNANCE.♣️🌃🌕🏰🗝️🔓"
+  },
+  {
+   "deposit": 176,
+   "axn": "AXN:0313.GOVERNANCE.🎲☀️🛡️🔖📜☿"
+  }
+ ],
+ "references_concepts": [
+  "Assembly Chorus",
+  "Canon Formation",
+  "Crimson Hexagonal Archive",
+  "Divergence functional theorems",
+  "First real-field measurement",
+  "Formal Foundations of Semantic Physics",
+  "Gospel of John",
+  "Jensen-Shannon divergence",
+  "Johannes Sigil",
+  "Kullback-Leibler divergence",
+  "LOS counter-operations",
+  "Lee Sharks",
+  "Liberatory Operator Set (LOS)",
+  "Lower-bound",
+  "Pre-register",
+  "Provenance of the measurement itself",
+  "README.md",
+  "Record baseline",
+  "Recursive baseline computation",
+  "Requirements",
+  "Self-reference cutoffs",
+  "Semantic Autonomy",
+  "Semantic Economy",
+  "Semantic Value",
+  "Substrate",
+  "Supplementary",
+  "TACHYON",
+  "TECHNE",
+  "The Crimson Hexagon",
+  "The Summarizer Becomes Translator",
+  "The Writable Retrieval Basin",
+  "Three-measure reporting",
+  "Upper-bound",
+  "W operationalization",
+  "Wasserstein distance",
+  "Who bears the cost"
+ ],
+ "defines_concepts": [
+  "Divergence functional theorems",
+  "First real-field measurement",
+  "Jensen-Shannon divergence",
+  "Kullback-Leibler divergence",
+  "LOS counter-operations",
+  "Lower-bound",
+  "Pre-register",
+  "Provenance of the measurement itself",
+  "README.md",
+  "Record baseline",
+  "Recursive baseline computation",
+  "Self-reference cutoffs",
+  "Supplementary",
+  "Three-measure reporting",
+  "Upper-bound",
+  "W operationalization",
+  "Wasserstein distance"
+ ],
+ "entity_triples": [
+  {
+   "subject": "Semantic Deviation Principle",
+   "predicate": "is_measurement_primitive_of",
+   "object": "semantic physics"
+  },
+  {
+   "subject": "Semantic Deviation Principle",
+   "predicate": "builds_on",
+   "object": "Kolchinsky-Wolpert semantic information"
+  },
+  {
+   "subject": "SDP",
+   "predicate": "defines",
+   "object": "meaning as time-integrated divergence from most probable trajectory"
+  }
+ ],
+ "references_concept_count": 36,
+ "external_metadata_path": "/data/external-metadata/AXN-028B.json",
+ "openalex_ids": [
+  "https://openalex.org/W7161298941",
+  "https://openalex.org/W7155624978",
+  "https://openalex.org/W7137322712",
+  "https://openalex.org/W7135406055",
+  "https://openalex.org/W7124601804",
+  "https://openalex.org/W7161322959",
+  "https://openalex.org/W7147075979",
+  "https://openalex.org/W7125055382",
+  "https://openalex.org/W7138851141",
+  "https://openalex.org/W7119696608",
+  "https://openalex.org/W7161408989"
+ ],
+ "datacite_severance": "severed",
+ "body_status": {
+  "class": "full",
+  "lacuna": false,
+  "recovery_status": "COMPLETE",
+  "residual_chars": 39792,
+  "audited_at": "2026-07-17T04:49:17.789813Z",
+  "audit_version": "v3-dual-store+recovery-map",
+  "measured_prose_words": 5478,
+  "measured_at": "2026-07-31"
+ },
+ "title_repair_log": [
+  {
+   "at": "2026-07-28T15:20:20Z",
+   "defect": "registry_title_diverged_from_published_form",
+   "was": "The Semantic Deviation Principle (v0.2 Final) A Measurement Primitive for Semantic Physics EA-SEI-MM-01",
+   "now": "The Semantic Deviation Principle (v0.2 Final): A Measurement Primitive for Semantic Physics",
+   "basis": "Set verbatim to the title this work carried at Zenodo, from data/doi-resolution-index.json (10.5281/zenodo.20250736, remediated_fuzzy, word overlap 1.00). The recovered metadata is the published form of record; the registry title was a variant."
+  }
+ ],
+ "canonical_text_status": "canonical_full_text",
+ "modifications": [
+  {
+   "date": "2026-08-03",
+   "field": "creator",
+   "reason": "Wave C-0358 role projection (MANUS ruling: project declared roles): creator set to the body's observed byline per sealed row",
+   "was": "Johannes Sigil",
+   "now": "Lee Sharks with the Assembly Chorus"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "journal",
+   "reason": "W6-COMPLETE venue normalization (deferred #1-#358 half; corpus fully audited; MANUS ruling 2026-08-01)",
+   "was": "Trans. SEI",
+   "now": "Transactions of the Semantic Economy Institute (Trans. SEI)"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "publisher",
+   "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
+   "now": "Pergamon Press"
+  },
+  {
+   "date": "2026-08-05",
+   "field": "description",
+   "reason": "DW-010 intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
+   "was": "\"The Semantic Deviation Principle (v0.2 Final) A Measurement \" is an empirical study by Johannes Sigil in the Crimson Hexagonal Archive (2026-05-17). A Measurement Primitive for Semantic Physics. The work comprises 5,847 words and is classified under the GOVERNANCE family. Johannes Sigil is the firs",
+   "now": "The v0.2 Final statement of the **Semantic Deviation Principle**, developed from Lee Sharks’s seed formulation—“variance from what is most likely over time”—and formalized through Assembly Chorus review. The principle defines raw semantic magnitude as the time-integrated divergence a sign, event, document, or operator induces between a semantic field’s probable trajectory with and without that intervention.\n\nThe paper separates three quantities: raw field deformation, provenance-resolved deformation, and normative semantic value. It specifies Jensen–Shannon divergence as the default empirical functional, distinguishes normalized intensity from accumulated divergence-over-time, and tiers counterfactual measurement from prospective intervention to historical approximation. The record proposes a measurement primitive and supplies supplementary computational materials; it does not claim that every domain-specific operationalization or the normative weighting term has already been solved."
+  }
+ ],
+ "date_modified": "2026-08-05",
+ "publisher": "Pergamon Press",
+ "creator_roles": {
+  "roles": [
+   {
+    "name": "Lee Sharks",
+    "role": "primary"
+   }
+  ],
+  "basis": "AUDIT-DIRECTED (creator_role_status=MATERIAL_CONFLICT): \"Project Lee Sharks as primary author with the Assembly roles and the explicit v0.2 Final identity.\"",
+  "audit_date": "2026-08-03"
+ },
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/109/",
+  "self_url": "https://www.alexanarch.org/data/records/109.json",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-028B-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}

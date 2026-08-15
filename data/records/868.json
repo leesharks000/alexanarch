@@ -1,0 +1,183 @@
+{
+ "axn": "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝",
+ "hex": "0371",
+ "family": "EMPIRICAL",
+ "emoji": "👋☁️⛩️☄️🤙📝",
+ "hash": "ba04230bbf4773988d3fb16682abfc1a7fb8a08898bd722ca4f4d123a07cbf83",
+ "title": "DOIs ≠ Persistent Identifiers: 871 Cases of Public Metadata Erasure and Identifier Severance in DataCite (EA-MPAI-DOI-IMPERMANENCE-01)",
+ "creator": "Lee Sharks",
+ "orcid": "0009-0000-1599-0703",
+ "date": "2026-06-22",
+ "description": "This draft paper audits 1,817 DOI strings associated with the Crimson Hexagonal Archive and distinguishes three layers commonly collapsed under “persistent identifier”: the character string, URL resolution, and publicly recoverable identifying metadata.\n\nThe reconciled result reports 946 DOI records returning public DataCite metadata and 871 returning HTTP 404 from the DataCite public API on June 22, 2026. The sum is exact. The paper further reports that 926 of the 946 preserved records carried version relations, while the absent set was predominantly concept DOIs. This type correlation supports a mechanical paired-record explanation more strongly than a content-selective explanation, though the initiating system and exact process were undisclosed.\n\nThe paper coins **identifier severance** for a state in which a DOI string and perhaps a generic landing-page route persist while the public metadata needed to identify the scholarly referent is unavailable. It distinguishes a functioning persistent identifier, an identity-preserving tombstone, and what it calls a semantically severed token.\n\nThis conceptual distinction is valuable, but the title’s categorical “DOIs ≠ Persistent Identifiers” and several institutional statements require narrowing. A DOI’s persistence standard does not necessarily promise that every public API will serve every historical metadata record forever, nor does one repository episode falsify the entire DOI system. The observation establishes public DataCite API unavailability for the tested records at a specified time. It does not by itself establish that DOI strings were deregistered, that all metadata was erased internally, that no tombstone contained identity, or that persistence was contingent solely on account good standing.\n\nThe paper’s reproducibility section is a major strength. It provides example API requests and a method that could be rerun. A durable release should publish the complete classified DOI list, response logs, scripts, status timestamps, resolution checks, registry records, and later re-audits.",
+ "content_type": "Draft empirical study",
+ "license": "CC-BY-4.0",
+ "substrate": "AI-assisted (substrate)",
+ "keywords": [
+  "DOI",
+  "persistent identifiers",
+  "DataCite",
+  "identifier severance",
+  "metadata erasure",
+  "FAIR principles",
+  "TRUST principles",
+  "Zenodo",
+  "platform governance",
+  "conditional persistence",
+  "semantic persistence",
+  "verification procedure"
+ ],
+ "related_ids": "AXN:0370.ARCHIVAL.◽♈👋🝊🜂🌘",
+ "version": "v2.0",
+ "issue_number": null,
+ "issue_url": "",
+ "minted_at": "2026-06-22T02:55:00Z",
+ "status": "ACTIVE",
+ "clusters": [],
+ "reading": "",
+ "mirrors": [],
+ "full_text_path": "data/deposits/AXN-0371.md",
+ "citations": [],
+ "wiki_article": "**DOIs ≠ Persistent Identifiers** is a draft empirical audit by Lee Sharks of 1,817 DOI strings connected to the Crimson Hexagonal Archive.\n\nOn June 22, 2026, the study reports that 946 returned public DataCite metadata and 871 returned HTTP 404. Preserved records were overwhelmingly version DOIs, suggesting a type-correlated process affecting concept records.\n\nThe paper calls the loss of public identifying metadata while the DOI string persists **identifier severance**.\n\nThe result concerns observed public API and resolution layers at a particular time. It does not alone establish universal DOI-system failure or irreversible deletion from every internal and external copy.",
+ "entities": [
+  {
+   "subject": "DOI Impermanence",
+   "predicate": "defined_in",
+   "object": "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝",
+   "type": "concept",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Metadata Erasure",
+   "predicate": "defined_in",
+   "object": "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝",
+   "type": "concept",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Conditional Persistence",
+   "predicate": "defined_in",
+   "object": "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝",
+   "type": "concept",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Conditional Persistence",
+   "predicate": "critiques",
+   "object": "DOI Persistence Promise",
+   "type": "concept",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Metadata Erasure",
+   "predicate": "extends",
+   "object": "Attribution Severance",
+   "type": "concept",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Metadata Erasure",
+   "predicate": "extends",
+   "object": "Revocation Gap",
+   "type": "concept",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "FAIR Principle F1",
+   "predicate": "minted_in",
+   "object": "DOIs ≠ Persistent Identifiers: 871 Cases of Public Metadata E",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "(persistent identifiers) — the identifier is findable only conditionally"
+  },
+  {
+   "subject": "TRUST Principle R1.3",
+   "predicate": "minted_in",
+   "object": "DOIs ≠ Persistent Identifiers: 871 Cases of Public Metadata E",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "(persistent identification) — the identification is trustworthy only conditionally"
+  },
+  {
+   "subject": "The DOI string",
+   "predicate": "minted_in",
+   "object": "DOIs ≠ Persistent Identifiers: 871 Cases of Public Metadata E",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "the number itself (e.g., 10.5281/zenodo.18674057)"
+  },
+  {
+   "subject": "The metadata record",
+   "predicate": "minted_in",
+   "object": "DOIs ≠ Persistent Identifiers: 871 Cases of Public Metadata E",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "the structured description of what the DOI identifies"
+  }
+ ],
+ "axn_canonical": "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝",
+ "axn_display": "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝",
+ "download_md": "data/deposits/AXN-0371.md",
+ "deposit_number": 868,
+ "defines_concepts": [
+  "FAIR Principle F1",
+  "TRUST Principle R1.3",
+  "The DOI string",
+  "The metadata record"
+ ],
+ "references_concepts": [
+  "Crimson Hexagonal Archive",
+  "DO NOT",
+  "FAIR Principle F1",
+  "Implications",
+  "In the Crimson Hexagon",
+  "IsPartOf",
+  "Lee Sharks",
+  "TRUST Principle R1.3",
+  "The DOI string",
+  "The metadata record"
+ ],
+ "references_concept_count": 10,
+ "body_status": {
+  "class": "full",
+  "lacuna": false,
+  "recovery_status": "COMPLETE",
+  "residual_chars": 16448,
+  "audited_at": "2026-07-17T04:49:17.789813Z",
+  "audit_version": "v3-dual-store+recovery-map",
+  "measured_prose_words": 2395,
+  "measured_at": "2026-07-31"
+ },
+ "canonical_text_status": "canonical_full_text",
+ "modifications": [
+  {
+   "date": "2026-08-01",
+   "field": "content_type",
+   "reason": "Wave 1 repair: audit ledger v1.1 recommended_content_type (workplan v1.5 §6 W1, MANUS batch approval 2026-08-01)",
+   "was": "Empirical study",
+   "now": "Draft empirical study"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "publisher",
+   "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
+   "now": "Alexanarch — the Crimson Hexagonal Archive"
+  },
+  {
+   "date": "2026-08-05",
+   "field": "description",
+   "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
+   "was": "Empirical falsification of DOI persistence. Of 1,817 DOIs audited, 871 return HTTP 404 from DataCite's public metadata API — complete public metadata erasure. 946 preserved, 871 severed, sum exact. Stripping correlates with DOI type (concept vs version), not content. Mints identifier severance: the persistence of an identifier string after the public semantic relation between the string and its referent has been removed. Includes executable verification procedure.",
+   "now": "This draft paper audits 1,817 DOI strings associated with the Crimson Hexagonal Archive and distinguishes three layers commonly collapsed under “persistent identifier”: the character string, URL resolution, and publicly recoverable identifying metadata.\n\nThe reconciled result reports 946 DOI records returning public DataCite metadata and 871 returning HTTP 404 from the DataCite public API on June 22, 2026. The sum is exact. The paper further reports that 926 of the 946 preserved records carried version relations, while the absent set was predominantly concept DOIs. This type correlation supports a mechanical paired-record explanation more strongly than a content-selective explanation, though the initiating system and exact process were undisclosed.\n\nThe paper coins **identifier severance** for a state in which a DOI string and perhaps a generic landing-page route persist while the public metadata needed to identify the scholarly referent is unavailable. It distinguishes a functioning persistent identifier, an identity-preserving tombstone, and what it calls a semantically severed token.\n\nThis conceptual distinction is valuable, but the title’s categorical “DOIs ≠ Persistent Identifiers” and several institutional statements require narrowing. A DOI’s persistence standard does not necessarily promise that every public API will serve every historical metadata record forever, nor does one repository episode falsify the entire DOI system. The observation establishes public DataCite API unavailability for the tested records at a specified time. It does not by itself establish that DOI strings were deregistered, that all metadata was erased internally, that no tombstone contained identity, or that persistence was contingent solely on account good standing.\n\nThe paper’s reproducibility section is a major strength. It provides example API requests and a method that could be rerun. A durable release should publish the complete classified DOI list, response logs, scripts, status timestamps, resolution checks, registry records, and later re-audits."
+  }
+ ],
+ "date_modified": "2026-08-05",
+ "publisher": "Alexanarch — the Crimson Hexagonal Archive",
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/868/",
+  "self_url": "https://www.alexanarch.org/data/records/868.json",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-0371-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}

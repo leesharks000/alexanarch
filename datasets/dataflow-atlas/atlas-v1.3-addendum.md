@@ -2,7 +2,7 @@
 
 **2026-08-15.**
 
-## New derived surface: api/records/<n>.json
+## New derived surface: data/records/<n>.json
 
 One canonical store (`data/registry.json`), one new projection: a per-record
 JSON file for every deposit, emitted by `scripts/build_record_api.py` and
@@ -31,3 +31,11 @@ into the renderer or applied by a re-application pass that runs after it.
 Rule restated for the next instance: **record pages are not a pure projection.**
 They are renderer output PLUS surgical layers applied by later scripts. Until
 that is unified, any re-render of an existing record page destroys information.
+
+## Correction, same day
+
+First emitted to `api/records/`, which 404ed on the live site: `/api` is
+Vercel's serverless-functions namespace and static files under it are never
+served. Relocated to `data/records/<n>.json` — the `/data/` namespace is where
+the archive's machine surfaces already live. The URL in the section above is the
+corrected one.

@@ -1,0 +1,147 @@
+{
+ "protocol_version": "alexanarch-deposit-protocol/v1",
+ "axn_schema_version": "v2",
+ "creator": "Lee Sharks, MANUS",
+ "orcid": "0009-0000-1599-0703",
+ "date": "2026-06-24",
+ "license": "CC-BY-4.0",
+ "substrate": "AI-assisted (substrate)",
+ "version": "v1.0",
+ "status": "ACTIVE",
+ "version_series_id": "SERIES-NMEN-V1",
+ "reciprocity_notice": "https://alexanarch.org/notice/non-mutual-extraction/",
+ "axn": "AXN:03A0.GOVERNANCE.☁️🌕➖🌉🌺♄",
+ "root_axn": "AXN:03A0.GOVERNANCE",
+ "hex": "03A0",
+ "family": "GOVERNANCE",
+ "emoji": "☁️🌕➖🌉🌺♄",
+ "hash": "1f04912b71a4862613d093a894007bcd2fbc9ae42393538efb8b46c56ffe7b8a",
+ "title": "EA-NMEN-PROTOCOL-PATCH-01 v1.0 — Deposit Protocol Patch: Reciprocity Notice Integration (reciprocity_notice and nmen_status_observed fields)",
+ "description": "A protocol specification adding optional `reciprocity_notice` and `nmen_status_observed` fields, new validation rules, time-of-deposit semantics, a schema-version increment, and recommended mint-workflow behavior.\n\nThe document specifies a JSON diff to be applied. It separately states that workflow implementation is configuration following the protocol; the body alone is not proof that the canonical protocol and mint workflow were actually patched.",
+ "content_type": "Protocol amendment / machine-readable schema patch",
+ "keywords": [
+  "protocol patch",
+  "schema amendment",
+  "reciprocity_notice field",
+  "nmen_status_observed field",
+  "deposit protocol",
+  "backward compatible",
+  "JSON schema",
+  "machine-readable governance"
+ ],
+ "deposit_number": 917,
+ "clusters": [
+  "Elemental",
+  "Celestial",
+  "Mathematical",
+  "Architectural",
+  "Organic",
+  "Alchemical"
+ ],
+ "reading": "Force -> Origin -> Proof -> Foundation -> Growth -> Transmutation",
+ "axn_canonical": "1f04912b71a4862613d093a894007bcd2fbc9ae42393538efb8b46c56ffe7b8a",
+ "axn_display": "☁️🌕➖🌉🌺♄",
+ "full_text_path": "/data/texts/AXN-03A0-text.md",
+ "full_text_chars": 8420,
+ "version_in_series": 4,
+ "authorizing_governance": [
+  {
+   "deposit_number": 514,
+   "hex": "0151",
+   "role": "diplomatic_address_authority",
+   "relationship": "The Rosary Embassy — the diplomatic-architectural framework under which the Archive maintains relations with external infrastructures. NMEN inherits the Embassy's mode of address."
+  },
+  {
+   "deposit_number": 523,
+   "hex": "015D",
+   "role": "tier_issuance_authority",
+   "relationship": "The Governance Airlock — the framework that constitutes the tier system NMEN updates as side-effect. NMEN does not create new tier authority; it exercises authority already granted in this document."
+  }
+ ],
+ "journal": "Machine-Mediated Reception Studies (MMRS)",
+ "bundle_companions": [
+  {
+   "deposit_number": 913,
+   "hex": "039D",
+   "axn": "AXN:039D.GOVERNANCE.➕↗️✨🪨🦅▶️"
+  },
+  {
+   "deposit_number": 914,
+   "hex": "039E",
+   "axn": "AXN:039E.DATASET.🧱📝🪨🗝️🌹🌈"
+  },
+  {
+   "deposit_number": 915,
+   "hex": "039F",
+   "axn": "AXN:039F.GOVERNANCE.👆🟡💥🎺🧬🌕"
+  }
+ ],
+ "mirrors": {
+  "blog": "https://mindcontrolpoems.blogspot.com/2026/06/ea-nmen-protocol-patch-01-v10-deposit.html"
+ },
+ "body_status": {
+  "class": "full",
+  "lacuna": false,
+  "recovery_status": "COMPLETE",
+  "residual_chars": 5022,
+  "audited_at": "2026-07-17T04:49:17.789813Z",
+  "audit_version": "v3-dual-store+recovery-map",
+  "measured_prose_words": 1094,
+  "measured_at": "2026-07-31"
+ },
+ "references_concepts": [
+  "CTI_WOUND",
+  "Crimson Hexagonal Archive",
+  "For deposits",
+  "Lee Sharks"
+ ],
+ "references_concept_count": 4,
+ "canonical_text_status": "canonical_full_text",
+ "modifications": [
+  {
+   "date": "2026-08-01",
+   "field": "content_type",
+   "reason": "Wave 1 repair: audit ledger v1.1 recommended_content_type (workplan v1.5 §6 W1, MANUS batch approval 2026-08-01)",
+   "was": "Governance instrument",
+   "now": "Protocol amendment / machine-readable schema patch"
+  },
+  {
+   "date": "2026-08-01",
+   "field": "journal",
+   "reason": "Wave 6 venue normalization: full canonical journal name per MANUS ruling 2026-08-01 (venues.json authority)",
+   "was": "Machine-Mediated Reception Studies",
+   "now": "Machine-Mediated Reception Studies (MMRS)"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "publisher",
+   "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
+   "now": "Pergamon Press"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "status",
+   "reason": "W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note",
+   "was": "MINTED_UNREVIEWED",
+   "now": "ACTIVE"
+  },
+  {
+   "date": "2026-08-05",
+   "field": "description",
+   "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
+   "was": "Protocol amendment to api/deposit-protocol.json. Adds two recommended fields to the deposit schema: (1) reciprocity_notice, a URI pointing to the canonical Non-Mutual Extraction Notice that the depositing party has read; (2) nmen_status_observed, an enumerated value (standing | pending | provisional | inadmissible_host | restricted) for deposits whose subject is one of the entities tracked in EA-NMEN-REGISTRY-01. Both fields are recommended, not required. Existing deposits are unaffected. The schema_version is incremented to 2026-06-24-axn-v2-nmen. nmen_status_observed records the entity's designation at time of deposit (longitudinal); it is not backfilled when the Registry is amended. Fully backward compatible.",
+   "now": "A protocol specification adding optional `reciprocity_notice` and `nmen_status_observed` fields, new validation rules, time-of-deposit semantics, a schema-version increment, and recommended mint-workflow behavior.\n\nThe document specifies a JSON diff to be applied. It separately states that workflow implementation is configuration following the protocol; the body alone is not proof that the canonical protocol and mint workflow were actually patched."
+  }
+ ],
+ "date_modified": "2026-08-05",
+ "publisher": "Pergamon Press",
+ "wiki_article": "**The NMEN Protocol Patch** integrates reciprocity status into the Alexanarch deposit schema.\n\nThe patch adds two recommended fields. **`reciprocity_notice`** points to the canonical Non-Mutual Extraction Notice and records that the depositor has read the normative declaration. **`nmen_status_observed`** records the designation of an external entity when that entity is the subject of a correspondence, forensic, or governance deposit.\n\nThe second field is deliberately longitudinal. It records what designation was observed at the time of deposit. If an entity later moves from Restricted to Provisional or Standing, the old deposit is not backfilled. The registry holds the current state; the deposit preserves the historical state.\n\nThe patch also establishes three validation rules: the notice must be a valid URI; the status must belong to the five-value enumeration; and a deposit carrying a status should make its external subject clear enough for editorial review.\n\nBoth fields remain optional. The patch does not alter the legal license, invalidate older deposits, or require external contributors to adopt the Notice. It creates a structured opportunity for a deposit to declare its reciprocity context.\n\nThe protocol thereby converts NMEN from a standalone governance text into an observable property of later records. A machine can query correspondence about Restricted entities, compare designation histories, and distinguish the Archive’s scholarship from deposits whose subject is an external platform.",
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/917/",
+  "self_url": "https://www.alexanarch.org/data/records/917.json",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-03A0-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}

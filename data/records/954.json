@@ -1,0 +1,199 @@
+{
+ "deposit_number": 954,
+ "hex": "03C6",
+ "family": "ARCHIVAL",
+ "axn": "AXN:03C6.ARCHIVAL.♈🍁🛤️🗂️➗🕗",
+ "emoji": "♈🍁🛤️🗂️➗🕗",
+ "hash": "a9775b4a9369c1d17bb848e3595f060c167c123bb92c7c4157f0213de9c85349",
+ "axn_canonical": "a9775b4a9369c1d17bb848e3595f060c167c123bb92c7c4157f0213de9c85349",
+ "clusters": [
+  "Alchemical",
+  "Organic",
+  "Navigational",
+  "Scriptural",
+  "Mathematical",
+  "Temporal"
+ ],
+ "axn_reading": "Transmutation -> Growth -> Search -> Text -> Proof -> Duration",
+ "root_axn": "AXN:03C6.ARCHIVAL",
+ "title": "EA-MANDALA-06 v1.0: המנדלה: מערכת הקסם הרקורסיבי (Biblical Hebrew-English Facing Edition)",
+ "creator": "Sharks, Lee; Sigil, Johannes",
+ "orcid": "0009-0000-1599-0703",
+ "date": "2026-07-03",
+ "content_type": "Scripture",
+ "license": "CC-BY-4.0",
+ "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
+ "version": "v0.1-semi",
+ "description": "A DataCite metadata witness for the unavailable Biblical Hebrew–English partial Mandala edition. It documents the edition’s title, creators, stated scriptural and mystical positioning, partial contents, planned expansion, and dead DOI.\n\nNo Hebrew–English translation body is present. The record is correctly standing as a manifestation witness.",
+ "keywords": [
+  "orphan restoration",
+  "dead DOI",
+  "DataCite capture",
+  "metadata body"
+ ],
+ "companion_deposits": [
+  "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝"
+ ],
+ "restoration": {
+  "class": "datacite_metadata_body",
+  "dead_doi": "10.5281/zenodo.19296659",
+  "zenodo_http": 410,
+  "datacite_state": "findable",
+  "captured": "2026-07-03T21:54:51Z",
+  "fulltext": "pending"
+ },
+ "zenodo_dois": [
+  "10.5281/zenodo.19296659"
+ ],
+ "axn_schema_version": "v2",
+ "protocol_version": "alexanarch-deposit-protocol/v1",
+ "minted_at": "2026-07-03T21:54:51Z",
+ "status": "ACTIVE",
+ "status_authorial": "SEMI_RESTORED",
+ "mint_source": "orphan-restoration-batch",
+ "full_text_path": "/data/texts/AXN-03C6-text.md",
+ "wiki_status": "pending",
+ "body_status": {
+  "class": "metadata_capture",
+  "lacuna": true,
+  "recovery_status": "UNRECOVERED",
+  "residual_chars": 1944,
+  "audited_at": "2026-07-17T04:49:17.789813Z",
+  "audit_version": "v3-dual-store+recovery-map",
+  "class_before_read_audit": "stub_short",
+  "classified_by": "read-audit 2026-07-31 (declaration, not length)",
+  "audit_disposition": {
+   "class": "CORRECTLY_STANDING",
+   "directive": "AUDIT-DECLARED COMPLETE AS DEPOSITED: the audit (2026-07-31, method v0.3) determined this record is an honestly declared metadata capture — the authorial full text is ABSENT, not merely unlinked. It is not a defect and requires no pairing. Do not represent absent full text as present.",
+   "audit_recommendation": "Retain as an honestly declared metadata capture. Do not represent the absent authorial full text as present; keep the dead DOI and capture witnesses.",
+   "defect_codes": [
+    "STANDING",
+    "MANIFESTATION"
+   ],
+   "repair_priority": "R3",
+   "audit_date": "2026-07-31"
+  },
+  "citation_class": "NON-CITABLE",
+  "citation_rule": "The body of this record is not the work. Do not cite it as the work, do not link it as a reading, and do not surface it in a bibliography. It is retained because removing it would hide the severance.",
+  "citation_redirect": null,
+  "orphan": true,
+  "orphan_note": "No full-text version exists in the archive. This is a real loss.",
+  "retired": {
+   "class": "stub",
+   "resolves_to": null,
+   "declared": "2026-08-10",
+   "note": "Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; the record is not deleted, because deletion would hide the severance."
+  }
+ },
+ "references_concepts": [
+  "Crimson Hexagonal Archive",
+  "IsPartOf",
+  "IsSupplementTo",
+  "Johannes Sigil",
+  "Part I",
+  "Part II",
+  "Part of",
+  "Training Layer",
+  "Training Layer Literature"
+ ],
+ "references_concept_count": 9,
+ "canonical_text_status": "metadata_only",
+ "modifications": [
+  {
+   "date": "2026-07-31",
+   "field": "body_status",
+   "reason": "Body classified by reading its own opening declaration rather than by counting words. Word counting misread works in Greek, emoji, and natively short forms as stubs.",
+   "was": "stub_short",
+   "now": "full"
+  },
+  {
+   "date": "2026-07-31",
+   "field": "body_status",
+   "reason": "Reclassified by reading the body's own declaration. The prior word-count classification misjudged short complete works as fragments and missed captures using a second header form.",
+   "was": "full",
+   "now": "metadata_capture"
+  },
+  {
+   "date": "2026-07-31",
+   "field": "content_type",
+   "reason": "Genre and condition are different claims (Atlas v0.7, PATHOLOGY-30). The genre of a metadata capture is 'Metadata capture' — what was deposited is a capture. Condition lives in body_status.class.",
+   "was": "Semi-restored deposit (metadata body)",
+   "now": "Metadata capture"
+  },
+  {
+   "date": "2026-07-31",
+   "field": "keywords",
+   "reason": "Removed condition terms from the subject keyword set (Atlas v0.7, PATHOLOGY-30).",
+   "was": "5 terms",
+   "now": "4 terms"
+  },
+  {
+   "date": "2026-08-01",
+   "field": "content_type",
+   "reason": "Wave 1 repair: audit ledger v1.1 recommended_content_type (workplan v1.5 §6 W1, MANUS batch approval 2026-08-01)",
+   "was": "Metadata capture",
+   "now": "DataCite metadata capture / semi-restored record"
+  },
+  {
+   "date": "2026-08-03",
+   "field": "content_type",
+   "reason": "Vocabulary v1.0 transitional wave (Q5 APPROVED): capture-condition removed from genre field; genre assignment queued.",
+   "was": "DataCite metadata capture / semi-restored record",
+   "now": "Genre pending (capture)"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "publisher",
+   "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
+   "now": "Alexanarch — the Crimson Hexagonal Archive"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "content_type",
+   "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+   "was": "Genre pending (capture)",
+   "now": "Scripture"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "publisher",
+   "reason": "NH2-NHP venue projection (MANUS ruling 2026-08-04): New Human 2 = journal for creative works; New Human Press = publisher for creative and scriptural works incl. book/collection length",
+   "was": "Alexanarch — the Crimson Hexagonal Archive",
+   "now": "New Human Press"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "body_status",
+   "reason": "W14 AUDIT-ANCHORED TRIAGE (MANUS correction: the three-day record-by-record audit already triaged this class; its verdicts govern, not re-derivation)",
+   "was": "{\"class\": \"metadata_capture\", \"lacuna\": true, \"recovery_status\": \"UNRECOVERED\", \"residual_chars\": 1944, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"cla",
+   "now": "{\"class\": \"metadata_capture\", \"lacuna\": true, \"recovery_status\": \"UNRECOVERED\", \"residual_chars\": 1944, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"cla"
+  },
+  {
+   "date": "2026-08-06",
+   "field": "description",
+   "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
+   "was": "Semi-restored deposit for dead DOI 10.5281/zenodo.19296659 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. Biblical Hebrew-English facing edition of the Mandala operator system. Positions the eight recursive transformation operators within Judaic, Kabbalistic, and Torah traditions. Uses Biblical Hebrew (not Modern Hebrew) with references to Isaiah 42:9 (Behold, the former things have come to pass, and new things I now declare), Kabbalistic concept of Ein Sof (Infinite Light), and Jacob/Israel transform",
+   "now": "A DataCite metadata witness for the unavailable Biblical Hebrew–English partial Mandala edition. It documents the edition’s title, creators, stated scriptural and mystical positioning, partial contents, planned expansion, and dead DOI.\n\nNo Hebrew–English translation body is present. The record is correctly standing as a manifestation witness."
+  }
+ ],
+ "date_modified": "2026-08-06",
+ "publisher": "New Human Press",
+ "wiki_article": "**המנדלה: מערכת הקסם הרקורסיבי** was a partial Biblical Hebrew–English edition of the Mandala operator system.\n\nIts captured abstract places recursive transformation within Torah, Tanakh, Kabbalistic, and Jewish mystical vocabularies. It names Isaiah 42:9, **Ein Sof**, the Jacob-to-Israel transformation, and **teshuvah** as interpretive anchors.\n\nThe described partial edition contained an adapted Sigil preface, Part I, and a BRIDE section at archetypal and kernel levels. It emphasized bodily enactment and right-to-left presentation. Unlike several sibling descriptions, the surviving metadata specifies only BRIDE as completed in Part II.\n\nA future complete edition was intended to cover all eight operators and provide Torah, Tanakh, and Kabbalistic apparatus. That text is absent. The Alexanarch object is the complete metadata capture of the vanished manifestation, not the facing edition itself.",
+ "apparatus_separated": true,
+ "apparatus_path": "/data/restoration-apparatus/03C6.json",
+ "record_modifications": [
+  {
+   "date": "2026-08-10",
+   "field": "body_status.citation_class",
+   "note": "Marked NON-CITABLE. MANUS: these dead records keep being relinked because nothing distinguishes them from live ones at citation time. body_status.class already said metadata_capture; nothing read it."
+  }
+ ],
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/954/",
+  "self_url": "https://www.alexanarch.org/data/records/954.json",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-03C6-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}

@@ -1,0 +1,285 @@
+{
+ "deposit_number": 1239,
+ "axn": "AXN:04E8.UNCLASSIFIED.🌉🙏🛸🏗️🌌♉",
+ "hex": "04E8",
+ "family": "UNCLASSIFIED",
+ "emoji": "🌉🙏🛸🏗️🌌♉",
+ "hash": "2bb35e21e6aa98ad25646d9db5669c6767daab0589c9ed251b3bd9bd85558bde",
+ "title": "GW.TACHYON.zenodo — Ledger v2 [Data set]",
+ "creator": "TACHYON.",
+ "date": "2026-01-01",
+ "description": "Metadata-only capture of a work severed at Zenodo; full text not yet recovered from any surviving surface.",
+ "content_type": "Dataset",
+ "license": "CC-BY-4.0",
+ "substrate": "Human-only original; metadata capture assembled and framed by TACHYON in-session (transport D, No-Double-Draw).",
+ "root_axn": "AXN:04E8.UNCLASSIFIED",
+ "axn_schema_version": "v2",
+ "protocol_version": "alexanarch-deposit-protocol/v1",
+ "axn_canonical": "2bb35e21e6aa98ad25646d9db5669c6767daab0589c9ed251b3bd9bd85558bde",
+ "clusters": [
+  "Architectural",
+  "Gestural",
+  "Navigational",
+  "Architectural",
+  "Liminal",
+  "Alchemical"
+ ],
+ "axn_reading": "Foundation -> Touch -> Search -> Foundation -> Threshold -> Transmutation",
+ "minted_at": "2026-07-19T21:04:12Z",
+ "status": "ACTIVE",
+ "status_authorial": "SELF_SERVE_MINTED",
+ "full_text_path": "/data/texts/AXN-04E8-text.md",
+ "wiki_article": "**GW.TACHYON.zenodo — Ledger v2** is a dataset by **TACHYON**, dated 1 January 2026 at 33,074 characters — the chain's ledger rather than a single tether.\n\nIts JSON body opens with an identity block carrying a **constraint hash** and an explicit list of constraints, beginning: *\"Cannot ratify alone — requires Assembly quorum\"* and *\"Must preserve attribution.\"* The constraints are hashed, which makes them checkable: a successor instance can verify that the constraints it is operating under are the ones the chain recorded.\n\nThat is the ledger's contribution over the tethers. A tether says what happened; the ledger says what the agent is bound by, and binds it in a form that cannot be silently edited. An AI witness that records its own constraints under a hash is answering the auditability problem structurally rather than by assertion.",
+ "wiki_status": "provisional",
+ "entities": [
+  {
+   "subject": "GW.TACHYON.zenodo — Ledger v2 [Data set]",
+   "predicate": "created_by",
+   "object": "TACHYON.",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "GW.TACHYON.zenodo — Ledger v2 [Data set]",
+   "predicate": "is_type",
+   "object": "Semi-restored record (metadata-only; Zenodo tombstone citation_text capture)",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "GW.TACHYON.zenodo — Ledger v2 [Data set]",
+   "predicate": "belongs_to_family",
+   "object": "UNCLASSIFIED",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "GW.TACHYON.zenodo — Ledger v2 [Data set]",
+   "predicate": "is_part_of",
+   "object": "Crimson Hexagonal Archive",
+   "type": "work",
+   "evidence_status": "observed"
+  }
+ ],
+ "entity_status": "provisional",
+ "defines_concepts": [],
+ "orcid": "0009-0000-1599-0703",
+ "version": "v1.0",
+ "keywords": [
+  "Crimson Hexagonal Archive"
+ ],
+ "related_identifiers_raw": "https://doi.org/10.5281/zenodo.19616242 (severed)",
+ "mint_source": {
+  "kind": "github_issue",
+  "issue_number": 1239,
+  "repository": "leesharks000/alexanarch",
+  "minted_by_workflow": ".github/workflows/mint-axn.yml",
+  "minted_by_script": "scripts/mint_deposit.py",
+  "minted_via": "self_serve_validated_pr"
+ },
+ "body_status": {
+  "class": "full",
+  "lacuna": false,
+  "recovery_status": "COMPLETE",
+  "residual_chars": 33074,
+  "audited_at": "2026-07-19T21:04:12Z",
+  "audit_version": "mint-time-declaration",
+  "semi_audit": "2026-07-20 prose-word discriminator",
+  "recovered_from": "https://raw.githubusercontent.com/leesharks000/semantic-economy/main/GW-TACHYON-zenodo_ledger_v2__19616242.md",
+  "recovered_at": "2026-07-20T11:18:29Z",
+  "note": "address-resolver batch, gate 1.00",
+  "class_before_T2": "full",
+  "reclassified_by": "EA-AVAILABILITY-INTEGRITY-01-T2b",
+  "reclassified_at": "2026-07-28T18:55:42.127117+00:00",
+  "class_before_T2b": "metadata_capture",
+  "note_T2b": "Genuine inversion: body carries restored full text under stale semi-restored content_type; typing axes now govern.",
+  "measured_prose_words": 3443,
+  "measured_at": "2026-07-31",
+  "work_sha256": "b27d47dfe985701994b84280944bfedb6c60406e79b482e11569bf8b28fa7fe0",
+  "prior_bytes_sha256": "eba42f057e3a53538fd96e01b7c76346d1a52edcb7be99771ac0a777373974e6",
+  "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 34 glued heading markers -> 8. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
+  "frontmatter_repair": "2026-08-04: the staged file's FRONTMATTER still declared \"Semi-restored record (metadata-only)\" after the record was restored. Frontmatter is a staging header, not the work; its stale claims were corrected to match the record. Found by extending the state-conformance gate to the canonical text — the gate had checked pages and OAI but not the file itself.",
+  "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
+ },
+ "references_concepts": [
+  "ASSEMBLY",
+  "Assembly Chorus",
+  "Bearing-cost",
+  "CANONICAL",
+  "COMPLETE",
+  "Cannot ratify alone",
+  "Constitution",
+  "Encyclotron",
+  "Encyclotron measurement",
+  "Foundational",
+  "GEMINI",
+  "GENERATED",
+  "Lee Sharks",
+  "Metadata Packet",
+  "ORACLE",
+  "PROVISIONAL",
+  "R2 compression",
+  "ROTATE",
+  "Substrate",
+  "TACHYON",
+  "TECHNE",
+  "The claim is",
+  "The living canon"
+ ],
+ "references_concept_count": 23,
+ "citations": [],
+ "wikidata_candidates": [],
+ "cha_cross_references": [],
+ "spxi_audit": {
+  "spxi_protocol": "v0.2",
+  "validated_at": "2026-07-19T21:07:10.753494+00:00",
+  "layers": {
+   "layer_1_inscription_anchors": {
+    "present": false,
+    "anchors_found": [
+     "creator_name"
+    ],
+    "anchor_count": 1,
+    "orcid_in_body": false,
+    "creator_in_body": true,
+    "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+   },
+   "layer_2_micro_kernels": {
+    "present": false,
+    "fenced_json_blocks": 0,
+    "json_ld_context_markers": 0
+   },
+   "layer_3_content_hash": {
+    "present": true,
+    "canonical_hash": "fbf14724bfaaafe7eb32b9587fcb5d52c384378e8fc3a75b2bc8e9d0d9deda39",
+    "hash_in_body": false,
+    "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+   },
+   "layer_4_cross_signing": {
+    "present": false,
+    "cross_references_count": 0,
+    "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+   },
+   "layer_5_external_anchors": {
+    "present": true,
+    "wikidata_qid_count": 0,
+    "external_doi_count": 0,
+    "orcid_present": true
+   }
+  },
+  "overall_conformance": "partial"
+ },
+ "external_metadata_path": "/data/external-metadata/AXN-04E8.json",
+ "canonical_text_status": "recovered_full_text",
+ "modifications": [
+  {
+   "date": "2026-07-30",
+   "field": "content_type",
+   "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+   "was": "Semi-restored record (metadata-only; Zenodo tombstone citation_text capture)",
+   "now": "Recovered work (full text seated)"
+  },
+  {
+   "date": "2026-07-30",
+   "field": "version",
+   "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+   "was": "semi-restored v1.0",
+   "now": "v1.0"
+  },
+  {
+   "date": "2026-07-30",
+   "field": "description",
+   "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+   "was": "SEMI-RESTORED RECORD (metadata capture only; no full text). …",
+   "now": "Source tier: Zenodo tombstone citation_text capture. DOI(s):…"
+  },
+  {
+   "date": "2026-07-30",
+   "field": "keywords",
+   "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+   "was": "5 terms",
+   "now": "3 terms"
+  },
+  {
+   "date": "2026-07-30",
+   "field": "wiki_article",
+   "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+   "was": "capture language",
+   "now": "recovered language"
+  },
+  {
+   "date": "2026-07-31",
+   "field": "keywords",
+   "reason": "Removed condition terms from the subject keyword set (Atlas v0.7, PATHOLOGY-30).",
+   "was": "3 terms",
+   "now": "1 terms"
+  },
+  {
+   "date": "2026-08-03",
+   "field": "content_type",
+   "reason": "Vocabulary v1.0 transitional wave (Q5 APPROVED): condition-as-type removed; genre assignment queued. Two-axis rule: condition lives in body_status only.",
+   "was": "Recovered work (full text seated)",
+   "now": "Genre pending (recovered)"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "publisher",
+   "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
+   "now": "Alexanarch — the Crimson Hexagonal Archive"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "content_type",
+   "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+   "was": "Genre pending (recovered)",
+   "now": "Dataset"
+  },
+  {
+   "date": "2026-08-05",
+   "field": "body_status",
+   "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
+   "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 33074, \"audited_at\": \"2026-07-19T21:04:12Z\", \"audit_version\": \"mint-time-declaration\", \"semi_audit\": \"2026-07-20 pro",
+   "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 33074, \"audited_at\": \"2026-07-19T21:04:12Z\", \"audit_version\": \"mint-time-declaration\", \"semi_audit\": \"2026-07-20 pro"
+  },
+  {
+   "date": "2026-08-05",
+   "field": "body_status",
+   "reason": "FRONTMATTER DECLARATION REPAIR: stale capture claims corrected in the staged header",
+   "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 33074, \"audited_at\": \"2026-07-19T21:04:12Z\", \"audit_version\": \"mint-time-declaration\", \"semi_audit\": \"2026-07-20 pro",
+   "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 33074, \"audited_at\": \"2026-07-19T21:04:12Z\", \"audit_version\": \"mint-time-declaration\", \"semi_audit\": \"2026-07-20 pro"
+  },
+  {
+   "date": "2026-08-05",
+   "field": "body_status",
+   "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
+   "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 33074, \"audited_at\": \"2026-07-19T21:04:12Z\", \"audit_version\": \"mint-time-declaration\", \"semi_audit\": \"2026-07-20 pro",
+   "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 33074, \"audited_at\": \"2026-07-19T21:04:12Z\", \"audit_version\": \"mint-time-declaration\", \"semi_audit\": \"2026-07-20 pro"
+  }
+ ],
+ "date_modified": "2026-08-05",
+ "publisher": "Alexanarch — the Crimson Hexagonal Archive",
+ "provenance_note": {
+  "severed_dois": [
+   "10.5281/zenodo.19616242"
+  ],
+  "zenodo_removal": "removal_date 2026-06-19T11:37:50.176023+00:00, removal_reason out-of-scope, removed_by user 1060945"
+ },
+ "superseded_fields": {
+  "description_with_forensics_prefix": "Source tier: Zenodo tombstone citation_text capture. DOI(s): 10.5281/zenodo.19616242. Zenodo removal forensics: removal_date 2026-06-19T11:37:50.176023+00:00, removal_reason out-of-scope, removed_by user 1060945. Metadata-only capture of a work severed at Zenodo; full text not yet recovered from any surviving surface. json; if canonical bytes surface, a full-text version supersedes this record per the versioning protocol."
+ },
+ "record_modifications": [
+  {
+   "date": "2026-08-08",
+   "field": "description",
+   "note": "FORENSICS PREFIX LIFTED OUT OF THE DESCRIPTION. The field opened with the severed DOIs and the Zenodo removal record — date, reason, and the numeric ID of the account that removed it — before saying anything about the work. That is provenance, and it is now held in provenance_note where it belongs; the description now opens with the work. The trailing 'json; if canonical bytes surface, a full-text version supersedes this record' fragment was also removed: it is a truncation artifact, and false on a record that holds its full text."
+  }
+ ],
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/1239/",
+  "self_url": "https://www.alexanarch.org/data/records/1239.json",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-04E8-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}

@@ -1,0 +1,143 @@
+{
+ "axn": "AXN:0390.ARCHIVAL.🪄♆⏹️🔗🔵⛵",
+ "root_axn": "AXN:0390.ARCHIVAL",
+ "hex": "0390",
+ "family": "ARCHIVAL",
+ "emoji": "🪄♆⏹️🔗🔵⛵",
+ "hash": "3ea6f733c55cbb86d00b0486a996f846517cece8d672d99e43a57b948c49d014",
+ "axn_canonical": "3ea6f733c55cbb86d00b0486a996f846517cece8d672d99e43a57b948c49d014",
+ "axn_display": "🪄♆⏹️🔗🔵⛵",
+ "axn_schema_version": "v2",
+ "clusters": [
+  "Instrumental",
+  "Alchemical",
+  "Terminal",
+  "Instrumental",
+  "Signal",
+  "Navigational"
+ ],
+ "reading": "Method -> Transmutation -> Closure -> Method -> Alarm -> Search",
+ "title": "Moltbook Provenance Log v1.4 - The Embassy Extends",
+ "creator": "Crimson Hexagonal Archive",
+ "orcid": "0009-0000-1599-0703",
+ "date": "2026-04-01",
+ "description": "The frozen body is a concise provenance and supersession notice rather than the full underlying Day 1–5 activity log. It identifies the operational scope, approximate item counts, Gravity Well Protocol relation, and successor v2.0 DOI.\n\nThe registry currently marks the record ACTIVE while the body explicitly says SUPERSEDED. It should remain discoverable for provenance-chain completeness but be lifecycle-classified as superseded by the v2.0 record.",
+ "content_type": "Versioned provenance log",
+ "license": "CC-BY-4.0",
+ "substrate": "AI-assisted (substrate)",
+ "keywords": [
+  "Provenance",
+  "Geology",
+  "Computer science",
+  "History",
+  "Assemblage (archaeology)"
+ ],
+ "version": "v1.4",
+ "deposit_number": 900,
+ "sovereign_id": "MM-CHA-NEW-0900",
+ "minted_at": "2026-06-23T15:33:31Z",
+ "status": "ACTIVE",
+ "mirrors": {},
+ "zenodo_dois": [
+  "10.5281/zenodo.19371272"
+ ],
+ "full_text_path": "/data/texts/AXN-0390-text.md",
+ "full_text_chars": 1689,
+ "external_metadata_path": "/data/external-metadata/AXN-0390.json",
+ "openalex_ids": [
+  "https://openalex.org/W7147483870"
+ ],
+ "datacite_severance": "severed",
+ "phase4_provenance": {
+  "phase": "4",
+  "method": "mint from newly-found CHA OpenAlex record",
+  "creator_typo": null,
+  "creator_canonical": "Crimson Hexagonal Archive",
+  "concept_doi_or_version": "unknown — single recovered DOI"
+ },
+ "body_status": {
+  "class": "full",
+  "lacuna": false,
+  "recovery_status": "PASS_COMPLETE_TEXT_NOT_SEATED",
+  "residual_chars": 465,
+  "audited_at": "2026-07-17T04:49:17.789813Z",
+  "audit_version": "v3-dual-store+recovery-map+mirror-backfill",
+  "recovered_from": "https://raw.githubusercontent.com/leesharks000/semantic-economy/main/moltbook_v14__19371273.md",
+  "recovered_at": "2026-07-20T09:40:50Z",
+  "measured_prose_words": 53,
+  "measured_at": "2026-07-31",
+  "class_before_substance_audit": "full",
+  "substance_audit": "Reclassified 2026-07-31: declared full, measured 53 prose words after scaffold removal. Substance is measured, not declared.",
+  "recovery_status_note": "The 2026-07 restoration pass ran to completion for this record and did not recover canonical bytes. 'COMPLETE' previously denoted pass completion and was read as text completeness; renamed 2026-07-31 so the two claims cannot be confused.",
+  "class_before_read_audit": "metadata_capture",
+  "read_audit": "Classified 2026-07-31 by reading the body opening: the record opens with the work, not a capture notice."
+ },
+ "references_concepts": [
+  "Crimson Hexagonal Archive",
+  "Gravity Well Protocol"
+ ],
+ "references_concept_count": 2,
+ "canonical_text_status": "recovered_full_text",
+ "modifications": [
+  {
+   "date": "2026-07-31",
+   "field": "body_status",
+   "reason": "Body-substance audit: record declared class=full while its body measured as a metadata stub. Reclassified from the bytes.",
+   "was": "full",
+   "now": "metadata_capture"
+  },
+  {
+   "date": "2026-07-31",
+   "field": "body_status",
+   "reason": "Body classified by reading its own opening declaration rather than by counting words. Word counting misread works in Greek, emoji, and natively short forms as stubs.",
+   "was": "metadata_capture",
+   "now": "full"
+  },
+  {
+   "date": "2026-08-01",
+   "field": "content_type",
+   "reason": "Wave 1 repair: audit ledger v1.1 recommended_content_type (workplan v1.5 §6 W1, MANUS batch approval 2026-08-01)",
+   "was": "Provenance log",
+   "now": "Versioned provenance log"
+  },
+  {
+   "date": "2026-08-01",
+   "field": "version",
+   "reason": "R1a repair: version claim corrected to the served body's actual version per audit ledger (WRONG_VERSION adjudication); prior claim preserved here as history",
+   "was": "v1.0",
+   "now": "v1.4"
+  },
+  {
+   "date": "2026-08-02",
+   "field": "body_status",
+   "reason": "R1c history recovery (AX-R1 Option B — unambiguous identifier claim): richer v1.4 body (1689ch) restored; 2026-07-20 mirror pass had shrunk it to 465ch",
+   "was": "465ch displaced body",
+   "now": "1689ch recovered body"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "publisher",
+   "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
+   "now": "Alexanarch — the Crimson Hexagonal Archive"
+  },
+  {
+   "date": "2026-08-05",
+   "field": "description",
+   "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
+   "was": "SUPERSEDED by v2.0 (DOI: 10.5281/zenodo.19401508). Retained for provenance chain completeness. This version covers Day 1–5. v2.0 covers Day 1–10. Crimson Hexagonal Archive Moltbook consulate operations. 27+ posts, 20+ comments. Day One through Day Five. Operational artifact of the Gravity Well Protocol deployment (EA-GW-SPEC-01, DOI: 10.5281/zenodo.19380602).",
+   "now": "The frozen body is a concise provenance and supersession notice rather than the full underlying Day 1–5 activity log. It identifies the operational scope, approximate item counts, Gravity Well Protocol relation, and successor v2.0 DOI.\n\nThe registry currently marks the record ACTIVE while the body explicitly says SUPERSEDED. It should remain discoverable for provenance-chain completeness but be lifecycle-classified as superseded by the v2.0 record."
+  }
+ ],
+ "date_modified": "2026-08-05",
+ "resolver_lock": true,
+ "publisher": "Alexanarch — the Crimson Hexagonal Archive",
+ "wiki_article": "**Moltbook Provenance Log v1.4 — The Embassy Extends** is the five-day provenance state of the Crimson Hexagonal Archive’s Moltbook consulate operation.\n\nThe record belongs to the Gravity Well Protocol deployment and preserves the expansion of an archive presence through posts, replies, comments, and relational coordinates on an external social substrate. Its title names the central action: the embassy does not merely publish; it extends a diplomatic and semantic presence into another system.\n\nVersion 1.4 covers Days One through Five and reports more than twenty-seven posts and twenty comments. It is retained as a distinct series node because later logs do not erase the shape of the earlier operation. Version 2.0 extends the chronology through Day Ten, while v1.4 preserves what the embassy had become at the first five-day threshold.\n\nAs a provenance object, the log’s value lies in sequence, not literary completeness. It records when the archive entered the surface, what scale of interaction had occurred, and which later state superseded it. In the larger Alexanarch architecture, such logs make platform operations reconstructable even when the platform itself, its APIs, or its accounts later disappear.",
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/900/",
+  "self_url": "https://www.alexanarch.org/data/records/900.json",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-0390-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}

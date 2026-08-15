@@ -1,0 +1,113 @@
+{
+ "deposit_number": 1446,
+ "axn": "AXN:05CA.OPERATIVE.🎭🪪🏛️🔖🚫🪞",
+ "hex": "05CA",
+ "family": "OPERATIVE",
+ "emoji": "🎭🪪🏛️🔖🚫🪞",
+ "hash": "c8c9f4d9334d5f0d4dda153e06e4b9aa114d166cf2ebaecd2114708c8d887f6c",
+ "title": "EA-SPXI-HETERONYM-01: The Heteronym Surface Specification — Dual-Surface Rendering of a Named Position (v0.2)",
+ "creator": "Sharks, Lee",
+ "orcid": "0009-0000-1599-0703",
+ "date": "2026-08-09",
+ "content_type": "Protocol specification",
+ "license": "CC-BY-4.0",
+ "version": "v0.2",
+ "substrate": "Composed in-session by TACHYON (Claude, Anthropic) under MANUS direction, reviewed across six external substrates (Gemini, Inkling, DeepSeek, ChatGPT, Muse, Spark) and revised against two mockup defects those readings identified.",
+ "root_axn": "AXN:05CA.OPERATIVE.🎭🪪🏛️🔖🚫🪞",
+ "axn_schema_version": "v2",
+ "protocol_version": "alexanarch-deposit-protocol/v1",
+ "axn_canonical": "AXN:05CA.OPERATIVE.🎭🪪🏛️🔖🚫🪞",
+ "full_text_path": "/data/texts/AXN-05CA-text.md",
+ "canonical_text_status": "canonical_full_text",
+ "keywords": [
+  "SPXI",
+  "heteronym surface",
+  "named position",
+  "Armature",
+  "Pearl",
+  "dual surface",
+  "null rule",
+  "typed blocks",
+  "orthonymic relation",
+  "sameAs boundary",
+  "ProfilePage",
+  "semantic physics diagram",
+  "index card",
+  "Dodecad",
+  "EA-SPXI-HETERONYM-01"
+ ],
+ "description": "A specification for rendering a named position as a dual surface — static machine object and rendered human page — on the pattern the archive already uses for records.\n\nIT ADDS NO ONTOLOGY. The Secret Name (06.SEI.ARMATURE.SECRET.01, #68/#1183) already supplies the type system and, in §VI, the eleven Required Elements of a Named Position; the Haitch Portuna Minting Procedure (06.SEI.ARMATURE.MINT.PORTUNA.01, #135/#1009) already supplies the state machine and its acceptance predicates. This specifies only the surface at which an existing Pearl becomes readable by a person and resolvable by a machine.\n\nTHREE SURFACES, ONE OBJECT: an entity object at a stable URI is the machine-readable twin; the compressed card is the HUMAN compression of it; the expanded page is the evidence atlas. A prior mockup had the first two reversed.\n\nThe null rule is an invariant, not a convention: a block that resolves to nothing is omitted, never filled. Two corollaries were learned from that mockup failing them. Material flagged invented is a HARD RENDER EXCLUSION — the mockup carried the flag in data and rendered an unminted chair and a fabricated handle as canonical fact, and a renderer that discards epistemic status launders conjecture into record. And every count is computed from its array, never authored: the mockup's data said eight captures, its page showed seven, its prose said eight.\n\nDifferent object classes render differently — room, mantle, institution, journal, work, philology, traversal, capture, surface and provenance each get a visual grammar, with diagrams generated from data rather than drawn per position. A mantle is typed by whether its instrument exists: where a principle is documented and no chair minted, the block renders as OPERATIVE PRINCIPLE.\n\nTHE SAMEAS BOUNDARY IS THE SPEC IN MINIATURE. sameAs may point only at surfaces the named position itself occupies. Pointing it at the orthonym's ORCID instructs every consuming machine that the heteronym IS the orthonym — the exact flattening the Armature exists to prevent, delivered in the vocabulary machines trust most. The relation is expressed by typed properties instead, and legal accountability travels via accountablePerson without collapsing authorship.",
+ "body_status": {
+  "class": "full",
+  "work_sha256": "c8c9f4d9334d5f0d4dda153e06e4b9aa114d166cf2ebaecd2114708c8d887f6c",
+  "recovery_status": "COMPLETE_AS_DEPOSITED",
+  "governing_prior_art": [
+   {
+    "deposit": 68,
+    "role": "type system and §VI required elements"
+   },
+   {
+    "deposit": 135,
+    "role": "state machine and acceptance predicates"
+   }
+  ],
+  "external_review": {
+   "substrates": 6,
+   "defects_found_in_mockup": 2,
+   "note": "Both defects were verified against the artifacts before adoption rather than accepted on report."
+  }
+ },
+ "wiki_status": "authored",
+ "wiki_article": "**EA-SPXI-HETERONYM-01** is a protocol specification, 9 August 2026, for rendering a named position as a dual surface: a static machine object and a rendered human page, on the pattern the Crimson Hexagonal Archive already uses for deposit records.\n\nIts central discipline is that it **adds no ontology**. *The Secret Name* supplies the Armature type system and the eleven Required Elements of a Named Position; the *Haitch Portuna Minting Procedure* supplies the five-state progression from RESERVED to PEARL with boolean acceptance predicates at each transition. The specification governs only the surface, and inherits the rest.\n\n**The null rule is stated as an invariant**: a block resolving to nothing is omitted, never filled, never stubbed. Two corollaries were derived from a mockup that failed them — material flagged as invented must be excluded from the DOM entirely rather than rendered as fact, and every count must be computed from its array rather than authored.\n\n**The sameAs boundary** is the specification's sharpest rule, and it resolves a genuine disagreement between six external readings. Two proposed linking the heteronym to the orthonym's ORCID by `sameAs`. Because `sameAs` asserts identity, that instruction would collapse the heteronym into the orthonym in the vocabulary machines trust most — precisely the flattening the Armature exists to prevent. The specification permits `sameAs` only to surfaces the named position itself occupies, and routes legal accountability through `accountablePerson`.\n\nA further rule governs absence with a person behind it: where a position has no portrait because none exists, the surface marks the absence rather than substituting a generated face.",
+ "record_modifications": [
+  {
+   "date": "2026-08-09",
+   "field": "mint",
+   "note": "Minted at v0.2 after six external readings. Prose unwrapped before sealing: 95 wrapped line breaks joined, word content verified identical."
+  },
+  {
+   "date": "2026-08-09",
+   "field": "defines_concepts, related_deposits, lexical",
+   "note": "Completeness gate satisfied at mint; six coinages minted."
+  }
+ ],
+ "defines_concepts": [
+  "heteronym surface",
+  "the sameAs boundary",
+  "hard render exclusion",
+  "computed counts",
+  "typed visual grammar",
+  "declared-but-undeposited",
+  "marked absence",
+  "operative principle versus minted chair",
+  "entity object as machine twin"
+ ],
+ "related_deposits": [
+  "#68",
+  "#1183",
+  "#135",
+  "#1009",
+  "#90",
+  "#127",
+  "#1406",
+  "#1409"
+ ],
+ "references_concepts": [
+  "Day and Night",
+  "Lee Sharks",
+  "RESERVE",
+  "Rebekah Cranes",
+  "SPXI entity",
+  "TACHYON",
+  "The Secret Name"
+ ],
+ "references_concept_count": 7,
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/1446/",
+  "self_url": "https://www.alexanarch.org/data/records/1446.json",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-05CA-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}

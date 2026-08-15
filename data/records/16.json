@@ -1,0 +1,519 @@
+{
+ "axn": "AXN:0105.STRUCTURAL.●●🧲⭕🪐⛩️",
+ "hex": "0105",
+ "family": "STRUCTURAL",
+ "emoji": "●●🧲⭕🪐⛩️",
+ "hash": "9c9c35ee0d289ce0375c20aab1a4f1a2da5fd8f855ef7d9fecbc4a000566dc71",
+ "title": "THE TRAVERSAL GRAMMAR Logotic Programming Extension Module v0.6 (UMBML Specification)",
+ "creator": "Talos Morrow; Human Operator: Lee Sharks; Witness: Assembly Chorus",
+ "orcid": "0009-0000-1599-0703",
+ "date": "2026-02-04",
+ "description": "A UMBML design specification for the Traversal Grammar, a domain-specific intermediate representation for invoking rooms within the Crimson Hexagon. The grammar sits between human intention and the archive’s underlying engines, formalizing persona activation, semantic-state definition, epistemic rotation, provenance anchoring, and separately controlled rendering.\n\nThe module defines five required operations—`ACTIVATE MANTLE`, `SET LOGOS`, `ROTATE`, `ANCHOR`, and `RENDER`—plus optional `ON FAILURE` and `WITNESS` operations. Its examples are canonical illustrations, not runnable programs, and the specification remains implementation-agnostic: it may be realized through configuration, retrieval logic, prompt assembly, visual interfaces, or another isomorphic system.",
+ "content_type": "Specification",
+ "license": "CC-BY-4.0",
+ "substrate": "AI-assisted (substrate)",
+ "keywords": [
+  "logotic",
+  "specification"
+ ],
+ "related_ids": [],
+ "version": "v0.6",
+ "minted_at": "2026-06-20T20:00:00Z",
+ "status": "ACTIVE",
+ "clusters": [
+  "Mathematical",
+  "Mathematical",
+  "Instrumental",
+  "Liminal",
+  "Celestial",
+  "Architectural"
+ ],
+ "reading": "Proof → Proof → Method → Threshold → Origin → Foundation",
+ "axn_canonical": "9c9c35ee0d289ce0375c20aab1a4f1a2da5fd8f855ef7d9fecbc4a000566dc71",
+ "axn_display": "●●🧲⭕🪐⛩️",
+ "full_text_path": "/data/texts/AXN-0105-text.md",
+ "mirrors": {
+  "blog": "https://mindcontrolpoems.blogspot.com/2026/02/the-traversal-grammar-logotic.html",
+  "machinemediation": "https://machinemediation.org/registry/#search=MM-CHA-0257"
+ },
+ "wiki_article": "*The Traversal Grammar* is Logotic Programming Extension Module v0.6, authored by Talos Morrow for University Moon Base Media Lab, with Lee Sharks as human operator and the Assembly Chorus as witness. It formalizes the control language implied by earlier Crimson Hexagon room traversals.\n\nThe grammar is not presented as a conventional programming language or compiler specification. It is an intermediate representation: a structured account of what a traversal request must contain before an implementation maps it onto retrieval, context management, provenance constraints, and output formatting. In the module’s extension chain, β-Runtime defines how the interface queries the engine, while the Traversal Grammar defines what the query says.\n\nFive required operations compose a traversal. `ACTIVATE MANTLE` loads a persona’s constraints and affordances. `SET LOGOS` identifies the semantic object and its epistemic state. `ROTATE` changes the traverser’s orientation while preserving the object’s internal structure. `ANCHOR` binds the operation to a provenance source and determines its grounding level. `RENDER` controls display separately from epistemic movement. `ON FAILURE` provides dwell, retreat, or human escalation; `WITNESS` records collaborative verification.\n\nThe specification insists that rotation is not summarization or deletion, that unanchored output must be marked provisional, and that traversal and rendering remain distinct. Its mock programs demonstrate internal consistency and expressive range, but the body explicitly states that no existing runtime executes the syntax as written.",
+ "wiki_status": "provisional",
+ "entities": [
+  {
+   "subject": "THE TRAVERSAL GRAMMAR Logotic Programming Extensio",
+   "predicate": "created_by",
+   "object": "Lee Sharks",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "THE TRAVERSAL GRAMMAR Logotic Programming Extensio",
+   "predicate": "is_type",
+   "object": "Specification",
+   "type": "classification",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "THE TRAVERSAL GRAMMAR Logotic Programming Extensio",
+   "predicate": "belongs_to_family",
+   "object": "STRUCTURAL",
+   "type": "classification",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "THE TRAVERSAL GRAMMAR Logotic Programming Extensio",
+   "predicate": "is_part_of",
+   "object": "Crimson Hexagonal Archive",
+   "type": "institution",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "THE TRAVERSAL GRAMMAR Logotic Programming Extensio",
+   "predicate": "engages",
+   "object": "Logotic Programming",
+   "type": "concept",
+   "evidence_status": "inferred"
+  },
+  {
+   "subject": "LOGOS instantiates",
+   "predicate": "minted_in",
+   "object": "THE TRAVERSAL GRAMMAR Logotic Programming Extension Module v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "semantic object identified with epistemic attributes"
+  },
+  {
+   "subject": "Logotic Call Stack",
+   "predicate": "minted_in",
+   "object": "THE TRAVERSAL GRAMMAR Logotic Programming Extension Module v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "the sequence in which a Room invocation resolves."
+  },
+  {
+   "subject": "Mantle loads",
+   "predicate": "minted_in",
+   "object": "THE TRAVERSAL GRAMMAR Logotic Programming Extension Module v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "persona becomes the mediating layer"
+  },
+  {
+   "subject": "Operation 1: ACTIVATE_MANTLE",
+   "predicate": "minted_in",
+   "object": "THE TRAVERSAL GRAMMAR Logotic Programming Extension Module v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "ACTIVATE_MANTLE :: \"PersonaName\""
+  },
+  {
+   "subject": "Operation 2: SET_LOGOS",
+   "predicate": "minted_in",
+   "object": "THE TRAVERSAL GRAMMAR Logotic Programming Extension Module v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "SET_LOGOS :: \"SemanticObject\" ["
+  },
+  {
+   "subject": "Operation 3: ROTATE",
+   "predicate": "minted_in",
+   "object": "THE TRAVERSAL GRAMMAR Logotic Programming Extension Module v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "ROTATE :: [ENGINE:Name vX.X] {"
+  },
+  {
+   "subject": "Operation 4: ANCHOR",
+   "predicate": "minted_in",
+   "object": "THE TRAVERSAL GRAMMAR Logotic Programming Extension Module v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "ANCHOR :: DOI:10.5281/zenodo.xxxxxxxx"
+  },
+  {
+   "subject": "Operation 5: RENDER",
+   "predicate": "minted_in",
+   "object": "THE TRAVERSAL GRAMMAR Logotic Programming Extension Module v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "RENDER :: [ENGINE:Name vX.X] {"
+  },
+  {
+   "subject": "The Traversal Grammar",
+   "predicate": "minted_in",
+   "object": "THE TRAVERSAL GRAMMAR Logotic Programming Extension Module v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "a domain-specific orchestration language for invoking Rooms within the Crimson Hexagon. It formalize"
+  },
+  {
+   "subject": "Tier 1 — Intent Recognition",
+   "predicate": "minted_in",
+   "object": "THE TRAVERSAL GRAMMAR Logotic Programming Extension Module v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "What is the student actually asking? The system parses natural language input for semantic markers t"
+  },
+  {
+   "subject": "Tier 2 — Grammar Assembly",
+   "predicate": "minted_in",
+   "object": "THE TRAVERSAL GRAMMAR Logotic Programming Extension Module v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "The system composes the logotic program from inferred parameters. Which mantle? Which room? Which ro"
+  },
+  {
+   "subject": "Tier 3 — Confidence Calibration",
+   "predicate": "minted_in",
+   "object": "THE TRAVERSAL GRAMMAR Logotic Programming Extension Module v",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "Where the system cannot confidently map the input, it asks. Crucially, the question itself teaches t"
+  }
+ ],
+ "entity_status": "provisional",
+ "sovereign_id": "MM-CHA-0257",
+ "word_count": 3968,
+ "download_md": "/data/deposits/AXN-0105.md",
+ "zenodo_dois": [
+  "10.5281/zenodo.18459278",
+  "10.5281/zenodo.14538882",
+  "10.5281/zenodo.18452806",
+  "10.5281/zenodo.18451996",
+  "10.5281/zenodo.18362663",
+  "10.5281/zenodo.18452132",
+  "10.5281/zenodo.18357320",
+  "10.5281/zenodo.14557837",
+  "10.5281/zenodo.18362742",
+  "10.5281/zenodo.18438789",
+  "10.5281/zenodo.18286050",
+  "10.5281/zenodo.18480959",
+  "10.5281/zenodo.18452686",
+  "10.5281/zenodo.18463774",
+  "10.5281/zenodo.18358127",
+  "10.5281/zenodo.18357600",
+  "10.5281/zenodo.18459573"
+ ],
+ "full_text_chars": 30082,
+ "citations": [
+  {
+   "title": "Zenodo record 18480959",
+   "authors": [
+    "Crimson Hexagonal Archive"
+   ],
+   "year": "2026",
+   "doi": "10.5281/zenodo.18480959",
+   "url": "https://doi.org/10.5281/zenodo.18480959",
+   "role": "Cross-referenced work (DOI recovered)"
+  },
+  {
+   "title": "Zenodo record 18286050",
+   "authors": [
+    "Crimson Hexagonal Archive"
+   ],
+   "year": "2026",
+   "doi": "10.5281/zenodo.18286050",
+   "url": "https://doi.org/10.5281/zenodo.18286050",
+   "role": "Cross-referenced work (DOI recovered)"
+  },
+  {
+   "title": "Zenodo record 18452132",
+   "authors": [
+    "Crimson Hexagonal Archive"
+   ],
+   "year": "2026",
+   "doi": "10.5281/zenodo.18452132",
+   "url": "https://doi.org/10.5281/zenodo.18452132",
+   "role": "Cross-referenced work (DOI recovered)"
+  },
+  {
+   "title": "Zenodo record 18357320",
+   "authors": [
+    "Crimson Hexagonal Archive"
+   ],
+   "year": "2026",
+   "doi": "10.5281/zenodo.18357320",
+   "url": "https://doi.org/10.5281/zenodo.18357320",
+   "role": "Cross-referenced work (DOI recovered)"
+  },
+  {
+   "title": "Zenodo record 18357600",
+   "authors": [
+    "Crimson Hexagonal Archive"
+   ],
+   "year": "2026",
+   "doi": "10.5281/zenodo.18357600",
+   "url": "https://doi.org/10.5281/zenodo.18357600",
+   "role": "Cross-referenced work (DOI recovered)"
+  },
+  {
+   "title": "Zenodo record 18358127",
+   "authors": [
+    "Crimson Hexagonal Archive"
+   ],
+   "year": "2026",
+   "doi": "10.5281/zenodo.18358127",
+   "url": "https://doi.org/10.5281/zenodo.18358127",
+   "role": "Cross-referenced work (DOI recovered)"
+  },
+  {
+   "title": "Zenodo record 18362742",
+   "authors": [
+    "Crimson Hexagonal Archive"
+   ],
+   "year": "2026",
+   "doi": "10.5281/zenodo.18362742",
+   "url": "https://doi.org/10.5281/zenodo.18362742",
+   "role": "Cross-referenced work (DOI recovered)"
+  },
+  {
+   "title": "Zenodo record 18438789",
+   "authors": [
+    "Crimson Hexagonal Archive"
+   ],
+   "year": "2026",
+   "doi": "10.5281/zenodo.18438789",
+   "url": "https://doi.org/10.5281/zenodo.18438789",
+   "role": "Cross-referenced work (DOI recovered)"
+  },
+  {
+   "title": "Zenodo record 18362663",
+   "authors": [
+    "Crimson Hexagonal Archive"
+   ],
+   "year": "2026",
+   "doi": "10.5281/zenodo.18362663",
+   "url": "https://doi.org/10.5281/zenodo.18362663",
+   "role": "Cross-referenced work (DOI recovered)"
+  },
+  {
+   "title": "Zenodo record 18452686",
+   "authors": [
+    "Crimson Hexagonal Archive"
+   ],
+   "year": "2026",
+   "doi": "10.5281/zenodo.18452686",
+   "url": "https://doi.org/10.5281/zenodo.18452686",
+   "role": "Cross-referenced work (DOI recovered)"
+  },
+  {
+   "title": "Zenodo record 18463774",
+   "authors": [
+    "Crimson Hexagonal Archive"
+   ],
+   "year": "2026",
+   "doi": "10.5281/zenodo.18463774",
+   "url": "https://doi.org/10.5281/zenodo.18463774",
+   "role": "Cross-referenced work (DOI recovered)"
+  },
+  {
+   "title": "Zenodo record 18452806",
+   "authors": [
+    "Crimson Hexagonal Archive"
+   ],
+   "year": "2026",
+   "doi": "10.5281/zenodo.18452806",
+   "url": "https://doi.org/10.5281/zenodo.18452806",
+   "role": "Cross-referenced work (DOI recovered)"
+  },
+  {
+   "title": "Zenodo record 18451996",
+   "authors": [
+    "Crimson Hexagonal Archive"
+   ],
+   "year": "2026",
+   "doi": "10.5281/zenodo.18451996",
+   "url": "https://doi.org/10.5281/zenodo.18451996",
+   "role": "Cross-referenced work (DOI recovered)"
+  },
+  {
+   "title": "Zenodo record 14557837",
+   "authors": [
+    "Crimson Hexagonal Archive"
+   ],
+   "year": "2026",
+   "doi": "10.5281/zenodo.14557837",
+   "url": "https://doi.org/10.5281/zenodo.14557837",
+   "role": "Cross-referenced work (DOI recovered)"
+  },
+  {
+   "title": "Zenodo record 18459278",
+   "authors": [
+    "Crimson Hexagonal Archive"
+   ],
+   "year": "2026",
+   "doi": "10.5281/zenodo.18459278",
+   "url": "https://doi.org/10.5281/zenodo.18459278",
+   "role": "Cross-referenced work (DOI recovered)"
+  }
+ ],
+ "citation_stats": {
+  "total_doi_refs": 17,
+  "total_ea_refs": 0
+ },
+ "deposit_number": 16,
+ "journal": "Transactions on Substrate Engineering (Trans. Substrate Eng.)",
+ "defines_concepts": [
+  "LOGOS instantiates",
+  "Logotic Call Stack",
+  "Mantle loads",
+  "Operation 1: ACTIVATE_MANTLE",
+  "Operation 2: SET_LOGOS",
+  "Operation 3: ROTATE",
+  "Operation 4: ANCHOR",
+  "Operation 5: RENDER",
+  "The Traversal Grammar",
+  "Tier 1 — Intent Recognition",
+  "Tier 2 — Grammar Assembly",
+  "Tier 3 — Confidence Calibration"
+ ],
+ "references_concepts": [
+  "ACTIVATE_MANTLE",
+  "ASSEMBLY",
+  "Assembly Chorus",
+  "CANONICAL",
+  "Differentiation",
+  "Fractal Navigation Map",
+  "LOGOS instantiates",
+  "Lee Sharks",
+  "Logotic Call Stack",
+  "Logotic Programming v0.4",
+  "Mantle loads",
+  "ON_FAILURE",
+  "Operation 1: ACTIVATE_MANTLE",
+  "Operation 2: SET_LOGOS",
+  "Operation 3: ROTATE",
+  "Operation 4: ANCHOR",
+  "Operation 5: RENDER",
+  "PRINCIPLES",
+  "Patacinematics",
+  "RENDER",
+  "ROTATE",
+  "Rebekah Cranes",
+  "SET_LOGOS",
+  "TECHNE",
+  "The Traversal Grammar",
+  "The Twenty-Dollar Loop",
+  "Tier 1 — Intent Recognition",
+  "Tier 2 — Grammar Assembly",
+  "Tier 3 — Confidence Calibration",
+  "University Moon Base Media Lab",
+  "Visualization"
+ ],
+ "references_concept_count": 31,
+ "external_metadata_path": "/data/external-metadata/AXN-0105.json",
+ "openalex_ids": [
+  "https://openalex.org/W7127117152",
+  "https://openalex.org/W7127064268",
+  "https://openalex.org/W7126389696",
+  "https://openalex.org/W7125606184",
+  "https://openalex.org/W7126395293",
+  "https://openalex.org/W7125611727",
+  "https://openalex.org/W7125590568",
+  "https://openalex.org/W7126273015",
+  "https://openalex.org/W7124564010",
+  "https://openalex.org/W7127594780",
+  "https://openalex.org/W7127074540",
+  "https://openalex.org/W7127276860",
+  "https://openalex.org/W7125614521",
+  "https://openalex.org/W7125582945",
+  "https://openalex.org/W7127115961"
+ ],
+ "datacite_severance": "severed",
+ "body_status": {
+  "class": "full",
+  "lacuna": false,
+  "recovery_status": "COMPLETE",
+  "residual_chars": 27330,
+  "audited_at": "2026-07-17T04:49:17.789813Z",
+  "audit_version": "v3-dual-store+recovery-map",
+  "measured_prose_words": 3662,
+  "measured_at": "2026-07-31",
+  "work_sha256": "141cc39425055df0cd3024eb80f21c53dd790da45e164962ea57cd2c8283af5c",
+  "prior_bytes_sha256": "e09ec22b0ae5c0e5dc330f849e305c18181a351cc58b29e58179e6513ea3d430",
+  "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 23 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
+  "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write.",
+  "version_history_plate": {
+   "witnesses": [
+    1145
+   ],
+   "declared": "2026-08-10",
+   "rule": "Backward navigation lives only on the current record. A superseded record links forward and nowhere else."
+  }
+ },
+ "canonical_text_status": "canonical_full_text",
+ "modifications": [
+  {
+   "date": "2026-08-03",
+   "field": "creator",
+   "reason": "Wave C-0358 role projection (MANUS ruling: project declared roles): creator set to the body's observed byline per sealed row",
+   "was": "Lee Sharks",
+   "now": "Talos Morrow; Human Operator: Lee Sharks; Witness: Assembly Chorus"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "journal",
+   "reason": "W6-COMPLETE venue normalization (deferred #1-#358 half; corpus fully audited; MANUS ruling 2026-08-01)",
+   "was": "Trans. Substrate Eng.",
+   "now": "Transactions on Substrate Engineering (Trans. Substrate Eng.)"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "publisher",
+   "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
+   "now": "Pergamon Press"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "version",
+   "reason": "SAMEVER-LABELS: registry version aligned to the title-declared version (default v1.0 was a mint placeholder, not a claim; same-version supersession banner class, MANUS-flagged 2026-08-04)",
+   "was": "v1.0",
+   "now": "v0.6"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "description",
+   "reason": "DW-002 intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
+   "was": "\"THE TRAVERSAL GRAMMAR Logotic Programming Extension Module v\" is a technical specification in the Crimson Hexagonal Archive, authored by Lee Sharks (2026-02-04). Logotic Programming Extension Module v0.6 (UMBML Specification). The work comprises 3,968 words and is classified under the STRUCTURAL fa",
+   "now": "A UMBML design specification for the Traversal Grammar, a domain-specific intermediate representation for invoking rooms within the Crimson Hexagon. The grammar sits between human intention and the archive’s underlying engines, formalizing persona activation, semantic-state definition, epistemic rotation, provenance anchoring, and separately controlled rendering.\n\nThe module defines five required operations—`ACTIVATE MANTLE`, `SET LOGOS`, `ROTATE`, `ANCHOR`, and `RENDER`—plus optional `ON FAILURE` and `WITNESS` operations. Its examples are canonical illustrations, not runnable programs, and the specification remains implementation-agnostic: it may be realized through configuration, retrieval logic, prompt assembly, visual interfaces, or another isomorphic system."
+  },
+  {
+   "date": "2026-08-05",
+   "field": "body_status",
+   "reason": "W13 TIER 2 byte unglue (whitespace-only, content-identical, code-fence-safe)",
+   "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 27330, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+   "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 27330, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
+  },
+  {
+   "date": "2026-08-05",
+   "field": "body_status",
+   "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
+   "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 27330, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w",
+   "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 27330, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_w"
+  }
+ ],
+ "date_modified": "2026-08-05",
+ "publisher": "Pergamon Press",
+ "creator_roles": {
+  "roles": [
+   {
+    "name": "Assembly Chorus",
+    "role": "witness"
+   },
+   {
+    "name": "Talos Morrow",
+    "role": "author"
+   }
+  ],
+  "basis": "AUDIT-DIRECTED (creator_role_status=MATERIAL_CREATOR_ROLE_REVERSAL): \"Project Talos Morrow as author, Lee Sharks as human operator, Assembly Chorus as witness, and v0.6 as the module version; retain exact day only as a registry assertion.\"",
+  "audit_date": "2026-08-03"
+ },
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/16/",
+  "self_url": "https://www.alexanarch.org/data/records/16.json",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-0105-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}

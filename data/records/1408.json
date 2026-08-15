@@ -1,0 +1,401 @@
+{
+ "deposit_number": 1408,
+ "axn": "AXN:0591.DATASET.∞🛤️🔓🕘◇🔝",
+ "hex": "0591",
+ "family": "DATASET",
+ "emoji": "∞🛤️🔓🕘◇🔝",
+ "hash": "ff5bfa6a9af51a88b22ec046c1de092e9171087d348f274fcb0e1d9119604ac0",
+ "title": "PEO Case 001 · T0 Enumeration of the Firenze crui.unifi Corpus (14,284 DOIs)",
+ "creator": "Lee Sharks (Rex Fraction / Nobel Glas)",
+ "date": "2026-07-22",
+ "description": "Recovery map for the 14,284 DataCite DOIs formerly registered under client `crui.unifi` (Università degli Studi di Firenze; Firenze University Press) and abandoned by the registration-agency migration event of 2026-07-16T07:23:35Z.\n\nThe Platform Erosion Observatory's tier-1 census detected the client-count collapse (14,283 → 0) between 2026-07-13 and 2026-07-20 (Case 001, `data/peo-case-001-florence-fup.md`). This deposit resolves that figure to identifiers by streaming the DataCite Public Data File 2025 — a t0 snapshot frozen at 2026-01-06T20:11:59Z, approximately six months prior to the deletion — and filtering on `client_id=crui.unifi`.\n\nThe extraction yields 14,284 unique DOIs, all under prefix `10.13128`: 14,282 in `findable` state and 2 in `registered` state (the +1 discrepancy against the tier-1 findable count of 14,283 is consistent with a single state transition in the six-month interval between snapshot and census). Update-time distribution places 12,308 DOIs (86.2% of the corpus) in a four-month mid-2020 metadata refresh window (2020-06 through 2020-09), with secondary refresh points at 2021-03 (528 DOIs) and 2023-03 (352 DOIs). Long tail through 2024-08.\n\nEvery DOI in the enumeration currently resolves to `https://journals.fupress.net/inactive-doi/`. The corpus spans the Firenze University Press journal portfolio: `ijae` (Italian Journal of Anatomy and Embryology, 1,959), `aestimum` (1,862), `techne` (875), `rief` (624), `studi_formaz` (578), `formare` (536), `lea` (520), `studi_slavis` (465), `aisthesis` (433), and 200+ other journal codes.\n\nTwo edge-case identifiers embed the prefix a second time in the suffix (`10.13128/10.13128/ahs-23289`, `10.13128/10.13128/rea-25108`) — preserved unaltered from source; flagged for any re-registration pass.\n\nThe enumeration is redistributed under CC-BY-4.0 from the DataCite Public Data File 2025 (landing DOI `10.14454/t5qb-d995`) and constitutes a public recovery map for the 10.13128 corpus.",
+ "content_type": "Dataset",
+ "license": "CC-BY-4.0",
+ "substrate": "AI-assisted (substrate) — AI used as drafting substrate under human editorial governance",
+ "root_axn": "AXN:0591.DATASET",
+ "axn_schema_version": "v2",
+ "protocol_version": "alexanarch-deposit-protocol/v1",
+ "axn_canonical": "ff5bfa6a9af51a88b22ec046c1de092e9171087d348f274fcb0e1d9119604ac0",
+ "clusters": [
+  "Terminal",
+  "Navigational",
+  "Terminal",
+  "Temporal",
+  "Mathematical",
+  "Terminal"
+ ],
+ "axn_reading": "Closure -> Search -> Closure -> Duration -> Proof -> Closure",
+ "minted_at": "2026-07-22T06:00:44Z",
+ "status": "ACTIVE",
+ "status_authorial": "SELF_SERVE_MINTED",
+ "full_text_path": "/data/texts/AXN-0591-text.md",
+ "wiki_article": "**PEO Case 001 · T0 Enumeration of the Firenze crui.unifi Corpus** is a dataset by Lee Sharks, deposited 22 July 2026 under the Rex Fraction and Nobel Glas registers, and the first case opened by the **Platform Erosion Observatory**.\n\nIt maps **14,284 DataCite DOIs** formerly registered under the client `crui.unifi` — Università degli Studi di Firenze and Firenze University Press — and abandoned by a registration-agency migration event timestamped 2026-07-16T07:23:35Z. The T0 designation marks it as a baseline enumeration: the corpus recorded at the moment of the event, before decay, so that later observations have something to be measured against.\n\nThe case establishes the Observatory's method and its evidentiary position. Platform erosion is argued here about **someone else's corpus** — a university press, not the archive — which is what makes the instrument credible: the Observatory's standing depends on its operator not being the visible subject of what it publishes. A dataset of 14,284 abandoned identifiers is the kind of event that is ordinarily invisible because no one enumerates it while it is happening.",
+ "wiki_status": "provisional",
+ "entities": [
+  {
+   "subject": "PEO Case 001 · T0 Enumeration of the Firenze crui.unifi Corpus (14,284 DOIs)",
+   "predicate": "created_by",
+   "object": "Lee Sharks (Rex Fraction / Nobel Glas)",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "PEO Case 001 · T0 Enumeration of the Firenze crui.unifi Corpus (14,284 DOIs)",
+   "predicate": "is_type",
+   "object": "Dataset",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "PEO Case 001 · T0 Enumeration of the Firenze crui.unifi Corpus (14,284 DOIs)",
+   "predicate": "belongs_to_family",
+   "object": "DATASET",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "PEO Case 001 · T0 Enumeration of the Firenze crui.unifi Corpus (14,284 DOIs)",
+   "predicate": "is_part_of",
+   "object": "Crimson Hexagonal Archive",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Platform Erosion Observatory",
+   "predicate": "minted_in",
+   "object": "PEO Case 001 · T0 Enumeration of the Firenze crui.unifi Corpus (14,284 DOIs)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "A monitoring framework (operating a tier-1 census) that detects collapses in DOI client counts and other indicators of scholarly infrastructure erosion."
+  },
+  {
+   "subject": "tier-1 census",
+   "predicate": "minted_in",
+   "object": "PEO Case 001 · T0 Enumeration of the Firenze crui.unifi Corpus (14,284 DOIs)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "The first-level detection pass of the Platform Erosion Observatory, which tracks aggregate client-count metrics to flag erosion events."
+  },
+  {
+   "subject": "T0 Enumeration",
+   "predicate": "minted_in",
+   "object": "PEO Case 001 · T0 Enumeration of the Firenze crui.unifi Corpus (14,284 DOIs)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "A point-in-time snapshot enumeration of DOIs from a pre-deletion source file, establishing the corpus baseline immediately before a deletion event."
+  },
+  {
+   "subject": "PEO Case 001",
+   "predicate": "minted_in",
+   "object": "PEO Case 001 · T0 Enumeration of the Firenze crui.unifi Corpus (14,284 DOIs)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "The first numbered case in the Platform Erosion Observatory's case series, documenting the collapse and recovery of the Firenze University Press crui.unifi DOI corpus."
+  },
+  {
+   "subject": "registration-agency migration event",
+   "predicate": "minted_in",
+   "object": "PEO Case 001 · T0 Enumeration of the Firenze crui.unifi Corpus (14,284 DOIs)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "A technical event in which a DOI client's registration is transferred or terminated during a DataCite agency migration, resulting in the apparent deletion of all associated DOI records."
+  },
+  {
+   "subject": "client-count collapse",
+   "predicate": "minted_in",
+   "object": "PEO Case 001 · T0 Enumeration of the Firenze crui.unifi Corpus (14,284 DOIs)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "The observable metric event in which a DataCite client's registered DOI count drops to zero, used by the Platform Erosion Observatory as a primary erosion signal."
+  },
+  {
+   "subject": "RangeStream adapter",
+   "predicate": "minted_in",
+   "object": "PEO Case 001 · T0 Enumeration of the Firenze crui.unifi Corpus (14,284 DOIs)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "A file-like Python object that issues chunked HTTP Range requests to stream large remote tar archives without downloading the full file, used here to access the DataCite Public Data File."
+  },
+  {
+   "subject": "public recovery map",
+   "predicate": "minted_in",
+   "object": "PEO Case 001 · T0 Enumeration of the Firenze crui.unifi Corpus (14,284 DOIs)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "A redistributable enumeration of DOIs from a deleted or abandoned corpus, intended to support re-registration or preservation efforts."
+  },
+  {
+   "subject": "Falsification Conditions",
+   "predicate": "minted_in",
+   "object": "PEO Case 001 · T0 Enumeration of the Firenze crui.unifi Corpus (14,284 DOIs)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "An explicit section of the deposit stating the empirical conditions under which its central claims would be weakened or contradicted, modelled on falsificationist scientific practice."
+  },
+  {
+   "subject": "byproduct per-client census counter",
+   "predicate": "minted_in",
+   "object": "PEO Case 001 · T0 Enumeration of the Firenze crui.unifi Corpus (14,284 DOIs)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "A secondary data product generated during the extraction pass that tallies DOI counts for every DataCite client in the source file, not just the target client."
+  },
+  {
+   "subject": "chunked HTTP Range requests",
+   "predicate": "minted_in",
+   "object": "PEO Case 001 · T0 Enumeration of the Firenze crui.unifi Corpus (14,284 DOIs)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "A streaming retrieval technique using HTTP Range headers to fetch a large remote file in fixed-size segments, here ~180 chunks at 128 MB each, avoiding single-connection expiration failures."
+  }
+ ],
+ "entity_status": "provisional",
+ "defines_concepts": [
+  "Platform Erosion Observatory",
+  "tier-1 census",
+  "T0 Enumeration",
+  "PEO Case 001",
+  "registration-agency migration event",
+  "client-count collapse",
+  "RangeStream adapter",
+  "public recovery map",
+  "Falsification Conditions",
+  "byproduct per-client census counter",
+  "chunked HTTP Range requests"
+ ],
+ "version": "v1.0",
+ "keywords": [
+  "Platform Erosion Observatory",
+  "PEO Case 001",
+  "DataCite",
+  "DOI",
+  "Firenze University Press",
+  "crui.unifi",
+  "prefix 10.13128",
+  "identifier migration",
+  "registration agency",
+  "digital preservation",
+  "recovery map",
+  "tier-2 enumeration",
+  "T0 snapshot"
+ ],
+ "related_identifiers_raw": "10.14454/t5qb-d995 (source: DataCite Public Data File 2025); https://alexanarch.org/data/peo-case-001-florence-fup.md (Case 001 file)",
+ "mint_source": {
+  "kind": "github_issue",
+  "issue_number": 14,
+  "repository": "leesharks000/alexanarch",
+  "minted_by_workflow": ".github/workflows/mint-axn.yml",
+  "minted_by_script": "scripts/mint_deposit.py",
+  "minted_via": "self_serve_validated_pr"
+ },
+ "references_concepts": [
+  "File 2",
+  "Lee Sharks",
+  "Methodology",
+  "Rex Fraction"
+ ],
+ "references_concept_count": 4,
+ "citations": [
+  {
+   "type": "dataset",
+   "text": "DataCite Public Data File 2025 (landing DOI `10.14454/t5qb-d995`)",
+   "title": "DataCite Public Data File 2025",
+   "doi": "10.14454/t5qb-d995",
+   "authors": [],
+   "venue": "DataCite",
+   "role": "primary source",
+   "wikidata_hint": "DataCite Public Data File 2025"
+  },
+  {
+   "type": "dataset",
+   "text": "the DataCite Public Data File 2025 — a t0 snapshot frozen at 2026-01-06T20:11:59Z",
+   "title": "DataCite Public Data File 2025",
+   "doi": "10.14454/t5qb-d995",
+   "authors": [],
+   "venue": "DataCite",
+   "role": "primary source",
+   "wikidata_hint": "DataCite Public Data File 2025"
+  },
+  {
+   "type": "other",
+   "text": "Case 001, `data/peo-case-001-florence-fup.md`",
+   "title": "PEO Case 001 companion case file",
+   "url": "https://alexanarch.org/data/peo-case-001-florence-fup.md",
+   "authors": [
+    "Lee Sharks"
+   ],
+   "role": "companion work",
+   "wikidata_hint": "Platform Erosion Observatory Case 001"
+  }
+ ],
+ "wikidata_candidates": [
+  {
+   "name": "Università degli Studi di Firenze",
+   "type": "organization",
+   "search_query": "Università degli Studi di Firenze",
+   "context": "The institution whose DOI client (`crui.unifi`) suffered the registration-agency migration event; publisher of the corpus.",
+   "wikidata_qid": "Q131906813",
+   "wikidata_label": "Università degli Studi di Firenze",
+   "wikidata_description": "",
+   "wikidata_url": "http://www.wikidata.org/entity/Q131906813",
+   "resolution": "confident"
+  },
+  {
+   "name": "Firenze University Press",
+   "type": "organization",
+   "search_query": "Firenze University Press",
+   "context": "The open-access press whose journal portfolio constitutes the 14,284-DOI corpus under prefix 10.13128.",
+   "wikidata_qid": "Q3745980",
+   "wikidata_label": "Firenze University Press",
+   "wikidata_description": "academic publisher in Italy",
+   "wikidata_url": "http://www.wikidata.org/entity/Q3745980",
+   "resolution": "confident"
+  },
+  {
+   "name": "DataCite",
+   "type": "organization",
+   "search_query": "DataCite",
+   "context": "The DOI registration agency whose Public Data File 2025 is the primary source for the enumeration.",
+   "wikidata_qid": "Q821542",
+   "wikidata_label": "DataCite",
+   "wikidata_description": "international not-for-profit organization which aims to improve data citation",
+   "wikidata_url": "http://www.wikidata.org/entity/Q821542",
+   "resolution": "confident"
+  },
+  {
+   "name": "Italian Journal of Anatomy and Embryology",
+   "type": "work",
+   "search_query": "Italian Journal of Anatomy and Embryology",
+   "context": "Largest single journal in the corpus (1,959 DOIs), identified by code `ijae`.",
+   "wikidata_qid": "Q15762168",
+   "wikidata_label": "Italian Journal of Anatomy and Embryology",
+   "wikidata_description": "journal",
+   "wikidata_url": "http://www.wikidata.org/entity/Q15762168",
+   "resolution": "confident"
+  },
+  {
+   "name": "Aestimum",
+   "type": "work",
+   "search_query": "Aestimum journal Firenze University Press",
+   "context": "Second-largest journal in the corpus (1,862 DOIs), journal code `aestimum`.",
+   "resolution": "unresolved"
+  },
+  {
+   "name": "TECHNE",
+   "type": "work",
+   "search_query": "TECHNE journal design Firenze University Press",
+   "context": "Third-largest journal in the corpus (875 DOIs), journal code `techne`.",
+   "resolution": "unresolved"
+  },
+  {
+   "name": "Creative Commons Attribution 4.0 International",
+   "type": "concept",
+   "search_query": "Creative Commons Attribution 4.0 International license",
+   "context": "License under which the enumeration is redistributed (CC-BY-4.0).",
+   "wikidata_qid": "Q20007257",
+   "wikidata_label": "Creative Commons Attribution 4.0 International",
+   "wikidata_description": "Creative Commons license",
+   "wikidata_url": "http://www.wikidata.org/entity/Q20007257",
+   "resolution": "confident"
+  },
+  {
+   "name": "Amazon S3",
+   "type": "other",
+   "search_query": "Amazon S3 cloud storage",
+   "context": "S3 presigned URLs are issued by the DataCite infrastructure's 302 redirect mechanism during chunked streaming.",
+   "resolution": "unresolved"
+  },
+  {
+   "name": "CRUI",
+   "type": "organization",
+   "search_query": "CRUI Italian university rectors conference",
+   "context": "Referenced as part of the DataCite client identifier `crui.unifi`.",
+   "resolution": "unresolved"
+  }
+ ],
+ "cha_cross_references": [
+  {
+   "referenced_axn_or_title": "PEO Case 001 companion case file (data/peo-case-001-florence-fup.md)",
+   "reference_type": "companion",
+   "context": "The deposit explicitly identifies this markdown file as the companion case document in which the tier-1 census first detected the client-count collapse; the enumeration deposit resolves the aggregate figure to individual identifiers."
+  }
+ ],
+ "datacite_severance": "intact",
+ "spxi_audit": {
+  "spxi_protocol": "v0.2",
+  "validated_at": "2026-07-22T06:01:41.335663+00:00",
+  "layers": {
+   "layer_1_inscription_anchors": {
+    "present": false,
+    "anchors_found": [],
+    "anchor_count": 0,
+    "orcid_in_body": false,
+    "creator_in_body": false,
+    "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+   },
+   "layer_2_micro_kernels": {
+    "present": false,
+    "fenced_json_blocks": 0,
+    "json_ld_context_markers": 0
+   },
+   "layer_3_content_hash": {
+    "present": true,
+    "canonical_hash": "ff63d2848a18c5cbba859af5f2b01a7b36e814b1abed6c420c2754a806ff2301",
+    "hash_in_body": false,
+    "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+   },
+   "layer_4_cross_signing": {
+    "present": false,
+    "cross_references_count": 0,
+    "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+   },
+   "layer_5_external_anchors": {
+    "present": false,
+    "wikidata_qid_count": 0,
+    "external_doi_count": 0,
+    "orcid_present": false
+   }
+  },
+  "overall_conformance": "measurement_only"
+ },
+ "external_metadata_path": "/data/external-metadata/AXN-0591.json",
+ "canonical_text_status": "recovered_full_text",
+ "modifications": [
+  {
+   "date": "2026-07-30",
+   "field": "canonical_text_status",
+   "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+   "was": "metadata_only",
+   "now": "recovered_full_text"
+  },
+  {
+   "date": "2026-07-31",
+   "field": "body_status",
+   "reason": "Body classified by reading its own opening declaration rather than by counting words. Word counting misread works in Greek, emoji, and natively short forms as stubs.",
+   "now": "full"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "publisher",
+   "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
+   "now": "Alexanarch — the Crimson Hexagonal Archive"
+  }
+ ],
+ "date_modified": "2026-08-04",
+ "body_status": {
+  "measured_prose_words": 462,
+  "measured_at": "2026-07-31",
+  "class_before_read_audit": null,
+  "class": "full",
+  "read_audit": "Classified 2026-07-31 by reading the body opening: the record opens with the work, not a capture notice."
+ },
+ "publisher": "Alexanarch — the Crimson Hexagonal Archive",
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/1408/",
+  "self_url": "https://www.alexanarch.org/data/records/1408.json",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-0591-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}

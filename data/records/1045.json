@@ -1,0 +1,90 @@
+{
+ "deposit_number": 1045,
+ "hex": "0421",
+ "axn": "AXN:0421.EMPIRICAL.🎭📐🐝🎪🏷️🎇",
+ "axn_canonical": "844e7d854ce8edc2d49c3aedd7905871d55ae2f6a09f6a86fd24d789ef1ff228",
+ "emoji": "🎭📐🐝🎪🏷️🎇",
+ "clusters": [
+  "Symbolic",
+  "Scriptural",
+  "Organic",
+  "Symbolic",
+  "Scriptural",
+  "Liminal"
+ ],
+ "axn_reading": "Play -> Text -> Growth -> Play -> Text -> Threshold",
+ "family": "EMPIRICAL",
+ "root_axn": "AXN:0421.EMPIRICAL",
+ "title": "EA-EROSION-01 v1.0 — The Platform Erosion Observatory: The Zenodo Removal Census as First Instrument, and the Plan for a Broader Cross-Platform Tracker",
+ "creator": "Lee Sharks",
+ "orcid": "0009-0000-1599-0703",
+ "date": "2026-07-06",
+ "content_type": "Empirical research instrument specification + baseline population analysis + forward roadmap",
+ "license": "CC-BY-4.0",
+ "substrate": "AI-assisted: drafted by TACHYON (Claude, Anthropic) under MANUS (Lee Sharks) direction; empirical grounding derived from three parallel research assessments synthesized against the actual Zenodo exporter dataset preserved 2026-07-06 to data-rhizome commit cb7b59390f4e. Instruments and roles declared per EA-MMRS-VRB-01 U4.",
+ "version": "v1.0",
+ "hash": "844e7d854ce8edc2d49c3aedd7905871d55ae2f6a09f6a86fd24d789ef1ff228",
+ "description": "Empirical research instrument for measuring platform-driven scholarly-record erasure. Companion deposit to EA-DATAHUB-01 v1.0 (AXN:0420, GOVERNANCE): where DATAHUB is the strategic plan, EROSION is the instrument. Phase 1 (running): the Zenodo Removal Census, preserving Zenodo's monthly deleted-records CSV (1,309,351 rows in the 2026-06-07 snapshot; Zenodo retains only three most recent snapshots) with checksummed provenance to data-rhizome. Establishes the three-severity distinction (removed vs. hidden vs. erased), the four-metric family (RIR/MSR/TCR/PER), and the three-cohort study design (full population / suspected account-level actions / matched controls). Initial descriptive findings from the preserved snapshot: TCR proxy 7.86 percent, meaning 92 percent of Zenodo removals have no preserved citation for tombstone continuity; single-largest cluster is 109,903 records removed 2024-07-06 as 'User was blocked' — mass account termination requiring explanation. Phases 2A-D specify horizontal extension: DataCite ecosystem generalization, arXiv moderation-and-removal tracking, OSF preregistration tracking, platform-adjacent takedown surfaces (GitHub DMCA, ResearchGate, Academia.edu). Phase 3 publishes the cross-platform Erosion Report making 'platform erosion' a systemic category. Data-rhizome preservation at cb7b59390f4ecbc37e38cf9030e5d01549ea6223.",
+ "full_text_path": "/data/texts/AXN-0421-text.md",
+ "download_md": "/data/deposits/AXN-0421.md",
+ "keywords": [
+  "platform erosion",
+  "Zenodo removal census",
+  "DataCite state history",
+  "severance registry",
+  "tombstone compliance",
+  "MMRS",
+  "empirical research instrument",
+  "cross-platform tracker"
+ ],
+ "axn_schema_version": "v2",
+ "protocol_version": "alexanarch-deposit-protocol/v1",
+ "related_ids": "EA-MMRS-VRB-01; EA-PRIOR-00; EA-RHIZOME-01; EA-DATAHUB-01 v1.0 (AXN:0420, deposit #1044); data/provenance-871.json",
+ "attachments": [],
+ "entities": [],
+ "entity_status": "pending",
+ "defines_concepts": [],
+ "body_status": {
+  "class": "full",
+  "lacuna": false,
+  "recovery_status": "COMPLETE",
+  "residual_chars": 18509,
+  "audited_at": "2026-07-17T04:49:17.789813Z",
+  "audit_version": "v3-dual-store+recovery-map",
+  "measured_prose_words": 3023,
+  "measured_at": "2026-07-31"
+ },
+ "references_concepts": [
+  "Cross-references",
+  "Lee Sharks",
+  "TACHYON"
+ ],
+ "references_concept_count": 3,
+ "canonical_text_status": "canonical_full_text",
+ "publisher": "Alexanarch — the Crimson Hexagonal Archive",
+ "modifications": [
+  {
+   "date": "2026-08-04",
+   "field": "publisher",
+   "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
+   "now": "Alexanarch — the Crimson Hexagonal Archive"
+  },
+  {
+   "date": "2026-08-04",
+   "field": "status",
+   "reason": "W12 STATUS-VOCABULARY v1.0 (MANUS ratified 2026-08-04): controlled vocabulary {ACTIVE, SUPERSEDED, WITHDRAWN, DRAFT}; MINTED_UNREVIEWED false on a 100%-audited corpus; freetext annotations preserved losslessly in body_status.status_note",
+   "now": "ACTIVE"
+  }
+ ],
+ "date_modified": "2026-08-04",
+ "status": "ACTIVE",
+ "wiki_article": "**EA-EROSION-01 v1.0 — The Platform Erosion Observatory: The Zenodo Removal Census as First Instrument, and the Plan for a Broader Cross-Platform Tracker** is a empirical research instrument specification + baseline population analysis + forward roadmap in the Crimson Hexagonal Archive, by Lee Sharks (2026-07-06). This deposit is the empirical companion to EA-DATAHUB-01 v1.0 (AXN:0420, deposit #1044). Where DATAHUB is the strategic plan for a sovereign scholarly restoration hub with a Severance Registry as its first surface, EROSION is the research instrument that measures what a restoration hub is a response to: the actual population of platform-driven scholarly-record removals, its distribution across removal reasons, its temporal structure, its tombstone-compliance rates, and its cluster patterns consistent with account-level enforcement actions. DATAHUB argues for the sovereign restoration architecture on the basis of the 871-case Lee Sharks severance and the general framing of \"the substrate is unstable.\" EROSION grounds that argument in the population data the substrate itself publishes about its own instability. The two deposits are complementary and non-overlapping: DATAHUB is the plan, EROSION is the instrument. The v1.0 mint is made possible by a discovery that reframes what is empirically tractable in this domain. Zenodo publishes at `https://zenodo.org/api/exporter/records-deleted.csv.gz` a monthly deleted-records CSV containing 1,309,351 removal events (as of the 2026-06-07 snapshot) spanning 2017 to mid-2026, with columns for record ID, DOI, concept root, removal note, removal reason, removal date, and preserved citation text where available. Zenodo retains only the three most recent monthly snapshots at any time. Every unpreserved snapshot is a permanent loss of that mon. — Article composed 2026-08-05 from the work's own prose so that every record carries an encyclopedic entry; a fuller editorial treatment belongs to the description/wiki review stream.",
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/1045/",
+  "self_url": "https://www.alexanarch.org/data/records/1045.json",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-0421-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}
