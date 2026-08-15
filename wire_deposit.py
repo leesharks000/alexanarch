@@ -2,6 +2,7 @@
 """Wire deposit reading results into all data structures and regenerate static page."""
 
 import json, html as htmlmod, re, os, sys
+import pathlib as _ppath
 
 # Import canonical navbar renderer (single source of truth: data/navigation.json)
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -730,6 +731,20 @@ def regenerate_static_page(d, eidx, registry=None):
     """
     esc = lambda s: htmlmod.escape(str(s)) if s else ''
     dn = d['deposit_number']
+    # SURGICAL-LAYER GUARD (2026-08-15, atlas addendum v1.3). Record pages are
+    # renderer output PLUS post-render surgical layers (the superseded-record
+    # retirement apparatus: noindex, axn:retired, repointed canonical, the
+    # cite-instead banner). This renderer does not know how to reproduce them,
+    # so re-rendering such a page DESTROYS them — proven on #1400, 2026-08-15,
+    # reverted. Refuse unless explicitly forced; this converts "did not look"
+    # (the one failure class no gate catches) into "cannot proceed".
+    _page_path = _ppath.Path(f's/records/{dn}/index.html')
+    if _page_path.exists() and 'axn:retired' in _page_path.read_text(encoding='utf-8', errors='replace') \
+            and not os.environ.get('ALEXANARCH_FORCE_RERENDER'):
+        raise RuntimeError(
+            f"REFUSED: s/records/{dn}/ carries the retirement apparatus (axn:retired), "
+            f"which this renderer would strip. See atlas addendum v1.3. "
+            f"Set ALEXANARCH_FORCE_RERENDER=1 only if you will re-apply the surgical layers.")
     hex_id = d.get('hex', '')
     if not hex_id:
         # v1.1.2 (MANUS 2026-07-09): recent entries carry the hex only inside
