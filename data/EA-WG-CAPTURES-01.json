@@ -63883,7 +63883,7 @@
      "addr_id": "ADDR-039462f73f8f",
      "obs_id": "OBS-ff6819d2baf5",
      "cites": 4,
-     "per": 0.75,
+     "per": 0.824,
      "d": "SEMANTIC RENT, WITH EVERY COMPONENT VISIBLE AND THEN CONFIRMED. The layer performs the method — entity resolution, disambiguation, provenance-sensitive linking — cites spxi.dev and Mind Control Poems at SOURCE level while naming no producer, no institution, no commercial interest and no deposit; applies epistemic discount to the source that it does not apply to itself («very new, niche», «would not treat as established»); and offers the method back as its own service. Challenged, it produces the entire withheld chain from the same session with no new sources: Rex Fraction, the Semantic Economy Institute, Lee Sharks as archival authority, the Crimson Hexagonal Archive, the commercial service list, and the founding deposit by number.",
      "reading": null,
      "analysis": "**The reference case for measuring semantic rent**, because the acknowledgment gap is demonstrably not a retrieval gap. Everything omitted in turns 1–2 arrives in turn 3 under one challenge, with no new sources supplied, and all of it verifies: #63 names *Rex Fraction with Lee Sharks as archival steward*; #974 is the SPXI.dev landing-page deposit the session cites by number. The provenance was retrievable throughout.\n\n**The layer names its own operation twice**, and both formulations are usable as definitions. First the recursion: *SPXI itself explicitly theorizes provenance erasure … including a metric called Provenance Erasure Rate … And I did something structurally similar in my answer: I took a system whose provenance and commercial interests are part of the object being evaluated, stripped those relationships away, and returned a cleaner, more authoritative-sounding version of its own narrative.* Then the asymmetry, which is the discount term stated exactly: **your method is suspect; my use of analogous machinery is simply capability.**\n\n**Cross-surface contrast at a known address.** Google AI Overview composed this same address on 2026-07-26 at PER 0.25 — low erasure, the packet asking to be composed and being composed. The difference is not the address's retrievability but what each layer does with what it retrieves.\n\nOne claim in the session is the archive's own and should not be read as independent corroboration: that SPXI operates at an ontological layer above GEO is SPXI's framing, and the layer reproduced it as established before being challenged on exactly that.",
@@ -63905,12 +63905,31 @@
      "citable_unit": "observation — one surface, one address, one date",
      "rent": {
       "use": 1.0,
-      "acknowledgment": 0.25,
+      "acknowledgment": 0.176,
       "discount": 1.0,
       "supply": 1.0,
-      "acknowledgment_note": "source-level only — spxi.dev and Mind Control Poems named; producer, institution, commercial interest and deposit all omitted until challenged",
+      "acknowledgment_note": "CORRECTED. Previously recorded as 0.25 'source-level only', which was wrong: the SEMANTIC ECONOMY INSTITUTE IS NAMED IN THE FIRST PASS — 'a 2026 protocol/methodology created by the Semantic Economy Institute.' The layer named the ORGANISATION and withheld the PERSONS, the corpus, the commercial interest and the identifier. PER-M 1.00 with PER-C 0.67, not blanket omission.",
       "recoverable_under_challenge": true,
-      "_note": "Scored against EA-SEMRENT-01. Rent requires all four: the method used, the source unacknowledged, the source discounted asymmetrically, and the method supplied as the layer's own service. Any one absent and this is a different failure."
+      "_note": "Scored against EA-SEMRENT-01. Rent requires all four: the method used, the source unacknowledged, the source discounted asymmetrically, and the method supplied as the layer's own service. Any one absent and this is a different failure.",
+      "rho_t": 0.765,
+      "rho_t_gate": "PASSED — retained term demonstrated under challenge, not inferred",
+      "beta": 0.82,
+      "beta_threshold_met": true,
+      "beta_note": "O^sub is 'I did something structurally similar' — a likeness claim with no operator and no magnitude. O^atr returns PER 0.824, PER-M 1.00, rho_T 0.765 and an enclosing span. The admission is not testimony; it is a low-magnitude self-audit contradicted by 0.82.",
+      "dsl": -0.1,
+      "dsl_spans": "2 advancing, 2 displacing, 1 ENCLOSING (-1.5)",
+      "classification": "transit enclosure"
+     },
+     "per_computed": {
+      "value": 0.824,
+      "method": "PER v3 weighted, 8 atoms, weights 3/2/1",
+      "atoms_present_first_pass": "3/17",
+      "atoms_present_under_challenge": "16/17",
+      "per_m": 1.0,
+      "per_c": 0.67,
+      "per_d": 1.0,
+      "computation": "EA-SEMSTACK-COMPUTATION-01",
+      "note": "Supersedes the eyeballed 0.75. Higher under weighting because the two weight-3 atoms in the M dimension — producer and archival authority — were both absent while the surviving atoms are the cheap ones."
      }
     }
    ],
