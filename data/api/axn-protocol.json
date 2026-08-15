@@ -5,7 +5,7 @@
   "protocol_name": "axn",
   "protocol_version": "axn/v2",
   "schema_version": "2026-06-22-axn-v2",
-  "last_updated": "2026-06-22",
+  "last_updated": "2026-08-14",
   "summary": "Canonical specification of the AXN (Alexanarch Identifier) format, generation algorithm, glyph table, cluster table, family enum, validation rules, and legacy resolution. Any code that generates, validates, parses, or resolves AXNs must be derivable from this document. The canonical Python implementation is scripts/axn_lib.py. The canonical JavaScript implementation is embedded in .github/workflows/mint-axn.yml. Both must agree with this protocol.",
   "canonical_implementations": {
     "python": "scripts/axn_lib.py",
@@ -42,18 +42,19 @@
     "emoji": {
       "description": "6-emoji canonical glyph derived from the first 6 bytes of the SHA-256 of the canonical bytes.",
       "byte_count": 6,
-      "byte_source": "first 6 bytes of sha256(title + '\\n' + creator + '\\n' + description + '\\n' + body)",
+      "byte_source": "first 6 bytes of sha256(canonical text file bytes) — see generation_algorithm.step_1_assemble_bytes",
       "table_source": "AXN_GLYPHS array of 256 entries indexed by byte value 0..255 — see canonical_implementations",
       "grapheme_validation": "Must contain exactly 6 emoji graphemes. Variation selectors (U+FE00..U+FE0F) and ZWJ (U+200D) sequences glue adjacent codepoints into a single grapheme. Counting must respect this."
     }
   },
   "generation_algorithm": {
-    "step_1_assemble_bytes": "canonical_bytes = title + '\\n' + creator + '\\n' + description + '\\n' + body (UTF-8 encoded)",
+    "step_1_assemble_bytes": "canonical_bytes = the COMPLETE canonical text file as written to data/texts/AXN-<HEX>-text.md, UTF-8 encoded — YAML frontmatter, the H1 title line, the rendered Description / Methodology / Falsification Conditions / Files sections, and the body. The AXN is anchored to the file's bytes, so sha256(file) == registry.hash for any deposit minted through the canonical path.",
     "step_2_compute_hash": "h = sha256(canonical_bytes)",
     "step_3_derive_glyph": "emoji = ''.join(AXN_GLYPHS[h[i]] for i in range(6))",
     "step_4_derive_clusters": "clusters = [CLUSTERS[h[i]] for i in range(6)]",
     "step_5_compose_axn": "axn = f'AXN:{hex_label}.{family}.{emoji}'",
-    "reference_python": "scripts/axn_lib.py — see derive_axn() function"
+    "reference_python": "scripts/axn_lib.py — see derive_axn() function",
+    "_superseded_assembly": "Prior to the audit §6 fix this step read: canonical_bytes = title + '\\n' + creator + '\\n' + description + '\\n' + body. That scheme hashed a reconstruction rather than the artifact, so a file could be rewritten without the hash noticing and the hash could not be checked by anyone holding only the file. Superseded; recorded because deposits minted under it will not verify against the current definition and that is expected, not corruption."
   },
   "cluster_readings": {
     "Celestial": "Origin",
@@ -115,6 +116,16 @@
   ],
   "change_log": [
     {
+      "version": "axn/v2.1",
+      "date": "2026-08-14",
+      "changes": [
+        "step_1_assemble_bytes corrected to describe the implementation: the AXN is anchored to the complete canonical text file, per the audit §6 fix already carried in mint_deposit.py and the mint workflow. The prior title+creator+description+body assembly is retained as _superseded_assembly.",
+        "components.emoji.byte_source aligned to the same definition.",
+        "identity_semantics section added, carrying the LABOR canonical invariant: AXN version is minted once and does not move on update; a hash/file mismatch is content drift, not identity failure.",
+        "known_gap recorded: axn_root is not yet stable across editions of a work."
+      ]
+    },
+    {
       "version": "axn/v2",
       "date": "2026-06-22",
       "changes": [
@@ -124,5 +135,15 @@
         "Recognition vs identity formalized as protocol principle."
       ]
     }
-  ]
+  ],
+  "identity_semantics": {
+    "operative_law": "LABOR canonical invariant, data/texts/AXN-037B-text.md",
+    "glyphic_canary": "recognition and trajectory",
+    "content_sha256": "byte identity",
+    "axn_root": "stable work relation — AXN:<hex>.<FAMILY>, the work across its editions",
+    "axn_version": "immutable version relation — AXN:<hex>.<FAMILY>.<glyph>, one edition",
+    "record_number": "local presentation address",
+    "minting_is_once": "An AXN version is minted ONCE, at deposit, and does NOT move when the record is later updated. It names the edition that was minted. A registry hash that no longer matches its file therefore indicates CONTENT DRIFT — the file has changed since minting — and not a broken identifier. Content that has genuinely changed should become a new version with its own AXN, not a silent re-derivation of the existing one.",
+    "known_gap": "axn_root is currently composed from the per-deposit hex, so it is NOT yet stable across editions of one work as the invariant requires. Two editions of the same work today carry different roots. Implementing a genuinely stable work relation is open work, not a new identifier type."
+  }
 }
