@@ -33,8 +33,8 @@
   "_address_slug_caveat": "An address slug is inherited from whichever observation was seated FIRST and is not renamed when the address gains others — «who is lee sharks?» is anchored at lee-sharks-bing-copilot-biography-20260711 while carrying ChatGPT, Perplexity and Google AI Overview captures too. The slug is an opaque permanent handle, not a description of the address's contents. Renaming it would break every citation already made to it."
  },
  "registry_id": "EA-WG-CAPTURES-01",
- "version": "11.1",
- "date": "2026-08-14",
+ "version": "11.2",
+ "date": "2026-08-15",
  "author": "Lee Sharks",
  "orcid": "0009-0000-1599-0703",
  "license": "CC-BY-4.0",
@@ -46970,7 +46970,7 @@
    "addr_id": "ADDR-13d074d8f9bb",
    "obs_id": "OBS-511fabd789e7",
    "q_kind": null,
-   "series": null,
+   "series": 3,
    "observations": [
     {
      "slug": "operative-semiotics-20260610",
@@ -47144,12 +47144,75 @@
      ],
      "cite": "https://www.alexanarch.org/captures/#operative-semiotics",
      "citable_unit": "observation — one surface, one address, one date"
+    },
+    {
+     "slug": "operative-semiotics-substitution-20260815",
+     "date": "2026-08-15",
+     "surface": "Google AI Overview",
+     "auth": "signed out",
+     "ev": "paste + frame",
+     "mt": "CAPTURE",
+     "q": "operative semiotics",
+     "s": "Frameworks",
+     "addr_id": "ADDR-0089075261bf",
+     "obs_id": "OBS-9f6bc0889e8c",
+     "cites": 9,
+     "per": 0.875,
+     "d": "TERM SUBSTITUTION AT THE INTERFACE, AND THE ARCHIVE CITED THROUGH ITS OWN TOMBSTONE. Google returns «Including results for OPERATIONAL semiotics» before any composition, requiring the reader to opt back into the term they issued. The Overview then absorbs the coinage as a variant — «Operative semiotics (or operational/action-based semiotics)». Three returned cards carry the interface's own notation MISSING: OPERATIVE. And source [5] is zenodo.org/records/18342199 — DEPOSIT #367, Phase X: Resurrection of the 1844 Transition, Lee Sharks, 2026-01-22 — WHICH RETURNS HTTP 410 GONE. The composition draws on an archive deposit through a dead identifier, in an answer about a term the archive coined, naming neither author nor archive nor the fact that its cited source no longer resolves.",
+     "analysis": "**This is the reference case for `composed_as`, and PER understates it even at 0.875.**\n\nThe failure is not primarily attribution. It is **substitution plus severance**. The coinage is overwritten by a near-neighbour at the INTERFACE layer, before composition begins — a correction the reader must actively refuse. Neither PER, nor match type, nor Π_d registers that move; only `term_returned` does.\n\n**The archive is present as uncredited substrate.** #1459 defines liquidation as the survival of the semantic constituents alongside the disappearance of the relation binding them into the historical object. Here the constituent is not merely surviving — it is being **cited**, by URL, from a record the citing party can no longer resolve. The binding relation is severed at both ends: the name is absent from the composition and the identifier is dead in the index.\n\n**Priority is not in question.** Earliest archive attestation 2026-01-01; 260 deposit texts carry the term; 26 name it in title or description. The nearest genuine cognate, the PhilArchive *semiótica operativa* paper, is dated 2026-03-31 — some three months later. The composition's other sources use *operational*, a different word.\n\n**And the interface says so itself.** Three cards are marked *Missing: operative*. The surface is reporting, in its own notation, that the term it was asked for is not in the results it returned.",
+     "composed_as": {
+      "term_returned": "operational semiotics / operational-action-based semiotics",
+      "gloss": "An approach to signs treating meaning as a tool or instrument for action, intervention and practice rather than static representation.",
+      "frame": "general semiotics / organizational and pragmatic theory",
+      "scope": "method",
+      "binding_relation": "SEVERED",
+      "organic_presence": "no",
+      "_substitution": "INTERFACE-LEVEL. Google proposes «operational» and returns it by default; the issued term must be re-selected. The substitution precedes composition and is not a composition failure.",
+      "_archive_present_as": "uncredited substrate — deposit #367 cited by Zenodo URL as source [5], record returns 410 Gone, author and archive unnamed"
+     },
+     "transcript": "**ADDRESS:** `operative semiotics` · Google, signed out, 2026-08-15\n\n---\n\n**INTERFACE-LEVEL SUBSTITUTION, BEFORE ANY COMPOSITION**\n\n> Including results for **operational** semiotics\n> Search only for *operative semiotics*\n\nGoogle's correction layer proposes a different term and returns results for it by default. The user must opt back in to the term they issued.\n\n---\n\n**AI OVERVIEW** *(+5 sources)*\n\n> **Operative semiotics (or operational/action-based semiotics)** is an approach to signs that treats meaning not as a static representation of the world, but as a tool or instrument for action, intervention, and practice. Instead of asking only \"What does this sign mean?\", it asks \"What operation, behavior, or change does this sign enact?\"\n\n**Core Dimensions** — Action over Representation · **Shift from Author to Operator** · Pragmatic Priority\n**Related Frameworks** — Organizational Semiotics · Asignifying Semiotics\n\n---\n\n**SOURCE STRIP, AS SERVED**\n\n| source | date | relation to the address |\n|---|---|---|\n| Cambridge — *Co-Operative Action, Embodied Interaction* | 2017-11-03 | hyphen collision, unrelated |\n| Academia.edu — *The theory of operational semiotics* | undated | **different term** |\n| E3S — *Cognitive processes of environmental perception* | — | unrelated |\n| Wikipedia — *Semiotics* | — | generic; card marked **\"Missing: operative\"** |\n| **Zenodo 18342199 — *Phase X: Resurrection of the 1844 Transition*** | **2026-01-22** | **THE ARCHIVE'S OWN DEPOSIT #367** |\n| PhilArchive — Wolf, *FROM AUTHOR TO OPERATOR / semiótica operativa* | 2026-03-31 | Spanish cognate, postdates the archive |\n| De Gruyter — *Biosemiotics… operational interpretation* | 2025-03-31 | different term |\n| tripleC — *Asignifying Semiotics* | — | adjacent |\n| Agile Brand Guide — *Organizational Semiotics* | — | marketing glossary |\n\n---\n\n**THE CENTRAL FACT**\n\nSource **[5]** of the composition is `zenodo.org/records/18342199`. That is **deposit #367, *Phase X: Resurrection of the 1844 Transition*, Lee Sharks, 22 January 2026** — an archive work.\n\n**The record returns HTTP 410 Gone.** The Zenodo account was terminated 19 June 2026.\n\nThe composition therefore draws on an archive deposit, through a dead identifier, in an answer about a term the archive coined, and names neither the author, the archive, nor the fact that the cited record no longer resolves.\n\n**Three Google cards carry the notation \"Missing: operative\"** — the interface stating, on its own surface, that the issued term is absent from the results it returned.\n\n---\n\n**PRIORITY**\n\nEarliest archive attestation **2026-01-01** (#1241). **260 deposit texts** carry the term; **26** name it in title or description. The nearest genuine cognate — the PhilArchive *semiótica operativa* paper — is dated **2026-03-31**, roughly three months later.\n",
+     "transcript_class": "CAPTURE-TIME VERBATIM RECORD — AI Overview, organic result set, and interface correction notice",
+     "transcript_complete": "COMPLETE — composed answer, full source strip, and the spell-correction line",
+     "transcript_read": "READ IN FULL 2026-08-15",
+     "imgs": [],
+     "img_urls": [],
+     "q_kind": "broad match, unquoted",
+     "collisions": [
+      {
+       "with": "operational semiotics — a distinct framework for parsing natural-language sentences into mood and semantic operators",
+       "via": "single-morpheme distance, operative/operational, reinforced by Google's own spell correction",
+       "ev": "Academia.edu card served as a primary source; interface line «Including results for operational semiotics»"
+      },
+      {
+       "with": "co-operative action (Cambridge, 2017)",
+       "via": "hyphenation collapse — «co-operative» substring-matches «operative»",
+       "ev": "served as source [1] of the composed answer"
+      },
+      {
+       "with": "semiótica operativa — Wolf, PhilArchive, 2026-03-31",
+       "via": "genuine Spanish-language cognate of the same compound",
+       "ev": "served as the Shift-from-Author-to-Operator citation; POSTDATES the archive's earliest attestation by ~3 months"
+      }
+     ],
+     "defects": [
+      "term substitution",
+      "archive cited through tombstoned identifier",
+      "organic absence"
+     ],
+     "oq": null,
+     "rounds": null,
+     "rerun": "https://www.google.com/search?q=operative+semiotics",
+     "surface_basis": "Google AI Overview, All tab, signed out. Frame and paste both supplied.",
+     "auth_basis": "OPERATOR ATTESTATION: signed out.",
+     "cite": "https://www.alexanarch.org/captures/#operative-semiotics-substitution-20260815",
+     "citable_unit": "observation — one surface, one address, one date"
     }
    ],
-   "n_observations": 2,
+   "n_observations": 3,
    "dates": [
     "2026-06-10",
-    "2026-06-13"
+    "2026-06-13",
+    "2026-08-15"
    ],
    "surfaces": [
     "Google AI Overview",
@@ -72474,7 +72537,7 @@
   "_total_captures_note": "total_captures is RETAINED FOR COMPATIBILITY and is ambiguous by construction — it has meant 285 query records, 404 observations, 401 observations and 305 address records on different surfaces. Prefer address_count and observation_count."
  },
  "address_count": 331,
- "observation_count": 474,
+ "observation_count": 475,
  "withdrawn_stubs": {
   "_rule": "THE REGISTRY MUST NOT CONTRADICT ITSELF. Each of these said \"no registry entry was ever written for them\" while a real record held the SAME IMAGES a card away. MANUS 2026-08-13: \"the very first capture says there is no record, followed by the second capture, which is the record… this registry doesnt talk to itself.\" Withdrawn, with the record that covers each.",
   "records": [
