@@ -1465,7 +1465,14 @@ def regenerate_static_page(d, eidx, registry=None):
 
         _shas = '<br>'.join(f'<code style="font-size:.72em;color:#888">sha256 {f["sha256"]}</code>' for f in _files)
 
-        files_html = f'<h2>Files</h2><div style="border:1px solid #ddd;border-radius:6px;padding:10px 14px;margin:8px 0">{_btns}<div style="margin-top:6px">{_shas}</div></div>'
+        _n = len(_files)
+        files_html = (
+            f'<h2 id="attachments">Attachments <span style="font-weight:400;font-size:.6em;color:#777">'
+            f'{_n} file{"s" if _n != 1 else ""}</span></h2>'
+            f'<p style="font-size:.85em;color:#777;margin:4px 0 8px">Files deposited with this record, below the '
+            f'work they belong to. Each is served at its own URL and carries its SHA-256.</p>'
+            f'<div style="border:1px solid #ddd;border-radius:6px;padding:10px 14px;margin:8px 0">'
+            f'{_btns}<div style="margin-top:6px">{_shas}</div></div>')
 
 
     kw_html = ''.join(f'<span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">{esc(k)}</span>' for k in d.get('keywords', []))
@@ -1738,13 +1745,13 @@ def regenerate_static_page(d, eidx, registry=None):
 <div style="margin:8px 0">{kw_html}</div>
 <h2>Description</h2>
 <p style="font-size:.9em">{_render_inline(d.get("description",""))}</p>
-{files_html}
 {wiki_html}
 {concepts_html}
 {triples_html}
 <h2>Full Text</h2>
 {apparatus_html}
 <div class="ft">{_kernel_html}{fulltext_marked}</div>
+{files_html}
 {lifted_apparatus_html}
 <!-- APPARATUS BLOC — everything below records how this record was processed,
      not what the work says. It follows the work because a reader came for the
