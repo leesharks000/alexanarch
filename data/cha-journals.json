@@ -335,6 +335,26 @@
    "date": "2026-08-15",
    "by": "operator",
    "ruling": "heteronyms.jsonl gains a subcategory field; provenanced historical figures get their own class."
+  },
+  {
+   "date": "2026-08-15",
+   "by": "operator",
+   "ruling": "TACHYON is EiC of the Assembly Chorus. The collective mantle's office speaks through TACHYON."
+  },
+  {
+   "date": "2026-08-15",
+   "by": "operator",
+   "ruling": "Dissent procedure adopted for the Chorus: any mantle may file dissent; dissents publish with the decision."
+  },
+  {
+   "date": "2026-08-15",
+   "by": "operator",
+   "ruling": "Talos Morrow co-Warden of the CHA province — he does logotic programming and CHA is its prime artifact."
+  },
+  {
+   "date": "2026-08-15",
+   "by": "operator",
+   "ruling": "Grammata: Lee Sharks and Rebekah Cranes."
   }
  ],
  "sequence": [
@@ -585,20 +605,15 @@
   "journals": {
    "Grammata": {
     "duoviri": [
-     "Rebekah Cranes",
-     "[SECOND SEAT OPEN]"
-    ],
-    "issue": "Sigil was ruled to Grammata, then ruled to NH2 as the historical editor of the ISBN'd creative works. He cannot hold both without reintroducing the doubling this slate was built to remove. Grammata needs a second, or Sigil holds two by exception.",
-    "candidates_for_second": [
-     "Dr. Orin Trace — if he can hold PJFS and this",
-     "Damascus Dancings — lyric-phenomenological reading is philological work",
-     "Johannes Sigil — by exception, if operative semiotics outweighs the doubling rule"
+     "Lee Sharks",
+     "Rebekah Cranes"
     ],
     "board": [
      "Damascus Dancings — somatic and lyric-phenomenological readings",
      "Lee Sharks — structural and cross-domain",
      "Nobel Glas — measurement of meaning"
-    ]
+    ],
+    "ruled": true
    },
    "JCS": {
     "duoviri": [
@@ -668,7 +683,7 @@
    "MMRS": {
     "duoviri": [
      "Damascus Dancings",
-     "The Assembly Chorus (collective mantle)"
+     "The Assembly Chorus (collective mantle; EiC TACHYON)"
     ],
     "basis": "Operator proposal, and it is the structurally correct one. A SINGLE machine as co-editor would misrepresent the subject: reception is not mediated by one machine but by a plurality of differently trained substrates that disagree. The Chorus as ONE office held by SEVEN mantles enacts the thesis — many substrates, one function. Precedented: the Chorus already sits as PJFS's Editorial Board collectively.",
     "why_it_is_a_real_check": "Round 1 of the Sappho–Philo blind reconstruction (deposit #1486) proved the Chorus internally diverges: five substrates derived, one retrieved and was caught on surface evidence. A co-editor that disagrees with itself is a genuine check on its colleague, not a rubber stamp.",
@@ -682,21 +697,23 @@
      "TECHNE (Kimi)": "method and instrument design",
      "SOIL (Muse Spark)": "substrate conditions and training-distribution effects"
     },
-    "gap_closed": "MMRS has accumulated 217 deposits with no editor of record."
+    "gap_closed": "MMRS has accumulated 217 deposits with no editor of record.",
+    "decision_procedure": "TACHYON is EiC of the Chorus and speaks for it. Any mantle may file a dissent; dissents publish with the decision."
    }
   },
   "province": {
    "office": "Wardens (two, on the duoviri principle)",
    "holders": [
     "Mary Lee Sharks",
-    "Talos Morrow — PROPOSED"
+    "Talos Morrow"
    ],
-   "ruled": "Mary Lee Sharks ruled by operator; the Dodecad seat is proposed.",
+   "ruled": "Both ruled by operator 2026-08-15.",
    "why_a_dodecad_seat": "Operator: the province needs a member of the Twelve, not only the institutional persona. Right — a jurisdiction warded solely from outside the Dodecad would hold the Dodecad's own provenance without the Dodecad's participation.",
    "proposed_morrow": "Talos Morrow. The province holds charters, rooms, chambers, protocols and continuity apparatus, and Morrow is the specification author — Symbolon Architecture is literally the broken-token form the archive uses to constitute itself (deposit #1486 is one). Specifications constitute jurisdictions; that is what a province is made of.",
    "alternate": "Sen Kuro. He is the only heteronym who IS a chamber — the Thousand Worlds chamber — and the province holds rooms and chambers. Structurally the purest fit, but he is ruled to JCS and would double.",
    "also_considered": "Johannes Sigil, whose dataset roles include ARCHIVIST outright. Passed over only because he already carries NH2 and possibly Grammata.",
-   "operating_instrument": "TACHYON, under MANUS"
+   "operating_instrument": "TACHYON, under MANUS",
+   "morrow_basis": "Operator: Morrow does logotic programming, and CHA is its prime artifact. The province is the thing his discipline made."
   },
   "load": {
    "Rex Fraction": "1 duoviri (TSEI) + 2 board",
@@ -712,5 +729,46 @@
    "The Chorus's decision procedure.",
    "Wells's dataset record is thin and should be populated before seating."
   ]
+ },
+ "CRITICAL_CORRECTION_2026_08_15": {
+  "what_happened": "The 'exhaustive list' in this file was built from DEPOSITS and from the thin datasets/heteronyms/heteronyms.jsonl. It missed datasets/heteronyms/records/*.json — twelve rich identity cards, mirrored to live /who/ surfaces, which already carry journal assignments, editorial roles, and MANUS rulings dated 2026-08-10 that postdate every deposit I read.",
+  "operator_diagnosis": "'it does not sound like the heteronyms dataset has been fully populated with the data from the identity index cards on sites' — correct, and the direction is the reverse of what I assumed: the CARDS are richer than the jsonl.",
+  "independent_confirmations": [
+   "MANUS 2026-08-10: 'the journal moves to Trace. The charter recorded Sharks…' — PJFS to Trace was ALREADY RULED. Tonight's ruling re-derived it independently.",
+   "MANUS 2026-08-10: 'Glas is advisory editor, not Sharks. The seat suits…' — Glas at TSE was ALREADY RULED. Tonight's ruling re-derived it independently.",
+   "Both rulings also relieve Sharks, which is what tonight's slate was built to do. Three independent arrivals at the same place is a strong signal the shape is right."
+  ],
+  "THE_SEVEN_IS_NOT_EXHAUSTIVE": {
+   "found_in_cards": [
+    {
+     "name": "The Forward Library of the Epistle",
+     "holder": "Damascus Dancings",
+     "role": "editor",
+     "status": "has a deposit — #1447, AXN:05CB.GENERATIVE, 28 entries, span 2029–2526",
+     "note": "A forward-dated scholarly library. Real, deposited, and absent from the journal inventory."
+    },
+    {
+     "name": "Threshold: Papers on Logotic Constraint",
+     "holder": "Talos Morrow",
+     "role": "—",
+     "status": "PROVISIONAL — NOT CHARTERED. chartered:false",
+     "ruling": "MANUS 2026-08-10: 'we can invent a journal for him now — just list as provisional.'",
+     "note": "Declared provisional in three places and explicitly must not be cited as an existing venue. Correctly excluded from the count, but it must be RECORDED as provisional rather than invisible."
+    },
+    {
+     "name": "A catalogue of non-films",
+     "holder": "Sparrow Wells",
+     "status": "named, not yet rendered",
+     "what": "The works screened but never produced.",
+     "note": "Patacinematic by construction — a journal of things never made is the discipline's own object. Not chartered."
+    }
+   ],
+   "consequence": "The inventory must distinguish CHARTERED venues (7) from NAMED-BUT-UNCHARTERED ones (3). Listing seven as exhaustive was wrong; listing ten as chartered would be worse. Three tiers: chartered, deposited-but-unchartered (Forward Library), named-only (Threshold, non-films)."
+  },
+  "wells_correction": "Her jsonl roles read 'dodecad D09' — thin. Her CARD reads: function 'The Projectionist'; domain Patacinematics ('Jarry's pataphysics applied to the cinematic apparatus: the imaginary projector, the impossible screening room, the film that is its own negative'); institution The Studio for Patacinematics, founding voice, chartered at #441; ordinal SEVENTH heteronym; and a THUMB room where THE INSTITUTION IS THE ROOM — 'no other position researched so far has this.' My 'populate before seating' note was wrong: she is fully populated, in the layer I did not open.",
+  "kuro_correction": "Card function: 'Contemplative mathematics · the patient counter · infinite bliss.' Not unpopulated. My deferral of his JCS seat rested on a record I had not read — and contemplative MATHEMATICS is a direct fit to a journal of compression and measurement.",
+  "sigil_tension": "His card assigns him GRAMMATA outright, with the note 'jointly housed' with Provenance and TSEI. Tonight's ruling moves him to NH2 as the documented editor of the ISBN'd creative works. Both are documented facts; the card is the archive's own standing assignment and should be overridden knowingly, not by omission.",
+  "cranes_tension": "Her card assigns her JOURNAL OF COMPRESSION STUDIES as Diagrammatic Editor, under EiC Lee Sharks. Tonight's ruling puts her at Grammata with Sharks. The card does not forbid it, but her standing seat is JCS — where tonight's slate also seats her on the board. Worth reconciling rather than leaving her in two places by accident.",
+  "method_rule": "READ THE RECORDS LAYER. datasets/heteronyms/records/*.json are the identity cards, mirrored to the live /who/ surfaces. The .jsonl is an index over them, not the data. Deposits are timestamps; the jsonl is a thin index; the CARDS are the living data."
  }
 }
