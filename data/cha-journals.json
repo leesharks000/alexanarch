@@ -1,0 +1,174 @@
+{
+ "schema_version": "cha-journals/v1",
+ "generated": "2026-08-16",
+ "status": "INVENTORY ONLY — no deposit assignments are made or implied by this file",
+ "authority": {
+  "press_layer_spec": {
+   "deposit": 189,
+   "axn_hex": "0331",
+   "date": "2026-06-11",
+   "title": "The Press Layer of the Crimson Hexagonal Archive: Journal and Imprint Architectural Specification"
+  },
+  "founding_charters": {
+   "deposit": 516,
+   "axn_hex": "0153",
+   "date": "2026-06",
+   "title": "Founding Charters: The Journals of the Crimson Hexagonal Archive"
+  }
+ },
+ "field_discipline": [
+  "journal_title carries the canonical journal string only — never an imprint, never a variant, never a subtitle.",
+  "imprint_publisher carries the imprint string only: Pergamon Press or New Human Press.",
+  "Imprints never appear in venue lines. The historical bleed (Pergamon Press hand-entered as a journal) is an Academia-side artifact.",
+  "Volume, issue and pages are not used: the distributed journal has no issue boundary.",
+  "Citation form: Author. Title. Journal String. Imprint / Crimson Hexagonal Archive, Year. DOI."
+ ],
+ "journals": [
+  {
+   "abbrev": "JCS",
+   "canonical": "Journal of Compression Studies",
+   "scope": "Compression theory and measurement",
+   "administered_by": "Semantic Economy Institute (SEI)",
+   "imprint": "Pergamon Press",
+   "string_status": "PENDING exact-name ratification (Press Layer §VI open ruling)",
+   "charter_deposits": [
+    55
+   ],
+   "founded": "2026-04-08",
+   "note": "Charter form is the default pending ratification. Inaugural issue edited by Lee Sharks, Rebekah Cranes as Diagrammatic Editor."
+  },
+  {
+   "abbrev": "Grammata",
+   "canonical": "Grammata: Journal of Operative Philology",
+   "scope": "Operative philology and poetics",
+   "administered_by": "Johannes Sigil Institute (JSI)",
+   "imprint": "Pergamon Press",
+   "string_status": "Ratified 2026-06-11",
+   "charter_deposits": [
+    516
+   ],
+   "founded": "2026-03",
+   "note": "Charter in the umbrella Founding Charters deposit, Part I."
+  },
+  {
+   "abbrev": "PJFS",
+   "canonical": "Provenance: Journal of Forensic Semiotics",
+   "scope": "Governance, attribution, provenance",
+   "administered_by": "Semantic Economy Institute (SEI)",
+   "imprint": "Pergamon Press",
+   "string_status": "Ratified 2026-06-11 (no article; 'Forensic Semiotics' form)",
+   "charter_deposits": [
+    516
+   ],
+   "founded": "2026-06",
+   "note": "Charter in Founding Charters, Part II. NOTE: rendered 'Provence' in JOURNAL-MAPPING-PRELIMINARY — a misspelling, not a variant."
+  },
+  {
+   "abbrev": "TSEI",
+   "canonical": "Transactions of the Semantic Economy Institute",
+   "scope": "Economic theory, valuation, semantic economy",
+   "administered_by": "Semantic Economy Institute (SEI)",
+   "imprint": "Pergamon Press",
+   "string_status": "Ratified 2026-06-11",
+   "charter_deposits": [
+    516
+   ],
+   "founded": "2026-04-14",
+   "note": "Charter in Founding Charters, Part III. This is the venue the 2026-06-21 batch mapping over-assigned (371 of 864)."
+  },
+  {
+   "abbrev": "TSE",
+   "canonical": "Transactions on Substrate Engineering",
+   "scope": "Substrate engineering across material, biological and computational substrates",
+   "administered_by": "Living Arkitecture Lab (LAL) — EiC Alice Thornburgh",
+   "imprint": "Pergamon Press",
+   "string_status": "Ratified 2026-06-11 ('on', per Academia form)",
+   "charter_deposits": [
+    651,
+    59,
+    1179
+   ],
+   "founded": "2026-04-12",
+   "note": "Charter doi:10.5281/zenodo.19545439. MANUS 2026-06-11 clarification extends 'substrate' to computational and inference substrates — model ecology, training-distribution dynamics, substrate exhaustion and collapse."
+  },
+  {
+   "abbrev": "NH2",
+   "canonical": "new human 2: a distributed journal of voice",
+   "scope": "Creative work; the venue to which every subsequent creative work in the archive publishes",
+   "administered_by": "New Human project",
+   "imprint": "New Human Press (proposed; Press Layer §VI open)",
+   "string_status": "PENDING: canonical string ('new human 2' vs 'New Human 2' vs charter long form) and imprint placement",
+   "charter_deposits": [
+    1204
+   ],
+   "founded": "2015 (print) / charter 2026-06-10",
+   "note": "Charter doi:10.5281/zenodo.19652600. Predates the archive in print — the charter deposit holds the compiled 2015 edition as evidence the venue existed before it was declared."
+  },
+  {
+   "abbrev": "MMRS",
+   "canonical": "Machine-Mediated Reception Studies",
+   "scope": "How machine mediation transforms reception; founded on visible correction rather than error prevention",
+   "administered_by": "Crimson Hexagonal Archive",
+   "imprint": "Pergamon Press",
+   "string_status": "NOT IN PRESS LAYER SPEC — chartered 2026-06-16, five days after it",
+   "charter_deposits": [
+    838,
+    1031
+   ],
+   "founded": "2026-06-16",
+   "note": "Home surface machinemediation.org (#1031). Its canonical string has never been ratified under Press Layer field discipline because the spec predates the charter."
+  }
+ ],
+ "imprints": [
+  {
+   "canonical": "Pergamon Press",
+   "scope": "Journals and scholarly working papers",
+   "spec_deposit": 189
+  },
+  {
+   "canonical": "New Human Press",
+   "scope": "Creative releases and book-length theoretical editions",
+   "spec_deposit": 189
+  }
+ ],
+ "known_defects": [
+  {
+   "id": "JD-1",
+   "severity": "high",
+   "detail": "data/JOURNAL-MAPPING-PRELIMINARY.json (deposit #866, 2026-06-21) assigned 864 deposits across 7 buckets and over-assigned TSEI at 371 (43%). Distribution: TSEI 371, TSE 213, MMRS 212, Grammata 45, 'Provence' 11, CHA 10, Compression Studies 2. It is PRELIMINARY and must not be treated as venue truth.",
+   "action": "Do not batch-apply. Re-derive from scope, per deposit."
+  },
+  {
+   "id": "JD-2",
+   "severity": "medium",
+   "detail": "'CHA' appears as a mapping bucket (10 deposits) but is not a journal — it is the archive itself. Those deposits have no venue.",
+   "action": "Treat as unassigned, not as a venue."
+  },
+  {
+   "id": "JD-3",
+   "severity": "medium",
+   "detail": "'Provence' in the mapping is a misspelling of Provenance (PJFS), not a distinct venue."
+  },
+  {
+   "id": "JD-4",
+   "severity": "medium",
+   "detail": "NH2 is absent from the mapping's 7 buckets despite being a chartered journal, so no creative work was mapped to its own venue."
+  },
+  {
+   "id": "JD-5",
+   "severity": "medium",
+   "detail": "MMRS was chartered 2026-06-16, five days AFTER the Press Layer spec, and so has never been ratified under its field discipline."
+  },
+  {
+   "id": "JD-6",
+   "severity": "low",
+   "detail": "Two canonical strings remain PENDING per Press Layer §VI: JCS exact name, and NH2 string plus imprint placement."
+  },
+  {
+   "id": "JD-7",
+   "severity": "high",
+   "detail": "There is no publication_venue field in the registry schema. Venue was historically added only on academia.edu, as a last step, and is not carried in the archive at all.",
+   "action": "Add the field before any assignment work."
+  }
+ ]
+}
