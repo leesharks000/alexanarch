@@ -201,3 +201,19 @@ with an `interlinked` flag so absence is legible rather than inferred.
 Rule added: **an atlas that maps only what a repository contains is not a map of the system.**
 
 Full detail: `atlas-v1.7-addendum.md`.
+
+## Dataset navigation, audited as rendered — 2026-08-15
+
+The tab and its subpages had accreted rather than been designed. **Two subpages 404'd**
+(`/datasets/journals/`, `/datasets/mret/`), both linked from the tab the same day they were
+added — a card was written and the page it pointed at was not. **Five title forms** were in use
+across sixteen pages, including the path as title; **two pages had no back-link**, stranding
+the reader; and **tombstone-mirror and zenodo-datacite-batch rendered under the same title**.
+
+Seating apparatus now stated in `binding-v3.1.json` and enforced by
+`scripts/check_dataset_navigation.py`: a directory must have an index or must not be linked;
+the title is `<Name> — Datasets — Alexanarch` and must be unique; every page links back; every
+page declares its canonical store; and navigation is **one level** — files linked directly,
+because a dataset is a directory of files, not a site.
+
+18 of 18 now present the same way.
