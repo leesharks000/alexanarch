@@ -1,0 +1,33 @@
+{
+ "dataset_id": "journals",
+ "title": "CHA Journals — venue assignment for the whole corpus",
+ "version": "1.0",
+ "generated": "2026-08-15",
+ "license": "CC-BY-SA-4.0",
+ "description": "Venue assignment for all 1,486 deposits across seven chartered journals and one province, with editorial slates, charters, locators and inaugural issues. Supersedes the 2026-06-21 preliminary mapping (#866), which assigned 864 deposits by script and placed 371 of them in a single venue.",
+ "method": "Read per deposit — title and content_type, one at a time, in ten passes of ~150. No script classified anything. Rules were adjudicated by the operator as they arose and applied retroactively: charters to the province, MPAIs to compression studies, apparatus to the province and study to the journal, the IDP class to provenance, traversal logs to provenance, books to New Human Press with the journal recording where the work appeared.",
+ "files": [
+  {
+   "name": "assignments.jsonl",
+   "rows": 1486,
+   "what": "one row per deposit: venue, secondary venue, press, pass, previous value, locator"
+  },
+  {
+   "name": "venues.jsonl",
+   "rows": 8,
+   "what": "one row per venue: scope, editorial slate, charter, location, inaugural issue, full deposit list"
+  }
+ ],
+ "distribution": {
+  "Crimson Hexagonal Archive (CHA)": 390,
+  "Provenance: Journal of Forensic Semiotics": 180,
+  "New Human 2": 178,
+  "Grammata: Journal of Operative Philology": 173,
+  "Transactions of the Semantic Economy Institute (Trans. SEI)": 155,
+  "Machine-Mediated Reception Studies (MMRS)": 141,
+  "Transactions on Substrate Engineering (Trans. Substrate Eng.)": 135,
+  "Journal of Compression Studies": 134
+ },
+ "canonical_store": "datasets/venues/records/*.json and data/registry.json. These files are projections.",
+ "regenerate_with": "scripts/build_journals_dataset.py"
+}
