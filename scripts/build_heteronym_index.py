@@ -41,7 +41,8 @@ LEGACY = ["person_id", "name", "identity_type", "orthonym_relation", "roles", "d
 # Keys that exist only in the cards and were invisible in the old thin index.
 RICH = ["function", "domain", "institution", "rooms", "journal", "journal_seat", "office",
         "mantle", "ordinal", "het_id", "surface", "works", "traversal", "corpus_verified",
-        "open_questions", "forward_library", "catalogue", "mmrs_role"]
+        "open_questions", "forward_library", "catalogue", "mmrs_role", "captures",
+        "appearances", "works_of_record", "journal_seat", "vital_status"]
 
 
 def load_existing():
