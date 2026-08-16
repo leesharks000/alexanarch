@@ -140,9 +140,9 @@
   },
   {
    "id": "JD-2",
-   "severity": "HIGH",
-   "detail": "Every assigned value is non-canonical. The registry stores 'Canonical Name (ABBREV)' where Press Layer §IV permits the canonical string alone. All 899 values need normalising, and that is mechanical and safe — unlike reassignment.",
-   "action": "Normalise strings first; it is separable from the assignment question and can be done now."
+   "severity": "WITHDRAWN",
+   "detail": "WITHDRAWN 2026-08-15 — see CORRECTIONS_FROM_VENUES_DATASET. MANUS 2026-08-01 permits the parenthetical abbreviation; the stored values are correct.",
+   "action": "None. Do not normalise."
   },
   {
    "id": "JD-3",
@@ -770,5 +770,20 @@
   "sigil_tension": "His card assigns him GRAMMATA outright, with the note 'jointly housed' with Provenance and TSEI. Tonight's ruling moves him to NH2 as the documented editor of the ISBN'd creative works. Both are documented facts; the card is the archive's own standing assignment and should be overridden knowingly, not by omission.",
   "cranes_tension": "Her card assigns her JOURNAL OF COMPRESSION STUDIES as Diagrammatic Editor, under EiC Lee Sharks. Tonight's ruling puts her at Grammata with Sharks. The card does not forbid it, but her standing seat is JCS — where tonight's slate also seats her on the board. Worth reconciling rather than leaving her in two places by accident.",
   "method_rule": "READ THE RECORDS LAYER. datasets/heteronyms/records/*.json are the identity cards, mirrored to the live /who/ surfaces. The .jsonl is an index over them, not the data. Deposits are timestamps; the jsonl is a thin index; the CARDS are the living data."
+ },
+ "CORRECTIONS_FROM_VENUES_DATASET": {
+  "found": "datasets/venues/venues.json v1.2 (2026-08-01) — a venues dataset that already existed and that I did not read before writing this file.",
+  "JD-2_WITHDRAWN": {
+   "i_asserted": "'Every assigned value is non-canonical. The registry stores Canonical Name (ABBREV) where Press Layer §IV permits the canonical string alone. All 899 values need normalising.'",
+   "the_truth": "MANUS ruling 2026-08-01 EXPLICITLY REVERSED that convention: 'journal field carries the FULL canonical journal name, with the approved abbreviation optionally appended in parentheses — e.g. Machine-Mediated Reception Studies (MMRS) — per MANUS ruling 2026-08-01 (reversing the v1.0 abbreviation convention).' The stored values are CORRECT under the governing convention.",
+   "why_i_got_it_wrong": "I read the Press Layer spec (2026-06-11) and treated it as current. A later ruling governed. Same failure as the heteronym cards: an older instrument read as authoritative because I did not look for what superseded it.",
+   "consequence": "899 values need NO normalisation. A repair I proposed as 'mechanical and safe' would have destroyed a ruled convention."
+  },
+  "CHA_ALREADY_A_VENUE": {
+   "found": "venues.json lists eight entries; the eighth is 'Crimson Hexagonal Archive (CHA)', class ARCHIVE-DIRECT.",
+   "bearing": "The operator's province ruling and this class are the same instinct arriving twice. venues.json already separated CHA from the academic and creative journals by CLASS rather than calling it a journal. 'Province' names what 'archive-direct' was reaching for.",
+   "reconcile": "Province should be recorded as the class name, superseding or aliasing 'archive-direct'."
+  },
+  "repair_follows_audit": "venues.json states the standing rule: 'Records outside the audited range retain legacy strings until audited (repair-follows-audit).' That is the governing principle for the reassignment work — audit first, repair what the audit covers, leave the rest legible as legacy."
  }
 }
