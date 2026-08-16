@@ -1,7 +1,7 @@
 {
  "schema_version": "cha-journals/v1",
  "generated": "2026-08-16",
- "status": "INVENTORY + LIVE-STATE AUDIT — no deposit assignments are made or changed by this file",
+ "status": "INVENTORY + LIVE-STATE AUDIT + RULINGS. NO REGISTRY WRITES. Operator instruction 2026-08-15: a healthier distribution of work comes first; metadata is updated all together, once, afterward. Nothing here has been applied to any deposit.",
  "authority": {
   "press_layer_spec": {
    "deposit": 189,
@@ -30,12 +30,12 @@
    "scope": "Compression theory and measurement",
    "administered_by": "Semantic Economy Institute (SEI)",
    "imprint": "Pergamon Press",
-   "string_status": "PENDING exact-name ratification (Press Layer §VI open ruling)",
+   "string_status": "Ratified 2026-08-15 (operator)",
    "charter_deposits": [
     55
    ],
    "founded": "2026-04-08",
-   "note": "Charter form is the default pending ratification. Inaugural issue edited by Lee Sharks, Rebekah Cranes as Diagrammatic Editor."
+   "note": "Charter form is the default pending ratification. Inaugural issue edited by Lee Sharks, Rebekah Cranes as Diagrammatic Editor. Exact name ratified 2026-08-15, resolving Press Layer §VI."
   },
   {
    "abbrev": "Grammata",
@@ -93,16 +93,16 @@
   },
   {
    "abbrev": "NH2",
-   "canonical": "new human 2: a distributed journal of voice",
+   "canonical": "new human 2: a journal of distributed voice",
    "scope": "Creative work; the venue to which every subsequent creative work in the archive publishes",
    "administered_by": "New Human project",
-   "imprint": "New Human Press (proposed; Press Layer §VI open)",
-   "string_status": "PENDING: canonical string ('new human 2' vs 'New Human 2' vs charter long form) and imprint placement",
+   "imprint": "New Human Press",
+   "string_status": "Ratified 2026-08-15 (operator) — NOTE: the ratified form is 'a journal of distributed voice', which INVERTS the charter's 'a distributed journal of voice'.",
    "charter_deposits": [
     1204
    ],
    "founded": "2015 (print) / charter 2026-06-10",
-   "note": "Charter doi:10.5281/zenodo.19652600. Predates the archive in print — the charter deposit holds the compiled 2015 edition as evidence the venue existed before it was declared."
+   "note": "Charter doi:10.5281/zenodo.19652600. Predates the archive in print — the charter deposit holds the compiled 2015 edition as evidence the venue existed before it was declared. Ratified string differs from the charter deposit (#1204) wording. Both readings are live in the corpus and the registry currently stores the bare 'New Human 2' on 30 deposits. Charter text is not amended by this ruling; the venue string is."
   },
   {
    "abbrev": "MMRS",
@@ -110,13 +110,13 @@
    "scope": "How machine mediation transforms reception; founded on visible correction rather than error prevention",
    "administered_by": "Crimson Hexagonal Archive",
    "imprint": "Pergamon Press",
-   "string_status": "NOT IN PRESS LAYER SPEC — chartered 2026-06-16, five days after it",
+   "string_status": "Retroactively ratified 2026-08-15 (operator), under Press Layer field discipline",
    "charter_deposits": [
     838,
     1031
    ],
    "founded": "2026-06-16",
-   "note": "Home surface machinemediation.org (#1031). Its canonical string has never been ratified under Press Layer field discipline because the spec predates the charter."
+   "note": "Home surface machinemediation.org (#1031). Its canonical string has never been ratified under Press Layer field discipline because the spec predates the charter. Retroactive ratification resolves the gap created by its charter postdating the spec."
   }
  ],
  "imprints": [
@@ -222,5 +222,45 @@
     "pct_of_assigned": 0.2
    }
   ]
- }
+ },
+ "provinces": [
+  {
+   "canonical": "Crimson Hexagonal Archive",
+   "abbrev": "CHA",
+   "kind": "province",
+   "not_a_journal": true,
+   "ruling": "2026-08-15 (operator)",
+   "scope": "The semantic physics of the archive itself — rooms, chambers, fields, heteronym provenance, and the instruments that constitute the place rather than publish into it.",
+   "rationale": "A journal is a venue one publishes INTO; a province is a jurisdiction the archive publishes FROM. Archive-constitutive work is not a submission and has no venue. This keeps the journal family at seven and explains why 'CHA' read as wrong in a journal field: the field was being asked to hold a category it does not take.",
+   "field_handling": "PENDING RULING — whether province-held deposits carry a separate field, or simply no journal."
+  }
+ ],
+ "rulings_log": [
+  {
+   "date": "2026-08-15",
+   "by": "operator",
+   "ruling": "JCS canonical string ratified as 'Journal of Compression Studies'."
+  },
+  {
+   "date": "2026-08-15",
+   "by": "operator",
+   "ruling": "NH2 canonical string ratified as 'new human 2: a journal of distributed voice'; imprint New Human Press."
+  },
+  {
+   "date": "2026-08-15",
+   "by": "operator",
+   "ruling": "MMRS retroactively ratified under Press Layer field discipline."
+  },
+  {
+   "date": "2026-08-15",
+   "by": "operator",
+   "ruling": "CHA is a PROVINCE, not a journal. Journal family remains seven."
+  }
+ ],
+ "sequence": [
+  "1. DONE — exhaustive journal list, canonical strings, rulings recorded here.",
+  "2. NEXT — redistribute: re-derive venue per deposit from scope. The current 41/24/24 concentration is a default with exceptions, not a distribution.",
+  "3. THEN — one combined metadata write: assignments + canonical-string normalisation + province handling, applied together.",
+  "4. THEN — journals tab and dataset surface, built on the settled field."
+ ]
 }
