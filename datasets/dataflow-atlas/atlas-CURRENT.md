@@ -179,3 +179,25 @@ second was written without finding the first. Both are kept, neither summed: rec
 Rule added: **before writing a producer, search for the one that already exists.**
 
 Full detail: `atlas-v1.6-addendum.md`.
+
+## External dependencies, and every dataset described — 2026-08-15
+
+**Twelve heteronym identity cards render on twelve different domains**, and the capture
+registry displays in three galleries on three more. Those are external dependencies of the
+datasets and nothing checked them. On first run
+`scripts/check_external_surfaces.py` found **Sen Kuro's card returning 404** — reseated at
+holographickernel.org by a ruling that reached the fleet's attribution map and never reached
+`datasets/heteronyms/index.json`. A dataset pointing at a dead surface asserts something false,
+and no internal gate can see it.
+
+Also found: **`machinemediation.org/captures/` resolves and is not in the registry's declared
+gallery list** — the venue whose founding dataset the registry *is*. And host drift between
+v10.0 (`godkinggoogle.vercel.app`) and v11.4 (`www.godkinggoogle.com`).
+
+`binding-v3.0.json` now describes **all eighteen datasets**, including the four not interlinked
+— perseus-classical, gutenberg-classical, new-human-primary, deletion-conformance-fixture —
+with an `interlinked` flag so absence is legible rather than inferred.
+
+Rule added: **an atlas that maps only what a repository contains is not a map of the system.**
+
+Full detail: `atlas-v1.7-addendum.md`.
