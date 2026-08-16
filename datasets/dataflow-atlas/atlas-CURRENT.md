@@ -158,3 +158,24 @@ and what gate detects its drift.** v1.4 said a layer must say whether it is data
 must also say what keeps it true.
 
 Full detail: `atlas-v1.5-addendum.md`.
+
+## Every producer bound — 2026-08-15
+
+v1.5 bound the datasets and ten producers. There are **174 scripts**; the dependency graph
+named **fourteen**. `binding-v2.0.json` binds all of them with writes, reads, docstring and
+gate state — 42 write a known artifact and only **14 carry a `--check` gate**, so most
+producers cannot be verified against their output.
+
+**Contested artifacts:** `data/EA-WG-CAPTURES-01.json` has **15 producers** and
+`data/registry.json` has **11**, against a DEPLOY-FLOW that names one deposit workflow. An
+artifact with several writers has no ordering and no lock; whichever ran last wins and nothing
+records which.
+
+**A collision, reconciled:** two captures-to-heteronyms linkers existed over two stores, both
+dated 2026-08-15 — name-match to `data/dodecad.json`, claim-match to the identity records. The
+second was written without finding the first. Both are kept, neither summed: records carry
+`captures_by_name` (floor) and `captures` (ceiling), and `dodecad.json` is marked a projection.
+
+Rule added: **before writing a producer, search for the one that already exists.**
+
+Full detail: `atlas-v1.6-addendum.md`.

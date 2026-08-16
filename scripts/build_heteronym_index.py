@@ -42,7 +42,9 @@ LEGACY = ["person_id", "name", "identity_type", "orthonym_relation", "roles", "d
 RICH = ["function", "domain", "institution", "rooms", "journal", "journal_seat", "office",
         "mantle", "ordinal", "het_id", "surface", "works", "traversal", "corpus_verified",
         "open_questions", "forward_library", "catalogue", "mmrs_role", "captures",
-        "appearances", "works_of_record", "journal_seat", "vital_status"]
+        "appearances", "works_of_record", "journal_seat", "vital_status",
+        "captures_by_name", "is_position_not_occupant", "office_eligibility",
+        "deposits_of_the_position", "claims"]
 
 
 def load_existing():

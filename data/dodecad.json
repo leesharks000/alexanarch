@@ -1,5 +1,5 @@
 {
- "_FLOW": "The Dodecad dataset: the twelve heteronyms as a machine-readable roster, WIRED TO THE CAPTURE REGISTRY. Each heteronym carries reception_captures — every registry entry whose composition concerns it — populated by scripts/link_captures_to_heteronyms.py, which is rerunnable and idempotent. Capture intake therefore flows to the heteronym record automatically: seat the capture, run the linker, the heteronym's reception history updates. The ordinals and roles here are roster data, not biography; the /who/ pages on the fleet surfaces are the public renders.",
+ "_FLOW": "PROJECTION, not a store. Canonical is datasets/heteronyms/records/*.json — 26 identity cards. This file carries the NAME-MATCH capture wiring (MANUS 2026-08-15) for the twelve Dodecad positions; those results are also folded into the records as `captures_by_name`, alongside the broader `captures` block which matches BY CLAIM. Two routes, kept separate, never summed. The Dodecad dataset: the twelve heteronyms as a machine-readable roster, WIRED TO THE CAPTURE REGISTRY. Each heteronym carries reception_captures — every registry entry whose composition concerns it — populated by scripts/link_captures_to_heteronyms.py, which is rerunnable and idempotent. Capture intake therefore flows to the heteronym record automatically: seat the capture, run the linker, the heteronym's reception history updates. The ordinals and roles here are roster data, not biography; the /who/ pages on the fleet surfaces are the public renders.",
  "updated": "2026-08-15T10:51:33Z",
  "operator": "Lee Sharks (heteronym; the Dodecad's operator identity)",
  "heteronyms": [
@@ -1347,5 +1347,6 @@
     }
    ]
   }
- ]
+ ],
+ "_reconciled": "2026-08-15 — reconciled against datasets/heteronyms/records/. See atlas binding."
 }
