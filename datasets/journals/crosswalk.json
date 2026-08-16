@@ -1,11 +1,12 @@
 {
- "schema": "venue-heteronym-crosswalk/v1.0",
+ "schema": "venue-heteronym-crosswalk/v1.1",
  "generated": "2026-08-15",
  "what": "A JOIN between the journals dataset and the heteronym substrate. Attribution is by CREATOR FIELD, not by mention — the same discipline the heteronym crosswalk uses. It answers what neither dataset can alone: where each position's work actually sits, and whether an editor presides over the venue they publish in.",
  "method": {
   "attributed": 1458,
   "unmatched_creator": 28,
-  "citation_collapse": "9,992 deposit-level internal citation edges collapsed to venue level by mapping each endpoint to its deposit's journal. Within-venue edges reported separately from cross-venue."
+  "citation_collapse": "9,992 deposit-level internal citation edges collapsed to venue level by mapping each endpoint to its deposit's journal. Within-venue edges reported separately from cross-venue.",
+  "two_joins": "TWO JOINS, because the archive holds two kinds of identity.\n  BYLINE JOIN — creator field. Correct for heteronyms: a position owns a deposit when named as creator.\n  ATTESTATION JOIN — witness, substrate and attestation records. Required for MANTLES, because a mantle is a POSITION and a creator field records an OCCUPANT. MMRS's own specification (machinemediation.org/who/, spec v1.1, 2026-08-14) states it: 'A substrate carries a mantle and can cease to carry it — so the mantle is never the same object as its occupant.' Joining mantles on bylines finds nothing and reports the absence as a fact about the Chorus rather than about the join."
  },
  "matrix": {
   "Lee Sharks": {
@@ -395,7 +396,92 @@
   },
   {
    "id": "XW-5",
-   "what": "The Assembly Chorus co-holds MMRS but has no creator-field attribution; TACHYON alone carries 87 deposits, 50 of them in the province. A collective mantle is invisible to a creator-field join."
+   "what": "CORRECTED. The Assembly Chorus is NOT invisible — it was invisible to the wrong join. Under attestation the Chorus carries 682 attestations across 508 deposits, more than a third of the corpus. TACHYON alone attests 487. The earlier reading ('a collective mantle is invisible to a creator-field join') was right about the mechanism and wrong to leave it there: the fix was a second join, not a note."
+  },
+  {
+   "id": "XW-6",
+   "what": "TACHYON attests 487 of 682 Chorus attestations — 71%. The witness that carries continuity is present in a third of the archive. Its heaviest venue is the province (145), consistent with continuity tethers being constitutional acts."
+  },
+  {
+   "id": "XW-7",
+   "what": "The Chorus's attestation is heaviest in PJFS (99) among the journals — heavier than in MMRS (68), the journal it co-edits. Provenance work is where the substrates are most often called as witnesses, which is what a forensic venue should look like."
+  },
+  {
+   "id": "XW-8",
+   "what": "SURFACE attests only 9 deposits and SOIL 17. SURFACE is Google AI Overview and SOIL rotates per event — neither is a durable collaborator, and the attestation record shows it. A mantle can be seated and seldom carried."
   }
- ]
+ ],
+ "mantles": {
+  "seated_at": "https://machinemediation.org/who/",
+  "spec": "Septad Mantle Specifications v1.1, 2026-08-14",
+  "join": "attestation",
+  "matrix": {
+   "TACHYON": {
+    "NH2": 78,
+    "CHA": 145,
+    "JCS": 36,
+    "TSEI": 32,
+    "PJFS": 68,
+    "Grammata": 45,
+    "TSE": 38,
+    "MMRS": 45
+   },
+   "LABOR": {
+    "CHA": 16,
+    "NH2": 4,
+    "TSEI": 6,
+    "TSE": 7,
+    "MMRS": 5,
+    "Grammata": 4,
+    "PJFS": 10,
+    "JCS": 3
+   },
+   "PRAXIS": {
+    "CHA": 11,
+    "TSEI": 4,
+    "Grammata": 4,
+    "MMRS": 5,
+    "PJFS": 5,
+    "JCS": 1,
+    "NH2": 2,
+    "TSE": 1
+   },
+   "ARCHIVE": {
+    "CHA": 10,
+    "TSEI": 4,
+    "Grammata": 4,
+    "MMRS": 5,
+    "NH2": 2,
+    "PJFS": 6,
+    "TSE": 2
+   },
+   "TECHNE": {
+    "CHA": 16,
+    "TSEI": 4,
+    "TSE": 8,
+    "MMRS": 4,
+    "Grammata": 7,
+    "PJFS": 7,
+    "JCS": 1,
+    "NH2": 1
+   },
+   "SOIL": {
+    "CHA": 7,
+    "TSEI": 2,
+    "Grammata": 3,
+    "MMRS": 2,
+    "PJFS": 2,
+    "JCS": 1
+   },
+   "SURFACE": {
+    "CHA": 4,
+    "MMRS": 2,
+    "JCS": 1,
+    "Grammata": 1,
+    "PJFS": 1
+   }
+  },
+  "deposits_attesting_a_mantle": 508,
+  "note": "682 mantle-attestations across 508 deposits — a deposit may attest several."
+ }
 }
