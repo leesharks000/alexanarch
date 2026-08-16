@@ -1,7 +1,7 @@
 {
- "schema_version": "v1.1",
- "built_at": "2026-08-11",
- "description": "Heteronym substrate — 13 heteronyms (twelve Dodecad positions + Feist/LOGOS* standing outside; Lee Sharks/MANUS as human bearer; Viola Arquette Adjacent) with frame-based rotating-outside architecture, Sep 2025 preservation, v1.1 canonical reconciliation, and Mandala Oracle avatar assets.",
+ "schema_version": "v1.2",
+ "built_at": "2026-08-15",
+ "description": "Heteronym substrate — 26 identities across eight subcategories: the canonical Twelve, the aperture, an institutional persona, two provenanced historical figures, two orthonym collaborators, an adjacent heteronym, and seven Assembly Chorus mantles. Canonical store is records/; heteronyms.jsonl is its generated projection.",
  "structural_principle": "The heteronym set comprises twelve Dodecad positions plus Feist/LOGOS* as the archive-default outside. Different frames rotate different figures to the outside position: Sep 2025 Logotic Science places Nobel Glas outside; v1.1 Constitutional Registry places Lee Sharks (MANUS) outside; the archive-default LOGOS frame places Feist outside. See frames.jsonl.",
  "authority": {
   "canonical_current": "AXN:03EE.ARCHIVAL — Dodecad Heteronym Provenance Registry v1.1 (Alexanarch deposit #994, 2026-07-03)",
@@ -333,5 +333,8 @@
  "dataflow_atlas": {
   "addendum": "datasets/dataflow-atlas/atlas-v1.1-addendum.md",
   "note": "The atlas covers this dataset as of v1.1 (2026-08-11): the crosswalk as a join node, and the derived figure as a class of artefact the map had not previously held."
- }
+ },
+ "canonical_store": "records/*.json — 26 identity cards, mirrored to the live /who/ surfaces. THE DATA.",
+ "projection": "heteronyms.jsonl — GENERATED from records/ by scripts/build_heteronym_index.py. Every row carries _derived_from. Do not hand-edit; edit the record and rebuild.",
+ "why": "2026-08-15: an agent read heteronyms.jsonl, found two heteronyms with empty roles, and recommended against seating them as editors \"until their records are populated.\" Their records WERE populated, richly, in records/ — a layer the thin index gave no hint of. The index now carries the cards data and names its own source on every line."
 }

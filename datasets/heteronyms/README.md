@@ -1,3 +1,11 @@
+> **Canonical store: `records/*.json`.** Twenty-six identity cards, mirrored to the live `/who/`
+> surfaces. `heteronyms.jsonl` is a GENERATED PROJECTION of them — every row carries
+> `_derived_from`. Edit a record and run `scripts/build_heteronym_index.py`; never hand-edit the
+> `.jsonl`. `build_heteronym_index.py --check` fails if the projection has drifted.
+>
+> This note exists because on 2026-08-15 the thin index was mistaken for the dataset: two heteronyms
+> looked unpopulated and were nearly passed over for editorships they were fully documented for.
+
 # heteronyms/
 
 Canonical heteronym substrate for the Crimson Hexagonal Archive.
