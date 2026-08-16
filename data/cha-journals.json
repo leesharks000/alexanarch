@@ -1,7 +1,7 @@
 {
  "schema_version": "cha-journals/v1",
  "generated": "2026-08-16",
- "status": "INVENTORY ONLY — no deposit assignments are made or implied by this file",
+ "status": "INVENTORY + LIVE-STATE AUDIT — no deposit assignments are made or changed by this file",
  "authority": {
   "press_layer_spec": {
    "deposit": 189,
@@ -134,41 +134,93 @@
  "known_defects": [
   {
    "id": "JD-1",
-   "severity": "high",
-   "detail": "data/JOURNAL-MAPPING-PRELIMINARY.json (deposit #866, 2026-06-21) assigned 864 deposits across 7 buckets and over-assigned TSEI at 371 (43%). Distribution: TSEI 371, TSE 213, MMRS 212, Grammata 45, 'Provence' 11, CHA 10, Compression Studies 2. It is PRELIMINARY and must not be treated as venue truth.",
-   "action": "Do not batch-apply. Re-derive from scope, per deposit."
+   "severity": "HIGH",
+   "detail": "THE BAD BATCH IS LIVE IN THE REGISTRY, not merely in the preliminary JSON. TSEI holds 371 of 899 assigned deposits (41%). Three venues — TSEI, MMRS, TSE — hold 89% between them, while PJFS has 11, JCS has 2, and Grammata has 45. That is not a distribution; it is a default with exceptions.",
+   "action": "Re-derive per deposit from scope. Do not batch-apply anything, including a correction."
   },
   {
    "id": "JD-2",
-   "severity": "medium",
-   "detail": "'CHA' appears as a mapping bucket (10 deposits) but is not a journal — it is the archive itself. Those deposits have no venue.",
-   "action": "Treat as unassigned, not as a venue."
+   "severity": "HIGH",
+   "detail": "Every assigned value is non-canonical. The registry stores 'Canonical Name (ABBREV)' where Press Layer §IV permits the canonical string alone. All 899 values need normalising, and that is mechanical and safe — unlike reassignment.",
+   "action": "Normalise strings first; it is separable from the assignment question and can be done now."
   },
   {
    "id": "JD-3",
-   "severity": "medium",
-   "detail": "'Provence' in the mapping is a misspelling of Provenance (PJFS), not a distinct venue."
+   "severity": "HIGH",
+   "detail": "587 deposits (40%) carry no journal at all, including everything minted since the 2026-06-21 batch.",
+   "action": "Venue assignment has not been part of the mint path. It should be."
   },
   {
    "id": "JD-4",
-   "severity": "medium",
-   "detail": "NH2 is absent from the mapping's 7 buckets despite being a chartered journal, so no creative work was mapped to its own venue."
+   "severity": "MEDIUM",
+   "detail": "'Crimson Hexagonal Archive (CHA)' is used as a journal value on 10 deposits. CHA is the archive, not a venue.",
+   "action": "Clear to unassigned, or rule a canonical value for archive-native records."
   },
   {
    "id": "JD-5",
-   "severity": "medium",
-   "detail": "MMRS was chartered 2026-06-16, five days AFTER the Press Layer spec, and so has never been ratified under its field discipline."
+   "severity": "MEDIUM",
+   "detail": "MMRS was chartered 2026-06-16, five days AFTER the Press Layer spec (2026-06-11), so its canonical string has never been ratified under that field discipline — yet it is the second-largest venue at 217 deposits."
   },
   {
    "id": "JD-6",
-   "severity": "low",
-   "detail": "Two canonical strings remain PENDING per Press Layer §VI: JCS exact name, and NH2 string plus imprint placement."
+   "severity": "MEDIUM",
+   "detail": "Two canonical strings remain PENDING per Press Layer §VI: JCS exact name, and NH2 string plus imprint placement. NH2 is stored as 'New Human 2' (30 deposits) against a charter long form of 'new human 2: a distributed journal of voice'."
   },
   {
    "id": "JD-7",
-   "severity": "high",
-   "detail": "There is no publication_venue field in the registry schema. Venue was historically added only on academia.edu, as a last step, and is not carried in the archive at all.",
-   "action": "Add the field before any assignment work."
+   "severity": "LOW",
+   "detail": "'Provence' appears in the preliminary mapping as a misspelling of Provenance. It did not reach the registry, which uses the correct string.",
+   "action": "No action; recorded so the mapping file is not read as evidence of an eighth venue."
   }
- ]
+ ],
+ "live_state": {
+  "audited": "2026-08-15",
+  "registry_field": "journal",
+  "note": "The venue field EXISTS and is named `journal`. It carries a NON-CANONICAL string on every assigned deposit — the value is the canonical name with a parenthetical abbrev appended, e.g. 'Machine-Mediated Reception Studies (MMRS)', which Press Layer field discipline forbids: journal_title carries the canonical string only, never a variant. Separately, `publisher` is set on 1,427 deposits and `publication_venue` on 2.",
+  "deposits_total": 1486,
+  "deposits_with_journal": 899,
+  "deposits_unassigned": 587,
+  "distribution": [
+   {
+    "value": "Transactions of the Semantic Economy Institute (Trans. SEI)",
+    "count": 371,
+    "pct_of_assigned": 41.3
+   },
+   {
+    "value": "Machine-Mediated Reception Studies (MMRS)",
+    "count": 217,
+    "pct_of_assigned": 24.1
+   },
+   {
+    "value": "Transactions on Substrate Engineering (Trans. Substrate Eng.)",
+    "count": 213,
+    "pct_of_assigned": 23.7
+   },
+   {
+    "value": "Grammata: Journal of Operative Philology",
+    "count": 45,
+    "pct_of_assigned": 5.0
+   },
+   {
+    "value": "New Human 2",
+    "count": 30,
+    "pct_of_assigned": 3.3
+   },
+   {
+    "value": "Provenance: Journal of Forensic Semiotics",
+    "count": 11,
+    "pct_of_assigned": 1.2
+   },
+   {
+    "value": "Crimson Hexagonal Archive (CHA)",
+    "count": 10,
+    "pct_of_assigned": 1.1
+   },
+   {
+    "value": "Journal of Compression Studies",
+    "count": 2,
+    "pct_of_assigned": 0.2
+   }
+  ]
+ }
 }
