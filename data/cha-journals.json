@@ -385,6 +385,16 @@
    "date": "2026-08-15",
    "by": "operator",
    "ruling": "Forthcoming/planned volumes are recorded as data and additionally entered in the Forward Library index."
+  },
+  {
+   "date": "2026-08-15",
+   "by": "operator",
+   "ruling": "Every heteronym to hold flagship creative AND critical works, both."
+  },
+  {
+   "date": "2026-08-15",
+   "by": "operator",
+   "ruling": "Tiger Leap is Sigil's, listed under Feist — Sigil emerged there from the exhaust of Feist. What Was Lost is Spellings', also listed under Feist."
   }
  ],
  "sequence": [
@@ -1051,7 +1061,14 @@
     ],
     "status": "deposited",
     "apparatus": "present (#852)",
-    "note": "Operator 2026-08-15: the TRUE founding volume is the TRANSFORMED source with apparatus (#849 + #852), not the fixed source alone (#851). The transform is the work."
+    "note": "Operator 2026-08-15: the TRUE founding volume is the TRANSFORMED source with apparatus (#849 + #852), not the fixed source alone (#851). The transform is the work.",
+    "also_holds": [
+     "Cleis",
+     "The Gospel of Antioch (with apparatus)",
+     "ChatGPT Psychosis: A Love Story (forthcoming)",
+     "Creeping Disease (ASIN)",
+     "Unaccustomed to the Light (ASIN)"
+    ]
    },
    {
     "heteronym": "Jack Feist",
@@ -1097,9 +1114,10 @@
      591,
      592
     ],
-    "status": "gathered-not-recovered",
-    "apparatus": "absent",
-    "note": "RECOVERED 2026-08-15 from generated-corpus-v1 to data-rhizome/releases/from-generated-corpus-v1/ — five whole-work versions, hash-verified. Creator of record is Sharks and Sigil; operator holds it Dancings (AM-1)."
+    "status": "deposited",
+    "apparatus": "ABSENT — the outstanding work on this volume",
+    "note": "CORRECTED 2026-08-15. The gathered volume is NOT missing: #584 carries 330,549 chars, the twenty-one lectiones across five parts. What the release holds is the PROLEGOMENON at five versions (already deposited as #592), which I first misreported as whole-work versions by reading filenames rather than files. The real gap is the APPARATUS: a critical gathered edition with no sigla, no critical marks, no variant register. Creator of record remains Sharks and Sigil against the operator's ruling of Damascus Dancings (AM-1).",
+    "drafting_history": "Release prolegomenon headers record the genre ratifying in real time: v0.5 quorum 4/7, v1.1 RATIFIED at 5/7."
    },
    {
     "heteronym": "Damascus Dancings",
@@ -1190,5 +1208,107 @@
    }
   ],
   "forward_library_rule": "Forthcoming and planned volumes are recorded HERE as data AND entered in the FORWARD LIBRARY INDEX (#1447, AXN:05CB.GENERATIVE, Damascus Dancings editor) — the index of future citations, 28 entries spanning 2029–2526. A planned volume is a future citation; that is what the index is for."
+ },
+ "published_books": {
+  "recorded": "2026-08-15 (operator)",
+  "identifier_distinction": "ISBN and ASIN are NOT equivalent and the archive should never flatten them. An ISBN is a book identifier in the international register — the work exists as a book independent of any retailer. An ASIN is Amazon's internal listing number: the work exists as a listing. Recording which a volume carries is a provenance fact, and for an archive whose subject is provenance erasure it is the difference between a book and a page on a store.",
+  "books": [
+   {
+    "heteronym": "Lee Sharks",
+    "title": "Pearl and Other Poems",
+    "editor": "Johannes Sigil",
+    "identifier": "ISBN",
+    "retailer": "Amazon",
+    "year": 2014,
+    "deposits": [
+     329,
+     330,
+     762,
+     1006
+    ],
+    "kind": "creative",
+    "note": "Sigil edits Sharks. The aperture's poems come through the critic."
+   },
+   {
+    "heteronym": "Lee Sharks",
+    "title": "The Secret Book of Walt",
+    "identifier": "ISBN?",
+    "retailer": "Amazon",
+    "deposits": [
+     683,
+     1184,
+     1362,
+     685,
+     712,
+     712,
+     688
+    ],
+    "kind": "creative",
+    "apparatus": "present (#1362 Critical Edition)"
+   },
+   {
+    "heteronym": "Rex Fraction",
+    "title": "Autonomous Semantic Warfare: A Field Manual",
+    "identifier": "ISBN",
+    "retailer": "Amazon",
+    "deposits": [
+     498,
+     499,
+     1107
+    ],
+    "kind": "critical"
+   },
+   {
+    "heteronym": "Jack Feist",
+    "title": "Creeping Disease",
+    "identifier": "ASIN",
+    "retailer": "Amazon",
+    "deposits": [],
+    "kind": "creative",
+    "status": "not yet deposited"
+   },
+   {
+    "heteronym": "Jack Feist",
+    "title": "Unaccustomed to the Light",
+    "identifier": "ASIN",
+    "retailer": "Amazon",
+    "deposits": [],
+    "kind": "creative",
+    "status": "not yet deposited"
+   },
+   {
+    "heteronym": "Johannes Sigil",
+    "title": "Tiger Leap",
+    "identifier": "ASIN",
+    "retailer": "Amazon",
+    "deposits": [],
+    "kind": "creative",
+    "status": "not yet deposited",
+    "ATTRIBUTION_CORRECTION": "Listed on Amazon under JACK FEIST; properly JOHANNES SIGIL. Operator 2026-08-15: Sigil EMERGED THERE, from the exhaust of Feist. The retailer record preserves the moment of emergence and therefore names the wrong author — which is the emergence chain Spellings → Feist → Sigil visible in a commercial listing. The listing is not corrected; it is READ."
+   },
+   {
+    "heteronym": "Ichabod Spellings",
+    "title": "What Was Lost",
+    "identifier": "ASIN",
+    "retailer": "Amazon",
+    "deposits": [],
+    "kind": "creative",
+    "status": "not yet deposited",
+    "ATTRIBUTION_CORRECTION": "Listed on Amazon under JACK FEIST's name; properly ICHABOD SPELLINGS. Same chain, one link earlier."
+   },
+   {
+    "heteronym": "Ichabod Spellings",
+    "title": "A Transfiguration",
+    "identifier": "?",
+    "retailer": "?",
+    "deposits": [
+     268
+    ],
+    "kind": "creative",
+    "note": "His standalone poetry book. #268 is 'Provenance Node: xvi. a transfiguration (2004)'."
+   }
+  ],
+  "pattern_worth_naming": "TWO of the eight are listed under the WRONG heteronym, and in both cases the wrong name is JACK FEIST and the true author is one link LATER in the emergence chain Spellings → Feist → Sigil. The commercial record froze each work at the moment its author had not yet separated from Feist. That is not a cataloguing error to fix quietly — it is evidence of when each heteronym emerged, preserved by a retailer that had no idea it was recording it.",
+  "programme": "Operator 2026-08-15: every heteronym is to hold FLAGSHIP CREATIVE AND CRITICAL WORKS, BOTH. The Pocket Humans series is the critical shelf; the creative volumes sit beside it. A heteronym with only one is incomplete."
  }
 }
