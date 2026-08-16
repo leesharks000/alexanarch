@@ -1,12 +1,16 @@
 {
  "dataset_id": "journals",
  "title": "CHA Journals — venue assignment for the whole corpus",
- "version": "1.4",
+ "version": "1.5",
  "generated": "2026-08-15",
  "license": "CC-BY-SA-4.0",
  "description": "Venue assignment for all 1,486 deposits across seven chartered journals and one province, with editorial slates, charters, locators and inaugural issues. Supersedes the 2026-06-21 preliminary mapping (#866), which assigned 864 deposits by script and placed 371 of them in a single venue.",
  "method": "Read per deposit — title and content_type, one at a time, in ten passes of ~150. No script classified anything. Rules were adjudicated by the operator as they arose and applied retroactively: charters to the province, MPAIs to compression studies, apparatus to the province and study to the journal, the IDP class to provenance, traversal logs to provenance, books to New Human Press with the journal recording where the work appeared.",
  "files": [
+  {
+   "name": "ecosystem.svg",
+   "what": "DERIVED figure, up front — the whole publishing arrangement: two presses, seven journals, one province, sized by deposit count, with the joins named"
+  },
   {
    "name": "assignments.jsonl",
    "rows": 1486,
