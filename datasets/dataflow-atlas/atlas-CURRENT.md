@@ -217,3 +217,23 @@ page declares its canonical store; and navigation is **one level** — files lin
 because a dataset is a directory of files, not a site.
 
 18 of 18 now present the same way.
+
+## Render refusals are a guard, not a failure — 2026-08-15
+
+Re-rendering all 1,486 record pages after the venue assignment, **210 refused**. Every refusal
+was the guard working, and they are of **two different kinds that look alike**:
+
+- **152 superseded or retired** — `axn:retired content="superseded"`, `noindex`, canonical
+  pointing at the successor. Their metadata may name an old venue; that is harmless, because
+  the page is canonicalised away and does not reach Scholar. Forcing a re-render to "fix" it
+  would strip the tombstone.
+- **58 lacuna stubs** — `axn:retired content="stub"`, which is the **lacuna apparatus, not
+  retirement** (EA-LACUNA-PROTOCOL-01, #1087). These are **ACTIVE** in the registry and marked
+  stub on the page, and **both are right: the work exists, its text does not.** Re-rendering
+  would strip the mark and present a stub as a whole document.
+
+I first read the second set as a registry/page contradiction. They are the opposite — two
+systems agreeing with a guard between them. The meta name `axn:retired` carries both
+retirement and lacuna, which is what made the misreading available.
+
+A bulk re-render reporting "1,276 of 1,486" therefore looks like partial failure and is not.

@@ -324,14 +324,6 @@ def guard_issue_body_format(body: str) -> None:
           "  format mismatch writes an empty deposit that looks like a real one.\n")
 
 
-def parse_issue_body(body: str) -> dict:
-    """Extract all known fields from a deposit issue body.
-
-    The issue template at .github/ISSUE_TEMPLATE/deposit.yml defines these
-    field labels. If the template changes, update this function. The
-    validate_deposit.py field map is the partial source of truth; this is
-    the complete map.
-    """
 def strip_issue_prefix(title):
     """Remove the GitHub issue-title convention from the WORK's title.
 
@@ -351,6 +343,14 @@ def strip_issue_prefix(title):
     return re.sub(r'^\s*\[\s*deposit\s*\]\s*', '', title, flags=re.I).strip()
 
 
+def parse_issue_body(body: str) -> dict:
+    """Extract all known fields from a deposit issue body.
+
+    The issue template at .github/ISSUE_TEMPLATE/deposit.yml defines these
+    field labels. If the template changes, update this function. The
+    validate_deposit.py field map is the partial source of truth; this is
+    the complete map.
+    """
     return {
         "protocol_version": extract_field(body, "Protocol Version"),
         "title": strip_issue_prefix(extract_field(body, "Title")),

@@ -660,7 +660,9 @@ def main():
         start = args.from_stage or ("mint" if args.issue_body else "record")
         args.stages = STAGE_ORDER[STAGE_ORDER.index(start):]
 
-    if "mint" in args.stages and not (args.issue_body and args.issue_number):
+    # issue_number 0 is the LOCAL-MINT sentinel and is legitimate (see #1079 mint_source).
+    # A truthiness test rejects it, so test for presence.
+    if "mint" in args.stages and not (args.issue_body and args.issue_number is not None):
         raise SystemExit("mint stage requires --issue-body and --issue-number")
     if "mint" not in args.stages and not args.deposit_number:
         raise SystemExit("post-mint stages require --deposit-number")
