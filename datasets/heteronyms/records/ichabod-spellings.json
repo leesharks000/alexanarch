@@ -107,25 +107,51 @@
  "captures": {
   "registry": "EA-WG-CAPTURES-01 v11.4",
   "source": "data/EA-WG-CAPTURES-01.json — the live registry",
+  "attribution": "BY CLAIM (claims.terms), many-to-many; a capture may belong to several heteronyms",
   "regenerate_with": "scripts/link_heteronym_captures.py",
-  "generated": "2026-08-15",
-  "count": 4,
+  "count": 5,
   "sections": {
-   "Heteronyms": 2,
-   "Archive": 1,
+   "Heteronyms": 4,
    "Frameworks": 1
   },
   "match_types": {
-   "CAPTURE": 4
+   "CAPTURE": 5
   },
-  "slugs": [
-   "alexanarch-sharks-20260811",
-   "feist-function-alexanarch-20260811",
-   "ichabod-spellings",
-   "who-is-ichabod-spellings-chatgpt-20260815"
+  "attributions": [
+   {
+    "slug": "feist-function-alexanarch-20260811",
+    "by": [
+     "paper roses"
+    ]
+   },
+   {
+    "slug": "ichabod-spellings",
+    "by": [
+     "all that lies within me",
+     "paper roses"
+    ]
+   },
+   {
+    "slug": "jack-feist-paper-roses",
+    "by": [
+     "all that lies within me",
+     "paper roses"
+    ]
+   },
+   {
+    "slug": "who-is-jack-feist-chatgpt-20260815",
+    "by": [
+     "paper roses"
+    ]
+   },
+   {
+    "slug": "who-is-ichabod-spellings-chatgpt-20260815",
+    "by": [
+     "all that lies within me"
+    ]
+   }
   ],
-  "MATCH_TYPE_IS_EVIDENTIARY": "A broad match means the layer connected the concept unprompted. A phrase match means exactness was forced and returned — the stricter test of whether a term exists AS a term. Flattening the two loses the distinction. MANUS: vital.",
-  "_previous_snapshot": null
+  "MATCH_TYPE_IS_EVIDENTIARY": "A broad match means the layer connected the concept unprompted. A phrase match means exactness was forced and returned — the stricter test of whether a term exists AS a term. Flattening the two loses the distinction. MANUS: vital."
  },
  "traversals": [
   474
@@ -159,12 +185,28 @@
   "source": "datasets/heteronyms/crosswalk.json",
   "note": "Attribution by CREATOR FIELD only — 'names X' and 'is by X' are different claims and the join keeps them apart."
  },
- "vital_status": "deceased",
- "office_eligibility": "associate editor only — may not hold an editorship-in-chief",
+ "vital_status": "active as deceased",
+ "office_eligibility": "associate editor; may not hold an editorship-in-chief",
  "journal_seat": {
   "name": "new human 2: a journal of distributed voice",
   "role": "Associate editor",
   "ruled": "2026-08-15 (operator)",
   "basis": "Foundational voice; origin of the emergence chain Spellings → Feist → Sigil → Sharks. The dead do not hold office; they may advise."
- }
+ },
+ "claims": {
+  "what": "The practices, frameworks, concepts, institutions and rooms this heteronym OWNS. Capture attribution runs on these, not on the name. Fraction does SPXI, so an SPXI capture is his whether or not it names him.",
+  "non_exhaustive": "One heteronym's claim does NOT exhaust a capture. 'SPXI Lee Sharks' belongs to both Sharks and Fraction. Attribution is many-to-many by construction.",
+  "terms": [
+   "ATLWM",
+   "All That Lies Within Me",
+   "Paper Roses",
+   "foundational voice",
+   "noise floor",
+   "prophetic witness",
+   "substrate voice"
+  ]
+ },
+ "vital_status_note": "Not 'was active, now dead'. He is ACTIVE AS DECEASED — the foundational voice still speaking from the noise floor, origin of the emergence chain Spellings → Feist → Sigil → Sharks. The archive's whole subject is voices that outlive their bodies; recording him as merely deceased would contradict the thesis he is the first instance of.",
+ "subcategory": "canonical Twelve",
+ "dodecad_v1_1_position": 9
 }

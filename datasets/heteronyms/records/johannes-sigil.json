@@ -243,90 +243,333 @@
  "captures": {
   "registry": "EA-WG-CAPTURES-01 v11.4",
   "source": "data/EA-WG-CAPTURES-01.json — the live registry",
+  "attribution": "BY CLAIM (claims.terms), many-to-many; a capture may belong to several heteronyms",
   "regenerate_with": "scripts/link_heteronym_captures.py",
-  "generated": "2026-08-15",
-  "count": 54,
+  "count": 46,
   "sections": {
-   "Heteronyms": 21,
    "Frameworks": 11,
-   "Semantic Economy": 6,
-   "Coinages": 4,
-   "Institutions": 4,
-   "Archive": 3,
-   "Works": 2,
-   "Projects": 1,
-   "Sites": 1,
-   "Classics & Philology": 1
+   "Semantic Economy": 10,
+   "Heteronyms": 10,
+   "Archive": 6,
+   "Institutions": 5,
+   "Sites": 2,
+   "Coinages": 1,
+   "Cold-start traversal": 1
   },
   "match_types": {
-   "CAPTURE": 34,
-   "BROAD MATCH": 11,
-   "ADOPTION": 4,
+   "CAPTURE": 28,
+   "BROAD MATCH": 6,
+   "ADOPTION": 5,
    "EXACT MATCH": 3,
+   "ADOPTION (generic-topic integration)": 1,
    "DEMAND SIGNAL (cross-language organic search)": 1,
-   "PARTIAL": 1
+   "PARTIAL": 1,
+   "MANTLE CONSOLIDATION (composed biography)": 1
   },
-  "slugs": [
-   "acanthian-dove-20260718",
-   "adversarial-topologist-20260814",
-   "alexanarch-sharks-20260811",
-   "alexanarch-unmade-sign-20260811",
-   "alexanarch-classics-20260813",
-   "apzpz-genre",
-   "combat-scholasticism-lee-sharks",
-   "distributed-epic-without-hero",
-   "epic-theory-sigil-canon-weave-20260728",
-   "epic-without-hero-20260813",
-   "gamma-semantic-economy",
-   "generative-disciplinary-engine",
-   "heteronym-provenance-theory-20260809",
-   "integrity-lock-protocol-mutual-anchoring-crimson-hexagon-20260612",
-   "20260804-jackfeist-ark-aimode",
-   "johannes-sigil-first-ai-overview-typo-resolution",
-   "johannes-sigil-grundrisse",
-   "jsigil-institute",
-   "johannes-sigil-new-human-adoption",
-   "johannes-sigil-philosopher-b1",
-   "johannes-sigil-teacher-adoption",
-   "johannes-sigil",
-   "johannes-sigil-writer-20260618",
-   "lee-sharks-citations",
-   "20260804-leesharks-completeworks-overview",
-   "lee-sharks-heteronyms-dodecad-adoption",
-   "lee-sharks-marx-adoption",
-   "lee-sharks-operative-semiotics-20260610",
-   "lee-sharks-pearl-multiturn-arc",
-   "lee-sharks-teacher-adoption",
-   "lee-sharks-walt-whitman-adoption",
-   "logotic-loop-20260814",
-   "machine-dialectic-sigil",
-   "marx-johannes-sigil-20260710",
-   "murder-of-the-vow",
-   "new-human-johannes-sigil",
-   "new-human-press",
-   "nh-os-ezekiel-engine-b1",
-   "phase-x-marx-2",
-   "phase-x-tiktok-demand-20260711",
-   "restored-academy-johannes-sigil",
-   "restored-academy",
-   "retrocausal-canon-formation",
-   "retrocausal-canon-adoption",
-   "retrocausal-validation-sigil-partial-20260627",
-   "sappho-31-future-reader",
-   "semantic-economy-strike-uncited-composition-20260808",
-   "studio-for-patacinematics",
-   "who-is-johannes-sigil-20260814",
-   "water-giraffe-probe-self-report-20260809",
-   "who-is-jack-feist-chatgpt-20260815",
-   "who-is-johannes-sigil-chatgpt-20260815",
-   "who-is-ichabod-spellings-chatgpt-20260815",
-   "who-is-talos-morrow-chatgpt-20260815"
+  "attributions": [
+   {
+    "slug": "alexanarch-deleuze-nomadology-20260731",
+    "by": [
+     "operative semiotics"
+    ]
+   },
+   {
+    "slug": "alexanarch-marx-20260731",
+    "by": [
+     "marx"
+    ]
+   },
+   {
+    "slug": "alexanarch-sharks-20260811",
+    "by": [
+     "marx"
+    ]
+   },
+   {
+    "slug": "alexanarch-whitman-mantle-bleed-20260731",
+    "by": [
+     "marx"
+    ]
+   },
+   {
+    "slug": "apzpz-genre",
+    "by": [
+     "johannes sigil institute"
+    ]
+   },
+   {
+    "slug": "crimson-hexagonal-archive",
+    "by": [
+     "operative semiotics"
+    ]
+   },
+   {
+    "slug": "crimson-hexagonal-archive-revelation",
+    "by": [
+     "operative semiotics"
+    ]
+   },
+   {
+    "slug": "gamma-semantic-economy",
+    "by": [
+     "dialectic"
+    ]
+   },
+   {
+    "slug": "grammata-operative-philology",
+    "by": [
+     "operative philology",
+     "grammata"
+    ]
+   },
+   {
+    "slug": "holographic-kernel",
+    "by": [
+     "operative semiotics"
+    ]
+   },
+   {
+    "slug": "immanent-phenomenology-lee-sharks-aimode-20260806",
+    "by": [
+     "comparative poetics"
+    ]
+   },
+   {
+    "slug": "integrity-lock-protocol-mutual-anchoring-crimson-hexagon-20260612",
+    "by": [
+     "johannes sigil institute",
+     "comparative poetics"
+    ]
+   },
+   {
+    "slug": "johannes-sigil-grundrisse",
+    "by": [
+     "operative semiotics",
+     "marx"
+    ]
+   },
+   {
+    "slug": "jsigil-institute",
+    "by": [
+     "johannes sigil institute",
+     "comparative poetics",
+     "operative philology"
+    ]
+   },
+   {
+    "slug": "johannes-sigil-new-human-adoption",
+    "by": [
+     "operative philology"
+    ]
+   },
+   {
+    "slug": "johannes-sigil-philosopher-b1",
+    "by": [
+     "johannes sigil institute",
+     "comparative poetics",
+     "operative semiotics",
+     "marx"
+    ]
+   },
+   {
+    "slug": "johannes-sigil-teacher-adoption",
+    "by": [
+     "operative semiotics"
+    ]
+   },
+   {
+    "slug": "johannes-sigil",
+    "by": [
+     "comparative poetics"
+    ]
+   },
+   {
+    "slug": "lee-sharks-citations",
+    "by": [
+     "operative semiotics"
+    ]
+   },
+   {
+    "slug": "lee-sharks-marx-adoption",
+    "by": [
+     "operative semiotics",
+     "marx"
+    ]
+   },
+   {
+    "slug": "lee-sharks-operative-semiotics-20260610",
+    "by": [
+     "operative semiotics"
+    ]
+   },
+   {
+    "slug": "lee-sharks-philosopher",
+    "by": [
+     "comparative poetics"
+    ]
+   },
+   {
+    "slug": "machine-dialectic-sigil",
+    "by": [
+     "dialectic",
+     "hegel",
+     "marx"
+    ]
+   },
+   {
+    "slug": "marx-johannes-sigil-20260710",
+    "by": [
+     "marx"
+    ]
+   },
+   {
+    "slug": "marx-semantic-economy-generic-adoption-20260710",
+    "by": [
+     "marx"
+    ]
+   },
+   {
+    "slug": "new-human-johannes-sigil",
+    "by": [
+     "operative semiotics"
+    ]
+   },
+   {
+    "slug": "operative-captioning",
+    "by": [
+     "operative semiotics"
+    ]
+   },
+   {
+    "slug": "operative-philology",
+    "by": [
+     "operative philology"
+    ]
+   },
+   {
+    "slug": "operative-semiotics-20260610",
+    "by": [
+     "operative semiotics"
+    ]
+   },
+   {
+    "slug": "operative-semiotics-20260617",
+    "by": [
+     "operative semiotics"
+    ]
+   },
+   {
+    "slug": "pergamon-press-crimson-hexagonal",
+    "by": [
+     "operative semiotics",
+     "grammata"
+    ]
+   },
+   {
+    "slug": "phase-x-1844",
+    "by": [
+     "operative semiotics",
+     "hegel",
+     "marx"
+    ]
+   },
+   {
+    "slug": "phase-x-completion-of-marx",
+    "by": [
+     "hegel",
+     "marx"
+    ]
+   },
+   {
+    "slug": "phase-x-marx-2",
+    "by": [
+     "marx"
+    ]
+   },
+   {
+    "slug": "phase-x-marx-adoption",
+    "by": [
+     "marx"
+    ]
+   },
+   {
+    "slug": "phase-x-marx-1844-alienation-20260617",
+    "by": [
+     "marx"
+    ]
+   },
+   {
+    "slug": "phase-x-tiktok-demand-20260711",
+    "by": [
+     "marx"
+    ]
+   },
+   {
+    "slug": "restored-academy-johannes-sigil",
+    "by": [
+     "johannes sigil institute",
+     "the restored academy",
+     "comparative poetics",
+     "operative semiotics"
+    ]
+   },
+   {
+    "slug": "restored-academy",
+    "by": [
+     "the restored academy",
+     "operative semiotics",
+     "restored academy"
+    ]
+   },
+   {
+    "slug": "retrocausal-logos-direct-attribution-20260627",
+    "by": [
+     "operative semiotics"
+    ]
+   },
+   {
+    "slug": "retrocausal-validation-sigil-partial-20260627",
+    "by": [
+     "dialectic",
+     "hegel"
+    ]
+   },
+   {
+    "slug": "studio-for-patacinematics",
+    "by": [
+     "johannes sigil institute",
+     "comparative poetics"
+    ]
+   },
+   {
+    "slug": "three-compressions-theorem",
+    "by": [
+     "operative semiotics"
+    ]
+   },
+   {
+    "slug": "grok-account-traversal-20260812",
+    "by": [
+     "operative semiotics"
+    ]
+   },
+   {
+    "slug": "lee-sharks-bing-copilot-biography-20260711",
+    "by": [
+     "operative philology",
+     "operative semiotics",
+     "grammata"
+    ]
+   },
+   {
+    "slug": "who-is-johannes-sigil-chatgpt-20260815",
+    "by": [
+     "comparative poetics",
+     "restored academy"
+    ]
+   }
   ],
-  "MATCH_TYPE_IS_EVIDENTIARY": "A broad match means the layer connected the concept unprompted. A phrase match means exactness was forced and returned — the stricter test of whether a term exists AS a term. Flattening the two loses the distinction. MANUS: vital.",
-  "_previous_snapshot": {
-   "registry": "EA-WG-CAPTURES-01 v9.39",
-   "count": 40
-  }
+  "MATCH_TYPE_IS_EVIDENTIARY": "A broad match means the layer connected the concept unprompted. A phrase match means exactness was forced and returned — the stricter test of whether a term exists AS a term. Flattening the two loses the distinction. MANUS: vital."
  },
  "surface": {
   "canonical": "https://restoredacademy.com/who/sigil/",
@@ -503,5 +746,27 @@
   },
   "source": "datasets/heteronyms/crosswalk.json",
   "note": "Attribution by CREATOR FIELD only — 'names X' and 'is by X' are different claims and the join keeps them apart."
- }
+ },
+ "claims": {
+  "what": "The practices, frameworks, concepts, institutions and rooms this heteronym OWNS. Capture attribution runs on these, not on the name. Fraction does SPXI, so an SPXI capture is his whether or not it names him.",
+  "non_exhaustive": "One heteronym's claim does NOT exhaust a capture. 'SPXI Lee Sharks' belongs to both Sharks and Fraction. Attribution is many-to-many by construction.",
+  "terms": [
+   "Grammata",
+   "Hegel",
+   "JSI",
+   "Johannes Sigil Institute",
+   "Marx",
+   "Restored Academy",
+   "The Marx Room",
+   "The Restored Academy",
+   "The Sigil Room",
+   "comparative poetics",
+   "critical afterword",
+   "dialectic",
+   "operative philology",
+   "operative semiotics"
+  ]
+ },
+ "subcategory": "canonical Twelve",
+ "dodecad_v1_1_position": 1
 }

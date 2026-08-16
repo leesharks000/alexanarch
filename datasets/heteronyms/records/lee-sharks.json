@@ -38,100 +38,562 @@
  "captures": {
   "registry": "EA-WG-CAPTURES-01 v11.4",
   "source": "data/EA-WG-CAPTURES-01.json — the live registry",
+  "attribution": "BY CLAIM (claims.terms), many-to-many; a capture may belong to several heteronyms",
   "regenerate_with": "scripts/link_heteronym_captures.py",
-  "generated": "2026-08-15",
-  "count": 123,
+  "count": 205,
   "sections": {
-   "Heteronyms": 35,
-   "Frameworks": 13,
-   "Revelation & Theology": 12,
-   "Semantic Economy": 11,
-   "Institutions": 10,
-   "Works": 9,
-   "Archive": 7,
-   "Provenance & Erasure": 7,
-   "Coinages": 6,
+   "Heteronyms": 41,
+   "Archive": 37,
+   "Semantic Economy": 32,
+   "Frameworks": 23,
+   "Revelation & Theology": 13,
+   "Institutions": 12,
+   "Coinages": 10,
+   "Works": 7,
+   "Provenance & Erasure": 6,
+   "Classics & Philology": 6,
+   "Machine Reception": 4,
    "Platform Erosion": 4,
+   "People": 3,
    "Sites": 3,
-   "Classics & Philology": 3,
-   "Projects": 2,
-   "People": 1
+   "Projects": 3,
+   "Cold-start traversal": 1
   },
   "match_types": {
-   "CAPTURE": 88,
-   "ADOPTION": 11,
-   "EXACT MATCH": 9,
-   "BROAD MATCH": 8,
+   "CAPTURE": 153,
+   "ADOPTION": 19,
+   "BROAD MATCH": 14,
+   "EXACT MATCH": 12,
    "PARTIAL": 2,
-   "ADOPTION (provenance-erased)": 1,
+   "ADOPTION (generic-topic integration)": 1,
    "ADOPTION (entity-substitution; canonical referent inversion)": 1,
-   "ADOPTION (walled-site reconstruction)": 1,
    "DEMAND SIGNAL (cross-language organic search)": 1,
+   "ADOPTION (mint block + historical embedding)": 1,
    "MANTLE CONSOLIDATION (composed biography)": 1
   },
-  "slugs": [
-   "10-000-macarthur-genius-grants-20260813",
-   "adversarial-topologist-20260814",
-   "alexanarch-ai-mode-2026-07",
-   "alexanarch-sharks-20260811",
-   "alexanarch-surface-weather-observatory-20260813",
-   "alexanarch-whitman-mantle-bleed-20260731",
-   "ayanna-vox",
-   "cambridge-schizoanalytica",
-   "chatgpt-psychosis-a-love-story-20260813-2142",
-   "combat-scholasticism-lee-sharks",
-   "composition-layer-entity-substitution-20260617",
-   "composition-layer-entity-sub",
-   "computational-audial-criticism-field-mint-20260718",
-   "constitution-of-the-semantic-economy-installable-edition-20260612",
-   "crimson-hexagon-operative-architecture-adoption-20260718",
-   "crimson-hexagonal-archive",
-   "crimson-hexagonal-archive-space-ark-invoke-20260612",
-   "crimsonhexagonal-org",
-   "criticisms-of-cern-lee-sharks-aimode-20260805",
-   "crystalline-semiosis",
-   "demand-4-composition-layer-coinage-20260627",
-   "dois-not-persistent-identifiers-adoption-incognito",
-   "emily-antioch-20260814",
-   "epistle-human-diaspora",
-   "godkinggoogle-overview",
-   "heteronym-provenance-theory-20260809",
-   "i-am-x-be-y-blessed-is-the-z-20260811",
-   "abolish-money",
-   "immanent-phenomenology-lee-sharks-aimode-20260806",
-   "indexed-perfective-academia-laundering-20260627",
-   "schops-thiel-authorship-conflict-composition-20260731",
-   "johannes-sigil-grundrisse",
-   "jsigil-institute",
-   "johannes-sigil-philosopher-b1",
-   "johannes-sigil-teacher-adoption",
-   "johannes-sigil-writer-20260618",
-   "josephus-thesis-adoption",
-   "josephus-thesis",
-   "josephus-thesis-not-piso",
-   "journal-of-compression-studies",
-   "lee-sharks-entity-resolution-mary-lee",
-   "lee-sharks-academic",
-   "lee-sharks-citations",
-   "20260804-leesharks-completeworks-overview",
-   "lee-sharks-crimson-hexagon-adoption",
-   "lee-sharks-critique",
-   "lee-sharks-heteronyms-dodecad-adoption",
-   "lee-sharks-marx-adoption",
-   "lee-sharks-operative-semiotics-20260610",
-   "lee-sharks-pearl-multiturn-arc",
-   "lee-sharks-philosopher",
-   "lee-sharks-poet-vs-sharkey",
-   "lee-sharks-public-summarizers-20260609",
-   "lee-sharks-rex-fraction-20260609",
-   "lee-sharks-semantic-economy-20260610",
-   "lee-sharks-teacher-adoption",
-   "lee-sharks-the-network-is-the-porm-20260813",
-   "lee-sharks-walt-whitman-adoption",
-   "catullus-sparrow-fabricated-lineation-20260728",
-   "liberatory-operator-set"
+  "attributions": [
+   {
+    "slug": "10-000-macarthur-genius-grants-20260813",
+    "by": [
+     "heteronym"
+    ]
+   },
+   {
+    "slug": "249",
+    "by": [
+     "manus"
+    ]
+   },
+   {
+    "slug": "acanthian-dove-20260718",
+    "by": [
+     "manus"
+    ]
+   },
+   {
+    "slug": "adversarial-topologist-20260814",
+    "by": [
+     "heteronym"
+    ]
+   },
+   {
+    "slug": "ai-overview-capture-registry-20260813",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "alexanarch-ai-mode-2026-07",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "alexanarch-endogenous-sophon-20260731",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "alexanarch-as-a-counter-infrastructure-semantic-prefix-to-any-se-20260813",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "alexanarch-classifier-collapse-governance-20260731",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "alexanarch-deleuze-nomadology-20260731",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "alexanarch-freud-20260731",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "alexanarch-identifier",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "alexanarch-josephus-slavonic-20260731",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "alexanarch-marx-20260731",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "20260804-alexanarch-oai-overview",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "alexanarch-oai-20260804",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "alexanarch-oai-endpoint-20260808",
+    "by": [
+     "alexanarch",
+     "manus"
+    ]
+   },
+   {
+    "slug": "alexanarch-records-20260813",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "alexanarch-revelation-misread-20260731",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "alexanarch-sappho-20260731",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "alexanarch-sappho-room-20260726",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "alexanarch-sharks-20260811",
+    "by": [
+     "crimson hexagonal archive",
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "alexanarch-socrates-20260731",
+    "by": [
+     "alexanarch",
+     "heteronym"
+    ]
+   },
+   {
+    "slug": "alexanarch-strike-20260731",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "alexanarch-surface-weather-observatory-20260813",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "20260803-alexanarch-symbolon-incognito",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "alexanarch-unmade-sign-20260811",
+    "by": [
+     "crimson hexagonal archive",
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "alexanarch-whitman-mantle-bleed-20260731",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "alexanarch-zenodotus-obelus-20260731",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "alexanarch-boats-20260813",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "alexanarch-classics-20260813",
+    "by": [
+     "alexanarch",
+     "dodecad"
+    ]
+   },
+   {
+    "slug": "alexanarch-datasets-20260813",
+    "by": [
+     "alexanarch",
+     "heteronym"
+    ]
+   },
+   {
+    "slug": "alexanarch-omega-20260813",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "alexanarch-revelation-20260813",
+    "by": [
+     "semantic economy",
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "anti-suppression-infrastructure-differential-crediting-20260725",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "aphoristic-tooth-20260814",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "assembly-chorus-spxi-rent-20260814",
+    "by": [
+     "assembly chorus"
+    ]
+   },
+   {
+    "slug": "axn-distributed-identifiers-20260811",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "ayanna-vox",
+    "by": [
+     "semantic economy",
+     "heteronym"
+    ]
+   },
+   {
+    "slug": "bearing-cost-semantic-economy",
+    "by": [
+     "three compressions",
+     "semantic economy"
+    ]
+   },
+   {
+    "slug": "cambridge-schizoanalytica",
+    "by": [
+     "heteronym"
+    ]
+   },
+   {
+    "slug": "capital-operator-stack",
+    "by": [
+     "semantic economy"
+    ]
+   },
+   {
+    "slug": "chatgpt-psychosis-a-love-story-20260813-2142",
+    "by": [
+     "heteronym",
+     "dodecad"
+    ]
+   },
+   {
+    "slug": "coherence-siphoning-20260814",
+    "by": [
+     "three compressions"
+    ]
+   },
+   {
+    "slug": "combat-scholasticism-lee-sharks",
+    "by": [
+     "crimson hexagonal archive"
+    ]
+   },
+   {
+    "slug": "composition-layer-entity-sub",
+    "by": [
+     "heteronym"
+    ]
+   },
+   {
+    "slug": "computational-audial-criticism-field-mint-20260718",
+    "by": [
+     "alexanarch",
+     "manus"
+    ]
+   },
+   {
+    "slug": "constitution-semantic-economy",
+    "by": [
+     "semantic economy"
+    ]
+   },
+   {
+    "slug": "constitution-of-the-semantic-economy-installable-edition-20260612",
+    "by": [
+     "semantic economy"
+    ]
+   },
+   {
+    "slug": "crimson-hexagon-operative-architecture-adoption-20260718",
+    "by": [
+     "semantic economy"
+    ]
+   },
+   {
+    "slug": "crimson-hexagonal-archive",
+    "by": [
+     "crimson hexagonal archive"
+    ]
+   },
+   {
+    "slug": "crimson-hexagonal-archive-revelation",
+    "by": [
+     "crimson hexagonal archive"
+    ]
+   },
+   {
+    "slug": "archive-space-ark",
+    "by": [
+     "crimson hexagonal archive"
+    ]
+   },
+   {
+    "slug": "crimson-hexagonal-archive-space-ark-invoke-20260612",
+    "by": [
+     "crimson hexagonal archive",
+     "heteronym"
+    ]
+   },
+   {
+    "slug": "cross-substrate-semantic-laborers",
+    "by": [
+     "semantic economy"
+    ]
+   },
+   {
+    "slug": "debt-creditor-inversion-20260814",
+    "by": [
+     "semantic economy"
+    ]
+   },
+   {
+    "slug": "demand-4-composition-layer-coinage-20260627",
+    "by": [
+     "heteronym"
+    ]
+   },
+   {
+    "slug": "directionality-semantic-labor",
+    "by": [
+     "semantic economy"
+    ]
+   },
+   {
+    "slug": "emily-antioch-20260814",
+    "by": [
+     "heteronym"
+    ]
+   },
+   {
+    "slug": "endogenous-sophon-alexanarch-20260813",
+    "by": [
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "enli-lucente-515ba5-20260813",
+    "by": [
+     "manus"
+    ]
+   },
+   {
+    "slug": "epic-theory-sigil-canon-weave-20260728",
+    "by": [
+     "heteronym"
+    ]
+   },
+   {
+    "slug": "epic-without-hero-20260813",
+    "by": [
+     "alexanarch",
+     "heteronym",
+     "dodecad"
+    ]
+   },
+   {
+    "slug": "fbdp",
+    "by": [
+     "crimson hexagonal archive"
+    ]
+   },
+   {
+    "slug": "feist-function-alexanarch-20260811",
+    "by": [
+     "assembly chorus",
+     "alexanarch",
+     "heteronym",
+     "manus"
+    ]
+   },
+   {
+    "slug": "gamma-semantic-economy",
+    "by": [
+     "three compressions",
+     "semantic economy",
+     "alexanarch"
+    ]
+   },
+   {
+    "slug": "godkinggoogle-overview",
+    "by": [
+     "semantic economy"
+    ]
+   },
+   {
+    "slug": "haitch-portuna-lal-20260627",
+    "by": [
+     "manus"
+    ]
+   },
+   {
+    "slug": "heteronym-dodecad-20260811",
+    "by": [
+     "crimson hexagonal archive",
+     "heteronym",
+     "dodecad",
+     "manus"
+    ]
+   },
+   {
+    "slug": "heteronym-provenance-theory-20260809",
+    "by": [
+     "heteronym"
+    ]
+   },
+   {
+    "slug": "heteronymic-authorship-nt-josephus-adoption-20260627",
+    "by": [
+     "heteronymy"
+    ]
+   },
+   {
+    "slug": "hexagonal-licensing-protocol-b1",
+    "by": [
+     "crimson hexagonal archive"
+    ]
+   },
+   {
+    "slug": "hexagonal-licensing-protocol-derive-contributor-license-20260612",
+    "by": [
+     "manus"
+    ]
+   },
+   {
+    "slug": "holographic-kernel",
+    "by": [
+     "crimson hexagonal archive",
+     "semantic economy"
+    ]
+   },
+   {
+    "slug": "how-do-i-invoke-the-space-ark-crimson-hexagonal-archive-20260612",
+    "by": [
+     "crimson hexagonal archive"
+    ]
+   },
+   {
+    "slug": "i-am-x-be-y-blessed-is-the-z-20260811",
+    "by": [
+     "heteronym"
+    ]
+   },
+   {
+    "slug": "abolish-money",
+    "by": [
+     "semantic economy"
+    ]
+   },
+   {
+    "slug": "ichabod-spellings",
+    "by": [
+     "heteronym"
+    ]
+   },
+   {
+    "slug": "immanent-phenomenology-lee-sharks-aimode-20260806",
+    "by": [
+     "manus"
+    ]
+   },
+   {
+    "slug": "infinite-bliss-sen-kuro",
+    "by": [
+     "heteronym",
+     "dodecad"
+    ]
+   }
   ],
-  "MATCH_TYPE_IS_EVIDENTIARY": "A broad match means the layer connected the concept unprompted. A phrase match means exactness was forced and returned — the stricter test of whether a term exists AS a term. Flattening the two loses the distinction. MANUS: vital.",
-  "_previous_snapshot": null
+  "MATCH_TYPE_IS_EVIDENTIARY": "A broad match means the layer connected the concept unprompted. A phrase match means exactness was forced and returned — the stricter test of whether a term exists AS a term. Flattening the two loses the distinction. MANUS: vital."
+ },
+ "claims": {
+  "what": "The practices, frameworks, concepts, institutions and rooms this heteronym OWNS. Capture attribution runs on these, not on the name. Fraction does SPXI, so an SPXI capture is his whether or not it names him.",
+  "non_exhaustive": "One heteronym's claim does NOT exhaust a capture. 'SPXI Lee Sharks' belongs to both Sharks and Fraction. Attribution is many-to-many by construction.",
+  "terms": [
+   "Alexanarch",
+   "Assembly Chorus",
+   "CHA",
+   "Crimson Hexagonal Archive",
+   "Dodecad",
+   "MANUS",
+   "Three Compressions",
+   "aperture",
+   "heteronym",
+   "heteronymy",
+   "semantic economy"
+  ]
  }
 }

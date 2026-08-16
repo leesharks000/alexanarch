@@ -100,30 +100,71 @@
  "captures": {
   "registry": "EA-WG-CAPTURES-01 v11.4",
   "source": "data/EA-WG-CAPTURES-01.json — the live registry",
+  "attribution": "BY CLAIM (claims.terms), many-to-many; a capture may belong to several heteronyms",
   "regenerate_with": "scripts/link_heteronym_captures.py",
-  "generated": "2026-08-15",
   "count": 7,
   "sections": {
-   "Archive": 2,
    "Heteronyms": 2,
    "Institutions": 2,
-   "Works": 1
+   "Archive": 1,
+   "Revelation & Theology": 1,
+   "Semantic Economy": 1
   },
   "match_types": {
    "CAPTURE": 6,
    "ADOPTION": 1
   },
-  "slugs": [
-   "alexanarch-datasets-20260813",
-   "ayanna-vox",
-   "crimson-hexagonal-archive",
-   "lee-sharks-pearl-multiturn-arc",
-   "outreach-rhizome-vpcor-20260627",
-   "vpcor",
-   "who-is-ayanna-vox-chatgpt-20260815"
+  "attributions": [
+   {
+    "slug": "alexanarch-strike-20260731",
+    "by": [
+     "semantic strike"
+    ]
+   },
+   {
+    "slug": "ayanna-vox",
+    "by": [
+     "vpcor"
+    ]
+   },
+   {
+    "slug": "outreach-rhizome-vpcor-20260627",
+    "by": [
+     "vox populi community outreach rhizome",
+     "community outreach",
+     "vox populi",
+     "vpcor"
+    ]
+   },
+   {
+    "slug": "revelation-first-adoption",
+    "by": [
+     "pastoral"
+    ]
+   },
+   {
+    "slug": "semantic-economy-strike-uncited-composition-20260808",
+    "by": [
+     "semantic strike"
+    ]
+   },
+   {
+    "slug": "vpcor",
+    "by": [
+     "community outreach",
+     "vox populi",
+     "vpcor"
+    ]
+   },
+   {
+    "slug": "who-is-ayanna-vox-chatgpt-20260815",
+    "by": [
+     "diplomatic",
+     "vpcor"
+    ]
+   }
   ],
-  "MATCH_TYPE_IS_EVIDENTIARY": "A broad match means the layer connected the concept unprompted. A phrase match means exactness was forced and returned — the stricter test of whether a term exists AS a term. Flattening the two loses the distinction. MANUS: vital.",
-  "_previous_snapshot": null
+  "MATCH_TYPE_IS_EVIDENTIARY": "A broad match means the layer connected the concept unprompted. A phrase match means exactness was forced and returned — the stricter test of whether a term exists AS a term. Flattening the two loses the distinction. MANUS: vital."
  },
  "traversals": [
   477,
@@ -166,5 +207,23 @@
   "abbrev": "PJFS",
   "role": "Editor (duoviri, with Dr. Orin Trace)",
   "ruled": "2026-08-15 (operator)"
- }
+ },
+ "claims": {
+  "what": "The practices, frameworks, concepts, institutions and rooms this heteronym OWNS. Capture attribution runs on these, not on the name. Fraction does SPXI, so an SPXI capture is his whether or not it names him.",
+  "non_exhaustive": "One heteronym's claim does NOT exhaust a capture. 'SPXI Lee Sharks' belongs to both Sharks and Fraction. Attribution is many-to-many by construction.",
+  "terms": [
+   "VPCOR",
+   "Vox Populi",
+   "Vox Populi Community Outreach Rhizome",
+   "community outreach",
+   "diplomatic",
+   "distributive ethics",
+   "liberation theology",
+   "pastoral",
+   "public letter",
+   "semantic strike"
+  ]
+ },
+ "subcategory": "canonical Twelve",
+ "dodecad_v1_1_position": 8
 }

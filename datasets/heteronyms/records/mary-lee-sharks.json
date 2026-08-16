@@ -36,46 +36,85 @@
  "captures": {
   "registry": "EA-WG-CAPTURES-01 v11.4",
   "source": "data/EA-WG-CAPTURES-01.json — the live registry",
+  "attribution": "BY CLAIM (claims.terms), many-to-many; a capture may belong to several heteronyms",
   "regenerate_with": "scripts/link_heteronym_captures.py",
-  "generated": "2026-08-15",
-  "count": 16,
+  "count": 8,
   "sections": {
-   "Works": 3,
-   "Provenance & Erasure": 3,
    "Heteronyms": 3,
-   "Archive": 2,
    "Sites": 2,
-   "Classics & Philology": 1,
-   "Frameworks": 1,
+   "Archive": 1,
+   "Works": 1,
    "Institutions": 1
   },
   "match_types": {
-   "CAPTURE": 8,
-   "ADOPTION": 3,
-   "EXACT MATCH": 2,
+   "CAPTURE": 3,
+   "ZERO RESULT": 1,
+   "EXACT MATCH": 1,
    "ADOPTION (entity-substitution; canonical referent inversion)": 1,
    "BROAD MATCH": 1,
    "ZERO INDEX": 1
   },
-  "slugs": [
-   "alexanarch-sharks-20260811",
-   "alexanarch-socrates-20260731",
-   "chatgpt-psychosis-trilogy-scholar",
-   "composition-layer-entity-sub",
-   "demand-4-composition-layer-coinage-20260627",
-   "lee-sharks-entity-resolution-mary-lee",
-   "lee-sharks-pearl-multiturn-arc",
-   "mary-lee-canonical-referent-inversion-20260627",
-   "maryleelabor-demands",
-   "parable-of-mary-lee-genre-competence-20260718",
-   "public-summarizers-that-audit-their-own-erasures-20260609",
-   "sappho-rebekah-stanza",
-   "maryleelabor-org-zero-index",
-   "the-sharks-function-20260811",
-   "uca-dolphindiana-conceptual-20260627",
-   "who-is-lee-sharks-20260609"
+  "attributions": [
+   {
+    "slug": "alexanarch-sharks-20260811",
+    "by": [
+     "ocearch"
+    ]
+   },
+   {
+    "slug": "broke-marxist-poet-zero",
+    "by": [
+     "maryleelabor"
+    ]
+   },
+   {
+    "slug": "lee-sharks-entity-resolution-mary-lee",
+    "by": [
+     "ocearch"
+    ]
+   },
+   {
+    "slug": "mary-lee-canonical-referent-inversion-20260627",
+    "by": [
+     "ocearch"
+    ]
+   },
+   {
+    "slug": "maryleelabor-demands",
+    "by": [
+     "maryleelabor"
+    ]
+   },
+   {
+    "slug": "parable-of-mary-lee-genre-competence-20260718",
+    "by": [
+     "ocearch"
+    ]
+   },
+   {
+    "slug": "maryleelabor-org-zero-index",
+    "by": [
+     "maryleelabor"
+    ]
+   },
+   {
+    "slug": "uca-dolphindiana",
+    "by": [
+     "maryleelabor"
+    ]
+   }
   ],
-  "MATCH_TYPE_IS_EVIDENTIARY": "A broad match means the layer connected the concept unprompted. A phrase match means exactness was forced and returned — the stricter test of whether a term exists AS a term. Flattening the two loses the distinction. MANUS: vital.",
-  "_previous_snapshot": null
+  "MATCH_TYPE_IS_EVIDENTIARY": "A broad match means the layer connected the concept unprompted. A phrase match means exactness was forced and returned — the stricter test of whether a term exists AS a term. Flattening the two loses the distinction. MANUS: vital."
+ },
+ "claims": {
+  "what": "The practices, frameworks, concepts, institutions and rooms this heteronym OWNS. Capture attribution runs on these, not on the name. Fraction does SPXI, so an SPXI capture is his whether or not it names him.",
+  "non_exhaustive": "One heteronym's claim does NOT exhaust a capture. 'SPXI Lee Sharks' belongs to both Sharks and Fraction. Attribution is many-to-many by construction.",
+  "terms": [
+   "Mary Lee labor",
+   "OCEARCH",
+   "biolabor",
+   "maryleelabor",
+   "non-human heteronymy"
+  ]
  }
 }

@@ -35,28 +35,60 @@
  "captures": {
   "registry": "EA-WG-CAPTURES-01 v11.4",
   "source": "data/EA-WG-CAPTURES-01.json — the live registry",
+  "attribution": "BY CLAIM (claims.terms), many-to-many; a capture may belong to several heteronyms",
   "regenerate_with": "scripts/link_heteronym_captures.py",
-  "generated": "2026-08-15",
   "count": 4,
   "sections": {
-   "Frameworks": 2,
+   "Institutions": 2,
    "Coinages": 1,
-   "Institutions": 1
+   "Frameworks": 1
   },
   "match_types": {
    "CAPTURE": 3,
    "ADOPTION": 1
   },
-  "slugs": [
-   "computational-audial-criticism-field-mint-20260718",
-   "haitch-portuna-lal-20260627",
-   "hexagonal-licensing-protocol-derive-contributor-license-20260612",
-   "living-architecture-lab-thornburgh"
+  "attributions": [
+   {
+    "slug": "haitch-portuna-lal-20260627",
+    "by": [
+     "living architecture",
+     "lal"
+    ]
+   },
+   {
+    "slug": "hexagonal-licensing-protocol-derive-contributor-license-20260612",
+    "by": [
+     "living architecture"
+    ]
+   },
+   {
+    "slug": "living-architecture-lab-thornburgh",
+    "by": [
+     "substrate engineering",
+     "living architecture",
+     "macro-ant robotics",
+     "lal"
+    ]
+   },
+   {
+    "slug": "transactions-substrate-engineering",
+    "by": [
+     "substrate engineering",
+     "living architecture"
+    ]
+   }
   ],
-  "MATCH_TYPE_IS_EVIDENTIARY": "A broad match means the layer connected the concept unprompted. A phrase match means exactness was forced and returned — the stricter test of whether a term exists AS a term. Flattening the two loses the distinction. MANUS: vital.",
-  "_previous_snapshot": {
-   "registry": "EA-WG-CAPTURES-01 v11.4",
-   "count": 4
-  }
+  "MATCH_TYPE_IS_EVIDENTIARY": "A broad match means the layer connected the concept unprompted. A phrase match means exactness was forced and returned — the stricter test of whether a term exists AS a term. Flattening the two loses the distinction. MANUS: vital."
+ },
+ "claims": {
+  "what": "The practices, frameworks, concepts, institutions and rooms this heteronym OWNS. Capture attribution runs on these, not on the name. Fraction does SPXI, so an SPXI capture is his whether or not it names him.",
+  "non_exhaustive": "One heteronym's claim does NOT exhaust a capture. 'SPXI Lee Sharks' belongs to both Sharks and Fraction. Attribution is many-to-many by construction.",
+  "terms": [
+   "LAL",
+   "Living Arkitecture Lab",
+   "living architecture",
+   "macro-ant robotics",
+   "substrate engineering"
+  ]
  }
 }

@@ -201,30 +201,39 @@
  "captures": {
   "registry": "EA-WG-CAPTURES-01 v11.4",
   "source": "data/EA-WG-CAPTURES-01.json — the live registry",
+  "attribution": "BY CLAIM (claims.terms), many-to-many; a capture may belong to several heteronyms",
   "regenerate_with": "scripts/link_heteronym_captures.py",
-  "generated": "2026-08-15",
-  "count": 5,
+  "count": 3,
   "sections": {
-   "Heteronyms": 3,
    "Coinages": 1,
-   "Works": 1
+   "Works": 1,
+   "Revelation & Theology": 1
   },
   "match_types": {
    "BROAD MATCH": 2,
-   "CAPTURE": 2,
    "ADOPTION": 1
   },
-  "slugs": [
-   "commission-immanent-turning",
-   "damascus-dancings",
-   "epistle-human-diaspora",
-   "lee-sharks-heteronyms-dodecad-adoption",
-   "who-is-damascus-dancings-chatgpt-20260815"
+  "attributions": [
+   {
+    "slug": "commission-immanent-turning",
+    "by": [
+     "commission of the immanent turning"
+    ]
+   },
+   {
+    "slug": "epistle-human-diaspora",
+    "by": [
+     "church of the human diaspora"
+    ]
+   },
+   {
+    "slug": "nt-unfolds-from-revelation",
+    "by": [
+     "epistolary"
+    ]
+   }
   ],
-  "MATCH_TYPE_IS_EVIDENTIARY": "A broad match means the layer connected the concept unprompted. A phrase match means exactness was forced and returned — the stricter test of whether a term exists AS a term. Flattening the two loses the distinction. MANUS: vital.",
-  "_previous_snapshot": {
-   "count": 13
-  }
+  "MATCH_TYPE_IS_EVIDENTIARY": "A broad match means the layer connected the concept unprompted. A phrase match means exactness was forced and returned — the stricter test of whether a term exists AS a term. Flattening the two loses the distinction. MANUS: vital."
  },
  "surface": {
   "canonical": "https://revelationfirst.com/who/dancings/",
@@ -406,5 +415,23 @@
   "not_a_journal": true,
   "why": "Deposited as a journal (#1447) but it is an INDEX OF FUTURE CITATIONS — 28 entries spanning 2029–2526, scholarship that does not yet exist, catalogued forward. An index is not a venue: nothing publishes INTO it.",
   "role_retained": "Dancings remains its editor; editing an index is a real office, just not a journal editorship."
- }
+ },
+ "claims": {
+  "what": "The practices, frameworks, concepts, institutions and rooms this heteronym OWNS. Capture attribution runs on these, not on the name. Fraction does SPXI, so an SPXI capture is his whether or not it names him.",
+  "non_exhaustive": "One heteronym's claim does NOT exhaust a capture. 'SPXI Lee Sharks' belongs to both Sharks and Fraction. Attribution is many-to-many by construction.",
+  "terms": [
+   "Church of the Human Diaspora",
+   "Commission of the Immanent Turning",
+   "Damascene",
+   "Forward Library",
+   "Musical Ark",
+   "The Revelation Room",
+   "bodily knowing",
+   "epistolary",
+   "impossible performance",
+   "somatic phenomenology"
+  ]
+ },
+ "subcategory": "canonical Twelve",
+ "dodecad_v1_1_position": 3
 }

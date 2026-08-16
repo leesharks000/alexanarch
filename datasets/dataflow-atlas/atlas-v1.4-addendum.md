@@ -122,3 +122,80 @@ Both belong in any pre-deposit sweep that touches the heteronym substrate.
 - The atlas still says nothing about the journal/venue substrate
   (`data/cha-journals.json`), which is mid-flight and not yet applied to the
   registry.
+
+---
+
+## Addendum, same day: attribution by claim, and the intake requirement
+
+### Name-matching was the wrong model
+
+The first pass attributed captures by matching heteronym NAMES against capture
+text. That is the June journal batch's error in a new place: matching strings
+instead of reading claims.
+
+**Rex Fraction does SPXI. Every SPXI capture is his, whether or not it names
+him.** Nobel Glas holds SPXI Framework 15, so some SPXI captures are also his.
+The data to express that did not exist — no record carried what its heteronym
+*owns* — so the matcher fell back on the only thing present, which was names.
+
+Each record now carries `claims.terms`: the practices, frameworks, concepts,
+institutions and rooms that heteronym owns. Attribution runs on those.
+
+### Attribution is many-to-many
+
+**One heteronym's claim does not exhaust a capture.** A capture on "SPXI Lee
+Sharks" belongs to Sharks *and* to Fraction. Any model assigning each capture a
+single owner is wrong about most of the interesting ones — and the interesting
+ones are precisely where two claims overlap.
+
+Result on registry v11.4: **301 of 343 captures claimed, 729 attributions across
+24 identities** — a mean above two owners per claimed capture.
+
+### Every attribution carries its basis
+
+Each entry records `by`: which claim-term matched. Attribution without a stated
+basis is what produced 371 deposits in one journal.
+
+The basis field earned itself immediately. The first claim-based run gave
+Fraction 271 captures — plainly wrong — and the bases showed why: his term `PER`
+(Provenance Erasure Rate) was matching inside *paper*, *person*, *operative*.
+Word-boundary matching brought him to 95, and the bases now read `spxi`,
+`semantic economy`, `sei`. **An acronym is only a claim when it stands as a
+word.** Without the basis recorded, that would have looked like a finding.
+
+### Orphans are gaps in the claims data
+
+42 captures are claimed by nobody: *training-layer literature*, *semantic
+samizdat*, *the Keeffe problem*, *universal kernel transform*. These are not
+ownerless — they are concepts no record yet claims. `--orphans` lists them, and
+the orphan list is the work queue for populating claims.
+
+### The intake requirement
+
+**Every new capture is attributed at intake.** A capture entering the registry
+without heteronym attribution is a capture that will be attributed later, in
+bulk, by someone reading titles — which is how 371 deposits ended up in one
+journal and how the identity cards drifted four versions behind.
+
+- Intake runs `link_heteronym_captures.py` after any registry write.
+- `--check` fails when a card has drifted from the live registry.
+- `--orphans` after intake shows what the new capture invoked that nobody claims.
+- Attribution is recorded on the CARD, which is canonical; the projection carries
+  it forward automatically.
+
+### Vital status: active as deceased
+
+Ichabod Spellings is **active as deceased** — not "was active, now dead". The
+foundational voice still speaking from the noise floor, origin of the emergence
+chain Spellings → Feist → Sigil → Sharks. The archive's subject is voices that
+outlive their bodies; recording him as merely deceased would contradict the
+thesis he is the first instance of. He may hold an associate editorship and not
+an editorship-in-chief: the dead advise, they do not preside.
+
+### index.json reconciled
+
+`index.json` is now **v2.0**, holding all 26 identities with subcategory,
+record pointer, capture count, claim count, journal seat and office — where v1.0
+held only the twelve Dodecad positions. An index showing twelve of twenty-six
+was itself a way of mistaking a subset for the whole, which is the failure this
+whole addendum is about.

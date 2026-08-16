@@ -141,29 +141,166 @@
  "captures": {
   "registry": "EA-WG-CAPTURES-01 v11.4",
   "source": "data/EA-WG-CAPTURES-01.json — the live registry",
+  "attribution": "BY CLAIM (claims.terms), many-to-many; a capture may belong to several heteronyms",
   "regenerate_with": "scripts/link_heteronym_captures.py",
-  "generated": "2026-08-15",
-  "count": 7,
+  "count": 22,
   "sections": {
-   "Heteronyms": 4,
-   "Frameworks": 2,
-   "Provenance & Erasure": 1
+   "Frameworks": 4,
+   "Heteronyms": 2,
+   "Machine Reception": 2,
+   "Archive": 2,
+   "Semantic Economy": 2,
+   "Platform Erosion": 2,
+   "Works": 2,
+   "Provenance & Erasure": 2,
+   "Institutions": 1,
+   "Revelation & Theology": 1,
+   "People": 1,
+   "Classics & Philology": 1
   },
   "match_types": {
-   "CAPTURE": 6,
-   "EXACT MATCH": 1
+   "CAPTURE": 19,
+   "EXACT MATCH": 1,
+   "BROAD MATCH": 1,
+   "DEMAND SIGNAL (cross-language organic search)": 1
   },
-  "slugs": [
-   "adversarial-topologist-20260814",
-   "infinite-bliss-sen-kuro",
-   "metadata-packet-for-ai-indexing-erasure-skew-20260612",
-   "nobel-glas-lagrange",
-   "semantic-deviation-measure-indexed-but-uncited-20260725",
-   "semantic-deviation-glas",
-   "who-is-nobel-glas-chatgpt-20260815"
+  "attributions": [
+   {
+    "slug": "adversarial-topologist-20260814",
+    "by": [
+     "lagrange observatory"
+    ]
+   },
+   {
+    "slug": "capture-registry-self",
+    "by": [
+     "instrument"
+    ]
+   },
+   {
+    "slug": "ai-overview-capture-registry-20260813",
+    "by": [
+     "instrument"
+    ]
+   },
+   {
+    "slug": "alexanarch-surface-weather-observatory-20260813",
+    "by": [
+     "instrument"
+    ]
+   },
+   {
+    "slug": "constitution-semantic-economy",
+    "by": [
+     "instrument"
+    ]
+   },
+   {
+    "slug": "crimson-hexagon-cern-20260811",
+    "by": [
+     "instrument"
+    ]
+   },
+   {
+    "slug": "grammata-operative-philology",
+    "by": [
+     "measurement of meaning"
+    ]
+   },
+   {
+    "slug": "hexagonal-licensing-protocol-derive-contributor-license-20260612",
+    "by": [
+     "instrument"
+    ]
+   },
+   {
+    "slug": "johannine-aperture-20260617",
+    "by": [
+     "instrument"
+    ]
+   },
+   {
+    "slug": "lee-sharks-pearl-multiturn-arc",
+    "by": [
+     "instrument"
+    ]
+   },
+   {
+    "slug": "metadata-packet-for-ai-indexing-erasure-skew-20260612",
+    "by": [
+     "lagrange observatory"
+    ]
+   },
+   {
+    "slug": "nobel-glas-lagrange",
+    "by": [
+     "lagrange observatory!",
+     "lagrange observatory",
+     "lo!"
+    ]
+   },
+   {
+    "slug": "platform-erosion-observatory-20260811",
+    "by": [
+     "instrument"
+    ]
+   },
+   {
+    "slug": "provenance-erasure-rate-20260617",
+    "by": [
+     "instrument"
+    ]
+   },
+   {
+    "slug": "phase-x-tiktok-demand-20260711",
+    "by": [
+     "instrument"
+    ]
+   },
+   {
+    "slug": "semantic-address-alexanarch-framework-adoption-20260725",
+    "by": [
+     "instrument"
+    ]
+   },
+   {
+    "slug": "semantic-deviation-measure-indexed-but-uncited-20260725",
+    "by": [
+     "lagrange observatory"
+    ]
+   },
+   {
+    "slug": "semantic-deviation-glas",
+    "by": [
+     "lagrange observatory"
+    ]
+   },
+   {
+    "slug": "enli-lucente-047f38-20260813",
+    "by": [
+     "observational"
+    ]
+   },
+   {
+    "slug": "transmission-engineering-sappho-ai-mode-20260728",
+    "by": [
+     "instrument"
+    ]
+   },
+   {
+    "slug": "what-is-spxi-chatgpt-20260814",
+    "by": [
+     "instrument"
+    ]
+   },
+   {
+    "slug": "water-giraffe-probe-self-report-20260809",
+    "by": [
+     "instrument"
+    ]
+   }
   ],
-  "MATCH_TYPE_IS_EVIDENTIARY": "A broad match means the layer connected the concept unprompted. A phrase match means exactness was forced and returned — the stricter test of whether a term exists AS a term. Flattening the two loses the distinction. MANUS: vital.",
-  "_previous_snapshot": null
+  "MATCH_TYPE_IS_EVIDENTIARY": "A broad match means the layer connected the concept unprompted. A phrase match means exactness was forced and returned — the stricter test of whether a term exists AS a term. Flattening the two loses the distinction. MANUS: vital."
  },
  "traversals": [
   479,
@@ -203,5 +340,22 @@
   },
   "source": "datasets/heteronyms/crosswalk.json",
   "note": "Attribution by CREATOR FIELD only — 'names X' and 'is by X' are different claims and the join keeps them apart."
- }
+ },
+ "claims": {
+  "what": "The practices, frameworks, concepts, institutions and rooms this heteronym OWNS. Capture attribution runs on these, not on the name. Fraction does SPXI, so an SPXI capture is his whether or not it names him.",
+  "non_exhaustive": "One heteronym's claim does NOT exhaust a capture. 'SPXI Lee Sharks' belongs to both Sharks and Fraction. Attribution is many-to-many by construction.",
+  "terms": [
+   "LO!",
+   "Lagrange Observatory",
+   "Lagrange Observatory!",
+   "MGE Triptych",
+   "Measurement of Meaning",
+   "SPXI Framework 15",
+   "adversarial topology",
+   "instrument",
+   "observational"
+  ]
+ },
+ "subcategory": "canonical Twelve",
+ "dodecad_v1_1_position": 10
 }

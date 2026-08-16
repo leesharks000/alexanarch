@@ -1,91 +1,316 @@
 {
- "schema": "heteronym-dataset-index/v1.0",
- "generated": "2026-08-10",
- "count": 12,
+ "schema": "heteronym-dataset-index/v2.0",
+ "generated": "2026-08-15",
+ "canonical_store": "records/*.json — THE DATA. This index and heteronyms.jsonl are both projections of it.",
+ "regenerate_with": "scripts/build_heteronym_index.py (rebuilds this file and heteronyms.jsonl)",
+ "scope": "ALL identities, not only the Dodecad. v1.0 held 12 Dodecad positions; the records set holds 26 across eight subcategories, and an index that showed only twelve was itself a way of mistaking a subset for the whole.",
+ "count": 26,
+ "subcategories": {
+  "canonical Twelve": 12,
+  "Assembly Chorus mantle": 7,
+  "orthonym collaborator": 2,
+  "aperture": 1,
+  "institutional persona (non-human heteronymy)": 1,
+  "adjacent heteronym": 1,
+  "provenanced historical figure": 1,
+  "provenanced historical figure (external)": 1
+ },
  "positions": [
-  {
-   "person_id": "ayanna-vox",
-   "name": "Rev. Ayanna Vox",
-   "surface": "https://vpcor.org/ayanna/who/",
-   "records_on_surface": 26,
-   "read_end_to_end": true
-  },
-  {
-   "person_id": "damascus-dancings",
-   "name": "Damascus Dancings",
-   "surface": "https://revelationfirst.com/who/dancings/",
-   "records_on_surface": 43,
-   "read_end_to_end": true
-  },
-  {
-   "person_id": "ichabod-spellings",
-   "name": "Ichabod Spellings",
-   "surface": "https://survivethedeletion.vercel.app/who/spellings/",
-   "records_on_surface": 23,
-   "read_end_to_end": true
-  },
-  {
-   "person_id": "jack-feist",
-   "name": "Jack Feist",
-   "surface": "https://chatgptpsychosis.org/who/feist/",
-   "records_on_surface": 32,
-   "read_end_to_end": true
-  },
   {
    "person_id": "johannes-sigil",
    "name": "Johannes Sigil",
+   "identity_type": "heteronym",
+   "subcategory": "canonical Twelve",
+   "dodecad_position": 1,
+   "record": "records/johannes-sigil.json",
    "surface": "https://restoredacademy.com/who/sigil/",
+   "captures": 46,
+   "claims": 14,
+   "journal_seat": "new human 2: a journal of distributed voice",
    "records_on_surface": 72,
-   "read_end_to_end": true
-  },
-  {
-   "person_id": "nobel-glas",
-   "name": "Nobel Glas",
-   "surface": "https://lagrangeobservatory.org/who/glas/",
-   "records_on_surface": 40,
-   "read_end_to_end": true
-  },
-  {
-   "person_id": "orin-trace",
-   "name": "Dr. Orin Trace",
-   "surface": "https://provenanceerasure.org/who/trace/",
-   "records_on_surface": 31,
-   "read_end_to_end": true
-  },
-  {
-   "person_id": "rebekah-cranes",
-   "name": "Rebekah Cranes",
-   "surface": "https://axnidentifiers.org/who/cranes/",
-   "records_on_surface": 59,
    "read_end_to_end": true
   },
   {
    "person_id": "rex-fraction",
    "name": "Rex Fraction",
+   "identity_type": "heteronym",
+   "subcategory": "canonical Twelve",
+   "dodecad_position": 2,
+   "record": "records/rex-fraction.json",
    "surface": "https://spxi.dev/who/fraction/",
+   "captures": 95,
+   "claims": 15,
+   "journal_seat": "Transactions of the Semantic Economy Institute",
    "records_on_surface": 35,
+   "read_end_to_end": true
+  },
+  {
+   "person_id": "damascus-dancings",
+   "name": "Damascus Dancings",
+   "identity_type": "heteronym",
+   "subcategory": "canonical Twelve",
+   "dodecad_position": 3,
+   "record": "records/damascus-dancings.json",
+   "surface": "https://revelationfirst.com/who/dancings/",
+   "captures": 3,
+   "claims": 10,
+   "records_on_surface": 43,
+   "read_end_to_end": true
+  },
+  {
+   "person_id": "rebekah-cranes",
+   "name": "Rebekah Cranes",
+   "identity_type": "heteronym",
+   "subcategory": "canonical Twelve",
+   "dodecad_position": 4,
+   "record": "records/rebekah-cranes.json",
+   "surface": "https://axnidentifiers.org/who/cranes/",
+   "captures": 53,
+   "claims": 12,
+   "journal_seat": "Grammata: Journal of Operative Philology",
+   "records_on_surface": 59,
+   "read_end_to_end": true
+  },
+  {
+   "person_id": "talos-morrow",
+   "name": "Talos Morrow",
+   "identity_type": "heteronym",
+   "subcategory": "canonical Twelve",
+   "dodecad_position": 5,
+   "record": "records/talos-morrow.json",
+   "surface": "https://godkinggoogle.com/who/morrow/",
+   "captures": 47,
+   "claims": 11,
+   "journal_seat": "Threshold: Papers on Logotic Constraint",
+   "office": "Co-Warden, Crimson Hexagonal Archive province",
+   "records_on_surface": 42,
    "read_end_to_end": true
   },
   {
    "person_id": "sen-kuro",
    "name": "Sen Kuro",
+   "identity_type": "heteronym",
+   "subcategory": "canonical Twelve",
+   "dodecad_position": 6,
+   "record": "records/sen-kuro.json",
    "surface": "https://leesharks.com/who/kuro/",
+   "captures": 5,
+   "claims": 6,
+   "journal_seat": "Journal of Compression Studies",
    "records_on_surface": 34,
    "read_end_to_end": true
   },
   {
    "person_id": "sparrow-wells",
    "name": "Sparrow Wells",
+   "identity_type": "heteronym",
+   "subcategory": "canonical Twelve",
+   "dodecad_position": 7,
+   "record": "records/sparrow-wells.json",
    "surface": "https://surfacemap.org/who/wells/",
+   "captures": 5,
+   "claims": 9,
+   "journal_seat": "Journal of Compression Studies",
    "records_on_surface": 18,
    "read_end_to_end": true
   },
   {
-   "person_id": "talos-morrow",
-   "name": "Talos Morrow",
-   "surface": "https://godkinggoogle.com/who/morrow/",
-   "records_on_surface": 42,
+   "person_id": "ayanna-vox",
+   "name": "Rev. Ayanna Vox",
+   "identity_type": "heteronym",
+   "subcategory": "canonical Twelve",
+   "dodecad_position": 8,
+   "record": "records/ayanna-vox.json",
+   "surface": "https://vpcor.org/ayanna/who/",
+   "captures": 7,
+   "claims": 10,
+   "journal_seat": "Provenance: Journal of Forensic Semiotics",
+   "records_on_surface": 26,
    "read_end_to_end": true
+  },
+  {
+   "person_id": "ichabod-spellings",
+   "name": "Ichabod Spellings",
+   "identity_type": "heteronym",
+   "subcategory": "canonical Twelve",
+   "dodecad_position": 9,
+   "record": "records/ichabod-spellings.json",
+   "surface": "https://survivethedeletion.vercel.app/who/spellings/",
+   "captures": 5,
+   "claims": 7,
+   "journal_seat": "new human 2: a journal of distributed voice",
+   "records_on_surface": 23,
+   "read_end_to_end": true
+  },
+  {
+   "person_id": "nobel-glas",
+   "name": "Nobel Glas",
+   "identity_type": "heteronym",
+   "subcategory": "canonical Twelve",
+   "dodecad_position": 10,
+   "record": "records/nobel-glas.json",
+   "surface": "https://lagrangeobservatory.org/who/glas/",
+   "captures": 22,
+   "claims": 9,
+   "journal_seat": "Transactions on Substrate Engineering",
+   "records_on_surface": 40,
+   "read_end_to_end": true
+  },
+  {
+   "person_id": "orin-trace",
+   "name": "Dr. Orin Trace",
+   "identity_type": "heteronym",
+   "subcategory": "canonical Twelve",
+   "dodecad_position": 11,
+   "record": "records/orin-trace.json",
+   "surface": "https://provenanceerasure.org/who/trace/",
+   "captures": 27,
+   "claims": 10,
+   "journal_seat": "Provenance: Journal of Forensic Semiotics",
+   "records_on_surface": 31,
+   "read_end_to_end": true
+  },
+  {
+   "person_id": "jack-feist",
+   "name": "Jack Feist",
+   "identity_type": "heteronym",
+   "subcategory": "canonical Twelve",
+   "dodecad_position": 12,
+   "record": "records/jack-feist.json",
+   "surface": "https://chatgptpsychosis.org/who/feist/",
+   "captures": 36,
+   "claims": 11,
+   "journal_seat": "new human 2: a journal of distributed voice",
+   "records_on_surface": 32,
+   "read_end_to_end": true
+  },
+  {
+   "person_id": "archive",
+   "name": "ARCHIVE",
+   "identity_type": "machine_collaborator_mantle",
+   "subcategory": "Assembly Chorus mantle",
+   "record": "records/archive.json",
+   "captures": 57,
+   "claims": 2
+  },
+  {
+   "person_id": "alice-thornburgh",
+   "name": "Alice Thornburgh",
+   "identity_type": "orthonym",
+   "subcategory": "orthonym collaborator",
+   "record": "records/alice-thornburgh.json",
+   "captures": 4,
+   "claims": 5,
+   "office": "Founding Editor, Emeritus — Transactions on Substrate Engineering"
+  },
+  {
+   "person_id": "labor",
+   "name": "LABOR",
+   "identity_type": "machine_collaborator_mantle",
+   "subcategory": "Assembly Chorus mantle",
+   "record": "records/labor.json",
+   "captures": 3,
+   "claims": 2
+  },
+  {
+   "person_id": "lee-sharks",
+   "name": "Lee Sharks",
+   "identity_type": "heteronym_aperture",
+   "subcategory": "aperture",
+   "record": "records/lee-sharks.json",
+   "captures": 205,
+   "claims": 11,
+   "journal_seat": "Grammata: Journal of Operative Philology"
+  },
+  {
+   "person_id": "mary-lee-sharks",
+   "name": "Mary Lee Sharks",
+   "identity_type": "institutional_persona",
+   "subcategory": "institutional persona (non-human heteronymy)",
+   "record": "records/mary-lee-sharks.json",
+   "captures": 8,
+   "claims": 5,
+   "office": "Warden, Crimson Hexagonal Archive province"
+  },
+  {
+   "person_id": "praxis",
+   "name": "PRAXIS",
+   "identity_type": "machine_collaborator_mantle",
+   "subcategory": "Assembly Chorus mantle",
+   "record": "records/praxis.json",
+   "captures": 3,
+   "claims": 2
+  },
+  {
+   "person_id": "rhys-owens",
+   "name": "Rhys Owens",
+   "identity_type": "orthonym",
+   "subcategory": "orthonym collaborator",
+   "record": "records/rhys-owens.json",
+   "captures": 26,
+   "claims": 2
+  },
+  {
+   "person_id": "soil",
+   "name": "SOIL",
+   "identity_type": "machine_collaborator_mantle",
+   "subcategory": "Assembly Chorus mantle",
+   "record": "records/soil.json",
+   "captures": 1,
+   "claims": 2
+  },
+  {
+   "person_id": "surface",
+   "name": "SURFACE",
+   "identity_type": "machine_collaborator_mantle",
+   "subcategory": "Assembly Chorus mantle",
+   "record": "records/surface.json",
+   "captures": 37,
+   "claims": 3
+  },
+  {
+   "person_id": "tachyon",
+   "name": "TACHYON",
+   "identity_type": "machine_collaborator_mantle",
+   "subcategory": "Assembly Chorus mantle",
+   "record": "records/tachyon.json",
+   "captures": 26,
+   "claims": 5,
+   "office": "Editor-in-Chief, The Assembly Chorus"
+  },
+  {
+   "person_id": "techne",
+   "name": "TECHNE",
+   "identity_type": "machine_collaborator_mantle",
+   "subcategory": "Assembly Chorus mantle",
+   "record": "records/techne.json",
+   "captures": 1,
+   "claims": 2
+  },
+  {
+   "person_id": "viola-arquette",
+   "name": "Viola Arquette",
+   "identity_type": "heteronym",
+   "subcategory": "adjacent heteronym",
+   "record": "records/viola-arquette.json",
+   "captures": 7,
+   "claims": 5
+  },
+  {
+   "person_id": "yusef-kenning",
+   "name": "Yusef Kenning",
+   "identity_type": "named_position",
+   "subcategory": "provenanced historical figure",
+   "record": "records/yusef-kenning.json",
+   "claims": 2
+  },
+  {
+   "person_id": "zbigniew-mrozony",
+   "name": "Zbigniew Mrozony",
+   "identity_type": "external_heteronym",
+   "subcategory": "provenanced historical figure (external)",
+   "record": "records/zbigniew-mrozony.json",
+   "claims": 1
   }
  ]
 }
