@@ -1,7 +1,7 @@
 {
  "dataset_id": "journals",
  "title": "CHA Journals — venue assignment for the whole corpus",
- "version": "1.1",
+ "version": "1.2",
  "generated": "2026-08-15",
  "license": "CC-BY-SA-4.0",
  "description": "Venue assignment for all 1,486 deposits across seven chartered journals and one province, with editorial slates, charters, locators and inaugural issues. Supersedes the 2026-06-21 preliminary mapping (#866), which assigned 864 deposits by script and placed 371 of them in a single venue.",
@@ -21,6 +21,10 @@
    "name": "issues.jsonl",
    "rows": 7,
    "what": "one row per issue: ORDERED contents with section and editor's note per item, structure, method, rationale. 2 published, 5 proposed"
+  },
+  {
+   "name": "crosswalk.json",
+   "what": "JOIN to the heteronym substrate on the CREATOR field, plus the citation graph collapsed to venue level. Carries the position x venue matrix, editor-alignment analysis, 9,992 collapsed edges, and five findings."
   }
  ],
  "distribution": {
@@ -36,5 +40,6 @@
  "canonical_store": "datasets/venues/records/*.json · datasets/venues/issues/*.json · data/registry.json · data/cha-journals.json. These JSONL files are projections.",
  "regenerate_with": "scripts/build_journals_dataset.py",
  "issues_note": "An issue is an ORDERED SELECTION WITH AN ARGUMENT. Neither the registry nor the venue records can hold that — they carry membership, not sequence, and no place for why a piece sits where it sits. Issue cards live at datasets/venues/issues/*.json, modelled on the heteronym identity cards, and are projected here.",
- "books_note": "Book-form deposits carry both PRESS and SERIES. Press follows the journal (Pergamon prints journal issues, New Human Press prints books). Series records the Pocket Humans founding volume, its sequence where assigned, and whether its apparatus exists — #49 is the only deposit carrying a series number. ISBN and ASIN are kept DISTINCT: an ISBN means the work exists as a book, an ASIN means it exists as a listing."
+ "books_note": "Book-form deposits carry both PRESS and SERIES. Press follows the journal (Pergamon prints journal issues, New Human Press prints books). Series records the Pocket Humans founding volume, its sequence where assigned, and whether its apparatus exists — #49 is the only deposit carrying a series number. ISBN and ASIN are kept DISTINCT: an ISBN means the work exists as a book, an ASIN means it exists as a listing.",
+ "interlink_note": "Attribution is by CREATOR FIELD, not by mention — the same discipline the heteronym crosswalk (#1448) uses. A position owns a deposit only if it is named as creator."
 }
