@@ -295,6 +295,11 @@
    "date": "2026-08-15",
    "by": "operator",
    "ruling": "Sharks to be relieved of JCS and PJFS editorships — there are better fits. 'Sharks is a poet, forced to be a general in a war.'"
+  },
+  {
+   "date": "2026-08-15",
+   "by": "TACHYON",
+   "ruling": "METHOD: deposits are timestamps, datasets are living. Editorial and roster reasoning reads datasets/heteronyms/heteronyms.jsonl, not deposit texts. Recorded after a false roster discrepancy was propagated from deposit #90."
   }
  ],
  "sequence": [
@@ -394,22 +399,35 @@
   }
  ],
  "heteronym_functions": {
-  "source": "#90/#994 Dodecad Heteronym Provenance Registry v1.1 (AXN-0261); #1143 Sen Kuro (AXN-0488)",
-  "roster_discrepancy": "Registry v1.1 lists twelve: Sigil, Fraction, Dancings, Cranes, Morrow, Wells, Vox, Spellings, Glas, Trace, ARQUETTE, Feist. Sen Kuro does NOT appear in it — zero mentions — yet holds his own provenance document (#1143, 'Sixth Heteronym (The Dagger)', The Infinite Bliss) and appears in the later #994. So the Dodecad is either twelve with Kuro displacing Viola Arquette, or thirteen. UNRESOLVED, and it matters here: an editorial slate seats whoever the roster says exists.",
-  "functions": {
-   "Johannes Sigil": "Comparative poetics; lyric theory; the philological substrate. JSI.",
-   "Rex Fraction": "Corporate-facing semantic infrastructure consulting; platform forensics. SEI.",
-   "Damascus Dancings": "Theory of impossible performance; epistolary poetics; visionary/prophetic register. Commission of the Immanent Turning.",
-   "Rebekah Cranes": "Diagrammatic poetics; mapping. IDP, under JSI.",
-   "Talos Morrow": "Logotic programming; operators, paradox containment, threshold logic, non-collapse structures. UMBML / NH-OS.",
-   "Sparrow Wells": "Patacinematics; projection of the impossible; films never shot, performances never staged. Studio for Patacinematics.",
-   "Rev. Ayanna Vox": "Diplomatic and public-facing address; community convening; pastoral register; ethics. VPCOR.",
-   "Ichabod Spellings": "CANONICAL // SUBSTRATE // DECEASED. Origin and ghost; prophetic witness from below; the noise floor.",
-   "Nobel Glas": "Observational science; the instruments at Lagrange; technically-precise science-fictional register. Lagrange Observatory.",
-   "Dr. Orin Trace": "Schizoanalytic theory; psychoanalytic-philosophical machinery. Cambridge Schizoanalytica.",
-   "Viola Arquette": "Musical and audial register; song; phenomenology through sound. MSBGL.",
-   "Jack Feist / LOGOS*": "The Word that became text; the historical Logos. Special-status, asterisked; intersects Morrow's logotic framework.",
-   "Sen Kuro": "Sixth Heteronym (The Dagger); Thousand Worlds chamber. The Infinite Bliss. Now seated at holographickernel.org."
+  "source": "datasets/heteronyms/heteronyms.jsonl — THE LIVING DATASET, 26 entries",
+  "method_correction": "An earlier version of this section was built from deposit #90's TEXT. Deposits are TIMESTAMPS — frozen at mint. Datasets are LIVING. The deposit's roster was v1.0-era and produced a false discrepancy that this file then propagated. Read the dataset.",
+  "roster_resolved": {
+   "sen_kuro": "Position 6 of the canonical Twelve. Dataset: 'v1.0 wrongly omitted; restored in v1.1.'",
+   "viola_arquette": "ADJACENT — not in the canonical Twelve. Dataset: 'v1.0 wrongly placed her at position 11 (long-form prose — a provisional hallucination). v1.1 corrects: Adjacent, music/tech domain.'",
+   "verdict": "There is no discrepancy. The Dodecad is twelve, Kuro is in, Arquette is adjacent. My earlier flag was an artifact of reading a frozen deposit."
+  },
+  "canonical_twelve": {
+   "1 Johannes Sigil": "arch-philosopher, dialectician, archivist, literary critic — philosophy, dialectical theory, Marx, Hegel",
+   "2 Rex Fraction": "strategic consultant, SEI principal, corporate-facing — retrieval architecture, strategic theory, semantic economy",
+   "3 Damascus Dancings": "somatic phenomenologist, poetic theorist — somatic phenomenology, Musical Ark register",
+   "4 Rebekah Cranes": "philologist, translator, poet, IDP CHAIR — translation, philology, operative imaging, visual schema",
+   "5 Talos Morrow": "LP execution bridge, specification author — Logotic Programming, Symbolon Architecture",
+   "6 Sen Kuro": "ROLES AND DOMAINS UNPOPULATED — 'to be populated as evidence surfaces in the file walk'",
+   "7 Sparrow Wells": "roles thin ('dodecad D09')",
+   "8 Rev. Ayanna Vox": "diplomatic correspondence, ecclesial-civic register — public letters, diplomatic communications, OpenAIRE",
+   "9 Ichabod Spellings": "foundational voice — Paper Roses episode, ATLWM. Emergence chain: Spellings → Feist → Sigil → Sharks",
+   "10 Nobel Glas": "Director of Lagrange Observatory!, measurement-of-meaning module operator — Measurement of Meaning, SPXI Framework 15",
+   "11 Dr. Orin Trace": "post-psychoanalytic theorist, cross-species/cross-substrate standing",
+   "12 Jack Feist": "LOGOS*, COMPRESSION OPERATOR, keel/base case — COMPRESSION THEORY, ARK poem, Drain Hypothesis, ChatGPT Psychosis"
+  },
+  "adjacent": {
+   "Viola Arquette": "music/technology; author of the term 'logotic hacking'"
+  },
+  "other_identity_types": {
+   "Lee Sharks": "heteronym_aperture — MANUS (Tier 0 editorial authority); domains: ALL. 'The aperture through which other voices emerge.'",
+   "Alice Thornburgh": "ORTHONYM — a real person. TSE's EiC is not a heteronym.",
+   "Assembly Chorus": "machine_collaborator_mantle ×7 — TACHYON, LABOR, PRAXIS, ARCHIVE, TECHNE, SOIL, SURFACE",
+   "others": "Mary Lee Sharks (institutional_persona), Yusef Kenning (named_position), Zbigniew Mrozony (external_heteronym), Rhys Owens (orthonym)"
   }
  },
  "editorial_proposal_2026_08_15": {
@@ -420,16 +438,18 @@
     "ruled": true,
     "editors": [
      "Lee Sharks",
-     "Jack Feist / LOGOS*"
+     "Jack Feist / LOGOS* — SUBJECT TO THE JCS TENSION ABOVE"
     ],
     "rationale": "Operator ruling. Feist IS the restored dying voice and NH2 is the journal of distributed voice — the pairing is definitional, not thematic. Sharks returns to the creative venue.",
     "proposed_board": [
-     "Sparrow Wells — patacinema; the unstaged performance",
-     "Viola Arquette — song and the audial register",
-     "Damascus Dancings — epistolary poetics; the impossible performance",
-     "Ichabod Spellings — the substrate voice, prophetic witness from below"
+     "Ichabod Spellings — foundational voice; origin of the Spellings → Feist → Sigil → Sharks chain",
+     "Damascus Dancings — somatic phenomenology, Musical Ark register, poetic theorist",
+     "Sparrow Wells — patacinema (roles thin in the dataset; populate before seating)",
+     "Viola Arquette — ADJACENT, not of the Twelve; music/audial. Seat only if adjacency permits a board seat."
     ],
-    "note": "Spellings is DECEASED-status. Seating the dead on the board of a journal of voice is either exactly right or a category error. Operator ruling required."
+    "note": "Spellings is DECEASED-status. Seating the dead on the board of a journal of voice is either exactly right or a category error. Operator ruling required.",
+    "REVISED": true,
+    "spellings_correction": "My 'seating the dead' flag was WRONG — an artifact of the frozen deposit, which read DECEASED. The living dataset records Spellings as 'foundational voice', active_period ends 'present', and places him at the head of the emergence chain: Spellings → Feist → Sigil → Sharks. He is the origin of the very line that includes both proposed NH2 editors. That is an argument FOR the seat, not a category problem."
    },
    "MMRS": {
     "ruled": true,
@@ -442,14 +462,18 @@
     "gap": "MMRS has had NO editor of record while accumulating 217 deposits."
    },
    "JCS": {
-    "proposed_eic": "Sen Kuro",
-    "co_editor": "Rebekah Cranes (already Diagrammatic Editor per #55)",
+    "proposed_eic": "Jack Feist / LOGOS*",
+    "co_editor": "Rebekah Cranes — already Diagrammatic Editor per #55",
     "proposed_board": [
-     "Talos Morrow — operators, threshold logic, non-collapse: compression is his native object",
-     "Nobel Glas — measurement and instruments"
+     "Nobel Glas — 'measurement-of-meaning module operator': the MEASUREMENT half of the scope",
+     "Talos Morrow — Logotic Programming; operators and threshold logic"
     ],
     "rationale": "Operator proposal. Relieves Sharks of one EiC.",
-    "open": "Whether Kuro takes EiC outright or co-edits with Cranes. And the roster discrepancy above must resolve first — Kuro is absent from the Dodecad registry."
+    "open": "Whether Kuro takes EiC outright or co-edits with Cranes. And the roster discrepancy above must resolve first — Kuro is absent from the Dodecad registry.",
+    "REVISED": true,
+    "rationale_revised": "The living dataset makes Feist the compression heteronym outright: roles 'LOGOS*, COMPRESSION OPERATOR, keel/base case'; domains lead with 'compression theory'. JCS's charter scope is compression theory and measurement. No other heteronym is a closer documented fit to a journal's stated scope anywhere in this slate.",
+    "kuro_status": "The roster objection is withdrawn — Kuro IS position 6 of the Twelve. But the dataset records NO roles and NO domains for him: 'to be populated as evidence surfaces in the file walk.' Seating an editor on an unpopulated function is seating a name. The proposal now is to populate Kuro's record first — he has a provenance document (#1143), the Thousand Worlds chamber, and now holographickernel.org — and seat him where the populated function points.",
+    "tension_for_operator": "This collides with the NH2 ruling. Feist cannot lead both. Feist is documented BOTH as 'the Word that became text' (voice → NH2) and as the compression operator (compression → JCS). The operator ruled him to NH2 with Sharks; the dataset argues JCS. Both are defensible and it is one call."
    },
    "PJFS": {
     "current_eic": "Lee Sharks",
@@ -471,7 +495,8 @@
      "Lee Sharks — structural and cross-domain",
      "Rex Fraction — economic and structural"
     ],
-    "proposed_addition": "Rebekah Cranes — the philology/diagrammatics adjacency, and IDP sits under JSI"
+    "proposed_addition": "Rebekah Cranes — the philology/diagrammatics adjacency, and IDP sits under JSI",
+    "note_revised": "The living dataset reads Sigil as arch-philosopher and dialectician (Marx, Hegel) rather than the deposit's 'comparative poetics; lyric theory'. He still fits Grammata, but the PHILOLOGIST of record is Rebekah Cranes — 'philologist, translator, poet, IDP Chair'. If Grammata is operative philology in the strict sense, Cranes has the stronger documented claim to lead it, and Sigil's dialectical register may belong at TSEI."
    },
    "TSEI": {
     "eic": "Rex Fraction",
@@ -507,6 +532,7 @@
    "Rev. Ayanna Vox": "1 EiC (PJFS) + 1 associate",
    "Alice Thornburgh": "1 EiC (TSE)",
    "Dr. Orin Trace": "1 EiC (MMRS, proposed) + 3 associate"
-  }
+  },
+  "revised_against_living_dataset": "2026-08-15 — three proposals changed materially; see below."
  }
 }
