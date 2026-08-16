@@ -71,5 +71,37 @@
  "string_status": "Ratified 2026-06-11",
  "rulings": [],
  "notes": "The venue the 2026-06-21 preliminary mapping over-assigned: 371 of 864, 41% of all assigned deposits. Re-audit is phase (c).",
- "open_questions": []
+ "open_questions": [],
+ "location": {
+  "_principle": "Linked, living, synced. Every pointer here resolves to something checkable, and each is recorded with the layer it lives in so a stale one is detectable rather than merely wrong.",
+  "charter": {
+   "deposit": 516,
+   "axn": "AXN:0153.GOVERNANCE.🔎□🔖🔒🎹🔼",
+   "record_url": "https://alexanarch.org/s/records/516/",
+   "title": "Founding Charters: The Journals of the Crimson Hexagonal Archive",
+   "_source": "data/registry.json — AXN pulled from the registry, never from memory"
+  },
+  "home_deposit": null,
+  "surface": "https://semanticeconomy.org/",
+  "doi": null,
+  "doi_status": null,
+  "resolver": {
+   "axn_resolver": "https://alexanarch.org/resolve/",
+   "doi_index": "data/doi-resolution-index.json",
+   "note": "AXN is the primary address. DOI is a legacy pointer with a known severance."
+  },
+  "oai": "https://alexanarch.org/oai?verb=GetRecord&identifier=<axn>",
+  "issn": null,
+  "openalex": null,
+  "datacite": null,
+  "sync": {
+   "gate": "scripts/check_venue_links.py",
+   "checks": [
+    "charter AXN matches the registry",
+    "record URL resolves",
+    "surface resolves when declared"
+   ],
+   "last_verified": null
+  }
+ }
 }

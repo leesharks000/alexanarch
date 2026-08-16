@@ -35,10 +35,10 @@
  },
  "charter": {
   "deposit": 1204,
-  "axn": null,
+  "axn": "AXN:04C5.UNCLASSIFIED.🔭🏙️🔃☁️⚫♆",
   "date": "2026-06-10",
   "doi": "10.5281/zenodo.19652600",
-  "title": "new human 2: a distributed journal of voice — Charter, Compiled Edition (2015)"
+  "title": "new human 2: a distributed journal of voice — Charter, Compiled Edition (2015), and Issue 1 (2026)"
  },
  "founded": "2015 (print) / charter 2026-06-10",
  "administered_by": "New Human project",
@@ -90,5 +90,37 @@
  "open_questions": [
   "The ratified string INVERTS the charter's wording: charter reads 'a distributed journal of voice', ruling reads 'a journal of distributed voice'. Charter not amended.",
   "venue_string is 'New Human 2' per the 30 existing registry values and MANUS 2026-08-04; the long canonical form has never been the stored string."
- ]
+ ],
+ "location": {
+  "_principle": "Linked, living, synced. Every pointer here resolves to something checkable, and each is recorded with the layer it lives in so a stale one is detectable rather than merely wrong.",
+  "charter": {
+   "deposit": 1204,
+   "axn": "AXN:04C5.UNCLASSIFIED.🔭🏙️🔃☁️⚫♆",
+   "record_url": "https://alexanarch.org/s/records/1204/",
+   "title": "new human 2: a distributed journal of voice — Charter, Compiled Edition (2015), and Issue 1 (2026)",
+   "_source": "data/registry.json — AXN pulled from the registry, never from memory"
+  },
+  "home_deposit": null,
+  "surface": null,
+  "doi": "10.5281/zenodo.19652600",
+  "doi_status": "severed at Zenodo 2026-06-19; resolves via the archive",
+  "resolver": {
+   "axn_resolver": "https://alexanarch.org/resolve/",
+   "doi_index": "data/doi-resolution-index.json",
+   "note": "AXN is the primary address. DOI is a legacy pointer with a known severance."
+  },
+  "oai": "https://alexanarch.org/oai?verb=GetRecord&identifier=<axn>",
+  "issn": null,
+  "openalex": null,
+  "datacite": null,
+  "sync": {
+   "gate": "scripts/check_venue_links.py",
+   "checks": [
+    "charter AXN matches the registry",
+    "record URL resolves",
+    "surface resolves when declared"
+   ],
+   "last_verified": null
+  }
+ }
 }

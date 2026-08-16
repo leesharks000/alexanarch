@@ -18,28 +18,41 @@
  "claims": {
   "what": "Practices, concepts and objects the province holds.",
   "terms": [
-   "charter",
-   "room",
+   "Ark",
+   "Assembly Chorus",
+   "Dodecad",
+   "Moltbot Swarm",
+   "Space Ark",
+   "apparatus",
    "chamber",
-   "heteronym provenance",
+   "chamber specification",
+   "charter",
    "continuity tether",
+   "f.03",
+   "field",
+   "field specification",
+   "heteronym provenance",
+   "institutional anchor",
+   "minting",
+   "navigation map of the archive",
+   "operational specification",
    "protocol",
    "registry",
+   "room",
+   "room specification",
    "specification",
+   "swarm",
    "symbolon",
-   "field",
-   "navigation map of the archive",
-   "institutional anchor",
-   "Dodecad",
-   "Assembly Chorus"
-  ]
+   "the Mint"
+  ],
+  "apparatus_study_line": "THE APPARATUS/STUDY LINE (operator, 2026-08-15). The JCS inaugural issue (#55, April 2026) predates the CHA province. Its INFRASTRUCTURE category housed the Space Ark, the Moltbot Swarm and the f.03 field because there was nowhere else to put them. Appearing in an issue is a PUBLICATION FACT, not a claim on the category. As LIVING SEMANTIC PHYSICS the apparatus belongs to the province.\n\n  CHA takes the apparatus: field and chamber and room specifications, the Ark as operating vessel, swarms, mints as operating instruments, registries, protocols — the archive's own physics, in operation.\n  JCS takes the study: compression theory, operative numismatics as a domain (the Coin, the Sharpie as semantic object), TANG, retrocausal canon formation, MPAIs and disambiguation packets as compressions, the holographic-kernel method.\n\nTest: is this the thing operating, or a study of what happens when meaning is compressed? The Pearl Mint's operational specification is apparatus. 'The Thousand Dollar Sharpie' is study."
  },
  "charter": {
   "deposit": 189,
-  "axn": "AXN:0331.GOVERNANCE",
+  "axn": "AXN:0331.GOVERNANCE.🦋🏷️🖐️🔗📚🧲",
   "date": "2026-06-11",
   "doi": null,
-  "title": "The Press Layer of the Crimson Hexagonal Archive"
+  "title": "The Press Layer of the Crimson Hexagonal Archive: Journal and Imprint Architectural Specification (EA-PRESS-ARCH-01 v1.0)"
  },
  "founded": null,
  "administered_by": "MANUS",
@@ -93,5 +106,37 @@
   }
  ],
  "notes": null,
- "open_questions": []
+ "open_questions": [],
+ "location": {
+  "_principle": "Linked, living, synced. Every pointer here resolves to something checkable, and each is recorded with the layer it lives in so a stale one is detectable rather than merely wrong.",
+  "charter": {
+   "deposit": 189,
+   "axn": "AXN:0331.GOVERNANCE.🦋🏷️🖐️🔗📚🧲",
+   "record_url": "https://alexanarch.org/s/records/189/",
+   "title": "The Press Layer of the Crimson Hexagonal Archive: Journal and Imprint Architectural Specification (EA-PRESS-ARCH-01 v1.0)",
+   "_source": "data/registry.json — AXN pulled from the registry, never from memory"
+  },
+  "home_deposit": null,
+  "surface": "https://alexanarch.org/",
+  "doi": null,
+  "doi_status": null,
+  "resolver": {
+   "axn_resolver": "https://alexanarch.org/resolve/",
+   "doi_index": "data/doi-resolution-index.json",
+   "note": "AXN is the primary address. DOI is a legacy pointer with a known severance."
+  },
+  "oai": "https://alexanarch.org/oai?verb=GetRecord&identifier=<axn>",
+  "issn": null,
+  "openalex": null,
+  "datacite": null,
+  "sync": {
+   "gate": "scripts/check_venue_links.py",
+   "checks": [
+    "charter AXN matches the registry",
+    "record URL resolves",
+    "surface resolves when declared"
+   ],
+   "last_verified": null
+  }
+ }
 }

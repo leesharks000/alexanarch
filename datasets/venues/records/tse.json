@@ -38,7 +38,7 @@
   "axn": "AXN:0200.GOVERNANCE.⚡⊗🔭🚩💜🧲",
   "date": "2026-04-12",
   "doi": "10.5281/zenodo.19545439",
-  "title": "Transactions on Substrate Engineering (TSE) — Journal Charter"
+  "title": "Transactions on Substrate Engineering (TSE) — Journal Charter (00.TSE.CHARTER)"
  },
  "founded": "2026-04-12",
  "administered_by": "Living Arkitecture Lab (LAL)",
@@ -87,5 +87,37 @@
   }
  ],
  "notes": null,
- "open_questions": []
+ "open_questions": [],
+ "location": {
+  "_principle": "Linked, living, synced. Every pointer here resolves to something checkable, and each is recorded with the layer it lives in so a stale one is detectable rather than merely wrong.",
+  "charter": {
+   "deposit": 651,
+   "axn": "AXN:0200.GOVERNANCE.⚡⊗🔭🚩💜🧲",
+   "record_url": "https://alexanarch.org/s/records/651/",
+   "title": "Transactions on Substrate Engineering (TSE) — Journal Charter (00.TSE.CHARTER)",
+   "_source": "data/registry.json — AXN pulled from the registry, never from memory"
+  },
+  "home_deposit": null,
+  "surface": null,
+  "doi": "10.5281/zenodo.19545439",
+  "doi_status": "severed at Zenodo 2026-06-19; resolves via the archive",
+  "resolver": {
+   "axn_resolver": "https://alexanarch.org/resolve/",
+   "doi_index": "data/doi-resolution-index.json",
+   "note": "AXN is the primary address. DOI is a legacy pointer with a known severance."
+  },
+  "oai": "https://alexanarch.org/oai?verb=GetRecord&identifier=<axn>",
+  "issn": null,
+  "openalex": null,
+  "datacite": null,
+  "sync": {
+   "gate": "scripts/check_venue_links.py",
+   "checks": [
+    "charter AXN matches the registry",
+    "record URL resolves",
+    "surface resolves when declared"
+   ],
+   "last_verified": null
+  }
+ }
 }

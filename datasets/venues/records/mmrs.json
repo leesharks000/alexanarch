@@ -33,10 +33,10 @@
  },
  "charter": {
   "deposit": 838,
-  "axn": null,
+  "axn": "AXN:0353.GOVERNANCE.🛤️💙🌌⭕🛸🚀",
   "date": "2026-06-16",
   "doi": null,
-  "title": "Machine-Mediated Reception Studies: Charter and Editorial Protocol"
+  "title": "Machine-Mediated Reception Studies: Charter and Editorial Protocol — A Theology of Error for a Distributed Journal (EA-SEI-MMRS-CHARTER-01 v1.3)"
  },
  "founded": "2026-06-16",
  "administered_by": "Crimson Hexagonal Archive",
@@ -91,5 +91,42 @@
   }
  ],
  "notes": null,
- "open_questions": []
+ "open_questions": [],
+ "location": {
+  "_principle": "Linked, living, synced. Every pointer here resolves to something checkable, and each is recorded with the layer it lives in so a stale one is detectable rather than merely wrong.",
+  "charter": {
+   "deposit": 838,
+   "axn": "AXN:0353.GOVERNANCE.🛤️💙🌌⭕🛸🚀",
+   "record_url": "https://alexanarch.org/s/records/838/",
+   "title": "Machine-Mediated Reception Studies: Charter and Editorial Protocol — A Theology of Error for a Distributed Journal (EA-SEI-MMRS-CHARTER-01 v1.3)",
+   "_source": "data/registry.json — AXN pulled from the registry, never from memory"
+  },
+  "home_deposit": {
+   "deposit": 1031,
+   "axn": "AXN:0413.ARCHIVAL.🌋🪐🪦✖️⏰🚪",
+   "record_url": "https://alexanarch.org/s/records/1031/",
+   "title": "machinemediation.org — Machine-Mediated Reception Studies: Journal Home, System Manifest, and Canonical Data Infrastructure Description (as recorded by DataCite)"
+  },
+  "surface": "https://machinemediation.org/",
+  "doi": null,
+  "doi_status": null,
+  "resolver": {
+   "axn_resolver": "https://alexanarch.org/resolve/",
+   "doi_index": "data/doi-resolution-index.json",
+   "note": "AXN is the primary address. DOI is a legacy pointer with a known severance."
+  },
+  "oai": "https://alexanarch.org/oai?verb=GetRecord&identifier=<axn>",
+  "issn": null,
+  "openalex": null,
+  "datacite": null,
+  "sync": {
+   "gate": "scripts/check_venue_links.py",
+   "checks": [
+    "charter AXN matches the registry",
+    "record URL resolves",
+    "surface resolves when declared"
+   ],
+   "last_verified": null
+  }
+ }
 }
