@@ -1,6 +1,6 @@
 {
- "version": "1.2",
- "generated": "2026-08-01",
+ "version": "2.0",
+ "generated": "2026-08-15",
  "authority": "MANUS ruling 2026-08-01 (CP-R3 extension): standardize across internal venues; New Human Press publishes the creative and scriptural works; Pergamon Press the academic. | MANUS ruling 2026-08-04: New Human 2 is the journal for creative works; New Human Press is the publisher for book- and collection-length creative and scriptural works (individual creative works carry journal New Human 2, whose press is New Human Press).",
  "publishers": [
   {
@@ -21,34 +21,70 @@
  ],
  "journals": [
   {
-   "canonical": "New Human 2",
+   "canonical": "new human 2: a journal of distributed voice",
    "abbrev": "New Human 2",
    "press": "new-human-press",
-   "class": "creative"
-  },
-  {
-   "canonical": "Transactions of the Semantic Economy Institute",
-   "abbrev": "Trans. SEI",
-   "press": "pergamon-press",
-   "class": "academic"
-  },
-  {
-   "canonical": "Transactions on Substrate Engineering",
-   "abbrev": "Trans. Substrate Eng.",
-   "press": "pergamon-press",
-   "class": "academic"
-  },
-  {
-   "canonical": "Journal of Compression Studies",
-   "abbrev": "Compression Studies",
-   "press": "pergamon-press",
-   "class": "academic"
+   "class": "creative",
+   "venue_id": "nh2",
+   "venue_string": "New Human 2",
+   "status": "chartered",
+   "record": "records/nh2.json",
+   "editorial_structure": "duoviri",
+   "duoviri": [
+    "Jack Feist / LOGOS*",
+    "Johannes Sigil"
+   ],
+   "offices": []
   },
   {
    "canonical": "Grammata: Journal of Operative Philology",
    "abbrev": "Grammata",
    "press": "pergamon-press",
-   "class": "academic"
+   "class": "academic",
+   "venue_id": "grammata",
+   "venue_string": "Grammata: Journal of Operative Philology",
+   "status": "chartered",
+   "record": "records/grammata.json",
+   "editorial_structure": "duoviri",
+   "duoviri": [
+    "Lee Sharks",
+    "Rebekah Cranes"
+   ],
+   "offices": []
+  },
+  {
+   "canonical": "Journal of Compression Studies",
+   "abbrev": "Compression Studies",
+   "press": "pergamon-press",
+   "class": "academic",
+   "venue_id": "jcs",
+   "venue_string": "Journal of Compression Studies",
+   "status": "chartered",
+   "record": "records/jcs.json",
+   "editorial_structure": "duoviri",
+   "duoviri": [
+    "Sen Kuro",
+    "Sparrow Wells"
+   ],
+   "offices": []
+  },
+  {
+   "canonical": "Machine-Mediated Reception Studies",
+   "abbrev": "MMRS",
+   "press": "pergamon-press",
+   "class": "academic",
+   "venue_id": "mmrs",
+   "venue_string": "Machine-Mediated Reception Studies (MMRS)",
+   "status": "chartered",
+   "record": "records/mmrs.json",
+   "editorial_structure": "duoviri",
+   "duoviri": [
+    "Damascus Dancings",
+    "The Assembly Chorus (collective mantle; EiC TACHYON)"
+   ],
+   "offices": [
+    "Editor-in-Chief of the Assembly Chorus: TACHYON"
+   ]
   },
   {
    "canonical": "Provenance: Journal of Forensic Semiotics",
@@ -57,21 +93,70 @@
    "class": "academic",
    "known_typos": [
     "Provence"
-   ]
+   ],
+   "venue_id": "pjfs",
+   "venue_string": "Provenance: Journal of Forensic Semiotics",
+   "status": "chartered",
+   "record": "records/pjfs.json",
+   "editorial_structure": "duoviri",
+   "duoviri": [
+    "Dr. Orin Trace",
+    "Rev. Ayanna Vox"
+   ],
+   "offices": []
   },
   {
-   "canonical": "Machine-Mediated Reception Studies",
-   "abbrev": "MMRS",
+   "canonical": "Transactions of the Semantic Economy Institute",
+   "abbrev": "Trans. SEI",
    "press": "pergamon-press",
    "class": "academic",
-   "distributed": true
+   "venue_id": "tsei",
+   "venue_string": "Transactions of the Semantic Economy Institute (Trans. SEI)",
+   "status": "chartered",
+   "record": "records/tsei.json",
+   "editorial_structure": "duoviri",
+   "duoviri": [
+    "Rex Fraction",
+    "Lee Sharks"
+   ],
+   "offices": []
+  },
+  {
+   "canonical": "Transactions on Substrate Engineering",
+   "abbrev": "Trans. Substrate Eng.",
+   "press": "pergamon-press",
+   "class": "academic",
+   "venue_id": "tse",
+   "venue_string": "Transactions on Substrate Engineering (Trans. Substrate Eng.)",
+   "status": "chartered",
+   "record": "records/tse.json",
+   "editorial_structure": "duoviri",
+   "duoviri": [
+    "Talos Morrow",
+    "Nobel Glas"
+   ],
+   "offices": []
   },
   {
    "canonical": "Crimson Hexagonal Archive",
    "abbrev": "CHA",
    "press": "alexanarch",
-   "class": "archive-direct"
+   "class": "province",
+   "venue_id": "cha",
+   "venue_string": "Crimson Hexagonal Archive (CHA)",
+   "status": "province",
+   "record": "records/cha.json",
+   "editorial_structure": "wardenship — a province is administered, not edited",
+   "duoviri": [],
+   "offices": [
+    "Warden: Mary Lee Sharks",
+    "Co-Warden: Talos Morrow",
+    "Operating instrument: TACHYON, under MANUS"
+   ]
   }
  ],
- "registry_convention": "journal field carries the FULL canonical journal name, with the approved abbreviation optionally appended in parentheses — e.g. 'Machine-Mediated Reception Studies (MMRS)' — per MANUS ruling 2026-08-01 (reversing the v1.0 abbreviation convention). OAI dc:source emits the field as stored. Records outside the audited range retain legacy strings until audited (repair-follows-audit)."
+ "registry_convention": "journal field carries the FULL canonical journal name, with the approved abbreviation optionally appended in parentheses — e.g. 'Machine-Mediated Reception Studies (MMRS)' — per MANUS ruling 2026-08-01 (reversing the v1.0 abbreviation convention). OAI dc:source emits the field as stored. Records outside the audited range retain legacy strings until audited (repair-follows-audit).",
+ "canonical_store": "records/*.json — THE DATA. This file is a generated projection; edit a record and run scripts/build_venues_index.py.",
+ "regenerate_with": "scripts/build_venues_index.py",
+ "schema_principle": "A field can be null, but a datum without a field ends up not existing. Records declare fields they may never fill."
 }
