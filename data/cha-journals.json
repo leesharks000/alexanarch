@@ -893,6 +893,41 @@
      "title": "Operative Semiotics: A Grundrisse — Public Research Edition v1.0 (Draf"
     }
    ]
+  },
+  {
+   "date": "2026-08-16",
+   "id": "AF-2",
+   "severity": "HIGH",
+   "title": "Operative Semiotics: Public Research Edition — the book has no deposit; #1343 claims the title and carries the Executive Summary's body",
+   "found_by": "operator, asking why the IDP did not include the Research Edition",
+   "detail": "#1343 is titled 'Operative Semiotics: A Grundrisse — Public Research Edition v1.0 (Draft)'. Its canonical text opens '# Operative Semiotics: Executive Summary / EA-OPSEM-EXEC-01 v1.0' — which is #800's work, not the Research Edition. The two bodies are near-identical (7,302 and 7,295 chars) and differ only in trailing matter. body_status reads RESTORED-20260728 v0.2-restored with residual_chars 14,793, so the restoration pulled the wrong document into the record and the count was taken from the registry rather than the file.\n\nCONSEQUENCE: the Public Research Edition — which the operator identifies as THE BOOK — has no deposit at all. The archive holds the monograph as a 27,728-char stub pointing at #950 (AF-1), the planning corpus at #950, and a Research Edition record that is really a duplicate Executive Summary. Three records for the book and none of them is the book.",
+   "compounding": "The IDP (#1488) was built to make every component of Operative Semiotics reachable from one address, and it POINTED AT #1343 as the Research Edition without opening it. An availability surface that lists a work which is not there is worse than one that omits it: it reports the gap as filled. I read titles and body_status counts, not bodies — the same failure as the Marx Room, the Combat Scholasticism versions, and the datasets tab.",
+   "also": "#1343's text carries stale Zenodo language — '~765 DOI-anchored deposits on Zenodo' and 'The canonical archive is the Zenodo community crimsonhexagonal' — from before the 2026-06-19 termination.",
+   "action": [
+    "Locate the Public Research Edition text. Not found in generated-corpus-v1 or the uploads corpus by title search; it may exist only in #950's 1.15M-char composite, or not at all outside a draft.",
+    "If it exists: deposit it properly and correct #1343, or retitle #1343 to what it actually holds.",
+    "If it does not: #1343 must not claim to be it. A record that names a work it does not carry is a false availability claim.",
+    "Either way the IDP (#1488) must be corrected — it currently asserts the Research Edition is available."
+   ],
+   "locators": [
+    {
+     "deposit": 1343,
+     "axn": "AXN:0550.UNCLASSIFIED.📏◇🔅🌊🔒♦️",
+     "record": "https://alexanarch.org/s/records/1343/"
+    },
+    {
+     "deposit": 800,
+     "record": "https://alexanarch.org/s/records/800/"
+    },
+    {
+     "deposit": 1079,
+     "record": "https://alexanarch.org/s/records/1079/"
+    },
+    {
+     "deposit": 950,
+     "record": "https://alexanarch.org/s/records/950/"
+    }
+   ]
   }
  ],
  "pocket_humans_series": {

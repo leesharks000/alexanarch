@@ -1459,7 +1459,7 @@ def regenerate_static_page(d, eidx, registry=None):
 
             f'border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 4px 6px 0" '
 
-            f'href="{f["path"]}" download>↓ {f["filename"]} ({_fmt_bytes(f["bytes"])})</a>'
+            f'href="/{f["path"].lstrip("/")}" download>↓ {f["filename"]} ({_fmt_bytes(f["bytes"])})</a>'
 
             for f in _files)
 
