@@ -1,7 +1,7 @@
 {
  "dataset_id": "journals",
  "title": "CHA Journals — venue assignment for the whole corpus",
- "version": "1.3",
+ "version": "1.4",
  "generated": "2026-08-15",
  "license": "CC-BY-SA-4.0",
  "description": "Venue assignment for all 1,486 deposits across seven chartered journals and one province, with editorial slates, charters, locators and inaugural issues. Supersedes the 2026-06-21 preliminary mapping (#866), which assigned 864 deposits by script and placed 371 of them in a single venue.",
@@ -29,6 +29,18 @@
   {
    "name": "capture-crosswalk.json",
    "what": "JOIN to the capture registry by TWO ROUTES kept separate: evidentiary (capture cited a deposit, hard/soft split) and thematic (capture hit a venue claim term). Regenerated against live v11.4."
+  },
+  {
+   "name": "venue-distribution.svg",
+   "what": "DERIVED figure — deposits per venue against the even line; province at lower opacity as a different class"
+  },
+  {
+   "name": "venue-citation-field.svg",
+   "what": "DERIVED figure — 9,992 internal citation edges collapsed to venue level; flows under 80 omitted"
+  },
+  {
+   "name": "pocket-humans-shelf.svg",
+   "what": "DERIVED figure — one row per heteronym, one block per founding volume, opacity by state, dot where apparatus exists"
   }
  ],
  "distribution": {
@@ -45,5 +57,6 @@
  "regenerate_with": "scripts/build_journals_dataset.py",
  "issues_note": "An issue is an ORDERED SELECTION WITH AN ARGUMENT. Neither the registry nor the venue records can hold that — they carry membership, not sequence, and no place for why a piece sits where it sits. Issue cards live at datasets/venues/issues/*.json, modelled on the heteronym identity cards, and are projected here.",
  "books_note": "Book-form deposits carry both PRESS and SERIES. Press follows the journal (Pergamon prints journal issues, New Human Press prints books). Series records the Pocket Humans founding volume, its sequence where assigned, and whether its apparatus exists — #49 is the only deposit carrying a series number. ISBN and ASIN are kept DISTINCT: an ISBN means the work exists as a book, an ASIN means it exists as a listing.",
- "interlink_note": "Attribution is by CREATOR FIELD, not by mention — the same discipline the heteronym crosswalk (#1448) uses. A position owns a deposit only if it is named as creator."
+ "interlink_note": "Attribution is by CREATOR FIELD, not by mention — the same discipline the heteronym crosswalk (#1448) uses. A position owns a deposit only if it is named as creator.",
+ "figures_note": "All three are derived from the corpus rather than composed from a reading of it, drawn in currentColor, with captions that state their own omissions. A change in an image means a change in the archive."
 }
