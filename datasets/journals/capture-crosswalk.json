@@ -1,0 +1,100 @@
+{
+ "schema": "venue-capture-crosswalk/v1.0",
+ "generated": "2026-08-15",
+ "registry": {
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "version": "11.4",
+  "captures": 343,
+  "decoys": [
+   "datasets/capture-registry/EA-WG-CAPTURES-01.json is a v10.0 GALLERY MANIFEST, 300 captures",
+   "data/EA-WG-CAPTURES-01-v8.11.json and -v9.6.json are frozen snapshots"
+  ]
+ },
+ "TWO_ROUTES_NOT_ONE": "A capture reaches a venue by two different paths and they must not be summed.\n  EVIDENTIARY — capture cited a DEPOSIT, and that deposit has a venue. This is a fact about what the retrieval layer surfaced. Sub-split further: HARD links resolve by AXN, DOI or series identifier; SOFT links resolve by title, keyword, description or body text. Only hard links are identification; soft links are candidate matches.\n  THEMATIC — the capture's text hit a venue's CLAIM TERMS. This is a fact about which concepts the layer connected, not about which works it cited. A venue can be thematically present in a capture that cites none of its deposits.\nAdding the two would double-count and would also mix an identification with a resemblance.",
+ "evidentiary": {
+  "route": "capture -> deposit -> venue",
+  "link_map": "data/capture-deposit-links.json",
+  "regenerated": "2026-08-15 against v11.4 — the prior map was built 2026-08-13 against v10.0/300 captures and was 43 captures stale",
+  "link_rate": 0.5977,
+  "linked": 205,
+  "unresolved": 138,
+  "hard_edges": {
+   "NH2": 19,
+   "JCS": 8,
+   "MMRS": 15,
+   "TSE": 8,
+   "TSEI": 14,
+   "CHA": 24,
+   "PJFS": 7,
+   "Grammata": 16
+  },
+  "soft_edges": {
+   "NH2": 40,
+   "PJFS": 32,
+   "CHA": 79,
+   "MMRS": 127,
+   "JCS": 37,
+   "TSEI": 35,
+   "TSE": 16,
+   "Grammata": 25
+  },
+  "hard_captures_per_venue": {
+   "NH2": 19,
+   "JCS": 7,
+   "MMRS": 15,
+   "TSE": 7,
+   "TSEI": 12,
+   "CHA": 23,
+   "PJFS": 7,
+   "Grammata": 15
+  },
+  "soft_captures_per_venue": {
+   "NH2": 28,
+   "PJFS": 28,
+   "CHA": 47,
+   "MMRS": 49,
+   "JCS": 31,
+   "TSEI": 24,
+   "TSE": 11,
+   "Grammata": 22
+  }
+ },
+ "thematic": {
+  "route": "capture -> claim term -> venue",
+  "matching": "word-boundary, many-to-many",
+  "claimed": 333,
+  "orphaned": 10,
+  "per_venue": {
+   "CHA": 185,
+   "Grammata": 215,
+   "JCS": 109,
+   "NH2": 56,
+   "MMRS": 174,
+   "PJFS": 140,
+   "TSE": 72,
+   "TSEI": 93
+  }
+ },
+ "findings": [
+  {
+   "id": "CV-1",
+   "what": "MMRS dominates the SOFT evidentiary route — 127 soft edges across 49 captures, three times any other venue — while holding only 15 hard edges. Its deposits are named in capture text far more often than they are cited by identifier. That is what a journal of reception looks like from inside the reception layer: discussed, rarely cited."
+  },
+  {
+   "id": "CV-2",
+   "what": "GRAMMATA leads the THEMATIC route at 215 captures — more than any venue — while sitting fourth on hard evidentiary links at 16. The retrieval layer connects philological concepts constantly and cites the philological deposits comparatively seldom. Concept uptake without work uptake."
+  },
+  {
+   "id": "CV-3",
+   "what": "NH2 has 19 HARD captures against 56 thematic — the highest hard-to-thematic ratio of any venue. When the layer surfaces creative work it surfaces the WORK, by identifier, rather than the theme. Poems are cited; philology is paraphrased."
+  },
+  {
+   "id": "CV-4",
+   "what": "The evidentiary route resolves 205 of 343 captures (60%) and the thematic route 333 (97%). The 40-point gap is the measure of how much reception happens without citation — the archive's own subject, measured on its own captures."
+  },
+  {
+   "id": "CV-5",
+   "what": "10 captures are claimed by NO venue. As with the heteronym orphans, these are gaps in the claims data rather than captures belonging to nobody, and they are the work queue for extending venue claim terms."
+  }
+ ]
+}

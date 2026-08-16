@@ -1,7 +1,7 @@
 {
  "dataset_id": "journals",
  "title": "CHA Journals — venue assignment for the whole corpus",
- "version": "1.2",
+ "version": "1.3",
  "generated": "2026-08-15",
  "license": "CC-BY-SA-4.0",
  "description": "Venue assignment for all 1,486 deposits across seven chartered journals and one province, with editorial slates, charters, locators and inaugural issues. Supersedes the 2026-06-21 preliminary mapping (#866), which assigned 864 deposits by script and placed 371 of them in a single venue.",
@@ -25,6 +25,10 @@
   {
    "name": "crosswalk.json",
    "what": "JOIN to the heteronym substrate on the CREATOR field, plus the citation graph collapsed to venue level. Carries the position x venue matrix, editor-alignment analysis, 9,992 collapsed edges, and five findings."
+  },
+  {
+   "name": "capture-crosswalk.json",
+   "what": "JOIN to the capture registry by TWO ROUTES kept separate: evidentiary (capture cited a deposit, hard/soft split) and thematic (capture hit a venue claim term). Regenerated against live v11.4."
   }
  ],
  "distribution": {

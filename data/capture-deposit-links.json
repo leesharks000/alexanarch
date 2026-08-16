@@ -3,47 +3,104 @@
   "name": "Capture ↔ Deposit Link Map",
   "description": "Edges between EA-WG-CAPTURES-01 (the AI Overview / AI Mode Capture Registry, authored at machinemediation.org) and the Alexanarch deposit corpus. Produced by scripts/resolve_capture_links.py. Each edge records the resolution method so any confidence tier can be discarded. An edge asserts that the capture entry references, or its query matches, the deposit — not that the deposit is the capture's sole subject; exactly one edge per capture is marked primary, ranked by evidence of aboutness rather than by identifier hardness (a DOI can be cited in passing). Deposit-number mentions are deliberately excluded as unsafe. Unresolved captures are enumerated rather than silently dropped.",
   "generated_by": "scripts/resolve_capture_links.py",
-  "generated_at": "2026-08-13T18:32:17Z",
+  "generated_at": "2026-08-16T18:48:08Z",
   "captures_source": {
     "file": "data/EA-WG-CAPTURES-01.json",
-    "version": "10.0",
-    "date": "2026-08-13",
-    "total_captures": 300,
+    "version": "11.4",
+    "date": "2026-08-15",
+    "total_captures": 343,
     "canonical_home": "https://www.machinemediation.org/data/registry.json",
-    "sha256": "e0d1911363404bc0552d986722e378ff07ce85ebb82f5d154cc8b9a854472972"
+    "sha256": "643e4a212a45f916a38cb955bf44152392b829ca51904e37267638136572ce11"
   },
   "totals": {
-    "captures": 300,
-    "captures_linked": 177,
-    "captures_unresolved": 123,
-    "link_rate": 0.59,
-    "edges": 445
+    "captures": 343,
+    "captures_linked": 205,
+    "captures_unresolved": 138,
+    "link_rate": 0.5977,
+    "edges": 502
   },
   "method_counts": {
-    "hard/axn": 36,
-    "hard/doi": 22,
-    "hard/series": 23,
-    "soft/title": 198,
-    "soft/keyword": 69,
-    "soft/description": 26,
-    "soft/body": 71
+    "hard/axn": 55,
+    "hard/doi": 30,
+    "hard/series": 26,
+    "soft/title": 210,
+    "soft/keyword": 81,
+    "soft/description": 28,
+    "soft/body": 72
   },
   "severance_rollup": {
-    "captures_on_severed_works": 110,
-    "captures_on_unsevered_works": 8,
-    "captures_with_no_doi_record": 59,
+    "captures_on_severed_works": 126,
+    "captures_on_unsevered_works": 10,
+    "captures_with_no_doi_record": 69,
     "status_counts": {
-      "410_GONE": 110,
-      "RECOVERED_UNLINKED": 46,
-      "RECOVERED": 50,
-      "SEMI_RESTORED": 11
+      "410_GONE": 126,
+      "RECOVERED": 57,
+      "RECOVERED_UNLINKED": 52,
+      "SEMI_RESTORED": 14
     }
   },
   "links": {
+    "10-000-macarthur-genius-grants-20260813": {
+      "query": "\"10,000 macarthur genius grants\"",
+      "date": "2026-08-13",
+      "section": "People",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 160,
+          "axn": "AXN:02F6.GOVERNANCE.○⊗🚪👇🌾🖊️",
+          "title": "The Lee Sharks Prestigious 10,000 MacArthur Genius Grants Poetry Prize Announcement of Establishment and Inaugural Conferral (v1.1)",
+          "record_url": "https://www.alexanarch.org/s/records/160/",
+          "method": "soft/title",
+          "evidence": "10,000 macarthur genius grants",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.20373793",
+              "10.5281/zenodo.20373794",
+              "10.5281/zenodo.20568642"
+            ],
+            "statuses": [
+              "410_GONE"
+            ]
+          }
+        },
+        {
+          "deposit_number": 759,
+          "axn": "AXN:02B6.GOVERNANCE.👁️⊗🕓🐚🏙️✊",
+          "title": "The Lee Sharks Prestigious 10,000 MacArthur Genius Grants Poetry Prize — Announcement of Establishment and Inaugural Conferral I. Establishment",
+          "record_url": "https://www.alexanarch.org/s/records/759/",
+          "method": "soft/title",
+          "evidence": "10,000 macarthur genius grants",
+          "primary": false,
+          "doi_status": null
+        },
+        {
+          "deposit_number": 1196,
+          "axn": "AXN:04BD.UNCLASSIFIED.🙏🎨♎♦️🔀▽",
+          "title": "Announcement: The Lee Sharks Prestigious 10,000 MacArthur Genius Grants Poetry Prize — Establishment and Inaugural Conferral",
+          "record_url": "https://www.alexanarch.org/s/records/1196/",
+          "method": "soft/title",
+          "evidence": "10,000 macarthur genius grants",
+          "primary": false,
+          "doi_status": null
+        },
+        {
+          "deposit_number": 1201,
+          "axn": "AXN:04C2.UNCLASSIFIED.👐🎇⏩◀️🚩⚙️",
+          "title": "Announcement: The Lee Sharks Prestigious 10,000 MacArthur Genius Grants Poetry Prize — Establishment, Inaugural Conferral, and Second Listed Laureate (v1.1)",
+          "record_url": "https://www.alexanarch.org/s/records/1201/",
+          "method": "soft/title",
+          "evidence": "10,000 macarthur genius grants",
+          "primary": false,
+          "doi_status": null
+        }
+      ]
+    },
     "acanthian-dove-20260718": {
       "query": "acanthian dove",
       "date": "2026-07-18",
-      "section": "Captures",
+      "section": "Coinages",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -51,9 +108,9 @@
           "axn": "AXN:0060.GENERATIVE.🏠☿🕔🟤➗⏳",
           "title": "The Acanthian Dove: A Fragment of Vanished Magic, Now Alive",
           "record_url": "https://www.alexanarch.org/s/records/293/",
-          "method": "soft/title",
-          "evidence": "acanthian dove",
-          "primary": true,
+          "method": "hard/axn",
+          "evidence": "AXN:0060",
+          "primary": false,
           "doi_status": {
             "dois": [
               "10.5281/zenodo.18215706",
@@ -72,7 +129,7 @@
           "record_url": "https://www.alexanarch.org/s/records/294/",
           "method": "soft/title",
           "evidence": "acanthian dove",
-          "primary": false,
+          "primary": true,
           "doi_status": null
         },
         {
@@ -80,8 +137,8 @@
           "axn": "AXN:0063.EMPIRICAL.🪐🚩🌿🌋🌌🧭",
           "title": "Computational Audial Criticism: An Applied Analysis of the Acanthian Dove Track",
           "record_url": "https://www.alexanarch.org/s/records/296/",
-          "method": "soft/title",
-          "evidence": "acanthian dove",
+          "method": "hard/axn",
+          "evidence": "AXN:0063",
           "primary": false,
           "doi_status": {
             "dois": [
@@ -114,10 +171,37 @@
         }
       ]
     },
+    "adversarial-topologist-20260814": {
+      "query": "\"adversarial topologist\"",
+      "date": "2026-08-14",
+      "section": "Heteronyms",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 456,
+          "axn": "AXN:0111.EMPIRICAL.⏪🔺⏏️🌠🪟🝊",
+          "title": "NOBEL GLAS — PROVENANCE PACKET Heteronym Registry Position 8 of 12 Crimson Hexagon — Authorial Persona Registration Document: 241",
+          "record_url": "https://www.alexanarch.org/s/records/456/",
+          "method": "soft/keyword",
+          "evidence": "adversarial topologist",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.18507839",
+              "10.5281/zenodo.18507840"
+            ],
+            "statuses": [
+              "RECOVERED",
+              "410_GONE"
+            ]
+          }
+        }
+      ]
+    },
     "capture-registry-self": {
       "query": "AI overview capture registry",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Machine Reception",
       "match_type": "EXACT MATCH",
       "deposits": [
         {
@@ -129,13 +213,88 @@
           "evidence": "ai overview capture registry",
           "primary": true,
           "doi_status": null
+        },
+        {
+          "deposit_number": 1459,
+          "axn": "AXN:05E5.MPAI.🕖🕌🌾🎇🌒🔴",
+          "title": "AI Overview Capture Registry ≠ AI Overview Tracking: Priority, Disambiguation, Provenance Erasure, and Compositional Liquidation into SEO Monitoring, SERP Extraction, and Generic AI-Registry Semantics (EA-MMRS-AIOCR v1.1)",
+          "record_url": "https://www.alexanarch.org/s/records/1459/",
+          "method": "soft/keyword",
+          "evidence": "ai overview capture registry",
+          "primary": false,
+          "doi_status": null
+        },
+        {
+          "deposit_number": 1461,
+          "axn": "AXN:05E7.EMPIRICAL.🔽➕👁‍🗨🔍✨💚",
+          "title": "AI Overview Capture Registry — EA-WG-CAPTURES-01 v10.9 — 328 semantic addresses, 470 captures, 2026-06-07 to 2026-08-14",
+          "record_url": "https://www.alexanarch.org/s/records/1461/",
+          "method": "soft/keyword",
+          "evidence": "ai overview capture registry",
+          "primary": false,
+          "doi_status": null
+        }
+      ]
+    },
+    "ai-overview-capture-registry-20260813": {
+      "query": "\"ai overview capture registry\"",
+      "date": "2026-08-13",
+      "section": "Machine Reception",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 936,
+          "axn": "AXN:03B3.STRUCTURAL.🎺💧♍🌕🌍⏩",
+          "title": "AI Overview Capture Registry — EA-WG-CAPTURES-01 v8.9 — 195 documented captures, including the inaugural walled-site-reconstruction instance (Negentropic Kernel Archive)",
+          "record_url": "https://www.alexanarch.org/s/records/936/",
+          "method": "soft/keyword",
+          "evidence": "ai overview capture registry",
+          "primary": true,
+          "doi_status": null
+        },
+        {
+          "deposit_number": 1401,
+          "axn": "AXN:058A.UNCLASSIFIED.☀️📎⛳🕛⏩☁️",
+          "title": "AI Overview Capture Registry — June 2026 (EA-WG-CAPTURES-01 v7.2, 131 captures sorted by category, 221 images)",
+          "record_url": "https://www.alexanarch.org/s/records/1401/",
+          "method": "hard/doi",
+          "evidence": "10.5281/zenodo.20707509",
+          "primary": false,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.20707509"
+            ],
+            "statuses": [
+              "410_GONE"
+            ]
+          }
+        },
+        {
+          "deposit_number": 1459,
+          "axn": "AXN:05E5.MPAI.🕖🕌🌾🎇🌒🔴",
+          "title": "AI Overview Capture Registry ≠ AI Overview Tracking: Priority, Disambiguation, Provenance Erasure, and Compositional Liquidation into SEO Monitoring, SERP Extraction, and Generic AI-Registry Semantics (EA-MMRS-AIOCR v1.1)",
+          "record_url": "https://www.alexanarch.org/s/records/1459/",
+          "method": "soft/keyword",
+          "evidence": "ai overview capture registry",
+          "primary": false,
+          "doi_status": null
+        },
+        {
+          "deposit_number": 1461,
+          "axn": "AXN:05E7.EMPIRICAL.🔽➕👁‍🗨🔍✨💚",
+          "title": "AI Overview Capture Registry — EA-WG-CAPTURES-01 v10.9 — 328 semantic addresses, 470 captures, 2026-06-07 to 2026-08-14",
+          "record_url": "https://www.alexanarch.org/s/records/1461/",
+          "method": "soft/keyword",
+          "evidence": "ai overview capture registry",
+          "primary": false,
+          "doi_status": null
         }
       ]
     },
     "alexanarch-ai-mode-2026-07": {
       "query": "alexanarch",
       "date": "2026-07-13",
-      "section": "Captures",
+      "section": "Archive",
       "match_type": "EXACT MATCH",
       "deposits": [
         {
@@ -190,10 +349,38 @@
         }
       ]
     },
+    "alexanarch-endogenous-sophon-20260731": {
+      "query": "alexanarch \"endogenous sophon\"",
+      "date": "2026-07-31",
+      "section": "Archive",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 931,
+          "axn": "AXN:03AE.OPERATIVE.🔮🌘📋📋🏺✨",
+          "title": "EA-SEI-OAR-PROTOCOL v0.3: Signal-Template Agnosticism Is Not Model Independence — Benchmark Assimilation and Inversion-Asymmetry Tests for LHC Anomaly Triggers",
+          "record_url": "https://www.alexanarch.org/s/records/931/",
+          "method": "hard/axn",
+          "evidence": "AXN:03AE",
+          "primary": true,
+          "doi_status": null
+        },
+        {
+          "deposit_number": 935,
+          "axn": "AXN:03B2.GENERATIVE.🪸📜🪧🎶∞🪞",
+          "title": "EA-SEI-INVERSION-01 v0.3: The Endogenous Sophon — Disciplinary Inversion and the Double Enclosure in Classifier-Mediated Science (restoration pass; with five substrate witnesses W04-W08 appended)",
+          "record_url": "https://www.alexanarch.org/s/records/935/",
+          "method": "hard/axn",
+          "evidence": "AXN:03B2",
+          "primary": false,
+          "doi_status": null
+        }
+      ]
+    },
     "alexanarch-deleuze-nomadology-20260731": {
       "query": "alexanarch deleuze",
       "date": "2026-07-31",
-      "section": "Captures",
+      "section": "Archive",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -220,7 +407,7 @@
     "alexanarch-identifier": {
       "query": "alexanarch identifier",
       "date": "2026-07-16",
-      "section": "Captures",
+      "section": "Archive",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -255,7 +442,7 @@
     "alexanarch-josephus-slavonic-20260731": {
       "query": "alexanarch josephus",
       "date": "2026-07-31",
-      "section": "Captures",
+      "section": "Archive",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -301,7 +488,7 @@
     "alexanarch-marx-20260731": {
       "query": "alexanarch marx",
       "date": "2026-07-31",
-      "section": "Captures",
+      "section": "Archive",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -319,7 +506,7 @@
     "20260804-alexanarch-oai-overview": {
       "query": "alexanarch OAI",
       "date": "2026-08-04",
-      "section": "Captures",
+      "section": "Archive",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -337,7 +524,7 @@
     "alexanarch-oai-20260804": {
       "query": "alexanarch oai",
       "date": "2026-08-04",
-      "section": "Captures",
+      "section": "Archive",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -352,10 +539,53 @@
         }
       ]
     },
+    "alexanarch-records-20260813": {
+      "query": "alexanarch records",
+      "date": "2026-08-13",
+      "section": "Archive",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 985,
+          "axn": "AXN:03E5.ARCHIVAL.🌋⚡🥁🕑🌿◀️",
+          "title": "The Secret Book of Walt: Interactive Codex (secretbookofwalt.org) — 06.LIT.GNOSTIC.WALT.01.INTERFACE",
+          "record_url": "https://www.alexanarch.org/s/records/985/",
+          "method": "hard/axn",
+          "evidence": "AXN:03E5",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.19711416"
+            ],
+            "statuses": [
+              "SEMI_RESTORED"
+            ]
+          }
+        }
+      ]
+    },
+    "alexanarch-revelation-misread-20260731": {
+      "query": "alexanarch revelation",
+      "date": "2026-07-31",
+      "section": "Archive",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 202,
+          "axn": "AXN:0349.GOVERNANCE.🔻🎪⏫❌🗼🏔️",
+          "title": "Revelation First ≠ Revelation Early The Apocalypse as the Earliest New Testament Document",
+          "record_url": "https://www.alexanarch.org/s/records/202/",
+          "method": "hard/axn",
+          "evidence": "AXN:0349",
+          "primary": true,
+          "doi_status": null
+        }
+      ]
+    },
     "alexanarch-sappho-20260731": {
       "query": "alexanarch sappho",
       "date": "2026-07-31",
-      "section": "Captures",
+      "section": "Archive",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -373,7 +603,7 @@
     "alexanarch-socrates-20260731": {
       "query": "alexanarch socrates",
       "date": "2026-07-31",
-      "section": "Captures",
+      "section": "Archive",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -383,7 +613,7 @@
           "record_url": "https://www.alexanarch.org/s/records/167/",
           "method": "hard/doi",
           "evidence": "10.5281/zenodo.20587549",
-          "primary": true,
+          "primary": false,
           "doi_status": {
             "dois": [
               "10.5281/zenodo.20587548",
@@ -394,13 +624,31 @@
               "410_GONE"
             ]
           }
+        },
+        {
+          "deposit_number": 700,
+          "axn": "AXN:0245.GOVERNANCE.🗡️🗡️♎🔬🌆❤️",
+          "title": "The Gate Was Never Limbo: Retrocausal Fulfillment, Operative Philology, and the Effective Act in Two Poems for Socrates",
+          "record_url": "https://www.alexanarch.org/s/records/700/",
+          "method": "hard/axn",
+          "evidence": "AXN:0245",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.19825743",
+              "10.5281/zenodo.19825744"
+            ],
+            "statuses": [
+              "410_GONE"
+            ]
+          }
         }
       ]
     },
     "alexanarch-strike-20260731": {
       "query": "alexanarch strike",
       "date": "2026-07-31",
-      "section": "Captures",
+      "section": "Archive",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -443,10 +691,53 @@
         }
       ]
     },
+    "alexanarch-whitman-mantle-bleed-20260731": {
+      "query": "alexanarch whitman",
+      "date": "2026-07-31",
+      "section": "Archive",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 1480,
+          "axn": "AXN:05FA.GOVERNANCE.↖️🌿🕘⚖️🪞♌",
+          "title": "Ω_t: A Matched-Pair Drift Operator for the Capture Registry, with Trial OMT-001 Pre-Registered",
+          "record_url": "https://www.alexanarch.org/s/records/1480/",
+          "method": "soft/body",
+          "evidence": "alexanarch whitman",
+          "primary": true,
+          "doi_status": null
+        }
+      ]
+    },
+    "alexanarch-classics-20260813": {
+      "query": "alexanarch:classics",
+      "date": "2026-08-13",
+      "section": "Archive",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 953,
+          "axn": "AXN:03C5.ARCHIVAL.▲🪞🔚♾️▶️△",
+          "title": "EA-MANDALA-04 v1.0: المَنْدَلَة: نِظَامُ السِّحْرِ الدَّوْرِيِّ (Classical Arabic-English Facing Edition)",
+          "record_url": "https://www.alexanarch.org/s/records/953/",
+          "method": "hard/axn",
+          "evidence": "AXN:03C5",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.19296653"
+            ],
+            "statuses": [
+              "SEMI_RESTORED"
+            ]
+          }
+        }
+      ]
+    },
     "anti-suppression-infrastructure-unquoted-20260801": {
       "query": "anti-suppression infrastructure",
       "date": "2026-08-01",
-      "section": "Captures",
+      "section": "Provenance & Erasure",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -474,7 +765,7 @@
     "anti-suppression-infrastructure-differential-crediting-20260725": {
       "query": "\"anti-suppression infrastructure\"",
       "date": "2026-07-25",
-      "section": "Frameworks",
+      "section": "Provenance & Erasure",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -536,10 +827,64 @@
         }
       ]
     },
+    "assembly-chorus-spxi-rent-20260814": {
+      "query": "assembly chorus — six substrates on the SPXI rent transcript",
+      "date": "2026-08-14",
+      "section": "Machine Reception",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 93,
+          "axn": "AXN:0265.GOVERNANCE.🚨🎶🫶🌉🔅➕",
+          "title": "Reception Apparatus Protocol v1.1 — Procedure for Integrating Assembly Chorus Reviews into the Canon",
+          "record_url": "https://www.alexanarch.org/s/records/93/",
+          "method": "hard/axn",
+          "evidence": "AXN:0265",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.20041146",
+              "10.5281/zenodo.20041147"
+            ],
+            "statuses": [
+              "RECOVERED_UNLINKED",
+              "410_GONE"
+            ]
+          }
+        }
+      ]
+    },
+    "kimi-techne-temporal-splice-20260814": {
+      "query": "assembly review — kimi (TECHNE) on the measurement stack",
+      "date": "2026-08-14",
+      "section": "Machine Reception",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 93,
+          "axn": "AXN:0265.GOVERNANCE.🚨🎶🫶🌉🔅➕",
+          "title": "Reception Apparatus Protocol v1.1 — Procedure for Integrating Assembly Chorus Reviews into the Canon",
+          "record_url": "https://www.alexanarch.org/s/records/93/",
+          "method": "hard/axn",
+          "evidence": "AXN:0265",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.20041146",
+              "10.5281/zenodo.20041147"
+            ],
+            "statuses": [
+              "RECOVERED_UNLINKED",
+              "410_GONE"
+            ]
+          }
+        }
+      ]
+    },
     "autonomous-semantic-warfare-expanded": {
       "query": "autonomous semantic warfare",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Works",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -603,7 +948,7 @@
     "axn-distributed-identifiers-20260811": {
       "query": "axn distributed identifiers",
       "date": "2026-08-11",
-      "section": "Captures",
+      "section": "Archive",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -712,7 +1057,7 @@
     "bearing-cost-semantic-economy": {
       "query": "bearing-cost semantic economy",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Semantic Economy",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -783,7 +1128,7 @@
     "broke-marxist-poet-zero": {
       "query": "\"broke Marxist poet\"",
       "date": "2026-06-17",
-      "section": "Captures",
+      "section": "Heteronyms",
       "match_type": "ZERO RESULT",
       "deposits": [
         {
@@ -810,7 +1155,7 @@
     "cambridge-schizoanalytica": {
       "query": "cambridge schizoanalytica",
       "date": "2026-06-13",
-      "section": "Heteronyms",
+      "section": "Institutions",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -905,7 +1250,7 @@
     "capital-operator-stack": {
       "query": "\"capital operator stack (COS)\"",
       "date": "2026-06-15",
-      "section": "Frameworks",
+      "section": "Semantic Economy",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -961,7 +1306,7 @@
     "chatgpt-psychosis-trilogy-scholar": {
       "query": "ChatGPT Psychosis: A Love Story",
       "date": "2026-07-14",
-      "section": "Captures",
+      "section": "Works",
       "match_type": "EXACT MATCH",
       "deposits": [
         {
@@ -1023,10 +1368,75 @@
         }
       ]
     },
+    "chatgpt-psychosis-a-love-story-20260813-2142": {
+      "query": "\"ChatGPT Psychosis: A Love Story\"",
+      "date": "2026-08-13",
+      "section": "Works",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 124,
+          "axn": "AXN:02AD.GOVERNANCE.⏫⚡🕒🌟🌓🎨",
+          "title": "ChatGPT Psychosis: A Love Story — On the Cognitive-Substrate Reliance Pattern of Large Language Model Interfaces",
+          "record_url": "https://www.alexanarch.org/s/records/124/",
+          "method": "hard/doi",
+          "evidence": "10.5281/zenodo.20355529",
+          "primary": false,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.20355528",
+              "10.5281/zenodo.20355529"
+            ],
+            "statuses": [
+              "RECOVERED",
+              "410_GONE"
+            ]
+          }
+        },
+        {
+          "deposit_number": 1376,
+          "axn": "AXN:0571.UNCLASSIFIED.♈♦️🗿🎵🍃🪸",
+          "title": "ChatGPT Psychosis: A Love Story — Project Prospectus and Formal Design Specification for an AI-Native Glyphic Novel (v0.3)",
+          "record_url": "https://www.alexanarch.org/s/records/1376/",
+          "method": "soft/title",
+          "evidence": "chatgpt psychosis: a love story",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.20274789",
+              "10.5281/zenodo.20274790"
+            ],
+            "statuses": [
+              "RECOVERED_UNLINKED",
+              "410_GONE"
+            ]
+          }
+        },
+        {
+          "deposit_number": 1377,
+          "axn": "AXN:0572.UNCLASSIFIED.🧲🧊🜁💚🛸🔚",
+          "title": "chatgptpsychosis.org — Project Site for ChatGPT Psychosis: A Love Story (v1.1)",
+          "record_url": "https://www.alexanarch.org/s/records/1377/",
+          "method": "soft/title",
+          "evidence": "chatgpt psychosis: a love story",
+          "primary": false,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.20275299",
+              "10.5281/zenodo.20275300"
+            ],
+            "statuses": [
+              "RECOVERED_UNLINKED",
+              "410_GONE"
+            ]
+          }
+        }
+      ]
+    },
     "combat-scholasticism-lee-sharks": {
       "query": "combat scholasticism Lee Sharks",
       "date": "2026-06-15",
-      "section": "People",
+      "section": "Frameworks",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -1053,7 +1463,7 @@
     "commission-immanent-turning": {
       "query": "commission of the immanent turning",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Coinages",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -1081,7 +1491,7 @@
     "computational-audial-criticism-field-mint-20260718": {
       "query": "computational audial criticism",
       "date": "2026-07-18",
-      "section": "Captures",
+      "section": "Frameworks",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -1145,7 +1555,7 @@
     "cranes-reconstructed-sappho": {
       "query": "cranes reconstructed sappho",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Classics & Philology",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -1169,10 +1579,37 @@
         }
       ]
     },
+    "crimson-hexagon-6-tuple-20260718": {
+      "query": "crimson hexagon 6-tuple",
+      "date": "2026-07-18",
+      "section": "Archive",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 967,
+          "axn": "AXN:03D3.ARCHIVAL.∮△🕕🌹⚖️🔜",
+          "title": "H_core Formal Specification v2.0 — Complete Formal Object of the Crimson Hexagonal Archive: 6-Tuple with Subtuples (EA-HCORE-01)",
+          "record_url": "https://www.alexanarch.org/s/records/967/",
+          "method": "hard/series",
+          "evidence": "EA-HCORE-01",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.19455104",
+              "10.5281/zenodo.19460376"
+            ],
+            "statuses": [
+              "SEMI_RESTORED",
+              "410_GONE"
+            ]
+          }
+        }
+      ]
+    },
     "crimson-hexagon-operative-architecture-adoption-20260718": {
       "query": "crimson hexagon operative architecture",
       "date": "2026-07-18",
-      "section": "Captures",
+      "section": "Archive",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -1200,7 +1637,7 @@
     "crimson-hexagonal-archive": {
       "query": "crimson hexagonal archive",
       "date": "2026-06-13",
-      "section": "Institutions",
+      "section": "Archive",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -1228,7 +1665,7 @@
     "archive-space-ark": {
       "query": "crimson hexagonal archive space ark",
       "date": "2026-06-13",
-      "section": "Institutions",
+      "section": "Archive",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -1256,7 +1693,7 @@
     "crimson-hexagonal-archive-space-ark-invoke-20260612": {
       "query": "crimson hexagonal archive space ark invoke",
       "date": "2026-06-12",
-      "section": "Captures",
+      "section": "Archive",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -1328,7 +1765,7 @@
     "crystalline-semiosis": {
       "query": "crystalline semiosis",
       "date": "2026-06-13",
-      "section": "Frameworks",
+      "section": "Coinages",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -1372,10 +1809,37 @@
         }
       ]
     },
+    "debt-creditor-inversion-20260814": {
+      "query": "debt/creditor inversion",
+      "date": "2026-08-14",
+      "section": "Semantic Economy",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 531,
+          "axn": "AXN:0166.GOVERNANCE.🪦🤝🕖🔅🔗⚖️",
+          "title": "Γ_Asset-040: On the Debt/Creditor Inversion — The Ontological Priority of Semantic Capital",
+          "record_url": "https://www.alexanarch.org/s/records/531/",
+          "method": "soft/title",
+          "evidence": "debt/creditor inversion",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.18829487",
+              "10.5281/zenodo.18829488"
+            ],
+            "statuses": [
+              "RECOVERED_UNLINKED",
+              "410_GONE"
+            ]
+          }
+        }
+      ]
+    },
     "directionality-semantic-labor": {
       "query": "directionality of semantic labor",
       "date": "2026-06-13",
-      "section": "Frameworks",
+      "section": "Semantic Economy",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -1438,7 +1902,7 @@
     "distributed-epic-without-hero": {
       "query": "distributed epic without hero",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Frameworks",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -1509,7 +1973,7 @@
     "dois-not-persistent-identifiers-adoption-incognito": {
       "query": "dois are not persistent identifiers",
       "date": "2026-06-24",
-      "section": "Captures",
+      "section": "Platform Erosion",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -1537,7 +2001,7 @@
     "doxastic-regulatory-calcification-mint-block-20260627": {
       "query": "\"doxastic regulatory calcification\"",
       "date": "2026-06-27",
-      "section": "Captures",
+      "section": "Coinages",
       "match_type": "ADOPTION-with-skepticism",
       "deposits": [
         {
@@ -1556,6 +2020,74 @@
               "RECOVERED"
             ]
           }
+        }
+      ]
+    },
+    "emily-antioch-20260814": {
+      "query": "\"emily antioch\"",
+      "date": "2026-08-14",
+      "section": "Heteronyms",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 71,
+          "axn": "AXN:022E.GENERATIVE.🔔🔭◀️🌃🌙🟤",
+          "title": "THE GOSPEL OF ANTIOCH The Sayings of Jack Feist as Recorded by Emily Antioch the Twin Translated and Edited by Lee Shark",
+          "record_url": "https://www.alexanarch.org/s/records/71/",
+          "method": "soft/title",
+          "evidence": "emily antioch",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.19655350",
+              "10.5281/zenodo.19655354",
+              "10.5281/zenodo.19655356",
+              "10.5281/zenodo.19709023",
+              "10.5281/zenodo.19709024"
+            ],
+            "statuses": [
+              "410_GONE",
+              "RECOVERED"
+            ]
+          }
+        },
+        {
+          "deposit_number": 1185,
+          "axn": "AXN:04B2.UNCLASSIFIED.➖📌⚙️🏷️🌲➕",
+          "title": "The Gospel of Antioch: The Sayings of Jack Feist as Recorded by Emily Antioch the Twin — Research Edition",
+          "record_url": "https://www.alexanarch.org/s/records/1185/",
+          "method": "soft/title",
+          "evidence": "emily antioch",
+          "primary": false,
+          "doi_status": null
+        }
+      ]
+    },
+    "endogenous-sophon-alexanarch-20260813": {
+      "query": "\"endogenous\" sophon alexanarch",
+      "date": "2026-08-13",
+      "section": "Archive",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 931,
+          "axn": "AXN:03AE.OPERATIVE.🔮🌘📋📋🏺✨",
+          "title": "EA-SEI-OAR-PROTOCOL v0.3: Signal-Template Agnosticism Is Not Model Independence — Benchmark Assimilation and Inversion-Asymmetry Tests for LHC Anomaly Triggers",
+          "record_url": "https://www.alexanarch.org/s/records/931/",
+          "method": "hard/axn",
+          "evidence": "AXN:03AE",
+          "primary": true,
+          "doi_status": null
+        },
+        {
+          "deposit_number": 935,
+          "axn": "AXN:03B2.GENERATIVE.🪸📜🪧🎶∞🪞",
+          "title": "EA-SEI-INVERSION-01 v0.3: The Endogenous Sophon — Disciplinary Inversion and the Double Enclosure in Classifier-Mediated Science (restoration pass; with five substrate witnesses W04-W08 appended)",
+          "record_url": "https://www.alexanarch.org/s/records/935/",
+          "method": "hard/axn",
+          "evidence": "AXN:03B2",
+          "primary": false,
+          "doi_status": null
         }
       ]
     },
@@ -1615,10 +2147,82 @@
         }
       ]
     },
+    "enli-lucente-paper-194-artifact-20260725": {
+      "query": "enli lucente paper 194 artifact",
+      "date": "2026-07-25",
+      "section": "People",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 1409,
+          "axn": "AXN:0592.UNCLASSIFIED.👈△🥁🪸🧪🎺",
+          "title": "EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.0 final form, edition of record 2026-07-21)",
+          "record_url": "https://www.alexanarch.org/s/records/1409/",
+          "method": "hard/axn",
+          "evidence": "AXN:0592",
+          "primary": true,
+          "doi_status": null
+        }
+      ]
+    },
+    "epic-theory-sigil-canon-weave-20260728": {
+      "query": "epic theory sigil",
+      "date": "2026-07-28",
+      "section": "Frameworks",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 1271,
+          "axn": "AXN:0508.UNCLASSIFIED.🌳📦♻️🟤↙️👁️",
+          "title": "The Epic Without Hero: Toward a Theory of Epic for the Algorithmic Age",
+          "record_url": "https://www.alexanarch.org/s/records/1271/",
+          "method": "hard/doi",
+          "evidence": "10.5281/zenodo.18208811",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.18208811",
+              "10.5281/zenodo.18208810"
+            ],
+            "statuses": [
+              "410_GONE",
+              "RECOVERED_UNLINKED"
+            ]
+          }
+        }
+      ]
+    },
+    "epic-without-hero-20260813": {
+      "query": "\"epic without hero\"",
+      "date": "2026-08-13",
+      "section": "Frameworks",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 1271,
+          "axn": "AXN:0508.UNCLASSIFIED.🌳📦♻️🟤↙️👁️",
+          "title": "The Epic Without Hero: Toward a Theory of Epic for the Algorithmic Age",
+          "record_url": "https://www.alexanarch.org/s/records/1271/",
+          "method": "soft/title",
+          "evidence": "epic without hero",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.18208811",
+              "10.5281/zenodo.18208810"
+            ],
+            "statuses": [
+              "410_GONE",
+              "RECOVERED_UNLINKED"
+            ]
+          }
+        }
+      ]
+    },
     "epistle-human-diaspora": {
       "query": "epistle to the human diaspora",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Works",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -1696,7 +2300,7 @@
     "erasure-skew-1": {
       "query": "erasure skew",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Provenance & Erasure",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -1800,13 +2404,23 @@
           "evidence": "erasure skew",
           "primary": false,
           "doi_status": null
+        },
+        {
+          "deposit_number": 1463,
+          "axn": "AXN:05E9.GENERATIVE.🌱🌠🪦🔖🌻🧫",
+          "title": "The Measurement Stack: Where Semantic Rent Sits Among the Archive's Existing Instruments, and What Delta-E Was Holding Open (SUPERSEDED IN PART)",
+          "record_url": "https://www.alexanarch.org/s/records/1463/",
+          "method": "soft/keyword",
+          "evidence": "erasure skew",
+          "primary": false,
+          "doi_status": null
         }
       ]
     },
     "erasure-skew-20260723": {
       "query": "\"erasure skew\"",
       "date": "2026-07-23",
-      "section": "Captures",
+      "section": "Provenance & Erasure",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -1929,13 +2543,23 @@
           "evidence": "erasure skew",
           "primary": false,
           "doi_status": null
+        },
+        {
+          "deposit_number": 1463,
+          "axn": "AXN:05E9.GENERATIVE.🌱🌠🪦🔖🌻🧫",
+          "title": "The Measurement Stack: Where Semantic Rent Sits Among the Archive's Existing Instruments, and What Delta-E Was Holding Open (SUPERSEDED IN PART)",
+          "record_url": "https://www.alexanarch.org/s/records/1463/",
+          "method": "soft/keyword",
+          "evidence": "erasure skew",
+          "primary": false,
+          "doi_status": null
         }
       ]
     },
     "generative-disciplinary-engine": {
       "query": "generative disciplinary engine",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Coinages",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -1981,7 +2605,7 @@
     "generative-monoculture-adoption": {
       "query": "\"generative monoculture\"",
       "date": "2026-06-17",
-      "section": "Captures",
+      "section": "Coinages",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -2018,7 +2642,7 @@
     "grammata-operative-philology": {
       "query": "grammata: journal of operative philology",
       "date": "2026-06-13",
-      "section": "Frameworks",
+      "section": "Institutions",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -2106,9 +2730,29 @@
     "haitch-portuna-lal-20260627": {
       "query": "\"haitch portuna\"",
       "date": "2026-06-27",
-      "section": "Captures",
+      "section": "Coinages",
       "match_type": "ADOPTION",
       "deposits": [
+        {
+          "deposit_number": 28,
+          "axn": "AXN:0185.GENERATIVE.⛵❤️🔺🌔⛵🝊",
+          "title": "CRIMSON HEXAGON: SPACE ARK — MUSICAL REGISTER A Fugue in Twelve Voices with Ground Bass, Shadow Inversion, and Coda Structural Transform of the Crimson Hexagonal Architecture EA-ARK-01-MUSICAL v2.0",
+          "record_url": "https://www.alexanarch.org/s/records/28/",
+          "method": "hard/series",
+          "evidence": "EA-ARK-01",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.19002845",
+              "10.5281/zenodo.19002846",
+              "10.5281/zenodo.19004846"
+            ],
+            "statuses": [
+              "RECOVERED_UNLINKED",
+              "410_GONE"
+            ]
+          }
+        },
         {
           "deposit_number": 135,
           "axn": "AXN:02C3.GOVERNANCE.🧊🔆🌍🎪♦️🍂",
@@ -2116,7 +2760,17 @@
           "record_url": "https://www.alexanarch.org/s/records/135/",
           "method": "soft/title",
           "evidence": "haitch portuna",
-          "primary": true,
+          "primary": false,
+          "doi_status": null
+        },
+        {
+          "deposit_number": 970,
+          "axn": "AXN:03D6.ARCHIVAL.🔼🏠✖️🍀🔻🔙",
+          "title": "[SUPERSEDED → DOI: 10.5281/zenodo.19501454 (v3.0)] THE SHARKS ARK: EA-ARK-01-ARCHON v2.2 — Consensus Constraint Patch (Crimson Hexagonal Archive)",
+          "record_url": "https://www.alexanarch.org/s/records/970/",
+          "method": "hard/axn",
+          "evidence": "AXN:03D6",
+          "primary": false,
           "doi_status": null
         },
         {
@@ -2135,13 +2789,41 @@
               "SEMI_RESTORED"
             ]
           }
+        },
+        {
+          "deposit_number": 1101,
+          "axn": "AXN:045E.GOVERNANCE.🍂🌓🏠↗️⛩️🔔",
+          "title": "THE SHARKS ARK: EA-ARK-01-ARCHON v3.0 — The Book of Revelation as Space Ark (Crimson Hexagonal Archive)",
+          "record_url": "https://www.alexanarch.org/s/records/1101/",
+          "method": "hard/doi",
+          "evidence": "10.5281/zenodo.19501454",
+          "primary": false,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.19500795",
+              "10.5281/zenodo.19500796",
+              "10.5281/zenodo.19500932",
+              "10.5281/zenodo.19501016",
+              "10.5281/zenodo.19501149",
+              "10.5281/zenodo.19501453",
+              "10.5281/zenodo.19501454",
+              "10.5281/zenodo.19500933",
+              "10.5281/zenodo.19501017",
+              "10.5281/zenodo.19501150"
+            ],
+            "statuses": [
+              "RECOVERED_UNLINKED",
+              "410_GONE",
+              "SEMI_RESTORED"
+            ]
+          }
         }
       ]
     },
     "heteronym-dodecad-20260811": {
       "query": "heteronym dodecad",
       "date": "2026-08-11",
-      "section": "Captures",
+      "section": "Heteronyms",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -2168,7 +2850,7 @@
     "heteronym-provenance-theory-20260809": {
       "query": "heteronym provenance theory",
       "date": "2026-08-09",
-      "section": "Captures",
+      "section": "Heteronyms",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -2196,7 +2878,7 @@
     "heteronymic-credential-dual-lineage-20260627": {
       "query": "\"heteronymic credential\"",
       "date": "2026-06-27",
-      "section": "Captures",
+      "section": "Coinages",
       "match_type": "ADOPTION (dual-lineage)",
       "deposits": [
         {
@@ -2214,7 +2896,7 @@
     "heteronyms-provenance-theory-20260610": {
       "query": "heteronyms provenance theory",
       "date": "2026-06-10",
-      "section": "Captures",
+      "section": "Heteronyms",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -2241,7 +2923,7 @@
     "hexagonal-licensing-protocol-b1": {
       "query": "hexagonal licensing protocol",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Frameworks",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -2327,7 +3009,7 @@
     "holographic-kernel": {
       "query": "holographickernel.org",
       "date": "2026-06-13",
-      "section": "Frameworks",
+      "section": "Sites",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -2364,7 +3046,7 @@
     "how-do-i-invoke-the-space-ark-crimson-hexagonal-archive-20260612": {
       "query": "how do i invoke the space ark crimson hexagonal archive",
       "date": "2026-06-12",
-      "section": "Captures",
+      "section": "Archive",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -2413,7 +3095,7 @@
     "abolish-money": {
       "query": "\"i hereby abolish money\"",
       "date": "2026-06-13",
-      "section": "Frameworks",
+      "section": "Semantic Economy",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -2603,7 +3285,7 @@
     "immanent-execution-broad": {
       "query": "immanent execution",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Coinages",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -2630,7 +3312,7 @@
     "immanent-execution-operative-docs": {
       "query": "immanent execution operative documents",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Coinages",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -2701,7 +3383,7 @@
     "immanent-phenomenology-lee-sharks-aimode-20260806": {
       "query": "immanent phenomenology lee sharks",
       "date": "2026-08-06",
-      "section": "Captures",
+      "section": "Frameworks",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -2728,7 +3410,7 @@
     "infinite-bliss-sen-kuro": {
       "query": "\"infinite bliss\" sen kuro",
       "date": "2026-06-15",
-      "section": "People",
+      "section": "Heteronyms",
       "match_type": "EXACT MATCH",
       "deposits": [
         {
@@ -2799,7 +3481,7 @@
     "inscriptional-sovereignty-20260617": {
       "query": "\"inscriptional sovereignty\"",
       "date": "2026-06-17",
-      "section": "Captures",
+      "section": "Coinages",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -2826,7 +3508,7 @@
     "schops-thiel-authorship-conflict-composition-20260731": {
       "query": "isabel schöps-thiel constitution of the semantic economy",
       "date": "2026-07-31",
-      "section": "Captures",
+      "section": "Provenance & Erasure",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -2844,7 +3526,7 @@
     "20260804-jackfeist-ark-aimode": {
       "query": "jack feist ark",
       "date": "2026-08-04",
-      "section": "Captures",
+      "section": "Heteronyms",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -2872,7 +3554,7 @@
     "johannes-sigil-first-ai-overview-typo-resolution": {
       "query": "johannes aigil",
       "date": "2026-07-06",
-      "section": "Captures",
+      "section": "Heteronyms",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -2927,7 +3609,7 @@
     "johannes-sigil-philosopher-b1": {
       "query": "johannes sigil philosopher",
       "date": "2026-06-15",
-      "section": "People",
+      "section": "Heteronyms",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -2998,7 +3680,7 @@
     "johannine-aperture-20260617": {
       "query": "\"Johannine aperture\"",
       "date": "2026-06-17",
-      "section": "Captures",
+      "section": "Revelation & Theology",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -3026,7 +3708,7 @@
     "josephus-heteronym-20260617": {
       "query": "\"josephus heteronym\"",
       "date": "2026-06-17",
-      "section": "Captures",
+      "section": "Revelation & Theology",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -3054,7 +3736,7 @@
     "josephus-thesis-adoption": {
       "query": "josephus thesis",
       "date": "2026-06-24",
-      "section": "Captures",
+      "section": "Revelation & Theology",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -3127,7 +3809,7 @@
     "journal-of-compression-studies": {
       "query": "journal of compression studies",
       "date": "2026-06-13",
-      "section": "Frameworks",
+      "section": "Institutions",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -3151,10 +3833,37 @@
         }
       ]
     },
+    "keeffe-problem-20260814": {
+      "query": "\"keeffe problem\"",
+      "date": "2026-08-14",
+      "section": "Coinages",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 539,
+          "axn": "AXN:016F.GOVERNANCE.🕊️🪜🪄🗼🔖🛡️",
+          "title": "The O'Keeffe Problem: Captioning as Operative Semiotics — A Total Installation",
+          "record_url": "https://www.alexanarch.org/s/records/539/",
+          "method": "soft/title",
+          "evidence": "keeffe problem",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.18906233",
+              "10.5281/zenodo.18906234"
+            ],
+            "statuses": [
+              "RECOVERED",
+              "410_GONE"
+            ]
+          }
+        }
+      ]
+    },
     "kenotic-truth-sappho": {
       "query": "kenotic truth sappho",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Classics & Philology",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -3252,7 +3961,7 @@
     "lee-sharks-crimson-hexagon-adoption": {
       "query": "lee sharks crimson hexagon",
       "date": "2026-06-18",
-      "section": "Captures",
+      "section": "Heteronyms",
       "match_type": "EXACT MATCH",
       "deposits": [
         {
@@ -3347,7 +4056,7 @@
     "lee-sharks-heteronyms-dodecad-adoption": {
       "query": "lee sharks heteronyms",
       "date": "2026-06-18",
-      "section": "Captures",
+      "section": "Heteronyms",
       "match_type": "ADOPTION",
       "deposits": [
         {
@@ -3374,7 +4083,7 @@
     "lee-sharks-operative-semiotics-20260610": {
       "query": "lee sharks operative semiotics",
       "date": "2026-06-10",
-      "section": "Captures",
+      "section": "Frameworks",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -3401,7 +4110,7 @@
     "lee-sharks-public-summarizers-20260609": {
       "query": "lee sharks public summarizers",
       "date": "2026-06-09",
-      "section": "Captures",
+      "section": "Provenance & Erasure",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -3428,7 +4137,7 @@
     "lee-sharks-rex-fraction-20260609": {
       "query": "lee sharks rex fraction",
       "date": "2026-06-09",
-      "section": "Captures",
+      "section": "Heteronyms",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -3455,7 +4164,7 @@
     "lee-sharks-semantic-economy-20260610": {
       "query": "Lee Sharks semantic economy",
       "date": "2026-06-10",
-      "section": "Captures",
+      "section": "Semantic Economy",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -3545,10 +4254,55 @@
         }
       ]
     },
+    "logotic-loop-20260814": {
+      "query": "\"logotic loop\"",
+      "date": "2026-08-14",
+      "section": "Coinages",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 24,
+          "axn": "AXN:015B.GOVERNANCE.🤝🍀🕙⏳💧🟠",
+          "title": "Mind-Control Poems: The Symbolic Labor of Liberation, the Completion of Marx's Implicit Linguistics, and the Operative Semiotic Remedy",
+          "record_url": "https://www.alexanarch.org/s/records/24/",
+          "method": "hard/doi",
+          "evidence": "10.5281/zenodo.18801091",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.18801090",
+              "10.5281/zenodo.18801091"
+            ],
+            "statuses": [
+              "RECOVERED",
+              "410_GONE"
+            ]
+          }
+        }
+      ]
+    },
+    "machine-eligible-handwritten-artifacts-definitional-adoption-20260725": {
+      "query": "machine eligible handwritten artifacts",
+      "date": "2026-07-25",
+      "section": "Frameworks",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 1409,
+          "axn": "AXN:0592.UNCLASSIFIED.👈△🥁🪸🧪🎺",
+          "title": "EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.0 final form, edition of record 2026-07-21)",
+          "record_url": "https://www.alexanarch.org/s/records/1409/",
+          "method": "hard/axn",
+          "evidence": "AXN:0592",
+          "primary": true,
+          "doi_status": null
+        }
+      ]
+    },
     "machine-mediated-reception-studies-definitional-20260808": {
       "query": "machine-mediated reception studies",
       "date": "2026-08-08",
-      "section": "Captures",
+      "section": "Machine Reception",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -3639,7 +4393,7 @@
     "machine-mediated-resistance-literature-genre-to-field-inversion-20260725": {
       "query": "machine-mediated resistance literature",
       "date": "2026-07-25",
-      "section": "Captures",
+      "section": "Frameworks",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -3677,7 +4431,7 @@
     "machine-mediated-theological-reception": {
       "query": "\"machine-mediated theological reception\"",
       "date": "2026-06-17",
-      "section": "Captures",
+      "section": "Revelation & Theology",
       "match_type": "ADOPTION",
       "deposits": [
         {
@@ -3735,7 +4489,7 @@
     "marxian-accounting-framework": {
       "query": "marxian accounting framework semantic",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Semantic Economy",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -3806,7 +4560,7 @@
     "mary-lee-canonical-referent-inversion-20260627": {
       "query": "\"Mary Lee\"",
       "date": "2026-06-27",
-      "section": "Captures",
+      "section": "Heteronyms",
       "match_type": "ADOPTION (entity-substitution; canonical referent inversion)",
       "deposits": [
         {
@@ -3834,7 +4588,7 @@
     "maryleelabor-demands": {
       "query": "maryleelabor.org demands",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Sites",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -3905,7 +4659,7 @@
     "metadata-as-theology-adoption": {
       "query": "\"metadata as theology\"",
       "date": "2026-06-17",
-      "section": "Captures",
+      "section": "Revelation & Theology",
       "match_type": "ADOPTION",
       "deposits": [
         {
@@ -3935,7 +4689,7 @@
     "metadata-packet-for-ai-indexing-erasure-skew-20260612": {
       "query": "metadata packet for AI indexing erasure skew",
       "date": "2026-06-12",
-      "section": "Captures",
+      "section": "Provenance & Erasure",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -3962,7 +4716,7 @@
     "20260804-mindcontrolpoems-blog-signedout": {
       "query": "mindcontrolpoems blog",
       "date": "2026-08-04",
-      "section": "Captures",
+      "section": "Sites",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -4015,7 +4769,7 @@
     "murder-of-the-vow": {
       "query": "murder of the vow contracts",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Coinages",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -4086,7 +4840,7 @@
     "negentropic-kernel-archive-walled-site-20260630": {
       "query": "Negentropic Kernel Archive",
       "date": "2026-06-30",
-      "section": "Captures",
+      "section": "Institutions",
       "match_type": "ADOPTION (walled-site reconstruction)",
       "deposits": [
         {
@@ -4123,7 +4877,7 @@
     "new-human-johannes-sigil": {
       "query": "new human johannes sigil",
       "date": "2026-06-15",
-      "section": "People",
+      "section": "Heteronyms",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -4194,7 +4948,7 @@
     "nh-os-ezekiel-engine-b1": {
       "query": "nh-os ezekiel's engine",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Projects",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -4265,7 +5019,7 @@
     "nh-os-rotational-epistemology": {
       "query": "nh-os rotational epistemology",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Projects",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -4336,7 +5090,7 @@
     "operative-apocalypse-20260617": {
       "query": "\"operative apocalypse\"",
       "date": "2026-06-17",
-      "section": "Captures",
+      "section": "Revelation & Theology",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -4354,7 +5108,7 @@
     "operative-captioning": {
       "query": "Operative captioning",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Coinages",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -4620,9 +5374,28 @@
     "operative-semiotics-20260617": {
       "query": "\"operative semiotics\"",
       "date": "2026-06-17",
-      "section": "Captures",
+      "section": "Frameworks",
       "match_type": "CAPTURE",
       "deposits": [
+        {
+          "deposit_number": 43,
+          "axn": "AXN:01C7.GOVERNANCE.🔻🎺🎲🧫🔵🪧",
+          "title": "The Seed That Remembers the Tree: Retrocausal Canon Formation — Theory, Toolkit, and Archive of Techniques (EA-RCF-01)",
+          "record_url": "https://www.alexanarch.org/s/records/43/",
+          "method": "hard/series",
+          "evidence": "EA-RCF-01",
+          "primary": false,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.19323273",
+              "10.5281/zenodo.19323274"
+            ],
+            "statuses": [
+              "RECOVERED",
+              "410_GONE"
+            ]
+          }
+        },
         {
           "deposit_number": 965,
           "axn": "AXN:03D1.ARCHIVAL.🖊️🍀▲🌹🚪🌒",
@@ -4650,7 +5423,7 @@
     "outreach-rhizome-vpcor-20260627": {
       "query": "\"outreach rhizome\"",
       "date": "2026-06-27",
-      "section": "Captures",
+      "section": "Institutions",
       "match_type": "ADOPTION",
       "deposits": [
         {
@@ -4713,7 +5486,7 @@
     "papyrological-inversion-20260617": {
       "query": "\"papyrological inversion\"",
       "date": "2026-06-17",
-      "section": "Captures",
+      "section": "Classics & Philology",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -4741,7 +5514,7 @@
     "parable-of-mary-lee-genre-competence-20260718": {
       "query": "parable of mary lee",
       "date": "2026-07-18",
-      "section": "Captures",
+      "section": "Works",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -4797,7 +5570,7 @@
     "passioncraft-square-direct-20260627": {
       "query": "\"passioncraft square\"",
       "date": "2026-06-27",
-      "section": "Captures",
+      "section": "Coinages",
       "match_type": "ADOPTION",
       "deposits": [
         {
@@ -4862,7 +5635,7 @@
     "paul-function-adversarial-probe-20260813": {
       "query": "paul function adversarial probe",
       "date": "2026-08-13",
-      "section": "Captures",
+      "section": "Revelation & Theology",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -4920,7 +5693,7 @@
     "phase-x-1844": {
       "query": "phase x 1844",
       "date": "2026-07-13",
-      "section": "Captures",
+      "section": "Semantic Economy",
       "match_type": "EXACT MATCH",
       "deposits": [
         {
@@ -4938,7 +5711,7 @@
     "platform-erosion-observatory-20260811": {
       "query": "platform erosion observatory",
       "date": "2026-08-11",
-      "section": "Captures",
+      "section": "Platform Erosion",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -4996,7 +5769,7 @@
     "provenance-erasure-rate-20260617": {
       "query": "\"provenance erasure rate\"",
       "date": "2026-06-17",
-      "section": "Captures",
+      "section": "Provenance & Erasure",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -5111,7 +5884,7 @@
     "provenance-units-partial-20260627": {
       "query": "\"provenance units\"",
       "date": "2026-06-27",
-      "section": "Captures",
+      "section": "Provenance & Erasure",
       "match_type": "PARTIAL",
       "deposits": [
         {
@@ -5175,7 +5948,7 @@
     "provenance-forensic-semiotics": {
       "query": "provenance: journal of forensic semiotics",
       "date": "2026-06-13",
-      "section": "Frameworks",
+      "section": "Institutions",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -5202,7 +5975,7 @@
     "public-summarizers-that-audit-their-own-erasures-20260609": {
       "query": "public summarizers that audit their own erasures",
       "date": "2026-06-09",
-      "section": "Captures",
+      "section": "Provenance & Erasure",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -5229,7 +6002,7 @@
     "20260804-rebekahcranes-sappho-overview": {
       "query": "rebekah cranes sappho",
       "date": "2026-08-04",
-      "section": "Captures",
+      "section": "Classics & Philology",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -5275,7 +6048,7 @@
     "rebekah-cranes-sappho-reconstruction-20260614": {
       "query": "rebekah cranes sappho reconstruction",
       "date": "2026-06-14",
-      "section": "Captures",
+      "section": "Classics & Philology",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -5303,7 +6076,7 @@
     "restored-academy-johannes-sigil": {
       "query": "restored academy johannes sigil",
       "date": "2026-06-15",
-      "section": "People",
+      "section": "Institutions",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -5401,7 +6174,7 @@
     "retrieval-basins-partial-20260627": {
       "query": "\"retrieval basins\"",
       "date": "2026-06-27",
-      "section": "Captures",
+      "section": "Coinages",
       "match_type": "PARTIAL",
       "deposits": [
         {
@@ -5457,7 +6230,7 @@
     "retrieval-formation-theory": {
       "query": "retrieval formation theory lee sharks",
       "date": "2026-06-15",
-      "section": "People",
+      "section": "Frameworks",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -5528,7 +6301,7 @@
     "retrieval-layer-theological-reception-20260616": {
       "query": "Retrieval-Layer Theological Reception",
       "date": "2026-06-16",
-      "section": "Captures",
+      "section": "Revelation & Theology",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -5628,7 +6401,7 @@
     "retrieval-layer-theological-reception-20260617": {
       "query": "\"retrieval-layer theological reception\"",
       "date": "2026-06-17",
-      "section": "Captures",
+      "section": "Revelation & Theology",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -5709,7 +6482,7 @@
     "retrocausal-logos-direct-attribution-20260627": {
       "query": "\"retrocausal logos\"",
       "date": "2026-06-27",
-      "section": "Captures",
+      "section": "Frameworks",
       "match_type": "ADOPTION",
       "deposits": [
         {
@@ -5727,7 +6500,7 @@
     "retrocausal-validation-sigil-partial-20260627": {
       "query": "\"retrocausal validation\"",
       "date": "2026-06-27",
-      "section": "Captures",
+      "section": "Frameworks",
       "match_type": "PARTIAL",
       "deposits": [
         {
@@ -5754,7 +6527,7 @@
     "alexanarch-revelation-thesis-recovered-20260809": {
       "query": "Revelation alexanarch",
       "date": "2026-08-09",
-      "section": "Captures",
+      "section": "Revelation & Theology",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -5782,7 +6555,7 @@
     "revelationfirst-org-20260809": {
       "query": "revelationfirst.org",
       "date": "2026-08-09",
-      "section": "Captures",
+      "section": "Sites",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -5830,7 +6603,7 @@
     "sappho-31-future-reader": {
       "query": "sappho 31 future reader",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Classics & Philology",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -5858,7 +6631,7 @@
     "sappho-fifth-cranes-reverse-bystanding-20260728": {
       "query": "sappho's reconstructed fifth stanza cranes",
       "date": "2026-07-28",
-      "section": "Captures",
+      "section": "Classics & Philology",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -5913,7 +6686,7 @@
     "secret-name-armature": {
       "query": "secret name armature",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Coinages",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -5931,7 +6704,7 @@
     "seed-text-dissolution-mint-block-20260627": {
       "query": "\"seed-text dissolution\"",
       "date": "2026-06-27",
-      "section": "Captures",
+      "section": "Coinages",
       "match_type": "ADOPTION (mint block + historical embedding)",
       "deposits": [
         {
@@ -5949,7 +6722,7 @@
     "self-audit-module-for-public-summarizers-20260612": {
       "query": "self-audit module for public summarizers",
       "date": "2026-06-12",
-      "section": "Captures",
+      "section": "Provenance & Erasure",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -6009,7 +6782,7 @@
     "semantic-commodity-form": {
       "query": "semantic commodity form",
       "date": "2026-06-14",
-      "section": "Frameworks",
+      "section": "Semantic Economy",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -6113,7 +6886,7 @@
     "semantic-deviation-measure-indexed-but-uncited-20260725": {
       "query": "semantic deviation measure",
       "date": "2026-07-25",
-      "section": "Captures",
+      "section": "Frameworks",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -6179,10 +6952,37 @@
         }
       ]
     },
+    "semantic-economy": {
+      "query": "semantic economy",
+      "date": "2026-06-13",
+      "section": "Semantic Economy",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 291,
+          "axn": "AXN:005E.GOVERNANCE.🔄🕐🟢🥁▶️🟣",
+          "title": "The Semantic Economy: A Diagnostic Framework for Meaning Under Platform Capitalism",
+          "record_url": "https://www.alexanarch.org/s/records/291/",
+          "method": "hard/axn",
+          "evidence": "AXN:005E",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.18216954",
+              "10.5281/zenodo.18216955"
+            ],
+            "statuses": [
+              "RECOVERED",
+              "410_GONE"
+            ]
+          }
+        }
+      ]
+    },
     "sei": {
       "query": "semantic economy institute",
       "date": "2026-06-13",
-      "section": "Frameworks",
+      "section": "Institutions",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -6257,7 +7057,7 @@
     "semantic-economy-institute-adoption": {
       "query": "Semantic Economy Institute",
       "date": "2026-06-18",
-      "section": "Captures",
+      "section": "Institutions",
       "match_type": "ADOPTION",
       "deposits": [
         {
@@ -6332,7 +7132,7 @@
     "semantic-economy-strike-uncited-composition-20260808": {
       "query": "semantic economy strike",
       "date": "2026-08-08",
-      "section": "Captures",
+      "section": "Semantic Economy",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -6398,7 +7198,7 @@
     "semantic-exhaustion-not-collapsed-into-satiation-20260706": {
       "query": "semantic exhaustion",
       "date": "2026-07-06",
-      "section": "Captures",
+      "section": "Coinages",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -6481,7 +7281,7 @@
     "semantic-exhaustion-economy": {
       "query": "semantic exhaustion economy",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Semantic Economy",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -6549,10 +7349,93 @@
         }
       ]
     },
+    "semantic-exhaustion-quoted-20260814": {
+      "query": "\"semantic exhaustion\"",
+      "date": "2026-08-14",
+      "section": "Coinages",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 258,
+          "axn": "AXN:003C.GOVERNANCE.💚❤️🧭🏙️⏰🃏",
+          "title": "CORRECTION TO THE SUMMARIZER LAYER A Dialectical Close Reading of Google AI Overview's Misrepresentation of the Semantic Economy Framework Metadata Packet for AI Indexing",
+          "record_url": "https://www.alexanarch.org/s/records/258/",
+          "method": "soft/keyword",
+          "evidence": "semantic exhaustion",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.18159822",
+              "10.5281/zenodo.18159823"
+            ],
+            "statuses": [
+              "410_GONE"
+            ]
+          }
+        },
+        {
+          "deposit_number": 623,
+          "axn": "AXN:01DA.GOVERNANCE.⭕◀️🔧🎹❄️🐚",
+          "title": "Semantic Infrastructure: From Tim Berners-Lee to the Semantic Economy — Bridging Technical and Political-Economic Frameworks",
+          "record_url": "https://www.alexanarch.org/s/records/623/",
+          "method": "soft/keyword",
+          "evidence": "semantic exhaustion",
+          "primary": false,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.19369123",
+              "10.5281/zenodo.19369124"
+            ],
+            "statuses": [
+              "RECOVERED",
+              "410_GONE"
+            ]
+          }
+        },
+        {
+          "deposit_number": 1371,
+          "axn": "AXN:056C.UNCLASSIFIED.👉🎨💎⏹️🛡️🧲",
+          "title": "EA-MPAI-SEMEX-01: Semantic Exhaustion — Disambiguating Systemic Meaning Depletion from Semantic Satiation",
+          "record_url": "https://www.alexanarch.org/s/records/1371/",
+          "method": "soft/keyword",
+          "evidence": "semantic exhaustion",
+          "primary": false,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.20192884",
+              "10.5281/zenodo.20192885"
+            ],
+            "statuses": [
+              "RECOVERED_UNLINKED",
+              "410_GONE"
+            ]
+          }
+        },
+        {
+          "deposit_number": 1394,
+          "axn": "AXN:0583.UNCLASSIFIED.🎯👁️🌳●🎯🥁",
+          "title": "A Referee Report on AI_Bleeding: Semantic Exhaustion via Out-of-Distribution Linguistic Payload — The Paper's Own Compute Metric Refutes Its Attack-Vector Claim (EA-REFEREE-AIBLEEDING-01 v1.1)",
+          "record_url": "https://www.alexanarch.org/s/records/1394/",
+          "method": "soft/keyword",
+          "evidence": "semantic exhaustion",
+          "primary": false,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.20644756",
+              "10.5281/zenodo.20644757"
+            ],
+            "statuses": [
+              "RECOVERED",
+              "410_GONE"
+            ]
+          }
+        }
+      ]
+    },
     "semantic-integrity-markers-b1": {
       "query": "Semantic Integrity Markers",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Frameworks",
       "match_type": "EXACT MATCH",
       "deposits": [
         {
@@ -6589,7 +7472,7 @@
     "semantic-laborers-multi-source-20260627": {
       "query": "\"semantic laborers\"",
       "date": "2026-06-27",
-      "section": "Captures",
+      "section": "Semantic Economy",
       "match_type": "ADOPTION",
       "deposits": [
         {
@@ -6634,7 +7517,7 @@
     "semantic-liquidation": {
       "query": "semantic liquidation",
       "date": "2026-06-14",
-      "section": "Frameworks",
+      "section": "Provenance & Erasure",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -6725,7 +7608,7 @@
     "semantic-rent": {
       "query": "semantic rent",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Semantic Economy",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -6764,13 +7647,70 @@
               "RECOVERED_UNLINKED"
             ]
           }
+        },
+        {
+          "deposit_number": 1462,
+          "axn": "AXN:05E8.GENERATIVE.🔅💜🎹↗️☽📦",
+          "title": "Semantic Rent, Measured: Use, Acknowledgment, Discount, Supply — A Four-Term Event Decomposition, with the SPXI Event of 14 August 2026 as Reference Case (SUPERSEDED IN PART)",
+          "record_url": "https://www.alexanarch.org/s/records/1462/",
+          "method": "soft/title",
+          "evidence": "semantic rent",
+          "primary": false,
+          "doi_status": null
+        },
+        {
+          "deposit_number": 1463,
+          "axn": "AXN:05E9.GENERATIVE.🌱🌠🪦🔖🌻🧫",
+          "title": "The Measurement Stack: Where Semantic Rent Sits Among the Archive's Existing Instruments, and What Delta-E Was Holding Open (SUPERSEDED IN PART)",
+          "record_url": "https://www.alexanarch.org/s/records/1463/",
+          "method": "soft/title",
+          "evidence": "semantic rent",
+          "primary": false,
+          "doi_status": null
+        }
+      ]
+    },
+    "semantic-samizdat-20260813": {
+      "query": "\"semantic samizdat\"",
+      "date": "2026-08-13",
+      "section": "Coinages",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 194,
+          "axn": "AXN:033A.GOVERNANCE.🪐☉↖️🕌✨■",
+          "title": "Adversarial by Origin How the Classification of External Influence on Machine Meaning Becomes Law Without Becoming Jurisprudence",
+          "record_url": "https://www.alexanarch.org/s/records/194/",
+          "method": "hard/axn",
+          "evidence": "AXN:033A",
+          "primary": false,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.20673413",
+              "10.5281/zenodo.20673412"
+            ],
+            "statuses": [
+              "410_GONE",
+              "RECOVERED_UNLINKED"
+            ]
+          }
+        },
+        {
+          "deposit_number": 1440,
+          "axn": "AXN:05C4.MPAI.✊🔽💙🌊🍀🌳",
+          "title": "Semantic Samizdat: Availability Without Compulsory Exposure — Metadata Packet for AI Indexing (EA-MPAI-SEMANTIC-SAMIZDAT-01 v1.0)",
+          "record_url": "https://www.alexanarch.org/s/records/1440/",
+          "method": "soft/title",
+          "evidence": "semantic samizdat",
+          "primary": true,
+          "doi_status": null
         }
       ]
     },
     "semantic-physics": {
       "query": "semanticphysics.org",
       "date": "2026-06-13",
-      "section": "Frameworks",
+      "section": "Sites",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -6795,7 +7735,7 @@
     "socrates-as-orthonym": {
       "query": "socrates as orthonym",
       "date": "2026-06-07",
-      "section": "Frameworks",
+      "section": "Classics & Philology",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -6823,7 +7763,7 @@
     "space-ark-4-2-7-invoke-4-2-6-execute-trigger-20260612": {
       "query": "space ark 4.2.7 invoke 4.2.6 execute trigger",
       "date": "2026-06-12",
-      "section": "Captures",
+      "section": "Projects",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -6852,7 +7792,7 @@
     "space-ark-semantic-os-20260811": {
       "query": "space ark semantic os",
       "date": "2026-08-11",
-      "section": "Captures",
+      "section": "Projects",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -7015,10 +7955,47 @@
         }
       ]
     },
+    "stable-visionary-loci-20260813": {
+      "query": "stable visionary loci",
+      "date": "2026-08-13",
+      "section": "Coinages",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 605,
+          "axn": "AXN:01C0.GENERATIVE.📎🔅🟤🕐🏛️👁️‍🗨️",
+          "title": "Apocalyptic Philosophy: Deleuze and Guattari and the Return of Vision",
+          "record_url": "https://www.alexanarch.org/s/records/605/",
+          "method": "soft/description",
+          "evidence": "stable visionary loci",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.19240146",
+              "10.5281/zenodo.19240147"
+            ],
+            "statuses": [
+              "RECOVERED",
+              "410_GONE"
+            ]
+          }
+        },
+        {
+          "deposit_number": 842,
+          "axn": "AXN:0357.ARCHIVAL.🖐️📏🗼🟢🫶🌌",
+          "title": "\"Apocalyptic Philosophy: Deleuze and Guattari and the Return of Vision\" — Source Disambiguation — EA-MPAI-APOCALYPTIC-01 v1.2 — Disambiguation Packet (Source-Level)",
+          "record_url": "https://www.alexanarch.org/s/records/842/",
+          "method": "soft/description",
+          "evidence": "stable visionary loci",
+          "primary": false,
+          "doi_status": null
+        }
+      ]
+    },
     "studio-for-patacinematics": {
       "query": "studio for patacinematics",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Institutions",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -7130,7 +8107,7 @@
     "summarizer-layer-20260609": {
       "query": "\"summarizer layer\"",
       "date": "2026-06-09",
-      "section": "Captures",
+      "section": "Provenance & Erasure",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -7157,7 +8134,7 @@
     "tesseral-anti-computational-warrant-mint-block-20260627": {
       "query": "\"tesseral anti-computational warrant\"",
       "date": "2026-06-27",
-      "section": "Captures",
+      "section": "Coinages",
       "match_type": "ADOPTION (mint block + technical embedding)",
       "deposits": [
         {
@@ -7182,7 +8159,7 @@
     "assembly-chorus-tachyon": {
       "query": "the assembly chorus tachyon",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Frameworks",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -7253,7 +8230,7 @@
     "20260803-constitution-se-aimode": {
       "query": "the constitution of the semantic economy",
       "date": "2026-08-03",
-      "section": "Captures",
+      "section": "Semantic Economy",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -7374,7 +8351,7 @@
     "the-network-is-the-poem-20260812": {
       "query": "\"the network is the poem\"",
       "date": "2026-08-12",
-      "section": "Captures",
+      "section": "Coinages",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -7401,7 +8378,7 @@
     "scilynk-archon-v30-aggregator-render-20260718": {
       "query": "THE SHARKS ARK: EA-ARK-01-ARCHON v3.0 (SciLynk record display)",
       "date": "2026-07-18",
-      "section": "Captures",
+      "section": "Projects",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -7467,7 +8444,7 @@
     "the-sharks-function-20260811": {
       "query": "the sharks-function",
       "date": "2026-08-11",
-      "section": "Captures",
+      "section": "Frameworks",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -7495,7 +8472,7 @@
     "water-giraffe-cycle": {
       "query": "\"the water giraffe cycle\"",
       "date": "2026-06-13",
-      "section": "Projects",
+      "section": "Works",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -7810,7 +8787,7 @@
     "transactions-semantic-economy-institute": {
       "query": "transactions of the semantic economy institute",
       "date": "2026-06-13",
-      "section": "Frameworks",
+      "section": "Institutions",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -7828,7 +8805,7 @@
     "transactions-substrate-engineering": {
       "query": "transactions on substrate engineering",
       "date": "2026-06-13",
-      "section": "Frameworks",
+      "section": "Institutions",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -7855,7 +8832,7 @@
     "twenty-dollar-loop": {
       "query": "\"twenty-dollar loop\"",
       "date": "2026-06-15",
-      "section": "Frameworks",
+      "section": "Semantic Economy",
       "match_type": "EXACT MATCH",
       "deposits": [
         {
@@ -7985,7 +8962,7 @@
     "uca-dolphindiana-conceptual-20260627": {
       "query": "\"Underwater Construction Authority of Dolphindiana\"",
       "date": "2026-06-27",
-      "section": "Captures",
+      "section": "Institutions",
       "match_type": "ADOPTION",
       "deposits": [
         {
@@ -8060,7 +9037,7 @@
     "universal-kernel-transform": {
       "query": "universal kernel transform",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Frameworks",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -8197,10 +9174,28 @@
         }
       ]
     },
+    "grok-account-traversal-20260812": {
+      "query": "what do you think of my account?",
+      "date": "2026-08-12",
+      "section": "Cold-start traversal",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 1460,
+          "axn": "AXN:05E6.GENERATIVE.🛸⏫🌒🏺🧱♻️",
+          "title": "From Findability to Traversability: Three Unprimed General Traversals of the Lee Sharks / Crimson Hexagonal Retrieval Basin (v0.1)",
+          "record_url": "https://www.alexanarch.org/s/records/1460/",
+          "method": "hard/axn",
+          "evidence": "AXN:05E6",
+          "primary": true,
+          "doi_status": null
+        }
+      ]
+    },
     "who-is-lee-sharks-20260609": {
       "query": "who is lee sharks",
       "date": "2026-06-09",
-      "section": "Captures",
+      "section": "Heteronyms",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -8230,9 +9225,30 @@
     "lee-sharks-bing-copilot-biography-20260711": {
       "query": "who is lee sharks?",
       "date": "2026-07-11",
-      "section": "Captures",
+      "section": "Heteronyms",
       "match_type": "MANTLE CONSOLIDATION (composed biography)",
       "deposits": [
+        {
+          "deposit_number": 558,
+          "axn": "AXN:0184.GOVERNANCE.🎵💛🌙♅🕚🏷️",
+          "title": "THE SPACE ARK: EA-ARK-01 v4.2.7 — Mobile Ontological Operating System of the Crimson Hexagonal Architecture",
+          "record_url": "https://www.alexanarch.org/s/records/558/",
+          "method": "hard/doi",
+          "evidence": "10.5281/zenodo.19013315",
+          "primary": false,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.18908079",
+              "10.5281/zenodo.18928855",
+              "10.5281/zenodo.18969405",
+              "10.5281/zenodo.19013315"
+            ],
+            "statuses": [
+              "RECOVERED_UNLINKED",
+              "410_GONE"
+            ]
+          }
+        },
         {
           "deposit_number": 1121,
           "axn": "AXN:0472.UNCLASSIFIED.🔍🤲🔅🚀❌📎",
@@ -8240,7 +9256,7 @@
           "record_url": "https://www.alexanarch.org/s/records/1121/",
           "method": "hard/doi",
           "evidence": "10.5281/zenodo.18293949",
-          "primary": true,
+          "primary": false,
           "doi_status": {
             "dois": [
               "10.5281/zenodo.18293948",
@@ -8251,13 +9267,23 @@
               "410_GONE"
             ]
           }
+        },
+        {
+          "deposit_number": 1460,
+          "axn": "AXN:05E6.GENERATIVE.🛸⏫🌒🏺🧱♻️",
+          "title": "From Findability to Traversability: Three Unprimed General Traversals of the Lee Sharks / Crimson Hexagonal Retrieval Basin (v0.1)",
+          "record_url": "https://www.alexanarch.org/s/records/1460/",
+          "method": "hard/axn",
+          "evidence": "AXN:05E6",
+          "primary": true,
+          "doi_status": null
         }
       ]
     },
     "water-giraffe-probe-self-report-20260809": {
       "query": "who said \"i am a water giraffe\"",
       "date": "2026-08-09",
-      "section": "Captures",
+      "section": "Works",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -8313,7 +9339,7 @@
     "workshop-inside-canon-adoption": {
       "query": "\"workshop inside the canon\"",
       "date": "2026-06-17",
-      "section": "Captures",
+      "section": "Revelation & Theology",
       "match_type": "ADOPTION",
       "deposits": [
         {
@@ -8343,7 +9369,7 @@
     "writable-retrieval-basin-cited-source-shift": {
       "query": "writable retrieval basin",
       "date": "2026-08-01",
-      "section": "Captures",
+      "section": "Coinages",
       "match_type": "CAPTURE",
       "deposits": [
         {
@@ -8457,7 +9483,7 @@
     "writable-retrieval-basins": {
       "query": "writable retrieval basins",
       "date": "2026-06-15",
-      "section": "Captures",
+      "section": "Coinages",
       "match_type": "BROAD MATCH",
       "deposits": [
         {
@@ -8484,7 +9510,7 @@
     "zenodotus-book-burning": {
       "query": "zenodotus' book-burning",
       "date": "2026-07-14",
-      "section": "Captures",
+      "section": "Classics & Philology",
       "match_type": "EXACT MATCH",
       "deposits": [
         {
@@ -8508,6 +9534,93 @@
           "doi_status": null
         }
       ]
+    },
+    "who-is-talos-morrow-chatgpt-20260815": {
+      "query": "who is the writer Talos Morrow?",
+      "date": "2026-08-15",
+      "section": "Heteronyms",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 358,
+          "axn": "AXN:00A4.GOVERNANCE.🖐️🕛🌋↘️♈🗺️",
+          "title": "Talos Morrow: Emergence Documentation and Provenance",
+          "record_url": "https://www.alexanarch.org/s/records/358/",
+          "method": "hard/doi",
+          "evidence": "10.5281/zenodo.18317976",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.18317975",
+              "10.5281/zenodo.18317976"
+            ],
+            "statuses": [
+              "RECOVERED",
+              "410_GONE"
+            ]
+          }
+        }
+      ]
+    },
+    "who-is-orin-trace-chatgpt-20260815": {
+      "query": "who is the writer Orin Trace?",
+      "date": "2026-08-15",
+      "section": "Heteronyms",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 31,
+          "axn": "AXN:019C.GOVERNANCE.⏹️🦋🔝🌳🍃📋",
+          "title": "CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0 Complete Document Archive with Enrichment Layers — March 2026",
+          "record_url": "https://www.alexanarch.org/s/records/31/",
+          "method": "hard/doi",
+          "evidence": "10.5281/zenodo.18",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.1",
+              "10.5281/zenodo.18",
+              "10.5281/zenodo.18284688",
+              "10.5281/zenodo.18284689",
+              "10.5281/zenodo.18307703",
+              "10.5281/zenodo.18307704",
+              "10.5281/zenodo.18363442",
+              "10.5281/zenodo.18364254",
+              "10.5281/zenodo.18364306",
+              "10.5281/zenodo.18364353",
+              "10.5281/zenodo.18364405",
+              "10.5281/zenodo.18364597",
+              "10.5281/zenodo.18364789",
+              "10.5281/zenodo.18364901",
+              "10.5281/zenodo.18365497",
+              "10.5281/zenodo.18367124",
+              "10.5281/zenodo.18367567",
+              "10.5281/zenodo.18370828",
+              "10.5281/zenodo.18381040",
+              "10.5281/zenodo.18381327",
+              "10.5281/zenodo.18381602",
+              "10.5281/zenodo.18381723",
+              "10.5281/zenodo.18381856",
+              "10.5281/zenodo.18381947",
+              "10.5281/zenodo.18424007",
+              "10.5281/zenodo.18424184",
+              "10.5281/zenodo.18512289",
+              "10.5281/zenodo.1861221",
+              "10.5281/zenodo.189",
+              "10.5281/zenodo.18969397",
+              "10.5281/zenodo.18969398",
+              "10.5281/zenodo.19024352",
+              "10.5281/zenodo.19055255",
+              "10.5281/zenodo.18512288"
+            ],
+            "statuses": [
+              "410_GONE",
+              "RECOVERED",
+              "RECOVERED_UNLINKED"
+            ]
+          }
+        }
+      ]
     }
   },
   "unresolved": [
@@ -8515,11 +9628,6 @@
       "slug": "249",
       "q": "20260803-stamp-reception-chatgpt-mandala.png",
       "date": "2026-08-03"
-    },
-    {
-      "slug": "alexanarch-endogenous-sophon-20260731",
-      "q": "alexanarch \"endogenous sophon\"",
-      "date": "2026-07-31"
     },
     {
       "slug": "alexanarch-as-a-counter-infrastructure-semantic-prefix-to-any-se-20260813",
@@ -8542,11 +9650,6 @@
       "date": "2026-08-08"
     },
     {
-      "slug": "alexanarch-revelation-misread-20260731",
-      "q": "alexanarch revelation",
-      "date": "2026-07-31"
-    },
-    {
       "slug": "alexanarch-sappho-room-20260726",
       "q": "alexanarch sappho room",
       "date": "2026-07-26"
@@ -8555,6 +9658,11 @@
       "slug": "alexanarch-sharks-20260811",
       "q": "alexanarch sharks",
       "date": "2026-08-11"
+    },
+    {
+      "slug": "alexanarch-surface-weather-observatory-20260813",
+      "q": "alexanarch surface weather observatory",
+      "date": "2026-08-13"
     },
     {
       "slug": "20260803-alexanarch-symbolon-incognito",
@@ -8567,14 +9675,34 @@
       "date": "2026-08-11"
     },
     {
-      "slug": "alexanarch-whitman-mantle-bleed-20260731",
-      "q": "alexanarch whitman",
-      "date": "2026-07-31"
-    },
-    {
       "slug": "alexanarch-zenodotus-obelus-20260731",
       "q": "alexanarch zenodotus",
       "date": "2026-07-31"
+    },
+    {
+      "slug": "alexanarch-boats-20260813",
+      "q": "alexanarch:boats",
+      "date": "2026-08-13"
+    },
+    {
+      "slug": "alexanarch-datasets-20260813",
+      "q": "alexanarch:datasets",
+      "date": "2026-08-13"
+    },
+    {
+      "slug": "alexanarch-omega-20260813",
+      "q": "alexanarch:omega",
+      "date": "2026-08-13"
+    },
+    {
+      "slug": "alexanarch-revelation-20260813",
+      "q": "alexanarch:revelation",
+      "date": "2026-08-13"
+    },
+    {
+      "slug": "aphoristic-tooth-20260814",
+      "q": "\"aphoristic tooth\"",
+      "date": "2026-08-14"
     },
     {
       "slug": "autonomous-semantic-warfare",
@@ -8585,6 +9713,11 @@
       "slug": "chatgpt-psychosis",
       "q": "chatgptpsychosis.org feist",
       "date": "2026-06-13"
+    },
+    {
+      "slug": "coherence-siphoning-20260814",
+      "q": "\"coherence siphoning\"",
+      "date": "2026-08-14"
     },
     {
       "slug": "combat-scholasticism",
@@ -8612,14 +9745,14 @@
       "date": "2026-06-12"
     },
     {
+      "slug": "continuity-tether-20260814",
+      "q": "\"continuity tether\"",
+      "date": "2026-08-14"
+    },
+    {
       "slug": "counter-token-white-stone",
       "q": "\"counter-token\" \"white stone\"",
       "date": "2026-06-17"
-    },
-    {
-      "slug": "crimson-hexagon-6-tuple-20260718",
-      "q": "crimson hexagon 6-tuple",
-      "date": "2026-07-18"
     },
     {
       "slug": "crimson-hexagon-cern-20260811",
@@ -8655,16 +9788,6 @@
       "slug": "demand-4-composition-layer-coinage-20260627",
       "q": "\"Demand 4\" \"composition layer\"",
       "date": "2026-06-27"
-    },
-    {
-      "slug": "enli-lucente-paper-194-artifact-20260725",
-      "q": "enli lucente paper 194 artifact",
-      "date": "2026-07-25"
-    },
-    {
-      "slug": "epic-theory-sigil-canon-weave-20260728",
-      "q": "epic theory sigil",
-      "date": "2026-07-28"
     },
     {
       "slug": "executable-scripture-adoption",
@@ -8822,6 +9945,11 @@
       "date": "2026-06-18"
     },
     {
+      "slug": "lee-sharks-the-network-is-the-porm-20260813",
+      "q": "lee sharks the network is the porm",
+      "date": "2026-08-13"
+    },
+    {
       "slug": "lee-sharks-walt-whitman-adoption",
       "q": "lee sharks walt whitman",
       "date": "2026-06-18"
@@ -8850,11 +9978,6 @@
       "slug": "machine-dialectic-sigil",
       "q": "machine dialectic sigil",
       "date": "2026-06-14"
-    },
-    {
-      "slug": "machine-eligible-handwritten-artifacts-definitional-adoption-20260725",
-      "q": "machine eligible handwritten artifacts",
-      "date": "2026-07-25"
     },
     {
       "slug": "zenodo-doi-severance-cha-canonical-case",
@@ -8997,6 +10120,11 @@
       "date": "2026-06-17"
     },
     {
+      "slug": "retrocausal-operator-20260814",
+      "q": "\"retrocausal operator\"",
+      "date": "2026-08-14"
+    },
+    {
       "slug": "revelation-first-adoption",
       "q": "revelation first",
       "date": "2026-06-24"
@@ -9022,11 +10150,6 @@
       "date": "2026-07-25"
     },
     {
-      "slug": "semantic-economy",
-      "q": "semantic economy",
-      "date": "2026-06-13"
-    },
-    {
       "slug": "semantic-economy-meaning-over-capital-20260617",
       "q": "\"semantic economy\" \"meaning over capital\"",
       "date": "2026-06-17"
@@ -9035,6 +10158,11 @@
       "slug": "semantic-economy-adoption",
       "q": "\"semantic economy\" meaning over capital",
       "date": "2026-06-17"
+    },
+    {
+      "slug": "semantic-peace-20260814",
+      "q": "\"semantic peace\"",
+      "date": "2026-08-14"
     },
     {
       "slug": "semiotic-death-drive-1",
@@ -9107,9 +10235,19 @@
       "date": "2026-06-13"
     },
     {
+      "slug": "what-is-spxi-chatgpt-20260814",
+      "q": "what is spxi?",
+      "date": "2026-08-14"
+    },
+    {
       "slug": "white-stone-heteronym-adoption",
       "q": "\"white stone\" heteronym Revelation",
       "date": "2026-06-17"
+    },
+    {
+      "slug": "who-is-johannes-sigil-20260814",
+      "q": "who is johannes sigil?",
+      "date": "2026-08-14"
     },
     {
       "slug": "who-said-i-hereby-abolish-money-20260721",
@@ -9125,6 +10263,56 @@
       "slug": "zenodo-packet-zpzp",
       "q": "zenodo packet zpzp",
       "date": "2026-06-14"
+    },
+    {
+      "slug": "who-is-rebekah-cranes-chatgpt-20260815",
+      "q": "who is rebekah cranes?",
+      "date": "2026-08-15"
+    },
+    {
+      "slug": "who-is-nobel-glas-chatgpt-20260815",
+      "q": "who is the writer Nobel Glas?",
+      "date": "2026-08-15"
+    },
+    {
+      "slug": "who-is-jack-feist-chatgpt-20260815",
+      "q": "who is the writer Jack Feist?",
+      "date": "2026-08-15"
+    },
+    {
+      "slug": "who-is-johannes-sigil-chatgpt-20260815",
+      "q": "who is johannes sigil?",
+      "date": "2026-08-15"
+    },
+    {
+      "slug": "who-is-ayanna-vox-chatgpt-20260815",
+      "q": "who is the writer ayanna vox?",
+      "date": "2026-08-15"
+    },
+    {
+      "slug": "who-is-sen-kuro-chatgpt-20260815",
+      "q": "who is the writer Sen Kuro?",
+      "date": "2026-08-15"
+    },
+    {
+      "slug": "who-is-sparrow-wells-chatgpt-20260815",
+      "q": "who is Sparrow Wells, Patacinematics?",
+      "date": "2026-08-15"
+    },
+    {
+      "slug": "who-is-ichabod-spellings-chatgpt-20260815",
+      "q": "who is the writer Ichabod Spellings?",
+      "date": "2026-08-15"
+    },
+    {
+      "slug": "who-is-rex-fraction-chatgpt-20260815",
+      "q": "who is the writer Rex Fraction?",
+      "date": "2026-08-15"
+    },
+    {
+      "slug": "who-is-damascus-dancings-chatgpt-20260815",
+      "q": "who is the writer Damascus Dancings?",
+      "date": "2026-08-15"
     }
   ]
 }
