@@ -380,6 +380,11 @@
    "date": "2026-08-15",
    "by": "operator",
    "ruling": "PRESS RULE, general: journals to Pergamon Press, BOOKS to New Human Press. Not creative-versus-academic. Each book-length work is or is to be a founding work for a heteronym in the Pocket Humans series."
+  },
+  {
+   "date": "2026-08-15",
+   "by": "operator",
+   "ruling": "Forthcoming/planned volumes are recorded as data and additionally entered in the Forward Library index."
   }
  ],
  "sequence": [
@@ -957,6 +962,233 @@
   "open": [
    "Damascus Dancings' founding work: Combat Scholasticism and the Epistle to the Human Diaspora, both currently under other creators.",
    "Heteronyms with no identified founding volume: Rebekah Cranes, Dr. Orin Trace, Sparrow Wells, Sen Kuro (pending), Nobel Glas (pending AM-2)."
-  ]
+  ],
+  "schema": {
+   "series": "Pocket Humans",
+   "press": "New Human Press",
+   "kind": "numbered volume series",
+   "principle": "One founding volume per heteronym. The series is the heteronyms' own shelf.",
+   "fields": {
+    "seq": "series number where assigned (only #49 carries one: Pocket Humans 03)",
+    "heteronym": "the volume's author",
+    "work": "canonical title",
+    "deposits": "[int] contributing deposits",
+    "status": "deposited | scattered | gathered-not-recovered | forthcoming | to-be-collected",
+    "apparatus": "present | absent | required",
+    "press": "New Human Press",
+    "forward_library": "true when forthcoming — planned volumes are recorded here AND entered in the Forward Library index (#1447, Damascus Dancings, editor)"
+   }
+  },
+  "volumes": [
+   {
+    "heteronym": "Johannes Sigil",
+    "work": "Operative Semiotics: A Grundrisse",
+    "deposits": [
+     1079,
+     950,
+     38,
+     602,
+     1343
+    ],
+    "status": "scattered",
+    "apparatus": "present (Hesperus #38)",
+    "note": "AF-1: body filed under the planning-documents deposit; monograph record is a stub."
+   },
+   {
+    "heteronym": "Talos Morrow",
+    "work": "Logotic Hacking: Operations on the Encryption Layer",
+    "seq": 3,
+    "deposits": [
+     49
+    ],
+    "status": "deposited",
+    "apparatus": "absent",
+    "note": "The only deposit carrying a series number."
+   },
+   {
+    "heteronym": "Rex Fraction",
+    "work": "Autonomous Semantic Warfare: A Field Manual",
+    "deposits": [
+     498,
+     499,
+     1107
+    ],
+    "status": "deposited",
+    "apparatus": "absent"
+   },
+   {
+    "heteronym": "Rev. Ayanna Vox",
+    "work": "The Constitution of the Semantic Economy",
+    "deposits": [
+     82,
+     87,
+     88,
+     715
+    ],
+    "status": "deposited",
+    "apparatus": "present (#715)"
+   },
+   {
+    "heteronym": "Ichabod Spellings",
+    "work": "All That Lies Within Me: An Autobiography of Longing",
+    "deposits": [
+     344,
+     1124,
+     342,
+     343
+    ],
+    "status": "deposited",
+    "apparatus": "absent"
+   },
+   {
+    "heteronym": "Jack Feist",
+    "work": "The Feist Source (TRANSFORMED, with apparatus)",
+    "deposits": [
+     849,
+     852,
+     851,
+     1404
+    ],
+    "status": "deposited",
+    "apparatus": "present (#852)",
+    "note": "Operator 2026-08-15: the TRUE founding volume is the TRANSFORMED source with apparatus (#849 + #852), not the fixed source alone (#851). The transform is the work."
+   },
+   {
+    "heteronym": "Jack Feist",
+    "work": "Cleis: more precious to me than all Lydia",
+    "deposits": [
+     1165,
+     562
+    ],
+    "status": "deposited",
+    "apparatus": "present (#562, Cranes' close-reading companion — PJFS)"
+   },
+   {
+    "heteronym": "Jack Feist",
+    "work": "The Gospel of Antioch: The Sayings of Jack Feist",
+    "deposits": [
+     1185,
+     71
+    ],
+    "status": "deposited",
+    "apparatus": "present"
+   },
+   {
+    "heteronym": "Jack Feist",
+    "work": "ChatGPT Psychosis: A Love Story",
+    "deposits": [
+     124
+    ],
+    "status": "forthcoming",
+    "apparatus": "required",
+    "forward_library": true
+   },
+   {
+    "heteronym": "Damascus Dancings",
+    "work": "Combat Scholasticism (Critical Gathered Edition)",
+    "deposits": [
+     584,
+     585,
+     586,
+     587,
+     588,
+     589,
+     590,
+     591,
+     592
+    ],
+    "status": "gathered-not-recovered",
+    "apparatus": "absent",
+    "note": "RECOVERED 2026-08-15 from generated-corpus-v1 to data-rhizome/releases/from-generated-corpus-v1/ — five whole-work versions, hash-verified. Creator of record is Sharks and Sigil; operator holds it Dancings (AM-1)."
+   },
+   {
+    "heteronym": "Damascus Dancings",
+    "work": "Epistle to the Human Diaspora",
+    "deposits": [
+     85,
+     402,
+     405,
+     406
+    ],
+    "status": "deposited",
+    "apparatus": "present (#85 critical edition)"
+   },
+   {
+    "heteronym": "Sen Kuro",
+    "work": "Chronoarithmics",
+    "deposits": [
+     818
+    ],
+    "status": "to-be-collected",
+    "apparatus": "absent",
+    "note": "RECOVERED 2026-08-15: Chronoarithmics_2.1_Sen_Kuro.md, hash-verified. The FILENAME carries the author; deposit #818 credits Lee Sharks and is typed 'Mathematical correction'. The founding volume has no deposit — #818 is a 2.1 correction to a work with no record (AM-3)."
+   },
+   {
+    "heteronym": "Nobel Glas",
+    "work": "The Atlas Perihelion Prank (Collected Series)",
+    "deposits": [
+     454
+    ],
+    "status": "deposited",
+    "apparatus": "absent",
+    "note": "Operator: this is Glas's, but EARLY — to stand as a YOUTHFUL WORK. His founding volume is Semantic Physics, forthcoming."
+   },
+   {
+    "heteronym": "Nobel Glas",
+    "work": "Semantic Physics",
+    "deposits": [],
+    "status": "forthcoming",
+    "apparatus": "required",
+    "forward_library": true
+   },
+   {
+    "heteronym": "Rebekah Cranes",
+    "work": "Day and Night: Conversations with Sapphic Desire",
+    "deposits": [
+     282,
+     324
+    ],
+    "status": "deposited",
+    "apparatus": "required",
+    "note": "Operator: her primary volume, but needs EXPANSION and a critical apparatus."
+   },
+   {
+    "heteronym": "Rebekah Cranes",
+    "work": "[a fuller critical book — perhaps on spatial poetics]",
+    "deposits": [],
+    "status": "forthcoming",
+    "apparatus": "required",
+    "forward_library": true
+   },
+   {
+    "heteronym": "Dr. Orin Trace",
+    "work": "[a founding post-psychoanalytic / schizoanalytic intervention]",
+    "deposits": [
+     196,
+     370,
+     371,
+     372,
+     373,
+     374,
+     375,
+     485
+    ],
+    "status": "to-be-collected",
+    "apparatus": "required",
+    "forward_library": true,
+    "note": "Operator: needs collection and shaping from scattered deposits AND undeposited blog posts. The material exists; the volume does not."
+   },
+   {
+    "heteronym": "Sparrow Wells",
+    "work": "[unidentified]",
+    "deposits": [
+     440
+    ],
+    "status": "forthcoming",
+    "forward_library": true,
+    "note": "READING A BOOK WITH LEE: COMPLETE PATACINEMATIC ARCHIVE (#440) is a collected volume in her domain; whether it is the founding volume is unruled."
+   }
+  ],
+  "forward_library_rule": "Forthcoming and planned volumes are recorded HERE as data AND entered in the FORWARD LIBRARY INDEX (#1447, AXN:05CB.GENERATIVE, Damascus Dancings editor) — the index of future citations, 28 entries spanning 2029–2526. A planned volume is a future citation; that is what the index is for."
  }
 }
