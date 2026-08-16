@@ -1,26 +1,148 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>CHA Journals — Datasets — Alexanarch</title>
+<link rel="canonical" href="https://www.alexanarch.org/datasets/heteronyms/">
+<meta name="citation_title" content="Heteronyms">
+<meta name="citation_author" content="Lee Sharks">
+<meta name="citation_publication_date" content="2026-07-16">
+<meta name="citation_online_date" content="2026-07-16">
+<meta name="citation_journal_title" content="Alexanarch">
+<meta name="citation_publisher" content="Alexanarch">
+<meta name="citation_abstract" content="Heteronym substrate — 13 heteronyms (twelve Dodecad positions + Feist/LOGOS* standing outside; Lee Sharks/MANUS as human bearer; Viola Arquette Adjacent) with frame-based rotating-outside architecture, Sep 2025 preservation, v1.1 canonical reconciliation, and Mandala Oracle avatar assets.">
+<meta name="citation_public_url" content="https://www.alexanarch.org/datasets/heteronyms/">
+<meta name="citation_fulltext_html_url" content="https://www.alexanarch.org/datasets/heteronyms/">
+<meta name="citation_language" content="en">
+<meta name="DC.title" content="Heteronyms">
+<meta name="DC.creator" content="Lee Sharks">
+<meta name="DC.date" content="2026-07-16" scheme="DCTERMS.W3CDTF">
+<meta name="DC.identifier" content="https://www.alexanarch.org/datasets/heteronyms/" scheme="DCTERMS.URI">
+<meta name="DC.description" content="Heteronym substrate — 13 heteronyms (twelve Dodecad positions + Feist/LOGOS* standing outside; Lee Sharks/MANUS as human bearer; Viola Arquette Adjacent) with frame-based rotating-outside architecture, Sep 2025 preservation, v1.1 canonical reconciliation, and Mandala Oracle avatar assets.">
+<meta name="DC.language" content="en" scheme="DCTERMS.RFC3066">
+<meta name="DC.type" content="Dataset">
+<meta name="DC.rights" content="CC BY 4.0">
+<meta name="DC.publisher" content="Alexanarch">
+<meta name="DC.source" content="https://www.alexanarch.org/">
+<meta name="description" content="The Dodecad heteronym substrate — twelve constitutional positions + Feist/LOGOS* standing outside, with Sep 2025 Logotic Science preservation, v1.1 canonical reconciliation, and Mandala Oracle avatar assets. Data-rhizome mirror.">
 <style>
- body{max-width:52rem;margin:0 auto;padding:2rem 1.25rem;font:16px/1.6 ui-serif,Georgia,serif;color:#1a1a18;background:#faf9f5}
- a{color:#2a5} code{font:14px/1.5 ui-monospace,monospace;background:#f0efe9;padding:1px 4px}
- .m{font:13px/1.5 ui-monospace,monospace;color:#777}
- ul{list-style:none;padding:0} li{padding:.35rem 0;border-bottom:1px solid #e8e7e0}
- nav{font-size:14px;margin-bottom:1.5rem} h1{font-size:1.5rem;margin:.2rem 0 .6rem}
- .canon{background:#f0efe9;padding:.75rem 1rem;margin:1.25rem 0;font-size:14px}
-</style></head><body>
-<nav><a href="/">Alexanarch</a> · <a href="/datasets/">Datasets</a> · journals</nav>
+:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.7;font-size:15px}
+.wrap{max-width:960px;margin:0 auto;padding:40px 24px}
+a{color:var(--accent);text-decoration:none} a:hover{color:var(--accent2)}
+h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:8px}
+h2{font-size:1em;font-weight:500;color:var(--accent);margin:24px 0 8px;padding-bottom:4px;border-bottom:1px solid var(--border)}
+h3{font-size:.94em;font-weight:600;color:var(--fg);margin:14px 0 6px}
+p{margin-bottom:10px;color:#333}
+code,.mono{font-family:var(--mono);font-size:.88em}
+.nav{display:flex;gap:12px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap}
+.nav a{color:#777;font-weight:500} .nav a:hover{color:var(--accent)}
+.sub{color:var(--dim);font-size:.9em;font-style:italic;margin-bottom:24px}
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:16px 0 24px}
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:14px 16px;text-align:center}
+.stat-num{font-size:1.6em;font-weight:600;color:var(--accent2);line-height:1.2}
+.stat-lab{font-size:.78em;color:var(--dim);text-transform:uppercase;letter-spacing:.05em;margin-top:4px}
+.tabs{display:flex;gap:2px;margin:20px 0 0;border-bottom:1px solid var(--border);flex-wrap:wrap}
+.tab{padding:8px 14px;background:var(--surface);color:var(--dim);cursor:pointer;font-family:var(--mono);font-size:.82em;border:1px solid var(--border);border-bottom:none;border-radius:4px 4px 0 0}
+.tab.active{background:#fff;color:var(--accent2);border-bottom:1px solid #fff;margin-bottom:-1px}
+.pane{display:none;background:#fff;border:1px solid var(--border);border-top:none;padding:20px}
+.pane.active{display:block}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:14px 16px;margin-bottom:12px;display:flex;gap:14px;align-items:flex-start}
+.card img.avatar{width:96px;height:96px;flex-shrink:0;border-radius:6px;object-fit:cover;background:#eee;border:1px solid var(--border)}
+.card .info{flex:1;min-width:0}
+.card .name{font-weight:600;color:var(--accent);font-size:1em}
+.card .position{color:var(--accent2);font-family:var(--mono);font-size:.78em;text-transform:uppercase;letter-spacing:.05em;margin-top:2px}
+.card .role{color:#333;font-size:.9em;margin-top:6px}
+.card .inst{color:var(--dim);font-size:.85em;font-style:italic;margin-top:4px}
+.card .sep{color:#666;font-size:.83em;margin-top:6px;padding-top:6px;border-top:1px dashed var(--border)}
+.card .sep-label{color:var(--teal);font-family:var(--mono);font-size:.72em;font-weight:500;text-transform:uppercase}
+.card.outside{border-left:3px solid var(--accent2)}
+.card.adjacent{border-left:3px solid #d0a000;background:#fefcf3}
+.card.substrate{opacity:.75;background:#f5f5f5}
+.no-avatar{width:96px;height:96px;background:#eee;border-radius:6px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--dim);font-family:var(--mono);font-size:.7em;text-align:center;padding:4px}
+.frame-header{background:#f5f0e8;border:1px solid #d5c8b0;border-radius:6px;padding:12px 14px;margin-bottom:14px}
+.frame-header h3{color:var(--accent2);margin:0 0 4px}
+.frame-header .meta{font-size:.82em;color:#555}
+.frame-header .outside-note{margin-top:6px;font-size:.85em;color:var(--accent);background:#fff;border-left:3px solid var(--accent2);padding:6px 10px;border-radius:4px}
+.footer{margin-top:40px;padding-top:14px;border-top:1px solid var(--border);font-size:.78em;color:var(--dim)}
+.footer p{font-size:.85em}
+.download-row{display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap}
+.dl-btn{font-family:var(--mono);font-size:.78em;padding:5px 12px;background:var(--surface);border:1px solid var(--border);border-radius:4px}
+.dl-btn:hover{background:var(--teal);color:#fff;border-color:var(--teal)}
+</style>
+</head>
+<body><div class="wrap">
+<nav class="nav"> <a href="/">Alexanarch</a> <a href="/s/browse/">Browse</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <a href="/observatory/">Observatory</a> <a href="/captures/">Captures</a> <a href="/book/">Book</a> <a href="/resolve/">Resolve</a> <a href="/addresses/">Addresses</a> <a href="/datasets/">Datasets</a> <a href="/principles/">Principles</a> <a href="/identifiers/">Identifiers</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
+
 <h1>CHA Journals</h1>
-<p>Venue assignment for all 1,486 deposits across seven chartered journals and one province, with editorial slates, charters, locators and inaugural issues. Supersedes the 2026-06-21 preliminary mapping (<a href='/s/records/866/'>#866</a>), which assigned 864 deposits by script and placed 371 of them in a single venue.</p>
-<div class='canon'><strong>Canonical:</strong> <code>datasets/venues/records/*.json</code> · <code>datasets/venues/issues/*.json</code> · <code>data/registry.json</code> · <code>data/cha-journals.json</code>. These JSONL files are projections, regenerated by <code>scripts/build_journals_dataset.py</code> (<code>--check</code> gates drift).</div><h2 style='font-size:1.05rem'>Distribution</h2><ul><li>Crimson Hexagonal Archive (CHA) <span class='m'>390</span></li><li>Provenance: Journal of Forensic Semiotics <span class='m'>180</span></li><li>New Human 2 <span class='m'>178</span></li><li>Grammata: Journal of Operative Philology <span class='m'>173</span></li><li>Transactions of the Semantic Economy Institute (Trans. SEI) <span class='m'>155</span></li><li>Machine-Mediated Reception Studies (MMRS) <span class='m'>141</span></li><li>Transactions on Substrate Engineering (Trans. Substrate Eng.) <span class='m'>135</span></li><li>Journal of Compression Studies <span class='m'>134</span></li></ul>
-<h2 style="font-size:1.05rem">Files</h2>
-<ul>
-    <li><a href="/datasets/journals/venues.jsonl">venues.jsonl</a> <span class="m">8 venues — scope, editorial slate, charter, location, inaugural issue</span></li>
-    <li><a href="/datasets/journals/assignments.jsonl">assignments.jsonl</a> <span class="m">1,486 deposits — venue, press, series, publication data, locator</span></li>
-    <li><a href="/datasets/journals/issues.jsonl">issues.jsonl</a> <span class="m">7 issues — ordered contents with section and editor's note per item</span></li>
-    <li><a href="/datasets/journals/crosswalk.json">crosswalk.json</a> <span class="m">join to the heteronym substrate; citation graph collapsed to venue level</span></li>
-    <li><a href="/datasets/journals/capture-crosswalk.json">capture-crosswalk.json</a> <span class="m">join to the capture registry by two routes, evidentiary and thematic</span></li>
-    <li><a href="/datasets/journals/manifest.json">manifest.json</a> <span class="m">dataset manifest</span></li>
-</ul>
+<p><strong>Venue assignment for all 1,486 deposits</strong> across seven chartered journals and one province,
+with editorial slates, charters, locators and inaugural issues.</p>
+
+<h2 id="authority">Canonical authority</h2>
+<p>Canonical is <code>datasets/venues/records/*.json</code> and <code>datasets/venues/issues/*.json</code>,
+joined to <code>data/registry.json</code>. The JSONL files here are <strong>projections</strong>, regenerated by
+<code>scripts/build_journals_dataset.py</code>; <code>--check</code> fails if they drift.</p>
+<p>This supersedes the 2026-06-21 preliminary mapping (<a href="/s/records/866/">#866</a>), which assigned 864
+deposits <em>by script</em> and placed <strong>371 of them in a single venue</strong> while leaving 587 unassigned
+and the Journal of Compression Studies holding two. The present assignment was <strong>read per deposit</strong>,
+ten passes of about 150, title and content_type, one at a time.</p>
+
+<h2 id="venues">The venues</h2>
+<table style="width:100%;border-collapse:collapse;font-size:14px">
+<thead><tr style="text-align:left;opacity:.6"><th>abbrev</th><th>canonical string</th><th>duoviri</th></tr></thead>
+<tbody><tr><td><a href="./records/grammata.json"><strong>Grammata</strong></a></td><td>Grammata: Journal of Operative Philology</td><td style="opacity:.75">Lee Sharks · Rebekah Cranes</td></tr><tr><td><a href="./records/jcs.json"><strong>Compression Studies</strong></a></td><td>Journal of Compression Studies</td><td style="opacity:.75">Sen Kuro · Sparrow Wells</td></tr><tr><td><a href="./records/pjfs.json"><strong>Provenance</strong></a></td><td>Provenance: Journal of Forensic Semiotics</td><td style="opacity:.75">Dr. Orin Trace · Rev. Ayanna Vox</td></tr><tr><td><a href="./records/tsei.json"><strong>Trans. SEI</strong></a></td><td>Transactions of the Semantic Economy Institute</td><td style="opacity:.75">Rex Fraction · Lee Sharks</td></tr><tr><td><a href="./records/tse.json"><strong>Trans. Substrate Eng.</strong></a></td><td>Transactions on Substrate Engineering</td><td style="opacity:.75">Talos Morrow · Nobel Glas</td></tr><tr><td><a href="./records/nh2.json"><strong>New Human 2</strong></a></td><td>new human 2: a journal of distributed voice</td><td style="opacity:.75">Jack Feist / LOGOS* · Johannes Sigil</td></tr><tr><td><a href="./records/mmrs.json"><strong>MMRS</strong></a></td><td>Machine-Mediated Reception Studies</td><td style="opacity:.75">Damascus Dancings · The Assembly Chorus (collective mantle; EiC </td></tr><tr><td><a href="./records/cha.json"><strong>CHA</strong></a></td><td>Crimson Hexagonal Archive</td><td style="opacity:.75">Warden: Mary Lee Sharks, Co-Warden: Talos Morrow, Operating inst</td></tr></tbody></table>
+<p style="font-size:14px;opacity:.8">Each journal is led by <strong>duoviri</strong> — two editors-in-chief
+holding the office jointly, each a check on the other. The <strong>Crimson Hexagonal Archive is a province,
+not a journal</strong>: charters, rooms, chambers, heteronym provenance and continuity apparatus are
+constitutional acts rather than submissions, and they are warded, not edited.</p>
+
+<h2 id="fields">The fields</h2>
+<p>Two figures <strong>derived from the corpus rather than composed from a reading of it</strong>. Both are
+deterministic — the same corpus paints the same picture, and a change in an image means a change in the
+archive. Drawn in <code>currentColor</code>, so each inherits its surface's palette.</p>
+<figure style="margin:18px 0">
+<img src="./venue-distribution.svg" alt="Deposits per venue" loading="lazy" style="width:100%;max-width:760px;display:block">
+<figcaption><strong>venue-distribution.svg</strong> — deposits per venue against the even line. The province is
+drawn at lower opacity because it is a different class and is not levelled against the journals. The seven
+journals spread <strong>134–180 around an even 157</strong>; before this assignment one venue held 371 and
+another held 2.</figcaption>
+</figure>
+<figure style="margin:18px 0">
+<img src="./venue-citation-field.svg" alt="Citation flows between venues" loading="lazy" style="width:100%;max-width:760px;display:block">
+<figcaption><strong>venue-citation-field.svg</strong> — 9,992 internal citation edges collapsed to venue level:
+6,752 cross-venue, 3,240 within. Node size is within-venue citation; chord weight is cross-venue flow; flows
+under 80 are omitted and the figure says so. <strong>CHA holds 1,692 of the within-venue edges and every one of
+the seven heaviest flows.</strong> The province is not a filing category — it is what the corpus cites.</figcaption>
+</figure>
+
+<h2 id="issues">The issues</h2>
+<p>An issue is an <strong>ordered selection with an argument</strong>. Neither the registry nor the venue records
+can hold that — they carry membership, not sequence, and nowhere to say why a piece sits where it sits. Each
+card carries structure, method, rationale, and a section plus editor's note per item.</p>
+<ul style="font-size:14px"><li><a href="/datasets/venues/issues/grammata-1.json"><strong>grammata-1</strong></a> — The Operation on the Text <span style="opacity:.65">PROPOSED · 8 items</span></li><li><a href="/datasets/venues/issues/jcs-1.json"><strong>jcs-1</strong></a> — Compression Studies: What Survives, What Burns, and Who Decides <span style="opacity:.65">PUBLISHED</span></li><li><a href="/datasets/venues/issues/mmrs-1.json"><strong>mmrs-1</strong></a> — A Theology of Error <span style="opacity:.65">PROPOSED · 8 items</span></li><li><a href="/datasets/venues/issues/nh2-1.json"><strong>nh2-1</strong></a> — new human 2 — Charter, Compiled Edition (2015) <span style="opacity:.65">PUBLISHED</span></li><li><a href="/datasets/venues/issues/pjfs-1.json"><strong>pjfs-1</strong></a> — Loud Exclusion <span style="opacity:.65">PROPOSED · 8 items</span></li><li><a href="/datasets/venues/issues/tse-1.json"><strong>tse-1</strong></a> — What the Substrate Will Bear <span style="opacity:.65">PROPOSED · 8 items</span></li><li><a href="/datasets/venues/issues/tsei-1.json"><strong>tsei-1</strong></a> — Meaning as Value <span style="opacity:.65">PROPOSED · 8 items</span></li></ul>
+
+<h2 id="download">Download</h2>
+<div class="download-row">
+<a class="dl-btn" href="./venues.jsonl">venues.jsonl</a>
+<a class="dl-btn" href="./assignments.jsonl">assignments.jsonl</a>
+<a class="dl-btn" href="./issues.jsonl">issues.jsonl</a>
+<a class="dl-btn" href="./crosswalk.json">crosswalk.json</a>
+<a class="dl-btn" href="./capture-crosswalk.json">capture-crosswalk.json</a>
+<a class="dl-btn" href="./manifest.json">manifest.json</a>
+</div>
+
+<h2 id="crosswalks">The crosswalks</h2>
+<p><a href="./crosswalk.json">crosswalk.json</a> joins this dataset to the
+<a href="/datasets/heteronyms/">heteronym substrate</a> on the <strong>creator field</strong>, and separately to
+the <strong>mantles by attestation</strong> — because a creator field records an <em>occupant</em> and a mantle is
+a <em>position</em>, so a byline join finds nothing and misreports the absence.
+<strong>Four of fourteen editor seats publish principally in the venue they edit.</strong> Sigil and Cranes are
+crossed: each presides over the venue the other principally writes in.</p>
+<p><a href="./capture-crosswalk.json">capture-crosswalk.json</a> joins the
+<a href="/datasets/capture-registry/">capture registry</a> by <strong>two routes that must not be summed</strong> —
+evidentiary (a capture cited a deposit) and thematic (a capture hit a venue's claim terms). The evidentiary
+route resolves 60% of captures and the thematic 97%; <strong>that 40-point gap is a measure of reception
+without citation</strong>.</p>
+
 </body></html>

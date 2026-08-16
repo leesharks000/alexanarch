@@ -1,0 +1,2201 @@
+{
+ "schema": "dataflow-atlas-binding/v3.1",
+ "generated": "2026-08-15",
+ "what": "The atlas is supposed to bind EVERY connector, input, output and interlink to data. It bound three datasets of eighteen. This file is the binding: one row per dataset, with its canonical store, its producer, its consumers, its gates, and the crosswalks that join it to others.",
+ "state": {
+  "datasets": 18,
+  "files": 316,
+  "with_manifest": 13,
+  "declaring_canonical": 2,
+  "with_named_producer": 1,
+  "finding": "13 of 18 carry a manifest, 2 declare a canonical store, and 1 names the script that regenerates it. A dataset that does not say where its authority lives or what rebuilds it cannot be checked for drift — which is the condition that let the heteronym index sit thin against rich records, and the capture link map sit 43 captures stale against a live registry."
+ },
+ "datasets": {
+  "axnidentifiers": {
+   "dataset": "axnidentifiers",
+   "files": 7,
+   "bytes": 34586,
+   "has_manifest": false,
+   "version": null,
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".html",
+    ".md"
+   ],
+   "binding_gaps": [
+    "no manifest",
+    "canonical store not declared",
+    "no named producer"
+   ],
+   "description": "The AXN identifier system as data — the product surface for AXN as a distributed identifier, separate from the archive that mints them.",
+   "interlinked": false
+  },
+  "capture-registry": {
+   "dataset": "capture-registry",
+   "files": 5,
+   "bytes": 8945613,
+   "has_manifest": true,
+   "version": "10.0",
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".html",
+    ".json"
+   ],
+   "binding_gaps": [
+    "canonical store not declared",
+    "no named producer"
+   ],
+   "description": "Gallery manifest and semantic-address layer over the AI Overview capture registry. NOT the live registry: this directory holds a v10.0 manifest of 300 captures while data/EA-WG-CAPTURES-01.json is live at v11.4 with 343.",
+   "interlinked": true
+  },
+  "dataflow-atlas": {
+   "dataset": "dataflow-atlas",
+   "files": 24,
+   "bytes": 3045818,
+   "has_manifest": true,
+   "version": "v1.2",
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".html",
+    ".json",
+    ".md"
+   ],
+   "binding_gaps": [
+    "canonical store not declared",
+    "no named producer"
+   ],
+   "description": "The archive's map of itself: what produces what, what consumes it, what gate detects drift, and where the external dependencies are. This dataset.",
+   "interlinked": true
+  },
+  "deletion-conformance-fixture": {
+   "dataset": "deletion-conformance-fixture",
+   "files": 11,
+   "bytes": 235652,
+   "has_manifest": true,
+   "version": "2.1",
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".html",
+    ".json",
+    ".md",
+    ".py"
+   ],
+   "binding_gaps": [
+    "canonical store not declared",
+    "no named producer"
+   ],
+   "description": "A known-answer fixture for deletion semantics — ratified axes against which a platform's deletion behaviour can be scored rather than described.",
+   "interlinked": false
+  },
+  "doi-work-identity": {
+   "dataset": "doi-work-identity",
+   "files": 4,
+   "bytes": 1418402,
+   "has_manifest": false,
+   "version": null,
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".html",
+    ".json",
+    ".txt"
+   ],
+   "binding_gaps": [
+    "no manifest",
+    "canonical store not declared",
+    "no named producer"
+   ],
+   "description": "The join between DOIs and works, and the restoration queue built from it after the Zenodo severance. Where a DOI and a work came apart, this records the pair.",
+   "interlinked": false
+  },
+  "erosion-empirical-audit-01": {
+   "dataset": "erosion-empirical-audit-01",
+   "files": 8,
+   "bytes": 700500,
+   "has_manifest": true,
+   "version": "0.1",
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".html",
+    ".json",
+    ".md",
+    ".py"
+   ],
+   "binding_gaps": [
+    "canonical store not declared",
+    "no named producer"
+   ],
+   "description": "The Platform Erosion Observatory's first empirical audit: sampled deleted records tested against OpenAIRE for survival. The flat-absence finding lives here.",
+   "interlinked": false
+  },
+  "gutenberg-classical": {
+   "dataset": "gutenberg-classical",
+   "files": 4,
+   "bytes": 596140,
+   "has_manifest": false,
+   "version": null,
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".html",
+    ".json",
+    ".jsonl"
+   ],
+   "binding_gaps": [
+    "no manifest",
+    "canonical store not declared",
+    "no named producer"
+   ],
+   "description": "Project Gutenberg classical texts mirrored as a primary-text substrate — 972 identified, 206 mirrored. Not yet interlinked to the deposit corpus.",
+   "interlinked": false
+  },
+  "heteronyms": {
+   "dataset": "heteronyms",
+   "files": 68,
+   "bytes": 3073567,
+   "has_manifest": true,
+   "version": "v1.2",
+   "canonical_declared": true,
+   "regenerate_with": null,
+   "top": [
+    ".html",
+    ".json",
+    ".jsonl",
+    ".md",
+    ".svg",
+    ".webp"
+   ],
+   "binding_gaps": [
+    "no named producer"
+   ],
+   "description": "The heteronym substrate: 26 identity cards across eight subcategories, canonical in records/, projected to heteronyms.jsonl. Carries claims, captures by two routes, journal seats and offices.",
+   "interlinked": true
+  },
+  "journals": {
+   "dataset": "journals",
+   "files": 6,
+   "bytes": 1024357,
+   "has_manifest": true,
+   "version": "1.3",
+   "canonical_declared": true,
+   "regenerate_with": "scripts/build_journals_dataset.py",
+   "top": [
+    ".json",
+    ".jsonl"
+   ],
+   "binding_gaps": [],
+   "description": "Venue assignment for the whole corpus — seven chartered journals and one province, with editorial slates, issues, and crosswalks to the heteronym substrate and the capture registry.",
+   "interlinked": true
+  },
+  "mret": {
+   "dataset": "mret",
+   "files": 2,
+   "bytes": 338967,
+   "has_manifest": false,
+   "version": null,
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".json",
+    ".md"
+   ],
+   "binding_gaps": [
+    "no manifest",
+    "canonical store not declared",
+    "no named producer"
+   ],
+   "description": "Machine-Retrievability Evaluation Test: six axes scored across every deposit. The instrument that measured its own missing field and caused it to be added.",
+   "interlinked": false
+  },
+  "negshape-deletion-bibliography": {
+   "dataset": "negshape-deletion-bibliography",
+   "files": 22,
+   "bytes": 13326150,
+   "has_manifest": true,
+   "version": "1.0",
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".csv",
+    ".html",
+    ".json",
+    ".md",
+    ".py"
+   ],
+   "binding_gaps": [
+    "canonical store not declared",
+    "no named producer"
+   ],
+   "description": "The negative-shape bibliography: scholarship on deletion, absence and non-carriage — the literature the archive's own injury sits inside.",
+   "interlinked": false
+  },
+  "new-human-primary": {
+   "dataset": "new-human-primary",
+   "files": 3,
+   "bytes": 164109,
+   "has_manifest": true,
+   "version": "v0.1",
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".html",
+    ".json",
+    ".jsonl"
+   ],
+   "binding_gaps": [
+    "canonical store not declared",
+    "no named producer"
+   ],
+   "description": "Curated inventory of New Human primary texts — poetry and creative work by Lee Sharks and the Dodecad, as the archive's own primary-text substrate. v0.1 placeholder.",
+   "interlinked": false
+  },
+  "peo-case-001-florence-fup": {
+   "dataset": "peo-case-001-florence-fup",
+   "files": 5,
+   "bytes": 1067692,
+   "has_manifest": true,
+   "version": "1.0",
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".html",
+    ".json",
+    ".md",
+    ".tsv"
+   ],
+   "binding_gaps": [
+    "canonical store not declared",
+    "no named producer"
+   ],
+   "description": "Platform Erosion Observatory, case 001: the Firenze crui.unifi corpus, 14,284 DOIs enumerated at T0 as a control cohort.",
+   "interlinked": false
+  },
+  "perseus-classical": {
+   "dataset": "perseus-classical",
+   "files": 5,
+   "bytes": 829654,
+   "has_manifest": true,
+   "version": null,
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".html",
+    ".json",
+    ".jsonl"
+   ],
+   "binding_gaps": [
+    "canonical store not declared",
+    "no named producer"
+   ],
+   "description": "Perseus Digital Library classical works mirrored — 1,161 works, 764 aligned. The Greek and Latin substrate behind the philological work. Not yet interlinked to deposits.",
+   "interlinked": false
+  },
+  "registry-audit": {
+   "dataset": "registry-audit",
+   "files": 112,
+   "bytes": 41042923,
+   "has_manifest": true,
+   "version": null,
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".csv",
+    ".html",
+    ".json",
+    ".md",
+    ".pdf",
+    ".txt"
+   ],
+   "binding_gaps": [
+    "canonical store not declared",
+    "no named producer"
+   ],
+   "description": "Audit trail over the registry itself: repair ledgers, OAI remediation workplans, conformance records. The largest dataset by size, and the archive's memory of its own corrections.",
+   "interlinked": false
+  },
+  "tombstone-mirror": {
+   "dataset": "tombstone-mirror",
+   "files": 7,
+   "bytes": 9956954,
+   "has_manifest": true,
+   "version": "v1.0",
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".csv",
+    ".gz",
+    ".html",
+    ".json",
+    ".jsonl"
+   ],
+   "binding_gaps": [
+    "canonical store not declared",
+    "no named producer"
+   ],
+   "description": "Mirror of the tombstoned Zenodo records — what the platform left behind after removal, preserved as evidence of the shape of the deletion.",
+   "interlinked": false
+  },
+  "venues": {
+   "dataset": "venues",
+   "files": 17,
+   "bytes": 90317,
+   "has_manifest": false,
+   "version": null,
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".html",
+    ".json"
+   ],
+   "binding_gaps": [
+    "no manifest",
+    "canonical store not declared",
+    "no named producer"
+   ],
+   "description": "Canonical venue records: seven journals and one province, with charters, scopes, claim terms, editorial slates, locators and inaugural issues. Canonical store behind datasets/journals.",
+   "interlinked": true
+  },
+  "zenodo-datacite-batch": {
+   "dataset": "zenodo-datacite-batch",
+   "files": 6,
+   "bytes": 3807965,
+   "has_manifest": true,
+   "version": "v0.2",
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".html",
+    ".json"
+   ],
+   "binding_gaps": [
+    "canonical store not declared",
+    "no named producer"
+   ],
+   "description": "The DataCite metadata sweep of all 1,817 CHA DOIs, captured before and after severance — the external record of what was published.",
+   "interlinked": false
+  }
+ },
+ "producers": {
+  "datasets/heteronyms/heteronyms.jsonl": "scripts/build_heteronym_index.py  (--check)",
+  "datasets/heteronyms/index.json": "scripts/build_heteronym_index.py",
+  "datasets/heteronyms/records/*.json captures block": "scripts/link_heteronym_captures.py  (--check)",
+  "datasets/venues/venues.json": "scripts/build_venues_index.py  (--check)",
+  "datasets/journals/*.jsonl": "scripts/build_journals_dataset.py  (--check)",
+  "data/capture-deposit-links.json": "scripts/resolve_capture_links.py",
+  "data/registry.json": "scripts/mint_deposit.py via scripts/deposit_pipeline.py",
+  "s/records/<n>/index.html": "wire_deposit.regenerate_static_page  (surgical-layer guard)",
+  "api/*.json, s/browse, s/search, s/wiki": "scripts/regenerate_surfaces.py",
+  "data/citation-graph.json": "scripts/citation_extractor.py"
+ },
+ "gates": {
+  "scripts/build_heteronym_index.py --check": "heteronyms.jsonl drifted from records/",
+  "scripts/link_heteronym_captures.py --check": "identity card capture block drifted from the live registry",
+  "scripts/build_venues_index.py --check": "venues.json drifted from venue records",
+  "scripts/build_journals_dataset.py --check": "journals JSONL drifted from registry + venue records",
+  "scripts/check_venue_links.py": "a venue pointer no longer resolves (charter AXN, record, assigned deposit)",
+  "scripts/check_rendered_record.py": "a record page shows something other than what the registry says",
+  "scripts/deposit_completeness.py": "a deposit is missing wiki, concepts, relations, lexical, citations, render, files, or BODY-003 substance",
+  "scripts/check_book_freshness.py": "the Mandala Oracle has stopped recording",
+  "scripts/audit_fleet_deploys.py": "a fleet site is serving a build older than its repo",
+  "scripts/check_surface_synchrony.py": "a public surface disagrees with the registry head",
+  "scripts/check_dataset_navigation.py": "a dataset has no page, a non-standard or colliding title, no back-link, or HIDES its own data files",
+  "scripts/check_external_surfaces.py": "a declared external surface (identity card, capture gallery) no longer resolves",
+  "scripts/check_datasets_tab.py": "the datasets tab disagrees with the corpus"
+ },
+ "interlinks": [
+  {
+   "join": "heteronyms x deposits",
+   "file": "datasets/heteronyms/crosswalk.json",
+   "on": "CREATOR field (byline)",
+   "note": "A position owns a deposit only if named as creator. 9,453 deposit-level citation edges collapsed to 1,910 position-level."
+  },
+  {
+   "join": "heteronyms x venues",
+   "file": "datasets/journals/crosswalk.json",
+   "on": "CREATOR field (byline)",
+   "note": "Position x venue matrix, editor-alignment. 4 of 14 editor seats publish principally in their own venue."
+  },
+  {
+   "join": "mantles x venues",
+   "file": "datasets/journals/crosswalk.json",
+   "on": "ATTESTATION (witness/substrate record)",
+   "note": "REQUIRED SEPARATELY. A creator field records an OCCUPANT; a mantle is a POSITION. Byline join finds nothing and misreports the absence. 682 attestations across 508 deposits."
+  },
+  {
+   "join": "venues x citation graph",
+   "file": "datasets/journals/crosswalk.json",
+   "on": "deposit endpoints -> journal",
+   "note": "9,992 internal edges: 6,752 cross-venue, 3,240 within. CHA is the hub."
+  },
+  {
+   "join": "captures x venues — EVIDENTIARY",
+   "file": "datasets/journals/capture-crosswalk.json",
+   "on": "capture -> deposit -> venue",
+   "note": "Hard links (AXN/DOI/series) are identification; soft links (title/keyword/body) are candidates. 205 of 343 captures resolve."
+  },
+  {
+   "join": "captures x venues — THEMATIC",
+   "file": "datasets/journals/capture-crosswalk.json",
+   "on": "capture text -> venue CLAIM TERMS",
+   "note": "MUST NOT BE SUMMED with the evidentiary route: that would add an identification to a resemblance. 333 of 343 claimed."
+  },
+  {
+   "join": "captures x heteronyms",
+   "file": "datasets/heteronyms/records/*.json captures block",
+   "on": "CLAIM TERMS, many-to-many",
+   "note": "Attribution by claim, not by name: Fraction does SPXI, so an SPXI capture is his whether or not it names him. Counts are evidence of CONTACT, not of ABOUTNESS."
+  },
+  {
+   "join": "venues x Pocket Humans series",
+   "file": "datasets/journals/assignments.jsonl",
+   "on": "deposit number",
+   "note": "52 rows carry series data, 14 carry publication data with ISBN/ASIN distinct."
+  }
+ ],
+ "known_version_conflicts": [
+  {
+   "what": "capture registry",
+   "live": "data/EA-WG-CAPTURES-01.json v11.4, 343 captures",
+   "stale": [
+    "datasets/capture-registry/EA-WG-CAPTURES-01.json v10.0 GALLERY MANIFEST, 300",
+    "datasets/capture-registry/manifest.json v10.0",
+    "data/EA-WG-CAPTURES-01-v8.11.json and -v9.6.json frozen snapshots"
+   ],
+   "risk": "Three files named almost identically; the wrong one has been read at least twice."
+  },
+  {
+   "what": "heteronyms datasets-tab card",
+   "says": "12 Dodecad positions, 13 total",
+   "actual": "26 records across eight subcategories",
+   "action": "tab audit"
+  },
+  {
+   "what": "datasets/venues",
+   "gap": "no manifest, canonical not declared on its face — records/ IS canonical and venues.json is its projection, stated only in the projection"
+  },
+  {
+   "what": "captures x heteronyms",
+   "was": "two linkers, two stores, unreconciled",
+   "now": "reconciled — see RECONCILED_COMPETING_VERSIONS RC-1"
+  }
+ ],
+ "scripts": {
+  "total": 174,
+  "writing_a_known_artifact": 42,
+  "carrying_a_check_gate": 14,
+  "previously_bound_in_the_atlas": 14,
+  "finding": "174 scripts on disk; script-dependency-graph.json named 14. 160 were unbound. 42 write a known artifact and 14 carry a --check gate, so most producers cannot be verified against their output.",
+  "map": {
+   "audit_body_substance.py": {
+    "check": false,
+    "doc": "audit_body_substance.py — classify a deposit by its body, not by its label.",
+    "writes": [],
+    "reads": []
+   },
+   "audit_capture_citability.py": {
+    "check": false,
+    "doc": "audit_capture_citability.py — a capture that cannot be cited is not published.",
+    "writes": [],
+    "reads": [
+     "data/EA-WG-CAPTURES-01.json",
+     "datasets/capture-registry/EA-WG-CAPTURES-01.json",
+     "datasets/capture-registry/index.html"
+    ]
+   },
+   "audit_capture_pairings.py": {
+    "check": false,
+    "doc": "audit_capture_pairings.py — a pairing score cannot tell a sibling from a parent.",
+    "writes": [],
+    "reads": [
+     "data/registry.json",
+     "s/records"
+    ]
+   },
+   "audit_chips.py": {
+    "check": false,
+    "doc": "audit_chips.py — enforce the chip bibliographic standard across every fleet surface.",
+    "writes": [],
+    "reads": [
+     "data/registry.json"
+    ]
+   },
+   "audit_completeness.py": {
+    "check": false,
+    "doc": "audit_completeness.py (v2) — classify body status of every deposit BEFORE the",
+    "writes": [],
+    "reads": []
+   },
+   "audit_fleet_deploys.py": {
+    "check": false,
+    "doc": "Fleet deploy audit: is production behind main, and did the webhook fire?",
+    "writes": [],
+    "reads": []
+   },
+   "audit_orphan_captures.py": {
+    "check": false,
+    "doc": "audit_orphan_captures.py — evidence that exists and was never recorded.",
+    "writes": [
+     "data/EA-WG-CAPTURES-01.json"
+    ],
+    "reads": []
+   },
+   "audit_static_namespace.py": {
+    "check": false,
+    "doc": "audit_static_namespace.py — the archive publishes static files. This asserts",
+    "writes": [],
+    "reads": [
+     "data/api/endpoint-contract.json",
+     "data/registry.json",
+     "s/records"
+    ]
+   },
+   "axn_lib.py": {
+    "check": false,
+    "doc": "axn_lib.py — canonical AXN identifier generation for Alexanarch.",
+    "writes": [],
+    "reads": []
+   },
+   "backfill_axn_compliance.py": {
+    "check": false,
+    "doc": "backfill_axn_compliance.py — regenerate canonical 6-emoji AXNs for deposits",
+    "writes": [],
+    "reads": []
+   },
+   "backplate.py": {
+    "check": false,
+    "doc": "backplate.py — the version history, on the current record only.",
+    "writes": [
+     "data/registry.json"
+    ],
+    "reads": [
+     "s/records/{t}/index.html"
+    ]
+   },
+   "blog_to_markdown.py": {
+    "check": false,
+    "doc": "blog_to_markdown.py — faithful Blogger post -> markdown.",
+    "writes": [],
+    "reads": []
+   },
+   "bootstrap_familiarization.py": {
+    "check": false,
+    "doc": "bootstrap_familiarization.py — what every new agent runs FIRST before touching",
+    "writes": [],
+    "reads": []
+   },
+   "build_before_the_name.py": {
+    "check": false,
+    "doc": "build_before_the_name.py — the deposit dossier for the TLL originating sequence.",
+    "writes": [
+     "data/artifacts/tll-origin/before-the-name.md"
+    ],
+    "reads": [
+     "data/artifacts/tll-origin/manifest.json",
+     "data/artifacts/tll-origin/source"
+    ]
+   },
+   "build_body_index.py": {
+    "check": false,
+    "doc": "build_body_index.py — build /api/body-index.json, an inverted index over the",
+    "writes": [],
+    "reads": []
+   },
+   "build_capture_gallery.py": {
+    "check": true,
+    "doc": "build_capture_gallery.py — the captures must be readable by the things they observe.",
+    "writes": [],
+    "reads": [
+     "data/EA-WG-CAPTURES-01.json"
+    ]
+   },
+   "build_capture_links.py": {
+    "check": true,
+    "doc": "build_capture_links.py — every capture carries its own citation and its mirrors.",
+    "writes": [
+     "data/EA-WG-CAPTURES-01.json"
+    ],
+    "reads": []
+   },
+   "build_central_registry.py": {
+    "check": false,
+    "doc": "Central AXN registry: one index across every route a kernel can enter the",
+    "writes": [
+     "data/axn-central-registry.json"
+    ],
+    "reads": [
+     "data/api/kernel-index.json",
+     "data/registry.json",
+     "data/symbolon-registry/entries"
+    ]
+   },
+   "build_citation_field.py": {
+    "check": false,
+    "doc": "build_citation_field.py — the whole archive, every edge, no threshold.",
+    "writes": [
+     "datasets/heteronyms/citation-field.svg"
+    ],
+    "reads": [
+     "data/citation-graph.json",
+     "data/registry.json",
+     "datasets/heteronyms/crosswalk.json"
+    ]
+   },
+   "build_concept_map.py": {
+    "check": false,
+    "doc": "build_concept_map.py — data/concept-map.json",
+    "writes": [
+     "data/concept-map.json"
+    ],
+    "reads": [
+     "data/registry.json"
+    ]
+   },
+   "build_dataset_pages.py": {
+    "check": false,
+    "doc": "build_dataset_pages.py — every dataset gets a reachable page.",
+    "writes": [],
+    "reads": [
+     "datasets/index.html"
+    ]
+   },
+   "build_deposit_pdfs.py": {
+    "check": false,
+    "doc": "build_deposit_pdfs.py — render each deposit as a Google Scholar-eligible PDF",
+    "writes": [],
+    "reads": []
+   },
+   "build_distribution_index.py": {
+    "check": false,
+    "doc": "build_distribution_index.py — EA-DISTRO-01 §6.",
+    "writes": [],
+    "reads": []
+   },
+   "build_dodecad_graph.py": {
+    "check": false,
+    "doc": "build_dodecad_graph.py — the Dodecad drawn from its own citation data.",
+    "writes": [
+     "datasets/heteronyms/dodecad-graph.svg"
+    ],
+    "reads": [
+     "datasets/heteronyms/crosswalk.json"
+    ]
+   },
+   "build_effective_acts_registry.py": {
+    "check": false,
+    "doc": "build_effective_acts_registry.py — regenerate data/effective-acts-registry.json",
+    "writes": [],
+    "reads": [
+     "data/doi-resolution-index.json",
+     "data/effective-acts-registry.json",
+     "data/registry.json",
+     "data/texts/AXN-02EC-text.md"
+    ]
+   },
+   "build_favicons.py": {
+    "check": false,
+    "doc": "build_favicons.py — one mark per surface, drawn rather than borrowed.",
+    "writes": [],
+    "reads": []
+   },
+   "build_held_adjudication.py": {
+    "check": false,
+    "doc": "build_held_adjudication.py — turn the held list into readable adjudication material.",
+    "writes": [],
+    "reads": []
+   },
+   "build_heteronym_index.py": {
+    "check": true,
+    "doc": "build_heteronym_index.py — project records/ into heteronyms.jsonl.",
+    "writes": [
+     "datasets/heteronyms/heteronyms.jsonl"
+    ],
+    "reads": [
+     "datasets/heteronyms/records",
+     "datasets/heteronyms/records/{p.name}"
+    ]
+   },
+   "build_image_index.py": {
+    "check": false,
+    "doc": "build_image_index.py — every image on the authorial blog, tagged to its post.",
+    "writes": [],
+    "reads": []
+   },
+   "build_image_triage.py": {
+    "check": false,
+    "doc": "build_image_triage.py — grouped, low-resolution, three-state image triage.",
+    "writes": [],
+    "reads": []
+   },
+   "build_journals_dataset.py": {
+    "check": true,
+    "doc": "build_journals_dataset.py — project registry + venue records into datasets/journals.",
+    "writes": [],
+    "reads": [
+     "data/cha-journals.json",
+     "data/registry.json",
+     "datasets/journals",
+     "datasets/venues/issues",
+     "datasets/venues/issues/{f.name}",
+     "datasets/venues/records"
+    ]
+   },
+   "build_kernel_index.py": {
+    "check": false,
+    "doc": "build_kernel_index.py — emit api/kernel-index.json: full-sha256 → registered identity.",
+    "writes": [
+     "data/api/kernel-index.json"
+    ],
+    "reads": [
+     "data/registry.json"
+    ]
+   },
+   "build_lexical_overlay.py": {
+    "check": false,
+    "doc": "build_lexical_overlay.py — derive data/lexical-overlay.json from LMR + entity-index + sema",
+    "writes": [],
+    "reads": []
+   },
+   "build_mirror_map.py": {
+    "check": false,
+    "doc": "build_mirror_map.py — data/mirror-map.json",
+    "writes": [
+     "data/mirror-map.json"
+    ],
+    "reads": [
+     "data/doi-resolution-index.json",
+     "data/registry.json"
+    ]
+   },
+   "build_mpai_issue_bodies.py": {
+    "check": false,
+    "doc": "build_mpai_issue_bodies.py — transport-D issue bodies for the three MPAI packets.",
+    "writes": [],
+    "reads": []
+   },
+   "build_network_block.py": {
+    "check": false,
+    "doc": "build_network_block.py — one network block, generated, for every surface.",
+    "writes": [],
+    "reads": [
+     "data/fleet-domains.json",
+     "datasets/heteronyms/records"
+    ]
+   },
+   "build_oai_index.py": {
+    "check": false,
+    "doc": "build_oai_index.py — compile a lean index for the OAI-PMH endpoint.",
+    "writes": [],
+    "reads": []
+   },
+   "build_record_api.py": {
+    "check": false,
+    "doc": "build_record_api.py — one record, one GET: data/records/<n>.json for every deposit.",
+    "writes": [],
+    "reads": [
+     "data/registry.json"
+    ]
+   },
+   "build_resourcesync.py": {
+    "check": false,
+    "doc": "build_resourcesync.py — autodiscovery for a repository nobody registered.",
+    "writes": [],
+    "reads": [
+     "data/symbolon-registry/MANIFEST.json"
+    ]
+   },
+   "build_semantic_addresses.py": {
+    "check": false,
+    "doc": "scripts/build_semantic_addresses.py",
+    "writes": [],
+    "reads": [
+     "data/EA-WG-CAPTURES-01.json",
+     "data/semantic-addresses.json",
+     "data/semantic-addresses.schema.json",
+     "data/trackers/cha-workplan-870.json",
+     "data/trackers/mm-mint.json",
+     "data/trackers/mm-revfirst-registry.json"
+    ]
+   },
+   "build_sequence_deposit.py": {
+    "check": false,
+    "doc": "build_sequence_deposit.py — the TLL primary sequence, full text IN the deposit.",
+    "writes": [
+     "data/artifacts/tll-origin/primary-sequence.md"
+    ],
+    "reads": [
+     "data/artifacts/tll-origin/sequence",
+     "data/artifacts/tll-origin/sequence-manifest.json"
+    ]
+   },
+   "build_snapshots.py": {
+    "check": false,
+    "doc": "build_snapshots.py — pull GoatCounter Stats Export API for each configured",
+    "writes": [],
+    "reads": []
+   },
+   "build_tll_sequence_md.py": {
+    "check": false,
+    "doc": "build_tll_sequence_md.py — compile the originating sequence as a working document.",
+    "writes": [],
+    "reads": []
+   },
+   "build_venues_index.py": {
+    "check": true,
+    "doc": "build_venues_index.py — project venues/records/ into venues.json.",
+    "writes": [
+     "datasets/venues/venues.json"
+    ],
+    "reads": [
+     "datasets/venues/records"
+    ]
+   },
+   "capability_register.py": {
+    "check": false,
+    "doc": "capability_register.py — the archive remembers what it could do, and refuses less.",
+    "writes": [
+     "data/api/capability-register.json"
+    ],
+    "reads": [
+     "data/api/endpoint-contract.json",
+     "data/registry.json"
+    ]
+   },
+   "capture_intake.py": {
+    "check": false,
+    "doc": "capture_intake.py — THE INTAKE CONTRACT for the Capture Registry.",
+    "writes": [],
+    "reads": [
+     "rebuild/capture-registry/EA-WG-CAPTURES-01-REBUILD.json"
+    ]
+   },
+   "check_body_hygiene.py": {
+    "check": false,
+    "doc": "check_body_hygiene.py — find conversion defects in canonical bodies.",
+    "writes": [],
+    "reads": [
+     "data/deposits/AXN-{hexid}.md",
+     "data/registry.json",
+     "data/texts/AXN-{hexid}-text.md"
+    ]
+   },
+   "check_book_freshness.py": {
+    "check": false,
+    "doc": "check_book_freshness.py — is the Mandala Oracle still recording?",
+    "writes": [],
+    "reads": []
+   },
+   "check_capture_page_current.py": {
+    "check": false,
+    "doc": "check_capture_page_current.py — fail when the captures page is behind the registry.",
+    "writes": [],
+    "reads": [
+     "data/EA-WG-CAPTURES-01.json"
+    ]
+   },
+   "check_datasets_tab.py": {
+    "check": false,
+    "doc": "check_datasets_tab.py — does the datasets tab describe what is actually there?",
+    "writes": [],
+    "reads": [
+     "data/EA-WG-CAPTURES-01.json",
+     "data/citation-graph.json",
+     "data/registry.json",
+     "datasets/index.html"
+    ]
+   },
+   "check_filter_binds.py": {
+    "check": true,
+    "doc": "check_filter_binds.py — does the list filter actually bind to the rows?",
+    "writes": [],
+    "reads": [
+     "s/browse/index.html",
+     "s/wiki/index.html"
+    ]
+   },
+   "check_fleet_sync.py": {
+    "check": false,
+    "doc": "check_fleet_sync.py — no node may declare a registry state divergent from canonical.",
+    "writes": [],
+    "reads": [
+     "data/EA-WG-CAPTURES-01.json"
+    ]
+   },
+   "check_graphs_consumed.py": {
+    "check": false,
+    "doc": "check_graphs_consumed.py — is every citation graph actually reaching a surface?",
+    "writes": [],
+    "reads": [
+     "data/citation-graph*.json"
+    ]
+   },
+   "check_html_validity.py": {
+    "check": false,
+    "doc": "check_html_validity.py — structural HTML faults that silently wreck a page.",
+    "writes": [],
+    "reads": [
+     "s/*/index.html",
+     "s/browse/index.html",
+     "s/graph/index.html",
+     "s/index.html",
+     "s/records/1/index.html",
+     "s/records/1307/index.html"
+    ]
+   },
+   "check_render_determinism.py": {
+    "check": false,
+    "doc": "check_render_determinism.py — the same record must render the same every time.",
+    "writes": [],
+    "reads": []
+   },
+   "check_rendered_record.py": {
+    "check": false,
+    "doc": "check_rendered_record.py — validate a record AS A READER SEES IT.",
+    "writes": [],
+    "reads": [
+     "data/registry.json",
+     "s/records/{n}/index.html"
+    ]
+   },
+   "check_resolver_parity.py": {
+    "check": false,
+    "doc": "R2 parity check: canonical index, API map, and /resolve/ selection must",
+    "writes": [],
+    "reads": []
+   },
+   "check_snapshot_freshness.py": {
+    "check": false,
+    "doc": "check_snapshot_freshness.py — a frozen counter must announce itself.",
+    "writes": [],
+    "reads": []
+   },
+   "check_state_conformance.py": {
+    "check": false,
+    "doc": "check_state_conformance.py — the RULE that replaces the manual catch.",
+    "writes": [],
+    "reads": [
+     "data/deposits/AXN-{hexid}.md",
+     "data/oai-index.json",
+     "data/texts/AXN-{hexid}-text.md",
+     "s/records/{n}/index.html"
+    ]
+   },
+   "check_supersession_terminal.py": {
+    "check": false,
+    "doc": "check_supersession_terminal.py — does every edition reach current state in ONE hop?",
+    "writes": [],
+    "reads": []
+   },
+   "check_surface_synchrony.py": {
+    "check": false,
+    "doc": "check_surface_synchrony.py — one clock for the archive.",
+    "writes": [],
+    "reads": [
+     "data/api/index.json",
+     "data/api/search-index.json",
+     "data/registry.json",
+     "data/state.json",
+     "s/browse/index.html"
+    ]
+   },
+   "check_venue_links.py": {
+    "check": false,
+    "doc": "check_venue_links.py — keep the venue dataset synced to the registry.",
+    "writes": [],
+    "reads": [
+     "data/registry.json",
+     "datasets/venues/records"
+    ]
+   },
+   "citable.py": {
+    "check": false,
+    "doc": "citable.py — resolve a deposit to something worth citing.",
+    "writes": [],
+    "reads": [
+     "data/registry.json"
+    ]
+   },
+   "citation_extractor.py": {
+    "check": false,
+    "doc": "citation_extractor.py — extends data/citation-graph.json with edges discovered",
+    "writes": [],
+    "reads": []
+   },
+   "cite_draft.py": {
+    "check": false,
+    "doc": "cite_draft.py — DRAFT ONLY. The parser proposes; TACHYON reads and rules.",
+    "writes": [],
+    "reads": []
+   },
+   "classify_bodies.py": {
+    "check": false,
+    "doc": "classify_bodies.py — classify by what the record says, not by how long it is.",
+    "writes": [],
+    "reads": []
+   },
+   "clean_transcript.py": {
+    "check": false,
+    "doc": "clean_transcript.py — VERBATIM ON CONTENT, NOT ON COPY-PASTE RESIDUE.",
+    "writes": [],
+    "reads": []
+   },
+   "coherence_sync.py": {
+    "check": false,
+    "doc": "coherence_sync.py — EA-AVAILABILITY-INTEGRITY-01, Task T3 (audit #1413, H3).",
+    "writes": [
+     "data/api/index.json"
+    ],
+    "reads": [
+     "data/api/axn-index.json",
+     "data/api/body-index.json",
+     "data/api/search-index.json",
+     "data/doi-resolution-index.json",
+     "data/registry.json"
+    ]
+   },
+   "concept_backlink.py": {
+    "check": false,
+    "doc": "concept_backlink.py — populates bidirectional links between concepts in",
+    "writes": [],
+    "reads": []
+   },
+   "deposit_completeness.py": {
+    "check": false,
+    "doc": "deposit_completeness.py — per-deposit completeness gate (deposit-completeness/v1).",
+    "writes": [],
+    "reads": [
+     "data/citation-graph.json",
+     "data/deposits/AXN-{hexid}.md",
+     "data/lexical-minting-registry.json",
+     "data/registry.json",
+     "data/texts/AXN-{hexid}-text.md",
+     "s/records/{n}/index.html"
+    ]
+   },
+   "deposit_pipeline.py": {
+    "check": true,
+    "doc": "deposit_pipeline.py — THE single deposit workflow for Alexanarch.",
+    "writes": [],
+    "reads": [
+     "data/entity-index.json",
+     "data/pre-overwrite-receipts.log",
+     "data/registry.json"
+    ]
+   },
+   "detex_canonical.py": {
+    "check": true,
+    "doc": "detex_canonical.py — plain-text mathematical notation in canonical deposit text.",
+    "writes": [],
+    "reads": []
+   },
+   "dodecad_cleanup.py": {
+    "check": false,
+    "doc": "Dodecad site cleanup engine.",
+    "writes": [],
+    "reads": []
+   },
+   "doi_ownership_gate.py": {
+    "check": true,
+    "doc": "doi_ownership_gate.py — EA-AVAILABILITY-INTEGRITY-01, Task T18(c).",
+    "writes": [],
+    "reads": [
+     "data/doi-resolution-index.json",
+     "data/registry.json"
+    ]
+   },
+   "dw_intake.py": {
+    "check": false,
+    "doc": "DW intake harness: parse a LABOR batch, verify against each record's own body, seat.",
+    "writes": [
+     "data/registry.json"
+    ],
+    "reads": []
+   },
+   "elevate_exemplars.py": {
+    "check": false,
+    "doc": "elevate_exemplars.py — clean six records and mark them as the reading canon.",
+    "writes": [
+     "data/EA-WG-CAPTURES-01.json"
+    ],
+    "reads": []
+   },
+   "enrich_datasets.py": {
+    "check": false,
+    "doc": "enrich_datasets.py — dataset-branch enrichment (EA-RETRIEVAL-DENSITY-01, Task 5).",
+    "writes": [],
+    "reads": []
+   },
+   "enrich_deposit.py": {
+    "check": false,
+    "doc": "enrich_deposit.py — Alexanarch deposit enrichment orchestrator.",
+    "writes": [],
+    "reads": []
+   },
+   "enrich_resolver_evidence.py": {
+    "check": false,
+    "doc": "enrich_resolver_evidence.py — R1 truth layer (resolver hardening, EA-DISTRO-01 freeze).",
+    "writes": [],
+    "reads": [
+     "data/datacite-full-backup.json",
+     "data/doi-resolution-index.json",
+     "data/registry.json",
+     "datasets/negshape-deletion-bibliography/deletion-bibliography.json",
+     "datasets/tombstone-mirror/tombstone-api.jsonl"
+    ]
+   },
+   "export_uploads.py": {
+    "check": false,
+    "doc": "export_uploads.py — recover everything MANUS put INTO the conversations.",
+    "writes": [],
+    "reads": []
+   },
+   "extract_citations.py": {
+    "check": false,
+    "doc": "extract_citations.py — seat every citation, marked, in one list.",
+    "writes": [],
+    "reads": []
+   },
+   "extract_citations_external.py": {
+    "check": false,
+    "doc": "extract_citations_external.py — Stage A of the Total Citation Graph.",
+    "writes": [],
+    "reads": [
+     "data/doi-axn-map.json",
+     "data/doi-resolution-index.json"
+    ]
+   },
+   "extract_pastes_from_export.py": {
+    "check": false,
+    "doc": "extract_pastes_from_export.py — recover capture transcripts from the export.",
+    "writes": [],
+    "reads": []
+   },
+   "fanout.py": {
+    "check": false,
+    "doc": "fanout.py — autonomous propagation of new deposits to external surfaces.",
+    "writes": [
+     "data/fanout-state.json"
+    ],
+    "reads": [
+     "data/registry.json",
+     "data/texts/AXN-{hx}-text.md"
+    ]
+   },
+   "field_discipline.py": {
+    "check": false,
+    "doc": "field_discipline.py — genre in the genre field, condition in the condition field.",
+    "writes": [],
+    "reads": []
+   },
+   "filter_widget.py": {
+    "check": false,
+    "doc": "filter_widget.py — one filter implementation, injected by whichever generator",
+    "writes": [],
+    "reads": []
+   },
+   "fix_chips.py": {
+    "check": false,
+    "doc": "fix_chips.py — bring a satellite surface to the chip standard, one site at a time.",
+    "writes": [],
+    "reads": []
+   },
+   "generate_axn_resolver.py": {
+    "check": false,
+    "doc": "generate_axn_resolver.py — regenerate the AXN resolution layer from data/registry.json.",
+    "writes": [],
+    "reads": [
+     "data/api/axn-index.json",
+     "data/registry.json",
+     "s/axn"
+    ]
+   },
+   "generate_node_declaration.py": {
+    "check": true,
+    "doc": "generate_node_declaration.py — the federation declaration is COMPUTED, never typed.",
+    "writes": [],
+    "reads": [
+     "data/axn-central-registry.json",
+     "data/registry.json",
+     "data/symbolon-registry/MANIFEST.json"
+    ]
+   },
+   "generate_observatory.py": {
+    "check": false,
+    "doc": "generate_observatory.py — render /observatory/index.html from /data/surface-weather/scans/",
+    "writes": [],
+    "reads": [
+     "data/surface-weather/scans"
+    ]
+   },
+   "generate_state.py": {
+    "check": false,
+    "doc": "generate_state.py — produce data/state.json from actual data files.",
+    "writes": [],
+    "reads": [
+     "data/EA-WG-CAPTURES-01.json",
+     "data/api/axn-protocol.json",
+     "data/api/deposit-protocol.json",
+     "data/api/deposit-schema.json",
+     "data/api/enrichment-protocol.json",
+     "data/api/lifecycle-protocol.json"
+    ]
+   },
+   "glyph_aria.py": {
+    "check": false,
+    "doc": "glyph_aria.py — accessible/machine-parseable labels for AXN glyph sequences.",
+    "writes": [],
+    "reads": []
+   },
+   "harvest_capture_palette.py": {
+    "check": false,
+    "doc": "harvest_palette.py — build the capture-registry repair palette.",
+    "writes": [],
+    "reads": [
+     "data/EA-WG-CAPTURES-01-v8.11.json",
+     "data/EA-WG-CAPTURES-01-v8.3.json",
+     "data/EA-WG-CAPTURES-01-v9.6.json",
+     "data/EA-WG-CAPTURES-01.json",
+     "data/archive/EA-WG-CAPTURES-01-v9.42-pre-transcript-extraction-20260811.json",
+     "data/registry.json"
+    ]
+   },
+   "harvest_gallery_html.py": {
+    "check": false,
+    "doc": "harvest_gallery_html.py — recover capture entries from the gallery HTML history.",
+    "writes": [],
+    "reads": []
+   },
+   "harvest_palette.py": {
+    "check": false,
+    "doc": "harvest_palette.py — build the capture-registry repair palette.",
+    "writes": [],
+    "reads": [
+     "data/EA-WG-CAPTURES-01-v8.11.json",
+     "data/EA-WG-CAPTURES-01-v8.3.json",
+     "data/EA-WG-CAPTURES-01-v9.6.json",
+     "data/EA-WG-CAPTURES-01.json",
+     "data/archive/EA-WG-CAPTURES-01-v9.42-pre-transcript-extraction-20260811.json",
+     "data/registry.json"
+    ]
+   },
+   "hash_blog_images.py": {
+    "check": false,
+    "doc": "hash_blog_images.py — group the blog's images by what they LOOK like.",
+    "writes": [],
+    "reads": []
+   },
+   "index_blog.py": {
+    "check": false,
+    "doc": "index_blog.py — build and search a complete local index of the authorial blog.",
+    "writes": [],
+    "reads": [
+     "data/registry.json"
+    ]
+   },
+   "indexnow_submit.py": {
+    "check": false,
+    "doc": "indexnow_submit.py — notify participating engines the moment a record lands.",
+    "writes": [],
+    "reads": []
+   },
+   "insert_seed_deposits.py": {
+    "check": false,
+    "doc": "insert_seed_deposits.py — insert the three substrate-authored continuity-tether",
+    "writes": [],
+    "reads": []
+   },
+   "link_captures_to_heteronyms.py": {
+    "check": false,
+    "doc": "link_captures_to_heteronyms.py — wire capture intake to the Dodecad dataset.",
+    "writes": [
+     "data/dodecad.json"
+    ],
+    "reads": [
+     "data/EA-WG-CAPTURES-01.json"
+    ]
+   },
+   "link_heteronym_captures.py": {
+    "check": true,
+    "doc": "link_heteronym_captures.py — attribute captures to heteronyms BY CLAIM.",
+    "writes": [],
+    "reads": [
+     "data/EA-WG-CAPTURES-01.json",
+     "datasets/heteronyms/records"
+    ]
+   },
+   "locate_restoration_candidates.py": {
+    "check": false,
+    "doc": "locate_restoration_candidates.py — propose, with evidence. Seat nothing.",
+    "writes": [],
+    "reads": []
+   },
+   "map_blog_to_deposits.py": {
+    "check": false,
+    "doc": "map_blog_to_deposits.py — provisional blog-post ↔ deposit mapping, 2026 onward.",
+    "writes": [],
+    "reads": [
+     "data/registry.json"
+    ]
+   },
+   "match_semi_candidates.py": {
+    "check": false,
+    "doc": "match_semi_candidates.py — record potential blog matches for semi-restored works.",
+    "writes": [],
+    "reads": []
+   },
+   "md_render.py": {
+    "check": false,
+    "doc": "Markdown → HTML renderer for Alexanarch record pages.",
+    "writes": [],
+    "reads": []
+   },
+   "mint_deposit.py": {
+    "check": false,
+    "doc": "mint_deposit.py — produce a valid deposit from a validated GitHub Issue body.",
+    "writes": [],
+    "reads": []
+   },
+   "mirror_capture_images.py": {
+    "check": false,
+    "doc": "mirror_capture_images.py — the archive holds its own evidence.",
+    "writes": [
+     "data/EA-WG-CAPTURES-01.json"
+    ],
+    "reads": [
+     "data/captures",
+     "data/captures/"
+    ]
+   },
+   "mret.py": {
+    "check": false,
+    "doc": "mret.py — Machine Retrieval Eligibility Test: an executable gate, not a description.",
+    "writes": [],
+    "reads": [
+     "data/records",
+     "data/registry.json",
+     "data/texts",
+     "s/records"
+    ]
+   },
+   "msp_apply.py": {
+    "check": false,
+    "doc": "msp_apply.py — Mandala Surface Protocol contract applicator.",
+    "writes": [],
+    "reads": []
+   },
+   "nominate_duplicates.py": {
+    "check": false,
+    "doc": "nominate_duplicates.py - find capture records whose work may already be held in full.",
+    "writes": [],
+    "reads": [
+     "data/registry.json",
+     "s/records/{n}/index.html"
+    ]
+   },
+   "ocr_captures.py": {
+    "check": false,
+    "doc": "ocr_captures.py — read the screenshots, with the newline discipline.",
+    "writes": [],
+    "reads": []
+   },
+   "omega_t.py": {
+    "check": false,
+    "doc": "omega_t.py — compute Ω_t, the time axis of Erasure Skew.",
+    "writes": [],
+    "reads": []
+   },
+   "overwrite_guard.py": {
+    "check": false,
+    "doc": "overwrite_guard.py — importable helpers for the pre-overwrite mechanism.",
+    "writes": [],
+    "reads": []
+   },
+   "parse_refsec_queue.py": {
+    "check": false,
+    "doc": "parse_refsec_queue.py — Stage C bulk pass (in-session heuristic layer).",
+    "writes": [],
+    "reads": []
+   },
+   "pdf_to_markdown.py": {
+    "check": false,
+    "doc": "pdf_to_markdown.py — faithful PDF → markdown for deposit seating.",
+    "writes": [],
+    "reads": []
+   },
+   "pre_overwrite.py": {
+    "check": false,
+    "doc": "pre_overwrite.py — produce a structural inventory receipt before overwriting an existing f",
+    "writes": [],
+    "reads": []
+   },
+   "propagate_deposit.py": {
+    "check": false,
+    "doc": "propagate_deposit.py — post-mint propagation (spec v0.2 §7.2).",
+    "writes": [],
+    "reads": [
+     "data/external-metadata/AXN-{hexid}.json",
+     "data/registry.json"
+    ]
+   },
+   "propagate_network_entry.py": {
+    "check": false,
+    "doc": "propagate_network_entry.py - add a domain to every fleet site's network bloc.",
+    "writes": [],
+    "reads": []
+   },
+   "propagate_record_state.py": {
+    "check": false,
+    "doc": "propagate_record_state.py — one repair, one state, everywhere.",
+    "writes": [
+     "data/registry.json"
+    ],
+    "reads": [
+     "data/entity-index.json"
+    ]
+   },
+   "propagate_titles.py": {
+    "check": false,
+    "doc": "propagate_titles.py — push canonical titles from the registry into every derived",
+    "writes": [],
+    "reads": [
+     "data/browse-index.json",
+     "data/capture-deposit-links.json",
+     "data/concept-map.json",
+     "data/mirror-map.json",
+     "data/registry.json",
+     "data/wiki-entries.json"
+    ]
+   },
+   "protocol_update.py": {
+    "check": false,
+    "doc": "protocol_update.py — atomic protocol update + central-index propagation.",
+    "writes": [],
+    "reads": []
+   },
+   "publish_semantic_addresses.py": {
+    "check": false,
+    "doc": "publish_semantic_addresses.py — generate one crawlable HTML page per semantic",
+    "writes": [],
+    "reads": []
+   },
+   "publish_wiki_entries.py": {
+    "check": false,
+    "doc": "publish_wiki_entries.py — generate one crawlable HTML page per wiki entry at",
+    "writes": [],
+    "reads": []
+   },
+   "reaudit_canonical_text.py": {
+    "check": false,
+    "doc": "reaudit_canonical_text.py — EA-AVAILABILITY-INTEGRITY-01, Task T2.",
+    "writes": [
+     "data/reaudit-T2-diff-2026-07-28.json",
+     "data/registry.json"
+    ],
+    "reads": []
+   },
+   "reconcile_axn_surfaces.py": {
+    "check": false,
+    "doc": "reconcile_axn_surfaces.py — after any re-glyphing, bring every AXN-bearing",
+    "writes": [],
+    "reads": []
+   },
+   "reconcile_recovered_metadata.py": {
+    "check": false,
+    "doc": "reconcile_recovered_metadata.py — wire recovered metadata into Alexanarch.",
+    "writes": [],
+    "reads": []
+   },
+   "reconcile_resolution_index.py": {
+    "check": false,
+    "doc": "reconcile_resolution_index.py — wire recovered metadata into the DOI Resolution Index.",
+    "writes": [],
+    "reads": []
+   },
+   "record_modification.py": {
+    "check": false,
+    "doc": "record_modification.py — the archive's own provenance of change.",
+    "writes": [],
+    "reads": []
+   },
+   "record_state.py": {
+    "check": false,
+    "doc": "record_state.py — THE canonical derivation of a record's declared state.",
+    "writes": [],
+    "reads": [
+     "data/registry.json"
+    ]
+   },
+   "recover_zenodo_bulk.py": {
+    "check": false,
+    "doc": "recover_zenodo_bulk.py — Extract Crimson Hexagonal Archive metadata from the Zenodo monthl",
+    "writes": [],
+    "reads": [
+     "data/doi-resolution-index.json"
+    ]
+   },
+   "recovery_status.py": {
+    "check": false,
+    "doc": "Recovery status taxonomy for the Alexanarch file-salvage operation.",
+    "writes": [],
+    "reads": []
+   },
+   "reextract_sequence.py": {
+    "check": true,
+    "doc": "reextract_sequence.py — repair the line breaks in the TLL sequence deposits.",
+    "writes": [],
+    "reads": [
+     "data/artifacts/tll-origin/sequence",
+     "data/artifacts/tll-origin/source"
+    ]
+   },
+   "reflow_structure.py": {
+    "check": false,
+    "doc": "reflow_structure.py — give the deposit's words the blog's structure, and nothing else.",
+    "writes": [
+     "data/registry.json"
+    ],
+    "reads": [
+     "data/blog-deposit-map.json",
+     "data/restoration-apparatus"
+    ]
+   },
+   "refsec_parse.py": {
+    "check": false,
+    "doc": "refsec_parse.py — triage and parse the freeform reference-section queue.",
+    "writes": [],
+    "reads": [
+     "data/worklists/refsec-parse-queue.json"
+    ]
+   },
+   "regenerate_surfaces.py": {
+    "check": false,
+    "doc": "regenerate_surfaces.py — bring every derived surface into agreement with data/registry.jso",
+    "writes": [],
+    "reads": [
+     "data/symbolon-registry/files",
+     "data/texts/AXN-{hex_id}-text.md",
+     "datasets/index.html"
+    ]
+   },
+   "remediate_resolution_index.py": {
+    "check": false,
+    "doc": "remediate_resolution_index.py — 2026-07-19 DOI-key remediation of data/doi-resolution-inde",
+    "writes": [],
+    "reads": []
+   },
+   "render_navbar.py": {
+    "check": false,
+    "doc": "Render the canonical Alexanarch navigation bar from data/navigation.json.",
+    "writes": [],
+    "reads": []
+   },
+   "repair_titles_and_supersession.py": {
+    "check": false,
+    "doc": "repair_titles_and_supersession.py",
+    "writes": [
+     "data/registry.json"
+    ],
+    "reads": []
+   },
+   "repoint_and_release_20260811.py": {
+    "check": false,
+    "doc": "repoint_and_release_20260811.py — DOI Resolution Index v3.6 remediation.",
+    "writes": [],
+    "reads": []
+   },
+   "resolve_capture_links.py": {
+    "check": false,
+    "doc": "resolve_capture_links.py — build data/capture-deposit-links.json",
+    "writes": [
+     "data/capture-deposit-links.json"
+    ],
+    "reads": [
+     "data/EA-WG-CAPTURES-01.json",
+     "data/doi-resolution-index.json",
+     "data/registry.json"
+    ]
+   },
+   "resolve_links.py": {
+    "check": false,
+    "doc": "resolve_links.py — repoint surface links at current records.",
+    "writes": [],
+    "reads": [
+     "data/registry.json",
+     "data/retired-records.json"
+    ]
+   },
+   "restore_caesura.py": {
+    "check": false,
+    "doc": "restore_caesura.py — restore records from their blog originals, structure intact.\\n\\nAlso ",
+    "writes": [],
+    "reads": [
+     "data/registry.json"
+    ]
+   },
+   "restore_from_blog.py": {
+    "check": false,
+    "doc": "restore_from_blog.py — batch restoration of queue works from live blog surfaces.",
+    "writes": [],
+    "reads": [
+     "data/pre-overwrite-receipts.log",
+     "data/registry.json"
+    ]
+   },
+   "restore_in_place.py": {
+    "check": false,
+    "doc": "restore_in_place.py — seat recovered blog bodies into EXISTING deposits.",
+    "writes": [],
+    "reads": []
+   },
+   "restore_metadata_only.py": {
+    "check": false,
+    "doc": "restore_metadata_only.py — semi-restored mints for queue works with no live source.",
+    "writes": [],
+    "reads": []
+   },
+   "restore_sf_line.py": {
+    "check": false,
+    "doc": "restore_sf_line.py — give the downstream galleries their surface line back.",
+    "writes": [
+     "data/EA-WG-CAPTURES-01.json"
+    ],
+    "reads": [
+     "data/EA-WG-CAPTURES-01-v9.6.json",
+     "rebuild/capture-registry/EA-WG-CAPTURES-01-REBUILD.json"
+    ]
+   },
+   "retire.py": {
+    "check": false,
+    "doc": "retire.py — make dead records resolve forward instead of being cited.",
+    "writes": [
+     "data/registry.json"
+    ],
+    "reads": [
+     "s/records/{n}/index.html"
+    ]
+   },
+   "safe_write.py": {
+    "check": false,
+    "doc": "safe_write.py — never truncate the registry again.",
+    "writes": [],
+    "reads": []
+   },
+   "salvage_zenodo.py": {
+    "check": false,
+    "doc": "salvage_zenodo.py — Phase 8.1 file salvage operation.",
+    "writes": [],
+    "reads": []
+   },
+   "seat_20260812_coldstart.py": {
+    "check": false,
+    "doc": "seat_20260812_coldstart.py — the three cold-start traversals, 2026-08-12.",
+    "writes": [
+     "data/EA-WG-CAPTURES-01.json"
+    ],
+    "reads": []
+   },
+   "seat_20260813.py": {
+    "check": false,
+    "doc": "seat_20260813.py — seat the 2026-08-13 batch into the published projection.",
+    "writes": [
+     "data/EA-WG-CAPTURES-01.json"
+    ],
+    "reads": [
+     "data/captures",
+     "data/captures/{slug}/{fn}"
+    ]
+   },
+   "seat_20260813_2142.py": {
+    "check": false,
+    "doc": "seat_20260813_2142.py — the 21:42 batch: 7 captures, 7 images, all AI Overview.",
+    "writes": [
+     "data/EA-WG-CAPTURES-01.json"
+    ],
+    "reads": [
+     "data/captures",
+     "data/captures/{sl}/{fn}"
+    ]
+   },
+   "seat_20260813_2248.py": {
+    "check": false,
+    "doc": "seat_20260813_2248.py — the 22:48 batch: 13 captures, all AI Overview, signed in.",
+    "writes": [
+     "data/EA-WG-CAPTURES-01.json"
+    ],
+    "reads": [
+     "data/captures",
+     "data/captures/{sl}/{fn}"
+    ]
+   },
+   "seat_20260813_rerun.py": {
+    "check": false,
+    "doc": "seat_20260813_rerun.py — the 18:57 rerun batch: 17 captures, 19 images.",
+    "writes": [
+     "data/EA-WG-CAPTURES-01.json"
+    ],
+    "reads": []
+   },
+   "seat_20260814_0049.py": {
+    "check": false,
+    "doc": "seat_20260814_0049.py — 17 captures, and the first measured frame/paste divergence.",
+    "writes": [
+     "data/EA-WG-CAPTURES-01.json"
+    ],
+    "reads": [
+     "data/captures",
+     "data/captures/{sl}/{fn}"
+    ]
+   },
+   "seat_20260814_1745.py": {
+    "check": false,
+    "doc": "seat_20260814_1745.py — thirteen AI Overview captures, 2026-08-14 17:45.",
+    "writes": [
+     "data/EA-WG-CAPTURES-01.json"
+    ],
+    "reads": [
+     "data/captures"
+    ]
+   },
+   "seat_20260814_luna.py": {
+    "check": false,
+    "doc": "seat_20260814_luna.py — the unprimed ChatGPT session, 2026-08-14.",
+    "writes": [
+     "data/EA-WG-CAPTURES-01.json"
+    ],
+    "reads": [
+     "data/captures",
+     "data/captures/{SLUG}/{IMG}"
+    ]
+   },
+   "seat_20260814_spxi.py": {
+    "check": false,
+    "doc": "seat_20260814_spxi.py — the SPXI rent event, unprimed ChatGPT.",
+    "writes": [
+     "data/EA-WG-CAPTURES-01.json"
+    ],
+    "reads": []
+   },
+   "seat_source.py": {
+    "check": false,
+    "doc": "seat_source.py — seat one source's data into the rebuilt registry, with a ledger.",
+    "writes": [],
+    "reads": []
+   },
+   "separate_apparatus.py": {
+    "check": false,
+    "doc": "separate_apparatus.py — the body is the WORK. Apparatus belongs to the record.",
+    "writes": [
+     "data/registry.json"
+    ],
+    "reads": [
+     "data/restoration-apparatus",
+     "data/texts"
+    ]
+   },
+   "spxi_tlp_apply.py": {
+    "check": false,
+    "doc": "spxi_tlp_apply.py — SPXI-TLP contract applicator.",
+    "writes": [],
+    "reads": []
+   },
+   "status_reconcile.py": {
+    "check": false,
+    "doc": "status_reconcile.py — one status, derived everywhere.",
+    "writes": [],
+    "reads": []
+   },
+   "sync_capture_dataset.py": {
+    "check": false,
+    "doc": "sync_capture_dataset.py — publish the capture registry as a dataset from source.",
+    "writes": [],
+    "reads": [
+     "data/EA-WG-CAPTURES-01.json",
+     "data/capture-deposit-links.json",
+     "data/semantic-addresses.json"
+    ]
+   },
+   "sync_mint_mirrors.py": {
+    "check": false,
+    "doc": "sync_mint_mirrors.py — propagate the canonical /mint/ page to fleet mirrors.",
+    "writes": [],
+    "reads": [
+     "data/api/kernel-index.json"
+    ]
+   },
+   "sync_navbars.py": {
+    "check": false,
+    "doc": "Sync the navbar across all authored static HTML pages.",
+    "writes": [],
+    "reads": [
+     "datasets/index.html"
+    ]
+   },
+   "sync_resolver.py": {
+    "check": true,
+    "doc": "sync_resolver.py — canonical DOI Resolution Index integrity enforcement.",
+    "writes": [],
+    "reads": []
+   },
+   "unwrap_deposit.py": {
+    "check": true,
+    "doc": "unwrap_deposit.py — remove wrap artifacts, keep every encoded break.",
+    "writes": [
+     "data/registry.json"
+    ],
+    "reads": []
+   },
+   "validate_deposit.py": {
+    "check": false,
+    "doc": "validate_deposit.py — validates deposit submissions against the canonical",
+    "writes": [],
+    "reads": []
+   },
+   "validate_external_metadata.py": {
+    "check": false,
+    "doc": "validate_external_metadata.py — verify external-metadata sidecars against schema.",
+    "writes": [],
+    "reads": []
+   },
+   "validate_resolver.py": {
+    "check": false,
+    "doc": "validate_resolver.py — Resolver acceptance gate (P0-1).",
+    "writes": [],
+    "reads": []
+   },
+   "verify_symbolon_store.py": {
+    "check": false,
+    "doc": "verify_symbolon_store.py — re-verify every stored sealed core against its kernel,",
+    "writes": [
+     "data/symbolon-registry/MANIFEST.json"
+    ],
+    "reads": [
+     "data/symbolon-registry/entries",
+     "data/symbolon-registry/files"
+    ]
+   },
+   "wave_hexpos_phase1.py": {
+    "check": false,
+    "doc": "WAVE-HEXPOS-01 · Phase 1 — hex-width normalization of the three founding",
+    "writes": [
+     "data/registry.json"
+    ],
+    "reads": [
+     "s/axn/{new_hx}",
+     "s/axn/{old_hx}"
+    ]
+   },
+   "wave_hexpos_phase2.py": {
+    "check": false,
+    "doc": "WAVE-HEXPOS-01 · Phase 2 (as executed 2026-08-06) — contested-position resolution.",
+    "writes": [
+     "data/registry.json",
+     "data/symbolon-registry/allocation.json"
+    ],
+    "reads": [
+     "data/deposits/AXN-{hx}.md",
+     "data/deposits/AXN-{old_hx}.md",
+     "data/external-metadata/AXN-{old_hx}.json",
+     "data/symbolon-registry/entries/{SYM_ENTRY}.json",
+     "data/texts/",
+     "data/texts/AXN-{old_hx}-text.md"
+    ]
+   },
+   "withdraw_duplicate_seatings.py": {
+    "check": false,
+    "doc": "withdraw_duplicate_seatings.py — the same capture seated twice.",
+    "writes": [
+     "data/EA-WG-CAPTURES-01.json"
+    ],
+    "reads": []
+   }
+  }
+ },
+ "artifacts": {
+  "data/EA-WG-CAPTURES-01.json": {
+   "producers": [
+    "audit_orphan_captures.py",
+    "build_capture_links.py",
+    "elevate_exemplars.py",
+    "mirror_capture_images.py",
+    "restore_sf_line.py",
+    "seat_20260812_coldstart.py",
+    "seat_20260813.py",
+    "seat_20260813_2142.py",
+    "seat_20260813_2248.py",
+    "seat_20260813_rerun.py",
+    "seat_20260814_0049.py",
+    "seat_20260814_1745.py",
+    "seat_20260814_luna.py",
+    "seat_20260814_spxi.py",
+    "withdraw_duplicate_seatings.py"
+   ],
+   "contested": true
+  },
+  "data/api/capability-register.json": {
+   "producers": [
+    "capability_register.py"
+   ],
+   "contested": false
+  },
+  "data/api/index.json": {
+   "producers": [
+    "coherence_sync.py"
+   ],
+   "contested": false
+  },
+  "data/api/kernel-index.json": {
+   "producers": [
+    "build_kernel_index.py"
+   ],
+   "contested": false
+  },
+  "data/artifacts/tll-origin/before-the-name.md": {
+   "producers": [
+    "build_before_the_name.py"
+   ],
+   "contested": false
+  },
+  "data/artifacts/tll-origin/primary-sequence.md": {
+   "producers": [
+    "build_sequence_deposit.py"
+   ],
+   "contested": false
+  },
+  "data/axn-central-registry.json": {
+   "producers": [
+    "build_central_registry.py"
+   ],
+   "contested": false
+  },
+  "data/capture-deposit-links.json": {
+   "producers": [
+    "resolve_capture_links.py"
+   ],
+   "contested": false
+  },
+  "data/concept-map.json": {
+   "producers": [
+    "build_concept_map.py"
+   ],
+   "contested": false
+  },
+  "data/dodecad.json": {
+   "producers": [
+    "link_captures_to_heteronyms.py"
+   ],
+   "contested": false
+  },
+  "data/fanout-state.json": {
+   "producers": [
+    "fanout.py"
+   ],
+   "contested": false
+  },
+  "data/mirror-map.json": {
+   "producers": [
+    "build_mirror_map.py"
+   ],
+   "contested": false
+  },
+  "data/reaudit-T2-diff-2026-07-28.json": {
+   "producers": [
+    "reaudit_canonical_text.py"
+   ],
+   "contested": false
+  },
+  "data/registry.json": {
+   "producers": [
+    "backplate.py",
+    "dw_intake.py",
+    "propagate_record_state.py",
+    "reaudit_canonical_text.py",
+    "reflow_structure.py",
+    "repair_titles_and_supersession.py",
+    "retire.py",
+    "separate_apparatus.py",
+    "unwrap_deposit.py",
+    "wave_hexpos_phase1.py",
+    "wave_hexpos_phase2.py"
+   ],
+   "contested": true
+  },
+  "data/symbolon-registry/MANIFEST.json": {
+   "producers": [
+    "verify_symbolon_store.py"
+   ],
+   "contested": false
+  },
+  "data/symbolon-registry/allocation.json": {
+   "producers": [
+    "wave_hexpos_phase2.py"
+   ],
+   "contested": false
+  },
+  "datasets/heteronyms/citation-field.svg": {
+   "producers": [
+    "build_citation_field.py"
+   ],
+   "contested": false
+  },
+  "datasets/heteronyms/dodecad-graph.svg": {
+   "producers": [
+    "build_dodecad_graph.py"
+   ],
+   "contested": false
+  },
+  "datasets/heteronyms/heteronyms.jsonl": {
+   "producers": [
+    "build_heteronym_index.py"
+   ],
+   "contested": false
+  },
+  "datasets/venues/venues.json": {
+   "producers": [
+    "build_venues_index.py"
+   ],
+   "contested": false
+  }
+ },
+ "CONTESTED_ARTIFACTS": {
+  "what": "An artifact with more than one producer has no single writer, no ordering, and no lock. Whichever script ran last wins, and nothing records which did. This is how a canonical file acquires near-identical siblings.",
+  "data/EA-WG-CAPTURES-01.json": {
+   "producers": 15,
+   "scripts": [
+    "audit_orphan_captures.py",
+    "build_capture_links.py",
+    "elevate_exemplars.py",
+    "mirror_capture_images.py",
+    "restore_sf_line.py",
+    "seat_20260812_coldstart.py",
+    "seat_20260813.py",
+    "seat_20260813_2142.py",
+    "seat_20260813_2248.py",
+    "seat_20260813_rerun.py",
+    "seat_20260814_0049.py",
+    "seat_20260814_1745.py",
+    "seat_20260814_luna.py",
+    "seat_20260814_spxi.py",
+    "withdraw_duplicate_seatings.py"
+   ],
+   "consequence": "Three near-identical files exist and the wrong one has been read at least twice."
+  },
+  "data/registry.json": {
+   "producers": 11,
+   "scripts": [
+    "backplate.py",
+    "dw_intake.py",
+    "propagate_record_state.py",
+    "reaudit_canonical_text.py",
+    "reflow_structure.py",
+    "repair_titles_and_supersession.py",
+    "retire.py",
+    "separate_apparatus.py",
+    "unwrap_deposit.py",
+    "wave_hexpos_phase1.py",
+    "wave_hexpos_phase2.py"
+   ],
+   "consequence": "The corpus's canonical store is written by eleven scripts. deposit_pipeline.py is the declared single workflow; the other ten are not routed through it."
+  }
+ },
+ "RECONCILED_COMPETING_VERSIONS": [
+  {
+   "id": "RC-1",
+   "what": "TWO captures-to-heteronyms linkers over TWO stores, both dated 2026-08-15.",
+   "a": "scripts/link_captures_to_heteronyms.py -> data/dodecad.json — NAME MATCH, 12 Dodecad positions (MANUS wiring rule)",
+   "b": "scripts/link_heteronym_captures.py -> datasets/heteronyms/records/ — CLAIM MATCH, 26 identities",
+   "disagreement": "Fraction 16 by name against 95 by claim; Sigil 56 by name against 46 by claim.",
+   "resolution": "Both kept, neither summed. Records are canonical and now carry BOTH: `captures_by_name` (narrow, precise — the capture names the heteronym) and `captures` (broad, thematic — the capture hits the heteronym's claims). data/dodecad.json is marked a PROJECTION, not a competing store. Where the two disagree, the NAME count is the floor and the CLAIM count is the ceiling.",
+   "note": "The gaps are informative. Fraction +79 is SPXI surfacing without his name — the exact case the claim method exists for. Sigil -10 is the inverse: he is NAMED in captures whose concepts he does not claim, which is what a critic's byline does."
+  }
+ ],
+ "EXTERNAL_DEPENDENCIES": {
+  "what": "The archive's data does not live only in this repository. Datasets are RENDERED on domains this repo does not control and cannot rebuild. Those are external dependencies, and until 2026-08-15 nothing checked them.",
+  "why_it_matters": "Sen Kuro's identity card pointed at leesharks.com/who/kuro/ and returned 404. He had been reseated at holographickernel.org by a MANUS ruling that reached the fleet's network-block attribution map and never reached datasets/heteronyms/index.json. A dataset pointing at a dead surface is a dataset asserting something false, and no internal gate could see it because no gate looked outside.",
+  "gate": "scripts/check_external_surfaces.py",
+  "heteronym_cards": {
+   "what": "TWELVE identity cards rendered on TWELVE DIFFERENT DOMAINS. Each card is a render of a record in datasets/heteronyms/records/.",
+   "dependency_direction": "records/ -> site. The site consumes; this repo produces. A record change does not propagate until that site is rebuilt and deployed.",
+   "surfaces": {
+    "Johannes Sigil": "https://restoredacademy.com/who/sigil/",
+    "Rex Fraction": "https://spxi.dev/who/fraction/",
+    "Damascus Dancings": "https://revelationfirst.com/who/dancings/",
+    "Rebekah Cranes": "https://axnidentifiers.org/who/cranes/",
+    "Talos Morrow": "https://godkinggoogle.com/who/morrow/",
+    "Sen Kuro": "https://holographickernel.org/who/kuro/",
+    "Sparrow Wells": "https://surfacemap.org/who/wells/",
+    "Rev. Ayanna Vox": "https://vpcor.org/ayanna/who/",
+    "Ichabod Spellings": "https://survivethedeletion.vercel.app/who/spellings/",
+    "Nobel Glas": "https://lagrangeobservatory.org/who/glas/",
+    "Dr. Orin Trace": "https://provenanceerasure.org/who/trace/",
+    "Jack Feist": "https://chatgptpsychosis.org/who/feist/"
+   },
+   "verified": "2026-08-15 — all resolve"
+  },
+  "capture_galleries": {
+   "what": "The capture registry displayed as galleries on sites this repo does not build.",
+   "declared_in_registry": [
+    "https://www.godkinggoogle.com/captures",
+    "https://leesharks.com/captures"
+   ],
+   "UNDECLARED": [
+    "https://machinemediation.org/captures/ — MMRS's own gallery, verified 200, NOT in the registry's galleries list. MMRS is the journal whose founding dataset the registry IS."
+   ],
+   "host_drift": "The v10.0 manifest names godkinggoogle.vercel.app; v11.4 names www.godkinggoogle.com. A gallery host changed and only the newer file records it.",
+   "verified": "2026-08-15"
+  },
+  "other_external": {
+   "data-rhizome releases": {
+    "repo": "leesharks000/data-rhizome",
+    "assets": [
+     "generated-corpus-v1 (15.1 MB, mined)",
+     "v1 (47.6 MB, the raw account export, UNMINED)"
+    ],
+    "note": "Bytes are not in either repo; locators point here. See data-rhizome/releases/README.md."
+   },
+   "corpora upstreams": {
+    "First1KGreek": "OpenGreekAndLatin, fetched by datasets tooling",
+    "Perseus": "perseus.tufts.edu",
+    "Gutenberg": "gutenberg.org",
+    "note": "Third-party corpora mirrored into datasets/. Upstream can change; the mirror does not track it."
+   },
+   "oai_and_resolvers": [
+    "https://alexanarch.org/oai",
+    "https://alexanarch.org/resolve/",
+    "DataCite (severed 2026-06-19)",
+    "OpenAIRE Graph"
+   ]
+  }
+ },
+ "datasets_undescribed": [],
+ "SEATING_APPARATUS": {
+  "what": "What a dataset must present to be seated. Audited AS RENDERED on 2026-08-15, when the tab and its subpages had accreted rather than been designed.",
+  "audit_findings": [
+   "TWO subpages 404'd — /datasets/journals/ and /datasets/mret/ — both linked from the tab the same day they were added. A card was written; the page it pointed at was not.",
+   "FIVE title forms across sixteen pages: the PATH as title, 'Name — Datasets — Alexanarch', 'Name — Alexanarch', 'Name — dataset', and bare. A reader could not tell from a tab or a search result which dataset they were in.",
+   "A TITLE COLLISION: tombstone-mirror and zenodo-datacite-batch both rendered as 'Zenodo/DataCite Batch'.",
+   "TWO pages had no back-link to /datasets/ — capture-registry and deletion-conformance-fixture. Once there, the reader was stranded.",
+   "ZERO pages had sub-navigation. Every dataset is one page linking files directly — which is FINE, and is now the stated rule rather than an accident.",
+   "66 file-direct links and 22 dataset-subpage links on the tab: the tab mixes routes to a page with routes to a byte stream, and did not say which was which."
+  ],
+  "rules": [
+   "1. A directory under datasets/ MUST have an index.html, or it MUST NOT be linked from the tab.",
+   "2. Title MUST be '<Name> — Datasets — Alexanarch'. A path is not a title.",
+   "3. Titles MUST be unique across datasets.",
+   "4. Every dataset page MUST link back to /datasets/.",
+   "5. Every dataset page SHOULD declare its canonical store and what regenerates it (atlas v1.5).",
+   "6. A dataset page SHOULD SHOW ITS DATA, not merely list its files. The heteronyms page is the MODEL: named sections, findings stated in prose, and figures DERIVED from the corpus with captions that state method and omissions. Depth is welcome where the data earns it. What is forbidden is a page that HIDES its contents."
+  ],
+  "gate": "scripts/check_dataset_navigation.py  (--rendered probes the live site)",
+  "state_after": "18 of 18 present the same way; journals and venues rebuilt to the model with two new derived figures.",
+  "WITHDRAWN_RULE": {
+   "was": "ONE LEVEL. Files linked directly from the dataset page; no deeper navigation. A dataset is a directory of files, not a site.",
+   "withdrawn": "2026-08-15 (operator)",
+   "why": "The rule came from my own metric reporting \"zero pages have sub-navigation\". That was an ARTIFACT OF THE CHECK, not a fact: it looked for /datasets/<x>/<sub> links without file extensions, so it could not see the heteronyms page's four derived figures, its named sections, or its stated findings. I turned my instrument's blind spot into policy; applied, it would have flattened the best page in the set. The operator asked for coherence and visual normalisation and I was about to deliver removal."
+  },
+  "model": "datasets/heteronyms/index.html — four derived figures, named sections, findings in prose, captions stating their own omissions."
+ }
+}

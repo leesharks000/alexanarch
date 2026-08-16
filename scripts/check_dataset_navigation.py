@@ -13,8 +13,11 @@ designed. Findings on the first run:
     "Zenodo/DataCite Batch".
   * TWO pages carry no back-link to /datasets/ — capture-registry and
     deletion-conformance-fixture. Once there, the reader is stranded.
-  * ZERO pages have sub-navigation. Every dataset is one page linking files directly, which is
-    fine and should be stated as the rule rather than left as an accident.
+  * A metric of mine reported "zero pages have sub-navigation". That was an artifact of the
+    check, not a fact: it looked for /datasets/<x>/<sub> links without file extensions and so
+    could not see the heteronyms page's four derived FIGURES, its named sections, or its stated
+    findings. I nearly turned that artifact into a rule that would have flattened the best page
+    in the set.
 
 THE SEATING RULE this enforces, stated so a new dataset has a shape to meet:
   1. A directory under datasets/ MUST have an index.html, or it must not be linked.
@@ -22,7 +25,11 @@ THE SEATING RULE this enforces, stated so a new dataset has a shape to meet:
   3. Titles MUST be unique across datasets.
   4. Every page MUST link back to /datasets/.
   5. Every page SHOULD declare its canonical store and what regenerates it (atlas v1.5 rule).
-  6. Files are linked directly from the dataset page. One level, no deeper.
+  6. A dataset page SHOULD SHOW ITS DATA, not merely list its files. The heteronyms page is the
+     model: named sections, findings stated in prose, and figures DERIVED from the corpus with
+     captions that state their method and their omissions. Depth is welcome where the data
+     earns it. What is forbidden is a page that hides its own contents -- the venues page
+     listed 1 file of 17, so every venue record and every issue card was unreachable.
 
 Usage: check_dataset_navigation.py [--rendered]   (--rendered probes the live site)
 """
@@ -57,6 +64,18 @@ def main():
                 fails.append(f"{d.name}: title {t!r} does not end {SUFFIX!r}")
         if not re.search(r'href="/datasets/?"', html):
             fails.append(f"{d.name}: no back-link to /datasets/ — the reader is stranded")
+        # a page must not hide its own contents
+        payload = [f for f in d.rglob("*") if f.is_file() and f.suffix in
+                   (".json", ".jsonl", ".md", ".csv", ".svg", ".txt", ".xml")]
+        shown = set(re.findall(r'href="[^"]*?([A-Za-z0-9_.-]+\.(?:json|jsonl|md|csv|svg|txt|xml))"', html))
+        # a link to the DIRECTORY exposes what is in it; requiring every file would punish
+        # a page for having many records rather than for hiding them
+        linked_dirs = {m for m in re.findall(r'href="[^"]*/datasets/[a-z0-9-]+/([a-z0-9_-]+)/"', html)}
+        missing = [f.name for f in payload
+                   if f.name not in shown and f.parent.name not in linked_dirs]
+        if payload and len(missing) > max(3, len(payload) // 2):
+            fails.append(f"{d.name}: page shows {len(payload)-len(missing)} of {len(payload)} data files — "
+                         f"it hides its own contents ({len(missing)} unreachable)")
 
     for t, names in titles.items():
         if len(names) > 1:
