@@ -355,6 +355,31 @@
    "date": "2026-08-15",
    "by": "operator",
    "ruling": "Grammata: Lee Sharks and Rebekah Cranes."
+  },
+  {
+   "date": "2026-08-15",
+   "by": "operator",
+   "ruling": "Pessoa knowledge-graph cluster -> PJFS. Heteronymic attribution is provenance work."
+  },
+  {
+   "date": "2026-08-15",
+   "by": "operator",
+   "ruling": "DISTRIBUTION TIEBREAK: in genuine edge cases, prefer the venue with the smaller distribution. Target is a semi-even spread across the SEVEN JOURNALS. CHA (province) and NHP (imprint) are excepted as different classes and are not levelled against the journals."
+  },
+  {
+   "date": "2026-08-15",
+   "by": "operator",
+   "ruling": "JOURNAL and PRESS are separate facts. Creative works often appear in a journal FIRST and reappear as books; a single venue field collapses a publication history. Every deposit carries a journal (venue of appearance); book-form works additionally carry a press (New Human Press for creative and scriptural, Pergamon Press for scholarly). NHP is NOT a journal value."
+  },
+  {
+   "date": "2026-08-15",
+   "by": "TACHYON",
+   "ruling": "content_type is authoritative on whether a work is a book. 25 deposits corpus-wide are typed Book/edition/collected volume/critical apparatus. This registry field went unread for six passes of title-reading; keywords should be checked before the last passes."
+  },
+  {
+   "date": "2026-08-15",
+   "by": "operator",
+   "ruling": "PRESS RULE, general: journals to Pergamon Press, BOOKS to New Human Press. Not creative-versus-academic. Each book-length work is or is to be a founding work for a heteronym in the Pocket Humans series."
   }
  ],
  "sequence": [
@@ -785,5 +810,153 @@
    "reconcile": "Province should be recorded as the class name, superseding or aliasing 'archive-direct'."
   },
   "repair_follows_audit": "venues.json states the standing rule: 'Records outside the audited range retain legacy strings until audited (repair-follows-audit).' That is the governing principle for the reassignment work — audit first, repair what the audit covers, leave the rest legible as legacy."
+ },
+ "self_declaration_sweep": {
+  "date": "2026-08-15",
+  "searched": "all 1,486 titles and descriptions for the eight venue strings",
+  "raw_hits": 63,
+  "genuine_declarations": "~5",
+  "finding": "The signal is far thinner than the raw count suggests. Of 39 apparent self-declarations inside 1-900, only TWO were actual venue declarations for the work in hand (#2 \"Written for New Human 2\"; #128 \"A New Human 2 memographic artifact\"), plus the three Semantique Potentielle releases which carry \"Grammata: Journal of Operative Philology\" in their own titles and which my reading already had right.",
+  "why_the_rest_are_not_declarations": [
+   "CHARTERS name the journal they charter (#516, #651, #838).",
+   "MAPS and CALLS name the journals they map or solicit for (#57, #866, #189, #640).",
+   "SITE PLANS name the journal whose site they plan (#848).",
+   "TOPIC LISTS name a journal among subjects covered (#863).",
+   "INSTITUTIONAL packets describe an institution's publication RELATION to a journal, not the packet's own venue (#709, #710)."
+  ],
+  "substring_bug": "11 of the 63 hits were \"New Human 2\" matching inside \"New Human 2015 Cohort\" — the cohort name, not a venue. This is the THIRD substring false positive today, after PER matching inside paper/person/operative in the capture attribution. Word-boundary matching is not optional in this corpus: its vocabulary contains short names that are prefixes of longer ones.",
+  "rule": "Self-declaration is CONSIDERED, never definitive, and must be distinguished from mention. The test: does the work say where IT was published, or does it name a journal for some other reason?"
+ },
+ "archival_findings": [
+  {
+   "date": "2026-08-15",
+   "id": "AF-1",
+   "severity": "MEDIUM",
+   "title": "Operative Semiotics: A Grundrisse — the monograph record is a pointer; the body lives in the planning-documents deposit",
+   "detail": "Checked at operator request. Recovery IS complete — nothing was lost — but the multi-file Zenodo structure (a book description with several attached files) did not survive as a book. The text landed in #950 \"Planning Documents, Algorithms, and Diagnostics\" [Working paper], which carries 1,149,275 residual chars. The MONOGRAPH record #1079 \"Recovered Edition v1.0\" carries only 27,728 and its body_status reads recovery=FULL-AT-DEPOSIT-950 — an explicit pointer away from itself. Hesperus #38 (169,644 chars) is the apparatus; #1343 is a public research edition (RESTORED-20260728); #602 the prosodic algorithm.",
+   "consequence": "A reader arriving at the monograph finds a stub. The work is whole in the archive and not whole at its own address.",
+   "action": "Collect #38, #602, #950, #1079, #1343 as one book — Operative Semiotics: A Grundrisse, collected edition — press New Human Press, per operator ruling 2026-08-15. Until then the monograph record should point forward explicitly rather than only in body_status."
+  }
+ ],
+ "pocket_humans_series": {
+  "what": "Each book-length work is, or is to be, a FOUNDING WORK for a heteronym in the POCKET HUMANS series (New Human Press). The series is the heteronyms' own shelf: one founding volume each.",
+  "ruled": "2026-08-15 (operator)",
+  "confirmed_by_deposit": [
+   {
+    "heteronym": "Johannes Sigil",
+    "work": "Operative Semiotics: A Grundrisse",
+    "deposits": [
+     1079,
+     950,
+     38,
+     602,
+     1343
+    ],
+    "creator_of_record": "Johannes Sigil (with the Dodecad; Assembly)",
+    "status": "SCATTERED — see AF-1; needs collection"
+   },
+   {
+    "heteronym": "Talos Morrow",
+    "work": "Logotic Hacking: Operations on the Encryption Layer — Pocket Humans 03",
+    "deposits": [
+     49
+    ],
+    "creator_of_record": "Talos Morrow (author); Nobel Glas (introduction)",
+    "status": "OK — the only deposit carrying an explicit series number"
+   },
+   {
+    "heteronym": "Rex Fraction",
+    "work": "Autonomous Semantic Warfare: A Field Manual",
+    "deposits": [
+     498,
+     499,
+     1107
+    ],
+    "creator_of_record": "Rex Fraction; Damascus Dancings (#1107)",
+    "status": "OK"
+   },
+   {
+    "heteronym": "Rev. Ayanna Vox",
+    "work": "The Constitution of the Semantic Economy",
+    "deposits": [
+     82,
+     87,
+     88,
+     715
+    ],
+    "creator_of_record": "Ayanna Vox / Rev. Ayanna Vox",
+    "status": "OK — apparatus #715 is credited to TACHYON"
+   },
+   {
+    "heteronym": "Ichabod Spellings",
+    "work": "All That Lies Within Me: An Autobiography of Longing",
+    "deposits": [
+     344,
+     1124,
+     342,
+     343
+    ],
+    "creator_of_record": "Ichabod Spellings (primary); Johannes Sigil (editor)",
+    "status": "OK"
+   },
+   {
+    "heteronym": "Jack Feist",
+    "work": "The Feist Source",
+    "deposits": [
+     851,
+     852,
+     849,
+     1404
+    ],
+    "creator_of_record": "Jack Feist (#851); Lee Sharks (#852); Sharks + Cranes (#1404)",
+    "status": "OK"
+   }
+  ],
+  "attribution_mismatches_FLAGGED_NOT_FIXED": [
+   {
+    "id": "AM-1",
+    "work": "Combat Scholasticism",
+    "deposits": [
+     584,
+     585,
+     586,
+     587,
+     588,
+     589,
+     590,
+     591,
+     592
+    ],
+    "should_be": "Damascus Dancings — alongside the Epistle to the Human Diaspora",
+    "deposited_as": "Lee Sharks and Johannes Sigil",
+    "also": "No critical apparatus yet. The gathered edition (#584) exists; the apparatus does not.",
+    "action": "Creator fields are never changed without the operator. Flagged for ruling."
+   },
+   {
+    "id": "AM-2",
+    "work": "The Atlas Perihelion Prank (Collected Series)",
+    "deposits": [
+     454
+    ],
+    "should_be": "Nobel Glas — the TITLE says 'Collected Series — Nobel Glas'",
+    "deposited_as": "Johannes Sigil",
+    "action": "Title and creator field disagree on the same deposit. Flagged."
+   },
+   {
+    "id": "AM-3",
+    "work": "Chronoarithmics",
+    "deposits": [
+     818
+    ],
+    "should_be": "Sen Kuro",
+    "deposited_as": "Lee Sharks",
+    "also": "Not typed as a book — content_type is 'Mathematical correction'. If Chronoarithmics is Kuro's founding volume, the book does not yet exist as a deposit; #818 is a 2.1 correction to it.",
+    "action": "Flagged. May need a founding deposit, not just a reattribution."
+   }
+  ],
+  "open": [
+   "Damascus Dancings' founding work: Combat Scholasticism and the Epistle to the Human Diaspora, both currently under other creators.",
+   "Heteronyms with no identified founding volume: Rebekah Cranes, Dr. Orin Trace, Sparrow Wells, Sen Kuro (pending), Nobel Glas (pending AM-2)."
+  ]
  }
 }
