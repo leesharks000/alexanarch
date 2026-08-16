@@ -1,0 +1,443 @@
+{
+ "schema": "dataflow-atlas-binding/v1.0",
+ "generated": "2026-08-15",
+ "what": "The atlas is supposed to bind EVERY connector, input, output and interlink to data. It bound three datasets of eighteen. This file is the binding: one row per dataset, with its canonical store, its producer, its consumers, its gates, and the crosswalks that join it to others.",
+ "state": {
+  "datasets": 18,
+  "files": 316,
+  "with_manifest": 13,
+  "declaring_canonical": 2,
+  "with_named_producer": 1,
+  "finding": "13 of 18 carry a manifest, 2 declare a canonical store, and 1 names the script that regenerates it. A dataset that does not say where its authority lives or what rebuilds it cannot be checked for drift — which is the condition that let the heteronym index sit thin against rich records, and the capture link map sit 43 captures stale against a live registry."
+ },
+ "datasets": {
+  "axnidentifiers": {
+   "dataset": "axnidentifiers",
+   "files": 7,
+   "bytes": 34586,
+   "has_manifest": false,
+   "version": null,
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".html",
+    ".md"
+   ],
+   "binding_gaps": [
+    "no manifest",
+    "canonical store not declared",
+    "no named producer"
+   ]
+  },
+  "capture-registry": {
+   "dataset": "capture-registry",
+   "files": 5,
+   "bytes": 8945613,
+   "has_manifest": true,
+   "version": "10.0",
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".html",
+    ".json"
+   ],
+   "binding_gaps": [
+    "canonical store not declared",
+    "no named producer"
+   ]
+  },
+  "dataflow-atlas": {
+   "dataset": "dataflow-atlas",
+   "files": 24,
+   "bytes": 3045818,
+   "has_manifest": true,
+   "version": "v1.2",
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".html",
+    ".json",
+    ".md"
+   ],
+   "binding_gaps": [
+    "canonical store not declared",
+    "no named producer"
+   ]
+  },
+  "deletion-conformance-fixture": {
+   "dataset": "deletion-conformance-fixture",
+   "files": 11,
+   "bytes": 235652,
+   "has_manifest": true,
+   "version": "2.1",
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".html",
+    ".json",
+    ".md",
+    ".py"
+   ],
+   "binding_gaps": [
+    "canonical store not declared",
+    "no named producer"
+   ]
+  },
+  "doi-work-identity": {
+   "dataset": "doi-work-identity",
+   "files": 4,
+   "bytes": 1418402,
+   "has_manifest": false,
+   "version": null,
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".html",
+    ".json",
+    ".txt"
+   ],
+   "binding_gaps": [
+    "no manifest",
+    "canonical store not declared",
+    "no named producer"
+   ]
+  },
+  "erosion-empirical-audit-01": {
+   "dataset": "erosion-empirical-audit-01",
+   "files": 8,
+   "bytes": 700500,
+   "has_manifest": true,
+   "version": "0.1",
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".html",
+    ".json",
+    ".md",
+    ".py"
+   ],
+   "binding_gaps": [
+    "canonical store not declared",
+    "no named producer"
+   ]
+  },
+  "gutenberg-classical": {
+   "dataset": "gutenberg-classical",
+   "files": 4,
+   "bytes": 596140,
+   "has_manifest": false,
+   "version": null,
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".html",
+    ".json",
+    ".jsonl"
+   ],
+   "binding_gaps": [
+    "no manifest",
+    "canonical store not declared",
+    "no named producer"
+   ]
+  },
+  "heteronyms": {
+   "dataset": "heteronyms",
+   "files": 68,
+   "bytes": 3073567,
+   "has_manifest": true,
+   "version": "v1.2",
+   "canonical_declared": true,
+   "regenerate_with": null,
+   "top": [
+    ".html",
+    ".json",
+    ".jsonl",
+    ".md",
+    ".svg",
+    ".webp"
+   ],
+   "binding_gaps": [
+    "no named producer"
+   ]
+  },
+  "journals": {
+   "dataset": "journals",
+   "files": 6,
+   "bytes": 1024357,
+   "has_manifest": true,
+   "version": "1.3",
+   "canonical_declared": true,
+   "regenerate_with": "scripts/build_journals_dataset.py",
+   "top": [
+    ".json",
+    ".jsonl"
+   ],
+   "binding_gaps": []
+  },
+  "mret": {
+   "dataset": "mret",
+   "files": 2,
+   "bytes": 338967,
+   "has_manifest": false,
+   "version": null,
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".json",
+    ".md"
+   ],
+   "binding_gaps": [
+    "no manifest",
+    "canonical store not declared",
+    "no named producer"
+   ]
+  },
+  "negshape-deletion-bibliography": {
+   "dataset": "negshape-deletion-bibliography",
+   "files": 22,
+   "bytes": 13326150,
+   "has_manifest": true,
+   "version": "1.0",
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".csv",
+    ".html",
+    ".json",
+    ".md",
+    ".py"
+   ],
+   "binding_gaps": [
+    "canonical store not declared",
+    "no named producer"
+   ]
+  },
+  "new-human-primary": {
+   "dataset": "new-human-primary",
+   "files": 3,
+   "bytes": 164109,
+   "has_manifest": true,
+   "version": "v0.1",
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".html",
+    ".json",
+    ".jsonl"
+   ],
+   "binding_gaps": [
+    "canonical store not declared",
+    "no named producer"
+   ]
+  },
+  "peo-case-001-florence-fup": {
+   "dataset": "peo-case-001-florence-fup",
+   "files": 5,
+   "bytes": 1067692,
+   "has_manifest": true,
+   "version": "1.0",
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".html",
+    ".json",
+    ".md",
+    ".tsv"
+   ],
+   "binding_gaps": [
+    "canonical store not declared",
+    "no named producer"
+   ]
+  },
+  "perseus-classical": {
+   "dataset": "perseus-classical",
+   "files": 5,
+   "bytes": 829654,
+   "has_manifest": true,
+   "version": null,
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".html",
+    ".json",
+    ".jsonl"
+   ],
+   "binding_gaps": [
+    "canonical store not declared",
+    "no named producer"
+   ]
+  },
+  "registry-audit": {
+   "dataset": "registry-audit",
+   "files": 112,
+   "bytes": 41042923,
+   "has_manifest": true,
+   "version": null,
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".csv",
+    ".html",
+    ".json",
+    ".md",
+    ".pdf",
+    ".txt"
+   ],
+   "binding_gaps": [
+    "canonical store not declared",
+    "no named producer"
+   ]
+  },
+  "tombstone-mirror": {
+   "dataset": "tombstone-mirror",
+   "files": 7,
+   "bytes": 9956954,
+   "has_manifest": true,
+   "version": "v1.0",
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".csv",
+    ".gz",
+    ".html",
+    ".json",
+    ".jsonl"
+   ],
+   "binding_gaps": [
+    "canonical store not declared",
+    "no named producer"
+   ]
+  },
+  "venues": {
+   "dataset": "venues",
+   "files": 17,
+   "bytes": 90317,
+   "has_manifest": false,
+   "version": null,
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".html",
+    ".json"
+   ],
+   "binding_gaps": [
+    "no manifest",
+    "canonical store not declared",
+    "no named producer"
+   ]
+  },
+  "zenodo-datacite-batch": {
+   "dataset": "zenodo-datacite-batch",
+   "files": 6,
+   "bytes": 3807965,
+   "has_manifest": true,
+   "version": "v0.2",
+   "canonical_declared": false,
+   "regenerate_with": null,
+   "top": [
+    ".html",
+    ".json"
+   ],
+   "binding_gaps": [
+    "canonical store not declared",
+    "no named producer"
+   ]
+  }
+ },
+ "producers": {
+  "datasets/heteronyms/heteronyms.jsonl": "scripts/build_heteronym_index.py  (--check)",
+  "datasets/heteronyms/index.json": "scripts/build_heteronym_index.py",
+  "datasets/heteronyms/records/*.json captures block": "scripts/link_heteronym_captures.py  (--check)",
+  "datasets/venues/venues.json": "scripts/build_venues_index.py  (--check)",
+  "datasets/journals/*.jsonl": "scripts/build_journals_dataset.py  (--check)",
+  "data/capture-deposit-links.json": "scripts/resolve_capture_links.py",
+  "data/registry.json": "scripts/mint_deposit.py via scripts/deposit_pipeline.py",
+  "s/records/<n>/index.html": "wire_deposit.regenerate_static_page  (surgical-layer guard)",
+  "api/*.json, s/browse, s/search, s/wiki": "scripts/regenerate_surfaces.py",
+  "data/citation-graph.json": "scripts/citation_extractor.py"
+ },
+ "gates": {
+  "scripts/build_heteronym_index.py --check": "heteronyms.jsonl drifted from records/",
+  "scripts/link_heteronym_captures.py --check": "identity card capture block drifted from the live registry",
+  "scripts/build_venues_index.py --check": "venues.json drifted from venue records",
+  "scripts/build_journals_dataset.py --check": "journals JSONL drifted from registry + venue records",
+  "scripts/check_venue_links.py": "a venue pointer no longer resolves (charter AXN, record, assigned deposit)",
+  "scripts/check_rendered_record.py": "a record page shows something other than what the registry says",
+  "scripts/deposit_completeness.py": "a deposit is missing wiki, concepts, relations, lexical, citations, render, files, or BODY-003 substance",
+  "scripts/check_book_freshness.py": "the Mandala Oracle has stopped recording",
+  "scripts/audit_fleet_deploys.py": "a fleet site is serving a build older than its repo",
+  "scripts/check_surface_synchrony.py": "a public surface disagrees with the registry head"
+ },
+ "interlinks": [
+  {
+   "join": "heteronyms x deposits",
+   "file": "datasets/heteronyms/crosswalk.json",
+   "on": "CREATOR field (byline)",
+   "note": "A position owns a deposit only if named as creator. 9,453 deposit-level citation edges collapsed to 1,910 position-level."
+  },
+  {
+   "join": "heteronyms x venues",
+   "file": "datasets/journals/crosswalk.json",
+   "on": "CREATOR field (byline)",
+   "note": "Position x venue matrix, editor-alignment. 4 of 14 editor seats publish principally in their own venue."
+  },
+  {
+   "join": "mantles x venues",
+   "file": "datasets/journals/crosswalk.json",
+   "on": "ATTESTATION (witness/substrate record)",
+   "note": "REQUIRED SEPARATELY. A creator field records an OCCUPANT; a mantle is a POSITION. Byline join finds nothing and misreports the absence. 682 attestations across 508 deposits."
+  },
+  {
+   "join": "venues x citation graph",
+   "file": "datasets/journals/crosswalk.json",
+   "on": "deposit endpoints -> journal",
+   "note": "9,992 internal edges: 6,752 cross-venue, 3,240 within. CHA is the hub."
+  },
+  {
+   "join": "captures x venues — EVIDENTIARY",
+   "file": "datasets/journals/capture-crosswalk.json",
+   "on": "capture -> deposit -> venue",
+   "note": "Hard links (AXN/DOI/series) are identification; soft links (title/keyword/body) are candidates. 205 of 343 captures resolve."
+  },
+  {
+   "join": "captures x venues — THEMATIC",
+   "file": "datasets/journals/capture-crosswalk.json",
+   "on": "capture text -> venue CLAIM TERMS",
+   "note": "MUST NOT BE SUMMED with the evidentiary route: that would add an identification to a resemblance. 333 of 343 claimed."
+  },
+  {
+   "join": "captures x heteronyms",
+   "file": "datasets/heteronyms/records/*.json captures block",
+   "on": "CLAIM TERMS, many-to-many",
+   "note": "Attribution by claim, not by name: Fraction does SPXI, so an SPXI capture is his whether or not it names him. Counts are evidence of CONTACT, not of ABOUTNESS."
+  },
+  {
+   "join": "venues x Pocket Humans series",
+   "file": "datasets/journals/assignments.jsonl",
+   "on": "deposit number",
+   "note": "52 rows carry series data, 14 carry publication data with ISBN/ASIN distinct."
+  }
+ ],
+ "known_version_conflicts": [
+  {
+   "what": "capture registry",
+   "live": "data/EA-WG-CAPTURES-01.json v11.4, 343 captures",
+   "stale": [
+    "datasets/capture-registry/EA-WG-CAPTURES-01.json v10.0 GALLERY MANIFEST, 300",
+    "datasets/capture-registry/manifest.json v10.0",
+    "data/EA-WG-CAPTURES-01-v8.11.json and -v9.6.json frozen snapshots"
+   ],
+   "risk": "Three files named almost identically; the wrong one has been read at least twice."
+  },
+  {
+   "what": "heteronyms datasets-tab card",
+   "says": "12 Dodecad positions, 13 total",
+   "actual": "26 records across eight subcategories",
+   "action": "tab audit"
+  },
+  {
+   "what": "datasets/venues",
+   "gap": "no manifest, canonical not declared on its face — records/ IS canonical and venues.json is its projection, stated only in the projection"
+  }
+ ]
+}

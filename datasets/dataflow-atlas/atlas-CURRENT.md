@@ -139,3 +139,22 @@ Captures are the one dataset to rule them all: the live registry is `data/EA-WG-
 `scripts/link_heteronym_captures.py --check` as the gate.
 
 Full detail: `atlas-v1.4-addendum.md`.
+
+## The binding — 2026-08-15
+
+The atlas is supposed to bind every connector, input, output and interlink to data. It named
+**three datasets of eighteen**. Of those eighteen, 13 carry a manifest, **2 declare a canonical
+store, and 1 names the script that rebuilds it** — and a dataset that says neither cannot be
+checked for drift, which is the precondition for every silent failure recorded here.
+
+`binding-v1.0.json` binds all eighteen: canonical store, producer, gate, and explicit
+`binding_gaps` where missing. With **10 producers, 10 gates and 8 interlinks**, each interlink
+declaring what it joins ON — because the join key is the claim. Three carry a must-not: a
+mantle cannot be joined on a byline, the two capture routes must not be summed, and claim
+counts are evidence of contact rather than of aboutness.
+
+Rule added: **a dataset must declare on its own face what is canonical, what regenerates it,
+and what gate detects its drift.** v1.4 said a layer must say whether it is data; this says it
+must also say what keeps it true.
+
+Full detail: `atlas-v1.5-addendum.md`.
