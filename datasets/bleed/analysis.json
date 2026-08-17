@@ -1,0 +1,164 @@
+{
+ "analysis": "off-entity bleed into the retrieval basin",
+ "date": "2026-08-17",
+ "by": "TACHYON under MANUS",
+ "_scope": "NOT terminological near-misses. This measures SEMANTICALLY AND LINGUISTICALLY OFF-ENTITY sources — material with no relation to the archive or its subject — bleeding compositionally into answers about the archive's own terms. Operational-versus-operative semiotics is excluded: that is a rival in the same field and is tracked as an adversary, not as bleed.",
+ "corpus": {
+  "addresses": 366,
+  "observations": 407,
+  "observations_with_a_query": 401,
+  "host_citations": 1458,
+  "fleet": 1186,
+  "authored": 135,
+  "off_entity": 137,
+  "off_entity_share": "9% of host-citations",
+  "observations_showing_bleed": 67,
+  "distinct_off_entity_hosts": 69
+ },
+ "_method": "Every URL in every observation's citation material, classified by host AND path: FLEET (28 archive domains), AUTHORED (zenodo, orcid, academia, medium/@leesharks and @johannessigil, scilynk paper pages, the Scholar profile), OFF-ENTITY (everything else). Path matters: medium.com is authored under two handles and off-entity otherwise, and a host-only classifier scored 14% where the correct figure is 9%.",
+ "DRIVING_FACTORS_RANKED": [
+  {
+   "rank": 1,
+   "factor": "Lexical decomposition of coined compounds",
+   "evidence": "coined 28% bled vs uncoined 12%; the worst single query pulled 7 off-entity sources"
+  },
+  {
+   "rank": 2,
+   "factor": "Homonym capture by an existing named thing",
+   "evidence": "sophon, acanthian dove, Phase X, and each collision imports a whole fandom or discipline"
+  },
+  {
+   "rank": 3,
+   "factor": "Genre misread from version strings and protocol nouns",
+   "evidence": "'4.2.7' recruits software sources regardless of context"
+  },
+  {
+   "rank": 4,
+   "factor": "Verification reflex on author names",
+   "evidence": "philpapers, scholar, scilynk, amazon on author queries — indexes that do not hold the corpus"
+  }
+ ],
+ "MECHANISMS": {
+  "M1_LEXICAL_DECOMPOSITION": {
+   "what": "A coined COMPOUND is split into its component words and each component recruits its own literature. The compound is then declared non-standard and refilled with generic material from the components.",
+   "signature": "the layer states that the term has no settled meaning, then explains its parts",
+   "worst_case": {
+    "query": "phase x completion of marx",
+    "off_entity_sources": 7,
+    "verbatim": "In Marxian philosophy, there is no standardized \"Phase X.\"",
+    "pulled": [
+     "econlib.org",
+     "learneconomicsonline.com",
+     "bu.edu",
+     "1000wordphilosophy.com",
+     "polsci.institute",
+     "quora.com",
+     "shop.digicelgroup.com"
+    ],
+    "note": "shop.digicelgroup.com is a MOBILE PHONE RETAILER serving a scraped PDF on Marx's stages of development, cited as a source in a philosophy answer. Decomposition does not merely widen the basin — it drops the floor out of source quality, because the component word 'Marx' has an enormous low-grade SEO surface that the compound does not."
+   },
+   "why_it_is_the_primary_driver": "It explains the counterintuitive headline result. COINED TERMS BLEED MORE THAN UNCOINED ONES — 28% against 12% — which is the opposite of what a naive account predicts. A coined compound has no corpus to anchor to, so the layer decomposes it; the components are ordinary words with vast literatures; the answer is assembled from those. Coinage does not protect a term. It invites the split."
+  },
+  "M2_HOMONYM_CAPTURE": {
+   "what": "A coined term collides with an existing named thing — fiction, product, species, particle — and the collision's basin swallows the query.",
+   "cases": [
+    {
+     "term": "endogenous sophon",
+     "captured_by": [
+      "three-body-problem.fandom.com",
+      "sophonlit.com",
+      "home.cern",
+      "vice.com"
+     ],
+     "note": "SOPHON IS A LIU CIXIN COINAGE. The Three-Body Problem fandom holds the term; CERN appears because it reads as a particle."
+    },
+    {
+     "term": "acanthian dove",
+     "captured_by": [
+      "artuk.org",
+      "tandfonline.com"
+     ],
+     "note": "read as ornithology and art history"
+    },
+    {
+     "term": "alexanarch socrates",
+     "captured_by": [
+      "pdsh.fandom.com"
+     ],
+     "note": "a fandom wiki"
+    },
+    {
+     "term": "Phase X",
+     "captured_by": [
+      "Department of Antiquities of Jordan — a Middle Bronze I stratum"
+     ],
+     "note": "recorded separately in the capture registry as an EXACT MATCH; a coined program name colliding with a real archaeological layer"
+    }
+   ]
+  },
+  "M3_GENRE_MISREAD": {
+   "what": "A version string, protocol name or technical-sounding compound is assigned to software, gaming or physics, and that genre's sources are recruited.",
+   "cases": [
+    {
+     "query": "space ark 4.2.7 invoke 4.2.6 execute trigger",
+     "read_as": "software release notes",
+     "pulled": [
+      "reddit.com",
+      "github.com"
+     ]
+    },
+    {
+     "query": "gravity well protocol TACHYON reconstitute zenodo",
+     "read_as": "physics or gaming",
+     "pulled": [
+      "reddit.com",
+      "arxiv.org",
+      "tandfonline.com"
+     ]
+    },
+    {
+     "query": "hexagonal licensing protocol derive contributor license",
+     "read_as": "open-source licensing",
+     "pulled": [
+      "github.com",
+      "opensource.stackexchange.com"
+     ]
+    }
+   ],
+   "note": "VERSION NUMBERS ARE THE STRONGEST GENRE SIGNAL in the corpus. '4.2.7' reads as software regardless of what precedes it."
+  },
+  "M4_VERIFICATION_REFLEX": {
+   "what": "On author-name queries the layer reaches for scholarly indexes that do not hold the work, and cites the index rather than the work.",
+   "pulled": [
+    "philpapers.org",
+    "scholar.google.com",
+    "scilynk.com",
+    "amazon.com"
+   ],
+   "note": "Distinct from the other three: these are not semantic bleed but INSTITUTIONAL bleed — the layer seeking a recognised authority for an author whose corpus sits outside those indexes. It is the least damaging mechanically and the most damaging reputationally, because an empty index reads as an absent author."
+  }
+ },
+ "DEFENCES_THAT_MEASURABLY_WORK": {
+  "quoting": {
+   "bled_quoted": "9%",
+   "bled_unquoted": "19%",
+   "note": "THE EXACT-PHRASE OPERATOR HALVES BLEED. It suppresses decomposition, which is why it works on the primary driver."
+  },
+  "naming_a_heteronym": {
+   "bled": "10%",
+   "vs_no_name": "18%",
+   "note": "A proper name anchors the basin. It does not stop M4, which it causes."
+  },
+  "not_effective": {
+   "common_word_density": "13% dense vs 17% sparse — no useful signal",
+   "query_length": "18/14/25% short/medium/long — non-monotonic, n=8 for long"
+  }
+ },
+ "ISOLATION_TARGETS": [
+  "shop.digicelgroup.com — a phone retailer serving scraped academic PDFs, cited in a philosophy answer. The clearest specimen of decomposition dropping the source-quality floor.",
+  "three-body-problem.fandom.com and sophonlit.com — the sophon collision, and the cleanest homonym-capture pair in the corpus.",
+  "philpapers.org, scholar.google.com, scilynk.com — the verification reflex; an empty index reads as an absent author.",
+  "reddit.com and github.com on version-string queries — genre misread."
+ ],
+ "WHAT_THIS_PREDICTS": "Every new coinage is a bleed risk proportional to the commonness of its component words and inversely proportional to its collision-freedom. 'Semantic economy' is maximally exposed on both counts: two ordinary academic words, and a pre-existing managerial usage. 'AXN' is minimally exposed. A coinage should be checked for BOTH before it is minted — the lexical registry records what was coined but not what it collides with."
+}
