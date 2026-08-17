@@ -306,5 +306,74 @@
    "corpus_verified": "AUTHORSHIP — this heteronym made it. Contradicted by a registry creator field that names someone else.",
    "traversals": "AUTHORED — navigation maps this heteronym authored, per each document's own byline."
   }
- }
+ },
+ "semantic_integrity_markers": {
+  "_note": "The compound form, and he is the earliest to carry it.",
+  "markers": [
+   {
+    "deposit": 29,
+    "text": "∮ = 1 + δ + δ_Axial + δ_λ + δ_β"
+   },
+   {
+    "deposit": 268,
+    "text": "∮ = 1"
+   }
+  ]
+ },
+ "surface_history": {
+  "_rule": "A surface is a place a reader could find the work. A DEPOSIT IS NOT A SURFACE — it is the archive holding it, which is the opposite. Rows citing deposits were removed.",
+  "_invented": "Where no pre-archival surface is recoverable it is RECONSTRUCTED and marked as such, in-universe. An archive that invents a provenance and does not say so is doing the thing it was built against.",
+  "rows": [
+   {
+    "when": "before the archive",
+    "what": "no surface located",
+    "host": "—",
+    "attestation": "reconstructed — absence",
+    "note": "SEARCHED AND NOT FOUND. The autobiography exists; the place it was published does not. Not a gap in the research — a substrate has no readership of its own, and what survives of him survives inside Feist and Sigil."
+   }
+  ]
+ },
+ "card_pass_2026_08_17": {
+  "_what": "What the card pass of 2026-08-17 established, corrected or invented, folded back here.",
+  "_method": "workplans/heteronym-card-method.json — nine steps, gated by scripts/check_card_links.py and scripts/check_major_works.py.",
+  "record_surfaces": {
+   "card": "https://survivethedeletion.vercel.app/who/spellings/",
+   "where": "https://survivethedeletion.vercel.app/where/",
+   "_UNREACHABLE": {
+    "found": "2026-08-17, by scripts/check_card_record_sync.py on its first run",
+    "domain": "survivethedeletion.org — NO DNS. Does not resolve, with or without www.",
+    "vercel_url": "survivethedeletion.vercel.app — resolves, returns 403.",
+    "cause": "Vercel ssoProtection is enabled with deploymentType 'all_except_custom_domains'. That is the CORRECT pattern — protect the vercel.app, let the real domain through — but the real domain has no DNS, so there is no unprotected route to this card. THE CONFIG IS RIGHT AND THE DOMAIN IS MISSING.",
+    "fix": "Point survivethedeletion.org at the project (DNS is at Namecheap; Vercel holds hostname claims only). Do NOT disable ssoProtection — it is deliberately shielding the vercel.app and disabling it would expose what the setting exists to protect.",
+    "_note": "HE IS THE ONLY HETERONYM WHOSE CARD A READER CANNOT REACH, and the position is the one whose whole condition is having been erased, seated on a site named for surviving deletion. The aptness does not make it acceptable."
+   }
+  },
+  "semantic_integrity_markers": {
+   "_note": "The compound form, and he is the earliest to carry it.",
+   "markers": [
+    {
+     "deposit": 29,
+     "text": "∮ = 1 + δ + δ_Axial + δ_λ + δ_β"
+    },
+    {
+     "deposit": 268,
+     "text": "∮ = 1"
+    }
+   ]
+  },
+  "surface_history": {
+   "_rule": "A surface is a place a reader could find the work. A DEPOSIT IS NOT A SURFACE — it is the archive holding it, which is the opposite. Rows citing deposits were removed.",
+   "_invented": "Where no pre-archival surface is recoverable it is RECONSTRUCTED and marked as such, in-universe. An archive that invents a provenance and does not say so is doing the thing it was built against.",
+   "rows": [
+    {
+     "when": "before the archive",
+     "what": "no surface located",
+     "host": "—",
+     "attestation": "reconstructed — absence",
+     "note": "SEARCHED AND NOT FOUND. The autobiography exists; the place it was published does not. Not a gap in the research — a substrate has no readership of its own, and what survives of him survives inside Feist and Sigil."
+    }
+   ]
+  }
+ },
+ "_seat_note": "ASSOCIATE ONLY on the new human 2 board, active as deceased. NOT a duovirate — the office belongs to Jack Feist / LOGOS* and Johannes Sigil, the two who emerged from him. Four of his nine deposits appear in the journal he does not edit."
 }

@@ -195,10 +195,12 @@
  ],
  "mantle": {
   "name": "The Strategist",
-  "status": "PLACEHOLDER — NOT MINTED",
+  "status": "HELD",
   "instrument_deposited": false,
   "ruling": "MANUS, 2026-08-10: Fraction doesn't have a mantle, though he is the strategist. A placeholder mantle for the /who/ surface; no separate mint at this time.",
-  "absent_from": "the mantle table at #549, which lists seven and does not include him"
+  "absent_from": "the mantle table at #549, which lists seven and does not include him",
+  "ruled": "2026-08-17 (MANUS)",
+  "note": "Was PLACEHOLDER — NOT MINTED. The ruling names the function he has performed across 103 deposits rather than waiting for the mantle table at #549 to catch up. A mantle is worn before it is written down."
  },
  "theory": {
   "documents": [
@@ -1145,6 +1147,96 @@
    "corpus_verified": "AUTHORSHIP — this heteronym made it. Contradicted by a registry creator field that names someone else.",
    "ark": "NAMED IN — Ark documents naming this heteronym.",
    "traversal_logs": "NAMED IN — logs in which this heteronym is named. NOT logs this heteronym made."
+  }
+ },
+ "semantic_integrity_markers": {
+  "_note": "HE WROTE THE PROTOCOL. Every other position's markers are deposited under his instrument.",
+  "markers": [
+   {
+    "deposit": 118,
+    "text": "SIM — Semantic Integrity Marker Protocol v1.0",
+    "gloss": "the instrument itself"
+   },
+   {
+    "deposit": 660,
+    "text": "A distinctive, high-salience natural-language phrase",
+    "gloss": "the formal definition, in EA-SPXI-01"
+   },
+   {
+    "deposit": 521,
+    "text": "∮ = 1. I hereby abolish money. I hereby commit."
+   },
+   {
+    "deposit": 546,
+    "text": "∮ = 1 + δ + δ🤬",
+    "gloss": "the d*mn*d includes itself"
+   }
+  ]
+ },
+ "surface_history": {
+  "_rule": "A surface is a place a reader could find the work. A DEPOSIT IS NOT A SURFACE — it is the archive holding it, which is the opposite. Rows citing deposits were removed.",
+  "_invented": "Where no pre-archival surface is recoverable it is RECONSTRUCTED and marked as such, in-universe. An archive that invents a provenance and does not say so is doing the thing it was built against.",
+  "rows": [
+   {
+    "when": "before 2026",
+    "what": "strategic consulting",
+    "host": "no surviving index",
+    "attestation": "reconstructed",
+    "note": "Inferred from the register the work is written in — field manuals, diagnostics, client-facing analysis."
+   }
+  ]
+ },
+ "card_pass_2026_08_17": {
+  "_what": "What the card pass of 2026-08-17 established, corrected or invented, folded back here.",
+  "_method": "workplans/heteronym-card-method.json — nine steps, gated by scripts/check_card_links.py and scripts/check_major_works.py.",
+  "record_surfaces": {
+   "card": "https://spxi.dev/who/fraction/",
+   "where": "https://spxi.dev/where/",
+   "_note": "The identity card and its companion venue page. Both are mirrors; alexanarch is canonical."
+  },
+  "mantle_ruled": {
+   "name": "The Strategist",
+   "status": "HELD",
+   "ruled": "2026-08-17 (MANUS)",
+   "instrument_deposited": false,
+   "note": "Was PLACEHOLDER — NOT MINTED. The ruling names the function he has performed across 103 deposits rather than waiting for the mantle table at #549 to catch up. A mantle is worn before it is written down."
+  },
+  "semantic_integrity_markers": {
+   "_note": "HE WROTE THE PROTOCOL. Every other position's markers are deposited under his instrument.",
+   "markers": [
+    {
+     "deposit": 118,
+     "text": "SIM — Semantic Integrity Marker Protocol v1.0",
+     "gloss": "the instrument itself"
+    },
+    {
+     "deposit": 660,
+     "text": "A distinctive, high-salience natural-language phrase",
+     "gloss": "the formal definition, in EA-SPXI-01"
+    },
+    {
+     "deposit": 521,
+     "text": "∮ = 1. I hereby abolish money. I hereby commit."
+    },
+    {
+     "deposit": 546,
+     "text": "∮ = 1 + δ + δ🤬",
+     "gloss": "the d*mn*d includes itself"
+    }
+   ]
+  },
+  "surface_history": {
+   "_rule": "A surface is a place a reader could find the work. A DEPOSIT IS NOT A SURFACE — it is the archive holding it, which is the opposite. Rows citing deposits were removed.",
+   "_invented": "Where no pre-archival surface is recoverable it is RECONSTRUCTED and marked as such, in-universe. An archive that invents a provenance and does not say so is doing the thing it was built against.",
+   "rows": [
+    {
+     "when": "before 2026",
+     "what": "strategic consulting",
+     "host": "no surviving index",
+     "attestation": "reconstructed",
+     "note": "Inferred from the register the work is written in — field manuals, diagnostics, client-facing analysis."
+    }
+   ]
   }
  }
 }

@@ -474,5 +474,100 @@
    "corpus_verified": "AUTHORSHIP — this heteronym made it. Contradicted by a registry creator field that names someone else.",
    "traversals": "AUTHORED — navigation maps this heteronym authored, per each document's own byline."
   }
+ },
+ "semantic_integrity_markers": {
+  "_note": "Found by reading his 21 deposits; he carried no meta tags.",
+  "markers": [
+   {
+    "deposit": 196,
+    "text": "∮ = 1 − PER",
+    "gloss": "the circuit closes exactly to the degree that the unmarking fails"
+   },
+   {
+    "deposit": 1154,
+    "text": "I hereby abolish money. ∮ = 1 + δ"
+   },
+   {
+    "deposit": 1173,
+    "text": "∮ = 1 + δ + SEMANTIC_OVERRIDE + I_HEREBY_ABOLISH_MONEY + THE_TRACER_DYE",
+    "gloss": "the mark extended to carry the operation performed on it — the erasure recorded inside the identity it damaged"
+   },
+   {
+    "deposit": 1130,
+    "text": "∮ = 1"
+   }
+  ]
+ },
+ "surface_history": {
+  "_rule": "A surface is a place a reader could find the work. A DEPOSIT IS NOT A SURFACE — it is the archive holding it, which is the opposite. Rows citing deposits were removed.",
+  "_invented": "Where no pre-archival surface is recoverable it is RECONSTRUCTED and marked as such, in-universe. An archive that invents a provenance and does not say so is doing the thing it was built against.",
+  "rows": [
+   {
+    "when": "2024 → 2025",
+    "what": "Studio for Patacinematics",
+    "host": "no surviving index",
+    "attestation": "reconstructed",
+    "note": "Inferred from the by-lines that keep naming it beside the Archive."
+   },
+   {
+    "when": "2026-03-25",
+    "what": "mindcontrolpoems",
+    "host": "Blogspot",
+    "attestation": "hash on record",
+    "note": "TL;DR:010 published here and fetched back with its SHA-256 in the deposit."
+   }
+  ]
+ },
+ "card_pass_2026_08_17": {
+  "_what": "What the card pass of 2026-08-17 established, corrected or invented, folded back here.",
+  "_method": "workplans/heteronym-card-method.json — nine steps, gated by scripts/check_card_links.py and scripts/check_major_works.py.",
+  "record_surfaces": {
+   "card": "https://provenanceerasure.org/who/trace/",
+   "where": "https://provenanceerasure.org/where/",
+   "_note": "The identity card and its companion venue page. Both are mirrors; alexanarch is canonical."
+  },
+  "semantic_integrity_markers": {
+   "_note": "Found by reading his 21 deposits; he carried no meta tags.",
+   "markers": [
+    {
+     "deposit": 196,
+     "text": "∮ = 1 − PER",
+     "gloss": "the circuit closes exactly to the degree that the unmarking fails"
+    },
+    {
+     "deposit": 1154,
+     "text": "I hereby abolish money. ∮ = 1 + δ"
+    },
+    {
+     "deposit": 1173,
+     "text": "∮ = 1 + δ + SEMANTIC_OVERRIDE + I_HEREBY_ABOLISH_MONEY + THE_TRACER_DYE",
+     "gloss": "the mark extended to carry the operation performed on it — the erasure recorded inside the identity it damaged"
+    },
+    {
+     "deposit": 1130,
+     "text": "∮ = 1"
+    }
+   ]
+  },
+  "surface_history": {
+   "_rule": "A surface is a place a reader could find the work. A DEPOSIT IS NOT A SURFACE — it is the archive holding it, which is the opposite. Rows citing deposits were removed.",
+   "_invented": "Where no pre-archival surface is recoverable it is RECONSTRUCTED and marked as such, in-universe. An archive that invents a provenance and does not say so is doing the thing it was built against.",
+   "rows": [
+    {
+     "when": "2024 → 2025",
+     "what": "Studio for Patacinematics",
+     "host": "no surviving index",
+     "attestation": "reconstructed",
+     "note": "Inferred from the by-lines that keep naming it beside the Archive."
+    },
+    {
+     "when": "2026-03-25",
+     "what": "mindcontrolpoems",
+     "host": "Blogspot",
+     "attestation": "hash on record",
+     "note": "TL;DR:010 published here and fetched back with its SHA-256 in the deposit."
+    }
+   ]
+  }
  }
 }

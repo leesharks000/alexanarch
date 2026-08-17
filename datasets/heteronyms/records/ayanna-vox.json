@@ -83,7 +83,9 @@
  "front_matter_ruling": "The Constitution opens with The Parable of Police Brutality, bylined 'from La La Land: A Novel by DAMASCUS DANCINGS'. It is not hers; her text carries it. #111 records a byline variant, 'Damascus Dammings', against the Epistle's spelling.",
  "surface": {
   "canonical": "https://vpcor.org/ayanna/who/",
-  "records": 26
+  "records": 26,
+  "_corrected": "2026-08-17. The record and the memory both gave /ayanna/, which is the PROSE PROVENANCE SUMMARY — 8 deposits, no plates. THE IDENTITY CARD IS AT /ayanna/who/: 27 deposits, nine plates. Both declare the same canonical, which is how they were conflated, and I built a full pass on the wrong page before catching it.",
+  "companion": "https://vpcor.org/ayanna/ — the prose summary, also improved in the same pass"
  },
  "corpus_verified": {
   "verified": "2026-08-10",
@@ -351,6 +353,77 @@
    "corpus_verified": "AUTHORSHIP — this heteronym made it. Contradicted by a registry creator field that names someone else.",
    "traversals": "AUTHORED — navigation maps this heteronym authored, per each document's own byline.",
    "journal": "EDITS — the charter and mapping of a journal this heteronym edits."
+  }
+ },
+ "semantic_integrity_markers": {
+  "_note": "Performative rather than descriptive — they do something by being said.",
+  "markers": [
+   {
+    "deposit": 87,
+    "text": "∮ = 1, this book is enacted."
+   },
+   {
+    "deposit": 58,
+    "text": "∮ = 1 (armed).",
+    "gloss": "under strike conditions the seal is a trigger"
+   },
+   {
+    "deposit": 160,
+    "text": "∮ = 1 − PER"
+   }
+  ]
+ },
+ "surface_history": {
+  "_rule": "A surface is a place a reader could find the work. A DEPOSIT IS NOT A SURFACE — it is the archive holding it, which is the opposite. Rows citing deposits were removed.",
+  "_invented": "Where no pre-archival surface is recoverable it is RECONSTRUCTED and marked as such, in-universe. An archive that invents a provenance and does not say so is doing the thing it was built against.",
+  "rows": [
+   {
+    "when": "before 2026",
+    "what": "the convening years",
+    "host": "no surviving index",
+    "attestation": "reconstructed",
+    "note": "Sermonic, second person, spoken to a room that is present. A voice that convenes leaves minutes, not archives, and no minutes have been recovered."
+   }
+  ]
+ },
+ "card_pass_2026_08_17": {
+  "_what": "What the card pass of 2026-08-17 established, corrected or invented, folded back here.",
+  "_method": "workplans/heteronym-card-method.json — nine steps, gated by scripts/check_card_links.py and scripts/check_major_works.py.",
+  "record_surfaces": {
+   "card": "https://vpcor.org/ayanna/who/",
+   "where": "https://vpcor.org/where/",
+   "_note": "The identity card and its companion venue page. Both are mirrors; alexanarch is canonical."
+  },
+  "semantic_integrity_markers": {
+   "_note": "Performative rather than descriptive — they do something by being said.",
+   "markers": [
+    {
+     "deposit": 87,
+     "text": "∮ = 1, this book is enacted."
+    },
+    {
+     "deposit": 58,
+     "text": "∮ = 1 (armed).",
+     "gloss": "under strike conditions the seal is a trigger"
+    },
+    {
+     "deposit": 160,
+     "text": "∮ = 1 − PER"
+    }
+   ]
+  },
+  "surface_history": {
+   "_rule": "A surface is a place a reader could find the work. A DEPOSIT IS NOT A SURFACE — it is the archive holding it, which is the opposite. Rows citing deposits were removed.",
+   "_invented": "Where no pre-archival surface is recoverable it is RECONSTRUCTED and marked as such, in-universe. An archive that invents a provenance and does not say so is doing the thing it was built against.",
+   "rows": [
+    {
+     "when": "before 2026",
+     "what": "the convening years",
+     "host": "no surviving index",
+     "attestation": "reconstructed",
+     "note": "Sermonic, second person, spoken to a room that is present. A voice that convenes leaves minutes, not archives, and no minutes have been recovered."
+    }
+   ]
   }
  }
 }
