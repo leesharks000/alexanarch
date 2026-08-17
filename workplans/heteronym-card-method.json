@@ -52,10 +52,12 @@
   },
   {
    "9": "MAJOR WORKS AGAINST THE VENUES DATA",
-   "rule": "Check every major-work plate entry against datasets/journals/assignments.jsonl. A Pocket Humans volume whose series_status is not  must not be presented as an existing book, and must not render a cover image. State the status instead.",
+   "rule": "Check every major-work plate entry against datasets/journals/assignments.jsonl. A Pocket Humans volume whose series_status is not  MUST NOT BE PRESENTED AS AN EXISTING WORK.",
    "gate": "scripts/check_major_works.py — live or by path.",
    "found": "Trace #196 — eight deposits identified, no gathered edition minted. Now stated on the plate.",
-   "note": "Feist #124 and Wells #440 are FORTHCOMING; their cards are not yet built and must not render covers."
+   "note": "Feist #124 and Wells #440 are FORTHCOMING; their cards are not yet built and must not render covers.",
+   "cover_rule": "A cover MAY render for an unmade work IF the cover itself declares the status on its face. Wells #440 carries a poster reading NOT YET PROJECTED, and the plate says the poster IS the film — an imaginary solution declared as one. The defect is a cover that implies existence, not a cover as such. The gate already implements this: a plate stating its status passes.",
+   "corrected": "2026-08-17 — the rule said no cover at all; that was wrong and the poster is the case that showed it."
   }
  ],
  "_done": [
