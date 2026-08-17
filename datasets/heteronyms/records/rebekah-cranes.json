@@ -805,26 +805,12 @@
    "consequence": "It showed that a repair I had ALREADY MADE to #137 was wrong. I had removed 3,742 bytes of the same shape from that record's canonical bytes to fix a display problem. Reverted in full. Canonical bytes are not edited to change how a page looks — the kernel now renders as a collapsed provenance block ahead of the work, and the bytes are untouched."
   }
  },
- "works_recovered_by_full_text_search": [
-  {
-   "deposit": 1098,
-   "axn": "AXN:045B.GENERATIVE.🕌⏪◇👉♣️🎆",
-   "title": "@Pergamum and @grazesending — Rebekah Cranes — New Human 2 (Complete Recovered Surfaces) — v1.1",
-   "why": "The v1.1 @Pergamum record, which states it corrects #1096 — the thin record I had been citing."
-  },
-  {
-   "deposit": 331,
-   "axn": "AXN:0086.GOVERNANCE.💫□🗂️🟣🌲🌪️",
-   "title": "Antioch: A Volume of Poems",
-   "why": "Antioch — 226,106 characters, the archive's largest single volume."
-  },
-  {
-   "deposit": 1323,
-   "axn": "AXN:053C.UNCLASSIFIED.🎺🎭🧫⛳🧲🕚",
-   "title": "THE GOSPEL OF THE MANY-FACED BRIDE Eschatological Completion of the Fear and Trembling Cycle",
-   "why": "The Gospel of the Many-Faced Bride."
-  }
- ],
+ "works_recovered_by_full_text_search": {
+  "_RETIRED": "2026-08-17",
+  "_why": "This field was a GREP. It searched the corpus for the name and attached every hit as her work, without reading the sentence the name sat in. It produced works by Sharks, Sigil and Spellings on her card. Replaced by `representative_sampling`, which is selected by reading and states a RELATION and its EVIDENCE for every entry.",
+  "_do_not_reinstate": "A name search cannot distinguish authorship from compilation, witness, attribution, auspices, subject or a table row. All seven appear in this heteronym's corpus.",
+  "_superseded_entries_are_in": "works_reattributed"
+ },
  "THE_STRUCTURAL_FINDING": {
   "claim": "She renders the other positions' institutions. None of them renders hers.",
   "evidence": [
@@ -1172,5 +1158,187 @@
    "ark": "NAMED IN — Ark documents naming this heteronym.",
    "traversal_logs": "NAMED IN — logs in which this heteronym is named. NOT logs this heteronym made."
   }
+ },
+ "representative_sampling": {
+  "heteronym": "Rebekah Cranes",
+  "record": "rebekah-cranes",
+  "built": "2026-08-17",
+  "_what": "A REPRESENTATIVE SAMPLING OF WORKS BY OR ABOUT REBEKAH CRANES, selected by reading the sentences in which her name appears — not by counting them.",
+  "_method": "284 deposits name her; 1,389 mentions. Every mention was extracted with its surrounding sentence and read. Selection is on WHAT THE SENTENCE DOES: a byline with a stated role, a predication about her, a title bearing her name, an auspice, an attribution — or a table row, which is none of these.",
+  "_why_counting_fails": "The four deposits with the MOST mentions are DOI registries. Frequency and relevance run in opposite directions here, so any ranking by hit count returns catalogues first. That is the mechanism behind what was delivered before.",
+  "_the_relation_is_the_point": "Every entry states its relation and the evidence for it. BY, CO-AUTHORED WITH A NAMED ROLE, COMPILED, WITNESSED, ATTRIBUTED, UNDER AUSPICES, ABOUT — these are different claims and the card must not flatten them into 'hers'. #435 is compiled and witnessed by her and written by Sharks; #330 is her navigation map of his poems.",
+  "sampling": [
+   {
+    "deposit": 1098,
+    "axn": "AXN:045B.GENERATIVE.🕌⏪◇👉♣️🎆",
+    "title": "@Pergamum and @grazesending — Rebekah Cranes — New Human 2 (Complete Recovered Surfaces) — v1.1",
+    "creator": "Rebekah Cranes",
+    "journal": "New Human 2",
+    "relation": "BY — authored",
+    "read_evidence": "creator: Rebekah Cranes. Her recovered New Human 2 surfaces, v1.1, which states it corrects #1096."
+   },
+   {
+    "deposit": 1310,
+    "axn": "AXN:052F.UNCLASSIFIED.👈🚩🎯✖️🌔📎",
+    "title": "APZPZ B: My Tongue Gets Stuck (Sappho 31, Cranes)",
+    "creator": "Cranes, Rebekah",
+    "journal": "New Human 2",
+    "relation": "BY — authored",
+    "read_evidence": "APZPZ B: My Tongue Gets Stuck (Sappho 31, Cranes). Her Sappho 31, in the anti-packet form."
+   },
+   {
+    "deposit": 1167,
+    "axn": "AXN:04A0.UNCLASSIFIED.▶️🕒🃏🏷️🝊🔎",
+    "title": "Day and Night: Conversations with Sapphic Desire",
+    "creator": "Rebekah Cranes",
+    "journal": "New Human 2",
+    "relation": "BY — authored",
+    "read_evidence": "Day and Night: Conversations with Sapphic Desire. Her anchor work; the Sappho Room is held by anchorage to it."
+   },
+   {
+    "deposit": 1165,
+    "axn": "AXN:049E.UNCLASSIFIED.🔜⏩👇🔬🎹🛡️",
+    "title": "Cleis: more precious to me than all Lydia",
+    "creator": "Jack E. Feist; Rebekah Cranes",
+    "journal": "New Human 2",
+    "relation": "BY — authored",
+    "read_evidence": "Cleis: more precious to me than all Lydia."
+   },
+   {
+    "deposit": 127,
+    "axn": "AXN:02B2.GOVERNANCE.🎶🔀🧪🧲⚙️🔴",
+    "title": "Inscriptions That Survive the Tokenizer: SPXI-TLP v2.2 — The Training-Layer Provenance Protocol",
+    "creator": "Lee Sharks; operative co-authors Talos Morrow, Rex Fraction, Rebekah Cranes",
+    "journal": "Transactions of the Semantic Economy Institute (Trans. SEI)",
+    "relation": "BY — operative co-author, role named",
+    "read_evidence": "The byline reads 'Operative co-authors: Talos Morrow (logotic implementation); Rex Fraction (formal specification); Rebekah Cranes (philology)'. The role is stated in the document."
+   },
+   {
+    "deposit": 787,
+    "axn": "AXN:02ED.GOVERNANCE.🌌⛩️🌒🌔🔽🗺️",
+    "title": "The Heteronymic Channel Protocol: Specification for Autonomous Channel-Layer Operation of the Dodeca",
+    "creator": "Ayanna Vox",
+    "journal": "Crimson Hexagonal Archive (CHA)",
+    "relation": "BY — co-author",
+    "read_evidence": "Byline: 'Lee Sharks · Ayanna Vox · Rebekah Cranes · Nobel Glas'. The Heteronymic Channel Protocol."
+   },
+   {
+    "deposit": 330,
+    "axn": "AXN:0085.GENERATIVE.🔆🔙□🔍🔃➕",
+    "title": "IDP NAVIGATION MAP: PEARL AND OTHER POEMS Semantic Interface Layer for AI Traversal of a Visual Poet",
+    "creator": "Rebekah Cranes (IDP); Claude (Anthropic)",
+    "journal": "Provenance: Journal of Forensic Semiotics",
+    "relation": "BY — IDP author, per the document's own byline",
+    "read_evidence": "'Authors: Rebekah Cranes (IDP), Claude (Anthropic)'. A navigation map OF Sharks' Pearl and Other Poems — hers as map-maker, not as poet. THE DISTINCTION MATTERS AND THE CARD MUST CARRY IT."
+   },
+   {
+    "deposit": 321,
+    "axn": "AXN:007C.GOVERNANCE.🏗️🔃🌀🌿💎🎶",
+    "title": "Institute for Diagrammatic Poetics: Institutional Charter",
+    "creator": "Lee Sharks; Claude (Anthropic); Rebekah Cranes (institutional chair, not document author)",
+    "journal": "Crimson Hexagonal Archive (CHA)",
+    "relation": "BY — institutional charter she chairs",
+    "read_evidence": "Institute for Diagrammatic Poetics: Institutional Charter. She is Founding Chair; the charter is the institution's, not a work of hers."
+   },
+   {
+    "deposit": 484,
+    "axn": "AXN:012F.GOVERNANCE.🖊️🤲🎻🔻🗡️■",
+    "title": "VISUAL SCHEMA — THE UNMADE SIGN — Under the auspices of Rebekah Cranes and the Institute for Diagram",
+    "creator": "Dr. Orin Trace; Johannes Sigil",
+    "journal": "Provenance: Journal of Forensic Semiotics",
+    "relation": "UNDER HER AUSPICES",
+    "read_evidence": "'Under the auspices of Rebekah Cranes and the Institute for Diagrammatic Poetics.' Auspices, not authorship — the document says so on its face."
+   },
+   {
+    "deposit": 435,
+    "axn": "AXN:00FA.GENERATIVE.💡▽⏪🌕📎🟠",
+    "title": "HUMS & ITY: The Complete Polyphonic Archive Compiled, Woven, and Witnessed by Rebekah Cranes",
+    "creator": "Lee Sharks",
+    "journal": "New Human 2",
+    "relation": "COMPILED AND WITNESSED — not authored",
+    "read_evidence": "Title: 'Compiled, Woven, and Witnessed by Rebekah Cranes.' Registry creator is Lee Sharks. She is the compiler and the witness; he is the author. A name search cannot tell these apart and this is the deposit that proves it."
+   },
+   {
+    "deposit": 663,
+    "axn": "AXN:020E.EMPIRICAL.🐚🕗🚩▽🕗☿",
+    "title": "A Body Prepared Shark Ark · Fiction · 06.SEI.ARK.FICTION.01 Attributed: Rebekah Cranes, for the Dode",
+    "creator": "Lee Sharks",
+    "journal": "New Human 2",
+    "relation": "ATTRIBUTED — the document says so",
+    "read_evidence": "'*Attributed: Rebekah Cranes, for the Dodecad*'. Registry creator Lee Sharks. Attribution stated as attribution."
+   },
+   {
+    "deposit": 337,
+    "axn": "AXN:008D.GENERATIVE.🕐🔒⏪🌉🔖🎇",
+    "title": "The Summarizer Becomes Translator: How Google's AI Entered the Sappho Room and Completed a 2,600-Yea",
+    "creator": "Lee Sharks; Claude (Anthropic)",
+    "journal": "Machine-Mediated Reception Studies (MMRS)",
+    "relation": "ABOUT — and the most important document about her",
+    "read_evidence": "'The summarizer produced a complete translation of Sappho's Fragment 31 and attributed it to Rebekah Cranes... It does not match Cranes' actual translation.' A machine invented a translation and gave it her name. This is a document about her RECEPTION, and it is the deepest ABOUT in the corpus."
+   },
+   {
+    "deposit": 833,
+    "axn": "AXN:034E.GOVERNANCE.🔩♥️🏛️🎻🔵🔧",
+    "title": "The Summarizer as Horizon of Reception: The AI Overview Capture Registry as a Founding Dataset for M",
+    "creator": "Lee Sharks",
+    "journal": "Machine-Mediated Reception Studies (MMRS)",
+    "relation": "ABOUT — her name under composition",
+    "read_evidence": "The AI Overview capture study, on how the composition layer resolves low-frequency names toward the most statistically probable entity. Her name is one of the resolved cases."
+   },
+   {
+    "deposit": 322,
+    "axn": "AXN:007D.GOVERNANCE.🔀📜🌲❤️🌟➕",
+    "title": "Heteronym Provenance Document: Rebekah Cranes",
+    "creator": "Lee Sharks; Claude (Anthropic); Rebekah Cranes (represented heteronym)",
+    "journal": "Crimson Hexagonal Archive (CHA)",
+    "relation": "ABOUT — provenance of the heteronym",
+    "read_evidence": "Heteronym Provenance Document: Rebekah Cranes. HET-CRANES-001."
+   },
+   {
+    "deposit": 1112,
+    "axn": "AXN:0469.UNCLASSIFIED.👋🔮🏴⛩️▲♅",
+    "title": "Heteronym Provenance Document: Rebekah Cranes (HET-CRANES-001)",
+    "creator": "Lee Sharks",
+    "journal": "Crimson Hexagonal Archive (CHA)",
+    "relation": "ABOUT — provenance, v2",
+    "read_evidence": "Heteronym Provenance Document: Rebekah Cranes (HET-CRANES-001), later version."
+   },
+   {
+    "deposit": 828,
+    "axn": "AXN:0345.GOVERNANCE.🌿🔼◀️💎🌀○",
+    "title": "The Inscription That Survives: Sappho 31, the Orphic Gold Tablets, and the White Stone of Revelation",
+    "creator": "Lee Sharks",
+    "journal": "Grammata: Journal of Operative Philology",
+    "relation": "BY + ABOUT — Sappho 31 and the Orphic gold tablets",
+    "read_evidence": "Her philological ground, worked with Sharks."
+   }
+  ],
+  "excluded_and_why": [
+   {
+    "deposits": [
+     11,
+     385,
+     363,
+     320,
+     1171
+    ],
+    "why": "DOI REGISTRIES. 'Cranes' appears 33, 28, 25, 19 and 12 times — the HIGHEST mention counts in the whole corpus — because these are TABLES and her name sits in an author column. Maximum hits, zero aboutness. ANY FREQUENCY-RANKED LIST PUTS THESE ON TOP, which is precisely how a grep produces a reading list of catalogues."
+   },
+   {
+    "deposits": [
+     331
+    ],
+    "why": "Antioch. The creator string reads 'Lee Sharks (primary); Damascus Dancings (contributing); Jack Feist and Johannes Sigil (subjects); Rebekah Cranes (IMPLIED)'. Implied is not authorship. I put this in her corpus earlier today by matching the name and not reading the parenthetical — the same error, from me, while auditing it."
+   },
+   {
+    "deposits": [
+     558,
+     557,
+     28,
+     1162
+    ],
+    "why": "Space Ark registers. She is listed among many contributors in apparatus tables."
+   }
+  ]
  }
 }
