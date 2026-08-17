@@ -1,0 +1,62 @@
+{
+ "_id": "HETERONYM CARD METHOD — four steps, per heteronym, one at a time",
+ "_set": "2026-08-17 (MANUS)",
+ "_why": "Cards were built by grep and justified by prose. Doing them one at a time is only worth it if each one is done completely.",
+ "steps": [
+  {
+   "1": "TRAVERSALS — four dispositions",
+   "rules": [
+    "ENTERS this position's room or discipline -> the traversal plate",
+    "NAMES the position without entering it -> the naming section",
+    "ANOTHER HETERONYM'S -> remove; it belongs nowhere on this card",
+    "MISCATEGORISED AS A TRAVERSAL BUT THEIRS -> relocate to where it belongs, UNLESS redundant there or it does not advance the record",
+    "and: no deposit on two plates"
+   ],
+   "definition": "A traversal is a record of a machine encountering the archive. A room is a specification; a traversal is that room executed. Navigation maps, charters, captures and registries are NOT traversals."
+  },
+  {
+   "2": "DOUBLINGS — every plate, not only traversals",
+   "note": "Sigil carried MACHINE RECEPTION twice as well as twelve traversals twice. Check the whole card, not the section being worked."
+  },
+  {
+   "3": "JOURNAL PLATE — rebuild from the journals data",
+   "note": "The journal plates that exist are now often WRONG. They predate the 2026-08-15 duoviri ruling and the venue records. Build from datasets/venues/records/*.json joined on registry_string, not from what the card says."
+  },
+  {
+   "4": "THE /where/ TAB — per site",
+   "note": "Journals and presses for that heteronym, on their own site. VISUALLY PARALLEL TO THAT SITE'S HETERONYM CARD and sharing the site-wide nav bar where one exists. Cranes at axnidentifiers is the template. Link its own site's stylesheet; declare no colours and no classes the card does not already use."
+  },
+  {
+   "5": "CAPTURES — related to the heteronym",
+   "rule": "A capture belongs on a card when the QUERY names the heteronym, their works, their concepts, their institution or their journal — or when the MACHINE OUTPUT composes them. Nothing else qualifies.",
+   "NEVER_MATCH_ON": "the 'd' and 'analysis' fields. Those are THE ARCHIVE'S OWN NOTES ABOUT a capture, not evidence from it. Matching on them put a Bing biography answering 'who is lee sharks?' on Johannes Sigil's card, because an annotator had written 'Grammata' in the note.",
+   "and": "Do not optimise the selection for coverage of sections or match types before the population is right. Chasing coverage is what forced the biography in — it was the only capture carrying MANTLE CONSOLIDATION. A representative sample of the wrong population is still the wrong population.",
+   "cap": "No more than 20. Fewer is better. Link out to alexanarch.org/captures/ for the rest."
+  }
+ ],
+ "_done": [
+  "cranes: traversals",
+  "sigil: traversals",
+  "trace: traversals"
+ ],
+ "_open": [
+  "sigil: reception REVERTED to nine rows pending a correct selection",
+  "cranes: /where/ column mashing",
+  "sigil: machine reception doubling, journal plate",
+  "trace: doublings, journal plate, /where/",
+  "vox kuro dancings feist: all four steps",
+  "fraction morrow glas wells spellings: all four steps"
+ ],
+ "plate_order": {
+  "_rule": "CATEGORISED CHIP PLATES FIRST, then three plates that are a different kind of thing, in this order at the end: SURFACE HISTORY, SEMANTIC INTEGRITY MARKERS, MACHINE RECEPTION. MACHINE RECEPTION IS ALWAYS THE LAST CATEGORY ON EVERY RECORD.",
+  "_why": "The chip plates list the position's own work and relations. The final three are about the surface itself, its doctrine, and how machines received it — not categories of work, and they should not be interleaved with plates that are.",
+  "tail": [
+   "Surface history",
+   "Semantic integrity markers",
+   "Machine reception"
+  ],
+  "_applied": [
+   "cranes 2026-08-17"
+  ]
+ }
+}
