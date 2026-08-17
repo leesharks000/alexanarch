@@ -58,9 +58,17 @@ def main(target):
                default=len(edges))]
 
     def E(src, tgt, typ, **props):
-        eid[0] += 1
-        edges[f"e{eid[0]}"] = {"id": f"e{eid[0]}", "source": src, "target": tgt,
-                               "type": typ, "directed": True, "properties": props or {}}
+        """Deterministic id from (source, target, type).
+
+        The first version incremented a counter, so a second run re-minted every
+        edge under a new id and the file went 419 -> 688 edges from thirty new
+        nodes. A PROJECTOR THAT IS NOT IDEMPOTENT SILENTLY INFLATES THE THING IT
+        PROJECTS, and on a map whose subject is what-is-where that is the same
+        class of error as misreporting the node count.
+        """
+        key = f"px-{src}--{typ}--{tgt}".replace(":", "_")
+        edges[key] = {"id": key, "source": src, "target": tgt,
+                      "type": typ, "directed": True, "properties": props or {}}
 
     def N(nid, typ, subtype, label, **kw):
         base = nodes.get(nid, {})
@@ -168,6 +176,82 @@ def main(target):
           status="active",
           properties={"what": g if isinstance(g, str) else str(g)[:300],
                       "note": "a gate is machinery, not an aperture"})
+
+
+    # ── SITES — every fleet domain, verified and linkable ──────────
+    # MANUS ruling 2026-08-17: all sites must be reflected and linkable. The atlas
+    # referenced 44 hosts inside node urls but typed only EIGHT as domains, so most
+    # of the fleet existed on the map only as a substring of somebody else's link.
+    SITES = {
+        "alexanarch.org": ("the sovereign archive — 1,488 deposits, AXN-addressed", "authority", 1.0),
+        "crimsonhexagonal.org": ("the governed operating surface — 38 rooms, each a document", "renderer", 0.9),
+        "surfacemap.org": ("this atlas — the apertures", "atlas", 0.85),
+        "pessoagraph.org": ("the entities — heteronymic practice across 5,000 years", "atlas", 0.85),
+        "spxi.dev": ("the SPXI protocol specification · Rex Fraction", "heteronym", 0.85),
+        "vpcor.org": ("Vox Populi Community Outreach Rhizome · Rev. Ayanna Vox", "heteronym", 0.8),
+        "revelationfirst.com": ("the Revelation First thesis · Damascus Dancings", "heteronym", 0.8),
+        "provenanceerasure.org": ("the PER instrument · Dr. Orin Trace", "heteronym", 0.8),
+        "restoredacademy.org": ("The Restored Academy · Johannes Sigil", "heteronym", 0.8),
+        "restoredacademy.com": ("The Restored Academy — alternate spelling", "alias", 0.5),
+        "lagrangeobservatory.org": ("Lagrange Observatory! · Nobel Glas", "heteronym", 0.8),
+        "godkinggoogle.com": ("the Google critique · Talos Morrow", "heteronym", 0.8),
+        "chatgptpsychosis.org": ("ChatGPT Psychosis · Jack Feist / LOGOS*", "heteronym", 0.8),
+        "holographickernel.org": ("the Holographic Kernel · Sen Kuro", "heteronym", 0.8),
+        "axnidentifiers.org": ("AXN identifiers — canonical product surface · Rebekah Cranes", "product", 0.85),
+        "axnidentifiers.com": ("AXN identifiers — 308 redirect", "alias", 0.4),
+        "axnidentifier.org": ("AXN identifiers — singular, 308 redirect", "alias", 0.4),
+        "machinemediation.org": ("machine mediation — MM-CHA registry", "institution", 0.75),
+        "persistentidentifiers.org": ("Platform Erosion Observatory", "institution", 0.8),
+        "semanticphysics.org": ("Semantic Physics", "institution", 0.75),
+        "semanticeconomy.org": ("the Semantic Economy", "institution", 0.75),
+        "themandalaoracle.com": ("the Mandala Oracle — casting system, eight operators", "instrument", 0.7),
+        "leesharks.com": ("the orthonym — Lee Sharks", "orthonym", 0.9),
+        "maryleelabor.org": ("Mary Lee Sharks — biolabor, non-human heteronymy", "heteronym", 0.7),
+        "watergiraffe.org": ("Water Giraffe", "project", 0.6),
+        "traininglayerliterature.org": ("training-layer literature", "project", 0.7),
+        "metadatapacket.dev": ("the metadata packet for AI indexing", "specification", 0.7),
+        "secretbookofwalt.org": ("The Secret Book of Walt", "work", 0.7),
+        "survivethedeletion.org": ("Ichabod Spellings — NO DNS, does not resolve", "heteronym", 0.0),
+    }
+    VERIFIED_DOWN = {"survivethedeletion.org"}
+    for host, (desc, role, auth) in SITES.items():
+        nid = "site-" + host.replace(".", "-")
+        down = host in VERIFIED_DOWN
+        N(nid, "SURFACE", "site", host,
+          url=f"https://{host}/", status="down" if down else "active",
+          apertureType="output", authority=auth,
+          basinState="unreachable" if down else None,
+          vulnerabilityScore=1.0 if down else None,
+          properties={"description": desc, "role": role,
+                      "http": "DNS failure" if down else "200",
+                      "verified": TODAY,
+                      "note": ("survivethedeletion.org has no DNS. The only route is the "
+                               "vercel.app, which 403s because ssoProtection is set to "
+                               "all_except_custom_domains — correct config, missing domain. "
+                               "The one heteronym card a reader cannot reach.") if down else None})
+    # bind each site to the position or institution it surfaces
+    for hid, r in recs.items():
+        blk = (r.get("card_pass_2026_08_17") or {}).get("record_surfaces") or {}
+        for key in ("card", "where"):
+            u = blk.get(key) or ""
+            m = re.match(r"https?://([^/]+)", u)
+            if m:
+                sid = "site-" + m.group(1).replace(".", "-")
+                if sid in nodes:
+                    E(NID[hid], sid, "spxi:hostedAt", role=key)
+
+    # ── CAPTURE REGISTRY — ONE node, per MANUS ─────────────────────
+    # 343 captures are reception events, not surfaces. Pouring them in as nodes
+    # would triple the map with things nobody arrives THROUGH.
+    N("capture-registry", "INFRASTRUCTURE", "registry", "AI Overview Capture Registry",
+      url="https://www.alexanarch.org/captures/", status="active", apertureType="input",
+      authority=0.9,
+      properties={"captures": 343, "id": "EA-WG-CAPTURES-01",
+                  "_why_one_node": ("MANUS ruling 2026-08-17: the capture registry is ONE node. "
+                                    "A capture is a reception event, not an aperture — nobody "
+                                    "arrives through one. The registry is the surface; the "
+                                    "captures are what it holds.")})
+    E("capture-registry", "site-alexanarch-org", "spxi:hostedAt")
 
     atlas["nodes"] = list(nodes.values())
     atlas["edges"] = list(edges.values())
