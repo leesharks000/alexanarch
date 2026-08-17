@@ -81,3 +81,29 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
+
+def check_registry_strings(reg, records):
+    """Every venue's registry_string must actually occur in the registry, and every
+    journal value in the registry must be claimed by exactly one venue.
+
+    Added 2026-08-17. The venue records' `canonical` field differs from the registry's
+    `journal` value for FIVE of eight venues -- the registry carries a parenthetical
+    abbreviation the record does not. A join on `canonical` therefore loses five venues
+    silently, which is how the journals page first rendered three issues out of seven.
+    """
+    fails = []
+    used = {}
+    live = {d.get("journal") for d in reg["deposits"] if d.get("journal")}
+    for r in records:
+        s = r.get("registry_string")
+        if not s:
+            fails.append(f"{r['venue_id']}: no registry_string -- joins will fall back to canonical and lose it")
+            continue
+        if s not in live:
+            fails.append(f"{r['venue_id']}: registry_string {s!r} occurs in no deposit")
+        if s in used:
+            fails.append(f"{r['venue_id']}: registry_string {s!r} already claimed by {used[s]}")
+        used[s] = r["venue_id"]
+    for s in sorted(live - set(used)):
+        fails.append(f"registry journal {s!r} is claimed by no venue record")
+    return fails
