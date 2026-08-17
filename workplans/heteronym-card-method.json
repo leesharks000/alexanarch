@@ -43,6 +43,12 @@
    "7": "SEMANTIC INTEGRITY MARKERS",
    "rule": "Every record carries one. Each marker cites the DEPOSIT that states it. A marker belongs to whoever deposited it — do not take markers from a deposit credited to someone else.",
    "where_to_find": "Two places. Some are already on the page as spxi: meta tags in the head, readable by a machine and not by a person (Sigil). Some exist only in the deposits and must be read out (Trace, Kuro)."
+  },
+  {
+   "8": "LINK THE CAPTURES",
+   "rule": "Every capture row resolves to alexanarch.org/captures/#slug. Rebuilding a plate from capture data drops the links every time.",
+   "gate": "scripts/check_card_links.py — live or by path.",
+   "note": "Missed on four cards in a row. Not a judgement call; a script."
   }
  ],
  "_done": [
