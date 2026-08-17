@@ -152,6 +152,65 @@ def build():
     return '\n'.join(parts), fleet, who
 
 
+def find_block_span(html):
+    """Return (start, end) of the network block in `html`, or None.
+
+    Prefers the markers. Falls back to detecting an UNMARKED generated block --
+    a run of <h4>GROUP</h4> followed by its grid div -- and the div span is found
+    by BALANCING <div>/</div>, never by a non-greedy `.*?</div>`.
+
+    WHY THIS EXISTS (2026-08-17). The first marker-wrap used
+        <div[^>]*grid...>.*?</div>
+    which is non-greedy and therefore stopped at the first INNER </div> -- each
+    domain is its own <div>. It replaced the group header plus ONE domain and left
+    the remainder of the original block sitting directly after the inserted one.
+    FOURTEEN SITES DOUBLED, and the doubling was only visible as rendered: the
+    marker count was 1, so every automated check passed. The operator saw it on
+    traininglayerliterature.org and had already warned that we were doubling up.
+
+    ALLIED SITES IS NEVER PART OF THE SPAN. It is curated -- Alice Thornburgh,
+    Florian Morin, Enli Lucente's Strutturista della Psiche, with hand-written
+    descriptions -- and no generator writes it.
+    """
+    s = html.find(START)
+    if s >= 0:
+        e = html.find(END, s)
+        return (s, e + len(END)) if e >= 0 else None
+    m = re.search(r'<h4[^>]*>\s*Archive\s*</h4>', html, re.I)
+    if not m:
+        return None
+    i = m.start()
+    j = m.end()
+    while True:
+        d = re.match(r'\s*<div\b', html[j:])
+        if d:
+            k = _balanced_div_end(html, j + d.start())
+            if k is None:
+                break
+            j = k
+            continue
+        h = re.match(r'\s*<h4[^>]*>\s*(?:Framework Sites|Heteronym Institutions)\s*</h4>',
+                     html[j:], re.I)
+        if h:
+            j += h.end()
+            continue
+        break
+    return (i, j)
+
+
+def _balanced_div_end(html, i):
+    """Index just past the <div> opening at `i`, counting nesting."""
+    depth = 0
+    for m in re.finditer(r'<div\b|</div>', html[i:]):
+        if m.group(0) == '</div>':
+            depth -= 1
+            if depth == 0:
+                return i + m.end()
+        else:
+            depth += 1
+    return None
+
+
 def apply(paths, block):
     n = 0
     for path in paths:

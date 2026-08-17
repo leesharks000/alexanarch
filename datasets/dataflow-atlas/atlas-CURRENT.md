@@ -237,3 +237,27 @@ systems agreeing with a guard between them. The meta name `axn:retired` carries 
 retirement and lacuna, which is what made the misreading available.
 
 A bulk re-render reporting "1,276 of 1,486" therefore looks like partial failure and is not.
+
+## The binding that writes into other repositories — 2026-08-17
+
+`scripts/build_network_block.py` is the only producer that writes outside alexanarch, and
+until today it had **no atlas entry**. Four failures followed from that, three of them
+invisible to every gate:
+
+| | what | effect |
+|---|---|---|
+| NB-1 | reader took `set()` over a restructured manifest | would have emptied the block on every site |
+| NB-2 | a domain in the manifest but absent from `GROUPS` | would have deleted a live domain from 27 sites |
+| NB-3 | `var(--accent,#1a3a5c)` on sites that define no such variable | **shipped** — headings near-unreadable on four dark sites |
+| NB-4 | non-greedy `.*?</div>` matched one domain, not the block | **shipped** — fourteen sites rendered the block twice |
+
+**Why the gates missed NB-4.** Every check asked whether the markers were *present*. The
+marker count was 1 on every site, so every check passed. **A duplicate that lives outside the
+markers is invisible to any check that counts containers.** The operator had already said we
+were doubling up; I verified one site, found one marker pair, and reported it clean.
+
+**Rule.** A binding that writes into other repositories must be described here, and its checks
+must test the **rendered result**, not the presence of its own markers.
+`scripts/check_fleet_block.py` now counts rendered group headers per site and fails on any
+count that is not exactly one. **Allied Sites is never counted** — it is curated, and no
+generator writes it.
