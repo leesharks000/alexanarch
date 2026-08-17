@@ -88,7 +88,18 @@ def holders():
 
 
 def build():
-    fleet = set(json.loads(FLEET.read_text()))
+    # data/fleet-domains.json was upgraded from a bare list of 28 strings to a
+    # structured manifest ({version, count, domains:[{domain, object, ...}]}).
+    # This reader still took set() over the parsed JSON, which over a dict yields
+    # its five TOP-LEVEL KEYS — so `fleet` became {"_FLOW","version","updated",
+    # "count","domains"} and every real domain failed the `d not in fleet` test.
+    # The block has been rendering nearly empty since that change. (2026-08-16)
+    _raw = json.loads(FLEET.read_text())
+    if isinstance(_raw, dict):
+        _entries = _raw.get("domains") or []
+        fleet = {e["domain"] if isinstance(e, dict) else e for e in _entries}
+    else:
+        fleet = set(_raw)
     who = {**holders(), **EXTRA}
     grouped = {d for _, ds in GROUPS for d in ds}
     ungrouped = sorted(fleet - grouped)
@@ -114,6 +125,21 @@ def build():
                 + (f' <span style="color:var(--text-dim,#999)">({tag})</span>' if tag else '')
                 + '</div>')
         parts.append('</div>')
+    # MACHINE ENTRY. One line, last, pointing harvesters at the archive's own
+    # OAI-PMH endpoint and at AXN. It sits in the fleet block because that block
+    # is generated from a single source and applied across every site — so a
+    # harvester arriving at ANY domain in the fleet finds the way in, and one
+    # edit reaches all of them. (2026-08-16)
+    parts.append(
+        '<h4 style="font-size:0.78em;color:var(--accent,#1a3a5c);margin:10px 15px 4px 15px;'
+        'text-transform:uppercase;letter-spacing:0.04em;font-weight:500">Machine entry</h4>')
+    parts.append(
+        '<div style="padding:0 15px 4px 15px;font-size:0.82em;line-height:1.7">'
+        '<div><a href="https://www.alexanarch.org/oai?verb=Identify">OAI-PMH endpoint</a> '
+        '<span style="color:var(--text-dim,#999)">(harvestable metadata, 1,400+ records)</span></div>'
+        '<div><a href="https://www.alexanarch.org/resolve/">AXN resolver</a> '
+        '<span style="color:var(--text-dim,#999)">(content-derived identifiers)</span></div>'
+        '</div>')
     parts.append(END)
     return '\n'.join(parts), fleet, who
 

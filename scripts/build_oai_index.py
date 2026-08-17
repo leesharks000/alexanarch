@@ -60,13 +60,35 @@ DISP = ROOT / "data" / "audit" / "registration_dispositions.json"
 
 def relations_for(d, by_n, site="https://www.alexanarch.org"):
     """Forward pointers for dc:relation: immediate successor, chain-terminal head
-    (older versions point to the most recent), and full-version pointer for
-    metadata-capture records. URLs only; freetext related[] entries are not
-    emitted (not URIs). MANUS-approved 2026-08-04."""
+    (older versions point to the most recent), full-version pointer for
+    metadata-capture records, and RELATED DEPOSITS. Each target is emitted TWICE
+    — once as a resolvable URL and once as its AXN.
+
+    Why the AXN as well (2026-08-16). Before this, AXN appeared only in
+    dc:identifier: a label on the record that carries it. A harvester could see
+    that a record HAS an AXN and never see the archive USING one. Emitting the
+    AXN in dc:relation shows the identifier doing the work an identifier system
+    exists to do — records pointing at each other with it. That is the difference
+    between announcing a scheme and demonstrating one, and it is how an
+    aggregator learns AXN is a system rather than a local string.
+
+    Freetext related[] entries are still not emitted (not URIs). URLs are kept
+    alongside every AXN so nothing depends on a resolver a harvester lacks.
+    MANUS-approved 2026-08-04; extended 2026-08-16."""
     rels = []
+
+    def add(n):
+        """A target contributes its URL and, where it has one, its AXN."""
+        if n not in by_n:
+            return
+        rels.append(f"{site}/s/records/{n}/")
+        axn = (by_n[n] or {}).get("axn")
+        if axn:
+            rels.append(axn)
+
     succ = d.get("superseded_by_deposit_number")
     if succ and succ in by_n:
-        rels.append(f"{site}/s/records/{succ}/")
+        add(succ)
         seen, cur = {d.get("deposit_number"), succ}, succ
         while True:
             nxt = by_n[cur].get("superseded_by_deposit_number")
@@ -74,11 +96,20 @@ def relations_for(d, by_n, site="https://www.alexanarch.org"):
                 break
             seen.add(nxt); cur = nxt
         if cur != succ:
-            rels.append(f"{site}/s/records/{cur}/")
+            add(cur)
     fv = (d.get("body_status") or {}).get("full_version") if isinstance(d.get("body_status"), dict) else None
     if isinstance(fv, dict) and fv.get("deposit_number"):
-        rels.append(f"{site}/s/records/{fv['deposit_number']}/")
-    return rels
+        add(fv["deposit_number"])
+    # related deposits — the archive's own citation-adjacent links
+    for n in (d.get("related_deposits") or [])[:24]:
+        if isinstance(n, int):
+            add(n)
+    # deduplicate, order preserved
+    out, seen2 = [], set()
+    for r in rels:
+        if r not in seen2:
+            seen2.add(r); out.append(r)
+    return out
 
 
 def main():
@@ -146,7 +177,13 @@ def main():
                       else "audit:pending")] + (
                 ["completeness:metadata-capture"] if bs.get("class") == "metadata_capture"
                 else ["completeness:full"]),
-            "deleted": bool(d.get("status") == "WITHDRAWN"),
+            # A superseded record is not gone — it has a successor, and dc:relation
+            # above names it. But <deletedRecord>persistent is DECLARED in Identify,
+            # which promises a harvester that status changes are reported rather than
+            # silently dropped. Reporting supersession here is what makes that promise
+            # true, and for an archive whose subject is deletion, showing the chain is
+            # the point. (2026-08-16)
+            "deleted": bool(str(d.get("status")).upper() in ("WITHDRAWN", "SUPERSEDED", "RETIRED")),
             "relations": relations_for(d, by_n),
             "state": derive_state(d)["state"],
             "citable": derive_state(d)["citable"],
