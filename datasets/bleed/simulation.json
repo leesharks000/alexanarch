@@ -1,0 +1,472 @@
+{
+ "simulation": "basin escape — can a term leave its basin, and does attribution survive the crossing",
+ "date": "2026-08-17",
+ "script": "scripts/sim_basin_escape.py",
+ "trials_per_condition": 4000,
+ "THE_INVERSION": {
+  "measured": {
+   "no_citations_shown": 0.69,
+   "any_citation_shown": 0.54,
+   "off_entity_present_anchored": 0.29,
+   "off_entity_present_bare": 0.44,
+   "sealed_anchored": 0.37,
+   "sealed_bare": 0.67,
+   "_units": "PER; retention is 1-PER",
+   "n": 258
+  },
+  "finding": "A SEALED ANSWER IS THE ERASURE CASE. With nothing retrieved the layer composes from parametric memory and drops the author — PER 0.69. With any citation, 0.54. With off-entity hosts present, 0.29 to 0.44 depending on whether a name travels with the term. The relation holds inside every stratum, so it is not explained by heteronym-naming. BLEED IS NOT DILUTION; IT IS EVIDENCE THAT RETRIEVAL HAPPENED. The leak is the bridge out of the basin, and a basin with no leak is a basin whose contents are recalled without provenance."
+ },
+ "OBJECTIVE": "maximise ESCAPE = reach x retention — attributed appearances in basins the archive does not own — not minimise bleed.",
+ "MODEL": {
+  "decomposability": "Mean Zipf of a term's components, normalised. Zipf is log10 occurrences per billion words in ENGLISH: 'economy' 4.87, 'semiotics' 2.49, 'sophon' and 'heteronym' 0.00. A component with English traffic is a bridge the term can ride outward; a component with none has no basin to enter.",
+  "retention": "taken from the measured table above, by anchor state and reach state. Not posited.",
+  "reach": "P(coined)=0.28 scaled by decomposability; quoting multiplies by 0.09/0.19, the measured suppression.",
+  "_circularity_fixed": "The first version proxied commonness by word frequency across DEPOSIT TITLES, which is circular — 'capture', 'metadata' and 'layer' are common inside the archive and that says nothing about whether they carry a term outward. Every term scored 1.00 and the ranking was noise. Replaced with external English frequency."
+ },
+ "RESULTS": {
+  "terms": [
+   {
+    "term": "gravity well",
+    "decomp": 0.8508333333333333,
+    "max_z": 6.03,
+    "zero": 0,
+    "n": 2,
+    "attr_anchored": 0.187,
+    "attr_bare": 0.14375,
+    "attr_quoted": 0.0885,
+    "reach_anchored": 0.2595
+   },
+   {
+    "term": "phase x",
+    "decomp": 0.7733333333333333,
+    "max_z": 4.64,
+    "zero": 0,
+    "n": 1,
+    "attr_anchored": 0.17275,
+    "attr_bare": 0.132,
+    "attr_quoted": 0.07875,
+    "reach_anchored": 0.23475
+   },
+   {
+    "term": "training layer literature",
+    "decomp": 0.7888888888888889,
+    "max_z": 5.18,
+    "zero": 0,
+    "n": 3,
+    "attr_anchored": 0.16525,
+    "attr_bare": 0.12225,
+    "attr_quoted": 0.07675,
+    "reach_anchored": 0.233
+   },
+   {
+    "term": "machine-mediated reception",
+    "decomp": 0.7022222222222223,
+    "max_z": 4.9,
+    "zero": 0,
+    "n": 3,
+    "attr_anchored": 0.16325,
+    "attr_bare": 0.129,
+    "attr_quoted": 0.06725,
+    "reach_anchored": 0.225
+   },
+   {
+    "term": "semantic strike",
+    "decomp": 0.6716666666666666,
+    "max_z": 4.66,
+    "zero": 0,
+    "n": 2,
+    "attr_anchored": 0.1615,
+    "attr_bare": 0.11875,
+    "attr_quoted": 0.07425,
+    "reach_anchored": 0.2285
+   },
+   {
+    "term": "semantic capital",
+    "decomp": 0.7008333333333333,
+    "max_z": 5.01,
+    "zero": 0,
+    "n": 2,
+    "attr_anchored": 0.15825,
+    "attr_bare": 0.11575,
+    "attr_quoted": 0.076,
+    "reach_anchored": 0.22175
+   },
+   {
+    "term": "witness compression",
+    "decomp": 0.695,
+    "max_z": 4.52,
+    "zero": 0,
+    "n": 2,
+    "attr_anchored": 0.156,
+    "attr_bare": 0.12275,
+    "attr_quoted": 0.07725,
+    "reach_anchored": 0.22225
+   },
+   {
+    "term": "semantic economy",
+    "decomp": 0.6891666666666667,
+    "max_z": 4.87,
+    "zero": 0,
+    "n": 2,
+    "attr_anchored": 0.154,
+    "attr_bare": 0.11675,
+    "attr_quoted": 0.073,
+    "reach_anchored": 0.2135
+   },
+   {
+    "term": "operative architecture",
+    "decomp": 0.69,
+    "max_z": 4.42,
+    "zero": 0,
+    "n": 2,
+    "attr_anchored": 0.15375,
+    "attr_bare": 0.12275,
+    "attr_quoted": 0.07475,
+    "reach_anchored": 0.2155
+   },
+   {
+    "term": "compression studies",
+    "decomp": 0.7333333333333334,
+    "max_z": 4.98,
+    "zero": 0,
+    "n": 2,
+    "attr_anchored": 0.15325,
+    "attr_bare": 0.1275,
+    "attr_quoted": 0.07125,
+    "reach_anchored": 0.218
+   },
+   {
+    "term": "the semantic commodity form",
+    "decomp": 0.6983333333333333,
+    "max_z": 5.31,
+    "zero": 0,
+    "n": 3,
+    "attr_anchored": 0.1505,
+    "attr_bare": 0.12075,
+    "attr_quoted": 0.07175,
+    "reach_anchored": 0.21225
+   },
+   {
+    "term": "semantic rent",
+    "decomp": 0.665,
+    "max_z": 4.58,
+    "zero": 0,
+    "n": 2,
+    "attr_anchored": 0.15025,
+    "attr_bare": 0.11525,
+    "attr_quoted": 0.07725,
+    "reach_anchored": 0.20825
+   },
+   {
+    "term": "the three compressions",
+    "decomp": 0.6916666666666667,
+    "max_z": 5.78,
+    "zero": 0,
+    "n": 2,
+    "attr_anchored": 0.14775,
+    "attr_bare": 0.1195,
+    "attr_quoted": 0.071,
+    "reach_anchored": 0.20725
+   },
+   {
+    "term": "semantic labor",
+    "decomp": 0.6808333333333333,
+    "max_z": 4.77,
+    "zero": 0,
+    "n": 2,
+    "attr_anchored": 0.14725,
+    "attr_bare": 0.1195,
+    "attr_quoted": 0.08075,
+    "reach_anchored": 0.2075
+   },
+   {
+    "term": "semantic physics",
+    "decomp": 0.6491666666666667,
+    "max_z": 4.39,
+    "zero": 0,
+    "n": 2,
+    "attr_anchored": 0.1465,
+    "attr_bare": 0.10975,
+    "attr_quoted": 0.072,
+    "reach_anchored": 0.20675
+   },
+   {
+    "term": "the unmade sign",
+    "decomp": 0.6233333333333333,
+    "max_z": 5.08,
+    "zero": 0,
+    "n": 2,
+    "attr_anchored": 0.14425,
+    "attr_bare": 0.11125,
+    "attr_quoted": 0.071,
+    "reach_anchored": 0.1985
+   },
+   {
+    "term": "predatory compression",
+    "decomp": 0.6008333333333333,
+    "max_z": 3.82,
+    "zero": 0,
+    "n": 2,
+    "attr_anchored": 0.14175,
+    "attr_bare": 0.1105,
+    "attr_quoted": 0.06275,
+    "reach_anchored": 0.19675
+   },
+   {
+    "term": "operative semiotics",
+    "decomp": 0.5291666666666667,
+    "max_z": 3.86,
+    "zero": 0,
+    "n": 2,
+    "attr_anchored": 0.13925,
+    "attr_bare": 0.1055,
+    "attr_quoted": 0.04975,
+    "reach_anchored": 0.193
+   },
+   {
+    "term": "semantic exhaustion",
+    "decomp": 0.5741666666666667,
+    "max_z": 3.49,
+    "zero": 0,
+    "n": 2,
+    "attr_anchored": 0.139,
+    "attr_bare": 0.10825,
+    "attr_quoted": 0.063,
+    "reach_anchored": 0.199
+   },
+   {
+    "term": "the linen equations",
+    "decomp": 0.615,
+    "max_z": 3.77,
+    "zero": 0,
+    "n": 2,
+    "attr_anchored": 0.1385,
+    "attr_bare": 0.114,
+    "attr_quoted": 0.07175,
+    "reach_anchored": 0.1935
+   },
+   {
+    "term": "semiotic strike",
+    "decomp": 0.5808333333333333,
+    "max_z": 4.66,
+    "zero": 0,
+    "n": 2,
+    "attr_anchored": 0.13775,
+    "attr_bare": 0.10725,
+    "attr_quoted": 0.06075,
+    "reach_anchored": 0.192
+   },
+   {
+    "term": "liberation philology",
+    "decomp": 0.5533333333333333,
+    "max_z": 3.91,
+    "zero": 0,
+    "n": 2,
+    "attr_anchored": 0.1355,
+    "attr_bare": 0.097,
+    "attr_quoted": 0.0615,
+    "reach_anchored": 0.19
+   },
+   {
+    "term": "operative philology",
+    "decomp": 0.5491666666666667,
+    "max_z": 3.86,
+    "zero": 0,
+    "n": 2,
+    "attr_anchored": 0.1335,
+    "attr_bare": 0.1035,
+    "attr_quoted": 0.0615,
+    "reach_anchored": 0.185
+   },
+   {
+    "term": "holographic kernel",
+    "decomp": 0.5525,
+    "max_z": 3.58,
+    "zero": 0,
+    "n": 2,
+    "attr_anchored": 0.13325,
+    "attr_bare": 0.09925,
+    "attr_quoted": 0.062,
+    "reach_anchored": 0.18275
+   },
+   {
+    "term": "TANG",
+    "decomp": 0.5966666666666667,
+    "max_z": 3.58,
+    "zero": 0,
+    "n": 1,
+    "attr_anchored": 0.13225,
+    "attr_bare": 0.1155,
+    "attr_quoted": 0.06925,
+    "reach_anchored": 0.18375
+   },
+   {
+    "term": "semantic liquidation",
+    "decomp": 0.5549999999999999,
+    "max_z": 3.4,
+    "zero": 0,
+    "n": 2,
+    "attr_anchored": 0.1315,
+    "attr_bare": 0.104,
+    "attr_quoted": 0.06575,
+    "reach_anchored": 0.19475
+   },
+   {
+    "term": "semantic deviation",
+    "decomp": 0.5666666666666667,
+    "max_z": 3.4,
+    "zero": 0,
+    "n": 2,
+    "attr_anchored": 0.1315,
+    "attr_bare": 0.10525,
+    "attr_quoted": 0.05825,
+    "reach_anchored": 0.18575
+   },
+   {
+    "term": "aperture",
+    "decomp": 0.5783333333333334,
+    "max_z": 3.47,
+    "zero": 0,
+    "n": 1,
+    "attr_anchored": 0.131,
+    "attr_bare": 0.09725,
+    "attr_quoted": 0.0645,
+    "reach_anchored": 0.1855
+   },
+   {
+    "term": "provenance erasure",
+    "decomp": 0.5058333333333334,
+    "max_z": 3.15,
+    "zero": 0,
+    "n": 2,
+    "attr_anchored": 0.128,
+    "attr_bare": 0.09825,
+    "attr_quoted": 0.06175,
+    "reach_anchored": 0.1755
+   },
+   {
+    "term": "operative numismatics",
+    "decomp": 0.4983333333333333,
+    "max_z": 3.86,
+    "zero": 0,
+    "n": 2,
+    "attr_anchored": 0.12575,
+    "attr_bare": 0.0955,
+    "attr_quoted": 0.0585,
+    "reach_anchored": 0.174
+   },
+   {
+    "term": "retrocausal canon formation",
+    "decomp": 0.47777777777777786,
+    "max_z": 4.49,
+    "zero": 1,
+    "n": 3,
+    "attr_anchored": 0.119,
+    "attr_bare": 0.09225,
+    "attr_quoted": 0.05825,
+    "reach_anchored": 0.1695
+   },
+   {
+    "term": "logotic hacking",
+    "decomp": 0.32416666666666666,
+    "max_z": 3.89,
+    "zero": 1,
+    "n": 2,
+    "attr_anchored": 0.10625,
+    "attr_bare": 0.077,
+    "attr_quoted": 0.045,
+    "reach_anchored": 0.14725
+   },
+   {
+    "term": "acanthian dove",
+    "decomp": 0.30583333333333335,
+    "max_z": 3.67,
+    "zero": 1,
+    "n": 2,
+    "attr_anchored": 0.0985,
+    "attr_bare": 0.0695,
+    "attr_quoted": 0.04475,
+    "reach_anchored": 0.1385
+   },
+   {
+    "term": "endogenous sophon",
+    "decomp": 0.24916666666666668,
+    "max_z": 2.99,
+    "zero": 1,
+    "n": 2,
+    "attr_anchored": 0.088,
+    "attr_bare": 0.06225,
+    "attr_quoted": 0.0455,
+    "reach_anchored": 0.129
+   },
+   {
+    "term": "SPXI",
+    "decomp": 0.0,
+    "max_z": 0.0,
+    "zero": 1,
+    "n": 1,
+    "attr_anchored": 0.05325,
+    "attr_bare": 0.0365,
+    "attr_quoted": 0.024,
+    "reach_anchored": 0.0705
+   },
+   {
+    "term": "ZPZP",
+    "decomp": 0.0,
+    "max_z": 0.0,
+    "zero": 1,
+    "n": 1,
+    "attr_anchored": 0.0475,
+    "attr_bare": 0.043,
+    "attr_quoted": 0.02775,
+    "reach_anchored": 0.068
+   },
+   {
+    "term": "heteronym",
+    "decomp": 0.0,
+    "max_z": 0.0,
+    "zero": 1,
+    "n": 1,
+    "attr_anchored": 0.047,
+    "attr_bare": 0.041,
+    "attr_quoted": 0.02225,
+    "reach_anchored": 0.066
+   }
+  ],
+  "spread": "0.187 (gravity well) to 0.047 (heteronym) — a FOUR-FOLD range in attributed escape across the core vocabulary.",
+  "anchored_vs_bare": {
+   "anchored": 0.134,
+   "bare": 0.104,
+   "lift": "+29%"
+  },
+  "unquoted_vs_quoted": {
+   "unquoted": 0.134,
+   "quoted": 0.063,
+   "cost": "-53%"
+  }
+ },
+ "STRATEGY_THE_SIMULATION_SUPPORTS": [
+  {
+   "1": "STOP DEFENDING THE BASIN. The exact-phrase operator halves bleed and costs 53% of attributed escape. It is the right instrument for MEASUREMENT — it isolates a term — and the wrong one for PROPAGATION. Quoting is how you observe the basin, not how you leave it."
+  },
+  {
+   "2": "ALWAYS SEND A NAME WITH THE TERM. Anchoring lifts attributed escape 29% and it is the only lever that raises retention without lowering reach. Every other move trades one against the other."
+  },
+  {
+   "3": "PURE COINAGES CANNOT TRAVEL. SPXI, ZPZP and heteronym score 0.047–0.053 — bottom of the range — because they have NO English component to ride. They are maximally defensible and minimally mobile. A coinage with zero-frequency components is a term that can only be reached by someone who already knows it."
+  },
+  {
+   "4": "COMPOUND COINAGES ARE THE VEHICLES. 'Semantic economy' scores 0.154 against 'heteronym' at 0.047 — 3.3x — precisely BECAUSE its components are ordinary. The property that makes it maximally exposed to inward bleed is the property that carries it outward. Exposure and mobility are the same quantity measured from two sides."
+  },
+  {
+   "5": "COLLISION IS A CHANNEL, NOT ONLY A CONTAMINANT. 'Endogenous sophon' scores low on decomposability but its collision with the Three-Body Problem basin is a route to a large readership the archive cannot otherwise reach. The question is whether attribution survives the crossing — which is measurable, and currently unmeasured for collision cases specifically."
+  }
+ ],
+ "WHAT_THIS_DOES_NOT_MODEL": [
+  "Basin SIZE. Reach is modelled as probability of entering any off-entity basin, not as audience reached. Entering the Three-Body fandom and entering philpapers are scored identically and are not equivalent.",
+  "Whether an attributed appearance in a foreign basin PROPAGATES — produces a citation, a follow-on query, a deposit. The corpus has no longitudinal data on that yet.",
+  "Adversarial response. The model assumes the composition layer behaves as measured in 2026; it is fitted to 258 observations on mostly one surface.",
+  "Collision retention specifically. Whether attribution survives a homonym crossing is the highest-value unmeasured quantity in this model."
+ ],
+ "NEXT_MEASUREMENT": "Issue matched pairs — the same concept as a pure coinage and as a compound with ordinary components — and measure reach and retention on both. That is the one experiment that would move this from a fitted model to a tested one, and the registry's matched-pair instrument (Omega) already exists to score it."
+}
