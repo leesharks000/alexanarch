@@ -118,7 +118,7 @@
  "_open_decision": "Hand-build each against its site's idiom (what axnidentifiers got), or write a generator taking a per-site style profile — wrapper markup, nav pattern, class names — that emits the same four plates into it. The generator keeps fidelity AND makes the pages regenerable when a venue record changes; hand-building is more faithful per site but goes stale silently. Not decided.",
  "_deploy_state": "PAUSED at the ceiling. machinemediation.org and watergiraffe.org were each one commit behind live at pause time, carrying the network-block de-duplication. The commit BEFORE it deployed on both, so the hook works and this is the ceiling, not a break. Verify with scripts/check_fleet_block.py --live before resuming.",
  "_inputs": {
-  "venue-captures.json": "per-venue capture lists, matched on claim terms, adoption/exact ranked first",
+  "venue-captures.json": "MOVED 2026-08-17 to datasets/journals/venue-captures.json, where it belongs: it is journal data, not build scratch, and it is now generated and gated by scripts/build_journals_dataset.py rather than sitting as a one-off artifact.",
   "plate-idiom.css": "the 46 plate rules extracted from axnidentifiers /assets/msa.css — REFERENCE ONLY, never copy into a page; link the site's own sheet",
   "editor-records.json": "the twelve editors resolved against datasets/heteronyms/records/",
   "../../data/editor-cards.json": "where each card lives — paths are NOT uniform, verified 2026-08-17",

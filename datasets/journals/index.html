@@ -167,6 +167,21 @@ can hold that — they carry membership, not sequence, and nowhere to say why a 
 card carries structure, method, rationale, and a section plus editor's note per item.</p>
 <ul style="font-size:14px"><li><a href="/datasets/venues/issues/grammata-1.json"><strong>grammata-1</strong></a> — The Operation on the Text <span style="opacity:.65">PROPOSED · 8 items</span></li><li><a href="/datasets/venues/issues/jcs-1.json"><strong>jcs-1</strong></a> — Compression Studies: What Survives, What Burns, and Who Decides <span style="opacity:.65">PUBLISHED</span></li><li><a href="/datasets/venues/issues/mmrs-1.json"><strong>mmrs-1</strong></a> — A Theology of Error <span style="opacity:.65">PROPOSED · 8 items</span></li><li><a href="/datasets/venues/issues/nh2-1.json"><strong>nh2-1</strong></a> — new human 2 — Charter, Compiled Edition (2015) <span style="opacity:.65">PUBLISHED</span></li><li><a href="/datasets/venues/issues/pjfs-1.json"><strong>pjfs-1</strong></a> — Loud Exclusion <span style="opacity:.65">PROPOSED · 8 items</span></li><li><a href="/datasets/venues/issues/tse-1.json"><strong>tse-1</strong></a> — What the Substrate Will Bear <span style="opacity:.65">PROPOSED · 8 items</span></li><li><a href="/datasets/venues/issues/tsei-1.json"><strong>tsei-1</strong></a> — Meaning as Value <span style="opacity:.65">PROPOSED · 8 items</span></li></ul>
 
+<h2 id="venue-captures">Captures per venue</h2>
+<p><a href="./venue-captures.json">venue-captures.json</a> lists the captures each venue draws, matched on its
+<strong>claim terms</strong> — the practices and concepts the venue owns, not its name — and ranked by match
+type, because match type carries evidentiary weight: <strong>adoption</strong> means the composition layer
+served the framework as fact, <strong>exact match</strong> that exactness was forced and returned,
+<strong>broad match</strong> that the layer connected the concept unprompted.</p>
+<table style="width:100%;border-collapse:collapse;font-size:14px">
+<thead><tr style="text-align:left;opacity:.6"><th>venue</th><th class="num">captures</th><th>by match type</th></tr></thead>
+<tbody><tr><td><strong>Crimson Hexagonal Archive</strong></td><td class="num">144</td><td style="font-size:12px;opacity:.75">ADOPTION 19, EXACT MATCH 5, BROAD MATCH 11, CAPTURE 105</td></tr><tr><td><strong>Grammata: Journal of Operative Philology</strong></td><td class="num">217</td><td style="font-size:12px;opacity:.75">ADOPTION 27, EXACT MATCH 12, BROAD MATCH 22, CAPTURE 150</td></tr><tr><td><strong>Journal of Compression Studies</strong></td><td class="num">91</td><td style="font-size:12px;opacity:.75">ADOPTION 7, EXACT MATCH 9, BROAD MATCH 11, CAPTURE 62</td></tr><tr><td><strong>Machine-Mediated Reception Studies</strong></td><td class="num">279</td><td style="font-size:12px;opacity:.75">ADOPTION 13, EXACT MATCH 7, BROAD MATCH 10, CAPTURE 245</td></tr><tr><td><strong>new human 2: a journal of distributed voice</strong></td><td class="num">64</td><td style="font-size:12px;opacity:.75">ADOPTION 7, EXACT MATCH 5, BROAD MATCH 7, CAPTURE 43</td></tr><tr><td><strong>Provenance: Journal of Forensic Semiotics</strong></td><td class="num">118</td><td style="font-size:12px;opacity:.75">ADOPTION 11, EXACT MATCH 10, BROAD MATCH 7, CAPTURE 88</td></tr><tr><td><strong>Transactions on Substrate Engineering</strong></td><td class="num">67</td><td style="font-size:12px;opacity:.75">ADOPTION 9, EXACT MATCH 2, BROAD MATCH 8, CAPTURE 46</td></tr><tr><td><strong>Transactions of the Semantic Economy Institu</strong></td><td class="num">88</td><td style="font-size:12px;opacity:.75">ADOPTION 11, EXACT MATCH 4, BROAD MATCH 12, CAPTURE 56</td></tr></tbody></table>
+<p style="font-size:14px"><strong>MMRS draws more captures than any other venue — 279 against its own 141
+deposits</strong>, the only venue where captures outnumber the corpus. For the journal whose subject is
+machine-mediated reception, being the most-received venue is either confirmation or a sampling artifact of
+terms like "reception" and "AI Overview" being common, and the claim terms are listed per venue so that can be
+judged rather than assumed.</p>
+
 <h2 id="download">Download</h2>
 <div class="download-row">
 <a class="dl-btn" href="./venues.jsonl">venues.jsonl</a>
@@ -174,6 +189,7 @@ card carries structure, method, rationale, and a section plus editor's note per 
 <a class="dl-btn" href="./issues.jsonl">issues.jsonl</a>
 <a class="dl-btn" href="./crosswalk.json">crosswalk.json</a>
 <a class="dl-btn" href="./capture-crosswalk.json">capture-crosswalk.json</a>
+<a class="dl-btn" href="./venue-captures.json">venue-captures.json</a>
 <a class="dl-btn" href="./manifest.json">manifest.json</a>
 <a class="dl-btn" href="./pocket-humans-shelf.svg">pocket-humans-shelf.svg</a>
 <a class="dl-btn" href="./ecosystem.svg">ecosystem.svg</a>

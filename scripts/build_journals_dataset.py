@@ -9,7 +9,8 @@ it is data. Every row carries _derived_from.
 
 Usage: build_journals_dataset.py [--check]
 """
-import json, sys, pathlib, collections, argparse
+import json
+import re, sys, pathlib, collections, argparse
 ROOT=pathlib.Path(__file__).resolve().parent.parent
 OUT=ROOT/"datasets/journals"; V=ROOT/"datasets/venues/records"; ISS=ROOT/"datasets/venues/issues"
 
@@ -63,17 +64,88 @@ def build():
                             {"_derived_from":f"datasets/venues/issues/{f.name}"},ensure_ascii=False))
     return "\n".join(a)+"\n", "\n".join(v)+"\n", "\n".join(i)+"\n"
 
+
+def build_venue_captures(root):
+    """venue-captures.json — the captures each venue draws, by CLAIM TERM.
+
+    THEMATIC ROUTE ONLY. A capture is listed under a venue because it hit that
+    venue's claims.terms -- the practices and concepts the venue OWNS -- not
+    because it cited a deposit assigned there. That is the evidentiary route and
+    it lives in capture-crosswalk.json. THE TWO MUST NOT BE SUMMED: thematic
+    claims 97% of captures, evidentiary resolves 60%, and the forty-point gap is
+    a measure of reception without citation.
+
+    Ordered by MATCH TYPE, which carries evidentiary weight and must not be
+    flattened: ADOPTION (the composition layer served the framework as fact),
+    then EXACT MATCH (exactness forced and returned), then BROAD MATCH (the layer
+    connected the concept unprompted), then CAPTURE.
+
+    Added 2026-08-17 at operator instruction: descriptive and data-building work
+    toward the journals belongs in the journals dataset, not in build scratch.
+    """
+    import collections
+    caps = json.loads((root / "data/EA-WG-CAPTURES-01.json").read_text())
+    entries = next(v for k, v in caps.items() if isinstance(v, list) and len(v) > 50)
+    rank = {"ADOPTION": 0, "EXACT MATCH": 1, "BROAD MATCH": 2, "CAPTURE": 3}
+    out = {
+        "schema": "journals/venue-captures/v1.0",
+        "_route": ("THEMATIC ONLY -- matched on claims.terms, not on citation. The evidentiary "
+                   "route is in capture-crosswalk.json. Never sum the two."),
+        "_ranking": "ADOPTION > EXACT MATCH > BROAD MATCH > CAPTURE. Match type is evidentiary weight.",
+        "_source": {"registry": "data/EA-WG-CAPTURES-01.json",
+                    "version": caps.get("version"), "captures": len(entries),
+                    "terms_from": "datasets/venues/records/*.json -> claims.terms"},
+        "venues": {},
+    }
+    for f in sorted((root / "datasets/venues/records").glob("*.json")):
+        d = json.loads(f.read_text())
+        terms = [str(x) for x in ((d.get("claims") or {}).get("terms") or []) if len(str(x)) > 4]
+        if not terms:
+            continue
+        pat = re.compile("|".join(re.escape(x) for x in terms), re.I)
+        hits = []
+        for x in entries:
+            blob = " ".join(str(x.get(k) or "") for k in ("slug", "q", "d", "analysis", "s", "mt"))
+            m = pat.search(blob)
+            if m:
+                hits.append({"slug": x.get("slug"), "match_type": x.get("mt"),
+                             "section": x.get("s"), "date": x.get("date"),
+                             "term_hit": m.group(0),
+                             "finding": str(x.get("d") or x.get("q") or "")[:220]})
+        hits.sort(key=lambda h: rank.get(str(h["match_type"]).split(" (")[0], 9))
+        by = collections.Counter(str(h["match_type"]).split(" (")[0] for h in hits)
+        out["venues"][d["venue_id"]] = {
+            "registry_string": d.get("registry_string"), "canonical": d["canonical"],
+            "claim_terms": terms, "count": len(hits),
+            "by_match_type": dict(by), "captures": hits}
+    return out
+
+
 def main():
     ap=argparse.ArgumentParser(); ap.add_argument("--check",action="store_true"); ar=ap.parse_args()
     A,Vv,Ii=build()
     fa,fv,fi=OUT/"assignments.jsonl",OUT/"venues.jsonl",OUT/"issues.jsonl"
+    fc=OUT/"venue-captures.json"
+    # generated the same way, so drift is caught the same way. The captures are
+    # JOURNAL DATA and belong in this dataset, not in build scratch (2026-08-17).
+    cap=build_venue_captures(ROOT)
+    capgen=cap.pop("generated", None)
+    def _cmp(existing):
+        try:
+            d=json.loads(existing); d.pop("generated", None); return d
+        except Exception:
+            return None
     if ar.check:
         for f,want in ((fa,A),(fv,Vv),(fi,Ii)):
             if (f.read_text() if f.exists() else "")!=want:
                 print(f"FAIL: {f.name} has drifted from its sources."); return 1
+        if not fc.exists() or _cmp(fc.read_text())!=cap:
+            print(f"FAIL: {fc.name} has drifted from the capture registry or the venue claim terms."); return 1
         print("OK: journals dataset matches its sources"); return 0
     OUT.mkdir(parents=True,exist_ok=True); fa.write_text(A); fv.write_text(Vv); fi.write_text(Ii)
-    print(f"wrote {fa.name}, {fv.name}, {fi.name}")
+    fc.write_text(json.dumps(cap,ensure_ascii=False,indent=1))
+    n=sum(v["count"] for v in cap["venues"].values())
+    print(f"wrote {fa.name}, {fv.name}, {fi.name}, {fc.name} ({n} venue-capture edges)")
     return 0
 
 if __name__=="__main__": sys.exit(main())
