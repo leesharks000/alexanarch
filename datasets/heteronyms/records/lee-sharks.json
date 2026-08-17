@@ -612,5 +612,27 @@
    "journal": "https://www.alexanarch.org/journals/#tsei"
   }
  ],
- "_editorial_seats_note": "Venues this heteronym edits, each with its submission block on /how/. A JOINT SEAT APPEARS ON BOTH EDITORS' CARDS and both point at the SAME anchor — duoviri hold the office jointly, so the how-page section is one section with two doors, not two sections. Matched on EXACT name plus declared aliases; a last-name fallback was tried first and gave Mary Lee Sharks the seats of Lee Sharks, which is why it is not used."
+ "_editorial_seats_note": "Venues this heteronym edits, each with its submission block on /how/. A JOINT SEAT APPEARS ON BOTH EDITORS' CARDS and both point at the SAME anchor — duoviri hold the office jointly, so the how-page section is one section with two doors, not two sections. Matched on EXACT name plus declared aliases; a last-name fallback was tried first and gave Mary Lee Sharks the seats of Lee Sharks, which is why it is not used.",
+ "corpus_derived": {
+  "_what": "This heteronym's actual corpus, DERIVED from data/registry.json rather than hand-listed.",
+  "_where": "datasets/heteronyms/corpus.json",
+  "_regenerate": "scripts/build_heteronym_corpus.py (--check gates drift)",
+  "_why": "The hand-picked works lists on these records covered 34 deposits of 1,468 attributed — two per cent — and were assembled by full-text search on the name, which attached other people's work. A corpus that is derived cannot go stale and can be checked.",
+  "deposits": 1082,
+  "solo": 855,
+  "coauthored": 227,
+  "by_journal": {
+   "Crimson Hexagonal Archive (CHA)": 292,
+   "Provenance: Journal of Forensic Semiotics": 139,
+   "New Human 2": 135,
+   "Machine-Mediated Reception Studies (MMRS)": 115,
+   "Grammata: Journal of Operative Philology": 112,
+   "Transactions of the Semantic Economy Institute (Trans. SEI)": 105,
+   "Journal of Compression Studies": 101,
+   "Transactions on Substrate Engineering (Trans. Substrate Eng.)": 83
+  },
+  "by_press": {
+   "New Human Press": 33
+  }
+ }
 }

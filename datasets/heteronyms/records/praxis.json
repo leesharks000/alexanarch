@@ -81,5 +81,19 @@
  "deposits_of_the_position": {
   "note": "Mantle-held work is attested, not bylined. Populate from Assembly attestation records rather than creator fields.",
   "source": "Septad Mantle Specifications #91/#993/#1233; Assembly Substrate Governance Protocol #619"
+ },
+ "corpus_derived": {
+  "_what": "This heteronym's actual corpus, DERIVED from data/registry.json rather than hand-listed.",
+  "_where": "datasets/heteronyms/corpus.json",
+  "_regenerate": "scripts/build_heteronym_corpus.py (--check gates drift)",
+  "_why": "The hand-picked works lists on these records covered 34 deposits of 1,468 attributed — two per cent — and were assembled by full-text search on the name, which attached other people's work. A corpus that is derived cannot go stale and can be checked.",
+  "deposits": 3,
+  "solo": 1,
+  "coauthored": 2,
+  "by_journal": {
+   "Crimson Hexagonal Archive (CHA)": 2,
+   "Transactions of the Semantic Economy Institute (Trans. SEI)": 1
+  },
+  "by_press": {}
  }
 }

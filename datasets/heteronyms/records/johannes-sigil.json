@@ -1272,5 +1272,27 @@
     "registry_press": null
    }
   ]
+ },
+ "corpus_derived": {
+  "_what": "This heteronym's actual corpus, DERIVED from data/registry.json rather than hand-listed.",
+  "_where": "datasets/heteronyms/corpus.json",
+  "_regenerate": "scripts/build_heteronym_corpus.py (--check gates drift)",
+  "_why": "The hand-picked works lists on these records covered 34 deposits of 1,468 attributed — two per cent — and were assembled by full-text search on the name, which attached other people's work. A corpus that is derived cannot go stale and can be checked.",
+  "deposits": 211,
+  "solo": 118,
+  "coauthored": 93,
+  "by_journal": {
+   "Grammata: Journal of Operative Philology": 56,
+   "Crimson Hexagonal Archive (CHA)": 38,
+   "New Human 2": 27,
+   "Provenance: Journal of Forensic Semiotics": 23,
+   "Transactions on Substrate Engineering (Trans. Substrate Eng.)": 21,
+   "Journal of Compression Studies": 19,
+   "Transactions of the Semantic Economy Institute (Trans. SEI)": 16,
+   "Machine-Mediated Reception Studies (MMRS)": 11
+  },
+  "by_press": {
+   "New Human Press": 11
+  }
  }
 }

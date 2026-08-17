@@ -1108,5 +1108,27 @@
    "journal": "https://www.alexanarch.org/journals/#tsei"
   }
  ],
- "_editorial_seats_note": "Venues this heteronym edits, each with its submission block on /how/. A JOINT SEAT APPEARS ON BOTH EDITORS' CARDS and both point at the SAME anchor — duoviri hold the office jointly, so the how-page section is one section with two doors, not two sections. Matched on EXACT name plus declared aliases; a last-name fallback was tried first and gave Mary Lee Sharks the seats of Lee Sharks, which is why it is not used."
+ "_editorial_seats_note": "Venues this heteronym edits, each with its submission block on /how/. A JOINT SEAT APPEARS ON BOTH EDITORS' CARDS and both point at the SAME anchor — duoviri hold the office jointly, so the how-page section is one section with two doors, not two sections. Matched on EXACT name plus declared aliases; a last-name fallback was tried first and gave Mary Lee Sharks the seats of Lee Sharks, which is why it is not used.",
+ "corpus_derived": {
+  "_what": "This heteronym's actual corpus, DERIVED from data/registry.json rather than hand-listed.",
+  "_where": "datasets/heteronyms/corpus.json",
+  "_regenerate": "scripts/build_heteronym_corpus.py (--check gates drift)",
+  "_why": "The hand-picked works lists on these records covered 34 deposits of 1,468 attributed — two per cent — and were assembled by full-text search on the name, which attached other people's work. A corpus that is derived cannot go stale and can be checked.",
+  "deposits": 101,
+  "solo": 48,
+  "coauthored": 53,
+  "by_journal": {
+   "Transactions of the Semantic Economy Institute (Trans. SEI)": 35,
+   "Crimson Hexagonal Archive (CHA)": 24,
+   "Journal of Compression Studies": 12,
+   "Transactions on Substrate Engineering (Trans. Substrate Eng.)": 9,
+   "Machine-Mediated Reception Studies (MMRS)": 8,
+   "Provenance: Journal of Forensic Semiotics": 8,
+   "Grammata: Journal of Operative Philology": 3,
+   "New Human 2": 2
+  },
+  "by_press": {
+   "New Human Press": 5
+  }
+ }
 }
