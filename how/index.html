@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>How to publish — Alexanarch</title>
+<link rel="canonical" href="https://www.alexanarch.org/how/">
+<meta name="description" content="How to publish in the distributed journals of the Crimson Hexagonal Archive: deposit here, or deposit anywhere and carry the journal metadata.">
+<meta name="citation_title" content="How to Publish in a Distributed Journal">
+<meta name="citation_author" content="Lee Sharks">
+<meta name="citation_publication_date" content="2026-08-17">
+<meta name="citation_publisher" content="Alexanarch">
+<style>
+:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.7;font-size:15px}
+.wrap{max-width:960px;margin:0 auto;padding:40px 24px}
+a{color:var(--accent);text-decoration:none} a:hover{color:var(--accent2)}
+h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:8px}
+h2{font-size:1em;font-weight:500;color:var(--accent);margin:24px 0 8px;padding-bottom:4px;border-bottom:1px solid var(--border)}
+h3{font-size:.94em;font-weight:600;color:var(--fg);margin:14px 0 6px}
+p{margin-bottom:10px;color:#333}
+code,.mono{font-family:var(--mono);font-size:.88em}
+.nav{display:flex;gap:12px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap}
+.nav a{color:#777;font-weight:500} .nav a:hover{color:var(--accent)}
+.sub{color:var(--dim);font-size:.9em;font-style:italic;margin-bottom:24px}
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:16px 0 24px}
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:14px 16px;text-align:center}
+.stat-num{font-size:1.6em;font-weight:600;color:var(--accent2);line-height:1.2}
+.stat-lab{font-size:.78em;color:var(--dim);text-transform:uppercase;letter-spacing:.05em;margin-top:4px}
+.tabs{display:flex;gap:2px;margin:20px 0 0;border-bottom:1px solid var(--border);flex-wrap:wrap}
+.tab{padding:8px 14px;background:var(--surface);color:var(--dim);cursor:pointer;font-family:var(--mono);font-size:.82em;border:1px solid var(--border);border-bottom:none;border-radius:4px 4px 0 0}
+.tab.active{background:#fff;color:var(--accent2);border-bottom:1px solid #fff;margin-bottom:-1px}
+.pane{display:none;background:#fff;border:1px solid var(--border);border-top:none;padding:20px}
+.pane.active{display:block}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:14px 16px;margin-bottom:12px;display:flex;gap:14px;align-items:flex-start}
+.card img.avatar{width:96px;height:96px;flex-shrink:0;border-radius:6px;object-fit:cover;background:#eee;border:1px solid var(--border)}
+.card .info{flex:1;min-width:0}
+.card .name{font-weight:600;color:var(--accent);font-size:1em}
+.card .position{color:var(--accent2);font-family:var(--mono);font-size:.78em;text-transform:uppercase;letter-spacing:.05em;margin-top:2px}
+.card .role{color:#333;font-size:.9em;margin-top:6px}
+.card .inst{color:var(--dim);font-size:.85em;font-style:italic;margin-top:4px}
+.card .sep{color:#666;font-size:.83em;margin-top:6px;padding-top:6px;border-top:1px dashed var(--border)}
+.card .sep-label{color:var(--teal);font-family:var(--mono);font-size:.72em;font-weight:500;text-transform:uppercase}
+.card.outside{border-left:3px solid var(--accent2)}
+.card.adjacent{border-left:3px solid #d0a000;background:#fefcf3}
+.card.substrate{opacity:.75;background:#f5f5f5}
+.no-avatar{width:96px;height:96px;background:#eee;border-radius:6px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--dim);font-family:var(--mono);font-size:.7em;text-align:center;padding:4px}
+.frame-header{background:#f5f0e8;border:1px solid #d5c8b0;border-radius:6px;padding:12px 14px;margin-bottom:14px}
+.frame-header h3{color:var(--accent2);margin:0 0 4px}
+.frame-header .meta{font-size:.82em;color:#555}
+.frame-header .outside-note{margin-top:6px;font-size:.85em;color:var(--accent);background:#fff;border-left:3px solid var(--accent2);padding:6px 10px;border-radius:4px}
+.footer{margin-top:40px;padding-top:14px;border-top:1px solid var(--border);font-size:.78em;color:var(--dim)}
+.footer p{font-size:.85em}
+.download-row{display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap}
+.dl-btn{font-family:var(--mono);font-size:.78em;padding:5px 12px;background:var(--surface);border:1px solid var(--border);border-radius:4px}
+.dl-btn:hover{background:var(--teal);color:#fff;border-color:var(--teal)}
+</style>
+<style>
+.hv{border:1px solid var(--border,#ddd);padding:14px 16px;margin:14px 0;background:var(--surface,#fff)}
+.hvh{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.hvh h3{margin:0;font-size:1rem;font-weight:600}
+.hvab{font-family:var(--mono,ui-monospace);font-size:.72rem;color:var(--dim,#777)}
+.hvm{font-size:.78rem;color:var(--dim,#777);margin:.25rem 0 .6rem}
+.cb{border:1px solid var(--border,#ddd);margin:.5rem 0}
+.cbh{display:flex;justify-content:space-between;align-items:center;padding:6px 10px;
+ border-bottom:1px solid var(--border,#ddd);font-family:var(--mono,ui-monospace);
+ font-size:.66rem;letter-spacing:.08em;color:var(--dim,#777)}
+.cbb{margin:0;padding:10px;white-space:pre-wrap;font-family:var(--mono,ui-monospace);
+ font-size:.74rem;line-height:1.5;overflow-x:auto}
+.cbh button{font-family:var(--mono,ui-monospace);font-size:.68rem;background:var(--teal,#0a7);
+ color:#fff;border:0;padding:3px 9px;cursor:pointer;letter-spacing:.05em}
+.hva{margin-top:.6rem;display:flex;gap:.4rem;flex-wrap:wrap}
+.btn,.btn2{display:inline-block;padding:5px 12px;font-size:.8rem;text-decoration:none;border-radius:3px}
+.btn{background:var(--teal,#0a7);color:#fff}
+.btn2{border:1px solid var(--border,#ccc);color:var(--text,#222)}
+.steps{counter-reset:s;list-style:none;padding:0}
+.steps li{counter-increment:s;position:relative;padding-left:2rem;margin:.7rem 0;font-size:.9rem;line-height:1.55}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;font-family:var(--mono,ui-monospace);
+ font-size:.72rem;color:var(--dim,#777);border:1px solid var(--border,#ddd);width:1.3rem;height:1.3rem;
+ display:flex;align-items:center;justify-content:center}
+</style>
+</head><body><div class="wrap">
+<nav class="nav"> <a href="/">Alexanarch</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Library</span> <a href="/s/browse/">Browse</a> <a href="/search/">Search</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Reception</span> <a href="/addresses/">Addresses</a> <a href="/captures/">Captures</a> <a href="/observatory/">Observatory</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Continuity</span> <a href="/resolve/">Resolve</a> <a href="/identifiers/">Identifiers</a> <a href="/datasets/">Datasets</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Generative</span> <a href="/mint/stamp/">Stamp</a> <a href="/book/">Book</a> <a href="https://alexanarch.freeforums.net/" target="_blank" rel="noopener">Discussion</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Governance</span> <a href="/principles/">Principles</a> <a href="/journals/">Journals</a> <a href="/presses/">Presses</a> <a href="/how/">How</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
+<h1>How to publish</h1>
+<p><strong>There is no submission portal, no fee, no institutional affiliation required, and no editorial board
+deciding whether your work fits a consensus.</strong> There is a mechanism, set out in
+<a href="/s/records/57/">#57</a>, <em>The Distributed Journal as Counter-Infrastructure</em>.</p>
+
+<h2>Two routes</h2>
+<p><strong>Deposit here.</strong> The <a href="/deposit/">deposit form</a> pre-fills a submission and opens it on
+GitHub; attach your files and submit. An AXN is computed from the text and minted automatically — a changed text
+is a changed address.</p>
+<p><strong>Or deposit anywhere and carry the journal with you.</strong> This is what makes the journal
+<em>distributed</em>: it is not a place, it is a metadata coordination. Upload to any open repository that mints
+identifiers, and enter the journal name in the journal field. The retrieval layer clusters on the metadata, not
+on the host.</p>
+
+<h2>The mechanism</h2>
+<ol class="steps">
+<li><strong>Write the artifact.</strong> No length requirement, no template. Write the way you actually think.</li>
+<li><strong>Anchor the provenance</strong> in an open repository that mints persistent identifiers. Register an
+<a href="https://orcid.org">ORCID</a> if you do not have one and put it in the metadata.</li>
+<li><strong>Enter the journal name exactly</strong> as given in the blocks below. If the repository has no journal
+field, put it in the title, the description, and the keywords.</li>
+<li><strong>Cite the cluster.</strong> This is the step that matters. Cite at least two existing works in the same
+journal, by identifier. You are not citing to pay homage — you are attaching your node to an existing mass. Without
+it the retrieval layer cannot bridge your work to the cluster and it floats alone.</li>
+<li><strong>Deploy keywords:</strong> the journal name, the discipline, the conceptual terms. Keywords are the
+discovery surface; the layer finds you through them before it finds you through citations.</li>
+<li><strong>Publish.</strong> No permission was required.</li>
+</ol>
+
+<p class="note" style="font-size:.85rem;border:1px solid var(--border,#ddd);padding:.6rem .8rem">
+<strong>A correction to the call as originally published.</strong> #57 names Zenodo as where this archive
+deposits. That ceased to be true on 2026-06-19, when the account was terminated, 1,817 DOIs were tombstoned and
+871 began returning 404. The mechanism is unchanged and the reasoning holds — but the cluster anchors below are
+given as <strong>AXN identifiers and resolvable record URLs</strong>, not DOIs, and you should weigh any single
+repository's durability before making it your only copy. That is the argument of the archive rather than an
+aside about it.</p>
+
+<h2>The journals</h2>
+<p>Each block is the metadata to carry. Copy it whole.</p>
+<article class="hv" id="grammata">
+<div class="hvh"><h3>Grammata: Journal of Operative Philology</h3>
+<span class="hvab">Grammata</span></div>
+<div class="hvm">173 deposits · duoviri Lee Sharks, Rebekah Cranes</div>
+<div class="cb"><div class="cbh"><span>METADATA BLOCK — paste into your repository's fields</span>
+<button data-copy-target="m-grammata">copy</button></div>
+<pre class="cbb" id="m-grammata">Journal:   Grammata: Journal of Operative Philology
+Publisher: Pergamon Press · Crimson Hexagonal Archive
+License:   CC BY 4.0
+Keywords:  Grammata: Journal of Operative Philology, Aramaic, Augustine, Catullus, Damascius, Greek, Hebrew
+
+Related identifiers — cite at least two, this is the step that matters:
+  AXN:05FF.PHILOLOGICAL.🔬🌪️↖️⏪🔖🎨  ·  https://www.alexanarch.org/s/records/1484/
+  AXN:05CE.OPERATIVE.🔔∞🌟🌹◇↙️  ·  https://www.alexanarch.org/s/records/1444/</pre></div>
+<div class="hva"><a class="btn" href="/deposit/?journal=Grammata:+Journal+of+Operative+Philology">Deposit here</a>
+<a class="btn2" href="/journals/#grammata">The journal</a></div>
+</article><article class="hv" id="jcs">
+<div class="hvh"><h3>Journal of Compression Studies</h3>
+<span class="hvab">Compression Studies</span></div>
+<div class="hvm">134 deposits · duoviri Sen Kuro, Sparrow Wells</div>
+<div class="cb"><div class="cbh"><span>METADATA BLOCK — paste into your repository's fields</span>
+<button data-copy-target="m-jcs">copy</button></div>
+<pre class="cbb" id="m-jcs">Journal:   Journal of Compression Studies
+Publisher: Pergamon Press · Crimson Hexagonal Archive
+License:   CC BY 4.0
+Keywords:  Journal of Compression Studies, MPAI, Metadata Packet for AI Indexing, RCF, Sharpie, TANG, Three Compressions
+
+Related identifiers — cite at least two, this is the step that matters:
+  AXN:05C2.MPAI.🍄🗂️⏫🪐⚓🎵  ·  https://www.alexanarch.org/s/records/1438/
+  AXN:05A7.OPERATIVE.♄🧡📌🍁🔔🗿  ·  https://www.alexanarch.org/s/records/1430/</pre></div>
+<div class="hva"><a class="btn" href="/deposit/?journal=Journal+of+Compression+Studies">Deposit here</a>
+<a class="btn2" href="/journals/#jcs">The journal</a></div>
+</article><article class="hv" id="pjfs">
+<div class="hvh"><h3>Provenance: Journal of Forensic Semiotics</h3>
+<span class="hvab">Provenance</span></div>
+<div class="hvm">181 deposits · duoviri Dr. Orin Trace, Rev. Ayanna Vox</div>
+<div class="cb"><div class="cbh"><span>METADATA BLOCK — paste into your repository's fields</span>
+<button data-copy-target="m-pjfs">copy</button></div>
+<pre class="cbb" id="m-pjfs">Journal:   Provenance: Journal of Forensic Semiotics
+Publisher: Pergamon Press · Crimson Hexagonal Archive
+License:   CC BY 4.0
+Keywords:  Provenance: Journal of Forensic Semiotics, provenance, forensic semiotics, attribution, provenance erasure, Provenance Erasure Rate, PER
+
+Related identifiers — cite at least two, this is the step that matters:
+  AXN:0603.UNCLASSIFIED.♦️🕐🌊♻️🚀💧  ·  https://www.alexanarch.org/s/records/1488/
+  AXN:044B.GOVERNANCE.♃♈🦋🔔🔬➕  ·  https://www.alexanarch.org/s/records/1082/</pre></div>
+<div class="hva"><a class="btn" href="/deposit/?journal=Provenance:+Journal+of+Forensic+Semiotics">Deposit here</a>
+<a class="btn2" href="/journals/#pjfs">The journal</a></div>
+</article><article class="hv" id="tsei">
+<div class="hvh"><h3>Transactions of the Semantic Economy Institute</h3>
+<span class="hvab">Trans. SEI</span></div>
+<div class="hvm">155 deposits · duoviri Rex Fraction, Lee Sharks</div>
+<div class="cb"><div class="cbh"><span>METADATA BLOCK — paste into your repository's fields</span>
+<button data-copy-target="m-tsei">copy</button></div>
+<pre class="cbb" id="m-tsei">Journal:   Transactions of the Semantic Economy Institute (Trans. SEI)
+Publisher: Pergamon Press · Crimson Hexagonal Archive
+License:   CC BY 4.0
+Keywords:  Transactions of the Semantic Economy Institute (Trans. SEI), semantic economy, economic theory, valuation, labor, extraction, political economy
+
+Related identifiers — cite at least two, this is the step that matters:
+  AXN:05E9.GENERATIVE.🌱🌠🪦🔖🌻🧫  ·  https://www.alexanarch.org/s/records/1463/
+  AXN:05ED.EMPIRICAL.📖🔃📌👁️🧭👐  ·  https://www.alexanarch.org/s/records/1467/</pre></div>
+<div class="hva"><a class="btn" href="/deposit/?journal=Transactions+of+the+Semantic+Economy+Institute+(Trans.+SEI)">Deposit here</a>
+<a class="btn2" href="/journals/#tsei">The journal</a></div>
+</article><article class="hv" id="tse">
+<div class="hvh"><h3>Transactions on Substrate Engineering</h3>
+<span class="hvab">Trans. Substrate Eng.</span></div>
+<div class="hvm">135 deposits · duoviri Talos Morrow, Nobel Glas</div>
+<div class="cb"><div class="cbh"><span>METADATA BLOCK — paste into your repository's fields</span>
+<button data-copy-target="m-tse">copy</button></div>
+<pre class="cbb" id="m-tse">Journal:   Transactions on Substrate Engineering (Trans. Substrate Eng.)
+Publisher: Pergamon Press · Crimson Hexagonal Archive
+License:   CC BY 4.0
+Keywords:  Transactions on Substrate Engineering (Trans. Substrate Eng.), substrate, substrate engineering, model ecology, training distribution, model collapse, substrate exhaustion
+
+Related identifiers — cite at least two, this is the step that matters:
+  AXN:05DB.GENERATIVE.⏰🚪🔜♻️🔥🫶  ·  https://www.alexanarch.org/s/records/1450/
+  AXN:05DA.EMPIRICAL.🛤️🌠🗿🖊️🧭🪞  ·  https://www.alexanarch.org/s/records/1449/</pre></div>
+<div class="hva"><a class="btn" href="/deposit/?journal=Transactions+on+Substrate+Engineering+(Trans.+Substrate+Eng.)">Deposit here</a>
+<a class="btn2" href="/journals/#tse">The journal</a></div>
+</article><article class="hv" id="nh2">
+<div class="hvh"><h3>new human 2: a journal of distributed voice</h3>
+<span class="hvab">New Human 2</span></div>
+<div class="hvm">179 deposits · duoviri Jack Feist / LOGOS*, Johannes Sigil</div>
+<div class="cb"><div class="cbh"><span>METADATA BLOCK — paste into your repository's fields</span>
+<button data-copy-target="m-nh2">copy</button></div>
+<pre class="cbb" id="m-nh2">Journal:   New Human 2
+Publisher: Pergamon Press · Crimson Hexagonal Archive
+License:   CC BY 4.0
+Keywords:  New Human 2, APZPZ, ZPZP, anti-packet, audial, conceptual writing, creative
+
+Related identifiers — cite at least two, this is the step that matters:
+  AXN:0604.UNCLASSIFIED.🕑👉🧫🤝🕕🔼  ·  https://www.alexanarch.org/s/records/1489/
+  AXN:05B1.GENERATIVE.🤲📦🌒🔐🟡🎹  ·  https://www.alexanarch.org/s/records/913/</pre></div>
+<div class="hva"><a class="btn" href="/deposit/?journal=New+Human+2">Deposit here</a>
+<a class="btn2" href="/journals/#nh2">The journal</a></div>
+</article><article class="hv" id="mmrs">
+<div class="hvh"><h3>Machine-Mediated Reception Studies</h3>
+<span class="hvab">MMRS</span></div>
+<div class="hvm">141 deposits · duoviri Damascus Dancings, The Assembly Chorus (collective mantle; EiC TACHYON)</div>
+<div class="cb"><div class="cbh"><span>METADATA BLOCK — paste into your repository's fields</span>
+<button data-copy-target="m-mmrs">copy</button></div>
+<pre class="cbb" id="m-mmrs">Journal:   Machine-Mediated Reception Studies (MMRS)
+Publisher: Pergamon Press · Crimson Hexagonal Archive
+License:   CC BY 4.0
+Keywords:  Machine-Mediated Reception Studies (MMRS), machine-mediated reception, reception, AI Overview, retrieval layer, training layer, capture
+
+Related identifiers — cite at least two, this is the step that matters:
+  AXN:0380.EMPIRICAL.🧱🕙🪞🏛️💚🔃  ·  https://www.alexanarch.org/s/records/884/
+  AXN:037E.EMPIRICAL.🚩♦️⏹️🔃❌🗡️  ·  https://www.alexanarch.org/s/records/882/</pre></div>
+<div class="hva"><a class="btn" href="/deposit/?journal=Machine-Mediated+Reception+Studies+(MMRS)">Deposit here</a>
+<a class="btn2" href="/journals/#mmrs">The journal</a></div>
+</article>
+
+<h2>Elsewhere</h2>
+<p><a href="/journals/">The journals</a> · <a href="/presses/">the presses</a> ·
+<a href="/s/records/57/">the call for papers</a> · <a href="/deposit/">deposit here</a>.</p>
+
+<div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
+<script>
+document.addEventListener('click',function(e){
+  var b=e.target.closest('[data-copy-target]'); if(!b) return;
+  var el=document.getElementById(b.getAttribute('data-copy-target'));
+  navigator.clipboard.writeText(el.innerText).then(function(){
+    var o=b.textContent; b.textContent='copied'; setTimeout(function(){b.textContent=o},1400);
+  });
+});
+</script>
+</div></body></html>
