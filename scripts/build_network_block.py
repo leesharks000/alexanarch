@@ -25,6 +25,13 @@ import pathlib
 import re
 import sys
 
+# COLOUR (2026-08-17). The block previously set colours as var(--accent,#1a3a5c) and
+# var(--text-dim,#999). Most fleet sites define NEITHER variable, so both fell back to the
+# literal — and four of the nine sites carrying this block are dark (#0a0a0a, #0a0a0c,
+# #0c0e12, #1a0e0a), where a #1a3a5c heading is close to unreadable. The block now uses
+# currentColor with opacity, so it inherits whatever palette the host page sets. This is the
+# same rule the archive's derived figures already follow, and it should have been applied here
+# first: a block generated once and applied everywhere cannot name colours.
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 FLEET = ROOT / 'data/fleet-domains.json'
 RECORDS = ROOT / 'datasets/heteronyms/records'
@@ -112,7 +119,7 @@ def build():
     # canonical groups; Allied Sites stays hand-held.
     for label, domains in GROUPS:
         parts.append(
-            f'<h4 style="font-size:0.78em;color:var(--accent,#1a3a5c);margin:10px 15px 4px 15px;'
+            f'<h4 style="font-size:0.78em;color:currentColor;opacity:.62;margin:10px 15px 4px 15px;'
             f'text-transform:uppercase;letter-spacing:0.04em;font-weight:500">{label}</h4>')
         parts.append('<div style="padding:0 15px;display:grid;'
                      'grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px;row-gap:4px;'
@@ -123,7 +130,7 @@ def build():
             tag = who.get(d)
             parts.append(
                 f'<div><a href="https://{d}/">{d}</a>'
-                + (f' <span style="color:var(--text-dim,#999)">({tag})</span>' if tag else '')
+                + (f' <span style="color:currentColor;opacity:.55">({tag})</span>' if tag else '')
                 + '</div>')
         parts.append('</div>')
     # MACHINE ENTRY. One line, last, pointing harvesters at the archive's own
@@ -132,14 +139,14 @@ def build():
     # harvester arriving at ANY domain in the fleet finds the way in, and one
     # edit reaches all of them. (2026-08-16)
     parts.append(
-        '<h4 style="font-size:0.78em;color:var(--accent,#1a3a5c);margin:10px 15px 4px 15px;'
+        '<h4 style="font-size:0.78em;color:currentColor;opacity:.62;margin:10px 15px 4px 15px;'
         'text-transform:uppercase;letter-spacing:0.04em;font-weight:500">Machine entry</h4>')
     parts.append(
         '<div style="padding:0 15px 4px 15px;font-size:0.82em;line-height:1.7">'
         '<div><a href="https://www.alexanarch.org/oai?verb=Identify">OAI-PMH endpoint</a> '
-        '<span style="color:var(--text-dim,#999)">(harvestable metadata, 1,400+ records)</span></div>'
+        '<span style="color:currentColor;opacity:.55">(harvestable metadata, 1,400+ records)</span></div>'
         '<div><a href="https://www.alexanarch.org/resolve/">AXN resolver</a> '
-        '<span style="color:var(--text-dim,#999)">(content-derived identifiers)</span></div>'
+        '<span style="color:currentColor;opacity:.55">(content-derived identifiers)</span></div>'
         '</div>')
     parts.append(END)
     return '\n'.join(parts), fleet, who
