@@ -43,7 +43,7 @@ GROUPS = [
                          'metadatapacket.dev', 'holographickernel.org', 'revelationfirst.com',
                          'laborvector.org', 'themandalaoracle.com', 'secretbookofwalt.org',
                          'watergiraffe.org', 'pessoagraph.org', 'chatgptpsychosis.org',
-        'operativesemiotics.org']),
+                         'operativesemiotics.org', 'livingarchitecturelab.org']),
     ('Heteronym Institutions', ['vpcor.org', 'lagrangeobservatory.org', 'restoredacademy.org',
                                 'maryleelabor.org']),
 ]
