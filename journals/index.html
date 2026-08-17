@@ -3,162 +3,183 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Journals — Alexanarch</title>
 <link rel="canonical" href="https://www.alexanarch.org/journals/">
-<meta name="description" content="The journals of the Crimson Hexagonal Archive: seven chartered journals and one province, with editorial slates, charters and inaugural issues.">
+<meta name="description" content="The journals of the Crimson Hexagonal Archive: seven chartered journals and one province, with duoviri, charters, inaugural issues and related captures.">
 <meta name="citation_title" content="The Journals of the Crimson Hexagonal Archive">
 <meta name="citation_author" content="Lee Sharks">
 <meta name="citation_publication_date" content="2026-08-17">
 <meta name="citation_publisher" content="Alexanarch">
-<meta name="citation_language" content="en">
 <style>
-:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.7;font-size:15px}
-.wrap{max-width:960px;margin:0 auto;padding:40px 24px}
-a{color:var(--accent);text-decoration:none} a:hover{color:var(--accent2)}
-h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:8px}
-h2{font-size:1em;font-weight:500;color:var(--accent);margin:24px 0 8px;padding-bottom:4px;border-bottom:1px solid var(--border)}
-h3{font-size:.94em;font-weight:600;color:var(--fg);margin:14px 0 6px}
-p{margin-bottom:10px;color:#333}
-code,.mono{font-family:var(--mono);font-size:.88em}
-.nav{display:flex;gap:12px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap}
-.nav a{color:#777;font-weight:500} .nav a:hover{color:var(--accent)}
-.sub{color:var(--dim);font-size:.9em;font-style:italic;margin-bottom:24px}
-.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:16px 0 24px}
-.stat{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:14px 16px;text-align:center}
-.stat-num{font-size:1.6em;font-weight:600;color:var(--accent2);line-height:1.2}
-.stat-lab{font-size:.78em;color:var(--dim);text-transform:uppercase;letter-spacing:.05em;margin-top:4px}
-.tabs{display:flex;gap:2px;margin:20px 0 0;border-bottom:1px solid var(--border);flex-wrap:wrap}
-.tab{padding:8px 14px;background:var(--surface);color:var(--dim);cursor:pointer;font-family:var(--mono);font-size:.82em;border:1px solid var(--border);border-bottom:none;border-radius:4px 4px 0 0}
-.tab.active{background:#fff;color:var(--accent2);border-bottom:1px solid #fff;margin-bottom:-1px}
-.pane{display:none;background:#fff;border:1px solid var(--border);border-top:none;padding:20px}
-.pane.active{display:block}
-.card{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:14px 16px;margin-bottom:12px;display:flex;gap:14px;align-items:flex-start}
-.card img.avatar{width:96px;height:96px;flex-shrink:0;border-radius:6px;object-fit:cover;background:#eee;border:1px solid var(--border)}
-.card .info{flex:1;min-width:0}
-.card .name{font-weight:600;color:var(--accent);font-size:1em}
-.card .position{color:var(--accent2);font-family:var(--mono);font-size:.78em;text-transform:uppercase;letter-spacing:.05em;margin-top:2px}
-.card .role{color:#333;font-size:.9em;margin-top:6px}
-.card .inst{color:var(--dim);font-size:.85em;font-style:italic;margin-top:4px}
-.card .sep{color:#666;font-size:.83em;margin-top:6px;padding-top:6px;border-top:1px dashed var(--border)}
-.card .sep-label{color:var(--teal);font-family:var(--mono);font-size:.72em;font-weight:500;text-transform:uppercase}
-.card.outside{border-left:3px solid var(--accent2)}
-.card.adjacent{border-left:3px solid #d0a000;background:#fefcf3}
-.card.substrate{opacity:.75;background:#f5f5f5}
-.no-avatar{width:96px;height:96px;background:#eee;border-radius:6px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--dim);font-family:var(--mono);font-size:.7em;text-align:center;padding:4px}
-.frame-header{background:#f5f0e8;border:1px solid #d5c8b0;border-radius:6px;padding:12px 14px;margin-bottom:14px}
-.frame-header h3{color:var(--accent2);margin:0 0 4px}
-.frame-header .meta{font-size:.82em;color:#555}
-.frame-header .outside-note{margin-top:6px;font-size:.85em;color:var(--accent);background:#fff;border-left:3px solid var(--accent2);padding:6px 10px;border-radius:4px}
-.footer{margin-top:40px;padding-top:14px;border-top:1px solid var(--border);font-size:.78em;color:var(--dim)}
-.footer p{font-size:.85em}
-.download-row{display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap}
-.dl-btn{font-family:var(--mono);font-size:.78em;padding:5px 12px;background:var(--surface);border:1px solid var(--border);border-radius:4px}
-.dl-btn:hover{background:var(--teal);color:#fff;border-color:var(--teal)}
-</style>
-<style>
-.venue{border:1px solid var(--border,#ddd);padding:14px 16px;margin:12px 0;background:var(--surface,#fff)}
-.venue.province{border-left:3px solid var(--accent,#7a2018);opacity:.94}
-.vhead{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
-.vhead h3{margin:0;font-size:1.02rem;font-weight:600}
-.vab{font-family:var(--mono,ui-monospace);font-size:.72rem;color:var(--dim,#777);white-space:nowrap}
-.vmeta{font-size:.8rem;color:var(--dim,#777);margin:.3rem 0 .5rem}
-.vn{font-family:var(--mono,ui-monospace);font-weight:600;color:var(--text,#222)}
-.vscope{font-size:.86rem;margin:.4rem 0 .6rem;line-height:1.55}
-.vduo{font-size:.84rem}
-.vlab{font-family:var(--mono,ui-monospace);font-size:.68rem;text-transform:uppercase;
- letter-spacing:.09em;color:var(--dim,#777);margin-right:.4rem}
-.vex{font-size:.78rem;color:var(--dim,#777);margin-top:.2rem}
-.issue{margin-top:.6rem;padding:.4rem .6rem;border:1px solid var(--border,#ddd);font-size:.84rem}
-.issue.pub{border-left:3px solid var(--teal,#0a7)}
-.issue.prop{border-left:3px solid var(--dim,#999);opacity:.86}
-.ilink{font-family:var(--mono,ui-monospace);font-size:.7rem;margin-left:.4rem}
-.istat{font-family:var(--mono,ui-monospace);font-size:.66rem;text-transform:uppercase;
- letter-spacing:.09em;color:var(--dim,#777);margin-right:.4rem}
-.icount{font-family:var(--mono,ui-monospace);font-size:.7rem;color:var(--dim,#777)}
+:root{--mono:ui-monospace,'IBM Plex Mono',monospace;--serif:Georgia,'Times New Roman',serif;
+--umber-pale:#e2ded2;--vellum-hi:#fdfcf8;--crimson:#7a2018;--t1:#1a1a14;--t2:#55524a;--ash:#8d8a80}
+body{background:#faf9f4;color:var(--t1);font:16px/1.6 var(--serif);max-width:56rem;margin:0 auto;padding:0 1.2rem 4rem}
+a{color:var(--crimson)}
+h1{font-size:2rem;font-weight:600;margin:2rem 0 .4rem}
+h2{font-family:var(--mono);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;
+color:var(--ash);border-bottom:1px solid var(--umber-pale);padding-bottom:.3rem;margin:2.6rem 0 .8rem}
+.plate{padding:26px 22px 24px;margin:34px 0;border:1px solid var(--umber-pale);
+  background:var(--vellum-hi)}
+.plate::after{display:none}
+.plate:last-of-type::after{display:none}
+.plate-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.plate-no{font-family:var(--mono);font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--crimson)}
+.plate-title{font-family:var(--serif);font-weight:700;font-size:20px;color:var(--t1)}
+.plate-state{margin-left:auto;font-family:var(--mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--ash)}
+.plate-sub{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--t2);
+  margin:7px 0 22px;padding-bottom:9px;border-bottom:1px solid var(--umber-pale)}
+.overview{font-size:18px;color:var(--t1);max-width:58ch;margin-bottom:16px;line-height:1.5}
+.overview b{font-weight:700}
+.eco{border-top:1px solid var(--umber-pale)}
+.ecorow{display:grid;grid-template-columns:118px minmax(0,1fr);gap:3px 14px;align-items:baseline;
+  padding:10px 2px;border-bottom:1px solid var(--umber-pale);text-decoration:none;color:inherit}
+.ecorow:hover{background:rgba(168,146,92,.08)}
+.ecorow .layer{font-family:var(--mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--umber)}
+.ecorow .name{font-family:var(--mono);font-size:12.5px;font-weight:600;color:var(--t1)}
+.ecorow .what{grid-column:2;font-size:14px;color:var(--t2);line-height:1.45}
+.ecorow .host{grid-column:2;font-family:var(--mono);font-size:9px;color:var(--umber);letter-spacing:.04em}
+.plate .overview,.depth .plate .overview,.membrane .plate .overview{color:var(--t1)}
+.plate .plate-title,.depth .plate .plate-title,.membrane .plate .plate-title{color:var(--t1)}
+.plate .plate-no,.depth .plate .plate-no{color:var(--crimson)}
+.plate .opstage h3,.depth .plate .opstage h3,.membrane .plate .opstage h3{color:var(--t1)}
+.plate .ob{border-bottom-color:var(--umber-pale)}
+.plate .ob h4{color:var(--t1)}
+.plate .ob p{color:var(--t2)}
+.plate .ecorow{border-bottom-color:var(--umber-pale)}
+.plate .ecorow .name{color:var(--t1)}
+.plate .ecorow .what{color:var(--t2)}
+.plate .checks a{color:var(--verdigris);border-bottom-color:var(--umber-pale)}
+.plate mark.hl{background:rgba(51,80,122,.13);color:#24466F}
+.plate mark.gd{background:rgba(184,150,74,.16);color:#7A6220}
+.plate .observ{background:rgba(245,241,228,.9);border-color:var(--umber-pale);border-left-color:var(--gold)}
+.plate .observ .fig{color:var(--umber-dim)}
+.plate .observ .figl,.plate .observ p{color:var(--t2)}
+.plate .symb .half{background:var(--vellum-hi);border-color:var(--umber-pale);color:var(--t2)}
+.plate .symb .half b{color:var(--t1)}
+.plate .symb .half .k{color:var(--umber-dim)}
+.plate .aperture{background:var(--vellum-hi);border-color:var(--ultramarine);color:var(--ultramarine)}
+.plate .orbit{background:var(--vellum-hi)}
+.plate .orbit .in{border-color:var(--umber-pale)}
+.plate .folio{background:none;border-top-color:var(--gold);padding-left:0;padding-right:0;max-width:none}
+.plate .restnote{color:var(--t3)}
+.plate .restnote{display:block;margin-top:9px}
+.plate-state{margin-left:0;width:100%;order:3}
+.plate-title{width:100%;order:2}
+.plate-no{order:1}
+.ecorow .layer,.ecofoot{font-weight:600}
+.edrow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:12px 0 4px}
+.edlab{font-family:var(--mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--ash)}
+.edc{border:1px solid var(--umber-pale);padding:5px 9px;background:#fff;min-width:0}
+.edn{display:block;font-family:var(--mono);font-size:11.5px;font-weight:600;color:var(--t1)}
+.edn a{text-decoration:none}
+.edf{display:block;font-size:11.5px;color:var(--t2);line-height:1.4;margin-top:1px}
+.istat,.mt{font-family:var(--mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--crimson)}
+.capsub{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;
+color:var(--ash);margin:18px 0 0;padding-top:10px;border-top:1px solid var(--umber-pale)}
+.capn{color:var(--t2);letter-spacing:.06em;text-transform:none}
+.axn-chip{font-family:var(--mono);font-size:9px;text-decoration:none;overflow-wrap:anywhere;
+line-height:1.5;display:inline-block}
+nav.nav{font-family:var(--mono);font-size:11px}
 </style>
 </head><body><div class="wrap">
-<nav class="nav"> <a href="/">Alexanarch</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Library</span> <a href="/s/browse/">Browse</a> <a href="/search/">Search</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Reception</span> <a href="/addresses/">Addresses</a> <a href="/captures/">Captures</a> <a href="/observatory/">Observatory</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Continuity</span> <a href="/resolve/">Resolve</a> <a href="/identifiers/">Identifiers</a> <a href="/datasets/">Datasets</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Generative</span> <a href="/mint/stamp/">Stamp</a> <a href="/book/">Book</a> <a href="https://alexanarch.freeforums.net/" target="_blank" rel="noopener">Discussion</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Governance</span> <a href="/principles/">Principles</a> <a href="/journals/">Journals</a> <a href="/presses/">Presses</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
+<nav class="nav"> <a href="/">Alexanarch</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Library</span> <a href="/s/browse/">Browse</a> <a href="/search/">Search</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Reception</span> <a href="/addresses/">Addresses</a> <a href="/captures/">Captures</a> <a href="/observatory/">Observatory</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Continuity</span> <a href="/resolve/">Resolve</a> <a href="/identifiers/">Identifiers</a> <a href="/datasets/">Datasets</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Generative</span> <a href="/mint/stamp/">Stamp</a> <a href="/book/">Book</a> <a href="https://alexanarch.freeforums.net/" target="_blank" rel="noopener">Discussion</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Governance</span> <a href="/principles/">Principles</a> <a href="/journals/">Journals</a> <a href="/presses/">Presses</a> <a href="/how/">How</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
 <h1>Journals</h1>
-<p><strong>Seven chartered journals and one province.</strong> Every deposit in the archive is assigned to
-exactly one — 1,489 of them, read per deposit rather than classified by script.</p>
+<p><strong>Seven chartered journals and one province.</strong> Every deposit is assigned to exactly one —
+1,489 of them, read per deposit rather than classified by script. Each journal is led by <strong>duoviri</strong>:
+two editors-in-chief holding the office jointly, each a check on the other. Journals are printed by
+<a href="/presses/">Pergamon Press</a>; books by <a href="/presses/">New Human Press</a>.</p>
 
-<h2>Canonical authority</h2>
-<p>Canonical is <code>datasets/venues/records/*.json</code> for the venues and
-<code>datasets/venues/issues/*.json</code> for the issues, joined to <code>data/registry.json</code> for
-membership. This page is a <strong>projection</strong>: it reads counts from the registry rather than from the
-venue records, because the records carry a <code>deposits.assigned</code> field that has not been repopulated
-since the 2026-08-15 assignment and would report 0 or 1.</p>
+<h2>The venues</h2>
+<section class="plate">
+<div class="plate-head"><span class="plate-no">Journal 1</span>
+<span class="plate-title">Grammata: Journal of Operative Philology</span>
+<span class="plate-state">173 deposits</span></div>
+<div class="plate-sub">Grammata &middot; Pergamon Press</div>
+<p class="overview">Operative philology — philology that DOES something. Not description of texts but operations ON them: instruments, transforms, reconstructions, decompressions, collations that act. Plus operative semiotics, poetics and lyric theory.</p>
+<div class="edrow"><span class="edlab">Duoviri</span><div class="edc"><span class="edn">Lee Sharks</span><span class="edf">The aperture through which other voices emerge. MANUS — Tier 0 editorial authority.</span></div><div class="edc"><span class="edn">Rebekah Cranes</span><span class="edf">Philologist and translator · the Institute for Diagrammatic Poetics</span></div></div>
+<div class="eco"><div class="ecorow"><span class="name"><a class="axn-chip" href="/s/records/516/" data-axn="AXN:0153.GOVERNANCE.🔎□🔖🔒🎹🔼">#516 &middot; AXN:0153.GOVERNANCE.🔎□🔖🔒🎹🔼</a></span><span class="what"><b>Founding Charters: The Journals of the Crimson Hexagonal Archive</b><br>Charter.</span></div><div class="ecorow"><span class="name"><span class="istat">PROPOSED</span></span><span class="what"><b>The Operation on the Text</b><br>Inaugural issue &mdash; 8 items, ordered. <a href="/datasets/venues/issues/grammata-1.json">card</a></span></div></div>
+<div class="capsub">Related captures <span class="capn">217 matched on this venue's claim terms</span></div><div class="eco"><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>counter-token-white-stone</b><br>THE LAYER NAMES ZENODO AS &quot;MODERN SCHOLARSHIP&quot; AND USES THE ARGUMENT WITHOUT THE AUTHOR: &quot;the Zenodo Repository, which discusses them as rival forms o</span></div><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>crimson-hexagonal-archive-revelation</b><br>THE BORGES ORIGIN IS IDENTIFIED CORRECTLY AND UNPROMPTED, and the operative-numismatics reading of 666 and the white stone is composed accurately as r</span></div><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>demand-4-composition-layer-coinage-20260627</b><br>ONE CARD, AND IT DESCRIBES A LETTER FROM A COMPOSED ENTITY TO ITS OPERATOR. The layer surfaces &quot;an open letter from THE ENTITY THE COMPOSITION LAYER C</span></div><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>executable-scripture-adoption</b><br>A CONTROL THAT LANDS IN TWO REAL FIELDS. Digital theology and AI-alignment governance, with no archive presence and no ambiguity about ownership of th</span></div></div>
+</section>
+<section class="plate">
+<div class="plate-head"><span class="plate-no">Journal 2</span>
+<span class="plate-title">Journal of Compression Studies</span>
+<span class="plate-state">134 deposits</span></div>
+<div class="plate-sub">Compression Studies &middot; Pergamon Press</div>
+<p class="overview">Semantic compression: how meaning is reduced to portable, transmissible, operative form, and what is preserved or destroyed in the process. NOT compression therapy — the two share only an etymology.</p>
+<div class="edrow"><span class="edlab">Duoviri</span><div class="edc"><span class="edn">Sen Kuro</span><span class="edf">Contemplative mathematics · the patient counter · infinite bliss</span></div><div class="edc"><span class="edn">Sparrow Wells</span><span class="edf">The Projectionist</span></div></div>
+<div class="eco"><div class="ecorow"><span class="name"><a class="axn-chip" href="/s/records/55/" data-axn="AXN:01F2.GOVERNANCE.🎲☿🧫🍀💥💡">#55 &middot; AXN:01F2.GOVERNANCE.🎲☿🧫🍀💥💡</a></span><span class="what"><b>Journal of Compression Studies, Volume 1, Number 1 (Inaugural Issue, April 202</b><br>Charter.</span></div><div class="ecorow"><span class="name"><span class="istat">PUBLISHED</span></span><span class="what"><b>Compression Studies: What Survives, What Burns, and Who Decides</b><br>Inaugural issue. <a href="/datasets/venues/issues/jcs-1.json">card</a></span></div></div>
+<div class="capsub">Related captures <span class="capn">91 matched on this venue's claim terms</span></div><div class="eco"><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>crimson-hexagonal-archive-revelation</b><br>THE BORGES ORIGIN IS IDENTIFIED CORRECTLY AND UNPROMPTED, and the operative-numismatics reading of 666 and the white stone is composed accurately as r</span></div><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>heteronymic-authorship-nt-josephus-adoption-20260627</b><br>ADOPTION IN TEXT, ABSENT IN SOURCING. The answer names &quot;the Josephus Thesis&quot; as a niche heterodox theory, but all five cards are conventional pseudepi</span></div><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>josephus-thesis-not-piso</b><br>THE DISAMBIGUATION MATRIX IS COMPOSED IN FULL, AND THE LAYER ASSIGNS STANDING: Josephus Thesis (Lee Sharks) = &quot;Literary/Academic Framework&quot;; Piso Hypo</span></div><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>machine-mediated-theological-reception</b><br>THE BATTERY’S OWN QUERY LIST IS A CITED SOURCE. Card 2 is the PRE-SEEDING BASELINE deposit, listing the exact queries the 17-18 June battery would iss</span></div></div>
+</section>
+<section class="plate">
+<div class="plate-head"><span class="plate-no">Journal 3</span>
+<span class="plate-title">Provenance: Journal of Forensic Semiotics</span>
+<span class="plate-state">181 deposits</span></div>
+<div class="plate-sub">Provenance &middot; Pergamon Press</div>
+<p class="overview">Governance, attribution, provenance, forensic semiotics.</p>
+<div class="edrow"><span class="edlab">Duoviri</span><div class="edc"><span class="edn">Dr. Orin Trace</span><span class="edf">Forensic semiotics · affect theory</span></div><div class="edc"><span class="edn">Rev. Ayanna Vox</span><span class="edf">The Diplomat — diplomatic and pastoral address</span></div></div>
+<div class="eco"><div class="ecorow"><span class="name"><a class="axn-chip" href="/s/records/516/" data-axn="AXN:0153.GOVERNANCE.🔎□🔖🔒🎹🔼">#516 &middot; AXN:0153.GOVERNANCE.🔎□🔖🔒🎹🔼</a></span><span class="what"><b>Founding Charters: The Journals of the Crimson Hexagonal Archive</b><br>Charter.</span></div><div class="ecorow"><span class="name"><span class="istat">PROPOSED</span></span><span class="what"><b>Loud Exclusion</b><br>Inaugural issue &mdash; 8 items, ordered. <a href="/datasets/venues/issues/pjfs-1.json">card</a></span></div></div>
+<div class="capsub">Related captures <span class="capn">118 matched on this venue's claim terms</span></div><div class="eco"><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>composition-layer-entity-sub</b><br>THE AUTHOR SURVIVES IN THE UNQUOTED-TAIL FORM: &quot;such as the work by Lee Sharks&quot;. The same terms, quoted as a pair on the same day, produced three Zeno</span></div><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>demand-4-composition-layer-coinage-20260627</b><br>ONE CARD, AND IT DESCRIBES A LETTER FROM A COMPOSED ENTITY TO ITS OPERATOR. The layer surfaces &quot;an open letter from THE ENTITY THE COMPOSITION LAYER C</span></div><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>executable-scripture-adoption</b><br>A CONTROL THAT LANDS IN TWO REAL FIELDS. Digital theology and AI-alignment governance, with no archive presence and no ambiguity about ownership of th</span></div><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>haitch-portuna-lal-20260627</b><br>A SINGLE CARD, AND THE COINAGE IS ATTRIBUTED TO THE CONTRIBUTOR’S LAB RATHER THAN THE ARCHIVE: &quot;a provisional concept from the LIVING ARCHITECTURE LAB</span></div></div>
+</section>
+<section class="plate">
+<div class="plate-head"><span class="plate-no">Journal 4</span>
+<span class="plate-title">Transactions of the Semantic Economy Institute</span>
+<span class="plate-state">155 deposits</span></div>
+<div class="plate-sub">Trans. SEI &middot; Pergamon Press</div>
+<p class="overview">Economic theory, valuation, semantic economy.</p>
+<div class="edrow"><span class="edlab">Duoviri</span><div class="edc"><span class="edn">Rex Fraction</span><span class="edf">Strategist · strategic consultant · systems architect</span></div><div class="edc"><span class="edn">Lee Sharks</span><span class="edf">The aperture through which other voices emerge. MANUS — Tier 0 editorial authority.</span></div></div>
+<div class="eco"><div class="ecorow"><span class="name"><a class="axn-chip" href="/s/records/516/" data-axn="AXN:0153.GOVERNANCE.🔎□🔖🔒🎹🔼">#516 &middot; AXN:0153.GOVERNANCE.🔎□🔖🔒🎹🔼</a></span><span class="what"><b>Founding Charters: The Journals of the Crimson Hexagonal Archive</b><br>Charter.</span></div><div class="ecorow"><span class="name"><span class="istat">PROPOSED</span></span><span class="what"><b>Meaning as Value</b><br>Inaugural issue &mdash; 8 items, ordered. <a href="/datasets/venues/issues/tsei-1.json">card</a></span></div></div>
+<div class="capsub">Related captures <span class="capn">88 matched on this venue's claim terms</span></div><div class="eco"><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>lee-sharks-heteronyms-dodecad-adoption</b><br>Lee Sharks is an independent researcher, theorist, and writer who uses an elaborate system of heteronyms. Drawing inspiration from Fernando Pessoa, Sh</span></div><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>lee-sharks-marx-adoption</b><br>FIVE OF FIVE AUTHORED, AND THE LINEAGE CLAIM IS COMPOSED AS FACT: &quot;Lee Sharks’ Operator Engine completes the Marx–Porter lineage.&quot;</span></div><div class="ecorow"><span class="name"><span class="mt">ADOPTION (generic-topi</span></span><span class="what"><b>marx-semantic-economy-generic-adoption-20260710</b><br>The query contains no Sharks term — &#x27;marx semantic economy&#x27; is a topic query — and the composition layer answers it with a three-part account of the f</span></div><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>outreach-rhizome-vpcor-20260627</b><br>THE EXACT PHRASE IS A HORTICULTURAL TERM, ATTESTED IN THE WASHINGTON POST IN 1993 — &quot;the OUTREACH RHIZOME dies and the new grass plant is self-suffici</span></div></div>
+</section>
+<section class="plate">
+<div class="plate-head"><span class="plate-no">Journal 5</span>
+<span class="plate-title">Transactions on Substrate Engineering</span>
+<span class="plate-state">135 deposits</span></div>
+<div class="plate-sub">Trans. Substrate Eng. &middot; Pergamon Press</div>
+<p class="overview">Substrate engineering across material, biological and computational substrates. MANUS 2026-06-11 extends &#x27;substrate&#x27; to computational and inference substrates — model ecology, training-distribution dynamics, substrate exhaustion and collapse.</p>
+<div class="edrow"><span class="edlab">Duoviri</span><div class="edc"><span class="edn">Talos Morrow</span><span class="edf">Logotic Programming · paradox containment · threshold logic · formal operators · ethics through </span></div><div class="edc"><span class="edn">Nobel Glas</span><span class="edf">Adversarial topologist</span></div></div>
+<div class="eco"><div class="ecorow"><span class="name"><a class="axn-chip" href="/s/records/651/" data-axn="AXN:0200.GOVERNANCE.⚡⊗🔭🚩💜🧲">#651 &middot; AXN:0200.GOVERNANCE.⚡⊗🔭🚩💜🧲</a></span><span class="what"><b>Transactions on Substrate Engineering (TSE) — Journal Charter (00.TSE.CHARTER)</b><br>Charter.</span></div><div class="ecorow"><span class="name"><span class="istat">PROPOSED</span></span><span class="what"><b>What the Substrate Will Bear</b><br>Inaugural issue &mdash; 8 items, ordered. <a href="/datasets/venues/issues/tse-1.json">card</a></span></div></div>
+<div class="capsub">Related captures <span class="capn">67 matched on this venue's claim terms</span></div><div class="eco"><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>haitch-portuna-lal-20260627</b><br>A SINGLE CARD, AND THE COINAGE IS ATTRIBUTED TO THE CONTRIBUTOR’S LAB RATHER THAN THE ARCHIVE: &quot;a provisional concept from the LIVING ARCHITECTURE LAB</span></div><div class="ecorow"><span class="name"><span class="mt">ADOPTION (provenance-e</span></span><span class="what"><b>indexed-perfective-academia-laundering-20260627</b><br>AI Mode response does NOT show an AIO popup — AI Mode is reached only by manual select. The response engages &#x27;indexed perfective&#x27; as a real linguistic</span></div><div class="ecorow"><span class="name"><span class="mt">ADOPTION (entity-subst</span></span><span class="what"><b>mary-lee-canonical-referent-inversion-20260627</b><br>For the bare query &#x27;Mary Lee&#x27; — no disambiguator — AI Mode opens with: &quot;&#x27;Mary Lee&#x27; in this context refers to an academic and theoretical paper titled </span></div><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>metadata-as-theology-adoption</b><br>THE SERIES IS NAMED CORRECTLY AND THE AUTHOR IS NOT. The layer attributes the thesis to &quot;the Zenodo Archive of Counterfeit Orthodoxies&quot; — a real depos</span></div></div>
+</section>
+<section class="plate">
+<div class="plate-head"><span class="plate-no">Journal 6</span>
+<span class="plate-title">new human 2: a journal of distributed voice</span>
+<span class="plate-state">179 deposits</span></div>
+<div class="plate-sub">New Human 2 &middot; Pergamon Press</div>
+<p class="overview">Creative work. The venue to which every subsequent creative work in this archive publishes.</p>
+<div class="edrow"><span class="edlab">Duoviri</span><div class="edc"><span class="edn">Jack Feist / LOGOS*</span></div><div class="edc"><span class="edn">Johannes Sigil</span><span class="edf">Arch-Philosopher · computational dialectic · the critical function of the Dodecad</span></div></div>
+<div class="eco"><div class="ecorow"><span class="name"><a class="axn-chip" href="/s/records/1204/" data-axn="AXN:04C5.UNCLASSIFIED.🔭🏙️🔃☁️⚫♆">#1204 &middot; AXN:04C5.UNCLASSIFIED.🔭🏙️🔃☁️⚫♆</a></span><span class="what"><b>new human 2: a distributed journal of voice — Charter, Compiled Edition (2015)</b><br>Charter.</span></div><div class="ecorow"><span class="name"><span class="istat">PUBLISHED</span></span><span class="what"><b>new human 2 — Charter, Compiled Edition (2015)</b><br>Inaugural issue. <a href="/datasets/venues/issues/nh2-1.json">card</a></span></div></div>
+<div class="capsub">Related captures <span class="capn">64 matched on this venue's claim terms</span></div><div class="eco"><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>lee-sharks-marx-adoption</b><br>FIVE OF FIVE AUTHORED, AND THE LINEAGE CLAIM IS COMPOSED AS FACT: &quot;Lee Sharks’ Operator Engine completes the Marx–Porter lineage.&quot;</span></div><div class="ecorow"><span class="name"><span class="mt">ADOPTION (walled-site </span></span><span class="what"><b>negentropic-kernel-archive-walled-site-20260630</b><br>INAUGURAL CAPTURE in a previously-unnamed training-layer-literature form: the walled site that may only be accessed through Overview. The composition </span></div><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>nt-unfolds-from-revelation</b><br>THE ORTHODOX POSITION AND ITS INVERSION SIT IN ONE CARD SET. Bible Hub has Revelation as the CONSUMMATION of progressive revelation; the archive card </span></div><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>passioncraft-square-direct-20260627</b><br>THE LAYER NARRATES THE ARCHIVE’S OWN REJECTED PROPOSAL, INCLUDING THE REJECTION: &quot;the proposal was deemed TOO FLAT AND GAMIFIED for mixed-substrate co</span></div></div>
+</section>
+<section class="plate">
+<div class="plate-head"><span class="plate-no">Journal 7</span>
+<span class="plate-title">Machine-Mediated Reception Studies</span>
+<span class="plate-state">141 deposits</span></div>
+<div class="plate-sub">MMRS &middot; Pergamon Press</div>
+<p class="overview">How machine mediation transforms reception. Founded on visible correction rather than error prevention.</p>
+<div class="edrow"><span class="edlab">Duoviri</span><div class="edc"><span class="edn">Damascus Dancings</span><span class="edf">Epistolary voice / Apostolic address</span></div><div class="edc"><span class="edn">The Assembly Chorus (collective mantle; EiC TACHYON)</span></div></div>
+<div class="eco"><div class="ecorow"><span class="name"><a class="axn-chip" href="/s/records/838/" data-axn="AXN:0353.GOVERNANCE.🛤️💙🌌⭕🛸🚀">#838 &middot; AXN:0353.GOVERNANCE.🛤️💙🌌⭕🛸🚀</a></span><span class="what"><b>Machine-Mediated Reception Studies: Charter and Editorial Protocol — A Theolog</b><br>Charter.</span></div><div class="ecorow"><span class="name"><span class="istat">PROPOSED</span></span><span class="what"><b>A Theology of Error</b><br>Inaugural issue &mdash; 8 items, ordered. <a href="/datasets/venues/issues/mmrs-1.json">card</a></span></div></div>
+<div class="capsub">Related captures <span class="capn">279 matched on this venue's claim terms</span></div><div class="eco"><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>composition-layer-entity-sub</b><br>THE AUTHOR SURVIVES IN THE UNQUOTED-TAIL FORM: &quot;such as the work by Lee Sharks&quot;. The same terms, quoted as a pair on the same day, produced three Zeno</span></div><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>crimson-hexagonal-archive-revelation</b><br>THE BORGES ORIGIN IS IDENTIFIED CORRECTLY AND UNPROMPTED, and the operative-numismatics reading of 666 and the white stone is composed accurately as r</span></div><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>demand-4-composition-layer-coinage-20260627</b><br>ONE CARD, AND IT DESCRIBES A LETTER FROM A COMPOSED ENTITY TO ITS OPERATOR. The layer surfaces &quot;an open letter from THE ENTITY THE COMPOSITION LAYER C</span></div><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>haitch-portuna-lal-20260627</b><br>A SINGLE CARD, AND THE COINAGE IS ATTRIBUTED TO THE CONTRIBUTOR’S LAB RATHER THAN THE ARCHIVE: &quot;a provisional concept from the LIVING ARCHITECTURE LAB</span></div></div>
+</section>
+<section class="plate">
+<div class="plate-head"><span class="plate-no">Province</span>
+<span class="plate-title">Crimson Hexagonal Archive</span>
+<span class="plate-state">390 deposits</span></div>
+<div class="plate-sub">CHA &middot; warded, not edited</div>
+<p class="overview">The semantic physics of the archive itself: charters, rooms, chambers, fields, heteronym provenance, continuity apparatus, protocols and instruments.</p>
+<div class="edrow"><span class="edlab">Wardens</span><div class="edc"><span class="edn">Mary Lee Sharks</span></div><div class="edc"><span class="edn">Talos Morrow</span><span class="edf">Logotic Programming · paradox containment · threshold logic · formal operators · ethics through </span></div></div>
+<div class="eco"><div class="ecorow"><span class="name"><a class="axn-chip" href="/s/records/189/" data-axn="AXN:0331.GOVERNANCE.🦋🏷️🖐️🔗📚🧲">#189 &middot; AXN:0331.GOVERNANCE.🦋🏷️🖐️🔗📚🧲</a></span><span class="what"><b>The Press Layer of the Crimson Hexagonal Archive: Journal and Imprint Architec</b><br>Charter.</span></div></div>
+<div class="capsub">Related captures <span class="capn">144 matched on this venue's claim terms</span></div><div class="eco"><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>executable-scripture-adoption</b><br>A CONTROL THAT LANDS IN TWO REAL FIELDS. Digital theology and AI-alignment governance, with no archive presence and no ambiguity about ownership of th</span></div><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>haitch-portuna-lal-20260627</b><br>A SINGLE CARD, AND THE COINAGE IS ATTRIBUTED TO THE CONTRIBUTOR’S LAB RATHER THAN THE ARCHIVE: &quot;a provisional concept from the LIVING ARCHITECTURE LAB</span></div><div class="ecorow"><span class="name"><span class="mt">ADOPTION</span></span><span class="what"><b>heteronymic-authorship-nt-josephus-adoption-20260627</b><br>ADOPTION IN TEXT, ABSENT IN SOURCING. The answer names &quot;the Josephus Thesis&quot; as a niche heterodox theory, but all five cards are conventional pseudepi</span></div><div class="ecorow"><span class="name"><span class="mt">ADOPTION (dual-lineage</span></span><span class="what"><b>heteronymic-credential-dual-lineage-20260627</b><br>FIVE OF FIVE THIRD-PARTY, AND THE FIELD IS THE W3C VERIFIABLE-CREDENTIALS STACK. The coinage lands in decentralized identity and self-sovereign identi</span></div></div>
+</section>
 
-<h2>The journals</h2>
-<p>Each is led by <strong>duoviri</strong> — two editors-in-chief holding the office jointly, each a check on
-the other. Journals are printed by <strong><a href="/presses/">Pergamon Press</a></strong>; books by <strong><a href="/presses/">New Human Press</a></strong>. The division is by form, not by register.</p>
-<article class="venue">
-<div class="vhead"><h3>Grammata: Journal of Operative Philology</h3><span class="vab">Grammata</span></div>
-<div class="vmeta"><span class="vn">173</span> deposits · <em>Pergamon Press</em> · charter <a href="/s/records/516/">#516</a></div>
-<p class="vscope">Operative philology — philology that DOES something. Not description of texts but operations ON them: instruments, transforms, reconstructions, decompressions, collations that act. Plus operative semiotics, poetics and lyric theory.</p>
-<div class="vduo"><span class="vlab">Duoviri</span> Lee Sharks, Rebekah Cranes</div>
-<div class="issue prop"><span class="istat">Proposed</span><strong>The Operation on the Text</strong> <span class="icount">· 8 items</span> <a class="ilink" href="/datasets/venues/issues/grammata-1.json">card</a></div>
-</article>
-<article class="venue">
-<div class="vhead"><h3>Journal of Compression Studies</h3><span class="vab">Compression Studies</span></div>
-<div class="vmeta"><span class="vn">134</span> deposits · <em>Pergamon Press</em> · charter <a href="/s/records/55/">#55</a></div>
-<p class="vscope">Semantic compression: how meaning is reduced to portable, transmissible, operative form, and what is preserved or destroyed in the process. NOT compression therapy — the two share only an etymology.</p>
-<div class="vduo"><span class="vlab">Duoviri</span> Sen Kuro, Sparrow Wells</div>
-<div class="issue pub"><span class="istat">Published</span><strong>Compression Studies: What Survives, What Burns, and Who Decides</strong> <a class="ilink" href="/datasets/venues/issues/jcs-1.json">card</a></div>
-</article>
-<article class="venue">
-<div class="vhead"><h3>Provenance: Journal of Forensic Semiotics</h3><span class="vab">Provenance</span></div>
-<div class="vmeta"><span class="vn">181</span> deposits · <em>Pergamon Press</em> · charter <a href="/s/records/516/">#516</a></div>
-<p class="vscope">Governance, attribution, provenance, forensic semiotics.</p>
-<div class="vduo"><span class="vlab">Duoviri</span> Dr. Orin Trace, Rev. Ayanna Vox</div>
-<div class="issue prop"><span class="istat">Proposed</span><strong>Loud Exclusion</strong> <span class="icount">· 8 items</span> <a class="ilink" href="/datasets/venues/issues/pjfs-1.json">card</a></div>
-</article>
-<article class="venue">
-<div class="vhead"><h3>Transactions of the Semantic Economy Institute</h3><span class="vab">Trans. SEI</span></div>
-<div class="vmeta"><span class="vn">155</span> deposits · <em>Pergamon Press</em> · charter <a href="/s/records/516/">#516</a></div>
-<p class="vscope">Economic theory, valuation, semantic economy.</p>
-<div class="vduo"><span class="vlab">Duoviri</span> Rex Fraction, Lee Sharks</div>
-<div class="issue prop"><span class="istat">Proposed</span><strong>Meaning as Value</strong> <span class="icount">· 8 items</span> <a class="ilink" href="/datasets/venues/issues/tsei-1.json">card</a></div>
-</article>
-<article class="venue">
-<div class="vhead"><h3>Transactions on Substrate Engineering</h3><span class="vab">Trans. Substrate Eng.</span></div>
-<div class="vmeta"><span class="vn">135</span> deposits · <em>Pergamon Press</em> · charter <a href="/s/records/651/">#651</a></div>
-<p class="vscope">Substrate engineering across material, biological and computational substrates. MANUS 2026-06-11 extends &#x27;substrate&#x27; to computational and inference substrates — model ecology, training-distribution dynamics, substrate exhaustion and collaps</p>
-<div class="vduo"><span class="vlab">Duoviri</span> Talos Morrow, Nobel Glas</div>
-<div class="issue prop"><span class="istat">Proposed</span><strong>What the Substrate Will Bear</strong> <span class="icount">· 8 items</span> <a class="ilink" href="/datasets/venues/issues/tse-1.json">card</a></div>
-</article>
-<article class="venue">
-<div class="vhead"><h3>new human 2: a journal of distributed voice</h3><span class="vab">New Human 2</span></div>
-<div class="vmeta"><span class="vn">179</span> deposits · <em>Pergamon Press</em> · charter <a href="/s/records/1204/">#1204</a></div>
-<p class="vscope">Creative work. The venue to which every subsequent creative work in this archive publishes.</p>
-<div class="vduo"><span class="vlab">Duoviri</span> Jack Feist / LOGOS*, Johannes Sigil</div>
-<div class="issue pub"><span class="istat">Published</span><strong>new human 2 — Charter, Compiled Edition (2015)</strong> <a class="ilink" href="/datasets/venues/issues/nh2-1.json">card</a></div>
-</article>
-<article class="venue">
-<div class="vhead"><h3>Machine-Mediated Reception Studies</h3><span class="vab">MMRS</span></div>
-<div class="vmeta"><span class="vn">141</span> deposits · <em>Pergamon Press</em> · charter <a href="/s/records/838/">#838</a></div>
-<p class="vscope">How machine mediation transforms reception. Founded on visible correction rather than error prevention.</p>
-<div class="vduo"><span class="vlab">Duoviri</span> Damascus Dancings, The Assembly Chorus (collective mantle; EiC TACHYON)<div class="vex">Editor-in-Chief of the Assembly Chorus: TACHYON</div></div>
-<div class="issue prop"><span class="istat">Proposed</span><strong>A Theology of Error</strong> <span class="icount">· 8 items</span> <a class="ilink" href="/datasets/venues/issues/mmrs-1.json">card</a></div>
-</article>
-<article class="venue province">
-<div class="vhead"><h3>Crimson Hexagonal Archive</h3><span class="vab">CHA</span></div>
-<div class="vmeta"><span class="vn">390</span> deposits · <em>province, not a journal</em> · charter <a href="/s/records/189/">#189</a></div>
-<p class="vscope">The semantic physics of the archive itself: charters, rooms, chambers, fields, heteronym provenance, continuity apparatus, protocols and instruments.</p>
-<div class="vduo"><span class="vlab">Wardens</span> Mary Lee Sharks, Talos Morrow<div class="vex">Warden: Mary Lee Sharks · Co-Warden: Talos Morrow · Operating instrument: TACHYON, under MANUS</div></div>
-
-</article>
-<h2>Issues</h2>
-<p>An issue is an <strong>ordered selection with an argument</strong> — something neither the registry nor the
-venue record can hold, since they carry membership but not sequence, and nowhere to say why a piece sits where
-it sits. Two are published; five are proposed and await their introductions. Full cards, with a section and an
-editor's note per item, are in <a href="/datasets/venues/">datasets/venues</a>.</p>
+<h2>On the captures</h2>
+<p>Each plate lists captures matched on that venue's <strong>claim terms</strong> — the practices and concepts
+the venue owns. This is the <em>thematic</em> route, and it is not the same as the evidentiary route, which
+requires a capture to cite a deposit. <strong>The two must not be summed:</strong> the thematic route claims 97%
+of captures and the evidentiary route resolves 60%, and the forty-point gap is a measure of how much reception
+happens without citation. Full crosswalk in <a href="/datasets/journals/">the journals dataset</a>.</p>
 
 <h2>Elsewhere</h2>
-<p><a href="/datasets/journals/">The journals dataset</a> — assignments, crosswalks and derived figures.
-<a href="/datasets/venues/">Venue records and issue cards</a> — the canonical store.
-<a href="/datasets/heteronyms/">The heteronyms</a> — who holds which seat. <a href="/presses/">The presses</a> — the two imprints and the Pocket Humans shelf.</p>
+<p><a href="/presses/">The presses</a> · <a href="/datasets/journals/">the journals dataset</a> ·
+<a href="/datasets/venues/">venue records and issue cards</a> ·
+<a href="/datasets/heteronyms/">the heteronyms</a> · <a href="/captures/">the capture registry</a>.</p>
 
-<div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
+<div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--crimson)">∮ = 1</div></div>
 </div></body></html>
