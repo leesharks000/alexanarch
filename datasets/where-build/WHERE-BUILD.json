@@ -1,0 +1,127 @@
+{
+ "_what": "Per-site profile for the WHERE tab build. PAUSED 2026-08-17 at the deploy ceiling, after axnidentifiers.org shipped.",
+ "_task": "A /where/ page on each heteronym's OWN site, in THAT site's typography and palette, showing the journal that heteronym edits, with a nav entry following the site's existing convention. The heteronyms live on those sites; their journals should too.",
+ "_done": [
+  {
+   "site": "axn-identifiers",
+   "heteronym": "Rebekah Cranes",
+   "venue": "grammata",
+   "url": "https://axnidentifiers.org/where/",
+   "commit": "b5c54fd",
+   "method": "Built from /assets/msa.css and nothing else — no inline <style>, and no class the Cranes card does not already use. Four plates: Journal, Editors, Issue, Elsewhere. Nav entry inserted directly after Who in the .stations bar on all eight pages, with .here on the current page."
+  }
+ ],
+ "_nav_conventions": {
+  "nav bar, card IN the nav": [
+   "vpcor-org (Voice→/ayanna/ AND a separate Who)",
+   "restoredacademy (Sigil AND Who)",
+   "godkinggoogle (Who leads)",
+   "axn-identifiers (Who among seven interrogatives — DONE)",
+   "spxi-dev (Who last)"
+  ],
+  "nav bar, NO card link": [
+   "maryleelabor-org",
+   "provenance-erasure",
+   "semanticphysics-site",
+   "semantic-economy",
+   "watergiraffe-org",
+   "platform-erosion-observatory"
+  ],
+  "NO nav — card reached from the body": [
+   "chatgptpsychosis-site",
+   "holographic-kernel",
+   "lagrange-observatory",
+   "revelationfirst-com",
+   "surface-map",
+   "survivethedeletion",
+   "machinemediation-org"
+  ],
+  "_rule": "If the card is in the nav, Where goes in the nav beside it. If the card is standalone, Where goes standalone with it."
+ },
+ "_remaining": [
+  {
+   "site": "restoredacademy",
+   "heteronym": "Johannes Sigil",
+   "venue": "nh2",
+   "card": "/who/sigil/"
+  },
+  {
+   "site": "spxi-dev",
+   "heteronym": "Rex Fraction",
+   "venue": "tsei",
+   "card": "/who/fraction/"
+  },
+  {
+   "site": "godkinggoogle",
+   "heteronym": "Talos Morrow",
+   "venue": "tse",
+   "card": "/who/morrow/"
+  },
+  {
+   "site": "provenance-erasure",
+   "heteronym": "Dr. Orin Trace",
+   "venue": "pjfs",
+   "card": "/who/trace/"
+  },
+  {
+   "site": "lagrange-observatory",
+   "heteronym": "Nobel Glas",
+   "venue": "tse",
+   "card": "/who/glas/"
+  },
+  {
+   "site": "holographic-kernel",
+   "heteronym": "Sen Kuro",
+   "venue": "jcs",
+   "card": "/who/kuro/"
+  },
+  {
+   "site": "surface-map",
+   "heteronym": "Sparrow Wells",
+   "venue": "jcs",
+   "card": "/who/wells/"
+  },
+  {
+   "site": "chatgptpsychosis-site",
+   "heteronym": "Jack Feist",
+   "venue": "nh2",
+   "card": "/who/feist/"
+  },
+  {
+   "site": "revelationfirst-com",
+   "heteronym": "Damascus Dancings",
+   "venue": "mmrs",
+   "card": "/who/dancings/"
+  },
+  {
+   "site": "vpcor-org",
+   "heteronym": "Rev. Ayanna Vox",
+   "venue": "pjfs",
+   "card": "/ayanna/",
+   "note": "card path is /ayanna/, NOT /who/. Site has both Voice and Who in nav; Where goes beside Who."
+  },
+  {
+   "site": "machinemediation-org",
+   "heteronym": "the Assembly Chorus",
+   "venue": "mmrs",
+   "card": "/who/",
+   "note": "seven mantles collectively; no per-name card"
+  },
+  {
+   "site": "survivethedeletion",
+   "heteronym": "Ichabod Spellings",
+   "venue": null,
+   "card": "/who/spellings/",
+   "note": "NO editorial seat. A Where page here would point at the province, or be skipped. Card also returns 403 under Vercel deployment protection."
+  }
+ ],
+ "_open_decision": "Hand-build each against its site's idiom (what axnidentifiers got), or write a generator taking a per-site style profile — wrapper markup, nav pattern, class names — that emits the same four plates into it. The generator keeps fidelity AND makes the pages regenerable when a venue record changes; hand-building is more faithful per site but goes stale silently. Not decided.",
+ "_deploy_state": "PAUSED at the ceiling. machinemediation.org and watergiraffe.org were each one commit behind live at pause time, carrying the network-block de-duplication. The commit BEFORE it deployed on both, so the hook works and this is the ceiling, not a break. Verify with scripts/check_fleet_block.py --live before resuming.",
+ "_inputs": {
+  "venue-captures.json": "per-venue capture lists, matched on claim terms, adoption/exact ranked first",
+  "plate-idiom.css": "the 46 plate rules extracted from axnidentifiers /assets/msa.css — REFERENCE ONLY, never copy into a page; link the site's own sheet",
+  "editor-records.json": "the twelve editors resolved against datasets/heteronyms/records/",
+  "../../data/editor-cards.json": "where each card lives — paths are NOT uniform, verified 2026-08-17",
+  "../../data/where-links.json": "which venue each site's heteronym edits, and the anchor for it"
+ }
+}

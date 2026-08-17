@@ -1,0 +1,49 @@
+.plate{padding:26px 22px 24px;margin:34px 0;border:1px solid var(--umber-pale);
+  background:var(--vellum-hi)}
+.plate::after{display:none}
+.plate:last-of-type::after{display:none}
+.plate-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.plate-no{font-family:var(--mono);font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--crimson)}
+.plate-title{font-family:var(--serif);font-weight:700;font-size:20px;color:var(--t1)}
+.plate-state{margin-left:auto;font-family:var(--mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--ash)}
+.plate-sub{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--t2);
+  margin:7px 0 22px;padding-bottom:9px;border-bottom:1px solid var(--umber-pale)}
+.overview{font-size:18px;color:var(--t1);max-width:58ch;margin-bottom:16px;line-height:1.5}
+.overview b{font-weight:700}
+.eco{border-top:1px solid var(--umber-pale)}
+.ecorow{display:grid;grid-template-columns:118px minmax(0,1fr);gap:3px 14px;align-items:baseline;
+  padding:10px 2px;border-bottom:1px solid var(--umber-pale);text-decoration:none;color:inherit}
+.ecorow:hover{background:rgba(168,146,92,.08)}
+.ecorow .layer{font-family:var(--mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--umber)}
+.ecorow .name{font-family:var(--mono);font-size:12.5px;font-weight:600;color:var(--t1)}
+.ecorow .what{grid-column:2;font-size:14px;color:var(--t2);line-height:1.45}
+.ecorow .host{grid-column:2;font-family:var(--mono);font-size:9px;color:var(--umber);letter-spacing:.04em}
+.plate .overview,.depth .plate .overview,.membrane .plate .overview{color:var(--t1)}
+.plate .plate-title,.depth .plate .plate-title,.membrane .plate .plate-title{color:var(--t1)}
+.plate .plate-no,.depth .plate .plate-no{color:var(--crimson)}
+.plate .opstage h3,.depth .plate .opstage h3,.membrane .plate .opstage h3{color:var(--t1)}
+.plate .ob{border-bottom-color:var(--umber-pale)}
+.plate .ob h4{color:var(--t1)}
+.plate .ob p{color:var(--t2)}
+.plate .ecorow{border-bottom-color:var(--umber-pale)}
+.plate .ecorow .name{color:var(--t1)}
+.plate .ecorow .what{color:var(--t2)}
+.plate .checks a{color:var(--verdigris);border-bottom-color:var(--umber-pale)}
+.plate mark.hl{background:rgba(51,80,122,.13);color:#24466F}
+.plate mark.gd{background:rgba(184,150,74,.16);color:#7A6220}
+.plate .observ{background:rgba(245,241,228,.9);border-color:var(--umber-pale);border-left-color:var(--gold)}
+.plate .observ .fig{color:var(--umber-dim)}
+.plate .observ .figl,.plate .observ p{color:var(--t2)}
+.plate .symb .half{background:var(--vellum-hi);border-color:var(--umber-pale);color:var(--t2)}
+.plate .symb .half b{color:var(--t1)}
+.plate .symb .half .k{color:var(--umber-dim)}
+.plate .aperture{background:var(--vellum-hi);border-color:var(--ultramarine);color:var(--ultramarine)}
+.plate .orbit{background:var(--vellum-hi)}
+.plate .orbit .in{border-color:var(--umber-pale)}
+.plate .folio{background:none;border-top-color:var(--gold);padding-left:0;padding-right:0;max-width:none}
+.plate .restnote{color:var(--t3)}
+.plate .restnote{display:block;margin-top:9px}
+.plate-state{margin-left:0;width:100%;order:3}
+.plate-title{width:100%;order:2}
+.plate-no{order:1}
+.ecorow .layer,.ecofoot{font-weight:600}
