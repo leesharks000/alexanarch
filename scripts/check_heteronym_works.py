@@ -30,9 +30,17 @@ import pathlib
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-WORKFIELDS = ('works', 'corpus', 'major_work', 'creative_work', 'catalogue',
-              'primary_work', 'book', 'works_of_record', 'corpus_verified',
-              'works_recovered_by_full_text_search')
+# ONLY AUTHORSHIP FIELDS. A relation field -- rooms, institution, journal,
+# discipline, constitution_family, traversal_logs -- states a DIFFERENT claim and
+# cannot be contradicted by a creator field. An audit on 2026-08-17 that ignored
+# this reported 130 problems where there were 6: `rooms` holds documents in a room
+# the heteronym ANCHORS, `traversal_logs` holds logs the heteronym is NAMED IN, and
+# both fields say so in their own text. Each record now carries _field_claims
+# declaring what every deposit-bearing field asserts.
+WORKFIELDS = ('works', 'corpus', 'major_work', 'creative_work', 'critical_work',
+              'catalogue', 'primary_work', 'book', 'works_of_record',
+              'corpus_verified', 'works_recovered_by_full_text_search',
+              'major_paper', 'main_paper')
 
 
 def names(creator, heteronym):
