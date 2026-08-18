@@ -54,3 +54,14 @@ Three gates run on every build:
 
 **NULL is never zero.** An apparatus not captured has an unknown count.
 **Absence is a claim**, and a claim needs every place the thing could be.
+
+## The mirror rule (added 2026-08-18, after the who-said half-seating)
+
+An entry mirrors its primary observation at the top level, and THE GALLERY
+RENDERS THE TOP. Every seating and every repair must therefore write BOTH
+sides: the observation's fields and the entry-level mirror of the primary
+observation (imgs, transcript fields, attestations, all of them). A seating
+that updates one side of the mirror is half a seating; the files serve, the
+audits pass, and the card shows nothing. Until the mirror-audit gate exists,
+the closing step of any intake is to open the rebuilt gallery page and see
+the images with your own eyes. Anchored is not shown.

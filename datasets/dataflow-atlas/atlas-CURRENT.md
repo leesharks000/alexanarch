@@ -290,3 +290,17 @@ like data must say whether it is data — and when two documents both say, they
 must say the same thing. The rule gains a corollary tonight: WHEN A
 CONSTITUTION AND AN OPERATING MANUAL DISAGREE, EVERY SESSION IS LAWFUL AND
 THE DATASET STILL SPLITS. Reconciliation is a repair with its own mode.
+
+## Ledger line — 2026-08-18: the mirror-shape lesson, third instance
+
+A capture-registry entry duplicates its primary observation's fields at the
+top level, and the gallery renders the top; a seating that updates one side
+of the mirror is half a seating. The who-said images sat correctly bound at
+the observation level through two repairs while the card rendered nothing,
+because entry.imgs stayed empty — caught by MANUS reading the rendered page,
+not by any count. Same class as the attestation-fields flattening and the
+projection/store split: WHEREVER A STRUCTURE DUPLICATES A VALUE, TWO TRUTHS
+CAN DIVERGE SILENTLY, AND ONLY A GATE THAT COMPARES BOTH SIDES SEES IT.
+Standing repair: an audit clause failing any entry whose entry-level imgs
+disagree with its primary observation's imgs (and likewise for the other
+mirrored fields).
