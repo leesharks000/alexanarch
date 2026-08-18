@@ -79,6 +79,11 @@ Append to `data/EA-WG-CAPTURES-01.json` in the shape the corpus already uses.
 Recaptures append to an existing entry's `observations`; they do not mint a
 second card. See `scripts/seat_20260813_2248.py` for the form.
 
+**Ratified as doctrine, 2026-08-17 (MANUS):** this step names the canonical
+store. `data/EA-WG-CAPTURES-01.json` is the single writable authority; the
+rebuild store is sealed as the rebuild-era source. See `_authority` in the
+canonical file.
+
 ## 4. Render and gate
 
     python3 scripts/build_capture_gallery.py

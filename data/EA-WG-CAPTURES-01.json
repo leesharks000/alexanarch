@@ -1,6 +1,6 @@
 {
  "_FLOW": {
-  "READ_THIS_FIRST": "THE CANONICAL STORE IS rebuild/capture-registry/EA-WG-CAPTURES-01-REBUILD.json. This file is DERIVED from it for publication; galleries render FROM this file and nothing renders TO it. Exactly one writable authority: the rebuild. If you are a program about to write here, read the flow below first.",
+  "READ_THIS_FIRST": "THIS FILE IS THE CANONICAL STORE (ratified 2026-08-17; see _authority). Galleries and mirrors render FROM this file; intake seats INTO it per rebuild/capture-registry/PIPELINE.md step 3. Nothing renders TO it except the committed seat/repair scripts named in the dataflow atlas.",
   "source_of_truth": "alexanarch:data/EA-WG-CAPTURES-01.json",
   "flow": [
    "ENTRY is written to the CANONICAL STORE (the rebuild), and nowhere else. This file is regenerated from it.",
@@ -74370,20 +74370,28 @@
  "_record_rule": "ONE RECORD PER SEMANTIC ADDRESS, KEYED ON THE EXACT QUERY STRING. MANUS 2026-08-13: \"different date captures are part of the same capture record.\" Different DATES and different SURFACES of the same query are OBSERVATIONS OF ONE RECORD — the archive supplies AI Overview and AI Mode as a PAIR for one query, and rendering them as two captures was the doubling. QUOTED AND UNQUOTED REMAIN DISTINCT RECORDS: quoting is the decisive measured variable in this corpus, and «operative semiotics» held 5/5 archive cards quoted against 1/8 unquoted.",
  "_rerun_rule": "THE RECORD RE-RUN GOES TO GENERAL GOOGLE SEARCH. udm=50 is used ONLY where EVERY observation of that record was captured natively in AI Mode. MANUS: \"not to ai mode (unless that was the native mode in which it was captured). to general google search for that semantic address.\" A record that spans AI Overview and AI Mode is not an AI Mode record, and sending it to AI Mode would pre-decide the surface. Each observation keeps its own re-run at its own surface.",
  "_authority": {
-  "canonical_store": "alexanarch:rebuild/capture-registry/EA-WG-CAPTURES-01-REBUILD.json",
-  "this_file": "DERIVED. A projection of the canonical store for publication and for the gallery to render.",
-  "_rule": "EXACTLY ONE WRITABLE AUTHORITY. Three surfaces previously each claimed to be the source of truth: this file said so in its _FLOW block, the file itself said it was a projection of the rebuild, and the dataset manifest named this file. Those cannot all be true. THE REBUILD IS CANONICAL AND IS THE ONLY THING WRITTEN TO. Every other artifact is derived and says so.",
+  "canonical_store": "alexanarch:data/EA-WG-CAPTURES-01.json (THIS FILE)",
+  "this_file": "CANONICAL. The single writable authority for the capture registry, ratified 2026-08-17.",
+  "_rule": "EXACTLY ONE WRITABLE AUTHORITY: this file. Every gallery, link map, semantic-address layer, dataset mirror and fleet surface is derived from it and says so. Nothing writes back.",
+  "_ruling": "MANUS, 2026-08-17: 'b - amend doctrine.' Finding: PIPELINE.md step 3 (2026-08-13) directed seating into data/EA-WG-CAPTURES-01.json from the day the rebuild completed; eight committed seat scripts and every intake since obeyed it. The constitution and the operating manual disagreed for a month; the manual, and practice, win. The rebuild store is sealed with honor as the rebuild-era source.",
+  "sealed_rebuild_era_source": {
+   "path": "rebuild/capture-registry/EA-WG-CAPTURES-01-REBUILD.json",
+   "sealed": "2026-08-17",
+   "state_at_seal": "305 addresses / 401 observations as of 2026-08-13; the reconstruction instrument that restored the corpus source-by-source with provenance",
+   "status": "Historical source of record for the rebuild era. Never written, never projected forward. Its provenance blocks remain the authority for how pre-08-13 values were recovered."
+  },
   "derived_artifacts": [
-   "data/EA-WG-CAPTURES-01.json (this file)",
    "captures/index.html",
    "data/capture-deposit-links.json",
    "data/semantic-addresses.json",
-   "datasets/capture-registry/* (mirror)"
+   "datasets/capture-registry/* (mirror)",
+   "fleet gallery mirrors"
   ],
   "nothing_writes_back": "No output, mirror, gallery or compatibility projection is ever a write target.",
-  "address_count": 305,
-  "observation_count": 401,
-  "_total_captures_note": "total_captures is RETAINED FOR COMPATIBILITY and is ambiguous by construction — it has meant 285 query records, 404 observations, 401 observations and 305 address records on different surfaces. Prefer address_count and observation_count."
+  "known_followups": [
+   "scripts/capture_intake.py routes exact-match against the sealed store and cannot see post-08-13 addresses; repoint to this file before its next use or it will mint duplicates.",
+   "seat_source.py, cite_draft.py, extract_citations.py read the sealed store; verify or repoint before reuse."
+  ]
  },
  "address_count": 345,
  "observation_count": 489,
