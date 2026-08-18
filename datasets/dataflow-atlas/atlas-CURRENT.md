@@ -261,3 +261,32 @@ must test the **rendered result**, not the presence of its own markers.
 `scripts/check_fleet_block.py` now counts rendered group headers per site and fails on any
 count that is not exactly one. **Allied Sites is never counted** — it is curated, and no
 generator writes it.
+
+## Addendum — 2026-08-17: the capture registry's canonical store, ratified
+
+The contested artifact is contested no longer. `data/EA-WG-CAPTURES-01.json`
+is the canonical store for the capture registry, by MANUS ruling of this date,
+on the finding that `rebuild/capture-registry/PIPELINE.md` step 3 had directed
+seating into it since 2026-08-13 while the `_authority` block still named the
+rebuild store — a constitution and an operating manual ratified the same day,
+disagreeing for a month, with every session lawfully obeying the manual. The
+rebuild store is sealed with honor at 305 addresses / 401 observations; its
+provenance blocks remain authoritative for how pre-08-13 values were
+recovered. Four declaration surfaces were amended in one motion (commit of
+this date) so exactly one claim exists.
+
+Binding note for the next revision: `datasets/capture-registry` canonical is
+declared (`data/EA-WG-CAPTURES-01.json`); the CONTESTED flag on that artifact
+resolves to "canonical, many committed producers, per PIPELINE.md."
+
+Standing defect carried forward: `capture_intake.py` routes exact-match
+against the sealed store and cannot see post-08-13 addresses — a duplicate
+mint waiting to happen; repoint before next use. Three intake helpers
+(`seat_source.py`, `cite_draft.py`, `extract_citations.py`) read the sealed
+store and need the same verification.
+
+The lesson is the atlas's own, third instance this week: a layer that looks
+like data must say whether it is data — and when two documents both say, they
+must say the same thing. The rule gains a corollary tonight: WHEN A
+CONSTITUTION AND AN OPERATING MANUAL DISAGREE, EVERY SESSION IS LAWFUL AND
+THE DATASET STILL SPLITS. Reconciliation is a repair with its own mode.
