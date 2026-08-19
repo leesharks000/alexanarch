@@ -100,13 +100,12 @@ probed (revelationfirst 40KB w/ /unfolding/ series + Sappho section standing;
 machinemediation 53KB; provenanceerasure 83KB w/ PER apparatus). Slavonic search
 executed; fallback ruled. Sappho edition ruled. Papyri scope ruled (both, any order).
 Batch-A source files present in session /tmp only — NOT yet seated (session filesystems
-reset; refetch per source.json at seat time). Nothing of WS1–WS4 built yet.
+reset; refetch per source.json at seat time). WS1 Seat 01 josephus SEATED and minted (#1499, collation-gated, 12,423 sections).
 
 ## 6. NEXT
 
-WS1 Batch A, corpus 1: josephus — create data/corpora/josephus/, refetch the four Niese
-XMLs from PerseusDL pinned to a commit hash, normalize, manifest, source.json, mint,
-verify live. Then catullus, theocritus, septuagint-swete. Then Batch B in listed order.
+WS1 Batch A continues: catullus (Perseus phi0472, same pattern), then theocritus,
+then septuagint-swete. Then Batch B in listed order.
 Site workstreams unblock after their cited corpora seat.
 
 ## 7. RULING LOG

@@ -1,8 +1,8 @@
 {
   "chunk_number": 26,
   "first_deposit": 1441,
-  "last_deposit": 1498,
-  "count": 57,
+  "last_deposit": 1499,
+  "count": 58,
   "deposits": [
     {
       "deposit_number": 1441,
@@ -9086,6 +9086,146 @@
           "layer_3_content_hash": {
             "present": true,
             "canonical_hash": "d82b3e7a339ffdf93bb4fd56f73dda492a40f14002068f053c6d63173b1e2c23",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": false,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": false
+          }
+        },
+        "overall_conformance": "measurement_only"
+      }
+    },
+    {
+      "deposit_number": 1499,
+      "axn": "AXN:060E.DATASET.🔗🍄🕔🍁✏️☉",
+      "hex": "060E",
+      "family": "DATASET",
+      "emoji": "🔗🍄🕔🍁✏️☉",
+      "hash": "3379667743a77dd3a48698d1de62458686b6313850408337a7afe73a37112664",
+      "title": "EA-CORPORA-01 · Seat 01: Flavius Josephus — The Canonical Greek Corpus, Commit-Pinned, Normalized, Collation-Gated",
+      "creator": "Sharks, Lee",
+      "date": "2026-08-19",
+      "description": "First seating of the Ω build program's corpus workstream (EA-OMEGA-BUILD-01, #1498). The four works of canonical Josephus — Antiquitates Judaicae, Vita, Contra Apionem, De Bello Judaico — seated at alexanarch as verified, parsable primary text in the original Greek: Niese's edition via the Perseus Digital Library's grc2 files, fetched pinned to canonical-greekLit commit df40bf09, originals preserved byte-for-byte beside a normalized layer of flat reference-tagged lines (WORK book.section, tab, text; 12,423 sections total: AJ 7,376; BJ 4,001; CA 616; Vita 430), a source manifest recording repository, commit, edition, license, fetch date, and normalization rule, and a SHA-256 manifest over originals and text alike. Seating passed a collation gate before commit: three loci verified against the program's own tested readings — AJ 11.236 ἀχανὴς ἐπέπεσεν, BJ 1.444 ἀνεζωπυρεῖτο, AJ 6.337 ἄφωνος ὑπὸ λύπης — the corpus thereby certified continuous with the texts on which deposits #1493 through #1495 were adjudicated. Canonical seat: alexanarch data/corpora/josephus/; projections to reading sites follow the plan's projection rule, minted once here and mirrored by reference.",
+      "content_type": "Corpus seating",
+      "license": "Texts: public-domain edition via Perseus (CC BY-SA packaging); this record CC-BY-4.0",
+      "substrate": "Seating executed by TACHYON (Claude substrate) per EA-OMEGA-BUILD-01 under MANUS direction; the collation gate is automated and its assertions halted the build until passed.",
+      "root_axn": "AXN:060E.DATASET",
+      "axn_schema_version": "v2",
+      "protocol_version": "",
+      "axn_canonical": "3379667743a77dd3a48698d1de62458686b6313850408337a7afe73a37112664",
+      "clusters": [
+        "Instrumental",
+        "Organic",
+        "Temporal",
+        "Organic",
+        "Scriptural",
+        "Alchemical"
+      ],
+      "axn_reading": "Method -> Growth -> Duration -> Growth -> Text -> Transmutation",
+      "minted_at": "2026-08-19T16:37:58Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-060E-text.md",
+      "wiki_article": "EA-CORPORA-01 Seat 01 is the first corpus seating of the Crimson Hexagonal Archive's Ω build program, placing the four works of canonical Josephus — Antiquities, the Life, Against Apion, and the Jewish War — on alexanarch as verified, parsable primary text in Greek. The seating preserves Niese's edition via the Perseus Digital Library byte-for-byte, pinned to a specific source-repository commit, beside a normalized layer of 12,423 flat reference-tagged section lines suitable for alignment and search, with a source manifest recording repository, commit, edition, license, and normalization rule, and SHA-256 checksums over every file. Before commit, an automated collation gate verified three loci against the readings on which the program's Josephus papers were adjudicated — the queen's speechless fall at Antiquities 11.236, the re-fired eros at Bellum 1.444, and Saul's lost voice at Antiquities 6.337 — certifying that the texts tested and the texts hosted are the same letters. Alexanarch is the canonical seat; reading sites carry projections by reference under the work plan's projection rule. The seating pattern — pin, preserve, normalize, manifest, gate, mint — governs the seats that follow.",
+      "wiki_status": "AUTHORSHIP_REQUIRED",
+      "entities": [
+        {
+          "subject": "EA-CORPORA-01 · Seat 01: Flavius Josephus — The Canonical Greek Corpus, Commit-Pinned, Normalized, C",
+          "predicate": "created_by",
+          "object": "Sharks, Lee",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-01 · Seat 01: Flavius Josephus — The Canonical Greek Corpus, Commit-Pinned, Normalized, C",
+          "predicate": "is_type",
+          "object": "Corpus seating",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-01 · Seat 01: Flavius Josephus — The Canonical Greek Corpus, Commit-Pinned, Normalized, C",
+          "predicate": "belongs_to_family",
+          "object": "DATASET",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-01 · Seat 01: Flavius Josephus — The Canonical Greek Corpus, Commit-Pinned, Normalized, C",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "defines_concepts": [],
+      "keywords": [
+        "EA-CORPORA-01",
+        "corpus seating",
+        "Josephus",
+        "Niese",
+        "Perseus",
+        "canonical-greekLit",
+        "commit pin",
+        "SHA-256 manifest",
+        "collation gate",
+        "primary texts",
+        "parsable corpus"
+      ],
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 1499,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 1961,
+        "audited_at": "2026-08-19T16:37:58Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "references_concepts": [
+        "TACHYON"
+      ],
+      "references_concept_count": 1,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-060E.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-08-19T16:38:41.008238+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [],
+            "anchor_count": 0,
+            "orcid_in_body": false,
+            "creator_in_body": false,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": false,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 0
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "4accefb80b4c1511dc015e265f4fb635568b90407f1568892b71f102d9f6f19d",
             "hash_in_body": false,
             "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
           },
