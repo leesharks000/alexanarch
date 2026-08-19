@@ -1,0 +1,155 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://www.alexanarch.org/data/reception/schema.json",
+ "title": "EA-RECEPTION-01 v1.0 — the reception edge",
+ "description": "A typed, evidenced, versioned, attributed machine-readable assertion that one text carries a worked reception of another. Provenance restored as relation, not bibliography. Counterargument slots are mandatory: an edge that cannot carry its objections is advocacy, not apparatus.",
+ "type": "object",
+ "required": [
+  "id",
+  "source",
+  "witness",
+  "relation_type",
+  "operator_clauses",
+  "preserved",
+  "transformed",
+  "evidence",
+  "status",
+  "asserted_by",
+  "date",
+  "version",
+  "counterarguments"
+ ],
+ "properties": {
+  "id": {
+   "type": "string",
+   "description": "stable edge id, e.g. RE-0001"
+  },
+  "source": {
+   "type": "object",
+   "required": [
+    "label"
+   ],
+   "properties": {
+    "label": {
+     "type": "string"
+    },
+    "axn": {
+     "type": "string"
+    },
+    "seat": {
+     "type": "string",
+     "description": "EA-CORPORA-01 seat carrying the text"
+    }
+   }
+  },
+  "witness": {
+   "type": "object",
+   "required": [
+    "label"
+   ],
+   "properties": {
+    "label": {
+     "type": "string"
+    },
+    "axn": {
+     "type": "string"
+    },
+    "seat": {
+     "type": "string"
+    }
+   }
+  },
+  "relation_type": {
+   "enum": [
+    "quotation",
+    "translation",
+    "material-transform",
+    "doctrinal-compression",
+    "redactional-intensification",
+    "inversion",
+    "contested-carrier",
+    "tested-transform"
+   ]
+  },
+  "operator_clauses": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "clause ids from the frozen operator (#1494), e.g. C2, C6"
+  },
+  "preserved": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "transformed": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "evidence": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "locus"
+    ],
+    "properties": {
+     "locus": {
+      "type": "string"
+     },
+     "quote_ref": {
+      "type": "string"
+     },
+     "seat": {
+      "type": "string"
+     },
+     "deposit": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "status": {
+   "enum": [
+    "hypothesis",
+    "tested",
+    "replicated",
+    "contested"
+   ]
+  },
+  "direction_score": {
+   "type": "number",
+   "description": "per the #1495 rule where scored"
+  },
+  "asserted_by": {
+   "type": "string"
+  },
+  "date": {
+   "type": "string"
+  },
+  "version": {
+   "type": "string"
+  },
+  "counterarguments": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "minItems": 0,
+   "description": "mandatory slot; emptiness requires justification in notes"
+  },
+  "contamination_flags": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "notes": {
+   "type": "string"
+  }
+ }
+}
