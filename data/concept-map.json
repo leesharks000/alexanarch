@@ -3,14 +3,14 @@
   "name": "Concept Map — work-level identity and current-version resolution",
   "description": "Restores the concept-identifier function lost with the terminated Zenodo account. Alexanarch mints a fresh hex per deposit, so every version of a work is an independent object with no link to its siblings; a reader arriving at an old version cannot learn that a newer one exists. Each concept here names a work and points at its current version. Programme families — distinct works sharing an identifier — are listed separately and carry no version pointer, because conflating the two would resolve one work to another. Every family records the basis on which it was detected so any confidence tier can be discarded independently.",
   "generated_by": "scripts/build_concept_map.py",
-  "generated_at": "2026-08-19T16:38:53Z",
+  "generated_at": "2026-08-19T16:52:54Z",
   "totals": {
-    "deposits": 1498,
+    "deposits": 1499,
     "concepts": 64,
     "deposits_in_concepts": 145,
-    "singletons": 1353,
+    "singletons": 1354,
     "needs_review": 17,
-    "program_families": 43
+    "program_families": 44
   },
   "basis_counts": {
     "version/implicit": 40,
@@ -2986,6 +2986,28 @@
           "title": "A Body Prepared — EA-ARK-FICTION-01",
           "date": "2026-04-18",
           "record_url": "https://www.alexanarch.org/s/records/1257/"
+        }
+      ]
+    },
+    {
+      "program_id": "EA-CORPORA-01",
+      "program_url": "https://www.alexanarch.org/s/program/ea-corpora-01/",
+      "note": "Distinct works sharing a programme identifier. This is a collection, not a version family: no current-version pointer is asserted.",
+      "member_count": 2,
+      "members": [
+        {
+          "deposit_number": 1499,
+          "axn": "AXN:060E.DATASET.🔗🍄🕔🍁✏️☉",
+          "title": "EA-CORPORA-01 · Seat 01: Flavius Josephus — The Canonical Greek Corpus, Commit-Pinned, Normalized, Collation-Gated",
+          "date": "2026-08-19",
+          "record_url": "https://www.alexanarch.org/s/records/1499/"
+        },
+        {
+          "deposit_number": 1500,
+          "axn": "AXN:060F.DATASET.🌙🌻📚🪟💫⚪",
+          "title": "EA-CORPORA-01 · Seat 02: Catullus — The Witness Who Kept the Name, Seated as Deposit 1,500",
+          "date": "2026-08-19",
+          "record_url": "https://www.alexanarch.org/s/records/1500/"
         }
       ]
     },
