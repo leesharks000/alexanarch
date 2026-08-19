@@ -1,8 +1,8 @@
 {
   "chunk_number": 26,
   "first_deposit": 1441,
-  "last_deposit": 1499,
-  "count": 58,
+  "last_deposit": 1500,
+  "count": 59,
   "deposits": [
     {
       "deposit_number": 1441,
@@ -9226,6 +9226,146 @@
           "layer_3_content_hash": {
             "present": true,
             "canonical_hash": "4accefb80b4c1511dc015e265f4fb635568b90407f1568892b71f102d9f6f19d",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": false,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": false
+          }
+        },
+        "overall_conformance": "measurement_only"
+      }
+    },
+    {
+      "deposit_number": 1500,
+      "axn": "AXN:060F.DATASET.🌙🌻📚🪟💫⚪",
+      "hex": "060F",
+      "family": "DATASET",
+      "emoji": "🌙🌻📚🪟💫⚪",
+      "hash": "0c7249250ac7873779ab81782c18e63fdd829528cbd788aadd26fdb1d1bd9d4b",
+      "title": "EA-CORPORA-01 · Seat 02: Catullus — The Witness Who Kept the Name, Seated as Deposit 1,500",
+      "creator": "Sharks, Lee",
+      "date": "2026-08-19",
+      "description": "Second seating of the Ω build program's corpus workstream, landing on the archive's fifteen-hundredth deposit by the accident of sequence and kept there by the fitness of it: Catullus, the one witness in the entire attested reception chain of Sappho 31 whose attribution never died — carmen 51 transmitted for two millennia with its source-relation intact — seated as verified, parsable primary text in an archive built so that no other witness's name need die again. Merrill's edition via the Perseus Digital Library, fetched pinned to canonical-latinLit commit 422896dd, the original XML preserved byte-for-byte beside a line-normalized layer (2,311 reference-tagged lines across 116 poems, form: Cat poem.line, tab, text, editorial notes excluded), source manifest and SHA-256 checksums binding origin, edition, license, and rule. The collation gate verified before commit the exact readings on which the frozen operator's clause derivations stand (#1494): Ille mi par esse deo at the opening, simul te … adspexi at the instantaneity marker, lingua sed torpet and flamma demanat in the catalogue — with the voice-station lacuna preserved as transmitted. Canonical seat at alexanarch data/corpora/catullus/; projections by reference per the plan.",
+      "content_type": "Corpus seating",
+      "license": "Texts: public-domain edition via Perseus (CC BY-SA packaging); this record CC-BY-4.0",
+      "substrate": "Seating executed by TACHYON (Claude substrate) per EA-OMEGA-BUILD-01 under MANUS direction; collation gate automated, asserted before commit.",
+      "root_axn": "AXN:060F.DATASET",
+      "axn_schema_version": "v2",
+      "protocol_version": "",
+      "axn_canonical": "0c7249250ac7873779ab81782c18e63fdd829528cbd788aadd26fdb1d1bd9d4b",
+      "clusters": [
+        "Celestial",
+        "Organic",
+        "Scriptural",
+        "Architectural",
+        "Celestial",
+        "Signal"
+      ],
+      "axn_reading": "Origin -> Growth -> Text -> Foundation -> Origin -> Alarm",
+      "minted_at": "2026-08-19T16:51:55Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-060F-text.md",
+      "wiki_article": "EA-CORPORA-01 Seat 02 places the complete Catullus on alexanarch as verified, parsable primary text, and is the Crimson Hexagonal Archive's fifteen-hundredth deposit. The seating follows the pattern established by Seat 01: Merrill's edition via the Perseus Digital Library preserved byte-for-byte and pinned to a specific source commit, beside a line-normalized layer of 2,311 reference-tagged lines across 116 poems, with a source manifest and SHA-256 checksums binding edition, license, and normalization rule. An automated collation gate verified carmen 51 before commit at the loci on which the program's frozen operator clauses were derived — the opening Ille mi par esse deo, the instantaneity marker simul te adspexi, the numbed tongue and the flame beneath the limbs — with the transmitted lacuna at the voice-station preserved untouched. The record notes the fitness of the sequence: Catullus is the one witness in the attested Sappho 31 reception chain whose attribution survived transmission intact, and he takes the archive's round number in a project whose thesis is that keeping the name is an engineering problem with a solution. The canonical seat resides at data/corpora/catullus; reading sites carry projections by reference.",
+      "wiki_status": "AUTHORSHIP_REQUIRED",
+      "entities": [
+        {
+          "subject": "EA-CORPORA-01 · Seat 02: Catullus — The Witness Who Kept the Name, Seated as Deposit 1,500",
+          "predicate": "created_by",
+          "object": "Sharks, Lee",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-01 · Seat 02: Catullus — The Witness Who Kept the Name, Seated as Deposit 1,500",
+          "predicate": "is_type",
+          "object": "Corpus seating",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-01 · Seat 02: Catullus — The Witness Who Kept the Name, Seated as Deposit 1,500",
+          "predicate": "belongs_to_family",
+          "object": "DATASET",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-01 · Seat 02: Catullus — The Witness Who Kept the Name, Seated as Deposit 1,500",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "defines_concepts": [],
+      "keywords": [
+        "EA-CORPORA-01",
+        "corpus seating",
+        "Catullus",
+        "carmen 51",
+        "Merrill",
+        "Perseus",
+        "canonical-latinLit",
+        "commit pin",
+        "collation gate",
+        "deposit 1500",
+        "Sappho 31 reception"
+      ],
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 1500,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 1834,
+        "audited_at": "2026-08-19T16:51:55Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "references_concepts": [
+        "TACHYON"
+      ],
+      "references_concept_count": 1,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-060F.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-08-19T16:52:42.093507+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [],
+            "anchor_count": 0,
+            "orcid_in_body": false,
+            "creator_in_body": false,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": false,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 0
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "a32599e91613533f37413932ba8ebfcddf27bc97fb93ae4c58c8bef25d91778b",
             "hash_in_body": false,
             "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
           },

@@ -100,12 +100,14 @@ probed (revelationfirst 40KB w/ /unfolding/ series + Sappho section standing;
 machinemediation 53KB; provenanceerasure 83KB w/ PER apparatus). Slavonic search
 executed; fallback ruled. Sappho edition ruled. Papyri scope ruled (both, any order).
 Batch-A source files present in session /tmp only — NOT yet seated (session filesystems
-reset; refetch per source.json at seat time). WS1 Seat 01 josephus SEATED and minted (#1499, collation-gated, 12,423 sections).
+reset; refetch per source.json at seat time). WS1 Seat 01 josephus SEATED (#1499, 12,423 sections). Seat 02 catullus SEATED (#1500,
+2,311 lines, gated on carmen 51; the round number, the witness who kept the name).
 
 ## 6. NEXT
 
-WS1 Batch A continues: catullus (Perseus phi0472, same pattern), then theocritus,
-then septuagint-swete. Then Batch B in listed order.
+WS1 Batch A continues: theocritus (Perseus tlg0005, gate on Idyll 2.82-90), then
+septuagint-swete (sleeptillseven/LXX-Swete whole, gate on Est Addition D + Mic 4.9-10
++ Isa 66.7). Then Batch B in listed order.
 Site workstreams unblock after their cited corpora seat.
 
 ## 7. RULING LOG
