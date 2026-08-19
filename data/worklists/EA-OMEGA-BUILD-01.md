@@ -20,7 +20,13 @@ Layout per corpus: alexanarch/data/corpora/<slug>/{original/ (as fetched), text/
 (normalized, ref-parsable, one file per book), source.json (repo|URL, commit, edition,
 editor, license, fetch-date), MANIFEST.sha256}. Each seating minted as a corpus deposit
 (family DATASET) with verification note (checksums + spot-collation of ≥3 loci against
-printed refs). Genre is metadata, never a wall.
+printed refs). Genre is metadata, never a wall. PROJECTIONS (ruled 2026-08-19): alexanarch is the
+canonical seat; sites carry projections of the corpora their theses read from —
+revelationfirst: greek-nt, septuagint, hebrew-bible, josephus, slavonic-josephus,
+philo, papyri(NT); the classical set (sappho, catullus, theocritus, longinus, plato)
+projects with the transform surfaces that cite it; machinemediation carries schema
+examples, not corpora. Projection = copy of text/ + source.json + manifest, minted
+canonically once, mirrored by reference.
 
 BATCH A — fetched and battle-tested this session; seat first:
   josephus      PerseusDL tlg0526 (Niese, PD) · AJ, BJ, Vita, CA · used by #1493
@@ -108,4 +114,4 @@ Site workstreams unblock after their cited corpora seat.
 2026-08-19 MANUS: adopted all (three site designs + corpora program) · Sappho = PD base
 + diplomatic layer · papyri = Sappho AND Oxy/NT, order immaterial · Slavonic = one more
 hidden-corner pass (EXECUTED, negative) then curated-pericope fallback (IN FORCE) ·
-this work plan to exist as continuity instrument.
+this work plan to exist as continuity instrument. · corpora seated at multiple locations: alexanarch canonical, per-site projections (map in §1).
