@@ -1,0 +1,25 @@
+{
+ "corpus": "papyri",
+ "seat": "EA-CORPORA-01/11",
+ "origin": {
+  "repo": "papyri/idp.data",
+  "paths": [
+   "DCLP items per catalog.json (28 Sappho-circle; P.Oxy 8.1079 = 𝔓18; P.Oxy 66.4499 = 𝔓115)"
+  ]
+ },
+ "edition": "Digital Corpus of Literary Papyri records (Duke Databank)",
+ "license": "CC BY (Duke Databank / papyri.info data)",
+ "fetched": "2026-08-19",
+ "works": {
+  "catalog": "catalog.json",
+  "transcriptions": "text/<group>-TM<n>.txt where DCLP carries them"
+ },
+ "normalization": "edition-div extraction: lb→lines, gaps and supplied marked; catalog-grade records retained even where transcription absent upstream",
+ "verified_loci": [
+  "TM 59081 (Aeolic lyric, 30 transcription lines)",
+  "TM 61636 = 𝔓18 (Apocalypse, transcription present)"
+ ],
+ "notes": "DCLP transcription coverage is partial by upstream design, notably for NT papyri; editio-princeps PD scans queued for deep texts (𝔓115 record seated catalog-grade)",
+ "items_total": 30,
+ "transcription_lines_total": 108
+}
