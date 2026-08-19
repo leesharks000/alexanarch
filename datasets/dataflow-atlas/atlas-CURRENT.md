@@ -202,6 +202,18 @@ Rule added: **an atlas that maps only what a repository contains is not a map of
 
 Full detail: `atlas-v1.7-addendum.md`.
 
+## The Surface Map data seat — 2026-08-19
+
+**A new canonical seat, `data/surface-map/`**, holds the Crimson Hexagon Surface Map:
+39 loci with authored plane coordinates, the R0–R3 relation triage (X:ICHABOD at degree 0
+by constraint), the eight-stage census derivation record, and the preserved 2026-08-17
+static projection as tarball. crimsonhexagonal.org **projects** this seat (`/map/`,
+`surface_map.json`, `surface_relations.json`) — an external dependency under the v1.7 rule.
+Seat versions by filename; supersession is by new version, never silent edit.
+Governing deposit: AXN:0620.ARCHIVAL.🌗⚡📌🧭🌠💧 (#1517).
+
+Full detail: `atlas-v1.8-addendum.md`.
+
 ## Dataset navigation, audited as rendered — 2026-08-15
 
 The tab and its subpages had accreted rather than been designed. **Two subpages 404'd**

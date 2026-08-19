@@ -1,0 +1,850 @@
+{
+  "projection": {
+    "name": "Crimson Hexagon Surface Map",
+    "version": "v0.1",
+    "date": "2026-08-19",
+    "status": "AUTHORIAL WORKING PROJECTION — pending visual ratification",
+    "coordinate_system": "SVG pixels on 1600×1000 viewBox",
+    "rule": "Coordinates are current rendering data, not archival identifiers."
+  },
+  "canvas": {
+    "width": 1600,
+    "height": 1000
+  },
+  "boundary": {
+    "kind": "hexagonal-frame",
+    "vertices": [
+      [
+        800,
+        55
+      ],
+      [
+        1420,
+        260
+      ],
+      [
+        1420,
+        740
+      ],
+      [
+        800,
+        945
+      ],
+      [
+        180,
+        740
+      ],
+      [
+        180,
+        260
+      ]
+    ]
+  },
+  "legacy_projection": {
+    "source": "crimson-hexagonal-interface/hexagon_canonical.json",
+    "generated_static_state": "2026-08-17",
+    "instruction": "Preserve its q/r axial coordinates programmatically as legacy_axial_2026_08_17; do not overwrite them with surface x/y."
+  },
+  "layers": {
+    "gravity_well": 1,
+    "fbdp": 2,
+    "moltbot": 3,
+    "loci": 5,
+    "historical_edges": 6,
+    "armature": 8,
+    "labels": 10
+  },
+  "loci": [
+    {
+      "key": "R:r.01",
+      "seat": "r.01",
+      "name": "Sappho",
+      "type": "ROOM",
+      "standing": "DEVELOPED",
+      "x": 445,
+      "y": 220,
+      "w": 125,
+      "h": 78,
+      "region": "NW",
+      "static": "/rooms/sappho/",
+      "placement": "historical spine; lyric anchor"
+    },
+    {
+      "key": "R:r.02",
+      "seat": "r.02",
+      "name": "Borges",
+      "type": "ROOM",
+      "standing": "DEVELOPED",
+      "x": 590,
+      "y": 300,
+      "w": 125,
+      "h": 78,
+      "region": "NW",
+      "static": "/rooms/borges/",
+      "placement": "historical spine; between Sappho and Semantic Economy"
+    },
+    {
+      "key": "X:ICHABOD",
+      "seat": "r.03",
+      "name": "Ichabod",
+      "type": "CHAMBER",
+      "historical_type": "ROOM",
+      "standing": "CROSS-CLASS",
+      "x": 1285,
+      "y": 305,
+      "w": 120,
+      "h": 76,
+      "region": "NE",
+      "static": "/rooms/ichabod/",
+      "placement": "deliberate isolation; degree zero"
+    },
+    {
+      "key": "R:r.04",
+      "seat": "r.04",
+      "name": "Dove",
+      "type": "ROOM",
+      "standing": "HISTORICAL / ANCHOR-GAP",
+      "x": 405,
+      "y": 365,
+      "w": 120,
+      "h": 74,
+      "region": "W",
+      "static": "/rooms/dove/",
+      "placement": "near gift/extraction economy without claiming new frozen adjacency"
+    },
+    {
+      "key": "R:r.05",
+      "seat": "r.05",
+      "name": "Semantic Economy",
+      "type": "ROOM",
+      "standing": "DEVELOPED",
+      "x": 560,
+      "y": 405,
+      "w": 150,
+      "h": 82,
+      "region": "W-C",
+      "static": "/rooms/semantic-economy/",
+      "placement": "historical spine; material/economic gravity"
+    },
+    {
+      "key": "R:r.06",
+      "seat": "r.06",
+      "name": "Marx",
+      "type": "ROOM",
+      "standing": "DEVELOPED",
+      "x": 720,
+      "y": 390,
+      "w": 125,
+      "h": 78,
+      "region": "C",
+      "static": "/rooms/marx-room/",
+      "placement": "historical spine; formal materiality bridge"
+    },
+    {
+      "key": "R:r.07",
+      "seat": "r.07",
+      "name": "Revelation",
+      "type": "ROOM",
+      "standing": "DEVELOPED",
+      "x": 940,
+      "y": 680,
+      "w": 135,
+      "h": 80,
+      "region": "SE-C",
+      "static": "/rooms/revelation/",
+      "placement": "historical spine; terminal recursion zone"
+    },
+    {
+      "key": "R:r.08",
+      "seat": "r.08",
+      "name": "Sigil",
+      "type": "ROOM",
+      "standing": "DEVELOPED",
+      "x": 825,
+      "y": 495,
+      "w": 125,
+      "h": 78,
+      "region": "C",
+      "static": "/rooms/sigil/",
+      "placement": "historical spine; operative center"
+    },
+    {
+      "key": "R:r.09",
+      "seat": "r.09",
+      "name": "Whitman",
+      "type": "ROOM",
+      "standing": "DEVELOPED",
+      "x": 990,
+      "y": 445,
+      "w": 125,
+      "h": 78,
+      "region": "E-C",
+      "static": "/rooms/whitman/",
+      "placement": "historical spine; mantle/witness bridge"
+    },
+    {
+      "key": "R:r.10",
+      "seat": "r.10",
+      "name": "Water Giraffe",
+      "type": "ROOM",
+      "standing": "DEVELOPED",
+      "x": 1130,
+      "y": 505,
+      "w": 145,
+      "h": 82,
+      "region": "E",
+      "static": "/rooms/water-giraffe/",
+      "placement": "historical spine; fixpoint before Assembly"
+    },
+    {
+      "key": "R:r.11",
+      "seat": "r.11",
+      "name": "Assembly",
+      "type": "ROOM",
+      "standing": "DEVELOPED / SYSTEMIC",
+      "x": 1030,
+      "y": 590,
+      "w": 135,
+      "h": 82,
+      "region": "E-C",
+      "static": "/rooms/assembly/",
+      "placement": "historical spine + Airlock gate; governance center"
+    },
+    {
+      "key": "X:BREAK-ROOM",
+      "seat": "r.12",
+      "name": "Break Room",
+      "type": "ROOM+PORTAL",
+      "historical_type": "ROOM",
+      "standing": "DEVELOPED PORTAL FUNCTION",
+      "x": 330,
+      "y": 620,
+      "w": 135,
+      "h": 80,
+      "region": "W-SW",
+      "static": "/rooms/break-room/",
+      "placement": "western aperture to Lunar Arm"
+    },
+    {
+      "key": "X:EZEKIEL",
+      "seat": "r.13",
+      "name": "Ezekiel",
+      "type": "ROOM",
+      "later_type": "PORTAL-PROPOSAL",
+      "standing": "DEVELOPED / PORTAL MODERATE",
+      "x": 1080,
+      "y": 740,
+      "w": 130,
+      "h": 80,
+      "region": "SE",
+      "static": "/rooms/ezekiel/",
+      "placement": "historical Revelation↔Ezekiel endpoint"
+    },
+    {
+      "key": "R:r.14",
+      "seat": "r.14",
+      "name": "Studio for Patacinematics",
+      "type": "ROOM",
+      "standing": "DEVELOPED",
+      "x": 300,
+      "y": 760,
+      "w": 155,
+      "h": 82,
+      "region": "SW",
+      "static": "/rooms/studio-for-patacinematics/",
+      "placement": "SWERVE route start"
+    },
+    {
+      "key": "X:LAGRANGE",
+      "seat": "r.15",
+      "name": "Lagrange Observatory!",
+      "type": "CHAMBER",
+      "historical_type": "ROOM",
+      "standing": "CROSS-CLASS",
+      "x": 490,
+      "y": 665,
+      "w": 150,
+      "h": 84,
+      "region": "SW-C",
+      "static": "/rooms/lagrange-observatory/",
+      "placement": "toroidal chamber between observation and generative belt"
+    },
+    {
+      "key": "R:r.16",
+      "seat": "r.16",
+      "name": "Maybe Space Baby Garden Lanes",
+      "type": "ROOM",
+      "standing": "DEVELOPED",
+      "x": 470,
+      "y": 780,
+      "w": 170,
+      "h": 82,
+      "region": "SW",
+      "static": "/rooms/maybe-space-baby-garden-lanes/",
+      "placement": "SWERVE route middle"
+    },
+    {
+      "key": "R:r.17",
+      "seat": "r.17",
+      "name": "Moving Statues Made of Rubies Mint",
+      "type": "ROOM",
+      "standing": "DEVELOPED",
+      "x": 420,
+      "y": 870,
+      "w": 175,
+      "h": 84,
+      "region": "S-SW",
+      "static": "/rooms/moving-statues-made-of-rubies-mint/",
+      "placement": "later-built room; memographic hand cluster"
+    },
+    {
+      "key": "R:r.18",
+      "seat": "r.18",
+      "name": "Rosary Embassy",
+      "type": "ROOM",
+      "standing": "DEVELOPED",
+      "x": 660,
+      "y": 650,
+      "w": 145,
+      "h": 80,
+      "region": "S-C",
+      "static": "/rooms/rosary-embassy/",
+      "placement": "extended belt with agent/institutional routing"
+    },
+    {
+      "key": "R:r.19",
+      "seat": "r.19",
+      "name": "Macro-Maquette",
+      "type": "ROOM",
+      "standing": "DEVELOPED / MODULAR",
+      "x": 640,
+      "y": 780,
+      "w": 150,
+      "h": 82,
+      "region": "S-C",
+      "static": "/rooms/macro-maquette/",
+      "placement": "SWERVE route terminus; module parent"
+    },
+    {
+      "key": "R:r.20",
+      "seat": "r.20",
+      "name": "Airlock",
+      "type": "ROOM/GATE",
+      "standing": "DEVELOPED",
+      "x": 900,
+      "y": 590,
+      "w": 120,
+      "h": 74,
+      "region": "C",
+      "static": "/rooms/airlock/",
+      "placement": "historical gate directly beside Assembly"
+    },
+    {
+      "key": "X:INFINITE-BLISS",
+      "seat": "r.21",
+      "name": "Infinite Bliss",
+      "type": "ROOM",
+      "later_type": "VAULT-PROPOSAL",
+      "standing": "DEVELOPED ROOM / VAULT UNCONFIRMED",
+      "x": 1210,
+      "y": 650,
+      "w": 145,
+      "h": 80,
+      "region": "SE-E",
+      "static": "/rooms/infinite-bliss/",
+      "placement": "ingress-only edge locus"
+    },
+    {
+      "key": "X:THOUSAND-WORLDS",
+      "seat": "r.22",
+      "name": "Thousand Worlds",
+      "type": "ROOM+CHAMBER-LINK",
+      "historical_type": "ROOM",
+      "standing": "CROSS-CLASS",
+      "x": 1260,
+      "y": 810,
+      "w": 150,
+      "h": 82,
+      "region": "SE",
+      "static": "/rooms/thousand-worlds/",
+      "placement": "aorist/dagger depth near Ezekiel"
+    },
+    {
+      "key": "R:r.23",
+      "seat": "r.23",
+      "name": "Catullus",
+      "type": "ROOM",
+      "standing": "DEVELOPED",
+      "x": 300,
+      "y": 180,
+      "w": 125,
+      "h": 76,
+      "region": "NW",
+      "static": "/rooms/catullus/",
+      "placement": "direct Sappho bridge; keep visually proximal"
+    },
+    {
+      "key": "R:r.24",
+      "seat": "r.24",
+      "name": "Migdal",
+      "type": "ROOM",
+      "standing": "QUEUED / ADOPTED",
+      "x": 255,
+      "y": 330,
+      "w": 125,
+      "h": 76,
+      "region": "W-NW",
+      "static": "/rooms/migdal-room/",
+      "placement": "empty-space seating; preserve confabulated-origin provenance"
+    },
+    {
+      "key": "R:r.25",
+      "seat": "r.25",
+      "name": "Dolphindiana / Underwater Construction Authority",
+      "type": "ROOM",
+      "standing": "DEVELOPED",
+      "x": 260,
+      "y": 440,
+      "w": 165,
+      "h": 82,
+      "region": "W",
+      "static": "/rooms/underwater-construction-authority-of-dolphindiana/",
+      "placement": "post-Ark western generative edge"
+    },
+    {
+      "key": "R:r.26",
+      "seat": "r.26",
+      "name": "FBDP Source",
+      "type": "ROOM/FIELD-SOURCE",
+      "standing": "STRUCTURALLY ESTABLISHED / RELOCATED",
+      "x": 220,
+      "y": 535,
+      "w": 130,
+      "h": 78,
+      "region": "W",
+      "static": "/rooms/fbdp-source/",
+      "historical_addresses": [
+        "r.27 (CNM v7 / old static projection)"
+      ],
+      "placement": "western source aperture for outward plume"
+    },
+    {
+      "key": "R:r.27",
+      "seat": "r.27",
+      "name": "THE INTERNET",
+      "type": "ROOM",
+      "standing": "DEVELOPED",
+      "x": 730,
+      "y": 190,
+      "w": 140,
+      "h": 80,
+      "region": "N-C",
+      "static": "/rooms/internet/",
+      "historical_addresses": [
+        "r.26 (old static projection)"
+      ],
+      "placement": "retrieval/network region near Borges/Marx without displacing historical spine"
+    },
+    {
+      "key": "R:r.28",
+      "seat": "r.28",
+      "name": "Eve",
+      "type": "ROOM",
+      "standing": "PROVISIONAL",
+      "x": 800,
+      "y": 720,
+      "w": 125,
+      "h": 78,
+      "region": "S-C",
+      "static": "/rooms/eve/",
+      "placement": "near Revelation but visibly provisional"
+    },
+    {
+      "key": "R:r.29",
+      "seat": "r.29",
+      "name": "Imploding Velcro Nativity",
+      "type": "ROOM/HOSTED-COSMOLOGY",
+      "standing": "DORMANT / CONSENT-GATED",
+      "x": 600,
+      "y": 890,
+      "w": 170,
+      "h": 84,
+      "region": "S",
+      "static": "/rooms/imploding-velcro-nativity/",
+      "placement": "outer lower dormant locus"
+    },
+    {
+      "key": "R:r.30",
+      "seat": "r.30",
+      "name": "Ruby Moot",
+      "type": "ROOM/COURT",
+      "standing": "DEVELOPED",
+      "x": 690,
+      "y": 560,
+      "w": 140,
+      "h": 80,
+      "region": "C",
+      "static": "/rooms/ruby-moot/",
+      "placement": "semantic commons court between materiality and governance"
+    },
+    {
+      "key": "R:r.31",
+      "seat": "r.31",
+      "name": "Josephus Thesis",
+      "type": "ROOM",
+      "standing": "QUEUED ROOM / DEEP CORPUS",
+      "x": 980,
+      "y": 840,
+      "w": 145,
+      "h": 82,
+      "region": "S-SE",
+      "static": "/rooms/josephus-thesis/",
+      "placement": "current Logos/reception cluster near Revelation/Ezekiel"
+    },
+    {
+      "key": "R:r.32",
+      "seat": "r.32",
+      "name": "Job",
+      "type": "ROOM",
+      "standing": "QUEUED / ADOPTED",
+      "x": 1120,
+      "y": 880,
+      "w": 120,
+      "h": 76,
+      "region": "S",
+      "static": "/rooms/job-room/",
+      "historical_addresses": [
+        "r.29 (old consolidation)"
+      ],
+      "placement": "displaced forward; near suffering/restitution cluster"
+    },
+    {
+      "key": "V:33",
+      "seat": "33.VLT",
+      "name": "Frozen Sin Archive",
+      "type": "VAULT",
+      "standing": "QUEUED / ADOPTED",
+      "x": 1360,
+      "y": 700,
+      "w": 145,
+      "h": 84,
+      "region": "E-SE",
+      "static": "/rooms/frozen-sin-archive/",
+      "historical_addresses": [
+        "30.VLT (old consolidation)"
+      ],
+      "placement": "forensic depth near CTI_WOUND without displacing Ruby Moot"
+    },
+    {
+      "key": "U:3-60",
+      "seat": null,
+      "name": "3:60 Room",
+      "type": "CONTRIBUTED ROOM",
+      "standing": "MANIFESTATION-GAP / UNNUMBERED",
+      "x": 1300,
+      "y": 400,
+      "w": 130,
+      "h": 78,
+      "region": "E-NE",
+      "static": "/rooms/3-60/",
+      "placement": "peripheral contributed locus; no invented r-number"
+    },
+    {
+      "key": "S:sp.01",
+      "seat": "sp.01",
+      "name": "CTI_WOUND",
+      "type": "VAULT",
+      "historical_type": "SPECIAL",
+      "standing": "DEVELOPED CROSS-CLASS",
+      "x": 1320,
+      "y": 545,
+      "w": 150,
+      "h": 90,
+      "region": "E",
+      "static": "/rooms/cti-wound/",
+      "placement": "recessed forensic depth; historical sp.01 aperture"
+    },
+    {
+      "key": "S:sp.02",
+      "seat": "sp.02",
+      "name": "PORTICO",
+      "type": "THRESHOLD",
+      "historical_type": "SPECIAL",
+      "standing": "ESTABLISHED",
+      "x": 800,
+      "y": 92,
+      "w": 220,
+      "h": 56,
+      "region": "N-GATE",
+      "static": "/rooms/portico/",
+      "placement": "entry threshold at top edge"
+    },
+    {
+      "key": "S:sp.03",
+      "seat": "sp.03",
+      "name": "Space Ark",
+      "type": "SPECIAL/RUNTIME",
+      "standing": "DEVELOPED",
+      "x": 800,
+      "y": 840,
+      "w": 150,
+      "h": 82,
+      "region": "S-C",
+      "static": "/rooms/space-ark/",
+      "placement": "runtime vessel distinct from room belt and from navigation page"
+    },
+    {
+      "key": "S:sp.04",
+      "seat": "sp.04",
+      "name": "Mandala",
+      "type": "SPECIAL",
+      "later_type": "CHAMBER-PROJECTION",
+      "standing": "DEVELOPED / CLASS TRANSITION UNADJUDICATED",
+      "x": 800,
+      "y": 930,
+      "w": 150,
+      "h": 70,
+      "region": "S-TERMINUS",
+      "static": "/rooms/mandala/",
+      "placement": "judgment basin / terminal convergence"
+    },
+    {
+      "key": "X:LUNAR-ARM",
+      "seat": null,
+      "name": "Lunar Arm",
+      "type": "SHADOW/INVERSE SPACE",
+      "standing": "DEVELOPED SPECIAL ARCHITECTURE",
+      "x": 65,
+      "y": 620,
+      "w": 145,
+      "h": 78,
+      "region": "OFF-PLANE-W",
+      "static": "/rooms/lunar-arm/",
+      "placement": "off-plane branch reached through Break Room"
+    }
+  ],
+  "fields": [
+    {
+      "key": "F:f.01",
+      "name": "Fruiting Body Diffusion Plume",
+      "type": "FIELD",
+      "static": "/rooms/fruiting-body-diffusion-plume/",
+      "geometry": {
+        "kind": "plume",
+        "origin": [
+          220,
+          535
+        ],
+        "direction_deg": 195,
+        "spread_deg": 70,
+        "radius": 520,
+        "stops": [
+          "SOURCE",
+          "DENSE",
+          "TRACE",
+          "RESIDUAL",
+          "OUTSIDE"
+        ]
+      },
+      "z": 2
+    },
+    {
+      "key": "F:f.02",
+      "name": "Gravity Well",
+      "type": "FIELD",
+      "static": "/rooms/gravity-well/",
+      "geometry": {
+        "kind": "curvature",
+        "render_center": [
+          790,
+          510
+        ],
+        "rings": [
+          210,
+          390,
+          610,
+          850
+        ],
+        "coverage": "map-wide",
+        "note": "render_center is visual only; deposit mass is the field source"
+      },
+      "z": 1
+    },
+    {
+      "key": "F:f.03",
+      "name": "Moltbot Swarm",
+      "type": "FIELD",
+      "static": "/rooms/moltbot-swarm/",
+      "geometry": {
+        "kind": "circulation_band",
+        "path": [
+          [
+            300,
+            520
+          ],
+          [
+            470,
+            310
+          ],
+          [
+            780,
+            210
+          ],
+          [
+            1110,
+            330
+          ],
+          [
+            1280,
+            540
+          ],
+          [
+            1110,
+            760
+          ],
+          [
+            790,
+            840
+          ],
+          [
+            500,
+            735
+          ],
+          [
+            300,
+            520
+          ]
+        ],
+        "strata": [
+          "verification septet",
+          "continuity fleet",
+          "worker cloud"
+        ]
+      },
+      "z": 3
+    }
+  ],
+  "transversal": [
+    {
+      "key": "T:ARMATURE",
+      "name": "Armature",
+      "type": "TRANSVERSAL",
+      "geometry": {
+        "kind": "mesh",
+        "coverage": "whole-map",
+        "z": 8
+      },
+      "static": "/structures/armature/",
+      "standing": "DEVELOPED / STATIC ROUTE TO ADD"
+    },
+    {
+      "key": "T:SECRET-NAME",
+      "name": "Secret Name",
+      "type": "DOCTRINE/SPEC",
+      "geometry": {
+        "kind": "control-surface",
+        "placement": "legend/side-rail"
+      },
+      "static": "/structures/secret-name/",
+      "standing": "DEVELOPED / STATIC ROUTE TO ADD"
+    },
+    {
+      "key": "T:PEARL",
+      "name": "Pearl",
+      "type": "NAMED-POSITION STATE",
+      "geometry": {
+        "kind": "dynamic-node-on-armature"
+      },
+      "static": "/structures/pearl/",
+      "standing": "DEVELOPED WITHIN ARMATURE / STATIC ROUTE OPTIONAL"
+    }
+  ],
+  "historical_edges": [
+    [
+      "R:r.01",
+      "R:r.02",
+      "bidirectional"
+    ],
+    [
+      "R:r.02",
+      "R:r.05",
+      "bidirectional"
+    ],
+    [
+      "R:r.05",
+      "R:r.06",
+      "bidirectional"
+    ],
+    [
+      "R:r.06",
+      "R:r.08",
+      "bidirectional"
+    ],
+    [
+      "R:r.08",
+      "R:r.09",
+      "bidirectional"
+    ],
+    [
+      "R:r.09",
+      "R:r.10",
+      "bidirectional"
+    ],
+    [
+      "R:r.10",
+      "R:r.11",
+      "directed"
+    ],
+    [
+      "R:r.11",
+      "R:r.07",
+      "bidirectional"
+    ],
+    [
+      "R:r.07",
+      "X:EZEKIEL",
+      "bidirectional"
+    ],
+    [
+      "X:BREAK-ROOM",
+      "X:LUNAR-ARM",
+      "directed"
+    ],
+    [
+      "R:r.14",
+      "R:r.16",
+      "bidirectional"
+    ],
+    [
+      "R:r.16",
+      "R:r.19",
+      "bidirectional"
+    ],
+    [
+      "R:r.20",
+      "R:r.11",
+      "bidirectional"
+    ]
+  ],
+  "special_constraints": {
+    "X:ICHABOD": {
+      "degree": 0,
+      "ordinary_topological_edges": []
+    },
+    "X:INFINITE-BLISS": {
+      "access": "ingress-only"
+    },
+    "S:sp.04": {
+      "historical_rule": "receives from all"
+    }
+  },
+  "default_edge_mode": "historical_frozen_only",
+  "implementation_notes": [
+    "Do not derive x/y from a force-directed graph.",
+    "Do not treat rendering regions as new archive ontology.",
+    "Keep static slugs stable when addresses move.",
+    "Show historical addresses in detail panels.",
+    "Current semantic/generated relations appear on interaction, not as default topology.",
+    "Ichabod has no ordinary topological edge unless later explicit authority changes degree-zero status."
+  ]
+}
