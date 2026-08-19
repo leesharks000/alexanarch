@@ -48,10 +48,18 @@ ROOT = Path(__file__).resolve().parent.parent
 def registry_head():
     reg = json.loads((ROOT / 'data' / 'registry.json').read_text())
     deposits = reg['deposits']
+    gaps = (reg.get('known_gaps') or {}).get('deposit_numbers') or []
     return {
         'head': max(d.get('deposit_number', 0) for d in deposits),
         'count': len(deposits),
         'declared_total': reg.get('total_deposits'),
+        # Extent = how many entries exist. With declared gaps, head - len(gaps)
+        # is the exact expected extent; an UNdeclared gap still fails, which is
+        # the point: a machine cannot distinguish a stale count from a true one,
+        # so every gap must be declared or healed. Highest-record claims still
+        # compare to head.
+        'gaps': gaps,
+        'expected_extent': max(d.get('deposit_number', 0) for d in deposits) - len(gaps),
     }
 
 
@@ -107,13 +115,14 @@ def main():
                 # exists to catch.
                 failures.append('%-28s UNREADABLE: %s' % (name, k.lstrip('_').replace('_', ' ')))
                 continue
-            if v != head:
-                failures.append('%-28s %-34s %s  (registry head %d)' % (name, k, v, head))
+            if v != r['expected_extent']:
+                failures.append('%-28s %-34s %s  (expected extent %d = head %d - %d declared gap(s))'
+                                % (name, k, v, r['expected_extent'], head, len(r['gaps'])))
     if r['declared_total'] not in (None, r['count']):
         failures.append('%-28s %-34s %s  (actual entries %d)'
                         % ('data/registry.json', 'total_deposits', r['declared_total'], r['count']))
     if not quiet:
-        print('registry head: %d  (entries %d)' % (head, r['count']))
+        print('registry head: %d  (entries %d, declared gaps %d, expected extent %d)' % (head, r['count'], len(r['gaps']), r['expected_extent']))
         for name, vals in surfaces:
             shown = ', '.join('%s=%s' % (k, v) for k, v in vals.items() if not k.startswith('_')) or '—'
             print('  %-28s %s' % (name, shown))
