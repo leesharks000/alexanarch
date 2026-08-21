@@ -15,7 +15,7 @@
   "depositor_holds": "The depositor's own original plus the Seed A sidecar can prove the work anywhere, with or without this archive. That is the point of splitting the identifier in two."
  },
  "retrieval": "https://www.alexanarch.org/data/symbolon-registry/files/489c4ef06a86d208-image__27_.png",
- "note": "The registry witnesses the tuple and its internal consistency (glyphs recomputed from hashes at ingest). Seed B was not seen; verification against bytes is a separate act per SPEC §9.",
+ "note": "The registry witnesses the tuple and its internal consistency (glyphs recomputed from hashes at ingest). Seed B was not seen; verification against bytes is a separate act per SPEC §9. [Stamp re-applied 2026-08-21; AXN1 refreshed to the current stamped form. Sealed core (AXN0) unchanged.]",
  "spec": "AXN-SYMBOLON-SPEC v0.2 · https://www.alexanarch.org/s/records/1432/",
  "tuple": {
   "axn0": {
@@ -23,8 +23,8 @@
    "sha256": "489c4ef06a86d20800e88f3c8576e2eaca9e097885e47d73fbd87d11bad65bd4"
   },
   "axn1": {
-   "glyphs": "➕🕚♆🏗️♻️🌿",
-   "sha256": "906ca621fe17114b3b359df62c4cae988469db15bc73673a71a9355674b3223b"
+   "glyphs": "📚🟣🔗🎆🌊♍",
+   "sha256": "49c633e70fae91f04bd9268c9101dc3e20dc6a587194d75fae20a75051aeb8f6"
   }
  },
  "position_note": "The hex position is a registry address allocated from the shared AXN sequence (data/symbolon-registry/allocation.json). An address is not a verification.",
@@ -67,5 +67,18 @@
   "generator": "https://www.alexanarch.org/mint/stamp/ (client-side; WebCrypto)",
   "family": "GENERATIVE",
   "registration": "kernel is authority-independent; registry witnessing via https://www.alexanarch.org/deposit/ or by sending this sidecar to the archive"
- }
+ },
+ "stamp_history": [
+  {
+   "axn1": {
+    "glyphs": "➕🕚♆🏗️♻️🌿",
+    "sha256": "906ca621fe17114b3b359df62c4cae988469db15bc73673a71a9355674b3223b"
+   },
+   "until": "2026-08-21T23:57:52.552Z"
+  },
+  {
+   "axn1_replaced": "906ca621fe17114b3b359df62c4cae988469db15bc73673a71a9355674b3223b",
+   "at": "2026-08-21T23:57:52.552Z"
+  }
+ ]
 }
