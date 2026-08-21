@@ -744,7 +744,10 @@ def regenerate_wiki(reg, dry_run=False):
     flat = []
     for d in entries:
         dn = d["deposit_number"]
-        defines = sorted(defines_by_deposit.get(dn, []) or d.get("defines_concepts") or [])
+        _fallback = d.get("defines_concepts") or []
+        # defines_concepts may be a list of {term, gloss} dicts or of bare term strings
+        _fallback = [x.get("term", "") if isinstance(x, dict) else x for x in _fallback]
+        defines = sorted(t for t in (defines_by_deposit.get(dn, []) or _fallback) if t)
         refby_total = sum(concepts.get(t, {}).get("reference_count", 0) for t in defines)
         flat.append({
             "n": dn,

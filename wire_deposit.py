@@ -1497,9 +1497,17 @@ def regenerate_static_page(d, eidx, registry=None):
     defines = d.get('defines_concepts', [])
     if defines:
         concept_items = []
-        for term in defines:
+        for _entry in defines:
+            # defines_concepts may hold {term, gloss} dicts or bare term strings
+            if isinstance(_entry, dict):
+                term = _entry.get('term', '')
+                _local_gloss = _entry.get('gloss', '')
+            else:
+                term, _local_gloss = _entry, ''
+            if not term:
+                continue
             info = eidx['concepts'].get(term, {})
-            defn = esc(info.get('definition', ''))
+            defn = esc(info.get('definition', '') or _local_gloss)
             ctype = esc(info.get('type', ''))
             # 2026-08-15: emit the type-bracket and the definition line ONLY when
             # they have content. Most deposits record concepts as bare strings, so
