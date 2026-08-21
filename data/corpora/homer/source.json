@@ -1,0 +1,29 @@
+{
+ "corpus": "homer",
+ "seat": "EA-CORPORA-01/13",
+ "origin": {
+  "repo": "PerseusDL/canonical-greekLit",
+  "commit": "a065c359aab33c33bd17ddc2cac7d27fdc9cd870",
+  "paths": [
+   "data/tlg0012/tlg001 (Iliad, grc2)",
+   "data/tlg0012/tlg002 (Odyssey, grc2)",
+   "data/tlg0012/tlg003 (Epigrams, grc1)"
+  ]
+ },
+ "edition": "D.B. Monro and T.W. Allen, Homeri Opera (OCT, 1920) for Iliad and Odyssey, via Perseus; Epigrams via Allen",
+ "license": "CC BY-SA (Perseus); underlying edition public domain",
+ "fetched": "2026-08-21",
+ "works": {
+  "per-work": "text/tlgNNN-<Name>.txt (3 works, 27,903 verse lines)"
+ },
+ "normalization": "flat ref-tagged lines: '<Work> <book>.<line>\\t<text>'",
+ "verified_loci": [
+  "Iliad 1.1: μῆνιν ἄειδε θεὰ Πηληϊάδεω Ἀχιλῆος — the wrath, the first word of the tradition",
+  "Odyssey 1.1: ἄνδρα μοι ἔννεπε, μοῦσα, πολύτροπον — the man of many turns",
+  "Iliad 15.187–193: the threefold division of the cosmos by lot — Zeus, Poseidon, Hades"
+ ],
+ "ruling": {
+  "tlg003": "Labelled Homeric Hymns in some catalogues; the Perseus grc1 file at this commit is the Epigrams (opens Ἄνδρες ἄγρης ἁλίης). Seated as Epigrams. The Hymns are a separate seat, not taken here."
+ },
+ "lines_total": 27903
+}

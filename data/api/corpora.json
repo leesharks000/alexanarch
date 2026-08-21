@@ -1,0 +1,678 @@
+{
+ "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest.",
+ "_source": "https://www.alexanarch.org/api/corpora.json",
+ "_generated": "2026-08-21",
+ "seats": 15,
+ "lines_total": 126714,
+ "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
+ "corpora": [
+  {
+   "seat": "EA-CORPORA-01/02",
+   "corpus": "catullus",
+   "edition": "Catullus, Carmina (E. T. Merrill, 1893), via Perseus lat2",
+   "license": "CC BY-SA (Perseus packaging); underlying edition public domain",
+   "origin": {
+    "repo": "PerseusDL/canonical-latinLit",
+    "commit": "422896dde7f07509f151d18bb5fe351b77458748",
+    "paths": [
+     "data/phi0472/phi001/phi0472.phi001.perseus-lat2.xml"
+    ]
+   },
+   "language": null,
+   "lines": 2311,
+   "verified_loci": [
+    "Cat 51 Ille mi par esse deo",
+    "Cat 51 simul te … adspexi",
+    "Cat 51 lingua sed torpet … flamma demanat"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/catullus/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/catullus/MANIFEST.sha256",
+    "text": [
+     "https://www.alexanarch.org/data/corpora/catullus/text/Catullus.txt"
+    ],
+    "original": "https://www.alexanarch.org/data/corpora/catullus/original/"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-01/15",
+   "corpus": "coptic-gnostic",
+   "edition": "Coptic SCRIPTORIUM, TEI with word-level annotation. Gospel of Thomas = Nag Hammadi Codex II,2 (Sahidic). Pistis Sophia = Codex Askewianus, complete in four books. Mysteries of John the Evangelist.",
+   "license": "CC-BY 4.0 — declared in each file's TEI <availability> header, verified per file, not inferred from the repository README",
+   "origin": {
+    "repo": "CopticScriptorium/corpora",
+    "commit": "3ac067f1709a0012daf39ea8da2fac79980176a5",
+    "paths": [
+     "thomas-gospel/thomas.gospel_TEI/ (1 file)",
+     "pistis-sophia/pistis.sophia_TEI/ (28 files, Books I–IV and Postscript)",
+     "mysteries-john/mysteries.john_TEI/ (2 files)"
+    ]
+   },
+   "language": "Sahidic Coptic",
+   "lines": 2997,
+   "verified_loci": [
+    "Thomas, logion 1: ⲛⲁⲉⲓ ⲛⲉ ⲛ̄ϣⲁϫⲉ ⲉⲑⲏⲡ — 'these are the hidden sayings'",
+    "Pistis Sophia Book 1: the complete Askew codex, four books plus postscript",
+    "Mysteries of John the Evangelist: both parts"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/coptic-gnostic/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/coptic-gnostic/MANIFEST.sha256",
+    "text": [
+     "https://www.alexanarch.org/data/corpora/coptic-gnostic/text/mysteries-john-cop.txt",
+     "https://www.alexanarch.org/data/corpora/coptic-gnostic/text/pistis-sophia-cop.txt",
+     "https://www.alexanarch.org/data/corpora/coptic-gnostic/text/thomas-gospel-cop.txt"
+    ],
+    "original": "https://www.alexanarch.org/data/corpora/coptic-gnostic/original/"
+   },
+   "declared_absences": [
+    {
+     "work": "The Apocryphon of John (the Secret Book of John)",
+     "manuscripts": [
+      "NHC II,1",
+      "NHC III,1",
+      "NHC IV,1",
+      "BG 8502,2 (Papyrus Berolinensis)"
+     ],
+     "standing": "NOT SEATED — declared absent",
+     "why": "The foundational Sethian text, surviving in four manuscripts, and the closest thing Gnosticism has to a canonical scripture. No openly licensed machine-readable Coptic edition exists. Searched 2026-08-21: Coptic SCRIPTORIUM does not hold it; authenticated GitHub search returns one edition whose Coptic derives from scanned PDFs of Meyer 2007 and Linssen, relicensed CC BY-SA by a party that does not hold those rights; Schmidt 1905 is public domain but is the Pistis Sophia volume, and archive.org OCR strips Coptic script entirely; Till 1955, the Berlin Codex edition, remains in copyright.",
+     "ruling": "Not seated rather than seated defectively. A corpus whose licence is asserted by a party who cannot grant it would place a rights defect inside the sovereign record — the failure this archive exists to document. Absent-and-declared over present-and-defective.",
+     "opening": "One text, four witnesses. A synoptic open edition of the Apocryphon of John is the narrowest and highest-value gap in the openly licensed Coptic record.",
+     "searched": "2026-08-21"
+    },
+    {
+     "work": "Nag Hammadi Codices I and III–XIII",
+     "standing": "NOT SEATED — declared absent",
+     "why": "Fifty-one of the fifty-two tractates. Print editions only (Claremont, Brill); no open machine-readable Coptic.",
+     "searched": "2026-08-21"
+    },
+    {
+     "work": "The Qumran sectarian corpus (Dead Sea Scrolls)",
+     "standing": "NOT SEATED — declared absent",
+     "why": "Qumran-Digital publishes Open Access with a permissive robots.txt but is JS-rendered with no discoverable text endpoint; the Leon Levy Digital Library returns 403; authenticated GitHub search finds nothing licensed and authoritative. Transcribed decades ago and publicly funded, yet not openly machine-readable.",
+     "searched": "2026-08-21"
+    }
+   ],
+   "scope": {
+    "held": "The Coptic Gnostic material available under an open licence in machine-readable form at this commit.",
+    "not_held": "Nag Hammadi Codices I and III–XIII. Of the fifty-two tractates, only NHC II,2 is seated. The remaining tractates exist in print editions (Claremont, Brill) and are not available as openly licensed machine-readable Coptic.",
+    "ruling": "Seated as coptic-gnostic rather than nag-hammadi. The corpus is not the Nag Hammadi library; naming it so would assert a completeness the seat does not have."
+   }
+  },
+  {
+   "seat": "EA-CORPORA-01/04",
+   "corpus": "gnt-nestle1904",
+   "edition": "Eberhard Nestle, Novum Testamentum Graece (1904, British & Foreign Bible Society)",
+   "license": "public domain (1904 edition); repo tagging CC — text layer extracted only",
+   "origin": {
+    "repo": "biblicalhumanities/Nestle1904",
+    "commit": "713f28a3b7d4d66132f5aa809fa223fe79762e5d",
+    "paths": [
+     "xml/01-matthew.xml … xml/27-revelation.xml (27 files)"
+    ]
+   },
+   "language": null,
+   "lines": 7943,
+   "verified_loci": [
+    "Rev 12:1 σημεῖον μέγα ὤφθη",
+    "Rev 12:2 βασανιζομένη",
+    "Rev 12:3 πυρρός",
+    "Rev 12:5 ἄρσεν"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/gnt-nestle1904/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/gnt-nestle1904/MANIFEST.sha256",
+    "text": [
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/1Cor.txt",
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/1John.txt",
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/1Pet.txt",
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/1Thess.txt",
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/1Tim.txt",
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/2Cor.txt",
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/2John.txt",
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/2Pet.txt",
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/2Thess.txt",
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/2Tim.txt",
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/3John.txt",
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/Acts.txt",
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/Col.txt",
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/Eph.txt",
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/Gal.txt",
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/Heb.txt",
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/Jas.txt",
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/John.txt",
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/Jude.txt",
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/Luke.txt",
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/Mark.txt",
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/Matt.txt",
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/Phil.txt",
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/Phlm.txt",
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/Rev.txt",
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/Rom.txt",
+     "https://www.alexanarch.org/data/corpora/gnt-nestle1904/text/Titus.txt"
+    ],
+    "original": "https://www.alexanarch.org/data/corpora/gnt-nestle1904/original/"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-01/09",
+   "corpus": "hebrew-wlc",
+   "edition": "Westminster Leningrad Codex (OSHB morphhb)",
+   "license": "CC BY 4.0 (OSHB); text public domain",
+   "origin": {
+    "repo": "openscriptures/morphhb",
+    "commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+    "paths": [
+     "wlc/*.xml (39 books)"
+    ]
+   },
+   "language": null,
+   "lines": 23213,
+   "verified_loci": [
+    "Gen 45:27 וַתְּחִי ר֥וּחַ יַעֲקֹֽב — the spirit revived (LXX ἀνεζωπύρησεν)",
+    "Isa 66:7 בְּטֶרֶם תָּחִיל יָלָדָה … וְהִמְלִיטָה זָכָר — the painless birth, the male",
+    "Mic 4:9 the travail-cry complex"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/hebrew-wlc/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/hebrew-wlc/MANIFEST.sha256",
+    "text": [
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/1Chr.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/1Kgs.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/1Sam.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/2Chr.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/2Kgs.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/2Sam.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Amos.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Dan.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Deut.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Eccl.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Esth.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Exod.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Ezek.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Ezra.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Gen.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Hab.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Hag.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Hos.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Isa.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Jer.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Job.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Joel.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Jonah.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Josh.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Judg.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Lam.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Lev.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Mal.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Mic.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Nah.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Neh.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Num.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Obad.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Prov.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Ps.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Ruth.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Song.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Zech.txt",
+     "https://www.alexanarch.org/data/corpora/hebrew-wlc/text/Zeph.txt"
+    ],
+    "original": "https://www.alexanarch.org/data/corpora/hebrew-wlc/original/"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-01/13",
+   "corpus": "homer",
+   "edition": "D.B. Monro and T.W. Allen, Homeri Opera (OCT, 1920) for Iliad and Odyssey, via Perseus; Epigrams via Allen",
+   "license": "CC BY-SA (Perseus); underlying edition public domain",
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "a065c359aab33c33bd17ddc2cac7d27fdc9cd870",
+    "paths": [
+     "data/tlg0012/tlg001 (Iliad, grc2)",
+     "data/tlg0012/tlg002 (Odyssey, grc2)",
+     "data/tlg0012/tlg003 (Epigrams, grc1)"
+    ]
+   },
+   "language": null,
+   "lines": 27903,
+   "verified_loci": [
+    "Iliad 1.1: μῆνιν ἄειδε θεὰ Πηληϊάδεω Ἀχιλῆος — the wrath, the first word of the tradition",
+    "Odyssey 1.1: ἄνδρα μοι ἔννεπε, μοῦσα, πολύτροπον — the man of many turns",
+    "Iliad 15.187–193: the threefold division of the cosmos by lot — Zeus, Poseidon, Hades"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/homer/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/homer/MANIFEST.sha256",
+    "text": [
+     "https://www.alexanarch.org/data/corpora/homer/text/tlg001-Iliad.txt",
+     "https://www.alexanarch.org/data/corpora/homer/text/tlg002-Odyssey.txt",
+     "https://www.alexanarch.org/data/corpora/homer/text/tlg003-Epigrams.txt"
+    ],
+    "original": "https://www.alexanarch.org/data/corpora/homer/original/"
+   },
+   "ruling": {
+    "tlg003": "Labelled Homeric Hymns in some catalogues; the Perseus grc1 file at this commit is the Epigrams (opens Ἄνδρες ἄγρης ἁλίης). Seated as Epigrams. The Hymns are a separate seat, not taken here."
+   }
+  },
+  {
+   "seat": "EA-CORPORA-01/14",
+   "corpus": "iching",
+   "edition": "Yi Jing 易經 — received Chinese text: judgments (卦辭), line statements (爻辭), and the Ten Wings commentary (彖, 象, 文言)",
+   "license": "Project Gutenberg License; underlying text public domain",
+   "origin": {
+    "repo": "Project Gutenberg",
+    "ebook": 25501,
+    "url": "https://www.gutenberg.org/files/25501/25501-0.txt",
+    "paths": [
+     "25501-0.txt (Yi Jing, Chinese text)"
+    ]
+   },
+   "language": "Classical Chinese (zh-Hant)",
+   "lines": 1509,
+   "verified_loci": [
+    "Hexagram 1 乾: 元，亨，利，貞 — the four virtues; 初九 潛龍勿用, the dragon submerged",
+    "Hexagram 2 坤: the receptive, paired with 乾 as the two gates",
+    "彖曰 大哉乾元，萬物資始 — the commentary layer present, not only the base text"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/iching/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/iching/MANIFEST.sha256",
+    "text": [
+     "https://www.alexanarch.org/data/corpora/iching/text/yijing-zh.txt"
+    ],
+    "original": "https://www.alexanarch.org/data/corpora/iching/original/"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-01/01",
+   "corpus": "josephus",
+   "edition": "B. Niese, Flavii Iosephi Opera (Weidmann, 1885-1895), via Perseus grc2",
+   "license": "CC BY-SA (Perseus Digital Library); underlying edition public domain",
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "df40bf093ec67fe3f05d3049c36af5509d2d71cb",
+    "paths": [
+     "data/tlg0526/tlg001/tlg0526.tlg001.perseus-grc2.xml",
+     "data/tlg0526/tlg002/tlg0526.tlg002.perseus-grc2.xml",
+     "data/tlg0526/tlg003/tlg0526.tlg003.perseus-grc2.xml",
+     "data/tlg0526/tlg004/tlg0526.tlg004.perseus-grc2.xml"
+    ]
+   },
+   "language": null,
+   "lines": 12423,
+   "verified_loci": [
+    "AJ 11.236 ἀχανὴς ἐπέπεσεν",
+    "BJ 1.444 ἀνεζωπυρεῖτο",
+    "AJ 6.337 ἄφωνος ὑπὸ λύπης"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/josephus/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/josephus/MANIFEST.sha256",
+    "text": [
+     "https://www.alexanarch.org/data/corpora/josephus/text/AJ.txt",
+     "https://www.alexanarch.org/data/corpora/josephus/text/BJ.txt",
+     "https://www.alexanarch.org/data/corpora/josephus/text/CA.txt",
+     "https://www.alexanarch.org/data/corpora/josephus/text/Vita.txt"
+    ],
+    "original": "https://www.alexanarch.org/data/corpora/josephus/original/"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-01/06",
+   "corpus": "longinus",
+   "edition": "[Longinus], De Sublimitate — W. Rhys Roberts (Cambridge, 1899), via Perseus grc2",
+   "license": "CC BY-SA (Perseus); underlying edition public domain",
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "df40bf093ec67fe3f05d3049c36af5509d2d71cb",
+    "paths": [
+     "data/tlg0560/tlg001/tlg0560.tlg001.perseus-grc2.xml"
+    ]
+   },
+   "language": null,
+   "lines": 185,
+   "verified_loci": [
+    "Subl 10.2: Sappho fr. 31 quoted whole, φαίνεταί μοι κῆνος ἴσος θέοισιν … γλῶσσα ἔαγε"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/longinus/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/longinus/MANIFEST.sha256",
+    "text": [
+     "https://www.alexanarch.org/data/corpora/longinus/text/DeSublimitate.txt"
+    ],
+    "original": "https://www.alexanarch.org/data/corpora/longinus/original/"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-01/05",
+   "corpus": "lxx-swete",
+   "edition": "H.B. Swete, The Old Testament in Greek (Cambridge, 1887–1894), via First1KGreek tlg0527",
+   "license": "CC BY-SA 4.0 (First1KGreek); underlying edition public domain",
+   "origin": {
+    "repo": "OpenGreekAndLatin/First1KGreek",
+    "commit": "13bce1e6a1ac5a9e3aaf8b058aff63c5b02e84cf",
+    "paths": [
+     "data/tlg0527/tlg001–tlg057 (55 text files; tlg030 Ecclesiastes absent upstream)"
+    ]
+   },
+   "language": null,
+   "lines": 29277,
+   "verified_loci": [
+    "Gen 45:27 ἀνεζωπύρησεν",
+    "Mic 4:9 κατεκράτησάν σου ὠδῖνες",
+    "Esther Addition D ἐκλύσει",
+    "Isa 66:7 ἄρσεν"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/lxx-swete/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/lxx-swete/MANIFEST.sha256",
+    "text": [
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg001-Γένεσις.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg002-Ἔξοδος.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg003-Λευϊτικόν.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg004-Ἀριθμοί.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg005-Δευτερονόμιον.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg006-The_Old_Testament_in_Greek.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg008-Κριταί_(Cod._Alexandrinus).txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg010-Ῥούθ.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg011-Βασιλειῶν_Αʹ.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg012-Βασιλειῶν_Βʹ.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg013-Βασιλειῶν_Γʹ.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg014-Βασιλειῶν_Δʹ.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg015-Παραλειπομένων_Αʹ.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg016-Παραλειπομένων_Βʹ.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg017-Ἔσδρας_Αʹ.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg018-Ἔσδρας_Βʹ.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg019-Ἐσθήρ.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg020-Ἰουδίθ.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg021-Τωβίτ.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg023-Μακκαβαίων_Αʹ.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg024-Μακκαβαίων_Βʹ.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg025-Μακκαβαίων_Γʹ.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg026-Μακκαβαίων_Δ΄.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg027-Ψαλμοί.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg028-Ὠδαί.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg029-Παροιμίαι.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg031-Ἆσμα.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg032-Ἰώβ.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg033-Σοφία_Σαλομῶντος.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg034-Ἐκκλησιαστικός.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg035-Ψαλμοὶ_Σαλομῶντος.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg036-Ὡσηέ.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg037-Ἀμώς.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg038-Μιχαίας.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg039-Ἰωήλ.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg040-Ὀβδιού.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg041-Ἰωνᾶς.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg042-Ναούμ.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg043-Ἀμβακούμ.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg044-Σοφονίας.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg045-Ἀγγαῖος.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg046-Ζαχαρίας.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg047-Μαλαχίας.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg048-Ἠσαΐας.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg049-Ἱερεμίας.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg050-Βαρούχ.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg051-Θρῆνοι.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg052-Ἐπιστολὴ_Ἰερεμίου.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg053-Ἰεζεκιήλ.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg054-Σουζάννα_(translatio_Graeca).txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg055-Σουζάννα_(Theodotionis_versio).txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg056-Δανιήλ_(translatio_Graeca).txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg057-Δανιήλ_(Theodotionis_versio).txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg058-Βὴλ_καὶ_Δράκων.txt",
+     "https://www.alexanarch.org/data/corpora/lxx-swete/text/tlg059-Βὴλ_καὶ_Δράκων_(Theodotionis_versio).txt"
+    ],
+    "original": "https://www.alexanarch.org/data/corpora/lxx-swete/original/"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-01/11",
+   "corpus": "papyri",
+   "edition": "Digital Corpus of Literary Papyri records (Duke Databank)",
+   "license": "CC BY (Duke Databank / papyri.info data)",
+   "origin": {
+    "repo": "papyri/idp.data",
+    "paths": [
+     "DCLP items per catalog.json (28 Sappho-circle; P.Oxy 8.1079 = 𝔓18; P.Oxy 66.4499 = 𝔓115)"
+    ]
+   },
+   "language": null,
+   "lines": 136,
+   "verified_loci": [
+    "TM 59081 (Aeolic lyric, 30 transcription lines)",
+    "TM 61636 = 𝔓18 (Apocalypse, transcription present)"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/papyri/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/papyri/MANIFEST.sha256",
+    "text": [
+     "https://www.alexanarch.org/data/corpora/papyri/text/nt-TM61636.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/nt-TM65898.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/sappho-TM341738.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/sappho-TM59081.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/sappho-TM62695.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/sappho-TM62696.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/sappho-TM62697.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/sappho-TM62698.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/sappho-TM62699.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/sappho-TM62700.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/sappho-TM62701.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/sappho-TM62702.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/sappho-TM62703.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/sappho-TM62704.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/sappho-TM62705.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/sappho-TM62706.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/sappho-TM62707.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/sappho-TM62708.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/sappho-TM62709.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/sappho-TM62710.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/sappho-TM62711.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/sappho-TM62712.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/sappho-TM62713.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/sappho-TM62714.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/sappho-TM62715.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/sappho-TM62716.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/sappho-TM63888.txt",
+     "https://www.alexanarch.org/data/corpora/papyri/text/sappho-TM68983.txt"
+    ],
+    "original": "https://www.alexanarch.org/data/corpora/papyri/original/"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-01/07",
+   "corpus": "philo",
+   "edition": "Cohn–Wendland, Philonis Alexandrini Opera (Berlin, 1896–1915), via First1KGreek tlg0018",
+   "license": "CC BY-SA 4.0 (First1KGreek); underlying edition public domain",
+   "origin": {
+    "repo": "OpenGreekAndLatin/First1KGreek",
+    "commit": "13bce1e6a1ac5a9e3aaf8b058aff63c5b02e84cf",
+    "paths": [
+     "data/tlg0018/tlg001–tlg031 (31 works)"
+    ]
+   },
+   "language": null,
+   "lines": 7901,
+   "verified_loci": [
+    "De migratione Abrahami (tlg014) seated — Migr. 47–48 seen-voice stations",
+    "Quis rerum divinarum heres (tlg015) seated with ἔκστασις — Her. 249–266",
+    "De mutatione nominum (tlg018) seated — Mut. 54–57"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/philo/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/philo/MANIFEST.sha256",
+    "text": [
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg001-De_opificio_mundi.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg002-Legum_allegoriarum_libri_i_iii.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg003-De_Cherubim.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg004-De_sacrificiis_Abelis_et_Caini.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg005-Quod_deterius_potiori_insidiari_soleat.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg006-De_Posteritate_Caini.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg007-De_gigantibus.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg008-Quod_deus_sit_immutabilis.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg009-De_agricultura.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg010-De_plantatione.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg011-De_ebrietate.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg012-De_sobrietate.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg013-De_confusione_linguarum.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg014-De_migratione_Abrahami.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg015-Quis_rerum_divinarum_heres_sit.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg016-De_congressu_eruditionis_gratia.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg017-De_fuga_et_inventione.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg018-De_mutatione_nominum.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg019-De_somniis_lib_i_ii_.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg020-De_Abrahamo.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg021-De_Josepho.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg022-De_vita_Mosis_lib_i_ii_.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg023-De_decalogo.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg024-De_specialibus_legibus_lib_i_iv_.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg025-De_virtutibus.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg026-De_praemiis_et_poenis_et_De_exsecratio.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg027-Quod_omnis_probus_liber_sit.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg028-De_vita_contemplativa.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg029-De_aeternitate_mundi.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg030-In_Flaccum.txt",
+     "https://www.alexanarch.org/data/corpora/philo/text/tlg031-Legatio_Ad_Gaium.txt"
+    ],
+    "original": "https://www.alexanarch.org/data/corpora/philo/original/"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-01/08",
+   "corpus": "plato",
+   "edition": "J. Burnet, Platonis Opera (OCT, 1900–1907), via Perseus",
+   "license": "CC BY-SA (Perseus); underlying edition public domain",
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "df40bf093ec67fe3f05d3049c36af5509d2d71cb",
+    "paths": [
+     "data/tlg0059/tlg001–tlg036 (36 works; tlg001 via grc1, no grc2 upstream)"
+    ]
+   },
+   "language": null,
+   "lines": 8203,
+   "verified_loci": [
+    "Phaedrus 251a–b: the heat-and-sweat seizure at beauty (ἱδρώς, θερμότης)",
+    "Symposium 215e: the leaping heart at the played instrument"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/plato/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/plato/MANIFEST.sha256",
+    "text": [
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg001-Εὐθύφρων.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg002-Ἀπολογία_Σωκράτους.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg003-Κρίτων.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg004-Φαίδων.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg005-Κρατύλος.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg006-Θεαίτητος.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg007-Σοφιστής.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg008-Πολιτικός.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg009-Παρμενίδης.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg010-Φίληβος.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg011-Συμπόσιον.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg012-Φαῖδρος.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg013-.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg014-Ἀλκιβιάδης_βʹ.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg015-Ἵππαρχος.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg016-Ἐρασταί.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg017-Θεάγης.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg018-Χαρμίδης.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg019-Λάχης.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg020-Λύσις.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg021-Εὐθύδημος.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg022-Πρωταγόρας.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg023-Γοργίας.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg024-Μένων.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg025-Ἱππίας_μείζων.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg026-Ἱππίας_ἐλάττων.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg027-Ἴων.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg028-Μενέξενος.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg029-Κλειτοφῶν.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg030-Πολιτεία.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg031-Τίμαιος.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg032-Κριτίας.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg033-Μίνως.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg034-Νόμοι.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg035-Ἐπινομίς.txt",
+     "https://www.alexanarch.org/data/corpora/plato/text/tlg036-Ἐπιστολαί.txt"
+    ],
+    "original": "https://www.alexanarch.org/data/corpora/plato/original/"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-01/10",
+   "corpus": "sappho",
+   "edition": "diplomatic layer over the Parisinus-tradition carrier; no papyrus witness exists for fr. 31",
+   "license": "CC BY-SA (carrier); diplomatic layer CC-BY-4.0",
+   "origin": {
+    "derived_from": [
+     "EA-CORPORA-01/06 (Longinus, Perseus grc2, commit-pinned)",
+     "EA-CORPORA-01/02 (Catullus 51, indirect witness)",
+     "EA-CORPORA-01/11 (papyri panel, DCLP)"
+    ]
+   },
+   "language": null,
+   "lines": 21,
+   "verified_loci": [
+    "31.1 φαίνεταί μοι κῆνος ἴσος θεοῖσιν",
+    "31.16 ἀλλὰ πᾶν τολματόν, ἐπεὶ καὶ πένητα — the hanging line as carried"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/sappho/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/sappho/MANIFEST.sha256",
+    "text": [
+     "https://www.alexanarch.org/data/corpora/sappho/text/fr31-diplomatic.txt"
+    ],
+    "original": "https://www.alexanarch.org/data/corpora/sappho/original/"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-01/12",
+   "corpus": "slavonic-josephus",
+   "edition": "index and provenance only; modern critical texts in copyright, cited not seated",
+   "license": "CC-BY-4.0 (index layer)",
+   "origin": {
+    "resolution": "per EA-OMEGA-BUILD-01 ruling: documented negative search + curated contested pericope set"
+   },
+   "language": null,
+   "lines": 0,
+   "verified_loci": [
+    "the eightfold set as defined by #1176 Appendix II"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/slavonic-josephus/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/slavonic-josephus/MANIFEST.sha256",
+    "text": [],
+    "original": "https://www.alexanarch.org/data/corpora/slavonic-josephus/original/"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-01/03",
+   "corpus": "theocritus",
+   "edition": "Theocritus, Idylls — R.J. Cholmeley (via Perseus grc2)",
+   "license": "CC BY-SA (Perseus Digital Library); underlying edition public domain",
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "df40bf093ec67fe3f05d3049c36af5509d2d71cb",
+    "paths": [
+     "data/tlg0005/tlg001/tlg0005.tlg001.perseus-grc2.xml"
+    ]
+   },
+   "language": null,
+   "lines": 2692,
+   "verified_loci": [
+    "Id 2.82 χὡς ἴδον, ὡς ἐμάνην",
+    "Id 2.88 χρὼς ὁμοῖος θάψῳ"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/theocritus/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/theocritus/MANIFEST.sha256",
+    "text": [
+     "https://www.alexanarch.org/data/corpora/theocritus/text/Idylls.txt"
+    ],
+    "original": "https://www.alexanarch.org/data/corpora/theocritus/original/"
+   }
+  }
+ ]
+}

@@ -1,0 +1,65 @@
+{
+ "corpus": "coptic-gnostic",
+ "seat": "EA-CORPORA-01/15",
+ "origin": {
+  "repo": "CopticScriptorium/corpora",
+  "commit": "3ac067f1709a0012daf39ea8da2fac79980176a5",
+  "paths": [
+   "thomas-gospel/thomas.gospel_TEI/ (1 file)",
+   "pistis-sophia/pistis.sophia_TEI/ (28 files, Books I–IV and Postscript)",
+   "mysteries-john/mysteries.john_TEI/ (2 files)"
+  ]
+ },
+ "edition": "Coptic SCRIPTORIUM, TEI with word-level annotation. Gospel of Thomas = Nag Hammadi Codex II,2 (Sahidic). Pistis Sophia = Codex Askewianus, complete in four books. Mysteries of John the Evangelist.",
+ "license": "CC-BY 4.0 — declared in each file's TEI <availability> header, verified per file, not inferred from the repository README",
+ "attribution": "Coptic SCRIPTORIUM (copticscriptorium.org)",
+ "fetched": "2026-08-21",
+ "language": "Sahidic Coptic",
+ "works": {
+  "thomas": "text/thomas-gospel-cop.txt",
+  "pistis_sophia": "text/pistis-sophia-cop.txt",
+  "mysteries_john": "text/mysteries-john-cop.txt"
+ },
+ "normalization": "flat ref-tagged lines: '<Work> <ref>\\t<text>' — word tokens rejoined from TEI <w>",
+ "scope": {
+  "held": "The Coptic Gnostic material available under an open licence in machine-readable form at this commit.",
+  "not_held": "Nag Hammadi Codices I and III–XIII. Of the fifty-two tractates, only NHC II,2 is seated. The remaining tractates exist in print editions (Claremont, Brill) and are not available as openly licensed machine-readable Coptic.",
+  "ruling": "Seated as coptic-gnostic rather than nag-hammadi. The corpus is not the Nag Hammadi library; naming it so would assert a completeness the seat does not have."
+ },
+ "verified_loci": [
+  "Thomas, logion 1: ⲛⲁⲉⲓ ⲛⲉ ⲛ̄ϣⲁϫⲉ ⲉⲑⲏⲡ — 'these are the hidden sayings'",
+  "Pistis Sophia Book 1: the complete Askew codex, four books plus postscript",
+  "Mysteries of John the Evangelist: both parts"
+ ],
+ "segments_total": 2997,
+ "coptic_characters": 748904,
+ "declared_absences": [
+  {
+   "work": "The Apocryphon of John (the Secret Book of John)",
+   "manuscripts": [
+    "NHC II,1",
+    "NHC III,1",
+    "NHC IV,1",
+    "BG 8502,2 (Papyrus Berolinensis)"
+   ],
+   "standing": "NOT SEATED — declared absent",
+   "why": "The foundational Sethian text, surviving in four manuscripts, and the closest thing Gnosticism has to a canonical scripture. No openly licensed machine-readable Coptic edition exists. Searched 2026-08-21: Coptic SCRIPTORIUM does not hold it; authenticated GitHub search returns one edition whose Coptic derives from scanned PDFs of Meyer 2007 and Linssen, relicensed CC BY-SA by a party that does not hold those rights; Schmidt 1905 is public domain but is the Pistis Sophia volume, and archive.org OCR strips Coptic script entirely; Till 1955, the Berlin Codex edition, remains in copyright.",
+   "ruling": "Not seated rather than seated defectively. A corpus whose licence is asserted by a party who cannot grant it would place a rights defect inside the sovereign record — the failure this archive exists to document. Absent-and-declared over present-and-defective.",
+   "opening": "One text, four witnesses. A synoptic open edition of the Apocryphon of John is the narrowest and highest-value gap in the openly licensed Coptic record.",
+   "searched": "2026-08-21"
+  },
+  {
+   "work": "Nag Hammadi Codices I and III–XIII",
+   "standing": "NOT SEATED — declared absent",
+   "why": "Fifty-one of the fifty-two tractates. Print editions only (Claremont, Brill); no open machine-readable Coptic.",
+   "searched": "2026-08-21"
+  },
+  {
+   "work": "The Qumran sectarian corpus (Dead Sea Scrolls)",
+   "standing": "NOT SEATED — declared absent",
+   "why": "Qumran-Digital publishes Open Access with a permissive robots.txt but is JS-rendered with no discoverable text endpoint; the Leon Levy Digital Library returns 403; authenticated GitHub search finds nothing licensed and authoritative. Transcribed decades ago and publicly funded, yet not openly machine-readable.",
+   "searched": "2026-08-21"
+  }
+ ],
+ "doctrine": "Declared absence follows the DUD doctrine: present-but-presented-as-absent is the archive's worst self-manufactured category. A gap named, dated and reasoned is a finding; a gap papered over is a defect."
+}
