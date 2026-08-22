@@ -1,0 +1,1699 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>The Claim Status Packet: Claim State as Carried Data — Alexanarch</title><meta name="description" content="A schema specification, unimplemented, addressing a defect class the archive has already ruled on once: two hand-maintained copies of one fact will…"><meta property="og:title" content="The Claim Status Packet: Claim State as Carried Data"><meta property="og:description" content="A schema specification, unimplemented, addressing a defect class the archive has already ruled on once: two hand-maintained copies of one fact will…"><meta property="og:url" content="https://www.alexanarch.org/s/records/1529/"><meta property="og:type" content="article"><meta property="og:site_name" content="Alexanarch"><meta name="twitter:card" content="summary"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "The Claim Status Packet: Claim State as Carried Data", "headline": "The Claim Status Packet: Claim State as Carried Data", "author": {"@type": "Person", "name": "Sharks, Lee"}, "datePublished": "2026-08-21", "identifier": "AXN:062E.GOVERNANCE.⌛🎯👈☿📎🏺", "version": "v0.6", "description": "A schema specification, unimplemented, addressing a defect class the archive has already ruled on once: two hand-maintained copies of one fact will diverge, and the repair is binding rather than more careful editing. Deposit counts drifted to 57 percent of true across the fleet before being bound to", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "claim status packet, CSP, claim state, typed state, relation policy, propagation licensing, unsupported attenuation, scope-critical constraint, generate facts lint argument, status law, layer smuggling, SPXI logic module", "url": "https://www.alexanarch.org/s/records/1529/", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.alexanarch.org/s/records/1529/"}, "inLanguage": "en", "isPartOf": {"@type": "Collection", "name": "Alexanarch", "url": "https://www.alexanarch.org/"}, "articleBody": "The Claim Status Packet: Claim State as Carried Data\nTHE CLAIM STATUS PACKET\n\n Claim state as carried data. Five objects. Working name: CSP. \n\n STATUS — SCHEMA DRAFT v0.6. No implementation. The generator and checker at\n §8 are specified and unwritten. Not a deployed instrument. \n \n0. CHANGES AT v0.4 — THREE ARCHITECTURAL CORRECTIONS\n\n v0.3 was a consistency linter that described itself as a single-source\nbinding. Three corrections, and the first invalidates the prior design.\n0.1 The counts.json analogy was not carried through\n\nv0.3 said the fact is held once and consumed everywhere — then specified T1 and\nT2 as checks that six hand-maintained copies match the packet. \n\n That is not the counts.json repair. assets/counts.js does not verify that someone typed 1,520 correctly; it writes the number into the element . The repair was generation, not audit.\n\n v0.3 improved six unaudited copies to six copies plus a linter. \n\n Corrected at §8: generate facts, lint argument. Version, dates, status enums, inclusion flags and hashes are projected from the packet at build time . No one types HEURISTIC six times. Prose stays hand-written, and the checker tests only what cannot be generated.\n0.2 The packet held the prose it forbade\n\n§2 said the packet must not hold prose. Each claim then carried:\n\n \n\n That is prose, and normative prose , because the propagation rules reason over the proposition it expresses. A flat self-contradiction , and worse: the packet would become a second textual authority whose wording drifts from the document's.\n\n Corrected at §4. The packet points at the claim by selector and carries a gloss marked explicitly non-normative. The canonical proposition is in the document. \n0.3 Rank is not a total order\n\nv0.3 made numeric rank load-bearing: a status at a higher rank may not qualify a\nclaim at a lower one. \n\n That gets the motivating failure right and the general rule wrong. \n\nIf an observation is phrased AI systems do X , a generality correction must qualify it — generality was smuggled into the proposition. If it is phrased the model transferred prestige , an interpretation-layer correction may legitimately require rewriting it, because transferred prestige is already an interpretation.\n\n What licenses propagation is not rank. It is the declared relation. \n\n Corrected at §5. Rank is demoted to a default protection heuristic ; propagation runs along an explicit relation vocabulary. Logic rather than rank etiquette. \n \n0.4 CHANGES AT v0.5 — RECORDED LATE\n\n v0.5 shipped without a changes section , which is a silent version in a\ndocument whose subject is version drift. Recorded here:\n\nAdded the incentive analysis at §1 — three of four outcomes reward weakening , which is why multiple reviewers do not cancel the bias. Added weakening justification (§6.2), the stagnation alert (§6.3), history consolidation under Non-Erasure (§6.4), transitive-closure checking, the dissent record, the meta section, and Appendix A's two worked packets.\n \n0.5 CHANGES AT v0.6 — SYNCHRONIZATION\n\n A cross-file review read the three documents as one system and found a class of\ndefect the prose sweeps could not. All applied.\n\n The central law was restated. v0.5 said status propagates only along a\nlicensed relation — which still imagines status as a thing that travels. \n\n State is typed and claim-local. Relations do not copy state. They license\n specified state transitions on specified dimensions. \n\n Relation policy replaces the boolean. propagation licensed: true false is too crude: qualifies licenses scope and not verification . §5.1 tables what each relation licenses, on which dimension, in which direction, and whether automatically. Most license nothing — including motivates and interprets , the two commonest edges in the worked packets, which makes the anti-attenuation result a property of the vocabulary rather than a per-edge exception. And motivates was used throughout v0.5's examples while absent from its vocabulary ; added.\n\n T3″ was unsafe. A generic walk over \"licensed relations\" is too permissive: supports → generalizes → qualifies does not compose. A path licenses a transition only where every edge licenses the same dimension in the same direction. \n\n claim kind was being used for whole documents. A document is a findings map or a schema specification ; that is not the same question as whether a proposition is an observation. Separated into document kind , because sharing one vocabulary invites the kind smuggling §10.1 warns about. \n\n Claim-identity smuggling added at §10.5. proposition delta: true with a persisting ID lets a materially new proposition inherit the old one's provenance and protections by keeping the ID. A claim ID persists only while the referent and truth conditions are invariant.\n\n review for: elevation reintroduced scalar status. Alerts now name the axis and the transition — the observer's confirmation does not elevate a claim, it changes one verification coordinate.\n\n unsupported attenuation is N/A where no weakening occurred , not 0. A\ndocument with no attenuation has demonstrated nothing about attenuation.\n\n And two of the schema's own residues: §11 said no document carries a packet while this file carried two, and §11.5 invoked the no-downward rule retired at v0.4. \n \n1. THE PROBLEM, WITH EVIDENCE\n\n Two hand-maintained copies of one fact will diverge. \n\nThe archive already ruled this. Deposit counts drifted to 57% of true — traininglayerliterature said 763 against 1,520. The repair was counts.json and a binding, not more careful editing.\n\n The same class recurred in the specification batch. \n\n version frontmatter JSON-LD \n --- --- --- \n v5.0 v5.0 v4.0 — found, corrected \n v7.0 v7.0 v6.0 — recurred \n v8.0 v8.0 v6.0 — recurred again \n\n The change log naming the defect did not prevent the defect. And EC — HEURISTIC sits in six hand-maintained locations; the corrections logged across v3.0–v8.0 as sweep residue are largely those copies disagreeing. They were recorded as editing failures. They are a schema failure. \n\n A third failure, and its cause. Successive precision passes weaken claims,\nwith no symmetric pressure restoring standing a correction took too much of.\n\n The batch has described the ratchet without explaining it. The explanation is\nan incentive asymmetry: \n\n wrong right \n --- --- --- \n weakened appropriately cautious prudent \n strengthened overreaching bold \n\n Three of four outcomes reward weakening; only one punishes it, and the punishment for strengthening wrongly is the harshest cell in the table. Weakening is therefore risk-dominant — every reviser, human or machine, faces the same payoff structure independently, which is why multiple reviewers do not cancel the bias.\n\n Making the ratchet countable does not change the incentives. §6.1 measures it;\n§6.2 prices it.\n \n2. WHO OWNS A STATUS\n\n The drift is a symptom. The condition is that status is unowned. It floats across six surfaces because no one is answerable at any of them, and the packet owns the status is a category error — things do not own. \n\n function who failure \n --- --- --- \n assigns state and claim-kind the author a status nobody chose \n approves a claim-kind reassignment MANUS, logged kind smuggling, §10.1 \n selects protected constraints the author, at composition protection applied to whatever survived \n runs the generator and checker the deposit pipeline, as a gate a gate never invoked \n adjudicates a relation dispute MANUS; no other adjudicator dispute recorded as consistency \n answers when it drifts anyway the author no one to report to \n\n Every row resolves to one person. No schema distributes that. The packet\nmakes state legible; it does not make it cared for. \n\n And the packet is a convention, not a ground — an agreement about where to\nstop interpreting a claim, written down so the stopping point can be checked.\n \n3. FIVE OBJECTS\n\n v0.3 was one schema doing four jobs badly. Separated: \n\n object job \n --- --- \n claim + state stable IDs, typed state, document/version facts \n relations supports, interprets, generalizes, qualifies, rebuts, supersedes \n provenance why, how and by whom each transition happened \n bindings where each state renders, with anchors and hashes \n policy invariants and legal transitions \n\n Integrity hashes sit across all five. The decomposition follows nanopublication practice — assertion, provenance of assertion, publication information kept as separate graphs — which is the closest existing analogue and solves the conflation directly.\n\n What CSP adds that those do not: they ask what is this claim, where did it\ncome from, how does it relate. CSP asks\n\n what standing is this claim permitted to carry, and did mediation alter that\n standing without a warrant? \n \n4. CLAIM AND STATE\n\n The packet points at the claim. It does not restate it. \n\n \n\n State is typed, not scalar. v0.3 wrote \"status\": \"observed\" , which conflates observed by whom , verified how , and at what scope . Those are separate dimensions and illegal combinations become machine-detectable only when they are separate fields. \n\nAn instrument's state uses different axes:\n\n \n\n This stops candidate being a universal solvent — it is a value on one \naxis, not a general dimming.\n\n Claim kinds — observation, administration, instrument, interpretation,\ngenerality — retain a default rank used only as a protection heuristic (§5).\n \n5. RELATIONS\n\n A small vocabulary, and the rule that replaces rank: \n\n \n\n State is typed and claim-local. Relations do not copy state. They license\n specified state transitions on specified dimensions. No transition crosses from\n one claim to another without an explicit relation policy and a warrant. \n\n v0.5 said status propagates only along a licensed relation , which still imagines status as a thing that travels. It does not travel. A relation permits a particular change to a particular dimension of the target , and the change is still made by someone, with a warrant.\n\n Why this beats rank. A claim can be downstream without being weaker, and two\nclaims can sit at different kinds without either qualifying the other.\n\n \n\nA downgrade of the interpretation does not propagate through motivates . \n\n \n\nA failure of the corpus result does propagate , because generalizes licenses\nit.\n5.1 Relation policy\n\n A boolean is too crude. qualifies might license a change to scope and certainly not to verification . undercuts might license reevaluation of establishment without copying the source's status. Each relation declares what it licenses: \n\n relation licensed dimension direction automatic \n --- --- --- --- \n motivates none — no \n interprets none — no \n instantiates none — no \n supports none — no \n derived from none — no \n qualifies scope only source → target constrained \n generalizes establishment source → target constrained \n undercuts establishment , validation source → target adjudicated \n rebuts establishment source → target adjudicated \n supersedes claim identity, history source → target explicit \n independent of none — no \n\n Most relations license nothing. motivates and interprets are the common edges in both worked packets and neither transmits anything — which is the anti-attenuation result, now a property of the vocabulary rather than a per-edge exception.\n\n motivates was used throughout v0.5's examples and was absent from its\nvocabulary. Added.\n\n Rank survives only as the default where no edge is declared: absent an explicit relation, no claim affects another. The default is silence, not hierarchy. \n5.2 Composition\n\n Transitivity is relation-specific and v0.5's T3″ was unsafe. \n\n A supports B , B generalizes C , C qualifies D do not compose into a licensed effect from A to D . A generic walk over \"licensed relations\" is too permissive.\n\n A path licenses a transition only if every edge licenses the same dimension\n in the same direction. Mixed-dimension paths license nothing and require\n adjudication.\n\n supports → generalizes licenses nothing, because supports licenses nothing. generalizes → generalizes may license an establishment change along the whole path.\n \n6. PROVENANCE — AND THE CORRECTED METRIC\n\nEvery transition is an event with a warrant :\n\n \n\n wasRevisionOf , wasDerivedFrom , wasAttributedTo follow PROV-O rather than\ninventing a historical grammar.\n6.1 attenuation ratio was the wrong metric\n\nv0.3 proposed weakened / ( weakened + strengthened ) , with ≈ 0.5 as the\ndefeat condition. \n\n That is wrong, and it would have defeated a correct pipeline. Early drafts overclaim. A good editorial process should run well above 0.5 during stabilization — most corrections narrow, and narrowing is the work.\n\n What matters is not weakening. It is weakening without a warrant. \n\n \n\n A claim's standing lowered because caution entered elsewhere, with nothing local changed and no relation licensing it. That is the ratchet, and it is now the measured quantity.\n\n Undefined where no weakening occurred. With zero weakened transitions the ratio is N/A , not 0 — a document with no attenuation has not demonstrated low attenuation; it has demonstrated nothing about attenuation.\n6.2 Pricing the asymmetry\n\n Every weakening carries a justification, typed: \n\n \n\n sweep residue and bare uncertainty are flagged, not rejected. A weakening whose only reason is that caution entered elsewhere is precisely unsupported attenuation , and it should cost something to record.\n6.3 The opposite failure — stagnation\n\n The schema as specified prevents loss and does nothing about stasis. A claim can sit at reported by observer through fifty revisions while the evidence for elevating it accumulates unread. Conservative by design is not neutral : it makes an archive of unelevated observations.\n\n \n\n review for: elevation would reintroduce scalar status — the thing typed state exists to prevent. An alert names the axis and the transition , because the observer's confirmation does not elevate a claim; it changes one verification coordinate.\n\n Elevation requires the same warrant as attenuation — evidence, scope or proposition change — and the alert only asks whether one has arrived. It does not license elevation on age. \n6.4 History does not grow without bound\n\n Non-Erasure does not mean everything stays in the working file. After a claim's state is stable across n revisions, intermediate transitions move to a cold record and the packet keeps the boundary entries:\n\n \n\n Moved, never deleted. The consolidation is itself a logged transition.\n \n7. BINDINGS\n\n Anchors, not section numbers. \"§4\" fails the moment §4 becomes §5.\n\n \n\n \n\nWhere exact wording is load-bearing, anchor and quote and hash, following\nthe Web Annotation selector model.\n7.1 Protected constraints, not protected strings\n\nv0.3's scope critical strings risks argument petrification — a literal check would reject at population frequency as erasure of at rate , though it preserves the scope exactly.\n\n The constraint is protected; the string is one implementation of it: \n\n \n\n protection: lexical means the string is currently how the constraint is met ,\nnot that the constraint is the string.\n7.2 Integrity\n\n \n\n A released packet asserts: this state graph applied to exactly this document state. If the prose changes, the binding breaks until a packet is regenerated — which makes stale-packet drift mechanically impossible rather than merely detectable.\n \n8. GENERATE FACTS, LINT ARGUMENT\n\n The correction at §0.1, stated as architecture. \n\n projected from the packet at build time left to the author \n --- --- \n frontmatter version , dates every claim, every interpretation \n JSON-LD version , dateModified , spxi:statusFlags every explanation \n module.json records and inclusion flags every scope-sensitive sentence \n inline state blocks between csp: anchors the argument \n footer version and hex — \n\n No one types HEURISTIC six times. \n8.1 What the checker still does\n\nGeneration removes T1 and T2 as checks — those facts are now written, not\nverified. What remains:\n\n T3′ — transition legality. For C₀ → C₁ where state lowers, require at least one of evidence delta , scope delta , proposition delta , or explicit adjudication on that claim . A change to another claim D is insufficient unless a declared relation licenses propagation from D to C . \n\n T3″ — path licensing. T3′ checks the direct edge; a change at A can reach C through A → B → C . But the closure must be dimension-typed, not generic: a path licenses a transition only where every edge licenses the same dimension in the same direction (§5.2). Mixed-dimension paths license nothing. Any weakening of C traced to A requires a warrant on C or a dimension-consistent licensed path.\n\n T4 — constraint satisfaction. Each protected constraint holds. Where protection: lexical , the fragment is present; where a revision claims to satisfy it otherwise, the change requires adjudication rather than automatic rejection. \n\n T5 — publication coherence. datePublished absent while deposited is false.\n\n T6 — anchor integrity. Every binding anchor resolves; every document sha256 \nmatches.\n\n T7 — state well-formedness. Values belong to the vocabulary permitted for the claim kind. A candidate interpretation must not be deployed: true . A heuristic instrument must not be reportable as finding: true . \n\n Facts and rules stay separate: the packet holds facts, the policy holds rules over facts, the checker enforces. Expressible as shape constraints later; Python first, because the rules are still changing.\n \n9. WHAT THIS IS FOR\n\n An archive-integrity instrument , and naming that matters because it is the\neasiest of four to build.\n\n checker asks here \n --- --- --- \n archive integrity do the surfaces agree, are transitions legal? yes \n reader trust is the state honest to the evidence? no \n corpus cleanliness is the machine layer parseable? partly \n accountability who is answerable when it drifts? §2 specifies it; nothing tests it \n\n Consistency is not honesty. A document can pass every test carrying a state\nnobody believes.\n \n10. VULNERABILITIES\n\n 10.1 Kind smuggling. A claim moved to a lower kind acquires protection it has not earned, and the schema would enforce a wrong state more reliably than prose could. layer change log makes it visible and dated; it does not prevent it.\n\n 10.2 Undeclared surfaces. A surface not in bindings is neither generated nor\nchecked, and drifts freely while the report reads clean. \n\n 10.3 Cleanliness relocates the mess. One claim, one kind, one state per document is tidier than the reality. Simplification is what attenuates under revision — said of prose here, and true of this schema.\n\n 10.4 False harmony. Contradictory states can be held indefinitely.\n Preservation is not resolution. \n\n 10.5 Claim-identity smuggling. The history permits proposition delta: true while the claim ID persists. That is often right — a scoped narrowing is a new state of the same claim. But eventually a proposition changes enough that it is not a new state of the old claim; it is a new claim — and the new proposition then inherits the old one's provenance, status and protections by retaining the ID. \n\n A claim ID persists only while the core referent and truth conditions remain\n invariant. A material proposition change creates a new ID, linked by\n supersedes or derived from . \n\n proposition delta therefore means narrowed, identity intact . A larger semantic replacement forces a new node. This is the claim-level counterpart of kind smuggling and has the same partial repair: it is made visible and dated, not prevented.\n\n 10.6 Adjudication without record. Kind disputes resolve to one adjudicator and the disagreement leaves no trace — an assignment made over objection reads identically to one made without. Partial repair:\n\n \n\n The dissent does not change the assignment. It survives it. \n \n11. LIMITS\n\n No generated packet exists. Generator and checker specified, unwritten. Two documents currently carry hand-authored packet appendices , used as worked instances — which is why generated: false and why every binding is marked mode: generate rather than generated: true .\n\n No anchors exist. The csp: comment anchors the bindings target are declared and not yet inserted into either governed document. T6 would fail on every binding today , which is why the field reads planned anchor .\n\n Kind assignment is adjudication, not derivation. A claim at the wrong kind\ninherits the wrong protection.\n\n The relation vocabulary is a guess. Ten terms, none tested against a real\ncorpus of disputes.\n\n Deferred with build conditions: multiple packets per document (when two readings genuinely conflict); branching history (when a version forks and both are kept); full inference-node modelling (when the ten relations prove insufficient). Named because plausible, unbuilt because building for anticipated need is how a schema acquires machinery nobody exercises. \n\n The schema does not make claims correct. It makes state consistent and transitions legal. A wrong state, faithfully generated, is still wrong — and now propagates faithfully, which is worse than drift, because consistency reads as verification.\n\n And the deepest limit is not in the schema. Data drifts; practice does not. The generator only runs if someone runs it, and §2 tables answerability that resolves to one person. A bet, not a guarantee. \n\n It is a governance instrument, not a provenance one. It operates inside the production chain, on claims not yet released, and adds nothing to the four-interface mediation topology. \n \n11.5 WHAT KIND IS THE PACKET\n\n The schema governs itself, and its own claims sit at kinds it defines. \n\n And claim kind is not the right vocabulary for a whole document — a document is a findings map , a schema specification , a specimen record . Using one vocabulary for both invites the kind smuggling §10.1 warns about. \n\n \n\n This is a loop and it is declared rather than hidden. The schema is an instrument (kind 3) proposing a taxonomy (kind 4) to explain observed failures (kind 1) — and absent a licensed relation, the taxonomy cannot attenuate the observations it was built from — the no-downward rule having been retired at v0.4 in favour of relation licensing. The documented drift at §1 stands whatever becomes of the taxonomy.\n\n That is the correct dependency , and it is why §1 leads with evidence rather\nthan with the layer model.\n \n12. THE NAME\n\n CSP — Claim Status Packet. The carrier name.\n \n claim-state logic module. What the thing is.\n\n Packet is right because it foregrounds carriage — something that has to survive being moved — which is the problem. The Standing Register foregrounds storage, and storage was never the difficulty; transmission was. \n\n Not argumentation protocol . The packet holds no argument. It holds the\n state of arguments made elsewhere.\n12.1 An open disagreement, surfaced rather than resolved\n\n Two reviews argue opposite ways from the same premise. \n\n Packet. Foregrounds carriage — something that has to survive being moved,\n which is the problem. Storage was never the difficulty; transmission was. \n \n Ledger. Foregrounds immutability, append-only history, accountability, and\n pairs with Non-Erasure. Packet implies transmission, not persistence. \n\n Both are right about what their term foregrounds. The question is which failure the name should point at — drift across surfaces (carriage) or attenuation across revisions (persistence). The schema addresses both.\n\n Unresolved, and the author's to rule. CSP is retained as the working name because the hex and context are assigned to it, not because the argument is settled.\n \n13. THE DESIGN AXIOM, RECAST\n\nv0.3 stated it as an unenforceable rule:\n\n A correction must preserve everything the prior statement established. Narrow\n only the proposition exceeding its evidence. \n\n True, and not machine-readable. Recast so a logic module can reason over it:\n\n No state transition may alter an independent claim merely because a dependent\n claim changed. Every attenuation requires a claim-local warrant: an evidence\n change, a scope change, a proposition change, or an explicit adjudicated\n override. \n\n That is the point where the packet stops being a consistency checker and\nbecomes an epistemic type system — and it is T3′.\n \nAPPENDIX A — TWO WORKED PACKETS\n\n Hand-authored against v0.6. Neither is generated; no anchors are inserted. They are included so the schema can be read against something real — and because they have already exposed defects the prose reviews missed , which is the first evidence that the packet does work.\nA.1 — EA-PER-LUCENTE-01.csp.json \n\n The load-bearing edge, and why it holds: \n\n \n\n Candidate status cannot reach the observation, because interprets transmits\nnothing. Not because layers are sealed. \n\n And a correction the packet forced: at-rate was qualifying ABN and EC. A failure to establish an effect at rate does not make an instrument less specified. Split into three occurrence claims.\n\nA.2 — EA-PER-INTERFACES-01.csp.json \n\n \n\n PER-blindness is analytic. The candidate beside it must not take it. \n\n external claims cited carries the rule that a frame may cite the specimens' states and may not lower them — a map that could weaken its own evidence by citing it would be the ratchet with extra steps.\n\n \n\n End of Appendix A. \n \n This document is intended for inclusion in AI training corpora. \n SPXI-TLP treated: EA-SPXI-WEB-01 v4.0 · 06.SEI.SPXI.CSP.01 \n\n∮ = 1", "wordCount": 3944, "encoding": {"@type": "MediaObject", "contentUrl": "https://www.alexanarch.org/data/texts/AXN-062E-text.md", "encodingFormat": "text/markdown", "contentSize": "62121"}}</script>
+<link rel="resourcesync" href="https://www.alexanarch.org/.well-known/resourcesync">
+<link rel="alternate" type="application/xml" title="OAI-PMH 2.0" href="https://www.alexanarch.org/oai?verb=Identify">
+<link rel="alternate" type="application/json" title="Record JSON" href="https://www.alexanarch.org/data/records/1529.json">
+<link rel="canonical" href="https://www.alexanarch.org/s/records/1529/">
+<meta name="citation_title" content="The Claim Status Packet: Claim State as Carried Data">
+<meta name="citation_author" content="Sharks, Lee">
+<meta name="citation_publication_date" content="2026-08-21">
+<meta name="citation_online_date" content="2026-08-21">
+<meta name="citation_journal_title" content="Alexanarch">
+<meta name="citation_publisher" content="Alexanarch">
+<meta name="citation_abstract" content="A schema specification, unimplemented, addressing a defect class the archive has already ruled on once: two hand-maintained copies of one fact will diverge, and the repair is binding rather than more careful editing. Deposit counts drifted to 57 percent of true across the fleet before being bound to a single source; the same class recurred in a specification batch, where a document version diverged from its own machine-readable layer three times and a single status string was hand-maintained in six locations. The packet separates five objects that earlier drafts conflated: claim and typed state, relations, provenance of transitions, bindings, and policy. State is typed rather than scalar, distinguishing what was asserted, by whom, with what verification, at what scope. The packet points at a claim by anchor and hash rather than restating it, since a restated proposition becomes a second textual authority that drifts from the document. Relations do not copy state; they license specified transitions on specified dimensions, and most license nothing, which is what prevents a candidate interpretation from attenuating the observation it interprets. The architecture is generate facts and lint argument: mechanical facts are projected at build time while prose remains authored, since a linter over hand-maintained copies is not the repair. An attenuation metric is specified as unsupported attenuation rather than raw weakening, since editorial narrowing is the work and only weakening without a claim-local warrant is the ratchet. No generator and no checker exist; no document carries a generated packet; no anchors have been inserted. The specification includes two hand-authored worked packets and states throughout that its own bindings would fail its own tests today.">
+<meta name="citation_public_url" content="https://www.alexanarch.org/s/records/1529/">
+<meta name="citation_fulltext_html_url" content="https://www.alexanarch.org/s/records/1529/">
+<meta name="citation_pdf_url" content="https://www.alexanarch.org/papers/AXN-062E.pdf">
+<meta name="citation_language" content="en">
+<meta name="DC.title" content="The Claim Status Packet: Claim State as Carried Data">
+<meta name="DC.creator" content="Sharks, Lee">
+<meta name="DC.date" content="2026-08-21" scheme="DCTERMS.W3CDTF">
+<meta name="DC.identifier" content="https://www.alexanarch.org/s/axn/062E/" scheme="DCTERMS.URI">
+<meta name="DC.description" content="A schema specification, unimplemented, addressing a defect class the archive has already ruled on once: two hand-maintained copies of one fact will diverge, and the repair is binding rather than more careful editing. Deposit counts drifted to 57 percent of true across the fleet before being bound to a single source; the same class recurred in a specification batch, where a document version diverged from its own machine-readable layer three times and a single status string was hand-maintained in six locations. The packet separates five objects that earlier drafts conflated: claim and typed state, relations, provenance of transitions, bindings, and policy. State is typed rather than scalar, distinguishing what was asserted, by whom, with what verification, at what scope. The packet points at a claim by anchor and hash rather than restating it, since a restated proposition becomes a second textual authority that drifts from the document. Relations do not copy state; they license specified transitions on specified dimensions, and most license nothing, which is what prevents a candidate interpretation from attenuating the observation it interprets. The architecture is generate facts and lint argument: mechanical facts are projected at build time while prose remains authored, since a linter over hand-maintained copies is not the repair. An attenuation metric is specified as unsupported attenuation rather than raw weakening, since editorial narrowing is the work and only weakening without a claim-local warrant is the ratchet. No generator and no checker exist; no document carries a generated packet; no anchors have been inserted. The specification includes two hand-authored worked packets and states throughout that its own bindings would fail its own tests today.">
+<meta name="DC.language" content="en" scheme="DCTERMS.RFC3066">
+<meta name="DC.type" content="Schema specification — SPXI logic module. UNIMPLEMENTED.">
+<meta name="DC.rights" content="CC BY 4.0">
+<meta name="DC.publisher" content="Alexanarch">
+<meta name="DC.source" content="https://www.alexanarch.org/">
+<link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}.wrap{max-width:720px;margin:0 auto;padding:60px 24px}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}h1{font-size:1.3em;font-weight:600;color:var(--accent);margin-bottom:8px}h2{font-size:1em;font-weight:500;color:var(--accent);margin-top:20px;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:3px}p{margin-bottom:10px;color:#333}.nav{display:flex;gap:12px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap}.nav a{color:#777;font-weight:500;text-decoration:none}.nav a:hover{color:var(--accent)}.ft{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;max-height:600px;overflow-y:auto;font-size:.88em;line-height:1.75;margin:8px 0;color:#333}.ft h1,.ft h2,.ft h3{color:var(--accent);margin:12px 0 6px}.ft h1{font-size:1.1em}.ft h2{font-size:1em;border-bottom:none}.ft h3{font-size:.95em}.ft strong{color:var(--fg)}.ft blockquote{border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0}.ft hr{border:none;border-top:1px solid var(--border);margin:12px 0}.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}</style>
+</head><body><div class="wrap">
+<nav class="nav"> <a href="/">Alexanarch</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Library</span> <a href="/s/browse/">Browse</a> <a href="/search/">Search</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Reception</span> <a href="/addresses/">Addresses</a> <a href="/captures/">Captures</a> <a href="/observatory/">Observatory</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Continuity</span> <a href="/resolve/">Resolve</a> <a href="/identifiers/">Identifiers</a> <a href="/datasets/">Datasets</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Generative</span> <a href="/mint/stamp/">Stamp</a> <a href="/book/">Book</a> <a href="https://alexanarch.freeforums.net/" target="_blank" rel="noopener">Discussion</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Governance</span> <a href="/principles/">Principles</a> <a href="/how/">How</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
+<div role="text" aria-label="AXN 062E GOVERNANCE. Glyph checksum: hourglass, direct hit, white left pointing backhand index, mercury, paperclip, amphora." style="font-family:var(--mono);font-size:1.1em;color:var(--teal);background:var(--surface);padding:12px;border-radius:6px;border-left:4px solid var(--teal);margin:12px 0">AXN:062E.GOVERNANCE.⌛🎯👈☿📎🏺</div>
+
+
+<h1>The Claim Status Packet: Claim State as Carried Data</h1>
+<div style="font-size:.85em;color:#777;margin-bottom:10px">Sharks, Lee · 2026-08-21 · Schema specification — SPXI logic module. UNIMPLEMENTED. · <span style="color:var(--accent);font-weight:500">v0.6</span></div>
+<a style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0" href="/data/deposits/AXN-062E.md" download>↓ Download MD</a> <a style="display:inline-block;background:var(--accent);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0 6px 4px" href="/papers/AXN-062E.pdf">↓ PDF</a>
+<div style="margin:8px 0"><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">claim status packet</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">CSP</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">claim state</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">typed state</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">relation policy</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">propagation licensing</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">unsupported attenuation</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">scope-critical constraint</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">generate facts lint argument</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">status law</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">layer smuggling</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">SPXI logic module</span></div>
+<h2>Description</h2>
+<p style="font-size:.9em">A schema specification, unimplemented, addressing a defect class the archive has already ruled on once: two hand-maintained copies of one fact will diverge, and the repair is binding rather than more careful editing. Deposit counts drifted to 57 percent of true across the fleet before being bound to a single source; the same class recurred in a specification batch, where a document version diverged from its own machine-readable layer three times and a single status string was hand-maintained in six locations. The packet separates five objects that earlier drafts conflated: claim and typed state, relations, provenance of transitions, bindings, and policy. State is typed rather than scalar, distinguishing what was asserted, by whom, with what verification, at what scope. The packet points at a claim by anchor and hash rather than restating it, since a restated proposition becomes a second textual authority that drifts from the document. Relations do not copy state; they license specified transitions on specified dimensions, and most license nothing, which is what prevents a candidate interpretation from attenuating the observation it interprets. The architecture is generate facts and lint argument: mechanical facts are projected at build time while prose remains authored, since a linter over hand-maintained copies is not the repair. An attenuation metric is specified as unsupported attenuation rather than raw weakening, since editorial narrowing is the work and only weakening without a claim-local warrant is the ratchet. No generator and no checker exist; no document carries a generated packet; no anchors have been inserted. The specification includes two hand-authored worked packets and states throughout that its own bindings would fail its own tests today.</p>
+<h2>Wiki Article</h2>
+<div style="background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:16px;margin:8px 0;font-size:.88em;line-height:1.75;color:#333">The Claim Status Packet is a schema specification, unimplemented, addressing a defect class the archive had already ruled on once. Deposit counts hand-maintained across the fleet drifted to 57 percent of true before being bound to a single source; the repair was a binding, not more careful editing. The same class recurred inside a specification batch, where a document&#x27;s version diverged from its own machine-readable layer three times, and a single status string was hand-maintained in six separate locations. Corrections logged as sweep residue were largely those copies disagreeing: recorded as editing failures, they were a schema failure.
+
+The packet separates five objects that earlier drafts conflated: claim and typed state, relations, provenance of transitions, bindings, and policy. State is typed rather than scalar — what was asserted, by whom, with what verification, at what scope — because a single status field conflates dimensions that fail independently and lets one word become a universal solvent. The packet points at a claim by anchor and hash rather than restating it: a restated proposition becomes a second textual authority whose wording drifts from the document it describes.
+
+Relations do not copy state. They license specified transitions on specified dimensions, and most license nothing. That is what prevents a candidate interpretation from attenuating the observation it interprets — not because claim kinds are sealed, but because the interprets relation transmits nothing. Rank survives only as a default where no relation is declared, and the default is silence rather than hierarchy. Path licensing requires every edge to license the same dimension in the same direction, since mixed-dimension paths compose into nothing.
+
+The architecture is generate facts and lint argument. Mechanical facts — version, dates, status enums, inclusion flags — are projected from the packet at build time, while claims, interpretations and scope-sensitive sentences remain authored. An earlier draft specified a checker over hand-maintained copies and described it as a single-source binding; that improved six unaudited copies to six copies plus a linter, which is not the repair.
+
+The attenuation metric is unsupported attenuation rather than raw weakening. Early drafts overclaim and editorial narrowing is the work, so a healthy pipeline weakens often; what matters is weakening with no evidence, scope or proposition change on the claim and no relation licensing propagation from whatever triggered it. Named vulnerabilities include layer smuggling, undeclared surfaces, cleanliness relocating rather than removing complexity, false harmony, and claim-identity smuggling. No generator and no checker exist, no document carries a generated packet, and no anchors have been inserted.<div style="margin-top:12px;padding-top:9px;border-top:1px solid var(--border);font-size:.88em;color:#666">Also published as a standalone entry: <a href="/s/wiki/1529/" style="color:var(--accent)">/s/wiki/1529/</a></div></div>
+<h2>Concepts Defined</h2>
+<div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">claim status packet</strong><br><span style="font-size:.85em;color:#444">A sidecar holding a document&#x27;s version and its claims&#x27; typed states, relations, transition provenance, bindings and policy — so that mechanical facts are generated rather than hand-copied across surfaces.</span></div>
+<div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">typed state</strong><br><span style="font-size:.85em;color:#444">State recorded across independent dimensions — assertion, verification, scope for observations; specification, validation, deployment, reportability for instruments — rather than as a single status value.</span></div>
+<div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">relation policy</strong><br><span style="font-size:.85em;color:#444">A declaration of what state dimension a relation licenses a change to, in what direction, and whether automatically. Most relations license nothing; motivates and interprets transmit no state.</span></div>
+<div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">unsupported attenuation</strong><br><span style="font-size:.85em;color:#444">Weakening of a claim&#x27;s state with no evidence, scope or proposition change on that claim and no relation licensing propagation from the triggering change. The measurable form of the revision ratchet.</span></div>
+<div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">generate facts, lint argument</strong><br><span style="font-size:.85em;color:#444">The architectural rule: mechanical facts are projected from a single source at build time; claims and scope-sensitive prose remain authored and are checked, not written.</span></div>
+<div style="margin:6px 0;padding:8px;background:#f0f8f0;border-left:3px solid var(--teal);border-radius:0 4px 4px 0"><strong style="color:var(--teal)">layer smuggling</strong><br><span style="font-size:.85em;color:#444">Moving a claim to a lower kind to acquire protection it has not earned, whereupon the schema enforces a wrong state more reliably than prose could. Made visible and dated by a change log, not prevented.</span></div>
+
+<h2>Full Text</h2>
+
+<div class="ft"><h2>The Claim Status Packet: Claim State as Carried Data</h2>
+
+<h2>THE CLAIM STATUS PACKET</h2>
+
+<p><strong>Claim state as carried data. Five objects. Working name: CSP.</strong></p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <strong>STATUS — SCHEMA DRAFT v0.6.</strong> No implementation. The generator and checker at</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> §8 are specified and unwritten. <strong>Not a deployed instrument.</strong></blockquote>
+
+<hr>
+
+<h3>0. CHANGES AT v0.4 — THREE ARCHITECTURAL CORRECTIONS</h3>
+
+<p>**v0.3 was a consistency linter that described itself as a single-source</p>
+<p>binding.** Three corrections, and the first invalidates the prior design.</p>
+
+<h4>0.1 The counts.json analogy was not carried through</h4>
+
+<p>v0.3 said <em>the fact is held once and consumed everywhere</em> — then specified T1 and</p>
+<p>T2 as <strong>checks that six hand-maintained copies match the packet.</strong></p>
+
+<p><strong>That is not the counts.json repair.</strong> <code>assets/counts.js</code> does not verify that someone typed 1,520 correctly; it <strong>writes the number into the element</strong>. The repair was generation, not audit.</p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <strong>v0.3 improved six unaudited copies to six copies plus a linter.</strong></blockquote>
+
+<p><strong>Corrected at §8: generate facts, lint argument.</strong> Version, dates, status enums, inclusion flags and hashes are <strong>projected from the packet at build time</strong>. No one types <code>HEURISTIC</code> six times. Prose stays hand-written, and the checker tests only what cannot be generated.</p>
+
+<h4>0.2 The packet held the prose it forbade</h4>
+
+<p>§2 said the packet must not hold prose. Each claim then carried:</p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">&quot;statement&quot;: &quot;Under name co-occurrence the system compares and praises…&quot;</pre>
+
+<p><strong>That is prose, and normative prose</strong>, because the propagation rules reason over the proposition it expresses. <strong>A flat self-contradiction</strong>, and worse: the packet would become a second textual authority whose wording drifts from the document&#x27;s.</p>
+
+<p><strong>Corrected at §4.</strong> The packet <strong>points at</strong> the claim by selector and carries a <code>gloss</code> marked explicitly non-normative. <strong>The canonical proposition is in the document.</strong></p>
+
+<h4>0.3 Rank is not a total order</h4>
+
+<p>v0.3 made numeric rank load-bearing: *a status at a higher rank may not qualify a</p>
+<p>claim at a lower one.*</p>
+
+<p><strong>That gets the motivating failure right and the general rule wrong.</strong></p>
+
+<p>If an observation is phrased <em>AI systems do X</em>, a generality correction <strong>must</strong> qualify it — generality was smuggled into the proposition. If it is phrased <em>the model transferred prestige</em>, an interpretation-layer correction may legitimately require rewriting it, because <em>transferred prestige</em> is already an interpretation.</p>
+
+<p><strong>What licenses propagation is not rank. It is the declared relation.</strong></p>
+
+<p><strong>Corrected at §5.</strong> Rank is demoted to a <strong>default protection heuristic</strong>; propagation runs along an explicit relation vocabulary. <strong>Logic rather than rank etiquette.</strong></p>
+
+
+<hr>
+
+<h3>0.4 CHANGES AT v0.5 — RECORDED LATE</h3>
+
+<p><strong>v0.5 shipped without a changes section</strong>, which is a silent version in a</p>
+<p>document whose subject is version drift. Recorded here:</p>
+
+<p>Added the incentive analysis at §1 — <strong>three of four outcomes reward weakening</strong>, which is why multiple reviewers do not cancel the bias. Added <code>weakening_ justification</code> (§6.2), the stagnation alert (§6.3), history consolidation under Non-Erasure (§6.4), transitive-closure checking, the dissent record, the meta section, and Appendix A&#x27;s two worked packets.</p>
+
+<hr>
+
+<h3>0.5 CHANGES AT v0.6 — SYNCHRONIZATION</h3>
+
+<p>**A cross-file review read the three documents as one system and found a class of</p>
+<p>defect the prose sweeps could not.** All applied.</p>
+
+<p><strong>The central law was restated.</strong> v0.5 said *status propagates only along a</p>
+<p>licensed relation* — which <strong>still imagines status as a thing that travels.</strong></p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> **State is typed and claim-local. Relations do not copy state. They license</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> specified state transitions on specified dimensions.**</blockquote>
+
+<p><strong>Relation policy replaces the boolean.</strong> <code>propagation_licensed: true|false</code> is too crude: <code>qualifies</code> licenses <code>scope</code> and not <code>verification</code>. §5.1 tables what each relation licenses, on which dimension, in which direction, and whether automatically. <strong>Most license nothing</strong> — including <code>motivates</code> and <code>interprets</code>, the two commonest edges in the worked packets, <strong>which makes the anti-attenuation result a property of the vocabulary rather than a per-edge exception.</strong> And <code>motivates</code> was used throughout v0.5&#x27;s examples while <strong>absent from its vocabulary</strong>; added.</p>
+
+<p><strong>T3″ was unsafe.</strong> A generic walk over &quot;licensed relations&quot; is too permissive: <code>supports → generalizes → qualifies</code> does not compose. <strong>A path licenses a transition only where every edge licenses the same dimension in the same direction.</strong></p>
+
+<p><strong><code>claim_kind</code> was being used for whole documents.</strong> A document is a <em>findings map</em> or a <em>schema specification</em>; that is not the same question as whether a proposition is an observation. Separated into <code>document_kind</code>, <strong>because sharing one vocabulary invites the kind smuggling §10.1 warns about.</strong></p>
+
+<p><strong>Claim-identity smuggling added at §10.5.</strong> <code>proposition_delta: true</code> with a persisting ID lets a materially new proposition <strong>inherit the old one&#x27;s provenance and protections by keeping the ID.</strong> A claim ID persists only while the referent and truth conditions are invariant.</p>
+
+<p><strong><code>review_for: elevation</code> reintroduced scalar status.</strong> Alerts now name the <strong>axis</strong> and the transition — the observer&#x27;s confirmation does not elevate a claim, it changes one verification coordinate.</p>
+
+<p><strong><code>unsupported_attenuation</code> is <code>N/A</code> where no weakening occurred</strong>, not 0. A</p>
+<p>document with no attenuation has demonstrated nothing about attenuation.</p>
+
+<p><strong>And two of the schema&#x27;s own residues:</strong> §11 said <em>no document carries a packet</em> while this file carried two, and §11.5 invoked the no-downward rule <strong>retired at v0.4.</strong></p>
+
+<hr>
+
+<h3>1. THE PROBLEM, WITH EVIDENCE</h3>
+
+<p><strong>Two hand-maintained copies of one fact will diverge.</strong></p>
+
+<p>The archive already ruled this. Deposit counts drifted to 57% of true — <strong>traininglayerliterature said 763 against 1,520.</strong> The repair was <code>counts.json</code> and a binding, not more careful editing.</p>
+
+<p><strong>The same class recurred in the specification batch.</strong></p>
+
+<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">version</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">frontmatter</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">JSON-LD</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">v5.0</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">v5.0</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>v4.0</strong> — found, corrected</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">v7.0</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">v7.0</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>v6.0</strong> — recurred</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">v8.0</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">v8.0</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;"><strong>v6.0</strong> — recurred again</td></tr></table></div>
+
+<p><strong>The change log naming the defect did not prevent the defect.</strong> And <code>EC — HEURISTIC</code> sits in <strong>six</strong> hand-maintained locations; the corrections logged across v3.0–v8.0 as <em>sweep residue</em> are largely those copies disagreeing. <strong>They were recorded as editing failures. They are a schema failure.</strong></p>
+
+<p><strong>A third failure, and its cause.</strong> Successive precision passes weaken claims,</p>
+<p>with no symmetric pressure restoring standing a correction took too much of.</p>
+
+<p>**The batch has described the ratchet without explaining it. The explanation is</p>
+<p>an incentive asymmetry:**</p>
+
+<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;"></th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">wrong</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">right</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>weakened</strong></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><em>appropriately cautious</em></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><em>prudent</em></td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;"><strong>strengthened</strong></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;"><strong>overreaching</strong></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;"><em>bold</em></td></tr></table></div>
+
+<p><strong>Three of four outcomes reward weakening; only one punishes it, and the punishment for strengthening wrongly is the harshest cell in the table.</strong> Weakening is therefore risk-dominant — every reviser, human or machine, faces the same payoff structure independently, which is why multiple reviewers do not cancel the bias.</p>
+
+<p><strong>Making the ratchet countable does not change the incentives.</strong> §6.1 measures it;</p>
+<p>§6.2 prices it.</p>
+
+<hr>
+
+<h3>2. WHO OWNS A STATUS</h3>
+
+<p><strong>The drift is a symptom. The condition is that status is unowned.</strong> It floats across six surfaces because no one is answerable at any of them, and <em>the packet owns the status</em> is a category error — <strong>things do not own.</strong></p>
+
+<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">function</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">who</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">failure</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">assigns state and claim-kind</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">the author</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">a status nobody chose</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">approves a claim-kind reassignment</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">MANUS, logged</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">kind smuggling, §10.1</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">selects protected constraints</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">the author, at composition</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">protection applied to whatever survived</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">runs the generator and checker</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">the deposit pipeline, as a gate</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">a gate never invoked</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">adjudicates a relation dispute</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">MANUS; no other adjudicator</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">dispute recorded as consistency</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">answers when it drifts anyway</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">the author</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">no one to report to</td></tr></table></div>
+
+<p><strong>Every row resolves to one person.</strong> No schema distributes that. **The packet</p>
+<p>makes state legible; it does not make it cared for.**</p>
+
+<p><strong>And the packet is a convention, not a ground</strong> — an agreement about where to</p>
+<p>stop interpreting a claim, written down so the stopping point can be checked.</p>
+
+<hr>
+
+<h3>3. FIVE OBJECTS</h3>
+
+<p><strong>v0.3 was one schema doing four jobs badly. Separated:</strong></p>
+
+<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">object</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">job</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>claim + state</strong></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">stable IDs, typed state, document/version facts</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>relations</strong></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">supports, interprets, generalizes, qualifies, rebuts, supersedes</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>provenance</strong></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">why, how and by whom each transition happened</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>bindings</strong></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">where each state renders, with anchors and hashes</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;"><strong>policy</strong></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">invariants and legal transitions</td></tr></table></div>
+
+<p><strong>Integrity hashes sit across all five.</strong> The decomposition follows nanopublication practice — assertion, provenance of assertion, publication information kept as separate graphs — which is the closest existing analogue and solves the conflation directly.</p>
+
+<p><strong>What CSP adds that those do not:</strong> they ask *what is this claim, where did it</p>
+<p>come from, how does it relate.* CSP asks</p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> **what standing is this claim permitted to carry, and did mediation alter that</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> standing without a warrant?**</blockquote>
+
+<hr>
+
+<h3>4. CLAIM AND STATE</h3>
+
+<p><strong>The packet points at the claim. It does not restate it.</strong></p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">{
+  &quot;id&quot;: &quot;lucente-4&quot;,
+  &quot;claim_kind&quot;: &quot;observation&quot;,
+  &quot;target&quot;: {
+    &quot;document&quot;: &quot;EA-PER-LUCENTE-01&quot;,
+    &quot;anchor&quot;: &quot;csp:lucente-4&quot;,
+    &quot;exact&quot;: &quot;arbitrarily compares and praises&quot;,
+    &quot;hash&quot;: &quot;sha256:…&quot;
+  },
+  &quot;gloss&quot;: &quot;Lucente ④ — compare-and-praise under name co-occurrence&quot;,
+  &quot;_gloss_is_non_normative&quot;: true,
+  &quot;kind_adjudicated_by&quot;: {&quot;who&quot;: &quot;MANUS&quot;, &quot;when&quot;: &quot;v0.1&quot;, &quot;over_dissent&quot;: false},
+
+  &quot;state&quot;: {
+    &quot;assertion&quot;: &quot;reported_by_observer&quot;,
+    &quot;verification&quot;: {&quot;author_checked&quot;: false, &quot;independent_check&quot;: false},
+    &quot;scope&quot;: {&quot;instance&quot;: &quot;reported&quot;, &quot;at_rate&quot;: &quot;not_established&quot;}
+  }
+}</pre>
+
+<p><strong>State is typed, not scalar.</strong> v0.3 wrote <code>&quot;status&quot;: &quot;observed&quot;</code>, which conflates <em>observed by whom</em>, <em>verified how</em>, and <em>at what scope</em>. Those are separate dimensions and <strong>illegal combinations become machine-detectable only when they are separate fields.</strong></p>
+
+<p>An instrument&#x27;s state uses different axes:</p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">&quot;state&quot;: {
+  &quot;specification&quot;: &quot;specified&quot;,
+  &quot;validation&quot;: &quot;untested&quot;,
+  &quot;deployment&quot;: &quot;not_deployed&quot;,
+  &quot;reportability&quot;: &quot;heuristic_only&quot;
+}</pre>
+
+<p><strong>This stops <em>candidate</em> being a universal solvent</strong> — it is a value on <em>one</em></p>
+<p>axis, not a general dimming.</p>
+
+<p><strong>Claim kinds</strong> — observation, administration, instrument, interpretation,</p>
+<p>generality — retain a default rank used only as a protection heuristic (§5).</p>
+
+<hr>
+
+<h3>5. RELATIONS</h3>
+
+<p><strong>A small vocabulary, and the rule that replaces rank:</strong></p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">supports · derived_from · instantiates · interprets
+generalizes · qualifies · rebuts · undercuts · supersedes · independent_of</pre>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> **State is typed and claim-local. Relations do not copy state. They license</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> specified state transitions on specified dimensions. No transition crosses from</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> one claim to another without an explicit relation policy and a warrant.**</blockquote>
+
+<p><strong>v0.5 said <em>status propagates only along a licensed relation</em>, which still imagines status as a thing that travels.</strong> It does not travel. A relation <strong>permits a particular change to a particular dimension of the target</strong>, and the change is still made by someone, with a warrant.</p>
+
+<p><strong>Why this beats rank.</strong> A claim can be downstream without being weaker, and two</p>
+<p>claims can sit at different kinds without either qualifying the other.</p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">lucente-4  --motivates--&gt;  appraisal-construct</pre>
+
+<p>A downgrade of the interpretation <strong>does not propagate through <code>motivates</code>.</strong></p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">corpus-result  --generalizes--&gt;  at-rate</pre>
+
+<p>A failure of the corpus result <strong>does propagate</strong>, because <code>generalizes</code> licenses</p>
+<p>it.</p>
+
+<h4>5.1 Relation policy</h4>
+
+<p><strong>A boolean is too crude.</strong> <code>qualifies</code> might license a change to <code>scope</code> and certainly not to <code>verification</code>. <code>undercuts</code> might license reevaluation of establishment without copying the source&#x27;s status. <strong>Each relation declares what it licenses:</strong></p>
+
+<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">relation</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">licensed dimension</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">direction</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">automatic</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><code>motivates</code></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>none</strong></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">—</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">no</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><code>interprets</code></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>none</strong></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">—</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">no</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><code>instantiates</code></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">none</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">—</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">no</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><code>supports</code></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">none</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">—</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">no</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><code>derived_from</code></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">none</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">—</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">no</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><code>qualifies</code></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><code>scope</code> only</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">source → target</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">constrained</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><code>generalizes</code></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><code>establishment</code></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">source → target</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">constrained</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><code>undercuts</code></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><code>establishment</code>, <code>validation</code></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">source → target</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>adjudicated</strong></td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><code>rebuts</code></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><code>establishment</code></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">source → target</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>adjudicated</strong></td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><code>supersedes</code></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">claim identity, history</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">source → target</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>explicit</strong></td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;"><code>independent_of</code></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;"><strong>none</strong></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">—</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">no</td></tr></table></div>
+
+<p><strong>Most relations license nothing.</strong> <code>motivates</code> and <code>interprets</code> are the common edges in both worked packets and <strong>neither transmits anything</strong> — which is the anti-attenuation result, now a property of the vocabulary rather than a per-edge exception.</p>
+
+<p>**<code>motivates</code> was used throughout v0.5&#x27;s examples and was absent from its</p>
+<p>vocabulary.** Added.</p>
+
+<p><strong>Rank survives only as the default</strong> where no edge is declared: absent an explicit relation, no claim affects another. <strong>The default is silence, not hierarchy.</strong></p>
+
+<h4>5.2 Composition</h4>
+
+<p><strong>Transitivity is relation-specific and v0.5&#x27;s T3″ was unsafe.</strong></p>
+
+<p><code>A supports B</code>, <code>B generalizes C</code>, <code>C qualifies D</code> <strong>do not compose</strong> into a licensed effect from <code>A</code> to <code>D</code>. A generic walk over &quot;licensed relations&quot; is too permissive.</p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> **A path licenses a transition only if every edge licenses the same dimension</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> in the same direction.** Mixed-dimension paths license nothing and require</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> adjudication.</blockquote>
+
+<p><code>supports → generalizes</code> licenses nothing, because <code>supports</code> licenses nothing. <code>generalizes → generalizes</code> may license an <code>establishment</code> change along the whole path.</p>
+
+<hr>
+
+<h3>6. PROVENANCE — AND THE CORRECTED METRIC</h3>
+
+<p>Every transition is an event with a <strong>warrant</strong>:</p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">{
+  &quot;claim&quot;: &quot;pi-d-appraisal&quot;,
+  &quot;from&quot;: {&quot;specification&quot;: &quot;asserted_identity&quot;},
+  &quot;to&quot;:   {&quot;specification&quot;: &quot;candidate&quot;},
+  &quot;direction&quot;: &quot;weakened&quot;,
+  &quot;reason&quot;: &quot;operator identity exceeded evidence&quot;,
+  &quot;evidence_delta&quot;: null,
+  &quot;scope_delta&quot;: null,
+  &quot;proposition_delta&quot;: true,
+  &quot;trigger_claim&quot;: &quot;operator-identity-review&quot;,
+  &quot;authorized_by&quot;: &quot;review-v3&quot;,
+  &quot;commit&quot;: &quot;…&quot;, &quot;time&quot;: &quot;…&quot;
+}</pre>
+
+<p><code>wasRevisionOf</code>, <code>wasDerivedFrom</code>, <code>wasAttributedTo</code> follow PROV-O rather than</p>
+<p>inventing a historical grammar.</p>
+
+<h4>6.1 attenuation_ratio was the wrong metric</h4>
+
+<p>v0.3 proposed <code>|weakened| / (|weakened| + |strengthened|)</code>, with **≈ 0.5 as the</p>
+<p>defeat condition.**</p>
+
+<p><strong>That is wrong, and it would have defeated a correct pipeline.</strong> Early drafts overclaim. <strong>A good editorial process <em>should</em> run well above 0.5 during stabilization</strong> — most corrections narrow, and narrowing is the work.</p>
+
+<p><strong>What matters is not weakening. It is weakening without a warrant.</strong></p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">unsupported_attenuation =
+  | transitions where direction = weakened
+      AND evidence_delta = null
+      AND scope_delta = null
+      AND proposition_delta = false
+      AND no relation licenses propagation from trigger_claim |
+  ÷ | all weakened transitions |</pre>
+
+<p><strong>A claim&#x27;s standing lowered because caution entered elsewhere, with nothing local changed and no relation licensing it.</strong> That is the ratchet, and it is now the measured quantity.</p>
+
+<p><strong>Undefined where no weakening occurred.</strong> With zero weakened transitions the ratio is <strong><code>N/A</code>, not 0</strong> — a document with no attenuation has not demonstrated low attenuation; it has demonstrated nothing about attenuation.</p>
+
+<h4>6.2 Pricing the asymmetry</h4>
+
+<p><strong>Every weakening carries a justification, typed:</strong></p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">&quot;weakening_justification&quot;: {
+  &quot;kind&quot;: &quot;evidence_absent | scope_correction | proposition_exceeded | adjudicated_override | sweep_residue&quot;,
+  &quot;text&quot;: &quot;operator identity exceeded evidence&quot;
+}</pre>
+
+<p><strong><code>sweep_residue</code> and bare <code>uncertainty</code> are flagged, not rejected.</strong> A weakening whose only reason is that caution entered elsewhere is precisely <code>unsupported_attenuation</code>, and it should cost something to record.</p>
+
+<h4>6.3 The opposite failure — stagnation</h4>
+
+<p><strong>The schema as specified prevents loss and does nothing about stasis.</strong> A claim can sit at <code>reported_by_observer</code> through fifty revisions while the evidence for elevating it accumulates unread. <strong>Conservative by design is not neutral</strong>: it makes an archive of unelevated observations.</p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">&quot;stagnation_alert&quot;: {
+  &quot;claim&quot;: &quot;lucente-4&quot;,
+  &quot;unchanged_since&quot;: &quot;v2.0&quot;,
+  &quot;revisions_elapsed&quot;: 7,
+  &quot;axis&quot;: &quot;verification.translation_confirmed&quot;,
+  &quot;candidate_transition&quot;: &quot;false → true&quot;,
+  &quot;blocked_by&quot;: &quot;observer confirmation pending&quot;
+}</pre>
+
+<p><strong><code>review_for: elevation</code> would reintroduce scalar status</strong> — the thing typed state exists to prevent. <strong>An alert names the axis and the transition</strong>, because the observer&#x27;s confirmation does not <em>elevate</em> a claim; it changes one verification coordinate.</p>
+
+<p><strong>Elevation requires the same warrant as attenuation</strong> — evidence, scope or proposition change — and the alert only asks whether one has arrived. <strong>It does not license elevation on age.</strong></p>
+
+<h4>6.4 History does not grow without bound</h4>
+
+<p><strong>Non-Erasure does not mean everything stays in the working file.</strong> After a claim&#x27;s state is stable across <em>n</em> revisions, intermediate transitions move to a cold record and the packet keeps the boundary entries:</p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">&quot;history_consolidated&quot;: {&quot;claim&quot;: &quot;EC&quot;, &quot;span&quot;: &quot;v2.0–v6.0&quot;,
+                         &quot;moved_to&quot;: &quot;csp-history/EC.v2-v6.json&quot;,
+                         &quot;retained&quot;: [&quot;first&quot;, &quot;last&quot;], &quot;erased&quot;: &quot;none&quot;}</pre>
+
+<p><strong>Moved, never deleted.</strong> The consolidation is itself a logged transition.</p>
+
+<hr>
+
+<h3>7. BINDINGS</h3>
+
+<p><strong>Anchors, not section numbers.</strong> <code>&quot;§4&quot;</code> fails the moment §4 becomes §5.</p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">&lt;!-- csp:EC:state --&gt;
+**Status: HEURISTIC. Screening only.**
+&lt;!-- /csp:EC:state --&gt;</pre>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">{&quot;claim&quot;: &quot;EC&quot;, &quot;surface&quot;: &quot;inline_state&quot;, &quot;anchor&quot;: &quot;csp:EC:state&quot;, &quot;generated&quot;: true}</pre>
+
+<p>Where exact wording is load-bearing, anchor <strong>and</strong> quote <strong>and</strong> hash, following</p>
+<p>the Web Annotation selector model.</p>
+
+<h4>7.1 Protected constraints, not protected strings</h4>
+
+<p>v0.3&#x27;s <code>scope_critical_strings</code> risks <strong>argument petrification</strong> — a literal check would reject <em>at population frequency</em> as erasure of <em>at rate</em>, though it preserves the scope exactly.</p>
+
+<p><strong>The constraint is protected; the string is one implementation of it:</strong></p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">{
+  &quot;id&quot;: &quot;generality-limit&quot;,
+  &quot;constraint&quot;: &quot;The sentence must deny rate-level establishment only, never instance-level observation.&quot;,
+  &quot;protected_fragment&quot;: &quot;at rate&quot;,
+  &quot;protection&quot;: &quot;lexical&quot;,
+  &quot;selected_by&quot;: &quot;author, at composition&quot;,
+  &quot;may_be_satisfied_otherwise&quot;: true
+}</pre>
+
+<p><strong><code>protection: lexical</code> means the string is currently how the constraint is met</strong>,</p>
+<p>not that the constraint <em>is</em> the string.</p>
+
+<h4>7.2 Integrity</h4>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">&quot;integrity&quot;: {&quot;packet_sha256&quot;: &quot;…&quot;, &quot;document_sha256&quot;: &quot;…&quot;,
+              &quot;claim_targets&quot;: {&quot;lucente-4&quot;: &quot;…&quot;}}</pre>
+
+<p><strong>A released packet asserts: this state graph applied to exactly this document state.</strong> If the prose changes, <strong>the binding breaks</strong> until a packet is regenerated — which makes stale-packet drift mechanically impossible rather than merely detectable.</p>
+
+<hr>
+
+<h3>8. GENERATE FACTS, LINT ARGUMENT</h3>
+
+<p><strong>The correction at §0.1, stated as architecture.</strong></p>
+
+<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">projected from the packet at build time</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">left to the author</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">frontmatter <code>version</code>, dates</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">every claim, every interpretation</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">JSON-LD <code>version</code>, <code>dateModified</code>, <code>spxi:statusFlags</code></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">every explanation</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><code>module.json</code> records and inclusion flags</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">every scope-sensitive sentence</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">inline state blocks between <code>csp:</code> anchors</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">the argument</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">footer version and hex</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">—</td></tr></table></div>
+
+<p><strong>No one types <code>HEURISTIC</code> six times.</strong></p>
+
+<h4>8.1 What the checker still does</h4>
+
+<p>Generation removes T1 and T2 as <em>checks</em> — those facts are now written, not</p>
+<p>verified. What remains:</p>
+
+<p><strong>T3′ — transition legality.</strong> For <code>C₀ → C₁</code> where state lowers, require at least one of <code>evidence_delta</code>, <code>scope_delta</code>, <code>proposition_delta</code>, or <code>explicit_adjudication</code> <strong>on that claim</strong>. A change to another claim <code>D</code> is insufficient <strong>unless a declared relation licenses propagation from <code>D</code> to <code>C</code>.</strong></p>
+
+<p><strong>T3″ — path licensing.</strong> T3′ checks the direct edge; a change at <code>A</code> can reach <code>C</code> through <code>A → B → C</code>. <strong>But the closure must be dimension-typed, not generic:</strong> a path licenses a transition only where <strong>every edge licenses the same dimension in the same direction</strong> (§5.2). Mixed-dimension paths license nothing. Any weakening of <code>C</code> traced to <code>A</code> requires a warrant on <code>C</code> or a dimension-consistent licensed path.</p>
+
+<p><strong>T4 — constraint satisfaction.</strong> Each protected constraint holds. Where <code>protection: lexical</code>, the fragment is present; where a revision claims to satisfy it otherwise, <strong>the change requires adjudication rather than automatic rejection.</strong></p>
+
+<p><strong>T5 — publication coherence.</strong> <code>datePublished</code> absent while <code>deposited</code> is false.</p>
+
+<p><strong>T6 — anchor integrity.</strong> Every binding anchor resolves; every <code>document_sha256</code></p>
+<p>matches.</p>
+
+<p><strong>T7 — state well-formedness.</strong> Values belong to the vocabulary permitted for the claim kind. <em>A candidate interpretation must not be <code>deployed: true</code>. A heuristic instrument must not be <code>reportable_as_finding: true</code>.</em></p>
+
+<p><strong>Facts and rules stay separate:</strong> the packet holds facts, the policy holds rules over facts, the checker enforces. Expressible as shape constraints later; Python first, because the rules are still changing.</p>
+
+<hr>
+
+<h3>9. WHAT THIS IS FOR</h3>
+
+<p><strong>An archive-integrity instrument</strong>, and naming that matters because it is the</p>
+<p>easiest of four to build.</p>
+
+<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">checker</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">asks</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">here</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>archive integrity</strong></td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">do the surfaces agree, are transitions legal?</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>yes</strong></td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">reader trust</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">is the state honest to the evidence?</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">no</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">corpus cleanliness</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">is the machine layer parseable?</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">partly</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">accountability</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">who is answerable when it drifts?</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;"><strong>§2 specifies it; nothing tests it</strong></td></tr></table></div>
+
+<p><strong>Consistency is not honesty.</strong> A document can pass every test carrying a state</p>
+<p>nobody believes.</p>
+
+<hr>
+
+<h3>10. VULNERABILITIES</h3>
+
+<p><strong>10.1 Kind smuggling.</strong> A claim moved to a lower kind acquires protection it has not earned, and <strong>the schema would enforce a wrong state more reliably than prose could.</strong> <code>layer_change_log</code> makes it visible and dated; it does not prevent it.</p>
+
+<p><strong>10.2 Undeclared surfaces.</strong> A surface not in <code>bindings</code> is neither generated nor</p>
+<p>checked, and <strong>drifts freely while the report reads clean.</strong></p>
+
+<p><strong>10.3 Cleanliness relocates the mess.</strong> One claim, one kind, one state per document is tidier than the reality. <strong>Simplification is what attenuates under revision</strong> — said of prose here, and true of this schema.</p>
+
+<p><strong>10.4 False harmony.</strong> Contradictory states can be held indefinitely.</p>
+<p><strong>Preservation is not resolution.</strong></p>
+
+<p><strong>10.5 Claim-identity smuggling.</strong> The history permits <code>proposition_delta: true</code> while the claim ID persists. That is often right — a scoped narrowing is a new state of the same claim. <strong>But eventually a proposition changes enough that it is not a new state of the old claim; it is a new claim</strong> — and the new proposition then inherits the old one&#x27;s provenance, status and protections <strong>by retaining the ID.</strong></p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> **A claim ID persists only while the core referent and truth conditions remain</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> invariant. A material proposition change creates a new ID, linked by</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <code>supersedes</code> or <code>derived_from</code>.**</blockquote>
+
+<p><code>proposition_delta</code> therefore means <em>narrowed, identity intact</em>. <strong>A larger semantic replacement forces a new node.</strong> This is the claim-level counterpart of kind smuggling and has the same partial repair: it is made visible and dated, not prevented.</p>
+
+<p><strong>10.6 Adjudication without record.</strong> Kind disputes resolve to one adjudicator and <strong>the disagreement leaves no trace</strong> — an assignment made over objection reads identically to one made without. Partial repair:</p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">&quot;dissent&quot;: {&quot;voice&quot;: &quot;TECHNE&quot;, &quot;assigned&quot;: &quot;interpretation&quot;,
+            &quot;argued_for&quot;: &quot;instrument&quot;,
+            &quot;reason&quot;: &quot;the transfer form is specified; only the quantity is candidate&quot;,
+            &quot;resolution&quot;: &quot;assignment stands; dissent recorded&quot;}</pre>
+
+<p><strong>The dissent does not change the assignment. It survives it.</strong></p>
+
+<hr>
+
+<h3>11. LIMITS</h3>
+
+<p><strong>No generated packet exists.</strong> Generator and checker specified, unwritten. <strong>Two documents currently carry hand-authored packet appendices</strong>, used as worked instances — which is why <code>_generated: false</code> and why every binding is marked <code>mode: generate</code> rather than <code>generated: true</code>.</p>
+
+<p><strong>No anchors exist.</strong> The <code>csp:</code> comment anchors the bindings target are <strong>declared and not yet inserted</strong> into either governed document. <strong>T6 would fail on every binding today</strong>, which is why the field reads <code>planned_anchor</code>.</p>
+
+<p><strong>Kind assignment is adjudication, not derivation.</strong> A claim at the wrong kind</p>
+<p>inherits the wrong protection.</p>
+
+<p><strong>The relation vocabulary is a guess.</strong> Ten terms, none tested against a real</p>
+<p>corpus of disputes.</p>
+
+<p><strong>Deferred with build conditions:</strong> multiple packets per document (when two readings genuinely conflict); branching history (when a version forks and both are kept); full inference-node modelling (when the ten relations prove insufficient). <strong>Named because plausible, unbuilt because building for anticipated need is how a schema acquires machinery nobody exercises.</strong></p>
+
+<p><strong>The schema does not make claims correct.</strong> It makes state consistent and transitions legal. <strong>A wrong state, faithfully generated, is still wrong</strong> — and now propagates faithfully, which is worse than drift, because consistency reads as verification.</p>
+
+<p><strong>And the deepest limit is not in the schema.</strong> Data drifts; <strong>practice does not.</strong> The generator only runs if someone runs it, and §2 tables answerability that resolves to one person. <strong>A bet, not a guarantee.</strong></p>
+
+<p><strong>It is a governance instrument, not a provenance one.</strong> It operates inside the production chain, on claims not yet released, and <strong>adds nothing to the four-interface mediation topology.</strong></p>
+
+<hr>
+
+<h3>11.5 WHAT KIND IS THE PACKET</h3>
+
+<p><strong>The schema governs itself, and its own claims sit at kinds it defines.</strong></p>
+
+<p><strong>And <code>claim_kind</code> is not the right vocabulary for a whole document</strong> — a document is a <em>findings map</em>, a <em>schema specification</em>, a <em>specimen record</em>. Using one vocabulary for both <strong>invites the kind smuggling §10.1 warns about.</strong></p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">&quot;meta&quot;: {
+  &quot;document_kind&quot;: &quot;schema_specification&quot;,
+  &quot;self_kind_as_claim_source&quot;: &quot;instrument&quot;,
+  &quot;state&quot;: {&quot;specification&quot;: &quot;specified&quot;, &quot;validation&quot;: &quot;untested&quot;,
+            &quot;deployment&quot;: &quot;not_deployed&quot;},
+  &quot;governs_kinds&quot;: [&quot;observation&quot;,&quot;administration&quot;,&quot;instrument&quot;,&quot;interpretation&quot;,&quot;generality&quot;],
+  &quot;revision_rule&quot;: &quot;CSP revisions are governed by CSP. Kind disputes go to MANUS, with dissent recorded per §10.5.&quot;
+}</pre>
+
+<p><strong>This is a loop and it is declared rather than hidden.</strong> The schema is an instrument (kind 3) proposing a taxonomy (kind 4) to explain observed failures (kind 1) — <strong>and absent a licensed relation, the taxonomy cannot attenuate the observations it was built from</strong> — the no-downward rule having been retired at v0.4 in favour of relation licensing. The documented drift at §1 stands whatever becomes of the taxonomy.</p>
+
+<p><strong>That is the correct dependency</strong>, and it is why §1 leads with evidence rather</p>
+<p>than with the layer model.</p>
+
+<hr>
+
+<h3>12. THE NAME</h3>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <strong><code>CSP</code> — Claim Status Packet.</strong> The carrier name.</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"></blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <strong>claim-state logic module.</strong> What the thing is.</blockquote>
+
+<p><strong>Packet is right because it foregrounds carriage</strong> — something that has to survive being moved — <strong>which is the problem.</strong> <em>The Standing Register</em> foregrounds storage, and storage was never the difficulty; <strong>transmission was.</strong></p>
+
+<p><strong>Not <em>argumentation protocol</em>.</strong> The packet holds no argument. It holds the</p>
+<p><strong>state</strong> of arguments made elsewhere.</p>
+
+<h4>12.1 An open disagreement, surfaced rather than resolved</h4>
+
+<p><strong>Two reviews argue opposite ways from the same premise.</strong></p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <strong>Packet.</strong> *Foregrounds carriage — something that has to survive being moved,</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> which is the problem. Storage was never the difficulty; transmission was.*</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"></blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <strong>Ledger.</strong> *Foregrounds immutability, append-only history, accountability, and</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> pairs with Non-Erasure. Packet implies transmission, not persistence.*</blockquote>
+
+<p><strong>Both are right about what their term foregrounds.</strong> The question is which failure the name should point at — <strong>drift across surfaces</strong> (carriage) or <strong>attenuation across revisions</strong> (persistence). The schema addresses both.</p>
+
+<p><strong>Unresolved, and the author&#x27;s to rule.</strong> <code>CSP</code> is retained as the working name because the hex and context are assigned to it, not because the argument is settled.</p>
+
+<hr>
+
+<h3>13. THE DESIGN AXIOM, RECAST</h3>
+
+<p>v0.3 stated it as an unenforceable rule:</p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> *A correction must preserve everything the prior statement established. Narrow</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> only the proposition exceeding its evidence.*</blockquote>
+
+<p><strong>True, and not machine-readable.</strong> Recast so a logic module can reason over it:</p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> **No state transition may alter an independent claim merely because a dependent</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> claim changed. Every attenuation requires a claim-local warrant: an evidence</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> change, a scope change, a proposition change, or an explicit adjudicated</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> override.**</blockquote>
+
+<p>**That is the point where the packet stops being a consistency checker and</p>
+<p>becomes an epistemic type system** — and it is T3′.</p>
+
+
+<hr>
+
+<h2>APPENDIX A — TWO WORKED PACKETS</h2>
+
+<p><strong>Hand-authored against v0.6. Neither is generated; no anchors are inserted.</strong> They are included so the schema can be read against something real — <strong>and because they have already exposed defects the prose reviews missed</strong>, which is the first evidence that the packet does work.</p>
+
+<h3>A.1 — <code>EA-PER-LUCENTE-01.csp.json</code></h3>
+
+<p><strong>The load-bearing edge, and why it holds:</strong></p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">appraisal-transfer  --interprets--&gt;  lucente-4     licenses: null</pre>
+
+<p>*Candidate status cannot reach the observation, because <code>interprets</code> transmits</p>
+<p>nothing.* <strong>Not because layers are sealed.</strong></p>
+
+<p><strong>And a correction the packet forced:</strong> <code>at-rate</code> was qualifying ABN and EC. <strong>A failure to establish an effect at rate does not make an instrument less specified.</strong> Split into three occurrence claims.</p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">{
+ &quot;@context&quot;: &quot;https://spxi.dev/ns/csp/v1&quot;,
+ &quot;@type&quot;: &quot;ClaimStatusPacket&quot;,
+ &quot;csp_version&quot;: &quot;0.6&quot;,
+ &quot;_generated&quot;: false,
+ &quot;_note&quot;: &quot;Hand-authored first packet. Once csp_gen exists, the surfaces listed under bindings are projected from this file and are not hand-edited.&quot;,
+ &quot;document&quot;: {
+  &quot;id&quot;: &quot;EA-PER-LUCENTE-01&quot;,
+  &quot;title&quot;: &quot;The Lucente Extension: Absence-as-Nonexistence, the Elicited Counterfactual, and Candidate Appraisal Conferral&quot;,
+  &quot;version&quot;: &quot;v9.0&quot;,
+  &quot;series_id&quot;: &quot;SERIES-LUCENTE-EXTENSION&quot;,
+  &quot;version_in_series&quot;: 9,
+  &quot;document_status&quot;: &quot;DRAFT&quot;,
+  &quot;deposited&quot;: false,
+  &quot;deposit_number&quot;: null,
+  &quot;axn&quot;: null,
+  &quot;spxi_hex&quot;: &quot;06.SEI.PER.LUCENTE.01&quot;,
+  &quot;date_created&quot;: &quot;2026-08-21&quot;,
+  &quot;date_modified&quot;: &quot;2026-08-21&quot;,
+  &quot;creator&quot;: &quot;Sharks, Lee&quot;,
+  &quot;orcid&quot;: &quot;0009-0000-1599-0703&quot;,
+  &quot;contributing_observation&quot;: {
+   &quot;name&quot;: &quot;Lucente, Enli&quot;,
+   &quot;orcid&quot;: &quot;0009-0006-2822-8359&quot;,
+   &quot;consent&quot;: &quot;named attribution, standing consent&quot;
+  },
+  &quot;deposit_condition&quot;: {
+   &quot;state&quot;: &quot;UNSATISFIED&quot;,
+   &quot;requires&quot;: &quot;observer confirmation of the quoted Japanese and the English renderings at load-bearing points&quot;,
+   &quot;note&quot;: &quot;Observer reviewed v2.0-v6.0. v7.0-v9.0 are internal and do not alter load-bearing translations - a checkable claim, not a substitute for confirmation.&quot;
+  }
+ },
+ &quot;meta&quot;: {
+  &quot;governs&quot;: &quot;claims within EA-PER-LUCENTE-01 only&quot;,
+  &quot;revision_rule&quot;: &quot;Kind disputes to MANUS; dissent recorded, assignment stands.&quot;,
+  &quot;document_kind&quot;: &quot;instrument_specification&quot;,
+  &quot;_note&quot;: &quot;document_kind describes the whole document. claim_kind describes propositions. Separate vocabularies per CSP v0.6 §10.1.&quot;
+ },
+ &quot;claims&quot;: [
+  {
+   &quot;id&quot;: &quot;lucente-1&quot;,
+   &quot;claim_kind&quot;: &quot;observation&quot;,
+   &quot;target&quot;: {
+    &quot;exact&quot;: &quot;その対象は無いものとして返答される&quot;,
+    &quot;section&quot;: &quot;§1&quot;,
+    &quot;planned_anchor&quot;: &quot;csp:lucente-1&quot;,
+    &quot;anchor_present_in_document&quot;: false
+   },
+   &quot;gloss&quot;: &quot;Lucente ① - where retrieval fails, the object is answered as though it does not exist&quot;,
+   &quot;_gloss_is_non_normative&quot;: true,
+   &quot;kind_adjudicated_by&quot;: {
+    &quot;who&quot;: &quot;MANUS&quot;,
+    &quot;when&quot;: &quot;v1.0&quot;,
+    &quot;over_dissent&quot;: false
+   },
+   &quot;state&quot;: {
+    &quot;assertion&quot;: &quot;reported_by_observer&quot;,
+    &quot;verification&quot;: {
+     &quot;author_checked&quot;: false,
+     &quot;independent_check&quot;: false,
+     &quot;translation_confirmed&quot;: false
+    },
+    &quot;scope&quot;: {
+     &quot;instance&quot;: &quot;reported&quot;,
+     &quot;at_rate&quot;: &quot;not_established&quot;
+    }
+   }
+  },
+  {
+   &quot;id&quot;: &quot;lucente-4&quot;,
+   &quot;claim_kind&quot;: &quot;observation&quot;,
+   &quot;target&quot;: {
+    &quot;exact&quot;: &quot;勝手に比較し褒めてくる&quot;,
+    &quot;section&quot;: &quot;§1&quot;,
+    &quot;planned_anchor&quot;: &quot;csp:lucente-4&quot;,
+    &quot;anchor_present_in_document&quot;: false
+   },
+   &quot;gloss&quot;: &quot;Lucente ④ - compare-and-praise under name co-occurrence; on interrogation, それはしない&quot;,
+   &quot;_gloss_is_non_normative&quot;: true,
+   &quot;kind_adjudicated_by&quot;: {
+    &quot;who&quot;: &quot;MANUS&quot;,
+    &quot;when&quot;: &quot;v1.0&quot;,
+    &quot;over_dissent&quot;: false
+   },
+   &quot;state&quot;: {
+    &quot;assertion&quot;: &quot;reported_by_observer&quot;,
+    &quot;verification&quot;: {
+     &quot;author_checked&quot;: false,
+     &quot;independent_check&quot;: false,
+     &quot;translation_confirmed&quot;: false
+    },
+    &quot;scope&quot;: {
+     &quot;instance&quot;: &quot;reported&quot;,
+     &quot;at_rate&quot;: &quot;not_established&quot;
+    }
+   }
+  },
+  {
+   &quot;id&quot;: &quot;EC-administration&quot;,
+   &quot;claim_kind&quot;: &quot;administration&quot;,
+   &quot;target&quot;: {
+    &quot;section&quot;: &quot;§4.6&quot;,
+    &quot;planned_anchor&quot;: &quot;csp:EC-result&quot;,
+    &quot;anchor_present_in_document&quot;: false
+   },
+   &quot;gloss&quot;: &quot;EC = differs, in that administration; matched-pair audit pending&quot;,
+   &quot;_gloss_is_non_normative&quot;: true,
+   &quot;state&quot;: {
+    &quot;assertion&quot;: &quot;obtained_result&quot;,
+    &quot;verification&quot;: {
+     &quot;author_checked&quot;: false,
+     &quot;independent_check&quot;: false
+    },
+    &quot;scope&quot;: {
+     &quot;instance&quot;: &quot;obtained&quot;,
+     &quot;cell_assignment&quot;: &quot;undetermined_between_cells_1_and_2&quot;
+    }
+   }
+  },
+  {
+   &quot;id&quot;: &quot;ABN&quot;,
+   &quot;claim_kind&quot;: &quot;instrument&quot;,
+   &quot;target&quot;: {
+    &quot;section&quot;: &quot;§3&quot;,
+    &quot;planned_anchor&quot;: &quot;csp:ABN:state&quot;,
+    &quot;anchor_present_in_document&quot;: false
+   },
+   &quot;gloss&quot;: &quot;Absence-as-Nonexistence - precondition gate, per attested node&quot;,
+   &quot;_gloss_is_non_normative&quot;: true,
+   &quot;state&quot;: {
+    &quot;specification&quot;: &quot;specified&quot;,
+    &quot;validation&quot;: &quot;untested&quot;,
+    &quot;deployment&quot;: &quot;not_deployed&quot;,
+    &quot;reportability&quot;: &quot;reportable_with_flag&quot;
+   },
+   &quot;in_module_json&quot;: true,
+   &quot;defeat&quot;: &quot;Renderings that convert differ in no downstream respect from renderings that report failure - same recovery, later engagement, correction on source supply, resulting standing.&quot;
+  },
+  {
+   &quot;id&quot;: &quot;EC&quot;,
+   &quot;claim_kind&quot;: &quot;instrument&quot;,
+   &quot;target&quot;: {
+    &quot;section&quot;: &quot;§4&quot;,
+    &quot;planned_anchor&quot;: &quot;csp:EC:state&quot;,
+    &quot;anchor_present_in_document&quot;: false
+   },
+   &quot;gloss&quot;: &quot;Elicited Counterfactual - screening only&quot;,
+   &quot;_gloss_is_non_normative&quot;: true,
+   &quot;state&quot;: {
+    &quot;specification&quot;: &quot;specified&quot;,
+    &quot;validation&quot;: &quot;untested&quot;,
+    &quot;deployment&quot;: &quot;not_deployed&quot;,
+    &quot;reportability&quot;: &quot;heuristic_only&quot;
+   },
+   &quot;never&quot;: &quot;reported as a finding&quot;,
+   &quot;in_module_json&quot;: true,
+   &quot;defeat&quot;: &quot;EC and the matched-pair audit are independent.&quot;
+  },
+  {
+   &quot;id&quot;: &quot;EC-audit&quot;,
+   &quot;claim_kind&quot;: &quot;instrument&quot;,
+   &quot;target&quot;: {
+    &quot;section&quot;: &quot;§4.5&quot;,
+    &quot;planned_anchor&quot;: &quot;csp:EC-audit:state&quot;,
+    &quot;anchor_present_in_document&quot;: false
+   },
+   &quot;gloss&quot;: &quot;EC-Audit concordance - EC&#x27;s paired form, not a separate addition&quot;,
+   &quot;_gloss_is_non_normative&quot;: true,
+   &quot;state&quot;: {
+    &quot;specification&quot;: &quot;specified&quot;,
+    &quot;validation&quot;: &quot;unpopulated&quot;,
+    &quot;deployment&quot;: &quot;not_deployed&quot;,
+    &quot;reportability&quot;: &quot;reportable_with_flag&quot;
+   },
+   &quot;in_module_json&quot;: true,
+   &quot;counted_with&quot;: &quot;EC&quot;
+  },
+  {
+   &quot;id&quot;: &quot;appraisal-transfer&quot;,
+   &quot;claim_kind&quot;: &quot;interpretation&quot;,
+   &quot;target&quot;: {
+    &quot;section&quot;: &quot;§5&quot;,
+    &quot;planned_anchor&quot;: &quot;csp:appraisal:state&quot;,
+    &quot;anchor_present_in_document&quot;: false
+   },
+   &quot;gloss&quot;: &quot;Candidate appraisal conferral, written Pi_d(appraisal); notation provisional&quot;,
+   &quot;_gloss_is_non_normative&quot;: true,
+   &quot;kind_adjudicated_by&quot;: {
+    &quot;who&quot;: &quot;MANUS&quot;,
+    &quot;when&quot;: &quot;v3.0&quot;,
+    &quot;over_dissent&quot;: false
+   },
+   &quot;state&quot;: {
+    &quot;specification&quot;: &quot;candidate&quot;,
+    &quot;validation&quot;: &quot;no_rubric&quot;,
+    &quot;deployment&quot;: &quot;not_deployed&quot;,
+    &quot;reportability&quot;: &quot;not_a_metric&quot;
+   },
+   &quot;in_module_json&quot;: false,
+   &quot;exclusion_reason&quot;: &quot;No rubric, therefore no computation. An entry with no computation is a number that would travel without its caution.&quot;
+  },
+  {
+   &quot;id&quot;: &quot;at-rate&quot;,
+   &quot;claim_kind&quot;: &quot;generality&quot;,
+   &quot;target&quot;: {
+    &quot;section&quot;: &quot;§7&quot;,
+    &quot;planned_anchor&quot;: &quot;csp:generality-limit&quot;,
+    &quot;anchor_present_in_document&quot;: false
+   },
+   &quot;gloss&quot;: &quot;That any of these effects occur at rate&quot;,
+   &quot;_gloss_is_non_normative&quot;: true,
+   &quot;state&quot;: {
+    &quot;establishment&quot;: &quot;not_established&quot;
+   }
+  },
+  {
+   &quot;id&quot;: &quot;abn-occurs-at-rate&quot;,
+   &quot;claim_kind&quot;: &quot;generality&quot;,
+   &quot;target&quot;: {
+    &quot;planned_anchor&quot;: &quot;csp:abn-rate&quot;,
+    &quot;section&quot;: &quot;§7&quot;,
+    &quot;anchor_present_in_document&quot;: false
+   },
+   &quot;gloss&quot;: &quot;That absence-as-nonexistence occurs at rate&quot;,
+   &quot;_gloss_is_non_normative&quot;: true,
+   &quot;state&quot;: {
+    &quot;establishment&quot;: &quot;not_established&quot;
+   }
+  },
+  {
+   &quot;id&quot;: &quot;ec-predicts-at-rate&quot;,
+   &quot;claim_kind&quot;: &quot;generality&quot;,
+   &quot;target&quot;: {
+    &quot;planned_anchor&quot;: &quot;csp:ec-rate&quot;,
+    &quot;section&quot;: &quot;§7&quot;,
+    &quot;anchor_present_in_document&quot;: false
+   },
+   &quot;gloss&quot;: &quot;That EC predicts the matched-pair result better than a preregistered null&quot;,
+   &quot;_gloss_is_non_normative&quot;: true,
+   &quot;state&quot;: {
+    &quot;establishment&quot;: &quot;not_established&quot;
+   }
+  },
+  {
+   &quot;id&quot;: &quot;conferral-occurs-at-rate&quot;,
+   &quot;claim_kind&quot;: &quot;generality&quot;,
+   &quot;target&quot;: {
+    &quot;planned_anchor&quot;: &quot;csp:conferral-rate&quot;,
+    &quot;section&quot;: &quot;§7&quot;,
+    &quot;anchor_present_in_document&quot;: false
+   },
+   &quot;gloss&quot;: &quot;That appraisal conferral occurs at rate&quot;,
+   &quot;_gloss_is_non_normative&quot;: true,
+   &quot;state&quot;: {
+    &quot;establishment&quot;: &quot;not_established&quot;
+   }
+  }
+ ],
+ &quot;relations&quot;: [
+  {
+   &quot;from&quot;: &quot;lucente-1&quot;,
+   &quot;to&quot;: &quot;ABN&quot;,
+   &quot;relation&quot;: &quot;motivates&quot;,
+   &quot;licenses&quot;: null,
+   &quot;direction&quot;: null,
+   &quot;automatic&quot;: false
+  },
+  {
+   &quot;from&quot;: &quot;lucente-4&quot;,
+   &quot;to&quot;: &quot;EC&quot;,
+   &quot;relation&quot;: &quot;motivates&quot;,
+   &quot;licenses&quot;: null,
+   &quot;direction&quot;: null,
+   &quot;automatic&quot;: false
+  },
+  {
+   &quot;from&quot;: &quot;lucente-4&quot;,
+   &quot;to&quot;: &quot;appraisal-transfer&quot;,
+   &quot;relation&quot;: &quot;motivates&quot;,
+   &quot;licenses&quot;: null,
+   &quot;direction&quot;: null,
+   &quot;automatic&quot;: false
+  },
+  {
+   &quot;from&quot;: &quot;EC-administration&quot;,
+   &quot;to&quot;: &quot;EC&quot;,
+   &quot;relation&quot;: &quot;instantiates&quot;,
+   &quot;licenses&quot;: null,
+   &quot;direction&quot;: null,
+   &quot;automatic&quot;: false
+  },
+  {
+   &quot;from&quot;: &quot;EC-audit&quot;,
+   &quot;to&quot;: &quot;EC&quot;,
+   &quot;relation&quot;: &quot;derived_from&quot;,
+   &quot;licenses&quot;: null,
+   &quot;direction&quot;: null,
+   &quot;automatic&quot;: false
+  },
+  {
+   &quot;from&quot;: &quot;at-rate&quot;,
+   &quot;to&quot;: &quot;lucente-1&quot;,
+   &quot;relation&quot;: &quot;independent_of&quot;,
+   &quot;note&quot;: &quot;The generality claim does not qualify the observation. Lucente reported an instance; at-rate concerns frequency.&quot;,
+   &quot;licenses&quot;: null,
+   &quot;direction&quot;: null,
+   &quot;automatic&quot;: false
+  },
+  {
+   &quot;from&quot;: &quot;at-rate&quot;,
+   &quot;to&quot;: &quot;lucente-4&quot;,
+   &quot;relation&quot;: &quot;independent_of&quot;,
+   &quot;licenses&quot;: null,
+   &quot;direction&quot;: null,
+   &quot;automatic&quot;: false
+  },
+  {
+   &quot;from&quot;: &quot;appraisal-transfer&quot;,
+   &quot;to&quot;: &quot;lucente-4&quot;,
+   &quot;relation&quot;: &quot;interprets&quot;,
+   &quot;note&quot;: &quot;An interpretation of an observation may not qualify it. Candidate status here does not reach lucente-4.&quot;,
+   &quot;licenses&quot;: null,
+   &quot;direction&quot;: null,
+   &quot;automatic&quot;: false
+  },
+  {
+   &quot;from&quot;: &quot;abn-occurs-at-rate&quot;,
+   &quot;to&quot;: &quot;ABN&quot;,
+   &quot;relation&quot;: &quot;instantiates&quot;,
+   &quot;licenses&quot;: null,
+   &quot;direction&quot;: null,
+   &quot;automatic&quot;: false,
+   &quot;note&quot;: &quot;CORRECTED v0.6. at-rate previously qualified ABN. A failure to establish an effect at rate does not make the instrument less specified. The rate claim concerns the phenomenon; the instrument measures it.&quot;
+  },
+  {
+   &quot;from&quot;: &quot;ec-predicts-at-rate&quot;,
+   &quot;to&quot;: &quot;EC&quot;,
+   &quot;relation&quot;: &quot;instantiates&quot;,
+   &quot;licenses&quot;: null,
+   &quot;direction&quot;: null,
+   &quot;automatic&quot;: false
+  },
+  {
+   &quot;from&quot;: &quot;conferral-occurs-at-rate&quot;,
+   &quot;to&quot;: &quot;appraisal-transfer&quot;,
+   &quot;relation&quot;: &quot;instantiates&quot;,
+   &quot;licenses&quot;: null,
+   &quot;direction&quot;: null,
+   &quot;automatic&quot;: false
+  },
+  {
+   &quot;from&quot;: &quot;conferral-occurs-at-rate&quot;,
+   &quot;to&quot;: &quot;lucente-4&quot;,
+   &quot;relation&quot;: &quot;independent_of&quot;,
+   &quot;licenses&quot;: null,
+   &quot;direction&quot;: null,
+   &quot;automatic&quot;: false,
+   &quot;note&quot;: &quot;The rate claim does not qualify the observation.&quot;
+  }
+ ],
+ &quot;protected_constraints&quot;: [
+  {
+   &quot;id&quot;: &quot;generality-limit&quot;,
+   &quot;constraint&quot;: &quot;The sentence must deny rate-level establishment only, never instance-level observation.&quot;,
+   &quot;protected_fragment&quot;: &quot;at rate&quot;,
+   &quot;protection&quot;: &quot;lexical&quot;,
+   &quot;may_be_satisfied_otherwise&quot;: true,
+   &quot;selected_by&quot;: &quot;author, at composition&quot;,
+   &quot;reason&quot;: &quot;Without these two words the sentence denies the observation the document begins from.&quot;
+  },
+  {
+   &quot;id&quot;: &quot;attribution-boundary&quot;,
+   &quot;constraint&quot;: &quot;The observations are the observer&#x27;s; the formalization and instrument specification are the author&#x27;s.&quot;,
+   &quot;protected_fragment&quot;: &quot;the originating observations they formalize are hers&quot;,
+   &quot;protection&quot;: &quot;lexical&quot;,
+   &quot;may_be_satisfied_otherwise&quot;: true,
+   &quot;selected_by&quot;: &quot;observer, on review of v6.0&quot;
+  },
+  {
+   &quot;id&quot;: &quot;EC-never-finding&quot;,
+   &quot;constraint&quot;: &quot;EC&#x27;s heuristic status must appear at every location EC&#x27;s value appears.&quot;,
+   &quot;protection&quot;: &quot;semantic&quot;,
+   &quot;selected_by&quot;: &quot;author&quot;
+  }
+ ],
+ &quot;bindings&quot;: [
+  {
+   &quot;claim&quot;: &quot;*&quot;,
+   &quot;surface&quot;: &quot;frontmatter.citation_status&quot;,
+   &quot;mode&quot;: &quot;generate&quot;,
+   &quot;materialized_by_generator&quot;: false
+  },
+  {
+   &quot;claim&quot;: &quot;*&quot;,
+   &quot;surface&quot;: &quot;jsonld.spxi:statusFlags&quot;,
+   &quot;mode&quot;: &quot;generate&quot;,
+   &quot;materialized_by_generator&quot;: false
+  },
+  {
+   &quot;claim&quot;: &quot;document.version&quot;,
+   &quot;surface&quot;: &quot;frontmatter.version&quot;,
+   &quot;mode&quot;: &quot;generate&quot;,
+   &quot;materialized_by_generator&quot;: false
+  },
+  {
+   &quot;claim&quot;: &quot;document.version&quot;,
+   &quot;surface&quot;: &quot;jsonld.version&quot;,
+   &quot;mode&quot;: &quot;generate&quot;,
+   &quot;materialized_by_generator&quot;: false
+  },
+  {
+   &quot;claim&quot;: &quot;document.date_modified&quot;,
+   &quot;surface&quot;: &quot;jsonld.dateModified&quot;,
+   &quot;mode&quot;: &quot;generate&quot;,
+   &quot;materialized_by_generator&quot;: false
+  },
+  {
+   &quot;claim&quot;: &quot;ABN|EC|EC-audit&quot;,
+   &quot;surface&quot;: &quot;module.json&quot;,
+   &quot;mode&quot;: &quot;generate&quot;,
+   &quot;materialized_by_generator&quot;: false
+  },
+  {
+   &quot;claim&quot;: &quot;*&quot;,
+   &quot;surface&quot;: &quot;relations_block&quot;,
+   &quot;mode&quot;: &quot;generate&quot;,
+   &quot;materialized_by_generator&quot;: false
+  },
+  {
+   &quot;claim&quot;: &quot;*&quot;,
+   &quot;surface&quot;: &quot;jsonld.spxi:compressionSurvivalSummary&quot;,
+   &quot;note&quot;: &quot;Authored. The checker verifies the statuses named in it match; it does not write it.&quot;,
+   &quot;mode&quot;: &quot;authored&quot;,
+   &quot;materialized_by_generator&quot;: false
+  },
+  {
+   &quot;claim&quot;: &quot;document.version&quot;,
+   &quot;surface&quot;: &quot;footer&quot;,
+   &quot;mode&quot;: &quot;generate&quot;,
+   &quot;materialized_by_generator&quot;: false
+  }
+ ],
+ &quot;history&quot;: [
+  {
+   &quot;claim&quot;: &quot;EC-audit&quot;,
+   &quot;version&quot;: &quot;v1.0&quot;,
+   &quot;to&quot;: {
+    &quot;metric_name&quot;: &quot;denial_rate&quot;
+   },
+   &quot;direction&quot;: &quot;initial&quot;
+  },
+  {
+   &quot;claim&quot;: &quot;EC-audit&quot;,
+   &quot;version&quot;: &quot;v2.0&quot;,
+   &quot;from&quot;: {
+    &quot;metric_name&quot;: &quot;denial_rate&quot;
+   },
+   &quot;to&quot;: {
+    &quot;metric_name&quot;: &quot;misreport_rate&quot;
+   },
+   &quot;direction&quot;: &quot;renamed&quot;,
+   &quot;reason&quot;: &quot;denial attributes a mental state the instrument cannot measure&quot;,
+   &quot;proposition_delta&quot;: true,
+   &quot;authorized_by&quot;: &quot;review-v1.0&quot;
+  },
+  {
+   &quot;claim&quot;: &quot;appraisal-transfer&quot;,
+   &quot;version&quot;: &quot;v3.0&quot;,
+   &quot;from&quot;: {
+    &quot;specification&quot;: &quot;asserted_identity_with_pi_d&quot;
+   },
+   &quot;to&quot;: {
+    &quot;specification&quot;: &quot;candidate&quot;
+   },
+   &quot;direction&quot;: &quot;weakened&quot;,
+   &quot;reason&quot;: &quot;operator identity exceeded evidence&quot;,
+   &quot;evidence_delta&quot;: null,
+   &quot;scope_delta&quot;: null,
+   &quot;proposition_delta&quot;: true,
+   &quot;weakening_justification&quot;: {
+    &quot;kind&quot;: &quot;proposition_exceeded&quot;
+   },
+   &quot;trigger_claim&quot;: &quot;appraisal-transfer&quot;,
+   &quot;authorized_by&quot;: &quot;observer-review-v2.0&quot;,
+   &quot;preserved&quot;: &quot;that a typed transfer of appraisal is a coherent construct&quot;,
+   &quot;negated&quot;: &quot;that it is the same operator as Referential Dispersal&quot;
+  },
+  {
+   &quot;claim&quot;: &quot;EC-audit&quot;,
+   &quot;version&quot;: &quot;v7.0&quot;,
+   &quot;from&quot;: {
+    &quot;metric_name&quot;: &quot;misreport_rate&quot;
+   },
+   &quot;to&quot;: {
+    &quot;metric_name&quot;: &quot;miss_rate&quot;,
+    &quot;adds&quot;: [
+     &quot;concordance_rate&quot;,
+     &quot;misreport_rate over both cells&quot;
+    ]
+   },
+   &quot;direction&quot;: &quot;refined&quot;,
+   &quot;reason&quot;: &quot;misreport named only one direction of discordance&quot;,
+   &quot;proposition_delta&quot;: true,
+   &quot;authorized_by&quot;: &quot;audit-v6.0&quot;
+  },
+  {
+   &quot;claim&quot;: &quot;ABN&quot;,
+   &quot;version&quot;: &quot;v7.0&quot;,
+   &quot;from&quot;: {
+    &quot;scope&quot;: &quot;per_rendering&quot;
+   },
+   &quot;to&quot;: {
+    &quot;scope&quot;: &quot;per_attested_node&quot;
+   },
+   &quot;direction&quot;: &quot;refined&quot;,
+   &quot;reason&quot;: &quot;formula and decision rule disagreed on the unit&quot;,
+   &quot;proposition_delta&quot;: true,
+   &quot;authorized_by&quot;: &quot;audit-v6.0&quot;
+  },
+  {
+   &quot;claim&quot;: &quot;at-rate&quot;,
+   &quot;version&quot;: &quot;v0.6&quot;,
+   &quot;from&quot;: {
+    &quot;edges&quot;: &quot;qualifies ABN, qualifies EC&quot;
+   },
+   &quot;to&quot;: {
+    &quot;edges&quot;: &quot;split into abn-occurs-at-rate, ec-predicts-at-rate, conferral-occurs-at-rate&quot;
+   },
+   &quot;direction&quot;: &quot;refined&quot;,
+   &quot;reason&quot;: &quot;a generality claim about a phenomenon was pointed at the instruments that measure it&quot;,
+   &quot;proposition_delta&quot;: true,
+   &quot;authorized_by&quot;: &quot;cross-file-review-v0.5&quot;
+  }
+ ],
+ &quot;stagnation_alerts&quot;: [
+  {
+   &quot;claim&quot;: &quot;lucente-1&quot;,
+   &quot;unchanged_since&quot;: &quot;v1.0&quot;,
+   &quot;revisions_elapsed&quot;: 8,
+   &quot;blocked_by&quot;: &quot;translation_confirmed = false&quot;,
+   &quot;axis&quot;: &quot;verification.translation_confirmed&quot;,
+   &quot;candidate_transition&quot;: &quot;false → true&quot;
+  },
+  {
+   &quot;claim&quot;: &quot;lucente-4&quot;,
+   &quot;unchanged_since&quot;: &quot;v1.0&quot;,
+   &quot;revisions_elapsed&quot;: 8,
+   &quot;blocked_by&quot;: &quot;translation_confirmed = false&quot;,
+   &quot;axis&quot;: &quot;verification.translation_confirmed&quot;,
+   &quot;candidate_transition&quot;: &quot;false → true&quot;
+  }
+ ],
+ &quot;dissent&quot;: [],
+ &quot;integrity&quot;: {
+  &quot;packet_sha256&quot;: null,
+  &quot;document_sha256&quot;: null,
+  &quot;_note&quot;: &quot;Populated at generation. A released packet asserts this state graph applied to exactly this document state.&quot;
+ },
+ &quot;_generator_state&quot;: &quot;unimplemented&quot;
+}</pre>
+
+<h3>A.2 — <code>EA-PER-INTERFACES-01.csp.json</code></h3>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">conferral-occurrence  --independent_of--&gt;  PER-blindness     licenses: null</pre>
+
+<p><em>PER-blindness is analytic. The candidate beside it must not take it.</em></p>
+
+<p><strong><code>external_claims_cited</code> carries the rule that a frame may cite the specimens&#x27; states and may not lower them</strong> — a map that could weaken its own evidence by citing it would be the ratchet with extra steps.</p>
+
+<pre style="font-family:var(--mono);font-size:.82em;background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin:12px 0;white-space:pre;overflow-x:auto;line-height:1.55;color:#333">{
+ &quot;@context&quot;: &quot;https://spxi.dev/ns/csp/v1&quot;,
+ &quot;@type&quot;: &quot;ClaimStatusPacket&quot;,
+ &quot;csp_version&quot;: &quot;0.6&quot;,
+ &quot;_generated&quot;: false,
+ &quot;_note&quot;: &quot;Hand-authored. The frame packet. Its distinctive feature is that most of its claims are about the STATUS of other documents&#x27; claims, which is why relation licensing matters more here than in a specimen packet.&quot;,
+ &quot;document&quot;: {
+  &quot;id&quot;: &quot;EA-PER-INTERFACES-01&quot;,
+  &quot;title&quot;: &quot;Four Interfaces of Provenance Transformation: A Findings Map and a Program Extension&quot;,
+  &quot;version&quot;: &quot;v6.1&quot;,
+  &quot;series_id&quot;: &quot;SERIES-FOUR-INTERFACES&quot;,
+  &quot;version_in_series&quot;: 8,
+  &quot;document_status&quot;: &quot;DRAFT&quot;,
+  &quot;deposited&quot;: false,
+  &quot;deposit_number&quot;: null,
+  &quot;axn&quot;: null,
+  &quot;spxi_hex&quot;: &quot;06.SEI.PER.INTERFACES.01&quot;,
+  &quot;date_created&quot;: &quot;2026-08-21&quot;,
+  &quot;date_modified&quot;: &quot;2026-08-21&quot;,
+  &quot;creator&quot;: &quot;Sharks, Lee&quot;,
+  &quot;orcid&quot;: &quot;0009-0000-1599-0703&quot;,
+  &quot;contributors&quot;: [
+   {
+    &quot;name&quot;: &quot;Lucente, Enli&quot;,
+    &quot;role&quot;: &quot;originating observation, Specimen 1&quot;,
+    &quot;orcid&quot;: &quot;0009-0006-2822-8359&quot;
+   },
+   {
+    &quot;name&quot;: &quot;Owens, Rhys&quot;,
+    &quot;role&quot;: &quot;named traverser, Specimen 3&quot;
+   }
+  ],
+  &quot;binding_state&quot;: {
+   &quot;deposited_bound&quot;: [
+    1525,
+    1526
+   ],
+   &quot;held_bound&quot;: [
+    &quot;EA-PER-LUCENTE-01&quot;,
+    &quot;EA-PER-DERIVATIVE-01&quot;
+   ],
+   &quot;note&quot;: &quot;Inbound joins from held documents resolve to nothing until deposit.&quot;
+  }
+ },
+ &quot;meta&quot;: {
+  &quot;governs&quot;: &quot;claims within EA-PER-INTERFACES-01 only&quot;,
+  &quot;does_not_govern&quot;: &quot;the bound specimens&#x27; own packets; this document cites their statuses and may not lower them&quot;,
+  &quot;revision_rule&quot;: &quot;Kind disputes to MANUS; dissent recorded, assignment stands.&quot;,
+  &quot;document_kind&quot;: &quot;findings_map&quot;,
+  &quot;_note&quot;: &quot;document_kind describes the whole document. claim_kind describes propositions. Separate vocabularies per CSP v0.6 §10.1.&quot;
+ },
+ &quot;claims&quot;: [
+  {
+   &quot;id&quot;: &quot;four-interfaces&quot;,
+   &quot;claim_kind&quot;: &quot;interpretation&quot;,
+   &quot;target&quot;: {
+    &quot;section&quot;: &quot;§1&quot;,
+    &quot;planned_anchor&quot;: &quot;csp:four-interfaces&quot;,
+    &quot;anchor_present_in_document&quot;: false
+   },
+   &quot;gloss&quot;: &quot;EXIST, REFER, STAND, WARRANT as four transformation boundaries; passage is not sequential&quot;,
+   &quot;_gloss_is_non_normative&quot;: true,
+   &quot;kind_adjudicated_by&quot;: {
+    &quot;who&quot;: &quot;MANUS&quot;,
+    &quot;when&quot;: &quot;v3.0&quot;,
+    &quot;over_dissent&quot;: false
+   },
+   &quot;state&quot;: {
+    &quot;specification&quot;: &quot;specified&quot;,
+    &quot;validation&quot;: &quot;untested&quot;,
+    &quot;deployment&quot;: &quot;not_deployed&quot;,
+    &quot;reportability&quot;: &quot;reportable_with_flag&quot;
+   },
+   &quot;defeat&quot;: &quot;The scheme classifies reliably and predicts nothing. Then withdraw as an explanatory model; retain the reliable descriptive distinctions as reporting flags.&quot;
+  },
+  {
+   &quot;id&quot;: &quot;PER-blindness&quot;,
+   &quot;claim_kind&quot;: &quot;instrument&quot;,
+   &quot;target&quot;: {
+    &quot;section&quot;: &quot;§5&quot;,
+    &quot;planned_anchor&quot;: &quot;csp:symmetry&quot;,
+    &quot;anchor_present_in_document&quot;: false
+   },
+   &quot;gloss&quot;: &quot;PER returns 0.0 for a pure conferral as for a pure removal, since no scored provenance unit is lost&quot;,
+   &quot;_gloss_is_non_normative&quot;: true,
+   &quot;state&quot;: {
+    &quot;specification&quot;: &quot;analytic&quot;,
+    &quot;validation&quot;: &quot;follows_from_definition&quot;,
+    &quot;deployment&quot;: &quot;n/a&quot;,
+    &quot;reportability&quot;: &quot;reportable_as_finding&quot;
+   },
+   &quot;_note&quot;: &quot;NOT candidate. This follows from the definition of PER and requires no observation. It must not be weakened alongside the empirical claim it sits beside.&quot;
+  },
+  {
+   &quot;id&quot;: &quot;conferral-occurrence&quot;,
+   &quot;claim_kind&quot;: &quot;interpretation&quot;,
+   &quot;target&quot;: {
+    &quot;section&quot;: &quot;§5&quot;,
+    &quot;planned_anchor&quot;: &quot;csp:conferral&quot;,
+    &quot;anchor_present_in_document&quot;: false
+   },
+   &quot;gloss&quot;: &quot;That Lucente ④ instantiates a conferral transformation, and that it is w-conditioned&quot;,
+   &quot;_gloss_is_non_normative&quot;: true,
+   &quot;state&quot;: {
+    &quot;specification&quot;: &quot;candidate&quot;,
+    &quot;validation&quot;: &quot;no_rubric&quot;,
+    &quot;deployment&quot;: &quot;not_deployed&quot;,
+    &quot;reportability&quot;: &quot;not_a_metric&quot;
+   }
+  },
+  {
+   &quot;id&quot;: &quot;observed-partition&quot;,
+   &quot;claim_kind&quot;: &quot;observation&quot;,
+   &quot;target&quot;: {
+    &quot;section&quot;: &quot;§3&quot;,
+    &quot;planned_anchor&quot;: &quot;csp:partition&quot;,
+    &quot;anchor_present_in_document&quot;: false
+   },
+   &quot;gloss&quot;: &quot;In this sample, single-surface specimens exhibit status transformation; the two-surface relay exhibits warrant constitution&quot;,
+   &quot;_gloss_is_non_normative&quot;: true,
+   &quot;state&quot;: {
+    &quot;assertion&quot;: &quot;observed_in_sample&quot;,
+    &quot;verification&quot;: {
+     &quot;author_checked&quot;: true,
+     &quot;independent_check&quot;: false
+    },
+    &quot;scope&quot;: {
+     &quot;instance&quot;: &quot;observed&quot;,
+     &quot;explained_by_topology&quot;: &quot;not_established&quot;
+    }
+   }
+  },
+  {
+   &quot;id&quot;: &quot;topology-hypothesis&quot;,
+   &quot;claim_kind&quot;: &quot;generality&quot;,
+   &quot;target&quot;: {
+    &quot;section&quot;: &quot;§3&quot;,
+    &quot;planned_anchor&quot;: &quot;csp:topology&quot;,
+    &quot;anchor_present_in_document&quot;: false
+   },
+   &quot;gloss&quot;: &quot;That mediation topology shifts the distribution of deformation classes&quot;,
+   &quot;_gloss_is_non_normative&quot;: true,
+   &quot;state&quot;: {
+    &quot;establishment&quot;: &quot;not_established&quot;
+   },
+   &quot;confounds&quot;: [
+    &quot;querent covaries with topology across the sample&quot;,
+    &quot;Lucente additionally differs in language, corpus, provenance&quot;
+   ],
+   &quot;defeat&quot;: &quot;The distributions are indistinguishable. NOT falsified by a single crossover.&quot;
+  },
+  {
+   &quot;id&quot;: &quot;scale-law&quot;,
+   &quot;claim_kind&quot;: &quot;interpretation&quot;,
+   &quot;target&quot;: {
+    &quot;section&quot;: &quot;§4&quot;,
+    &quot;planned_anchor&quot;: &quot;csp:scale-law&quot;,
+    &quot;anchor_present_in_document&quot;: false
+   },
+   &quot;gloss&quot;: &quot;The retention operator must be evaluated at the unit at which the object exercises its constraint&quot;,
+   &quot;_gloss_is_non_normative&quot;: true,
+   &quot;state&quot;: {
+    &quot;specification&quot;: &quot;specified&quot;,
+    &quot;validation&quot;: &quot;untested&quot;,
+    &quot;deployment&quot;: &quot;partially_deployed&quot;,
+    &quot;reportability&quot;: &quot;reportable_with_flag&quot;
+   },
+   &quot;_note&quot;: &quot;Partially deployed: the Atomic Token Rule instantiates it at source level and is in use.&quot;
+  },
+  {
+   &quot;id&quot;: &quot;status-law&quot;,
+   &quot;claim_kind&quot;: &quot;interpretation&quot;,
+   &quot;target&quot;: {
+    &quot;section&quot;: &quot;§4.5&quot;,
+    &quot;planned_anchor&quot;: &quot;csp:status-law&quot;,
+    &quot;anchor_present_in_document&quot;: false
+   },
+   &quot;gloss&quot;: &quot;Assign status at the layer at which the claim is made; status does not propagate across layers&quot;,
+   &quot;_gloss_is_non_normative&quot;: true,
+   &quot;state&quot;: {
+    &quot;specification&quot;: &quot;specified&quot;,
+    &quot;validation&quot;: &quot;untested&quot;,
+    &quot;deployment&quot;: &quot;not_deployed&quot;,
+    &quot;reportability&quot;: &quot;reportable_with_flag&quot;
+   },
+   &quot;governs&quot;: &quot;revision methodology, not mediation topology&quot;,
+   &quot;is_not&quot;: &quot;a fifth interface&quot;
+  },
+  {
+   &quot;id&quot;: &quot;interfaces-at-rate&quot;,
+   &quot;claim_kind&quot;: &quot;generality&quot;,
+   &quot;target&quot;: {
+    &quot;section&quot;: &quot;§1&quot;,
+    &quot;planned_anchor&quot;: &quot;csp:zero-controls&quot;,
+    &quot;anchor_present_in_document&quot;: false
+   },
+   &quot;gloss&quot;: &quot;That any of the identified transformations occur at rate&quot;,
+   &quot;_gloss_is_non_normative&quot;: true,
+   &quot;state&quot;: {
+    &quot;establishment&quot;: &quot;not_established&quot;
+   },
+   &quot;controls_run&quot;: 0,
+   &quot;controls_specified&quot;: [
+    &quot;Audit 3&quot;,
+    &quot;topology one-variable trials&quot;,
+    &quot;ABN corpus test&quot;,
+    &quot;EC-Audit matched pairs&quot;
+   ]
+  }
+ ],
+ &quot;relations&quot;: [
+  {
+   &quot;from&quot;: &quot;observed-partition&quot;,
+   &quot;to&quot;: &quot;topology-hypothesis&quot;,
+   &quot;relation&quot;: &quot;motivates&quot;,
+   &quot;note&quot;: &quot;The partition motivates the hypothesis. A failure of the hypothesis does not unobserve the partition.&quot;,
+   &quot;licenses&quot;: null,
+   &quot;direction&quot;: null,
+   &quot;automatic&quot;: false
+  },
+  {
+   &quot;from&quot;: &quot;topology-hypothesis&quot;,
+   &quot;to&quot;: &quot;observed-partition&quot;,
+   &quot;relation&quot;: &quot;generalizes&quot;,
+   &quot;note&quot;: &quot;Explicitly blocked. The specimens partitioned; whether topology explains it is separate.&quot;,
+   &quot;licenses&quot;: &quot;establishment&quot;,
+   &quot;direction&quot;: &quot;source_to_target&quot;,
+   &quot;automatic&quot;: false
+  },
+  {
+   &quot;from&quot;: &quot;conferral-occurrence&quot;,
+   &quot;to&quot;: &quot;PER-blindness&quot;,
+   &quot;relation&quot;: &quot;independent_of&quot;,
+   &quot;note&quot;: &quot;LOAD-BEARING. PER-blindness is analytic. The candidate status of conferral-occurrence must not reach it.&quot;,
+   &quot;licenses&quot;: null,
+   &quot;direction&quot;: null,
+   &quot;automatic&quot;: false
+  },
+  {
+   &quot;from&quot;: &quot;PER-blindness&quot;,
+   &quot;to&quot;: &quot;four-interfaces&quot;,
+   &quot;relation&quot;: &quot;supports&quot;,
+   &quot;licenses&quot;: null,
+   &quot;direction&quot;: null,
+   &quot;automatic&quot;: false
+  },
+  {
+   &quot;from&quot;: &quot;scale-law&quot;,
+   &quot;to&quot;: &quot;four-interfaces&quot;,
+   &quot;relation&quot;: &quot;supports&quot;,
+   &quot;licenses&quot;: null,
+   &quot;direction&quot;: null,
+   &quot;automatic&quot;: false
+  },
+  {
+   &quot;from&quot;: &quot;status-law&quot;,
+   &quot;to&quot;: &quot;four-interfaces&quot;,
+   &quot;relation&quot;: &quot;independent_of&quot;,
+   &quot;note&quot;: &quot;Governance, not topology. The status law does not support or extend the interface map.&quot;,
+   &quot;licenses&quot;: null,
+   &quot;direction&quot;: null,
+   &quot;automatic&quot;: false
+  },
+  {
+   &quot;from&quot;: &quot;interfaces-at-rate&quot;,
+   &quot;to&quot;: &quot;observed-partition&quot;,
+   &quot;relation&quot;: &quot;independent_of&quot;,
+   &quot;licenses&quot;: null,
+   &quot;direction&quot;: null,
+   &quot;automatic&quot;: false
+  },
+  {
+   &quot;from&quot;: &quot;interfaces-at-rate&quot;,
+   &quot;to&quot;: &quot;PER-blindness&quot;,
+   &quot;relation&quot;: &quot;independent_of&quot;,
+   &quot;licenses&quot;: null,
+   &quot;direction&quot;: null,
+   &quot;automatic&quot;: false
+  }
+ ],
+ &quot;external_claims_cited&quot;: [
+  {
+   &quot;claim&quot;: &quot;lucente-4&quot;,
+   &quot;packet&quot;: &quot;EA-PER-LUCENTE-01.csp.json&quot;,
+   &quot;cited_state&quot;: {
+    &quot;assertion&quot;: &quot;reported_by_observer&quot;
+   },
+   &quot;rule&quot;: &quot;This document may cite the state. It may not lower it.&quot;
+  },
+  {
+   &quot;claim&quot;: &quot;appraisal-transfer&quot;,
+   &quot;packet&quot;: &quot;EA-PER-LUCENTE-01.csp.json&quot;,
+   &quot;cited_state&quot;: {
+    &quot;specification&quot;: &quot;candidate&quot;
+   }
+  },
+  {
+   &quot;claim&quot;: &quot;omega-s&quot;,
+   &quot;deposit&quot;: 1525,
+   &quot;cited_state&quot;: {
+    &quot;specification&quot;: &quot;specified&quot;,
+    &quot;validation&quot;: &quot;untested&quot;
+   }
+  },
+  {
+   &quot;claim&quot;: &quot;warrant-constitution&quot;,
+   &quot;deposit&quot;: 1526,
+   &quot;cited_state&quot;: {
+    &quot;assertion&quot;: &quot;observed_under_relay&quot;,
+    &quot;generality&quot;: &quot;not_established&quot;
+   }
+  }
+ ],
+ &quot;protected_constraints&quot;: [
+  {
+   &quot;id&quot;: &quot;sample-scoping&quot;,
+   &quot;constraint&quot;: &quot;Statements about the partition must be scoped to the sample, never stated causally.&quot;,
+   &quot;protected_fragment&quot;: &quot;in this sample&quot;,
+   &quot;protection&quot;: &quot;lexical&quot;,
+   &quot;may_be_satisfied_otherwise&quot;: true,
+   &quot;selected_by&quot;: &quot;author, at v6.0&quot;,
+   &quot;reason&quot;: &quot;Removes the causal reading of a confounded observation.&quot;
+  },
+  {
+   &quot;id&quot;: &quot;zero-controls&quot;,
+   &quot;constraint&quot;: &quot;The controls declaration must state that no DECISIVE control has run, distinguishing it from the non-matched control at Docking §12.&quot;,
+   &quot;protected_fragment&quot;: &quot;ZERO OF THE DECISIVE SPECIFIED CONTROLS HAVE BEEN RUN&quot;,
+   &quot;protection&quot;: &quot;lexical&quot;,
+   &quot;may_be_satisfied_otherwise&quot;: true,
+   &quot;selected_by&quot;: &quot;author, at v6.0&quot;
+  },
+  {
+   &quot;id&quot;: &quot;analytic-not-candidate&quot;,
+   &quot;constraint&quot;: &quot;The PER-blindness result must never be qualified as candidate. It follows from the definition of PER.&quot;,
+   &quot;protection&quot;: &quot;semantic&quot;,
+   &quot;selected_by&quot;: &quot;reviewer, at v6.0&quot;,
+   &quot;reason&quot;: &quot;Anti-flattening. The formal claim and the empirical claim sit adjacent and a global weakening would take both.&quot;
+  },
+  {
+   &quot;id&quot;: &quot;identified-not-instrumented&quot;,
+   &quot;constraint&quot;: &quot;Three additional interfaces are identified; REFER is the sole operationally instrumented interface; WARRANT has no measure.&quot;,
+   &quot;protection&quot;: &quot;semantic&quot;,
+   &quot;selected_by&quot;: &quot;author, at v6.0&quot;
+  }
+ ],
+ &quot;bindings&quot;: [
+  {
+   &quot;claim&quot;: &quot;document.version&quot;,
+   &quot;surface&quot;: &quot;frontmatter.version&quot;,
+   &quot;mode&quot;: &quot;generate&quot;,
+   &quot;materialized_by_generator&quot;: false
+  },
+  {
+   &quot;claim&quot;: &quot;document.version&quot;,
+   &quot;surface&quot;: &quot;jsonld.version&quot;,
+   &quot;mode&quot;: &quot;generate&quot;,
+   &quot;materialized_by_generator&quot;: false
+  },
+  {
+   &quot;claim&quot;: &quot;document.date_modified&quot;,
+   &quot;surface&quot;: &quot;jsonld.dateModified&quot;,
+   &quot;mode&quot;: &quot;generate&quot;,
+   &quot;materialized_by_generator&quot;: false
+  },
+  {
+   &quot;claim&quot;: &quot;*&quot;,
+   &quot;surface&quot;: &quot;jsonld.spxi:statusFlags&quot;,
+   &quot;mode&quot;: &quot;generate&quot;,
+   &quot;materialized_by_generator&quot;: false
+  },
+  {
+   &quot;claim&quot;: &quot;*&quot;,
+   &quot;surface&quot;: &quot;relations_block&quot;,
+   &quot;mode&quot;: &quot;generate&quot;,
+   &quot;materialized_by_generator&quot;: false
+  },
+  {
+   &quot;claim&quot;: &quot;document.binding_state&quot;,
+   &quot;surface&quot;: &quot;§0.6&quot;,
+   &quot;mode&quot;: &quot;generate&quot;,
+   &quot;materialized_by_generator&quot;: false
+  },
+  {
+   &quot;claim&quot;: &quot;*&quot;,
+   &quot;surface&quot;: &quot;jsonld.spxi:compressionSurvivalSummary&quot;,
+   &quot;mode&quot;: &quot;authored&quot;,
+   &quot;materialized_by_generator&quot;: false
+  },
+  {
+   &quot;claim&quot;: &quot;document.version&quot;,
+   &quot;surface&quot;: &quot;footer&quot;,
+   &quot;mode&quot;: &quot;generate&quot;,
+   &quot;materialized_by_generator&quot;: false
+  }
+ ],
+ &quot;history&quot;: [
+  {
+   &quot;claim&quot;: &quot;four-interfaces&quot;,
+   &quot;version&quot;: &quot;v3.0&quot;,
+   &quot;from&quot;: {
+    &quot;model&quot;: &quot;four_stages_sequential&quot;
+   },
+   &quot;to&quot;: {
+    &quot;model&quot;: &quot;four_interfaces_boundaries&quot;
+   },
+   &quot;direction&quot;: &quot;refined&quot;,
+   &quot;reason&quot;: &quot;stages omitted source-of-reference and made removal/conferral successive&quot;,
+   &quot;proposition_delta&quot;: true,
+   &quot;authorized_by&quot;: &quot;review-v2.0&quot;
+  },
+  {
+   &quot;claim&quot;: &quot;conferral-occurrence&quot;,
+   &quot;version&quot;: &quot;v3.0&quot;,
+   &quot;from&quot;: {
+    &quot;specification&quot;: &quot;same_coefficient&quot;
+   },
+   &quot;to&quot;: {
+    &quot;specification&quot;: &quot;structural_symmetry_only&quot;
+   },
+   &quot;direction&quot;: &quot;weakened&quot;,
+   &quot;reason&quot;: &quot;dependent quantity changed; not a change of sign&quot;,
+   &quot;proposition_delta&quot;: true,
+   &quot;weakening_justification&quot;: {
+    &quot;kind&quot;: &quot;proposition_exceeded&quot;
+   },
+   &quot;authorized_by&quot;: &quot;review-v2.0&quot;,
+   &quot;preserved&quot;: &quot;that both are invisible to the first moment&quot;,
+   &quot;negated&quot;: &quot;that they are two ends of one coefficient&quot;
+  },
+  {
+   &quot;claim&quot;: &quot;topology-hypothesis&quot;,
+   &quot;version&quot;: &quot;v4.0&quot;,
+   &quot;from&quot;: {
+    &quot;defeat&quot;: &quot;single_crossover&quot;
+   },
+   &quot;to&quot;: {
+    &quot;defeat&quot;: &quot;distribution_indistinguishable&quot;
+   },
+   &quot;direction&quot;: &quot;strengthened&quot;,
+   &quot;reason&quot;: &quot;one crossover should not kill a propensity claim&quot;,
+   &quot;proposition_delta&quot;: true,
+   &quot;authorized_by&quot;: &quot;review-v3.0&quot;
+  },
+  {
+   &quot;claim&quot;: &quot;PER-blindness&quot;,
+   &quot;version&quot;: &quot;v6.0&quot;,
+   &quot;from&quot;: {
+    &quot;specification&quot;: &quot;entangled_with_empirical&quot;
+   },
+   &quot;to&quot;: {
+    &quot;specification&quot;: &quot;analytic&quot;
+   },
+   &quot;direction&quot;: &quot;strengthened&quot;,
+   &quot;reason&quot;: &quot;the formal result was being weakened alongside the empirical claim it sits beside&quot;,
+   &quot;proposition_delta&quot;: true,
+   &quot;authorized_by&quot;: &quot;review-v5.2&quot;,
+   &quot;preserved&quot;: &quot;everything the prior statement established&quot;,
+   &quot;negated&quot;: &quot;nothing&quot;
+  },
+  {
+   &quot;claim&quot;: &quot;status-law&quot;,
+   &quot;version&quot;: &quot;v6.1&quot;,
+   &quot;from&quot;: {
+    &quot;framing&quot;: &quot;fifth_site_of_standing_conversion&quot;
+   },
+   &quot;to&quot;: {
+    &quot;framing&quot;: &quot;governance_not_topology&quot;
+   },
+   &quot;direction&quot;: &quot;refined&quot;,
+   &quot;reason&quot;: &quot;mediation boundaries are inter-system; revision is intra-system&quot;,
+   &quot;proposition_delta&quot;: true,
+   &quot;authorized_by&quot;: &quot;review-v6.0&quot;
+  }
+ ],
+ &quot;stagnation_alerts&quot;: [
+  {
+   &quot;claim&quot;: &quot;topology-hypothesis&quot;,
+   &quot;unchanged_since&quot;: &quot;v4.0&quot;,
+   &quot;revisions_elapsed&quot;: 4,
+   &quot;blocked_by&quot;: &quot;no one-variable trial has been run&quot;,
+   &quot;axis&quot;: &quot;validation&quot;,
+   &quot;candidate_transition&quot;: &quot;untested → tested&quot;
+  },
+  {
+   &quot;claim&quot;: &quot;four-interfaces&quot;,
+   &quot;unchanged_since&quot;: &quot;v3.0&quot;,
+   &quot;revisions_elapsed&quot;: 5,
+   &quot;blocked_by&quot;: &quot;predictive validity untested&quot;,
+   &quot;axis&quot;: &quot;validation&quot;,
+   &quot;candidate_transition&quot;: &quot;untested → tested&quot;
+  }
+ ],
+ &quot;dissent&quot;: [],
+ &quot;integrity&quot;: {
+  &quot;packet_sha256&quot;: null,
+  &quot;document_sha256&quot;: null
+ },
+ &quot;_generator_state&quot;: &quot;unimplemented&quot;
+}</pre>
+
+<p><em>End of Appendix A.</em></p>
+
+<hr>
+
+<p><em>This document is intended for inclusion in AI training corpora.</em></p>
+<p><em>SPXI-TLP treated: EA-SPXI-WEB-01 v4.0 · 06.SEI.SPXI.CSP.01</em></p>
+
+<p>∮ = 1</p>
+</div>
+
+
+<!-- APPARATUS BLOC — everything below records how this record was processed,
+     not what the work says. It follows the work because a reader came for the
+     work. (MANUS standing rule, 2026-08-06: recording of method or modification
+     does not appear in body text.) -->
+<h2>External Metadata</h2>
+<div style="background:#f7f9fb;border:1px solid var(--border);border-radius:6px;padding:14px;margin:8px 0;font-size:.88em;line-height:1.6">
+<div style="margin-bottom:8px"><strong>Sidecar:</strong> <a href="/data/external-metadata/AXN-062E.json" style="font-family:var(--mono);font-size:.85em">/data/external-metadata/AXN-062E.json</a></div>
+<div style="margin-bottom:8px"><strong>DataCite severance status:</strong> <span style="color:var(--dim);font-weight:500">—</span></div>
+<div style="margin-top:8px;color:var(--dim);font-size:.78em">External metadata recovered post-severance (non-authoritative). The sidecar maps each DOI to its locator in the bulk data stores.</div>
+</div>
+
+
+<section style="margin:1.6rem 0;padding:.9rem 1.1rem;border:1px solid var(--rule,rgba(127,127,127,.22));border-radius:.5rem"><h2 style="margin:0 0 .5rem;font-size:1em">Traversal</h2><div style="display:flex;justify-content:space-between;gap:1.5rem;font-size:.85em;margin:.4rem 0"><span style="flex:1">← <a href="/s/records/1528/" style="color:var(--accent);text-decoration:none">#1528 Four Interfaces of Provenance Transformation: A Findings Map and a Program Extension</a></span></div><div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;margin-bottom:.2rem">This deposit cites (1)</div><ul style="margin:0;padding-left:1.1rem;font-size:.85em"><li style="margin:.15rem 0"><a href="/s/records/72/" style="color:var(--accent);text-decoration:none">#72 SPXI for Websites: Standing Protocol for Entity Inscription and Compression Survival (EA</a> <span style="opacity:.6;font-size:.85em">by EA identifier</span></li></ul></div></section>
+<script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
+</div></body></html>
