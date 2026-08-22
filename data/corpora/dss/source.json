@@ -1,0 +1,43 @@
+{
+ "seat": "EA-CORPORA-02/01",
+ "corpus": "dss",
+ "title": "The Dead Sea Scrolls — Biblical and Non-Biblical Scrolls, Abegg–Bowley–Cook Transcriptions (ETCBC Text-Fabric)",
+ "edition": "M.G. Abegg, Jr., J.E. Bowley, E.M. Cook, electronic transcriptions with morphological tagging (1995-2015), prepared for the Brill Dead Sea Scrolls Concordances; readings primarily follow DJD (Oxford: Clarendon, 1955-) with editors' own reconstructions where editions do not supply them; converted to Text-Fabric by J. Jacobs, M. Naaijer, D. Roorda (CACCHT project, ETCBC)",
+ "origin": {
+  "repo": "ETCBC/dss",
+  "commit": "f051578775b77b36164cfa16c402563d7d211a55",
+  "paths": [
+   "tf/1.9/"
+  ],
+  "fetched": "2026-08-22",
+  "transport": "git sparse checkout at pinned commit; Transport D, No-Double-Draw: no paid API invoked"
+ },
+ "language": "Hebrew; Aramaic (feature 'lang' distinguishes; Paleo-Hebrew and Greek script signs flagged via 'script')",
+ "license": {
+  "payload": "CC BY-NC 4.0 — declared at the file in every Text-Fabric feature header (@license, @licenseUrl), with @createdBy=Abegg/Bowley/Cook and @source=Martin Abegg's data files, personal communication. Repo-level MIT covers packaging/software only.",
+  "record": "CC-BY-4.0 applies to this seat record and the alexanarch record text only, NOT to the corpus payload. The payload license is BY-NC and is carried forward unmodified. First NC-licensed seat in the library; redistribution here is non-commercial.",
+  "chain_note": "Ancient texts public domain. Transcription/reconstruction layer created by Abegg, Bowley and Cook and provided by Abegg personally to CACCHT (documented in repo about.md and in the .tf headers); the license is therefore declared by the parties holding the transcription rights - the structural opposite of a third-party relicensing defect. Caveat recorded honestly: Qimron v. Shanks (Israel) held a scholar's scroll reconstruction copyrightable to the reconstructor; readings herein that follow Qimron's published editions rest on the ground that following an edition's readings is not copying its protected expression. The principal reconstructors are the grantors here.",
+  "provenance_event": "The corpus enters the archive through the hand that liberated it: Abegg's 1991 reconstruction of the scrolls from the Brill concordance broke a forty-year publication monopoly. @source=Martin Abegg's data files, personal communication."
+ },
+ "scope": "Both biblical (265 scrolls, incl. biblical=2 tefillin/mezuzot class) and non-biblical (735 scrolls + composites incl. CD). Ruled 2026-08-22: biblical scrolls are witnesses, not duplicates of the Leningrad seat (EA-CORPORA-01/09); seated for the comparative-witness program.",
+ "reconstructions": "Included and flagged, per ruling 2026-08-22. Flat layer wraps reconstructed sign-runs in [square brackets] driven by the 'rec' feature, single running state per line (edition convention). Uncertainty (unc), corrections (cor), alternates (alt), removals (rem) preserved in original/ TF features, not carried into the flat layer.",
+ "encoding_conventions": "Abegg source conventions preserved: ׳ = morpheme/suffix boundary marker; ׃ = source punctuation mark; ε = placeholder/empty-sign glyph in the source data; ╱ = source line marker. Graphic-word spacing reconstructed from the sign-level 'after' feature.",
+ "normalization": "tf/1.9 sign stream -> flat ref-tagged lines '<scroll> <fragment/column>:<line>\\t<text>' via glyph+punc+after per sign with rec-bracketing. 52,878 lines: biblical.txt 16,286; nonbiblical.txt 36,592.",
+ "verified_loci": [
+  "1Qisaa 1:1 חזון ישעיהו בן אמוץ (= Isa 1:1, scroll orthography)",
+  "1QS 1:1 [ספר ס]רך היחד",
+  "11Q19 2:1-2 Temple Scroll col. 2 (Exod 34 paraphrase)",
+  "CD 1:1 ועתה שמעו כל יודעי צדק"
+ ],
+ "counts": {
+  "scrolls": 1001,
+  "fragments": 11182,
+  "lines_emitted": 52878,
+  "words": 500995,
+  "signs": 1430241
+ },
+ "rulings_pending_gathering_record": [
+  "First NC seat: payload/record license split (structural ruling)",
+  "Biblical-witness non-duplication ruling vs seat 01/09"
+ ]
+}
