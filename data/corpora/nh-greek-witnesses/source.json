@@ -1,0 +1,58 @@
+{
+ "seat": "EA-CORPORA-02/05",
+ "corpus": "nh-greek-witnesses",
+ "title": "Greek Witnesses of Nag Hammadi Texts — The Gospel of Thomas Oxyrhynchus Fragments (DCLP EpiDoc)",
+ "witness_pairing": "First executed Greek-Coptic witness pairing across corpora: these three fragments are the earlier language stratum of the work seated in Coptic at coptic-gnostic/ (NHC II,2, EA-CORPORA-01). The Greek fragments antedate the Coptic codex by a century or more and derive from three DIFFERENT copies — three independent witnesses in one town's rubbish.",
+ "witnesses": {
+  "POxy654": {
+   "tm": "62840",
+   "ldab": "4030",
+   "scope": "Gos.Thom. prologue, logia 1-7",
+   "form": "roll (opisthograph), mid/late 3rd c.",
+   "location": "British Library, Pap. 1531",
+   "lines": 43
+  },
+  "POxy1": {
+   "tm": "62838",
+   "ldab": "4028",
+   "scope": "Gos.Thom. logia 26-30, 77b, 31-33",
+   "form": "papyrus codex leaf, c. 200",
+   "location": "Bodleian",
+   "lines": 48
+  },
+  "POxy655": {
+   "tm": "62839",
+   "ldab": "4029",
+   "scope": "Gos.Thom. logia 24(?), 36-39",
+   "form": "roll, early 3rd c.",
+   "location": "Houghton, Harvard",
+   "lines": 48
+  }
+ },
+ "origin": {
+  "repo": "papyri/idp.data",
+  "commit": "d061eef861ee34d09d8d5f04b91e27dd48ddde8c",
+  "paths": [
+   "DCLP/62/62838.xml",
+   "DCLP/62/62839.xml",
+   "DCLP/62/62840.xml"
+  ],
+  "fetched": "2026-08-22"
+ },
+ "edition": "Digital Corpus of Literary Papyri EpiDoc records with full editorial apparatus (Attridge, Fitzmyer, Grenfell-Hunt, Hofius et al. readings retained in original/)",
+ "license": {
+  "payload": "CC BY (Duke Databank / DCLP, declared per record)",
+  "record": "CC-BY-4.0"
+ },
+ "normalization": "Seat-11 method: edition-div extraction, lb→lines, lem-of-app as base text, supplied→[brackets], surplus→{braces}, expansions→(parens), gaps marked. Apparatus preserved in original/ EpiDoc, not flattened away. 139 lines.",
+ "verified_loci": [
+  "POxy654 l.1-3: incipit — οὗτοι οἱ λόγοι οἱ [ἀπόκρυφοι οὓς ἐλά]λησεν Ἰη(σοῦ)ς ὁ ζῶν",
+  "POxy1 r.8: logion 77b — σχίσον τὸ ξύλον κἀγὼ [...]"
+ ],
+ "queued_identification": {
+  "gospel-of-mary-greek": "P.Oxy. L 3525 and P.Ryl. III 463 (Greek witnesses of BG 8502,1). TM/DCLP identification NOT COMPLETED this run: Trismegistos unreachable (503) at fetch time; Duke DCLP front-end blocked at egress; en.wiki carries no TM footnotes for these; DCLP/62-63 greps negative — consistent with partial DCLP apocrypha coverage noted at seat 01/11. Routes queued: Trismegistos retry, DCLP full-tree grep, Manchester digitalcollections (MS-GREEK-P-00463, images; domain outside current network policy).",
+  "sophia-jesu-christi-greek": "P.Oxy. VIII 1081 (Greek witness of NHC III,4 / BG 8502,3). Same identification routes queued.",
+  "note": "No TM number was guessed for any queued item; identification-by-confabulation is the named failure mode."
+ },
+ "fetched": "2026-08-22; raw.githubusercontent fetches at pinned commit; Transport D, No-Double-Draw."
+}
