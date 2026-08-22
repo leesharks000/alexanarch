@@ -5,7 +5,7 @@
  },
  "@type": "schema:Dataset",
  "schema:name": "Crimson Hexagonal Archive: Lexical Minting Registry",
- "schema:description": "Registry of 12,015 minted terms across 555 deposits in the Crimson Hexagonal Archive (2014-2026). Each term anchored to its defining deposit with extracted definition, type classification, and entity relation triples. Pruned from 16,877 raw extractions through five noise-filtering passes.",
+ "schema:description": "Registry of 12,021 minted terms across 556 deposits in the Crimson Hexagonal Archive (2014-2026). Each term anchored to its defining deposit with extracted definition, type classification, and entity relation triples. Pruned from 16,877 raw extractions through five noise-filtering passes.",
  "schema:creator": {
   "@type": "schema:Person",
   "schema:name": "Lee Sharks",
@@ -112372,6 +112372,60 @@
    "defined_in_deposit": 1529,
    "defined_in_title": "The Claim Status Packet",
    "type": "vulnerability",
+   "mint_batch_size": 6,
+   "mint_mode": "in-session, transport D"
+  },
+  {
+   "term": "verbatim-seat class",
+   "definition": "Seat class in which no derived text layer is emitted because the source arrives reference-tagged under verbatim-distribution terms; the original is the machine-readable layer.",
+   "defined_in_deposit": 1531,
+   "defined_in_title": "EA-CORPORA-02 — The Second Seating",
+   "type": "seat class",
+   "mint_batch_size": 6,
+   "mint_mode": "in-session, transport D"
+  },
+  {
+   "term": "image-seat class",
+   "definition": "Seat class consisting of witness images with no text layer by design, transcription queued; converts a declared absence into custody.",
+   "defined_in_deposit": 1531,
+   "defined_in_title": "EA-CORPORA-02 — The Second Seating",
+   "type": "seat class",
+   "mint_batch_size": 6,
+   "mint_mode": "in-session, transport D"
+  },
+  {
+   "term": "NC payload/record split",
+   "definition": "License rule seating a NonCommercial payload unmodified at file level while the record text remains CC-BY; the record license never covers the payload.",
+   "defined_in_deposit": 1531,
+   "defined_in_title": "EA-CORPORA-02 — The Second Seating",
+   "type": "license rule",
+   "mint_batch_size": 6,
+   "mint_mode": "in-session, transport D"
+  },
+  {
+   "term": "sparse-tradition translation-witness rule",
+   "definition": "Rule permitting a translation to be seated as a witness, named as such, where a tradition survives in no other open form.",
+   "defined_in_deposit": 1531,
+   "defined_in_title": "EA-CORPORA-02 — The Second Seating",
+   "type": "seating rule",
+   "mint_batch_size": 6,
+   "mint_mode": "in-session, transport D"
+  },
+  {
+   "term": "translation-witness",
+   "definition": "A translation seated as a named witness of a work under the sparse-tradition rule; a witness, not an original.",
+   "defined_in_deposit": 1531,
+   "defined_in_title": "EA-CORPORA-02 — The Second Seating",
+   "type": "witness class",
+   "mint_batch_size": 6,
+   "mint_mode": "in-session, transport D"
+  },
+  {
+   "term": "witness pair",
+   "definition": "Two printings or manuscripts of one work seated under separate witness names with per-witness addressing, so collation can locate the settings' divergences.",
+   "defined_in_deposit": 1531,
+   "defined_in_title": "EA-CORPORA-02 — The Second Seating",
+   "type": "comparative structure",
    "mint_batch_size": 6,
    "mint_mode": "in-session, transport D"
   }

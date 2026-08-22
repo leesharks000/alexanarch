@@ -253,16 +253,9 @@ NOW ──> consolidate in-thread materials into P0        (context-window risk;
 
 **The addenda correct the body. Where they do, the body now says so inline.**
 
-This document accumulated nine addenda in a single day, each correcting something
-earlier. For a while the corrections lived only in the addenda while the corrected
-text stood unmarked — so §4's withdrawn Phaedrus control still read as
-"HIGHEST PRIORITY IN THE PROGRAM. Run it before writing more of P2," four sections
-above the addendum withdrawing it. A reader working forward would have run a test
-this program had already established was empty.
+This document accumulated nine addenda in a single day, each correcting something earlier. For a while the corrections lived only in the addenda while the corrected text stood unmarked — so §4's withdrawn Phaedrus control still read as "HIGHEST PRIORITY IN THE PROGRAM. Run it before writing more of P2," four sections above the addendum withdrawing it. A reader working forward would have run a test this program had already established was empty.
 
-Superseded passages are **kept**, because the sequence of corrections is part of
-what this program records. But each now carries an inline marker naming what
-replaced it. **Where a marker and the passage beneath it disagree, the marker wins.**
+Superseded passages are **kept**, because the sequence of corrections is part of what this program records. But each now carries an inline marker naming what replaced it. **Where a marker and the passage beneath it disagree, the marker wins.**
 
 ---
 
@@ -2467,15 +2460,9 @@ Source URL: https://raw.githubusercontent.com/leesharks000/alexanarch/main/data/
 #!/usr/bin/env python3
 """Sappho-31 fingerprint scan with random-window baselines.
 
-Method. Eleven feature families are drawn from Sappho 31 (nine somatic,
-two structural). Windows of +/-700 normalized chars are taken around every
-INSPIRATION ANCHOR in each work; the score is how many families fire in the
-window. Baseline: 150 random windows per work, fixed seed.
+Method. Eleven feature families are drawn from Sappho 31 (nine somatic, two structural). Windows of +/-700 normalized chars are taken around every INSPIRATION ANCHOR in each work; the score is how many families fire in the window. Baseline: 150 random windows per work, fixed seed.
 
-The finding is NOT the aggregate ratio; it is the DECOMPOSITION. Operator
-families (mania, hearing, alienation, voice, tongue, sight) travel; flesh
-families (sweat, tremor, pallor, fire) go to zero. That asymmetry is the
-decay law, and it is what the transform's dissipation rule (D) predicts.
+The finding is NOT the aggregate ratio; it is the DECOMPOSITION. Operator families (mania, hearing, alienation, voice, tongue, sight) travel; flesh families (sweat, tremor, pallor, fire) go to zero. That asymmetry is the decay law, and it is what the transform's dissipation rule (D) predicts.
 
 Usage: fingerprint_scan.py <corpus_dir> [--window 700] [--baseline 150]
 """
@@ -2528,9 +2515,9 @@ def main():
     rows.sort(key=lambda r: -(r[2] - r[3]))
     print(f"{'work':<10}{'anchors':>8}{'mu_anchor':>11}{'mu_random':>11}{'max':>5}")
     for n, c, ma, mb, mx in rows: print(f"{n:<10}{c:>8}{ma:>11.2f}{mb:>11.2f}{mx:>5}")
-    print(f"\nCORPUS  anchor {statistics.mean(r[2] for r in rows):.2f}  "
+    print("\n" f"CORPUS  anchor {statistics.mean(r[2] for r in rows):.2f}  "
           f"vs random {statistics.mean(r[3] for r in rows):.2f}")
-    print(f"\nFAMILY FIRE-RATE across {anchors_total} anchor windows  "
+    print("\n" f"FAMILY FIRE-RATE across {anchors_total} anchor windows  "
           f"(flesh families marked *):")
     for f, n in fam_counts.most_common():
         print(f"  {n:>4}/{anchors_total}  {f}{'  *FLESH' if f in FLESH else ''}")
@@ -2548,10 +2535,7 @@ Source URL: https://raw.githubusercontent.com/leesharks000/alexanarch/main/data/
 #!/usr/bin/env python3
 """Diacritic-blind concordance: find a stem, print the ACCENTED context.
 
-Search is normalized; output is the original text with all diacritics intact,
-via normalize.index_map. Every Greek passage quoted in the program's papers
-was pulled with this, so quotations are verbatim from the edition, never
-retyped from memory.
+Search is normalized; output is the original text with all diacritics intact, via normalize.index_map. Every Greek passage quoted in the program's papers was pulled with this, so quotations are verbatim from the edition, never retyped from memory.
 
 Usage: extract_context.py <file> <stem> [--width 700] [--max 3]
 """
