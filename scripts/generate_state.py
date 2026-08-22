@@ -92,7 +92,8 @@ def build_state() -> dict:
         with open(captures_path) as f:
             cap_data = json.load(f)
         if isinstance(cap_data, dict):
-            capture_count = cap_data.get('total_captures', 0) or len(cap_data.get('captures', []))
+            capture_count = len(cap_data.get('entries', []))  # DERIVED, never the hand-set total_captures field,
+            # which drifted to 345 against 349 on 2026-08-21. The entries list is the fact.
 
     # Chunks
     chunks_index_path = ROOT / 'data' / 'chunks' / 'registry' / '_index.json'
