@@ -1,0 +1,60 @@
+{
+ "seat": "EA-CORPORA-02/04",
+ "corpus": "mandaean",
+ "title": "The Mandaean Corpus — Lidzbarski Editions and Translation-Witnesses (Ginza, Johannesbuch, Liturgien), Secured Under the Sparse-Tradition Rule",
+ "sparse_tradition_ruling": "Ruled this run (2026-08-22): where a source tradition is so sparse that translations are the only extant open witnesses, translations may be seated AS WITNESSES, NAMED AS SUCH. A translation-witness is a witness, not an original; each entry below declares its class. The Mandaean tradition — a living Gnostic community whose scriptural corpus survives in a handful of editions, none openly machine-readable — is the motivating case.",
+ "witnesses": {
+  "johannesbuch-1905-text": {
+   "class": "ORIGINAL-LANGUAGE WITNESS",
+   "edition": "M. Lidzbarski, Das Johannesbuch der Mandäer, Teil 1: Text (Giessen: Töpelmann, 1905). Mandaic text in Lidzbarski's transcription.",
+   "secured": "IA dasjohannesbuchd01lidzuoft (University of Toronto copy), PDF + OCR finding aid, SHA1-verified"
+  },
+  "johannesbuch-1915-uebersetzung": {
+   "class": "TRANSLATION-WITNESS (German)",
+   "edition": "M. Lidzbarski, Das Johannesbuch der Mandäer, Teil 2: Einleitung, Übersetzung, Kommentar (Giessen: Töpelmann, 1915).",
+   "secured": "IA dasjohannesbuchd02lidzuoft (Toronto), PDF + OCR, SHA1-verified"
+  },
+  "liturgien-1920": {
+   "class": "MIXED: Mandaic text + German translation",
+   "edition": "M. Lidzbarski, Mandäische Liturgien (Berlin: Weidmann, 1920). Qolasta and related liturgical corpus.",
+   "secured": "IA mandaschelitur00lidzuoft (Toronto), PDF + OCR, SHA1-verified"
+  },
+  "ginza-1925": {
+   "class": "TRANSLATION-WITNESS (German) — the only complete open Ginza in any accessible form",
+   "edition": "M. Lidzbarski, Ginzā. Der Schatz oder das grosse Buch der Mandäer (Göttingen: Vandenhoeck & Ruprecht, 1925).",
+   "secured": "IA ginzaderschatzod0000mark (library scan), PDF + OCR, SHA1-verified"
+  },
+  "brandt-1893": {
+   "class": "TRANSLATION-WITNESS (German, partial)",
+   "edition": "W. Brandt, Mandäische Schriften aus der Grossen Sammlung heiliger Bücher genannt Ginzā oder Sidrā Rabbā (Göttingen, 1893). Portions of the Ginza.",
+   "secured": "IA mandaische-schriften, PDF, SHA1-verified"
+  }
+ },
+ "pinned_not_secured": {
+  "norberg-1815-17": {
+   "why": "CC0-marked IA scan (codexnasaraeusli13ginz) is a 162.6MB single file exceeding the 100MB repo file limit; Norberg's Codex Nasaraeus (Mandaic transliterated into Syriac script, heavily emended, with Latin translation) is the historically first but philologically weakest printed Ginza. Identifiers + license pinned; securing queued (split or release-asset route).",
+   "identifiers": [
+    "codexnasaraeusli13ginz (CC0)",
+    "bub_gb_yO5n1fy9ipkC",
+    "bub_gb_iOFpfJ9q0zUC",
+    "bub_gb_yqkIQ22R7JgC",
+    "lexidioncodicisn00norb",
+    "onomasticoncodic00norb"
+   ]
+  },
+  "haberl-mcgrath-2020": {
+   "why": "C.G. Häberl & J.F. McGrath, The Mandaean Book of John: Critical Edition, Translation, and Commentary (De Gruyter, 2020), published OPEN ACCESS under CC BY-NC-ND 4.0, DOI 10.1515/9783110487862. At fetch time (2026-08-22) the publisher surface (degruyter.com → degruyterbrill.com) served bot-challenge pages to archival requests, and OAPEN/DOAB mirrors refused connections. The IA item 'mandaeanbookofjohn' carries the correct license URL but is an academia.edu-derived upload whose 2.1MB PDF is inconsistent with the full edition; provenance insufficient to seat. QUEUED with routes: OAPEN handle search, DOAB, publisher OA PDF. A CC-licensed open-access edition unreachable through its own publisher is a theater-of-availability datum in its own right; recorded.",
+   "license": "CC BY-NC-ND 4.0 (declared)"
+  }
+ },
+ "declared_absences": {
+  "petermann-1867": "H. Petermann, Thesaurus s. Liber Magnus, vulgo 'Liber Adami' appellatus (Leipzig 1867) — the lithographed reproduction of the Mandaic Ginza, the primary text-bearing edition. Searched IA 2026-08-22 under 'thesaurus liber magnus', 'liber adami', 'sidra rabba', creator Petermann: not held. Known copies at German repositories not reachable under current network policy. TOP GAP for the Mandaean corpus.",
+  "machine_readable_mandaic": "No openly licensed machine-readable Mandaic text of any major work is known to this run. The Comprehensive Aramaic Lexicon holds Mandaic texts — license to verify before any ruling. Transcription of Lidzbarski 1905 text pages queued as the keying candidate."
+ },
+ "license": {
+  "payload": "All secured volumes public domain (Lidzbarski d. 1928 — PD worldwide since 2019 under life+90; editions 1893-1925; Toronto/IA scans unrestricted). Drower translations (d. 1972) EXCLUDED as in copyright; exclusion recorded.",
+  "record": "CC-BY-4.0 (seat record text only)"
+ },
+ "text_layer": "NONE BY DESIGN — OCR of Fraktur German and transliterated Mandaic is held as finding aid only in original/; no text/ emission until keyed. Same doctrine as kapital-1867.",
+ "fetched": "2026-08-22; IA public endpoints, SHA1-verified against item manifests; Transport D, No-Double-Draw."
+}
