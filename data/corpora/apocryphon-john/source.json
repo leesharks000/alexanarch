@@ -1,0 +1,33 @@
+{
+ "seat": "EA-CORPORA-02/03",
+ "corpus": "apocryphon-john",
+ "title": "The Apocryphon of John — Nag Hammadi Witness Plates (Institute for Antiquity and Christianity A/B-Series Photography, via Claremont Colleges Digital Library)",
+ "object_class": "IMAGE CORPUS — first image seat in the library; structural ruling queued for the EA-CORPORA-02 gathering record. No text/ layer exists yet by design.",
+ "witnesses": {
+  "codex-II": {
+   "scope": "NHC II,1 = Codex II pp. 1-32",
+   "status": "SECURED COMPLETE — 32 plates, full native resolution via IIIF full/max (2733x2161 to 8606x11618 px), 210 MB, SHA256-pinned per plate (original/plates/codex-II/plate-pins.json). Visual verification: plate p.1 confirmed as the mylar-mounted, damaged opening page, Coptic uncials legible, conservation label 'Codex II ... 1'.",
+   "selection": "one plate per page from 76 candidate exposures (A/B series and mylar pairings); single-page shots preferred; alternates enumerated in three-witness-plate-map.json"
+  },
+  "codex-III": {
+   "scope": "NHC III,1 = Codex III pp. 1-40",
+   "status": "QUEUED (tranche 2) — 45 plates enumerated covering pp. 5-40; pp. 1-4, 9-11, 19-20, 26 absent from title-pattern enumeration, re-search under alternate title forms required before declaring absence. Fetch spec: original/fetch_tranches.py"
+  },
+  "codex-IV": {
+   "scope": "NHC IV,1 = Codex IV pp. 1-49",
+   "status": "QUEUED (tranche 3) — 238 plates enumerated covering pp. 1-49 except 13-14 (re-search required). Fetch spec committed."
+  },
+  "BG-8502-2": {
+   "scope": "Berlin Codex, fourth witness",
+   "status": "NOT AT CLAREMONT — Berlin (Staatliche Museen / SMB-SPK). External witness to locate; recorded so the synoptic goal keeps all four witnesses in view."
+  }
+ },
+ "provenance": "Photographs: Institute for Antiquity and Christianity, Claremont Graduate University — the Robinson-project photographic record (A-Series 5x7 inch negatives et al.). Digitized and served by Claremont Colleges Digital Library, collection 'nha' (3,474 records; 3,075 papyrus-page and site photographs). Physical codices: Coptic Museum, Cairo.",
+ "license": {
+  "ccdl_statement_verbatim": "Physical rights are retained by the institution. Copyright is retained in accordance with U. S. Copyright laws.",
+  "adjudication": "The papyri are ancient and public domain. Under U.S. law faithful photographic reproductions of two-dimensional public-domain material acquire no independent copyright (Bridgeman v. Corel line); the CCDL statement asserts physical custody and a generic conformity to U.S. copyright law, under which no reproduction copyright arises for these plates. The statement is recorded verbatim rather than assumed away; the images are served openly at full resolution over unauthenticated IIIF. Seated. This is the 'theater of availability' pattern documented in EA-CORPORA-01 resolved in the opposite direction: here the availability is real and the claim is the ghost.",
+  "record": "CC-BY-4.0 (seat record text only; the ancient images are PD)"
+ },
+ "mitigates": "EA-CORPORA-01 declared absence: 'Apocryphon of John — no openly licensed machine-readable Coptic edition.' This seat converts the absence from unheld to held-in-image for witness II (III, IV queued). TRANSCRIPTION QUEUED: synoptic diplomatic keying of the four witnesses remains the narrowest highest-value gap, now with its base layer in custody.",
+ "fetched": "2026-08-22; CCDL dmwebservices enumeration + IIIF Image API; full/max used where full/full is size-capped (the higher-resolution scans); pacing respected after burst-limit encounter, documented for tranche fetches. Transport D, No-Double-Draw."
+}
