@@ -1,0 +1,37 @@
+{
+ "seat": "EA-CORPORA-02/02",
+ "corpus": "marx",
+ "title": "Karl Marx — German Originals: The Manifest Witness Pair (1848 London / 1850-51 Cologne) and Das Kapital Erstauflage 1867 (secured, transcription queued)",
+ "witnesses": {
+  "manifest-1848": {
+   "edition": "Manifest der Kommunistischen Partei. [Anonymous.] London: Office der 'Bildungs-Gesellschaft fuer Arbeiter', Februar 1848. 23-page first printing.",
+   "text_source": "de.wikisource.org scan-backed transcription, BEARBEITUNGSSTAND=fertig (twice proofread), per-page revision-pinned (original/wikitext/ + wikisource-revision-pins.json)",
+   "scans": "Commons djvu secured, SHA1-pinned (original/scans/manifest-1848/)",
+   "ref_scheme": "manifest-1848 p<N> = page of the 1848 printing"
+  },
+  "manifest-1850-51": {
+   "edition": "30-page printing long taken for the second London 1848 issue; per Meiser (MEGA-Studien 1996/1) printed ca. 1850/51 by J. Creteux at H. Becker's press, Cologne, reusing the London imprint, with Marx's express consent. Seated AS the Cologne witness under its true date.",
+   "text_source": "de.wikisource.org scan-backed transcription, fertig, per-page revision-pinned",
+   "scans": "30 Commons jpgs secured, SHA1-pinned (original/scans/manifest-1850-51/)",
+   "ref_scheme": "manifest-1850-51 p<N> = page of the Cologne printing"
+  },
+  "kapital-1867": {
+   "edition": "Das Kapital. Kritik der politischen Oekonomie. Erster Band. Hamburg: Otto Meissner; New-York: L.W. Schmidt, 1867. ERSTAUFLAGE — the pre-revision Wertform text.",
+   "status": "IMAGES SECURED, TRANSCRIPTION QUEUED. Boston Public Library copy via Internet Archive (daskapitalkritik67marx), 810 images; PDF + raw Fraktur OCR secured and SHA1-verified against IA manifests (ia-pins.json). The OCR layer is rough Fraktur output held as a finding aid only — it is NOT a text layer and is not emitted to text/.",
+   "queued": "Fraktur keying/correction of the 1867 text; the 1872/73 second edition (rewritten Wertform chapter) as the paired witness; Columbia Meissner set ldpd_13046079_001-004 identified for Bde 2-3 (Engels-edited, 1885/1894)"
+  }
+ },
+ "license": {
+  "payload": "All witness texts public domain (Marx d. 1883, Engels d. 1895; printings 1848-1867). Wikisource transcription layer CC BY-SA 4.0 (de.wikisource Editionsrichtlinien); Commons scan files PD. IA-hosted 1867 scans PD.",
+  "record": "CC-BY-4.0 (seat record)",
+  "exclusions": "MEW (Dietz) and MEGA apparatus texts excluded — edited-text copyright hazard. marxists.org German Kapital excluded as MEW-derived. Recorded 2026-08-22."
+ },
+ "witness_program_note": "First seat executed explicitly as a witness PAIR: the 1848 London and 1850/51 Cologne printings of the same work, page-addressed per witness so collation can locate the settings' divergences. The Cologne printing's false London imprint — a deliberate provenance mask, applied with the author's consent, uncovered by MEGA philology 145 years later — is itself a canonical object for the archive: provenance inversion in the wild, 1851.",
+ "normalization": "Per-page flat lines '<witness> p<N>\\t<text>', graphic flow per Wikisource transcription (Schreibweise folgt dem Originaltext), proofread headers and citation footers stripped. 23 + 29 content pages emitted (title/blank pages excluded by transcription).",
+ "verified_loci": [
+  "manifest-1848 p3: 'Ein Gespenst geht um in Europa - das Gespenst des Kommunismus.'",
+  "manifest-1848 p23 / manifest-1850-51 p30: 'Proletarier aller Laender vereinigt Euch!'",
+  "manifest-1850-51 p4: 'Die Geschichte aller bisherigen Gesellschaft ist die Geschichte von Klassenkaempfen.'"
+ ],
+ "fetched": "2026-08-22; Transport D, No-Double-Draw: no paid API invoked; Wikimedia + IA public endpoints with declared UA"
+}
