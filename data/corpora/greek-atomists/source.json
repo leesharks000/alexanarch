@@ -1,0 +1,38 @@
+{
+ "seat": "EA-CORPORA-02/07",
+ "corpus": "greek-atomists",
+ "title": "The Greek Atomists — Diogenes Laertius (complete Vitae), Diels Vorsokratiker Bd 2 (Leucippus/Democritus), Usener Epicurea",
+ "components": {
+  "diogenes-laertius": {
+   "class": "TEXT (Greek, machine-readable)",
+   "edition": "Vitae philosophorum, Perseus canonical-greekLit tlg0004.tlg001.perseus-grc2 (TEI); Greek text as digitized by Perseus from the R.D. Hicks edition per file sourceDesc",
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "a065c359aab3",
+    "fetched": "2026-08-22"
+   },
+   "scope": "Complete ten books — seated whole. Atomist payload: Book 9.30-49 (Leucippus, Democritus vitae), Book 10 entire (Epicurus: Letters to Herodotus, Pythocles, Menoeceus; Kyriai Doxai). 1,211 sections, refs 'DL <book>.<section>'",
+   "license": "CC BY-SA 4.0 (declared in file)"
+  },
+  "diels-1912-bd2": {
+   "class": "FRAGMENT COLLECTION — IMAGES SECURED, TRANSCRIPTION QUEUED",
+   "edition": "H. Diels, Die Fragmente der Vorsokratiker, 3. Aufl., Bd 2 (Berlin: Weidmann, 1912) — Leucippus (DK 67) and Democritus (DK 68) fragments and testimonia. PD (Diels d. 1922; edition 1912). The DK numeration standard enters the archive in its public-domain stratum; the Kranz revisions (5th/6th ed) are in copyright and EXCLUDED.",
+   "secured": "IA diefragmenteder02diel, PDF + OCR finding aid, SHA1-verified"
+  },
+  "usener-1887": {
+   "class": "FRAGMENT COLLECTION — IMAGES SECURED, TRANSCRIPTION QUEUED",
+   "edition": "H. Usener, Epicurea (Leipzig: Teubner, 1887) — the Epicurus fragment corpus. PD.",
+   "secured": "IA HermannUsenerEpicurea1887, PDF + OCR finding aid, SHA1-verified"
+  }
+ },
+ "verified_loci": [
+  "DL 10.122 Μήτε νέος τις ὢν μελλέτω φιλοσοφεῖν (Letter to Menoeceus opening)",
+  "DL 9.30 Λεύκιππος Ἐλεάτης... (Leucippus vita)"
+ ],
+ "witness_chain_note": "With lucretius/ this seat closes a transmission loop the archive can now hold end to end: Greek fragments (Diels) → doxography and epistolary survival (DL 9-10) → the Latin poem (DRN). Atomism is the best-documented case of ancient reception-through-translation-and-versification; MMRS avant la lettre.",
+ "license": {
+  "payload": "Mixed, declared per component above",
+  "record": "CC-BY-4.0"
+ },
+ "fetched": "2026-08-22; Transport D, No-Double-Draw."
+}
