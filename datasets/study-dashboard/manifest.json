@@ -48,5 +48,22 @@
   "series",
   "depends_on"
  ],
- "invitation": "Every DESIGNED row carries a blocker and a next action. Anyone may run any of them. The protocols are frozen, the baselines are seated, and the failure conditions are declared in advance — which means a result obtained by someone else is admissible on the same terms as one obtained here."
+ "invitation": "Every DESIGNED row carries a blocker and a next action. Anyone may run any of them. The protocols are frozen, the baselines are seated, and the failure conditions are declared in advance — which means a result obtained by someone else is admissible on the same terms as one obtained here.",
+ "companion": "datasets/prediction-ledger/ — 451 registered falsification conditions from 326 deposits, plus 13 hand-verified predictions of which 6 resolved WRONG. A study dashboard tracks what is planned; the ledger tracks what was claimed in advance and whether it held.",
+ "triage_census": {
+  "_note": "A systematic backward pass over the whole registry, recorded as TRIAGE not status. 264 deposits classify by content-type into study kinds. A results-language detector fires on only 43 of them, and 101 of 120 'result'-kind deposits show none — which means the classifier is too coarse to assign status and the bucket is polluted by datasets and censuses. Recorded so the next pass starts from a measured baseline rather than repeating the scan.",
+  "classified": 264,
+  "by_kind": {
+   "result": 120,
+   "software": 46,
+   "instrument": 32,
+   "workplan": 31,
+   "protocol": 15,
+   "program": 9,
+   "metric": 8,
+   "battery": 3
+  },
+  "results_language_signal": 43,
+  "conclusion": "Status is not automatically inferable from the registry. The 17 curated rows above were hand-verified; the remaining ~250 require reading, and the falsification-section extraction in the companion ledger is the cheaper route to the same information."
+ }
 }

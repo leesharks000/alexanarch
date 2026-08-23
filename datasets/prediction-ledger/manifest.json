@@ -1,0 +1,38 @@
+{
+ "_FLOW": "A ledger of the archive's registered predictions and falsification conditions. TWO LAYERS. Layer 1 is a systematic extraction: 451 conditions harvested from the 326 deposits that carry a NAMED falsification section, classified by how each would resolve. Layer 2 is a hand-verified set of predictions whose outcome is known, weighted deliberately toward the ones that FAILED. A prediction ledger whose entries all came true would be evidence of a ledger written after the fact.",
+ "dataset": "prediction-ledger",
+ "version": "v1.0",
+ "date": "2026-08-23",
+ "method": "Structural, not semantic. A registered prediction is distinguished by carrying a RESOLUTION CONDITION, and resolution conditions live in named sections. Regex on prediction language returns 939 candidates across 415 deposits, most of them conditional prose. Regex on falsification-section HEADINGS returns 326 deposits and 359 sections, from which 451 individual conditions were extracted. The section is the discriminator.",
+ "layer_1": {
+  "deposits_with_falsification_section": 326,
+  "sections": 359,
+  "conditions_extracted": 451,
+  "by_resolution_route": {
+   "VERIFIABLE — resolves by checking a surface": 200,
+   "EMPIRICAL — resolves on a study": 20,
+   "PHILOLOGICAL — resolves against a source": 40,
+   "UNCLASSIFIED — resolution route not stated": 164,
+   "FORMAL — resolves by construction or proof": 18,
+   "TEMPORAL — resolves on a dated re-measurement": 9
+  },
+  "findings": [
+   "200 conditions are VERIFIABLE NOW — resolvable by checking a surface, a commit, a hash or a deposit. Anyone could resolve them today.",
+   "164 conditions — more than a third — DO NOT STATE A RESOLUTION ROUTE. That is a defect class: a falsification condition that does not say how it would resolve is a gesture, not a condition. Naming it here is the first step to fixing it.",
+   "Only 9 carry a clock. The archive registers many more conditions than it schedules."
+  ]
+ },
+ "layer_2": {
+  "hand_verified": 13,
+  "by_status": {
+   "RESOLVED — WRONG": 6,
+   "RESOLVED — WRONG (withdrawn)": 1,
+   "WITHDRAWN": 1,
+   "OPEN": 5
+  },
+  "note": "SIX RESOLVED WRONG, ONE WITHDRAWN, FIVE OPEN. The failures are the point: a hypothesis that failed within an hour of being proposed, two pre-registered predictions falsified by the archive's own battery, a duplicate gate that returned a false negative, and three claims this archive made about its own capabilities that its own corpus refuted."
+ },
+ "the_credential": "An archive's registered predictions are worth exactly what its failed ones are worth. The most valuable rows here are RESOLVED — WRONG.",
+ "coverage": "Layer 1 is a census of named falsification sections, not of all registered predictions — conditions stated in body prose without a section heading are not captured. Layer 2 is a curated set, not a sample.",
+ "next": "Resolve the 200 verifiable conditions. Assign resolution routes to the 164 that lack one. Schedule the 9 that carry clocks."
+}

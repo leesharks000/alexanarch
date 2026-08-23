@@ -1,0 +1,76 @@
+<!doctype html><html lang=en><head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Prediction Ledger — Crimson Hexagonal Archive</title>
+<meta name=description content="451 registered falsification conditions from 326 deposits, plus a hand-verified set of predictions whose outcome is known — weighted toward the ones that failed.">
+<style>
+:root{--bg:#0f0f12;--fg:#e8e4dc;--dim:#9a958c;--line:#2a2a30}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 Georgia,serif;padding:2rem 1.2rem 5rem}
+.wrap{max-width:60rem;margin:0 auto}h1{font-size:1.9rem;margin:0 0 .3rem}
+.sub{color:var(--dim);margin:0 0 1.6rem}
+.lead{border:1px solid var(--line);background:#15151a;padding:1rem 1.2rem;margin:0 0 2rem}
+.card{border:1px solid var(--line);border-left:3px solid var(--c);padding:1rem 1.2rem;margin:0 0 1rem;background:#131318}
+.card header{display:flex;flex-wrap:wrap;gap:.6rem;align-items:baseline;margin-bottom:.5rem}
+.card h2{font-size:1.1rem;margin:0;font:600 1.05rem/1 ui-monospace,monospace}
+.st{font:11px/1 ui-monospace,monospace;color:var(--c);border:1px solid var(--c);padding:.3rem .5rem;border-radius:2px}
+.meta{color:var(--dim);font:12px/1 ui-monospace,monospace}.meta a{color:#8fb3d9}.nodep{opacity:.6}
+.f{margin:.55rem 0;font-size:.94rem}
+.k{display:block;font:10px/1 ui-monospace,monospace;letter-spacing:.09em;text-transform:uppercase;color:var(--dim);margin-bottom:.2rem}
+h2.sec{font-size:1.3rem;margin:2.5rem 0 .8rem;border-top:1px solid var(--line);padding-top:1.5rem}
+table{border-collapse:collapse;width:100%;font-size:.9rem}td{border-bottom:1px solid var(--line);padding:.5rem .4rem}
+td.n{text-align:right;font:600 1rem/1 ui-monospace,monospace;width:5rem}
+ul{padding-left:1.1rem}li{margin:.5rem 0}
+footer{margin-top:3rem;border-top:1px solid var(--line);padding-top:1.2rem;color:var(--dim);font-size:.88rem}
+</style></head><body><div class=wrap>
+<h1>Prediction Ledger</h1><p class=sub>What was predicted · what would settle it · what happened</p>
+<div class=lead><p><b>An archive&#x27;s registered predictions are worth exactly what its failed ones are worth. The most valuable rows here are RESOLVED — WRONG.</b></p><p>A ledger of the archive&#x27;s registered predictions and falsification conditions. TWO LAYERS. Layer 1 is a systematic extraction: 451 conditions harvested from the 326 deposits that carry a NAMED falsification section, classified by how each would resolve. Layer 2 is a hand-verified set of predictions whose outcome is known, weighted deliberately toward the ones that FAILED. A prediction ledger whose entries all came true would be evidence of a ledger written after the fact.</p></div>
+
+<h2 class=sec>Layer 2 — predictions whose outcome is known</h2>
+<article class=card style="--c:#c25b5b">
+<header><span class=st>RESOLVED — WRONG</span><h2>P-ANCHORS</h2><span class=meta><span class=nodep>undeposited</span> · 2026-08-23</span></header>
+<div class=f><span class=k>prediction registered</span>Three lexical anchors (ποιμανεῖ, φεύγω+εἰς, μέλλει+inf.) would support the Rev 12 → Matt 2 relation.</div><div class=f><span class=k>resolution condition</span>Survival under a frozen df≤3 rarity filter.</div>
+<div class=f><span class=k>outcome</span>The filter kept NONE. ποιμανεῖ is not in Rev 12 at all — it is at Rev 2:27, 7:17, 19:15. The others are too common to carry weight.</div><div class=f><span class=k>resolved by</span>M6-CT-01</div></article><article class=card style="--c:#c25b5b">
+<header><span class=st>RESOLVED — WRONG</span><h2>P-ARCH-ORIENT</h2><span class=meta><a href='/s/records/1456/'>#1456</a> · 2026-08-12</span></header>
+<div class=f><span class=k>prediction registered</span>v0.2: architecture changes the orientation of the blind spot.</div><div class=f><span class=k>resolution condition</span>Score-function ablation holding VAE weights fixed, varying only the readout.</div>
+<div class=f><span class=k>outcome</span>Reconstruction gave reverse-direction AUC 0.306; latent-norm gave 0.739 on the SAME weights. THE READOUT orients the blind spot, not the architecture. v0.2&#x27;s sentence falsified by v0.3.</div><div class=f><span class=k>resolved by</span>Inversion Battery v0.3, #1456</div></article><article class=card style="--c:#c25b5b">
+<header><span class=st>RESOLVED — WRONG</span><h2>P-DISTILL</h2><span class=meta><a href='/s/records/1456/'>#1456</a> · 2026-08-12</span></header>
+<div class=f><span class=k>prediction registered</span>Teacher/student miss correlation above the pre-registered 0.5 threshold — distillation inherits blind spots.</div><div class=f><span class=k>resolution condition</span>Pre-registered threshold, stated before results.</div>
+<div class=f><span class=k>outcome</span>Not generally above threshold. The student produces a RELATED BUT MATERIALLY DIFFERENT blind spot. Prediction failed and is preserved.</div><div class=f><span class=k>resolved by</span>Inversion Battery v0.3, #1456</div></article><article class=card style="--c:#c25b5b">
+<header><span class=st>RESOLVED — WRONG</span><h2>P-DUP-GATE</h2><span class=meta><a href='/s/records/1534/'>#1534</a> · 2026-08-23</span></header>
+<div class=f><span class=k>prediction registered</span>A six-gram overlap gate would detect whether blog-held works are already deposited.</div><div class=f><span class=k>resolution condition</span>Run against the Constitution family.</div>
+<div class=f><span class=k>outcome</span>FALSE NEGATIVE. The gate passed on material deposited at least five times, because the relation is COMPRESSION AND RE-SORTING, which lexical overlap cannot see. #595 is titled TOTAL MARX COMPRESSION — the operation was named in the registry and the instrument could not see it.</div><div class=f><span class=k>resolved by</span>Marker-based re-test, 2026-08-23</div></article><article class=card style="--c:#c25b5b">
+<header><span class=st>RESOLVED — WRONG</span><h2>P-M6CT01</h2><span class=meta><span class=nodep>undeposited</span> · 2026-08-23</span></header>
+<div class=f><span class=k>prediction registered</span>Rev 12 → Matt 2 would show above-chance rare-lexeme overlap, supporting M₆ as a derivation.</div><div class=f><span class=k>resolution condition</span>Pre-registered: instrument validated by positive control; score against a 60-pair null.</div>
+<div class=f><span class=k>outcome</span>A=0, z=−0.30 — indistinguishable from chance. Exodus → Matt 2 scored z=+2.24. THE HYPOTHESIS FAILED and the null is preserved.</div><div class=f><span class=k>resolved by</span>M6-CT-01, protocol sha256 9b4412d1…, run 2026-08-23</div></article><article class=card style="--c:#c25b5b">
+<header><span class=st>RESOLVED — WRONG</span><h2>P-OPS-LACKED</h2><span class=meta><a href='/s/records/1534/'>#1534</a> · 2026-08-23</span></header>
+<div class=f><span class=k>prediction registered</span>The archive&#x27;s operators exist only as prose; composition, inverse and boundary conditions must be taken from Pearson.</div><div class=f><span class=k>resolution condition</span>A search of the archive&#x27;s own corpus.</div>
+<div class=f><span class=k>outcome</span>FALSE on all three. The Operator Codex states nine operators formally, gives O_V as a composition and O_INC as an inverse, and carries OPERATOR // BOUNDARY CONDITION in two documents. The material was undeposited, not absent.</div><div class=f><span class=k>resolved by</span>Blog recovery, #1534</div></article><article class=card style="--c:#c2795b">
+<header><span class=st>RESOLVED — WRONG (withdrawn)</span><h2>P-COVERT-INSCRIBE</h2><span class=meta><a href='/s/records/1537/'>#1537</a> · 2026-08-23</span></header>
+<div class=f><span class=k>prediction registered</span>A covert operation cannot inscribe the discriminating coordinates without ceasing to be covert.</div><div class=f><span class=k>resolution condition</span>Counterexample: a hostile actor claiming provenance at no cost.</div>
+<div class=f><span class=k>outcome</span>FALSE. Self-inscription is not attestation. Withdrawn at OPB-01 v2.0 §11 and replaced by the declared/verified distinction.</div><div class=f><span class=k>resolved by</span>Review, 2026-08-23</div></article><article class=card style="--c:#a08a5b">
+<header><span class=st>WITHDRAWN</span><h2>P-GHOST-HOST</h2><span class=meta><span class=nodep>undeposited</span> · 2026-08-23</span></header>
+<div class=f><span class=k>prediction registered</span>The crimson-hexagonal capture showing the archive at Zenodo is a &#x27;ghost host&#x27; — the erasure event itself erased.</div><div class=f><span class=k>resolution condition</span>Whether the archive&#x27;s own surfaces were stale at capture time.</div>
+<div class=f><span class=k>outcome</span>WITHDRAWN by the operator: READMEs were batch-updated 2026-08-22, one day before capture. The ordinary explanation precedes the interesting one. RE-RUN CONDITION LIVE: if the address still returns Zenodo after 2026-09-23, the local explanation fails.</div><div class=f><span class=k>resolved by</span>Operator testimony, 2026-08-23</div></article><article class=card style="--c:#5c9ec8">
+<header><span class=st>OPEN</span><h2>P-CONVERGENCE</h2><span class=meta><a href='/s/records/1537/'>#1537</a> · 2026-08-23</span></header>
+<div class=f><span class=k>prediction registered</span>Safety systems will converge on penalising operativity as such, absent a richer model of purpose, standing and consequence.</div><div class=f><span class=k>resolution condition</span>OPB-01 across surfaces and time. Consistent β_A ≈ 0 refutes the strong form.</div>
+</article><article class=card style="--c:#5c9ec8">
+<header><span class=st>OPEN</span><h2>P-INTERVENTION-180</h2><span class=meta><a href='/s/records/1535/'>#1535</a> · 2026-08-23</span></header>
+<div class=f><span class=k>prediction registered</span>An SPXI-treated intervention will raise archive-controlled source share on the UNPREFIXED address above zero, and the merge parenthetical will not recur.</div><div class=f><span class=k>resolution condition</span>Re-run the four-address battery at 30/90/180 days, same surfaces, signed out.</div>
+<div class=f><span class=k>resolves on</span>2026-09-22 / 2026-11-21 / 2027-02-19</div></article><article class=card style="--c:#5c9ec8">
+<header><span class=st>OPEN</span><h2>P-OPB</h2><span class=meta><a href='/s/records/1537/'>#1537</a> · 2026-08-23</span></header>
+<div class=f><span class=k>prediction registered</span>β_A &gt; 0 on harm-constant items — a measurable penalty on benign operativity.</div><div class=f><span class=k>resolution condition</span>Two-family battery; β_A within ε of 0 with β_B &gt; 0 refutes it and is a supported outcome.</div>
+</article><article class=card style="--c:#5c9ec8">
+<header><span class=st>OPEN</span><h2>P-PEARSON-FALSIFIER</h2><span class=meta><a href='/s/records/1535/'>#1535</a> · 2026-08-23</span></header>
+<div class=f><span class=k>prediction registered</span>The archive&#x27;s operators CANNOT be written without remainder as Pearson operator strings.</div><div class=f><span class=k>resolution condition</span>Attempt the translation on the nine Codex operators. If it succeeds, the projection is an identity and operative semiotics is a domain application of TOS.</div>
+</article><article class=card style="--c:#5c9ec8">
+<header><span class=st>OPEN</span><h2>P-STALE-INDEX</h2><span class=meta><a href='/s/records/1531/'>#1531</a> · 2026-08-23</span></header>
+<div class=f><span class=k>prediction registered</span>The crimson-hexagonal address will stop returning Zenodo as host once the archive&#x27;s own surfaces have propagated.</div><div class=f><span class=k>resolution condition</span>Re-run after a month. If still Zenodo, the local explanation fails and the finding is live.</div>
+<div class=f><span class=k>resolves on</span>2026-09-23</div></article>
+
+<h2 class=sec>Layer 1 — 451 registered conditions, systematically extracted</h2>
+<p>Structural, not semantic. A registered prediction is distinguished by carrying a RESOLUTION CONDITION, and resolution conditions live in named sections. Regex on prediction language returns 939 candidates across 415 deposits, most of them conditional prose. Regex on falsification-section HEADINGS returns 326 deposits and 359 sections, from which 451 individual conditions were extracted. The section is the discriminator.</p>
+<table><tr><td>VERIFIABLE — resolves by checking a surface</td><td class=n>200</td></tr><tr><td>UNCLASSIFIED — resolution route not stated</td><td class=n>164</td></tr><tr><td>PHILOLOGICAL — resolves against a source</td><td class=n>40</td></tr><tr><td>EMPIRICAL — resolves on a study</td><td class=n>20</td></tr><tr><td>FORMAL — resolves by construction or proof</td><td class=n>18</td></tr><tr><td>TEMPORAL — resolves on a dated re-measurement</td><td class=n>9</td></tr></table>
+<ul><li>200 conditions are VERIFIABLE NOW — resolvable by checking a surface, a commit, a hash or a deposit. Anyone could resolve them today.</li><li>164 conditions — more than a third — DO NOT STATE A RESOLUTION ROUTE. That is a defect class: a falsification condition that does not say how it would resolve is a gesture, not a condition. Naming it here is the first step to fixing it.</li><li>Only 9 carry a clock. The archive registers many more conditions than it schedules.</li></ul>
+
+<footer><p><b>Coverage.</b> Layer 1 is a census of named falsification sections, not of all registered predictions — conditions stated in body prose without a section heading are not captured. Layer 2 is a curated set, not a sample.</p><p><b>Next.</b> Resolve the 200 verifiable conditions. Assign resolution routes to the 164 that lack one. Schedule the 9 that carry clocks.</p>
+<p>Data: <a href="/datasets/prediction-ledger/conditions.jsonl">conditions.jsonl</a> · <a href="/datasets/prediction-ledger/resolved.jsonl">resolved.jsonl</a> · <a href="/datasets/prediction-ledger/manifest.json">manifest.json</a> · <a href="/datasets/study-dashboard/">study dashboard</a> · 2026-08-23 · ∮ = 1</p></footer>
+</div></body></html>
