@@ -15,9 +15,19 @@
  },
  "delta_rows": 12656,
  "FINDING_1_EXPORT_STALE": {
-  "observation": "The export's maximum removal_date is 2026-07-05. The fetch date is 2026-08-23. The gzip header's modification time independently reads 2026-07-05.",
-  "days_stale": 49,
-  "reading": "Zenodo's monthly deleted-records export has not regenerated in 49 days. The instrument by which platform erasure is publicly measurable has itself stopped updating. NOT VERIFIED: whether this is a scheduling lapse, a pipeline failure, or a change of policy. Recorded as an observation with two independent date sources agreeing."
+  "CORRECTED": "An earlier draft of this record read the gzip internal mtime (2026-07-05) as the generation date and reported 49 days. The HTTP last-modified header reads 2026-07-12 11:33 GMT and is authoritative: the file was GENERATED 2026-07-12 with data through 2026-07-05, a seven-day batch lag that is ordinary.",
+  "generated": "2026-07-12",
+  "data_through": "2026-07-05",
+  "days_since_generation": 42,
+  "observed_cadence": "28 days, from two points only (2026-06-07, 2026-07-12). Overdue by ~14 days against that cadence.",
+  "correlation_recorded": "EA-EROSION-01 was deposited 2026-07-06. The export regenerated once AFTER that, on 2026-07-12, and has not regenerated since. The correlation is therefore NOT 'the export stopped when the observatory went up' — it regenerated six days after — but 'the last regeneration falls six days after the observatory's deposit, and none has followed in 42 days'. The weaker statement is the true one and the stronger one is withdrawn.",
+  "same_day_coincidence": "2026-07-12 is also the date the tombstone pages ceased serving rich embedded record JSON (last rich 01:50:52Z, first stripped 02:03:55Z, per datasets/tombstone-mirror) and the date of the tombstone-mirror harvest. Export regenerated 11:33Z the same day. RECORDED AS COINCIDENCE, NOT CAUSATION.",
+  "discriminating_test_attempted": "Whether other Zenodo exporters are also stale. Endpoints records.csv.gz and communities.csv.gz return 404 — the guessed names are wrong, so the test DID NOT RUN. Establishing whether the staleness is specific to the deleted-records export or general to the exporter infrastructure requires the correct endpoint list and remains open.",
+  "NOT_VERIFIED": [
+   "That 28 days is the export's normal cadence — two points cannot establish it.",
+   "That Zenodo is aware of the observatory.",
+   "Any causal relation whatever."
+  ]
  },
  "FINDING_2_TERMINATION_IN_PLATFORM_DATA": {
   "archive_attributable_rows": 935,
@@ -57,5 +67,6 @@
   "That the 49-day gap is anomalous rather than the export's normal cadence — the archive has two epochs and cannot establish a baseline cadence from two points.",
   "That every archive-attributable row belongs to the terminated account.",
   "That the 871/920 discrepancy is a counting-basis artifact."
- ]
+ ],
+ "SUPERSEDED_BY": "Findings 2 and 3 of this record were already held, and better, in datasets/tombstone-mirror (kill ledger 1,136 records; API census 2,027 objects, all HTTP 410; sweep timed 11:34:17-11:48:50 at ~6.6 objects/second) and datasets/zenodo-datacite-batch (frozen pre-severance DataCite backup; 2026-07-03 recapture returning ZERO restorations of 871). This snapshot's standing is a CADENCE OBSERVATION on Zenodo's exporter, not a new census."
 }
