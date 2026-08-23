@@ -47,11 +47,22 @@
   ],
   "THE_DISCRIMINATING_TEST_RAN_AND_ANSWERED": "Earlier this session the test was attempted and failed because the endpoint names were guessed wrong. The correct names are records-xml.tar.gz and records-json.tar.gz, not records.csv.gz. RESULT: THE METADATA DUMP AND THE DELETION DUMP STOPPED AT THE SAME MOMENT — 2026-07-10T03:31:53Z and 03:32:35Z, forty-two seconds apart, and neither has a successor. The whole exporter pipeline stopped, not the deletion export specifically.",
   "cadence": "Documented by Zenodo as monthly at the beginning of each month. Observed intervals from the version history: 30 days (May 7 → Jun 7), 32 days (Jun 7 → Jul 10). Currently 44 days since HEAD — overdue by roughly eleven days.",
-  "CORRELATION_WITHDRAWN": "EA-EROSION-01 was deposited 2026-07-06. The export regenerated on 2026-07-10, FOUR DAYS AFTER, then the entire exporter pipeline stopped. A targeted suppression of deletion data would leave the metadata dump running; it did not. THE ORDINARY EXPLANATION PRECEDES THE INTERESTING ONE, and this archive applies that rule to its own hypotheses. The correlation is recorded as observed and NOT as evidence.",
   "converging_evidence_of_pipeline_failure": "zenodo/zenodo-rdm issue #1357, opened 2026-04-28 by an external user: download statistics flatlined since ~2026-04-20 while views continued, reproduced across records and devices, and confirmed specific to Zenodo by comparison against SSRN, PhilPapers and Humanities Commons. STILL OPEN, unassigned, unlabelled, no maintainer response in roughly four months. Zenodo additionally carries a live service notice on record pages acknowledging that download statistics are not updating. A platform with an acknowledged, unresolved, months-long statistics-pipeline failure is a platform whose export pipeline stopping is unremarkable.",
   "community_dumps_worse": "The biosyslit community dumps last generated 2026-03-27 — stale for five months.",
   "date_correction": "An earlier reading gave 2026-07-12 from the HTTP last-modified header. The exporter index gives created=2026-07-10T03:32:35Z, which is the generation time and is authoritative. Both earlier figures — 49 days and 42 days — are superseded by 44 days since generation.",
-  "INTEGRITY": "The preserved snapshot's md5 is 33877aba1fb5684f86758cb86ddc1ad4, MATCHING Zenodo's published checksum for the HEAD version exactly. The archive holds a verified copy of the last export Zenodo produced."
+  "INTEGRITY": "The preserved snapshot's md5 is 33877aba1fb5684f86758cb86ddc1ad4, MATCHING Zenodo's published checksum for the HEAD version exactly. The archive holds a verified copy of the last export Zenodo produced.",
+  "CORRELATION_STANDS_ITS_MEANING_NARROWS": {
+   "the_observation": "EA-EROSION-01 was deposited 2026-07-06. The last exporter regeneration is 2026-07-10. No regeneration has followed. THIS IS TRUE AND REMAINS TRUE. A correlation is a fact about timing and is not withdrawn by explanation.",
+   "what_was_hypothesised": "A correlation between the observatory's publication and the cessation of deletion dumps. Nothing beyond that was claimed.",
+   "what_narrowed": "The correlation's MEANINGFULNESS, from possibly suggestive to very little, on three independent findings.",
+   "narrowing_evidence": [
+    "Both dumps stopped in the same 42 seconds — records-xml.tar.gz at 2026-07-10T03:31:53Z, records-deleted.csv.gz at 03:32:35Z. A targeted suppression of deletion data would not also stop the metadata dump.",
+    "The download-statistics pipeline was already broken since ~2026-04-20 — before the observatory existed — acknowledged by a live service notice and reported in zenodo-rdm issue #1357, still unanswered.",
+    "A MECHANISM WAS FOUND. zenodo-rdm commit 63864033c8, 2026-08-20: 'fix(scripts): fix metadata-export cronjob deployment target', one file, scripts/deploy.py. Preceded by 79f9ac32f2, 2026-08-11: 'refactor(exporter): reorganize record export flow'. The exporter stopped because a scheduled job was not deploying to the correct target, and that was repaired three days before this epoch."
+   ],
+   "correction_to_this_record": "An earlier version of this field read CORRELATION WITHDRAWN. That is the wrong verb and it is corrected here. The correlation is not withdrawn; its interpretation is narrowed. Conflating the two would let explanation erase observation, which is the opposite of what this archive does.",
+   "residual_weight": "Very little, and not zero. The narrowing rests on a cron misconfiguration explaining a stoppage that began 2026-07-10; nothing establishes why the misconfiguration occurred or went unnoticed for six weeks."
+  }
  },
  "FINDING_2_TERMINATION_IN_PLATFORM_DATA": {
   "archive_attributable_rows": 935,
@@ -97,5 +108,14 @@
   "question": "Is any single person questioning the deletion export's absence online?",
   "answer": "NO. Searches return nothing on the exporter dumps at all — no issue, no discussion, no post. The only adjacent public complaint is #1357, which concerns download statistics rather than the dumps, and which has sat open and unanswered since April.",
   "reading": "The deleted-records export could stop indefinitely and go unremarked, because almost no one consumes it. THAT IS ITSELF A PEO FINDING: the infrastructure by which platform erasure is publicly measurable is unmonitored, and its failure is therefore silent. An instrument nobody watches cannot signal its own breakage."
+ },
+ "REGISTERED_PREDICTION": {
+  "id": "P-EXPORT-RESUMES",
+  "registered": "2026-08-23",
+  "status": "OPEN",
+  "prediction": "A new records-deleted.csv.gz version will appear at zenodo.org/api/exporter, because the cronjob deployment target was fixed on 2026-08-20.",
+  "resolution_condition": "One API call to /api/exporter. A version created after 2026-08-20 confirms the cron explanation. No new version by 2026-09-10 means the fix did not take and the explanation is incomplete.",
+  "resolves_on": "2026-09-10",
+  "why_it_matters": "This is the cheapest available test of the narrowing itself. If the export resumes, the mundane explanation is confirmed by prediction rather than by inference."
  }
 }
