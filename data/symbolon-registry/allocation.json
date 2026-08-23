@@ -1,10 +1,10 @@
 {
- "next_hex": "0634",
+ "next_hex": "0635",
  "note": "Shared AXN position ledger. Consumed by /api/register-symbolon via compare-and-swap and honored by scripts/mint_deposit.py next_hex_id(). A position is an address, not a verification: witnessed-unverified entries hold real positions pending byte verification.",
  "initialized": "2026-08-02",
  "sequence_authority": "max(registry hex, this ledger) — the two allocators share one space and can never collide",
- "last_allocated": "0633",
- "last_allocated_at": "2026-08-22T22:39:38.639Z",
+ "last_allocated": "0634",
+ "last_allocated_at": "2026-08-23T17:01:45.963Z",
  "invariant": "ONE KERNEL, ONE POSITION. The witness endpoint dedupes against both the symbolon entries and the main registry's kernel index before allocating; the deposit pipeline refuses to mint a kernel the witness layer already positioned. The stamp is authority-independent and can be made offline by anyone — uniqueness is enforced at the allocation gate, the only place it can be.",
  "position_width": {
   "current": "4 hex digits (16^4 = 65,536 positions)",

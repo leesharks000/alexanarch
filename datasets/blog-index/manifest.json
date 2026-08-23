@@ -1,0 +1,47 @@
+{
+ "_FLOW": "Complete index of mindcontrolpoems.blogspot.com, the archive's primary publication surface. Built 2026-08-23 by exhaustive start-index pagination of the Blogger summary feed, verified against the feed's own declared total. EXISTS SO THAT ABSENCE CAN BE ASSERTED HONESTLY: the archival search protocol says check the archive before claiming a record does not exist, and until this index the blog was not searchable that way. A registry search is not an archive search.",
+ "dataset": "blog-index",
+ "version": "v1.0",
+ "date": "2026-08-23",
+ "source": "https://mindcontrolpoems.blogspot.com/feeds/posts/summary",
+ "method": "start-index pagination, 34 entries per response (Blogger response-size cap; max-results is not honoured above that). Completeness verified against openSearch:totalResults.",
+ "declared_total": 2939,
+ "harvested": 2939,
+ "complete": true,
+ "range": {
+  "first": "2014-12-01",
+  "last": "2026-08-22"
+ },
+ "axn_coverage": {
+  "indexed": 871,
+  "unindexed": 2068,
+  "by_year": {
+   "2014": {
+    "posts": 7,
+    "indexed": 0,
+    "gap": 7
+   },
+   "2015": {
+    "posts": 31,
+    "indexed": 0,
+    "gap": 31
+   },
+   "2025": {
+    "posts": 1696,
+    "indexed": 0,
+    "gap": 1696
+   },
+   "2026": {
+    "posts": 1205,
+    "indexed": 871,
+    "gap": 334
+   }
+  }
+ },
+ "prior_index": "data/batch-axn-assignment.json — 871 AXN-assigned works, all with blog_url, covering 2026-01-01 to 2026-06-19. Every one of its URLs resolves in this harvest; zero orphans.",
+ "known_limits": [
+  "excerpt is the feed summary, truncated at 300 characters, not the post body",
+  "no word counts: the summary feed does not carry full content, and fetching 2,939 bodies is a separate run",
+  "post_id is the Blogger entry id tail, not an archive identifier"
+ ]
+}
