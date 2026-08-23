@@ -20,5 +20,15 @@
   "31.16 ἀλλὰ πᾶν τολματόν, ἐπεὶ καὶ πένητα — the hanging line as carried"
  ],
  "notes": "PD reading editions (Bergk; Edmonds 1922) queued for the wider-fragment layer; Voigt and Campbell in copyright, cited not seated",
- "lines_total": 16
+ "lines_total": 16,
+ "errata": [
+  {
+   "date": "2026-08-23",
+   "severity": "material",
+   "found": "The diplomatic layer omitted one clause of its sole carrier: 'ἐμμί· τεθνάκην δ’ ὀλίγω ʼπιδεύην' between 'χλωροτέρα δὲ ποίας' and 'φαίνομαι' — the death-adjacency clause. The layer joined χλωροτέρα directly to φαίνομαι, producing a line boundary (old 31.15) present in no witness, and collapsing two distinct verbs (ἐμμί, predicative; φαίνομαι, seeming) into one.",
+   "consequence": "The seat's header asserted EXTRACTED VERBATIM and no editorial normalization applied; both claims were false for 75 of the carrier's 80 words. Any analysis scoring a death/collapse channel against this layer returned a false zero — including, on 2026-08-23, a nine-channel profile in-session that reported M9=0 for Sappho 31 and attributed the absence to the operator rather than to the extraction.",
+   "repair": "Clause restored verbatim from data/corpora/longinus/text/DeSublimitate.txt (Subl 10.2), the seat's declared sole carrier, at the pinned commit. Lines renumbered 31.15/31.16/31.17. Word-level diff against the carrier now returns 80 words, zero divergences.",
+   "verified": "difflib word-level: seat 80w, carrier 80w, 0 opcodes non-equal."
+  }
+ ]
 }
