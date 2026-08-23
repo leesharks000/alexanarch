@@ -15,19 +15,43 @@
  },
  "delta_rows": 12656,
  "FINDING_1_EXPORT_STALE": {
-  "CORRECTED": "An earlier draft of this record read the gzip internal mtime (2026-07-05) as the generation date and reported 49 days. The HTTP last-modified header reads 2026-07-12 11:33 GMT and is authoritative: the file was GENERATED 2026-07-12 with data through 2026-07-05, a seven-day batch lag that is ordinary.",
-  "generated": "2026-07-12",
-  "data_through": "2026-07-05",
-  "days_since_generation": 42,
-  "observed_cadence": "28 days, from two points only (2026-06-07, 2026-07-12). Overdue by ~14 days against that cadence.",
-  "correlation_recorded": "EA-EROSION-01 was deposited 2026-07-06. The export regenerated once AFTER that, on 2026-07-12, and has not regenerated since. The correlation is therefore NOT 'the export stopped when the observatory went up' — it regenerated six days after — but 'the last regeneration falls six days after the observatory's deposit, and none has followed in 42 days'. The weaker statement is the true one and the stronger one is withdrawn.",
-  "same_day_coincidence": "2026-07-12 is also the date the tombstone pages ceased serving rich embedded record JSON (last rich 01:50:52Z, first stripped 02:03:55Z, per datasets/tombstone-mirror) and the date of the tombstone-mirror harvest. Export regenerated 11:33Z the same day. RECORDED AS COINCIDENCE, NOT CAUSATION.",
-  "discriminating_test_attempted": "Whether other Zenodo exporters are also stale. Endpoints records.csv.gz and communities.csv.gz return 404 — the guessed names are wrong, so the test DID NOT RUN. Establishing whether the staleness is specific to the deleted-records export or general to the exporter infrastructure requires the correct endpoint list and remains open.",
-  "NOT_VERIFIED": [
-   "That 28 days is the export's normal cadence — two points cannot establish it.",
-   "That Zenodo is aware of the observatory.",
-   "Any causal relation whatever."
-  ]
+  "RESOLVED_BY_THE_EXPORTER_INDEX": "Zenodo publishes /api/exporter, an index of every dump with version history, creation timestamps and checksums. Querying it settles what two rounds of header-reading could not.",
+  "records_deleted_versions": [
+   {
+    "created": "2026-05-07T17:52:59Z",
+    "bytes": 20264704
+   },
+   {
+    "created": "2026-06-07T04:02:07Z",
+    "bytes": 23501144
+   },
+   {
+    "created": "2026-07-10T03:32:35Z",
+    "bytes": 24367356,
+    "is_head": true,
+    "successor": null
+   }
+  ],
+  "records_xml_versions": [
+   {
+    "created": "2026-05-07T17:52:22Z"
+   },
+   {
+    "created": "2026-06-07T04:01:23Z"
+   },
+   {
+    "created": "2026-07-10T03:31:53Z",
+    "is_head": true,
+    "successor": null
+   }
+  ],
+  "THE_DISCRIMINATING_TEST_RAN_AND_ANSWERED": "Earlier this session the test was attempted and failed because the endpoint names were guessed wrong. The correct names are records-xml.tar.gz and records-json.tar.gz, not records.csv.gz. RESULT: THE METADATA DUMP AND THE DELETION DUMP STOPPED AT THE SAME MOMENT — 2026-07-10T03:31:53Z and 03:32:35Z, forty-two seconds apart, and neither has a successor. The whole exporter pipeline stopped, not the deletion export specifically.",
+  "cadence": "Documented by Zenodo as monthly at the beginning of each month. Observed intervals from the version history: 30 days (May 7 → Jun 7), 32 days (Jun 7 → Jul 10). Currently 44 days since HEAD — overdue by roughly eleven days.",
+  "CORRELATION_WITHDRAWN": "EA-EROSION-01 was deposited 2026-07-06. The export regenerated on 2026-07-10, FOUR DAYS AFTER, then the entire exporter pipeline stopped. A targeted suppression of deletion data would leave the metadata dump running; it did not. THE ORDINARY EXPLANATION PRECEDES THE INTERESTING ONE, and this archive applies that rule to its own hypotheses. The correlation is recorded as observed and NOT as evidence.",
+  "converging_evidence_of_pipeline_failure": "zenodo/zenodo-rdm issue #1357, opened 2026-04-28 by an external user: download statistics flatlined since ~2026-04-20 while views continued, reproduced across records and devices, and confirmed specific to Zenodo by comparison against SSRN, PhilPapers and Humanities Commons. STILL OPEN, unassigned, unlabelled, no maintainer response in roughly four months. Zenodo additionally carries a live service notice on record pages acknowledging that download statistics are not updating. A platform with an acknowledged, unresolved, months-long statistics-pipeline failure is a platform whose export pipeline stopping is unremarkable.",
+  "community_dumps_worse": "The biosyslit community dumps last generated 2026-03-27 — stale for five months.",
+  "date_correction": "An earlier reading gave 2026-07-12 from the HTTP last-modified header. The exporter index gives created=2026-07-10T03:32:35Z, which is the generation time and is authoritative. Both earlier figures — 49 days and 42 days — are superseded by 44 days since generation.",
+  "INTEGRITY": "The preserved snapshot's md5 is 33877aba1fb5684f86758cb86ddc1ad4, MATCHING Zenodo's published checksum for the HEAD version exactly. The archive holds a verified copy of the last export Zenodo produced."
  },
  "FINDING_2_TERMINATION_IN_PLATFORM_DATA": {
   "archive_attributable_rows": 935,
@@ -68,5 +92,10 @@
   "That every archive-attributable row belongs to the terminated account.",
   "That the 871/920 discrepancy is a counting-basis artifact."
  ],
- "SUPERSEDED_BY": "Findings 2 and 3 of this record were already held, and better, in datasets/tombstone-mirror (kill ledger 1,136 records; API census 2,027 objects, all HTTP 410; sweep timed 11:34:17-11:48:50 at ~6.6 objects/second) and datasets/zenodo-datacite-batch (frozen pre-severance DataCite backup; 2026-07-03 recapture returning ZERO restorations of 871). This snapshot's standing is a CADENCE OBSERVATION on Zenodo's exporter, not a new census."
+ "SUPERSEDED_BY": "Findings 2 and 3 of this record were already held, and better, in datasets/tombstone-mirror (kill ledger 1,136 records; API census 2,027 objects, all HTTP 410; sweep timed 11:34:17-11:48:50 at ~6.6 objects/second) and datasets/zenodo-datacite-batch (frozen pre-severance DataCite backup; 2026-07-03 recapture returning ZERO restorations of 871). This snapshot's standing is a CADENCE OBSERVATION on Zenodo's exporter, not a new census.",
+ "IS_ANYONE_ELSE_WATCHING": {
+  "question": "Is any single person questioning the deletion export's absence online?",
+  "answer": "NO. Searches return nothing on the exporter dumps at all — no issue, no discussion, no post. The only adjacent public complaint is #1357, which concerns download statistics rather than the dumps, and which has sat open and unanswered since April.",
+  "reading": "The deleted-records export could stop indefinitely and go unremarked, because almost no one consumes it. THAT IS ITSELF A PEO FINDING: the infrastructure by which platform erasure is publicly measurable is unmonitored, and its failure is therefore silent. An instrument nobody watches cannot signal its own breakage."
+ }
 }
