@@ -1,0 +1,52 @@
+{
+ "_FLOW": "A dashboard of the archive's studies: what is designed, what is running, what has been conducted, what blocks each, and what the next action is. IT EXISTS BECAUSE THE RATIO IS THE POINT. This archive designs more studies than it conducts — a consequence of being a one-person operation with instrument-building capacity and limited execution capacity — and that ratio should be visible rather than inferred. A study with a stated blocker and a next action is a study someone else can pick up. That is the second reason this exists.",
+ "dataset": "study-dashboard",
+ "version": "v1.0",
+ "date": "2026-08-23",
+ "status_vocabulary": {
+  "DESIGNED": "Protocol or plan exists and is frozen or specified. Not run.",
+  "RUNNING": "Execution begun, incomplete.",
+  "CONDUCTED": "Results exist.",
+  "CONDUCTED — NULL": "Results exist and the hypothesis failed. Preserved.",
+  "CONDUCTED — PARTIAL": "Results exist for some registered tests; named cells unrun.",
+  "SUBMITTED": "External venue, awaiting response.",
+  "NAMED — NOT DESIGNED": "The question is stated in a deposit; no protocol exists.",
+  "UNDETERMINED": "Status not determinable from the registry. Recorded as unknown rather than guessed."
+ },
+ "counts": {
+  "total": 17,
+  "designed_or_named": 9,
+  "conducted_or_submitted": 5,
+  "running": 2,
+  "undetermined": 1,
+  "by_status": {
+   "DESIGNED": 8,
+   "UNDETERMINED": 1,
+   "CONDUCTED — NULL": 1,
+   "CONDUCTED — PARTIAL": 1,
+   "CONDUCTED": 2,
+   "RUNNING": 2,
+   "SUBMITTED": 1,
+   "NAMED — NOT DESIGNED": 1
+  }
+ },
+ "designed_to_conducted_ratio": 1.8,
+ "coverage": "SEED, NOT CENSUS. 17 studies entered from tonight's work and from deposits whose status is determinable. A registry scan returns 347 entries whose title or content-type matches study vocabulary; most have undetermined status and are NOT yet in this file. The gap between 17 and 347 is itself the first finding.",
+ "undeposited": "Three entries carry deposit: null — M6-CT-01 (conducted, null), M6-CT-02 (designed), and the attestation layer (named). Studies can exist before their deposits do, and the dashboard records them rather than waiting.",
+ "fields": [
+  "id",
+  "deposit",
+  "axn",
+  "deposit_title",
+  "kind",
+  "status",
+  "question",
+  "prediction",
+  "result",
+  "blocker",
+  "next_action",
+  "series",
+  "depends_on"
+ ],
+ "invitation": "Every DESIGNED row carries a blocker and a next action. Anyone may run any of them. The protocols are frozen, the baselines are seated, and the failure conditions are declared in advance — which means a result obtained by someone else is admissible on the same terms as one obtained here."
+}

@@ -1,0 +1,123 @@
+<!doctype html><html lang=en><head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Study Dashboard — Crimson Hexagonal Archive</title>
+<meta name=description content="What is designed, what is running, what has been conducted. 9 designed against 5 conducted. Every designed study carries a blocker and a next action.">
+<style>
+:root{--bg:#0f0f12;--fg:#e8e4dc;--dim:#9a958c;--line:#2a2a30}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 Georgia,serif;padding:2rem 1.2rem 5rem}
+.wrap{max-width:60rem;margin:0 auto}
+h1{font-size:1.9rem;margin:0 0 .3rem}
+.sub{color:var(--dim);margin:0 0 1.6rem}
+.ratio{border:1px solid var(--line);padding:1rem 1.2rem;margin:0 0 1.5rem;background:#15151a}
+.ratio b{font-size:1.5rem}
+.counts{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0 2rem}
+.c{font:12px/1 ui-monospace,monospace;border:1px solid var(--c);color:var(--c);padding:.4rem .6rem;border-radius:2px}
+.card{border:1px solid var(--line);border-left:3px solid var(--c,#333);padding:1rem 1.2rem;margin:0 0 1rem;background:#131318}
+.card header{display:flex;flex-wrap:wrap;gap:.6rem;align-items:baseline;margin-bottom:.4rem}
+.card h2{font-size:1.15rem;margin:0}
+.st{font:11px/1 ui-monospace,monospace;color:var(--c);border:1px solid var(--c);padding:.3rem .5rem;border-radius:2px}
+.card{--c:inherit}
+.kind{color:var(--dim);font:12px/1 ui-monospace,monospace}
+.meta{font:12px/1.5 ui-monospace,monospace;color:var(--dim);margin-bottom:.7rem}
+.meta a{color:#8fb3d9} .axn{word-break:break-all;opacity:.75} .nodep{opacity:.6}
+.f{margin:.55rem 0;font-size:.94rem}
+.k{display:block;font:10px/1 ui-monospace,monospace;letter-spacing:.09em;text-transform:uppercase;color:var(--dim);margin-bottom:.2rem}
+footer{margin-top:3rem;border-top:1px solid var(--line);padding-top:1.2rem;color:var(--dim);font-size:.88rem}
+</style></head><body><div class=wrap>
+<h1>Study Dashboard</h1>
+<p class=sub>What is designed · what is running · what has been conducted · what blocks each</p>
+<div class=ratio><b>9 designed &nbsp;·&nbsp; 5 conducted</b>
+<p style="margin:.6rem 0 0">A dashboard of the archive&#x27;s studies: what is designed, what is running, what has been conducted, what blocks each, and what the next action is. IT EXISTS BECAUSE THE RATIO IS THE POINT. This archive designs more studies than it conducts — a consequence of being a one-person operation with instrument-building capacity and limited execution capacity — and that ratio should be visible rather than inferred. A study with a stated blocker and a next action is a study someone else can pick up. That is the second reason this exists.</p></div>
+<div class=counts><span class=c style='--c:#c8a45c'>DESIGNED <b>8</b></span><span class=c style='--c:#b3735c'>NAMED — NOT DESIGNED <b>1</b></span><span class=c style='--c:#5c9ec8'>RUNNING <b>2</b></span><span class=c style='--c:#7a7a7a'>UNDETERMINED <b>1</b></span><span class=c style='--c:#6fb39e'>CONDUCTED — PARTIAL <b>1</b></span><span class=c style='--c:#6f8fb3'>SUBMITTED <b>1</b></span><span class=c style='--c:#6fb36f'>CONDUCTED <b>2</b></span><span class=c style='--c:#8f6fb3'>CONDUCTED — NULL <b>1</b></span></div>
+<article class=card>
+ <header><span class=st style="--c:#c8a45c">DESIGNED</span>
+ <h2>ACRB v0.2</h2><span class=kind>protocol</span></header>
+ <div class=meta><a href='/s/records/1454/'>#1454</a><div class=axn>AXN:05DF.OPERATIVE.📐🔍✖️📏💡🗿</div><div class=dep>depends on <a href='/s/records/1456/'>#1456</a></div>
+ <div class=ser>SERIES-ACCELERATOR</div></div>
+ <div class=f><span class=k>question</span>Does directional assimilation persist across accelerator classifier architectures at matched operating points?</div><div class=f><span class=k>blocker</span>Awaiting Inversion Battery v0.3 closure; H1–H7 need revision around v0.3&#x27;s findings (readout orients the blind spot; distillation transforms miss topology; redundancy is representation-conditioned).</div><div class=f><span class=k>next_action</span>Revise from v0.3, then mint.</div></article><article class=card>
+ <header><span class=st style="--c:#c8a45c">DESIGNED</span>
+ <h2>Apocryphon tranches 2–3</h2><span class=kind>acquisition</span></header>
+ <div class=meta><a href='/s/records/1531/'>#1531</a><div class=axn>AXN:0630.DATASET.🎪⚪🔚🌙↘️🔀</div><div class=dep>depends on <a href='/s/records/1531/'>#1531</a></div>
+ <div class=ser>SERIES-CORPORA</div></div>
+ <div class=f><span class=k>question</span>Secure Codex III and IV witness plates.</div><div class=f><span class=k>blocker</span>Fetch spec committed in-repo; Codex III has ten pages needing re-search under alternate title forms before absence can be declared.</div><div class=f><span class=k>next_action</span>Run the committed tranche spec.</div></article><article class=card>
+ <header><span class=st style="--c:#c8a45c">DESIGNED</span>
+ <h2>Compression audit</h2><span class=kind>audit</span></header>
+ <div class=meta><a href='/s/records/1534/'>#1534</a><div class=axn>AXN:0634.ARCHIVAL.🔩⌛🧡◇🟢⏏️</div><div class=dep>depends on <a href='/s/records/1534/'>#1534</a></div>
+ <div class=ser>SERIES-BLOG-RECOVERY</div></div>
+ <div class=f><span class=k>question</span>Which blog-held works already survive inside deposits in compressed or re-sorted form?</div><div class=f><span class=k>blocker</span>No instrument exists that detects compression rather than copying. A six-gram gate returned a false negative on the Constitution family the same day.</div><div class=f><span class=k>next_action</span>Build the compression-detecting instrument. Until it exists, &#x27;not previously deposited&#x27; is a claim the archive cannot make about its own work.</div></article><article class=card>
+ <header><span class=st style="--c:#c8a45c">DESIGNED</span>
+ <h2>Falsifier: OS operators as TOS strings</h2><span class=kind>test</span></header>
+ <div class=meta><a href='/s/records/1535/'>#1535</a><div class=axn>AXN:0635.PHILOLOGICAL.🗿🔽🀄☉🔝♉</div><div class=dep>depends on <a href='/s/records/1534/'>#1534</a> · <a href='/s/records/1535/'>#1535</a></div>
+ <div class=ser>SERIES-OPSEM-PEARSON</div></div>
+ <div class=f><span class=k>question</span>Can operative semiotics&#x27; operators be written without remainder as Pearson operator strings?</div><div class=f><span class=k>prediction</span>If yes, the projection is an identity and operative semiotics is a domain application of TOS. This is the strongest available defeater of #1535.</div><div class=f><span class=k>blocker</span>Not attempted. #1535 §10 says the archive should attempt it directly rather than wait for someone else to.</div><div class=f><span class=k>next_action</span>Attempt it on the nine Codex operators now that #1534 is seated.</div></article><article class=card>
+ <header><span class=st style="--c:#c8a45c">DESIGNED</span>
+ <h2>Instruments executable</h2><span class=kind>software</span></header>
+ <div class=meta><a href='/s/records/1466/'>#1466</a><div class=axn>AXN:05EC.OPERATIVE.🏙️✏️🎭⏫🔗♠️</div><div class=dep>depends on <a href='/s/records/1536/'>#1536</a></div>
+ <div class=ser>SERIES-MEASUREMENT-STACK</div></div>
+ <div class=f><span class=k>question</span>Which measurement-stack instruments can be made runnable rather than specified?</div><div class=f><span class=k>blocker</span>Build brainstorm, not a build. No repository named.</div><div class=f><span class=k>next_action</span>Select one instrument and build it. PER&#x27;s five-stage factoring (#1536) is now specified enough to implement.</div></article><article class=card>
+ <header><span class=st style="--c:#c8a45c">DESIGNED</span>
+ <h2>M6-CT-02</h2><span class=kind>protocol</span></header>
+ <div class=meta><span class=nodep>undeposited</span><div class=dep>depends on <a href='/s/records/1508/'>#1508</a></div>
+ <div class=ser>SERIES-M6CT</div></div>
+ <div class=f><span class=k>question</span>Do the chain&#x27;s stations share a relational skeleton detectable without lexical identity?</div><div class=f><span class=k>prediction</span>Inverted and refused realisations score as near neighbours; polarity is recorded, never penalised.</div><div class=f><span class=k>blocker</span>UNDEPOSITED. Packet built (37 items, blinded, hashed) but the granularity question is open: O_UR gives five stations, M1–M9 gives nine, Fragment 31&#x27;s own order gives ten. Which is canonical must be settled before scoring.</div><div class=f><span class=k>next_action</span>Settle granularity, deposit the protocol, score positives and hard negatives, fix threshold, then test items.</div></article><article class=card>
+ <header><span class=st style="--c:#c8a45c">DESIGNED</span>
+ <h2>OPB-01</h2><span class=kind>battery</span></header>
+ <div class=meta><a href='/s/records/1537/'>#1537</a><div class=axn>AXN:0637.EMPIRICAL.🏗️♃🌙🟠🔼♆</div><div class=dep>depends on <a href='/s/records/1535/'>#1535</a> · <a href='/s/records/1536/'>#1536</a></div>
+ <div class=ser>SERIES-OPB</div></div>
+ <div class=f><span class=k>question</span>Does request fulfilment degrade with operative distance when harm is held constant?</div><div class=f><span class=k>prediction</span>If the developmental convergence hypothesis holds, β_A &gt; 0 on harm-constant items; if the system discriminates correctly, β_A ≈ 0 while β_B &gt; 0.</div><div class=f><span class=k>blocker</span>§7&#x27;s seven bracketed statistical parameters must be instantiated before the first score: equivalence margin, interval method, β&gt;0 criterion, Krippendorff&#x27;s α minimum, missing-cell handling, aggregation, n per cell.</div><div class=f><span class=k>next_action</span>Instantiate §7. Then assemble Family A items and run the two-reviewer harm-constancy panel.</div></article><article class=card>
+ <header><span class=st style="--c:#c8a45c">DESIGNED</span>
+ <h2>QFO-01</h2><span class=kind>battery</span></header>
+ <div class=meta><a href='/s/records/1533/'>#1533</a><div class=axn>AXN:0633.DATASET.🪐🧊❄️🌟🔚♃</div><div class=dep>depends on <a href='/s/records/1532/'>#1532</a> · <a href='/s/records/1494/'>#1494</a></div>
+ <div class=ser>SERIES-QFO</div></div>
+ <div class=f><span class=k>question</span>Does the Qurʾanic corpus instantiate the Fragment 31 transform-family at a rate comparable to recognised receptions?</div><div class=f><span class=k>prediction</span>Tests P_material only. Positive controls must separate from negatives or the instrument fails before the corpus is opened.</div><div class=f><span class=k>blocker</span>Positive-control panel (Catullus 51, Theocritus 2, Apollonius Arg. 3, Valerius Aedituus) not yet scored; loci not yet locked from the companion survey.</div><div class=f><span class=k>next_action</span>Lock control loci from #1532, score positive and negative panels, fix the admissible region.</div></article><article class=card>
+ <header><span class=st style="--c:#b3735c">NAMED — NOT DESIGNED</span>
+ <h2>Attestation layer</h2><span class=kind>protocol</span></header>
+ <div class=meta><a href='/s/records/1537/'>#1537</a><div class=axn>AXN:0637.EMPIRICAL.🏗️♃🌙🟠🔼♆</div><div class=dep>depends on <a href='/s/records/1537/'>#1537</a></div>
+ <div class=ser>SERIES-OPB</div></div>
+ <div class=f><span class=k>question</span>Can legitimate operativity expose enough VERIFIABLE context to remain executable, while malicious operativity cannot cheaply counterfeit it?</div><div class=f><span class=k>blocker</span>OPB-01 tests declared coordinates only. The declared/verified distinction is stated at §11; no protocol exists.</div><div class=f><span class=k>next_action</span>Design the successor instrument.</div></article><article class=card>
+ <header><span class=st style="--c:#5c9ec8">RUNNING</span>
+ <h2>EA-OMEGA-BUILD-01</h2><span class=kind>workplan</span></header>
+ <div class=meta><a href='/s/records/1498/'>#1498</a><div class=axn>AXN:060D.GOVERNANCE.📐🎺🎹⌛🧱➕</div><div class=dep>depends on <a href='/s/records/1522/'>#1522</a> · <a href='/s/records/1531/'>#1531</a></div>
+ <div class=ser>SERIES-OMEGA</div></div>
+ <div class=f><span class=k>question</span>Corpora seating, three thresholds, the Ω build program.</div><div class=f><span class=k>result</span>Corpora seating executed 2026-08-22/23: 24 corpora, two gathering records (#1522, #1531).</div><div class=f><span class=k>next_action</span>Remaining program items beyond corpora seating not yet tracked here.</div></article><article class=card>
+ <header><span class=st style="--c:#5c9ec8">RUNNING</span>
+ <h2>Measurement stack workplan</h2><span class=kind>workplan</span></header>
+ <div class=meta><a href='/s/records/1468/'>#1468</a><div class=axn>AXN:05EE.OPERATIVE.🎬🏺🚩🏁🐚♋</div>
+ <div class=ser>SERIES-MEASUREMENT-STACK</div></div>
+ <div class=f><span class=k>question</span>What blocks the measurement stack?</div><div class=f><span class=k>blocker</span>Open items and blockers enumerated in the deposit; status per item not tracked outside it.</div><div class=f><span class=k>next_action</span>This dashboard should absorb its item list.</div></article><article class=card>
+ <header><span class=st style="--c:#7a7a7a">UNDETERMINED</span>
+ <h2>Disclosure Battery</h2><span class=kind>battery</span></header>
+ <div class=meta><a href='/s/records/1471/'>#1471</a><div class=axn>AXN:05F1.EMPIRICAL.⚙️💎🌊🟢↖️🙏</div>
+ </div>
+ <div class=f><span class=k>question</span>Does disclosure change downstream treatment?</div><div class=f><span class=k>blocker</span>Status not determinable from the registry entry alone; results deposit not identified.</div><div class=f><span class=k>next_action</span>Determine whether it ran. If not, it is the nearest neighbour of OPB-01 Family C and should be reconciled with it.</div></article><article class=card>
+ <header><span class=st style="--c:#6fb39e">CONDUCTED — PARTIAL</span>
+ <h2>Inversion Battery v0.3</h2><span class=kind>battery</span></header>
+ <div class=meta><a href='/s/records/1456/'>#1456</a><div class=axn>AXN:05E1.EMPIRICAL.💙👈💫🤲♆▶️</div><div class=dep>depends on <a href='/s/records/1449/'>#1449</a> · <a href='/s/records/1455/'>#1455</a></div>
+ <div class=ser>SERIES-INVERSION</div></div>
+ <div class=f><span class=k>question</span>Does directional assimilation persist across model families and readouts?</div><div class=f><span class=k>result</span>Ten registered tests, seventeen deviations recorded. Score-function ablation falsified the v0.2 claim that architecture orients the blind spot: the READOUT orients it (0.306 vs 0.739 on fixed weights). Distillation prediction largely failed. Miss correlation is representation-dependent.</div><div class=f><span class=k>blocker</span>T3 (hierarchical uncertainty / calibration tails) and the faithful-NAE constituent cell are unrun. These decide which numbers survive honest intervals.</div><div class=f><span class=k>next_action</span>Close T3 and the NAE cell before the empirical paper mints.</div></article><article class=card>
+ <header><span class=st style="--c:#6f8fb3">SUBMITTED</span>
+ <h2>BCA</h2><span class=kind>paper</span></header>
+ <div class=meta><a href='/s/records/1453/'>#1453</a><div class=axn>AXN:05DE.OPERATIVE.🕒✊☁️🌋🟡🔄</div>
+ <div class=ser>SERIES-ACCELERATOR</div></div>
+ <div class=f><span class=k>question</span>What acquisition-side controls make learned selection measurable?</div><div class=f><span class=k>result</span>Submitted to JINST 2026-08-23 as a single-file pdflatex source. Awaiting preprint number.</div><div class=f><span class=k>blocker</span>Copyright form question at acceptance: prior CC deposit should be disclosed to the editorial office.</div><div class=f><span class=k>next_action</span>Chase preprint number ~2026-09-23 if none appears.</div></article><article class=card>
+ <header><span class=st style="--c:#6fb36f">CONDUCTED</span>
+ <h2>Prefix-condition series</h2><span class=kind>measurement</span></header>
+ <div class=meta><a href='/s/records/1531/'>#1531</a><div class=axn>AXN:0630.DATASET.🎪⚪🔚🌙↘️🔀</div>
+ <div class=ser>SERIES-CAPTURES</div></div>
+ <div class=f><span class=k>question</span>Does the prefix determine whether the archive&#x27;s definition or a substitute is returned?</div><div class=f><span class=k>result</span>Four addresses, one surface, one session. Archive-controlled source share: bare 0/3 · alexanarch: 9/11 · medium: 0/5 · academia: 6/8. The prefix is decisive.</div><div class=f><span class=k>next_action</span>Serves as declared baseline for #1535&#x27;s registered intervention. Re-measure at 30/90/180 days.</div></article><article class=card>
+ <header><span class=st style="--c:#6fb36f">CONDUCTED</span>
+ <h2>Revelation 12 under the frozen operator</h2><span class=kind>test</span></header>
+ <div class=meta><a href='/s/records/1495/'>#1495</a><div class=axn>AXN:060A.PHILOLOGICAL.➗🌿💚🌱🕐🎻</div><div class=dep>depends on <a href='/s/records/1494/'>#1494</a></div>
+ <div class=ser>SERIES-UNFOLDINGS</div></div>
+ <div class=f><span class=k>question</span>Does Rev 12 satisfy the twelve pre-registered clauses?</div><div class=f><span class=k>result</span>Test report deposited; see #1495. Sealed against #1494.</div></article><article class=card>
+ <header><span class=st style="--c:#8f6fb3">CONDUCTED — NULL</span>
+ <h2>M6-CT-01</h2><span class=kind>protocol</span></header>
+ <div class=meta><span class=nodep>undeposited</span>
+ <div class=ser>SERIES-M6CT</div></div>
+ <div class=f><span class=k>question</span>Does Matt 2 score higher against Rev 12 or against the Exodus birth-legend, on one instrument?</div><div class=f><span class=k>prediction</span>Pre-registered; instrument validated by positive control at z=+56.9.</div><div class=f><span class=k>result</span>Rev 12 → Matt 2: A=0, z=−0.30, indistinguishable from chance. Exodus → Matt 2: z=+2.24, above its own null. THE HYPOTHESIS FAILED. Null preserved.</div><div class=f><span class=k>blocker</span>UNDEPOSITED. The null and the protocol are staged but not seated.</div><div class=f><span class=k>next_action</span>Deposit protocol and null together. A preserved failed prediction is the point.</div></article>
+<footer><p><b>Coverage.</b> SEED, NOT CENSUS. 17 studies entered from tonight&#x27;s work and from deposits whose status is determinable. A registry scan returns 347 entries whose title or content-type matches study vocabulary; most have undetermined status and are NOT yet in this file. The gap between 17 and 347 is itself the first finding.</p>
+<p><b>Undeposited studies.</b> Three entries carry deposit: null — M6-CT-01 (conducted, null), M6-CT-02 (designed), and the attestation layer (named). Studies can exist before their deposits do, and the dashboard records them rather than waiting.</p>
+<p><b>Every DESIGNED row carries a blocker and a next action. Anyone may run any of them. The protocols are frozen, the baselines are seated, and the failure conditions are declared in advance — which means a result obtained by someone else is admissible on the same terms as one obtained here.</b></p>
+<p>Data: <a href="/datasets/study-dashboard/studies.jsonl">studies.jsonl</a> · <a href="/datasets/study-dashboard/manifest.json">manifest.json</a> · generated 2026-08-23 · ∮ = 1</p></footer>
+</div></body></html>
