@@ -1,0 +1,61 @@
+{
+ "_FLOW": "Preserved snapshot of Zenodo's deleted-records export, taken 2026-08-23 as the next epoch of EA-EROSION-01 (#1045). The instrument's own falsifier requires that every counted row correspond to a preserved snapshot; this directory is that preservation.",
+ "epoch": "2026-08-23",
+ "source": "https://zenodo.org/api/exporter/records-deleted.csv.gz",
+ "file": "records-deleted-20260823.csv.gz",
+ "sha256": "f4b5aee62a032d5a5e56e769f3419cc046feb1e6c443ea7ec60538103b41c3db",
+ "bytes": 24367356,
+ "rows": 1322007,
+ "removal_date_min": "2017-05-31",
+ "removal_date_max": "2026-07-05",
+ "baseline": {
+  "epoch": "2026-06-07",
+  "rows": 1309351,
+  "source": "EA-EROSION-01 v1.0, #1045"
+ },
+ "delta_rows": 12656,
+ "FINDING_1_EXPORT_STALE": {
+  "observation": "The export's maximum removal_date is 2026-07-05. The fetch date is 2026-08-23. The gzip header's modification time independently reads 2026-07-05.",
+  "days_stale": 49,
+  "reading": "Zenodo's monthly deleted-records export has not regenerated in 49 days. The instrument by which platform erasure is publicly measurable has itself stopped updating. NOT VERIFIED: whether this is a scheduling lapse, a pipeline failure, or a change of policy. Recorded as an observation with two independent date sources agreeing."
+ },
+ "FINDING_2_TERMINATION_IN_PLATFORM_DATA": {
+  "archive_attributable_rows": 935,
+  "removed_2026_06_19": 920,
+  "share_of_that_days_global_removals": "920 of 1,422 — 64.7%",
+  "stated_reason": "out-of-scope (920 of 920 on that date)",
+  "removal_note": "'User was blocked' on 917 of 935 rows",
+  "reading": "Zenodo's own machine-readable export records the 2026-06-19 event as 920 records removed under reason 'out-of-scope' with the note 'User was blocked'. TWO CONFIRMATIONS FOLLOW. First, the public reason in the platform's data is out-of-scope, while the private communication to the depositor stated the records were 'substantially AI-generated without a verifiable research basis' — the public/private discrepancy is now documented in the deleting platform's own dataset rather than only in the depositor's account. Second, the note is an ACCOUNT-level action recorded against each record: 'User was blocked'. The archive's claim that records were removed without record-level review is consistent with the platform's own annotation.",
+  "discrepancy_recorded": "The archive's own figure is 871 works. Zenodo's export gives 920 records on 2026-06-19 and 935 attributable overall. The counts differ and are NOT reconciled here — record-level versus work-level counting, and version records, are the likely cause. Recorded rather than smoothed."
+ },
+ "FINDING_3_VOLUME": {
+  "rows_since_baseline_snapshot": 11148,
+  "top_reasons_since_baseline": {
+   "out-of-scope": 5522,
+   "duplicate": 1888,
+   "test-record": 1229,
+   "personal-data": 1058,
+   "retracted": 716,
+   "spam": 596
+  },
+  "reading": "Removals dated on or after the baseline snapshot are dominated by out-of-scope at 5,522, of which the archive's 920 is 16.7%. NOT VERIFIED: whether the remaining out-of-scope volume shares the account-block pattern."
+ },
+ "corpus_wide_reasons": {
+  "spam": 1156280,
+  "out-of-scope": 68629,
+  "empty": 27917,
+  "take-down-request": 18351,
+  "retracted": 13377,
+  "test-record": 12291,
+  "duplicate": 12288,
+  "personal-data": 7394,
+  "fraud": 4154,
+  "copyright": 1157
+ },
+ "method": "Fetched with declared UA over the public endpoint. Row count, date range and reason distribution computed from the preserved file, not from a re-fetch. Archive attribution by case-insensitive match on 'crimsonhexagon' or 'sharks' in removal_note and citation_text — a lexical filter that may over- or under-count and is stated as such.",
+ "NOT_VERIFIED": [
+  "That the 49-day gap is anomalous rather than the export's normal cadence — the archive has two epochs and cannot establish a baseline cadence from two points.",
+  "That every archive-attributable row belongs to the terminated account.",
+  "That the 871/920 discrepancy is a counting-basis artifact."
+ ]
+}

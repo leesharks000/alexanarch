@@ -65,5 +65,26 @@
   },
   "results_language_signal": 43,
   "conclusion": "Status is not automatically inferable from the registry. The 17 curated rows above were hand-verified; the remaining ~250 require reading, and the falsification-section extraction in the companion ledger is the cheaper route to the same information."
+ },
+ "pass_2": {
+  "date": "2026-08-23",
+  "file": "triage.jsonl",
+  "classified": 261,
+  "method": "Two signals read from deposit bodies: (a) three or more self-produced figures — n=, z=, p=, AUC, φ, k-of-n, percentages — indicating results exist; (b) explicit unrun language — 'has not been run', 'awaiting execution', 'no result exists'.",
+  "by_status": {
+   "CONDUCTED — LIKELY (reports self-produced figures)": 14,
+   "CONDUCTED — PARTIAL (baseline in hand, main test unrun)": 6,
+   "DESIGNED — STATED (deposit says it has not run)": 23,
+   "UNDETERMINED": 218
+  },
+  "resolved": 43,
+  "resolution_rate": 0.165,
+  "findings": [
+   "43 of 264 resolve on automated signal — 16%. The remaining 218 need reading, and this pass exists so the next one starts there rather than at zero.",
+   "SIX deposits carry BOTH signals: baseline figures in hand AND a main test explicitly unrun. That is a status class the curated seed did not have — CONDUCTED — PARTIAL — and it is the archive's most characteristic state: work with results already obtained and a named remainder. #1527, #1528, #199, #782, #156, #1046.",
+   "70 of the 264 triage deposits carry a named falsification section, against 326 across the whole registry — so most registered conditions sit in deposits that are NOT studies by content-type. Registration of falsifiers is broader than the study set.",
+   "23 deposits state plainly that they have not run. That honesty is machine-findable, and it is why the automated pass works at all."
+  ],
+  "caveat": "AUTOMATED, NOT HAND-VERIFIED. A deposit reporting figures may be citing another's; a deposit stating 'not yet run' may refer to a sub-test while the main result exists. Every row carries its signals so a reader can check the inference rather than trust it."
  }
 }
