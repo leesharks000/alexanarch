@@ -372,6 +372,32 @@ jobs:
       # PHASE 5 — VALIDATE NEW ENTRY (HARD GATE #2)
       # ───────────────────────────────────────────────────────────────────
 
+      - name: Take custody of attachments (and build a facsimile body)
+        if: steps.existing_pr.outputs.exists != 'true'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # CUSTODY BEFORE ANYTHING ELSE DOWNSTREAM.
+          #
+          # Before this step existed, the mint recorded an attachment's URL and moved
+          # on. #1539 — a handwritten paper — then carried the sentence "preserved at
+          # deposit time" on its record while THE ARCHIVE HELD NOTHING: the work lived
+          # on GitHub's CDN behind a five-minute signed credential. An archive founded
+          # because a platform deleted 862 works cannot leave a depositor's work on
+          # someone else's server and call it preserved.
+          #
+          # Fetches the bytes, hashes them, records archive_path + sha256, and — when
+          # the deposit has no text body and its work is a PDF — rasterises the pages
+          # into the canonical body so the Full Text field CONTAINS the full text.
+          # It does not transcribe: that is an editorial act on the author's work.
+          #
+          # FAIL-OPEN. A deposit that mints must land even if the fetch fails; the
+          # failure is recorded on the attachment as an error rather than as a claim.
+          sudo apt-get install -y poppler-utils >/dev/null 2>&1 || true
+          python3 scripts/ingest_facsimile.py --deposit "${{ steps.mint.outputs.deposit_number }}" || \
+            echo "[ingest] custody step failed; deposit proceeds without it"
+
       - name: Validate new registry entry
         if: steps.existing_pr.outputs.exists != 'true'
         run: |
