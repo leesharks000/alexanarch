@@ -375,8 +375,12 @@ jobs:
       - name: Validate new registry entry
         if: steps.existing_pr.outputs.exists != 'true'
         run: |
+          # --pre-enrichment: this gate runs BEFORE the enrichment step that
+          # writes wiki_article, so WIKI-001/002 cannot be satisfied here and
+          # are checked after enrichment instead. Everything else still binds.
           python3 scripts/validate_deposit.py \
               --registry-entry /tmp/new-entry.json \
+              --pre-enrichment \
               --strict
 
       # ───────────────────────────────────────────────────────────────────
@@ -392,6 +396,18 @@ jobs:
       # ───────────────────────────────────────────────────────────────────
       # PHASE 7 — POST-STATE FULL VALIDATION (HARD GATE #3)
       # ───────────────────────────────────────────────────────────────────
+
+      - name: Comment on registry-entry validation failure
+        if: failure() && steps.existing_pr.outputs.exists != 'true'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE: ${{ steps.issue.outputs.number }}
+        run: |
+          # Previously this failure class posted NOTHING: the comment steps are
+          # conditioned on body-validation and mint failure, not on this gate. A
+          # depositor saw a red X and no explanation for a defect that was ours.
+          gh issue comment "$ISSUE" --body "The deposit passed protocol validation and minted, then failed validation of the resulting registry entry. **This is very likely a defect on our side, not in your submission.** The run log names the rule ID. Reopening this issue re-runs the mint; if it fails again, the rule ID in the log is the thing to report." || true
 
       - name: Validate full registry post-mint
         if: steps.existing_pr.outputs.exists != 'true'
