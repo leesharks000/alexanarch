@@ -27,12 +27,15 @@
   }
  },
  "summary": {
-  "total_works": 870,
+  "total_works": 871,
   "with_zenodo_dois": 742,
   "without_zenodo_dois": 128,
-  "total_zenodo_dois": 6596,
   "with_full_text": 869,
-  "total_words": 3473135
+  "total_words": 3473135,
+  "distinct_zenodo_dois": 993,
+  "zenodo_doi_mentions": 6596,
+  "_doi_count_correction": "total_zenodo_dois was 6596 and was labelled 'DOIs Destroyed'. THAT IS NOT A COUNT OF DOIs. It is the sum of per-row zenodo_dois lengths, and 769 of the 993 distinct DOIs appear on more than one row — one row lists 386. The distinct figure is 993. Corrected 2026-08-24; the mention-sum is retained under its own name because it is a real property of the rows, just not the property the label claimed.",
+  "_relation_to_canonical": "This registry is a RECOVERY SNAPSHOT closed 2026-06-19 and counts what had been recovered at that moment: 871 works, 742 of them carrying a Zenodo DOI, 993 distinct DOIs across them. It is NOT the severance count. The canonical severance figures are 862 deposits and 1,817 DOIs tombstoned, per deposit #1 (Zenodotus' Book-Burning v9.1) and the DOI Resolution Index. The two count different things and neither supersedes the other."
  },
  "distribution": [
   {
