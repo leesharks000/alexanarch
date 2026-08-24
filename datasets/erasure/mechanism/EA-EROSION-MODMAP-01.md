@@ -62,7 +62,9 @@ sources: "zenodo/zenodo-rdm (GPL-3.0), inveniosoftware/invenio-rdm-records (MIT)
                                                              ↓
                                     user_block_cleanup  (async, +10 minutes, sweeps stragglers)
 
-**One switch governs whether any of this acts:** `MODERATION_APPLY_ACTIONS`, default **False**. When false, every branch logs and does nothing. **The setting does not appear in Zenodo's committed production `invenio.cfg`** — the module applies its defaults via `setdefault`, so on the visible evidence the scorer scores and does not act. Production may set it elsewhere; that is not public.
+**The machinery is wired into production and Zenodo says so to users.** `RDM_USER_MODERATION_ENABLED = True` and `RecordModerationHandler()` are both in the committed production config, the moderation tasks have a dedicated queue, and the user-facing error string reads: *"the record you tried to publish has been **classified as spam by our automated spam protection system**. Your account has therefore been blocked."* **There is no serious question that automated moderation infrastructure is an operative part of the published architecture.** What that does not establish is what happened to any particular account — see §7.
+
+**One switch governs whether the SCORE-DRIVEN branches act:** `MODERATION_APPLY_ACTIONS`, default **False**. When false, every branch logs and does nothing. **The setting does not appear in Zenodo's committed production `invenio.cfg`** — the module applies its defaults via `setdefault`, so on the visible evidence the scorer scores and does not act. Production may set it elsewhere; that is not public.
 
 ---
 
@@ -83,12 +85,26 @@ sources: "zenodo/zenodo-rdm (GPL-3.0), inveniosoftware/invenio-rdm-records (MIT)
 | files | small PDFs, ≤4 files, and **`pdf` is in the spam extension set**; the offsetting −5 needs >4 files or >15MB | +2 |
 | verification | the decisive term | **−10 or +10** |
 
+**Static-score illustration, conditional on zero LinkDomain overrides and zero percolator contribution:**
+
     verified:    −10 +5 +5 +2 +2 =  +4   below threshold
     unverified:  +10 +5 +5 +2 +2 = +24   more than double it
 
+**Under those conditions**, the same record metadata scores +4 when the owner is verified and +24 when not. `links_rule` additionally scores known domains individually and the percolator adds any matching query score, so this is the visible-component figure and not a production score.
+
 **A twenty-point swing on a ten-point threshold.** The same deposit passes or fails on the verification flag alone, independent of content.
 
-**And the design forecloses auto-blocking of verified users entirely.** Per the decision table, a verified account never reaches `_block`; it reaches `_moderate`, which opens a request for a human. **Automatic blocking is reachable only for unverified accounts.**
+**On verified accounts, the executable path and the design document disagree, and the gap is itself a finding.**
+
+**The published executable score-only path does not auto-block a verified user:** above threshold, `verified` branches to `_moderate`, which opens a request for a human; `unverified` branches to `_block`.
+
+**But the handler's own docstring specifies a verified-user blocking case.** In the `S + S` column — score AND spam-model both predicting spam — it notes that where the user's email domain is blocked or moderated, *the user is actually blocked* rather than sent to review. **That branch is not implemented in the handler, nor in the async task, which simply re-runs the same handlers.**
+
+An earlier draft said the design *"forecloses auto-blocking of verified users entirely."* **Withdrawn.** The precise finding:
+
+> **The published executable path does not automatically block verified users. The published design documentation nevertheless specifies a verified-user blocking case, involving a second spam-model decision and email-domain state, whose implementation is not present in the moderation code inspected here.**
+
+That is a **design/code observability gap**, and it means four layers exist of which only the first is substantially visible: **published static rules · runtime percolator state · documented-but-unlocated spam-model path · production configuration.**
 
 ---
 
@@ -103,7 +119,15 @@ sources: "zenodo/zenodo-rdm (GPL-3.0), inveniosoftware/invenio-rdm-records (MIT)
 
 Registered queries are percolated against every record; each match adds its own score to the evaluation. **An administrator can register any query with any weight at runtime — no code change, no deployment, no publication.**
 
-**Consequence, and it is the central one for anyone auditing this system:** publishing `MODERATION_SCORES` does not disclose the operative scoring. `match_query_rule` contributes an unbounded, unpublished term. **The public weights are a floor, not the function.** Any targeting criterion — a phrase, a domain, a metadata shape, an identifier format, a theme — can be given a score invisibly, and nothing in source would show it.
+**Consequence, and it is the central one for anyone auditing this system.** An earlier draft called the published weights *"a floor, not the function."* **That is mathematically wrong and is withdrawn:** percolator scores are integers and nothing in visible source requires them to be positive, so a stored query may subtract as easily as add. The weights are neither floor nor ceiling.
+
+    S(r) = S_static(r) + Σ over active q of  w_q · 1[q matches r]
+
+**The published source specifies the form of `S_static` and the percolator mechanism. It does not specify the production contents of the active query set.** The correct statement:
+
+> **The published weights are the publicly disclosed additive component of an incompletely disclosed scoring function**, and `S_public(r) ≠ S_production(r)` unless the active percolator set and any production overrides are also known.
+
+The defect is **partial function disclosure**, not merely hidden extra penalties — and it is the same shape this archive's own comparative work names elsewhere: **a published representation that omits a causally operative coordinate.** Any criterion — a phrase, a domain, a metadata shape, an identifier format, a theme — can be scored invisibly, in either direction, and nothing in source would show it.
 
 ---
 
@@ -118,7 +142,13 @@ Registered queries are percolated against every record; each match adds its own 
 
 **No per-record evaluation exists in this path.** No content check, no classifier call, no branch, no exception list. `get_user_records` filters solely on `parent.access.owned_by.user`. **Ownership is the only criterion**, and the query carries no `ORDER BY` — which is why the observed removal sequence of 2026-06-19 correlates with record ID at only r = +0.26 and shows no content ordering whatever.
 
-**The default `removal_reason` is `spam`.** All 1,180 archive records removed that day carry `out-of-scope`, so **a non-default value was passed explicitly**. The tombstone also records `removed_by` as the human actor rather than the system, by deliberate design — *"without this tombstones would attribute the removal to the system."*
+**The default `removal_reason` is `spam`.** The archive's records removed that day carry `out-of-scope`.
+
+**Stated as a path constraint rather than an attribution**, because §7 refuses the inference that this path executed the removal:
+
+> **If the removal was executed through an unmodified `on_block`, the reason would read `spam`. It reads `out-of-scope`. The observed reason therefore EXCLUDES a default invocation of this path** — it does not establish which caller, path, or person supplied the non-default value.
+
+That is a constraint on the mechanism, not a proof of a human. **CANONICAL FIGURES:** 862 deposits and 1,817 DOIs, per #1 *Zenodotus' Book-Burning* v9.1 and the DOI Resolution Index. Counts circulating on other surfaces (871 works, 6,596 DOIs) are superseded and are not used here. The tombstone also records `removed_by` as the human actor rather than the system, by deliberate design — *"without this tombstones would attribute the removal to the system."*
 
 **`on_restore` is the exact inverse**, same ownership criterion, no harder to execute. **Whatever prevents restoration is not technical.**
 
@@ -137,6 +167,38 @@ Registered queries are percolated against every record; each match adds its own 
 > **A transparent mechanical scorer with published weights, plus an unpublished percolator of arbitrary targeting queries, feeding a human decision layer, executed by a single function that deletes every record an account owns without examining any of them.**
 
 **The asymmetry is the finding.** Zenodo publishes the part that scores and withholds the part that targets — and the enforcement path then **destroys the evidence of which applied**. A percolator hit, a score threshold, and a human clicking a button all produce the identical undifferentiated cascade with identical tombstone data. **You can read every weight in `config.py` and learn nothing about why any particular account went.**
+
+---
+
+## §6a. Decision–Enforcement Unit Conversion
+
+**The unit changes three times as it passes through this architecture, and the public record preserves only the last one.**
+
+    the SCORER            evaluates a RECORD
+    the DECISION          attaches to an ACCOUNT
+    the ENFORCEMENT       expands across OWNERSHIP
+    the PUBLIC EVIDENCE   returns as RECORDS
+
+An outside observer counting tombstones sees the fan-out. **They do not see the decision that produced it, and cannot recover it**, because `on_block` writes identical tombstone data to every record it touches.
+
+**Formally the deletion cohort needs two quantities, and has only ever reported one:**
+
+    N_D = deleted records                                      ← what the export reports
+    N_A = distinct account-level enforcement events            ← never reported
+    F   = N_D / N_A                                            ← the DELETION FAN-OUT
+
+**This changes the reading of the whole 1.3-million-row deleted-records dataset.** A million deleted records need not represent a million moderation judgments. In this archive's own case the plausible decomposition is
+
+    1 trigger → 1 account disposition → ~1,180 record deletions
+
+and the export reports only the third term. **Deletion statistics computed from tombstones therefore overcount DECISIONS by the fan-out factor**, and the factor is unpublished.
+
+**Corroborated in the archive's own prior record.** *Zenodotus' Book-Burning* (#1) documents three near-contemporaneous account-level blocks reported publicly: **#2596** (account and records blocked, reason unspecified), **#2599** (account auto-blocked, reason **spam**, a theoretical-physics record), and **#2606** (this archive, *"AI-generated without research basis"* privately and *"Out of scope"* publicly). **Three accounts, three fan-outs, three rows-per-decision ratios — and the deleted-records export flattens all of them into undifferentiated record counts.**
+
+> **This is the governance finding, and it is more precise than "an automated system made a bad decision": Zenodo's published architecture permits the unit of evaluation, the unit of decision, the unit of enforcement, and the unit of public evidence to be four different objects.**
+
+**Measuring F across the export is a registered experiment this map does not perform.** The method is available: cluster blocked-user removals by depositor signature per day and count distinct signatures against total rows. A first pass on 2026-06-19 gives roughly four accounts against 1,209 blocked-user rows — **a fan-out near 300 on that day alone.**
+
 
 ---
 
