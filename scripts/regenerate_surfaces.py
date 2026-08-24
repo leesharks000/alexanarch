@@ -203,7 +203,24 @@ def regenerate_browse(reg, dry_run=False):
         in_real_series = bool(d.get("version_series_id"))
         version_chip = ''
         if version and (version != 'v1.0' or in_real_series):
-            version_chip = f' <span style="font-family:var(--mono);font-size:.78em;color:var(--teal);font-weight:500;background:#f0f4f8;padding:1px 6px;border-radius:8px;margin-left:4px">{esc_html(version)}</span>'
+            # VERSION IS A LABEL, NOT A FIELD FOR PROSE. Fourteen deposits carry a
+            # sentence here — one holds 133 characters of supersession detail,
+            # another an entire markdown block with a URL — and the chip rendered
+            # all of it, breaking the row out of the layout on #1537.
+            #
+            # The renderer cannot fix the data, but it must not be breakable BY the
+            # data. Show the version token; carry the remainder in the title
+            # attribute so nothing is hidden, only contained. Supersession detail
+            # belongs in version_history, which is the archive's own convention.
+            _v = ' '.join(str(version).split())
+            _tok = _v.split(' ')[0]
+            _label = _tok if len(_v) > 24 else _v
+            _full = f' title="{esc_html(_v)}"' if _label != _v else ''
+            version_chip = (f' <span{_full} style="font-family:var(--mono);font-size:.78em;'
+                            f'color:var(--teal);font-weight:500;background:#f0f4f8;padding:1px 6px;'
+                            f'border-radius:8px;margin-left:4px;white-space:nowrap;max-width:16em;'
+                            f'overflow:hidden;text-overflow:ellipsis;display:inline-block;'
+                            f'vertical-align:bottom">{esc_html(_label)}</span>')
         status_badge = ''
         card_opacity = ''
         if status == 'SUPERSEDED' and superseded_by_n:
