@@ -721,6 +721,40 @@ def _html_escape(t):
     return (t.replace('&','&amp;').replace('<','&lt;').replace('>','&gt;'))
 
 
+
+def _strip_inline_ingests(raw, d):
+    """Display-layer relocation of mint-time inline attachment ingests (2026-08-24,
+    #1540). The mint composes repo-hosted attachment ingests near the top of the
+    canonical file, inside the AXN derivation window, so the canonical bytes must
+    stand — but the record page's Full Text should open with the WORK, and the
+    same files are offered as verifiable downloads in the Held-artifacts block
+    below. Segments are located by the mint's own deterministic heading template
+    for each attachment DECLARED in the registry entry; each segment ends at the
+    next declared-attachment heading or at the first H1 after it. If any declared
+    heading is absent the body is returned unchanged — this strips only what it
+    can attribute, never by pattern. Canonical bytes, the MD download, and the
+    PDF are untouched: presentation, not custody."""
+    atts = [a for a in (d.get('attachments') or []) if isinstance(a, dict) and a.get('filename')]
+    if not atts:
+        return raw
+    spans = []
+    for a in atts:
+        i = raw.find(f"## Attached File: {a['filename']}")
+        if i < 0:
+            return raw
+        spans.append(i)
+    spans.sort()
+    pieces, pos = [], 0
+    for k, s in enumerate(spans):
+        if k + 1 < len(spans):
+            e = spans[k + 1]
+        else:
+            m = re.search(r'\n# [^\n#]', raw[s:])
+            e = s + m.start() + 1 if m else len(raw)
+        pieces.append(raw[pos:s]); pos = e
+    pieces.append(raw[pos:])
+    return ''.join(pieces)
+
 def regenerate_static_page(d, eidx, registry=None):
     _kernel_html = ''
     """Regenerate the static HTML page for a deposit with full enrichment.
@@ -896,6 +930,7 @@ def regenerate_static_page(d, eidx, registry=None):
             # rendered body (375/1379 deposits were emitting it as <p> text)
             # and retain it for structured data.
             _fm, raw = _split_frontmatter(raw)
+            raw = _strip_inline_ingests(raw, d)
             # W13 tier 1: unglue collapsed heading markers for the plain-text
             # machine surface too (outside code fences), so articleBody carries
             # readable structure. Bytes untouched.
@@ -1642,7 +1677,7 @@ def regenerate_static_page(d, eidx, registry=None):
     # serves it — and an archive that asks to be mirrored has to make that cheap.
     _atts = d.get('attachments') or []
     _served = [a for a in _atts if isinstance(a, dict)
-               and str(a.get('url', '')).startswith('https://www.alexanarch.org/')]
+               and str(a.get('url', '')).startswith(('https://www.alexanarch.org/', 'https://alexanarch.org/'))]
     if _served:
         _rows = []
         for a in _served:
