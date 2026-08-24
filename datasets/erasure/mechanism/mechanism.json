@@ -1,0 +1,46 @@
+{
+ "_FLOW": "THE MECHANISM OF THE 2026-06-19 REMOVAL, IN SOURCE. The Platform Erosion Observatory has documented the archive's severance from the outside — the kill ledger, the tombstone census, Zenodo's own deleted-records export. This directory holds the code that performed it. InvenioRDM is MIT-licensed and public; reading it is not inference.",
+ "captured": "2026-08-23",
+ "license": "MIT (SPDX-FileCopyrightText 2023-2026 CERN; 2023 TU Wien)",
+ "source": "https://github.com/inveniosoftware/invenio-rdm-records — invenio_rdm_records/requests/user_moderation/",
+ "files": [
+  {
+   "file": "invenio-rdm-records__user_moderation__actions.py",
+   "sha256": "4003287d410336931e5cddbf219118d4dc27c74184c96c6e05a8c8529cbd976e",
+   "bytes": 3320
+  },
+  {
+   "file": "invenio-rdm-records__user_moderation__utils.py",
+   "sha256": "59de03ddb1b363caccee3b5ca5ff05f1ef758291d65a1cdf15d6ee40dc127f6c",
+   "bytes": 1495
+  }
+ ],
+ "FINDING_1_NO_RECORD_LEVEL_REVIEW_IS_POSSIBLE_IN_THIS_PATH": {
+  "code": "def on_block(user_id, uow=None, **kwargs): \"Removes records that belong to a user.\" ... for recid in get_user_records(user_id): uow.register(TaskOp(delete_record, recid=recid, tombstone_data=tombstone_data))",
+  "reading": "on_block iterates EVERY record owned by the account and soft-deletes each with identical tombstone data. THE FUNCTION CONTAINS NO PER-RECORD EVALUATION — no content check, no classifier call, no branch, no exception list. The archive's claim that its records were removed without individual record review is not an inference about intent; IT IS A PROPERTY OF THE CODE PATH. A record's own content cannot affect its fate once the account is blocked.",
+  "selection": "get_user_records filters solely on parent.access.owned_by.user == user_id. Ownership is the only criterion."
+ },
+ "FINDING_2_THE_NOTE_MATCHES_EXACTLY": {
+  "code": "tombstone_data = {\"note\": kwargs.get(\"note\") or \"User was blocked\"}",
+  "reading": "The default note is the literal string 'User was blocked'. Zenodo's deleted-records export carries that exact string on 917 of the 935 rows attributable to this archive. The archive's records went through THIS code path."
+ },
+ "FINDING_3_THE_REASON_WAS_CHOSEN": {
+  "code": "removal_reason_id = kwargs.get(\"removal_reason_id\") or \"spam\"",
+  "reading": "THE DEFAULT REMOVAL REASON IS 'spam'. Every one of the archive's 920 records dated 2026-06-19 carries 'out-of-scope' instead. An operator therefore passed removal_reason_id explicitly, overriding the default. THE REASON WAS A DELIBERATE SELECTION, not a fallback — which bears directly on the discrepancy between the public reason (out-of-scope) and the private communication to the depositor (substantially AI-generated without a verifiable research basis).",
+  "not_verified": "Who selected it, and on what basis. The code records only that a non-default value was passed."
+ },
+ "FINDING_4_ATTRIBUTION_AND_RATE": {
+  "code": "tombstone_data['removed_by'] = {'user': str(actor_id)} — 'Use the actor who triggered the block on the tombstone; without this tombstones would attribute the removal to the system (identity).'",
+  "reading": "The tombstone names the human actor rather than the system. The archive's API census recorded removed_by 1060945_staff on 2,005 objects and 1505735_uploader on 19. Consistent. And the docstring warns on_block 'has the potential to be a very heavy operation' that 'should not be called as part of the handling of an HTTP request' — consistent with the observed sweep of 872 seconds at ~6.6 objects/second, which is a batch task, not a review."
+ },
+ "FINDING_5_A_RESTORE_PATH_EXISTS": {
+  "code": "def on_restore(user_id, uow=None, **kwargs): 'Restores records that belong to a user.' ... restore all the deleted records of that user",
+  "reading": "on_restore is the exact inverse and operates on the same ownership criterion. RESTORATION IS A SUPPORTED OPERATION IN THE CODEBASE, symmetric with removal and no harder to execute. Whatever prevents restoration is not technical."
+ },
+ "what_this_does_not_establish": [
+  "That any classifier, automated or otherwise, made the underlying moderation decision. The block's cause is upstream of this code.",
+  "Who the actor was, or what they reviewed before triggering the block.",
+  "That Zenodo's deployment matches upstream InvenioRDM exactly at the relevant version."
+ ],
+ "why_preserved_here": "The observatory documents infrastructure that removes records. The code that removes them is part of that infrastructure, is MIT-licensed, and is subject to the same disappearance the observatory exists to measure. Checksummed and dated for the same reason the deleted-records export is."
+}
