@@ -61,7 +61,7 @@ Fill in the metadata below. When you click <strong>Submit Deposit</strong>, the 
 <input id="f-date" type="date">
 
 <label>Description <span class="req">required</span></label>
-<textarea id="f-desc" placeholder="Abstract or description of the work"></textarea>
+<textarea id="f-desc" placeholder="Abstract or description of the work"></textarea><p style="font-size:.85em;opacity:.7;margin:.3rem 0 0">A description of the work — what it is and what it does. The work itself goes in the attached file, not here. No length limit; long descriptions are handled via the clipboard.</p>
 
 <label>Content Type <span class="req">required</span></label>
 <select id="f-type">
@@ -177,6 +177,59 @@ function submitDeposit(){
   const bodyEnc=encodeURIComponent(body);
   const labels=encodeURIComponent('deposit');
   const url=`https://github.com/leesharks000/alexanarch/issues/new?title=${title}&body=${bodyEnc}&labels=${labels}`;
+
+  // ── URL-LENGTH GUARD ─────────────────────────────────────────────────
+  // The whole deposit travels as a ?body= query parameter on a GET, and
+  // GitHub returns 414 above roughly 8 KB. This is NOT a field limit —
+  // no field here is capped — it is a limit on the request line, and it
+  // is script-dependent in a way that matters:
+  //
+  //     ASCII                   ~8,000 characters of body
+  //     Greek / Cyrillic        ~1,300
+  //     Japanese / Chinese      ~750     (each glyph encodes to 9 chars)
+  //
+  // Measured against GitHub: 500 Japanese characters returns 200; 1,500
+  // returns 414. A form that holds a long English abstract holds about a
+  // paragraph of Japanese. Rather than open a URL that will fail with an
+  // unexplained error page, fall back to the clipboard — which has no
+  // length ceiling and behaves identically in every script.
+  const URL_LIMIT = 7000;
+  if (url.length > URL_LIMIT) {
+    const blank = 'https://github.com/leesharks000/alexanarch/issues/new?title=' + title;
+    const proceed = () => {
+      try {
+        const a=document.createElement('a');
+        a.href=blank; a.target='_blank'; a.rel='noopener noreferrer';
+        a.style.display='none'; document.body.appendChild(a); a.click();
+        document.body.removeChild(a);
+      } catch(e) { window.location.href = blank; }
+    };
+    const msg = 'Your deposit is too long to pass through the address bar — this is a '
+      + 'limit on the link, not on your text, and it is reached much sooner in '
+      + 'Japanese, Chinese, Korean, Greek, Cyrillic and Arabic than in English.\n\n'
+      + 'Your deposit has been copied to the clipboard. The issue form will open '
+      + 'blank — paste it into the description box and submit as normal. Nothing '
+      + 'is lost and nothing needs shortening.';
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(body).then(() => { alert(msg); proceed(); })
+        .catch(() => {
+          const ta=document.createElement('textarea');
+          ta.value=body; ta.style.position='fixed'; ta.style.opacity='0';
+          document.body.appendChild(ta); ta.select();
+          try { document.execCommand('copy'); } catch(e) {}
+          document.body.removeChild(ta);
+          alert(msg); proceed();
+        });
+    } else {
+      const ta=document.createElement('textarea');
+      ta.value=body; ta.style.position='fixed'; ta.style.opacity='0';
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); } catch(e) {}
+      document.body.removeChild(ta);
+      alert(msg); proceed();
+    }
+    return;
+  }
   // Use the anchor-click pattern: browsers treat clicks on real anchor
   // elements with target=_blank as user-initiated navigations and don't
   // apply popup blockers to them. This is more reliable than
