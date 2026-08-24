@@ -156,13 +156,14 @@ BROWSE_HEADER = """<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><m
 <nav class="nav">__NAVBAR_TOKEN__</nav>
 <h1 style="font-size:1.4em;font-weight:600;color:var(--accent);margin-bottom:4px">Complete Deposit Registry</h1>
 <div id="browse-meta" style="color:#777;font-size:.88em;margin-bottom:16px">{total} deposits · sorted by deposit number, oldest first · for newest see <a href="/">home page</a></div>
+<div style="color:#999;font-size:.8em;margin:-10px 0 16px">The date shown is <b>the work\u2019s date</b>, not the deposit\u2019s. A work made earlier and deposited later sorts by when it was <i>made</i> \u2014 so <b>recently deposited</b> orders by mint instead.</div>
 """
 
 BROWSE_CARD = """<a href="/s/records/{n}/" itemscope itemtype="https://schema.org/CreativeWork" style="display:block;padding:6px 0;border-bottom:1px solid #f0f0f0;text-decoration:none;color:var(--fg){card_opacity}">
 <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap">
 <span style="font-family:var(--mono);font-size:.72em;color:var(--teal);min-width:40px">#{n}</span>
 <span itemprop="name" style="font-weight:500;color:var(--accent);font-size:.9em;flex:1">{title}{version_chip}</span>
-<time itemprop="datePublished" datetime="{date}" style="font-size:.72em;color:#999;white-space:nowrap">{date}</time>
+<time itemprop="datePublished" datetime="{date}" data-deposited="{deposited}" style="font-size:.72em;color:#999;white-space:nowrap">{date}</time>
 </div>
 <div style="font-size:.7em;color:#aaa;margin-top:1px;padding-left:48px"><code itemprop="identifier">{axn}</code>{status_badge}</div>
 </a>
@@ -267,6 +268,11 @@ def regenerate_browse(reg, dry_run=False):
             n=n,
             title=esc_html(d.get("title", "(untitled)")),
             date=esc_html(d.get("date", "")),
+            # The MINT date, distinct from the work's date. A work made in July and
+            # deposited in August sorts by July on any date sort — which put #1539
+            # at position 116 of 1,539 under "newest" on the day it landed. The
+            # archive records both facts; the surface must offer both.
+            deposited=esc_html((d.get("minted_at") or "")[:10]),
             axn=esc_html(d.get("axn", "")),
             version_chip=version_chip,
             status_badge=status_badge,
