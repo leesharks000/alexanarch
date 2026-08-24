@@ -383,6 +383,14 @@ def stage_body_index(args):
     sh([sys.executable, SCRIPTS / "build_body_index.py"])
 
 
+def stage_counts(args):
+    # counts.json declares that every surface stating a number should fetch it
+    # from there. It was hand-written and therefore drifted: crimsonhexagonal.org
+    # carried THREE different deposit counts on one page, none current. Derived
+    # from source now, and regenerated here so the declaration is true.
+    sh([sys.executable, SCRIPTS / "build_counts.py"])
+
+
 def stage_wiki(args):
     # progressive disclosure: the room does not continue past here without the
     # article, and the article cannot be produced by a flag.
@@ -626,7 +634,8 @@ STAGES = {
     "rendered": stage_rendered,
     "completeness": stage_completeness,
     "surfaces": stage_surfaces, "synchrony": stage_synchrony,
-    "pdf": stage_pdf, "body-index": stage_body_index, "wiki": stage_wiki,
+    "pdf": stage_pdf, "body-index": stage_body_index,
+    "counts": stage_counts, "wiki": stage_wiki,
     "sitemap": stage_sitemap, "interlink": stage_interlink,
     "enrich": stage_enrich, "symbolon": stage_symbolon,
     "identity": stage_identity,
