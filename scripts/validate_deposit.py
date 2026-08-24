@@ -220,6 +220,7 @@ WIKI_MIN_WORDS = 40
 # archive instead of on the handler who skips a procedure today.
 ENFORCEMENT_FROM = "2026-07-28"
 ENFORCE_ALL = [False]   # set by --backlog
+PRE_ENRICHMENT = [False]   # set by --pre-enrichment
 
 
 def _minted_on_or_after(entry, iso):
@@ -372,8 +373,17 @@ def validate_entry_required_fields(entry, enforce_all=False):
                          f"set body_status.class to pointer, tether or notice."))
 
     # WIKI-001: the wiki article must have been authored, not templated.
+    #
+    # PRE-ENRICHMENT EXEMPTION. The issue-path mint validates the new entry at a
+    # point where enrichment has not run, and enrichment is what writes
+    # wiki_article. Enforcing here demands a field the pipeline produces three
+    # steps later, which made EVERY external deposit fail at the gate while
+    # internal deposits passed because the wiki is authored in-session. The rule
+    # still binds after enrichment, where it can actually be satisfied.
     wa = str(entry.get("wiki_article") or "")
-    if not wa.strip():
+    if PRE_ENRICHMENT[0]:
+        pass
+    elif not wa.strip():
         failures.append(("WIKI-001", "wiki_article is empty; internal deposits author it in-session "
                                      "(see deposit_pipeline.py, transport D)"))
     elif WIKI_STUB.match(wa.strip()):
@@ -449,7 +459,13 @@ def main():
     parser.add_argument("--registry-entry", type=Path, help="path to a single deposit JSON")
     parser.add_argument("--registry", type=Path, help="path to data/registry.json (full validation)")
     parser.add_argument("--strict", action="store_true", help="exit non-zero on any failure")
+    parser.add_argument("--pre-enrichment", action="store_true",
+                        help="entry has not been through the enrichment stage yet: skip WIKI-001/002. "
+                             "The issue-path mint validates BEFORE enrichment runs, so demanding the "
+                             "wiki article there asks for a field the pipeline writes three steps later.")
     args = parser.parse_args()
+    if getattr(args, "pre_enrichment", False):
+        PRE_ENRICHMENT[0] = True
 
     protocol = load_protocol()
     idx = load_index()
