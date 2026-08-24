@@ -1,0 +1,44 @@
+{
+ "_FLOW": "THE BOTNET-TRIGGER HYPOTHESIS, TESTED AGAINST SOURCE. Operator hypothesis: the capture registry reached ~1,000 downloads the night before the 2026-06-19 block, and that traffic event triggered it. TESTED, NOT ASSUMED. The result is disconfirming for the named mechanism and silent on a narrower version.",
+ "tested": "2026-08-23",
+ "hypothesis_source": "operator, long-held",
+ "files": [
+  {
+   "file": "invenio-stats__processors.py",
+   "sha256": "efdbb168100b0315257e1c9fae1536e4ce85b5e0045e275fe9732a024b7e06c9",
+   "source": "https://github.com/inveniosoftware/invenio-stats — invenio_stats/processors.py",
+   "license": "MIT"
+  }
+ ],
+ "FINDING_1_THE_MODERATION_SCORER_CANNOT_SEE_TRAFFIC": {
+  "test": "Searched zenodo_rdm/moderation/rules.py for every traffic term.",
+  "result": {
+   "download": 0,
+   "view": 0,
+   "traffic": 0,
+   "visit": 0,
+   "ip_": 0,
+   "count": "5 — all htag_count and files.count, unrelated",
+   "stat": "3 — all LinkDomainStatus, unrelated"
+  },
+  "reading": "THE MODERATION SCORER HAS NO TRAFFIC TERM OF ANY KIND. Its five rules read verification status, links, files, emoji/header density, and percolated queries. A download spike cannot raise a moderation score because there is no field for it. The scorer is structurally blind to traffic."
+ },
+ "FINDING_2_ROBOT_DETECTION_IS_A_USER_AGENT_LOOKUP_AND_IS_NOT_ENFORCEMENT": {
+  "code": "doc['is_robot'] = 'user_agent' in doc and is_robot(doc['user_agent'])",
+  "reading": "Robot flagging is a STRING LOOKUP against the COUNTER-robots list, which follows the Project COUNTER Code of Practice as split by Make Data Count. NO RATE ANALYSIS, NO IP CLUSTERING, NO VOLUME THRESHOLD, NO BEHAVIOURAL DETECTION. And it lives in invenio-stats, whose purpose is COUNTER-compliant metrics hygiene: flag_robots either tags an event or drops it from the statistics index. IT DOES NOT FEED MODERATION OR ENFORCEMENT. There is no botnet detector in this codebase — there is a user-agent list for counting.",
+  "adjacent": "double_click_window deduplicates repeated events within a time window. Also statistics hygiene, also not enforcement."
+ },
+ "FINDING_3_NO_RATE_LIMITING_ON_FILE_SERVING": {
+  "code": "response.headers['X-Accel-Limit-Rate'] = 'off'",
+  "reading": "zenodo_rdm/files.py explicitly DISABLES nginx rate limiting for file responses. A search for 'abuse' across zenodo-rdm returns one hit, in LICENSE."
+ },
+ "FINDING_4_THE_SCHEDULED_PATH_IS_ALSO_BLIND": {
+  "reading": "moderation/tasks.py exposes run_moderation_handlers, invoked per record or community with the configured handler list. No traffic term, no scheduled traffic sweep."
+ },
+ "VERDICT": {
+  "named_mechanism": "DISCONFIRMED. No component in the moderation, statistics or file-serving paths connects download volume to enforcement. The scorer has no traffic field; robot flagging is user-agent matching for metrics; file serving is unthrottled by design.",
+  "what_remains_possible_and_is_NOT_disconfirmed": "That a human observed unusual traffic on infrastructure monitoring — which is not in this repository, CERN operating its own — and initiated review manually. The block originates upstream of every code path examined, in on_block's caller. NOTHING IN SOURCE CAN CONFIRM OR REFUTE THAT, and the distinction matters: 'no automated botnet trigger exists' is established; 'traffic played no role' is not.",
+  "open_question_for_the_operator": "Issue zenodo/zenodo-rdm#1357 reports download statistics FLATLINED SINCE ~2026-04-20, with a live service notice acknowledging it. If counters were not updating from 20 April, a download figure observed on 18 June needs accounting for: either the flatline was not global, or the figure came from a different counter, or the observation predates the break. Recorded as a question, not a challenge."
+ },
+ "why_this_is_seated": "A long-held operator hypothesis, tested against primary source rather than argued. The disconfirmation is as much a finding as a confirmation would have been, and preserving it prevents the hypothesis being re-litigated from memory."
+}
