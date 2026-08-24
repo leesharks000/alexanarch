@@ -183,26 +183,42 @@
       var anchor = document.createComment('gc-rows');
       parent.insertBefore(anchor, rows[0]);
 
+      // TWO DATES, AND THEY ARE DIFFERENT FACTS. datetime is the WORK's date;
+      // data-deposited is when it was minted. A paper written in July and
+      // deposited in August sorts by July on any date sort — which put #1539 at
+      // position 116 of 1,539 under "newest" on the day it landed, and would
+      // bury every deposit of existing work by an external contributor.
       function key(row) {
         var t = row.querySelector('time[datetime]');
         var m2 = row.getAttribute('href').match(/(\d+)/);
-        return { d: t ? t.getAttribute('datetime') : '', n: m2 ? parseInt(m2[1], 10) : 0 };
+        return {
+          d: t ? t.getAttribute('datetime') : '',
+          m: t ? (t.getAttribute('data-deposited') || '') : '',
+          n: m2 ? parseInt(m2[1], 10) : 0
+        };
       }
       function apply(mode) {
         var sorted = rows.slice().sort(function (a, b) {
           var ka = key(a), kb = key(b);
           if (mode === 'newest') return (kb.d > ka.d ? 1 : kb.d < ka.d ? -1 : kb.n - ka.n);
           if (mode === 'oldest') return (ka.d > kb.d ? 1 : ka.d < kb.d ? -1 : ka.n - kb.n);
+          if (mode === 'deposited') return (kb.m > ka.m ? 1 : kb.m < ka.m ? -1 : kb.n - ka.n);
           return ka.n - kb.n;
         });
         var last = anchor;
         sorted.forEach(function (r) { parent.insertBefore(r, last.nextSibling); last = r; });
         if (hdr) {
-          var label = { newest: 'sorted by date, newest first', oldest: 'sorted by date, oldest first', number: 'sorted by deposit number' }[mode];
+          var label = {
+            newest: 'sorted by the work\u2019s date, newest first',
+            oldest: 'sorted by the work\u2019s date, oldest first',
+            deposited: 'sorted by when deposited, most recent first',
+            number: 'sorted by deposit number'
+          }[mode];
           var totSpan = hdr.querySelector('#site-views');
           hdr.innerHTML = rows.length + ' deposits · ' + label + ' · sort: ' +
-            '<a href="#" data-sort="newest" style="color:var(--teal)">newest</a> · ' +
-            '<a href="#" data-sort="oldest" style="color:var(--teal)">oldest</a> · ' +
+            '<a href="#" data-sort="deposited" style="color:var(--teal)">recently deposited</a> · ' +
+            '<a href="#" data-sort="newest" style="color:var(--teal)">newest work</a> · ' +
+            '<a href="#" data-sort="oldest" style="color:var(--teal)">oldest work</a> · ' +
             '<a href="#" data-sort="number" style="color:var(--teal)">by №</a>' +
             ' · <span id="site-views">' + (totSpan ? totSpan.textContent : '\u2014') + '</span>';
           hdr.querySelectorAll('a[data-sort]').forEach(function (a) {
