@@ -40,5 +40,26 @@
   "what_remains_possible_and_is_NOT_disconfirmed": "That a human observed unusual traffic on infrastructure monitoring — which is not in this repository, CERN operating its own — and initiated review manually. The block originates upstream of every code path examined, in on_block's caller. NOTHING IN SOURCE CAN CONFIRM OR REFUTE THAT, and the distinction matters: 'no automated botnet trigger exists' is established; 'traffic played no role' is not.",
   "open_question_for_the_operator": "Issue zenodo/zenodo-rdm#1357 reports download statistics FLATLINED SINCE ~2026-04-20, with a live service notice acknowledging it. If counters were not updating from 20 April, a download figure observed on 18 June needs accounting for: either the flatline was not global, or the figure came from a different counter, or the observation predates the break. Recorded as a question, not a challenge."
  },
- "why_this_is_seated": "A long-held operator hypothesis, tested against primary source rather than argued. The disconfirmation is as much a finding as a confirmation would have been, and preserving it prevents the hypothesis being re-litigated from memory."
+ "why_this_is_seated": "A long-held operator hypothesis, tested against primary source rather than argued. The disconfirmation is as much a finding as a confirmation would have been, and preserving it prevents the hypothesis being re-litigated from memory.",
+ "FINDING_5_THE_UPLOAD_PATH_IS_ALSO_DISCONFIRMED": {
+  "occasion": "Conversation record (2026-06-22 analysis) establishes that the ban coincided with a 16-DEPOSIT SPRINT TOTALLING 926 MB on 2026-06-19, and assigned 25% probability to that sprint tripping automated abuse detection. The download path was tested above; the UPLOAD path had not been.",
+  "source": "zenodo-rdm/invenio.cfg — production configuration, public",
+  "sha256": "974d8f7c56feb5539ff32583b39f85ae4ef1ab132e05f1737d98fad9d8486359",
+  "configured_limits": {
+   "RDM_FILES_DEFAULT_QUOTA_SIZE": "50 GB",
+   "RDM_FILES_DEFAULT_MAX_FILE_SIZE": "50 GB",
+   "RDM_FILES_DEFAULT_MAX_ADDITIONAL_QUOTA_SIZE": "150 GB",
+   "RDM_IMMEDIATE_QUOTA_INCREASE_ENABLED": true
+  },
+  "arithmetic": "926 MB against a 50 GB default quota is 1.85%. THE SPRINT USED UNDER TWO PER CENT OF THE ALLOWANCE THE PLATFORM GRANTS BY DEFAULT, with 150 GB more available on request and immediate increases enabled automatically.",
+  "rate_limits": "RATELIMIT_PER_ENDPOINT covers badges (120/min), support (10/sec), and login/registration (10/min). RATELIMIT_GUEST_USER is 8000/hour. THERE IS NO DEPOSIT OR UPLOAD ENDPOINT IN THE TABLE. No per-deposit throttle, no volume trigger, no sprint detector.",
+  "reading": "THE UPLOAD SPRINT COULD NOT HAVE TRIPPED AN AUTOMATED THRESHOLD, BECAUSE NO SUCH THRESHOLD IS CONFIGURED AT THAT SCALE. A platform that grants 50 GB by default, permits 150 GB more, and enables immediate automatic increases is designed to absorb large deposits, not to flag them. Scenario 2 of the 2026-06-22 analysis is disconfirmed on the same footing as the download hypothesis.",
+  "not_verified": "Zenodo's production values could differ from the committed invenio.cfg, and RATELIMIT_AUTHENTICATED_USER is not set in the visible config — it falls back to an Invenio default not read here."
+ },
+ "REVISED_SCENARIO_STANDING": {
+  "prior": "2026-06-22 analysis: S1 report-driven review 60% · S2 upload sprint tripping automation 25% · S3 policy written with this archive in view 10% · S4 internal moderator noticing volume 3% · S5 the archive's success as underlying condition 2% standalone.",
+  "now": "BOTH AUTOMATED SCENARIOS ARE DISCONFIRMED AT CODE LEVEL. The download path has no connection to enforcement (Findings 1-4); the upload path has no threshold at 1.85% of quota (Finding 5). S2's 25% redistributes to the human-initiated scenarios, which the source can neither confirm nor refute because THE BLOCK ORIGINATES UPSTREAM OF EVERY CODE PATH READABLE.",
+  "what_this_does_not_do": "It does not raise the probability of any particular human scenario. It removes a machine explanation and leaves the remainder undifferentiated. S1, S3 and S4 all posit a person, and nothing in source distinguishes among them.",
+  "the_durable_result": "The archive can now state, from primary source rather than inference, that NO AUTOMATED TRIGGER IN ZENODO'S PUBLISHED CODE COULD HAVE PRODUCED THIS REMOVAL FROM TRAFFIC OR VOLUME. Whoever or whatever initiated it, it was not a threshold being crossed."
+ }
 }
