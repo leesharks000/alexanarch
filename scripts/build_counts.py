@@ -94,11 +94,21 @@ def build() -> dict:
 
 if __name__ == "__main__":
     c = build()
-    for p in ("data/api/counts.json", "api/counts.json"):
-        f = ROOT / p
-        if f.parent.exists():
-            f.write_text(json.dumps(c, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-            print(f"  wrote {p}")
+    # ONE PATH ONLY: data/api/. The rewrite /api/(.*)\.json → /data/api/$1.json
+    # already serves it at the advertised address.
+    #
+    # An earlier version of this script also wrote api/counts.json "to be safe",
+    # and that is the fd8de940 failure class: api/ is VERCEL'S FUNCTIONS
+    # NAMESPACE, and a static file there works until someone adds a function
+    # beside it, at which point the whole directory flips and 1,012 static JSON
+    # files 404 silently. This exact file had been moved out of api/ at 07:18 the
+    # same day for that reason; writing it back re-armed the mine, and the
+    # Endpoint Guardian caught it within the hour.
+    #
+    # STATIC DATA BELONGS IN /data/. api/ HOLDS EXECUTABLES ONLY.
+    f = ROOT / "data/api/counts.json"
+    f.write_text(json.dumps(c, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    print("  wrote data/api/counts.json  (served at /api/counts.json via rewrite)")
     d = c["deposits"]
     print(f"  deposits {d['total']} (highest {d['highest_number']}, gaps {d['gaps']}) · "
           f"captures {c['captures']['total']} · terms {c['lexicon']['terms_minted']} · "
