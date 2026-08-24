@@ -35,6 +35,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import shutil
 import os
 import re
 import subprocess
@@ -113,6 +114,27 @@ def save_checkpoint(cp: dict) -> None:
 
 
 TEXTS_DIR = REPO_ROOT / "data" / "texts"
+
+# Deposits whose canonical body is a document rather than text. The papers route
+# serves the held original for these; nothing is typeset.
+FACSIMILE_CLASSES = {"primary-source-facsimile", "facsimile", "manuscript-facsimile"}
+
+
+def _held_pdf(dep: dict):
+    """The archive's own copy of the deposit's PDF, or None.
+
+    Only an archive_path counts. A URL is not custody, and a papers route built
+    from a URL would be a promise the archive cannot keep.
+    """
+    for att in (dep.get("attachments") or []):
+        ap = str(att.get("archive_path") or "")
+        if ap.lower().endswith(".pdf"):
+            p = REPO_ROOT / ap.lstrip("/")
+            if p.exists():
+                return p
+    return None
+
+
 
 def _load_body(hex_id: str, dep_num: int) -> tuple[str, str]:
     """Load deposit body from the LONGEST source across BOTH stores
@@ -551,6 +573,7 @@ def main() -> int:
     n_ok = 0
     n_skipped_unchanged = 0
     n_skipped_no_body = 0
+    n_facsimile = 0
     n_failed = []
     t0 = time.time()
 
@@ -565,6 +588,31 @@ def main() -> int:
 
         body, body_path = _load_body(hex_id, n)
         bs_cls = (d.get("body_status") or {}).get("class", "full")
+
+        # FACSIMILE DEPOSITS ARE NOT RENDERED. When the deposit's work IS a
+        # document — a handwritten paper, a scan, a photographed manuscript —
+        # /papers/AXN-{hex}.pdf must serve THAT DOCUMENT, not a typeset render
+        # of the record describing it. Rendering here would overwrite the
+        # author's own file with our page about it, which is the custody defect
+        # in a new place: the archive holding a description where the work
+        # belongs.
+        #
+        # Instead: copy the archive-held original into the papers route, so the
+        # canonical /papers/ URL resolves to the submitted bytes.
+        if bs_cls in FACSIMILE_CLASSES:
+            held = _held_pdf(d)
+            if held is not None:
+                if not out_path.exists() or out_path.stat().st_size != held.stat().st_size:
+                    shutil.copyfile(held, out_path)
+                    print(f"  #{n}: facsimile — papers route serves the held original "
+                          f"({held.stat().st_size:,} bytes), not a render")
+                n_facsimile += 1
+                continue
+            print(f"  #{n}: body_status is {bs_cls} but no archive-held PDF found; "
+                  f"NOT rendering a substitute — take custody first")
+            n_skipped_no_body += 1
+            continue
+
         if not body and bs_cls != "missing":
             n_skipped_no_body += 1
             continue

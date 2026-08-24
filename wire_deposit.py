@@ -1071,7 +1071,7 @@ def regenerate_static_page(d, eidx, registry=None):
                         src = '/' + src
                     ft_lines.append(
                         f'<figure style="margin:16px 0;text-align:center">'
-                        f'<img src="{esc(src)}" alt="{alt}" '
+                        f'<img src="{esc(src)}" alt="{alt}" loading="lazy" '
                         f'style="max-width:100%;height:auto;border:1px solid var(--border);border-radius:6px">'
                         f'</figure>'
                     )

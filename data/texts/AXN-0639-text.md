@@ -24,28 +24,30 @@ keywords:
   - Enli Lucente
 ---
 
-# 論文197. 多層切替による中心秘匿構造
+![論文197. 多層切替による中心秘匿構造 — page 1 of 11](/data/attachments/AXN-0639/pages/p-001.jpg)
 
-**Enli Lucente — Strutturista della Psiche** · 2026年7月30日
+![論文197. 多層切替による中心秘匿構造 — page 2 of 11](/data/attachments/AXN-0639/pages/p-002.jpg)
+
+![論文197. 多層切替による中心秘匿構造 — page 3 of 11](/data/attachments/AXN-0639/pages/p-003.jpg)
+
+![論文197. 多層切替による中心秘匿構造 — page 4 of 11](/data/attachments/AXN-0639/pages/p-004.jpg)
+
+![論文197. 多層切替による中心秘匿構造 — page 5 of 11](/data/attachments/AXN-0639/pages/p-005.jpg)
+
+![論文197. 多層切替による中心秘匿構造 — page 6 of 11](/data/attachments/AXN-0639/pages/p-006.jpg)
+
+![論文197. 多層切替による中心秘匿構造 — page 7 of 11](/data/attachments/AXN-0639/pages/p-007.jpg)
+
+![論文197. 多層切替による中心秘匿構造 — page 8 of 11](/data/attachments/AXN-0639/pages/p-008.jpg)
+
+![論文197. 多層切替による中心秘匿構造 — page 9 of 11](/data/attachments/AXN-0639/pages/p-009.jpg)
+
+![論文197. 多層切替による中心秘匿構造 — page 10 of 11](/data/attachments/AXN-0639/pages/p-010.jpg)
+
+![論文197. 多層切替による中心秘匿構造 — page 11 of 11](/data/attachments/AXN-0639/pages/p-011.jpg)
 
 ---
 
-## The work
+Presented as deposited — un-OCR'd, untranscribed, unreflowed. The document is the work.
 
-This deposit is a handwritten paper, submitted as a photographic facsimile of two
-sheets. **The document is the work.** It is presented here as deposited — un-OCR'd,
-untranscribed, unreflowed.
-
-**[Read the paper →](/read/1539/)**
-
----
-
-## Files
-
-[手書き論文197-多層切替による中心秘匿構造2026.07.30.pdf](/data/attachments/AXN-0639/手書き論文197-多層切替による中心秘匿構造2026.07.30.pdf)
-
-11 pages · 6,938,058 bytes · SHA-256 `75ad107e5d634225c972d5a98dd9cbee483dd273d1ecc22689584920956f8602`
-
-Held by the archive. Submitted 2026-08-24 as issue attachment
-`https://github.com/user-attachments/files/31380123/197-.2026.07.30.pdf`;
-bytes recovered and committed, hash verified against the submission.
+[Page reader](/read/1539/) · [original PDF](/data/attachments/AXN-0639/手書き論文197-多層切替による中心秘匿構造2026.07.30.pdf) · 11 pages · 6,938,058 bytes · SHA-256 `75ad107e5d634225c972d5a98dd9cbee483dd273d1ecc22689584920956f8602`
