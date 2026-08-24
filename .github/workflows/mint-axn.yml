@@ -412,8 +412,14 @@ jobs:
       - name: Validate full registry post-mint
         if: steps.existing_pr.outputs.exists != 'true'
         run: |
+          # --pre-enrichment for the same reason as the entry gate above: at
+          # this point enrichment has still not run, so the entry just minted
+          # has no wiki_article and WIKI-001 catches the archive's own new
+          # record. The post-ENRICHMENT check downstream binds the rule where
+          # it can actually be satisfied.
           python3 scripts/validate_deposit.py \
               --registry data/registry.json \
+              --pre-enrichment \
               --strict
 
       # ───────────────────────────────────────────────────────────────────
