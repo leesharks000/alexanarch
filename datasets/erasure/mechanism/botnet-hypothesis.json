@@ -36,7 +36,7 @@
   "reading": "moderation/tasks.py exposes run_moderation_handlers, invoked per record or community with the configured handler list. No traffic term, no scheduled traffic sweep."
  },
  "VERDICT": {
-  "named_mechanism": "DISCONFIRMED. No component in the moderation, statistics or file-serving paths connects download volume to enforcement. The scorer has no traffic field; robot flagging is user-agent matching for metrics; file serving is unthrottled by design.",
+  "named_mechanism": "NOT CONFIRMED BY PUBLIC SOURCE — see EPISTEMIC_CORRECTION_2026-08-24. Earlier wording ('DISCONFIRMED') withdrawn.",
   "what_remains_possible_and_is_NOT_disconfirmed": "That a human observed unusual traffic on infrastructure monitoring — which is not in this repository, CERN operating its own — and initiated review manually. The block originates upstream of every code path examined, in on_block's caller. NOTHING IN SOURCE CAN CONFIRM OR REFUTE THAT, and the distinction matters: 'no automated botnet trigger exists' is established; 'traffic played no role' is not.",
   "open_question_for_the_operator": "Issue zenodo/zenodo-rdm#1357 reports download statistics FLATLINED SINCE ~2026-04-20, with a live service notice acknowledging it. If counters were not updating from 20 April, a download figure observed on 18 June needs accounting for: either the flatline was not global, or the figure came from a different counter, or the observation predates the break. Recorded as a question, not a challenge."
  },
@@ -58,8 +58,21 @@
  },
  "REVISED_SCENARIO_STANDING": {
   "prior": "2026-06-22 analysis: S1 report-driven review 60% · S2 upload sprint tripping automation 25% · S3 policy written with this archive in view 10% · S4 internal moderator noticing volume 3% · S5 the archive's success as underlying condition 2% standalone.",
-  "now": "BOTH AUTOMATED SCENARIOS ARE DISCONFIRMED AT CODE LEVEL. The download path has no connection to enforcement (Findings 1-4); the upload path has no threshold at 1.85% of quota (Finding 5). S2's 25% redistributes to the human-initiated scenarios, which the source can neither confirm nor refute because THE BLOCK ORIGINATES UPSTREAM OF EVERY CODE PATH READABLE.",
+  "now": "Both automated scenarios are UNSUPPORTED BY PUBLISHED SOURCE. Neither is refuted. The published code contains no traffic-to-enforcement path and no volume threshold at the observed scale, but production configuration, deployed modules, CERN-level monitoring and the percolator's stored queries are all outside what can be read.",
   "what_this_does_not_do": "It does not raise the probability of any particular human scenario. It removes a machine explanation and leaves the remainder undifferentiated. S1, S3 and S4 all posit a person, and nothing in source distinguishes among them.",
   "the_durable_result": "The archive can now state, from primary source rather than inference, that NO AUTOMATED TRIGGER IN ZENODO'S PUBLISHED CODE COULD HAVE PRODUCED THIS REMOVAL FROM TRAFFIC OR VOLUME. Whoever or whatever initiated it, it was not a threshold being crossed."
+ },
+ "EPISTEMIC_CORRECTION_2026-08-24": {
+  "error": "This record used DISCONFIRMED for both the download and upload mechanisms. THAT IS AN OVERCLAIM AND IT IS WITHDRAWN.",
+  "correct_form": "NOT CONFIRMED BY THE PUBLIC CODEBASE. Reading published source and finding no such mechanism establishes that the mechanism is not in the published source. It does not establish that no such mechanism exists.",
+  "what_the_reading_cannot_reach": [
+   "Production configuration. Zenodo's deployed values for MODERATION_SCORES, MODERATION_APPLY_ACTIONS, rate limits and quotas are not public; the committed invenio.cfg may not match what runs.",
+   "Deployed modules absent from the public repository.",
+   "CERN infrastructure monitoring, which is not in zenodo-rdm at all and is where traffic anomalies would surface.",
+   "THE moderation_queries TABLE. The percolator accepts arbitrary Elasticsearch queries with arbitrary integer weights, editable at runtime. Its contents are unpublished. A traffic-correlated or theme-correlated query could exist there and leave no trace in source.",
+   "Any human process, alerting rule, or internal tooling."
+  ],
+  "revised_statement": "No mechanism connecting download volume or upload volume to enforcement appears in Zenodo's published code. The hypothesis is UNSUPPORTED BY THE AVAILABLE SOURCE and remains OPEN. It is not refuted.",
+  "why_this_matters": "An archive whose subject is the difference between absence-as-nonexistence and retrieval failure cannot itself treat 'not found in the sources I read' as 'does not exist'. THE ARCHIVE'S OWN ABN DISTINCTION APPLIES TO ITS OWN FINDINGS."
  }
 }

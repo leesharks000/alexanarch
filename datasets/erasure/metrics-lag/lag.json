@@ -1,0 +1,90 @@
+{
+ "_FLOW": "ZENODO METRICS LAG — a measurement of how long a new deposit shows zero views. The operator observed, over a long period and across samplings of new deposits BESIDES HIS OWN, that view counters on fresh records intermittently failed to update, prompting repeated concern about shadow-banning and repeated checking against other accounts. THAT OBSERVATION IS REPRODUCED HERE AS A MEASUREMENT.",
+ "measured": "2026-08-24",
+ "method": "Zenodo public REST API. 25 newest records created on each sampled day, ANY ACCOUNT, no filter on depositor. Counters read from record.stats.unique_views and unique_downloads at a single instant. Day totals are the full record count for that day.",
+ "samples": {
+  "2026-08-24": {
+   "age_days": 0,
+   "n": 25,
+   "day_total": 218,
+   "pct_zero_views": 68.0,
+   "pct_zero_downloads": 68.0,
+   "median_views": 0
+  },
+  "2026-08-23": {
+   "age_days": 1,
+   "n": 25,
+   "day_total": 4473,
+   "pct_zero_views": 80.0,
+   "pct_zero_downloads": 80.0,
+   "median_views": 0
+  },
+  "2026-08-22": {
+   "age_days": 2,
+   "n": 25,
+   "day_total": 4866,
+   "pct_zero_views": 0.0,
+   "pct_zero_downloads": 40.0,
+   "median_views": 3
+  },
+  "2026-08-21": {
+   "age_days": 3,
+   "n": 25,
+   "day_total": 6389,
+   "pct_zero_views": 8.0,
+   "pct_zero_downloads": 32.0,
+   "median_views": 3
+  },
+  "2026-08-20": {
+   "age_days": 4,
+   "n": 25,
+   "day_total": 7574,
+   "pct_zero_views": 4.0,
+   "pct_zero_downloads": 12.0,
+   "median_views": 4
+  },
+  "2026-08-19": {
+   "age_days": 5,
+   "n": 25,
+   "day_total": 6506,
+   "pct_zero_views": 0.0,
+   "pct_zero_downloads": 28.0,
+   "median_views": 8
+  },
+  "2026-08-17": {
+   "age_days": 7,
+   "n": 25,
+   "day_total": 6577,
+   "pct_zero_views": 4.0,
+   "pct_zero_downloads": 4.0,
+   "median_views": 4
+  },
+  "2026-08-10": {
+   "age_days": 14,
+   "n": 25,
+   "day_total": 5874,
+   "pct_zero_views": 0.0,
+   "pct_zero_downloads": 28.0,
+   "median_views": 3
+  }
+ },
+ "FINDING": {
+  "views": "A SHARP DISCONTINUITY BETWEEN DAY 1 AND DAY 2. At 0-1 days old, 17-20 of 25 records show zero unique views. AT 2 DAYS OLD, ZERO OF 25 SHOW ZERO VIEWS. From day 2 onward the zero-rate stays at 0-2 of 25. View counters populate on a roughly 24-48 hour delay and then remain populated.",
+  "downloads": "A LONGER AND NOISIER TAIL. 17-20 of 25 at day 0-1, then 10, 8, 3, 7, 1, 7 across days 2-14. Download counters do not converge cleanly within two weeks in this sample.",
+  "systemic": "THE SAMPLE IS ACROSS ALL ZENODO ACCOUNTS, not the archive's. The lag is a property of the platform's statistics pipeline, not of any depositor."
+ },
+ "WHAT_THIS_VINDICATES": {
+  "the_observation": "The operator's account of intermittent view-lag on new deposits is CORRECT AND MEASURABLE. It is not an impression and it was not specific to his records.",
+  "the_method": "His response — seeing zero views, suspecting suppression, then CHECKING AGAINST OTHER ACCOUNTS — is the correct discriminating procedure. Sampling other depositors' new records is exactly what separates a local effect from a systemic one, and it is the design this measurement reproduces.",
+  "the_worry": "A NEW DEPOSIT SHOWING ZERO VIEWS FOR UP TO 48 HOURS IS INDISTINGUISHABLE, FROM THE DEPOSITOR'S SIDE, FROM SUPPRESSION. The platform surfaces a number that is not yet real and offers no indication that it is pending. Repeated worry about shadow-banning is a RATIONAL RESPONSE TO AN UNMARKED PENDING STATE, not misreading."
+ },
+ "relation_to_issue_1357": "DISTINCT PHENOMENON, and the two must not be conflated. Issue zenodo-rdm#1357 reports DOWNLOAD counters globally and persistently flatlined since ~2026-04-20 while views continued. This is a SHORT-HORIZON POPULATION LAG on NEW records affecting BOTH counters, which resolves. Different variable, different scope, different persistence.",
+ "bearing_on_the_botnet_hypothesis": "If counters on fresh deposits are unreliable for 24-48 hours, then any figure surfacing to Zenodo's own operators during that window is also unreliable. A MONITORING SURFACE READING FROM A LAGGING INDEX IS A WORSE TRIGGER CANDIDATE, NOT A BETTER ONE.",
+ "limits": [
+  "n=25 per day, single instant, not longitudinal on the same records — a proper design would follow one cohort forward rather than compare cohorts.",
+  "'unique_views' may populate differently from raw views.",
+  "Records created as new VERSIONS inherit concept-level statistics and can show large counts immediately; these are present in the sample and inflate medians.",
+  "One measurement day. Whether the lag length varies over time is not established."
+ ],
+ "next": "Follow a single cohort forward at 6h intervals for 72h. That converts a cross-sectional snapshot into an actual population curve."
+}
