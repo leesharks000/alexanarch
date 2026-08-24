@@ -1,0 +1,81 @@
+{
+ "_FLOW": "ZENODO'S MODERATION SCORER, IN SOURCE. The question asked was whether classifier scripts are present, or scripts permitting inference as to their shape. THE ANSWER IS YES, AND IT IS NOT A CLASSIFIER. It is a transparent rule-based additive scorer with published integer weights, plus a percolator that lets administrators register arbitrary stored queries carrying their own scores. GPL-3.0, public, readable by anyone.",
+ "captured": "2026-08-23",
+ "license": "GPL-3.0-or-later, SPDX-FileCopyrightText 2024 CERN",
+ "source": "https://github.com/zenodo/zenodo-rdm — site/zenodo_rdm/moderation/",
+ "files": [
+  {
+   "file": "config.py",
+   "sha256": "43543776232ddbaf5816125124597c5c914bf5e9cd37127fb461af74b18f063d",
+   "bytes": 1989
+  },
+  {
+   "file": "models.py",
+   "sha256": "33af9330b2888edc9c35fc106d68ee6e58704a9db0907b842b2ed8b4a5e11d30",
+   "bytes": 3580
+  },
+  {
+   "file": "percolator.py",
+   "sha256": "381490d95a6a806f91d91b0864de5520f3f0c784d212f5e0047d59ad99c410a3",
+   "bytes": 3611
+  },
+  {
+   "file": "rules.py",
+   "sha256": "7bffe59f3577820219d81dd8d1886e3d5f9a1430d4431c377f1df2e090008300",
+   "bytes": 4644
+  },
+  {
+   "file": "tasks.py",
+   "sha256": "8f83259c6edd01c2616ede6ab9ec9a895d33a6a5b0bc7955f2aae6364f717b4c",
+   "bytes": 5355
+  }
+ ],
+ "THE_SHAPE": {
+  "type": "Additive rule-based score. No machine-learning model, no AI-content detector, no text classifier anywhere in the module.",
+  "rules": [
+   "verified_user_rule",
+   "links_rule",
+   "files_rule",
+   "text_sanitization_rule",
+   "match_query_rule"
+  ],
+  "published_weights": {
+   "spam_link": 8,
+   "ham_link": -3,
+   "excess_links": 5,
+   "spam_emoji": 5,
+   "spam_header_tags": 2,
+   "spam_files": 2,
+   "ham_files": -5,
+   "unverified_user": 10,
+   "verified_user": -10,
+   "spam_threshold": 10,
+   "ham_threshold": 0
+  },
+  "default_action_flag": "MODERATION_APPLY_ACTIONS = False — the upstream default SCORES BUT DOES NOT ACT. Zenodo's production configuration is not public and may differ."
+ },
+ "FINDING_THE_ARCHIVES_OWN_APPARATUS_IS_A_MAXIMAL_TRIGGER": {
+  "statement": "The formal features that make this archive rigorous are the same features that make it score as spam under these heuristics. Every one is a deliberate design choice of the archive, and every one adds points.",
+  "emoji": "text_sanitization_rule: MORE THAN THREE EMOJI IN CONCATENATED METADATA scores +5. AXN identifiers carry SIX EMOJI EACH — AXN:0634.ARCHIVAL.🔩⌛🧡◇🟢⏏️ — and appear in titles, descriptions and related identifiers. GUARANTEED TRIGGER ON EVERY DEPOSIT, by construction of the identifier system.",
+  "links": "links_rule: MORE THAN FIVE LINKS IN THE DESCRIPTION scores +5. The archive's deposits carry dense cross-references, related-deposit chains and DOI citations. Near-certain trigger.",
+  "headers": "text_sanitization_rule: MORE THAN FOUR HTML HEADER TAGS scores +2. The archive's deposit bodies are heavily sectioned. Likely trigger.",
+  "files": "files_rule: four or fewer files, under 5MB, with an extension in the spam set scores +2 — AND THE SPAM EXTENSION SET CONTAINS 'pdf'. The archive deposits small PDFs. Trigger. The offsetting ham_files (-5) requires MORE than four files or MORE than 15MB; the archive qualifies for neither.",
+  "arithmetic": {
+   "verified_user": "-10 +5 +5 +2 +2 = +4 — BELOW the spam threshold of 10.",
+   "unverified_user": "+10 +5 +5 +2 +2 = +24 — MORE THAN DOUBLE the threshold.",
+   "reading": "THE VERIFICATION FLAG IS A TWENTY-POINT SWING ON A TEN-POINT THRESHOLD. It is arithmetically decisive: the same deposit passes or fails on that flag alone, independent of content."
+  },
+  "not_verified": "That this scorer was involved in the 2026-06-19 removal. The removal reason recorded is 'out-of-scope', while on_block's default is 'spam' — see the parent directory. The scorer's relation to the account block is NOT established by this code."
+ },
+ "THE_PERCOLATOR_IS_THE_CONFIGURABLE_SURFACE": {
+  "mechanism": "ModerationQuery is a database table: query_string (Elasticsearch DSL), score (integer), notes, active. Registered queries are percolated against every record, and each match ADDS ITS OWN SCORE.",
+  "reading": "This is where arbitrary targeting would live. An administrator can register any Elasticsearch query with any integer weight and activate it, without a code change and without a deployment. THE RULE SET IS PUBLIC; THE STORED QUERIES ARE NOT. Any pattern — a phrase, a domain, a metadata shape, an identifier format — can be given a score at runtime.",
+  "consequence": "Publishing MODERATION_SCORES does not disclose the operative scoring, because match_query_rule contributes an unbounded, unpublished term. The public weights are a floor, not the function."
+ },
+ "what_this_answers": "Classifier scripts: none. Scripts permitting inference as to shape: yes, completely — the rules, the weights, the thresholds and the percolator architecture are all in GPL source. The shape is a transparent additive scorer with one opaque term.",
+ "what_this_does_not_answer": [
+  "Zenodo's production values for MODERATION_SCORES and MODERATION_APPLY_ACTIONS.",
+  "The contents of the moderation_queries table.",
+  "Whether any of this ran against this archive."
+ ]
+}
