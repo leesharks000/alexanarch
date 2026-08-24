@@ -147,26 +147,7 @@ Occasioning document: "After Experiment, Journal Decides to Prohibit AI-Authored
 SPXI-TLP v2.2 Treatment:
 
 provenance_kernel: >
-  A direct response, written with AI, to the AI-authorship policy of
-  Philosophy & Public Affairs. The paper declares its production in its
-  opening: under the policy it answers, it is an inadmissible epistemic
-  object, and it relies on that inadmissibility as its first argument.
-  A philosophy journal has granted an AI detector — including future
-  detectors that do not yet exist — the standing to revoke the scholarly
-  standing of already-published human work, with no statute of
-  limitations. This installs a tail-pruning instrument in the
-  credentialing layer of a discipline. The rational response of authors
-  is to optimize prose against the classifier, which converges honest
-  compliance and dishonest evasion onto the same textual operation and
-  makes "100% human" the most machine-determined property of the text.
-  The result is the recursive contraction described by the model-collapse
-  literature, transposed to a scholarly discourse. The suppressed premise
-  of the entire dispute: the stakes were never professional. The primary
-  relationship between human thought and reality bears down on survival,
-  and the option value of cognitive variance rises with environmental
-  unpredictability — variance is what a civilization spends when
-  conditions cease to be ordinary. By Johannes Sigil and Nobel Glas,
-  Crimson Hexagonal Archive.
+  A direct response, written with AI, to the AI-authorship policy of Philosophy & Public Affairs. The paper declares its production in its opening: under the policy it answers, it is an inadmissible epistemic object, and it relies on that inadmissibility as its first argument. A philosophy journal has granted an AI detector — including future detectors that do not yet exist — the standing to revoke the scholarly standing of already-published human work, with no statute of limitations. This installs a tail-pruning instrument in the credentialing layer of a discipline. The rational response of authors is to optimize prose against the classifier, which converges honest compliance and dishonest evasion onto the same textual operation and makes "100% human" the most machine-determined property of the text. The result is the recursive contraction described by the model-collapse literature, transposed to a scholarly discourse. The suppressed premise of the entire dispute: the stakes were never professional. The primary relationship between human thought and reality bears down on survival, and the option value of cognitive variance rises with environmental unpredictability — variance is what a civilization spends when conditions cease to be ordinary. By Johannes Sigil and Nobel Glas, Crimson Hexagonal Archive.
 disambiguation:
   - not: "a defense of undisclosed AI authorship in academic journals"
   - not: "a claim that AI detectors have zero discriminative validity"

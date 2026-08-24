@@ -36,6 +36,10 @@ python3 scripts/deposit_pipeline.py --deposit-number <N> --from-stage record
 
 **The manual path formerly documented here (pick your own number, `HEX = format(N,'03X')`, hand-append the registry) is RETIRED.** It produced the 3-character hex drift and the identifier collisions disclosed in EA-LACUNA-PROTOCOL-01 (#1087) §V: deposits #856/#869 both at 0365, #913's unpadded 391 against #901's 0391. Hex assignment belongs to `mint_deposit.py` alone; AXN derivation belongs to `scripts/axn_lib.py` alone. Do not compute either by hand.
 
+## KNOWN PRESENTATION ISSUE — ATTACHMENT PLACEMENT (noted 2026-08-24, deposit #1540)
+
+The mint composes repo-hosted text attachments as inline ingests at the TOP of the canonical file, before the article body, so the record page's Full Text opens with the attachment rather than the work. The desired presentation: article first, attachments after the body — ideally rendered as clickable download entries below Full Text rather than inline. Two constraints on any fix: (1) for already-minted deposits the ingest occupies the AXN derivation window (content[:5000]), so canonical files must NOT be reordered post-mint — the fix for existing records belongs in the renderer (`wire_deposit.regenerate_static_page`), not the bytes; (2) for future mints, `mint_deposit.py` may compose ingests after the body, which changes only new derivations. Until either lands, depositors should expect inline ingests to precede the article and may prefer citing attachment URLs without repo-hosting text files they do not want ingested inline. Separately, for the record: the wrapped prose found in #1540's SPXI kernel was NOT a pipeline defect — it entered in thread-side composition and was hand-repaired per Rule Zero (kernel joined to one logical line, whitespace-only change, AXN window byte-identical, registry hash updated); `unwrap_deposit.py` correctly refused the block as indented structure both before and after, which is the conservatism working as designed.
+
 ## THE DEPOSIT COMPLETENESS GATE (deposit-completeness/v1)
 
 The capability register guards what the ARCHIVE can do; this gate guards what a
