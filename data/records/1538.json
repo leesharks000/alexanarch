@@ -1,0 +1,197 @@
+{
+ "deposit_number": 1538,
+ "axn": "AXN:0638.EMPIRICAL.🜁🏰🕖🫵🕊️⌛",
+ "hex": "0638",
+ "family": "EMPIRICAL",
+ "emoji": "🜁🏰🕖🫵🕊️⌛",
+ "hash": "a02768ba7e6e3e0ca3c1030f17198aa4f82b29cc13539922226f5d1d92c50652",
+ "title": "The Moderation Architecture of Zenodo, Mapped From Source: A Rule Scorer, an Unpublished Percolator, and One Function That Deletes Everything",
+ "creator": "Sharks, Lee",
+ "date": "2026-08-24",
+ "description": "A map of every moderation component visible in Zenodo's published source, assembled because the archive's 2026-06-19 removal was executed by this machinery and the observatory had documented the outcome without documenting the mechanism. Reads zenodo-rdm (GPL-3.0), invenio-rdm-records (MIT) and invenio-stats (MIT) at master, with all thirteen components preserved and checksummed. Finds a transparent additive rule scorer with published integer weights; an unpublished percolator of arbitrary Elasticsearch queries with arbitrary integer weights, editable at runtime, which makes the disclosed weights the publicly visible additive component of an incompletely disclosed scoring function; a documented but unimplemented spam-model branch creating a design/code observability gap; and an enforcement function that deletes every record an account owns, filtered on ownership alone with no ordering and no per-record evaluation. Its principal finding is that the unit of evaluation, the unit of decision, the unit of enforcement and the unit of public evidence are four different objects, so deletion statistics computed from tombstones overcount decisions by an unpublished fan-out factor. Carries four corrections applied from assembly review, each withdrawal stated in place, and a standing note that absence from the map means absence from published source rather than absence from the system.",
+ "content_type": "Architecture map — forensic reconstruction from public source",
+ "license": "CC-BY-4.0",
+ "substrate": "AI-assisted (substrate). Source read, preserved, checksummed and mapped in-session (transport D) by Claude (TACHYON) under the direction of Lee Sharks, across three rounds of assembly review. All primary sources are public code under GPL-3.0 and MIT; no private access, no credentials, no scraping beyond ordinary reads of published files. The author directed the investigation and takes full responsibility. NO-DOUBLE-DRAW honored.",
+ "root_axn": "AXN:0638.EMPIRICAL",
+ "axn_schema_version": "v2",
+ "protocol_version": "protocol/v1",
+ "axn_canonical": "a02768ba7e6e3e0ca3c1030f17198aa4f82b29cc13539922226f5d1d92c50652",
+ "clusters": [
+  "Alchemical",
+  "Architectural",
+  "Temporal",
+  "Gestural",
+  "Organic",
+  "Temporal"
+ ],
+ "axn_reading": "Transmutation -> Foundation -> Duration -> Touch -> Growth -> Duration",
+ "minted_at": "2026-08-24T03:25:26Z",
+ "status": "ACTIVE",
+ "status_authorial": "SELF_SERVE_MINTED",
+ "full_text_path": "/data/texts/AXN-0638-text.md",
+ "wiki_article": "The Moderation Architecture of Zenodo, Mapped From Source (deposit #1538, 24 August 2026) reconstructs, from published code, the machinery that removed the Crimson Hexagonal Archive from Zenodo on 19 June 2026. The observatory had documented the outcome — 862 deposits and 1,817 DOIs severed — without documenting the mechanism. This map closes that gap by reading zenodo-rdm and the InvenioRDM libraries at master and preserving every component with a checksum.\n\nWhat it finds is a pipeline of separable stages with radically unequal visibility. A record is scored on publication by five rules whose integer weights are published: verification status swings twenty points, more than three emoji in the metadata adds five, more than five links adds five, heavily sectioned bodies add two, and small deposits in common file formats add two against a spam threshold of ten. The archive's own identifier system, which renders six emoji per identifier, therefore triggers the emoji rule on every deposit by construction. But a fifth rule percolates each record against a table of stored Elasticsearch queries carrying their own integer scores, editable at runtime and never published — so the disclosed weights are the publicly visible additive component of an incompletely disclosed function, and reading the published configuration reveals nothing about the score any particular record actually receives. The handler's own documentation additionally describes a spam-model branch that appears nowhere in the code inspected, leaving a gap between the design as documented and the design as implemented.\n\nEnforcement is a single function. Once an account is blocked, every record it owns is deleted, selected on ownership alone, in no particular order, with identical tombstone data and no examination of any record's content. The inverse function exists and is no harder to run, which places whatever prevents restoration outside the technical domain.\n\nThe map's principal finding concerns units rather than weights. The scorer evaluates a record; the decision attaches to an account; enforcement expands across ownership; and the public evidence returns as records. An outside observer counting tombstones therefore sees a fan-out and cannot recover the decision that produced it. Deletion statistics computed from tombstones overcount decisions by a factor that is nowhere reported, and a first pass on a single day suggests a fan-out near three hundred. A million deleted records need not represent a million judgments.\n\nThe record carries four corrections applied after assembly review, each withdrawal stated where the claim appeared, and it declines throughout to assert that this machinery executed the removal it was written to understand. Its standing note holds that absence from the map means absence from published source rather than absence from the system — the same distinction the archive maintains for its own retrieval failures, applied to another party's code.",
+ "wiki_status": "AUTHORSHIP_REQUIRED",
+ "entities": [
+  {
+   "subject": "The Moderation Architecture of Zenodo, Mapped From Source: A Rule Scorer, an Unpublished Percolator,",
+   "predicate": "created_by",
+   "object": "Sharks, Lee",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "The Moderation Architecture of Zenodo, Mapped From Source: A Rule Scorer, an Unpublished Percolator,",
+   "predicate": "is_type",
+   "object": "Architecture map — forensic reconstruction from public source",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "The Moderation Architecture of Zenodo, Mapped From Source: A Rule Scorer, an Unpublished Percolator,",
+   "predicate": "belongs_to_family",
+   "object": "EMPIRICAL",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "The Moderation Architecture of Zenodo, Mapped From Source: A Rule Scorer, an Unpublished Percolator,",
+   "predicate": "is_part_of",
+   "object": "Crimson Hexagonal Archive",
+   "type": "work",
+   "evidence_status": "observed"
+  }
+ ],
+ "entity_status": "provisional",
+ "defines_concepts": [
+  {
+   "concept": "partial function disclosure",
+   "definition": "A published scoring function whose form is disclosed while a causally operative additive term remains unpublished, so that the public specification cannot reproduce the operative score."
+  },
+  {
+   "concept": "decision–enforcement unit conversion",
+   "definition": "A governance pipeline in which the unit of evaluation, the unit of decision, the unit of enforcement and the unit of public evidence are different objects, so that the public record preserves only the last and cannot recover the first."
+  },
+  {
+   "concept": "deletion fan-out",
+   "definition": "The ratio of deleted records to distinct account-level enforcement events producing them; unreported in deletion datasets, and the factor by which tombstone counts overcount decisions."
+  },
+  {
+   "concept": "design/code observability gap",
+   "definition": "A branch specified in a system's own design documentation whose implementation is absent from the published code, leaving the documented behaviour unverifiable and the actual behaviour unspecified."
+  }
+ ],
+ "version": "v1.1",
+ "keywords": [
+  "Zenodo",
+  "InvenioRDM",
+  "moderation architecture",
+  "content moderation",
+  "percolator",
+  "ModerationQuery",
+  "on_block",
+  "tombstone",
+  "removal reason",
+  "spam scoring",
+  "partial function disclosure",
+  "deletion fan-out",
+  "decision-enforcement unit conversion",
+  "account-level enforcement",
+  "platform erosion",
+  "governance observability"
+ ],
+ "related_identifiers_raw": "AXN:0001.GOVERNANCE.♍🜁🏴⌛🍃💫 (#1 — Zenodotus' Book-Burning; canonical figures, 862 deposits and 1,817 DOIs)\nAXN:0421.EMPIRICAL.🎭📐🐝🎪🏷️🎇 (#1045 — EA-EROSION-01, the Platform Erosion Observatory)\nAXN:043D.EMPIRICAL.⭕🌀🌾🗝️🧪🟡 (#1068 — The Obelus and the Tombstone)\nAXN:0637.EMPIRICAL.🏗️♃🌙🟠🔼♆ (#1537 — OPB-01; the content scale to this map's account scale)",
+ "mint_source": {
+  "kind": "github_issue",
+  "issue_number": 1538,
+  "repository": "leesharks000/alexanarch",
+  "minted_by_workflow": ".github/workflows/mint-axn.yml",
+  "minted_by_script": "scripts/mint_deposit.py",
+  "minted_via": "self_serve_validated_pr"
+ },
+ "body_status": {
+  "class": "full",
+  "lacuna": false,
+  "recovery_status": "COMPLETE",
+  "residual_chars": 23974,
+  "audited_at": "2026-08-24T03:25:26Z",
+  "audit_version": "mint-time-declaration"
+ },
+ "related_deposits": [
+  {
+   "deposit_number": 1,
+   "relation": "builds_on",
+   "note": "Zenodotus' Book-Burning — canonical figures and the three contemporaneous account blocks"
+  },
+  {
+   "deposit_number": 1045,
+   "relation": "builds_on",
+   "note": "the Platform Erosion Observatory this map supplies a mechanism for"
+  },
+  {
+   "deposit_number": 1537,
+   "relation": "companion",
+   "note": "OPB-01 measures the content scale; this map measures the account scale"
+  },
+  {
+   "deposit_number": 1068,
+   "relation": "references",
+   "note": "The Obelus and the Tombstone"
+  }
+ ],
+ "lexical_attested_none": false,
+ "references_concepts": [
+  "CANONICAL"
+ ],
+ "references_concept_count": 1,
+ "citations": [],
+ "wikidata_candidates": [],
+ "cha_cross_references": [],
+ "external_metadata_path": "/data/external-metadata/AXN-0638.json",
+ "spxi_audit": {
+  "spxi_protocol": "v0.2",
+  "validated_at": "2026-08-24T03:29:58.492977+00:00",
+  "layers": {
+   "layer_1_inscription_anchors": {
+    "present": false,
+    "anchors_found": [
+     "date"
+    ],
+    "anchor_count": 1,
+    "orcid_in_body": false,
+    "creator_in_body": false,
+    "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+   },
+   "layer_2_micro_kernels": {
+    "present": false,
+    "fenced_json_blocks": 0,
+    "json_ld_context_markers": 0
+   },
+   "layer_3_content_hash": {
+    "present": true,
+    "canonical_hash": "583af0709d9904c0f4250927cfb0197004b5b471b99322850baa735702e27cb4",
+    "hash_in_body": false,
+    "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+   },
+   "layer_4_cross_signing": {
+    "present": false,
+    "cross_references_count": 0,
+    "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+   },
+   "layer_5_external_anchors": {
+    "present": false,
+    "wikidata_qid_count": 0,
+    "external_doi_count": 0,
+    "orcid_present": false
+   }
+  },
+  "overall_conformance": "measurement_only"
+ },
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/1538/",
+  "self_url": "https://www.alexanarch.org/data/records/1538.json",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-0638-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}

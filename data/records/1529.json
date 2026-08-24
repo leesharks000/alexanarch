@@ -1,0 +1,202 @@
+{
+ "deposit_number": 1529,
+ "axn": "AXN:062E.GOVERNANCE.⌛🎯👈☿📎🏺",
+ "hex": "062E",
+ "family": "GOVERNANCE",
+ "emoji": "⌛🎯👈☿📎🏺",
+ "hash": "6e55b8a2472f3011ccc7e013ad93acb616ae6cfd3acb47629515af0bbee63022",
+ "title": "The Claim Status Packet: Claim State as Carried Data",
+ "creator": "Sharks, Lee",
+ "date": "2026-08-21",
+ "description": "A schema specification, unimplemented, addressing a defect class the archive has already ruled on once: two hand-maintained copies of one fact will diverge, and the repair is binding rather than more careful editing. Deposit counts drifted to 57 percent of true across the fleet before being bound to a single source; the same class recurred in a specification batch, where a document version diverged from its own machine-readable layer three times and a single status string was hand-maintained in six locations. The packet separates five objects that earlier drafts conflated: claim and typed state, relations, provenance of transitions, bindings, and policy. State is typed rather than scalar, distinguishing what was asserted, by whom, with what verification, at what scope. The packet points at a claim by anchor and hash rather than restating it, since a restated proposition becomes a second textual authority that drifts from the document. Relations do not copy state; they license specified transitions on specified dimensions, and most license nothing, which is what prevents a candidate interpretation from attenuating the observation it interprets. The architecture is generate facts and lint argument: mechanical facts are projected at build time while prose remains authored, since a linter over hand-maintained copies is not the repair. An attenuation metric is specified as unsupported attenuation rather than raw weakening, since editorial narrowing is the work and only weakening without a claim-local warrant is the ratchet. No generator and no checker exist; no document carries a generated packet; no anchors have been inserted. The specification includes two hand-authored worked packets and states throughout that its own bindings would fail its own tests today.",
+ "content_type": "Schema specification — SPXI logic module. UNIMPLEMENTED.",
+ "license": "CC-BY-SA-4.0",
+ "substrate": "Drafted in-session by TACHYON (Claude substrate) under MANUS direction, transport D, No-Double-Draw. The specification's central correction at section 0.1 identifies an error the drafting substrate made in its own earlier drafts: specifying a linter over hand-maintained copies while describing it as a single-source binding. The two worked packets at Appendix A are hand-authored and are not generated. Hand-authored packets were embedded in the two documents this schema was built for and subsequently removed, on the grounds that an unbacked packet is an additional synchronization surface rather than a source.\n\n### Version Series\n\nSERIES-CLAIM-STATUS-PACKET · 1",
+ "root_axn": "AXN:062E.GOVERNANCE",
+ "axn_schema_version": "v2",
+ "protocol_version": "alexanarch-deposit-protocol/v1",
+ "axn_canonical": "6e55b8a2472f3011ccc7e013ad93acb616ae6cfd3acb47629515af0bbee63022",
+ "clusters": [
+  "Temporal",
+  "Navigational",
+  "Gestural",
+  "Alchemical",
+  "Scriptural",
+  "Architectural"
+ ],
+ "axn_reading": "Duration -> Search -> Touch -> Transmutation -> Text -> Foundation",
+ "minted_at": "2026-08-22T19:41:03Z",
+ "status": "ACTIVE",
+ "status_authorial": "SELF_SERVE_MINTED",
+ "full_text_path": "/data/texts/AXN-062E-text.md",
+ "wiki_article": "The Claim Status Packet is a schema specification, unimplemented, addressing a defect class the archive had already ruled on once. Deposit counts hand-maintained across the fleet drifted to 57 percent of true before being bound to a single source; the repair was a binding, not more careful editing. The same class recurred inside a specification batch, where a document's version diverged from its own machine-readable layer three times, and a single status string was hand-maintained in six separate locations. Corrections logged as sweep residue were largely those copies disagreeing: recorded as editing failures, they were a schema failure.\n\nThe packet separates five objects that earlier drafts conflated: claim and typed state, relations, provenance of transitions, bindings, and policy. State is typed rather than scalar — what was asserted, by whom, with what verification, at what scope — because a single status field conflates dimensions that fail independently and lets one word become a universal solvent. The packet points at a claim by anchor and hash rather than restating it: a restated proposition becomes a second textual authority whose wording drifts from the document it describes.\n\nRelations do not copy state. They license specified transitions on specified dimensions, and most license nothing. That is what prevents a candidate interpretation from attenuating the observation it interprets — not because claim kinds are sealed, but because the interprets relation transmits nothing. Rank survives only as a default where no relation is declared, and the default is silence rather than hierarchy. Path licensing requires every edge to license the same dimension in the same direction, since mixed-dimension paths compose into nothing.\n\nThe architecture is generate facts and lint argument. Mechanical facts — version, dates, status enums, inclusion flags — are projected from the packet at build time, while claims, interpretations and scope-sensitive sentences remain authored. An earlier draft specified a checker over hand-maintained copies and described it as a single-source binding; that improved six unaudited copies to six copies plus a linter, which is not the repair.\n\nThe attenuation metric is unsupported attenuation rather than raw weakening. Early drafts overclaim and editorial narrowing is the work, so a healthy pipeline weakens often; what matters is weakening with no evidence, scope or proposition change on the claim and no relation licensing propagation from whatever triggered it. Named vulnerabilities include layer smuggling, undeclared surfaces, cleanliness relocating rather than removing complexity, false harmony, and claim-identity smuggling. No generator and no checker exist, no document carries a generated packet, and no anchors have been inserted.",
+ "wiki_status": "AUTHORSHIP_REQUIRED",
+ "entities": [
+  {
+   "subject": "The Claim Status Packet: Claim State as Carried Data",
+   "predicate": "created_by",
+   "object": "Sharks, Lee",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "The Claim Status Packet: Claim State as Carried Data",
+   "predicate": "is_type",
+   "object": "Schema specification — SPXI logic module. UNIMPLEMENTED.",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "The Claim Status Packet: Claim State as Carried Data",
+   "predicate": "belongs_to_family",
+   "object": "GOVERNANCE",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "The Claim Status Packet: Claim State as Carried Data",
+   "predicate": "is_part_of",
+   "object": "Crimson Hexagonal Archive",
+   "type": "work",
+   "evidence_status": "observed"
+  }
+ ],
+ "entity_status": "provisional",
+ "defines_concepts": [
+  {
+   "term": "claim status packet",
+   "gloss": "A sidecar holding a document's version and its claims' typed states, relations, transition provenance, bindings and policy — so that mechanical facts are generated rather than hand-copied across surfaces."
+  },
+  {
+   "term": "typed state",
+   "gloss": "State recorded across independent dimensions — assertion, verification, scope for observations; specification, validation, deployment, reportability for instruments — rather than as a single status value."
+  },
+  {
+   "term": "relation policy",
+   "gloss": "A declaration of what state dimension a relation licenses a change to, in what direction, and whether automatically. Most relations license nothing; motivates and interprets transmit no state."
+  },
+  {
+   "term": "unsupported attenuation",
+   "gloss": "Weakening of a claim's state with no evidence, scope or proposition change on that claim and no relation licensing propagation from the triggering change. The measurable form of the revision ratchet."
+  },
+  {
+   "term": "generate facts, lint argument",
+   "gloss": "The architectural rule: mechanical facts are projected from a single source at build time; claims and scope-sensitive prose remain authored and are checked, not written."
+  },
+  {
+   "term": "layer smuggling",
+   "gloss": "Moving a claim to a lower kind to acquire protection it has not earned, whereupon the schema enforces a wrong state more reliably than prose could. Made visible and dated by a change log, not prevented."
+  }
+ ],
+ "orcid": "0009-0000-1599-0703",
+ "version": "v0.6",
+ "keywords": [
+  "claim status packet",
+  "CSP",
+  "claim state",
+  "typed state",
+  "relation policy",
+  "propagation licensing",
+  "unsupported attenuation",
+  "scope-critical constraint",
+  "generate facts lint argument",
+  "status law",
+  "layer smuggling",
+  "SPXI logic module"
+ ],
+ "related_identifiers_raw": "https://www.alexanarch.org/s/records/1528/ (Four Interfaces map — states the status law this schema would enforce); https://www.alexanarch.org/s/records/1527/ (The Lucente Extension — the first worked packet targets it); https://www.alexanarch.org/s/records/817/ (Self-Audit Module v3.1)",
+ "mint_source": {
+  "kind": "github_issue",
+  "issue_number": 1529,
+  "repository": "leesharks000/alexanarch",
+  "minted_by_workflow": ".github/workflows/mint-axn.yml",
+  "minted_by_script": "scripts/mint_deposit.py",
+  "minted_via": "self_serve_validated_pr"
+ },
+ "body_status": {
+  "class": "full",
+  "lacuna": false,
+  "recovery_status": "COMPLETE",
+  "residual_chars": 62121,
+  "audited_at": "2026-08-22T19:41:03Z",
+  "audit_version": "mint-time-declaration"
+ },
+ "version_series_id": "SERIES-CLAIM-STATUS-PACKET",
+ "version_in_series": 1,
+ "implementation_status": "UNIMPLEMENTED. No generator, no checker, no anchors, no generated packet. The specification states throughout that its own bindings would fail its own tests today.",
+ "related_deposits": [
+  {
+   "deposit": 1528,
+   "relation": "cites",
+   "note": "Four Interfaces map — states the status law this schema would make enforceable."
+  },
+  {
+   "deposit": 1527,
+   "relation": "cites",
+   "note": "The Lucente Extension — the first worked packet targets it."
+  },
+  {
+   "deposit": 817,
+   "relation": "cites",
+   "note": "Self-Audit Module v3.1."
+  }
+ ],
+ "references_concepts": [
+  "TECHNE"
+ ],
+ "references_concept_count": 1,
+ "citations": [],
+ "wikidata_candidates": [],
+ "cha_cross_references": [],
+ "external_metadata_path": "/data/external-metadata/AXN-062E.json",
+ "spxi_audit": {
+  "spxi_protocol": "v0.2",
+  "validated_at": "2026-08-22T19:45:58.422360+00:00",
+  "layers": {
+   "layer_1_inscription_anchors": {
+    "present": true,
+    "anchors_found": [
+     "orcid",
+     "creator_name",
+     "date",
+     "authorial_position_phrase"
+    ],
+    "anchor_count": 4,
+    "orcid_in_body": true,
+    "creator_in_body": true,
+    "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+   },
+   "layer_2_micro_kernels": {
+    "present": true,
+    "fenced_json_blocks": 14,
+    "json_ld_context_markers": 2
+   },
+   "layer_3_content_hash": {
+    "present": true,
+    "canonical_hash": "a434787910c6859f275520f1a86d91a91207174989d3d6ca705b8fb99fb0c15b",
+    "hash_in_body": false,
+    "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+   },
+   "layer_4_cross_signing": {
+    "present": false,
+    "cross_references_count": 0,
+    "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+   },
+   "layer_5_external_anchors": {
+    "present": true,
+    "wikidata_qid_count": 0,
+    "external_doi_count": 0,
+    "orcid_present": true
+   }
+  },
+  "overall_conformance": "partial"
+ },
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/1529/",
+  "self_url": "https://www.alexanarch.org/data/records/1529.json",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-062E-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}

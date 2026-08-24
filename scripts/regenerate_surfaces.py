@@ -79,6 +79,26 @@ HOMEPAGE_RECENT_N = 12  # must equal the JS slice in index.html
 ALL_SURFACES = ["state", "browse", "feed", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index", "search-index", "search-static", "capture-gallery", "record-api", "dynamic-counts", "semantic-addresses"]
 
 
+def _version_label(version: str) -> tuple:
+    """(label, title_attr) for a version chip.
+
+    VERSION IS A LABEL, NOT A FIELD FOR PROSE — but fourteen deposits carry a
+    sentence in it, one an entire markdown block with a URL. The renderer cannot
+    fix the data and must not be breakable by it: show the token, bound the chip,
+    carry the remainder in title so nothing is hidden, only contained.
+
+    Shared by every surface that draws a chip. The second renderer's comment said
+    it "mirrors browse-card logic" — and it mirrored the defect too, which is what
+    a copy does.
+    """
+    v = ' '.join(str(version or '').split())
+    if not v:
+        return '', ''
+    label = v.split(' ')[0] if len(v) > 24 else v
+    return label, (f' title="{esc_html(v)}"' if label != v else '')
+
+
+
 def _receipt(path, reason: str = "regenerate_surfaces write"):
     """Issue an auto-receipt for a regenerator write. No-op if guard module
     isn't importable (defensive — the script should still work even if the
@@ -212,10 +232,7 @@ def regenerate_browse(reg, dry_run=False):
             # data. Show the version token; carry the remainder in the title
             # attribute so nothing is hidden, only contained. Supersession detail
             # belongs in version_history, which is the archive's own convention.
-            _v = ' '.join(str(version).split())
-            _tok = _v.split(' ')[0]
-            _label = _tok if len(_v) > 24 else _v
-            _full = f' title="{esc_html(_v)}"' if _label != _v else ''
+            _label, _full = _version_label(version)
             version_chip = (f' <span{_full} style="font-family:var(--mono);font-size:.78em;'
                             f'color:var(--teal);font-weight:500;background:#f0f4f8;padding:1px 6px;'
                             f'border-radius:8px;margin-left:4px;white-space:nowrap;max-width:16em;'
@@ -1245,9 +1262,12 @@ def regenerate_homepage_noscript(reg, dry_run=False):
         in_real_series = bool(d.get('version_series_id'))
         version_chip = ''
         if version and (version != 'v1.0' or in_real_series):
-            version_chip = (f' <span style="font-family:monospace;font-size:.8em;color:#0a7c6a;'
+            _label, _full = _version_label(version)
+            version_chip = (f' <span{_full} style="font-family:monospace;font-size:.8em;color:#0a7c6a;'
                             f'background:#f0f4f8;padding:1px 6px;border-radius:8px;margin-left:4px;'
-                            f'font-weight:500">{esc_html(version)}</span>')
+                            f'font-weight:500;white-space:nowrap;max-width:16em;overflow:hidden;'
+                            f'text-overflow:ellipsis;display:inline-block;vertical-align:bottom">'
+                            f'{esc_html(_label)}</span>')
         status_banner = ''
         opacity = '1'
         if status == 'SUPERSEDED' and superseded_by_n:

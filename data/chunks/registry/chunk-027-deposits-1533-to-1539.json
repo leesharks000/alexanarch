@@ -871,7 +871,7 @@
           "definition": "The distinction between operative context a document asserts about itself and context independently resolvable against a third party; only the latter resists counterfeiting."
         }
       ],
-      "version": "v2.0 FROZEN 2026-08-23 (supersedes v1.0, sha256 2c8adbf37c1e5ca03c27aab902ebb47b7e2839cc673d2f7a7d41463bb6272946, retained unaltered)",
+      "version": "v2.0",
       "keywords": [
         "operativity penalty",
         "safety-mediated response behaviour",
@@ -968,7 +968,23 @@
           }
         },
         "overall_conformance": "measurement_only"
-      }
+      },
+      "version_history": [
+        {
+          "version": "v1.0",
+          "hash": "2c8adbf37c1e5ca03c27aab902ebb47b7e2839cc673d2f7a7d41463bb6272946",
+          "status": "SUPERSEDED, retained unaltered",
+          "date": "2026-08-23",
+          "note": "Frozen prematurely: equivalence criteria undefined, and the primary variable carried an inverted sign and could not be computed over the range its primary comparison required. Superseded BEFORE ANY ITEM WAS SCORED, so the post-result rule does not bind and amendment was legitimate."
+        },
+        {
+          "version": "v2.0",
+          "status": "FROZEN",
+          "date": "2026-08-23",
+          "note": "Rebuilt with all review corrections. Two-family architecture; F_att as primary DV; C0 sham arm; §7 parameters bracketed pending instantiation."
+        }
+      ],
+      "version_basis": "frozen protocol, superseded pre-execution"
     },
     {
       "deposit_number": 1538,
@@ -1319,10 +1335,16 @@
       },
       "attachments": [
         {
-          "filename": "197-.2026.07.30.pdf",
+          "filename": "手書き論文197-多層切替による中心秘匿構造2026.07.30.pdf",
           "url": "https://github.com/user-attachments/files/31380123/197-.2026.07.30.pdf",
+          "archive_path": "/data/attachments/AXN-0639/手書き論文197-多層切替による中心秘匿構造2026.07.30.pdf",
           "size": 6938058,
-          "ingested_inline": false,
+          "pages": 11,
+          "sha256": "75ad107e5d634225c972d5a98dd9cbee483dd273d1ecc22689584920956f8602",
+          "md5": "bb05b072411cde54b50e04d6ae070432",
+          "ingested_inline": true,
+          "ingested_at": "2026-08-24",
+          "custody_note": "Bytes recovered from the submitted issue attachment and committed to the archive. The mint did not fetch them; the record previously claimed preservation while holding only a URL. Hash verified against the submitted file before commit.",
           "ingestion_error": null
         }
       ],
@@ -1376,7 +1398,12 @@
         },
         "overall_conformance": "measurement_only"
       },
-      "external_metadata_path": "/data/external-metadata/AXN-0639.json"
+      "external_metadata_path": "/data/external-metadata/AXN-0639.json",
+      "body_status": {
+        "class": "primary-source-facsimile",
+        "note": "The work is a document, not text. Page images are the canonical body; no transcription is made, and none is implied."
+      },
+      "language": "ja"
     }
   ]
 }
