@@ -2,18 +2,18 @@
  "_FLOW": "THE WORK QUEUE — everything the archive has committed to and not yet done, sorted by the KIND OF LABOUR that resolves it. The taxonomy is the point: these three categories are not degrees of urgency, they are different work. Category 1 resolves by waiting and checking — the world does the labour and you observe the result. Category 2 resolves by sustained attention — a protocol exists and must be executed. Category 3 resolves by engineering — something must be built before the question can even be asked.",
  "dataset": "work-queue",
  "version": "v1.0",
- "date": "2026-08-23",
+ "date": "2026-08-24",
  "categories": {
   "1": {
    "name": "Registered predictions from applied theory",
    "resolves_by": "observation on a date",
-   "count": 6,
+   "count": 7,
    "note": "CHEAPEST AND MOST NEGLECTED. Four of the six resolve in September, three of those for under forty API calls, and two are fully automated by scripts already written. A prediction that goes unchecked is not a prediction; it is a note."
   },
   "2": {
    "name": "Experiments with registered hypotheses",
    "resolves_by": "running a frozen protocol",
-   "count": 8,
+   "count": 10,
    "note": "Every one is pre-registered with declared failure conditions. Anyone can run any of them and the result is admissible on the same terms. One — depositing the CT-01 null — is low-cost and overdue: a conducted failure that exists only in outputs."
   },
   "3": {
@@ -250,6 +250,43 @@
    "cost": "medium",
    "category": 3,
    "requires": "reading"
+  },
+  {
+   "category": 2,
+   "id": "S-VISIBLE",
+   "title": "Visible-susceptibility distribution of the deleted corpus",
+   "deposit": null,
+   "requires": "python; the frozen metadata (held)",
+   "cost": "low",
+   "blocker": "None. S_static is computable from frozen metadata with no production access.",
+   "next": "Implement the five published rules over the preserved deleted corpus; report the score distribution.",
+   "stake": "Cannot yield production scores — that is the point. THE GAP BETWEEN THE COMPUTABLE DISTRIBUTION AND THE ACTUAL OUTCOME MEASURES HOW MUCH OF THE DECISION WAS UNDISCLOSED.",
+   "series": "SERIES-MODMAP"
+  },
+  {
+   "category": 2,
+   "id": "F-FANOUT",
+   "title": "Deletion fan-out across the full export",
+   "deposit": null,
+   "requires": "python; the preserved export (held)",
+   "cost": "low",
+   "blocker": "None.",
+   "next": "Cluster blocked-user removals by depositor signature per day across 1.32M rows; count distinct signatures against total rows; report F = N_D / N_A.",
+   "stake": "A million deleted records need not represent a million judgments. First pass on one day gives F≈300. THIS CHANGES THE READING OF THE ENTIRE DELETED-RECORDS DATASET.",
+   "series": "SERIES-MODMAP"
+  },
+  {
+   "category": 1,
+   "id": "P-CONCEPT-DOI-UNHIDE",
+   "title": "Whether the concept-DOI un-hide defect touched any archive DOI",
+   "deposit": null,
+   "requires": "per-DOI state history (NOT held)",
+   "cost": "unknown",
+   "theory": "InvenioRDM PR #2436 reports that a parent PID update after final deletion causes DataCite to treat it as a publish and reverse the hide.",
+   "blocker": "Requires per-DOI visibility history across the affected period, which the archive does not hold. May be unresolvable.",
+   "next": "Determine whether DataCite exposes state history. If not, record as UNRESOLVABLE rather than open.",
+   "stake": "A confound for any DOI-level census taken in the affected window.",
+   "series": "SERIES-MODMAP"
   }
  ],
  "fields": [
@@ -286,5 +323,6 @@
   ],
   "note": "6 of 21 items require NO credentials, NO compute and NO access — only a network connection and, for two of them, a script already written and committed."
  },
- "field_added_2026-08-24": "'requires' — what a reader would need in hand to run the item. Added because the queue's second purpose is that someone else can pick an item up, and 'cost' alone did not say whether that meant a GPU or a curl command. Eleven of twenty-one require nothing but a browser, curl, or python."
+ "field_added_2026-08-24": "'requires' — what a reader would need in hand to run the item. Added because the queue's second purpose is that someone else can pick an item up, and 'cost' alone did not say whether that meant a GPU or a curl command. Eleven of twenty-one require nothing but a browser, curl, or python.",
+ "added_2026-08-24": "Three follow-ons registered from the moderation map: S-VISIBLE and F-FANOUT (both runnable now on data already held, both category 2), and P-CONCEPT-DOI-UNHIDE (category 1, possibly unresolvable and marked as such)."
 }

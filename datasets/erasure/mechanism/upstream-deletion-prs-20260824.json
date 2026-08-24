@@ -1,0 +1,42 @@
+{
+ "_FLOW": "DATED MECHANISM SNAPSHOT — deletion and PID behaviour in InvenioRDM is ACTIVELY CHANGING. Recorded because the observatory measures DOI-level tombstone state, and the code producing that state is in flux. NO CAUSAL CONNECTION is drawn to the archive's removal or to the missing August export.",
+ "captured": "2026-08-24",
+ "repo": "inveniosoftware/invenio-rdm-records",
+ "license": "MIT",
+ "pull_requests": [
+  {
+   "number": 2436,
+   "title": "fix(pids): keep concept DOI hidden after last deletion",
+   "state": "open",
+   "created": "2026-08-20",
+   "updated": "2026-08-21",
+   "head_sha": "5de5a2494a12",
+   "base_sha": "78b139ec7c84",
+   "diff": "+49 / −134 across 2 files",
+   "stated_cause": "Avoid queuing a parent PID metadata update after the final published version is deleted, because DATACITE TREATS THE UPDATE AS A PUBLISH AND REVERSES THE HIDE OPERATION.",
+   "why_it_matters": "On the pre-fix behaviour, deleting the last published version of a record could cause its CONCEPT DOI TO BECOME VISIBLE AGAIN at DataCite after the hide. That is a defect in tombstone state at the identifier layer — the exact layer the Platform Erosion Observatory measures. Any DOI-level census taken across the affected period may reflect this inconsistency rather than a deliberate state.",
+   "bearing_on_the_archive": "The archive's 1,817 severed DOIs include concept DOIs. Whether any were affected is NOT ESTABLISHED and would require per-DOI state history that is not held. Recorded as a confound to check, not a finding.",
+   "ai_disclosure_verbatim": "The PR author discloses: 'I wrote the one-line fix to else: the part that always ran before. But for updating the tests I a) made sure they fail after my change, b) had Codex update them, and c) went through the changed test cases to see that they still make sense.'",
+   "note_on_that_disclosure": "RECORDED WITHOUT IMPUTATION. An InvenioRDM contributor discloses AI assistance in a pull request to the deletion machinery, with the human contribution and the AI contribution separated and the human verification stated. THIS IS NOT HYPOCRISY and should not be read as such: Zenodo's Generative AI Policy governs DEPOSITS as research output, not code contributions, and the disclosure is exemplary in form — it states what the AI did, what the human did, and what the human checked. It is recorded here because it is a documented instance of disclosed AI-assisted work on the very machinery whose sibling policy classified this archive's deposits as 'substantially AI-generated', and because the DISCLOSURE FORM IS BETTER THAN MOST — it is the standard the archive's own substrate-disclosure field aims at."
+  },
+  {
+   "number": 2427,
+   "title": "fix(quota): exclude deleted records from remaining_storage",
+   "state": "open",
+   "created": "2026-08-07",
+   "updated": "2026-08-12",
+   "head_sha": "865886129d2e",
+   "base_sha": "038164240445",
+   "diff": "+219 / −2 across 6 files",
+   "stated_cause": "remaining_storage() counted quota for records with no published versions (only deleted ones); the fix filters those out.",
+   "why_it_matters": "Deleted records were consuming live quota. A second instance of deletion state leaking into an unrelated subsystem."
+  }
+ ],
+ "reading": "TWO OPEN PULL REQUESTS, BOTH FIXING DELETION-STATE LEAKAGE INTO OTHER SUBSYSTEMS — one into DataCite PID visibility, one into storage quota. Deletion in this architecture is not a clean terminal state; it is a state whose consequences propagate incorrectly into adjacent systems and are being repaired piecemeal.",
+ "explicitly_not_claimed": [
+  "Any connection to the archive's 2026-06-19 removal.",
+  "Any connection to the missing August deleted-records export.",
+  "That either defect affected any archive DOI."
+ ],
+ "self_sha256": "68bbebdb93b2a0867b9ba2a8896bc603d4c1faaa9de40e487c54d6f0efbaa60e"
+}

@@ -213,8 +213,76 @@ and the export reports only the third term. **Deletion statistics computed from 
 
 ---
 
+## §8a. Code pointers — every claim above, independently checkable
+
+**All read at `master`, 2026-08-23/24, preserved and checksummed at `datasets/erasure/mechanism/`.**
+
+| claim | repository | path | sha256 of preserved copy |
+|---|---|---|---|
+| scoring rules, five rules | zenodo/zenodo-rdm | `site/zenodo_rdm/moderation/rules.py` | `7bffe59f…` |
+| weights, thresholds, spam extensions | zenodo/zenodo-rdm | `site/zenodo_rdm/moderation/config.py` | `43543776…` |
+| decision table, `_block` / `_moderate` / `_approve` | zenodo/zenodo-rdm | `site/zenodo_rdm/moderation/handlers.py` | `9a717b72…` |
+| percolator index construction | zenodo/zenodo-rdm | `site/zenodo_rdm/moderation/percolator.py` | `381490d9…` |
+| `ModerationQuery`, `LinkDomain` | zenodo/zenodo-rdm | `site/zenodo_rdm/moderation/models.py` | `33af9330…` |
+| `run_moderation_handlers` | zenodo/zenodo-rdm | `site/zenodo_rdm/moderation/tasks.py` | `8f83259c…` |
+| scores wiring | zenodo/zenodo-rdm | `site/zenodo_rdm/moderation/ext.py` | `800b3e17…` |
+| production config, quotas, rate limits, user-facing block message | zenodo/zenodo-rdm | `invenio.cfg` | `974d8f7c…` |
+| `on_block`, `on_restore` | inveniosoftware/invenio-rdm-records | `invenio_rdm_records/requests/user_moderation/actions.py` | `4003287d…` |
+| `get_user_records` | inveniosoftware/invenio-rdm-records | `invenio_rdm_records/requests/user_moderation/utils.py` | `59de03dd…` |
+| `delete_record`, `user_block_cleanup`, `user_restore_cleanup` | inveniosoftware/invenio-rdm-records | `invenio_rdm_records/requests/user_moderation/tasks.py` | `b684553b…` |
+| tombstone fields | inveniosoftware/invenio-rdm-records | `invenio_rdm_records/records/systemfields/tombstone.py` | `2e0d8546…` |
+| robot flagging, double-click window | inveniosoftware/invenio-stats | `invenio_stats/processors.py` | `efdbb168…` |
+
+**Upstream deletion behaviour is in flux and is snapshotted separately** at `upstream-deletion-prs-20260824.json`: two open pull requests fixing deletion-state leakage into other subsystems — **#2436** (a parent PID update after final deletion causes DataCite to treat it as a publish and **reverse the hide**) and **#2427** (deleted records consuming live quota). **No causal connection is drawn** to this archive's removal or to the missing August export.
+
+---
+
+## §8b. Registered follow-ons this map does not perform
+
+**The visible-susceptibility distribution.** `S_static` is computable from frozen metadata without any production access. Running it across the preserved deleted corpus yields the **visible-component score distribution** of the archive — how close each record sat to the threshold on the disclosed rules alone. It cannot yield production scores, precisely because of the undisclosed query set, and that limitation is the point: **the gap between the computable distribution and the actual outcome is a measure of how much of the decision was undisclosed.**
+
+**The deletion fan-out F.** Per §6a: cluster blocked-user removals by depositor signature per day across the full export, count distinct signatures against total rows, report `F = N_D / N_A`. First pass on one day gives ≈300.
+
+**Two disclosure requests, neither made.** The contents of `moderation_queries`, which is the single unbounded gap in this map. And the account's verification status, which is the one boolean deciding whether the automatic path was reachable at all.
+
+---
+
+## §8c. The two scales
+
+**This map and OPB-01 measure the same phenomenon at different scales, and neither is complete alone.**
+
+| | content scale | account scale |
+|---|---|---|
+| **unit** | a request, a deposit | an account and everything it owns |
+| **mechanism** | scoring, hedging, degradation, refusal | `on_block` propagating by ownership |
+| **instrument** | OPB-01 | this map |
+| **does disclosure help?** | testable — OPB-01 Family C | **no: `on_block` reads no content at all** |
+
+**The consequence for OPB-01 is a real limit on its constructive arm.** Family C tests whether inscribing the discriminating coordinates reduces degradation. **SPXI-TLP makes individual deposits legible; it does not protect an account from ownership-based deletion.** A perfectly inscribed, fully attested, provenance-complete deposit is deleted identically to any other once its owner is blocked, because the enforcement path examines no deposit.
+
+> **The operativity penalty, if it exists, operates at two scales simultaneously — and disclosure is a candidate remedy at only one of them.**
+
+That is a finding about the limits of the archive's own constructive programme, and it belongs in the record alongside the programme.
+
+
+---
+
 ## §8. Standing note on method
 
 Everything above is read from public source under GPL-3.0 and MIT, preserved and checksummed at `datasets/erasure/mechanism/`. **Absence from this map means absence from published source, not absence from the system** — the distinction this archive maintains for retrieval failures applies with equal force to its own findings about other people's code.
+
+---
+
+## Colophon
+
+    designator            EA-EROSION-MODMAP-01 v1.1
+    status                DRAFT for deposit — descriptive map, not a pre-registered protocol
+    sources_read_at       master, 2026-08-23/24
+    preserved             datasets/erasure/mechanism/ (13 files, per-file sha256 in MANIFEST.sha256)
+    canonical_figures     862 deposits, 1,817 DOIs — per #1 Zenodotus' Book-Burning v9.1
+    superseded_figures    871 works, 6,596 DOIs (machinemediation registry surface) — not used
+    corrections_applied   4, from assembly review 2026-08-24; each withdrawal stated in place
+    correction_log_url    https://github.com/leesharks000/alexanarch/commits/main/datasets/erasure/mechanism/
+    render_sha256         6eedb0599ae85db0db4ee297b2326a843cc92c134f5c273ddc8f900bb8f23789
 
 ∮ = 1
