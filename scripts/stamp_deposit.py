@@ -54,13 +54,31 @@ def main():
     if not d:
         sys.exit(f"deposit #{args.deposit_number} not in registry")
     hexid = d.get("hex") or ""
-    path = (d.get("full_text_path") or f"/data/texts/AXN-{hexid}-text.md").lstrip("/")
-    canon = (ROOT / path).read_bytes()
-
-    h0 = hashlib.sha256(canon).hexdigest()
-    if d.get("hash") and d["hash"] != h0:
-        sys.exit(f"REFUSING: canonical bytes hash {h0[:12]} != registry hash "
-                 f"{d['hash'][:12]} — repair the divergence before stamping")
+    # Resolve the SEALED CORE by hash. For most deposits full_text_path bytes ==
+    # registry hash. Facsimile deposits (body_status: primary-source-facsimile,
+    # e.g. #1539) deliberately diverge: full_text_path serves the page-image
+    # reader while data/deposits/AXN-{hex}.md preserves the mint bytes the
+    # registry hash anchors. The core is whichever surface hashes to the
+    # registry hash — never a guess.
+    candidates = [(d.get("full_text_path") or f"/data/texts/AXN-{hexid}-text.md").lstrip("/"),
+                  f"data/deposits/AXN-{hexid}.md",
+                  f"data/texts/AXN-{hexid}-text.md"]
+    canon, path, h0 = None, None, None
+    tried = []
+    for p in dict.fromkeys(candidates):
+        fp = ROOT / p
+        if not fp.exists():
+            continue
+        b = fp.read_bytes()
+        h = hashlib.sha256(b).hexdigest()
+        tried.append(f"{p}={h[:12]}")
+        if not d.get("hash") or h == d["hash"]:
+            canon, path, h0 = b, p, h
+            break
+    if canon is None:
+        sys.exit(f"REFUSING: no canonical surface hashes to registry hash "
+                 f"{(d.get('hash') or '?')[:12]} — tried {tried}; repair the "
+                 f"divergence before stamping")
     g0 = axn_glyph_from_hash(h0)
 
     # idempotency: already witnessed?
