@@ -99,6 +99,65 @@ def render_page(page, pitch):
     return "\n".join(out_rows.get(r, "") for r in range(n))
 
 
+
+def render_rotated_page(page):
+    """A page whose text is typeset rotated 90 degrees (chart pages): render
+    the upright remnant (heading, folio) normally, then the rotated field in
+    reading orientation — line coordinate = x0, advance = height - top."""
+    up_words, rot = [], []
+    for c in page.chars:
+        (rot, up_words)[bool(c.get("upright"))].append(c)
+    out = []
+    if up_words:
+        # reuse the normal renderer on the upright chars only
+        class _P:  # minimal shim exposing what render_page uses
+            chars = up_words
+            def extract_words(self, **k):
+                ws, cur = [], None
+                for c in sorted(up_words, key=lambda c: (round(c["top"], 1), c["x0"])):
+                    if cur and abs(c["top"] - cur["top"]) < 2 and c["x0"] - cur["x1"] < 1.2:
+                        cur["text"] += c["text"]; cur["x1"] = c["x1"]
+                    else:
+                        if cur: ws.append(cur)
+                        cur = {"text": c["text"], "x0": c["x0"], "x1": c["x1"],
+                               "top": c["top"], "bottom": c["bottom"]}
+                if cur: ws.append(cur)
+                return ws
+        out.append(render_page(_P(), 13.0))
+    # rotated field: cluster by line coordinate (x0), advance up the page
+    lines = {}
+    for c in rot:
+        t2 = clean(c["text"])
+        if not t2 and c["text"] not in (" ",):
+            continue
+        key = round(c["x0"] / 3) * 3
+        lines.setdefault(key, []).append(c)
+    if lines:
+        out.append("[chart typeset rotated 90°; rendered below in reading orientation]")
+        H = page.height
+        rows = []
+        for key in sorted(lines):
+            cs = sorted(lines[key], key=lambda c: -c["top"])
+            buf, prev = "", None
+            for c in cs:
+                ch = clean(c["text"]) or (" " if c["text"] == " " else "")
+                adv = H - c["bottom"]
+                if prev is None:
+                    buf = " " * max(0, round((adv - 36) / CHAR_W)) + ch
+                else:
+                    gap = prev - adv - (c["bottom"] - c["top"])
+                    if gap > 1.9 * CHAR_W:
+                        buf += " " * max(2, round(gap / CHAR_W)) + ch
+                    elif gap > 1.2:
+                        buf += " " + ch
+                    else:
+                        buf += ch
+                prev = adv
+            rows.append(buf.rstrip())
+        out.append("\n".join(r for r in rows))
+    return "\n\n".join(x for x in out if x)
+
+
 def main():
     pdf = pdfplumber.open(SRC)
     # global body pitch: single-line steps only (9-17pt band), document-wide
@@ -109,7 +168,11 @@ def main():
     pitch = statistics.median(gaps) if gaps else 13.0
     pages = []
     for i, page in enumerate(pdf.pages, 1):
-        body = render_page(page, pitch)
+        n_rot = sum(1 for c in page.chars if not c.get("upright"))
+        if page.chars and n_rot > len(page.chars) / 2:
+            body = render_rotated_page(page)
+        else:
+            body = render_page(page, pitch)
         pages.append(f"· · ·  page {i}  · · ·\n\n{body}".rstrip())
     header = """PEARL AND OTHER POEMS — machine-facing text at whitespace fidelity
 Lee Sharks · New Human Press · 2014 · ISBN 978-0692313077
