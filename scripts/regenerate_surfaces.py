@@ -212,7 +212,19 @@ def regenerate_browse(reg, dry_run=False):
     # list stays in the HTML for crawlers and no-JS readers; the widget only hides
     # non-matching rows and routes onward to full-text search.
     from filter_widget import filter_widget
+    # Series collapse (MANUS ruling 2026-08-25): confirmed-superseded records
+    # render under their head, not in the main flow. Requires BOTH the explicit
+    # pointer and status SUPERSEDED — heuristics never collapse. The fold is
+    # visible as a count; nothing leaves the registry or loses its page.
+    _heads = {}
+    for _d in sorted_deps:
+        _p = _d.get("superseded_by_deposit_number")
+        if _p and _d.get("status") == "SUPERSEDED":
+            _heads.setdefault(_p, []).append(_d)
+    _collapsed_total = sum(len(v) for v in _heads.values())
     parts.append(filter_widget('a[href^="/s/records/"]', 'deposits', total))
+    if _collapsed_total:
+        parts.append(f'<div style="font-family:var(--mono,monospace);font-size:.72em;color:#6b7280;margin:.3em 0 .8em">{total} deposits · {_collapsed_total} earlier versions shown under their series heads · the fold is on the record</div>')
     for d in sorted_deps:
         n = d.get("deposit_number") or d.get("issue_number") or 0
         if n == 0:
@@ -222,6 +234,8 @@ def regenerate_browse(reg, dry_run=False):
         status = d.get("status", "ACTIVE")
         superseded_by_n = d.get("superseded_by_deposit_number")
         in_real_series = bool(d.get("version_series_id"))
+        if superseded_by_n and status == "SUPERSEDED" and superseded_by_n in {h for h in _heads}:
+            continue  # collapsed under its series head; listed there
         version_chip = ''
         if version and (version != 'v1.0' or in_real_series):
             # VERSION IS A LABEL, NOT A FIELD FOR PROSE. Fourteen deposits carry a
@@ -278,6 +292,11 @@ def regenerate_browse(reg, dry_run=False):
             status_badge=status_badge,
             card_opacity=card_opacity,
         ))
+        if n in _heads:
+            _links = " · ".join(
+                f'<a href="/s/records/{a.get("deposit_number")}/" style="color:#6b7280">#{a.get("deposit_number")} {esc_html(str(a.get("version") or ""))}</a>'
+                for a in sorted(_heads[n], key=lambda x: x.get("deposit_number") or 0))
+            parts.append(f'<div style="font-family:var(--mono,monospace);font-size:.7em;color:#6b7280;margin:-4px 0 10px;padding-left:48px">↳ earlier versions: {_links}</div>')
     parts.append(BROWSE_FOOTER.format(total=total))
 
     out = "".join(parts)
