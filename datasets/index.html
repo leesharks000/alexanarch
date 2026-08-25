@@ -109,7 +109,7 @@ read the weak ones first.</div>
 <div class="ds">
   <div class="ds-head">
     <span class="ds-name">data/registry.json</span>
-    <span class="ds-meta">23.4 MB &middot; <strong id="ct-deposits" data-count="registry.json:total_deposits">1,541</strong> deposits</span>
+    <span class="ds-meta">23.4 MB &middot; <strong id="ct-deposits" data-count="registry.json:total_deposits">1,542</strong> deposits</span>
   </div>
   <div class="ds-desc">The canonical deposit registry. Each entry: bibliographic metadata, canonical v2 AXN, content hash, full-text path, <code>entities[]</code> (subject/predicate/object/type/evidence_status triples &mdash; the graph's source), <code>wiki_article</code>, Phase C <code>references_concepts[]</code> + <code>references_concept_count</code>, legacy AXN aliases, and <code>glyphic_canary</code>.</div>
   <div class="ds-row"><strong>Schema:</strong> <a href="/api/schemas/deposit-entry.schema.json">deposit-entry.schema.json</a></div>
@@ -178,10 +178,10 @@ read the weak ones first.</div>
 <div class="ds">
   <div class="ds-head">
     <span class="ds-name">data/semantic-addresses.json</span>
-    <span class="ds-meta">1.28 MB &middot; <strong><span data-count="semantic-addresses.json:total_addresses">2,138</span></strong> addresses</span>
+    <span class="ds-meta">1.28 MB &middot; <strong><span data-count="semantic-addresses.json:total_addresses">2,153</span></strong> addresses</span>
   </div>
   <div class="ds-desc">Query addresses &mdash; canonical queries posed to the composition layer (AI Overview, Google Search) with their observation status. <strong>Conceptually a field-set on lexical entities</strong>: 100% of the 348 unique <code>refers_to</code> targets exact-match into entity-index. Each address: canonical_query, is_quoted, refers_to[], type, battery_membership[], sources[], observations[], observation_class.</div>
-  <div class="ds-row"><strong>Class counts:</strong> subjunctive <span data-count="semantic-addresses.json:class_counts.subjunctive">1,744</span> &middot; observed <span data-count="semantic-addresses.json:class_counts.observed_address">373</span> &middot; verified-non <span data-count="semantic-addresses.json:class_counts.verified_non_address">21</span> &middot; unrated <span data-count="semantic-addresses.json:class_counts.unrated">83</span></div>
+  <div class="ds-row"><strong>Class counts:</strong> subjunctive <span data-count="semantic-addresses.json:class_counts.subjunctive">1,744</span> &middot; observed <span data-count="semantic-addresses.json:class_counts.observed_address">388</span> &middot; verified-non <span data-count="semantic-addresses.json:class_counts.verified_non_address">21</span> &middot; unrated <span data-count="semantic-addresses.json:class_counts.unrated">83</span></div>
   <div class="ds-row"><strong>Reconciled with:</strong> data/EA-WG-CAPTURES-01-v8.11.json (observations[] entries are capture references)</div>
   <div class="ds-row"><strong>Consumed by:</strong> <em style="color:var(--dim)">no dedicated UI surface yet &mdash; planned at /addresses/</em></div>
   <div class="ds-actions">
@@ -252,7 +252,7 @@ fetch('/data/resolver-status.json',{cache:'no-cache'}).then(function(r){return r
 <div class="ds">
   <div class="ds-head">
     <span class="ds-name">data/browse-index.json</span>
-    <span class="ds-meta">443 KB &middot; <span data-count="registry.json:total_deposits">1,541</span> entries</span>
+    <span class="ds-meta">443 KB &middot; <span data-count="registry.json:total_deposits">1,542</span> entries</span>
   </div>
   <div class="ds-desc">Compact deposit list (no full-text bodies). Used by the static no-JS browse page.</div>
   <div class="ds-actions"><a href="/data/browse-index.json">Raw JSON</a></div>
@@ -279,7 +279,7 @@ fetch('/data/resolver-status.json',{cache:'no-cache'}).then(function(r){return r
 <div class="ds">
   <div class="ds-head">
     <span class="ds-name">/SHA256SUMS.txt</span>
-    <span class="ds-meta">160 KB &middot; <span data-count="registry.json:total_deposits">1,541</span> lines</span>
+    <span class="ds-meta">160 KB &middot; <span data-count="registry.json:total_deposits">1,542</span> lines</span>
   </div>
   <div class="ds-desc">Content-addressable checksums for every deposit. Lets any mirror verify byte-exactness of the corpus.</div>
   <div class="ds-actions"><a href="/SHA256SUMS.txt">View</a></div>
@@ -546,7 +546,7 @@ fetch('/data/resolver-status.json',{cache:'no-cache'}).then(function(r){return r
 <div class="ds">
   <div class="ds-head">
     <span class="ds-name">data/texts/AXN-*-text.md</span>
-    <span class="ds-meta">~25.5 MB total &middot; <span data-count="registry.json:total_deposits">1,541</span> files</span>
+    <span class="ds-meta">~25.5 MB total &middot; <span data-count="registry.json:total_deposits">1,542</span> files</span>
   </div>
   <div class="ds-desc">One Markdown file per deposit. The full text body. Source for citation extraction, concept backlinks, and wiki article generation.</div>
   <div class="ds-actions">
