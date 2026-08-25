@@ -34,6 +34,46 @@ def clean(t):
     return t.strip()
 
 
+# Placed images: markers are emitted at each image's page position, pointing at
+# the extracted crops in images/. Descriptions marked (perceived) were verified
+# by viewing the crop in-session; others carry geometry only.
+IMG_DESC = {
+    "page-003-1.png": "New Human Press device (not individually perceived)",
+    "page-020-1.png": "(perceived) portrait photograph of young Ezra Pound (Coburn) — the Lee Sharks author photo",
+    "page-034-1.png": "(perceived) small hand-drawn line sketch of a bearded face",
+    "page-035-1.png": "small line-sketch face (as p.34)",
+    "page-036-1.png": "small line-sketch face (as p.34)",
+    "page-036-2.png": "small line-sketch face (as p.34)",
+    "page-065-1.png": "(perceived) photograph of Allen Ginsberg in the Uncle Sam top hat",
+    "page-066-1.png": "Ginsberg icon (as p.65)",
+    "page-077-1.png": "(perceived) KNOT-HINGE: full-page woven text-column image — a phrase-set braided through hinge transforms (letter mirror, word reversal, phonetic resegmentation): 'words fail me and I' / 'I and me fail words' / 'seceip ni trapa kaerb' / 'looms in us frag-men shove land wedge' — the section's title poem, existing only as image",
+    "page-090-1.png": "(perceived) portrait photograph of Walt Whitman",
+    "page-092-1.png": "(perceived) portrait photograph of Walt Whitman (hat portrait)",
+    "page-096-1.png": "(perceived) portrait photograph of Walt Whitman",
+    "page-084-1.png": "(perceived) young-Pound portrait as chat avatar — 'the repeated icon of my face'",
+}
+for _p in (81, 82, 83):
+    for _k in (1, 2, 3):
+        IMG_DESC.setdefault(f"page-{_p:03d}-{_k}.png", "young-Pound chat avatar (as p.84)")
+for _p in (87, 88, 93, 94):
+    IMG_DESC.setdefault(f"page-{_p:03d}-1.png", "Whitman portrait (as p.90)")
+for _n in ("page-003-2.png", "page-029-1.png"):
+    IMG_DESC.setdefault(_n, "horizontal title rule")
+
+
+def image_markers(page, i, pitch):
+    out = []
+    for k, im in enumerate(page.images, 1):
+        w, h = im["x1"] - im["x0"], im["bottom"] - im["top"]
+        if w < 4 or h < 4:
+            continue
+        name = f"page-{i:03d}-{k}.png"
+        row = max(0, round((im["top"] - TOP_TRIM) / pitch))
+        desc = IMG_DESC.get(name, "")
+        out.append((row, f"[image · images/{name} · {round(w)}×{round(h)}pt" + (f" · {desc}" if desc else "") + "]"))
+    return out
+
+
 def render_page(page, pitch):
     words = []
     for w in page.extract_words(use_text_flow=False, keep_blank_chars=False):
@@ -173,6 +213,12 @@ def main():
             body = render_rotated_page(page)
         else:
             body = render_page(page, pitch)
+        marks = image_markers(page, i, pitch)
+        if marks:
+            rows = body.split("\n") if body else []
+            for row, text in sorted(marks, reverse=True):
+                rows.insert(min(row, len(rows)), text)
+            body = "\n".join(rows)
         pages.append(f"· · ·  page {i}  · · ·\n\n{body}".rstrip())
     header = """PEARL AND OTHER POEMS — machine-facing text at whitespace fidelity
 Lee Sharks · New Human Press · 2014 · ISBN 978-0692313077
@@ -181,7 +227,10 @@ The PDF is the artwork; this file is the score, rendered from per-word PDF
 geometry onto a character grid (scripts/render_pearl_machine_text.py), so that
 lineation, indentation, and the vertical field of each page survive extraction.
 Pages are delimited by "· · ·  page N  · · ·"; blank rows are the book's own
-whitespace, preserved at line resolution. ∮ = 1
+whitespace, preserved at line resolution. Placed images are marked inline as
+[image · images/<file> · geometry · description] and extracted as page crops to
+the images/ directory beside this file; descriptions tagged (perceived) were
+verified by viewing in-session. ∮ = 1
 
 """
     OUT.write_text(header + "\n\n\n".join(pages) + "\n")
