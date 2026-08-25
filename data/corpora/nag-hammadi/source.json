@@ -1,0 +1,35 @@
+{
+ "seat": "EA-CORPORA-02/15",
+ "corpus": "nag-hammadi",
+ "title": "The Nag Hammadi Library, Complete Coptic — Marcion Transcription (Konvicka): FIRST GPL SEAT",
+ "edition": "Milan Konvicka, Marcion project: complete Coptic (Sahidic/Lycopolitan) transcription of the Nag Hammadi Library, distributed as NagHammadi.msql.bz2 (SourceForge, marcion/1.8/texts). 59 tractates, codices I-XIII, 34,623 lines. Supersedes the sparse holdings of EA-CORPORA-01/15 (Thomas + fragments) at library scale; 01/15 remains seated as the prior witness layer.",
+ "origin": {
+  "item": "sourceforge.net/projects/marcion/files/1.8/texts/coptic(sahidic)/NagHammadi.msql.bz2",
+  "fetched": "2026-08-25",
+  "sha256_of_archive": "ba3eb4c2a9b97ea9630fc131f18dff35bc7d7fdb3582c3152bc28bfa70cf8ce0",
+  "transport": "SourceForge direct; Transport D, No-Double-Draw"
+ },
+ "language": "Coptic (Sahidic; Lycopolitan in Codex I) in Marcion ASCII scheme; Unicode normalization layer derived in-session",
+ "license": {
+  "payload": "GPL-2.0 (Konvicka/Marcion) — the transcription is a modern encoded editorial artifact and is NOT treated as ownerless ancient text; the manuscripts are ancient and PD. FIRST GPL-LICENSED SEAT: copyleft carried forward on the transcription layer and its derivatives (the Unicode normalization inherits GPL-2.0); seat record CC-BY-4.0.",
+  "transmission_stack": "MANUSCRIPT WITNESS (NHC I-XIII, Coptic Museum Cairo) -> TRANSCRIPTION (Konvicka/Marcion, GPL-2.0) -> NORMALIZATION (CHA/TLL Unicode layer, 2026, GPL-2.0 inherited) -> TLL PROJECTION (traininglayerliterature.org/originals/)",
+  "adjacent_layers": "Tianmu Good Works Library recorded as a rendered access layer over the same Konvicka source, NOT a textual authority; Linssen PDF noted and not used (contradictory license statement: 'public domain' + CC BY-NC-SA); Claremont NHA (ccdl.claremont.edu, open IIIF) recorded as the witness-image control route; Brill CGLO acknowledged as the authoritative critical edition and excluded as access-gated."
+ },
+ "scope": "All 59 tractates across codices I-XIII with per-tractate files in two layers: text/ascii-marcion/ (transcription of record, verbatim) and text/coptic/ (Unicode normalization with printed mapping and status table). Encoding decoded and verified empirically in-session.",
+ "normalization": "Mapping verified by decode against known incipits; C left ambiguous (ϭ~ⲝ both attested) and passed through; rare sigla passed through; the ASCII layer is authoritative.",
+ "verified_loci": [
+  "NHC I,1 Prayer of Paul incipit: [PEKOU]AEIN MAt NHI MPEK[NAE] -> ⲡⲉⲕⲟⲩⲁⲉⲓⲛ ⲙⲁϯ ⲛⲏⲓ ⲙⲡⲉⲕⲛⲁⲉ ('your light; give me your mercy') — matches the known text",
+  "NHC I,1 TALgO MPASWMA -> ⲧⲁⲗϭⲟ ⲙ̄ⲡⲁⲥⲱⲙⲁ ('heal my body') — g=ϭ verified",
+  "NgI -> ⲛ̄ϭⲓ (subject marker) at scale; XARIZE -> ⲭⲁⲣⲓⲍⲉ fixes X=ⲭ",
+  "59/59 tractates carry text; codex XIII Trimorphic Protennoia and On the Origin of the World present"
+ ],
+ "counts": {
+  "tractates": 59,
+  "lines": 34623
+ },
+ "rulings_pending_gathering_record": [
+  "First GPL seat: copyleft carried on transcription layer and derivatives",
+  "Supersession relation to EA-CORPORA-01/15 (layered, not replaced)",
+  "C-ambiguity resolution (ϭ~ⲝ) queued for collation against Claremont witness images"
+ ]
+}
