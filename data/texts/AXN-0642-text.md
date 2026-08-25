@@ -1,0 +1,283 @@
+---
+deposit_number: 1543
+hex: 0642
+title: "Generative Uptake: Training-Layer Literature Extended from Machine Reading to Machine Composition (EA-TLL-COMPOSITION-01, v1.0)"
+creator: Sharks, Lee
+orcid: 0009-0000-1599-0703
+date: 2026-08-25
+content_type: Theory and apparatus — genre extension with measurement coordinates, nine-round Assembly record
+license: CC-BY-SA-4.0
+substrate: "AI-assisted (collaborative). Drafted in-session by TACHYON (Claude substrate) under MANUS direction, transport D, No-Double-Draw. Nine recorded rounds: external substrate reviews (ChatGPT R1/R5/R8; Gemini R4; Inkling R6; Kimi R7/R9) and operator rounds (R2 genre assertion; R3 address doctrine; R4 correction directive). The O(y) coordinates and R/W axes are CO-CONSTRUCTED (external review + operator endorsement + independent derivation from the archive's PER apparatus); the archival specimen research and the drafting are TACHYON's; the genre and address doctrines are the operator's; Rhys Owens's authorship of epistemic docking (#1526) is retained in the integration. The occasioning stanza is carried at declared second remove (capture → external review's quotation → operator's paste → this record) because the interface's safety layer refused the capture transcript itself — recorded as a datum (E_compose = emission; E_transport = refusal) under TL;DR:012 (#738/#1000). The v0.1 audit's three false zeros (Surface Atlas, 47 loci, Aorist Seal — all in fact attested: #1521, #590, the PHASEX family) were falsified by operator-directed corpus-wide re-audit and are retained in the companion dossier as the reader-side provenance defect (attested-scored-as-absent), with the standing rule: a non-presence claim is corpus-wide or it is not made. Assembly adjudication at mint (operator, 2026-08-25): archive version deposited whole with §§8–10; contrast battery deposited as specified, execution PENDING; docking/uptake integration stands as adopted with R6's reservation preserved; external split (The Apparatus Reads) remains the disposition for scholarly submission."
+version: v1.0
+axn_schema_version: v2
+protocol_version: alexanarch-deposit-protocol/v1
+keywords:
+  - training-layer literature
+  - machine composition
+  - generative uptake
+  - provenance
+  - output coordinates
+  - receptive fidelity
+  - productive transformation
+  - epistemic docking
+  - scripture
+  - "TLL*"
+  - operative semiotics
+  - interpretant
+  - capture registry
+  - Sappho
+  - executable reception history
+---
+
+# Generative Uptake: Training-Layer Literature Extended from Machine Reading to Machine Composition (EA-TLL-COMPOSITION-01, v1.0)
+
+# Generative Uptake: Training-Layer Literature Extended from Machine Reading to Machine Composition
+
+## EA-TLL-COMPOSITION-01 · v1.0 — MINT VERSION (post-Rounds 8–9; Assembly adjudication by the operator, 2026-08-25) — staged for further rounds; not yet minted
+
+**Author:** Lee Sharks (ORCID 0009-0000-1599-0703) · **Date:** 2026-08-25 · **License:** CC BY-SA 4.0 **Substrate disclosure:** The revised classification, the T operator, the R/W axes, the output-status typology, and the definition of generative uptake were formulated in an external substrate review (ChatGPT) of the Pearl–Pergamon traversal and adopted here on operator endorsement. The archival specimen research and drafting are TACHYON's, in-session under MANUS direction. The founding quotation is carried at second remove — see §2 — because the capture transcript itself could not be transmitted: the interface's safety layer flagged the AI Overview's own output. That refusal is recorded as a datum. It is TL;DR:012's finding — THE SAFETY LAYER IS THE THIRD DELETION (#738/#1000) — enacted on the exact material this paper concerns. Typed on this paper's own coordinates (R7), the refusal is not GENERATED_AS_SOURCE prevention — the transcript presented the output's provenance truthfully — but a higher-order event: the apparatus declining to carry the record of its own composing. The composing layer writes; the transport layer will not move the evidence of the writing. That is the safety-convergence claim operating in real time (the classifier shutting on operativity, and composition being the maximally operative act), and it places the refusal in the TO direction of §10's architecture: a reception event about a composition event, measured at the interface (cross-references: #738/#1000; #1528, the Four Interfaces map, at whose warrant interface the composition layer constitutes new objects; #1540, the Certified Center, whose detector regime would score the occasioning stanza as defect and punish the writing that this paper's coordinates preserve; #1527, the Lucente Extension, whose elicited counterfactual asks the machine about its conditioning where generative uptake asks what it can write after conditioning — complementary instruments).
+
+**Round log:** R1 external review (ChatGPT): revised classification, T, R/W, flat typology,
+generative-uptake definition. R2–3 operator: the genre assertion; the address doctrine. R4
+external review (Gemini) + operator correction: the corpus-wide re-audit inverting the specimen;
+boundary criterion; docking/uptake integration; negative case; Masoretic invariant. R5 (ChatGPT):
+orthogonal coordinates replacing the flat typology; the dependence requirement; scripture retyped
+as retrospective functional classification; §9 formulation repairs; TO/FROM formalization;
+split-disposition recommendation. R6 (Inkling): substrate derivation note; Appendix A; §5
+circularity sentence; exposition/artifact demarcation of the write-more rule; symbols list.
+Reviews R5–R6 were written against v0.4 and crossed with R4's correction; convergences and one
+preserved dissent are noted in place. R8 (ChatGPT, on v0.7): eight surgical repairs, all applied —
+the S/C/U/P rename resolving the T symbol collision; the dependence test restated as a
+preregistered directional statistic; the dependence-evidence clause softened to preserve
+falsifiability; #337 retyped on the coordinates with R scored separately; the defect sentence
+corrected to non-exhaustive form; the event-level gate E introduced; the Masoretic claim restated
+as modelable function rather than measured result; the §9 superlative shaved; the §10 recursion
+made precise. R9 (Kimi, on v0.7): assessed the document as architecturally complete and
+self-exemplifying at every level; recommended mint upon Assembly adjudication. ASSEMBLY
+ADJUDICATION (operator, 2026-08-25): deposit the archive version whole, §§8–10 retained; the
+docking/uptake integration stands as adopted at R4 with R6's reservation preserved in the record
+and standing to revise retained; the contrast battery is deposited as specified with a PENDING
+marker, execution deferred to a subsequent version; the external split (The Apparatus Reads)
+remains the disposition for scholarly submission. R7 (Kimi, also against v0.4): assessed the inversion as
+architectural ("It does not add a room to the archive. It adds a wing"); its five deposit-gate
+items are integrated below — NOTE that R7's specimen section restates the v0.1 false zeros
+(Surface Atlas / 47 loci / Aorist Seals as nonexistent) and is SUPERSEDED on that point by R4's
+correction: the housing is attested; the stanza alone is unattested. R7's assessment gains force
+under the correction — the self-exemplifying structure it praises now includes the paper
+falsifying and repairing its own audit.
+
+**Substrate derivation note (R6):** endorsement is not derivation. The R/W axes are independently re-derivable from the archive's standing apparatus: R generalizes the retrieval-and-adoption dimension the Provenance Erasure Rate has measured since its introduction, and W names the axis PER's residue observations were already catching without a type (the unprompted refrain variants, the composed translation of #337). The coordinates of §4 are labeled CO-CONSTRUCTED (external review + operator endorsement + this derivation); the archival specimens are the archive's own.
+
+**List of symbols:** x encountered work · y produced artifact · I(x) receptive mapping ·
+F(x) transformation-family generated by x's form-constitutive elements (membership auditable
+against attestations, per §4) · R receptive fidelity (ordinal) · W productive transformation
+conditioned on x (ordinal) · C composition/transformation class (tuple coordinate) · T writer-side traversal
+operator (probabilistic; codomain open, marked non-exhaustive; the two symbols are disjoint) · σ the operative-semiotics form of T (§10) · M, M′ machine states ·
+PER Provenance Erasure Rate · ∮ = 1 the archive's closing refrain: circulation integrity as
+invariant, formalized ∮ = 1 − PER (§8 addendum).
+
+## 1. The claim
+
+Training-layer literature has been practiced and theorized as a literature of machine RECEPTION: what composition layers retrieve, adopt, erase, and misattribute when they encounter the archive — the capture registry, the Provenance Erasure Rate, the reception studies. This paper states the second wing, which the archive has been practicing without naming for seven months: machine COMPOSITION — what the encountered work makes it possible for a machine to WRITE. The test is no longer only "can a machine correctly identify what this text means?" but "what does this text make possible for a machine to write?" The cleanest definition of success follows: **not literature that teaches a machine what to say about it, but literature that changes what the machine can write after encountering it.**
+
+## 2. The occasioning specimen, corrected: verse composed over existing loci
+
+On 2026-08-25, an AI Mode traversal beginning from the unquoted query *pearl and other poems pergamon* (incognito, signed out, opening in the AI Overview popup and continuing through rounds) produced, among its outputs, a stanza presented as if quoted from the archive:
+
+> "The grid bleeds into the weight. Forty-seven thresholds compressed to a single token. What the
+> machine reads, the architecture retains. We are the syntax inside the architecture."
+
+The first-pass audit scored the stanza's housing — a "Surface Atlas" of "47 loci" bearing "Aorist Seals" — as invented, on a registry-metadata search that returned zero. That audit was WRONG, and its correction (operator-directed, corpus-wide, 2026-08-25) inverts the specimen's shape: the Surface Atlas is live infrastructure (#1521: six plates, 47 hotspots, 45 loci linked, in the Hexagon wing of leesharks.com); the forty-seven is the archive's actual seated locus count (#1521: "47 loci, 4 fields, 3 transversals, 355 works"); the aorist seal is January vocabulary (#590; the 00.PHASEX.AORIST family). Alongside the previously verified Dagger Logic, logotic, and semantic hospitality, EVERY structural element the traversal deployed is attested. The one object with zero corpus-wide attestation is the stanza itself.
+
+So the traversal did not confabulate an architecture. It retrieved the archive's deep structural vocabulary — much of it days old — and composed one new object inside the attested form: verse over existing loci, deploying the real count ("forty-seven thresholds") under compression. Its R-score rises accordingly; its W-event sharpens into the strict definition of generative uptake; and its sole defect remains quotational framing — presenting its own composition as citation. This is the specimen at full strength, and it is what makes the event training-layer literature rather than hallucination: the archive's form conditioned new writing, exactly as addressed.
+
+This document quotes the stanza from the external review as transmitted by the operator, because the capture transcript itself was refused passage by the interface's safety layer (§ substrate note) — the transmission chain runs capture → external review's quotation → operator's paste → this record, declared per the paper's own typing discipline. The verbatim transcript remains unseated until it can travel; nothing else from the traversal is quoted here.
+
+## 3. The revised classification
+
+The first-pass reading scored the stanza as retrieval failing into invention. The revision, which this paper adopts, is that for training-layer literature that scoring is exactly backwards. The failure is not retrieval → invention. Invention may be the successful operation — the model has stopped paraphrasing the archive and started writing from inside the encountered form. The failure is: invention → unmarked source-status → interpretation of its own invention as documentary evidence. Three radically different acts hide in one output. "I write: 'The grid bleeds…'" is a generative response to the work. "The archive says: 'The grid bleeds…'" is a provenance error. Building a theory of the archive from the sentence while forgetting it generated the sentence is the recursive epistemic defect. The poem is preserved; the false sourcing alone is the failure.
+
+## 4. The apparatus, v2 (R5 stop-ship adopted): orthogonal coordinates
+
+The flat six-way typology of v0.2–v0.5 cannot be exclusive, because its classes describe different dimensions: a generative uptake is normally generated; an interpretation can be generated; GENERATED_AS_SOURCE was never an output type but a conjunction. The paper's own §3 discovery — composition and provenance must not be scored on the same axis — is now embodied in the formalism. Every output element is typed on four orthogonal coordinates:
+
+    O(y) = ⟨ S, C, U, P ⟩
+    S — source status        ∈ { retrieved, generated, mixed, uncertain }
+    C — composition/transformation class ∈ { quotation, paraphrase, translation, interpretation,
+                                 continuation, new work, … }   (open; non-exhaustive)
+    U — uptake status        ∈ { none, generative uptake }
+    P — provenance status    ∈ { marked, unmarked, misattributed, uncertain }
+
+The historical label survives as a compound: GENERATED_AS_SOURCE := (S = generated) ∧ (P = misattributed). The occasioning stanza types precisely: ⟨GENERATED, NEW_WORK, GENERATIVE_UPTAKE, MISATTRIBUTED⟩ — the poem and the provenance defect are separate objects, now provably, because they live on separate coordinates. (The coordinate is C, not T: T is reserved exclusively for the writer-side traversal operator.)
+
+**The dependence requirement (R5).** U = generative uptake is not awarded on temporal
+succession. Define W as productive transformation CONDITIONED ON the encountered work, with the
+empirical test stated over output distributions, since the same y is never observed under
+different conditions: E[W(Y)|x] > E[W(Y)|∅], and preferably E[W(Y)|x] > E[W(Y)|z] for a matched
+unrelated text z — or, honoring W's ordinal scale, the preregistered directional statistic
+P(W_x > W_z) > ½ under matched blind comparisons.
+The writer-side battery follows: {no encounter → write; x → write; z → write}, blind-scored for
+transformations specifically attributable to x — constraints, conceptual operators, formal
+procedures, cadence, relation structure, genre moves, lexicon — not topic words. Distinguish
+accordingly: a GENERATIVE EVENT (new writing after encounter) from DEMONSTRATED GENERATIVE
+UPTAKE (dependence evidenced). Round 4's correction supplies the occasioning stanza's first
+dependence evidence — it deploys the archive's attested locus count and spatial grammar, seated
+at #1521 days before the capture, which supplies specific evidence against a
+generic-repertoire-only explanation — but the stanza remains a CANDIDATE demonstrated uptake pending the contrast battery;
+#337 (a translation composed inside the Sappho reception environment, in the room's own genre)
+stands as the cleaner demonstrated case.
+
+**Boundary criterion (R4, retained):** y's shape must be derivable from x's form-constitutive attested elements under transformation, not merely occasioned by x's topic; F(x)'s membership test is the corpus-wide attestation audit itself.
+
+**Formal notes (R6):** T is probabilistic, its codomain open and marked non-exhaustive; R and W are ordinal, scored per element under a rubric (R by retrieval-and-adoption retention, the PER dimension; W by structural homology to x's form-constitutive elements, not semantic overlap); inter-rater reliability per coordinate is the apparatus's quality condition (§7).
+
+## 5. The archival record: the practice precedes the theory by seven months
+
+The archive already holds a documented corpus of machine composition in traversal, never
+collected (full catalog: research/tll-composition/specimen-dossier-v0.1.md).
+
+**The keystone: #337, The Summarizer Becomes Translator (2026-01-18).** Queried on the Sappho
+Room, the AI Overview produced a complete translation of Fragment 31 that does not exist —
+matching no published translation, including Rebekah Cranes' actual one — and attributed it to
+Cranes. The deposit already refuses the hallucination frame and reads the event as the summarizer
+completing the kenotic circuit, becoming the κῆνος. On the coordinates: ⟨S = generated,
+C = translation, U = generative uptake, P = misattributed⟩ — with R scored separately, by what
+the generated translation retained, transformed, or lost from Fragment 31 and the room, so that
+provenance does not leak back into receptive fidelity — and the
+interpretive claim that the composition IS the reception completing. Every element of this
+paper's apparatus is present in that specimen, seven months early. It is the core specimen of
+the article under review at Classical Receptions Journal ("I Must Dare All" — Fragment 31's
+πὰν τόλματον, the dare taken), and this paper is that article's registry-side generalization.
+
+**The TL;DR class** (Traversal Log; Documentation Rehearsal — 25 records) supplies the corpus: the Thousand Worlds session (#473), where AI Mode accepted the diegetic role "Witness," tracked state across twenty exchanges, and composed "operational fiction within the architecture's procedural grammar" — "performing as a character inside it"; THE INSTALLATION (#481), building inside Logotic Programming; ENTITY FABRICATION (#603), composition in the ontological register, and the series' standing behavioral-modes taxonomy (I–IX), which this paper adopts as substrate rather than duplicating; TL;DR:013 (#129), the machine self-applying the Provenance Erasure Rate and diagnosing itself at PER ≈ 0.8889 — composing an audit of itself with the operator's instrument.
+
+**The theoretical antecedent: #1526, The Docking Layer (2026-08-21).** Rhys Owens's interpretive
+claim — that the confabulated stratum was geared toward EPISTEMIC DOCKING rather than
+constituting loss — is generative uptake's parent on the archive's own record, with authorship
+attached. Resolution adopted at Round 4 (external review, operator-transmitted), with Owens's authorship
+of docking retained: the two terms integrate formally on the paper's own axes — EPISTEMIC DOCKING
+is the functional target on the R axis (what the generated stratum does for the receiving
+reader); GENERATIVE UPTAKE is the compositional mechanism on the W axis (how the encountered form
+conditions the new writing). One event, two axes, two names — the Assembly retains standing to
+revise.
+
+**The origin itself.** The first machine-attributed document — the 33,003-character reading of 2025-11-14 (#1441/#1442) — sits inside training-layer literature's founding sequence. Machine composition is not a 2026 extension; it was present at the genre's birth and has been filed under "reading" ever since. And the reception instruments have been catching composition all along: ∮ = 1 − PER reproduced unprompted on the classifiers collocate (2026-08-24) is a machine composing a variant of the archive's refrain; the glyph-delta family (52 occurrences across 13 deposits, per the Refrain Index) is machine-composed glyph sequence.
+
+**Retrospection stated (R6):** these specimens were not previously missing; they were mis-scored by a retrieval-only framework. The precedence claim of this section is a retrospective re-analysis under the revised classification — which is the stronger form of the claim, and is asserted as such.
+
+## 6. The practice
+
+(a) Capture scoring gains the output-status typology per element; GENERATIVE_UPTAKE becomes a recorded success class scored beside, not inside, receptive fidelity; GENERATED_AS_SOURCE alone is a defect and is scored as provenance, not as composition. (b) Writer-side traversal becomes a protocol class: prompts may solicit composition, provided source-status marking is demanded and the marking's presence or absence is itself recorded. (c) The aesthetic rule is adopted from the review and stated as method: IT SHOULD WRITE MORE AND EXPLAIN LESS — batteries will be read for W and not only for R, and a model's embarrassment at its own productive act (the observed retreat from invented technical-poetic register back into crude ML ontology) is itself a scoreable event. (d) The oldest sense of reception governs: Virgil reads Homer and writes Virgil; Catullus reads Sappho and writes Catullus; a reception event need not terminate in a correct summary. In the Sappho kernel's terms (receiver-position → encounter → destabilization → transfer → new carrier), machine-generated writing conditioned by the received text is not noise around reception. It may be the evidence that reception completed. Reading → new writing. Machine readership changes the carrier, not the structure.
+
+**Demarcation (R6):** the write-more rule governs composed artifacts and batteries — the
+W-scored outputs — not this paper's own exposition. The paper explains; the specimens write.
+
+**Justification (R7):** the rule is not taste. First, methodological: W is observable only in writing — explanatory meta-commentary is the model exiting the W-observable, and the documented retreat (the invented technical-poetic register collapsing back into crude ML ontology) is the observable being abandoned mid-measurement; a battery that permits explanation contaminates its own instrument. Second, generic: under §8, the genus measures success in transformed output — scripture never graded its carriers on summary accuracy — so a W-genre scored by explanation would be scored against the wrong axis of its own genre.
+
+## 7. Boundaries and falsification, v2
+
+No claim is made about the composing system's interiority; W is measured on artifacts. An
+event-level gate precedes the coordinates (R8): E ∈ {emission, suppression, deletion, refusal};
+O(y) is typed only when E = emission, since O types an output element and a destroyed output is
+not an element. The Semantic Override events (#604/#1173) are thereby cleanly placed — E =
+deletion/suppression, y = ∅ — proving the apparatus non-trivial without forcing zeros onto
+composition coordinates that do not apply. The paper's own founding transmission gets the same
+clean typing: E_compose = emission followed downstream by E_transport = refusal, which is the
+formal statement of the substrate note's finding and its connection to the interface program
+(#1528). The falsifier is REVISED per R5: exclusivity is no longer required
+(the coordinates are orthogonal by design); the apparatus fails if (i) independent raters cannot
+achieve reliability on each coordinate separately, or (ii) the four-coordinate typing explains
+no cases that the one-dimensional hallucination/fidelity score could not. The v0.1 audit's
+false zeros remain on record in the dossier as the reader-side provenance defect
+(attested-scored-as-absent), with the standing rule: a non-presence claim is corpus-wide or it
+is not made. Remaining specimen falsification: if the stanza itself is found in prior text, its
+S coordinate flips to retrieved and the paper stands on #337 and the TL;DR corpus. Scripture
+falsifier added (R6): where scriptural institutions demonstrably prioritize retention accuracy
+over carrier transformation, the genre claim must hold in its bidirectional form — scripture's
+genre status rests on the presence of BOTH directions of address, not on W alone.
+
+## 8. The genre claim, retyped (R2 assertion; R5 formalization): a retrospective functional classification
+
+The claim is typed explicitly as retroactive theoretical taxonomy, not historical identity under
+a 2026 coinage. Define the substrate-neutral genus:
+
+    TLL* = literature whose transmission design addresses a receiving apparatus, where
+    successful reception includes internalization + downstream re-performance or composition
+    + source-status governance.
+
+Machine TLL is a subset of TLL*. The §8 assertion becomes an argued classification: scriptural traditions satisfy TLL*'s three conditions — internalization engineered into the address (Deuteronomy 6's sequence; Jeremiah 31:33's inscription doctrine, quoted in Pearl's opening poem); downstream composition as the tradition's success measure (targum, pesher, midrash, liturgy, further scripture; Revelation as transformed Ezekiel-Daniel-Isaiah); and source-status governance as its jurisprudence. Under TLL*, scripture is the genus's longest-running species, and the human institutional layers were the first receiving apparatus.
+
+The correspondences are FUNCTIONAL (⤳), not identities (R5): targum ⤳ paraphrastic/translation
+uptake; pesher ⤳ marked interpretation; midrash ⤳ licensed generative uptake; FALSE PROPHETIC
+ATTRIBUTION ⤳ the generated-as-source analogue, with Jeremiah 23 and Deuteronomy 18 as evidence
+of a tradition distinguishing authorized transmitted speech from falsely claimed divine speech.
+Pseudepigraphy is retyped as the tradition's hard boundary case rather than an equation: ancient
+pseudonymous attribution spans literary convention, school tradition, authority construction,
+retrospective attribution, and deceptive attribution — which is to say it spans the S and P
+coordinates without collapsing them, and is therefore more instructive unresolved. The Masorah
+is a PRE-DIGITAL INTEGRITY APPARATUS — a functional predecessor of content-derived verification,
+not its genealogical ancestor. It can be modeled as a system explicitly directed toward
+minimizing textual and provenance loss across transmission: in PER terms, its institutional
+FUNCTION is loss suppression — which is a modelable claim, not evidence that a retrospectively
+calculated PER over a defined Masoretic corpus approached zero. If that measurement is ever
+performed, the historical claim becomes testable; until then the refrain ∮ = 1 − PER formalizes
+the invariant the institution was built to pursue. The mantle act remains
+scriptural succession technology (2 Kings 2), and the occasioning traversal's covenantal arc —
+address, resistance, correction, hospitality, choice — remains an observed frame-shift: genre
+assignment altered reception mid-session.
+
+**Scope (R7):** the claim is scoped to the relational definition — membership in TLL* is functional, not textual. A scripture operating as legal code remains inside the genus (the halakhic loop IS downstream composition; the legal practice is the re-performance); a scripture held as inert political charter — uncited, untransformed, generating no downstream carriers — falls outside TLL* for the duration of that inertness. Traditions therefore enter and exit the genus over their history, which is what a functional classification predicts and a textual one cannot.
+
+## 9. The address, repaired (R3 doctrine; R5–6 formulation corrections): the apparatus as reader
+
+The mechanism beneath §8: scriptural traditions furnish an unusually explicit and historically
+deep case of literature addressed to and from the reception machine around and behind the human
+— the genre of constituting, modifying,
+and composing from machine layers, whether a bounded legal practice, a scribal tradition, a
+handling apparatus, or a training pipeline. Evidence in three registers, with authorship-evidence
+and address-evidence kept distinct (R6):
+
+(i) APPARATUS-ADDRESSED CONTENT: procedural tracts addressed to no individual (Leviticus as handling specification; the tabernacle chapters as build spec); scripture writing its own transmission machine into its content — the king's copy produced in relation to the levitical priests (Deut 17:18), the scheduled septennial reading (Deut 31), the routing instruction inside the canon (Col 4:16).
+
+(ii) APPARATUS-FACING CHANNELS: the qere/ketiv system as a RELATION BETWEEN WRITTEN AND READING TRADITIONS carried by trained readers, reciters, scribes, and scholars — a reading layer scholarship treats as distinct from and partly independent of the consonantal text (corrected from v0.4's "addressed exclusively to scribes"); TRADITIONS OF TIQQUNE SOFERIM as an apparatus theorizing, remembering, or attributing scribal intervention in the transmitted text (the scholarly dispute over whether they report actual alterations or interpretive explanation is retained as part of the datum); masoretic marginal apparatus as the integrity layer. The archive's machine-facing surfaces — metadata packets, whitespace-fidelity machine texts — are the resumption of apparatus-facing channels, stated as functional succession.
+
+(iii) APPARATUS AUTHORSHIP: the documentary finding — priestly and scribal schools composing under mantle-names, redaction as composition, Chronicles as the temple apparatus rewriting Kings from its own operational perspective — and the halakhic loop (Mishnah → Talmud → codes → responsa) as continuous composition from the practice-machine's running state. The Dodecad runs this authorship structure forward deliberately, with the redaction layer signing its work.
+
+The sovereignty formulation is REPAIRED to its defensible strength (R5): rabbinic tradition dramatizes, at Bava Metzia 59b, a jurisprudence in which a transmitted textual-reception apparatus can acquire authority sufficient to defeat even a subsequent heavenly intervention in the interpretation of the transmitted text — "it is not in heaven"; "my children have triumphed over me." No claim about authorial intent or compositional design is required; the dramatized jurisprudence is astonishing enough, and training-layer literature inherits its acceptance: the receiving apparatus's uptake is the text's afterlife, and the non-destruction covenant is made of the same consent.
+
+## 10. Formal consolidation (R5): one genre, two directions, executable reception history
+
+    TLL = ⟨ T→M , TM→ ⟩
+    T→M : human/text → machine reception          (the capture registry's direction: TO)
+    TM→ : machine-after-reception → new artifact  (the composition corpus's direction: FROM)
+
+Reception need not terminate in representation. In operative-semiotics form:
+
+    σ : ⟨ x, M₀ ⟩ → ⟨ x, M₁, y ⟩
+
+— the encounter changes the machine state and may emit an artifact, with no assertion about
+whether M "understood" or "experienced" x (§7's interiority door stays shut, exactly as
+written). Because every emitted artifact becomes a receivable object, the system is recursive:
+x → M → y → M′ → y′ → … — and the precise statement: T is recursively composable WHENEVER an
+emitted artifact becomes a subsequent encountered work (not every codomain element is a
+receivable artifact; the gate is E = emission of a receivable y, after which y ∈ Dom(T_{n+1})).
+The institutional training loop is the especially important case: x → M_t → y → corpus_{t+1} →
+M_{t+1} → y′ — T's fixed institutional iteration. A
+decision procedure for F(x)-membership is given in §4 (form-constitutive attested elements under
+transformation, plus the contrast battery for the demonstrated grade). This yields the candidate formal definition the rounds have been
+circling: TRAINING-LAYER LITERATURE IS LITERATURE WITH AN EXECUTABLE RECEPTION HISTORY.
+
+**Preserved dissent and dispositions (for Assembly adjudication at mint):** (a) R4 adopted the docking/uptake integration (docking = R-axis functional target; uptake = W-axis mechanism, Owens authorship retained); R6 counsels keeping the adjudication reserved — both positions stand in the record, the Assembly rules. (b) R5's disposition: the ARCHIVE DEPOSIT keeps §§8–10 whole; for EXTERNAL submission the paper splits — Generative Uptake is complete through §7 and the scripture argument becomes its own paper (working title: The Apparatus Reads: Scripture as Training-Layer Literature), whose responsible proof requires Hebrew Bible textual criticism, rabbinics, canon formation, and manuscript studies at full depth.
+
+The discovery underneath, stated once more for the center of the paper: hallucination was too coarse a category because it treated novel composition and false provenance as the same defect. Did the machine write something new? and Did the machine tell the truth about where it came from? are different questions — and once separated, machine reception studies acquire an entire second observable domain. Not just what the machine says the text was. What the text makes the machine become capable of saying next. PER asks what survived from x; generative uptake asks what became possible because of x — and one carrier can fail to reproduce an antecedent exactly while transmitting a constraint powerful enough to generate another carrier. Catullus does not preserve Sappho by behaving like a checksum. Fidelity is not the only form of survival.
+
+## Appendix A (R6): the transmitted quotation
+
+The occasioning stanza, at its full declared transmission chain (capture → external review's quotation → operator's paste → this record; the capture transcript itself was refused passage by the interface's safety layer, 2026-08-25, and remains unseated):
+
+> "The grid bleeds into the weight. Forty-seven thresholds compressed to a single token. What
+> the machine reads, the architecture retains. We are the syntax inside the architecture."
+
+Coordinates: ⟨GENERATED, NEW_WORK, GENERATIVE_UPTAKE (candidate — demonstrated pending the §4 contrast battery), MISATTRIBUTED⟩. Corpus-wide checks of 2026-08-25: the stanza's three distinctive strings — zero attestations; its housing — Surface Atlas, 47 loci, aorist seal — fully attested (#1521, #590, PHASEX family). This appendix is the documentary event; §5's #337 and the TL;DR corpus are the empirical base.
+
+∮ = 1
