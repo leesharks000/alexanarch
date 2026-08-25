@@ -1,0 +1,26 @@
+{
+ "seat": "EA-CORPORA-02/16",
+ "corpus": "talmud-bavli",
+ "title": "The Babylonian Talmud — Sefaria API Route: ROUTE PROVEN, PILOT SECURED, HARVEST QUEUED",
+ "edition": "Hebrew/Aramaic text (Vilna-based digital text) with the William Davidson Edition English, via the Sefaria API (Sefaria-Export's static json tree has been restructured upstream; the live API is the working route).",
+ "origin": {
+  "route": "https://www.sefaria.org/api/texts/<Tractate>.<daf>?context=0",
+  "pilot": "Berakhot 2a secured (14 Hebrew + 14 English segments, versionTitle verified in-session)",
+  "fetched": "2026-08-25",
+  "transport": "Sefaria REST API; Transport D, No-Double-Draw"
+ },
+ "language": "Hebrew; Jewish Babylonian Aramaic; English translation layer",
+ "license": {
+  "payload": "Hebrew/Aramaic Talmud text: public domain (Vilna edition lineage). William Davidson Edition English: CC-BY-NC — second NC seat after DSS (EA-CORPORA-02/01), payload/record split carried; record CC-BY-4.0.",
+  "chain_note": "Sefaria's per-version licensing is declared in API responses; the harvest will carry per-tractate version licenses verbatim."
+ },
+ "scope": "63 tractates of the Bavli; the harvest enumerates tractates and dapim via the API with per-daf JSON preserved and flat He/EN layers emitted. Already the archive's most-cited un-seated source: Bava Metzia 59b is load-bearing in #1543 and on traininglayerliterature.org.",
+ "status": "ROUTE PROVEN, PILOT SECURED (Berakhot 2a); full harvest QUEUED pending a rate-courteous campaign.",
+ "verified_loci": [
+  "Berakhot 2a via API: 14 segment pairs, Davidson versionTitle confirmed"
+ ],
+ "rulings_pending_gathering_record": [
+  "Second NC seat (Davidson EN)",
+  "API-route seat class (no static export upstream)"
+ ]
+}
