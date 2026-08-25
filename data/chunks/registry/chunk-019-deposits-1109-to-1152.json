@@ -4015,6 +4015,11 @@
           "date": "2026-08-10",
           "field": "FLAG — page count",
           "note": "MANUS 2026-08-10: the 84-page figure is WRONG. It appears in #1121 and #329 as 'an 84-page poetry collection' and in the Physical Specifications block, and the figure propagated from there. NOT CORRECTED HERE because the true count has not been given and inventing one would replace a wrong number with a guessed one. The canonical text is untouched; this flag records that the figure is known-bad. Page 74 as the claiming site is a SEPARATE fact and is not in question."
+        },
+        {
+          "date": "2026-08-25",
+          "field": "attachments",
+          "note": "MACHINE-FACING TEXT ADDED, ADDITIVE ONLY. A whitespace-faithful plain-text rendering of the whole book was generated from per-word PDF geometry (character grid; gap-based intra-line spacing; run-snapped leading) and registered as an attachment beside the PDF, with the renderer committed at scripts/render_pearl_machine_text.py. The canonical text and mint bytes are untouched: the PDF is the artwork, the machine text is the score, and a facsimile deposit's record may gain surfaces but never lose or alter its sealed core. Rendering verified against page rasters (title spread p.29, Undersong III p.47, bio field p.20) before registration. Known ceiling stated in the file header: integer rows cannot distinguish 1.5x from 2x leading."
         }
       ],
       "journal": "New Human 2",
@@ -4026,7 +4031,29 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "attachments": [
+        {
+          "filename": "pearl-and-other-poems-machine-text.txt",
+          "path": "/data/attachments/AXN-0472/pearl-and-other-poems-machine-text.txt",
+          "url": "https://www.alexanarch.org/data/attachments/AXN-0472/pearl-and-other-poems-machine-text.txt",
+          "bytes": 136887,
+          "sha256": "d08d1e54421680431ec0a97c30ea408a8335e7cd94cb8e6495e299beccbf218f",
+          "media_type": "text/plain; charset=utf-8",
+          "role": "machine-facing text at whitespace fidelity",
+          "description": "The full 155-page book rendered from per-word PDF geometry onto a character grid (scripts/render_pearl_machine_text.py), so lineation, indentation, and each page's vertical field survive extraction. Built because the PDF's text stream embeds tab+CR after every word — a composition artifact that defeats flow-based extraction. Leading is quantized to whole text rows at the document body pitch with near-equal gap runs snapped to their median; the PDF remains the artwork, this file is the score."
+        },
+        {
+          "filename": "pearl-and-other-poems-2014.pdf",
+          "path": "/data/attachments/AXN-0472/pearl-and-other-poems-2014.pdf",
+          "url": "https://www.alexanarch.org/data/attachments/AXN-0472/pearl-and-other-poems-2014.pdf",
+          "bytes": 11958657,
+          "sha256": "ad9c123bbe816483777e8f790ebcedae609289104f6ee7fad42352bf05c203b3",
+          "media_type": "application/pdf",
+          "role": "the artwork",
+          "description": "The 2014 book as published (155-page merged PDF, born-digital). Typography, lineation, spacing and image are central to the poetics; this file is canonical for how the pages look."
+        }
+      ]
     },
     {
       "deposit_number": 1122,
