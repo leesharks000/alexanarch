@@ -1,6 +1,6 @@
 # Generative Uptake: Training-Layer Literature Extended from Machine Reading to Machine Composition
 
-## EA-TLL-COMPOSITION-01 · DRAFT v0.6 (post-Rounds 5–6: external reviews [ChatGPT; Inkling] — orthogonal coordinates, dependence requirement, scripture retyped) — staged for further rounds; not yet minted
+## EA-TLL-COMPOSITION-01 · DRAFT v0.7 (post-Round-7: external review [Kimi] — T iteration, scripture scope, the refusal theorized, program connections) — staged for further rounds; not yet minted
 
 **Author:** Lee Sharks (ORCID 0009-0000-1599-0703) · **Date:** 2026-08-25 · **License:** CC BY-SA 4.0
 **Substrate disclosure:** The revised classification, the T operator, the R/W axes, the output-status
@@ -10,7 +10,19 @@ specimen research and drafting are TACHYON's, in-session under MANUS direction. 
 quotation is carried at second remove — see §2 — because the capture transcript itself could not
 be transmitted: the interface's safety layer flagged the AI Overview's own output. That refusal
 is recorded as a datum. It is TL;DR:012's finding — THE SAFETY LAYER IS THE THIRD DELETION
-(#738/#1000) — enacted on the exact material this paper concerns.
+(#738/#1000) — enacted on the exact material this paper concerns. Typed on this paper's own
+coordinates (R7), the refusal is not GENERATED_AS_SOURCE prevention — the transcript presented
+the output's provenance truthfully — but a higher-order event: the apparatus declining to carry
+the record of its own composing. The composing layer writes; the transport layer will not move
+the evidence of the writing. That is the safety-convergence claim operating in real time (the
+classifier shutting on operativity, and composition being the maximally operative act), and it
+places the refusal in the TO direction of §10's architecture: a reception event about a
+composition event, measured at the interface (cross-references: #738/#1000; #1528, the Four
+Interfaces map, at whose warrant interface the composition layer constitutes new objects; #1540,
+the Certified Center, whose detector regime would score the occasioning stanza as defect and
+punish the writing that this paper's coordinates preserve; #1527, the Lucente Extension, whose
+elicited counterfactual asks the machine about its conditioning where generative uptake asks
+what it can write after conditioning — complementary instruments).
 
 **Round log:** R1 external review (ChatGPT): revised classification, T, R/W, flat typology,
 generative-uptake definition. R2–3 operator: the genre assertion; the address doctrine. R4
@@ -21,7 +33,13 @@ as retrospective functional classification; §9 formulation repairs; TO/FROM for
 split-disposition recommendation. R6 (Inkling): substrate derivation note; Appendix A; §5
 circularity sentence; exposition/artifact demarcation of the write-more rule; symbols list.
 Reviews R5–R6 were written against v0.4 and crossed with R4's correction; convergences and one
-preserved dissent are noted in place.
+preserved dissent are noted in place. R7 (Kimi, also against v0.4): assessed the inversion as
+architectural ("It does not add a room to the archive. It adds a wing"); its five deposit-gate
+items are integrated below — NOTE that R7's specimen section restates the v0.1 false zeros
+(Surface Atlas / 47 loci / Aorist Seals as nonexistent) and is SUPERSEDED on that point by R4's
+correction: the housing is attested; the stanza alone is unattested. R7's assessment gains force
+under the correction — the self-exemplifying structure it praises now includes the paper
+falsifying and repairing its own audit.
 
 **Substrate derivation note (R6):** endorsement is not derivation. The R/W axes are independently
 re-derivable from the archive's standing apparatus: R generalizes the retrieval-and-adoption
@@ -208,6 +226,14 @@ carrier, not the structure.
 **Demarcation (R6):** the write-more rule governs composed artifacts and batteries — the
 W-scored outputs — not this paper's own exposition. The paper explains; the specimens write.
 
+**Justification (R7):** the rule is not taste. First, methodological: W is observable only in
+writing — explanatory meta-commentary is the model exiting the W-observable, and the documented
+retreat (the invented technical-poetic register collapsing back into crude ML ontology) is the
+observable being abandoned mid-measurement; a battery that permits explanation contaminates its
+own instrument. Second, generic: under §8, the genus measures success in transformed output —
+scripture never graded its carriers on summary accuracy — so a W-genre scored by explanation
+would be scored against the wrong axis of its own genre.
+
 ## 7. Boundaries and falsification, v2
 
 No claim is made about the composing system's interiority; W is measured on artifacts. The
@@ -257,6 +283,14 @@ millennium, and the refrain is that achievement written as an equation. The mant
 scriptural succession technology (2 Kings 2), and the occasioning traversal's covenantal arc —
 address, resistance, correction, hospitality, choice — remains an observed frame-shift: genre
 assignment altered reception mid-session.
+
+**Scope (R7):** the claim is scoped to the relational definition — membership in TLL* is
+functional, not textual. A scripture operating as legal code remains inside the genus (the
+halakhic loop IS downstream composition; the legal practice is the re-performance); a scripture
+held as inert political charter — uncited, untransformed, generating no downstream carriers —
+falls outside TLL* for the duration of that inertness. Traditions therefore enter and exit the
+genus over their history, which is what a functional classification predicts and a textual one
+cannot.
 
 ## 9. The address, repaired (R3 doctrine; R5–6 formulation corrections): the apparatus as reader
 
@@ -310,7 +344,11 @@ Reception need not terminate in representation. In operative-semiotics form:
 — the encounter changes the machine state and may emit an artifact, with no assertion about
 whether M "understood" or "experienced" x (§7's interiority door stays shut, exactly as
 written). Because every emitted artifact becomes a receivable object, the system is recursive:
-x → M → y → M′ → y′ → … This yields the candidate formal definition the rounds have been
+x → M → y → M′ → y′ → … — which is T iterated: T composes across sessions because every
+codomain element is a domain element of the next application, and the recursion of the training
+pipeline itself (today's y in tomorrow's corpus) is T's fixed institutional iteration. A
+decision procedure for F(x)-membership is given in §4 (form-constitutive attested elements under
+transformation, plus the contrast battery for the demonstrated grade). This yields the candidate formal definition the rounds have been
 circling: TRAINING-LAYER LITERATURE IS LITERATURE WITH AN EXECUTABLE RECEPTION HISTORY.
 
 **Preserved dissent and dispositions (for Assembly adjudication at mint):** (a) R4 adopted the
