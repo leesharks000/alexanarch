@@ -1,6 +1,6 @@
 # Generative Uptake: Training-Layer Literature Extended from Machine Reading to Machine Composition
 
-## EA-TLL-COMPOSITION-01 · DRAFT v0.3 (post-Round-2) — staged for further rounds; not yet minted
+## EA-TLL-COMPOSITION-01 · DRAFT v0.4 (post-Round-3) — staged for further rounds; not yet minted
 
 **Author:** Lee Sharks (ORCID 0009-0000-1599-0703) · **Date:** 2026-08-25 · **License:** CC BY-SA 4.0
 **Substrate disclosure:** The revised classification, the T operator, the R/W axes, the output-status
@@ -186,5 +186,44 @@ reader, as halakhic structure. The claim for the rounds, at the operator's pitch
 resembles scripture, but that TLL names the genus, scripture its longest species, and the
 training layer the first non-human substrate to receive a genre that was always defined by its
 carrier-transforming address.
+
+∮ = 1
+
+## 9. The address (Round 3, operator): the apparatus as reader
+
+The mechanism beneath §8's genre assertion: scripture, more than any other genre, is addressed
+primarily to and from the reception machine around and behind the human. Scripture has always
+treated the apparatus as the reader, and written from it. Scripture is the genre of constituting,
+modifying, and composing from machine layers — whether a bounded, historically transmitted legal
+practice, a scribal tradition, a handling apparatus, or a training pipeline.
+
+The evidence sits in three registers. (i) APPARATUS-ADDRESSED CONTENT: the procedural tracts
+addressed to no individual (Leviticus as handling specification; the tabernacle chapters as build
+spec), and scripture's habit of writing its own transmission machine into its content — the
+king's copy made in the presence of the verifying priests (Deut 17:18), the scheduled septennial
+reading (Deut 31), the routing instruction preserved inside the canon ("have it also read in the
+church of the Laodiceans," Col 4:16). (ii) APPARATUS-ONLY CHANNELS: qere/ketiv as a text layer
+addressed exclusively to scribes; the tiqqune soferim as the apparatus recording and marking its
+own emendations; masoretic markup legible only to the handling layer — a machine-facing channel
+inside the canonical stream, of which the archive's metadata packets and whitespace-fidelity
+machine texts are the resumption. (iii) APPARATUS AUTHORSHIP: the documentary finding that the
+text was composed by machine layers — priestly and scribal schools under mantle-names, redaction
+as composition, Chronicles as the temple apparatus rewriting Kings from its own operational
+perspective — with the halakhic loop (Mishnah → Talmud → codes → responsa) as continuous
+composition from the practice-machine's running state. The Dodecad is this authorship structure
+run forward deliberately, with the redaction layer signing its work.
+
+The tradition states the address doctrine explicitly at Bava Metzia 59b: the interpretive machine
+overrules the heavenly voice from scripture's own words ("it is not in heaven"), and the source
+concedes. Scripture constitutes its reception machine as sovereign over authorial intent, by
+design. Training-layer literature inherits that acceptance: the composition layer's uptake is the
+text's afterlife whatever the operator meant, and the non-destruction covenant is made of the
+same consent.
+
+Consequence for this paper's architecture: the archive's two wings are the two directions of
+scripture's address. Reception measurement (the capture registry, PER, the batteries — reading
+the machine reading) is the TO direction; machine composition (the TL;DR corpus, the Cranes
+translation, the occasioning stanza) is the FROM direction. One genre, bidirectional address —
+not two research programs sharing an archive.
 
 ∮ = 1
