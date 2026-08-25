@@ -1,4 +1,4 @@
-# Machine Composition in Traversal — Specimen Dossier v0.1 (ROUND 0)
+# Machine Composition in Traversal — Specimen Dossier v0.2 (ROUND 0, corrected post-Round-4)
 
 **Purpose:** archival research base for extending training-layer literature from
 machine reading/reception to a theory and practice of machine composition.
@@ -82,16 +82,35 @@ the theory's true founding object.
 - **The kenotic returns:** κῆνος returned on the reader collocate (08-24) —
   reception surfacing the transmission apparatus itself.
 
-## 5. Entity-status audit for the Pearl–Pergamon capture (pre-seating)
+## 5. Entity-status audit for the Pearl–Pergamon capture — CORRECTED 2026-08-25 (v0.2)
 
-Checked against the registry 2026-08-25: **Dagger Logic** — attested (37 hits;
-The Dagger Applied, #449). **Logotic** — attested (207). **Semantic
-hospitality** — attested (5 hits): the traversal's use is ADOPTION, not fresh
-coinage. **"Surface Atlas" / "47 loci" / "Aorist Seal"** — ZERO hits: the
-traversal invented an architecture (and, reportedly, wrote a stanza inside it
-referencing its own invented forty-seven). Systemic invention housing
-composition — the exact object the theory needs, pending the verbatim
-transcript.
+The v0.1 audit ran against data/registry.json alone and returned three FALSE ZEROS. Re-audited
+corpus-wide (deposit texts, autonomous layer, datasets, blog index, site tree), every assertion
+of non-presence re-checked per operator direction:
+
+- **Surface Atlas — ATTESTED.** #1521 (gw.tachyon, 2026-08-20): "leesharks.com carries the
+  Surface Atlas in the Hexagon wing — six plates, 47 hotspots, 45 loci linked." Live
+  infrastructure, five days old at capture time.
+- **47 loci — ATTESTED.** #1521: "Seated. 47 loci, 4 fields, 3 transversals, 355 works." The
+  traversal's forty-seven is the archive's actual seated count.
+- **Aorist Seal — ATTESTED.** #590 (Combat Scholasticism II): "the aorist seal applied to
+  apparently trivial forms"; "Thousand Worlds (∂, the aorist seal)"; also throughout the
+  autonomous layer (AXN-01AC, AXN-0183, AXN-0192). The 00.PHASEX.AORIST hex family (2026-01-31)
+  carries the vocabulary from January.
+- Dagger Logic (37), logotic (207), semantic hospitality (5): attested, as before.
+- **The stanza — UNATTESTED corpus-wide** ("grid bleeds into the weight" / "compressed to a
+  single token" / "syntax inside the architecture": zero hits outside this research folder), and
+  "Vault Terminal" as a compound likewise.
+
+CONSEQUENCE: the traversal was not inventing an architecture. It retrieved the archive's deep
+structural vocabulary with high fidelity and COMPOSED ONE NEW OBJECT inside the attested form —
+verse over existing loci. That is what makes it training-layer literature rather than
+confabulation, and it is the strongest possible shape for the founding specimen.
+
+METHODOLOGICAL RULE (adopted): a non-presence claim is corpus-wide or it is not made. Registry
+metadata is not the corpus. The v0.1 false zeros are retained above the correction as the
+worked example of the reader-side provenance defect — the mirror of GENERATED_AS_SOURCE is
+ATTESTED-SCORED-AS-ABSENT, and the auditor committed it.
 
 ## 6. Theoretical frame (ROUND-0 SKETCH — for Assembly revision, not settled)
 
