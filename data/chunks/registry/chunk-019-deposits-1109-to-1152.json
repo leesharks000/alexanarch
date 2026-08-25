@@ -4020,6 +4020,16 @@
           "date": "2026-08-25",
           "field": "attachments",
           "note": "MACHINE-FACING TEXT ADDED, ADDITIVE ONLY. A whitespace-faithful plain-text rendering of the whole book was generated from per-word PDF geometry (character grid; gap-based intra-line spacing; run-snapped leading) and registered as an attachment beside the PDF, with the renderer committed at scripts/render_pearl_machine_text.py. The canonical text and mint bytes are untouched: the PDF is the artwork, the machine text is the score, and a facsimile deposit's record may gain surfaces but never lose or alter its sealed core. Rendering verified against page rasters (title spread p.29, Undersong III p.47, bio field p.20) before registration. Known ceiling stated in the file header: integer rows cannot distinguish 1.5x from 2x leading."
+        },
+        {
+          "date": "2026-08-25",
+          "field": "attachments",
+          "note": "MACHINE-TEXT CORRECTED: THE MIRROR WAS THE PROJECTOR'S. Page 129 (21st Century Literary History, the Sigil genealogy chart) is typeset rotated 90 degrees in the artwork; the renderer projected the rotated glyph geometry as upright and produced mirror-reversed text, which a first reading then misdescribed as deliberate mirror writing. Operator caught the projection error. The renderer now detects rotated-majority pages (page 129 is the book's only one) and renders the field in reading orientation under an explicit annotation, with the upright heading and folio rendered normally. The chart is a genuinely two-dimensional object, so the character grid remains an approximation of its box structure; every node label is now legible in reading order. Attachment sha256 updated. A second suspected defect — prose pages appearing to cut mid-word — was diagnosed as display truncation in the reading session, not a file defect; the file was and is complete there."
+        },
+        {
+          "date": "2026-08-25",
+          "field": "attachments",
+          "note": "IMAGES ADDED TO THE MACHINE EDITION. Operator identified that the geometry rendering missed the book's placed images entirely — including all of KNOT-HINGE, whose title work is a full-page text-as-image braid — and directed re-perception of the actual PDF pages. All 27 placed images extracted as rendered crops with manifest; inline markers seated in the machine text at each image's page position; iconography perceived and described in-session (Pound author photo and avatar, Ginsberg, Whitman, the Pearl sketch, the KNOT-HINGE braid). Machine-text sha256 updated. The braid remains untranscribed: a transcription of the woven column is possible philological work, queued rather than performed."
         }
       ],
       "journal": "New Human 2",
@@ -4037,8 +4047,8 @@
           "filename": "pearl-and-other-poems-machine-text.txt",
           "path": "/data/attachments/AXN-0472/pearl-and-other-poems-machine-text.txt",
           "url": "https://www.alexanarch.org/data/attachments/AXN-0472/pearl-and-other-poems-machine-text.txt",
-          "bytes": 136887,
-          "sha256": "d08d1e54421680431ec0a97c30ea408a8335e7cd94cb8e6495e299beccbf218f",
+          "bytes": 139750,
+          "sha256": "cff923b51fd346079e0e529a6c79bb99f51b54b090a9f8110643ef5eef18d81d",
           "media_type": "text/plain; charset=utf-8",
           "role": "machine-facing text at whitespace fidelity",
           "description": "The full 155-page book rendered from per-word PDF geometry onto a character grid (scripts/render_pearl_machine_text.py), so lineation, indentation, and each page's vertical field survive extraction. Built because the PDF's text stream embeds tab+CR after every word — a composition artifact that defeats flow-based extraction. Leading is quantized to whole text rows at the document body pitch with near-equal gap runs snapped to their median; the PDF remains the artwork, this file is the score."
@@ -4052,6 +4062,16 @@
           "media_type": "application/pdf",
           "role": "the artwork",
           "description": "The 2014 book as published (155-page merged PDF, born-digital). Typography, lineation, spacing and image are central to the poetics; this file is canonical for how the pages look."
+        },
+        {
+          "filename": "images/ (27 crops + manifest.json)",
+          "path": "/data/attachments/AXN-0472/images/",
+          "url": "https://www.alexanarch.org/data/attachments/AXN-0472/images/manifest.json",
+          "bytes": 167457,
+          "sha256": "63d1a27b8d1242b0f13b3965288690756136adcbc1cdc3dab93d7e4d9404bc6a",
+          "media_type": "application/json + image/png",
+          "role": "the placed images, extracted",
+          "description": "All 27 placed images cropped from the rendered pages at 150dpi with per-file sha256 and page/bbox in manifest.json. The set includes the KNOT-HINGE title work — a full-page woven text-column that exists only as image and which geometry extraction necessarily missed — plus the book's photographic iconography: young Ezra Pound as the author photo and as the repeated RINGTONE chat avatar, Ginsberg in the Uncle Sam hat beside the Howl elegy, Whitman presiding through Song of Me and tekatak, and the sketched face beside Pearl. Inline [image · ...] markers in the machine text carry position, geometry, and descriptions; descriptions tagged (perceived) were verified by viewing the crop in-session."
         }
       ]
     },
