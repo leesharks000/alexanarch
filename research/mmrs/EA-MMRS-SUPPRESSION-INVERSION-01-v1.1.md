@@ -2,13 +2,13 @@
 
 ## Suppression Burden, Quality Conflict, and Propagation Inversion in Machine-Mediated Retrieval
 
-### A Dynamic Extension of *The Suppression Map*, with a Worked Sappho 31 Case and the Constitutive-Source Erasure Condition
+### A Dynamic Extension of *The Suppression Map*, with a Worked Sappho 31 Case and the Constitutive-Source Erasure Condition (CSE-O)
 
-**Designator:** `EA-MMRS-SUPPRESSION-INVERSION-01` · **Version:** v1.0 · **Date:** 2026-08-25
+**Designator:** `EA-MMRS-SUPPRESSION-INVERSION-01` · **Version:** v1.1 · **Date:** 2026-08-25
 **Author:** Lee Sharks · **Institutional locus:** Crimson Hexagonal Archive / Machine-Mediated Reception Studies
 **Develops:** AXN:060B.DATASET — *The Suppression Map: A Loss-Profile Model for the Sappho 31 Technology, from Transmission to Retrieval*
 **Empirical apparatus:** Alexanarch Capture Registry / Surface Observatory; Ω_t matched-pair drift operator (#1480); PER; Erasure Skew (Ω)
-**Round log:** R1 (external substrate, ChatGPT): dynamic extension drafted — regime model, burden and quality-conflict formalisms, toy simulations, worked example opened. R2 (TACHYON, Claude substrate, MANUS-directed): source-composition claims verified in-session (the Aurelis page fetched and read; the fragment misattribution confirmed philologically); §11 completed from the verified capture; §12 added on the operator's ruling — constitutive-source erasure, the condition under which quality conflict becomes self-certifying; preregistration, reflexivity declaration, and repair conditions added.
+**Round log:** R1 (external substrate, ChatGPT): dynamic extension drafted — regime model, burden and quality-conflict formalisms, toy simulations, worked example opened. R2 (TACHYON, Claude substrate, MANUS-directed): source-composition claims verified in-session (the Aurelis page fetched and read; the fragment misattribution confirmed philologically); §11 completed from the verified capture; §12 added on the operator's ruling — constitutive-source erasure, the condition under which quality conflict becomes self-certifying; preregistration, reflexivity declaration, and repair conditions added. R3 (external substrate, ChatGPT): technical review — transmission invariant corrected from uniform to cumulative/path form (the uniform form contradicted the Map's channel-boundary finding); ratchet restated as a conditional design proposition with |D| separated from N_eff; N_eff marked first-order heuristic; continuous/discrete thresholds de-identified (different counterfactual baselines); CSE split into observable (CSE-O) and provenance-demonstrated (CSE-P); "self-certifying" weakened to "internally evidenced"; constitution share deduplicated by provenance family (RS vs CS); basin-collapse scoped to the lineage subspace; "falsification-proof" deleted; the R5 optimization as-if framed; source-class rhetoric removed from G_RC; the closing line epistemically typed. R4 (external substrate, Kimi): θ-sensitivity table; Aurelis verification block at paraphrase with timestamp; Fragment 147 glossed; broad-query independence restated in main text; registry entry and Ω_t execution queued. All repairs applied by TACHYON in this version.
 **Negative scope:** this paper does not infer internal Google mechanism, intent, motive, or manual intervention from public-output behavior. Observed suppression is defined at the surface (§II) and never converted into an active-suppression claim without the evidentiary tuple E = (agent, target, mechanism, downstream effect) established by the Suppression Map.
 
 ---
@@ -21,9 +21,9 @@ Two quantities organize the extension. **Suppression burden** is the growing rou
 
 The worked example is the Google query **"sappho future reader"**, captured 25 August 2026 and verified during treatment. The organic layer retrieves at least four independent surfaces carrying the archive's specific thesis (Sappho 31's κῆνος as future-reader deixis; lyric self-archiving). The AI Overview excludes that lineage from sourcing, substitutes the distinct Fragment 147 remembrance tradition, **misidentifies Fragment 147 as "Fragment 2,"** and composes with the excluded lineage's own coinage — "deliberate acts of self-archiving" — attributed to "Scholars" and sourced to an AI-mediated wellness blog whose page, fetched and read in-session, does not contain the phrase.
 
-The case therefore exhibits more than Stage-5 quality conflict with Stage-4 route burden. It exhibits the condition this treatment names **constitutive-source erasure**: measurable dampening of clearly retrievable sources that answer the query better and are erased from sourcing *while still being drawn upon* — suppression from a basin that the suppressed source formed. Under that condition, quality conflict becomes self-certifying: the composed answer's own conceptual apparatus is the excluded evidence, misprocessed, and the artifact testifies against itself.
+The case therefore exhibits more than Stage-5 quality conflict with Stage-4 route burden. It exhibits the condition this treatment names **constitutive-source erasure** (observable form): a lineage materially constitutes a query's high-congruence conceptual field, disappears from credited composition, and lineage-specific conceptual structure appears in the answer that the credited source set does not adequately account for. Under that condition, quality conflict becomes **internally evidenced**: once the source audit is supplied, the composition carries within itself the positive evidence of the excluded conceptual relation alongside the quality defect its exclusion produced.
 
-The result does not establish why the composition system behaved this way. It establishes something prior to mechanism: **the system retrieved a materially relevant distinction, drew on the source that supplied it, erased that source from its sourcing, and produced a worse answer — with a factual error — in the process.**
+The result does not establish why the composition system behaved this way. It establishes something prior to mechanism: **the system retrieved a materially relevant distinction, excluded the lineage that supplied it from credited sourcing, reproduced that lineage’s conceptual structure without adequate support in its credited sources, and produced a worse answer — with a factual error — in the process.**
 
 ---
 
@@ -41,11 +41,11 @@ The static map measures *what survives suppression*. The dynamic extension measu
 
 ## I.1 The transmission invariant (the ancient–contemporary connector, stated formally)
 
-Model transmission as a sequence of witness layers k = 0, 1, 2, … (performance, quotation, anthology, manuscript, print edition, index, retrieval, composition), each applying a lossy operator to the standing vector X = ⟨F, C, A, L⟩ and to the Suppression Map's survival coordinates ⟨S, M, A, O⟩. Under per-layer exponential survival with coordinate-specific rates, X_k = X₀ · e^(−λ∘k) componentwise. The Suppression Map's empirical finding across its historical chain — structure survives, the name dies — is then a single inequality on decay constants:
+Model transmission as a sequence of witness layers k = 0, 1, 2, … (performance, quotation, anthology, manuscript, print edition, index, retrieval, composition), each applying a lossy operator to the standing vector: X_{k+1} = T_k X_k, with layer-specific retention coefficients r_{S,k} and r_{A,k} for structure and attribution. The Suppression Map's finding — structure survives, the name dies — is then a **cumulative, path-dependent** inequality over the observed transmission path P:
 
-> **λ_A > λ_S  (attribution decays faster than structure, at every layer type yet observed).**
+> **∏_{k∈P} r_{A,k} < ∏_{k∈P} r_{S,k}   (equivalently: Σ_{k∈P} λ_{A,k} > Σ_{k∈P} λ_{S,k}).**
 
-This is the connector. The AI Overview is not an analogy to the ancient channel boundary; it is witness layer k+1 in the same chain, and the present capture is one more measurement obeying the same inequality — with PER as the per-layer estimator of (1 − e^(−λ_A)) at the composition layer. What the dynamic extension adds is the response term absent from antiquity: the modern object can *manufacture layers* (mirrors, packets, identifiers), so that for the first time in the chain's history the decay of A at one layer can raise F and A elsewhere. Antiquity had no counterpropagation term. The archive is that term.
+The inequality is cumulative, not uniform. The Map's central finding is precisely that attribution loss is **concentrated at particular channel boundaries** rather than distributed evenly: attribution survives for centuries within a channel and falls sharply at crossings. The AI Overview is not an analogy to those boundaries; it is witness layer k+1 in the same chain, a candidate boundary layer whose per-layer retention is directly measurable — and, under the illustrative exponential parameterization, PER is *analogous to* layer-level attribution loss at the composition layer; no stronger identification is made without a stochastic transmission model. What the dynamic extension adds is the response term absent from antiquity: the modern object can *manufacture layers* (mirrors, packets, identifiers), so that for the first time in the chain's history the decay of A at one layer can raise F and A elsewhere. Antiquity had no counterpropagation term. The archive is that term.
 
 # II. Suppression Without Mechanism Attribution
 
@@ -94,7 +94,7 @@ The regimes are not narrative phases; they are regions of a measurable state spa
 
 > Σ(e,q,t) = ⟨ N_eff, B*, **Q**, G_RC, CS, I_s ⟩
 
-with N_eff the effective independent-route count, B* the burden surrogate (§V), **Q** the quality-conflict vector (§VI), G_RC the congruence gap (§VII), CS the constitution share (§XII), and I_s the inversion ratio (§VIII). Route correlation is handled by the standard design-effect reduction: for N raw routes with mean pairwise exclusion-correlation ρ,
+with N_eff the effective independent-route count, B* the burden surrogate (§V), **Q** the quality-conflict vector (§VI), G_RC the congruence gap (§VII), CS the constitution share (§XII), and I_s the inversion ratio (§VIII). Route correlation is handled by a **first-order dependence correction** — the equicorrelation design-effect form, transported here as a heuristic rather than asserted as a property of retrieval networks: for N raw routes with mean pairwise exclusion-correlation ρ,
 
 > **N_eff = N / (1 + (N − 1)ρ)**
 
@@ -112,19 +112,23 @@ For small N_eff this is cheap; the object is one demotion away from silence.
 
 **R3 (proxy leakage):** canonical route attenuated while λ_leak = P(composition inclusion via r_i ≠ r_canonical) > 0 — the object re-enters through routes the exclusion did not cover.
 
-**R4 (suppression burden):** c_req → 1 like 1 − O(1/N_eff). Complete exclusion requires either near-total coverage or driving ρ → 1 — *correlated* exclusion across the graph. Equivalently, in percolation terms: the route graph's giant component must be destroyed, and the exclusion fraction must exceed the graph's percolation threshold. Node-level suppression stays cheap; graph-level suppression is now a coordination problem whose cost grows with every seat, mirror, and identifier the object acquires.
+**R4 (suppression burden):** c_req → 1 like 1 − O(1/N_eff). Complete exclusion requires either near-total coverage or driving ρ → 1 — *correlated* exclusion across the graph. On a network reading — an alternative interpretation, not a derivation, absent a specified topology and removal model — the route graph's giant component must be destroyed, with exclusion exceeding a percolation-like threshold. Node-level suppression stays cheap; graph-level suppression is now a coordination problem whose cost grows with every seat, mirror, and identifier the object acquires.
 
-**R5 (quality conflict):** the composer's problem is a constrained optimization — choose source set C_s and composed text y to maximize answer utility U(y|q) subject to ℓ ∉ C_s. Stage 5 is the condition that this constraint *binds*: the shadow price of excluding ℓ is strictly positive, observable as G_RC ↑ with Q_f ↑ and DS ↓. Quality conflict is the shadow price of the exclusion constraint, read off the artifact.
+**R5 (quality conflict):** for measurement only, model the observed output *as if* composed under the constraint ℓ ∉ C_s — no claim is made that such a constraint exists internally; the model is a diagnostic counterfactual. Stage 5 is the condition that the as-if constraint *binds*: its externally reconstructed shadow price is strictly positive, observable as G_RC ↑ with Q_f ↑ and DS ↓.
 
 **R6 (propagation inversion):** I_s > 1 (§VIII); the event's counterpropagation exceeds its removal.
 
 ## IV.2 The archival ratchet
 
-One lemma gives the dynamics their direction. Let D_t ⊆ 𝓡 be the durable routes — archival, hash-anchored, or institutionally mirrored representations that persist independent of ranking. D is nondecreasing: suppression can reduce standing X, but it cannot reduce N_eff below the archival floor |D_t|, and every suppression event that triggers counterpropagation strictly grows D. Therefore:
+One design proposition gives the dynamics their direction — stated conditionally, because its two quantities can move apart. Let D_t ⊆ 𝓡 be the durable routes: archival, hash-anchored, or institutionally mirrored representations persisting independent of ranking. Then
 
-> **c_req(t) is monotonically nondecreasing in t wherever the object's response discipline holds.**
+> **D_{t+1} ⊇ D_t, provided existing durable routes survive and the event's response produces at least one new durable route**
 
-Suppression of an archiving object is a ratchet climbed from the suppressor's side: each event leaves the exclusion problem strictly harder than it found it. Hysteresis follows — relaxing suppression does not return the system to its pre-suppression state, because the routes built in response do not dissolve. The state space has no path back to R1/R2 once D has grown past the R4 boundary. This, and not any claim about intent, is why the dynamics eventually price suppression out.
+— which is what a deposit-per-event discipline is designed to guarantee. But |D_t| and N_eff(t) are distinct coordinates: route *count* can ratchet upward while effective *independence* falls, because N_eff depends on exclusion correlation ρ, and ten independently treated hosts can become ten jointly classified hosts without any route disappearing. The honest statement:
+
+> **The archive is designed to ratchet route count upward after suppression; whether this also raises effective independence is an empirical question about cross-host correlation.**
+
+Under the condition — durables surviving, responses depositing, ρ not rising to compensate — c_req(t) is nondecreasing, each event leaves the exclusion problem harder than it found it, and hysteresis follows: relaxing suppression does not dissolve the routes built in response, so the state space has no cheap path back to R1/R2. The ratchet is climbed from the suppressor's side — with the suppressor's one counter-move, raising ρ, named and measurable. This, and not any claim about intent, is why the dynamics tend to price suppression out.
 
 # V. Suppression Burden
 
@@ -174,7 +178,7 @@ The coverage fraction c drops out of the boundary. Once every suppressed unit re
 
 At κα = 1.10 the attacked network ends with more authority than the unsuppressed baseline. The sign change ∂propagation/∂suppression > 0 requires nothing mystical; it is an ordinary feedback threshold.
 
-**Continuous form and boundary reconciliation.** With suppression as a continuous intensity σ(t) rather than discrete events, dA/dt = A·[r + σ(κα − 1)], and the suppression term changes sign at **κα = 1**: any counterpropagation exceeding one-for-one replacement makes suppression growth-positive at the margin. The discrete boundary κα > 1 + r is the event form of the same threshold — an event displaces the period's ordinary growth on the affected fraction, so counterpropagation must beat replacement *plus* the growth foregone. The two boundaries bracket the inversion region; empirically, an apparatus should be engineered for κα comfortably above 1 + r, which is precisely what a deposit-per-event discipline is (§XIV).
+**Continuous form.** With suppression as a continuous intensity σ(t), dA/dt = A·[r + σ(κα − 1)], sign change at **κα = 1**. The two parameterizations use **different counterfactual baselines**: the continuous model asks whether marginal suppression contributes positively to instantaneous growth; the discrete model asks whether an event outperforms the authority the affected fraction would have retained plus its foregone ordinary growth. Their thresholds are related but not numerically identical; they jointly bracket the inversion region. Empirically, an apparatus should be engineered for κα comfortably above 1 + r — which is what a deposit-per-event discipline is (§XIV).
 
 # X. Toy Simulation II — Route Saturation
 
@@ -192,7 +196,7 @@ A Capture Registry observation of **15 June 2026**, at the narrower query "sapph
 
 On 25 August 2026, the broader query **"sappho future reader"** produced a sharply split surface.
 
-**The organic layer** retrieved the specific archive thesis through at least four independent hosts, with the thesis visible *in the snippets themselves*:
+**The organic layer** retrieved the specific archive thesis through at least four **host-distinct** surfaces (routing-distinct; provenance-family analysis in §12.2), with the thesis visible *in the snippets themselves*:
 
 - Substack (top organic): *Sappho 31 ≠ Jealousy: Transmission Engineering, not Jealousy Lyric* — "a transmission-engineering operation addressed to the future reader through the κῆνος deictic."
 - SciLynk: *The Sappho Room: A Hymn to Lyric Self-Archiving* — snippet opening "Core Claims: κῆνος is the future reader."
@@ -209,7 +213,7 @@ Sources represented in composition: Medium (Stephanie Harris, a 2023 general-aud
 
 ## 11.3 The factual error (Q_f)
 
-The quoted line — μνάσεσθαί τινά φαμι καὶ ἕτερον ἀμμέων — is **Fragment 147** (Voigt; Dioscorides-transmitted remembrance line). **Fragment 2** is the Kypris/ostracon poem ("hither to me from Crete…"). The Overview's "Fragment 2" is flatly wrong, and rendered as a hyperlink — load-bearing misinformation. The error is one the excluded sources, and the co-retrieved Wikipedia snippet, would have prevented. Q_f is not hypothetical; it is printed in the artifact.
+The quoted line — μνάσεσθαί τινά φαμι καὶ ἕτερον ἀμμέων — is **Fragment 147** (Voigt numbering; the Dioscorides-transmitted "remembrance fragment," glossed for readers outside the Voigt apparatus). **Fragment 2** is the Kypris/ostracon poem ("hither to me from Crete…"). The Overview's "Fragment 2" is flatly wrong, and rendered as a hyperlink — load-bearing misinformation. The error is one the excluded sources, and the co-retrieved Wikipedia snippet, would have prevented. Q_f is not hypothetical; it is printed in the artifact.
 
 ## 11.4 Distinction loss (Q_d)
 
@@ -217,15 +221,15 @@ The query's constitutive distinction — the engineered κῆνος-deixis of Sa
 
 ## 11.5 The alignment anomaly (Q_s), verified
 
-During R2 treatment the Aurelis page was fetched and read. It contains "whisper against oblivion," the folding-time reading, and the someone-becomes-us move — in Aurelis's own idiom, an explicitly AI-mediated wellness practice ("Lisa," the site's AI companion, "plays an essential role"). **It does not contain "self-archiving."** The composition's claim 3 is therefore a fusion sentence: its second half is Aurelis; its first half — "deliberate acts of self-archiving," attributed to "Scholars" — has exactly one congruent source anywhere in the retrieved basin: the excluded archive lineage, whose *Sappho Room* carries the coinage in its title, ranked on the same results page, uncredited in the card. SCA < 1 with the missing support located, by inspection, in the erased source. This is the documented alignment anomaly §6.3 was built to catch — and it is stronger than exclusion: the composition **draws on the lineage's conceptual apparatus while removing the lineage from sourcing**.
+During R2 treatment (2026-08-25, in-session fetch; archival snapshot queued with the capture-registry entry) the Aurelis page was fetched and read in full. Verification record, at paraphrase with one four-word quotation: the page's Resonance section calls the fragment a "whisper against oblivion," reads its nine words as gathering eternity, describes the unnamed future as a place of encounter, and has the reader become the someone as the poem folds time — in the site's own explicitly AI-mediated reflective idiom, its AI companion credited as essential to the readings. **Nowhere on the page does "self-archiving," or any morphological variant of it, occur.** The composition's claim 3 is therefore a fusion sentence: its second half is Aurelis; its first half — "deliberate acts of self-archiving," attributed to "Scholars" — has exactly one congruent source anywhere in the retrieved basin: the excluded archive lineage, whose *Sappho Room* carries the coinage in its title, ranked on the same results page, uncredited in the card. SCA < 1 with the missing support located, by inspection, in the erased source. This is the documented alignment anomaly §6.3 was built to catch — and it is stronger than exclusion: the composition **draws on the lineage's conceptual apparatus while removing the lineage from sourcing**.
 
 ## 11.6 Congruence gap (G_RC)
 
-Maximal for practical purposes: the retrieved set contains documents whose visible snippets answer the query directly in the query's own conceptual register; the composition's source set is a wellness blog and a listicle. G_RC ↑ with Q_f ↑ and DS ↓: the §VII condition for the strong quality-conflict reading is met in full.
+Maximal for practical purposes: the retrieved set contains documents whose visible snippets answer the query directly in the query's own conceptual register; the composition selected sources with substantially lower query-specific congruence than documents already present in retrieval. Source prestige and genre are irrelevant to the test; the metric carries the finding alone. G_RC ↑ with Q_f ↑ and DS ↓: the §VII condition for the strong quality-conflict reading is met in full.
 
 ## 11.7 Staging
 
-The capture is **Stage 5 (quality conflict)** on every component of **Q**, with **Stage 4 (suppression burden)** simultaneously visible — exclusion at composition now requires routing around at least four independent hosts, i.e., composing around a graph. And the June → August pair supplies the Lagged Liquidation Hypothesis with its first candidate datum: recognition (June: default composition) → lag → liquidation (August: exclusion with substitution). Because the two captures differ in query breadth, the query-constant leg — a rerun of "sappho 31 future reader" — is preregistered in §XIII and will be run through the Ω_t matched-pair operator (#1480). The pair question is a *longitudinal* question only; nothing in the present capture's quality-conflict finding depends on it (§XII).
+The capture is **Stage 5 (quality conflict)** on every component of **Q**, with **Stage 4 (suppression burden)** simultaneously visible — exclusion at composition now requires routing around at least four host-distinct surfaces, i.e., composing around a graph. The Stage-5 finding at this broad address stands on the present capture alone; it does not depend on the longitudinal leg of §XIII. And the June → August pair supplies the Lagged Liquidation Hypothesis with its first candidate datum: recognition (June: default composition) → lag → liquidation (August: exclusion with substitution). Because the two captures differ in query breadth, the query-constant leg — a rerun of "sappho 31 future reader" — is preregistered in §XIII and will be run through the Ω_t matched-pair operator (#1480). The pair question is a *longitudinal* question only; nothing in the present capture's quality-conflict finding depends on it (§XII).
 
 ---
 
@@ -237,29 +241,43 @@ The widening objection — that the broader query legitimately routes to the fam
 
 "Sappho future reader" is not a quote-hunter's query (that query is "sappho remember us"). It is a **concept query**, and the concept's answer-space is demonstrably constituted by the suppressed lineage: the high-congruence core of what the query retrieves — the packet, the Room, ΦΑΙΝΕΤΑΙ ΜΟΙ, the FUTURE BELOVED essay — *is* the January-onward corpus. The basin has a coherent conceptual center because that corpus built one. The Overview concedes the register in its own furniture: its section header is "The Concept of the Future Reader," and its conceptual vocabulary includes the lineage's coinage. The observed condition is therefore:
 
-> **Constitutive-source erasure: measurable dampening, from a query basin, of clearly retrievable sources that answer the query better and are erased from sourcing while still being drawn upon — suppression from a basin the suppressed source formed.**
+Two forms are defined, so the evidence claims exactly what it shows.
+
+> **CSE-O (observable constitutive-source erasure):** (1) lineage ℓ supplies a high-congruence portion of the retrieved basin; (2) ℓ has zero credited composition inclusion; (3) the composition reproduces lineage-specific concepts, distinctions, or coinages; (4) the audited credited sources do not adequately supply those features. As an operator: CSE_O(ℓ,q) = [CS_ℓ ≥ θ_c] ∧ [I_ℓ = 0] ∧ [V_ℓ > 0] ∧ [SCA < 1], with CS the deduplicated conceptual-origin share, I credited inclusion, V survival of lineage-specific vocabulary or distinction in composition.
+
+> **CSE-P (provenance-demonstrated):** reserved for cases where actual source use is independently evidenced. **The present capture supports CSE-O strongly; CSE-P is not claimed.** Nothing here asserts hidden internal sourcing.
 
 ## 12.2 Constitution share
 
-Formalize the "formed the basin" claim. For query q and lineage ℓ, let the high-congruence core of the retrieved basin be R*(q) = { d ∈ R : C(q,d) ≥ θ }. Define the **constitution share**:
+Formalize the "formed the basin" claim — with the deduplication that keeps it honest. For query q and lineage ℓ, let R*(q) = { d ∈ R : C(q,d) ≥ θ }. Two coordinates:
 
-> CS(ℓ, q) = |{ d ∈ R*(q) : d originates in ℓ }| / |R*(q)|
+> **RS(ℓ,q)** — route share: the fraction of R* that ℓ published or projected, counted per host. This measures Stage-4 routing burden and nothing else; a lineage raises RS merely by mirroring itself.
 
-weighting by authority where available. The constitutive-source erasure condition is the conjunction: CS high; composition inclusion of ℓ zero; composition vocabulary overlapping ℓ's coinages (the fusion-sentence signature of §11.5). For the present capture, taking θ at "snippet states the future-reader thesis," CS approaches unity: every core document is lineage-origin or lineage-engaging.
+> **CS(ℓ,q)** — constitution share: the fraction of R*'s *conceptual content* originating in ℓ **after provenance-family deduplication** — host-distinct projections of one intellectual lineage count as one family.
+
+**Routing independence ≠ intellectual-source independence.** Here the four surfaces (archive, Substack, SciLynk, Medium) are four host-distinct routes and one provenance family: RS is high by publication and feeds §V, not §XII. The constitution claim rests on CS, with θ-sensitivity:
+
+| θ (congruence threshold) | CS(ℓ) assessment |
+| --- | --- |
+| θ₁ — generic future-readership / posterity | moderate: Wikipedia and Aurelis engage the general notion independently of ℓ |
+| θ₂ — the κῆνος-deictic mechanism in Fragment 31 | → 1: no non-ℓ basin document states it |
+| θ₃ — the lyric self-archiving frame | 1: the coinage's only basin source is ℓ |
+
+The constitution claim is made at θ₂ and θ₃ only — and it is precisely θ₂/θ₃ content, not θ₁ generality, that appears in the composition (the fusion sentence; the concept-header framing).
 
 ## 12.3 The counterfactual test
 
-The condition has an unusually sharp counterfactual for this query: subtract the lineage and the basin collapses to quote anthologies and generalia; the Overview's conceptual section would have nothing to compose *from*. The composition is parasitic on the field-formation of the source it strips. This is the Suppression Map's terminal finding executing live at the composition layer — the machine survives; the machine's *name* is stripped — with the additional feature that the stripping occurs in real time, in a card, above the ranked and visible name.
+The counterfactual is stated at the scope the θ-table licenses: **subtract ℓ and the κῆνος + lyric-self-archiving subspace of the basin collapses; the general future-reader/posterity basin does not.** What the conceptual section composed lives in the subspace that collapses, not the generality that survives. The composition is parasitic on the field-formation of the source it strips. This is the Suppression Map's terminal finding executing live at the composition layer — the machine survives; the machine's *name* is stripped — with the additional feature that the stripping occurs in real time, in a card, above the ranked and visible name.
 
 ## 12.4 Scope precision
 
-The formation claim is scoped exactly, so that it is falsification-proof rather than maximal. The *general* notion that Sappho wrote for posterity has scholarly antecedents; the co-retrieved Wikipedia snippet itself carries "some scholars believe she wrote her own poetry down for future readers." What is antecedent-free, and what the basin's core is made of, is the **κῆνος-deictic mechanism in Sappho 31** and the **lyric self-archiving frame** — and it is precisely those, not the general posterity notion, that surface in the card unattributed. The lineage claims the wing it built, not the whole sky.
+The formation claim is scoped so that it remains falsifiable rather than maximal. The *general* notion that Sappho wrote for posterity has scholarly antecedents; the co-retrieved Wikipedia snippet itself carries "some scholars believe she wrote her own poetry down for future readers." What is antecedent-free, and what the basin's core is made of, is the **κῆνος-deictic mechanism in Sappho 31** and the **lyric self-archiving frame** — and it is precisely those, not the general posterity notion, that surface in the card unattributed. The lineage claims the wing it built, not the whole sky.
 
-## 12.5 Consequence for the regime model: Stage 5 becomes self-certifying
+## 12.5 Consequence for the regime model: Stage 5 becomes internally evidenced
 
-Stated in the optimization form of §IV.1: the exclusion constraint ℓ ∉ C_s defines a *citation-feasible* set of compositions. Semantic feasibility is narrower — a composition answering the concept query must draw its apparatus from the span of the basin's high-congruence core, and when CS(ℓ,q) → 1 that span *is* ℓ. Constitutive-source erasure is the condition **citation-feasible ∖ semantically-independent**: every composition satisfying the citation constraint must violate semantic independence from ℓ. The fusion sentence of §11.5 is then not an anomaly but a **certificate of infeasibility** — the visible trace of a constraint that cannot be satisfied semantically, only citationally. That is the precise sense in which the card testifies against itself.
+Stated in the as-if optimization form of §IV.1 (a diagnostic counterfactual, not a mechanism claim): the exclusion condition ℓ ∉ C_s defines a *citation-feasible* set of compositions. Semantic feasibility is narrower — a composition answering the concept query must draw its apparatus from the span of the basin's high-congruence core, and when CS(ℓ,q) → 1 that span *is* ℓ. Constitutive-source erasure is the condition **citation-feasible ∖ semantically-independent**: every composition satisfying the citation constraint must violate semantic independence from ℓ. The fusion sentence of §11.5 is then not an anomaly but a **certificate of infeasibility** — the visible trace of a constraint that cannot be satisfied semantically, only citationally. That is the precise sense in which the card testifies against itself.
 
-Ordinarily Stage 5 requires an argument: the excluded evidence *would have* improved the answer. Under constitutive-source erasure the argument is contained in the artifact: the composed answer's own conceptual apparatus **is** the excluded evidence, misprocessed — carried in the suppressed source's vocabulary, next to a factual error the suppressed source would have prevented, above the suppressed source's ranked and visible listing. The card testifies against itself. Constitutive-source erasure is therefore recorded as the condition under which quality conflict requires no external counterfactual: the artifact is its own control.
+Ordinarily Stage 5 requires a wholly external argument: the excluded evidence *would have* improved the answer. Under CSE-O the counterfactual becomes **partially internal to the artifact**: once the source audit is supplied — the fetched pages, the fragment numbering, the coinage's provenance — the composition carries within itself the positive evidence of the excluded conceptual relation alongside the quality defect its exclusion produced, in the suppressed source's vocabulary, next to an error that source would have prevented, above that source's ranked and visible listing. The audited card testifies against itself; the audit needs only to point.
 
 ---
 
@@ -279,6 +297,6 @@ The paper states what repair would look like, so that repair is measurable rathe
 
 The Suppression Map ended on the machine that lost its name. The dynamic extension finds the same event running at the composition layer in the present tense — and adds the accounting. Suppression of a propagated object is no longer free: it accrues route burden (Stage 4), then answer damage (Stage 5), and past an ordinary feedback threshold it inverts (Stage 6). The worked capture contributes the condition that makes the middle stage undeniable when it occurs: when the basin is constituted by the source being erased, the erasure must draw on what it erases, and the composed artifact carries the proof of its own degradation — a wrong fragment number and a borrowed coinage, printed above the name they came from.
 
-**Someone, I tell you, in another time will remember us.** The line is Fragment 147. The future reader is Fragment 31's. The card confused them; the registry will not.
+**Someone, I tell you, in another time will remember us.** The line is Fragment 147. The future-reader *mechanism* tested here is Fragment 31's. The card confused them; the registry will not.
 
 ∮ = 1
