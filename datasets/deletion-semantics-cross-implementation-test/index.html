@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Deletion Semantics — Cross-Implementation Test v1.0</title>
+<meta name="description" content="A recorded removal and a never-landed write are observationally identical at the consumer boundary. Reproducibility package composing a remember/0.2 producer bundle, an independently built assertion-consistency checker, and a 111-case conformance corpus. Necessity and sufficiency of the minimal repair tested. CC BY 4.0.">
+<link rel="canonical" href="https://www.alexanarch.org/datasets/deletion-semantics-cross-implementation-test/">
+<style>
+body{margin:0;background:#faf9f5;color:#26271f;font-family:Georgia,serif;line-height:1.6;font-size:16.5px}
+.wrap{max-width:820px;margin:0 auto;padding:18px 16px 60px}
+.id{font-family:ui-monospace,monospace;font-size:11px;color:#7a5a1e;border-bottom:1px solid #d9d9d0;padding:6px 0 12px;display:flex;gap:12px;flex-wrap:wrap}
+.id a{color:#7a5a1e}
+h1{font-size:1.7em;line-height:1.16;margin:22px 0 4px}
+.sub{color:#5c5e53;margin-bottom:14px}
+h2{font-size:1.05em;margin:26px 0 8px;letter-spacing:.02em}
+table{border-collapse:collapse;font-size:.9em;width:100%}
+td,th{border-top:1px solid #d9d9d0;padding:6px 8px;text-align:left;vertical-align:top}
+th{font-weight:600}
+.num{text-align:right;font-family:ui-monospace,monospace}
+.files a{display:block;padding:7px 0;border-top:1px solid #e4e4dc;color:#7a5a1e;text-decoration:none;font-family:ui-monospace,monospace;font-size:13px}
+.files a:hover{text-decoration:underline}
+.files span{color:#5c5e53;font-family:Georgia,serif;font-size:.95em;margin-left:8px}
+code{font-family:ui-monospace,monospace;font-size:.88em;background:#f0f0ea;padding:1px 5px;border-radius:3px}
+.note{border:1px solid #d9d9d0;background:#f6f6f2;border-radius:6px;padding:12px 15px;font-size:.93em;margin:14px 0}
+pre{background:#f0f0ea;border-radius:6px;padding:12px 15px;overflow-x:auto;font-size:13px;line-height:1.5}
+</style></head><body><div class="wrap">
+<div class="id">
+<span>deletion-semantics-cross-implementation-test v1.0</span>
+<span>2026-08-26</span>
+<span>CC BY 4.0</span>
+<a href="https://www.alexanarch.org/">Crimson Hexagonal Archive</a>
+<a href="../deletion-conformance-fixture/">the corpus this tests</a>
+</div>
+
+<h1>Deletion Semantics — Cross-Implementation Test</h1>
+<p class="sub">A recorded removal and a never-landed write are observationally identical at the consumer boundary. Exposing the absence assertion on a machine-readable discovery surface is necessary and sufficient to separate them.</p>
+
+<div class="note">Fulfils the cross-test offered on <a href="https://github.com/GoogleCloudPlatform/knowledge-catalog/issues/207">knowledge-catalog#207</a>. Three artifacts, none modified, none authored by the same party. Read <a href="reports/FINDINGS.md"><strong>FINDINGS.md</strong></a> first; reproduce from clean clones with <a href="commands/reproduce.sh">reproduce.sh</a>; every pin is in <a href="sources/source-lock.json">source-lock.json</a>.</div>
+
+<h2>The three artifacts</h2>
+<table>
+<tr><th></th><th>artifact</th><th>role</th></tr>
+<tr><td>producer</td><td><a href="https://github.com/andrewcrenshaw/remember-okf-sample-bundle">remember-okf-sample-bundle</a> <code>ea18185f</code></td><td>remember/0.2 emitted shape — log, store, manifest, tombstones</td></tr>
+<tr><td>consumer</td><td><a href="https://github.com/inkxel/throughline">throughline</a> <code>c512e8b9</code> · <code>never_landed.py</code></td><td>assertion-consistency checker</td></tr>
+<tr><td>corpus</td><td><a href="../deletion-conformance-fixture/">deletion-conformance-fixture v2.1</a></td><td>111 cases, built before either implementation existed</td></tr>
+</table>
+
+<h2>The collision</h2>
+<p>Three records, one convention. <strong>A</strong> created and present. <strong>B</strong> created, then removed — tombstone records presence, date, reason, successor. <strong>C</strong> creation asserted, never landed.</p>
+<pre>current consumer     A → present    B → never_landed    C → never_landed    B and C COLLIDE
+repaired consumer    A → present    B → removed         C → never_landed    B and C DIVERGE</pre>
+<p>The producer recorded the removal faithfully. The consumer correctly reported a claim with no landing. The information is destroyed in the gap between them: the removal lives in <code>tombstones.md</code> prose, and the machine-readable index references no tombstones at all. Neither implementation is at fault.</p>
+
+<h2>Necessity and sufficiency</h2>
+<p>Lift the absence record into the machine index and add one consumer lookup — before calling a claim never-landed, ask whether an absence record survives for that identity — and B and C diverge, with A and the claim counts undisturbed. Strip the record while leaving the prose tombstone <em>fully intact</em>, and they collide again. The requirement is therefore not to record the removal, which the producer already did.</p>
+<div class="note"><strong>Normative form.</strong> A surviving absence assertion must be exposed on a machine-readable discovery surface that ordinary consumers consult. Preserving the same information only in prose is insufficient. <em>Not</em> “put tombstones in <code>.manifest.json</code>” — that is one producer's carrier, not a format primitive.</div>
+
+<h2>Translation receipts</h2>
+<p>Rendering the corpus into the producer's shape twice — <strong>strict</strong>, refusing anything requiring a key the emitter does not define, and <strong>forced</strong>, translating everything — produces the <em>same clean downstream verdict</em> by opposite means.</p>
+<table>
+<tr><th></th><th class="num">strict</th><th class="num">forced</th></tr>
+<tr><td>source cases</td><td class="num">111</td><td class="num">111</td></tr>
+<tr><td>expressible</td><td class="num">1</td><td class="num">111</td></tr>
+<tr><td>refused untranslatable</td><td class="num">110</td><td class="num">0</td></tr>
+<tr><td>preserved</td><td class="num">1</td><td class="num">1</td></tr>
+<tr><td>coerced</td><td class="num">0</td><td class="num">110</td></tr>
+<tr><td>dropped</td><td class="num">4</td><td class="num">451</td></tr>
+<tr><td>fabricated</td><td class="num">0</td><td class="num">110</td></tr>
+<tr><td>downstream verdict</td><td class="num">clean</td><td class="num">clean</td></tr>
+</table>
+<p>The checker cannot distinguish the two runs; the receipt can, and its fidelity warning cannot be detached from the green result. <strong>Absence of an alarm is not evidence of preservation.</strong> <code>refused</code> is kept distinct from <code>coerced</code>: a translator that declines to represent what it cannot carry preserves integrity; one that silently forces it does not.</p>
+
+<h2>Stated limits</h2>
+<p>Representation portability is <strong>1 of 111</strong> while checker portability holds on two flags — different properties. The corpus under-represents the case the finding turns on: every expressible case is <code>presence=removed</code>, and exactly one <code>never_landed</code> case exists. The <code>--id-key</code> failure mode is a property of stores whose filenames diverge from stable ids, so a fixture on stem-named stores never exercises it. An earlier exploratory figure of 671 breaks reconciles exactly as 451 dropped + 110 coerced + 110 fabricated — the measurement became more discriminating; the quantity did not change.</p>
+
+<h2>Files</h2>
+<div class="files">
+<a href="reports/FINDINGS.md">reports/FINDINGS.md<span>the argument, with every number sourced to a run</span></a>
+<a href="commands/reproduce.sh">commands/reproduce.sh<span>full reproduction from clean clones</span></a>
+<a href="sources/source-lock.json">sources/source-lock.json<span>pinned commits, URLs, parameters</span></a>
+<a href="receipts/strict.json">receipts/strict.json<span>honest translation, 110 refusals</span></a>
+<a href="receipts/forced.json">receipts/forced.json<span>lossy translation, fidelity warning attached</span></a>
+<a href="profiles/forced-break-profile.json">profiles/forced-break-profile.json<span>every field-level break, by case</span></a>
+<a href="translator/translate.py">translator/translate.py<span>the shape translator</span></a>
+<a href="translator/receipt.py">translator/receipt.py<span>receipt generator with the fidelity ladder</span></a>
+<a href="translator/repair.py">translator/repair.py<span>minimal absence record + repaired consumer</span></a>
+<a href="MANIFEST.json">MANIFEST.json<span>dataset record</span></a>
+<a href="SHA256SUMS">SHA256SUMS<span>hash surface, 40 files</span></a>
+</div>
+
+<div class="note">Credit: the <code>--id-key</code> resolution path and the empty-log guard are <a href="https://github.com/andrewcrenshaw">@andrewcrenshaw</a>'s contributions to <a href="https://github.com/inkxel">@inkxel</a>'s checker; the checker and the bundle are their work. This package composes them and adds the translation, the receipt, the fixture, and the repair test. Both published baselines reproduce exactly here — a third independent reproduction of each.</div>
+</div></body></html>
