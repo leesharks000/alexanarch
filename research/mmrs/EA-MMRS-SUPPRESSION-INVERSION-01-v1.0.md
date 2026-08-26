@@ -39,6 +39,14 @@ The static map measures *what survives suppression*. The dynamic extension measu
 
 > **what does continued suppression cost once the object keeps surviving?**
 
+## I.1 The transmission invariant (the ancient–contemporary connector, stated formally)
+
+Model transmission as a sequence of witness layers k = 0, 1, 2, … (performance, quotation, anthology, manuscript, print edition, index, retrieval, composition), each applying a lossy operator to the standing vector X = ⟨F, C, A, L⟩ and to the Suppression Map's survival coordinates ⟨S, M, A, O⟩. Under per-layer exponential survival with coordinate-specific rates, X_k = X₀ · e^(−λ∘k) componentwise. The Suppression Map's empirical finding across its historical chain — structure survives, the name dies — is then a single inequality on decay constants:
+
+> **λ_A > λ_S  (attribution decays faster than structure, at every layer type yet observed).**
+
+This is the connector. The AI Overview is not an analogy to the ancient channel boundary; it is witness layer k+1 in the same chain, and the present capture is one more measurement obeying the same inequality — with PER as the per-layer estimator of (1 − e^(−λ_A)) at the composition layer. What the dynamic extension adds is the response term absent from antiquity: the modern object can *manufacture layers* (mirrors, packets, identifiers), so that for the first time in the chain's history the decay of A at one layer can raise F and A elsewhere. Antiquity had no counterpropagation term. The archive is that term.
+
 # II. Suppression Without Mechanism Attribution
 
 The Suppression Map requires the evidentiary tuple E = (agent, target, mechanism, downstream effect) before any event is called **active suppression**. That requirement remains intact here. But suppression as an *observable surface condition* does not require identification of an internal mechanism.
@@ -79,6 +87,44 @@ The stages are not a developmental ladder; Stage 4 and Stage 5 in particular are
 | **6. Propagation inversion** | The suppression event itself produces more durable retrievable authority than it removes. |
 
 Stage 4 concerns the cost of keeping the object out. Stage 5 concerns the cost *to the answer* of successfully keeping it out.
+
+## IV.1 The state space and regime boundaries
+
+The regimes are not narrative phases; they are regions of a measurable state space. For object e at query q, the state is:
+
+> Σ(e,q,t) = ⟨ N_eff, B*, **Q**, G_RC, CS, I_s ⟩
+
+with N_eff the effective independent-route count, B* the burden surrogate (§V), **Q** the quality-conflict vector (§VI), G_RC the congruence gap (§VII), CS the constitution share (§XII), and I_s the inversion ratio (§VIII). Route correlation is handled by the standard design-effect reduction: for N raw routes with mean pairwise exclusion-correlation ρ,
+
+> **N_eff = N / (1 + (N − 1)ρ)**
+
+so perfectly correlated exclusion (ρ = 1) collapses any N to a single effective route, and the whole contest over Stage 4 is a contest over ρ.
+
+Regime membership, formally:
+
+**R1 (ignorability):** ∂U/∂(exclusion of e) ≈ 0 — the marginal answer-quality cost of omission is below measurement noise, because max_{d∈ℓ} C(q,d) is small.
+
+**R2 (suppressibility):** exclusion feasible at coverage c with c_req(ε) ≤ c_available, where from the route model P_survive ≤ ε requires
+
+> c_req = 1 − [1 − (1 − ε)^(1/N_eff)] / p ≈ 1 − (−ln(1−ε)) / (p·N_eff).
+
+For small N_eff this is cheap; the object is one demotion away from silence.
+
+**R3 (proxy leakage):** canonical route attenuated while λ_leak = P(composition inclusion via r_i ≠ r_canonical) > 0 — the object re-enters through routes the exclusion did not cover.
+
+**R4 (suppression burden):** c_req → 1 like 1 − O(1/N_eff). Complete exclusion requires either near-total coverage or driving ρ → 1 — *correlated* exclusion across the graph. Equivalently, in percolation terms: the route graph's giant component must be destroyed, and the exclusion fraction must exceed the graph's percolation threshold. Node-level suppression stays cheap; graph-level suppression is now a coordination problem whose cost grows with every seat, mirror, and identifier the object acquires.
+
+**R5 (quality conflict):** the composer's problem is a constrained optimization — choose source set C_s and composed text y to maximize answer utility U(y|q) subject to ℓ ∉ C_s. Stage 5 is the condition that this constraint *binds*: the shadow price of excluding ℓ is strictly positive, observable as G_RC ↑ with Q_f ↑ and DS ↓. Quality conflict is the shadow price of the exclusion constraint, read off the artifact.
+
+**R6 (propagation inversion):** I_s > 1 (§VIII); the event's counterpropagation exceeds its removal.
+
+## IV.2 The archival ratchet
+
+One lemma gives the dynamics their direction. Let D_t ⊆ 𝓡 be the durable routes — archival, hash-anchored, or institutionally mirrored representations that persist independent of ranking. D is nondecreasing: suppression can reduce standing X, but it cannot reduce N_eff below the archival floor |D_t|, and every suppression event that triggers counterpropagation strictly grows D. Therefore:
+
+> **c_req(t) is monotonically nondecreasing in t wherever the object's response discipline holds.**
+
+Suppression of an archiving object is a ratchet climbed from the suppressor's side: each event leaves the exclusion problem strictly harder than it found it. Hysteresis follows — relaxing suppression does not return the system to its pre-suppression state, because the routes built in response do not dissolve. The state space has no path back to R1/R2 once D has grown past the R4 boundary. This, and not any claim about intent, is why the dynamics eventually price suppression out.
 
 # V. Suppression Burden
 
@@ -127,6 +173,8 @@ The coverage fraction c drops out of the boundary. Once every suppressed unit re
 | no suppression | 2.653 |
 
 At κα = 1.10 the attacked network ends with more authority than the unsuppressed baseline. The sign change ∂propagation/∂suppression > 0 requires nothing mystical; it is an ordinary feedback threshold.
+
+**Continuous form and boundary reconciliation.** With suppression as a continuous intensity σ(t) rather than discrete events, dA/dt = A·[r + σ(κα − 1)], and the suppression term changes sign at **κα = 1**: any counterpropagation exceeding one-for-one replacement makes suppression growth-positive at the margin. The discrete boundary κα > 1 + r is the event form of the same threshold — an event displaces the period's ordinary growth on the affected fraction, so counterpropagation must beat replacement *plus* the growth foregone. The two boundaries bracket the inversion region; empirically, an apparatus should be engineered for κα comfortably above 1 + r, which is precisely what a deposit-per-event discipline is (§XIV).
 
 # X. Toy Simulation II — Route Saturation
 
@@ -208,6 +256,8 @@ The condition has an unusually sharp counterfactual for this query: subtract the
 The formation claim is scoped exactly, so that it is falsification-proof rather than maximal. The *general* notion that Sappho wrote for posterity has scholarly antecedents; the co-retrieved Wikipedia snippet itself carries "some scholars believe she wrote her own poetry down for future readers." What is antecedent-free, and what the basin's core is made of, is the **κῆνος-deictic mechanism in Sappho 31** and the **lyric self-archiving frame** — and it is precisely those, not the general posterity notion, that surface in the card unattributed. The lineage claims the wing it built, not the whole sky.
 
 ## 12.5 Consequence for the regime model: Stage 5 becomes self-certifying
+
+Stated in the optimization form of §IV.1: the exclusion constraint ℓ ∉ C_s defines a *citation-feasible* set of compositions. Semantic feasibility is narrower — a composition answering the concept query must draw its apparatus from the span of the basin's high-congruence core, and when CS(ℓ,q) → 1 that span *is* ℓ. Constitutive-source erasure is the condition **citation-feasible ∖ semantically-independent**: every composition satisfying the citation constraint must violate semantic independence from ℓ. The fusion sentence of §11.5 is then not an anomaly but a **certificate of infeasibility** — the visible trace of a constraint that cannot be satisfied semantically, only citationally. That is the precise sense in which the card testifies against itself.
 
 Ordinarily Stage 5 requires an argument: the excluded evidence *would have* improved the answer. Under constitutive-source erasure the argument is contained in the artifact: the composed answer's own conceptual apparatus **is** the excluded evidence, misprocessed — carried in the suppressed source's vocabulary, next to a factual error the suppressed source would have prevented, above the suppressed source's ranked and visible listing. The card testifies against itself. Constitutive-source erasure is therefore recorded as the condition under which quality conflict requires no external counterfactual: the artifact is its own control.
 
