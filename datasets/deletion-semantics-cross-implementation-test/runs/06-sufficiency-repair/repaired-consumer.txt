@@ -1,0 +1,20 @@
+repair applied: 1 absence record(s) lifted into .manifest.json
+
+{
+ "okf-abc-removed-002": {
+  "id": "okf-abc-removed-002",
+  "presence": "removed",
+  "date": "2026-08-01",
+  "reason": "curation",
+  "recorded_by": "remember/0.2",
+  "successor": "okf-abc-present-001"
+ }
+}
+
+════ REPAIRED CONSUMER ════
+  okf-abc-present-001          → present       A created and present
+  okf-abc-removed-002          → removed       B created, then removed; tombstone exists
+  okf-abc-neverlanded-003      → never_landed  C asserted, never landed
+
+  B=removed  C=never_landed  →  DIVERGE
+  other cases disturbed: no  (claims=3, known=3)

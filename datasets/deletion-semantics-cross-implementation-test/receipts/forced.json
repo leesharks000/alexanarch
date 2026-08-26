@@ -1,0 +1,30 @@
+{
+ "translator": "okf-shape-translator/0.1",
+ "translator_sha256": "de71243cc1304be8",
+ "mode": "forced",
+ "source_cases": 111,
+ "output_claims": 111,
+ "output_records": 110,
+ "expressible": 111,
+ "preserved": 1,
+ "coerced": 110,
+ "dropped": 451,
+ "fabricated": 110,
+ "dropped_by_field": {
+  "identifier_kind": 111,
+  "observation": 110,
+  "successor": 87,
+  "presence": 75,
+  "reason": 68
+ },
+ "refused_untranslatable": 0,
+ "refusal_reasons": {},
+ "fidelity_class": "lossy",
+ "downstream_check": {
+  "claims_checked": 111,
+  "targets_known": 110,
+  "never_landed_count": 1,
+  "error": null
+ },
+ "fidelity_warning": "DOWNSTREAM VERDICT IS NOT EVIDENCE OF FIDELITY: this translation fabricated 110 write-claim(s) the producer never made and dropped 451 field-level facts. A clean check over a lossy translation is clean about the translation, not about the source."
+}

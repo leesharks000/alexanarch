@@ -1,0 +1,34 @@
+{
+ "package": "deletion-semantics-cross-implementation-test",
+ "version": "1.0",
+ "retrieved": "2026-08-26",
+ "sources": {
+  "producer_bundle": {
+   "repo": "andrewcrenshaw/remember-okf-sample-bundle",
+   "commit": "ea18185f49948a6832e052a1f0c9c6a935076b95",
+   "url": "https://github.com/andrewcrenshaw/remember-okf-sample-bundle",
+   "role": "remember/0.2 emitted shape: log.md, store records, .manifest.json, tombstones.md",
+   "integrity": "all 7 files verified against the bundle's published SHA256SUMS; 0 mismatches"
+  },
+  "consumer_checker": {
+   "repo": "inkxel/throughline",
+   "commit": "c512e8b9e77803b5b59be703caaad02c74b80d92",
+   "path": "scripts/never_landed.py",
+   "url": "https://github.com/inkxel/throughline",
+   "role": "assertion-consistency checker; --fixture and --log/--store modes"
+  },
+  "corpus": {
+   "name": "deletion-conformance-fixture",
+   "version": "2.1",
+   "cases": 111,
+   "url": "https://www.alexanarch.org/datasets/deletion-conformance-fixture/cases.json"
+  }
+ },
+ "parameters": {
+  "claim_pattern_emitter_shape": "\\*\\*(?:Record|Lesson) created\\*\\*: lesson ([a-z0-9-]+)",
+  "claim_pattern_bundle": "\\*\\*Lesson created\\*\\*: lesson ([a-z0-9-]+)",
+  "id_key_default": "id",
+  "id_key_negative_probe": "nosuchkey"
+ },
+ "note": "Two flags sufficed across every run: --claim-pattern and --id-key. Nothing else required configuring."
+}

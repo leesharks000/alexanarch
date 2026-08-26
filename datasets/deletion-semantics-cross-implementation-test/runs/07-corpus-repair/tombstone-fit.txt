@@ -1,0 +1,23 @@
+ROUND-TRIP of published tombstones.md: 1 parsed
+   {"id": "remember://lesson/okf-conformance-tombstoned-000", "presence": "removed", "date": "2026-07-20", "reason": "curation", "successor": "remember://lesson/okf-conformance-fixture-001"}
+
+CORPUS → tombstone line format: 54/111 fit
+    36  no presence value
+    12  no successor — field is not optional in the line grammar
+     8  no reason
+     1  presence 'never_landed' — line format says 'tombstoned'
+
+ROUND-TRIP of our rendering: 54/54 re-parse
+
+fields with no emitter home even counting tombstones.md:
+   111  identifier_kind
+   109  observed_2026_07_28_v2
+    89  successor_kind
+    48  observed_2026_07_28
+    10  test
+     8  divergence
+     8  datacite_api_2026_07_28
+     2  mapped_dead_dois
+     2  lifecycle
+     2  removal_fact_retained
+     2  content_destroyed

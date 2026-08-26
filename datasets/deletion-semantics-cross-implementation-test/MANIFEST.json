@@ -1,0 +1,14 @@
+{
+ "dataset": "deletion-semantics-cross-implementation-test",
+ "version": "1.0",
+ "date": "2026-08-26",
+ "creator": "Sharks, Lee",
+ "license": "CC-BY-4.0",
+ "description": "Reproducibility package for a cross-implementation test of deletion semantics: a remember/0.2 producer bundle, an independently built assertion-consistency checker, and a 111-case conformance corpus built before either. Establishes that a recorded removal and a never-landed write are observationally identical at the consumer boundary, and that exposing the absence assertion on a machine-readable discovery surface is necessary and sufficient to separate them.",
+ "context": "knowledge-catalog#207; fulfils the cross-test offered there",
+ "files": 40,
+ "sha256sums": "SHA256SUMS",
+ "sources": "sources/source-lock.json",
+ "findings": "reports/FINDINGS.md",
+ "reproduce": "commands/reproduce.sh"
+}
