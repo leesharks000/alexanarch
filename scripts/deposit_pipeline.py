@@ -675,6 +675,15 @@ def main():
         raise SystemExit("mint stage requires --issue-body and --issue-number")
     if "mint" not in args.stages and not args.deposit_number:
         raise SystemExit("post-mint stages require --deposit-number")
+    if "mint" not in args.stages and args.deposit_number:
+        # 2026-08-27 (deposits #1554–#1556): resumes validated a stale /tmp
+        # snapshot written at mint, so in-session enrichment (wiki_article etc.)
+        # was invisible to stage_validate and every wiki-gate resume failed
+        # until the snapshot was refreshed by hand. Refresh it from the
+        # registry — the canonical store — at the top of every resume.
+        _reg, _d = deposit_by_number(args.deposit_number)
+        Path("/tmp/pipeline-entry.json").write_text(
+            json.dumps(_d, indent=2, ensure_ascii=False))
 
     print(f"deposit_pipeline: stages = {args.stages}")
     for s in args.stages:
