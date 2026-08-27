@@ -65,3 +65,24 @@ that updates one side of the mirror is half a seating; the files serve, the
 audits pass, and the card shows nothing. Until the mirror-audit gate exists,
 the closing step of any intake is to open the rebuilt gallery page and see
 the images with your own eyes. Anchored is not shown.
+
+---
+
+## RULING — THE SEAT IS THE TAB (MANUS, 2026-08-27)
+
+The canonical rendered surface of the Capture Registry is the captures tab:
+https://www.alexanarch.org/captures/. A capture is seated when, and only when,
+that page carries its card. Authoring the entry into data/EA-WG-CAPTURES-01.json
+and syncing datasets/capture-registry/ is authoring, not seating — the tab is a
+baked static page and does not follow the data file.
+
+SPLITBRAIN RECORD (2026-08-27, third occurrence of the 2026-08-15 shape):
+entry authored, projection synced, pushed, projection verified live — tab stale
+at 371/372. Contributing drift found and repaired in the same session:
+cite_list authored as strings where the renderer requires {site,title,snip}
+dicts (the bake crashed invisibly and kept its previous bytes); entry lacked
+the section field `s`; top-level address_count stale at 360 for twelve seats.
+
+CLOSURE: scripts/seat_capture_postflight.py chains BAKE → GATE → SYNC and
+refuses at the first failure. It runs after every registry write. Exit 0 is
+the definition of seated; a non-zero exit is a seat that must not be pushed.
