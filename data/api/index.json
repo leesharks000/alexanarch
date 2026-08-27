@@ -4,7 +4,7 @@
   "title": "Alexanarch Protocol Index",
   "purpose": "Central machine-readable catalog of all Alexanarch protocols, schemas, and data registries. Single source of truth — every other document (AGENTS.md, DEPOSIT-FLOW.md, scripts, workflows) MUST pull from this index, not duplicate it. If this file disagrees with any other surface, this file wins and the other surface is wrong.",
   "index_version": "v1.1",
-  "last_updated": "2026-08-21",
+  "last_updated": "2026-08-27",
   "operator_directive": {
     "for_new_instances": [
       "STOP before any action.",
@@ -42,7 +42,7 @@
       "current_version": "alexanarch-deposit-protocol/v1",
       "schema_version": "2026-06-22-axn-v2",
       "canonical_path": "/api/deposit-protocol.json",
-      "content_sha256": "6354e2a4e6250fe9511f899472948242c86b405cc94715d69a52a9ca11c4ac83",
+      "content_sha256": "26bb9d552bdcc582ad2858c072d6bd42749568acf03d2af54216876ae70ff237",
       "governs": "What a deposit is, what fields it requires, how it's submitted (Path A auto-mint, Path B canonical rich), how it's validated, what enrichment runs.",
       "depends_on": [
         "axn",
@@ -60,7 +60,7 @@
         ".github/workflows/validate-registry.yml",
         "scripts/validate_deposit.py"
       ],
-      "last_updated": "2026-06-22"
+      "last_updated": "2026-08-27"
     },
     "axn": {
       "name": "AXN Identifier Protocol",
@@ -135,12 +135,12 @@
       "name": "deposit-completeness",
       "current_version": "deposit-completeness/v1",
       "canonical_path": "/api/deposit-completeness.json",
-      "content_sha256": "147b3e57ee9ddf76c6e7e42253fc6a12d5b7d8ad8d6f8af022ef10206c081578",
+      "content_sha256": "f36f83b94517bf3b5cf79b97bc1f547f19563bb7c98ff7aa8e5e579d7dd3eb07",
       "governs": "Per-deposit completeness: authored wiki, concepts, related, lexical receipt, citation edges, artifact-free render, verified files. Fails closed before commit.",
       "depends_on": [],
       "referenced_by": [],
       "enforced_by": [],
-      "last_updated": "2026-08-09"
+      "last_updated": "2026-08-27"
     }
   },
   "schemas": {
@@ -177,7 +177,7 @@
       "name": "Deposit Registry (the AXN registry)",
       "canonical_path": "/data/registry.json",
       "purpose": "Canonical list of every deposit. Drives home-page Recent Deposits, browse page, sitemap, chunks. THE source of truth — all other surfaces are derived.",
-      "current_count": 1551,
+      "current_count": 1552,
       "validates_against": [
         "/api/schemas/deposit-entry.schema.json"
       ],
@@ -537,12 +537,26 @@
       "changes": [
         "Updated protocol 'axn': path resolution verified"
       ]
+    },
+    {
+      "index_version": "v1.1",
+      "date": "2026-08-27",
+      "changes": [
+        "Updated protocol 'deposit': EVID-001 removed: an evidentiary-basis check at the deposit boundary was the wrong layer for a substrate-operation failure; the rule now governs in-session behavior instead"
+      ]
+    },
+    {
+      "index_version": "v1.1",
+      "date": "2026-08-27",
+      "changes": [
+        "Updated protocol 'deposit-completeness': EVID-001 advisory removed from the contract alongside its removal from the gate"
+      ]
     }
   ],
   "state": {
     "canonical_path": "/data/state.json",
     "description": "Canonical generated source for all displayed counts. Read this rather than hand-maintaining counts here.",
-    "content_sha256": "a5a219c8616c3efd3e982485d16fa6d0cd4fafc9681510bb5d6693b06f1b34c5"
+    "content_sha256": "df0bd8d96be89bcbdcc2278b45e71b65c39078b7cbc75f696bf23d39c5c58082"
   },
   "surface_hashes": {
     "algorithm": "sha256",
