@@ -30,12 +30,14 @@ def main():
     reg = json.loads(REG.read_text())
     n_entries = len(reg["entries"])
     declared = reg.get("address_count")
+    declared_total = reg.get("total_captures")
     page = PAGE.read_text()
     cards = page.count('class="cap-card"')
     m = re.search(r"complete list of ([\d,]+) captures", page)
     noscript = int(m.group(1).replace(",", "")) if m else None
 
     rows = [("registry entries", n_entries), ("registry address_count", declared),
+            ("registry total_captures", declared_total),
             ("rendered cap-cards", cards), ("noscript count", noscript)]
     width = max(len(r[0]) for r in rows)
     for label, val in rows:
@@ -44,6 +46,12 @@ def main():
     bad = []
     if declared != n_entries:
         bad.append(f"registry address_count ({declared}) != entries ({n_entries})")
+    # 2026-08-27: total_captures is a SECOND declared count, and sync_capture_dataset
+    # prefers it over len(entries). It went stale on the v11.6 seat while
+    # address_count was correct — the projection announced 372 for a 373-entry
+    # registry. Both declared counts are now gated.
+    if declared_total is not None and declared_total != n_entries:
+        bad.append(f"registry total_captures ({declared_total}) != entries ({n_entries})")
     if cards != n_entries:
         bad.append(f"page has {cards} cards for {n_entries} entries — run scripts/build_capture_gallery.py")
     if noscript != n_entries:

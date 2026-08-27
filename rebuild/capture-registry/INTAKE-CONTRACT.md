@@ -86,3 +86,11 @@ the section field `s`; top-level address_count stale at 360 for twelve seats.
 CLOSURE: scripts/seat_capture_postflight.py chains BAKE → GATE → SYNC and
 refuses at the first failure. It runs after every registry write. Exit 0 is
 the definition of seated; a non-zero exit is a seat that must not be pushed.
+
+SECOND DRIFT VECTOR FOUND (2026-08-27, on the v11.6 seat): the registry carries
+TWO declared counts — `address_count` and `total_captures` — and
+sync_capture_dataset.py prefers the latter over len(entries). address_count was
+updated on the seat and total_captures was not, so the chain passed its gate and
+the projection still announced 372 for a 373-entry registry. Both declared counts
+are now checked by check_capture_page_current.py. A count that some consumer
+prefers is a count the gate must hold.
