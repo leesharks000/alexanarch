@@ -187,6 +187,10 @@
       "discovery_surface": {
        "type": "string",
        "description": "Where, if anywhere, a surviving absence assertion is exposed machine-readably. Added in v2.2 after the cross-implementation test of 2026-08-26."
+      },
+      "observed_condition": {
+       "type": "string",
+       "description": "Alternate observation location; see observation_convention. Tooling MUST read both."
       }
      },
      "additionalProperties": true
@@ -209,8 +213,21 @@
     "work_title": {
      "type": "string"
     }
+   },
+   "patternProperties": {
+    "^observed_": {
+     "type": "string",
+     "description": "Canonical observation location: observed_<ISO date>. See observation_convention."
+    }
    }
   }
  },
- "version_note": "Schema extended at fixture v2.2 (2026-08-26): recorded.discovery_surface and four expected keys. No enum narrowed; no prior case invalidated."
+ "version_note": "Schema extended at fixture v2.2 (2026-08-26): recorded.discovery_surface and four expected keys. No enum narrowed; no prior case invalidated.",
+ "observation_convention": {
+  "canonical": "observed_<ISO-8601 date>, a string at the top level of a case",
+  "alternate": "recorded.observed_condition, a string",
+  "rule": "A case MUST carry at least one. Conforming tooling MUST normalize BOTH forms before deciding presence: read every top-level key matching ^observed_ and, in addition, recorded.observed_condition. Reading only one form makes cases authored in the other invisible to the check, which is the same class of failure this fixture exists to detect \u2014 a fact recorded somewhere the consumer does not read.",
+  "history": "Added at v2.2. Of the 111 v2.1 cases, 110 used the canonical top-level form and one used the alternate; the alternate case is must-not-mark, so no tool ever had to read it. Six cases authored in the alternate form during the v2.2 cut were invisible to the reference verifier until the form was changed. The dependency was load-bearing for that verifier and not represented in this schema.",
+  "reference": "reference_verdict.py normalizes both forms and is the worked example."
+ }
 }

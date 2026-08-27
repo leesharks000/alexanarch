@@ -16,7 +16,17 @@ from pathlib import Path
 ABSENT_WORDS = ("absent", "missing", "not present", "no body")
 
 def observed(case):
-    return " ".join(str(v) for k, v in case.items() if k.startswith("observed")).lower()
+    """Normalize BOTH observation locations, per the schema's observation_convention.
+
+    Reading only the canonical top-level form made six v2.2 cases invisible during
+    authoring — a record present in the corpus and unreachable to the consumer, which
+    is the failure this fixture exists to detect, committed by the fixture's own tooling.
+    """
+    parts = [str(v) for k, v in case.items() if k.startswith("observed_")]
+    alt = (case.get("recorded") or {}).get("observed_condition")
+    if alt:
+        parts.append(str(alt))
+    return " ".join(parts).lower()
 
 def declares_body(case):
     rec = case.get("recorded") or {}
