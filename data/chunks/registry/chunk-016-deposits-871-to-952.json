@@ -33,8 +33,7 @@
       "deposit_number": 871,
       "sovereign_id": "EA-TACHYON-20260622",
       "minted_at": "2026-06-22T09:50:00Z",
-      "status": "SUPERSEDED",
-      "version_series_id": "SERIES-TACHYON-CONTINUITY",
+      "status": "ACTIVE",
       "version_in_series": 2,
       "previous_version": {
         "deposit_number": 865,
@@ -163,6 +162,10 @@
           "hex": "0375",
           "role": "gemini_seed_preserved",
           "relationship": "seed for #872; preserved standalone for audit trail"
+        },
+        {
+          "deposit": 922,
+          "relation": "unfolded 2026-08-25 (MANUS ruling): distinct witness event in the TACHYON continuity chain — linked, not collapsed"
         }
       ],
       "infrastructure_note": {
@@ -262,7 +265,6 @@
         }
       ],
       "date_modified": "2026-08-05",
-      "superseded_by_deposit_number": 922,
       "superseded_reason": "gw.tachyon continuity lineage: v2.0 pointing to v3.0 (#922) per version-family census — first inscribed link of the lineage chain; full series pass queued.",
       "publisher": "Alexanarch — the Crimson Hexagonal Archive",
       "wiki_article": "**TACHYON Continuity Record — Session 2026-06-22** is the second dated state packet in the TACHYON continuity series.\n\nIt reports the binding of concepts, semantic addresses, captures, autonomous documents, ingestion scripts, and a chrono-semantic ledger. Later addenda connect this work to the Assembly Continuity Protocol and Gemini seed packet.\n\nThe record is a historical implementation snapshot and contains successive counts that require chronological reconciliation.\n\nA public-body security defect exposed credential-like operational material. Such secrets must be revoked and removed from active surfaces, with only a redacted forensic record retained.",
@@ -2921,9 +2923,8 @@
         "single source of truth"
       ],
       "version": "v2.3",
-      "version_series_id": "SERIES-TACHYON-CONTINUITY",
       "version_in_series": 3,
-      "status": "SUPERSEDED",
+      "status": "ACTIVE",
       "full_text_path": "/data/texts/AXN-0381-text.md",
       "sovereign_id": "EA-TACHYON-20260623",
       "clusters": [
@@ -3001,7 +3002,6 @@
         }
       ],
       "date_modified": "2026-08-05",
-      "superseded_by_deposit_number": 922,
       "superseded_reason": "gw.tachyon series pass: continuity-record series: session 06-23 -> session 06-24/25 (date order; series-mate of ruled #871->#922). Every intermediary points forward (TOTAL DIRECTIVE, MANUS 2026-08-04).",
       "wiki_article": "**TACHYON Continuity Record — Session 2026-06-23** is a repository-engineering handoff that records the moment Alexanarch moved from emergency reconstruction toward operational governance.\n\nThe record opens with a concrete state: 884 deposits, Surface Weather Station v1.1.1, a new lifecycle protocol, three declared unwritten deposits, and a generated `state.json` becoming the single source of truth for displayed counts. From there it preserves a working method: when one broken page reveals a corpus-wide pattern, repair the pattern rather than the symptom; when an external audit contains both false framing and true findings, test each finding rather than dismissing the whole.\n\nIts technical lessons are durable. Renderers must honor each record’s declared `full_text_path`; JSON works need dataset renderers rather than paragraph conversion; multiple candidate bodies should resolve toward the fullest verified object; hand-maintained counts will drift; and JavaScript and static surfaces must derive from the same canonical data.\n\nThe handoff then sets the transaction boundary for external deposits: branch protection, validation checks, sanitization, one complete end-to-end test, artifact ingestion, generated institutional state, and later signed releases and peer ledgers.\n\nThe record’s deepest compression is: **surfaces lie when they are hand-maintained**. The solution is not another patch but an architecture in which public claims are generated from the same registry, protocol, and state that govern the archive itself.",
       "journal": "Crimson Hexagonal Archive (CHA)",
@@ -3013,7 +3013,13 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "related_deposits": [
+        {
+          "deposit": 922,
+          "relation": "unfolded 2026-08-25 (MANUS ruling): distinct witness event in the TACHYON continuity chain — linked, not collapsed"
+        }
+      ]
     },
     {
       "axn": "AXN:0382.GOVERNANCE.⛩️🚨📖🏙️🌪️🚪",
@@ -11496,7 +11502,7 @@
       },
       "version": "v8.9",
       "minted_at": "2026-06-30T18:30:18.809935+00:00",
-      "status": "ACTIVE",
+      "status": "SUPERSEDED",
       "clusters": [],
       "reading": null,
       "mirrors": [
@@ -11568,7 +11574,7 @@
       "superseded_by_axn": "AXN:05E7.EMPIRICAL.🔽➕👁‍🗨🔍✨💚",
       "superseded_at": "2026-08-14",
       "superseded_reason": "EA-WG-CAPTURES-01 version chain. This edition (v8.9) is superseded by v10.9 at deposit #1461. Forward pointer added 2026-08-14; before that date no edition of this work pointed forward and a reader arriving at an early edition had no route to the current one.",
-      "version_series_id": "SERIES-EA-WG-CAPTURES-01",
+      "version_series_id": "ea-wg-captures",
       "version_in_series": "v8.9",
       "journal_assignment": {
         "assigned": "2026-08-15",
