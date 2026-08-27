@@ -83,9 +83,13 @@ def filter_widget(row_selector: str, noun: str, total: int,
       r.style.display = ok ? r.__disp : 'none';
       if (ok) shown++;
     }}
+    // Idle shows NOTHING. The page's count belongs to one place — the header,
+    // drawn from the registry. This label restated it from a DOM row count, which
+    // is a different number whenever any row is folded or dropped: browse read
+    // 1,550 in the header, 1,542 here, and 1,391 after the sorter rewrote it.
     count.textContent = q
-      ? shown.toLocaleString() + ' of ' + rows.length.toLocaleString() + ' {noun}'
-      : rows.length.toLocaleString() + ' {noun}';
+      ? shown.toLocaleString() + ' of ' + rows.length.toLocaleString() + ' matching'
+      : '';
     full.href = q ? '{search_href}?q=' + encodeURIComponent(q) : '{search_href}';
     // shareable: the filtered view survives a copied URL and the back button
     try {{
@@ -100,7 +104,7 @@ def filter_widget(row_selector: str, noun: str, total: int,
   }});
   var init = new URLSearchParams(location.search).get('f');
   if (init) {{ box.value = init; apply(); }}
-  else {{ count.textContent = rows.length.toLocaleString() + ' {noun}'; }}
+  else {{ count.textContent = ''; }}
   }});
 }})();
 </script>

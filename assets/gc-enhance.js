@@ -215,12 +215,23 @@
             number: 'sorted by deposit number'
           }[mode];
           var totSpan = hdr.querySelector('#site-views');
-          hdr.innerHTML = rows.length + ' deposits · ' + label + ' · sort: ' +
+          // Counts come from the header's data attributes, written from the
+          // registry. rows.length is the number of TOP-LEVEL rows after series
+          // folding — it read 1,391 and called them "deposits", while the same
+          // page's header said 1,550. One source, or the page contradicts itself.
+          var dsT = hdr.getAttribute('data-total'), dsR = hdr.getAttribute('data-rendered'),
+              dsF = hdr.getAttribute('data-folded');
+          var counts = dsT
+            ? Number(dsT).toLocaleString() + ' deposits · ' + Number(dsR).toLocaleString() +
+              ' shown, ' + Number(dsF).toLocaleString() + ' earlier versions folded under their series heads'
+            : rows.length.toLocaleString() + ' rows';
+          hdr.innerHTML = counts + ' · ' + label + ' · sort: ' +
             '<a href="#" data-sort="deposited" style="color:var(--teal)">recently deposited</a> · ' +
             '<a href="#" data-sort="newest" style="color:var(--teal)">newest work</a> · ' +
             '<a href="#" data-sort="oldest" style="color:var(--teal)">oldest work</a> · ' +
             '<a href="#" data-sort="number" style="color:var(--teal)">by №</a>' +
             ' · <span id="site-views">' + (totSpan ? totSpan.textContent : '\u2014') + '</span>';
+          if (dsT) { hdr.setAttribute('data-total', dsT); hdr.setAttribute('data-rendered', dsR); hdr.setAttribute('data-folded', dsF); }
           hdr.querySelectorAll('a[data-sort]').forEach(function (a) {
             a.onclick = function (ev) { ev.preventDefault(); apply(a.getAttribute('data-sort')); };
           });

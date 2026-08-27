@@ -155,7 +155,7 @@ BROWSE_HEADER = """<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><m
 </head><body><div class="wrap">
 <nav class="nav">__NAVBAR_TOKEN__</nav>
 <h1 style="font-size:1.4em;font-weight:600;color:var(--accent);margin-bottom:4px">Complete Deposit Registry</h1>
-<div id="browse-meta" style="color:#777;font-size:.88em;margin-bottom:16px">{total} deposits · sorted by deposit number, oldest first · for newest see <a href="/">home page</a></div>
+<div id="browse-meta" data-total="{total}" data-rendered="{rendered}" data-folded="{folded}" style="color:#777;font-size:.88em;margin-bottom:16px">{total_c} deposits · {rendered_c} shown, {folded_c} earlier versions folded under their series heads · sorted by deposit number, oldest first · for newest see <a href="/">home page</a></div>
 <div style="color:#999;font-size:.8em;margin:-10px 0 16px">The date shown is <b>the work\u2019s date</b>, not the deposit\u2019s. A work made earlier and deposited later sorts by when it was <i>made</i> \u2014 so <b>recently deposited</b> orders by mint instead.</div>
 """
 
@@ -177,6 +177,7 @@ BROWSE_FOOTER = """
 
 
 def regenerate_browse(reg, dry_run=False):
+    from filter_widget import filter_widget
     """Rebuild s/browse/index.html — the canonical static browse surface.
 
     Sort order: ascending by deposit_number (#1 first). This matches the
@@ -207,24 +208,68 @@ def regenerate_browse(reg, dry_run=False):
         "numberOfItems": total,
     })
 
-    parts = [BROWSE_HEADER.format(total=total, jsonld=jsonld).replace('__NAVBAR_TOKEN__', render_navbar()[len('<nav class="nav">'):-len('</nav>')])]
+    parts = []
     # P2 filter — progressive enhancement over the complete static list. The full
     # list stays in the HTML for crawlers and no-JS readers; the widget only hides
     # non-matching rows and routes onward to full-text search.
-    from filter_widget import filter_widget
     # Series collapse (MANUS ruling 2026-08-25): confirmed-superseded records
     # render under their head, not in the main flow. Requires BOTH the explicit
     # pointer and status SUPERSEDED — heuristics never collapse. The fold is
     # visible as a count; nothing leaves the registry or loses its page.
-    _heads = {}
+    _by_n = {(_d.get("deposit_number") or _d.get("issue_number") or 0): _d for _d in sorted_deps}
+
+    def _terminal_head(_d):
+        """Follow superseded_by to the deposit that is NOT itself superseded.
+
+        A child folded under a head that is ITSELF folded was emitted nowhere:
+        the main flow skipped it, and its head's children block was never
+        rendered because the head was skipped too. Eight deposits disappeared
+        this way (#11, #66, #327, #363, #364, #386, #1181, #1182), including a
+        supersession CYCLE (#66 -> #1182 -> #66). The docstring at the top of
+        this file says a deposit must never be invisible to anyone; this is the
+        code that made eight of them invisible.
+        """
+        seen, cur = set(), _d
+        while True:
+            n = cur.get("deposit_number") or cur.get("issue_number") or 0
+            if n in seen:
+                return None, True          # cycle: render in main flow, flagged
+            seen.add(n)
+            nxt = cur.get("superseded_by_deposit_number")
+            if not (nxt and cur.get("status") == "SUPERSEDED"):
+                return n, False
+            cur = _by_n.get(nxt)
+            if cur is None:
+                return None, False         # dangling pointer: render in main flow
+
+    _heads, _cycles, _dangling = {}, [], []
     for _d in sorted_deps:
+        _n = _d.get("deposit_number") or _d.get("issue_number") or 0
         _p = _d.get("superseded_by_deposit_number")
-        if _p and _d.get("status") == "SUPERSEDED":
-            _heads.setdefault(_p, []).append(_d)
+        if not (_p and _d.get("status") == "SUPERSEDED"):
+            continue
+        _term, _cyc = _terminal_head(_d)
+        if _cyc:
+            _cycles.append(_n); continue
+        if _term is None:
+            _dangling.append(_n); continue
+        if _term != _n:
+            _heads.setdefault(_term, []).append(_d)
     _collapsed_total = sum(len(v) for v in _heads.values())
+    _folded_ns = {(_c.get("deposit_number") or 0) for v in _heads.values() for _c in v}
+    _rendered = total - _collapsed_total
+    if _cycles or _dangling:
+        print(f"  ! browse: {len(_cycles)} supersession cycle(s) {_cycles}, "
+              f"{len(_dangling)} dangling pointer(s) {_dangling} — rendered in main flow")
+    parts.insert(0, BROWSE_HEADER.format(
+        total=total, rendered=_rendered, folded=_collapsed_total,
+        total_c=f"{total:,}", rendered_c=f"{_rendered:,}", folded_c=f"{_collapsed_total:,}",
+        jsonld=jsonld).replace('__NAVBAR_TOKEN__',
+        render_navbar()[len('<nav class="nav">'):-len('</nav>')]))
+    # ONE count statement, in the header, from the registry. The former mono line
+    # restated the same figures a second time and the filter a third, each from a
+    # different source: registry total, DOM anchor count, and JS rows.length.
     parts.append(filter_widget('a[href^="/s/records/"]', 'deposits', total))
-    if _collapsed_total:
-        parts.append(f'<div style="font-family:var(--mono,monospace);font-size:.72em;color:#6b7280;margin:.3em 0 .8em">{total} deposits · {_collapsed_total} earlier versions shown under their series heads · the fold is on the record</div>')
     for d in sorted_deps:
         n = d.get("deposit_number") or d.get("issue_number") or 0
         if n == 0:
@@ -234,8 +279,8 @@ def regenerate_browse(reg, dry_run=False):
         status = d.get("status", "ACTIVE")
         superseded_by_n = d.get("superseded_by_deposit_number")
         in_real_series = bool(d.get("version_series_id"))
-        if superseded_by_n and status == "SUPERSEDED" and superseded_by_n in {h for h in _heads}:
-            continue  # collapsed under its series head; listed there
+        if n in _folded_ns:
+            continue  # collapsed under its resolved series head; listed there
         version_chip = ''
         if version and (version != 'v1.0' or in_real_series):
             # VERSION IS A LABEL, NOT A FIELD FOR PROSE. Fourteen deposits carry a
