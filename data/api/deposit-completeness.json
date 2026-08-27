@@ -1,16 +1,47 @@
 {
-  "name": "Deposit Completeness Contract",
-  "version": "deposit-completeness/v1",
-  "adopted": "2026-08-09",
-  "governs": "What a FINISHED deposit carries beyond its canonical bytes: authored wiki article (WIKI-002, ≥60 words), defines_concepts (CONCEPTS-001), related_deposits (RELATED-001), a lexical-minting receipt (LEX-001), citation-graph edges for every body AXN reference (CITE-001), an artifact-free rendered record carrying its own AXN (RENDER-001), and verified declared files (FILES-001). Attested absence is explicit: concepts_attested_none / related_attested_none / lexical_attested_none — absence must be a decision, never a default. Enforced by scripts/deposit_completeness.py as the pipeline `completeness` stage before commit; fails closed.",
-  "origin": "MINT #1443/#1444 repair session, 2026-08-09: both deposits shipped with empty LLM-tier fields, no lexical receipt, and records rendered before the citation graph existed; the only element that shipped complete was the only one with a hard gate (WIKI-001).",
-  "rules": [
-    {"id": "WIKI-002", "desc": "wiki_article authored in-session, ≥60 words"},
-    {"id": "CONCEPTS-001", "desc": "defines_concepts non-empty or concepts_attested_none"},
-    {"id": "RELATED-001", "desc": "related_deposits non-empty or related_attested_none"},
-    {"id": "LEX-001", "desc": "lexical-minting-registry rows for this deposit or lexical_attested_none"},
-    {"id": "CITE-001", "desc": "every body AXN reference present as a citation-graph edge"},
-    {"id": "RENDER-001", "desc": "record page exists, carries its AXN, zero literal-markdown artifacts"},
-    {"id": "FILES-001", "desc": "every declared file exists with matching sha256 and bytes"}
-  ]
+ "name": "Deposit Completeness Contract",
+ "version": "deposit-completeness/v1",
+ "adopted": "2026-08-09",
+ "governs": "What a FINISHED deposit carries beyond its canonical bytes: authored wiki article (WIKI-002, \u226560 words), defines_concepts (CONCEPTS-001), related_deposits (RELATED-001), a lexical-minting receipt (LEX-001), citation-graph edges for every body AXN reference (CITE-001), an artifact-free rendered record carrying its own AXN (RENDER-001), and verified declared files (FILES-001). Attested absence is explicit: concepts_attested_none / related_attested_none / lexical_attested_none \u2014 absence must be a decision, never a default. Enforced by scripts/deposit_completeness.py as the pipeline `completeness` stage before commit; fails closed.",
+ "origin": "MINT #1443/#1444 repair session, 2026-08-09: both deposits shipped with empty LLM-tier fields, no lexical receipt, and records rendered before the citation graph existed; the only element that shipped complete was the only one with a hard gate (WIKI-001).",
+ "rules": [
+  {
+   "id": "WIKI-002",
+   "desc": "wiki_article authored in-session, \u226560 words"
+  },
+  {
+   "id": "CONCEPTS-001",
+   "desc": "defines_concepts non-empty or concepts_attested_none"
+  },
+  {
+   "id": "RELATED-001",
+   "desc": "related_deposits non-empty or related_attested_none"
+  },
+  {
+   "id": "LEX-001",
+   "desc": "lexical-minting-registry rows for this deposit or lexical_attested_none"
+  },
+  {
+   "id": "CITE-001",
+   "desc": "every body AXN reference present as a citation-graph edge"
+  },
+  {
+   "id": "RENDER-001",
+   "desc": "record page exists, carries its AXN, zero literal-markdown artifacts"
+  },
+  {
+   "id": "FILES-001",
+   "desc": "every declared file exists with matching sha256 and bytes"
+  }
+ ],
+ "advisories": {
+  "EVID-001": {
+   "established": "2026-08-26",
+   "blocking": false,
+   "rule": "A write-up carries its evidentiary basis: rounds, fetches, captures and process record travel with the deposit rather than beside it.",
+   "satisfied_by": "a body section headed appendix, exhibits, evidence, evidentiary, verification record, capture record, or the rounds",
+   "not_satisfied_by": "a round-log line, which names the rounds without carrying them \u2014 the failure mode that motivated the rule",
+   "origin": "https://www.alexanarch.org/s/records/1551/ Appendix E"
+  }
+ }
 }

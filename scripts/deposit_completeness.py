@@ -29,6 +29,7 @@ def check_deposit(n: int):
     reg = _load("data/registry.json")
     entry = next((d for d in reg["deposits"] if d.get("deposit_number") == n), None)
     fails = []
+    advisories = []
     if entry is None:
         return [("EXIST-001", f"deposit #{n} not in registry")]
     hexid = entry.get("hex", "")
@@ -132,6 +133,36 @@ def check_deposit(n: int):
                           "citation-graph edges for this deposit; run "
                           "scripts/citation_extractor.py"))
 
+    # ── EVID-001 (advisory) ────────────────────────────────────────────────
+    # Added 2026-08-26 on MANUS's ruling, after #1546 -- a paper whose subject is
+    # the stripping of provenance at the composition layer -- was found to have
+    # been deposited with no evidentiary appendices at all, while a companion
+    # paper three days later carried a full one. The rounds existed, the fetch had
+    # been performed, the capture had been read; none of it travelled with the
+    # deposit. ADVISORY, never blocking: an evidentiary basis can live legitimately
+    # in a linked package or a registry entry, and a gate that refuses a deposit
+    # for prose it cannot parse would do more harm than the omission it catches.
+    # It exists so the omission is noticed by something other than memory.
+    EVID_KINDS = ("theoretical paper", "research notes", "notebook", "paper")
+    _ct = (entry.get("content_type") or "").lower()
+    if body and any(k in _ct for k in EVID_KINDS):
+        # A round-log LINE names the rounds; it does not carry them. #1546 --
+        # the deposit that motivated this rule -- carries a full round log in its
+        # header and no evidence whatsoever, and passed an earlier draft of this
+        # check for exactly that reason. The satisfier must be a section that
+        # holds the material: appendix, exhibits, evidence membrane, verification
+        # record, capture record.
+        _has = re.search(
+            r"^#{1,3}\s*(appendix\b|evidentiary\b|exhibits?\b|evidence\b|"
+            r"verification (record|block)\b|capture record\b|the rounds\b)",
+            body, re.M | re.I) is not None
+        if not _has:
+            advisories.append(("EVID-001",
+                "no appendix, exhibit block, or round log found in the body; per the "
+                "evidentiary-basis rule (2026-08-26), a write-up carries the rounds, "
+                "fetches, captures and process record it rests on, or states where "
+                "they are. Advisory only."))
+
     # ── BODY-003 ───────────────────────────────────────────────────────────
     # Added 2026-08-15 after #1486 and #1487 minted with a canonical text made
     # ENTIRELY of metadata sections -- Description, Methodology, Falsification,
@@ -202,13 +233,15 @@ def check_deposit(n: int):
         if len(data) != f.get("bytes") or hashlib.sha256(data).hexdigest() != f.get("sha256"):
             fails.append(("FILES-001", f"sha/bytes mismatch: {f['path']}"))
 
-    return fails
+    return fails, advisories
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--deposit-number", type=int, required=True)
     args = ap.parse_args()
-    fails = check_deposit(args.deposit_number)
+    fails, advisories = check_deposit(args.deposit_number)
+    for rid, msg in advisories:
+        print(f"  ~ [{rid}] {msg}")
     if fails:
         print(f"Deposit #{args.deposit_number}: {len(fails)} completeness failure(s)\n")
         for rid, msg in fails:
@@ -216,7 +249,8 @@ def main():
         print("\nContract: data/api/deposit-completeness.json (deposit-completeness/v1)")
         sys.exit(1)
     print(f"✓ Deposit #{args.deposit_number}: complete "
-          f"(wiki, concepts, related, lexical, citations, render, files)")
+          f"(wiki, concepts, related, lexical, citations, render, files)"
+          + (f" · {len(advisories)} advisory" if advisories else ""))
 
 if __name__ == "__main__":
     main()
