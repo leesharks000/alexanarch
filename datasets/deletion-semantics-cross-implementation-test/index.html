@@ -1,24 +1,33 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Deletion Semantics — Cross-Implementation Test — Datasets — Alexanarch</title><meta name="description" content="A recorded removal and a never-landed write are observationally identical at the consumer boundary. Reproducibility package composing a remember/0.2 producer bundle, an independently built assertion-consistency checker, and a 111-case conformance corpus. Necessity and sufficiency of the minimal repair tested."><link rel="canonical" href="https://www.alexanarch.org/datasets/deletion-semantics-cross-implementation-test/"><link rel="icon" href="/favicon.ico" sizes="any"><style>
-.dsx{max-width:52rem;margin:0 auto;padding:1rem 1.4rem 5rem}
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Deletion Semantics — Cross-Implementation Test — Datasets — Alexanarch</title><meta name="description" content="A recorded removal and a never-landed write are observationally identical at the consumer boundary. Reproducibility package composing a remember/0.2 producer bundle, an independently built assertion-consistency checker, and a 111-case conformance corpus. Necessity and sufficiency of the minimal repair tested."><link rel="canonical" href="https://www.alexanarch.org/datasets/deletion-semantics-cross-implementation-test/"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"><style>:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--code:#f5f5f5;--sans:'IBM Plex Sans',sans-serif;--mono:'IBM Plex Mono',monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.7;font-size:15px}
+a{color:var(--accent);text-decoration:none}
+a:hover{color:var(--accent2);text-decoration:underline}
+.nav{display:flex;gap:12px;margin-bottom:30px;font-size:0.85em;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;padding-bottom:8px}
+.nav a{color:var(--dim);text-decoration:none;font-weight:500}
+.nav a:hover,.nav a.active{color:var(--accent)}
+
+
+.dsx{max-width:52rem;margin:0 auto;padding:1.4rem 1.4rem 5rem}
 .dsx h1{font-size:1.6rem;margin:.4rem 0 .2rem}
-.dsx .sub{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.12em;
+.dsx .sub{font-family:var(--mono),ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.12em;
 text-transform:uppercase;color:#6d6f66;margin-bottom:1.2rem}
 .dsx .lede{font-size:1.05rem;line-height:1.55;max-width:38rem;margin-bottom:1.4rem}
 .fl{border-top:1px solid #d9d9d0}
 .fl a.row{display:grid;grid-template-columns:minmax(0,1fr) 90px;gap:12px;padding:10px 2px;
 border-bottom:1px solid #ececE4;text-decoration:none;color:inherit;align-items:baseline}
 .fl a.row:hover{background:rgba(26,58,92,.04)}
-.fl .nm{font-family:ui-monospace,Menlo,monospace;font-size:12.5px;color:#1a3a5c;
+.fl .nm{font-family:var(--mono),ui-monospace,Menlo,monospace;font-size:12.5px;color:#1a3a5c;
 overflow-wrap:anywhere}
-.fl .sz{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:#8a8a80;text-align:right}
+.fl .sz{font-family:var(--mono),ui-monospace,Menlo,monospace;font-size:11px;color:#8a8a80;text-align:right}
 .fl .ds{grid-column:1/-1;font-size:12.5px;color:#55564e;line-height:1.5;margin-top:2px}
 
 .dsx table{border-collapse:collapse;font-size:.9em;width:100%;margin:.6rem 0 1rem}
 .dsx td,.dsx th{border-top:1px solid #d9d9d0;padding:6px 8px;text-align:left;vertical-align:top}
 .dsx th{font-weight:600}
-.dsx .num{text-align:right;font-family:ui-monospace,Menlo,monospace}
-.dsx pre{background:#f0f0ea;border-radius:6px;padding:12px 15px;overflow-x:auto;font-size:12.5px;line-height:1.55;font-family:ui-monospace,Menlo,monospace}
-.dsx code{font-family:ui-monospace,Menlo,monospace;font-size:.88em;background:#f0f0ea;padding:1px 5px;border-radius:3px}
+.dsx .num{text-align:right;font-family:var(--mono),ui-monospace,Menlo,monospace}
+.dsx pre{background:#f0f0ea;border-radius:6px;padding:12px 15px;overflow-x:auto;font-size:12.5px;line-height:1.55;font-family:var(--mono),ui-monospace,Menlo,monospace}
+.dsx code{font-family:var(--mono),ui-monospace,Menlo,monospace;font-size:.88em;background:#f0f0ea;padding:1px 5px;border-radius:3px}
 .dsx .note{border:1px solid #d9d9d0;background:#f6f6f2;border-radius:6px;padding:12px 15px;font-size:.93em;margin:1rem 0}
 .dsx h2{font-size:1.02rem;margin:1.6rem 0 .4rem;letter-spacing:.02em}
 </style></head>
