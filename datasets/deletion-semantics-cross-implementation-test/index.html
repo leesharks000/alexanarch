@@ -1,45 +1,41 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Deletion Semantics — Cross-Implementation Test v1.0</title>
-<meta name="description" content="A recorded removal and a never-landed write are observationally identical at the consumer boundary. Reproducibility package composing a remember/0.2 producer bundle, an independently built assertion-consistency checker, and a 111-case conformance corpus. Necessity and sufficiency of the minimal repair tested. CC BY 4.0.">
-<link rel="canonical" href="https://www.alexanarch.org/datasets/deletion-semantics-cross-implementation-test/">
-<style>
-body{margin:0;background:#faf9f5;color:#26271f;font-family:Georgia,serif;line-height:1.6;font-size:16.5px}
-.wrap{max-width:820px;margin:0 auto;padding:18px 16px 60px}
-.id{font-family:ui-monospace,monospace;font-size:11px;color:#7a5a1e;border-bottom:1px solid #d9d9d0;padding:6px 0 12px;display:flex;gap:12px;flex-wrap:wrap}
-.id a{color:#7a5a1e}
-h1{font-size:1.7em;line-height:1.16;margin:22px 0 4px}
-.sub{color:#5c5e53;margin-bottom:14px}
-h2{font-size:1.05em;margin:26px 0 8px;letter-spacing:.02em}
-table{border-collapse:collapse;font-size:.9em;width:100%}
-td,th{border-top:1px solid #d9d9d0;padding:6px 8px;text-align:left;vertical-align:top}
-th{font-weight:600}
-.num{text-align:right;font-family:ui-monospace,monospace}
-.files a{display:block;padding:7px 0;border-top:1px solid #e4e4dc;color:#7a5a1e;text-decoration:none;font-family:ui-monospace,monospace;font-size:13px}
-.files a:hover{text-decoration:underline}
-.files span{color:#5c5e53;font-family:Georgia,serif;font-size:.95em;margin-left:8px}
-code{font-family:ui-monospace,monospace;font-size:.88em;background:#f0f0ea;padding:1px 5px;border-radius:3px}
-.note{border:1px solid #d9d9d0;background:#f6f6f2;border-radius:6px;padding:12px 15px;font-size:.93em;margin:14px 0}
-pre{background:#f0f0ea;border-radius:6px;padding:12px 15px;overflow-x:auto;font-size:13px;line-height:1.5}
-</style></head><body><div class="wrap">
-<div class="id">
-<span>deletion-semantics-cross-implementation-test v1.0</span>
-<span>2026-08-26</span>
-<span>CC BY 4.0</span>
-<a href="https://www.alexanarch.org/">Crimson Hexagonal Archive</a>
-<a href="../deletion-conformance-fixture/">the corpus this tests</a>
-</div>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Deletion Semantics — Cross-Implementation Test — Datasets — Alexanarch</title><meta name="description" content="A recorded removal and a never-landed write are observationally identical at the consumer boundary. Reproducibility package composing a remember/0.2 producer bundle, an independently built assertion-consistency checker, and a 111-case conformance corpus. Necessity and sufficiency of the minimal repair tested."><link rel="canonical" href="https://www.alexanarch.org/datasets/deletion-semantics-cross-implementation-test/"><link rel="icon" href="/favicon.ico" sizes="any"><style>
+.dsx{max-width:52rem;margin:0 auto;padding:1rem 1.4rem 5rem}
+.dsx h1{font-size:1.6rem;margin:.4rem 0 .2rem}
+.dsx .sub{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.12em;
+text-transform:uppercase;color:#6d6f66;margin-bottom:1.2rem}
+.dsx .lede{font-size:1.05rem;line-height:1.55;max-width:38rem;margin-bottom:1.4rem}
+.fl{border-top:1px solid #d9d9d0}
+.fl a.row{display:grid;grid-template-columns:minmax(0,1fr) 90px;gap:12px;padding:10px 2px;
+border-bottom:1px solid #ececE4;text-decoration:none;color:inherit;align-items:baseline}
+.fl a.row:hover{background:rgba(26,58,92,.04)}
+.fl .nm{font-family:ui-monospace,Menlo,monospace;font-size:12.5px;color:#1a3a5c;
+overflow-wrap:anywhere}
+.fl .sz{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:#8a8a80;text-align:right}
+.fl .ds{grid-column:1/-1;font-size:12.5px;color:#55564e;line-height:1.5;margin-top:2px}
 
+.dsx table{border-collapse:collapse;font-size:.9em;width:100%;margin:.6rem 0 1rem}
+.dsx td,.dsx th{border-top:1px solid #d9d9d0;padding:6px 8px;text-align:left;vertical-align:top}
+.dsx th{font-weight:600}
+.dsx .num{text-align:right;font-family:ui-monospace,Menlo,monospace}
+.dsx pre{background:#f0f0ea;border-radius:6px;padding:12px 15px;overflow-x:auto;font-size:12.5px;line-height:1.55;font-family:ui-monospace,Menlo,monospace}
+.dsx code{font-family:ui-monospace,Menlo,monospace;font-size:.88em;background:#f0f0ea;padding:1px 5px;border-radius:3px}
+.dsx .note{border:1px solid #d9d9d0;background:#f6f6f2;border-radius:6px;padding:12px 15px;font-size:.93em;margin:1rem 0}
+.dsx h2{font-size:1.02rem;margin:1.6rem 0 .4rem;letter-spacing:.02em}
+</style></head>
+<body><nav class="nav"> <a href="/">Alexanarch</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Library</span> <a href="/s/browse/">Browse</a> <a href="/search/">Search</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Reception</span> <a href="/addresses/">Addresses</a> <a href="/captures/">Captures</a> <a href="/observatory/">Observatory</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Continuity</span> <a href="/resolve/">Resolve</a> <a href="/identifiers/">Identifiers</a> <a href="/datasets/">Datasets</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Generative</span> <a href="/mint/stamp/">Stamp</a> <a href="/book/">Book</a> <a href="https://alexanarch.freeforums.net/" target="_blank" rel="noopener">Discussion</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Governance</span> <a href="/principles/">Principles</a> <a href="/how/">How</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
+<div class="dsx">
 <h1>Deletion Semantics — Cross-Implementation Test</h1>
-<p class="sub">A recorded removal and a never-landed write are observationally identical at the consumer boundary. Exposing the absence assertion on a machine-readable discovery surface is necessary and sufficient to separate them.</p>
+<div class="sub">dataset &middot; v1.0 &middot; 2026-08-26 &middot; 41 files &middot; CC BY 4.0</div>
+<p class="lede">A recorded removal and a never-landed write are observationally identical at the consumer boundary. Exposing the absence assertion on a machine-readable discovery surface is necessary and sufficient to separate them.</p>
 
-<div class="note">Fulfils the cross-test offered on <a href="https://github.com/GoogleCloudPlatform/knowledge-catalog/issues/207">knowledge-catalog#207</a>. Three artifacts, none modified, none authored by the same party. Read <a href="reports/FINDINGS.md"><strong>FINDINGS.md</strong></a> first; reproduce from clean clones with <a href="commands/reproduce.sh">reproduce.sh</a>; every pin is in <a href="sources/source-lock.json">source-lock.json</a>.</div>
+<div class="note">Fulfils the cross-test offered on <a href="https://github.com/GoogleCloudPlatform/knowledge-catalog/issues/207">knowledge-catalog#207</a>. Three artifacts, none modified, none authored by the same party. Read <a href="reports/FINDINGS.md"><strong>FINDINGS.md</strong></a> first; reproduce from clean clones with <a href="commands/reproduce.sh">reproduce.sh</a>; every pin is in <a href="sources/source-lock.json">source-lock.json</a>. Tests <a href="/datasets/deletion-conformance-fixture/">the 111-case corpus</a> next door.</div>
 
 <h2>The three artifacts</h2>
 <table>
 <tr><th></th><th>artifact</th><th>role</th></tr>
 <tr><td>producer</td><td><a href="https://github.com/andrewcrenshaw/remember-okf-sample-bundle">remember-okf-sample-bundle</a> <code>ea18185f</code></td><td>remember/0.2 emitted shape — log, store, manifest, tombstones</td></tr>
 <tr><td>consumer</td><td><a href="https://github.com/inkxel/throughline">throughline</a> <code>c512e8b9</code> · <code>never_landed.py</code></td><td>assertion-consistency checker</td></tr>
-<tr><td>corpus</td><td><a href="../deletion-conformance-fixture/">deletion-conformance-fixture v2.1</a></td><td>111 cases, built before either implementation existed</td></tr>
+<tr><td>corpus</td><td><a href="/datasets/deletion-conformance-fixture/">deletion-conformance-fixture v2.1</a></td><td>111 cases, built before either implementation existed</td></tr>
 </table>
 
 <h2>The collision</h2>
@@ -71,18 +67,18 @@ repaired consumer    A → present    B → removed         C → never_landed  
 <p>Representation portability is <strong>1 of 111</strong> while checker portability holds on two flags — different properties. The corpus under-represents the case the finding turns on: every expressible case is <code>presence=removed</code>, and exactly one <code>never_landed</code> case exists. The <code>--id-key</code> failure mode is a property of stores whose filenames diverge from stable ids, so a fixture on stem-named stores never exercises it. An earlier exploratory figure of 671 breaks reconciles exactly as 451 dropped + 110 coerced + 110 fabricated — the measurement became more discriminating; the quantity did not change.</p>
 
 <h2>Files</h2>
-<div class="files">
-<a href="reports/FINDINGS.md">reports/FINDINGS.md<span>the argument, with every number sourced to a run</span></a>
-<a href="commands/reproduce.sh">commands/reproduce.sh<span>full reproduction from clean clones</span></a>
-<a href="sources/source-lock.json">sources/source-lock.json<span>pinned commits, URLs, parameters</span></a>
-<a href="receipts/strict.json">receipts/strict.json<span>honest translation, 110 refusals</span></a>
-<a href="receipts/forced.json">receipts/forced.json<span>lossy translation, fidelity warning attached</span></a>
-<a href="profiles/forced-break-profile.json">profiles/forced-break-profile.json<span>every field-level break, by case</span></a>
-<a href="translator/translate.py">translator/translate.py<span>the shape translator</span></a>
-<a href="translator/receipt.py">translator/receipt.py<span>receipt generator with the fidelity ladder</span></a>
-<a href="translator/repair.py">translator/repair.py<span>minimal absence record + repaired consumer</span></a>
-<a href="MANIFEST.json">MANIFEST.json<span>dataset record</span></a>
-<a href="SHA256SUMS">SHA256SUMS<span>hash surface, 40 files</span></a>
+<div class="fl">
+<a class="row" href="reports/FINDINGS.md"><span class="nm">reports/FINDINGS.md</span><span class="sz">12 KB</span><span class="ds">The argument, with every number sourced to a captured run.</span></a>
+<a class="row" href="commands/reproduce.sh"><span class="nm">commands/reproduce.sh</span><span class="sz">2 KB</span><span class="ds">Full reproduction from clean clones of both third-party artifacts.</span></a>
+<a class="row" href="sources/source-lock.json"><span class="nm">sources/source-lock.json</span><span class="sz">2 KB</span><span class="ds">Pinned commits, URLs, retrieval dates, and every command-line parameter.</span></a>
+<a class="row" href="receipts/strict.json"><span class="nm">receipts/strict.json</span><span class="sz">1 KB</span><span class="ds">Honest translation: 1 expressible, 110 refused, nothing fabricated.</span></a>
+<a class="row" href="receipts/forced.json"><span class="nm">receipts/forced.json</span><span class="sz">2 KB</span><span class="ds">Lossy translation: 110 fabricated, 451 dropped, fidelity warning attached to the green verdict.</span></a>
+<a class="row" href="profiles/forced-break-profile.json"><span class="nm">profiles/forced-break-profile.json</span><span class="sz">62 KB</span><span class="ds">Every field-level break, by case and category.</span></a>
+<a class="row" href="translator/translate.py"><span class="nm">translator/translate.py</span><span class="sz">7 KB</span><span class="ds">The shape translator, strict and forced modes.</span></a>
+<a class="row" href="translator/receipt.py"><span class="nm">translator/receipt.py</span><span class="sz">4 KB</span><span class="ds">Receipt generator with the fidelity ladder: preserving / partial_refusal / lossy.</span></a>
+<a class="row" href="translator/repair.py"><span class="nm">translator/repair.py</span><span class="sz">4 KB</span><span class="ds">Minimal absence record and the repaired consumer.</span></a>
+<a class="row" href="MANIFEST.json"><span class="nm">MANIFEST.json</span><span class="sz">1 KB</span><span class="ds">Dataset record.</span></a>
+<a class="row" href="SHA256SUMS"><span class="nm">SHA256SUMS</span><span class="sz">4 KB</span><span class="ds">Hash surface, 41 files.</span></a>
 </div>
 
 <div class="note">Credit: the <code>--id-key</code> resolution path and the empty-log guard are <a href="https://github.com/andrewcrenshaw">@andrewcrenshaw</a>'s contributions to <a href="https://github.com/inkxel">@inkxel</a>'s checker; the checker and the bundle are their work. This package composes them and adds the translation, the receipt, the fixture, and the repair test. Both published baselines reproduce exactly here — a third independent reproduction of each.</div>
