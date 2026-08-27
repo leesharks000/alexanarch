@@ -1,0 +1,83 @@
+{
+ "corpus": "whitman",
+ "seat": "EA-CORPORA-03/01",
+ "title": "Walt Whitman — the Collected Author: Seven Editions of Leaves of Grass, the Blue Book, and the Prose",
+ "origin": {
+  "repos": [
+   "whitmanarchive/whitman-leaves_of_grass",
+   "whitmanarchive/whitman-other_books"
+  ],
+  "branch": "main",
+  "paths": [
+   "source/tei/",
+   "source/drafts/tei/nyp.00015.xml"
+  ],
+  "fetched": "2026-08-27",
+  "transport": "raw.githubusercontent, direct file fetch, per-file sha256"
+ },
+ "edition": "The Walt Whitman Archive TEI-XML transcriptions (Center for Digital Research in the Humanities, University of Nebraska–Lincoln; University of Iowa; NEH). Editions transcribed and encoded 2015; the Blue Book carries transcription and encoding by Elizabeth Lorang, Brett Barney, and Kevin McMullen.",
+ "language": "English",
+ "license": {
+  "payload": "Underlying texts public domain (Whitman d. 1892). The TEI encoding is the Whitman Archive's scholarly labor; the source repositories carry NO license file, and the Archive's published site terms are Creative Commons BY-NC. Recorded as UNVERIFIED AT SEAT TIME rather than assumed, and handled under the NC payload/record split ruled at EA-CORPORA-02: a NonCommercial payload license is carried forward unmodified and does not attach to this seat record.",
+  "record": "CC-BY-4.0 applies to this seat record only.",
+  "verification_gate": "Confirm the encoding license with the Whitman Archive before any downstream redistribution of the TEI. The flat text derived here is a transformation of PD text; the encoding's status governs the XML originals."
+ },
+ "scope": "All seven published editions of Leaves of Grass; the Blue Book, Whitman's own annotated 1860 working copy; and the prose — Complete Prose Works (containing Specimen Days and Democratic Vistas), Drum-Taps (1865), Drum-Taps and Sequel, Memoranda During the War, and Gems from Walt Whitman.",
+ "why_edition_separated": "Whitman rewrote himself across four decades and seven editions. A machine edition that flattens them into one text destroys the transmission object: the 1855 first edition and the 1891–92 deathbed edition are different books by the same hand, and the difference is the evidence. Each edition is seated as its own file under its own siglum, and no composite text is produced.",
+ "blue_book_note": "nyp.00015 is the seat's richest file and is not a published edition. It is Whitman's own copy of the 1860 Leaves of Grass, revised by hand toward a next edition that took a different form. Its transcription carries 4,800 deletions, 4,509 additions, 2,156 substitutions and 318 restorations, and is encoded in the Whitman Archive's own namespace rather than TEI-C. Normalization preserves the apparatus inline — deletions as [-…-], additions as {+…+}, restorations as <…> — so the revision is readable in the flat text rather than resolved away. Where the encoding offers orig/reg, the ORIGINAL is kept and the regularization dropped: this seat holds what Whitman wrote, not what an editor would have him write.",
+ "normalization": "Flat ref-tagged units: '<SIGLUM> <division>\\t<n>\\t<text>'. Verse from <l>; prose paragraphs marked ¶. teiHeader stripped. The Blue Book uses 'BB p<page>' as its division, preserving the physical page of the working copy.",
+ "sigla": {
+  "LG1855": "Leaves of Grass (1855)",
+  "LG1856": "Leaves of Grass (1856)",
+  "LG1860": "Leaves of Grass (1860–61)",
+  "LG1867": "Leaves of Grass (1867)",
+  "LG1871": "Leaves of Grass (1871–72)",
+  "LG1891": "Leaves of Grass (1891–92)",
+  "LGBB": "The Blue Book — Whitman's annotated 1860 copy",
+  "CPW": "Complete Prose Works",
+  "DT1865": "Drum-Taps (1865)",
+  "DTS": "Drum-Taps and Sequel to Drum-Taps",
+  "MDW": "Memoranda During the War",
+  "GEMS": "Gems from Walt Whitman"
+ },
+ "works": {
+  "CPW": "text/CPW.txt",
+  "DT1865": "text/DT1865.txt",
+  "DTS": "text/DTS.txt",
+  "GEMS": "text/GEMS.txt",
+  "LG1855": "text/LG1855.txt",
+  "LG1856": "text/LG1856.txt",
+  "LG1860": "text/LG1860.txt",
+  "LG1867": "text/LG1867.txt",
+  "LG1871": "text/LG1871.txt",
+  "LG1891": "text/LG1891.txt",
+  "LGBB": "text/LGBB.txt",
+  "MDW": "text/MDW.txt"
+ },
+ "units_by_volume": {
+  "CPW": 1016,
+  "DT1865": 1205,
+  "DTS": 1207,
+  "GEMS": 622,
+  "LG1855": 2315,
+  "LG1856": 4181,
+  "LG1860": 6738,
+  "LG1867": 5789,
+  "LG1871": 6917,
+  "LG1891": 9938,
+  "LGBB": 6998,
+  "MDW": 209
+ },
+ "units_total": 47135,
+ "verified_loci": [
+  "LG1855 opens 'I celebrate myself' — the 1855 text, untitled, before 'Song of Myself' existed as a title",
+  "LGBB p5 'Well-begotten, and raised [- {+bred+} -] by a perfect mother' — the substitution visible in the flat text",
+  "LGBB p5 'After roaming [-various for {+through+}-] … many [- {+a+} -] … {+lands+}' — four superimposed revisions on one line",
+  "LG1891 present as the deathbed edition, distinct from LG1871 rather than merged"
+ ],
+ "declared_absences": [
+  "The manuscripts, notebooks, correspondence, marginalia, reviews and scribal repos are open at whitmanarchive and are NOT in this seat; they are a separate campaign.",
+  "The in-progress 1855 variorum (whitman-LG_1855_variorum) is not seated: it is unfinished upstream.",
+  "The Blue Book facsimile pointer file (nyp.00015_images.xml, 483 page images) is secured in original/ but yields no text and is not normalized."
+ ]
+}

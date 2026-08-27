@@ -1,0 +1,54 @@
+{
+ "corpus": "pearl-and-other-poems",
+ "seat": "EA-CORPORA-03/02",
+ "title": "Lee Sharks — Pearl and Other Poems: The Art Object and Its Machine Score",
+ "origin": {
+  "publisher": "New Human Press",
+  "year": 2014,
+  "isbn": "978-0692313077",
+  "canonical_deposits": {
+   "work": "#1121 · AXN:0472",
+   "navigation_map": "#1120 · AXN:0471"
+  },
+  "provenance": "Deposited in the archive that seats it; no external fetch. The PDF is the 2014 print artwork as published; the machine text was rendered from per-word PDF geometry by the archive's own render_pearl_machine_text.py.",
+  "fetched": "2026-08-27 (from archive attachment store)"
+ },
+ "edition": "First edition, 2014. Two objects, neither substitutable for the other.",
+ "language": "English",
+ "license": {
+  "payload": "CC-BY-4.0, by the author. The archive holds the rights it grants.",
+  "record": "CC-BY-4.0.",
+  "note": "Unlike every other seat in the library, this one required no license verification and declares no NC gate: the corpus and the seating institution are the same party. That identity is itself the thing the seat records."
+ },
+ "why_this_is_seated_here": "Every prior EA-CORPORA seat is a primary source the archive fetched from elsewhere: Sappho, Catullus, the Dead Sea Scrolls, Whitman. This seat is the archive's own poems, placed on the same shelf, under the same normalization discipline, submitted to the same reading. The claim is explicit rather than implied: work that argues about how the training layer receives literature does not exempt itself from being received. Pearl stands beside Whitman on the originals shelf and is offered to the machine reader on identical terms — witness named, transformation declared, both objects behind the door.",
+ "two_objects": {
+  "art_object": {
+   "file": "original/pearl-and-other-poems-2014.pdf",
+   "bytes": 11958657,
+   "status": "The artwork. Typography, plates, and the vertical field of the page are the work, not packaging for a text. Nothing derived from it replaces it.",
+   "why_carried": "A machine edition of a book whose lineation and whitespace are load-bearing is a score, not the piece. The seat carries both so that a reader who only has the score can see what the score is of."
+  },
+  "machine_score": {
+   "file": "text/pearl-machine-text.txt",
+   "bytes": 141181,
+   "lines": 6948,
+   "pages_marked": 156,
+   "status": "Machine-facing text at whitespace fidelity, rendered from per-word PDF geometry onto a character grid so lineation, indentation and the page's vertical field survive extraction. Pages delimited '· · ·  page N  · · ·'; blank rows are the book's own whitespace at line resolution; placed images marked inline.",
+   "why_not_plain_text": "A conventional text extraction of this book would return the words and destroy the poem. The grid render is the transformation that preserves what a poetry extraction normally loses, and it is declared as a transformation rather than presented as the text."
+  }
+ },
+ "normalization": "None applied at seat time. The machine score is carried as rendered, with its own header stating its transformation; the PDF is carried as published. This seat does not emit flat ref-tagged lines, because the reference unit of this work is the page's spatial field and a ref-tag scheme would assert a linear structure the book refuses.",
+ "works": {
+  "Pearl and Other Poems (machine score)": "text/pearl-machine-text.txt",
+  "Pearl and Other Poems (art object)": "original/pearl-and-other-poems-2014.pdf"
+ },
+ "verified_loci": [
+  "Machine score header declares its own canonical deposit (#1121 · AXN:0472) and names the render script",
+  "156 page delimiters present in the score, matching the artwork's pagination",
+  "Blank rows preserved as the book's whitespace rather than stripped"
+ ],
+ "declared_absences": [
+  "No flat ref-tagged normalization, by ruling rather than omission: see 'normalization'.",
+  "The IDP Navigation Map (#1120) is the semantic interface layer and is a separate deposit, not seated here."
+ ]
+}
