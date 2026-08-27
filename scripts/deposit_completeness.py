@@ -143,25 +143,72 @@ def check_deposit(n: int):
     # in a linked package or a registry entry, and a gate that refuses a deposit
     # for prose it cannot parse would do more harm than the omission it catches.
     # It exists so the omission is noticed by something other than memory.
-    EVID_KINDS = ("theoretical paper", "research notes", "notebook", "paper")
+    # SCOPE, narrowed 2026-08-26 on MANUS's ruling after a first draft fired on
+    # research notes and an open notebook. The rule is not "cite your sources."
+    # A bibliography points at material any reader can re-fetch; the lapse this
+    # rule exists to prevent is the loss of evidence that CANNOT BE RECOVERED
+    # EXTERNALLY -- a composed card, a SERP state, a session transcript, a fetched
+    # page as it stood on a date. Those exist only in the capture. A write-up that
+    # measures one and does not carry it has destroyed its own evidence, and no
+    # later reader, including its author, can reconstruct it.
+    #
+    # So the trigger is not document type but whether the body MEASURES a captured
+    # observation. Research notes mapping recoverable sources are out of scope even
+    # though they are scholarship; a two-paragraph capture reading is in scope even
+    # though it is not.
     _ct = (entry.get("content_type") or "").lower()
-    if body and any(k in _ct for k in EVID_KINDS):
+    _measures_capture = bool(body) and re.search(
+        r"\b(AI Overview|composed (card|answer|response)|composition layer|"
+        r"SERP|capture(d)? (on|at|of)|organic (layer|results?)|retrieval layer|"
+        r"we (captured|observed)|the capture (of|shows|reads)|screenshot)\b",
+        body, re.I) is not None
+    _quantifies = bool(body) and re.search(
+        r"\b(PER|G_RC|CPCE|Q_f|Q_d|Q_s|constitution share|congruence|"
+        r"true positives?|false positives?|rank(ed|s)? (at|[0-9])|n\s*=\s*[0-9])\b",
+        body) is not None
+    if _measures_capture and _quantifies:
         # A round-log LINE names the rounds; it does not carry them. #1546 --
         # the deposit that motivated this rule -- carries a full round log in its
         # header and no evidence whatsoever, and passed an earlier draft of this
         # check for exactly that reason. The satisfier must be a section that
         # holds the material: appendix, exhibits, evidence membrane, verification
         # record, capture record.
+        # (a) an exhibit section holds the material. Headings are frequently
+        #     numbered ("## 12. Evidence Membrane"), so ordinals are skipped.
         _has = re.search(
-            r"^#{1,3}\s*(appendix\b|evidentiary\b|exhibits?\b|evidence\b|"
+            r"^#{1,4}\s*(?:[0-9IVXivx]+[.)]\s*)*"
+            r"(appendix\b|evidentiary\b|exhibits?\b|evidence\b|"
             r"verification (record|block)\b|capture record\b|the rounds\b)",
             body, re.M | re.I) is not None
-        if not _has:
+        # (b) MANUS's rule is "carry it OR state where it is preserved." A body
+        #     that names the preserving record or dataset has discharged it: the
+        #     evidence is anchored somewhere a reader can reach, which is the whole
+        #     point. What the rule forbids is evidence that exists nowhere.
+        # The location satisfier must be a CLAIM ABOUT THIS PAPER'S OWN EVIDENCE,
+        # not apparatus vocabulary. A first draft accepted any mention of "Capture
+        # Registry" -- and #1546, the deposit that motivated this rule, cleared on
+        # its own methods section, one of whose matches said the registry entry was
+        # QUEUED. The checker read a promise as a location. So: require a deictic
+        # possessive ("this paper's", "the exhibits for this") bound to a named
+        # destination, and explicitly reject the queued/pending forms.
+        _located = re.search(
+            r"((?:exhibits?|captures?|transcripts?|evidence|appendices)\s+"
+            r"(?:for this (?:paper|deposit|version)|of this \w+)?\s*"
+            r"(?:are |is |live |seated |preserved |deposited )"
+            r"(?:at|in)\s+\S{0,80}(?:/s/records/\d+|/datasets/|#\d{3,4}))"
+            r"|(?:this (?:paper|deposit)'s (?:exhibits?|evidence|captures?)\b)",
+            body, re.I) is not None
+        _queued = re.search(r"(registry entry|capture registry entry|snapshot)[^.]{0,60}"
+                            r"\b(queued|pending|not yet|to be)\b", body, re.I) is not None
+        if _queued:
+            _located = False
+        if not (_has or _located):
             advisories.append(("EVID-001",
-                "no appendix, exhibit block, or round log found in the body; per the "
-                "evidentiary-basis rule (2026-08-26), a write-up carries the rounds, "
-                "fetches, captures and process record it rests on, or states where "
-                "they are. Advisory only."))
+                "this body measures a captured observation -- a composed card, a SERP "
+                "state, a fetched page -- and carries no exhibit section. Such evidence "
+                "cannot be recovered externally: it exists only in the capture. Per the "
+                "evidentiary-basis rule (2026-08-26), carry it or state where it is "
+                "preserved. Advisory only."))
 
     # ── BODY-003 ───────────────────────────────────────────────────────────
     # Added 2026-08-15 after #1486 and #1487 minted with a canonical text made

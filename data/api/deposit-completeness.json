@@ -37,10 +37,21 @@
  "advisories": {
   "EVID-001": {
    "established": "2026-08-26",
+   "scope_narrowed": "2026-08-26",
    "blocking": false,
-   "rule": "A write-up carries its evidentiary basis: rounds, fetches, captures and process record travel with the deposit rather than beside it.",
-   "satisfied_by": "a body section headed appendix, exhibits, evidence, evidentiary, verification record, capture record, or the rounds",
-   "not_satisfied_by": "a round-log line, which names the rounds without carrying them \u2014 the failure mode that motivated the rule",
+   "rule": "A write-up that measures a captured observation carries that capture, or states where it is preserved.",
+   "scope": "Not a citation rule. Triggers only where the body both MEASURES a captured observation (composed card, SERP state, fetched page, session transcript) and quantifies it. A bibliography points at material any reader can re-fetch; a capture points at a system state that no longer exists and cannot be reconstructed by anyone, including its author. That irrecoverability is the whole basis of the rule.",
+   "out_of_scope": "Research notes mapping recoverable sources; source maps and reference works; theory without measured captures.",
+   "satisfied_by": [
+    "an exhibit section (appendix, exhibits, evidence, verification record, capture record), numbered headings permitted",
+    "an explicit statement that THIS deposit's exhibits are preserved at a named record or dataset"
+   ],
+   "not_satisfied_by": [
+    "a round-log line, which names the rounds without carrying them",
+    "apparatus vocabulary \u2014 naming the capture registry as an instrument is not a claim that this paper's evidence is in it",
+    "a queued or pending registry entry, which is a promise rather than a location"
+   ],
+   "calibration_note": "Each exclusion above was a false negative in an earlier draft, found by testing the checker against #1546 \u2014 the deposit whose omission motivated the rule. A checker that clears its own motivating case has not been tested.",
    "origin": "https://www.alexanarch.org/s/records/1551/ Appendix E"
   }
  }
