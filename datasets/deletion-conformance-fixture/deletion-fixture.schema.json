@@ -3,51 +3,214 @@
  "$id": "https://www.alexanarch.org/datasets/deletion-conformance-fixture/deletion-fixture.schema.json",
  "title": "Deletion Semantics Conformance Fixture",
  "type": "object",
- "required": ["name", "version", "date", "license", "total_cases", "classes", "cases"],
+ "required": [
+  "name",
+  "version",
+  "date",
+  "license",
+  "total_cases",
+  "classes",
+  "cases"
+ ],
  "properties": {
-  "name": {"type": "string"},
-  "version": {"type": "string"},
-  "date": {"type": "string"},
-  "license": {"type": "string"},
-  "total_cases": {"type": "integer"},
-  "classes": {"type": "object", "additionalProperties": {"type": "integer"}},
-  "cases": {"type": "array", "items": {"$ref": "#/$defs/case"}}
+  "name": {
+   "type": "string"
+  },
+  "version": {
+   "type": "string"
+  },
+  "date": {
+   "type": "string"
+  },
+  "license": {
+   "type": "string"
+  },
+  "total_cases": {
+   "type": "integer"
+  },
+  "classes": {
+   "type": "object",
+   "additionalProperties": {
+    "type": "integer"
+   }
+  },
+  "cases": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/case"
+   }
+  }
  },
  "$defs": {
   "case": {
    "type": "object",
-   "required": ["case_class", "identifier", "identifier_kind", "axes", "axis_subject", "expected"],
+   "required": [
+    "case_class",
+    "identifier",
+    "identifier_kind",
+    "axes",
+    "axis_subject",
+    "expected"
+   ],
    "properties": {
-    "case_class": {"type": "string"},
-    "identifier": {"type": "string"},
-    "identifier_kind": {"enum": ["doi", "doi_shaped_string", "archive_record", "declared_path", "state_change_claim"]},
+    "case_class": {
+     "type": "string"
+    },
+    "identifier": {
+     "type": "string"
+    },
+    "identifier_kind": {
+     "enum": [
+      "doi",
+      "doi_shaped_string",
+      "archive_record",
+      "declared_path",
+      "state_change_claim"
+     ]
+    },
     "axis_subject": {
-     "type": "object", "required": ["kind", "identifier"],
-     "properties": {"kind": {"enum": ["concept", "claim", "identifier_target", "content_payload", "tombstone_record", "registry_assertion", "registry_update", "archive_record"]},
-                    "identifier": {"type": "string"}}
+     "type": "object",
+     "required": [
+      "kind",
+      "identifier"
+     ],
+     "properties": {
+      "kind": {
+       "enum": [
+        "concept",
+        "claim",
+        "identifier_target",
+        "content_payload",
+        "tombstone_record",
+        "registry_assertion",
+        "registry_update",
+        "archive_record"
+       ]
+      },
+      "identifier": {
+       "type": "string"
+      }
+     }
     },
     "axes": {
      "type": "object",
      "properties": {
-      "presence": {"enum": ["removed", "never_landed"]},
-      "validity": {"enum": ["unassessed", "holds", "does_not_hold"]},
-      "edges": {"type": "object"},
-      "note": {"type": "string"}
+      "presence": {
+       "enum": [
+        "removed",
+        "never_landed"
+       ]
+      },
+      "validity": {
+       "enum": [
+        "unassessed",
+        "holds",
+        "does_not_hold"
+       ]
+      },
+      "edges": {
+       "type": "object"
+      },
+      "note": {
+       "type": "string"
+      }
      },
      "additionalProperties": false
     },
-    "lifecycle": {"enum": ["withdrawn"]},
-    "reason": {
-     "type": "object", "required": ["actor", "reason"],
-     "properties": {"actor": {"enum": ["host", "producer", "unknown"]},
-                    "reason": {"enum": ["not_disclosed", "unknown", "producer_bug", "ownership_correction"]},
-                    "note": {"type": "string"}}
+    "lifecycle": {
+     "enum": [
+      "withdrawn"
+     ]
     },
-    "expected": {"type": "object"},
-    "recorded": {"type": "object"},
-    "removal_fact_retained": {"type": "boolean"},
-    "content_destroyed": {"type": "boolean"}
+    "reason": {
+     "type": "object",
+     "required": [
+      "actor",
+      "reason"
+     ],
+     "properties": {
+      "actor": {
+       "enum": [
+        "host",
+        "producer",
+        "unknown"
+       ]
+      },
+      "reason": {
+       "enum": [
+        "not_disclosed",
+        "unknown",
+        "producer_bug",
+        "ownership_correction"
+       ]
+      },
+      "note": {
+       "type": "string"
+      }
+     }
+    },
+    "expected": {
+     "type": "object",
+     "properties": {
+      "emit_presence": {
+       "enum": [
+        "removed",
+        "never_landed",
+        null
+       ]
+      },
+      "must_not_mark_never_landed": {
+       "type": "boolean"
+      },
+      "require_absence_on_discovery_surface": {
+       "type": "boolean",
+       "description": "v2.2: a surviving absence assertion must be reachable on the surface a consumer consults; prose-only preservation is insufficient."
+      },
+      "require_dated_acknowledgment": {
+       "type": "boolean",
+       "description": "v2.2: intake pair."
+      },
+      "must_not_score_latency_as_absence": {
+       "type": "boolean",
+       "description": "v2.2: slow is not silent."
+      },
+      "known_collision_with": {
+       "type": "string",
+       "description": "v2.2: names the case this one is observationally identical to under a non-conformant consumer."
+      }
+     },
+     "additionalProperties": true
+    },
+    "recorded": {
+     "type": "object",
+     "properties": {
+      "discovery_surface": {
+       "type": "string",
+       "description": "Where, if anywhere, a surviving absence assertion is exposed machine-readably. Added in v2.2 after the cross-implementation test of 2026-08-26."
+      }
+     },
+     "additionalProperties": true
+    },
+    "removal_fact_retained": {
+     "type": "boolean"
+    },
+    "content_destroyed": {
+     "type": "boolean"
+    },
+    "evidence": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "test": {
+     "type": "string"
+    },
+    "work_title": {
+     "type": "string"
+    }
    }
   }
- }
+ },
+ "version_note": "Schema extended at fixture v2.2 (2026-08-26): recorded.discovery_surface and four expected keys. No enum narrowed; no prior case invalidated."
 }

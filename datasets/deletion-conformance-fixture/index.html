@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Deletion Semantics Conformance Fixture — Datasets — Alexanarch</title>
-<meta name="description" content="A known-bad identifier corpus for testing deletion, tombstone, presence, and successor semantics. 111 cases, 17 classes, subject-explicit ratified axes, offline-verifiable, CC0.">
+<meta name="description" content="A known-bad identifier corpus for testing deletion, tombstone, presence, and successor semantics. 117 cases, 17 classes, subject-explicit ratified axes, offline-verifiable, CC0.">
 <link rel="canonical" href="https://www.alexanarch.org/datasets/deletion-conformance-fixture/">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Dataset","name":"Deletion Semantics Conformance Fixture","version":"2.1","url":"https://www.alexanarch.org/datasets/deletion-conformance-fixture/","license":"https://creativecommons.org/publicdomain/zero/1.0/","creator":{"@type":"Person","name":"Sharks, Lee"},"identifier":"AXN:059A.EMPIRICAL.👁‍🗨🍂🌪️♠️↘️◀️","description":"A known-bad identifier corpus for testing deletion, tombstone, presence, and successor semantics: 111 cases across 17 classes from a real 2026-06-19 deletion event, expressed in the three ratified axes (validity/presence/edges) with subject-explicit axis values and machine-readable consumer expectations.","distribution":[{"@type":"DataDownload","contentUrl":"https://www.alexanarch.org/datasets/deletion-conformance-fixture/cases.json","encodingFormat":"application/json"}],"isPartOf":{"@type":"WebSite","name":"Alexanarch","url":"https://www.alexanarch.org/"}}
+{"@context":"https://schema.org","@type":"Dataset","name":"Deletion Semantics Conformance Fixture","version":"2.1","url":"https://www.alexanarch.org/datasets/deletion-conformance-fixture/","license":"https://creativecommons.org/publicdomain/zero/1.0/","creator":{"@type":"Person","name":"Sharks, Lee"},"identifier":"AXN:059A.EMPIRICAL.👁‍🗨🍂🌪️♠️↘️◀️","description":"A known-bad identifier corpus for testing deletion, tombstone, presence, and successor semantics: 117 cases across 17 classes from a real 2026-06-19 deletion event, expressed in the three ratified axes (validity/presence/edges) with subject-explicit axis values and machine-readable consumer expectations.","distribution":[{"@type":"DataDownload","contentUrl":"https://www.alexanarch.org/datasets/deletion-conformance-fixture/cases.json","encodingFormat":"application/json"}],"isPartOf":{"@type":"WebSite","name":"Alexanarch","url":"https://www.alexanarch.org/"}}
 </script>
 <style>
 body{margin:0;background:#faf9f5;color:#26271f;font-family:Georgia,serif;line-height:1.6;font-size:16.5px}
@@ -33,11 +33,11 @@ code{font-family:ui-monospace,monospace;font-size:.88em;background:#f0f0ea;paddi
 <div class="id"><span>👁‍🗨🍂🌪️♠️↘️◀️ AXN:059A.EMPIRICAL</span><a href="https://www.alexanarch.org/s/records/1417/">deposit #1417</a><a href="https://www.alexanarch.org/">alexanarch.org</a></div>
 
 <h1>Deletion Semantics Conformance Fixture</h1>
-<div class="sub">A known-bad identifier corpus for testing deletion, tombstone, presence, and successor semantics.<br>Version 2.1 · 2026-07-28 · Dataset CC0 1.0 · Scripts MIT · Offered to <a href="https://github.com/GoogleCloudPlatform/knowledge-catalog/issues/207" style="color:#7a5a1e">knowledge-catalog #207</a></div>
+<div class="sub">A known-bad identifier corpus for testing deletion, tombstone, presence, and successor semantics.<br>Version 2.1 · 2026-08-26 · Dataset CC0 1.0 · Scripts MIT · Offered to <a href="https://github.com/GoogleCloudPlatform/knowledge-catalog/issues/207" style="color:#7a5a1e">knowledge-catalog #207</a></div>
 
-<p><b>111 cases across 17 classes</b>, drawn from a real deletion event (2026-06-19) and its aftermath. Every case carries subject-explicit ratified axes — validity / presence (sparse: <code>removed</code> | <code>never_landed</code> | no marker) / edges — an <code>axis_subject</code> naming what each axis value is about, a <code>reason</code> object where <code>not_disclosed</code> and <code>unknown</code> are first-class, and machine-readable <code>expected</code> blocks so an implementation can pass or fail. Validity is never derived from identifier survival.</p>
+<p><b>117 cases across 17 classes</b>, drawn from a real deletion event (2026-06-19) and its aftermath. Every case carries subject-explicit ratified axes — validity / presence (sparse: <code>removed</code> | <code>never_landed</code> | no marker) / edges — an <code>axis_subject</code> naming what each axis value is about, a <code>reason</code> object where <code>not_disclosed</code> and <code>unknown</code> are first-class, and machine-readable <code>expected</code> blocks so an implementation can pass or fail. Validity is never derived from identifier survival.</p>
 
-<h2>Verification at build (2026-07-28, 109 network-addressable identifiers)</h2>
+<h2>Verification at build (2026-08-26, 109 network-addressable identifiers)</h2>
 <table>
 <tr><th>recorded validity</th><th class="num">n</th><th>observed</th><th>agreement</th></tr>
 <tr><td>verified_tombstone</td><td class="num">62</td><td>410 × 62</td><td><b>100%</b></td></tr>
@@ -47,11 +47,11 @@ code{font-family:ui-monospace,monospace;font-size:.88em;background:#f0f0ea;paddi
 <tr><td>registry_resolution_divergence</td><td class="num">8</td><td>DataCite GET <code>state: findable</code> (UTC-stamped) vs DOI 410</td><td><b>8/8 diverged</b></td></tr>
 </table>
 
-<div class="note">Conformance testing is <b>offline by default</b> against the committed <code>cases.json</code>: run <code>python3 verify_offline.py</code> (no network). Live re-probing is optional (<code>reprobe_live.py</code>), emits dated observation reports, and never mutates expected results. The fixture is frozen by <code>manifest.json</code> (SHA-256 per file + source commit).</div>
+<div class="note"><strong>v2.2 &middot; 2026-08-26.</strong> Six cases added after the <a href="/datasets/deletion-semantics-cross-implementation-test/">cross-implementation test</a> found that v2.1 &mdash; one <code>never_landed</code> case in 111 &mdash; barely exercised the distinction it helped uncover. The additions are a matched A/B/C trio with B split by whether the removal is exposed on a machine-readable discovery surface, plus the intake-acknowledgment pair. <strong>v2.2 is expected to fail a consumer that decides presence only from what the record asserted and what is there now</strong>: <code>reference_verdict.py</code> scores 2 false positives unrepaired and 0 repaired, the difference being one lookup. v2.1 is retained as <code>cases-v2.1.json</code>.</div><div class="note">Conformance testing is <b>offline by default</b> against the committed <code>cases.json</code>: run <code>python3 verify_offline.py</code> (no network). Live re-probing is optional (<code>reprobe_live.py</code>), emits dated observation reports, and never mutates expected results. The fixture is frozen by <code>manifest.json</code> (SHA-256 per file + source commit).</div>
 
 <h2>Files</h2>
 <div class="files">
-<a href="cases.json">cases.json<span>— the fixture: 111 cases, 17 classes, probed at build</span></a>
+<a href="cases.json">cases.json<span>— the fixture: 117 cases, 17 classes, probed at build</span></a>
 <a href="README.md">README.md<span>— the numbers, the axes, the drift ledger, provenance for every figure</span></a>
 <a href="deletion-fixture.schema.json">deletion-fixture.schema.json<span>— JSON Schema</span></a>
 <a href="cases-v1.0.json">cases-v1.0.json<span>— archived v1.0 base (47 cases), for the drift ledger</span></a>
@@ -66,7 +66,7 @@ code{font-family:ui-monospace,monospace;font-size:.88em;background:#f0f0ea;paddi
 <h2>Licensing</h2>
 <p style="font-size:.93em">The dataset is CC0 1.0: the license covers selection, annotation, arrangement, and original text; it does not — and cannot — relicense third-party identifiers or their metadata, which are public-resolution artifacts recorded here as observed. The fixture records observed resolution state, not a judgment on any host's policy.</p>
 
-<div class="id" style="border-top:1px solid #d9d9d0;border-bottom:none;padding-top:12px">EA-OKF-FIXTURE-01 v2.1 · Sharks, Lee · deposit #1417 · AXN:059A.EMPIRICAL.👁‍🗨🍂🌪️♠️↘️◀️</div>
+<div class="id" style="border-top:1px solid #d9d9d0;border-bottom:none;padding-top:12px">EA-OKF-FIXTURE-01 v2.2 · Sharks, Lee · deposit #1417 · AXN:059A.EMPIRICAL.👁‍🗨🍂🌪️♠️↘️◀️</div>
 </div>
 </body>
 </html>
