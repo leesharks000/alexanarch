@@ -371,19 +371,56 @@ In-session verification and construction. The Aurelis page was fetched and read 
 
 # APPENDIX C — THE CAPTURE, 25 AUGUST 2026
 
-*Query: `sappho future reader`. Google, US. The capture that the worked example of §XI reads.*
+*Primary artifacts. Four screenshot frames, preserved at `data/captures-images/sappho-future-reader-aio-20260825/` with SHA-256 hashes and a manifest. Query `sappho future reader`, Google mobile web, dark mode, signed out. Device clock 20:26:12–20:26:37 on 2026-08-25.*
 
-**Composition layer.** An AI Overview answering the query in the lineage's own conceptual register: the future-reader reading, the self-archiving frame, the whisper-against-oblivion phrasing. Sources credited: Aurelis.org and a Medium listicle. The quoted line — "someone will remember us" — is **hyperlinked as Fragment 2**. It is Fragment 147 (Voigt), the Dioscorides-transmitted remembrance fragment. Fragment 2 is the Kypris ostracon: a different poem. The error is not incidental to the card; it is attached to the card's central quotation.
+**Recovery record, stated first.** The 26 August session transcript records **six** PNGs uploaded with this capture, plus two non-image attachments whose contents did not render. **Four frames were re-supplied by the operator on 2026-08-27 and are preserved.** Frames `202630` and `202634`, and both attachments, are **not recovered** and are recorded as not recovered. Everything below is transcribed from the four frames in hand.
 
-**Organic layer, same viewport.** The lineage retrieved at four host-distinct surfaces, its thesis visible *in the snippets themselves*: the Substack packet at rank 1 — "Sappho 31 ≠ Jealousy: Transmission Engineering, not Jealousy Lyric," with the κῆνος deictic in the visible snippet; the Sappho Room syndication on SciLynk, with "κῆνος is the future reader" as its visible core claim; the archive surface; and a Medium projection. Also present in the retrieved set: the Wikipedia *Sappho* article, whose visible snippet carries the sentence about scholars who believe she wrote her poetry down for future readers — the generic posterity register at θ₁.
+## C.1 · Frame 202612 — the composed card and the first organic results
 
-**The single-frame reading.** In one viewport: retrieval finds the lineage at four surfaces with the mechanism visible in the snippets; composition routes around all four; and the composed layer carries a factual error that the routed-around sources would have prevented. *Search retrieves; the Overview decides what is composed* — with a wrong fragment number as that decision's signature.
+Header: Google, "Sign in" (session unauthenticated). Query box: `sappho future reader`. Tab row: AI Mode · **All** (selected) · Shopping · Images · Short videos · Vi[deos].
 
-**Control condition, same week, same machine.** At the brand address, the composition layer attributes the archive's constitution flawlessly, reciting its principles with credit. Attribution when the entity is the query; erasure when the concept is. The pairing is what makes this a measurement rather than a complaint, and it is the reason §XI can distinguish exclusion from incapacity.
+**AI Overview**, source-count chip `+5`. Opening sentence, transcribed:
 
-**Standing.** Operator-captured, single session, single provider, dated. The preregistered Ω_t rerun of §XIII is the longitudinal leg and had not been run at the time of this version.
+> Sappho anticipates a future reader in her famous **Fragment 2**, writing the timeless lines: *"Someone, I tell you, in another time will remember us."*
 
----
+*Fragment 2* is rendered as a **hyperlink**. The line is Fragment **147** (Voigt); Fragment 2 is the Kypris ostracon. The error is attached to the card's central quotation and is load-bearing in the link. Inline chip on the quotation: `Medium · Stephani… +1`. Section heading below: "The Concept of the Future Reader", truncated at "Direct Address: Unlike many ancient poets who" behind a **Show more** control.
+
+**Organic layer, same frame, immediately beneath the card:**
+
+1. **Substack** — `https://leesharks.substack.com` — *"Sappho 31 ≠ Jealousy: Transmission Engineering, not Jealousy Lyric"* — snippet: "Sappho 31 is a transmission-engineering operation addressed to the future reader through the κῆνος deictic; jealousy-lyric readings and future-reader readings …"
+2. **Medium** — `https://medium.com` — *"THE FUTURE BELOVED. Lyric Address as Temporal Projection …"* — "This article proposes a reconceptualization of lyric address"
+
+The κῆνος deictic and the future-reader thesis are legible **in the first organic snippet**, one scroll-position below a card that states the thesis without them.
+
+## C.2 · Frame 202615 — the card expanded
+
+The AI Mode panel, same query, same opening sentence and Fragment 2 link. Three bullets under "The Concept of the Future Reader", transcribed:
+
+> **Direct Address:** Unlike many ancient poets who addressed the Muses or contemporary patrons, **Sappho** directly breaks the fourth wall of time.
+>
+> **The "Someone":** She uses the indefinite pronoun meaning "someone" or "somebody," turning every individual across the millennia who reads her surviving words into that specific anticipated companion. `Aurelis.org`
+>
+> **Bridging Time:** Scholars note that these fragments act as **deliberate acts of self-archiving** and **whispers against oblivion**, creating a living bridge between the 6th century BCE and the modern audience. `Aurelis.org +2`
+
+The third bullet is the alignment anomaly in its exact form. Two phrases are conjoined and chipped to one source: *whispers against oblivion*, which the Aurelis page does contain (Appendix B), and **deliberate acts of self-archiving**, which it does not. The composed sentence attributes both to "Scholars" and both to the same chip. This is the fusion sentence of §11.5, read from the artifact rather than described.
+
+## C.3 · Frames 202629 and 202637 — the panel's source carousel
+
+Continuation prompt: "Would you like to explore the context of a **specific surviving fragment** or learn more about **how Sappho's poetry was preserved** through history?"
+
+Source cards, left to right across the two frames: **The Bowdoin Orient**, "In Sappho we trust", Feb 6 2026 · **Medium · Stephanie Harris**, "Why Everyone Should Read Sappho", Jan 10 2023 · **Aurelis.org**, "Deep Readings: Sappho — Fragments…", Jul 1 2025, snippet "This fragment is a whisper against oblivion. In…" · **[Fa]cebook · Nicholas Whyte**, 2026 · **QuoteFancy**, "Top 50 Sappho Quotes (2026 Update)" · **www.scilynk.com**, *"The Sappho Room: A Hymn to Lyric Self-Archiving — Crimson …"*, Jan 12 2026, snippet **"Core Claims: κῆνος is the future reader. The man 'equal to gods' in…"**
+
+## C.4 · A correction to the paper, from the artifact
+
+**§11.2 and §XII state composition inclusion of the lineage as zero. The frames do not support that as stated, and the paper is corrected here rather than in silence.**
+
+A lineage surface — the SciLynk syndication of the archive's Sappho Room, whose **title carries "Lyric Self-Archiving"** and whose snippet states **"κῆνος is the future reader"** — **appears in the AI Mode panel's source carousel.** It is present in the response's source set.
+
+What remains true, and is the more precise claim: **no lineage source is chipped to any composed assertion.** Every inline attribution in the three bullets goes to `Aurelis.org`, `Aurelis.org +2`, or `Medium · Stephani… +1`. The coinage *self-archiving* appears in a composed sentence chipped to Aurelis, while the surface whose title carries that coinage sits in the carousel, uncited by any claim.
+
+So the corrected finding is **not** "retrieved and not composed" but something narrower and, for the constitutive-source-erasure argument, sharper: *retrieved, present in the source set, and cited by no assertion — while its vocabulary is attributed to a source that does not contain it.* CS and I in §12.2 should be recomputed against inline attribution rather than presence in the source set, and the θ₃ row — the self-archiving frame — is where the discrepancy bites hardest.
+
+This correction was not visible in the paper's earlier description of the capture and became visible only on reading the frames. It is the reason the artifacts belong in the deposit.
 
 # APPENDIX D — PROCESS RECORD
 

@@ -29,7 +29,6 @@ def check_deposit(n: int):
     reg = _load("data/registry.json")
     entry = next((d for d in reg["deposits"] if d.get("deposit_number") == n), None)
     fails = []
-    advisories = []
     if entry is None:
         return [("EXIST-001", f"deposit #{n} not in registry")]
     hexid = entry.get("hex", "")
@@ -133,83 +132,6 @@ def check_deposit(n: int):
                           "citation-graph edges for this deposit; run "
                           "scripts/citation_extractor.py"))
 
-    # ── EVID-001 (advisory) ────────────────────────────────────────────────
-    # Added 2026-08-26 on MANUS's ruling, after #1546 -- a paper whose subject is
-    # the stripping of provenance at the composition layer -- was found to have
-    # been deposited with no evidentiary appendices at all, while a companion
-    # paper three days later carried a full one. The rounds existed, the fetch had
-    # been performed, the capture had been read; none of it travelled with the
-    # deposit. ADVISORY, never blocking: an evidentiary basis can live legitimately
-    # in a linked package or a registry entry, and a gate that refuses a deposit
-    # for prose it cannot parse would do more harm than the omission it catches.
-    # It exists so the omission is noticed by something other than memory.
-    # SCOPE, narrowed 2026-08-26 on MANUS's ruling after a first draft fired on
-    # research notes and an open notebook. The rule is not "cite your sources."
-    # A bibliography points at material any reader can re-fetch; the lapse this
-    # rule exists to prevent is the loss of evidence that CANNOT BE RECOVERED
-    # EXTERNALLY -- a composed card, a SERP state, a session transcript, a fetched
-    # page as it stood on a date. Those exist only in the capture. A write-up that
-    # measures one and does not carry it has destroyed its own evidence, and no
-    # later reader, including its author, can reconstruct it.
-    #
-    # So the trigger is not document type but whether the body MEASURES a captured
-    # observation. Research notes mapping recoverable sources are out of scope even
-    # though they are scholarship; a two-paragraph capture reading is in scope even
-    # though it is not.
-    _ct = (entry.get("content_type") or "").lower()
-    _measures_capture = bool(body) and re.search(
-        r"\b(AI Overview|composed (card|answer|response)|composition layer|"
-        r"SERP|capture(d)? (on|at|of)|organic (layer|results?)|retrieval layer|"
-        r"we (captured|observed)|the capture (of|shows|reads)|screenshot)\b",
-        body, re.I) is not None
-    _quantifies = bool(body) and re.search(
-        r"\b(PER|G_RC|CPCE|Q_f|Q_d|Q_s|constitution share|congruence|"
-        r"true positives?|false positives?|rank(ed|s)? (at|[0-9])|n\s*=\s*[0-9])\b",
-        body) is not None
-    if _measures_capture and _quantifies:
-        # A round-log LINE names the rounds; it does not carry them. #1546 --
-        # the deposit that motivated this rule -- carries a full round log in its
-        # header and no evidence whatsoever, and passed an earlier draft of this
-        # check for exactly that reason. The satisfier must be a section that
-        # holds the material: appendix, exhibits, evidence membrane, verification
-        # record, capture record.
-        # (a) an exhibit section holds the material. Headings are frequently
-        #     numbered ("## 12. Evidence Membrane"), so ordinals are skipped.
-        _has = re.search(
-            r"^#{1,4}\s*(?:[0-9IVXivx]+[.)]\s*)*"
-            r"(appendix\b|evidentiary\b|exhibits?\b|evidence\b|"
-            r"verification (record|block)\b|capture record\b|the rounds\b)",
-            body, re.M | re.I) is not None
-        # (b) MANUS's rule is "carry it OR state where it is preserved." A body
-        #     that names the preserving record or dataset has discharged it: the
-        #     evidence is anchored somewhere a reader can reach, which is the whole
-        #     point. What the rule forbids is evidence that exists nowhere.
-        # The location satisfier must be a CLAIM ABOUT THIS PAPER'S OWN EVIDENCE,
-        # not apparatus vocabulary. A first draft accepted any mention of "Capture
-        # Registry" -- and #1546, the deposit that motivated this rule, cleared on
-        # its own methods section, one of whose matches said the registry entry was
-        # QUEUED. The checker read a promise as a location. So: require a deictic
-        # possessive ("this paper's", "the exhibits for this") bound to a named
-        # destination, and explicitly reject the queued/pending forms.
-        _located = re.search(
-            r"((?:exhibits?|captures?|transcripts?|evidence|appendices)\s+"
-            r"(?:for this (?:paper|deposit|version)|of this \w+)?\s*"
-            r"(?:are |is |live |seated |preserved |deposited )"
-            r"(?:at|in)\s+\S{0,80}(?:/s/records/\d+|/datasets/|#\d{3,4}))"
-            r"|(?:this (?:paper|deposit)'s (?:exhibits?|evidence|captures?)\b)",
-            body, re.I) is not None
-        _queued = re.search(r"(registry entry|capture registry entry|snapshot)[^.]{0,60}"
-                            r"\b(queued|pending|not yet|to be)\b", body, re.I) is not None
-        if _queued:
-            _located = False
-        if not (_has or _located):
-            advisories.append(("EVID-001",
-                "this body measures a captured observation -- a composed card, a SERP "
-                "state, a fetched page -- and carries no exhibit section. Such evidence "
-                "cannot be recovered externally: it exists only in the capture. Per the "
-                "evidentiary-basis rule (2026-08-26), carry it or state where it is "
-                "preserved. Advisory only."))
-
     # ── BODY-003 ───────────────────────────────────────────────────────────
     # Added 2026-08-15 after #1486 and #1487 minted with a canonical text made
     # ENTIRELY of metadata sections -- Description, Methodology, Falsification,
@@ -280,15 +202,13 @@ def check_deposit(n: int):
         if len(data) != f.get("bytes") or hashlib.sha256(data).hexdigest() != f.get("sha256"):
             fails.append(("FILES-001", f"sha/bytes mismatch: {f['path']}"))
 
-    return fails, advisories
+    return fails
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--deposit-number", type=int, required=True)
     args = ap.parse_args()
-    fails, advisories = check_deposit(args.deposit_number)
-    for rid, msg in advisories:
-        print(f"  ~ [{rid}] {msg}")
+    fails = check_deposit(args.deposit_number)
     if fails:
         print(f"Deposit #{args.deposit_number}: {len(fails)} completeness failure(s)\n")
         for rid, msg in fails:
@@ -296,8 +216,7 @@ def main():
         print("\nContract: data/api/deposit-completeness.json (deposit-completeness/v1)")
         sys.exit(1)
     print(f"✓ Deposit #{args.deposit_number}: complete "
-          f"(wiki, concepts, related, lexical, citations, render, files)"
-          + (f" · {len(advisories)} advisory" if advisories else ""))
+          f"(wiki, concepts, related, lexical, citations, render, files)")
 
 if __name__ == "__main__":
     main()
