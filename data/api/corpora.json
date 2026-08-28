@@ -2,8 +2,8 @@
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
  "_generated": "2026-08-21",
- "seats": 16,
- "lines_total": 210126,
+ "seats": 17,
+ "lines_total": 231049,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -749,6 +749,39 @@
      "https://www.alexanarch.org/data/corpora/aristotle/text/tlg048-Divisiones_Aristoteleae.txt",
      "https://www.alexanarch.org/data/corpora/aristotle/text/tlg052-De_anima_codicis_E_fragmenta_recensionis_a_v.txt",
      "https://www.alexanarch.org/data/corpora/aristotle/text/tlg054-Physica_textus_alter.txt"
+    ]
+   }
+  },
+  {
+   "seat": "EA-CORPORA-01/17",
+   "corpus": "plotinus",
+   "edition": "Plotinus, Enneades, via First1KGreek (tlg2000.tlg001)",
+   "license": "CC BY-SA (First1KGreek packaging); underlying edition public domain",
+   "origin": {
+    "repo": "OpenGreekAndLatin/First1KGreek",
+    "commit": "7881c563436f52fb3550e6daa6df94be1b83b0e3",
+    "paths": [
+     "data/tlg2000/tlg001 — Enneades, Plotinus (ed. via First1KGreek)"
+    ]
+   },
+   "language": "grc",
+   "lines": 20923,
+   "verified_loci": [
+    "Enn. I.6 On Beauty",
+    "Enn. V.1 On the Three Primary Hypostases",
+    "Enn. VI.9 On the Good or the One"
+   ],
+   "why_seated": "Plotinus is the strongest single comparandum for the Plato–Aristotle authorship question. Measured on particle-transition profiles across a nine-author Greek landscape, Aristotle sits closer to Plotinus (0.0310) than to Plato (0.0852) — and closer to Plotinus than Aristotle sits to himself (within-author mean 0.1028). Seven centuries and a dialect separate them. The seat exists so that result can be re-run and contested rather than reported.",
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/plotinus/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/plotinus/MANIFEST.sha256",
+    "text": [
+     "https://www.alexanarch.org/data/corpora/plotinus/text/ennead-1.txt",
+     "https://www.alexanarch.org/data/corpora/plotinus/text/ennead-2.txt",
+     "https://www.alexanarch.org/data/corpora/plotinus/text/ennead-3.txt",
+     "https://www.alexanarch.org/data/corpora/plotinus/text/ennead-4.txt",
+     "https://www.alexanarch.org/data/corpora/plotinus/text/ennead-5.txt",
+     "https://www.alexanarch.org/data/corpora/plotinus/text/ennead-6.txt"
     ]
    }
   }
