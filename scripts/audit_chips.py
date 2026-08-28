@@ -40,7 +40,14 @@ Rules 1, 2 and 5 fail the build. Rules 3 and 4 are reported.
 import argparse, html, json, pathlib, re, sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-REC = re.compile(r'(?:www\.)?alexanarch\.org/s/records/(\d+)/')
+# A RECORD LINK IS A RECORD LINK WHETHER OR NOT IT NAMES THE HOST. This pattern
+# required an absolute URL until 2026-08-27, so every relative /s/records/N/
+# failed to match — which meant a correctly-formed chip on a relative link was
+# reported under rule 5 as "axn-chip on a non-record link". Eight such reports
+# were standing, all of them false, and the fixer's case C would have STRIPPED
+# the class from correct markup to satisfy them. An auditor that misreads its
+# own subject does not merely miscount; it directs a repair at healthy tissue.
+REC = re.compile(r'(?:(?:www\.)?alexanarch\.org)?/s/records/(\d+)/')
 AXN_IN = re.compile(r'AXN:[0-9A-F]{4}\.[A-Z]+\.')
 ANCHOR = re.compile(r'<a\b([^>]*)>(.*?)</a>', re.S)
 CLS = re.compile(r'class="([^"]*)"')

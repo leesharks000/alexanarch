@@ -22,7 +22,15 @@ as PROSE and left alone unless --force-prose is given.
 """
 import argparse, html, json, pathlib, re, sys
 
-REG = json.loads(pathlib.Path('/home/claude/live/data/registry.json').read_text())['deposits']
+# RESOLVE THE REGISTRY FROM THE REPO, NOT FROM A REMEMBERED PATH. This read was
+# hardcoded to /home/claude/live/data/registry.json, an absolute path to one
+# machine's checkout. In any other checkout the script simply crashed, which was
+# the safe failure. The unsafe one was always available: if that path existed and
+# held a STALE registry, this tool would write confident, wrong AXNs into live
+# pages at scale — and a chip carrying the wrong identifier is worse than no chip,
+# because it reads as verified.
+ROOT = pathlib.Path(__file__).resolve().parents[1]
+REG = json.loads((ROOT / 'data/registry.json').read_text())['deposits']
 D = {d['deposit_number']: d for d in REG}
 REC = re.compile(r'(?:www\.)?alexanarch\.org/s/records/(\d+)/')
 VERB_LEAD = re.compile(r'^(read|see|view|open|browse|visit|download|explore|follow|'
