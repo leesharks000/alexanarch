@@ -1,9 +1,9 @@
 {
- "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest.",
+ "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
  "_generated": "2026-08-21",
- "seats": 17,
- "lines_total": 231049,
+ "seats": 39,
+ "lines_total": 346844,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -676,7 +676,7 @@
    }
   },
   {
-   "seat": "EA-CORPORA-01/16",
+   "seat": "EA-CORPORA-04/01",
    "corpus": "aristotle",
    "edition": "I. Bekker, Aristotelis Opera (Oxford, 1837) via First1KGreek, with Perseus Greek editions preferred for the nine works both repositories carry",
    "license": "CC BY-SA (First1KGreek and Perseus packaging); underlying editions public domain",
@@ -753,7 +753,7 @@
    }
   },
   {
-   "seat": "EA-CORPORA-01/17",
+   "seat": "EA-CORPORA-04/02",
    "corpus": "plotinus",
    "edition": "Plotinus, Enneades, via First1KGreek (tlg2000.tlg001)",
    "license": "CC BY-SA (First1KGreek packaging); underlying edition public domain",
@@ -783,6 +783,572 @@
      "https://www.alexanarch.org/data/corpora/plotinus/text/ennead-5.txt",
      "https://www.alexanarch.org/data/corpora/plotinus/text/ennead-6.txt"
     ]
+   }
+  },
+  {
+   "seat": "EA-CORPORA-02/13",
+   "corpus": "acm-coptic",
+   "edition": "A.M. Kropp, Ausgewählte koptische Zaubertexte, Bde. I–II (Bruxelles: Fondation égyptologique Reine Élisabeth, 1930–31). Title verified in-session ('KOPTISCHE ZAUBERTEXTE').",
+   "license": {
+    "payload": "PD-US as of 2026 (published pre-1931). NOT PD-EU: Kropp d. 1975 → 2046. Payload/record split per the DSS-seat precedent (EA-CORPORA-02/01): the seat's US ground is stated, the EU term carried honestly, redistribution scoped accordingly. Coptic texts ancient.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     "archive.org/details/ausgewhltekoptis0003krop",
+     "archive.org/details/ausgewhltekoptis0012krop"
+    ],
+    "fetched": "2026-08-25",
+    "transport": "IA direct download (open items, not lending-walled); Transport D, No-Double-Draw"
+   },
+   "language": "Coptic (Sahidic and other dialects); German editorial and translation layer",
+   "lines": 0,
+   "verified_loci": [
+    "Bd. I title 'KOPTISCHE ZAUBERTEXTE' verified (pdftotext, in-session)"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/acm-coptic/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/acm-coptic/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-02/03",
+   "corpus": "apocryphon-john",
+   "edition": null,
+   "license": {
+    "ccdl_statement_verbatim": "Physical rights are retained by the institution. Copyright is retained in accordance with U. S. Copyright laws.",
+    "adjudication": "The papyri are ancient and public domain. Under U.S. law faithful photographic reproductions of two-dimensional public-domain material acquire no independent copyright (Bridgeman v. Corel line); the CCDL statement asserts physical custody and a generic conformity to U.S. copyright law, under which no reproduction copyright arises for these plates. The statement is recorded verbatim rather than assumed away; the images are served openly at full resolution over unauthenticated IIIF. Seated. This is the 'theater of availability' pattern documented in EA-CORPORA-01 resolved in the opposite direction: here the availability is real and the claim is the ghost.",
+    "record": "CC-BY-4.0 (seat record text only; the ancient images are PD)"
+   },
+   "origin": null,
+   "language": null,
+   "lines": 0,
+   "verified_loci": null,
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/apocryphon-john/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/apocryphon-john/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-02/10",
+   "corpus": "chaldaean-oracles",
+   "edition": "W. Kroll, De oraculis Chaldaicis (Breslauer philologische Abhandlungen VII.1, 1894) — the founding critical collection of the fragments; W. Wynn Westcott, The Chaldæan Oracles of Zoroaster (Collectanea Hermetica VI, 1895) — the PD English. Title pages verified in-session ('De oraculis Chaldaicis.'; 'EDITED BY W. WYNN WESTCOTT').",
+   "license": {
+    "payload": "Public domain worldwide: Kroll d. 1939 (EU PD 2010; US pre-1930); Westcott d. 1925 (EU PD 1996; US pre-1930). Fragments ancient.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     "archive.org/details/bub_gb_b33NAAAAMAAJ",
+     "archive.org/details/WestcottWWCollectaneaHermeticaVolume06"
+    ],
+    "fetched": "2026-08-25",
+    "transport": "IA direct download; Transport D, No-Double-Draw"
+   },
+   "language": "Ancient Greek fragments in Latin-language apparatus; English translation layer",
+   "lines": 0,
+   "verified_loci": [
+    "Kroll title page: 'De oraculis Chaldaicis.' (pdftotext, in-session)",
+    "Westcott title page: editor line verified"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/chaldaean-oracles/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/chaldaean-oracles/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-02/14",
+   "corpus": "dickinson-mss",
+   "edition": "Amherst College Digital Collections, Emily Dickinson Collection (/view/EmilyDickinson), served via Cantaloupe IIIF at arbitrary resolution. The manuscripts, not the print regularizations, are the authority; PD print layers (Poems 1890/1891/1896; Letters 1894) queued as subordinate finding layers.",
+   "license": {
+    "payload": "Manuscripts PD (Dickinson d. 1886). Image-rights ground: faithful reproductions of PD 2D works (Bridgeman) plus Amherst's open-collections practice; the per-object rights statements were UNVERIFIABLE at seat time (item pages 503) and their verification is the campaign's first gate, recorded as such rather than assumed.",
+    "record": "CC-BY-4.0 applies to this seat record only.",
+    "harvard_note": "The Houghton half of the corpus (via edickinson.org, 429 at seat time) is a separate rights posture; routed for later ruling, not assumed under this seat."
+   },
+   "origin": {
+    "host": "acdc.amherst.edu",
+    "collection": "/view/EmilyDickinson",
+    "iiif_pattern": "/cantaloupe/iiif/2/media%2FEmilyDickinson%2Fed<NNNN>%2F<image-uuid>.tif/full/<size>/0/default.jpg",
+    "fetched": "2026-08-25",
+    "host_state": "Intermittent 503 on item pages throughout seat time; search surface and image server answered intermittently. One object (ed0096) image secured at 1600px with sha256 across the flap — the route is PROVEN; the harvest is not done.",
+    "transport": "IIIF Image API; Transport D, No-Double-Draw"
+   },
+   "language": "English; the manuscripts carry the un-regularized text — dashes, variants, lineation the print tradition flattened",
+   "lines": 0,
+   "verified_loci": [
+    "ed0096 image fetched at /full/1600,/ and opened in-session; pilot-manifest.json carries URL, bytes, sha256"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/dickinson-mss/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/dickinson-mss/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-02/01",
+   "corpus": "dss",
+   "edition": "M.G. Abegg, Jr., J.E. Bowley, E.M. Cook, electronic transcriptions with morphological tagging (1995-2015), prepared for the Brill Dead Sea Scrolls Concordances; readings primarily follow DJD (Oxford: Clarendon, 1955-) with editors' own reconstructions where editions do not supply them; converted to Text-Fabric by J. Jacobs, M. Naaijer, D. Roorda (CACCHT project, ETCBC)",
+   "license": {
+    "payload": "CC BY-NC 4.0 — declared at the file in every Text-Fabric feature header (@license, @licenseUrl), with @createdBy=Abegg/Bowley/Cook and @source=Martin Abegg's data files, personal communication. Repo-level MIT covers packaging/software only.",
+    "record": "CC-BY-4.0 applies to this seat record and the alexanarch record text only, NOT to the corpus payload. The payload license is BY-NC and is carried forward unmodified. First NC-licensed seat in the library; redistribution here is non-commercial.",
+    "chain_note": "Ancient texts public domain. Transcription/reconstruction layer created by Abegg, Bowley and Cook and provided by Abegg personally to CACCHT (documented in repo about.md and in the .tf headers); the license is therefore declared by the parties holding the transcription rights - the structural opposite of a third-party relicensing defect. Caveat recorded honestly: Qimron v. Shanks (Israel) held a scholar's scroll reconstruction copyrightable to the reconstructor; readings herein that follow Qimron's published editions rest on the ground that following an edition's readings is not copying its protected expression. The principal reconstructors are the grantors here.",
+    "provenance_event": "The corpus enters the archive through the hand that liberated it: Abegg's 1991 reconstruction of the scrolls from the Brill concordance broke a forty-year publication monopoly. @source=Martin Abegg's data files, personal communication."
+   },
+   "origin": {
+    "repo": "ETCBC/dss",
+    "commit": "f051578775b77b36164cfa16c402563d7d211a55",
+    "paths": [
+     "tf/1.9/"
+    ],
+    "fetched": "2026-08-22",
+    "transport": "git sparse checkout at pinned commit; Transport D, No-Double-Draw: no paid API invoked"
+   },
+   "language": "Hebrew; Aramaic (feature 'lang' distinguishes; Paleo-Hebrew and Greek script signs flagged via 'script')",
+   "lines": 52880,
+   "verified_loci": [
+    "1Qisaa 1:1 חזון ישעיהו בן אמוץ (= Isa 1:1, scroll orthography)",
+    "1QS 1:1 [ספר ס]רך היחד",
+    "11Q19 2:1-2 Temple Scroll col. 2 (Exod 34 paraphrase)",
+    "CD 1:1 ועתה שמעו כל יודעי צדק"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/dss/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/dss/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-02/20",
+   "corpus": "ethiopic-enoch",
+   "edition": "R.H. Charles, The Ethiopic Version of the Book of Enoch (Anecdota Oxoniensia, 1906) — the critical Ge'ez text from 23 MSS; A. Dillmann, Liber Henoch aethiopice (1851) — the editio princeps lineage. The book survives complete ONLY in Ge'ez: the Ethiopic tradition is the witness, not a version.",
+   "license": {
+    "payload": "Public domain: Charles d. 1931 (pre-1930 US publication; EU PD 2002); Dillmann d. 1894.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     "archive.org/details/ethiopicversiono00charuoft",
+     "archive.org/details/bub_gb_DigVAAAAQAAJ"
+    ],
+    "fetched": "2026-08-25",
+    "transport": "IA direct; Transport D, No-Double-Draw"
+   },
+   "language": "Ge'ez (Classical Ethiopic); Latin/English apparatus",
+   "lines": 0,
+   "verified_loci": [
+    "Charles 1906 + Dillmann 1851 secured from verified IA items, sha-manifested"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/ethiopic-enoch/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/ethiopic-enoch/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-02/07",
+   "corpus": "greek-atomists",
+   "edition": null,
+   "license": {
+    "payload": "Mixed, declared per component above",
+    "record": "CC-BY-4.0"
+   },
+   "origin": null,
+   "language": null,
+   "lines": 1212,
+   "verified_loci": [
+    "DL 10.122 Μήτε νέος τις ὢν μελλέτω φιλοσοφεῖν (Letter to Menoeceus opening)",
+    "DL 9.30 Λεύκιππος Ἐλεάτης... (Leucippus vita)"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/greek-atomists/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/greek-atomists/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-02/09",
+   "corpus": "leonardo",
+   "edition": "J.P. Richter, The Literary Works of Leonardo da Vinci, Compiled and Edited from the Original Manuscripts, 2 vols (London: Sampson Low, 1883). Italian transcriptions from the codices printed facing English — the great PD gateway to the notebooks. University of Toronto copies via IA, SHA1-verified.",
+   "license": {
+    "payload": "Public domain (Richter 1883; Leonardo d. 1519)",
+    "record": "CC-BY-4.0"
+   },
+   "origin": null,
+   "language": null,
+   "lines": 0,
+   "verified_loci": null,
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/leonardo/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/leonardo/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-02/06",
+   "corpus": "lucretius",
+   "edition": "T. Lucretius Carus, De Rerum Natura, Perseus canonical-latinLit phi0550.phi001.perseus-lat1 (TEI; editor credit as carried in the file's sourceDesc)",
+   "license": {
+    "payload": "CC BY-SA 4.0 (declared in file)",
+    "record": "CC-BY-4.0 (record text)"
+   },
+   "origin": {
+    "repo": "PerseusDL/canonical-latinLit",
+    "commit": "422896dde7f0",
+    "path": "data/phi0550/phi001/phi0550.phi001.perseus-lat1.xml",
+    "fetched": "2026-08-22"
+   },
+   "language": null,
+   "lines": 7413,
+   "verified_loci": [
+    "DRN 1.1 Aeneadum genetrix, hominum divomque voluptas",
+    "DRN 2.1 Suave, mari magno turbantibus aequora ventis"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/lucretius/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/lucretius/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-02/04",
+   "corpus": "mandaean",
+   "edition": null,
+   "license": {
+    "payload": "All secured volumes public domain (Lidzbarski d. 1928 — PD worldwide since 2019 under life+90; editions 1893-1925; Toronto/IA scans unrestricted). Drower translations (d. 1972) EXCLUDED as in copyright; exclusion recorded.",
+    "record": "CC-BY-4.0 (seat record text only)"
+   },
+   "origin": null,
+   "language": null,
+   "lines": 0,
+   "verified_loci": null,
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/mandaean/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/mandaean/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-02/02",
+   "corpus": "marx",
+   "edition": null,
+   "license": {
+    "payload": "All witness texts public domain (Marx d. 1883, Engels d. 1895; printings 1848-1867). Wikisource transcription layer CC BY-SA 4.0 (de.wikisource Editionsrichtlinien); Commons scan files PD. IA-hosted 1867 scans PD.",
+    "record": "CC-BY-4.0 (seat record)",
+    "exclusions": "MEW (Dietz) and MEGA apparatus texts excluded — edited-text copyright hazard. marxists.org German Kapital excluded as MEW-derived. Recorded 2026-08-22."
+   },
+   "origin": null,
+   "language": null,
+   "lines": 54,
+   "verified_loci": [
+    "manifest-1848 p3: 'Ein Gespenst geht um in Europa - das Gespenst des Kommunismus.'",
+    "manifest-1848 p23 / manifest-1850-51 p30: 'Proletarier aller Laender vereinigt Euch!'",
+    "manifest-1850-51 p4: 'Die Geschichte aller bisherigen Gesellschaft ist die Geschichte von Klassenkaempfen.'"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/marx/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/marx/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-02/15",
+   "corpus": "nag-hammadi",
+   "edition": "Milan Konvicka, Marcion project: complete Coptic (Sahidic/Lycopolitan) transcription of the Nag Hammadi Library, distributed as NagHammadi.msql.bz2 (SourceForge, marcion/1.8/texts). 59 tractates, codices I-XIII, 34,623 lines. Supersedes the sparse holdings of EA-CORPORA-01/15 (Thomas + fragments) at library scale; 01/15 remains seated as the prior witness layer.",
+   "license": {
+    "payload": "GPL-2.0 (Konvicka/Marcion) — the transcription is a modern encoded editorial artifact and is NOT treated as ownerless ancient text; the manuscripts are ancient and PD. FIRST GPL-LICENSED SEAT: copyleft carried forward on the transcription layer and its derivatives (the Unicode normalization inherits GPL-2.0); seat record CC-BY-4.0.",
+    "transmission_stack": "MANUSCRIPT WITNESS (NHC I-XIII, Coptic Museum Cairo) -> TRANSCRIPTION (Konvicka/Marcion, GPL-2.0) -> NORMALIZATION (CHA/TLL Unicode layer, 2026, GPL-2.0 inherited) -> TLL PROJECTION (traininglayerliterature.org/originals/)",
+    "adjacent_layers": "Tianmu Good Works Library recorded as a rendered access layer over the same Konvicka source, NOT a textual authority; Linssen PDF noted and not used (contradictory license statement: 'public domain' + CC BY-NC-SA); Claremont NHA (ccdl.claremont.edu, open IIIF) recorded as the witness-image control route; Brill CGLO acknowledged as the authoritative critical edition and excluded as access-gated."
+   },
+   "origin": {
+    "item": "sourceforge.net/projects/marcion/files/1.8/texts/coptic(sahidic)/NagHammadi.msql.bz2",
+    "fetched": "2026-08-25",
+    "sha256_of_archive": "ba3eb4c2a9b97ea9630fc131f18dff35bc7d7fdb3582c3152bc28bfa70cf8ce0",
+    "transport": "SourceForge direct; Transport D, No-Double-Draw"
+   },
+   "language": "Coptic (Sahidic; Lycopolitan in Codex I) in Marcion ASCII scheme; Unicode normalization layer derived in-session",
+   "lines": 0,
+   "verified_loci": [
+    "NHC I,1 Prayer of Paul incipit: [PEKOU]AEIN MAt NHI MPEK[NAE] -> ⲡⲉⲕⲟⲩⲁⲉⲓⲛ ⲙⲁϯ ⲛⲏⲓ ⲙⲡⲉⲕⲛⲁⲉ ('your light; give me your mercy') — matches the known text",
+    "NHC I,1 TALgO MPASWMA -> ⲧⲁⲗϭⲟ ⲙ̄ⲡⲁⲥⲱⲙⲁ ('heal my body') — g=ϭ verified",
+    "NgI -> ⲛ̄ϭⲓ (subject marker) at scale; XARIZE -> ⲭⲁⲣⲓⲍⲉ fixes X=ⲭ",
+    "59/59 tractates carry text; codex XIII Trimorphic Protennoia and On the Origin of the World present"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/nag-hammadi/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/nag-hammadi/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-02/05",
+   "corpus": "nh-greek-witnesses",
+   "edition": "Digital Corpus of Literary Papyri EpiDoc records with full editorial apparatus (Attridge, Fitzmyer, Grenfell-Hunt, Hofius et al. readings retained in original/)",
+   "license": {
+    "payload": "CC BY (Duke Databank / DCLP, declared per record)",
+    "record": "CC-BY-4.0"
+   },
+   "origin": {
+    "repo": "papyri/idp.data",
+    "commit": "d061eef861ee34d09d8d5f04b91e27dd48ddde8c",
+    "paths": [
+     "DCLP/62/62838.xml",
+     "DCLP/62/62839.xml",
+     "DCLP/62/62840.xml"
+    ],
+    "fetched": "2026-08-22"
+   },
+   "language": null,
+   "lines": 140,
+   "verified_loci": [
+    "POxy654 l.1-3: incipit — οὗτοι οἱ λόγοι οἱ [ἀπόκρυφοι οὓς ἐλά]λησεν Ἰη(σοῦ)ς ὁ ζῶν",
+    "POxy1 r.8: logion 77b — σχίσον τὸ ξύλον κἀγὼ [...]"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/nh-greek-witnesses/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/nh-greek-witnesses/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-02/17",
+   "corpus": "pali-canon",
+   "edition": "Mahāsaṅgīti Tipiṭaka root Pali with Bhikkhu Sujato's English, from suttacentral/bilara-data (branch: published). Dhammapada seated complete: 26 vagga files × 2 layers, flat text emitted.",
+   "license": {
+    "payload": "Root Pali: public domain (canonical text; Mahāsaṅgīti digital edition distributed freely). Sujato translations: CC0 public-domain dedication — the most open translation corpus in Buddhist studies; chosen for exactly that.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "repo": "suttacentral/bilara-data@published",
+    "paths": [
+     "root/pli/ms/sutta/kn/dhp/",
+     "translation/en/sujato/sutta/kn/dhp/"
+    ],
+    "fetched": "2026-08-25",
+    "transport": "raw.githubusercontent per file; Transport D, No-Double-Draw"
+   },
+   "language": "Pali (Mahāsaṅgīti); English (Sujato)",
+   "lines": 0,
+   "verified_loci": [
+    "dhp1 root: manopubbaṅgamā dhammā… present in flat layer",
+    "26/26 vagga files both layers, sha-manifested"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/pali-canon/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/pali-canon/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-03/02",
+   "corpus": "pearl-and-other-poems",
+   "edition": "First edition, 2014. Two objects, neither substitutable for the other.",
+   "license": {
+    "payload": "CC-BY-4.0, by the author. The archive holds the rights it grants.",
+    "record": "CC-BY-4.0.",
+    "note": "Unlike every other seat in the library, this one required no license verification and declares no NC gate: the corpus and the seating institution are the same party. That identity is itself the thing the seat records."
+   },
+   "origin": {
+    "publisher": "New Human Press",
+    "year": 2014,
+    "isbn": "978-0692313077",
+    "canonical_deposits": {
+     "work": "#1121 · AXN:0472",
+     "navigation_map": "#1120 · AXN:0471"
+    },
+    "provenance": "Deposited in the archive that seats it; no external fetch. The PDF is the 2014 print artwork as published; the machine text was rendered from per-word PDF geometry by the archive's own render_pearl_machine_text.py.",
+    "fetched": "2026-08-27 (from archive attachment store)"
+   },
+   "language": "English",
+   "lines": 6949,
+   "verified_loci": [
+    "Machine score header declares its own canonical deposit (#1121 · AXN:0472) and names the render script",
+    "156 page delimiters present in the score, matching the artwork's pagination",
+    "Blank rows preserved as the book's whitespace rather than stripped"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/pearl-and-other-poems/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/pearl-and-other-poems/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-02/11",
+   "corpus": "pgm",
+   "edition": "F.G. Kenyon, Greek Papyri in the British Museum, Catalogue with Texts, vols I (1893) and II (1898) — containing the London magical papyri (P.Lond. 46 = PGM V; 121 = PGM VII; 122-124 = PGM VIII-X) with plates; C. Wessely, Aus einem griechischen Zauberpapyrus (1911). Title pages verified in-session.",
+   "license": {
+    "payload": "Public domain: Kenyon d. 1952 (EU PD 2023; both vols pre-1930 US); Wessely d. 1931 (EU PD 2002). Papyri ancient.",
+    "record": "CC-BY-4.0 applies to this seat record only.",
+    "preisendanz_note": "Preisendanz, Papyri Graecae Magicae vol. I (1928) is PD-US (pre-1930) but NOT PD-EU (d. 1968 → 2039); vol. II (1931) enters US PD 2027. No IA scan located at seat time. QUEUED with the split recorded — the first seat to carry a deliberate US/EU deferral."
+   },
+   "origin": {
+    "items": [
+     "archive.org/details/greekpapyriinbri01brit_0",
+     "archive.org/details/greekpapyriinbri02brit",
+     "archive.org/details/auseinemgriechis0000wnsc"
+    ],
+    "fetched": "2026-08-25",
+    "transport": "IA direct download; Transport D, No-Double-Draw"
+   },
+   "language": "Ancient Greek (with Old Coptic glosses in the tradition); editorial English/German",
+   "lines": 0,
+   "verified_loci": [
+    "Kenyon vol I prefatory text naming the catalogue verified (pdftotext, in-session)",
+    "Wessely title 'GRIECHISCHEN ZAUBERPAPYRUS' verified"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/pgm/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/pgm/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-02/08",
+   "corpus": "quran",
+   "edition": "Tanzil Project Uthmani text, version 1.1 — the standard verified machine-readable Qur'an, 6,236 ayat (Kufan count), full Uthmani orthography with diacritics",
+   "license": {
+    "payload": "CC BY 3.0, DECLARED IN THE FILE ITSELF with terms: verbatim distribution only (changing the text not allowed), source attribution to Tanzil Project, link to tanzil.net. All terms honored: the file is seated VERBATIM including its copyright block.",
+    "record": "CC-BY-4.0 (record text only)",
+    "attribution": "Quran text courtesy of the Tanzil Project — https://tanzil.net"
+   },
+   "origin": {
+    "source": "tanzil.net download service",
+    "fetched": "2026-08-22",
+    "sha256": "bf4f57b968d03f4131c070b1e285da9be0e0a108a21c910e872801ca273312c8"
+   },
+   "language": null,
+   "lines": 0,
+   "verified_loci": [
+    "1|1 Basmala",
+    "2|255 Ayat al-Kursi",
+    "112|1 al-Ikhlas",
+    "114|6 final verse; count 6236 = Kufan standard"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/quran/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/quran/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-02/16",
+   "corpus": "talmud-bavli",
+   "edition": "Hebrew/Aramaic text (Vilna-based digital text) with the William Davidson Edition English, via the Sefaria API (Sefaria-Export's static json tree has been restructured upstream; the live API is the working route).",
+   "license": {
+    "payload": "Hebrew/Aramaic Talmud text: public domain (Vilna edition lineage). William Davidson Edition English: CC-BY-NC — second NC seat after DSS (EA-CORPORA-02/01), payload/record split carried; record CC-BY-4.0.",
+    "chain_note": "Sefaria's per-version licensing is declared in API responses; the harvest will carry per-tractate version licenses verbatim."
+   },
+   "origin": {
+    "route": "https://www.sefaria.org/api/texts/<Tractate>.<daf>?context=0",
+    "pilot": "Berakhot 2a secured (14 Hebrew + 14 English segments, versionTitle verified in-session)",
+    "fetched": "2026-08-25",
+    "transport": "Sefaria REST API; Transport D, No-Double-Draw"
+   },
+   "language": "Hebrew; Jewish Babylonian Aramaic; English translation layer",
+   "lines": 0,
+   "verified_loci": [
+    "Berakhot 2a via API: 14 segment pairs, Davidson versionTitle confirmed"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/talmud-bavli/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/talmud-bavli/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-02/18",
+   "corpus": "tao-te-ching",
+   "edition": "Chinese received text (Project Gutenberg #7337, PD digital text of the received 81-chapter edition) with James Legge, The Tao Teh King (Sacred Books of the East XXXIX, 1891; PG #216).",
+   "license": {
+    "payload": "Public domain worldwide: ancient text; Legge d. 1897; PG texts carry the PG license frame which imposes no restriction on the PD content itself.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     "gutenberg.org/ebooks/7337 (Chinese)",
+     "gutenberg.org/ebooks/216 (Legge EN)"
+    ],
+    "fetched": "2026-08-25",
+    "transport": "Gutenberg direct; Transport D, No-Double-Draw"
+   },
+   "language": "Classical Chinese; English (Legge 1891)",
+   "lines": 0,
+   "verified_loci": [
+    "PG7337 secured 41,533 bytes; PG216 Legge secured; both sha-manifested"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/tao-te-ching/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/tao-te-ching/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-02/19",
+   "corpus": "upanishads",
+   "edition": "F. Max Müller, The Upanishads, Part I (Sacred Books of the East I, Oxford 1879): Chāndogya, Kena, Aitareya, Kauṣītaki, Īśā. Part II (SBE XV, 1884: Kaṭha, Muṇḍaka, Taittirīya, Bṛhadāraṇyaka, Śvetāśvatara, Praśna, Maitrāyaṇa) QUEUED — identifier to be located.",
+   "license": {
+    "payload": "Public domain: Müller d. 1900; 1879 publication. Upanishads ancient.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     "archive.org/details/sbe1theupanishadsmaxmuller_202002"
+    ],
+    "fetched": "2026-08-25",
+    "transport": "IA direct; Transport D, No-Double-Draw"
+   },
+   "language": "English translation of Sanskrit; Sanskrit source layer QUEUED (sanskritdocuments.org route recorded; PD Devanagari editions on IA to be identified — the 1938 Benares collection is NOT PD-US until 2034 and is deliberately not seated)",
+   "lines": 0,
+   "verified_loci": [
+    "SBE I PDF secured 7.9MB from verified IA item, sha-manifested"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/upanishads/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/upanishads/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-02/12",
+   "corpus": "voynich",
+   "edition": "Beinecke Rare Book & Manuscript Library, Yale, MS 408 (vellum C14-dated 1404–1438). Image source: IA item 'voynich' (High Resolution Scans), 427 image files.",
+   "license": {
+    "payload": "Public domain: 15th-century artwork; faithful reproductions of PD 2D works carry no new copyright (Bridgeman ground).",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     "archive.org/details/voynich"
+    ],
+    "fetched": "2026-08-25",
+    "transport": "IA metadata manifest + per-file download; Transport D, No-Double-Draw",
+    "yale_route": "collections.library.yale.edu/catalog/2002046 (IIIF) recorded; responded 202-async at seat time"
+   },
+   "language": "Unknown script ('Voynichese'); the manuscript is the archive's limit case — a text whose reception history is entirely reader-side because no writer-side decipherment holds",
+   "lines": 0,
+   "verified_loci": [
+    "16 pilot folios opened and visually confirmed as MS 408 pages in-session"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/voynich/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/voynich/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-03/01",
+   "corpus": "whitman",
+   "edition": "The Walt Whitman Archive TEI-XML transcriptions (Center for Digital Research in the Humanities, University of Nebraska–Lincoln; University of Iowa; NEH). Editions transcribed and encoded 2015; the Blue Book carries transcription and encoding by Elizabeth Lorang, Brett Barney, and Kevin McMullen.",
+   "license": {
+    "payload": "Underlying texts public domain (Whitman d. 1892). The TEI encoding is the Whitman Archive's scholarly labor; the source repositories carry NO license file, and the Archive's published site terms are Creative Commons BY-NC. Recorded as UNVERIFIED AT SEAT TIME rather than assumed, and handled under the NC payload/record split ruled at EA-CORPORA-02: a NonCommercial payload license is carried forward unmodified and does not attach to this seat record.",
+    "record": "CC-BY-4.0 applies to this seat record only.",
+    "verification_gate": "Confirm the encoding license with the Whitman Archive before any downstream redistribution of the TEI. The flat text derived here is a transformation of PD text; the encoding's status governs the XML originals."
+   },
+   "origin": {
+    "repos": [
+     "whitmanarchive/whitman-leaves_of_grass",
+     "whitmanarchive/whitman-other_books"
+    ],
+    "branch": "main",
+    "paths": [
+     "source/tei/",
+     "source/drafts/tei/nyp.00015.xml"
+    ],
+    "fetched": "2026-08-27",
+    "transport": "raw.githubusercontent, direct file fetch, per-file sha256"
+   },
+   "language": "English",
+   "lines": 47147,
+   "verified_loci": [
+    "LG1855 opens 'I celebrate myself' — the 1855 text, untitled, before 'Song of Myself' existed as a title",
+    "LGBB p5 'Well-begotten, and raised [- {+bred+} -] by a perfect mother' — the substitution visible in the flat text",
+    "LGBB p5 'After roaming [-various for {+through+}-] … many [- {+a+} -] … {+lands+}' — four superimposed revisions on one line",
+    "LG1891 present as the deathbed edition, distinct from LG1871 rather than merged"
+   ],
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/whitman/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/whitman/MANIFEST.sha256"
    }
   }
  ]
