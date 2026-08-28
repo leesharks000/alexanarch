@@ -1,0 +1,440 @@
+{
+ "corpus": "aristotle",
+ "seat": "EA-CORPORA-01/16",
+ "origin": [
+  {
+   "repo": "OpenGreekAndLatin/First1KGreek",
+   "commit": "7881c563436f52fb3550e6daa6df94be1b83b0e3",
+   "paths": [
+    "data/tlg0086/tlg001–tlg054 (39 works; I. Bekker, Aristotelis Opera, Oxford 1837, and related editions)"
+   ]
+  },
+  {
+   "repo": "PerseusDL/canonical-greekLit",
+   "commit": "a065c359aab33c33bd17ddc2cac7d27fdc9cd870",
+   "paths": [
+    "data/tlg0086/tlg003, tlg009, tlg010, tlg025, tlg029, tlg034, tlg035, tlg038, tlg045 (9 works; Perseus grc editions preferred where both repos hold a work)"
+   ]
+  }
+ ],
+ "edition": "I. Bekker, Aristotelis Opera (Oxford, 1837) via First1KGreek, with Perseus Greek editions preferred for the nine works both repositories carry",
+ "license": "CC BY-SA (First1KGreek and Perseus packaging); underlying editions public domain",
+ "fetched": "2026-08-28",
+ "works": {
+  "count": 48,
+  "lines": 83110,
+  "per-work": "text/tlgNNN-<Title>.txt",
+  "originals": "original/tlg0086.tlgNNN.xml"
+ },
+ "received_authenticity": {
+  "_field": "Each work carries a received_status. THE STATUS IS RECORDED, NOT ENDORSED.",
+  "_note": "The genuine/spurious partition of this corpus is an inference, not an attestation. The corpus was constituted by Andronicus of Rhodes in the first century BCE — some 250 years after Aristotle — working, on the tradition's own account, from the cross-references the texts contain and from school documents. His catalogue is not extant. His judgments have been overturned: he held De interpretatione spurious, and the field now receives it as genuine. Metaphysics A was contested in antiquity and attributed by some to Pasicles of Rhodes. The criteria that produced the partition — internal consistency, style, doctrinal fit — are the same criteria whose circularity is at issue wherever authorship is the question. This seat therefore records the received status as a field to be tested against, not a filter to measure through. Any analysis that excludes the spuria to sharpen a result about Aristotle has used a category built from the consistency it is measuring.",
+  "distribution": {
+   "received-genuine": 29,
+   "received-spurious": 14,
+   "contested-accepted": 1,
+   "disputed": 1,
+   "largely-spurious": 1,
+   "recension-variant": 2
+  },
+  "flagged": {
+   "tlg017": "De interpretatione — judged SPURIOUS by Andronicus, the corpus's constituting editor; now received as genuine",
+   "tlg025": "Metaphysica — Book A's authenticity questioned in Alexander's time; Asclepius reports attribution by some to Pasicles of Rhodes",
+   "tlg022": "Magna Moralia — disputed; often assigned to an early Aristotle or to a Peripatetic",
+   "tlg036": "Problemata — largely compiled by the school rather than authored"
+  }
+ },
+ "verified_loci": [
+  "Metaphysics A 6, 987b11–14: methexis and the Pythagorean mimesis, the open question of what participation could be",
+  "Metaphysics A 1, 980a21: πάντες ἄνθρωποι τοῦ εἰδέναι ὀρέγονται φύσει",
+  "Nicomachean Ethics I 1, 1094a1: πᾶσα τέχνη καὶ πᾶσα μέθοδος",
+  "Eudemian Ethics I 1: the Delian inscription",
+  "Poetics 1447b: the Sokratikoi logoi classified among the mimetic arts, the genre that lacks a name"
+ ],
+ "works_list": [
+  {
+   "tlg": "tlg001",
+   "title": "Analytica priora",
+   "repo": "first1k",
+   "received_status": "received-genuine",
+   "lines": 9551,
+   "text": "text/tlg001-Analytica_priora.txt"
+  },
+  {
+   "tlg": "tlg002",
+   "title": "De anima",
+   "repo": "first1k",
+   "received_status": "received-genuine",
+   "lines": 3464,
+   "text": "text/tlg002-De_anima.txt"
+  },
+  {
+   "tlg": "tlg003",
+   "title": "Constitution of the Athenians",
+   "repo": "perseus",
+   "received_status": "contested-accepted",
+   "lines": 635,
+   "text": "text/tlg003-Constitution_of_the_Athenians.txt"
+  },
+  {
+   "tlg": "tlg004",
+   "title": "De audibilibus",
+   "repo": "first1k",
+   "received_status": "received-spurious",
+   "lines": 95,
+   "text": "text/tlg004-De_audibilibus.txt"
+  },
+  {
+   "tlg": "tlg005",
+   "title": "De caelo",
+   "repo": "first1k",
+   "received_status": "received-genuine",
+   "lines": 3041,
+   "text": "text/tlg005-De_caelo.txt"
+  },
+  {
+   "tlg": "tlg006",
+   "title": "Categoriae",
+   "repo": "first1k",
+   "received_status": "received-genuine",
+   "lines": 922,
+   "text": "text/tlg006-Categoriae.txt"
+  },
+  {
+   "tlg": "tlg007",
+   "title": "De coloribus",
+   "repo": "first1k",
+   "received_status": "received-spurious",
+   "lines": 148,
+   "text": "text/tlg007-De_coloribus.txt"
+  },
+  {
+   "tlg": "tlg008",
+   "title": "De divinatione per somnum",
+   "repo": "first1k",
+   "received_status": "received-genuine",
+   "lines": 219,
+   "text": "text/tlg008-De_divinatione_per_somnum.txt"
+  },
+  {
+   "tlg": "tlg009",
+   "title": "Eudemian Ethics",
+   "repo": "perseus",
+   "received_status": "received-genuine",
+   "lines": 1063,
+   "text": "text/tlg009-Eudemian_Ethics.txt"
+  },
+  {
+   "tlg": "tlg010",
+   "title": "Nicomachean Ethics",
+   "repo": "perseus",
+   "received_status": "received-genuine",
+   "lines": 1679,
+   "text": "text/tlg010-Nicomachean_Ethics.txt"
+  },
+  {
+   "tlg": "tlg011",
+   "title": "Epistulae",
+   "repo": "first1k",
+   "received_status": "received-spurious",
+   "lines": 19,
+   "text": "text/tlg011-Epistulae.txt"
+  },
+  {
+   "tlg": "tlg012",
+   "title": "De Generatione Animalium",
+   "repo": "first1k",
+   "received_status": "received-genuine",
+   "lines": 224,
+   "text": "text/tlg012-De_Generatione_Animalium.txt"
+  },
+  {
+   "tlg": "tlg013",
+   "title": "De generatione et corruptione",
+   "repo": "first1k",
+   "received_status": "received-genuine",
+   "lines": 1773,
+   "text": "text/tlg013-De_generatione_et_corruptione.txt"
+  },
+  {
+   "tlg": "tlg014",
+   "title": "Historia animalium",
+   "repo": "first1k",
+   "received_status": "received-genuine",
+   "lines": 16229,
+   "text": "text/tlg014-Historia_animalium.txt"
+  },
+  {
+   "tlg": "tlg015",
+   "title": "De animalium incessu",
+   "repo": "first1k",
+   "received_status": "received-genuine",
+   "lines": 682,
+   "text": "text/tlg015-De_animalium_incessu.txt"
+  },
+  {
+   "tlg": "tlg016",
+   "title": "De insomniis",
+   "repo": "first1k",
+   "received_status": "received-genuine",
+   "lines": 428,
+   "text": "text/tlg016-De_insomniis.txt"
+  },
+  {
+   "tlg": "tlg017",
+   "title": "De interpretatione",
+   "repo": "first1k",
+   "received_status": "received-genuine-ANDRONICUS-JUDGED-SPURIOUS",
+   "lines": 549,
+   "text": "text/tlg017-De_interpretatione.txt"
+  },
+  {
+   "tlg": "tlg018",
+   "title": "De iuventute et senectute, De vita et morte",
+   "repo": "first1k",
+   "received_status": "received-genuine",
+   "lines": 299,
+   "text": "text/tlg018-De_iuventute_et_senectute_De_vita_et_morte.txt"
+  },
+  {
+   "tlg": "tlg019",
+   "title": "De lineis insecabilibus",
+   "repo": "first1k",
+   "received_status": "received-spurious",
+   "lines": 78,
+   "text": "text/tlg019-De_lineis_insecabilibus.txt"
+  },
+  {
+   "tlg": "tlg020",
+   "title": "De longitudine et brevitate vitae",
+   "repo": "first1k",
+   "received_status": "received-genuine",
+   "lines": 296,
+   "text": "text/tlg020-De_longitudine_et_brevitate_vitae.txt"
+  },
+  {
+   "tlg": "tlg021",
+   "title": "De animalium motione",
+   "repo": "first1k",
+   "received_status": "received-genuine",
+   "lines": 439,
+   "text": "text/tlg021-De_animalium_motione.txt"
+  },
+  {
+   "tlg": "tlg022",
+   "title": "Magna Moralia",
+   "repo": "first1k",
+   "received_status": "disputed",
+   "lines": 1012,
+   "text": "text/tlg022-Magna_Moralia.txt"
+  },
+  {
+   "tlg": "tlg023",
+   "title": "Mechanica",
+   "repo": "first1k",
+   "received_status": "received-spurious",
+   "lines": 207,
+   "text": "text/tlg023-Mechanica.txt"
+  },
+  {
+   "tlg": "tlg024",
+   "title": "De memoria et reminiscentia",
+   "repo": "first1k",
+   "received_status": "received-genuine",
+   "lines": 419,
+   "text": "text/tlg024-De_memoria_et_reminiscentia.txt"
+  },
+  {
+   "tlg": "tlg025",
+   "title": "Metaphysics",
+   "repo": "perseus",
+   "received_status": "received-genuine-BOOK-A-CONTESTED-IN-ANTIQUITY",
+   "lines": 2297,
+   "text": "text/tlg025-Metaphysics.txt"
+  },
+  {
+   "tlg": "tlg026",
+   "title": "Meteorologica",
+   "repo": "first1k",
+   "received_status": "received-genuine",
+   "lines": 5712,
+   "text": "text/tlg026-Meteorologica.txt"
+  },
+  {
+   "tlg": "tlg027",
+   "title": "Mirabilium auscultationes",
+   "repo": "first1k",
+   "received_status": "received-spurious",
+   "lines": 289,
+   "text": "text/tlg027-Mirabilium_auscultationes.txt"
+  },
+  {
+   "tlg": "tlg029",
+   "title": "Economics",
+   "repo": "perseus",
+   "received_status": "received-spurious",
+   "lines": 234,
+   "text": "text/tlg029-Economics.txt"
+  },
+  {
+   "tlg": "tlg030",
+   "title": "De partibus animalium",
+   "repo": "first1k",
+   "received_status": "received-genuine",
+   "lines": 4914,
+   "text": "text/tlg030-De_partibus_animalium.txt"
+  },
+  {
+   "tlg": "tlg031",
+   "title": "Physica",
+   "repo": "first1k",
+   "received_status": "received-genuine",
+   "lines": 6032,
+   "text": "text/tlg031-Physica.txt"
+  },
+  {
+   "tlg": "tlg032",
+   "title": "Physiognomonica",
+   "repo": "first1k",
+   "received_status": "received-spurious",
+   "lines": 167,
+   "text": "text/tlg032-Physiognomonica.txt"
+  },
+  {
+   "tlg": "tlg034",
+   "title": "Poetics",
+   "repo": "perseus",
+   "received_status": "received-genuine",
+   "lines": 475,
+   "text": "text/tlg034-Poetics.txt"
+  },
+  {
+   "tlg": "tlg035",
+   "title": "Politics",
+   "repo": "perseus",
+   "received_status": "received-genuine",
+   "lines": 2275,
+   "text": "text/tlg035-Politics.txt"
+  },
+  {
+   "tlg": "tlg036",
+   "title": "Problemata",
+   "repo": "first1k",
+   "received_status": "largely-spurious",
+   "lines": 1393,
+   "text": "text/tlg036-Problemata.txt"
+  },
+  {
+   "tlg": "tlg037",
+   "title": "De respiratione",
+   "repo": "first1k",
+   "received_status": "received-genuine",
+   "lines": 1049,
+   "text": "text/tlg037-De_respiratione.txt"
+  },
+  {
+   "tlg": "tlg038",
+   "title": "Rhetoric",
+   "repo": "perseus",
+   "received_status": "received-genuine",
+   "lines": 2835,
+   "text": "text/tlg038-Rhetoric.txt"
+  },
+  {
+   "tlg": "tlg039",
+   "title": "De plantis",
+   "repo": "first1k",
+   "received_status": "received-spurious",
+   "lines": 314,
+   "text": "text/tlg039-De_plantis.txt"
+  },
+  {
+   "tlg": "tlg040",
+   "title": "De sophisticis elenchis",
+   "repo": "first1k",
+   "received_status": "received-genuine",
+   "lines": 1181,
+   "text": "text/tlg040-De_sophisticis_elenchis.txt"
+  },
+  {
+   "tlg": "tlg041",
+   "title": "De sensu et sensibilibus",
+   "repo": "first1k",
+   "received_status": "received-genuine",
+   "lines": 962,
+   "text": "text/tlg041-De_sensu_et_sensibilibus.txt"
+  },
+  {
+   "tlg": "tlg042",
+   "title": "De somno et vigilia",
+   "repo": "first1k",
+   "received_status": "received-genuine",
+   "lines": 518,
+   "text": "text/tlg042-De_somno_et_vigilia.txt"
+  },
+  {
+   "tlg": "tlg043",
+   "title": "De spiritu",
+   "repo": "first1k",
+   "received_status": "received-spurious",
+   "lines": 395,
+   "text": "text/tlg043-De_spiritu.txt"
+  },
+  {
+   "tlg": "tlg044",
+   "title": "Topica",
+   "repo": "first1k",
+   "received_status": "received-genuine",
+   "lines": 7510,
+   "text": "text/tlg044-Topica.txt"
+  },
+  {
+   "tlg": "tlg045",
+   "title": "On Virtues and Vices",
+   "repo": "perseus",
+   "received_status": "received-spurious",
+   "lines": 48,
+   "text": "text/tlg045-On_Virtues_and_Vices.txt"
+  },
+  {
+   "tlg": "tlg046",
+   "title": "De ventorum situ et nominibus",
+   "repo": "first1k",
+   "received_status": "received-spurious",
+   "lines": 11,
+   "text": "text/tlg046-De_ventorum_situ_et_nominibus.txt"
+  },
+  {
+   "tlg": "tlg047",
+   "title": "De Xenophane, de Zenone, de Gorgia",
+   "repo": "first1k",
+   "received_status": "received-spurious",
+   "lines": 144,
+   "text": "text/tlg047-De_Xenophane_de_Zenone_de_Gorgia.txt"
+  },
+  {
+   "tlg": "tlg048",
+   "title": "Divisiones Aristoteleae",
+   "repo": "first1k",
+   "received_status": "received-spurious",
+   "lines": 305,
+   "text": "text/tlg048-Divisiones_Aristoteleae.txt"
+  },
+  {
+   "tlg": "tlg052",
+   "title": "De anima (codicis E fragmenta recensionis a vulgata diversae)",
+   "repo": "first1k",
+   "received_status": "recension-variant",
+   "lines": 279,
+   "text": "text/tlg052-De_anima_codicis_E_fragmenta_recensionis_a_v.txt"
+  },
+  {
+   "tlg": "tlg054",
+   "title": "Physica (textus alter)",
+   "repo": "first1k",
+   "received_status": "recension-variant",
+   "lines": 300,
+   "text": "text/tlg054-Physica_textus_alter.txt"
+  }
+ ]
+}

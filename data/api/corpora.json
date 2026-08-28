@@ -2,8 +2,8 @@
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
  "_generated": "2026-08-21",
- "seats": 15,
- "lines_total": 126714,
+ "seats": 16,
+ "lines_total": 210126,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -551,7 +551,7 @@
     ]
    },
    "language": null,
-   "lines": 8203,
+   "lines": 8505,
    "verified_loci": [
     "Phaedrus 251a–b: the heat-and-sweat seizure at beauty (ἱδρώς, θερμότης)",
     "Symposium 215e: the leaping heart at the played instrument"
@@ -598,7 +598,8 @@
      "https://www.alexanarch.org/data/corpora/plato/text/tlg036-Ἐπιστολαί.txt"
     ],
     "original": "https://www.alexanarch.org/data/corpora/plato/original/"
-   }
+   },
+   "note": "Definitiones (tlg037) added 2026-08-28; received dubia and spuria carried undivided"
   },
   {
    "seat": "EA-CORPORA-01/10",
@@ -672,6 +673,83 @@
      "https://www.alexanarch.org/data/corpora/theocritus/text/Idylls.txt"
     ],
     "original": "https://www.alexanarch.org/data/corpora/theocritus/original/"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-01/16",
+   "corpus": "aristotle",
+   "edition": "I. Bekker, Aristotelis Opera (Oxford, 1837) via First1KGreek, with Perseus Greek editions preferred for the nine works both repositories carry",
+   "license": "CC BY-SA (First1KGreek and Perseus packaging); underlying editions public domain",
+   "origin": {
+    "repo": "OpenGreekAndLatin/First1KGreek + PerseusDL/canonical-greekLit",
+    "commit": "7881c563436f52fb3550e6daa6df94be1b83b0e3",
+    "paths": [
+     "data/tlg0086 — 48 works united across both repositories, genuine and spurious undivided"
+    ]
+   },
+   "language": "grc",
+   "lines": 83110,
+   "verified_loci": [
+    "Metaphysics A 6, 987b11–14: methexis and the Pythagorean mimesis, the open question of what participation could be",
+    "Metaphysics A 1, 980a21: πάντες ἄνθρωποι τοῦ εἰδέναι ὀρέγονται φύσει",
+    "Nicomachean Ethics I 1, 1094a1: πᾶσα τέχνη καὶ πᾶσα μέθοδος",
+    "Eudemian Ethics I 1: the Delian inscription",
+    "Poetics 1447b: the Sokratikoi logoi classified among the mimetic arts, the genre that lacks a name"
+   ],
+   "received_authenticity_recorded": true,
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/aristotle/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/aristotle/MANIFEST.sha256",
+    "text": [
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg001-Analytica_priora.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg002-De_anima.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg003-Constitution_of_the_Athenians.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg004-De_audibilibus.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg005-De_caelo.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg006-Categoriae.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg007-De_coloribus.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg008-De_divinatione_per_somnum.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg009-Eudemian_Ethics.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg010-Nicomachean_Ethics.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg011-Epistulae.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg012-De_Generatione_Animalium.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg013-De_generatione_et_corruptione.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg014-Historia_animalium.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg015-De_animalium_incessu.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg016-De_insomniis.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg017-De_interpretatione.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg018-De_iuventute_et_senectute_De_vita_et_morte.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg019-De_lineis_insecabilibus.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg020-De_longitudine_et_brevitate_vitae.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg021-De_animalium_motione.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg022-Magna_Moralia.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg023-Mechanica.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg024-De_memoria_et_reminiscentia.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg025-Metaphysics.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg026-Meteorologica.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg027-Mirabilium_auscultationes.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg029-Economics.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg030-De_partibus_animalium.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg031-Physica.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg032-Physiognomonica.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg034-Poetics.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg035-Politics.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg036-Problemata.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg037-De_respiratione.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg038-Rhetoric.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg039-De_plantis.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg040-De_sophisticis_elenchis.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg041-De_sensu_et_sensibilibus.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg042-De_somno_et_vigilia.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg043-De_spiritu.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg044-Topica.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg045-On_Virtues_and_Vices.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg046-De_ventorum_situ_et_nominibus.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg047-De_Xenophane_de_Zenone_de_Gorgia.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg048-Divisiones_Aristoteleae.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg052-De_anima_codicis_E_fragmenta_recensionis_a_v.txt",
+     "https://www.alexanarch.org/data/corpora/aristotle/text/tlg054-Physica_textus_alter.txt"
+    ]
    }
   }
  ]

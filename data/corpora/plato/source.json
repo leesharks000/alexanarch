@@ -29,5 +29,35 @@
    "repair": "Both layers rebuilt from data/corpora/plato/original/tlg0059.tlg001.xml and tlg0059.tlg005.xml at the pinned commit, in house format 'TITLE SECTION\\ttext' from Stephanus section milestones. Euthyphro: 70 sections, 5,412 words. Cratylus: 286 sections, 19,042 words.",
    "verified": "Word count against original body text, notes and heads excluded: ratio 1.000 for both."
   }
+ ],
+ "received_authenticity": {
+  "_field": "The Platonic corpus as transmitted contains works the tradition receives at three grades. RECORDED, NOT ENDORSED.",
+  "_note": "The transmitted corpus descends through the Thrasyllan tetralogies (first century CE), which already grouped and bounded it. The dubia and spuria were sorted out later, largely on stylistic and doctrinal grounds — the same criteria whose circularity is at issue wherever authorship is the question. This seat carries all of them, undivided, so that the partition can be tested rather than assumed.",
+  "received_genuine": "tlg001–012, 018–028 core dialogues, tlg030–032, tlg034 (Republic, Timaeus, Critias, Laws and the major dialogues)",
+  "received_dubia": {
+   "tlg013": "Alcibiades I",
+   "tlg014": "Alcibiades II",
+   "tlg015": "Hipparchus",
+   "tlg016": "Amatores (Rivals)",
+   "tlg017": "Theages",
+   "tlg029": "Clitophon",
+   "tlg033": "Minos",
+   "tlg035": "Epinomis",
+   "tlg036": "Epistulae (Letters) — the Second and Seventh bear directly on the authorship question"
+  },
+  "received_spurious": {
+   "tlg037": "Definitiones (Horoi) — added to this seat 2026-08-28 from First1KGreek"
+  },
+  "not_in_seat": "The seven lesser spuria of the Thrasyllan appendix (Axiochus, De justo, De virtute, Demodocus, Sisyphus, Halcyon, Eryxias) have no Greek edition in either upstream repository at the pinned commits. Their absence is a gap in the seat, stated rather than silently closed."
+ },
+ "origin_supplement": [
+  {
+   "repo": "OpenGreekAndLatin/First1KGreek",
+   "commit": "7881c563436f52fb3550e6daa6df94be1b83b0e3",
+   "paths": [
+    "data/tlg0059/tlg037 (Definitiones)"
+   ],
+   "added": "2026-08-28"
+  }
  ]
 }
