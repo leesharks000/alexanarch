@@ -138,6 +138,11 @@ module.exports = async (req, res) => {
     const raw = await readBody(req);
     p = { ...p, ...Object.fromEntries(new URLSearchParams(raw).entries()) };
   }
+  // Duplicate arguments must be caught BEFORE Object.fromEntries collapses them.
+  // OAI-PMH 3.2: a repeated argument is badArgument, and a validator will send one.
+  const rawPairs = [...url.searchParams.keys()];
+  const dupes = rawPairs.filter((k, i) => rawPairs.indexOf(k) !== i);
+
   const verb = p.verb || '';
   const reqAttrs = { verb, identifier: p.identifier, metadataPrefix: p.metadataPrefix,
                      from: p.from, until: p.until, set: p.set };
@@ -156,6 +161,42 @@ module.exports = async (req, res) => {
   if (p.metadataPrefix && p.metadataPrefix !== 'oai_dc') {
     return send(oaiError(reqAttrs, 'cannotDisseminateFormat',
       'This repository disseminates oai_dc.'));
+  }
+
+  // ARGUMENT VALIDATION (2026-08-27). Previously the endpoint accepted any extra
+  // argument silently: Identify&bogus=1 returned a cheerful Identify, and a
+  // repeated metadataPrefix collapsed through Object.fromEntries unnoticed. Both
+  // are badArgument under OAI-PMH 3.2, and both are exactly what a strict
+  // validator sends. Accepting them is not leniency — it means the endpoint
+  // reports success for a request it did not honour.
+  const ALLOWED = {
+    Identify: [],
+    ListMetadataFormats: ['identifier'],
+    ListSets: ['resumptionToken'],
+    ListIdentifiers: ['metadataPrefix', 'from', 'until', 'set', 'resumptionToken'],
+    ListRecords: ['metadataPrefix', 'from', 'until', 'set', 'resumptionToken'],
+    GetRecord: ['identifier', 'metadataPrefix'],
+  };
+  if (dupes.length) {
+    return send(oaiError(reqAttrs, 'badArgument',
+      `Repeated argument(s): ${[...new Set(dupes)].join(', ')}. Each argument may appear at most once.`));
+  }
+  if (verb && ALLOWED[verb]) {
+    const illegal = Object.keys(p).filter((k) => k !== 'verb' && !ALLOWED[verb].includes(k));
+    if (illegal.length) {
+      return send(oaiError(reqAttrs, 'badArgument',
+        `Illegal argument(s) for ${verb}: ${illegal.join(', ')}.`));
+    }
+    // resumptionToken is exclusive: when present, verb and it are the only
+    // permitted arguments. A harvester that pairs it with metadataPrefix has
+    // misunderstood the protocol and should be told so, not quietly served.
+    if (p.resumptionToken) {
+      const alongside = Object.keys(p).filter((k) => k !== 'verb' && k !== 'resumptionToken');
+      if (alongside.length) {
+        return send(oaiError(reqAttrs, 'badArgument',
+          `resumptionToken must be the only argument besides verb; also received: ${alongside.join(', ')}.`));
+      }
+    }
   }
 
   if (verb === 'Identify') {
@@ -177,6 +218,16 @@ module.exports = async (req, res) => {
   }
 
   if (verb === 'ListMetadataFormats') {
+    // The identifier argument is optional, but if supplied it must name a record
+    // that exists — otherwise the response advertises formats for a record the
+    // repository does not hold. OAI-PMH 4.4 gives idDoesNotExist for this.
+    if (p.identifier) {
+      const want = String(p.identifier).replace(/^oai:alexanarch\.org:/, '');
+      if (!idx.records.some((r) => String(r.id) === want)) {
+        return send(oaiError(reqAttrs, 'idDoesNotExist',
+          'No record with that identifier is held by this repository.'));
+      }
+    }
     return send(envelope(reqAttrs, `  <ListMetadataFormats>
     <metadataFormat>
       <metadataPrefix>oai_dc</metadataPrefix>

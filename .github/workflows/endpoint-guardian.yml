@@ -64,6 +64,29 @@ jobs:
           echo "FAILED after 4 attempts over 4 minutes."
           exit 1
 
+      - name: Protocol surface gate (OAI, ResourceSync, sitemaps, feed)
+        run: |
+          # The JSON gate above is structurally blind to the XML surfaces: it
+          # requires a JSON content-type, so /oai, the ResourceSync chain, the
+          # sitemaps and the feed could all break while it stayed green. Those
+          # are the two most standards-conventional harvesting interfaces the
+          # archive advertises, and an aggregator uses them, not the JSON.
+          #
+          # This checks what would have to be TRUE for a harvester, not merely
+          # that a URL answers: Identify declares persistent deletion, oai_dc is
+          # advertised, a resumptionToken actually resumes, GetRecord round-trips
+          # the identifier it was given, an illegal verb returns badVerb, and the
+          # ResourceSync chain is walked rather than assumed.
+          for attempt in 1 2 3; do
+            if python3 scripts/audit_protocol_surfaces.py; then
+              echo "protocol surfaces verified on attempt $attempt"; exit 0
+            fi
+            echo "attempt $attempt failed; waiting for deploy to settle…"
+            sleep 60
+          done
+          echo "FAILED after 3 attempts."
+          exit 1
+
       - name: Open critical issue
         if: failure()
         uses: actions/github-script@v7
