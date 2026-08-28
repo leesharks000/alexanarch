@@ -1,6 +1,28 @@
 {
   "redirects": [
     {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www\\.alexanarch\\.com"
+        }
+      ],
+      "destination": "https://www.alexanarch.org/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "alexanarch\\.com"
+        }
+      ],
+      "destination": "https://www.alexanarch.org/$1",
+      "permanent": true
+    },
+    {
       "source": "/observatory/surface-weather",
       "destination": "/observatory/",
       "permanent": true
@@ -54,6 +76,23 @@
         {
           "key": "Permissions-Policy",
           "value": "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+        }
+      ]
+    },
+    {
+      "source": "/.well-known/resourcesync",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
         }
       ]
     },
