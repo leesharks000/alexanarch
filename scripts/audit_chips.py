@@ -25,7 +25,7 @@ instances, sessions, or years. THE ONLY THING THAT HOLDS IS A CHECK THAT FAILS.
 
 THE STANDARD, stated so a machine can test it
 
-  1. A link to alexanarch.org/s/records/N/ MUST carry class="axn-chip".
+  1. A record link IN A DECLARED IDENTIFIER SLOT MUST carry class="axn-chip".
   2. An axn-chip MUST contain the record's full AXN, byte-exact from registry.json,
      including the six-emoji glyph. Bare hex is forbidden.
   3. An axn-chip SHOULD carry the deposit number as #N.
@@ -33,6 +33,31 @@ THE STANDARD, stated so a machine can test it
   5. A link that is NOT to a record MUST NOT carry class="axn-chip".
 
 Rules 1, 2 and 5 fail the build. Rules 3 and 4 are reported.
+
+RULE 1 IS SCOPED, AND THE SCOPE IS NOT A HEURISTIC (2026-08-27)
+
+Rule 1 formerly applied to every record link anywhere. Under the corrected
+REC pattern that is 58,395 links, and only 4,338 of them have anchor text
+that is already an identifier. The remaining 54,057 are links whose text is
+a title or a phrase — 'DOIs != Permanent Identifiers', 'the call for papers',
+'Zenodotus' Book-Burning'. Enforcing rule 1 across them would replace fifty
+thousand readable links with hex strings to satisfy a checker, which is the
+standard eating the site it was written to describe.
+
+The scope is taken from what the surfaces already do rather than invented
+here. On survivethedeletion, every one of the twenty-three correct chips sits
+in <span class="sid">, and the three record links that carry no chip are in
+running prose — a colophon sentence and a footer parenthetical. The archive's
+own where/ page does the same with <span class="name"> inside .ecorow. The
+markup already declares where an identifier belongs; a chip position is a SLOT,
+not a guess about anchor text.
+
+SLOTS is therefore an adoption ledger, not a detector. A surface joins the
+standard by naming its identifier slot here, and only then do its links come
+under rule 1. That makes the rollout auditable one surface at a time and keeps
+the red count true instead of aspirational. Candidates not yet adopted are
+listed below them; adding one is a deliberate act, and the links it governs
+become violations the moment it is added, which is the point.
 
     python3 scripts/audit_chips.py --path /home/claude/lo
     python3 scripts/audit_chips.py --fleet          # every local checkout
@@ -49,6 +74,24 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 # own subject does not merely miscount; it directs a repair at healthy tissue.
 REC = re.compile(r'(?:(?:www\.)?alexanarch\.org)?/s/records/(\d+)/')
 AXN_IN = re.compile(r'AXN:[0-9A-F]{4}\.[A-Z]+\.')
+
+# ADOPTED IDENTIFIER SLOTS. A record link is under rule 1 only inside one of
+# these. Add a class here when a surface adopts the standard — not before.
+SLOTS = (
+    'sid',        # survivethedeletion and the MSP satellites: the source-id span
+    'name',       # where/: the .ecorow heteronym roster
+)
+# CANDIDATES, not yet adopted — each is an identifier position in everything but
+# the class name, and each is a deliberate decision to make:
+#   'meta'   datasets/refrain-index/: the 'first attested' and 'exemplars' rows,
+#            115 links whose anchor text is already a bare #N
+SLOT_OPEN = re.compile(
+    r'<(?:span|div|td|li)\b[^>]*class="[^"]*\b(?:' + '|'.join(SLOTS) + r')\b[^"]*"[^>]*>\s*$')
+
+
+def in_slot(before):
+    """True when the anchor opens directly inside a declared identifier slot."""
+    return bool(SLOT_OPEN.search(before))
 ANCHOR = re.compile(r'<a\b([^>]*)>(.*?)</a>', re.S)
 CLS = re.compile(r'class="([^"]*)"')
 HREF = re.compile(r'href="([^"]*)"')
@@ -87,7 +130,7 @@ def audit_file(p, D):
         # guessing from the anchor text.
         if 'w-chip' in cls:
             continue
-        if rec and not is_chip:
+        if rec and not is_chip and in_slot(s[max(0, m.start() - 160):m.start()]):
             n = int(rec.group(1))
             d = D.get(n)
             carries = bool(d and d['axn'] in text)
