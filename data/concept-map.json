@@ -3,20 +3,20 @@
   "name": "Concept Map — work-level identity and current-version resolution",
   "description": "Restores the concept-identifier function lost with the terminated Zenodo account. Alexanarch mints a fresh hex per deposit, so every version of a work is an independent object with no link to its siblings; a reader arriving at an old version cannot learn that a newer one exists. Each concept here names a work and points at its current version. Programme families — distinct works sharing an identifier — are listed separately and carry no version pointer, because conflating the two would resolve one work to another. Every family records the basis on which it was detected so any confidence tier can be discarded independently.",
   "generated_by": "scripts/build_concept_map.py",
-  "generated_at": "2026-08-28T02:51:46Z",
+  "generated_at": "2026-08-28T04:54:43Z",
   "totals": {
-    "deposits": 1557,
-    "concepts": 65,
-    "deposits_in_concepts": 148,
-    "singletons": 1409,
-    "needs_review": 17,
-    "program_families": 46
+    "deposits": 1558,
+    "concepts": 66,
+    "deposits_in_concepts": 150,
+    "singletons": 1408,
+    "needs_review": 18,
+    "program_families": 47
   },
   "basis_counts": {
     "version/implicit": 40,
     "version/explicit": 9,
     "version/superseded": 2,
-    "version/fuzzy": 14
+    "version/fuzzy": 15
   },
   "concepts": [
     {
@@ -2853,6 +2853,49 @@
           "record_url": "https://www.alexanarch.org/s/records/1402/"
         }
       ]
+    },
+    {
+      "concept_id": "baseline-capture-architecture-for-learned-scientific-trigger",
+      "concept_url": "https://www.alexanarch.org/s/concept/baseline-capture-architecture-for-learned-scientific-trigger/",
+      "title_base": "baseline capture architecture for learned scientific triggers a control plane for measuring selection before irreversible data loss",
+      "basis": "version/fuzzy",
+      "root_axn_hex": "05DE",
+      "ea_identifiers": [
+        "EA-SEI-BCA-01"
+      ],
+      "member_count": 2,
+      "needs_review": true,
+      "current": {
+        "deposit_number": 1558,
+        "axn": "AXN:0656.OPERATIVE.🏴⛩️🏠💚♅⚫",
+        "title": "Baseline Capture Architecture for Learned Scientific Triggers: A Control Plane for Measuring Selection Before Irreversible Data Loss (EA-SEI-BCA-01 v2.0 — the submitted state)",
+        "date": "2026-08-27",
+        "version": "2.0",
+        "record_url": "https://www.alexanarch.org/s/records/1558/",
+        "provisional": true
+      },
+      "versions": [
+        {
+          "deposit_number": 1453,
+          "axn": "AXN:05DE.OPERATIVE.🕒✊☁️🌋🟡🔄",
+          "title": "Baseline Capture Architecture for Learned Scientific Triggers: A Control Plane for Measuring Selection Before Irreversible Data Loss (EA-SEI-BCA-01 v1.0)",
+          "date": "2026-08-11",
+          "version": "1.0",
+          "superseded_marker": false,
+          "is_current": false,
+          "record_url": "https://www.alexanarch.org/s/records/1453/"
+        },
+        {
+          "deposit_number": 1558,
+          "axn": "AXN:0656.OPERATIVE.🏴⛩️🏠💚♅⚫",
+          "title": "Baseline Capture Architecture for Learned Scientific Triggers: A Control Plane for Measuring Selection Before Irreversible Data Loss (EA-SEI-BCA-01 v2.0 — the submitted state)",
+          "date": "2026-08-27",
+          "version": "2.0",
+          "superseded_marker": false,
+          "is_current": true,
+          "record_url": "https://www.alexanarch.org/s/records/1558/"
+        }
+      ]
     }
   ],
   "program_families": [
@@ -3956,6 +3999,28 @@
           "title": "Inversion Battery v0.3: Ten Registered Tests, Seventeen Deviations, and What Survives (EA-SEI-BATTERY-01 v3.0)",
           "date": "2026-08-12",
           "record_url": "https://www.alexanarch.org/s/records/1456/"
+        }
+      ]
+    },
+    {
+      "program_id": "EA-SEI-BCA-01",
+      "program_url": "https://www.alexanarch.org/s/program/ea-sei-bca-01/",
+      "note": "Distinct works sharing a programme identifier. This is a collection, not a version family: no current-version pointer is asserted.",
+      "member_count": 2,
+      "members": [
+        {
+          "deposit_number": 1453,
+          "axn": "AXN:05DE.OPERATIVE.🕒✊☁️🌋🟡🔄",
+          "title": "Baseline Capture Architecture for Learned Scientific Triggers: A Control Plane for Measuring Selection Before Irreversible Data Loss (EA-SEI-BCA-01 v1.0)",
+          "date": "2026-08-11",
+          "record_url": "https://www.alexanarch.org/s/records/1453/"
+        },
+        {
+          "deposit_number": 1558,
+          "axn": "AXN:0656.OPERATIVE.🏴⛩️🏠💚♅⚫",
+          "title": "Baseline Capture Architecture for Learned Scientific Triggers: A Control Plane for Measuring Selection Before Irreversible Data Loss (EA-SEI-BCA-01 v2.0 — the submitted state)",
+          "date": "2026-08-27",
+          "record_url": "https://www.alexanarch.org/s/records/1558/"
         }
       ]
     },
