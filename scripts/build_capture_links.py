@@ -67,6 +67,22 @@ def main():
         if e.get("cite") != e_cite and not a.check:
             e["cite"] = e_cite
 
+        # OBSERVATIONS ARE CITABLE UNITS TOO (2026-08-27). This loop set `cite`
+        # on the entry and stopped, so every entry carrying an `observations`
+        # list left those observations without the canonical anchor the citation
+        # grammar declares — 22 of 511 at the time this was found, and the
+        # citability audit had been failing on them through three consecutive
+        # deposit pipelines. The anchor is derived, not authored: an observation
+        # with a slug has exactly one canonical form, and withholding it means
+        # the registry advertises a unit no one can cite.
+        for o in (e.get("observations") or []):
+            o_slug = o.get("slug")
+            if not o_slug:
+                continue
+            o_cite = f"{CANONICAL}#{o_slug}"
+            if o.get("cite") != o_cite and not a.check:
+                o["cite"] = o_cite
+
     if a.check:
         bad = missing + stale
         print(f"captures: {len(r['entries'])} · galleries declared: {len(galleries)}")
