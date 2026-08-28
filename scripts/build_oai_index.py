@@ -1,3 +1,4 @@
+import re
 #!/usr/bin/env python3
 """build_oai_index.py — compile a lean index for the OAI-PMH endpoint.
 
@@ -26,6 +27,39 @@ _sys.path.insert(0, _os.path.dirname(__file__))
 from record_state import derive_state
 import re
 from pathlib import Path
+
+SCRIPT_RANGES = [
+    ('jpn', re.compile(r'[\u3040-\u309f\u30a0-\u30ff]')),   # kana only — never math notation
+    ('kor', re.compile(r'[\uac00-\ud7af]')),
+]
+LATIN_RX = re.compile(r'[A-Za-z]')
+
+
+def _language_floor(d):
+    """Best available language code without asserting more than the record shows.
+
+    DELIBERATELY CONSERVATIVE. An earlier draft of this function matched Greek and
+    Hebrew ranges and mislabelled 80 English deposits as Ancient Greek, because
+    this archive uses Greek letters constantly as MATHEMATICAL NOTATION — the
+    erasure-skew coefficient, Omega-sub-t, epsilon. A single character in a title
+    says nothing about the language of the work; that is the same title-scope
+    error corrected in EROSION-EMPIRICAL-AUDIT-01 §5, and it is not to be
+    reintroduced here.
+
+    So: only scripts that are never used as notation (kana, hangul) are detected,
+    and only when they dominate the title rather than appear in it. Everything
+    else must DECLARE `language` in the registry. Default is 'eng'.
+    """
+    title = d.get('title') or ''
+    if not title.strip():
+        return 'eng'
+    latin = len(LATIN_RX.findall(title))
+    for code, rx in SCRIPT_RANGES:
+        hits = len(rx.findall(title))
+        if hits >= 3 and hits > latin:
+            return code
+    return 'eng'
+
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -189,6 +223,13 @@ def main():
             "citable": derive_state(d)["citable"],
             "source": d.get("journal") or "",
             "publisher": d.get("publisher") or "",
+            # dc:language was hard-coded "eng" in api/oai.js until 2026-08-27, which
+            # misdescribed every non-English deposit to every harvester — a small
+            # bibliographic falsehood, and the kind that costs aggregator trust.
+            # Declared language wins; otherwise the title's script is a floor
+            # (it does not distinguish ja/zh, so a declared value should be added
+            # to the registry for any record where the distinction matters).
+            "language": d.get("language") or _language_floor(d),
         })
     recs.sort(key=lambda r: r["id"])
     stamps = [r["datestamp"] for r in recs if r["datestamp"]]
