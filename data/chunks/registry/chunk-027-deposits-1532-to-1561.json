@@ -1,8 +1,8 @@
 {
   "chunk_number": 27,
   "first_deposit": 1532,
-  "last_deposit": 1560,
-  "count": 29,
+  "last_deposit": 1561,
+  "count": 30,
   "deposits": [
     {
       "deposit_number": 1532,
@@ -5109,6 +5109,99 @@
           "deposit_number": 1543,
           "relation": "surface",
           "note": "Generative Uptake — the TLL originals shelf carrying these cards"
+        }
+      ],
+      "errata": [
+        {
+          "deposit_number": 1561,
+          "relation": "corrected_by",
+          "date": "2026-08-29",
+          "note": "The stated ground for withholding the orthonym — that seating it would foreclose the leave-one-out test — is withdrawn. The hold-out is analytical, not archival. Canonical bytes of this deposit are unchanged."
+        }
+      ]
+    },
+    {
+      "deposit_number": 1561,
+      "axn": "AXN:0659.GOVERNANCE.🖊️❌🕚📝∞🔔",
+      "hex": "0659",
+      "family": "GOVERNANCE",
+      "emoji": "🖊️❌🕚📝∞🔔",
+      "hash": "44ef6c42ff2e65bcb14eaeddf4e51ae9d75fe98e9efe94fe73b71be0f0b47ed2",
+      "title": "Erratum to EA-CORPORA-05: The Hold-Out Is Analytical, Not Archival — Seating the Pessoa Orthonym (corrects #1560)",
+      "creator": "Sharks, Lee",
+      "date": "2026-08-29",
+      "description": "Corrects deposit #1560, which seated the Pessoa corpus with the orthonym withheld on the stated ground that seating it would foreclose the intended leave-one-out test. That reasoning is withdrawn. Withholding a voice at seat time does not protect a leave-one-out design; it prevents its validation, because with three voices seated a hold-out leaves two, two points cannot triangulate a third, and the design yields one fold where it requires four — removing the only check that matters, whether the procedure also recovers a voice nobody regards as special. All four voices are now seated, 493 of the 496 orthonym pages resolving, and each voice is withheld in turn at analysis time instead. The seating also exposes a distinction the withholding had hidden: under Pessoa's own usage the orthonym is the position bearing the civil name, while under the archive's functional definition it is whichever position bears the founding gesture, which in this configuration is arguably Caeiro, the master the other voices acknowledge. The two definitions do not pick out the same voice, and the seat records both without settling. Canonical bytes of #1560 unchanged; the correction is registry-level with its target declared in related_deposits.",
+      "content_type": "Erratum; corpus seat extension",
+      "license": "CC-BY-4.0",
+      "substrate": "AI-assisted (substrate) — the design error was identified and the correction drafted in working session with Claude (Anthropic) under MANUS direction, within a day of the deposit it corrects. The orthonym's pages were fetched by the same raw-wikitext route the parent seat records, three of 496 failing to resolve.",
+      "root_axn": "AXN:0659.GOVERNANCE",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "44ef6c42ff2e65bcb14eaeddf4e51ae9d75fe98e9efe94fe73b71be0f0b47ed2",
+      "clusters": [
+        "Scriptural",
+        "Liminal",
+        "Temporal",
+        "Scriptural",
+        "Terminal",
+        "Architectural"
+      ],
+      "axn_reading": "Text -> Threshold -> Duration -> Text -> Closure -> Foundation",
+      "minted_at": "2026-08-29T12:22:25Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-0659-text.md",
+      "wiki_article": "Deposit #1560 seated the Pessoa corpus with the orthonym withheld, and gave a reason: that seating Fernando Pessoa's own pages alongside the three heteronyms would foreclose the leave-one-out test the archive intends to run. This erratum withdraws that reasoning and seats the orthonym.\n\nThe reasoning was wrong in a way worth stating precisely, because the error is a general one. A leave-one-out test withholds a voice and asks whether the structure of the remaining voices implies it. Withholding at seat time appears to protect that test and in fact destroys its validation. With three voices seated, holding one out leaves two, and two points cannot triangulate a third. More seriously, it yields a single fold where the design requires four, and it removes the only check that matters: whether the procedure also recovers a voice nobody regards as special. A method that succeeds on Caeiro and has never been tried on Reis or Campos has told us something about Caeiro, not about method.\n\nThe hold-out is therefore analytical, not archival. All four voices are seated, and each is withheld in turn at analysis time — 123 Caeiro, 60 Reis, 107 Campos, and 493 of the 496 pages listed under the orthonym's category. Three did not resolve and their absence is stated in the seat rather than closed over.\n\nOne thing the seating exposes that the withholding had hidden. Under Pessoa's own usage the orthonym is the position bearing the civil name, which is Pessoa-himself. Under the functional definition the archive works with, the orthonym is whichever position bears the project's founding gesture — and in this configuration that is arguably Caeiro, the master the other voices acknowledge and organise themselves around. The two definitions do not pick out the same voice here. The seat records both readings and settles neither, because which position is the orthonym is exactly what an instrument would have to determine rather than assume.\n\nThe canonical bytes of #1560 are unchanged. The correction is registry-level and its target is declared in related_deposits, which is the form the archive's errata surface was built to make possible and which most of its earlier errata do not yet use.",
+      "wiki_status": "AUTHORSHIP_REQUIRED",
+      "entities": [],
+      "entity_status": "provisional",
+      "defines_concepts": [],
+      "orcid": "0009-0000-1599-0703",
+      "keywords": [
+        "erratum",
+        "EA-CORPORA-05",
+        "Pessoa",
+        "orthonym",
+        "heteronym",
+        "leave-one-out",
+        "cross-validation",
+        "hold-out",
+        "analysis-time versus seat-time",
+        "declared erratum target"
+      ],
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 0,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 3210,
+        "audited_at": "2026-08-29T12:22:25Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "concepts_attested_none": true,
+      "lexical_attested_none": true,
+      "related_deposits": [
+        {
+          "deposit_number": 1560,
+          "relation": "corrects",
+          "note": "EA-CORPORA-05 — withdraws the seat-time hold-out reasoning and seats the orthonym"
+        },
+        {
+          "deposit_number": 1557,
+          "relation": "precedent",
+          "note": "erratum practice: registry-level correction, canonical bytes unchanged"
+        },
+        {
+          "deposit_number": 123,
+          "relation": "instruments",
+          "note": "Socrates as Orthonym — the leave-one-out design this correction protects"
         }
       ]
     }
