@@ -657,4 +657,105 @@ and coined by Plato in the act of finding Greek short of a word for it** — whi
 is a fact about the corpus rather than an inference about its authorship.
 
 
+---
+
+# ROUND 9 — κερματισμός: the fragmentation metaphor and the two demands for recombination
+
+*Added 2026-08-29.*
+
+## 28. The metaphor
+
+**κερματίζω** — to mint a unity into small change, from κέρμα, a small coin — is
+Plato's standing term for the one broken into many. Every instance:
+
+    Meno 0.292        μὴ κατάγνυναι μηδὲ κερματίζειν τὴν ἀρετήν
+                      — do not break or mint virtue into pieces
+    Meno 0.303        ἐὰν σὺ κατακερματίζῃς αὐτὴν κατὰ μόρια
+    Parmenides 0.971  θρύπτεσθαι… κερματιζόμενον ἀνάγκη πᾶν τὸ ὄν
+                      — everything that is must be shattered into denominations
+    Republic 0.675    ἐὰν σὺ κερματίζῃς αὐτό, ἐκεῖνοι πολλαπλασιοῦσιν
+                      — mint the one into pieces and they multiply it
+    Timaeus ×3        physical fragmentation of bodies
+    Cratylus 0.743    the letter rho imitating breaking
+
+## 29. The reason given at *Republic* 395b
+
+The denial that one maker can hold two arts is **grounded in this metaphor**, and
+the ground is usually passed over:
+
+> πολλὰ ὁ αὐτὸς μιμεῖσθαι εὖ ὥσπερ ἓν οὐ δυνατός …
+> οὐ δύνανται **οἱ αὐτοί** … οἷον **κωμῳδίαν καὶ τραγῳδίαν** ποιοῦντες …
+> εἰς σμικρότερα **κατακεκερματίσθαι ἡ τοῦ ἀνθρώπου φύσις**
+
+Human nature is already minted into denominations too small to hold two arts. The
+incapacity is not a fact about poets. It is a fact about **the fragmentation of
+human nature**.
+
+## 30. The inverse operation, twice demanded
+
+    0.237  Rep 395b    κατακεκερματίσθαι ἡ τοῦ ἀνθρώπου φύσις   the one minted into many
+    0.509  Rep 473d    εἰς ταὐτὸν συμπέσῃ                        the two must fall into one
+    0.996  Symp 223d   τοῦ αὐτοῦ ἀνδρός                          the same man must do both
+
+*Republic* 473d requires *δύναμίς τε πολιτικὴ καὶ φιλοσοφία* to **fall together
+into the same** — the exact reversal of κερματισμός — and excludes by necessity
+*τῶν νῦν πορευομένων **χωρὶς ἐφ᾽ ἑκάτερον***, those who now travel separately
+toward each of the two.
+
+**Three things about that middle term.** It is introduced as what will drown its
+speaker in **γέλως** — laughter, the comic — in the book that has just ruled no
+one can hold comedy and tragedy together. It demands coalescence in a corpus whose
+standing metaphor for the human condition is minting into small change. And the
+same demand reappears at the very end of the *Symposium*, for makers instead of
+rulers, where its proof is destroyed in transmission (Round 6, §16–17).
+
+## 31. The myth supplies the same operation, in the same terms
+
+*Symposium* 191d, position 0.366 — Aristophanes' speech:
+
+> ὁ ἔρως … **τῆς ἀρχαίας φύσεως συναγωγεὺς** καὶ ἐπιχειρῶν **ποιῆσαι ἓν ἐκ δυοῖν**
+> καὶ **ἰάσασθαι τὴν φύσιν τὴν ἀνθρωπίνην**.
+> ἕκαστος οὖν ἡμῶν ἐστιν ἀνθρώπου **σύμβολον**, ἅτε **τετμημένος** ὥσπερ αἱ ψῆτται,
+> **ἐξ ἑνὸς δύο**· ζητεῖ δὴ ἀεὶ τὸ αὑτοῦ ἕκαστος σύμβολον.
+
+Eros is the **gatherer** of the ancient nature, attempting to **make one out of
+two** and to **heal human nature**.
+
+**The lexical link is exact.** *Republic* 395b: **ἡ τοῦ ἀνθρώπου φύσις** is minted
+into pieces. *Symposium* 191d: Eros attempts **ἰάσασθαι τὴν φύσιν τὴν ἀνθρωπίνην**
+by making one from two. Same subject, opposite verbs, and the second names the
+first as an injury to be healed.
+
+## 32. The structure entire
+
+    Symp 191d  0.366   one cut into two; each a σύμβολον; Eros makes one from two
+                       and HEALS human nature
+    Rep 395b   0.237   human nature is minted into pieces → the same men CANNOT
+                       hold comedy and tragedy
+    Rep 473d   0.509   philosophy and power MUST fall into the same, or no rest
+                       from evils — announced as inviting laughter
+    Symp 223d  0.996   the same man MUST hold comedy and tragedy — the argument
+                       lost, the witnesses asleep
+
+Both dialogues diagnose the fragmentation of human nature. Both demand a
+recombination — for **rulers** in one, for **makers** in the other. And
+**Aristophanes, who supplies the myth of the cut, is one of the two men asleep
+when the demand for makers is finally stated.**
+
+## 33. What is and is not established
+
+**Established.** A single metaphor — κερματισμός, unity minted into denominations
+— grounds the denial at 395b, is inverted by the requirement at 473d, is given a
+myth at 191d in the same vocabulary of nature-cut-and-healed, and is restated as a
+demand at 223d. All four loci are fixed by position. None of it requires an
+authorship claim to state.
+
+**Not established.** That any of this concerns authorship. The *Republic*'s
+recombination is of political power and philosophy in a ruler; the *Symposium*'s
+is of two poetic arts in a maker; Aristophanes' myth is about erotic longing.
+Reading the set as a doctrine of authorial construction is a transposition the
+texts do not perform, and the Round 8 correction stands as the caution: what the
+corpus supplies is the **structure**, not its application.
+
+
 ∮ = 1

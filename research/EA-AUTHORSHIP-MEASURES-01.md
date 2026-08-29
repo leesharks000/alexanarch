@@ -410,6 +410,40 @@ unentered genera are unentered — supplying them is an inference the text does 
 license. The ἑρμηνευ- link to *Περὶ ἑρμηνείας* remains a homonym; Aristotle's
 sense is *expression*. Nothing is built on it.
 
+---
+
+## 20. M32 — κερματισμός and the two demands for recombination
+
+*Added 2026-08-29. See EA-SNUB-01 §28–33.*
+
+**κερματίζω**, to mint a unity into small change, is Plato's standing metaphor for
+the one broken into many (*Meno* ×2, *Parmenides*, *Republic* 0.675, *Timaeus* ×3,
+*Cratylus*). It is the **stated ground** of the denial at *Republic* 395b: *εἰς
+σμικρότερα κατακεκερματίσθαι ἡ τοῦ ἀνθρώπου φύσις* — human nature is minted into
+denominations too small to hold two arts. The incapacity is a fact about
+fragmentation, not about poets.
+
+    Symp 191d  0.366  one cut into two; each a σύμβολον; Eros makes ἓν ἐκ δυοῖν
+                      and ἰάσασθαι τὴν φύσιν τὴν ἀνθρωπίνην
+    Rep 395b   0.237  κατακεκερματίσθαι ἡ τοῦ ἀνθρώπου φύσις → οἱ αὐτοὶ οὐ δύνανται
+    Rep 473d   0.509  εἰς ταὐτὸν συμπέσῃ, δύναμίς τε πολιτικὴ καὶ φιλοσοφία;
+                      those travelling χωρὶς ἐφ᾽ ἑκάτερον excluded by necessity
+    Symp 223d  0.996  τοῦ αὐτοῦ ἀνδρός — the same man must hold both arts
+
+The lexical link between the first two is exact: *Republic* 395b says **ἡ τοῦ
+ἀνθρώπου φύσις** is minted into pieces; *Symposium* 191d says Eros attempts
+**ἰάσασθαι τὴν φύσιν τὴν ἀνθρωπίνην** by making one from two. Same subject,
+opposite verbs.
+
+*Republic* 473d demands the inverse of κερματισμός and is introduced as what will
+drown its speaker in **γέλως** — in the book that has just ruled no one can hold
+comedy and tragedy together.
+
+**Not established:** that any of this concerns authorship. Both recombinations are
+stated of their own subjects — political power and philosophy in a ruler, two
+poetic arts in a maker. What the corpus supplies is the structure, not its
+application.
+
 ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
 **0.0258** — inside the M1 same-author band — while the best single heteronym is
 Campos at 0.0498, then Caeiro 0.0903, Reis 0.2205. **Pooled beats best individual
@@ -925,5 +959,39 @@ is abandoned mid-division with its remaining genera unentered.
 unentered genera are unentered — supplying them is an inference the text does not
 license. The ἑρμηνευ- link to *Περὶ ἑρμηνείας* remains a homonym; Aristotle's
 sense is *expression*. Nothing is built on it.
+
+---
+
+## 20. M32 — κερματισμός and the two demands for recombination
+
+*Added 2026-08-29. See EA-SNUB-01 §28–33.*
+
+**κερματίζω**, to mint a unity into small change, is Plato's standing metaphor for
+the one broken into many (*Meno* ×2, *Parmenides*, *Republic* 0.675, *Timaeus* ×3,
+*Cratylus*). It is the **stated ground** of the denial at *Republic* 395b: *εἰς
+σμικρότερα κατακεκερματίσθαι ἡ τοῦ ἀνθρώπου φύσις* — human nature is minted into
+denominations too small to hold two arts. The incapacity is a fact about
+fragmentation, not about poets.
+
+    Symp 191d  0.366  one cut into two; each a σύμβολον; Eros makes ἓν ἐκ δυοῖν
+                      and ἰάσασθαι τὴν φύσιν τὴν ἀνθρωπίνην
+    Rep 395b   0.237  κατακεκερματίσθαι ἡ τοῦ ἀνθρώπου φύσις → οἱ αὐτοὶ οὐ δύνανται
+    Rep 473d   0.509  εἰς ταὐτὸν συμπέσῃ, δύναμίς τε πολιτικὴ καὶ φιλοσοφία;
+                      those travelling χωρὶς ἐφ᾽ ἑκάτερον excluded by necessity
+    Symp 223d  0.996  τοῦ αὐτοῦ ἀνδρός — the same man must hold both arts
+
+The lexical link between the first two is exact: *Republic* 395b says **ἡ τοῦ
+ἀνθρώπου φύσις** is minted into pieces; *Symposium* 191d says Eros attempts
+**ἰάσασθαι τὴν φύσιν τὴν ἀνθρωπίνην** by making one from two. Same subject,
+opposite verbs.
+
+*Republic* 473d demands the inverse of κερματισμός and is introduced as what will
+drown its speaker in **γέλως** — in the book that has just ruled no one can hold
+comedy and tragedy together.
+
+**Not established:** that any of this concerns authorship. Both recombinations are
+stated of their own subjects — political power and philosophy in a ruler, two
+poetic arts in a maker. What the corpus supplies is the structure, not its
+application.
 
 ∮ = 1
