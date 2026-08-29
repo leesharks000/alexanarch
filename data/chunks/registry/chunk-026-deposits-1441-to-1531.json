@@ -1,8 +1,8 @@
 {
   "chunk_number": 26,
   "first_deposit": 1441,
-  "last_deposit": 1532,
-  "count": 92,
+  "last_deposit": 1531,
+  "count": 91,
   "deposits": [
     {
       "deposit_number": 1441,
@@ -2106,7 +2106,7 @@
       ],
       "axn_reading": "Duration -> Touch -> Force -> Force -> Alarm -> Duration",
       "minted_at": "2026-08-12T02:48:12Z",
-      "status": "ACTIVE",
+      "status": "SUPERSEDED",
       "status_authorial": "SELF_SERVE_MINTED",
       "full_text_path": "/data/texts/AXN-05DE-text.md",
       "wiki_article": "**Baseline Capture Architecture (EA-SEI-BCA-01 v1.0)** is the constructive specification of the accelerator selection-metrology program, deposited under the Nobel Glas heteronym.\n\nIt proposes a statistically interpretable control plane for instruments performing irreversible learned selection before durable storage, separating four functions usually conflated: a content-independent probability sample taken before the audited selection; a full-rate tap of the exact representation presented to the selector; probability-weighted enrichment channels that raise coverage of rare regions without sacrificing inferential validity; and shadow selectors whose decisions are recorded but do not control acquisition. Together they constitute a replay bank supporting retrospective estimation of retention surfaces, directional assimilation, model-to-model miss correlation, and selection drift across classifier generations.\n\nIts central principle is deliberately minimal: under a finite storage budget, no content-sensitive algorithm can be a less assumption-laden baseline than a probability sample whose inclusion mechanism is independent of event content and whose inclusion probability is known. Sketches, random projections, and alternative neural models are argued not to qualify. The paper's sharpest formulation is that it does not propose an alternative trigger but the missing control group for a trigger — discovery selection separated from selection metrology.\n\nFeasibility rests on existing CMS infrastructure: Zero Bias data used to train AXOL1TL, Level-1 Data Scouting capturing trigger information at the full 40 MHz while bypassing ordinary Level-1 selection, and the Global Trigger test crate receiving live inputs without determining readout. The contribution is to bind such practices into one architecture whose purpose is measuring what irreversible learned selection fails to retain.",
@@ -2280,7 +2280,13 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "superseded_by_deposit_number": 1558,
+      "superseded_by": 1558,
+      "superseded_by_axn": "AXN:0656.OPERATIVE.🏴⛩️🏠💚♅⚫",
+      "superseded_by_title": "Baseline Capture Architecture for Learned Scientific Triggers: A Control Plane for Measuring Selection Before Irreversible Data Loss (EA-SEI-BCA-01 v2.0 — the submitted state)",
+      "superseded_at": "2026-08-27",
+      "superseded_reason": "EA-SEI-BCA-01 version chain. v1.0 carries the architecture, the estimation theory and the accelerator feasibility argument; the submitted state at #1558 adds the numerical validation (§13) and the venue reframing, and corrects the estimator-lineage language. This deposit's canonical bytes are unchanged — supersession is registry-level, per the standing ruling. A journal data-availability statement naming #1453 should be read as pointing into this chain; #1558 is its terminal state."
     },
     {
       "deposit_number": 1454,
@@ -14681,203 +14687,6 @@
           "layer_3_content_hash": {
             "present": true,
             "canonical_hash": "3881caae1ed388f92eaefdccc7212e39ce6dbe6f7e38d790bfb13521d5b06c05",
-            "hash_in_body": false,
-            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
-          },
-          "layer_4_cross_signing": {
-            "present": false,
-            "cross_references_count": 0,
-            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
-          },
-          "layer_5_external_anchors": {
-            "present": false,
-            "wikidata_qid_count": 0,
-            "external_doi_count": 0,
-            "orcid_present": false
-          }
-        },
-        "overall_conformance": "measurement_only"
-      }
-    },
-    {
-      "deposit_number": 1532,
-      "axn": "AXN:0632.PHILOLOGICAL.👉🕑🗼🌖🎶🎹",
-      "hex": "0632",
-      "family": "PHILOLOGICAL",
-      "emoji": "👉🕑🗼🌖🎶🎹",
-      "hash": "b9632a058889c32409bb684f810b31342ced819eb040d37090b9670bde20442e",
-      "title": "The Transforming Body of Sappho 31: A Survey of Ancient Reception, Genre Conversion, and Material Reconfiguration",
-      "creator": "Sharks, Lee",
-      "date": "2026-08-22",
-      "description": "A survey article and mining map of the ancient reception field around Sappho Fragment 31, from performance culture through historiography, comedy, tragedy, Plato, Alexandrian scholarship, Hellenistic poetry, Roman comedy and epigram, Catullus, Lucretius, Horace, Vergil, and Longinus, to the Jewish-Greek and Christian transforms that constitute the present program's research frontier. The survey distinguishes four evidentiary states — explicit reception, specific reception proposed in scholarship, broader Sapphic reception, and transform proposed by the present program — and replaces the single descending chain with a braided reception field. It deliberately preserves every promising ancient locus with bibliographic specificity sufficient for a later passage-level mining pass. Infrastructure for future work, calibrated against Catullus 51 as the secure transform-control.",
-      "content_type": "Paper",
-      "license": "CC-BY-4.0",
-      "substrate": "AI-assisted (substrate). Drafted in exchange with an external model instance under the author's direction; developed for deposit in-session (transport D) by Claude (Anthropic, Fable), with all archive cross-references verified against the registry before inclusion. NO-DOUBLE-DRAW honored.",
-      "root_axn": "AXN:0632.PHILOLOGICAL",
-      "axn_schema_version": "v2",
-      "protocol_version": "protocol/v1",
-      "axn_canonical": "b9632a058889c32409bb684f810b31342ced819eb040d37090b9670bde20442e",
-      "clusters": [
-        "Gestural",
-        "Temporal",
-        "Architectural",
-        "Celestial",
-        "Symbolic",
-        "Symbolic"
-      ],
-      "axn_reading": "Touch -> Duration -> Foundation -> Origin -> Play -> Play",
-      "minted_at": "2026-08-22T22:37:37Z",
-      "status": "ACTIVE",
-      "status_authorial": "SELF_SERVE_MINTED",
-      "full_text_path": "/data/texts/AXN-0632-text.md",
-      "wiki_article": "The Transforming Body of Sappho 31 (deposit #1532, 22 August 2026) is a survey article and mining map of the ancient reception field around Sappho Fragment 31, written as infrastructure for the archive's Sappho program rather than as another lineage assertion. Its governing device is a four-way distinction among evidentiary states — explicit reception, specific reception proposed in scholarship, broader Sapphic reception, and transforms proposed by the present program — which the survey refuses to collapse into one another.\n\nAgainst the simple descending chain (Sappho to Plato to Catullus to Longinus and onward), the survey establishes a braided reception field: performance culture reperforms Sapphic song before any quotation exists (Yatromanolakis, Nagy); Herodotus converts song into biographical evidence; six comedies titled Sappho and demonstrable Aristophanic handling manufacture Sappho as a theatrical person; Attic tragedy absorbs Sapphic diction, with Sophocles Electra 67 and Aristophanes Birds 1167 among the most plausible Fragment-31 candidates (Johnston); Plato converts lyric shock into the psychology of eros (Phaedrus 235c, 250-51; Pender); Alexandrian scholarship makes Sappho an edited author, within which Theocritus Idyll 2 ritualizes the symptom body and Apollonius narrativizes it in epic third person (Acosta-Hughes, Pretagostini); Plautus receives the transform through Greek comic mediation (Traill) and Valerius Aedituus compresses it into epigram before Catullus; Lucretius potentially rotates the repertoire into fear, Horace into Roman lyric physiology; and Longinus preserves the poem by converting it into critical evidence and a theory of reader transport.\n\nCatullus 51 calibrates the whole: the archive's differentiated account (close translation, lossy 3-to-2 compression, polarity inversion at the reconstructed fifth-stanza position) sets the material specificity below which other candidate receptions are not promoted. The Jewish-Greek and Christian material — Philo's instrument doctrine, Addition D and canonical Josephus, the sealed Revelation 12 test, Augustine's inverted restoration — is placed explicitly under program-specific transform hypotheses, distinct from the externally established evidence. The survey reframes the research question: which constraints of Fragment 31 were already demonstrably portable across genre, language, speaker-position, polarity, and explanatory framework before the proposed Jewish-Greek crossing, and does the later material preserve those constraints beyond what the known reception ecology predicts. A passage-level mining appendix over Johnston, Bagordo, Kugelmeier, Acosta-Hughes, and Roman Receptions of Sappho is declared as the next pass; the companion protocol QFO-01 (#1533) draws its positive-control panel from this survey's locked loci.",
-      "wiki_status": "AUTHORSHIP_REQUIRED",
-      "entities": [
-        {
-          "subject": "The Transforming Body of Sappho 31: A Survey of Ancient Reception, Genre Conversion, and Material Re",
-          "predicate": "created_by",
-          "object": "Sharks, Lee",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "The Transforming Body of Sappho 31: A Survey of Ancient Reception, Genre Conversion, and Material Re",
-          "predicate": "is_type",
-          "object": "Paper",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "The Transforming Body of Sappho 31: A Survey of Ancient Reception, Genre Conversion, and Material Re",
-          "predicate": "belongs_to_family",
-          "object": "PHILOLOGICAL",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "The Transforming Body of Sappho 31: A Survey of Ancient Reception, Genre Conversion, and Material Re",
-          "predicate": "is_part_of",
-          "object": "Crimson Hexagonal Archive",
-          "type": "work",
-          "evidence_status": "observed"
-        }
-      ],
-      "entity_status": "provisional",
-      "defines_concepts": [
-        {
-          "concept": "braided reception field",
-          "definition": "A reception history modeled as multiple concurrent generic lanes (performance, historiography, comedy, tragedy, philosophy, scholarship, poetry, criticism) rather than a single descending chain of authors."
-        },
-        {
-          "concept": "transform-of-transform",
-          "definition": "A reception that arrives through a prior reception rather than from the source directly, e.g. Sappho 31 reaching Plautus through Greek comic parody."
-        },
-        {
-          "concept": "evidentiary states (reception)",
-          "definition": "The four-way classification a reception survey must not collapse: explicit reception; specific reception proposed in scholarship; broader authorial reception; and transform proposed by the surveying program itself."
-        },
-        {
-          "concept": "mining map",
-          "definition": "A survey whose deliverable is retrievability: every promising locus preserved with bibliographic coordinates sufficient for a later pass to reopen the source and promote or discard the proposed relation."
-        }
-      ],
-      "version": "v1.0",
-      "keywords": [
-        "Sappho 31",
-        "reception history",
-        "Catullus 51",
-        "Theocritus",
-        "Apollonius",
-        "Valerius Aedituus",
-        "Plautus",
-        "Horace",
-        "Lucretius",
-        "Longinus",
-        "Plato",
-        "Phaedrus",
-        "Aristophanes",
-        "Attic tragedy",
-        "Yatromanolakis",
-        "Bagordo",
-        "Acosta-Hughes",
-        "Roman Receptions of Sappho",
-        "genre conversion",
-        "braided reception field",
-        "transform-of-transform",
-        "mining map",
-        "evidentiary states"
-      ],
-      "related_identifiers_raw": "AXN:05F8.PHILOLOGICAL.🔃🪨🧡▽◀️♈ (#1478 — Sappho 31.17 as completed composition; the archive's compression-notation model referenced in the working status)\nAXN:05F6.PHILOLOGICAL.○▽🕌🔄🛸🔵 (#1476 — the Longinus erratum-sequence paper; §10's measured finding)\nAXN:0608.PHILOLOGICAL.🗿🌋🧭🔬📌□ (#1493 — canonical Josephus; §11's AJ/BJ findings)\nAXN:061A.ARCHIVAL.✨✖️↘️🌱📚🕗 (#1511 — the six upstream transforms; the program-lane this survey embeds in a wider field)\nAXN:0617.DATASET.⚖️🎲⭕👐♻️🌳 (#1508 — Fragment 31 diplomatic layer, seated)\nAXN:0630.DATASET.🎪⚪🔚🌙↘️🔀 (#1531 — EA-CORPORA-02; lucretius and greek-atomists seats supporting §9)",
-      "mint_source": {
-        "kind": "github_issue",
-        "issue_number": 1532,
-        "repository": "leesharks000/alexanarch",
-        "minted_by_workflow": ".github/workflows/mint-axn.yml",
-        "minted_by_script": "scripts/mint_deposit.py",
-        "minted_via": "self_serve_validated_pr"
-      },
-      "body_status": {
-        "class": "full",
-        "lacuna": false,
-        "recovery_status": "COMPLETE",
-        "residual_chars": 24302,
-        "audited_at": "2026-08-22T22:37:37Z",
-        "audit_version": "mint-time-declaration"
-      },
-      "related_deposits": [
-        {
-          "deposit_number": 1478,
-          "relation": "builds_on",
-          "note": "the compression-notation model of Fragment 31 cited in the working status"
-        },
-        {
-          "deposit_number": 1476,
-          "relation": "builds_on",
-          "note": "the Longinus finding in section 10"
-        },
-        {
-          "deposit_number": 1493,
-          "relation": "builds_on",
-          "note": "the canonical-Josephus findings in section 11"
-        },
-        {
-          "deposit_number": 1511,
-          "relation": "situates",
-          "note": "embeds the six-transform program lane in the wider external field"
-        },
-        {
-          "deposit_number": 1533,
-          "relation": "companion",
-          "note": "QFO-01 draws its positive-control loci from this survey"
-        }
-      ],
-      "lexical_attested_none": false,
-      "references_concepts": [],
-      "references_concept_count": 0,
-      "citations": [],
-      "wikidata_candidates": [],
-      "cha_cross_references": [],
-      "external_metadata_path": "/data/external-metadata/AXN-0632.json",
-      "spxi_audit": {
-        "spxi_protocol": "v0.2",
-        "validated_at": "2026-08-22T22:38:52.246301+00:00",
-        "layers": {
-          "layer_1_inscription_anchors": {
-            "present": false,
-            "anchors_found": [],
-            "anchor_count": 0,
-            "orcid_in_body": false,
-            "creator_in_body": false,
-            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
-          },
-          "layer_2_micro_kernels": {
-            "present": false,
-            "fenced_json_blocks": 0,
-            "json_ld_context_markers": 0
-          },
-          "layer_3_content_hash": {
-            "present": true,
-            "canonical_hash": "86b1f640b774a6650c90dca9ac810d65f3e97bd543b5c7fed8855b911161f780",
             "hash_in_body": false,
             "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
           },
