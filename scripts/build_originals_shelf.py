@@ -153,6 +153,49 @@ def card(name, seat, card_no, tpl, title=None):
             f'file tree by scripts/build_originals_shelf.py &middot; TACHYON, MANUS-directed</div></div></body>\n')
 
 
+def ocard(name, seat, display_title=None):
+    """Render the SHELF INDEX entry, in the form the shelf already uses.
+
+    This is generated for the same reason the card page is. On 2026-08-29 the
+    index entries for eight seats were hand-written in prose with a single
+    "read the original" link, while every existing entry carries a monospace
+    field block — EDITION, LANGUAGE, LICENSE, STATUS — and three doors: READ,
+    PROVENANCE, MANIFEST. The card page had been fixed by copying the template
+    and the index entry was improvised in the same session. A card is a reused
+    template, not a winged seating.
+    """
+    s = json.loads((seat / "source.json").read_text())
+    rows = []
+    if s.get("edition"):
+        rows.append(f"EDITION &middot; {html.escape(str(s['edition']))}")
+    lang = s.get("language") or LANG_OF.get(name)
+    if lang:
+        rows.append(f"LANGUAGE &middot; {html.escape(str(lang))}")
+    if s.get("license"):
+        rows.append(f"LICENSE &middot; {html.escape(str(s['license']))}")
+    w = s.get("works") or {}
+    status = f"{w.get('count','?')} works &middot; {s.get('lines_total','?'):,} lines" if isinstance(s.get('lines_total'), int) \
+             else f"{w.get('count','?')} works"
+    for extra in ("held_apart", "coverage", "not_in_seat"):
+        if s.get(extra):
+            status += f" &mdash; {html.escape(str(s[extra])[:400])}"
+            break
+    rows.append(f"STATUS &middot; {status}")
+    title = display_title or name.replace("-", " ").title()
+    return (f'<div class="ocard" id="c-{name}"><h3>{html.escape(title)}</h3>'
+            f'<div class="row">{"<br>".join(rows)}</div>'
+            f'<div class="doors">'
+            f'<a class="w-chip" href="/originals/{name}/">READ &mdash; THE FILES</a>'
+            f'<a class="w-chip" href="{CANON}/data/corpora/{name}/source.json">PROVENANCE</a>'
+            f'<a class="w-chip" href="{CANON}/data/corpora/{name}/MANIFEST.sha256">MANIFEST</a>'
+            f'</div></div>')
+
+
+LANG_OF = {"browning": "English", "pound": "English", "pessoa": "Portuguese",
+           "kierkegaard": "Danish", "xenophon": "Ancient Greek", "aristophanes": "Ancient Greek",
+           "aristotle": "Ancient Greek", "plotinus": "Ancient Greek"}
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
