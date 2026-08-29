@@ -2,8 +2,8 @@
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
  "_generated": "2026-08-21",
- "seats": 39,
- "lines_total": 346844,
+ "seats": 42,
+ "lines_total": 369949,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -1349,6 +1349,93 @@
    "data": {
     "source": "https://www.alexanarch.org/data/corpora/whitman/source.json",
     "manifest": "https://www.alexanarch.org/data/corpora/whitman/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-05/01",
+   "corpus": "browning",
+   "edition": "Robert Browning, Men and Women (London: Chapman and Hall, 1855), via Project Gutenberg ebook 17393",
+   "license": "Public domain (author d. 1889); Project Gutenberg packaging under the PG licence",
+   "origin": {
+    "repo": "Project Gutenberg",
+    "ebook": "17393",
+    "url": "https://www.gutenberg.org/ebooks/17393",
+    "paths": [
+     "Men and Women (1855), complete volume"
+    ]
+   },
+   "language": "eng",
+   "lines": 4598,
+   "verified_loci": [
+    "Fra Lippo Lippi",
+    "Andrea del Sarto",
+    "Bishop Blougram's Apology",
+    "Childe Roland to the Dark Tower Came"
+   ],
+   "why_seated": "Browning is the first term of the constructed-voice series the archive is measuring. The dramatic monologue is the point at which a poem's speaker becomes a position distinct from the poet, with its own history, self-justification and blind spots, and the reader is left to judge across a gap the poet does not narrate. Men and Women (1855) is that practice at full development. It is seated as the baseline against which Pound's personae and Pessoa's heteronyms can be read as later stages of one operation rather than three unrelated eccentricities.",
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/browning/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/browning/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-05/02",
+   "corpus": "pound",
+   "edition": "Ezra Pound: Personae (London: Elkin Mathews, 1909); Lustra (1916); Cathay (1915); Poems 1918-21 (1921) — all via Project Gutenberg",
+   "license": "Public domain in the United States (all volumes published before 1930); Project Gutenberg packaging under the PG licence",
+   "origin": {
+    "repo": "Project Gutenberg",
+    "ebooks": [
+     "41162",
+     "55564",
+     "50155",
+     "51992"
+    ],
+    "paths": [
+     "Personae (1909)",
+     "Lustra (1916)",
+     "Cathay (1915)",
+     "Poems 1918-21, including Homage to Sextus Propertius"
+    ]
+   },
+   "language": "eng",
+   "lines": 7967,
+   "verified_loci": [
+    "Personae (1909) — the title itself: the mask as authorial position",
+    "Cathay (1915) — translation as the making of a voice",
+    "Homage to Sextus Propertius, in Poems 1918-21 — the transform of a Latin source that Pound refused to call translation"
+   ],
+   "why_seated": "Pound is the middle term. Personae names the operation outright, and Homage to Sextus Propertius is the same manoeuvre Ginsberg later performs on Catullus 38: a Latin source whose form is tracked and whose register is inverted, defended by its author as something other than translation when the philologists complained. Seated so the Ginsberg/Catullus transform has a precedent inside the archive and the series Browning-Pound-Pessoa can be measured as one developing practice.",
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/pound/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/pound/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-05/03",
+   "corpus": "pessoa",
+   "edition": "Portuguese Wikisource transcriptions of the heteronymic corpus, taken by declared category",
+   "license": "Public domain (author d. 1935); Wikisource transcription under CC BY-SA",
+   "origin": {
+    "repo": "pt.wikisource.org",
+    "method": "API list=categorymembers per heteronym category, then prop=revisions raw wikitext",
+    "categories": [
+     "Categoria:Alberto Caeiro",
+     "Categoria:Ricardo Reis",
+     "Categoria:Álvaro de Campos"
+    ]
+   },
+   "language": "por",
+   "lines": 10540,
+   "verified_loci": [
+    "O Guardador de Rebanhos (Caeiro)",
+    "Odes, Livro Primeiro (Reis)",
+    "Ode Marítima; Tabacaria (Campos)"
+   ],
+   "why_seated": "Pessoa is the third term and the only one of the three with documented ground truth: the letter to Adolfo Casais Monteiro of 13 January 1935 attributes the heteronyms, so the grouping is known rather than inferred. That makes this corpus the positive control for any instrument claiming to detect designed differentiation, and nothing measured on Plato and Aristotle means anything until it has been calibrated here first.",
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/pessoa/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/pessoa/MANIFEST.sha256"
    }
   }
  ]

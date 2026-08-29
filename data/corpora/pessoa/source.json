@@ -1,0 +1,42 @@
+{
+ "corpus": "pessoa",
+ "seat": "EA-CORPORA-05/03",
+ "origin": {
+  "repo": "pt.wikisource.org",
+  "method": "API list=categorymembers per heteronym category, then prop=revisions raw wikitext",
+  "categories": [
+   "Categoria:Alberto Caeiro",
+   "Categoria:Ricardo Reis",
+   "Categoria:Álvaro de Campos"
+  ]
+ },
+ "edition": "Portuguese Wikisource transcriptions of the heteronymic corpus, taken by declared category",
+ "license": "Public domain (author d. 1935); Wikisource transcription under CC BY-SA",
+ "fetched": "2026-08-29",
+ "works": {
+  "count": 290,
+  "by_voice": {
+   "caeiro": 123,
+   "reis": 60,
+   "campos": 107
+  },
+  "units": "one file per poem, prefixed by voice",
+  "per-work": "text/<voice>--<Title>.txt",
+  "originals": "original/ptwikisource-<voice>.tar.gz"
+ },
+ "normalization": "raw wikitext taken via prop=revisions; poem bodies extracted from <poem> tags; templates, category links and wiki markup stripped; line breaks preserved. The prop=extracts API returns EMPTY for the short lyrics because their text sits inside poem templates it does not render — the raw-wikitext route is required and is the reason an extracts-based fetch of this corpus silently yields almost nothing.",
+ "verified_loci": [
+  "O Guardador de Rebanhos (Caeiro)",
+  "Odes, Livro Primeiro (Reis)",
+  "Ode Marítima; Tabacaria (Campos)"
+ ],
+ "voice_partition": {
+  "_note": "THE PARTITION IS THE SOURCE'S, NOT THE SEAT'S. Each poem is filed under the heteronym its Wikisource category declares. That partition is exactly the object under examination, so it is recorded as given and never adjusted to suit a result.",
+  "caeiro": "123 texts, 16,123 words — the master the other voices acknowledge; the nearest thing in the modern cases to an orthonym",
+  "reis": "60 texts, 5,548 words",
+  "campos": "107 texts, 41,142 words"
+ },
+ "not_in_seat": "The orthonym — Fernando Pessoa's own 496 categorised pages — is NOT seated here. Deliberately: the leave-one-out test the archive intends to run holds out the convergent position and asks whether the remaining voices imply it. Seating the orthonym alongside the heteronyms would foreclose that test. Its absence is a decision, recorded, not an omission.",
+ "why_seated": "Pessoa is the third term and the only one of the three with documented ground truth: the letter to Adolfo Casais Monteiro of 13 January 1935 attributes the heteronyms, so the grouping is known rather than inferred. That makes this corpus the positive control for any instrument claiming to detect designed differentiation, and nothing measured on Plato and Aristotle means anything until it has been calibrated here first.",
+ "lines_total": 10540
+}
