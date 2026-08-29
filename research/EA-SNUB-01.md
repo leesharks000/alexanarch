@@ -597,28 +597,55 @@ And then the disposal of the remainder:
 
 ## 26. What is and is not established
 
-**Established.** Plato performs the full reflex — halt at a gap, flag it, coin —
-on a distinction whose criterion is **whose mind is speaking when a command is
-issued**. The coined term names the position that issues from itself. The
-discarded class is defined by relaying ἀλλότρια νοήματα, another's thoughts, and
-is expressly granted the right to name itself otherwise. The instance is at 0.064
-of the *Statesman*, one of the four Platonic works that carry the naming-gap
-reflex at all.
+**⚠ CORRECTED 2026-08-29, same day.** The first version of this section read:
+*"Plato assigns αὐτεπιτακτική to kings — τὸ τῶν βασιλέων γένος. The context is
+political rule, not authorship."* That **inverted the containment** and closed a
+class the text explicitly leaves open. The Greek is decisive against it on two
+counts.
 
-**Not established, and the transposition must not be made silently.** Plato
-assigns αὐτεπιτακτική to **kings** — τὸ τῶν βασιλέων γένος. The context is
-political rule, not authorship, and the text does not extend it. Reading the pair
-as an orthonym/heteronym doctrine is an application the passage does not perform.
+**The syntax.** τὸ μὲν τῶν βασιλέων γένος **εἰς τὴν αὐτεπιτακτικὴν θέντες** —
+τίθημι + εἰς + accusative. Kings are **placed into** the self-commanding art. The
+self-commanding is the container; kingship is deposited in it. This is not an
+identification, and αὐτεπιτακτική is not defined as kingship.
+
+**The recapitulation at 267b.** τούτου δὲ ἀπεικασθὲν τὸ μόριον **αὐτεπιτακτικὸν**
+ἐρρήθη. **ζῳοτροφικὴ δὲ πάλιν αὐτεπιτακτικῆς οὐ τὸ σμικρότατον τῶν γενῶν
+ἀπεσχίζετο** — animal-rearing was split off again from the self-commanding, **not
+the smallest of the genera.**
+
+οὐ τὸ σμικρότατον τῶν γενῶν. **There are other genera inside αὐτεπιτακτική, and
+Plato says so.** The branch that eventually reaches the statesman is one of
+several, and he tells the reader it is not even the largest.
+
+**And he states why the rest go unentered:** τοῦ γὰρ ἄρχοντος ἕνεκα ἡμῖν ἡ μέθοδος
+ἦν, ἀλλ᾽ οὐχὶ τοῦ ἐναντίου — *our method was for the sake of the ruler, not the
+opposite.*
+
+**The corrected account.** Plato coins a name for a genus whose criterion is
+**issuing from oneself rather than relaying another's mind.** He notes the genus
+contains multiple sub-genera. He follows exactly one — the branch to kingship —
+because that is what the present inquiry is for. **He leaves the others unentered
+and unnamed.** Separately, he dismisses the relaying arts and concedes them the
+right to name themselves.
+
+**The class is open by construction and marked as open.** The position that
+speaks from itself is named, is explicitly larger than any of its instances, and
+is abandoned mid-division with its remaining genera unentered.
+
+**What is still not established.** That Plato applies this to authorship. He does
+not. The unentered genera are unentered; nothing in the text says what they are,
+and supplying them is an inference the passage does not license. What the passage
+establishes is that the class exists, was found nameless, was named, and was left
+open.
 
 **A homonym, recorded so it is not mistaken for evidence.** ἑρμηνευτική appears in
 Plato's discarded list in the sense *relaying another's mind*. Two Aristotelian
 works carry ἑρμηνευ- at position 0.0, both in titles rather than usages: *Περὶ
-ἑρμηνείας*, where the sense is *expression* — how a statement signifies, not
-interpretation of another — and *De plantis*, whose position-zero instance is the
-opening of a Byzantine **translator's** prologue and which is a retroversion
-excluded from measurement (Part II, T-note). That *De interpretatione* is also
-the work **Andronicus judged spurious** is a coincidence of some interest and
-carries no weight. Nothing here is built on it.
+ἑρμηνείας*, where the sense is *expression* — how a statement signifies — and *De
+plantis*, whose position-zero instance opens a Byzantine **translator's** prologue
+and which is a retroversion excluded from measurement. That *De interpretatione*
+is also the work **Andronicus judged spurious** is a coincidence of some interest
+carrying no weight. Nothing is built on it.
 
 ## 27. Why it is recorded
 

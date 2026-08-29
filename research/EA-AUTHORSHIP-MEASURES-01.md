@@ -391,10 +391,24 @@ The distinction between speaking from oneself and relaying another's mind was
 available, named, and coined by Plato in the act of finding Greek short of a word
 for it.
 
-**Standing caution.** Plato assigns the coined art to **kings**, not to
-philosophers or writers. The context is political rule and the text does not
-extend it. The ἑρμηνευ- link to *Περὶ ἑρμηνείας* is a homonym — Aristotle's sense
-is *expression*, not *relaying another's mind* — and nothing is built on it.
+**⚠ CORRECTED same day.** The first version of this entry said Plato *assigns*
+the coined art to kings, and that the class is political rule. That inverted the
+containment. **τὸ μὲν τῶν βασιλέων γένος εἰς τὴν αὐτεπιτακτικὴν θέντες** — τίθημι
++ εἰς: kings are placed **into** the self-commanding, which is the container. And
+at 267b: **ζῳοτροφικὴ δὲ πάλιν αὐτεπιτακτικῆς οὐ τὸ σμικρότατον τῶν γενῶν
+ἀπεσχίζετο** — animal-rearing split off from the self-commanding, *not the
+smallest of the genera*. **Other genera exist inside the class and Plato says so**,
+declining them with τοῦ γὰρ ἄρχοντος ἕνεκα ἡμῖν ἡ μέθοδος ἦν — our method was for
+the sake of the ruler.
+
+**So the class is open by construction and marked as open.** The position that
+speaks from itself is named, is explicitly larger than any of its instances, and
+is abandoned mid-division with its remaining genera unentered.
+
+**Standing caution, corrected.** Plato does not apply this to authorship, and the
+unentered genera are unentered — supplying them is an inference the text does not
+license. The ἑρμηνευ- link to *Περὶ ἑρμηνείας* remains a homonym; Aristotle's
+sense is *expression*. Nothing is built on it.
 
 ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
 **0.0258** — inside the M1 same-author band — while the best single heteronym is
@@ -893,9 +907,23 @@ The distinction between speaking from oneself and relaying another's mind was
 available, named, and coined by Plato in the act of finding Greek short of a word
 for it.
 
-**Standing caution.** Plato assigns the coined art to **kings**, not to
-philosophers or writers. The context is political rule and the text does not
-extend it. The ἑρμηνευ- link to *Περὶ ἑρμηνείας* is a homonym — Aristotle's sense
-is *expression*, not *relaying another's mind* — and nothing is built on it.
+**⚠ CORRECTED same day.** The first version of this entry said Plato *assigns*
+the coined art to kings, and that the class is political rule. That inverted the
+containment. **τὸ μὲν τῶν βασιλέων γένος εἰς τὴν αὐτεπιτακτικὴν θέντες** — τίθημι
++ εἰς: kings are placed **into** the self-commanding, which is the container. And
+at 267b: **ζῳοτροφικὴ δὲ πάλιν αὐτεπιτακτικῆς οὐ τὸ σμικρότατον τῶν γενῶν
+ἀπεσχίζετο** — animal-rearing split off from the self-commanding, *not the
+smallest of the genera*. **Other genera exist inside the class and Plato says so**,
+declining them with τοῦ γὰρ ἄρχοντος ἕνεκα ἡμῖν ἡ μέθοδος ἦν — our method was for
+the sake of the ruler.
+
+**So the class is open by construction and marked as open.** The position that
+speaks from itself is named, is explicitly larger than any of its instances, and
+is abandoned mid-division with its remaining genera unentered.
+
+**Standing caution, corrected.** Plato does not apply this to authorship, and the
+unentered genera are unentered — supplying them is an inference the text does not
+license. The ἑρμηνευ- link to *Περὶ ἑρμηνείας* remains a homonym; Aristotle's
+sense is *expression*. Nothing is built on it.
 
 ∮ = 1
