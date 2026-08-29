@@ -239,7 +239,140 @@ target, and it reads negative.**
 
 ## 5. THE CALIBRATION CORPORA (known-designed)
 
-**M17 — ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
+**M17 — ---
+
+## 17. M29 — THE PROCEDURAL INSTRUMENT
+
+*Added 2026-08-29. Supersedes §15's "never attempted" entry for the λόγος measure.*
+
+EA-SNUB-01 §6 derived a recognition criterion from the snub passage itself:
+**matter individuates, form recurs, so what persists across substrates is the
+account and not the instance.** §7 and §15 both listed a measure reading λόγος
+rather than ὕλη as untouched and as the gap in the whole line of work.
+
+It is no longer untouched. Three searches built in Rounds 4–7 of EA-SNUB-01 read
+**operations** rather than substrate, and all three returned unprompted positives
+in a session where every substrate-reading instrument returned null or artifact.
+
+**The three hits.**
+
+1. **Terminal aporia → technical uptake.** σιμόν at *Theaetetus* 209c, the failed
+   individuating mark, becomes Aristotle's canonical case of enmattered form.
+   Found by lexical search; the positional claim was refuted by base rate
+   (EA-SNUB-01 §9), the semantic reading survives.
+
+2. **Self-application regress.** *Soph. El.* 182a — if snub is concavity-of-nose
+   and there is a snub nose, there is a concave-nose nose — returns *Parmenides*
+   132a, the Third Man, by argument shape with **zero lexical overlap.** Found
+   without being shown where to look.
+
+3. **Divide, flag, coin.** Run a division far enough and you reach a class the
+   language has no word for. Both corpora stop, say so, and coin a name.
+   Platonic instances occur in exactly the four works that classify — *Sophist*
+   (×3), *Statesman*, *Theaetetus*, *Timaeus* (×3) — and nowhere else in Plato.
+   Aristotle states the policy outright at *NE* 1108a: πειρατέον αὐτοὺς
+   ὀνοματοποιεῖν σαφηνείας ἕνεκα.
+
+**Why it works where the others failed.** Method is what maintains its shape
+across shifting matter. Every substrate instrument reads ὕλη — particles,
+frequencies, blocks, register — and ὕλη is what individuates. The procedural
+searches read the operation, which is what recurs.
+
+**The problem, stated as strongly as it can be put against the instrument.**
+Method is precisely what a school transmits. A student acquires his master's
+procedures more reliably than his vocabulary, his register, or his opinions. So
+procedural continuity is simultaneously the **most detectable** thing across the
+boundary and the **least diagnostic** for authorship: its presence is predicted
+equally well by ordinary teaching.
+
+**The sharpening that would make it diagnostic.** Not whether both use division —
+everyone in the Academy divided — but whether they share **arbitrary** features of
+the method: reflexes not determined by the method's purpose. Nothing requires a
+divider to stop and coin; leaving the class unnamed and proceeding is available
+and costs nothing. Both stop. Both flag. Both coin.
+
+**The test, and its denominator. RUN 2026-08-29 for reflex 3 — see M30.**
+Plato and Aristotle share the naming-gap reflex at **9.4× the rate of other
+high-division authors**, P ≈ 0, with Plotinus dividing harder than Aristotle and
+never doing it, and the multi-hand Hippocratic corpus at zero. That is the first
+positive result the investigation has produced. Reflexes 1 and 2 remain untested
+against a denominator, and the decisive successor control (Theophrastus dividing)
+is not extant in the available corpora.
+
+---
+
+## 18. M30 — THE NAMING-GAP REFLEX
+
+*Added 2026-08-29. The first measurement in this investigation that groups Plato
+and Aristotle rather than separating them. Partly answers M29's diagnosticity
+question.*
+
+**The reflex.** Run a division far enough and you reach a class the language has
+no word for. Nothing about διαίρεσις requires you to stop and say so — leaving the
+class unnamed costs nothing and proceeds. Plato and Aristotle both stop, both
+flag it, and both coin. Aristotle writes the policy down at *NE* 1108a:
+πειρατέον αὐτοὺς ὀνοματοποιεῖν σαφηνείας ἕνεκα — *we must coin names ourselves for
+the sake of clarity.*
+
+**Measured as instances per 100,000 tokens**, counting ἀνώνυμ-, οὐκ ἔχει ὄνομα,
+οὐ κεῖται ὄνομα, οὐκ ὠνόμασται and cognates:
+
+    corpus                    gap/100k    raw / tokens        division/10k
+    ARISTOTLE                     8.43    81 /   960,910             30.9
+    Diogenes Laertius             2.74     3 /   109,679             16.1
+    PLATO                         2.60    15 /   576,894             15.4
+    Herodotus                     2.16     4 /   184,935              3.7
+    Aristophanes                  1.96     2 /   102,058              4.0
+    Josephus                      0.64     3 /   467,569              5.4
+    Plotinus                      0.47     1 /   214,028             36.8
+    Philo                         0.35     2 /   575,592             13.3
+    Xenophon                      0.32     1 /   310,278              1.7
+    Thucydides                    0.00     0 /   150,157              1.2
+    Hippocratic (multi-hand)      0.00     0 /    98,175              2.4
+    Greek NT                      0.00     0 /   116,244              1.3
+
+**The reflex is not a function of dividing.** Plotinus has the **highest division
+density in the sample** — 36.8 against Aristotle's 30.9 — and one instance in
+214,000 words. Philo divides at 13.3, comparable to Plato, and has two in 575,000.
+
+**The test.** Restricting to authors dividing above 13 per 10⁴:
+
+    Plato + Aristotle                       96 in 1,537,804  =  6.24 /100k
+    Plotinus + Philo + Diogenes              6 in   899,299  =  0.67 /100k
+    RATIO                                                        9.4x
+
+Expected for Plato+Aristotle at the comparison rate: **10.3. Observed: 96.**
+Poisson P(X≥96 | λ=10.3) ≈ 0.
+
+Individually, against Plotinus's rate: Aristotle expected 4.5, observed 81
+(P < 10⁻⁵⁰). Plato expected 2.7, observed 15 (P = 1.8 × 10⁻⁷).
+
+**Why this survives what killed everything else.**
+
+- **Not a distance**, so register cannot mimic it. Plotinus and Philo write the
+  same philosophical prose in the same tradition and do not do it.
+- **Not the method**, since the two highest dividers in the sample sit at opposite
+  ends of the measure.
+- **Not generic to classification.** The Hippocratic corpus — thirteen works,
+  multiple hands, classifying diseases — has **zero in 98,175 tokens.**
+- **A count, not a similarity**, so none of the five broken nulls (§8) applies.
+
+**What it does not show.** A school transmits reflexes, and an arbitrary
+procedural habit is the most transmissible thing there is. This is consistent with
+ordinary teaching and does not establish common authorship.
+
+**The decisive control is missing.** Theophrastus — Aristotle's actual successor —
+survives in the available corpora only as *Characters*, which does not divide.
+Xenocrates and Speusippus are not extant. So whether the reflex is *personal* or
+*Academic* cannot presently be determined, and that is the question that would
+make it diagnostic.
+
+**Status.** The first result in this investigation that distinguishes Plato and
+Aristotle **jointly** from every available control, at a large effect size, by a
+mechanism that is neither register nor distance. Every other measurement either
+separated them or dissolved. This one groups them.
+
+∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
 **0.0258** — inside the M1 same-author band — while the best single heteronym is
 Campos at 0.0498, then Caeiro 0.0903, Reis 0.2205. **Pooled beats best individual
 by 1.93×.** Individually the voices do not look like Pessoa; summed, they do.
@@ -525,9 +658,8 @@ Testament and, on the hypothesis, the Platonic corpus.
 
 ## 15. PROPOSED AND NEVER ATTEMPTED
 
-- **A recognition measure reading λόγος rather than ὕλη.** Every instrument built
-  reads the substrate. This is the one the whole line of work is missing and no
-  design for it exists.
+- ~~**A recognition measure reading λόγος rather than ὕλη.**~~ **PROTOTYPE EXISTS
+  (2026-08-29). See M29.** Three unprompted positives; diagnosticity unresolved.
 - **Directionality.** Does any term run the other way — terminal Aristotelian
   position to technical Platonic use? Under the received chronology it cannot; on
   any reading that questions the chronology, the absence is a datum. The 31-term
@@ -557,15 +689,165 @@ hands. The authenticity signal remains confounded by the criteria that produced
 the authenticity labels, and the corpus boundary remains an inference by an editor
 whose judgments have been overturned (T11).
 
-**With M28, the investigation has no standing statistical anomaly.** Every
-computational lead is closed or explained. What remains is philological: M26,
-the 61% of the Platonic corpus written in the form its own taxonomy expels, and
-the *Republic*/*Symposium* pair the base rate declined to adjudicate.
+**With M28 the investigation had no standing statistical anomaly.** Every
+substrate-reading lead was closed or explained.
+
+**M30 reopened it, on a different axis.** The naming-gap reflex groups Plato and
+Aristotle at 9.4× the rate of other high-division authors, P ≈ 0, and survives the
+controls that killed everything else because it is a count of an arbitrary
+procedural habit rather than a measure of similarity. Plotinus divides harder than
+Aristotle and never does it; the multi-hand Hippocratic corpus does not do it at
+all.
+
+The standing position is therefore:
+
+    substrate stylometry           no anomaly; the pair is ordinary or close
+    Aristotle's heterogeneity      explained — it is the object (M28)
+    whole-text transform           negative (M23)
+    procedural reflex              POSITIVE, 9.4x, P ~ 0 (M30)
+    philological                   M26 and the Republic/Symposium pair
+
+And the reflex's diagnosticity is unresolved for one reason: **a school transmits
+procedures**, and the successor control that would separate personal from Academic
+transmission — Theophrastus dividing — is not extant in the available corpora.
 
 The strongest unrefuted observation in the entire line of work is a philological
 one: **the same formula, asserted and denied, on the exact question at issue,
 with the affirming instance placed where its demonstration is destroyed in
 transmission** (EA-SNUB-01 §16–18). It has not yet met a base rate.
 
+
+---
+
+## 17. M29 — THE PROCEDURAL INSTRUMENT
+
+*Added 2026-08-29. Supersedes §15's "never attempted" entry for the λόγος measure.*
+
+EA-SNUB-01 §6 derived a recognition criterion from the snub passage itself:
+**matter individuates, form recurs, so what persists across substrates is the
+account and not the instance.** §7 and §15 both listed a measure reading λόγος
+rather than ὕλη as untouched and as the gap in the whole line of work.
+
+It is no longer untouched. Three searches built in Rounds 4–7 of EA-SNUB-01 read
+**operations** rather than substrate, and all three returned unprompted positives
+in a session where every substrate-reading instrument returned null or artifact.
+
+**The three hits.**
+
+1. **Terminal aporia → technical uptake.** σιμόν at *Theaetetus* 209c, the failed
+   individuating mark, becomes Aristotle's canonical case of enmattered form.
+   Found by lexical search; the positional claim was refuted by base rate
+   (EA-SNUB-01 §9), the semantic reading survives.
+
+2. **Self-application regress.** *Soph. El.* 182a — if snub is concavity-of-nose
+   and there is a snub nose, there is a concave-nose nose — returns *Parmenides*
+   132a, the Third Man, by argument shape with **zero lexical overlap.** Found
+   without being shown where to look.
+
+3. **Divide, flag, coin.** Run a division far enough and you reach a class the
+   language has no word for. Both corpora stop, say so, and coin a name.
+   Platonic instances occur in exactly the four works that classify — *Sophist*
+   (×3), *Statesman*, *Theaetetus*, *Timaeus* (×3) — and nowhere else in Plato.
+   Aristotle states the policy outright at *NE* 1108a: πειρατέον αὐτοὺς
+   ὀνοματοποιεῖν σαφηνείας ἕνεκα.
+
+**Why it works where the others failed.** Method is what maintains its shape
+across shifting matter. Every substrate instrument reads ὕλη — particles,
+frequencies, blocks, register — and ὕλη is what individuates. The procedural
+searches read the operation, which is what recurs.
+
+**The problem, stated as strongly as it can be put against the instrument.**
+Method is precisely what a school transmits. A student acquires his master's
+procedures more reliably than his vocabulary, his register, or his opinions. So
+procedural continuity is simultaneously the **most detectable** thing across the
+boundary and the **least diagnostic** for authorship: its presence is predicted
+equally well by ordinary teaching.
+
+**The sharpening that would make it diagnostic.** Not whether both use division —
+everyone in the Academy divided — but whether they share **arbitrary** features of
+the method: reflexes not determined by the method's purpose. Nothing requires a
+divider to stop and coin; leaving the class unnamed and proceeding is available
+and costs nothing. Both stop. Both flag. Both coin.
+
+**The test, and its denominator. RUN 2026-08-29 for reflex 3 — see M30.**
+Plato and Aristotle share the naming-gap reflex at **9.4× the rate of other
+high-division authors**, P ≈ 0, with Plotinus dividing harder than Aristotle and
+never doing it, and the multi-hand Hippocratic corpus at zero. That is the first
+positive result the investigation has produced. Reflexes 1 and 2 remain untested
+against a denominator, and the decisive successor control (Theophrastus dividing)
+is not extant in the available corpora.
+
+---
+
+## 18. M30 — THE NAMING-GAP REFLEX
+
+*Added 2026-08-29. The first measurement in this investigation that groups Plato
+and Aristotle rather than separating them. Partly answers M29's diagnosticity
+question.*
+
+**The reflex.** Run a division far enough and you reach a class the language has
+no word for. Nothing about διαίρεσις requires you to stop and say so — leaving the
+class unnamed costs nothing and proceeds. Plato and Aristotle both stop, both
+flag it, and both coin. Aristotle writes the policy down at *NE* 1108a:
+πειρατέον αὐτοὺς ὀνοματοποιεῖν σαφηνείας ἕνεκα — *we must coin names ourselves for
+the sake of clarity.*
+
+**Measured as instances per 100,000 tokens**, counting ἀνώνυμ-, οὐκ ἔχει ὄνομα,
+οὐ κεῖται ὄνομα, οὐκ ὠνόμασται and cognates:
+
+    corpus                    gap/100k    raw / tokens        division/10k
+    ARISTOTLE                     8.43    81 /   960,910             30.9
+    Diogenes Laertius             2.74     3 /   109,679             16.1
+    PLATO                         2.60    15 /   576,894             15.4
+    Herodotus                     2.16     4 /   184,935              3.7
+    Aristophanes                  1.96     2 /   102,058              4.0
+    Josephus                      0.64     3 /   467,569              5.4
+    Plotinus                      0.47     1 /   214,028             36.8
+    Philo                         0.35     2 /   575,592             13.3
+    Xenophon                      0.32     1 /   310,278              1.7
+    Thucydides                    0.00     0 /   150,157              1.2
+    Hippocratic (multi-hand)      0.00     0 /    98,175              2.4
+    Greek NT                      0.00     0 /   116,244              1.3
+
+**The reflex is not a function of dividing.** Plotinus has the **highest division
+density in the sample** — 36.8 against Aristotle's 30.9 — and one instance in
+214,000 words. Philo divides at 13.3, comparable to Plato, and has two in 575,000.
+
+**The test.** Restricting to authors dividing above 13 per 10⁴:
+
+    Plato + Aristotle                       96 in 1,537,804  =  6.24 /100k
+    Plotinus + Philo + Diogenes              6 in   899,299  =  0.67 /100k
+    RATIO                                                        9.4x
+
+Expected for Plato+Aristotle at the comparison rate: **10.3. Observed: 96.**
+Poisson P(X≥96 | λ=10.3) ≈ 0.
+
+Individually, against Plotinus's rate: Aristotle expected 4.5, observed 81
+(P < 10⁻⁵⁰). Plato expected 2.7, observed 15 (P = 1.8 × 10⁻⁷).
+
+**Why this survives what killed everything else.**
+
+- **Not a distance**, so register cannot mimic it. Plotinus and Philo write the
+  same philosophical prose in the same tradition and do not do it.
+- **Not the method**, since the two highest dividers in the sample sit at opposite
+  ends of the measure.
+- **Not generic to classification.** The Hippocratic corpus — thirteen works,
+  multiple hands, classifying diseases — has **zero in 98,175 tokens.**
+- **A count, not a similarity**, so none of the five broken nulls (§8) applies.
+
+**What it does not show.** A school transmits reflexes, and an arbitrary
+procedural habit is the most transmissible thing there is. This is consistent with
+ordinary teaching and does not establish common authorship.
+
+**The decisive control is missing.** Theophrastus — Aristotle's actual successor —
+survives in the available corpora only as *Characters*, which does not divide.
+Xenocrates and Speusippus are not extant. So whether the reflex is *personal* or
+*Academic* cannot presently be determined, and that is the question that would
+make it diagnostic.
+
+**Status.** The first result in this investigation that distinguishes Plato and
+Aristotle **jointly** from every available control, at a large effect size, by a
+mechanism that is neither register nor distance. Every other measurement either
+separated them or dissolved. This one groups them.
 
 ∮ = 1
