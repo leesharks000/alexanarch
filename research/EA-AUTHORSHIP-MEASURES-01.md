@@ -157,6 +157,22 @@ artifact** — the three corpora are 252k / 103k / 29k words and their displacem
 magnitudes are 11 / 11 / 11. Substituting Timaeus for the Eleatic collapses it to
 0.719 / 41°.
 
+**M26 — Plato writes in the form he banishes.** *Republic* 392d–394c defines the
+wholly mimetic mode as speech with no reporting poet, and names it with tragedy
+and comedy. Reporting-formula density per 10⁴ tokens: **20 of 31 works, 61% of the
+corpus by volume, carry no reporting voice** (Crito 0.0, Statesman 1.1, Sophist
+1.7, Laws 2.4, Gorgias 6.1). The *Republic* itself is **narrated at 144.1** —
+Socrates reports the whole of it. The book performing the expulsion is written in
+the mode that escapes it. Textual, not interpretive.
+
+**M27 — Aristotle on the same axis.** Reporting **0.1** (lower than Plato's
+dramatic dialogues), self-speaking **29.0** against their 25.3. Caveat: a treatise
+has no reporting formulae because there is no conversation to report, and speaking
+in his own person places Aristotle in the *un*-banished second mode. What survives
+the caveat is the near-equality of self-speaking rates across the two most
+formally opposed prose bodies in Greek — recorded as a measurement without an
+account.
+
 **M16 — Plato does not construct heteronymically.** Symposium speeches by
 Stephanus range, against the real Aristophanes: Plato's Aristophanes speech is
 **0.0854, rank 5 of 7** — Pausanias (0.0428), Socrates/Diotima (0.0556), Phaedrus
@@ -280,10 +296,14 @@ reusable and is the most expensive artifact produced.
 
 ## 10. OPEN, IN PRIORITY ORDER
 
-1. **Base rate for the *Republic* 395a / *Symposium* 223d contradiction**
-   (EA-SNUB-01 §18). Are there other assertion/denial pairs of one formula, and
-   are their placements as extreme? Two of the three strongest observations in
-   this work died to a base rate; this one has not been given the chance.
+1. ~~**Base rate for the *Republic* 395a / *Symposium* 223d contradiction**~~ —
+   **RUN 2026-08-29, VERDICT: NOT ADJUDICATED** (EA-SNUB-01 §19-20). Loose
+   criterion 653/16,449 = 4.0%, target unremarkable; strict criterion
+   61/16,449 = 0.37%, target excluded on an adjacency technicality. Propositional
+   contradiction is not separable by proximity-negation. The observation stays
+   philological and cannot be promoted by statistics.
+   **New M26 (see §4):** by *Republic* III's own criterion, 61% of the Platonic
+   corpus is written in the banished mode, and the *Republic* is not.
 2. **Authenticity within domain, inside Aristotle.** Hold subject constant and
    test spurious-vs-genuine. Breaks the M11 confound. Counts are thin (6 spurious
    of 30) so power may not exist.

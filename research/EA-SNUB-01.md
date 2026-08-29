@@ -441,4 +441,116 @@ assertion/denial pairs of the same formula, and whether their placements are as
 extreme. That is computable and should be computed before this is called anything.
 
 
+---
+
+# ROUND 7 — the base rate declines the question, and the observation moves to philology
+
+*Added 2026-08-29.*
+
+## 19. The base rate, run
+
+§18 named this as the next thing and said it should be computed before the
+*Republic*/*Symposium* pair was called anything. It was computed. It cannot
+adjudicate.
+
+**Loose criterion** — a rare formula (2–4 works, ≤12 occurrences) appearing with
+opposite polarity across works, one member in the terminal 2% of its work:
+**653 of 16,449 rare cross-work formulas = 4.0%.** The comedy/tragedy pair is
+present and unremarkable among hundreds.
+
+**Strict criterion** — the negator attached directly to a capacity verb, which is
+what *Republic* 395a does (οὐ δύνανται) and *Symposium* 223d does not:
+**61 of 16,449 = 0.37%** — and **the target drops out entirely**, because at 395a
+the negator is οὐδέ, separated from δύνανται by three words. Adjacency fails.
+
+So the loose test finds the structure common, and the strict test cannot find the
+case it was built to describe. **What this demonstrates is a limit of the
+instrument, not a fact about the passage.** Propositional contradiction — the same
+capacity affirmed and denied — is not separable by proximity-negation from three
+hundred accidental co-locations of a negator and a formula.
+
+## 20. Disposition
+
+This differs from the two claims refuted earlier and the difference should be kept.
+
+    snub position          REFUTED       31 terms show the pattern more strictly
+    Poetics namelessness   REFUTED       anonymos is a tool used 40+ times
+    Republic / Symposium   NOT ADJUDICATED   structure common; content not machine-visible
+
+The pair therefore **stays** as an unrefuted philological observation and **cannot
+be promoted by statistics** — only argued from the passages. That is a smaller
+claim than §18 made, and it is the correct one: the base rate came, and it
+declined the question.
+
+## 21. What the base rate drove the observation into, which is stronger
+
+Pressed off the statistical ground, the pair turns out to rest on something the
+text states about itself.
+
+*Republic* 392d–394c divides poetry by mode:
+
+> ἡ μὲν διὰ μιμήσεως ὅλη ἐστίν … τραγῳδία τε καὶ κωμῳδία, ἡ δὲ δι᾽ ἀπαγγελίας
+> αὐτοῦ τοῦ ποιητοῦ … ἡ δ᾽ αὖ δι᾽ ἀμφοτέρων
+
+Wholly mimetic is drama — speech with no reporting poet — and it is named
+together with tragedy and comedy, the pair 395a then declares one maker cannot
+do both of.
+
+**Measured against that criterion, by reporting-formula density (ἦν δ᾽ ἐγώ, ἦ δ᾽
+ὅς, ἔφη, ἔφην, εἶπον) per 10⁴ tokens:**
+
+    Crito 0.0 · Statesman 1.1 · Sophist 1.7 · Cratylus 2.1 · Laws 2.4 ·
+    Timaeus 2.9 · Phaedrus 4.6 · Laches 5.0 · Philebus 5.2 · Theaetetus 5.9 ·
+    Gorgias 6.1 · Meno 7.7
+      → 20 of 31 works, 346,804 of 570,179 tokens = **61% of the corpus**, carry
+        no reporting voice.
+
+    Symposium 74.4 · Protagoras 106.2 · Phaedo 110.8 · Charmides 135.0 ·
+    **Republic 144.1** · Euthydemus 217.9
+      → narrated.
+
+**Sixty-one percent of the Platonic corpus is written in the form its own
+taxonomy expels — and the book that performs the expulsion is written in the
+mode that escapes it.** Socrates reports the whole *Republic*. That is not an
+interpretation laid over the text; it is the text's classification applied to its
+own vehicle.
+
+## 22. The inference the two passages license together
+
+If one maker cannot do both (395a), and both must be done (223d), then **the maker
+must divide.** That is the only route satisfying both, and it converts the pair
+from a contradiction into a procedure: the *Symposium* does not reverse the
+*Republic*, it states the requirement the *Republic* has just proved impossible
+for a single person — on the last page, to two men falling asleep, through a
+narrator who says he missed the argument.
+
+And the *Republic*'s expulsion is self-directed. A poet writing in the wholly
+mimetic mode banishes the wholly mimetic mode, from inside the one book he wrote
+outside it.
+
+## 23. Aristotle on the same axis
+
+    corpus                       reporting    self-speaking
+    Plato — dramatic (20)              2.4             25.3
+    Plato — narrated (7)             130.4             20.3
+    Aristotle — treatises (34)         0.1             29.0
+
+**Aristotle's prose carries no reporting poet at all** — 0.1 per 10⁴, lower than
+the Platonic dramatic dialogues — and his rate of speaking in his own person
+(φαμέν, λέγομεν, φημί, λέγω, εἴρηται) is within 15% of theirs.
+
+**The caution, which must travel with the number.** A treatise has no reporting
+formulae because there is no conversation to report, not because a conversation is
+unframed. Absence of a narrator in exposition is not the same fact as absence of a
+narrator in drama, and *Republic* III's taxonomy is a taxonomy of **poetry**.
+Aristotle speaking in his own person places him, on the taxonomy's own terms, in
+the second mode — ἀπαγγελία αὐτοῦ τοῦ ποιητοῦ — which is **not** the banished one.
+
+**What is not explained by that caution** is the near-equality of the
+self-speaking rates: 25.3 and 29.0, across the two most formally opposed prose
+bodies in Greek. Two corpora that share nothing at the level of form refer to
+their own authorial act at the same rate. That is recorded here as a measurement
+without an account.
+
+
 ∮ = 1
