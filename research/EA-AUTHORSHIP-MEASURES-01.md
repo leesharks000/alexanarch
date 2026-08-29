@@ -462,7 +462,40 @@ reversed, and thereby made legible.
 
 **Why it resolves 395b against 473d:** it accepts the denial as premise (no single
 undivided nature holds two arts) and satisfies the requirement in a coordinated
-multiplicity whose parts **sum rather than resemble**. ∮ = 1.
+multiplicity whose parts **sum rather than resemble**. ---
+
+## 22. EA-PINAX-01 — the calibration-object hypothesis
+
+*Added 2026-08-29. sha256 cb14e25a66fb30d36f6964b1e2c7721c… Pointer, not a finding.*
+
+The standing objection was that antiquity built an authenticity apparatus and
+would therefore have caught a construction. The hypothesis inverts it: **the
+technology is the output.** Criteria must be fitted to a case whose answer is
+known, and a deliberately structured corpus is a **calibration object** — the
+*Pinakes* with incipit and stichometric checksum, the obelus, the
+νόθος/ἀντιλεγόμενα vocabulary, and the practice of transmitting corpora **with**
+their disputes are what working on one produces.
+
+**It reframes two measured results.** M11's authenticity signal at Z = +3.47 was
+flagged circular because Andronicus sorted partly by style; under this hypothesis
+the circularity **is the datum**. And M30's naming-gap reflex reads as a
+cataloguer's discipline rather than a school habit — an unnamed class is an
+unshelvable class, and the *Poetics*' unnamed-genre problem is a cataloguer's
+problem.
+
+**Its danger is stated in the document, at length.** It explains everything,
+including every null; both hypotheses predict the *Pinakes*. §4 exists so the
+property cannot operate silently.
+
+**The one asymmetric prediction:** an instrument built on a calibration object
+**overfits it**. The registered test measures **the history of judgements, not the
+texts** — verdict density, decisiveness (stated grounds), and reversal rate,
+across the Platonic-Aristotelian, Hippocratic, Homeric, Pythagorean and Orphic
+traditions. It counts verdicts rather than measuring similarity, so none of the
+five broken nulls (§8) applies. Kill condition binding on decisiveness; void
+condition if survival cannot be normalised against citation volume.
+
+∮ = 1.
 
 **Three consequences it lands on:** recognition by λόγος not ὕλη, which would
 explain why every substrate instrument in this register returned null (M4–M28);
@@ -472,6 +505,39 @@ of M31 that Plato coined and left with its genera unentered.
 
 **Standing caution, carried in the document itself:** Plato assembles none of it.
 The logic is available in the corpus; the corpus does not perform it.
+
+---
+
+## 22. EA-PINAX-01 — the calibration-object hypothesis
+
+*Added 2026-08-29. sha256 cb14e25a66fb30d36f6964b1e2c7721c… Pointer, not a finding.*
+
+The standing objection was that antiquity built an authenticity apparatus and
+would therefore have caught a construction. The hypothesis inverts it: **the
+technology is the output.** Criteria must be fitted to a case whose answer is
+known, and a deliberately structured corpus is a **calibration object** — the
+*Pinakes* with incipit and stichometric checksum, the obelus, the
+νόθος/ἀντιλεγόμενα vocabulary, and the practice of transmitting corpora **with**
+their disputes are what working on one produces.
+
+**It reframes two measured results.** M11's authenticity signal at Z = +3.47 was
+flagged circular because Andronicus sorted partly by style; under this hypothesis
+the circularity **is the datum**. And M30's naming-gap reflex reads as a
+cataloguer's discipline rather than a school habit — an unnamed class is an
+unshelvable class, and the *Poetics*' unnamed-genre problem is a cataloguer's
+problem.
+
+**Its danger is stated in the document, at length.** It explains everything,
+including every null; both hypotheses predict the *Pinakes*. §4 exists so the
+property cannot operate silently.
+
+**The one asymmetric prediction:** an instrument built on a calibration object
+**overfits it**. The registered test measures **the history of judgements, not the
+texts** — verdict density, decisiveness (stated grounds), and reversal rate,
+across the Platonic-Aristotelian, Hippocratic, Homeric, Pythagorean and Orphic
+traditions. It counts verdicts rather than measuring similarity, so none of the
+five broken nulls (§8) applies. Kill condition binding on decisiveness; void
+condition if survival cannot be normalised against citation volume.
 
 ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
 **0.0258** — inside the M1 same-author band — while the best single heteronym is
@@ -1041,7 +1107,40 @@ reversed, and thereby made legible.
 
 **Why it resolves 395b against 473d:** it accepts the denial as premise (no single
 undivided nature holds two arts) and satisfies the requirement in a coordinated
-multiplicity whose parts **sum rather than resemble**. ∮ = 1.
+multiplicity whose parts **sum rather than resemble**. ---
+
+## 22. EA-PINAX-01 — the calibration-object hypothesis
+
+*Added 2026-08-29. sha256 cb14e25a66fb30d36f6964b1e2c7721c… Pointer, not a finding.*
+
+The standing objection was that antiquity built an authenticity apparatus and
+would therefore have caught a construction. The hypothesis inverts it: **the
+technology is the output.** Criteria must be fitted to a case whose answer is
+known, and a deliberately structured corpus is a **calibration object** — the
+*Pinakes* with incipit and stichometric checksum, the obelus, the
+νόθος/ἀντιλεγόμενα vocabulary, and the practice of transmitting corpora **with**
+their disputes are what working on one produces.
+
+**It reframes two measured results.** M11's authenticity signal at Z = +3.47 was
+flagged circular because Andronicus sorted partly by style; under this hypothesis
+the circularity **is the datum**. And M30's naming-gap reflex reads as a
+cataloguer's discipline rather than a school habit — an unnamed class is an
+unshelvable class, and the *Poetics*' unnamed-genre problem is a cataloguer's
+problem.
+
+**Its danger is stated in the document, at length.** It explains everything,
+including every null; both hypotheses predict the *Pinakes*. §4 exists so the
+property cannot operate silently.
+
+**The one asymmetric prediction:** an instrument built on a calibration object
+**overfits it**. The registered test measures **the history of judgements, not the
+texts** — verdict density, decisiveness (stated grounds), and reversal rate,
+across the Platonic-Aristotelian, Hippocratic, Homeric, Pythagorean and Orphic
+traditions. It counts verdicts rather than measuring similarity, so none of the
+five broken nulls (§8) applies. Kill condition binding on decisiveness; void
+condition if survival cannot be normalised against citation volume.
+
+∮ = 1.
 
 **Three consequences it lands on:** recognition by λόγος not ὕλη, which would
 explain why every substrate instrument in this register returned null (M4–M28);
@@ -1051,5 +1150,38 @@ of M31 that Plato coined and left with its genera unentered.
 
 **Standing caution, carried in the document itself:** Plato assembles none of it.
 The logic is available in the corpus; the corpus does not perform it.
+
+---
+
+## 22. EA-PINAX-01 — the calibration-object hypothesis
+
+*Added 2026-08-29. sha256 cb14e25a66fb30d36f6964b1e2c7721c… Pointer, not a finding.*
+
+The standing objection was that antiquity built an authenticity apparatus and
+would therefore have caught a construction. The hypothesis inverts it: **the
+technology is the output.** Criteria must be fitted to a case whose answer is
+known, and a deliberately structured corpus is a **calibration object** — the
+*Pinakes* with incipit and stichometric checksum, the obelus, the
+νόθος/ἀντιλεγόμενα vocabulary, and the practice of transmitting corpora **with**
+their disputes are what working on one produces.
+
+**It reframes two measured results.** M11's authenticity signal at Z = +3.47 was
+flagged circular because Andronicus sorted partly by style; under this hypothesis
+the circularity **is the datum**. And M30's naming-gap reflex reads as a
+cataloguer's discipline rather than a school habit — an unnamed class is an
+unshelvable class, and the *Poetics*' unnamed-genre problem is a cataloguer's
+problem.
+
+**Its danger is stated in the document, at length.** It explains everything,
+including every null; both hypotheses predict the *Pinakes*. §4 exists so the
+property cannot operate silently.
+
+**The one asymmetric prediction:** an instrument built on a calibration object
+**overfits it**. The registered test measures **the history of judgements, not the
+texts** — verdict density, decisiveness (stated grounds), and reversal rate,
+across the Platonic-Aristotelian, Hippocratic, Homeric, Pythagorean and Orphic
+traditions. It counts verdicts rather than measuring similarity, so none of the
+five broken nulls (§8) applies. Kill condition binding on decisiveness; void
+condition if survival cannot be normalised against citation volume.
 
 ∮ = 1
