@@ -171,4 +171,51 @@ So even a positive leaves the same gap this investigation has met at every turn 
 and the honest form of the hypothesis is that it makes the corpus's
 self-instrumentation *intelligible*, not that it makes it *evidence*.
 
+---
+
+## 7. ⚠ CORRECTED AND SUPERSEDED — 2026-08-29, same day
+
+**Three corrections, recorded rather than rewritten.**
+
+**(a) The registered prediction was backwards.** §5 predicted that criteria
+*derived from* this corpus would **fit it anomalously well** — a calibration
+object, overfitted. The corpus would more plausibly be instrumented to **escape**
+the best measures, not to train them. An adversarial object predicts the opposite
+signature: criteria that **fail to converge** here — verdicts reversing, disputes
+persisting, the ἀντιλεγόμενα category permanently open — which is what the record
+shows.
+
+**(b) The test was registered without a feasibility check, and fails it.** Of the
+five comparison traditions specified in §5, **four are unreachable**: Homeric
+scholia absent from the repository, Suda absent, Photius absent, Galen present
+only as *De naturalibus facultatibus*. The one available source, Diogenes
+Laertius, carries **48 explicit authenticity markers across 110,163 tokens** —
+Plato and Aristotle together 9 — which is too sparse to distinguish anything.
+Disposition: **DEFERRED on unavailable sources**, not void; the design is coherent
+under the corrected prediction and the blocker is corpus-building.
+
+**(c) A substitute design also fails feasibility, and its failure is more
+important.** The proposal was to detect an adversarial object by **method
+disagreement** — independent instruments returning contradictory verdicts here
+while agreeing on controls. Checked before writing: agreement on known-status
+pairs is **1 of 3**, and one instrument classifies **Plato|Xenophon as SAME** at
+0.0330 against a known-different truth.
+
+  → **The precondition this exposes is upstream of everything.** The instrument
+    set is **unvalidated**. No measure built in this investigation was scored on
+    known-status pairs before being applied to the question. **You cannot detect an
+    object that defeats measurement until your measures are characterised on
+    objects that do not.** A validation suite — every instrument against a panel of
+    known pairs, with per-method accuracy and pairwise agreement recorded — is a
+    prerequisite for any adversarial test.
+
+**(d) Superseded in framing by EA-FLOOD-01** (sha256 574bdc08c42079fbad701db0141d8ed3…), which
+relocates the adversary from the critic to **the flood**. Both framings in this
+document put the examiner at the centre; the more economical account is a corpus
+built to survive an oversupply of writing by giving future copyists reasons to
+copy it. That framing requires no authorship claim and is testable against
+documented losses.
+
+**No new registration until the validation suite exists.**
+
 ∮ = 1
