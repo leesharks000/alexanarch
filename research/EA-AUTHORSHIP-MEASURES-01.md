@@ -372,6 +372,30 @@ Aristotle **jointly** from every available control, at a large effect size, by a
 mechanism that is neither register nor distance. Every other measurement either
 separated them or dissolved. This one groups them.
 
+---
+
+## 19. M31 — αὐτεπιτακτική: the coined self-commanding position
+
+*Added 2026-08-29. See EA-SNUB-01 §24–27 for the passage and its cautions.*
+
+*Statesman* 260d–e, position 0.064 — one of the four Platonic works carrying the
+M30 naming-gap reflex. The Eleatic Stranger enumerates the directive arts that
+relay **ἀλλότρια νοήματα**, another's thoughts — ἑρμηνευτική, κελευστική, μαντική,
+κηρυκική — finds that *σχεδὸν ἀνώνυμον ὂν τυγχάνει τὸ τῶν **αὐτεπιτακτῶν** γένος*,
+and coins **αὐτεπιτακτική** for the position that issues from itself. The
+remainder is dismissed with *ὄνομα ἕτερον αὐτοῖς παραχωρήσαντες θέσθαι τινά* — let
+them set themselves some other name.
+
+**Recorded as a fact about the corpus, not an inference about its authorship.**
+The distinction between speaking from oneself and relaying another's mind was
+available, named, and coined by Plato in the act of finding Greek short of a word
+for it.
+
+**Standing caution.** Plato assigns the coined art to **kings**, not to
+philosophers or writers. The context is political rule and the text does not
+extend it. The ἑρμηνευ- link to *Περὶ ἑρμηνείας* is a homonym — Aristotle's sense
+is *expression*, not *relaying another's mind* — and nothing is built on it.
+
 ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
 **0.0258** — inside the M1 same-author band — while the best single heteronym is
 Campos at 0.0498, then Caeiro 0.0903, Reis 0.2205. **Pooled beats best individual
@@ -849,5 +873,29 @@ make it diagnostic.
 Aristotle **jointly** from every available control, at a large effect size, by a
 mechanism that is neither register nor distance. Every other measurement either
 separated them or dissolved. This one groups them.
+
+---
+
+## 19. M31 — αὐτεπιτακτική: the coined self-commanding position
+
+*Added 2026-08-29. See EA-SNUB-01 §24–27 for the passage and its cautions.*
+
+*Statesman* 260d–e, position 0.064 — one of the four Platonic works carrying the
+M30 naming-gap reflex. The Eleatic Stranger enumerates the directive arts that
+relay **ἀλλότρια νοήματα**, another's thoughts — ἑρμηνευτική, κελευστική, μαντική,
+κηρυκική — finds that *σχεδὸν ἀνώνυμον ὂν τυγχάνει τὸ τῶν **αὐτεπιτακτῶν** γένος*,
+and coins **αὐτεπιτακτική** for the position that issues from itself. The
+remainder is dismissed with *ὄνομα ἕτερον αὐτοῖς παραχωρήσαντες θέσθαι τινά* — let
+them set themselves some other name.
+
+**Recorded as a fact about the corpus, not an inference about its authorship.**
+The distinction between speaking from oneself and relaying another's mind was
+available, named, and coined by Plato in the act of finding Greek short of a word
+for it.
+
+**Standing caution.** Plato assigns the coined art to **kings**, not to
+philosophers or writers. The context is political rule and the text does not
+extend it. The ἑρμηνευ- link to *Περὶ ἑρμηνείας* is a homonym — Aristotle's sense
+is *expression*, not *relaying another's mind* — and nothing is built on it.
 
 ∮ = 1

@@ -553,4 +553,81 @@ their own authorial act at the same rate. That is recorded here as a measurement
 without an account.
 
 
+---
+
+# ROUND 8 — the coined position: αὐτεπιτακτική
+
+*Added 2026-08-29. Follows Round 7 and M30.*
+
+## 24. The question
+
+M30 established that Plato and Aristotle share the naming-gap reflex at 9.4× the
+rate of other high-division authors — they stop at a class the language has no
+word for, flag it, and coin. The question this round answers is narrower: **does
+Plato anywhere stop at an unnamed position and name the thing that speaks from
+itself, as against the thing that speaks another's mind?**
+
+He does, once, at *Statesman* 260d–e (position 0.064).
+
+## 25. The passage
+
+The Eleatic Stranger is dividing the directive arts. He first enumerates those
+that command **without owning the command**:
+
+> τὸ κηρυκικὸν φῦλον ἐπιταχθέντ᾽ **ἀλλότρια νοήματα** παραδεχόμενον αὐτὸ δεύτερον
+> ἐπιτάττει πάλιν ἑτέροις
+> — the herald's tribe, receiving **another's thoughts** when commanded, in second
+> place commands others again.
+
+And names the class: *ἑρμηνευτική, κελευστική, μαντική, κηρυκική* — interpretation,
+the boatswain's call, divination, heraldry. Every one of them issues a command
+whose mind is not its own.
+
+Then the gap, and the coinage:
+
+> ἐπειδὴ καὶ σχεδὸν **ἀνώνυμον** ὂν τυγχάνει τὸ τῶν **αὐτεπιτακτῶν** γένος …
+> τὸ μὲν τῶν βασιλέων γένος εἰς τὴν **αὐτεπιτακτικὴν** θέντες
+> — since the genus of the **self-commanding** happens to be nearly nameless …
+> placing the genus of kings into the **self-commanding art**.
+
+And then the disposal of the remainder:
+
+> τοῦ δὲ ἄλλου παντὸς ἀμελήσαντες, **ὄνομα ἕτερον αὐτοῖς παραχωρήσαντες θέσθαι τινά**
+> — neglecting all the rest, **conceding to them to set themselves some other name.**
+
+## 26. What is and is not established
+
+**Established.** Plato performs the full reflex — halt at a gap, flag it, coin —
+on a distinction whose criterion is **whose mind is speaking when a command is
+issued**. The coined term names the position that issues from itself. The
+discarded class is defined by relaying ἀλλότρια νοήματα, another's thoughts, and
+is expressly granted the right to name itself otherwise. The instance is at 0.064
+of the *Statesman*, one of the four Platonic works that carry the naming-gap
+reflex at all.
+
+**Not established, and the transposition must not be made silently.** Plato
+assigns αὐτεπιτακτική to **kings** — τὸ τῶν βασιλέων γένος. The context is
+political rule, not authorship, and the text does not extend it. Reading the pair
+as an orthonym/heteronym doctrine is an application the passage does not perform.
+
+**A homonym, recorded so it is not mistaken for evidence.** ἑρμηνευτική appears in
+Plato's discarded list in the sense *relaying another's mind*. Two Aristotelian
+works carry ἑρμηνευ- at position 0.0, both in titles rather than usages: *Περὶ
+ἑρμηνείας*, where the sense is *expression* — how a statement signifies, not
+interpretation of another — and *De plantis*, whose position-zero instance is the
+opening of a Byzantine **translator's** prologue and which is a retroversion
+excluded from measurement (Part II, T-note). That *De interpretatione* is also
+the work **Andronicus judged spurious** is a coincidence of some interest and
+carries no weight. Nothing here is built on it.
+
+## 27. Why it is recorded
+
+Because the reflex M30 measured is procedural, and this is the one instance where
+the procedure is applied to the distinction the whole investigation concerns. It
+does not argue the configurational reading. It establishes that the distinction
+between speaking from oneself and speaking another's mind was **available, named,
+and coined by Plato in the act of finding Greek short of a word for it** — which
+is a fact about the corpus rather than an inference about its authorship.
+
+
 ∮ = 1
