@@ -1650,4 +1650,125 @@ vocabulary, which is the first instrument in this investigation to read λόγο
 rather than ὕλη and return a positive on both corpora at once.
 
 
+---
+
+# ROUND 13 — EA-COMPLETE-01: the verdict, reversed by the operator's own error
+
+*Added 2026-08-29. Registered c185adb40e7b33df… and frozen before the remaining
+five slots were examined. The first scoring was wrong; both the wrong verdict and
+the correction are recorded, because the error is the more instructive result.*
+
+## 48. What the test was for
+
+Every positive in this investigation is consistent with school transmission —
+M30's reflex, EA-YIELD-02's slot convergence, M34's exclusion. The registration
+asked what would **not** be, and answered: not **reported** correction but
+**completion of an abandoned execution.**
+
+A reported correction is a statement, and statements are what schools transmit —
+including *the master erred here*. Measured directly: inside the Organon, the
+works **about** method, Plato appears four times, all in the *Topica*, and **all
+four as examples of definitional error** (genus-in-species; non-established names;
+soul as self-moving number; "mortal" attached in animal definitions). That is
+evidence **for** the school hypothesis and is admitted as such.
+
+An abandoned execution is different. It is not a statement but **a hole with a
+shape**. Completing it requires reading a failure as *unfinished* rather than
+*refuted* — and Plato marks these refuted: **ὃ ἔφαμεν ἀδύνατον**. Maas's *errores
+coniunctivi* one level up: shared correct method proves nothing; what discriminates
+is a structure that could not have been transmitted as doctrine, because the
+doctrine says it failed.
+
+## 49. Results at the six slots — predictions 1 and 2 hold, 5 of 6
+
+    T1  Phaedrus 275a    writing is φάρμακον οὐ μνήμης ἀλλ' ὑπομνήσεως;
+                         yields δόξαν οὐκ ἀλήθειαν
+        De int. 16a      γράμματα differ, φωναί differ, but
+                         ταὐτὰ πᾶσι παθήματα τῆς ψυχῆς
+
+    T2  Theaet. 196c     the wax block collapses: εἰς τοὺς πρώτους πάλιν ἀνήκει
+                         λόγους … ὃ ἔφαμεν ἀδύνατον
+        De an. 424a      δεῖ λαβεῖν ὅτι ἡ αἴσθησίς ἐστι τὸ δεκτικὸν τῶν αἰσθητῶν
+                         εἰδῶν ἄνευ τῆς ὕλης
+
+    T4  Parm. 135a       the forms ἄγνωστα to human nature; requires a man
+                         πάνυ εὐφυοῦς
+        Metaph. B        διαπορήσαντες — aporia converted from terminus to method
+
+    T5  Meno 98b         ἀνάμνησις, then ὡς οὐκ εἰδὼς λέγω, ἀλλὰ εἰκάζων
+        De mem. 450a     ἐνσημαίνεται οἷον τύπον … καθάπερ οἱ σφραγιζόμενοι τοῖς
+                         δακτυλίοις; and why it fails — running water, too hard a
+                         surface, the young flowing by growth, the old by decay
+
+## 50. THE ERROR — recorded because it is the finding
+
+I first scored **prediction 3 as FAILED**, reporting the completing mechanisms as
+heterogeneous: "form separated from matter" at T2, "a physiology of the receiving
+surface" at T5, "reclassifying aporia" at T4, "invariance of affections" at T1.
+Four completions, four mechanisms, kill condition fires, configuration reading
+defeated.
+
+**That description was of the four *implementations*, not the four *operations*.**
+Restated at the level of operation:
+
+    T2   form separated FROM matter
+    T5   matter SUPPLIED to receive form
+    T1   the invariant that holds ACROSS substrates
+    T4   aporia made passable rather than terminal
+
+**T2 and T5 are one doctrine executed in opposite directions.** *De anima* states
+what crosses — the σημεῖον without the iron or the gold. *De memoria* states what
+must be true of the receiver for it to cross. Together: an account of transmission
+with both halves.
+
+**And they use the same figure, in the same three works:**
+
+    De anima          δακτύλιος 1, κηρός 4
+    De memoria        δακτύλιος 1, σφραγ- 2
+    THEAETETUS        δακτύλιος 2, σφραγ- 1, ἐκμαγεῖον 5   ← where it is abandoned
+
+One figure, one abandonment, two completions.
+
+**T1 is the same mechanism as an invariance theorem** — form constant across
+variable matter, applied to script and speech. **T4 is the weakest member and is
+marked so:** persistence-across-a-break is the shape without the form/matter
+machinery.
+
+**Verdict corrected: prediction 3 HOLDS on three of four**, with a shared figure
+binding the two strongest. The completing mechanism is one thing — **what persists
+when the bearer changes** — abstracted at T2, conditioned at T5, proved invariant
+at T1.
+
+## 51. The methodological result, which outranks the philological one
+
+**I have now twice described matter where I was asked to describe form.** Round 11
+substituted lexical density for explanatory yield. Round 13 substituted
+implementation for operation — **inside the test built to read operations.**
+
+The instrument is not the problem. The operator defaults to ὕλη. That default is
+the same one that made every substrate measure in this register return null, and
+it is worth more to a later reader than the slot table: **when scoring a
+λόγος-level test, describe what the passage DOES, never what it is made of.**
+
+## 52. Successorship holds on both readings
+
+Aristotle is a successor under either hypothesis, and the completion result does
+not distinguish them — it only shows that the completions are one operation rather
+than several.
+
+**Provenance, as the heteronymic reading takes it:** Socrates died, and Plato
+killed him — the founder who wrote nothing is decommissioned into a corpus that
+speaks for him, with the author writing himself absent at the death (*Phaedo* 59b,
+**Πλάτων δὲ οἶμαι ἠσθένει**). Plato died for Aristotle to be born: the abandoned
+executions are left as holes with shapes, and the successor position supplies what
+crosses. On this reading succession is the **mechanism of the corpus**, not an
+accident of biography.
+
+**What the texts license and what they do not.** The completion structure is
+measured: one figure, one abandonment, two completions, three of four slots on one
+operation. The provenance reading is not measured and is marked as reading. The
+notebook's standing rule applies unchanged — **the corpus supplies the structure;
+it does not perform the application.**
+
+
 ∮ = 1
