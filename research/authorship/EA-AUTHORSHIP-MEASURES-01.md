@@ -648,12 +648,26 @@ The standing position is therefore:
     substrate stylometry           no anomaly; the pair is ordinary or close
     Aristotle's heterogeneity      explained — it is the object (M28)
     whole-text transform           negative (M23)
-    procedural reflex              POSITIVE, 9.4x, P ~ 0 (M30)
-    philological                   M26 and the Republic/Symposium pair
+    MECHANISM                      NEGATIVE — Plato's constructed Aristophanes
+                                   ranks 5 of 7 against the real one (M16)
+    procedural reflex              POSITIVE — 10.5x at work level, p = 0.0007,
+                                   diagnosticity unresolved (M30)
+    lexical exclusion              POSITIVE — Socrates 0/144 against Callias
+                                   5/35 in snub contexts, p = 0.00022 (M34)
+    philological                   M26, M31, M32, and the Republic/Symposium pair
 
 And the reflex's diagnosticity is unresolved for one reason: **a school transmits
 procedures**, and the successor control that would separate personal from Academic
 transmission — Theophrastus dividing — is not extant in the available corpora.
+
+**M16 belongs in this table and was previously buried.** Plato's constructed
+Aristophanes ranks **5 of 7** Symposium speeches for resemblance to the real
+Aristophanes, and sits at **0.0380** from the Plato corpus — *more* Platonic than
+its neighbours. It is the only ancient case with an independently attested target,
+and it is the direct test of the **mechanism** the unity hypothesis requires:
+sustained voice separation across a large corpus. It reads negative. Continuity
+(M30, M34) and capacity-for-separation (M16) are different claims, and the
+investigation currently has positives on the first and a negative on the second.
 
 The strongest unrefuted observation in the entire line of work is a philological
 one: **the same formula, asserted and denied, on the exact question at issue,
@@ -943,6 +957,69 @@ across the Platonic-Aristotelian, Hippocratic, Homeric, Pythagorean and Orphic
 traditions. It counts verdicts rather than measuring similarity, so none of the
 five broken nulls (§8) applies. Kill condition binding on decisiveness; void
 condition if survival cannot be normalised against citation volume.
+
+---
+
+## 23. M34 — THE EXCLUDED TWIN
+
+*Added 2026-08-29. The cleanest single measurement in this register: one name
+against its own placeholder-twin, inside one corpus, needing no register control,
+no genre matching and no constructed null.*
+
+**The bearers of the snub in Aristotle**, counted across all 46 σιμ- tokens by
+what stands within ±30 tokens:
+
+    ῥίς      nose      102        ΚΑΛΛΙΑΣ            5
+    σάρξ     flesh      14        ἄνθρωπος           4
+    ὀφθαλμός eye         5        ζῷον, σκέλος     3, 3
+    χαλκός, κύκλος    1, 1        **ΣΩΚΡΑΤΗΣ         0**
+
+**Σωκράτης appears 144 times in Aristotle** — 45 of them in the *Metaphysics*,
+the very work where the snub is defined five times — and **nine times paired with
+Callias as the stock placeholder individual**: *οὐ γὰρ ἄνθρωπον ὑγιάζει ὁ
+ἰατρεύων ἀλλὰ **Καλλίαν ἢ Σωκράτην*** (*Metaph.* 0.004); *ὁδὶ μὲν ὁ ἀριθμὸς
+ἄνθρωπος, ὁδὶ δὲ **Σωκράτης**, ὁδὶ δὲ **Καλλίας*** (0.087).
+
+**Zero within forty tokens of any σιμ-, anywhere in the corpus.**
+
+**The base-rate test says nothing, and must be stated first.** Expected
+Socrates-near-snub if the two were independent: 144 × 46 × 80 / 960,910 = **0.55**.
+Observed 0. P(0 | Poisson 0.55) = **0.58**. On raw base rate the absence is
+unremarkable, and a reviewer will reach for this first. Correctly.
+
+**The right comparison is against his co-placeholder**, because Callias and
+Socrates are the *same kind of item* in Aristotle's apparatus — the interchangeable
+concrete individual, named together in the pattern *Καλλίαν ἢ Σωκράτην*:
+
+    Callias  in snub contexts     5 / 35   = 14.3%
+    Socrates in snub contexts     0 / 144  =  0.0%
+    Fisher exact, two-sided                  p = 0.00022
+    At Callias's rate, expected 20.6.  Observed 0.
+
+**Both readings, and the innocent one is not weak.** Socrates already carries the
+snub as a **biographical** fact, so using him would import unwanted associations
+into a technical example; Aristotle picks the neutral twin *because* Socrates is
+not neutral. That fully explains the distribution.
+
+But it concedes the premise: **Socrates is the one individual whose snubness is
+unavailable for use as a variable.** Everywhere else in Aristotle he is exactly a
+variable — the man who is pale, or sick, or an instance of number — freely
+interchangeable with Callias. At the snub, and only there, he stops being
+substitutable. And the mark he cannot be substituted at is his own face.
+
+**The Platonic side, for the record.** Plato's three snub instances are about
+**naming**, not defining. *Theaetetus* 209c requires that this snubness, differing
+from all others seen, *διάφορόν τι **μνημεῖον** παρ᾽ ἐμοὶ ἐνσημηναμένη καταθῆται* —
+**deposit a memorial** in another mind — and it fails to. *Republic* 474d is a
+renaming: the lover calls the snub one *ἐπίχαρις*, charming, and the hooked one
+*βασιλικόν*, kingly. Plato names; Aristotle defines; and the bearer changes hands
+between them.
+
+**Status.** A measured, non-circular exclusion at p = 0.00022, with a sufficient
+innocent explanation attached. Not evidence of design. It establishes only that
+the corpus treats one individual's snubness as unusable where every comparable
+individual's is usable.
+
 
 ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
 **0.0258** — inside the M1 same-author band — while the best single heteronym is
