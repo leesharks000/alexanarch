@@ -292,4 +292,194 @@ reusable and is the most expensive artifact produced.
 4. **A recognition measure reading λόγος rather than ὕλη** (EA-SNUB-01 §6).
    Untouched, hardest, and the one the whole line of work is missing.
 
+---
+
+# PART II — THE TERRAIN
+
+*Added 2026-08-29. Everything attempted, including what failed, what was
+superseded, what was left half-run, and what was never started. A later instance
+should be able to see the whole floor, not only the standing results.*
+
+## 11. MEASURED, THEN SUPERSEDED OR FOUND CIRCULAR
+
+**T1 — Ending profiles (aporia vs closure).** Genuine Aristotle 7/7 CLOSED
+(aporia 1, closure 23); Plato majority OPEN (aporia 22, closure 15); the single
+Aristotelian work with an open ending is *Oeconomica*, which is **spurious**.
+→ **CIRCULAR.** The result was sharpened by excluding the spuria, and the spuria
+are classified spurious partly *because* they read differently. A category built
+from the consistency being measured was used to measure it. Recorded because the
+error is instructive, not because the number stands.
+
+**T2 — Coverage complementarity on the virtues.** Courage: *Laches* 0 definitional
+formulas, Aristotle 7 — and he closes it explicitly (*σχεδὸν εἴρηται*) while the
+*Laches* ends with an appointment to meet tomorrow. Temperance 1 vs 8. Friendship
+0 vs 4. **But:** piety is dropped by both (ὁσιοτ- appears 0 times in Aristotle's
+genuine ethical corpus), and the beautiful is duplicated (*Hippias Major* 17 vs
+Aristotle 15).
+→ **Inconclusive, and it favours influence.** Systematic design predicts complete
+coverage without duplication; what was found is incomplete coverage with one
+dropped question and one duplication — the profile of a successor finishing what
+interested him.
+
+**T3 — The nine-author landscape on aggregate profiles.** Produced
+Aristotle|Plotinus 0.0310 as the second-closest pair in the set.
+→ **SCALE ERROR.** Aggregate profiles (mean across an author's works) and per-work
+profiles are not comparable, and averaging destroys exactly the variance that
+matters. Superseded by M4/M5, computed per work. The 0.0310 figure must not be
+quoted against per-work numbers.
+
+**T4 — Tiling / exclusivity.** Vocabulary exclusivity: Kierkegaard A|B — the
+purest symbolon available — is the **least** exclusive pair measured (0.4900).
+→ Correct but the wrong operationalisation. Two halves of a broken token *share
+the break line*; exclusivity measures distance in topic, not shape.
+
+**T5 — Shared-region correlation.** Designed pairs occupy both extremes (Pessoa
+Caeiro|Reis 0.4479, Pessoa heteronyms|orthonym 0.8203) while independent pairs
+cluster at 0.54–0.62 and Plato|Aristotle sits at 0.6160, the base rate.
+→ **Does not separate.** Designed configurations have high *variance* in pairwise
+similarity, not a characteristic level. Suggestive and unused.
+
+**T6 — Effective rank / span of deviations.** Kierkegaard 0.895, Josephus 0.952,
+Plato-4-groups 0.839, Greek-4-independent 0.932, Plato+Aristotle 0.820.
+→ **Does not separate.** All within 0.82–0.95.
+
+**T7 — Aristotle's attribution practice.** Across 48 works, unnamed attribution
+(τινές, φασί, λέγεται, οἱ μέν…οἱ δέ) runs **3.83 per named predecessor**; in the
+*Metaphysics* alone **4.48**, with λέγεται at 309. The systematizing position
+doing the doxography that grounds most of what we think we know about who held
+what attributes anonymously four times for every naming.
+→ Measured, never used. Relevant to any argument about how attribution behaves
+inside the corpus.
+
+**T8 — Folding / uptake retention.** Source-vocabulary retention when one text is
+folded into another: Sappho 31 → Longinus **100%** (the seat states Longinus is
+the sole direct carrier); LXX Pentateuch → Philo **76%**; LXX → Josephus *AJ*
+**44%**; Plato → Aristotle *Metaphysics* **33%**; Plato → Xenophon **0%**.
+→ Interesting and unfinished. Ezekiel/Daniel → Revelation failed on a filename
+glob and was never rerun.
+
+## 12. DOCUMENTARY FINDINGS (non-stylometric, and they hold)
+
+**T9 — Authorial identity was obscurable in this exact period and circle.**
+Aristophanes produced his first three plays under other men's names — *Banqueters*
+(427), *Babylonians* (426), *Acharnians* (425), all διὰ Καλλιστράτου — describes
+the practice himself at *Wasps* 1017–22, and continued it after he had a name
+(*Lysistrata* 411 via Callistratus, *Frogs* 405 via Philonides). The civic
+didascalic record carries the **producer, not the poet**. Cleon's prosecution over
+the *Babylonians* cannot be resolved as against Aristophanes or Callistratus.
+Biographical facts about "Aristophanes" — baldness, the Aegina connection — are
+extracted from plays whose named author may be a different man.
+
+**T10 — Base rate around T9.** Ps.-Xenophon's *Athenaion Politeia* sat in
+Xenophon's corpus from antiquity, questioned by Demetrius of Magnesia but quoted
+as Xenophon by Stobaeus, author never identified. The Hippocratic corpus: ~60
+treatises under one name, multiple hands, this exact window.
+
+**T11 — The Aristotelian corpus boundary is an inference.** Andronicus of Rhodes
+constituted it in the 1st c. BCE, ~250 years after, working from the
+cross-references the texts themselves contain plus school documents. His catalogue
+is not extant. **He judged *De interpretatione* spurious**; the field now receives
+it as genuine. *Metaphysics* A's authenticity was questioned in Alexander's time,
+with Asclepius reporting attribution by some to Pasicles of Rhodes — and A is the
+book the paper's worked case is built on.
+
+**T12 — The recursion.** The Athenian didascalic records descend from Aristotle's
+lost *Didascaliae*. The one surviving contemporary inscription naming a principal
+(FD III 1, 400, *ante* 329) crowns Aristotle and Callisthenes **for compiling the
+register of Pythian victors**. The compiler of the record that assigns plays to
+authors is the figure whose own corpus's partition is in question, and that record
+by convention sometimes names the producer instead of the poet.
+
+## 13. CORPUS AVAILABILITY — what exists, what does not, and how retrieval fails
+
+**T13 — Unavailable at any pin.** Iamblichus and Damascius: absent from
+canonical-greekLit and First1KGreek under every author string. Prior attempts
+failed for this reason, not for want of searching.
+
+**T14 — Kierkegaard's *Samlede Værker* is unusable.** All 25 volumes are on
+archive.org, unrestricted, with full text — and the OCR has failed completely
+because the editions are **Fraktur**. Danish common-word rate 0.13–0.14 uniformly
+across sampled segments, against 0.28 for genuine Danish. 0/12 clean segments in
+either volume tested. A naive quality gate at 0.10 passes them; it must not be.
+→ **The seven missing pseudonyms** — Constantin Constantius, Vigilius Haufniensis,
+both Climacus positions, Hilarius Bogbinder, Frater Taciturnus, Inter et Inter —
+require a source outside reach (SKS at sks.dk, not allowlisted).
+
+**T15 — Pessoa's minor heteronyms are unavailable.** pt.wikisource carries only
+Caeiro, Reis, Campos and the orthonym. Bernardo Soares, Alexander Search, António
+Mora, the Barão de Teive, Vicente Guedes: no categories, nothing usable on
+archive.org.
+
+**T16 — Two silent retrieval failures, both recorded in their seats.**
+(a) The Wikisource **extracts** API returns *empty* bodies for short lyrics whose
+text sits inside `<poem>` templates, while longer prose-poems extract normally —
+so an extracts-based fetch yields Campos nearly complete and Caeiro and Reis
+nearly empty, **and reports no error**. Raw wikitext via `prop=revisions` is
+required.
+(b) Danish Wikisource pages for *Enten–Eller* are **djvu transclusions**:
+`prop=revisions` returns only a `<pages index=…>` stub, so a raw-wikitext fetch
+yields nothing, **also with no error**. `action=parse` resolves them.
+
+**T17 — A structural limit on the calibration set.** The two strongest NT criteria
+— name-to-voice cardinality mismatch, and cross-name convergence exceeding
+within-name — **require multiple positions under one declared name**. Pessoa and
+Kierkegaard are one-name-one-voice by construction (the sole exception being
+Victor Eremita carrying A and B). So those criteria **cannot be calibrated** on
+the known-designed corpora. The corpora that have the structure are the New
+Testament and, on the hypothesis, the Platonic corpus.
+
+## 14. TRIED AND LEFT DANGLING
+
+- **Xenophon seated** (EA-CORPORA-06/01) and used for M3, but the full
+  genre-controlled instrument was never built on him.
+- **The 4-fold leave-one-out on Pessoa.** M17 pools three heteronyms to recover
+  the orthonym. The design calls for withholding *each* of the four in turn, so
+  that recovery can be checked on voices nobody considers special. Three folds
+  unrun.
+- **Ezekiel/Daniel → Revelation folding retention** (T8) — failed on a glob,
+  never rerun.
+- **The 31-term class** (EA-SNUB-01 §13). Identified, never characterised. Do they
+  share a semantic character — technical vocabulary Aristotle needed — or is the
+  list arbitrary? συμβεβηκός (2× → 449×) suggests the former.
+- **Republic 395a / Symposium 223d base rate** (EA-SNUB-01 §18). The single most
+  important open item; see §10.1.
+
+## 15. PROPOSED AND NEVER ATTEMPTED
+
+- **A recognition measure reading λόγος rather than ὕλη.** Every instrument built
+  reads the substrate. This is the one the whole line of work is missing and no
+  design for it exists.
+- **Directionality.** Does any term run the other way — terminal Aristotelian
+  position to technical Platonic use? Under the received chronology it cannot; on
+  any reading that questions the chronology, the absence is a datum. The 31-term
+  class supplies the denominator.
+- **Authenticity within domain, inside Aristotle.** Holds subject constant to break
+  the M11 confound. Power may not exist (6 spurious of 30).
+- **External dating against stylistic position**, for M13's circularity.
+- **Non-monotone / permuted alignment.** M23 tested order-preserving transforms
+  only. A systematically reordered mapping would not register.
+- **Alignment on a unit other than the token block** — syntactic shape, argument
+  move, figure. The alignment scaffold accepts any unit and any similarity
+  function; swapping the block-content vector is a small change.
+
+## 16. THE STATE OF THE QUESTION, STATED FLATLY
+
+Nothing measured marks the Plato–Aristotle pair as anomalous for two
+contemporaneous authors. The declared partition is overwhelming (M6). The
+standardised separation is on the *close* side (M5). One of five NT criteria holds
+(M22), and it is the one not measurable from texts. No whole-text operator exists
+(M23). The one ancient case with a checkable target reads negative (M16).
+
+What is anomalous is **Aristotle's internal heterogeneity** (M10), and its
+strongest structure is subject matter (M11) — with an authenticity signal that is
+confounded by the criteria that produced the authenticity labels, and a corpus
+boundary that is an inference by an editor whose judgments have been overturned
+(T11).
+
+The strongest unrefuted observation in the entire line of work is a philological
+one: **the same formula, asserted and denied, on the exact question at issue,
+with the affirming instance placed where its demonstration is destroyed in
+transmission** (EA-SNUB-01 §16–18). It has not yet met a base rate.
+
+
 ∮ = 1
