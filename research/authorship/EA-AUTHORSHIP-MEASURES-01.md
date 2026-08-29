@@ -33,10 +33,21 @@ normalised), computed per work, on corpora seated under EA-CORPORA.
 These are the reference bands everything else is read against. They are the most
 reusable thing in this document.
 
-**M1 — Same-author band, Greek prose.** Josephus across four works and four
-registers (*BJ*, *AJ*, *Vita*, *CA*), plus Xenophon Socratic-vs-history:
-**0.016 – 0.035**, n=6, mean 0.0262. Josephus writes war narrative, antiquities,
-autobiography and polemic and stays inside 0.035.
+**M1 — Same-author band, Greek prose. ⚠ RECOMPUTED — Josephus only.**
+**0.0148 – 0.0323**, n=6 pairs, mean **0.0248**. Josephus across four works and
+four registers (*BJ*, *AJ*, *Vita*, *CA*) — war narrative, antiquities,
+autobiography, polemic — and he stays inside 0.0323.
+
+  → The original band cited Xenophon Socratic-vs-history alongside Josephus.
+    **Xenophon is inside the candidate cluster (M33) and cannot calibrate a
+    same-author band without assuming the answer.** His within-author dispersion
+    is mean 0.0530, max 0.1598 — including him would have raised the ceiling from
+    0.0323 to 0.1598, a fivefold inflation of what counts as "one author."
+  → Josephus is **the only clean same-author reference entirely outside the
+    hypothesis space.** Every band comparison in this register should be read
+    against 0.0148–0.0323.
+  → Plato|Xenophon at 0.0235 remains inside the corrected band; the M8 observation
+    survives the recomputation, its inference does not (M33).
 
 **M2 — Within-author dispersion, per work, by author.**
 
@@ -69,7 +80,11 @@ clean baseline and the standing rule.
 future control selection.)*
 
 **The cluster is {plato, aristotle, aristophanes, xenophon}.** No pair inside it
-may be used as a known-different control. The hypothesis under test would readily
+may be used as a control **of any kind — known-different OR known-same** — without
+an explicit defence of the assumption. The rule is **bidirectional**: if the
+hypothesis is live, a within-cluster pair's *sameness* is as much in question as
+its difference. Xenophon's within-author dispersion calibrating a same-author band
+(M1, corrected) was exactly this error in the other direction. The hypothesis under test would readily
 expand to include all four, and — the point that makes this binding — **if one
 configuration were established, more than one becomes more likely, not less**,
 since an existence proof lowers the prior for the practice. Nothing here supposes
@@ -296,307 +311,7 @@ target, and it reads negative.**
 
 ## 5. THE CALIBRATION CORPORA (known-designed)
 
-**M17 — ---
-
-## 17. M29 — THE PROCEDURAL INSTRUMENT
-
-*Added 2026-08-29. Supersedes §15's "never attempted" entry for the λόγος measure.*
-
-EA-SNUB-01 §6 derived a recognition criterion from the snub passage itself:
-**matter individuates, form recurs, so what persists across substrates is the
-account and not the instance.** §7 and §15 both listed a measure reading λόγος
-rather than ὕλη as untouched and as the gap in the whole line of work.
-
-It is no longer untouched. Three searches built in Rounds 4–7 of EA-SNUB-01 read
-**operations** rather than substrate, and all three returned unprompted positives
-in a session where every substrate-reading instrument returned null or artifact.
-
-**The three hits.**
-
-1. **Terminal aporia → technical uptake.** σιμόν at *Theaetetus* 209c, the failed
-   individuating mark, becomes Aristotle's canonical case of enmattered form.
-   Found by lexical search; the positional claim was refuted by base rate
-   (EA-SNUB-01 §9), the semantic reading survives.
-
-2. **Self-application regress.** *Soph. El.* 182a — if snub is concavity-of-nose
-   and there is a snub nose, there is a concave-nose nose — returns *Parmenides*
-   132a, the Third Man, by argument shape with **zero lexical overlap.** Found
-   without being shown where to look.
-
-3. **Divide, flag, coin.** Run a division far enough and you reach a class the
-   language has no word for. Both corpora stop, say so, and coin a name.
-   Platonic instances occur in exactly the four works that classify — *Sophist*
-   (×3), *Statesman*, *Theaetetus*, *Timaeus* (×3) — and nowhere else in Plato.
-   Aristotle states the policy outright at *NE* 1108a: πειρατέον αὐτοὺς
-   ὀνοματοποιεῖν σαφηνείας ἕνεκα.
-
-**Why it works where the others failed.** Method is what maintains its shape
-across shifting matter. Every substrate instrument reads ὕλη — particles,
-frequencies, blocks, register — and ὕλη is what individuates. The procedural
-searches read the operation, which is what recurs.
-
-**The problem, stated as strongly as it can be put against the instrument.**
-Method is precisely what a school transmits. A student acquires his master's
-procedures more reliably than his vocabulary, his register, or his opinions. So
-procedural continuity is simultaneously the **most detectable** thing across the
-boundary and the **least diagnostic** for authorship: its presence is predicted
-equally well by ordinary teaching.
-
-**The sharpening that would make it diagnostic.** Not whether both use division —
-everyone in the Academy divided — but whether they share **arbitrary** features of
-the method: reflexes not determined by the method's purpose. Nothing requires a
-divider to stop and coin; leaving the class unnamed and proceeding is available
-and costs nothing. Both stop. Both flag. Both coin.
-
-**The test, and its denominator. RUN 2026-08-29 for reflex 3 — see M30.**
-Plato and Aristotle share the naming-gap reflex at **9.4× the rate of other
-high-division authors**, P ≈ 0, with Plotinus dividing harder than Aristotle and
-never doing it, and the multi-hand Hippocratic corpus at zero. That is the first
-positive result the investigation has produced. Reflexes 1 and 2 remain untested
-against a denominator, and the decisive successor control (Theophrastus dividing)
-is not extant in the available corpora.
-
----
-
-## 18. M30 — THE NAMING-GAP REFLEX
-
-*Added 2026-08-29. The first measurement in this investigation that groups Plato
-and Aristotle rather than separating them. Partly answers M29's diagnosticity
-question.*
-
-**The reflex.** Run a division far enough and you reach a class the language has
-no word for. Nothing about διαίρεσις requires you to stop and say so — leaving the
-class unnamed costs nothing and proceeds. Plato and Aristotle both stop, both
-flag it, and both coin. Aristotle writes the policy down at *NE* 1108a:
-πειρατέον αὐτοὺς ὀνοματοποιεῖν σαφηνείας ἕνεκα — *we must coin names ourselves for
-the sake of clarity.*
-
-**Measured as instances per 100,000 tokens**, counting ἀνώνυμ-, οὐκ ἔχει ὄνομα,
-οὐ κεῖται ὄνομα, οὐκ ὠνόμασται and cognates:
-
-    corpus                    gap/100k    raw / tokens        division/10k
-    ARISTOTLE                     8.43    81 /   960,910             30.9
-    Diogenes Laertius             2.74     3 /   109,679             16.1
-    PLATO                         2.60    15 /   576,894             15.4
-    Herodotus                     2.16     4 /   184,935              3.7
-    Aristophanes                  1.96     2 /   102,058              4.0
-    Josephus                      0.64     3 /   467,569              5.4
-    Plotinus                      0.47     1 /   214,028             36.8
-    Philo                         0.35     2 /   575,592             13.3
-    Xenophon                      0.32     1 /   310,278              1.7
-    Thucydides                    0.00     0 /   150,157              1.2
-    Hippocratic (multi-hand)      0.00     0 /    98,175              2.4
-    Greek NT                      0.00     0 /   116,244              1.3
-
-**The reflex is not a function of dividing.** Plotinus has the **highest division
-density in the sample** — 36.8 against Aristotle's 30.9 — and one instance in
-214,000 words. Philo divides at 13.3, comparable to Plato, and has two in 575,000.
-
-**The test.** Restricting to authors dividing above 13 per 10⁴:
-
-    Plato + Aristotle                       96 in 1,537,804  =  6.24 /100k
-    Plotinus + Philo + Diogenes              6 in   899,299  =  0.67 /100k
-    RATIO                                                        9.4x
-
-Expected for Plato+Aristotle at the comparison rate: **10.3. Observed: 96.**
-Poisson P(X≥96 | λ=10.3) ≈ 0.
-
-Individually, against Plotinus's rate: Aristotle expected 4.5, observed 81
-(P < 10⁻⁵⁰). Plato expected 2.7, observed 15 (P = 1.8 × 10⁻⁷).
-
-**Why this survives what killed everything else.**
-
-- **Not a distance**, so register cannot mimic it. Plotinus and Philo write the
-  same philosophical prose in the same tradition and do not do it.
-- **Not the method**, since the two highest dividers in the sample sit at opposite
-  ends of the measure.
-- **Not generic to classification.** The Hippocratic corpus — thirteen works,
-  multiple hands, classifying diseases — has **zero in 98,175 tokens.**
-- **A count, not a similarity**, so none of the five broken nulls (§8) applies.
-
-**What it does not show.** A school transmits reflexes, and an arbitrary
-procedural habit is the most transmissible thing there is. This is consistent with
-ordinary teaching and does not establish common authorship.
-
-**The decisive control is missing.** Theophrastus — Aristotle's actual successor —
-survives in the available corpora only as *Characters*, which does not divide.
-Xenocrates and Speusippus are not extant. So whether the reflex is *personal* or
-*Academic* cannot presently be determined, and that is the question that would
-make it diagnostic.
-
-**Status.** The first result in this investigation that distinguishes Plato and
-Aristotle **jointly** from every available control, at a large effect size, by a
-mechanism that is neither register nor distance. Every other measurement either
-separated them or dissolved. This one groups them.
-
----
-
-## 19. M31 — αὐτεπιτακτική: the coined self-commanding position
-
-*Added 2026-08-29. See EA-SNUB-01 §24–27 for the passage and its cautions.*
-
-*Statesman* 260d–e, position 0.064 — one of the four Platonic works carrying the
-M30 naming-gap reflex. The Eleatic Stranger enumerates the directive arts that
-relay **ἀλλότρια νοήματα**, another's thoughts — ἑρμηνευτική, κελευστική, μαντική,
-κηρυκική — finds that *σχεδὸν ἀνώνυμον ὂν τυγχάνει τὸ τῶν **αὐτεπιτακτῶν** γένος*,
-and coins **αὐτεπιτακτική** for the position that issues from itself. The
-remainder is dismissed with *ὄνομα ἕτερον αὐτοῖς παραχωρήσαντες θέσθαι τινά* — let
-them set themselves some other name.
-
-**Recorded as a fact about the corpus, not an inference about its authorship.**
-The distinction between speaking from oneself and relaying another's mind was
-available, named, and coined by Plato in the act of finding Greek short of a word
-for it.
-
-**⚠ CORRECTED same day.** The first version of this entry said Plato *assigns*
-the coined art to kings, and that the class is political rule. That inverted the
-containment. **τὸ μὲν τῶν βασιλέων γένος εἰς τὴν αὐτεπιτακτικὴν θέντες** — τίθημι
-+ εἰς: kings are placed **into** the self-commanding, which is the container. And
-at 267b: **ζῳοτροφικὴ δὲ πάλιν αὐτεπιτακτικῆς οὐ τὸ σμικρότατον τῶν γενῶν
-ἀπεσχίζετο** — animal-rearing split off from the self-commanding, *not the
-smallest of the genera*. **Other genera exist inside the class and Plato says so**,
-declining them with τοῦ γὰρ ἄρχοντος ἕνεκα ἡμῖν ἡ μέθοδος ἦν — our method was for
-the sake of the ruler.
-
-**So the class is open by construction and marked as open.** The position that
-speaks from itself is named, is explicitly larger than any of its instances, and
-is abandoned mid-division with its remaining genera unentered.
-
-**Standing caution, corrected.** Plato does not apply this to authorship, and the
-unentered genera are unentered — supplying them is an inference the text does not
-license. The ἑρμηνευ- link to *Περὶ ἑρμηνείας* remains a homonym; Aristotle's
-sense is *expression*. Nothing is built on it.
-
----
-
-## 20. M32 — κερματισμός and the two demands for recombination
-
-*Added 2026-08-29. See EA-SNUB-01 §28–33.*
-
-**κερματίζω**, to mint a unity into small change, is Plato's standing metaphor for
-the one broken into many (*Meno* ×2, *Parmenides*, *Republic* 0.675, *Timaeus* ×3,
-*Cratylus*). It is the **stated ground** of the denial at *Republic* 395b: *εἰς
-σμικρότερα κατακεκερματίσθαι ἡ τοῦ ἀνθρώπου φύσις* — human nature is minted into
-denominations too small to hold two arts. The incapacity is a fact about
-fragmentation, not about poets.
-
-    Symp 191d  0.366  one cut into two; each a σύμβολον; Eros makes ἓν ἐκ δυοῖν
-                      and ἰάσασθαι τὴν φύσιν τὴν ἀνθρωπίνην
-    Rep 395b   0.237  κατακεκερματίσθαι ἡ τοῦ ἀνθρώπου φύσις → οἱ αὐτοὶ οὐ δύνανται
-    Rep 473d   0.509  εἰς ταὐτὸν συμπέσῃ, δύναμίς τε πολιτικὴ καὶ φιλοσοφία;
-                      those travelling χωρὶς ἐφ᾽ ἑκάτερον excluded by necessity
-    Symp 223d  0.996  τοῦ αὐτοῦ ἀνδρός — the same man must hold both arts
-
-The lexical link between the first two is exact: *Republic* 395b says **ἡ τοῦ
-ἀνθρώπου φύσις** is minted into pieces; *Symposium* 191d says Eros attempts
-**ἰάσασθαι τὴν φύσιν τὴν ἀνθρωπίνην** by making one from two. Same subject,
-opposite verbs.
-
-*Republic* 473d demands the inverse of κερματισμός and is introduced as what will
-drown its speaker in **γέλως** — in the book that has just ruled no one can hold
-comedy and tragedy together.
-
-**Not established:** that any of this concerns authorship. Both recombinations are
-stated of their own subjects — political power and philosophy in a ruler, two
-poetic arts in a maker. What the corpus supplies is the structure, not its
-application.
-
----
-
-## 21. EA-KERMA-01 — the reconstruction
-
-*Added 2026-08-29. sha256 51be41d0b6ee194c7a65654f96387395…*
-
-A separate document assembles the M32 loci into an argument and states where
-heteronymy would sit in it. Recorded here as a pointer, not a finding.
-
-**The move:** the σύμβολον is not a broken object but an object broken **by
-agreement** — the break line is the credential, not the damage. Rubble cannot be
-recognised; a token is recognised precisely at its fracture. So: *you cannot
-un-cut human nature, you can cut it on purpose.* Heteronymy would convert
-κερματισμός from a wound into a method — the fragmentation ratified rather than
-reversed, and thereby made legible.
-
-**Why it resolves 395b against 473d:** it accepts the denial as premise (no single
-undivided nature holds two arts) and satisfies the requirement in a coordinated
-multiplicity whose parts **sum rather than resemble**. ---
-
-## 22. EA-PINAX-01 — the calibration-object hypothesis
-
-*Added 2026-08-29. sha256 cb14e25a66fb30d36f6964b1e2c7721c… Pointer, not a finding.*
-
-The standing objection was that antiquity built an authenticity apparatus and
-would therefore have caught a construction. The hypothesis inverts it: **the
-technology is the output.** Criteria must be fitted to a case whose answer is
-known, and a deliberately structured corpus is a **calibration object** — the
-*Pinakes* with incipit and stichometric checksum, the obelus, the
-νόθος/ἀντιλεγόμενα vocabulary, and the practice of transmitting corpora **with**
-their disputes are what working on one produces.
-
-**It reframes two measured results.** M11's authenticity signal at Z = +3.47 was
-flagged circular because Andronicus sorted partly by style; under this hypothesis
-the circularity **is the datum**. And M30's naming-gap reflex reads as a
-cataloguer's discipline rather than a school habit — an unnamed class is an
-unshelvable class, and the *Poetics*' unnamed-genre problem is a cataloguer's
-problem.
-
-**Its danger is stated in the document, at length.** It explains everything,
-including every null; both hypotheses predict the *Pinakes*. §4 exists so the
-property cannot operate silently.
-
-**The one asymmetric prediction:** an instrument built on a calibration object
-**overfits it**. The registered test measures **the history of judgements, not the
-texts** — verdict density, decisiveness (stated grounds), and reversal rate,
-across the Platonic-Aristotelian, Hippocratic, Homeric, Pythagorean and Orphic
-traditions. It counts verdicts rather than measuring similarity, so none of the
-five broken nulls (§8) applies. Kill condition binding on decisiveness; void
-condition if survival cannot be normalised against citation volume.
-
-∮ = 1.
-
-**Three consequences it lands on:** recognition by λόγος not ὕλη, which would
-explain why every substrate instrument in this register returned null (M4–M28);
-the vacant centre as specification rather than loss, making a non-writing founder
-the form the centre takes; and the configuration as **αὐτεπιτακτική**, the class
-of M31 that Plato coined and left with its genera unentered.
-
-**Standing caution, carried in the document itself:** Plato assembles none of it.
-The logic is available in the corpus; the corpus does not perform it.
-
----
-
-## 22. EA-PINAX-01 — the calibration-object hypothesis
-
-*Added 2026-08-29. sha256 cb14e25a66fb30d36f6964b1e2c7721c… Pointer, not a finding.*
-
-The standing objection was that antiquity built an authenticity apparatus and
-would therefore have caught a construction. The hypothesis inverts it: **the
-technology is the output.** Criteria must be fitted to a case whose answer is
-known, and a deliberately structured corpus is a **calibration object** — the
-*Pinakes* with incipit and stichometric checksum, the obelus, the
-νόθος/ἀντιλεγόμενα vocabulary, and the practice of transmitting corpora **with**
-their disputes are what working on one produces.
-
-**It reframes two measured results.** M11's authenticity signal at Z = +3.47 was
-flagged circular because Andronicus sorted partly by style; under this hypothesis
-the circularity **is the datum**. And M30's naming-gap reflex reads as a
-cataloguer's discipline rather than a school habit — an unnamed class is an
-unshelvable class, and the *Poetics*' unnamed-genre problem is a cataloguer's
-problem.
-
-**Its danger is stated in the document, at length.** It explains everything,
-including every null; both hypotheses predict the *Pinakes*. §4 exists so the
-property cannot operate silently.
-
-**The one asymmetric prediction:** an instrument built on a calibration object
-**overfits it**. The registered test measures **the history of judgements, not the
-texts** — verdict density, decisiveness (stated grounds), and reversal rate,
-across the Platonic-Aristotelian, Hippocratic, Homeric, Pythagorean and Orphic
-traditions. It counts verdicts rather than measuring similarity, so none of the
-five broken nulls (§8) applies. Kill condition binding on decisiveness; void
-condition if survival cannot be normalised against citation volume.
-
-∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
+**M17 — ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
 **0.0258** — inside the M1 same-author band — while the best single heteronym is
 Campos at 0.0498, then Caeiro 0.0903, Reis 0.2205. **Pooled beats best individual
 by 1.93×.** Individually the voices do not look like Pessoa; summed, they do.
@@ -729,6 +444,11 @@ reusable and is the most expensive artifact produced.
 *Added 2026-08-29. Everything attempted, including what failed, what was
 superseded, what was left half-run, and what was never started. A later instance
 should be able to see the whole floor, not only the standing results.*
+
+---
+
+*Everything attempted, including what failed, what was superseded, what was left
+half-run, and what was never started.*
 
 ## 11. MEASURED, THEN SUPERSEDED OR FOUND CIRCULAR
 
@@ -940,7 +660,6 @@ one: **the same formula, asserted and denied, on the exact question at issue,
 with the affirming instance placed where its demonstration is destroyed in
 transmission** (EA-SNUB-01 §16–18). It has not yet met a base rate.
 
-
 ---
 
 ## 17. M29 — THE PROCEDURAL INSTRUMENT
@@ -1037,17 +756,32 @@ the sake of clarity.*
 density in the sample** — 36.8 against Aristotle's 30.9 — and one instance in
 214,000 words. Philo divides at 13.3, comparable to Plato, and has two in 575,000.
 
-**The test.** Restricting to authors dividing above 13 per 10⁴:
+**The test. ⚠ INFERENCE CORRECTED — the token-level p-value was indefensible.**
+
+*Token level, descriptive only.* Restricting to authors dividing above 13 per 10⁴:
 
     Plato + Aristotle                       96 in 1,537,804  =  6.24 /100k
     Plotinus + Philo + Diogenes              6 in   899,299  =  0.67 /100k
     RATIO                                                        9.4x
 
-Expected for Plato+Aristotle at the comparison rate: **10.3. Observed: 96.**
-Poisson P(X≥96 | λ=10.3) ≈ 0.
+The Poisson figure originally recorded here — P(X≥96 | λ=10.3) ≈ 0 — **is
+withdrawn.** It treats 96 tokens as independent arrivals under one homogeneous
+rate. They are not independent: they cluster by work (*NE* 11, *HA* 12, *Sophist*
+3, *Timaeus* 3) and by construction. The effective experimental unit is the
+**work**, not the token, and an infinitesimal p on clustered events gives a false
+impression of replication.
 
-Individually, against Plotinus's rate: Aristotle expected 4.5, observed 81
-(P < 10⁻⁵⁰). Plato expected 2.7, observed 15 (P = 1.8 × 10⁻⁷).
+*Work level, the honest unit.* A work counts once if it carries the reflex at all,
+restricted as before to works dividing above 13 per 10⁴:
+
+    Plato + Aristotle       16 of 32 works    50.0%
+    Plotinus + Philo         1 of 21 works     4.8%
+    RATIO                                      10.5x
+    Fisher exact, two-sided                    p = 0.0007
+
+**The effect survives the correct unit and the ratio is marginally larger.** The
+defensible statement is *p = 0.0007 across 53 works*, not P ≈ 0. Per-corpus: Plato
+4/9, Aristotle 12/23, Plotinus 1/6, **Philo 0/15**.
 
 **Why this survives what killed everything else.**
 
@@ -1070,9 +804,22 @@ Xenocrates and Speusippus are not extant. So whether the reflex is *personal* or
 make it diagnostic.
 
 **Status.** The first result in this investigation that distinguishes Plato and
-Aristotle **jointly** from every available control, at a large effect size, by a
-mechanism that is neither register nor distance. Every other measurement either
-separated them or dissolved. This one groups them.
+Aristotle **jointly** from every available control, by a mechanism that is neither
+register nor distance. Every other measurement either separated them or dissolved.
+This one groups them, at **p = 0.0007 on 53 works**.
+
+**Never to be quoted without the missing control.** Theophrastus — Aristotle's
+actual successor, the one figure who would separate *personal* from *Academic*
+transmission — survives in the available corpora only as *Characters*, which does
+not divide. Until that control exists, school transmission remains fully live, and
+M30 is a positive anomaly of unresolved diagnosticity.
+
+**Denominator, stated.** Of five Aristotelian snub-arguments given Platonic-vocabulary
+signatures and searched (Notebook Part I, Round 4), **one mapped** — the
+self-application regress. Of the procedural reflexes since pursued, three were
+tested and three hit. The full inventory of candidate operations — elenchus,
+doxography, myth-making, definition by genus and difference — has **not** been
+built, and until it is, three-of-three is a numerator without its denominator.
 
 ---
 
@@ -1197,48 +944,18 @@ traditions. It counts verdicts rather than measuring similarity, so none of the
 five broken nulls (§8) applies. Kill condition binding on decisiveness; void
 condition if survival cannot be normalised against citation volume.
 
-∮ = 1.
+∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
+**0.0258** — inside the M1 same-author band — while the best single heteronym is
+Campos at 0.0498, then Caeiro 0.0903, Reis 0.2205. **Pooled beats best individual
+by 1.93×.** Individually the voices do not look like Pessoa; summed, they do.
 
-**Three consequences it lands on:** recognition by λόγος not ὕλη, which would
-explain why every substrate instrument in this register returned null (M4–M28);
-the vacant centre as specification rather than loss, making a non-writing founder
-the form the centre takes; and the configuration as **αὐτεπιτακτική**, the class
-of M31 that Plato coined and left with its genera unentered.
+  Comparators: Josephus BJ+AJ+CA → Vita 1.08×; Kierkegaard A+B → signed 1.07×;
+  Plato parts → Aristotle 1.01×; **Aristotle parts → Plato 0.78× (pooling makes
+  it worse — his *Ethics* alone is closer to Plato than his whole corpus is).**
 
-**Standing caution, carried in the document itself:** Plato assembles none of it.
-The logic is available in the corpus; the corpus does not perform it.
+  Limits: ratio statistics carry a size confound; cross-language absolute
+  comparison is shaky; Kierkegaard's seat holds four pseudonymous works of ~12.
 
 ---
-
-## 22. EA-PINAX-01 — the calibration-object hypothesis
-
-*Added 2026-08-29. sha256 cb14e25a66fb30d36f6964b1e2c7721c… Pointer, not a finding.*
-
-The standing objection was that antiquity built an authenticity apparatus and
-would therefore have caught a construction. The hypothesis inverts it: **the
-technology is the output.** Criteria must be fitted to a case whose answer is
-known, and a deliberately structured corpus is a **calibration object** — the
-*Pinakes* with incipit and stichometric checksum, the obelus, the
-νόθος/ἀντιλεγόμενα vocabulary, and the practice of transmitting corpora **with**
-their disputes are what working on one produces.
-
-**It reframes two measured results.** M11's authenticity signal at Z = +3.47 was
-flagged circular because Andronicus sorted partly by style; under this hypothesis
-the circularity **is the datum**. And M30's naming-gap reflex reads as a
-cataloguer's discipline rather than a school habit — an unnamed class is an
-unshelvable class, and the *Poetics*' unnamed-genre problem is a cataloguer's
-problem.
-
-**Its danger is stated in the document, at length.** It explains everything,
-including every null; both hypotheses predict the *Pinakes*. §4 exists so the
-property cannot operate silently.
-
-**The one asymmetric prediction:** an instrument built on a calibration object
-**overfits it**. The registered test measures **the history of judgements, not the
-texts** — verdict density, decisiveness (stated grounds), and reversal rate,
-across the Platonic-Aristotelian, Hippocratic, Homeric, Pythagorean and Orphic
-traditions. It counts verdicts rather than measuring similarity, so none of the
-five broken nulls (§8) applies. Kill condition binding on decisiveness; void
-condition if survival cannot be normalised against citation volume.
 
 ∮ = 1
