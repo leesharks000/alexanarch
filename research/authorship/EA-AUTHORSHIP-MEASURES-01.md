@@ -50,11 +50,66 @@ autobiography and polemic and stays inside 0.035.
     plato        0.0570    (n=24)
     ARISTOTLE    0.1033    (n=30)   ← highest in the sample by a factor of two
 
-**M3 — Genre versus author effect.** From Xenophon's fourteen works across
-Socratic dialogue, history, encomium and technical treatise:
-genre effect **+0.0023**, author effect **+0.0078**. Authorship moves this measure
-**3.4× more than genre does** — which corrected an earlier claim, in this session,
-that the signal was genre.
+**M3 — Genre versus author effect. ⚠ CIRCULAR — the author term is void.**
+Genre effect **+0.0023**, from Xenophon's fourteen works across Socratic dialogue,
+history, encomium and technical treatise. That term stands: it is within-author.
+
+The author term of **+0.0078** does **not**. It was computed as *Plato-dialogue vs
+Xenophon-Socratic minus Plato-self* — i.e. **from a Plato|Xenophon comparison,
+treating them as two authors.** Xenophon is a *candidate position* in the
+configuration under test (seated held apart, EA-CORPORA-06/01), so using him as
+the definition of "a different author" assumes the answer. See **M33** for the
+clean baseline and the standing rule.
+
+  → The "authorship moves this 3.4× more than genre" claim is **withdrawn**. It
+    rested on the contaminated term.
+
+**M33 — THE CANDIDATE CLUSTER, AND WHAT MAY NOT BE ASSUMED ABOUT IT.**
+*(2026-08-29. Voids the author term of M3; corrects M8's framing; constrains all
+future control selection.)*
+
+**The cluster is {plato, aristotle, aristophanes, xenophon}.** No pair inside it
+may be used as a known-different control. The hypothesis under test would readily
+expand to include all four, and — the point that makes this binding — **if one
+configuration were established, more than one becomes more likely, not less**,
+since an existence proof lowers the prior for the practice. Nothing here supposes
+the expansion. It refuses the assumption in either direction.
+
+**Clean baseline, author effect = between-author distance minus the mean of the
+two within-author dispersions:**
+
+    OUTSIDE the cluster    n=10   mean +0.0760   range +0.0316 to +0.1358
+    CROSS cluster/outside  n=20   mean +0.0729
+    WITHIN the cluster     n= 6   mean +0.0587   range +0.0299 to +0.0787
+
+**Plato|Xenophon = +0.0299 — the lowest value in the table, below the
+out-of-cluster minimum of +0.0316.** The pair used as the operational definition
+of "two authors" is the closest pair in the sample.
+
+**The cluster is not uniform.** Plato, Xenophon and Aristophanes are mutually
+close (+0.0299, +0.0356, +0.0583); Aristotle is far from all three (+0.0716 to
++0.0787), inside the ordinary out-of-cluster range. Consistent with register —
+three dialogic writers against one treatise writer — but no longer an authorship
+finding, because the baseline it was read against was contaminated.
+
+**Consequently contaminated and marked:**
+- **M3** author term — void, above.
+- **M8** — the framing *"two men nobody has ever proposed as one"* is false and is
+  withdrawn; the distance stands, the inference from it does not.
+- **M10 / M28** synthetic multi-author pools drew from Plato, Philo, Xenophon,
+  Plotinus and Josephus — **two cluster members inside a pool labelled
+  multi-author.** The M28 conclusion (subject explains the dispersion) is
+  unaffected, since it rests on within-Aristotle domain partitions, but the pool
+  comparison should be rebuilt from outside the cluster.
+- **The feasibility check of the adversarial design** scored Plato|Xenophon and
+  Xenophon|Aristophanes as known-different truths; both are within-cluster, so the
+  reported 1-of-3 agreement rate is computed against an invalid panel and must be
+  redone.
+
+**Unaffected and verified:** the 61-pair empirical null pairs Xenophon only with
+Philo, Thucydides, Herodotus, Josephus, Longinus, Plotinus and the NT authors —
+all cross-cluster — and excludes Aristophanes as verse. Plato and Aristotle are
+not in it. **The null is clean.**
 
 ---
 
@@ -84,8 +139,10 @@ and Matthew|Luke (**0.0167**) is closer than Luke|Acts (**0.0183**).
 
 **M8 — Plato is closer to Xenophon than to Aristotle.** Plato dialogues |
 Xenophon Socratic works = **0.0235** — *inside the M1 same-author band*, tighter
-than Josephus's *Vita* from his *Antiquities*. Two men nobody has ever proposed as
-one.
+than Josephus's *Vita* from his *Antiquities*.
+  → ⚠ The original gloss, *"two men nobody has ever proposed as one,"* is
+    **withdrawn** (M33). The measurement stands; the independence it assumed does
+    not.
 
 **M9 — Aristotle's isolation.** His self-distance (0.1033) **exceeds** his
 distance to Plotinus (0.0810), a man born six centuries later. He is further from
