@@ -5,7 +5,7 @@ title: "EA-CORPORA-06 — The Sixth Seating: Kierkegaard as Second Calibration, 
 creator: Sharks, Lee
 orcid: 0009-0000-1599-0703
 date: 2026-08-29
-content_type: Corpus seating
+content_type: Corpus seating record — gathering deposit with data sidecar
 license: CC-BY-4.0
 substrate: AI-assisted (substrate) — seats built and verified in working session with Claude (Anthropic) under MANUS direction. Ten declared loci verified to resolve in the seated text before being declared; wiki article composed before minting; coverage shortfalls stated in the seats rather than closed over.
 axn_schema_version: v2
@@ -31,6 +31,18 @@ keywords:
 ---
 
 # EA-CORPORA-06 — The Sixth Seating: Kierkegaard as Second Calibration, and Xenophon and Aristophanes Held Apart
+
+## The seats
+
+| seat | corpus | lines | language | licence |
+|---|---|---|---|---|
+| 06/01 | **xenophon** | 12,973 | Ancient Greek | CC BY-SA (Perseus); underlying editions public |
+| 06/02 | **aristophanes** | 24,011 | Ancient Greek | CC BY-SA (Perseus); underlying editions public |
+| 06/03 | **kierkegaard** | 49,896 | Danish | Public domain (author d. 1855); Wikisource tra |
+
+
+Data is published as a sidecar index at [api/corpora.json](https://www.alexanarch.org/api/corpora.json) with per-seat links; each seat carries its own `source.json` and SHA-256 `MANIFEST.sha256` at `alexanarch.org/data/corpora/<corpus>/`, and a rendered reading room at `traininglayerliterature.org/originals/<corpus>/`. The per-deposit external-metadata sidecar for this record is at `/data/external-metadata/AXN-065A.json`.
+
 
 EA-CORPORA-06 seats three corpora that stand in two different relations to the archive's authorship question, and the difference between those relations is the point of seating them together.
 

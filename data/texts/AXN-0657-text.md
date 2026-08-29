@@ -5,7 +5,7 @@ title: "EA-CORPORA-04 — The Fourth Seating: Aristotle Undivided, Plotinus as C
 creator: Sharks, Lee
 orcid: 0009-0000-1599-0703
 date: 2026-08-28
-content_type: Corpus seating; infrastructure repair
+content_type: Corpus seating record — gathering deposit with data sidecar
 license: CC-BY-4.0
 substrate: AI-assisted (substrate) — seats built, verified and rendered in working session with Claude (Anthropic) under MANUS direction. Both upstream repositories commit-pinned; five declared loci verified in the seated text; edition artifact tested and excluded (within-Aristotle same-edition and cross-edition particle distances identical to two decimal places).
 axn_schema_version: v2
@@ -26,6 +26,17 @@ keywords:
 ---
 
 # EA-CORPORA-04 — The Fourth Seating: Aristotle Undivided, Plotinus as Comparandum, and the Repair of the Seating Chain
+
+## The seats
+
+| seat | corpus | lines | language | licence |
+|---|---|---|---|---|
+| 04/01 | **aristotle** | 83,110 | Ancient Greek | CC BY-SA (First1KGreek and Perseus packaging); |
+| 04/02 | **plotinus** | 20,923 | Ancient Greek | CC BY-SA (First1KGreek packaging); underlying  |
+
+
+Data is published as a sidecar index at [api/corpora.json](https://www.alexanarch.org/api/corpora.json) with per-seat links; each seat carries its own `source.json` and SHA-256 `MANIFEST.sha256` at `alexanarch.org/data/corpora/<corpus>/`, and a rendered reading room at `traininglayerliterature.org/originals/<corpus>/`. The per-deposit external-metadata sidecar for this record is at `/data/external-metadata/AXN-0657.json`.
+
 
 # EA-CORPORA-04 — The Fourth Seating: Aristotle Undivided, and Plotinus as the Comparandum
 

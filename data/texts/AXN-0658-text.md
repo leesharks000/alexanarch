@@ -5,7 +5,7 @@ title: "EA-CORPORA-05 — The Fifth Seating: Browning, Pound, Pessoa, and the Co
 creator: Sharks, Lee
 orcid: 0009-0000-1599-0703
 date: 2026-08-29
-content_type: Corpus seating
+content_type: Corpus seating record — gathering deposit with data sidecar
 license: CC-BY-4.0
 substrate: AI-assisted (substrate) — seats built, verified and rendered in working session with Claude (Anthropic) under MANUS direction. Sources commit-pinned or ebook-pinned; nine declared loci verified in the seated text before the claim was written; wiki article composed before minting rather than after.
 axn_schema_version: v2
@@ -29,6 +29,18 @@ keywords:
 ---
 
 # EA-CORPORA-05 — The Fifth Seating: Browning, Pound, Pessoa, and the Constructed Voice at Three Stages
+
+## The seats
+
+| seat | corpus | lines | language | licence |
+|---|---|---|---|---|
+| 05/01 | **browning** | 4,598 | English | Public domain (author d. 1889); Project Gutenb |
+| 05/02 | **pound** | 7,967 | English | Public domain in the United States (all volume |
+| 05/03 | **pessoa** | 20,486 | Portuguese | Public domain (author d. 1935); Wikisource tra |
+
+
+Data is published as a sidecar index at [api/corpora.json](https://www.alexanarch.org/api/corpora.json) with per-seat links; each seat carries its own `source.json` and SHA-256 `MANIFEST.sha256` at `alexanarch.org/data/corpora/<corpus>/`, and a rendered reading room at `traininglayerliterature.org/originals/<corpus>/`. The per-deposit external-metadata sidecar for this record is at `/data/external-metadata/AXN-0658.json`.
+
 
 EA-CORPORA-05 seats three corpora that belong together because they are one practice at three stages of its development.
 
