@@ -1,0 +1,116 @@
+{
+ "id": "EA-LEAK-DEFICIT-02",
+ "type": "pre-registration",
+ "registered": "2026-08-29",
+ "file": "research/prereg/EA-LEAK-DEFICIT-02.md",
+ "sha256": "493514a2f142385fc4b957c7b22f137662295555f570118e95b0e37c5f17ce0b",
+ "bytes": 8300,
+ "repo_head_at_registration": "64d00915d7a7c80bee1ab1f8500d8066df2c1595",
+ "supersedes": {
+  "id": "EA-LEAK-DEFICIT-01",
+  "sha256": "fbbd13a53a5b29afb4c07c27aa63d49be7f39b6cfa96d84acec41d69e0c3ccfd",
+  "status": "SPENT, not withdrawn",
+  "reason": "tau at the 99th percentile produced a degenerate lower tail — 8 of 61 natural pairs leak exactly zero, 5th and 10th percentiles both 0.0, and L is bounded below at 0, so the predicted deficit was unobservable. Found while building the null, BEFORE the test-pair value was computed."
+ },
+ "tau": {
+  "percentile": 0.9,
+  "value": 0.290523,
+  "selected_from": "null corpora only, by sweep, before any test-pair value existed"
+ },
+ "threshold_sweep_null_only": {
+  "0.70": {
+   "tau": 0.218567,
+   "p05": 693.8,
+   "median": 2656.2,
+   "p90": 5450.0,
+   "zeros": 0
+  },
+  "0.75": {
+   "tau": 0.232537,
+   "p05": 475.0,
+   "median": 2112.5,
+   "p90": 4725.0,
+   "zeros": 0
+  },
+  "0.80": {
+   "tau": 0.248073,
+   "p05": 312.5,
+   "median": 1637.5,
+   "p90": 3943.8,
+   "zeros": 0
+  },
+  "0.85": {
+   "tau": 0.26682,
+   "p05": 193.8,
+   "median": 1212.5,
+   "p90": 2987.5,
+   "zeros": 0
+  },
+  "0.90": {
+   "tau": 0.290499,
+   "p05": 81.2,
+   "median": 706.2,
+   "p90": 2087.5,
+   "zeros": 0
+  },
+  "0.95": {
+   "tau": 0.327001,
+   "p05": 18.8,
+   "median": 312.5,
+   "p90": 1162.5,
+   "zeros": 0
+  },
+  "0.97": {
+   "tau": 0.350594,
+   "p05": 6.2,
+   "median": 162.5,
+   "p90": 731.2,
+   "zeros": 3
+  },
+  "0.99": {
+   "tau": 0.396582,
+   "p05": 0.0,
+   "median": 43.8,
+   "p90": 212.5,
+   "zeros": 8
+  }
+ },
+ "null": {
+  "n_cross_author_pairs": 61,
+  "distinct_author_pairings": 19,
+  "cap_per_pairing": 6,
+  "authors": [
+   "xenophon",
+   "philo",
+   "plotinus",
+   "josephus",
+   "longinus",
+   "herodotus",
+   "thucydides",
+   "nt-mark",
+   "nt-matthew",
+   "nt-luke-acts",
+   "nt-john",
+   "nt-paul"
+  ],
+  "within_author_register_pairs": 23
+ },
+ "preconditions_binding": [
+  "zero null pairs with L=0 and 5th percentile > 0",
+  "null 90th percentile >= 5x its 5th percentile",
+  "n >= 60 matched cross-author pairs"
+ ],
+ "kill_condition": "L_corpus inside the central 90% of the natural distribution -> the smoothing claim fails and is reported as failed",
+ "controls": {
+  "positive": "Pessoa four voices; Kierkegaard second",
+  "sanity": "Josephus four works must fall INSIDE the null"
+ },
+ "synthetic_nulls_excluded_by_prior_failure": [
+  "deviation-from-group forced to -1 by sum-to-zero",
+  "shared-region correlation dominated by frequency baseline",
+  "DTW mediation null biased upward by path selection (mean Z +0.76 over 100 routes)",
+  "coherence-destroying null inverted in sign (homogenised blocks are MORE similar)",
+  "within-row permutation left the global multiset unchanged — real and null identical by construction"
+ ],
+ "note": "Registered after the null was built and the threshold regime selected from it, before any leak value was computed for Plato-Aristotle or for either control."
+}
