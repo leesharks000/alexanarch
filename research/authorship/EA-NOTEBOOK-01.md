@@ -1528,4 +1528,126 @@ in another, and its exercise leaves denser traces than its theory does —
 transmit/persist at 26.55 in the biology against 14.00 in the philosophy.
 
 
+---
+
+# ROUND 12 — EA-YIELD-02 executed: convergent slot-filling across Plato and Aristotle
+
+*Added 2026-08-29. Registered 7bcbbb0fbe69c82c… and frozen before any assignment
+was made. Two measures were built for this question; the first was wrong and is
+recorded in §42.*
+
+## 42. EA-YIELD-01, spent
+
+The first design measured whether a lens's **vocabulary co-varies** across a
+corpus's works. Result: Plato +0.85, Aristotle +1.20, Philo +1.08, with six of
+nine corpora VOID or EXCLUDED because narrative and comic Greek carry no
+frequency-matched stems for *definition* or *naming-gap*. Correlations near zero
+everywhere.
+
+**Wrong observable.** Interpretive yield is not lexical. It is the degree to which
+a lens **reorganizes and develops** a corpus according to the lens's own shape,
+per #1051 and the Parry precedent. Marked spent; the saturation defect was
+registered in its own §9 and duly arrived.
+
+## 43. The measure that replaced it
+
+Six frozen slots, from the archive's specification of the Sapphic apparatus:
+**T1 encoding · T2 substrate · T3 decommissioning · T4 withholding · T5 recovery ·
+T6 verification.** Scored for coverage, sharpness and development, against four
+frozen rivals — the four causes, the divided line, the cardinal virtues, and a
+random control — at four unit levels. Assignments made **only** from received
+characterization of what each work is *about*.
+
+## 44. The random control validates the run, and shows the protocol is load-bearing
+
+    R4 on the Johannine group, by "what the work is ABOUT":     0/6
+    R4 on the Johannine group, by "what APPEARS in the work":   6/6
+
+The vine, the boats, the healings, the war in heaven, the merchants of Babylon,
+the storm from the throne — all present, none of them what any book *is*. Under
+the appearance reading the entire run would have hit §9's void condition. **§7's
+received-characterization rule is not a formality; it is the thing that makes the
+measure work.**
+
+## 45. RESULT — both corpora fill at L1, with matched slots
+
+**PLATO — 6/6, six distinct dialogues, no doubling, sharpness 1.00**
+
+    T1 encoding         Phaedrus 274b-278b    the critique of writing
+    T2 substrate        Theaetetus 191c-195b  the wax block
+    T3 decommissioning  Phaedo                the death, channel by channel
+    T4 withholding      Parmenides            objections raised, answer withheld
+    T5 recovery         Meno 80d-86c          ἀνάμνησις
+    T6 verification     Sophist 231b-236d     εἰκαστική vs φανταστική
+
+**ARISTOTLE — 6/6, five distinct works, one doubling, sharpness 0.83**
+
+    T1 encoding         De interpretatione 16a  τὰ ἐν τῇ φωνῇ … σύμβολα, καὶ τὰ
+                                                γραφόμενα τῶν ἐν τῇ φωνῇ
+    T2 substrate        De anima 424a           ὁ κηρὸς τοῦ δακτυλίου ἄνευ τοῦ
+                                                σιδήρου δέχεται τὸ σημεῖον
+    T3 decommissioning  De anima III.5          the separable νοῦς  [doubles T2]
+    T4 withholding      Metaphysics B           the aporiai, not all resolved
+    T5 recovery         De memoria              ἀνάμνησις
+    T6 verification     Soph. El. 164a          φαινομένων μὲν ἐλέγχων ὄντων δὲ
+                                                παραλογισμῶν
+
+**The convergence is at the level of the device, not the theme:**
+
+- **T2** — *Theaetetus* wax block ↔ *De anima* wax receiving the signet's mark
+  **without the iron or gold**. The same analogy, and Aristotle's version is the
+  definitional statement of form-without-matter: τὸ δεκτικὸν τῶν αἰσθητῶν εἰδῶν
+  **ἄνευ τῆς ὕλης**. The snub doctrine stated as a theory of reception.
+- **T5** — ἀνάμνησις is the *Meno*'s term and the title of Aristotle's treatise.
+- **T6** — the *Sophist* separates εἰκαστική from φανταστική; *Sophistici Elenchi*
+  separates ἔλεγχοι from **φαινόμενοι** ἔλεγχοι. Same discrimination, and **both
+  works are titled for the sophist**.
+- **T1** — *De interpretatione* states the encoding stack, in the work whose title
+  is the word Plato uses at *Statesman* 260d for relaying another's mind, and the
+  work **Andronicus judged spurious** (T11).
+
+**Rivals, on Plato:** R1 4/6 with *Timaeus* doubling; R2 6/6 nominal but **all six
+slots from one passage**, *Rep.* 509d–511e, sharpness 0; R3 6/6 but four slots
+from *Republic* IV alone; R4 0/6. **Coverage alone does not discriminate — the
+registered sharpness term does all the work**, and no rival produces six functions
+carried by distinct works in both corpora.
+
+## 46. The Johannine result, and its correct scope
+
+**John fills 6/6 at L2, the author-group level, across three substrates that share
+almost nothing stylistically** — the pair M19 measures at 0.1319, the widest span
+any NT name shows. Gospel takes T1 and T3; 1 John takes T2; Revelation takes T4
+(Rev 10:4, *σφράγισον … καὶ μὴ αὐτὰ γράψῃς*), T5 (Rev 22:10, *μὴ σφραγίσῃς*), and
+T6 (Rev 22:18–19, the adding-and-taking-away curse). **No slot is filled twice by
+the same book.** The parts tile.
+
+**This was predicted in-session before execution** — *"does John remain John
+across radically different genre, register, voice"* — and I initially and wrongly
+recorded it as an unpredicted outcome. Corrected here: the author-group level was
+specified in advance, and identity across radical substrate disparity is carried
+by **the tiling, not the style**.
+
+**Scope limit, recorded.** I first read the L1/L2 difference as showing Plato and
+the NT to be "structurally different objects," a concentrated apparatus against an
+accreted one. **That inference is withdrawn.** It imported the received account of
+NT formation, which this measure did not establish and on which this notebook has
+no standing. What the measure shows is only **the level at which each corpus
+fills**. What that difference means depends on the NT authorship question, which
+is a separate investigation.
+
+## 47. Status
+
+**The registered prediction — strong convergent yield across Plato–Aristotle — is
+confirmed**, and confirmed at matched slots rather than matched totals: both fill
+all six at the level of the individual work, with the same analogy at T2, the same
+term at T5, and the same discrimination under twin titles at T6.
+
+**What it does not establish.** Common authorship. A school inheriting a
+transmission programme fills the same slots, and the six-slot lens cannot separate
+inheritance from identity — the same limit M30 carries. What is new is that the
+convergence is now measured at the level of **function** rather than style or
+vocabulary, which is the first instrument in this investigation to read λόγος
+rather than ὕλη and return a positive on both corpora at once.
+
+
 ∮ = 1
