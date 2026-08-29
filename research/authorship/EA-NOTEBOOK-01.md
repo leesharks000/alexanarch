@@ -1771,4 +1771,123 @@ notebook's standing rule applies unchanged — **the corpus supplies the structu
 it does not perform the application.**
 
 
+---
+
+# ROUND 14 — the orator control: what it decided, and what it could not
+
+*Added 2026-08-29. EA-UNRES-01 registered a68bf7f2ee54b1af… with the candidate set
+frozen. EA-CORPORA-08 seated nine orators as the master-student baseline. One of
+the two things they were seated for works; the other does not, and the failure is
+mine to record.*
+
+## 53. The reframing this round belongs to
+
+Non-resolution has been filed throughout as **instrument failure** — substrate
+stylometry ordinary, the Poisson voiding on its own sanity control, YIELD-01 at
+zero, the base rate declining the *Republic*/*Symposium* question. Under the
+transmission reading these are **the artifact behaving as specified**: EA-FLOOD-01
+names unresolved disputes as the copying mechanism, and corrected EA-PINAX-01
+predicts that criteria fail to converge here. Both were recorded and neither was
+acted on; the investigation kept trying to make them converge, which is what a
+corpus of this construction would produce in its readers.
+
+**The reading is falsifiable and the discriminator is the *shape* of the
+ambiguity.** Natural ambiguity is uneven — some works resolve, evidence
+accumulates directionally, new instruments move the needle. Engineered
+unresolvability would be **flat**: stalling at the same place regardless of
+instrument, not drifting toward settlement, not closing under rising attention.
+
+## 54. What the orators decided — the K4 base rate
+
+The orators are the ideal control for one thing: **they are professionally fluent
+in forgery.** Attribution-fraud is their daily business —
+*πλάσμα καὶ σκευώρημ᾽ ὅλον* (Dem., of a will), *τῶν διαθηκῶν ὡς πλαστῶν* (Isaeus),
+*τὸ πλάσμα τὸ μέγα* (Hyperides).
+
+**And not one of them says anything about the making or standing of the speech
+being read.**
+
+    corpus         tokens    σύγγραμμα  σύμβολον  ἀντιλεγ-  πλάσμα
+    demosthenes   294,405        0         2         41        3
+    isocrates     118,455        7         1         10        0
+    lysias         55,889        0         3          5        0
+    isaeus         33,307        0         0          3        1
+    antiphon       18,140        0         0          0        0
+    aeschines      44,341        0         0          4        0
+    andocides      17,421        0         0          2        0
+    dinarchus      10,656        0         0          0        0
+    hyperides      13,387        0         0          2        1
+    ─────────────────────────────────────────────────────────────
+    PLATO         585,069       37         4         33       16
+    ARISTOTLE     984,196        3         9          8       32
+
+σύγγραμμα is **zero in seven of nine orators**; the exception is Isocrates, the one
+who wrote for readers rather than juries. σύμβολον appears in Lysias and
+Demosthenes only as commercial or civic tokens, never textual ones.
+
+**The asymmetry, as Lee frames it:** the orators are concerned with detecting
+**others'** deceptive forgeries. Plato's corpus is concerned with distinguishing
+**its own** writings from forgery *while sharing forgery's formal features* — a
+text under a name, circulating without its author, whose standing must be
+established rather than assumed.
+
+  *(A direct test of predication-direction was attempted and failed: the "inward"
+  bucket caught ordinary first-person and demonstrative particles, so every corpus
+  read inward. Not salvaged by tuning. The asymmetry above rests on the
+  distribution, not on that measure.)*
+
+## 55. Part B scored against the frozen candidates
+
+    C1  Letter II 314c     K1 ✓  K2 ✓  K3 ✓  K4 ✓   ALL FOUR
+    C2  Letter XIII 360a   K1 ✓  K2 ✓  K3 ✓  K4 ✓   ALL FOUR
+    C4  Phaedo 59b         K1 ✓  K2 ✓  K3 ✗  K4 ✓   self-absence is consistent
+                                                     with construction, not
+                                                     confirming of it
+    C3  Symposium 223d     K1 ✓  K2 ✓  K3 ✓  K4 ✗   indicates loss, not making
+    C5  Statesman 260e     K1 ✓  K2 ✓  K3 ✓  K4 ✗   indicates openness
+    C6  Theaetetus 209c    K1 ✓  K2 ✓  K3 ✓  K4 ✗   indicates failure
+
+**C2 is the strongest.** *ἀντιλέγεται ὡς οὐ Πλάτωνος* transmitted **inside the
+text**, immediately followed by *ἀρχή σοι τῆς ἐπιστολῆς ἔστω καὶ ἅμα **σύμβολον**
+ὅτι παρ᾽ ἐμοῦ ἐστιν*. K4 holds because **a σύμβολον is manufactured by agreement,
+not found.**
+
+**C1:** *τὰ δὲ νῦν λεγόμενα Σωκράτους ἐστὶν καλοῦ καὶ νέου **γεγονότος*** —
+Socrates *having been made* beautiful and young. K4 explicit in the participle.
+
+**Two of six meet all four criteria; the orator control yields zero.** Part B's
+kill condition does not fire.
+
+## 56. What the orators could NOT decide — and this is my error
+
+They were seated to supply **two** denominators. They supply one.
+
+**M30 cannot run on them.** Median division rate: orators **0.5/10k**, against
+Plato 6.1 and Aristotle 17.5. **No orator work clears M30's 13/10k threshold**, so
+the reflex has no opportunity to fire and the numbers are empty:
+
+    teaching link (Isaeus+Demosthenes)   1.57 /100k
+    other orators (non-links)            1.64 /100k
+    Plato + Aristotle                    6.24 /100k
+
+1.57 against 1.64 looks like a clean null and is not one — it is two figures from
+a genre that does not perform the operation being counted. **When seating
+EA-CORPORA-08 I claimed M30 could be run on this baseline. That was wrong**, and
+the genre mismatch was foreseeable — I had noted it two exchanges earlier and
+seated them for the purpose anyway.
+
+**M30's diagnosticity remains blocked on Theophrastus, unchanged since it was
+first recorded.**
+
+## 57. Standing after this round
+
+    K4 base rate            ESTABLISHED — orators zero, Plato/Aristotle nonzero
+    Part B                  does not fail; 2 of 6 candidates meet all criteria
+    Part A                  BLOCKED on attribution metadata for Plato and the
+                            orators; only Aristotle carries per-work status
+    M30 denominator         STILL BLOCKED — the orators cannot serve it
+    completion baseline     untested; does not depend on division rate and may
+                            still run on Isaeus→Demosthenes
+
+
 ∮ = 1
