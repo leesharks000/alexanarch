@@ -1,0 +1,41 @@
+{
+ "corpus": "thucydides",
+ "seat": "EA-CORPORA-07/02",
+ "origin": {
+  "repo": "PerseusDL/canonical-greekLit",
+  "commit": "a065c359aab33c33bd17ddc2cac7d27fdc9cd870",
+  "paths": [
+   "data/tlg0003/tlg001 — Historiae, eight books"
+  ]
+ },
+ "edition": "Thucydides, Historiae, Perseus Greek edition (tlg0003.tlg001)",
+ "license": "CC BY-SA (Perseus); underlying edition public domain",
+ "fetched": "2026-08-29",
+ "works": {
+  "count": 8,
+  "units": "one file per book",
+  "per-work": "text/book-NN.txt",
+  "originals": "original/*.xml",
+  "tokens_by_book": {
+   "1": 22307,
+   "2": 18549,
+   "3": 18147,
+   "4": 21534,
+   "5": 16001,
+   "6": 18280,
+   "7": 16615,
+   "8": 18732
+  }
+ },
+ "normalization": "flat lines from TEI; teiHeader, <note> and <app> stripped; split at book-level textparts",
+ "verified_loci": [
+  "I.22 — the method statement on speeches and deeds",
+  "II.34-46 — Pericles' Funeral Oration (Περικλέ- 7x in book 2)",
+  "II.47-54 — the plague at Athens (νοσ- 19x, λοιμ- 4x in book 2)",
+  "III.82 — the stasis at Corcyra (Κερκυρ- in book 3)",
+  "V.84-116 — the Melian dialogue (Μηλ- 25x in book 5, the corpus concentration)"
+ ],
+ "why_seated": "Thucydides is the other half of the null's classical-prose pole and has the lowest within-author dispersion measured in this work (0.0097 across eight books). Book V.84-116, the Melian dialogue, is also a rare case of sustained dialogue form inside a historian, which makes him usable as a genre control in ways the register has not yet exploited.",
+ "lines_total": 13528,
+ "locus_note": "Declared loci were verified by stem search against the seated text before being declared. An initial probe on ἐπιτάφ- returned zero and was replaced rather than asserted: the Funeral Oration is present but the modern section-title term is not in the text."
+}

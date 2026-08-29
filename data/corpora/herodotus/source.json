@@ -1,0 +1,40 @@
+{
+ "corpus": "herodotus",
+ "seat": "EA-CORPORA-07/01",
+ "origin": {
+  "repo": "PerseusDL/canonical-greekLit",
+  "commit": "a065c359aab33c33bd17ddc2cac7d27fdc9cd870",
+  "paths": [
+   "data/tlg0016/tlg001 — Historiae, nine books"
+  ]
+ },
+ "edition": "Herodotus, Historiae, Perseus Greek edition (tlg0016.tlg001)",
+ "license": "CC BY-SA (Perseus); underlying edition public domain",
+ "fetched": "2026-08-29",
+ "works": {
+  "count": 9,
+  "units": "one file per book",
+  "per-work": "text/book-NN.txt",
+  "originals": "original/*.xml",
+  "tokens_by_book": {
+   "1": 29067,
+   "2": 24650,
+   "3": 21153,
+   "4": 22386,
+   "5": 14788,
+   "6": 15589,
+   "7": 26696,
+   "8": 15820,
+   "9": 14796
+  }
+ },
+ "normalization": "flat lines from TEI; teiHeader, <note> and <app> stripped; split at book-level textparts",
+ "verified_loci": [
+  "I.1 — the proem and the causes of the war",
+  "I.30 — Croesus and Solon",
+  "VII.228 — the Thermopylae epitaph",
+  "II — the Egyptian logos"
+ ],
+ "why_seated": "Herodotus is a load-bearing dependency of the authorship measurement register and was previously used unseated. He supplies the Ionic prose pole of the empirical null and, with Thucydides, the tightest within-author dispersion in the sample (0.0103 across nine books) — which is what makes the Aristotelian figure of 0.1033 legible as anomalous rather than merely large. The Herodotus|Thucydides pair, exact contemporaries writing one genre, gives the standardised-separation ceiling at 8.867 against which Plato|Aristotle's 1.975 is read.",
+ "lines_total": 4990
+}

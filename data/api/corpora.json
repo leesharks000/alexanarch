@@ -2,8 +2,8 @@
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
  "_generated": "2026-08-21",
- "seats": 45,
- "lines_total": 466775,
+ "seats": 47,
+ "lines_total": 485293,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -1521,6 +1521,59 @@
    "data": {
     "source": "https://www.alexanarch.org/data/corpora/kierkegaard/source.json",
     "manifest": "https://www.alexanarch.org/data/corpora/kierkegaard/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-07/01",
+   "corpus": "herodotus",
+   "edition": "Herodotus, Historiae, Perseus Greek edition (tlg0016.tlg001)",
+   "license": "CC BY-SA (Perseus); underlying edition public domain",
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "a065c359aab33c33bd17ddc2cac7d27fdc9cd870",
+    "paths": [
+     "data/tlg0016/tlg001 — Historiae, nine books"
+    ]
+   },
+   "language": "grc",
+   "lines": 4990,
+   "verified_loci": [
+    "I.1 — the proem and the causes of the war",
+    "I.30 — Croesus and Solon",
+    "VII.228 — the Thermopylae epitaph",
+    "II — the Egyptian logos"
+   ],
+   "why_seated": "Herodotus is a load-bearing dependency of the authorship measurement register and was previously used unseated. He supplies the Ionic prose pole of the empirical null and, with Thucydides, the tightest within-author dispersion in the sample (0.0103 across nine books) — which is what makes the Aristotelian figure of 0.1033 legible as anomalous rather than merely large. The Herodotus|Thucydides pair, exact contemporaries writing one genre, gives the standardised-separation ceiling at 8.867 against which Plato|Aristotle's 1.975 is read.",
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/herodotus/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/herodotus/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-07/02",
+   "corpus": "thucydides",
+   "edition": "Thucydides, Historiae, Perseus Greek edition (tlg0003.tlg001)",
+   "license": "CC BY-SA (Perseus); underlying edition public domain",
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "a065c359aab33c33bd17ddc2cac7d27fdc9cd870",
+    "paths": [
+     "data/tlg0003/tlg001 — Historiae, eight books"
+    ]
+   },
+   "language": "grc",
+   "lines": 13528,
+   "verified_loci": [
+    "I.22 — the method statement on speeches and deeds",
+    "II.34-46 — Pericles' Funeral Oration (Περικλέ- 7x in book 2)",
+    "II.47-54 — the plague at Athens (νοσ- 19x, λοιμ- 4x in book 2)",
+    "III.82 — the stasis at Corcyra (Κερκυρ- in book 3)",
+    "V.84-116 — the Melian dialogue (Μηλ- 25x in book 5, the corpus concentration)"
+   ],
+   "why_seated": "Thucydides is the other half of the null's classical-prose pole and has the lowest within-author dispersion measured in this work (0.0097 across eight books). Book V.84-116, the Melian dialogue, is also a rare case of sustained dialogue form inside a historian, which makes him usable as a genre control in ways the register has not yet exploited.",
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/thucydides/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/thucydides/MANIFEST.sha256"
    }
   }
  ]

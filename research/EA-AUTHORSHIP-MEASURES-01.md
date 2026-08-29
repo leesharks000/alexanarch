@@ -392,6 +392,12 @@ by convention sometimes names the producer instead of the poet.
 
 ## 13. CORPUS AVAILABILITY — what exists, what does not, and how retrieval fails
 
+**T13a — RESOLVED 2026-08-29.** Herodotus and Thucydides, listed as unseated
+dependencies in the first version of this register, are now seated as
+EA-CORPORA-07/01 and 07/02 (deposit #1563). The empirical null's seventeen units
+from these authors now rest on archive-held, commit-pinned material rather than a
+census checkout.
+
 **T13 — Unavailable at any pin.** Iamblichus and Damascius: absent from
 canonical-greekLit and First1KGreek under every author string. Prior attempts
 failed for this reason, not for want of searching.
