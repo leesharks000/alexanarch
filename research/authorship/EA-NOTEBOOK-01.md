@@ -1305,4 +1305,94 @@ text**, addressed past its own moment to a reader who does not yet exist. What
 survives of Sappho 31 survives because Longinus needed it. The corpus that plans
 for that is the corpus that gives future readers something they need.
 
+---
+
+# ROUND 10 — the Lucretian terminus, and a course correction
+
+*Added 2026-08-29. Filed narrow, and marked as a side-branch of the main
+investigation rather than a continuation of it.*
+
+## 34. What was found
+
+Working outward from *Republic* 474d–e — the lover's renaming catalogue, one of
+the six Platonic snub loci (§28–33) — a Latin reception turns up that is
+structurally exact rather than thematic.
+
+**The Platonic list.** ὁ μέν, ὅτι **σιμός, ἐπίχαρις** κληθεὶς ἐπαινεθήσεται … τοῦ
+δὲ τὸ **γρυπὸν βασιλικόν** … μέλανας δὲ **ἀνδρικούς** … λευκοὺς δὲ **θεῶν
+παῖδας** … **μελιχλώρους** δὲ καὶ τοὔνομα οἴει τινὸς ἄλλου **ποίημα** εἶναι ἢ
+**ἐραστοῦ** ὑποκοριζομένου; — *and 'honey-pale', do you think that name is
+anyone's coinage but a lover's?*
+
+**The Lucretian list**, *DRN* 4.1160–69: **nigra melichrus est**, inmunda et fetida
+**acosmos** … caesia **Palladium** … parvula, pumilio, **chariton mia** … magna
+atque inmanis **cataplexis** … **simula Silena** ac Saturast.
+
+Three things make this evidential rather than thematic:
+
+1. **μελίχλωρος → melichrus.** The single euphemism Plato singles out and glosses
+   as manufactured is the one Lucretius puts first. **μελίχλωρος occurs twice in
+   the entire seated Greek corpus** — *Republic* 474e and *Physiognomonica* 0.718,
+   the pseudo-Aristotelian nose-reading treatise that also carries the snub.
+2. **The list stays in Greek inside a Latin poem** — acosmos, dorcas, chariton mia,
+   cataplexis, traulizi, ischnon eromenion, rhadine, philema. A source-marker.
+3. **σιμός survives the crossing with its euphemism swapped.** Plato: σιμός →
+   ἐπίχαρις, charming. Lucretius: **simula → Silena**, a little Silenus — which is
+   what Alcibiades calls Socrates at *Symposium* 215b.
+
+**And the placement is structural.** Book 4 is the book of *simulacra* — 46
+occurrences against 1–4 in every other book. The renaming catalogue sits at line
+1160 of 1287, **position 0.901**, closing the book on images with an image made by
+naming. The diagnosis at 1183–84 states the fault precisely: *stultitiaque ibi se
+damnet, **tribuisse quod illi plus videat quam mortali concedere par est*** — he
+condemns his folly, that he **attributed more than it is right to grant a
+mortal**. Over-attribution. Not deception; predication in excess of the bearer.
+And the therapy at 1189 is *protrahere in lucem*.
+
+So one passage carries three treatments of whether a name may exceed its bearer:
+**Plato the lover coins; Aristotle's snub cannot be defined without its matter;
+Lucretius says the coining is over-attribution and must be undone.**
+
+## 35. What was NOT found, and the correction
+
+**χλωρός is not a new observation. It is this archive's own centerpiece.**
+
+- **#1483, the Ω erratum** already states it as the thesis of the whole Sappho
+  sequence: Fragment 31 decommissions the speaker channel by channel and *names
+  the colour of the writing surface the body is becoming* — χλωροτέρα ποίας, the
+  χλωρός spectrum from living green to the gray-green of cut vegetation, the
+  colour of papyrus.
+- **#1054** lists it as evidentiary clause (c) for the future-reader reading.
+- **#752** reads Diotima as a constructed feminine voice carrying Sapphic lyric
+  into the philosophical corpus, and is marked *a precursor to Socrates as
+  Orthonym*.
+- **#1532** places Plato's Sapphic reception at *Phaedrus* 235c and 250–51
+  (Pender), and sets **Catullus 51 as the calibration floor**: close translation,
+  lossy 3-to-2 compression, polarity inversion at the fifth-stanza position.
+  Material specificity below that line is not promoted.
+- **#1051**, fourth in the STANZA erratum chain, rules that the reconstruction's
+  warrant is **structural, not documentary** — judged by explanatory yield, on the
+  Parry and Prins precedent.
+
+I was about to present a Sappho→Plato χλωρός link as a discovery. It is the
+program's own, in a direction I had not read. **Filed accordingly:** the Lucretian
+terminus goes under #1532's fourth category — *transforms proposed by the
+program* — not under explicit reception, and it is measured against the Catullus
+51 floor rather than promoted past it.
+
+## 36. Course, restated
+
+**This is a side-branch and is marked as one.** The investigation is
+Plato–Aristotle and the extended-corpus thesis. The Lucretian terminus bears on it
+only at one point, and that point is already recorded as **M34**: Aristotle's
+refusal to make Socrates a variable (0/144 against Callias 5/35, p = 0.00022) is
+the same operation Lucretius performs in the other direction — Lucretius strips
+the added name to return the body; Aristotle declines to lend the body's name to a
+variable. Both refuse the substitution. **That is the whole of the connection, and
+nothing further is claimed from it here.**
+
+The Sappho program is a separate line with its own deposits, its own erratum
+chain, and its own evidentiary categories. It is not to be merged into this one.
+
+
 ∮ = 1
