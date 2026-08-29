@@ -1395,4 +1395,137 @@ The Sappho program is a separate line with its own deposits, its own erratum
 chain, and its own evidentiary categories. It is not to be merged into this one.
 
 
+---
+
+# ROUND 11 — the transmission lens, tested by explanatory yield
+
+*Added 2026-08-29. The criterion is the archive's own, from #1051: interpretive
+warrant is **structural rather than documentary**, judged by explanatory yield, on
+the Parry and Prins precedent. Applied here as the standard requires.*
+
+## 37. The wrong test, recorded first
+
+Asked whether the corpus can be read as primarily concerned with authorial
+transmission, voice, survival and authenticity, I ran a **lexical density test** —
+γραφ-, μνημ-, ληθ-, παραδ-, διαδοχ-, σωζ- across nine corpora — and reported that
+Plato and Aristotle score **16.57/10k against a comparison mean of 19.21**, i.e.
+below average, with Josephus and Aristophanes both higher.
+
+**That was the wrong instrument, and #1051 already said so.** The question is not
+whether a corpus says "writing" often. It is whether reading a passage as being
+about transmission yields more than the competing lenses. Substituting word
+frequency for explanatory yield is precisely the failure this notebook has already
+recorded twice — replacing the concept with the words that made it visible.
+
+The lexical result is retained as a fact about vocabulary and **withdrawn as an
+answer to the question asked.**
+
+## 38. The second error, and the data that corrects it
+
+Applying the yield criterion by hand, I concluded that the lens has "near-zero
+yield on the empirical and formal works" — the biology, the meteorology, the
+syllogistic — and high yield only on naming, definition, individuation and
+authorship.
+
+**That is false on the corpus's own distribution.** Marker densities per 10⁴
+tokens across Aristotle's domains:
+
+    domain     tokens   naming-gap  form/matter  transmit/persist  definition  homonym
+    bio       207,442        1.06        16.58            28.15         2.46     1.78
+    nat       118,915        0.76        28.09            26.57        11.35     4.04
+    psych      34,865        2.87        30.40            16.92        18.64     1.72
+    logic     135,052        0.44        22.14             9.70        33.32     9.11
+    ethics    106,454        2.63         8.83            13.90        14.18     1.60
+    metaph     78,946        0.38        89.30            22.93        29.13     8.99
+    polit      88,421        0.34        11.99            15.83         3.62     1.36
+    poet       65,515        1.07        17.10             9.77         7.17     1.68
+
+    EMPIRICAL (bio/nat/psych)   naming-gap 1.14   transmit/persist 26.55
+    THEORETICAL (rest)          naming-gap 0.99   transmit/persist 14.00
+
+**The empirical works carry persistence-and-transmission vocabulary at nearly
+twice the theoretical rate, and the naming-gap reflex slightly more.** The
+correction is not marginal and the original claim is withdrawn.
+
+## 39. What the distribution actually shows: a division of labour
+
+Read across the table, the corpus does not divide into *about transmission* and
+*not about transmission*. It divides into **where the apparatus is theorised and
+where it is used.**
+
+- **Metaphysics theorises the apparatus.** form/matter at **89.30/10k** — three to
+  five times any other domain — with definition at 29.13 and homonymy at 8.99.
+  This is where σιμόν/κοῖλον is argued.
+- **Logic theorises the criteria.** definition 33.32, homonymy 9.11, both the
+  highest in the corpus. *Categories* 1a opens the Organon on **same name,
+  different account** — the authenticity problem in its purest form.
+- **Biology and natural philosophy apply it.** transmit/persist 28.15 and 26.57,
+  the two highest. *Generation of Animals* is a treatise on how **form is
+  transmitted through matter across a gap in the bearer**: the male supplies the
+  λόγος, the female the ὕλη, and what crosses is a motion, not a material.
+- **Psychology and ethics carry the reflex densest.** naming-gap 2.87 and 2.63 —
+  the two highest — where classes are reached that Greek has no word for and
+  Aristotle coins (*NE* 1108a: πειρατέον αὐτοὺς ὀνοματοποιεῖν).
+
+That is not a lens with a periphery. It is a lens whose subject is theorised in
+one region and exercised in another.
+
+## 40. Case-by-case yield, against the standard lenses
+
+**High yield — the lens consumes residue the standard reading leaves.**
+
+- *Metaphysics* Z, the snub: standard lens gives "an example of enmattered form,"
+  and has **no account of the bearer-selection** — Callias five times, Socrates
+  zero, p = 0.00022 (M34). The transmission lens does.
+- *Letter* II 314c: standard lens says "spurious, a forger overreaching," which
+  explains the sentence's falsity and **not its survival**. A corpus carrying
+  *οὐδ' ἔστιν σύγγραμμα Πλάτωνος* cannot be closed, and was copied for two
+  millennia by people who could see the problem.
+- *Letter* XIII 360a: standard lens treats the transmitted athetesis and the
+  σύμβολον-credential as two unrelated accidents. The lens reads one device.
+- *Phaedo* 59b: standard lens offers a modesty topos. It does not explain why the
+  only self-mention outside the *Apology* **withholds the author from the scene
+  his corpus most needs authenticated.**
+- *Parmenides* 132a: standard lens says Plato criticises his own theory. It does
+  not explain the **refusal to answer**, which under the lens is a copying engine.
+
+**Genuine yield, previously denied.**
+
+- *Generation of Animals*: transmission of form across a bearer-gap is the
+  treatise's subject, not a redescription of it.
+- *Historia Animalium*: 12 naming-gap instances, the densest in the corpus. The
+  classification project **is** the indexing problem, which EA-FLOOD-01 identifies
+  as a transmission mechanism.
+- *De Anima*: the snub as τόδε ἐν τῷδε, and Book III on whether νοῦς is separable
+  — *is there something that survives the bearer* is the transmission question in
+  its own words.
+- *Physics* II: πῶς ὁριστέον τῷ φυσικῷ, as snub or as concave — **does the account
+  carry its matter** is the question, put by Aristotle.
+
+**Low yield, stated honestly.** Descriptive meteorology — comets, halos, the Milky
+Way. Stretches of *HA* that are pure observation: the hippopotamus is snub-faced
+because hippopotamuses are snub-faced. The syllogistic figures. Here the standard
+lens is complete and the transmission reading adds nothing it does not import.
+
+## 41. The claim, at the size the evidence carries
+
+**Not maximum yield.** The lens does not consume the whole corpus, and any version
+that claims to should be refused on the grounds this notebook has twice recorded:
+a reading absorbing every observation makes no predictions.
+
+**Not near-zero on the empirical.** That was measured and is false.
+
+**What is defensible:** the transmission lens has **graded yield with no domain at
+zero**, highest where the corpus is most load-bearing — the substance books, the
+Organon's opening on homonymy, the *Theaetetus* framed by an unindividuable mark,
+the *Parmenides*' unanswered destruction — and lowest at the descriptive
+periphery. The theoretical works state the apparatus; the empirical works run it.
+
+And that gradient is itself the finding, because it is what a **stewarded
+technology** looks like and not what a universal thesis looks like. A thesis
+applies everywhere equally. A technology is theorised in one place and exercised
+in another, and its exercise leaves denser traces than its theory does —
+transmit/persist at 26.55 in the biology against 14.00 in the philosophy.
+
+
 ∮ = 1
