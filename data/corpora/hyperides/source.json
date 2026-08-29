@@ -1,0 +1,60 @@
+{
+ "corpus": "hyperides",
+ "seat": "EA-CORPORA-08/09",
+ "origin": {
+  "repo": "PerseusDL/canonical-greekLit",
+  "commit": "a065c359aab33c33bd17ddc2cac7d27fdc9cd870",
+  "paths": [
+   "data/tlg0030"
+  ]
+ },
+ "edition": "Hyperides, Perseus Greek edition (tlg0030)",
+ "license": "CC BY-SA (Perseus); underlying edition public domain",
+ "fetched": "2026-08-29",
+ "normalization": "flat lines from TEI; teiHeader, note and app stripped; one file per work; works under 400 tokens dropped",
+ "works": {
+  "count": 6,
+  "units": "one file per work",
+  "per-work": "text/<id>.txt",
+  "list": [
+   {
+    "id": "tlg001",
+    "tokens": 1651,
+    "lines": 406
+   },
+   {
+    "id": "tlg002",
+    "tokens": 1138,
+    "lines": 305
+   },
+   {
+    "id": "tlg003",
+    "tokens": 2909,
+    "lines": 889
+   },
+   {
+    "id": "tlg004",
+    "tokens": 2729,
+    "lines": 137
+   },
+   {
+    "id": "tlg005",
+    "tokens": 2668,
+    "lines": 866
+   },
+   {
+    "id": "tlg006",
+    "tokens": 2450,
+    "lines": 615
+   }
+  ]
+ },
+ "lines_total": 3218,
+ "verified_loci": [
+  "the Funeral Oration — tlg006, opening ἐπὶ τῷδε τῷ τάφῳ περί τε Λεωσθένους. An initial probe for ἐπιταφ- returned zero: the modern title is not in the text.",
+  "Against Athenogenes (Ἀθηνογεν- present)"
+ ],
+ "why_seated": "contemporary of Demosthenes, unrelated",
+ "locus_note": "Declared loci verified by stem search against the seated text before declaration. Two initial probes failed on modern titles absent from the ancient text and were corrected rather than asserted.",
+ "caveat": "PAPYRUS CONDITION — Hyperides survives only on papyrus with lacunae, and the Perseus transcription carries word-splits at the breaks (μελ λόντων, ῥηθήσες θαι, στ ρατη γοῦ) plus 'Frag. I' markers inline. TOKEN-LEVEL MEASURES ON THIS SEAT ARE UNSAFE without re-joining; declared here rather than discovered later."
+}

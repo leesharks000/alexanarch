@@ -2,8 +2,8 @@
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
  "_generated": "2026-08-21",
- "seats": 47,
- "lines_total": 485293,
+ "seats": 56,
+ "lines_total": 511070,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -1574,6 +1574,220 @@
    "data": {
     "source": "https://www.alexanarch.org/data/corpora/thucydides/source.json",
     "manifest": "https://www.alexanarch.org/data/corpora/thucydides/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-08/01",
+   "corpus": "isaeus",
+   "edition": "Isaeus, Perseus Greek edition (tlg0017)",
+   "license": "CC BY-SA (Perseus); underlying edition public domain",
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "a065c359aab33c33bd17ddc2cac7d27fdc9cd870",
+    "paths": [
+     "data/tlg0017"
+    ]
+   },
+   "language": "grc",
+   "lines": 677,
+   "verified_loci": [
+    "Or. 1 — On the Estate of Cleonymus (Κλεωνυμ- present)",
+    "κλήρ- inheritance vocabulary throughout — the corpus is entirely inheritance law"
+   ],
+   "why_seated": "pupil of Isocrates; TEACHER OF DEMOSTHENES per [Plut.] Vit. X Orat. 844b-c and Dion. Hal. Isaeus 1",
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/isaeus/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/isaeus/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-08/02",
+   "corpus": "demosthenes",
+   "edition": "Demosthenes, Perseus Greek edition (tlg0014)",
+   "license": "CC BY-SA (Perseus); underlying edition public domain",
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "a065c359aab33c33bd17ddc2cac7d27fdc9cd870",
+    "paths": [
+     "data/tlg0014"
+    ]
+   },
+   "language": "grc",
+   "lines": 8449,
+   "verified_loci": [
+    "the Philippics (Φιλιππ- present)",
+    "On the Crown (στεφαν- present)"
+   ],
+   "why_seated": "STUDENT OF ISAEUS — the documented master-student link in this field",
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/demosthenes/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/demosthenes/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-08/03",
+   "corpus": "lysias",
+   "edition": "Lysias, Perseus Greek edition (tlg0540)",
+   "license": "CC BY-SA (Perseus); underlying edition public domain",
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "a065c359aab33c33bd17ddc2cac7d27fdc9cd870",
+    "paths": [
+     "data/tlg0540"
+    ]
+   },
+   "language": "grc",
+   "lines": 2745,
+   "verified_loci": [
+    "Or. 12 — Against Eratosthenes (Ἐρατοσθεν- present)",
+    "φόνο- homicide vocabulary"
+   ],
+   "why_seated": "unrelated contemporary, same genre",
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/lysias/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/lysias/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-08/04",
+   "corpus": "isocrates",
+   "edition": "Isocrates, Perseus Greek edition (tlg0010)",
+   "license": "CC BY-SA (Perseus); underlying edition public domain",
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "a065c359aab33c33bd17ddc2cac7d27fdc9cd870",
+    "paths": [
+     "data/tlg0010"
+    ]
+   },
+   "language": "grc",
+   "lines": 8354,
+   "verified_loci": [
+    "Panegyricus (πανηγυρ- present)",
+    "Antidosis (ἀντιδοσ- present)"
+   ],
+   "why_seated": "teacher of Isaeus per the tradition; second-order link",
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/isocrates/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/isocrates/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-08/05",
+   "corpus": "antiphon",
+   "edition": "Antiphon, Perseus Greek edition (tlg0028)",
+   "license": "CC BY-SA (Perseus); underlying edition public domain",
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "a065c359aab33c33bd17ddc2cac7d27fdc9cd870",
+    "paths": [
+     "data/tlg0028"
+    ]
+   },
+   "language": "grc",
+   "lines": 475,
+   "verified_loci": [
+    "the three Tetralogies — tlg002/003/004, each opening Κατηγορία φόνου. NOTE: τετραλογία is a modern title and does NOT appear in the text; an initial probe for it returned zero and was corrected rather than asserted.",
+    "Or. 5 On the Murder of Herodes, Or. 6 On the Chorus Boy"
+   ],
+   "why_seated": "unrelated, earliest of the canon",
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/antiphon/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/antiphon/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-08/06",
+   "corpus": "aeschines",
+   "edition": "Aeschines, Perseus Greek edition (tlg0026)",
+   "license": "CC BY-SA (Perseus); underlying edition public domain",
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "a065c359aab33c33bd17ddc2cac7d27fdc9cd870",
+    "paths": [
+     "data/tlg0026"
+    ]
+   },
+   "language": "grc",
+   "lines": 1093,
+   "verified_loci": [
+    "Against Ctesiphon (Κτησιφων- present)",
+    "Against Timarchus (Τιμαρχ- present)"
+   ],
+   "why_seated": "rival of Demosthenes, not a student — negative control",
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/aeschines/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/aeschines/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-08/07",
+   "corpus": "andocides",
+   "edition": "Andocides, Perseus Greek edition (tlg0027)",
+   "license": "CC BY-SA (Perseus); underlying edition public domain",
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "a065c359aab33c33bd17ddc2cac7d27fdc9cd870",
+    "paths": [
+     "data/tlg0027"
+    ]
+   },
+   "language": "grc",
+   "lines": 519,
+   "verified_loci": [
+    "On the Mysteries (μυστηρι- present)"
+   ],
+   "why_seated": "unrelated contemporary",
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/andocides/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/andocides/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-08/08",
+   "corpus": "dinarchus",
+   "edition": "Dinarchus, Perseus Greek edition (tlg0029)",
+   "license": "CC BY-SA (Perseus); underlying edition public domain",
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "a065c359aab33c33bd17ddc2cac7d27fdc9cd870",
+    "paths": [
+     "data/tlg0029"
+    ]
+   },
+   "language": "grc",
+   "lines": 247,
+   "verified_loci": [
+    "Against Demosthenes (Δημοσθεν- present)"
+   ],
+   "why_seated": "later, unrelated",
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/dinarchus/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/dinarchus/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-08/09",
+   "corpus": "hyperides",
+   "edition": "Hyperides, Perseus Greek edition (tlg0030)",
+   "license": "CC BY-SA (Perseus); underlying edition public domain",
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "a065c359aab33c33bd17ddc2cac7d27fdc9cd870",
+    "paths": [
+     "data/tlg0030"
+    ]
+   },
+   "language": "grc",
+   "lines": 3218,
+   "verified_loci": [
+    "the Funeral Oration — tlg006, opening ἐπὶ τῷδε τῷ τάφῳ περί τε Λεωσθένους. An initial probe for ἐπιταφ- returned zero: the modern title is not in the text.",
+    "Against Athenogenes (Ἀθηνογεν- present)"
+   ],
+   "why_seated": "contemporary of Demosthenes, unrelated",
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/hyperides/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/hyperides/MANIFEST.sha256"
    }
   }
  ]

@@ -1,0 +1,44 @@
+{
+ "corpus": "aeschines",
+ "seat": "EA-CORPORA-08/06",
+ "origin": {
+  "repo": "PerseusDL/canonical-greekLit",
+  "commit": "a065c359aab33c33bd17ddc2cac7d27fdc9cd870",
+  "paths": [
+   "data/tlg0026"
+  ]
+ },
+ "edition": "Aeschines, Perseus Greek edition (tlg0026)",
+ "license": "CC BY-SA (Perseus); underlying edition public domain",
+ "fetched": "2026-08-29",
+ "normalization": "flat lines from TEI; teiHeader, note and app stripped; one file per work; works under 400 tokens dropped",
+ "works": {
+  "count": 3,
+  "units": "one file per work",
+  "per-work": "text/<id>.txt",
+  "list": [
+   {
+    "id": "tlg001",
+    "tokens": 13592,
+    "lines": 371
+   },
+   {
+    "id": "tlg002",
+    "tokens": 12330,
+    "lines": 264
+   },
+   {
+    "id": "tlg003",
+    "tokens": 18452,
+    "lines": 458
+   }
+  ]
+ },
+ "lines_total": 1093,
+ "verified_loci": [
+  "Against Ctesiphon (Κτησιφων- present)",
+  "Against Timarchus (Τιμαρχ- present)"
+ ],
+ "why_seated": "rival of Demosthenes, not a student — negative control",
+ "locus_note": "Declared loci verified by stem search against the seated text before declaration. Two initial probes failed on modern titles absent from the ancient text and were corrected rather than asserted."
+}
