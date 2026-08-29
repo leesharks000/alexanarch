@@ -2,8 +2,8 @@
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
  "_generated": "2026-08-21",
- "seats": 42,
- "lines_total": 379895,
+ "seats": 45,
+ "lines_total": 466775,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -1439,6 +1439,89 @@
     "manifest": "https://www.alexanarch.org/data/corpora/pessoa/MANIFEST.sha256"
    },
    "note": "orthonym seated 2026-08-29 per erratum #1561; four voices, hold-out is analytical"
+  },
+  {
+   "seat": "EA-CORPORA-06/01",
+   "corpus": "xenophon",
+   "edition": "Xenophon, Opera, Perseus Greek editions (tlg0032)",
+   "license": "CC BY-SA (Perseus); underlying editions public domain",
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "a065c359aab3",
+    "paths": [
+     "data/tlg0032 — 14 works"
+    ]
+   },
+   "language": "grc",
+   "lines": 12973,
+   "verified_loci": [
+    "Memorabilia I.1 — the charge against Socrates",
+    "Apology 14 — Xenophon's version of the Delphic oracle",
+    "Anabasis I.1",
+    "Hellenica I.1"
+   ],
+   "why_seated": "Xenophon is the genre calibrator and an edge-figure candidate at once. One hand across Socratic dialogue, history, encomium and technical treatise, which is the only way to separate the genre effect from the author effect in this feature space — a decomposition that corrected two errors in the archive's own measurements. He is also, per the Chaerephon problem, a candidate position at the configuration's edge: he preserves a separate version of the oracle at Apology 14, and his Socrates occupies the civic-memorial register that Plato's cannot.",
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/xenophon/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/xenophon/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-06/02",
+   "corpus": "aristophanes",
+   "edition": "Aristophanes, Comoediae, Perseus Greek editions (tlg0019)",
+   "license": "CC BY-SA (Perseus); underlying editions public domain",
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "a065c359aab3",
+    "paths": [
+     "data/tlg0019 — 11 plays"
+    ]
+   },
+   "language": "grc",
+   "lines": 24011,
+   "verified_loci": [
+    "Clouds 104, 144-168 — Chaerephon inside the Thinkery",
+    "Clouds — the comic deformation the Apology answers at 18b-19c",
+    "Frogs — produced by Philonides",
+    "Acharnians — produced by Callistratus"
+   ],
+   "why_seated": "Aristophanes is the second edge-figure candidate and the archive's strongest documented case that authorial identity was obscurable in this exact period and circle. His first three plays were produced under other men's names, he describes the practice himself at Wasps 1017-22, and he continued it after establishing his own — so the civic record carries the producer rather than the poet, and a contemporary prosecution could not fix which man authored the Babylonians. He also stages Chaerephon, and the Suda's entry on Chaerephon is sourced from the scholia to Clouds 144, which places the biographical record downstream of the comic text.",
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/aristophanes/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/aristophanes/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-06/03",
+   "corpus": "kierkegaard",
+   "edition": "Danish originals: Enten-Eller I-II (Reitzel, 1878) via da.wikisource; Frygt og Bæven, Forord, and signed works via archive.org scans",
+   "license": "Public domain (author d. 1855); Wikisource transcription CC BY-SA",
+   "origin": {
+    "repos": [
+     "da.wikisource.org (action=parse, djvu transclusions resolved)",
+     "archive.org Danish volumes"
+    ],
+    "identifiers": [
+     "frygtogbvendial00kiergoog",
+     "forordmorskabsl00kiergoog",
+     "detteskalsigess00kiergoog",
+     "dmmerselvtilsel00kiergoog"
+    ]
+   },
+   "language": "dan",
+   "lines": 49896,
+   "verified_loci": [
+    "Enten-Eller I — A's papers, ed. Victor Eremita",
+    "Enten-Eller II — B's papers",
+    "Frygt og Bæven — Johannes de Silentio",
+    "Forord — Nicolaus Notabene"
+   ],
+   "why_seated": "Kierkegaard is the second case with ground truth. He acknowledged the pseudonymous authorship in print — 'A First and Last Explanation' appended to the Concluding Unscientific Postscript in 1846, and again in On My Work as an Author in 1851 — so the grouping is documented rather than inferred, exactly as Pessoa's is by the 1935 letter. Two independent modern configurations with disclosure make a calibration set rather than a single anecdote. And Enten-Eller is the symbolon in its plainest form: two halves of a token, A's papers and B's, found in a desk by an editor who is himself a construction, where neither half argues the book and the fit between them does.",
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/kierkegaard/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/kierkegaard/MANIFEST.sha256"
+   }
   }
  ]
 }

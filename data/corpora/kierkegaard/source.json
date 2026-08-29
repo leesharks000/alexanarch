@@ -1,0 +1,50 @@
+{
+ "corpus": "kierkegaard",
+ "seat": "EA-CORPORA-06/03",
+ "origin": {
+  "repos": [
+   "da.wikisource.org (action=parse, djvu transclusions resolved)",
+   "archive.org Danish volumes"
+  ],
+  "identifiers": [
+   "frygtogbvendial00kiergoog",
+   "forordmorskabsl00kiergoog",
+   "detteskalsigess00kiergoog",
+   "dmmerselvtilsel00kiergoog"
+  ]
+ },
+ "edition": "Danish originals: Enten-Eller I-II (Reitzel, 1878) via da.wikisource; Frygt og Bæven, Forord, and signed works via archive.org scans",
+ "license": "Public domain (author d. 1855); Wikisource transcription CC BY-SA",
+ "fetched": "2026-08-29",
+ "works": {
+  "count": 20,
+  "by_voice": {
+   "victor-eremita-B": 3,
+   "signed": 8,
+   "victor-eremita-A": 7,
+   "nicolaus-notabene": 1,
+   "johannes-de-silentio": 1
+  },
+  "units": "one file per work or part, prefixed by declared voice",
+  "per-work": "text/<voice>--<Title>.txt",
+  "originals": "original/*.txt and dawikisource-kierkegaard.tar.gz"
+ },
+ "normalization": "Wikisource pages are djvu transclusions and return only a <pages index=...> stub via prop=revisions; action=parse is required to resolve them, and an unresolved fetch of this corpus yields nothing while reporting no error. HTML stripped to flat lines; archive.org OCR taken as scanned, unrepaired.",
+ "verified_loci": [
+  "Enten-Eller I — A's papers, ed. Victor Eremita",
+  "Enten-Eller II — B's papers",
+  "Frygt og Bæven — Johannes de Silentio",
+  "Forord — Nicolaus Notabene"
+ ],
+ "voice_partition": {
+  "_note": "THE PARTITION IS THE WORKS' OWN. Each text is filed under the name its title page declares — Victor Eremita as editor of Enten-Eller, with A's and B's papers kept apart as the volumes keep them; Johannes de Silentio; Nicolaus Notabene; and the signed works under Kierkegaard's own name. The seat attributes nothing the books do not attribute.",
+  "victor-eremita-B": "3 texts, 133,089 words",
+  "signed": "8 texts, 118,674 words",
+  "victor-eremita-A": "7 texts, 127,722 words",
+  "nicolaus-notabene": "1 texts, 26,560 words",
+  "johannes-de-silentio": "1 texts, 43,099 words"
+ },
+ "coverage": "PARTIAL AND DECLARED. Four pseudonymous works of roughly a dozen are seated. Absent: Gjentagelsen (Constantin Constantius), Begrebet Angest (Vigilius Haufniensis), Philosophiske Smuler and Afsluttende uvidenskabelig Efterskrift (Johannes Climacus), Stadier paa Livets Vei (Hilarius Bogbinder), Sygdommen til Døden and Indøvelse i Christendom (Anti-Climacus). No open Danish full-text source was found for these at the pinned access. Three of nineteen Wikisource pages did not resolve. The shortfall is stated rather than closed over, and the seat should not be treated as the Kierkegaard corpus.",
+ "why_seated": "Kierkegaard is the second case with ground truth. He acknowledged the pseudonymous authorship in print — 'A First and Last Explanation' appended to the Concluding Unscientific Postscript in 1846, and again in On My Work as an Author in 1851 — so the grouping is documented rather than inferred, exactly as Pessoa's is by the 1935 letter. Two independent modern configurations with disclosure make a calibration set rather than a single anecdote. And Enten-Eller is the symbolon in its plainest form: two halves of a token, A's papers and B's, found in a desk by an editor who is himself a construction, where neither half argues the book and the fit between them does.",
+ "lines_total": 49896
+}
