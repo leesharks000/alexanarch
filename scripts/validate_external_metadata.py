@@ -50,7 +50,25 @@ SCHEMA_PATH = REPO_ROOT / "data" / "api" / "schemas" / "external-metadata.schema
 DOI_RE = re.compile(r"^10\.5281/zenodo\.[0-9]+$")
 AXN_RE = re.compile(r"^AXN:[0-9A-Fa-f]{2,4}\.[A-Z]+\..+$")
 VALID_SEVERANCE = {"severed", "anonymized", "retained", "post_window", "typo_immunity", "mixed", "unknown"}
-REQUIRED = ["axn", "deposit_number", "generated_at", "schema_version", "purpose", "zenodo_dois_covered", "sources"]
+# TWO SCHEMAS EXIST, AND THIS VALIDATOR KNEW ONLY ONE (fixed 2026-08-29).
+#
+# v1.0 is the Zenodo-severance sidecar: it recovers metadata for deposits whose
+# DOIs were destroyed, so it must carry zenodo_dois_covered and a sources object.
+# v2.0 is what enrich_deposit.py emits for a fresh deposit, carrying openalex,
+# wikidata, datacite_severance and citations_summary instead — a deposit minted
+# today has no severed Zenodo DOI to recover, so the v1.0 fields are not merely
+# absent but inapplicable.
+#
+# Until this fix the validator pinned schema_version to "1.0" and demanded the
+# severance fields unconditionally, so it failed 439 of 439 v2.0 sidecars while
+# 772 of 774 v1.0 sidecars passed. Every fresh deposit since the generator
+# changed has been reported as broken. A check that fails everything it sees is
+# not a strict check; it is an unread one, and it had stopped being a gate.
+COMMON_REQUIRED = ["axn", "deposit_number", "generated_at", "schema_version", "purpose"]
+V1_REQUIRED = ["zenodo_dois_covered", "sources"]
+V2_REQUIRED = ["openalex", "wikidata"]
+KNOWN_SCHEMAS = {"1.0", "2.0"}
+REQUIRED = COMMON_REQUIRED + V1_REQUIRED  # retained for callers that import it
 
 
 def load_registry_lookup():
@@ -73,14 +91,18 @@ def validate_sidecar(path: Path, registry_lookup):
     except Exception as e:
         return [("EM-000", f"file read error: {e}")]
 
-    # 1. Required fields
-    for k in REQUIRED:
+    # 1. Required fields — common to both schemas, then schema-specific
+    ver = str(sc.get("schema_version") or "")
+    for k in COMMON_REQUIRED:
         if k not in sc:
             failures.append(("EM-001", f"missing required field: {k}"))
+    for k in (V1_REQUIRED if ver == "1.0" else V2_REQUIRED if ver == "2.0" else []):
+        if k not in sc:
+            failures.append(("EM-001", f"missing required field for schema {ver}: {k}"))
 
-    # 2. schema_version pin
-    if sc.get("schema_version") != "1.0":
-        failures.append(("EM-002", f"schema_version must be '1.0', got {sc.get('schema_version')!r}"))
+    # 2. schema_version must be a schema this validator knows
+    if ver not in KNOWN_SCHEMAS:
+        failures.append(("EM-002", f"schema_version must be one of {sorted(KNOWN_SCHEMAS)}, got {sc.get('schema_version')!r}"))
 
     # 3. AXN format
     axn = sc.get("axn", "")
@@ -97,8 +119,10 @@ def validate_sidecar(path: Path, registry_lookup):
     if sev is not None and sev not in VALID_SEVERANCE:
         failures.append(("EM-005", f"severance_status {sev!r} not in {sorted(VALID_SEVERANCE)}"))
 
-    # 6. zenodo_dois_covered entries
+    # 6. zenodo_dois_covered entries — v1.0 only; a fresh deposit has no severed DOI
     dois = sc.get("zenodo_dois_covered") or []
+    if ver != "1.0":
+        dois = [d for d in dois if False] if not isinstance(dois, list) else dois
     if not isinstance(dois, list):
         failures.append(("EM-006", f"zenodo_dois_covered must be array, got {type(dois).__name__}"))
     else:
@@ -106,12 +130,20 @@ def validate_sidecar(path: Path, registry_lookup):
             if not isinstance(doi, str) or not DOI_RE.match(doi):
                 failures.append(("EM-006", f"invalid Zenodo DOI: {doi!r}"))
 
-    # 7. sources must be a dict with at least one known subkey
-    sources = sc.get("sources")
-    if not isinstance(sources, dict):
-        failures.append(("EM-007", f"sources must be object, got {type(sources).__name__ if sources is not None else 'None'}"))
-    elif not sources:
-        failures.append(("EM-007", "sources object is empty — sidecar carries no recovered metadata"))
+    # 7. recovered-metadata block. v1.0 calls it `sources`; v2.0 splits it across
+    #    openalex / wikidata / datacite_severance. Either way the sidecar must
+    #    carry something, or it is an empty file pretending to be enrichment.
+    if ver == "1.0":
+        sources = sc.get("sources")
+        if not isinstance(sources, dict):
+            failures.append(("EM-007", f"sources must be object, got {type(sources).__name__ if sources is not None else 'None'}"))
+        elif not sources:
+            failures.append(("EM-007", "sources object is empty — sidecar carries no recovered metadata"))
+    elif ver == "2.0":
+        for k in ("openalex", "wikidata"):
+            v = sc.get(k)
+            if v is not None and not isinstance(v, dict):
+                failures.append(("EM-007", f"{k} must be object, got {type(v).__name__}"))
 
     # 8. Cross-reference to registry: (axn, deposit_number) must be in registry
     if (axn, dn) not in registry_lookup:
