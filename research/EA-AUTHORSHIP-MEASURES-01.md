@@ -444,6 +444,35 @@ stated of their own subjects — political power and philosophy in a ruler, two
 poetic arts in a maker. What the corpus supplies is the structure, not its
 application.
 
+---
+
+## 21. EA-KERMA-01 — the reconstruction
+
+*Added 2026-08-29. sha256 51be41d0b6ee194c7a65654f96387395…*
+
+A separate document assembles the M32 loci into an argument and states where
+heteronymy would sit in it. Recorded here as a pointer, not a finding.
+
+**The move:** the σύμβολον is not a broken object but an object broken **by
+agreement** — the break line is the credential, not the damage. Rubble cannot be
+recognised; a token is recognised precisely at its fracture. So: *you cannot
+un-cut human nature, you can cut it on purpose.* Heteronymy would convert
+κερματισμός from a wound into a method — the fragmentation ratified rather than
+reversed, and thereby made legible.
+
+**Why it resolves 395b against 473d:** it accepts the denial as premise (no single
+undivided nature holds two arts) and satisfies the requirement in a coordinated
+multiplicity whose parts **sum rather than resemble**. ∮ = 1.
+
+**Three consequences it lands on:** recognition by λόγος not ὕλη, which would
+explain why every substrate instrument in this register returned null (M4–M28);
+the vacant centre as specification rather than loss, making a non-writing founder
+the form the centre takes; and the configuration as **αὐτεπιτακτική**, the class
+of M31 that Plato coined and left with its genera unentered.
+
+**Standing caution, carried in the document itself:** Plato assembles none of it.
+The logic is available in the corpus; the corpus does not perform it.
+
 ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
 **0.0258** — inside the M1 same-author band — while the best single heteronym is
 Campos at 0.0498, then Caeiro 0.0903, Reis 0.2205. **Pooled beats best individual
@@ -993,5 +1022,34 @@ comedy and tragedy together.
 stated of their own subjects — political power and philosophy in a ruler, two
 poetic arts in a maker. What the corpus supplies is the structure, not its
 application.
+
+---
+
+## 21. EA-KERMA-01 — the reconstruction
+
+*Added 2026-08-29. sha256 51be41d0b6ee194c7a65654f96387395…*
+
+A separate document assembles the M32 loci into an argument and states where
+heteronymy would sit in it. Recorded here as a pointer, not a finding.
+
+**The move:** the σύμβολον is not a broken object but an object broken **by
+agreement** — the break line is the credential, not the damage. Rubble cannot be
+recognised; a token is recognised precisely at its fracture. So: *you cannot
+un-cut human nature, you can cut it on purpose.* Heteronymy would convert
+κερματισμός from a wound into a method — the fragmentation ratified rather than
+reversed, and thereby made legible.
+
+**Why it resolves 395b against 473d:** it accepts the denial as premise (no single
+undivided nature holds two arts) and satisfies the requirement in a coordinated
+multiplicity whose parts **sum rather than resemble**. ∮ = 1.
+
+**Three consequences it lands on:** recognition by λόγος not ὕλη, which would
+explain why every substrate instrument in this register returned null (M4–M28);
+the vacant centre as specification rather than loss, making a non-writing founder
+the form the centre takes; and the configuration as **αὐτεπιτακτική**, the class
+of M31 that Plato coined and left with its genera unentered.
+
+**Standing caution, carried in the document itself:** Plato assembles none of it.
+The logic is available in the corpus; the corpus does not perform it.
 
 ∮ = 1
