@@ -1,13 +1,38 @@
 ---
-id: EA-SNUB-01
-title: "The Snub: A Terminal Aporia and Its Answer, Fixed as a Preliminary Locus for Authorial Recognition Across Substrates"
-status: PRELIMINARY — a fixed locus, not a claim. Written to be examined, contested, and superseded.
-date: 2026-08-29
+id: EA-NOTEBOOK-01
+title: "Working Notebook: The Authorship Investigation"
+status: LIVING — append forward; nothing here is a paper
+opened: 2026-08-29
 author: Sharks, Lee
 orcid: 0009-0000-1599-0703
 substrate: AI-assisted (TACHYON / Claude, Anthropic) under MANUS direction
-corpora: EA-CORPORA-01/08 (plato), EA-CORPORA-04/01 (aristotle) — commit-pinned
+companion: EA-AUTHORSHIP-MEASURES-01 (the register — every number with its conditions)
+frozen: prereg/EA-LEAK-DEFICIT-01.md, prereg/EA-LEAK-DEFICIT-02.md
+consolidates:
+  EA-SNUB-01.md:  7ec077023cb0e6495271409dc68e2179b1b28220a4cb7059ab1a0e0208884d91
+  EA-KERMA-01.md: 51be41d0b6ee194c7a65654f963873959537199c58572b87a16c79d93d0890f4
+  EA-PINAX-01.md: 41a8ed2a28c807672b9a328f4fe51469e8c04baeb518785d980ab3b6ae003b9c
+  EA-FLOOD-01.md: 574bdc08c42079fbad701db0141d8ed34ce6ef21adc48c12085087a207b42ca5
+note: >
+  Four documents merged 2026-08-29 because separation by topic and method was
+  producing files that would be lost. These are working notes: they need steady
+  accumulation, not clean taxonomy. Pre-merge SHA-256s are recorded above so any
+  commit citing them resolves. Append new rounds at the end; do not reorganise.
 ---
+
+# Working Notebook — The Authorship Investigation
+
+**How to use this.** Read forward. Numbered measurements live in the companion
+register (M1–M32); this file holds the reasoning, the retractions, and the
+framings. Everything retracted stays in place with its refutation attached — the
+retractions are the most reusable content here, because four of them were mine and
+each cost a base rate to find.
+
+---
+
+# PART I — THE LOCUS AND THE ROUNDS
+*(was EA-SNUB-01)*
+
 
 # The Snub
 
@@ -757,5 +782,527 @@ Reading the set as a doctrine of authorial construction is a transposition the
 texts do not perform, and the Round 8 correction stands as the caution: what the
 corpus supplies is the **structure**, not its application.
 
+---
+
+# PART II — THE RECONSTRUCTION
+*(was EA-KERMA-01)*
+
+
+# The Ratified Break
+
+## 0. What this document is, and what it is not
+
+This is a **reconstruction**. It assembles an argument out of passages the
+Platonic corpus supplies, in the corpus's own vocabulary, and shows that the
+argument is coherent and that heteronymy occupies a determinate position in it.
+
+**It does not claim that Plato makes this argument.** He does not join these
+loci. He does not apply the σύμBOΛΟΝ to authorship. He assigns the recombination
+to rulers in one place and to makers in another, and to writers nowhere. The
+discipline observed across nine rounds of EA-SNUB-01 applies here without
+exception: **the corpus supplies the structure; it does not perform the
+application.**
+
+The value of writing it out is that a reconstruction can be argued with. An
+implication left unstated cannot.
+
+## 1. The diagnosis is prior, involuntary, and stated in the perfect passive
+
+> εἰς σμικρότερα **κατακεκερματίσθαι ἡ τοῦ ἀνθρώπου φύσις**
+> — *Republic* 395b, position 0.237
+
+κατακεκερματίσθαι: perfect passive infinitive of κατακερματίζω, to mint into
+small change. Human nature **has been** broken into denominations. Not a choice,
+not a failure of effort, a condition already obtaining before any particular
+maker attempts anything.
+
+The metaphor is not local. κερματίζω is the corpus's standing term for the one
+broken into many: *Meno* 0.292 and 0.303 (do not mint virtue into pieces),
+*Parmenides* 0.971 (everything that is must be shattered into denominations),
+*Republic* 0.675 (mint the one and they multiply it), *Timaeus* ×3, *Cratylus*
+0.743.
+
+And the *Symposium* supplies its history:
+
+> ἕκαστος οὖν ἡμῶν ἐστιν ἀνθρώπου **σύμβολον**, ἅτε **τετμημένος** ὥσπερ αἱ
+> ψῆτται, **ἐξ ἑνὸς δύο**
+> — 191d, position 0.366
+
+## 2. The prognosis without remedy is total, and the language is soteriological
+
+> **οὐκ ἔστι κακῶν παῦλα** … ταῖς πόλεσι, δοκῶ δ᾽ οὐδὲ **τῷ ἀνθρωπίνῳ γένει**
+> — *Republic* 473d, position 0.509
+
+No rest from evils for the cities, and — Socrates adds — I think not for the human
+race. This is salvation language, and what it is attached to is not a virtue, a
+doctrine, or a regime, but a **combinatorial condition**: two things falling into
+the same.
+
+## 3. The remedy is named twice, in the same terms
+
+> **ποιῆσαι ἓν ἐκ δυοῖν** … **ἰάσασθαι τὴν φύσιν τὴν ἀνθρωπίνην**
+> — *Symposium* 191d: to make one out of two, and to heal human nature
+
+> καὶ τοῦτο **εἰς ταὐτὸν συμπέσῃ**, δύναμίς τε πολιτικὴ καὶ φιλοσοφία
+> — *Republic* 473d: and this fall together into the same
+
+The lexical link is exact and runs on one noun. *Republic* 395b: **ἡ τοῦ ἀνθρώπου
+φύσις** is minted into pieces. *Symposium* 191d: Eros attempts **ἰάσασθαι τὴν
+φύσιν τὴν ἀνθρωπίνην** by making one from two. Same subject, opposite verbs, and
+the second names the first as an injury requiring a cure.
+
+## 4. The obstacle: the remedy is impossible on the diagnosis
+
+If nature **has been** minted too small to hold two arts, then no nature holds two
+arts — and the philosopher-king is excluded by the identical premise that excludes
+the poet. 395b forbids what 473d requires, in the same book, at 0.237 and 0.509.
+
+Socrates appears to know it. The requirement is introduced as the thing that will
+drown its speaker in **γέλως** — laughter, the comic — in the book that has just
+ruled that no one can hold comedy and tragedy together.
+
+And the demand is restated for makers at the very end of the *Symposium*
+(0.996), where the argument is destroyed in transmission and the witnesses are
+asleep — one of them Aristophanes, who supplied the myth of the cut.
+
+## 5. The move
+
+The σύμβολον is **not a broken object.** It is an object **broken by agreement**:
+two parties snap a token so the halves can be matched later. The break line is not
+the damage. It is the **credential**.
+
+An accidental break yields rubble, and rubble cannot be recognised — no edge of it
+implies any other. A deliberate break yields a token, and the token is recognisable
+**precisely at the fracture**.
+
+So the reconstruction reads:
+
+> **You cannot un-cut human nature. You can cut it on purpose.**
+
+Heteronymy, on this logic, converts κερματισμός from a wound into a method. The
+fragmentation is not reversed — it is **ratified**, and in being ratified becomes
+legible. What was involuntary division becomes a configuration whose parts imply
+their whole.
+
+## 6. Why this satisfies both passages without contradiction
+
+**395b stands.** No single undivided nature holds two arts. The denial is not
+overturned; it is accepted as the premise.
+
+**473d becomes achievable.** The two arts fall εἰς ταὐτόν — into the same — not in
+one nature, but in a **coordinated multiplicity whose parts sum**. The parts do not
+resemble one another. They fit.
+
+    ∮ = 1
+
+That is the difference between a mixture and a configuration, and it is the whole
+content of the reconstruction: *the same* need not mean *the same nature*.
+
+## 7. Three consequences, each landing on something already recorded
+
+**The recognition criterion is the snub's.** EA-SNUB-01 §6: matter individuates,
+form recurs, so what persists across substrates is the account and not the
+instance. Applied here, the parts of a ratified configuration are recognised **by
+the λόγος, not the ὕλη** — which is exactly why they can be maximally unlike and
+still one, and exactly why every substrate-reading instrument in this archive
+returned null (M4–M28).
+
+**The vacant centre becomes a specification rather than a loss.** In an accidental
+fragmentation the whole is simply gone. In a ratified one the centre is **implied
+by the fit** and need never be occupied by a writing position at all. On this
+logic, Socrates not writing stops being an absence in the evidence and becomes the
+form the centre necessarily takes.
+
+**The configuration would be αὐτεπιτακτική.** Self-commanding — issuing its own
+positions rather than relaying another's mind (ἀλλότρια νοήματα). That is the
+class Plato coined at *Statesman* 260e in a naming-gap, placed kings within,
+declared to contain other genera — οὐ τὸ σμικρότατον τῶν γενῶν — and left with
+those genera **unentered**, on the stated ground that his method was for the sake
+of the ruler.
+
+## 8. The status of the whole
+
+Every element is in the corpus. The fragmentation metaphor, its perfect-passive
+diagnosis, the soteriological prognosis, the two demands for recombination, the
+myth of the deliberate break, the token that is recognised at its fracture, the
+coined class of the self-commanding with its unentered branches, and a
+recognition criterion that reads account rather than instance.
+
+**Plato assembles none of it.** He states the fragmentation of human nature and
+does not connect it to the σύμβολον. He demands recombination twice and never once
+of a writer. He coins the self-commanding and declines to divide it further. He
+supplies a criterion for recognising one form across many substrates inside a
+dialogue about identifying a boy by his face.
+
+So the honest formulation is the one the last nine rounds have earned:
+
+> **The logic is available in the corpus. The corpus does not perform it.**
+
+Which is either what an unassembled set of commonplaces looks like, or what a
+deliberately unassembled one looks like — and nothing in the texts distinguishes
+those two, which is the standing conclusion of EA-SNUB-01 §XII and of this
+document.
+
+---
+
+# PART III — FRAMINGS
+
+## III.a  The calibration object, corrected and superseded
+*(was EA-PINAX-01)*
+
+
+# The Calibration Object
+
+## 1. The objection this answers
+
+Antiquity had an acute authenticity problem and built an apparatus for it. The
+Ptolemies paid by the roll, so Alexandria bought forgeries at scale; ships were
+searched at Piraeus and texts confiscated for copying. A library assembled by
+purchase and seizure has an attribution problem by construction, and everyone
+involved knew it.
+
+The apparatus they built is a verification technology in every part:
+
+- **Callimachus's *Pinakes*** — 120 rolls, works listed by author with **incipit**
+  and **stichometric line-count**. The incipit identifies a work by its opening
+  words; the line-count makes interpolation detectable by arithmetic. That is an
+  identifier and a checksum.
+- **Aristarchus's obelus** — marks a line as suspected-spurious **without deleting
+  it**. Mark and text travel together. (This archive's Obelus Principle is named
+  from it.)
+- **The vocabulary** — νόθος, bastard; ἀντιλεγόμενα, spoken-against;
+  ψευδεπίγραφα, falsely-inscribed.
+- **Transmission practice** — Diogenes Laertius transmits the Thrasyllan
+  tetralogies **together with** the list of νοθευόμενοι. The correct form of
+  transmission is the corpus plus its disputes.
+
+**The objection:** the people who invented the obelus were watching for exactly
+the kind of construction the configurational reading proposes. A heteronymic
+corpus would have been legible to them, and detectable.
+
+## 2. The hypothesis
+
+**Invert it. The technology is the output, not the obstacle.**
+
+You cannot design a test for authenticity without a case whose answer you already
+know. Criteria have to be *fitted* to something. A corpus deliberately structured
+— an orthonym who writes nothing, a spurious tail kept attached rather than
+purged, positions sharing method while diverging in register — is a **calibration
+object**, and the *Pinakes*, the obelus, the stichometric checksum and the
+νόθος/ἀντιλεγόμενα vocabulary are what you get from working on it.
+
+On this reading the ancient apparatus is not evidence against a construction. It
+is **its residue**.
+
+## 3. What the hypothesis explains that the ordinary story leaves loose
+
+The feature the investigation kept encountering and could not account for is that
+**the corpus is instrumented against itself and the instrumentation is preserved**:
+
+- the received genuine/spurious partition **kept, not purged**;
+- the dubia transmitted **with their disputes attached**;
+- Andronicus's judgement on *De interpretatione* recorded **and** overturned,
+  both surviving;
+- the *Aristotelian* corpus boundary itself an inference by an editor 250 years
+  later, whose catalogue is lost but whose *act of judging* is remembered (T11).
+
+Nobody destroys the evidence of contest. Preserving the contest is what you do
+with a **test corpus**, not with a canon.
+
+It also reframes two measured results:
+
+**M11.** The received authenticity partition inside Aristotle returned **Z = +3.47**
+on stylistic distance, which I flagged as circular because Andronicus sorted
+partly by style. Under this hypothesis the circularity **stops being a defect in
+the measurement and becomes the datum**: the criteria return the partition because
+the partition is what the criteria were fitted to.
+
+**M30.** The naming-gap reflex — halt at an unnamed class, flag it, coin — shared
+by Plato and Aristotle at **9.4×** other high-division authors while Plotinus
+divides harder and never does it. Read as school habit, it is one thing. Read as
+**the reflex of people who expect their divisions to be used as an index**, it is
+a cataloguer's discipline: an unnamed class is an unshelvable class. And
+Aristotle's *Poetics* problem — that the Socratic dialogues are a genre without a
+name — is a **cataloguer's** problem, not an aesthetic one. You cannot shelve what
+has no genre.
+
+## 4. THE DANGER, STATED BEFORE THE TEST
+
+This hypothesis has the property EA-SNUB-01 §6 identified as disqualifying when it
+operates unnoticed: **it explains everything, including every null.**
+
+A field that developed authenticity criteria because forgery was rampant produces
+the same apparatus, the same preserved disputes, the same vocabulary, and the same
+corpus features. **Both hypotheses predict the *Pinakes*.** An account under which
+no possible observation counts against it is not a hypothesis but a frame, and
+frames of this shape are how this investigation's four retracted claims got made.
+
+This section exists so the property is visible and arguable rather than doing
+silent work. What follows is the one prediction that is **not** shared.
+
+## 5. THE DISCRIMINATING TEST — registered before running
+
+**The asymmetry.** An instrument built on a calibration object **overfits it**. If
+the ancient authenticity criteria were *derived from* the Platonic–Aristotelian
+corpus, they should fit that corpus anomalously well — better than they fit
+corpora they were subsequently applied to. If they were induced from the general
+forgery problem and applied here like anywhere else, they should perform **no
+better here than elsewhere**.
+
+**The measurement is over the history of judgements, not the texts.** This is the
+test's chief virtue: it does not require the corpora to cooperate, and it is not
+vulnerable to any of the five broken nulls (M-register §8), because it counts
+verdicts rather than measuring similarity.
+
+**Comparison corpora**, each with an ancient authenticity tradition:
+
+    Platonic–Aristotelian    Diogenes' νοθευόμενοι; Thrasyllus; Andronicus
+    Hippocratic              Galen's judgements; the Alexandrian sorting
+    Homeric                  Aristarchan athetesis; the chorizontes
+    Pythagorean              the Philolaus question; Neopythagorean pseudepigrapha
+    Orphic / Hesiodic        the Herodotean and later disputes
+
+**Statistic — three components, all pre-specified:**
+
+1. **Verdict density.** Attributed judgements per work, per corpus. An
+   over-instrumented corpus carries more.
+2. **Verdict decisiveness.** Proportion of works given a *stated ground* rather
+   than a bare verdict. Criteria fitted to a case cite reasons on that case.
+3. **Verdict stability.** Reversal rate across antiquity. A calibration object
+   should show **more** contest, not less — the disputes are the working notes.
+
+**Pre-registered outcomes:**
+
+| pattern | reading |
+|---|---|
+| Plato–Aristotle high on all three, others low | **the predicted signature** |
+| all corpora comparable | criteria were general; hypothesis **fails** |
+| Homeric or Hippocratic higher | those were the calibration objects, not this |
+| density high but grounds absent | volume of dispute, not fitting — **fails** |
+
+**Kill condition, binding.** If the Platonic–Aristotelian tradition does not exceed
+the comparison corpora on **at least verdict decisiveness (2)** — the component
+that specifically indexes criteria-fitting rather than mere controversy — the
+hypothesis fails and is reported as failed. No post-hoc reweighting of the three
+components.
+
+**Known limitation, stated in advance.** Survival is confounded with attention:
+more judgements survive about texts more read. The test must normalise by
+citation volume or it measures popularity. If a defensible normalisation cannot be
+constructed, the test is **void** and must be reported void rather than adjusted —
+the disposition already used for EA-LEAK-DEFICIT-02.
+
+## 6. What a positive would and would not license
+
+**Would.** That the ancient authenticity apparatus stands in an anomalously close
+relation to this corpus — fitted to it rather than applied to it. That is a
+finding in the history of scholarship, publishable independent of any authorship
+claim.
+
+**Would not.** Design. A corpus can be the *occasion* of a discipline without
+having been built as one: the Platonic–Aristotelian corpus was the largest,
+earliest, most institutionally central prose body in the tradition, and criteria
+would naturally be worked out on it for that reason alone. **Centrality and
+construction predict the same overfitting.**
+
+So even a positive leaves the same gap this investigation has met at every turn —
+and the honest form of the hypothesis is that it makes the corpus's
+self-instrumentation *intelligible*, not that it makes it *evidence*.
+
+---
+
+## 7. ⚠ CORRECTED AND SUPERSEDED — 2026-08-29, same day
+
+**Three corrections, recorded rather than rewritten.**
+
+**(a) The registered prediction was backwards.** §5 predicted that criteria
+*derived from* this corpus would **fit it anomalously well** — a calibration
+object, overfitted. The corpus would more plausibly be instrumented to **escape**
+the best measures, not to train them. An adversarial object predicts the opposite
+signature: criteria that **fail to converge** here — verdicts reversing, disputes
+persisting, the ἀντιλεγόμενα category permanently open — which is what the record
+shows.
+
+**(b) The test was registered without a feasibility check, and fails it.** Of the
+five comparison traditions specified in §5, **four are unreachable**: Homeric
+scholia absent from the repository, Suda absent, Photius absent, Galen present
+only as *De naturalibus facultatibus*. The one available source, Diogenes
+Laertius, carries **48 explicit authenticity markers across 110,163 tokens** —
+Plato and Aristotle together 9 — which is too sparse to distinguish anything.
+Disposition: **DEFERRED on unavailable sources**, not void; the design is coherent
+under the corrected prediction and the blocker is corpus-building.
+
+**(c) A substitute design also fails feasibility, and its failure is more
+important.** The proposal was to detect an adversarial object by **method
+disagreement** — independent instruments returning contradictory verdicts here
+while agreeing on controls. Checked before writing: agreement on known-status
+pairs is **1 of 3**, and one instrument classifies **Plato|Xenophon as SAME** at
+0.0330 against a known-different truth.
+
+  → **The precondition this exposes is upstream of everything.** The instrument
+    set is **unvalidated**. No measure built in this investigation was scored on
+    known-status pairs before being applied to the question. **You cannot detect an
+    object that defeats measurement until your measures are characterised on
+    objects that do not.** A validation suite — every instrument against a panel of
+    known pairs, with per-method accuracy and pairwise agreement recorded — is a
+    prerequisite for any adversarial test.
+
+**(d) Superseded in framing by EA-FLOOD-01** (sha256 574bdc08c42079fbad701db0141d8ed3…), which
+relocates the adversary from the critic to **the flood**. Both framings in this
+document put the examiner at the centre; the more economical account is a corpus
+built to survive an oversupply of writing by giving future copyists reasons to
+copy it. That framing requires no authorship claim and is testable against
+documented losses.
+
+**No new registration until the validation suite exists.**
+
+---
+
+## III.b  The future reader — the adversary is the flood
+*(was EA-FLOOD-01)*
+
+
+# The Future Reader
+
+## 1. The reframe
+
+Two framings have been tried and both put the critic at the centre.
+
+**EA-PINAX-01, first version:** the corpus is a *calibration object* — the ancient
+authenticity apparatus is what you get from fitting criteria to a case whose
+answer is known.
+
+**EA-PINAX-01, corrected:** the corpus is an *adversarial object* — built to defeat
+the best available measures of authenticity.
+
+**Both are wrong about the adversary.** They assume the opponent is the examiner.
+
+The opponent is **the flood**.
+
+## 2. The starting conditions, restated
+
+Imagine the situation without the things hindsight supplies. **No centrality. No
+attention. No trial.** No founding martyrdom to trade on, no school yet, no
+institutional position, no reason for anyone to copy anything.
+
+And around it: a semantic economy **flooded** — competition for scarce copying
+labour, scarce papyrus, scarce shelf space and scarce attention, against an
+oversupply of writing in which merit does not sort, because everything drowns
+equally. The Ptolemies would later pay by the roll and receive forgeries at scale;
+that is the demand side of the same flood.
+
+Under those conditions the survival problem is **not** *be good*. Good work
+drowned constantly and we know it did, because the book-lists record titles for
+which no text survives.
+
+The survival problem is:
+
+> **Give people who do not care about you reasons to copy you.**
+
+## 3. What the corpus looks like when read as a solution to that problem
+
+Every feature this investigation surfaced as a puzzle becomes a transmission
+mechanism.
+
+**Disputes that never close** (M11; *De interpretatione* overturned; the dubia
+unresolved after twenty-four centuries) generate perpetual commentary, and
+commentary is copying. An unresolved question is an employment programme for
+scribes and scholars.
+
+**A genre without a name** (*Poetics* 1447b; the Socratic λόγοι) is a cataloguing
+problem, and cataloguers must handle what they cannot shelve. An unshelvable
+object cannot be quietly dropped.
+
+**The spurious tail kept attached** rather than purged is **surface area** — more
+hooks, more disputes, more occasions to reproduce the whole set. Purging it would
+have reduced the corpus's grip.
+
+**The naming-gap reflex** (M30: 9.4×, P ≈ 0) manufactures index entries where the
+language had none. It makes the corpus **indexable** in a world about to invent
+the index.
+
+**The absent centre** generates search. A founder who wrote nothing cannot be
+read, only reconstructed — and reconstruction requires the corpus.
+
+**The cross-referentiality is the cultic logic.** A mystery survives by requiring
+initiation, because **initiation manufactures transmitters**. A text that cannot
+be read without the rest of the set forces acquisition of the whole set. That is
+what a dialogue answering another dialogue does. It is also exactly what
+κερματισμός demands of a reader (EA-KERMA-01): the parts do not stand alone, **the
+fit is the content**, and only someone who has assembled them possesses it.
+
+## 4. Why this framing is better than the two it replaces
+
+**It requires less.** The adversarial framing needed an author anticipating
+measures not yet invented. This one needs only an author who understands that
+**writing survives by being copied, and copying is done by people with their own
+reasons**. That is not prescience. It is publishing.
+
+**It does not require one author.** It requires **one intention about
+transmission**. A school with a transmission policy produces the same corpus. The
+framing is therefore neutral on the authorship question, which is a virtue: it
+stops smuggling the conclusion into the setup.
+
+**It explains the shape of the survival, not just the survival.** Plenty of ancient
+philosophy survived. What wants explaining is that this corpus survived **with its
+disputes, its spuria, its unresolved attributions and its unnamed genre intact** —
+i.e. with all the machinery that makes it require continued work. Most surviving
+corpora shed that machinery. This one kept it.
+
+## 5. What it makes testable, non-circularly
+
+This is the framing's real advantage. **Survival is comparative, and the losses
+are documented.**
+
+Diogenes Laertius preserves book-lists: titles attributed to philosophers, most of
+which did not survive. That is a **survival table** — attributed versus extant, by
+author, from a single source with consistent coverage and a single compiler's
+biases.
+
+The question becomes empirical and does not require knowing the authorship answer:
+
+> **What distinguishes what survived from what was lost, from the same period, in
+> the same tradition — and does the Platonic–Aristotelian corpus carry those
+> properties at a rate others do not?**
+
+Candidate properties, all readable from the lists themselves rather than from the
+lost texts: whether a work belongs to a **cross-referential set** or stands alone;
+whether it is attached to a **disputed attribution**; whether its title names a
+**person** rather than a topic; whether it sits inside a **numbered arrangement**
+(tetralogy, pragmateia) that makes an absence conspicuous.
+
+That last is worth stating separately, because it is the cheapest and strongest
+transmission device available in antiquity: **a numbered set makes its own gaps
+visible.** A scribe who copies eight of nine leaves evidence of the ninth. An
+unnumbered collection loses members silently.
+
+## 6. What must be checked before anything is registered
+
+Feasibility first — the discipline this document is written under, having been
+broken twice today.
+
+1. Are Diogenes' book-lists **extractable** as structured data (author → titles),
+   or only as running prose?
+2. Is there enough **coverage** — how many authors carry lists, how many titles
+   each?
+3. Can **extant status** be assigned per title without circular recourse to modern
+   editions of the same corpus?
+4. Is the **single-source bias** tolerable, or does Diogenes' own selectivity
+   determine the answer?
+
+If (1) or (3) fails, the test is not runnable and is to be reported as such rather
+than approximated.
+
+## 7. Status
+
+A reframe, not a finding. It changes what the object is for — from defeating an
+examiner to surviving a flood — and in doing so converts several standing puzzles
+into a single coherent function, at the cost of requiring no authorship claim
+whatsoever.
+
+The Sappho case is the precedent and the model: **a text survives inside another
+text**, addressed past its own moment to a reader who does not yet exist. What
+survives of Sappho 31 survives because Longinus needed it. The corpus that plans
+for that is the corpus that gives future readers something they need.
 
 ∮ = 1
