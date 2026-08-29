@@ -95,11 +95,14 @@ Xenophon and Thucydides than Plato is from Homer.
 
 ## 3. WHAT ARISTOTLE'S HETEROGENEITY IS
 
-**M10 — Exceeds multi-author pools.** Aristotle's mean internal dispersion
-(0.1033) sits at the **100th percentile of 200 synthetic five-author pools** drawn
-from Plato, Philo, Xenophon, Plotinus and Josephus and matched to n=30
-(pool mean 0.0665, sd 0.0062, max 0.0819). Aristotle-against-himself is more
-dispersed than a random mix of five different authors.
+**M10 — Exceeds multi-author pools. ⚠ SUPERSEDED BY M28 — the anomaly is the
+subject, not the author.** Aristotle's mean internal dispersion (0.1033) sits at
+the 100th percentile of 200 synthetic five-author pools drawn from Plato, Philo,
+Xenophon, Plotinus and Josephus and matched to n=30 (pool mean 0.0665, sd 0.0062,
+max 0.0819).
+→ The figure is correct and the inference drawn from it was wrong. **Holding
+subject constant removes it entirely** (M28). Do not quote 0.1033 as an
+authorship anomaly.
 
 **M11 — What the dispersion tracks.** Partition tests inside Aristotle, 30 works,
 3,000 random partitions each:
@@ -117,9 +120,59 @@ dispersed than a random mix of five different authors.
     stylistic structure it was built from. The two hypotheses predict the same
     measurement.
 
-**M12 — Conservative headline.** *The Aristotelian corpus is the most internally
-heterogeneous single-author object in the sample, and that heterogeneity is
-primarily register.* Not "Aristotle does not bear the marks of single authorship."
+**M12 — Conservative headline. ⚠ REVISED BY M28.** The earlier form —
+*the most internally heterogeneous single-author object in the sample, and that
+heterogeneity is primarily register* — was directionally right and understated
+the cause. **Corrected: the heterogeneity is the object. Aristotle-within-object
+is ordinarily consistent, and in ethics is one of the most consistent writers in
+the sample.**
+
+**M28 — THE SUBJECT DETERMINES THE SHAPE.** *(2026-08-29, supersedes M10, revises
+M11 and M12.)*
+
+Domain effect, measured per author with 2,000 random partitions:
+
+    author      n    within-domain   cross-domain   ratio       Z
+    Aristotle   26         0.0667         0.0993   1.489   +4.54
+    Plato       20         0.0499         0.0592   1.186   +1.75
+
+Subject determines Aristotle's shape **about 2.6× more strongly than Plato's**.
+
+And holding subject constant, the M10 anomaly **disappears**. Aristotle's
+within-domain dispersion overall is **0.0571** — Plato's total figure is 0.0570.
+Domain by domain, against 400 synthetic five-work multi-author pools
+(mean 0.0669, sd 0.0208):
+
+    ethics   0.0226  →   0.5th pct of multi-author pools
+    psych    0.0390  →   6.5th
+    nat      0.0465  →  16.2th
+    polit    0.0584  →  39.0th
+    bio      0.0680  →  56.8th
+    poet     0.0707  →  61.2th
+    logic    0.0942  →  88.5th
+
+**Within ethics, Aristotle is tighter than 99.5% of multi-author pools** —
+tighter than Josephus (0.0264), tighter than Philo (0.0197) relative to the pool
+baseline. What made him look like many authors is that he wrote about many
+things.
+
+**The reading this supports.** This is mimesis in the *Republic* III sense moved
+from voice to form: the tragedian disappears into his character, the treatise
+disappears into its object. On that reading Aristotle **has no style because
+having one would be a failure of the method** — a consistent manner across ethics
+and biology would mean the manner was not taking its shape from the thing.
+
+The residual ordering agrees: **ethics tightest, logic loosest.** Ethics has one
+object and one register; logic ranges over categories, interpretation, analytics
+and sophistical refutations — the widest internal object-space of the group. The
+remaining dispersion tracks the heterogeneity of the subject matter *within* each
+domain, not the author.
+
+**What this does not establish.** That the corpus is by one hand. A school
+trained to a method that conforms to its object would produce the same
+measurement, and the object-conformity is a property of the method, not of a
+person. It removes an anomaly rather than supplying a positive finding — but the
+anomaly it removes was the strongest one the investigation had.
 
 ---
 
@@ -496,11 +549,18 @@ standardised separation is on the *close* side (M5). One of five NT criteria hol
 (M22), and it is the one not measurable from texts. No whole-text operator exists
 (M23). The one ancient case with a checkable target reads negative (M16).
 
-What is anomalous is **Aristotle's internal heterogeneity** (M10), and its
-strongest structure is subject matter (M11) — with an authenticity signal that is
-confounded by the criteria that produced the authenticity labels, and a corpus
-boundary that is an inference by an editor whose judgments have been overturned
-(T11).
+What was anomalous was **Aristotle's internal heterogeneity** (M10) — and as of
+M28 it is not. Holding subject constant removes it: within-domain 0.0571 against
+Plato's total 0.0570, and within ethics tighter than 99.5% of multi-author pools.
+The heterogeneity is the object, which is a claim about method rather than about
+hands. The authenticity signal remains confounded by the criteria that produced
+the authenticity labels, and the corpus boundary remains an inference by an editor
+whose judgments have been overturned (T11).
+
+**With M28, the investigation has no standing statistical anomaly.** Every
+computational lead is closed or explained. What remains is philological: M26,
+the 61% of the Platonic corpus written in the form its own taxonomy expels, and
+the *Republic*/*Symposium* pair the base rate declined to adjudicate.
 
 The strongest unrefuted observation in the entire line of work is a philological
 one: **the same formula, asserted and denied, on the exact question at issue,
