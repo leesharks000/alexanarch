@@ -1472,106 +1472,169 @@ stone.**
 
 ---
 
-## 29. M40 — THE PRIORITY CLAIM: ARISTOTLE DENIES CUMULATIVE INHERITANCE FOR THE SYLLOGISTIC
+## 29. M40 — THE SUPPRESSED PREMISE: A META-PERFORMATIVE PRIORITY CLAIM
 
-*Added 2026-08-29. The first passage where Aristotle states his relation to
-predecessors directly, and states it as NOT inheritance. Includes an error of mine
-recorded as an error.*
+*Rewritten 2026-08-29 after the earlier version was twice wrong — first for
+psychological framing, then for a lexical test that got the answer backwards. This
+is the entryway to the paper and is treated at full weight.*
 
-**The posture problem.** A student shaped by a master is legitimate **by the
-shaping**. διαδοχή *is* the credential; an acknowledged heir does not litigate his
-standing, he simply has it. But the Aristotelian corpus behaves like a **claimant
-in a contested estate** — building a detection apparatus (M35), cataloguing the
-master's definitional faults inside a methodology textbook (four times, *Topica*,
-Round 14), refusing to lend the founder's mark to a variable (M34), and completing
-what was **abandoned** rather than extending what was finished (Round 13).
+## 29.1 The three texts
 
-**The closing of the *Sophistici Elenchi*, SE 183b–184b, states it outright.**
+**(i) Plato names the apparatus as a method, in his own voice.**
+*Phaedrus* 266b:
 
-Aristotle first describes what inheritance looks like, using the succession word:
+> τούτων δὴ ἔγωγε αὐτός τε **ἐραστής**, ὦ Φαῖδρε, **τῶν διαιρέσεων καὶ συναγωγῶν**,
+> **ἵνα οἷός τε ὦ λέγειν τε καὶ φρονεῖν**
+
+*Of these I am myself a lover, Phaedrus — of the **divisions and collections** —
+**in order to be able to speak and to think**.*
+
+Not a one-off argument. A named procedure, held as such, **for the sake of a
+capacity**. And *Meno* 86e names a second: *συγχώρησον **ἐξ ὑποθέσεως** αὐτὸ
+σκοπεῖσθαι … **ὥσπερ οἱ γεωμέτραι*** — investigation from a hypothesis, on the
+geometers' model. To which the *Parmenides* adds the third: the exhaustive
+derivation of consequences from *εἰ ἓν ἔστιν* and *εἰ ἓν μὴ ἔστιν*.
+
+**(ii) Aristotle classifies that apparatus as syllogistic.**
+*Prior Analytics* I.31, 46a31:
+
+> ὅτι δ᾽ ἡ διὰ τῶν γενῶν **διαίρεσις μικρόν τι μόριόν ἐστι τῆς εἰρημένης μεθόδου**,
+> ῥᾴδιον ἰδεῖν· **ἔστι γὰρ ἡ διαίρεσις οἷον ἀσθενὴς συλλογισμός**· ὃ μὲν γὰρ δεῖ
+> δεῖξαι **αἰτεῖται**, συλλογίζεται δ᾽ ἀεί τι τῶν ἄνωθεν.
+
+*Division through genera is **a small part of the method described**; for division
+is **a kind of weak syllogism** — it begs what it must prove, and always deduces
+something from higher up.*
+
+This is the load-bearing sentence. Aristotle does not place Platonic division
+*outside* his subject as a different sort of thing. He places it **inside**:
+*μόριον τῆς εἰρημένης μεθόδου*, a part of the stated method, and *συλλογισμός* by
+species — defective, question-begging, but of the kind.
+
+**(iii) Aristotle denies that the apparatus had any predecessor.**
+*Sophistici Elenchi* 183b–184b. He first defines what ordinary development looks
+like, by name and by lineage:
 
 > οἱ δὲ νῦν εὐδοκιμοῦντες παραλαβόντες παρὰ πολλῶν **οἷον ἐκ διαδοχῆς** κατὰ μέρος
 > προαγαγόντων οὕτως ηὐξήκασι, **Τισίας** μὲν μετὰ τοὺς πρώτους, **Θρασύμαχος** δὲ
 > μετὰ Τισίαν, **Θεόδωρος** δὲ μετὰ τοῦτον
 
-Rhetoric grew *as if by succession*, in parts, from many named hands.
-
-Then he denies it of his own subject:
+and then denies it of his own:
 
 > ταύτης δὲ τῆς πραγματείας **οὐ τὸ μὲν ἦν τὸ δ᾽ οὐκ ἦν προεξειργασμένον, ἀλλ᾽
 > οὐδὲν παντελῶς ὑπῆρχεν** … περὶ δὲ τοῦ συλλογίζεσθαι **παντελῶς οὐδὲν εἴχομεν
 > πρότερον ἄλλο λέγειν**
 
-*It is not that part was worked out and part was not: **there was absolutely
-nothing.*** And he closes by asking for a verdict — *λοιπὸν ἂν εἴη πάντων ὑμῶν
-ἔργον … τοῖς δ᾽ εὑρημένοις **πολλὴν ἔχειν χάριν*** — pardon what is omitted, give
-much gratitude for what is found.
+*Not that part was worked out and part was not — **there was absolutely nothing.***
 
-**A plea to judges, in the treatise on distinguishing the genuine from the
-apparent, disclaiming διαδοχή for itself.**
+## 29.2 The contradiction, in Aristotle's own terms
 
-**M40a — the datum, without the counterfactual.** *(An earlier version argued "a
-passed-over student would claim succession harder." **Cut**: it is an unmeasurable
-psychological counterfactual and it imports the biographical succession drama whose
-evidentiary standing is in dispute.)*
+    APr I.31    Platonic division IS a syllogism, and a part of the method
+    Phaedrus    division IS Plato's stated method, held for the sake of a capacity
+    SE 184b     of this method, nothing whatever existed before
 
-The hard datum is stronger without it, and is three-part:
-**(i)** Aristotle knows the concept of cumulative inheritance;
-**(ii)** he describes it explicitly for rhetoric, by name and by lineage —
-*οἷον ἐκ διαδοχῆς*, Tisias, Thrasymachus, Theodorus;
-**(iii)** he explicitly denies that developmental history **for the syllogistic**.
+**The usual escape is not available.** One would ordinarily say Aristotle means
+the *formal system* only, and that Plato merely reasoned well without theorising
+inference. But Aristotle forecloses that himself: he does not say division is
+something other than syllogism, he says it **is** syllogism — weak, and *a part of
+the method described*. The predecessor is classified as an instance of the thing
+whose instances are then denied to have existed.
 
-**That is what is established. It does not establish that he disclaims Platonic
-inheritance simpliciter**, and the title of this entry has been corrected to match.
+## 29.3 Why this is a syllogism and not a complaint
 
-**Scope, stated exactly.** The *Elenchi* makes the priority claim of the
-**syllogistic only**. The rest of the corpus behaves the same way — completions,
-detection apparatus, assay vocabulary, the excluded twin — **without saying so**.
-What the two readings dispute is whether the claim is true of one subject and
-false of the rest, or is the position the whole corpus occupies.
+The passage does not assert the contradiction. It **supplies two premises and
+withholds the third**, and the third is the Platonic corpus:
 
-**M40b — ⚠ AN ERROR OF MINE, RECORDED AS ONE.** In presenting this I wrote, as
-background fact, that *Aristotle did not get the Academy; Speusippus did, then
-Xenocrates; Aristotle left Athens* — offering it as the ordinary explanation of
-the claimant posture.
+    1.  If an apparatus existed in a predecessor, mine arose by succession.   [SE]
+    2.  Mine did not arise by succession: nothing whatever existed before.    [SE]
+    3.  Plato contains a prior apparatus — and I have classified it as
+        syllogistic.                                              [APr, UNSPOKEN
+                                                                   AT SE]
+    ∴   Plato does not occupy the predecessor relation.
 
-**That is a received-partition claim imported as fact, which M33 and M36 exist to
-forbid.** Speusippus's succession is attested by the same tradition whose
-partitions are under test. And under M35's frame it is not a fact about persons at
-all: **taking possession of a corpus is what a standing claim looks like from the
-outside**, standing is conferred by acknowledgment and is re-litigable, and a
-successful claim tells you nothing about who made the works. Speusippus holding
-the Academy is consistent with his having successfully claimed standing over
-material that was not his to hold.
+**Premise 3 is deliberately not spoken in the passage.** The reader must supply
+it, from a corpus he already possesses. That makes the passage an **enthymeme
+whose suppressed premise is an authorial corpus.**
 
-**⚠ AND THE CORRECTION OVERCORRECTED.** Writing that Speusippus's succession is
-"not a fact about persons at all" converts *this evidence is tradition-mediated*
-into *this evidence cannot count* — which does not follow. **Evidence can be late,
-interested, dependent and tradition-mediated and still be evidence.** It gets
-**weighted and provenance-tagged, not deleted.** Otherwise H_H acquires exactly the
-universal escape that M38 criticises in H_S: any historical evidence for distinct
-persons is dismissed as an artifact of the apparatus whose reliability the
-hypothesis disputes. **The succession traditions enter as E_succession with source,
-provenance and dependence explicitly modelled** — neither settled fact nor
-discarded.
+And the recursion is exact: *the claim that syllogistic had no predecessor is
+intelligible only by syllogistically processing its predecessor.* The instrument
+required to detect the contradiction is the instrument whose invention is being
+claimed. Aristotle closes by asking the audience to judge — *τοῖς δ᾽ εὑρημένοις
+πολλὴν ἔχειν χάριν*, give much gratitude for **what has been found** — while
+excusing *τοῖς παραλελειμμένοις*, **what has been left out**. What a syllogism
+teaches a reader to recover is precisely the premise left out.
 
-**What survives:** the succession was **contested**. That is not in
-dispute on any reading — the *Elenchi* closes with a plea to judges, the *Letters*
-transmit their own athetesis, the corpus keeps its spuria. **Contested standing is
-the fact; who was right about it is the question**, and I answered it in passing
-while claiming to record evidence. Second time today I supplied received history as
-though it were evidence (see M36).
+## 29.4 What the structure does that a declaration could not
 
-**M40c — consequence for the terrain map. ⚠ NARROWED.** The defensible form:
-**an Academic succession list establishes attributed institutional standing; it
-does not by itself establish textual paternity.** That is enough to stop the
-succession list functioning as a silent authorship axiom.
+Had Aristotle written *Plato's logical work is mine*, that would be a declaration
+— forgeable, deniable, dismissible, and destructive of the construction it
+declares.
 
-*("A record of who prevailed" is a **configurational interpretation** of the
-institutional record and cannot enter the terrain map as a neutral datum. Withdrawn
-from that role.)* It belongs beside T11 (the corpus
-boundary is Andronicus's inference) and T12 (the one external anchor certifies the
-compiler of attribution records), **not in the background as settled context.**
+Instead the claim is encoded **in the very technology whose invention it asserts**.
+To receive it, a reader must know how to operate the thing. So:
+
+> **the ownership claim, if it is one, is authenticated by performance rather than
+> by declaration.**
+
+That fits the standing frame exactly (M35): legitimacy is conferred by
+acknowledgment and established by what can be executed, not by an external token —
+and M35b records Aristotle grading **personation above coin-forgery** on one scale.
+An assay that must be performed cannot be counterfeited by assertion.
+
+## 29.5 The operation crosses the authorial boundary
+
+Neither corpus contains the complete argument.
+
+    PLATO      supplies the apparatus — the suppressed premise
+    ARISTOTLE  supplies the classification of it as syllogism, and the denial
+    THE READER supplies the inference
+
+Three positions: **premise → inferential apparatus → recognition** — and the
+recognition is about the relation between the positions that supplied the first
+two. This is the functional interlock of Round 12 appearing in a single argument
+rather than across a slot table, and it is the sharpest instance of it recorded.
+
+## 29.6 What is established and what is interpretation
+
+**ESTABLISHED, documentary:**
+- Plato names divisions-and-collections as a method held for a capacity, and the
+  hypothetical method on the geometers' model.
+- Aristotle classifies division as *οἷον ἀσθενὴς συλλογισμός* and as *μόριον τῆς
+  εἰρημένης μεθόδου*.
+- Aristotle states that for this subject *οὐδὲν παντελῶς ὑπῆρχεν*, in explicit
+  contrast to a named succession he supplies as the comparison case.
+- Therefore: **Aristotle's priority claim places the Platonic apparatus on his side
+  of the "before me" boundary.**
+
+**INTERPRETATION:** the heteronymic reading resolves that placement literally —
+the Platonic apparatus is not "before Aristotle" because it belongs to the same
+maker.
+
+**ALTERNATIVES that must be charged as auxiliaries, not assumed:**
+*(a)* Aristotle is inconsistent across works, denying at *SE* what he grants at
+*APr*. *(b)* He means the formal system narrowly and speaks loosely — foreclosed
+by *μόριον τῆς εἰρημένης μεθόδου*, which places division inside the method.
+*(c)* Priority rhetoric is conventional — but the passage supplies the succession
+counter-case itself, by name and lineage, which conventional boasting does not do.
+
+**What it is not:** psychology, estate metaphor, or biographical resentment. The
+earlier versions of this entry contained all three and they are withdrawn. This
+version rests on three quotations and one classification.
+
+## 29.7 ⚠ THE TEST I RAN THAT WAS WORTHLESS
+
+Asked whether Plato has an apparatus Aristotle's sentence ranges over, I froze
+five criteria and searched for **the lexeme συλλογ-**. Result: 51 tokens in Plato,
+of which **34 are σύλλογος/συλλογή — assembly, gathering, meeting**; συλλογισμός
+appears **twice**. I reported that Plato "scores weakly," that the minor premise
+failed, and that the priority claim was ordinary and true.
+
+**That was the fourth substitution of vocabulary for substance in one session**,
+and this one nearly closed a live question. Aristotle is not claiming that the
+*word* was unused. He is claiming that the *apparatus* did not exist — and he had
+already classified Plato's apparatus as an instance of it. **A lexical test cannot
+reach a claim about an apparatus.** Recorded so the failure mode is legible: when
+the claim is about an operation, searching for its name measures nothing.
 
 
 ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
