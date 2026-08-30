@@ -3015,6 +3015,110 @@ its advantage lives.** That advantage is real, is conceded, and is the whole of
 what it has.
 
 
+---
+
+## 40. M51 — THE TRANSFER CLASS, ENUMERATED
+
+*Added 2026-08-29. Round 41 proposed the class and left it uncounted. Enumerated
+here. **It requires no hypothesis about authorship** — it is a claim about the
+direction of attribution in the tradition, testable against rates in both corpora.*
+
+## 40.1 THE TEST
+
+For each place Aristotle faults Plato for X: **does Aristotle do X at a higher
+rate than Plato?**
+
+    the charge                        Plato/10k  Arist/10k     A/P   verdict
+    the ONE and the ἀόριστος               0.05       1.10   21.40   TRANSFER
+    soul as SELF-MOVING                    0.26       4.09   15.97   TRANSFER
+    the forms as NUMBERS (ἀριθμ-)          4.20       9.93    2.36   TRANSFER
+    SEPARATION of the forms (χωριστ-)      3.03       5.21    1.72   TRANSFER
+    METAPHOR as explanation (μεταφορ-)     0.00       1.14       ∞   TRANSFER
+    ────────────────────────────────────────────────────────────────────────
+    MYTH instead of argument (μῦθ-)        2.32       1.03    0.44   CHARGE HOLDS
+    participation as empty (μεθεξ-)        3.91       3.55    0.91   —
+    coining unestablished names            0.68       0.91    1.34   —
+
+**Five transfers, one charge running the right way, two indeterminate.**
+
+**The μῦθος case is the internal control and it matters:** Plato does use μῦθ- at
+more than twice Aristotle's rate, so *that* criticism is accurate. **Not
+everything transfers**, which is what makes the five that do worth recording.
+
+## 40.2 THE PURE CASE — μεταφορά
+
+***Metaphysics* 991a**, the charge against the Forms:
+
+> τὸ δὲ λέγειν παραδείγματα αὐτὰ εἶναι καὶ μετέχειν αὐτῶν τἆλλα **κενολογεῖν ἐστὶ
+> καὶ μεταφορὰς λέγειν ποιητικάς**
+
+*To say they are patterns and that other things participate in them is **empty talk
+and speaking poetic metaphors**.*
+
+**VERIFIED: μεταφορ- occurs ZERO times in the entire Platonic corpus.** (Plato has
+the verb μεταφέρω twice; the noun, and the technical sense, he does not have.)
+
+**And Aristotle has 112 occurrences** — Rhetoric 53, Poetics 18, Topica 12,
+Metaphysics 6, and across fourteen further works.
+
+> **Aristotle faults Plato for speaking metaphors, in a technical vocabulary that
+> Plato does not possess and that Aristotle himself supplies.**
+
+The charge cannot be stated in the accused's own terms. **It is made from inside
+the accuser's apparatus and applied backwards.**
+
+## 40.3 THE PATTERN, WITH ITS TWO EARLIER INSTANCES
+
+    Topica ×4         faults Plato for COINING unestablished names —
+                      πᾶν ἀσαφὲς τὸ μὴ εἰωθός — while NE 1108a makes coining
+                      his own stated policy, πειρατέον αὐτοὺς ὀνοματοποιεῖν
+                      σαφηνείας ἕνεκα. M30: the reflex runs 8.43/100k in
+                      Aristotle against 2.60 in Plato.
+    Harmonics II      faults Plato's lecture for delivering MATHEMATICS to
+                      hearers wanting human goods. Round 41: narrative
+                      apparatus is 1.5-17× denser in Plato; mathematical
+                      vocabulary 2.4-10× denser in Aristotle.
+    Metaph 991a       faults Plato for METAPHOR, using a word Plato never uses.
+    Metaph A          faults Plato for SEPARATION — and χωριστ- is 1.72× denser
+                      in Aristotle, where it becomes the criterion of substance
+                      and, at De An. III.5, of the immortal νοῦς.
+    Metaph            faults Plato for FORMS AS NUMBERS — ἀριθμ- 2.36× denser
+                      in Aristotle.
+    Topica            faults Plato for SOUL AS SELF-MOVING NUMBER — self-moving
+                      vocabulary 15.97× denser in Aristotle.
+
+**In every case the direction of the charge is opposite to the direction of the
+measured rates.**
+
+## 40.4 WHAT THIS IS AND IS NOT
+
+**IS:** a measured directional asymmetry in the tradition's central critical
+relation. **Aristotle's characteristic charges against Plato name properties of
+the Aristotelian corpus.** Eight tested, five transfer, one runs correctly.
+
+**IS NOT:** evidence of single authorship, and nothing here depends on that
+hypothesis. **An ordinary reading is available**: a successor develops the
+master's suggestive vocabulary into technical apparatus, then criticises the
+master for the imprecision the apparatus reveals — which would produce exactly
+this asymmetry.
+
+**But that reading concedes the structure:** the critical vocabulary by which Plato
+is faulted is **Aristotle's**, not Plato's, and the faults are stated in terms the
+accused did not have. **Which is M46's reception-capture arriving as
+critique** — and, unlike M46, it has an internal control (μῦθος) that fires.
+
+## 40.5 EXTENSION
+
+**Not exhaustive.** Eight charges tested of a much larger set — *Metaphysics* A
+and M alone contain dozens. **The enumeration should be completed**, and the
+completion is mechanical: extract every passage where Πλάτων- or οἱ τὰ εἴδη
+λέγοντες occurs within a fault-context, name the property charged, and measure its
+rate in both corpora.
+
+**Kill condition:** if a full enumeration finds the charges generally running in
+the correct direction with these five as exceptions, the class dissolves.
+
+
 ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
 **0.0258** — inside the M1 same-author band — while the best single heteronym is
 Campos at 0.0498, then Caeiro 0.0903, Reis 0.2205. **Pooled beats best individual
