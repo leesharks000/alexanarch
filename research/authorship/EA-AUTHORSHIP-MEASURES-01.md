@@ -2872,6 +2872,117 @@ exists, is **propositional** — M40's suppressed premise and Round 13's complet
 — and no distributional measure reaches it.
 
 
+---
+
+## 38. M49 — THE ATTESTATION OF THE TEACHING RELATION: INTERNAL SILENCE, DEFENSIVE TRADITION
+
+*Added 2026-08-29. The standing objection is that the Plato–Aristotle interlock is
+explained by pupillage. This entry asks what the pupillage rests on.*
+
+## 38.1 THE INTERNAL EVIDENCE IS ZERO, IN BOTH DIRECTIONS
+
+**PLATO NEVER NAMES THE PHILOSOPHER ARISTOTLE.** Ἀριστοτελ- occurs **four times in
+the entire Platonic corpus, all in the *Parmenides*** — the young **Ἀριστοτέλης**
+who answers Parmenides in the second half, whom Plato identifies as the one who
+later joined the Thirty. **A different man.**
+
+**ARISTOTLE NEVER SAYS HE STUDIED WITH PLATO.** Searching every occurrence of
+Πλάτων- within ±14 tokens of a learning/teaching word (μαθητ-, διδασκ-, ἤκουσ-,
+συνη-, ἔμαθ-, διέτριψ-, ἡμεῖς) returns **one** hit, and it is an anecdote about
+**Aristippus** addressing Plato (*Rhet.* 1398b) — not autobiographical.
+
+**His formulae for naming Plato are purely doxographic:**
+
+    οἱ Πυθαγόρειοι καὶ Πλάτων        τῇ Πολιτείᾳ τῇ Πλάτωνος
+    καθάπερ Πλάτων                    ἐν τῷ Τιμαίῳ γέγραφε Πλάτων
+    ὡς ὁ Πλάτων                       ἐκ τῶν κατὰ Πλάτωνα
+
+**Never *my teacher*, never *we*, never *when I was with him*.** He names Plato
+exactly as he names Empedocles and Anaxagoras — as a position in a doxography.
+
+## 38.2 THE EXTERNAL CHAIN, AND ITS SHAPE
+
+    Aristoxenus, Aristodemus     4th-3rd c. BCE   HOSTILE STRAND: Aristotle set up
+                                                  the Lyceum in opposition WHILE
+                                                  PLATO WAS ALIVE
+    Philochorus                  3rd c. BCE       CITED TO REBUT that charge
+    Apollodorus → Dionysius      2nd-1st c. BCE   the chronology: twenty years
+    Ptolemy (Neoplatonist)       ~4th c. CE       harmonising Life
+    Diogenes Laertius            3rd c. CE        the standard source
+
+**THE EARLIEST STRAND IS HOSTILE.** *Vita Marciana* §9: *Aristotle could not have
+built the Lyceum as a rival to Plato, as **Aristodemus was the first to falsely
+accuse him**, in which he was later followed by Aristeides.* And §25: *Aristotle
+did not, as **Aristoxenus** and Aristeides related, build the Lyceum in opposition
+to Plato, while Plato was alive.*
+
+**Aristoxenus was Aristotle's own pupil.** So the earliest reported account of the
+relation is **rivalry and rupture**, and the twenty-years-of-devoted-study version
+is the **rebuttal**.
+
+**PHILOCHORUS IS CITED DEFENSIVELY, NOT AS ATTESTATION.** *This is what Philochorus
+related: that it was not likely that Aristotle, being a foreigner, would have done
+this against Plato, who was a citizen and had great influence.* He is adduced to
+make the charge **implausible** — an argument from status, not a record of
+teaching.
+
+## 38.3 ⚠ THE TWENTY YEARS RESTS ON A LOST LETTER
+
+*Vita Marciana* §5: he stayed with Plato *for all the time up to his death, which
+was **twenty years as he himself says in a letter to Philip***.
+
+**The source of the twenty-year figure is a letter of Aristotle to Philip that does
+not survive and whose authenticity is unknown.** The Aristotelian letters are
+precisely the contested part of the corpus.
+
+## 38.4 ⚠ AND THE SAME PARAGRAPH CONTAINS A CHRONOLOGICAL IMPOSSIBILITY
+
+*Vita Marciana* §5, immediately before the twenty-year claim:
+
+> When he was seventeen years old … **he joined SOCRATES and stayed with him almost
+> up to the time of his death**; and after that he joined Plato
+
+**Socrates died in 399. Aristotle was born in 384.** The *Vita* has Aristotle
+studying with a man who died fifteen years before he was born — **in the same
+sentence that supplies the twenty-year figure.**
+
+## 38.5 THE HARMONISING LAYER IS EXPLICIT
+
+Ptolemy, §28: *Even in the matters where he contradicts Plato, **we will say that
+he is a Platonist**.* §29: *Aristotle did not combat the opinions of Plato, but
+those persons who misunderstood them.*
+
+**The tradition that transmits the teaching relation states its own harmonising
+purpose.** Its aim is to make Aristotle a Platonist, and the biography is
+constructed to serve it.
+
+## 38.6 WHAT THIS ESTABLISHES
+
+**NOT that the teaching relation is false.** It may well be true, and the
+chronology (Dionysius: arrival 367/6, Plato's death 348/7) is coherent.
+
+**BUT: by the admission standard applied in Round 35, Plato→Aristotle would NOT
+qualify for class 1.** Isocrates→Isaeus and Isaeus→Demosthenes were excluded
+because the attestation is later biography and — in Dionysius' case — **argued from
+stylistic resemblance**. The Plato–Aristotle relation is attested by:
+
+    - no contemporary document
+    - nothing internal to either corpus
+    - a hostile earliest strand reporting rivalry
+    - a defensive rebuttal from Philochorus, arguing from status
+    - a figure drawn from a lost, unauthenticated letter
+    - a Life containing a manifest chronological impossibility
+    - and a transmitting tradition that declares its harmonising aim
+
+**The standard, applied evenly, does not spare the target.** The relation on which
+the entire school-transmission objection rests is attested no better than the pairs
+this investigation ruled inadmissible for calibration — and worse than any member
+of class 1, each of which has contemporary documentary attestation.
+
+**Recorded as a symmetry requirement, not as a refutation:** if the ancient
+attestations are too weak to calibrate with, they are too weak to explain with.
+
+
 ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
 **0.0258** — inside the M1 same-author band — while the best single heteronym is
 Campos at 0.0498, then Caeiro 0.0903, Reis 0.2205. **Pooled beats best individual
