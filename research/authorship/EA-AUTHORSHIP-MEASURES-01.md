@@ -2228,6 +2228,11 @@ from tradition.** And:
                                 habit            transmission of   Round 24
                                                  arbitrary
                                                  procedure
+    reception capture           interpretive     later framing     ⭑ MEASURED
+      (M46)                     vocabulary       displaces         with BOTH an
+                                supplied by      earlier terms —   H-calibration
+                                the other        ordinary in       and an S-control
+                                position         reception history
     abandoned-execution         continuation of  successor         ASSERTED;
       completion                own unfinished   recovers a        NO DENOMINATOR
                                 operation        shaped failure
@@ -2301,6 +2306,115 @@ explains it too*. It has to say:
 If that cannot be supplied, **"multi-author" has stopped functioning as an
 explanation and is functioning as the default label** — which earns a prior, and
 which this investigation concedes without argument.
+
+
+---
+
+## 35. M46 — RECEPTION CAPTURE: THE VOCABULARY BY WHICH A POSITION IS KNOWN
+
+*Added 2026-08-29. A datum recorded earlier without being seen for what it was —
+an interlocking structure of a different kind from functional coverage, now with
+an H-class calibration and an S-class control.*
+
+## 35.1 The structure
+
+**One position supplies the interpretive vocabulary for another, and the
+vocabulary becomes TRANSPARENT** — later readers take it for the interpreted
+position's own.
+
+**In the Greek pair (measured earlier, unexplained until now):**
+
+    ἀόριστος  the Indefinite      Aristotle 108    Plato   3
+    δυάς      the Dyad                      41            4
+    χωριστ-   separation                   411          165
+    ἀριθμ-    Forms as numbers             977          246
+
+The doctrines by which Platonism is known are quantitatively **Aristotle's**.
+
+## 35.2 H-CLASS CALIBRATION — Pessoa, where authorship is documented
+
+The heteronyms interpret each other: Mora's *Regresso dos Deuses — Prefácio a
+Caeiro*, Campos's critical notes, Reis's preface. Arquivo Pessoa's bibliographic
+footers were stripped before counting (Caeiro mentions in Campos 186 → 172).
+
+**Terms the interpreters use OF Caeiro, against Caeiro's own text:**
+
+    term                Caeiro/10k   interpreters/10k   ratio
+    pagan-                    0.00              15.88     ∞
+    paganismo                 0.00              15.49     ∞
+    pagã                      0.00              14.04     ∞
+    sensibilidade             0.00               6.61     ∞
+    mestre  (the master)      0.00               5.89     ∞
+    objectiv-                 0.00               5.79     ∞
+    sensacion-                0.00               1.21     ∞
+    ────────────────────────────────────────────────────────
+    natureza                 23.48               7.14    0.3
+    realidade                15.13              11.68    0.8
+
+**Every term by which Caeiro is known is ABSENT from Caeiro.** Paganism,
+sensationism, objectivism, *the master*, sensibility — all supplied by Mora,
+Campos and Reis. What Caeiro writes about is **nature** and **reality**, at three
+times his interpreters' rate.
+
+**Reception capture is a measured feature of documented heteronymic
+construction.**
+
+## 35.3 S-CLASS CONTROL — Aquinas on Aristotle
+
+**Does a documented successor supply vocabulary ABSENT from the master?**
+
+    pair                          Aquinas/10k   Aristotle/10k
+    esse / εἶναι                        54.36           81.68
+    essentia / οὐσία                    13.09           90.51
+    substantia / οὐσία                  14.48           90.51
+    forma / εἶδος                       24.11           27.83
+    materia / ὕλη                       18.93           56.57
+    potentia / δύναμις                  22.37           15.62
+    accidens / συμβεβηκός                5.55            8.17
+    participatio / μέθεξις               3.83            3.59
+    analogia / ἀναλογία                  0.29            3.33
+    quidditas / τὸ τί ἦν εἶναι           0.29            1.23
+    actus purus / ἐνέργεια               0.14            6.67
+
+**NO.** Every Thomist interpretive term has an Aristotelian counterpart **present
+in Aristotle**, most of them at *higher* rates in the master than the successor.
+**Aquinas translates. He does not supply vocabulary the master lacks.**
+
+## 35.4 THE THREE CASES SIDE BY SIDE
+
+    PESSOA   (documented one maker)     interpretive terms 0.00 in the
+                                        interpreted position — TOTAL capture
+    PLATO    (under test)               present but 25-35× thinner in the
+                                        interpreted position — PARTIAL capture
+    AQUINAS  (documented succession)    every term present in the master, most
+                                        at higher rate — NO capture
+
+**The Greek pair sits between the documented heteronymic case and the documented
+succession case, nearer the heteronymic end.**
+
+## 35.5 STATUS — what this is and is not
+
+**MEASURED**, and this is a second row for M45's table, joining the naming-gap
+reflex. It is the first structure with **both** an H-class calibration and an
+S-class control, run on the same measure.
+
+**LIMITS, stated.**
+*(a)* Caeiro is small — 19,328 tokens — and zero counts on a small corpus are
+weaker than zero counts on a large one.
+*(b)* The interpreters write prose and Caeiro writes verse. Under Round 21's rule
+the genre split is part of the heteronymic operation and not a confound to
+remove — but it is not nothing either.
+*(c)* The Aquinas control is cross-linguistic: a Latin term and a Greek term are
+matched by translation, and the pairing is mine.
+*(d)* **One H case, one S case.** Lee's proposed extensions — Borges and his
+invented critics, Hegel through Marx's vocabulary, Kant through Hegel's — are
+unrun and are the obvious next controls.
+
+**NOT ESTABLISHED:** that reception capture indicates single authorship.
+A dramatist's characters could show it; so could any case where a later writer's
+framing displaces an earlier writer's own terms, which is ordinary in reception
+history. **What is established is that the three cases separate on this measure,
+in the predicted order.**
 
 
 ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
