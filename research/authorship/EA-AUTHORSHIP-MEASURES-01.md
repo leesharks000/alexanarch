@@ -1596,6 +1596,63 @@ instructs the reader to **supply what has been left out**.
 Holding him to his own terms lets the chronology take the strain instead, which is
 what the argument does.
 
+## 29.2b THE LOAD-BEARING SENTENCE: Aristotle names the received account's category and denies it
+
+The conventional history is not merely absent from *SE* 183b. **It is present as a
+named option and refused.**
+
+Aristotle first builds the taxonomy himself:
+
+> τὰ μὲν **παρ᾽ ἑτέρων ληφθέντα πρότερον πεπονημένα** κατὰ μέρος ἐπιδέδωκεν ὑπὸ
+> τῶν παραλαβόντων ὕστερον· **τὰ δ᾽ ἐξ ὑπαρχῆς εὑρισκόμενα** μικρὰν τὸ πρῶτον
+> ἐπίδοσιν λαμβάνειν εἴωθε
+
+*Some things, **taken from others and previously laboured on**, are advanced
+piecemeal by later receivers; **others, discovered from the beginning**, make a
+small first advance.*
+
+He gives rhetoric as the worked instance of the first class, with its lineage —
+Tisias, Thrasymachus, Theodorus, *οἷον ἐκ διαδοχῆς*. **That first category is
+exactly where the received account places Platonic division**: partially worked
+material, received, advanced by a successor.
+
+Then:
+
+> Ταύτης δὲ τῆς πραγματείας **οὐ τὸ μὲν ἦν τὸ δ᾽ οὐκ ἦν προεξειργασμένον**, ἀλλ᾽
+> οὐδὲν παντελῶς ὑπῆρχεν.
+
+***It is not that part was pre-worked-out and part was not*** — but nothing at all
+existed.
+
+**This is the load-bearing sentence of the entry.** The standard harmonisation
+runs *Plato partly worked out syllogistic → Aristotle completed it*. Aristotle
+supplies that category by name and **negates it of this inquiry.** He is not
+silent about partial predecessors; he rules them out.
+
+## 29.2c THE ESCAPE IS CLOSED BY THE TREATISE'S OWN OPENING
+
+*SE* 165a — the first page of the same work:
+
+> τὰ μὲν **λιθαργύρινα** καὶ τὰ **καττιτέρινα** ἀργυρᾶ, τὰ δὲ **χολοβάφινα** χρυσᾶ.
+> τὸν αὐτὸν δὲ τρόπον καὶ **συλλογισμὸς καὶ ἔλεγχος** ὁ μὲν ἔστιν, ὁ δ᾽ **οὐκ ἔστι
+> μέν, φαίνεται δέ** … ὧν εἷς τόπος εὐφυέστατός ἐστι καὶ δημοσιώτατος **ὁ διὰ τῶν
+> ὀνομάτων**
+
+*Litharge and tin are silver, gall-dye is gold — in the same way a syllogism or
+refutation may **not be one but appear one** … and the readiest and commonest
+source of this is **the one that works through names**.*
+
+The treatise **opens** on counterfeit metal as the model for the apparent-syllogism,
+and identifies fallacy **through names** as the commonest kind. It **closes** with
+the priority claim.
+
+**The conventional rescue asks us to save the closing claim by letting a name
+change extension** — πραγματεία meaning the systematic art at 183b while
+συλλογισμός covers Platonic practice at *APr* I.31. That is the book's own opening
+topos, applied to the book's own closing claim. **The harmonisation is
+self-refuting on the author's stated terms**, and this is why the concession
+recorded at 29.2 was withdrawn.
+
 ## 29.3 Why this is a syllogism and not a complaint
 
 The passage does not assert the contradiction. It **supplies two premises and
@@ -1659,8 +1716,15 @@ rather than across a slot table, and it is the sharpest instance of it recorded.
   εἰρημένης μεθόδου*.
 - Aristotle states that for this subject *οὐδὲν παντελῶς ὑπῆρχεν*, in explicit
   contrast to a named succession he supplies as the comparison case.
-- Therefore: **Aristotle's priority claim places the Platonic apparatus on his side
-  of the "before me" boundary.**
+- Aristotle supplies the partial-development category by name and **explicitly
+  negates it** of this inquiry: *οὐ τὸ μὲν ἦν τὸ δ᾽ οὐκ ἦν προεξειργασμένον*.
+- Therefore, stated at the narrowest defensible strength and not inflated:
+  **Aristotle claims the development of the syllogizing transmitted in the Platonic
+  corpus.** Not that Plato reasoned well and Aristotle formalised it — Aristotle
+  denies that shape by name. The syllogizing Aristotle identifies in Plato falls, on
+  Aristotle's own taxonomy, on **Aristotle's side of the development relation.**
+- That is an authorship problem in the strict sense of intellectual production, and
+  it arises **before** any hypothesis about heteronymy is introduced.
 
 **INTERPRETATION:** the heteronymic reading resolves that placement literally —
 the Platonic apparatus is not "before Aristotle" because it belongs to the same
