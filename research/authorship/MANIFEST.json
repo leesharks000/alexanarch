@@ -1,12 +1,13 @@
 {
  "manifest": "research/authorship/MANIFEST.json",
  "generated": "2026-08-29",
- "rule": "THREE FILES. Two living, one frozen. Anything else is drift — consolidate it back.",
+ "rule": "FOUR FILES. Two living, one frozen, one structural. Anything else is drift — consolidate it back.",
  "structure": {
   "EA-NOTEBOOK-01.md": "LIVING — read forward. Fifteen rounds plus the standing frame. Append new rounds at the END; do not reorganise.",
   "EA-AUTHORSHIP-MEASURES-01.md": "LIVING REGISTER — look things up. §0A is the ENTRYWAY (M40, the suppressed premise) and should be read first; §1-§28 are the measurements; Part II is the terrain map. Refutations are attached to the claims they killed.",
   "PREREG-LEDGER.md": "FROZEN, APPEND-ONLY. Six registrations with their original SHA-256s and their dispositions. Nothing above a DISPOSITION line is ever edited. New tests append a new ENTRY at the end.",
-  "data/": "supporting extractions — snub loci, base-rate table, argument map"
+  "data/": "supporting extractions — snub loci, base-rate table, argument map",
+  "PAPER-ARCHITECTURE.md": "STRUCTURAL — the six stations and why they are in that order. Not a draft; the argument shape the notebook and register feed. Read after §0A, before writing anything."
  },
  "why_prereg_cannot_merge": "A pre-registration is worth something only because its content was fixed before the test ran. A hash over an appending notebook proves nothing. The ledger keeps them frozen while stopping them proliferating at three files apiece.",
  "consolidations": [
@@ -21,13 +22,20 @@
    "from": 25,
    "to": 5,
    "note": "six pre-registrations and twelve sidecars folded into PREREG-LEDGER.md; original hashes preserved per entry so every commit citing them resolves"
+  },
+  {
+   "date": "2026-08-29",
+   "from": 3,
+   "to": 4,
+   "note": "PAPER-ARCHITECTURE.md added — the station structure, which is neither a measurement nor a round and would otherwise be lost in the notebook"
   }
  ],
  "known_failure_mode": "append by anchor-replace is UNSAFE when the anchor appears more than once — str.replace on the closing sigil duplicated sections 17-22 of the register and truncated section 5. Append by unique section anchor instead.",
  "sha256": {
-  "EA-AUTHORSHIP-MEASURES-01.md": "524af8d88439f24fda933cbd046c5afd18f26501229e3672f37922f5ef2528ae",
-  "EA-NOTEBOOK-01.md": "28991650ac5846db845bfbb7e163e1edba252d8614f85bfe60fb8ccb0c2a1a1d",
-  "PREREG-LEDGER.md": "336549f658126df1a87667a6421b5a59ce2564051968435539bfef4e78210163",
+  "EA-AUTHORSHIP-MEASURES-01.md": "d5b546d74917789494c3b19ed84bc15009972533e6e5cf918b92f302e82dbfcf",
+  "EA-NOTEBOOK-01.md": "9eaa2ec999828e3d71c581da66fd20f9a5768ad836180bac75a95a13a33bb814",
+  "PAPER-ARCHITECTURE.md": "9666e6d4fa34a6efb0d1469fe5a9b0f2ca64b77db2d16226b60f549ed2d31ccc",
+  "PREREG-LEDGER.md": "645e9620e857f30abfcd21001a40af4dacb3672090a30978a6441270908a01d2",
   "data/EA-SNUB-01-argmap.json": "fbaff3e4fea09a69f943c0503ea84836cf78d1daaf6c800278775ea956226d08",
   "data/EA-SNUB-01-baserate.json": "1d7f503d631cf7a7f7966b31cbe157422daa5856bd3c9482945400c255dd51c0",
   "data/EA-SNUB-01-loci.json": "b0d4d7289424c7b7a4704713d1ea1771c369056e24e8089afd7d06d988ba5767"

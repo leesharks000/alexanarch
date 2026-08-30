@@ -50,8 +50,8 @@ is the entryway to the paper and is treated at full weight.*
 
 ## 0A.1 The three texts
 
-**(i) Plato names the apparatus as a method, in his own voice.**
-*Phaedrus* 266b:
+**(i) The Platonic corpus presents division-and-collection as a repeatable procedure.**
+*Phaedrus* 266b — **spoken by Socrates**, not by Plato in propria persona:
 
 > τούτων δὴ ἔγωγε αὐτός τε **ἐραστής**, ὦ Φαῖδρε, **τῶν διαιρέσεων καὶ συναγωγῶν**,
 > **ἵνα οἷός τε ὦ λέγειν τε καὶ φρονεῖν**
@@ -78,8 +78,10 @@ something from higher up.*
 
 This is the load-bearing sentence. Aristotle does not place Platonic division
 *outside* his subject as a different sort of thing. He places it **inside**:
-*μόριον τῆς εἰρημένης μεθόδου*, a part of the stated method, and *συλλογισμός* by
-species — defective, question-begging, but of the kind.
+*μόριον τῆς εἰρημένης μεθόδου*, a part of the stated method, and characterises it
+in **explicitly syllogistic terms**. *(οἷον licenses "a kind of" — not formal
+species-membership. The weaker claim is what the argument needs and all it
+asserts.)*
 
 **(iii) Aristotle denies that the apparatus had any predecessor.**
 *Sophistici Elenchi* 183b–184b. He first defines what ordinary development looks
@@ -148,12 +150,20 @@ there is something there to reason with. The narrow reading then has him close t
 treatise-group by declaring that nothing existed, rescued only by taking
 *πραγματεία* in a sense that excludes what he has just included.
 
-**That is an equivocation on his own technical term at the one point where his
-standing depends on it** — committed by the author of the *Sophistici Elenchi*, in
-the closing paragraph of the *Sophistici Elenchi*, in the corpus that gives us
-ὁμωνυμία and catalogues the fallacies of ambiguity. It convicts him of precisely
-the fault his book exists to expose, in order to preserve a chronology he never
-asserts.
+**⚠ CORRECTED FORMULATION.** An earlier version called this "an equivocation on
+his own technical term" and the harmonisation "self-refuting". **That is stronger
+than the lexical situation warrants** — πραγματεία, μέθοδος and συλλογισμός are not
+one term whose extension is simply switched.
+
+**The harder and cleaner objection, which survives hostile review:**
+
+> **The conventional harmonisation requires an UNMARKED RESTRICTION of the scope of
+> πραγματεία that excludes an operation *APr* I.31 expressly places inside the
+> method.**
+
+The restriction may be right. **What it cannot be is unmarked and free** — and the
+treatise in which it is required is the one that opens by identifying fallacy
+*διὰ τῶν ὀνομάτων* as the commonest kind (§0A.2c).
 
 **Charity runs the other way.** Take him to mean what he says, in one consistent
 technical sense, in both places. Then he neither contradicts himself nor equivocates:
@@ -235,7 +245,9 @@ withholds the third**, and the third is the Platonic corpus:
                                                                    AT SE]
     ∴   Plato does not occupy the predecessor relation.
 
-**Premise 3 is deliberately not spoken in the passage.** The reader must supply
+**Premise 3 is not spoken in the passage; structurally it functions as the
+suppressed premise.** *(No claim of intentional encoding is needed, or made, to
+get the problem.)* The reader must supply
 it, from a corpus he already possesses. That makes the passage an **enthymeme
 whose suppressed premise is an authorial corpus.**
 
