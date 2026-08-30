@@ -4062,4 +4062,74 @@ doctrine about **recovering what was never possessed** — which is what a reade
 a corpus does, and is not what a rememberer does.
 
 
+---
+
+# ROUND 37 — CLASS 1 AT n=3, DOCUMENTARY ONLY
+
+*Added 2026-08-29. Building the baseline. Plato and Aristotle not examined.*
+
+## 146. Membership
+
+    Wundt → Titchener    Leipzig PhD 1892; Titchener TRANSLATED Wundt into
+                         English. University records, contemporary.
+    Freud → Jung         1907-13 correspondence (360 letters), IPA presidency,
+                         Jung's editorship of the Jahrbuch.
+    Albert → Aquinas     Dominican chapter records, Cologne 1248-52.
+
+**All three attested by documents made while both parties lived, independent of
+textual resemblance.** *(Boas → Mead attempted and abandoned: the archive.org
+holdings are lending-restricted. Isocrates→Isaeus and Isaeus→Demosthenes remain
+excluded per Round 35 — Dionysius argues the second FROM STYLE.)*
+
+## 147. THE BATTERY
+
+    pair                   F1     F2     F3     F4    F5     F8     F9
+    Wundt → Titchener    2.43   98.3  0.618   26.4   7.3  0.350  0.736
+    Freud → Jung         1.41   99.7  0.742   26.4   1.0  0.519  0.736
+    Albert → Aquinas     2.49   94.0  1.003   50.4   0.3  0.476  0.504
+
+    RANGES (n=3)                              spread
+      F1   1.407 – 2.490    median 2.429       1.8×
+      F2  94.000 – 99.667   median 98.333      1.1×   ← tightest
+      F3   0.618 – 1.003    median 0.742       1.6×
+      F4  26.421 – 50.400   median 26.441      1.9×
+      F5   0.300 – 7.333    median 1.000      24.4×   ← widest
+      F8   0.350 – 0.519    median 0.476       1.5×
+      F9   0.504 – 0.736    median 0.736       1.5×
+
+## 148. WHAT IS EMERGING
+
+**F2 is by far the tightest feature: 94.0, 98.3, 99.7 — a 1.1× spread across two
+languages, two disciplines, and six centuries.** A pupil with documented
+face-to-face instruction uses **94–100% of his master's three hundred most
+distinctive terms**.
+
+**F1 is narrow too (1.4–2.5×)** — every documented pupil writes between one and a
+half and two and a half times his master's volume. *(The excluded ancient pairs
+ranged 0.27–8.80. Whether that width is a property of ancient transmission or of
+bad attestation cannot be told from here.)*
+
+**F5 is the widest at 24×**, so novel-vocabulary rate is not a class property.
+
+**And the Freud→Jung values are the ones to keep in view: F2 = 99.7, F5 = 1.0 —
+from a pupil who BROKE with his master, publicly and bitterly, before the second
+of the two books measured.** The doctrinal rupture leaves the apparatus intact.
+**Rupture and inheritance are independent.**
+
+## 149. Standing
+
+**n = 3. Still not a baseline**, and the prohibition holds in both directions — it
+may not be used to admit the target or to exclude it.
+
+**Confounds carried:** Wundt→Titchener and Freud→Jung are both German originals
+read in English translation, and Titchener was himself Wundt's translator, which
+may inflate F2 specifically for that pair. Albert→Aquinas is the only pair read in
+its language of composition.
+
+**Next, each documentary:** Charcot → Freud (Salpêtrière 1885-86; Freud translated
+Charcot — and it would make Freud a pupil in one pair and a master in another),
+Huxley → Wells (Normal School of Science enrolment records), Bohr → Heisenberg,
+Schoenberg → Berg.
+
+
 ∮ = 1
