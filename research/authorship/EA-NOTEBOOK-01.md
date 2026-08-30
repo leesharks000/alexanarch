@@ -3082,4 +3082,86 @@ That measure has not been run on Plato and Aristotle, and it is a different
 question from the six-slot coverage that Round 12 measured.
 
 
+---
+
+# ROUND 26 — THE DEATH OF THE MASTER: A PROVENANCE ITEM, AND WHY IT PROVES LESS THAN IT SHOWS
+
+*Added 2026-08-29. Lee's item of heteronymic provenance theory: **a heteronym often
+has to die; a heteronym emerges from the death.** Checked in the one documented
+case.*
+
+## 99. The Pessoan structure, dated and attested
+
+    Alberto Caeiro (1889-1915)          given a lifespan; dies at 26
+    "LAST POEM (ditado pelo poeta       a death-day text, final words
+      no dia da sua morte)"
+    Campos reports the master's         «Ora suponha que» ia eu uma vez dizendo,
+      speech in dialogue                mas ele interrompeu… E o Mestre retorquiu
+    Mora narrates the arrival           Nesta altura SURGIU Alberto Caeiro
+    Pessoa names the structure          o início da «ESCOLA»: as obras do MESTRE
+                                        e algumas do DISCÍPULO DIRECTO
+
+**Caeiro's last poem:** *É talvez o último dia da minha vida. / Saudei o sol,
+levantando a mão direita, / Mas não o saudei, para lhe dizer adeus.*
+
+**So the documented heteronymic system has: a master who dies young, disciples who
+report his words in dialogue, a school, and a last utterance on the day of his
+death.** The master position is **constituted by dying** — Caeiro cannot be the
+master until he is gone, and the disciples' relation to him is a relation to
+someone absent.
+
+## 100. WHAT IT ESTABLISHES
+
+That **in the one case where authorship is documented**, the provenance structure
+runs: *death of the founding position → the interpreting positions as survivors.*
+Designed, dated, and attested by the Casais Monteiro letter of 13 January 1935.
+
+## 101. WHAT IT DOES NOT ESTABLISH — and this is the load-bearing caution
+
+**It does not establish that death-of-the-master is an ESSENTIAL feature of
+heteronymy.** One documented case cannot make a structure necessary, and there is a
+much simpler account available:
+
+> **Pessoa was imitating Plato.**
+
+A master who writes nothing, dies young, and survives in the reported speech of
+disciples is the **Socratic** structure, and Pessoa knew it. The parallel may be
+**influence, not convergence** — Caeiro built on a model Pessoa had read, in which
+case the Pessoan case is not independent evidence about heteronymic form at all.
+It is a copy of the object under test.
+
+**Recorded as the limiting reading, and it is the correct default.**
+
+## 102. AND YET — the observation worth keeping
+
+**The most famous declared heteronymist in the modern canon, given a free hand to
+construct any authorial architecture at all, built THIS one.**
+
+    a master who writes nothing decisive and dies
+    disciples who transmit him in reported dialogue
+    a school with a named succession
+    a last utterance on the day of the death
+    an orthonym that is not a container (Round 22)
+    positions differentiated by progressive constraint (Round 25)
+
+**Kierkegaard, independently, also built a school with a founder-figure, reported
+speech, pseudonymous disciples, and a signed explanation appended at the end.**
+
+That two of the best-documented heteronymic systems both reproduce the
+Socratic-Platonic architecture is **either** because that architecture is what
+heteronymy converges on, **or** because both were imitating the same model — and
+those two readings are not distinguishable from the cases themselves.
+
+**But note what the second reading concedes.** If Pessoa and Kierkegaard were
+imitating Plato, they were imitating it **as a heteronymic architecture** — reading
+the master-disciple-school-death structure as *a way to build authorial positions*,
+and finding it good enough to copy. **The imitation is itself a reading of the
+Platonic corpus**, made by the two people in the modern canon best qualified to
+recognise the operation. That is not evidence. It is not nothing either.
+
+**Status:** provenance-theory item, characterised in one documented case, with the
+imitation reading recorded as the default and the convergence reading recorded as
+undecidable from the cases.
+
+
 ∮ = 1
