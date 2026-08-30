@@ -4445,4 +4445,95 @@ construction, and the earliest witness to the attendance is also the earliest
 witness to the break.**
 
 
+---
+
+# ROUND 41 — THE ANECDOTE INVERTS, AND THE TRANSFER CLASS
+
+*Added 2026-08-29. Round 40's rehabilitation of the Aristoxenus testimony is
+corrected twice — once for an unchecked assumption of mine, once for what the
+anecdote's content actually describes.*
+
+## 163. ⚠ I ASSERTED THE PERSONAL ACQUAINTANCE WITHOUT CHECKING IT
+
+Round 40 called Aristoxenus *a man who knew Aristotle personally*. **I did not
+verify that.** What the source actually gives is: *Aristoxenus … was disappointed
+not to be named Aristotle's successor (**Fr. 1 Wehrli**)* — **a fragment**,
+surviving only in a later source I have not identified. "A pupil of Aristotle" is
+an encyclopedia summary, not a citation.
+
+**So the sole contemporary-looking attestation for the whole teaching relation
+rests on a fragment tradition of unverified transmission.** Fourth instance today
+of my supplying received history as though it were checked evidence, after
+Theophrastus (M36), Speusippus (M40b) and the reputation-adjudication (M44).
+
+## 164. AND THE ANECDOTE'S CONTENT DESCRIBES THE WRONG CORPUS
+
+**The story:** hearers come to Plato's lecture *On the Good* expecting
+*ἀνθρώπινα ἀγαθά* — human goods, happiness — and the discourse turns out to be
+**all mathematics**, concluding *the good is one*. Some despised it, others
+condemned it. **And it is told to justify a method rule: a teacher should announce
+his subject in advance.**
+
+**But that is not what Plato's texts do to a reader. It is what Aristotle's do.**
+
+    NARRATIVE APPARATUS                    Plato/10k   Arist/10k   ratio
+      first-person narration (ἐγώ/ἡμεῖς)      100.76        6.04   16.7×
+      vocative address (ὦ)                     64.30        8.64    7.4×
+      reporting verbs (ἔφη/εἶπε/λέγει)        111.78       23.89    4.7×
+      temporal frame (χθές/πρῴην/τότε)         21.64        6.36    3.4×
+      μῦθος                                     2.32        1.03    2.3×
+      motion verbs (ἦλθον/κατέβην)              6.58        4.31    1.5×
+
+    MATHEMATICAL VOCABULARY                                      ratio A/P
+      ἀνάλογον                                  0.32        3.33   10.3×
+      διάστημα                                  0.10        0.87    8.5×
+      μονάς                                     0.24        1.93    8.1×
+      μέγεθος                                   1.78        8.90    5.0×
+      περιττός/ἄρτιος                           1.81        6.82    3.8×
+      ἀριθμός                                   4.20        9.93    2.4×
+
+**Plato supplies narrative at 1.5× to 17×. Aristotle supplies mathematical
+vocabulary at 2.4× to 10×.** The reader who arrives wanting a story and receives
+number is **the reader of Aristotle**.
+
+## 165. THE ANECDOTE IS A TRANSFER
+
+**The disappointment belongs to the Aristotelian corpus and is attributed to a
+Platonic lecture-hall.** And the attribution licenses the remedy: *announce your
+subject first* — which is Aristotle's practice, presented as a correction of
+Plato's failure.
+
+**The complaint that belongs to the pupil's texts is levelled at the master, and
+the levelling justifies the pupil's method.**
+
+## 166. AND THIS IS THE SECOND INSTANCE — a testable class
+
+    Topica ×4     Aristotle faults Plato for USING NON-ESTABLISHED NAMES —
+                  ὀφρυόσκιον, σηψιδακές — because πᾶν ἀσαφὲς τὸ μὴ εἰωθός.
+                  NE 1108a makes coining his own POLICY: πειρατέον αὐτοὺς
+                  ὀνοματοποιεῖν σαφηνείας ἕνεκα.
+                  MEASURED: the naming-gap reflex runs 10.5× in the pair, and
+                  Aristotle's rate is 8.43/100k against Plato's 2.60 (M30).
+
+    Harmonics II  Aristotle (via Aristoxenus) faults Plato's lecture for
+                  delivering mathematics to hearers who wanted human goods.
+                  MEASURED: narrative apparatus is 1.5-17× denser in Plato;
+                  mathematical vocabulary 2.4-10× denser in Aristotle.
+
+**Same shape both times: a property of the Aristotelian corpus attributed to Plato
+as a defect, which Aristotle's method then corrects.** In both cases the direction
+of the charge is opposite to the direction of the measured rates.
+
+**THIS IS A CLASS AND IT IS COUNTABLE.** *Find every place Aristotle faults Plato
+for something the Aristotelian corpus itself does at a higher rate.* It requires no
+heteronymic hypothesis: it is a claim about **the direction of attribution in the
+tradition**, testable against rates in both corpora, with two instances already
+measured.
+
+**Status:** the two instances are measured; the class is proposed and unenumerated.
+**What would kill it:** a systematic search finding that Aristotle's charges
+against Plato generally run in the *correct* direction, with these two as
+exceptions.
+
+
 ∮ = 1
