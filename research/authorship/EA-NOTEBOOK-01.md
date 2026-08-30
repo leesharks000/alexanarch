@@ -4132,4 +4132,92 @@ Huxley → Wells (Normal School of Science enrolment records), Bohr → Heisenbe
 Schoenberg → Berg.
 
 
+---
+
+# ROUND 38 — THE SIZE CONTROL, AND THE TARGET PLACED DESCRIPTIVELY
+
+*Added 2026-08-29. The battery tested for discriminatory power, mostly failing it;
+and Plato–Aristotle scored, with what that can and cannot mean stated first.*
+
+## 150. HETERONYMIC MASTER-DISCIPLE PAIRS vs CLASS 1 — and the size control
+
+Pessoa states the relation himself: *o início da «escola»: as obras do **MESTRE** e
+algumas do **DISCÍPULO DIRECTO***. Three such pairs scored against the class-1
+documentary ranges gave **five of seven features separating cleanly**.
+
+**Then the size control.** Caeiro is 20,027 tokens; class-1 masters run 118k–2.1M.
+Downsampling the class-1 masters to Caeiro's size:
+
+                                  F3      F4      F5      F9
+    Freud→Jung  FULL           0.742    26.4     1.0   0.736
+    Wundt→Titchener  FULL      0.618    26.4     7.3   0.736
+    Freud→Jung  master@20k     0.708    24.5     4.5   0.755
+    Wundt→Titchener @20k       0.576    24.5    15.5   0.755
+    ─────────────────────────────────────────────────────────
+    Caeiro→Reis                0.477    15.5    16.7   0.845
+    Caeiro→Campos              0.609    20.2     9.3   0.798
+    Caeiro→Mora                0.481    23.9    22.7   0.761
+
+**F5 REFUTED** — Wundt→Titchener goes 7.3 → **15.5**, into the heteronymic range.
+Novel-vocabulary rate is a small-master artifact.
+**F9 REFUTED** — both class-1 pairs rise to 0.755.
+**F3 mostly goes** — Wundt drops to 0.576, below its own class minimum.
+**F4 keeps a narrow gap** — 24.5 against 15.5–23.9 — but 23.9 versus 24.5 is not a
+separation to build on at n=3 vs n=3.
+
+**VERDICT: the battery has NO DEMONSTRATED DISCRIMINATORY POWER.** What looked like
+five separations was substantially **corpus size**. It can presently say *cannot
+tell*.
+
+## 151. THE TARGET, SCORED — descriptive placement only
+
+**Because of §150, what follows classifies nothing.** It records where the target
+falls on features whose discriminating value is unestablished.
+
+    Plato 460,261 content tokens → Aristotle 761,916
+
+    master size        F1     F2     F3     F4    F5     F8     F9
+    FULL             1.66   95.0  0.641   30.5   1.7  0.395  0.695
+    @20k             38.04  95.6  0.640   29.0   6.5  0.339  0.710
+    @118k             6.46   94.8  0.646   30.1   2.7  0.386  0.699
+    @196k             3.88   95.0  0.649   31.2   2.0  0.388  0.688
+
+**F2–F9 are stable across a 23× range of master-size** — 0.640/0.641/0.646/0.649
+on F3, 29.0/30.1/30.5/31.2 on F4. **The target's values are not size-driven**,
+which is more than can be said for the heteronymic pairs.
+
+    comparison, size-matched at 20k          F3        F4       F5       F9
+    CLASS 1 documentary @20k             0.58-0.71    24.5   4.5-15.5   0.755
+    HETERONYMIC (Caeiro @20k)            0.48-0.61  15.5-23.9 9.3-22.7 0.76-0.85
+    PLATO → ARISTOTLE @20k                   0.640    29.0      6.5     0.710
+
+**On F3 the target sits INSIDE the class-1 band (0.58–0.71) and ABOVE the
+heteronymic band (0.48–0.61).**
+**On F4 the target (29.0) is ABOVE BOTH** — above class 1's 24.5 and well above
+the heteronymic 15.5–23.9.
+**On F5 (6.5) it is inside class 1 and below the heteronymic range.**
+**On F9 (0.710) it is below both.**
+
+## 152. WHAT THIS DOES AND DOES NOT SAY
+
+**DOES NOT:** classify. §150 established the battery cannot separate the classes
+once size is controlled, so *inside class 1's band* is not evidence of class-1
+membership. **The bands themselves are three points wide.**
+
+**DOES, descriptively:** on the features where the classes differ at all, the
+target sits **at or beyond the class-1 end**, not the heteronymic end. F4 is the
+clearest — 29.0 against a heteronymic maximum of 23.9 and a class-1 value of 24.5.
+
+**And one thing worth recording independently of any class:** the target's values
+are **invariant under 23× change in master-size**, where the heteronymic values
+were shown to be size-driven. That is a property of the measurement, not of the
+hypothesis, and it means the target is the only pair here whose numbers are not an
+artifact of how much text survives.
+
+**Standing:** n=3 per class, bands three points wide, no demonstrated
+discriminatory power. **The right next step is size-matched pairs throughout and
+enough members that a one-point gap on F4 either survives or does not.** That is a
+design change, not a new instrument.
+
+
 ∮ = 1
