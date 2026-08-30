@@ -1,46 +1,35 @@
 {
- "manifest": "research/MANIFEST.json",
+ "manifest": "research/authorship/MANIFEST.json",
  "generated": "2026-08-29",
- "repo_head": "7480ecea96658ab9665ea6b18dd6fd8a6a835835",
+ "rule": "THREE FILES. Two living, one frozen. Anything else is drift — consolidate it back.",
  "structure": {
-  "EA-NOTEBOOK-01.md": "LIVING — read forward. Part I the locus and nine rounds, Part II the reconstruction, Part III the framings. Append new rounds at the end.",
-  "EA-AUTHORSHIP-MEASURES-01.md": "REGISTER — look things up. M1-M32 with conditions; refutations attached to the claims they killed; Part II is the terrain map.",
-  "prereg/EA-LEAK-DEFICIT-01.md": "FROZEN — spent. Degenerate lower tail; found before the test pair was computed.",
-  "prereg/EA-LEAK-DEFICIT-02.md": "FROZEN — discharged VOID. Sanity control fired; no number from that run may be quoted.",
+  "EA-NOTEBOOK-01.md": "LIVING — read forward. Fifteen rounds plus the standing frame. Append new rounds at the END; do not reorganise.",
+  "EA-AUTHORSHIP-MEASURES-01.md": "LIVING REGISTER — look things up. M1-M34 with conditions, refutations attached to the claims they killed, Part II the terrain map.",
+  "PREREG-LEDGER.md": "FROZEN, APPEND-ONLY. Six registrations with their original SHA-256s and their dispositions. Nothing above a DISPOSITION line is ever edited. New tests append a new ENTRY at the end.",
   "data/": "supporting extractions — snub loci, base-rate table, argument map"
  },
- "consolidated_2026_08_29": {
-  "reason": "Seven documents and seventeen sidecars for one day's work would be lost. Separation by topic was an instinct, not a need. Working notes accumulate; they do not need taxonomy.",
-  "merged_into_notebook": {
-   "EA-SNUB-01.md": "the nine rounds",
-   "EA-KERMA-01.md": "the reconstruction",
-   "EA-PINAX-01.md": "calibration object, corrected and superseded",
-   "EA-FLOOD-01.md": "the flood reframe"
+ "why_prereg_cannot_merge": "A pre-registration is worth something only because its content was fixed before the test ran. A hash over an appending notebook proves nothing. The ledger keeps them frozen while stopping them proliferating at three files apiece.",
+ "consolidations": [
+  {
+   "date": "2026-08-29",
+   "from": 7,
+   "to": 3,
+   "note": "EA-SNUB-01, EA-KERMA-01, EA-PINAX-01, EA-FLOOD-01 merged into the notebook; pre-merge hashes in its frontmatter"
   },
-  "pre_merge_sha256": {
-   "EA-SNUB-01.md": "7ec077023cb0e649",
-   "EA-KERMA-01.md": "51be41d0b6ee194c",
-   "EA-PINAX-01.md": "41a8ed2a28c80767",
-   "EA-FLOOD-01.md": "574bdc08c42079fb"
-  },
-  "note": "Full pre-merge hashes are in the notebook frontmatter so any commit citing them resolves."
- },
+  {
+   "date": "2026-08-29",
+   "from": 25,
+   "to": 5,
+   "note": "six pre-registrations and twelve sidecars folded into PREREG-LEDGER.md; original hashes preserved per entry so every commit citing them resolves"
+  }
+ ],
+ "known_failure_mode": "append by anchor-replace is UNSAFE when the anchor appears more than once — str.replace on the closing sigil duplicated sections 17-22 of the register and truncated section 5. Append by unique section anchor instead.",
  "sha256": {
-  "EA-AUTHORSHIP-MEASURES-01.md": "c7774798adf9eef2908db1e8b1988ccf14a3b26d8ff8b07fc5350aa53b98cb37",
-  "EA-NOTEBOOK-01.md": "5a415165357e66a8d4057360e44d6d93dffb94ef84bac3be7ae6213820c4609a",
+  "EA-AUTHORSHIP-MEASURES-01.md": "cb813e007d86ca5492f6026d3417e1c003d1ef2c0bae5221ab0ce02c75c0f96a",
+  "EA-NOTEBOOK-01.md": "b20f9b971a259e51fc7901f93ff330700b8aec5c706b2acbb34216e9ccab9384",
+  "PREREG-LEDGER.md": "bddfdce6b60b58acab57b563ac2482f2ffa594d914cc1a40175ef71c93f8eab1",
   "data/EA-SNUB-01-argmap.json": "fbaff3e4fea09a69f943c0503ea84836cf78d1daaf6c800278775ea956226d08",
   "data/EA-SNUB-01-baserate.json": "1d7f503d631cf7a7f7966b31cbe157422daa5856bd3c9482945400c255dd51c0",
-  "data/EA-SNUB-01-loci.json": "b0d4d7289424c7b7a4704713d1ea1771c369056e24e8089afd7d06d988ba5767",
-  "prereg/EA-LEAK-DEFICIT-01.md": "fbbd13a53a5b29afb4c07c27aa63d49be7f39b6cfa96d84acec41d69e0c3ccfd",
-  "prereg/EA-LEAK-DEFICIT-01.registration.json": "514992c4d40eb773421242cc19a1c71fad10029392f8c981ab6ca8c5fd1c4cf3",
-  "prereg/EA-LEAK-DEFICIT-02.md": "493514a2f142385fc4b957c7b22f137662295555f570118e95b0e37c5f17ce0b",
-  "prereg/EA-LEAK-DEFICIT-02.registration.json": "7b9fce102ce5084d4b418d033202df279876cb38894b7d08168a52e35e8622cd"
- },
- "location": "research/authorship/",
- "repair_2026_08_29": {
-  "fault": "str.replace with the sigil as anchor replaced EVERY occurrence, duplicating sections 17-22 at each append",
-  "damage": "31 section instances for 23 sections; M18 duplicated; section 5 truncated to 61 bytes losing M17 and M18",
-  "repair": "deduplicated by section number keeping the longest variant; section 5 recovered from commit 12e46c9f; headers deduplicated",
-  "verified": "M1-M33 all present exactly once; 70,718 bytes corrupted to 51,529 clean"
+  "data/EA-SNUB-01-loci.json": "b0d4d7289424c7b7a4704713d1ea1771c369056e24e8089afd7d06d988ba5767"
  }
 }
