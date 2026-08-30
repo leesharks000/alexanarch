@@ -1222,6 +1222,117 @@ configuration explain many otherwise independent peculiarities with fewer
 auxiliary assumptions?
 
 
+---
+
+## 27. M38 — THE AUXILIARY LEDGER: CHARGING BOTH MODELS
+
+*Added 2026-08-29. Methodological standing, extending M37c. The contribution is
+not a measurement; it is an accounting rule that the investigation has been
+applying asymmetrically, by me, all day.*
+
+**The asymmetry, stated.** Inheritance has been permitted to be a very
+high-capacity explanation; unity has not. Every structure this investigation found
+was absorbed by the received model **and the absorption was never charged**:
+
+    same arbitrary procedural reflex        → school habit
+    same six-slot functional architecture   → inherited programme
+    Plato abandons, Aristotle completes     → student solves master's problem
+    Aristotle catalogues Plato's method     → student catalogues master's errors
+      as definitional fault (Topica ×4)
+    complementary vocabulary and roles      → specialisation
+    substrate separation at Z = +39.18      → genre, register, object
+
+Each is a good explanation. **Several are almost certainly true.** But the model
+being invoked is no longer P → A. It is P → A *plus* a selective-transmission
+account in which the student retains some arbitrary reflexes and not others,
+radically changes substrate, picks up specifically **abandoned** rather than
+developed problems, completes them with apparatus the master lacked, preserves the
+master's figure while completing what it failed at, distributes rather than
+repeats functions, and negates inherited formulations while preserving the
+operations beneath them.
+
+**The auxiliary count, on the current bundle.** H_S requires, separately:
+
+    A1  an arbitrary reflex transmitted that the method does not require (M30)
+    A2  substrate divergence to the strongest partition in the sample (M6)
+    A3  selection of ABANDONED operations rather than developed ones (Round 13)
+    A4  completion by a mechanism the master lacked — ἄνευ τῆς ὕλης
+    A5  retention of the master's figure at the point it failed — seal-and-wax
+        in exactly three works, the Platonic one being the abandonment site
+    A6  division of one apparatus by ROLE: representation vs detection (M35)
+    A7  a systematic exclusion nobody states — Socrates 0/144 vs Callias 5/35
+        in snub contexts (M34)
+    A8  independent filling of all six transmission slots at work level (Round 12)
+    A9  the master writing himself absent at the founder's death (Phaedo 59b)
+    A10 a signed denial of the corpus's own authorship (Letter II 314c)
+
+**No individual item is implausible.** The question M38 exists to keep open is
+whether H_S **predicts their joint configuration** or accommodates them one at a
+time with a fresh auxiliary each — which is, structurally, the same operation
+Aristotle performs on an abandoned execution: take what is left incomplete and
+supply the missing part.
+
+**M38a — the null's kill condition is missing, and this is the real defect.**
+This investigation has pre-registered kill conditions for the heteronymic reading
+repeatedly, and they have fired: EA-LEAK-DEFICIT-01 spent, -02 void, EA-YIELD-01
+spent, M30's Poisson withdrawn, the snub position refuted, *Poetics* namelessness
+refuted, my own completion verdict reversed twice. **The ledger is built so failed
+predictions stay attached.**
+
+**No equivalent has ever been demanded of the received model.** So it must be
+asked directly:
+
+> **What observation would make "Plato influenced Aristotle" insufficient?**
+
+And the worrying property is that the received model assimilates all four
+directions of evidence without adjustment:
+
+    different style        → different authors
+    same method            → teacher transmitted it
+    contradiction          → the student rejected the master
+    continuity beneath     → the student developed the master
+      the contradiction
+
+Difference, similarity, contradiction and continuity are all absorbed. That does
+not make the model false — a mature historical model should explain many kinds of
+evidence — but a hypothesis that no configuration of evidence can strain has
+stopped discriminating and become **the grammar in which results are narrated.**
+
+**I do not currently have a kill condition for H_S**, and I could not construct
+one when I tried: the best candidate — that Aristotle faults Plato for coining
+(*Topica*) while stating coining as his own policy (*NE* 1108a) — is absorbed by
+both models. That absence is recorded as a defect of the investigation, not
+resolved.
+
+**M38b — the correct contest.** Not *can inheritance tell some story about E?* —
+it can, and elastic hypotheses always can. The contest is:
+
+    P(E | H_S)  versus  P(E | H_H)
+
+with the likelihood under H_S **not** assessable by inventing the best inheritance
+story after seeing each datum, since that is P(E | H_S, A₁…Aₙ) with every Aᵢ
+tailored to its observation. **The auxiliaries must be charged.**
+
+And H_H is charged in the opposite direction: an enormous prior penalty, because
+the record presents Socrates, Plato and Aristotle as distinct persons in
+succession. It can only earn that penalty by **compression** — one latent
+configuration making many otherwise independent peculiarities consequences of a
+single construction.
+
+    H_S :  historical prior advantage, auxiliary-expensive
+    H_H :  prior-expensive, compression advantage
+
+**The question the paper has to answer is which model makes the observed total
+architecture less surprising after both are charged for everything they assume** —
+and specifically why two extraordinarily well-separated textual containers behave
+as unusually complementary machinery. *Teacher and student* is an answer to that.
+It is not automatically a complete one.
+
+**Status.** An accounting rule, not a result. It licenses no conclusion about
+authorship and is recorded because the investigation has been applying the
+asymmetry silently, in the direction of the received model, in every round.
+
+
 ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
 **0.0258** — inside the M1 same-author band — while the best single heteronym is
 Campos at 0.0498, then Caeiro 0.0903, Reis 0.2205. **Pooled beats best individual
