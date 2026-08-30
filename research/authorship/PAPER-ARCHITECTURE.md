@@ -37,7 +37,19 @@ instantiated in the Platonic corpus belong?**
 **The received chronology makes that question difficult before the alternative has
 entered.** That is the whole of Station 1.
 
-*Source: register §0A, with the four language repairs of 2026-08-29.*
+**⚠ AND THE STATION MUST GIVE THE CONVENTIONAL READING ITS STRONGEST FORM FIRST.**
+Aristotle draws the art/products distinction **himself** — *οὐ τέχνην ἀλλὰ τὰ ἀπὸ
+τῆς τέχνης*, the shoemaker who hands out shoes. His named comparison class is
+**paid eristic teachers and Gorgias**, not Plato. The contrast is with rhetoric's
+**old written tradition**. And *APr* I.31 says the dividers *ξυνίεσαν* — did not
+understand — which supplies retrospective subsumption.
+
+**The station's work is to make the conventional account draw a boundary it has
+never had to draw:** *can a predecessor possess a general, named, repeatable
+method D, which Aristotle calls a PART of S, while Aristotle truthfully says no
+part of S was previously worked out?* **The question, not a contradiction.**
+
+*Source: register §0A, third rewrite, 2026-08-29.*
 
 ---
 
