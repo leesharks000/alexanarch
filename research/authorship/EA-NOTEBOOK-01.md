@@ -3691,4 +3691,93 @@ same battery, before any feature can be called *discriminating* rather than mere
 must hold until both classes are characterised.**
 
 
+---
+
+# ROUND 33 — THREE CLASSES, GENRE CONTROLLED, AND THE BATTERY REFUTED
+
+*Added 2026-08-29. Fourteen pairs across three classes, with the class scheme
+corrected and the lexical battery shown to measure something other than what it
+was built for. Plato and Aristotle still not examined.*
+
+## 128. THE CLASS SCHEME, CORRECTED
+
+**Lee's correction: constructed lineage is the oldest move in the book, and the
+more ancient the pair, the likelier an "inheritance" is a retrospective
+construction.** Homer → Apollonius is not a neutral distance control; the
+Alexandrian poet claiming epic descent **is** a constructed lineage.
+
+    1  MASTER-STUDENT DIRECT       embodied, externally attested contact
+    2  DISTANT CONSTRUCTED         a later writer constructs the relation
+    3  HETERONYMIC CONSTRUCTED     one maker constructs both positions
+
+**The classes are marked as different from one another without deciding what the
+difference IS.** That decision comes after enough cases, not before.
+
+## 129. THE BATTERY IS REFUTED — it measures period and dialect
+
+    pair                        relation         F2     F5      F8
+    Lysias → Isocrates          CONTEMPORARY   100.0    0.7   0.404
+    Thucydides → Xenophon       succession      98.7    4.0   0.383
+    Isaeus → Demosthenes        DIRECT PUPIL    96.7    3.0   0.384
+    Albert → Aquinas            DIRECT PUPIL    94.0    0.3   0.476
+    Thucydides → Philo          distance        91.3    7.7   0.223
+    Herodotus → Josephus        distance        79.3   23.7   0.230
+    Herodotus → Thucydides      CONTEMPORARY    76.0   22.7   0.244
+    Herodotus → Plotinus        distance        65.7   22.7   0.169
+
+**Lysias → Isocrates has NO teaching relation and scores higher on every
+inheritance feature than Isaeus → Demosthenes, which has one.** And Herodotus →
+Thucydides is *contemporary* and scores like the distance pairs — because they
+write different dialects, Ionic against Attic.
+
+→ **The battery tracks TEMPORAL AND DIALECTAL PROXIMITY. It does not track
+pupillage.** Round 32's F2 and F5 "regularities" are period effects. **Two Attic
+prose writers of one generation look like master and student whether or not either
+taught the other.**
+
+→ **No lexical-distributional measure can identify a teaching relation.** That is a
+hard constraint on an entire family of instruments, and it retroactively explains
+why every measure today collapsed at the same step.
+
+## 130. CLASS 3 RUN — heteronymic constructed lineage
+
+    pair                              F1     F2     F3     F4    F5     F8     F9
+    Caeiro → Reis                   2.54   96.6  0.477   15.5  16.7  0.353  0.845
+    Caeiro → Campos                 6.12   99.6  0.609   20.2   9.3  0.380  0.798
+    Caeiro → Mora                   2.58   89.3  0.481   23.9  22.7  0.274  0.761
+    Caeiro → orthonym              42.35  100.0  0.395    9.8  26.0  0.289  0.902
+    Caeiro → Soares (unrelated)     7.31   95.7  0.549   19.6  10.3  0.377  0.804
+    Either/Or A → B                 1.03   98.7  0.981   48.0   1.0  0.535  0.520
+    A → signed                      0.85   94.7  0.438   10.9  34.0  0.280  0.891
+
+    class            n     F2 range        F5 range       F8 range
+    1 DIRECT         2   94.0 - 96.7      0.3 - 3.0    0.384 - 0.476
+    2 CONSTRUCTED    5   65.7 - 97.7     1.5 - 23.7    0.169 - 0.286
+    3 HETERONYMIC    7  89.3 - 100.0     1.0 - 34.0    0.274 - 0.535
+
+**The ranges overlap on every feature.** Class 3 spans both others. And within
+class 3, **Caeiro → Soares — two positions with no constructed master-disciple
+relation between them — scores like Caeiro → Campos, which has one.**
+
+→ **Confirms §129 from the other side.** The battery cannot separate the classes,
+and cannot separate related from unrelated positions *inside* a single maker's
+work.
+
+## 131. WHAT SURVIVES
+
+**A hard negative, and it is worth more than the positives it replaces:**
+
+> **Relation-type is not recoverable from lexical distribution.** Not pupillage,
+> not constructed lineage, not heteronymic construction. What lexical measures see
+> is period, dialect, genre and subject.
+
+**Therefore the fulfillment question requires STRUCTURE, not vocabulary** — slots,
+sequence, and transformation-versus-exposition, which is what the Catullus
+calibration measures (Round 27) and what has not been built.
+
+**Fourteen pairs, one constraint, and the instrument family ruled out. Plato and
+Aristotle remain unexamined, which is now cheap to maintain, since the battery
+would tell us nothing about them either.**
+
+
 ∮ = 1

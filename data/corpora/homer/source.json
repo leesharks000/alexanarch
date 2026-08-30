@@ -1,29 +1,39 @@
 {
  "corpus": "homer",
- "seat": "EA-CORPORA-01/13",
+ "seat": "EA-CORPORA-12/01",
  "origin": {
   "repo": "PerseusDL/canonical-greekLit",
   "commit": "a065c359aab33c33bd17ddc2cac7d27fdc9cd870",
   "paths": [
-   "data/tlg0012/tlg001 (Iliad, grc2)",
-   "data/tlg0012/tlg002 (Odyssey, grc2)",
-   "data/tlg0012/tlg003 (Epigrams, grc1)"
+   "data/tlg0012"
   ]
  },
- "edition": "D.B. Monro and T.W. Allen, Homeri Opera (OCT, 1920) for Iliad and Odyssey, via Perseus; Epigrams via Allen",
+ "edition": "Homer, Perseus Greek edition (tlg0012)",
  "license": "CC BY-SA (Perseus); underlying edition public domain",
- "fetched": "2026-08-21",
+ "fetched": "2026-08-29",
+ "normalization": "flat lines from TEI; teiHeader/note/app stripped; one file per work; works under 400 tokens dropped",
  "works": {
-  "per-work": "text/tlgNNN-<Name>.txt (3 works, 27,903 verse lines)"
+  "count": 3,
+  "per-work": "text/<id>.txt",
+  "list": [
+   {
+    "id": "tlg001",
+    "tokens": 111895,
+    "lines": 15691
+   },
+   {
+    "id": "tlg002",
+    "tokens": 87181,
+    "lines": 12494
+   },
+   {
+    "id": "tlg003",
+    "tokens": 735,
+    "lines": 112
+   }
+  ]
  },
- "normalization": "flat ref-tagged lines: '<Work> <book>.<line>\\t<text>'",
- "verified_loci": [
-  "Iliad 1.1: μῆνιν ἄειδε θεὰ Πηληϊάδεω Ἀχιλῆος — the wrath, the first word of the tradition",
-  "Odyssey 1.1: ἄνδρα μοι ἔννεπε, μοῦσα, πολύτροπον — the man of many turns",
-  "Iliad 15.187–193: the threefold division of the cosmos by lot — Zeus, Poseidon, Hades"
- ],
- "ruling": {
-  "tlg003": "Labelled Homeric Hymns in some catalogues; the Perseus grc1 file at this commit is the Epigrams (opens Ἄνδρες ἄγρης ἁλίης). Seated as Epigrams. The Hymns are a separate seat, not taken here."
- },
- "lines_total": 27903
+ "lines_total": 28297,
+ "verified_loci": [],
+ "why_seated": "Iliad, Odyssey, Homeric Hymns. Seated to characterise the DISTANCE-INHERITANCE class on the same nine-feature battery used for direct master-student pairs — monolingual Greek so the lexical features stay comparable. Homer to Apollonius is roughly five centuries with no possible contact; Hesiod is the same-period alternative source. Plato and Aristotle are deliberately NOT examined until both classes are characterised."
 }
