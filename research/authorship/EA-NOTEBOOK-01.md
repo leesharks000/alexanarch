@@ -2840,4 +2840,72 @@ Campos differ in meter and line-length more than in particles; that is a
 construct-validity risk carried forward, not resolved.
 
 
+---
+
+# ROUND 23 — EA-SPEC-01 RUN: P2 HOLDS, P1 PARTIAL, MOST OF THE RANKING UNTESTABLE
+
+*Added 2026-08-29. Registered fd839bbcf7ff94cc… with the constraint ranking frozen
+before measurement.*
+
+## 88. Result
+
+Speakers extracted by Perseus tag, ≥6,000 tokens, 2,500-token blocks, top-150
+Greek function words:
+
+    speaker                    blocks   internal  to others   ratio
+    ΤΙ    Timaeus                   8     0.0285     0.0470   1.649
+    ΤΙΜ   Timaeus (whole file)      9     0.0302     0.0463   1.532
+    ΑΘ    Athenian                 41     0.0303     0.0435   1.433
+    ΦΑΙΔ  Phaedo narrator           8     0.0320     0.0420   1.313
+    ΑΠΟΛ  Apollodorus               7     0.0315     0.0412   1.310
+    ΞΕ    Eleatic Stranger         11     0.0351     0.0424   1.207
+    ΣΩ    SOCRATES                 68     0.0377     0.0439   1.166
+
+**P2 HOLDS.** Socrates — frozen as the least constrained speaking position —
+comes in **rank 1 of 7 from the loose end** at 1.166. And **Timaeus is tightest**,
+also as frozen: one continuous cosmological monologue, the most narrowly specified
+position in the corpus.
+
+**P1 PARTIAL.** The ordering runs Timaeus → Athenian → narrators → Eleatic
+Stranger → Socrates, which is the predicted direction, **but the Eleatic Stranger
+lands second-loosest at 1.207 where I ranked him constrained.** *(Post-hoc, marked
+as such and unavailable as a rescue: he speaks across two dialogues on different
+subjects. That reasoning was available before the run and I did not use it.)*
+
+**MOST OF THE FROZEN RANKING WAS UNTESTABLE.** Diotima, the constructed
+Aristophanes, Parmenides, Protagoras and Callicles all fall under the threshold.
+Seven speakers of the ranked set cleared it.
+
+**⚠ EXTRACTION FLAW:** ΤΙ and ΤΙΜ-mono overlap — the tagged Timaeus speeches sit
+inside the whole file I also counted. They are not independent and should not both
+appear. Recorded rather than silently dropped.
+
+**And §5's limit governs everything above:** this buys **nothing about
+authorship**. A dramatist specifying characters to differing depths produces the
+same gradient. What it shows is that the Platonic corpus is ordered by
+specification depth in the same ordinal pattern as a documented heteronymic
+system — **construction, which dramatic and heteronymic composition share.**
+
+## 89. THE UNIT IS WRONG, AND M16 ALREADY SHOWED WHY
+
+Speaker is not the right unit, and the corpus itself says so. **M16: Plato's
+constructed Aristophanes ranks 5 of 7 *Symposium* speeches for resemblance to the
+real Aristophanes, and sits at 0.0380 from the Plato corpus — *more* Platonic than
+its neighbours.** Speaker-differentiation is **sometimes deliberately switched
+off**. Where it is off, a per-speaker measure reads the absence of construction as
+the absence of a position.
+
+**So the measure has to run at several units and be compared across them:**
+
+    WORK        the unit YIELD-02 used, where both corpora filled 6/6
+    SPEAKER     run here — valid only where differentiation is switched ON
+    DIALOGUE-GROUP  the tetralogy or thematic cluster
+    CORPUS      the whole, which is where Pessoa's orthonym result sits
+
+**The Pessoa comparison was run at position level and the Plato test at speaker
+level. Those are not the same unit** and the parallel drawn in §88 is weaker for
+it. Work-level is the next run and it is the one that matches EA-CORPORA-11's
+structure most closely.
+
+
 ∮ = 1

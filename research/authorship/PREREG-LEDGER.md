@@ -1236,7 +1236,16 @@ mitigation.
 
 ## DISPOSITION
 
-PENDING — registered before measurement.
+**RUN 2026-08-29. P2 HOLDS** — Socrates rank 1 of 7 from the loose end at 1.166,
+and Timaeus tightest at 1.649, both as frozen. **P1 PARTIAL** — the direction
+holds but the Eleatic Stranger lands second-loosest where he was ranked
+constrained. **Most of the frozen ranking was untestable**: Diotima, Aristophanes,
+Parmenides, Protagoras and Callicles all fall under the 6,000-token threshold.
+Extraction flaw recorded: ΤΙ and ΤΙΜ-mono overlap.
+
+**And the UNIT is wrong** — M16 shows speaker-differentiation is sometimes
+deliberately switched off, so a per-speaker measure reads absence of construction
+as absence of a position. Work-level is the next run. Notebook Round 23.
 
 
 ∮ = 1
