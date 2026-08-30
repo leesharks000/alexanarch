@@ -1139,6 +1139,89 @@ corpus — it is undecidable, which is what EA-UNRES-01 predicts an engineered
 object produces. Recorded as a conjecture requiring its own test, not as a result.
 
 
+---
+
+## 26. M37 — COMPLEMENTARITY: THE MEASURE FAILS ON VOCABULARY AND THE OBJECT IS LEVEL-DEPENDENT
+
+*Added 2026-08-29. Records a proposed discriminator, its failure at the level
+first tried, and what the existing data already says at the level that works.*
+
+**The proposal.** Inheritance should produce **redundancy** — the student
+possesses what the teacher taught, so overlap is high and the union barely exceeds
+either part. Deliberate partition should produce the opposite: small intersection,
+union far more complete than either part. Formally, coverage of the union over
+redundancy between the parts.
+
+**It fails on content vocabulary.** Top-1500 content words, redundancy =
+|A∩B|/|A∪B|, union gain = |A∪B|/max(|A|,|B|):
+
+    pair                                    redund   union gain
+    PLATO | ARISTOTLE                        0.340       1.493
+    Isaeus | Demosthenes  (succession)       0.310       1.527
+    Herodotus | Thucydides (independent)     0.198       1.669
+    Aristotle | Theophrastus                 0.323       1.511
+    Plato | Xenophon                         0.302       1.537
+    Philo | Plotinus (independent)           0.296       1.543
+
+Everything lies in 0.20–0.34. **Documented succession and documented independence
+are indistinguishable**, and Plato–Aristotle is the *most redundant* pair in the
+set — the opposite of the partition prediction. Content vocabulary tracks shared
+subject matter, so the measure reads topic overlap and nothing else.
+**Do not rebuild it at this level.**
+
+**And the object is level-dependent, which is the finding.**
+
+**At the slot level the pair is REDUNDANT.** Each fills 6 of 6 (Round 12). Union
+gain 1.0. That is inheritance behaviour. The Johannine group is the one that
+partitions — six slots across three books, **no slot doubled**, union gain 3.0
+over its parts.
+
+**At the execution level within a shared function they are COMPLEMENTARY** (M35):
+
+    εἴδωλον 72/13 · μίμημα 54/7 · σύγγραμμα 37/3      ← Plato: representation
+    πλάσμα 16/32 · φάντασμα 31/47 · ὑποκριτής 10/32   ← Aristotle: detection
+    δόκιμος 28/24                                      ← shared: the assay
+
+**Statement of the object, at the size the evidence carries:** *redundant in which
+functions they perform, complementary in how they execute them.* Both cover the
+whole apparatus; each holds a different end of the operation. That is **not**
+tiling and is a different signature from the Johannine partition. It needs its own
+specification before it gets a measurement, and no measurement of it is registered
+here.
+
+**M37a — Theophrastus was never logically decisive.** M30's "decisive successor
+control" language overstated what any such control could do, independently of
+M36's exteriority problem. A hit is explained by school transmission **and** by an
+extended configuration — if one configuration were demonstrated, the prior on
+further differentiated positions rises. A miss is explained by four ordinary
+considerations: students need not inherit every reflex; doctrine can transmit
+without craft; genre can suppress; the surviving Theophrastean material may sample
+the wrong register. **Neither outcome discriminates.** The language is corrected.
+
+**M37b — the design that replaces it.** Fix labels **outside** the phenomenon
+under measurement. An externally secured **different-person** control requires
+evidence not derived from style, doctrine, literary tradition or attribution
+history — autographs, independently dated correspondence, documentary provenance.
+An externally secured **one-person/many-voice** control requires the heteronymic
+relation to be documented rather than inferred, which is why Pessoa is valuable.
+Then the ancient objects — Plato, Aristotle, Xenophon, Aristophanes, Theophrastus
+— enter **unlabelled**, and the question becomes a classification with the labels
+fixed elsewhere. This moves the methodological problem out of the corpus instead
+of shifting the arbitrary boundary one name outward.
+
+**M37c — the inferential standard.** No single observation need distinguish school
+from configuration; that standard is too strong for historical inquiry. The
+contest is comparative likelihood over a **bundle**: substrate divergence,
+functional tiling, arbitrary procedural reflex, negative exclusion (M34),
+completion structure, the counterfeit/personation apparatus (M35), authorial
+self-erasure. School transmission may accommodate each item singly. **The question
+is whether it predicts their joint configuration**, and how many auxiliary
+assumptions it accumulates in doing so — against a heteronymic hypothesis carrying
+an enormous prior penalty that must be earned by **compression**: does one latent
+configuration explain many otherwise independent peculiarities with fewer
+auxiliary assumptions?
+
+
 ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
 **0.0258** — inside the M1 same-author band — while the best single heteronym is
 Campos at 0.0498, then Caeiro 0.0903, Reis 0.2205. **Pooled beats best individual
