@@ -3862,4 +3862,84 @@ lineages are their own classes and are measured separately — never as members 
 class 1, and never as evidence about its range.
 
 
+---
+
+# ROUND 35 — THE ATTESTATION STANDARD: DOCUMENTARY, NOT BIOGRAPHICAL
+
+*Added 2026-08-29. The class-1 membership criterion tightened, two of three
+members excluded, and Freud→Jung admitted.*
+
+## 136. THE CIRCULARITY IN THE ANCIENT ATTESTATIONS
+
+**Ancient teacher-student relations are regularly attested by writers centuries
+later, and regularly INFERRED FROM STYLISTIC RESEMBLANCE.** Dionysius of
+Halicarnassus argues the Isaeus–Demosthenes relation *from* the likeness of their
+prose.
+
+**Using such a pair to calibrate what stylistic likeness means in a master-student
+relation is circular at the root.** It is the Chaerephon problem in its purest
+form: the attestation is downstream of the very evidence it is being used to
+interpret.
+
+## 137. THE STANDARD, AND THE MEMBERSHIP IT PRODUCES
+
+**A class-1 member requires CONTEMPORARY DOCUMENTARY attestation of the teaching
+relation — records made while both parties lived, independent of textual
+resemblance.**
+
+    ADMITTED
+      Freud → Jung        1907-13 correspondence (360 letters), IPA presidency,
+                          Jung's editorship of the Jahrbuch — all contemporary,
+                          all independent of style
+      Albert → Aquinas    Dominican chapter records, Cologne 1248-52 —
+                          administrative documents
+
+    EXCLUDED
+      Isocrates → Isaeus      [Ps.-Plut.] Vit. X Orat.; Dion. Hal. — later
+                              biography
+      Isaeus → Demosthenes    Dion. Hal. — and he ARGUES THE RELATION FROM
+                              STYLISTIC RESEMBLANCE. Circular; excluded.
+
+## 138. CLASS 1, DOCUMENTARY ONLY
+
+    pair                  F1     F2     F3     F4    F5     F8     F9
+    Freud → Jung        1.41   99.7  0.742   26.4   1.0  0.519  0.736
+    Albert → Aquinas    2.49   94.0  1.003   50.4   0.3  0.476  0.504
+
+    [excluded, for reference only]
+    Isocrates → Isaeus  0.27   94.0  0.691   32.6  11.7  0.278  0.674
+    Isaeus → Demosth.   8.80   96.7  0.665   25.9   3.0  0.384  0.741
+
+**Freud 196,434 → Jung 276,476 tokens**, both English translation 1913–20 —
+**translation is a declared confound**, since both pass through translators of the
+same period.
+
+**F2 = 99.7 and 94.0. F5 = 1.0 and 0.3.** The documentary pairs are, if anything,
+*tighter* on apparatus-inheritance than the excluded ancient ones — Jung uses
+**99.7%** of Freud's three hundred most distinctive terms, and only **1.0%** of his
+own distinctive vocabulary is absent from Freud.
+
+**That is notable given that Jung BROKE with Freud** — publicly, bitterly, and
+before the second of these two books. **The break is doctrinal and the apparatus is
+inherited whole.**
+
+## 139. STANDING
+
+**n = 2. Not a baseline.** The tightening cost two members and gained one; the
+class is smaller and cleaner than it was an hour ago.
+
+**Still needed, documentary attestation required:**
+
+    Boas → Mead              Columbia records; Mead 1928 now public domain
+    Husserl → Heidegger      Freiburg records, correspondence — COPYRIGHT BLOCKED
+    Schoenberg → Berg        lesson records, correspondence
+    Bohr → Heisenberg        institute records, correspondence
+    Wundt → Titchener        Leipzig records
+
+**And the same standard now applies retroactively to every class.** Any pair whose
+relation is known only through later tradition is inadmissible as calibration —
+which is a constraint the ancient material will find hard to meet, and which
+should be stated plainly rather than worked around.
+
+
 ∮ = 1
