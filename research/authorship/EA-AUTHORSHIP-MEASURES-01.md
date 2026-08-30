@@ -2630,14 +2630,64 @@ as Plato's own doctrine**. That difference is the original observation, and the
 measure never touched it: it counts distributions, not **attribution**.
 
 **CORRECTED STATUS:** *reception capture occurs in both classes; neither model has
-been shown to explain the Plato–Aristotle instance better.* The demand points both
-ways — at anyone claiming succession accounts for it, not only at the
-configurational reading for failing to prove it does.
+been shown to explain the Plato–Aristotle instance better.*
 
-**What would settle it is a measure of ATTRIBUTION, not distribution:** whether the
-interpreter's terms are received AS the interpreter's or AS the interpreted
-position's own. That is a fact about reception history, and no instrument here
-reads it.
+## 36.10 THE ATTRIBUTION TEST — proposed, run, and it REFUTES MY OWN RESCUE
+
+§36.9 proposed that the two cases differ in **attribution**: Freud's terms are
+known to be Freud's, while Aristotle's are taken as Plato's own doctrine. **Checked
+against the reception literature, that is false — and false on my strongest
+example.**
+
+The Indefinite Dyad is attributed to Aristotle **everywhere it appears**:
+
+> *revealed in **Aristotle and other testimonia*** — Cambridge Elements,
+> *Plato's Unwritten Doctrines*
+> *the unwritten doctrines refer to **various things said by Aristotle and
+> others***, with *(Aristotle, Metaphysics 987b20-22)* cited inline
+> *the expression 'unwritten doctrines' … **was first used by his student
+> Aristotle*** — Wikipedia
+> ***Aristotle attributes to Plato*** the view that such ideal numbers constitute
+> substantial Forms
+
+**These are among the most explicitly sourced terms in the field.** The entire
+Tübingen–Milan controversy exists *because* the attribution is visible. The
+tradition transmits them **with their provenance attached**.
+
+**So M46 does not survive — and it dies for a better reason than the first one.**
+Not *S pairs also do it* (that was the M45 error, §36.9). But: **the specific
+asymmetry proposed to distinguish the cases does not exist.** Both are attributed
+capture; the reception layer tracks provenance in both.
+
+**WHAT SURVIVES IS THE DISTRIBUTIONAL FACT:** ἀόριστος 108/3, δυάς 41/4,
+χωριστ- 411/165, ἀριθμ- 977/246. **Plato's doctrines are concentrated in
+Aristotle's text, and the tradition knows it and says so.**
+
+## 36.11 AND THE RESULT CUTS AGAINST H_S TOO — this is the part to keep
+
+**Every measure in this sequence failed to discriminate. That is not a null for the
+configurational reading alone.**
+
+    reception capture     occurs in H pairs AND S pairs
+    attribution           tracked in H pairs AND S pairs
+    presence (mechanical) 90-100% in EVERY pair, no separation
+
+**A multi-author corpus does not have the discriminative value the received model
+assumes it has.** The received account treats *distinct authors* as an explanatory
+fact from which the observed structures follow. But on the measures run here, **the
+distinct-author cases and the one-maker cases are not separable** — Freud on
+Sophocles behaves like Mora on Caeiro; Coleridge on Wordsworth behaves like B on
+A; Marx on Hegel behaves like nothing in particular.
+
+**If the classes cannot be told apart by the phenomena, then "multi-author" is not
+doing explanatory work on those phenomena** — for either side. It remains the
+default label (M45), holding a prior it has not converted into likelihood on any of
+these measures.
+
+**The honest summary of the whole sequence: reception capture is real, occurs
+across classes, and is evidence for neither model — which is a finding about the
+INSTRUMENT and about the received model's assumed discriminative power, not only
+about the configurational reading's failure to prove itself.**
 
 ## 36.8 GINSBERG ← KEROUAC — BLOCKED
 
