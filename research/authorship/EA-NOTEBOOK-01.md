@@ -3247,4 +3247,109 @@ so, in the standard case.** Any C value for Plato–Aristotle establishes
 that collapse at exactly that step.
 
 
+---
+
+# ROUND 28 — WHAT A SCHOOL ACTUALLY PRODUCES: COMMENTARY, NOT FULFILLMENT
+
+*Added 2026-08-29. The counterintuitive claim, demonstrated in its general form
+and requiring no philology about the Greek pair.*
+
+## 106. The target, narrowed correctly
+
+**We do not need to say what the Plato–Aristotle relation IS.** We need only
+answer: **does the master–student relation generally produce interlocking
+fulfillment at that closeness?**
+
+That is a claim about **what school structure defaults to** — answerable from
+documented cases, and counterintuitive if it comes back negative.
+
+## 107. THE THREE PROPERTIES
+
+    A  UNANNOUNCED     the later text does not declare the relation
+    Q  SEQUENCE-KEPT   the earlier text's order is preserved
+    T  TRANSFORMED     the material is altered, not expounded
+
+## 108. THE MEASUREMENT
+
+    ANNOUNCEMENT (source named, per 10k)
+      Aquinas, Metaphysics commentary          14.4
+      Aquinas, Summa Theologiae (independent)  21.9
+
+    TRANSFORMATION (content tokens)
+      Aristotle, Metaphysics                 42,065
+      Aquinas, In Metaphysicam              194,064
+      ratio                                    4.61×
+
+**A school under maximal inheritance pressure produces COMMENTARY, and commentary
+is the structural OPPOSITE of the fulfillment operator on two of three
+parameters.**
+
+**It announces at saturation** — and *more often in the independent works* (21.9)
+than in the commentary itself (14.4). The relation is declared on nearly every
+page.
+
+**It expands rather than transforms** — 4.61× its source. Against which Catullus
+is **16 lines to Sappho's 17**, with four slots not omitted but **replaced**.
+Compression, register-shift, silence.
+
+## 109. THE TAXONOMY
+
+    relation                        unannounced  sequence  transformed
+    Aquinas → Aristotle (comm.)          ✗          ✓          ✗
+    Matthew → Torah                      ✗          ~          ✓
+    Catullus → Sappho                    ✓          ✓          ✓
+    Aristotle → Plato (claimed)          ✓          ?          ✓
+
+**Interlocking unannounced fulfillment is not what a school produces.** A school
+produces exposition that names its master and grows longer than him. The operator
+requires the reverse: silence about the source, and material compressed rather
+than expounded.
+
+## 110. THE GENERALISATION, AND WHY IT IS COUNTERINTUITIVE
+
+**Lee's formulation, which is the round's actual claim:**
+
+> *Not one of them will produce an interlocking machine that close — and that is
+> the contrary of the expected pattern, where it normally takes TIME AND DISTANCE
+> across inheritance to build the interlocking fulfillment machine.*
+
+**The intuition says proximity produces tight fit.** The measurement says the
+reverse: **direct contact produces commentary; the fulfillment operator appears
+across distance.** Catullus is two centuries and a language from Sappho. Matthew
+is centuries from Hosea. Both are *unannounced or loosely-fitted across a gap*;
+neither is a pupil in the room.
+
+**A pupil in the room does not need to fulfil his master. He can cite him.**
+
+## 111. THE PROGRAMME — cleanly checkable across many contexts
+
+Every **directly attested master–student contact line** gives a datum, and the
+prediction is uniform: *commentary and citation, not unannounced interlocking
+fulfillment.*
+
+    Aristotle → Theophrastus      direct contact, Lyceum       [seated]
+    Albert → Aquinas              direct contact, Cologne      [seated]
+    Isaeus → Demosthenes          direct contact, attested     [seated]
+    Freud → Jung                  direct contact, correspondence extant
+    Williams → Ginsberg           direct contact, Paterson; W. wrote the
+                                  introduction to Howl
+    Husserl → Heidegger           direct contact, assistant then successor
+    Boas → Mead                   direct contact, doctoral
+    Schoenberg → Berg/Webern      direct contact, private lessons
+
+**Each is scored on the same three parameters. The claim is falsified by ONE
+directly-attested pair producing unannounced, sequence-kept, transformative
+interlock across an apparatus.**
+
+**Williams → Ginsberg is the sharpest of the unrun**, because Williams *announced*
+it — he wrote the introduction to *Howl*. **Announcement by the master is the
+strongest possible failure of property A**, and it is what direct contact
+characteristically produces.
+
+**STATED LIMITS.** One school pair measured; a commentary compared against a poem
+across genres; and this shows what the school structure DEFAULTS to, not that no
+school has ever produced fulfillment. The programme in §111 is what would convert
+a default into a rate.
+
+
 ∮ = 1
