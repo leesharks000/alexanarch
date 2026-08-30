@@ -2206,4 +2206,112 @@ heteronymic hypothesis would have to earn against its prior. Whether it earns
 enough is the next measurement, not this one.**
 
 
+---
+
+# ROUND 17 — T-F RUN AND SCORED NULL; AND THE DE ANIMA MECHANISM
+
+*Added 2026-08-29. Two things, kept apart: a frozen target run under EA-UNLOCK-01
+and scored, and a companion finding that cannot be scored under it.*
+
+## 62. T-F, run under protocol — NULL
+
+**Target as frozen:** *do the four Platonic naming-gap works have an Aristotelian
+counterpart naming what they perform?*
+
+**Step 1 — what each performs, from the census, without interpretation:**
+
+    Theaetetus 0.203   ἄλλαι ἀπέραντοι μὲν αἱ ΑΝΩΝΥΜΟΙ, παμπληθεῖς δὲ αἱ
+                       ὠνομασμέναι — infinitely many unnamed perceptions
+    Sophist 0.878      λέων ἔλαφος ἵππος … ΟΥΔΕΙΣ ΠΩ ΣΥΝΕΣΤΗ ΛΟΓΟΣ — a string of
+                       names yields no λόγος
+    Statesman 0.340    τὸν πολιτικὸν οὐδαμοῦ συνελάβομεν οὐδ᾽ ὠνομάσαμεν, ἀλλ᾽
+                       ἡμᾶς ἔλαθεν ΚΑΤΑ ΤΗΝ ΟΝΟΜΑΣΙΑΝ ΕΚΦΥΓΩΝ — he escaped in the
+                       naming
+    Timaeus ×3         nameless kinds of air, juices, smells
+
+**Step 2 — search space fixed BEFORE looking**: the Aristotelian work on the same
+subject, first co-occurrence taken, no roaming.
+
+    Theaetetus → DE ANIMA 412a
+      ψυχὴν οὐσίαν εἶναι ὡς εἶδος σώματος φυσικοῦ ΔΥΝΑΜΕΙ ΖΩΗΝ ΕΧΟΝΤΟΣ …
+      ἡ δ᾽ οὐσία ΕΝΤΕΛΕΧΕΙΑ … αὕτη δὲ λέγεται ΔΙΧΩΣ
+      → the unnamable infinity becomes tractable: unnamed = δυνάμει,
+        named = ἐντελεχείᾳ
+
+    Sophist → DE INTERPRETATIONE 16a
+      πρῶτον δεῖ θέσθαι ΤΙ ΟΝΟΜΑ ΚΑΙ ΤΙ ΡΗΜΑ, ἔπειτα τί ἐστιν … λόγος
+      → names the parts whose absence the Sophist discovers
+
+    Statesman → POLITICS 1275a
+      ΑΝΩΝΥΜΟΝ γὰρ τὸ κοινὸν ἐπὶ δικαστοῦ καὶ ἐκκλησιαστοῦ … ΕΣΤΩ ΔΗ ΔΙΟΡΙΣΜΟΥ
+      ΧΑΡΙΝ ἀόριστος ἀρχή
+      → where the statesman escaped Plato IN the naming, Aristotle meets the same
+        structure and settles it BY DECREE — *let it be, for the sake of marking off*
+
+Three of four resolve in **Form A**, cleanly, with exact Greek.
+
+**SCORE: NULL.** §5 requires the target to become **more determinate under H_H —
+differentially**. It does not. *Sophist* → *De interpretatione* is the standard
+account of how logic developed; *Theaetetus* → *De Anima* the standard account of
+how psychology developed. **Inheritance predicts Form A exactly as strongly.** The
+*Statesman*/*Politics* pair differs in kind but not in favour: Aristotle is not
+completing Plato's specific failure but meeting a *different* nameless class with
+the same reflex — which is **M30**, whose diagnosticity is unresolved and which
+**Theophrastus also carries** (M36).
+
+**Running total: 0 unlocks, 1 null, 5 targets remaining, threshold 3.**
+
+**Recorded because the protocol worked.** Without §5 these three would have been
+written up as a strong result: the Greek is exact, the correspondences are clean,
+and the *De Anima* line lands precisely. **The rule that stops them counting is
+the requirement of differential determinacy rather than mere fit.**
+
+## 63. COMPANION FINDING — the *De Anima* mechanism
+
+*Not T-F. Found by open search, therefore **unscoreable** under EA-UNLOCK-01 §5 and
+carrying no threshold weight. Recorded because null-for-counting is not
+null-for-value: a structure the model handles cleanly is part of what makes it a
+functioning inferential model rather than an available one.*
+
+**De Anima II.2, 413b:**
+
+> πότερον δὲ τούτων ἕκαστόν ἐστι ψυχὴ ἢ **μόριον ψυχῆς**, καὶ εἰ μόριον, πότερον
+> οὕτως ὥστ᾽ εἶναι **χωριστὸν λόγῳ μόνον ἢ καὶ τόπῳ** … ὥσπερ γὰρ ἐπὶ τῶν φυτῶν
+> ἔνια **διαιρούμενα φαίνεται ζῶντα καὶ χωριζόμενα ἀπ᾽ ἀλλήλων**
+
+**De Anima I.4, 409a:**
+
+> τὰ δὲ φυτὰ καὶ τῶν ζῴων πολλὰ **διαιρούμενα ζῇ, καὶ δοκεῖ τὴν αὐτὴν ψυχὴν ἔχειν
+> τῷ εἴδει**
+
+**The distinction is Aristotle's own and it is exact: χωριστὸν λόγῳ μόνον ἢ καὶ
+τόπῳ** — separable in account only, or also in place. And divided living things
+**live**, having **the same soul in form**.
+
+**What it supplies.** EA-KERMA-01 had to answer *Rep.* 395b's κατακεκερματίσθαι
+against *Rep.* 473d's εἰς ταὐτὸν συμπεσεῖν, and answered with the σύμβολον —
+parts that do not resemble but fit. That was an image. **De Anima gives the
+ontology:** one actuality, divided **κατὰ λόγον**, yielding real parts that live
+and are *the same in form*, with the criterion of separation being **account, not
+place.**
+
+    unity at the level of actuality  ≠  undifferentiatedness at the level of
+                                        potentiality
+
+**And potential is not unreal.** A δύναμις is a real capacity of the actual thing.
+So: *all lives are real; some only potentially so* — sharpened for the argument as
+**potential lives are not unreal lives; they are real capacities of one actuality.**
+
+**Why it matters to the model.** It is the recognition principle from the snub
+arriving from the other side. Matter individuates, λόγος recurs — and here **λόγος
+is what divides**, while the actuality stays one. Under that description the
+positions are not masks. They are **real determinations of one actuality,
+separated according to account.**
+
+**Explicit limit.** Aristotle does not apply *De Anima* to authorship and nothing
+here suggests he does. This is a reconstruction of machinery available in the
+corpus, at the same epistemic level as EA-KERMA-01 and under the same standing
+rule: **the corpus supplies the structure; it does not perform the application.**
+
+
 ∮ = 1

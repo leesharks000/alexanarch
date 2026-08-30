@@ -997,7 +997,13 @@ UNLOCK must cite its passages so the judgement is checkable.
 
 ## DISPOSITION
 
-PENDING — registered, not yet run.
+**RUNNING.** T-F run 2026-08-29 and scored **NULL** — three of four resolve in
+Form A with exact Greek (Theaetetus→De Anima 412a, Sophist→De interpretatione 16a,
+Statesman→Politics 1275a), but inheritance predicts Form A equally strongly, so
+the differential-determinacy requirement of §5 is not met. Notebook Round 17 §62.
+
+**Running total: 0 unlocks, 1 null, 5 targets remaining (T-A, T-B, T-C, T-D, T-E),
+threshold 3.**
 
 
 ∮ = 1
