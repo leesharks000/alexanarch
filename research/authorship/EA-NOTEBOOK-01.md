@@ -2995,4 +2995,91 @@ numbers existed first. **This is a comparison, not the registered classification
 test**, and it is recorded as such.
 
 
+---
+
+# ROUND 25 — TWO ARCHITECTURES OF HETERONYMY: CLOSURE BY SUM, CLOSURE BY REMAINDER
+
+*Added 2026-08-29. A correction to how Rounds 21–22 measured Pessoa, and the
+distinction that makes the earlier comparison invalid.*
+
+## 94. The error in the comparison
+
+Round 22 §86 set Pessoa's voice-partition beside Aristotle's domain-partition and
+read the ratios as commensurable. **They are not.** One instrument was run across
+two different operations.
+
+    PLATO / ARISTOTLE — division by OBJECT
+      maximum substrate divergence (Z = +39.18), resolving to EXACT PARITY when
+      the object is controlled (0.0571 ≈ 0.0570), with interlocking function
+      (6/6 slots, one shared figure, one abandoned execution completed twice)
+      → THE INTEGRAL IS A SUM. Complementary parts that fit.
+        What closes it is COMPLETENESS OF COVERAGE.
+
+    PESSOA — division by progressive REMOVAL
+      each position subtracts more; containers tighten as the constraint sharpens
+      (Caeiro 1.781 → orthonym 1.033)
+      → THE INTEGRAL IS A REMAINDER. What persists through every narrowing.
+        What closes it is INVARIANCE.
+
+**Both are heteronymy. They are not the same operation**, and the right measure for
+the second is not distance-between-voices but **what survives the subtractions**.
+
+## 95. THE REMAINDER — measured
+
+Six Portuguese positions ordered by constraint severity (Caeiro tightest →
+orthonym loosest), top-120 features, coefficient of variation across the gradient:
+
+    INVARIANT                        CV
+      há     (there is)            0.080    ← the most invariant word in the system
+      que                          0.094
+      de                           0.101
+      no                           0.102
+      o                            0.108
+      um                           0.121
+      com                          0.123
+
+**Existence-assertion plus the bare connective spine.** That is what cannot be
+removed.
+
+## 96. And what tracks the gradient
+
+    rises as the constraint TIGHTENS      rises as it LOOSENS
+      como    r = −0.82                     também  r = +0.86
+      porque  r = −0.79                     ou      r = +0.80
+      não     r = −0.76                     em      r = +0.80
+      coisas  r = −0.75
+
+**The tighter the position, the more it runs on negation, comparison, causation
+and the generic noun.** *não* · *como* · *porque* · *coisas* — which is Caeiro
+exactly: *as coisas não têm significação: têm existência*.
+
+**A narrowed position is constituted by what it REFUSES**, and refusal is
+expensive in negations and similes. The subtraction has to be *performed* in the
+text, and performing it costs vocabulary.
+
+## 97. ⚠ CONTAMINATION DECLARED
+
+*and · the · it · of · is · that · be · not* appear at CV ≈ 1.8 with strong
+positive trend — **English inside the orthonym file.** Pessoa wrote in English
+under his own name, and Arquivo Pessoa files it under position 1. **The loosest
+position's numbers are polluted and the orthonym rate must be recomputed with
+non-Portuguese text stripped** before §95–96 are trusted. The invariant list is
+less affected (those are Portuguese function words) but the trend coefficients for
+the loose end are not clean.
+
+## 98. Consequence
+
+**The Plato–Aristotle comparison in Round 22 §86 stands only as far as the
+observation that a documented heteronymic corpus has an orthonym less
+container-like than its constructed voices.** The *quantitative* parallel with
+Aristotle's domain-partition is withdrawn: it compared a remainder-structure to a
+sum-structure using a distance instrument built for neither.
+
+**And it sharpens what the Greek pair would have to show to be the same KIND of
+object as Pessoa.** Not similar ratios — a **remainder**: something invariant
+across the positions that is not explained by shared language, genre or subject.
+That measure has not been run on Plato and Aristotle, and it is a different
+question from the six-slot coverage that Round 12 measured.
+
+
 ∮ = 1
