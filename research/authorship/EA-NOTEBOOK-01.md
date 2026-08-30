@@ -4348,4 +4348,101 @@ propositional structure and Round 13's completions — neither of which any meas
 built today can reach.
 
 
+---
+
+# ROUND 40 — WHO FIRST SAYS ARISTOTLE WAS PLATO'S PUPIL, AND ON WHAT BASIS
+
+*Added 2026-08-29. Moved from the measures register (M49), where it did not
+belong, and CORRECTED: the earliest attestation is materially better than I first
+recorded.*
+
+## 159. THE INTERNAL EVIDENCE IS ZERO IN BOTH DIRECTIONS
+
+**Plato never names the philosopher Aristotle.** Ἀριστοτελ- occurs **four times in
+the whole corpus, all in the *Parmenides*** — the young **Ἀριστοτέλης** who
+answers Parmenides and whom Plato identifies as later one of the Thirty. **A
+different man.**
+
+**Aristotle never says he studied with Plato.** Every Πλάτων- within ±14 tokens of
+a learning/teaching word yields **one** hit, an anecdote about **Aristippus**
+(*Rhet.* 1398b). His naming formulae are doxographic throughout — *οἱ Πυθαγόρειοι
+καὶ Πλάτων*, *καθάπερ Πλάτων*, *ἐν τῷ Τιμαίῳ γέγραφε Πλάτων*. **Never *my
+teacher*, never *we*, never *when I was with him*** — the same formulae he uses
+for Empedocles.
+
+## 160. ⚠ CORRECTION — THE EARLIEST ATTESTATION IS GOOD, AND I SAID IT DID NOT EXIST
+
+**ARISTOXENUS, *Harmonics* II, opening.** A **surviving fourth-century BCE text**,
+by a man who **knew Aristotle personally** (Aristoxenus, c. 375–c. 300, a member
+of the Lyceum, passed over for the succession).
+
+He reports that **Aristotle ἀεὶ διηγεῖτο — used habitually to relate** — what
+happened when people came to Plato's lecture *On the Good* expecting something
+about human goods and happiness, and found the discourse turn out to be all about
+mathematics, concluding that the good is one; some despised it, others condemned
+it.
+
+**This is contemporary attestation of Aristotle's own oral testimony that he
+attended Plato's teaching.** Not later biography. Not inferred from style. **It is
+the kind of evidence Round 35's standard demands, and my first pass recorded that
+none existed.**
+
+**And it comes with the other strand from the same author:** Aristoxenus also
+reports that Aristotle set up the Lyceum **in opposition to Plato while Plato was
+alive** (*Vita Marciana* §25). **One contemporary source attests both attendance
+and rupture** — which is coherent, and better history than either strand alone.
+
+## 161. WHAT THE LATER CHAIN ADDS, AND ITS SHAPE
+
+    Aristoxenus              c. 335 BCE    ATTENDANCE (Harmonics II, surviving)
+                                           + RIVALRY (via Vita Marciana)
+    Aristodemus, Aristeides  ?             the hostile strand, "falsely accused"
+    Philochorus              3rd c. BCE    cited to REBUT the rivalry charge
+    Apollodorus → Dionysius  2nd-1st BCE   the chronology: arrival 367/6,
+                                           twenty years, Plato's death 348/7
+    Ptolemy (Neoplatonist)   ~4th c. CE    the harmonising Life
+    Diogenes Laertius        3rd c. CE     the standard source
+
+**Three things about the later chain are worth recording, and none of them touches
+Aristoxenus:**
+
+**(a) Philochorus is cited DEFENSIVELY** — *it was not likely that Aristotle, being
+a foreigner, would have done this against Plato, who was a citizen and had great
+influence.* An argument from status, adduced to make a charge implausible.
+
+**(b) THE TWENTY YEARS RESTS ON A LOST LETTER.** *Vita Marciana* §5: *twenty years
+**as he himself says in a letter to Philip***. The Aristotelian letters do not
+survive and are the contested part of the corpus.
+
+**(c) THE SAME SENTENCE CONTAINS AN IMPOSSIBILITY.** *Vita Marciana* §5, directly
+before the twenty-year claim: *he joined **SOCRATES** and stayed with him almost up
+to the time of his death; and after that he joined Plato.* **Socrates died in 399;
+Aristotle was born in 384.**
+
+**And the harmonising purpose is declared.** Ptolemy §28: *Even in the matters
+where he contradicts Plato, **we will say that he is a Platonist**.*
+
+## 162. WHAT THIS ESTABLISHES, CORRECTED
+
+**The teaching relation IS attested by a contemporary who knew Aristotle**, in a
+surviving text, reporting Aristotle's own habitual account of attending Plato's
+lecture. **On the Round 35 standard, that is admissible** — and my earlier claim
+that Plato→Aristotle would fail that standard is **withdrawn**.
+
+**What remains true and worth keeping:**
+
+- **Neither corpus attests the relation internally.** The counts are in M49.
+- **The twenty-year duration, the daily-pupil picture, and the devotion are
+  LATER**, and rest on a lost letter and a Life containing a chronological
+  impossibility.
+- **The earliest source attests attendance AND rivalry together**, and the
+  tradition's subsequent shape is a defence of Aristotle against the rivalry
+  charge.
+
+**So the defensible statement is narrow: Aristotle attended Plato's teaching, on
+good contemporary evidence. The twenty years of devoted discipleship is a later
+construction, and the earliest witness to the attendance is also the earliest
+witness to the break.**
+
+
 ∮ = 1
