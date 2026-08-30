@@ -3018,6 +3018,111 @@ rate in both corpora.
 the correct direction with these five as exceptions, the class dissolves.
 
 
+---
+
+## 41. M52 — THE COMMENTARY TRADITION ON THE M40 PASSAGES
+
+*Added 2026-08-29. Station II material. **The ancient commentators made the same
+linkage M40 makes** — and the modern literature contains a formal demonstration of
+structural inheritance that nobody in this investigation had consulted.*
+
+## 41.1 THE ANCIENT BRANCH — who is the target of *APr* I.31?
+
+**PHILOPONUS reads I.31 as itself containing the priority claim:**
+
+> *He wants to celebrate through these things the method he handed down. **For no
+> one, he says, of those before us knew this**, but they all used the method of
+> division and through it they thought that they could demonstrate.*
+
+**This is the earliest such reading**, and it glosses I.31 with the *SE* claim.
+**The two passages were read together in antiquity.**
+
+**ALEXANDER OF APHRODISIAS takes the target to include Plato** — *everyone in
+Plato's circle, **including Plato***.
+
+**STRIKER (2009) assigns it elsewhere:** *Aristotle's harsh criticism of division
+in this chapter may be understandable if there were people in the Academy who
+thought that the method of division was all that they needed in philosophy, and
+who therefore paid no attention to Aristotle's innovations* — **so the target was
+not Plato but other proponents of the method.**
+
+    the target of APr I.31
+      Philoponus (6th c.)     "no one of those before us" — everyone prior
+      Alexander (2nd c.)      Plato's circle, INCLUDING PLATO
+      Striker (2009)          other Platonists, NOT Plato
+
+## 41.2 THE MODERN BRANCH — did Platonic division generate the syllogistic?
+
+    Maier                  YES — Aristotle reached the syllogism through critical
+                           reflection on division; I.31 is the evidence
+    Shorey                 NO — I.31 is polemic between finished theories, not
+                           intellectual autobiography
+    de Strycker            defends the division-genealogy
+    Cherniss, Ross         side with Shorey
+    Vlasits (2017)         revives it, with a formal argument
+
+**VLASITS, *Platonic Division and the Origins of Aristotelian Logic* (Berkeley,
+2017), is directly on point in two ways:**
+
+**(a) He PROVES a soundness and completeness theorem** showing that a semantics
+built on **Platonic divisional structures** is sound and complete for the deduction
+system used to model Aristotle's syllogistic. He also argues Aristotle took over
+**Plato's conception of predication as parthood** in the semantics of syllogistic
+propositions. **A formal demonstration of structural inheritance.**
+
+**(b) He states why the influence-thesis has never landed:** it *has been suggested
+by many commentators over the last two centuries, but they have not convinced the
+various detractors **largely because they have not identified any very specific
+aspects of the syllogistic and shown how they were inherited from Platonic
+division**.*
+
+## 41.3 ⚠ AND A METHODOLOGICAL REBUKE THIS INVESTIGATION SHOULD TAKE
+
+Vlasits on why he formalises:
+
+> *the general upshot of my use of formal methods will be to show **how interpreters
+> have often imputed views to Plato and Aristotle that are much stronger than
+> anything warranted directly by the text**. Far from being anachronistic, formal
+> methods can be used effectively to **combat anachronism that stems from
+> imprecision**.*
+
+**That is precisely the failure M40 has now been corrected for three times.**
+
+## 41.4 AND HIS SUBSTANTIVE RESULT BEARS ON STATION IV
+
+Vlasits argues **against the "Traditional View"** of Platonic division (exclusive,
+dichotomous, essential predication) and **for a "Minimal View"** — transitive and
+predicative, but **not necessarily dichotomous, not exclusive, and not
+essential.**
+
+**The Sophist's SIX definitions of the sophist are the evidence:** they are not
+inconsistent; sophistry falls under several coordinate genera at once, and the
+final account explains *what it is in his expertise that all those pieces of
+learning focus on* — *εἰς ὃ πάντα τὰ μαθήματα ταῦτα βλέπει*.
+
+**One kind, many true accounts, one of which gives the essence.** That is the
+Platonic corpus's own handling of the one/many problem for a divided object — and
+it belongs in Station IV, where the corpora supply the ontology.
+
+**Also recorded:** Vlasits notes *the pervasiveness of division throughout the
+Platonic corpus puts pressure on the idea that there is some sort of development
+in Plato's thinking from Socratic elenchus to the method of hypothesis to the
+method of collection and division.* **Division is pervasive, not late** — which
+bears on any developmental account of the corpus.
+
+## 41.5 WHAT REMAINS UNCONSULTED
+
+**In hand:** Philoponus and Alexander (via Vlasits); Striker; the
+Maier–Shorey–de Strycker–Cherniss–Ross–Vlasits dispute; Hitchcock via Corcoran;
+Hasper on the completeness claim; the Loeb introduction.
+
+**Not consulted:** Alexander's commentary on *APr* 1.23–31 in full (Mueller's
+translation exists and *provides an insightful account of Aristotle's criticism of
+Plato's method of division*); the Syriac and Arabic branches; al-Fārābī's
+abridgement of the *Prior Analytics*; the scholastic commentators; Ebbesen's study
+of the *SE* commentary tradition.
+
+
 ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
 **0.0258** — inside the M1 same-author band — while the best single heteronym is
 Campos at 0.0498, then Caeiro 0.0903, Reis 0.2205. **Pooled beats best individual

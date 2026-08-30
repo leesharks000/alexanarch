@@ -1,10 +1,14 @@
 ---
 name: paper-architecture
-title: "Six Stations: The Architecture of the Paper"
+title: "MANY AND ONE — the paper. Working title, no subtitle."
 status: WORKING. Structure fixed 2026-08-29; content drawn from EA-NOTEBOOK-01 and EA-AUTHORSHIP-MEASURES-01.
 author: Sharks, Lee
 orcid: 0009-0000-1599-0703
 ---
+
+# MANY AND ONE
+
+*Working title. No subtitle.*
 
 # Six Stations
 
@@ -315,12 +319,13 @@ functions were coordinated by one maker is an **enactment**, not a datum about
 antiquity. Stating that plainly, in place, converts the liability into disclosed
 method.
 
-**(b) §II IS ASPIRATIONAL, NOT AVAILABLE.** Greek, Latin, Syriac, Arabic and
-scholastic commentary on these two passages is a genuine scholarly undertaking.
-**Currently in hand:** the Loeb introduction; Hitchcock via Corcoran; the
-Maier–Shorey–de Strycker–Cherniss–Vlasits dispute over whether Platonic division
-generated the syllogistic; Hasper on the completeness claim. **That is a start on
-the modern branch and nothing on the others.**
+**(b) §II — PARTLY GATHERED (M52).** **In hand:** Philoponus and Alexander of
+Aphrodisias on the target of *APr* I.31; Striker; the
+Maier–Shorey–de Strycker–Cherniss–Ross–Vlasits dispute; Hitchcock via Corcoran;
+Hasper; the Loeb introduction. **The ancient commentators made the same linkage
+M40 makes** — Philoponus glosses I.31 with *no one of those before us knew this*.
+**Still unconsulted:** Alexander's full commentary in Mueller's translation; the
+Syriac and Arabic branches; al-Fārābī; the scholastics; Ebbesen.
 
 ## WHY THE ASSIGNMENT IS WORTH KEEPING
 
