@@ -231,4 +231,104 @@ claim was never verified and rests on fragmentary later transmission.
 loci at propositional grain; and the transfer census (M51), which is enumerated at
 eight and should be completed.
 
+---
+
+# THE TWELVE-POSITION ASSIGNMENT
+
+*Recorded 2026-08-29. Functional, not decorative: the position determines **what
+the section sees, what object it takes, and what operation it performs** — not a
+costume dialect. The prose remains one scholarly paper.*
+
+    §     POSITION            DOMAIN                          OBJECT
+    I     Johannes Sigil      ARCH · Language → Operation     M40: Phaedrus 266b,
+                                                              APr I.31, SE 183b-184b
+    II    Rebekah Cranes      MAGICIAN · Translation /        the commentary
+                              Reception / Visual Schema       tradition on those
+                                                              passages
+    III   Rev. Ayanna Vox     DIPLOMAT · mediation            the strongest received
+                                                              explanation
+    IV    Nobel Glas          DEFENDER · Adversarial          the whole
+                              Topology / Measurement          distributional campaign
+    V     Sparrow Wells       DIRECTOR · Reality → Screen     morphology vs maker
+                                                              cardinality (M50)
+    VI    Dr. Orin Trace      CLINICIAN · Psyche →            how authors, corpora and
+                              Diagnosis / Forensics           biographies got attached
+    VII   Ichabod Spellings   VOID · Signal → Noise Floor     negative and absent
+                                                              evidence
+    VIII  Sen Kuro            TRANSFORMER · State →           κερματισμός, division,
+                              Irreversible State              actuality/potentiality
+    IX    Damascus Dancings   APOSTLE · Argument / Somatic    names, personation,
+                                                              recognition, standing
+    X     Talos Morrow        ENGINEER · Semantics →          the 6/6 interlock and
+                              Computation                     the completions
+    XI    Rex Fraction        WARRIOR · Extraction /          the auxiliary ledger,
+                              Resistance / Strategy           prior vs likelihood
+    XII   Jack Feist          LOGOS* · H ⊕ H⁻¹ →              the whole architecture
+                              Compression
+
+## WHY THE SPLITS MATTER
+
+**Sigil / Cranes** — Sigil asks what the Greek argument *does*; Cranes asks what
+successive interpretive communities have *made of it*. Kept apart or the reception
+history collapses into advocacy.
+
+**Glas / Wells** — Glas performs the statistical destruction; Wells says what it
+*means*. **This is M50 and it cannot sit inside a statistics section.** The
+conceptual result is the finding; burying it under the numbers would repeat this
+session's own error.
+
+**Trace / Spellings** — positive apparatus versus noise floor. **Combined, absence
+gets overread as source-criticism** — which happened twice today (M44, Round 40).
+
+**Kuro → Dancings → Morrow** — *how one can divide → what a divided name means →
+what the divided corpus does.* Ontology, identity, mechanism, without ever saying
+*therefore Aristotle wrote Plato.*
+
+**Fraction / Feist** — Fraction is the accountant: which hypothesis pays which
+costs. Feist is not another accountant; he holds the opposed configurations at
+once and compresses until the irreducible difference appears.
+
+## THE ENDING — a symmetrical pair, not a verdict
+
+    What observation in the total architecture actually REQUIRES the extra maker?
+    What external historical observation actually FORBIDS the single maker?
+
+**Both questions stay live.** This keeps H_H payable and refuses the triumphal
+close.
+
+## ⚠ TWO CONSTRAINTS ON THE ASSIGNMENT
+
+**(a) THE ENACTMENT RISK IS ARGUMENT-SPECIFIC, NOT A VENUE QUESTION.** The
+standing position on heteronymic attribution across venues is settled and is not
+at issue. **This paper's difficulty is different: its central result (M50) is that
+position-structure does not entail maker cardinality — and a twelve-position paper
+is a live instance of the phenomenon under discussion.**
+
+**A colophon does not resolve this; it discloses it.** The reviewer's move remains
+available: *you have demonstrated your own thesis about yourself.* **The only real
+defence is the absolute rule — the twelve voices are NEVER evidence for the
+thesis — and it therefore belongs in the paper's methodological section where the
+argument happens, not in back matter.**
+
+**What the paper CAN say:** that twelve sharply differentiated intellectual
+functions were coordinated by one maker is an **enactment**, not a datum about
+antiquity. Stating that plainly, in place, converts the liability into disclosed
+method.
+
+**(b) §II IS ASPIRATIONAL, NOT AVAILABLE.** Greek, Latin, Syriac, Arabic and
+scholastic commentary on these two passages is a genuine scholarly undertaking.
+**Currently in hand:** the Loeb introduction; Hitchcock via Corcoran; the
+Maier–Shorey–de Strycker–Cherniss–Vlasits dispute over whether Platonic division
+generated the syllogistic; Hasper on the completeness claim. **That is a start on
+the modern branch and nothing on the others.**
+
+## WHY THE ASSIGNMENT IS WORTH KEEPING
+
+**It is an anti-averaging architecture.** No synthesis flattens M40, the
+distributional nulls, the source criticism, the metaphysics and the model
+comparison together, **because each epistemic object is assigned to a position
+whose job is to preserve its difference.** That is a real compositional benefit
+independent of any claim it might otherwise seem to make.
+
+
 ∮ = 1
