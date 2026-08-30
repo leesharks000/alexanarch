@@ -1527,18 +1527,74 @@ and then denies it of his own:
 
 *Not that part was worked out and part was not — **there was absolutely nothing.***
 
+## 29.1b The instruction to supply what is left out — *APr* I.32, verified
+
+Immediately after the division chapter, Aristotle turns to reducing arguments to
+the figures, and instructs the analyst:
+
+> καὶ εἰ μὴ ἄμφω εἰλημμέναι εἶεν, **αὐτὸν τιθέντα τὴν ἑτέραν** … ἢ ταύτας μὲν
+> προτείνουσι, **δι᾽ ὧν δ᾽ αὗται περαίνονται, παραλείπουσιν** … σκεπτέον οὖν εἴ τι
+> περίεργον εἴληπται καί **τι τῶν ἀναγκαίων παραλέλειπται**, καὶ τὸ μὲν θετέον τὸ
+> δ᾽ ἀφαιρετέον
+
+*If both premises have not been taken, **the analyst must himself supply the
+other** … sometimes they propose these but **omit those through which these are
+concluded** … examine whether something superfluous has been taken and **whether
+something necessary has been left out**, and add the one and remove the other.*
+
+**The lexical link is exact.** παραλέλειπται here; and the *Sophistici Elenchi*
+closes by asking pardon **τοῖς παραλελειμμένοις** — for what has been left out.
+Same verb, same participle: the chapter that teaches the reader to supply the
+omitted premise, and the treatise-group that ends by asking indulgence for an
+omission.
+
+**Also in I.31, and sharper than the "weak syllogism" line:**
+
+> **οὔτε ὅ τι ἐνδέχεται συλλογίσασθαι διαιρούμενοι ξυνίεσαν**
+
+*They did not understand **what can be syllogized by dividing**.* Not that they had
+no syllogistic — that they **had one and did not understand what it could
+conclude**. A diagnosis of defective execution of an existing apparatus.
+
 ## 29.2 The contradiction, in Aristotle's own terms
 
     APr I.31    Platonic division IS a syllogism, and a part of the method
     Phaedrus    division IS Plato's stated method, held for the sake of a capacity
     SE 184b     of this method, nothing whatever existed before
 
-**The usual escape is not available.** One would ordinarily say Aristotle means
-the *formal system* only, and that Plato merely reasoned well without theorising
-inference. But Aristotle forecloses that himself: he does not say division is
-something other than syllogism, he says it **is** syllogism — weak, and *a part of
-the method described*. The predecessor is classified as an instance of the thing
-whose instances are then denied to have existed.
+**The usual escape is not available, and the reason is a point about charity.**
+
+One would ordinarily say Aristotle means the *formal system* only — reading *ταύτης
+δὲ τῆς πραγματείας … οὐδὲν παντελῶς ὑπῆρχεν* as *of **this systematic treatment**
+nothing existed*, so that Platonic division falls outside the scope of the denial.
+The grammar permits it. **⚠ I first recorded that as a defensible alternative and
+withdraw it here, on the following ground.**
+
+Consider what the narrow reading attributes to him. He has written that division
+**is** a syllogism, that it is a **part of the method described**, and that its
+practitioners **did not understand what can be syllogized by dividing** — three
+statements that place the Platonic apparatus inside his subject and concede that
+there is something there to reason with. The narrow reading then has him close the
+treatise-group by declaring that nothing existed, rescued only by taking
+*πραγματεία* in a sense that excludes what he has just included.
+
+**That is an equivocation on his own technical term at the one point where his
+standing depends on it** — committed by the author of the *Sophistici Elenchi*, in
+the closing paragraph of the *Sophistici Elenchi*, in the corpus that gives us
+ὁμωνυμία and catalogues the fallacies of ambiguity. It convicts him of precisely
+the fault his book exists to expose, in order to preserve a chronology he never
+asserts.
+
+**Charity runs the other way.** Take him to mean what he says, in one consistent
+technical sense, in both places. Then he neither contradicts himself nor equivocates:
+he states two things that are jointly true only if the Platonic apparatus is not
+prior to him in the relevant sense, and — one chapter after diagnosing division —
+instructs the reader to **supply what has been left out**.
+
+**The softer reading is not the more generous one. It is a milder accusation**
+(sloppiness rather than a claim), purchased by protecting the received chronology.
+Holding him to his own terms lets the chronology take the strain instead, which is
+what the argument does.
 
 ## 29.3 Why this is a syllogism and not a complaint
 
