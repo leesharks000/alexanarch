@@ -9,26 +9,30 @@
  "sha256": "39dd76157ad2fb7863c3905f7bb06284ee78cee2b947f633b0349e50e174e4a2",
  "custodian": "Enli Lucente",
  "hosting": {
-  "status": "PAPER SEATED; EVIDENTIARY APPENDIX AWAITED FROM CUSTODIAN",
+  "status": "PAPER SEATED AT PROVENANCEERASURE.ORG; APPENDIX LOCATED AND LINKED, NOT RE-HOSTED",
   "location": "data-rhizome (private repository)",
   "public_url": null,
-  "why": "Seated at provenanceerasure.org beside the predecessor paper. Alexanarch mints and describes but does not host. 44 MB of capture material lives on the PER surface where the argument it evidences also lives.",
+  "why": "The paper is seated at provenanceerasure.org beside its predecessor. The evidentiary appendix is not re-hosted anywhere: it is published in the semantic-economy repository and linked from here by its address and its verified hash. The archive holds no copy, which is the same position it took when the file was unlocated.",
   "access": "By request to the custodian. The archive holds no copy and cannot grant access.",
   "paper_url": "https://www.provenanceerasure.org/rebuttal-as-warrant/",
   "paper_pdf": "https://www.provenanceerasure.org/rebuttal-as-warrant/EA-MMRS-RAW-01-v1.2.pdf",
-  "paper_sha256": "c6dd90438f8f7c11498bb9daadd846ea27ec4bae78d9d5a478f92c28046d5102",
-  "evidence_destination": "https://www.provenanceerasure.org/rebuttal-as-warrant/evidence/"
+  "paper_sha256": "c6dd90438f8f7c11498bb9daadd846ea27ec4bae78d9d5a478f92c28046d5102"
  },
  "files": [
   {
    "role": "evidentiary appendix",
    "designator": "EA-MMRS-RAW-01-EVIDENCE-01",
    "canonical_title": "Google AI Mode Continuous Session Capture — 2026-08-26 19:12–19:56",
+   "filename_as_published": "GoogleAI間違い2026.08.27.pdf",
    "pages": 31,
-   "sha256": "39dd76157ad2fb7863c3905f7bb06284ee78cee2b947f633b0349e50e174e4a2",
-   "url": null,
-   "status": "AWAITED",
-   "note": "Sought in the custodian's repository on 2026-08-30 and not found: four related captures were inspected and none matched the hash or the 31-page count — two shared the session date at 15 and 78 pages, two were dated three days later. Those four were briefly seated under their own identities and then withdrawn: placing adjacent material in the evidence directory of a paper about evidential role inversion invites the reading the paper measures, however carefully each file is labelled. The destination is held empty and declared. Until the appendix is supplied, the determinations at §4.3 and §10.1 rest on a document no reader can open."
+   "bytes": 6707027,
+   "sha256": "10775634a9ed4d7fbcb7c8d0b6320c0a3144f3c8941155ccef52f0f0a0c0fb14",
+   "sha256_verified": "2026-08-30, by round-trip fetch from the URL below; the served bytes hash identically to the file in the repository",
+   "url": "https://raw.githubusercontent.com/leesharks000/semantic-economy/main/GoogleAI%E9%96%93%E9%81%95%E3%81%842026.08.27.pdf",
+   "hosting": "semantic-economy repository (public). Not served by semanticeconomy.org, which returns 404 for every root PDF; the raw URL is the address that resolves.",
+   "composition": "31 pages, 31 embedded images, no text layer — a screenshot capture, consistent with the paper’s description of an appendix preserving device time, domain display, UI elements and hyperlink positions.",
+   "created": "2026-08-27T11:38:50Z (Adobe Acrobat 13.0 Image Conversion; modified 11:39:02Z)",
+   "status": "LOCATED AND LINKED"
   }
  ],
  "determinability": "Every claim in the paper is determinable from the display layer preserved in the evidentiary appendix. The paper states this as a design requirement (§4.2, evidence scope) and declines to assert anything about the full body text of the four cited documents (§4.3.2, §10.1 1c).",
@@ -39,5 +43,13 @@
  },
  "note_on_discipline": "Strutturista della psiche is Enli Lucente's DISCIPLINE — structural psychology, in Italian — and not a heteronym. It has been mistranslated as one. Recorded here so the error does not propagate through the archive's own metadata.",
  "license": "CC-BY-4.0",
- "recorded": "2026-08-30"
+ "recorded": "2026-08-30",
+ "hash_correction": {
+  "date": "2026-08-30",
+  "declared_in_paper": "39dd76157ad2fb7863c3905f7bb06284ee78cee2b947f633b0349e50e174e4a2",
+  "actual": "10775634a9ed4d7fbcb7c8d0b6320c0a3144f3c8941155ccef52f0f0a0c0fb14",
+  "resolution": "The paper’s frontmatter and §XIV declare a hash that does not match the published file. The document is nonetheless the right one, on four independent grounds: it is 31 pages, as declared; it is a pure screenshot capture (31 images, no fonts), as the appendix is described; its creation timestamp is 2026-08-27, the same date as the original filename the paper records; and its name is that filename with 捏造認める (\"admits fabrication\") replaced by 間違い (\"mistake\") — the very neutralisation §VIII calls for. The byte difference is a re-export: ModDate stands twelve seconds after CreationDate.",
+  "action": "The true hash is recorded here and the file is linked. The paper’s declared value should be corrected at v1.3 or by erratum, since as published the frontmatter cites a hash no reader can reproduce from the file it names.",
+  "note": "Four other captures held by the custodian were inspected first and correctly rejected: 15pp and 78pp dated 2026-08-26, and two dated 2026-08-29. None was the appendix and none was seated as it."
+ }
 }
