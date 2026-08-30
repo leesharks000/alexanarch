@@ -1602,8 +1602,11 @@ locus of the dispute.
 
 **H_H — configuration. Its own ledger, which must be equally ugly:**
 
-    K1  Chronology. The received dating must be wrong or the corpus's composition
-        order must differ from its attributed order.
+    K1  Chronology / prescience.  ⚠ WITHDRAWN 2026-08-29 — see Notebook Round 18.
+        Reading ξυνίεσαν at APr I.31 as inclusive of Plato makes the second
+        position a DISCOVERY of the operation's range rather than the execution of
+        a plan. No prescience, no anticipation, no chronological adjustment
+        required. This was the ledger's most expensive item.
     K2  A historical-person architecture. What the attested Aristotle IS relative
         to the authorial position — patron, writer, appropriated name, occupied
         role — must be specified, and is not.

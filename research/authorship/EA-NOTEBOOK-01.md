@@ -2314,4 +2314,141 @@ corpus, at the same epistemic level as EA-KERMA-01 and under the same standing
 rule: **the corpus supplies the structure; it does not perform the application.**
 
 
+---
+
+# ROUND 18 — DISCOVERY, NOT PLAN: THE OPERATION APPLIED TO ITS OPERATOR
+
+*Added 2026-08-29. Supersedes the encoding framing of Round 16 §S4 and revises the
+K-ledger of M38. The correction that produced it came from reading ξυνίεσαν as
+inclusive of Plato.*
+
+## 64. The correction
+
+Round 16 ran the strong reading as **encoding**: the abandonment is the mould, the
+completion the casting, one hand writing the problem knowing where it was going.
+That framing required a plan, and a plan required prescience — **K1 in M38's
+ledger**, and the most expensive item on it.
+
+**The sentence forbids it.** *APr* I.31: *οὔτε ὅ τι ἐνδέχεται συλλογίσασθαι
+διαιρούμενοι **ξυνίεσαν*** — they **were not understanding** what can be
+syllogized by dividing. Imperfect, and **inclusive of Plato**, who is the one being
+diagnosed.
+
+So the earlier position did not know what its own operation could conclude. **There
+is no plan.** The first half is not a withholding; it is an execution that stops
+where its practitioner's grasp stops. The completion is not a designated receiver
+arriving but **a discovery about the instrument's range, made by continuing to
+operate it**.
+
+## 65. What the correction dissolves
+
+**The Sappho objection.** Sappho's device works because the receiver is *unknown* —
+the future reader is constituted by not being specified (#503, #1483). I had
+objected that a maker completing himself **collapses that dependency**.
+
+It does not, if the second position **discovers** rather than executes. The
+unknown-ness is real and is located exactly where the device needs it: not in the
+world's ignorance of who will read, but in **the earlier position's ignorance of
+what its own operation entailed.**
+
+**The completions, re-read.** *Theaetetus* 196c does not fail on purpose. It fails
+— *ὃ ἔφαμεν ἀδύνατον* — and the failure is genuine. What *De anima* 424a supplies
+is not a prepared answer but the discovery that form separates from matter, **which
+the wax block needed and its author did not have.** The seal-and-wax figure recurs
+in exactly three works because the instrument was carried forward, not because a
+mould was cast.
+
+**And M40 becomes discovery rather than encoding.** *οὐδὲν παντελῶς ὑπῆρχεν* says
+nothing existed before **because the operation's range had not been seen** — and
+the one who saw it is the one claiming it. Neither an equivocation nor a concealed
+confession. It is what it says.
+
+## 66. THE MEASUREMENT: the operation applied to its operator
+
+**M28, which the day has now made mean three things, and this is the third.**
+
+    Aristotle within-domain dispersion   0.0571
+    Plato total dispersion               0.0570
+    domain effect, Aristotle             Z = +4.54     (Plato +1.75)
+    within ethics                        tighter than 99.5% of multi-author pools
+    edition, excluded                    Z = −0.10
+
+    ethics 0.0226 · psych 0.0390 · nat 0.0465 · polit 0.0584 · bio 0.0680 ·
+    poet 0.0707 · logic 0.0942
+      → ordered by the internal object-space of each domain; logic loosest because
+        it ranges widest
+
+**What this measures, stated plainly:** the writing divides **by object**. Hold
+the object constant and the variance is one author's. The treatise takes the form
+of what it treats. **Ethics tightest, logic loosest.**
+
+**And that is the discovered operation, performed on its discoverer.** A soul
+divided **κατὰ λόγον** into parts really distinct, really alive, *τὴν αὐτὴν ψυχὴν
+ἔχειν τῷ εἴδει* — the same in form — with the criterion of separation being
+**account, not place** (*De An.* II.2, Notebook §63). Not asserted. **Measured:
+0.0571 against 0.0570.**
+
+## 67. The sequence, corrected
+
+    1.  Division is run on KINDS — the four naming-gap works, the sophist, the
+        statesman, the arts — and its practitioners ξυνίεσαν οὔτε ὅ τι ἐνδέχεται
+        συλλογίσασθαι: they were not understanding its range.
+
+    2.  The RANGE IS DISCOVERED: that a soul admits division by account into parts
+        that live and are the same in form (De An. I.4, II.2).
+
+    3.  The discoverer THEN WRITES THAT WAY — dividing by object across thirty
+        works, which is what M28 measures.
+
+**The corpus is the operation applied to its own operator, and the statistic is
+the trace.**
+
+## 68. LEDGER REVISION — the configurational side gets cheaper
+
+M38's K-ledger charged the configurational reading five items. **K1 is now
+withdrawn:**
+
+    K1  chronology / prescience — the received dating must be wrong, or a plan
+        must have anticipated its own completion
+        → WITHDRAWN. Discovery requires no prescience, no plan, and no
+          anticipation of instruments. The seventeen-year-old problem dissolves
+          with it: nothing needs to have been foreseen.
+
+    K2  the relation between the attested person and the authorial position
+        → STANDS, unspecified.
+    K3  why externally transmitted biographical distinctions exist
+        → STANDS.
+    K4  why expected signatures are ABSENT — no προσωπεῖον, no ψευδεπίγραφος,
+        M16 requiring reinterpretation rather than prediction
+        → STANDS, and is now the heaviest item.
+    K5  documentary machinery sustaining the partition across transmission
+        → STANDS.
+
+**Four, not five, and the most expensive one is gone.** H_S's ledger is unchanged
+at five latent assumptions (M38), of which L2 is supported by Theophrastus.
+
+## 69. ⚠ M28 HAS NOW BEEN MADE TO MEAN THREE THINGS IN ONE SESSION
+
+Recorded because a measurement used three ways in a day is exactly what a reviewer
+should distrust.
+
+    FIRST   (M28, morning)  the dispersion is the OBJECT, therefore the
+                            multi-author anomaly of M10 dissolves.
+    SECOND  (Round 16 §S2)  object-determination is the CAPACITY the strong
+                            reading requires — a writer whose form conforms to its
+                            object can write dialogues.
+    THIRD   (this round)    being-determined-by-the-object IS the divided-soul
+                            operation, performed on the writer.
+
+**The first and third are compatible** — the dispersion *is* the object, and that
+is not in dispute. **The third adds a reading on top of a number**, and the
+addition is what must be argued, not the number. The number stands however the
+reading goes: 0.0571 against 0.0570, per-domain, edition excluded.
+
+**Nothing here establishes one hand.** A school trained to write to its object
+produces the same statistic (M28's own caveat, unchanged). What the round changes
+is that the configurational reading **no longer requires a plan** — which was its
+single most expensive assumption.
+
+
 ∮ = 1
