@@ -1126,7 +1126,10 @@ one transmission channel and their agreement in editorial habit is not independe
 **M36a — the control criterion, stated.** A control must be **impossible to be
 inside the configuration**, which requires either (i) **no causal contact** — a
 corpus that could not have received the method — or (ii) **independent attestation
-of the author's existence** by sources outside the configuration. Theophrastus
+of the author's existence** by sources outside the configuration.
+  → ⚠ **See M39.** I stated criterion (ii) and did not notice that exactly one
+    member of the candidate cluster satisfies it: **Aristotle**, by FD III 1, 400.
+    Socrates, Plato and Aristophanes do not. Theophrastus
 fails both. Demosthenes passes (ii) via inscriptions and decrees. **The Hippocratic
 corpus passes (i)** — largely pre-Platonic, Coan and Cnidian, medical rather than
 Academic — and stands at **0 of 15**, the one control nobody can absorb.
@@ -1331,6 +1334,79 @@ It is not automatically a complete one.
 **Status.** An accounting rule, not a result. It licenses no conclusion about
 authorship and is recorded because the investigation has been applying the
 asymmetry silently, in the direction of the received model, in every round.
+
+
+---
+
+## 28. M39 — THE CERTIFICATION ASYMMETRY: ARISTOTLE IS THE ONLY ANCHORED POSITION
+
+*Added 2026-08-29. A correction to how M36a's own criterion was applied. I stated
+the criterion and did not notice that exactly one figure in the candidate cluster
+meets it.*
+
+**M36a requires of a control: independent attestation of the author's existence by
+sources outside the configuration.** Applied to the cluster itself:
+
+    SOCRATES      wrote nothing. Attested through Plato, Xenophon and
+                  Aristophanes — all three INSIDE the cluster (M33). The
+                  Chaerephon problem in its purest form: the biographical record
+                  is downstream of the texts it is meant to attest.
+    PLATO         attested through his own corpus and the tradition that corpus
+                  generated. Letter II 314c denies the corpus is his; Letter XIII
+                  transmits its own athetesis. No external documentary anchor.
+    ARISTOPHANES  produced under other men's names for a decade (T9); the civic
+                  didascalic record carries the PRODUCER. Biographical facts are
+                  extracted from plays whose named author may be another man.
+    XENOPHON      held apart as a candidate position (M33).
+    ─────────────────────────────────────────────────────────────────────────
+    ARISTOTLE     **FD III 1, 400** (*ante* 329) — a contemporary Delphic decree
+                  crowning Aristotle and Callisthenes. Epigraphic, non-literary,
+                  outside the configuration. **Passes M36a.**
+
+**Aristotle is the only member of the candidate cluster with external documentary
+certification of his existence as a person.**
+
+**This inverts the frame the investigation has been using.** Aristotle has been
+treated throughout as the anomaly requiring explanation — the heterogeneous corpus
+(M10, dissolved by M28), the excluded twin (M34), the completions (Round 13). He
+is the **anchored** position. On any configurational reading he is the terminus:
+the one member certified to have been a person.
+
+**M39a — what the completions then say.** M35 established that ancient legitimacy
+is **standing, not paternity** — conferred by acknowledgment and witness, and
+re-litigable on testimony. Under that frame, completing what a predecessor left
+undone is how an heir **takes the estate**. Aristotle finishing the abandoned wax
+block with ἄνευ τῆς ὕλης, converting aporia into method, supplying the receiver's
+physiology at *De mem.* 450a — each is a claim to standing over the corpus
+completed. Not *I succeeded Plato* but *what Plato left undone is mine and I can
+discharge it.*
+
+**Methodologically, the completions assert that Aristotle is the authentic Plato.**
+
+**M39b — and this does NOT discriminate.** A student who completes his master's
+unfinished work is equally the legitimate heir, and both readings license the same
+claim. This is M38's problem arriving in a new location, and it is recorded as
+such rather than resolved.
+
+**What is not symmetric between the readings is the anchoring.** Under inheritance
+the certification is **incidental** — of course the latest of the three has the
+best documentation; he was a court figure and a compiler of civic records. Under
+the configurational reading it is **structural**: the certified position is the one
+that must be real, and it is the position that ends holding everything.
+
+**M39c — T12's recursion, sharpened.** The single external anchor in the entire
+configuration is FD III 1, 400 — and it crowns Aristotle **for compiling the
+register of Pythian victors**. The one contemporary document certifying the
+existence of any figure in the cluster certifies **the man who built the
+attribution apparatus**, for building it. The Athenian didascalic records descend
+from his lost *Didascaliae*; that record by convention sometimes names the producer
+rather than the poet (T9, T12).
+
+**Status.** A documentary asymmetry, verified against the record, with its
+non-discriminating character stated. It licenses no authorship conclusion. What it
+changes is which position the investigation should treat as given: **not Plato,
+whose corpus denies its own authorship in his name, but Aristotle, who has a
+stone.**
 
 
 ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
