@@ -3693,6 +3693,8 @@ must hold until both classes are characterised.**
 
 ---
 
+# ROUND 33 — ⚠ §129's REFUTATION IS PREMATURE AND WITHDRAWN (see Round 34)
+
 # ROUND 33 — THREE CLASSES, GENRE CONTROLLED, AND THE BATTERY REFUTED
 
 *Added 2026-08-29. Fourteen pairs across three classes, with the class scheme
@@ -3778,6 +3780,86 @@ calibration measures (Round 27) and what has not been built.
 **Fourteen pairs, one constraint, and the instrument family ruled out. Plato and
 Aristotle remain unexamined, which is now cheap to maintain, since the battery
 would tell us nothing about them either.**
+
+
+---
+
+# ROUND 34 — THE BASELINE MUST BE BUILT BEFORE IT CAN BE USED
+
+*Added 2026-08-29. Withdrawing Round 33 §129, and correcting a contamination of
+class 1 that goes to the heart of what this whole investigation is for.*
+
+## 132. WHAT THE INVESTIGATION IS ACTUALLY ASKING
+
+**Is the Plato–Aristotle interlock characteristic of DIRECT MASTER-STUDENT
+inheritance?** That is the whole question. The standing objection is that the
+interlock is more easily explained that way than any other.
+
+**Therefore class 1 must contain ONLY direct, embodied, externally attested
+master-student relations.** Anything else in it destroys the baseline the question
+depends on.
+
+## 133. ⚠ TWO ERRORS IN ROUND 33
+
+**(a) CLASS-1 CONTAMINATION.** *Thucydides → Xenophon* is a **continuation** —
+the *Hellenica* begins where Thucydides stops — not a teaching relation. It sat in
+the table adjacent to the direct pairs as though it informed the baseline. It does
+not belong in class 1.
+
+**(b) THE REFUTATION WAS PREMATURE, AND THIS IS THE SERIOUS ONE.** §129 argued:
+*Lysias→Isocrates has no teaching relation and scores like Isaeus→Demosthenes,
+therefore the battery cannot detect pupillage.*
+
+**That argument requires knowing class 1's RANGE. With n = 2 there is no range.**
+"Falls inside the range of my two direct pairs" is not a statement about anything.
+**I declared an entire instrument family dead on the basis of a two-member
+class.** §129 is **withdrawn**; Round 33's other content stands.
+
+## 134. CLASS 1, BUILT PROPERLY — attested pairs only
+
+    Isocrates → Isaeus      [Ps.-Plut.] Vit. X Orat. 839e; Dion. Hal. Isaeus 1
+    Isaeus → Demosthenes    Dion. Hal. Isaeus 1; [Plut.] Vit. X Orat. 844b-c
+    Albert → Aquinas        Cologne 1248-52, Dominican records
+
+    pair                  lang     F1     F2     F3     F4    F5     F8     F9
+    Isocrates → Isaeus     grc   0.27   94.0  0.691   32.6  11.7  0.278  0.674
+    Isaeus → Demosthenes   grc   8.80   96.7  0.665   25.9   3.0  0.384  0.741
+    Albert → Aquinas       lat   2.49   94.0  1.003   50.4   0.3  0.476  0.504
+
+    CLASS 1 RANGES (n=3)
+      F1  0.273 – 8.799     F2  94.0 – 96.7      F3  0.665 – 1.003
+      F4  25.9 – 50.4       F5  0.33 – 11.7      F8  0.278 – 0.476
+      F9  0.504 – 0.741
+
+**F2 is remarkably tight — 94.0, 96.7, 94.0** across three pairs, two languages,
+sixteen centuries. **Of a master's three hundred most distinctive terms, a direct
+pupil uses 94–97% of them.** That is the first candidate for a genuine class-1
+property, and unlike Round 32's version it now rests on three cases rather than
+two.
+
+**Everything else is wide.** F1 spans 0.27 to 8.80 — the pupil may write a
+thirtieth of the master's volume or nine times it.
+
+## 135. STANDING, AND THE DISCIPLINE
+
+**n = 3 is still not a baseline.** Nothing may be said to fall inside or outside
+class 1 until it has many more members. **The prohibition holds in both
+directions**: I may not use it to admit the target and may not use it to exclude
+the target.
+
+**Needed, each externally attested and embodied:**
+
+    Gorgias → Isocrates          attested; Gorgias not seated
+    Freud → Jung                 obtainable, both partly public domain
+    Boas → Mead                  Mead 1928 now public domain
+    Husserl → Heidegger          copyright-blocked
+    Schoenberg → Berg/Webern     private lessons, attested
+    Ammonius → Plotinus          Porphyry attests; Ammonius wrote nothing
+    Plotinus → Porphyry          attested; Porphyry not seated
+
+**And the classes must stay clean.** Contemporaries, continuators, and constructed
+lineages are their own classes and are measured separately — never as members of
+class 1, and never as evidence about its range.
 
 
 ∮ = 1
