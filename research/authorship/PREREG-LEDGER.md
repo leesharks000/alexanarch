@@ -1362,5 +1362,119 @@ altered for four of five. A further bug passed Latin extraction over Greek.
 **Superseded by the simpler reading-level comparison in M47**, which does not
 require the apparatus.
 
+---
+
+# ENTRY — EA-FULFIL-01
+
+**registered:** 2026-08-29, before any pair is scored on the three parameters
+**frozen text follows verbatim; do not edit**
+
+# EA-FULFIL-01 — The Fulfillment Operator, and the Problem of a Singleton
+
+## 1. The operator, from the Matthean case
+
+    ἵνα πληρωθῇ τὸ ῥηθὲν διὰ τοῦ προφήτου
+
+Three components, established in the scholarship on Matthew's ten-to-twelve
+formula quotations:
+
+    1. A LATER text claims an EARLIER text was about it.
+    2. The earlier text was NOT making that claim. Hosea 11:1 — "out of Egypt I
+       called my son" — is not set in prophetic terms at all; it looks BACK at
+       the Exodus. Matthew reads a retrospective line forward.
+    3. The relation works by STRUCTURAL CORRESPONDENCE, not by the earlier text's
+       intent — "tracing lines of correspondence and continuity discerned in the
+       incidental details as well as in the grand design."
+
+## 2. THE THREE PARAMETERS — frozen
+
+    A  ANNOUNCEMENT     does the later text declare the relation?
+    C  MATERIAL CLOSENESS  how tightly does the later text follow the earlier's
+                        structure, sequence and figures?
+    S  SCOPE            one passage, one work, or a whole apparatus?
+
+**The three known cases separate on them:**
+
+    Matthew / Torah        A = YES     C = loose        S = verse-level targets
+    Catullus / Sappho      A = no      C = VERY CLOSE   S = one poem, register-shifted
+    Aristotle / Plato      A = no      C = ?            S = whole apparatus (claimed)
+
+**CATULLUS 51 IS THE CALIBRATION STANDARD FOR C.** It is the canonical instance of
+deliberate close transformation: scene preserved, somatic sequence preserved,
+aspect systematically altered, one stanza added. The archive has already mapped it
+as σ_S → σ_C (deposit #576). **Whatever "close" means, it means that.**
+
+## 3. THE TEST
+
+**NOT** *do the six transmission-engineering slots transfer* — that would import
+the Sapphic thesis into the control and is the M43c error (fifth instance,
+recorded).
+
+**INSTEAD:** does a documented master–student pair produce **unannounced
+fulfillment-relations at Catullan material closeness, across a whole apparatus?**
+
+    calibration (H-side)   Sappho → Catullus      C measured line by line
+    control (S-side)       Albert → Aquinas       same three parameters
+    under test             Plato → Aristotle      same three parameters
+
+## 4. ⚠ THE SINGLETON PROBLEM — registered as the governing difficulty
+
+**Lee's own statement of the position, recorded verbatim as the honest frame:**
+
+> *there's literally nothing like it across the entire canon. Fitted as fulfilled
+> prophecy more closely than Revelation. At a level of tightness that can't really
+> be measured, because it's singular. And I don't know what that really shows.
+> Except that it's completely non-random.*
+
+**If the relation is genuinely singular, frequency inference is unavailable.** No
+comparison class, no percentile, no likelihood ratio. Everything this
+investigation has built assumes a distribution to score against.
+
+**But non-randomness remains demonstrable by a different test.** Not *how often
+does this happen* — a frequency question needing a class — but:
+
+    what is the probability of THIS configuration arising with NO relation?
+
+That is a **fit test**, not a frequency test, and it needs only the two corpora
+plus a null model of accidental correspondence. **The registration commits to the
+fit form and abandons the frequency form for this measure.**
+
+## 5. WHAT EACH OUTCOME WOULD MEAN
+
+    Albert→Aquinas shows unannounced Catullan-closeness across an apparatus
+        → the Plato-Aristotle structure is NOT singular; frequency inference
+          becomes available; and the structure loses most of its force.
+
+    Albert→Aquinas shows announced or loose relations only
+        → consistent with singularity, and the fit test becomes the only
+          available instrument.
+
+    The fit test returns a computable non-randomness
+        → establishes RELATION, not AUTHORSHIP. Catullus is non-randomly
+          related to Sappho and is not Sappho. THIS IS THE CEILING OF THE
+          MEASURE and is registered as such.
+
+## 6. KILL CONDITIONS
+
+- If C cannot be operationalised such that Catullus/Sappho scores HIGH and two
+  arbitrary same-genre texts score LOW, the measure has no construct validity and
+  does not run.
+- If the Plato–Aristotle scope claim ("whole apparatus") rests on the six slots,
+  it is circular and must be rebuilt from correspondences identified without them.
+- **No authorship conclusion may be drawn from any C value.** The Catullus case
+  proves that maximal C is compatible with distinct authorship.
+
+## 7. STATED LIMITATION, PLAINLY
+
+**We do not know what a positive result would demonstrate.** Recorded because that
+is the actual state: the investigator says so, and the registration should not
+pretend to more. What it can establish is **non-randomness of relation**. What it
+cannot establish is **which relation** — and the whole day's work is the record of
+how many measures collapse at exactly that step.
+
+## DISPOSITION
+
+PENDING — registered before scoring.
+
 
 ∮ = 1
