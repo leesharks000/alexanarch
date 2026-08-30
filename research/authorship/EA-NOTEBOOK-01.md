@@ -2908,4 +2908,91 @@ it. Work-level is the next run and it is the one that matches EA-CORPORA-11's
 structure most closely.
 
 
+---
+
+# ROUND 24 — R3 RUN ON A DOCUMENTED MASTER-STUDENT PAIR: THE REFLEX DOES NOT TRANSMIT
+
+*Added 2026-08-29. Albert the Great fetched from the Borgnet* Opera omnia *(nine
+volumes, 3.46M tokens) and scored against Aquinas under EA-RELFORM-01 §4's
+contamination rule. **The first externally-secured control result in this
+investigation.***
+
+## 90. The volumes, classified by content signature not by memory
+
+    v03  Physica                375,768   physicorum 259    aristotle-commentary
+    v05  De anima / Parva nat.  384,757   animalibus 79     aristotle-commentary
+    v06  Metaphysica            433,651   metaphysic 320    aristotle-commentary
+    v07  Ethica                 338,391   ethicorum 197     aristotle-commentary
+    v15  In Psalmos             433,173   psalm 933         other-commentary
+    v19  biblical               356,088                     other-commentary
+    v27  In Sententias          326,407   sententiarum 44   non-aristotle
+    v31  In Sententias          530,878   sententiarum 121  non-aristotle
+    v33  In Sententias          283,189   sententiarum 64   non-aristotle
+
+## 91. THE RESULT
+
+    non-Aristotle-commentary works only        tokens   gap/100k   div/10k
+      ALBERT   In Sententias                1,140,474       0.00      16.4
+      ALBERT   biblical                       789,261       0.00       4.7
+      AQUINAS  independent                  5,219,700       1.07      26.6
+      AQUINAS  other-commentary               457,728       0.22      10.3
+
+    where the source IS Aristotle
+      ALBERT   Aristotle commentaries       1,532,567       1.31      35.5
+      AQUINAS  Aristotle commentaries       1,020,889       3.72      48.5
+
+**Albert shows ZERO instances in 1,140,474 tokens of Sentences commentary, while
+dividing at 16.4 per 10,000.** He has ample opportunity and does not do it.
+
+**POSITIVE CONTROL PASSES.** The Latin probe finds **20 instances in Albert's
+Aristotle commentaries, 13 in the Ethics alone** — including *qui in timiditate
+superabundat **Graece innominatus est**, multa enim sunt **innominata** in mediis
+et in extremitatibus*, glossing *NE* 1107b. **The instrument sees the phenomenon in
+this author's Latin. The zero is absence, not blindness.**
+
+## 92. What it means for M30
+
+    documented master-student pair, non-Aristotle works:
+       Albert   0.00/100k   at division 16.4/10k
+       Thomas   1.07/100k   at division 26.6/10k     → THEY DO NOT SHARE IT
+
+    the Greek pair:
+       Plato       2.60/100k   at division 15.4/10k
+       Aristotle   8.43/100k   at division 30.9/10k  → BOTH CARRY IT
+
+**The reflex does not transmit master-to-student into independent writing.** In
+both Latin authors it appears *only where Aristotle's text is being glossed* —
+Albert 1.31 on the commentaries against 0.00 elsewhere, Aquinas 3.72 against 1.07.
+**It arrives with the source and does not become a habit.**
+
+This is the first evidence bearing on the objection that killed M30's diagnosticity
+this morning. **"Schools transmit arbitrary procedural habits" was an unmeasured
+auxiliary (M38 L2, corrected to UNMEASURED). Measured on a documented pair under
+maximal transmission pressure, it does not hold for this reflex.**
+
+## 93. What it does NOT establish, stated flatly
+
+**Not that Plato and Aristotle are one hand.** Two authors both carrying a habit
+that a Latin pair does not share is a difference between pairs, not a fact about
+authorship. Ordinary explanations remain: Greek philosophical prose may simply
+carry the reflex where scholastic Latin does not; the Latin idiom for the same
+move may differ from my probe set despite the positive control; and one control
+pair is one draw.
+
+**Sample:** nine Borgnet volumes of thirty-eight. The Sentences commentary
+dominates the non-Aristotle sample and is a single work-type. Albert's genuinely
+independent treatises — *De natura boni*, the *Summa theologiae* — are not in the
+fetched set.
+
+**And the OCR caveat stands** (M43d): usable for structural and function-word
+measures, unsafe for rare-lexeme measures. *innominat-* is a rare lexeme.
+**Albert's zero could in principle be OCR loss**, though the positive control makes
+that unlikely — the same OCR preserved 20 instances in the commentaries.
+
+**EA-RELFORM-01 §5 order of operations was NOT followed.** The measure was not
+calibrated on the labelled classes before Plato–Aristotle was scored; the Greek
+numbers existed first. **This is a comparison, not the registered classification
+test**, and it is recorded as such.
+
+
 ∮ = 1
