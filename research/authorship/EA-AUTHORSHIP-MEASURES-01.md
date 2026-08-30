@@ -650,8 +650,14 @@ The standing position is therefore:
     whole-text transform           negative (M23)
     MECHANISM                      NEGATIVE — Plato's constructed Aristophanes
                                    ranks 5 of 7 against the real one (M16)
-    procedural reflex              POSITIVE — 10.5x at work level, p = 0.0007,
-                                   diagnosticity unresolved (M30)
+    procedural reflex              POSITIVE — 10.5x at work level, p = 0.0007;
+                                   diagnosticity UNDECIDABLE-PENDING, not merely
+                                   blocked — no admissible control exists, since
+                                   any corpus performing the operation is
+                                   Academy-descended (M30, M36)
+    forgery/legitimacy census      ψευδεπίγραφος and προσωπεῖον BOTH ZERO in
+                                   every seated corpus; the frame is kinship and
+                                   standing, not inscription (M35)
     lexical exclusion              POSITIVE — Socrates 0/144 against Callias
                                    5/35 in snub contexts, p = 0.00022 (M34)
     philological                   M26, M31, M32, and the Republic/Symposium pair
@@ -822,11 +828,15 @@ Aristotle **jointly** from every available control, by a mechanism that is neith
 register nor distance. Every other measurement either separated them or dissolved.
 This one groups them, at **p = 0.0007 on 53 works**.
 
-**Never to be quoted without the missing control.** Theophrastus — Aristotle's
-actual successor, the one figure who would separate *personal* from *Academic*
-transmission — survives in the available corpora only as *Characters*, which does
-not divide. Until that control exists, school transmission remains fully live, and
-M30 is a positive anomaly of unresolved diagnosticity.
+**Never to be quoted without the missing control. ⚠ AND THE CONTROL IS NOT
+THEOPHRASTUS — see M36.** The claim recorded here, that Theophrastus survives only
+as *Characters*, was **false and never searched**; the philosophical works were in
+First1KGreek all along and are now seated. But when run, the result is **void as a
+control result**: Theophrastus cannot be established outside the configuration
+(M36), being defined by his relation to Aristotle, writing continuations of the
+abandoned Aristotelian programme, and sharing a single transmission channel with
+it. **M30's diagnosticity is not resolved by him and may be undecidable in
+principle** (M36b). School transmission remains live; it has not been confirmed.
 
 **Denominator, stated.** Of five Aristotelian snub-arguments given Platonic-vocabulary
 signatures and searched (Notebook Part I, Round 4), **one mapped** — the
@@ -1019,6 +1029,114 @@ between them.
 innocent explanation attached. Not evidence of design. It establishes only that
 the corpus treats one individual's snubness as unusable where every comparable
 individual's is usable.
+
+
+---
+
+## 24. M35 — THE FORGERY AND LEGITIMACY CENSUS
+
+*Added 2026-08-29. Notebook Round 15 carries the passages; this is the lookup form.*
+
+Full census of the authenticity families across both corpora:
+
+    term                            PLATO   ARIST
+    σύγγραμμα writing-as-thing         37       3
+    εἴδωλον image                      72      13
+    μίμημα copy                        54       7
+    κίβδηλος counterfeit/debased       13       4
+    δόκιμος assayed, approved          28      24
+    ἀδόκιμος rejected in assay          3       2
+    πλάσμα / πλαστός fabricated        16      32
+    φάντασμα appearance                31      47
+    ὑποκριτής actor                    10      32
+    γνήσιος legitimate                 16       6
+    νόθος bastard                      11       4
+    παράσημος false-stamped             1       4
+    ψευδεπίγραφος                       0       0
+    προσωπεῖον mask                     0       0
+
+**Two nulls.** ψευδεπίγραφος is **zero in every seated corpus** — Plato, Aristotle,
+the nine orators, Philo, Josephus, the NT. There was no word for a falsely-titled
+book. προσωπεῖον, the theatrical mask, is likewise **zero in both corpora** — the
+mask is not their tool for authorial voice, which constrains any persona reading.
+
+**The division of labour.** Plato holds the **image** vocabulary (εἴδωλον, μίμημα,
+σύγγραμμα); Aristotle holds the **detection** vocabulary (πλάσμα, φάντασμα,
+ὑποκριτής). The assay word is shared almost equally, δόκιμος 28/24.
+
+**The frame is kinship, not inscription.** In Isaeus — γνήσιος at **23.72/10k**,
+the densest in the sample — legitimacy is litigated by μαρτυρ- (279), ἐγγύη (91),
+εἰσάγω (45) and φράτηρ (35), with **zero** blood-vocabulary. A νόθος can be the
+father's certain child. **Legitimacy is standing, not paternity**, and it is
+re-litigable on testimony. Applied to texts, the ancient mechanisms were asking
+*does this work have standing in the corpus*, not *whose hand wrote it*.
+
+**M35a — the coin runs continuous.** *Rep.* 395b: κατακεκερματίσθαι sits four
+lines from μιμήματα — nature minted into denominations too small to imitate many
+things well. *Rep.* 507a: εὐλαβεῖσθε … **κίβδηλον ἀποδιδοὺς τὸν λόγον** τοῦ τόκου
+— the account handed over may be debased coin, with τόκος and ἔκγονον joining coin
+to kinship in one clause. *Laws* 742a: currency **ἔντιμον** to citizens,
+**ἀδόκιμον** to everyone else — standing-not-paternity, in coin.
+
+**M35b — *NE* 1165a.** δίκαιον ἐγκαλεῖν τῷ ἀπατήσαντι, **καὶ μᾶλλον ἢ τοῖς τὸ
+νόμισμα κιβδηλεύουσιν, ὅσῳ περὶ τιμιώτερον ἡ κακουργία** — Aristotle grades false
+personation **above** coin-forgery on one scale.
+
+**M35c — orator control.** The orators are professionally fluent in forgery
+(πλάσμα, πλαστόν, σκευώρημα, of opponents' documents) and **say nothing about the
+standing of the speech being read**: σύγγραμμα is **zero in seven of nine**, the
+exception being Isocrates, who wrote for readers.
+
+---
+
+## 25. M36 — THE THEOPHRASTUS RESULT IS VOID AS A CONTROL
+
+*Added 2026-08-29. Supersedes the same-day claim that school transmission was
+confirmed.*
+
+**The blocker was false.** M30's diagnosticity was recorded three times as blocked
+because Theophrastus "survives only as *Characters*." **That was an assumption,
+never a search.** First1KGreek was checked out locally all day and contains
+*Historia Plantarum*, *De causis plantarum*, *De sensibus*, *De igne* and the
+*Metaphysica* — now seated as EA-CORPORA-09/01, 15 works, 208,324 tokens.
+
+**The numbers.** Theophrastus 5.43/100k; high-division works carrying the reflex
+2/5 = 0.400 against Plato+Aristotle 16/32 = 0.500; **Fisher exact p = 1.0000**.
+*Historia Plantarum* alone carries nine instances at division 29.9/10k.
+
+**⚠ AND THE RESULT IS VOID AS A CONTROL RESULT.** On seeing it I reported that
+school transmission was confirmed. That was **inherited inference, not
+measurement**, and it violates M33 — I used a figure as a control without first
+asking whether he can be inside the configuration.
+
+**Theophrastus is the Chaerephon shape.** The Chaerephon problem, as recorded in
+the Aristophanes seat: the Suda's entry on Chaerephon is sourced from the scholia
+to *Clouds* 144 — **the biographical record is downstream of the text it is meant
+to attest.** Theophrastus is defined by his relation to Aristotle (successor as
+scholarch, heir to the library and manuscripts by Aristotle's will), and his major
+works are **continuations** — *HP* extending *HA*, *De causis* extending the causal
+analysis, his *Metaphysica* a fragment picking up where the aporiai stop. That is
+the profile of **another completed abandonment**, which is what EA-COMPLETE-01
+exists to detect. And the Aristotelian corpus reaches us **through Theophrastus's
+library** — Neleus, Scepsis, Apellicon, Sulla, Andronicus — so the two texts share
+one transmission channel and their agreement in editorial habit is not independent.
+
+**Seat stands as a corpus. Result void as a control.**
+
+**M36a — the control criterion, stated.** A control must be **impossible to be
+inside the configuration**, which requires either (i) **no causal contact** — a
+corpus that could not have received the method — or (ii) **independent attestation
+of the author's existence** by sources outside the configuration. Theophrastus
+fails both. Demosthenes passes (ii) via inscriptions and decrees. **The Hippocratic
+corpus passes (i)** — largely pre-Platonic, Coan and Cnidian, medical rather than
+Academic — and stands at **0 of 15**, the one control nobody can absorb.
+
+**M36b — the reflex may be undecidable in principle.** The operation requires
+division, and in Greek prose division is Academy-descended. **Any corpus that
+performs the operation is downstream; any corpus that is not downstream does not
+perform it.** If that holds, M30's diagnosticity is not merely blocked pending a
+corpus — it is undecidable, which is what EA-UNRES-01 predicts an engineered
+object produces. Recorded as a conjecture requiring its own test, not as a result.
 
 
 ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
