@@ -2380,17 +2380,55 @@ construction.**
 in Aristotle**, most of them at *higher* rates in the master than the successor.
 **Aquinas translates. He does not supply vocabulary the master lacks.**
 
-## 35.4 THE THREE CASES SIDE BY SIDE
+## 35.3b SECOND H-CLASS CASE — Kierkegaard, *Either/Or*
 
-    PESSOA   (documented one maker)     interpretive terms 0.00 in the
-                                        interpreted position — TOTAL capture
-    PLATO    (under test)               present but 25-35× thinner in the
-                                        interpreted position — PARTIAL capture
-    AQUINAS  (documented succession)    every term present in the master, most
-                                        at higher rate — NO capture
+*Added same day. Running headers stripped before counting (B's title
+"Ligevægten mellem det Æsthetiske og Ethiske" repeats as a page header;
+æsthetisk 251 → 243).*
 
-**The Greek pair sits between the documented heteronymic case and the documented
-succession case, nearer the heteronymic end.**
+**B addresses and diagnoses A directly** — *B.'s Papirer, Breve til A* — so the
+interpretive relation is internal to the work and documented.
+
+    term          A/10k    B/10k     B/A
+    ethisk         1.33    18.73    14.0
+    fortvivlelse   1.49    12.64     8.5    (despair)
+    vælge          2.04    14.59     7.1    (to choose)
+    valget         0.55     3.84     7.0    (the choice)
+    æsthetisk      3.93    18.28     4.7
+    ─────────────────────────────────────
+    umiddelbar     5.26     5.12     1.0
+    sandselig      6.99     2.93     0.4    (the sensuous)
+    ironi          2.51     0.90     0.4
+    forfører       5.73     1.05     0.2    (the seducer)
+
+**The aesthetic/ethical framework by which *Either/Or* is universally read is B's
+vocabulary.** A writes about **seduction, the sensuous, irony, immediacy**. B
+supplies *the aesthetic*, *the ethical*, *despair*, *the choice* — and A is known
+by B's terms.
+
+**Partial capture, not total** — A does use *æsthetisk* at 3.93. So the H class
+itself has a range: Caeiro at ∞, *Either/Or* at 4.7–14.
+
+## 35.4 THE FOUR CASES SIDE BY SIDE
+
+    CAEIRO / interpreters   H, documented   0.00 in the interpreted   TOTAL
+    PLATO / ARISTOTLE       under test      25-35× thinner            PARTIAL
+    EITHER-OR A / B         H, documented   4.7-14× thinner           PARTIAL
+    ARISTOTLE / AQUINAS     S, documented   counterparts present,     NONE
+                                            often HIGHER in master
+
+**Both documented heteronymic cases show capture. The documented succession case
+shows none.** The Greek pair falls **inside the H range** — and above the
+*Either/Or* values, below Caeiro's.
+
+**⚠ THE COMPARISON IS WEAKER THAN THE TABLE LOOKS.** The term sets were chosen
+by me, separately for each case, after seeing each corpus. **That is the
+reverse-engineering hazard EA-UNLOCK-01 §5 exists to score against**, and it
+applies here. A defensible version requires the term-selection rule fixed in
+advance and applied identically — e.g. *the N terms most characteristic of the
+interpreter's account, chosen before the interpreted position is counted*. Until
+that is done, the ORDERING is suggestive and the MAGNITUDES are not
+comparable.
 
 ## 35.5 STATUS — what this is and is not
 
