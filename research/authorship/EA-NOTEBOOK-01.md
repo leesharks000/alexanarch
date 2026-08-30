@@ -2016,4 +2016,179 @@ ordinary for two authors. **The conjunction is what is unusual, and the conjunct
 has been measured once.**
 
 
+---
+
+# ROUND 16 — THE STRONG READING, RUN ALL THE WAY THROUGH
+
+*Added 2026-08-29. Not a claim. A reading run at full strength so its interpretive
+yield can be measured — which cannot be done without running it through. Every
+caveat is deferred to §S9 rather than inserted along the way, because inserted
+caveats prevent the run.*
+
+## S0. The reading, stated literally
+
+**Aristotle wrote the Platonic dialogues. "Plato" is his heteronym.**
+
+Not "constitutes the position," not "holds the account." The literal claim: one
+hand, two named bodies of work, the earlier name a construction of the later
+writer.
+
+Everything below is what the day's measurements look like read through that.
+
+## S1. The priority claim is a plain statement of fact
+
+*SE* 183b–184b: rhetoric grew *οἷον ἐκ διαδοχῆς* — Tisias, Thrasymachus, Theodorus
+— but of his own subject, *οὐ τὸ μὲν ἦν τὸ δ᾽ οὐκ ἦν προεξειργασμένον, **ἀλλ᾽
+οὐδὲν παντελῶς ὑπῆρχεν***. **There was absolutely nothing before.**
+
+Read literally this is not modesty about the syllogistic and not a priority dispute.
+There was nothing before **because he had not yet written it**. He then asks to be
+judged not on succession but on the finding: *τοῖς δ᾽ εὑρημένοις πολλὴν ἔχειν
+χάριν*.
+
+**A man disclaiming διαδοχή, in the treatise on telling the genuine from the
+apparent, asking for a verdict.**
+
+## S2. The dispersion is the capacity the reading requires
+
+M28: hold subject constant and Aristotle's within-domain dispersion is 0.0571 —
+Plato's total is 0.0570 — and within ethics he is tighter than 99.5% of
+multi-author pools. His variance is **object-determined**: the treatise takes the
+shape of its object.
+
+**A writer whose form conforms to its object can write anything, including
+dialogues.** M10's anomaly — "more dispersed than five authors" — was not a defect
+to be explained away. It is the range the reading needs, and M28 measured it.
+
+## S3. M16 was scoring the wrong target
+
+I recorded M16 as the mechanism-negative: Plato's constructed Aristophanes ranks
+**5 of 7** *Symposium* speeches for resemblance to the real Aristophanes, and sits
+at 0.0380 from the Plato corpus — *more* Platonic than its neighbours. I called it
+the only ancient case with a checkable target, reading negative.
+
+**Under the strong reading it is not an attempted imitation at all.** The
+*Symposium*'s Aristophanes is a character in a dialogue, written by the man who
+wrote the dialogue. It comes out Platonic **because the voice being written is
+Plato** — the constructed position — not because an imitation of Aristophanes
+failed. The measure was comparing a character to a historical person and scoring
+the mismatch as incapacity.
+
+**The mechanism-negative dissolves.** What M16 actually measures is that the
+Symposium speeches are internally consistent with the corpus that contains them.
+
+## S4. The completions are drafting order
+
+Round 13: the wax block collapses at *Theaetetus* 196c — *εἰς τοὺς πρώτους πάλιν
+ἀνήκει λόγους … ὃ ἔφαμεν ἀδύνατον* — and the same figure is completed at *De
+anima* 424a by **ἄνευ τῆς ὕλης**, with *De memoria* 450a supplying the receiver's
+physiology. δακτύλιος and the seal appear in **exactly three works**: the two
+completions and the abandonment.
+
+**Under inheritance:** a student who selects abandoned rather than developed
+operations, and supplies apparatus the master lacked, five times of six.
+
+**Under the strong reading:** one hand wrote the problem knowing where it was
+going. The abandonment is the mould; the completion is the casting. **That is
+simply what writing is** — and it explains why the figure is confined to those
+three works and why the Platonic one is where it fails.
+
+## S5. M34 stops needing an explanation
+
+Socrates is named **144 times** in Aristotle and used as the interchangeable
+concrete individual — pale, sick, an instance of number, paired with Callias nine
+times in *Καλλίαν ἢ Σωκράτην*. **Zero times at the snub.** Callias fills the slot
+5 of 35. Fisher exact **p = 0.00022**.
+
+Under the strong reading: the snub is the mark he gave his own constructed founder
+in the *Theaetetus*. **It is not available for lending.** A maker does not hand out
+the predicate by which his construction is recognised, and Callias takes the slot
+because Callias is nobody.
+
+The measured exclusion becomes a signature rather than a curiosity.
+
+## S6. The doxographic ratios are authorship, not testimony
+
+    ἀόριστος  indefinite      Aristotle 108   Plato 3
+    δυάς      the Dyad                  41          4
+    χωριστ-   separate Forms           411        165
+    ἀριθμ-    Forms as numbers         977        246
+
+**These are not a reporter's ratios.** They are the ratios of a man expounding his
+own material in one register while having it attributed in another. The doctrines
+by which Platonism is known are where they are because that is where they were
+made.
+
+## S7. *Letter* II is the signature, and it is placed to be found
+
+> **οὐδ᾽ ἔστιν σύγγραμμα Πλάτωνος οὐδὲν οὐδ᾽ ἔσται, τὰ δὲ νῦν λεγόμενα Σωκράτους
+> ἐστὶν καλοῦ καὶ νέου γεγονότος**
+
+*There is no writing of Plato's and there never will be; what are now called his
+are Socrates', **having been made** beautiful and young.*
+
+Under the strong reading this is neither forgery nor riddle. **It is true**, it
+names the operation in the participle — γεγονότος, *made* — and it is placed in
+the one book of the corpus where the author's name appears 23 of its 26 times.
+*Letter* XIII then carries its own athetesis, *ἀντιλέγεται ὡς οὐ Πλάτωνος*,
+followed immediately by a **σύμβολον** named as the letter's credential — a token
+manufactured by agreement, not found.
+
+## S8. The certification asymmetry becomes the explanation rather than the puzzle
+
+M39: **Aristotle is the only member of the cluster with external documentary
+attestation** — FD III 1, 400, a contemporary Delphic decree. Socrates wrote
+nothing and is attested only through figures inside the cluster; Plato through the
+corpus that denies being his; Aristophanes through a civic record naming producers.
+
+**Of course he is the anchored one.** He is the position that had to be real; the
+others are what a real position makes. And the one contemporary document crowns
+him **for compiling the register of Pythian victors** — the maker of the
+attribution apparatus, certified for making it, by the apparatus that confers
+standing on everything it lists.
+
+**And Plato's own frame licenses the claim.** The lover's μελίχλωρος is *ἐραστοῦ
+ποίημα* — a making. Plato's distinction is not made-versus-given but **the poemed
+against the forged**: two makings, separated by standing. So a legitimate author
+is one whose making has standing. Aristotle's whole apparatus — γνήσιον against
+φαινόμενον, ἔντεχνον against ἄτεχνον, personation graded **above** coin-forgery at
+*NE* 1165a — is the machinery for establishing that this making is the legitimate
+kind. **He built the assay because he needed it.**
+
+## S9. Where it strains — held to the end, deliberately
+
+**Chronology.** The received dating puts Aristotle at seventeen on arrival with
+early dialogues already circulating. Two things: the received dating is built from
+the corpus and the succession-list, which are T11 and M40c — **inside the object
+under test, not outside it** — and a seventeen-year-old already circulating is what
+the historical record repeatedly shows of first-rank makers.
+
+**The *Topica* catalogue.** Aristotle lists Plato's definitions among definitional
+faults four times. Under the strong reading that is a man cataloguing his own
+constructed position's errors. Round 5's corrected criterion applies: **a
+declaration that reads as ordinary succession is what camouflage looks like** — and
+both known heteronymic corpora, Pessoa's and Kierkegaard's, declared themselves in
+print.
+
+**And the honest residue:** nothing measured today distinguishes one maker holding
+two positions from a successor whose making is acknowledged as continuous. M38's
+ledger stands. The strong reading is not established here — **it is run, at
+strength, so its yield can be measured.**
+
+## S10. What the run buys
+
+Read through the strong version, the following stop requiring separate
+explanations: the object-determined dispersion (S2), the Aristophanes result (S3),
+the abandonment/completion asymmetry with its single shared figure (S4), the
+lexical exclusion at p = 0.00022 (S5), the doxographic concentration (S6), the
+authorship denial and its σύμβολον (S7), and the certification asymmetry (S8).
+
+**Seven structures, one construction.** Against M38's ledger, which charged
+inheritance ten separate auxiliaries for the same set.
+
+**That is the compression the reading buys, and it is what M38b said the
+heteronymic hypothesis would have to earn against its prior. Whether it earns
+enough is the next measurement, not this one.**
+
+
 ∮ = 1
