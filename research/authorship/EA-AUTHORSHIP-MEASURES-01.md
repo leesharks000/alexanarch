@@ -18,6 +18,11 @@ purpose: >
 
 ## 0. How to read this
 
+**Start at §0A.** It is the entryway: a problem generated from three Aristotelian
+propositions, which arises before any hypothesis about authorship is introduced.
+The measurements in §1–§28 are evidence bearing on it. §0A was the last thing
+found and is placed first because it is where a reader should begin.
+
 Findings are numbered and stated with their conditions. Where a finding was later
 refuted, the refutation is attached to it, not filed separately. Where a null is
 uninformative rather than negative, that is said.
@@ -25,6 +30,301 @@ uninformative rather than negative, that is said.
 Unless stated otherwise: distance = cosine distance on **particle-transition
 profiles** (function-word bigrams, top 300, diacritics stripped, final sigma
 normalised), computed per work, on corpora seated under EA-CORPORA.
+
+---
+
+---
+
+*The entry below is placed first because it is the entryway to the whole
+investigation. It is not the strongest statistic and it is not a correspondence
+found by searching. **It is a problem Aristotle leaves**, generated from three of
+his own propositions read without letting his nouns slide — and it arises before
+any hypothesis about authorship is introduced. Everything after §1 is evidence
+bearing on it. This was the last thing found and belongs at the front.*
+
+## 0A. M40 — THE ENTRYWAY: THE SUPPRESSED PREMISE: A META-PERFORMATIVE PRIORITY CLAIM
+
+*Rewritten 2026-08-29 after the earlier version was twice wrong — first for
+psychological framing, then for a lexical test that got the answer backwards. This
+is the entryway to the paper and is treated at full weight.*
+
+## 0A.1 The three texts
+
+**(i) Plato names the apparatus as a method, in his own voice.**
+*Phaedrus* 266b:
+
+> τούτων δὴ ἔγωγε αὐτός τε **ἐραστής**, ὦ Φαῖδρε, **τῶν διαιρέσεων καὶ συναγωγῶν**,
+> **ἵνα οἷός τε ὦ λέγειν τε καὶ φρονεῖν**
+
+*Of these I am myself a lover, Phaedrus — of the **divisions and collections** —
+**in order to be able to speak and to think**.*
+
+Not a one-off argument. A named procedure, held as such, **for the sake of a
+capacity**. And *Meno* 86e names a second: *συγχώρησον **ἐξ ὑποθέσεως** αὐτὸ
+σκοπεῖσθαι … **ὥσπερ οἱ γεωμέτραι*** — investigation from a hypothesis, on the
+geometers' model. To which the *Parmenides* adds the third: the exhaustive
+derivation of consequences from *εἰ ἓν ἔστιν* and *εἰ ἓν μὴ ἔστιν*.
+
+**(ii) Aristotle classifies that apparatus as syllogistic.**
+*Prior Analytics* I.31, 46a31:
+
+> ὅτι δ᾽ ἡ διὰ τῶν γενῶν **διαίρεσις μικρόν τι μόριόν ἐστι τῆς εἰρημένης μεθόδου**,
+> ῥᾴδιον ἰδεῖν· **ἔστι γὰρ ἡ διαίρεσις οἷον ἀσθενὴς συλλογισμός**· ὃ μὲν γὰρ δεῖ
+> δεῖξαι **αἰτεῖται**, συλλογίζεται δ᾽ ἀεί τι τῶν ἄνωθεν.
+
+*Division through genera is **a small part of the method described**; for division
+is **a kind of weak syllogism** — it begs what it must prove, and always deduces
+something from higher up.*
+
+This is the load-bearing sentence. Aristotle does not place Platonic division
+*outside* his subject as a different sort of thing. He places it **inside**:
+*μόριον τῆς εἰρημένης μεθόδου*, a part of the stated method, and *συλλογισμός* by
+species — defective, question-begging, but of the kind.
+
+**(iii) Aristotle denies that the apparatus had any predecessor.**
+*Sophistici Elenchi* 183b–184b. He first defines what ordinary development looks
+like, by name and by lineage:
+
+> οἱ δὲ νῦν εὐδοκιμοῦντες παραλαβόντες παρὰ πολλῶν **οἷον ἐκ διαδοχῆς** κατὰ μέρος
+> προαγαγόντων οὕτως ηὐξήκασι, **Τισίας** μὲν μετὰ τοὺς πρώτους, **Θρασύμαχος** δὲ
+> μετὰ Τισίαν, **Θεόδωρος** δὲ μετὰ τοῦτον
+
+and then denies it of his own:
+
+> ταύτης δὲ τῆς πραγματείας **οὐ τὸ μὲν ἦν τὸ δ᾽ οὐκ ἦν προεξειργασμένον, ἀλλ᾽
+> οὐδὲν παντελῶς ὑπῆρχεν** … περὶ δὲ τοῦ συλλογίζεσθαι **παντελῶς οὐδὲν εἴχομεν
+> πρότερον ἄλλο λέγειν**
+
+*Not that part was worked out and part was not — **there was absolutely nothing.***
+
+## 0A.1b The instruction to supply what is left out — *APr* I.32, verified
+
+Immediately after the division chapter, Aristotle turns to reducing arguments to
+the figures, and instructs the analyst:
+
+> καὶ εἰ μὴ ἄμφω εἰλημμέναι εἶεν, **αὐτὸν τιθέντα τὴν ἑτέραν** … ἢ ταύτας μὲν
+> προτείνουσι, **δι᾽ ὧν δ᾽ αὗται περαίνονται, παραλείπουσιν** … σκεπτέον οὖν εἴ τι
+> περίεργον εἴληπται καί **τι τῶν ἀναγκαίων παραλέλειπται**, καὶ τὸ μὲν θετέον τὸ
+> δ᾽ ἀφαιρετέον
+
+*If both premises have not been taken, **the analyst must himself supply the
+other** … sometimes they propose these but **omit those through which these are
+concluded** … examine whether something superfluous has been taken and **whether
+something necessary has been left out**, and add the one and remove the other.*
+
+**The lexical link is exact.** παραλέλειπται here; and the *Sophistici Elenchi*
+closes by asking pardon **τοῖς παραλελειμμένοις** — for what has been left out.
+Same verb, same participle: the chapter that teaches the reader to supply the
+omitted premise, and the treatise-group that ends by asking indulgence for an
+omission.
+
+**Also in I.31, and sharper than the "weak syllogism" line:**
+
+> **οὔτε ὅ τι ἐνδέχεται συλλογίσασθαι διαιρούμενοι ξυνίεσαν**
+
+*They did not understand **what can be syllogized by dividing**.* Not that they had
+no syllogistic — that they **had one and did not understand what it could
+conclude**. A diagnosis of defective execution of an existing apparatus.
+
+## 0A.2 The contradiction, in Aristotle's own terms
+
+    APr I.31    Platonic division IS a syllogism, and a part of the method
+    Phaedrus    division IS Plato's stated method, held for the sake of a capacity
+    SE 184b     of this method, nothing whatever existed before
+
+**The usual escape is not available, and the reason is a point about charity.**
+
+One would ordinarily say Aristotle means the *formal system* only — reading *ταύτης
+δὲ τῆς πραγματείας … οὐδὲν παντελῶς ὑπῆρχεν* as *of **this systematic treatment**
+nothing existed*, so that Platonic division falls outside the scope of the denial.
+The grammar permits it. **⚠ I first recorded that as a defensible alternative and
+withdraw it here, on the following ground.**
+
+Consider what the narrow reading attributes to him. He has written that division
+**is** a syllogism, that it is a **part of the method described**, and that its
+practitioners **did not understand what can be syllogized by dividing** — three
+statements that place the Platonic apparatus inside his subject and concede that
+there is something there to reason with. The narrow reading then has him close the
+treatise-group by declaring that nothing existed, rescued only by taking
+*πραγματεία* in a sense that excludes what he has just included.
+
+**That is an equivocation on his own technical term at the one point where his
+standing depends on it** — committed by the author of the *Sophistici Elenchi*, in
+the closing paragraph of the *Sophistici Elenchi*, in the corpus that gives us
+ὁμωνυμία and catalogues the fallacies of ambiguity. It convicts him of precisely
+the fault his book exists to expose, in order to preserve a chronology he never
+asserts.
+
+**Charity runs the other way.** Take him to mean what he says, in one consistent
+technical sense, in both places. Then he neither contradicts himself nor equivocates:
+he states two things that are jointly true only if the Platonic apparatus is not
+prior to him in the relevant sense, and — one chapter after diagnosing division —
+instructs the reader to **supply what has been left out**.
+
+**The softer reading is not the more generous one. It is a milder accusation**
+(sloppiness rather than a claim), purchased by protecting the received chronology.
+Holding him to his own terms lets the chronology take the strain instead, which is
+what the argument does.
+
+## 0A.2b THE LOAD-BEARING SENTENCE: Aristotle names the received account's category and denies it
+
+The conventional history is not merely absent from *SE* 183b. **It is present as a
+named option and refused.**
+
+Aristotle first builds the taxonomy himself:
+
+> τὰ μὲν **παρ᾽ ἑτέρων ληφθέντα πρότερον πεπονημένα** κατὰ μέρος ἐπιδέδωκεν ὑπὸ
+> τῶν παραλαβόντων ὕστερον· **τὰ δ᾽ ἐξ ὑπαρχῆς εὑρισκόμενα** μικρὰν τὸ πρῶτον
+> ἐπίδοσιν λαμβάνειν εἴωθε
+
+*Some things, **taken from others and previously laboured on**, are advanced
+piecemeal by later receivers; **others, discovered from the beginning**, make a
+small first advance.*
+
+He gives rhetoric as the worked instance of the first class, with its lineage —
+Tisias, Thrasymachus, Theodorus, *οἷον ἐκ διαδοχῆς*. **That first category is
+exactly where the received account places Platonic division**: partially worked
+material, received, advanced by a successor.
+
+Then:
+
+> Ταύτης δὲ τῆς πραγματείας **οὐ τὸ μὲν ἦν τὸ δ᾽ οὐκ ἦν προεξειργασμένον**, ἀλλ᾽
+> οὐδὲν παντελῶς ὑπῆρχεν.
+
+***It is not that part was pre-worked-out and part was not*** — but nothing at all
+existed.
+
+**This is the load-bearing sentence of the entry.** The standard harmonisation
+runs *Plato partly worked out syllogistic → Aristotle completed it*. Aristotle
+supplies that category by name and **negates it of this inquiry.** He is not
+silent about partial predecessors; he rules them out.
+
+## 0A.2c THE ESCAPE IS CLOSED BY THE TREATISE'S OWN OPENING
+
+*SE* 165a — the first page of the same work:
+
+> τὰ μὲν **λιθαργύρινα** καὶ τὰ **καττιτέρινα** ἀργυρᾶ, τὰ δὲ **χολοβάφινα** χρυσᾶ.
+> τὸν αὐτὸν δὲ τρόπον καὶ **συλλογισμὸς καὶ ἔλεγχος** ὁ μὲν ἔστιν, ὁ δ᾽ **οὐκ ἔστι
+> μέν, φαίνεται δέ** … ὧν εἷς τόπος εὐφυέστατός ἐστι καὶ δημοσιώτατος **ὁ διὰ τῶν
+> ὀνομάτων**
+
+*Litharge and tin are silver, gall-dye is gold — in the same way a syllogism or
+refutation may **not be one but appear one** … and the readiest and commonest
+source of this is **the one that works through names**.*
+
+The treatise **opens** on counterfeit metal as the model for the apparent-syllogism,
+and identifies fallacy **through names** as the commonest kind. It **closes** with
+the priority claim.
+
+**The conventional rescue asks us to save the closing claim by letting a name
+change extension** — πραγματεία meaning the systematic art at 183b while
+συλλογισμός covers Platonic practice at *APr* I.31. That is the book's own opening
+topos, applied to the book's own closing claim. **The harmonisation is
+self-refuting on the author's stated terms**, and this is why the concession
+recorded at 29.2 was withdrawn.
+
+## 0A.3 Why this is a syllogism and not a complaint
+
+The passage does not assert the contradiction. It **supplies two premises and
+withholds the third**, and the third is the Platonic corpus:
+
+    1.  If an apparatus existed in a predecessor, mine arose by succession.   [SE]
+    2.  Mine did not arise by succession: nothing whatever existed before.    [SE]
+    3.  Plato contains a prior apparatus — and I have classified it as
+        syllogistic.                                              [APr, UNSPOKEN
+                                                                   AT SE]
+    ∴   Plato does not occupy the predecessor relation.
+
+**Premise 3 is deliberately not spoken in the passage.** The reader must supply
+it, from a corpus he already possesses. That makes the passage an **enthymeme
+whose suppressed premise is an authorial corpus.**
+
+And the recursion is exact: *the claim that syllogistic had no predecessor is
+intelligible only by syllogistically processing its predecessor.* The instrument
+required to detect the contradiction is the instrument whose invention is being
+claimed. Aristotle closes by asking the audience to judge — *τοῖς δ᾽ εὑρημένοις
+πολλὴν ἔχειν χάριν*, give much gratitude for **what has been found** — while
+excusing *τοῖς παραλελειμμένοις*, **what has been left out**. What a syllogism
+teaches a reader to recover is precisely the premise left out.
+
+## 0A.4 What the structure does that a declaration could not
+
+Had Aristotle written *Plato's logical work is mine*, that would be a declaration
+— forgeable, deniable, dismissible, and destructive of the construction it
+declares.
+
+Instead the claim is encoded **in the very technology whose invention it asserts**.
+To receive it, a reader must know how to operate the thing. So:
+
+> **the ownership claim, if it is one, is authenticated by performance rather than
+> by declaration.**
+
+That fits the standing frame exactly (M35): legitimacy is conferred by
+acknowledgment and established by what can be executed, not by an external token —
+and M35b records Aristotle grading **personation above coin-forgery** on one scale.
+An assay that must be performed cannot be counterfeited by assertion.
+
+## 0A.5 The operation crosses the authorial boundary
+
+Neither corpus contains the complete argument.
+
+    PLATO      supplies the apparatus — the suppressed premise
+    ARISTOTLE  supplies the classification of it as syllogism, and the denial
+    THE READER supplies the inference
+
+Three positions: **premise → inferential apparatus → recognition** — and the
+recognition is about the relation between the positions that supplied the first
+two. This is the functional interlock of Round 12 appearing in a single argument
+rather than across a slot table, and it is the sharpest instance of it recorded.
+
+## 0A.6 What is established and what is interpretation
+
+**ESTABLISHED, documentary:**
+- Plato names divisions-and-collections as a method held for a capacity, and the
+  hypothetical method on the geometers' model.
+- Aristotle classifies division as *οἷον ἀσθενὴς συλλογισμός* and as *μόριον τῆς
+  εἰρημένης μεθόδου*.
+- Aristotle states that for this subject *οὐδὲν παντελῶς ὑπῆρχεν*, in explicit
+  contrast to a named succession he supplies as the comparison case.
+- Aristotle supplies the partial-development category by name and **explicitly
+  negates it** of this inquiry: *οὐ τὸ μὲν ἦν τὸ δ᾽ οὐκ ἦν προεξειργασμένον*.
+- Therefore, stated at the narrowest defensible strength and not inflated:
+  **Aristotle claims the development of the syllogizing transmitted in the Platonic
+  corpus.** Not that Plato reasoned well and Aristotle formalised it — Aristotle
+  denies that shape by name. The syllogizing Aristotle identifies in Plato falls, on
+  Aristotle's own taxonomy, on **Aristotle's side of the development relation.**
+- That is an authorship problem in the strict sense of intellectual production, and
+  it arises **before** any hypothesis about heteronymy is introduced.
+
+**INTERPRETATION:** the heteronymic reading resolves that placement literally —
+the Platonic apparatus is not "before Aristotle" because it belongs to the same
+maker.
+
+**ALTERNATIVES that must be charged as auxiliaries, not assumed:**
+*(a)* Aristotle is inconsistent across works, denying at *SE* what he grants at
+*APr*. *(b)* He means the formal system narrowly and speaks loosely — foreclosed
+by *μόριον τῆς εἰρημένης μεθόδου*, which places division inside the method.
+*(c)* Priority rhetoric is conventional — but the passage supplies the succession
+counter-case itself, by name and lineage, which conventional boasting does not do.
+
+**What it is not:** psychology, estate metaphor, or biographical resentment. The
+earlier versions of this entry contained all three and they are withdrawn. This
+version rests on three quotations and one classification.
+
+## 0A.7 ⚠ THE TEST I RAN THAT WAS WORTHLESS
+
+Asked whether Plato has an apparatus Aristotle's sentence ranges over, I froze
+five criteria and searched for **the lexeme συλλογ-**. Result: 51 tokens in Plato,
+of which **34 are σύλλογος/συλλογή — assembly, gathering, meeting**; συλλογισμός
+appears **twice**. I reported that Plato "scores weakly," that the minor premise
+failed, and that the priority claim was ordinary and true.
+
+**That was the fourth substitution of vocabulary for substance in one session**,
+and this one nearly closed a live question. Aristotle is not claiming that the
+*word* was unused. He is claiming that the *apparatus* did not exist — and he had
+already classified Plato's apparatus as an instance of it. **A lexical test cannot
+reach a claim about an apparatus.** Recorded so the failure mode is legible: when
+the claim is about an operation, searching for its name measures nothing.
 
 ---
 
@@ -1471,290 +1771,6 @@ stone.**
 
 
 ---
-
-## 29. M40 — THE SUPPRESSED PREMISE: A META-PERFORMATIVE PRIORITY CLAIM
-
-*Rewritten 2026-08-29 after the earlier version was twice wrong — first for
-psychological framing, then for a lexical test that got the answer backwards. This
-is the entryway to the paper and is treated at full weight.*
-
-## 29.1 The three texts
-
-**(i) Plato names the apparatus as a method, in his own voice.**
-*Phaedrus* 266b:
-
-> τούτων δὴ ἔγωγε αὐτός τε **ἐραστής**, ὦ Φαῖδρε, **τῶν διαιρέσεων καὶ συναγωγῶν**,
-> **ἵνα οἷός τε ὦ λέγειν τε καὶ φρονεῖν**
-
-*Of these I am myself a lover, Phaedrus — of the **divisions and collections** —
-**in order to be able to speak and to think**.*
-
-Not a one-off argument. A named procedure, held as such, **for the sake of a
-capacity**. And *Meno* 86e names a second: *συγχώρησον **ἐξ ὑποθέσεως** αὐτὸ
-σκοπεῖσθαι … **ὥσπερ οἱ γεωμέτραι*** — investigation from a hypothesis, on the
-geometers' model. To which the *Parmenides* adds the third: the exhaustive
-derivation of consequences from *εἰ ἓν ἔστιν* and *εἰ ἓν μὴ ἔστιν*.
-
-**(ii) Aristotle classifies that apparatus as syllogistic.**
-*Prior Analytics* I.31, 46a31:
-
-> ὅτι δ᾽ ἡ διὰ τῶν γενῶν **διαίρεσις μικρόν τι μόριόν ἐστι τῆς εἰρημένης μεθόδου**,
-> ῥᾴδιον ἰδεῖν· **ἔστι γὰρ ἡ διαίρεσις οἷον ἀσθενὴς συλλογισμός**· ὃ μὲν γὰρ δεῖ
-> δεῖξαι **αἰτεῖται**, συλλογίζεται δ᾽ ἀεί τι τῶν ἄνωθεν.
-
-*Division through genera is **a small part of the method described**; for division
-is **a kind of weak syllogism** — it begs what it must prove, and always deduces
-something from higher up.*
-
-This is the load-bearing sentence. Aristotle does not place Platonic division
-*outside* his subject as a different sort of thing. He places it **inside**:
-*μόριον τῆς εἰρημένης μεθόδου*, a part of the stated method, and *συλλογισμός* by
-species — defective, question-begging, but of the kind.
-
-**(iii) Aristotle denies that the apparatus had any predecessor.**
-*Sophistici Elenchi* 183b–184b. He first defines what ordinary development looks
-like, by name and by lineage:
-
-> οἱ δὲ νῦν εὐδοκιμοῦντες παραλαβόντες παρὰ πολλῶν **οἷον ἐκ διαδοχῆς** κατὰ μέρος
-> προαγαγόντων οὕτως ηὐξήκασι, **Τισίας** μὲν μετὰ τοὺς πρώτους, **Θρασύμαχος** δὲ
-> μετὰ Τισίαν, **Θεόδωρος** δὲ μετὰ τοῦτον
-
-and then denies it of his own:
-
-> ταύτης δὲ τῆς πραγματείας **οὐ τὸ μὲν ἦν τὸ δ᾽ οὐκ ἦν προεξειργασμένον, ἀλλ᾽
-> οὐδὲν παντελῶς ὑπῆρχεν** … περὶ δὲ τοῦ συλλογίζεσθαι **παντελῶς οὐδὲν εἴχομεν
-> πρότερον ἄλλο λέγειν**
-
-*Not that part was worked out and part was not — **there was absolutely nothing.***
-
-## 29.1b The instruction to supply what is left out — *APr* I.32, verified
-
-Immediately after the division chapter, Aristotle turns to reducing arguments to
-the figures, and instructs the analyst:
-
-> καὶ εἰ μὴ ἄμφω εἰλημμέναι εἶεν, **αὐτὸν τιθέντα τὴν ἑτέραν** … ἢ ταύτας μὲν
-> προτείνουσι, **δι᾽ ὧν δ᾽ αὗται περαίνονται, παραλείπουσιν** … σκεπτέον οὖν εἴ τι
-> περίεργον εἴληπται καί **τι τῶν ἀναγκαίων παραλέλειπται**, καὶ τὸ μὲν θετέον τὸ
-> δ᾽ ἀφαιρετέον
-
-*If both premises have not been taken, **the analyst must himself supply the
-other** … sometimes they propose these but **omit those through which these are
-concluded** … examine whether something superfluous has been taken and **whether
-something necessary has been left out**, and add the one and remove the other.*
-
-**The lexical link is exact.** παραλέλειπται here; and the *Sophistici Elenchi*
-closes by asking pardon **τοῖς παραλελειμμένοις** — for what has been left out.
-Same verb, same participle: the chapter that teaches the reader to supply the
-omitted premise, and the treatise-group that ends by asking indulgence for an
-omission.
-
-**Also in I.31, and sharper than the "weak syllogism" line:**
-
-> **οὔτε ὅ τι ἐνδέχεται συλλογίσασθαι διαιρούμενοι ξυνίεσαν**
-
-*They did not understand **what can be syllogized by dividing**.* Not that they had
-no syllogistic — that they **had one and did not understand what it could
-conclude**. A diagnosis of defective execution of an existing apparatus.
-
-## 29.2 The contradiction, in Aristotle's own terms
-
-    APr I.31    Platonic division IS a syllogism, and a part of the method
-    Phaedrus    division IS Plato's stated method, held for the sake of a capacity
-    SE 184b     of this method, nothing whatever existed before
-
-**The usual escape is not available, and the reason is a point about charity.**
-
-One would ordinarily say Aristotle means the *formal system* only — reading *ταύτης
-δὲ τῆς πραγματείας … οὐδὲν παντελῶς ὑπῆρχεν* as *of **this systematic treatment**
-nothing existed*, so that Platonic division falls outside the scope of the denial.
-The grammar permits it. **⚠ I first recorded that as a defensible alternative and
-withdraw it here, on the following ground.**
-
-Consider what the narrow reading attributes to him. He has written that division
-**is** a syllogism, that it is a **part of the method described**, and that its
-practitioners **did not understand what can be syllogized by dividing** — three
-statements that place the Platonic apparatus inside his subject and concede that
-there is something there to reason with. The narrow reading then has him close the
-treatise-group by declaring that nothing existed, rescued only by taking
-*πραγματεία* in a sense that excludes what he has just included.
-
-**That is an equivocation on his own technical term at the one point where his
-standing depends on it** — committed by the author of the *Sophistici Elenchi*, in
-the closing paragraph of the *Sophistici Elenchi*, in the corpus that gives us
-ὁμωνυμία and catalogues the fallacies of ambiguity. It convicts him of precisely
-the fault his book exists to expose, in order to preserve a chronology he never
-asserts.
-
-**Charity runs the other way.** Take him to mean what he says, in one consistent
-technical sense, in both places. Then he neither contradicts himself nor equivocates:
-he states two things that are jointly true only if the Platonic apparatus is not
-prior to him in the relevant sense, and — one chapter after diagnosing division —
-instructs the reader to **supply what has been left out**.
-
-**The softer reading is not the more generous one. It is a milder accusation**
-(sloppiness rather than a claim), purchased by protecting the received chronology.
-Holding him to his own terms lets the chronology take the strain instead, which is
-what the argument does.
-
-## 29.2b THE LOAD-BEARING SENTENCE: Aristotle names the received account's category and denies it
-
-The conventional history is not merely absent from *SE* 183b. **It is present as a
-named option and refused.**
-
-Aristotle first builds the taxonomy himself:
-
-> τὰ μὲν **παρ᾽ ἑτέρων ληφθέντα πρότερον πεπονημένα** κατὰ μέρος ἐπιδέδωκεν ὑπὸ
-> τῶν παραλαβόντων ὕστερον· **τὰ δ᾽ ἐξ ὑπαρχῆς εὑρισκόμενα** μικρὰν τὸ πρῶτον
-> ἐπίδοσιν λαμβάνειν εἴωθε
-
-*Some things, **taken from others and previously laboured on**, are advanced
-piecemeal by later receivers; **others, discovered from the beginning**, make a
-small first advance.*
-
-He gives rhetoric as the worked instance of the first class, with its lineage —
-Tisias, Thrasymachus, Theodorus, *οἷον ἐκ διαδοχῆς*. **That first category is
-exactly where the received account places Platonic division**: partially worked
-material, received, advanced by a successor.
-
-Then:
-
-> Ταύτης δὲ τῆς πραγματείας **οὐ τὸ μὲν ἦν τὸ δ᾽ οὐκ ἦν προεξειργασμένον**, ἀλλ᾽
-> οὐδὲν παντελῶς ὑπῆρχεν.
-
-***It is not that part was pre-worked-out and part was not*** — but nothing at all
-existed.
-
-**This is the load-bearing sentence of the entry.** The standard harmonisation
-runs *Plato partly worked out syllogistic → Aristotle completed it*. Aristotle
-supplies that category by name and **negates it of this inquiry.** He is not
-silent about partial predecessors; he rules them out.
-
-## 29.2c THE ESCAPE IS CLOSED BY THE TREATISE'S OWN OPENING
-
-*SE* 165a — the first page of the same work:
-
-> τὰ μὲν **λιθαργύρινα** καὶ τὰ **καττιτέρινα** ἀργυρᾶ, τὰ δὲ **χολοβάφινα** χρυσᾶ.
-> τὸν αὐτὸν δὲ τρόπον καὶ **συλλογισμὸς καὶ ἔλεγχος** ὁ μὲν ἔστιν, ὁ δ᾽ **οὐκ ἔστι
-> μέν, φαίνεται δέ** … ὧν εἷς τόπος εὐφυέστατός ἐστι καὶ δημοσιώτατος **ὁ διὰ τῶν
-> ὀνομάτων**
-
-*Litharge and tin are silver, gall-dye is gold — in the same way a syllogism or
-refutation may **not be one but appear one** … and the readiest and commonest
-source of this is **the one that works through names**.*
-
-The treatise **opens** on counterfeit metal as the model for the apparent-syllogism,
-and identifies fallacy **through names** as the commonest kind. It **closes** with
-the priority claim.
-
-**The conventional rescue asks us to save the closing claim by letting a name
-change extension** — πραγματεία meaning the systematic art at 183b while
-συλλογισμός covers Platonic practice at *APr* I.31. That is the book's own opening
-topos, applied to the book's own closing claim. **The harmonisation is
-self-refuting on the author's stated terms**, and this is why the concession
-recorded at 29.2 was withdrawn.
-
-## 29.3 Why this is a syllogism and not a complaint
-
-The passage does not assert the contradiction. It **supplies two premises and
-withholds the third**, and the third is the Platonic corpus:
-
-    1.  If an apparatus existed in a predecessor, mine arose by succession.   [SE]
-    2.  Mine did not arise by succession: nothing whatever existed before.    [SE]
-    3.  Plato contains a prior apparatus — and I have classified it as
-        syllogistic.                                              [APr, UNSPOKEN
-                                                                   AT SE]
-    ∴   Plato does not occupy the predecessor relation.
-
-**Premise 3 is deliberately not spoken in the passage.** The reader must supply
-it, from a corpus he already possesses. That makes the passage an **enthymeme
-whose suppressed premise is an authorial corpus.**
-
-And the recursion is exact: *the claim that syllogistic had no predecessor is
-intelligible only by syllogistically processing its predecessor.* The instrument
-required to detect the contradiction is the instrument whose invention is being
-claimed. Aristotle closes by asking the audience to judge — *τοῖς δ᾽ εὑρημένοις
-πολλὴν ἔχειν χάριν*, give much gratitude for **what has been found** — while
-excusing *τοῖς παραλελειμμένοις*, **what has been left out**. What a syllogism
-teaches a reader to recover is precisely the premise left out.
-
-## 29.4 What the structure does that a declaration could not
-
-Had Aristotle written *Plato's logical work is mine*, that would be a declaration
-— forgeable, deniable, dismissible, and destructive of the construction it
-declares.
-
-Instead the claim is encoded **in the very technology whose invention it asserts**.
-To receive it, a reader must know how to operate the thing. So:
-
-> **the ownership claim, if it is one, is authenticated by performance rather than
-> by declaration.**
-
-That fits the standing frame exactly (M35): legitimacy is conferred by
-acknowledgment and established by what can be executed, not by an external token —
-and M35b records Aristotle grading **personation above coin-forgery** on one scale.
-An assay that must be performed cannot be counterfeited by assertion.
-
-## 29.5 The operation crosses the authorial boundary
-
-Neither corpus contains the complete argument.
-
-    PLATO      supplies the apparatus — the suppressed premise
-    ARISTOTLE  supplies the classification of it as syllogism, and the denial
-    THE READER supplies the inference
-
-Three positions: **premise → inferential apparatus → recognition** — and the
-recognition is about the relation between the positions that supplied the first
-two. This is the functional interlock of Round 12 appearing in a single argument
-rather than across a slot table, and it is the sharpest instance of it recorded.
-
-## 29.6 What is established and what is interpretation
-
-**ESTABLISHED, documentary:**
-- Plato names divisions-and-collections as a method held for a capacity, and the
-  hypothetical method on the geometers' model.
-- Aristotle classifies division as *οἷον ἀσθενὴς συλλογισμός* and as *μόριον τῆς
-  εἰρημένης μεθόδου*.
-- Aristotle states that for this subject *οὐδὲν παντελῶς ὑπῆρχεν*, in explicit
-  contrast to a named succession he supplies as the comparison case.
-- Aristotle supplies the partial-development category by name and **explicitly
-  negates it** of this inquiry: *οὐ τὸ μὲν ἦν τὸ δ᾽ οὐκ ἦν προεξειργασμένον*.
-- Therefore, stated at the narrowest defensible strength and not inflated:
-  **Aristotle claims the development of the syllogizing transmitted in the Platonic
-  corpus.** Not that Plato reasoned well and Aristotle formalised it — Aristotle
-  denies that shape by name. The syllogizing Aristotle identifies in Plato falls, on
-  Aristotle's own taxonomy, on **Aristotle's side of the development relation.**
-- That is an authorship problem in the strict sense of intellectual production, and
-  it arises **before** any hypothesis about heteronymy is introduced.
-
-**INTERPRETATION:** the heteronymic reading resolves that placement literally —
-the Platonic apparatus is not "before Aristotle" because it belongs to the same
-maker.
-
-**ALTERNATIVES that must be charged as auxiliaries, not assumed:**
-*(a)* Aristotle is inconsistent across works, denying at *SE* what he grants at
-*APr*. *(b)* He means the formal system narrowly and speaks loosely — foreclosed
-by *μόριον τῆς εἰρημένης μεθόδου*, which places division inside the method.
-*(c)* Priority rhetoric is conventional — but the passage supplies the succession
-counter-case itself, by name and lineage, which conventional boasting does not do.
-
-**What it is not:** psychology, estate metaphor, or biographical resentment. The
-earlier versions of this entry contained all three and they are withdrawn. This
-version rests on three quotations and one classification.
-
-## 29.7 ⚠ THE TEST I RAN THAT WAS WORTHLESS
-
-Asked whether Plato has an apparatus Aristotle's sentence ranges over, I froze
-five criteria and searched for **the lexeme συλλογ-**. Result: 51 tokens in Plato,
-of which **34 are σύλλογος/συλλογή — assembly, gathering, meeting**; συλλογισμός
-appears **twice**. I reported that Plato "scores weakly," that the minor premise
-failed, and that the priority claim was ordinary and true.
-
-**That was the fourth substitution of vocabulary for substance in one session**,
-and this one nearly closed a live question. Aristotle is not claiming that the
-*word* was unused. He is claiming that the *apparatus* did not exist — and he had
-already classified Plato's apparatus as an instance of it. **A lexical test cannot
-reach a claim about an apparatus.** Recorded so the failure mode is legible: when
-the claim is about an operation, searching for its name measures nothing.
 
 
 ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at

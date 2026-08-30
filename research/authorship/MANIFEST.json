@@ -4,7 +4,7 @@
  "rule": "THREE FILES. Two living, one frozen. Anything else is drift — consolidate it back.",
  "structure": {
   "EA-NOTEBOOK-01.md": "LIVING — read forward. Fifteen rounds plus the standing frame. Append new rounds at the END; do not reorganise.",
-  "EA-AUTHORSHIP-MEASURES-01.md": "LIVING REGISTER — look things up. M1-M34 with conditions, refutations attached to the claims they killed, Part II the terrain map.",
+  "EA-AUTHORSHIP-MEASURES-01.md": "LIVING REGISTER — look things up. §0A is the ENTRYWAY (M40, the suppressed premise) and should be read first; §1-§28 are the measurements; Part II is the terrain map. Refutations are attached to the claims they killed.",
   "PREREG-LEDGER.md": "FROZEN, APPEND-ONLY. Six registrations with their original SHA-256s and their dispositions. Nothing above a DISPOSITION line is ever edited. New tests append a new ENTRY at the end.",
   "data/": "supporting extractions — snub loci, base-rate table, argument map"
  },
@@ -25,8 +25,8 @@
  ],
  "known_failure_mode": "append by anchor-replace is UNSAFE when the anchor appears more than once — str.replace on the closing sigil duplicated sections 17-22 of the register and truncated section 5. Append by unique section anchor instead.",
  "sha256": {
-  "EA-AUTHORSHIP-MEASURES-01.md": "cb813e007d86ca5492f6026d3417e1c003d1ef2c0bae5221ab0ce02c75c0f96a",
-  "EA-NOTEBOOK-01.md": "b20f9b971a259e51fc7901f93ff330700b8aec5c706b2acbb34216e9ccab9384",
+  "EA-AUTHORSHIP-MEASURES-01.md": "3efa38c47d39b66f0b18b81b6653dbff264c53036b9ccfacb9f2817111bbee89",
+  "EA-NOTEBOOK-01.md": "40f2734b278f9239351caa3ad5292cefb91b061ee4f910efc173d18447c146d6",
   "PREREG-LEDGER.md": "861c02e56428c9269a1df734f60cddb18e982e45b6a9ef7f3d210e8cb3ee2750",
   "data/EA-SNUB-01-argmap.json": "fbaff3e4fea09a69f943c0503ea84836cf78d1daaf6c800278775ea956226d08",
   "data/EA-SNUB-01-baserate.json": "1d7f503d631cf7a7f7966b31cbe157422daa5856bd3c9482945400c255dd51c0",
