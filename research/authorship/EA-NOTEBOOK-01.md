@@ -2750,4 +2750,78 @@ apparatus would concentrate if it concentrates anywhere. Any characterization of
 the native shape is provisional until it is complete.
 
 
+---
+
+# ROUND 22 — THE NATIVE SHAPE OF A DOCUMENTED HETERONYMIC SYSTEM
+
+*Added 2026-08-29. EA-CORPORA-11 completed: **1,254,436 tokens / 25 positions**,
+orthonym 2810/2814, Campos 396/397, Reis 307/307, Soares 504/504, Caeiro 127/127,
+Search 139/139, Mora 95/95. Eleven times the original seat. Characterization, not
+inference — Pessoa's authorship is documented.*
+
+## 84. Internal dispersion per position
+
+    fernando-pessoa (ORTHONYM)   0.0445    n=266 blocks
+    alvaro-de-campos             0.0400    n=38
+    antonio-mora                 0.0317    n=16
+    ricardo-reis                 0.0305    n=15
+    alexander-search             0.0298    n=8
+    bernardo-soares              0.0278    n=46
+    alberto-caeiro               0.0275    n=6
+
+**The orthonym is the most internally heterogeneous position in the system** —
+more varied than any constructed voice, by a wide margin over Caeiro and Soares.
+
+## 85. THE FINDING — self-distance against other-distance
+
+Portuguese positions only (Search dropped as a language outlier at 0.089–0.109
+from everything):
+
+    position            internal   to others   ratio
+    fernando-pessoa       0.0445      0.0460   1.033   ← THE ORTHONYM
+    alvaro-de-campos      0.0400      0.0451   1.129
+    ricardo-reis          0.0305      0.0419   1.374
+    antonio-mora          0.0317      0.0455   1.437
+    bernardo-soares       0.0278      0.0455   1.632
+    alberto-caeiro        0.0275      0.0490   1.781
+
+**The orthonym sits at 1.033. It is as far from itself as it is from the
+heteronyms.**
+
+The constructed positions are containers — Caeiro at 1.781, Soares at 1.632, each
+tighter internally than its distance to the rest. **The orthonym is not a
+container.** Its internal variance equals its separation from the voices it
+generates.
+
+## 86. What this is a calibration OF
+
+**This is the intra-Aristotle shape, in a corpus whose single authorship is
+documented.** M10 recorded Aristotle as the most internally heterogeneous author
+in the entire sample — dispersion 0.1033, above the 100th percentile of synthetic
+five-author pools — and I treated that as the anomaly to be explained. M28 then
+explained it as the object.
+
+**Here the same shape appears in Fernando Pessoa's orthonym**, where the answer to
+the authorship question is known from the Casais Monteiro letter of 13 January
+1935. In a documented heteronymic system, **the position that carries the maker's
+own name is the least container-like thing in it.**
+
+**Gradient, and it is orderly:** the more sharply specified the position, the
+tighter the container. Caeiro — the pastoralist with the smallest declared
+vocabulary and the most fixed persona — is tightest at 1.781. The orthonym, which
+is not a persona at all, is loosest at 1.033.
+
+## 87. What it does NOT establish
+
+Nothing about Plato and Aristotle. It establishes what one axis of heteronymic
+structure looks like **when the answer is known**, which is what an H-class
+positive control is for (EA-RELFORM-01 §3).
+
+**Two limits, stated.** Block counts are very uneven — the orthonym has 266 blocks
+against Caeiro's 6, and small-n positions have noisier internal estimates.
+Function-word profiles may be the wrong instrument for verse, where Reis and
+Campos differ in meter and line-length more than in particles; that is a
+construct-validity risk carried forward, not resolved.
+
+
 ∮ = 1
