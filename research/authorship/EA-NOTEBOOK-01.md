@@ -3352,4 +3352,93 @@ school has ever produced fulfillment. The programme in §111 is what would conve
 a default into a rate.
 
 
+---
+
+# ROUND 29 — DISTANCE, MEDIATION, AND THE PROXIMITY ANOMALY
+
+*Added 2026-08-29. The comparative measure named: it is not raw distance but
+WHAT YOU HAVE TO WORK WITH. With the text alone you must reconstruct; with an
+institution around the text you can cite.*
+
+## 112. The variable
+
+    Sappho → Catullus       ~550 yr, language change, NO INSTITUTION
+                            → unannounced transformation, C = 0.688
+    Hosea → Matthew         ~700 yr, language change, synagogue
+                            → ANNOUNCED fulfillment, loose fit
+    Catullus → Ginsberg     ~2000 yr, language change, NO INSTITUTION
+                            → "Malest Cornifici Tuo Catullo" — titled in the
+                              source's own Latin
+    Aristotle → Aquinas     ~1600 yr, language change, UNIVERSITY
+                            → commentary: 14.8/10k naming, 4.61× expansion
+    Albert → Aquinas        ~20 yr, same language, DOMINICAN STUDIUM
+                            → commentary: 12-16/10k naming
+
+**Distance alone does not produce the operator.** Aquinas is 1,600 years and a
+language from Aristotle and produces *commentary*, because he has a university, a
+translation tradition, and a commentary apparatus. **Catullus has a poem.**
+
+**So the variable is INSTITUTIONAL MEDIATION, not years.** When the text arrives
+inside an institution built to transmit it, you get exposition. When it arrives
+alone, you get transformation.
+
+## 113. THE MEASUREMENT — source-naming at institutional proximity
+
+    ARISTOTLE, corpus 761,916 content tokens
+      Πλάτων-       53    0.70/10k    ← the SOURCE named
+      Σωκρατ-      144    1.89/10k    ← the VARIABLE, not citation (M34)
+
+**M34 established Socrates is Aristotle's interchangeable concrete individual —
+*Καλλίαν ἢ Σωκράτην*. So Σωκρατ- is not source-citation. The source-naming rate is
+Πλάτων- alone: 0.70 per 10,000.**
+
+    later text                        names master/10k    ratio
+    ARISTOTLE names Plato                       0.70        1×
+    Aquinas names Aristotle (Summa)            12.00       17×
+    Aquinas names Aristotle (commentary)       14.80       21×
+    Albert names Aristotle (In Sent.)          16.20       23×
+
+**At the same institutional proximity — direct pupil, same school, twenty years —
+the scholastics name their master 17 to 23 times more often than Aristotle names
+Plato.**
+
+**And the corpus ratios:** Aristotle 1.60× Plato — a corpus of comparable scale.
+Aquinas 4.61× the *Metaphysics* — exposition.
+
+## 114. THE ANOMALY, STATED IN MEASURED TERMS
+
+**Aristotle has the profile of DISTANCE at PROXIMATE range.**
+
+    proximate relations produce   frequent naming, expansion, exposition
+    distant relations produce     silence about the source, compression,
+                                  transformation
+
+    Aristotle has:                0.70/10k naming, 1.60× scale
+                                  — the distant profile
+    Aristotle's situation was:    same city, same school, twenty years,
+                                  the master alive
+                                  — maximal proximity
+
+**He had every institutional resource that produces commentary, and the relation
+has none of commentary's properties.**
+
+## 115. What this does and does not claim
+
+**DOES:** the school structure has a measured default — name the master often,
+expand him, expound him — and Plato–Aristotle departs from it by an order of
+magnitude on the one parameter that is cleanly countable.
+
+**DOES NOT:** establish authorship. Both readings must account for the departure.
+H_S accounts for it by *Aristotle was unusually independent* — which is true, is
+what everyone says, and is **one more auxiliary on M38's ledger**, unmeasured
+until now and now measured at 17–23×.
+
+**LIMITS.** Naming conventions differ between fourth-century Greek philosophical
+prose and thirteenth-century scholastic Latin, and that difference is not
+controlled. Greek philosophers may simply name predecessors less. **The
+Theophrastus check is available and unrun: he is the one Greek writer at the same
+proximity in the same tradition, and his naming rate for Aristotle would calibrate
+the convention directly.**
+
+
 ∮ = 1
