@@ -2,8 +2,8 @@
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
  "_generated": "2026-08-21",
- "seats": 56,
- "lines_total": 511070,
+ "seats": 57,
+ "lines_total": 553659,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -1788,6 +1788,36 @@
    "data": {
     "source": "https://www.alexanarch.org/data/corpora/hyperides/source.json",
     "manifest": "https://www.alexanarch.org/data/corpora/hyperides/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-11/01",
+   "corpus": "pessoa-full",
+   "edition": "Arquivo Pessoa (Casa Fernando Pessoa / MultiPessoa)",
+   "license": "public access; underlying works public domain in most jurisdictions",
+   "origin": {
+    "site": "arquivopessoa.net",
+    "method": "per-author index /autores/<id>, then /textos/<id> per work",
+    "fetched": "2026-08-29",
+    "authors_listed": 39,
+    "text_ids_listed": 4529,
+    "texts_fetched": 2220
+   },
+   "language": "por",
+   "lines": 42589,
+   "verified_loci": [
+    "Alberto Caeiro — pastor/rebanho 12 (Guardador de Rebanhos)",
+    "Álvaro de Campos — Ode/máquina/Lisboa 475",
+    "Ricardo Reis — Lídia/deuses/Neera 195 (the Horatian odes)",
+    "Bernardo Soares — Douradores/desassossego/Vasques 65 (Livro do Desassossego)",
+    "António Mora — pagan/deuses/Regresso 242 (the neopagan prose)",
+    "Alexander Search — English-language function words 1731",
+    "Fernando Pessoa orthonym — Mensagem/fingidor/Ulysses/Portugal 119"
+   ],
+   "why_seated": "The distribution test — whether a documented heteronymic corpus converges at whole-corpus level or distributes work-by-work — requires the FULL RANGE of positions, since a null on a thin seat measures the seat. The prior seat carried four voices with Ricardo Reis at 5,548 tokens, which cannot fill a six-slot apparatus whatever Pessoa did. This seat carries 25 positions at 579,493 tokens, with Reis at 42,955 and Bernardo Soares — the Livro do Desassossego, absent entirely before — at 139,455.",
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/pessoa-full/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/pessoa-full/MANIFEST.sha256"
    }
   }
  ]

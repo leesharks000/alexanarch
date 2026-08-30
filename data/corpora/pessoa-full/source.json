@@ -1,0 +1,186 @@
+{
+ "corpus": "pessoa-full",
+ "seat": "EA-CORPORA-11/01",
+ "origin": {
+  "site": "arquivopessoa.net",
+  "method": "per-author index /autores/<id>, then /textos/<id> per work",
+  "fetched": "2026-08-29",
+  "authors_listed": 39,
+  "text_ids_listed": 4529,
+  "texts_fetched": 2220
+ },
+ "edition": "Arquivo Pessoa (Casa Fernando Pessoa / MultiPessoa)",
+ "license": "public access; underlying works public domain in most jurisdictions",
+ "normalization": "HTML body extracted per text, entities unescaped, texts under 8 tokens dropped, one file per authorial position, texts joined by blank line",
+ "works": {
+  "count": 25,
+  "units": "one file per authorial position",
+  "per-work": "text/<voice>.txt",
+  "list": [
+   {
+    "id": "fernando-pessoa",
+    "texts": 628,
+    "tokens": 163867,
+    "lines": 11502
+   },
+   {
+    "id": "bernardo-soares",
+    "texts": 504,
+    "tokens": 139455,
+    "lines": 5272
+   },
+   {
+    "id": "alvaro-de-campos",
+    "texts": 330,
+    "tokens": 104086,
+    "lines": 10543
+   },
+   {
+    "id": "antonio-mora",
+    "texts": 95,
+    "tokens": 49590,
+    "lines": 1751
+   },
+   {
+    "id": "ricardo-reis",
+    "texts": 286,
+    "tokens": 42955,
+    "lines": 5087
+   },
+   {
+    "id": "alexander-search",
+    "texts": 139,
+    "tokens": 26037,
+    "lines": 3730
+   },
+   {
+    "id": "alberto-caeiro",
+    "texts": 107,
+    "tokens": 16969,
+    "lines": 2255
+   },
+   {
+    "id": "pero-botelho",
+    "texts": 4,
+    "tokens": 5854,
+    "lines": 394
+   },
+   {
+    "id": "barao-de-teive",
+    "texts": 19,
+    "tokens": 4211,
+    "lines": 188
+   },
+   {
+    "id": "raphael-baldaya",
+    "texts": 10,
+    "tokens": 4147,
+    "lines": 191
+   },
+   {
+    "id": "charles-robert-anon",
+    "texts": 28,
+    "tokens": 3847,
+    "lines": 315
+   },
+   {
+    "id": "thomas-crosse",
+    "texts": 6,
+    "tokens": 3226,
+    "lines": 84
+   },
+   {
+    "id": "professor-trochee",
+    "texts": 2,
+    "tokens": 2799,
+    "lines": 41
+   },
+   {
+    "id": "coelho-pacheco",
+    "texts": 2,
+    "tokens": 2667,
+    "lines": 252
+   },
+   {
+    "id": "jean-seul",
+    "texts": 6,
+    "tokens": 2061,
+    "lines": 92
+   },
+   {
+    "id": "dr-pancracio",
+    "texts": 10,
+    "tokens": 1487,
+    "lines": 260
+   },
+   {
+    "id": "vicente-guedes",
+    "texts": 4,
+    "tokens": 1305,
+    "lines": 57
+   },
+   {
+    "id": "i-i-crosse",
+    "texts": 4,
+    "tokens": 1293,
+    "lines": 59
+   },
+   {
+    "id": "joaquim-moura-costa",
+    "texts": 15,
+    "tokens": 1114,
+    "lines": 221
+   },
+   {
+    "id": "david-merrick",
+    "texts": 7,
+    "tokens": 884,
+    "lines": 98
+   },
+   {
+    "id": "pantaleao",
+    "texts": 5,
+    "tokens": 615,
+    "lines": 43
+   },
+   {
+    "id": "carlos-otto",
+    "texts": 3,
+    "tokens": 591,
+    "lines": 80
+   },
+   {
+    "id": "eduardo-lanca",
+    "texts": 2,
+    "tokens": 183,
+    "lines": 32
+   },
+   {
+    "id": "horace-james-faber",
+    "texts": 2,
+    "tokens": 129,
+    "lines": 29
+   },
+   {
+    "id": "gaudencio-nabos",
+    "texts": 2,
+    "tokens": 121,
+    "lines": 13
+   }
+  ]
+ },
+ "lines_total": 42589,
+ "coverage": "25 of 39 listed positions seated. COMPLETE for Bernardo Soares (504/504), Alexander Search (139/139), Antonio Mora (95/95), Alberto Caeiro (107/127), and every minor position. PARTIAL for Alvaro de Campos (330/397), Ricardo Reis (286/307) and the orthonym Fernando Pessoa (628/2814). The orthonym is the largest gap and is declared.",
+ "supersedes": "data/corpora/pessoa (4 voices, 111,449 tokens, from pt.wikisource categories) — retained; this is a 5.2x expansion adding Soares, Search, Mora, Teive, Baldaya, Anon, Crosse and eighteen further positions",
+ "verified_loci": [
+  "Alberto Caeiro — pastor/rebanho 12 (Guardador de Rebanhos)",
+  "Álvaro de Campos — Ode/máquina/Lisboa 475",
+  "Ricardo Reis — Lídia/deuses/Neera 195 (the Horatian odes)",
+  "Bernardo Soares — Douradores/desassossego/Vasques 65 (Livro do Desassossego)",
+  "António Mora — pagan/deuses/Regresso 242 (the neopagan prose)",
+  "Alexander Search — English-language function words 1731",
+  "Fernando Pessoa orthonym — Mensagem/fingidor/Ulysses/Portugal 119"
+ ],
+ "why_seated": "The distribution test — whether a documented heteronymic corpus converges at whole-corpus level or distributes work-by-work — requires the FULL RANGE of positions, since a null on a thin seat measures the seat. The prior seat carried four voices with Ricardo Reis at 5,548 tokens, which cannot fill a six-slot apparatus whatever Pessoa did. This seat carries 25 positions at 579,493 tokens, with Reis at 42,955 and Bernardo Soares — the Livro do Desassossego, absent entirely before — at 139,455.",
+ "ground_truth": "The heteronymic attribution is DOCUMENTED, not inferred: the letter to Adolfo Casais Monteiro of 13 January 1935. This is the H-class positive control of EA-RELFORM-01 §3."
+}
