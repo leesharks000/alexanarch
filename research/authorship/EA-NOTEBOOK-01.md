@@ -3610,4 +3610,85 @@ Hosea→Matthew, Catullus→Ginsberg, Aristotle→Aquinas.
 Nothing may be imported from the Greek pair.**
 
 
+---
+
+# ROUND 32 — THE CHARACTERISATION BATTERY: NINE FEATURES, TWO DIRECT PAIRS
+
+*Added 2026-08-29. Gathering broadly without deciding in advance what matters.
+Plato and Aristotle not examined.*
+
+## 123. The battery
+
+Nine features, computed identically on both pairs. **No claim is made that any of
+them is significant** — they are gathered so that, across enough pairs, what holds
+can be seen rather than posited.
+
+    F1  corpus size ratio (pupil / master)
+    F2  % of master's distinctive terms that appear in the pupil at all
+    F3  median density ratio across inherited terms
+    F4  % of inherited terms DENSER in the pupil
+    F5  % of pupil's distinctive terms ABSENT from the master
+    F6  type-token ratio, master vs pupil
+    F7  hapax fraction, master vs pupil
+    F8  top-1000 vocabulary Jaccard
+    F9  uniformity of density direction (is the shift one-way?)
+
+## 124. RESULTS
+
+    DIRECT #1 — Isaeus → Demosthenes        DIRECT #2 — Albert → Aquinas
+    (Dionysius, Lives of the Ten Orators)   (Cologne, attested)
+    28,022 → 246,565 tokens                 2,102,245 → 5,243,581 tokens
+
+    F1  size ratio          8.80×               2.49×
+    F2  terms inherited     96.7%               94.0%
+    F3  median density      0.665               1.003
+    F4  denser in pupil     25.9%               50.4%
+    F5  novel in pupil       3.0%                0.3%
+    F6  TTR Δ              −0.086              −0.078
+    F7  hapax Δ            −0.039              −0.333
+    F8  Jaccard             0.384               0.476
+    F9  direction uniform   0.741               0.504
+
+## 125. WHAT HOLDS ACROSS BOTH
+
+**F2 — NEAR-TOTAL APPARATUS INHERITANCE. 96.7% and 94.0%.** Of the master's three
+hundred most distinctive terms, the pupil uses essentially all of them at least
+once. **This is the strongest cross-pair regularity in the battery.**
+
+**F5 — THE PUPIL INTRODUCES ALMOST NOTHING LEXICALLY NEW. 3.0% and 0.3%.** Of the
+pupil's own three hundred most distinctive terms, virtually none is absent from the
+master. **A pupil's distinctive vocabulary is his master's vocabulary.**
+
+**F6 — TYPE-TOKEN RATIO FALLS, both by ≈0.08.** The pupil is lexically less varied
+per token — consistent with the larger corpus, but the magnitudes match closely.
+
+**F1 — EXPANSION, both directions positive.** 8.80× and 2.49×. The pupil writes
+more.
+
+## 126. WHERE THEY DIVERGE
+
+**F3 and F4 split the pairs.** Demosthenes dilutes (median 0.665, only 26% of terms
+denser); Aquinas holds density (1.003, 50% denser). **F9 follows:** Demosthenes'
+shift is one-way (0.741 uniformity), Aquinas' is balanced (0.504).
+
+→ **Dilution is not a class property.** It distinguishes *carrying an apparatus
+into a wider field* (Demosthenes: inheritance law into politics) from *staying in
+the master's field* (Aquinas: scholastic theology into scholastic theology).
+**Two sub-shapes of direct inheritance, not one.**
+
+## 127. Standing
+
+**Two pairs is not a class.** F2 and F5 are the candidates for a real regularity —
+near-total inheritance of the master's terms, near-zero novel vocabulary in the
+pupil — and both would need to survive Freud→Jung, Husserl→Heidegger,
+Williams→Ginsberg, Boas→Mead before being called characteristic.
+
+**The distance class has not been characterised at all**, and it must be, on the
+same battery, before any feature can be called *discriminating* rather than merely
+*present*.
+
+**Plato and Aristotle remain unexamined on this battery. That is deliberate and
+must hold until both classes are characterised.**
+
+
 ∮ = 1
