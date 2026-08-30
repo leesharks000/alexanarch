@@ -1977,12 +1977,90 @@ S; **only then** apply it to Plato–Aristotle. If it cannot distinguish Pessoa'
 relationships from documented teacher–successor relationships, it has failed and
 says nothing about Plato.
 
-**M43c — what each outcome costs.** If Albert→Thomas, Ibn ʿArabī→Qūnawī and
-Tsongkhapa→Khedrup routinely reproduce the Plato–Aristotle signature — procedural
-reflex, six-slot co-coverage, abandoned-execution completion — **the thesis takes a
-serious hit**. If they do not, even under maximal transmission pressure, the
-signature becomes substantially more diagnostic. **Both outcomes can hurt
-something**, which is the condition this investigation has lacked all day.
+**M43c — ⚠ THE TRANSFER SET CONTAINS NO GREEK CONTENT. A correction to my own
+framing.**
+
+I first wrote that the controls should show whether they *"reproduce the
+Plato–Aristotle signature."* **There is no such thing to reproduce, and the phrase
+was a category error.** The six observables are content-bound to this corpus: six
+transmission-engineering slots derived from *these* works, an exclusion about *one*
+Greek predicate, a seal-and-wax figure in *three* named books. Testing whether
+Albert and Thomas reproduce that would measure **whether Albert and Thomas are
+themselves inside a Platonic configuration** — which is the hypothesis extended,
+not a control.
+
+**Fifth substitution of a particular for the operation it instantiates**, in one
+session, and the same error as counting συλλογ- tokens instead of locating the
+apparatus.
+
+**What transfers is the RELATIONAL FORM, stated with no Greek in it:**
+
+    R1  COMPLEMENTARY COVERAGE — is each side internally tight while the union is
+        more complete than either? (inheritance predicts redundancy: the student
+        possesses what the master taught)
+    R2  ABANDONED-EXECUTION COMPLETION — does the successor complete operations
+        the predecessor explicitly ABANDONED, rather than extending ones the
+        predecessor finished? At what rate, over the denominator of abandonments
+        available to him?
+    R3  ARBITRARY PROCEDURAL AGREEMENT — shared habits the method does not
+        require, defined without reference to any particular habit.
+
+**Each must be defined on the labelled classes BEFORE Plato–Aristotle is scored**,
+or the definition merely re-encodes the target. The Greek observables then become
+**one instance scored by the general measure**, not the template it is cut from.
+
+**And the outcomes:** if securely-distinct pairs under maximal transmission
+pressure routinely show R1–R3, **the thesis takes a serious hit**. If they do not,
+the Plato–Aristotle values become diagnostic. **Both outcomes can hurt something.**
+
+---
+
+## 32.1 M43d — ALBERT RETRIEVED, AND THE COMMENTARY CONTAMINATION
+
+**Retrieval, verified 2026-08-29.** Borgnet *Opera omnia* via archive.org
+DjVuTXT — **220 items carry extracted text**. Volume 7 (Ethics commentary):
+**338,391 tokens**; volume 19: 356,088.
+
+**OCR quality gate, run rather than assumed.** Scattered errors — *divinitatc*,
+*intcr*, *ct* for *et*, *iuebrianiin* for *inebriamini* — but the frequent
+vocabulary is clean: scilicet 2596, quod 2542, quia 1489, enim 1403, sicut 1000.
+**Verdict: usable for function-word and structural measures; UNSAFE for
+rare-lexeme measures.** Any measure resting on a low-frequency form must be
+declared unsafe on this seat, as with Hyperides (EA-CORPORA-08).
+
+**⚠ AND THE CONTROL HAS A CONTAMINATION THE GREEK CASE ALSO HAD.**
+
+Volume 7 carries the naming-gap reflex — *innominat-* ×13:
+
+> qui quidem in timiditate superabundat **Graece innominatus est**, (multa enim
+> sunt **innominata** in mediis et in extremitatibus), Latine autem *formidolosus*
+
+**But that is Albert glossing *NE* 1107b–1108a** — the exact passage where
+Aristotle writes *πειρατέον αὐτοὺς ὀνοματοποιεῖν*. He carries the reflex **because
+he is commenting on the text that performs it.**
+
+**This is the Theophrastus problem in a new form: contamination through a shared
+source.** Albert and Thomas both write Aristotle commentaries. Any Aristotelian
+reflex appears in both **by construction**. Scoring R3 on their commentaries would
+measure the presence of Aristotle in commentaries on Aristotle.
+
+**M43e — THE DESIGN THIS FORCES, and it comes from the feasibility check rather
+than from theory:**
+
+    COMMENTARY WORKS      unusable for R3 (shared-source contamination);
+                          usable for R1 and R2, which are properties of the
+                          RELATION rather than of inherited content
+    INDEPENDENT WORKS     the clean test. Thomas's Summa Theologiae and the
+                          Quaestiones Disputatae are not glosses on Aristotle.
+                          IF THE REFLEX TRANSFERS INTO INDEPENDENT WRITING, that
+                          is transmission. If it appears only where he is
+                          commenting, it is the source showing through.
+
+**That split is the instrument.** It is available for Albert→Thomas, and it
+generalises: every scholastic pair must be scored **commentary and independent
+work separately**, with the contamination declared on the commentary half.
+
+
 
 
 ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at

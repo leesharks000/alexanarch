@@ -25,9 +25,9 @@
  ],
  "known_failure_mode": "append by anchor-replace is UNSAFE when the anchor appears more than once — str.replace on the closing sigil duplicated sections 17-22 of the register and truncated section 5. Append by unique section anchor instead.",
  "sha256": {
-  "EA-AUTHORSHIP-MEASURES-01.md": "3efa38c47d39b66f0b18b81b6653dbff264c53036b9ccfacb9f2817111bbee89",
-  "EA-NOTEBOOK-01.md": "bedbd978ece1575426687aba0d80d3ccfd002e4ddd305edaae8b13517a5f0d3b",
-  "PREREG-LEDGER.md": "fc119faab178cb9dd77bcc8887485c4071224d59cde3542c3e849d1ce57f7f5f",
+  "EA-AUTHORSHIP-MEASURES-01.md": "524af8d88439f24fda933cbd046c5afd18f26501229e3672f37922f5ef2528ae",
+  "EA-NOTEBOOK-01.md": "28991650ac5846db845bfbb7e163e1edba252d8614f85bfe60fb8ccb0c2a1a1d",
+  "PREREG-LEDGER.md": "336549f658126df1a87667a6421b5a59ce2564051968435539bfef4e78210163",
   "data/EA-SNUB-01-argmap.json": "fbaff3e4fea09a69f943c0503ea84836cf78d1daaf6c800278775ea956226d08",
   "data/EA-SNUB-01-baserate.json": "1d7f503d631cf7a7f7966b31cbe157422daa5856bd3c9482945400c255dd51c0",
   "data/EA-SNUB-01-loci.json": "b0d4d7289424c7b7a4704713d1ea1771c369056e24e8089afd7d06d988ba5767"
@@ -49,6 +49,21 @@
    ],
    "kill": "fewer than 3 unlocks in 6 fails; 2+ failures damages H_H at maximum; any mid-run weakening voids",
    "reverse_engineering_rule": "an UNLOCK counts only if the target was pre-frozen AND the resolving passage was not found by searching until something fit"
+  },
+  {
+   "id": "EA-RELFORM-01",
+   "registered": "2026-08-29",
+   "status": "PENDING",
+   "purpose": "a relational-form measure with NO Greek content, so control pairs are not tested for membership in the configuration",
+   "forms": [
+    "R1 complementary coverage",
+    "R2 abandoned-execution completion with denominator",
+    "R3 arbitrary procedural agreement, independent works only"
+   ],
+   "classes": "H one-person-multiple-positions, S master-student, C collaboration, I independent, O single-author",
+   "admissibility": "S class requires attestation with no relation to textual style, doctrine, or the succession tradition under test — Thomas passes, Theophrastus does not",
+   "contamination_rule": "commentary works inadmissible for R3 (shared source); independent works are the clean test",
+   "kill": "if the measure cannot separate H from S out-of-sample, it has failed and says nothing about Plato — fires BEFORE the target is scored"
   }
  ]
 }

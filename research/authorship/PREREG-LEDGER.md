@@ -1005,5 +1005,131 @@ the differential-determinacy requirement of §5 is not met. Notebook Round 17 §
 **Running total: 0 unlocks, 1 null, 5 targets remaining (T-A, T-B, T-C, T-D, T-E),
 threshold 3.**
 
+---
+
+# ENTRY — EA-RELFORM-01
+
+**registered:** 2026-08-29, before any control corpus is scored
+**frozen text follows verbatim; do not edit**
+
+# EA-RELFORM-01 — The Relational Form Measure
+
+## 1. What this exists to prevent
+
+Every control this investigation has tried has failed for one of two reasons:
+the candidate could not be secured **outside** the hypothesis space (Theophrastus,
+M36; Xenophon and Aristophanes, M33), or the operation being counted **did not
+occur** there (the Attic orators, Round 14 §56).
+
+And the framing itself was wrong: I proposed testing whether control pairs
+"reproduce the Plato–Aristotle signature," which is content-bound to this corpus
+and would have measured whether the controls are themselves inside the
+configuration (M43c).
+
+**This registration fixes the measure with no Greek content in it.**
+
+## 2. THE THREE RELATIONAL FORMS — frozen
+
+    R1  COMPLEMENTARY COVERAGE
+        Is each side internally tight while their union is materially more
+        complete than either alone?
+        Inheritance predicts REDUNDANCY — the student possesses what the master
+        taught, so the union barely exceeds the parts.
+        Scored as: coverage(A∪B) / max(coverage(A), coverage(B)), against
+        redundancy |A∩B|/|A∪B|, over a functional inventory defined per
+        tradition, NOT over vocabulary (M37 showed vocabulary fails: every pair
+        lands in 0.20–0.34 and documented succession is indistinguishable from
+        documented independence).
+
+    R2  ABANDONED-EXECUTION COMPLETION
+        Does the successor complete operations the predecessor explicitly
+        ABANDONED — declared aporetic, impossible, or refuted — rather than
+        extending ones the predecessor finished?
+        Scored as: completions / abandonments-available-to-the-successor.
+        THE DENOMINATOR IS REQUIRED. A numerator without it is what Round 13
+        produced and could not interpret.
+        Severity weights, frozen: same problem · same constraint retained ·
+        same distinctive figure retained · missing mechanism supplied ·
+        prior text calls the route impossible.
+
+    R3  ARBITRARY PROCEDURAL AGREEMENT
+        Shared habits the method does not require — defined generically, never
+        as a particular habit.
+        ⚠ SCORED ON INDEPENDENT WORKS ONLY. See §4.
+
+## 3. LABELLED CLASSES — labels from documentary evidence, never from text
+
+    H  one person, multiple authorial positions   Pessoa; Kierkegaard
+    S  master–student succession                  Albert→Thomas; Ibn ʿArabī→
+                                                  Qūnawī; Tsongkhapa→Khedrup;
+                                                  Maimonides→Abraham Maimonides
+    C  distinct-author collaboration              Luther/Melanchthon
+    I  independent, same tradition
+    O  single-author corpus under one name        Josephus
+
+**Admissibility, binding:** a figure enters the S class only if attested by
+evidence with **no relation to textual style, doctrinal similarity, or any
+succession tradition under test** — canonization proceedings, university
+registers, papal bulls, chapter records, monastic administration. **Thomas
+Aquinas passes. Theophrastus does not.**
+
+**The null is HARD by construction:** not random distinct authors — Plotinus and
+Philo barely knew each other, so their nulls are uninformative — but **securely
+distinct authors under MAXIMAL transmission pressure**, a disciple who lived in
+the master's household.
+
+## 4. THE CONTAMINATION RULE
+
+Albert and Thomas both write Aristotle commentaries. Any Aristotelian reflex
+appears in both **by construction**. Verified: Borgnet vol. 7 carries *innominat-*
+×13, but as a gloss on *NE* 1107b–1108a, the passage that performs the reflex.
+
+    COMMENTARY WORKS    R1, R2 admissible (properties of the RELATION)
+                        R3 INADMISSIBLE (shared-source contamination)
+    INDEPENDENT WORKS   all three admissible. This is the clean test.
+
+**Every pair is scored commentary and independent-work separately, and the
+contamination is declared on the commentary half.**
+
+## 5. ORDER OF OPERATIONS — binding
+
+    1.  Seat the control corpora.
+    2.  Define and calibrate R1–R3 on the labelled classes, WITH
+        PLATO–ARISTOTLE NOT IN VIEW.
+    3.  Demonstrate out-of-sample separation of H from S.
+    4.  ONLY THEN score Plato–Aristotle, as ONE INSTANCE of the general measure.
+
+**If step 3 fails — if the measure cannot separate Pessoa's relationships from
+documented teacher–successor relationships — the instrument has failed and says
+nothing about Plato.** That is a real kill condition and it fires before the
+target is ever scored.
+
+## 6. FEASIBILITY, CHECKED 2026-08-29
+
+    Thomas Aquinas   corpusthomisticum.org, HTTP 200, structured HTML,
+                     ISO-8859-1, no OCR                          FEASIBLE
+    Albert           archive.org DjVuTXT, 220 items; vol. 7 = 338,391 tokens.
+                     OCR: frequent vocabulary clean, scattered errors in rare
+                     forms → USABLE for function-word and structural measures,
+                     UNSAFE for rare-lexeme measures. Declare on the seat.
+    Doc. Cath. Omnia HTTP 403                                    BLOCKED
+    Ibn ʿArabī, Tsongkhapa, Maimonides                           UNCHECKED
+
+## 7. STATED LIMITATIONS
+
+**R1's functional inventory must be defined per tradition**, which is a judgement
+and the weakest joint in the design. It must be fixed and published before
+scoring, and the same inventory logic applied to every pair.
+
+**R2's denominator requires identifying abandonments in each corpus**, which is
+interpretive. Every abandonment counted must cite its passage.
+
+**The assigner is not blind.** §5's order of operations is the only mitigation
+and it is imperfect.
+
+## DISPOSITION
+
+PENDING — registered before any control corpus is seated or scored.
+
 
 ∮ = 1
