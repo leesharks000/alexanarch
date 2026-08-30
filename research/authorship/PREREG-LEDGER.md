@@ -888,5 +888,116 @@ control and it is doing all the work.
 
 PART B DOES NOT FAIL (2 of 6 candidates, orator control zero); PART A BLOCKED on attribution metadata
 
+---
+
+# ENTRY — EA-UNLOCK-01
+
+**registered:** 2026-08-29, before any target below was examined
+**frozen text follows verbatim; do not edit**
+
+# EA-UNLOCK-01 — The Unlocking Prediction
+
+## 1. What is being predicted
+
+Not "we will keep finding interesting similarities" — uselessly permissive. The
+claim is specific:
+
+> **Structures that were independently puzzling, or independently measured, before
+> the hypothesis was applied will repeatedly become MORE DETERMINATE when Plato and
+> Aristotle are read as positions inside one construction — without altering the
+> local philology to make them fit.**
+
+## 2. The two admissible forms
+
+    FORM A   Platonic execution or problem  →  Aristotelian explicit account
+             or apparatus, where the Aristotelian side names or completes what
+             the Platonic side performs without naming.
+
+    FORM B   A statement in one corpus + a statement in the other → an operation
+             visible ONLY across the partition, recoverable by neither alone.
+
+M40 is the cleanest instance of B on record: Plato supplies syllogizing; Aristotle
+identifies it as syllogizing (*APr* I.31); Aristotle claims the development of
+syllogizing and negates prior partial development (*SE* 183b) — and the relation
+must itself be recovered syllogistically.
+
+## 3. HYPOTHESIS HELD AT MAXIMUM — it must be able to lose
+
+    H_H : one maker, deliberately partitioned as Plato and Aristotle.
+
+**No weakening to protect it.** If it is weakened to survive a failure, the
+weakening is itself recorded as a failure.
+
+## 4. TARGETS FROZEN NOW — chosen before examination
+
+Each is an item the register already lists as open, unexplained, or dangling.
+**None has been examined for this purpose.**
+
+    T-A  The 31-term class (Round 2 §13). Identified, never characterised.
+         Do they share a semantic character, or is the list arbitrary?
+    T-B  Directionality (§15). Does ANY term run terminal-Aristotelian →
+         technical-Platonic? Under received chronology it cannot.
+    T-C  M27's unexplained near-equality: self-speaking 25.3 (Plato dramatic)
+         vs 29.0 (Aristotle), across the two most formally opposed prose bodies.
+         Recorded as "a measurement without an account."
+    T-D  The Republic/Symposium comedy-tragedy pair, CONTENT base rate — never
+         attempted; only the form base rate was run (Round 7).
+    T-E  Theaetetus 209c's argument structure, extracted and searched in
+         Aristotle INDEPENDENTLY of the word σιμ- (never done; Round 3 searched
+         doctrine-vocabulary, Round 4 argument-shapes).
+    T-F  The four Platonic naming-gap works (Sophist, Statesman, Theaetetus,
+         Timaeus) — is there an Aristotelian counterpart naming what they
+         perform?
+
+## 5. SCORING — fixed before running
+
+Each target resolves to exactly one of:
+
+    UNLOCK    becomes more determinate under H_H, in Form A or B, WITHOUT
+              adjusting the local philology
+    NULL      no change in determinacy either way
+    FAILURE   becomes LESS determinate under H_H, or the reading requires
+              altering the philology to fit
+
+**Reverse-engineering test, binding.** An UNLOCK counts only if the target was on
+this frozen list AND the resolving passage was not selected by searching until
+something fit. Any case where the passage was found by open search is scored
+**NULL regardless of how good it looks.**
+
+## 6. KILL CONDITIONS
+
+- Fewer than **3 UNLOCKS in 6** → the unlocking claim fails.
+- **2 or more FAILURES** → H_H at maximum is damaged and must be reported so.
+- Any weakening of H_H mid-run to accommodate a result → the run is **VOID**.
+- Targets may not be added, swapped, or reworded after this registration.
+
+## 7. WHAT A POSITIVE WOULD AND WOULD NOT BUY
+
+**Would.** The object requiring explanation stops being any individual
+correspondence and becomes **the recurrence of the unlocking operation itself**:
+
+    P(E_n+1 | H_H, E_1…E_n)  >>  P(E_n+1 | H_S, E_1…E_n)
+
+At which point "inheritance can also explain each one" ceases to be adequate,
+because it is no longer the individual cases that need explaining.
+
+**Would not.** Establish one historical hand. The three propositions stay
+distinct and are recorded here at their current standing:
+
+    Plato–Aristotle form one functional/intellectual corpus   STRONGLY SUPPORTED
+    one latent construction explains it economically          INCREASINGLY PLAUSIBLE
+    one historical hand wrote both received corpora           LIVE, NOT ESTABLISHED
+
+## 8. STATED LIMITATION
+
+The assigner is not blind and knows the hypothesis. The freeze on targets and the
+reverse-engineering rule in §5 are the only mitigations, and they are imperfect:
+**the scoring of "without adjusting the local philology" is a judgement.** Every
+UNLOCK must cite its passages so the judgement is checkable.
+
+## DISPOSITION
+
+PENDING — registered, not yet run.
+
 
 ∮ = 1
