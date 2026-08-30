@@ -2670,4 +2670,84 @@ distributed.
                            measures the seat.
 
 
+---
+
+# ROUND 21 — PESSOA EXPANDED; AND CONTROLLING FOR THE MECHANISM, TWICE
+
+*Added 2026-08-29. EA-CORPORA-11 seated at 25 voices / 579,493 tokens. First
+numbers, and a methodological error that turns out to be the same one as M28.*
+
+## 80. The partition measured
+
+Seven voices above 6k tokens, 3,000-token blocks, top-150 function words,
+within-voice against cross-voice dispersion:
+
+    all 7 voices (incl. English Search)    ratio 1.415   Z +18.52
+    Portuguese only (Search dropped)       ratio 1.242   Z +19.05
+    VERSE only — Caeiro, Reis, Campos      ratio 1.094   Z  +2.45
+    PROSE only — Soares, Mora, orthonym    ratio 1.313   Z +21.84
+
+    Plato internal, by domain (M28)        ratio 1.186   Z  +1.75
+    Aristotle internal, by domain (M28)    ratio 1.489   Z  +4.54
+
+**Uncontrolled, Pessoa by voice (1.415) sits beside Aristotle by domain (1.489)** —
+which is the shape Lee predicted: a heteronymic system looks like intra-Aristotle,
+many positions under one maker, not like a two-corpus split.
+
+## 81. ⚠ AND THEN I CONTROLLED FOR THE MECHANISM — THE SAME ERROR AS M28
+
+I reported the verse-only run as *the clean test*: three voices, one genre, one
+language, one author, separating at only 1.094 — and concluded that **designed
+heteronymy does not produce substrate divergence**, and therefore that
+Plato–Aristotle's Z = +39.18 counts *against* the configuration.
+
+**That conclusion is withdrawn, and the reason is exact.**
+
+**Genre-assignment is not a confound in a heteronymic corpus. It is the
+operation.** Caeiro *is* a pastoralist, Reis *is* a Horatian odist, Campos *is* a
+long-line modernist, Soares *is* a prose diarist, Mora *is* a philosophical
+prosaist, Search *is* an English poet. The genre is part of the position. Removing
+it removes what a heteronym is.
+
+**And this is precisely the M28 error, repeated:**
+
+    M28      controlled for OBJECT      → Aristotle's dispersion collapsed
+             → read as "the anomaly dissolves"
+             → but writing-to-the-object IS the operation (Round 18)
+
+    Round 21 controlled for GENRE       → Pessoa's voice-partition collapsed
+             → read as "heteronymy produces no divergence"
+             → but genre-assignment IS the heteronymic operation
+
+**In both cases the quantity controlled away was the mechanism.** Recorded because
+the pattern is now twice-observed and is a standing hazard of this whole
+investigation: *when the phenomenon is an operation performed ON a variable,
+controlling for that variable deletes the phenomenon.*
+
+## 82. What the method should be instead
+
+**Pessoa's authorship is documented — the Casais Monteiro letter of 13 January
+1935.** So this is not a blind test and should not be run as one. We are not asking
+*do the voices separate*. We are asking:
+
+> **Along what axes does one author's splitting actually run?**
+
+That is characterization, not inference, and it is what a positive control is
+*for*. The H-class calibration EA-RELFORM-01 needs is not "does heteronymy produce
+X" but "what is the native shape of heteronymic splitting" — measured on a case
+where the answer to the authorship question is already known.
+
+**The uncontrolled 1.415 is therefore the number that means something**, because
+it includes the splitting along every axis the maker used at once: genre,
+language, register, meter, philosophy, biography. Those are not separable
+components of a confound. They are the dimensions of the partition.
+
+## 83. Outstanding
+
+**The orthonym is at 628 of 2,814 texts** and is the largest gap in the seat. It
+is also the position most likely to matter, since the orthonym is where an
+apparatus would concentrate if it concentrates anywhere. Any characterization of
+the native shape is provisional until it is complete.
+
+
 ∮ = 1
