@@ -2250,8 +2250,17 @@ subject, first co-occurrence taken, no roaming.
 
 Three of four resolve in **Form A**, cleanly, with exact Greek.
 
-**SCORE: NULL.** §5 requires the target to become **more determinate under H_H —
-differentially**. It does not. *Sophist* → *De interpretatione* is the standard
+**SCORE: NULL — ⚠ AND THE JUSTIFICATION OVERCLAIMED.** I wrote that "inheritance
+predicts Form A exactly as strongly." **That was never measured.** What is
+established is that inheritance provides an *intelligible* explanation — P(E|H_S)
+> 0 — not that P(E|H_S) = P(E|H_H). The honest code is **FIT CONFIRMED;
+DIFFERENTIAL WEIGHT UNRESOLVED — COMPARATOR NOT CALIBRATED**. The NULL score
+stands under §5 (it cannot count toward the threshold without demonstrated
+differential determinacy) but the *reason* is comparator absence, not
+demonstrated equivalence. See M43 for the control class that would settle it.
+
+§5 requires the target to become **more determinate under H_H —
+differentially**. That has not been shown either way. *Sophist* → *De interpretatione* is the standard
 account of how logic developed; *Theaetetus* → *De Anima* the standard account of
 how psychology developed. **Inheritance predicts Form A exactly as strongly.** The
 *Statesman*/*Politics* pair differs in kind but not in favour: Aristotle is not
@@ -2446,7 +2455,8 @@ addition is what must be argued, not the number. The number stands however the
 reading goes: 0.0571 against 0.0570, per-domain, edition excluded.
 
 **Nothing here establishes one hand.** A school trained to write to its object
-produces the same statistic (M28's own caveat, unchanged). What the round changes
+**could** produce the same statistic — *could*, not *does*: that frequency has
+never been measured (M43). What the round changes
 is that the configurational reading **no longer requires a plan** — which was its
 single most expensive assumption.
 

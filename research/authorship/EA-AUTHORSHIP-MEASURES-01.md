@@ -1596,9 +1596,25 @@ to correct, merely reversed.
         → the Socrates/Callias exclusion at p = 0.00022 (M34); Phaedo 59b; the
           authorship denial at Letter II 314c.   [was A7, A9, A10]
 
-**Five latent assumptions, not ten auxiliaries.** L1–L4 are ordinary and L2 now
-has direct support. **L5 is where H_S is genuinely paying**, and it is the honest
-locus of the dispute.
+**Five latent assumptions, not ten auxiliaries. ⚠ AND THE STATUS LINE WAS WRONG.**
+The original read *"L1–L4 are ordinary and L2 now has direct support."* Corrected:
+
+    L1  successor completes abandoned executions      UNMEASURED
+    L2  arbitrary procedural reflexes transmit
+        across SECURELY DISTINCT persons              UNMEASURED
+        (Theophrastus shows the reflex extends one position further into the
+        Peripatetic lineage; he is not externally secured, so this is not
+        evidence of transmission between distinct makers — M36)
+    L3  register/object divergence produces
+        substrate separation                          PARTLY SUPPORTED
+    L4  successors divide functional labour
+        complementarily                               UNMEASURED
+    L5  local causes for M34, Phaedo 59b, Letter II   UNSPECIFIED
+
+**A plausible auxiliary is not an empirically supported auxiliary.** Calling L1–L4
+"ordinary" imported common sense as a denominator. H_S retains an enormous
+**prior** advantage; that does not license inflating **P(E | H_S)** without
+measuring it.
 
 **H_H — configuration. Its own ledger, which must be equally ugly:**
 
@@ -1885,6 +1901,88 @@ technical complaint and the configurational one are compatible, or that the stat
 reason is the exoteric form. **Neither is demonstrated.** Recorded as reading, at
 the same epistemic level as EA-KERMA-01, under the standing rule — **the corpus
 supplies the structure; it does not perform the application.**
+
+
+---
+
+## 32. M43 — THE CONTROL PROBLEM IS SOLVED: SCHOLASTIC AND RELIGIOUS SUCCESSION PAIRS
+
+*Added 2026-08-29. The externally-secured negative class M36a demanded and no
+Greek figure could supply.*
+
+**Why no Greek control worked.** M36a requires a control **impossible to be inside
+the configuration** — either no causal contact, or independent attestation of the
+author's existence from outside. Theophrastus fails both (M36). Xenophon and
+Aristophanes are held apart as candidates (M33). The orators fail on opportunity:
+median division 0.5/10k against Plato 6.1, no work clearing M30's threshold
+(Round 14 §56). **Every Greek candidate is either inside the hypothesis space or
+does not perform the operation.**
+
+**The solution.** Scholastic and religious master–student pairs supply all three
+requirements at once:
+
+    SECURELY DISTINCT PERSONS   attested by canonization proceedings, university
+                                registers, papal bulls, chapter records, monastic
+                                administration — evidence with NO relation to
+                                textual style, doctrinal similarity, or any
+                                succession tradition under test
+    DOCUMENTED TEACHING         master–student relations recorded institutionally
+    HEAVY PROCEDURAL APPARATUS  division, classification, distinction, commentary
+                                — enough opportunity for the reflex to fire
+
+**And the null becomes hard rather than easy.** The correct negative class is not
+*random distinct authors* — Plotinus and Philo barely knew each other, so their
+nulls are uninformative. It is **securely distinct authors under MAXIMAL
+transmission pressure**: a disciple who spent years in the master's household.
+
+**Candidate pairs:**
+
+    Albert the Great → Thomas Aquinas        Latin, vast, Aristotelian apparatus
+    Ibn ʿArabī → Ṣadr al-Dīn al-Qūnawī       systematizes rather than repeats
+    Tsongkhapa → Gyaltsab / Khedrup          elaborate inherited procedures
+    Maimonides → Abraham Maimonides          familial + intellectual, maximal case
+    Luther → Melanchthon                     separate class: COLLABORATION
+
+**Relationship classes to label externally, not by text:**
+
+    H  documented one-person / multiple authorial positions  (Pessoa, Kierkegaard)
+    S  documented master–student succession
+    C  documented distinct-author collaboration
+    I  independent authors, same tradition
+    O  documented single-author corpus under one name
+
+**The decisive comparison is H vs S; C, I and O identify what drives the
+classification.**
+
+**M43a — FEASIBILITY, CHECKED (2026-08-29).**
+
+    Thomas Aquinas    corpusthomisticum.org  HTTP 200, structured HTML,
+                      ISO-8859-1, one file per question-block, NO OCR
+                      → FEASIBLE NOW
+    Albert the Great  archive.org, 222 items incl. the Borgnet Opera omnia
+                      → PAGE SCANS. Latin OCR risk, the same failure mode that
+                        made Hyperides token-unsafe and Kierkegaard's Samlede
+                        Værker unusable (T14). NOT yet feasible; requires an OCR
+                        quality gate before seating.
+    Doc. Cath. Omnia  HTTP 403 — blocked
+
+**So the pair is half-feasible.** Thomas is seatable; Albert needs a quality gate.
+That is a corpus-building task with a known shape, and it is the **highest-value
+acquisition remaining**, because it converts "schools transmit procedures" from a
+story into a number.
+
+**M43b — the instrument must be built WITHOUT Plato–Aristotle in view.** Derive the
+measure on the labelled classes; validate out-of-sample that it separates H from
+S; **only then** apply it to Plato–Aristotle. If it cannot distinguish Pessoa's
+relationships from documented teacher–successor relationships, it has failed and
+says nothing about Plato.
+
+**M43c — what each outcome costs.** If Albert→Thomas, Ibn ʿArabī→Qūnawī and
+Tsongkhapa→Khedrup routinely reproduce the Plato–Aristotle signature — procedural
+reflex, six-slot co-coverage, abandoned-execution completion — **the thesis takes a
+serious hit**. If they do not, even under maximal transmission pressure, the
+signature becomes substantially more diagnostic. **Both outcomes can hurt
+something**, which is the condition this investigation has lacked all day.
 
 
 ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
