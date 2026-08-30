@@ -3164,4 +3164,87 @@ imitation reading recorded as the default and the convergence reading recorded a
 undecidable from the cases.
 
 
+---
+
+# ROUND 27 — THE FULFILLMENT OPERATOR, CALIBRATED ON CATULLUS
+
+*Added 2026-08-29. EA-FULFIL-01 registered 645e9620e857f30a…, construct-validity
+check run.*
+
+## 103. The operator, and why it is the right frame
+
+The Matthean structure — *ἵνα πληρωθῇ τὸ ῥηθὲν διὰ τοῦ προφήτου* — has three
+parts: **a later text claims an earlier was about it; the earlier was not making
+that claim** (Hosea 11:1 looks back at the Exodus, and Matthew reads it forward);
+**and the relation works by structural correspondence rather than the earlier
+text's intent.**
+
+    case                A: announced   C: closeness   S: scope
+    Matthew / Torah         YES          loose        verse-level targets
+    Catullus / Sappho       no           VERY CLOSE   one poem, register-shifted
+    Aristotle / Plato       no           ?            whole apparatus (claimed)
+
+**This replaces the completion test's broken form.** Not *do the six slots
+transfer* — that imports the Sapphic thesis into its own control — but **does a
+documented master-student pair produce unannounced fulfillment-relations at
+Catullan closeness across a whole apparatus?**
+
+## 104. C CALIBRATED — Sappho 31 → Catullus 51, slot by slot
+
+    slot                                S31   C51
+    seems-to-me equal-to-god             ✓     ✓     φαίνεταί μοι ἴσος θεοῖσιν
+                                                     / Ille mi par esse deo videtur
+    that man                             ✓     ✓     κῆνος / ille
+    sitting opposite you                 ✓     ✓     ἐναντίος τοι ἱζάνει
+                                                     / qui sedens adversus te
+    hears                                ✓     ✓     ὑπακούει / audit
+    sweetly laughing                     ✓     ✓     γελαίσας ἱμερόεν / dulce ridentem
+    heart-struck → senses-snatched       ✓     ~     ἐπτόασεν / omnis eripit sensus
+    voice fails                          ✓     ~
+    tongue breaks → grows numb           ✓     ✓     γλῶσσα ἔαγε / lingua torpet
+    thin fire                            ✓     ✓     λεπτὸν πῦρ / tenuis flamma
+    runs under the flesh/limbs           ✓     ✓     ὑπαδεδρόμακεν / sub artus demanat
+    eyes see nothing                     ✓     ✓
+    ears ring                            ✓     ✓
+    ────────────────────────────────────────────
+    sweat pours                          ✓     ✗
+    trembling seizes                     ✓     ✗
+    greener than grass                   ✓     ✗
+    seem near to dying                   ✓     ✗
+
+    C = 11/16 = 0.688
+
+**Sequence preserved throughout except one inversion (eyes/ears).** Aspect
+systematically shifted: aorist **ἔαγε → present torpet**; perfect **ὑπαδεδρόμακεν
+→ present demanat**. **The last four slots are not omitted but REPLACED** — by the
+otium stanza, which is the only decisive completion in the Latin poem.
+
+**CONSTRUCT VALIDITY PASSES.** Two arbitrary poems by the same author in the same
+language — Catullus 5 against Catullus 64 — share **0.023** of content lemmas. C
+is a sequence-aligned slot measure and cannot be produced by vocabulary overlap
+between unrelated texts.
+
+## 105. What this now makes measurable — and what it cannot
+
+**Measurable:** whether Albert→Aquinas produces relations at C ≈ 0.7, unannounced,
+across an apparatus. If it does, the Plato–Aristotle structure is not singular and
+frequency inference becomes available. If it does not, singularity is consistent
+with the evidence.
+
+**⚠ NOT measurable, and registered as the governing difficulty (EA-FULFIL-01 §4):**
+**if the relation is genuinely singular, frequency inference is unavailable** — no
+comparison class, no percentile, no likelihood ratio. Everything this
+investigation has built assumes a distribution to score against.
+
+**The available substitute is a FIT test, not a frequency test:** *what is the
+probability of this configuration arising with no relation?* — which needs only
+the two corpora and a null model of accidental correspondence.
+
+**AND THE CEILING IS FIXED BY THE CALIBRATION ITSELF.** Catullus scores 0.688 and
+**is not Sappho**. **Maximal C is compatible with distinct authorship, demonstrably
+so, in the standard case.** Any C value for Plato–Aristotle establishes
+**relation**, never **authorship** — and the whole day is a record of measures
+that collapse at exactly that step.
+
+
 ∮ = 1
