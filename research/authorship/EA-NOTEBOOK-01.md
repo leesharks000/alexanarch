@@ -2175,6 +2175,16 @@ two positions from a successor whose making is acknowledged as continuous. M38's
 ledger stands. The strong reading is not established here — **it is run, at
 strength, so its yield can be measured.**
 
+## S9b. ⚠ NOTE ADDED AFTER EXTERNAL REVIEW
+
+Sections S6–S8 cite M39 and M40 in forms since **corrected**. Specifically: the
+certification asymmetry is *an identified epigraphic anchor*, not a demonstrated
+absence for the others; the stone anchors the **person**, not textual paternity;
+and "the position that had to be real" is a conditional architectural reading, not
+an established claim. **S8 should be read at that reduced strength.** The run is
+retained at full strength as a run — that is its purpose — but it inherits the
+corrections.
+
 ## S10. What the run buys
 
 Read through the strong version, the following stop requiring separate
@@ -2183,8 +2193,13 @@ the abandonment/completion asymmetry with its single shared figure (S4), the
 lexical exclusion at p = 0.00022 (S5), the doxographic concentration (S6), the
 authorship denial and its σύμβολον (S7), and the certification asymmetry (S8).
 
-**Seven structures, one construction.** Against M38's ledger, which charged
-inheritance ten separate auxiliaries for the same set.
+**Seven structures, one construction.** Against M38's ledger — **which has since
+been rebuilt two-sided**: inheritance requires **five latent assumptions**, not
+ten auxiliaries, of which four are ordinary and one (L5) is where it genuinely
+pays; and the configurational reading carries **its own five** (K1–K5), including
+the chronology, the unspecified relation between the attested person and the
+authorial position, and the absent expected signatures. **Neither ledger is
+short.**
 
 **That is the compression the reading buys, and it is what M38b said the
 heteronymic hypothesis would have to earn against its prior. Whether it earns

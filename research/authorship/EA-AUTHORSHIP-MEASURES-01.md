@@ -1060,9 +1060,13 @@ the nine orators, Philo, Josephus, the NT. There was no word for a falsely-title
 book. προσωπεῖον, the theatrical mask, is likewise **zero in both corpora** — the
 mask is not their tool for authorial voice, which constrains any persona reading.
 
-**The division of labour.** Plato holds the **image** vocabulary (εἴδωλον, μίμημα,
-σύγγραμμα); Aristotle holds the **detection** vocabulary (πλάσμα, φάντασμα,
-ὑποκριτής). The assay word is shared almost equally, δόκιμος 28/24.
+**The division of labour — ⚠ SUGGESTIVE, NOT MEASURED.** Plato leans to the
+**image** vocabulary (εἴδωλον, μίμημα, σύγγραμμα); Aristotle to the **detection**
+vocabulary (πλάσμα, φάντασμα, ὑποκριτής); δόκιμος is shared at 28/24. **These are
+raw counts.** Establishing a division of labour as a quantitative result requires
+semantic disambiguation of each family, normalisation, a frozen vocabulary set
+fixed before counting, and comparison corpora. **None of that has been done**, and
+the phrase "division of labour" is used descriptively here, not as a finding.
 
 **The frame is kinship, not inscription.** In Isaeus — γνήσιος at **23.72/10k**,
 the densest in the sample — legitimacy is litigated by μαρτυρ- (279), ἐγγύη (91),
@@ -1121,7 +1125,11 @@ exists to detect. And the Aristotelian corpus reaches us **through Theophrastus'
 library** — Neleus, Scepsis, Apellicon, Sulla, Andronicus — so the two texts share
 one transmission channel and their agreement in editorial habit is not independent.
 
-**Seat stands as a corpus. Result void as a control.**
+**Seat stands as a corpus. ⚠ CORRECTED PHRASING: the measurement stands; its use
+as an authorship discriminator is void.** Conditional on the received succession
+account, Theophrastus's hit is evidence that **this procedural reflex can propagate
+down an intellectual lineage** — which matters to H_S even though it does not
+separate H_S from H_H.
 
 **M36a — the control criterion, stated.** A control must be **impossible to be
 inside the configuration**, which requires either (i) **no causal contact** — a
@@ -1134,7 +1142,10 @@ fails both. Demosthenes passes (ii) via inscriptions and decrees. **The Hippocra
 corpus passes (i)** — largely pre-Platonic, Coan and Cnidian, medical rather than
 Academic — and stands at **0 of 15**, the one control nobody can absorb.
 
-**M36b — the reflex may be undecidable in principle.** The operation requires
+**M36b — the reflex is not identifiable from presently available within-tradition
+controls.** *(Originally written "undecidable in principle" — too strong, corrected.
+"In principle" would require excluding external, cross-cultural, documentary and
+later known-author calibration routes as well, which has not been done.)* The operation requires
 division, and in Greek prose division is Academy-descended. **Any corpus that
 performs the operation is downstream; any corpus that is not downstream does not
 perform it.** If that holds, M30's diagnosticity is not merely blocked pending a
@@ -1254,26 +1265,59 @@ master's figure while completing what it failed at, distributes rather than
 repeats functions, and negates inherited formulations while preserving the
 operations beneath them.
 
-**The auxiliary count, on the current bundle.** H_S requires, separately:
+**⚠ THE ORIGINAL LEDGER WAS WRONG IN TWO WAYS AND IS REBUILT BELOW.** It listed
+ten items as ten independent auxiliaries, when several flow from one latent
+assumption; and it charged only H_S, which is the same asymmetry this entry exists
+to correct, merely reversed.
 
-    A1  an arbitrary reflex transmitted that the method does not require (M30)
-    A2  substrate divergence to the strongest partition in the sample (M6)
-    A3  selection of ABANDONED operations rather than developed ones (Round 13)
-    A4  completion by a mechanism the master lacked — ἄνευ τῆς ὕλης
-    A5  retention of the master's figure at the point it failed — seal-and-wax
-        in exactly three works, the Platonic one being the abandonment site
-    A6  division of one apparatus by ROLE: representation vs detection (M35)
-    A7  a systematic exclusion nobody states — Socrates 0/144 vs Callias 5/35
-        in snub contexts (M34)
-    A8  independent filling of all six transmission slots at work level (Round 12)
-    A9  the master writing himself absent at the founder's death (Phaedo 59b)
-    A10 a signed denial of the corpus's own authorship (Letter II 314c)
+**REBUILT — grouped by the smallest latent assumption that generates each set.**
 
-**No individual item is implausible.** The question M38 exists to keep open is
-whether H_S **predicts their joint configuration** or accommodates them one at a
-time with a fresh auxiliary each — which is, structurally, the same operation
-Aristotle performs on an abandoned execution: take what is left incomplete and
-supply the missing part.
+**H_S — inheritance. Latent assumptions, not observation-counts:**
+
+    L1  Aristotle is an unusually close successor systematically working through
+        UNRESOLVED Platonic problems.
+        → generates: the abandoned-execution selection, completion by apparatus
+          the master lacked, retention of the master's figure at its failure
+          point, and the six-slot co-filling.   [was A3, A4, A5, A8]
+
+    L2  Arbitrary procedural habits transmit within a school alongside method.
+        → generates: the naming-gap reflex (M30).   [was A1]
+        → SUPPORTED: Theophrastus carries it (M36), which is direct evidence for
+          L2 conditional on the received succession.
+
+    L3  Register and object diverge sharply between dialogue and treatise.
+        → generates: the Z = +39.18 partition, and much of the vocabulary split.
+          [was A2, part of A6]
+
+    L4  A successor specialises where the master did not.
+        → generates: the representation/detection lean (M35).   [was A6]
+
+    L5  Local causes, individually unexplained by L1–L4.
+        → the Socrates/Callias exclusion at p = 0.00022 (M34); Phaedo 59b; the
+          authorship denial at Letter II 314c.   [was A7, A9, A10]
+
+**Five latent assumptions, not ten auxiliaries.** L1–L4 are ordinary and L2 now
+has direct support. **L5 is where H_S is genuinely paying**, and it is the honest
+locus of the dispute.
+
+**H_H — configuration. Its own ledger, which must be equally ugly:**
+
+    K1  Chronology. The received dating must be wrong or the corpus's composition
+        order must differ from its attributed order.
+    K2  A historical-person architecture. What the attested Aristotle IS relative
+        to the authorial position — patron, writer, appropriated name, occupied
+        role — must be specified, and is not.
+    K3  Why externally transmitted biographical distinctions exist at all, and in
+        the detail they do.
+    K4  Why expected signatures are ABSENT: no προσωπεῖον vocabulary (M35), no
+        ψευδεπίγραφος, and M16's Aristophanes result requiring reinterpretation
+        rather than prediction.
+    K5  The documentary machinery required to sustain the partition across
+        centuries of transmission, cataloguing and athetesis.
+
+**Neither ledger is short. That is the point.** The contest is which set of latent
+assumptions is smaller and less tailored — **not** which model can accommodate the
+observations, since both can.
 
 **M38a — the null's kill condition is missing, and this is the real defect.**
 This investigation has pre-registered kill conditions for the heteronymic reading
@@ -1331,9 +1375,16 @@ and specifically why two extraordinarily well-separated textual containers behav
 as unusually complementary machinery. *Teacher and student* is an answer to that.
 It is not automatically a complete one.
 
-**Status.** An accounting rule, not a result. It licenses no conclusion about
-authorship and is recorded because the investigation has been applying the
-asymmetry silently, in the direction of the received model, in every round.
+**Status.** An accounting rule, not a result. Recorded because the investigation
+applied the asymmetry silently toward the received model for most of the day —
+**and then, on correcting it, began applying the mirror-image asymmetry toward the
+configurational reading** (see M39, M40b, M40c, all corrected). 
+
+**The governing danger, stated as the rule this entry now enforces:** *do not cure
+an unfalsifiably elastic H_S by making H_H equally elastic.* The required
+architecture is: nothing simply assumed, nothing simply discarded, every datum
+retains provenance, **both models pay for auxiliaries, and both models must be
+capable of losing.**
 
 
 ---
@@ -1363,8 +1414,18 @@ sources outside the configuration.** Applied to the cluster itself:
                   crowning Aristotle and Callisthenes. Epigraphic, non-literary,
                   outside the configuration. **Passes M36a.**
 
-**Aristotle is the only member of the candidate cluster with external documentary
-certification of his existence as a person.**
+**⚠ CORRECTED. Established:** *Aristotle is presently the only candidate position
+with an **identified** external epigraphic anchor.* The stronger form originally
+written here — that he is the **only** member with such certification — is a
+**negative documentary claim** (¬E_Socrates ∧ ¬E_Plato ∧ ¬E_Aristophanes ∧
+¬E_Xenophon) requiring an exhaustive survey that **has not been performed**. ∃E_A is
+established; the negations are not.
+
+**And a second correction: the stone anchors the PERSON, not textual paternity.**
+Aristotle existed ⇏ Aristotle authored the Aristotelica. Under any configurational
+reading a real Aristotle could be patron, recipient, collaborator, appropriated
+identity or named position. The inference from certification to authorship does not
+run.
 
 **This inverts the frame the investigation has been using.** Aristotle has been
 treated throughout as the anomaly requiring explanation — the heterogeneous corpus
@@ -1411,7 +1472,7 @@ stone.**
 
 ---
 
-## 29. M40 — THE PRIORITY CLAIM: ARISTOTLE DISCLAIMS ΔΙΑΔΟΧΗ IN HIS OWN VOICE
+## 29. M40 — THE PRIORITY CLAIM: ARISTOTLE DENIES CUMULATIVE INHERITANCE FOR THE SYLLOGISTIC
 
 *Added 2026-08-29. The first passage where Aristotle states his relation to
 predecessors directly, and states it as NOT inheritance. Includes an error of mine
@@ -1449,10 +1510,19 @@ much gratitude for what is found.
 **A plea to judges, in the treatise on distinguishing the genuine from the
 apparent, disclaiming διαδοχή for itself.**
 
-**M40a — why the posture is the datum.** A passed-over student would claim
-succession *harder*, since succession is the ground he lost on. Aristotle
-disclaims it and asks to be judged on the **finding** instead. That is original
-title asserted against possessors, not an heir accepting an estate.
+**M40a — the datum, without the counterfactual.** *(An earlier version argued "a
+passed-over student would claim succession harder." **Cut**: it is an unmeasurable
+psychological counterfactual and it imports the biographical succession drama whose
+evidentiary standing is in dispute.)*
+
+The hard datum is stronger without it, and is three-part:
+**(i)** Aristotle knows the concept of cumulative inheritance;
+**(ii)** he describes it explicitly for rhetoric, by name and by lineage —
+*οἷον ἐκ διαδοχῆς*, Tisias, Thrasymachus, Theodorus;
+**(iii)** he explicitly denies that developmental history **for the syllogistic**.
+
+**That is what is established. It does not establish that he disclaims Platonic
+inheritance simpliciter**, and the title of this entry has been corrected to match.
 
 **Scope, stated exactly.** The *Elenchi* makes the priority claim of the
 **syllogistic only**. The rest of the corpus behaves the same way — completions,
@@ -1474,17 +1544,32 @@ successful claim tells you nothing about who made the works. Speusippus holding
 the Academy is consistent with his having successfully claimed standing over
 material that was not his to hold.
 
-**What survives the correction:** the succession was **contested**. That is not in
+**⚠ AND THE CORRECTION OVERCORRECTED.** Writing that Speusippus's succession is
+"not a fact about persons at all" converts *this evidence is tradition-mediated*
+into *this evidence cannot count* — which does not follow. **Evidence can be late,
+interested, dependent and tradition-mediated and still be evidence.** It gets
+**weighted and provenance-tagged, not deleted.** Otherwise H_H acquires exactly the
+universal escape that M38 criticises in H_S: any historical evidence for distinct
+persons is dismissed as an artifact of the apparatus whose reliability the
+hypothesis disputes. **The succession traditions enter as E_succession with source,
+provenance and dependence explicitly modelled** — neither settled fact nor
+discarded.
+
+**What survives:** the succession was **contested**. That is not in
 dispute on any reading — the *Elenchi* closes with a plea to judges, the *Letters*
 transmit their own athetesis, the corpus keeps its spuria. **Contested standing is
 the fact; who was right about it is the question**, and I answered it in passing
 while claiming to record evidence. Second time today I supplied received history as
 though it were evidence (see M36).
 
-**M40c — consequence for the terrain map.** If standing over a corpus can be won
-by successful claim, the Academic succession-list is not a record of who wrote
-what. It is a record of **who prevailed**, produced by the same apparatus whose
-reliability this investigation is measuring. It belongs beside T11 (the corpus
+**M40c — consequence for the terrain map. ⚠ NARROWED.** The defensible form:
+**an Academic succession list establishes attributed institutional standing; it
+does not by itself establish textual paternity.** That is enough to stop the
+succession list functioning as a silent authorship axiom.
+
+*("A record of who prevailed" is a **configurational interpretation** of the
+institutional record and cannot enter the terrain map as a neutral datum. Withdrawn
+from that role.)* It belongs beside T11 (the corpus
 boundary is Andronicus's inference) and T12 (the one external anchor certifies the
 compiler of attribution records), **not in the background as settled context.**
 
