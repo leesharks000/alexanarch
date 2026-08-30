@@ -2703,6 +2703,175 @@ refusal — the test is well-formed and runs the moment the texts are obtainable
 **Also unrun:** Bradley on Shakespeare, Heidegger on Hölderlin.
 
 
+---
+
+## 37. M48 — THE RELATION-TYPE BATTERY: FULL RESULTS, AND NO DISCRIMINATORY POWER
+
+*Added 2026-08-29. The complete numeric record of the class-characterisation
+programme, preserved so it need not be rebuilt. **No discriminatory power is
+itself a finding**, and the tables below are what a later attempt should start
+from rather than repeat.*
+
+## 37.1 THE CLASSES, AND THE ADMISSION STANDARD
+
+    1  MASTER-STUDENT DIRECT     embodied contact, attested by CONTEMPORARY
+                                 DOCUMENTS independent of textual resemblance
+    2  DISTANT CONSTRUCTED       a later writer constructs the relation
+    3  HETERONYMIC CONSTRUCTED   one maker constructs both positions
+
+**Admission standard (Round 35).** Ancient teacher-student attributions are
+regularly made centuries later and regularly **inferred from stylistic
+resemblance** — Dionysius argues the Isaeus–Demosthenes relation *from* the
+likeness of their prose. **Using such a pair to calibrate what stylistic likeness
+means in a teaching relation is circular.** Excluded on that ground:
+Isocrates→Isaeus, Isaeus→Demosthenes.
+
+    ADMITTED TO CLASS 1
+      Wundt → Titchener    Leipzig PhD 1892; Titchener translated Wundt
+      Freud → Jung         1907-13 correspondence (360 letters), IPA presidency
+      Albert → Aquinas     Dominican chapter records, Cologne 1248-52
+
+## 37.2 THE NINE-FEATURE BATTERY — definitions
+
+    F1  corpus size ratio (pupil/master)
+    F2  % of master's 300 most distinctive terms occurring in the pupil
+    F3  median density ratio across inherited terms
+    F4  % of inherited terms DENSER in the pupil
+    F5  % of pupil's distinctive terms ABSENT from the master
+    F6  type-token ratio delta        F7  hapax fraction delta
+    F8  top-1000 vocabulary Jaccard
+    F9  uniformity of density direction
+
+## 37.3 FULL RESULTS, SIZE-MATCHED (master 89,655 tok / pupil 217,762, 15 resamples)
+
+    pair                    F2      F3      F4     F5      F8      F9
+    Wundt → Titchener     98.3   0.618    26.1    7.3   0.349   0.739
+    Freud → Jung          99.7   0.740    26.1    1.7   0.508   0.739
+    Albert → Aquinas      90.7   1.013    50.4    3.7   0.451   0.509
+    PLATO → ARISTOTLE     92.0   0.679    30.6    2.7   0.378   0.694
+
+    resampling sd ≤ 1.2 on every cell.
+
+    TARGET vs CLASS 1        F2 INSIDE z=−1.06   F3 INSIDE z=−0.67
+                             F4 INSIDE z=−0.32   F5 INSIDE z=−0.66
+                             F8 INSIDE z=−0.87   F9 INSIDE z=+0.29
+
+**⚠ The band is ONE OUTLIER WIDE.** Against the two modern pairs only, class 1 is
+tight (F2 98.3–99.7, F3 0.618–0.740, F4 26.1) and **the target sits OUTSIDE on F2
+and F4.** Albert→Aquinas widens it — and that pair is **triangulated by the target
+itself**, since both members are commenting on Aristotle.
+
+## 37.4 UNMATCHED RESULTS — the wider survey (14 pairs)
+
+    pair                        class          F1     F2     F3     F4    F5     F8     F9
+    Isocrates → Isaeus          [excluded]   0.27   94.0  0.691   32.6  11.7  0.278  0.674
+    Isaeus → Demosthenes        [excluded]   8.80   96.7  0.665   25.9   3.0  0.384  0.741
+    Lysias → Isocrates          contemp.     2.18  100.0  0.712   32.3   0.7  0.404  0.677
+    Herodotus → Thucydides      contemp.     0.82   76.0  0.705   34.2  22.7  0.244  0.658
+    Thucydides → Xenophon       continuation 2.08   98.7  0.658   29.1   4.0  0.383  0.709
+    Herodotus → Josephus        distant      2.71   79.3  0.493   21.8  23.7  0.230  0.782
+    Thucydides → Philo          distant      3.91   91.3  0.346   20.1   7.7  0.223  0.799
+    Herodotus → Plotinus        distant      1.11   65.7  0.545   33.5  22.7  0.169  0.665
+    Homer → Apollonius          constructed  0.10   85.0  0.567   19.6   5.0  0.286  0.804
+    Hesiod → Apollonius         constructed  2.47   97.7  0.521   27.3  17.0  0.214  0.727
+    Homer → Hesiod              contemp.     0.04   83.7  0.587   23.9   1.5  0.277  0.761
+    Caeiro → Reis               heteronymic  2.54   96.6  0.477   15.5  16.7  0.353  0.845
+    Caeiro → Campos             heteronymic  6.12   99.6  0.609   20.2   9.3  0.380  0.798
+    Caeiro → Mora               heteronymic  2.58   89.3  0.481   23.9  22.7  0.274  0.761
+    Caeiro → Soares (unrelated) heteronymic  7.31   95.7  0.549   19.6  10.3  0.377  0.804
+    Either/Or A → B             heteronymic  1.03   98.7  0.981   48.0   1.0  0.535  0.520
+    A → signed                  heteronymic  0.85   94.7  0.438   10.9  34.0  0.280  0.891
+
+## 37.5 DEEPER MEASURES (size-matched)
+
+    G1 Spearman rank-corr · G2 bigram overlap · G3 master rare-word survival
+    G4 asymmetry (fwd−rev) · G5 function-word cosine
+
+    pair                    G1     G2     G3      G4     G5   fwd/rev
+    Wundt → Titchener    0.533   92.1   57.0    +5.7  0.991   98/93
+    Freud → Jung         0.684   98.8   78.8    +1.5  0.990  100/98
+    Albert → Aquinas     0.699   94.2   51.5    −5.0  0.963   91/96
+    PLATO → ARISTOTLE    0.570   89.7   56.9    −4.7  0.973   92/97
+
+    n-GRAM DEPTH        2-gram   3-gram
+    Wundt → Titchener     95.0     88.2
+    Freud → Jung         100.0     89.9
+    Albert → Aquinas      93.8     87.2
+    PLATO → ARISTOTLE     90.9     77.2
+
+## 37.6 COVERAGE GEOMETRY
+
+    COV = % of MASTER blocks with a pupil block nearer than the master's own
+          median internal spread (2,500-token blocks, top-150 features)
+
+    pair                       COV     REV     COV @size-matched (contiguous)
+    Albert → Aquinas          97.5    96.0      0.0
+    Freud → Jung              92.3    92.7     50.0
+    Wundt → Titchener         68.6    93.1     25.0
+    PLATO → ARISTOTLE         66.8    87.5     18.8
+    [het] Caeiro → Campos     20.0    51.5     20.0
+    [het] Caeiro → Reis        0.0    30.8      0.0
+    [het] Caeiro → Mora        0.0     0.0      0.0
+
+## 37.7 THE FOUR THINGS THAT KILLED FOUR LEADS — do not rebuild these
+
+**(a) SIZE.** Downsampling class-1 masters to Caeiro's 20k moved F3, F4, F5 and F9
+into the heteronymic range. Wundt→Titchener F5 goes 7.3 → **15.5**. **Novel-
+vocabulary rate and direction-uniformity are small-master artifacts.**
+
+**(b) LANGUAGE.** Every Greek pair scores 59–79 on trigram overlap; every non-Greek
+87–90. Greek's free word order makes exact n-gram repetition rarer **in any pair**.
+The apparent z = −10.35 was language. **Within Greek the target is at the TOP of
+the range** (78.6, above Hdt→Thuc 76.8 and Thuc→Xen 72.0).
+
+**(c) PERIOD AND DIALECT, NOT RELATION.** Lysias→Isocrates — **no teaching
+relation** — scores F2 100.0, F5 0.7, F8 0.404, **higher on every inheritance
+feature** than Isaeus→Demosthenes, which has one. Herodotus→Thucydides is
+*contemporary* and scores like the distance pairs, because Ionic against Attic.
+**And inside the Pessoan system, Caeiro→Soares — two positions with NO constructed
+relation — scores like Caeiro→Campos, which has one.**
+
+**(d) A BROKEN CONTROL, RECORDED.** The first size-control on COV used **random
+token sampling**, which destroys the block structure the measure reads; all four
+pairs went to 0.0. That was an artifact of the control. **Contiguous windows are
+required for any block-based measure.**
+
+## 37.8 THE FINDING
+
+> **Relation-type is not recoverable from lexical distribution.** Not pupillage,
+> not constructed lineage, not heteronymic construction. What these instruments
+> see is **period, dialect, genre, subject and corpus size**.
+
+**Consequently the target is not distinguishable from documented master-student
+pairs on any of fifteen features — and documented master-student pairs are not
+distinguishable from heteronymic construction once size is controlled.** The null
+runs in both directions and is not evidence for either hypothesis.
+
+**What it IS evidence for: the whole distributional family is the wrong
+instrument for this question.** M45's table gains no row from any of it, and
+should not.
+
+## 37.9 WHAT A LATER ATTEMPT SHOULD START FROM
+
+**Do not rebuild the battery.** The numbers are above; the four killers are in
+§37.7.
+
+**Constraints any new design must meet:**
+- size-matched masters throughout, **contiguous** not random
+- language held constant, or the measure demonstrated language-invariant
+- a same-language non-teaching pair as the control that must score LOW
+- and enough class members that a one-point gap survives or does not
+
+**The binding scarcity: Caeiro is 20,027 tokens and there is no more of him.** The
+only documented heteronymic system with an explicit master position cannot supply
+a size-matched master. **Either a second such system is found, or the heteronymic
+class cannot be characterised at scale.**
+
+**And the alternative direction, from Round 39 §158:** the interlock, if it
+exists, is **propositional** — M40's suppressed premise and Round 13's completions
+— and no distributional measure reaches it.
+
+
 ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
 **0.0258** — inside the M1 same-author band — while the best single heteronym is
 Campos at 0.0498, then Caeiro 0.0903, Reis 0.2205. **Pooled beats best individual
