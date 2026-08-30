@@ -2595,4 +2595,79 @@ control could establish is a **base rate for the parity as a form** across many
 pairs — and that needs many, not one.
 
 
+---
+
+# ROUND 20 — THE HETERONYMIC SEATS ARE TOO THIN, AND BOTH BLOCKERS MOVE
+
+*Added 2026-08-29. Feasibility, recorded as it landed rather than in a batch.*
+
+## 76. Why the distribution test could not run
+
+Lee's question: *in a heteronymic single-author corpus, would we see convergence
+across whole corpora rather than a fractional series distributed work-by-work?*
+
+**Not runnable on what is seated.** The coverage:
+
+    PESSOA        111,449 tok / 4 voices     ortonimo 48,636 · campos 41,142 ·
+                                             caeiro 16,123 · REIS 5,548
+    KIERKEGAARD   449,144 tok / 5 voices     Victor Eremita B 133k · A 128k ·
+                                             signed 119k · de Silentio 43k ·
+                                             Notabene 27k
+
+**Reis at 5,548 tokens cannot fill six functional slots whatever Pessoa did.** And
+Kierkegaard is missing **Constantin Constantius, Vigilius Haufniensis, Johannes
+Climacus, Anti-Climacus, Frater Taciturnus, Hilarius Bogbinder** — Climacus and
+Anti-Climacus being the pair the whole architecture turns on. Five voices of about
+a dozen.
+
+**A null here would measure the seat, not the corpus** — the same defect as the
+orator baseline (Round 14 §56). No opportunity denominator.
+
+## 77. KIERKEGAARD — T14's blocker is HALF WRONG
+
+    1920 Drachmann (samledevaerkerud*)   FRAKTUR — unusable, confirms T14
+    1901 edition (srenkierkegaard*goog)  ROMAN TYPE — usable with declared error
+
+**The 1920 failure diagnosed:** the OCR read blackletter as roman. *iffe* for
+*ikke*, *bette* for *dette*, *benne* for *denne*, *felb* for *selv*, *bære* for
+*være*, *forbi* for *fordi*. Danish-marker share **1.5%**.
+
+**The 1901 scan is roman type and reads correctly:** *ikke* 1737, *denne* 165,
+*hvad* 140, *fordi* 120. Marker share **3.6%**. Scan degradation is patchy —
+*ikkr* 266 against *ikke* 1737, ≈13% error on that token — so it is **usable for
+function-word and structural measures, unsafe for rare-lexeme measures**, the same
+declaration as Hyperides and Albert.
+
+**T14 recorded a blocker for the edition it tested and I generalised it to the
+author.** Second time today a recorded blocker turned out to be untested for the
+relevant case (cf. Theophrastus, M36).
+
+## 78. PESSOA — the full apparatus is retrievable
+
+**Current seat: 4 voices, from pt.wikisource categories.**
+**arquivopessoa.net lists 39 authorial positions**, each with its own text index:
+
+    Alberto Caeiro · Ricardo Reis · Álvaro de Campos · Fernando Pessoa ·
+    BERNARDO SOARES · Alexander Search · Barão de Teive · António Mora ·
+    Charles Robert Anon · Frederico Reis · Adolph Moscow · Faustino Antunes ·
+    Henry More · Horace James Faber · Coelho Pacheco · David Merrick ·
+    Carlos Otto · Gaudêncio Nabos · Dr. Pancrácio · António de Seabra …
+
+**Verified:** /autores/4 (Bernardo Soares) returns **504 text links**; individual
+texts fetch clean UTF-8 Portuguese, no OCR. **Soares alone is the *Livro do
+Desassossego*, absent from the seat entirely.**
+
+**This is the acquisition the distribution test needs** — not four voices but the
+full range, which is the only way to see *where and how* the divisions were
+distributed.
+
+## 79. Standing
+
+    Pessoa expansion       FEASIBLE NOW — 39 positions, clean text, no OCR
+    Kierkegaard expansion  FEASIBLE via the 1901 edition, with a declared
+                           error rate; the 1920 Fraktur stays unusable
+    the distribution test  BLOCKED until both are seated. Any null before then
+                           measures the seat.
+
+
 ∮ = 1
