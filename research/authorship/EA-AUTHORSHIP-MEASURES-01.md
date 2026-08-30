@@ -2228,13 +2228,12 @@ from tradition.** And:
                                 habit            transmission of   Round 24
                                                  arbitrary
                                                  procedure
-    reception capture           interpretive     later framing     ✗ WITHDRAWN
-      (M46 → M47)               vocabulary       displaces         — Freud on
-                                supplied by      earlier terms     Sophocles shows
-                                the other                          MORE capture
-                                position                           than any
-                                                                   heteronymic
-                                                                   case (M47 §36.7)
+    reception capture           interpretive     later framing     ⚠ OCCURS IN
+      (M46 / M47)               vocabulary       displaces         BOTH CLASSES;
+                                supplied by      earlier terms     NEITHER MODEL
+                                the other                          SHOWN TO EXPLAIN
+                                position                           THE PLATO CASE
+                                                                   BETTER (§36.9)
     abandoned-execution         continuation of  successor         ASSERTED;
       completion                own unfinished   recovers a        NO DENOMINATOR
                                 operation        shaped failure
@@ -2607,18 +2606,38 @@ prophecy, guilt** — all of which Freud barely touches, several at zero.
 **Sophocles wrote a play about an oracle and a curse. It is discussed as a play
 about repression and the unconscious.**
 
-**⚠ AND THIS IS THE RESULT THAT MATTERS FOR M46's DIAGNOSTICITY.** A securely
-distinct non-practitioner critic produces **more total capture than either
-documented heteronymic case.** Caeiro had 7 terms at zero; Freud has 14.
+**A securely distinct non-practitioner critic produces more total capture than
+either documented heteronymic case.** Caeiro had 7 terms at zero; Freud has 14.
 
-**Therefore reception capture does NOT discriminate heteronymy from
-critic-succession.** M46's ordering was an artifact of which controls had been run.
-**M46 is withdrawn as evidence for the configurational reading** — this time on a
-properly-shaped control rather than a mis-shaped one.
+**So capture is NOT DISTINCTIVE of heteronymy.** It occurs in both classes.
 
-**What survives is descriptive**: the Platonic corpus is discussed in Aristotle's
-terms, as *Oedipus* is discussed in Freud's. That is a real feature of both
-receptions and it says nothing about who wrote what.
+## 36.9 ⚠ AND I THEN OVERSTATED THE WITHDRAWAL — corrected
+
+On this result I recorded M46 as **withdrawn as evidence**. **That converted "not
+discriminating" into "explained by succession", and those are different claims.**
+
+What the Freud run establishes: the phenomenon is not unique to H. **What it does
+NOT address: whether the PLATO–ARISTOTLE instance is better explained by
+succession than by configuration.** Nothing in it speaks to that. By M45's own
+rule — *could is not a likelihood estimate* — showing that S pairs also produce
+capture establishes P(E | H_S) > 0 and nothing more. **I applied to my own measure
+exactly the reasoning M45 forbids applying to H_S.**
+
+**And the two cases differ in a way the withdrawal ignored.** Freud imports
+fourteen terms absent from Sophocles **and everyone knows they are Freud's** —
+*libido* is not mistaken for a Sophoclean concept. Aristotle's terms are **taken
+as Plato's own doctrine**. That difference is the original observation, and the
+measure never touched it: it counts distributions, not **attribution**.
+
+**CORRECTED STATUS:** *reception capture occurs in both classes; neither model has
+been shown to explain the Plato–Aristotle instance better.* The demand points both
+ways — at anyone claiming succession accounts for it, not only at the
+configurational reading for failing to prove it does.
+
+**What would settle it is a measure of ATTRIBUTION, not distribution:** whether the
+interpreter's terms are received AS the interpreter's or AS the interpreted
+position's own. That is a fact about reception history, and no instrument here
+reads it.
 
 ## 36.8 GINSBERG ← KEROUAC — BLOCKED
 
