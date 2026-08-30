@@ -3249,6 +3249,8 @@ that collapse at exactly that step.
 
 ---
 
+# ROUND 28 — ⚠ VOID AS A TEST OF THE OPERATOR (see Round 30). Retained for the announcement and expansion figures only.
+
 # ROUND 28 — WHAT A SCHOOL ACTUALLY PRODUCES: COMMENTARY, NOT FULFILLMENT
 
 *Added 2026-08-29. The counterintuitive claim, demonstrated in its general form
@@ -3354,6 +3356,8 @@ a default into a rate.
 
 ---
 
+# ROUND 29 — ⚠ VOID AS A TEST OF THE OPERATOR (see Round 30). The Theophrastus figure is a true fact about Greek citation convention and belongs there, not here.
+
 # ROUND 29 — DISTANCE, MEDIATION, AND THE PROXIMITY ANOMALY
 
 *Added 2026-08-29. The comparative measure named: it is not raw distance but
@@ -3439,6 +3443,93 @@ controlled. Greek philosophers may simply name predecessors less. **The
 Theophrastus check is available and unrun: he is the one Greek writer at the same
 proximity in the same tradition, and his naming rate for Aristotle would calibrate
 the convention directly.**
+
+
+---
+
+# ROUND 30 — THREE CORRECTIONS, AND THE DISAGGREGATED FRAME
+
+*Added 2026-08-29. Two rounds voided, the calibration standard corrected, and a
+methodological rule I had been enforcing backwards.*
+
+## 116. CORRECTION 1 — CATULLUS ANNOUNCES
+
+**My taxonomy was wrong at its own calibration standard.** Catullus 51 declares its
+relation to Sappho **three times over**:
+
+    the SAPPHIC STROPHE      the metre IS the citation
+    TRANSLATION FORM         it presents itself as a rendering
+    "LESBIA"                 the woman of Lesbos — and poem 51 is where the
+                             name first appears, INSIDE the Sappho translation
+
+**Corrected:**
+
+    pair                  announced?                    fit          scope
+    Matthew → Torah       YES — ἵνα πληρωθῇ formula     loose        verse targets
+    Catullus → Sappho     YES — metre, form, name      VERY CLOSE   one poem
+    Aristotle → Plato     NO                            close?       whole apparatus
+
+**Everyone who performs a transformation this close ANNOUNCES it.** The
+announcement is how the reader is told to read it as a transformation — Matthew by
+formula, Catullus by metre and name. **Aristotle does not.** That is the
+distinctive feature, and correcting the error sharpens it rather than weakening
+it.
+
+## 117. CORRECTION 2 — ROUNDS 28 AND 29 ARE VOID AS TESTS OF THE OPERATOR
+
+Round 28 established three properties — **unannounced, sequence-kept,
+transformed** — and I then measured **only announcement**, and announcement as
+**name-frequency**, which is not even the right form of A.
+
+**A is not "how often is the source named."** The spec was: **unannounced AT THE
+MOMENT OF GREATEST FUNCTIONAL INTERLOCK.** A is *conditional on Q and T* — it means
+something only at the loci where the machine engages. At *De anima* 424a,
+completing the abandoned wax block with the seal figure retained and **ἄνευ τῆς
+ὕλης** supplied, there is **no mention of Plato and no cross-reference to the
+Theaetetus.** That is the observable. **A corpus-wide naming rate cannot see it,
+and I ran a corpus-wide naming rate.**
+
+**And then I called the result a refutation.** That is the worse error. Producing a
+number that does not measure the variable and announcing it as a failure is not
+rigour — **it is the same fabrication as announcing a success, wearing rigour as
+costume.** Self-refutation is honest only when the thing refuted is the thing that
+was claimed. Round 29's Theophrastus figure refutes a naming-convention claim
+nobody made.
+
+**Q and T were never measured at all**, and the interlock lives in those.
+
+## 118. CORRECTION 3 — searching before designing is NOT removing blindness
+
+I had been treating the identification of correspondences as contamination, and
+reaching for mechanical proxies to avoid it. **That is backwards.**
+
+> **You cannot measure closeness of fit without first identifying the fit.**
+
+Searching for correspondences is **constitutive of the measure**, not a breach of
+it. **EA-UNLOCK-01 §5's reverse-engineering rule governs SELECTING WHICH TARGET TO
+SCORE after seeing the outcome. It does not and cannot forbid IDENTIFYING THE
+ALIGNMENT the score is computed over.** I collapsed those two, and that collapse is
+why I kept producing measures that measured nothing.
+
+## 119. THE FRAME — one variable at a time, as interpretive problems
+
+**No composite score.** Each property is its own question, asked separately of the
+school-inheritance model, and answered by reading and by cases:
+
+    Q1  Is UNANNOUNCED TRANSFORMATION characteristic of school inheritance?
+        — the Catullus correction says even the distant, unschooled case
+          announces. Does any pupil transform in silence?
+
+    Q2  Is SEQUENCE-PRESERVATION across an apparatus characteristic?
+        — commentary preserves sequence trivially, by following the text.
+          Does any pupil preserve sequence while NOT commenting?
+
+    Q3  Is TRANSFORMATION rather than EXPOSITION characteristic?
+        — Aquinas expands 4.61×. Catullus renders 16 lines for 17 with four
+          slots REPLACED. Does any pupil compress and replace?
+
+**Each is tractable as a philological question about specific cases. None requires
+a composite statistic, and the attempt to build one produced two void rounds.**
 
 
 ∮ = 1
