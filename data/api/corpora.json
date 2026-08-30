@@ -2,8 +2,8 @@
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
  "_generated": "2026-08-21",
- "seats": 57,
- "lines_total": 597643,
+ "seats": 59,
+ "lines_total": 883663,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -1818,6 +1818,53 @@
    "data": {
     "source": "https://www.alexanarch.org/data/corpora/pessoa-full/source.json",
     "manifest": "https://www.alexanarch.org/data/corpora/pessoa-full/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-09/01",
+   "corpus": "theophrastus",
+   "edition": "Theophrastus, First1KGreek editions (tlg0093)",
+   "license": "CC BY-SA (First1KGreek); underlying editions public domain",
+   "origin": {
+    "repo": "OpenGreekAndLatin/First1KGreek",
+    "commit": "7881c563436f52fb3550e6daa6df94be1b83b0e3",
+    "paths": [
+     "data/tlg0093"
+    ]
+   },
+   "language": "grc",
+   "lines": 16432,
+   "verified_loci": [],
+   "why_seated": "THE MISSING CONTROL. M30 measured the divide-flag-coin reflex grouping Plato and Aristotle at 10.5x and recorded three times that its diagnosticity was blocked because Theophrastus survives only as the Characters. That was an assumption, not a search: the philosophical works are in First1KGreek, checked out locally and never looked in. The blocker was false.",
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/theophrastus/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/theophrastus/MANIFEST.sha256"
+   }
+  },
+  {
+   "seat": "EA-CORPORA-10/01",
+   "corpus": "aquinas",
+   "edition": "Corpus Thomisticum (ed. E. Alarcón, Univ. de Navarra)",
+   "license": "free scholarly use per site terms; underlying critical texts as stated there",
+   "origin": {
+    "site": "corpusthomisticum.org",
+    "fetched": "2026-08-29",
+    "pages": 312,
+    "index": "iopera.html"
+   },
+   "language": "lat",
+   "lines": 269588,
+   "verified_loci": [
+    "Summa Theologiae — 'respondeo dicendum' 2,669; 'videtur quod' 4,227 (the article formulae)",
+    "Summa contra Gentiles — 'gentiles' 4,768",
+    "In octo libros Physicorum — 'Aristoteles' 95",
+    "De veritate — 'veritas' 423",
+    "⚠ CORRECTION: an initial prefix table mislabelled EVERY commentary. 'cme' was declared In Metaphysicam and is Sentencia super Meteora; 'cmp' is the Metaphysics; 'ccm' is De caelo; 'ctc' is the Ethics; 'cps' is IN PSALMOS, not De sensu; 'cdn' is Dionysius; 'cio' is Job. Caught by a failed locus probe ('metaphysic' returning 0 in the file labelled In Metaphysicam) and rebuilt from each text's own header."
+   ],
+   "why_seated": "The externally-secured S-class control M36a demanded and no Greek figure could supply. Thomas Aquinas is attested by canonization proceedings, university registers, papal bulls and Dominican chapter records — evidence with no relation to textual style, doctrinal similarity, or any succession tradition under test. He cannot be inside a Plato-Aristotle configuration under any extension of the hypothesis.",
+   "data": {
+    "source": "https://www.alexanarch.org/data/corpora/aquinas/source.json",
+    "manifest": "https://www.alexanarch.org/data/corpora/aquinas/MANIFEST.sha256"
    }
   }
  ]
