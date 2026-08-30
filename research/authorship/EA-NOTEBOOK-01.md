@@ -3532,4 +3532,82 @@ school-inheritance model, and answered by reading and by cases:
 a composite statistic, and the attempt to build one produced two void rounds.**
 
 
+---
+
+# ROUND 31 — CHARACTERISING DIRECT INHERITANCE, TARGET NOT IN VIEW
+
+*Added 2026-08-29. The design corrected: **the blindness belongs on Plato–Aristotle,
+not on fit-identification.** Characterise the classes from cases where the relation
+is known; only afterwards ask where the target falls. This is EA-RELFORM-01 §5's
+order of operations, specified this morning and followed for the first time here.*
+
+## 120. The case
+
+**ISAEUS → DEMOSTHENES.** Direct teaching attested by Dionysius of Halicarnassus
+and the *Lives of the Ten Orators*. Fourth century BCE, Greek, same culture. Isaeus
+28,022 content tokens; Demosthenes 246,565.
+
+**Plato and Aristotle were not examined in producing what follows.**
+
+## 121. FOUR CHARACTERISTICS OF DIRECT EMBODIED INHERITANCE
+
+**C1 — THE MASTER IS NOT NAMED.**
+**Ἰσαῖος occurs ZERO times in 246,565 content tokens of Demosthenes.** *(A first
+count returned 162; checked, and every hit was a form of ἴσος/ἰσόω. Corrected
+before reporting.)* The teaching relation is externally attested and textually
+invisible.
+
+→ **Naming is not how direct inheritance shows itself.** This is the finding that
+retroactively explains why Rounds 28–29 measured nothing: naming rates track
+*scholastic citation convention*, not inheritance.
+
+**C2 — THE APPARATUS IS INHERITED WHOLE BUT DILUTED.**
+
+    term         Isaeus/10k   Demosthenes/10k   ratio
+    κληρ-             94.57            10.10     0.11
+    ἀγχιστ-           14.27             0.41     0.03
+    γνήσι-            28.19             1.66     0.06
+    διαθηκ-           38.18             4.50     0.12
+    ἀμφισβητ-         34.26             3.97     0.12
+    μαρτυρ-          142.74            57.59     0.40
+
+Every technical term of the master appears in the pupil at **3–30× lower
+density** — while **absolute counts stay comparable** (inheritance cases 265 vs
+249; wills 107 vs 111) across a corpus **8.8× larger**.
+
+→ **The pupil carries the whole apparatus into a WIDER FIELD.** Dilution, not
+selection.
+
+**C3 — THE OBJECTS PERSIST.** He is still trying inheritance cases.
+→ Direct inheritance transmits **the subject**, not only the method.
+
+**C4 — EXPANSION.** 8.80× the master's corpus — matching Aquinas at 4.61×.
+→ **Pupils write more than masters.**
+
+## 122. What this class-characterisation is FOR
+
+**Only now, and only after more cases, may the question be asked: does the
+Plato–Aristotle relation fit this profile or not?**
+
+The four characteristics are stated as properties of a *known* relation. They were
+derived without reference to the target. **Whether the target matches them is a
+separate question, to be asked afterwards, and not asked here.**
+
+**NEXT CASES NEEDED FOR THE CLASS** — each seated or obtainable, each with the
+relation externally attested:
+
+    Albert → Aquinas            partly characterised (expansion 4.61×,
+                                citation-heavy — but Latin convention)
+    Freud → Jung                correspondence extant; break and RENAMING
+    Husserl → Heidegger         assistant then successor; renaming (Dasein)
+    Williams → Ginsberg         master wrote the pupil's introduction
+    Boas → Mead · Schoenberg → Berg
+
+**And the distance class needs the same treatment**, from Sappho→Catullus,
+Hosea→Matthew, Catullus→Ginsberg, Aristotle→Aquinas.
+
+**The discriminating features must come OUT of those two characterisations.
+Nothing may be imported from the Greek pair.**
+
+
 ∮ = 1
