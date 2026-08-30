@@ -4220,4 +4220,132 @@ enough members that a one-point gap on F4 either survives or does not.** That is
 design change, not a new instrument.
 
 
+---
+
+# ROUND 39 — DEEPER MEASURES, THREE LEADS, THREE CONTROLS THAT KILLED THEM
+
+*Added 2026-08-29. Everything in this round is a null. Recorded because each null
+cost a control that is worth having.*
+
+## 153. FULLY SIZE-MATCHED BATTERY vs THE DOCUMENTED PAIRS
+
+Every master → 89,655 tokens, every pupil → 217,762, 15 resamples:
+
+    pair                    F2      F3      F4     F5      F8      F9
+    Wundt → Titchener     98.3   0.618    26.1    7.3   0.349   0.739
+    Freud → Jung          99.7   0.740    26.1    1.7   0.508   0.739
+    Albert → Aquinas      90.7   1.013    50.4    3.7   0.451   0.509
+    PLATO → ARISTOTLE     92.0   0.679    30.6    2.7   0.378   0.694
+
+**The target falls INSIDE the documented range on all six features**, |z| ≤ 1.06.
+Resampling sd ≤ 1.2, so the values are stable.
+
+**⚠ But the band is one outlier wide.** Against the two modern pairs only, class 1
+is tight — F2 98.3–99.7, F3 0.618–0.740, F4 26.1 — and the target sits **outside**
+on F2 (92.0) and F4 (30.6). **With n=3 the verdict depends on keeping
+Albert→Aquinas — and that pair is triangulated by the target itself, since both
+members are commenting on Aristotle.**
+
+## 154. FIVE DEEPER MEASURES — one lead
+
+    G1 Spearman rank-corr · G2 bigram overlap · G3 master rare-word survival
+    G4 asymmetry (fwd−rev) · G5 function-word cosine
+
+    pair                    G1     G2     G3      G4     G5   fwd/rev
+    Wundt → Titchener    0.533   92.1   57.0    +5.7  0.991   98/93
+    Freud → Jung         0.684   98.8   78.8    +1.5  0.990  100/98
+    Albert → Aquinas     0.699   94.2   51.5    -5.0  0.963   91/96
+    PLATO → ARISTOTLE    0.570   89.7   56.9    -4.7  0.973   92/97
+
+**G1, G3, G4, G5 all place the target INSIDE. Only G2 separated** — bigram
+overlap, z = −1.90 — and at trigram depth the gap widened to **z = −10.35**
+(class 1 87.2–89.9; target 77.2).
+
+## 155. ⚠ THE GREEK CONTROL KILLS G2
+
+    GREEK, trigram overlap          NON-GREEK
+    Plato → Aristotle       78.6    Wundt → Titchener   88.2
+    Plato → Plotinus        78.9    Freud → Jung        89.9
+    Herodotus → Thucydides  76.8    Albert → Aquinas    87.2
+    Plato → Philo           75.8
+    Thucydides → Xenophon   72.0
+    Herodotus → Plotinus    59.2
+
+**Every Greek pair 59–79; every non-Greek 87–90.** Greek's free word order and
+heavy inflection make exact n-gram repetition rarer **in any pair whatsoever**.
+The z = −10.35 was a language artifact.
+
+**And within Greek the finding INVERTS:** the target at 78.6 is at the **top** of
+the Greek range — above contemporaries (Hdt→Thuc 76.8) and above a continuation
+(Thuc→Xen 72.0). The three Greek philosophical-prose pairs — Plato→Philo 75.8,
+Plato→Plotinus 78.9, Plato→Aristotle 78.6 — are **indistinguishable**.
+
+## 156. COVERAGE GEOMETRY — the logos rather than the hyle
+
+**The question Lee posed: what is a master-student relation as a MATERIAL
+CONDITION, not a lexical residue?** One answer is **coverage**: a pupil takes his
+master's ground *and extends it* — containment. Designed positions *divide*
+ground — partition. **Same vocabulary either way; different shape.**
+
+    COV = % of MASTER blocks having a pupil block nearer than the master's own
+          median internal spread
+
+    pair                       COV     REV
+    Albert → Aquinas          97.5    96.0
+    Freud → Jung              92.3    92.7
+    Wundt → Titchener         68.6    93.1
+    PLATO → ARISTOTLE         66.8    87.5
+    ───────────────────────────────────────
+    [het] Caeiro → Campos     20.0    51.5
+    [het] Caeiro → Reis        0.0    30.8
+    [het] Caeiro → Mora        0.0     0.0
+
+**Pupils cover 69–98% of the master's ground; heteronymic disciples cover 0–20%.**
+The first clean separation any measure has produced.
+
+## 157. ⚠ AND THE SIZE CONTROL DAMAGES IT — with a methodological note
+
+**First attempt at the control was WRONG and is recorded as such.** I downsampled
+by *random token sampling*, which destroys the very block structure the measure
+reads — bags of shuffled tokens have no internal geometry. All four pairs went to
+0.0, which is an artifact of my control, not a result.
+
+**Redone with CONTIGUOUS windows** (master 20k, pupil 104k, 8 windows):
+
+    pair                  COV full   COV matched
+    Freud → Jung              92.3          50.0
+    Wundt → Titchener         68.6          25.0
+    PLATO → ARISTOTLE         66.8          18.8
+    Albert → Aquinas          97.5           0.0
+    ─────────────────────────────────────────────
+    [het] Caeiro → Campos     20.0          20.0
+    [het] Caeiro → Reis        0.0           0.0
+
+**The separation largely collapses.** Albert→Aquinas falls to 0.0 — below every
+heteronymic pair — and Plato→Aristotle to 18.8, inside the heteronymic band. **COV
+is strongly size-dependent and cannot be used at these sizes.**
+
+**What survives is narrow:** at full corpus size the ordering is clean and the
+heteronymic pairs are extreme. Whether that ordering means anything requires
+**master corpora of comparable size**, which the Pessoan material cannot supply —
+Caeiro is 20k and there is no more of him.
+
+## 158. STANDING AFTER THREE NULLS
+
+    lexical battery, size-matched     target INSIDE the documented range
+    n-gram formulaic inheritance      language artifact; within Greek the
+                                      target is at the TOP of the range
+    coverage geometry                 clean at full size, collapses under
+                                      size-matching
+
+**Nothing measured distinguishes the target from documented master-student pairs.
+Nothing measured distinguishes master-student pairs from heteronymic construction
+once size is controlled.** The instruments see period, dialect, genre, subject, and
+corpus size.
+
+**The interlock, if it exists, is not in the distributions.** It is in M40's
+propositional structure and Round 13's completions — neither of which any measure
+built today can reach.
+
+
 ∮ = 1
