@@ -1773,6 +1773,117 @@ stone.**
 ---
 
 
+---
+
+## 30. M41 — THE CLASSICAL LAYER BENEATH OPERATIVE NUMISMATICS
+
+*Added 2026-08-29. A cross-reference entry: today's coin census (M35) is the
+classical substrate of an archive framework built downstream of it. Recorded so
+the two are not developed separately again.*
+
+**What the archive already held.** Deposit **#642** established *operative
+numismatics*: a token compresses image, superscription, issuing authority, value,
+and **the power to include or exclude from circulation** — with two rival regimes,
+Rev 13's mark (externally authorized, publicly calculable, coercive) against Rev
+2:17's **ψῆφον λευκήν** bearing a new name *ὃ οὐδεὶς οἶδεν εἰ μὴ ὁ λαμβάνων*.
+Deposit **#610** gives compressed portraiture and the mint's design surface;
+**#126** gives the inverse principle; **#165** the Pergamon counter-archive.
+
+**What today supplies that those lacked.** The framework was built on Revelation
+and on modern currency. **Plato and Aristotle already run the assay vocabulary on
+λόγοι and on persons** (M35): κίβδηλος 13/4, δόκιμος 28/24, παράσημος 1/4, with
+*Rep.* 507a handing over a possibly **κίβδηλον λόγον**, *Laws* 742a legislating a
+currency **ἔντιμον** within and **ἀδόκιμον** without, and *NE* 1165a grading
+**personation above coin-forgery**. Operative numismatics has a classical layer
+and was constructed without it.
+
+**Three joints, recorded:**
+
+**(a) Rev 2:17 is the σύμβολον in token form.** A stone whose name is known only
+to the receiver is authenticated **by reception**, not by public calculability —
+the same structure as M40's claim authenticated **by performance** rather than
+declaration, and as *Letter* XIII's σύμβολον, *manufactured by agreement rather
+than found*.
+
+**(b) #126's inverse principle is M35's standing frame, independently derived.**
+*The surface stamp is institutional; the underlying inscription is operative* — γνήσιος-as-standing
+against γνήσιος-as-paternity, reached from modern academic publishing rather than
+from Isaeus.
+
+**(c) The Scepsis books do double duty, and neither deposit knew of the other.**
+#165 reads the concealment of the Aristotelian books at Scepsis as preservation
+under institutional pressure. **M36** establishes the same chain from the opposite
+end — Theophrastus's library, Neleus, Scepsis, Apellicon, Sulla, Andronicus — and
+uses it to **void Theophrastus as a control**, because the Aristotelian and
+Theophrastan texts share one transmission channel. Same event: in one place a
+model of preservation, in the other the reason no Aristotelian control can be
+independent.
+
+**Also noted:** deposit **#701, "Snub-Poemed"** — a portrait of Socrates made of
+the questioner's own text, titled on the fusion of *snub-nosed* with *being
+poemed* — predates today's finding that Plato's snubs are **namings** and
+Aristotle's are **definings** (M35, M34).
+
+---
+
+## 31. M42 — READING *οὔτε ὅ τι ἐνδέχεται συλλογίσασθαι διαιρούμενοι ξυνίεσαν* THROUGH THE CONFIGURATION
+
+*Added 2026-08-29. An interpretation, marked as one throughout, of a sentence
+whose documentary content is already established at §0A.1b.*
+
+**The sentence.** *APr* I.31: the users of division
+
+> **οὔτε ὅ τι ἐνδέχεται συλλογίσασθαι διαιρούμενοι ξυνίεσαν**
+
+*did not understand **what can be syllogized by dividing**.*
+
+**What is established** (§0A): the complaint is not that they had no apparatus. It
+concedes an apparatus and faults its **scope** — they possessed the operation and
+did not grasp its range of possible conclusions.
+
+**The reading.** Under the configurational hypothesis the sentence is about the
+range of objects division can be applied to, and the object they missed is the
+one running the division.
+
+Plato's divisions in the four naming-gap works are run on **capacities and
+positions**, not only on kinds: the *Sophist* on the appearer-who-is-not, the
+*Statesman* on **the self-commanding as against those relaying ἀλλότρια νοήματα**
+(M31), the *Phaedrus* holding division *ἵνα οἷός τε ὦ λέγειν τε καὶ φρονεῖν* — in
+order to be able to speak and to think.
+
+And the companion finding (Notebook §63) supplies what division of *that* object
+yields: *De An.* II.2 asks whether the parts of soul are **χωριστὸν λόγῳ μόνον ἢ
+καὶ τόπῳ** — separable in account only, or also in place — and I.4 records that
+divided living things **live**, *τὴν αὐτὴν ψυχὴν ἔχειν τῷ εἴδει*, having the same
+soul in form.
+
+**So on this reading the missed conclusion is:** *a soul can be syllogized by
+dividing* — separated **κατὰ λόγον** into positions that are really distinct,
+really alive, the same in form, and not several substances. **One in actuality,
+many potentially.** Heteronymy would then be the actualization of a division the
+practitioners performed on everything except themselves.
+
+**Why the fit is exact where it is exact.** It answers the *Republic* 395b /
+*Symposium* 223d problem with a mechanism rather than an image (EA-KERMA-01): not
+parts that fail to resemble but fit, but **one actuality divided by account**. And
+it makes the complaint specific rather than generic — not *they divided badly*
+but *they did not see what this operation could conclude about the one performing
+it.*
+
+**⚠ STATUS — INTERPRETATION, AND THE WEAKEST LINK IS NAMED.** Aristotle's stated
+complaint at I.31 is **technical**: division begs what it must prove
+(*αἰτεῖται*) and takes the universal as middle term. **He gives his own reason,
+and it is not this one.** The configurational reading supplies a different content
+for "what they failed to see" than the content Aristotle supplies four lines
+later.
+
+That is a real cost and it is charged here: the reading requires either that the
+technical complaint and the configurational one are compatible, or that the stated
+reason is the exoteric form. **Neither is demonstrated.** Recorded as reading, at
+the same epistemic level as EA-KERMA-01, under the standing rule — **the corpus
+supplies the structure; it does not perform the application.**
+
+
 ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
 **0.0258** — inside the M1 same-author band — while the best single heteronym is
 Campos at 0.0498, then Caeiro 0.0903, Reis 0.2205. **Pooled beats best individual
