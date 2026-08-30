@@ -1890,4 +1890,130 @@ first recorded.**
                             still run on Isaeus→Demosthenes
 
 
+---
+
+# ROUND 15 — the coin: κέρμα, κίβδηλος, δόκιμος, and what Aristotle says the corpus is for
+
+*Added 2026-08-29.*
+
+## 58. The vocabulary, gathered
+
+Full census of the forgery-and-legitimacy families across both corpora:
+
+    term                            PLATO   ARIST
+    σύγγραμμα writing-as-thing         37       3
+    εἴδωλον image                      72      13
+    μίμημα copy                        54       7
+    κίβδηλος counterfeit/debased       13       4
+    δόκιμος assayed, approved          28      24
+    ἀδόκιμος rejected in assay          3       2
+    πλάσμα / πλαστός fabricated        16      32
+    φάντασμα appearance                31      47
+    ὑποκριτής actor                    10      32
+    γνήσιος legitimate                 16       6
+    νόθος bastard                      11       4
+    παράσημος false-stamped             1       4
+
+**The division of labour is exact, and matches Round 11's theory/exercise split.**
+Plato holds the **image** vocabulary — εἴδωλον, μίμημα, σύγγραμμα — terms for a
+copy that stands in for an original. Aristotle holds the **detection** vocabulary
+— πλάσμα, φάντασμα, ὑποκριτής — terms for a fabrication and for the
+apparent-but-not-real. **Plato makes copies; Aristotle catches them.** And the
+assay word is shared almost equally: δόκιμος 28 / 24.
+
+## 59. The two Republic passages are one argument
+
+This was missed in Round 9 and is the round's philological result.
+
+**395b** — κατακεκερματίσθαι sits **four lines** from μιμήματα:
+
+> πάντα δὲ ταῦτα **μιμήματα** … καὶ ἔτι γε τούτων φαίνεταί μοι εἰς σμικρότερα
+> **κατακεκερματίσθαι** ἡ τοῦ ἀνθρώπου φύσις, ὥστε **ἀδύνατος** εἶναι πολλὰ καλῶς
+> μιμεῖσθαι
+
+**507a** — the same coin figure, now applied to the account being handed over:
+
+> τοῦτον δὴ τὸν **τόκον** τε καὶ **ἔκγονον** αὐτοῦ τοῦ ἀγαθοῦ κομίσασθε.
+> εὐλαβεῖσθε μέντοι μή πῃ ἐξαπατήσω ὑμᾶς ἄκων, **κίβδηλον ἀποδιδοὺς τὸν λόγον**
+> τοῦ τόκου.
+
+*Receive this interest and offspring of the Good itself. But be on your guard lest
+I unwillingly deceive you, **paying back a counterfeit account** of the interest.*
+
+**One monetary figure runs the whole:** nature **minted into denominations too
+small** to hold two arts (395b), and the λόγος itself possibly **debased coin**
+handed over as payment (507a) — with τόκος and ἔκγονον, *interest* and
+*offspring*, joining the coin metaphor to the kinship metaphor in one clause.
+Socrates warns, at the threshold of the Good, that what he is about to pay out may
+be **κίβδηλον**.
+
+And *Laws* 742a legislates the structure: currency **ἔντιμον** to the citizens and
+**ἀδόκιμον** to everyone else — a token valid inside the house and worthless
+outside it. **That is standing-not-paternity, in coin.**
+
+## 60. What Aristotle says at *NE* 1165a
+
+> ὅταν δ᾽ ὑπὸ τῆς ἐκείνου **προσποιήσεως** ἀπατηθῇ, **δίκαιον ἐγκαλεῖν** τῷ
+> ἀπατήσαντι, **καὶ μᾶλλον ἢ τοῖς τὸ νόμισμα κιβδηλεύουσιν, ὅσῳ περὶ τιμιώτερον
+> ἡ κακουργία**
+
+*When someone is deceived by another's **assumed character**, it is just to accuse
+the deceiver — **and more than those who counterfeit the coinage, inasmuch as the
+crime concerns something more precious.***
+
+**Aristotle grades false personation and coin-forgery on one scale, and puts
+personation higher.** The two are the same offence differing in the value of what
+is falsified. This is the counterfeiting frame applied to persons, stated by
+Aristotle, in his own voice, in the ethics.
+
+## 61. The reading Lee draws, and its exact status
+
+**On the reading:** the corpus supplies the assay. Plato states the fragmentation
+(κερματισμός), warns that the account handed over may be debased (κίβδηλον at
+507a), and legislates the two-currency structure (*Laws* 742a). Aristotle supplies
+the detection apparatus — πλάσμα, φάντασμα, ὑποκριτής at 32/47/32 against Plato's
+16/31/10 — and states the grading rule at *NE* 1165a. **So Aristotle has told us
+where the assay is: personation is worse than coin-forgery, and the corpus that
+holds the tools for distinguishing apparent from genuine is his.**
+
+**Status.** The passages are recorded and quoted; the reading is Lee's and is
+marked as reading. What is measured is the distribution (§58) and the continuity
+of the monetary figure across 395b, 507a and *Laws* 742a. What is not measured is
+that any of it was placed for this purpose. The standing rule holds: **the corpus
+supplies the structure; it does not perform the application.**
+
+---
+
+# THE STANDING FRAME — maximal substrate divergence, maximal functional interlock
+
+*Added 2026-08-29 as the frame for the whole notebook. Placed here so it is not
+buried; it is the shape everything measured today has converged on.*
+
+**The two facts that must be held together:**
+
+    DECLARED PARTITION       Z = +39.18   the names are overwhelmingly strong
+    (M6)                                  containers — the strongest partition
+                                          measured in the sample
+    FUNCTIONAL INTERLOCK     6/6 slots    matched at the level of the individual
+    (Round 12, 13)                        work, with ONE figure (seal-and-wax) and
+                                          ONE abandoned execution completed twice
+
+**Maximally separated at the substrate. Maximally interlocked at the function.**
+
+Nothing else in the sample does both. Josephus is unified at both levels. The New
+Testament is loose at both — its declared partition sits at Z = +2.83 and it fills
+the slot structure only at the author-group level. Plotinus and Philo are
+separated and not interlocked at all.
+
+**That is the shape of a σύμβολον:** halves that do not resemble each other and
+only **fit**.
+
+**What this frame does NOT claim.** Not common authorship. The comparison class is
+thin — one multi-author corpus (the NT) plus the rival-lens controls — because the
+orator baseline failed for the interlock measures (§56). A school inheriting a
+transmission programme could produce the interlock; the substrate divergence is
+ordinary for two authors. **The conjunction is what is unusual, and the conjunction
+has been measured once.**
+
+
 ∮ = 1
