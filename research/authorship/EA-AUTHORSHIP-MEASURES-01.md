@@ -2895,6 +2895,126 @@ Notebook Round 40**, where it is also **corrected**: the earliest attestation is
 better than this entry originally claimed.
 
 
+---
+
+## 39. M50 — NON-IDENTIFIABILITY: THE MASTER-STUDENT RELATION IS NOT EVIDENCE OF MAKER PLURALITY
+
+*Added 2026-08-29. The culminating methodological result of the session. It
+converts a day of failed classifiers into a positive finding, and it is the frame
+the paper should carry.*
+
+## 39.1 THE OPPOSITION WAS WRONGLY DRAWN ALL DAY
+
+**Master-student and heteronymic configuration are not competing relation-types.**
+A heteronymic configuration can **itself instantiate** a master-student relation
+between its positions. **Pessoa is the existence proof**: Caeiro is constructed as
+*mestre*, Reis and Campos and Mora as *discípulos*, and Pessoa states the school
+structure himself.
+
+    H_S    M = 2    R = master → student
+    H_H    M = 1    R = master-POSITION → student-POSITION
+
+**The surface relation is identical; only the latent maker-count differs.**
+
+If an observable measures the relation,
+
+    O = f(R)
+
+then **there may be nothing in O from which to recover M.** That is not a defect
+of any particular instrument. It is a property of the inference.
+
+## 39.2 WHAT THE DAY'S MEASUREMENTS ACTUALLY SHOWED
+
+    fifteen distributional features, size-matched     classes OVERLAP
+    n-gram formulaic inheritance                     language artifact
+    coverage geometry                                collapsed under size control
+    reception capture                                occurs in BOTH classes
+    attribution tracking                              occurs in BOTH classes
+
+**And in the sharpest single case:** under proper size-matching, Plato→Aristotle
+sits at COV 18.8 — **inside the heteronymic range** — while Albert→Aquinas drops
+to 0.0, **below every heteronymic pair.** The documented master-student pair falls
+outside the master-student band on the measure built to define it.
+
+**We were repeatedly asking a measure of the POSITIONS to report how many BODIES
+stood behind them.**
+
+    position structure  ⇏  maker cardinality
+
+**A single person can generate genuine asymmetry, inheritance, criticism,
+development, mastership, discipleship, stylistic separation, and differing
+conceptual commitments.** Pessoa did. So finding any of those between Plato and
+Aristotle does not distinguish
+
+    A_person → B_person     from     A_position → B_position.
+
+## 39.3 THE CONSEQUENCE FOR THE RECEIVED ACCOUNT
+
+> **The received account cannot use "master and student" to EXPLAIN the textual
+> architecture and simultaneously use that architecture as EVIDENCE that there
+> were two makers.**
+
+It obtains the master-student relation from external history as a **prior
+historical claim** — which is legitimate, and which M45 concedes without argument.
+**But the prior cannot then be recovered from the texts it was used to explain.**
+
+**The exact form of the answer to the standing objection:**
+
+> *These correspondences are what master and student do.*
+>
+> **So are they what one maker's constructed master and student do. We tested for
+> a textual distinction across fifteen distributional features, five deeper
+> measures, coverage geometry, reception capture and attribution, with size,
+> language and genre controlled. We did not find one. What, then, in this evidence
+> establishes that the relation is EMBODIED rather than CONSTRUCTED?**
+
+## 39.4 THE FORMULATION
+
+> **INHERITANCE IS OBSERVABLE. EMBODIMENT IS NOT.**
+
+The texts can show that one position inherits from another. **They cannot, merely
+by showing inheritance, tell you whether the two positions occupy two bodies.**
+That must come from elsewhere.
+
+## 39.5 WHAT COULD BEAR ON M RATHER THAN R
+
+Three kinds of evidence, and only three:
+
+**(a) EXTERNAL PHYSICAL-HISTORICAL.** Independently dated copies of Platonic works
+demonstrably preceding Aristotle's possible composition; independently attested
+simultaneous physical activity; autograph or provenance evidence; genuinely
+independent documentary biography. **This is why chronology remains potentially
+lethal rather than merely another textual feature** — and why M39's stone matters
+while M39's negative claim did not.
+
+**(b) EXPLICIT PROVENANCE CLAIMS.** **This is where M40 is categorically different
+from the whole battery.** It does not ask whether the two behave like master and
+pupil. It finds Aristotle **defining the succession relation** — material received
+from predecessors and advanced piecemeal, *οἷον ἐκ διαδοχῆς* — and then **denying
+that relation** of the syllogizing which *APr* I.31 itself locates inside Platonic
+division. **That does not establish one maker. It is evidence about which side of a
+provenance relation Aristotle places the Platonic operation on.**
+
+**(c) PROPOSITIONAL COMPLETION.** Not *how similar are these texts* but *what
+exact operation does one position declare impossible, and what does the other
+subsequently make possible* — Round 13's abandonments, with the shared figure and
+the supplied mechanism.
+
+## 39.6 THE RESULT AS IT SHOULD BE STATED
+
+> **No measured textual-distributional property recovered the distinction between
+> documented embodied master-student succession and documented heteronymic
+> master-disciple construction. Once size, language and genre were controlled, the
+> classes overlapped. This is not evidence for common authorship. It demonstrates
+> that the master-student relation, considered as a textual configuration, is not
+> itself evidence of maker plurality.**
+
+**M45's table gains no row from the distributional work — and the received model's
+row on "chronology, biography, prima facie partition" is now the ONLY place where
+its advantage lives.** That advantage is real, is conceded, and is the whole of
+what it has.
+
+
 ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
 **0.0258** — inside the M1 same-author band — while the best single heteronym is
 Campos at 0.0498, then Caeiro 0.0903, Reis 0.2205. **Pooled beats best individual
