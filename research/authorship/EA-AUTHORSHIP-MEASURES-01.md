@@ -1409,6 +1409,86 @@ whose corpus denies its own authorship in his name, but Aristotle, who has a
 stone.**
 
 
+---
+
+## 29. M40 — THE PRIORITY CLAIM: ARISTOTLE DISCLAIMS ΔΙΑΔΟΧΗ IN HIS OWN VOICE
+
+*Added 2026-08-29. The first passage where Aristotle states his relation to
+predecessors directly, and states it as NOT inheritance. Includes an error of mine
+recorded as an error.*
+
+**The posture problem.** A student shaped by a master is legitimate **by the
+shaping**. διαδοχή *is* the credential; an acknowledged heir does not litigate his
+standing, he simply has it. But the Aristotelian corpus behaves like a **claimant
+in a contested estate** — building a detection apparatus (M35), cataloguing the
+master's definitional faults inside a methodology textbook (four times, *Topica*,
+Round 14), refusing to lend the founder's mark to a variable (M34), and completing
+what was **abandoned** rather than extending what was finished (Round 13).
+
+**The closing of the *Sophistici Elenchi*, SE 183b–184b, states it outright.**
+
+Aristotle first describes what inheritance looks like, using the succession word:
+
+> οἱ δὲ νῦν εὐδοκιμοῦντες παραλαβόντες παρὰ πολλῶν **οἷον ἐκ διαδοχῆς** κατὰ μέρος
+> προαγαγόντων οὕτως ηὐξήκασι, **Τισίας** μὲν μετὰ τοὺς πρώτους, **Θρασύμαχος** δὲ
+> μετὰ Τισίαν, **Θεόδωρος** δὲ μετὰ τοῦτον
+
+Rhetoric grew *as if by succession*, in parts, from many named hands.
+
+Then he denies it of his own subject:
+
+> ταύτης δὲ τῆς πραγματείας **οὐ τὸ μὲν ἦν τὸ δ᾽ οὐκ ἦν προεξειργασμένον, ἀλλ᾽
+> οὐδὲν παντελῶς ὑπῆρχεν** … περὶ δὲ τοῦ συλλογίζεσθαι **παντελῶς οὐδὲν εἴχομεν
+> πρότερον ἄλλο λέγειν**
+
+*It is not that part was worked out and part was not: **there was absolutely
+nothing.*** And he closes by asking for a verdict — *λοιπὸν ἂν εἴη πάντων ὑμῶν
+ἔργον … τοῖς δ᾽ εὑρημένοις **πολλὴν ἔχειν χάριν*** — pardon what is omitted, give
+much gratitude for what is found.
+
+**A plea to judges, in the treatise on distinguishing the genuine from the
+apparent, disclaiming διαδοχή for itself.**
+
+**M40a — why the posture is the datum.** A passed-over student would claim
+succession *harder*, since succession is the ground he lost on. Aristotle
+disclaims it and asks to be judged on the **finding** instead. That is original
+title asserted against possessors, not an heir accepting an estate.
+
+**Scope, stated exactly.** The *Elenchi* makes the priority claim of the
+**syllogistic only**. The rest of the corpus behaves the same way — completions,
+detection apparatus, assay vocabulary, the excluded twin — **without saying so**.
+What the two readings dispute is whether the claim is true of one subject and
+false of the rest, or is the position the whole corpus occupies.
+
+**M40b — ⚠ AN ERROR OF MINE, RECORDED AS ONE.** In presenting this I wrote, as
+background fact, that *Aristotle did not get the Academy; Speusippus did, then
+Xenocrates; Aristotle left Athens* — offering it as the ordinary explanation of
+the claimant posture.
+
+**That is a received-partition claim imported as fact, which M33 and M36 exist to
+forbid.** Speusippus's succession is attested by the same tradition whose
+partitions are under test. And under M35's frame it is not a fact about persons at
+all: **taking possession of a corpus is what a standing claim looks like from the
+outside**, standing is conferred by acknowledgment and is re-litigable, and a
+successful claim tells you nothing about who made the works. Speusippus holding
+the Academy is consistent with his having successfully claimed standing over
+material that was not his to hold.
+
+**What survives the correction:** the succession was **contested**. That is not in
+dispute on any reading — the *Elenchi* closes with a plea to judges, the *Letters*
+transmit their own athetesis, the corpus keeps its spuria. **Contested standing is
+the fact; who was right about it is the question**, and I answered it in passing
+while claiming to record evidence. Second time today I supplied received history as
+though it were evidence (see M36).
+
+**M40c — consequence for the terrain map.** If standing over a corpus can be won
+by successful claim, the Academic succession-list is not a record of who wrote
+what. It is a record of **who prevailed**, produced by the same apparatus whose
+reliability this investigation is measuring. It belongs beside T11 (the corpus
+boundary is Andronicus's inference) and T12 (the one external anchor certifies the
+compiler of attribution records), **not in the background as settled context.**
+
+
 ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
 **0.0258** — inside the M1 same-author band — while the best single heteronym is
 Campos at 0.0498, then Caeiro 0.0903, Reis 0.2205. **Pooled beats best individual
