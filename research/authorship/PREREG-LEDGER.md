@@ -1131,5 +1131,112 @@ and it is imperfect.
 
 PENDING — registered before any control corpus is seated or scored.
 
+---
+
+# ENTRY — EA-SPEC-01
+
+**registered:** 2026-08-29, before any Platonic speaker is measured
+**frozen text follows verbatim; do not edit**
+
+# EA-SPEC-01 — The Specification-Depth Hypothesis
+
+## 1. What Pessoa showed (Round 22, characterization on documented ground truth)
+
+Ratio of a position's internal dispersion to its distance from the other
+positions, in a corpus whose single authorship is documented:
+
+    Caeiro     1.781    no philosophy, no memory, no interiority — sensation only
+    Soares     1.632    one street, one office, one clerk, one register
+    Mora       1.437    one doctrine, argued
+    Reis       1.374    one meter, one stance
+    Campos     1.129    everything, at maximum volume
+    ORTHONYM   1.033    no restriction at all
+
+## 2. THE HYPOTHESIS
+
+**Container tightness tracks the SEVERITY OF THE CONSTRAINT placed on the
+position, not similarity and not disguise.**
+
+A heteronymic series is a search downward: *what is the least one can specify and
+still get a self that coheres?* Each position subtracts something and tests whether
+a voice survives the subtraction. Caeiro is the floor of the Pessoan series —
+remove more and no one is there. The orthonym, specified by nothing, does not
+contain at all.
+
+**So the ratio measures SPECIFICATION DEPTH.** A container is tight because
+something was taken away, and the number is how much.
+
+## 3. THE PLATONIC TEST — prediction registered before measurement
+
+If specification depth drives tightness, then **the unit is the SPEAKING POSITION,
+not the work.** Plato's corpus is voiced: Socrates, the Eleatic Stranger, Timaeus,
+the Athenian, Parmenides, Diotima (reported), Aristophanes (constructed),
+Protagoras, Callicles.
+
+**PREDICTION, frozen:**
+
+    P1  Speaker tightness will ORDER BY CONSTRAINT SEVERITY: the more narrowly a
+        speaker is specified — one doctrine, one register, one occasion — the
+        tighter the container.
+    P2  The LEAST constrained speaking position will sit NEAREST 1.0.
+    P3  Direction is what is predicted, not magnitude. Greek function-word space
+        is not Portuguese function-word space and the ratios are not
+        cross-comparable.
+
+**Ranking by constraint, fixed NOW, before any measurement:**
+
+    MOST CONSTRAINED    Timaeus            one continuous cosmological monologue
+                        Diotima            reported speech inside a report,
+                                           one doctrine
+                        Aristophanes       one myth, comic register (M16)
+                        Eleatic Stranger   method-bound, division throughout
+                        Parmenides         one exercise, exhaustively run
+                        Athenian           one subject, legislation
+                        Protagoras/        set-piece opponents, one position each
+                          Callicles
+    LEAST CONSTRAINED   SOCRATES           every subject, every register, every
+                                           dialogue
+
+## 4. KILL CONDITIONS, BINDING
+
+- If the ordering is **uncorrelated** with the pre-registered constraint ranking,
+  the hypothesis fails.
+- If **Socrates is not among the loosest**, P2 fails and the hypothesis fails with
+  it — Socrates is the least constrained speaker in the corpus and the prediction
+  is unambiguous.
+- The constraint ranking above may **not be revised after measurement**.
+- Speakers with under 6,000 tokens are excluded before scoring, and the exclusion
+  list is fixed by token count alone.
+
+## 5. WHAT A POSITIVE WOULD AND WOULD NOT BUY
+
+**Would:** evidence that the Platonic corpus is organized by specification depth
+in the way a documented heteronymic system is. That is a structural parallel with
+a known case, measured on a pre-registered ordering.
+
+**Would NOT:** any conclusion about who wrote what. A dramatist constructing
+characters would also specify them to differing depths, and would also produce
+tighter containers for narrower roles. **This measures construction, which
+dramatic composition and heteronymic composition share.** It cannot separate them
+and is not registered as if it could.
+
+## 6. STATED LIMITATIONS
+
+**Speaker attribution in the dialogues must be extracted mechanically** and every
+speaker's token count published. Where Plato reports speech within speech —
+Diotima inside Socrates inside Apollodorus — the nesting is declared, not
+resolved.
+
+**Function-word profiles may be the wrong instrument for verse and for
+dialogue-turn structure.** The Pessoa result carries this caveat unresolved
+(Round 22 §87) and it carries forward here.
+
+**The assigner is not blind.** §3's ranking is frozen in this text as the only
+mitigation.
+
+## DISPOSITION
+
+PENDING — registered before measurement.
+
 
 ∮ = 1

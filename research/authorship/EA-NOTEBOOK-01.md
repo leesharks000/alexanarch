@@ -2811,6 +2811,22 @@ tighter the container. Caeiro — the pastoralist with the smallest declared
 vocabulary and the most fixed persona — is tightest at 1.781. The orthonym, which
 is not a persona at all, is loosest at 1.033.
 
+**THE SPECIFICATION HYPOTHESIS (registered as EA-SPEC-01).** Tightness tracks the
+**severity of the constraint**, not similarity and not disguise:
+
+    Caeiro     1.781    no philosophy, no memory, no interiority — sensation only
+    Soares     1.632    one street, one office, one clerk, one register
+    Mora       1.437    one doctrine, argued
+    Reis       1.374    one meter, one stance
+    Campos     1.129    everything, at maximum volume
+    ORTHONYM   1.033    no restriction at all
+
+Read as a series, the heteronyms are **a search downward: what is the least one
+can specify and still get a self that coheres?** Each position subtracts something
+and tests whether a voice survives the subtraction. Caeiro is the floor — remove
+more and no one is there. **A container is tight because something was taken away,
+and the ratio is how much.**
+
 ## 87. What it does NOT establish
 
 Nothing about Plato and Aristotle. It establishes what one axis of heteronymic
