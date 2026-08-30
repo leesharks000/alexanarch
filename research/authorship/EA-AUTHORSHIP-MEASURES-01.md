@@ -2228,11 +2228,13 @@ from tradition.** And:
                                 habit            transmission of   Round 24
                                                  arbitrary
                                                  procedure
-    reception capture           interpretive     later framing     ⭑ MEASURED
-      (M46)                     vocabulary       displaces         with BOTH an
-                                supplied by      earlier terms —   H-calibration
-                                the other        ordinary in       and an S-control
-                                position         reception history
+    reception capture           interpretive     later framing     ✗ WITHDRAWN
+      (M46 → M47)               vocabulary       displaces         — Freud on
+                                supplied by      earlier terms     Sophocles shows
+                                the other                          MORE capture
+                                position                           than any
+                                                                   heteronymic
+                                                                   case (M47 §36.7)
     abandoned-execution         continuation of  successor         ASSERTED;
       completion                own unfinished   recovers a        NO DENOMINATOR
                                 operation        shaped failure
@@ -2566,10 +2568,70 @@ as data, **not admissible as an S control.**
 critic, however famous his critique, did **not** take over the terms by which his
 subject is read. Plato's are Aristotle's.
 
-**STILL MISSING: a CREATIVE ← CRITICAL pair with the critic a NON-PRACTITIONER.**
-Freud on Sophocles is the cleanest candidate — no tragedies written, no rivalry,
-and the vocabulary by which *Oedipus* is now discussed is largely his. Bradley on
-Shakespeare and Heidegger on Hölderlin also qualify. **None is run.**
+## 36.7 FREUD ← SOPHOCLES — the non-practitioner control, RUN
+
+**The clean case: Freud wrote no tragedies, had no rivalry with Sophocles, and
+the vocabulary by which *Oedipus* is now discussed is largely his.** Freud
+253,671 tokens (*Dream Psychology*, *General Introduction*, *Three Contributions*);
+Sophocles 55,715 (Jebb and Murray, English throughout).
+
+    term                  Freud/10k   Sophocles/10k     F/S
+    sexual                    62.80            0.00       ∞
+    neuro-                    26.02            0.00       ∞
+    psychoanaly-              14.98            0.00       ∞
+    libido                    13.68            0.00       ∞
+    symbol                    11.04            0.00       ∞
+    manifest / latent         10.33 / 4.97     0.00       ∞
+    infantile                  9.89            0.00       ∞
+    censor                     5.12            0.00       ∞
+    complex · Oedipus complex  3.35 / 0.12     0.00       ∞
+    dream                    110.18            1.62      68.2
+    unconscious               15.10            0.36      42.1
+    repress-                   5.16            0.18      28.8
+    ────────────────────────────────────────────────────────
+    incest                     1.70            1.44       1.2
+    mother                     6.74           13.82       0.5
+    father                     5.99           22.26       0.3
+    guilt                      0.51            4.13       0.1
+    fate                       0.83            8.62       0.1
+    blind                      0.32            9.33       0.0
+    oracle                     0.16            7.54       0.0
+    curse                      0.12            9.87       0.0
+    parricide · prophecy       0.00            1.08/1.26  0.0
+
+**TOTAL CAPTURE, and it is the strongest in the whole set.** Fourteen terms at ∞ —
+every one of them now standard in discussing the play. And the reverse column is
+what Sophocles actually wrote about: **fate, oracle, curse, blindness, plague,
+prophecy, guilt** — all of which Freud barely touches, several at zero.
+
+**Sophocles wrote a play about an oracle and a curse. It is discussed as a play
+about repression and the unconscious.**
+
+**⚠ AND THIS IS THE RESULT THAT MATTERS FOR M46's DIAGNOSTICITY.** A securely
+distinct non-practitioner critic produces **more total capture than either
+documented heteronymic case.** Caeiro had 7 terms at zero; Freud has 14.
+
+**Therefore reception capture does NOT discriminate heteronymy from
+critic-succession.** M46's ordering was an artifact of which controls had been run.
+**M46 is withdrawn as evidence for the configurational reading** — this time on a
+properly-shaped control rather than a mis-shaped one.
+
+**What survives is descriptive**: the Platonic corpus is discussed in Aristotle's
+terms, as *Oedipus* is discussed in Freud's. That is a real feature of both
+receptions and it says nothing about who wrote what.
+
+## 36.8 GINSBERG ← KEROUAC — BLOCKED
+
+Lee's proposal: cross-genre, novelist criticised by poet, with the hypothesis that
+**Kerouac supplied "Beat" and Ginsberg supplied most of the rest.** Genuinely
+testable and the right shape — a theorist-poet reading a novelist who theorised as
+a novelist.
+
+**BLOCKED BY COPYRIGHT.** *Howl* (1956) and *On the Road* (1957) are both in
+copyright; the corpora cannot be assembled here. Recorded as a blocker, not a
+refusal — the test is well-formed and runs the moment the texts are obtainable.
+
+**Also unrun:** Bradley on Shakespeare, Heidegger on Hölderlin.
 
 
 ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
