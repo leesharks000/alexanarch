@@ -81,6 +81,22 @@
    "prediction": "Platonic SPEAKER tightness orders by constraint severity; Socrates, the least constrained, sits nearest 1.0",
    "kill": "uncorrelated ordering fails it; Socrates not among the loosest fails it; the constraint ranking may not be revised after measurement",
    "does_not_buy": "nothing about authorship — a dramatist specifying characters to differing depths produces the same gradient; this measures construction, which dramatic and heteronymic composition share"
+  },
+  {
+   "id": "EA-CAPTURE-01",
+   "registered": "2026-08-29",
+   "status": "PENDING — blocked on Hegel",
+   "why": "M46 chose its term sets after seeing each corpus; this fixes a mechanical selection rule that cannot see the interpreted position",
+   "rule": "term set = 30 content words most distinctive of the INTERPRETER against a language reference corpus, computed without reference to the interpreted position; capture score = median rate ratio, with zero-count reported",
+   "pairs": {
+    "H1": "Caeiro ← Mora+Campos+Reis",
+    "H2": "Either/Or A ← B",
+    "S1": "Aristotle ← Aquinas",
+    "S2": "HEGEL ← MARX (the decisive control)",
+    "T1": "Plato ← Aristotle"
+   },
+   "kill": "if S2 scores within the H range the measure is not diagnostic and M46 is withdrawn as evidence — the condition most likely to fire",
+   "blocker": "Hegel not seated"
   }
  ]
 }

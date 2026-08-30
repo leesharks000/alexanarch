@@ -2455,6 +2455,123 @@ history. **What is established is that the three cases separate on this measure,
 in the predicted order.**
 
 
+---
+
+## 36. M47 — RECEPTION CAPTURE, CONTROLLED: HEGEL/MARX, WORDSWORTH/COLERIDGE, AND TWO MIS-SHAPED PAIRS
+
+*Added 2026-08-29. Two controls run, one measure voided mid-run, and a control-class
+error committed twice in opposite directions.*
+
+## 36.1 The question, restated correctly
+
+Not *do successors supply vocabulary* but:
+
+> **Do a heteronymic system's ANALYTICAL positions control the terms by which its
+> NON-ANALYTICAL positions are discussed, at a higher rate than in multi-author
+> critical pairs?**
+
+**The pairing must therefore be CREATIVE ← CRITICAL.** This is answerable by
+reading and the distinction is eyeball-able; it does not require the elaborate
+apparatus of EA-CAPTURE-01.
+
+## 36.2 ⚠ EA-CAPTURE-01 VOID — the registered rule could not be applied uniformly
+
+The registration specified term selection normalised against a same-language
+reference corpus. **No such reference exists in the archive for Portuguese,
+Danish or English**, so four of five pairs fell back to raw rate while
+Plato–Aristotle alone got reference-normalisation. **T1's 12.20 against the
+others' 1.15–2.08 is a method artifact**: the one pair scored by the better method
+scored higher. §5 forbids altering the rule mid-run; I altered it for four of five.
+**Run void.** A further bug: S1 passed Latin word-extraction over Greek, yielding
+"interpreted 109 tokens."
+
+## 36.3 THE CONTROL-CLASS ERROR, COMMITTED TWICE IN OPPOSITE DIRECTIONS
+
+    Aquinas ← Aristotle       ANALYTICAL → ANALYTICAL    wrong shape
+    Marx ← Hegel              ANALYTICAL → ANALYTICAL    wrong shape
+    Coleridge → Wordsworth    CREATIVE → CREATIVE        wrong shape
+                              (Coleridge is a major poet criticising a
+                               collaborator and rival, from inside the practice)
+
+**On the Coleridge result I withdrew M46 as evidence. That withdrawal is
+RETRACTED** — it rested on a badly-shaped pair, exactly as the Aquinas control
+did. **The control class is defined by the critic's relation to the PRACTICE, not
+by the fact of criticism**, and I got it wrong in both directions inside one
+sequence.
+
+## 36.4 HEGEL ← MARX — run, and it supports the observation
+
+**First attempt failed on the same defect as EA-CAPTURE-01:** drawing "Marx's most
+distinctive terms" returned *commodities, prices, linen, silver, gold* — his
+**subject**, not his interpretive vocabulary. Median 9.27 on that set is
+meaningless.
+
+**Run on the terms Marx actually uses OF Hegel:**
+
+    term                     Marx/10k   Hegel/10k      M/H
+    negation of the negation     0.80        0.03     24.2
+    estrange-                    8.33        0.54     15.5
+    alienat-                     6.73        0.92      7.3
+    material                    16.77        3.18      5.3
+    inver-                       1.60        0.43      3.7
+    mystif- · ideolog- ·         ~0.4        0.00        ∞
+      rational kernel ·
+      mystical shell
+    ─────────────────────────────────────────────────────
+    dialectic                    3.31        3.41      1.0
+    speculative                  1.08        3.46      0.3
+    consciousness               12.03       41.73      0.3
+    self-consciousness           4.05       12.00      0.3
+    absolute                     4.68       20.77      0.2
+    spirit                       2.62       25.99      0.1
+    notion                       1.71       16.47      0.1
+
+**Marx supplies CRITIQUE-METAPHORS — inversion, mystification, the rational
+kernel, the mystical shell — and nothing else.** The substantive vocabulary of
+Hegel-reading is **Hegel's own**: dialectic even at 1.0, and *spirit*, *notion*,
+*absolute*, *consciousness* running **3–10× heavier in Hegel** than in his most
+famous critic.
+
+**Hegel is read in Hegel's terms.**
+
+## 36.5 WORDSWORTH ← COLERIDGE — run, and it is creative→creative
+
+    esemplastic · primary/secondary imagination ·        ∞  (Coleridge coinages)
+      poetic faith · willing suspension
+    objective                     1.16 / 0.01        100.1
+    subjective                    0.87 / 0.03         25.0
+    philosophic                   4.48 / 0.22         20.4
+    diction                       5.13 / 0.51         10.1
+    imagination                   4.62 / 1.52          3.0
+    ──────────────────────────────────────────────────────
+    fancy                         3.40 / 3.68          0.9
+    soul                          4.12 / 9.32          0.4
+    heart                         6.86 / 17.67         0.4
+
+**Coleridge annexes the analytical register and Wordsworth keeps the poetry** —
+which is two poets dividing labour, nearer the H shape than the S shape. Retained
+as data, **not admissible as an S control.**
+
+## 36.6 STANDING
+
+    Caeiro ← Mora/Campos/Reis    H, documented   key terms 0.00 in Caeiro
+    Either/Or A ← B              H, documented   ratios 4.7-14
+    PLATO ← ARISTOTLE            under test      ἀόριστος 108/3, δυάς 41/4,
+                                                 χωριστ- 411/165
+    HEGEL ← MARX                 S, distinct,    substantive vocabulary stays
+                                 analytical      HEGEL'S; only metaphors captured
+    Wordsworth ← Coleridge       mis-shaped      creative→creative
+
+**The one properly-run control supports the observation**: a securely distinct
+critic, however famous his critique, did **not** take over the terms by which his
+subject is read. Plato's are Aristotle's.
+
+**STILL MISSING: a CREATIVE ← CRITICAL pair with the critic a NON-PRACTITIONER.**
+Freud on Sophocles is the cleanest candidate — no tragedies written, no rivalry,
+and the vocabulary by which *Oedipus* is now discussed is largely his. Bradley on
+Shakespeare and Heidegger on Hölderlin also qualify. **None is run.**
+
+
 ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
 **0.0258** — inside the M1 same-author band — while the best single heteronym is
 Campos at 0.0498, then Caeiro 0.0903, Reis 0.2205. **Pooled beats best individual

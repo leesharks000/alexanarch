@@ -1247,5 +1247,120 @@ Extraction flaw recorded: ΤΙ and ΤΙΜ-mono overlap.
 deliberately switched off, so a per-speaker measure reads absence of construction
 as absence of a position. Work-level is the next run. Notebook Round 23.
 
+---
+
+# ENTRY — EA-CAPTURE-01
+
+**registered:** 2026-08-29, before any term set is drawn under the fixed rule
+**frozen text follows verbatim; do not edit**
+
+# EA-CAPTURE-01 — Reception Capture, With the Term-Selection Rule Fixed in Advance
+
+## 1. Why this registration exists
+
+M46 measured reception capture across four pairs and found them ordering:
+Caeiro/interpreters (H, documented) TOTAL; Plato/Aristotle (under test) PARTIAL at
+25–35×; Either-Or A/B (H, documented) PARTIAL at 4.7–14×; Aristotle/Aquinas
+(S, documented) NONE.
+
+**That result is not admissible as it stands.** I chose the term sets myself,
+separately for each corpus, after looking at each. That is the reverse-engineering
+hazard EA-UNLOCK-01 §5 exists to score against. **The ordering is suggestive; the
+magnitudes are not comparable.**
+
+## 2. THE SELECTION RULE — frozen, mechanical, identical for every pair
+
+For an ordered pair (INTERPRETED, INTERPRETER):
+
+    1.  Take the interpreter's text ONLY. Compute content-word frequencies,
+        excluding function words and proper names.
+    2.  Take the interpreted position's text ONLY. Compute the same.
+    3.  The TERM SET is the N = 30 content words with the highest
+            rate_in_interpreter / (rate_in_reference_corpus)
+        where the reference corpus is the whole seated corpus of that language,
+        so the set is "what is distinctive of the interpreter's discourse" —
+        **computed WITHOUT reference to the interpreted position.**
+    4.  ONLY THEN count those 30 terms in the interpreted position.
+
+    CAPTURE SCORE = median over the 30 terms of
+                        rate_interpreter / rate_interpreted
+    with rate_interpreted floored at 1 occurrence to keep the ratio finite,
+    and the count of terms at ZERO in the interpreted position reported
+    alongside as the ZERO-COUNT.
+
+**Step 3 is the whole point: the term set cannot see the interpreted position.**
+
+## 3. PAIRS — fixed now, with their class labels
+
+    H  documented one maker, multiple positions
+       H1  Alberto Caeiro          ← Mora + Campos + Reis writing on Caeiro
+       H2  Either/Or A             ← Either/Or B
+    S  documented distinct persons in succession
+       S1  Aristotle               ← Aquinas
+       S2  HEGEL                   ← MARX          ⭑ the control Lee specifies
+    ?  under test
+       T1  Plato                   ← Aristotle
+
+**S2 is the decisive control.** Marx supplies the vocabulary through which Hegel
+is now read — *inversion*, *mystification*, *standing on his head*, *the rational
+kernel*, *ideology* — and Marx and Hegel are securely distinct persons with no
+possible configurational relation. **If S2 scores like the H pairs, reception
+capture is not diagnostic of authorship at all, and M46 collapses.**
+
+## 4. PREDICTIONS, REGISTERED
+
+    P1  H1 and H2 score HIGH capture with HIGH zero-counts.
+    P2  S1 (Aquinas) scores LOW — established already, and serves as the
+        instrument's negative check.
+    P3  S2 (Marx on Hegel) is THE OPEN QUESTION. No direction is predicted.
+    P4  T1 (Plato/Aristotle) is scored last and its value is reported against
+        whatever range S2 establishes.
+
+**No prediction is made about T1 beyond that it will be reported.**
+
+## 5. KILL CONDITIONS, BINDING
+
+- **If S2 scores within the H range, the measure is not diagnostic and M46 is
+  withdrawn as evidence.** This is the condition most likely to fire and it is
+  registered as such.
+- If S1 and S2 diverge widely from each other, the S class is not a class on this
+  measure and the comparison fails.
+- The selection rule may not be altered after any pair is scored.
+- Translation is permitted (the measure counts concept distribution, not style),
+  but each pair must be scored in ONE language throughout, and the language is
+  declared.
+
+## 6. FEASIBILITY
+
+    H1  pessoa-full            SEATED
+    H2  kierkegaard            SEATED (Either/Or I and II, Danish)
+    S1  aristotle + aquinas    SEATED (cross-linguistic — declared limitation)
+    S2  Hegel + Marx           marx SEATED; HEGEL NOT SEATED — required
+    T1  plato + aristotle      SEATED
+
+**S2 cannot run until Hegel is seated. That acquisition is the blocker.**
+
+## 7. STATED LIMITATIONS
+
+**The reference corpus for step 3 differs per language**, so "distinctive of the
+interpreter" is computed against different baselines. This is a real
+non-comparability and cannot be removed without a single multilingual reference.
+
+**Content-word extraction is language-specific** and the stop-lists are mine.
+
+**S1 is cross-linguistic** — Latin interpreter, Greek interpreted — where every
+other pair is monolingual. Its score is therefore the least comparable of the five
+and is retained mainly as the instrument's negative check.
+
+## DISPOSITION
+
+**VOID.** The registered rule required same-language reference corpora that do not
+exist in the archive for Portuguese, Danish or English. Four of five pairs fell
+back to raw rate while Plato–Aristotle alone received reference-normalisation, so
+its higher score is a method artifact. §5 forbids altering the rule mid-run; it was
+altered for four of five. A further bug passed Latin extraction over Greek.
+**Superseded by the simpler reading-level comparison in M47**, which does not
+require the apparatus.
+
 
 ∮ = 1
