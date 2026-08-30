@@ -2391,6 +2391,11 @@ confession. It is what it says.
 the object constant and the variance is one author's. The treatise takes the form
 of what it treats. **Ethics tightest, logic loosest.**
 
+**⚠ WITHDRAWN — see Round 19 §72.** Object-conditioning at ratio 1.489 is
+ORDINARY: Aquinas, a securely distinct single author, reaches 1.503. What survives
+is §69's first reading and **the parity** (0.0571 ≈ 0.0570), which is a two-corpus
+coincidence and is NOT the ratio. Original text follows, superseded:
+
 **And that is the discovered operation, performed on its discoverer.** A soul
 divided **κατὰ λόγον** into parts really distinct, really alive, *τὴν αὐτὴν ψυχὴν
 ἔχειν τῷ εἴδει* — the same in form — with the criterion of separation being
@@ -2459,6 +2464,135 @@ reading goes: 0.0571 against 0.0570, per-domain, edition excluded.
 never been measured (M43). What the round changes
 is that the configurational reading **no longer requires a plan** — which was its
 single most expensive assumption.
+
+
+---
+
+# ROUND 19 — THE FIRST EXTERNALLY-SECURED CONTROL, AND WHAT IT DID AND DID NOT REFUTE
+
+*Added 2026-08-29. Aquinas seated; three results; one refutation of a claim the
+notebook does not make, corrected.*
+
+## 70. EA-CORPORA-10/01 — Thomas Aquinas seated
+
+Corpus Thomisticum, 312 pages fetched, **6,698,317 tokens**, structured HTML, no
+OCR. Split three ways, not two:
+
+    independent            5,219,700 tok / 10 works   Summa Theologiae, Scriptum,
+                                                      SCG, the Quaestiones, Quodlibeta
+    aristotle-commentary   1,020,889 tok /  8 works   Metaphysics, Ethics, Physics,
+                                                      De caelo, De sensu, Meteora…
+    other-commentary         457,728 tok /  4 works   Psalms, Job, Dionysius,
+                                                      De causis
+
+**Admissible under M36a where no Greek figure was:** attested by canonization
+proceedings, university registers, papal bulls and Dominican chapter records —
+evidence with no relation to textual style, doctrine, or any succession tradition
+under test.
+
+**⚠ SEATING ERROR, CAUGHT AND CORRECTED.** My prefix table mislabelled **every**
+commentary: `cme` declared *In Metaphysicam* is *Sentencia super Meteora*; `cmp`
+is the Metaphysics; `ccm` is *De caelo*; `ctc` is the *Ethics*; **`cps` declared
+*De sensu* is *In Psalmos***; `cdn` is Dionysius; `cio` is Job. Found by a locus
+probe returning **zero** for "metaphysic" in the file labelled *In Metaphysicam*,
+and rebuilt from each text's own header. The three-way split is a product of that
+correction and is better than the two-way I registered.
+
+## 71. RESULT 1 — the contamination is real and source-specific
+
+    kind                      tokens    gap/100k   div/10k
+    independent            5,219,700       1.07      26.6
+    other-commentary         457,728       0.22      10.3
+    aristotle-commentary   1,020,889       3.72      48.5
+
+    Aristotle-commentary / independent  = 3.47×
+    other-commentary / independent      = 0.20×
+
+**The naming-gap reflex arrives with the source text, not with the man.** 3.47×
+higher where Thomas glosses Aristotle; **five times lower** where he glosses
+Scripture and Dionysius. Positive control passes — the Latin probe finds 38 hits in
+the commentaries, so low counts elsewhere are absence, not blindness.
+
+**And the number that bears on M30:**
+
+    Aristotle          8.43/100k   at division 30.9/10k
+    Plato              2.60/100k   at division 15.4/10k
+    AQUINAS indep.     1.07/100k   at division 26.6/10k  ← securely distinct
+    Plotinus           0.47/100k   at division 36.8/10k
+    Philo              0.35/100k   at division 13.3/10k
+
+**Thomas divides as heavily as Aristotle and shows the reflex at one-eighth the
+rate in his own voice.** The most saturated Aristotelian in the Latin tradition
+does not reproduce it when writing independently. That bears on the objection that
+killed M30's diagnosticity — but it is **one author, not a pair**, and R3 measures
+*agreement between two members*. It needs Albert.
+
+## 72. RESULT 2 — object-conditioning is ORDINARY, and Round 18 §66 comes down
+
+Object-conditioned partition, within-work against cross-work dispersion:
+
+    Aquinas independent      1.503     ← securely distinct SINGLE author
+    Aristotle (M28)          1.489
+    Plato (M28)              1.186
+    Aquinas Aristotle-comm.  1.762
+    Aquinas other-comm.      2.707     ← internal check: maximally unlike objects
+
+**A securely distinct author reaches Aristotle's ratio.** So "the writing divides
+by object" is what any author writing across objects does.
+
+**Round 18 §66's language — that object-division IS the discovered soul-division
+operation performed on its discoverer — rests on the ratio and is WITHDRAWN.**
+§69 flagged the third reading as the one laying a reading on a number; the control
+agrees with the flag.
+
+*(Caveat against over-reading the refutation: Latin function-word space, different
+block size, different language. The ratios are comparable in form, not identically
+computed.)*
+
+## 73. ⚠ AND I REFUTED A CLAIM THE NOTEBOOK DOES NOT MAKE
+
+On seeing 1.503 ≈ 1.489 I reported that M28's finding was ordinary. **That was
+wrong, and the error is worth recording.**
+
+**M28's claim is not the ratio. It is the PARITY:** control for object and
+Aristotle's within-domain dispersion lands at **0.0571 against Plato's total
+0.0570** — the most internally heterogeneous author in the sample dropping to
+parity **with Plato specifically**. That is a **two-corpus coincidence**. The
+ratio is a **one-corpus property**. I measured the second and reported it as
+refuting the first.
+
+**The ratio being ordinary was never in dispute** — M28 says the domain effect
+explains the heterogeneity. What the ratio cannot explain is why the residue
+equals *Plato's* number rather than any other.
+
+## 74. RESULT 3 — the parity is not an artifact of the measure
+
+Eleven seated corpora, common 160-feature space, all 55 pairs:
+
+    |Δ| ≤ 0.0001    0 of 55  =  0.0%     ← M28's tolerance
+    |Δ| ≤ 0.0005    1 of 55  =  1.8%
+    |Δ| ≤ 0.002     5 of 55  =  9.1%
+    |Δ| ≤ 0.005    13 of 55  = 23.6%
+
+    closest pair in the entire set: Josephus 0.0208 / Philo 0.0211 = 0.00026,
+    two and a half times M28's gap
+
+**Near-parity at M28's tolerance never occurs among arbitrary pairs.**
+
+**LIMITATION, STATED:** this is *total against total*. M28's quantity is
+**object-controlled residual against uncontrolled total** — a different pairing
+with a different distribution. Running its base rate needs domain classifications
+for the other corpora, which exist only for Aristotle. **So: the parity is not a
+generic artifact of dispersion measures. Whether residual-vs-total parity is rare
+is UNRUN.**
+
+## 75. And a control that would show nothing
+
+I proposed scoring the parity on Albert→Thomas. **That is the M43c error again,
+one exchange after recording it.** Whether Thomas's residual equals Albert's total
+is a different quantity that answers nothing about Plato and Aristotle. What a
+control could establish is a **base rate for the parity as a form** across many
+pairs — and that needs many, not one.
 
 
 ∮ = 1

@@ -1,0 +1,661 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML LANG="LA">
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+<META HTTP-EQUIV="Content-Script-Type" CONTENT="text/javascript">
+<META NAME="keywords" CONTENT="Thomas de Aquino, Quodlibet, Quaestiones de quolibet, Corpus Thomisticum">
+<META NAME="language" CONTENT="Latin">
+<META NAME="security" CONTENT="public">
+<META NAME="owner" CONTENT="ealarcon@unav.es">
+<META NAME="author" CONTENT="Enrique Alarc&oacute;n">
+<META NAME="abstract" CONTENT="">
+<LINK REL="stylesheet" MEDIA="screen" HREF="https://www.corpusthomisticum.org/vscreen.css" TYPE="text/css">
+<LINK REL="stylesheet" MEDIA="print" HREF="https://www.corpusthomisticum.org/vprint.css" TYPE="text/css"><LINK REL="stylesheet" MEDIA="aural" HREF="https://www.corpusthomisticum.org/vaural.css" TYPE="text/css">
+<TITLE>Thomas de Aquino, Quodlibet V</TITLE>
+<script type="text/javascript">
+document.ondblclick = goPage;
+  function findSelection(){
+        if (document.getSelection){ txt = document.getSelection();}
+        else if (document.selection){ txt = document.selection.createRange().text;}
+        else {return "";}
+        return txt;
+  }
+  function goPage(){
+        var word = findSelection();
+        if (word != "") {
+                var toast = window.open("http://www.perseus.tufts.edu/hopper/morph?la=la&l="+word,"","width="+screen.width*0.75+",height="+screen.height*0.75+",screenX="+screen.width*0.125+"px,screenY="+screen.height*0.125+"px,scrollbars=1,resizable=1,toolbar=0");
+        }
+  }
+  </script>
+</HEAD>
+<BODY>
+<A HREF="https://www.corpusthomisticum.org/"><DIV CLASS="tres">CORPUS THOMISTICUM</DIV></A>
+<DIV CLASS="uno">Sancti Thomae de Aquino</DIV>
+<DIV CLASS="uno">Quodlibet V</DIV>
+<BR>
+<DIV CLASS="centro">
+<TABLE ALIGN="center" SUMMARY="Imago">
+<TR>
+<TH><IMG SRC="icons/cathe190.jpg" WIDTH="111" HEIGHT="190" BORDER="0" ALT="Thomas de Aquino a Bartolomeo degli Erri depictus (Legion of Honor Museum, San Francisco)" ALIGN="middle"></TH>
+</TR>
+</TABLE>
+<BR>
+<SPAN CLASS="tres">Textum Taurini 1956 editum<BR>et automato translatum a Roberto Busa SJ in taenias magneticas<BR>denuo recognovit Enrique Alarc&oacute;n atque instruxit<BR><BR></SPAN>
+<BR><HR><BR>
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!--
+// original code by Bill Trefzger 12/12/96; revised by Enrique Alarcon 12/9/2000
+function go(){if(document.selecter.select1.options[document.selecter.select1.selectedIndex].value !="none"){location=document.selecter.select1.options[document.selecter.select1.selectedIndex].value}}
+document.write('<FORM NAME="selecter"><SELECT NAME="select1">');
+document.write('<OPTION VALUE="none">INDEX');
+document.write('<OPTION VALUE="none">------------------------------------------------');
+document.write('<OPTION VALUE="index.html">Corpus Thomisticum');
+document.write('<OPTION VALUE="iopera.html">Opera omnia');
+document.write('<OPTION VALUE="zbiblia.html">Bibliographia Thomistica');
+document.write('<OPTION VALUE="none">-------------------------------------------');
+document.write('<OPTION VALUE="#67752">Quodlibet V, q. 1 pr.');
+document.write('<OPTION VALUE="#67753">Quodlibet V, q. 1 pr. 1');
+document.write('<OPTION VALUE="#67754">Quodlibet V, q. 1 pr. 2');
+document.write('<OPTION VALUE="#67755">Quodlibet V, q. 1 a. 1 tit. 1');
+document.write('<OPTION VALUE="#67756">Quodlibet V, q. 1 a. 1 tit. 2');
+document.write('<OPTION VALUE="#67757">Quodlibet V, q. 1 a. 1 arg.');
+document.write('<OPTION VALUE="#67758">Quodlibet V, q. 1 a. 1 s. c.');
+document.write('<OPTION VALUE="#67759">Quodlibet V, q. 1 a. 1 co.');
+document.write('<OPTION VALUE="#67760">Quodlibet V, q. 1 a. 2 tit. 1');
+document.write('<OPTION VALUE="#67761">Quodlibet V, q. 1 a. 2 tit. 2');
+document.write('<OPTION VALUE="#67762">Quodlibet V, q. 1 a. 2 arg.');
+document.write('<OPTION VALUE="#67763">Quodlibet V, q. 1 a. 2 s. c.');
+document.write('<OPTION VALUE="#67764">Quodlibet V, q. 1 a. 2 co.');
+document.write('<OPTION VALUE="#67765">Quodlibet V, q. 1 a. 2 ad arg.');
+document.write('<OPTION VALUE="#67766">Quodlibet V, q. 2 pr.');
+document.write('<OPTION VALUE="#67767">Quodlibet V, q. 2 pr. 1');
+document.write('<OPTION VALUE="#67768">Quodlibet V, q. 2 pr. 2');
+document.write('<OPTION VALUE="#67769">Quodlibet V, q. 2 a. 1 tit. 1');
+document.write('<OPTION VALUE="#67770">Quodlibet V, q. 2 a. 1 tit. 2');
+document.write('<OPTION VALUE="#67771">Quodlibet V, q. 2 a. 1 arg.');
+document.write('<OPTION VALUE="#67772">Quodlibet V, q. 2 a. 1 s. c.');
+document.write('<OPTION VALUE="#67773">Quodlibet V, q. 2 a. 1 co.');
+document.write('<OPTION VALUE="#67774">Quodlibet V, q. 2 a. 1 ad arg.');
+document.write('<OPTION VALUE="#67775">Quodlibet V, q. 2 a. 2 tit. 1');
+document.write('<OPTION VALUE="#67776">Quodlibet V, q. 2 a. 2 tit. 2');
+document.write('<OPTION VALUE="#67777">Quodlibet V, q. 2 a. 2 arg.');
+document.write('<OPTION VALUE="#67778">Quodlibet V, q. 2 a. 2 s. c.');
+document.write('<OPTION VALUE="#67779">Quodlibet V, q. 2 a. 2 co.');
+document.write('<OPTION VALUE="#67780">Quodlibet V, q. 2 a. 2 ad');
+document.write('<OPTION VALUE="#67781">Quodlibet V, q. 3 pr.');
+document.write('<OPTION VALUE="#67782">Quodlibet V, q. 3 pr. 1');
+document.write('<OPTION VALUE="#67783">Quodlibet V, q. 3 pr. 2');
+document.write('<OPTION VALUE="#67784">Quodlibet V, q. 3 a. 1 tit. 1');
+document.write('<OPTION VALUE="#67785">Quodlibet V, q. 3 a. 1 tit. 2');
+document.write('<OPTION VALUE="#67786">Quodlibet V, q. 3 a. 1 arg. 1');
+document.write('<OPTION VALUE="#67787">Quodlibet V, q. 3 a. 1 arg. 2');
+document.write('<OPTION VALUE="#67788">Quodlibet V, q. 3 a. 1 s. c.');
+document.write('<OPTION VALUE="#67789">Quodlibet V, q. 3 a. 1 co.');
+document.write('<OPTION VALUE="#67790">Quodlibet V, q. 3 a. 1 ad arg.');
+document.write('<OPTION VALUE="#67791">Quodlibet V, q. 3 a. 2 tit. 1');
+document.write('<OPTION VALUE="#67792">Quodlibet V, q. 3 a. 2 tit. 2');
+document.write('<OPTION VALUE="#67793">Quodlibet V, q. 3 a. 2 arg.');
+document.write('<OPTION VALUE="#67794">Quodlibet V, q. 3 a. 2 s. c.');
+document.write('<OPTION VALUE="#67795">Quodlibet V, q. 3 a. 2 co.');
+document.write('<OPTION VALUE="#67796">Quodlibet V, q. 3 a. 2 ad arg.');
+document.write('<OPTION VALUE="#67797">Quodlibet V, q. 4 pr.');
+document.write('<OPTION VALUE="#67798">Quodlibet V, q. 4 tit. 1');
+document.write('<OPTION VALUE="#67799">Quodlibet V, q. 4 tit. 2');
+document.write('<OPTION VALUE="#67800">Quodlibet V, q. 4 arg.');
+document.write('<OPTION VALUE="#67801">Quodlibet V, q. 4 s. c.');
+document.write('<OPTION VALUE="#67802">Quodlibet V, q. 4 co.');
+document.write('<OPTION VALUE="#67803">Quodlibet V, q. 4 ad arg.');
+document.write('<OPTION VALUE="#67804">Quodlibet V, q. 5 pr.');
+document.write('<OPTION VALUE="#67805">Quodlibet V, q. 5 pr. 1');
+document.write('<OPTION VALUE="#67806">Quodlibet V, q. 5 pr. 2');
+document.write('<OPTION VALUE="#67807">Quodlibet V, q. 5 pr. 3');
+document.write('<OPTION VALUE="#67808">Quodlibet V, q. 5 a. 1 tit. 1');
+document.write('<OPTION VALUE="#67809">Quodlibet V, q. 5 a. 1 tit. 2');
+document.write('<OPTION VALUE="#67810">Quodlibet V, q. 5 a. 1 arg. 1');
+document.write('<OPTION VALUE="#67811">Quodlibet V, q. 5 a. 1 arg. 2');
+document.write('<OPTION VALUE="#67812">Quodlibet V, q. 5 a. 1 s. c.');
+document.write('<OPTION VALUE="#67813">Quodlibet V, q. 5 a. 1 co.');
+document.write('<OPTION VALUE="#67814">Quodlibet V, q. 5 a. 1 ad arg.');
+document.write('<OPTION VALUE="#67815">Quodlibet V, q. 5 a. 2 tit. 1');
+document.write('<OPTION VALUE="#67816">Quodlibet V, q. 5 a. 2 tit. 2');
+document.write('<OPTION VALUE="#67817">Quodlibet V, q. 5 a. 2 arg. 1');
+document.write('<OPTION VALUE="#67818">Quodlibet V, q. 5 a. 2 arg. 2');
+document.write('<OPTION VALUE="#67819">Quodlibet V, q. 5 a. 2 s. c.');
+document.write('<OPTION VALUE="#67820">Quodlibet V, q. 5 a. 2 co.');
+document.write('<OPTION VALUE="#67821">Quodlibet V, q. 5 a. 2 ad 1');
+document.write('<OPTION VALUE="#67822">Quodlibet V, q. 5 a. 2 ad 2');
+document.write('<OPTION VALUE="#67823">Quodlibet V, q. 5 a. 3 tit. 1');
+document.write('<OPTION VALUE="#67824">Quodlibet V, q. 5 a. 3 tit. 2');
+document.write('<OPTION VALUE="#67825">Quodlibet V, q. 5 a. 3 arg.');
+document.write('<OPTION VALUE="#67826">Quodlibet V, q. 5 a. 3 s. c.');
+document.write('<OPTION VALUE="#67827">Quodlibet V, q. 5 a. 3 co.');
+document.write('<OPTION VALUE="#67828">Quodlibet V, q. 5 a. 3 ad arg.');
+document.write('<OPTION VALUE="#67829">Quodlibet V, q. 6 pr.');
+document.write('<OPTION VALUE="#67830">Quodlibet V, q. 6 pr. 1');
+document.write('<OPTION VALUE="#67831">Quodlibet V, q. 6 pr. 2');
+document.write('<OPTION VALUE="#67832">Quodlibet V, q. 6 a. 1 tit. 1');
+document.write('<OPTION VALUE="#67833">Quodlibet V, q. 6 a. 1 tit. 2');
+document.write('<OPTION VALUE="#67834">Quodlibet V, q. 6 a. 1 arg. 1');
+document.write('<OPTION VALUE="#67835">Quodlibet V, q. 6 a. 1 arg. 2');
+document.write('<OPTION VALUE="#67836">Quodlibet V, q. 6 a. 1 s. c.');
+document.write('<OPTION VALUE="#67837">Quodlibet V, q. 6 a. 1 co.');
+document.write('<OPTION VALUE="#67838">Quodlibet V, q. 6 a. 1 ad 1');
+document.write('<OPTION VALUE="#67839">Quodlibet V, q. 6 a. 1 ad 2');
+document.write('<OPTION VALUE="#67840">Quodlibet V, q. 6 a. 2 tit. 1');
+document.write('<OPTION VALUE="#67841">Quodlibet V, q. 6 a. 2 tit. 2');
+document.write('<OPTION VALUE="#67842">Quodlibet V, q. 6 a. 2 arg. 1');
+document.write('<OPTION VALUE="#67843">Quodlibet V, q. 6 a. 2 arg. 2');
+document.write('<OPTION VALUE="#67844">Quodlibet V, q. 6 a. 2 arg. 3');
+document.write('<OPTION VALUE="#67845">Quodlibet V, q. 6 a. 2 co.');
+document.write('<OPTION VALUE="#67846">Quodlibet V, q. 6 a. 2 ad 1');
+document.write('<OPTION VALUE="#67847">Quodlibet V, q. 6 a. 2 ad 3');
+document.write('<OPTION VALUE="#67848">Quodlibet V, q. 7 pr.');
+document.write('<OPTION VALUE="#67849">Quodlibet V, q. 7 pr. 1');
+document.write('<OPTION VALUE="#67850">Quodlibet V, q. 7 pr. 2');
+document.write('<OPTION VALUE="#67851">Quodlibet V, q. 7 a. 1 tit. 1');
+document.write('<OPTION VALUE="#67852">Quodlibet V, q. 7 a. 1 tit. 2');
+document.write('<OPTION VALUE="#67853">Quodlibet V, q. 7 a. 1 arg.');
+document.write('<OPTION VALUE="#67854">Quodlibet V, q. 7 a. 1 s. c.');
+document.write('<OPTION VALUE="#67855">Quodlibet V, q. 7 a. 1 co.');
+document.write('<OPTION VALUE="#67856">Quodlibet V, q. 7 a. 1 ad arg.');
+document.write('<OPTION VALUE="#67857">Quodlibet V, q. 7 a. 2 tit. 1');
+document.write('<OPTION VALUE="#67858">Quodlibet V, q. 7 a. 2 tit. 2');
+document.write('<OPTION VALUE="#67859">Quodlibet V, q. 7 a. 2 arg.');
+document.write('<OPTION VALUE="#67860">Quodlibet V, q. 7 a. 2 s. c.');
+document.write('<OPTION VALUE="#67861">Quodlibet V, q. 7 a. 2 co.');
+document.write('<OPTION VALUE="#67862">Quodlibet V, q. 7 a. 2 ad arg.');
+document.write('<OPTION VALUE="#67863">Quodlibet V, q. 8 pr.');
+document.write('<OPTION VALUE="#67864">Quodlibet V, q. 8 pr. 1');
+document.write('<OPTION VALUE="#67865">Quodlibet V, q. 8 pr. 2');
+document.write('<OPTION VALUE="#67866">Quodlibet V, q. 8 a. 1 tit. 1');
+document.write('<OPTION VALUE="#67867">Quodlibet V, q. 8 a. 1 tit. 2');
+document.write('<OPTION VALUE="#67868">Quodlibet V, q. 8 a. 1 arg.');
+document.write('<OPTION VALUE="#67869">Quodlibet V, q. 8 a. 1 s. c.');
+document.write('<OPTION VALUE="#67870">Quodlibet V, q. 8 a. 1 co.');
+document.write('<OPTION VALUE="#67871">Quodlibet V, q. 8 a. 1 ad arg.');
+document.write('<OPTION VALUE="#67872">Quodlibet V, q. 8 a. 2 tit. 1');
+document.write('<OPTION VALUE="#67873">Quodlibet V, q. 8 a. 2 tit. 2');
+document.write('<OPTION VALUE="#67874">Quodlibet V, q. 8 a. 2 arg.');
+document.write('<OPTION VALUE="#67875">Quodlibet V, q. 8 a. 2 s. c.');
+document.write('<OPTION VALUE="#67876">Quodlibet V, q. 8 a. 2 co.');
+document.write('<OPTION VALUE="#67877">Quodlibet V, q. 8 a. 2 ad arg.');
+document.write('<OPTION VALUE="#67878">Quodlibet V, q. 9 pr.');
+document.write('<OPTION VALUE="#67879">Quodlibet V, q. 9 pr. 1');
+document.write('<OPTION VALUE="#67880">Quodlibet V, q. 9 pr. 2');
+document.write('<OPTION VALUE="#67881">Quodlibet V, q. 9 a. 1 tit. 1');
+document.write('<OPTION VALUE="#67882">Quodlibet V, q. 9 a. 1 tit. 2');
+document.write('<OPTION VALUE="#67883">Quodlibet V, q. 9 a. 1 arg. 1');
+document.write('<OPTION VALUE="#67884">Quodlibet V, q. 9 a. 1 arg. 2');
+document.write('<OPTION VALUE="#67885">Quodlibet V, q. 9 a. 1 s. c.');
+document.write('<OPTION VALUE="#67886">Quodlibet V, q. 9 a. 1 co.');
+document.write('<OPTION VALUE="#67887">Quodlibet V, q. 9 a. 1 ad 1');
+document.write('<OPTION VALUE="#67888">Quodlibet V, q. 9 a. 1 ad 2');
+document.write('<OPTION VALUE="#67889">Quodlibet V, q. 9 a. 2 tit. 1');
+document.write('<OPTION VALUE="#67890">Quodlibet V, q. 9 a. 2 tit. 2');
+document.write('<OPTION VALUE="#67891">Quodlibet V, q. 9 a. 2 arg.');
+document.write('<OPTION VALUE="#67892">Quodlibet V, q. 9 a. 2 s. c.');
+document.write('<OPTION VALUE="#67893">Quodlibet V, q. 9 a. 2 co.');
+document.write('<OPTION VALUE="#67894">Quodlibet V, q. 10 pr.');
+document.write('<OPTION VALUE="#67895">Quodlibet V, q. 10 pr. 1');
+document.write('<OPTION VALUE="#67896">Quodlibet V, q. 10 pr. 2');
+document.write('<OPTION VALUE="#67897">Quodlibet V, q. 10 a. 1 tit. 1');
+document.write('<OPTION VALUE="#67898">Quodlibet V, q. 10 a. 1 tit. 2');
+document.write('<OPTION VALUE="#67899">Quodlibet V, q. 10 a. 1 arg.');
+document.write('<OPTION VALUE="#67900">Quodlibet V, q. 10 a. 1 s. c.');
+document.write('<OPTION VALUE="#67901">Quodlibet V, q. 10 a. 1 co.');
+document.write('<OPTION VALUE="#67902">Quodlibet V, q. 10 a. 1 ad arg.');
+document.write('<OPTION VALUE="#67903">Quodlibet V, q. 10 a. 2 tit. 1');
+document.write('<OPTION VALUE="#67904">Quodlibet V, q. 10 a. 2 tit. 2');
+document.write('<OPTION VALUE="#67905">Quodlibet V, q. 10 a. 2 arg. 1');
+document.write('<OPTION VALUE="#67906">Quodlibet V, q. 10 a. 2 arg. 2');
+document.write('<OPTION VALUE="#67907">Quodlibet V, q. 10 a. 2 s. c.');
+document.write('<OPTION VALUE="#67908">Quodlibet V, q. 10 a. 2 co.');
+document.write('<OPTION VALUE="#67909">Quodlibet V, q. 10 a. 2 ad 1');
+document.write('<OPTION VALUE="#67910">Quodlibet V, q. 10 a. 2 ad 2');
+document.write('<OPTION VALUE="#67911">Quodlibet V, q. 11 pr.');
+document.write('<OPTION VALUE="#67912">Quodlibet V, q. 11 pr. 1');
+document.write('<OPTION VALUE="#67913">Quodlibet V, q. 11 pr. 2');
+document.write('<OPTION VALUE="#67914">Quodlibet V, q. 11 pr. 3');
+document.write('<OPTION VALUE="#67915">Quodlibet V, q. 11 a. 1 tit. 1');
+document.write('<OPTION VALUE="#67916">Quodlibet V, q. 11 a. 1 tit. 2');
+document.write('<OPTION VALUE="#67917">Quodlibet V, q. 11 a. 1 arg.');
+document.write('<OPTION VALUE="#67918">Quodlibet V, q. 11 a. 1 s. c.');
+document.write('<OPTION VALUE="#67919">Quodlibet V, q. 11 a. 1 co.');
+document.write('<OPTION VALUE="#67920">Quodlibet V, q. 11 a. 1 ad arg.');
+document.write('<OPTION VALUE="#67921">Quodlibet V, q. 11 a. 2 tit. 1');
+document.write('<OPTION VALUE="#67922">Quodlibet V, q. 11 a. 2 tit. 2');
+document.write('<OPTION VALUE="#67923">Quodlibet V, q. 11 a. 2 arg. 1');
+document.write('<OPTION VALUE="#67924">Quodlibet V, q. 11 a. 2 arg. 2');
+document.write('<OPTION VALUE="#67925">Quodlibet V, q. 11 a. 2 co.');
+document.write('<OPTION VALUE="#67926">Quodlibet V, q. 11 a. 2 ad 1');
+document.write('<OPTION VALUE="#67927">Quodlibet V, q. 11 a. 2 ad 2');
+document.write('<OPTION VALUE="#67928">Quodlibet V, q. 11 a. 3 tit. 1');
+document.write('<OPTION VALUE="#67929">Quodlibet V, q. 11 a. 3 tit. 2');
+document.write('<OPTION VALUE="#67930">Quodlibet V, q. 11 a. 3 arg.');
+document.write('<OPTION VALUE="#67931">Quodlibet V, q. 11 a. 3 s. c.');
+document.write('<OPTION VALUE="#67932">Quodlibet V, q. 11 a. 3 co.');
+document.write('<OPTION VALUE="#67933">Quodlibet V, q. 11 a. 3 ad arg.');
+document.write('<OPTION VALUE="#67934">Quodlibet V, q. 12 pr.');
+document.write('<OPTION VALUE="#67935">Quodlibet V, q. 12 pr. 1');
+document.write('<OPTION VALUE="#67936">Quodlibet V, q. 12 pr. 2');
+document.write('<OPTION VALUE="#67937">Quodlibet V, q. 12 a. 1 tit. 1');
+document.write('<OPTION VALUE="#67938">Quodlibet V, q. 12 a. 1 tit. 2');
+document.write('<OPTION VALUE="#67939">Quodlibet V, q. 12 a. 1 arg. 1');
+document.write('<OPTION VALUE="#67940">Quodlibet V, q. 12 a. 1 arg. 2');
+document.write('<OPTION VALUE="#67941">Quodlibet V, q. 12 a. 1 s. c.');
+document.write('<OPTION VALUE="#67942">Quodlibet V, q. 12 a. 1 co.');
+document.write('<OPTION VALUE="#67943">Quodlibet V, q. 12 a. 1 ad 1');
+document.write('<OPTION VALUE="#67944">Quodlibet V, q. 12 a. 1 ad 2');
+document.write('<OPTION VALUE="#67945">Quodlibet V, q. 12 a. 2 tit. 1');
+document.write('<OPTION VALUE="#67946">Quodlibet V, q. 12 a. 2 tit. 2');
+document.write('<OPTION VALUE="#67947">Quodlibet V, q. 12 a. 2 arg. 1');
+document.write('<OPTION VALUE="#67948">Quodlibet V, q. 12 a. 2 arg. 2');
+document.write('<OPTION VALUE="#67949">Quodlibet V, q. 12 a. 2 s. c.');
+document.write('<OPTION VALUE="#67950">Quodlibet V, q. 12 a. 2 co.');
+document.write('<OPTION VALUE="#67951">Quodlibet V, q. 12 a. 2 ad arg.');
+document.write('<OPTION VALUE="#67952">Quodlibet V, q. 13 pr.');
+document.write('<OPTION VALUE="#67953">Quodlibet V, q. 13 pr. 1');
+document.write('<OPTION VALUE="#67954">Quodlibet V, q. 13 pr. 2');
+document.write('<OPTION VALUE="#67955">Quodlibet V, q. 13 a. 1 tit. 1');
+document.write('<OPTION VALUE="#67956">Quodlibet V, q. 13 a. 1 tit. 2');
+document.write('<OPTION VALUE="#67957">Quodlibet V, q. 13 a. 1 arg. 1');
+document.write('<OPTION VALUE="#67958">Quodlibet V, q. 13 a. 1 arg. 2');
+document.write('<OPTION VALUE="#67959">Quodlibet V, q. 13 a. 1 s. c.');
+document.write('<OPTION VALUE="#67960">Quodlibet V, q. 13 a. 1 co.');
+document.write('<OPTION VALUE="#67961">Quodlibet V, q. 13 a. 1 ad arg.');
+document.write('<OPTION VALUE="#67962">Quodlibet V, q. 13 a. 2 tit. 1');
+document.write('<OPTION VALUE="#67963">Quodlibet V, q. 13 a. 2 tit. 2');
+document.write('<OPTION VALUE="#67964">Quodlibet V, q. 13 a. 2 arg.');
+document.write('<OPTION VALUE="#67965">Quodlibet V, q. 13 a. 2 s. c.');
+document.write('<OPTION VALUE="#67966">Quodlibet V, q. 13 a. 2 co.');
+document.write('<OPTION VALUE="#67967">Quodlibet V, q. 14 pr.');
+document.write('<OPTION VALUE="#67968">Quodlibet V, q. 14 tit. 1');
+document.write('<OPTION VALUE="#67969">Quodlibet V, q. 14 tit. 2');
+document.write('<OPTION VALUE="#67970">Quodlibet V, q. 14 arg.');
+document.write('<OPTION VALUE="#67971">Quodlibet V, q. 14 s. c.');
+document.write('<OPTION VALUE="#67972">Quodlibet V, q. 14 co.');
+document.write('<OPTION VALUE="#67973">Quodlibet V, q. 14 ad arg.');
+document.write('</SELECT>');
+document.write('<BR><BR>');
+document.write('<INPUT TYPE="button" VALUE="Agedum" ONCLICK="go()">');
+document.write('</FORM>');
+// -->
+</SCRIPT>
+<BR><HR><BR>
+</DIV>
+<DIV CLASS="D">Quaestio 1</DIV>
+<DIV CLASS="G">Prooemium</DIV>
+<P TITLE="Quodlibet V, q. 1 pr."><A NAME="67752"><SPAN CLASS="tit">[67752] Quodlibet V, q. 1 pr. </SPAN></A>Deinde quaesitum est de Deo et Angelis et hominibus de Deo quaesitum est et quantum ad naturam divinam, et quantum ad naturam assumptam. Quantum ad naturam divinam quaesitum est de scientia, et de potentia. Circa scientiam Dei quaesita sunt duo.</P>
+<P TITLE="Quodlibet V, q. 1 pr. 1"><A NAME="67753"><SPAN CLASS="tit">[67753] Quodlibet V, q. 1 pr. 1 </SPAN></A>Primo utrum Deus sciat primum instans in quo potuit creare mundum.</P>
+<P TITLE="Quodlibet V, q. 1 pr. 2"><A NAME="67754"><SPAN CLASS="tit">[67754] Quodlibet V, q. 1 pr. 2 </SPAN></A>Secundo utrum praesciti a Deo possint demereri.</P>
+<BR>
+<DIV CLASS="E">Articulus 1</DIV>
+<BR>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 1 a. 1 tit. 1"><A NAME="67755"><SPAN CLASS="tit">[67755] Quodlibet V, q. 1 a. 1 tit. 1 </SPAN></A>Utrum Deus sciat primum instans in quo potuit creare mundum</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 1 a. 1 tit. 2"><A NAME="67756"><SPAN CLASS="tit">[67756] Quodlibet V, q. 1 a. 1 tit. 2 </SPAN></A>Ad primum sic procedebatur: videtur quod Deus sciat primum instans in quo potuit mundum creare.</P>
+<P TITLE="Quodlibet V, q. 1 a. 1 arg."><A NAME="67757"><SPAN CLASS="ref">[67757] Quodlibet V, q. 1 a. 1 arg. </SPAN></A>Deus enim potuit creare mundum antequam creaverit; non autem potuit creare ipsum in infinitum ante, quia sic esset ei coaeternus. Ergo est dare aliquod instans in quo primo potuit creare mundum. Sed Deus sua scientia totum comprehendit. Ergo Deus scit primum instans in quo potuit creare mundum.</P>
+<P TITLE="Quodlibet V, q. 1 a. 1 s. c."><A NAME="67758"><SPAN CLASS="ref">[67758] Quodlibet V, q. 1 a. 1 s. c. </SPAN></A>Sed contra, Deus nihil scit quod eius omnipotentiae praeiudicet. Praeiudicaret autem eius omnipotentiae, si esset aliquod instans in quo primo potuit creare mundum: quia sic eius potentia ad illud instans limitaretur. Ergo Deus nescit primum instans in quo potuit creare mundum.</P>
+<P TITLE="Quodlibet V, q. 1 a. 1 co."><A NAME="67759"><SPAN CLASS="ref">[67759] Quodlibet V, q. 1 a. 1 co. </SPAN></A>Respondeo. Dicendum quod dupliciter dicitur aliquid fieri in aliqua mensura loci vel temporis. Uno modo, praesupposita ipsa mensura; et sic particulares effectus producuntur a Deo vel ab aliis agentibus, in loco vel tempore. Alio modo ut simul cum eo quod fit, producatur mensura loci vel temporis; et hoc modo mundus a Deo in esse producitur: non quidem quasi in aliquo loco vel tempore praeexistente, sed quia simul cum mundo et locus et tempus producitur. Unde aliter est intelligendum cum dicitur quod Deus potuit facere aliquem particularem effectum, puta equum vel hominem, antequam fecerit, vel etiam alibi quam fecerit; et aliter cum hoc de mundo dicitur. Nam cum de homine vel equo hoc dicitur, signatur aliquod tempus vel locus aliquis esse in quo homo a Deo fieri potuerit; sed cum de hoc mundo dicitur, non signatur quod sit aliquod tempus ante mundum, nec aliquis locus extra ipsum: sed significatur quod Deus potuit mensuram loci aut temporis mundi facere maiorem. Si ergo quaeratur utrum potuerit mundum facere in infinitum antequam fecerit; si hoc quidem referatur ad potentiam facientis, manifestum est quod in infinitum ante facere potuit: Dei enim potentia est aeterna, cui nihil accrescere potuit, ut inciperet quandoque facere mundum, cum prius non potuerit. Si vero referatur ad ipsum mundum, sic non potuit fieri ut esset semper, supposita Catholicae fidei veritate, quae habet mundum quandoque non fuisse. Sicut enim Deus non potest facere ut quod fuit non fuerit, ut infra dicetur, ita non potest facere ut quod fuit quandoque, nunquam non fuerit. Secundum hunc ergo sensum dicitur quod Deus non potuit mundum facere in infinitum antequam faceret. Sed adhuc intelligendum est, quod infinitum dicitur dupliciter. Uno modo in actu; et sic dicitur secundum modum praedictum, quod Deus non potuit facere mundum in infinitum antequam fecerit: id est quod duratio mundi in infinitum ante praecesserit. Alio modo dicitur infinitum secundum potentiam; et sic potuit Deus in infinitum mundum facere antequam fecerit, quia quantumcumque ante detur eum fecisse, adhuc potuit eum prius facere. Et sic non est dare primum instans in quo Deus potuit facere mundum; est autem dare primum instans in quo fecerit, sicut etiam est dare supremum ubi, usquequo Deus mundum fecerit; non tamen est dare supremum ultra quod facere non potuerit. Et sic patet quod quaestio cessat.</P>
+<BR>
+<DIV CLASS="E">Articulus 2</DIV>
+<BR>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 1 a. 2 tit. 1"><A NAME="67760"><SPAN CLASS="tit">[67760] Quodlibet V, q. 1 a. 2 tit. 1 </SPAN></A>Utrum praesciti a Deo possint demereri</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 1 a. 2 tit. 2"><A NAME="67761"><SPAN CLASS="tit">[67761] Quodlibet V, q. 1 a. 2 tit. 2 </SPAN></A>Ad secundum sic proceditur: videtur quod praesciti a Deo non possint demereri.</P>
+<P TITLE="Quodlibet V, q. 1 a. 2 arg."><A NAME="67762"><SPAN CLASS="ref">[67762] Quodlibet V, q. 1 a. 2 arg. </SPAN></A>Sicut enim aliqui sunt electi a Deo ab aeterno ad gratiam habendam, ita etiam aliqui sunt praesciti a Deo ad hoc quod suae naturae relinquantur. Sed naturalibus non meremur neque demeremur. Ergo praesciti a Deo non demerentur.</P>
+<P TITLE="Quodlibet V, q. 1 a. 2 s. c."><A NAME="67763"><SPAN CLASS="ref">[67763] Quodlibet V, q. 1 a. 2 s. c. </SPAN></A>Sed contra, nullus damnatur a Deo nisi propter demeritum, cum Deus sit iudex iustus. Sed praesciti damnantur a Deo. Ergo demerentur.</P>
+<P TITLE="Quodlibet V, q. 1 a. 2 co."><A NAME="67764"><SPAN CLASS="ref">[67764] Quodlibet V, q. 1 a. 2 co. </SPAN></A>Respondeo. Dicendum, quod scientia Dei comparatur ad res creatas sicut ars ad artificiata. Unde sicut ars non solum est cognoscitiva sed factiva eorum quae secundum artem fiunt; eorum vero quae ab artis regulis deviant, est cognoscitiva: ita etiam scientia Dei est factiva et cognoscitiva omnium bonorum, malorum vero, sive peccatorum, quae sunt deviationes quaedam ab aeterna lege ipsius, scientia Dei est cognoscitiva, non autem causativa. Et sic patet quod boni qui per gratiam iustificantur, non solum sunt a Deo ab aeterno praecogniti, sed etiam electi ad gratiam habendam: peccatores autem qui non iustificantur per gratiam, non sunt electi vel praeordinati a Deo ad culpam, sed solum praesciti quod non sint gratiam habituri, sed suae naturae sint relinquendi. Quia vero omne agens potest in id quod est infra se, non autem in id quod est supra se, natura sibi relicta non potest in actum meritorium, qui est supra facultatem naturae; potest autem in actum peccati, qui est demeritorius, sicut in aliquid infra naturam humanam existens: homo enim peccando descendit a dignitate suae naturae. Et sic patet quod praesciti possunt demereri.</P>
+<P TITLE="Quodlibet V, q. 1 a. 2 ad arg."><A NAME="67765"><SPAN CLASS="ref">[67765] Quodlibet V, q. 1 a. 2 ad arg. </SPAN></A>Ad primum dicendum, quod hoc quod dicitur, quod naturalibus non meremur neque demeremur, potest intelligi dupliciter. Uno modo sic quod naturalia ipsa non sunt merita vel demerita; et sic verum est quod merita sunt supra naturam, et demerita sunt contra naturam. Alio modo potest intelligi sic quod naturalia non sint principia merendi vel demerendi; et sic falsum est: naturalia enim adiuta per gratiam sunt principia merendi, sibi autem relicta possunt esse principia demerendi, ut dictum est.</P>
+<BR>
+<DIV CLASS="D">Quaestio 2</DIV>
+<DIV CLASS="G">Prooemium</DIV>
+<P TITLE="Quodlibet V, q. 2 pr."><A NAME="67766"><SPAN CLASS="ref">[67766] Quodlibet V, q. 2 pr. </SPAN></A>Deinde circa potentiam quaesita sunt duo.</P>
+<P TITLE="Quodlibet V, q. 2 pr. 1"><A NAME="67767"><SPAN CLASS="tit">[67767] Quodlibet V, q. 2 pr. 1 </SPAN></A>Primo utrum Deus possit virginem corruptam reparare.</P>
+<P TITLE="Quodlibet V, q. 2 pr. 2"><A NAME="67768"><SPAN CLASS="tit">[67768] Quodlibet V, q. 2 pr. 2 </SPAN></A>Secundo utrum Deus possit peccare, si vult.</P>
+<BR>
+<DIV CLASS="E">Articulus 1</DIV>
+<BR>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 2 a. 1 tit. 1"><A NAME="67769"><SPAN CLASS="tit">[67769] Quodlibet V, q. 2 a. 1 tit. 1 </SPAN></A>Utrum Deus possit virginem corruptam reparare</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 2 a. 1 tit. 2"><A NAME="67770"><SPAN CLASS="tit">[67770] Quodlibet V, q. 2 a. 1 tit. 2 </SPAN></A>Ad primum sic proceditur: videtur quod Deus possit virginem reparare.</P>
+<P TITLE="Quodlibet V, q. 2 a. 1 arg."><A NAME="67771"><SPAN CLASS="ref">[67771] Quodlibet V, q. 2 a. 1 arg. </SPAN></A>Ad omnipotentiam enim Dei pertinet quod non sit impossibile apud eum omne verbum, ut dicitur Lucae, 1, 37. Sed hoc est quoddam verbum, virginem reparare post lapsum. Ergo Deus potest virginem reparare post lapsum.</P>
+<P TITLE="Quodlibet V, q. 2 a. 1 s. c."><A NAME="67772"><SPAN CLASS="ref">[67772] Quodlibet V, q. 2 a. 1 s. c. </SPAN></A>Sed contra, est quod Hieronymus dicit: <I>cum Deus cetera possit, non potest reparare virginem post ruinam</I>; et habetur in decreto 32, quaest. 5.</P>
+<P TITLE="Quodlibet V, q. 2 a. 1 co."><A NAME="67773"><SPAN CLASS="ref">[67773] Quodlibet V, q. 2 a. 1 co. </SPAN></A>Respondeo. Dicendum, quod in virginitate duo possumus considerare. Quorum unum est ipsa integritas mentis et corporis; et sic Deus virginem potest reparare post ruinam: potest enim mentem reintegrare per gratiam, et corpus consolidare per miraculum. Alia autem est causa integritatis praedictae, quia scilicet mulier virgo non fuisset cognita a viro; et quantum ad hoc Deus non potest virginem post ruinam reparare: non enim potest facere ut iam ea quae est cognita a viro, non fuerit cognita; sicut nec de aliquo quod factum est, potest facere quod factum non fuerit. Potentia enim Dei se extendit ad totum ens: unde solum id a Dei potentia excluditur quod repugnat rationi entis; et hoc est simul esse et non esse; et eiusdem rationis est, quod fuit, non fuisse. Unde Augustinus dicit XXVI contra Faustum: <I>quisquis dicit, si omnipotens est Deus, faciat ut ea quae facta sunt, facta non fuerint, non videt se hoc dicere, faciat ut ea quae vera sunt, eo ipso quo vera sunt falsa sint</I>.</P>
+<P TITLE="Quodlibet V, q. 2 a. 1 ad arg."><A NAME="67774"><SPAN CLASS="ref">[67774] Quodlibet V, q. 2 a. 1 ad arg. </SPAN></A>Ad primum ergo dicendum, quod cum verbum sit conceptus mentis, nihil quod contradictionem implicat, verbum dici potest, quia non cadit in conceptu mentis, ut probatur in IV Metaphys.</P>
+<BR>
+<DIV CLASS="E">Articulus 2</DIV>
+<BR>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 2 a. 2 tit. 1"><A NAME="67775"><SPAN CLASS="tit">[67775] Quodlibet V, q. 2 a. 2 tit. 1 </SPAN></A>Utrum Deus possit peccare, si vult</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 2 a. 2 tit. 2"><A NAME="67776"><SPAN CLASS="tit">[67776] Quodlibet V, q. 2 a. 2 tit. 2 </SPAN></A>Ad secundum sic proceditur: videtur quod haec sit falsa: Deus potest peccare, si vult.</P>
+<P TITLE="Quodlibet V, q. 2 a. 2 arg."><A NAME="67777"><SPAN CLASS="ref">[67777] Quodlibet V, q. 2 a. 2 arg. </SPAN></A>De quocumque enim possum dicere quod homo potest facere si vult, potest etiam dici simpliciter, quod homo potest facere illud. Si ergo haec propositio est vera, Deus potest peccare si vult, sequitur quod haec sit vera, Deus potest peccare. Sed hoc est erroneum. Ergo et primum.</P>
+<P TITLE="Quodlibet V, q. 2 a. 2 s. c."><A NAME="67778"><SPAN CLASS="ref">[67778] Quodlibet V, q. 2 a. 2 s. c. </SPAN></A>Sed contra, quicumque vult peccare, peccat. Sed sequitur. Si Deus peccat, potest peccare. Ergo sequitur: si vult, potest peccare.</P>
+<P TITLE="Quodlibet V, q. 2 a. 2 co."><A NAME="67779"><SPAN CLASS="ref">[67779] Quodlibet V, q. 2 a. 2 co. </SPAN></A>Respondeo. Dicendum, quod haec coniunctio si ordinem quemdam importat. Potest autem in proposito duplicem ordinem importare. Uno quidem modo ordinem causae sive principii. Et hoc modo propositio falsa est. Voluntas enim Dei est principium et causa respectu creaturarum, non autem respectu eorum quae pertinent ad divinam naturam: unde non dicimus quod pater genuerit filium voluntate, sed naturaliter, ut patet per Hilarium in libro de Synod. Potentia autem Dei ad ipsam naturam divinam pertinet: unde hoc ipsum quod est posse peccare, non est subiectum divinae voluntati; alioquin voluntas Dei esset principium immutationis divinae, quod est impossibile. Alio modo potest importare ordinem consequentiae. Et sic haec locutio est vera: si Deus vult peccare, potest peccare. Sequitur enim sine conditione, si argumentatur ex impossibili posito: Deus vult peccare, ergo potest peccare. Omnia enim quae vult, potest; sed non e converso.</P>
+<P TITLE="Quodlibet V, q. 2 a. 2 ad arg."><A NAME="67780"><SPAN CLASS="ref">[67780] Quodlibet V, q. 2 a. 2 ad arg. </SPAN></A>Ad primum ergo dicendum, quod cum dicitur: si homo vult currere, potest currere; antecedens est possibile, et ideo consequens est simpliciter possibile; sed cum dicitur sic: si Deus vult peccare, potest peccare; antecedens est impossibile; unde nihil prohibet conditionalem esse veram, consequente existente impossibili.</P>
+<BR>
+<DIV CLASS="D">Quaestio 3</DIV>
+<DIV CLASS="G">Prooemium</DIV>
+<P TITLE="Quodlibet V, q. 3 pr."><A NAME="67781"><SPAN CLASS="ref">[67781] Quodlibet V, q. 3 pr. </SPAN></A>Deinde quantum ad naturam assumptam quaesita sunt duo.</P>
+<P TITLE="Quodlibet V, q. 3 pr. 1"><A NAME="67782"><SPAN CLASS="tit">[67782] Quodlibet V, q. 3 pr. 1 </SPAN></A>Primo utrum totus sanguis quem Christus in sua passione effudit, in resurrectione ad corpus eius redierit.</P>
+<P TITLE="Quodlibet V, q. 3 pr. 2"><A NAME="67783"><SPAN CLASS="tit">[67783] Quodlibet V, q. 3 pr. 2 </SPAN></A>Secundo in quo Christus nobis maius signum dilectionis exhibuerit; utrum in hoc quod Christus passus est pro nobis, vel in hoc quod corpus suum dedit nobis sub sacramento in cibum.</P>
+<BR>
+<DIV CLASS="E">Articulus 1</DIV>
+<BR>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 3 a. 1 tit. 1"><A NAME="67784"><SPAN CLASS="tit">[67784] Quodlibet V, q. 3 a. 1 tit. 1 </SPAN></A>Utrum totus sanguis quem Christus in sua passione effudit, in resurrectione ad corpus eius redierit</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 3 a. 1 tit. 2"><A NAME="67785"><SPAN CLASS="tit">[67785] Quodlibet V, q. 3 a. 1 tit. 2 </SPAN></A>Circa primum sic proceditur: videtur quod totus sanguis Christi, qui est in passione eius effusus, ad corpus eius in resurrectione redierit.</P>
+<P TITLE="Quodlibet V, q. 3 a. 1 arg. 1"><A NAME="67786"><SPAN CLASS="ref">[67786] Quodlibet V, q. 3 a. 1 arg. 1 </SPAN></A>Resurrectio enim nostra conformis erit resurrectioni Christi, secundum illud ad Philipp. cap. III, 21: <I>reformabit corpus humilitatis nostrae configuratum corpori claritatis suae</I>. Sed ad corpus nostrum in resurrectione redibit totum quod fuit de veritate humanae naturae. Sanguis autem Christi in passione effusus, fuit de veritate humanae naturae, et sacer dicitur, secundum illud, <I>quem sacer cruor perunxit fusus agni corpore</I>. Ergo videtur quod ille sanguis Christi in passione effusus, in resurrectione ad corpus eius redierit.</P>
+<P TITLE="Quodlibet V, q. 3 a. 1 arg. 2"><A NAME="67787"><SPAN CLASS="ref">[67787] Quodlibet V, q. 3 a. 1 arg. 2 </SPAN></A>Praeterea, verbum Dei nunquam deposuit quod in nostra natura assumpsit, partibus humanae naturae ab invicem in passione separatis. Sed verbum Dei assumpsit in natura nostra non solum corpus, sed etiam sanguinem. Ergo sanguis ille nunquam fuit a verbo depositus: rediit ergo ad ipsum in resurrectione.</P>
+<P TITLE="Quodlibet V, q. 3 a. 1 s. c."><A NAME="67788"><SPAN CLASS="ref">[67788] Quodlibet V, q. 3 a. 1 s. c. </SPAN></A>Sed contra, est quod in aliquibus Ecclesiis sanguis Christi usque hodie dicitur servari.</P>
+<P TITLE="Quodlibet V, q. 3 a. 1 co."><A NAME="67789"><SPAN CLASS="ref">[67789] Quodlibet V, q. 3 a. 1 co. </SPAN></A>Respondeo. Dicendum, quod in resurrectione tam Christi quam nostra, totum quod fuit de veritate humanae naturae, reparabitur; non autem illa quae de veritate humanae naturae non fuerunt. Et quamvis circa ea quae sunt de veritate humanae naturae, sit diversa diversorum opinio; secundum quamlibet opinionem non totus sanguis nutrimentalis, id est qui ex cibis generatur, pertinet ad veritatem humanae naturae. Cum ergo Christus ante passionem comederit et biberit, nihil prohibet in eo fuisse aliquem sanguinem nutrimentalem, qui ad veritatem humanae naturae non pertinet et quem oporteret ad corpus eius in resurrectione redire. Sed quia specialiter fit quaestio de sanguine in passione effuso pro redemptione humani generis; de hoc magis dicendum videtur quod totus in resurrectione ad corpus Christi redierit, triplici ratione. Quarum prima accipi potest ex aetate Christi patientis. Passus est enim in perfectissima aetate, in qua maxime ea quae in homine inveniuntur, ad veritatem humanae naturae pertinere videntur tamquam ad maximam perfectionem adducta. Secunda sumitur ex merito passionis. Si enim sanctorum martyrum illae partes in quibus passionem pro Christo sustinuerunt, quemdam privilegiatum fulgorem in resurrectione habent, ut Augustinus dicit, XXI de civitate Dei; ergo multo magis sanguis Christi, quem pro salute humani generis effudit, ad gloriosam resurrectionem reparatus est. Tertia ratio potest sumi ex ipsa virtute passionis. Sanguis enim ille in passione effusus humanum genus sanctificavit, secundum illud ad Hebr. XIII, 12: <I>Iesus, ut sanctificaret per suum sanguinem populum, extra portam passus est</I>. Humanitas autem Christi salutiferam virtutem habuit ex virtute verbi sibi uniti, ut Damascenus dicit in III Lib. Unde manifestum est quod sanguis in passione effusus, qui maxime fuit salubris, fuit divinitati unitus; et ideo oportuit quod in resurrectione iungeretur aliis humanitatis partibus. Sanguis autem Christi qui in quibusdam Ecclesiis ostenditur, dicitur ex quadam imagine Christi percussa miraculose fluxisse, vel etiam alias ex corpore Christi.</P>
+<P TITLE="Quodlibet V, q. 3 a. 1 ad arg."><A NAME="67790"><SPAN CLASS="ref">[67790] Quodlibet V, q. 3 a. 1 ad arg. </SPAN></A>Et per hoc patet responsio ad obiecta.</P>
+<BR>
+<DIV CLASS="E">Articulus 2</DIV>
+<BR>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 3 a. 2 tit. 1"><A NAME="67791"><SPAN CLASS="tit">[67791] Quodlibet V, q. 3 a. 2 tit. 1 </SPAN></A>In quo Christus nobis maius signum dilectionis exhibuerit; utrum in hoc quod Christus passus est pro nobis, vel in hoc quod corpus suum dedit nobis sub sacramento in cibum</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 3 a. 2 tit. 2"><A NAME="67792"><SPAN CLASS="tit">[67792] Quodlibet V, q. 3 a. 2 tit. 2 </SPAN></A>Ad secundum sic proceditur: videtur quod Christus maius dilectionis signum nobis ostendit tradendo corpus suum in cibum quam patiendo pro nobis.</P>
+<P TITLE="Quodlibet V, q. 3 a. 2 arg."><A NAME="67793"><SPAN CLASS="ref">[67793] Quodlibet V, q. 3 a. 2 arg. </SPAN></A>Caritas enim patriae perfectior est quam caritas viae. Sed beneficium illud quo nobis Christus contulit corpus suum dans nobis in cibum, magis assimilatur caritati patriae, in qua plene fruemur Deo; passio autem quam pro nobis subiit, magis assimilatur caritati viae, in qua nobis pro Christo imminet patiendum. Ergo maius est dilectionis signum quod Christus corpus suum tradidit nobis in cibum, quam quod Christus passus est pro nobis.</P>
+<P TITLE="Quodlibet V, q. 3 a. 2 s. c."><A NAME="67794"><SPAN CLASS="ref">[67794] Quodlibet V, q. 3 a. 2 s. c. </SPAN></A>Sed contra, est quod dicitur Ioann. XV, 13: <I>maiorem caritatem nemo habet quam ut animam suam ponat quis pro amicis suis</I>.</P>
+<P TITLE="Quodlibet V, q. 3 a. 2 co."><A NAME="67795"><SPAN CLASS="ref">[67795] Quodlibet V, q. 3 a. 2 co. </SPAN></A>Respondeo. Dicendum, quod illud quod est potissimum in unoquoque genere, est mensura omnium eorum quae sunt illius generis, ut patet per philosophum in X Metaphys. Potissimum autem in genere amoris hominum est amor quo quis amat seipsum; et ideo ex hoc amore necesse est mensuram accipere omnis amoris quo quis alium amat. Unde et in IX Eth. philosophus dicit, quod <I>amicabilia quae sunt ad alterum, veniunt ex amicabilibus quae sunt ad seipsum</I>. Pertinet autem ad amorem quo quis amat seipsum, ut velit sibi bonum: unde tanto aliquis alium magis amare probatur, quanto magis bonum quod sibi vult, propter amicum praetermittit, secundum illud Prov. XII, 26: <I>qui negligit damnum propter amicum, iustus est</I>. Vult autem homo sibi triplex bonum particulare; quae sunt anima, corpus et res exteriores. Est ergo aliquod signum amoris quod aliquis in rebus exterioribus propter alium detrimentum patiatur; maius autem amoris signum, si etiam corporis proprii detrimentum patiatur, vel labores vel verbera pro amico sumendo; maximum autem dilectionis signum, si etiam animam suam deponere velit, pro amico moriendo. Quod ergo Christus pro nobis patiendo animam suam posuit, maximum fuit dilectionis signum. Quod autem corpus suum dedit in cibum sub sacramento, ad nullum detrimentum ipsius pertinet. Unde patet quod primum est maius dilectionis signum: unde et hoc sacramentum est memoriale quoddam et figura passionis Christi; veritas autem praeeminet figurae, et res memoriali.</P>
+<P TITLE="Quodlibet V, q. 3 a. 2 ad arg."><A NAME="67796"><SPAN CLASS="ref">[67796] Quodlibet V, q. 3 a. 2 ad arg. </SPAN></A>Ad primum ergo dicendum quod exhibitio corporis Christi in sacramento habet quidem figuram quamdam caritatis qua diligit nos Deus in patria; sed passio eius pertinet ad ipsam Dei dilectionem, nos a perditione ad patriam revocantem; dilectio autem Dei non est maior in patria quam sit in praesenti.</P>
+<BR>
+<DIV CLASS="D">Quaestio 4</DIV>
+<DIV CLASS="G">Prooemium</DIV>
+<P TITLE="Quodlibet V, q. 4 pr."><A NAME="67797"><SPAN CLASS="ref">[67797] Quodlibet V, q. 4 pr. </SPAN></A>Deinde circa Angelos quaesitum est unum. Scilicet utrum Lucifer sit subiectum aevi.</P>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 4 tit. 1"><A NAME="67798"><SPAN CLASS="tit">[67798] Quodlibet V, q. 4 tit. 1 </SPAN></A>Utrum Lucifer sit subiectum aevi</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 4 tit. 2"><A NAME="67799"><SPAN CLASS="tit">[67799] Quodlibet V, q. 4 tit. 2 </SPAN></A>Et videtur quod sic.</P>
+<P TITLE="Quodlibet V, q. 4 arg."><A NAME="67800"><SPAN CLASS="ref">[67800] Quodlibet V, q. 4 arg. </SPAN></A>Sicut subiectum temporis est primum temporale simplicissimum, ita subiectum aevi videtur esse simplicissimum aeviternum. Hoc autem est Lucifer, qui inter Angelos supremus fuit secundum suam naturam creatus. Aevum autem non respondet gratiae, sed naturae; alioquin corpora caelestia, quae non sunt susceptiva gratiae, aevo mensurari non possent. Cum ergo dona naturalia integra remanserint in Daemonibus post peccatum, sicut Dionysius dicit, IV cap. de Divin. Nomin., videtur quod aevum sit in Lucifero sicut in subiecto.</P>
+<P TITLE="Quodlibet V, q. 4 s. c."><A NAME="67801"><SPAN CLASS="ref">[67801] Quodlibet V, q. 4 s. c. </SPAN></A>Sed contra, aevum est quaedam aeternitatis participatio. Sed Angeli beati magis sunt in participatione aeternitatis quam Lucifer, qui est beatitudinis expers. Ergo Lucifer non est subiectum aevi, sed magis supremus beatorum Angelorum.</P>
+<P TITLE="Quodlibet V, q. 4 co."><A NAME="67802"><SPAN CLASS="ref">[67802] Quodlibet V, q. 4 co. </SPAN></A>Respondeo. Dicendum, quod ex ignorantia linguae Graecae provenit quod communiter apud multos aevum ab aeternitate distingueretur, ac si distingueretur anthropos ab homine. Quod enim in Graeco dicitur aevum, in Latino aeternitas: et sic etiam Dionysius, X de Divin. Nomin., pro eodem utitur aeternitate et aevo. Sed quia nominibus utendum est ut plures: si utrumque distinguamus ab invicem, aevum nihil aliud erit quam aeternitatis participatio; ut scilicet essentialis aeternitas ipsi Deo attribuatur, aevum autem quasi participata aeternitas substantiis spiritualibus, quae sunt supra tempus. Quia vero id quod per essentiam dicitur, semper est mensura illius quod dicitur per participationem: potest dici quod prima mensura omnium aeternorum est ipsa Dei aeternitas, sicut etiam substantia Dei est mensura omnis substantiae, ut dicit Commentator in X Metaphys. Si quis tamen velit accipere mensuram homogeneam, idest eiusdem generis: dicunt quidam, quod non est una mensura communis, sed quodlibet aeviternum habet suum aevum. Sed hi propriam vocem ignorant. Sic enim esset verum quod dicunt, si omnia aeviterna essent aequalia: sic enim unum eorum non esset mensura alterius. Hoc autem non est verum, quia in Angelis est accipere primum, medium et ultimum: non solum secundum diversas hierarchias et ordines, sed etiam secundum diversos Angelos in eodem ordine, ut patet per Dionysium, X capit. caelestis hierarchiae. Et quia semper illud quod est simplicissimum, est mensura in quolibet genere, sicut dicitur in X Metaph.; ideo necesse est ut duratio simplicissimi aeviterni sit aevum omnium aeviternorum: et ita simplicissimum aeviternum est subiectum aevi. Sed attendendum, quod substantiae spirituales mensurantur aevo non solum quantum ad earum substantiam, sed etiam quantum ad earum propriam operationem. Unde in libro de causis dicitur, quod sunt in momento aeternitatis, secundum substantiam et operationem. Et sic oportet quod ille Angelus qui est subiectum aevi, sit simplicissimus non solum quantum ad essentiam, sed etiam quantum ad operationem. Talis autem est supremus omnium Angelorum bonorum, cuius operatio maxime est in uno, quod est Deus, unita. Unde supremus omnium Angelorum est subiectum aevi, non autem Lucifer.</P>
+<P TITLE="Quodlibet V, q. 4 ad arg."><A NAME="67803"><SPAN CLASS="ref">[67803] Quodlibet V, q. 4 ad arg. </SPAN></A>Ad primum ergo dicendum, quod aliqui posuerunt Luciferum non fuisse supremum Angelorum; sed, sicut Damascenus dicit, fuit primus eorum qui praeerant ordini terrestri. Si vero concedamus secundum Gregorium, quod fuerit supremus omnium, tunc dicendum est, quod sua operatio aversa est ab uno primo, et conversa ad multitudinem inferiorum rerum, quarum primatum appetiit; et secundum hoc Daemones decidunt a summa simplicitate aevi. Unde Dionysius dicit, IV cap. de Divin. Nomin., quod Daemones dicuntur mali propter hoc quod infirmantur circa operationem naturalem.</P>
+<BR>
+<DIV CLASS="D">Quaestio 5</DIV>
+<DIV CLASS="G">Prooemium</DIV>
+<P TITLE="Quodlibet V, q. 5 pr."><A NAME="67804"><SPAN CLASS="ref">[67804] Quodlibet V, q. 5 pr. </SPAN></A>Deinde quaesitum est de hominibus.- Et primo quantum ad ea quae possunt omnibus esse communia.- Secundo quantum ad ea quae pertinent ad quosdam horum status. Circa communia vero quaesitum est quadrupliciter.- Primo quidem de his quae pertinent ad naturam hominis.- Secundo de his quae pertinent ad sacramenta.- Tertio de his quae pertinent ad virtutes.- Quarto de his quae pertinent ad praecepta. Circa primum quaesita sunt tria.</P>
+<P TITLE="Quodlibet V, q. 5 pr. 1"><A NAME="67805"><SPAN CLASS="tit">[67805] Quodlibet V, q. 5 pr. 1 </SPAN></A>Primo quantum ad personas hominum; utrum scilicet si Adam non peccasset, iidem homines numero salvarentur qui nunc salvantur.</P>
+<P TITLE="Quodlibet V, q. 5 pr. 2"><A NAME="67806"><SPAN CLASS="tit">[67806] Quodlibet V, q. 5 pr. 2 </SPAN></A>Secundo quantum ad intellectum, utrum scilicet verbum cordis sit species intelligibilis.</P>
+<P TITLE="Quodlibet V, q. 5 pr. 3"><A NAME="67807"><SPAN CLASS="tit">[67807] Quodlibet V, q. 5 pr. 3 </SPAN></A>Tertio quantum ad voluntatem; utrum scilicet ea quae per timorem fiunt, sint voluntaria.</P>
+<BR>
+<DIV CLASS="E">Articulus 1</DIV>
+<BR>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 5 a. 1 tit. 1"><A NAME="67808"><SPAN CLASS="tit">[67808] Quodlibet V, q. 5 a. 1 tit. 1 </SPAN></A>Utrum, si Adam non peccasset, iidem homines numero salvarentur qui nunc salvantur</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 5 a. 1 tit. 2"><A NAME="67809"><SPAN CLASS="tit">[67809] Quodlibet V, q. 5 a. 1 tit. 2 </SPAN></A>Ad primum sic proceditur: videtur quod si Adam non peccasset, non iidem homines numero salvarentur qui nunc salvantur.</P>
+<P TITLE="Quodlibet V, q. 5 a. 1 arg. 1"><A NAME="67810"><SPAN CLASS="ref">[67810] Quodlibet V, q. 5 a. 1 arg. 1 </SPAN></A>Si enim Adam non peccasset, soli electi nascerentur. Ergo non fuissent nati illi peccatores qui finaliter sunt reprobati, et per consequens nec eorum filii; quia si non sunt iidem patres, consequens est neque filios esse eosdem. Multi autem nunc salvantur ex reprobis parentibus nati. Ergo si Adam non peccasset, non iidem salvarentur qui nunc salvantur.</P>
+<P TITLE="Quodlibet V, q. 5 a. 1 arg. 2"><A NAME="67811"><SPAN CLASS="ref">[67811] Quodlibet V, q. 5 a. 1 arg. 2 </SPAN></A>Praeterea, secundum philosophum semen est superfluum alimenti. Sed aliis cibis homo usus fuisset in Paradiso, si non peccasset, ab his quibus nunc utitur. Ergo aliud fuisset semen, et per consequens alii filii.</P>
+<P TITLE="Quodlibet V, q. 5 a. 1 s. c."><A NAME="67812"><SPAN CLASS="ref">[67812] Quodlibet V, q. 5 a. 1 s. c. </SPAN></A>Sed contra, est quod Gregorius dicit, IV Moral.: <I>si primum parentem nulla putredo peccati corrumperet, nequaquam ex se filios Gehennae generaret; sed hi qui nunc per redemptorem salvandi sunt, soli ab eo electi nascerentur</I>.</P>
+<P TITLE="Quodlibet V, q. 5 a. 1 co."><A NAME="67813"><SPAN CLASS="ref">[67813] Quodlibet V, q. 5 a. 1 co. </SPAN></A>Respondeo. Dicendum, quod cum in generatione hominis, sicut et aliorum animalium, semen patris sit agens, materia vero a matre ministrata sit sicut patiens, ex quo corpus humanum formatur; impossibile est eumdem filium nasci, sive sit alius pater, sive sit alia mater; sicut etiam non est idem numero sigillum, sive sit alia cera, sive sit aliud corpus sigilli, ex cuius impressione cera sigillatur. Et quamvis superfluum alimenti sit semen, secundum philosophum, diversitas tamen alimentorum non sufficeret ad diversificandum filios qui ex semine nascuntur: quia ex illis cibis non sumitur semen nisi quatenus aliqualiter in substantiam parentum convertuntur. Dicunt quidam sequentes Anselmum, quod si homo non peccasset in illa prima tentatione, statim confirmatus fuisset et ipse et omnes qui ab eo nascerentur, ita quod omnes qui nascerentur, fuissent electi. Unde, cum nunc multi qui salvantur, ex peccatoribus nascantur, sicut in obiiciendo tangebatur, consequens est quod essent alii parentes salvandorum, et per consequens alii filii. Sed haec positio non videtur esse vera: quia secundum Augustinum, XIV de Civit. Dei, status corporis in homine proportionabiliter respondet statui animae. Quamdiu ergo homo habuit corpus animale, potens mori et non mori, indigens alimentis, tamdiu habuit animam potentem peccare et non peccare. Habuit autem corpus animale quamdiu fuit in statu generandi; quod etiam fuisset, si post illam primam tentationem non peccasset: et ideo possibile fuisset, si primus homo tunc non peccasset, quod etiam ipse vel eius posteri postmodum peccarent, ut Hugo de sancto Victore dicit. Unde ex hoc non sequitur parentum diversitas, quod nunc sunt aliqui peccatores, tunc autem non essent; sed est aliud unde necesse est ponere diversitatem parentum: quia in primo statu unus homo non habuisset plures uxores, nec etiam aliqui ex fornicatione vel adulterio nascerentur, quod nunc contingit etiam in his qui salvantur. Multi enim filii unius parentis ex pluribus uxoribus nati salvantur, sicut patet de filiis Iacob: multi etiam ex fornicatione vel adulterio nati: alioquin eis frustra sacramenta salutis adhiberentur. Unde relinquitur quod aliqui nunc salvantur, qui, si primus homo non peccasset, non nascerentur, et per consequens non salvarentur. Nec tamen Dei praedestinatio falleretur, quia Deus praedestinavit homines habens scientiam futuri eventus. Quod vero Gregorius dicit, quod si primus homo non peccasset nequaquam ex se filios Gehennae generaret, indubitanter verum est. Non enim in filios transfunderet peccatum originale, secundum quod homines filii irae nascuntur. Quod autem subdit, quod hi soli qui nunc salvandi sunt, nascerentur; intelligendum est quod pronomen facit simplicem demonstrationem: quia scilicet soli electi nascerentur quantum est ex ratione originis; non autem demonstrationem personalem, quia aliae personae essent hominum qui salvarentur.</P>
+<P TITLE="Quodlibet V, q. 5 a. 1 ad arg."><A NAME="67814"><SPAN CLASS="ref">[67814] Quodlibet V, q. 5 a. 1 ad arg. </SPAN></A>Et per hoc patet responsio ad obiecta.</P>
+<BR>
+<DIV CLASS="E">Articulus 2</DIV>
+<BR>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 5 a. 2 tit. 1"><A NAME="67815"><SPAN CLASS="tit">[67815] Quodlibet V, q. 5 a. 2 tit. 1 </SPAN></A>Utrum verbum cordis sit species intelligibilis</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 5 a. 2 tit. 2"><A NAME="67816"><SPAN CLASS="tit">[67816] Quodlibet V, q. 5 a. 2 tit. 2 </SPAN></A>Ad secundum sic proceditur: videtur quod verbum cordis sit species intelligibilis.</P>
+<P TITLE="Quodlibet V, q. 5 a. 2 arg. 1"><A NAME="67817"><SPAN CLASS="ref">[67817] Quodlibet V, q. 5 a. 2 arg. 1 </SPAN></A>Verbum enim cordis est quo intellectus videt. Hoc autem est species intelligibilis. Ergo verbum cordis est species intelligibilis.</P>
+<P TITLE="Quodlibet V, q. 5 a. 2 arg. 2"><A NAME="67818"><SPAN CLASS="ref">[67818] Quodlibet V, q. 5 a. 2 arg. 2 </SPAN></A>Praeterea, cognitio intellectiva a sensu oritur. Sed illud quod sensus sentit, est species intelligibilis. Ergo verbum cordis quo intellectus intelligit, est species intelligibilis.</P>
+<P TITLE="Quodlibet V, q. 5 a. 2 s. c."><A NAME="67819"><SPAN CLASS="ref">[67819] Quodlibet V, q. 5 a. 2 s. c. </SPAN></A>Sed contra, verbum cordis interius est quod exteriori verbo significatur. Sed verbum exterius non significat speciem intelligibilem. Ergo verbum interius non est ipsa species intelligibilis.</P>
+<P TITLE="Quodlibet V, q. 5 a. 2 co."><A NAME="67820"><SPAN CLASS="ref">[67820] Quodlibet V, q. 5 a. 2 co. </SPAN></A>Respondeo. Dicendum, quod secundum Augustinum, XV de Trinit., verbum cordis importat quoddam procedens a mente, sive ab intellectu. Procedit autem aliquid ab intellectu, in quantum est constitutum per operationem ipsius. Est autem duplex operatio intellectus, secundum philosophum in III de anima. Una quidem quae vocatur indivisibilium intelligentia, per quam intellectus format in seipso definitionem, vel conceptum alicuius incomplexi. Alia autem operatio est intellectus componentis et dividentis, secundum quam format enuntiationem. Et utrumque istorum per operationem intellectus constitutorum vocatur verbum cordis, quorum primum significatur per terminum incomplexum, secundum vero significatur per orationem. Manifestum est autem quod omnis operatio intellectus procedit ab eo secundum quod est factus in actu per speciem intelligibilem, quia nihil operatur nisi secundum quod est actu. Unde necesse est quod species intelligibilis, quae est principium operationis intellectualis, differat a verbo cordis, quod est per operationem intellectus formatum; quamvis ipsum verbum possit dici forma vel species intelligibilis, sicut per intellectum constituta, prout forma artis quam intellectus adinvenit, dicitur quaedam species intelligibilis.</P>
+<P TITLE="Quodlibet V, q. 5 a. 2 ad 1"><A NAME="67821"><SPAN CLASS="ref">[67821] Quodlibet V, q. 5 a. 2 ad 1 </SPAN></A>Ad primum ergo dicendum, quod intellectus intelligit aliquid dupliciter: uno modo formaliter, et sic intelligit specie intelligibili qua fit in actu; alio modo sicut instrumento quo utitur ad aliud intelligendum: et hoc modo intellectus verbo intelligit, quia format verbum ad hoc quod intelligat rem.</P>
+<P TITLE="Quodlibet V, q. 5 a. 2 ad 2"><A NAME="67822"><SPAN CLASS="ref">[67822] Quodlibet V, q. 5 a. 2 ad 2 </SPAN></A>Ad secundum dicendum, quod cognitio sensus exterioris perficitur per solam immutationem sensus a sensibili: unde per formam quae sibi a sensibili imprimitur, sentit: non autem ipse sensus exterior format sibi aliquam formam sensibilem: hoc autem facit vis imaginativa, cuius formae quodammodo simile est verbum intellectus.</P>
+<BR>
+<DIV CLASS="E">Articulus 3</DIV>
+<BR>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 5 a. 3 tit. 1"><A NAME="67823"><SPAN CLASS="tit">[67823] Quodlibet V, q. 5 a. 3 tit. 1 </SPAN></A>Utrum ea quae per timorem fiunt, sint voluntaria</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 5 a. 3 tit. 2"><A NAME="67824"><SPAN CLASS="tit">[67824] Quodlibet V, q. 5 a. 3 tit. 2 </SPAN></A>Circa tertium sic proceditur: videtur quod ea quae fiunt ex timore, non sint voluntaria.</P>
+<P TITLE="Quodlibet V, q. 5 a. 3 arg."><A NAME="67825"><SPAN CLASS="ref">[67825] Quodlibet V, q. 5 a. 3 arg. </SPAN></A>Necessitas enim voluntati contrariatur, ut dicitur in V Metaph. Sed ea quae fiunt ex timore, dicuntur ex necessitate fieri. Non ergo sunt voluntaria.</P>
+<P TITLE="Quodlibet V, q. 5 a. 3 s. c."><A NAME="67826"><SPAN CLASS="ref">[67826] Quodlibet V, q. 5 a. 3 s. c. </SPAN></A>Sed contra, omne quod quis operatur propter finem, est voluntarium. Sed ea quae quis operatur ex timore, operatur propter finem, scilicet ad vitandum malum quod timet; sicut qui proiicit merces in mare, vitat submersionem navis. Ergo huiusmodi sunt voluntaria.</P>
+<P TITLE="Quodlibet V, q. 5 a. 3 co."><A NAME="67827"><SPAN CLASS="ref">[67827] Quodlibet V, q. 5 a. 3 co. </SPAN></A>Respondeo. Dicendum, quod cum bonum sit voluntatis obiectum, hoc modo se habet aliquid ad hoc quod sit voluntarium, quo modo se habet ad hoc quod sit bonum. Contingit autem aliquid in universali consideratum esse bonum, quod tamen secundum aliquas particulares circumstantias redditur malum; sicut generare filios est bonum, sed generare filios ex non sua uxore est malum. Et similiter contingit, aliquid in universali consideratum esse malum, quod tamen secundum aliquas particulares circumstantias fit bonum; sicut occidere, secundum se est malum, sed occidere hominem perniciosum multitudini, est bonum. Et quia actiones circa singularia iudicantur bonae vel malae, et per consequens voluntariae vel involuntariae, simpliciter quidem consideratis singularibus circumstantiis, secundum quid autem secundum quod in universali considerantur: ea quae ex timore fiunt, in universali quidem considerata, sunt mala et involuntaria; sed si considerentur secundum singularia quae circumstant, sic sunt bona et voluntaria: sicut proiicere merces in mare, secundum se consideratum, est malum et non voluntarium, sed in tali casu est bonum et voluntarium. Unde et philosophus dicit in III Ethic., quod huiusmodi mixta sunt ex voluntario et involuntario; simpliciter autem sunt voluntaria, secundum quid autem involuntaria, ex necessitate facti.</P>
+<P TITLE="Quodlibet V, q. 5 a. 3 ad arg."><A NAME="67828"><SPAN CLASS="ref">[67828] Quodlibet V, q. 5 a. 3 ad arg. </SPAN></A>Et per hoc patet responsio ad obiecta.</P>
+<BR>
+<DIV CLASS="D">Quaestio 6</DIV>
+<DIV CLASS="G">Prooemium</DIV>
+<P TITLE="Quodlibet V, q. 6 pr."><A NAME="67829"><SPAN CLASS="ref">[67829] Quodlibet V, q. 6 pr. </SPAN></A>Deinde circa sacramenta quaesitum est.- Primo de sacramento Eucharistiae.- Secundo de sacramento poenitentiae.- Tertio de sacramento matrimonii. Circa Eucharistiam quaesita sunt duo.</P>
+<P TITLE="Quodlibet V, q. 6 pr. 1"><A NAME="67830"><SPAN CLASS="tit">[67830] Quodlibet V, q. 6 pr. 1 </SPAN></A>Primo utrum forma panis annihiletur.</P>
+<P TITLE="Quodlibet V, q. 6 pr. 2"><A NAME="67831"><SPAN CLASS="tit">[67831] Quodlibet V, q. 6 pr. 2 </SPAN></A>Secundo utrum sacerdos dare debeat hostiam non consecratam peccatori occulto hoc petenti.</P>
+<BR>
+<DIV CLASS="E">Articulus 1</DIV>
+<BR>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 6 a. 1 tit. 1"><A NAME="67832"><SPAN CLASS="tit">[67832] Quodlibet V, q. 6 a. 1 tit. 1 </SPAN></A>Utrum forma panis in sacramento Eucharistiae annihiletur</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 6 a. 1 tit. 2"><A NAME="67833"><SPAN CLASS="tit">[67833] Quodlibet V, q. 6 a. 1 tit. 2 </SPAN></A>Ad primum sic proceditur: videtur quod forma panis in sacramento Eucharistiae annihiletur.</P>
+<P TITLE="Quodlibet V, q. 6 a. 1 arg. 1"><A NAME="67834"><SPAN CLASS="ref">[67834] Quodlibet V, q. 6 a. 1 arg. 1 </SPAN></A>Illud enim annihilari videtur, quod desinit esse et in nihil convertitur. Sed forma panis, facta consecratione, desinit esse, nec est dare in quod convertatur: non enim convertitur in materiam corporis Christi, nec etiam in formam eius, quae est anima, alioquin anima esset ibi ex vi sacramenti. Ergo forma panis annihilatur.</P>
+<P TITLE="Quodlibet V, q. 6 a. 1 arg. 2"><A NAME="67835"><SPAN CLASS="ref">[67835] Quodlibet V, q. 6 a. 1 arg. 2 </SPAN></A>Praeterea, Augustinus dicit: <I>si humana natura convertitur in verbum, si diligentius cogitamus, homo periret in Deo</I>. Sed illud annihilari dicitur quod perit. Ergo, si panis convertitur in corpus Christi, videtur quod annihiletur.</P>
+<P TITLE="Quodlibet V, q. 6 a. 1 s. c."><A NAME="67836"><SPAN CLASS="ref">[67836] Quodlibet V, q. 6 a. 1 s. c. </SPAN></A>Sed contra est, quia sicut Augustinus dicit, Lib. LXXXIII quaest., Deus non est auctor tendendi in non esse. Est autem auctor sacramenti Eucharistiae. Ergo in illo sacramento nihil annihilatur.</P>
+<P TITLE="Quodlibet V, q. 6 a. 1 co."><A NAME="67837"><SPAN CLASS="ref">[67837] Quodlibet V, q. 6 a. 1 co. </SPAN></A>Respondeo. Dicendum, quod annihilatio quemdam motum importat. Omnis autem motus denominatur a termino ad quem; unde terminus annihilationis est nihil. Consecratio autem panis in sacramento Eucharistiae, non terminatur ad nihil, sed ad corpus Christi; alioquin non esset dare quomodo corpus Christi incipiat esse sub sacramento; non enim incipit ibi esse per motum localem, alioquin desineret esse in caelo. Relinquitur ergo quod in consecratione panis non est aliqua annihilatio, sed transubstantiatio panis in corpus Christi.</P>
+<P TITLE="Quodlibet V, q. 6 a. 1 ad 1"><A NAME="67838"><SPAN CLASS="ref">[67838] Quodlibet V, q. 6 a. 1 ad 1 </SPAN></A>Ad primum ergo dicendum, quod sicut in generatione naturali neque forma neque materia generatur aut corrumpitur, sed totum compositum; ita etiam in sacramento altaris non est quaerendum seorsum de forma aut materia in quid convertatur; sed totus panis convertitur in totum corpus Christi, in quantum est corpus: quia si in triduo mortis Christi fuisset consecratio facta, non fuisset ibi anima, sed corpus exanime, sicut in sepulcro iacebat.</P>
+<P TITLE="Quodlibet V, q. 6 a. 1 ad 2"><A NAME="67839"><SPAN CLASS="ref">[67839] Quodlibet V, q. 6 a. 1 ad 2 </SPAN></A>Ad secundum dicendum, quod perire diceretur natura humana, si converteretur in verbum, in quantum esse desineret, quod pertinet ad terminum a quo; non autem si annihiletur quantum ad terminum ad quem.</P>
+<BR>
+<DIV CLASS="E">Articulus 2</DIV>
+<BR>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 6 a. 2 tit. 1"><A NAME="67840"><SPAN CLASS="tit">[67840] Quodlibet V, q. 6 a. 2 tit. 1 </SPAN></A>Utrum sacerdos dare debeat hostiam non consecratam peccatori occulto hoc petenti</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 6 a. 2 tit. 2"><A NAME="67841"><SPAN CLASS="tit">[67841] Quodlibet V, q. 6 a. 2 tit. 2 </SPAN></A>Circa secundum sic procedebatur: videtur quod sacerdos non debeat dare hostiam non consecratam peccatori occulto hoc petenti.</P>
+<P TITLE="Quodlibet V, q. 6 a. 2 arg. 1"><A NAME="67842"><SPAN CLASS="ref">[67842] Quodlibet V, q. 6 a. 2 arg. 1 </SPAN></A>Non enim debet sacerdos peccatum occultum publicare. Publicaret autem, si ei daret hostiam non consecratam, cum aliis sociis daret consecratam. Ergo sacerdos non debet dare hostiam non consecratam peccatori occulto hoc petenti.</P>
+<P TITLE="Quodlibet V, q. 6 a. 2 arg. 2"><A NAME="67843"><SPAN CLASS="ref">[67843] Quodlibet V, q. 6 a. 2 arg. 2 </SPAN></A>Praeterea, hostia consecrata a sacerdote alicui fideli porrecta, a circumstantibus adoratur. Si ergo exhibet hostiam non consecratam loco consecratae, quantum est in se, faciet populum idololatrare; quod est grave peccatum. Non ergo sacerdos debet peccatori occulto petenti dare hostiam non consecratam.</P>
+<P TITLE="Quodlibet V, q. 6 a. 2 arg. 3"><A NAME="67844"><SPAN CLASS="ref">[67844] Quodlibet V, q. 6 a. 2 arg. 3 </SPAN></A>Sed contra, est quia sacerdos est medicus animarum. Sapiens autem medicus vitat, quantum potest, periculum infirmi quem accepit in cura. Peccatori autem, cuius curam habet, imminet magnum periculum, si in conscientia mortalis peccati corpus Christi accipiat; quia <I>qui manducat et bibit indigne, iudicium sibi manducat et bibit</I>, ut dicitur I Cor. XI, 29. Ergo sacerdos bene facit, si eius periculum evitet, porrigens ei hostiam non consecratam.</P>
+<P TITLE="Quodlibet V, q. 6 a. 2 co."><A NAME="67845"><SPAN CLASS="ref">[67845] Quodlibet V, q. 6 a. 2 co. </SPAN></A>Respondeo. Dicendum, quod veritati non est aliqua fictio adiungenda, quia nulla est conventio lucis ad tenebras, ut apostolus dicit II ad Cor. VI, 14 ss.: et propter hoc Augustinus probat in libro LXXXIII quaestionum, quod corpus Christi non fuit phantasticum, quia veritas, quae est Christus, non potuit fallere. Et ideo in sacramentis Ecclesiae nihil est per fictionem agendum, et praecipue in sacramento altaris, in quo totus Christus continetur. Esset autem quaedam fictio, si hostia non consecrata loco consecratae daretur; cum etiam sacerdos, quantum in se est, populo fieret idololatrandi occasio: qui quamvis peccatum idololatriae non incurreret, aestimans probabiliter hostiam esse consecratam, tamen sacerdos in hoc quod hostiam non consecratam populo exhiberet adorandam, idololatriae crimen incurreret. Unde hoc in nullo casu est faciendum, ut hostia non consecrata exhibeatur uni vel pluribus tamquam consecrata. Debet ergo sacerdos peccatorem occultum primo quidem monere ut poenitentiam agat, et sic ad sacramentum accedat; quod si poenitere noluerit, debet ei occulte inhibere ne aliis communicantibus in publico se immisceat; quod si se immiscuerit, debet ei dare hostiam consecratam.</P>
+<P TITLE="Quodlibet V, q. 6 a. 2 ad 1"><A NAME="67846"><SPAN CLASS="ref">[67846] Quodlibet V, q. 6 a. 2 ad 1 </SPAN></A>Unde prima duo concedimus.</P>
+<P TITLE="Quodlibet V, q. 6 a. 2 ad 3"><A NAME="67847"><SPAN CLASS="ref">[67847] Quodlibet V, q. 6 a. 2 ad 3 </SPAN></A>Ad tertium dicendum, quod stultus esset medicus, qui cum maiori suo periculo minus periculum infirmi vellet impedire; puta si vellet ipse venenum bibere, ne infirmus biberet vinum. Multo autem magis peccat sacerdos fictionem faciens in sacramento Christi quam peccator indigne sumens. Unde stultus esset sacerdos si, ut vitaret peccatum subdit, ipse gravius peccaret, fictionem faciens in sacramento veritatis.</P>
+<BR>
+<DIV CLASS="D">Quaestio 7</DIV>
+<DIV CLASS="G">Prooemium</DIV>
+<P TITLE="Quodlibet V, q. 7 pr."><A NAME="67848"><SPAN CLASS="ref">[67848] Quodlibet V, q. 7 pr. </SPAN></A>Deinde circa sacramentum poenitentiae quaesita sunt duo.</P>
+<P TITLE="Quodlibet V, q. 7 pr. 1"><A NAME="67849"><SPAN CLASS="tit">[67849] Quodlibet V, q. 7 pr. 1 </SPAN></A>Primo utrum praelatus debeat subditum suum ab administratione removere propter aliquid quod ab eo in confessione audivit.</P>
+<P TITLE="Quodlibet V, q. 7 pr. 2"><A NAME="67850"><SPAN CLASS="tit">[67850] Quodlibet V, q. 7 pr. 2 </SPAN></A>Secundo utrum in meliori statu moriatur ille qui moritur in via eundi ultra mare, quam ille qui moritur in redeundo.</P>
+<BR>
+<DIV CLASS="E">Articulus 1</DIV>
+<BR>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 7 a. 1 tit. 1"><A NAME="67851"><SPAN CLASS="tit">[67851] Quodlibet V, q. 7 a. 1 tit. 1 </SPAN></A>Utrum praelatus debeat subditum suum ab administratione removere propter aliquid quod ab eo in confessione audivit</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 7 a. 1 tit. 2"><A NAME="67852"><SPAN CLASS="tit">[67852] Quodlibet V, q. 7 a. 1 tit. 2 </SPAN></A>Circa primum sic proceditur: videtur quod praelatus possit subditum suum ab administratione removere propter aliquid quod ab eo in confessione audivit.</P>
+<P TITLE="Quodlibet V, q. 7 a. 1 arg."><A NAME="67853"><SPAN CLASS="ref">[67853] Quodlibet V, q. 7 a. 1 arg. </SPAN></A>Quia quod institutum est pro caritate, contra caritatem non militat. Sed sigillum confessionis institutum est pro caritate. Non ergo militat contra caritatem, ex qua tenetur praelatus saluti subditorum providere. Est autem quandoque contra salutem subditi, si ei administratio dimittatur, ut puta si habeat occasionem recidivandi in peccatum. Ergo, non obstante sigillo confessionis, praelatus debet eum ab administratione removere.</P>
+<P TITLE="Quodlibet V, q. 7 a. 1 s. c."><A NAME="67854"><SPAN CLASS="ref">[67854] Quodlibet V, q. 7 a. 1 s. c. </SPAN></A>Sed contra, est quia nihil est faciendum in praeiudicium confessionis. Esset autem praeiudicium confessionis, si subditus ab administratione removeretur propter crimen quod suo praelato confessus est, quia per hoc alii retraherentur a confitendo. Non ergo debet praelatus subditum ab administratione removere propter peccatum quod ei confessus est.</P>
+<P TITLE="Quodlibet V, q. 7 a. 1 co."><A NAME="67855"><SPAN CLASS="ref">[67855] Quodlibet V, q. 7 a. 1 co. </SPAN></A>Respondeo. Dicendum, quod id quod per confessionem auditur, nullo modo est manifestandum nec verbo nec signo nec nutu; nec etiam aliquid est faciendum, unde in suspicionem peccati aliquis possit devenire. Si ergo amotio subditi ab administratione possit inducere ad manifestandum peccatum in confessione auditum, vel ad aliquam probabilem suspicionem habendam de ipso, nullo modo praelatus deberet subditum ab administratione removere; puta, si in aliquo monasterio esset consuetum quod priores non amoverentur de suis prioratibus nisi propter culpam, manifestaretur peccatum confitentis per remotionem ab administratione. Unde si abbas hoc faceret, graviter peccaret tamquam confessionem revelans. Posset tamen eum secreto caritative admonere ut cum instantia peteret cessionem, si hoc videret saluti eius expedire. Si vero per amotionem ab administratione peccatum nullatenus manifestaretur, puta, si in aliquo monasterio esset consuetum quod abbas pro suo libito de facili aliquos ab administratione removeret; tunc alia occasione accepta posset subditum sibi confessum ab administratione removere, et deberet hoc facere cum debita tamen cautela, si talis administratio esset subdito periculosa in posterum; quamvis etiam et in hoc casu melius esset quod eum induceret ad cessionem petendam. Si vero periculum in posterum non timeretur, non oportet quod pro peccato praeterito per poenitentiam deleto eum ab administratione removeret; sicut etiam Augustinus dicit in Lib. de adulterinis coniugiis: <I>cur adhuc deputamus adulteros quos credimus poenitentia esse sanatos?</I> Quandoque enim poenitentes innocentibus meliores sunt.</P>
+<P TITLE="Quodlibet V, q. 7 a. 1 ad arg."><A NAME="67856"><SPAN CLASS="ref">[67856] Quodlibet V, q. 7 a. 1 ad arg. </SPAN></A>Et per hoc patet responsio ad obiecta.</P>
+<BR>
+<DIV CLASS="E">Articulus 2</DIV>
+<BR>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 7 a. 2 tit. 1"><A NAME="67857"><SPAN CLASS="tit">[67857] Quodlibet V, q. 7 a. 2 tit. 1 </SPAN></A>Utrum in meliori statu moriatur ille crucesignatus qui moritur in via eundi ultra mare, quam ille qui moritur in redeundo</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 7 a. 2 tit. 2"><A NAME="67858"><SPAN CLASS="tit">[67858] Quodlibet V, q. 7 a. 2 tit. 2 </SPAN></A>Ad secundum sic proceditur: videtur quod melius moriatur crucesignatus qui in via eundi ultra mare moritur, quam ille qui moritur in redeundo.</P>
+<P TITLE="Quodlibet V, q. 7 a. 2 arg."><A NAME="67859"><SPAN CLASS="ref">[67859] Quodlibet V, q. 7 a. 2 arg. </SPAN></A>Qui enim moritur in eundo, moritur quasi prosequendo votum suum, ut se exponat morti pro Christo, et ita moritur tamquam martyr; qui autem moritur in redeundo, non moritur in proposito se exponendi pro Christo, et ita moritur quasi confessor. Sed maior est status martyrum quam confessorum. Ergo in meliori statu moritur qui moritur in eundo, quam qui moritur in redeundo.</P>
+<P TITLE="Quodlibet V, q. 7 a. 2 s. c."><A NAME="67860"><SPAN CLASS="ref">[67860] Quodlibet V, q. 7 a. 2 s. c. </SPAN></A>Sed contra, qui moritur in redeundo, iam consummavit votum suum; qui autem moritur in eundo, nondum consummavit, sed est quasi in principio. Perfectum autem melius est imperfecto, et finis principio. Ergo melius moritur qui moritur in redeundo, quam qui moritur in eundo.</P>
+<P TITLE="Quodlibet V, q. 7 a. 2 co."><A NAME="67861"><SPAN CLASS="ref">[67861] Quodlibet V, q. 7 a. 2 co. </SPAN></A>Respondeo. Dicendum, quod quanto aliquis cum pluribus meritis moritur, tanto melius moritur. Merita autem manent homini, non solum illa quae actu agit, sed etiam illa quae iam fecit, quasi apud Deum deposita, secundum illud II ad Timoth. I, 12: <I>scio (...) cui credidi; et certus sum quia potens est depositum meum servare</I>. Manifestum est autem, quod ille qui moritur in redeundo de ultra mare, ceteris paribus, cum pluribus meritis moritur quam ille qui moritur in eundo: habet enim meritum ex assumptione itineris, et ulterius ex prosecutione, in qua forte multa gravia est passus. Et ideo, ceteris paribus, melius moritur ille qui moritur redeundo; quamvis ire sit magis meritorium quam redire, genus operis considerando.</P>
+<P TITLE="Quodlibet V, q. 7 a. 2 ad arg."><A NAME="67862"><SPAN CLASS="ref">[67862] Quodlibet V, q. 7 a. 2 ad arg. </SPAN></A>Ad primum ergo dicendum, quod illud propositum exponendi se morti propter Christum, habuit etiam iste in eundo; nec hoc meritum perdidit, si se a peccato immunem custodivit.</P>
+<BR>
+<DIV CLASS="D">Quaestio 8</DIV>
+<DIV CLASS="G">Prooemium</DIV>
+<P TITLE="Quodlibet V, q. 8 pr."><A NAME="67863"><SPAN CLASS="ref">[67863] Quodlibet V, q. 8 pr. </SPAN></A>Deinde circa matrimonium quaesita sunt duo.</P>
+<P TITLE="Quodlibet V, q. 8 pr. 1"><A NAME="67864"><SPAN CLASS="tit">[67864] Quodlibet V, q. 8 pr. 1 </SPAN></A>Primo si aliquis despondeat aliquam per verba de futuro, et postea carnaliter cognoscat, non quidem quasi consentiens in matrimonium, sed solummodo volens fraudulenter surripere copulam carnalem, si postmodum contrahat cum alia per verba de praesenti, utrum secunda sit uxor eius.</P>
+<P TITLE="Quodlibet V, q. 8 pr. 2"><A NAME="67865"><SPAN CLASS="tit">[67865] Quodlibet V, q. 8 pr. 2 </SPAN></A>Secundo si vir accuset uxorem de adulterio occulto, utrum mulier teneatur in iudicio suum peccatum confiteri.</P>
+<BR>
+<DIV CLASS="E">Articulus 1</DIV>
+<BR>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 8 a. 1 tit. 1"><A NAME="67866"><SPAN CLASS="tit">[67866] Quodlibet V, q. 8 a. 1 tit. 1 </SPAN></A>Si aliquis despondeat aliquam per verba de futuro, et postea carnaliter cognoscat (...) si postmodum contrahat cum alia per verba de praesenti, utrum secunda sit uxor eius</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 8 a. 1 tit. 2"><A NAME="67867"><SPAN CLASS="tit">[67867] Quodlibet V, q. 8 a. 1 tit. 2 </SPAN></A>Circa primum sic procedebatur: videtur quod ille qui cognovit carnaliter quam desponderat per verba de futuro, non possit habere uxorem illam cum qua postea contrahit per verba de praesenti.</P>
+<P TITLE="Quodlibet V, q. 8 a. 1 arg."><A NAME="67868"><SPAN CLASS="ref">[67868] Quodlibet V, q. 8 a. 1 arg. </SPAN></A>Iudicio enim Ecclesiae compellitur stare cum prima quam carnaliter cognovit. Sed Ecclesia potest facere personas illegitimas ad contrahendum. Ergo videtur quod talis non possit cum alia muliere habere matrimonium; et ita illa cum qua secundo contraxit per verba de praesenti, non erit uxor sua.</P>
+<P TITLE="Quodlibet V, q. 8 a. 1 s. c."><A NAME="67869"><SPAN CLASS="ref">[67869] Quodlibet V, q. 8 a. 1 s. c. </SPAN></A>Sed contra, est quod error hominis non praeiudicat veritati matrimonii. Sed ex errore hominis praesumentis esse consensum ubi fuit carnaliter copula, contingit quod per iudicium Ecclesiae compellitur aliquis illam habere quam cognovit carnaliter post contractum per verba de futuro. Ergo non praeiudicat veritati secundi matrimonii, quod est rite contractum per verba de praesenti.</P>
+<P TITLE="Quodlibet V, q. 8 a. 1 co."><A NAME="67870"><SPAN CLASS="ref">[67870] Quodlibet V, q. 8 a. 1 co. </SPAN></A>Respondeo. Dicendum, quod sicut Leo Papa dicit, causa matrimonii est consensus per verba de praesenti expressus, sine quo cetera etiam cum coitu subsecuta frustrantur. Remota autem causa removetur effectus: unde, cum in primo matrimonio ponatur non fuisse consensus, manifestum est quod non fuit matrimonium: et quia posita causa ponitur effectus, consequens est ut secundum fuerit matrimonium, in quo ponitur fuisse mutuus consensus per verba de praesenti expressus inter personas a matrimonio solutas.</P>
+<P TITLE="Quodlibet V, q. 8 a. 1 ad arg."><A NAME="67871"><SPAN CLASS="ref">[67871] Quodlibet V, q. 8 a. 1 ad arg. </SPAN></A>Ad primum ergo dicendum quod Ecclesia in his quae ad matrimonium pertinent, tripliciter se habet. Uno quidem modo per modum iudicantis: et quia homines vident ea quae apparent, secundum quod dicitur I Reg. XVI, 7, oportet quod iudex ecclesiasticus iudicet secundum ea quae sibi apparent per confessiones partium, et per idoneos testes, et per alia legitima documenta: quibus omnibus adhibitis contingit quandoque veritatem latere; et praecipue in his quae pertinent ad interiora cordis, quae humano testimonio probari non possunt, etsi per aliqua signa exteriora de his possit aliqua coniectura haberi. Et ideo iudicium Ecclesiae circa ea quae ad matrimonium pertinent, si veritas lateat, non impedit sequens matrimonium contrahendum nec dirimit iam contractum. Alio modo se habet per modum prohibentis vel punientis: et hoc quidem impedit matrimonium contrahendum, sed non dirimit iam contractum; puta, uxoricidae poenam imponit Ecclesia ut ulterius a matrimonio abstineat; si tamen contraxerit, matrimonium non dirimitur. Tertio modo se habet per modum statuentis, quod fit solum auctoritate summi pontificis: et secundum hoc personae aliquae redduntur illegitimae ad contrahendum, ita quod si etiam contrahant, matrimonium dirimitur, ut patet in quibusdam gradibus consanguinitatis et affinitatis; vel etiam de adultera, cum quis dedit ei fidem de contrahendo, vel cum machinatus est in mortem uxoris.</P>
+<BR>
+<DIV CLASS="E">Articulus 2</DIV>
+<BR>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 8 a. 2 tit. 1"><A NAME="67872"><SPAN CLASS="tit">[67872] Quodlibet V, q. 8 a. 2 tit. 1 </SPAN></A>Si vir accuset uxorem de adulterio occulto, utrum mulier teneatur in iudicio suum peccatum confiteri</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 8 a. 2 tit. 2"><A NAME="67873"><SPAN CLASS="tit">[67873] Quodlibet V, q. 8 a. 2 tit. 2 </SPAN></A>Ad secundum sic proceditur: videtur quod mulier accusata de adulterio occulto, non teneatur suum peccatum in iudicio confiteri.</P>
+<P TITLE="Quodlibet V, q. 8 a. 2 arg."><A NAME="67874"><SPAN CLASS="ref">[67874] Quodlibet V, q. 8 a. 2 arg. </SPAN></A>Nullus enim tenetur suum peccatum occultum publicare. Sed adulterium mulieris est occultum. Si autem in iudicio confiteretur ipsum, veniret in publicum. Ergo non tenetur mulier accusata de adulterio suum peccatum in iudicio confiteri.</P>
+<P TITLE="Quodlibet V, q. 8 a. 2 s. c."><A NAME="67875"><SPAN CLASS="ref">[67875] Quodlibet V, q. 8 a. 2 s. c. </SPAN></A>Sed contra, est quia debet praestare iuramentum de veritate dicenda. Sed nullo modo debet deierare. Ergo debet veritatem confiteri de suo peccato.</P>
+<P TITLE="Quodlibet V, q. 8 a. 2 co."><A NAME="67876"><SPAN CLASS="ref">[67876] Quodlibet V, q. 8 a. 2 co. </SPAN></A>Respondeo. Dicendum, quod circa hoc est distinguendum. Si enim adulterium sit omnino occultum, non debet peccatum suum in iudicio confiteri, nec debet ab ea exigi iuramentum de veritate dicenda, quia occulta soli divino iudicio reservantur, secundum illud I ad Cor. c. IV, 5: <I>nolite ante tempus iudicare, quoadusque veniat dominus, qui (...) illuminabit abscondita tenebrarum</I>. Sed quando ex adulterio procedit infamia, vel aliqua signa evidentia apparent, quae vehementem suspicionem facere possunt, vel quando est semiplene probatum; tunc debet ab ea exigi iuramentum de veritate dicenda, et ipsa tenetur confiteri veritatem.</P>
+<P TITLE="Quodlibet V, q. 8 a. 2 ad arg."><A NAME="67877"><SPAN CLASS="ref">[67877] Quodlibet V, q. 8 a. 2 ad arg. </SPAN></A>Et per hoc patet responsio ad obiecta.</P>
+<BR>
+<DIV CLASS="D">Quaestio 9</DIV>
+<DIV CLASS="G">Prooemium</DIV>
+<P TITLE="Quodlibet V, q. 9 pr."><A NAME="67878"><SPAN CLASS="ref">[67878] Quodlibet V, q. 9 pr. </SPAN></A>Deinde circa virtutes quaesita sunt duo.</P>
+<P TITLE="Quodlibet V, q. 9 pr. 1"><A NAME="67879"><SPAN CLASS="tit">[67879] Quodlibet V, q. 9 pr. 1 </SPAN></A>Primo circa iustitiam; scilicet si aliquis incidens in latrones, promittat eis pecuniam pro sua liberatione, si mutuo eam accipiat ab aliquo suo amico, utrum restituere teneatur.</P>
+<P TITLE="Quodlibet V, q. 9 pr. 2"><A NAME="67880"><SPAN CLASS="tit">[67880] Quodlibet V, q. 9 pr. 2 </SPAN></A>Secundo circa abstinentiam, utrum aliquis peccare possit nimis ieiunando vel vigilando.</P>
+<BR>
+<DIV CLASS="E">Articulus 1</DIV>
+<BR>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 9 a. 1 tit. 1"><A NAME="67881"><SPAN CLASS="tit">[67881] Quodlibet V, q. 9 a. 1 tit. 1 </SPAN></A>Si aliquis incidens in latrones, promittat eis pecuniam pro sua liberatione, si mutuo eam accipiat ab aliquo suo amico, utrum restituere teneatur</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 9 a. 1 tit. 2"><A NAME="67882"><SPAN CLASS="tit">[67882] Quodlibet V, q. 9 a. 1 tit. 2 </SPAN></A>Ad primum sic procedebatur: videtur quod ille qui pecuniam accepit mutuo ut redimeret se a latronibus, non teneatur eam restituere.</P>
+<P TITLE="Quodlibet V, q. 9 a. 1 arg. 1"><A NAME="67883"><SPAN CLASS="ref">[67883] Quodlibet V, q. 9 a. 1 arg. 1 </SPAN></A>Quia, ut Augustinus dicit, tempore necessitatis omnia sunt communia. Sed nullus debet quasi proprium petere id quod est commune, ut Ambrosius dicit, et habetur in decretis, dist. 4. Cum ergo ille qui in latrones incidit, fuerit in maxima necessitate constitutus, utpote in periculo mortis existens, videtur quod factum sit sibi commune aliquid quod erat alterius; et ita non teneatur ei restituere qui mutuavit, ac si esset proprium eius.</P>
+<P TITLE="Quodlibet V, q. 9 a. 1 arg. 2"><A NAME="67884"><SPAN CLASS="ref">[67884] Quodlibet V, q. 9 a. 1 arg. 2 </SPAN></A>Praeterea, nullus tenetur facere recompensationem alicui pro eo quod ille facere tenebatur. Sed ille qui mutuavit pecuniam, tenebatur proximum suum a mortis periculo liberare, secundum illud Prov. XXIV, 11: <I>erue eos qui ducuntur ad mortem</I>. Ergo videtur quod ille qui est liberatus, non teneatur ei restituere pecuniam mutuatam.</P>
+<P TITLE="Quodlibet V, q. 9 a. 1 s. c."><A NAME="67885"><SPAN CLASS="ref">[67885] Quodlibet V, q. 9 a. 1 s. c. </SPAN></A>Sed contra, est quod dominus, Matth. cap. VII, 12, dicit: <I>omnia (...) quae vultis ut faciant vobis homines, et vos facite illis</I>. Sed ille qui liberatus est a latronibus, vellet sibi restitui, si quid mutuasset. Ergo etiam ipse debet restituere quod mutuo accepit.</P>
+<P TITLE="Quodlibet V, q. 9 a. 1 co."><A NAME="67886"><SPAN CLASS="ref">[67886] Quodlibet V, q. 9 a. 1 co. </SPAN></A>Respondeo. Dicendum, quod iustitiae actus est unicuique reddere quod sibi debetur. Unde, cum ratione contractus bonae fidei, qui fuit inter mutuantem et mutuo accipientem, restitutio debeatur ex iustitiae praecepto; tenetur ille qui mutuo accepit pecuniam, eam reddere creditori; et tanto magis, quanto in maiori necessitate creditor sibi subvenit.</P>
+<P TITLE="Quodlibet V, q. 9 a. 1 ad 1"><A NAME="67887"><SPAN CLASS="ref">[67887] Quodlibet V, q. 9 a. 1 ad 1 </SPAN></A>Ad primum ergo dicendum quod tunc in necessitate fiunt omnia communia cum homo non potest sibi de suo subvenire; ridiculum enim esset, si quis famem patiens nollet accipere panem quem haberet in arca, et diceret se accipere panem alienum quasi communem. Quae autem per amicos possumus, per nos aliqualiter possumus, ut dicit philosophus in V Ethic. Iste autem qui in latrones incidit, potest se per amicos liberare mutuum accipiendo; et ideo non fiunt ei omnia communia.</P>
+<P TITLE="Quodlibet V, q. 9 a. 1 ad 2"><A NAME="67888"><SPAN CLASS="ref">[67888] Quodlibet V, q. 9 a. 1 ad 2 </SPAN></A>Ad secundum dicendum, quod unusquisque tenetur ad liberandum proximum a morte secundum suam conditionem et modum; et hoc quidem convenienter implevit ille qui pecuniam mutuavit; non autem tenebatur eam donare in casu quo ille poterat per mutuum liberari.</P>
+<BR>
+<DIV CLASS="E">Articulus 2</DIV>
+<BR>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 9 a. 2 tit. 1"><A NAME="67889"><SPAN CLASS="tit">[67889] Quodlibet V, q. 9 a. 2 tit. 1 </SPAN></A>Utrum aliquis peccare possit nimis ieiunando vel vigilando</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 9 a. 2 tit. 2"><A NAME="67890"><SPAN CLASS="tit">[67890] Quodlibet V, q. 9 a. 2 tit. 2 </SPAN></A>Circa secundum sic proceditur: videtur quod homo non possit peccare nimis ieiunando vel vigilando.</P>
+<P TITLE="Quodlibet V, q. 9 a. 2 arg."><A NAME="67891"><SPAN CLASS="ref">[67891] Quodlibet V, q. 9 a. 2 arg. </SPAN></A>Deus enim non potest nimis ab homine diligi. Sed probatio dilectionis est exhibitio operis, ut Gregorius dicit in homilia quadam. Ergo videtur quod non possit aliquis peccare nimis ieiunando vel vigilando propter Deum.</P>
+<P TITLE="Quodlibet V, q. 9 a. 2 s. c."><A NAME="67892"><SPAN CLASS="ref">[67892] Quodlibet V, q. 9 a. 2 s. c. </SPAN></A>Sed contra, est quod Bernardus confitetur se peccasse de hoc quod nimis corpus suum ieiunando et vigilando debilitavit.</P>
+<P TITLE="Quodlibet V, q. 9 a. 2 co."><A NAME="67893"><SPAN CLASS="ref">[67893] Quodlibet V, q. 9 a. 2 co. </SPAN></A>Respondeo. Dicendum, quod, secundum philosophum in I Polit., aliter est iudicandum de fine, aliter de his quae sunt ad finem. Illud enim quod quaeritur tamquam finis, absque mensura quaerendum est; in his autem quae sunt ad finem, est adhibenda mensura secundum proportionem ad finem; sicut medicus sanitatem, quae est finis eius, facit quantumcumque potest maiorem; sed adhibet medicinam secundum quod convenit ad sanitatem faciendam. Est ergo considerandum, quod in spirituali vita dilectio Dei est sicut finis; ieiunia autem et vigiliae et alia exercitia corporalia non quaeruntur tamquam finis; quia, sicut dicitur ad Rom. cap. XIV, 17, <I>non est regnum Dei esca et potus</I>; sed adhibentur tamquam necessaria ad finem, idest ad domandas concupiscentias carnis, secundum illud apostoli, I ad Cor. IX, 27: <I>castigo corpus meum, et in servitutem redigo</I> et cetera. Et ideo huiusmodi sunt adhibenda cum quadam mensura rationis: ut scilicet concupiscentia devitetur, et natura non extinguatur; secundum illud ad Rom., XII, 1: <I>exhibeatis corpora vestra hostiam viventem</I>; et postea subdit: <I>rationabile obsequium vestrum</I>. Si vero aliquis in tantum virtutem naturae debilitet per ieiunia et vigilias, et alia huiusmodi, quod non sufficiat debita opera exequi; puta praedicator praedicare, doctor docere, cantor cantare, et sic de aliis; absque dubio peccat; sicut etiam peccaret vir qui nimia abstinentia se impotentem redderet ad debitum uxori reddendum. Unde Hieronymus dicit: <I>de rapina holocaustum offert qui vel ciborum nimia egestate vel somni penuria immoderate corpus affligit; et iterum rationalis hominis dignitatem amittit qui ieiunium caritati, vigilias sensus integritati praefert</I>.</P>
+<BR>
+<DIV CLASS="D">Quaestio 10</DIV>
+<DIV CLASS="G">Prooemium</DIV>
+<P TITLE="Quodlibet V, q. 10 pr."><A NAME="67894"><SPAN CLASS="ref">[67894] Quodlibet V, q. 10 pr. </SPAN></A>Deinde circa praecepta quaesita sunt duo.</P>
+<P TITLE="Quodlibet V, q. 10 pr. 1"><A NAME="67895"><SPAN CLASS="tit">[67895] Quodlibet V, q. 10 pr. 1 </SPAN></A>Primo utrum praecepta ordine naturae praecedant consilia.</P>
+<P TITLE="Quodlibet V, q. 10 pr. 2"><A NAME="67896"><SPAN CLASS="tit">[67896] Quodlibet V, q. 10 pr. 2 </SPAN></A>Secundo utrum peccata quae fiunt contra praecepta secundae tabulae, sint graviora peccatis quae fiunt contra praecepta primae tabulae.</P>
+<BR>
+<DIV CLASS="E">Articulus 1</DIV>
+<BR>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 10 a. 1 tit. 1"><A NAME="67897"><SPAN CLASS="tit">[67897] Quodlibet V, q. 10 a. 1 tit. 1 </SPAN></A>Utrum praecepta ordine naturae praecedant consilia</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 10 a. 1 tit. 2"><A NAME="67898"><SPAN CLASS="tit">[67898] Quodlibet V, q. 10 a. 1 tit. 2 </SPAN></A>Circa primum sic proceditur: videtur quod praecepta ordine naturae praecedant consilia.</P>
+<P TITLE="Quodlibet V, q. 10 a. 1 arg."><A NAME="67899"><SPAN CLASS="ref">[67899] Quodlibet V, q. 10 a. 1 arg. </SPAN></A>Illud enim est prius ordine naturae ad quod natura primo instigat. Sed praecepta sunt de primo instinctu naturae, quia sunt de dictamine rationis naturalis, non autem consilia. Ergo praecepta sunt priora ordine naturae quam consilia.</P>
+<P TITLE="Quodlibet V, q. 10 a. 1 s. c."><A NAME="67900"><SPAN CLASS="ref">[67900] Quodlibet V, q. 10 a. 1 s. c. </SPAN></A>Sed contra, est quia prius natura dicitur aliquid esse tripliciter. Uno modo sicut imperfectum est prius perfecto; et hoc modo praecepta non sunt priora consiliis, quia in praeceptis caritatis praecipue consistit perfectio. Secundo per modum causae tempore praecedentis effectum; et sic etiam non sunt priora, quia non est necessarium quod aliquis prius impleat praecepta quam consilia. Tertio per modum originis, quando principium est simul tempore, sicut lux solis et radius. Sed nec hoc modo praecepta sunt priora; quia non est necesse quod quicumque servat praecepta, servet consilia. Ergo nullo modo praecepta ordine naturae praecedunt consilia.</P>
+<P TITLE="Quodlibet V, q. 10 a. 1 co."><A NAME="67901"><SPAN CLASS="ref">[67901] Quodlibet V, q. 10 a. 1 co. </SPAN></A>Respondeo. Dicendum, quod circa hoc necesse est duo considerare: primo quid sit esse prius ordine naturae; secundo quid sit praeceptum et quid consilium: quibus manifestatis, evidenter apparebit quod quaeritur. De primo ergo sciendum est, quod secundum philosophum in V Met. prius et posterius dicuntur in quolibet ordine per comparationem ad principium illius ordinis; sicut in loco per comparationem ad principium loci, in disciplinis per comparationem ad principium disciplinae. Sic ergo et in ordine naturae dicitur aliquid esse prius per comparationem ad naturae principia: quae quidem sunt quatuor causae. Unde secundum unumquodque genus causae, prius in ordine naturae est quod propinquius est causae. Quamvis autem causae sint quatuor, tres tamen earum, scilicet efficiens, formalis et finalis, concurrunt in idem; unde relinquitur quod ordo naturae sit duplex. Unus quidem secundum rationem causae materialis, secundum quod imperfectum est prius perfecto, et potentia actu. Alius autem ordo naturae est secundum rationem aliarum trium causarum, secundum quam perfectum est prius imperfecto et actus potentia. Unde et philosophus dicit, V Metaph., quod <I>alia sunt potestate priora, alia perfectione</I>. Et quia forma est magis natura quam materia ut probatur in III Phys., convenientius dicitur esse prius natura actus, qui est prior substantia et specie, ut dicitur in III Metaph., quam potentia, quae in uno et eodem est prior generatione et tempore. Unde philosophus dicit in II perihermeneias, quod in his quae contingit esse actu et potestate, ea quae sunt actu, sunt natura priora et posteriora. Circa secundum vero, scilicet circa rationem consilii et praecepti, considerandum est, quod praeceptum importat rationem debiti; debitum autem aliquod est dupliciter. Uno modo secundum se. Et hoc modo finis est debitum in unoquoque negotio; medicus enim propter se debet quaerere sanitatem. Alio modo est aliquod debitum propter aliud; scilicet id sine quo non potest perveniri ad finem: sicut medicus debet indicere diaetam infirmo, sine qua non potest sanari. Illud vero quod ordinatur in finem ut melius aut facilius finem consequatur, si sine hoc aliqualiter possit haberi finis, non habet rationem debiti. Finis autem spiritualis, qui lege divina ordinatur, est duplex. Unus quidem principalis, scilicet adhaerere Deo per caritatem; unde dicitur I ad Tim. cap. I, 5: <I>finis (...) praecepti est caritas</I>. Alius autem finis secundarius quasi dispositivus, scilicet puritas et rectitudo cordis, quae consistit in interioribus actibus aliarum virtutum. Unde apostolus dicit, ad Roman. cap. VI, 22: <I>habetis fructum vestrum in sanctificatione</I>. Sicut etiam in generatione naturali finis est et ipsa forma substantialis, et ultima dispositio ad formam. Unde manifestum est quod principalia praecepta divina sunt quidem de dilectione Dei et proximi, ut patet Matth. XXII, 37-39: secunda vero de interiori sanctificatione, secundum illud I ad Thess. IV, 3: <I>haec est (...) voluntas Dei, sanctificatio vestra</I>. Omnia vero alia quae sunt spiritualis vitae, ordinantur ad praedicta sicut in finem sed dupliciter. Quaedam enim sunt talia sine quibus praedicti fines esse non possunt: et haec cadunt sub praecepto, sicut: <I>non habebis deos alienos, non furtum facies</I> et cetera. Quaedam autem sunt sine quibus ad praedictos fines perveniri potest; unde non cadunt sub praecepto, sed quia per huiusmodi facilius et melius pervenitur ad fines praedictos, dantur de eis consilia, sicut patet de paupertate, virginitate, et aliis huiusmodi. Et est simile si aliquis deberet ex praecepto esse Romae certo die, teneretur etiam ex debito praecepti Romam ire; non autem tenetur ex praecepto ire eques, quia sine hoc posset Romam pervenire: tamen caderet hoc sub consilio, in quantum equitando facilius et melius perveniret ad finem. His ergo visis, patet de facili id quod quaerebatur. Si enim comparemus consilia ad praecepta finalia, quae sunt de dilectione Dei et proximi, de interiori cordis puritate; manifestum est quod praecepta sunt priora consiliis naturaliter ordine perfectionis, sicut naturaliter prior est potentia et finis his quae sunt ad finem; sed consilia erunt priora naturaliter ordine generationis et temporis: in quantum scilicet per consilia ad puritatem perfectam cordis et perfectam dilectionem Dei et proximi pervenimus. Si autem comparemus consilia ad alia praecepta quae ordinantur ex necessitate in praedictos fines; sic erit duplex consideratio. Nam in consiliis necesse est ut includantur praecepta: qui enim omnia dimittit non rapit aliena; et qui virginitatem servat, non moechatur: sicut etiam qui equitat, vadit; sed non convertitur. Erit ergo una comparatio consiliorum ad praecepta absolute considerata. Et sic hoc modo praecepta erunt ordine naturae priora consiliis, sicut genus est naturaliter prius specie; consilia autem e converso priora naturaliter praeceptis, sicut species sunt priores secundum naturam quam genera, ut patet per philosophum, I Phys. Comparatur enim genus ad speciem sicut potentia ad actum. Praecepta autem absolute sumpta se habent per modum generis ad observantiam praeceptorum cum consiliis et sine consiliis; sicut non moechari ad non moechari cum virginitate, et ad non moechari cum matrimonio; et ire commune est ad ire equitum et ad ire peditum. Alia vero comparatio est consiliorum ad praecepta sine consiliis observanda, sicut si comparemus euntem in equo ad eum qui vadit pedibus. Similis enim est comparatio virginis seu continentis ad matrimonium, et pauperis propter Christum ad eum qui in saeculo suis contentus est. Et sic simpliciter ordine naturae consilia sunt priora praeceptis tamquam perfecta imperfectis. Nec oportet quod praecepta sic accepta praecedant naturaliter ordine generationis et temporis consilia: non enim oportet quod ille qui vult continentiam vel virginitatem servare, prius matrimonio iungatur; neque etiam oportet quod ille qui vult esse pauper propter Christum, prius saecularem vitam agat, in qua suis divitiis sit contentus; sicut etiam non oportet quod ille qui vult ire eques Romam, prius vadat pedes, et postea eques, sed melius est si a principio eques vadat.</P>
+<P TITLE="Quodlibet V, q. 10 a. 1 ad arg."><A NAME="67902"><SPAN CLASS="ref">[67902] Quodlibet V, q. 10 a. 1 ad arg. </SPAN></A>Et per hoc patet responsio ad obiecta.</P>
+<BR>
+<DIV CLASS="E">Articulus 2</DIV>
+<BR>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 10 a. 2 tit. 1"><A NAME="67903"><SPAN CLASS="tit">[67903] Quodlibet V, q. 10 a. 2 tit. 1 </SPAN></A>Utrum peccata quae fiunt contra praecepta secundae tabulae, sint graviora peccatis quae sunt contra praecepta primae tabulae</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 10 a. 2 tit. 2"><A NAME="67904"><SPAN CLASS="tit">[67904] Quodlibet V, q. 10 a. 2 tit. 2 </SPAN></A>Ad secundum sic proceditur: videtur quod peccata quae sunt contra praecepta secundae tabulae, sint graviora peccatis quae sunt contra praecepta primae tabulae.</P>
+<P TITLE="Quodlibet V, q. 10 a. 2 arg. 1"><A NAME="67905"><SPAN CLASS="ref">[67905] Quodlibet V, q. 10 a. 2 arg. 1 </SPAN></A>Peccatum enim contra praecepta secundae tabulae est, contempto bono incommutabili, commutabili bono adhaerere; sicut patet in furto et adulterio et aliis huiusmodi. Sed contemptus incommutabilis boni est peccatum contra praecepta primae tabulae, quibus ordinamur ad adhibendam reverentiam Deo. Ergo peccata quae sunt contra praecepta secundae tabulae, includunt peccata quae sunt contra praecepta primae tabulae, et aliquid addunt; ergo sunt graviora.</P>
+<P TITLE="Quodlibet V, q. 10 a. 2 arg. 2"><A NAME="67906"><SPAN CLASS="ref">[67906] Quodlibet V, q. 10 a. 2 arg. 2 </SPAN></A>Praeterea, simonia est maximum peccatum. Sed simonia, cum sit species avaritiae, est contra praecepta secundae tabulae. Ergo peccata quae sunt contra praecepta secundae tabulae, sunt graviora.</P>
+<P TITLE="Quodlibet V, q. 10 a. 2 s. c."><A NAME="67907"><SPAN CLASS="ref">[67907] Quodlibet V, q. 10 a. 2 s. c. </SPAN></A>Sed contra, est, quod peccata contra praecepta primae tabulae, sunt infidelitas, desperatio, et alia huiusmodi, quae sunt gravissima peccata. Ergo peccata quae sunt contra praecepta primae tabulae, sunt graviora.</P>
+<P TITLE="Quodlibet V, q. 10 a. 2 co."><A NAME="67908"><SPAN CLASS="ref">[67908] Quodlibet V, q. 10 a. 2 co. </SPAN></A>Respondeo. Dicendum, quod formalis ratio peccati mortalis consistit in aversione a Deo. Si enim esset inordinata conversio ad bonum commutabile sine aversione a Deo, non esset peccatum mortale. Praecepta autem primae tabulae secundum se ordinant directe hominem in Deum, unde dicuntur ad dilectionem Dei pertinere. Et ideo peccata quae sunt contra praecepta primae tabulae, directe et secundum se important aversionem a Deo. Peccata autem quae sunt contra praecepta secundae tabulae, per se quidem deordinant nos principaliter circa bona commutabilia, circa quae ordinamur per praecepta secundae tabulae; ex consequenti autem deordinant nos a Deo. In unoquoque autem genere potissimum est id quod est per se. Unde peccata quae sunt contra praecepta primae tabulae, secundum suum genus sunt gravissima in genere peccatorum.</P>
+<P TITLE="Quodlibet V, q. 10 a. 2 ad 1"><A NAME="67909"><SPAN CLASS="ref">[67909] Quodlibet V, q. 10 a. 2 ad 1 </SPAN></A>Ad primum ergo dicendum, quod contemptus Dei per se intentus est in peccatis quae sunt contra praecepta primae tabulae. Sic autem non ex necessitate includitur in peccatis quae sunt contra praecepta secundae tabulae: non enim ille qui fornicatur, intendit hoc agere in contemptum Dei; sed intendit principaliter delectari, ad quod consequitur quod Deum contemnat, praeter principalem intentionem mandata eius transgrediens.</P>
+<P TITLE="Quodlibet V, q. 10 a. 2 ad 2"><A NAME="67910"><SPAN CLASS="ref">[67910] Quodlibet V, q. 10 a. 2 ad 2 </SPAN></A>Ad secundum dicendum, quod simonia non est maximum peccatum simpliciter, sed maximum inter illa quae committuntur circa contractus pecuniarios; et hoc etiam est ex hoc quod irreverenter se habet homo ad res sacras, in quo attingit peccata quae sunt contra praecepta primae tabulae.</P>
+<BR>
+<DIV CLASS="D">Quaestio 11</DIV>
+<DIV CLASS="G">Prooemium</DIV>
+<P TITLE="Quodlibet V, q. 11 pr."><A NAME="67911"><SPAN CLASS="ref">[67911] Quodlibet V, q. 11 pr. </SPAN></A>Deinde quaesitum est de his quae pertinent specialiter ad quosdam hominum status.- Et primo de his quae pertinent ad praelatos.- Secundo de his quae pertinent ad doctores.- Tertio de his quae pertinent ad religiosos.- Quarto de pertinentibus ad clericos. Circa primum quaesita sunt tria.</P>
+<P TITLE="Quodlibet V, q. 11 pr. 1"><A NAME="67912"><SPAN CLASS="tit">[67912] Quodlibet V, q. 11 pr. 1 </SPAN></A>Primo utrum b. Matthaeus vocatus sit statim a teloneo ad statum apostolatus et perfectionis.</P>
+<P TITLE="Quodlibet V, q. 11 pr. 2"><A NAME="67913"><SPAN CLASS="tit">[67913] Quodlibet V, q. 11 pr. 2 </SPAN></A>Secundo utrum ille qui eligitur canonice in episcopum, melius faciat consentiendo electioni de se factae, vel eam recusando.</P>
+<P TITLE="Quodlibet V, q. 11 pr. 3"><A NAME="67914"><SPAN CLASS="tit">[67914] Quodlibet V, q. 11 pr. 3 </SPAN></A>Tertio utrum praelatus qui dat beneficium ecclesiasticum alicui suo consanguineo, sperans per hoc suum genus exaltari et ditari, committat simoniam.</P>
+<BR>
+<DIV CLASS="E">Articulus 1</DIV>
+<BR>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 11 a. 1 tit. 1"><A NAME="67915"><SPAN CLASS="tit">[67915] Quodlibet V, q. 11 a. 1 tit. 1 </SPAN></A>Utrum b. Matthaeus vocatus sit statim a teloneo ad statum apostolatus et perfectionis</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 11 a. 1 tit. 2"><A NAME="67916"><SPAN CLASS="tit">[67916] Quodlibet V, q. 11 a. 1 tit. 2 </SPAN></A>Ad primum sic proceditur: videtur quod b. Matthaeus non fuit vocatus statim de teloneo ad statum apostolatus et perfectionis.</P>
+<P TITLE="Quodlibet V, q. 11 a. 1 arg."><A NAME="67917"><SPAN CLASS="ref">[67917] Quodlibet V, q. 11 a. 1 arg. </SPAN></A>Dicit enim Gregorius super Ezechielem: <I>nemo repente fit summus</I>. Sed status apostolatus et perfectionis evangelicae est summus status humanae vitae. Ergo Matthaeus non fuit statim vocatus ad statum perfectionis et apostolatus.</P>
+<P TITLE="Quodlibet V, q. 11 a. 1 s. c."><A NAME="67918"><SPAN CLASS="ref">[67918] Quodlibet V, q. 11 a. 1 s. c. </SPAN></A>Sed contra, est quod Hieronymus dicit super Matthaeum, quod <I>de publicano repente fit apostolus</I>; et Beda dicit super Lucam, quod <I>de publicano in apostolum, de teloneario in Evangelistam mutatus est</I>; et quaedam Glossa dicit Luc. V, quod <I>nullam prorsus cogitationem vel respectum huius vitae sibi reservavit</I>; quod est perfectionis evangelicae. Ergo statim vocatus est ad statum apostolatus et perfectionis.</P>
+<P TITLE="Quodlibet V, q. 11 a. 1 co."><A NAME="67919"><SPAN CLASS="ref">[67919] Quodlibet V, q. 11 a. 1 co. </SPAN></A>Respondeo. Dicendum, quod quaestio ista ex verbis Evangelii determinari potest. Si enim loquamur de apostolatu, manifestum est secundum narrationem Matthaei, Marci et Lucae, quod dominus post vocationem Matthaei aliquanto spatio temporis interiecto ex suis discipulis duodecim apostolos elegit, inter quos unus fuit Matthaeus. Et sic patet quod statim a principio fuit vocatus ad discipulatum Christi, non autem ad apostolatum, nisi secundum praeordinationem Christi, qui eum in apostolum sumendum disponebat: et secundum hoc intelligenda sunt verba Hieronymi et Bedae. Si autem loquamur de perfectione evangelica, sic manifestum est quod statim a principio vocatus est ad statum perfectionis. Dicitur enim Lucae V, 28, quod <I>surgens, relictis omnibus, secutus est eum</I>: quod etiam ad discipulatum Christi pertinebat, secundum illud quod dicitur Lucae XIV, 33: <I>nisi quis renuntiaverit omnibus his quae possidet, non potest esse discipulus meus</I>.</P>
+<P TITLE="Quodlibet V, q. 11 a. 1 ad arg."><A NAME="67920"><SPAN CLASS="ref">[67920] Quodlibet V, q. 11 a. 1 ad arg. </SPAN></A>Ad primum ergo dicendum, quod summum in vita humana potest accipi dupliciter. Uno modo secundum comparationem status ad statum, secundum quod in humana vita unus status est maior alio, et aliquis est summus; et sic nihil prohibet aliquem fieri repente summum, id est attingere ad statum summum. Et hoc apparet tam in spirituali quam in saeculari. Inveniuntur enim aliqui statim a pueritia ad statum religionis, qui est perfectissimus, convolasse, vel proprio arbitrio, sicut beatus Ioannes Baptista et beatus Benedictus; vel etiam devotione parentum, sicut illi qui monasteriis traduntur a parentibus. Sic non oportet ut aliquis in saeculari vita exerceatur antequam ad religionem transeat, sicut non oportet quod aliquis exerceatur in laicali vita antequam clericus fiat. Similiter etiam aliqui repente assumuntur ad regnum vel ab ipsa pueritia, sicut Salomon et Iosias, reges Iuda, vel etiam in ultimo statu, sicut Saul: et Eccle. IV, 14, dicitur quod <I>de carcere catenisque interdum quis ad regnum progreditur</I>. Alio modo potest accipi summum per comparationem graduum qui sunt perfectio unius hominis; et sic intelligit Gregorius quod nemo repente fit summus. Dicit enim Augustinus super canonicam Ioann. quod <I>caritas non mox ut nascitur, perfecta est; nam ut perficiatur, nascitur; cum fuerit nata, nutritur; cum fuerit nutrita, roboratur; cum fuerit roborata, perficitur</I>. Contingit tamen quandoque, quod unus homo repente incipit ab altiori gradu sanctitatis quam sit summum ad quod pertingit perfectio alterius hominis; ut patet de b. Benedicto, de quo Gregorius dicit in II Dialog. quod <I>praesentes et secuturi omnes agnoscant, Benedictum puerum conversationis gratiam a perfectione coepisse</I>.</P>
+<BR>
+<DIV CLASS="E">Articulus 2</DIV>
+<BR>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 11 a. 2 tit. 1"><A NAME="67921"><SPAN CLASS="tit">[67921] Quodlibet V, q. 11 a. 2 tit. 1 </SPAN></A>Utrum ille qui eligitur canonice in episcopum, melius faciat consentiendo electioni de se factae, vel eam recusando</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 11 a. 2 tit. 2"><A NAME="67922"><SPAN CLASS="tit">[67922] Quodlibet V, q. 11 a. 2 tit. 2 </SPAN></A>Ad secundum sic proceditur: videtur quod melius faciat qui consentit electioni canonicae de se factae, quam qui eam recusat.</P>
+<P TITLE="Quodlibet V, q. 11 a. 2 arg. 1"><A NAME="67923"><SPAN CLASS="ref">[67923] Quodlibet V, q. 11 a. 2 arg. 1 </SPAN></A>Dicit enim Gregorius, XII Moral.: <I>potestas cum percipitur non ex libidine amanda est</I>. Sed quando aliquis per canonicam electionem episcopalem dignitatem adipiscitur, non percipit eam ex libidine. Ergo debet eam amare: non ergo debet eam recusare.</P>
+<P TITLE="Quodlibet V, q. 11 a. 2 arg. 2"><A NAME="67924"><SPAN CLASS="ref">[67924] Quodlibet V, q. 11 a. 2 arg. 2 </SPAN></A>Sed contra, est quod Gregorius dicit, XXXVIII Moral., quod <I>praelatio per meliorem intentionem fugienda est</I>.</P>
+<P TITLE="Quodlibet V, q. 11 a. 2 co."><A NAME="67925"><SPAN CLASS="ref">[67925] Quodlibet V, q. 11 a. 2 co. </SPAN></A>Respondeo. Dicendum, quod in eo qui electioni canonicae de se factae consentit, considerari praecipue debet quid intendit. Si enim intendit aliquid temporale, puta honorem, divitias, excutere se a iugo religionis, aut aliquid huiusmodi, manifestum est quod est prava intentio: unde melius faceret si non assentiret. Si autem intendit profectum Ecclesiae, sic planum est quod bona est intentio. Unde Augustinus dicit, XIX de Civit. Dei: <I>in actione non amandus est honor in hac vita, sive potentia, sed opus ipsum, si recte, atque utiliter fit, idest ut valeat ad salutem subditorum</I>; et inducit illud apostoli quod habetur I ad Tim. cap. III, 1: <I>si quis episcopatum desiderat, bonum opus desiderat</I>. Sed tamen sciendum est, quod ad hoc opus maxima requiritur idoneitas: quia, ut Gregorius dicit in Pastoral., <I>tantum actionem populi debet actio transcendere praesulis, quantum distare solet a grege vita pastoris</I>: ad quod humana fragilitas secundum proprias vires sufficiens non est, secundum illud apostoli, II ad Cor., II, 16: <I>et ad haec quis tam idoneus?</I> Sed tamen ex auxilio gratiae divinae homines idonei et sufficientes redduntur, sicut ipse postmodum subdit: <I>idoneos nos fecit ministros novi testamenti</I>. Potest ergo aliquis laudabiliter, considerans proprium defectum, ex humilitate officium praelationis recusare, sicut Ieremias dicit: <I>nescio loqui, quia puer ego sum</I>; potest etiam laudabiliter consentire ex caritate fraterna, ut salutem proximorum procuret, sicut Isaias qui dicit: <I>ecce ego, mitte me</I>. Sed sicut Gregorius dicit in Pastor., <I>in utroque est subtiliter intuendum; quia et is qui recusavit, plene non restitit; et is qui mitti voluit, ante se per altaris calculum purgatum vidit; ne aut non purgatus adire quisque sacra ministeria audeat; aut quem superna gratia eligit, sub humilitatis specie supernae dispositioni contradicat</I>. Quia ergo valde difficile est purgatum se quemlibet posse agnoscere, praelationis officium tutius declinatur; non tamen pertinaciter, cum ad suscipiendum hoc superna voluntas agnoscitur.</P>
+<P TITLE="Quodlibet V, q. 11 a. 2 ad 1"><A NAME="67926"><SPAN CLASS="ref">[67926] Quodlibet V, q. 11 a. 2 ad 1 </SPAN></A>Ad primum ergo dicendum, quod illud verbum Gregorii non debet sic intelligi: potestas cum ex libidine percipitur, amanda est; sed ita: potestas cum percipitur, non est amanda ex libidine; subdit enim: <I>sed ex longanimitate toleranda</I>.</P>
+<P TITLE="Quodlibet V, q. 11 a. 2 ad 2"><A NAME="67927"><SPAN CLASS="ref">[67927] Quodlibet V, q. 11 a. 2 ad 2 </SPAN></A>Ad secundum dicendum, quod melior est intentio praelationem fugientium secundum proprium desiderium, dummodo non adsit necessitas ex parte imponentis hoc onus. Unde Augustinus dicit, XIX de Civit. Dei: <I>superior locus, sine quo populus regi non potest, etsi ita teneatur ut decet, tamen indecenter appetitur; otium enim sanctum quaerit caritas veritatis, negotium iustum suscipit necessitas caritatis</I>.</P>
+<BR>
+<DIV CLASS="E">Articulus 3</DIV>
+<BR>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 11 a. 3 tit. 1"><A NAME="67928"><SPAN CLASS="tit">[67928] Quodlibet V, q. 11 a. 3 tit. 1 </SPAN></A>Utrum praelatus qui dat beneficium ecclesiasticum alicui suo consanguineo, sperans per hoc suum genus exaltari et ditari, committat simoniam</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 11 a. 3 tit. 2"><A NAME="67929"><SPAN CLASS="tit">[67929] Quodlibet V, q. 11 a. 3 tit. 2 </SPAN></A>Circa tertium sic proceditur: videtur quod praelatus qui dat beneficium ecclesiasticum alicui suo consanguineo vel amico, ut alii eius consanguinei exaltentur, simoniam committat.</P>
+<P TITLE="Quodlibet V, q. 11 a. 3 arg."><A NAME="67930"><SPAN CLASS="ref">[67930] Quodlibet V, q. 11 a. 3 arg. </SPAN></A>Est enim simonia studiosa voluntas emendi vel vendendi aliquid spirituale, aut spirituali annexum. Sed in casu praedicto videtur esse emptio et venditio, in quibus est liberalitas: hic autem hoc speratur, ut liberaliter recompenset. Ergo est ibi simonia.</P>
+<P TITLE="Quodlibet V, q. 11 a. 3 s. c."><A NAME="67931"><SPAN CLASS="ref">[67931] Quodlibet V, q. 11 a. 3 s. c. </SPAN></A>Sed contra, est quod Isaiae XXXIII, 15, super illud, (beatus) <I>qui excutit manus suas ab omni munere</I>, dicit Glossa, quod triplex est munus: a manu, a lingua, ab obsequio; quorum nullum est in proposito casu. Ergo non est ibi simonia.</P>
+<P TITLE="Quodlibet V, q. 11 a. 3 co."><A NAME="67932"><SPAN CLASS="ref">[67932] Quodlibet V, q. 11 a. 3 co. </SPAN></A>Respondeo. Dicendum, quod cum simonia circa emptionem et venditionem consistat, hic distinguendum videtur: quia si praelatus intendit obligare eum cui dat beneficium ecclesiasticum, ad aliquam recompensationem faciendam sibi vel suis consanguineis, intentio simoniaca est: intendit enim quamdam tacitam venditionem; si vero non intendat eum obligare, sed intendat quod ille sibi vel sua propria sponte temporaliter recompenset, est quidem prava intentio et carnalis, sed non simoniaca.</P>
+<P TITLE="Quodlibet V, q. 11 a. 3 ad arg."><A NAME="67933"><SPAN CLASS="ref">[67933] Quodlibet V, q. 11 a. 3 ad arg. </SPAN></A>Ad primum ergo dicendum, quod secundum philosophum in IV Ethic., liberalitas non est circa quemlibet usum pecuniae, sed est circa dationes et sumptus; simonia autem est circa emptionem et venditionem.</P>
+<BR>
+<DIV CLASS="D">Quaestio 12</DIV>
+<DIV CLASS="G">Prooemium</DIV>
+<P TITLE="Quodlibet V, q. 12 pr."><A NAME="67934"><SPAN CLASS="ref">[67934] Quodlibet V, q. 12 pr. </SPAN></A>Deinde circa doctores quaesita sunt duo.</P>
+<P TITLE="Quodlibet V, q. 12 pr. 1"><A NAME="67935"><SPAN CLASS="tit">[67935] Quodlibet V, q. 12 pr. 1 </SPAN></A>Primo si doctor semper praedicavit aut docuit principaliter propter inanem gloriam, utrum habeat aureolam, si in morte poeniteat.</P>
+<P TITLE="Quodlibet V, q. 12 pr. 2"><A NAME="67936"><SPAN CLASS="tit">[67936] Quodlibet V, q. 12 pr. 2 </SPAN></A>Secundo utrum si ex doctrina alicuius doctoris aliqui revocentur a meliori bono, utrum ille doctor teneatur illam doctrinam revocare.</P>
+<BR>
+<DIV CLASS="E">Articulus 1</DIV>
+<BR>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 12 a. 1 tit. 1"><A NAME="67937"><SPAN CLASS="tit">[67937] Quodlibet V, q. 12 a. 1 tit. 1 </SPAN></A>Si doctor semper praedicavit aut docuit principaliter propter inanem gloriam, utrum habeat aureolam, si in morte poeniteat</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 12 a. 1 tit. 2"><A NAME="67938"><SPAN CLASS="tit">[67938] Quodlibet V, q. 12 a. 1 tit. 2 </SPAN></A>Ad primum sic procedebatur: videtur quod ille qui semper propter inanem gloriam docuit, per poenitentiam aureolam recuperet.</P>
+<P TITLE="Quodlibet V, q. 12 a. 1 arg. 1"><A NAME="67939"><SPAN CLASS="ref">[67939] Quodlibet V, q. 12 a. 1 arg. 1 </SPAN></A>Aureola enim doctrinae debetur fructui, scilicet conversioni fidelium, secundum illud ad Philipp. IV, 1: <I>gaudium meum et corona mea</I>. Sed potuit contingere quod ex praedicatione eius qui propter inanem gloriam principaliter praedicavit, secutus sit fructus conversionis fidelium. Ergo si poeniteat, debetur ei aureola.</P>
+<P TITLE="Quodlibet V, q. 12 a. 1 arg. 2"><A NAME="67940"><SPAN CLASS="ref">[67940] Quodlibet V, q. 12 a. 1 arg. 2 </SPAN></A>Praeterea, sicut virginitati debetur aureola, ita et doctrinae. Sed si illa quae, cum virgo sit carne, mente tamen est corrupta, poenitentiam agit, recuperat aureolam. Ergo pari ratione et doctor qui propter inanem gloriam praedicavit.</P>
+<P TITLE="Quodlibet V, q. 12 a. 1 s. c."><A NAME="67941"><SPAN CLASS="ref">[67941] Quodlibet V, q. 12 a. 1 s. c. </SPAN></A>Sed contra, est quod opera mortua per poenitentiam non reviviscunt. Sed opera istius doctoris propter inanem gloriam praedicantis fuerant mortua, id est cum peccato facta. Ergo non reviviscunt per poenitentiam ad praemium consequendum.</P>
+<P TITLE="Quodlibet V, q. 12 a. 1 co."><A NAME="67942"><SPAN CLASS="ref">[67942] Quodlibet V, q. 12 a. 1 co. </SPAN></A>Respondeo. Dicendum, quod cum aureola importet quamdam singularem excellentiam praemii, necesse est quod praesupponat auream, sicut comparativus praesupponit positivum: et hoc figuratur Exod. XXV, 25, ubi dicitur: <I>facies (...) super (coronam auream) (...) alteram (...) aureolam</I>; et ideo qui non meretur auream, id est praemium essentiale, non meretur aureolam. Qui autem propter inanem gloriam operantur, non merentur praemium essentiale, quia receperunt mercedem suam, ut dicitur Matth. cap. VI, 2, unde nec merentur aureolam. Poenitentia autem restituit homini praemia prius habita; non autem confert ei ea quae non habuit, nisi in quantum ipse motus poenitentiae est meritorius. Unde talis non meretur aureolam.</P>
+<P TITLE="Quodlibet V, q. 12 a. 1 ad 1"><A NAME="67943"><SPAN CLASS="ref">[67943] Quodlibet V, q. 12 a. 1 ad 1 </SPAN></A>Ad primum ergo dicendum, quod conversioni fidelium debetur aureola, praesupposito merito essentialis praemii in eo qui praedicavit; alioquin locum habet quod dicitur Matth. cap. XVI, 26: <I>quid (...) prodest homini, si universum mundum lucretur, animae vero suae detrimentum patiatur?</I></P>
+<P TITLE="Quodlibet V, q. 12 a. 1 ad 2"><A NAME="67944"><SPAN CLASS="ref">[67944] Quodlibet V, q. 12 a. 1 ad 2 </SPAN></A>Ad secundum dicendum, quod aureola virginitatis debetur integritati carnis, quae manet post poenitentiam: et ideo debetur virgini poenitenti aureola; sed aureola doctrinae debetur actui doctoris, qui transit: et ideo post poenitentiam non debetur aureola doctori, nisi actus reiteretur.</P>
+<BR>
+<DIV CLASS="E">Articulus 2</DIV>
+<BR>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 12 a. 2 tit. 1"><A NAME="67945"><SPAN CLASS="tit">[67945] Quodlibet V, q. 12 a. 2 tit. 1 </SPAN></A>Utrum si ex doctrina doctoris aliqui revocentur a meliori bono, utrum ille doctor teneatur illam doctrinam revocare</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 12 a. 2 tit. 2"><A NAME="67946"><SPAN CLASS="tit">[67946] Quodlibet V, q. 12 a. 2 tit. 2 </SPAN></A>Circa secundum sic proceditur: videtur quod si per doctrinam alicuius aliqui retrahantur a meliori bono, ille teneatur suam doctrinam revocare.</P>
+<P TITLE="Quodlibet V, q. 12 a. 2 arg. 1"><A NAME="67947"><SPAN CLASS="ref">[67947] Quodlibet V, q. 12 a. 2 arg. 1 </SPAN></A>Talis enim doctor in sua doctrina facit scandalum activum; quia doctor informat intellectum, intellectus autem informat affectum, et per consequens actum. Sed scandalum activum tenetur quilibet removere. Ergo talis doctor tenetur suam doctrinam revocare.</P>
+<P TITLE="Quodlibet V, q. 12 a. 2 arg. 2"><A NAME="67948"><SPAN CLASS="ref">[67948] Quodlibet V, q. 12 a. 2 arg. 2 </SPAN></A>Praeterea, spiritualia sunt temporalibus potiora. Sed in temporalibus, ut Augustinus dicit, non dimittitur peccatum, nisi restituatur ablatum. Ergo multo magis doctori, qui facit damnum in spiritualibus, non dimittitur peccatum, nisi restituat ablatum, quod fit per revocationem doctrinae.</P>
+<P TITLE="Quodlibet V, q. 12 a. 2 s. c."><A NAME="67949"><SPAN CLASS="ref">[67949] Quodlibet V, q. 12 a. 2 s. c. </SPAN></A>Sed contra, est quod Gregorius dicit: <I>veritas non est dimittenda propter scandalum</I>.</P>
+<P TITLE="Quodlibet V, q. 12 a. 2 co."><A NAME="67950"><SPAN CLASS="ref">[67950] Quodlibet V, q. 12 a. 2 co. </SPAN></A>Respondeo. Dicendum, quod hic distinguendum videtur. Si enim doctor doceat falsam doctrinam, tenetur eam modis omnibus revocare; et maxime si ex ea spirituale damnum sequatur. Si vero doceat veram doctrinam; potest ex ea sequi detrimentum spirituale in auditoribus dupliciter. Uno modo ex defectu ipsius qui docet: uno modo quia doctrinam subtilem et altam proponeret rudibus, qui non essent illius doctrinae capaces: qui ex hoc detrimentum salutis incurrerent: contra exemplum apostoli, qui dicit, I ad Cor., III, 1-2: <I>tamquam parvulis in Christo lac potum dedi vobis, non escam</I>; alio modo, quia confuse et inordinate proponit, non praeferens maiora minoribus, contra id quod Gregorius dicit in Pastoral.: <I>sic laudanda sunt bona summa, ne despiciantur ultima; sic nutrienda sunt bona ultima, ne dum sufficere creduntur, nequaquam tendatur ad summa</I>. Et in his casibus tenetur doctor ex cuius doctrina damnum spirituale accidit, contra hoc damnum remedium ponere in quantum potest, exponendo saltem doctrinam suam. Alio modo potest contingere ex defectu aliorum; puta si aliqui, dicendo aliqua erronea, inducerent homines ad aliquam religionem; utpote si dicerent quod quicumque intrat talem religionem, statim erit aequalis meriti sicut beatus Petrus. Et in hoc casu non tenetur cessare a sua doctrina. Intrare enim religionem propter errorem non est bonum. Unde sic non retrahit homines a meliori bono talis doctor: et hoc est quod Gregorius dicit in Pastoral.: <I>sicut incauta locutio in errorem protrahit, ita indiscretum silentium eos qui erudiri poterant, in errore derelinquit</I>.</P>
+<P TITLE="Quodlibet V, q. 12 a. 2 ad arg."><A NAME="67951"><SPAN CLASS="ref">[67951] Quodlibet V, q. 12 a. 2 ad arg. </SPAN></A>Et per hoc patet responsio ad obiecta.</P>
+<BR>
+<DIV CLASS="D">Quaestio 13</DIV>
+<DIV CLASS="G">Prooemium</DIV>
+<P TITLE="Quodlibet V, q. 13 pr."><A NAME="67952"><SPAN CLASS="ref">[67952] Quodlibet V, q. 13 pr. </SPAN></A>Deinde circa religiosos quaesita sunt duo.</P>
+<P TITLE="Quodlibet V, q. 13 pr. 1"><A NAME="67953"><SPAN CLASS="tit">[67953] Quodlibet V, q. 13 pr. 1 </SPAN></A>Primo utrum religiosi teneantur patienter tolerare iniurias sibi factas.</P>
+<P TITLE="Quodlibet V, q. 13 pr. 2"><A NAME="67954"><SPAN CLASS="tit">[67954] Quodlibet V, q. 13 pr. 2 </SPAN></A>Secundo utrum ille qui iurat se non intraturum religionem, possit licite religionem intrare.</P>
+<BR>
+<DIV CLASS="E">Articulus 1</DIV>
+<BR>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 13 a. 1 tit. 1"><A NAME="67955"><SPAN CLASS="tit">[67955] Quodlibet V, q. 13 a. 1 tit. 1 </SPAN></A>Utrum religiosi teneantur patienter tolerare iniurias sibi factas</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 13 a. 1 tit. 2"><A NAME="67956"><SPAN CLASS="tit">[67956] Quodlibet V, q. 13 a. 1 tit. 2 </SPAN></A>Circa primum sic proceditur: videtur quod religiosi non debeant tolerare suos impugnatores.</P>
+<P TITLE="Quodlibet V, q. 13 a. 1 arg. 1"><A NAME="67957"><SPAN CLASS="ref">[67957] Quodlibet V, q. 13 a. 1 arg. 1 </SPAN></A>In impugnatione enim perfectorum virorum Deus impugnatur: unde dominus Saulo persequenti discipulos Christi dixit, actuum IX, 4: <I>Saule, Saule, quid me persequeris?</I> Sed perfecti viri non debent impugnatores Dei tolerare. Ergo neque impugnatores proprios.</P>
+<P TITLE="Quodlibet V, q. 13 a. 1 arg. 2"><A NAME="67958"><SPAN CLASS="ref">[67958] Quodlibet V, q. 13 a. 1 arg. 2 </SPAN></A>Praeterea, quilibet perfectus debet obviare his quae statui perfectionis praeiudicant: unde apostolus dicit, II ad Cor. VI, 3: <I>ut non vituperetur ministerium nostrum</I>. Sed per hoc quod perfecti impugnantur, statui perfectionis derogatur. Ergo perfecti viri non debent tolerare suos impugnatores.</P>
+<P TITLE="Quodlibet V, q. 13 a. 1 s. c."><A NAME="67959"><SPAN CLASS="ref">[67959] Quodlibet V, q. 13 a. 1 s. c. </SPAN></A>Sed contra, est quod Gregorius dicit: <I>non sumus perfecti, si aliorum inordinationes ferre non possumus</I>.</P>
+<P TITLE="Quodlibet V, q. 13 a. 1 co."><A NAME="67960"><SPAN CLASS="ref">[67960] Quodlibet V, q. 13 a. 1 co. </SPAN></A>Respondeo. Dicendum, quod perfecti viri dupliciter impugnari possunt: uno quidem modo quantum ad personas proprias, utpote cum inferuntur eis iniuriae personales; alio modo possunt impugnari quantum ad statum eorum, ut puta cum aliquis verbis vel factis perfectionis statui derogat. Et haec duo tanguntur Iac. II, 6: <I>nonne divites per potentiam opprimunt vos?</I> Quod pertinet ad personales iniurias: <I>nonne ipsi blasphemant bonum nomen, quod invocatum est super vos?</I> Quod pertinet ad religionem vel statum in iniuriis ergo personalibus decet perfectos viros esse maxime patientes, ut sint etiam parati plura sufferre, secundum illud Matthaei cap. V, 39: <I>si quis percusserit in dextra maxilla, praebe ei et alteram</I>. Statum vero suum impugnari non debent pati, quantum resistere possunt; hoc enim vergeret in iniuriam Dei; unde contra quosdam dicitur Ezech. XIII, 5: <I>non ascendistis ex adverso, nec opposuistis (vos) murum pro domo Israel</I>. Et ideo dominus iniurias quae contra humanitatem eius inferebantur, patienter toleravit, sicut cum Iudaei dicebant: <I>ecce homo vorax, et potator vini</I>, ut habetur Matth. XI, 19: et sicut Diabolus dixit ei: <I>mitte te deorsum</I>, quod videbatur ad propriam iniuriam pertinere. Sed iniurias Dei non tolerabat: unde Pharisaeos dure redarguit Matth. XII, 25 ss. quia dicebant quod in Beelzebub eiiceret Daemonia, quod pertinebat ad iniuriam spiritus sancti. Et similiter cum Diabolus ei dixit, Matth. IV, 9: <I>haec omnia tibi dabo, si cadens adoraveris me</I>, quod ad iniuriam Dei pertinebat; statim enim eum repulit, dicens: <I>vade, Satana</I>, ut habetur Matthaei IV, 10; ubi dicit Chrysostomus: <I>illius discamus exemplo nostras quidem iniurias magnanimiter sustinere; Dei autem iniurias nec usque ad auditum sufferre; quoniam in propriis iniuriis esse quemlibet patientem laudabile est; iniurias autem Dei dissimulare, nimis est impium</I>.</P>
+<P TITLE="Quodlibet V, q. 13 a. 1 ad arg."><A NAME="67961"><SPAN CLASS="ref">[67961] Quodlibet V, q. 13 a. 1 ad arg. </SPAN></A>Et per hoc patet responsio ad obiecta.</P>
+<BR>
+<DIV CLASS="E">Articulus 2</DIV>
+<BR>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 13 a. 2 tit. 1"><A NAME="67962"><SPAN CLASS="tit">[67962] Quodlibet V, q. 13 a. 2 tit. 1 </SPAN></A>Utrum ille qui iurat se non intraturum religionem, possit licite religionem intrare</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 13 a. 2 tit. 2"><A NAME="67963"><SPAN CLASS="tit">[67963] Quodlibet V, q. 13 a. 2 tit. 2 </SPAN></A>Ad secundum sic proceditur: videtur quod ille qui iuravit se non intraturum religionem, non possit licite intrare.</P>
+<P TITLE="Quodlibet V, q. 13 a. 2 arg."><A NAME="67964"><SPAN CLASS="ref">[67964] Quodlibet V, q. 13 a. 2 arg. </SPAN></A>Omnis enim obligatio licita, est adimplenda. Sed licitum erat ei non intrare religionem. Ergo, cum ad hoc iuramento se obligavit, videtur quod teneatur non intrare.</P>
+<P TITLE="Quodlibet V, q. 13 a. 2 s. c."><A NAME="67965"><SPAN CLASS="ref">[67965] Quodlibet V, q. 13 a. 2 s. c. </SPAN></A>Sed contra est, quia nullum impedimentum spiritualis profectus est ex Deo. Sed iuramentum est ex Deo. Ergo per iuramentum non impeditur spiritualis profectus intrandi religionem.</P>
+<P TITLE="Quodlibet V, q. 13 a. 2 co."><A NAME="67966"><SPAN CLASS="ref">[67966] Quodlibet V, q. 13 a. 2 co. </SPAN></A>Respondeo. Dicendum, quod obligatio iuramenti tripliciter se potest habere. Quandoque enim est illicita obligatio, et de re illicita: puta cum aliquis iurat se fornicaturum; et tale iuramentum non tenetur homo adimplere, nec etiam est licitum impleri. Quandoque vero est obligatio licita et de re licita: puta cum aliquis iurat se eleemosynam daturum; et tale iuramentum praeterire non licet. Quandoque vero est obligatio illicita sed de re licita: puta cum aliquis iurat se non facturum aliquod maius bonum, quod tamen facere non tenetur, puta ieiunare, vel non dare aliquam eleemosynam, vel religionem non intrare: tunc enim id ad quod se iuramento obligat, licitum est, sed tamen obligatio est illicita, quia per hoc homo, quantum in se est, obfirmat se contra gratiam spiritus sancti, quae facit hominem in suo corde ascensiones disponere. Unde tale iuramentum licite potest homo implere, abstinendo ab illo bono quod facere non tenetur; non tamen cogitur ex illo iuramento ad hoc quod impleat quod iuravit: quia iuramentum, ad hoc quod sit obligatorium, debet habere tres comites, iudicium, iustitiam et veritatem, ut habetur Ierem. IV, v. 2. Huic autem iuramento deest iudicium discretionis, quia vergit in deteriorem exitum, retrahendo a meliori bono.</P>
+<BR>
+<DIV CLASS="D">Quaestio 14</DIV>
+<DIV CLASS="G">Prooemium</DIV>
+<P TITLE="Quodlibet V, q. 14 pr."><A NAME="67967"><SPAN CLASS="ref">[67967] Quodlibet V, q. 14 pr. </SPAN></A>Deinde circa clericos quaesitum est unum.</P>
+<DIV CLASS="cuatro" TITLE="Quodlibet V, q. 14 tit. 1"><A NAME="67968"><SPAN CLASS="tit">[67968] Quodlibet V, q. 14 tit. 1 </SPAN></A>Utrum scilicet liceat clerico qui tenetur ad horas canonicas, dicere matutinas sequentis diei de sero</DIV>
+<BR>
+<P TITLE="Quodlibet V, q. 14 tit. 2"><A NAME="67969"><SPAN CLASS="tit">[67969] Quodlibet V, q. 14 tit. 2 </SPAN></A>Et videtur quod non.</P>
+<P TITLE="Quodlibet V, q. 14 arg."><A NAME="67970"><SPAN CLASS="ref">[67970] Quodlibet V, q. 14 arg. </SPAN></A>Dicitur enim Eccli. XX, 7: <I>lascivus (...) et imprudens non servabit tempus</I>. Sed iste in dicendo matutinas non observat tempus: cum enim dies incipiat a media nocte, videtur quod matutinas sequentis diei dicat in die praecedenti. Ergo videtur quod hoc ad lasciviam et imprudentiam pertineat; et ita videtur esse peccatum.</P>
+<P TITLE="Quodlibet V, q. 14 s. c."><A NAME="67971"><SPAN CLASS="ref">[67971] Quodlibet V, q. 14 s. c. </SPAN></A>Sed contra, Deus clementior est quolibet homine. Sed homo non imputat debitori in culpam, si debitum sibi reddat ante tempus. Ergo multo minus Deus.</P>
+<P TITLE="Quodlibet V, q. 14 co."><A NAME="67972"><SPAN CLASS="ref">[67972] Quodlibet V, q. 14 co. </SPAN></A>Respondeo. Dicendum, quod hic consideranda est intentio eius qui praevenit tempus in matutinis dicendis, vel in quibuscumque horis canonicis. Si enim hoc facit propter lasciviam, ut scilicet quietius somnolentiae et voluptati vacet, non est absque peccato. Si vero hoc faciat propter necessitatem, et licitarum honestarum occupationum, puta si clericus aut magister debet videre lectiones suas de nocte, vel propter aliquid aliud huiusmodi, licite potest de sero dicere matutinas, et in aliis horis canonicis tempus praevenire, sicut etiam hoc in solemnibus Ecclesiis fit: quia melius est Deo utrumque reddere, scilicet et debitas laudes, et alia honesta officia, quam quod per unum aliud impediatur.</P>
+<P TITLE="Quodlibet V, q. 14 ad arg."><A NAME="67973"><SPAN CLASS="ref">[67973] Quodlibet V, q. 14 ad arg. </SPAN></A>Ad primum ergo dicendum, quod quantum ad contractus et alia huiusmodi, dies incipit a media nocte; sed quantum ad ecclesiasticum officium et solemnitatum celebritates incipit dies a vesperis: unde, si aliquis post dictas vesperas et completorium, dicat matutinas, iam hoc pertinet ad diem sequentem.</P>
+<DIV CLASS="centro">
+<BR><HR><BR>
+<ADDRESS>&copy; 2019 Fundaci&oacute;n Tom&aacute;s de Aquino quoad hanc editionem<BR>Iura omnia asservantur<BR>OCLC nr. <A HREF="http://worldcatlibraries.org/wcpa/oclc/49644264" STYLE="text-decoration=none">49644264</A></ADDRESS>
+</DIV>
+</BODY>
+</HTML> 
