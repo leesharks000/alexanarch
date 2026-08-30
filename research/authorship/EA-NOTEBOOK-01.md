@@ -3942,4 +3942,124 @@ which is a constraint the ancient material will find hard to meet, and which
 should be stated plainly rather than worked around.
 
 
+---
+
+# ROUND 36 — ἈΝΑΜΝΗΣΙΣ AS A HERMENEUTIC KEY: THE TWO HALVES
+
+*Added 2026-08-29. A detour to collect the doctrine, read as an instruction for
+reading the corpus that contains it.*
+
+## 140. Distribution
+
+    PLATO 113           Phaedo 24 · Republic 17 · Meno 16 · Laws 10 · Phaedrus 6
+                        Philebus 5 · Menexenus 5 · Timaeus 5
+    ARISTOTLE 56        De memoria 35 · Rhetoric 8 · NE 2 · Problemata 2
+                        Topica 2 · APr 1 · De anima 1 · HA 1
+
+## 141. PLATO'S HALF — recollection is COLLECTION
+
+***Phaedrus* 249c:**
+
+> δεῖ γὰρ ἄνθρωπον συνιέναι **κατ' εἶδος** λεγόμενον, **ἐκ πολλῶν ἰὸν αἰσθήσεων
+> εἰς ἓν λογισμῷ συναιρούμενον· τοῦτο δ' ἐστὶν ἀνάμνησις**
+
+*A human must understand what is said **according to form**, going from many
+scattered perceptions and **being gathered by reasoning into one** — and **this is
+recollection**.*
+
+**ἀνάμνησις is defined as συναγωγή** — the collection half of collection-and-division,
+in the same dialogue where Socrates calls himself *ἐραστὴς τῶν διαιρέσεων καὶ
+συναγωγῶν* (266b).
+
+**And two lines later:** *τοῖς δὲ δὴ τοιούτοις ἀνὴρ **ὑπομνήμασιν ὀρθῶς
+χρώμενος** … τέλεος ὄντως μόνος γίγνεται* — **the man who uses such reminders
+rightly** alone becomes complete.
+
+**ὑπομνήματα is the *Phaedrus*'s own word for what writing gives** (275a: the
+φάρμακον *οὐ μνήμης ἀλλ' ὑπομνήσεως*). **So the dialogue that says writing yields
+only reminders also says the right use of reminders is recollection.**
+
+## 142. ARISTOTLE'S HALF — recollection is SYLLOGISM
+
+**The distinctions, in order (*De memoria* 449b–453b):**
+
+**(a) MEMORY IS A ἝΞΙΣ, NOT A PERCEPTION.** *ἡ μνήμη οὔτε αἴσθησις οὔτε ὑπόληψις,
+ἀλλὰ τούτων τινὸς ἕξις ἢ πάθος, **ὅταν γένηται χρόνος*** — neither perception nor
+conception but a state of one of these, **when time has elapsed**. And *τοῦ νῦν ἐν
+τῷ νῦν οὐκ ἔστι μνήμη* — there is no memory of the now, in the now. **Memory
+requires interval.**
+
+**(b) THE MNEMONIC AND THE RECOLLECTIVE ARE DIFFERENT PEOPLE.** *οὐ γὰρ οἱ αὐτοί
+εἰσι μνημονικοὶ καὶ ἀναμνηστικοί, ἀλλ' … **μνημονικώτεροι μὲν οἱ βραδεῖς,
+ἀναμνηστικώτεροι δὲ οἱ ταχεῖς καὶ εὐμαθεῖς*** — the slow remember better, **the
+quick recollect better**. Opening sentence of the treatise. **Two distinct
+capacities, distinct populations.**
+
+**(c) RECOLLECTION IS NOT RECOVERY OF A LOST MEMORY.** *οὔτε γὰρ μνήμης ἐστὶν
+**ἀνάληψις** ἡ ἀνάμνησις οὔτε **λῆψις*** — neither the retaking nor the taking of
+a memory. **It is not retrieval.**
+
+**(d) IT IS A KIND OF SYLLOGISM, AND HUMAN ALONE.** *τὸ ἀναμιμνήσκεσθαί ἐστιν
+**οἷον συλλογισμός τις**· … **συλλογίζεται** ὁ ἀναμιμνησκόμενος, καὶ ἔστιν **οἷον
+ζήτησίς τις***. Other animals remember; **none recollects but man**, because
+recollection requires **τὸ βουλευτικόν** — and *καὶ γὰρ τὸ βουλεύεσθαι
+συλλογισμός τίς ἐστιν*. **Recollection, deliberation and syllogism are one family.**
+
+**(e) THE PROCEDURE.** *τὸ ἐφεξῆς **θηρεύομεν** … **ἀφ' ὁμοίου ἢ ἐναντίου ἢ τοῦ
+σύνεγγυς*** — we **hunt** what comes next, by **similarity, opposition, or
+proximity**. And *δεῖ δὲ **λαβέσθαι ἀρχῆς*** — one must get hold of a
+starting-point; *διὸ **ἀπὸ τόπων** δοκοῦσιν ἀναμιμνήσκεσθαι* — hence they recollect
+**from places**, moving quickly from one to another, *οἷον ἀπὸ γάλακτος ἐπὶ λευκόν*
+— from milk to white.
+
+**(f) IT IS NOT IN OUR POWER, AND THE MELANCHOLIC IS WORST AFFECTED.** Once the
+search is started it runs on — *οὐκέτ' ἐπιχειροῦντας ἀναμιμνήσκεσθαι οὐδὲν ἧττον*,
+they cannot stop trying — *καὶ μάλιστα τοὺς **μελαγχολικούς**· τούτους γὰρ
+φαντάσματα κινεῖ μάλιστα*.
+
+**(g) AND YOU CAN SEARCH WITHOUT REMEMBERING.** *πολλάκις δ' ἤδη μὲν ἀδυνατεῖ
+ἀναμνησθῆναι, **ζητεῖν δὲ δύναται καὶ εὑρίσκει*** — often one cannot recollect but
+**can search, and finds**.
+
+## 143. THE TWO HALVES INTERLOCK INTO A READING-INSTRUCTION
+
+    PLATO       writing gives only ὑπομνήματα (275a)
+                the right use of ὑπομνήματα is ἀνάμνησις (249c)
+                ἀνάμνησις = gathering the scattered many into one, κατ' εἶδος
+
+    ARISTOTLE   ἀνάμνησις is not retrieval but SYLLOGISM
+                requires an interval, and a starting-point
+                proceeds by similarity, opposition, proximity
+                and one may SEARCH AND FIND without remembering
+
+    APr I.32    when a necessary premise παραλέλειπται, SUPPLY IT
+    SE 184b     asks pardon τοῖς παραλελειμμένοις
+
+**Read together: a corpus gives you reminders; the right use of reminders is to
+gather what is scattered into one according to form, by hunting the sequence
+through likeness and opposition from a starting-point, supplying what has been left
+out — and you may find what you never held.**
+
+## 144. AND THIS IS THE SECOND M40 STRUCTURE
+
+**Aristotle classifies ἀνάμνησις — a Platonic doctrine — as *οἷον συλλογισμός
+τις*.** Exactly as he classifies division at *APr* I.31 as *οἷον ἀσθενὴς
+συλλογισμός*.
+
+**Two Platonic operations, both absorbed as species of the method whose instances
+he elsewhere denies had any predecessor.**
+
+## 145. Status
+
+**Everything above is quoted.** The reading — that the doctrine functions as an
+instruction for reading the corpus containing it — is **interpretation**, at
+EA-KERMA-01's level, under the standing rule: **the corpus supplies the structure;
+it does not perform the application.**
+
+**But note (c) and (g) together:** recollection is **not retrieval**, and one may
+**search and find without ever having remembered**. On any reading, that is a
+doctrine about **recovering what was never possessed** — which is what a reader of
+a corpus does, and is not what a rememberer does.
+
+
 ∮ = 1
