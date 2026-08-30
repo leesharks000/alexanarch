@@ -2180,6 +2180,129 @@ corpus. If none exists, the circularity in 33.2 is not merely a defect in my
 framing but a structural feature of the period's attribution apparatus.
 
 
+---
+
+## 34. M45 — THE ARGUMENTATIVE SPINE: A DEFAULT EARNS PRIOR, NOT LIKELIHOOD
+
+*Added 2026-08-29. The paper's endpoint, stated as a demand rather than a claim,
+with a status column that keeps it honest.*
+
+## 34.1 The distinction that has to become the spine
+
+The question is not *can the single-author hypothesis survive the objections* but:
+
+> **Given the observed configuration, what does H_S explain BETTER than H_H?**
+
+Every form of the standing objection — *a student could inherit this*, *a
+successor could complete unfinished problems*, *a school could transmit the
+apparatus* — establishes only
+
+    P(E | H_S) > 0
+
+and never
+
+    P(E | H_S) ≥ P(E | H_H).
+
+**Could is not a likelihood estimate.** Mere compatibility must stop counting as
+explanatory superiority.
+
+**Polansky's objection — *the same results follow without the hypothesis* — is
+answered thus:** perhaps; but *can follow* is not the comparison. The question is
+whether the observations are **expected with comparable probability and comparable
+auxiliary cost** under the multi-author model.
+
+    P(H | E) ∝ P(E | H) · P(H)
+
+**The received model gets its prior. It does not get its likelihood automatically
+from tradition.** And:
+
+    historical default ≠ explanatory model
+
+## 34.2 THE TABLE — with the column that makes it honest
+
+    observation                    H_H              H_S              STATUS
+    ─────────────────────────────────────────────────────────────────────────
+    M40 priority structure      literal          requires scope    ASSERTED
+                                                 repair            both sides
+    naming-gap reflex           same operator    requires          ⭑ MEASURED
+                                habit            transmission of   Round 24
+                                                 arbitrary
+                                                 procedure
+    abandoned-execution         continuation of  successor         ASSERTED;
+      completion                own unfinished   recovers a        NO DENOMINATOR
+                                operation        shaped failure
+    functional interlock        distributed      unusually         ASSERTED
+                                construction     coordinated
+                                                 inheritance
+    substrate divergence        position         ordinary distinct CONTESTED and
+                                differentiation  authorship        ARCHITECTURE-
+                                                                   DEPENDENT (34.3)
+    chronology, biographical    COSTLY           ⭑ ADVANTAGE       CONCEDED
+      tradition, prima facie                                       to H_S
+      declared partition
+
+**The status column is what stops this being rhetoric.** As it stands the argument
+rests on **one measured row and one conceded row, with four asserted.** The next
+work is named by the table: convert the four.
+
+**And H_S must be allowed its wins, plainly.** The received account keeps the
+chronology, the external biographical tradition, and the prima facie declared
+partition. A table in which H_H wins every row would be rigged and should be
+disbelieved.
+
+## 34.3 ⚠ H_H IS NOT ONE MODEL — Round 25's consequence for the formalization
+
+Round 25 established that Plato–Aristotle closes **by sum** (complementary
+positions, coverage completeness) while Pessoa closes **by remainder** (progressive
+subtraction, invariance under narrowing). **Heteronymy is therefore not a single
+generative model, and P(E | H_H) is undefined until the architecture is
+specified:**
+
+    H_H1  SUM-CLOSURE — differentiated positions whose union is complete;
+          divergence high, function interlocking; integral = coverage
+    H_H2  REMAINDER-CLOSURE — nested subtraction, containers tightening with
+          constraint severity; integral = what cannot be removed
+
+**This cuts both ways and both must be recorded.** The Pessoa calibration **cannot
+be transferred** to the Greek pair as a single expected morphology — that was
+Round 22's error. **But H_S can no longer be scored against a straw H_H either**:
+each architecture has its own predicted signature and must be scored separately.
+
+## 34.4 The one measured row, stated at its real strength
+
+**Round 24 is narrower and sharper than "Aquinas doesn't reproduce the reflex".**
+
+    Albert (non-Aristotle works)    0.00/100k in 1,140,474 tokens, division 16.4
+    Thomas (independent works)      1.07/100k in 5,219,700 tokens, division 26.6
+      → THE PAIR DOES NOT SHARE IT
+
+    Plato                           2.60/100k, division 15.4
+    Aristotle                       8.43/100k, division 30.9
+      → BOTH CARRY IT
+
+And in **both** Latin authors it appears only where Aristotle is being glossed
+(Albert 1.31, Aquinas 3.72 on the commentaries).
+
+**Measured claim:** *for this reflex, transmission into independent composition did
+not occur in the one documented master-student pair examined.* **Caveats standing:**
+one pair, one draw; Latin idiom may differ from the probe set despite the positive
+control; nine Borgnet volumes of thirty-eight, with the *Sentences* commentary
+dominating the non-Aristotle sample.
+
+## 34.5 What this asks of the objection
+
+The received model can no longer discharge its burden by saying *succession
+explains it too*. It has to say:
+
+> **Here is the specific feature on which documented succession outperforms
+> documented heteronymy, and here is why the Plato–Aristotle value belongs with
+> that class.**
+
+If that cannot be supplied, **"multi-author" has stopped functioning as an
+explanation and is functioning as the default label** — which earns a prior, and
+which this investigation concedes without argument.
+
+
 ∮ = 1 on Pessoa.** Pooling the three heteronyms recovers the orthonym at
 **0.0258** — inside the M1 same-author band — while the best single heteronym is
 Campos at 0.0498, then Caeiro 0.0903, Reis 0.2205. **Pooled beats best individual
