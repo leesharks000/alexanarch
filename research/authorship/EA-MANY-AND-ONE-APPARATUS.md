@@ -438,4 +438,234 @@ operation.
 
 **Not yet adapted to venue norms.** This is the machine.
 
+---
+
+# PASS TWO — THE NOTEBOOK AND THE REGISTER
+
+*Added 2026-08-31. Fifty-three rounds and M1–M52 passed for engagement not carried in
+pass one. **Sorted by what the paper leans on hardest.***
+
+---
+
+## THE EDITORIAL ACTS THAT MADE THE CORPORA
+
+**[E1] ⭑ ANDRONICUS AND THRASYLLUS, and §VIII 4e rests entirely on them.**
+
+**The two corpora are two editorial acts, and they are not the same kind of act.**
+
+**ANDRONICUS OF RHODES** (1st c. BCE) arranged the Aristotelian *pragmateiai* — the
+esoteric treatises, from the school's working texts. **The exoteric dialogues, which
+antiquity knew Aristotle by, are not in that edition and did not survive it.** *So
+the Aristotelian corpus is a SELECTION, made by a school, of what a school used.*
+**Strabo XIII** and **Plutarch's *Sulla*** carry the transmission story — the
+manuscripts hidden, damaged, and recovered — and it is where the received account's
+strongest work lies.
+
+**THRASYLLUS** (1st c. CE) arranged the Platonic corpus into **nine tetralogies**,
+thirty-six works, **including works no modern editor accepts.** *So the Platonic
+corpus is a COMPLETE-AS-RECEIVED arrangement in which the disputed works are
+constitutive members of the ordering.*
+
+> **⭑ THAT ASYMMETRY IS §VIII 4e's PRINCIPLE, and it is a historical fact about two
+> editorial acts rather than a stipulation.** Platonic spuria are doubted **inside**
+> an arrangement that includes them; Aristotelian pseudepigrapha are attributed
+> **outside** an arrangement that excludes them.
+
+**And §IX's numbered set is Thrasyllus.** A tetralogy makes its own gaps visible. *The
+device the section names as the cheapest and strongest in antiquity is the device that
+constitutes the Platonic corpus as an object.* ⚠ **Null: Thrasyllus is first century
+CE, four hundred years after composition. The arrangement cannot be evidence of
+design at composition, and §IX's mechanisms are claimed to FUNCTION as transmission
+mechanisms whatever their origin — not to have been placed.**
+
+---
+
+## THE INCOMPLETION TECHNOLOGY
+
+**[T1] SAPPHO 31 — the text, and what "fragment" means for it.**
+
+**Voigt** and **Lobel–Page** are the critical editions; **Campbell** (Loeb) the
+accessible text. **The poem survives because Longinus quotes it** — *Peri Hypsous* 10
+— **and the fifth stanza's ἀλλὰ πᾶν τόλματον is where the quotation ends.** *So the
+poem's "fragmentary" state is a fact about its transmission vehicle and not about a
+damaged papyrus: it is complete as quoted and incomplete as a poem.*
+
+**⚠ AND THE PAPER'S READING IS NOT THE STANDARD ONE.** The standard account is that
+Longinus quoted as much as served his argument about the sublime and stopped. **The
+notebook's correction (Round 44) is that he does not stop at the break but extends it
+one clause — ἐπεὶ καὶ πένητα — leaving a causal subordinator without its consequence
+and an accusative without its verb.** *That the extension is deliberate technology
+rather than the ragged edge of a quotation is a reading, and §IX marks it as one.*
+
+**[T2] CATULLUS 51 AND THE *OTIUM* STANZA.** The fourth stanza — *otium, Catulle,
+tibi molestum est … otium et reges prius et beatas perdidit urbes* — **has no Sapphic
+counterpart, and the scholarly question is whether it belongs to the poem at all.**
+*Positions run from separate poem, to deliberate coda, to the poem's point. **The
+paper's reading — that it discharges a grammatical obligation Longinus's extension
+created — is a new one and is offered as such.***
+
+**[T3] LONGINUS.** *Peri Hypsous* is anonymous and its attribution to Cassius
+Longinus is a Renaissance conjecture; **date and author are disputed.** *The paper
+uses him as a reader, not as an authority, and nothing turns on who he was.*
+
+---
+
+## THE EARLIEST ATTESTATION, AND ITS STATUS
+
+**[A1] ARISTOXENUS AND THE FRAGMENT PROBLEM.** *Harmonics* II reports that Aristotle
+**always used to relate** what happened at Plato's lecture *On the Good* — hearers
+came expecting human goods and got mathematics. **This is the earliest attestation of
+the attendance, and it is the earliest attestation of the disappointment.**
+
+**⚠ AND ARISTOXENUS'S OWN ACQUAINTANCE WITH ARISTOTLE IS ATTESTED ONLY BY Fr. 1
+WEHRLI** — a fragment of unverified transmission. *Round 40's "good contemporary
+evidence" language is superseded by Round 41 §163 and the corrected form is what the
+paper carries.*
+
+**[A2] AND THE ANECDOTE INVERTS UNDER MEASUREMENT.** Narrative apparatus is
+**4.7–16.7× denser in Plato**; mathematical vocabulary **2.4–10.3× denser in
+Aristotle**. *The reader who arrives wanting a story and receives number is reading
+Aristotle.* **The anecdote is told to justify Aristotle's own rule about beginning
+with the appropriate method.**
+
+---
+
+## THE SE 34 SCHOLARSHIP
+
+**[S1] HITCHCOCK, via CORCORAN.** *Sophistical Refutations* 34 claims originality —
+**but for the material preceding the chapter, the *Topics* and *SE*, not for the
+*Prior Analytics*.** *This is the strongest hostile reading of §I's entry passage: if
+ταύτης τῆς πραγματείας means the dialectical treatise-pair, then* APr *I.31's
+εἰρημένη μέθοδος is a different inquiry and there is no collision.* **The paper must
+answer it and the pressure sits at περὶ δὲ τοῦ συλλογίζεσθαι — whether that clause
+remains inside the restriction.**
+
+**[S2] HASPER** on the completeness claim in *SE* 34, and **Dorion (1995)** on the
+epilogue. *Named as the specialist literature on the passage the paper opens with.*
+
+**[S3] AND THE ART/PRODUCTS DISTINCTION IS ARISTOTLE'S OWN.** *οὐ τέχνην ἀλλὰ τὰ ἀπὸ
+τῆς τέχνης*, the shoemaker who hands out shoes. **Two earlier versions of the register
+called the narrow reading an unmarked interpretive repair. Both were wrong**, and the
+correction is carried in §0A's third rewrite. *The comparison class Aristotle names is
+paid eristic teachers and Gorgias — not Plato.*
+
+---
+
+## THE ATTRIBUTION APPARATUS AS MANUFACTURER
+
+**[M1] HERACLIDES OF PONTUS, HICETAS AND ECPHANTUS.** **Hicetas and Ecphantus of
+Syracuse are argued to be characters in dialogues by Heraclides** — a fourth-century
+Academic — **received by the tradition as historical philosophers with doctrines.**
+*The reputational apparatus did not detect them. It produced them.*
+
+**[M2] TIMAEUS OF LOCRI.** Acquires a biography and then a **forged corpus**; *all
+other ancient reports about him are likely based on Plato's* Timaeus *or on the
+spurious works in his name*, with some holding that Plato used him as **a mask for
+Archytas.** *A speaking position generating a philosopher, who then receives a
+bibliography.*
+
+**[M3] THE PSEUDO-PYTHAGOREAN STYLE.** The pseudepigraphic authors authenticated their
+writings through an **artificial Doric dialect** and locally appropriate examples.
+**Constructed stylistic markers, chosen to authenticate.** *Which is the direct
+counter-case to any argument from stylistic authenticity, and belongs at [VII.1].*
+
+**[M4] POLYCRATES' *KATEGORIA SOKRATOUS*.** Attested only through Isocrates'
+*Busiris* attacking it. **The one non-cluster attestation of Socrates that is neither
+a different man nor proverbial is an attestation of a LOST PAMPHLET, known from an
+attack on it.**
+
+**[M5] DEMOSTHENES 61, THE *EROTIC ESSAY*.** Spurious by near-unanimous consensus.
+**Blass** places it with **a member of a school of Isocrates** and finds the author
+**familiar with the *Phaedrus***; **Worthington** finds its content and style **the
+most removed from Demosthenes' other writings** and **influenced by both Plato and
+Isocrates.** *So the single remaining line of Socrates-attestation outside the cluster
+sits in a forgery whose author was demonstrably reading Plato.*
+
+---
+
+## THE SCHOLASTIC CONTROL, AND WHY IT FAILED
+
+**[C1] ⭑ ALBERT AND AQUINAS ARE NOT A CONTROL FOR OBJECT-CONDITIONING.**
+
+**They are the best available control for PERSON-DISTINCTNESS** — canonization
+proceedings, Dominican chapter records, university registers: evidence with no
+relation to textual style.
+
+**⚠ AND THEY ARE INSIDE THE ARISTOTELIAN TRANSMISSION.** Both are commentators on
+Aristotle; the *Summa*'s quaestio-and-articulus structure is the Aristotelian
+partition applied to theology. **So Aquinas's 1.503 is not an independent author
+reaching Aristotle's 1.489 — it is the ratio appearing in its most saturated
+inheritor.** *M43's title claimed the control problem was solved. It is not, and the
+correction is carried in the register.*
+
+**[C2] AND THE TABLE REFUTES ITS OWN USE.** 1.489 → 1.503 → 1.762 → 2.707. **The ratio
+tracks how unlike the objects are. It never tracked how many authors there were.**
+
+**[C3] THEOPHRASTUS WAS VOIDED FIRST, ON THE SAME GROUND (M36).** *The negative class
+M36a demanded — a corpus performing heavy division-and-classification on an object
+that is not the Aristotelian corpus, standing outside its transmission — remains
+EMPTY. That may be a structural property of the object rather than a gap in the
+search.*
+
+---
+
+## THE COMPARATIVE PAIRS
+
+**[P1] THE BATTERY'S CLASS 1**, on documentary attestation only, with ancient
+attestations excluded as circular: **Wundt → Titchener** (Leipzig PhD 1892,
+university records); **Freud → Jung** (1907–13 correspondence, IPA presidency);
+**Albert → Aquinas** (Dominican chapter records).
+
+**[P2] AND THE GREEK PAIRS THAT KILLED IT.** **Lysias → Isocrates**, with no teaching
+relation, outscores **Isaeus → Demosthenes**, which has one, on every inheritance
+feature. **Herodotus → Thucydides** is contemporary and scores like the distant pairs
+— Ionic against Attic. *The battery reads period and dialect.*
+
+**[P3] HERODOTUS → JOSEPHUS** as the distant-lineage control. *Josephus also carries
+the archive's separate Revelation-priority work and is named here only as a battery
+member.*
+
+---
+
+## THE HETERONYMIC ARCHITECTURES ARE NOT ONE
+
+**[H1] ⭑ PESSOA CLOSES BY REMAINDER; THE CONFIGURATION WOULD CLOSE BY SUM.**
+
+    PESSOA          progressive subtraction toward an invariant.
+                    Caeiro 1.781 (sensation only) → Soares 1.632 (one street) →
+                    Mora 1.437 (one doctrine) → Reis 1.374 (one meter) →
+                    Campos 1.129 (everything) → orthonym 1.033 (no restriction)
+                    The series is a search DOWNWARD: what is the least one can
+                    specify and still get a self that coheres?
+
+    THE CONFIGURATION   complementary coverage. Positions need not approach an
+                    invariant remainder; they can be complementary pieces.
+
+> **There is no single P(E|H_H) until the type of heteronymic construction is
+> specified.** *This prevents the mirror of the error the paper charges: defining
+> heteronymy elastically enough to absorb every result.*
+
+**[H2] AND THE DEATH OF THE MASTER IS NOT INDEPENDENT EVIDENCE.** Pessoa gives Caeiro
+a lifespan, a last poem dictated on the day of death, disciples reporting his speech,
+and names **the school** — *as obras do Mestre e algumas do discípulo directo*. **The
+master position is constituted by dying.** ⚠ *And Pessoa was reading Plato. Two of the
+best-documented heteronymists built the Socratic structure, and imitation cannot be
+distinguished from convergence on the cases available.*
+
+---
+
+## STANDING OF PASS TWO
+
+**Engagement recorded that was performed and not carried into the apparatus.**
+**⚠ Editions, fragment numbers and dates above are as carried in the notebook and
+register and have NOT been re-checked against the works.** Wehrli's numbering, the
+Voigt/Lobel–Page sigla, Blass and Worthington's exact formulations, and the
+Andronicus/Thrasyllus dates are the citation pass, which is a separate operation.
+
+**⚠ AND ONE ITEM IS NAMED AS ABSENT RATHER THAN COMPRESSED.** §IX was written against
+authorship, publication and reception scholarship that is only partly represented in
+either pass. **Speyer** on ancient forgery, **Blum** on Callimachus and the origins of
+bibliography, and the Alexandrian library literature are named at [IX.2] and are not
+yet read.
+
 ∮ = 1
