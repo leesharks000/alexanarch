@@ -145,6 +145,13 @@ both absorbed into syllogistic language by Aristotle:
 
     ONE  →(division)→  MANY  →(collection)→  ONE
 
+**WRITTEN: EA-COLLECTION v1.0, entire.** And two things the architecture did not
+have. **Memory is §II's formula:** *τὸ γὰρ μεμνῆσθαί ἐστι τὸ ἐνεῖναι **δυνάμει** τὴν
+κινοῦσαν* — what is remembered is present in potentiality, and recollection
+actualises it, exactly as a cut actualises the plant's plurality. **And the search
+procedure is the title:** *κινοῦντι πολλά, ἕως ἂν τοιαύτην κινήσῃ κίνησιν ᾗ
+ἀκολουθήσει τὸ πρᾶγμα* — **moving many until one is found that the thing follows.**
+
 **Sources: Round 36 entire; M42.**
 
 ---
