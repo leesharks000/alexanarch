@@ -1804,7 +1804,57 @@ supplies the structure; it does not perform the application.**
 
 ---
 
-## 32. M43 — THE CONTROL PROBLEM IS SOLVED: SCHOLASTIC AND RELIGIOUS SUCCESSION PAIRS
+## 32. M43 — ⚠ THE CONTROL PROBLEM IS **NOT** SOLVED: WHAT SCHOLASTIC PAIRS DO AND DO NOT SUPPLY
+
+**⚠ CORRECTION 2026-08-30. The title of this measure claimed the control problem
+was SOLVED. It is not, and the error is M36's Theophrastus problem at one remove.**
+
+**M36a demanded a control impossible to be INSIDE THE CONFIGURATION.** That is two
+requirements, and this entry satisfied one while claiming both:
+
+    PERSON-DISTINCTNESS          SATISFIED. Canonization proceedings, chapter
+                                 records and university registers attest Albert
+                                 and Thomas as distinct men, on evidence with no
+                                 relation to textual style.
+
+    TRANSMISSION-INDEPENDENCE    NOT SATISFIED. Albert and Aquinas are
+                                 COMMENTATORS ON ARISTOTLE. Their procedural
+                                 apparatus IS the apparatus under test. They sit
+                                 downstream of the object.
+
+**Consequence for the Round 24 result.** That the naming-gap reflex fires only
+where Aristotle's text is being glossed (Albert 1.31, Aquinas 3.72 on the
+commentaries; 0.00 and 1.07 in independent composition) remains a valid finding
+about **whether a reflex transmits between documented distinct persons**. It is
+**not** an independent observation about how procedural shaping propagates in
+general, because the corpus measured is shaped by the very object whose shaping is
+in question. **The object was measured with a copy of itself.**
+
+**AND THE ANALOGY FAILS WHERE IT IS LOAD-BEARING.** Aquinas's object-shapedness is
+**DECLARED COMMENTARY** — announced, titled, structurally explicit. Aristotle's
+shaping by the Platonic material is presented as **independent inquiry carrying an
+explicit priority denial** (§0A). **Using the announced case to normalise the
+unannounced one assumes the relation under test.**
+
+> **One may not establish that object-shapedness of discourse is ordinary — and
+> thereby discount the extreme object-shapedness of the Aristotelian corpus — by
+> pointing to a commentator on Aristotle.**
+
+**WHAT SURVIVES:** the scholastic pairs remain the best available control for
+person-level questions — does a reflex cross between two documented men in a
+teaching relation. **They do not license any claim about what degree of
+object-shaping is normal**, and every such claim resting on them is withdrawn.
+
+**WHAT IS STILL NEEDED:** a control performing heavy division-and-classification
+whose object is **not** the Aristotelian corpus and which stands outside its
+transmission. No candidate has been identified. **The negative class M36a demanded
+remains empty.**
+
+---
+
+*Original entry follows, with its title's claim withdrawn.*
+
+## 32a. M43 — SCHOLASTIC AND RELIGIOUS SUCCESSION PAIRS (person-distinctness only)
 
 *Added 2026-08-29. The externally-secured negative class M36a demanded and no
 Greek figure could supply.*
