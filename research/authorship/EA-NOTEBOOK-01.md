@@ -5751,4 +5751,129 @@ rather than chronological, the E/M/L circularity that has qualified M13 since Ro
 is not a defect. **That is a real reversal and it should be attacked there first.**
 
 
+---
+
+# ROUND 51 — THREE §I DRAFTS SEATED AS EVIDENTIARY MATERIAL, NOT AS PRIMARY WRITING
+
+*Added 2026-08-31. Three earlier drafts of §I, written before the architecture
+inverted. **They are unreadable and the finds in them are excellent.** Seated at
+`drafts/` for their loci and their arithmetic; not to be drawn on for prose.*
+
+## 224. THE FILES
+
+    drafts/MANY-AND-ONE_I_DRAFT-01.md   44,488 b   "What Counts as a Part"
+    drafts/MANY-AND-ONE_I_DRAFT-02.md   28,933 b   "Socrates Asked, But Did Not
+                                                    Answer" — six movements
+    drafts/MANY-AND-ONE_I_DRAFT-03.md   24,712 b   same title, faster, positional
+                                                    offsets and the arithmetic
+
+**All three: Sigil position, no stylometry, no heteronymy, no coined terms.**
+
+## 225. ⚠ THE VERDICT, AND IT IS THE USEFUL PART
+
+**They could not be read.** Not by their author, on the day they were written.
+**And Draft 03 is fast** — offsets, arithmetic, tight paragraphs — so the defect is
+not slowness, and the diagnosis "cut the hedge and the deferral" was addressing the
+wrong thing.
+
+**The difference from what worked.** EA-DIVISION-OF-GOD-01, which was **wrong at its
+foundation**, was read through and followed. It ascends: division cannot decide
+whether man is mortal or immortal; the same operation run on God decides. **Each step
+is somewhere the reader has not been.**
+
+**The three drafts assemble evidence for a claim announced in advance.** By the time
+the arithmetic arrives, four sections of loci have been set in place *for* it. **The
+finds are laid out as exhibits, and exhibits do not pull.**
+
+> **Correctness and readability came apart. The draft that was wrong moved; the
+> drafts that were right did not.** Recorded because the temptation all session has
+> been to optimise the one that nobody reads.
+
+## 226. WHAT TO TAKE FROM THEM — the arithmetic
+
+**Draft 03 §5. This is the strongest single formulation the investigation has
+produced and it is not yet in any live file:**
+
+    1  Division is a part of the method                         APr I.31
+    2  No part of the method was worked out beforehand          SE 34
+    3  Division WAS worked out beforehand, as a named art
+       with a rule and practitioners                            Phdr, Soph, Phlb
+    4  The Platonic corpus precedes the Aristotelian            the received
+                                                                chronology
+
+**The first three are Aristotle's and Plato's words. The fourth is nobody's; it is
+the frame the words are read in.**
+
+**The four cannot all stand unless one word moves: *part*, *worked out*, *the
+method*, or *before*.** Every reading in the tradition moves one. *Worked out* is
+moved by the shoemaker. *The method* is moved by restricting the denial to the
+dialectical programme — **and I.31 has just sent us to that programme for the method
+division is a part of, so the restriction does not restrict.** *Part* is moved by
+ξυνίεσαν, which explains the filing and not the denial. *Before* is moved for
+Aristotle only: *Topics* early, *Analytics* late, he had not yet seen it.
+
+> **Four words, four readings, every one paid for on Aristotle's side of the ledger.
+> THE FOURTH WORD HAS NEVER BEEN MOVED FOR PLATO.**
+
+## 227. AND THE LOCI THEY FOUND, NONE OF WHICH IS IN A LIVE FILE
+
+**(a) Socrates is named on the last page of the *SE*, at 0.968**, a few lines before
+the priority claim:
+
+> **Σωκράτης ἠρώτα, ἀλλ᾽ οὐκ ἀπεκρίνετο· ὡμολόγει γὰρ οὐκ εἰδέναι.**
+>
+> *Socrates asked, but did not answer; for he acknowledged that he did not know.*
+
+**And the name is the token individual everywhere else in the Organon** — *Cat.* 14,
+*De int.* 10, *Top.* 4, *APr* 2, and twice earlier in the *SE* at 0.109 where it
+means *anybody*. **The name is filled once, on the closing page, and what it is
+filled with is a function.** Aristotle assigns him a side and takes the other:
+the inquiry must cover *both* — ὅπως λόγον ὑπέχοντες φυλάξομεν τὴν θέσιν —
+**because one side was already taken.**
+
+**(b) *Phaedrus* 266c–267d, 0.752–0.764.** The page that names division as the
+τέχνη and calls its practitioners **διαλεκτικοί** also lists, on the other side of
+the same contrast, the men who have the handbooks and not the art: **Theodorus,
+Evenus, Tisias, Gorgias, Prodicus, Thrasymachus.**
+
+**Aristotle's succession at *SE* 183b is Tisias → Thrasymachus → Theodorus, and his
+type-case for handing out products is Gorgias.** All four are on that *Phaedrus*
+page, in the same role, on the same side.
+
+**NULL, stated in the draft:** these are the canonical names and **Aristotle compiled
+the handbook collection himself** (*Synagoge Technon*). **What the null leaves:** the
+earlier page draws Aristotle's contrast, with Aristotle's men on the product side,
+and says what is on the other side.
+
+**(c) *Statesman* 262a / 263b, 0.086 / 0.107.** *μὴ σμικρὸν μόριον ἓν πρὸς μεγάλα
+καὶ πολλὰ ἀφαιρῶμεν, μηδὲ εἴδους χωρίς* — and: a form of something is necessarily a
+part, **but a part is not necessarily a form.** *APr* I.31 files division as
+**μικρόν τι μόριον.** *Verbal coincidence, recorded and not argued from.*
+
+**(d) A closing coincidence, recorded with no base rate.** The *Theaetetus* ends at
+0.982 on the failure of **τὸν σιμόν τε καὶ ἐξόφθαλμον** — Socrates' face — to pick
+out one man. The *SE* ends at 0.968–0.992 on **the one page where Aristotle's
+example-name picks out one man.** **Both corpora close on what individuates
+Socrates.** Coincidence until a base rate is run.
+
+## 228. HOW THEY ARE TO BE USED
+
+**EVIDENTIARY. Loci, counts, positions, and the §5 arithmetic may be drawn on
+freely and are recorded above so that they are not lost if the drafts are never
+opened again.**
+
+**NOT PRIMARY WRITING.** No paragraph, order, or framing from them enters a live
+section. **Two things in them are actively wrong for the current architecture:**
+
+**(i) The retreat.** Draft 03 §6 builds the literal reading and then withdraws it —
+*It is preposterous … I do not assert this.* **That is the hedge Round 43 §176
+identified and the whole investigation has been correcting.**
+
+**(ii) The deferral is now false.** *If the instruments can see two, the reading dies
+there.* **The instruments ran. They cannot see two. And Round 50 established that
+this is the PREDICTED result, not a failed disconfirmation** — §VII of the
+architecture. The drafts defer to a test whose outcome has changed what the test
+means.
+
+
 ∮ = 1
