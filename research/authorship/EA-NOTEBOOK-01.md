@@ -5876,4 +5876,133 @@ architecture. The drafts defer to a test whose outcome has changed what the test
 means.
 
 
+---
+
+# ROUND 52 — THE PRECEPT, AND THE MATERIALS
+
+*Added 2026-08-31. The diagnosis of why the §I drafts could not be read, stated as a
+rule for every section; and the materials that must go in, one of which the
+architecture did not have.*
+
+## 229. ⭑ THE PRECEPT
+
+> **They were playing the game of philosophy rather than doing it. They were not
+> dividing.**
+
+**That is why Draft 03 is unreadable at speed and why EA-DIVISION-OF-GOD-01 was
+readable while wrong.** The drafts *describe* an operation and lay out exhibits for
+a claim announced in advance. **Division of God RUNS the operation**: the cut is
+made on man and fails, the same cut is made on God and holds. The reader watches a
+division happen.
+
+**THE RULE FOR EVERY SECTION: perform the operation the section is about. Do not
+describe it and do not assemble evidence for it.**
+
+    §I     divide            run I.31's letters, then run them on νοῦς
+    §II    divide a living   cut the plant; both halves live
+    §III   divide a kind     six cuts, all true, and the beholder's failure
+    §IV    collect           gather the scattered and show the gathering
+    §V     divide a person   the two boys — face and name — and the criterion
+    §VI    divide a maker    many voices, many objects, one
+    §VII   fail to divide    the instruments, and what they cannot cut
+    §VIII  state the order   from the questioner who did not know to the answerer
+
+## 230. ⭑ THE MATERIAL THE ARCHITECTURE DID NOT HAVE — *Statesman* 257d–258a
+
+**The corpus divides its founder, by face and by name, and states the criterion.**
+
+The Stranger proposes to swap Theaetetus for the other boy. Socrates answers:
+
+> **κινδυνεύετον, ὦ ξένε, ἄμφω ποθὲν ἐμοὶ συγγένειαν ἔχειν τινά. τὸν μέν γε οὖν
+> ὑμεῖς κατὰ τὴν τοῦ προσώπου φύσιν ὅμοιον ἐμοὶ φαίνεσθαί φατε, τοῦ δ᾽ ἡμῖν ἡ
+> κλῆσις ὁμώνυμος οὖσα καὶ ἡ πρόσρησις παρέχεταί τινα οἰκειότητα.**
+>
+> *Both of them seem somehow to have some kinship with me. **The one you say appears
+> like me in the nature of his face; the other's naming, being HOMONYMOUS, and his
+> form of address, supply a certain kinship.***
+
+**One boy has his FACE. The other has his NAME.** And then the criterion:
+
+> **δεῖ δὴ τούς γε συγγενεῖς ἡμᾶς ἀεὶ προθύμως ΔΙΑ ΛΟΓΩΝ ἀναγνωρίζειν.**
+>
+> *We must always be eager to recognise our kin **through accounts**.*
+
+**Not by face. Not by name. διὰ λόγων.**
+
+And he applies it: he has mixed with Theaetetus **διὰ λόγων** and heard him
+answering — **Σωκράτους δὲ οὐδέτερα** — *of Socrates, neither*. So: **σοὶ δὲ νῦν
+ἀποκρινέσθω** — let him answer to you now.
+
+**And the Stranger's next line:**
+
+> **ὦ Σώκρατες, ἀκούεις δὴ Σωκράτους;**
+>
+> ***Socrates, do you hear Socrates?***
+
+## 231. WHY THIS IS §V
+
+**The dialogue that theorises parts — μὴ σμικρὸν μόριον … μηδὲ εἴδους χωρίς at 262a,
+and a part not necessarily a form at 263b — opens by dividing Socrates in two.**
+
+    ONE BOY   has the face      κατὰ τὴν τοῦ προσώπου φύσιν
+    ONE BOY   has the name      ἡ κλῆσις ὁμώνυμος
+    NEITHER   is recognised     until he answers διὰ λόγων
+
+**The person is not the face and not the name. The person is what answers in
+account** — and the older Socrates hands the answering to the namesake and falls
+silent for the rest of the dialogue.
+
+**⚠ The ordinary reading is sufficient and must be given: a courteous transition
+device, a joke about two boys, and a way of getting Socrates out of the
+conversation.** What is recorded here is that the joke states a criterion of
+personal identity, in the vocabulary of parts, in the dialogue about dividing.
+
+**AND ὁμώνυμος IS THE ORGANON'S FIRST WORD.** *Cat.* 1a1: **Ὁμώνυμα λέγεται ὧν
+ὄνομα μόνον κοινόν, ὁ δὲ κατὰ τοὔνομα λόγος τῆς οὐσίας ἕτερος** — things are
+homonymous when the **name alone** is common and the **account of the being** is
+different. **The two boys are a homonym case, decided by λόγος, and the treatise
+that opens on homonyms opens on exactly that.**
+
+## 232. THE OTHER MATERIALS, TO BE INCORPORATED
+
+**(a) The descent's licence, from the corpus rather than a gloss.** *Phaedrus* 276a:
+**τὸν τοῦ εἰδότος λόγον … ζῶντα καὶ ἔμψυχον, οὗ ὁ γεγραμμένος εἴδωλον.** **The corpus
+distinguishes its own λόγος from its own matter.** That is the hinge at §VI, not
+ὅσα μὴ ὕλην ἔχει asserted as a general condition by me.
+
+**(b) A contradiction to fix.** §VI says *the argument of this paper is that one
+person wrote the corpus*; STANDING says *not claimed anywhere: that one hand wrote
+both received corpora.* **Choose §VI.** The claim is made; §VII shows it is not
+recoverable **by lexical instruments at the level of matter**; unrecoverable by
+those instruments is not unclaimed. **STANDING must read: claimed, argued at λόγος,
+and shown not decidable at ὕλη — which is where 1075a1 said it would fail.**
+
+**(c) §VII IS NOT ALL NULL, and saying so is what keeps it from being unfalsifiable
+by construction.** Size-matched: **Albert→Aquinas falls BELOW every heteronymic
+pair; Plato→Aristotle sits INSIDE the range.** The instrument sees something, and
+what it sees is consistent with the claim and inconsistent with the one documented
+master-student pair of comparable structure. **Weak, one pair, no base rate — say
+so.** And state the falsifier that did not fire: **Plato→Aristotle below the
+heteronymic floor. It did not happen.**
+
+**(d) The seam must be marked at §V**, in one sentence — *here the corpus is first
+read as a maker's work* — so that nobody can say the ontology was built to fit.
+**§§I–IV are theorems. §§V–VIII are applications.**
+
+**(e) §IV's mechanism is the corpus's own development.** *De mem.* 453a: **ἀδυνατεῖ
+ἀναμνησθῆναι, ζητεῖν δὲ δύναται καὶ εὑρίσκει.** The earlier position cannot
+recollect what its operation entails; the later searches and finds. **That is
+ξυνίεσαν and ῥᾴδιον ἰδεῖν in Aristotle's own psychology**, and it is what makes
+§VIII's order an order of GRASP rather than of years.
+
+**(f) §VIII: read the priority claim in its verb.** **ὑπάρχω** is the syllogistic's
+own word for predication — *A ὑπάρχει to B* — and **ἐξ ὑπαρχῆς** stands in the same
+paragraph. **οὐδὲν παντελῶς ὑπῆρχεν** is a premise of the method stated about the
+method. *(Count to be run in the Analytics before use.)*
+
+**(g) §I must concede in one sentence that the νόησις νοήσεως identity is standard
+exegesis.** What is new is only that it is **division succeeding where I.31 said
+division fails, and why.**
+
+
 ∮ = 1
