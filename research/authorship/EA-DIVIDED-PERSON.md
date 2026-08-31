@@ -154,40 +154,48 @@ smallest denominations, rearranged, make either kind.**
 
 ## VI. AND LEGITIMACY IS ESTABLISHED BY ACKNOWLEDGMENT, NOT BY DESCENT
 
-**20.** The corpus has a vocabulary for testing whether a thing is what it claims,
+**20.** ⭑ **AND §I's EPILOGUE IS THIS SECTION'S VOCABULARY, USED BY ARISTOTLE ON HIS
+OWN BEHALF.** *SE* 183b–184b establishes standing by **refusing a succession**,
+**distinguishing an art from its products**, and **asking the audience for
+συγγνώμη for omissions and χάρις for findings.** *Not descent. Acknowledgment,
+witnessed and adjudicated by hearers* — which is the structure §§20–23 find in
+Isaeus. **The treatise that theorises counterfeit closes by submitting its own claim
+for assay.**
+
+**21.** The corpus has a vocabulary for testing whether a thing is what it claims,
 and it is the assay vocabulary. *Republic* 507a: **κίβδηλος λόγος** — debased
 speech. *Laws* 742a: currency **ἔντιμον** within, **ἀδόκιμον** without. *SE* 165a
 models the apparent syllogism on **counterfeit metal** and names fallacy **διὰ τῶν
 ὀνομάτων** as the commonest kind.
 
-**21.** **And where legitimacy is actually litigated, descent is not the test.**
+**22.** **And where legitimacy is actually litigated, descent is not the test.**
 Isaeus, whose entire corpus is inheritance cases: **γνήσιος at 23.72 per 10k**, and
 the establishing vocabulary is **μαρτυρ- 279, ἐγγύη 91, εἰσάγω 45, φράτηρ 35** —
 witnessing, pledging, introduction, phratry enrolment. **Zero blood-vocabulary.**
 
-**22.** ⚠ **INTERPRETATION, marked.** What the count shows is that Athenian
+**23.** ⚠ **INTERPRETATION, marked.** What the count shows is that Athenian
 legitimacy is argued through **legal proof**. It does not show that descent was
 irrelevant to the question, only that it is not how the question is won. **On that
 qualified reading:** standing is conferred by acknowledgment and introduction, and a
 name is made legitimate by being **received into a body that answers for it.**
 
-**23.** **Which is the *Statesman*'s criterion in a courtroom.** The boy with the
+**24.** **Which is the *Statesman*'s criterion in a courtroom.** The boy with the
 name is not yet recognised; he is recognised **when he answers**.
 
 ---
 
 ## VII. WHAT §V ESTABLISHES
 
-**24.** **The corpus divides a person into face and name, gives both away, and keeps
+**25.** **The corpus divides a person into face and name, gives both away, and keeps
 neither as the criterion.**
 
-**25.** **What it keeps is λόγος — and λόγος is what a corpus is.**
+**26.** **What it keeps is λόγος — and λόγος is what a corpus is.**
 
-**26.** **The objection to one maker being many is stated in the corpus and answered
+**27.** **The objection to one maker being many is stated in the corpus and answered
 in the corpus**, in the vocabulary of minting, by the doctrine that the smallest
 denominations rearranged make either kind.
 
-**27.** **And the test for whether a thing bearing a name is what it claims is not
+**28.** **And the test for whether a thing bearing a name is what it claims is not
 its face and not its name, but whether the account of its being is one.** Which is
 *Cat.* 1a1's definition of a homonym, the *Statesman*'s criterion of kinship, and —
 §§VI–VIII will say — the question this paper is asking about a corpus.
@@ -196,19 +204,19 @@ its face and not its name, but whether the account of its being is one.** Which 
 
 ## STANDING
 
-**28.** **Checkable and quoted:** *Plt.* 257d–258b; *Cat.* 1a1; *Rep.* 395a–b; *Symp.*
+**29.** **Checkable and quoted:** *Plt.* 257d–258b; *Cat.* 1a1; *Rep.* 395a–b; *Symp.*
 223d; *GC* 315b; *Rep.* 507a; *Laws* 742a; *SE* 165a. **The Isaeus counts are from
 the seated corpus (M41).**
 
-**29.** **Conceded in full at §§8–9:** the *Statesman* passage is a transition
+**30.** **Conceded in full at §§8–9:** the *Statesman* passage is a transition
 device, a joke about two boys, and the mechanism for getting Socrates offstage.
 **Nothing here requires it to be more, and the section's claim is only about what
 the joke states while doing its work.**
 
-**30.** **Marked as interpretation:** §22, the Isaeus reading. **Marked as recorded
+**31.** **Marked as interpretation:** §22, the Isaeus reading. **Marked as recorded
 and not argued from:** §13, the *Categories* correspondence.
 
-**31.** **And the seam is marked at the head.** §§I–IV owe nothing to the authorship
+**32.** **And the seam is marked at the head.** §§I–IV owe nothing to the authorship
 question and were established before it was raised. **This is where the corpus
 begins to be read as a maker's work, and the reader is told so.**
 

@@ -2,7 +2,7 @@
 name: many-and-one-complete
 title: "MANY AND ONE"
 designator: EA-MANY-AND-ONE-COMPLETE
-status: v1.6 COMPLETE WITH APPARATUS, 2026-08-31. Nine sections, and all 90 apparatus notes built in — the firewall, the tiered claims and the non-claims list at the front; NOTES blocks per section carrying the citational engagement compressed from Socrates as Orthonym, from the notebook and register, and from the ancient authorial economy. Every note placed.
+status: v1.7, 2026-08-31. §I restored to M40 at full strength: the SE epilogue read as a performative claim to authorial legitimacy in legitimacy's own vocabulary, and the argument identified as an enthymeme whose joining term the reader supplies. Both readings of the instancing stated and neither decided. A standing lexical rule added to §I after three reversions.
 author: Sharks, Lee
 orcid: 0009-0000-1599-0703
 ---
@@ -121,44 +121,118 @@ one thing unanswered, and the unanswered thing is the subject of this paper.**
 Its users **οὔτε ὅ τι ἐνδέχεται συλλογίσασθαι διαιρούμενοι ξυνίεσαν** — did not
 grasp what can be syllogized by dividing.
 
-**6.** So: an operation Aristotle classifies as a part of the method, performed at
-length in a corpus he does not credit, in an inquiry of which he says **nothing at
-all** pre-existed. **The question the *SE* passage leaves standing is not whether
-Aristotle contradicts himself. It is what division can syllogize such that its
-whole prior practice counts as nothing.**
+**6.** So the three texts stand in this relation. **The operation is instanced at
+length in the Platonic corpus. Aristotle files it as a part of the method. And of
+that method he says οὐδὲν παντελῶς ὑπῆρχεν.**
 
-**7.** He answers. Not in the *SE*, and not where anyone looks.
+**7.** ⭑ **AND THE PASSAGE IS NOT A NEUTRAL REPORT OF A DIFFICULTY. IT IS A CLAIM TO
+AUTHORIAL LEGITIMACY, MADE IN LEGITIMACY'S OWN VOCABULARY, AT THE CLOSE OF THE
+AUTHOR'S OWN BOOK.**
+
+**8.** **Read what the epilogue does, not only what it says.** It names the
+succession case and refuses it for itself — *οἷον ἐκ διαδοχῆς*, Tisias after the
+first, Thrasymachus after Tisias, Theodorus after him, **καὶ πολλοὶ πολλὰ
+συνενηνόχασι μέρη**, many contributing many parts. It distinguishes handing over an
+**art** from handing over **its products**: **οὐ γὰρ τέχνην ἀλλὰ τὰ ἀπὸ τῆς τέχνης
+διδόντες παιδεύειν ὑπελάμβανον** — *for they supposed they educated by giving not the
+art but the things from the art* — and the man who does so **βεβοήθηκε μὲν πρὸς τὴν
+χρείαν, τέχνην δ᾽ οὐ παρέδωκεν**: he helped with the need and **did not hand over an
+art.**
+
+**9.** **And it closes on a transaction.** If the method seems to you adequate
+**παρὰ τὰς ἄλλας πραγματείας τὰς ἐκ παραδόσεως ηὐξημένας** — beside the other
+inquiries grown by transmission — then it remains for you, the hearers,
+
+> **τοῖς μὲν παραλελειμμένοις τῆς μεθόδου συγγνώμην, τοῖς δ᾽ εὑρημένοις πολλὴν ἔχειν
+> χάριν.**
+>
+> *to have **indulgence** for what has been **left out** of the method, and much
+> **gratitude** for what has been **found**.*
+
+**10.** **Every term is a legitimacy term.** **ὑπάρχω** is the method's own word for
+belonging — *A ὑπάρχει to B* — and it is the verb of the denial. **μέρος** and
+**μόριον** are the units in which contribution is measured. **παράδοσις** is
+transmission by handing-on, and the closing sets this inquiry against the inquiries
+that grew by it. **παραδίδωμι** is what the product-sellers fail to do. And the final
+pair — **συγγνώμη** for omissions, **χάρις** for findings — **is a request that the
+audience adjudicate a claim of first finding.**
+
+**11.** > **The treatise that opens by modelling false reasoning on counterfeit metal
+> (*SE* 165a) and names fallacy διὰ τῶν ὀνομάτων as the commonest kind, closes by
+> asserting its own genuineness — in the vocabulary of parts, belonging, succession,
+> art-against-products, and the crediting of a finder.**
+
+**12.** ⚠ **And the argument is not complete on the page.** The passage supplies:
+
+    division is μόριον τῆς εἰρημένης μεθόδου              APr I.31
+    of this method οὐδὲν παντελῶς ὑπῆρχεν                 SE 183b
+
+**and does not supply the term that joins them.** The conclusion exists only across
+the two texts, and **a reader completes it or it is not concluded.**
+
+**13.** **No claim of intentional encoding is made or needed.** *An enthymeme is a
+syllogism with a premise unstated, and it is the standard form of persuasive
+argument; that a premise is unstated is a fact about the passage, not a claim about
+the author's design.* **What follows is that the question of §7 is the TEXT's
+question and not an imposition on it** — the passage makes a claim about who a method
+belongs to, and declines to say what that entails for an operation it has filed
+inside the method.
+
+**14.** ⭑ **TWO READINGS ARE AVAILABLE HERE, AND THIS SECTION DECIDES NEITHER.**
+
+    THE RECEIVED READING     the instancing is a predecessor's, and the denial
+                             is scoped — to the dialectical programme, or to the
+                             art as against its products — or retrospective,
+                             the classification being one Aristotle could make
+                             only after developing what he classifies with.
+
+    THE CONFIGURATIONAL      the instancing is the same maker's earlier work,
+    READING                  and the denial is literal: nothing pre-existed
+                             because the range of the operation had not yet
+                             been seen, and the one who saw it is the one
+                             claiming it.
+
+**15.** **Both are readings of one thing** — of what division can syllogize, such that
+an operation filed as a part of the method can be instanced at length while the
+method is said to have had nothing before it. **Neither reading is available until
+that is known.**
+
+**16.** > **This section answers only that.** What division can syllogize is settled
+> from the *Analytics* and the *Metaphysics*, without deciding whose the instancing
+> is. **§VIII 4b returns to the two readings with everything §§I–VII supply.**
+
+**17.** He answers. Not in the *SE*, and not where anyone looks.
 
 ---
 
 ## 1. WHAT DIVISION CANNOT DO
 
-**8.** *APr* I.31 gives the limit case first, worked in letters. Let **ζῷον** be A,
+**18.** *APr* I.31 gives the limit case first, worked in letters. Let **ζῷον** be A,
 **θνητόν** B, **ἀθάνατον** C, **ἄνθρωπος** D.
 
 > **ὁ μὲν οὖν συλλογισμός ἐστιν** ὅτι τὸ Δ ἢ Β ἢ Γ ἅπαν ἔσται, ὥστε **τὸν ἄνθρωπον
 > ἢ θνητὸν μὲν ἢ ἀθάνατον ἀναγκαῖον εἶναι**, ζῷον θνητὸν δὲ οὐκ ἀναγκαῖον, ἀλλ᾽
 > **αἰτεῖται· τοῦτο δ᾽ ἦν ὃ ἔδει συλλογίσασθαι.**
 
-**9.** Read it as an operation. Division **does** conclude, and the conclusion is a
+**19.** Read it as an operation. Division **does** conclude, and the conclusion is a
 disjunction: **man is necessarily either mortal or immortal**. What it cannot do is
 **select**. *Mortal* animal is **οὐκ ἀναγκαῖον ἀλλ᾽ αἰτεῖται** — begged — and that
 was the very thing to be shown.
 
-**10.** The example is **θνητόν / ἀθάνατον** of ζῷον. *⚠ No weight is placed on the
+**20.** The example is **θνητόν / ἀθάνατον** of ζῷον. *⚠ No weight is placed on the
 choice: that cut is the Academy's stock first division of animal, so reaching for it
 is reaching for the textbook case. Any emphasis on its selection would need a base
 rate over Aristotle's divisional examples, which has not been run. The theorem does
 not require it.*
 
-**11.** Division reaches that seam and cannot cross it. **Hold that as the negative
+**21.** Division reaches that seam and cannot cross it. **Hold that as the negative
 case.**
 
 ---
 
 ## 2. WHAT DIVISION CAN DO
 
-**12.** *Metaphysics* Λ 9, 1074b. The question of the first substance, posed **in
+**22.** *Metaphysics* Λ 9, 1074b. The question of the first substance, posed **in
 the branching form characteristic of division** — the text does not use the word
 διαίρεσις here, and the claim is about the logical shape, not about Aristotle's
 label for it:
@@ -166,46 +240,46 @@ label for it:
 > ἔτι δὲ εἴτε **νοῦς** ἡ οὐσία αὐτοῦ εἴτε **νόησίς** ἐστι, **τί νοεῖ;** ἢ γὰρ
 > **αὐτὸς αὑτὸν ἢ ἕτερόν τι**· καὶ εἰ ἕτερόν τι, **ἢ τὸ αὐτὸ ἀεὶ ἢ ἄλλο.**
 
-**13.** That is the divisional form exactly: a genus cut at a differentia — *itself
+**23.** That is the divisional form exactly: a genus cut at a differentia — *itself
 / another* — and the second branch cut again — *always the same / different*. The
 **ἢ … ἢ** of the worked example, applied to God.
 
-**14.** And the branches are eliminated by the divisional argument. Were it
+**24.** And the branches are eliminated by the divisional argument. Were it
 **δύναμις** rather than **νόησις**, continuity would be laborious. Did it think
 another, **ἄλλο τι ἂν εἴη τὸ τιμιώτερον ἢ ὁ νοῦς, τὸ νοούμενον** — the thought
 would outrank the intellect.
 
-**15.** The conclusion:
+**25.** The conclusion:
 
 > **αὑτὸν ἄρα νοεῖ, εἴπερ ἐστὶ τὸ κράτιστον, καὶ ἔστιν ἡ νόησις νοήσεως νόησις.**
 
-**16.** ⭑ **THE ANSWER TO §6.**
+**26.** ⭑ **THE ANSWER TO §6.**
 
     OF MAN     division reaches   mortal | immortal    CANNOT SELECT — αἰτεῖται
     OF GOD     division reaches   itself | another     SELECTS
 
-**17.** And it selects for a reason that is the whole point. **On this one object
+**27.** And it selects for a reason that is the whole point. **On this one object
 the disjunction collapses.** The knower and the known are not two branches to choose
 between; they are **τὸ αὐτό**. Division terminates because there was nothing to
 divide.
 
 > **What division can syllogize is God — and it can, only because God is one.**
 
-**18.** ⚠ **AND THE SECTION STOPS HERE.**
+**28.** ⚠ **AND THE SECTION STOPS HERE.**
 
 **What Λ 9 shows is that division selects on one object, and why: the terms are not
 other.** Any further reading of the *SE* clause — what "nothing pre-existed" is a
 claim about, and whose prior practice is at issue — **requires premises this section
 does not have and does not supply.** It is taken up at §VIII IV.
 
-**19.** **The question of §6 is therefore answered only in this form:** there is an
+**29.** **The question of §6 is therefore answered only in this form:** there is an
 object on which division does not stall at a disjunction, **and Λ 9 is where the
 corpus runs it.** Whether that is what the priority claim was about is not decided
 here.
 
 ## 4. THE SHAPE
 
-**20.**
+**30.**
 
     SE 183b        of this inquiry NOTHING AT ALL pre-existed
                             ↓
@@ -220,37 +294,51 @@ here.
                             ↓
     De an. III.5   and the man-division made again inside νοῦς, left forked
 
-**21.** **Division fails at man and succeeds at God, and succeeds only where the
+**31.** **Division fails at man and succeeds at God, and succeeds only where the
 divided thing is already one.** That is the answer the priority passage left
 standing. And the priority claim is literal on the configurational reading not
 because the cutting was somebody else's, but because **the cutter did not yet know
 what he was cutting toward.**
 
-**22.** And the closure is immediately unmade. **The division that terminates is
+**32.** And the closure is immediately unmade. **The division that terminates is
 reopened by the sentence after it**, and the division that cannot terminate is made
 again, at a finer grain, in the mind of the animal that could not be sorted.
 
 ---
 
+## ⚠ A STANDING RULE FOR THIS SECTION
+
+**The divisions instanced in the Platonic corpus are to be named by LOCATION and
+never by AGENT OR TIME.** Not *Plato's*, not *the Academy's*, not *prior*, not
+*earlier*, not *predecessor's*, not *he does not credit*, not *whole prior practice*.
+**Where they are is a fact. Whose they are is §7's open question and §VIII 4b's
+answer.**
+
+*This rule exists because the sentence at §6 reverted to attribution three times —
+each time through a connective reaching for the nearest English phrase, and every
+available phrase carries the succession. **It is a lexical rule because attention
+failed and a grep does not.*** Any pairing of a division-word with an
+attribution-word in this section is a violation.
+
 ## STANDING
 
-**23.** **Checkable, and quoted:** *SE* 183b28–184b8; *APr* I.31, 46a31–46b12;
+**33.** **Checkable, and quoted:** *SE* 183b28–184b8; *APr* I.31, 46a31–46b12;
 *Meta.* Λ 9, 1074b15–35; *De an.* III.5, 430a10–25. **That Λ 9 divides the first
 substance and resolves the division by identity is what the chapter says**, and is
 not among its disputed readings.
 
-**24.** **The interpretive step is §§17 and 20–24**, and §19 marks the reading
+**34.** **The interpretive step is §§17 and 20–24**, and §19 marks the reading
 deliberately not taken. The step — that Λ's terminating division is what
 the *SE* clause leaves open. **The conventional reading of the priority claim does
 not require this and is not defeated by it.** Λ can be a piece of theology with no
 relation to the *SE* epilogue; that is the ordinary account and it is sufficient.
 
-**25.** *Posterior Analytics* II.13 assigns division a definitional employment —
+**35.** *Posterior Analytics* II.13 assigns division a definitional employment —
 collecting the elements of an essence, with a rule for branch selection. **That is a
 further use found for the same apparatus and is not in competition with the reading
 given here.** A discovery may exceed the earlier work more than once.
 
-**26.** **Not claimed:** authorship. One author writing the *Analytics*, the *De
+**36.** **Not claimed:** authorship. One author writing the *Analytics*, the *De
 anima*, and Λ produces this sequence. **So does a school.**
 
 
@@ -1123,40 +1211,48 @@ smallest denominations, rearranged, make either kind.**
 
 ## VI. AND LEGITIMACY IS ESTABLISHED BY ACKNOWLEDGMENT, NOT BY DESCENT
 
-**20.** The corpus has a vocabulary for testing whether a thing is what it claims,
+**20.** ⭑ **AND §I's EPILOGUE IS THIS SECTION'S VOCABULARY, USED BY ARISTOTLE ON HIS
+OWN BEHALF.** *SE* 183b–184b establishes standing by **refusing a succession**,
+**distinguishing an art from its products**, and **asking the audience for
+συγγνώμη for omissions and χάρις for findings.** *Not descent. Acknowledgment,
+witnessed and adjudicated by hearers* — which is the structure §§20–23 find in
+Isaeus. **The treatise that theorises counterfeit closes by submitting its own claim
+for assay.**
+
+**21.** The corpus has a vocabulary for testing whether a thing is what it claims,
 and it is the assay vocabulary. *Republic* 507a: **κίβδηλος λόγος** — debased
 speech. *Laws* 742a: currency **ἔντιμον** within, **ἀδόκιμον** without. *SE* 165a
 models the apparent syllogism on **counterfeit metal** and names fallacy **διὰ τῶν
 ὀνομάτων** as the commonest kind.
 
-**21.** **And where legitimacy is actually litigated, descent is not the test.**
+**22.** **And where legitimacy is actually litigated, descent is not the test.**
 Isaeus, whose entire corpus is inheritance cases: **γνήσιος at 23.72 per 10k**, and
 the establishing vocabulary is **μαρτυρ- 279, ἐγγύη 91, εἰσάγω 45, φράτηρ 35** —
 witnessing, pledging, introduction, phratry enrolment. **Zero blood-vocabulary.**
 
-**22.** ⚠ **INTERPRETATION, marked.** What the count shows is that Athenian
+**23.** ⚠ **INTERPRETATION, marked.** What the count shows is that Athenian
 legitimacy is argued through **legal proof**. It does not show that descent was
 irrelevant to the question, only that it is not how the question is won. **On that
 qualified reading:** standing is conferred by acknowledgment and introduction, and a
 name is made legitimate by being **received into a body that answers for it.**
 
-**23.** **Which is the *Statesman*'s criterion in a courtroom.** The boy with the
+**24.** **Which is the *Statesman*'s criterion in a courtroom.** The boy with the
 name is not yet recognised; he is recognised **when he answers**.
 
 ---
 
 ## VII. WHAT §V ESTABLISHES
 
-**24.** **The corpus divides a person into face and name, gives both away, and keeps
+**25.** **The corpus divides a person into face and name, gives both away, and keeps
 neither as the criterion.**
 
-**25.** **What it keeps is λόγος — and λόγος is what a corpus is.**
+**26.** **What it keeps is λόγος — and λόγος is what a corpus is.**
 
-**26.** **The objection to one maker being many is stated in the corpus and answered
+**27.** **The objection to one maker being many is stated in the corpus and answered
 in the corpus**, in the vocabulary of minting, by the doctrine that the smallest
 denominations rearranged make either kind.
 
-**27.** **And the test for whether a thing bearing a name is what it claims is not
+**28.** **And the test for whether a thing bearing a name is what it claims is not
 its face and not its name, but whether the account of its being is one.** Which is
 *Cat.* 1a1's definition of a homonym, the *Statesman*'s criterion of kinship, and —
 §§VI–VIII will say — the question this paper is asking about a corpus.
@@ -1165,19 +1261,19 @@ its face and not its name, but whether the account of its being is one.** Which 
 
 ## STANDING
 
-**28.** **Checkable and quoted:** *Plt.* 257d–258b; *Cat.* 1a1; *Rep.* 395a–b; *Symp.*
+**29.** **Checkable and quoted:** *Plt.* 257d–258b; *Cat.* 1a1; *Rep.* 395a–b; *Symp.*
 223d; *GC* 315b; *Rep.* 507a; *Laws* 742a; *SE* 165a. **The Isaeus counts are from
 the seated corpus (M41).**
 
-**29.** **Conceded in full at §§8–9:** the *Statesman* passage is a transition
+**30.** **Conceded in full at §§8–9:** the *Statesman* passage is a transition
 device, a joke about two boys, and the mechanism for getting Socrates offstage.
 **Nothing here requires it to be more, and the section's claim is only about what
 the joke states while doing its work.**
 
-**30.** **Marked as interpretation:** §22, the Isaeus reading. **Marked as recorded
+**31.** **Marked as interpretation:** §22, the Isaeus reading. **Marked as recorded
 and not argued from:** §13, the *Categories* correspondence.
 
-**31.** **And the seam is marked at the head.** §§I–IV owe nothing to the authorship
+**32.** **And the seam is marked at the head.** §§I–IV owe nothing to the authorship
 question and were established before it was raised. **This is where the corpus
 begins to be read as a maker's work, and the reader is told so.**
 
