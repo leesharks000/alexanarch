@@ -5615,4 +5615,140 @@ the corpus that says a person is an account **has no self in it to be an account
 of.**
 
 
+---
+
+# ROUND 50 — THE LADDER IS THE DEVELOPMENTAL TRACK: RELOCATION, NOT ABOLITION
+
+*Added 2026-08-30. The closing structure. What the configuration claims is not that
+the historical persons are abolished but that development belongs to the textual
+body — not chronology, but genre and form.*
+
+## 217. THE CLAIM, STATED CORRECTLY
+
+**The hypothesis has been read all session as a denial: that Plato did not exist,
+that the persons are fictions, that the received history is void.** That reading is
+available and it is not the claim.
+
+> **The claim is a RELOCATION. Development is real, ordered, and directional — and
+> it belongs to the textual body rather than to a biography.**
+>
+> **Not chronology. GENRE. FORM.**
+
+**Under which "Plato becoming Aristotle" is not a concealed identity. It is the
+stated developmental track of the program, considered as a writing technology.**
+
+## 218. AND THE TRACK IS DIOTIMA'S LADDER
+
+*Symposium* 210a–d gives the rungs in order: **ἓν σῶμα → πάντα τὰ καλὰ σώματα →
+τὸ ἐν ταῖς ψυχαῖς κάλλος → τὰ ἐπιτηδεύματα καὶ οἱ νόμοι → αἱ ἐπιστῆμαι →
+πέλαγος → αὐτό.**
+
+**The corpus walks it, and each rung is measured:**
+
+    ἓν σῶμα            SOCRATES — 252,416 spoken words (M14). One figure
+                       made of words, by a man who wrote nothing (M49).
+
+    πάντα τὰ σώματα    56 SPEAKERS across 519,743 words (M14). Diotima's
+                       own instruction at this rung: ἑνὸς δὲ τὸ σφόδρα
+                       τοῦτο χαλάσαι — slacken the intensity toward the one.
+
+    ἐν ταῖς ψυχαῖς     τίκτειν λόγους τοιούτους … οἵτινες ποιήσουσι
+                       βελτίους τοὺς νέους — begetting accounts that make
+                       the young better. The dialogues' declared work.
+
+    ἐπιτηδεύματα       LAWS, REPUBLIC, STATESMAN. The non-dramatic corpus,
+    καὶ νόμοι          and Diotima's own word for the rung.
+
+    ἐπιστῆμαι          M28: the treatise takes the form of what it treats.
+                       Within-domain 0.0571 against Plato's total 0.0570;
+                       ethics 0.0226, logic 0.0942, ordered by object.
+                       THE SAME MAKER BECOMING EACH ἐπιστήμη IN TURN.
+
+    αὐτό               Λ 9. νόησις νοήσεως νόησις — and ἀδιαίρετον.
+
+## 219. AND THE LADDER'S OWN INSTRUCTION IS THE TRANSITION TO THE FIFTH RUNG
+
+*Symposium* 210d, moving from practices to knowledges:
+
+> βλέπων πρὸς πολὺ ἤδη τὸ καλὸν **μηκέτι τὸ παρ᾽ ἑνί**, ὥσπερ **οἰκέτης**
+
+*looking now toward the great sea of beauty, **no longer at what belongs to one**,
+like a **household slave***.
+
+**STOP BEING ONE MAN'S.** Which is, exactly and measurably, what an
+object-conditioned corpus with no style of its own is. **M28's result is Diotima's
+instruction executed.**
+
+## 220. WHAT THIS DOES TO THE THREE-WAY EPISTEMIC STATUS
+
+**The formulation carried since Round 12 was:**
+
+    corpus forms one functional unit         STRONGLY SUPPORTED
+    one construction explains it             INCREASINGLY PLAUSIBLE
+    one historical hand wrote both           LIVE, NOT ESTABLISHED
+
+**The third line has been the whole burden, and it is the wrong line.** It asks for
+a fact about bodies, which M48 and M50 established is not recoverable from text, and
+which this investigation has no instrument for.
+
+**The relocation replaces it:**
+
+    development within the corpus is REAL, ORDERED, DIRECTIONAL      MEASURED
+    its order is GENRE and FORM, not chronology                      M13, M28
+    and the order it follows is stated inside the corpus             Symp. 210
+
+**None of these requires a claim about hands.** All three are checkable. And the
+directional claim is falsifiable in the ordinary way: **show the order runs
+otherwise, or that the rungs do not correspond, or that M28's object-conditioning
+is an artifact.**
+
+## 221. AND IT DISSOLVES THE E/M/L CIRCULARITY
+
+**M13's standing caveat:** the early/middle/late stratification was built partly
+*from* stylometry, so a chronology result risks the circularity of M11. Denyer's
+objection — that Plato could write any style at any time — makes E/M/L a
+**repertoire** rather than a record.
+
+**On the relocation that objection stops being an objection.** If development is
+generic rather than biographical, **a repertoire is exactly what is predicted**: the
+order is a track through forms, available in any sequence of composition, and the
+stylometric stratification is detecting **the track**, not the years.
+
+**M13's Z = +6.92 — the strongest partition effect in the entire investigation —
+becomes evidence for the relocation rather than a contaminated chronology.**
+
+## 222. WHAT IS AND IS NOT ABOLISHED
+
+**NOT abolished:** the persons, the school, the teaching, the succession, the
+documentary record, the dates. **Nothing in the relocation requires any of it to be
+false**, and the investigation has produced no evidence that any of it is.
+
+**Relocated:** the *explanatory work*. The received account explains the corpus's
+order by a biography — a young man in the Academy, a mature man in the Lyceum. **The
+relocation explains it by a program: a sequence of forms, walked in the order the
+corpus itself sets out at *Symposium* 210.**
+
+> **The question is no longer whether there were two men. It is what the order of
+> the corpus is an order OF.**
+
+**And that question is answerable with text, which the other was not.**
+
+## 223. STATUS
+
+**§218's rung-mapping is a reading and the correspondences are of unequal
+strength.** ἐπιτηδεύματα καὶ νόμοι is Diotima's own word and the *Laws* is the
+corpus's own title — that one is tight. ἐπιστῆμαι against M28's object-conditioning
+is the interesting one and is an interpretation. The first two rungs are the
+loosest: many speakers is not obviously *many bodies*, and the correspondence should
+not be pressed.
+
+**§219 is quoted and is the strongest single item** — the instruction at the
+transition to the fifth rung is *no longer at what belongs to one*, and the fifth
+rung is where the object-conditioned corpus sits.
+
+**§221 is the most consequential and the most testable.** If development is generic
+rather than chronological, the E/M/L circularity that has qualified M13 since Round 3
+is not a defect. **That is a real reversal and it should be attacked there first.**
+
+
 ∮ = 1
