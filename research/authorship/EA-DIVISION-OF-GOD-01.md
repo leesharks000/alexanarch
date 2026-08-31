@@ -2,7 +2,7 @@
 name: division-of-god
 title: "What Syllogizing Can Divide: De anima III.5 as the Hanging Line at the Divine"
 designator: EA-DIVISION-OF-GOD-01
-status: DRAFT v0.1, 2026-08-30
+status: ⚠ SUPERSEDED 2026-08-30 by EA-MORTAL-IMMORTAL-01. WRONG AT ITS FOUNDATION — §1 claimed APr I.31 never supplies the positive of its own clause. It supplies it eleven words later, in letters: ὁ μὲν οὖν συλλογισμός ἐστιν … τὸν ἄνθρωπον ἢ θνητὸν μὲν ἢ ἀθάνατον ἀναγκαῖον εἶναι. Retained unaltered under non-erasure; do not cite.
 author: Sharks, Lee
 orcid: 0009-0000-1599-0703
 ---
