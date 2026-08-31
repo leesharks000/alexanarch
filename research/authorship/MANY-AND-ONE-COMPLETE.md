@@ -2,7 +2,7 @@
 name: many-and-one-complete
 title: "MANY AND ONE"
 designator: EA-MANY-AND-ONE-COMPLETE
-status: v1.7, 2026-08-31. §I restored to M40 at full strength: the SE epilogue read as a performative claim to authorial legitimacy in legitimacy's own vocabulary, and the argument identified as an enthymeme whose joining term the reader supplies. Both readings of the instancing stated and neither decided. A standing lexical rule added to §I after three reversions.
+status: v1.8, 2026-08-31. §I completed: the unsupplied premise named as a SOCKET of the same kind as Λ 9's, the charitable filling supplied as the section's own act, and the received reading identified as a filling too — neither on the page, both supplied.
 author: Sharks, Lee
 orcid: 0009-0000-1599-0703
 ---
@@ -178,61 +178,112 @@ question and not an imposition on it** — the passage makes a claim about who a
 belongs to, and declines to say what that entails for an operation it has filed
 inside the method.
 
-**14.** ⭑ **TWO READINGS ARE AVAILABLE HERE, AND THIS SECTION DECIDES NEITHER.**
+**14.** ⭑ **AND THE UNSUPPLIED TERM IS A SOCKET — THE SAME KIND THIS SECTION WILL
+FIND AT Λ 9.**
 
-    THE RECEIVED READING     the instancing is a predecessor's, and the denial
+**Not a defect and not a concealment.** An opening whose filling the grammar
+determines, at the joint where the answer decides what the thing is. **The epilogue's
+is: division belongs inside the method; nothing belonged to the method before it; and
+the term that joins them is absent.** *At Λ 9 the division of the first substance
+closes by identity and the next clause reopens it — if thinking and being-thought are
+different, in respect of which does its good belong. **Same operation: at the top of
+the ladder there, at the boundary of a corpus here.***
+
+**15.** **So this section does what a reader of such a text does. It supplies the
+filling.** *That is not deciding between readings; it is discharging an obligation the
+grammar creates. The filling is offered, and can be supplied better by someone else.*
+
+**16.** ⭑ **THE FILLING.**
+
+> **One way to read the passage charitably is that the corpus in which the
+> syllogizing is instanced is the same maker's own earlier work.**
+
+**17.** **On that filling every sentence of the epilogue is true as written, and none
+requires a scope-restriction, a change of mind, or an equivocation.**
+
+    οὐδὲν παντελῶς ὑπῆρχεν      LITERAL. Nothing belonged, because there was
+                                no one from whom it could have been received.
+
+    οἷον ἐκ διαδοχῆς refused    THERE WAS NO SUCCESSION — not a succession
+                                denied, but one that did not occur.
+
+    τέχνην / τὰ ἀπὸ τῆς τέχνης  HOLDS. What existed was instances of the
+                                operation and not the art of them, which is
+                                what an earlier practice by the same hand is.
+
+    ξυνίεσαν                    NOT A CHARGE AGAINST RIVALS. Read inclusively:
+                                the earlier position did not know the range of
+                                its own operation.
+
+    συγγνώμη / χάρις            A FIRST FINDER asking hearers to credit a
+                                finding — which, on this filling, is what he is.
+
+**18.** **And it requires nothing of the author but sequence.** No plan, no
+prescience, no concealment, no chronological adjustment — **only that the finding came
+after the practice, which is what a finding is.**
+
+**19.** ⚠ **THE FILLING IS OFFERED AND NOT ESTABLISHED. AND THE OTHER FILLING IS
+AVAILABLE AND IS THE RECEIVED ONE.**
+
+    THE RECEIVED FILLING     the instancing is a predecessor's, and the denial
                              is scoped — to the dialectical programme, or to the
                              art as against its products — or retrospective,
                              the classification being one Aristotle could make
                              only after developing what he classifies with.
+                             ⭑ IT IS A FILLING TOO. The socket is discharged by
+                             a scope-restriction the passage does not mark, or
+                             by a development the passage does not report.
 
-    THE CONFIGURATIONAL      the instancing is the same maker's earlier work,
-    READING                  and the denial is literal: nothing pre-existed
-                             because the range of the operation had not yet
-                             been seen, and the one who saw it is the one
-                             claiming it.
+    THE FILLING AT §16       the instancing is the same maker's earlier work,
+                             and the denial is literal.
 
-**15.** **Both are readings of one thing** — of what division can syllogize, such that
-an operation filed as a part of the method can be instanced at length while the
-method is said to have had nothing before it. **Neither reading is available until
-that is known.**
+**20.** > **NEITHER IS ON THE PAGE. BOTH ARE SUPPLIED.** The received filling has been
+> supplied so consistently for so long that it reads as the text. **It is not the
+> text.** *That is the whole of what this section claims about the epilogue: a term is
+> missing, something must be put there, and what has been put there is a choice that
+> has not been examined as one.*
 
-**16.** > **This section answers only that.** What division can syllogize is settled
-> from the *Analytics* and the *Metaphysics*, without deciding whose the instancing
-> is. **§VIII 4b returns to the two readings with everything §§I–VII supply.**
+**21.** **And both are fillings of the same socket** — of what division can syllogize,
+such that an operation filed as a part of the method can be instanced at length while
+the method is said to have had nothing before it. **Neither filling is assessable
+until that is known.**
 
-**17.** He answers. Not in the *SE*, and not where anyone looks.
+**22.** > **This section settles only that.** What division can syllogize is answered
+> from the *Analytics* and the *Metaphysics*. **§VIII 4b returns to the two fillings
+> with everything §§I–VII supply.**
+
+**23.** He answers. Not in the *SE*, and not where anyone looks.
 
 ---
 
 ## 1. WHAT DIVISION CANNOT DO
 
-**18.** *APr* I.31 gives the limit case first, worked in letters. Let **ζῷον** be A,
+**24.** *APr* I.31 gives the limit case first, worked in letters. Let **ζῷον** be A,
 **θνητόν** B, **ἀθάνατον** C, **ἄνθρωπος** D.
 
 > **ὁ μὲν οὖν συλλογισμός ἐστιν** ὅτι τὸ Δ ἢ Β ἢ Γ ἅπαν ἔσται, ὥστε **τὸν ἄνθρωπον
 > ἢ θνητὸν μὲν ἢ ἀθάνατον ἀναγκαῖον εἶναι**, ζῷον θνητὸν δὲ οὐκ ἀναγκαῖον, ἀλλ᾽
 > **αἰτεῖται· τοῦτο δ᾽ ἦν ὃ ἔδει συλλογίσασθαι.**
 
-**19.** Read it as an operation. Division **does** conclude, and the conclusion is a
+**25.** Read it as an operation. Division **does** conclude, and the conclusion is a
 disjunction: **man is necessarily either mortal or immortal**. What it cannot do is
 **select**. *Mortal* animal is **οὐκ ἀναγκαῖον ἀλλ᾽ αἰτεῖται** — begged — and that
 was the very thing to be shown.
 
-**20.** The example is **θνητόν / ἀθάνατον** of ζῷον. *⚠ No weight is placed on the
+**26.** The example is **θνητόν / ἀθάνατον** of ζῷον. *⚠ No weight is placed on the
 choice: that cut is the Academy's stock first division of animal, so reaching for it
 is reaching for the textbook case. Any emphasis on its selection would need a base
 rate over Aristotle's divisional examples, which has not been run. The theorem does
 not require it.*
 
-**21.** Division reaches that seam and cannot cross it. **Hold that as the negative
+**27.** Division reaches that seam and cannot cross it. **Hold that as the negative
 case.**
 
 ---
 
 ## 2. WHAT DIVISION CAN DO
 
-**22.** *Metaphysics* Λ 9, 1074b. The question of the first substance, posed **in
+**28.** *Metaphysics* Λ 9, 1074b. The question of the first substance, posed **in
 the branching form characteristic of division** — the text does not use the word
 διαίρεσις here, and the claim is about the logical shape, not about Aristotle's
 label for it:
@@ -240,46 +291,46 @@ label for it:
 > ἔτι δὲ εἴτε **νοῦς** ἡ οὐσία αὐτοῦ εἴτε **νόησίς** ἐστι, **τί νοεῖ;** ἢ γὰρ
 > **αὐτὸς αὑτὸν ἢ ἕτερόν τι**· καὶ εἰ ἕτερόν τι, **ἢ τὸ αὐτὸ ἀεὶ ἢ ἄλλο.**
 
-**23.** That is the divisional form exactly: a genus cut at a differentia — *itself
+**29.** That is the divisional form exactly: a genus cut at a differentia — *itself
 / another* — and the second branch cut again — *always the same / different*. The
 **ἢ … ἢ** of the worked example, applied to God.
 
-**24.** And the branches are eliminated by the divisional argument. Were it
+**30.** And the branches are eliminated by the divisional argument. Were it
 **δύναμις** rather than **νόησις**, continuity would be laborious. Did it think
 another, **ἄλλο τι ἂν εἴη τὸ τιμιώτερον ἢ ὁ νοῦς, τὸ νοούμενον** — the thought
 would outrank the intellect.
 
-**25.** The conclusion:
+**31.** The conclusion:
 
 > **αὑτὸν ἄρα νοεῖ, εἴπερ ἐστὶ τὸ κράτιστον, καὶ ἔστιν ἡ νόησις νοήσεως νόησις.**
 
-**26.** ⭑ **THE ANSWER TO §6.**
+**32.** ⭑ **THE ANSWER TO §6.**
 
     OF MAN     division reaches   mortal | immortal    CANNOT SELECT — αἰτεῖται
     OF GOD     division reaches   itself | another     SELECTS
 
-**27.** And it selects for a reason that is the whole point. **On this one object
+**33.** And it selects for a reason that is the whole point. **On this one object
 the disjunction collapses.** The knower and the known are not two branches to choose
 between; they are **τὸ αὐτό**. Division terminates because there was nothing to
 divide.
 
 > **What division can syllogize is God — and it can, only because God is one.**
 
-**28.** ⚠ **AND THE SECTION STOPS HERE.**
+**34.** ⚠ **AND THE SECTION STOPS HERE.**
 
 **What Λ 9 shows is that division selects on one object, and why: the terms are not
 other.** Any further reading of the *SE* clause — what "nothing pre-existed" is a
 claim about, and whose prior practice is at issue — **requires premises this section
 does not have and does not supply.** It is taken up at §VIII IV.
 
-**29.** **The question of §6 is therefore answered only in this form:** there is an
+**35.** **The question of §6 is therefore answered only in this form:** there is an
 object on which division does not stall at a disjunction, **and Λ 9 is where the
 corpus runs it.** Whether that is what the priority claim was about is not decided
 here.
 
 ## 4. THE SHAPE
 
-**30.**
+**36.**
 
     SE 183b        of this inquiry NOTHING AT ALL pre-existed
                             ↓
@@ -294,13 +345,13 @@ here.
                             ↓
     De an. III.5   and the man-division made again inside νοῦς, left forked
 
-**31.** **Division fails at man and succeeds at God, and succeeds only where the
+**37.** **Division fails at man and succeeds at God, and succeeds only where the
 divided thing is already one.** That is the answer the priority passage left
 standing. And the priority claim is literal on the configurational reading not
 because the cutting was somebody else's, but because **the cutter did not yet know
 what he was cutting toward.**
 
-**32.** And the closure is immediately unmade. **The division that terminates is
+**38.** And the closure is immediately unmade. **The division that terminates is
 reopened by the sentence after it**, and the division that cannot terminate is made
 again, at a finer grain, in the mind of the animal that could not be sorted.
 
@@ -322,23 +373,23 @@ attribution-word in this section is a violation.
 
 ## STANDING
 
-**33.** **Checkable, and quoted:** *SE* 183b28–184b8; *APr* I.31, 46a31–46b12;
+**39.** **Checkable, and quoted:** *SE* 183b28–184b8; *APr* I.31, 46a31–46b12;
 *Meta.* Λ 9, 1074b15–35; *De an.* III.5, 430a10–25. **That Λ 9 divides the first
 substance and resolves the division by identity is what the chapter says**, and is
 not among its disputed readings.
 
-**34.** **The interpretive step is §§17 and 20–24**, and §19 marks the reading
+**40.** **The interpretive step is §§17 and 20–24**, and §19 marks the reading
 deliberately not taken. The step — that Λ's terminating division is what
 the *SE* clause leaves open. **The conventional reading of the priority claim does
 not require this and is not defeated by it.** Λ can be a piece of theology with no
 relation to the *SE* epilogue; that is the ordinary account and it is sufficient.
 
-**35.** *Posterior Analytics* II.13 assigns division a definitional employment —
+**41.** *Posterior Analytics* II.13 assigns division a definitional employment —
 collecting the elements of an essence, with a rule for branch selection. **That is a
 further use found for the same apparatus and is not in competition with the reading
 given here.** A discovery may exceed the earlier work more than once.
 
-**36.** **Not claimed:** authorship. One author writing the *Analytics*, the *De
+**42.** **Not claimed:** authorship. One author writing the *Analytics*, the *De
 anima*, and Λ produces this sequence. **So does a school.**
 
 
