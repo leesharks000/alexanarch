@@ -9,6 +9,9 @@ orcid: 0009-0000-1599-0703
 
 # MANY AND ONE
 
+**⭑ ALL EIGHT SECTIONS ARE WRITTEN. Reading copy assembled at
+`MANY-AND-ONE-COMPLETE.md` (75,837 b). The per-section files remain canonical.**
+
 **The argument descends.** It begins with the hardest and most independent case —
 an Aristotelian problem in the theology, with no bearing on authorship — and walks
 down through progressively more concrete forms of plurality-in-unity until it
@@ -401,7 +404,15 @@ gathered many, and for the divided human nature. §VIII asks it of the author.**
 pair the *Sophist* turns on, the ground of the one/many problem, and verbatim the
 authorship question. *Is this the same, or another?*
 
-**Sources: Round 50 entire.**
+**WRITTEN: EA-ORDER-OF-THE-CORPUS v1.0, entire.** It pays §IV's debt — the order of
+grasp is earned from *APr* I.31's **ξυνίεσαν / ῥᾴδιον ἰδεῖν** against *De mem.*
+452a's **ἀδυνατεῖ ἀναμνησθῆναι, ζητεῖν δὲ δύναται καὶ εὑρίσκει**: the distance is a
+search that succeeded, not a decade. **And the priority claim is read in its verb** —
+**ὑπάρχω**, the syllogistic's own predication word, **1,182 occurrences of the stem
+in the *Prior Analytics* alone**, with **ἐξ ὑπαρχῆς** in the same paragraph. *Nothing
+at all belonged*: a premise of the method, predicated of the method.
+
+**Sources: Round 50 entire; Round 52 §232(f).**
 
 ---
 
