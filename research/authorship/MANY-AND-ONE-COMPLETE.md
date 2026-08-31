@@ -2,7 +2,7 @@
 name: many-and-one-complete
 title: "MANY AND ONE"
 designator: EA-MANY-AND-ONE-COMPLETE
-status: v1.3 COMPLETE, 2026-08-31. Notebook incorporation. §VII's claim corrected — EA-YIELD-02 read λόγος and returned a positive, so the null is narrowed to lexical instruments. Added: Symp. 191d synagogeus/symbolon (§IV); Rep. 473d, NE 1165a, autepitaktike, the third absence (§V); De an. 414a, M34, Letter II, Cicero (§VI); M30/M38/M45/M39/M44 (§VII); Round 47 and the attestation audit (§VIII).
+status: v1.4 COMPLETE, 2026-08-31. Adds §VIII 4e — what the configuration does NOT license. A work doubted on internal grounds alone is not excluded, because §VII showed internal grounds do not decide; a work excluded on external grounds stays excluded. The concession is stated as a cost.
 author: Sharks, Lee
 orcid: 0009-0000-1599-0703
 ---
@@ -1706,19 +1706,69 @@ Aristotle**, and the anecdote is told to justify Aristotle's own rule about meth
 that the relation is **not internally attested**, and that its external attestation
 descends through the same channel as everything else.
 
+## 4e. ⚠ AND WHAT THE CONFIGURATION DOES *NOT* LICENSE
+
+**An objection this paper must answer on its own account, because §VI leans on
+*Letter* II:** *if the configuration lets us accept the Platonic Letters, does it not
+let us accept everything in the Aristotelian collection too?*
+
+**38.** **No, and the reason is that the two disputed classes are not the same kind
+of object.**
+
+    PLATONIC SPURIA          transmitted INSIDE the Thrasyllan tetralogies,
+                             in the arrangement that constitutes the corpus.
+                             Doubted on INTERNAL grounds — style, doctrine, fit.
+                             Alcibiades II, Hipparchus, Minos, Theages,
+                             Epinomis, the Letters.
+
+    ARISTOTELIAN PSEUDEPIGRAPHA   attributed LATER, mostly outside the
+                             Andronican edition, and several demonstrably
+                             POST-CLASSICAL on external evidence — datable
+                             references, doctrines that did not yet exist,
+                             Greek of the wrong period.
+                             De mundo, De virtutibus, Mechanica, the
+                             Problemata accretions.
+
+**39.** ⭑ **THE PRINCIPLE, AND IT IS THE PAPER'S OWN.** §VII established that
+**internal stylistic evidence does not identify maker-count.** That cuts both ways
+and it must be allowed to.
+
+> **A work doubted on INTERNAL grounds alone is not thereby excluded — because this
+> paper has spent a section showing that internal grounds do not decide the
+> question.**
+>
+> **A work excluded on EXTERNAL grounds — datable anachronism, post-classical
+> language, attribution appearing only centuries later — stays excluded, and the
+> configuration gives no reason to readmit it.**
+
+**40.** **So the license is narrow and it is asymmetric by construction.** The
+Letters are in because they are transmitted in the corpus and doubted stylistically.
+*De mundo* stays out because it mentions things that did not exist. **Not because it
+sounds unlike Aristotle.**
+
+**41.** ⚠ **AND THE PAPER PAYS FOR THIS.** The concession is real: **a
+configurational reading loses the right to use stylistic athetesis as a filter**, and
+therefore inherits a wider corpus than the received account carries. **That is a
+cost, not a convenience.** It means the paper must accept works most editors reject,
+and cannot appeal to the very instrument §VII disqualified in order to trim them.
+
+**42.** **What it does not mean is that the corpus has no boundary.** The boundary is
+external evidence and transmission history — **which is where the received account's
+strongest results are, and this paper does not touch them.**
+
 ## 5. THE QUESTION IN ITS PROPER FORM
 
-**38.** **Not: were there two men.** That is a fact about bodies, §VII is the record
+**43.** **Not: were there two men.** That is a fact about bodies, §VII is the record
 of its not being recoverable, and this paper claims it (§VI) without being able to
 measure it.
 
-**39.** > **But: what is the order of the corpus an order OF — and what kind of "one"
+**44.** > **But: what is the order of the corpus an order OF — and what kind of "one"
 > is a person?**
 
-**40.** Numerically one? Stylistically homogeneous? Incapable of bearing contrary
+**45.** Numerically one? Stylistically homogeneous? Incapable of bearing contrary
 determinations? Necessarily one voice?
 
-**41.** **§§I–VI answered that question five times over, at five scales:**
+**46.** **§§I–VI answered that question five times over, at five scales:**
 
     GOD      one intellect     thinker and thought, not other
     LIFE     one actuality     really differentiated capacities
@@ -1726,13 +1776,13 @@ determinations? Necessarily one voice?
     MEMORY   one form          many scattered perceptions, gathered
     PERSON   one maker         many voices, or many objects
 
-**42.** **The corpus supplies the terms for the last one, and they are its own.**
+**47.** **The corpus supplies the terms for the last one, and they are its own.**
 **ταὐτόν** and **ἕτερον** — the pair the *Sophist* turns on, the ground of the
 one/many problem, and verbatim the authorship question.
 
-**43.** > ***Is this the same, or another?***
+**48.** > ***Is this the same, or another?***
 
-**44.** **And §V gave the criterion for answering it about a person:** not the face,
+**49.** **And §V gave the criterion for answering it about a person:** not the face,
 not the name, but **ἀναγνωρίζειν διὰ λόγων** — recognition through accounts. **§VII
 established that the face and the name are all the instruments can see.**
 
@@ -1740,18 +1790,18 @@ established that the face and the name are all the instruments can see.**
 
 ## 6. THE CLOSE
 
-**45.** **The received account explains the corpus's order by a biography: a young man
+**50.** **The received account explains the corpus's order by a biography: a young man
 in the Academy, a mature man in the Lyceum.**
 
-**46.** **This paper explains it by a program:** a sequence of forms, walked in the
+**51.** **This paper explains it by a program:** a sequence of forms, walked in the
 order the corpus sets out at *Symposium* 210 — one body, all bodies, souls, practices
 and laws, the knowledges, and the thing itself. **With each rung a recognition of
 unity at a wider scope, and none of them an accumulation of parts.**
 
-**47.** **Both explanations are available. Only one of them can be checked against the
+**52.** **Both explanations are available. Only one of them can be checked against the
 text, because the other is about bodies and the bodies are gone.**
 
-**48.** ⚠ **That is not an argument that the biography is false.** It is a statement of
+**53.** ⚠ **That is not an argument that the biography is false.** It is a statement of
 which question this investigation could answer and which it could not — **and §I said
 which was which before the first measurement was taken.**
 
@@ -1759,19 +1809,19 @@ which was which before the first measurement was taken.**
 
 ## STANDING
 
-**49.** **Checkable:** M13 (the chronology partition and its caveat), M28, *Symp.*
+**54.** **Checkable:** M13 (the chronology partition and its caveat), M28, *Symp.*
 210a–d, *SE* 183a37–b8 and 183b34–36, *APr* 46a31–39, *De mem.* 2, 453a. **The ὑπάρχω
 count is 1,182 in the *Prior Analytics*, run on the seated corpus.**
 
-**50.** **The interpretive step is §8** — that on the relocation a repertoire is
+**55.** **The interpretive step is §8** — that on the relocation a repertoire is
 predicted rather than problematic. **It is the most consequential claim in this
 section and the most attackable, and it should be attacked there.**
 
-**51.** **§16's observation about ὑπάρχω is lexical.** That the priority claim uses the
+**56.** **§16's observation about ὑπάρχω is lexical.** That the priority claim uses the
 syllogistic's predication verb is a fact; that it uses it *because* it is a claim
 about the method is a reading.
 
-**52.** **Claimed, and stated at §VI:** one person wrote the corpus. **Argued at
+**57.** **Claimed, and stated at §VI:** one person wrote the corpus. **Argued at
 λόγος. Shown not decidable at ὕλη** — which is where Λ 1075a1 said it would not be
 decidable.
 
