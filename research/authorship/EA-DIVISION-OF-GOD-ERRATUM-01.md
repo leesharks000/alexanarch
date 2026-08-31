@@ -2,7 +2,7 @@
 name: division-of-god-erratum
 title: "Erratum to the Correction: What the Overcorrection Took, and Why It Comes Back"
 designator: EA-DIVISION-OF-GOD-ERRATUM-01
-status: DRAFT v0.1, 2026-08-30. Erratum to EA-DIVISION-OF-GOD-02, which overcorrected EA-DIVISION-OF-GOD-01.
+status: ⚠ SUPERSEDED by EA-DIVISION-OF-GOD v1.0, 2026-08-30. Retained under non-erasure. DO NOT CITE — the open clause is at SE 183b, not APr I.31, and these drafts locate it wrongly.
 author: Sharks, Lee
 orcid: 0009-0000-1599-0703
 ---

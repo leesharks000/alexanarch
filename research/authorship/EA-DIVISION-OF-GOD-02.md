@@ -3,7 +3,7 @@ name: division-of-god
 title: "The Division of God"
 subtitle: "Mortal or Immortal: division reaches its own limit, is made again inside νοῦς, and is made in the divine and resolved by identity"
 designator: EA-DIVISION-OF-GOD-02
-status: DRAFT v0.1, 2026-08-30. SUPERSEDES EA-DIVISION-OF-GOD-01 v0.1, which was wrong at its foundation — see §§26–28.
+status: ⚠ SUPERSEDED by EA-DIVISION-OF-GOD v1.0, 2026-08-30. Retained under non-erasure. DO NOT CITE — the open clause is at SE 183b, not APr I.31, and these drafts locate it wrongly.
 author: Sharks, Lee
 orcid: 0009-0000-1599-0703
 ---
