@@ -5140,4 +5140,123 @@ structure the investigation has found, and as the version that requires no
 comparative material from outside the target corpus.**
 
 
+---
+
+# ROUND 46 — THREE ARISTOTLES OR ONE: THE PARSIMONY ARGUMENT
+
+*Added 2026-08-30. The received account already concedes the capacity in dispute,
+and then loses the evidence for it. Stated as a comparison of what each account
+must posit.*
+
+## 195. CICERO KNEW TWO KINDS OF ARISTOTELIAN WRITING
+
+***De finibus* 5.12**, on the two genera:
+
+> **duo genera librorum sunt, unum populariter scriptum quod ἐξωτερικὸν
+> appellabant, alterum limatius quod in commentariis reliquerunt**
+
+*There are two kinds of books, one written for the public, which they called
+exoteric, the other **more filed** which they left in notebooks.*
+
+**Note limatius.** *Limare* is to file, polish, refine. **Cicero applies it to the
+commentarii** — which is the reverse of the modern picture of the extant corpus as
+rough lecture notes.
+
+**And the praise, verified at *Academica* 2.119:**
+
+> veniet **flumen orationis aureum fundens** Aristoteles
+
+*Aristotle will come, pouring forth a golden river of speech.* Quintilian concurs
+(*Inst.* 10.1.83), and Cicero elsewhere: **dicendi incredibili quadam cum copia tum
+etiam suavitate** (*Top.* 1.3).
+
+**And the modern concession is explicit:** *most modern readers seem agreed that*
+flumen orationis aureum *is **not the best characterization of Aristotle's extant
+prose***.
+
+## 196. SO THE RECEIVED ACCOUNT HOLDS THREE STYLISTIC OBJECTS AS ONE MAN
+
+    A1  THE EXOTERIC DIALOGIST
+        Platonic register, often in dialogue form, with prefaces to entice
+        the reader; the works by which antiquity KNEW Aristotle
+        → ENTIRELY LOST. "These 'published' works are all lost."
+
+    A2  THE ESOTERIC TREATISE-WRITER
+        Z = +39.18 from Plato on the declared partition; "often jerky and
+        discontinuous"; no reader would call it a golden river
+        → EXTANT. This is the corpus we have.
+
+    A3  THE EMPIRICAL COLLECTOR
+        158 constitutions, the biological data collections
+        → ALL LOST BUT ONE, and that one recovered from a papyrus in 1891
+
+**Diogenes' catalogue totals 445,270 lines. Roughly one fifth survives — and the
+surviving fifth is A2.**
+
+## 197. ⭑ THE RECEIVED ACCOUNT CONCEDES THE CAPACITY AND THEN LOSES THE EVIDENCE
+
+**This is the argument.**
+
+**The received account REQUIRES that one man wrote in the Platonic dialogue register
+and in the treatise register.** That is not a heterodox reading of it; it is what
+it says. Cicero's two genera, one *populariter scriptum* and one *limatius*, are one
+author.
+
+**Which is precisely the proposition of Round 45**: *τοῦ αὐτοῦ ἀνδρὸς εἶναι
+κωμῳδίαν καὶ τραγῳδίαν ἐπίστασθαι ποιεῖν* — that it belongs to the same man to make
+both kinds. **The Republic denies it. The Symposium compels it and withholds the
+argument. And the received account of Aristotle asserts it as biography.**
+
+**AND THEN THE DEMONSTRATION VANISHES.** The half that would show the register
+crossing — A1, the dialogues in the Platonic manner — is gone in its entirety,
+**while Plato's dialogue corpus survives complete, including works nobody thinks
+are Plato's.**
+
+## 198. THE COMPARISON
+
+    RECEIVED ACCOUNT MUST POSIT
+      · one man writing in two incompatible registers (CONCEDED, not derived)
+      · plus a third generic mode (the collections)
+      · the TOTAL loss of the register-crossing half
+      · the COMPLETE survival of the other party's dialogue corpus, spuria included
+      · a teaching relation attested internally NOWHERE in either corpus (M49)
+      · biographical apparatus descended from the corpus it authorises (M44)
+
+    THE THESIS MUST POSIT
+      · one maker
+      · whose dialogue-register output is extant under one name
+      · whose treatise-register output is extant under another
+      · ZERO lost corpora
+
+> **The comparison is not one maker against two. It is one maker with nothing lost,
+> against three stylistic Aristotles of whom two vanished entirely — including
+> exactly the one that would demonstrate the capacity in dispute.**
+
+## 199. WHAT THE PARSIMONY ARGUMENT DOES AND DOES NOT DO
+
+**⚠ PARSIMONY IS NOT PROOF, AND ANCIENT TRANSMISSION IS NOT PARSIMONIOUS.** The
+exoteric works are lost for the same reason most ancient literature is lost:
+they were not the texts the school copied. Andronicus edited the treatises because
+the Lyceum used them; nobody had institutional reason to recopy popular dialogues
+once the technical corpus was canonical. **That is a sufficient explanation and it
+requires no design.**
+
+**And the same argument applied elsewhere would prove too much.** Nearly every
+ancient author's popular work is lost while their technical work survives, or the
+reverse; a parsimony argument that treats each such loss as evidence of
+construction would reconstruct the whole of antiquity as one hand.
+
+**WHAT SURVIVES THE OBJECTION:** the loss is not merely of *an* Aristotelian half.
+**It is of the half that would settle the question**, in a configuration where the
+question is whether one maker wrote both registers, and where the surviving
+dialogue-register corpus is attributed to the other party. **The received account's
+own testimony — Cicero's two genera, the golden river, limatius — describes an
+author who did what the thesis says was done, and the evidence for it is
+unavailable.**
+
+**Recorded as a comparison of posits, not as a demonstration.** Its force is that it
+inverts the usual burden: **the single-maker account is the one that requires
+nothing to have been lost.**
+
+
 ∮ = 1
