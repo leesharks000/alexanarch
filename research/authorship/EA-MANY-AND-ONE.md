@@ -342,7 +342,16 @@ descendant of itself (M43, corrected). And confinement of attestation does not
 discriminate: Protagoras is **more** confined than Socrates, 99.8% against 99.5%,
 and no one holds that Protagoras was constructed (Round 43 §181).
 
-**Sources: M48; M50; M43 as corrected; Round 43 §181; Round 48.**
+**WRITTEN: EA-INSUFFICIENCY-OF-HULE v1.0, entire.** ⚠ **And it corrects this
+architecture's framing of the one non-null result.** Plato→Aristotle sitting inside
+the direct-inheritance range is a result, but **the band is ONE OUTLIER WIDE**:
+against the two modern pairs alone the target sits **outside on F2 and F4**, and the
+pair that widens the band enough to contain it is **Albert→Aquinas — the pair
+triangulated by the target itself.** *The one pair that makes the target look
+ordinary is the pair downstream of the target.* The section also states the falsifier
+that did not fire: Plato→Aristotle below the heteronymic floor.
+
+**Sources: M48; M50; M43 as corrected; M28; Round 43 §181; Round 48.**
 
 ---
 
