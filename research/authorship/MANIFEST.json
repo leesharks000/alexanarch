@@ -1,13 +1,14 @@
 {
  "manifest": "research/authorship/MANIFEST.json",
  "generated": "2026-08-29",
- "rule": "FOUR FILES. Two living, one frozen, one structural. Anything else is drift — consolidate it back.",
+ "rule": "FIVE FILES. Two living, one frozen, one structural, one argument.",
  "structure": {
   "EA-NOTEBOOK-01.md": "LIVING — read forward. Fifteen rounds plus the standing frame. Append new rounds at the END; do not reorganise.",
   "EA-AUTHORSHIP-MEASURES-01.md": "LIVING REGISTER — MEASUREMENTS ONLY, with their conditions and refutations. §0A is the entryway (M40). ⚠ Source criticism, reception history and attestation audits belong in the NOTEBOOK, not here — this was got wrong twice (M49→Round 40, M52→Round 42).",
   "PREREG-LEDGER.md": "FROZEN, APPEND-ONLY. Six registrations with their original SHA-256s and their dispositions. Nothing above a DISPOSITION line is ever edited. New tests append a new ENTRY at the end.",
   "data/": "supporting extractions — snub loci, base-rate table, argument map",
-  "PAPER-ARCHITECTURE.md": "STRUCTURAL — the six stations and why they are in that order. Not a draft; the argument shape the notebook and register feed. Read after §0A, before writing anything."
+  "PAPER-ARCHITECTURE.md": "STRUCTURAL — the six stations and why they are in that order. Not a draft; the argument shape the notebook and register feed. Read after §0A, before writing anything.",
+  "MANY-AND-ONE-MAXIMAL.md": "THE ARGUMENT — the thesis stated at full strength and grounded in the close reading: the designed incompletion (Sappho/Longinus/Catullus), the authorial economy, the corpus’s own vocabulary of fragmenting/minting/legitimacy/unification, M40, the seal-and-wax machine, the field counted as extant originals only. Draft 2026-08-30. NOT a replacement for PAPER-ARCHITECTURE (six stations, twelve positions) — that is the delivery structure; this is what it delivers."
  },
  "why_prereg_cannot_merge": "A pre-registration is worth something only because its content was fixed before the test ran. A hash over an appending notebook proves nothing. The ledger keeps them frozen while stopping them proliferating at three files apiece.",
  "consolidations": [
@@ -28,12 +29,19 @@
    "from": 3,
    "to": 4,
    "note": "PAPER-ARCHITECTURE.md added — the station structure, which is neither a measurement nor a round and would otherwise be lost in the notebook"
+  },
+  {
+   "date": "2026-08-30",
+   "from": 4,
+   "to": 5,
+   "note": "MANY-AND-ONE-MAXIMAL.md added — the thesis stated rather than hedged, after the six-station framing was found to be venue-thinking dressed as epistemics (Round 43 §176)"
   }
  ],
  "known_failure_mode": "append by anchor-replace is UNSAFE when the anchor appears more than once — str.replace on the closing sigil duplicated sections 17-22 of the register and truncated section 5. Append by unique section anchor instead.",
  "sha256": {
   "EA-AUTHORSHIP-MEASURES-01.md": "e2c892f78720f532b5375642148afd93138d988cb317a5026391fe59eb1596a2",
-  "EA-NOTEBOOK-01.md": "7e7dfe0d5565988436a504b073ca6dd1ad089d6e8a0d88bf58449f1323a27dc6",
+  "EA-NOTEBOOK-01.md": "cb14dae41481e5d092d2b828cc0b02eaff6160c4e8c929f6ddcdd60c2859d0c5",
+  "MANY-AND-ONE-MAXIMAL.md": "da3e625ca32cdceb070ad95e3c69210e50b30007e008da269e4665bbf711b18e",
   "PAPER-ARCHITECTURE.md": "736a6f2849ccbb40df14d888b0fb324f13a48c6ca0491df33e123a28a519ad80",
   "PREREG-LEDGER.md": "645e9620e857f30abfcd21001a40af4dacb3672090a30978a6441270908a01d2",
   "data/EA-SNUB-01-argmap.json": "fbaff3e4fea09a69f943c0503ea84836cf78d1daaf6c800278775ea956226d08",
