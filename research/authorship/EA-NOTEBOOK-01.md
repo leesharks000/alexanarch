@@ -6232,4 +6232,127 @@ where the answers were placed.*
 architecture, and was lost when the architecture replaced it.**
 
 
+---
+
+# ROUND 54 — THE COMIC LAYER: TESTED, AND IT SPLITS
+
+*Added 2026-08-31. Proposal under test: **Aristophanes manufactures the Socrates
+position and the later tradition inherits it** — which would give the configuration
+an EXTERNAL predecessor rather than requiring Aristophanes inside the maker set. The
+test named for it: which properties of Socrates first appear in the comic layer and
+then persist, invert or differentiate.*
+
+## 243. THE CORPUS STATES THE RELATION ITSELF
+
+**This is not reception-history inference. The *Apology* says it.**
+
+**18b–c**, the old charge: **ἔστιν τις Σωκράτης σοφὸς ἀνήρ, τά τε μετέωρα φροντιστὴς
+καὶ τὰ ὑπὸ γῆς πάντα ἀνεζητηκὼς καὶ τὸν ἥττω λόγον κρείττω ποιῶν.**
+
+**19b–c**, the sworn form read out, then the source named:
+
+> **ταῦτα γὰρ ἑωρᾶτε καὶ αὐτοὶ ἐν τῇ Ἀριστοφάνους κωμῳδίᾳ, Σωκράτη τινὰ ἐκεῖ
+> περιφερόμενον, φάσκοντά τε ἀεροβατεῖν.**
+
+**⭑ Σωκράτη τινά — *a certain Socrates*.** The indefinite, used of a figure in
+another author's text, by the figure of the same name. **And φροντιστής at 18b is the
+*Clouds'* own coinage.**
+
+> **The corpus records a prior, publicly circulating Socrates, comic in origin, which
+> it must answer — and answers by naming the comedy.**
+
+## 244. THE PROPERTY TEST
+
+Seated corpora, crude stem counts:
+
+    property                   Clouds  Plato  Xen  Arist
+    φροντιστ-  thinkery            11      4    8      2
+    ἀεροβατ-   walking on air       2      1    0      0
+    μετεωρ-    things aloft         8     19   12     59
+    μαιευ-     midwifery            0     13    0      0
+    εἰρων-     irony                0      1    0     13
+
+**⚠ TWO ROWS ARE CONFOUNDED AND ARE STATED AS SUCH.** Aristotle's 59 μετεωρ- is the
+*Meteorologica*, a different sense. Aristotle's 13 εἰρων- is the ethical vice at
+*NE* 1108a, not Socratic method.
+
+## 245. ⭑ AND THE WEAKER-ARGUMENT ROW, CORRECTED, IS THE FINDING
+
+**The first pass returned ZERO for ἥττω λόγον in the *Clouds*, which was a pattern
+error.** Rerun for any case-form of ἥττ-/κρειττ- within three words of λογ-:
+
+    Clouds 11    Plato 13
+
+**But the *Clouds* does not call them that.** Its personified pair is:
+
+    δίκαιος λόγος   40
+    ἄδικος λόγος    38
+    κρείττων λόγος   0
+    ἥττων λόγος      0
+
+> **⭑ THE COMEDY STAGES THE JUST AND THE UNJUST ARGUMENT. THE *APOLOGY* REPORTS THE
+> CHARGE AS THE WEAKER AND THE STRONGER.**
+
+**That is not transmission of a phrase. It is a RELABELLING** — a moral pair
+(just/unjust) restated as a dialectical pair (weaker/stronger). **The property
+persists and its terms are changed**, which is the *differentiation* the proposal
+predicted and is the strongest single item the test produced.
+
+## 246. WHAT THE TEST SUPPORTS AND WHAT IT DOES NOT
+
+**SUPPORTS, in the proposal's narrow form:** a prior public Socrates exists, is comic,
+and is answered by name. **ἀεροβατεῖν survives in Plato ONLY inside the quotation of
+the comedy** — a property that did not transfer, only got cited. **φροντιστής
+transfers as a marked term.** And the just/unjust → weaker/stronger relabelling is a
+transformation, not a copy.
+
+**DOES NOT SUPPORT the broad form** — *that enough of the characteristic later
+Socrates is already structurally present in the* Clouds. **It is not.**
+**μαιευτική is zero in the comedy and thirteen in Plato.** Nothing of the
+questioning-method, the midwifery, the ignorance-as-position, or the divine sign as
+Plato uses it is in the comic layer.
+
+> **THE ACCUSATION-PROFILE IS COMIC. THE OPERATION IS NOT.**
+
+## 247. AND THAT DISTINCTION BEARS ON THE ARCHITECTURE
+
+**If comedy supplied the NOTORIETY and the later corpus supplied the OPERATION**, then
+Aristophanes is the origin of **the position's public availability** and not of its
+content.
+
+    ARISTOPHANES           puts a Socrates into public circulation; supplies a
+                           name with a reputation attached
+
+    THE LATER CORPUS       occupies that position and differentiates it —
+                           defendant, questioner, midwife, ignorant knower,
+                           reported master, absent centre
+
+**Which leaves §VI's question where it is** — the operation is what §VI is about, and
+the operation is not comic — **and gives §V an external anchor for why there was a
+name available to occupy.**
+
+**⚠ AND IT IS A REAL ALTERNATIVE TO H4.** The maximal statement lists *Aristophanes
+belongs to the construction* as a prediction the argument does not make. **This test
+offers a cheaper account of the same evidence: Aristophanes as external predecessor
+rather than internal position.** *It is cheaper historically and it costs the
+configuration nothing that §VI needs.*
+
+## 248. STATUS
+
+**§243 is quoted and checkable.** *Apology* 18b–19c, seated text.
+
+**§§244–245 are crude stem counts** with two rows marked confounded and one pattern
+error found and corrected in the same round. **The relabelling result at §245 is the
+only one strong enough to build on**, and it needs the *Clouds'* text read rather than
+counted before it is used.
+
+**§§246–247 are a reading.** *The ordinary account — that Plato knew the* Clouds *and
+answered it, which is uncontroversial — is sufficient for everything at §243, and the
+architecture claim at §247 is what exceeds it.*
+
+**NOT SETTLED:** whether Aristophanes is better placed inside or outside the maker
+set. **This round shows the outside placement is available and cheap. It does not
+show the inside placement is wrong.**
+
+
 ∮ = 1
