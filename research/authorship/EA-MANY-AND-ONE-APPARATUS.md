@@ -423,6 +423,147 @@ doctrinal — which is §IX's mechanism read from the other side.*
 
 ---
 
+# §IX — THE ANCIENT AUTHORIAL ECONOMY
+
+*Pass three, 2026-08-31. §IX asserts a copying economy, an oversupply, a
+purchase-by-the-roll forgery market and a cataloguing problem, and carried almost no
+apparatus for any of it. This is the layer.*
+
+## THE DEMAND SIDE, AND IT HAS A NAMED ANCIENT SOURCE
+
+**[IX.8] ⭑ GALEN ON THE PTOLEMAIC ACQUISITION, AND ON THE FORGERY IT PRODUCED.**
+
+**Galen**, *Commentary on Hippocrates' Epidemics* III (Kühn XVII.A.606–607), is the
+ancient witness §IX needs and did not cite.
+
+**The acquisition:** Ptolemy III Euergetes deposited **fifteen silver talents** with
+Athens against the loan of the **official state copies of Aeschylus, Sophocles and
+Euripides**, to be copied and returned intact. **He had a magnificent copy made on
+the best papyrus, kept the originals, sent the copies back, and told Athens to keep
+the deposit.** *Fifteen talents is ninety thousand drachmas against a labourer's two
+obols a day.*
+
+**And the confiscation:** books arriving by ship were seized, copied, the copies
+returned and the originals shelved — catalogued **βιβλία ἐκ πλοίων**, *libri ex
+navibus*, **books from the ships**.
+
+**⭑ AND GALEN NAMES THE FORGERY MARKET DIRECTLY:** unscrupulous men took advantage of
+the prices Alexandria and Pergamum were paying, **some with great skill in mixing the
+authentic and the spurious, or combining several works into one.**
+
+> **That is §IX's "the Ptolemies would later pay by the roll and receive forgeries at
+> scale" — attested, with a mechanism, by a second-century physician reading the
+> results.**
+
+**[IX.9] On the standard treatment of ancient forgery.** **Speyer**, *Die
+literarische Fälschung im heidnischen und christlichen Altertum* (1971), remains the
+comprehensive study of the ancient forgery economy and its motives. ⚠ **Named and not
+consulted.** *It is the work that would have to be engaged before §IX's forgery claims
+were pressed further than Galen supports.*
+
+**[IX.10] On the library literature.** **Casson**, *Libraries in the Ancient World*
+(2001); **Canfora**, *The Vanished Library* (1989); **MacLeod**, ed., *The Library of
+Alexandria: Centre of Learning in the Ancient World* (2004), including **Barnes**,
+"Cloistered Bookworms in the Chicken-Coop of the Muses"; **Delia**, "From Romance to
+Rhetoric," *AHR* (1992). *The last two are correctives against the romance and are the
+register in which §IX's claims should be pitched.*
+
+## THE CATALOGUING PROBLEM IS NOT A METAPHOR
+
+**[IX.11] ⭑ BLUM ON CALLIMACHUS, AND THE PINAKES ARE THE ANCESTOR OF §IX's OWN
+INSTRUMENT.**
+
+**Blum**, *Kallimachos: The Alexandrian Library and the Origins of Bibliography*
+(1977; trans. Wellisch, Madison, 1991).
+
+**Blum's case:** Callimachus was not only the library's second director but **the
+inventor of two tools still in use — the library catalogue and the
+biobibliographical reference work.** He expanded the inventory lists into the
+**Πίνακες**, in **120 books**, which described and categorised each work and **became
+in effect a Greek national bibliography and the paradigm for most later bibliographic
+lists of Greek literature.** *The Pinakes do not survive; Blum reconstructs them from
+the surviving citations, given in full translation.*
+
+> **⭑ TWO CONSEQUENCES FOR §IX, AND BOTH ARE STRUCTURAL.**
+>
+> **First: §IX's claim that an unshelvable object is a cataloguing problem is
+> literal.** The Pinakes classified by genre and by author. **A corpus whose genre has
+> no name (Σωκρατικοὶ λόγοι at *Poet.* 1447b) and whose attributions are disputed is
+> precisely what such a system cannot dispose of quietly** — and Blum's
+> reconstruction shows how much apparatus the disposal required.
+>
+> **Second: Diogenes' book-lists — §IX's survival table — descend from this
+> tradition.** The lists are not a neutral record of what existed. **They are the
+> downstream form of a cataloguing operation with its own principles**, and §25's
+> fourth feasibility condition (single-source bias) is understated: the bias is not
+> only Diogenes' but the Pinakes'.
+
+**[IX.12] On authorship as a cataloguing category.** *That the Pinakes were organised
+by author is not a fact about authorship but a fact about libraries.* **Blum's
+argument is that the biobibliographical entry — the life prefixed to the work-list —
+was invented as a finding aid.** *Which is [V.4]'s Lefkowitz and Fairweather from the
+institutional side: the lives were generated from the works partly because the
+catalogue required a life to hang the works on.*
+
+## SCRIBES WERE CHEAP, AND THE ONE SURVIVING CONSTITUTION PROVES IT
+
+**[IX.13] ⭑ THE ATHENAION POLITEIA PAPYRUS.**
+
+**The sole surviving text of the 158 constitutions** was recovered in 1891 from four
+papyrus rolls near Hermopolis. **The rolls were an estate owner's farm and business
+records, recycled**: he commissioned professional scribes to copy Aristotle and other
+works **on the back of his own accounts.**
+
+> **The economics are the whole of §IX in one artefact. He would pay for scribes and
+> would not pay for clean papyrus. Copying labour was cheap; the writing surface was
+> not.**
+
+**[IX.14] And it is the strongest single datum for §IX's framing.** *One of
+Aristotle's 158 constitutions survives. It survives because a farmer in Middle Egypt
+had used-up account rolls and thought this worth the back of them.* **Not because the
+school preserved it, not because it was central, and not because anyone in Athens
+decided.**
+
+**⚠ AND IT CUTS BOTH WAYS, which §IX must say.** *That is survival by accident, and it
+is the strongest available evidence that the transmission record is noise as well as
+signal.* **A section arguing that features function as transmission mechanisms owes
+this counter-case explicitly: the one constitution we have was saved by a man who
+wanted cheap paper.**
+
+## THE STANDARD TRANSMISSION HISTORY
+
+**[IX.15] On the handbook.** **Reynolds and Wilson**, *Scribes and Scholars: A Guide
+to the Transmission of Greek and Latin Literature* (4th ed. 2013). **This is the
+standard account of how texts reached us and is the work §IX's claims must be
+consistent with.** *It is the baseline against which "most surviving corpora shed
+that machinery" (§14) would be checked, and that comparison has not been run.*
+
+**[IX.16] On what libraries were for.** Ancient libraries functioned as **scribal
+centres that bypassed the book trade** — one could commission a copy directly. *Which
+is the mechanism behind §IX's "give people reasons to copy you": the copying decision
+was made by individuals with access to scribes, not by a publishing institution.*
+**Reproduction was labour-intensive and copyright irrelevant; the constraint was
+never permission but attention and surface.**
+
+**[IX.17] On the reader's side.** **Johnson**, *Readers and Reading Culture in the
+High Roman Empire* (2010), and **Johnson and Parker**, eds., *Ancient Literacies*
+(2009). ⚠ **Named and not consulted.** *If §IX claims a corpus was built to recruit
+copyists, the literature on who actually read and copied in antiquity is the check.*
+
+## STANDING OF PASS THREE
+
+**[IX.18] Galen [IX.8] is quoted from secondary report and the Kühn reference is
+given as carried; it has not been checked against the text.** The Pinakes material
+[IX.11] is Blum's reconstruction and is presented as such. **The *Athenaion Politeia*
+provenance [IX.13] is standard and should carry its editio princeps at the citation
+pass.**
+
+**⚠ THREE ITEMS NAMED AND NOT CONSULTED:** Speyer [IX.9], Johnson and Parker [IX.17],
+and the Reynolds–Wilson comparison [IX.15]. **The third is the one that would test
+§IX's central comparative claim.**
+
+---
+
 # PASS TWO — FROM THE NOTEBOOK AND THE REGISTER
 
 *Run 2026-08-31 by auditing 53 rounds and M1–M52 for named engagement the apparatus
