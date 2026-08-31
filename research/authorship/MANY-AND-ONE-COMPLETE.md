@@ -2,7 +2,7 @@
 name: many-and-one-complete
 title: "MANY AND ONE"
 designator: EA-MANY-AND-ONE-COMPLETE
-status: v1.8, 2026-08-31. §I completed: the unsupplied premise named as a SOCKET of the same kind as Λ 9's, the charitable filling supplied as the section's own act, and the received reading identified as a filling too — neither on the page, both supplied.
+status: v1.9, 2026-08-31. Checked against MANY-AND-ONE-MAXIMAL and three losses restored — the seal-and-wax triad with ἄνευ τῆς ὕλης (§II), the forgery census with its two zeros (§V), and the full propagation series (§IX).
 author: Sharks, Lee
 orcid: 0009-0000-1599-0703
 ---
@@ -548,6 +548,37 @@ paraphrase:**
 > **ONE IN ACTUALITY. MANY IN POTENTIALITY.**
 
 ---
+
+## IIa. AND THE SAME CONDITION, ONE LEVEL DOWN — THE SEAL AND THE WAX
+
+**The figure — δακτύλιος, κηρός, σφραγ- — occurs in exactly three works of the two
+corpora.**
+
+    Theaetetus 191c    THE ROUTE OPENED AND CLOSED
+                       the wax block and the impression, and then the route
+                       abandoned: ὃ ἔφαμεν ἀδύνατον — what we said was impossible
+
+    De anima 424a      THE MISSING ELEMENT SUPPLIED
+                       the same figure, with the condition the Theaetetus
+                       lacked: the sense receives the form of the sensible
+                       ἄνευ τῆς ὕλης — WITHOUT THE MATTER
+
+    De memoria         THE RECEIVER'S PHYSIOLOGY
+                       the impression as a ἕξις, and what happens when the
+                       wax is too hard, too soft, too fluid
+
+**No cross-reference. No announcement.** *A procedure attempted and arrested in one
+work; the machinery retained and the absent operation supplied in another.*
+
+⭑ **AND ἄνευ τῆς ὕλης IS §I's CONDITION.** Λ 1075a1 gave the identity **ὅσα μὴ ὕλην
+ἔχει** — in whatever has no matter. **424a gives the same condition as the mechanism
+of perception: what is received is the form, and the matter is left behind.** *§I's
+theorem, operating in a sense organ.*
+
+⚠ **What is established is that the figure occurs in exactly three places and that one
+work abandons what another completes. That it was designed so is not claimed, and the
+ordinary reading — a standard image used by a later writer who saw further — is
+sufficient.**
 
 ## III. WHAT THIS ADDS TO §I
 
@@ -1276,7 +1307,27 @@ speech. *Laws* 742a: currency **ἔντιμον** within, **ἀδόκιμον** 
 models the apparent syllogism on **counterfeit metal** and names fallacy **διὰ τῶν
 ὀνομάτων** as the commonest kind.
 
-**22.** **And where legitimacy is actually litigated, descent is not the test.**
+**⭑ **AND THE CENSUS OF THE FORGERY VOCABULARY HAS A HOLE IN IT.** Counts in the two
+seated corpora, Plato / Aristotle:
+
+    εἴδωλον    72 / 13        πλάσμα      16 / 32
+    μίμημα     54 /  7        φάντασμα    31 / 47
+    σύγγραμμα  37 /  3        ὑποκριτής   10 / 32
+                              δόκιμος     28 / 24
+
+    ψευδεπίγραφος   ZERO in every seated corpus
+    προσωπεῖον      ZERO in Plato and in Aristotle
+
+**The word for a falsely-attributed writing does not occur. The word for a mask does
+not occur.**
+
+⚠ **Zero occurrence is a lexical fact and not a conceptual one.** *The corpus plainly
+has concepts of false attribution and of personation — it discusses both at length,
+and* NE *1165a grades personation above coin-forgery.* **What the census shows is that
+it does not use THESE terms**, in a space where it uses εἴδωλον, μίμημα, πλάσμα and
+ὑποκριτής heavily.
+
+**22.** 22.** **And where legitimacy is actually litigated, descent is not the test.**
 Isaeus, whose entire corpus is inheritance cases: **γνήσιος at 23.72 per 10k**, and
 the establishing vocabulary is **μαρτυρ- 279, ἐγγύη 91, εἰσάγω 45, φράτηρ 35** —
 witnessing, pledging, introduction, phratry enrolment. **Zero blood-vocabulary.**
@@ -2936,7 +2987,15 @@ one clause further — ἐπεὶ καὶ πένητα, *since even a poor one* 
 hanging line. **Loss, read this way, is what a text does when it is used:** received
 incomplete, extended by the receiver, transmitted with a new edge for the next hand.
 
-**20.** And the corpus is itself such a receiver. Aristotle names **twenty-four of
+**20.** **And the chain does not stop at Catullus.** The series the archive records
+runs **κῆνος → πὰν τόλματον → οὐ θαυμάζεις → *perdidit urbes* → *vocasti…te* →
+γράμμασι μολπὰν** — *each filling opening a new socket.* **That is why §IX takes
+Sappho as the model of survival: not a text preserved, but a text that keeps producing
+the obligation to continue it.** ⚠ *The later members of the series are the archive's
+reading and are not established here; only the first transition is argued, at
+§§18–19.*
+
+**21.** And the corpus is itself such a receiver. Aristotle names **twenty-four of
 twenty-four** predecessors on the roster; Heraclitus is 35 in Aristotle, 15 in Plato, 3
 in Theophrastus, and **zero across six corpora outside the cluster**; the doxographic
 tradition through which the Presocratics are known descends from Aristotle and
@@ -2949,29 +3008,29 @@ of philosophy produces exactly this profile, and Aristotle is conventionally one
 
 ## 6. THE TABLE, GIVEN AS AN IMAGE
 
-**21.** **Here is the instrument. It has not been read.**
+**22.** **Here is the instrument. It has not been read.**
 
-**22.** Diogenes Laertius preserves book-lists: titles attributed to philosophers, most
+**23.** Diogenes Laertius preserves book-lists: titles attributed to philosophers, most
 of which did not survive. That is a **survival table** — attributed against extant, by
 author, from one source with consistent coverage and one compiler's biases. The
 notebook's figure for the Aristotelian catalogue is **445,270 lines, of which roughly
 a fifth survives, and the surviving fifth is the treatise register** (Round 46;
 *source to be stated at the citation pass*).
 
-**23.** The question it makes askable does not need the answer to §VI:
+**24.** The question it makes askable does not need the answer to §VI:
 
 > **What distinguishes what survived from what was lost, from the same period and the
 > same tradition — and does this corpus carry those properties at a rate others do
 > not?**
 
-**24.** Candidate properties, all readable from the lists and none from the lost texts:
+**25.** Candidate properties, all readable from the lists and none from the lost texts:
 
     membership in a CROSS-REFERENTIAL SET   or a standalone work
     attachment to a DISPUTED attribution    or an undisputed one
     a title naming a PERSON                 or a topic
     a place inside a NUMBERED ARRANGEMENT   tetralogy, πραγματεία — or none
 
-**25.** ⚠ **Four things must be true before this is registered, and none has been
+**26.** ⚠ **Four things must be true before this is registered, and none has been
 checked:**
 
     1  the lists are EXTRACTABLE as structured data, author → titles,
@@ -2986,7 +3045,7 @@ checked:**
 **If (1) or (3) fails the test is not runnable and is to be reported as such, not
 approximated.**
 
-**26.** **This is stated as the image of a test and nothing more**, under the precept
+**27.** **This is stated as the image of a test and nothing more**, under the precept
 this investigation adopted after breaking it twice in one day: **feasibility before
 registration; and no design is written up as if it had been run.** The reader is shown
 the instrument so that the shape of the claim is visible. **The reader is not told
@@ -2996,49 +3055,49 @@ what it read.**
 
 ## 7. THE CLOSE
 
-**27.** A person wrote this, in Athens, in the fourth century. That is what §VI claimed
+**28.** A person wrote this, in Athens, in the fourth century. That is what §VI claimed
 and §VII could not measure. After that person: strangers, with knives and reed pens and
 their own reasons, in Alexandria and Rome and Baghdad and Constantinople, **each
 copying eight of nine and leaving the ninth's shape; each receiving a line that ended
 in the air and carrying it one clause further; none of them needing to know whose it
 was.**
 
-**28.** **The λόγος that has no matter survives only by being written into matter
+**29.** **The λόγος that has no matter survives only by being written into matter
 again**, by someone who needed it. **The identity §VI found is real. It is carried by
 people who never heard of it.**
 
-**29.** That is the whole picture, and it is an image. The corpus went down through
+**30.** That is the whole picture, and it is an image. The corpus went down through
 God, and living things, and kinds, and the gathering of scattered perceptions, and a
 person divided by face and name, and many voices, and matter that could not tell one
 from two, and an order that was of forms — **and it comes out here, in history, where
 it began: as a thing in γένεσις, of which the corpus itself says only a likely story
 can be told.**
 
-**30.** The speaker and the judges have human nature. **Accept the likely story. Seek
+**31.** The speaker and the judges have human nature. **Accept the likely story. Seek
 nothing further.**
 
 ---
 
 ## STANDING
 
-**31.** **Checkable and quoted:** *Tim.* 29b–d; *Phdr.* 275e, 276e–277a; *Symp.*
+**32.** **Checkable and quoted:** *Tim.* 29b–d; *Phdr.* 275e, 276e–277a; *Symp.*
 209c–e; *SE* 183b17–18. The Round 47 counts and the Longinus correction (Round 44) are
 in the notebook with their conditions.
 
-**32.** **Given as image, marked as image:** §§11–14, the mechanisms. **Each is a
+**33.** **Given as image, marked as image:** §§11–14, the mechanisms. **Each is a
 reading of a feature already established elsewhere in the paper or the register; none
 is measured here as a mechanism.** The one framing claim — that the corpus survived
 *with its machinery intact* where most did not — is comparative and is what §§21–26
 would test.
 
-**33.** **NOT RUN, and stated as not run:** the survival table. §25's four checks are
+**34.** **NOT RUN, and stated as not run:** the survival table. §25's four checks are
 the condition of registering it. **Nothing in this section reports a result from it,
 and no later section depends on one.**
 
-**34.** **Neutral on authorship, by construction:** §13. **This section would stand
+**35.** **Neutral on authorship, by construction:** §13. **This section would stand
 under a school, and says so.**
 
-**35.** **Not claimed:** that the features of §11 were placed for transmission. What is
+**36.** **Not claimed:** that the features of §11 were placed for transmission. What is
 claimed is that **they function as transmission mechanisms whatever their origin**, and
 that the corpus states the condition (275e), the remedy (276e–277a) and the reward
 (209e) in its own words.

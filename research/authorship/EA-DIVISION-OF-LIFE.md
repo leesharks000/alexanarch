@@ -81,6 +81,37 @@ paraphrase:**
 
 ---
 
+## IIa. AND THE SAME CONDITION, ONE LEVEL DOWN — THE SEAL AND THE WAX
+
+**The figure — δακτύλιος, κηρός, σφραγ- — occurs in exactly three works of the two
+corpora.**
+
+    Theaetetus 191c    THE ROUTE OPENED AND CLOSED
+                       the wax block and the impression, and then the route
+                       abandoned: ὃ ἔφαμεν ἀδύνατον — what we said was impossible
+
+    De anima 424a      THE MISSING ELEMENT SUPPLIED
+                       the same figure, with the condition the Theaetetus
+                       lacked: the sense receives the form of the sensible
+                       ἄνευ τῆς ὕλης — WITHOUT THE MATTER
+
+    De memoria         THE RECEIVER'S PHYSIOLOGY
+                       the impression as a ἕξις, and what happens when the
+                       wax is too hard, too soft, too fluid
+
+**No cross-reference. No announcement.** *A procedure attempted and arrested in one
+work; the machinery retained and the absent operation supplied in another.*
+
+⭑ **AND ἄνευ τῆς ὕλης IS §I's CONDITION.** Λ 1075a1 gave the identity **ὅσα μὴ ὕλην
+ἔχει** — in whatever has no matter. **424a gives the same condition as the mechanism
+of perception: what is received is the form, and the matter is left behind.** *§I's
+theorem, operating in a sense organ.*
+
+⚠ **What is established is that the figure occurs in exactly three places and that one
+work abandons what another completes. That it was designed so is not claimed, and the
+ordinary reading — a standard image used by a later writer who saw further — is
+sufficient.**
+
 ## III. WHAT THIS ADDS TO §I
 
 **10.** §I gave: **distinction need not entail ultimate otherness** — but only where

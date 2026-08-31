@@ -168,7 +168,27 @@ speech. *Laws* 742a: currency **ἔντιμον** within, **ἀδόκιμον** 
 models the apparent syllogism on **counterfeit metal** and names fallacy **διὰ τῶν
 ὀνομάτων** as the commonest kind.
 
-**22.** **And where legitimacy is actually litigated, descent is not the test.**
+**⭑ **AND THE CENSUS OF THE FORGERY VOCABULARY HAS A HOLE IN IT.** Counts in the two
+seated corpora, Plato / Aristotle:
+
+    εἴδωλον    72 / 13        πλάσμα      16 / 32
+    μίμημα     54 /  7        φάντασμα    31 / 47
+    σύγγραμμα  37 /  3        ὑποκριτής   10 / 32
+                              δόκιμος     28 / 24
+
+    ψευδεπίγραφος   ZERO in every seated corpus
+    προσωπεῖον      ZERO in Plato and in Aristotle
+
+**The word for a falsely-attributed writing does not occur. The word for a mask does
+not occur.**
+
+⚠ **Zero occurrence is a lexical fact and not a conceptual one.** *The corpus plainly
+has concepts of false attribution and of personation — it discusses both at length,
+and* NE *1165a grades personation above coin-forgery.* **What the census shows is that
+it does not use THESE terms**, in a space where it uses εἴδωλον, μίμημα, πλάσμα and
+ὑποκριτής heavily.
+
+**22.** 22.** **And where legitimacy is actually litigated, descent is not the test.**
 Isaeus, whose entire corpus is inheritance cases: **γνήσιος at 23.72 per 10k**, and
 the establishing vocabulary is **μαρτυρ- 279, ἐγγύη 91, εἰσάγω 45, φράτηρ 35** —
 witnessing, pledging, introduction, phratry enrolment. **Zero blood-vocabulary.**
