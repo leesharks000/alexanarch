@@ -23,6 +23,80 @@ result, reported in full, including the parts that came out otherwise.**
 
 ---
 
+## 0. ⚠ FIRST, A CORRECTION TO THIS SECTION'S OWN CLAIM
+
+**An earlier form said every instrument failed. That is false, and the exception is
+the one this paper's theory predicts.**
+
+**EA-YIELD-02 read λόγος, not ὕλη, and returned a positive on both corpora at once.**
+Six transmission functions, scored at the level of the individual work:
+
+    PLATO      6/6 filled, in SIX DISTINCT DIALOGUES, sharpness 1.00
+    ARISTOTLE  6/6 filled, in FIVE WORKS
+    the same figure at T2 (the wax), the same term at T5 (ἀνάμνησις),
+    the same discrimination under twin sophist-titles at T6
+    RIVAL CONFIGURATIONS fail on the sharpness term
+
+**And the completion result beside it:** one figure, one abandonment, two completions;
+three of four slots one operation.
+
+> **The instrument that read the relation between operations found something. The
+> instruments that read lexical distribution did not.**
+
+**⚠ THE SCHOOL CAVEAT STANDS AND IS WHY THIS IS NOT DECISIVE:** a research tradition
+with a shared programme produces functional co-coverage, and 6/6 does not discriminate
+one maker from a school.
+
+**SO THIS SECTION'S CLAIM IS NARROWED TO WHAT IT CAN CARRY:** *the LEXICAL and
+DISTRIBUTIONAL instruments do not identify latent maker-count.* **Not every
+instrument. The ones addressed to the substrate.**
+
+---
+
+## Ia. AND FOUR FURTHER MEASURES BELONG IN THE REPORT
+
+**M30 — the naming-gap reflex is shared at 9.4×, P ≈ 0**, with Aristotle's own policy
+at *NE* 1108a and the *Topics* faulting Plato for the same practice. **And the transfer
+class: five of eight charges Aristotle brings against Plato run backwards** —
+**μεταφορ-** occurs **zero** times in Plato and 112 times in Aristotle, who faults
+Plato for speaking metaphors in a word Plato never uses. *The internal control fires
+correctly: **μῦθος** does not transfer.*
+
+**M38 — the two-sided ledger, and it is the honest cost comparison.** Five latent
+assumptions on the inheritance account; four on the configurational one after K1 was
+withdrawn. **Neither is free, and both are stated.**
+
+**M45 — a default earns prior, not likelihood.** The received account gets its
+historical prior, the external record and the prima facie partitions. **It does not
+automatically get P(E|H_S)=1 for every internal observation because a story of
+influence can be constructed afterward.** *This is the answer to "the same results
+follow without the hypothesis," and it is an argument about burden.*
+
+**M39 and M44 — the anchoring is asymmetric and the adjudicator is inside.** Aristotle
+is the only position with an epigraphic anchor (the Delphic decree, at S9b's reduced
+strength). **And the attribution apparatus demonstrably manufactured figures it then
+adjudicated:**
+
+    HICETAS and ECPHANTUS of Syracuse   argued to be CHARACTERS in dialogues by
+                                        Heraclides of Pontus, received by the
+                                        doxographic tradition as historical
+                                        philosophers with doctrines
+
+    TIMAEUS OF LOCRI                    acquires a biography, then a FORGED
+                                        CORPUS in his name. Other ancient reports
+                                        are likely based on Plato's Timaeus or on
+                                        the spurious works, and some hold that
+                                        Plato used him as a MASK for Archytas
+
+> **A speaking position generated a philosopher, who then received a bibliography.
+> The reputational mechanism did not detect these. It produced them.**
+
+⚠ *Standard scholarship on those figures, not this paper's inference. What it
+establishes is that the apparatus which adjudicates attribution has, in documented
+cases, manufactured the parties to the adjudication.*
+
+---
+
 ## I. WHAT WAS BUILT, AND WHAT KILLED IT
 
 **4.** Fifteen distributional features were built to distinguish an **embodied**
