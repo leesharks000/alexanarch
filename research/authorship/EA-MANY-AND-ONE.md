@@ -182,7 +182,17 @@ legitimacy census: Isaeus establishing standing by **μαρτυρ-, ἐγγύη,
 φράτηρ** — witnessing, pledging, introduction, enrolment — **with zero
 blood-vocabulary.**
 
-**Sources: M32; M35; M41; Round 45 entire.**
+**WRITTEN: EA-DIVIDED-PERSON v1.0, entire — AND IT IS THE SEAM.** §§I–IV are
+theorems owing nothing to the authorship question; **§V is where the corpus is first
+read as a maker's work, and the section says so at its head.**
+
+**Its centre is *Statesman* 257d–258a, which the architecture did not have:** the
+corpus divides its founder, giving the **face** to one boy and the **name**
+(ὁμώνυμος) to another, and states that kin are recognised **διὰ λόγων** — of
+Socrates, **οὐδέτερα**, until he answers. Then: **ὦ Σώκρατες, ἀκούεις δὴ
+Σωκράτους;** And the older Socrates does not speak again.
+
+**Sources: M32; M35; M41; Round 45 entire; Round 52 §§230–231.**
 
 ---
 
@@ -383,9 +393,22 @@ reverse-engineered from the conclusion.**
 being relied upon, because a paper that faults an apparatus for suppressing its own
 negative results cannot suppress its own.
 
-**Not claimed anywhere:** that one hand wrote both received corpora. **That is a
-fact about bodies, and M48 and M50 establish that it is not recoverable from text.**
-What is claimed is stated at §VIII and is checkable.
+**CLAIMED. One person wrote the corpus** — §VI states it and the paper argues it.
+
+**Argued at the level of λόγος**, from §I's theorem down through §VI, with the
+corpus supplying its own licence for the descent at *Phaedrus* 276a: the living and
+ensouled λόγος of the knower, **οὗ ὁ γεγραμμένος εἴδωλον** — of which the written is
+an image. **The corpus distinguishes its own λόγος from its own matter.**
+
+**And shown not decidable at the level of ὕλη** — §VII, where fifteen instruments
+addressed to the material substrate fail, **which is where Λ 1075a1 said they would
+fail**: *ὅσα μὴ ὕλην ἔχει.*
+
+**⚠ Unrecoverable by those instruments is not unclaimed.** An earlier version of this
+note read *not claimed anywhere*, which contradicted §VI and conceded in the
+apparatus what the argument asserts in the body. **The claim is made. What §VII
+establishes is the level at which it cannot be decided, and the corpus states that
+level before the first measurement is taken.**
 
 **On the twelve voices.** This work is composed across twelve authorial positions.
 **They are never evidence for the thesis.** That one maker can coordinate twelve
