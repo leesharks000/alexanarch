@@ -1,7 +1,7 @@
 ---
 name: paper-architecture
 title: "MANY AND ONE — the paper. Working title, no subtitle."
-status: WORKING. Structure fixed 2026-08-29; content drawn from EA-NOTEBOOK-01 and EA-AUTHORSHIP-MEASURES-01.
+status: ⚠ SUPERSEDED by EA-MANY-AND-ONE v1.0, 2026-08-30. The six stations built TOWARD a claim that could not be stated, because M48/M50 had not yet been placed. EA-DIVISION-OF-GOD makes the claim statable, so the argument now DESCENDS from it. Retained under non-erasure: the station reasoning, the split rationales, and the enactment firewall are still correct and are carried forward.
 author: Sharks, Lee
 orcid: 0009-0000-1599-0703
 ---

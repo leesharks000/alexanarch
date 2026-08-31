@@ -1,14 +1,16 @@
 {
  "manifest": "research/authorship/MANIFEST.json",
  "generated": "2026-08-29",
- "rule": "FIVE FILES. Two living, one frozen, one structural, one argument.",
+ "rule": "FOUR LIVING FILES plus the argument. NOTEBOOK (append-forward) · MEASURES (measurements only) · PREREG (frozen) · MANY-AND-ONE (the architecture) · DIVISION-OF-GOD (§I, standalone). Superseded drafts retained, marked, not cited.",
  "structure": {
   "EA-NOTEBOOK-01.md": "LIVING — read forward. Fifteen rounds plus the standing frame. Append new rounds at the END; do not reorganise.",
   "EA-AUTHORSHIP-MEASURES-01.md": "LIVING REGISTER — MEASUREMENTS ONLY, with their conditions and refutations. §0A is the entryway (M40). ⚠ Source criticism, reception history and attestation audits belong in the NOTEBOOK, not here — this was got wrong twice (M49→Round 40, M52→Round 42).",
   "PREREG-LEDGER.md": "FROZEN, APPEND-ONLY. Six registrations with their original SHA-256s and their dispositions. Nothing above a DISPOSITION line is ever edited. New tests append a new ENTRY at the end.",
   "data/": "supporting extractions — snub loci, base-rate table, argument map",
   "PAPER-ARCHITECTURE.md": "STRUCTURAL — the six stations and why they are in that order. Not a draft; the argument shape the notebook and register feed. Read after §0A, before writing anything.",
-  "MANY-AND-ONE-MAXIMAL.md": "THE ARGUMENT — the thesis stated at full strength and grounded in the close reading: the designed incompletion (Sappho/Longinus/Catullus), the authorial economy, the corpus’s own vocabulary of fragmenting/minting/legitimacy/unification, M40, the seal-and-wax machine, the field counted as extant originals only. Draft 2026-08-30. NOT a replacement for PAPER-ARCHITECTURE (six stations, twelve positions) — that is the delivery structure; this is what it delivers."
+  "MANY-AND-ONE-MAXIMAL.md": "THE ARGUMENT — the thesis stated at full strength and grounded in the close reading: the designed incompletion (Sappho/Longinus/Catullus), the authorial economy, the corpus’s own vocabulary of fragmenting/minting/legitimacy/unification, M40, the seal-and-wax machine, the field counted as extant originals only. Draft 2026-08-30. NOT a replacement for PAPER-ARCHITECTURE (six stations, twelve positions) — that is the delivery structure; this is what it delivers.",
+  "EA-MANY-AND-ONE.md": "THE ARCHITECTURE — eight sections descending from Λ 9 to the corpus. God, life, kind, collection, the divided person, the many voices, the insufficiency of hulē, the order of the corpus. Supersedes PAPER-ARCHITECTURE.",
+  "EA-DIVISION-OF-GOD.md": "§I of MANY AND ONE, and publishable standalone. APr I.31 diagnoses division’s failure to select; Λ 9 puts divine nous through the same branching form, selects, and grounds the identity in immateriality, closing at ἀδιαίρετον."
  },
  "why_prereg_cannot_merge": "A pre-registration is worth something only because its content was fixed before the test ran. A hash over an appending notebook proves nothing. The ledger keeps them frozen while stopping them proliferating at three files apiece.",
  "consolidations": [
@@ -35,14 +37,23 @@
    "from": 4,
    "to": 5,
    "note": "MANY-AND-ONE-MAXIMAL.md added — the thesis stated rather than hedged, after the six-station framing was found to be venue-thinking dressed as epistemics (Round 43 §176)"
+  },
+  {
+   "date": "2026-08-30",
+   "note": "EA-MANY-AND-ONE supersedes PAPER-ARCHITECTURE. The argument stops building toward the claim and starts descending from it, with the harrowing placed second-to-last: the logos-level operation is established six times over, THEN the matter is measured and found insufficient — which is the boundary Λ 1075a1 states before any measurement is taken."
   }
  ],
  "known_failure_mode": "append by anchor-replace is UNSAFE when the anchor appears more than once — str.replace on the closing sigil duplicated sections 17-22 of the register and truncated section 5. Append by unique section anchor instead.",
  "sha256": {
-  "EA-AUTHORSHIP-MEASURES-01.md": "e2c892f78720f532b5375642148afd93138d988cb317a5026391fe59eb1596a2",
-  "EA-NOTEBOOK-01.md": "cb14dae41481e5d092d2b828cc0b02eaff6160c4e8c929f6ddcdd60c2859d0c5",
-  "MANY-AND-ONE-MAXIMAL.md": "da3e625ca32cdceb070ad95e3c69210e50b30007e008da269e4665bbf711b18e",
-  "PAPER-ARCHITECTURE.md": "736a6f2849ccbb40df14d888b0fb324f13a48c6ca0491df33e123a28a519ad80",
+  "EA-AUTHORSHIP-MEASURES-01.md": "752eb40f69e2e36d6ed4e835068af6b1b737f735dc3dfc98e29bcd8d151c217f",
+  "EA-DIVISION-OF-GOD-01.md": "c8ce83688c0388bafcad136bcac30822d3255bb21e1cd65d6d51daf658d66ec0",
+  "EA-DIVISION-OF-GOD-02.md": "bbb725881451c2641f6dbfd19fe342219f73178f3118170a9dc095142a7d3fe9",
+  "EA-DIVISION-OF-GOD-ERRATUM-01.md": "4de69e9c6ad58a3d0d6b323a1d4aeba8e44265a1b4aa915a2856c1ad2952061d",
+  "EA-DIVISION-OF-GOD.md": "c6cedefd2d7cd94a6204c7903b6bb6e601ed4eee8181b7bbbd74be3f0256458b",
+  "EA-MANY-AND-ONE.md": "f415a156c5f950e39406b5d5547a3fcbdeb280f5d860cce4dccbefb0b1a13fea",
+  "EA-NOTEBOOK-01.md": "33a683aa3291605723a17e3b37a60d95da7d8cd01336aa09579f316d14f63322",
+  "MANY-AND-ONE-MAXIMAL.md": "74189da03ce800534ea4bcb55d628789e4c4bc5923ecb65f0f5ba5f57c72db36",
+  "PAPER-ARCHITECTURE.md": "ede0ad4b19f4483c14eaa6176092aff23099736341064ca2ed010474cb4d69dc",
   "PREREG-LEDGER.md": "645e9620e857f30abfcd21001a40af4dacb3672090a30978a6441270908a01d2",
   "data/EA-SNUB-01-argmap.json": "fbaff3e4fea09a69f943c0503ea84836cf78d1daaf6c800278775ea956226d08",
   "data/EA-SNUB-01-baserate.json": "1d7f503d631cf7a7f7966b31cbe157422daa5856bd3c9482945400c255dd51c0",
