@@ -174,6 +174,12 @@ applied to a maker.** §V is the seam.
 
 ## STANDING
 
+**28a.** ⚠ **LOCUS NOTE.** The search clause (*ἀδυνατεῖ ἀναμνησθῆναι, ζητεῖν δὲ
+δύναται καὶ εὑρίσκει*) and the definition of remembering (*τὸ ἐνεῖναι δυνάμει τὴν
+κινοῦσαν*) are both in ***De memoria* 2**, cited throughout as **453a**. **The seated
+text carries no Bekker markers**, so lineation is from the standard edition and is to
+be confirmed against the OCT before deposit. **One locus, used consistently.**
+
 **29.** **Checkable and quoted:** *Phdr.* 249b–c, 265d–266b, 275a; *De mem.* 451a,
 453a, and the search passage entire. **The two οἷον-συλλογισμός constructions are at
 *APr* 46a31 and *De mem.* 453a and are given verbatim.**

@@ -16,7 +16,7 @@ not the name, but whether the account is one.**
 
 ---
 
-## I. TWO DEMONSTRATIONS OF THE SAME CAPACITY
+## 1. TWO DEMONSTRATIONS OF THE SAME CAPACITY
 
 **2.** **PLATO: many voices, one maker, and no recoverable rule.**
 
@@ -48,12 +48,11 @@ other explains it. **Neither is the account by itself.**
 
 ---
 
-## II. THE LADDER IS THE TRACK
+## 2. THE LADDER IS THE TRACK
 
 **6.** *Symposium* 210a–d gives an ordered ascent, and the corpus walks it.
-
-    ἓν σῶμα              SOCRATES — 252,416 spoken words, one figure
-                         made of words, by a man who wrote nothing
+*(The first rung, ἓν σῶμα, is not carried: the correspondence to any single figure is
+the loosest in the paper and nothing downstream uses it.)*
 
     πάντα τὰ σώματα      56 SPEAKERS. And the rung is not plurality:
                          πολλὴ ἄνοια μὴ οὐχ ἓν τε καὶ ταὐτὸν ἡγεῖσθαι
@@ -92,11 +91,11 @@ executed.**
 
 **10.** ⚠ **The rungs are of unequal strength.** ἐπιτηδεύματα καὶ νόμοι is tight —
 Diotima's word and the corpus's own title. ἐπιστῆμαι against M28 is the
-interpretation. **The first two are loosest and are not pressed.**
+interpretation. **The first rung is dropped rather than carried flagged.**
 
 ---
 
-## III. THE ONE MAKER AT TWO GRASPS, SAID BY THE CORPUS
+## 3. THE ONE MAKER AT TWO GRASPS, SAID BY THE CORPUS
 
 **11.** *SE* 183b7, on the last page, a few lines before the priority claim:
 
@@ -115,7 +114,7 @@ function.**
 
 **14.** **Read through §IV, this is the order of grasp and not of persons.** The
 questioner is at **ξυνίεσαν** — not grasping what the operation entails. The answerer
-is at **ῥᾴδιον ἰδεῖν**. And *De mem.* 452a says exactly what stands between them:
+is at **ῥᾴδιον ἰδεῖν**. And *De mem.* 2, 453a says exactly what stands between them:
 **ἀδυνατεῖ ἀναμνησθῆναι, ζητεῖν δὲ δύναται καὶ εὑρίσκει** — unable to recollect, able
 to search and find.
 
@@ -125,34 +124,45 @@ operation, and the later found it.**
 
 ---
 
-## IV. AND THE IDENTITY §I LICENSED
+## 4. AND THE IDENTITY §I LICENSED
 
 **16.** §I established that where there is no matter the terms division separates are
 **not other** — and the corpus says the same of itself.
 
-**17.** *Phaedrus* 276a:
+**17.** *Phaedrus* 276a. **And it must be read exactly, because it cuts against the
+formulation an earlier version of this section used.**
 
-> **τὸν τοῦ εἰδότος λόγον … ζῶντα καὶ ἔμψυχον, οὗ ὁ γεγραμμένος εἴδωλον ἄν τι λέγοιτο
-> δικαίως.**
->
-> *the **living and ensouled** word of the knower, of which **the written would justly
-> be called an image**.*
+> ΣΩ. **ὃς μετ᾽ ἐπιστήμης γράφεται ἐν τῇ τοῦ μανθάνοντος ψυχῇ**, δυνατὸς μὲν ἀμῦναι
+> ἑαυτῷ, ἐπιστήμων δὲ λέγειν τε καὶ σιγᾶν πρὸς οὓς δεῖ.
+> ΦΑΙ. τὸν τοῦ εἰδότος λόγον λέγεις **ζῶντα καὶ ἔμψυχον**, **οὗ ὁ γεγραμμένος
+> εἴδωλον** ἄν τι λέγοιτο δικαίως.
 
-**18.** **That is the corpus distinguishing its own λόγος from its own matter.** The
-manuscripts have matter. The written is **εἴδωλον**. **The λόγος does not**, and Λ's
-condition holds of it.
+*The one written **with knowledge in the soul of the learner** … — You mean the
+**living and ensouled** word of the knower, **of which the written is an image**.*
 
-**19.** > **AT THE LEVEL OF λόγος, THE MAKER IS THE CORPUS, AND THE CORPUS IS ONE.**
+**18.** ⚠ **SO THE WRITTEN CORPUS IS THE εἴδωλον, AND THE LIVING λόγος IS IN A
+KNOWER.** An earlier form of this section said *the λόγος has no matter, therefore
+the maker is the corpus.* **That takes the corpus for the λόγος, which is the one
+thing 276a denies.** Withdrawn.
 
-**20.** **Not a metaphor.** §I's theorem at the level §I specifies, licensed by the
-corpus at 276a, and it is what the ladder's last rung is: **where knower and known
-cease to be two.**
+**19.** **The corrected form, and it is stronger.** §IV established that a corpus is
+**ὑπομνήματα** — a starting-point — and that what it holds is held **δυνάμει** until
+a search actualises it. **The λόγος is what is actualised from the corpus in a
+knower**, and 276e–277a says where it is planted: in a fitting soul, where it grows.
+
+**20.** > **AT THE LEVEL OF λόγος, THE MAKER AND WHAT THE CORPUS SAYS ARE τὸ
+> αὐτό — in the act of thinking it.**
+
+**21.** **Never "the maker and the corpus."** The corpus is γράμματα and has matter.
+**What Λ 1075a1 states is an identity of νοῦς and νοούμενον *in νόησις*** — in the
+thinking, not in a thing. **The identity is therefore located in the reading**, which
+is where §IV's search put it and where the ladder's last rung is.
 
 ---
 
-## V. ⚠ AND WHAT THIS DOES NOT MEAN
+## 5. ⚠ AND WHAT THIS DOES NOT MEAN
 
-**21.** **ONE PERSON WROTE THIS.** That is the claim of this paper, and nothing
+**22.** **ONE PERSON WROTE THIS.** That is the claim of this paper, and nothing
 above dissolves, replaces, or spiritualises it.
 
 **⚠ And "person" is not here defined as "one body."** The paper does not require the
@@ -165,54 +175,55 @@ divisions are of ONE PERSON and not an aggregation of several.**
 the claim §V's criterion is for: **not the face, not the name, but whether the
 account is one.**
 
-**22.**
+**23.**
 
     HISTORICAL   one person wrote the corpus. NOT "one body" — the mode of
                  unity is what §§I–V examined. Not recoverable from text — §VII.
 
-    LOGOS-LEVEL  maker and corpus are τὸ αὐτό, because the corpus has
-                 no matter. A fact about a relation — §I, licensed at 276a.
+    LOGOS-LEVEL  maker and what the corpus says are τὸ αὐτό in the act of
+                 thinking it. A fact about a relation, located in the reading
+                 — §I with §IV, and 276a's living λόγος in a learner's soul.
 
-**23.** **The second explains why the first cannot be measured. It does not supply
+**24.** **The second explains why the first cannot be measured. It does not supply
 it, and it is not offered in its place.** An argument that let the identity replace
 the person would have abandoned the claim it exists to support — **and that is the
 mysticism this section is likeliest to be mistaken for.**
 
 ---
 
-## VI. WHAT §VI ESTABLISHES
+## 6. WHAT §VI ESTABLISHES
 
-**24.** **Two corpora demonstrate the same capacity under opposite conditions**, one
+**25.** **Two corpora demonstrate the same capacity under opposite conditions**, one
 withholding the account and one supplying it.
 
-**25.** **The order they are in is the ladder's**, and the ladder's rungs are
+**26.** **The order they are in is the ladder's**, and the ladder's rungs are
 recognitions of unity at widening scope, not accumulations of parts.
 
-**26.** **The corpus states, on its own last page, one maker at two grasps** — the
+**27.** **The corpus states, on its own last page, one maker at two grasps** — the
 questioner who did not know and the answerer who found — **and Aristotle's own
 psychology of search is what stands between them.**
 
-**27.** **And the identity holds at λόγος**, which is where §I said it would, and
+**28.** **And the identity holds at λόγος**, which is where §I said it would, and
 where §VII will find the instruments cannot reach.
 
 ---
 
 ## STANDING
 
-**28.** **Checkable and quoted:** *Symp.* 210a–d; *SE* 183a37–b8; *Phdr.* 276a. **The
+**29.** **Checkable and quoted:** *Symp.* 210a–d; *SE* 183a37–b8; *Phdr.* 276a. **The
 Organon Σωκράτ- counts are from the seated corpora.** M13, M14, M28 and R48 are in
 the register with their conditions and refutations.
 
-**29.** **Conceded:** the *SE* Socrates sentence has an entirely ordinary reading —
+**30.** **Conceded:** the *SE* Socrates sentence has an entirely ordinary reading —
 Socrates questioned and disclaimed knowledge, which is why the dialectical programme
 must also treat the answerer's role. **Nothing in §§11–15 requires more, and the
 order-of-grasp reading is §IV's possibility, not a finding.**
 
-**30.** **Marked as unequal:** §10, the rung correspondences. **Marked as the section's
+**31.** **Marked as unequal:** §10, the rung correspondences. **Marked as the section's
 honesty:** §§21–23, and it is not a hedge — it is the distinction without which the
 identity claim is false.
 
-**31.** **This section is the first to depend on measurement.** M13, M14, M28 and R48
+**32.** **This section is the first to depend on measurement.** M13, M14, M28 and R48
 are its evidence, and **§VII reports every instrument that failed**, including those
 that failed after being relied upon.
 

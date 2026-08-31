@@ -15,7 +15,7 @@ orcid: 0009-0000-1599-0703
 **The argument descends.** It begins with the hardest and most independent case —
 an Aristotelian problem in the theology, with no bearing on authorship — and walks
 down through progressively more concrete forms of plurality-in-unity until it
-reaches a maker. **Then, and only then, it measures the matter and finds nothing.**
+reaches a maker. **Then, and only then, it measures the matter — and finds that the matter cannot decide it.**
 
 **That order is the argument.** The prior architecture built *toward* a claim it
 could not state; six stations of accumulating cost, with the thesis withheld

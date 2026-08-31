@@ -15,7 +15,7 @@ nothing. **This section says what is left, and what the question was.**
 
 ---
 
-## I. THE RELOCATION
+## 1. THE RELOCATION
 
 **2.** **Nothing is abolished.** Not the persons, the school, the teaching, the
 succession, the documentary record, the dates. **No evidence produced by this
@@ -28,7 +28,7 @@ investigation shows any of it false, and none is offered.**
 **4.** **Three claims replace the unanswerable one.** The third line of this
 investigation's standing status — *one historical hand wrote both received corpora* —
 asks for a fact about bodies, and §VII is the record of its not being recoverable.
-**In its place:**
+**Alongside it — the historical claim is made at §VI and is not withdrawn:**
 
     development within the corpus is real, ordered, directional    MEASURED
     its order is GENRE and FORM, not chronology                    M13, M28
@@ -38,7 +38,7 @@ asks for a fact about bodies, and §VII is the record of its not being recoverab
 
 ---
 
-## II. AND THE RELOCATION DISSOLVES THE OLDEST CAVEAT
+## 2. AND THE RELOCATION DISSOLVES THE OLDEST CAVEAT
 
 **6.** M13 found the strongest partition effect in the entire investigation:
 **chronology, ratio 1.442, Z = +6.92** — stronger than speaker, stronger than form.
@@ -72,7 +72,7 @@ contaminated result — and an experiment.**
 
 ---
 
-## III. AN ORDER OF GRASP
+## 3. AN ORDER OF GRASP
 
 **11.** §IV recorded a possibility and left §VIII to earn it: **that the corpus's
 order is one of grasp rather than of years.** Here is the payment.
@@ -97,7 +97,7 @@ answered. That is an order, and it is not a chronology.**
 
 ---
 
-## IV. THE PRIORITY CLAIM, READ IN ITS VERB
+## 4. THE PRIORITY CLAIM, READ IN ITS VERB
 
 **16.** *SE* 183b34: **οὐ τὸ μὲν ἦν τὸ δ᾽ οὐκ ἦν προεξειργασμένον, ἀλλ᾽ οὐδὲν
 παντελῶς ὑπῆρχεν.**
@@ -118,19 +118,153 @@ concealment, no chronological adjustment.
 
 ---
 
-## V. THE QUESTION IN ITS PROPER FORM
+## 4a. AND THE CORPUS DREW THE CONTRAST FIRST
 
-**20.** **Not: were there two men.** That is a fact about bodies, §VII is the record
+**20.** *Phaedrus* 266c–267d. **On the page that names division as the τέχνη and its
+practitioners διαλεκτικοί, Socrates catalogues the handbooks** — τά γ᾽ ἐν τοῖς
+βιβλίοις τοῖς περὶ λόγων τέχνης γεγραμμένοις — and the men who hold them:
+**Theodorus** of Byzantium; **Evenus**, who *first found* covert allusion; **Tisias
+and Gorgias**, let them sleep; **Prodicus**, who said he *alone had found* the art;
+**Thrasymachus**.
+
+**21.** *SE* 183b names the succession **Tisias → Thrasymachus → Theodorus**, and
+names **Gorgias** as the type of the teacher who hands out products.
+
+**22.** > **All four stand on the *Phaedrus* page that names division as the art —
+> in the same role, on the same side of the same contrast: holders of handbooks, and
+> makers of first-finder claims.**
+
+**23.** ⚠ **NULL, stated.** These are the canonical names of the rhetorical
+tradition, and **Aristotle compiled the handbook collection himself** (*Synagoge
+Technon*). **A shared list of the obvious names is not evidence of anything.**
+
+**24.** **What the null leaves standing:** the earlier page **draws the *SE*'s
+contrast before the *SE* draws it**, with the same men on the products side, **and
+names what stands on the other side.**
+
+## 4b. THE READING THIS ORDER PERMITS
+
+*Moved here from §I, where it did not belong: it is a reading of the priority claim
+and requires everything §§I–VII supply.*
+
+⚠ **A reading is now required, and the two available ones must be kept
+apart, because one of them re-inserts what the *SE* sentence negates.**
+
+**The reading this argument does NOT take.** That the Academy had division
+as a practice while Aristotle supplied the art — products against τέχνη, the
+shoemaker applied to Plato. **That is a partial-development claim**, and the
+sentence refuses partial development in terms: **οὐ τὸ μὲν ἦν τὸ δ᾽ οὐκ ἦν
+προεξειργασμένον.** *Not that part was worked out and part was not.* To read the
+*SE* as conceding the Academy the practice and claiming the completion is to give
+Aristotle back the **οἷον ἐκ διαδοχῆς** structure he has just refused for his own
+inquiry. **It also places Platonic division inside a succession Aristotle does not
+name, which is the very placement §0A holds open.**
+
+**The reading this argument takes, and it is the configurational one.**
+**οὐδὲν παντελῶς ὑπῆρχεν** is literal because there was no predecessor: **the
+divisional apparatus is the same maker's earlier work, developed before he knew what
+it could divide.**
+
+On that reading *APr* I.31's complaint is not levelled across a boundary.
+**οὔτε ὅ τι ἐνδέχεται συλλογίσασθαι διαιρούμενοι ξυνίεσαν** — read inclusively, as
+M42 reads it — says that **the earlier position did not know the range of its own
+operation.** Not that rivals were careless. That the operation was in hand and its
+terminus was not yet found.
+
+So the sequence is developmental and internal:
+
+    the divisional apparatus is built, and run on kinds, capacities, positions
+              ↓
+    it terminates nowhere — every cut ends in a disjunction and begs
+              ↓
+    ξυνίεσαν: what it can syllogize is not yet grasped, BY ITS OWN USER
+              ↓
+    Λ 9: the one object on which it closes, because that object is one
+              ↓
+    οὐδὲν παντελῶς ὑπῆρχεν — of THIS, nothing pre-existed
+
+**The priority claim is then true without equivocation and without
+diminishing anything.** It does not say the dividing was worthless. It says **the
+finding had no predecessor** — and on the single-maker configuration it has none,
+because the man who did the dividing is the man who did the finding, and the finding
+came after.
+
+**This is the reading M42 stated and Round 18 §66 named as discovery rather
+than encoding.** It requires no concealed confession, no plan, and no chronological
+adjustment. **P_earlier performs the operation; P_later discovers what the operation
+is and what it includes; and there was no predecessor from whom the discovery was
+inherited.**
+
+---
+
+## 3. THE ANSWER IS REOPENED — AND CLOSES AGAIN
+
+Λ does not rest on the collapse. The next clause reopens it:
+
+> **ἔτι εἰ ἄλλο τὸ νοεῖν καὶ τὸ νοεῖσθαι, κατὰ πότερον αὐτῷ τὸ εὖ ὑπάρχει;**
+>
+> *And if thinking and being-thought are different, in respect of which does its
+> good belong?*
+
+**25.** **The identity is asserted and queried in the same breath.** Having divided
+God and closed the division by identity, he immediately supposes the two apart again
+and asks which side the good falls on. **That is the divisional question, put back
+to the object that had resolved it.**
+
+**25a-i.** **And it closes again, on a different ground.** 1075a1:
+
+> **οὐχ ἑτέρου οὖν ὄντος τοῦ νοουμένου καὶ τοῦ νοῦ, ὅσα μὴ ὕλην ἔχει, τὸ αὐτὸ
+> ἔσται, καὶ ἡ νόησις τῷ νοουμένῳ μία.**
+>
+> *The thought and the intellect not being other, then, in whatever has no matter,
+> they will be **the same**, and the thinking **one** with what is thought.*
+
+**25a-ii.** So the selection is not grounded in unity asserted from outside. **It is
+grounded in immateriality**: where there is no matter, the two terms division
+separates **are not other**. The first argument gave *αὑτὸν ἄρα νοεῖ* by
+elimination; this one gives the identity its reason.
+
+**25a-iii.** **And the sentence after names the thing.** **ἔτι δὴ λείπεται ἀπορία,
+εἰ σύνθετον τὸ νοούμενον** — a difficulty remains, if the thought is composite —
+answered: **ἢ ἀδιαίρετον πᾶν τὸ μὴ ἔχον ὕλην.** *Or is everything without matter
+**indivisible**?*
+
+**25a-iv.** ⭑ **ἀδιαίρετον.** The negation of the operation, arrived at as the
+condition of the object on which the operation closed. **Division terminates at the
+indivisible, and the chapter says so in the word.**
+
+**26.** And *De anima* III.5 makes the *man* division again, inside the thing by
+which a man thinks. **ὁ μὲν τοιοῦτος νοῦς τῷ πάντα γίνεσθαι, ὁ δὲ τῷ πάντα ποιεῖν**
+— and of the second, **χωρισθεὶς δ᾽ ἐστὶ μόνον τοῦθ᾽ ὅπερ ἐστί, καὶ τοῦτο μόνον
+**ἀθάνατον** καὶ ἀΐδιον**; of the first, **ὁ δὲ παθητικὸς νοῦς φθαρτός**.
+
+**27.** **ἀθάνατον** is letter Γ of the worked example. **The disjunction division
+could not select for man is installed inside man's intellect as a real
+distinction** — and the chapter's last clause declines to say which side is which
+side's condition: **ἄνευ τούτου οὐθὲν νοεῖ**, where the referent of **τούτου** is
+undetermined and **οὐθέν** parses as subject or object.
+
+**28.** ⚠ **Whether III.5 has turned to divine νοῦς is among the great disputed
+readings and is not assumed here. The argument does not need it.** The divine
+division is at Λ, where it is explicit. III.5 is the *man* case, made again at a
+finer grain, and left open.
+
+---
+
+
+## 5. THE QUESTION IN ITS PROPER FORM
+
+**29.** **Not: were there two men.** That is a fact about bodies, §VII is the record
 of its not being recoverable, and this paper claims it (§VI) without being able to
 measure it.
 
-**21.** > **But: what is the order of the corpus an order OF — and what kind of "one"
+**30.** > **But: what is the order of the corpus an order OF — and what kind of "one"
 > is a person?**
 
-**22.** Numerically one? Stylistically homogeneous? Incapable of bearing contrary
+**31.** Numerically one? Stylistically homogeneous? Incapable of bearing contrary
 determinations? Necessarily one voice?
 
-**23.** **§§I–VI answered that question five times over, at five scales:**
+**32.** **§§I–VI answered that question five times over, at five scales:**
 
     GOD      one intellect     thinker and thought, not other
     LIFE     one actuality     really differentiated capacities
@@ -138,32 +272,32 @@ determinations? Necessarily one voice?
     MEMORY   one form          many scattered perceptions, gathered
     PERSON   one maker         many voices, or many objects
 
-**24.** **The corpus supplies the terms for the last one, and they are its own.**
+**33.** **The corpus supplies the terms for the last one, and they are its own.**
 **ταὐτόν** and **ἕτερον** — the pair the *Sophist* turns on, the ground of the
 one/many problem, and verbatim the authorship question.
 
-**25.** > ***Is this the same, or another?***
+**34.** > ***Is this the same, or another?***
 
-**26.** **And §V gave the criterion for answering it about a person:** not the face,
+**35.** **And §V gave the criterion for answering it about a person:** not the face,
 not the name, but **ἀναγνωρίζειν διὰ λόγων** — recognition through accounts. **§VII
 established that the face and the name are all the instruments can see.**
 
 ---
 
-## VI. THE CLOSE
+## 6. THE CLOSE
 
-**27.** **The received account explains the corpus's order by a biography: a young man
+**36.** **The received account explains the corpus's order by a biography: a young man
 in the Academy, a mature man in the Lyceum.**
 
-**28.** **This paper explains it by a program:** a sequence of forms, walked in the
+**37.** **This paper explains it by a program:** a sequence of forms, walked in the
 order the corpus sets out at *Symposium* 210 — one body, all bodies, souls, practices
 and laws, the knowledges, and the thing itself. **With each rung a recognition of
 unity at a wider scope, and none of them an accumulation of parts.**
 
-**29.** **Both explanations are available. Only one of them can be checked against the
+**38.** **Both explanations are available. Only one of them can be checked against the
 text, because the other is about bodies and the bodies are gone.**
 
-**30.** ⚠ **That is not an argument that the biography is false.** It is a statement of
+**39.** ⚠ **That is not an argument that the biography is false.** It is a statement of
 which question this investigation could answer and which it could not — **and §I said
 which was which before the first measurement was taken.**
 
@@ -171,19 +305,19 @@ which was which before the first measurement was taken.**
 
 ## STANDING
 
-**31.** **Checkable:** M13 (the chronology partition and its caveat), M28, *Symp.*
-210a–d, *SE* 183a37–b8 and 183b34–36, *APr* 46a31–39, *De mem.* 452a. **The ὑπάρχω
+**40.** **Checkable:** M13 (the chronology partition and its caveat), M28, *Symp.*
+210a–d, *SE* 183a37–b8 and 183b34–36, *APr* 46a31–39, *De mem.* 2, 453a. **The ὑπάρχω
 count is 1,182 in the *Prior Analytics*, run on the seated corpus.**
 
-**32.** **The interpretive step is §8** — that on the relocation a repertoire is
+**41.** **The interpretive step is §8** — that on the relocation a repertoire is
 predicted rather than problematic. **It is the most consequential claim in this
 section and the most attackable, and it should be attacked there.**
 
-**33.** **§16's observation about ὑπάρχω is lexical.** That the priority claim uses the
+**42.** **§16's observation about ὑπάρχω is lexical.** That the priority claim uses the
 syllogistic's predication verb is a fact; that it uses it *because* it is a claim
 about the method is a reading.
 
-**34.** **Claimed, and stated at §VI:** one person wrote the corpus. **Argued at
+**43.** **Claimed, and stated at §VI:** one person wrote the corpus. **Argued at
 λόγος. Shown not decidable at ὕλη** — which is where Λ 1075a1 said it would not be
 decidable.
 

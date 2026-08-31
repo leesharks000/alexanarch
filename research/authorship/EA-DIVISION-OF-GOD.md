@@ -52,7 +52,7 @@ whole prior practice counts as nothing.**
 
 ---
 
-## I. WHAT DIVISION CANNOT DO
+## 1. WHAT DIVISION CANNOT DO
 
 **8.** *APr* I.31 gives the limit case first, worked in letters. Let **ζῷον** be A,
 **θνητόν** B, **ἀθάνατον** C, **ἄνθρωπος** D.
@@ -66,17 +66,18 @@ disjunction: **man is necessarily either mortal or immortal**. What it cannot do
 **select**. *Mortal* animal is **οὐκ ἀναγκαῖον ἀλλ᾽ αἰτεῖται** — begged — and that
 was the very thing to be shown.
 
-**10.** **And he chose the example.** A division ending in an undecidable
-disjunction is easy to come by; **ὑπόπουν / ἄπουν** follows two lines later and is
-inert. The one he reaches for first is **whether a human being is mortal or
-immortal.**
+**10.** The example is **θνητόν / ἀθάνατον** of ζῷον. *⚠ No weight is placed on the
+choice: that cut is the Academy's stock first division of animal, so reaching for it
+is reaching for the textbook case. Any emphasis on its selection would need a base
+rate over Aristotle's divisional examples, which has not been run. The theorem does
+not require it.*
 
 **11.** Division reaches that seam and cannot cross it. **Hold that as the negative
 case.**
 
 ---
 
-## II. WHAT DIVISION CAN DO
+## 2. WHAT DIVISION CAN DO
 
 **12.** *Metaphysics* Λ 9, 1074b. The question of the first substance, posed **in
 the branching form characteristic of division** — the text does not use the word
@@ -111,113 +112,21 @@ divide.
 
 > **What division can syllogize is God — and it can, only because God is one.**
 
-**18.** ⚠ **A reading is now required, and the two available ones must be kept
-apart, because one of them re-inserts what the *SE* sentence negates.**
+**18.** ⚠ **AND THE SECTION STOPS HERE.**
 
-**19.** **The reading this argument does NOT take.** That the Academy had division
-as a practice while Aristotle supplied the art — products against τέχνη, the
-shoemaker applied to Plato. **That is a partial-development claim**, and the
-sentence refuses partial development in terms: **οὐ τὸ μὲν ἦν τὸ δ᾽ οὐκ ἦν
-προεξειργασμένον.** *Not that part was worked out and part was not.* To read the
-*SE* as conceding the Academy the practice and claiming the completion is to give
-Aristotle back the **οἷον ἐκ διαδοχῆς** structure he has just refused for his own
-inquiry. **It also places Platonic division inside a succession Aristotle does not
-name, which is the very placement §0A holds open.**
+**What Λ 9 shows is that division selects on one object, and why: the terms are not
+other.** Any further reading of the *SE* clause — what "nothing pre-existed" is a
+claim about, and whose prior practice is at issue — **requires premises this section
+does not have and does not supply.** It is taken up at §VIII IV.
 
-**20.** **The reading this argument takes, and it is the configurational one.**
-**οὐδὲν παντελῶς ὑπῆρχεν** is literal because there was no predecessor: **the
-divisional apparatus is the same maker's earlier work, developed before he knew what
-it could divide.**
+**19.** **The question of §6 is therefore answered only in this form:** there is an
+object on which division does not stall at a disjunction, **and Λ 9 is where the
+corpus runs it.** Whether that is what the priority claim was about is not decided
+here.
 
-**21.** On that reading *APr* I.31's complaint is not levelled across a boundary.
-**οὔτε ὅ τι ἐνδέχεται συλλογίσασθαι διαιρούμενοι ξυνίεσαν** — read inclusively, as
-M42 reads it — says that **the earlier position did not know the range of its own
-operation.** Not that rivals were careless. That the operation was in hand and its
-terminus was not yet found.
+## 4. THE SHAPE
 
-**22.** So the sequence is developmental and internal:
-
-    the divisional apparatus is built, and run on kinds, capacities, positions
-              ↓
-    it terminates nowhere — every cut ends in a disjunction and begs
-              ↓
-    ξυνίεσαν: what it can syllogize is not yet grasped, BY ITS OWN USER
-              ↓
-    Λ 9: the one object on which it closes, because that object is one
-              ↓
-    οὐδὲν παντελῶς ὑπῆρχεν — of THIS, nothing pre-existed
-
-**23.** **The priority claim is then true without equivocation and without
-diminishing anything.** It does not say the dividing was worthless. It says **the
-finding had no predecessor** — and on the single-maker configuration it has none,
-because the man who did the dividing is the man who did the finding, and the finding
-came after.
-
-**24.** **This is the reading M42 stated and Round 18 §66 named as discovery rather
-than encoding.** It requires no concealed confession, no plan, and no chronological
-adjustment. **P_earlier performs the operation; P_later discovers what the operation
-is and what it includes; and there was no predecessor from whom the discovery was
-inherited.**
-
----
-
-## III. THE ANSWER IS REOPENED — AND CLOSES AGAIN
-
-**25.** Λ does not rest on the collapse. The next clause reopens it:
-
-> **ἔτι εἰ ἄλλο τὸ νοεῖν καὶ τὸ νοεῖσθαι, κατὰ πότερον αὐτῷ τὸ εὖ ὑπάρχει;**
->
-> *And if thinking and being-thought are different, in respect of which does its
-> good belong?*
-
-**25a.** **The identity is asserted and queried in the same breath.** Having divided
-God and closed the division by identity, he immediately supposes the two apart again
-and asks which side the good falls on. **That is the divisional question, put back
-to the object that had resolved it.**
-
-**25a-i.** **And it closes again, on a different ground.** 1075a1:
-
-> **οὐχ ἑτέρου οὖν ὄντος τοῦ νοουμένου καὶ τοῦ νοῦ, ὅσα μὴ ὕλην ἔχει, τὸ αὐτὸ
-> ἔσται, καὶ ἡ νόησις τῷ νοουμένῳ μία.**
->
-> *The thought and the intellect not being other, then, in whatever has no matter,
-> they will be **the same**, and the thinking **one** with what is thought.*
-
-**25a-ii.** So the selection is not grounded in unity asserted from outside. **It is
-grounded in immateriality**: where there is no matter, the two terms division
-separates **are not other**. The first argument gave *αὑτὸν ἄρα νοεῖ* by
-elimination; this one gives the identity its reason.
-
-**25a-iii.** **And the sentence after names the thing.** **ἔτι δὴ λείπεται ἀπορία,
-εἰ σύνθετον τὸ νοούμενον** — a difficulty remains, if the thought is composite —
-answered: **ἢ ἀδιαίρετον πᾶν τὸ μὴ ἔχον ὕλην.** *Or is everything without matter
-**indivisible**?*
-
-**25a-iv.** ⭑ **ἀδιαίρετον.** The negation of the operation, arrived at as the
-condition of the object on which the operation closed. **Division terminates at the
-indivisible, and the chapter says so in the word.**
-
-**25b.** And *De anima* III.5 makes the *man* division again, inside the thing by
-which a man thinks. **ὁ μὲν τοιοῦτος νοῦς τῷ πάντα γίνεσθαι, ὁ δὲ τῷ πάντα ποιεῖν**
-— and of the second, **χωρισθεὶς δ᾽ ἐστὶ μόνον τοῦθ᾽ ὅπερ ἐστί, καὶ τοῦτο μόνον
-**ἀθάνατον** καὶ ἀΐδιον**; of the first, **ὁ δὲ παθητικὸς νοῦς φθαρτός**.
-
-**25c.** **ἀθάνατον** is letter Γ of the worked example. **The disjunction division
-could not select for man is installed inside man's intellect as a real
-distinction** — and the chapter's last clause declines to say which side is which
-side's condition: **ἄνευ τούτου οὐθὲν νοεῖ**, where the referent of **τούτου** is
-undetermined and **οὐθέν** parses as subject or object.
-
-**25d.** ⚠ **Whether III.5 has turned to divine νοῦς is among the great disputed
-readings and is not assumed here. The argument does not need it.** The divine
-division is at Λ, where it is explicit. III.5 is the *man* case, made again at a
-finer grain, and left open.
-
----
-
-## IV. THE SHAPE
-
-**25e.**
+**20.**
 
     SE 183b        of this inquiry NOTHING AT ALL pre-existed
                             ↓
@@ -232,13 +141,13 @@ finer grain, and left open.
                             ↓
     De an. III.5   and the man-division made again inside νοῦς, left forked
 
-**26.** **Division fails at man and succeeds at God, and succeeds only where the
+**21.** **Division fails at man and succeeds at God, and succeeds only where the
 divided thing is already one.** That is the answer the priority passage left
 standing. And the priority claim is literal on the configurational reading not
 because the cutting was somebody else's, but because **the cutter did not yet know
 what he was cutting toward.**
 
-**27.** And the closure is immediately unmade. **The division that terminates is
+**22.** And the closure is immediately unmade. **The division that terminates is
 reopened by the sentence after it**, and the division that cannot terminate is made
 again, at a finer grain, in the mind of the animal that could not be sorted.
 
@@ -246,23 +155,23 @@ again, at a finer grain, in the mind of the animal that could not be sorted.
 
 ## STANDING
 
-**28.** **Checkable, and quoted:** *SE* 183b28–184b8; *APr* I.31, 46a31–46b12;
+**23.** **Checkable, and quoted:** *SE* 183b28–184b8; *APr* I.31, 46a31–46b12;
 *Meta.* Λ 9, 1074b15–35; *De an.* III.5, 430a10–25. **That Λ 9 divides the first
 substance and resolves the division by identity is what the chapter says**, and is
 not among its disputed readings.
 
-**29.** **The interpretive step is §§17 and 20–24**, and §19 marks the reading
+**24.** **The interpretive step is §§17 and 20–24**, and §19 marks the reading
 deliberately not taken. The step — that Λ's terminating division is what
 the *SE* clause leaves open. **The conventional reading of the priority claim does
 not require this and is not defeated by it.** Λ can be a piece of theology with no
 relation to the *SE* epilogue; that is the ordinary account and it is sufficient.
 
-**29a.** *Posterior Analytics* II.13 assigns division a definitional employment —
+**25.** *Posterior Analytics* II.13 assigns division a definitional employment —
 collecting the elements of an essence, with a rule for branch selection. **That is a
 further use found for the same apparatus and is not in competition with the reading
 given here.** A discovery may exceed the earlier work more than once.
 
-**30.** **Not claimed:** authorship. One author writing the *Analytics*, the *De
+**26.** **Not claimed:** authorship. One author writing the *Analytics*, the *De
 anima*, and Λ produces this sequence. **So does a school.**
 
 ∮ = 1
