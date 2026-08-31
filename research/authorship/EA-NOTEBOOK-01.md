@@ -6013,6 +6013,31 @@ division fails, and why.**
 Polansky did not read) against MANY AND ONE v1.5. **The paper is written as one. This
 is the material for writing it as many.***
 
+## 233. ⚠ NUMBERING AUDIT — TWO GAPS, NEITHER LOST WORK
+
+*Run 2026-08-31 before the apparatus pass, on the standing suspicion that a
+sectioning jump means content went missing.*
+
+    §233          R52 ends at §232; R53 opened at §234       NUMBERING JUMP
+    §§170–175     R42 ends at §169; R43 opened at §176       NUMBERING JUMP
+    ROUNDS 1, 4   no headings in the file                    PRE-COMPACTION
+
+**Checked against every commit touching this file: no version has ever carried a
+§233 or a §§170–175.** They are jumps introduced when a round was opened at a round
+number rather than continuing the sequence. **Nothing was written and lost.**
+
+**Rounds 1 and 4 are a different case:** their content is in the file but the round
+headings are not, because the earliest rounds predate the heading convention and
+survive in the integrated prior-state summary. **Not reconstructed here.**
+
+**⚠ AND THE PRACTICE THAT CAUSED IT IS THE ONE TO FIX.** Opening a round at a
+convenient section number rather than at *last + 1* makes a gap indistinguishable
+from a loss, and this audit had to be run to tell them apart. **Continue the
+sequence; let the round heading carry the round number and the section numbers carry
+nothing but succession.**
+
+**This section occupies §233 so the sequence is contiguous from here.**
+
 ## 234. ⚠ THE STRUCTURAL FINDING
 
 **MANY AND ONE cites no secondary literature.** Nine sections, ~107,000 characters,

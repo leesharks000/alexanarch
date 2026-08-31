@@ -421,15 +421,134 @@ doctrinal — which is §IX's mechanism read from the other side.*
 
 ---
 
+---
+
+# PASS TWO — FROM THE NOTEBOOK AND THE REGISTER
+
+*Run 2026-08-31 by auditing 53 rounds and M1–M52 for named engagement the apparatus
+did not carry. Thirteen found. The largest is the paper's own precedent, which had no
+note at all.*
+
+## §IV / §IX — THE SAPPHO–LONGINUS–CATULLUS LINE
+
+**[X.1] ⭑ THE PRECEDENT HAD NO APPARATUS AND IT IS THE PAPER'S MODEL OF
+TRANSMISSION.** 22 mentions of Sappho and 23 of Catullus across the notebook and
+register, and not one bibliographic note.
+
+**The texts.** Sappho 31 = **Voigt fr. 31** (Lobel–Page 31), whose sole continuous
+witness is **[Longinus]**, *De sublimitate* 10.1–3. **Catullus 51** is the Latin
+version, in Sapphics, with the *Lesbia* name-substitution and the added **otium**
+stanza that is not in Sappho.
+
+**The authorship of *Peri Hypsous* is itself disputed** — the attribution to Cassius
+Longinus is late and contested, and the treatise is conventionally cited as
+**[Longinus]** or *pseudo-Longinus*. *This is not incidental to a paper about
+attribution: **the sole transmitter of the fragment is a text whose own author is
+unknown.***
+
+**[X.2] On the fourth stanza.** Whether Catullus 51's *otium* stanza belongs to the
+poem, and whether it translates a lost Sapphic fifth stanza or is Catullus' addition,
+is a standing question in the commentary. **The reading at Round 44 — that Longinus
+*extends* rather than cuts, and Catullus discharges the grammatical obligation the
+extension creates — is this paper's and requires the extension to be deliberate.**
+⚠ *The ordinary account is that Longinus quoted as much as served his purpose and
+stopped. That account is sufficient and the notebook records the correction as a
+reading.*
+
+**[X.3] On the paper's use of it.** §IX cites the line as the model of survival — a
+text living inside another text, addressed past its own moment. **The Homeric parallel
+[IX.4] is the large-scale form and runs the other way; Sappho is the small-scale form
+and runs this way.** *Neither is offered as evidence about the Athenian corpus.*
+
+## §VIII — THE ATTESTATION CHAIN
+
+**[X.4] On Aristoxenus.** The *Harmonics* II report of Aristotle's account of Plato's
+lecture *On the Good* is **the earliest witness to the attendance**, and the
+investigation's finding is that **Aristoxenus' own acquaintance with Aristotle is
+attested only by fr. 1 Wehrli** — a fragment of unverified transmission. ⚠ *Round 40
+originally called this good contemporary evidence and Round 41 §163 corrected it. The
+corrected form is the one the paper uses.*
+
+**[X.5] On Speusippus and Xenocrates.** The Academy's successors survive as titles.
+*They are named in §VIII 4c's enumeration and are the near case of the same loss: the
+institution's own continuators, gone, while the corpus they continued survives
+complete.*
+
+**[X.6] On Heraclides and the manufactured philosophers.** **Hicetas and Ecphantus of
+Syracuse**, argued to be characters in Heraclides of Pontus' dialogues and received by
+the doxographic tradition as historical philosophers with doctrines; and **Timaeus of
+Locri**, who acquires a biography and then a forged corpus, with some scholars holding
+that Plato used him as a mask for **Archytas**. *This is M44's evidence that the
+attribution apparatus manufactured figures it then adjudicated, and it is standard
+scholarship rather than this paper's inference.*
+
+## §I — THE SE EPILOGUE AND ITS SCOPE
+
+**[X.7] On Hitchcock, via Corcoran.** **Hitchcock** argues that *SE* 34's originality
+claim is **not for the *Prior Analytics* but for the material preceding the concluding
+chapter — the *Topics* and *SE* themselves.** *That is the strongest hostile reading
+of the priority passage: if ταύτης τῆς πραγματείας means the treatise-pair, the claim
+concerns dialectic and fallacy, and* APr *I.31's εἰρημένη μέθοδος is a different
+inquiry.* **The paper's answer is at §I: the pressure sits on περὶ δὲ τοῦ
+συλλογίζεσθαι, which is broader, and whether it stays inside the restriction is a
+philological question the paper does not settle by assertion.**
+
+**[X.8] On Hasper.** Work on the **completeness claim** at *SE* 34 is the specialist
+literature on the passage and is named as consulted-in-summary and not read.
+⚠ *Flagged: this is the closest existing treatment of §I's central text.*
+
+**[X.9] On the developmental reading.** **SEP's probable ordering** puts *Topics* and
+*SE* before the *Prior Analytics*; **Hitchcock** independently argues the fallacy
+theory predates the formal logic. *So a reader may hold that the priority claim was
+true when written and superseded by Aristotle's own later work — which dissolves the
+tension without any configurational reading.* **The paper reads the corpus
+synchronically and owes the diachronic cost.**
+
+## §VIII — THE COMMENTARY TRADITION ON I.31
+
+**[X.10] On Mueller.** The translation of **Alexander's commentary on *APr* 1.23–31**
+*provides an insightful account of Aristotle's criticism of Plato's method of
+division* and **has not been consulted**. ⚠ *It is the single most relevant unconsulted
+item for §I.*
+
+**[X.11] On Ebbesen and the Latin tradition.** **Ebbesen**'s study of the *SE*
+commentary tradition is the standard treatment of how the epilogue was read in the
+scholastic period, and **has not been consulted**. **al-Fārābī**'s abridgement of the
+*Prior Analytics* is the Arabic branch, likewise unconsulted. *Round 42 §169 names
+the Syriac and Arabic branches as the unopened part of the reception.*
+
+## §V — THE ACCUSATION
+
+**[X.12] On Polycrates.** The lost **Κατηγορία Σωκράτους** is known only from
+**Isocrates' *Busiris*** attacking it. *The two Isocratean mentions of Socrates in the
+seated corpus are both in that one work and both concern the pamphlet rather than the
+man — which is why Round 43 counts them as attesting a text and not a person.*
+
+## §VI — ON THE UNITY OF THE INTELLECT
+
+**[X.13] On Frede and the modern reconstructors.** *De anima* III.5's modern
+literature is named in the notebook and not engaged. **The paper's [VI.6] declines to
+assume the divine identification and refers the reception to the notebook;** *the
+modern analytic treatments are the branch that would have to be engaged if III.5 were
+made load-bearing, and it is not.*
+
+---
+
 ## STANDING OF THE APPARATUS
 
 **Pass one is complete: the citational labour of Socrates as Orthonym v2.2 is
 compressed and keyed.** Forty-five references, five domains.
 
-**⚠ PASS TWO IS NOT RUN.** The notebook (53 rounds) and the register (M1–M52) carry
-further engagement — much of it performed and not recorded at the time. **§IX in
-particular was written against authorship, publication and reception scholarship that
-is only partly represented here.**
+**PASS TWO IS RUN** — 53 rounds and M1–M52 audited for named engagement the apparatus
+lacked. **Thirteen found and entered at [X.1]–[X.13].** The largest was the paper's own
+precedent: **22 Sappho mentions and 23 Catullus mentions with no bibliographic note**,
+including the fact that **the sole transmitter of fr. 31 is a treatise whose own author
+is unknown.**
+
+**⚠ AND FOUR ITEMS ARE NAMED AS UNCONSULTED, not summarised as if read:** Mueller's
+Alexander [X.10], Ebbesen and al-Fārābī [X.11], Hasper on the completeness claim
+[X.8], and the CPF [VII.4]. **[X.10] and [X.8] are the two closest existing treatments
+of §I's central text.**
 
 **⚠ AND EVERY ENTRY ABOVE IS A COMPRESSION, NOT A VERIFICATION.** Editions, dates and
 page references are as carried in the Orthonym paper's reference list and **have not
