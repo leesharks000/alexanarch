@@ -9,7 +9,7 @@ orcid: 0009-0000-1599-0703
 
 # MANY AND ONE
 
-**⭑ ALL NINE SECTIONS ARE WRITTEN. Reading copy assembled at
+**⭑ ALL TEN SECTIONS ARE WRITTEN. Reading copy assembled at
 `MANY-AND-ONE-COMPLETE.md` (75,837 b). The per-section files remain canonical.**
 
 **⭑ THE APPARATUS IS AT `EA-MANY-AND-ONE-APPARATUS.md`** — notes keyed to section and
@@ -343,7 +343,33 @@ Organon — read through §IV as ξυνίεσαν against ῥᾴδιον ἰδε
 
 ---
 
-## VII. THE INSUFFICIENCY OF ὝΛΗ
+## VII. THE MACHINE
+
+*Maximal separation, and a complete apparatus filled twice.*
+
+**WRITTEN: EA-THE-MACHINE v1.0.** ⭑ **The paper's only positive measurement**, and it
+had been reduced to a corrective footnote inside the section on measurement failure.
+Restored as a section and placed before that one, so the failures are read against a
+result rather than in place of one.
+
+**Six transmission functions frozen before assignment** — encoding, substrate,
+decommissioning, withholding, recovery, verification. **Plato fills 6/6 in six
+distinct dialogues at sharpness 1.00; Aristotle 6/6 in five works at 0.83.** And the
+convergence is at the device: **the same wax analogy at T2**, with *De anima* 424a
+supplying **ἄνευ τῆς ὕλης** where the *Theaetetus* had closed the route as **ὃ ἔφαμεν
+ἀδύνατον**; **the same term at T5**, ἀνάμνησις; **the same discrimination at T6**,
+under twin sophist-titles.
+
+**Four rivals were frozen with it and none does this.** The divided line scores 6/6
+nominal with **all six slots from one passage** — sharpness 0. **Coverage alone does
+not discriminate; the sharpness term does all the work.** And the random control run
+two ways — 0/6 by what a work is *about*, 6/6 by what *appears* in it — shows the
+assignment rule is what makes the measure a measure.
+
+⚠ **A school produces this**, and the section says so at full strength. **What it
+establishes is that there is a machine to have a question about.**
+
+## VIII. THE INSUFFICIENCY OF ὝΛΗ
 
 *Fifteen instruments, every control kills, and the corpus said so at §I.*
 
@@ -419,7 +445,7 @@ that did not fire: Plato→Aristotle below the heteronymic floor.
 
 ---
 
-## VIII. THE ORDER OF THE CORPUS
+## IX. THE ORDER OF THE CORPUS
 
 *Genre and form, not chronology — and what the question actually is.*
 
@@ -477,7 +503,7 @@ at all belonged*: a premise of the method, predicated of the method.
 
 ---
 
-## IX. THE FLOOD
+## X. THE FLOOD
 
 *How a λόγος that has no matter is carried in it.*
 

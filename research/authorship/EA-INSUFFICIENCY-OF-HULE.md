@@ -23,33 +23,19 @@ result, reported in full, including the parts that came out otherwise.**
 
 ---
 
-## 0. ⚠ FIRST, A CORRECTION TO THIS SECTION'S OWN CLAIM
+## 0. THE SCOPE OF THIS SECTION'S CLAIM
 
-**An earlier form said every instrument failed. That is false, and the exception is
-the one this paper's theory predicts.**
+**§VII reported a positive.** The apparatus is complete in both corpora, the fillings
+converge at the device, and one slot is completed across the boundary. **That
+instrument read the relation between operations.**
 
-**EA-YIELD-02 read λόγος, not ὕλη, and returned a positive on both corpora at once.**
-Six transmission functions, scored at the level of the individual work:
-
-    PLATO      6/6 filled, in SIX DISTINCT DIALOGUES, sharpness 1.00
-    ARISTOTLE  6/6 filled, in FIVE WORKS
-    the same figure at T2 (the wax), the same term at T5 (ἀνάμνησις),
-    the same discrimination under twin sophist-titles at T6
-    RIVAL CONFIGURATIONS fail on the sharpness term
-
-**And the completion result beside it:** one figure, one abandonment, two completions;
-three of four slots one operation.
+**This section reports the instruments that read lexical distribution, and they
+failed.** ⚠ **So the claim is narrowed to what it can carry:** *the LEXICAL and
+DISTRIBUTIONAL instruments do not identify latent maker-count.* **Not every
+instrument — the ones addressed to the substrate.**
 
 > **The instrument that read the relation between operations found something. The
-> instruments that read lexical distribution did not.**
-
-**⚠ THE SCHOOL CAVEAT STANDS AND IS WHY THIS IS NOT DECISIVE:** a research tradition
-with a shared programme produces functional co-coverage, and 6/6 does not discriminate
-one maker from a school.
-
-**SO THIS SECTION'S CLAIM IS NARROWED TO WHAT IT CAN CARRY:** *the LEXICAL and
-DISTRIBUTIONAL instruments do not identify latent maker-count.* **Not every
-instrument. The ones addressed to the substrate.**
+> instruments that read the substrate did not.**
 
 ---
 
