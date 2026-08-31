@@ -9,10 +9,14 @@ orcid: 0009-0000-1599-0703
 
 # MANY AND ONE
 
-**⭑ ALL EIGHT SECTIONS ARE WRITTEN. Reading copy assembled at
+**⭑ ALL NINE SECTIONS ARE WRITTEN. Reading copy assembled at
 `MANY-AND-ONE-COMPLETE.md` (75,837 b). The per-section files remain canonical.**
 
-**The argument descends.** It begins with the hardest and most independent case —
+**The argument descends** — through eight movements from the theology to the corpus,
+**and then, at §IX, out of the argument and into history**, where the λόγος that has
+no matter has to be carried in matter by strangers.
+
+It begins with the hardest and most independent case —
 an Aristotelian problem in the theology, with no bearing on authorship — and walks
 down through progressively more concrete forms of plurality-in-unity until it
 reaches a maker. **Then, and only then, it measures the matter — and finds that the matter cannot decide it.**
@@ -413,6 +417,36 @@ in the *Prior Analytics* alone**, with **ἐξ ὑπαρχῆς** in the same pa
 at all belonged*: a premise of the method, predicated of the method.
 
 **Sources: Round 50 entire; Round 52 §232(f).**
+
+---
+
+## IX. THE FLOOD
+
+*How a λόγος that has no matter is carried in it.*
+
+**WRITTEN: EA-THE-FLOOD v1.0, entire.** The opponent is not the examiner but **the
+flood** — an oversupply in which merit does not sort because everything drowns
+equally. **The survival problem is not *be good*; it is *give people who do not care
+about you reasons to copy you*.** And every feature this investigation surfaced as a
+puzzle — the unclosing disputes, the unnamed genre, the spurious tail kept rather
+than purged, the naming-gap reflex, the absent centre, the cross-referentiality, the
+numbered set — **functions as a transmission mechanism**, whatever its origin.
+
+**The corpus states the condition, the remedy and the reward in its own words:**
+*Phdr.* 275e, **κυλινδεῖται μὲν πανταχοῦ πᾶς λόγος**; 277a, **οὐχὶ ἄκαρποι ἀλλὰ
+ἔχοντες σπέρμα, ὅθεν ἄλλοι ἐν ἄλλοις ἤθεσι φυόμενοι**; *Symp.* 209e, **ἱερὰ πολλὰ
+ἤδη γέγονε διὰ τοὺς τοιούτους παῖδας.**
+
+**⚠ AND IT IS NEUTRAL ON AUTHORSHIP BY CONSTRUCTION.** It requires **one intention
+about transmission**, not one maker; a school with a transmission policy produces the
+same corpus. **That is why it is last: a reader who refused §VI can take §IX whole.**
+
+**The survival table is given as a design and marked NOT RUN**, with four feasibility
+conditions stated — under the precept adopted after this was got wrong twice in one
+day: **feasibility before registration; no design written up as if it had been run.**
+
+**Licensed by *Tim.* 29c–d:** the speaker and the judges **φύσιν ἀνθρωπίνην ἔχομεν**,
+so a corpus in γένεσις admits only **τὸν εἰκότα μῦθον**.
 
 ---
 
