@@ -205,6 +205,40 @@ plurality but **unity recognised across plurality**: *πολλὴ ἄνοια μ
 to one, like a household slave. **Which is what an object-conditioned corpus with no
 style of its own is.**
 
+### And the identity §I licensed
+
+**§I established that where there is no matter, the thinking and the thought are
+τὸ αὐτό — ὅσα μὴ ὕλην ἔχει. That is a general condition, not a fact about God
+alone.**
+
+**A corpus has no matter.** The manuscripts have matter; the papyrus has matter.
+**The λόγος does not.** So the condition holds of it, and the relation this section
+has been calling *one maker, many voices* is not a relation between two terms.
+
+> **AT THE LEVEL OF λόγος, THE MAKER IS THE CORPUS, AND THE CORPUS IS ONE.**
+
+**Not a metaphor.** It is §I's theorem applied at the level §I specifies, and it is
+what the ladder's last rung is: **the place where knower and known cease to be two.**
+
+### ⚠ AND WHAT THIS DOES NOT MEAN
+
+**A person wrote this. A man, with a body, in Athens, in the fourth century.** The
+argument of this paper is that **one person wrote the corpus**, and nothing in the
+identity above dissolves, replaces, or spiritualises that claim.
+
+**The two operate at different levels and neither substitutes for the other:**
+
+    HISTORICAL   one person, embodied, wrote the corpus.
+                 A fact about a body. NOT recoverable from the text (§VII).
+
+    LOGOS-LEVEL  maker and corpus are τὸ αὐτό, because the corpus has no matter.
+                 A fact about a relation. Established at §I.
+
+**The second explains why the first cannot be measured.** It does not weaken the
+first, and it is not offered in its place. **An argument that let the identity
+replace the person would have abandoned the claim it exists to support** — and would
+be the mysticism this paper is most likely to be mistaken for.
+
 **Sources: M13; M14; M28; Round 48; Round 49 §211; Round 50 §§218–219.**
 
 ---
@@ -245,7 +279,20 @@ partition strongly — AUTHOR at 1.228 — against every conceptual partition at
 1.017–1.058. **The text is maximally legible about the distinction with no
 evidential value, and nearly illegible about every distinction §§I–VI turn on.**
 
-**⭑ THIS IS NOT A CONCESSION. IT IS THE PREDICTED RESULT.** §§I–VI establish the
+**⭑ THIS IS NOT A CONCESSION. IT IS THE PREDICTED RESULT — AND §VI SAYS WHY.**
+
+**The instruments looked for a maker BEHIND the corpus.** At the level they measure,
+there is no such thing to find: the maker and the corpus are **τὸ αὐτό** (§VI), and
+the separation the measurements were built to detect **does not obtain at that
+level.** The nulls are not evidence of a concealed unity. **They are what results
+from measuring for a difference the argument has shown is not there.**
+
+**⚠ And this does not establish the historical claim.** That one person wrote the
+corpus is a fact about a body, and §VII is the record of its not being recoverable
+from text. **The λόγος-level identity explains the failure. It does not supply the
+fact.**
+
+ §§I–VI establish the
 operation at the level of λόγος — where terms are distinguished in account and
 identical in actuality. **§VII measures ὕλη and finds the identity absent, which is
 exactly where 1075a1 says it will be absent.** The instruments are not weak. **They
