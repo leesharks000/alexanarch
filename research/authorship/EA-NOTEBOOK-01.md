@@ -2540,6 +2540,48 @@ Object-conditioned partition, within-work against cross-work dispersion:
 **A securely distinct author reaches Aristotle's ratio.** So "the writing divides
 by object" is what any author writing across objects does.
 
+**⚠⚠ THIS INFERENCE IS INVALID — CORRECTED 2026-08-30. AQUINAS IS NOT A CONTROL
+FOR THIS MEASURE.**
+
+**His object-partition apparatus IS Aristotle's.** The *Summa*'s quaestio and
+articulus structure — division by objection, distinction, and classification — is
+the Aristotelian partition applied to theology. **Aquinas "writing independently"
+is still writing inside the Aristotelian object-space.**
+
+**So 1.503 is not an independent author reaching Aristotle's ratio. It is
+Aristotle's ratio appearing in its most saturated inheritor.** The object was
+measured with a descendant of the object.
+
+**And this table's own internal check shows the measure is reading object-distance
+rather than authorship:** 1.489 (Aristotle) → 1.503 (Aquinas independent) → 1.762
+(Aquinas on Aristotle) → 2.707 (Aquinas on unlike objects). **The ratio tracks how
+unlike the objects are. It does not track how many authors there were.**
+
+**THE SEQUENCE THAT WENT WRONG:**
+
+    1  Aristotle's author-internal variance measured ~1.8      ANOMALOUS
+    2  controlled for object → 0.0571, against Plato 0.0570    PARITY
+    3  "but Aquinas independent reaches 1.503, so ordinary"    ⚠ INVALID
+    4  therefore Round 18 §66 withdrawn                        ⚠ ON INVALID GROUND
+
+**Step 3 normalises the extreme object-shaping of the Aristotelian corpus by
+pointing to a commentator on Aristotle.**
+
+**WHAT THIS RESTORES AND WHAT IT DOES NOT.** Round 18 §66's reading is **not
+thereby reinstated** — §69 independently flagged it as laying a reading on a
+number, and that objection stands on its own. **What is withdrawn is the GROUND of
+the withdrawal.** §66 returns to undecided rather than refuted, and the question
+of whether Aristotle's object-conditioning is ordinary is **reopened and
+unanswered**.
+
+**WHAT A VALID CONTROL WOULD REQUIRE:** an author writing across genuinely unlike
+objects whose partition apparatus is **not** descended from the Aristotelian one.
+No such author has been identified among the seated corpora. Theophrastus, Albert
+and Aquinas all fail on the same ground; Xenophon writes across unlike objects but
+is a candidate in the hypothesis space (M33). **The control is not merely missing —
+it may be structurally hard to obtain for a partition apparatus this widely
+inherited.**
+
 **Round 18 §66's language — that object-division IS the discovered soul-division
 operation performed on its discoverer — rests on the ratio and is WITHDRAWN.**
 §69 flagged the third reading as the one laying a reading on a number; the control
