@@ -174,25 +174,25 @@ applied to a maker.** §V is the seam.
 
 ## STANDING
 
-**28a.** ⚠ **LOCUS NOTE.** The search clause (*ἀδυνατεῖ ἀναμνησθῆναι, ζητεῖν δὲ
+**29.** ⚠ **LOCUS NOTE.** The search clause (*ἀδυνατεῖ ἀναμνησθῆναι, ζητεῖν δὲ
 δύναται καὶ εὑρίσκει*) and the definition of remembering (*τὸ ἐνεῖναι δυνάμει τὴν
 κινοῦσαν*) are both in ***De memoria* 2**, cited throughout as **453a**. **The seated
 text carries no Bekker markers**, so lineation is from the standard edition and is to
 be confirmed against the OCT before deposit. **One locus, used consistently.**
 
-**29.** **Checkable and quoted:** *Phdr.* 249b–c, 265d–266b, 275a; *De mem.* 451a,
+**30.** **Checkable and quoted:** *Phdr.* 249b–c, 265d–266b, 275a; *De mem.* 451a,
 453a, and the search passage entire. **The two οἷον-συλλογισμός constructions are at
 *APr* 46a31 and *De mem.* 453a and are given verbatim.**
 
-**30.** **Conceded:** the *Phaedrus* recollection doctrine is embedded in a myth of
+**31.** **Conceded:** the *Phaedrus* recollection doctrine is embedded in a myth of
 the soul's prenatal seeing, and the ordinary reading of **ἐκ πολλῶν εἰς ἕν** is
 epistemological — how universals are formed from perception. **That reading is
 sufficient for the passage and is not contested.**
 
-**31.** **Marked as recorded and not argued from:** §§6–8, the parallel
+**32.** **Marked as recorded and not argued from:** §§6–8, the parallel
 classification. **Marked as possibility rather than finding:** §§17–20, the order of
 grasp. **§VIII must earn it.**
 
-**32.** **Not claimed:** authorship. **§§I–IV are complete without it.**
+**33.** **Not claimed:** authorship. **§§I–IV are complete without it.**
 
 ∮ = 1

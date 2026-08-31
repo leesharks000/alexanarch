@@ -118,7 +118,8 @@ objection to one maker being many is that the maker has already been divided** �
 and divided in a way that makes him insufficient rather than plural.
 
 **16.** *Symposium* 223d compels the opposite, in the same words, and **withholds the
-argument**: *τοῦ αὐτοῦ ἀνδρὸς εἶναι κωμῳδίαν καὶ τραγῳδίαν ἐπίστασθαι ποιεῖν*, with
+argument** — *and the one who supplied the myth of the cut is the first of the two to
+fall asleep:* **πρότερον μὲν καταδαρθεῖν τὸν Ἀριστοφάνη** —: *τοῦ αὐτοῦ ἀνδρὸς εἶναι κωμῳδίαν καὶ τραγῳδίαν ἐπίστασθαι ποιεῖν*, with
 **οὐκ ἔφη μεμνῆσθαι τῶν λόγων** — the arguments not remembered — and only **τὸ
 κεφάλαιον** transmitted.
 

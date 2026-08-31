@@ -2,7 +2,7 @@
 name: many-and-one-complete
 title: "MANY AND ONE"
 designator: EA-MANY-AND-ONE-COMPLETE
-status: v1.2 COMPLETE, 2026-08-31. Seven repairs — §I loses the configurational reading to §VIII 4b; the identity is relocated from the corpus to the λόγος actualised in a reader, per Phdr. 276a; "in its place" → "alongside"; the ζῷον example loses its emphasis; one De memoria locus; Arabic numbering within sections; and the Phaedrus handbook page restored at §VIII 4a.
+status: v1.3 COMPLETE, 2026-08-31. Notebook incorporation. §VII's claim corrected — EA-YIELD-02 read λόγος and returned a positive, so the null is narrowed to lexical instruments. Added: Symp. 191d synagogeus/symbolon (§IV); Rep. 473d, NE 1165a, autepitaktike, the third absence (§V); De an. 414a, M34, Letter II, Cicero (§VI); M30/M38/M45/M39/M44 (§VII); Round 47 and the attestation audit (§VIII).
 author: Sharks, Lee
 orcid: 0009-0000-1599-0703
 ---
@@ -691,26 +691,26 @@ applied to a maker.** §V is the seam.
 
 ## STANDING
 
-**28a.** ⚠ **LOCUS NOTE.** The search clause (*ἀδυνατεῖ ἀναμνησθῆναι, ζητεῖν δὲ
+**29.** ⚠ **LOCUS NOTE.** The search clause (*ἀδυνατεῖ ἀναμνησθῆναι, ζητεῖν δὲ
 δύναται καὶ εὑρίσκει*) and the definition of remembering (*τὸ ἐνεῖναι δυνάμει τὴν
 κινοῦσαν*) are both in ***De memoria* 2**, cited throughout as **453a**. **The seated
 text carries no Bekker markers**, so lineation is from the standard edition and is to
 be confirmed against the OCT before deposit. **One locus, used consistently.**
 
-**29.** **Checkable and quoted:** *Phdr.* 249b–c, 265d–266b, 275a; *De mem.* 451a,
+**30.** **Checkable and quoted:** *Phdr.* 249b–c, 265d–266b, 275a; *De mem.* 451a,
 453a, and the search passage entire. **The two οἷον-συλλογισμός constructions are at
 *APr* 46a31 and *De mem.* 453a and are given verbatim.**
 
-**30.** **Conceded:** the *Phaedrus* recollection doctrine is embedded in a myth of
+**31.** **Conceded:** the *Phaedrus* recollection doctrine is embedded in a myth of
 the soul's prenatal seeing, and the ordinary reading of **ἐκ πολλῶν εἰς ἕν** is
 epistemological — how universals are formed from perception. **That reading is
 sufficient for the passage and is not contested.**
 
-**31.** **Marked as recorded and not argued from:** §§6–8, the parallel
+**32.** **Marked as recorded and not argued from:** §§6–8, the parallel
 classification. **Marked as possibility rather than finding:** §§17–20, the order of
 grasp. **§VIII must earn it.**
 
-**32.** **Not claimed:** authorship. **§§I–IV are complete without it.**
+**33.** **Not claimed:** authorship. **§§I–IV are complete without it.**
 
 ---
 
@@ -824,7 +824,8 @@ objection to one maker being many is that the maker has already been divided** �
 and divided in a way that makes him insufficient rather than plural.
 
 **16.** *Symposium* 223d compels the opposite, in the same words, and **withholds the
-argument**: *τοῦ αὐτοῦ ἀνδρὸς εἶναι κωμῳδίαν καὶ τραγῳδίαν ἐπίστασθαι ποιεῖν*, with
+argument** — *and the one who supplied the myth of the cut is the first of the two to
+fall asleep:* **πρότερον μὲν καταδαρθεῖν τὸν Ἀριστοφάνη** —: *τοῦ αὐτοῦ ἀνδρὸς εἶναι κωμῳδίαν καὶ τραγῳδίαν ἐπίστασθαι ποιεῖν*, with
 **οὐκ ἔφη μεμνῆσθαι τῶν λόγων** — the arguments not remembered — and only **τὸ
 κεφάλαιον** transmitted.
 
@@ -1006,41 +1007,98 @@ interpretation. **The first rung is dropped rather than carried flagged.**
 
 ---
 
+## 2a. THE NAME IS LENT OUT AND THE FACE IS NOT — M34
+
+**11.** **Socrates appears 144 times in Aristotle**, nine of them paired with
+**Callias** as the interchangeable placeholder for *any individual*.
+
+**12.** **And zero of those 144 fall within forty tokens of any of the 46 σιμ-
+tokens** in the corpus — the snub, which is Aristotle's own standing example of form
+inseparable from matter. **Callias takes that slot five times.**
+
+**13.** ⚠ **The Poisson base rate is stated first and is unremarkable: P = 0.58.**
+Absence alone shows nothing. **The Fisher test against the co-placeholder is what
+carries it: p = 0.00022.** Where Aristotle needs a face, he uses Callias. Where he
+needs a name, he uses Socrates.
+
+**14.** > **This is §V's face/name split, measured in Aristotle. The name is lent
+> out. The face is not.**
+
+## 2b. AND THE CORPUS DENIES ITS OWN AUTHOR
+
+**15.** ***Letter* II 314c:** **οὐδ᾽ ἔστιν σύγγραμμα Πλάτωνος οὐδὲν οὐδ᾽ ἔσται, τὰ
+δὲ νῦν λεγόμενα Σωκράτους ἐστὶν καλοῦ καὶ νέου γεγονότος** — *there is not and will
+not be any writing of Plato's; what are now called his are Socrates', become
+beautiful and young.*
+
+**16.** **In the corpus where the name "Plato" occurs 26 times, 23 of them in the
+Letters.** And *Letter* XIII carries its own athetesis followed by a **σύμβολον** as
+credential.
+
+**17.** **And *Phaedo* 59b: Πλάτων δὲ οἶμαι ἠσθένει** — *Plato, I think, was ill.*
+**The author is absent from the one scene his corpus most needs authenticated.**
+
+**18.** ⚠ **The Letters are of disputed authenticity and *Letter* II is among the
+most disputed. Nothing is inferred from its doctrine.** What is recorded is that the
+corpus contains a denial of its own authorship, and an author-name that appears
+almost only where the authorship is being asserted.
+
 ## 3. THE ONE MAKER AT TWO GRASPS, SAID BY THE CORPUS
 
-**11.** *SE* 183b7, on the last page, a few lines before the priority claim:
+**19.** *SE* 183b7, on the last page, a few lines before the priority claim:
 
 > **Σωκράτης ἠρώτα, ἀλλ᾽ οὐκ ἀπεκρίνετο· ὡμολόγει γὰρ οὐκ εἰδέναι.**
 >
 > *Socrates asked, but did not answer; for he acknowledged that he did not know.*
 
-**12.** **And the name is the token individual everywhere else in the Organon** —
+**20.** **And the name is the token individual everywhere else in the Organon** —
 *Cat.* 14, *De int.* 10, *Top.* 4, *APr* 2, and twice earlier in the *SE* itself
 where it means *anybody*. **Filled once, on the closing page, and filled with a
 function.**
 
-**13.** Aristotle gives the reason in the sentence before: the inquiry had to cover
+**21.** Aristotle gives the reason in the sentence before: the inquiry had to cover
 **both sides** — taking an account and giving one, **ὅπως λόγον ὑπέχοντες φυλάξομεν
 τὴν θέσιν**. **He assigns Socrates a side and takes the other.**
 
-**14.** **Read through §IV, this is the order of grasp and not of persons.** The
+**22.** **Read through §IV, this is the order of grasp and not of persons.** The
 questioner is at **ξυνίεσαν** — not grasping what the operation entails. The answerer
 is at **ῥᾴδιον ἰδεῖν**. And *De mem.* 2, 453a says exactly what stands between them:
 **ἀδυνατεῖ ἀναμνησθῆναι, ζητεῖν δὲ δύναται καὶ εὑρίσκει** — unable to recollect, able
 to search and find.
 
-**15.** **Round 18's reading, not the encoding one.** No plan, no concealment, no
+**23.** **Round 18's reading, not the encoding one.** No plan, no concealment, no
 chronological adjustment: **the earlier position did not know the range of its own
 operation, and the later found it.**
 
 ---
 
+## 3a. AND THE RECEIVED ACCOUNT CONCEDES THE CAPACITY
+
+**24.** **Cicero knew two kinds of Aristotelian writing:** *duo genera librorum sunt,
+unum **populariter scriptum** quod exoterikon appellabant, alterum **limatius** quod
+in commentariis reliquerunt.* **And limatius — more filed — is applied to the
+notebooks.**
+
+**25.** *Academica* 2.119: **veniet flumen orationis aureum fundens Aristoteles** —
+and modern readers agree this is not a description of the extant prose.
+
+**26.** **So the received account already requires one man in two registers** — the
+Platonic dialogue register and the treatise register — **and has lost the
+register-crossing half entirely**, while Plato's dialogue corpus survives complete,
+spuria included.
+
+**27.** ⚠ **NULL, stated: transmission is not parsimonious.** The exoteric works
+were lost the way most ancient literature was lost — the school copied what it used.
+**That is sufficient and requires no design.** What the null leaves is that the
+capacity this section demonstrates is **conceded by the received account in its own
+testimony.**
+
 ## 4. AND THE IDENTITY §I LICENSED
 
-**16.** §I established that where there is no matter the terms division separates are
+**28.** §I established that where there is no matter the terms division separates are
 **not other** — and the corpus says the same of itself.
 
-**17.** *Phaedrus* 276a. **And it must be read exactly, because it cuts against the
+**29.** *Phaedrus* 276a. **And it must be read exactly, because it cuts against the
 formulation an earlier version of this section used.**
 
 > ΣΩ. **ὃς μετ᾽ ἐπιστήμης γράφεται ἐν τῇ τοῦ μανθάνοντος ψυχῇ**, δυνατὸς μὲν ἀμῦναι
@@ -1051,20 +1109,20 @@ formulation an earlier version of this section used.**
 *The one written **with knowledge in the soul of the learner** … — You mean the
 **living and ensouled** word of the knower, **of which the written is an image**.*
 
-**18.** ⚠ **SO THE WRITTEN CORPUS IS THE εἴδωλον, AND THE LIVING λόγος IS IN A
+**30.** ⚠ **SO THE WRITTEN CORPUS IS THE εἴδωλον, AND THE LIVING λόγος IS IN A
 KNOWER.** An earlier form of this section said *the λόγος has no matter, therefore
 the maker is the corpus.* **That takes the corpus for the λόγος, which is the one
 thing 276a denies.** Withdrawn.
 
-**19.** **The corrected form, and it is stronger.** §IV established that a corpus is
+**31.** **The corrected form, and it is stronger.** §IV established that a corpus is
 **ὑπομνήματα** — a starting-point — and that what it holds is held **δυνάμει** until
 a search actualises it. **The λόγος is what is actualised from the corpus in a
 knower**, and 276e–277a says where it is planted: in a fitting soul, where it grows.
 
-**20.** > **AT THE LEVEL OF λόγος, THE MAKER AND WHAT THE CORPUS SAYS ARE τὸ
+**32.** > **AT THE LEVEL OF λόγος, THE MAKER AND WHAT THE CORPUS SAYS ARE τὸ
 > αὐτό — in the act of thinking it.**
 
-**21.** **Never "the maker and the corpus."** The corpus is γράμματα and has matter.
+**33.** **Never "the maker and the corpus."** The corpus is γράμματα and has matter.
 **What Λ 1075a1 states is an identity of νοῦς and νοούμενον *in νόησις*** — in the
 thinking, not in a thing. **The identity is therefore located in the reading**, which
 is where §IV's search put it and where the ladder's last rung is.
@@ -1073,7 +1131,7 @@ is where §IV's search put it and where the ladder's last rung is.
 
 ## 5. ⚠ AND WHAT THIS DOES NOT MEAN
 
-**22.** **ONE PERSON WROTE THIS.** That is the claim of this paper, and nothing
+**34.** **ONE PERSON WROTE THIS.** That is the claim of this paper, and nothing
 above dissolves, replaces, or spiritualises it.
 
 **⚠ And "person" is not here defined as "one body."** The paper does not require the
@@ -1086,7 +1144,7 @@ divisions are of ONE PERSON and not an aggregation of several.**
 the claim §V's criterion is for: **not the face, not the name, but whether the
 account is one.**
 
-**23.**
+**35.**
 
     HISTORICAL   one person wrote the corpus. NOT "one body" — the mode of
                  unity is what §§I–V examined. Not recoverable from text — §VII.
@@ -1095,7 +1153,7 @@ account is one.**
                  thinking it. A fact about a relation, located in the reading
                  — §I with §IV, and 276a's living λόγος in a learner's soul.
 
-**24.** **The second explains why the first cannot be measured. It does not supply
+**36.** **The second explains why the first cannot be measured. It does not supply
 it, and it is not offered in its place.** An argument that let the identity replace
 the person would have abandoned the claim it exists to support — **and that is the
 mysticism this section is likeliest to be mistaken for.**
@@ -1104,37 +1162,37 @@ mysticism this section is likeliest to be mistaken for.**
 
 ## 6. WHAT §VI ESTABLISHES
 
-**25.** **Two corpora demonstrate the same capacity under opposite conditions**, one
+**37.** **Two corpora demonstrate the same capacity under opposite conditions**, one
 withholding the account and one supplying it.
 
-**26.** **The order they are in is the ladder's**, and the ladder's rungs are
+**38.** **The order they are in is the ladder's**, and the ladder's rungs are
 recognitions of unity at widening scope, not accumulations of parts.
 
-**27.** **The corpus states, on its own last page, one maker at two grasps** — the
+**39.** **The corpus states, on its own last page, one maker at two grasps** — the
 questioner who did not know and the answerer who found — **and Aristotle's own
 psychology of search is what stands between them.**
 
-**28.** **And the identity holds at λόγος**, which is where §I said it would, and
+**40.** **And the identity holds at λόγος**, which is where §I said it would, and
 where §VII will find the instruments cannot reach.
 
 ---
 
 ## STANDING
 
-**29.** **Checkable and quoted:** *Symp.* 210a–d; *SE* 183a37–b8; *Phdr.* 276a. **The
+**41.** **Checkable and quoted:** *Symp.* 210a–d; *SE* 183a37–b8; *Phdr.* 276a. **The
 Organon Σωκράτ- counts are from the seated corpora.** M13, M14, M28 and R48 are in
 the register with their conditions and refutations.
 
-**30.** **Conceded:** the *SE* Socrates sentence has an entirely ordinary reading —
+**42.** **Conceded:** the *SE* Socrates sentence has an entirely ordinary reading —
 Socrates questioned and disclaimed knowledge, which is why the dialectical programme
 must also treat the answerer's role. **Nothing in §§11–15 requires more, and the
 order-of-grasp reading is §IV's possibility, not a finding.**
 
-**31.** **Marked as unequal:** §10, the rung correspondences. **Marked as the section's
+**43.** **Marked as unequal:** §10, the rung correspondences. **Marked as the section's
 honesty:** §§21–23, and it is not a hedge — it is the distinction without which the
 identity claim is false.
 
-**32.** **This section is the first to depend on measurement.** M13, M14, M28 and R48
+**44.** **This section is the first to depend on measurement.** M13, M14, M28 and R48
 are its evidence, and **§VII reports every instrument that failed**, including those
 that failed after being relied upon.
 
@@ -1602,19 +1660,65 @@ finer grain, and left open.
 ---
 
 
+## 4c. AND THERE IS NO AVAILABLE OUTSIDE FOR THIS QUESTION
+
+**29.** **The corpus constitutes the field it reviews.** Aristotle names **24 of 24**
+predecessors on the doxographic roster — at a modest rate each, sixth of ten corpora
+for density, **and alone in coverage.** *That is a catalogue, not an argument with
+contemporaries.*
+
+**30.** **And several exist nowhere else.** Against six non-cluster corpora combined:
+**Heraclitus 35 in Aristotle, 15 in Plato, 3 in Theophrastus, and ZERO outside.**
+Leucippus, founder of atomism: 20 inside, zero outside. Likewise Cratylus, Philolaus,
+Speusippus. *(The Thales row of the raw run is void — θαλ- matches θάλασσα.)*
+
+**31.** **And the channel is the same corpus.** The doxographic tradition through
+which the Presocratics are known **descends from Aristotle and Theophrastus**; Diels
+built the *Doxographi Graeci* on it.
+
+**32.** ⚠ **NULL, stated and sufficient:** a school that inherited the philosophical
+literature and wrote the first systematic history of it produces exactly this
+profile, **and Aristotle is conventionally called the first historian of
+philosophy.** And zero occurrences across six corpora of orators, historians and a
+comedian is weak evidence about existence, since none had occasion to name natural
+philosophers.
+
+**33.** **What survives the null:** for the specific question of the corpus's own
+relations, **the standard against which it would be checked reaches us through it.**
+
+## 4d. AND THE TEACHING RELATION IS NOT ATTESTED INTERNALLY
+
+**34.** **Neither corpus attests it.** Plato never names the philosopher Aristotle —
+the four occurrences are the young man of the *Parmenides*. **Aristotle never says he
+studied with Plato**; his formulae for naming him are doxographic.
+
+**35.** **The earliest witness to the attendance is the earliest witness to the
+break** — and Aristoxenus's own acquaintance with Aristotle is attested by a
+fragment of unverified transmission.
+
+**36.** **And the *On the Good* anecdote inverts under measurement.** Hearers arrive
+expecting human goods and receive mathematics — but narrative apparatus is
+**4.7–16.7× denser in Plato**, and mathematical vocabulary **2.4–10.3× denser in
+Aristotle**. **The reader who arrives wanting a story and receives number is reading
+Aristotle**, and the anecdote is told to justify Aristotle's own rule about method.
+
+**37.** ⚠ **None of this shows there was no teaching relation.** What it shows is
+that the relation is **not internally attested**, and that its external attestation
+descends through the same channel as everything else.
+
 ## 5. THE QUESTION IN ITS PROPER FORM
 
-**29.** **Not: were there two men.** That is a fact about bodies, §VII is the record
+**38.** **Not: were there two men.** That is a fact about bodies, §VII is the record
 of its not being recoverable, and this paper claims it (§VI) without being able to
 measure it.
 
-**30.** > **But: what is the order of the corpus an order OF — and what kind of "one"
+**39.** > **But: what is the order of the corpus an order OF — and what kind of "one"
 > is a person?**
 
-**31.** Numerically one? Stylistically homogeneous? Incapable of bearing contrary
+**40.** Numerically one? Stylistically homogeneous? Incapable of bearing contrary
 determinations? Necessarily one voice?
 
-**32.** **§§I–VI answered that question five times over, at five scales:**
+**41.** **§§I–VI answered that question five times over, at five scales:**
 
     GOD      one intellect     thinker and thought, not other
     LIFE     one actuality     really differentiated capacities
@@ -1622,13 +1726,13 @@ determinations? Necessarily one voice?
     MEMORY   one form          many scattered perceptions, gathered
     PERSON   one maker         many voices, or many objects
 
-**33.** **The corpus supplies the terms for the last one, and they are its own.**
+**42.** **The corpus supplies the terms for the last one, and they are its own.**
 **ταὐτόν** and **ἕτερον** — the pair the *Sophist* turns on, the ground of the
 one/many problem, and verbatim the authorship question.
 
-**34.** > ***Is this the same, or another?***
+**43.** > ***Is this the same, or another?***
 
-**35.** **And §V gave the criterion for answering it about a person:** not the face,
+**44.** **And §V gave the criterion for answering it about a person:** not the face,
 not the name, but **ἀναγνωρίζειν διὰ λόγων** — recognition through accounts. **§VII
 established that the face and the name are all the instruments can see.**
 
@@ -1636,18 +1740,18 @@ established that the face and the name are all the instruments can see.**
 
 ## 6. THE CLOSE
 
-**36.** **The received account explains the corpus's order by a biography: a young man
+**45.** **The received account explains the corpus's order by a biography: a young man
 in the Academy, a mature man in the Lyceum.**
 
-**37.** **This paper explains it by a program:** a sequence of forms, walked in the
+**46.** **This paper explains it by a program:** a sequence of forms, walked in the
 order the corpus sets out at *Symposium* 210 — one body, all bodies, souls, practices
 and laws, the knowledges, and the thing itself. **With each rung a recognition of
 unity at a wider scope, and none of them an accumulation of parts.**
 
-**38.** **Both explanations are available. Only one of them can be checked against the
+**47.** **Both explanations are available. Only one of them can be checked against the
 text, because the other is about bodies and the bodies are gone.**
 
-**39.** ⚠ **That is not an argument that the biography is false.** It is a statement of
+**48.** ⚠ **That is not an argument that the biography is false.** It is a statement of
 which question this investigation could answer and which it could not — **and §I said
 which was which before the first measurement was taken.**
 
@@ -1655,19 +1759,19 @@ which was which before the first measurement was taken.**
 
 ## STANDING
 
-**40.** **Checkable:** M13 (the chronology partition and its caveat), M28, *Symp.*
+**49.** **Checkable:** M13 (the chronology partition and its caveat), M28, *Symp.*
 210a–d, *SE* 183a37–b8 and 183b34–36, *APr* 46a31–39, *De mem.* 2, 453a. **The ὑπάρχω
 count is 1,182 in the *Prior Analytics*, run on the seated corpus.**
 
-**41.** **The interpretive step is §8** — that on the relocation a repertoire is
+**50.** **The interpretive step is §8** — that on the relocation a repertoire is
 predicted rather than problematic. **It is the most consequential claim in this
 section and the most attackable, and it should be attacked there.**
 
-**42.** **§16's observation about ὑπάρχω is lexical.** That the priority claim uses the
+**51.** **§16's observation about ὑπάρχω is lexical.** That the priority claim uses the
 syllogistic's predication verb is a fact; that it uses it *because* it is a claim
 about the method is a reading.
 
-**43.** **Claimed, and stated at §VI:** one person wrote the corpus. **Argued at
+**52.** **Claimed, and stated at §VI:** one person wrote the corpus. **Argued at
 λόγος. Shown not decidable at ὕλη** — which is where Λ 1075a1 said it would not be
 decidable.
 

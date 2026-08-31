@@ -252,19 +252,65 @@ finer grain, and left open.
 ---
 
 
+## 4c. AND THERE IS NO AVAILABLE OUTSIDE FOR THIS QUESTION
+
+**29.** **The corpus constitutes the field it reviews.** Aristotle names **24 of 24**
+predecessors on the doxographic roster — at a modest rate each, sixth of ten corpora
+for density, **and alone in coverage.** *That is a catalogue, not an argument with
+contemporaries.*
+
+**30.** **And several exist nowhere else.** Against six non-cluster corpora combined:
+**Heraclitus 35 in Aristotle, 15 in Plato, 3 in Theophrastus, and ZERO outside.**
+Leucippus, founder of atomism: 20 inside, zero outside. Likewise Cratylus, Philolaus,
+Speusippus. *(The Thales row of the raw run is void — θαλ- matches θάλασσα.)*
+
+**31.** **And the channel is the same corpus.** The doxographic tradition through
+which the Presocratics are known **descends from Aristotle and Theophrastus**; Diels
+built the *Doxographi Graeci* on it.
+
+**32.** ⚠ **NULL, stated and sufficient:** a school that inherited the philosophical
+literature and wrote the first systematic history of it produces exactly this
+profile, **and Aristotle is conventionally called the first historian of
+philosophy.** And zero occurrences across six corpora of orators, historians and a
+comedian is weak evidence about existence, since none had occasion to name natural
+philosophers.
+
+**33.** **What survives the null:** for the specific question of the corpus's own
+relations, **the standard against which it would be checked reaches us through it.**
+
+## 4d. AND THE TEACHING RELATION IS NOT ATTESTED INTERNALLY
+
+**34.** **Neither corpus attests it.** Plato never names the philosopher Aristotle —
+the four occurrences are the young man of the *Parmenides*. **Aristotle never says he
+studied with Plato**; his formulae for naming him are doxographic.
+
+**35.** **The earliest witness to the attendance is the earliest witness to the
+break** — and Aristoxenus's own acquaintance with Aristotle is attested by a
+fragment of unverified transmission.
+
+**36.** **And the *On the Good* anecdote inverts under measurement.** Hearers arrive
+expecting human goods and receive mathematics — but narrative apparatus is
+**4.7–16.7× denser in Plato**, and mathematical vocabulary **2.4–10.3× denser in
+Aristotle**. **The reader who arrives wanting a story and receives number is reading
+Aristotle**, and the anecdote is told to justify Aristotle's own rule about method.
+
+**37.** ⚠ **None of this shows there was no teaching relation.** What it shows is
+that the relation is **not internally attested**, and that its external attestation
+descends through the same channel as everything else.
+
 ## 5. THE QUESTION IN ITS PROPER FORM
 
-**29.** **Not: were there two men.** That is a fact about bodies, §VII is the record
+**38.** **Not: were there two men.** That is a fact about bodies, §VII is the record
 of its not being recoverable, and this paper claims it (§VI) without being able to
 measure it.
 
-**30.** > **But: what is the order of the corpus an order OF — and what kind of "one"
+**39.** > **But: what is the order of the corpus an order OF — and what kind of "one"
 > is a person?**
 
-**31.** Numerically one? Stylistically homogeneous? Incapable of bearing contrary
+**40.** Numerically one? Stylistically homogeneous? Incapable of bearing contrary
 determinations? Necessarily one voice?
 
-**32.** **§§I–VI answered that question five times over, at five scales:**
+**41.** **§§I–VI answered that question five times over, at five scales:**
 
     GOD      one intellect     thinker and thought, not other
     LIFE     one actuality     really differentiated capacities
@@ -272,13 +318,13 @@ determinations? Necessarily one voice?
     MEMORY   one form          many scattered perceptions, gathered
     PERSON   one maker         many voices, or many objects
 
-**33.** **The corpus supplies the terms for the last one, and they are its own.**
+**42.** **The corpus supplies the terms for the last one, and they are its own.**
 **ταὐτόν** and **ἕτερον** — the pair the *Sophist* turns on, the ground of the
 one/many problem, and verbatim the authorship question.
 
-**34.** > ***Is this the same, or another?***
+**43.** > ***Is this the same, or another?***
 
-**35.** **And §V gave the criterion for answering it about a person:** not the face,
+**44.** **And §V gave the criterion for answering it about a person:** not the face,
 not the name, but **ἀναγνωρίζειν διὰ λόγων** — recognition through accounts. **§VII
 established that the face and the name are all the instruments can see.**
 
@@ -286,18 +332,18 @@ established that the face and the name are all the instruments can see.**
 
 ## 6. THE CLOSE
 
-**36.** **The received account explains the corpus's order by a biography: a young man
+**45.** **The received account explains the corpus's order by a biography: a young man
 in the Academy, a mature man in the Lyceum.**
 
-**37.** **This paper explains it by a program:** a sequence of forms, walked in the
+**46.** **This paper explains it by a program:** a sequence of forms, walked in the
 order the corpus sets out at *Symposium* 210 — one body, all bodies, souls, practices
 and laws, the knowledges, and the thing itself. **With each rung a recognition of
 unity at a wider scope, and none of them an accumulation of parts.**
 
-**38.** **Both explanations are available. Only one of them can be checked against the
+**47.** **Both explanations are available. Only one of them can be checked against the
 text, because the other is about bodies and the bodies are gone.**
 
-**39.** ⚠ **That is not an argument that the biography is false.** It is a statement of
+**48.** ⚠ **That is not an argument that the biography is false.** It is a statement of
 which question this investigation could answer and which it could not — **and §I said
 which was which before the first measurement was taken.**
 
@@ -305,19 +351,19 @@ which was which before the first measurement was taken.**
 
 ## STANDING
 
-**40.** **Checkable:** M13 (the chronology partition and its caveat), M28, *Symp.*
+**49.** **Checkable:** M13 (the chronology partition and its caveat), M28, *Symp.*
 210a–d, *SE* 183a37–b8 and 183b34–36, *APr* 46a31–39, *De mem.* 2, 453a. **The ὑπάρχω
 count is 1,182 in the *Prior Analytics*, run on the seated corpus.**
 
-**41.** **The interpretive step is §8** — that on the relocation a repertoire is
+**50.** **The interpretive step is §8** — that on the relocation a repertoire is
 predicted rather than problematic. **It is the most consequential claim in this
 section and the most attackable, and it should be attacked there.**
 
-**42.** **§16's observation about ὑπάρχω is lexical.** That the priority claim uses the
+**51.** **§16's observation about ὑπάρχω is lexical.** That the priority claim uses the
 syllogistic's predication verb is a fact; that it uses it *because* it is a claim
 about the method is a reading.
 
-**43.** **Claimed, and stated at §VI:** one person wrote the corpus. **Argued at
+**52.** **Claimed, and stated at §VI:** one person wrote the corpus. **Argued at
 λόγος. Shown not decidable at ὕλη** — which is where Λ 1075a1 said it would not be
 decidable.
 
