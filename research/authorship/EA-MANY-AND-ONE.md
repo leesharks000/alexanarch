@@ -79,8 +79,14 @@ distinguishable, and that do not thereby become a heap of independent substances
 received **ἄνευ τῆς ὕλης**, form without matter. **The same condition as §I,
 operating one level down.**
 
-**Sources: M-series on the seal-and-wax triad; Round 5; the *De anima* material at
-Round 49 §§213–215.**
+**WRITTEN: EA-DIVISION-OF-LIFE v1.0, entire.** The formula is Aristotle's own —
+*De an.* 413b: the soul in divided plants being **ἐντελεχείᾳ μὲν μιᾶς … δυνάμει δὲ
+πλειόνων**, one in actuality and many in potentiality. And the chapter exempts one
+part: **τοῦτο μόνον ἐνδέχεται χωρίζεσθαι, καθάπερ τὸ ἀΐδιον τοῦ φθαρτοῦ** — the
+eternal/perishable seam, named at the end of the chapter that settles every other
+case.
+
+**Sources: M-series on the seal-and-wax triad; Round 5; Round 49 §§213–215.**
 
 ---
 
