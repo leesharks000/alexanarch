@@ -6005,4 +6005,206 @@ exegesis.** What is new is only that it is **division succeeding where I.31 said
 division fails, and why.**
 
 
+---
+
+# ROUND 53 — THE COMMENTARY TRADITION: WHAT THE PAPER HAS NO APPARATUS FOR
+
+*Added 2026-08-31. Reread of Socrates as Orthonym v2.2 (July 2026 — the version
+Polansky did not read) against MANY AND ONE v1.5. **The paper is written as one. This
+is the material for writing it as many.***
+
+## 234. ⚠ THE STRUCTURAL FINDING
+
+**MANY AND ONE cites no secondary literature.** Nine sections, ~107,000 characters,
+and the scholarly apparatus is: Vlasits (§III), Philoponus and Alexander (register
+§0A), Striker, Denyer (§VIII), Cicero (§VI). **That is a paper with sources and no
+interlocutors.**
+
+**The Orthonym paper had them all**: Kahn 20×, Vlastos 7×, the Socratic problem 12×,
+Burnet, Taylor, Cooper, Schleiermacher. **They dropped out in the rebuild and their
+absence is the largest gap in the paper.**
+
+---
+
+## 235. THE ORTHODOX ANTECEDENT — KAHN (1996), AND IT IS §VI's
+
+***Plato and the Socratic Dialogue: The Philosophical Use of a Literary Form.***
+
+**Kahn's position:** the dialogues are a **unified literary-philosophical project**;
+the early "Socratic" dialogues are **deliberately constructed by Plato as a
+philosophical vehicle**, not historical records; and Kahn **explicitly rejects the
+Vlastosian separation** of an early Socrates from a middle Plato. **The corpus is
+the unified work of a single author deploying a literary character.**
+
+**⭑ THIS IS THE CLOSEST EXISTING POSITION AND THE PAPER MUST SAY SO.** §VI currently
+argues that one maker produces many voices as though the claim were unprecedented.
+**Kahn argues a version of it, in print, in 1996, and is orthodox.**
+
+**And the departure is one sentence:**
+
+> **Where Kahn reads the corpus as one author (Plato) deploying a literary character
+> (Socrates), the configurational reading identifies Socrates as an authorial
+> POSITION in his own right** — not a character within a project but a position the
+> project is organised around.
+
+**GOES TO: §VI, as the antecedent, before the two demonstrations. It makes §VI's
+claim citable rather than novel, which is stronger.**
+
+---
+
+## 236. THE DEVELOPMENTAL METHOD — VLASTOS (1991), AND IT IS §VIII's
+
+**Vlastos treats the corpus as a stratified deposit**: identify which doctrines
+belong to the early Socrates and which to the middle Plato; date the strata;
+sequence them; narrate the evolution.
+
+**Three commitments are required**, and the Orthonym paper names them:
+
+    1  the voices are INDEPENDENT AUTHORIAL SOURCES
+    2  their positions can be DATED AND ORDERED
+    3  the ordering reveals DOCTRINAL DEVELOPMENT — a change of mind over time
+
+**⭑ §VIII's relocation is precisely a denial of (3) while conceding (2) in altered
+form.** The order is real; it is an order of forms and of grasp, not of opinions
+changing. **And the paper never names the method it is displacing.**
+
+**And the fugue line is the best formulation of it in either document:**
+
+> **One does not excavate a fugue for the composer's evolving opinions about the
+> subject; one hears the voices doing different work at once.**
+
+**GOES TO: §VIII, at the relocation. Kahn already rejected the Vlastosian split on
+literary grounds; the configurational reading removes the last frame in which
+doctrine-mining remains intelligible — the frame of three independent corpora — while
+leaving every dating argument and textual comparison intact.**
+
+---
+
+## 237. THE SOCRATIC PROBLEM — AND IT IS THE PAPER'S MISSING FRAME
+
+**Schleiermacher onward; canonical statements by Burnet, Taylor, Vlastos, Kahn,
+Cooper.** *Where does the historical Socrates end and the Platonic character begin?*
+**Two centuries; the contemporary consensus is that it has no clean resolution.**
+
+**And it is a family, not one problem** — the Orthonym paper distinguishes at least
+three versions, of which the historical is only the first.
+
+**⭑ THE PAPER HAS BEEN ANSWERING THIS WITHOUT NAMING IT.** §V divides a person by
+face and name and keeps λόγος as the criterion. §VI reads Socrates as a position.
+§VII shows the instruments cannot separate what the problem asks to be separated.
+**That is a reclassification of the Socratic problem as a symptom, and the paper does
+not say the words.**
+
+**GOES TO: an added section or a long note at §V. The claim is not that the problem
+is solved. It is that it appears as a symptom under a functional lens rather than a
+biographical one.**
+
+---
+
+## 238. ⭑ THE FIREWALL — AND IT ANSWERS THE OBJECTION THE PAPER CANNOT CURRENTLY MEET
+
+**The Orthonym paper's methodological rule, and MANY AND ONE has nothing equivalent:**
+
+> **Biographical identity requires EVIDENCE. Functional identity requires PATTERN.
+> These are different claim-types with different burdens of proof, and the stability
+> of everything depends on never letting the second masquerade as the first.**
+
+**And the reason it is imposed from outside:**
+
+> **A method that cannot halt its own regress is telling you what kind of method it
+> is: an instrument for revealing functional structure, not for discovering
+> identities. The moment functional analysis is permitted to make biographical
+> claims, it has no floor and consumes every adjacent name.**
+
+**⭑ THAT IS THE ANSWER TO "WHY NOT ONE GUY WRITING ALL MODERN PHILOSOPHY."** Not a
+disanalogy about printing and archives — **a statement about what the method is for
+and where it stops.** MANY AND ONE currently has no such rule and is therefore open
+to the regress on its own terms.
+
+**GOES TO: the front matter, as a stated constraint, and to §VII where the two
+claim-types are already being separated without being named.**
+
+---
+
+## 239. AND THE CANDIDATE POSITIONS ENTER UNDER THE FIREWALL
+
+**Xenophon, Aristophanes and Chaerephon** are admitted in the Orthonym paper **as
+candidates for functional positions, evaluated on pattern** — never as biographical
+claims. **And the complementarity is stated:** Aristophanes permits **comic
+deformation** — the central figure pre-deformed before the city a generation ahead of
+the trial, with the eventual defence structured as a reply to it.
+
+**⭑ MANY AND ONE dropped Xenophon and Aristophanes entirely** — they appear only as
+corpora in §VII's confinement measurement. **The maximal statement's H3/H4 are marked
+as predictions and never argued.** The firewall is what would let them enter
+honestly.
+
+**GOES TO: §VI, after the two demonstrations, under the firewall.**
+
+---
+
+## 240. AND THE ORTHONYM PAPER'S OWN SELF-LIMITS ARE BETTER THAN THE PAPER'S
+
+**It states what it does not claim, in a list**, and three of the items are ones
+MANY AND ONE needs:
+
+    · it does not claim Aristotle or Plato understood himself as a heteronym;
+      the term is used ANALYTICALLY, not as a claim about ancient self-description
+    · it does not claim philological dating, historical context, doctrinal
+      difference or textual criticism is irrelevant or superseded
+    · it does not claim Pessoa-style heteronymy existed as a named or
+      institutionalised practice in classical Athens
+
+**And the tiering:**
+
+    PRIMARY     (high confidence)   the configuration can be FUNCTIONALLY MODELED
+                                    as a distributed authorial project
+    SECONDARY   (medium)            the Socratic problem appears as a symptom
+    REFLEXIVE   (heuristic only)    Pessoa and Kierkegaard make it THINKABLE;
+                                    they do not prove its application
+
+**GOES TO: the front matter. MANY AND ONE claims one person at §VI and tiers
+nothing.**
+
+---
+
+## 241. AND THE READER'S OWN MARGINALIA ARE IN THE FILE
+
+**The PDF carries Polansky's comments in capitals, inline.** They are data about
+reception, not about the argument, and three of them name real gaps:
+
+    "THE PROJECT OF THIS PAPER SEEMS TO ADD NOTHING TO THE LITERARY
+     CONSTRUCTION, OR TRY EXPLAINING WHAT IT ADDS"
+      → §235's departure sentence is the answer and was not made prominent
+
+    "MIGHT THE SAME APPLY TO THE FIVE BOOKS OF MOSES?" and
+    "HOW ABOUT THAT SOCRATES… WERE ALSO THE WRITERS OF THE BIBLE AND THE
+     ILIAD…?  OR ALL OF THESE ARE ONE BIG PROJECT?"
+      → §238's firewall is the answer and was not stated where he would hit it
+
+    "HYPOTHESIS: THE MOON IS GREEN CHEESE. HOLD IT OPEN, NOTHING MORE IS
+     REQUIRED OR LESS."
+      → the response to "hold the question open" being read as a licence
+        rather than a method. The firewall again.
+
+**RECORDED AS RECEPTION.** *He answered the abstract and the throat-clearing. Every
+objection he raises is answered later in the same document, which is a fact about
+where the answers were placed.*
+
+---
+
+## 242. WHERE EACH GOES
+
+    KAHN, and the departure sentence              §VI, as the antecedent
+    VLASTOS, the three commitments, the fugue     §VIII, at the relocation
+    THE SOCRATIC PROBLEM as symptom               §V, long note or new section
+    THE FIREWALL                                  front matter + §VII
+    XENOPHON / ARISTOPHANES under firewall        §VI, after the demonstrations
+    THE TIERED CLAIM STRUCTURE                    front matter
+    THE NON-CLAIMS LIST                           front matter
+
+**None of this is new research. All of it exists, in a paper written before the
+architecture, and was lost when the architecture replaced it.**
+
+
 ∮ = 1
