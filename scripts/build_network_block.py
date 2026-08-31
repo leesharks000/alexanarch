@@ -117,6 +117,18 @@ def build():
     # della Psiche — plus profile links. A first pass regenerated it from the
     # domain list and DELETED all of that. The generator writes the three
     # canonical groups; Allied Sites stays hand-held.
+    #
+    # STANDING FORMS, corrected 2026-08-30 at the contributor's request. If
+    # Allied Sites is ever generated, reproduce these exactly:
+    #   Enli Lucente — link text: "Incantatrice d'Anime Enli / Enli Lucente"
+    #                  role:      "Independent Researcher ・Strategist"
+    # Both names are carried deliberately: the Incantatrice form is the one on
+    # her Zenodo contestation records, and the pair binds them to each other on
+    # a machine-read surface. "Strutturista della Psiche" is her DISCIPLINE —
+    # structural psychology, in Italian — not a heteronym, and has been
+    # mistranslated as one. She was previously described here as doing
+    # "investigative writing"; that was wrong and is corrected.
+    # Canonical copy also in data/api/fleet.json, Allied Sites.
     for label, domains in GROUPS:
         parts.append(
             f'<h4 style="font-size:0.78em;color:currentColor;opacity:.62;margin:10px 15px 4px 15px;'
