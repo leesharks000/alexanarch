@@ -1,22 +1,41 @@
 ---
 name: many-and-one-maximal
 title: "MANY AND ONE — the maximal statement"
-status: DRAFT, 2026-08-30. The thesis at full strength, grounded in the close reading rather than in the distributional nulls. Supersedes the six-station architecture's framing, not its stations.
+status: FROZEN 2026-08-30 after correction. NOT A PAPER PLAN. This document knows the answer; MANY AND ONE must not say it until the texts have made it necessary. Its value is that it holds the full interpretive pressure, including claims that must still be demoted, earned, or killed — each now marked. Do not polish this into the paper. The reader never gets the map.
 author: Sharks, Lee
 orcid: 0009-0000-1599-0703
 ---
 
-# MANY AND ONE
+# MANY AND ONE — THE MAXIMAL STATEMENT
+
+> **⚠ THIS IS NOT THE PAPER AND MUST NOT BECOME IT.**
+>
+> **MAXIMAL STATEMENT** — knows the answer, states it, marks what is unearned.
+> **MANY AND ONE** — does not say it until the texts have made it necessary.
+>
+> This document is the map of where the twelve stations are secretly going.
+> **The reader should never get the map.**
 
 ## The claim
 
 **One hand wrote Plato and Socrates, and probably Xenophon and Aristophanes.**
 
 Not: the received account may be questionable. Not: heteronymy is compatible with
-the evidence. **That one maker produced the philosophical world of fourth-century
-Athens and its opposition** — the dialogues, the treatises, the comic attack, and
-the sober memoir — and that the surviving evidentiary base is that maker's
-construction, not a residue of a lost debate.
+the evidence.
+
+**⚠ AND THE FOUR TERMS ARE NOT EQUALLY EARNED. Stated as four claims, because this
+document must not let its own rhetoric conceal which is which:**
+
+    H1  Aristotle is the maker of the Platonic corpus       HAS EVIDENCE
+    H2  Socrates is a constructed position within it        ACQUIRING ARCHITECTURE
+    H3  Xenophon belongs to the construction                PREDICTION
+    H4  Aristophanes belongs to the construction            PREDICTION
+
+**H1 is what §§IV–V argue. H2 is what §§III and VI are building toward. H3 and H4
+are what the model predicts and this document does not argue.** They are stated
+because a maximal statement should say what the full model entails; they are marked
+because stating them as though argued would be the failure this whole investigation
+has been correcting.
 
 Everything below states what supports this, what does not, and what would.
 
@@ -24,8 +43,16 @@ Everything below states what supports this, what does not, and what would.
 
 # I. THE TECHNOLOGY: THE DESIGNED INCOMPLETION
 
-The argument begins with a poem, because the operation is legible there at a scale
-one reader can hold.
+**⚠ PLACEMENT WARNING. In this document the mechanism comes first because it is
+legible at a scale one reader can hold. IN THE PAPER IT MUST COME LAST.**
+
+Opening on Sappho asks the reader to accept an intentional hanging-line
+transmission theory *before Athens has spoken*, and makes the Athenian case appear
+to depend on a chain it does not depend on. **The technology should emerge
+immanently from Socrates → Plato → Aristotle, and Sappho should return afterwards
+as a comparative instance of an operation already found in the target corpus.**
+
+    Sappho must CORROBORATE the machine. It must not AUTHORIZE it.
 
 ## The hanging line is originary
 
@@ -84,9 +111,10 @@ that technology at corpus scale.**
 
 # II. THE AUTHORIAL ECONOMY: WHAT A NAME DID
 
-The received account requires that "Plato" and "Aristotle" name two men whose
-separate existence is independently established. The economy in which those names
-were fixed did not work that way.
+*⚠ A stronger earlier formulation — that the received account REQUIRES independent
+establishment of two separate existences — is withdrawn. Historical identity is
+established cumulatively and does not require an autograph.* What follows concerns
+**the provenance of the evidentiary streams**, not a demand they cannot meet.
 
 ## Attribution was adjudicated by fit with an already-constituted corpus
 
@@ -120,10 +148,15 @@ The pseudo-Pythagorean authors gave their writings authenticity through an
 **artificial Doric dialect** and locally appropriate examples. Constructed
 stylistic markers, chosen to authenticate.
 
-**Consequence for the received account:** its prior and its evidence are not
-independent. The succession-lists, the corpus boundaries, and the biographical
-distinctions all issue from one apparatus, and that apparatus is downstream of the
-corpus it adjudicates.
+**Consequence, stated at the strength the audit supports:** the prior and the
+evidence may not be independent, and the degree of dependence is a source-critical
+question that **has not yet been answered**.
+
+*⚠ "The succession-lists, the corpus boundaries, and the biographical distinctions
+all issue from one apparatus" is conceptual grouping asserted as fact. **It
+requires an actual source genealogy** — which stream descends from which, and where
+they genuinely diverge. That audit is unrun, and the result should not be spent
+before it is done.*
 
 ---
 
@@ -161,9 +194,14 @@ coinage, and identifies the commonest form as the one that works through names.*
     ψευδεπίγραφος   ZERO in every seated corpus
     προσωπεῖον      ZERO in Plato and Aristotle
 
-**The word for a falsely-attributed writing does not occur.** The word for a mask
-does not occur. **The corpus that distinguishes its own writings from forgery, and
-shares forgery's formal features, has no term for either.**
+**The word for a falsely-attributed writing does not occur. The word for a mask
+does not occur.**
+
+*⚠ Zero occurrence is a lexical fact and not a conceptual one. The corpus plainly
+has concepts of false attribution and of personation — it discusses both at length.
+What the census shows is that it does not use THESE terms, in a space where it uses
+εἴδωλον, μίμημα, πλάσμα and ὑποκριτής heavily. That is worth explaining and does
+not by itself establish an absence of the concept.*
 
 ## And legitimacy is litigated without blood
 
@@ -171,9 +209,13 @@ shares forgery's formal features, has no term for either.**
 ἐγγύη 91, εἰσάγω 45, φράτηρ 35** — witnessing, pledging, introduction, phratry
 enrolment. **Zero blood-vocabulary.**
 
-**Legitimacy is a matter of standing conferred by acknowledgment, not of paternity
-discovered.** Which is the frame the corpus uses for its own writings — and the
-frame in which a constructed authorial position is not a forgery but a filiation.
+**INTERPRETATION, marked as such:** legitimacy here is established by acknowledgment
+rather than demonstrated by descent — the frame in which a constructed authorial
+position would be a filiation rather than a forgery.
+
+*⚠ What the measurement shows is that Isaeus litigates status through LEGAL PROOF
+vocabulary. It does not show that biological filiation was irrelevant to the
+question, only that it is not how the question is argued in court.*
 
 ## Unification
 
@@ -201,16 +243,24 @@ syllogism* — and **not retrieval**: *οὔτε μνήμης ἐστὶν ἀν
 **λαβέσθαι ἀρχῆς**, and — decisively — *ἀδυνατεῖ ἀναμνησθῆναι, **ζητεῖν δὲ δύναται
 καὶ εὑρίσκει***: one may fail to recollect and **still search and find**.
 
-**A doctrine about recovering what was never possessed.** Which is what a reader
-of a corpus does and precisely not what a rememberer does.
+*⚠ AN EARLIER FORMULATION — "a doctrine about recovering what was never
+possessed" — IS WITHDRAWN. Aristotle can describe searching and finding where
+recollection fails without thereby defining recollection as recovery of the
+never-possessed. What the passage establishes is narrower: **recollection is not
+retrieval, and search can succeed where recollection does not.***
 
 **And the conclusion of the recollective syllogism is an identity**: *συλλογίζεται
 ὁ ἀναμιμνησκόμενος* — **ὅτι πρότερον εἶδεν ἢ ἤκουσεν**. Not a fact about the
 world. **A fact about who had the experience.**
 
-> **Correct application of recollection takes the fragmented and resolves it as one
-> person.** κερματισμός is the fragmentation; ἀνάμνησις is the gathering; and the
-> gathering terminates in a single seer.
+> **INTERPRETATION AT FULL PRESSURE, marked:** correct application of recollection
+> takes the fragmented and resolves it as one person. κερματισμός is the
+> fragmentation; ἀνάμνησις is the gathering; and the gathering terminates in a
+> single seer.
+>
+> *This is a reading of the configuration, not what the De memoria passage
+> establishes. It belongs to the maximal run and must be demoted, earned, or killed
+> before it enters the paper.*
 
 ---
 
@@ -292,8 +342,15 @@ The figure — **δακτύλιος, κηρός, σφραγ-** — occurs in exa
 **No cross-reference. No announcement.** A procedure attempted and arrested in one
 corpus; the machinery retained and the absent operation supplied in another.
 
-**This is Section I's technology at corpus scale**: a socket opened with a
-specified requirement, and discharged.
+**What is established:** the same distinctive image occurs in exactly three works;
+one closes a route as impossible; another supplies the missing element without
+cross-reference.
+
+*⚠ "Therefore a specified socket discharged" is ONE INFERENTIAL STEP FURTHER, and
+the step requires the sequence-and-transformation relation to be calibrated, which
+it is not (Round 44 §185: the instrument lacks terms for socket-discharged and
+socket-opened). Until then this stands as **candidate execution-level
+complementarity**, which is formidable enough without the extra step.*
 
 ## And the discovery reading needs no plan
 
@@ -309,10 +366,26 @@ priority claim becomes literal.
 
 ---
 
-# VI. THE FIELD: ONLY EXTANT ORIGINALS COUNT
+# VI. THE FIELD: PROVENANCE WEIGHTING, NOT EXCLUSION
 
-If designed incompletion is the technology, then **"lost" is a form, and only what
-survives as extant original may be counted as evidence.**
+**⚠ AN EARLIER VERSION OF THIS SECTION ADOPTED THE RULE "ONLY EXTANT ORIGINALS
+COUNT." THAT RULE IS WRONG AND IS WITHDRAWN.**
+
+It would disqualify most of this argument's own evidence — Philoponus and Alexander
+on *APr* I.31, Diogenes' catalogues, Athenaeus on the *Choice of Heracles*, the
+whole commentary tradition. **We cannot demand that the received history reason
+only from extant originals while reasoning ourselves from testimonia.** And "lost
+is a form" is poetry where the actual claim is available as argument.
+
+**The correct principle:**
+
+> **Every witness counts. No witness counts as more independent than its provenance
+> permits.**
+
+**Which yields the point that was wanted anyway, in a defensible form: many
+apparently independent fourth-century voices reach us only through the same later
+evidentiary basin.** That is a source-critical fact about provenance dependence,
+and it is checkable.
 
 ## The genre survives as two authors, both in the cluster
 
@@ -382,8 +455,24 @@ independently attested simultaneous physical activity; autograph evidence;
 documentary biography not descended from the corpus. **This is the received
 account's real advantage and it is conceded without argument.**
 
-**A recovered original of any lost Socratic author** — Antisthenes, Aeschines,
-Phaedo — sufficient to establish an independent voice.
+**⚠ AND ONE FALSIFIER PREVIOUSLY LISTED HERE IS WITHDRAWN, BECAUSE IT CONTRADICTS
+THIS INVESTIGATION'S OWN CENTRAL RESULT.**
+
+An earlier version listed *a recovered original of Antisthenes, Aeschines or Phaedo
+sufficient to establish an independent voice*. **That is not a falsifier.** M48 and
+M50 establish:
+
+    distinct textual voice  ⇏  distinct maker
+
+A recovered Aeschines could be radically unlike Plato and still, under the
+hypothesis, be **another constructed position**. Listing it as a falsifier hands a
+critic this investigation's own result to use against its falsification section.
+
+**What would hurt the thesis is INDEPENDENT EVIDENCE OF THE MAKER, not another
+voice:** securely dated material preceding Aristotle's possible activity;
+documentary evidence placing distinct persons simultaneously in independent
+contexts; an autograph; a securely contextualised inscription. **Evidence about
+bodies, not about styles.**
 
 **A determination that *περὶ τοῦ συλλογίζεσθαι* at *SE* 184b is governed by the
 dialectical programme**, argued rather than assumed, would dissolve M40's
@@ -445,5 +534,16 @@ making the argument it accuses others of.
 **On the errors.** Every withdrawn claim in this argument's development is recorded
 at the point of the claim it withdrew, in EA-NOTEBOOK-01. **The corrections are
 part of the evidence.**
+
+**On this document's own status.** Ten corrections were applied to it at freezing,
+each marked in place: the claim stratified into H1–H4 with H3/H4 marked as
+predictions; Sappho demoted from authorizing to corroborating; the lexical zeros
+distinguished from conceptual absence; the Isaeus reading marked as interpretation;
+"recovering what was never possessed" withdrawn; the recollection-resolves-into-a-
+person reading marked as maximal-run; the single-apparatus claim reduced to an
+unrun source genealogy; the seal-and-wax reduced to candidate execution-level
+complementarity; "only extant originals count" replaced by provenance weighting;
+and a falsifier withdrawn for contradicting M48/M50. **The document is more useful
+frozen with those marks than polished without them.**
 
 ∮ = 1
