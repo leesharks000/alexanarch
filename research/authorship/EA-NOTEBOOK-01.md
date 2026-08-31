@@ -4641,4 +4641,167 @@ abridgement of the *Prior Analytics*; the scholastic commentators; Ebbesen's stu
 of the *SE* commentary tradition.
 
 
+---
+
+# ROUND 43 — THERE IS NO OUTSIDE: THE ATTESTATION OF SOCRATES IS CONFINED TO THE CLUSTER
+
+*Added 2026-08-30. The thesis restated at full strength — that one hand wrote Plato,
+Socrates, and probably Xenophon and Aristophanes — and the first measurement taken
+against it rather than against a hedged version of it.*
+
+## 176. THE FORM WAS DEFORMING THE THOUGHT
+
+**Round 30's §119 and the six-station architecture set the target as: destroy
+master-student's status as UNQUESTIONABLY better.** I called that a lower claim and
+a larger accomplishment.
+
+**It was venue-thinking dressed as epistemics.** A paper organised around that
+question never states its thesis, and a reader finishes it without encountering
+what the author believes. **That is a different dishonesty from overclaiming, not
+an absence of one.**
+
+**The claim is: one hand wrote Plato and Socrates, and probably Xenophon and
+Aristophanes.** State it, then be exact about what supports it, what does not, and
+what would.
+
+**And the object had already said so.** M33's candidate cluster, derived from
+measurement before any of the architecture: **{Plato, Aristotle, Aristophanes,
+Xenophon}.** Forty rounds then went into master-student discrimination calibrated
+against Pessoa — **the wrong calibration**, because a heteronymic system
+distributes one maker across positions *within a declared practice*, and this claim
+is that one hand wrote a philosophical world **and its opposition**: the dialogues,
+the treatises, the comic attack, and the sober memoir.
+
+## 177. EVERY SURVIVING WITNESS TO SOCRATES
+
+    corpus          Σωκρατ-   rate/10k
+    plato              1595      34.65   ← cluster
+    aristophanes        148      17.69   ← cluster
+    xenophon            443      17.59   ← cluster
+    aristotle           144       1.89   ← cluster
+    ─────────────────────────────────────
+    demosthenes           7       0.28
+    isocrates             2       0.19
+    thucydides            1       0.08
+    theophrastus          1       0.06
+
+**Eleven occurrences outside the four. Read individually, seven are different
+men:**
+
+    Thucydides    Σωκράτης ὁ Ἀντιγένους — a general, son of Antigenes
+    Demosthenes   Σωκράτης in Oreus — a politician working for Philip
+    Demosthenes   Σιμύκᾳ καὶ Σωκράτει — actors, third-rate tragedians
+    Demosthenes   Σωκράτης ὁ τραπεζίτης — the banker
+    Demosthenes   ἐπὶ Σωκρατίδου ἄρχοντος ×3 — Socratides, a different name
+
+**Two are references to a text, not a man.** Both Isocrates mentions are in **one
+work, the *Busiris***, and both are the same move: attacking Polycrates for having
+written a *Σωκράτους κατηγορία*. **That attests a lost pamphlet and a rhetorical
+controversy.**
+
+**One is inside the transmission.** Theophrastus — voided as a control at M36 for
+exactly this reason — and the mention is proverbial: *οἷς Σωκράτης καὶ
+Ἐπαμεινώνδας*.
+
+## 178. AND THE LAST WITNESS COLLAPSES INTO THE CLUSTER
+
+**The single remaining mention of the philosopher outside the four is Demosthenes
+61, the *Erotic Essay*.** It is spurious by near-unanimous consensus, and the
+scholarship on its authorship is the finding:
+
+> **Blass**: it belongs to *a member of a school of Isocrates*, and the author
+> *gives evidence of being familiar with the **Phaedrus***.
+> **Worthington**: its content and style are *the most removed from Demosthenes'
+> other writings*, and it is *influenced by both **Plato** and Isocrates*.
+
+**The one line of independent Socrates-attestation outside the cluster is in a
+forgery by an unknown author who was demonstrably reading Plato.**
+
+## 179. THE RESULT
+
+> **The independent attestation of Socrates outside {Plato, Aristotle, Xenophon,
+> Aristophanes} is: a lost pamphlet known only from an attack on it, one proverb
+> in a writer inside the transmission, and one line in a forgery whose author was
+> reading the *Phaedrus*.**
+>
+> **Everything else bearing the name is a general, a banker, an actor, or an
+> archon.**
+
+**This is not a caution about controls. It is the claim.** M44 established that the
+adjudication apparatus is downstream of the corpus. **This establishes that the
+WITNESS apparatus is too.**
+
+**And it reframes the Chaerephon problem from a methodological hazard into the
+thesis's central prediction: there is no external attestation because there was
+never an outside.**
+
+## 180. WHAT THIS DOES AND DOES NOT ESTABLISH
+
+**DOES:** that no independent contemporary witness to Socrates survives outside the
+four corpora — measured, per occurrence, with every out-of-cluster instance read
+and classified.
+
+**DOES NOT:** that the four are one hand. **Confinement of attestation is what a
+single-maker configuration predicts, and it is also what ordinary transmission
+loss produces** — Socrates was a subject for the Socratic writers, and the genre's
+survivors are the genre's survivors.
+
+**The discriminating question is therefore not whether attestation is confined —
+it is — but whether the confinement is DEEPER than genre explains.** Testable:
+other figures who were subjects of a genre (Gorgias, Protagoras, Alcibiades)
+should show comparable confinement if genre is the explanation, and should show
+LESS if the Socrates case is special.
+
+**That test is runnable on the seated corpora and is not yet run.**
+
+## 181. ⚠ THE TEST RUN — AND IT GOES AGAINST §179
+
+Sixteen corpora, ten figures, confinement to the cluster measured as the share of
+all occurrences falling inside {Plato, Aristotle, Xenophon, Aristophanes}:
+
+    figure          in-cluster   outside   % inside   outside corpora
+    Protagoras             442         1     99.8%      1 of 12
+    Socrates             2,330        12     99.5%      5 of 12
+    Gorgias                513         5     99.0%      3 of 12
+    Prodicus                67         1     98.5%      1 of 12
+    Hippias                529        66     88.9%      8 of 12
+    Anaxagoras              93        18     83.8%      3 of 12
+    ──────────────────────────────────────────────────────────────
+    Cleon                  195       107     64.6%      6 of 12
+    Pericles                94        53     63.9%      7 of 12
+    Alcibiades             198       153     56.4%      8 of 12
+    Themistocles            31        91     25.4%      9 of 12
+
+**The split is by KIND OF FIGURE, not by Socrates.** Sophists cluster at 98–100%;
+politicians and generals at 25–65%. **And Protagoras is MORE confined than
+Socrates** — 442 occurrences inside, one outside.
+
+**Nobody holds that Protagoras was constructed.** So confinement of attestation is
+what being a subject of philosophical dialogue produces, and Socrates' 99.5% is
+**unremarkable within his class**.
+
+**§179's inference is therefore withdrawn.** *There is no outside* remains true as
+a description of the Socratic evidence and is **not** evidence for single
+authorship, because the same description holds of a figure the thesis does not
+claim.
+
+**WHAT SURVIVES §177–178, undamaged:** the out-of-cluster instances are, on
+reading, mostly different men — a general, a banker, actors, an archon; the
+Isocratean pair attests a lost pamphlet rather than a person; Theophrastus is
+inside the transmission; and the single remaining line sits in a forgery whose
+author was reading the *Phaedrus*. **Those are facts about the record and they
+stand.** What does not stand is the inference drawn from them.
+
+**AND THE TEST NAMES A BETTER QUESTION.** Socrates is not distinguished from
+Protagoras by confinement. **He is distinguished by VOLUME** — 2,330 occurrences
+against 442 — and by being the only member of his class who is the *speaking
+position* of one corpus, the *silent example* of another, the *target* of a third,
+and the *reported master* of a fourth. **Whether a figure occupying four distinct
+functional roles across four corpora is ordinary in this class is a different
+measurement, and it is the one the thesis actually needs.**
+
+**Recorded within the round that proposed the test. The pillar was stated at full
+strength, tested immediately, and did not hold in the form stated.**
+
+
 ∮ = 1
