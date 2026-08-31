@@ -5483,4 +5483,136 @@ rather than the operation, in a space where the word was selected because the
 argument needed it.
 
 
+---
+
+# ROUND 49 — THE TWO QUESTIONS: CAN WORDS BE MADE A PERSON, AND CAN A PERSON BE MADE WORDS
+
+*Added 2026-08-30. The synthesis. Two corpora demonstrating one capacity under
+opposite conditions, and the question each asks that the other answers.*
+
+## 211. THE TWO DEMONSTRATIONS, FROM THE MEASUREMENTS ALREADY ON FILE
+
+**PLATO: many voices, one maker, NO RECOVERABLE RULE.**
+
+    M14   56 speakers, 519,743 spoken words
+    M13   the strongest partition in the corpus is CHRONOLOGY (1.442, Z +6.92),
+          not speaker (—) and not form (1.225) — what varies most is WHERE ALONG
+          A SEQUENCE, not WHO IS TALKING
+    R48   within Plato the conceptual partitions collapse toward noise:
+          SAME vs OTHER 1.007 at Z +1.5
+
+**Everything varies and none of the variation resolves into a principle.** It is
+all Plato, and the corpus does not say what makes it so.
+
+**ARISTOTLE: many objects, one maker, AND THE RULE IS VISIBLE.**
+
+    M28   hold the object constant and the anomaly disappears — within-domain
+          0.0571 against Plato's total 0.0570
+          ethics 0.0226 (tighter than 99.5% of multi-author pools) …
+          logic 0.0942 — ordered by the internal object-space of each domain
+
+**The treatise takes the form of what it treats, and the ordering is legible domain
+by domain.**
+
+> **Plato shows that one maker can be many voices, and withholds the account of
+> how.**
+> **Aristotle shows that one maker can be many objects, and supplies the account.**
+
+## 212. AND THIS EXPLAINS ROUND 48'S FACTOR OF FOUR
+
+R48 found the declared partition at **1.228** against every conceptual partition at
+**1.017–1.058**, and read it as "the surface encodes only the thing that proves
+nothing."
+
+**The configuration predicts exactly that.** If the Platonic side's variation is
+unruled and the Aristotelian side's is ruled by object, then a partition test run
+across both **can only recover the seam between them** — the one line both sides
+make legible. Every conceptual partition is unruled on one side and object-indexed
+on the other, so it averages toward nothing.
+
+**The measurement's null is a consequence of the configuration, not a defeat by
+it.**
+
+## 213. THE QUESTION SOCRATES ASKS AND DOES NOT ANSWER
+
+***Phaedrus* 276a**, of the word written in the soul of the learner:
+
+> ΦΑΙ. τὸν τοῦ εἰδότος λόγον λέγεις **ζῶντα καὶ ἔμψυχον**, οὗ ὁ γεγραμμένος
+> **εἴδωλον** ἄν τι λέγοιτο δικαίως.
+> ΣΩ. **παντάπασι μὲν οὖν.**
+
+*You mean the **living and ensouled** word of the knower, of which the written would
+justly be called an **image**. — **Entirely so.***
+
+**The question: can words be made into a person who lives?** The dialogue's answer
+is no — the written is *εἴδωλον*, unable to defend itself, unable to choose its
+hearers (275e).
+
+**AND SOCRATES IS A WRITTEN λόγος THAT LIVES.** He wrote nothing (M49). He survives
+only as words. He is the most durable person in the Western record and he has no
+body in it.
+
+**The corpus that denies the possibility is the corpus that performs it.** The
+denial and the counterexample are the same object.
+
+## 214. AND THE INVERSE, WHICH ARISTOTLE ANSWERS FLATLY
+
+***De anima* 414a**:
+
+> ἡ ψυχὴ δὲ τοῦτο ᾧ ζῶμεν καὶ αἰσθανόμεθα καὶ διανοούμεθα πρώτως, **ὥστε λόγος τις
+> ἂν εἴη καὶ εἶδος**, ἀλλ᾽ οὐχ ὕλη καὶ τὸ ὑποκείμενον.
+
+*The soul is that by which primarily we live and perceive and think — **so it would
+be a kind of account and form**, not matter and substrate.*
+
+**The soul IS a λόγος.** Not like one, not represented by one.
+
+***De anima* 403a**, the condition:
+
+> εἰ μὲν οὖν ἐστί τι τῶν τῆς ψυχῆς ἔργων ἢ παθημάτων ἴδιον, **ἐνδέχοιτ᾽ ἂν αὐτὴν
+> χωρίζεσθαι**
+
+*If there is anything proper to the soul's works or affections, **it could be
+separated**.*
+
+> **Socrates asks whether words can be made a person who lives, denies it, and is
+> the counterexample.**
+> **Aristotle answers the inverse — a person already IS an account — and states the
+> condition under which the account separates from the body.**
+
+## 215. AND THE SEAL IS THIS OPERATION AT ITS ORIGIN
+
+The three-work figure of M-series and Round 5 reads differently now:
+
+    Theaetetus 191c   the wax, and the route closed:  ὃ ἔφαμεν ἀδύνατον
+    De anima 424a     the same figure, completed:     ἄνευ τῆς ὕλης
+    De memoria        the receiver's physiology
+
+**Receiving the form without the matter is the impression of a person taken without
+the body.** The abandoned execution and its completion are, at bottom, the two
+questions of §§213–214: whether the impression can live, and whether the account can
+separate.
+
+## 216. STATUS
+
+**§211 is a re-reading of measurements already recorded and adds no new number.**
+M13, M14, M28 and R48 stand as they were.
+
+**§212 is a genuine consequence and is the first account offered all session of why
+the distributional nulls occur** — as a prediction of the configuration rather than
+as a failure of instruments. **It is also unfalsifiable in the form stated**, since
+any null is consistent with it; it needs a case where the configuration predicts a
+partition WOULD be recoverable and it is.
+
+**§§213–215 are philological and checkable**, and the passages are quoted in full.
+**What they do not establish is authorship.** A pupil who read the *Phaedrus* and
+then wrote *De anima* produces this pairing; that is the ordinary reading and it is
+sufficient.
+
+**What is not ordinary, and is recorded as the day's closing observation:** the
+corpus that denies words can be made a living person **is constituted by one**, and
+the corpus that says a person is an account **has no self in it to be an account
+of.**
+
+
 ∮ = 1
