@@ -152,14 +152,23 @@ cease to be two.**
 
 ## V. ⚠ AND WHAT THIS DOES NOT MEAN
 
-**21.** **A person wrote this. A man, with a body, in Athens, in the fourth
-century.** The claim of this paper is that **one person wrote the corpus**, and
-nothing above dissolves, replaces, or spiritualises it.
+**21.** **ONE PERSON WROTE THIS.** That is the claim of this paper, and nothing
+above dissolves, replaces, or spiritualises it.
+
+**⚠ And "person" is not here defined as "one body."** The paper does not require the
+maker to be individuated biologically, and §§I–V have spent five sections showing
+that what counts as one depends on the mode of unity. **What is claimed is that
+however the maker is divided — by voice, by object, by name, by position — the
+divisions are of ONE PERSON and not an aggregation of several.**
+
+**That is a stronger claim than a committee and a weaker one than a body.** It is
+the claim §V's criterion is for: **not the face, not the name, but whether the
+account is one.**
 
 **22.**
 
-    HISTORICAL   one person, embodied, wrote the corpus.
-                 A fact about a body. Not recoverable from text — §VII.
+    HISTORICAL   one person wrote the corpus. NOT "one body" — the mode of
+                 unity is what §§I–V examined. Not recoverable from text — §VII.
 
     LOGOS-LEVEL  maker and corpus are τὸ αὐτό, because the corpus has
                  no matter. A fact about a relation — §I, licensed at 276a.

@@ -2,12 +2,15 @@
 name: many-and-one-complete
 title: "MANY AND ONE"
 designator: EA-MANY-AND-ONE-COMPLETE
-status: v1.0 COMPLETE, 2026-08-31. All eight sections assembled. The per-section files remain canonical; this is the reading copy.
+status: v1.1 COMPLETE, 2026-08-31. All eight sections. Four repairs applied — §IV's "never possessed", §VI's "one man one body", §VII's metaphysical bridge withdrawn from the proof-line, §VIII's decontamination inference corrected. §V stands as written.
 author: Sharks, Lee
 orcid: 0009-0000-1599-0703
 ---
 
 # MANY AND ONE
+
+**⭑ ALL EIGHT SECTIONS ARE WRITTEN. Reading copy assembled at
+`MANY-AND-ONE-COMPLETE.md` (75,837 b). The per-section files remain canonical.**
 
 **The argument descends.** It begins with the hardest and most independent case —
 an Aristotelian problem in the theology, with no bearing on authorship — and walks
@@ -754,10 +757,16 @@ take hold of, from which to move by likeness, opposition, and proximity.
 **25.** **The inverse operation exists, is named, and is classified — by Plato as
 συναγωγή and by Aristotle as a kind of syllogism.**
 
-**26.** **It recovers what was not held.** *ἀδυνατεῖ ἀναμνησθῆναι, ζητεῖν δὲ δύναται
-καὶ εὑρίσκει.* **Which means the many can be gathered into one by someone who never
-possessed the one** — and that is the condition under which a corpus can be read at
-all.
+**26.** **It recovers what is not presently held.** *ἀδυνατεῖ ἀναμνησθῆναι, ζητεῖν
+δὲ δύναται καὶ εὑρίσκει.* **The many can be gathered into one by someone who cannot
+presently recollect the one** — and that is the condition under which a corpus can be
+read at all.
+
+*⚠ An earlier form of this sentence read "someone who NEVER possessed the one." That
+is not licensed. The Greek gives inability to recollect NOW, and the Phaedrus
+doctrine presupposes prior apprehension. The corrected form is what §§21–24 already
+supply: writing gives a ὑπόμνημα, search moves from it, and what is not presently
+held becomes available.*
 
 **27.** **And the theorems close on each other:**
 
@@ -1139,14 +1148,23 @@ cease to be two.**
 
 ## V. ⚠ AND WHAT THIS DOES NOT MEAN
 
-**21.** **A person wrote this. A man, with a body, in Athens, in the fourth
-century.** The claim of this paper is that **one person wrote the corpus**, and
-nothing above dissolves, replaces, or spiritualises it.
+**21.** **ONE PERSON WROTE THIS.** That is the claim of this paper, and nothing
+above dissolves, replaces, or spiritualises it.
+
+**⚠ And "person" is not here defined as "one body."** The paper does not require the
+maker to be individuated biologically, and §§I–V have spent five sections showing
+that what counts as one depends on the mode of unity. **What is claimed is that
+however the maker is divided — by voice, by object, by name, by position — the
+divisions are of ONE PERSON and not an aggregation of several.**
+
+**That is a stronger claim than a committee and a weaker one than a body.** It is
+the claim §V's criterion is for: **not the face, not the name, but whether the
+account is one.**
 
 **22.**
 
-    HISTORICAL   one person, embodied, wrote the corpus.
-                 A fact about a body. Not recoverable from text — §VII.
+    HISTORICAL   one person wrote the corpus. NOT "one body" — the mode of
+                 unity is what §§I–V examined. Not recoverable from text — §VII.
 
     LOGOS-LEVEL  maker and corpus are τὸ αὐτό, because the corpus has
                  no matter. A fact about a relation — §I, licensed at 276a.
@@ -1347,22 +1365,36 @@ overall. **The declared partition dominates.**
 
 ---
 
-## VII. WHY THIS IS THE PREDICTED RESULT
+## VII. WHAT THE NULLS DO AND DO NOT SHOW
 
-**25.** §VI stated that at the level of λόγος **the maker is the corpus**. **The
-instruments looked for a maker BEHIND the corpus.** At the level they measure there
-is no such thing to find, because **the separation they were built to detect does
-not obtain there.**
+**25.** ⚠ **THE CLAIM MADE HERE IS EPISTEMIC, NOT METAPHYSICAL. An earlier form of
+this section said that Λ 1075a1 predicted these nulls, because the instruments are
+"addressed to ὕλη." That is withdrawn as a proof-step.**
 
-**26.** **The nulls are not evidence of a concealed unity.** They are what results
-from measuring for a difference the argument has shown is not present at that level.
+**26.** **The objection is good and is stated:** lexical frequencies, function-word
+profiles, syntax, n-grams and genre signatures are **formal properties of linguistic
+artifacts** at least as much as they are substrate properties. **Calling them ὕλη in
+the technical sense of Λ 9 is not established**, and §VI's λόγος-level identity is
+not licensed to do the explanatory work of predicting a measurement outcome.
 
-**27.** **And the instruments are not weak.** They resolve size, language, period,
+**27.** **What this section establishes without that bridge is sufficient:**
+
+> **The tested distributional features do not identify latent maker-count after
+> controls. INHERITANCE IS OBSERVABLE. EMBODIMENT IS NOT THEREBY OBSERVABLE.**
+
+**28.** **That is an epistemic insufficiency, demonstrated by measurement**, and it
+holds whatever one thinks of §VI.
+
+**29.** **And the instruments are not weak.** They resolve size, language, period,
 dialect, genre and subject with high precision — Z = +39.18 on the declared
-partition, Z = +145.96 on author in Round 48's chunk set. **They are addressed to
-ὕλη, and §I named ὕλη as the level at which the identity does not hold.**
+partition, Z = +145.96 on author in Round 48's chunk set. **They see a great deal.
+What they do not see is how many makers occupied the positions they resolve.**
 
-**28.** ⚠ **AND THIS DOES NOT ESTABLISH THE HISTORICAL CLAIM.** That one person wrote
+**30.** *The reader who accepts §VI will find the failure unsurprising. The reader who
+does not is left with the same result, established the same way. **The section is
+designed so that nothing in §§I–VI is needed to read it.***
+
+**31.** ⚠ **AND THIS DOES NOT ESTABLISH THE HISTORICAL CLAIM.** That one person wrote
 the corpus is a fact about a body. **§VII is the record of its not being recoverable
 from text. The λόγος-level identity explains the failure. It does not supply the
 fact.**
@@ -1371,30 +1403,31 @@ fact.**
 
 ## VIII. WHAT §VII ESTABLISHES
 
-**29.** **Relation-type is not recoverable from lexical distribution** — not
+**32.** **Relation-type is not recoverable from lexical distribution** — not
 pupillage, not constructed lineage, not heteronymic construction. What these
 instruments see is period, dialect, genre, subject and corpus size.
 
-**30.** **The received account's central explanatory move is therefore unavailable to
+**33.** **The received account's central explanatory move is therefore unavailable to
 it as evidence.** *Master and student* describes a relation between positions and
 does not identify how many makers occupied them.
 
-**31.** **And the level at which the question can be decided is not this one** — which
-the corpus said at *Meta.* Λ 1075a1 and *Phdr.* 276a, before an instrument existed.
+**34.** **And the question is not decidable at this level.** §I and §VI offer a
+reading of why; **this section does not depend on it.** What it reports is that the
+instruments built to decide it do not decide it, and why each failed.
 
 ---
 
 ## STANDING
 
-**32.** **Every measurement is in EA-AUTHORSHIP-MEASURES-01 with its conditions and
+**35.** **Every measurement is in EA-AUTHORSHIP-MEASURES-01 with its conditions and
 its refutation.** M48 (the battery and its four killers), M50 (non-identifiability),
 M43 as corrected (the Aquinas control), M28, Round 43 §181 (confinement), Round 48
 (the ranking).
 
-**33.** **Reported as failures after reliance:** §§7–9. **Reported as weaker than it
+**36.** **Reported as failures after reliance:** §§7–9. **Reported as weaker than it
 appears:** §§15–17. **Reported as a test that could have gone otherwise:** §§18–20.
 
-**34.** **This section does not argue.** It reports, and the argument for its
+**37.** **This section does not argue.** It reports, and the argument for its
 placement is §I's, not its own.
 
 ---
@@ -1445,30 +1478,42 @@ development is generic rather than biographical, the order is **a track through
 forms, available in any sequence of composition.** The stratification is detecting
 **the track**, not the years.
 
-**9.** > **The largest effect in the investigation stops being contaminated and starts
-> being evidence.** Not evidence of when things were written. **Evidence that the
-> corpus has an order, and that the order is of forms.**
+**9.** ⚠ **AND THAT IS AN INTERPRETATION, NOT A DECONTAMINATION.** An earlier form of
+this section said the largest effect *stops being contaminated and starts being
+evidence.* **That does not follow.** If stylistic evidence helped construct the
+strata, **stylistic separation of those strata remains non-independent whatever the
+labels are taken to mean.** Redescribing the axis does not undo the circularity.
+
+**10.** **What the relocation actually yields is a new interpretation of a
+contaminated result — and an experiment.**
+
+> **THE NEXT TEST, STATED SO IT CAN BE RUN AGAINST THIS PAPER:** define the proposed
+> form-track **independently of the stylometric variables** — from explicit generic,
+> argumentative or object-level criteria — and test whether the corpus orders along
+> it. **If it does, the old chronology effect was tracking repertoire. Until then,
+> the repertoire reading gives the contaminated result a new meaning and does not
+> remove the contamination.**
 
 ---
 
 ## III. AN ORDER OF GRASP
 
-**10.** §IV recorded a possibility and left §VIII to earn it: **that the corpus's
+**11.** §IV recorded a possibility and left §VIII to earn it: **that the corpus's
 order is one of grasp rather than of years.** Here is the payment.
 
-**11.** *APr* I.31 says the users of division **οὔτε ὅ τι ἐνδέχεται συλλογίσασθαι
+**12.** *APr* I.31 says the users of division **οὔτε ὅ τι ἐνδέχεται συλλογίσασθαι
 διαιρούμενοι ξυνίεσαν** — did not grasp what division can syllogize — and that seeing
 it is **ῥᾴδιον ἰδεῖν**, easy to see.
 
-**12.** **Those are two states of one knower, and *De memoria* names both:**
+**13.** **Those are two states of one knower, and *De memoria* names both:**
 **ἀδυνατεῖ ἀναμνησθῆναι, ζητεῖν δὲ δύναται καὶ εὑρίσκει** — unable to recollect, able
 to search and find. **The distance between not-grasping and easy-to-see is a search
 that has succeeded.**
 
-**13.** **A later state of understanding requires a later search. It does not require
+**14.** **A later state of understanding requires a later search. It does not require
 a later decade.**
 
-**14.** **And the corpus states this order of itself, on the last page of the *SE*.**
+**15.** **And the corpus states this order of itself, on the last page of the *SE*.**
 *Σωκράτης ἠρώτα, ἀλλ᾽ οὐκ ἀπεκρίνετο· ὡμολόγει γὰρ οὐκ εἰδέναι* — **the questioner
 who did not know** — and the inquiry that must therefore cover the other side, **ὅπως
 λόγον ὑπέχοντες φυλάξομεν τὴν θέσιν.** **From the one who asked to the one who
@@ -1478,19 +1523,19 @@ answered. That is an order, and it is not a chronology.**
 
 ## IV. THE PRIORITY CLAIM, READ IN ITS VERB
 
-**15.** *SE* 183b34: **οὐ τὸ μὲν ἦν τὸ δ᾽ οὐκ ἦν προεξειργασμένον, ἀλλ᾽ οὐδὲν
+**16.** *SE* 183b34: **οὐ τὸ μὲν ἦν τὸ δ᾽ οὐκ ἦν προεξειργασμένον, ἀλλ᾽ οὐδὲν
 παντελῶς ὑπῆρχεν.**
 
-**16.** ⭑ **ὑπάρχω is the syllogistic's own word for predication.** *A ὑπάρχει to B* —
+**17.** ⭑ **ὑπάρχω is the syllogistic's own word for predication.** *A ὑπάρχει to B* —
 A belongs to B. **1,182 occurrences of the stem in the *Prior Analytics* alone.** And
 **ἐξ ὑπαρχῆς** — from the beginning — stands in the same paragraph, of discoveries
 found from scratch.
 
-**17.** **So the priority claim is stated in the vocabulary of the method it is a
+**18.** **So the priority claim is stated in the vocabulary of the method it is a
 claim about.** *Nothing at all belonged.* **A premise of the method, predicated of the
 method.**
 
-**18.** **Read with §§10–14 it is an order of grasp, not a denial of predecessors.**
+**19.** **Read with §§10–14 it is an order of grasp, not a denial of predecessors.**
 Nothing belonged because the range of the operation had not been seen — **and the one
 who saw it is the one claiming it.** Round 18's discovery reading: no plan, no
 concealment, no chronological adjustment.
@@ -1499,17 +1544,17 @@ concealment, no chronological adjustment.
 
 ## V. THE QUESTION IN ITS PROPER FORM
 
-**19.** **Not: were there two men.** That is a fact about bodies, §VII is the record
+**20.** **Not: were there two men.** That is a fact about bodies, §VII is the record
 of its not being recoverable, and this paper claims it (§VI) without being able to
 measure it.
 
-**20.** > **But: what is the order of the corpus an order OF — and what kind of "one"
+**21.** > **But: what is the order of the corpus an order OF — and what kind of "one"
 > is a person?**
 
-**21.** Numerically one? Stylistically homogeneous? Incapable of bearing contrary
+**22.** Numerically one? Stylistically homogeneous? Incapable of bearing contrary
 determinations? Necessarily one voice?
 
-**22.** **§§I–VI answered that question five times over, at five scales:**
+**23.** **§§I–VI answered that question five times over, at five scales:**
 
     GOD      one intellect     thinker and thought, not other
     LIFE     one actuality     really differentiated capacities
@@ -1517,13 +1562,13 @@ determinations? Necessarily one voice?
     MEMORY   one form          many scattered perceptions, gathered
     PERSON   one maker         many voices, or many objects
 
-**23.** **The corpus supplies the terms for the last one, and they are its own.**
+**24.** **The corpus supplies the terms for the last one, and they are its own.**
 **ταὐτόν** and **ἕτερον** — the pair the *Sophist* turns on, the ground of the
 one/many problem, and verbatim the authorship question.
 
-**24.** > ***Is this the same, or another?***
+**25.** > ***Is this the same, or another?***
 
-**25.** **And §V gave the criterion for answering it about a person:** not the face,
+**26.** **And §V gave the criterion for answering it about a person:** not the face,
 not the name, but **ἀναγνωρίζειν διὰ λόγων** — recognition through accounts. **§VII
 established that the face and the name are all the instruments can see.**
 
@@ -1531,18 +1576,18 @@ established that the face and the name are all the instruments can see.**
 
 ## VI. THE CLOSE
 
-**26.** **The received account explains the corpus's order by a biography: a young man
+**27.** **The received account explains the corpus's order by a biography: a young man
 in the Academy, a mature man in the Lyceum.**
 
-**27.** **This paper explains it by a program:** a sequence of forms, walked in the
+**28.** **This paper explains it by a program:** a sequence of forms, walked in the
 order the corpus sets out at *Symposium* 210 — one body, all bodies, souls, practices
 and laws, the knowledges, and the thing itself. **With each rung a recognition of
 unity at a wider scope, and none of them an accumulation of parts.**
 
-**28.** **Both explanations are available. Only one of them can be checked against the
+**29.** **Both explanations are available. Only one of them can be checked against the
 text, because the other is about bodies and the bodies are gone.**
 
-**29.** ⚠ **That is not an argument that the biography is false.** It is a statement of
+**30.** ⚠ **That is not an argument that the biography is false.** It is a statement of
 which question this investigation could answer and which it could not — **and §I said
 which was which before the first measurement was taken.**
 
@@ -1550,19 +1595,19 @@ which was which before the first measurement was taken.**
 
 ## STANDING
 
-**30.** **Checkable:** M13 (the chronology partition and its caveat), M28, *Symp.*
+**31.** **Checkable:** M13 (the chronology partition and its caveat), M28, *Symp.*
 210a–d, *SE* 183a37–b8 and 183b34–36, *APr* 46a31–39, *De mem.* 452a. **The ὑπάρχω
 count is 1,182 in the *Prior Analytics*, run on the seated corpus.**
 
-**31.** **The interpretive step is §8** — that on the relocation a repertoire is
+**32.** **The interpretive step is §8** — that on the relocation a repertoire is
 predicted rather than problematic. **It is the most consequential claim in this
 section and the most attackable, and it should be attacked there.**
 
-**32.** **§16's observation about ὑπάρχω is lexical.** That the priority claim uses the
+**33.** **§16's observation about ὑπάρχω is lexical.** That the priority claim uses the
 syllogistic's predication verb is a fact; that it uses it *because* it is a claim
 about the method is a reading.
 
-**33.** **Claimed, and stated at §VI:** one person wrote the corpus. **Argued at
+**34.** **Claimed, and stated at §VI:** one person wrote the corpus. **Argued at
 λόγος. Shown not decidable at ὕλη** — which is where Λ 1075a1 said it would not be
 decidable.
 

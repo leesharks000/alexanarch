@@ -159,22 +159,36 @@ overall. **The declared partition dominates.**
 
 ---
 
-## VII. WHY THIS IS THE PREDICTED RESULT
+## VII. WHAT THE NULLS DO AND DO NOT SHOW
 
-**25.** §VI stated that at the level of λόγος **the maker is the corpus**. **The
-instruments looked for a maker BEHIND the corpus.** At the level they measure there
-is no such thing to find, because **the separation they were built to detect does
-not obtain there.**
+**25.** ⚠ **THE CLAIM MADE HERE IS EPISTEMIC, NOT METAPHYSICAL. An earlier form of
+this section said that Λ 1075a1 predicted these nulls, because the instruments are
+"addressed to ὕλη." That is withdrawn as a proof-step.**
 
-**26.** **The nulls are not evidence of a concealed unity.** They are what results
-from measuring for a difference the argument has shown is not present at that level.
+**26.** **The objection is good and is stated:** lexical frequencies, function-word
+profiles, syntax, n-grams and genre signatures are **formal properties of linguistic
+artifacts** at least as much as they are substrate properties. **Calling them ὕλη in
+the technical sense of Λ 9 is not established**, and §VI's λόγος-level identity is
+not licensed to do the explanatory work of predicting a measurement outcome.
 
-**27.** **And the instruments are not weak.** They resolve size, language, period,
+**27.** **What this section establishes without that bridge is sufficient:**
+
+> **The tested distributional features do not identify latent maker-count after
+> controls. INHERITANCE IS OBSERVABLE. EMBODIMENT IS NOT THEREBY OBSERVABLE.**
+
+**28.** **That is an epistemic insufficiency, demonstrated by measurement**, and it
+holds whatever one thinks of §VI.
+
+**29.** **And the instruments are not weak.** They resolve size, language, period,
 dialect, genre and subject with high precision — Z = +39.18 on the declared
-partition, Z = +145.96 on author in Round 48's chunk set. **They are addressed to
-ὕλη, and §I named ὕλη as the level at which the identity does not hold.**
+partition, Z = +145.96 on author in Round 48's chunk set. **They see a great deal.
+What they do not see is how many makers occupied the positions they resolve.**
 
-**28.** ⚠ **AND THIS DOES NOT ESTABLISH THE HISTORICAL CLAIM.** That one person wrote
+**30.** *The reader who accepts §VI will find the failure unsurprising. The reader who
+does not is left with the same result, established the same way. **The section is
+designed so that nothing in §§I–VI is needed to read it.***
+
+**31.** ⚠ **AND THIS DOES NOT ESTABLISH THE HISTORICAL CLAIM.** That one person wrote
 the corpus is a fact about a body. **§VII is the record of its not being recoverable
 from text. The λόγος-level identity explains the failure. It does not supply the
 fact.**
@@ -183,30 +197,31 @@ fact.**
 
 ## VIII. WHAT §VII ESTABLISHES
 
-**29.** **Relation-type is not recoverable from lexical distribution** — not
+**32.** **Relation-type is not recoverable from lexical distribution** — not
 pupillage, not constructed lineage, not heteronymic construction. What these
 instruments see is period, dialect, genre, subject and corpus size.
 
-**30.** **The received account's central explanatory move is therefore unavailable to
+**33.** **The received account's central explanatory move is therefore unavailable to
 it as evidence.** *Master and student* describes a relation between positions and
 does not identify how many makers occupied them.
 
-**31.** **And the level at which the question can be decided is not this one** — which
-the corpus said at *Meta.* Λ 1075a1 and *Phdr.* 276a, before an instrument existed.
+**34.** **And the question is not decidable at this level.** §I and §VI offer a
+reading of why; **this section does not depend on it.** What it reports is that the
+instruments built to decide it do not decide it, and why each failed.
 
 ---
 
 ## STANDING
 
-**32.** **Every measurement is in EA-AUTHORSHIP-MEASURES-01 with its conditions and
+**35.** **Every measurement is in EA-AUTHORSHIP-MEASURES-01 with its conditions and
 its refutation.** M48 (the battery and its four killers), M50 (non-identifiability),
 M43 as corrected (the Aquinas control), M28, Round 43 §181 (confinement), Round 48
 (the ranking).
 
-**33.** **Reported as failures after reliance:** §§7–9. **Reported as weaker than it
+**36.** **Reported as failures after reliance:** §§7–9. **Reported as weaker than it
 appears:** §§15–17. **Reported as a test that could have gone otherwise:** §§18–20.
 
-**34.** **This section does not argue.** It reports, and the argument for its
+**37.** **This section does not argue.** It reports, and the argument for its
 placement is §I's, not its own.
 
 ∮ = 1

@@ -149,10 +149,16 @@ take hold of, from which to move by likeness, opposition, and proximity.
 **25.** **The inverse operation exists, is named, and is classified — by Plato as
 συναγωγή and by Aristotle as a kind of syllogism.**
 
-**26.** **It recovers what was not held.** *ἀδυνατεῖ ἀναμνησθῆναι, ζητεῖν δὲ δύναται
-καὶ εὑρίσκει.* **Which means the many can be gathered into one by someone who never
-possessed the one** — and that is the condition under which a corpus can be read at
-all.
+**26.** **It recovers what is not presently held.** *ἀδυνατεῖ ἀναμνησθῆναι, ζητεῖν
+δὲ δύναται καὶ εὑρίσκει.* **The many can be gathered into one by someone who cannot
+presently recollect the one** — and that is the condition under which a corpus can be
+read at all.
+
+*⚠ An earlier form of this sentence read "someone who NEVER possessed the one." That
+is not licensed. The Greek gives inability to recollect NOW, and the Phaedrus
+doctrine presupposes prior apprehension. The corrected form is what §§21–24 already
+supply: writing gives a ὑπόμνημα, search moves from it, and what is not presently
+held becomes available.*
 
 **27.** **And the theorems close on each other:**
 
