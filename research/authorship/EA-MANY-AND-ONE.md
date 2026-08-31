@@ -108,7 +108,13 @@ what permits multiple true divisions of one kind. And his soundness-and-complete
 theorem shows a semantics built on **Platonic divisional structures** works for the
 system used to model Aristotle's syllogistic.
 
-**Sources: Round 42 §§164.4; M52's substantive result.**
+**WRITTEN: EA-MANY-ACCOUNTS v1.0, entire.** And the section's load-bearing find is
+the 232a diagnosis: **the many names are the beholder's.** *ὁ πάσχων αὐτό … οὐ
+δύναται κατιδεῖν ἐκεῖνο αὐτῆς εἰς ὃ πάντα τὰ μαθήματα ταῦτα βλέπει, διὸ καὶ
+**πολλοῖς ὀνόμασιν ἀνθ᾽ ἑνὸς** τὸν ἔχοντα αὐτὰ προσαγορεύει.* **Every verb of
+failure takes the observer as subject.**
+
+**Sources: Round 42 §164.4; M52's substantive result.**
 
 ---
 
