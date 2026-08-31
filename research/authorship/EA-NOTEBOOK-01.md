@@ -5374,4 +5374,113 @@ tradition does not fail to resolve the relation-question because the question is
 hard. It cannot resolve it against a standard the corpus itself supplies.**
 
 
+---
+
+# ROUND 48 — RANKING THE DISCRIMINATIONS: WHAT THE SURFACE ENCODES AND WHAT IT DOES NOT
+
+*Added 2026-08-30. Design: hold the material constant, attempt to recover several
+different partitions of it, rank by recoverability. The proposal under test was
+that **the discrimination hardest to make is the central one**. The
+cross-cutting hypothesis failed; the ranking itself is the result.*
+
+## 206. THE DESIGN
+
+353 chunks of 4,000 tokens from both corpora (129 Plato / 224 Aristotle), one
+distance matrix on the 100 commonest forms, and every partition scored the same
+way: mean cross-label distance over mean within-label distance, with Z against
+random relabelling of the same index set.
+
+**Conceptual partitions are labelled PER CHUNK by median split on marker balance**
+— not per work — so that a partition may cut across works and across authors if the
+text supports it.
+
+## 207. THE CROSS-CUTTING HYPOTHESIS FAILED
+
+**Tested first, with above/below labels assigned by work:**
+
+    AUTHOR  (Plato | Aristotle)     ratio 1.306   Z = +145.96
+    LEVEL   (above | below)         ratio 1.063   Z =  +14.58
+
+    AUTHOR held within "above"      ratio 1.472   Z =  +69.61   ← STRONGER
+    AUTHOR held within "below"      ratio 1.314   Z =  +71.96
+    LEVEL  held within Plato        ratio 1.065   Z =   +6.62
+
+**Above/below does not cut across the author boundary.** Holding level constant
+makes author separation *stronger*, not weaker. **The hypothesis that Plato's
+metaphysical material groups with Aristotle's is refuted on these labels.**
+
+*⚠ The above/below labels were assigned by work and quickly; Timaeus and Parmenides
+could reasonably go either way. A labelling assigned by someone else would be a
+different experiment.*
+
+## 208. THE RANKING
+
+Per-chunk conceptual partitions, whole corpus:
+
+    AUTHOR (declared)            1.228    Z +37.3   ← THE ONLY STRONG PARTITION
+    ──────────────────────────────────────────────
+    BEING vs BECOMING            1.058    Z +41.6
+    SOUL vs BODY                 1.046    Z +29.0
+    ONE vs MANY                  1.040    Z +28.8
+    SAME vs OTHER                1.024    Z +13.8
+    NECESSITY vs CHANCE          1.017    Z  +7.0   ← HARDEST
+
+**And holding author constant:**
+
+    partition                 within PLATO      within ARISTOTLE
+    BEING vs BECOMING        1.134 / +34.5      1.083 / +34.3
+    SOUL vs BODY             1.010 /  +1.8      1.031 /  +9.0
+    SAME vs OTHER            1.007 /  +1.5      1.021 /  +8.3
+    NECESSITY vs CHANCE      1.019 /  +4.7      1.015 /  +5.8
+
+**Within Plato, SAME vs OTHER is at 1.007 with Z = +1.5 — indistinguishable from
+noise.**
+
+## 209. THE RESULT
+
+> **The surface encodes exactly one partition strongly, and it is the one whose
+> evidential value is nil.**
+
+**AUTHOR at 1.228 against every conceptual partition at 1.02–1.06.** The text is
+maximally legible about the declared boundary — the boundary M48 and M50 showed
+cannot identify maker count — and nearly illegible about every distinction a reader
+would call the real division.
+
+**Only BEING vs BECOMING survives holding author constant** at any strength, and it
+survives in both corpora at comparable magnitude (1.134 / 1.083) — which is the one
+conceptual partition that is genuinely shared rather than author-indexed.
+
+**AND THE PROPOSAL'S PREDICTION, ASSESSED.** The hardest discriminations are
+**NECESSITY vs CHANCE** (1.017) and **SAME vs OTHER** (1.024) — and the latter
+falls to **1.007, Z +1.5, within Plato**.
+
+**ταὐτόν and ἕτερον is the pair the *Sophist* turns on, the ground of the one/many
+problem — and it is the discrimination this configuration's surface makes least
+available.** It is also, verbatim, the discrimination the authorship question is:
+*is this the same or another.*
+
+**⚠ THAT IS AN OBSERVATION AND NOT A RESULT.** The markers are crude, the median
+split is arbitrary, and all conceptual partitions sit in a narrow band (1.017–1.058)
+where differences of 0.03 should not bear weight. **A partition that fails to
+register may indicate that the distinction is unencoded, or that the markers do not
+track it.** These cannot be told apart here.
+
+## 210. WHAT IS ROBUST
+
+**Robust:** the gap between the declared partition (1.228) and everything
+conceptual (≤1.058). That is a factor-of-four difference in effect size and does
+not depend on marker choice.
+
+**Robust:** above/below does not cut across the author boundary on these labels.
+
+**Not robust:** the ordering *within* the conceptual band, including the SAME/OTHER
+observation.
+
+**And method — division against demonstration — was NOT tested, deliberately.** The
+obvious markers are the same words the §0A argument turns on, so measuring it with
+them would repeat the snub-position error (M-series, Round 4): finding the word
+rather than the operation, in a space where the word was selected because the
+argument needed it.
+
+
 ∮ = 1
