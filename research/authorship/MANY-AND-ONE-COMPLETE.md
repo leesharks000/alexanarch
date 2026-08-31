@@ -2,7 +2,7 @@
 name: many-and-one-complete
 title: "MANY AND ONE"
 designator: EA-MANY-AND-ONE-COMPLETE
-status: v1.9, 2026-08-31. Checked against MANY-AND-ONE-MAXIMAL and three losses restored — the seal-and-wax triad with ἄνευ τῆς ὕλης (§II), the forgery census with its two zeros (§V), and the full propagation series (§IX).
+status: v2.0, 2026-08-31. Checked against MANY-AND-ONE-MAXIMAL marker by marker; every term present in the maximal is now present in the paper. Restored: the seal-and-wax triad (§II), the forgery census and its two zeros (§V), the full propagation series (§IX), and the manufactured philosophers (§VII).
 author: Sharks, Lee
 orcid: 0009-0000-1599-0703
 ---
