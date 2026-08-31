@@ -1,13 +1,17 @@
 ---
-name: mortal-immortal
-title: "Mortal or Immortal: Division Reaches Its Own Limit, and Then Is Made Again Inside Νοῦς"
-designator: EA-MORTAL-IMMORTAL-01
+name: division-of-god
+title: "The Division of God"
+subtitle: "Mortal or Immortal: division reaches its own limit, is made again inside νοῦς, and is made in the divine and resolved by identity"
+designator: EA-DIVISION-OF-GOD-02
 status: DRAFT v0.1, 2026-08-30. SUPERSEDES EA-DIVISION-OF-GOD-01 v0.1, which was wrong at its foundation — see §§26–28.
 author: Sharks, Lee
 orcid: 0009-0000-1599-0703
 ---
 
-# MORTAL OR IMMORTAL
+# THE DIVISION OF GOD
+
+*Mortal or immortal: division reaches its own limit, is made again inside νοῦς,
+and is made in the divine — where it is resolved, by identity.*
 
 **1.** *Prior Analytics* I.31 does not leave open what division can syllogize. It
 answers, by name, in the next breath — and its answer contains the problem.
@@ -77,6 +81,56 @@ readings of the passage** and cannot be assumed. The predicates are strongly
 associated with divine intellect; that is not the same as the identification.
 **The argument does not need it.** The mortal/immortal seam is already inside I.31,
 and I.31 is about **ἄνθρωπος**.
+
+---
+
+## AND THE DIVISION IS MADE IN GOD
+
+**13a.** ⭑ **The divine division is not at III.5. It is at Λ 9, stated outright,
+and it is not among the contested readings.**
+
+**13b.** Λ 1074b puts the question as a division and marks it as one:
+
+> ἔτι δὲ εἴτε **νοῦς** ἡ οὐσία αὐτοῦ εἴτε **νόησίς** ἐστι, **τί νοεῖ;** ἢ γὰρ
+> **αὐτὸς αὑτὸν ἢ ἕτερόν τι**· καὶ εἰ ἕτερόν τι, **ἢ τὸ αὐτὸ ἀεὶ ἢ ἄλλο.**
+
+*Whether its substance is intellect or thinking — **what does it think?** Either
+**itself or something else**; and if something else, either **always the same or
+different**.*
+
+**13c.** **That is division, performed on the first substance.** A genus cut at a
+differentia — itself / other — and the branch cut again: same always / different.
+The *ἢ … ἢ* of I.31's worked example, applied to God.
+
+**13d.** And the argument that follows is the divisional argument exactly: if
+thinking were **δύναμις** the continuity would be laborious; if it thought
+something else, **ἄλλο τι ἂν εἴη τὸ τιμιώτερον ἢ ὁ νοῦς, τὸ νοούμενον** — the
+thought would be more honourable than the intellect. Both branches are eliminated.
+
+**13e.** The conclusion:
+
+> **αὑτὸν ἄρα νοεῖ, εἴπερ ἐστὶ τὸ κράτιστον, καὶ ἔστιν ἡ νόησις νοήσεως νόησις.**
+
+*It thinks **itself**, then, if it is the mightiest — and the thinking is **a
+thinking of thinking**.*
+
+**13f.** ⭑ **AND HERE IS THE ASYMMETRY.** In I.31 division reaches *mortal or
+immortal* and **cannot select** — the selection is **αἰτεῖται**, begged. At Λ 9
+division reaches *itself or another* and **the selection is made**, because on this
+one object **the disjunction collapses**: the knower and the known are **τὸ αὐτό**.
+
+> **Division fails at man and succeeds at God — and it succeeds only by the two
+> branches turning out to be one.**
+
+**13g.** Which is the whole configuration in a sentence. **Where the divided thing
+is one, division terminates.** Where it is not, division reaches the seam and asks
+to be given what it was required to prove.
+
+**13h.** And Aristotle does not stop at the collapse. He immediately re-opens it:
+**ἔτι εἰ ἄλλο τὸ νοεῖν καὶ τὸ νοεῖσθαι, κατὰ πότερον αὐτῷ τὸ εὖ ὑπάρχει;** —
+*if thinking and being-thought are different, in respect of which does its good
+belong?* **The identity is asserted and then queried in the next clause.** The
+division closes and the question is put again.
 
 ---
 
@@ -180,6 +234,11 @@ available.
 *De an.* 430a10–25, *De mem.* 451a, 453a, *Phaedrus* 249c. **That Aristotle chose
 the mortal/immortal example is a fact about the chapter; that he chose it for a
 reason is not claimed.**
+
+**29a.** **The Λ material (§§13a–13h) is quoted and its locus is 1074b15–35. It is
+not among III.5's contested readings**: that Λ 9 divides the first substance into
+thinker and thought, and resolves the division by identity, is what the chapter
+says.
 
 **30.** **What is not claimed:** authorship. A single author writing the *Analytics*
 and later the *De anima* produces this sequence, and so does a pupil who read the
