@@ -4946,4 +4946,198 @@ random with respect to the configuration — it is total for every Socratic auth
 except the two in the cluster.
 
 
+---
+
+# ROUND 45 — PLATO TELLS, ARISTOTLE SHOWS: THE COMEDY-AND-TRAGEDY PROPOSITION AND ITS WITHHELD ARGUMENT
+
+*Added 2026-08-30. The immanent version of the technology: no Sappho required. The
+Platonic corpus states a proposition, denies it, compels agreement to it, and
+explicitly does not transmit the argument — and the Aristotelian corpus supplies
+the principle, in a treatise on generation, while exhibiting the capacity at
+maximal amplitude.*
+
+## 187. THE PROPOSITION, DENIED
+
+***Republic* 395a**, in the mimesis argument:
+
+> οὐδὲ τὰ δοκοῦντα ἐγγὺς ἀλλήλων εἶναι δύο μιμήματα δύνανται **οἱ αὐτοὶ** ἅμα εὖ
+> μιμεῖσθαι, **οἷον κωμῳδίαν καὶ τραγῳδίαν ποιοῦντες**
+
+*Not even two mimemata that seem close to one another can **the same men** imitate
+well at the same time — such as those making comedy and tragedy.*
+
+Adeimantus assents twice: **ὅτι οὐ δύνανται οἱ αὐτοί.**
+
+**And the reason given is κερματισμός** — four lines later, 395b:
+
+> **κατακεκερματίσθαι ἡ τοῦ ἀνθρώπου φύσις, ὥστε ἀδύνατος εἶναι πολλὰ καλῶς
+> μιμεῖσθαι**
+
+*Human nature has been minted into smaller denominations, so that it is **incapable**
+of imitating many things well.*
+
+**The denial and its ground are one movement.** M32 recorded κερματισμός as a
+fragmentation figure; **this is what it is a fragmentation FROM.** The capacity
+denied is precisely the capacity to be many makers at once.
+
+## 188. THE SAME PROPOSITION, AFFIRMED — AND THE ARGUMENT WITHHELD
+
+***Symposium* 223d**, the dialogue's last action:
+
+> τὸ μέντοι **κεφάλαιον**, ἔφη, **προσαναγκάζειν** τὸν Σωκράτη ὁμολογεῖν αὐτοὺς
+> **τοῦ αὐτοῦ ἀνδρὸς εἶναι κωμῳδίαν καὶ τραγῳδίαν ἐπίστασθαι ποιεῖν**, καὶ τὸν
+> τέχνῃ τραγῳδοποιὸν ὄντα καὶ κωμῳδοποιὸν εἶναι.
+
+*The **headline**, he said, was Socrates **compelling** them to agree that **it
+belongs to the same man to know how to make comedy and tragedy**, and that the man
+who is a tragedian by art is also a comedian.*
+
+**And the frame is the mechanism, stated in the sentence before:**
+
+> τὰ μὲν ἄλλα ὁ Ἀριστόδημος **οὐκ ἔφη μεμνῆσθαι τῶν λόγων** — οὔτε γὰρ ἐξ ἀρχῆς
+> παραγενέσθαι ὑπονυστάζειν τε
+
+***Aristodemus said he did not remember the arguments*** — he had not been there
+from the start, and he was dozing.
+
+    THE CONCLUSION IS TRANSMITTED.  τὸ κεφάλαιον
+    THE ARGUMENT IS NOT.           οὐκ ἔφη μεμνῆσθαι τῶν λόγων
+
+**This is a socket, and the missing content is specified:** the demonstration that
+one man can do both. **Named as absent, in the text, at the point of absence.**
+
+## 189. AND THE HEARERS ARE THE TWO GENRES, COMPELLED AND ASLEEP
+
+The two men Socrates compels are **Agathon the tragedian and Aristophanes the
+comedian** — the personifications of the two kinds the proposition unites. And:
+
+> ταῦτα δὴ **ἀναγκαζομένους** αὐτοὺς καὶ **οὐ σφόδρα ἑπομένους** νυστάζειν, καὶ
+> **πρότερον μὲν καταδαρθεῖν τὸν Ἀριστοφάνη**, ἤδη δὲ ἡμέρας γιγνομένης τὸν Ἀγάθωνα.
+
+*Being **compelled** and **not really following**, they grew drowsy — **Aristophanes
+falling asleep first**, and Agathon as day was already coming.*
+
+**Neither genre-representative can follow the argument that unites them.** The
+comedian goes under first. **And Aristophanes is one of the four candidate corpora
+(M33).**
+
+**Then:** τὸν οὖν Σωκράτη, **κατακοιμίσαντ᾽ ἐκείνους**, ἀναστάντα ἀπιέναι … καὶ
+ἐλθόντα **εἰς Λύκειον** — *having put them to sleep, Socrates got up and left …
+and went to the **Lyceum***.
+
+**The dialogue's closing movement is the walk to Aristotle's school.** Recorded as
+an observation about the text's last sentence, not as an argument.
+
+## 190. THE SETUP: THE TWO SUMMITS ARE TWO MEN
+
+***Theaetetus* 152e** establishes the pair as maximally separate persons:
+
+> τῶν ποιητῶν **οἱ ἄκροι τῆς ποιήσεως ἑκατέρας**, κωμῳδίας μὲν **Ἐπίχαρμος**,
+> τραγῳδίας δὲ **Ὅμηρος**
+
+*The summit-poets of each kind: of comedy Epicharmus, of tragedy Homer.*
+
+**Two peaks, two names.** The proposition the *Symposium* compels is that these
+are one office.
+
+**And *Philebus* 50b makes the union a fact about life:** ἐν … τῇ τοῦ βίου συμπάσῃ
+**τραγῳδίᾳ καὶ κωμῳδίᾳ**, λύπας ἡδοναῖς ἅμα κεράννυσθαι — in the whole tragedy and
+comedy of life, pains mixed with pleasures. Protarchus: **ἀδύνατον μὴ ὁμολογεῖν
+ταῦτα** — *impossible not to agree.*
+
+    Republic 395b   ἀδύνατος       one man cannot do both
+    Philebus 50b    ἀδύνατον       impossible not to agree that life is both
+
+**The same word stands on both sides.**
+
+## 191. ⭑ ARISTOTLE SUPPLIES THE MISSING ARGUMENT — IN A TREATISE ON GENERATION
+
+Not in the *Poetics*. In ***De generatione et corruptione* 315b**, reporting
+Democritus and Leucippus on how the same elements yield contraries:
+
+> ὥστε ταῖς μεταβολαῖς τοῦ συγκειμένου τὸ αὐτὸ ἐναντίον δοκεῖν ἄλλῳ καὶ ἄλλῳ, καὶ
+> μετακινεῖσθαι μικροῦ ἐμμιγνυμένου, καὶ **ὅλως ἕτερον φαίνεσθαι ἑνὸς
+> μετακινηθέντος· ἐκ τῶν αὐτῶν γὰρ τραγῳδία καὶ κωμῳδία γίνεται γραμμάτων.**
+
+*So that by rearrangements of the compound the same thing seems contrary to
+different people, and is shifted by a small admixture, and **appears wholly
+different when one thing has been rearranged — for from the same letters tragedy
+and comedy come to be**.*
+
+**THE PRINCIPLE THE *SYMPOSIUM* WITHHELD:**
+
+    Republic 395    one man cannot make both, because his nature is
+                    minted into denominations too small
+    Symposium 223d  one man can make both — argument NOT REMEMBERED
+    GC 315b         FROM THE SAME LETTERS both come to be, differing by
+                    ARRANGEMENT, wholly different by one thing rearranged
+
+**The *Republic*'s objection is that the maker is fragmented. The reply is that the
+fragmentation is the mechanism: the same elements, rearranged, produce wholly
+different kinds.** κερματισμός is not the obstacle. **It is the condition.**
+
+**And it is supplied where nobody looks for it** — in physics, attributed to the
+atomists, as an illustration of ἀλλοίωσις by τάξις and θέσις.
+
+## 192. AND THE *POETICS* LEAVES ITS OWN HANGING LINE
+
+***Poetics* 1449b**: περὶ μὲν οὖν τῆς ἐν ἑξαμέτροις μιμητικῆς καὶ **περὶ κωμῳδίας
+ὕστερον ἐροῦμεν** — *concerning comedy we shall speak **later***.
+
+**The promised treatment is the most famous absent text in the corpus.** And the
+*Poetics* itself notes that comedy's own history went unrecorded: ἡ δὲ κωμῳδία διὰ
+τὸ μὴ σπουδάζεσθαι ἐξ ἀρχῆς **ἔλαθεν** — *comedy escaped notice because it was not
+taken seriously from the start.*
+
+**A conclusion transmitted without its argument in Plato; a promised book absent in
+Aristotle; and comedy's own origin declared unrecorded by the text that promises
+it.** Three absences at the same joint.
+
+## 193. THE DEMONSTRATION IS THE CORPUS
+
+**M28's result, re-read.** Aristotle's dispersion is indexed by **what he is
+writing about**; hold the object constant and the anomaly disappears — within-domain
+**0.0571** against Plato's total **0.0570**. Domain by domain: ethics tightest
+(0.0226, tighter than 99.5% of multi-author pools), logic loosest (0.0942).
+
+    the treatise takes the form of what it treats
+
+**The Republic denies the capacity. The Symposium asserts it and withholds the
+proof. De generatione supplies the principle. And the Aristotelian corpus IS the
+demonstration** — a body of writing whose shape is determined by its object across
+the widest range of objects any single ancient author covers.
+
+> **Plato TELLS us that one man can make both kinds.**
+> **Aristotle SHOWS us, by being a corpus with no style of its own.**
+
+## 194. WHAT THIS ESTABLISHES, AND WHAT IT DOES NOT
+
+**ESTABLISHES — textual, checkable:**
+1. The proposition appears in both directions in the Platonic corpus, in the same
+   words, at *Republic* 395a and *Symposium* 223d.
+2. The *Symposium* states in its own text that the argument was not remembered.
+3. The two compelled hearers personify the two genres, and the comedian sleeps first.
+4. *GC* 315b states the same-elements-different-arrangement principle using
+   **tragedy and comedy** as its illustration.
+5. The *Poetics* defers comedy to a treatment that does not survive.
+
+**DOES NOT ESTABLISH:** that these are one author's design. **Every element has an
+ordinary reading.** The *Symposium*'s unremembered argument is a standard Platonic
+frame device — Plato repeatedly stages imperfect transmission (*Symposium*'s whole
+narration is third-hand; the *Theaetetus* is read from a book; the *Parmenides* is
+recalled at two removes). The *GC* passage is doxography of Democritus, and the
+letters-analogy for atomic rearrangement is standard atomist illustration, not
+Aristotle's own invention. The *Poetics*' lost second book is the most ordinary
+kind of loss.
+
+**WHAT IS NOT ORDINARY is the conjunction:** the corpus that denies the capacity,
+the corpus that asserts it while declaring its proof unrecorded, and the corpus
+that supplies the mechanism, are the two corpora under examination — **and the
+second corpus is the capacity's own demonstration at maximal amplitude.**
+
+**That is a conjunction, not a proof. It is recorded as the strongest immanent
+structure the investigation has found, and as the version that requires no
+comparative material from outside the target corpus.**
+
+
 ∮ = 1
