@@ -31,6 +31,59 @@ because the evidence would not carry it. **This states the claim first, at the l
 where it holds, and reports the measurements last, at the level where the corpus
 itself says it will not hold.**
 
+
+---
+
+## THE CONSTRAINTS THIS ARGUMENT OPERATES UNDER
+
+**[F1] THE FIREWALL, and it is a constraint on method rather than a modesty
+clause.**
+
+> **Biographical identity requires evidence. Functional identity requires pattern.
+> These are different claim-types with different burdens of proof, and the stability
+> of everything here depends on never letting the second masquerade as the first.**
+
+**Imposed from outside because the method cannot halt its own regress.** A functional
+analysis permitted to make biographical claims has no floor and consumes every
+adjacent name. **This is the answer to the objection that the method would make one
+author of all modern philosophy** — not a disanalogy about print and archives, but a
+statement of what the instrument is for and where it stops.
+
+*Foucault, "What Is an Author?" (1969; trans. Bouchard and Simon, 1977) makes the
+author-function separable from the writing individual and is the licence for treating
+authorship as a variable rather than a given. Barthes, "The Death of the Author"
+(1967) is the adjacent move and is not the one used here: this paper does not
+dissolve the author, it asks what kind of unity an author is. Love,* Attributing
+Authorship: An Introduction *(2002) is the methodological standard for attribution
+claims and is the discipline §VII operates under.* Cambridge Handbook of Literary
+Authorship *(Berensmeyer, Buelens, Demoor, 2021) surveys the field in which the
+firewall's distinction is standard.*
+
+**[F2] THE TIERED CLAIM STRUCTURE.**
+
+    PRIMARY    (high confidence)  the configuration can be FUNCTIONALLY MODELED
+                                  as a distributed authorial project
+    §VI CLAIM  (asserted, argued) ONE PERSON wrote the corpus
+    SECONDARY  (medium)           the Socratic problem appears as a SYMPTOM
+    REFLEXIVE  (heuristic only)   Pessoa and Kierkegaard make the model
+                                  THINKABLE; they do not prove its application
+
+**[F3] WHAT IS NOT CLAIMED, and the list is load-bearing.**
+
+- **Not** that Plato or Aristotle understood himself as a heteronym. **The term is
+  analytic and is not a claim about ancient self-description.**
+- **Not** that philological dating, historical context, doctrinal difference, or
+  textual criticism is irrelevant or superseded. **Every dating argument and textual
+  comparison remains available and valuable.**
+- **Not** that Pessoa-style heteronymy existed as a named or institutionalised
+  practice in classical Athens.
+- **Not** that a contemporary distributed archival practice proves anything about the
+  classical case.
+
+---
+
+## §I — THE DIVISION OF GOD
+
 ---
 
 ## I. THE DIVISION OF GOD

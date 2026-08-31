@@ -186,4 +186,29 @@ about the corpus. That it recurs for a reason is not claimed here.**
 **26.** **Not claimed:** authorship. **Nothing in this section bears on it**, which
 is the point of its position in the argument.
 
+
+---
+
+## NOTES
+
+*Apparatus entries bearing on this section, from
+`EA-MANY-AND-ONE-APPARATUS.md`. Compression of engagement already performed; editions
+and dates are as carried and are not re-verified. Items marked ⚠ named-and-not-
+consulted are stated as such.*
+
+**[II.1] On the hylomorphic reading, conceded in full.** *De an.* II.2 argues against
+the Platonic tripartition and against any account making the parts substances; the
+plant and insect observations are evidence for hylomorphism. **That reading is
+correct for the chapter.** What is added is that the formula **ἐντελεχείᾳ μὲν μιᾶς …
+δυνάμει δὲ πλειόνων** is more general than the biology it settles.
+
+**[II.2] On the exemption at 413b, and its later career.** *τοῦτο μόνον ἐνδέχεται
+χωρίζεσθαι, καθάπερ τὸ ἀΐδιον τοῦ φθαρτοῦ.* **The eternal/perishable seam named at
+the end of the chapter that settles every other case.** *Its history is III.5's: see
+[VI.6].*
+
+---
+
+## §III — THE MANY ACCOUNTS
+
 ∮ = 1

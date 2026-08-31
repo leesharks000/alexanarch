@@ -154,4 +154,37 @@ about a body of writing.**
 **22.** **Not claimed:** authorship. **This section, like §§I–II, would stand if the
 authorship question had never been asked.**
 
+
+---
+
+## NOTES
+
+*Apparatus entries bearing on this section, from
+`EA-MANY-AND-ONE-APPARATUS.md`. Compression of engagement already performed; editions
+and dates are as carried and are not re-verified. Items marked ⚠ named-and-not-
+consulted are stated as such.*
+
+**[III.1] On the six definitions.** The standard reading is that the *Sophist*'s
+divisions are preliminary and that the dialogue proceeds to a seventh. **Conceded.**
+What is claimed is only what 232a states: that being addressed **πολλοῖς ὀνόμασιν
+ἀνθ᾽ ἑνός** is what happens to one who **οὐ δύναται κατιδεῖν** the convergence.
+
+**[III.2] On the Minimal View.** **Vlasits**, *Platonic Division and the Origins of
+Aristotelian Logic* (Berkeley, 2017): division is **transitive and predicative** and
+**not necessarily dichotomous, not exclusive, not essential** — against the
+Traditional View. **This is the formal licence for six consistent divisions of one
+kind.** He also proves soundness and completeness for a semantics on Platonic
+divisional structures against the system used to model the syllogistic, and argues
+Aristotle took over **predication as parthood**.
+
+**[III.3] On genre, and it belongs here as much as at §VIII.** **Nightingale**,
+*Genres in Dialogue: Plato and the Construct of Philosophy* (1995): the dialogue form
+is not a neutral vehicle but the construction of philosophy as a genre against rival
+genres. *One kind under many accounts is also one genre constituted by contrast with
+others.*
+
+---
+
+## §IV — COLLECTION
+
 ∮ = 1

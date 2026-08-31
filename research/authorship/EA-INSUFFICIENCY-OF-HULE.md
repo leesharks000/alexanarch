@@ -224,4 +224,91 @@ appears:** §§15–17. **Reported as a test that could have gone otherwise:** �
 **37.** **This section does not argue.** It reports, and the argument for its
 placement is §I's, not its own.
 
+
+---
+
+## NOTES
+
+*Apparatus entries bearing on this section, from
+`EA-MANY-AND-ONE-APPARATUS.md`. Compression of engagement already performed; editions
+and dates are as carried and are not re-verified. Items marked ⚠ named-and-not-
+consulted are stated as such.*
+
+**[VII.1] On attribution method.** **Love**, *Attributing Authorship* (2002), is the
+standard: attribution claims require converging evidence of distinct kinds and
+stylometric evidence alone is not probative of identity. **§VII's result is that
+standard, applied and reported.**
+
+**[VII.2] On the one instrument that returned a positive.** EA-YIELD-02 read λόγος,
+not ὕλη — six transmission functions, Plato 6/6 across six dialogues at sharpness
+1.00, Aristotle 6/6 across five works. **The school caveat stands and is the reason it
+is not decisive:** a research tradition with a shared programme produces functional
+co-coverage.
+
+**[VII.3] On what the nulls do not license.** **Distinct textual voice does not entail
+distinct maker (M48, M50).** *This cuts against the thesis as much as for it, and
+§VIII 4e states the cost: the argument loses the right to use stylistic athetesis as a
+filter.*
+
+**[VII.4] On the papyrological record.** *Corpus dei Papiri Filosofici Greci e Latini*
+(Olschki, 1989–) is where independent physical evidence for the corpus's early
+circulation would be found. **It has not been consulted by this investigation and is
+named as the standing external check** — the kind of evidence §VII says would bear on
+the question and this paper does not have.
+
+---
+
+## §VIII — THE ORDER OF THE CORPUS
+
+**[C1] ⭑ ALBERT AND AQUINAS ARE NOT A CONTROL FOR OBJECT-CONDITIONING.**
+
+**They are the best available control for PERSON-DISTINCTNESS** — canonization
+proceedings, Dominican chapter records, university registers: evidence with no
+relation to textual style.
+
+**⚠ AND THEY ARE INSIDE THE ARISTOTELIAN TRANSMISSION.** Both are commentators on
+Aristotle; the *Summa*'s quaestio-and-articulus structure is the Aristotelian
+partition applied to theology. **So Aquinas's 1.503 is not an independent author
+reaching Aristotle's 1.489 — it is the ratio appearing in its most saturated
+inheritor.** *M43's title claimed the control problem was solved. It is not, and the
+correction is carried in the register.*
+
+**[C2] AND THE TABLE REFUTES ITS OWN USE.** 1.489 → 1.503 → 1.762 → 2.707. **The ratio
+tracks how unlike the objects are. It never tracked how many authors there were.**
+
+**[C3] THEOPHRASTUS WAS VOIDED FIRST, ON THE SAME GROUND (M36).** *The negative class
+M36a demanded — a corpus performing heavy division-and-classification on an object
+that is not the Aristotelian corpus, standing outside its transmission — remains
+EMPTY. That may be a structural property of the object rather than a gap in the
+search.*
+
+---
+
+## THE COMPARATIVE PAIRS
+
+**[P1] THE BATTERY'S CLASS 1**, on documentary attestation only, with ancient
+attestations excluded as circular: **Wundt → Titchener** (Leipzig PhD 1892,
+university records); **Freud → Jung** (1907–13 correspondence, IPA presidency);
+**Albert → Aquinas** (Dominican chapter records).
+
+**[P2] AND THE GREEK PAIRS THAT KILLED IT.** **Lysias → Isocrates**, with no teaching
+relation, outscores **Isaeus → Demosthenes**, which has one, on every inheritance
+feature. **Herodotus → Thucydides** is contemporary and scores like the distant pairs
+— Ionic against Attic. *The battery reads period and dialect.*
+
+**[P3] HERODOTUS → JOSEPHUS** as the distant-lineage control. *Josephus also carries
+the archive's separate Revelation-priority work and is named here only as a battery
+member.*
+
+---
+
+## THE HETERONYMIC ARCHITECTURES ARE NOT ONE
+
+**[X.3] On the paper's use of it.** §IX cites the line as the model of survival — a
+text living inside another text, addressed past its own moment. **The Homeric parallel
+[IX.4] is the large-scale form and runs the other way; Sappho is the small-scale form
+and runs this way.** *Neither is offered as evidence about the Athenian corpus.*
+
+## §VIII — THE ATTESTATION CHAIN
+
 ∮ = 1

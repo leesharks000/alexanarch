@@ -284,4 +284,168 @@ identity claim is false.
 are its evidence, and **§VII reports every instrument that failed**, including those
 that failed after being relied upon.
 
+
+---
+
+## NOTES
+
+*Apparatus entries bearing on this section, from
+`EA-MANY-AND-ONE-APPARATUS.md`. Compression of engagement already performed; editions
+and dates are as carried and are not re-verified. Items marked ⚠ named-and-not-
+consulted are stated as such.*
+
+**[VI.1] ⭑ KAHN (1996) IS THE ORTHODOX ANTECEDENT AND THE CLOSEST EXISTING
+POSITION.**
+
+**Kahn**, *Plato and the Socratic Dialogue: The Philosophical Use of a Literary Form*
+(1996): the dialogues are **a unified literary-philosophical project**; the early
+"Socratic" dialogues are **deliberately constructed by Plato as a philosophical
+vehicle**, not historical records; and Kahn **explicitly rejects the Vlastosian
+separation** of an early Socrates from a middle Plato. **The corpus is the unified
+work of a single author deploying a literary character across an integrated project.**
+
+> **THE DEPARTURE IS ONE SENTENCE. Where Kahn reads the corpus as one author (Plato)
+> deploying a literary character (Socrates), the configurational reading identifies
+> Socrates as an authorial POSITION in his own right** — not a character within a
+> project but the position the project is organised around.
+
+*This makes §VI's claim an extension of a position in print rather than a novelty,
+which is stronger. **The paper is orthodox up to one sentence and heterodox after
+it**, and the sentence is nameable.*
+
+**[VI.2] On heteronymy as availability of concept, not as proof.** **Pessoa**,
+*Páginas Íntimas e de Auto-Interpretação* (1966), including the **letter to Adolfo
+Casais Monteiro of 13 January 1935** on the genesis of the heteronyms; *The Book of
+Disquiet* (ed. Zenith, 2002); **Pizarro**'s critical editions (2009–); **Zenith**, *A
+Little Larger than the Entire Universe* (2006). **Kierkegaard**, *On the Concept of
+Irony with Continual Reference to Socrates* (1841), *Concluding Unscientific
+Postscript* (1846, under Johannes Climacus), and *The Point of View for My Work as an
+Author* (posth. 1859).
+
+> **⚠ These establish that the configuration is THINKABLE. They establish nothing
+> about antiquity, and the paper says so at [F2].** *And note what the register found:
+> Pessoa's system closes by REMAINDER — progressive constraint toward an invariant —
+> while the configuration under examination would close by SUM. **They are not the
+> same architecture and the analogy is availability only.***
+
+**[VI.3] On the two Kierkegaards.** *Concluding Unscientific Postscript* is signed by
+a pseudonym and *The Point of View* is the author's own account of the pseudonyms,
+published posthumously. **A corpus containing both its heteronymic performance and its
+own retrospective key is the nearest documented parallel to a corpus containing
+*Letter* II.**
+
+**[VI.4] On *Letter* II.** *οὐδ᾽ ἔστιν σύγγραμμα Πλάτωνος οὐδὲν οὐδ᾽ ἔσται.* **The
+Letters are of disputed authenticity and II is among the most disputed; nothing is
+inferred from its doctrine.** *What is recorded is that the corpus contains a denial
+of its own authorship, and that the author-name appears 23 of 26 times in the book
+where authorship is being asserted. The licensing question — whether admitting the
+Letters commits the argument to the Aristotelian pseudepigrapha — is answered at
+§VIII 4e.*
+
+**[VI.5] On Cicero's two genera.** *De finibus* 5.12: *duo genera librorum … unum
+populariter scriptum … alterum limatius quod in commentariis reliquerunt.*
+*Academica* 2.119: *veniet flumen orationis aureum fundens Aristoteles.* Quintilian
+*Inst.* 10.1.83 concurs. **Modern readers agree the golden river does not describe
+the extant prose.** *So the received account concedes the two-register capacity in its
+own testimony and has lost the register-crossing half.*
+
+**[VI.6] On *De anima* III.5.** The referent of **τούτου** and the parsing of
+**οὐθέν** are disputed; whether the chapter has turned to divine νοῦς is among its
+great contested readings, **and this paper does not assume it.** *Its reception —
+Alexander, Themistius, Averroes, the condemnation, Aquinas's* De unitate intellectus
+*— is the largest sustained disagreement about a single passage in the history of
+philosophy, and is treated in the notebook, not here.*
+
+**[VI.7] On the σιμ- result (M34).** **Poisson base rate stated first: P = 0.58,
+unremarkable.** Absence alone shows nothing. **The Fisher against the co-placeholder
+gives p = 0.00022.** *Where Aristotle needs a face he uses Callias; where he needs a
+name he uses Socrates.*
+
+---
+
+## §VII — THE INSUFFICIENCY OF ὝΛΗ
+
+**[H1] ⭑ PESSOA CLOSES BY REMAINDER; THE CONFIGURATION WOULD CLOSE BY SUM.**
+
+    PESSOA          progressive subtraction toward an invariant.
+                    Caeiro 1.781 (sensation only) → Soares 1.632 (one street) →
+                    Mora 1.437 (one doctrine) → Reis 1.374 (one meter) →
+                    Campos 1.129 (everything) → orthonym 1.033 (no restriction)
+                    The series is a search DOWNWARD: what is the least one can
+                    specify and still get a self that coheres?
+
+    THE CONFIGURATION   complementary coverage. Positions need not approach an
+                    invariant remainder; they can be complementary pieces.
+
+> **There is no single P(E|H_H) until the type of heteronymic construction is
+> specified.** *This prevents the mirror of the error the paper charges: defining
+> heteronymy elastically enough to absorb every result.*
+
+**[H2] AND THE DEATH OF THE MASTER IS NOT INDEPENDENT EVIDENCE.** Pessoa gives Caeiro
+a lifespan, a last poem dictated on the day of death, disciples reporting his speech,
+and names **the school** — *as obras do Mestre e algumas do discípulo directo*. **The
+master position is constituted by dying.** ⚠ *And Pessoa was reading Plato. Two of the
+best-documented heteronymists built the Socratic structure, and imitation cannot be
+distinguished from convergence on the cases available.*
+
+---
+
+## STANDING OF PASS TWO
+
+**Engagement recorded that was performed and not carried into the apparatus.**
+**⚠ Editions, fragment numbers and dates above are as carried in the notebook and
+register and have NOT been re-checked against the works.** Wehrli's numbering, the
+Voigt/Lobel–Page sigla, Blass and Worthington's exact formulations, and the
+Andronicus/Thrasyllus dates are the citation pass, which is a separate operation.
+
+**⚠ AND ONE ITEM IS NAMED AS ABSENT RATHER THAN COMPRESSED.** §IX was written against
+authorship, publication and reception scholarship that is only partly represented in
+either pass. **Speyer** on ancient forgery, **Blum** on Callimachus and the origins of
+bibliography, and the Alexandrian library literature are named at [IX.2] and are not
+yet read.
+
+∮ = 1
+
+**[X.13] On Frede and the modern reconstructors.** *De anima* III.5's modern
+literature is named in the notebook and not engaged. **The paper's [VI.6] declines to
+assume the divine identification and refers the reception to the notebook;** *the
+modern analytic treatments are the branch that would have to be engaged if III.5 were
+made load-bearing, and it is not.*
+
+---
+
+## STANDING OF THE APPARATUS
+
+**Pass one is complete: the citational labour of Socrates as Orthonym v2.2 is
+compressed and keyed.** Forty-five references, five domains.
+
+**PASS TWO IS RUN** — 53 rounds and M1–M52 audited for named engagement the apparatus
+lacked. **Thirteen found and entered at [X.1]–[X.13].** The largest was the paper's own
+precedent: **22 Sappho mentions and 23 Catullus mentions with no bibliographic note**,
+including the fact that **the sole transmitter of fr. 31 is a treatise whose own author
+is unknown.**
+
+**⚠ AND FOUR ITEMS ARE NAMED AS UNCONSULTED, not summarised as if read:** Mueller's
+Alexander [X.10], Ebbesen and al-Fārābī [X.11], Hasper on the completeness claim
+[X.8], and the CPF [VII.4]. **[X.10] and [X.8] are the two closest existing treatments
+of §I's central text.**
+
+**⚠ AND EVERY ENTRY ABOVE IS A COMPRESSION, NOT A VERIFICATION.** Editions, dates and
+page references are as carried in the Orthonym paper's reference list and **have not
+been re-checked against the works**. That is the citation pass and it is a separate
+operation.
+
+**Not yet adapted to venue norms.** This is the machine.
+
+---
+
+# PASS TWO — THE NOTEBOOK AND THE REGISTER
+
+*Added 2026-08-31. Fifty-three rounds and M1–M52 passed for engagement not carried in
+pass one. **Sorted by what the paper leans on hardest.***
+
+---
+
+## THE EDITORIAL ACTS THAT MADE THE CORPORA
+
 ∮ = 1

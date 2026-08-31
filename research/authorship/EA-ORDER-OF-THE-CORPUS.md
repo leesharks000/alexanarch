@@ -417,4 +417,163 @@ about the method is a reading.
 λόγος. Shown not decidable at ὕλη** — which is where Λ 1075a1 said it would not be
 decidable.
 
+
+---
+
+## NOTES
+
+*Apparatus entries bearing on this section, from
+`EA-MANY-AND-ONE-APPARATUS.md`. Compression of engagement already performed; editions
+and dates are as carried and are not re-verified. Items marked ⚠ named-and-not-
+consulted are stated as such.*
+
+**[VIII.1] ⭑ VLASTOS AND THE DEVELOPMENTAL METHOD, WHICH THIS SECTION DISPLACES.**
+
+**Vlastos**, *Socrates: Ironist and Moral Philosopher* (1991), and "The Historical
+Socrates and Athenian Democracy," *Political Theory* 11 (1983). **The method treats
+the corpus as a stratified deposit:** identify which doctrines belong to the early
+Socrates and which to the middle Plato; date the strata; sequence them; narrate the
+evolution.
+
+**It requires three commitments:**
+
+    1  the voices are INDEPENDENT AUTHORIAL SOURCES
+    2  their positions can be DATED AND ORDERED
+    3  the ordering reveals DOCTRINAL DEVELOPMENT — a change of mind over time
+
+**§VIII denies (3) and reconstrues (2). It does not touch (1)'s evidence, only its
+necessity.**
+
+> **One does not excavate a fugue for the composer's evolving opinions about the
+> subject; one hears the voices doing different work at once.**
+
+*Kahn's unitarianism already rejected the Vlastosian separation on literary grounds
+[VI.1]. **The configurational reading removes the last frame in which doctrine-mining
+remains intelligible — the frame of independent corpora — while every dating argument,
+textual comparison and doctrinal contrast remains available.** What it removes is the
+developmentalist narrative apparatus, not the descriptive work.*
+
+**[VIII.2] On Denyer and the repertoire.** **Denyer**, in the introductions to
+*Plato's Protagoras* and *Plato's Alcibiades*, holds that Plato could write in the
+early, middle or late style at any point of his life. *This is standardly a challenge
+to chronological interpretation.* **On the relocation it is a prediction: if the order
+is generic, a repertoire is exactly what one expects.** ⚠ *And §VIII states that this
+gives the contaminated result a new interpretation without removing the
+contamination; the independent form-track test is stated so it can be run against
+this paper.*
+
+**[VIII.3] On genre as the axis.** **Nightingale** (1995) is the case that the
+dialogue is a constructed genre defined against rivals. *If development is generic,
+the genre literature is where the independent track would be built.*
+
+**[VIII.4] On the lost Socratics.** **Boys-Stones and Rowe** (2013) collect the
+fragments. **Antisthenes, Aeschines of Sphettus, Phaedo of Elis, Euclides** —
+Euclides with no fragments at all, and the *Theaetetus* frame presenting him as the
+dialogue's author, which the scholarship calls implausible. *Aristotle counts the
+Socratic dialogues as fictions at* Poet. *1447b, and is the sole attestation for
+**Alexamenos**, credited with inventing the genre.*
+
+**[VIII.5] On the doxographic channel.** **Diels**, *Doxographi Graeci*, built the
+tradition on **Theophrastus' Φυσικῶν Δόξαι**. *So the corpus with complete coverage of
+the predecessors is the channel through which the predecessors survive.* ⚠ **Null: a
+first historian of philosophy produces this profile, and Aristotle is conventionally
+called one.**
+
+**[VIII.6] On the transmission history that bounds the corpus.** Strabo XIII and
+Plutarch's *Sulla* on the fate of the library and the Andronican edition. *§VIII 4e's
+principle — internal doubt does not exclude, external evidence does — rests on this
+being where the received account's strongest work lies.*
+
+---
+
+## §IX — THE FLOOD
+
+**[E1] ⭑ ANDRONICUS AND THRASYLLUS, and §VIII 4e rests entirely on them.**
+
+**The two corpora are two editorial acts, and they are not the same kind of act.**
+
+**ANDRONICUS OF RHODES** (1st c. BCE) arranged the Aristotelian *pragmateiai* — the
+esoteric treatises, from the school's working texts. **The exoteric dialogues, which
+antiquity knew Aristotle by, are not in that edition and did not survive it.** *So
+the Aristotelian corpus is a SELECTION, made by a school, of what a school used.*
+**Strabo XIII** and **Plutarch's *Sulla*** carry the transmission story — the
+manuscripts hidden, damaged, and recovered — and it is where the received account's
+strongest work lies.
+
+**THRASYLLUS** (1st c. CE) arranged the Platonic corpus into **nine tetralogies**,
+thirty-six works, **including works no modern editor accepts.** *So the Platonic
+corpus is a COMPLETE-AS-RECEIVED arrangement in which the disputed works are
+constitutive members of the ordering.*
+
+> **⭑ THAT ASYMMETRY IS §VIII 4e's PRINCIPLE, and it is a historical fact about two
+> editorial acts rather than a stipulation.** Platonic spuria are doubted **inside**
+> an arrangement that includes them; Aristotelian pseudepigrapha are attributed
+> **outside** an arrangement that excludes them.
+
+**And §IX's numbered set is Thrasyllus.** A tetralogy makes its own gaps visible. *The
+device the section names as the cheapest and strongest in antiquity is the device that
+constitutes the Platonic corpus as an object.* ⚠ **Null: Thrasyllus is first century
+CE, four hundred years after composition. The arrangement cannot be evidence of
+design at composition, and §IX's mechanisms are claimed to FUNCTION as transmission
+mechanisms whatever their origin — not to have been placed.**
+
+---
+
+## THE INCOMPLETION TECHNOLOGY
+
+**[A1] ARISTOXENUS AND THE FRAGMENT PROBLEM.** *Harmonics* II reports that Aristotle
+**always used to relate** what happened at Plato's lecture *On the Good* — hearers
+came expecting human goods and got mathematics. **This is the earliest attestation of
+the attendance, and it is the earliest attestation of the disappointment.**
+
+**⚠ AND ARISTOXENUS'S OWN ACQUAINTANCE WITH ARISTOTLE IS ATTESTED ONLY BY Fr. 1
+WEHRLI** — a fragment of unverified transmission. *Round 40's "good contemporary
+evidence" language is superseded by Round 41 §163 and the corrected form is what the
+paper carries.*
+
+**[A2] AND THE ANECDOTE INVERTS UNDER MEASUREMENT.** Narrative apparatus is
+**4.7–16.7× denser in Plato**; mathematical vocabulary **2.4–10.3× denser in
+Aristotle**. *The reader who arrives wanting a story and receives number is reading
+Aristotle.* **The anecdote is told to justify Aristotle's own rule about beginning
+with the appropriate method.**
+
+---
+
+## THE SE 34 SCHOLARSHIP
+
+**[X.4] On Aristoxenus.** The *Harmonics* II report of Aristotle's account of Plato's
+lecture *On the Good* is **the earliest witness to the attendance**, and the
+investigation's finding is that **Aristoxenus' own acquaintance with Aristotle is
+attested only by fr. 1 Wehrli** — a fragment of unverified transmission. ⚠ *Round 40
+originally called this good contemporary evidence and Round 41 §163 corrected it. The
+corrected form is the one the paper uses.*
+
+**[X.5] On Speusippus and Xenocrates.** The Academy's successors survive as titles.
+*They are named in §VIII 4c's enumeration and are the near case of the same loss: the
+institution's own continuators, gone, while the corpus they continued survives
+complete.*
+
+**[X.6] On Heraclides and the manufactured philosophers.** **Hicetas and Ecphantus of
+Syracuse**, argued to be characters in Heraclides of Pontus' dialogues and received by
+the doxographic tradition as historical philosophers with doctrines; and **Timaeus of
+Locri**, who acquires a biography and then a forged corpus, with some scholars holding
+that Plato used him as a mask for **Archytas**. *This is M44's evidence that the
+attribution apparatus manufactured figures it then adjudicated, and it is standard
+scholarship rather than this paper's inference.*
+
+## §I — THE SE EPILOGUE AND ITS SCOPE
+
+**[X.10] On Mueller.** The translation of **Alexander's commentary on *APr* 1.23–31**
+*provides an insightful account of Aristotle's criticism of Plato's method of
+division* and **has not been consulted**. ⚠ *It is the single most relevant unconsulted
+item for §I.*
+
+**[X.11] On Ebbesen and the Latin tradition.** **Ebbesen**'s study of the *SE*
+commentary tradition is the standard treatment of how the epilogue was read in the
+scholastic period, and **has not been consulted**. **al-Fārābī**'s abridgement of the
+*Prior Analytics* is the Arabic branch, likewise unconsulted. *Round 42 §169 names
+the Syriac and Arabic branches as the unopened part of the reception.*
+
+## §V — THE ACCUSATION
+
 ∮ = 1

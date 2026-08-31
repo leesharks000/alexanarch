@@ -212,4 +212,107 @@ and not argued from:** §13, the *Categories* correspondence.
 question and were established before it was raised. **This is where the corpus
 begins to be read as a maker's work, and the reader is told so.**
 
+
+---
+
+## NOTES
+
+*Apparatus entries bearing on this section, from
+`EA-MANY-AND-ONE-APPARATUS.md`. Compression of engagement already performed; editions
+and dates are as carried and are not re-verified. Items marked ⚠ named-and-not-
+consulted are stated as such.*
+
+**[V.1] ⭑ THE SOCRATIC PROBLEM, AND THIS SECTION IS AN ANSWER TO IT.**
+
+Classical philology has not separated Socrates from Plato. **The orthodox name for
+the failure is the Socratic problem**: where does the historical Socrates end and the
+Platonic character begin. Articulated from **Schleiermacher**, *Introductions to the
+Dialogues of Plato* (1804); canonical statements in **Burnet**, *Plato's Phaedo*
+(1911); **Taylor**, *Socrates: The Man and His Thought* (1932); **Vlastos**,
+*Socrates: Ironist and Moral Philosopher* (1991); **Kahn** (1996); **Cooper**'s
+editorial introduction to *Plato: Complete Works* (1997). **Dorion**, "The Rise and
+Fall of the Socratic Problem," in *The Cambridge Companion to Socrates* (2011), is
+the historiography of the failure.
+
+**The contemporary consensus after two centuries is that it has no clean
+resolution.**
+
+> **The claim here is not that the problem is solved. It is that under a functional
+> lens it appears as a SYMPTOM rather than a problem** — the predictable trace of a
+> configuration the biographical model cannot represent.
+
+*And it is a family rather than one problem: the historical question (what did the
+man hold), the methodological question (what could count as evidence), and the
+literary question (what is the character for). **§V answers none of the three and
+reclassifies all of them**: the corpus supplies a criterion — not the face, not the
+name, but ἀναγνωρίζειν διὰ λόγων — and §VII shows the instruments see only face and
+name.*
+
+**[V.2] On the prosopography.** **Nails**, *The People of Plato* (2002), is the
+standard reference for who the characters were and which are attested independently.
+**Boys-Stones and Rowe**, *The Circle of Socrates* (2013), collects the
+first-generation Socratics — the authors of §VIII 4c's lost genre. **Moore**,
+"Chaerephon the Socratic," *Phoenix* 67 (2013), is the study of the one figure whose
+independent attestation the investigation tested and found circular (M36).
+
+**[V.3] On Socrates as a made thing.** **Danzig**, *Apologizing for Socrates: How
+Plato and Xenophon Created Our Socrates* (2010), argues the two corpora **constructed**
+the figure between them. **Nehamas**, *The Art of Living* (1998), reads Socrates as a
+model of self-fashioning transmitted by construction. *Both are one step from the
+position §V takes and neither takes it: the constructed figure remains, for them, a
+character made by authors rather than a position the authorship is organised around.*
+
+**[V.4] On ancient lives as fiction.** **Lefkowitz**, *The Lives of the Greek Poets*
+(2nd ed. 2012), and **Fairweather**, "Fiction in the Biographies of Ancient Writers,"
+*Ancient Society* 5 (1974): **biographical detail in ancient lives is routinely
+generated from the works themselves.** *This is the general form of M44's finding
+that the adjudication apparatus is inside the object, and it is standard.*
+
+**[V.5] On the *Statesman* passage.** *The transition device reading is standard and
+is conceded at §§8–9.* **Cat.** 1a1 on homonyms is recorded as a verbal and
+doctrinal correspondence and is not argued from.
+
+---
+
+## §VI — THE MANY VOICES
+
+**[M1] HERACLIDES OF PONTUS, HICETAS AND ECPHANTUS.** **Hicetas and Ecphantus of
+Syracuse are argued to be characters in dialogues by Heraclides** — a fourth-century
+Academic — **received by the tradition as historical philosophers with doctrines.**
+*The reputational apparatus did not detect them. It produced them.*
+
+**[M2] TIMAEUS OF LOCRI.** Acquires a biography and then a **forged corpus**; *all
+other ancient reports about him are likely based on Plato's* Timaeus *or on the
+spurious works in his name*, with some holding that Plato used him as **a mask for
+Archytas.** *A speaking position generating a philosopher, who then receives a
+bibliography.*
+
+**[M3] THE PSEUDO-PYTHAGOREAN STYLE.** The pseudepigraphic authors authenticated their
+writings through an **artificial Doric dialect** and locally appropriate examples.
+**Constructed stylistic markers, chosen to authenticate.** *Which is the direct
+counter-case to any argument from stylistic authenticity, and belongs at [VII.1].*
+
+**[M4] POLYCRATES' *KATEGORIA SOKRATOUS*.** Attested only through Isocrates'
+*Busiris* attacking it. **The one non-cluster attestation of Socrates that is neither
+a different man nor proverbial is an attestation of a LOST PAMPHLET, known from an
+attack on it.**
+
+**[M5] DEMOSTHENES 61, THE *EROTIC ESSAY*.** Spurious by near-unanimous consensus.
+**Blass** places it with **a member of a school of Isocrates** and finds the author
+**familiar with the *Phaedrus***; **Worthington** finds its content and style **the
+most removed from Demosthenes' other writings** and **influenced by both Plato and
+Isocrates.** *So the single remaining line of Socrates-attestation outside the cluster
+sits in a forgery whose author was demonstrably reading Plato.*
+
+---
+
+## THE SCHOLASTIC CONTROL, AND WHY IT FAILED
+
+**[X.12] On Polycrates.** The lost **Κατηγορία Σωκράτους** is known only from
+**Isocrates' *Busiris*** attacking it. *The two Isocratean mentions of Socrates in the
+seated corpus are both in that one work and both concern the pamphlet rather than the
+man — which is why Round 43 counts them as attesting a text and not a person.*
+
+## §VI — ON THE UNITY OF THE INTELLECT
+
 ∮ = 1

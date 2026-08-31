@@ -303,4 +303,236 @@ claimed is that **they function as transmission mechanisms whatever their origin
 that the corpus states the condition (275e), the remedy (276e–277a) and the reward
 (209e) in its own words.
 
+
+---
+
+## NOTES
+
+*Apparatus entries bearing on this section, from
+`EA-MANY-AND-ONE-APPARATUS.md`. Compression of engagement already performed; editions
+and dates are as carried and are not re-verified. Items marked ⚠ named-and-not-
+consulted are stated as such.*
+
+**[IX.1] ⭑ THE BOOK-HISTORICAL FRAME, AND IT IS THE SECTION'S FOUNDATION.**
+
+**Chartier**, *The Order of Books: Readers, Authors, and Libraries in Europe between
+the Fourteenth and Eighteenth Centuries* (trans. Cochrane, 1994): **the categories of
+author, work and book are produced by the practices that circulate them**, not prior
+to those practices. *This is the section's licence for reading the corpus's features
+as transmission mechanisms.*
+
+**[IX.2] On the oversupply and the copying economy.** **Ong** (1982) on the
+technologising of the word; **Chartier** on the order of books; and for antiquity
+specifically, the Ptolemaic purchase-by-the-roll and the forgeries it produced.
+*Speyer's* Die literarische Fälschung im heidnischen und christlichen Altertum *is
+the standard treatment of the ancient forgery economy and is named as the check this
+section has not run.*
+
+**[IX.3] On lives generated from works.** **Lefkowitz** (2012) and **Fairweather**
+(1974) again: **the biographical tradition manufactures its subjects from their
+texts.** *Which is why the absent centre (M49) generates search rather than
+foreclosing it — a founder who wrote nothing can only be reconstructed, and
+reconstruction requires the corpus.*
+
+**[IX.4] On the Homeric parallel.** **Nagy**, *Homeric Questions* (1996), on
+multitextuality and the evolutionary model of a corpus with no single moment of
+composition. *The nearest large-scale analogue to a corpus whose unity is a fact
+about transmission rather than about a hand — and it is a case where the discipline
+accepted exactly that conclusion.* ⚠ **The analogy is not offered as evidence: the
+Homeric case runs toward many makers and this argument runs toward one.**
+
+**[IX.5] On the survival table.** **Diogenes Laertius**, *Lives*, is the source of
+the book-lists. **The four feasibility conditions at §25 are the condition of
+registering the test, and none has been checked.** *The CPF [VII.4] would be the
+independent check on extant status.*
+
+**[IX.6] On the festival records, as the model of what independent evidence looks
+like.** **Millis and Olson**, *Inscriptional Records for the Dramatic Festivals in
+Athens: IG II² 2318–2325* (2012); **Pickard-Cambridge**, *The Dramatic Festivals of
+Athens* (2nd ed. 1988). *These are the epigraphic anchors for the dramatic corpus —
+the kind of external, non-textual evidence §VII says would decide the question and
+the philosophical corpus does not have.*
+
+**[IX.7] On philosophy as practice rather than doctrine.** **Hadot**, *Philosophy as
+a Way of Life* (trans. Chase, 1995). *If the corpus is a set of exercises rather than
+a deposit of propositions, its cross-referentiality is functional rather than
+doctrinal — which is §IX's mechanism read from the other side.*
+
+---
+
+---
+
+# §IX — THE ANCIENT AUTHORIAL ECONOMY
+
+*Pass three, 2026-08-31. §IX asserts a copying economy, an oversupply, a
+purchase-by-the-roll forgery market and a cataloguing problem, and carried almost no
+apparatus for any of it. This is the layer.*
+
+## THE DEMAND SIDE, AND IT HAS A NAMED ANCIENT SOURCE
+
+**[IX.8] ⭑ GALEN ON THE PTOLEMAIC ACQUISITION, AND ON THE FORGERY IT PRODUCED.**
+
+**Galen**, *Commentary on Hippocrates' Epidemics* III (Kühn XVII.A.606–607), is the
+ancient witness §IX needs and did not cite.
+
+**The acquisition:** Ptolemy III Euergetes deposited **fifteen silver talents** with
+Athens against the loan of the **official state copies of Aeschylus, Sophocles and
+Euripides**, to be copied and returned intact. **He had a magnificent copy made on
+the best papyrus, kept the originals, sent the copies back, and told Athens to keep
+the deposit.** *Fifteen talents is ninety thousand drachmas against a labourer's two
+obols a day.*
+
+**And the confiscation:** books arriving by ship were seized, copied, the copies
+returned and the originals shelved — catalogued **βιβλία ἐκ πλοίων**, *libri ex
+navibus*, **books from the ships**.
+
+**⭑ AND GALEN NAMES THE FORGERY MARKET DIRECTLY:** unscrupulous men took advantage of
+the prices Alexandria and Pergamum were paying, **some with great skill in mixing the
+authentic and the spurious, or combining several works into one.**
+
+> **That is §IX's "the Ptolemies would later pay by the roll and receive forgeries at
+> scale" — attested, with a mechanism, by a second-century physician reading the
+> results.**
+
+**[IX.9] On the standard treatment of ancient forgery.** **Speyer**, *Die
+literarische Fälschung im heidnischen und christlichen Altertum* (1971), remains the
+comprehensive study of the ancient forgery economy and its motives. ⚠ **Named and not
+consulted.** *It is the work that would have to be engaged before §IX's forgery claims
+were pressed further than Galen supports.*
+
+**[IX.10] On the library literature.** **Casson**, *Libraries in the Ancient World*
+(2001); **Canfora**, *The Vanished Library* (1989); **MacLeod**, ed., *The Library of
+Alexandria: Centre of Learning in the Ancient World* (2004), including **Barnes**,
+"Cloistered Bookworms in the Chicken-Coop of the Muses"; **Delia**, "From Romance to
+Rhetoric," *AHR* (1992). *The last two are correctives against the romance and are the
+register in which §IX's claims should be pitched.*
+
+## THE CATALOGUING PROBLEM IS NOT A METAPHOR
+
+**[IX.11] ⭑ BLUM ON CALLIMACHUS, AND THE PINAKES ARE THE ANCESTOR OF §IX's OWN
+INSTRUMENT.**
+
+**Blum**, *Kallimachos: The Alexandrian Library and the Origins of Bibliography*
+(1977; trans. Wellisch, Madison, 1991).
+
+**Blum's case:** Callimachus was not only the library's second director but **the
+inventor of two tools still in use — the library catalogue and the
+biobibliographical reference work.** He expanded the inventory lists into the
+**Πίνακες**, in **120 books**, which described and categorised each work and **became
+in effect a Greek national bibliography and the paradigm for most later bibliographic
+lists of Greek literature.** *The Pinakes do not survive; Blum reconstructs them from
+the surviving citations, given in full translation.*
+
+> **⭑ TWO CONSEQUENCES FOR §IX, AND BOTH ARE STRUCTURAL.**
+>
+> **First: §IX's claim that an unshelvable object is a cataloguing problem is
+> literal.** The Pinakes classified by genre and by author. **A corpus whose genre has
+> no name (Σωκρατικοὶ λόγοι at *Poet.* 1447b) and whose attributions are disputed is
+> precisely what such a system cannot dispose of quietly** — and Blum's
+> reconstruction shows how much apparatus the disposal required.
+>
+> **Second: Diogenes' book-lists — §IX's survival table — descend from this
+> tradition.** The lists are not a neutral record of what existed. **They are the
+> downstream form of a cataloguing operation with its own principles**, and §25's
+> fourth feasibility condition (single-source bias) is understated: the bias is not
+> only Diogenes' but the Pinakes'.
+
+**[IX.12] On authorship as a cataloguing category.** *That the Pinakes were organised
+by author is not a fact about authorship but a fact about libraries.* **Blum's
+argument is that the biobibliographical entry — the life prefixed to the work-list —
+was invented as a finding aid.** *Which is [V.4]'s Lefkowitz and Fairweather from the
+institutional side: the lives were generated from the works partly because the
+catalogue required a life to hang the works on.*
+
+## SCRIBES WERE CHEAP, AND THE ONE SURVIVING CONSTITUTION PROVES IT
+
+**[IX.13] ⭑ THE ATHENAION POLITEIA PAPYRUS.**
+
+**The sole surviving text of the 158 constitutions** was recovered in 1891 from four
+papyrus rolls near Hermopolis. **The rolls were an estate owner's farm and business
+records, recycled**: he commissioned professional scribes to copy Aristotle and other
+works **on the back of his own accounts.**
+
+> **The economics are the whole of §IX in one artefact. He would pay for scribes and
+> would not pay for clean papyrus. Copying labour was cheap; the writing surface was
+> not.**
+
+**[IX.14] And it is the strongest single datum for §IX's framing.** *One of
+Aristotle's 158 constitutions survives. It survives because a farmer in Middle Egypt
+had used-up account rolls and thought this worth the back of them.* **Not because the
+school preserved it, not because it was central, and not because anyone in Athens
+decided.**
+
+**⚠ AND IT CUTS BOTH WAYS, which §IX must say.** *That is survival by accident, and it
+is the strongest available evidence that the transmission record is noise as well as
+signal.* **A section arguing that features function as transmission mechanisms owes
+this counter-case explicitly: the one constitution we have was saved by a man who
+wanted cheap paper.**
+
+## THE STANDARD TRANSMISSION HISTORY
+
+**[IX.15] On the handbook.** **Reynolds and Wilson**, *Scribes and Scholars: A Guide
+to the Transmission of Greek and Latin Literature* (4th ed. 2013). **This is the
+standard account of how texts reached us and is the work §IX's claims must be
+consistent with.** *It is the baseline against which "most surviving corpora shed
+that machinery" (§14) would be checked, and that comparison has not been run.*
+
+**[IX.16] On what libraries were for.** Ancient libraries functioned as **scribal
+centres that bypassed the book trade** — one could commission a copy directly. *Which
+is the mechanism behind §IX's "give people reasons to copy you": the copying decision
+was made by individuals with access to scribes, not by a publishing institution.*
+**Reproduction was labour-intensive and copyright irrelevant; the constraint was
+never permission but attention and surface.**
+
+**[IX.17] On the reader's side.** **Johnson**, *Readers and Reading Culture in the
+High Roman Empire* (2010), and **Johnson and Parker**, eds., *Ancient Literacies*
+(2009). ⚠ **Named and not consulted.** *If §IX claims a corpus was built to recruit
+copyists, the literature on who actually read and copied in antiquity is the check.*
+
+## STANDING OF PASS THREE
+
+**[IX.18] Galen [IX.8] is quoted from secondary report and the Kühn reference is
+given as carried; it has not been checked against the text.** The Pinakes material
+[IX.11] is Blum's reconstruction and is presented as such. **The *Athenaion Politeia*
+provenance [IX.13] is standard and should carry its editio princeps at the citation
+pass.**
+
+**⚠ THREE ITEMS NAMED AND NOT CONSULTED:** Speyer [IX.9], Johnson and Parker [IX.17],
+and the Reynolds–Wilson comparison [IX.15]. **The third is the one that would test
+§IX's central comparative claim.**
+
+---
+
+# PASS TWO — FROM THE NOTEBOOK AND THE REGISTER
+
+*Run 2026-08-31 by auditing 53 rounds and M1–M52 for named engagement the apparatus
+did not carry. Thirteen found. The largest is the paper's own precedent, which had no
+note at all.*
+
+## §IV / §IX — THE SAPPHO–LONGINUS–CATULLUS LINE
+
+**[X.1] ⭑ THE PRECEDENT HAD NO APPARATUS AND IT IS THE PAPER'S MODEL OF
+TRANSMISSION.** 22 mentions of Sappho and 23 of Catullus across the notebook and
+register, and not one bibliographic note.
+
+**The texts.** Sappho 31 = **Voigt fr. 31** (Lobel–Page 31), whose sole continuous
+witness is **[Longinus]**, *De sublimitate* 10.1–3. **Catullus 51** is the Latin
+version, in Sapphics, with the *Lesbia* name-substitution and the added **otium**
+stanza that is not in Sappho.
+
+**The authorship of *Peri Hypsous* is itself disputed** — the attribution to Cassius
+Longinus is late and contested, and the treatise is conventionally cited as
+**[Longinus]** or *pseudo-Longinus*. *This is not incidental to a paper about
+attribution: **the sole transmitter of the fragment is a text whose own author is
+unknown.***
+
+**[X.2] On the fourth stanza.** Whether Catullus 51's *otium* stanza belongs to the
+poem, and whether it translates a lost Sapphic fifth stanza or is Catullus' addition,
+is a standing question in the commentary. **The reading at Round 44 — that Longinus
+*extends* rather than cuts, and Catullus discharges the grammatical obligation the
+extension creates — is this paper's and requires the extension to be deliberate.**
+⚠ *The ordinary account is that Longinus quoted as much as served his purpose and
+stopped. That account is sufficient and the notebook records the correction as a
+reading.*
+
 ∮ = 1

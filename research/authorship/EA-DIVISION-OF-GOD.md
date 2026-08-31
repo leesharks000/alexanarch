@@ -174,4 +174,86 @@ given here.** A discovery may exceed the earlier work more than once.
 **26.** **Not claimed:** authorship. One author writing the *Analytics*, the *De
 anima*, and Λ produces this sequence. **So does a school.**
 
+
+---
+
+## NOTES
+
+*Apparatus entries bearing on this section, from
+`EA-MANY-AND-ONE-APPARATUS.md`. Compression of engagement already performed; editions
+and dates are as carried and are not re-verified. Items marked ⚠ named-and-not-
+consulted are stated as such.*
+
+**[I.1] On the Λ 9 identity as standard exegesis.** That νόησις νοήσεως states an
+identity of thinker and thought is not this paper's discovery and is not contested.
+**What is offered as new is only that Λ 9 is division succeeding where *APr* I.31 says
+division fails, and the ground of the success.**
+
+**[I.2] On the seated texts.** Bekker via First1KGreek @7881c56 (EA-CORPORA-04/01);
+Burnet via Perseus @df40bf0 (01/08). **Bekker and Stephanus lineation is from standard
+editions and is to be confirmed against the XML before deposit.** *Ross (1949),
+Smith (1989) and Striker (2009) ad* APr *I.31.*
+
+**[I.3] On the ancient reception of I.31, and it belongs in the body.** **Philoponus**
+glosses the chapter with *no one of those before us knew this* — reading the priority
+claim into the division chapter. **Alexander of Aphrodisias** takes the target to
+include Plato. **Striker (2009)** assigns it instead to other Academics who thought
+division was all they needed. *The two passages were read together in antiquity, by
+the earliest commentator to gloss them.*
+
+**[I.4] On whether Platonic division generated the syllogistic.** **Maier** argued
+yes, reading I.31 as the evidence; **Shorey** objected that I.31 is polemic between
+finished theories rather than intellectual autobiography; **de Strycker** defended the
+genealogy; **Cherniss** and **Ross** sided with Shorey; **Vlasits (2017)** revives it
+with a formal argument. *Vlasits reads I.31 as almost a backhanded acknowledgement of
+dependence, which intensifies the historical puzzle without licensing any authorship
+inference.*
+
+---
+
+## §II — THE DIVISION OF LIFE
+
+**[S1] HITCHCOCK, via CORCORAN.** *Sophistical Refutations* 34 claims originality —
+**but for the material preceding the chapter, the *Topics* and *SE*, not for the
+*Prior Analytics*.** *This is the strongest hostile reading of §I's entry passage: if
+ταύτης τῆς πραγματείας means the dialectical treatise-pair, then* APr *I.31's
+εἰρημένη μέθοδος is a different inquiry and there is no collision.* **The paper must
+answer it and the pressure sits at περὶ δὲ τοῦ συλλογίζεσθαι — whether that clause
+remains inside the restriction.**
+
+**[S2] HASPER** on the completeness claim in *SE* 34, and **Dorion (1995)** on the
+epilogue. *Named as the specialist literature on the passage the paper opens with.*
+
+**[S3] AND THE ART/PRODUCTS DISTINCTION IS ARISTOTLE'S OWN.** *οὐ τέχνην ἀλλὰ τὰ ἀπὸ
+τῆς τέχνης*, the shoemaker who hands out shoes. **Two earlier versions of the register
+called the narrow reading an unmarked interpretive repair. Both were wrong**, and the
+correction is carried in §0A's third rewrite. *The comparison class Aristotle names is
+paid eristic teachers and Gorgias — not Plato.*
+
+---
+
+## THE ATTRIBUTION APPARATUS AS MANUFACTURER
+
+**[X.7] On Hitchcock, via Corcoran.** **Hitchcock** argues that *SE* 34's originality
+claim is **not for the *Prior Analytics* but for the material preceding the concluding
+chapter — the *Topics* and *SE* themselves.** *That is the strongest hostile reading
+of the priority passage: if ταύτης τῆς πραγματείας means the treatise-pair, the claim
+concerns dialectic and fallacy, and* APr *I.31's εἰρημένη μέθοδος is a different
+inquiry.* **The paper's answer is at §I: the pressure sits on περὶ δὲ τοῦ
+συλλογίζεσθαι, which is broader, and whether it stays inside the restriction is a
+philological question the paper does not settle by assertion.**
+
+**[X.8] On Hasper.** Work on the **completeness claim** at *SE* 34 is the specialist
+literature on the passage and is named as consulted-in-summary and not read.
+⚠ *Flagged: this is the closest existing treatment of §I's central text.*
+
+**[X.9] On the developmental reading.** **SEP's probable ordering** puts *Topics* and
+*SE* before the *Prior Analytics*; **Hitchcock** independently argues the fallacy
+theory predates the formal logic. *So a reader may hold that the priority claim was
+true when written and superseded by Aristotle's own later work — which dissolves the
+tension without any configurational reading.* **The paper reads the corpus
+synchronically and owes the diachronic cost.**
+
+## §VIII — THE COMMENTARY TRADITION ON I.31
+
 ∮ = 1

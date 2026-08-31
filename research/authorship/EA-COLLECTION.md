@@ -195,4 +195,69 @@ grasp. **§VIII must earn it.**
 
 **33.** **Not claimed:** authorship. **§§I–IV are complete without it.**
 
+
+---
+
+## NOTES
+
+*Apparatus entries bearing on this section, from
+`EA-MANY-AND-ONE-APPARATUS.md`. Compression of engagement already performed; editions
+and dates are as carried and are not re-verified. Items marked ⚠ named-and-not-
+consulted are stated as such.*
+
+**[IV.1] On the ὑπόμνημα and the unwritten doctrines.** *Phdr.* 275a's claim that
+writing gives only reminders is the foundation of the **Tübingen school's** case for
+an unwritten teaching: **Krämer**, *Plato and the Foundations of Metaphysics* (trans.
+Catan, 1990); **Reale**, *Toward a New Interpretation of Plato* (trans. Catan and
+Davies, 1997); **Szlezák**, *Reading Plato* (trans. Zanker, 1999). *They read the
+written corpus as pointing past itself to an oral teaching. **This paper takes the
+same passage and reads it as a description of transmission mechanics rather than as
+evidence of a withheld doctrine** — the ὑπόμνημα is the ἀρχή a search takes hold of
+(§IV), not a pointer to something the corpus declines to say.*
+
+**[IV.2] On orality, literacy, and what a reminder is for.** **Ong**, *Orality and
+Literacy* (1982), on the technologising of the word; **Havelock** on the transition
+in Greek. *The Phaedrus critique is standardly read within that transition. The
+reading here does not contest it and adds only that Aristotle supplies the mechanics
+of working a reminder — search from a starting-point, by likeness, opposition,
+proximity.*
+
+**[IV.3] On recollection and its locus.** The search clause and the definition of
+remembering are both in ***De memoria* 2**, cited throughout as 453a. **The seated
+text carries no Bekker markers**; lineation is from the standard edition.
+
+---
+
+## §V — THE DIVIDED PERSON
+
+**[T1] SAPPHO 31 — the text, and what "fragment" means for it.**
+
+**Voigt** and **Lobel–Page** are the critical editions; **Campbell** (Loeb) the
+accessible text. **The poem survives because Longinus quotes it** — *Peri Hypsous* 10
+— **and the fifth stanza's ἀλλὰ πᾶν τόλματον is where the quotation ends.** *So the
+poem's "fragmentary" state is a fact about its transmission vehicle and not about a
+damaged papyrus: it is complete as quoted and incomplete as a poem.*
+
+**⚠ AND THE PAPER'S READING IS NOT THE STANDARD ONE.** The standard account is that
+Longinus quoted as much as served his argument about the sublime and stopped. **The
+notebook's correction (Round 44) is that he does not stop at the break but extends it
+one clause — ἐπεὶ καὶ πένητα — leaving a causal subordinator without its consequence
+and an accusative without its verb.** *That the extension is deliberate technology
+rather than the ragged edge of a quotation is a reading, and §IX marks it as one.*
+
+**[T2] CATULLUS 51 AND THE *OTIUM* STANZA.** The fourth stanza — *otium, Catulle,
+tibi molestum est … otium et reges prius et beatas perdidit urbes* — **has no Sapphic
+counterpart, and the scholarly question is whether it belongs to the poem at all.**
+*Positions run from separate poem, to deliberate coda, to the poem's point. **The
+paper's reading — that it discharges a grammatical obligation Longinus's extension
+created — is a new one and is offered as such.***
+
+**[T3] LONGINUS.** *Peri Hypsous* is anonymous and its attribution to Cassius
+Longinus is a Renaissance conjecture; **date and author are disputed.** *The paper
+uses him as a reader, not as an authority, and nothing turns on who he was.*
+
+---
+
+## THE EARLIEST ATTESTATION, AND ITS STATUS
+
 ∮ = 1
