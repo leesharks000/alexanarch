@@ -268,7 +268,14 @@ first, and it is not offered in its place. **An argument that let the identity
 replace the person would have abandoned the claim it exists to support** — and would
 be the mysticism this paper is most likely to be mistaken for.
 
-**Sources: M13; M14; M28; Round 48; Round 49 §211; Round 50 §§218–219.**
+**WRITTEN: EA-MANY-VOICES v1.0, entire.** The identity is now licensed by the corpus
+rather than by gloss — *Phdr.* 276a, the living and ensouled λόγος **οὗ ὁ γεγραμμένος
+εἴδωλον**. And the section adds the corpus's own statement of one maker at two
+grasps: *SE* 183b7, **Σωκράτης ἠρώτα, ἀλλ᾽ οὐκ ἀπεκρίνετο**, with the name filled
+once on the closing page where it is the token individual everywhere else in the
+Organon — read through §IV as ξυνίεσαν against ῥᾴδιον ἰδεῖν.
+
+**Sources: M13; M14; M28; Round 48; Round 49 §211; Round 50 §§218–219; Round 52 §232.**
 
 ---
 
