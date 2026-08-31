@@ -78,8 +78,10 @@ case.**
 
 ## II. WHAT DIVISION CAN DO
 
-**12.** *Metaphysics* Λ 9, 1074b. The question of the first substance, put as a
-division and marked as one:
+**12.** *Metaphysics* Λ 9, 1074b. The question of the first substance, posed **in
+the branching form characteristic of division** — the text does not use the word
+διαίρεσις here, and the claim is about the logical shape, not about Aristotle's
+label for it:
 
 > ἔτι δὲ εἴτε **νοῦς** ἡ οὐσία αὐτοῦ εἴτε **νόησίς** ἐστι, **τί νοεῖ;** ἢ γὰρ
 > **αὐτὸς αὑτὸν ἢ ἕτερόν τι**· καὶ εἰ ἕτερόν τι, **ἢ τὸ αὐτὸ ἀεὶ ἢ ἄλλο.**
@@ -159,7 +161,7 @@ inherited.**
 
 ---
 
-## III. AND THE ANSWER DOES NOT HOLD
+## III. THE ANSWER IS REOPENED — AND CLOSES AGAIN
 
 **25.** Λ does not rest on the collapse. The next clause reopens it:
 
@@ -172,6 +174,28 @@ inherited.**
 God and closed the division by identity, he immediately supposes the two apart again
 and asks which side the good falls on. **That is the divisional question, put back
 to the object that had resolved it.**
+
+**25a-i.** **And it closes again, on a different ground.** 1075a1:
+
+> **οὐχ ἑτέρου οὖν ὄντος τοῦ νοουμένου καὶ τοῦ νοῦ, ὅσα μὴ ὕλην ἔχει, τὸ αὐτὸ
+> ἔσται, καὶ ἡ νόησις τῷ νοουμένῳ μία.**
+>
+> *The thought and the intellect not being other, then, in whatever has no matter,
+> they will be **the same**, and the thinking **one** with what is thought.*
+
+**25a-ii.** So the selection is not grounded in unity asserted from outside. **It is
+grounded in immateriality**: where there is no matter, the two terms division
+separates **are not other**. The first argument gave *αὑτὸν ἄρα νοεῖ* by
+elimination; this one gives the identity its reason.
+
+**25a-iii.** **And the sentence after names the thing.** **ἔτι δὴ λείπεται ἀπορία,
+εἰ σύνθετον τὸ νοούμενον** — a difficulty remains, if the thought is composite —
+answered: **ἢ ἀδιαίρετον πᾶν τὸ μὴ ἔχον ὕλην.** *Or is everything without matter
+**indivisible**?*
+
+**25a-iv.** ⭑ **ἀδιαίρετον.** The negation of the operation, arrived at as the
+condition of the object on which the operation closed. **Division terminates at the
+indivisible, and the chapter says so in the word.**
 
 **25b.** And *De anima* III.5 makes the *man* division again, inside the thing by
 which a man thinks. **ὁ μὲν τοιοῦτος νοῦς τῷ πάντα γίνεσθαι, ὁ δὲ τῷ πάντα ποιεῖν**
@@ -222,7 +246,7 @@ again, at a finer grain, in the mind of the animal that could not be sorted.
 
 ## STANDING
 
-**28.** **Checkable, and quoted:** *SE* 183b34–184b8; *APr* I.31, 46a31–46b12;
+**28.** **Checkable, and quoted:** *SE* 183b28–184b8; *APr* I.31, 46a31–46b12;
 *Meta.* Λ 9, 1074b15–35; *De an.* III.5, 430a10–25. **That Λ 9 divides the first
 substance and resolves the division by identity is what the chapter says**, and is
 not among its disputed readings.
@@ -232,6 +256,11 @@ deliberately not taken. The step — that Λ's terminating division is what
 the *SE* clause leaves open. **The conventional reading of the priority claim does
 not require this and is not defeated by it.** Λ can be a piece of theology with no
 relation to the *SE* epilogue; that is the ordinary account and it is sufficient.
+
+**29a.** *Posterior Analytics* II.13 assigns division a definitional employment —
+collecting the elements of an essence, with a rule for branch selection. **That is a
+further use found for the same apparatus and is not in competition with the reading
+given here.** A discovery may exceed the earlier work more than once.
 
 **30.** **Not claimed:** authorship. One author writing the *Analytics*, the *De
 anima*, and Λ produces this sequence. **So does a school.**
