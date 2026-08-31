@@ -4804,4 +4804,104 @@ measurement, and it is the one the thesis actually needs.**
 strength, tested immediately, and did not hold in the form stated.**
 
 
+---
+
+# ROUND 44 — THE SOCKET, CORRECTED: LONGINUS EXTENDS THE HANGING LINE
+
+*Added 2026-08-30. Round 27's calibration described the operation backwards, in the
+direction that makes it look like damage. Corrected here, with the consequence for
+EA-FULFIL-01 and for the whole reading of "loss."*
+
+## 182. THE INCOMPLETION IS ORIGINARY
+
+**Sappho 31 arrives at Longinus already incomplete.** The break at *ἀλλὰ πᾶν
+τόλματον* — *but all is to be dared* — is **the poem's own terminal gesture**, not
+damage the tradition inflicted. **The hanging line is the composition.**
+
+## 183. AND LONGINUS DOES NOT CUT — HE EXTENDS
+
+Round 27 §104 and my summary of it said Longinus quotes to the fifth stanza's
+opening **and stops there**. He does not. He carries it one clause further:
+
+    ἀλλὰ πᾶν τόλματον        but all is to be dared
+    ἐπεὶ καὶ πένητα          since even a poor man —
+
+**ἐπεὶ** is a causal subordinator with no main clause after it. **πένητα** is
+accusative — object of a verb that never arrives.
+
+**The added words are doubly open, and the opening is SPECIFIED.** Not a vague
+gap: a *since* wanting its consequence, and an accusative wanting its governing
+verb, inside a clause about what makes all things darable.
+
+> **Longinus receives a hanging line and hands on a new one.** The transmission's
+> most attentive reader runs the technology he received.
+
+## 184. AND CATULLUS FILLS THAT SPECIFICATION EXACTLY
+
+*Otium … **perdidit urbes*** — a verb governing an accusative, in a causal frame,
+on the levelling of the prosperous.
+
+**The beggar's socket receives the destroyed cities.** πένητα → *urbes*: the
+accusative the grammar demanded, supplied at the scale the theme demanded.
+
+**And the *otium* stanza is itself the next hanging line**, which is why the chain
+runs on:
+
+    κῆνος → πὰν τόλματον → οὐ θαυμάζεις → perdidit urbes → vocasti…te → γράμμασι μολπὰν
+
+**EACH FILLING OPENS A NEW SOCKET.** That is the propagation series as a
+mechanism, not a list.
+
+## 185. ⚠ WHAT THIS DOES TO THE CALIBRATION
+
+**Round 27 §104 scored the Sappho→Catullus alignment as C = 11/16, with the last
+four slots marked REPLACED by the otium stanza.** That reads the fill as a
+substitution — and a substitution is a kind of loss.
+
+**It is not a substitution. It is one socket filled and one opened.**
+
+**The calibration standard was mis-specified in the direction that makes the
+operation look like damage** — which is exactly the reading the argument exists to
+refuse. EA-FULFIL-01 calibrates C against this standard, so the defect is at the
+root of the measure, not in its application.
+
+**The corrected form:** what Catullus does at the fourth stanza is not the loss of
+four Sapphic slots but **the discharge of a grammatical obligation Longinus'
+extension created**, plus the emission of a new obligation. The measure needs a
+term for *socket discharged* and a term for *socket opened*, and has neither.
+
+## 186. AND THE CONSEQUENCE FOR "LOSS" GENERALLY
+
+**I have been treating lost, fragmentary, and titles-only as absence requiring
+explanation.** On the originary-incompletion reading they are **the form**, and the
+question inverts:
+
+> Not *why is so little left*, but **what is each fragment the designed remainder
+> of.**
+
+**Under which the enumeration of Round 43 reads differently:**
+
+**Euclides has no fragments, and the *Theaetetus* frame presents him as the
+dialogue's author** — which the scholarship calls *an implausible suggestion*. Read
+as a socket: a name with nothing behind it, and a text asserting its own
+attribution.
+
+**Alexamenos is credited with inventing the Socratic dialogue and is attested only
+by Aristotle**, doubted because nothing else mentions him. **An origin supplied as
+a name with no body.**
+
+**The librarians catalogued titles by Crito, Simmias, Cebes, Phaedo, Glaucon,
+Simon** — sockets opened under character-names.
+
+**And Aristotle's exoteric dialogues: named, catalogued, dated, 445,270 lines
+claimed — and absent**, with a complete dialogue corpus standing beside them under
+another name.
+
+**STATUS.** §§182–185 are philological correction and stand as such. §186 is the
+reading, and it is a reading: **the same facts are what ordinary catastrophic
+transmission loss produces.** What the reading adds is that the loss is not
+random with respect to the configuration — it is total for every Socratic author
+except the two in the cluster.
+
+
 ∮ = 1
