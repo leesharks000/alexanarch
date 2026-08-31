@@ -36,6 +36,11 @@ corpus does not say what makes it one.
       ethics 0.0226 — tighter than 99.5% of multi-author pools
       logic 0.0942 — ordered by the object-space of each domain
 
+    ⭑ §VII.2 GIVES THIS IN FULL. It is not an aside: it is the
+      measurement in which the two corpora become one when the
+      object is held, and the ordering of the residual is the
+      object-space of each domain.
+
 **The treatise takes the form of what it treats.**
 
 **4.** > **Plato shows that one maker can be many voices, and withholds the account

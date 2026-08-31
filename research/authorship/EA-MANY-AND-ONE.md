@@ -352,6 +352,15 @@ had been reduced to a corrective footnote inside the section on measurement fail
 Restored as a section and placed before that one, so the failures are read against a
 result rather than in place of one.
 
+**And its first movement is the paper's load-bearing number.** Aristotle's internal
+variance is the strongest anomaly the investigation measured — and **holding the
+object constant does not shrink it, it removes it**: within-domain **0.0571** against
+Plato's total **0.0570**, a difference of one ten-thousandth. **What made him look
+like many authors is that he wrote about many things.** *That is §II's formula
+measured at corpus scale — one in actuality, many in potentiality, with the object as
+the cut that actualises them — and it is the middle term between the divided soul and
+the undivided God.*
+
 **Six transmission functions frozen before assignment** — encoding, substrate,
 decommissioning, withholding, recovery, verification. **Plato fills 6/6 in six
 distinct dialogues at sharpness 1.00; Aristotle 6/6 in five works at 0.83.** And the
