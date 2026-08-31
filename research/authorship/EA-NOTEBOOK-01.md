@@ -5259,4 +5259,119 @@ inverts the usual burden: **the single-maker account is the one that requires
 nothing to have been lost.**
 
 
+---
+
+# ROUND 47 — THE CORPUS CONSTITUTES THE FIELD IT REVIEWS
+
+*Added 2026-08-30. Asked of the corpora rather than the pairs, following the
+objection that Kant–Hegel and the rest have KNOWN relations and so measure
+interpretive richness rather than openness. The density expectation failed; the
+coverage result is the finding.*
+
+## 200. THE EXPECTATION, AND ITS FAILURE
+
+**Expected:** the Aristotelian corpus is saturated with predecessor-review — the
+*endoxa* method, the doxographic opening of every treatise — and should show
+extreme density of named earlier inquirers.
+
+**Measured, 24-name doxographic roster, per 10k tokens:**
+
+    plato          57.19        aristotle      12.33   ← SIXTH OF TEN
+    xenophon       21.84        theophrastus   11.04
+    aristophanes   18.81        isocrates       5.99
+    herodotus      15.36        demosthenes     2.65
+    thucydides     14.19        lysias          2.33
+
+**Aristotle is not extreme. He is middling.** The picture of a corpus saturated
+with argument against its field **is wrong at the level of rate**, and the
+expectation is recorded as failed.
+
+## 201. THE ANOMALY IS COVERAGE, NOT DENSITY
+
+    corpus          per 10k    distinct names
+    aristotle         12.33      24 of 24    ← EVERY NAME ON THE ROSTER
+    plato             57.19      21 of 24
+    theophrastus      11.04      19 of 24
+    xenophon          21.84      11 of 24
+    all others         ≤18.81    ≤12 of 24
+
+**Every predecessor on the list appears, at a modest rate each.** That is not the
+profile of a corpus arguing with contemporaries. **It is the profile of a
+catalogue.**
+
+## 202. AND SEVERAL EXIST NOWHERE ELSE
+
+Named-predecessor counts, four cluster/adjacent corpora against **six non-cluster
+corpora combined** (Herodotus, Thucydides, Isocrates, Lysias, Demosthenes,
+Aristophanes):
+
+    name            arist  plato  theo   xen  OUTSIDE
+    Heraclitus         35     15     3     0        0   ← ZERO
+    Leucippus          20      1     1     0        0   ← ZERO
+    Cratylus            3    320     0     0        0   ← ZERO
+    Philolaus           5      2     0     0        0   ← ZERO
+    Speusippus          5      3     2     0        0   ← ZERO
+    Anaximander/-enes  11      0     3     1        1
+    Alcmaeon           12      0     2     0        1
+    Empedocles        129      2    15     0        1
+    Parmenides         24    244     7     0        1
+    Democritus         77      0    19     0        3
+
+**⚠ CONTAMINATION EXCLUDED:** the Thales row of the raw run is void — **θαλ-
+matches θάλασσα**, sea. Excluded rather than corrected, and recorded so the error
+is not repeated.
+
+**Heraclitus is the case.** One of the most famous names in Greek thought: 35 in
+Aristotle, 15 in Plato, 3 in Theophrastus, and **zero across six non-cluster
+corpora**. **Leucippus**, the founder of atomism, is 20 in Aristotle and zero
+outside.
+
+## 203. THE CORPUS IS ALSO THE CHANNEL
+
+**And the doxographic tradition through which the Presocratics are known descends
+from Aristotle and Theophrastus.** Diels built the *Doxographi Graeci* on that
+transmission; Theophrastus' *Physikōn Doxai* stands at its head.
+
+> **The corpus with complete coverage of the predecessors is also the channel
+> through which the predecessors survive.**
+
+**That is not reviewing a field. It is constituting one.**
+
+## 204. WHAT THIS DOES TO THE QUESTION ABOUT NON-TERMINATION
+
+The question was why the relation-question regenerates without resolving, in a way
+that other canonical pairs do not — and the objection was that those pairs' relations
+are **known**, so their disputes measure interpretive richness rather than openness.
+
+**Asked of the corpora instead, the answer is structural rather than hermeneutic:**
+
+    the tradition cannot resolve the relation-question against an external
+    standard, because the corpus that would supply the standard — the roster
+    of predecessors, their doctrines, the order of succession — IS one of the
+    corpora under examination
+
+**This is M44 at the scale of the whole Presocratic field rather than at the
+Plato–Aristotle boundary.** Every attempt to check the configuration from outside
+retrieves material that reaches us through it.
+
+## 205. WHAT THIS DOES NOT ESTABLISH
+
+**It does not establish construction.** A school that inherited the philosophical
+literature and wrote the first systematic history of it **would produce exactly
+this profile**: complete coverage at modest rate, and downstream doxography
+descending from its catalogue. **That is what a first historian of philosophy
+looks like**, and Aristotle is conventionally described as one.
+
+**It does not establish that the named predecessors are unreal.** Zero occurrences
+across six non-cluster corpora is weak evidence about existence when those six are
+orators, historians and a comedian with no occasion to name natural philosophers.
+**The comparison class is wrong for that inference and is not offered for it.**
+
+**WHAT IT ESTABLISHES:** that the configuration has **no available outside for the
+specific question at issue** — and that this is a measurable property of the
+corpora rather than a claim about the tradition's diligence. **The commentary
+tradition does not fail to resolve the relation-question because the question is
+hard. It cannot resolve it against a standard the corpus itself supplies.**
+
+
 ∮ = 1
