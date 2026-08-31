@@ -12,6 +12,10 @@ orcid: 0009-0000-1599-0703
 **⭑ ALL NINE SECTIONS ARE WRITTEN. Reading copy assembled at
 `MANY-AND-ONE-COMPLETE.md` (75,837 b). The per-section files remain canonical.**
 
+**⭑ THE APPARATUS IS AT `EA-MANY-AND-ONE-APPARATUS.md`** — notes keyed to section and
+paragraph, compressing the citational labour already performed. **Pass one (Socrates
+as Orthonym) is complete; pass two (notebook and register) is not run.**
+
 **The argument descends** — through eight movements from the theology to the corpus,
 **and then, at §IX, out of the argument and into history**, where the λόγος that has
 no matter has to be carried in matter by strangers.
