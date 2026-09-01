@@ -753,7 +753,19 @@ def _strip_inline_ingests(raw, d):
             e = s + m.start() + 1 if m else len(raw)
         pieces.append(raw[pos:s]); pos = e
     pieces.append(raw[pos:])
-    return ''.join(pieces)
+    out = ''.join(pieces)
+    # GUARD (2026-09-01, #1572): when the deposit's body IS its ingested
+    # attachment — a report deposited as a file, with the prose in the issue's
+    # description rather than in the canonical body — stripping every declared
+    # ingest empties the displayed Full Text and the record page renders a
+    # title over nothing. Observed on #1572, whose 57KB canonical text
+    # displayed as an empty section. If what survives the strip carries no
+    # body, the ingest was the work: return it unchanged and let the
+    # Held-artifacts block below double as the download.
+    _body = re.sub(r'^---\n.*?\n---\n', '', out, count=1, flags=re.S).strip()
+    if len(_body) < 400:
+        return raw
+    return out
 
 def regenerate_static_page(d, eidx, registry=None):
     _kernel_html = ''
