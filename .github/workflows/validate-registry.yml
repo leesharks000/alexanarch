@@ -129,11 +129,15 @@ jobs:
       - name: Verify protocol JSON files parse
         run: |
           set -euo pipefail
-          python3 -m json.tool api/deposit-protocol.json > /dev/null
-          python3 -m json.tool api/axn-protocol.json > /dev/null
-          python3 -m json.tool api/enrichment-protocol.json > /dev/null
-          python3 -m json.tool api/index.json > /dev/null
-          python3 -m json.tool api/schemas/deposit-entry.schema.json > /dev/null
+          # Static protocol JSON lives in data/api/ (STATIC PUBLICATION RULE,
+          # 2026-07-31); api/ is Vercel's functions namespace and holds no
+          # static files. The pre-migration paths 404 in the repo and failed
+          # this step on every PR (observed 2026-09-01 on mint PRs #28/#29).
+          python3 -m json.tool data/api/deposit-protocol.json > /dev/null
+          python3 -m json.tool data/api/axn-protocol.json > /dev/null
+          python3 -m json.tool data/api/enrichment-protocol.json > /dev/null
+          python3 -m json.tool data/api/index.json > /dev/null
+          python3 -m json.tool data/api/schemas/deposit-entry.schema.json > /dev/null
           echo "All protocol/schema JSON files parse cleanly."
 
       - name: Bootstrap familiarization (verifies index consistency)
