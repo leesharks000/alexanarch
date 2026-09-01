@@ -536,6 +536,16 @@ jobs:
             gh issue comment "$ISSUE" --body "Deposit minted. Non-blocking steps were skipped: ${DEGRADED}— the record is valid and complete against the protocol; enrichment and derived surfaces can be regenerated at any time. This is recorded rather than corrected automatically." || true
           fi
 
+      - name: Regenerate node declaration (S0.3 — must follow the final registry write)
+        if: steps.existing_pr.outputs.exists != 'true'
+        run: |
+          # The PR gate runs generate_node_declaration.py --check. The declaration
+          # is computed from the SHA-256 of data/registry.json, so it must be
+          # regenerated AFTER the last write to the registry (enrichment) and
+          # committed with it. Without this the gate fails on every mint PR with
+          # DRIFT registry_head — observed on PRs #28/#30/#31, 2026-09-01.
+          python3 scripts/generate_node_declaration.py
+
       - name: Create branch and commit
         if: steps.existing_pr.outputs.exists != 'true'
         id: branch_commit
@@ -567,7 +577,11 @@ jobs:
               s/browse \
               s/wiki \
               s/graph \
+              s/axn \
+              data/api/axn-index.json \
               sitemap.xml \
+              sitemap-axn.xml \
+              .well-known/axn-node.json \
               SHA256SUMS.txt; do
             if [ -e "${p}" ]; then
               git add "${p}"
