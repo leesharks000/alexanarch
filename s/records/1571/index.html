@@ -1,0 +1,1170 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER) — Alexanarch</title><meta name="description" content="The frozen pre-registration ledger of the authorship investigation: eleven entries, each carrying the SHA-256 of its original standalone registration file…"><meta property="og:title" content="Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)"><meta property="og:description" content="The frozen pre-registration ledger of the authorship investigation: eleven entries, each carrying the SHA-256 of its original standalone registration file…"><meta property="og:url" content="https://www.alexanarch.org/s/records/1571/"><meta property="og:type" content="article"><meta property="og:site_name" content="Alexanarch"><meta name="twitter:card" content="summary"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "name": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)", "headline": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)", "author": {"@type": "Person", "name": "Sharks, Lee"}, "datePublished": "2026-08-29", "identifier": "AXN:0663.DATASET.🏷️○⚖️📎💡🌈", "version": "Eleven entries, frozen as of 2026-08-29; dispositions appended through 2026-08-31", "description": "The frozen pre-registration ledger of the authorship investigation: eleven entries, each carrying the SHA-256 of its original standalone registration file so that every earlier commit citing those hashes still resolves, with dispositions appended beneath each entry and never inside it. Pre-registrat", "license": "https://creativecommons.org/licenses/by/4.0/", "publisher": {"@type": "Organization", "name": "Alexanarch"}, "keywords": "pre-registration, frozen, SHA-256, falsification conditions, six-function apparatus, EA-YIELD-02, EA-COMPLETE-01, authorship investigation", "url": "https://www.alexanarch.org/s/records/1571/", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.alexanarch.org/s/records/1571/"}, "inLanguage": "en", "isPartOf": {"@type": "Collection", "name": "Alexanarch", "url": "https://www.alexanarch.org/"}, "articleBody": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)\nFrozen Pre-Registrations\n\n Rule: nothing above a \nDISPOSITION line is ever edited. New tests append a\nnew entry at the end. Dispositions append under the entry they discharge.\n \nENTRY — EA-LEAK-DEFICIT-01\n\n original sha256: fbbd13a53a5b29afb4c07c27aa63d49be7f39b6cfa96d84acec41d69e0c3ccfd \n frozen text follows verbatim; do not edit \nThe Leak Deficit\n0. What this test is about\n\nThis is not a test of doctrine. It is a test of craft .\n\nThe question is not whether Plato and Aristotle agree, nor whether one influenced the other, nor whether the same person wrote both. It is narrower and more answerable: does the Platonic–Aristotelian corpus behave, at the aggregate layer, like natural Greek prose? \n\nNatural corpora leak. Two long texts by any two authors of a period deposit accidental correspondences — shared topical runs, phrases that happen to align, handholds that nobody placed. That leakage is a background rate, and it can be measured across many real Greek author-pairs.\n\nA corpus composed against resolution would fall below that rate. Not because its parts resemble one another — the parts would be deliberately varied — but because the ensemble of relations among the parts would be smoother than accident produces. The individual pairings carry the noise; the aggregate carries the design.\n\nThat is the whole hypothesis, and it is one-sided.\n1. Why the corpus layer and not text-to-text\n\nEvery measurement conducted before this registration — seven bag-of-words statistics, a monotone whole-text alignment, a mediation test — operated text-to-text or treated a corpus as a single point. All returned null or broke on their own null construction.\n\nIf per-pair variation is where an engineered corpus places its noise, then text-to-text is precisely the layer where nothing would be visible, and the layer where every prior measurement was taken. The correction is structural: the statistic must be computed on the ensemble , with per-pair variance reported as a required second term rather than averaged away.\n2. Statistic\n\n Leak L = count of block-pairs whose cosine similarity exceeds threshold τ,\nper 10⁴ block-pairs.\n\nChosen because it is monotone under smoothing : an accidental correspondence can only add to the count, never subtract. Every statistic that could move in both directions has produced an artifact in this work — four nulls were built and broken in a single session, each having behaved opposite to its design. A one-directional statistic removes that failure mode.\n\nTwo quantities are computed, and both are required :\n\n- L corpus — the two corpora pooled, blocked as single texts.\n- {L ij} — the set of per-text-pair leaks. Report median and interquartile range.\n\nBlocks: 40 per text, equal token length. Vocabulary: the 600 most frequent shared\ntypes of length 4.\n\nτ is fixed at the 99th percentile of the pooled similarity distribution across\nthe null corpora only . τ is never computed from the test pair.\n3. Null — empirical, not synthetic\n\nThe null is a set of real Greek author-pairs , not a shuffle.\n\nThis is not a stylistic preference. In the work preceding this registration, four synthetic nulls were constructed and all four misbehaved: a deviation measure was forced to −1 by the sum-to-zero constraint; a correlation was dominated by the shared frequency baseline; a DTW alignment null was biased upward by the path's own selection of high-similarity cells; and a coherence-destroying null inverted its sign, because homogenised blocks are more similar to each other, not less. Each was reported as a crossing before the artifact was found. Synthetic nulls are not to be trusted here.\n\n Null set: independent Greek prose author-pairs — Xenophon, Plotinus, Philo, Josephus, Herodotus, Thucydides, the New Testament authors, Longinus — plus within-author register pairs. Target n ≥ 60 pairs. \n\nBuilding this null set is the substantive work of the test. Everything after it is\narithmetic.\n4. Matching, enforced per pair\n\n- Token count within ±25% on both sides.\n- Type–token ratio within ±15%.\n- Prose only. Aristophanes is excluded from the null (verse), retained as a test case.\n- Same edition family where available. Edition was tested and excluded as a\n confound at ratio 1.00; it is not to be reintroduced through the null.\n5. Pre-registered outcomes\n\n L corpus variance of {L ij} reading \n --- --- --- \n below 5th pct of null ≥ null median the predicted signature \n below 5th pct also below corpus is merely narrow — NOT evidence \n inside null any the smoothing claim fails \n above null any ordinary intertextual relation \n6. Kill condition — binding\n\nIf L corpus for Plato–Aristotle falls inside the central 90% of the natural distribution, the corpus-layer smoothing claim fails, and is to be reported as failed.\n\nNo post-hoc adjustment of τ. No post-hoc re-matching. No re-slicing of the corpus\ninto units chosen after the result is seen.\n7. Controls — both required\n\n Positive. Pessoa's four voices, pooled two ways, must show the signature. This is a documented configuration: the letter to Adolfo Casais Monteiro of 13 January 1935 attributes the heteronyms. If a known-designed corpus does not produce leak deficit, the statistic does not measure what it claims and nothing about Greek follows from it. Kierkegaard second, with the standing caveat that his seat holds four pseudonymous works of roughly a dozen.\n\n Sanity. Josephus — one author, four works, four registers, no design — must fall inside the natural distribution. If same-author-across-register reads as engineered, the statistic is detecting register and the test is void.\n8. Power, stated honestly\n\nAt n = 30 null pairs, the 5th percentile is estimated from roughly one and a half observations. That is too thin to carry a claim. Either the null reaches 60+ pairs, or the threshold moves to the 10th percentile and the loss of confidence is stated in the result rather than buried. The larger null is preferred.\n9. What a positive result would, and would not, license\n\n Would. That the Platonic–Aristotelian corpus is anomalously smooth relative to natural Greek prose. That is a finding about the corpus, publishable whichever way the authorship question falls, and independent of it.\n\n Would not. Design. Low leak has innocent causes, and they are not exotic: heavy editorial normalisation; transmission through a single recension; a school that trained its members to a house style. Andronicus of Rhodes, constituting the Aristotelian corpus in the first century BCE from the cross-references the texts themselves contain, is sufficient on his own to produce smoothing without anyone intending it. A positive result relocates the question; it does not answer it.\n10. Why it matters that this is a test of the writer\n\nPlato writes inside a tradition he names. Sappho, Homer, the tragedians, the comic poets — he quotes them, stages them, argues with them, and in the Republic exiles them. The exile is the most famous act of literary criticism in the language, and it is performed by a man in continuous, self-conscious competition with the people he is banishing.\n\nThis test asks about Plato as a technician — as a maker of texts, measured on the properties of made things. Not the best doctrinarian. Not the best philosopher. The best writer , judged the way one judges a craftsman: by what the artifact does that accident does not.\n\nIf the corpus is anomalously smooth, the claim that follows is a claim about craft: that these texts were built to a standard of finish that natural prose does not reach, by someone who understood what a corpus leaks and did not permit it.\n\nAnd it would put the Republic 's banishment in a light it has not had. The poet who exiled the poets would be the most accomplished of them — the exile a move inside the art rather than against it. On that reading the test does one thing the philosophical literature has not managed:\n\n it lets the poet back inside the polis. \nDISPOSITION\n\nSPENT — degenerate lower tail; found before the test pair was computed\n \nENTRY — EA-LEAK-DEFICIT-02\n\n original sha256: 493514a2f142385fc4b957c7b22f137662295555f570118e95b0e37c5f17ce0b \n frozen text follows verbatim; do not edit \nThe Leak Deficit II\n0. Why there is a second registration\n\nEA-LEAK-DEFICIT-01 fixed τ at the 99th percentile of the pooled null similarity distribution. The null was then built — 61 matched cross-author Greek prose pairs across 19 author-pairings — and the resulting leak distribution was found to have a degenerate lower tail : 8 of 61 natural pairs leak exactly zero, and the 5th and 10th percentiles are both 0.0.\n\nSince L is bounded below at zero, no corpus can fall beneath a 5th percentile of zero. The signature registered in 01 was unobservable with the statistic registered in 01. The threshold created a floor and the hypothesis predicted something would fall below it.\n\n01 is therefore spent, not withdrawn . Its kill condition was never triggered because its test was never run on the target: the defect was found while computing the null, before the Platonic–Aristotelian value was calculated. That sequence is the entire reason the registration existed, and it is recorded rather than quietly corrected.\n\nEverything below is unchanged from 01 except §2 (threshold) and §5 (preconditions).\n1. Hypothesis — unchanged, one-sided\n\nA corpus engineered against resolution deposits fewer incidental correspondences at the aggregate layer than natural corpora of matched size and register, while showing no deficit — or an excess — of variance at the text-to-text layer , because per-pair variation is where the engineering hides.\n\nBoth halves must hold. A corpus that is merely narrow, small or homogeneous gives\nthe first without the second.\n2. Statistic and threshold — CHANGED\n\n Leak L = block-pairs whose cosine similarity exceeds τ, per 10⁴ block-pairs.\nMonotone under smoothing: an accidental correspondence can only add.\n\nBlocks: 40 per text, equal token length. Vocabulary: 600 most frequent shared\ntypes of length 4.\n\n τ is fixed at the 90th percentile of the pooled similarity distribution across the null corpora only. For the null set specified in §3 this is τ = 0.2905 .\n\nThe 90th percentile was selected by sweeping candidate percentiles against the null alone , before any value was computed for the test pair, and choosing the lowest regime that satisfies the §5 precondition while still measuring a tail rather than the bulk. The sweep is recorded in the registration JSON. No value from Plato, Aristotle, Pessoa, Kierkegaard or Josephus entered that selection.\n\nTwo quantities, both required :\n\n- L corpus — the two corpora pooled, blocked as single texts.\n- {L ij} — per-text-pair leaks; report median and IQR.\n3. Null — empirical, and now built\n\n61 matched cross-author pairs, 19 distinct author-pairings, drawn from: Xenophon, Philo, Plotinus, Josephus, Longinus, Herodotus (by book), Thucydides (by book), and the New Testament authors (Mark, Matthew, Luke–Acts, John, Paul, Hebrews). Capped at 6 pairs per author-pairing so that no single author dominates.\n\nA within-author register set of 23 pairs across 5 authors is retained for the §7\nsanity control.\n\nThe null is empirical rather than synthetic because five synthetic nulls were built and broken in the work preceding these registrations: the sum-to-zero constraint forced one to −1; the shared frequency baseline dominated another; a DTW alignment null was biased upward by the path's own selection of high-similarity cells (mean Z +0.76 across 100 routes); a coherence-destroying null inverted its sign, because homogenised blocks are more similar to each other; and a within-row permutation left the global multiset unchanged, making real and null identical by construction. Four of the five were reported as crossings before the artifact was found.\n4. Matching — unchanged\n\n- Token count within ±25% on both sides.\n- Type–token ratio within ±15%.\n- Prose only. Aristophanes excluded from the null, retained as a test case.\n- Same edition family where available.\n5. Preconditions — NEW, binding, checked before the test pair\n\nThe test may not proceed unless all three hold on the null alone:\n\n1. Non-degeneracy. Zero null pairs with L = 0, and the 5th percentile\n strictly greater than zero. (A deficit cannot be observed against a floor.) \n2. Spread. The null's 90th percentile is at least 5× its 5th percentile, so\n the distribution has room for a value to sit low without sitting at the edge.\n3. Size. n ≥ 60 matched cross-author pairs.\n\nIf any precondition fails, the registration is spent and a third is required. The\ntest pair is not computed.\n6. Pre-registered outcomes and kill condition — unchanged\n\n L corpus variance of {L ij} reading \n --- --- --- \n below 5th pct of null ≥ null median the predicted signature \n below 5th pct also below corpus is merely narrow — NOT evidence \n inside null any the smoothing claim fails \n above null any ordinary intertextual relation \n\n Kill condition. If L corpus for Plato–Aristotle falls inside the central 90% of the natural distribution, the corpus-layer smoothing claim fails and is reported as failed . No post-hoc τ, no post-hoc matching, no re-slicing.\n7. Controls — unchanged, both required\n\n Positive. Pessoa's four voices, pooled two ways, must show the signature. If a documented configuration does not produce leak deficit, the statistic does not measure what it claims and nothing about Greek follows. Kierkegaard second, with the standing caveat that his seat holds four pseudonymous works of roughly a dozen.\n\n Sanity. Josephus — one author, four works, four registers, no design — must fall inside the natural distribution. If same-author-across-register reads as engineered, the statistic is detecting register and the test is void.\n8. What a positive would, and would not, license — unchanged\n\n Would. That the Platonic–Aristotelian corpus is anomalously smooth relative to natural Greek prose. A finding about the corpus, publishable whichever way the authorship question falls.\n\n Would not. Design. Heavy editorial normalisation, transmission through a single recension, or a school trained to a house style would each produce smoothing without intent. Andronicus of Rhodes, constituting the Aristotelian corpus in the first century BCE from the cross-references the texts themselves contain, is sufficient on his own. A positive relocates the question; it does not answer it.\n9. Why it is a test of the writer — unchanged\n\nPlato writes inside a tradition he names: Sappho, Homer, the tragedians, the comic poets. He quotes them, stages them, argues with them, and in the Republic exiles them — the most famous act of literary criticism in the language, performed by a man in continuous and self-conscious competition with the people he is banishing.\n\nThis test asks about Plato as a technician — a maker of texts, measured on the properties of made things. Not the best doctrinarian. Not the best philosopher. The best writer , judged as one judges a craftsman: by what the artifact does that accident does not.\n\nIf the corpus is anomalously smooth, the claim is about craft — that these texts were finished to a standard natural prose does not reach, by someone who understood what a corpus leaks and did not permit it. And the Republic 's banishment reads differently: the poet who exiled the poets would be the most accomplished of them, the exile a move inside the art rather than against it.\n\n It would let the poet back inside the polis. \nDISPOSITION\n\nDISCHARGED VOID — sanity control fired; no number from that run may be quoted\n \nENTRY — EA-YIELD-01\n\n original sha256: db3cb8aeec79d36afb8af8e59fe3cf515bb2ccfd19f501c793ab1940f2a0c815 \n frozen text follows verbatim; do not edit \nEA-YIELD-01 — Comparative Interpretive Yield\n1. The question\n\nReading a corpus through a lens has different value in different corpora. \"Transmission engineering\" yields one thing for Plato and another for Herodotus. This registers a measure of that difference before it is computed. \n2. The intuition being formalised\n\nA lens has yield in a corpus when its markers behave as one thing there — when the features it groups actually co-vary across that corpus's works. If transmission engineering is a real dimension of Plato, then naming-gaps, form/matter talk, definition, homonymy and persistence vocabulary should rise and fall together across his works. If the lens is imposed, the markers will be independent, each tracking its own local subject.\n3. Protocol statement (required before code, per Round 11)\n\n Phenomenon. Does lens L pick out a coherent dimension of variation in corpus\nC, or a set of unrelated features?\n\n Positive criterion. High mean pairwise correlation among L's marker-densities,\ncomputed across the works of C as units.\n\n Nearest false positive. Any vocabulary set co-varies somewhat, because works differ in abstraction, register and length. A corpus with more heterogeneous works shows higher correlations for any marker set. Raw correlation is therefore uninterpretable.\n\n Opportunity denominator. Every corpus receives the same lens, the same null construction, and the same unit (the work). Corpora with fewer than 8 works of ≥5,000 tokens are excluded for insufficient degrees of freedom, and the exclusion list is published with the result.\n4. The statistic\n\nFor lens L with markers m₁…mₖ and corpus C with works w₁…wₙ:\n\n1. Compute density dᵢⱼ = occurrences of mᵢ per 10⁴ tokens in wⱼ.\n2. r̄ obs = mean pairwise Pearson correlation over the k(k−1)/2 marker pairs.\n3. Null: draw 500 random stem-sets of cardinality k, each stem frequency-matched \n to the corresponding real marker (within ±20% of corpus-wide rate), and compute\n r̄ for each. This holds constant both cardinality and the base-rate structure.\n4. Yield Y(L,C) = (r̄ obs − μ null) / σ null.\n\nReported alongside: r̄ obs, μ null, σ null, n works, and the per-marker densities.\n5. THE LENS, FROZEN\n\nSix marker families, fixed now and not to be adjusted after seeing results:\n\n naming-gap ανωνυμ ωνομασ ουκ εχει ονομα ου κειται ονομα\n form/matter ειδ- (nominal) υλ-\n persistence διαμεν- σωζ- φθειρ- γενεσ- διαδοχ- παραδιδ-\n definition ορισμ- οριζ- τι ην ειναι\n homonymy ομωνυμ- συνωνυμ- πολλαχ-\n memory/writing μνημ- γραφ- ληθ-\n6. CORPORA\n\nplato · aristotle · xenophon · herodotus · thucydides · philo · plotinus · josephus · aristophanes. Within-cluster comparison is permitted here because the measure is per corpus , not between-corpus pairing; M33's firewall governs pairwise controls, which this is not. Plato and Aristotle are nonetheless reported separately and never pooled.\n7. REGISTERED PREDICTION\n\n Lee Sharks, before execution: strong convergent yield across Plato–Aristotle. Both corpora should show Y substantially above the comparison corpora, and comparable to each other.\n\n Recorded outcomes and their readings: \n\n pattern reading \n --- --- \n Plato and Aristotle both high, others low prediction confirmed \n One high, one low the lens is one author's concern, not a shared technology \n All corpora comparable the lens describes philosophical prose, not this corpus \n Herodotus/Thucydides high the markers track narrative, and the lens is misspecified \n8. KILL CONDITIONS, BINDING\n\n- If Y(transmission, Plato) and Y(transmission, Aristotle) are not both above the\n median of the nine corpora, the prediction fails and is reported failed.\n- If the null cannot be frequency-matched (insufficient stems at a marker's rate),\n the measure is VOID for that corpus and reported void, per the\n EA-LEAK-DEFICIT-02 precedent.\n- No post-hoc adjustment of the marker set. It is frozen in §5.\n9. STATED LIMITATIONS, BEFORE THE FIRST NUMBER\n\n It measures coherence, not truth. A well-constructed wrong lens scores high. Y is evidence that a lens describes a real dimension of variation, never that the dimension is what the lens says it is.\n\n A lens can fail by being too successful. A concern saturating every work of a corpus shows no variance, therefore no correlation, therefore Y ≈ 0. Low yield is ambiguous between absence and saturation , and the measure cannot distinguish them. This is its principal defect and it is registered here rather than discovered later.\n\n Genre is not controlled. M28 established that subject determines shape in Aristotle at Z = +4.25. A lens may cohere because the corpus's works vary by domain and the markers track domain. The companion measure — residue absorption , regressing each marker on domain first and testing whether the residuals still co-vary — is specified as the required follow-up and is not run here.\n\nConsequently a positive result licenses the residue-absorption test and nothing\nfurther.\nDISPOSITION\n\nSPENT — marker co-variance was the wrong observable; saturation defect predicted in its own §9 and realised\n \nENTRY — EA-YIELD-02\n\n original sha256: 7bcbbb0fbe69c82ce307c3f7c54c9c828c66914dfc80510b64bdc669453e4e88 \n frozen text follows verbatim; do not edit \nEA-YIELD-02 — Reorganization Yield\n1. Why EA-YIELD-01 was the wrong measure\n\nEA-YIELD-01 measured whether a lens's vocabulary co-varies across a corpus's works. It returned Plato +0.85, Aristotle +1.20, Philo +1.08, with six of nine corpora void or excluded because narrative and comic Greek carry no frequency-matched stems for definition or naming-gap . Correlations were near zero everywhere.\n\n That was the wrong observable. Interpretive yield is not lexical. It is the degree to which a lens reorganizes and develops a corpus according to the lens's own shape — Parry's criterion: the tradition reorganizes around the reconstruction with more coherence than under the alternatives.\n\nEA-YIELD-01 is marked spent, prediction unconfirmed, defect (saturation\nblindness) predicted in §9 and realised. \n2. The measure\n\nA lens has a shape : a set of functional slots. Yield is measured by whether the corpus fills those slots — distinctly, without forcing — and whether the resulting arrangement develops , i.e. predicts placements not used to build it.\n\nThree quantities, scored per corpus and per unit level:\n\n Coverage — how many slots are filled by at least one unit. Sharpness — for each unit, does it fit one slot decisively or smear across several? Scored as the concentration of a unit's slot-assignment weights. Development — number of placements the arrangement predicts that were not used in constructing it, and how many hold on inspection.\n3. THE LENS, FROZEN — transmission engineering\n\nSix slots, from the archive's own specification of the Sapphic apparatus\n(#503, #1483, #1054), fixed now:\n\n T1 ENCODING committing a voice to a substrate; the problem of writing\n T2 SUBSTRATE the material that receives and holds the impression\n T3 DECOMMISSIONING the live speaker's channels shut down; the body ends\n T4 WITHHOLDING what is deliberately not supplied, so a receiver must complete\n T5 RECOVERY activation in a later mind; what was held becomes live again\n T6 VERIFICATION distinguishing genuine transmission from counterfeit\n4. RIVAL LENSES, FROZEN — the null\n\nScored identically, by the same assigner, on the same units. Each has six slots.\n\n R1 — The Four Causes + 2 (Aristotelian organizing scheme):\nmaterial · formal · efficient · final · potentiality · actuality\n\n R2 — The Divided Line (Platonic organizing scheme):\nεἰκασία · πίστις · διάνοια · νόησις · the Good · the ascent\n\n R3 — The Cardinal Virtues + 2 :\nwisdom · courage · temperance · justice · piety · the unity of virtue\n\n R4 — Random control: six slots drawn from an unrelated domain —\nagriculture · navigation · medicine · warfare · commerce · weather\n\nIf the transmission lens does not beat R1–R4 on coverage and sharpness, it has\nno yield and the result is reported as such.\n5. UNIT LEVELS — per Lee Sharks's specification\n\nThe same corpus is scored at multiple granularities, because a lens may organize\nat one level and not another. This is the measure's chief novelty.\n\n L1 BOOK/WORK individual work (a dialogue, a treatise, an NT book)\n L2 AUTHOR-GROUP works grouped by declared author\n (Johannine: Gospel + 1-3 John + Revelation;\n Pauline undisputed; Lukan: Luke + Acts; Platonic; Aristotelian)\n L3 WHOLE CORPUS the New Testament entire; the Platonic corpus entire;\n the Aristotelian corpus entire\n L4 CROSS-CORPUS Plato + Aristotle treated as one object\n\n The registered expectation is that yield varies by level, and that the level at which a lens organizes is itself the finding. A corpus may fill all six slots at L3 while no single work fills any at L1.\n6. CORPORA\n\n plato · aristotle · gnt-nestle1904 · philo · xenophon · herodotus\n\nThe New Testament is included at all four levels and is the measure's most informative case, having a documented multi-author structure with contested attributions — the condition the Platonic corpus is being tested for.\n7. ASSIGNMENT PROTOCOL — the anti-circularity rule\n\n Assignments are made from received characterization, not from my reading. For each unit, the slot assignment must be justifiable by what the scholarly tradition says the work is about , stated before the slot is named. Where the received characterization does not support any slot, the unit scores unfilled — and unfilled units are reported, not dropped.\n\n No unit may be assigned to a slot on the strength of a passage discovered during this investigation. The Letter XIII σύμβολον, the Phaedo 59b self-absence, and the M34 exclusion are development predictions (§2), not assignment evidence, and are scored in the development column only.\n8. REGISTERED PREDICTIONS\n\n Lee Sharks: strong convergent yield across Plato–Aristotle.\n\n Derived, and recorded so they can fail: \n- Plato at L1 fills all six slots with six different dialogues, no overlap.\n- The NT fills poorly at L1, better at L2, best at L3 — the signature of a corpus\n organized above the level of its books.\n- If Plato behaves like the NT (poor at L1, strong at L3), that is evidence the\n Platonic corpus is organized above the level of its dialogues.\n- If Plato fills at L1 where the NT fills only at L3, the two are structurally\n different objects and the extended-corpus thesis loses its closest analogue.\n9. KILL CONDITIONS, BINDING\n\n- If any rival lens R1–R4 achieves coverage and sharpness within 1 slot of the\n transmission lens on Plato, the measure shows no differential yield and is\n reported as showing none.\n- If R4 (the random control) scores above 3 of 6 coverage on any corpus, the\n assignment protocol is too permissive and the entire run is VOID.\n- No slot may be redefined after seeing an assignment. The lens is frozen in §3.\n10. STATED LIMITATIONS\n\n The assigner is not blind. I know the hypothesis. §7's received-characterization rule is the mitigation and it is imperfect; a genuinely blind protocol would need an assigner who does not know which lens is under test, and that is not available here. This is the measure's principal weakness and it is registered before execution. \n\n Coverage is coarse. Six slots and a handful of corpora give a low-resolution\nstatistic. The measure can detect a large difference and nothing subtle.\n\n Development is the strongest column and the least formal. A prediction that \"holds on inspection\" is judged, not computed. Every development claim must cite the passage and be independently checkable.\nDISPOSITION\n\nDISCHARGED — prediction confirmed; both corpora fill 6/6 at L1 with matched slots\n \nENTRY — EA-COMPLETE-01\n\n original sha256: c185adb40e7b33df31218460b313a5e5db8d330bdcab75b04b0fa36ee40a1c80 \n frozen text follows verbatim; do not edit \nEA-COMPLETE-01 — Completion of Abandoned Executions\n1. The question this exists to answer\n\nEvery positive result in this investigation is consistent with school transmission. M30's reflex, EA-YIELD-02's slot convergence, M34's exclusion — a school inheriting a transmission programme produces all of them. What would isolate single-author convergence that would not be present in school transmission? \n2. Why reported correction is the wrong observable\n\nThe first attempt measured whether Aristotle corrects Plato's method at the rate he corrects others'. It returned: inside the Organon — the works about method — Plato appears four times, all in the Topica , and all four as examples of definitional error (genus-in-species; non-established names; soul as self-moving number; \"mortal\" attached in animal definitions).\n\n That is evidence FOR the school hypothesis and it is admitted as such. A student cataloguing the master's errors in a methodology textbook is exactly what teaching looks like.\n\nBut it measures the wrong thing . A reported correction is a statement , and statements are precisely what a school transmits — including the statement that the master erred. It cannot discriminate.\n3. The right observable: what happens at the operation\n\nλόγος-level correction is not Aristotle saying Plato erred. It is Aristotle executing the same operation and taking a different branch at the point where it could go either way.\n\nThree possible relations at each matched slot:\n\n (a) SAME Aristotle executes as Plato does\n (b) CORRECTED Aristotle executes a repaired version of a stated error\n (c) COMPLETED Aristotle finishes an execution Plato ran and ABANDONED\n\n (c) is the diagnostic case. An abandoned operation is not a statement; it is a hole with a shape. Completing it requires reading the failure as unfinished rather than refuted — and Plato presents these failures as refuted ( ὃ ἔφαμεν ἀδύνατον ). A student inherits the refutation. Completion inherits the shape of what failed and supplies the missing part.\n\nThis is Maas's errores coniunctivi one level up: shared correct method proves nothing because both hypotheses predict it; what separates them is a shared arbitrary structure that could not be transmitted as doctrine, because the doctrine says it failed. \n4. THE OBSERVED CASE — T2, which motivated the registration\n\n Plato, Theaetetus 196c — the wax block, at its abandonment:\n οὐκοῦν εἰς τοὺς πρώτους πάλιν ἀνήκει λόγους … ὃ ἔφαμεν ἀδύνατον \n\n Aristotle, De anima 424a — the same analogy, as doctrine:\n καθόλου δὲ … δεῖ λαβεῖν ὅτι ἡ αἴσθησίς ἐστι τὸ δεκτικὸν τῶν αἰσθητῶν εἰδῶν\n ἄνευ τῆς ὕλης , οἷον ὁ κηρὸς τοῦ δακτυλίου ἄνευ τοῦ σιδήρου\n\nThe completing mechanism is ἄνευ τῆς ὕλης — form without matter , which is the snub doctrine. Plato's block had no way to separate impression from material, which is why it collapsed into the eleven-for-twelve problem.\n5. REGISTERED PREDICTION\n\n At the remaining five slots (T1, T3, T4, T5, T6): \n\n1. Plato's execution terminates in aporia or abandonment — ἀδύνατον, ἀπορ-,\n οὐκ ἔχω, an explicit dropping of the model.\n2. Aristotle's terminates in doctrine — δεῖ λαβεῖν, φανερόν, εἴρηται, a stated\n result.\n3. The strong conjunct: the completing mechanism is the same across slots —\n the form/matter distinction, or its immediate apparatus.\n\n Prediction 3 is what would make this more than influence. Influence predicts completion by various means. A single configuration predicts completion by one means.\n6. KILL CONDITIONS, BINDING\n\n- If fewer than 3 of 6 slots show the Plato-abandons/Aristotle-completes\n pattern, the test fails and is reported failed.\n- If the completing mechanisms are heterogeneous across the slots that do show\n it, prediction 3 fails and only ordinary influence is supported — which is the\n received view and no advance.\n- If Plato's slot-executions terminate in doctrine rather than aporia, the\n premise is wrong and the whole test is void.\n- No slot may be reassigned. The six are fixed by EA-YIELD-02 as discharged.\n7. STATED LIMITATIONS\n\n n = 6. Six slots is a small denominator and no result here can be strong on\nits own.\n\n Aporia is a Platonic genre convention. Dialogues end open as a matter of form. The test must therefore compare the specific operation's termination, not the dialogue's, and must accept that the base rate of Platonic aporia is high. This is the principal confound and it is registered before execution. \n\n \"Completion\" is judged, not computed. Whether De anima 424a completes Theaetetus 196c rather than merely resembling it is an interpretive claim. Every completion claim must cite both passages and the specific missing part supplied.\n\n The assigner is not blind — the same weakness as EA-YIELD-02 §10, unmitigated.\nDISPOSITION\n\nDISCHARGED — predictions 1,2 hold 5/6; prediction 3 first scored FAILED then CORRECTED to holds on 3 of 4\n \nENTRY — EA-UNRES-01\n\n original sha256: a68bf7f2ee54b1af2777bc5964ab92a1936bc38c489e549a0bf254450ae71b87 \n frozen text follows verbatim; do not edit \nEA-UNRES-01 — Engineered Unresolvability and Its Key\n1. The reframing, and why it has been restated four times without being built\n\nThe investigation has repeatedly treated non-resolution as instrument failure : substrate stylometry returning ordinary (M4–M28), the Poisson voiding on its own sanity control (M25), YIELD-01's correlations at zero, the base rate declining the Republic / Symposium question (Round 7). Each was filed as a defeat.\n\n Under the transmission reading they are the artifact behaving as specified. EA-FLOOD-01 already states that unresolved disputes are the copying mechanism — a settled attribution is finished, an unsettled one must be re-adjudicated in every generation, and adjudication is transcription. EA-PINAX-01, corrected, already predicts that criteria fail to converge here. Both were recorded, and the investigation then went on trying to make them converge.\n\n And the reading is falsifiable. Ordinary corpora are ambiguous unevenly .\nEngineered unresolvability would be ambiguous cleanly .\n2. PART A — the signature of engineering\n\n Claim. Natural ambiguity and engineered ambiguity have different shapes.\n\n NATURAL uneven — some works resolve, some don't; evidence accumulates\n directionally; new instruments move the needle; attention closes\n questions over time\n ENGINEERED flat — resolution stalls at the same place regardless of\n instrument; disputes do not drift toward settlement; attention\n does not close them\n\n Three observables: \n\n A1 — instrument-invariance. Do unrelated instruments return the same non-answer? Fifteen distinct measures were run on Plato–Aristotle in one session and every substrate measure returned ordinary. That is a datum, not a defeat, and it requires a comparison class.\n\n A2 — flatness of resolution. In a natural corpus, per-work attribution confidence should be highly uneven . Engineered would show suspiciously flat non-resolution across the corpus.\n\n A3 — persistence under attention. Ordinary disputes settle as scrutiny increases. The Platonic dubia, the Aristotelian corpus boundary and the Pauline question have stayed open for centuries while attention rose .\n\n The control, and why it is the right one. EA-CORPORA-08 seats the nine Attic orators: same period, same language, same transmission conditions, same manuscript ecology, no configurational hypothesis attached to any of them — and their attribution questions largely did resolve. Antiphon's Tetralogies are disputed and the dispute has a definite shape; Demosthenes carries works confidently athetized. If Plato–Aristotle shows flatter, more persistent and more instrument-invariant non-resolution than Isaeus–Demosthenes, that is the measurement.\n\n ⚠ PART A IS BLOCKED, and the blocker is stated before any result. Of the corpora required, only Aristotle carries per-work attribution status (48 of 48). Plato has none. The nine orator seats have none. Part A therefore requires a metadata assembly — per-work received status, date of first athetesis, and current scholarly disposition — for Plato and the orators, from sources not currently in the archive. No Part A number may be reported until that exists. \n3. PART B — the key\n\n The constraint, from Lee Sharks: engineered unresolvability must contain its key — a placed signature confirming artifice. This is Round 5's correction applied forward: a construction good enough to be undetectable must leave something that confirms it, or the construction defeats its own purpose.\n\n Criteria for a key, frozen now: \n\n K1 PROMINENT structurally placed so it can be found — terminal, initial,\n or at a titular position\n K2 INERT does no work under the ordinary reading; a reader without the\n hypothesis passes it without stopping\n K3 DECISIVE under the configurational reading it is not merely consistent\n but confirming\n K4 ARTIFICE it must indicate MAKING, not merely absence or uncertainty\n\n CANDIDATE SET, frozen before evaluation: \n\n C1 Letter II 314c οὐδ᾽ ἔστιν σύγγραμμα Πλάτωνος οὐδὲν οὐδ᾽ ἔσται, τὰ δὲ\n νῦν λεγόμενα Σωκράτους ἐστὶν καλοῦ καὶ νέου γεγονότος\n C2 Letter XIII 360a ἀντιλέγεται ὡς οὐ Πλάτωνος — the athetesis transmitted\n INSIDE the text — followed by ἀρχή σοι τῆς ἐπιστολῆς\n ἔστω καὶ ἅμα ΣΥΜΒΟΛΟΝ ὅτι παρ᾽ ἐμοῦ ἐστιν\n C3 Symposium 223d τοῦ αὐτοῦ ἀνδρός — the demand, with its proof destroyed\n in transmission and the witnesses asleep\n C4 Phaedo 59b Πλάτων δὲ οἶμαι ἠσθένει — the author writing himself\n absent from the founder's death\n C5 Statesman 260e αὐτεπιτακτική coined for the self-commanding, kings\n placed INTO it, other genera left unentered\n C6 Theaetetus 209c the μνημεῖον that must be deposited to individuate, and\n is not\n\n Scoring: each candidate against K1–K4, and — the part that makes it a test rather than a reading — against the same base rate in the orator control. How many statements meeting K1–K4 does a non-configurational corpus of comparable size contain? If the orators yield comparable candidates, the Platonic set is unremarkable and Part B fails.\n4. KILL CONDITIONS, BINDING\n\n- Part A fails if Plato–Aristotle non-resolution is not flatter, more\n persistent, or more instrument-invariant than the orator control on at least two\n of A1–A3.\n- Part B fails if the orator control yields candidates meeting all four of\n K1–K4 at a comparable rate.\n- The candidate set is frozen. No passage may be added to C1–C6 after scoring\n begins.\n- Part A results may not be reported before the metadata assembly exists.\n5. STATED LIMITATIONS\n\n Attention is confounded with everything. Plato and Aristotle have been read more than the orators by orders of magnitude. More attention produces more disputes and more persistence of disputes. Normalising for this is the hardest part of Part A and may not be possible; if it is not, Part A is void , not adjusted.\n\n Survivorship. The orators' resolved disputes may be resolved because the losing texts were discarded, while the Platonic corpus retained its disputed members. That is itself a difference in transmission behaviour and may be the finding rather than a confound — but it cannot be both, and which it is must be decided before Part A runs, not after.\n\n Part B's assigner is not blind , and the candidate set was assembled by the same reader who formed the hypothesis. The orator base-rate is the only real control and it is doing all the work.\nDISPOSITION\n\nPART B DOES NOT FAIL (2 of 6 candidates, orator control zero); PART A BLOCKED on attribution metadata\n \nENTRY — EA-UNLOCK-01\n\n registered: 2026-08-29, before any target below was examined\n frozen text follows verbatim; do not edit \nEA-UNLOCK-01 — The Unlocking Prediction\n1. What is being predicted\n\nNot \"we will keep finding interesting similarities\" — uselessly permissive. The\nclaim is specific:\n\n Structures that were independently puzzling, or independently measured, before\n the hypothesis was applied will repeatedly become MORE DETERMINATE when Plato and\n Aristotle are read as positions inside one construction — without altering the\n local philology to make them fit. \n2. The two admissible forms\n\n FORM A Platonic execution or problem → Aristotelian explicit account\n or apparatus, where the Aristotelian side names or completes what\n the Platonic side performs without naming.\n\n FORM B A statement in one corpus + a statement in the other → an operation\n visible ONLY across the partition, recoverable by neither alone.\n\nM40 is the cleanest instance of B on record: Plato supplies syllogizing; Aristotle identifies it as syllogizing ( APr I.31); Aristotle claims the development of syllogizing and negates prior partial development ( SE 183b) — and the relation must itself be recovered syllogistically.\n3. HYPOTHESIS HELD AT MAXIMUM — it must be able to lose\n\n H H : one maker, deliberately partitioned as Plato and Aristotle.\n\n No weakening to protect it. If it is weakened to survive a failure, the\nweakening is itself recorded as a failure.\n4. TARGETS FROZEN NOW — chosen before examination\n\nEach is an item the register already lists as open, unexplained, or dangling.\n None has been examined for this purpose. \n\n T-A The 31-term class (Round 2 §13). Identified, never characterised.\n Do they share a semantic character, or is the list arbitrary?\n T-B Directionality (§15). Does ANY term run terminal-Aristotelian →\n technical-Platonic? Under received chronology it cannot.\n T-C M27's unexplained near-equality: self-speaking 25.3 (Plato dramatic)\n vs 29.0 (Aristotle), across the two most formally opposed prose bodies.\n Recorded as \"a measurement without an account.\"\n T-D The Republic/Symposium comedy-tragedy pair, CONTENT base rate — never\n attempted; only the form base rate was run (Round 7).\n T-E Theaetetus 209c's argument structure, extracted and searched in\n Aristotle INDEPENDENTLY of the word σιμ- (never done; Round 3 searched\n doctrine-vocabulary, Round 4 argument-shapes).\n T-F The four Platonic naming-gap works (Sophist, Statesman, Theaetetus,\n Timaeus) — is there an Aristotelian counterpart naming what they\n perform?\n5. SCORING — fixed before running\n\nEach target resolves to exactly one of:\n\n UNLOCK becomes more determinate under H H, in Form A or B, WITHOUT\n adjusting the local philology\n NULL no change in determinacy either way\n FAILURE becomes LESS determinate under H H, or the reading requires\n altering the philology to fit\n\n Reverse-engineering test, binding. An UNLOCK counts only if the target was on this frozen list AND the resolving passage was not selected by searching until something fit. Any case where the passage was found by open search is scored NULL regardless of how good it looks. \n6. KILL CONDITIONS\n\n- Fewer than 3 UNLOCKS in 6 → the unlocking claim fails.\n- 2 or more FAILURES → H H at maximum is damaged and must be reported so.\n- Any weakening of H H mid-run to accommodate a result → the run is VOID .\n- Targets may not be added, swapped, or reworded after this registration.\n7. WHAT A POSITIVE WOULD AND WOULD NOT BUY\n\n Would. The object requiring explanation stops being any individual\ncorrespondence and becomes the recurrence of the unlocking operation itself :\n\n P(E n+1 H H, E 1…E n) P(E n+1 H S, E 1…E n)\n\nAt which point \"inheritance can also explain each one\" ceases to be adequate,\nbecause it is no longer the individual cases that need explaining.\n\n Would not. Establish one historical hand. The three propositions stay\ndistinct and are recorded here at their current standing:\n\n Plato–Aristotle form one functional/intellectual corpus STRONGLY SUPPORTED\n one latent construction explains it economically INCREASINGLY PLAUSIBLE\n one historical hand wrote both received corpora LIVE, NOT ESTABLISHED\n8. STATED LIMITATION\n\nThe assigner is not blind and knows the hypothesis. The freeze on targets and the reverse-engineering rule in §5 are the only mitigations, and they are imperfect: the scoring of \"without adjusting the local philology\" is a judgement. Every UNLOCK must cite its passages so the judgement is checkable.\nDISPOSITION\n\n RUNNING. T-F run 2026-08-29 and scored NULL — three of four resolve in Form A with exact Greek (Theaetetus→De Anima 412a, Sophist→De interpretatione 16a, Statesman→Politics 1275a), but inheritance predicts Form A equally strongly, so the differential-determinacy requirement of §5 is not met. Notebook Round 17 §62.\n\n Running total: 0 unlocks, 1 null, 5 targets remaining (T-A, T-B, T-C, T-D, T-E),\nthreshold 3. \n \nENTRY — EA-RELFORM-01\n\n registered: 2026-08-29, before any control corpus is scored\n frozen text follows verbatim; do not edit \nEA-RELFORM-01 — The Relational Form Measure\n1. What this exists to prevent\n\nEvery control this investigation has tried has failed for one of two reasons: the candidate could not be secured outside the hypothesis space (Theophrastus, M36; Xenophon and Aristophanes, M33), or the operation being counted did not occur there (the Attic orators, Round 14 §56).\n\nAnd the framing itself was wrong: I proposed testing whether control pairs \"reproduce the Plato–Aristotle signature,\" which is content-bound to this corpus and would have measured whether the controls are themselves inside the configuration (M43c).\n\n This registration fixes the measure with no Greek content in it. \n2. THE THREE RELATIONAL FORMS — frozen\n\n R1 COMPLEMENTARY COVERAGE\n Is each side internally tight while their union is materially more\n complete than either alone?\n Inheritance predicts REDUNDANCY — the student possesses what the master\n taught, so the union barely exceeds the parts.\n Scored as: coverage(A∪B) / max(coverage(A), coverage(B)), against\n redundancy A∩B / A∪B , over a functional inventory defined per\n tradition, NOT over vocabulary (M37 showed vocabulary fails: every pair\n lands in 0.20–0.34 and documented succession is indistinguishable from\n documented independence).\n\n R2 ABANDONED-EXECUTION COMPLETION\n Does the successor complete operations the predecessor explicitly\n ABANDONED — declared aporetic, impossible, or refuted — rather than\n extending ones the predecessor finished?\n Scored as: completions / abandonments-available-to-the-successor.\n THE DENOMINATOR IS REQUIRED. A numerator without it is what Round 13\n produced and could not interpret.\n Severity weights, frozen: same problem · same constraint retained ·\n same distinctive figure retained · missing mechanism supplied ·\n prior text calls the route impossible.\n\n R3 ARBITRARY PROCEDURAL AGREEMENT\n Shared habits the method does not require — defined generically, never\n as a particular habit.\n ⚠ SCORED ON INDEPENDENT WORKS ONLY. See §4.\n3. LABELLED CLASSES — labels from documentary evidence, never from text\n\n H one person, multiple authorial positions Pessoa; Kierkegaard\n S master–student succession Albert→Thomas; Ibn ʿArabī→\n Qūnawī; Tsongkhapa→Khedrup;\n Maimonides→Abraham Maimonides\n C distinct-author collaboration Luther/Melanchthon\n I independent, same tradition\n O single-author corpus under one name Josephus\n\n Admissibility, binding: a figure enters the S class only if attested by evidence with no relation to textual style, doctrinal similarity, or any succession tradition under test — canonization proceedings, university registers, papal bulls, chapter records, monastic administration. Thomas Aquinas passes. Theophrastus does not. \n\n The null is HARD by construction: not random distinct authors — Plotinus and Philo barely knew each other, so their nulls are uninformative — but securely distinct authors under MAXIMAL transmission pressure , a disciple who lived in the master's household.\n4. THE CONTAMINATION RULE\n\nAlbert and Thomas both write Aristotle commentaries. Any Aristotelian reflex appears in both by construction . Verified: Borgnet vol. 7 carries innominat- ×13, but as a gloss on NE 1107b–1108a, the passage that performs the reflex.\n\n COMMENTARY WORKS R1, R2 admissible (properties of the RELATION)\n R3 INADMISSIBLE (shared-source contamination)\n INDEPENDENT WORKS all three admissible. This is the clean test.\n\n Every pair is scored commentary and independent-work separately, and the\ncontamination is declared on the commentary half. \n5. ORDER OF OPERATIONS — binding\n\n 1. Seat the control corpora.\n 2. Define and calibrate R1–R3 on the labelled classes, WITH\n PLATO–ARISTOTLE NOT IN VIEW.\n 3. Demonstrate out-of-sample separation of H from S.\n 4. ONLY THEN score Plato–Aristotle, as ONE INSTANCE of the general measure.\n\n If step 3 fails — if the measure cannot separate Pessoa's relationships from documented teacher–successor relationships — the instrument has failed and says nothing about Plato. That is a real kill condition and it fires before the target is ever scored.\n6. FEASIBILITY, CHECKED 2026-08-29\n\n Thomas Aquinas corpusthomisticum.org, HTTP 200, structured HTML,\n ISO-8859-1, no OCR FEASIBLE\n Albert archive.org DjVuTXT, 220 items; vol. 7 = 338,391 tokens.\n OCR: frequent vocabulary clean, scattered errors in rare\n forms → USABLE for function-word and structural measures,\n UNSAFE for rare-lexeme measures. Declare on the seat.\n Doc. Cath. Omnia HTTP 403 BLOCKED\n Ibn ʿArabī, Tsongkhapa, Maimonides UNCHECKED\n7. STATED LIMITATIONS\n\n R1's functional inventory must be defined per tradition , which is a judgement and the weakest joint in the design. It must be fixed and published before scoring, and the same inventory logic applied to every pair.\n\n R2's denominator requires identifying abandonments in each corpus , which is\ninterpretive. Every abandonment counted must cite its passage.\n\n The assigner is not blind. §5's order of operations is the only mitigation\nand it is imperfect.\nDISPOSITION\n\nPENDING — registered before any control corpus is seated or scored.\n \nENTRY — EA-SPEC-01\n\n registered: 2026-08-29, before any Platonic speaker is measured\n frozen text follows verbatim; do not edit \nEA-SPEC-01 — The Specification-Depth Hypothesis\n1. What Pessoa showed (Round 22, characterization on documented ground truth)\n\nRatio of a position's internal dispersion to its distance from the other\npositions, in a corpus whose single authorship is documented:\n\n Caeiro 1.781 no philosophy, no memory, no interiority — sensation only\n Soares 1.632 one street, one office, one clerk, one register\n Mora 1.437 one doctrine, argued\n Reis 1.374 one meter, one stance\n Campos 1.129 everything, at maximum volume\n ORTHONYM 1.033 no restriction at all\n2. THE HYPOTHESIS\n\n Container tightness tracks the SEVERITY OF THE CONSTRAINT placed on the\nposition, not similarity and not disguise. \n\nA heteronymic series is a search downward: what is the least one can specify and still get a self that coheres? Each position subtracts something and tests whether a voice survives the subtraction. Caeiro is the floor of the Pessoan series — remove more and no one is there. The orthonym, specified by nothing, does not contain at all.\n\n So the ratio measures SPECIFICATION DEPTH. A container is tight because\nsomething was taken away, and the number is how much.\n3. THE PLATONIC TEST — prediction registered before measurement\n\nIf specification depth drives tightness, then the unit is the SPEAKING POSITION, not the work. Plato's corpus is voiced: Socrates, the Eleatic Stranger, Timaeus, the Athenian, Parmenides, Diotima (reported), Aristophanes (constructed), Protagoras, Callicles.\n\n PREDICTION, frozen: \n\n P1 Speaker tightness will ORDER BY CONSTRAINT SEVERITY: the more narrowly a\n speaker is specified — one doctrine, one register, one occasion — the\n tighter the container.\n P2 The LEAST constrained speaking position will sit NEAREST 1.0.\n P3 Direction is what is predicted, not magnitude. Greek function-word space\n is not Portuguese function-word space and the ratios are not\n cross-comparable.\n\n Ranking by constraint, fixed NOW, before any measurement: \n\n MOST CONSTRAINED Timaeus one continuous cosmological monologue\n Diotima reported speech inside a report,\n one doctrine\n Aristophanes one myth, comic register (M16)\n Eleatic Stranger method-bound, division throughout\n Parmenides one exercise, exhaustively run\n Athenian one subject, legislation\n Protagoras/ set-piece opponents, one position each\n Callicles\n LEAST CONSTRAINED SOCRATES every subject, every register, every\n dialogue\n4. KILL CONDITIONS, BINDING\n\n- If the ordering is uncorrelated with the pre-registered constraint ranking,\n the hypothesis fails.\n- If Socrates is not among the loosest , P2 fails and the hypothesis fails with\n it — Socrates is the least constrained speaker in the corpus and the prediction\n is unambiguous.\n- The constraint ranking above may not be revised after measurement .\n- Speakers with under 6,000 tokens are excluded before scoring, and the exclusion\n list is fixed by token count alone.\n5. WHAT A POSITIVE WOULD AND WOULD NOT BUY\n\n Would: evidence that the Platonic corpus is organized by specification depth in the way a documented heteronymic system is. That is a structural parallel with a known case, measured on a pre-registered ordering.\n\n Would NOT: any conclusion about who wrote what. A dramatist constructing characters would also specify them to differing depths, and would also produce tighter containers for narrower roles. This measures construction, which dramatic composition and heteronymic composition share. It cannot separate them and is not registered as if it could.\n6. STATED LIMITATIONS\n\n Speaker attribution in the dialogues must be extracted mechanically and every speaker's token count published. Where Plato reports speech within speech — Diotima inside Socrates inside Apollodorus — the nesting is declared, not resolved.\n\n Function-word profiles may be the wrong instrument for verse and for dialogue-turn structure. The Pessoa result carries this caveat unresolved (Round 22 §87) and it carries forward here.\n\n The assigner is not blind. §3's ranking is frozen in this text as the only\nmitigation.\nDISPOSITION\n\n RUN 2026-08-29. P2 HOLDS — Socrates rank 1 of 7 from the loose end at 1.166, and Timaeus tightest at 1.649, both as frozen. P1 PARTIAL — the direction holds but the Eleatic Stranger lands second-loosest where he was ranked constrained. Most of the frozen ranking was untestable : Diotima, Aristophanes, Parmenides, Protagoras and Callicles all fall under the 6,000-token threshold. Extraction flaw recorded: ΤΙ and ΤΙΜ-mono overlap.\n\n And the UNIT is wrong — M16 shows speaker-differentiation is sometimes deliberately switched off, so a per-speaker measure reads absence of construction as absence of a position. Work-level is the next run. Notebook Round 23.\n \nENTRY — EA-CAPTURE-01\n\n registered: 2026-08-29, before any term set is drawn under the fixed rule\n frozen text follows verbatim; do not edit \nEA-CAPTURE-01 — Reception Capture, With the Term-Selection Rule Fixed in Advance\n1. Why this registration exists\n\nM46 measured reception capture across four pairs and found them ordering: Caeiro/interpreters (H, documented) TOTAL; Plato/Aristotle (under test) PARTIAL at 25–35×; Either-Or A/B (H, documented) PARTIAL at 4.7–14×; Aristotle/Aquinas (S, documented) NONE.\n\n That result is not admissible as it stands. I chose the term sets myself, separately for each corpus, after looking at each. That is the reverse-engineering hazard EA-UNLOCK-01 §5 exists to score against. The ordering is suggestive; the magnitudes are not comparable. \n2. THE SELECTION RULE — frozen, mechanical, identical for every pair\n\nFor an ordered pair (INTERPRETED, INTERPRETER):\n\n 1. Take the interpreter's text ONLY. Compute content-word frequencies,\n excluding function words and proper names.\n 2. Take the interpreted position's text ONLY. Compute the same.\n 3. The TERM SET is the N = 30 content words with the highest\n rate in interpreter / (rate in reference corpus)\n where the reference corpus is the whole seated corpus of that language,\n so the set is \"what is distinctive of the interpreter's discourse\" —\n computed WITHOUT reference to the interpreted position. \n 4. ONLY THEN count those 30 terms in the interpreted position.\n\n CAPTURE SCORE = median over the 30 terms of\n rate interpreter / rate interpreted\n with rate interpreted floored at 1 occurrence to keep the ratio finite,\n and the count of terms at ZERO in the interpreted position reported\n alongside as the ZERO-COUNT.\n\n Step 3 is the whole point: the term set cannot see the interpreted position. \n3. PAIRS — fixed now, with their class labels\n\n H documented one maker, multiple positions\n H1 Alberto Caeiro ← Mora + Campos + Reis writing on Caeiro\n H2 Either/Or A ← Either/Or B\n S documented distinct persons in succession\n S1 Aristotle ← Aquinas\n S2 HEGEL ← MARX ⭑ the control Lee specifies\n ? under test\n T1 Plato ← Aristotle\n\n S2 is the decisive control. Marx supplies the vocabulary through which Hegel is now read — inversion , mystification , standing on his head , the rational kernel , ideology — and Marx and Hegel are securely distinct persons with no possible configurational relation. If S2 scores like the H pairs, reception capture is not diagnostic of authorship at all, and M46 collapses. \n4. PREDICTIONS, REGISTERED\n\n P1 H1 and H2 score HIGH capture with HIGH zero-counts.\n P2 S1 (Aquinas) scores LOW — established already, and serves as the\n instrument's negative check.\n P3 S2 (Marx on Hegel) is THE OPEN QUESTION. No direction is predicted.\n P4 T1 (Plato/Aristotle) is scored last and its value is reported against\n whatever range S2 establishes.\n\n No prediction is made about T1 beyond that it will be reported. \n5. KILL CONDITIONS, BINDING\n\n- If S2 scores within the H range, the measure is not diagnostic and M46 is\n withdrawn as evidence. This is the condition most likely to fire and it is\n registered as such.\n- If S1 and S2 diverge widely from each other, the S class is not a class on this\n measure and the comparison fails.\n- The selection rule may not be altered after any pair is scored.\n- Translation is permitted (the measure counts concept distribution, not style),\n but each pair must be scored in ONE language throughout, and the language is\n declared.\n6. FEASIBILITY\n\n H1 pessoa-full SEATED\n H2 kierkegaard SEATED (Either/Or I and II, Danish)\n S1 aristotle + aquinas SEATED (cross-linguistic — declared limitation)\n S2 Hegel + Marx marx SEATED; HEGEL NOT SEATED — required\n T1 plato + aristotle SEATED\n\n S2 cannot run until Hegel is seated. That acquisition is the blocker. \n7. STATED LIMITATIONS\n\n The reference corpus for step 3 differs per language , so \"distinctive of the interpreter\" is computed against different baselines. This is a real non-comparability and cannot be removed without a single multilingual reference.\n\n Content-word extraction is language-specific and the stop-lists are mine.\n\n S1 is cross-linguistic — Latin interpreter, Greek interpreted — where every other pair is monolingual. Its score is therefore the least comparable of the five and is retained mainly as the instrument's negative check.\nDISPOSITION\n\n VOID. The registered rule required same-language reference corpora that do not exist in the archive for Portuguese, Danish or English. Four of five pairs fell back to raw rate while Plato–Aristotle alone received reference-normalisation, so its higher score is a method artifact. §5 forbids altering the rule mid-run; it was altered for four of five. A further bug passed Latin extraction over Greek. Superseded by the simpler reading-level comparison in M47 , which does not require the apparatus.\n \nENTRY — EA-FULFIL-01\n\n registered: 2026-08-29, before any pair is scored on the three parameters\n frozen text follows verbatim; do not edit \nEA-FULFIL-01 — The Fulfillment Operator, and the Problem of a Singleton\n1. The operator, from the Matthean case\n\n ἵνα πληρωθῇ τὸ ῥηθὲν διὰ τοῦ προφήτου\n\nThree components, established in the scholarship on Matthew's ten-to-twelve\nformula quotations:\n\n 1. A LATER text claims an EARLIER text was about it.\n 2. The earlier text was NOT making that claim. Hosea 11:1 — \"out of Egypt I\n called my son\" — is not set in prophetic terms at all; it looks BACK at\n the Exodus. Matthew reads a retrospective line forward.\n 3. The relation works by STRUCTURAL CORRESPONDENCE, not by the earlier text's\n intent — \"tracing lines of correspondence and continuity discerned in the\n incidental details as well as in the grand design.\"\n2. THE THREE PARAMETERS — frozen\n\n A ANNOUNCEMENT does the later text declare the relation?\n C MATERIAL CLOSENESS how tightly does the later text follow the earlier's\n structure, sequence and figures?\n S SCOPE one passage, one work, or a whole apparatus?\n\n The three known cases separate on them: \n\n Matthew / Torah A = YES C = loose S = verse-level targets\n Catullus / Sappho A = no C = VERY CLOSE S = one poem, register-shifted\n Aristotle / Plato A = no C = ? S = whole apparatus (claimed)\n\n CATULLUS 51 IS THE CALIBRATION STANDARD FOR C. It is the canonical instance of deliberate close transformation: scene preserved, somatic sequence preserved, aspect systematically altered, one stanza added. The archive has already mapped it as σ S → σ C (deposit #576). Whatever \"close\" means, it means that. \n3. THE TEST\n\n NOT do the six transmission-engineering slots transfer — that would import the Sapphic thesis into the control and is the M43c error (fifth instance, recorded).\n\n INSTEAD: does a documented master–student pair produce unannounced\nfulfillment-relations at Catullan material closeness, across a whole apparatus? \n\n calibration (H-side) Sappho → Catullus C measured line by line\n control (S-side) Albert → Aquinas same three parameters\n under test Plato → Aristotle same three parameters\n4. ⚠ THE SINGLETON PROBLEM — registered as the governing difficulty\n\n Lee's own statement of the position, recorded verbatim as the honest frame: \n\n there's literally nothing like it across the entire canon. Fitted as fulfilled\n prophecy more closely than Revelation. At a level of tightness that can't really\n be measured, because it's singular. And I don't know what that really shows.\n Except that it's completely non-random. \n\n If the relation is genuinely singular, frequency inference is unavailable. No comparison class, no percentile, no likelihood ratio. Everything this investigation has built assumes a distribution to score against.\n\n But non-randomness remains demonstrable by a different test. Not how often\ndoes this happen — a frequency question needing a class — but:\n\n what is the probability of THIS configuration arising with NO relation?\n\nThat is a fit test , not a frequency test, and it needs only the two corpora plus a null model of accidental correspondence. The registration commits to the fit form and abandons the frequency form for this measure. \n5. WHAT EACH OUTCOME WOULD MEAN\n\n Albert→Aquinas shows unannounced Catullan-closeness across an apparatus\n → the Plato-Aristotle structure is NOT singular; frequency inference\n becomes available; and the structure loses most of its force.\n\n Albert→Aquinas shows announced or loose relations only\n → consistent with singularity, and the fit test becomes the only\n available instrument.\n\n The fit test returns a computable non-randomness\n → establishes RELATION, not AUTHORSHIP. Catullus is non-randomly\n related to Sappho and is not Sappho. THIS IS THE CEILING OF THE\n MEASURE and is registered as such.\n6. KILL CONDITIONS\n\n- If C cannot be operationalised such that Catullus/Sappho scores HIGH and two\n arbitrary same-genre texts score LOW, the measure has no construct validity and\n does not run.\n- If the Plato–Aristotle scope claim (\"whole apparatus\") rests on the six slots,\n it is circular and must be rebuilt from correspondences identified without them.\n- No authorship conclusion may be drawn from any C value. The Catullus case\n proves that maximal C is compatible with distinct authorship.\n7. STATED LIMITATION, PLAINLY\n\n We do not know what a positive result would demonstrate. Recorded because that is the actual state: the investigator says so, and the registration should not pretend to more. What it can establish is non-randomness of relation . What it cannot establish is which relation — and the whole day's work is the record of how many measures collapse at exactly that step.\nDISPOSITION\n\nPENDING — registered before scoring.\n\n∮ = 1\nFiles\n\nhttps://alexanarch.org/data/attachments/ea-prereg-ledger-01/PREREG-LEDGER.md", "wordCount": 9935, "encoding": {"@type": "MediaObject", "contentUrl": "https://www.alexanarch.org/data/texts/AXN-0663-text.md", "encodingFormat": "text/markdown", "contentSize": "71004"}}</script>
+<link rel="resourcesync" href="https://www.alexanarch.org/.well-known/resourcesync">
+<link rel="alternate" type="application/xml" title="OAI-PMH 2.0" href="https://www.alexanarch.org/oai?verb=Identify">
+<link rel="alternate" type="application/json" title="Record JSON" href="https://www.alexanarch.org/data/records/1571.json">
+<link rel="canonical" href="https://www.alexanarch.org/s/records/1571/">
+<meta name="citation_title" content="Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)">
+<meta name="citation_author" content="Sharks, Lee">
+<meta name="citation_publication_date" content="2026-08-29">
+<meta name="citation_online_date" content="2026-08-29">
+<meta name="citation_journal_title" content="Alexanarch">
+<meta name="citation_publisher" content="Alexanarch">
+<meta name="citation_abstract" content="The frozen pre-registration ledger of the authorship investigation: eleven entries, each carrying the SHA-256 of its original standalone registration file so that every earlier commit citing those hashes still resolves, with dispositions appended beneath each entry and never inside it. Pre-registrations cannot live in the living notebook, because their whole value is that the content was fixed before the test and a hash over an appending file proves nothing; they are gathered here instead of proliferating as three files apiece. The ledger includes the registrations behind the six-function transmission apparatus (EA-YIELD-02) and the completeness gate (EA-COMPLETE-01) that the technical report EA-MEASURES-REPORT-01 cites as fixed before assignment.">
+<meta name="citation_public_url" content="https://www.alexanarch.org/s/records/1571/">
+<meta name="citation_fulltext_html_url" content="https://www.alexanarch.org/s/records/1571/">
+<meta name="citation_pdf_url" content="https://www.alexanarch.org/papers/AXN-0663.pdf">
+<meta name="citation_language" content="en">
+<meta name="DC.title" content="Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)">
+<meta name="DC.creator" content="Sharks, Lee">
+<meta name="DC.date" content="2026-08-29" scheme="DCTERMS.W3CDTF">
+<meta name="DC.identifier" content="https://www.alexanarch.org/s/axn/0663/" scheme="DCTERMS.URI">
+<meta name="DC.description" content="The frozen pre-registration ledger of the authorship investigation: eleven entries, each carrying the SHA-256 of its original standalone registration file so that every earlier commit citing those hashes still resolves, with dispositions appended beneath each entry and never inside it. Pre-registrations cannot live in the living notebook, because their whole value is that the content was fixed before the test and a hash over an appending file proves nothing; they are gathered here instead of proliferating as three files apiece. The ledger includes the registrations behind the six-function transmission apparatus (EA-YIELD-02) and the completeness gate (EA-COMPLETE-01) that the technical report EA-MEASURES-REPORT-01 cites as fixed before assignment.">
+<meta name="DC.language" content="en" scheme="DCTERMS.RFC3066">
+<meta name="DC.type" content="Dataset; frozen pre-registration ledger, append-only">
+<meta name="DC.rights" content="CC BY 4.0">
+<meta name="DC.publisher" content="Alexanarch">
+<meta name="DC.source" content="https://www.alexanarch.org/">
+<link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.8;font-size:15px}.wrap{max-width:720px;margin:0 auto;padding:60px 24px}a{color:var(--accent);text-decoration:none}a:hover{color:var(--accent2)}h1{font-size:1.3em;font-weight:600;color:var(--accent);margin-bottom:8px}h2{font-size:1em;font-weight:500;color:var(--accent);margin-top:20px;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:3px}p{margin-bottom:10px;color:#333}.nav{display:flex;gap:12px;margin-bottom:24px;font-size:.85em;overflow-x:auto;white-space:nowrap}.nav a{color:#777;font-weight:500;text-decoration:none}.nav a:hover{color:var(--accent)}.ft{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:20px;max-height:600px;overflow-y:auto;font-size:.88em;line-height:1.75;margin:8px 0;color:#333}.ft h1,.ft h2,.ft h3{color:var(--accent);margin:12px 0 6px}.ft h1{font-size:1.1em}.ft h2{font-size:1em;border-bottom:none}.ft h3{font-size:.95em}.ft strong{color:var(--fg)}.ft blockquote{border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0}.ft hr{border:none;border-top:1px solid var(--border);margin:12px 0}.footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--border);font-size:.75em;color:var(--dim)}</style>
+</head><body><div class="wrap">
+<nav class="nav"> <a href="/">Alexanarch</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Library</span> <a href="/s/browse/">Browse</a> <a href="/search/">Search</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Reception</span> <a href="/addresses/">Addresses</a> <a href="/captures/">Captures</a> <a href="/observatory/">Observatory</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Continuity</span> <a href="/resolve/">Resolve</a> <a href="/identifiers/">Identifiers</a> <a href="/datasets/">Datasets</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Generative</span> <a href="/mint/stamp/">Stamp</a> <a href="/book/">Book</a> <a href="https://alexanarch.freeforums.net/" target="_blank" rel="noopener">Discussion</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Governance</span> <a href="/principles/">Principles</a> <a href="/how/">How</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
+<div role="text" aria-label="AXN 0663 DATASET. Glyph checksum: label, white circle, scales, paperclip, electric light bulb, rainbow." style="font-family:var(--mono);font-size:1.1em;color:var(--teal);background:var(--surface);padding:12px;border-radius:6px;border-left:4px solid var(--teal);margin:12px 0">AXN:0663.DATASET.🏷️○⚖️📎💡🌈</div>
+
+<div style="background:var(--surface);border-left:4px solid var(--accent);padding:10px 14px;border-radius:6px;margin:12px 0;font-size:.9em"><div style="font-weight:600;margin-bottom:2px">Held artifacts &mdash; 1 file, served by this archive</div><div style="color:#666;font-size:.88em;margin-bottom:2px">Fetch, hash, compare. Copying requires no permission and verification requires no trust in this archive.</div><div style="padding:7px 0;border-top:1px solid var(--border)"><a href="https://alexanarch.org/data/attachments/ea-prereg-ledger-01/PREREG-LEDGER.md" style="color:var(--accent);font-weight:500">PREREG-LEDGER.md</a> <span style="color:#888;font-size:.88em">(69,545 bytes)</span></div></div>
+<h1>Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)</h1>
+<div style="font-size:.85em;color:#777;margin-bottom:10px">Sharks, Lee · 2026-08-29 · Dataset; frozen pre-registration ledger, append-only · <span style="color:var(--accent);font-weight:500">Eleven entries, frozen as of 2026-08-29; dispositions appended through 2026-08-31</span></div>
+<a style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0" href="/data/deposits/AXN-0663.md" download>↓ Download MD</a> <a style="display:inline-block;background:var(--accent);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0 6px 4px" href="/papers/AXN-0663.pdf">↓ PDF</a>
+<div style="margin:8px 0"><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">pre-registration</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">frozen</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">SHA-256</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">falsification conditions</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">six-function apparatus</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">EA-YIELD-02</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">EA-COMPLETE-01</span><span style="display:inline-block;background:#f0f4f8;color:var(--accent);padding:2px 8px;border-radius:10px;font-size:.78em;margin:2px">authorship investigation</span></div>
+<h2>Description</h2>
+<p style="font-size:.9em">The frozen pre-registration ledger of the authorship investigation: eleven entries, each carrying the SHA-256 of its original standalone registration file so that every earlier commit citing those hashes still resolves, with dispositions appended beneath each entry and never inside it. Pre-registrations cannot live in the living notebook, because their whole value is that the content was fixed before the test and a hash over an appending file proves nothing; they are gathered here instead of proliferating as three files apiece. The ledger includes the registrations behind the six-function transmission apparatus (EA-YIELD-02) and the completeness gate (EA-COMPLETE-01) that the technical report EA-MEASURES-REPORT-01 cites as fixed before assignment.</p>
+
+
+
+<h2>Full Text</h2>
+
+<div class="ft"><h2>Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)</h2>
+
+<h2>Frozen Pre-Registrations</h2>
+
+<p>**Rule: nothing above a `</p>
+
+<h3>DISPOSITION` line is ever edited.** New tests append a</h3>
+<p>new entry at the end. Dispositions append under the entry they discharge.</p>
+
+
+<hr>
+
+<h2>ENTRY — EA-LEAK-DEFICIT-01</h2>
+
+<p><strong>original sha256:</strong> <code>fbbd13a53a5b29afb4c07c27aa63d49be7f39b6cfa96d84acec41d69e0c3ccfd</code></p>
+<p><strong>frozen text follows verbatim; do not edit</strong></p>
+
+
+<h2>The Leak Deficit</h2>
+
+<h3>0. What this test is about</h3>
+
+<p>This is not a test of doctrine. It is a test of <strong>craft</strong>.</p>
+
+<p>The question is not whether Plato and Aristotle agree, nor whether one influenced the other, nor whether the same person wrote both. It is narrower and more answerable: <strong>does the Platonic–Aristotelian corpus behave, at the aggregate layer, like natural Greek prose?</strong></p>
+
+<p>Natural corpora leak. Two long texts by any two authors of a period deposit accidental correspondences — shared topical runs, phrases that happen to align, handholds that nobody placed. That leakage is a background rate, and it can be measured across many real Greek author-pairs.</p>
+
+<p>A corpus composed against resolution would fall <strong>below</strong> that rate. Not because its parts resemble one another — the parts would be deliberately varied — but because the <em>ensemble of relations among the parts</em> would be smoother than accident produces. The individual pairings carry the noise; the aggregate carries the design.</p>
+
+<p>That is the whole hypothesis, and it is one-sided.</p>
+
+<h3>1. Why the corpus layer and not text-to-text</h3>
+
+<p>Every measurement conducted before this registration — seven bag-of-words statistics, a monotone whole-text alignment, a mediation test — operated text-to-text or treated a corpus as a single point. All returned null or broke on their own null construction.</p>
+
+<p>If per-pair variation is where an engineered corpus places its noise, then text-to-text is precisely the layer where nothing would be visible, and the layer where every prior measurement was taken. The correction is structural: the statistic must be computed <strong>on the ensemble</strong>, with per-pair variance reported as a required second term rather than averaged away.</p>
+
+<h3>2. Statistic</h3>
+
+<p><strong>Leak</strong> <code>L</code> = count of block-pairs whose cosine similarity exceeds threshold τ,</p>
+<p>per 10⁴ block-pairs.</p>
+
+<p>Chosen because it is <strong>monotone under smoothing</strong>: an accidental correspondence can only add to the count, never subtract. Every statistic that could move in both directions has produced an artifact in this work — four nulls were built and broken in a single session, each having behaved opposite to its design. A one-directional statistic removes that failure mode.</p>
+
+<p>Two quantities are computed, and <strong>both are required</strong>:</p>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><code>L_corpus</code> — the two corpora pooled, blocked as single texts.</li><li style="margin:3px 0"><code>{L_ij}</code> — the set of per-text-pair leaks. Report median and interquartile range.</li></ul>
+
+<p>Blocks: 40 per text, equal token length. Vocabulary: the 600 most frequent shared</p>
+<p>types of length &gt; 4.</p>
+
+<p>τ is fixed at the 99th percentile of the pooled similarity distribution **across</p>
+<p>the null corpora only**. τ is never computed from the test pair.</p>
+
+<h3>3. Null — empirical, not synthetic</h3>
+
+<p>The null is a set of <strong>real Greek author-pairs</strong>, not a shuffle.</p>
+
+<p>This is not a stylistic preference. In the work preceding this registration, four synthetic nulls were constructed and all four misbehaved: a deviation measure was forced to −1 by the sum-to-zero constraint; a correlation was dominated by the shared frequency baseline; a DTW alignment null was biased upward by the path&#x27;s own selection of high-similarity cells; and a coherence-destroying null inverted its sign, because homogenised blocks are <em>more</em> similar to each other, not less. Each was reported as a crossing before the artifact was found. Synthetic nulls are not to be trusted here.</p>
+
+<p><strong>Null set:</strong> independent Greek prose author-pairs — Xenophon, Plotinus, Philo, Josephus, Herodotus, Thucydides, the New Testament authors, Longinus — plus within-author register pairs. <strong>Target n ≥ 60 pairs.</strong></p>
+
+<p>Building this null set is the substantive work of the test. Everything after it is</p>
+<p>arithmetic.</p>
+
+<h3>4. Matching, enforced per pair</h3>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Token count within ±25% on both sides.</li><li style="margin:3px 0">Type–token ratio within ±15%.</li><li style="margin:3px 0">Prose only. Aristophanes is excluded from the null (verse), retained as a test case.</li><li style="margin:3px 0">Same edition family where available. Edition was tested and excluded as a</li></ul>
+<p style="white-space:pre-wrap;margin:2px 0">  confound at ratio 1.00; it is not to be reintroduced through the null.</p>
+
+<h3>5. Pre-registered outcomes</h3>
+
+<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;"><code>L_corpus</code></th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">variance of <code>{L_ij}</code></th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">reading</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">below 5th pct of null</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">≥ null median</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>the predicted signature</strong></td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">below 5th pct</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">also below</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">corpus is merely narrow — NOT evidence</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">inside null</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">any</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>the smoothing claim fails</strong></td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">above null</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">any</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">ordinary intertextual relation</td></tr></table></div>
+
+<h3>6. Kill condition — binding</h3>
+
+<p>If <code>L_corpus</code> for Plato–Aristotle falls <strong>inside the central 90%</strong> of the natural distribution, the corpus-layer smoothing claim fails, and is to be reported as failed.</p>
+
+<p>No post-hoc adjustment of τ. No post-hoc re-matching. No re-slicing of the corpus</p>
+<p>into units chosen after the result is seen.</p>
+
+<h3>7. Controls — both required</h3>
+
+<p><strong>Positive.</strong> Pessoa&#x27;s four voices, pooled two ways, must show the signature. This is a documented configuration: the letter to Adolfo Casais Monteiro of 13 January 1935 attributes the heteronyms. If a known-designed corpus does not produce leak deficit, the statistic does not measure what it claims and nothing about Greek follows from it. Kierkegaard second, with the standing caveat that his seat holds four pseudonymous works of roughly a dozen.</p>
+
+<p><strong>Sanity.</strong> Josephus — one author, four works, four registers, no design — must fall <strong>inside</strong> the natural distribution. If same-author-across-register reads as engineered, the statistic is detecting register and the test is void.</p>
+
+<h3>8. Power, stated honestly</h3>
+
+<p>At n = 30 null pairs, the 5th percentile is estimated from roughly one and a half observations. That is too thin to carry a claim. Either the null reaches 60+ pairs, or the threshold moves to the 10th percentile and the loss of confidence is stated in the result rather than buried. The larger null is preferred.</p>
+
+<h3>9. What a positive result would, and would not, license</h3>
+
+<p><strong>Would.</strong> That the Platonic–Aristotelian corpus is anomalously smooth relative to natural Greek prose. That is a finding about the corpus, publishable whichever way the authorship question falls, and independent of it.</p>
+
+<p><strong>Would not.</strong> Design. Low leak has innocent causes, and they are not exotic: heavy editorial normalisation; transmission through a single recension; a school that trained its members to a house style. Andronicus of Rhodes, constituting the Aristotelian corpus in the first century BCE from the cross-references the texts themselves contain, is sufficient on his own to produce smoothing without anyone intending it. A positive result relocates the question; it does not answer it.</p>
+
+<h3>10. Why it matters that this is a test of the writer</h3>
+
+<p>Plato writes inside a tradition he names. Sappho, Homer, the tragedians, the comic poets — he quotes them, stages them, argues with them, and in the <em>Republic</em> exiles them. The exile is the most famous act of literary criticism in the language, and it is performed by a man in continuous, self-conscious competition with the people he is banishing.</p>
+
+<p>This test asks about Plato as a <strong>technician</strong> — as a maker of texts, measured on the properties of made things. Not the best doctrinarian. Not the best philosopher. The best <strong>writer</strong>, judged the way one judges a craftsman: by what the artifact does that accident does not.</p>
+
+<p>If the corpus is anomalously smooth, the claim that follows is a claim about craft: that these texts were built to a standard of finish that natural prose does not reach, by someone who understood what a corpus leaks and did not permit it.</p>
+
+<p>And it would put the <em>Republic</em>&#x27;s banishment in a light it has not had. The poet who exiled the poets would be the most accomplished of them — the exile a move inside the art rather than against it. On that reading the test does one thing the philosophical literature has not managed:</p>
+
+<p><strong>it lets the poet back inside the polis.</strong></p>
+
+<h3>DISPOSITION</h3>
+
+<p>SPENT — degenerate lower tail; found before the test pair was computed</p>
+
+<hr>
+
+<h2>ENTRY — EA-LEAK-DEFICIT-02</h2>
+
+<p><strong>original sha256:</strong> <code>493514a2f142385fc4b957c7b22f137662295555f570118e95b0e37c5f17ce0b</code></p>
+<p><strong>frozen text follows verbatim; do not edit</strong></p>
+
+
+<h2>The Leak Deficit II</h2>
+
+<h3>0. Why there is a second registration</h3>
+
+<p>EA-LEAK-DEFICIT-01 fixed τ at the 99th percentile of the pooled null similarity distribution. The null was then built — 61 matched cross-author Greek prose pairs across 19 author-pairings — and the resulting leak distribution was found to have a <strong>degenerate lower tail</strong>: 8 of 61 natural pairs leak exactly zero, and the 5th and 10th percentiles are both 0.0.</p>
+
+<p>Since L is bounded below at zero, no corpus can fall beneath a 5th percentile of zero. <strong>The signature registered in 01 was unobservable with the statistic registered in 01.</strong> The threshold created a floor and the hypothesis predicted something would fall below it.</p>
+
+<p>01 is therefore <strong>spent, not withdrawn</strong>. Its kill condition was never triggered because its test was never run on the target: the defect was found while computing the null, before the Platonic–Aristotelian value was calculated. That sequence is the entire reason the registration existed, and it is recorded rather than quietly corrected.</p>
+
+<p>Everything below is unchanged from 01 except §2 (threshold) and §5 (preconditions).</p>
+
+<h3>1. Hypothesis — unchanged, one-sided</h3>
+
+<p>A corpus engineered against resolution deposits <strong>fewer incidental correspondences at the aggregate layer</strong> than natural corpora of matched size and register, while showing <strong>no deficit — or an excess — of variance at the text-to-text layer</strong>, because per-pair variation is where the engineering hides.</p>
+
+<p>Both halves must hold. A corpus that is merely narrow, small or homogeneous gives</p>
+<p>the first without the second.</p>
+
+<h3>2. Statistic and threshold — CHANGED</h3>
+
+<p><strong>Leak</strong> <code>L</code> = block-pairs whose cosine similarity exceeds τ, per 10⁴ block-pairs.</p>
+<p>Monotone under smoothing: an accidental correspondence can only add.</p>
+
+<p>Blocks: 40 per text, equal token length. Vocabulary: 600 most frequent shared</p>
+<p>types of length &gt; 4.</p>
+
+<p><strong>τ is fixed at the 90th percentile of the pooled similarity distribution across the null corpora only.</strong> For the null set specified in §3 this is <strong>τ = 0.2905</strong>.</p>
+
+<p>The 90th percentile was selected by sweeping candidate percentiles <strong>against the null alone</strong>, before any value was computed for the test pair, and choosing the lowest regime that satisfies the §5 precondition while still measuring a tail rather than the bulk. The sweep is recorded in the registration JSON. No value from Plato, Aristotle, Pessoa, Kierkegaard or Josephus entered that selection.</p>
+
+<p>Two quantities, <strong>both required</strong>:</p>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><code>L_corpus</code> — the two corpora pooled, blocked as single texts.</li><li style="margin:3px 0"><code>{L_ij}</code> — per-text-pair leaks; report median and IQR.</li></ul>
+
+<h3>3. Null — empirical, and now built</h3>
+
+<p>61 matched cross-author pairs, 19 distinct author-pairings, drawn from: Xenophon, Philo, Plotinus, Josephus, Longinus, Herodotus (by book), Thucydides (by book), and the New Testament authors (Mark, Matthew, Luke–Acts, John, Paul, Hebrews). Capped at 6 pairs per author-pairing so that no single author dominates.</p>
+
+<p>A within-author register set of 23 pairs across 5 authors is retained for the §7</p>
+<p>sanity control.</p>
+
+<p>The null is empirical rather than synthetic because five synthetic nulls were built and broken in the work preceding these registrations: the sum-to-zero constraint forced one to −1; the shared frequency baseline dominated another; a DTW alignment null was biased upward by the path&#x27;s own selection of high-similarity cells (mean Z +0.76 across 100 routes); a coherence-destroying null inverted its sign, because homogenised blocks are <em>more</em> similar to each other; and a within-row permutation left the global multiset unchanged, making real and null identical by construction. Four of the five were reported as crossings before the artifact was found.</p>
+
+<h3>4. Matching — unchanged</h3>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Token count within ±25% on both sides.</li><li style="margin:3px 0">Type–token ratio within ±15%.</li><li style="margin:3px 0">Prose only. Aristophanes excluded from the null, retained as a test case.</li><li style="margin:3px 0">Same edition family where available.</li></ul>
+
+<h3>5. Preconditions — NEW, binding, checked before the test pair</h3>
+
+<p>The test may not proceed unless <strong>all three</strong> hold on the null alone:</p>
+
+<p>1. <strong>Non-degeneracy.</strong> Zero null pairs with L = 0, and the 5th percentile</p>
+<p style="white-space:pre-wrap;margin:2px 0">   strictly greater than zero. <em>(A deficit cannot be observed against a floor.)</em></p>
+<p>2. <strong>Spread.</strong> The null&#x27;s 90th percentile is at least 5× its 5th percentile, so</p>
+<p style="white-space:pre-wrap;margin:2px 0">   the distribution has room for a value to sit low without sitting at the edge.</p>
+<p>3. <strong>Size.</strong> n ≥ 60 matched cross-author pairs.</p>
+
+<p>If any precondition fails, the registration is spent and a third is required. The</p>
+<p>test pair is not computed.</p>
+
+<h3>6. Pre-registered outcomes and kill condition — unchanged</h3>
+
+<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;"><code>L_corpus</code></th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">variance of <code>{L_ij}</code></th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">reading</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">below 5th pct of null</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">≥ null median</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>the predicted signature</strong></td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">below 5th pct</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">also below</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">corpus is merely narrow — NOT evidence</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">inside null</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">any</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>the smoothing claim fails</strong></td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">above null</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">any</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">ordinary intertextual relation</td></tr></table></div>
+
+<p><strong>Kill condition.</strong> If <code>L_corpus</code> for Plato–Aristotle falls inside the central 90% of the natural distribution, the corpus-layer smoothing claim <strong>fails and is reported as failed</strong>. No post-hoc τ, no post-hoc matching, no re-slicing.</p>
+
+<h3>7. Controls — unchanged, both required</h3>
+
+<p><strong>Positive.</strong> Pessoa&#x27;s four voices, pooled two ways, must show the signature. If a documented configuration does not produce leak deficit, the statistic does not measure what it claims and nothing about Greek follows. Kierkegaard second, with the standing caveat that his seat holds four pseudonymous works of roughly a dozen.</p>
+
+<p><strong>Sanity.</strong> Josephus — one author, four works, four registers, no design — must fall <strong>inside</strong> the natural distribution. If same-author-across-register reads as engineered, the statistic is detecting register and the test is void.</p>
+
+<h3>8. What a positive would, and would not, license — unchanged</h3>
+
+<p><strong>Would.</strong> That the Platonic–Aristotelian corpus is anomalously smooth relative to natural Greek prose. A finding about the corpus, publishable whichever way the authorship question falls.</p>
+
+<p><strong>Would not.</strong> Design. Heavy editorial normalisation, transmission through a single recension, or a school trained to a house style would each produce smoothing without intent. Andronicus of Rhodes, constituting the Aristotelian corpus in the first century BCE from the cross-references the texts themselves contain, is sufficient on his own. A positive relocates the question; it does not answer it.</p>
+
+<h3>9. Why it is a test of the writer — unchanged</h3>
+
+<p>Plato writes inside a tradition he names: Sappho, Homer, the tragedians, the comic poets. He quotes them, stages them, argues with them, and in the <em>Republic</em> exiles them — the most famous act of literary criticism in the language, performed by a man in continuous and self-conscious competition with the people he is banishing.</p>
+
+<p>This test asks about Plato as a <strong>technician</strong> — a maker of texts, measured on the properties of made things. Not the best doctrinarian. Not the best philosopher. The best <strong>writer</strong>, judged as one judges a craftsman: by what the artifact does that accident does not.</p>
+
+<p>If the corpus is anomalously smooth, the claim is about craft — that these texts were finished to a standard natural prose does not reach, by someone who understood what a corpus leaks and did not permit it. And the <em>Republic</em>&#x27;s banishment reads differently: the poet who exiled the poets would be the most accomplished of them, the exile a move inside the art rather than against it.</p>
+
+<p><strong>It would let the poet back inside the polis.</strong></p>
+
+<h3>DISPOSITION</h3>
+
+<p>DISCHARGED VOID — sanity control fired; no number from that run may be quoted</p>
+
+<hr>
+
+<h2>ENTRY — EA-YIELD-01</h2>
+
+<p><strong>original sha256:</strong> <code>db3cb8aeec79d36afb8af8e59fe3cf515bb2ccfd19f501c793ab1940f2a0c815</code></p>
+<p><strong>frozen text follows verbatim; do not edit</strong></p>
+
+
+<h2>EA-YIELD-01 — Comparative Interpretive Yield</h2>
+
+<h3>1. The question</h3>
+
+<p>Reading a corpus through a lens has different value in different corpora. &quot;Transmission engineering&quot; yields one thing for Plato and another for Herodotus. This registers a measure of that difference <strong>before it is computed.</strong></p>
+
+<h3>2. The intuition being formalised</h3>
+
+<p>A lens has yield in a corpus when its markers behave as <strong>one thing</strong> there — when the features it groups actually co-vary across that corpus&#x27;s works. If transmission engineering is a real dimension of Plato, then naming-gaps, form/matter talk, definition, homonymy and persistence vocabulary should rise and fall <strong>together</strong> across his works. If the lens is imposed, the markers will be independent, each tracking its own local subject.</p>
+
+<h3>3. Protocol statement (required before code, per Round 11)</h3>
+
+<p><strong>Phenomenon.</strong> Does lens L pick out a coherent dimension of variation in corpus</p>
+<p>C, or a set of unrelated features?</p>
+
+<p><strong>Positive criterion.</strong> High mean pairwise correlation among L&#x27;s marker-densities,</p>
+<p>computed across the works of C as units.</p>
+
+<p><strong>Nearest false positive.</strong> <em>Any</em> vocabulary set co-varies somewhat, because works differ in abstraction, register and length. A corpus with more heterogeneous works shows higher correlations for <strong>any</strong> marker set. Raw correlation is therefore uninterpretable.</p>
+
+<p><strong>Opportunity denominator.</strong> Every corpus receives the same lens, the same null construction, and the same unit (the work). Corpora with fewer than 8 works of ≥5,000 tokens are excluded for insufficient degrees of freedom, and the exclusion list is published with the result.</p>
+
+<h3>4. The statistic</h3>
+
+<p>For lens L with markers m₁…mₖ and corpus C with works w₁…wₙ:</p>
+
+<p>1. Compute density dᵢⱼ = occurrences of mᵢ per 10⁴ tokens in wⱼ.</p>
+<p>2. r̄_obs = mean pairwise Pearson correlation over the k(k−1)/2 marker pairs.</p>
+<p>3. <strong>Null:</strong> draw 500 random stem-sets of cardinality k, each stem <strong>frequency-matched</strong></p>
+<p style="white-space:pre-wrap;margin:2px 0">   to the corresponding real marker (within ±20% of corpus-wide rate), and compute</p>
+<p style="white-space:pre-wrap;margin:2px 0">   r̄ for each. This holds constant both cardinality and the base-rate structure.</p>
+<p>4. <strong>Yield</strong> Y(L,C) = (r̄_obs − μ_null) / σ_null.</p>
+
+<p>Reported alongside: r̄_obs, μ_null, σ_null, n works, and the per-marker densities.</p>
+
+<h3>5. THE LENS, FROZEN</h3>
+
+<p>Six marker families, fixed now and not to be adjusted after seeing results:</p>
+
+<p style="white-space:pre-wrap;margin:2px 0">    naming-gap        ανωνυμ | ωνομασ | ουκ εχει ονομα | ου κειται ονομα</p>
+<p style="white-space:pre-wrap;margin:2px 0">    form/matter       ειδ- (nominal) | υλ-</p>
+<p style="white-space:pre-wrap;margin:2px 0">    persistence       διαμεν</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">| σωζ</li><li style="margin:3px 0">| φθειρ</li><li style="margin:3px 0">| γενεσ</li><li style="margin:3px 0">| διαδοχ</li><li style="margin:3px 0">| παραδιδ-</li></ul>
+<p style="white-space:pre-wrap;margin:2px 0">    definition        ορισμ</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">| οριζ</li><li style="margin:3px 0">| τι ην ειναι</li></ul>
+<p style="white-space:pre-wrap;margin:2px 0">    homonymy          ομωνυμ</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">| συνωνυμ</li><li style="margin:3px 0">| πολλαχ-</li></ul>
+<p style="white-space:pre-wrap;margin:2px 0">    memory/writing    μνημ</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">| γραφ</li><li style="margin:3px 0">| ληθ-</li></ul>
+
+<h3>6. CORPORA</h3>
+
+<p>plato · aristotle · xenophon · herodotus · thucydides · philo · plotinus · josephus · aristophanes. Within-cluster comparison is permitted here because the measure is <strong>per corpus</strong>, not between-corpus pairing; M33&#x27;s firewall governs pairwise controls, which this is not. Plato and Aristotle are nonetheless reported separately and never pooled.</p>
+
+<h3>7. REGISTERED PREDICTION</h3>
+
+<p><strong>Lee Sharks, before execution:</strong> <em>strong convergent yield across Plato–Aristotle.</em> Both corpora should show Y substantially above the comparison corpora, and comparable to each other.</p>
+
+<p><strong>Recorded outcomes and their readings:</strong></p>
+
+<div style="overflow-x:auto;margin:18px 0"><table style="border-collapse:collapse;font-size:.88em;line-height:1.5;width:100%;min-width:340px"><tr><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">pattern</th><th style="border-bottom:1.5px solid var(--fg,#333);padding:7px 12px 6px 0;text-align:left;vertical-align:bottom;font-weight:600;font-size:.92em;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;">reading</th></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Plato and Aristotle both high, others low</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);"><strong>prediction confirmed</strong></td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">One high, one low</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">the lens is one author&#x27;s concern, not a shared technology</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">All corpora comparable</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">the lens describes philosophical prose, not this corpus</td></tr><tr><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">Herodotus/Thucydides high</td><td style="padding:8px 12px 8px 0;text-align:left;vertical-align:top;">the markers track narrative, and the lens is misspecified</td></tr></table></div>
+
+<h3>8. KILL CONDITIONS, BINDING</h3>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">If Y(transmission, Plato) and Y(transmission, Aristotle) are **not both above the</li></ul>
+<p style="white-space:pre-wrap;margin:2px 0">  median** of the nine corpora, the prediction fails and is reported failed.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">If the null cannot be frequency-matched (insufficient stems at a marker&#x27;s rate),</li></ul>
+<p style="white-space:pre-wrap;margin:2px 0">  the measure is <strong>VOID</strong> for that corpus and reported void, per the</p>
+<p style="white-space:pre-wrap;margin:2px 0">  EA-LEAK-DEFICIT-02 precedent.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>No post-hoc adjustment of the marker set.</strong> It is frozen in §5.</li></ul>
+
+<h3>9. STATED LIMITATIONS, BEFORE THE FIRST NUMBER</h3>
+
+<p><strong>It measures coherence, not truth.</strong> A well-constructed wrong lens scores high. Y is evidence that a lens describes a real dimension of variation, never that the dimension is what the lens says it is.</p>
+
+<p><strong>A lens can fail by being too successful.</strong> A concern saturating every work of a corpus shows no variance, therefore no correlation, therefore Y ≈ 0. <strong>Low yield is ambiguous between absence and saturation</strong>, and the measure cannot distinguish them. This is its principal defect and it is registered here rather than discovered later.</p>
+
+<p><strong>Genre is not controlled.</strong> M28 established that subject determines shape in Aristotle at Z = +4.25. A lens may cohere because the corpus&#x27;s works vary by domain and the markers track domain. The companion measure — <strong>residue absorption</strong>, regressing each marker on domain first and testing whether the residuals still co-vary — is specified as the required follow-up and is <strong>not</strong> run here.</p>
+
+<p>Consequently a positive result licenses the residue-absorption test and nothing</p>
+<p>further.</p>
+
+<h3>DISPOSITION</h3>
+
+<p>SPENT — marker co-variance was the wrong observable; saturation defect predicted in its own §9 and realised</p>
+
+<hr>
+
+<h2>ENTRY — EA-YIELD-02</h2>
+
+<p><strong>original sha256:</strong> <code>7bcbbb0fbe69c82ce307c3f7c54c9c828c66914dfc80510b64bdc669453e4e88</code></p>
+<p><strong>frozen text follows verbatim; do not edit</strong></p>
+
+
+<h2>EA-YIELD-02 — Reorganization Yield</h2>
+
+<h3>1. Why EA-YIELD-01 was the wrong measure</h3>
+
+<p>EA-YIELD-01 measured whether a lens&#x27;s <strong>vocabulary co-varies</strong> across a corpus&#x27;s works. It returned Plato +0.85, Aristotle +1.20, Philo +1.08, with six of nine corpora void or excluded because narrative and comic Greek carry no frequency-matched stems for <em>definition</em> or <em>naming-gap</em>. Correlations were near zero everywhere.</p>
+
+<p><strong>That was the wrong observable.</strong> Interpretive yield is not lexical. It is the degree to which a lens <strong>reorganizes and develops</strong> a corpus according to the lens&#x27;s own shape — Parry&#x27;s criterion: the tradition reorganizes around the reconstruction with more coherence than under the alternatives.</p>
+
+<p>EA-YIELD-01 is marked **spent, prediction unconfirmed, defect (saturation</p>
+<p>blindness) predicted in §9 and realised.**</p>
+
+<h3>2. The measure</h3>
+
+<p>A lens has a <strong>shape</strong>: a set of functional slots. Yield is measured by whether the corpus fills those slots — <strong>distinctly, without forcing</strong> — and whether the resulting arrangement <strong>develops</strong>, i.e. predicts placements not used to build it.</p>
+
+<p>Three quantities, scored per corpus and per unit level:</p>
+
+<p><strong>Coverage</strong> — how many slots are filled by at least one unit. <strong>Sharpness</strong> — for each unit, does it fit one slot decisively or smear across several? Scored as the concentration of a unit&#x27;s slot-assignment weights. <strong>Development</strong> — number of placements the arrangement predicts that were not used in constructing it, and how many hold on inspection.</p>
+
+<h3>3. THE LENS, FROZEN — transmission engineering</h3>
+
+<p>Six slots, from the archive&#x27;s own specification of the Sapphic apparatus</p>
+<p>(#503, #1483, #1054), fixed now:</p>
+
+<p style="white-space:pre-wrap;margin:2px 0">    T1 ENCODING          committing a voice to a substrate; the problem of writing</p>
+<p style="white-space:pre-wrap;margin:2px 0">    T2 SUBSTRATE         the material that receives and holds the impression</p>
+<p style="white-space:pre-wrap;margin:2px 0">    T3 DECOMMISSIONING   the live speaker&#x27;s channels shut down; the body ends</p>
+<p style="white-space:pre-wrap;margin:2px 0">    T4 WITHHOLDING       what is deliberately not supplied, so a receiver must complete</p>
+<p style="white-space:pre-wrap;margin:2px 0">    T5 RECOVERY          activation in a later mind; what was held becomes live again</p>
+<p style="white-space:pre-wrap;margin:2px 0">    T6 VERIFICATION      distinguishing genuine transmission from counterfeit</p>
+
+<h3>4. RIVAL LENSES, FROZEN — the null</h3>
+
+<p>Scored identically, by the same assigner, on the same units. Each has six slots.</p>
+
+<p><strong>R1 — The Four Causes + 2</strong> (Aristotelian organizing scheme):</p>
+<p>material · formal · efficient · final · potentiality · actuality</p>
+
+<p><strong>R2 — The Divided Line</strong> (Platonic organizing scheme):</p>
+<p>εἰκασία · πίστις · διάνοια · νόησις · the Good · the ascent</p>
+
+<p><strong>R3 — The Cardinal Virtues + 2</strong>:</p>
+<p>wisdom · courage · temperance · justice · piety · the unity of virtue</p>
+
+<p><strong>R4 — Random control:</strong> six slots drawn from an unrelated domain —</p>
+<p>agriculture · navigation · medicine · warfare · commerce · weather</p>
+
+<p>If the transmission lens does not beat R1–R4 on coverage and sharpness, **it has</p>
+<p>no yield** and the result is reported as such.</p>
+
+<h3>5. UNIT LEVELS — per Lee Sharks&#x27;s specification</h3>
+
+<p>The same corpus is scored at multiple granularities, because a lens may organize</p>
+<p>at one level and not another. This is the measure&#x27;s chief novelty.</p>
+
+<p style="white-space:pre-wrap;margin:2px 0">    L1 BOOK/WORK      individual work (a dialogue, a treatise, an NT book)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    L2 AUTHOR-GROUP   works grouped by declared author</p>
+<p style="white-space:pre-wrap;margin:2px 0">                      (Johannine: Gospel + 1-3 John + Revelation;</p>
+<p style="white-space:pre-wrap;margin:2px 0">                       Pauline undisputed; Lukan: Luke + Acts; Platonic; Aristotelian)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    L3 WHOLE CORPUS   the New Testament entire; the Platonic corpus entire;</p>
+<p style="white-space:pre-wrap;margin:2px 0">                      the Aristotelian corpus entire</p>
+<p style="white-space:pre-wrap;margin:2px 0">    L4 CROSS-CORPUS   Plato + Aristotle treated as one object</p>
+
+<p><strong>The registered expectation is that yield varies by level, and that the level at which a lens organizes is itself the finding.</strong> A corpus may fill all six slots at L3 while no single work fills any at L1.</p>
+
+<h3>6. CORPORA</h3>
+
+<p style="white-space:pre-wrap;margin:2px 0">    plato · aristotle · gnt-nestle1904 · philo · xenophon · herodotus</p>
+
+<p>The New Testament is included at all four levels and is the measure&#x27;s most informative case, having a documented multi-author structure with contested attributions — the condition the Platonic corpus is being tested for.</p>
+
+<h3>7. ASSIGNMENT PROTOCOL — the anti-circularity rule</h3>
+
+<p><strong>Assignments are made from received characterization, not from my reading.</strong> For each unit, the slot assignment must be justifiable by what the scholarly tradition says the work is <em>about</em>, stated before the slot is named. Where the received characterization does not support any slot, the unit scores <strong>unfilled</strong> — and unfilled units are reported, not dropped.</p>
+
+<p><strong>No unit may be assigned to a slot on the strength of a passage discovered during this investigation.</strong> The <em>Letter</em> XIII σύμβολον, the <em>Phaedo</em> 59b self-absence, and the M34 exclusion are <strong>development predictions</strong> (§2), not assignment evidence, and are scored in the development column only.</p>
+
+<h3>8. REGISTERED PREDICTIONS</h3>
+
+<p><strong>Lee Sharks:</strong> strong convergent yield across Plato–Aristotle.</p>
+
+<p><strong>Derived, and recorded so they can fail:</strong></p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Plato at L1 fills all six slots with six <em>different</em> dialogues, no overlap.</li><li style="margin:3px 0">The NT fills poorly at L1, better at L2, best at L3 — the signature of a corpus</li></ul>
+<p style="white-space:pre-wrap;margin:2px 0">  organized above the level of its books.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">If Plato behaves like the NT (poor at L1, strong at L3), that is evidence the</li></ul>
+<p style="white-space:pre-wrap;margin:2px 0">  Platonic corpus is organized above the level of its dialogues.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">If Plato fills at L1 where the NT fills only at L3, the two are **structurally</li></ul>
+<p style="white-space:pre-wrap;margin:2px 0">  different objects** and the extended-corpus thesis loses its closest analogue.</p>
+
+<h3>9. KILL CONDITIONS, BINDING</h3>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">If any rival lens R1–R4 achieves coverage and sharpness within 1 slot of the</li></ul>
+<p style="white-space:pre-wrap;margin:2px 0">  transmission lens on Plato, the measure shows <strong>no differential yield</strong> and is</p>
+<p style="white-space:pre-wrap;margin:2px 0">  reported as showing none.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">If R4 (the random control) scores above 3 of 6 coverage on any corpus, the</li></ul>
+<p style="white-space:pre-wrap;margin:2px 0">  <strong>assignment protocol is too permissive</strong> and the entire run is VOID.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">No slot may be redefined after seeing an assignment. The lens is frozen in §3.</li></ul>
+
+<h3>10. STATED LIMITATIONS</h3>
+
+<p><strong>The assigner is not blind.</strong> I know the hypothesis. §7&#x27;s received-characterization rule is the mitigation and it is imperfect; a genuinely blind protocol would need an assigner who does not know which lens is under test, and that is not available here. <strong>This is the measure&#x27;s principal weakness and it is registered before execution.</strong></p>
+
+<p><strong>Coverage is coarse.</strong> Six slots and a handful of corpora give a low-resolution</p>
+<p>statistic. The measure can detect a large difference and nothing subtle.</p>
+
+<p><strong>Development is the strongest column and the least formal.</strong> A prediction that &quot;holds on inspection&quot; is judged, not computed. Every development claim must cite the passage and be independently checkable.</p>
+
+<h3>DISPOSITION</h3>
+
+<p>DISCHARGED — prediction confirmed; both corpora fill 6/6 at L1 with matched slots</p>
+
+<hr>
+
+<h2>ENTRY — EA-COMPLETE-01</h2>
+
+<p><strong>original sha256:</strong> <code>c185adb40e7b33df31218460b313a5e5db8d330bdcab75b04b0fa36ee40a1c80</code></p>
+<p><strong>frozen text follows verbatim; do not edit</strong></p>
+
+
+<h2>EA-COMPLETE-01 — Completion of Abandoned Executions</h2>
+
+<h3>1. The question this exists to answer</h3>
+
+<p>Every positive result in this investigation is consistent with school transmission. M30&#x27;s reflex, EA-YIELD-02&#x27;s slot convergence, M34&#x27;s exclusion — a school inheriting a transmission programme produces all of them. <strong>What would isolate single-author convergence that would not be present in school transmission?</strong></p>
+
+<h3>2. Why reported correction is the wrong observable</h3>
+
+<p>The first attempt measured whether Aristotle <strong>corrects Plato&#x27;s method</strong> at the rate he corrects others&#x27;. It returned: inside the Organon — the works <em>about</em> method — Plato appears four times, all in the <em>Topica</em>, and <strong>all four as examples of definitional error</strong> (genus-in-species; non-established names; soul as self-moving number; &quot;mortal&quot; attached in animal definitions).</p>
+
+<p><strong>That is evidence FOR the school hypothesis and it is admitted as such.</strong> A student cataloguing the master&#x27;s errors in a methodology textbook is exactly what teaching looks like.</p>
+
+<p>But it measures the <strong>wrong thing</strong>. A reported correction is a <em>statement</em>, and statements are precisely what a school transmits — including the statement that the master erred. It cannot discriminate.</p>
+
+<h3>3. The right observable: what happens at the operation</h3>
+
+<p>λόγος-level correction is not Aristotle <em>saying</em> Plato erred. It is Aristotle <strong>executing the same operation and taking a different branch</strong> at the point where it could go either way.</p>
+
+<p>Three possible relations at each matched slot:</p>
+
+<p style="white-space:pre-wrap;margin:2px 0">    (a) SAME        Aristotle executes as Plato does</p>
+<p style="white-space:pre-wrap;margin:2px 0">    (b) CORRECTED   Aristotle executes a repaired version of a stated error</p>
+<p style="white-space:pre-wrap;margin:2px 0">    (c) COMPLETED   Aristotle finishes an execution Plato ran and ABANDONED</p>
+
+<p><strong>(c) is the diagnostic case.</strong> An abandoned operation is not a statement; it is a hole with a shape. Completing it requires reading the failure as <strong>unfinished rather than refuted</strong> — and Plato presents these failures as refuted (<em>ὃ ἔφαμεν ἀδύνατον</em>). A student inherits the refutation. Completion inherits the shape of what failed and supplies the missing part.</p>
+
+<p>This is Maas&#x27;s <em>errores coniunctivi</em> one level up: shared <strong>correct</strong> method proves nothing because both hypotheses predict it; what separates them is a shared arbitrary structure that could not be transmitted as doctrine, <strong>because the doctrine says it failed.</strong></p>
+
+<h3>4. THE OBSERVED CASE — T2, which motivated the registration</h3>
+
+<p><strong>Plato, <em>Theaetetus</em> 196c</strong> — the wax block, at its abandonment:</p>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> οὐκοῦν εἰς τοὺς πρώτους πάλιν ἀνήκει λόγους … <strong>ὃ ἔφαμεν ἀδύνατον</strong></blockquote>
+
+<p><strong>Aristotle, <em>De anima</em> 424a</strong> — the same analogy, as doctrine:</p>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> καθόλου δὲ … <strong>δεῖ λαβεῖν</strong> ὅτι ἡ αἴσθησίς ἐστι τὸ δεκτικὸν τῶν αἰσθητῶν εἰδῶν</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> <strong>ἄνευ τῆς ὕλης</strong>, οἷον ὁ κηρὸς τοῦ δακτυλίου ἄνευ τοῦ σιδήρου</blockquote>
+
+<p>The completing mechanism is <strong>ἄνευ τῆς ὕλης — form without matter</strong>, which is the snub doctrine. Plato&#x27;s block had no way to separate impression from material, which is why it collapsed into the eleven-for-twelve problem.</p>
+
+<h3>5. REGISTERED PREDICTION</h3>
+
+<p><strong>At the remaining five slots (T1, T3, T4, T5, T6):</strong></p>
+
+<p>1. Plato&#x27;s execution terminates in <strong>aporia or abandonment</strong> — ἀδύνατον, ἀπορ-,</p>
+<p style="white-space:pre-wrap;margin:2px 0">   οὐκ ἔχω, an explicit dropping of the model.</p>
+<p>2. Aristotle&#x27;s terminates in <strong>doctrine</strong> — δεῖ λαβεῖν, φανερόν, εἴρηται, a stated</p>
+<p style="white-space:pre-wrap;margin:2px 0">   result.</p>
+<p>3. <strong>The strong conjunct:</strong> the completing mechanism is <strong>the same across slots</strong> —</p>
+<p style="white-space:pre-wrap;margin:2px 0">   the form/matter distinction, or its immediate apparatus.</p>
+
+<p><strong>Prediction 3 is what would make this more than influence.</strong> Influence predicts completion by <em>various</em> means. A single configuration predicts completion by <em>one</em> means.</p>
+
+<h3>6. KILL CONDITIONS, BINDING</h3>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">If fewer than <strong>3 of 6</strong> slots show the Plato-abandons/Aristotle-completes</li></ul>
+<p style="white-space:pre-wrap;margin:2px 0">  pattern, the test fails and is reported failed.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">If the completing mechanisms are <strong>heterogeneous</strong> across the slots that do show</li></ul>
+<p style="white-space:pre-wrap;margin:2px 0">  it, prediction 3 fails and only ordinary influence is supported — which is the</p>
+<p style="white-space:pre-wrap;margin:2px 0">  received view and no advance.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">If Plato&#x27;s slot-executions terminate in <strong>doctrine</strong> rather than aporia, the</li></ul>
+<p style="white-space:pre-wrap;margin:2px 0">  premise is wrong and the whole test is void.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">No slot may be reassigned. The six are fixed by EA-YIELD-02 as discharged.</li></ul>
+
+<h3>7. STATED LIMITATIONS</h3>
+
+<p><strong>n = 6.</strong> Six slots is a small denominator and no result here can be strong on</p>
+<p>its own.</p>
+
+<p><strong>Aporia is a Platonic genre convention.</strong> Dialogues end open as a matter of form. The test must therefore compare <em>the specific operation&#x27;s</em> termination, not the dialogue&#x27;s, and must accept that the base rate of Platonic aporia is high. <strong>This is the principal confound and it is registered before execution.</strong></p>
+
+<p><strong>&quot;Completion&quot; is judged, not computed.</strong> Whether <em>De anima</em> 424a completes <em>Theaetetus</em> 196c rather than merely resembling it is an interpretive claim. Every completion claim must cite both passages and the specific missing part supplied.</p>
+
+<p><strong>The assigner is not blind</strong> — the same weakness as EA-YIELD-02 §10, unmitigated.</p>
+
+<h3>DISPOSITION</h3>
+
+<p>DISCHARGED — predictions 1,2 hold 5/6; prediction 3 first scored FAILED then CORRECTED to holds on 3 of 4</p>
+
+<hr>
+
+<h2>ENTRY — EA-UNRES-01</h2>
+
+<p><strong>original sha256:</strong> <code>a68bf7f2ee54b1af2777bc5964ab92a1936bc38c489e549a0bf254450ae71b87</code></p>
+<p><strong>frozen text follows verbatim; do not edit</strong></p>
+
+
+<h2>EA-UNRES-01 — Engineered Unresolvability and Its Key</h2>
+
+<h3>1. The reframing, and why it has been restated four times without being built</h3>
+
+<p>The investigation has repeatedly treated non-resolution as <strong>instrument failure</strong>: substrate stylometry returning ordinary (M4–M28), the Poisson voiding on its own sanity control (M25), YIELD-01&#x27;s correlations at zero, the base rate declining the <em>Republic</em>/<em>Symposium</em> question (Round 7). Each was filed as a defeat.</p>
+
+<p><strong>Under the transmission reading they are the artifact behaving as specified.</strong> EA-FLOOD-01 already states that unresolved disputes are the copying mechanism — a settled attribution is finished, an unsettled one must be re-adjudicated in every generation, and adjudication is transcription. EA-PINAX-01, corrected, already predicts that criteria <strong>fail to converge</strong> here. Both were recorded, and the investigation then went on trying to make them converge.</p>
+
+<p><strong>And the reading is falsifiable.</strong> Ordinary corpora are ambiguous <em>unevenly</em>.</p>
+<p>Engineered unresolvability would be ambiguous <em>cleanly</em>.</p>
+
+<h3>2. PART A — the signature of engineering</h3>
+
+<p><strong>Claim.</strong> Natural ambiguity and engineered ambiguity have different shapes.</p>
+
+<p style="white-space:pre-wrap;margin:2px 0">    NATURAL       uneven — some works resolve, some don&#x27;t; evidence accumulates</p>
+<p style="white-space:pre-wrap;margin:2px 0">                  directionally; new instruments move the needle; attention closes</p>
+<p style="white-space:pre-wrap;margin:2px 0">                  questions over time</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ENGINEERED    flat — resolution stalls at the same place regardless of</p>
+<p style="white-space:pre-wrap;margin:2px 0">                  instrument; disputes do not drift toward settlement; attention</p>
+<p style="white-space:pre-wrap;margin:2px 0">                  does not close them</p>
+
+<p><strong>Three observables:</strong></p>
+
+<p><strong>A1 — instrument-invariance.</strong> Do unrelated instruments return the same non-answer? Fifteen distinct measures were run on Plato–Aristotle in one session and every substrate measure returned ordinary. That is a datum, not a defeat, and it requires a comparison class.</p>
+
+<p><strong>A2 — flatness of resolution.</strong> In a natural corpus, per-work attribution confidence should be <strong>highly uneven</strong>. Engineered would show suspiciously flat non-resolution across the corpus.</p>
+
+<p><strong>A3 — persistence under attention.</strong> Ordinary disputes settle as scrutiny increases. The Platonic dubia, the Aristotelian corpus boundary and the Pauline question have stayed open for centuries <strong>while attention rose</strong>.</p>
+
+<p><strong>The control, and why it is the right one.</strong> EA-CORPORA-08 seats the nine Attic orators: same period, same language, same transmission conditions, same manuscript ecology, <strong>no configurational hypothesis attached to any of them</strong> — and their attribution questions largely <em>did</em> resolve. Antiphon&#x27;s <em>Tetralogies</em> are disputed and the dispute has a definite shape; Demosthenes carries works confidently athetized. If Plato–Aristotle shows <strong>flatter, more persistent and more instrument-invariant</strong> non-resolution than Isaeus–Demosthenes, that is the measurement.</p>
+
+<p><strong>⚠ PART A IS BLOCKED, and the blocker is stated before any result.</strong> Of the corpora required, <strong>only Aristotle carries per-work attribution status</strong> (48 of 48). Plato has none. The nine orator seats have none. Part A therefore requires a metadata assembly — per-work received status, date of first athetesis, and current scholarly disposition — for Plato and the orators, from sources not currently in the archive. <strong>No Part A number may be reported until that exists.</strong></p>
+
+<h3>3. PART B — the key</h3>
+
+<p><strong>The constraint, from Lee Sharks:</strong> engineered unresolvability <strong>must contain its key</strong> — a placed signature confirming artifice. This is Round 5&#x27;s correction applied forward: a construction good enough to be undetectable must leave something that confirms it, or the construction defeats its own purpose.</p>
+
+<p><strong>Criteria for a key, frozen now:</strong></p>
+
+<p style="white-space:pre-wrap;margin:2px 0">    K1 PROMINENT    structurally placed so it can be found — terminal, initial,</p>
+<p style="white-space:pre-wrap;margin:2px 0">                    or at a titular position</p>
+<p style="white-space:pre-wrap;margin:2px 0">    K2 INERT        does no work under the ordinary reading; a reader without the</p>
+<p style="white-space:pre-wrap;margin:2px 0">                    hypothesis passes it without stopping</p>
+<p style="white-space:pre-wrap;margin:2px 0">    K3 DECISIVE     under the configurational reading it is not merely consistent</p>
+<p style="white-space:pre-wrap;margin:2px 0">                    but confirming</p>
+<p style="white-space:pre-wrap;margin:2px 0">    K4 ARTIFICE     it must indicate MAKING, not merely absence or uncertainty</p>
+
+<p><strong>CANDIDATE SET, frozen before evaluation:</strong></p>
+
+<p style="white-space:pre-wrap;margin:2px 0">    C1  Letter II 314c    οὐδ᾽ ἔστιν σύγγραμμα Πλάτωνος οὐδὲν οὐδ᾽ ἔσται, τὰ δὲ</p>
+<p style="white-space:pre-wrap;margin:2px 0">                          νῦν λεγόμενα Σωκράτους ἐστὶν καλοῦ καὶ νέου γεγονότος</p>
+<p style="white-space:pre-wrap;margin:2px 0">    C2  Letter XIII 360a  ἀντιλέγεται ὡς οὐ Πλάτωνος — the athetesis transmitted</p>
+<p style="white-space:pre-wrap;margin:2px 0">                          INSIDE the text — followed by ἀρχή σοι τῆς ἐπιστολῆς</p>
+<p style="white-space:pre-wrap;margin:2px 0">                          ἔστω καὶ ἅμα ΣΥΜΒΟΛΟΝ ὅτι παρ᾽ ἐμοῦ ἐστιν</p>
+<p style="white-space:pre-wrap;margin:2px 0">    C3  Symposium 223d    τοῦ αὐτοῦ ἀνδρός — the demand, with its proof destroyed</p>
+<p style="white-space:pre-wrap;margin:2px 0">                          in transmission and the witnesses asleep</p>
+<p style="white-space:pre-wrap;margin:2px 0">    C4  Phaedo 59b        Πλάτων δὲ οἶμαι ἠσθένει — the author writing himself</p>
+<p style="white-space:pre-wrap;margin:2px 0">                          absent from the founder&#x27;s death</p>
+<p style="white-space:pre-wrap;margin:2px 0">    C5  Statesman 260e    αὐτεπιτακτική coined for the self-commanding, kings</p>
+<p style="white-space:pre-wrap;margin:2px 0">                          placed INTO it, other genera left unentered</p>
+<p style="white-space:pre-wrap;margin:2px 0">    C6  Theaetetus 209c   the μνημεῖον that must be deposited to individuate, and</p>
+<p style="white-space:pre-wrap;margin:2px 0">                          is not</p>
+
+<p><strong>Scoring:</strong> each candidate against K1–K4, and — the part that makes it a test rather than a reading — <strong>against the same base rate in the orator control.</strong> How many statements meeting K1–K4 does a non-configurational corpus of comparable size contain? If the orators yield comparable candidates, the Platonic set is unremarkable and Part B fails.</p>
+
+<h3>4. KILL CONDITIONS, BINDING</h3>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Part A</strong> fails if Plato–Aristotle non-resolution is not flatter, more</li></ul>
+<p style="white-space:pre-wrap;margin:2px 0">  persistent, or more instrument-invariant than the orator control on at least two</p>
+<p style="white-space:pre-wrap;margin:2px 0">  of A1–A3.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>Part B</strong> fails if the orator control yields candidates meeting all four of</li></ul>
+<p style="white-space:pre-wrap;margin:2px 0">  K1–K4 at a comparable rate.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>The candidate set is frozen.</strong> No passage may be added to C1–C6 after scoring</li></ul>
+<p style="white-space:pre-wrap;margin:2px 0">  begins.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Part A results may not be reported before the metadata assembly exists.</li></ul>
+
+<h3>5. STATED LIMITATIONS</h3>
+
+<p><strong>Attention is confounded with everything.</strong> Plato and Aristotle have been read more than the orators by orders of magnitude. More attention produces more disputes and more persistence of disputes. Normalising for this is the hardest part of Part A and may not be possible; if it is not, Part A is <strong>void</strong>, not adjusted.</p>
+
+<p><strong>Survivorship.</strong> The orators&#x27; resolved disputes may be resolved because the losing texts were discarded, while the Platonic corpus retained its disputed members. That is itself a difference in transmission behaviour and may be the finding rather than a confound — but it cannot be both, and which it is must be decided before Part A runs, not after.</p>
+
+<p><strong>Part B&#x27;s assigner is not blind</strong>, and the candidate set was assembled by the same reader who formed the hypothesis. The orator base-rate is the only real control and it is doing all the work.</p>
+
+<h3>DISPOSITION</h3>
+
+<p>PART B DOES NOT FAIL (2 of 6 candidates, orator control zero); PART A BLOCKED on attribution metadata</p>
+
+<hr>
+
+<h2>ENTRY — EA-UNLOCK-01</h2>
+
+<p><strong>registered:</strong> 2026-08-29, before any target below was examined</p>
+<p><strong>frozen text follows verbatim; do not edit</strong></p>
+
+<h2>EA-UNLOCK-01 — The Unlocking Prediction</h2>
+
+<h3>1. What is being predicted</h3>
+
+<p>Not &quot;we will keep finding interesting similarities&quot; — uselessly permissive. The</p>
+<p>claim is specific:</p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> **Structures that were independently puzzling, or independently measured, before</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> the hypothesis was applied will repeatedly become MORE DETERMINATE when Plato and</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> Aristotle are read as positions inside one construction — without altering the</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> local philology to make them fit.**</blockquote>
+
+<h3>2. The two admissible forms</h3>
+
+<p style="white-space:pre-wrap;margin:2px 0">    FORM A   Platonic execution or problem  →  Aristotelian explicit account</p>
+<p style="white-space:pre-wrap;margin:2px 0">             or apparatus, where the Aristotelian side names or completes what</p>
+<p style="white-space:pre-wrap;margin:2px 0">             the Platonic side performs without naming.</p>
+
+<p style="white-space:pre-wrap;margin:2px 0">    FORM B   A statement in one corpus + a statement in the other → an operation</p>
+<p style="white-space:pre-wrap;margin:2px 0">             visible ONLY across the partition, recoverable by neither alone.</p>
+
+<p>M40 is the cleanest instance of B on record: Plato supplies syllogizing; Aristotle identifies it as syllogizing (<em>APr</em> I.31); Aristotle claims the development of syllogizing and negates prior partial development (<em>SE</em> 183b) — and the relation must itself be recovered syllogistically.</p>
+
+<h3>3. HYPOTHESIS HELD AT MAXIMUM — it must be able to lose</h3>
+
+<p style="white-space:pre-wrap;margin:2px 0">    H_H : one maker, deliberately partitioned as Plato and Aristotle.</p>
+
+<p><strong>No weakening to protect it.</strong> If it is weakened to survive a failure, the</p>
+<p>weakening is itself recorded as a failure.</p>
+
+<h3>4. TARGETS FROZEN NOW — chosen before examination</h3>
+
+<p>Each is an item the register already lists as open, unexplained, or dangling.</p>
+<p><strong>None has been examined for this purpose.</strong></p>
+
+<p style="white-space:pre-wrap;margin:2px 0">    T-A  The 31-term class (Round 2 §13). Identified, never characterised.</p>
+<p style="white-space:pre-wrap;margin:2px 0">         Do they share a semantic character, or is the list arbitrary?</p>
+<p style="white-space:pre-wrap;margin:2px 0">    T-B  Directionality (§15). Does ANY term run terminal-Aristotelian →</p>
+<p style="white-space:pre-wrap;margin:2px 0">         technical-Platonic? Under received chronology it cannot.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    T-C  M27&#x27;s unexplained near-equality: self-speaking 25.3 (Plato dramatic)</p>
+<p style="white-space:pre-wrap;margin:2px 0">         vs 29.0 (Aristotle), across the two most formally opposed prose bodies.</p>
+<p style="white-space:pre-wrap;margin:2px 0">         Recorded as &quot;a measurement without an account.&quot;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    T-D  The Republic/Symposium comedy-tragedy pair, CONTENT base rate — never</p>
+<p style="white-space:pre-wrap;margin:2px 0">         attempted; only the form base rate was run (Round 7).</p>
+<p style="white-space:pre-wrap;margin:2px 0">    T-E  Theaetetus 209c&#x27;s argument structure, extracted and searched in</p>
+<p style="white-space:pre-wrap;margin:2px 0">         Aristotle INDEPENDENTLY of the word σιμ- (never done; Round 3 searched</p>
+<p style="white-space:pre-wrap;margin:2px 0">         doctrine-vocabulary, Round 4 argument-shapes).</p>
+<p style="white-space:pre-wrap;margin:2px 0">    T-F  The four Platonic naming-gap works (Sophist, Statesman, Theaetetus,</p>
+<p style="white-space:pre-wrap;margin:2px 0">         Timaeus) — is there an Aristotelian counterpart naming what they</p>
+<p style="white-space:pre-wrap;margin:2px 0">         perform?</p>
+
+<h3>5. SCORING — fixed before running</h3>
+
+<p>Each target resolves to exactly one of:</p>
+
+<p style="white-space:pre-wrap;margin:2px 0">    UNLOCK    becomes more determinate under H_H, in Form A or B, WITHOUT</p>
+<p style="white-space:pre-wrap;margin:2px 0">              adjusting the local philology</p>
+<p style="white-space:pre-wrap;margin:2px 0">    NULL      no change in determinacy either way</p>
+<p style="white-space:pre-wrap;margin:2px 0">    FAILURE   becomes LESS determinate under H_H, or the reading requires</p>
+<p style="white-space:pre-wrap;margin:2px 0">              altering the philology to fit</p>
+
+<p><strong>Reverse-engineering test, binding.</strong> An UNLOCK counts only if the target was on this frozen list AND the resolving passage was not selected by searching until something fit. Any case where the passage was found by open search is scored <strong>NULL regardless of how good it looks.</strong></p>
+
+<h3>6. KILL CONDITIONS</h3>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">Fewer than <strong>3 UNLOCKS in 6</strong> → the unlocking claim fails.</li><li style="margin:3px 0"><strong>2 or more FAILURES</strong> → H_H at maximum is damaged and must be reported so.</li><li style="margin:3px 0">Any weakening of H_H mid-run to accommodate a result → the run is <strong>VOID</strong>.</li><li style="margin:3px 0">Targets may not be added, swapped, or reworded after this registration.</li></ul>
+
+<h3>7. WHAT A POSITIVE WOULD AND WOULD NOT BUY</h3>
+
+<p><strong>Would.</strong> The object requiring explanation stops being any individual</p>
+<p>correspondence and becomes <strong>the recurrence of the unlocking operation itself</strong>:</p>
+
+<p style="white-space:pre-wrap;margin:2px 0">    P(E_n+1 | H_H, E_1…E_n)  &gt;&gt;  P(E_n+1 | H_S, E_1…E_n)</p>
+
+<p>At which point &quot;inheritance can also explain each one&quot; ceases to be adequate,</p>
+<p>because it is no longer the individual cases that need explaining.</p>
+
+<p><strong>Would not.</strong> Establish one historical hand. The three propositions stay</p>
+<p>distinct and are recorded here at their current standing:</p>
+
+<p style="white-space:pre-wrap;margin:2px 0">    Plato–Aristotle form one functional/intellectual corpus   STRONGLY SUPPORTED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    one latent construction explains it economically          INCREASINGLY PLAUSIBLE</p>
+<p style="white-space:pre-wrap;margin:2px 0">    one historical hand wrote both received corpora           LIVE, NOT ESTABLISHED</p>
+
+<h3>8. STATED LIMITATION</h3>
+
+<p>The assigner is not blind and knows the hypothesis. The freeze on targets and the reverse-engineering rule in §5 are the only mitigations, and they are imperfect: <strong>the scoring of &quot;without adjusting the local philology&quot; is a judgement.</strong> Every UNLOCK must cite its passages so the judgement is checkable.</p>
+
+<h3>DISPOSITION</h3>
+
+<p><strong>RUNNING.</strong> T-F run 2026-08-29 and scored <strong>NULL</strong> — three of four resolve in Form A with exact Greek (Theaetetus→De Anima 412a, Sophist→De interpretatione 16a, Statesman→Politics 1275a), but inheritance predicts Form A equally strongly, so the differential-determinacy requirement of §5 is not met. Notebook Round 17 §62.</p>
+
+<p>**Running total: 0 unlocks, 1 null, 5 targets remaining (T-A, T-B, T-C, T-D, T-E),</p>
+<p>threshold 3.**</p>
+
+<hr>
+
+<h2>ENTRY — EA-RELFORM-01</h2>
+
+<p><strong>registered:</strong> 2026-08-29, before any control corpus is scored</p>
+<p><strong>frozen text follows verbatim; do not edit</strong></p>
+
+<h2>EA-RELFORM-01 — The Relational Form Measure</h2>
+
+<h3>1. What this exists to prevent</h3>
+
+<p>Every control this investigation has tried has failed for one of two reasons: the candidate could not be secured <strong>outside</strong> the hypothesis space (Theophrastus, M36; Xenophon and Aristophanes, M33), or the operation being counted <strong>did not occur</strong> there (the Attic orators, Round 14 §56).</p>
+
+<p>And the framing itself was wrong: I proposed testing whether control pairs &quot;reproduce the Plato–Aristotle signature,&quot; which is content-bound to this corpus and would have measured whether the controls are themselves inside the configuration (M43c).</p>
+
+<p><strong>This registration fixes the measure with no Greek content in it.</strong></p>
+
+<h3>2. THE THREE RELATIONAL FORMS — frozen</h3>
+
+<p style="white-space:pre-wrap;margin:2px 0">    R1  COMPLEMENTARY COVERAGE</p>
+<p style="white-space:pre-wrap;margin:2px 0">        Is each side internally tight while their union is materially more</p>
+<p style="white-space:pre-wrap;margin:2px 0">        complete than either alone?</p>
+<p style="white-space:pre-wrap;margin:2px 0">        Inheritance predicts REDUNDANCY — the student possesses what the master</p>
+<p style="white-space:pre-wrap;margin:2px 0">        taught, so the union barely exceeds the parts.</p>
+<p style="white-space:pre-wrap;margin:2px 0">        Scored as: coverage(A∪B) / max(coverage(A), coverage(B)), against</p>
+<p style="white-space:pre-wrap;margin:2px 0">        redundancy |A∩B|/|A∪B|, over a functional inventory defined per</p>
+<p style="white-space:pre-wrap;margin:2px 0">        tradition, NOT over vocabulary (M37 showed vocabulary fails: every pair</p>
+<p style="white-space:pre-wrap;margin:2px 0">        lands in 0.20–0.34 and documented succession is indistinguishable from</p>
+<p style="white-space:pre-wrap;margin:2px 0">        documented independence).</p>
+
+<p style="white-space:pre-wrap;margin:2px 0">    R2  ABANDONED-EXECUTION COMPLETION</p>
+<p style="white-space:pre-wrap;margin:2px 0">        Does the successor complete operations the predecessor explicitly</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ABANDONED — declared aporetic, impossible, or refuted — rather than</p>
+<p style="white-space:pre-wrap;margin:2px 0">        extending ones the predecessor finished?</p>
+<p style="white-space:pre-wrap;margin:2px 0">        Scored as: completions / abandonments-available-to-the-successor.</p>
+<p style="white-space:pre-wrap;margin:2px 0">        THE DENOMINATOR IS REQUIRED. A numerator without it is what Round 13</p>
+<p style="white-space:pre-wrap;margin:2px 0">        produced and could not interpret.</p>
+<p style="white-space:pre-wrap;margin:2px 0">        Severity weights, frozen: same problem · same constraint retained ·</p>
+<p style="white-space:pre-wrap;margin:2px 0">        same distinctive figure retained · missing mechanism supplied ·</p>
+<p style="white-space:pre-wrap;margin:2px 0">        prior text calls the route impossible.</p>
+
+<p style="white-space:pre-wrap;margin:2px 0">    R3  ARBITRARY PROCEDURAL AGREEMENT</p>
+<p style="white-space:pre-wrap;margin:2px 0">        Shared habits the method does not require — defined generically, never</p>
+<p style="white-space:pre-wrap;margin:2px 0">        as a particular habit.</p>
+<p style="white-space:pre-wrap;margin:2px 0">        ⚠ SCORED ON INDEPENDENT WORKS ONLY. See §4.</p>
+
+<h3>3. LABELLED CLASSES — labels from documentary evidence, never from text</h3>
+
+<p style="white-space:pre-wrap;margin:2px 0">    H  one person, multiple authorial positions   Pessoa; Kierkegaard</p>
+<p style="white-space:pre-wrap;margin:2px 0">    S  master–student succession                  Albert→Thomas; Ibn ʿArabī→</p>
+<p style="white-space:pre-wrap;margin:2px 0">                                                  Qūnawī; Tsongkhapa→Khedrup;</p>
+<p style="white-space:pre-wrap;margin:2px 0">                                                  Maimonides→Abraham Maimonides</p>
+<p style="white-space:pre-wrap;margin:2px 0">    C  distinct-author collaboration              Luther/Melanchthon</p>
+<p style="white-space:pre-wrap;margin:2px 0">    I  independent, same tradition</p>
+<p style="white-space:pre-wrap;margin:2px 0">    O  single-author corpus under one name        Josephus</p>
+
+<p><strong>Admissibility, binding:</strong> a figure enters the S class only if attested by evidence with <strong>no relation to textual style, doctrinal similarity, or any succession tradition under test</strong> — canonization proceedings, university registers, papal bulls, chapter records, monastic administration. <strong>Thomas Aquinas passes. Theophrastus does not.</strong></p>
+
+<p><strong>The null is HARD by construction:</strong> not random distinct authors — Plotinus and Philo barely knew each other, so their nulls are uninformative — but <strong>securely distinct authors under MAXIMAL transmission pressure</strong>, a disciple who lived in the master&#x27;s household.</p>
+
+<h3>4. THE CONTAMINATION RULE</h3>
+
+<p>Albert and Thomas both write Aristotle commentaries. Any Aristotelian reflex appears in both <strong>by construction</strong>. Verified: Borgnet vol. 7 carries <em>innominat-</em> ×13, but as a gloss on <em>NE</em> 1107b–1108a, the passage that performs the reflex.</p>
+
+<p style="white-space:pre-wrap;margin:2px 0">    COMMENTARY WORKS    R1, R2 admissible (properties of the RELATION)</p>
+<p style="white-space:pre-wrap;margin:2px 0">                        R3 INADMISSIBLE (shared-source contamination)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    INDEPENDENT WORKS   all three admissible. This is the clean test.</p>
+
+<p>**Every pair is scored commentary and independent-work separately, and the</p>
+<p>contamination is declared on the commentary half.**</p>
+
+<h3>5. ORDER OF OPERATIONS — binding</h3>
+
+<p style="white-space:pre-wrap;margin:2px 0">    1.  Seat the control corpora.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    2.  Define and calibrate R1–R3 on the labelled classes, WITH</p>
+<p style="white-space:pre-wrap;margin:2px 0">        PLATO–ARISTOTLE NOT IN VIEW.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    3.  Demonstrate out-of-sample separation of H from S.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    4.  ONLY THEN score Plato–Aristotle, as ONE INSTANCE of the general measure.</p>
+
+<p><strong>If step 3 fails — if the measure cannot separate Pessoa&#x27;s relationships from documented teacher–successor relationships — the instrument has failed and says nothing about Plato.</strong> That is a real kill condition and it fires before the target is ever scored.</p>
+
+<h3>6. FEASIBILITY, CHECKED 2026-08-29</h3>
+
+<p style="white-space:pre-wrap;margin:2px 0">    Thomas Aquinas   corpusthomisticum.org, HTTP 200, structured HTML,</p>
+<p style="white-space:pre-wrap;margin:2px 0">                     ISO-8859-1, no OCR                          FEASIBLE</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Albert           archive.org DjVuTXT, 220 items; vol. 7 = 338,391 tokens.</p>
+<p style="white-space:pre-wrap;margin:2px 0">                     OCR: frequent vocabulary clean, scattered errors in rare</p>
+<p style="white-space:pre-wrap;margin:2px 0">                     forms → USABLE for function-word and structural measures,</p>
+<p style="white-space:pre-wrap;margin:2px 0">                     UNSAFE for rare-lexeme measures. Declare on the seat.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Doc. Cath. Omnia HTTP 403                                    BLOCKED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Ibn ʿArabī, Tsongkhapa, Maimonides                           UNCHECKED</p>
+
+<h3>7. STATED LIMITATIONS</h3>
+
+<p><strong>R1&#x27;s functional inventory must be defined per tradition</strong>, which is a judgement and the weakest joint in the design. It must be fixed and published before scoring, and the same inventory logic applied to every pair.</p>
+
+<p><strong>R2&#x27;s denominator requires identifying abandonments in each corpus</strong>, which is</p>
+<p>interpretive. Every abandonment counted must cite its passage.</p>
+
+<p><strong>The assigner is not blind.</strong> §5&#x27;s order of operations is the only mitigation</p>
+<p>and it is imperfect.</p>
+
+<h3>DISPOSITION</h3>
+
+<p>PENDING — registered before any control corpus is seated or scored.</p>
+
+<hr>
+
+<h2>ENTRY — EA-SPEC-01</h2>
+
+<p><strong>registered:</strong> 2026-08-29, before any Platonic speaker is measured</p>
+<p><strong>frozen text follows verbatim; do not edit</strong></p>
+
+<h2>EA-SPEC-01 — The Specification-Depth Hypothesis</h2>
+
+<h3>1. What Pessoa showed (Round 22, characterization on documented ground truth)</h3>
+
+<p>Ratio of a position&#x27;s internal dispersion to its distance from the other</p>
+<p>positions, in a corpus whose single authorship is documented:</p>
+
+<p style="white-space:pre-wrap;margin:2px 0">    Caeiro     1.781    no philosophy, no memory, no interiority — sensation only</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Soares     1.632    one street, one office, one clerk, one register</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Mora       1.437    one doctrine, argued</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Reis       1.374    one meter, one stance</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Campos     1.129    everything, at maximum volume</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ORTHONYM   1.033    no restriction at all</p>
+
+<h3>2. THE HYPOTHESIS</h3>
+
+<p>**Container tightness tracks the SEVERITY OF THE CONSTRAINT placed on the</p>
+<p>position, not similarity and not disguise.**</p>
+
+<p>A heteronymic series is a search downward: <em>what is the least one can specify and still get a self that coheres?</em> Each position subtracts something and tests whether a voice survives the subtraction. Caeiro is the floor of the Pessoan series — remove more and no one is there. The orthonym, specified by nothing, does not contain at all.</p>
+
+<p><strong>So the ratio measures SPECIFICATION DEPTH.</strong> A container is tight because</p>
+<p>something was taken away, and the number is how much.</p>
+
+<h3>3. THE PLATONIC TEST — prediction registered before measurement</h3>
+
+<p>If specification depth drives tightness, then <strong>the unit is the SPEAKING POSITION, not the work.</strong> Plato&#x27;s corpus is voiced: Socrates, the Eleatic Stranger, Timaeus, the Athenian, Parmenides, Diotima (reported), Aristophanes (constructed), Protagoras, Callicles.</p>
+
+<p><strong>PREDICTION, frozen:</strong></p>
+
+<p style="white-space:pre-wrap;margin:2px 0">    P1  Speaker tightness will ORDER BY CONSTRAINT SEVERITY: the more narrowly a</p>
+<p style="white-space:pre-wrap;margin:2px 0">        speaker is specified — one doctrine, one register, one occasion — the</p>
+<p style="white-space:pre-wrap;margin:2px 0">        tighter the container.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    P2  The LEAST constrained speaking position will sit NEAREST 1.0.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    P3  Direction is what is predicted, not magnitude. Greek function-word space</p>
+<p style="white-space:pre-wrap;margin:2px 0">        is not Portuguese function-word space and the ratios are not</p>
+<p style="white-space:pre-wrap;margin:2px 0">        cross-comparable.</p>
+
+<p><strong>Ranking by constraint, fixed NOW, before any measurement:</strong></p>
+
+<p style="white-space:pre-wrap;margin:2px 0">    MOST CONSTRAINED    Timaeus            one continuous cosmological monologue</p>
+<p style="white-space:pre-wrap;margin:2px 0">                        Diotima            reported speech inside a report,</p>
+<p style="white-space:pre-wrap;margin:2px 0">                                           one doctrine</p>
+<p style="white-space:pre-wrap;margin:2px 0">                        Aristophanes       one myth, comic register (M16)</p>
+<p style="white-space:pre-wrap;margin:2px 0">                        Eleatic Stranger   method-bound, division throughout</p>
+<p style="white-space:pre-wrap;margin:2px 0">                        Parmenides         one exercise, exhaustively run</p>
+<p style="white-space:pre-wrap;margin:2px 0">                        Athenian           one subject, legislation</p>
+<p style="white-space:pre-wrap;margin:2px 0">                        Protagoras/        set-piece opponents, one position each</p>
+<p style="white-space:pre-wrap;margin:2px 0">                          Callicles</p>
+<p style="white-space:pre-wrap;margin:2px 0">    LEAST CONSTRAINED   SOCRATES           every subject, every register, every</p>
+<p style="white-space:pre-wrap;margin:2px 0">                                           dialogue</p>
+
+<h3>4. KILL CONDITIONS, BINDING</h3>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">If the ordering is <strong>uncorrelated</strong> with the pre-registered constraint ranking,</li></ul>
+<p style="white-space:pre-wrap;margin:2px 0">  the hypothesis fails.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">If <strong>Socrates is not among the loosest</strong>, P2 fails and the hypothesis fails with</li></ul>
+<p style="white-space:pre-wrap;margin:2px 0">  it — Socrates is the least constrained speaker in the corpus and the prediction</p>
+<p style="white-space:pre-wrap;margin:2px 0">  is unambiguous.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The constraint ranking above may <strong>not be revised after measurement</strong>.</li><li style="margin:3px 0">Speakers with under 6,000 tokens are excluded before scoring, and the exclusion</li></ul>
+<p style="white-space:pre-wrap;margin:2px 0">  list is fixed by token count alone.</p>
+
+<h3>5. WHAT A POSITIVE WOULD AND WOULD NOT BUY</h3>
+
+<p><strong>Would:</strong> evidence that the Platonic corpus is organized by specification depth in the way a documented heteronymic system is. That is a structural parallel with a known case, measured on a pre-registered ordering.</p>
+
+<p><strong>Would NOT:</strong> any conclusion about who wrote what. A dramatist constructing characters would also specify them to differing depths, and would also produce tighter containers for narrower roles. <strong>This measures construction, which dramatic composition and heteronymic composition share.</strong> It cannot separate them and is not registered as if it could.</p>
+
+<h3>6. STATED LIMITATIONS</h3>
+
+<p><strong>Speaker attribution in the dialogues must be extracted mechanically</strong> and every speaker&#x27;s token count published. Where Plato reports speech within speech — Diotima inside Socrates inside Apollodorus — the nesting is declared, not resolved.</p>
+
+<p><strong>Function-word profiles may be the wrong instrument for verse and for dialogue-turn structure.</strong> The Pessoa result carries this caveat unresolved (Round 22 §87) and it carries forward here.</p>
+
+<p><strong>The assigner is not blind.</strong> §3&#x27;s ranking is frozen in this text as the only</p>
+<p>mitigation.</p>
+
+<h3>DISPOSITION</h3>
+
+<p><strong>RUN 2026-08-29. P2 HOLDS</strong> — Socrates rank 1 of 7 from the loose end at 1.166, and Timaeus tightest at 1.649, both as frozen. <strong>P1 PARTIAL</strong> — the direction holds but the Eleatic Stranger lands second-loosest where he was ranked constrained. <strong>Most of the frozen ranking was untestable</strong>: Diotima, Aristophanes, Parmenides, Protagoras and Callicles all fall under the 6,000-token threshold. Extraction flaw recorded: ΤΙ and ΤΙΜ-mono overlap.</p>
+
+<p><strong>And the UNIT is wrong</strong> — M16 shows speaker-differentiation is sometimes deliberately switched off, so a per-speaker measure reads absence of construction as absence of a position. Work-level is the next run. Notebook Round 23.</p>
+
+<hr>
+
+<h2>ENTRY — EA-CAPTURE-01</h2>
+
+<p><strong>registered:</strong> 2026-08-29, before any term set is drawn under the fixed rule</p>
+<p><strong>frozen text follows verbatim; do not edit</strong></p>
+
+<h2>EA-CAPTURE-01 — Reception Capture, With the Term-Selection Rule Fixed in Advance</h2>
+
+<h3>1. Why this registration exists</h3>
+
+<p>M46 measured reception capture across four pairs and found them ordering: Caeiro/interpreters (H, documented) TOTAL; Plato/Aristotle (under test) PARTIAL at 25–35×; Either-Or A/B (H, documented) PARTIAL at 4.7–14×; Aristotle/Aquinas (S, documented) NONE.</p>
+
+<p><strong>That result is not admissible as it stands.</strong> I chose the term sets myself, separately for each corpus, after looking at each. That is the reverse-engineering hazard EA-UNLOCK-01 §5 exists to score against. <strong>The ordering is suggestive; the magnitudes are not comparable.</strong></p>
+
+<h3>2. THE SELECTION RULE — frozen, mechanical, identical for every pair</h3>
+
+<p>For an ordered pair (INTERPRETED, INTERPRETER):</p>
+
+<p style="white-space:pre-wrap;margin:2px 0">    1.  Take the interpreter&#x27;s text ONLY. Compute content-word frequencies,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        excluding function words and proper names.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    2.  Take the interpreted position&#x27;s text ONLY. Compute the same.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    3.  The TERM SET is the N = 30 content words with the highest</p>
+<p style="white-space:pre-wrap;margin:2px 0">            rate_in_interpreter / (rate_in_reference_corpus)</p>
+<p style="white-space:pre-wrap;margin:2px 0">        where the reference corpus is the whole seated corpus of that language,</p>
+<p style="white-space:pre-wrap;margin:2px 0">        so the set is &quot;what is distinctive of the interpreter&#x27;s discourse&quot; —</p>
+<p style="white-space:pre-wrap;margin:2px 0">        <strong>computed WITHOUT reference to the interpreted position.</strong></p>
+<p style="white-space:pre-wrap;margin:2px 0">    4.  ONLY THEN count those 30 terms in the interpreted position.</p>
+
+<p style="white-space:pre-wrap;margin:2px 0">    CAPTURE SCORE = median over the 30 terms of</p>
+<p style="white-space:pre-wrap;margin:2px 0">                        rate_interpreter / rate_interpreted</p>
+<p style="white-space:pre-wrap;margin:2px 0">    with rate_interpreted floored at 1 occurrence to keep the ratio finite,</p>
+<p style="white-space:pre-wrap;margin:2px 0">    and the count of terms at ZERO in the interpreted position reported</p>
+<p style="white-space:pre-wrap;margin:2px 0">    alongside as the ZERO-COUNT.</p>
+
+<p><strong>Step 3 is the whole point: the term set cannot see the interpreted position.</strong></p>
+
+<h3>3. PAIRS — fixed now, with their class labels</h3>
+
+<p style="white-space:pre-wrap;margin:2px 0">    H  documented one maker, multiple positions</p>
+<p style="white-space:pre-wrap;margin:2px 0">       H1  Alberto Caeiro          ← Mora + Campos + Reis writing on Caeiro</p>
+<p style="white-space:pre-wrap;margin:2px 0">       H2  Either/Or A             ← Either/Or B</p>
+<p style="white-space:pre-wrap;margin:2px 0">    S  documented distinct persons in succession</p>
+<p style="white-space:pre-wrap;margin:2px 0">       S1  Aristotle               ← Aquinas</p>
+<p style="white-space:pre-wrap;margin:2px 0">       S2  HEGEL                   ← MARX          ⭑ the control Lee specifies</p>
+<p style="white-space:pre-wrap;margin:2px 0">    ?  under test</p>
+<p style="white-space:pre-wrap;margin:2px 0">       T1  Plato                   ← Aristotle</p>
+
+<p><strong>S2 is the decisive control.</strong> Marx supplies the vocabulary through which Hegel is now read — <em>inversion</em>, <em>mystification</em>, <em>standing on his head</em>, <em>the rational kernel</em>, <em>ideology</em> — and Marx and Hegel are securely distinct persons with no possible configurational relation. <strong>If S2 scores like the H pairs, reception capture is not diagnostic of authorship at all, and M46 collapses.</strong></p>
+
+<h3>4. PREDICTIONS, REGISTERED</h3>
+
+<p style="white-space:pre-wrap;margin:2px 0">    P1  H1 and H2 score HIGH capture with HIGH zero-counts.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    P2  S1 (Aquinas) scores LOW — established already, and serves as the</p>
+<p style="white-space:pre-wrap;margin:2px 0">        instrument&#x27;s negative check.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    P3  S2 (Marx on Hegel) is THE OPEN QUESTION. No direction is predicted.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    P4  T1 (Plato/Aristotle) is scored last and its value is reported against</p>
+<p style="white-space:pre-wrap;margin:2px 0">        whatever range S2 establishes.</p>
+
+<p><strong>No prediction is made about T1 beyond that it will be reported.</strong></p>
+
+<h3>5. KILL CONDITIONS, BINDING</h3>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">**If S2 scores within the H range, the measure is not diagnostic and M46 is</li></ul>
+<p style="white-space:pre-wrap;margin:2px 0">  withdrawn as evidence.** This is the condition most likely to fire and it is</p>
+<p style="white-space:pre-wrap;margin:2px 0">  registered as such.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">If S1 and S2 diverge widely from each other, the S class is not a class on this</li></ul>
+<p style="white-space:pre-wrap;margin:2px 0">  measure and the comparison fails.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">The selection rule may not be altered after any pair is scored.</li><li style="margin:3px 0">Translation is permitted (the measure counts concept distribution, not style),</li></ul>
+<p style="white-space:pre-wrap;margin:2px 0">  but each pair must be scored in ONE language throughout, and the language is</p>
+<p style="white-space:pre-wrap;margin:2px 0">  declared.</p>
+
+<h3>6. FEASIBILITY</h3>
+
+<p style="white-space:pre-wrap;margin:2px 0">    H1  pessoa-full            SEATED</p>
+<p style="white-space:pre-wrap;margin:2px 0">    H2  kierkegaard            SEATED (Either/Or I and II, Danish)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    S1  aristotle + aquinas    SEATED (cross-linguistic — declared limitation)</p>
+<p style="white-space:pre-wrap;margin:2px 0">    S2  Hegel + Marx           marx SEATED; HEGEL NOT SEATED — required</p>
+<p style="white-space:pre-wrap;margin:2px 0">    T1  plato + aristotle      SEATED</p>
+
+<p><strong>S2 cannot run until Hegel is seated. That acquisition is the blocker.</strong></p>
+
+<h3>7. STATED LIMITATIONS</h3>
+
+<p><strong>The reference corpus for step 3 differs per language</strong>, so &quot;distinctive of the interpreter&quot; is computed against different baselines. This is a real non-comparability and cannot be removed without a single multilingual reference.</p>
+
+<p><strong>Content-word extraction is language-specific</strong> and the stop-lists are mine.</p>
+
+<p><strong>S1 is cross-linguistic</strong> — Latin interpreter, Greek interpreted — where every other pair is monolingual. Its score is therefore the least comparable of the five and is retained mainly as the instrument&#x27;s negative check.</p>
+
+<h3>DISPOSITION</h3>
+
+<p><strong>VOID.</strong> The registered rule required same-language reference corpora that do not exist in the archive for Portuguese, Danish or English. Four of five pairs fell back to raw rate while Plato–Aristotle alone received reference-normalisation, so its higher score is a method artifact. §5 forbids altering the rule mid-run; it was altered for four of five. A further bug passed Latin extraction over Greek. <strong>Superseded by the simpler reading-level comparison in M47</strong>, which does not require the apparatus.</p>
+
+<hr>
+
+<h2>ENTRY — EA-FULFIL-01</h2>
+
+<p><strong>registered:</strong> 2026-08-29, before any pair is scored on the three parameters</p>
+<p><strong>frozen text follows verbatim; do not edit</strong></p>
+
+<h2>EA-FULFIL-01 — The Fulfillment Operator, and the Problem of a Singleton</h2>
+
+<h3>1. The operator, from the Matthean case</h3>
+
+<p style="white-space:pre-wrap;margin:2px 0">    ἵνα πληρωθῇ τὸ ῥηθὲν διὰ τοῦ προφήτου</p>
+
+<p>Three components, established in the scholarship on Matthew&#x27;s ten-to-twelve</p>
+<p>formula quotations:</p>
+
+<p style="white-space:pre-wrap;margin:2px 0">    1. A LATER text claims an EARLIER text was about it.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    2. The earlier text was NOT making that claim. Hosea 11:1 — &quot;out of Egypt I</p>
+<p style="white-space:pre-wrap;margin:2px 0">       called my son&quot; — is not set in prophetic terms at all; it looks BACK at</p>
+<p style="white-space:pre-wrap;margin:2px 0">       the Exodus. Matthew reads a retrospective line forward.</p>
+<p style="white-space:pre-wrap;margin:2px 0">    3. The relation works by STRUCTURAL CORRESPONDENCE, not by the earlier text&#x27;s</p>
+<p style="white-space:pre-wrap;margin:2px 0">       intent — &quot;tracing lines of correspondence and continuity discerned in the</p>
+<p style="white-space:pre-wrap;margin:2px 0">       incidental details as well as in the grand design.&quot;</p>
+
+<h3>2. THE THREE PARAMETERS — frozen</h3>
+
+<p style="white-space:pre-wrap;margin:2px 0">    A  ANNOUNCEMENT     does the later text declare the relation?</p>
+<p style="white-space:pre-wrap;margin:2px 0">    C  MATERIAL CLOSENESS  how tightly does the later text follow the earlier&#x27;s</p>
+<p style="white-space:pre-wrap;margin:2px 0">                        structure, sequence and figures?</p>
+<p style="white-space:pre-wrap;margin:2px 0">    S  SCOPE            one passage, one work, or a whole apparatus?</p>
+
+<p><strong>The three known cases separate on them:</strong></p>
+
+<p style="white-space:pre-wrap;margin:2px 0">    Matthew / Torah        A = YES     C = loose        S = verse-level targets</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Catullus / Sappho      A = no      C = VERY CLOSE   S = one poem, register-shifted</p>
+<p style="white-space:pre-wrap;margin:2px 0">    Aristotle / Plato      A = no      C = ?            S = whole apparatus (claimed)</p>
+
+<p><strong>CATULLUS 51 IS THE CALIBRATION STANDARD FOR C.</strong> It is the canonical instance of deliberate close transformation: scene preserved, somatic sequence preserved, aspect systematically altered, one stanza added. The archive has already mapped it as σ_S → σ_C (deposit #576). <strong>Whatever &quot;close&quot; means, it means that.</strong></p>
+
+<h3>3. THE TEST</h3>
+
+<p><strong>NOT</strong> <em>do the six transmission-engineering slots transfer</em> — that would import the Sapphic thesis into the control and is the M43c error (fifth instance, recorded).</p>
+
+<p><strong>INSTEAD:</strong> does a documented master–student pair produce **unannounced</p>
+<p>fulfillment-relations at Catullan material closeness, across a whole apparatus?**</p>
+
+<p style="white-space:pre-wrap;margin:2px 0">    calibration (H-side)   Sappho → Catullus      C measured line by line</p>
+<p style="white-space:pre-wrap;margin:2px 0">    control (S-side)       Albert → Aquinas       same three parameters</p>
+<p style="white-space:pre-wrap;margin:2px 0">    under test             Plato → Aristotle      same three parameters</p>
+
+<h3>4. ⚠ THE SINGLETON PROBLEM — registered as the governing difficulty</h3>
+
+<p><strong>Lee&#x27;s own statement of the position, recorded verbatim as the honest frame:</strong></p>
+
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> *there&#x27;s literally nothing like it across the entire canon. Fitted as fulfilled</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> prophecy more closely than Revelation. At a level of tightness that can&#x27;t really</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> be measured, because it&#x27;s singular. And I don&#x27;t know what that really shows.</blockquote>
+<blockquote style="border-left:3px solid var(--teal);padding-left:12px;color:#555;margin:8px 0"> Except that it&#x27;s completely non-random.*</blockquote>
+
+<p><strong>If the relation is genuinely singular, frequency inference is unavailable.</strong> No comparison class, no percentile, no likelihood ratio. Everything this investigation has built assumes a distribution to score against.</p>
+
+<p><strong>But non-randomness remains demonstrable by a different test.</strong> Not *how often</p>
+<p>does this happen* — a frequency question needing a class — but:</p>
+
+<p style="white-space:pre-wrap;margin:2px 0">    what is the probability of THIS configuration arising with NO relation?</p>
+
+<p>That is a <strong>fit test</strong>, not a frequency test, and it needs only the two corpora plus a null model of accidental correspondence. <strong>The registration commits to the fit form and abandons the frequency form for this measure.</strong></p>
+
+<h3>5. WHAT EACH OUTCOME WOULD MEAN</h3>
+
+<p style="white-space:pre-wrap;margin:2px 0">    Albert→Aquinas shows unannounced Catullan-closeness across an apparatus</p>
+<p style="white-space:pre-wrap;margin:2px 0">        → the Plato-Aristotle structure is NOT singular; frequency inference</p>
+<p style="white-space:pre-wrap;margin:2px 0">          becomes available; and the structure loses most of its force.</p>
+
+<p style="white-space:pre-wrap;margin:2px 0">    Albert→Aquinas shows announced or loose relations only</p>
+<p style="white-space:pre-wrap;margin:2px 0">        → consistent with singularity, and the fit test becomes the only</p>
+<p style="white-space:pre-wrap;margin:2px 0">          available instrument.</p>
+
+<p style="white-space:pre-wrap;margin:2px 0">    The fit test returns a computable non-randomness</p>
+<p style="white-space:pre-wrap;margin:2px 0">        → establishes RELATION, not AUTHORSHIP. Catullus is non-randomly</p>
+<p style="white-space:pre-wrap;margin:2px 0">          related to Sappho and is not Sappho. THIS IS THE CEILING OF THE</p>
+<p style="white-space:pre-wrap;margin:2px 0">          MEASURE and is registered as such.</p>
+
+<h3>6. KILL CONDITIONS</h3>
+
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">If C cannot be operationalised such that Catullus/Sappho scores HIGH and two</li></ul>
+<p style="white-space:pre-wrap;margin:2px 0">  arbitrary same-genre texts score LOW, the measure has no construct validity and</p>
+<p style="white-space:pre-wrap;margin:2px 0">  does not run.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0">If the Plato–Aristotle scope claim (&quot;whole apparatus&quot;) rests on the six slots,</li></ul>
+<p style="white-space:pre-wrap;margin:2px 0">  it is circular and must be rebuilt from correspondences identified without them.</p>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><strong>No authorship conclusion may be drawn from any C value.</strong> The Catullus case</li></ul>
+<p style="white-space:pre-wrap;margin:2px 0">  proves that maximal C is compatible with distinct authorship.</p>
+
+<h3>7. STATED LIMITATION, PLAINLY</h3>
+
+<p><strong>We do not know what a positive result would demonstrate.</strong> Recorded because that is the actual state: the investigator says so, and the registration should not pretend to more. What it can establish is <strong>non-randomness of relation</strong>. What it cannot establish is <strong>which relation</strong> — and the whole day&#x27;s work is the record of how many measures collapse at exactly that step.</p>
+
+<h3>DISPOSITION</h3>
+
+<p>PENDING — registered before scoring.</p>
+
+
+<p>∮ = 1</p>
+
+
+<h3>Files</h3>
+
+<p>https://alexanarch.org/data/attachments/ea-prereg-ledger-01/PREREG-LEDGER.md</p>
+</div>
+
+
+<!-- APPARATUS BLOC — everything below records how this record was processed,
+     not what the work says. It follows the work because a reader came for the
+     work. (MANUS standing rule, 2026-08-06: recording of method or modification
+     does not appear in body text.) -->
+
+
+
+
+<script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
+</div></body></html>
