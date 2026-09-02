@@ -88,15 +88,29 @@ def _canary(host: str, token: str) -> None:
     That distinction cost a day of misdiagnosis across three audits, so the
     error now states it rather than leaving the next reader to rediscover it.
     """
+    # 2026-09-02: the hosted API answers 404 (and 502) TRANSIENTLY — the same
+    # secret failed at 19:20Z and succeeded at 19:24Z on identical code. So a
+    # single 404 is not proof the token is gone; three in a row, spaced, is.
+    last = None
+    for attempt in range(3):
+        try:
+            _get(f"{host}/api/v0/me", token)
+            return
+        except GoatCounterError as e:
+            last = e
+            if attempt < 2 and ("HTTP 404" in str(e) or "HTTP 502" in str(e) or "HTTP 503" in str(e)):
+                time.sleep(20 * (attempt + 1))
+                continue
+            break
     try:
-        _get(f"{host}/api/v0/me", token)
+        raise last
     except GoatCounterError as e:
         msg = str(e)
         if "HTTP 404" in msg:
             raise GoatCounterError(
                 f"{msg}\n"
                 f"    DIAGNOSIS: /api/v0/me exists — unauthenticated it returns 401, not 404.\n"
-                f"    GoatCounter answers 404 for a token it does not recognise.\n"
+                f"    GoatCounter answers 404 for a token it does not recognise — but also, transiently, for a valid one (three spaced attempts all 404'd).\n"
                 f"    THE API TOKEN IS INVALID OR HAS BEEN DELETED.\n"
                 f"    FIX: {host}/user/api → create a token with 'Read statistics'\n"
                 f"         then update the GOATCOUNTER_API_KEY repository secret.\n"
