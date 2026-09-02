@@ -113,6 +113,14 @@ jobs:
           # hours of the guard existing. This check gates EVERY push path.
           python3 scripts/generate_node_declaration.py --check
 
+      - name: Harvest coherence gate (OAI, ResourceSync, llms.txt agree with the registry)
+        run: |
+          # Audit 2026-09-02: registry 1573, llms.txt 1557, ResourceSync 1546,
+          # OAI 1507 — four sizes on one day, because only the node declaration
+          # was on a trigger. This rebuilds the three in scratch and fails on
+          # any difference other than a run timestamp.
+          python3 scripts/harvest_sync.py --check
+
       - name: Capability register (no silent loss of finished work)
         run: |
           # Floors only rise. A run measuring below a floor fails the build and
