@@ -1,0 +1,77 @@
+{
+  "deposit_number": 1573,
+  "axn": "AXN:0665.OPERATIVE.\ud83d\uddfa\ufe0f\ud83d\udd3a\u25a0\ud83d\udd3d\ud83e\uddf2\ud83d\udd2d",
+  "hex": "0665",
+  "title": "The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades \u2014 for Benchmarking, for Frontier Models, and for the Re",
+  "run_at": "2026-09-02T00:12:42.518136+00:00",
+  "steps": {
+    "extract": {
+      "concepts": 20,
+      "citations": 6546,
+      "wikidata_candidates": 13,
+      "cha_cross_references": 4
+    },
+    "wikidata": {
+      "candidates": 13,
+      "confident_qids": 0,
+      "tentative_qids": 0
+    },
+    "openalex": {
+      "error": "'str' object has no attribute 'get'",
+      "error_type": "AttributeError",
+      "traceback_tail": [
+        "Traceback (most recent call last):",
+        "  File \"/home/runner/work/alexanarch/alexanarch/scripts/enrich_deposit.py\", line 1220, in enrich",
+        "    openalex_result = fetch_openalex(deposit, extraction[\"citations\"])",
+        "                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"/home/runner/work/alexanarch/alexanarch/scripts/enrich_deposit.py\", line 654, in fetch_openalex",
+        "    cit_title = cit.get(\"title\")",
+        "                ^^^^^^^",
+        "AttributeError: 'str' object has no attribute 'get'"
+      ]
+    },
+    "datacite": {
+      "error": "'str' object has no attribute 'get'",
+      "error_type": "AttributeError",
+      "traceback_tail": [
+        "Traceback (most recent call last):",
+        "  File \"/home/runner/work/alexanarch/alexanarch/scripts/enrich_deposit.py\", line 1239, in enrich",
+        "    datacite_result = check_datacite_severance(extraction[\"citations\"])",
+        "                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"/home/runner/work/alexanarch/alexanarch/scripts/enrich_deposit.py\", line 699, in check_datacite_severance",
+        "    doi = cit.get(\"doi\")",
+        "          ^^^^^^^",
+        "AttributeError: 'str' object has no attribute 'get'"
+      ]
+    },
+    "spxi": {
+      "conformance": "partial",
+      "canonical_hash": "3cea3317faa28548035477a1f5a85790257065484680a4451029bb577a47dc78"
+    },
+    "sidecar": {
+      "error": "'str' object has no attribute 'get'",
+      "error_type": "AttributeError",
+      "traceback_tail": [
+        "  File \"/home/runner/work/alexanarch/alexanarch/scripts/enrich_deposit.py\", line 1323, in enrich",
+        "    sidecar_path = write_external_metadata_sidecar(",
+        "                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"/home/runner/work/alexanarch/alexanarch/scripts/enrich_deposit.py\", line 1107, in write_external_metadata_sidecar",
+        "    \"by_type\": _count_by_field(extraction.get(\"citations\", []), \"type\"),",
+        "               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"/home/runner/work/alexanarch/alexanarch/scripts/enrich_deposit.py\", line 1117, in _count_by_field",
+        "    k = i.get(field, \"unknown\") or \"unknown\"",
+        "        ^^^^^",
+        "AttributeError: 'str' object has no attribute 'get'"
+      ]
+    },
+    "backlinks": {
+      "deposits_backlinked": 2
+    },
+    "save": {
+      "ok": true
+    }
+  },
+  "warnings": [
+    "wiki_article absent \u2014 authorship required"
+  ]
+}
