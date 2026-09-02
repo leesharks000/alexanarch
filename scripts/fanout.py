@@ -13,6 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 STATE = ROOT/'data/fanout-state.json'
 SEED = 1037
+WAYBACK_MAX_PER_RUN = 40   # deposits per run (×2 URLs, 4 s apart ≈ 5 min); the backlog drains over successive runs
 SITE = "https://www.alexanarch.org"
 REPOS = ["https://github.com/leesharks000/alexanarch",
          "https://github.com/leesharks000/machinemediation-org",
@@ -62,21 +63,35 @@ def s_indexnow(st, reg):
     if code in (200,202): st['indexnow'] = max(e['deposit_number'] for e in new)
 
 def s_wayback(st, reg):
+    # 2026-09-02: this surface never advanced its high-water mark without
+    # IA_ACCESS, so every other day it re-submitted EVERY deposit since the seed
+    # to Save Page Now (~1,060 URLs, cut off mid-run). SPN renders in a headless
+    # browser that executes count.js, so each save was one GoatCounter
+    # "visitor": the odd-day peaks of 150–250 in the dashboard were this job
+    # archiving the archive, and the even-day 8–40 were the readers. The mark
+    # now advances on success with or without credentials, and a run is capped.
     acc, sec = os.environ.get('IA_ACCESS',''), os.environ.get('IA_SECRET','')
     new = new_for(st, reg, 'wayback')
     if not new: print("  wayback: nothing new"); return
+    new = sorted(new, key=lambda e: e['deposit_number'])[:WAYBACK_MAX_PER_RUN]
     hdr = {"Accept":"application/json"}
     if acc: hdr["Authorization"] = f"LOW {acc}:{sec}"
-    ok = True
+    last_ok = None
     for e in new:
+        ok = True
         for u in urls_of(e):
             code,_ = http("https://web.archive.org/save",
                           data=urllib.parse.urlencode({"url":u}).encode(), headers=hdr)
             print(f"  wayback {u.split('/s/')[1]}: {code}")
             ok = ok and code in (200,302)
             time.sleep(4)
-    if ok and acc: st['wayback'] = max(e['deposit_number'] for e in new)
-    elif not acc: print("  wayback: best-effort only (IA_ACCESS unset; state not advanced)")
+        if not ok: break
+        last_ok = e['deposit_number']
+    if last_ok is not None:
+        st['wayback'] = last_ok
+        print(f"  wayback: state advanced to {last_ok}" + ("" if acc else " (anonymous SPN)"))
+    else:
+        print("  wayback: no deposit saved cleanly — state not advanced")
 
 def s_ia_items(st, reg):
     acc, sec = os.environ.get('IA_ACCESS',''), os.environ.get('IA_SECRET','')
