@@ -162,7 +162,7 @@ def render_entry_page(entry: dict) -> str:
         '<meta name="DC.rights" content="CC BY 4.0">'
         '<meta name="DC.publisher" content="Alexanarch">'
         f'<meta name="DC.relation" content="{record_url}" scheme="DCTERMS.URI">'
-        f'{PAGE_CSS}</head>'
+        f'{PAGE_CSS}<script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></head>'
     )
 
     parts = ['<body><div class="wrap">', render_navbar()]
@@ -220,7 +220,7 @@ def render_index_page(entries: list) -> str:
         f'<title>Wiki — Alexanarch ({len(entries)} entries)</title>'
         f'<meta name="description" content="Alexanarch Wiki. {len(entries)} encyclopedic entries — one per deposit — with definitions, references, and links to primary records.">'
         '<link rel="canonical" href="https://www.alexanarch.org/s/wiki/">'
-        f'{PAGE_CSS}</head>'
+        f'{PAGE_CSS}<script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></head>'
     )
     parts = ['<body><div class="wrap">', render_navbar()]
     parts.append('<h1>Alexanarch Wiki</h1>')

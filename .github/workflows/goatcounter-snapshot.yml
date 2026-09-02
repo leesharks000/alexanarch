@@ -35,7 +35,7 @@ jobs:
         run: |
           git config user.name "TACHYON snapshot"
           git config user.email "tachyon@alexanarch.org"
-          git add data/view-counts.json data/network-witness.json
+          git add data/view-counts.json data/network-witness.json data/view-daily.json
           if git diff --cached --quiet; then
             echo "no snapshot changes; skipping commit"
             exit 0

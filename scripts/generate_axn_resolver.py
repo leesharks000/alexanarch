@@ -88,7 +88,7 @@ def main():
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
 <meta name="description" content="AXN {hx} — content-derived identifier of Alexanarch deposit #{n}. Hex position {hx}; family {html.escape(family)}; six-glyph display hash of the canonical text SHA-256.">
 <script type="application/ld+json">{ld}</script>
-</head><body>
+<script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></head><body>
 <h1>{html.escape(e['axn'])}</h1>
 <p><strong>AXN {hx}</strong> is the content-derived identifier of Alexanarch deposit
 <a href="{url}">#{n}</a>. It is an identifier, not a copy of the work: the hex marks
@@ -116,7 +116,7 @@ machine index: <a href="/api/axn-index.json">/api/axn-index.json</a></p>
                                     "record": f"https://www.alexanarch.org/s/records/{e['deposit_number']}/"} for e in es]}
             (d/'index.html').write_text(f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><title>AXN hex {hx} — disambiguation — Alexanarch resolver</title>
-<meta name="robots" content="index,follow"></head><body>
+<meta name="robots" content="index,follow"><script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></head><body>
 <h1>Hex {hx} — {len(es)} deposits (historical offset drift)</h1>
 <p>Resolver policy: never silently select. Disambiguate by glyphs or sha256.</p>
 {rows}
