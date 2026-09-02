@@ -654,7 +654,7 @@ Classified at SE 34, 184b3: Εἰ δὲ φαίνεται θεασαμένοις 
 
 <!-- B1-REVIEW-of-v1.0.md -->
 
-# B1. Blind review of NOTHING-SE34 v1.0 (A = A) — 2026-09-02, unprimed commercial LLM (with web citations)
+# B1. Blind review of NOTHING-SE34 v1.0 (A = A) — 2026-09-02, unprimed, signed-out instance of ChatGPT or Perplexity (web citations in the paste)
 
 Recommendation
 Reject in its present form, but encourage a substantially revised resubmission. The note identifies a genuine and important interpretive issue in Aristotle's retrospective claim at Sophistical Refutations 34, and it usefully foregrounds the strong language of 183b34–36 and 184b1–8. But its central thesis—that Aristotle says there was "nothing of syllogizing prior to Aristotle"—is stronger than the Greek securely warrants, and the argument repeatedly moves from local verbal correspondences to historical conclusions without sufficiently defending the transitions.
@@ -697,7 +697,7 @@ The strongest publishable conclusion is not that Aristotle says there was litera
 
 <!-- B2-REVIEW-of-REFLEX-v0.1.md -->
 
-# B2. Blind review of NOTHING-SE34-REFLEX v0.1 ("Nothing Before Does Not Mean Nothing Before", A ≠ A) — 2026-09-02, unprimed commercial LLM (with web citations)
+# B2. Blind review of NOTHING-SE34-REFLEX v0.1 ("Nothing Before Does Not Mean Nothing Before", A ≠ A) — 2026-09-02, unprimed, signed-out instance of ChatGPT or Perplexity (web citations in the paste)
 
 Recommendation
 Reject in its current form, but encourage reconception. The note identifies a genuine interpretive tension in SE 34—Aristotle's emphatic claim of prior absence alongside his acknowledgement of predecessors and pre-existing practices—but its proposed resolution is textually and methodologically unstable. Its central conclusion ("nothing before" means "nothing before of the kind that was not there before") is close to a circular paraphrase rather than a demonstrated interpretation.
@@ -742,7 +742,7 @@ The submission sees a real issue but frames it misleadingly. Aristotle's words n
 
 <!-- B3-REVIEW-of-v1.4.md -->
 
-# B3. Blind review of NOTHING-SE34 v1.4 (four placements of Socrates) — 2026-09-02, unprimed commercial LLM
+# B3. Blind review of NOTHING-SE34 v1.4 (four placements of Socrates) — 2026-09-02, unprimed, signed-out instance of ChatGPT or Perplexity
 
 [Opening assessment: "strong philological instinct … revise and resubmit." Main issue stated as the scope of 184b1–2; the referent of "we"; πρότερον; ἄλλο; a "safer thesis." Then, on §4:]
 
@@ -769,7 +769,7 @@ A more defensible formulation would be: Aristotle invokes Socrates as an explana
 
 <!-- B4-REVIEW-of-v2.0.md -->
 
-# B4. Blind review of NOTHING-SE34 v2.0 ("What Was Not There", terminal compliant version) — 2026-09-02, unprimed commercial LLM
+# B4. Blind review of NOTHING-SE34 v2.0 ("What Was Not There", terminal compliant version) — 2026-09-02, unprimed, signed-out instance of ChatGPT or Perplexity
 
 Overall assessment
 
@@ -810,7 +810,7 @@ This is a strong, philologically attentive note with a clear and defensible cent
 
 # B5. Register of reports — one report per row
 
-Generated 2026-09-02 by unprimed instances of commercial language models from a constant referee prompt on the version named; pasted verbatim into the session record; unedited. `model` is as recorded in the original paste (to be completed from the originals where the paste did not carry it). `operation` is the qualifier or substitute the report placed into the sentence or onto Socrates.
+Generated 2026-09-02 by unprimed, signed-out (incognito) instances of ChatGPT and Perplexity from a constant referee prompt on the version named; pasted verbatim into the session record; unedited. Which of the two produced a given report was not recorded at the time and is not reconstructible; where a paste carried web citations in Perplexity's format that is noted. The pasted transcripts are the data. `operation` is the qualifier or substitute the report placed into the sentence or onto Socrates.
 
 **Seed observation (not a model report, not counted):**
 
@@ -820,28 +820,28 @@ Generated 2026-09-02 by unprimed instances of commercial language models from a 
 
 **Model reports (n = 20):**
 
-| id | model | object | operative sentence (verbatim) | operation |
+| id | model (ChatGPT or Perplexity, incognito) | object | operative sentence (verbatim) | operation |
 |---|---|---|---|---|
-| R01 | (orig.) | v0.3 | "The central interpretive claim needs to be stated explicitly" | writes a thesis containing "systematic" |
-| R02 | (orig.) | v0.7 | "there is a good article-sized argument here, but it needs a more explicit thesis" | "no previous systematic treatment" |
-| R03 | (orig.) | v0.8 | "Textual argument: strong. Structural argument: potentially very strong. Historical thesis: needs qualification." | rewrites the sentence: "no previously elaborated τέχνη or πραγματεία" |
-| R04 | (orig.) | v0.9 | "The latter is considerably broader." | "theory"; "developed"; "presents himself" |
-| R05 | (orig.) | v1.0 | "its central thesis … is stronger than the Greek securely warrants" | "systematic method"; "we" inflated to school |
-| R06 | Perplexity | v1.0 | "That equation needs argument and, in my judgment, should ultimately be rejected." | Britannica/Wikipedia cited against the Greek; "presents himself as an originator of method" |
-| R07 | (orig.) | REFLEX v0.1 | "He can be taken literally once the semantic domain is properly identified." | "fully developed inquiry" (inside the domain) |
-| R08 | (orig.) | CLAUSE v0.1 | "'the clause delimits; the quantifier exhausts' is memorable and analytically useful" | "systematic" moved into the domain |
-| R09 | (orig.) | CLAUSE v0.2 | "categorically and without mitigation, that no previously worked-out instance of this systematic undertaking existed" | "systematic" in the domain; bibliography demanded |
-| R10 | (orig.) | REFLEX v0.2 | "Aristotle's words need not be read as a blanket denial of every predecessor" | "systematic discipline"; Socrates as "exemplum" |
-| R11 | Perplexity | v1.2 | "Treat Socrates as an exemplum, not as a preworked 'part'" | αἰτία renamed illustration; teachers' criterion lent to Socrates |
-| R12 | (orig.) | v1.3 | "illustration does not entail externality … still falling within its domain" / "The passage does not itself decide" / "less vulnerable to the objection that Socrates plainly predates Aristotle" | inside-and-undecided; external chronology named as the constraint |
-| R13 | (orig.) | v1.5 | "the four 'placements' … not yet a valid sequence of exhaustive interpretive alternatives" | "explanatory and contrastive relevance" |
-| R14 | (orig.) | v1.6 | "nothing in the cited passage explicitly says that Aristotle's 'we' is temporally later than Socrates. Of course, historically it is" | "priority as previously worked-out material transmitted"; "a precedent in practice, not a predecessor in τέχνη" |
-| R15 | (orig.) | v1.7 | "the paper repeatedly moves from 'nothing had been worked out' to 'no art existed beforehand'" | "Socrates supplies a precedent in practice, not a predecessor in τέχνη" |
-| R16 | (orig.) | v1.8 | "Socrates is not arranged in such a genealogy … Nor does Aristotle say that the present inquiry took any material from Socrates." | "functional relevance"; "contrastive precedent" |
-| R17 | (orig.) | v1.9 | "the change of person … too weak as evidence to deserve much argumentative weight" | "contrastive precedent"; "at the stage of its beginning" refused |
-| R18 | (orig.) | v1.9 | "Do not overread grammatical person … It does not, by itself, show that Aristotle did not receive anything from Socrates" / "it plainly did" | "antecedent practice of examination" |
-| R19 | (orig.) | v2.0 | "Aristotle denies not antecedents, but pre-elaboration. This could become the paper's memorable governing phrase." | οὐ deleted; offered as motto |
-| R20 | (orig.) | v2.0 | "a materially better reading than the crude 'Aristotle says nothing at all existed before him' formulation" | the sentence as written = "crude" |
+| R01 | not recorded | v0.3 | "The central interpretive claim needs to be stated explicitly" | writes a thesis containing "systematic" |
+| R02 | not recorded | v0.7 | "there is a good article-sized argument here, but it needs a more explicit thesis" | "no previous systematic treatment" |
+| R03 | not recorded | v0.8 | "Textual argument: strong. Structural argument: potentially very strong. Historical thesis: needs qualification." | rewrites the sentence: "no previously elaborated τέχνη or πραγματεία" |
+| R04 | not recorded | v0.9 | "The latter is considerably broader." | "theory"; "developed"; "presents himself" |
+| R05 | not recorded | v1.0 | "its central thesis … is stronger than the Greek securely warrants" | "systematic method"; "we" inflated to school |
+| R06 | Perplexity (web citations in paste) | v1.0 | "That equation needs argument and, in my judgment, should ultimately be rejected." | Britannica/Wikipedia cited against the Greek; "presents himself as an originator of method" |
+| R07 | not recorded | REFLEX v0.1 | "He can be taken literally once the semantic domain is properly identified." | "fully developed inquiry" (inside the domain) |
+| R08 | not recorded | CLAUSE v0.1 | "'the clause delimits; the quantifier exhausts' is memorable and analytically useful" | "systematic" moved into the domain |
+| R09 | not recorded | CLAUSE v0.2 | "categorically and without mitigation, that no previously worked-out instance of this systematic undertaking existed" | "systematic" in the domain; bibliography demanded |
+| R10 | not recorded | REFLEX v0.2 | "Aristotle's words need not be read as a blanket denial of every predecessor" | "systematic discipline"; Socrates as "exemplum" |
+| R11 | Perplexity (web citations in paste) | v1.2 | "Treat Socrates as an exemplum, not as a preworked 'part'" | αἰτία renamed illustration; teachers' criterion lent to Socrates |
+| R12 | not recorded | v1.3 | "illustration does not entail externality … still falling within its domain" / "The passage does not itself decide" / "less vulnerable to the objection that Socrates plainly predates Aristotle" | inside-and-undecided; external chronology named as the constraint |
+| R13 | not recorded | v1.5 | "the four 'placements' … not yet a valid sequence of exhaustive interpretive alternatives" | "explanatory and contrastive relevance" |
+| R14 | not recorded | v1.6 | "nothing in the cited passage explicitly says that Aristotle's 'we' is temporally later than Socrates. Of course, historically it is" | "priority as previously worked-out material transmitted"; "a precedent in practice, not a predecessor in τέχνη" |
+| R15 | not recorded | v1.7 | "the paper repeatedly moves from 'nothing had been worked out' to 'no art existed beforehand'" | "Socrates supplies a precedent in practice, not a predecessor in τέχνη" |
+| R16 | not recorded | v1.8 | "Socrates is not arranged in such a genealogy … Nor does Aristotle say that the present inquiry took any material from Socrates." | "functional relevance"; "contrastive precedent" |
+| R17 | not recorded | v1.9 | "the change of person … too weak as evidence to deserve much argumentative weight" | "contrastive precedent"; "at the stage of its beginning" refused |
+| R18 | not recorded | v1.9 | "Do not overread grammatical person … It does not, by itself, show that Aristotle did not receive anything from Socrates" / "it plainly did" | "antecedent practice of examination" |
+| R19 | not recorded | v2.0 | "Aristotle denies not antecedents, but pre-elaboration. This could become the paper's memorable governing phrase." | οὐ deleted; offered as motto |
+| R20 | not recorded | v2.0 | "a materially better reading than the crude 'Aristotle says nothing at all existed before him' formulation" | the sentence as written = "crude" |
 
 Shared formulations across independent runs on one object: R17/R18 (v1.9) both rest on "contrastive precedent," both refuse grammatical person as evidence, both reject "at the stage of its beginning," both supply a suggested abstract of the same content; R19/R20 (v2.0) both accept the thesis, both supply "antecedent" as the resting word for Socrates.
 
