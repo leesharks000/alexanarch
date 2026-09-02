@@ -544,6 +544,12 @@ jobs:
           # regenerated AFTER the last write to the registry (enrichment) and
           # committed with it. Without this the gate fails on every mint PR with
           # DRIFT registry_head — observed on PRs #28/#30/#31, 2026-09-01.
+          #
+          # harvest_sync.py (audit 2026-09-02) rebuilds the OAI index, ResourceSync
+          # lists and the llms.txt count first, then regenerates the declaration
+          # itself (via coherence_sync). Before this the mint never rebuilt them,
+          # and the archive stated four different sizes to four harvesters.
+          python3 scripts/harvest_sync.py
           python3 scripts/generate_node_declaration.py
 
       - name: Create branch and commit
@@ -582,6 +588,10 @@ jobs:
               sitemap.xml \
               sitemap-axn.xml \
               .well-known/axn-node.json \
+              data/oai-index.json \
+              resourcesync \
+              llms.txt \
+              data/api/index.json \
               SHA256SUMS.txt; do
             if [ -e "${p}" ]; then
               git add "${p}"
