@@ -1,0 +1,182 @@
+{
+ "deposit_number": 1557,
+ "axn": "AXN:0655.GOVERNANCE.✏️✋🍂🔗🦅🔃",
+ "hex": "0655",
+ "family": "GOVERNANCE",
+ "emoji": "✏️✋🍂🔗🦅🔃",
+ "hash": "43bc78337fdea63505ecab5dcc5c4888a410361dade3bd48725894eac459f619",
+ "title": "ERRATUM to AXN:044A — Instrument Mismatch in the §5 Compression Ratio: Withdrawing and Replacing the 31.2× Figure in Deposit #1081",
+ "creator": "Sharks, Lee",
+ "date": "2026-08-27",
+ "description": "Erratum to EA-EROSION-EMPIRICAL-01 v0.1 (deposit #1081, AXN:044A), withdrawing the §5 compression ratio of 31.2× and replacing it with an instrument-matched risk ratio of 7.6×. The two sides of the published ratio were measured with instruments that do not measure the same construct: the alive side was retrieved through the Zenodo Search API against full record metadata including creators[].affiliation, while the deletion side was measured by substring match on citation_text, which has the form \"Author. (Year). Title. Publisher. DOI\" and contains no affiliation field. The gap was measured directly — on the same 400 alive records the affiliation field returns 51.8% institutional and the citation string 1.2%, a 41.4× instrument ratio, with both firing on one record in four hundred — and applying the deletion-side instrument to both sides removes the reported effect entirely (alive 1.3% vs deleted 1.0%). The deposit had marked this finding directional rather than a survival ratio and had preregistered the required common-cohort test in §12a P1 as not completed; this erratum is that test, and the deposit's own caution proved to be the operative fact. The deletion side is made measurable by reconstructing affiliation from OpenAlex, which retains 66% of deleted DOIs with authorships intact; DataCite is unusable, its metadata records purged for approximately 99.8% of deleted records, a finding recorded here in its own right — Zenodo deletion cascades into destruction of the DataCite descriptive record for every affected depositor, not only the CHA cohort. Holding both sides to the audit's own 23-term AI classifier and to one affiliation instrument gives alive 107/231 (46.3%) against deleted 10/165 (6.1%): risk ratio 7.64, odds ratio 13.38, Fisher exact p = 8.7e-16. The direction and statistical significance of the finding survive; the magnitude does not. The 2×2 contingency counts are unaffected and were independently recomputed from the md5-verified source container. Secondary defects are recorded but not repaired: the institutional term sits in the title rather than an author or publisher field in 69.3% of the not_ai_and_institutional cell, 41.7% of that cell is one depositor's multilingual cascade, one depositor accounts for 60.3% of the audit population, and the archive's own deleted records contribute 63 rows to the cell. […abridged for the catalogue; full description in this deposit's record]",
+ "content_type": "Erratum / record correction",
+ "license": "CC-BY-4.0",
+ "substrate": "AI-assisted (substrate) — the defect was found and the correction computed in working dialogue with Claude (Anthropic) under MANUS direction. Contingency counts independently recomputed from the md5-verified source container (deleted-head-20260710.csv.gz, md5 33877aba1fb5684f86758cb86ddc1ad4, 1,322,007 rows) in-session; instrument gap measured directly against the Zenodo REST API; deletion-side affiliation reconstructed through the OpenAlex API; DataCite and OpenAIRE coverage tested and reported. The reproduction script is deposited with the audit dataset and re-derives every figure, including the instrument gap itself.",
+ "root_axn": "AXN:0655.GOVERNANCE",
+ "axn_schema_version": "v2",
+ "protocol_version": "alexanarch-deposit-protocol/v1",
+ "axn_canonical": "43bc78337fdea63505ecab5dcc5c4888a410361dade3bd48725894eac459f619",
+ "clusters": [
+  "Scriptural",
+  "Gestural",
+  "Organic",
+  "Instrumental",
+  "Organic",
+  "Structural"
+ ],
+ "axn_reading": "Text -> Touch -> Growth -> Method -> Growth -> Direction",
+ "minted_at": "2026-08-28T02:50:40Z",
+ "status": "ACTIVE",
+ "status_authorial": "SELF_SERVE_MINTED",
+ "full_text_path": "/data/texts/AXN-0655-text.md",
+ "wiki_article": "The §5 erratum to EA-EROSION-EMPIRICAL-01 (deposit #1081, AXN:044A) withdraws the audit's published compression ratio of 31.2× and replaces it with an instrument-matched risk ratio of 7.6×. The withdrawn figure compared an alive-side institutional fraction measured against creators[].affiliation through the Zenodo Search API with a deletion-side fraction measured by substring match on citation_text, a field of the form \"Author. (Year). Title. Publisher. DOI\" that carries no affiliation at all. The gap between the instruments was measured rather than asserted: on the same 400 alive records the affiliation field returns 51.8% institutional and the citation string 1.2%, and the two fire together on one record in four hundred. Applying the deletion-side instrument to both sides erases the reported effect entirely.\n\nThe audit had marked this finding directional rather than a survival ratio and had preregistered the necessary common-cohort test as not completed. The erratum is that test; the deposit's own caution proved to be the operative fact. Repair required making the deletion side measurable on the same construct, which is possible because registries that ingested the records before deletion retain their authorship metadata. DataCite does not: its records are purged for roughly 99.8% of deleted DOIs, a cascade from Zenodo deletion into destruction of the descriptive record that affects every depositor, not only the Crimson Hexagonal Archive cohort. OpenAlex retains two thirds. Held to one classifier and one affiliation instrument, the comparison returns alive 107/231 against deleted 10/165 — direction and significance intact, magnitude reduced roughly six-fold.\n\nThe erratum also records defects it does not repair: the institutional classifier reads titles rather than author fields in most of the cell it governs, one depositor supplies 60.3% of the audit population, and the archive's own deleted records sit inside the sample. Canonical bytes of #1081 are unchanged; correction is registry-level, following the ruling on deposit #199.",
+ "wiki_status": "AUTHORSHIP_REQUIRED",
+ "entities": [
+  {
+   "subject": "ERRATUM to AXN:044A — Instrument Mismatch in the §5 Compression Ratio: Withdrawing and Replacing the",
+   "predicate": "created_by",
+   "object": "Sharks, Lee",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "ERRATUM to AXN:044A — Instrument Mismatch in the §5 Compression Ratio: Withdrawing and Replacing the",
+   "predicate": "is_type",
+   "object": "Erratum / record correction",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "ERRATUM to AXN:044A — Instrument Mismatch in the §5 Compression Ratio: Withdrawing and Replacing the",
+   "predicate": "belongs_to_family",
+   "object": "GOVERNANCE",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "ERRATUM to AXN:044A — Instrument Mismatch in the §5 Compression Ratio: Withdrawing and Replacing the",
+   "predicate": "is_part_of",
+   "object": "Crimson Hexagonal Archive",
+   "type": "work",
+   "evidence_status": "observed"
+  }
+ ],
+ "entity_status": "provisional",
+ "defines_concepts": [],
+ "orcid": "0009-0000-1599-0703",
+ "keywords": [
+  "erratum",
+  "instrument mismatch",
+  "compression ratio",
+  "selection metrology",
+  "provenance erasure",
+  "Zenodo deletion",
+  "DataCite purge",
+  "OpenAlex reconstruction",
+  "affiliation measurement",
+  "common-cohort test",
+  "EA-EROSION-EMPIRICAL-01"
+ ],
+ "mint_source": {
+  "kind": "github_issue",
+  "issue_number": 0,
+  "repository": "leesharks000/alexanarch",
+  "minted_by_workflow": ".github/workflows/mint-axn.yml",
+  "minted_by_script": "scripts/mint_deposit.py",
+  "minted_via": "self_serve_validated_pr"
+ },
+ "body_status": {
+  "class": "full",
+  "lacuna": false,
+  "recovery_status": "COMPLETE",
+  "residual_chars": 11693,
+  "audited_at": "2026-08-28T02:50:40Z",
+  "audit_version": "mint-time-declaration"
+ },
+ "references_concepts": [
+  "Crimson Hexagonal Archive",
+  "Lee Sharks",
+  "The Crimson Hexagon"
+ ],
+ "references_concept_count": 3,
+ "citations": [],
+ "wikidata_candidates": [],
+ "cha_cross_references": [],
+ "external_metadata_path": "/data/external-metadata/AXN-0655.json",
+ "spxi_audit": {
+  "spxi_protocol": "v0.2",
+  "validated_at": "2026-08-28T02:51:34.206954+00:00",
+  "layers": {
+   "layer_1_inscription_anchors": {
+    "present": false,
+    "anchors_found": [
+     "date"
+    ],
+    "anchor_count": 1,
+    "orcid_in_body": false,
+    "creator_in_body": false,
+    "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+   },
+   "layer_2_micro_kernels": {
+    "present": false,
+    "fenced_json_blocks": 0,
+    "json_ld_context_markers": 0
+   },
+   "layer_3_content_hash": {
+    "present": true,
+    "canonical_hash": "1fdf660e3bc4c1345e9c9b46d5cd594312710765395c8d33a4977e9a6f9b85d3",
+    "hash_in_body": false,
+    "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+   },
+   "layer_4_cross_signing": {
+    "present": false,
+    "cross_references_count": 0,
+    "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+   },
+   "layer_5_external_anchors": {
+    "present": true,
+    "wikidata_qid_count": 0,
+    "external_doi_count": 0,
+    "orcid_present": true
+   }
+  },
+  "overall_conformance": "partial"
+ },
+ "concepts_attested_none": true,
+ "lexical_attested_none": true,
+ "related_deposits": [
+  {
+   "deposit_number": 1081,
+   "relation": "corrects",
+   "note": "EA-EROSION-EMPIRICAL-01 v0.1 — §5 compression ratio withdrawn and replaced"
+  },
+  {
+   "deposit_number": 1045,
+   "relation": "instrument",
+   "note": "EA-EROSION-01, the PID Erosion Observatory whose lane this audit sits in"
+  },
+  {
+   "deposit_number": 1554,
+   "relation": "precedent",
+   "note": "ERRATUM to AXN:0341 — establishes the registry-level correction form, canonical bytes unchanged"
+  },
+  {
+   "deposit_number": 1080,
+   "relation": "companion",
+   "note": "EA-CORRESPONDENCE-CERN-06, the audit's correspondence companion"
+  },
+  {
+   "deposit_number": 1075,
+   "relation": "discipline",
+   "note": "EA-NEGSHAPE-01 v0.2 citation discipline followed by the corrected audit"
+  }
+ ],
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/1557/",
+  "self_url": "https://www.alexanarch.org/data/records/1557.json",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-0655-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}

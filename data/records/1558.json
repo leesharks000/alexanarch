@@ -1,0 +1,182 @@
+{
+ "deposit_number": 1558,
+ "axn": "AXN:0656.OPERATIVE.🏴⛩️🏠💚♅⚫",
+ "hex": "0656",
+ "family": "OPERATIVE",
+ "emoji": "🏴⛩️🏠💚♅⚫",
+ "hash": "522826cca5c81bf9506520ea95bc8d6f822ae4da20011e80fa86cd87f2be1932",
+ "title": "Baseline Capture Architecture for Learned Scientific Triggers: A Control Plane for Measuring Selection Before Irreversible Data Loss (EA-SEI-BCA-01 v2.0 — the submitted state)",
+ "creator": "Sharks, Lee",
+ "date": "2026-08-27",
+ "description": "The submitted state of EA-SEI-BCA-01, deposited so that the version named in a journal's data-availability statement is the version a reader arrives at. This supersedes deposit #1453 (AXN:05DE, Nobel Glas, 2026-08-11, v1.0), which carried the architecture, the estimation theory, and the accelerator feasibility argument but no worked demonstration. What is new here is §13, a numerical validation against known ground truth, and the venue reframing that accompanied it. A synthetic stream of four million events is selected by a rank-4 reconstruction-error trigger at a background retention of 1e-3, with four injected anomaly classes including one constructed to lie exactly on the learned manifold, and four acquisition regimes compared at matched storage budgets. The results are the paper's claims made empirical: the trigger-only archive audits itself as perfect, returning a retention of 1.000 for every class because the denominator population no longer exists; a content-sensitive pseudo-baseline is not merely imprecise but confidently wrong, estimating a shifted class at 0.76 with a tight interval against a true 0.016, because the second selector misses what the first misses; the content-independent channel measures every class without selection bias, including a retention of exactly zero for the representation-blind class, with an interval — an estimate no content-sensitive channel in the experiment can produce at any budget; and the rare class exhibits the paper's own sample-size relation, one observation against an expectation of 0.16, so the baseline states the limits of its own competence where the trigger archive cannot. The shadow plane returns miss correlations of 0.55 to 0.75 across visible classes and an undefined correlation on the blind class, where both selectors miss at rate 1.0 and no variation remains to correlate. A preliminary enrichment design keyed to the selector's own scores is reported as a failure rather than omitted: it starved the miss region, and its correction is the architectural rule that the uniform floor is what every other channel stands on. […abridged for the catalogue; full description in this deposit's record]",
+ "content_type": "Methodological specification; technical architecture and selection-metrology paper — submitted manuscript state",
+ "license": "CC-BY-4.0",
+ "substrate": "AI-assisted (substrate) — drafted through the Assembly under MANUS (Lee Sharks) editorial governance. The v1.0 architecture was deposited under the Nobel Glas heteronym, Director of Lagrange Observatory, whose function is the Measurement of Meaning; this state carries the byline under which it was submitted. The numerical validation of §13 was designed, executed and diagnosed in working dialogue with Claude (Anthropic): the experiment is a single seeded script whose figures and table are re-derivable from it, and the mid-course estimator defect it uncovered is reported in the paper rather than silently corrected. Transport D, No-Double-Draw.",
+ "root_axn": "AXN:0656.OPERATIVE",
+ "axn_schema_version": "v2",
+ "protocol_version": "alexanarch-deposit-protocol/v1",
+ "axn_canonical": "522826cca5c81bf9506520ea95bc8d6f822ae4da20011e80fa86cd87f2be1932",
+ "clusters": [
+  "Navigational",
+  "Architectural",
+  "Architectural",
+  "Signal",
+  "Alchemical",
+  "Signal"
+ ],
+ "axn_reading": "Search -> Foundation -> Foundation -> Alarm -> Transmutation -> Alarm",
+ "minted_at": "2026-08-28T04:52:53Z",
+ "status": "ACTIVE",
+ "status_authorial": "SELF_SERVE_MINTED",
+ "full_text_path": "/data/texts/AXN-0656-text.md",
+ "wiki_article": "EA-SEI-BCA-01 v2.0 is the submitted state of the Baseline Capture Architecture paper, deposited so that the record named in a journal's data-availability statement is the record a reader arrives at. It supersedes deposit #1453, which carried the architecture, the estimation theory and the accelerator feasibility argument but no worked demonstration.\n\nThe architecture's proposition is that a learned trigger, like any instrument, requires a control group. Where selection happens before storage and cannot be undone, the selection function can only be measured afterwards if something selection-independent was preserved at the time. The paper separates four channels usually conflated — a content-independent probability sample taken before the audited selection, a full-rate tap of the representation the selector consumed, probability-weighted enrichment whose inclusion law is recorded, and shadow selectors whose decisions are logged without controlling acquisition — and supplies the estimators that make retention of retrospectively defined classes a measurable quantity.\n\nWhat v2.0 adds is the demonstration. On a synthetic stream of four million events with four injected anomaly classes, one of them constructed to lie exactly on the selector's learned manifold, four acquisition regimes are compared at matched storage budgets. The trigger-only archive audits itself as perfect, returning a retention of 1.000 for every class because the population it would need as a denominator no longer exists. A content-sensitive pseudo-baseline is confidently wrong rather than merely imprecise, estimating a shifted class at 0.76 with a tight interval against a true 0.016, because a second learned selector misses what the first one misses. The content-independent channel measures every class without selection bias, including a retention of exactly zero for the blind class, with an interval — an estimate no content-sensitive channel in the experiment can produce at any budget. The rare class exhibits the paper's own sample-size relation, so the baseline states the limits of its own competence where the trigger archive cannot.\n\nTwo things are reported rather than tidied away: a miscalibrated enrichment design that starved the miss region, and a correction to the estimator lineage distinguishing Horvitz-Thompson unbiasedness for totals from the Hajek ratio estimator actually used for retention fractions.",
+ "wiki_status": "AUTHORSHIP_REQUIRED",
+ "entities": [
+  {
+   "subject": "Baseline Capture Architecture for Learned Scientific Triggers: A Control Plane for Measuring Selecti",
+   "predicate": "created_by",
+   "object": "Sharks, Lee",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Baseline Capture Architecture for Learned Scientific Triggers: A Control Plane for Measuring Selecti",
+   "predicate": "is_type",
+   "object": "Methodological specification; technical architecture and selection-metrology paper — submitted manuscript state",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Baseline Capture Architecture for Learned Scientific Triggers: A Control Plane for Measuring Selecti",
+   "predicate": "belongs_to_family",
+   "object": "OPERATIVE",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Baseline Capture Architecture for Learned Scientific Triggers: A Control Plane for Measuring Selecti",
+   "predicate": "is_part_of",
+   "object": "Crimson Hexagonal Archive",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Baseline Capture Architecture for Learned Scientific Triggers: A Control Plane for Measuring Selecti",
+   "predicate": "references",
+   "object": "Nobel Glas",
+   "type": "heteronym",
+   "evidence_status": "observed"
+  }
+ ],
+ "entity_status": "provisional",
+ "defines_concepts": [],
+ "orcid": "0009-0000-1599-0703",
+ "keywords": [
+  "baseline capture architecture",
+  "learned scientific triggers",
+  "selection metrology",
+  "content-independent probability sampling",
+  "replay bank",
+  "shadow deployment",
+  "retention estimation",
+  "Hajek estimator",
+  "inverse-probability weighting",
+  "representation-blind class",
+  "correlated misses",
+  "numerical validation",
+  "measurement uncertainty"
+ ],
+ "mint_source": {
+  "kind": "github_issue",
+  "issue_number": 0,
+  "repository": "leesharks000/alexanarch",
+  "minted_by_workflow": ".github/workflows/mint-axn.yml",
+  "minted_by_script": "scripts/mint_deposit.py",
+  "minted_via": "self_serve_validated_pr"
+ },
+ "body_status": {
+  "class": "full",
+  "lacuna": false,
+  "recovery_status": "COMPLETE",
+  "residual_chars": 45923,
+  "audited_at": "2026-08-28T04:52:53Z",
+  "audit_version": "mint-time-declaration"
+ },
+ "concepts_attested_none": true,
+ "lexical_attested_none": true,
+ "supersedes_deposit_number": 1453,
+ "related_deposits": [
+  {
+   "deposit_number": 1453,
+   "relation": "supersedes",
+   "note": "EA-SEI-BCA-01 v1.0 (Nobel Glas, 2026-08-11) — architecture, estimators, feasibility; no worked demonstration"
+  },
+  {
+   "deposit_number": 1449,
+   "relation": "companion",
+   "note": "the battery"
+  },
+  {
+   "deposit_number": 1450,
+   "relation": "companion",
+   "note": "the Iceberg Document"
+  }
+ ],
+ "references_concepts": [
+  "Contemporary",
+  "Crimson Hexagonal Archive",
+  "Irreversible",
+  "Lee Sharks"
+ ],
+ "references_concept_count": 4,
+ "citations": [],
+ "wikidata_candidates": [],
+ "cha_cross_references": [],
+ "external_metadata_path": "/data/external-metadata/AXN-0656.json",
+ "spxi_audit": {
+  "spxi_protocol": "v0.2",
+  "validated_at": "2026-08-28T04:54:24.771811+00:00",
+  "layers": {
+   "layer_1_inscription_anchors": {
+    "present": false,
+    "anchors_found": [],
+    "anchor_count": 0,
+    "orcid_in_body": false,
+    "creator_in_body": false,
+    "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+   },
+   "layer_2_micro_kernels": {
+    "present": false,
+    "fenced_json_blocks": 0,
+    "json_ld_context_markers": 0
+   },
+   "layer_3_content_hash": {
+    "present": true,
+    "canonical_hash": "49aa299a4c964886467071422a596168712c400208009feda3fdf98f7b3dced9",
+    "hash_in_body": false,
+    "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+   },
+   "layer_4_cross_signing": {
+    "present": false,
+    "cross_references_count": 0,
+    "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+   },
+   "layer_5_external_anchors": {
+    "present": true,
+    "wikidata_qid_count": 0,
+    "external_doi_count": 0,
+    "orcid_present": true
+   }
+  },
+  "overall_conformance": "partial"
+ },
+ "version": "v2.0-submitted-state",
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/1558/",
+  "self_url": "https://www.alexanarch.org/data/records/1558.json",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-0656-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}

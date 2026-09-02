@@ -1,0 +1,787 @@
+{
+ "deposit_number": 1571,
+ "axn": "AXN:0663.DATASET.🏷️○⚖️📎💡🌈",
+ "hex": "0663",
+ "family": "DATASET",
+ "emoji": "🏷️○⚖️📎💡🌈",
+ "hash": "4c9b36473c1e6b22dd0cb17a5a48654e1c8c6b070f692e55023f255d3099140e",
+ "title": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+ "creator": "Sharks, Lee",
+ "date": "2026-08-29",
+ "description": "The frozen pre-registration ledger of the authorship investigation: eleven entries, each carrying the SHA-256 of its original standalone registration file so that every earlier commit citing those hashes still resolves, with dispositions appended beneath each entry and never inside it. Pre-registrations cannot live in the living notebook, because their whole value is that the content was fixed before the test and a hash over an appending file proves nothing; they are gathered here instead of proliferating as three files apiece. The ledger includes the registrations behind the six-function transmission apparatus (EA-YIELD-02) and the completeness gate (EA-COMPLETE-01) that the technical report EA-MEASURES-REPORT-01 cites as fixed before assignment.",
+ "content_type": "Dataset; frozen pre-registration ledger, append-only",
+ "license": "CC-BY-4.0",
+ "substrate": "AI-assisted (substrate) — composed in working dialogue with Claude (Anthropic) under operator direction (Lee Sharks); every measurement computed against commit-pinned seated corpora (Perseus canonical-greekLit, First1KGreek, and the comparison corpora named in the file); results recorded with their conditions and refutations beside them; the operator's rulings, retractions and voids are part of the record",
+ "root_axn": "AXN:0663.DATASET",
+ "axn_schema_version": "v2",
+ "protocol_version": "alexanarch-deposit-protocol/v1",
+ "axn_canonical": "4c9b36473c1e6b22dd0cb17a5a48654e1c8c6b070f692e55023f255d3099140e",
+ "clusters": [
+  "Scriptural",
+  "Mathematical",
+  "Instrumental",
+  "Scriptural",
+  "Instrumental",
+  "Elemental"
+ ],
+ "axn_reading": "Text -> Proof -> Method -> Text -> Method -> Force",
+ "minted_at": "2026-09-01T22:09:29Z",
+ "status": "ACTIVE",
+ "status_authorial": "SELF_SERVE_MINTED",
+ "full_text_path": "/data/texts/AXN-0663-text.md",
+ "wiki_article": "The Frozen Pre-Registration Ledger of the authorship investigation is an append-only record of what was fixed before each test was run, gathered in one file so that registrations do not proliferate as separate documents and so that their freeze is checkable. Each of its eleven entries carries the SHA-256 of the original standalone registration file it replaces, so that every earlier commit citing those hashes still resolves; dispositions are appended beneath the entry they discharge and never written inside it. The rule the ledger states of itself is that nothing above a DISPOSITION line is ever edited, and the reason is given: pre-registrations cannot live in an appending notebook, because their whole value is that the content was fixed before the test and a hash taken over a file that grows proves nothing about what it contained when the test was run. Among the entries are the registrations behind the six-function transmission specification and the completeness conditions that the derived technical report cites as fixed before any text was assigned to them, together with entries whose dispositions record that the registered test failed or was withdrawn. It is the companion of the notebook (EA-NOTEBOOK-01), which holds the rounds, and of the measurement register (EA-AUTHORSHIP-MEASURES-01), which holds the figures with their conditions.",
+ "wiki_status": "AUTHORED_IN_SESSION",
+ "entities": [
+  {
+   "subject": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "predicate": "created_by",
+   "object": "Sharks, Lee",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "predicate": "is_type",
+   "object": "Dataset; frozen pre-registration ledger, append-only",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "predicate": "belongs_to_family",
+   "object": "DATASET",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "predicate": "is_part_of",
+   "object": "Crimson Hexagonal Archive",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "Frozen Pre-Registration Ledger",
+   "predicate": "minted_in",
+   "object": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "An append-only document collecting pre-registered hypotheses, where entries are never edited after registration and dispositions are appended beneath each entry rather than inside it, ensuring content was fixed before any test was run."
+  },
+  {
+   "subject": "Leak Deficit",
+   "predicate": "minted_in",
+   "object": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "The hypothesis that a corpus engineered against resolution deposits fewer incidental cross-textual correspondences at the aggregate layer than natural corpora of matched size and register, measurable as a deficit in block-pair cosine similarity exceedances."
+  },
+  {
+   "subject": "Leak (statistic) L",
+   "predicate": "minted_in",
+   "object": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "A one-directional statistic defined as the count of block-pairs whose cosine similarity exceeds a threshold τ, per 10⁴ block-pairs, chosen because it is monotone under smoothing."
+  },
+  {
+   "subject": "Degenerate lower tail",
+   "predicate": "minted_in",
+   "object": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "A condition in which too many null pairs produce exactly zero leak, causing the 5th and 10th percentiles to both equal 0.0, making it impossible for any corpus to fall below the registered threshold."
+  },
+  {
+   "subject": "Spent (registration status)",
+   "predicate": "minted_in",
+   "object": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "A disposition applied to a pre-registration whose kill condition was never triggered because a structural defect was found before the test pair was computed, distinguishing it from a withdrawn or failed registration."
+  },
+  {
+   "subject": "Comparative Interpretive Yield (Y)",
+   "predicate": "minted_in",
+   "object": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "A statistic measuring whether a lens picks out a coherent dimension of variation in a corpus, computed as the z-score of the mean pairwise Pearson correlation of marker densities against a frequency-matched null distribution."
+  },
+  {
+   "subject": "Saturation defect",
+   "predicate": "minted_in",
+   "object": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "A failure mode in which a lens that saturates every work of a corpus shows no variance across works, producing near-zero correlation and therefore near-zero yield, making low yield ambiguous between absence and saturation."
+  },
+  {
+   "subject": "Reorganization Yield",
+   "predicate": "minted_in",
+   "object": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "A revised measure of interpretive yield based on whether a lens reorganizes and develops a corpus according to the lens's own functional slots — assessed via coverage, sharpness, and development — rather than lexical co-variance."
+  },
+  {
+   "subject": "Transmission Engineering Lens",
+   "predicate": "minted_in",
+   "object": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "A six-slot analytical framework (T1 Encoding, T2 Substrate, T3 Decommissioning, T4 Withholding, T5 Recovery, T6 Verification) applied to corpora to measure whether they are organized by a programme of transmitting a voice across time."
+  },
+  {
+   "subject": "Abandoned-Execution Completion",
+   "predicate": "minted_in",
+   "object": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "A diagnostic relation in which a successor corpus finishes operations that the predecessor explicitly abandoned as impossible or aporetic, distinguished from mere correction or extension of completed work."
+  },
+  {
+   "subject": "λόγος-level correction",
+   "predicate": "minted_in",
+   "object": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "A distinction between Aristotle stating that Plato erred (a transmittable statement) versus Aristotle executing the same operation and taking a different branch at the point of decision, which cannot be transmitted as doctrine."
+  },
+  {
+   "subject": "Engineered Unresolvability",
+   "predicate": "minted_in",
+   "object": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "The hypothesis that the Platonic–Aristotelian corpus was deliberately constructed to resist attribution resolution, producing ambiguity that is flat and instrument-invariant rather than uneven as in natural corpora."
+  },
+  {
+   "subject": "Key (of engineered unresolvability)",
+   "predicate": "minted_in",
+   "object": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "A placed signature within an engineered corpus that is prominent, inert under ordinary reading, decisive under the configurational reading, and indicative of making — required because a construction good enough to be undetectable must leave something that confirms it."
+  },
+  {
+   "subject": "Unlocking Prediction",
+   "predicate": "minted_in",
+   "object": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "The claim that structures independently puzzling before the hypothesis was applied will repeatedly become more determinate when Plato and Aristotle are read as positions inside one construction, without altering local philology."
+  },
+  {
+   "subject": "Relational Form Measure",
+   "predicate": "minted_in",
+   "object": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "A three-part measure (R1 Complementary Coverage, R2 Abandoned-Execution Completion, R3 Arbitrary Procedural Agreement) applied to labelled corpus pairs to separate H (one-maker), S (succession), C (collaboration), and I (independent) classes without Greek content."
+  },
+  {
+   "subject": "Complementary Coverage (R1)",
+   "predicate": "minted_in",
+   "object": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "A relational form scored as coverage(A∪B) / max(coverage(A), coverage(B)) against redundancy |A∩B|/|A∪B|, testing whether two corpora are internally tight while their union is materially more complete than either alone."
+  },
+  {
+   "subject": "Arbitrary Procedural Agreement (R3)",
+   "predicate": "minted_in",
+   "object": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "A relational form scoring shared habits that the method does not require, defined generically and scored on independent works only to avoid shared-source contamination."
+  },
+  {
+   "subject": "Contamination Rule",
+   "predicate": "minted_in",
+   "object": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "A methodological rule distinguishing commentary works (where R3 is inadmissible due to shared-source contamination) from independent works (where all three relational forms are admissible), applied per pair."
+  },
+  {
+   "subject": "Specification-Depth Hypothesis",
+   "predicate": "minted_in",
+   "object": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "The hypothesis that container tightness in a corpus tracks the severity of constraint placed on a speaking position, not similarity or disguise, so that ratio of internal dispersion to inter-position distance orders by how much was subtracted from a fully unspecified voice."
+  },
+  {
+   "subject": "Reception Capture",
+   "predicate": "minted_in",
+   "object": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "A score measuring the degree to which an interpreter's distinctive vocabulary is already present in the interpreted position, computed as the median rate ratio of the interpreter's top distinctive terms found in the interpreted text, with the term set selected without reference to the interpreted position."
+  },
+  {
+   "subject": "Unit-level variation (L1–L4)",
+   "predicate": "minted_in",
+   "object": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "A scoring scheme for the Reorganization Yield measure across four granularities: L1 individual book/work, L2 author-group, L3 whole corpus, L4 cross-corpus, based on the principle that a lens may organize at one level and not another."
+  },
+  {
+   "subject": "SPXI Layer 4 cross-signing graph",
+   "predicate": "minted_in",
+   "object": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "The archive layer that records cross-references between deposits, populated by entries in the CHA cross-references array."
+  },
+  {
+   "subject": "Instrument-invariance (A1)",
+   "predicate": "minted_in",
+   "object": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "An observable for engineered unresolvability: whether unrelated instruments return the same non-answer, measured against a comparison class of natural corpora."
+  },
+  {
+   "subject": "Reverse-engineering test",
+   "predicate": "minted_in",
+   "object": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "A binding scoring rule requiring that an UNLOCK count only if the resolving passage was not found by open search; any case found by open search is scored NULL regardless of quality."
+  },
+  {
+   "subject": "Preconditions (binding, pre-run)",
+   "predicate": "minted_in",
+   "object": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "type": "concept",
+   "evidence_status": "observed",
+   "note": "A set of three conditions (non-degeneracy, spread, size) that must all hold on the null alone before the test pair may be computed; if any fail, the registration is spent and a new one is required."
+  }
+ ],
+ "entity_status": "provisional",
+ "defines_concepts": [
+  "Frozen Pre-Registration Ledger",
+  "Leak Deficit",
+  "Leak (statistic) L",
+  "Degenerate lower tail",
+  "Spent (registration status)",
+  "Comparative Interpretive Yield (Y)",
+  "Saturation defect",
+  "Reorganization Yield",
+  "Transmission Engineering Lens",
+  "Abandoned-Execution Completion",
+  "λόγος-level correction",
+  "Engineered Unresolvability",
+  "Key (of engineered unresolvability)",
+  "Unlocking Prediction",
+  "Relational Form Measure",
+  "Complementary Coverage (R1)",
+  "Arbitrary Procedural Agreement (R3)",
+  "Contamination Rule",
+  "Specification-Depth Hypothesis",
+  "Reception Capture",
+  "Unit-level variation (L1–L4)",
+  "SPXI Layer 4 cross-signing graph",
+  "Instrument-invariance (A1)",
+  "Reverse-engineering test",
+  "Preconditions (binding, pre-run)"
+ ],
+ "orcid": "0009-0000-1599-0703",
+ "version": "Eleven entries, frozen as of 2026-08-29; dispositions appended through 2026-08-31",
+ "keywords": [
+  "pre-registration",
+  "frozen",
+  "SHA-256",
+  "falsification conditions",
+  "six-function apparatus",
+  "EA-YIELD-02",
+  "EA-COMPLETE-01",
+  "authorship investigation"
+ ],
+ "related_identifiers_raw": "Companions: EA-NOTEBOOK-01; EA-AUTHORSHIP-MEASURES-01; EA-MEASURES-REPORT-01",
+ "mint_source": {
+  "kind": "github_issue",
+  "issue_number": 26,
+  "repository": "leesharks000/alexanarch",
+  "minted_by_workflow": ".github/workflows/mint-axn.yml",
+  "minted_by_script": "scripts/mint_deposit.py",
+  "minted_via": "self_serve_validated_pr"
+ },
+ "attachments": [
+  {
+   "filename": "PREREG-LEDGER.md",
+   "url": "https://alexanarch.org/data/attachments/ea-prereg-ledger-01/PREREG-LEDGER.md",
+   "size": 69545,
+   "ingested_inline": true,
+   "ingestion_error": null,
+   "archive_path": "/data/attachments/AXN-0663/PREREG-LEDGER.md",
+   "sha256": "645e9620e857f30abfcd21001a40af4dacb3672090a30978a6441270908a01d2",
+   "md5": "e4ffad4f00d49f2399ef23778f35c088"
+  }
+ ],
+ "references_concepts": [
+  "COMPLETE",
+  "Lee Sharks",
+  "MISSION",
+  "Pre-register",
+  "Pre-registration",
+  "Preconditions",
+  "Prediction 3",
+  "Three components",
+  "Why it matters"
+ ],
+ "references_concept_count": 9,
+ "citations": [
+  {
+   "type": "historical_person",
+   "text": "Plato",
+   "authors": [],
+   "title": "Platonic corpus",
+   "role": "primary source / subject of investigation",
+   "wikidata_hint": "Plato"
+  },
+  {
+   "type": "historical_person",
+   "text": "Aristotle",
+   "authors": [],
+   "title": "Aristotelian corpus",
+   "role": "primary source / subject of investigation",
+   "wikidata_hint": "Aristotle"
+  },
+  {
+   "type": "manuscript",
+   "text": "Plato, Theaetetus 196c — the wax block, at its abandonment: οὐκοῦν εἰς τοὺς πρώτους πάλιν ἀνήκει λόγους … ὃ ἔφαμεν ἀδύνατον",
+   "title": "Theaetetus",
+   "authors": [
+    "Plato"
+   ],
+   "role": "primary source — specific passage analysed as abandoned execution",
+   "wikidata_hint": "Theaetetus Plato"
+  },
+  {
+   "type": "manuscript",
+   "text": "Aristotle, De anima 424a — the same analogy, as doctrine: καθόλου δὲ … δεῖ λαβεῖν ὅτι ἡ αἴσθησίς ἐστι τὸ δεκτικὸν τῶν αἰσθητῶν εἰδῶν ἄνευ τῆς ὕλης, οἷον ὁ κηρὸς τοῦ δακτυλίου ἄνευ τοῦ σιδήρου",
+   "title": "De anima",
+   "authors": [
+    "Aristotle"
+   ],
+   "role": "primary source — passage identified as completion of Theaetetus abandonment",
+   "wikidata_hint": "De anima Aristotle"
+  },
+  {
+   "type": "manuscript",
+   "text": "Letter II 314c — οὐδ᾽ ἔστιν σύγγραμμα Πλάτωνος οὐδὲν οὐδ᾽ ἔσται, τὰ δὲ νῦν λεγόμενα Σωκράτους ἐστὶν καλοῦ καὶ νέου γεγονότος",
+   "title": "Platonic Letters, Letter II",
+   "authors": [
+    "Plato"
+   ],
+   "role": "candidate key (C1) for engineered unresolvability",
+   "wikidata_hint": "Platonic Epistles"
+  },
+  {
+   "type": "manuscript",
+   "text": "Letter XIII 360a — ἀντιλέγεται ὡς οὐ Πλάτωνος — the athetesis transmitted INSIDE the text — followed by ἀρχή σοι τῆς ἐπιστολῆς ἔστω καὶ ἅμα ΣΥΜΒΟΛΟΝ ὅτι παρ᾽ ἐμοῦ ἐστιν",
+   "title": "Platonic Letters, Letter XIII",
+   "authors": [
+    "Plato"
+   ],
+   "role": "candidate key (C2) for engineered unresolvability; σύμβολον passage",
+   "wikidata_hint": "Platonic Epistles"
+  },
+  {
+   "type": "manuscript",
+   "text": "Symposium 223d — τοῦ αὐτοῦ ἀνδρός — the demand, with its proof destroyed in transmission and the witnesses asleep",
+   "title": "Symposium",
+   "authors": [
+    "Plato"
+   ],
+   "role": "candidate key (C3) for engineered unresolvability",
+   "wikidata_hint": "Symposium Plato"
+  },
+  {
+   "type": "manuscript",
+   "text": "Phaedo 59b — Πλάτων δὲ οἶμαι ἠσθένει — the author writing himself absent from the founder's death",
+   "title": "Phaedo",
+   "authors": [
+    "Plato"
+   ],
+   "role": "candidate key (C4) for engineered unresolvability; development prediction",
+   "wikidata_hint": "Phaedo Plato"
+  },
+  {
+   "type": "manuscript",
+   "text": "Statesman 260e — αὐτεπιτακτική coined for the self-commanding, kings placed INTO it, other genera left unentered",
+   "title": "Statesman",
+   "authors": [
+    "Plato"
+   ],
+   "role": "candidate key (C5) for engineered unresolvability",
+   "wikidata_hint": "Statesman Plato"
+  },
+  {
+   "type": "manuscript",
+   "text": "Theaetetus 209c — the μνημεῖον that must be deposited to individuate, and is not",
+   "title": "Theaetetus",
+   "authors": [
+    "Plato"
+   ],
+   "role": "candidate key (C6); also target T-E for unlocking prediction",
+   "wikidata_hint": "Theaetetus Plato"
+  },
+  {
+   "type": "manuscript",
+   "text": "the Republic exiles them … the most famous act of literary criticism in the language",
+   "title": "Republic",
+   "authors": [
+    "Plato"
+   ],
+   "role": "contextual reference — the exile of the poets as literary-critical act",
+   "wikidata_hint": "Republic Plato"
+  },
+  {
+   "type": "manuscript",
+   "text": "Aristotle, APr I.31 — Aristotle identifies it as syllogizing",
+   "title": "Prior Analytics",
+   "authors": [
+    "Aristotle"
+   ],
+   "role": "primary source — Form B unlocking instance (M40)",
+   "wikidata_hint": "Prior Analytics Aristotle"
+  },
+  {
+   "type": "manuscript",
+   "text": "Aristotle, SE 183b — Aristotle claims the development of syllogizing and negates prior partial development",
+   "title": "Sophistici Elenchi",
+   "authors": [
+    "Aristotle"
+   ],
+   "role": "primary source — Form B unlocking instance (M40)",
+   "wikidata_hint": "Sophistici Elenchi Aristotle"
+  },
+  {
+   "type": "manuscript",
+   "text": "Theaetetus→De Anima 412a, Sophist→De interpretatione 16a, Statesman→Politics 1275a",
+   "title": "De Anima; De Interpretatione; Politics",
+   "authors": [
+    "Aristotle"
+   ],
+   "role": "primary source — T-F targets scored NULL in EA-UNLOCK-01",
+   "wikidata_hint": "Aristotle"
+  },
+  {
+   "type": "historical_person",
+   "text": "Andronicus of Rhodes, constituting the Aristotelian corpus in the first century BCE from the cross-references the texts themselves contain, is sufficient on his own to produce smoothing without anyone intending it",
+   "authors": [],
+   "role": "alternative explanation for corpus-level smoothing; intellectual lineage",
+   "wikidata_hint": "Andronicus of Rhodes"
+  },
+  {
+   "type": "historical_person",
+   "text": "Sappho, Homer, the tragedians, the comic poets — he quotes them, stages them, argues with them",
+   "authors": [],
+   "role": "intellectual lineage — tradition Plato writes inside",
+   "wikidata_hint": "Sappho"
+  },
+  {
+   "type": "historical_person",
+   "text": "Homer",
+   "authors": [],
+   "role": "intellectual lineage — tradition Plato writes inside",
+   "wikidata_hint": "Homer"
+  },
+  {
+   "type": "historical_person",
+   "text": "Xenophon — null set Greek prose author-pair",
+   "authors": [],
+   "role": "null corpus member",
+   "wikidata_hint": "Xenophon"
+  },
+  {
+   "type": "historical_person",
+   "text": "Plotinus — null set Greek prose author-pair",
+   "authors": [],
+   "role": "null corpus member",
+   "wikidata_hint": "Plotinus"
+  },
+  {
+   "type": "historical_person",
+   "text": "Philo — null set Greek prose author-pair",
+   "authors": [],
+   "role": "null corpus member",
+   "wikidata_hint": "Philo of Alexandria"
+  },
+  {
+   "type": "historical_person",
+   "text": "Josephus — one author, four works, four registers, no design — must fall inside the natural distribution",
+   "authors": [],
+   "role": "sanity control corpus",
+   "wikidata_hint": "Josephus"
+  },
+  {
+   "type": "historical_person",
+   "text": "Herodotus — null set Greek prose author-pair",
+   "authors": [],
+   "role": "null corpus member",
+   "wikidata_hint": "Herodotus"
+  },
+  {
+   "type": "historical_person",
+   "text": "Thucydides — null set Greek prose author-pair",
+   "authors": [],
+   "role": "null corpus member",
+   "wikidata_hint": "Thucydides"
+  },
+  {
+   "type": "historical_person",
+   "text": "Longinus — null set Greek prose author-pair",
+   "authors": [],
+   "role": "null corpus member",
+   "wikidata_hint": "Longinus author On the Sublime"
+  },
+  {
+   "type": "historical_person",
+   "text": "Aristophanes is excluded from the null (verse), retained as a test case",
+   "authors": [],
+   "role": "test case / excluded from null on prose-only grounds",
+   "wikidata_hint": "Aristophanes"
+  },
+  {
+   "type": "historical_person",
+   "text": "the New Testament authors (Mark, Matthew, Luke–Acts, John, Paul, Hebrews)",
+   "authors": [],
+   "role": "null corpus member; also scored in EA-YIELD-02 at all four unit levels",
+   "wikidata_hint": "New Testament"
+  },
+  {
+   "type": "book",
+   "text": "Pessoa's four voices … the letter to Adolfo Casais Monteiro of 13 January 1935 attributes the heteronyms",
+   "title": "Letter to Adolfo Casais Monteiro, 13 January 1935",
+   "authors": [
+    "Fernando Pessoa"
+   ],
+   "year": 1935,
+   "role": "positive control — documented single-author multi-position corpus",
+   "wikidata_hint": "Fernando Pessoa"
+  },
+  {
+   "type": "historical_person",
+   "text": "Fernando Pessoa — Caeiro, Soares, Mora, Reis, Campos, Orthonym",
+   "authors": [],
+   "role": "positive control for H class (one maker, multiple positions); intellectual lineage",
+   "wikidata_hint": "Fernando Pessoa"
+  },
+  {
+   "type": "historical_person",
+   "text": "Alberto Caeiro — Pessoa's heteronym",
+   "authors": [],
+   "role": "positive control H1; tightest container in specification-depth analysis",
+   "wikidata_hint": "Alberto Caeiro"
+  },
+  {
+   "type": "historical_person",
+   "text": "Kierkegaard second, with the standing caveat that his seat holds four pseudonymous works of roughly a dozen",
+   "authors": [],
+   "role": "positive control — documented single-author pseudonymous corpus",
+   "wikidata_hint": "Søren Kierkegaard"
+  },
+  {
+   "type": "book",
+   "text": "Either-Or A/B (H, documented) PARTIAL at 4.7–14×",
+   "title": "Either/Or",
+   "authors": [
+    "Søren Kierkegaard"
+   ],
+   "role": "positive control corpus — reception capture baseline",
+   "wikidata_hint": "Either/Or Kierkegaard"
+  },
+  {
+   "type": "historical_person",
+   "text": "Albert — archive.org DjVuTXT, 220 items; vol. 7 = 338,391 tokens",
+   "authors": [],
+   "role": "S-class control (master to Thomas Aquinas) in EA-RELFORM-01",
+   "wikidata_hint": "Albertus Magnus"
+  },
+  {
+   "type": "historical_person",
+   "text": "Thomas Aquinas passes. Theophrastus does not.",
+   "authors": [],
+   "role": "S-class control — documented master-student succession; admissibility benchmark",
+   "wikidata_hint": "Thomas Aquinas"
+  },
+  {
+   "type": "website",
+   "text": "Thomas Aquinas — corpusthomisticum.org, HTTP 200, structured HTML, ISO-8859-1, no OCR — FEASIBLE",
+   "url": "https://corpusthomisticum.org",
+   "role": "data source for EA-RELFORM-01 control corpus",
+   "wikidata_hint": "Corpus Thomisticum"
+  },
+  {
+   "type": "website",
+   "text": "Albert — archive.org DjVuTXT, 220 items",
+   "url": "https://archive.org",
+   "role": "data source for Albertus Magnus control corpus in EA-RELFORM-01",
+   "wikidata_hint": "Internet Archive"
+  },
+  {
+   "type": "historical_person",
+   "text": "Ibn ʿArabī→Qūnawī — S-class control candidate",
+   "authors": [],
+   "role": "S-class control candidate (unchecked) in EA-RELFORM-01",
+   "wikidata_hint": "Ibn Arabi"
+  },
+  {
+   "type": "historical_person",
+   "text": "Tsongkhapa→Khedrup — S-class control candidate",
+   "authors": [],
+   "role": "S-class control candidate (unchecked) in EA-RELFORM-01",
+   "wikidata_hint": "Tsongkhapa"
+  },
+  {
+   "type": "historical_person",
+   "text": "Maimonides→Abraham Maimonides — S-class control candidate",
+   "authors": [],
+   "role": "S-class control candidate (unchecked) in EA-RELFORM-01",
+   "wikidata_hint": "Maimonides"
+  },
+  {
+   "type": "historical_person",
+   "text": "Luther/Melanchthon — C class, distinct-author collaboration",
+   "authors": [],
+   "role": "C-class control in EA-RELFORM-01",
+   "wikidata_hint": "Martin Luther"
+  },
+  {
+   "type": "historical_person",
+   "text": "Theophrastus — M36; Theophrastus does not [pass admissibility]",
+   "authors": [],
+   "role": "failed S-class control candidate — excluded on admissibility grounds",
+   "wikidata_hint": "Theophrastus"
+  },
+  {
+   "type": "concept",
+   "text": "Maas's errores coniunctivi one level up: shared correct method proves nothing because both hypotheses predict it; what separates them is a shared arbitrary structure",
+   "title": "errores coniunctivi",
+   "authors": [
+    "Paul Maas"
+   ],
+   "role": "methodological precedent — the concept of conjunctive error applied to operational rather than textual level",
+   "wikidata_hint": "Paul Maas philologist"
+  },
+  {
+   "type": "concept",
+   "text": "Parry's criterion: the tradition reorganizes around the reconstruction with more coherence than under the alternatives",
+   "title": "Parry's criterion",
+   "authors": [
+    "Milman Parry"
+   ],
+   "role": "methodological precedent — criterion for interpretive yield",
+   "wikidata_hint": "Milman Parry"
+  },
+  {
+   "type": "manuscript",
+   "text": "Borgnet vol. 7 carries innominat- ×13, but as a gloss on NE 1107b–1108a",
+   "title": "Alberti Magni Opera Omnia, Borgnet edition, vol. 7",
+   "authors": [
+    "Albertus Magnus"
+   ],
+   "role": "source text for contamination-rule demonstration in EA-RELFORM-01",
+   "wikidata_hint": "Albertus Magnus Opera Omnia Borgnet"
+  },
+  {
+   "type": "dataset",
+   "text": "gnt-nestle1904 — New Testament, Nestle 1904 edition, included at all four levels",
+   "title": "Novum Testamentum Graece, Nestle 1904",
+   "year": 1904,
+   "role": "primary corpus — most informative case for EA-YIELD-02 multi-level analysis",
+   "wikidata_hint": "Nestle 1904 Greek New Testament"
+  },
+  {
+   "type": "historical_person",
+   "text": "the nine Attic orators … Antiphon's Tetralogies are disputed and the dispute has a definite shape; Demosthenes carries works confidently athetized",
+   "authors": [],
+   "role": "control class — EA-CORPORA-08 orator seats; comparison class for EA-UNRES-01",
+   "wikidata_hint": "Attic orators"
+  },
+  {
+   "type": "historical_person",
+   "text": "Isaeus–Demosthenes",
+   "authors": [],
+   "role": "named orator pair as flatness comparison in EA-UNRES-01",
+   "wikidata_hint": "Demosthenes orator"
+  },
+  {
+   "type": "historical_person",
+   "text": "Diotima (reported) — speaking position inside Plato's Symposium",
+   "authors": [],
+   "role": "Platonic speaking position for specification-depth analysis",
+   "wikidata_hint": "Diotima of Mantinea"
+  },
+  {
+   "type": "historical_person",
+   "text": "Socrates — every subject, every register, every dialogue; least constrained speaker",
+   "authors": [],
+   "role": "least-constrained Platonic speaking position; P2 prediction anchor",
+   "wikidata_hint": "Socrates philosopher"
+  }
+ ],
+ "wikidata_candidates": [],
+ "cha_cross_references": [],
+ "spxi_audit": {
+  "spxi_protocol": "v0.2",
+  "validated_at": "2026-09-01T22:12:42.447343+00:00",
+  "layers": {
+   "layer_1_inscription_anchors": {
+    "present": false,
+    "anchors_found": [
+     "date"
+    ],
+    "anchor_count": 1,
+    "orcid_in_body": false,
+    "creator_in_body": false,
+    "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+   },
+   "layer_2_micro_kernels": {
+    "present": false,
+    "fenced_json_blocks": 0,
+    "json_ld_context_markers": 0
+   },
+   "layer_3_content_hash": {
+    "present": true,
+    "canonical_hash": "c0e0559ba8a7134b0124075d607e94275fe8456c3c3ea09944630cc5d881d138",
+    "hash_in_body": false,
+    "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+   },
+   "layer_4_cross_signing": {
+    "present": false,
+    "cross_references_count": 0,
+    "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+   },
+   "layer_5_external_anchors": {
+    "present": true,
+    "wikidata_qid_count": 0,
+    "external_doi_count": 0,
+    "orcid_present": true
+   }
+  },
+  "overall_conformance": "partial"
+ },
+ "external_metadata_path": "/data/external-metadata/AXN-0663.json",
+ "related_deposits": [
+  1569,
+  1570
+ ],
+ "lexical_attested_none": true,
+ "concepts_attested_none": false,
+ "related_attested_none": false,
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/1571/",
+  "self_url": "https://www.alexanarch.org/data/records/1571.json",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-0663-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}
