@@ -44,7 +44,7 @@ VIEW_COUNTS_PATH = REPO_ROOT / "data" / "view-counts.json"
 NETWORK_WITNESS_PATH = REPO_ROOT / "data" / "network-witness.json"
 
 REQUEST_TIMEOUT = 30
-PAGINATION_LIMIT = 500          # GoatCounter allows up to ~1000; 500 is conservative
+PAGINATION_LIMIT = 100          # server cap for /stats/hits (spec); paginate with exclude_paths
 INTER_REQUEST_SLEEP = 0.35      # be polite to the API even from CI
 
 
@@ -88,15 +88,29 @@ def _canary(host: str, token: str) -> None:
     That distinction cost a day of misdiagnosis across three audits, so the
     error now states it rather than leaving the next reader to rediscover it.
     """
+    # 2026-09-02: the hosted API answers 404 (and 502) TRANSIENTLY — the same
+    # secret failed at 19:20Z and succeeded at 19:24Z on identical code. So a
+    # single 404 is not proof the token is gone; three in a row, spaced, is.
+    last = None
+    for attempt in range(3):
+        try:
+            _get(f"{host}/api/v0/me", token)
+            return
+        except GoatCounterError as e:
+            last = e
+            if attempt < 2 and ("HTTP 404" in str(e) or "HTTP 502" in str(e) or "HTTP 503" in str(e)):
+                time.sleep(20 * (attempt + 1))
+                continue
+            break
     try:
-        _get(f"{host}/api/v0/me", token)
+        raise last
     except GoatCounterError as e:
         msg = str(e)
         if "HTTP 404" in msg:
             raise GoatCounterError(
                 f"{msg}\n"
                 f"    DIAGNOSIS: /api/v0/me exists — unauthenticated it returns 401, not 404.\n"
-                f"    GoatCounter answers 404 for a token it does not recognise.\n"
+                f"    GoatCounter answers 404 for a token it does not recognise — but also, transiently, for a valid one (three spaced attempts all 404'd).\n"
                 f"    THE API TOKEN IS INVALID OR HAS BEEN DELETED.\n"
                 f"    FIX: {host}/user/api → create a token with 'Read statistics'\n"
                 f"         then update the GOATCOUNTER_API_KEY repository secret.\n"
@@ -110,40 +124,70 @@ def _canary(host: str, token: str) -> None:
         raise
 
 
-def _get_total(host: str, token: str) -> tuple[int, int]:
-    """/api/v0/stats/total: all-time site total. Returns (total, total_unique).
+# ── THE WINDOW (2026-09-02) ──────────────────────────────────────────────────
+# GoatCounter's /stats/total and /stats/hits are NOT all-time by default: per
+# the published API spec (https://www.goatcounter.com/api.json) `start`
+# defaults to ONE WEEK AGO and `end` to now. Every snapshot this script wrote
+# before today was therefore the trailing seven days, published as the
+# archive's all-time total, and per-record counts silently reset each week
+# (2026-09-01 snapshot: "total=838" was one week of visitors). Both endpoints
+# now get an explicit window from the archive's founding to the current hour.
+SITE_EPOCH = "2026-06-19T00:00:00Z"   # alexanarch founding; GoatCounter site predates no traffic
 
-    GoatCounter's /stats/total accepts start/end query params; omitting them
-    returns all-time totals per the API contract.
+def _window() -> dict[str, str]:
+    now = dt.datetime.now(dt.timezone.utc).replace(minute=0, second=0, microsecond=0)
+    return {"start": SITE_EPOCH, "end": now.strftime("%Y-%m-%dT%H:%M:%SZ")}
+
+
+def _get_total(host: str, token: str) -> tuple[int, int]:
+    """/api/v0/stats/total over the explicit all-time window. Returns (total, 0).
+
+    `total` is GoatCounter's count of VISITORS (its unit since v2; there is no
+    separate pageview or "unique" figure in the API). The second element is
+    kept at 0 for schema stability with consumers that read total_unique.
     """
-    data = _get(f"{host}/api/v0/stats/total", token)
+    url = f"{host}/api/v0/stats/total?{urllib.parse.urlencode(_window())}"
+    data = _get(url, token)
     total = int(data.get("total", 0))
-    total_unique = int(data.get("total_unique", data.get("total_visits", 0)))
-    return total, total_unique
+    return total, 0
 
 
 def _get_hits_all_pages(host: str, token: str) -> list[dict[str, Any]]:
-    """/api/v0/stats/hits: paginate through all paths.
+    """/api/v0/stats/hits over the all-time window, paginated the way the API
+    actually paginates.
 
-    GoatCounter's cursor field is `after`. We keep pulling until `more` is false.
+    There is no `after` cursor. The spec's mechanism is `exclude_paths` (path
+    IDs already received) with `limit` (server-capped at 100), and a `more`
+    flag. The previous single-page fetch returned exactly 100 paths and
+    stopped, so every record outside the top hundred had no count at all.
     """
     hits: list[dict[str, Any]] = []
-    after = None
+    seen_ids: list[int] = []
     page = 0
+    base = _window()
     while True:
         page += 1
-        qs: dict[str, Any] = {"limit": PAGINATION_LIMIT}
-        # Single-page mode: GoatCounter's `after` cursor param 400s on this
-        # deployment (returns dashboard HTML instead of paginated JSON). One
-        # page of PAGINATION_LIMIT covers the archive; if paths ever exceed
-        # that ceiling, revisit cursor semantics against current API docs.
+        if page > 200:
+            raise GoatCounterError("pagination runaway (>200 pages)")
+        qs: dict[str, Any] = dict(base)
+        qs["limit"] = PAGINATION_LIMIT
+        if seen_ids:
+            qs["exclude_paths"] = ",".join(str(i) for i in seen_ids)
         url = f"{host}/api/v0/stats/hits?{urllib.parse.urlencode(qs)}"
         data = _get(url, token)
         page_hits = data.get("hits", []) or []
         if not isinstance(page_hits, list):
             raise GoatCounterError(f"'hits' not a list at {url}: {type(page_hits)}")
+        if not page_hits:
+            break
         hits.extend(page_hits)
-        break
+        new_ids = [int(h["path_id"]) for h in page_hits if h.get("path_id") is not None]
+        if not new_ids:
+            break
+        seen_ids.extend(new_ids)
+        if not data.get("more"):
+            break
+        time.sleep(INTER_REQUEST_SLEEP)
     return hits
 
 
