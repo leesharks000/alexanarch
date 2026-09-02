@@ -28,7 +28,7 @@
 (function () {
   'use strict';
   var SNAPSHOT_URL = '/data/view-counts.json';
-  var CACHE_KEY = 'gc:snapshot:v2';
+  var CACHE_KEY = 'gc:snapshot:v3'; // v3 2026-09-02: bumped so browsers drop the cached 100-path, one-week snapshot
   var TTL = 6 * 3600 * 1000;  // 6h — matches the Action's cadence
   var snapshotPromise = null;
 
@@ -134,6 +134,7 @@
 
   function renderAll(snapshot) {
     document.querySelectorAll('.gc-v[data-gc]').forEach(function (el) {
+      el.setAttribute('data-gc-done', '1');
       renderOne(el, snapshot);
     });
     var tot = document.getElementById('home-views') || document.getElementById('site-views');
@@ -240,8 +241,33 @@
       apply('newest');
     }
 
-    // One snapshot fetch, apply everywhere.
-    loadSnapshot().then(renderAll);
+    // One snapshot fetch, apply everywhere — including to cards that arrive
+    // AFTER this ran. The home page renders its recent-deposit cards from an
+    // async fetch of the registry, so at DOMContentLoaded there are no cards
+    // yet; renderAll found nothing and the cards were born as em-dashes and
+    // stayed that way (2026-09-02). A MutationObserver now renders any
+    // .gc-v[data-gc] that appears later, from the same single snapshot.
+    loadSnapshot().then(function (snapshot) {
+      renderAll(snapshot);
+      if (!window.MutationObserver || !document.body) return;
+      var mo = new MutationObserver(function (muts) {
+        for (var i = 0; i < muts.length; i++) {
+          var added = muts[i].addedNodes;
+          for (var j = 0; j < added.length; j++) {
+            var n = added[j];
+            if (n.nodeType !== 1) continue;
+            if (n.matches && n.matches('.gc-v[data-gc]') && !n.hasAttribute('data-gc-done')) {
+              n.setAttribute('data-gc-done', '1'); renderOne(n, snapshot);
+            }
+            var inner = n.querySelectorAll ? n.querySelectorAll('.gc-v[data-gc]:not([data-gc-done])') : [];
+            for (var k = 0; k < inner.length; k++) {
+              inner[k].setAttribute('data-gc-done', '1'); renderOne(inner[k], snapshot);
+            }
+          }
+        }
+      });
+      mo.observe(document.body, { childList: true, subtree: true });
+    });
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
