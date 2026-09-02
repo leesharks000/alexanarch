@@ -34,7 +34,7 @@
 
   function fmt(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ','); }
   function show(el, count, suffix) {
-    el.textContent = fmt(count) + ' ' + (suffix || (count === 1 ? 'view' : 'views'));
+    el.textContent = fmt(count) + ' ' + (suffix || (count === 1 ? 'visitor' : 'visitors'));
     el.removeAttribute('title');
   }
   function showUnavailable(el) {
@@ -123,7 +123,7 @@
     if (!snapshot) return showUnavailable(el);
     var path = el.getAttribute('data-gc');
     if (path === 'TOTAL') {
-      if (typeof snapshot.total === 'number') show(el, snapshot.total, suffix || 'views site-wide');
+      if (typeof snapshot.total === 'number') show(el, snapshot.total, suffix || 'visitors site-wide');
       else showUnavailable(el);
       return;
     }
@@ -140,7 +140,7 @@
     if (tot) {
       tot.setAttribute('data-gc', 'TOTAL');
       tot.classList.add('gc-v');
-      renderOne(tot, snapshot, 'views site-wide');
+      renderOne(tot, snapshot, 'visitors site-wide');
     }
   }
 
