@@ -42,6 +42,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 CONFIG_PATH = REPO_ROOT / "data" / "goatcounter-sites.json"
 VIEW_COUNTS_PATH = REPO_ROOT / "data" / "view-counts.json"
 NETWORK_WITNESS_PATH = REPO_ROOT / "data" / "network-witness.json"
+DAILY_PATH = REPO_ROOT / "data" / "view-daily.json"
 
 REQUEST_TIMEOUT = 30
 PAGINATION_LIMIT = 100          # server cap for /stats/hits (spec); paginate with exclude_paths
@@ -149,6 +150,17 @@ def _get_total(host: str, token: str) -> tuple[int, int]:
     url = f"{host}/api/v0/stats/total?{urllib.parse.urlencode(_window())}"
     data = _get(url, token)
     total = int(data.get("total", 0))
+    # 2026-09-02: keep the per-day series the API returns alongside the total,
+    # so the dashboard's day-to-day shape (Lee observed ~150–200 one day, near
+    # zero the next) can be read from the record rather than by eye.
+    daily = [{"day": st.get("day"), "visitors": int(st.get("daily") or 0)}
+             for st in (data.get("stats") or []) if st.get("day")]
+    if daily:
+        DAILY_PATH.write_text(json.dumps({
+            "schema_version": "v1",
+            "generated_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "site": host, "window": _window(), "days": daily,
+        }, indent=1, ensure_ascii=False) + "\n")
     return total, 0
 
 
