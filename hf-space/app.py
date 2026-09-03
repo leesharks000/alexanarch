@@ -51,36 +51,36 @@ def brief(r, with_text=False):
     if with_text: d["text"] = r["text"]
     return d
 
-@app.get("/", response_class=HTMLResponse)
+@app.get("/api", response_class=HTMLResponse)
 def index():
     return f"""<!doctype html><meta charset=utf-8><title>Crimson Hexagonal Archive — machine interface</title>
 <body style="font:15px/1.6 Georgia,serif;max-width:720px;margin:2rem auto;padding:0 1rem">
 <h1 style="font-size:1.4rem">Crimson Hexagonal Archive — machine interface</h1>
 <p>Records, graph, and full-text search over the Hub dataset <a href="https://huggingface.co/datasets/{DATASET}">{DATASET}</a>. {STATE['rows']} deposits loaded {STATE['built_at']}. Canonical seat of every record: <code>https://alexanarch.org/s/records/N/</code>.</p>
 <ul>
-<li><code>GET /record/1574</code> — a deposit with its relations (add <code>?text=1</code> for the canonical text)</li>
-<li><code>GET /axn/0666</code> — the same by AXN hex</li>
-<li><code>GET /neighbours/879?hops=2</code> — the citation neighbourhood, both directions</li>
-<li><code>GET /series/1576</code> — the version/supersession chain</li>
-<li><code>GET /search?q=οὐδὲν παντελῶς&amp;n=10</code> — full-text search (FTS5, Greek-safe) over descriptions, canonical texts and recovered sources</li>
+<li><code>GET /api/record/1574</code> — a deposit with its relations (add <code>?text=1</code> for the canonical text)</li>
+<li><code>GET /api/axn/0666</code> — the same by AXN hex</li>
+<li><code>GET /api/neighbours/879?hops=2</code> — the citation neighbourhood, both directions</li>
+<li><code>GET /api/series/1576</code> — the version/supersession chain</li>
+<li><code>GET /api/search?q=οὐδὲν παντελῶς&amp;n=10</code> — full-text search (FTS5, Greek-safe) over descriptions, canonical texts and recovered sources</li>
 <li><code>GET /heteronym/johannes-sigil</code> — a Dodecad record; <code>GET /heteronyms</code> lists them</li>
-<li><code>GET /health</code></li>
+<li><code>GET /api/health</code></li>
 </ul>
 <p style="font-family:monospace;font-size:.85em">CC BY 4.0 · Lee Sharks · the archive: <a href="https://alexanarch.org">alexanarch.org</a> · node: <a href="https://alexanarch.org/.well-known/axn-node.json">axn-node.json</a></p></body>"""
 
-@app.get("/health")
+@app.get("/api/health")
 def health(): return STATE
 
-@app.get("/record/{n}")
+@app.get("/api/record/{n}")
 def record(n: int, text: int = 0): return brief(row(n), bool(text))
 
-@app.get("/axn/{hexid}")
+@app.get("/api/axn/{hexid}")
 def by_axn(hexid: str, text: int = 0):
     m = DEP[DEP.hex.str.upper() == hexid.upper()]
     if m.empty: raise HTTPException(404, f"no AXN hex {hexid}")
     return brief(m.iloc[0], bool(text))
 
-@app.get("/neighbours/{n}")
+@app.get("/api/neighbours/{n}")
 def neighbours(n: int, hops: int = Query(1, ge=1, le=3)):
     seen = {n}; frontier = {n}; edges = []
     for _ in range(hops):
@@ -93,7 +93,7 @@ def neighbours(n: int, hops: int = Query(1, ge=1, le=3)):
     nodes = {int(k): {"title": v} for k, v in DEP[DEP.deposit_number.isin(seen)].set_index("deposit_number").title.items()}
     return {"root": n, "hops": hops, "nodes": nodes, "edges": sorted({tuple(e) for e in edges})}
 
-@app.get("/series/{n}")
+@app.get("/api/series/{n}")
 def series(n: int):
     r = row(n); chain = [n]
     cur = r
@@ -105,7 +105,7 @@ def series(n: int):
     sup = {"superseded_by": (None if pd.isna(r.superseded_by) else int(r.superseded_by)), "supersedes": json.loads(r.supersedes or "[]")}
     return {"deposit": n, "version_series_id": (None if pd.isna(r.version_series_id) else r.version_series_id), "chain": chain, **sup}
 
-@app.get("/search")
+@app.get("/api/search")
 def search(q: str, n: int = Query(10, ge=1, le=100), kind: str = "any"):
     sql = "SELECT kind, key, title, snippet(ft, 3, '«', '»', ' … ', 24) AS snip, bm25(ft) AS score FROM ft WHERE ft MATCH ? "
     args = [q if any(c in q for c in '"*') else '"' + q.replace('"', '') + '"']
@@ -116,16 +116,16 @@ def search(q: str, n: int = Query(10, ge=1, le=100), kind: str = "any"):
     out = []
     for k, key, title, snip, score in rows:
         item = {"kind": k, "key": key, "title": title, "snippet": snip, "score": round(score, 3)}
-        if k == "deposit": item["record"] = f"/record/{key}"; item["seat"] = f"https://alexanarch.org/s/records/{key}/"
+        if k == "deposit": item["record"] = f"/api/record/{key}"; item["seat"] = f"https://alexanarch.org/s/records/{key}/"
         out.append(item)
     return {"query": q, "hits": out}
 
-@app.get("/heteronyms")
+@app.get("/api/heteronyms")
 def heteronyms():
     if HET.empty: return []
     return [{"person_id": r.person_id, "name": getattr(r, "name", None), "function": getattr(r, "function", None), "works_count": (None if pd.isna(getattr(r, "works_count", None)) else int(r.works_count))} for r in HET.itertuples()]
 
-@app.get("/heteronym/{pid}")
+@app.get("/api/heteronym/{pid}")
 def heteronym(pid: str):
     m = HET[HET.person_id == pid]
     if m.empty: raise HTTPException(404, pid)
@@ -136,5 +136,45 @@ def heteronym(pid: str):
             except Exception: pass
     return d
 
-@app.get("/robots.txt", response_class=PlainTextResponse)
+@app.get("/api/robots.txt", response_class=PlainTextResponse)
 def robots(): return "User-agent: *\nAllow: /\n"
+
+
+# ── Gradio panel at / (the Space's free tier runs Gradio; the API above is mounted beside it) ──
+import gradio as gr
+
+def ui_search(q, n):
+    if not q.strip(): return "Enter a query."
+    res = search(q, n=int(n))
+    if not res["hits"]: return "No hits."
+    out = []
+    for h in res["hits"]:
+        seat = f' · <a href="{h["seat"]}">seat</a>' if h.get("seat") else ""
+        out.append(f'**{h["title"]}** <small>({h["kind"]} {h["key"]}{seat})</small>\n\n{h["snippet"]}')
+    return "\n\n---\n\n".join(out)
+
+def ui_record(n):
+    try: d = brief(row(int(n)))
+    except Exception as e: return f"{e}"
+    keep = ["deposit_number","axn","title","creator","date","family","status","venue","cites","cited_by","related_deposits","series_previous","series_next","superseded_by","record_url"]
+    return "```json\n" + json.dumps({k: d.get(k) for k in keep}, ensure_ascii=False, indent=1) + "\n```\n\n" + (d.get("description") or "")
+
+with gr.Blocks(title="Crimson Hexagonal Archive — machine interface") as demo:
+    gr.Markdown("## Crimson Hexagonal Archive — machine interface\nFull-text search (Greek-safe) and record lookup over the Hub dataset "
+                f"[{DATASET}](https://huggingface.co/datasets/{DATASET}). The JSON API for agents is documented at [/api](/api). Canonical seat of every record: `https://alexanarch.org/s/records/N/`.")
+    with gr.Tab("Search"):
+        q = gr.Textbox(label="Query", placeholder="οὐδὲν παντελῶς · provenance erasure · Lies Within")
+        n = gr.Slider(1, 50, value=10, step=1, label="Hits")
+        out = gr.Markdown()
+        q.submit(ui_search, [q, n], out); gr.Button("Search").click(ui_search, [q, n], out)
+    with gr.Tab("Record"):
+        num = gr.Number(label="Deposit number", value=1574, precision=0)
+        rec = gr.Markdown()
+        num.submit(ui_record, num, rec); gr.Button("Look up").click(ui_record, num, rec)
+    gr.Markdown("<small>CC BY 4.0 · Lee Sharks · [alexanarch.org](https://alexanarch.org) · [axn-node.json](https://alexanarch.org/.well-known/axn-node.json)</small>")
+
+app = gr.mount_gradio_app(app, demo, path="/")
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=int(os.environ.get("PORT", 7860)))
