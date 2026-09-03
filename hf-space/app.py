@@ -142,6 +142,13 @@ def robots(): return "User-agent: *\nAllow: /\n"
 
 # ── Gradio panel at / (the Space's free tier runs Gradio; the API above is mounted beside it) ──
 import gradio as gr
+try:
+    import spaces  # ZeroGPU hardware requires at least one @spaces.GPU function to exist; this app never uses the GPU
+    @spaces.GPU(duration=1)
+    def _zerogpu_declaration():
+        return "cpu-only app; GPU never requested"
+except Exception:
+    pass
 
 def ui_search(q, n):
     if not q.strip(): return "Enter a query."
