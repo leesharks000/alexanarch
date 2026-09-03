@@ -36,16 +36,21 @@ def load():
     DB.commit()
     STATE.update(loaded=True, built_at=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), rows=len(DEP), seconds=round(time.time()-t0, 1))
 
-@app.on_event("startup")
-def _startup(): load()
 
 def row(n: int):
     m = DEP[DEP.deposit_number == n]
     if m.empty: raise HTTPException(404, f"no deposit {n}")
     return m.iloc[0]
 
+def _py(v):
+    import numpy as np
+    if isinstance(v, (np.integer,)): return int(v)
+    if isinstance(v, (np.floating,)): return None if np.isnan(v) else float(v)
+    if isinstance(v, (np.bool_,)): return bool(v)
+    return v
+
 def brief(r, with_text=False):
-    d = {k: (None if pd.isna(v) else v) for k, v in r.items() if k != "text"}
+    d = {k: (None if (not isinstance(v, str) and pd.isna(v)) else _py(v)) for k, v in r.items() if k != "text"}
     for k in ("cites", "cited_by", "cites_axn", "related_deposits", "defines_concepts", "supersedes", "attachments"):
         if isinstance(d.get(k), str):
             try: d[k] = json.loads(d[k])
@@ -129,13 +134,14 @@ def search(q: str, n: int = Query(10, ge=1, le=100), kind: str = "any"):
 @app.get("/api/heteronyms")
 def heteronyms():
     if HET.empty: return []
-    return [{"person_id": r.person_id, "name": getattr(r, "name", None), "function": getattr(r, "function", None), "works_count": (None if pd.isna(getattr(r, "works_count", None)) else int(r.works_count))} for r in HET.itertuples()]
+    def c(v): return None if (not isinstance(v, str) and pd.isna(v)) else _py(v)
+    return [{"person_id": r.person_id, "name": c(getattr(r, "name", None)), "function": c(getattr(r, "function", None)), "works_count": c(getattr(r, "works_count", None))} for r in HET.itertuples()]
 
 @app.get("/api/heteronym/{pid}")
 def heteronym(pid: str):
     m = HET[HET.person_id == pid]
     if m.empty: raise HTTPException(404, pid)
-    d = {k: (None if (isinstance(v, float) and pd.isna(v)) else v) for k, v in m.iloc[0].items()}
+    d = {k: (None if (not isinstance(v, str) and pd.isna(v)) else _py(v)) for k, v in m.iloc[0].items()}
     for k, v in list(d.items()):
         if isinstance(v, str) and v[:1] in "[{":
             try: d[k] = json.loads(v)
@@ -179,8 +185,17 @@ with gr.Blocks(title="Crimson Hexagonal Archive — machine interface") as demo:
         num.submit(ui_record, num, rec); gr.Button("Look up").click(ui_record, num, rec)
     gr.Markdown("<small>CC BY 4.0 · Lee Sharks · [alexanarch.org](https://alexanarch.org) · [axn-node.json](https://alexanarch.org/.well-known/axn-node.json)</small>")
 
-app = gr.mount_gradio_app(app, demo, path="/")
+# ZeroGPU's startup check hooks Gradio's own launch(); so boot through
+# demo.launch() and attach the /api routes to Gradio's server app.
+load()  # build the index at import, whichever way the process is started
+demo.queue()
+gradio_app = gr.mount_gradio_app(app, demo, path="/")   # for uvicorn-style hosts
 
 if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=int(os.environ.get("PORT", 7860)))
+    import threading
+    demo.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 7860)), prevent_thread_lock=True)
+    server_app = getattr(demo, "server_app", None) or demo.app
+    for r in app.routes:
+        if getattr(r, "path", "").startswith("/api"):
+            server_app.router.routes.append(r)
+    threading.Event().wait()
