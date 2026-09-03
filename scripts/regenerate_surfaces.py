@@ -76,7 +76,7 @@ except ImportError:
     _OVERWRITE_GUARD_AVAILABLE = False
 
 HOMEPAGE_RECENT_N = 12  # must equal the JS slice in index.html
-ALL_SURFACES = ["state", "browse", "feed", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index", "search-index", "search-static", "capture-gallery", "record-api", "dynamic-counts", "semantic-addresses"]
+ALL_SURFACES = ["state", "browse", "browse-sections", "feed", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index", "search-index", "search-static", "capture-gallery", "record-api", "dynamic-counts", "semantic-addresses"]
 
 
 def _version_label(version: str) -> tuple:
@@ -156,6 +156,7 @@ BROWSE_HEADER = """<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><m
 <nav class="nav">__NAVBAR_TOKEN__</nav>
 <h1 style="font-size:1.4em;font-weight:600;color:var(--accent);margin-bottom:4px">Complete Deposit Registry</h1>
 <div id="browse-meta" data-total="{total}" data-rendered="{rendered}" data-folded="{folded}" style="color:#777;font-size:.88em;margin-bottom:16px">{total_c} deposits · {rendered_c} shown, {folded_c} earlier versions folded under their series heads · sorted by deposit number, oldest first · for newest see <a href="/">home page</a></div>
+<div style="font-size:.86em;margin:-6px 0 10px">Browse in sections: <a href="/s/browse/month/" style="color:var(--teal)">by month</a> · <a href="/s/browse/family/" style="color:var(--teal)">by family</a> · <a href="/s/browse/venue/" style="color:var(--teal)">by venue</a> — smaller pages, each with abstracts.</div>
 <div style="color:#999;font-size:.8em;margin:-10px 0 16px">The date shown is <b>the work\u2019s date</b>, not the deposit\u2019s. A work made earlier and deposited later sorts by when it was <i>made</i> \u2014 so <b>recently deposited</b> orders by mint instead.</div>
 """
 
@@ -359,6 +360,16 @@ def regenerate_browse(reg, dry_run=False):
 # ──────────────────────────────────────────────────────────────────────────────
 # Surface 2: data/browse-index.json
 # ──────────────────────────────────────────────────────────────────────────────
+
+def regenerate_browse_sections(reg, dry_run=False):
+    """WS1 (2026-09-03): paginated browse sections beside the monolith — family / month /
+    venue pages of ≤60 records with descriptions, self-canonical, in the sitemap. The
+    monolith's machine contract is untouched. See scripts/build_browse_sections.py."""
+    if dry_run:
+        print("  [DRY] would rebuild s/browse/{family,month,venue}/"); return
+    from scripts.build_browse_sections import build
+    build()
+
 
 def regenerate_browse_index(reg, dry_run=False):
     """Rebuild data/browse-index.json — compact deposit list for tools."""
@@ -696,6 +707,11 @@ def regenerate_sitemap(reg, dry_run=False):
         # but no longer competes with /s/records/N/ as an independent crawl
         # target. (Supersedes the 2026-07-17 regression note: the paper layer
         # is preserved by record-page links + /papers/ directory, not sitemap.)
+    # WS1: paginated browse sections (self-canonical pages; lastmod = today, they regenerate with the registry)
+    sec = REPO_ROOT / "data" / "browse-sections-urls.json"
+    if sec.exists():
+        for u in json.loads(sec.read_text()).get("urls", []):
+            lines.append(f'  <url><loc>{esc_xml(u)}</loc><lastmod>{today}</lastmod><priority>0.6</priority></url>')
     lines.append("</urlset>")
     out = "\n".join(lines) + "\n"
 
@@ -1775,6 +1791,7 @@ This is the static, crawler-readable projection of the series-prefix table. Ever
 SURFACE_FNS = {
     "state": regenerate_state,
     "browse": regenerate_browse,
+    "browse-sections": regenerate_browse_sections,
     "browse-index": regenerate_browse_index,
     "hex-to-deposit": regenerate_hex_to_deposit,
     "chunks": regenerate_chunks,

@@ -264,3 +264,5 @@ jobs:
               issue_number: context.issue.number,
               body: body
             });
+      - name: Browse sections agree with the registry (WS1 gate)
+        run: python3 scripts/build_browse_sections.py --check
