@@ -1,0 +1,21 @@
+name: Record-search probe (weekly)
+on:
+  schedule:
+    - cron: '45 6 * * 4'   # Thursdays 06:45 UTC
+  workflow_dispatch: {}
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    permissions: { contents: write }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - env:
+          BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
+        run: python3 scripts/probe_record_search.py
+      - run: |
+          git config user.name "record-search probe" && git config user.email "probe@alexanarch.org"
+          git add data/probes/record-search/
+          git diff --cached --quiet || git commit -m "probe: record-search cohort $(date -u +%F)"
+          git push
