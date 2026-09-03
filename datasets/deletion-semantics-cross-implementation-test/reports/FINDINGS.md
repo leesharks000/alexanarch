@@ -157,3 +157,38 @@ Two findings in this package have the same shape at adjacent boundaries:
 
 Both are cases of a negative result being read as a positive assurance. The repair in each case is
 the same in kind: make the missing thing *say so* on a surface the consumer already reads.
+
+
+---
+
+## 8. The producer's own repair, live — v1.1, 2026-09-03
+
+On 2026-09-01 @andrewcrenshaw shipped the repair that §6 had tested as a construction, at
+`55e6493945a51c77e8a002630dc4890e90d7123e`, and tagged the state this package was derived from
+as `pre-absence-records` (`ea18185f`), so `source-lock.json` and `reproduce.sh` keep resolving.
+Run 08 reads the producer's real `.manifest.json` at that commit with **no translation layer** and
+re-asks §4–§6's three questions.
+
+**Separability holds on the machine surface alone.** A → `present`, B → `removed` (with date,
+reason, recorded_by, successor), C → `never_landed`. The trio §4 constructed is now a real
+producer instance. The corpus's B(ii) case (`okf-abc-removed-prose-004`) closes its observed
+interval at this commit; v2.2 records the closure and instantiates B(i) and C.
+
+**The absences map is necessary.** Strip it and B and C collapse to the same value again, exactly
+as §5 found for the constructed index.
+
+**One level up, the reconciliation key does what the producer said it would.** `absenceReconciliation
+{status: ok, parsedCount: 3}` lets a consumer tell an empty map from an unexamined bundle; remove
+the key and an absent id becomes `unknown (pass not run)` rather than a default reading. The corpus
+v2.2 adds two cases for this (`okf-recon-ran-empty-005`, must-not-mark; `okf-recon-not-run-006`,
+must report `pass_not_run`), and its reference consumer now reads the key; the v2.1-era consumer
+false-positives on the second, which is the point.
+
+**One new finding.** `entries` is keyed by bare lesson id (`okf-conformance-fixture-001`);
+`absences` by full URI (`remember://lesson/okf-conformance-fixture-001`). Same stable identity,
+two key forms in one document. The exclusivity rule the producer adopted — an id in one map and
+never the other — is only testable after a consumer normalises, and a consumer that does not
+will read every absence as exclusive trivially. Not a deletion-semantics defect; a
+keying-consistency one, and cheap to fix on either side. Reported to the producer with this run.
+
+Everything in run 08 is stdlib, pinned, and in `commands/reproduce.sh`.

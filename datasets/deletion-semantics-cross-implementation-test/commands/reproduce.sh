@@ -25,3 +25,8 @@ echo "== 05/06 necessity + sufficiency =="
 python3 translator/repair.py
 echo "== 07 corpus tombstone fit =="
 python3 translator/tomb.py
+echo "== 08 the producer's own repair, live (v1.1, 2026-09-03) =="
+git -C remember-okf-sample-bundle fetch -q --tags && git -C remember-okf-sample-bundle checkout -q 55e6493945a51c77e8a002630dc4890e90d7123e
+(cd remember-okf-sample-bundle && sha256sum -c SHA256SUMS)
+python3 translator/live_repair.py remember-okf-sample-bundle
+git -C remember-okf-sample-bundle checkout -q pre-absence-records

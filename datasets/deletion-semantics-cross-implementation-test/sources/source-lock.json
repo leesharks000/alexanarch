@@ -1,14 +1,15 @@
 {
  "package": "deletion-semantics-cross-implementation-test",
- "version": "1.0",
- "retrieved": "2026-08-26",
+ "version": "1.1",
+ "retrieved": "2026-09-03",
  "sources": {
   "producer_bundle": {
    "repo": "andrewcrenshaw/remember-okf-sample-bundle",
    "commit": "ea18185f49948a6832e052a1f0c9c6a935076b95",
    "url": "https://github.com/andrewcrenshaw/remember-okf-sample-bundle",
    "role": "remember/0.2 emitted shape: log.md, store records, .manifest.json, tombstones.md",
-   "integrity": "all 7 files verified against the bundle's published SHA256SUMS; 0 mismatches"
+   "integrity": "all 7 files verified against the bundle's published SHA256SUMS; 0 mismatches",
+   "tag_pre_repair": "pre-absence-records"
   },
   "consumer_checker": {
    "repo": "inkxel/throughline",
@@ -19,9 +20,18 @@
   },
   "corpus": {
    "name": "deletion-conformance-fixture",
-   "version": "2.1",
-   "cases": 111,
-   "url": "https://www.alexanarch.org/datasets/deletion-conformance-fixture/cases.json"
+   "version": "2.3",
+   "cases": 119,
+   "url": "https://www.alexanarch.org/datasets/deletion-conformance-fixture/cases.json",
+   "note": "v2.1 (111 cases) retained as cases-v2.1.json; runs 01\u201307 were made against it and are unchanged"
+  },
+  "producer_bundle_repaired": {
+   "repo": "andrewcrenshaw/remember-okf-sample-bundle",
+   "commit": "55e6493945a51c77e8a002630dc4890e90d7123e",
+   "url": "https://github.com/andrewcrenshaw/remember-okf-sample-bundle",
+   "role": "the producer's own repair (2026-09-01): .manifest.json carries absences (removed | never_landed) exclusive with entries, plus absenceReconciliation",
+   "integrity": "bundle SHA256SUMS at this commit verified in run 08",
+   "non_absence_change": "generated.by human:b26589eb -> human:1c8998e4 (deterministic fallback); log.md, tombstones.md and the observed concept page byte-identical to ea18185f"
   }
  },
  "parameters": {
