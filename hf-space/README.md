@@ -1,6 +1,6 @@
 ---
 title: Crimson Hexagonal Archive — machine interface
-emoji: ⬡
+emoji: 🔺
 colorFrom: red
 colorTo: gray
 sdk: gradio
