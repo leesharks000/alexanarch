@@ -37,14 +37,14 @@ overflow-wrap:anywhere}
 <div class="sub">dataset &middot; v1.0 &middot; 2026-08-26 &middot; 41 files &middot; CC BY 4.0</div>
 <p class="lede">A recorded removal and a never-landed write are observationally identical at the consumer boundary. Exposing the absence assertion on a machine-readable discovery surface is necessary and sufficient to separate them.</p>
 
-<div class="note">Fulfils the cross-test offered on <a href="https://github.com/GoogleCloudPlatform/knowledge-catalog/issues/207">knowledge-catalog#207</a>. Three artifacts, none modified, none authored by the same party. Read <a href="reports/FINDINGS.md"><strong>FINDINGS.md</strong></a> first; reproduce from clean clones with <a href="commands/reproduce.sh">reproduce.sh</a>; every pin is in <a href="sources/source-lock.json">source-lock.json</a>. Tests <a href="/datasets/deletion-conformance-fixture/">the 111-case corpus</a> next door.</div>
+<div class="note">Fulfils the cross-test offered on <a href="https://github.com/GoogleCloudPlatform/knowledge-catalog/issues/207">knowledge-catalog#207</a>. Three artifacts, none modified, none authored by the same party. Read <a href="reports/FINDINGS.md"><strong>FINDINGS.md</strong></a> first (v1.1, 2026-09-03: &sect;8 reads the producer&rsquo;s own repair live at <code>55e6493</code> &mdash; separable, necessary, reconciliation-distinguished, one keying finding); reproduce from clean clones with <a href="commands/reproduce.sh">reproduce.sh</a>; every pin is in <a href="sources/source-lock.json">source-lock.json</a>. Tests <a href="/datasets/deletion-conformance-fixture/">the 111-case corpus</a> next door.</div>
 
 <h2>The three artifacts</h2>
 <table>
 <tr><th></th><th>artifact</th><th>role</th></tr>
 <tr><td>producer</td><td><a href="https://github.com/andrewcrenshaw/remember-okf-sample-bundle">remember-okf-sample-bundle</a> <code>ea18185f</code></td><td>remember/0.2 emitted shape — log, store, manifest, tombstones</td></tr>
 <tr><td>consumer</td><td><a href="https://github.com/inkxel/throughline">throughline</a> <code>c512e8b9</code> · <code>never_landed.py</code></td><td>assertion-consistency checker</td></tr>
-<tr><td>corpus</td><td><a href="/datasets/deletion-conformance-fixture/">deletion-conformance-fixture</a></td><td>111 cases at v2.1, used here; <strong>v2.2 adds six cases in response to this test</strong></td></tr>
+<tr><td>corpus</td><td><a href="/datasets/deletion-conformance-fixture/">deletion-conformance-fixture</a></td><td>111 cases at v2.1, used in runs 01–07; <strong>v2.2 added six cases in response to this test; v2.3 (2026-09-03) annotates the producer&rsquo;s shipped repair and adds two reconciliation cases</strong></td></tr>
 </table>
 
 <h2>The collision</h2>

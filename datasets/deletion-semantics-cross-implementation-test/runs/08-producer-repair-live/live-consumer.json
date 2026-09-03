@@ -1,0 +1,59 @@
+{
+ "manifest_keys": [
+  "version",
+  "compiledAt",
+  "lastFullCompile",
+  "lastIncrementalCompile",
+  "totalPages",
+  "entries",
+  "absences",
+  "absenceReconciliation",
+  "stats"
+ ],
+ "commit_expected": "55e6493945a51c77e8a002630dc4890e90d7123e",
+ "1_separability_live": {
+  "A": "present",
+  "B": "removed",
+  "C": "never_landed"
+ },
+ "1_B_record": {
+  "id": "remember://lesson/okf-conformance-tombstoned-000",
+  "presence": "removed",
+  "date": "2026-07-20T00:00:00.000Z",
+  "reason": "curation",
+  "recorded_by": "curator-conformance",
+  "successor": "remember://lesson/okf-conformance-fixture-001"
+ },
+ "1_exclusive_with_entries_after_normalisation": true,
+ "4_key_form_mismatch": {
+  "entries_keys": [
+   "okf-conformance-fixture-001",
+   "okf-conformance-asserted-003"
+  ],
+  "absences_keys": [
+   "remember://lesson/okf-conformance-never-landed-999",
+   "remember://lesson/okf-conformance-tombstoned-000"
+  ],
+  "note": "entries keyed by bare lessonId, absences by full remember:// URI; same identity, two forms. Exclusivity is only testable after normalisation."
+ },
+ "2_necessity_strip_absences": {
+  "A": "present",
+  "B": "unwritten(default)",
+  "C": "unwritten(default)"
+ },
+ "2_B_C_collapse_when_stripped": true,
+ "3_reconciliation_key": {
+  "status": "ok",
+  "parsedCount": 3
+ },
+ "3_without_reconciliation": {
+  "B": "unknown(pass not run)",
+  "C": "unknown(pass not run)"
+ },
+ "verdict": {
+  "separable_from_machine_surface": true,
+  "key_forms_uniform_across_maps": false,
+  "absences_necessary": true,
+  "reconciliation_distinguishes_empty_from_unexamined": true
+ }
+}

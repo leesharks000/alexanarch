@@ -8,6 +8,11 @@ is indistinguishable from a write that never landed.
 REPAIRED adds one lookup — before assigning never_landed, ask whether a surviving absence
 assertion is reachable on the discovery surface. That is the whole difference.
 
+v2.2 (2026-09-03) adds the collision one level up, from the producer's own experience of
+building the repair (knowledge-catalog#207, open-knowledge-format#11): an empty absences map
+means "nothing removed" only if a sibling reconciliation key says the pass ran; without it the
+consumer must emit a third state, pass_not_run, and never "clean".
+
 Run: python3 reference_verdict.py           MIT.
 """
 import json, sys
@@ -52,8 +57,25 @@ def absence_assertion_reachable(case):
         return True
     return None
 
+def reconciliation_state(case):
+    """v2.2 (2026-09-03): the collision one level up. An empty absences map with a
+    reconciliation key of status ok is a clean examined corpus; without the key, nobody
+    looked. The fixture states this in recorded.declared_state; a live consumer would read
+    the producer's absenceReconciliation key (remember/0.2 at 55e6493)."""
+    ds = ((case.get("recorded") or {}).get("declared_state") or "").lower()
+    if "absencereconciliation status ok" in ds:
+        return "ran"
+    if "absencereconciliation absent" in ds or "not ok" in ds:
+        return "not_run"
+    return None
+
 def repaired(case):
     v = unrepaired(case)
+    rs = reconciliation_state(case)
+    if rs == "not_run":
+        return "pass_not_run"                                  # a third state, never 'clean', never never_landed
+    if rs == "ran" and v is None:
+        return None                                            # clean, examined
     if v != "never_landed":
         return v
     reach = absence_assertion_reachable(case)

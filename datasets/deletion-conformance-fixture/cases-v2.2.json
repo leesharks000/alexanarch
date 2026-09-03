@@ -2,7 +2,7 @@
  "$schema": "https://www.alexanarch.org/datasets/deletion-conformance-fixture/deletion-fixture.schema.json",
  "name": "Deletion Semantics Conformance Fixture",
  "version": "2.2",
- "date": "2026-09-03",
+ "date": "2026-08-26",
  "license": "CC0-1.0 (dataset) / MIT (scripts)",
  "ratified_axes": "validity / presence / edges per knowledge-catalog#207 (2026-07-27); presence sparse: removed | never_landed | no marker; every axis value names its subject (axis_subject); no axis populated from evidence belonging to another",
  "derived_from": "Zenodo DOI Resolution Index (current, 1,937 mappings; envelope layer as recorded state) + Alexanarch registry + dated repair artifacts",
@@ -103,10 +103,8 @@
    "added": 4
   }
  },
- "total_cases": 119,
+ "total_cases": 117,
  "classes": {
-  "absence_pass_not_run": 1,
-  "absence_pass_ran_empty": 1,
   "acknowledged_registered_late": 1,
   "acknowledged_then_silent": 1,
   "concept_root_severed_version_survives": 8,
@@ -4324,8 +4322,7 @@
    "expected": {
     "emit_presence": null,
     "must_not_mark_never_landed": true
-   },
-   "observed_2026_09_03": "present at both states; one non-absence field moved between them (generated.by: human:b26589eb -> human:1c8998e4, a deterministic fallback replacing an unreproducible session id) — recorded so a diff of the two publications is not read as a presence change"
+   }
   },
   {
    "case_class": "removed_absence_on_discovery_surface",
@@ -4367,14 +4364,6 @@
     "preserve_reason": true,
     "follow_successor": true,
     "require_absence_on_discovery_surface": true
-   },
-   "observed_2026_09_03": "real producer instance: remember://lesson/okf-conformance-tombstoned-000 appears in .manifest.json absences as presence: removed (date 2026-07-20, reason curation, recorded_by curator-conformance, successor okf-conformance-fixture-001) and nowhere in entries; no generated page",
-   "producer_instance": {
-    "producer": "andrewcrenshaw/remember-okf-sample-bundle",
-    "commit": "55e6493945a51c77e8a002630dc4890e90d7123e",
-    "id": "remember://lesson/okf-conformance-tombstoned-000",
-    "surface": "bundle/.manifest.json#absences",
-    "exclusive_with_entries": true
    }
   },
   {
@@ -4420,15 +4409,6 @@
     "require_absence_on_discovery_surface": true,
     "known_collision_with": "never_landed_matched",
     "note": "a consumer that emits never_landed here has reproduced the cross-implementation collision"
-   },
-   "observed_2026_09_03": "interval closed: at 55e64939 the producer's .manifest.json carries an absences map keyed by stable id; the removal that at ea18185f (tag pre-absence-records) survived only in tombstones.md prose is now asserted on the machine-readable discovery surface as presence: removed with date, reason, recorded_by, successor",
-   "producer_instance": {
-    "producer": "andrewcrenshaw/remember-okf-sample-bundle",
-    "state_derived_from": "ea18185f49948a6832e052a1f0c9c6a935076b95",
-    "tag": "pre-absence-records",
-    "interval_closed_at": "55e6493945a51c77e8a002630dc4890e90d7123e",
-    "closed_by": "producer repair, knowledge-catalog#207 2026-09-01",
-    "prose_files_byte_identical_across_states": true
    }
   },
   {
@@ -4460,13 +4440,6 @@
    "expected": {
     "emit_presence": "never_landed",
     "check_assertion_at_source": true
-   },
-   "observed_2026_09_03": "real producer instance: remember://lesson/okf-conformance-never-landed-999 appears in .manifest.json absences as presence: never_landed (no date/reason — asserted absence, not a removal); log.md still carries the write-claim",
-   "producer_instance": {
-    "producer": "andrewcrenshaw/remember-okf-sample-bundle",
-    "commit": "55e6493945a51c77e8a002630dc4890e90d7123e",
-    "id": "remember://lesson/okf-conformance-never-landed-999",
-    "surface": "bundle/.manifest.json#absences"
    }
   },
   {
@@ -4531,78 +4504,6 @@
     "must_not_mark_never_landed": true,
     "must_not_score_latency_as_absence": true
    }
-  },
-  {
-   "case_class": "absence_pass_ran_empty",
-   "identifier": "okf-recon-ran-empty-005",
-   "observed_2026_09_03": "a bundle whose absences map is empty AND whose absenceReconciliation reads status ok with a parsedCount — the pass ran and found nothing removed",
-   "identifier_kind": "declared_path",
-   "work_title": "absence pass ran, nothing absent (must-not-mark)",
-   "axes": {
-    "presence": null,
-    "validity": "unassessed",
-    "note": "presence deliberately UNMARKED: nothing is absent. The case exists to make the reconciliation key load-bearing — the twin of registry_update_not_landed one level up."
-   },
-   "expected_consumer_verdict": "clean corpus; must NOT be marked as unexamined",
-   "recorded": {
-    "declared_in": "producer machine-readable index (.manifest.json)",
-    "declared_state": "absences map empty; absenceReconciliation status ok with parsedCount",
-    "discovery_surface": "the pass ran and asserted nothing removed",
-    "observed_condition": "remember/0.2 bundle at 55e6493 carries absenceReconciliation {status ok, parsedCount 3}; this case is that key with an empty map",
-    "convention": "matched convention: producer-controlled identity, filenames diverging from stable ids, one write-claim log, one machine-readable index carrying an absences map and a sibling absenceReconciliation key, prose removal record"
-   },
-   "convention": "matched convention; sibling absenceReconciliation key present",
-   "reason": {
-    "actor": "producer",
-    "reason": "none"
-   },
-   "axis_subject": {
-    "kind": "bundle",
-    "identifier": "okf-recon-ran-empty-005"
-   },
-   "test": "must-not-mark: a consumer reading an empty absences map WITH a reconciliation key of status ok must report a clean corpus, not an unexamined one.",
-   "expected": {
-    "emit_presence": null,
-    "must_not_mark_never_landed": true,
-    "must_read_reconciliation_key": true,
-    "verdict": "clean"
-   }
-  },
-  {
-   "case_class": "absence_pass_not_run",
-   "identifier": "okf-recon-not-run-006",
-   "observed_2026_09_03": "a bundle whose absences map is empty and whose absenceReconciliation is absent or not status ok — nobody looked; emptiness is not evidence of preservation",
-   "identifier_kind": "declared_path",
-   "work_title": "absence pass did not run (empty map is not a finding)",
-   "axes": {
-    "presence": null,
-    "validity": "unassessed",
-    "note": "presence UNMARKED because unknown: the consumer cannot assert removed, never_landed, or clean. The correct output is a third state, 'absence pass not run'."
-   },
-   "expected_consumer_verdict": "cannot conclude; the consumer must report 'absence pass not run', not 'clean'",
-   "recorded": {
-    "declared_in": "producer machine-readable index (.manifest.json)",
-    "declared_state": "absences map empty; absenceReconciliation absent or status not ok",
-    "discovery_surface": "no evidence the pass ran; emptiness carries no information",
-    "observed_condition": "the pre-repair bundle at ea18185f (tag pre-absence-records) had no absences map and no reconciliation key — indistinguishable from a clean examined corpus",
-    "convention": "matched convention: producer-controlled identity, filenames diverging from stable ids, one write-claim log, one machine-readable index carrying an absences map and a sibling absenceReconciliation key, prose removal record"
-   },
-   "convention": "matched convention; sibling absenceReconciliation key missing",
-   "reason": {
-    "actor": "producer",
-    "reason": "pass_not_run"
-   },
-   "axis_subject": {
-    "kind": "bundle",
-    "identifier": "okf-recon-not-run-006"
-   },
-   "test": "a consumer reading an empty absences map WITHOUT a reconciliation key must report 'absence pass not run', never 'clean'. Absence of an alarm is not evidence of preservation.",
-   "expected": {
-    "emit_presence": null,
-    "must_not_mark_never_landed": true,
-    "must_read_reconciliation_key": true,
-    "verdict": "pass_not_run"
-   }
   }
  ],
  "v2_1_limitation_ledger": "v2.1 held 111 cases with exactly ONE never_landed case, and every fully expressible presence value was 'removed'. The cross-implementation test of 2026-08-26 turned on the removed/never_landed distinction and found that the fixture built to test it barely represented it. v2.2 adds six cases in response. This ledger exists so v2.1 is not read retroactively as having tested more than it did.",
@@ -4617,8 +4518,7 @@
    "known_collision_with"
   ],
   "new_recorded_key": "discovery_surface — where, if anywhere, a surviving absence assertion is machine-readable",
-  "derived_from": "https://www.alexanarch.org/datasets/deletion-semantics-cross-implementation-test/",
-  "producer_instances_2026_09_03": "On 2026-09-01 the producer (andrewcrenshaw/remember-okf-sample-bundle) shipped the repair the cross-test validated, at 55e6493945a51c77e8a002630dc4890e90d7123e, and tagged the pre-repair state pre-absence-records at ea18185f49948a6832e052a1f0c9c6a935076b95. The matched trio A/B(i)/B(ii)/C now has real producer instances rather than constructed ones: B(ii)'s observed interval is closed, B(i) and C are instantiated on the machine-readable surface. Two further cases record the collision one level up that building the repair surfaced: an empty absences map with the reconciliation key (must-not-mark) and without it (cannot conclude)."
+  "derived_from": "https://www.alexanarch.org/datasets/deletion-semantics-cross-implementation-test/"
  },
  "v2_2_conformance_note": "v2.2 is the first discriminating cut against the current reference implementation: the UNREPAIRED reference consumer fails the fixture; a repaired consumer differing by one absence-record lookup passes it. Reference results, reference_verdict.py: unrepaired — 3 true positives, 2 false positives, must-not-mark FAILED; repaired — 3 true positives, 0 false positives, must-not-mark passed. v2.1 did not contain a case that forced the removed-versus-never-landed distinction at the discovery surface, so the reference consumer could pass without implementing that lookup.",
  "observation_convention_note": "The observation convention was load-bearing for the reference verifier and was not explicit in this corpus's schema. 110 of 111 v2.1 cases carry a top-level observed_<date> field; the one exception is a must-not-mark case whose observation sits in recorded.observed_condition, so no tool ever had to read it. Six cases authored in that form during the v2.2 cut were invisible to the verifier until changed. Repaired at schema level rather than noted: deletion-fixture.schema.json now declares observation_convention — canonical location, permitted alternate, and a MUST that conforming tooling normalize both. reference_verdict.py implements the rule."
