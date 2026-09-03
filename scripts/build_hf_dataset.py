@@ -156,8 +156,29 @@ def _jsonl(p):
             df[c] = df[c].apply(lambda v: json.dumps(v, ensure_ascii=False) if isinstance(v, (list, dict)) else v)
     return df
 
-def heteronyms():   # the Dodecad and its adjacent/outside figures, with voice signatures and roles
-    return _jsonl('datasets/heteronyms/heteronyms.jsonl')
+def heteronyms():
+    """One row per identity from the canonical store datasets/heteronyms/records/*.json —
+    the full-fidelity research records (written once, never compressed; corrections and
+    false leads kept) — joined to corpus.json (the works each made) and crosswalk.json
+    (citation degree, minted terms, concept membership). heteronyms.jsonl is only the
+    compressed index of these and is not used."""
+    recs = []
+    store = ROOT/'datasets/heteronyms/records'
+    corpus = json.load(open(ROOT/'datasets/heteronyms/corpus.json')).get('heteronyms', {})
+    cw = json.load(open(ROOT/'datasets/heteronyms/crosswalk.json')).get('positions', {})
+    for f in sorted(store.glob('*.json')):
+        r = json.load(open(f, encoding='utf-8'))
+        pid = r.get('person_id') or f.stem
+        row = {'person_id': pid}
+        for k, v in r.items():
+            row[k] = json.dumps(v, ensure_ascii=False) if isinstance(v, (list, dict)) else v
+        c = corpus.get(pid) or {}
+        row['works'] = json.dumps(c.get('works') if isinstance(c.get('works'), list) else c, ensure_ascii=False)
+        row['works_count'] = c.get('deposits') if isinstance(c, dict) else None
+        x = cw.get(pid) or {}
+        row['crosswalk'] = json.dumps(x, ensure_ascii=False)
+        recs.append(row)
+    return pd.DataFrame(recs)
 
 def venues():       # the archive's own journals and presses (venue registry)
     v = json.load(open(ROOT/'datasets/venues/venues.json'))
