@@ -48,7 +48,11 @@ def deposits():
             'record_url': f"https://alexanarch.org/s/records/{d['deposit_number']}/",
             'text': text, 'text_sha256': sha(text) if text else None, 'text_words': len(text.split()) if text else 0,
         })
-    return pd.DataFrame(rows)
+    df = pd.DataFrame(rows)
+    ja = _jsonl('datasets/journals/assignments.jsonl')
+    if not ja.empty and 'deposit' in ja.columns:
+        df = df.merge(ja[['deposit','journal']].rename(columns={'deposit':'deposit_number','journal':'venue'}), on='deposit_number', how='left')
+    return df
 
 def captures():
     p = ROOT/'data/EA-WG-CAPTURES-01.json'   # the Capture Registry, current head
@@ -105,6 +109,50 @@ def sites(fleet_dir):
                          'text': text, 'text_sha256': sha(text), 'text_words': len(text.split())})
     return pd.DataFrame(rows)
 
+
+def _jsonl(p):
+    p = ROOT/p
+    if not p.exists(): return pd.DataFrame()
+    rows = [json.loads(l) for l in p.read_text(encoding='utf-8').splitlines() if l.strip()]
+    df = pd.DataFrame(rows)
+    for c in df.columns:
+        if df[c].apply(lambda v: isinstance(v, (list, dict))).any():
+            df[c] = df[c].apply(lambda v: json.dumps(v, ensure_ascii=False) if isinstance(v, (list, dict)) else v)
+    return df
+
+def heteronyms():   # the Dodecad and its adjacent/outside figures, with voice signatures and roles
+    return _jsonl('datasets/heteronyms/heteronyms.jsonl')
+
+def venues():       # the archive's own journals and presses (venue registry)
+    v = json.load(open(ROOT/'datasets/venues/venues.json'))
+    df = pd.DataFrame(v.get('journals') or [])
+    for c in df.columns:
+        if df[c].apply(lambda x: isinstance(x, (list, dict))).any():
+            df[c] = df[c].apply(lambda x: json.dumps(x, ensure_ascii=False) if isinstance(x, (list, dict)) else x)
+    return df
+
+def journal_assignments():   # deposit -> venue assignment (the "where" of each deposit)
+    return _jsonl('datasets/journals/assignments.jsonl')
+
+def predictions():  # the falsification conditions extracted from every deposit, and their resolutions
+    a = _jsonl('datasets/prediction-ledger/conditions.jsonl'); b = _jsonl('datasets/prediction-ledger/resolved.jsonl')
+    if not b.empty:
+        b = b.rename(columns={c: f"resolved_{c}" for c in b.columns if c not in ('deposit','condition','axn')})
+        a = a.merge(b, on=[c for c in ('deposit','condition') if c in a.columns and c in b.columns], how='left')
+    return a
+
+def studies():      # the study dashboard: designed vs conducted studies
+    return _jsonl('datasets/study-dashboard/studies.jsonl')
+
+def tombstones():   # the Zenodo kill ledger of 2026-06-19: every severed DOI and its removal note
+    import csv
+    p = ROOT/'datasets/tombstone-mirror/cha-kill-ledger-20260619.csv'
+    if not p.exists(): return pd.DataFrame()
+    return pd.DataFrame(list(csv.DictReader(open(p, encoding='utf-8'))))
+
+def blog_posts():   # index of the authorial blog surface (mindcontrolpoems), with AXN crosswalk where resolved
+    return _jsonl('datasets/blog-index/posts.jsonl')
+
 CARD = """---
 license: cc-by-4.0
 pretty_name: Crimson Hexagonal Archive (Alexanarch)
@@ -120,7 +168,7 @@ The complete corpus of the Crimson Hexagonal Archive (alexanarch.org) — {n_dep
 
 Every row carries its AXN identifier (a content-derived identifier: the sha256 of the canonical text is the record), its substrate disclosure (which of these texts were made in dialogue with language models, and how), its license, and its status in the archive's supersession chain. Nothing here has been edited for this dataset; the retractions, nulls, and superseded versions are present as such.
 
-**Configs.** `deposits` — one row per deposit, full text. `sources` — book-length and formerly docx-only works recovered to text (All That Lies Within Me, 234k words; New Human; Cleis; the Logos papers). `reception` — the register of twenty blind machine referee reports on one Aristotle sentence (#1574, "The Particle"). `captures` — reception captures from the Capture Registry. `citations` — internal citation edges. `lexicon` — the lexical minting registry of the archive's coinages. `sites` — one row per page of the public fleet of sites that surface the archive (godkinggoogle.com, semanticeconomy.org, machinemediation.org, operativesemiotics.org, revelationfirst.com, and the rest).
+**Configs.** `deposits` — one row per deposit, full text. `sources` — book-length and formerly docx-only works recovered to text (All That Lies Within Me, 234k words; New Human; Cleis; the Logos papers). `reception` — the register of twenty blind machine referee reports on one Aristotle sentence (#1574, "The Particle"). `captures` — reception captures from the Capture Registry. `citations` — internal citation edges. `lexicon` — the lexical minting registry of the archive's coinages. `heteronyms` — the Dodecad: the twelve heteronyms and their adjacent figures, with voice signatures, roles, and domains. `venues` and `journal_assignments` — the archive's own journals and presses, and which deposit belongs to which. `predictions` — every falsification condition stated in a deposit, with resolutions where resolved. `studies` — the designed/conducted study dashboard. `tombstones` — the 1,136-row Zenodo kill ledger of 2026-06-19, every severed DOI with its removal note. `blog_posts` — the index of the authorial blog surface with its AXN crosswalk. `sites` — one row per page of the public fleet of sites that surface the archive (godkinggoogle.com, semanticeconomy.org, machinemediation.org, operativesemiotics.org, revelationfirst.com, and the rest).
 
 **Provenance.** Archive founded 2026-06-19 after the termination of its Zenodo account; every deposit is served at `https://alexanarch.org/s/records/{{deposit_number}}/` and resolvable by AXN at `/s/axn/{{hex}}/`. Node declaration: `https://alexanarch.org/.well-known/axn-node.json`. Built {built}.
 
@@ -130,7 +178,7 @@ Every row carries its AXN identifier (a content-derived identifier: the sha256 o
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--out', default='hf-dataset'); ap.add_argument('--fleet', default=os.environ.get('FLEET_DIR'))
     a = ap.parse_args(); out = ROOT/a.out; out.mkdir(exist_ok=True)
-    frames = {'deposits': deposits(), 'sources': sources(), 'reception': reception(), 'captures': captures(), 'citations': citations(), 'lexicon': lexicon()}
+    frames = {'deposits': deposits(), 'sources': sources(), 'heteronyms': heteronyms(), 'venues': venues(), 'journal_assignments': journal_assignments(), 'reception': reception(), 'captures': captures(), 'citations': citations(), 'lexicon': lexicon(), 'predictions': predictions(), 'studies': studies(), 'tombstones': tombstones(), 'blog_posts': blog_posts()}
     if a.fleet: frames['sites'] = sites(a.fleet)
     cfg = []
     for name, df in frames.items():
