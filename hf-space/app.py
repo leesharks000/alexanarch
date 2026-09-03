@@ -1,7 +1,13 @@
 """Crimson Hexagonal Archive — machine interface.
 Serves the archive's records, graph and full-text search from the Hub dataset
 (leesharsks/crimson-hexagonal-archive), for agents and tools. No page ranking involved."""
+import spaces  # must be imported before gradio/torch on ZeroGPU hardware
 import os, json, sqlite3, io, time
+
+@spaces.GPU(duration=1)
+def zerogpu_declaration():
+    """ZeroGPU refuses to start an app with no @spaces.GPU function. This app is CPU-only; this is never called."""
+    return "cpu-only"
 import pandas as pd
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import JSONResponse, HTMLResponse, PlainTextResponse
@@ -142,13 +148,6 @@ def robots(): return "User-agent: *\nAllow: /\n"
 
 # ── Gradio panel at / (the Space's free tier runs Gradio; the API above is mounted beside it) ──
 import gradio as gr
-try:
-    import spaces  # ZeroGPU hardware requires at least one @spaces.GPU function to exist; this app never uses the GPU
-    @spaces.GPU(duration=1)
-    def _zerogpu_declaration():
-        return "cpu-only app; GPU never requested"
-except Exception:
-    pass
 
 def ui_search(q, n):
     if not q.strip(): return "Enter a query."
