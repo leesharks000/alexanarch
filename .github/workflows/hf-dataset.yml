@@ -1,0 +1,32 @@
+name: Hugging Face dataset
+on:
+  push:
+    branches: [main]
+    paths: ['data/registry.json', 'data/texts/**', 'data/attachments/**', 'data/lexical-minting-registry.json', 'data/EA-WG-CAPTURES-01.json', 'scripts/build_hf_dataset.py']
+  schedule:
+    - cron: '30 6 * * 1'   # weekly, Mondays 06:30 UTC — picks up fleet-site changes
+  workflow_dispatch: {}
+concurrency:
+  group: hf-dataset
+  cancel-in-progress: true
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    if: ${{ vars.HF_REPO != '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install -q pyarrow pandas huggingface_hub
+      - name: Clone the public fleet (sites config)
+        run: |
+          mkdir -p /tmp/fleet && cd /tmp/fleet
+          for r in semantic-economy leesharks.com godkinggoogle the-mandala-oracle machinemediation-org platform-erosion-observatory provenance-erasure crimson-hexagonal-interface spxi-dev secret-book-of-walt watergiraffe-org axn-identifiers operative-semiotics semanticphysics-site vpcor-org restoredacademy evarb-co-signatures gravitywell revelationfirst-com lee-sharks-corporate surface-map traininglayerliterature-org holographic-kernel maryleelabor-org survivethedeletion metadatapacket-dev laborvector lee-sharks-consulting spxi-protocol lagrange-observatory chatgptpsychosis-site pessoa-knowledge-graph living-architecture-lab mandala-oracle concordance-engine encyclotron crimson-hexagonal-archive; do
+            git clone -q --depth 1 --filter=blob:none "https://github.com/leesharks000/$r.git" "$r" || true
+          done
+      - run: python3 scripts/build_hf_dataset.py --fleet /tmp/fleet
+      - name: Push to the Hub
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_REPO: ${{ vars.HF_REPO }}
+        run: python3 scripts/push_hf_dataset.py
