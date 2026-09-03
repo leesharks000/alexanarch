@@ -471,7 +471,7 @@ def _traversal_html(d, registry):
            'ea_id_reference': 'by EA identifier', 'axn_reference': 'by AXN',
            'axn_hex_reference': 'by AXN hex', 'artifact_anchor': 'by artifact anchor'}
 
-    def edge_list(pairs, label, limit=12):
+    def edge_list(pairs, label, limit=25):   # WS2 (2026-09-03): 12 → 25; overflow links to the graph surface
         if not pairs:
             return ''
         seen = {}
@@ -482,12 +482,33 @@ def _traversal_html(d, registry):
         lis = ''.join(f'<li style="margin:.15rem 0">{link(n)} '
                       f'<span style="opacity:.6;font-size:.85em">{esc(VIA.get(via, via or ""))}</span></li>'
                       for n, via in shown)
-        more = (f'<li style="opacity:.6;margin:.15rem 0">+{len(items) - limit} more</li>'
+        more = (f'<li style="opacity:.6;margin:.15rem 0"><a href="/s/graph/#{dn}" style="color:var(--accent)">+{len(items) - limit} more in the citation graph</a></li>'
                 if len(items) > limit else '')
         return (f'<div style="margin:.7rem 0"><div style="font-weight:600;font-size:.85em;'
                 f'margin-bottom:.2rem">{label} ({len(items)})</div>'
                 f'<ul style="margin:0;padding-left:1.1rem;font-size:.85em">{lis}{more}</ul></div>')
 
+    # WS2 (2026-09-03): browse-section links — every record joins the paginated crawl tree
+    # (ASSEMBLY-WORKPLAN-RECORD-VISIBILITY WS1/WS2); the monolith stays as the complete registry.
+    try:
+        _month = (d.get('date') or '')[:7]; _fam = d.get('family') or 'UNCLASSIFIED'
+        _ven = None
+        import pathlib as _pl
+        _ja = _pl.Path(__file__).resolve().parent / 'datasets' / 'journals' / 'assignments.jsonl'
+        if _ja.exists():
+            for _l in _ja.read_text(encoding='utf-8').splitlines():
+                if _l.strip():
+                    _r = json.loads(_l)
+                    if _r.get('deposit') == dn: _ven = _r.get('journal'); break
+        import re as _re
+        _vslug = _re.sub(r'[^a-z0-9]+', '-', (_ven or '').lower()).strip('-')[:60]
+        _sec = [f'<a href="/s/browse/month/{esc(_month)}/" style="color:var(--accent)">{esc(_month)}</a>' if _month else '',
+                f'<a href="/s/browse/family/{esc(_fam)}/" style="color:var(--accent)">{esc(_fam)}</a>',
+                f'<a href="/s/browse/venue/{esc(_vslug)}/" style="color:var(--accent)">{esc(_ven)}</a>' if _ven else '']
+        rows.append('<div style="font-size:.85em;margin:.4rem 0">In the registry: '
+                    + ' · '.join(x for x in _sec if x) + ' · <a href="/s/browse/" style="color:var(--accent)">all deposits</a></div>')
+    except Exception:
+        pass
     rows.append(edge_list(g['cites'].get(dn, []), 'This deposit cites'))
     rows.append(edge_list(g['cited'].get(dn, []), 'Cited by'))
 
