@@ -1,6 +1,54 @@
 {
   "redirects": [
     {
+      "source": "/records/",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "(?<h>[0-9A-Fa-f]{4})"
+        }
+      ],
+      "destination": "/s/axn/:h/",
+      "permanent": true
+    },
+    {
+      "source": "/records",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "(?<h>[0-9A-Fa-f]{4})"
+        }
+      ],
+      "destination": "/s/axn/:h/",
+      "permanent": true
+    },
+    {
+      "source": "/records/",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "(?<n>[1-9][0-9]{0,5})"
+        }
+      ],
+      "destination": "/s/records/:n/",
+      "permanent": true
+    },
+    {
+      "source": "/records",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "(?<n>[1-9][0-9]{0,5})"
+        }
+      ],
+      "destination": "/s/records/:n/",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "has": [
         {
