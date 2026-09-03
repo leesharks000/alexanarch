@@ -1,0 +1,19 @@
+name: Hugging Face Space
+on:
+  push:
+    branches: [main]
+    paths: ['hf-space/**', 'scripts/push_hf_space.py']
+  workflow_dispatch: {}
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: ${{ vars.HF_SPACE != '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install -q huggingface_hub
+      - env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_SPACE: ${{ vars.HF_SPACE }}
+        run: python3 scripts/push_hf_space.py
