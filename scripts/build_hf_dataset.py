@@ -49,6 +49,42 @@ def deposits():
             'text': text, 'text_sha256': sha(text) if text else None, 'text_words': len(text.split()) if text else 0,
         })
     df = pd.DataFrame(rows)
+    # ── relations as data, keyed by deposit number and AXN (2026-09-03) ──
+    cg = json.load(open(ROOT/'data/citation-graph.json')) if (ROOT/'data/citation-graph.json').exists() else {}
+    edges = cg.get('edges') or cg.get('citations') or []
+    cites, cited_by = {}, {}
+    for e in edges:
+        a = e.get('source_deposit') or e.get('from') or e.get('source'); b = e.get('target_deposit') or e.get('to') or e.get('target')
+        try: a = int(a); b = int(b)
+        except Exception: continue
+        cites.setdefault(a, set()).add(b); cited_by.setdefault(b, set()).add(a)
+    num2axn = {d['deposit_number']: d.get('axn') for d in reg}
+    df['cites'] = df['deposit_number'].map(lambda n: json.dumps(sorted(cites.get(n, ()))))
+    df['cited_by'] = df['deposit_number'].map(lambda n: json.dumps(sorted(cited_by.get(n, ()))))
+    df['cites_axn'] = df['deposit_number'].map(lambda n: json.dumps([num2axn.get(x) for x in sorted(cites.get(n, ()))]))
+    # series neighbours: by version_series_id in deposit order; supersession as explicit prev/next
+    series = {}
+    for d in reg:
+        if d.get('version_series_id'): series.setdefault(d['version_series_id'], []).append(d['deposit_number'])
+    prev, nxt = {}, {}
+    for sid, members in series.items():
+        members.sort()
+        for i, n in enumerate(members):
+            if i: prev[n] = members[i-1]
+            if i < len(members)-1: nxt[n] = members[i+1]
+    supersedes = {}
+    for d in reg:
+        sb = d.get('superseded_by')
+        if sb:
+            try: supersedes.setdefault(int(sb), []).append(d['deposit_number'])
+            except Exception: pass
+    df['series_previous'] = df['deposit_number'].map(lambda n: prev.get(n))
+    df['series_next'] = df['deposit_number'].map(lambda n: nxt.get(n))
+    df['supersedes'] = df['deposit_number'].map(lambda n: json.dumps(sorted(supersedes.get(n, ()))))
+    df['axn_uri'] = df['hex'].map(lambda h: f"https://alexanarch.org/s/axn/{h}/" if h else None)
+    df['text_uri'] = df['deposit_number'].map(lambda n: next((f"https://alexanarch.org{d.get('full_text_path')}" for d in reg if d['deposit_number']==n and d.get('full_text_path')), None))
+    df['doi_legacy'] = [ (d.get('doi') or d.get('zenodo_doi') or d.get('legacy_doi')) for d in reg ]
+    df['attachments'] = [ json.dumps([ (a.get('url') or a.get('filename')) for a in (d.get('attachments') or []) ]) for d in reg ]
     ja = _jsonl('datasets/journals/assignments.jsonl')
     if not ja.empty and 'deposit' in ja.columns:
         df = df.merge(ja[['deposit','journal']].rename(columns={'deposit':'deposit_number','journal':'venue'}), on='deposit_number', how='left')
@@ -158,21 +194,25 @@ license: cc-by-4.0
 pretty_name: Crimson Hexagonal Archive (Alexanarch)
 language: [en, el]
 size_categories: [1K<n<10K]
-tags: [scholarship, provenance, heteronymy, reception, aristotle, plato, poetry, archive, ai-mediated-authorship, content-addressed-identifiers]
+tags: [scholarship, provenance, heteronymy, reception, aristotle, plato, poetry, archive, ai-mediated-authorship, content-addressed-identifiers, citation-graph]
 configs:
 {configs}
 ---
-# The Crimson Hexagonal Archive
+# The Crimson Hexagonal Archive — machine-readable representation
 
-The complete corpus of the Crimson Hexagonal Archive (alexanarch.org) — {n_dep} content-addressed scholarly deposits by Lee Sharks and the twelve heteronyms of the Dodecad, with their canonical texts, wiki entries, citation graph, lexical registry, reception captures, and the recovered book-length sources — projected from the archive's single source of truth (`data/` in `leesharks000/alexanarch`) and rebuilt on every mint.
+**What this is.** The Crimson Hexagonal Archive (alexanarch.org) is a self-governing scholarly and literary corpus by Lee Sharks and the twelve heteronyms of the Dodecad: {n_dep} deposits as of this build, each with a content-derived persistent identifier (AXN), a canonical text, a substrate disclosure, a license, and a place in a supersession chain. This dataset is a second, executable representation of that corpus: one row per record, full text as a string column, and every inter-record relation encoded as data keyed by stable identifiers, so that an agent can reconstruct a record, what it cites, what cites it, and its series neighbours from the dataset alone, without traversing the archive's web surfaces. It is rebuilt automatically from the archive's single source of truth (`data/` in `leesharks000/alexanarch`) on every new deposit.
 
-Every row carries its AXN identifier (a content-derived identifier: the sha256 of the canonical text is the record), its substrate disclosure (which of these texts were made in dialogue with language models, and how), its license, and its status in the archive's supersession chain. Nothing here has been edited for this dataset; the retractions, nulls, and superseded versions are present as such.
+**What a row means.** In `deposits`, a row is one deposit: `deposit_number` (integer, permanent, the archive's primary key), `axn` (the content-derived identifier, of the form `AXN:<hex>.<FAMILY>.<six glyphs>`; the sha256 of the canonical text is the record), `hex` (the four-digit position used in URIs), `title`, `creator` (the orthonym or heteronym as attributed), `date`, `family` (GENERATIVE, EMPIRICAL, GOVERNANCE, ARCHIVAL, UNCLASSIFIED), `content_type`, `description` (the abstract), `keywords`, `license`, `substrate_disclosure` (whether and how a language model participated in making the text), `status` (ACTIVE, SUPERSEDED, WITHDRAWN, …), `wiki_article` (a machine-written encyclopedia entry authored in session), `venue` (the archive's own journal the deposit belongs to), `text` (the canonical text, verbatim), `text_sha256`, `text_words`.
 
-**Configs.** `deposits` — one row per deposit, full text. `sources` — book-length and formerly docx-only works recovered to text (All That Lies Within Me, 234k words; New Human; Cleis; the Logos papers). `reception` — the register of twenty blind machine referee reports on one Aristotle sentence (#1574, "The Particle"). `captures` — reception captures from the Capture Registry. `citations` — internal citation edges. `lexicon` — the lexical minting registry of the archive's coinages. `heteronyms` — the Dodecad: the twelve heteronyms and their adjacent figures, with voice signatures, roles, and domains. `venues` and `journal_assignments` — the archive's own journals and presses, and which deposit belongs to which. `predictions` — every falsification condition stated in a deposit, with resolutions where resolved. `studies` — the designed/conducted study dashboard. `tombstones` — the 1,136-row Zenodo kill ledger of 2026-06-19, every severed DOI with its removal note. `blog_posts` — the index of the authorial blog surface with its AXN crosswalk. `sites` — one row per page of the public fleet of sites that surface the archive (godkinggoogle.com, semanticeconomy.org, machinemediation.org, operativesemiotics.org, revelationfirst.com, and the rest).
+**Relations, as data.** `cites` and `cited_by`: JSON arrays of deposit numbers from the archive's citation graph (also `cites_axn` as identifiers). `related_deposits`: curated relations declared at deposit time. `superseded_by` / `supersedes`: the version chain. `version_series_id`, `series_previous`, `series_next`: neighbours in a declared series. `defines_concepts`: terms this deposit coins, with definitions (the same terms appear as rows in `lexicon`). `record_url`, `axn_uri`, `text_uri`: the canonical web addresses; `doi_legacy` where a pre-2026 Zenodo DOI existed (those DOIs were severed on 2026-06-19 — see `tombstones`). `attachments`: files ingested with the record.
 
-**Provenance.** Archive founded 2026-06-19 after the termination of its Zenodo account; every deposit is served at `https://alexanarch.org/s/records/{{deposit_number}}/` and resolvable by AXN at `/s/axn/{{hex}}/`. Node declaration: `https://alexanarch.org/.well-known/axn-node.json`. Built {built}.
+**Other configs.** `sources` — book-length and formerly binary-only works recovered to text (All That Lies Within Me, 234k words; New Human; Cleis; the Logos papers). `heteronyms` — the Dodecad and adjacent figures, with voice signatures, roles, domains. `venues`, `journal_assignments` — the archive's journals and presses and which deposit belongs to which. `reception` — the register of twenty blind machine referee reports on one Aristotle sentence (#1574). `captures` — reception captures from the Capture Registry (how machine surfaces received the archive). `citations` — the full internal edge list. `lexicon` — the lexical minting registry. `predictions` — every falsification condition stated in a deposit, with resolutions. `studies` — the designed/conducted study dashboard. `tombstones` — the 1,136-row Zenodo kill ledger of 2026-06-19. `blog_posts` — the index of the authorial blog surface with AXN crosswalk. `sites` — one row per page of the public fleet of sites that surface the archive.
 
-**License.** CC BY 4.0 for all text. Attribution: Lee Sharks, Crimson Hexagonal Archive, with the AXN of the deposit.
+**Identifiers and citation.** Cite a deposit by its AXN and number: *Sharks, L. (2026). Title. Crimson Hexagonal Archive #N, AXN:hex.FAMILY. https://alexanarch.org/s/records/N/*. The node declaration is at `https://alexanarch.org/.well-known/axn-node.json`; the AXN resolver at `https://alexanarch.org/s/axn/<hex>/`.
+
+**Provenance.** Archive founded 2026-06-19 after the termination of its Zenodo account. Nothing in this dataset has been edited for the dataset; retractions, nulls, superseded versions and withdrawn records are present with their status. Built {built}.
+
+**License.** CC BY 4.0 for all text.
 """
 
 def main():
