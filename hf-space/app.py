@@ -183,6 +183,10 @@ with gr.Blocks(title="Crimson Hexagonal Archive — machine interface") as demo:
         num = gr.Number(label="Deposit number", value=1574, precision=0)
         rec = gr.Markdown()
         num.submit(ui_record, num, rec); gr.Button("Look up").click(ui_record, num, rec)
+    # ZeroGPU's startup check looks for a @spaces.GPU function REGISTERED AS A GRADIO EVENT,
+    # not merely defined; wire the no-op to a hidden button so the tier will start the app.
+    _gpu_btn = gr.Button("zerogpu", visible=False); _gpu_out = gr.Textbox(visible=False)
+    _gpu_btn.click(zerogpu_declaration, None, _gpu_out)
     gr.Markdown("<small>CC BY 4.0 · Lee Sharks · [alexanarch.org](https://alexanarch.org) · [axn-node.json](https://alexanarch.org/.well-known/axn-node.json)</small>")
 
 # ZeroGPU's startup check hooks Gradio's own launch(); so boot through
