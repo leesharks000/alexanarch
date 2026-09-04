@@ -14,8 +14,10 @@ jobs:
       - env:
           BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
         run: python3 scripts/probe_record_search.py
+      - name: Fleet structured-data guard (live JSON-LD parse + Dataset fields)
+        run: python3 scripts/probe_fleet_jsonld.py || echo '::warning::fleet JSON-LD faults found — see data/probes/fleet-jsonld/'
       - run: |
           git config user.name "record-search probe" && git config user.email "probe@alexanarch.org"
-          git add data/probes/record-search/
+          git add data/probes/record-search/ data/probes/fleet-jsonld/
           git diff --cached --quiet || git commit -m "probe: record-search cohort $(date -u +%F)"
           git push
