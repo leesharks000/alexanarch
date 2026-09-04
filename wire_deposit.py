@@ -883,6 +883,22 @@ def regenerate_static_page(d, eidx, registry=None):
     _dois = _didx.get(d.get('axn', ''), []) or _didx.get((hex_id or '').upper(), [])
     if _dois:
         _ld["sameAs"] = _dois
+        # 2026-09-04: a composer that reaches this page while holding the old DOI must not read the
+        # DOI as canonical. Declare the AXN authoritative and each DOI former and severed, in-band.
+        _ids = [{"@type": "PropertyValue", "propertyID": "AXN", "value": d.get('axn'), "url": f"https://www.alexanarch.org/s/axn/{hex_id}/",
+                 "description": "authoritative identifier; content-derived; resolves"}]
+        for _u in _dois:
+            _doi = _u.replace('https://doi.org/', '')
+            _ids.append({"@type": "PropertyValue", "propertyID": "DOI", "value": _doi, "url": _u,
+                         "description": "former identifier; severed by the registrant 2026-06-19; resolves to a tombstone (HTTP 410); superseded by the AXN",
+                         "sameAs": f"https://www.alexanarch.org/s/doi/{_doi}/"})
+        _ld["identifier"] = _ids
+    _ident_html = ''
+    if _dois:
+        _rows = ''.join(f'<div><span style="color:#b23">former DOI</span> <span class="m" style="font-family:var(--mono);font-size:.85em">{esc(_u.replace("https://doi.org/",""))}</span> — severed 2026-06-19 by the registrant; resolves to a tombstone; <a href="/s/doi/{esc(_u.replace("https://doi.org/",""))}/" style="color:var(--accent)">resolution page</a></div>' for _u in _dois)
+        _ident_html = (f'<div style="border-left:4px solid var(--teal);background:#fff;padding:8px 12px;margin:10px 0;font-size:.86em">'
+                       f'<div><strong>Authoritative identifier:</strong> <span style="font-family:var(--mono);font-size:.9em">{esc(d.get("axn"))}</span> — content-derived; resolves at <a href="/s/axn/{esc(hex_id)}/" style="color:var(--accent)">/s/axn/{esc(hex_id)}/</a>. Cite this record by AXN and URL.</div>'
+                       f'{_rows}</div>')
     jsonld = json.dumps(_ld, ensure_ascii=False)
     
     # Read full text
@@ -1824,6 +1840,7 @@ def regenerate_static_page(d, eidx, registry=None):
 <div style="font-size:.85em;color:#777;margin-bottom:10px">{esc(d["creator"])} · {esc(d["date"])} · {esc(d.get("content_type",""))}{f' · <span style="color:var(--accent);font-weight:500">{esc(version)}</span>' if (version and (version != 'v1.0' or series_id)) else ''}</div>
 <a style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0" href="/data/deposits/AXN-{hex_id}.md" download>↓ Download MD</a> <a style="display:inline-block;background:var(--accent);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0 6px 4px" href="/papers/AXN-{hex_id.zfill(4)}.pdf">↓ PDF</a>
 <div style="margin:8px 0">{kw_html}</div>
+{_ident_html}
 <h2>Description</h2>
 <p style="font-size:.9em">{_render_inline(d.get("description",""))}</p>
 {wiki_html}
