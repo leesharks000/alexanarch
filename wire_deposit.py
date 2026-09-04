@@ -16,6 +16,21 @@ from scripts.glyph_aria import axn_aria_label as _axn_aria
 _DOI_INDEX_CACHE = None
 
 
+_DOI_STATE_CACHE = None
+def _doi_state(doi):
+    """identifier_validity from the resolution index envelope → short phrase (2026-09-04)."""
+    global _DOI_STATE_CACHE
+    if _DOI_STATE_CACHE is None:
+        _DOI_STATE_CACHE = {}
+        try:
+            for row in json.load(open('data/doi-resolution-index.json')).get('mappings', []):
+                v = (row.get('envelope') or {}).get('identifier_validity')
+                if row.get('dead_doi') and v: _DOI_STATE_CACHE[row['dead_doi']] = v
+        except Exception: pass
+    return {'verified_tombstone': 'resolves to a tombstone (HTTP 410)',
+            'verified_registered': 'registration extant; object withdrawn from public findability',
+            'verified_erased_registration': 'registration erased; does not resolve (HTTP 404)'}.get(_DOI_STATE_CACHE.get(doi), 'severed; state not verified')
+
 def _load_doi_index():
     """AXN (full string and bare hex) -> sorted list of doi.org URLs.
 
@@ -890,12 +905,12 @@ def regenerate_static_page(d, eidx, registry=None):
         for _u in _dois:
             _doi = _u.replace('https://doi.org/', '')
             _ids.append({"@type": "PropertyValue", "propertyID": "DOI", "value": _doi, "url": _u,
-                         "description": "former identifier; severed by the registrant 2026-06-19; resolves to a tombstone (HTTP 410); superseded by the AXN",
+                         "description": f"former identifier; severed by the registrant 2026-06-19; {_doi_state(_doi)}; superseded by the AXN",
                          "sameAs": f"https://www.alexanarch.org/s/doi/{_doi}/"})
         _ld["identifier"] = _ids
     _ident_html = ''
     if _dois:
-        _rows = ''.join(f'<div><span style="color:#b23">former DOI</span> <span class="m" style="font-family:var(--mono);font-size:.85em">{esc(_u.replace("https://doi.org/",""))}</span> — severed 2026-06-19 by the registrant; resolves to a tombstone; <a href="/s/doi/{esc(_u.replace("https://doi.org/",""))}/" style="color:var(--accent)">resolution page</a></div>' for _u in _dois)
+        _rows = ''.join(f'<div><span style="color:#b23">former DOI</span> <span class="m" style="font-family:var(--mono);font-size:.85em">{esc(_u.replace("https://doi.org/",""))}</span> — severed 2026-06-19 by the registrant; {esc(_doi_state(_u.replace("https://doi.org/","")))}; <a href="/s/doi/{esc(_u.replace("https://doi.org/",""))}/" style="color:var(--accent)">resolution page</a></div>' for _u in _dois)
         _ident_html = (f'<div style="border-left:4px solid var(--teal);background:#fff;padding:8px 12px;margin:10px 0;font-size:.86em">'
                        f'<div><strong>Authoritative identifier:</strong> <span style="font-family:var(--mono);font-size:.9em">{esc(d.get("axn"))}</span> — content-derived; resolves at <a href="/s/axn/{esc(hex_id)}/" style="color:var(--accent)">/s/axn/{esc(hex_id)}/</a>. Cite this record by AXN and URL.</div>'
                        f'{_rows}</div>')
