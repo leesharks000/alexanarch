@@ -865,8 +865,13 @@ def regenerate_static_page(d, eidx, registry=None):
             "url": f"https://www.machinemediation.org/captures/#{c['slug']}",
             "datePublished": c.get('date'),
             "measurementTechnique": c.get('match_type'),
-            "isPartOf": {"@type": "Dataset", "name": "EA-WG-CAPTURES-01",
-                         "url": "https://www.machinemediation.org/data/registry.json"},
+            "isPartOf": {"@type": "Dataset", "@id": "https://www.alexanarch.org/data/EA-WG-CAPTURES-01.json",
+                         "name": "EA-WG-CAPTURES-01 — the Capture Registry",
+                         "description": "Dated captures of how machine surfaces (AI overviews, answer engines, search snippets) retrieved and composed from the Crimson Hexagonal Archive; each capture records the query, the surface, the match type, and the deposits it drew on.",
+                         "url": "https://www.alexanarch.org/captures/",
+                         "license": "https://creativecommons.org/licenses/by/4.0/",
+                         "creator": {"@type": "Person", "name": "Lee Sharks", "identifier": "https://orcid.org/0009-0000-1599-0703"},
+                         "distribution": {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://www.alexanarch.org/data/EA-WG-CAPTURES-01.json"}},
         } for c in _caps[:10]]
         _ld["interactionStatistic"] = {
             "@type": "InteractionCounter",
