@@ -76,7 +76,7 @@ except ImportError:
     _OVERWRITE_GUARD_AVAILABLE = False
 
 HOMEPAGE_RECENT_N = 12  # must equal the JS slice in index.html
-ALL_SURFACES = ["state", "browse", "browse-sections", "feed", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index", "search-index", "search-static", "capture-gallery", "record-api", "dynamic-counts", "semantic-addresses"]
+ALL_SURFACES = ["state", "browse", "browse-sections", "doi-shadow", "feed", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index", "search-index", "search-static", "capture-gallery", "record-api", "dynamic-counts", "semantic-addresses"]
 
 
 def _version_label(version: str) -> tuple:
@@ -369,6 +369,15 @@ def regenerate_browse_sections(reg, dry_run=False):
         print("  [DRY] would rebuild s/browse/{family,month,venue}/"); return
     from scripts.build_browse_sections import build
     build()
+
+
+def regenerate_doi_shadow(reg, dry_run=False):
+    """2026-09-04: one indexable page per severed DOI with a live successor (s/doi/<doi>/), so a machine
+    holding the old identifier reaches the record instead of stopping at the tombstone. See
+    scripts/build_doi_shadow.py; sitemap-doi.xml."""
+    if dry_run: print("  [DRY] would rebuild s/doi/"); return
+    from scripts.build_doi_shadow import main as _b
+    _b()
 
 
 def regenerate_browse_index(reg, dry_run=False):
@@ -1792,6 +1801,7 @@ SURFACE_FNS = {
     "state": regenerate_state,
     "browse": regenerate_browse,
     "browse-sections": regenerate_browse_sections,
+    "doi-shadow": regenerate_doi_shadow,
     "browse-index": regenerate_browse_index,
     "hex-to-deposit": regenerate_hex_to_deposit,
     "chunks": regenerate_chunks,

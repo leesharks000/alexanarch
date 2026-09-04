@@ -266,3 +266,5 @@ jobs:
             });
       - name: Browse sections agree with the registry (WS1 gate)
         run: python3 scripts/build_browse_sections.py --check
+      - name: DOI shadow pages agree with the resolution index
+        run: python3 scripts/build_doi_shadow.py --check
