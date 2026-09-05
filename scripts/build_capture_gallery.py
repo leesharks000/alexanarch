@@ -564,6 +564,11 @@ def card(e):
     defect_ribbon = ('<div class="cap-defects">' + ''.join(
         f'<span class="cap-defect cap-defect-{esc(x)}" title="{esc(LABEL.get(x, x))}">{esc(x)}</span>'
         for x in defects) + '</div>') if defects else ''
+    # FINDINGS (2026-09-05): editorial sentences that used to sit in `defects` and rendered as orange chips.
+    # They are findings, not derived defects; they render as a labelled list in the card body.
+    findings = e.get("findings") or []
+    findings_block = ('<div class="cap-findings"><div class="cap-tr-label">Findings</div><ul>' +
+                      ''.join(f'<li>{esc(x)}</li>' for x in findings) + '</ul></div>') if findings else ''
 
     # IMAGE SHAPE FOLLOWS THE LEESHARKS GALLERY, which solved this already:
     # ONE thumbnail in the header at a fixed 80x140, the REST inside the expand,
@@ -657,7 +662,7 @@ def card(e):
         + rerun_btn +
         f'<a class="cap-permalink" href="{esc(cite)}" rel="bookmark">permalink</a>'
         f'</div>'
-        f'{defect_ribbon}'
+        f'{defect_ribbon}{findings_block}'
         f'</div>')
 
 
@@ -667,20 +672,17 @@ def main():
         return 0
     r = json.loads(REG.read_text())
     entries = r["entries"]
-    # ORDER IS THE PROJECTOR'S, NOT THE REGISTRY'S (2026-09-05). Intake appends, so registry
-    # order is arrival order and every seating lands at the tail. The gallery renders in the
-    # order the fleet window on leesharks.com established: alphabetical by the ISSUED query
-    # with leading quote/apostrophe/whitespace stripped for ordering only (the stored value is
-    # untouched — «quoted» is display-significant), numeric-aware, case- and punctuation-
-    # insensitive; date breaks ties. Deterministic, so the determinism gate still holds.
-    import unicodedata as _ud
-    def _sort_key(e):
+    # ORDER IS THE PROJECTOR'S (2026-09-05): the file is grouped by section (its own rule, `_order`); the
+    # gallery renders sections alphabetical and, within a section, entries by the ISSUED query — leading
+    # quote/whitespace stripped for ordering only, numeric-aware, accent/case/punctuation-insensitive;
+    # date then slug break ties. Deterministic. Seating cannot disturb this, wherever it lands in the file.
+    import unicodedata as _ud, re as _re
+    def _qkey(e):
         q = str(e.get("q") or "").lstrip('«"\'‘’“” \t').strip()
         q = "".join(ch for ch in _ud.normalize("NFKD", q) if not _ud.combining(ch)).lower()
         q = "".join(ch for ch in q if ch.isalnum() or ch.isspace())
-        parts = [int(t) if t.isdigit() else t for t in __import__("re").split(r"(\d+)", q)]
-        return ([(0, x) if isinstance(x, int) else (1, x) for x in parts], str(e.get("date") or ""), e.get("slug") or "")
-    entries = sorted(entries, key=_sort_key)
+        return [(0, int(t)) if t.isdigit() else (1, t) for t in _re.split(r"(\d+)", q)]
+    entries = sorted(entries, key=lambda e: (str(e.get("s") or ""), _qkey(e), str(e.get("date") or ""), e.get("slug") or ""))
     page = PAGE.read_text()
 
     cards = "\n".join(card(e) for e in entries)

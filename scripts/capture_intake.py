@@ -42,7 +42,7 @@ WHY EACH RULE EXISTS. Every one is a defect this registry actually sustained:
 import json, re, sys, hashlib, pathlib, unicodedata
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-CANON = ROOT / "rebuild/capture-registry/EA-WG-CAPTURES-01-REBUILD.json"
+CANON = ROOT / "data/EA-WG-CAPTURES-01.json"   # was the sealed REBUILD file until 2026-09-05 — intake pointed at the wrong store, which is one reason no seating used it
 
 VALID_AUTH = {"signed in", "signed out", "incognito", "incognito, signed out", "undetermined"}
 
@@ -168,33 +168,81 @@ def fingerprint(obj):
     ).hexdigest()
 
 
+def _flat_defects(e):
+    """The same derived vocabulary, on the flat record shape the file actually uses (2026-09-05)."""
+    d = []
+    if e.get("cites") is None: d.append("citations-null")
+    if (e.get("surface") or "").upper() in ("UNDETERMINED", "UNRESOLVED"): d.append("surface-unresolved")
+    if not e.get("date") or e.get("date") == "null": d.append("date-unresolved")
+    tc = (e.get("transcript_complete") or "").lower()
+    if "truncat" in tc or "cut" in tc: d.append("truncated-by-interface")
+    if (e.get("analysis") or "") and not (e.get("d") or ""): d.append("analysis-without-finding")
+    return sorted(set(d))
+
+
+def seat_flat(draft, registry, schema):
+    """ADMIT → ROUTE → NORMALISE → VALIDATE → INSERT, on the flat record shape. Returns (kind, entry)."""
+    import jsonschema
+    req = ["q", "date", "surface", "auth", "ev", "s", "transcript", "d"]
+    missing = [k for k in req if draft.get(k) in (None, "", "null")]
+    if missing: raise Refused("ADMIT refused — missing: %s (transcript, date, surface, auth are the contract; q, ev, s, d are the record)" % missing)
+    # ROUTE: exact issued string on the same surface → observation on the existing entry
+    for e in registry["entries"]:
+        if e.get("q") == draft["q"] and e.get("surface") == draft["surface"]:
+            obs = {"date": draft["date"], "auth": draft["auth"], "ev": draft["ev"], "transcript": draft["transcript"], "imgs": draft.get("imgs") or [], "img_urls": draft.get("img_urls") or [], "d": draft["d"], "cites": draft.get("cites"), "obs_id": "OBS-" + hashlib.sha256((draft["q"] + draft["date"] + draft["surface"]).encode()).hexdigest()[:12]}
+            e.setdefault("observations", []).append(obs); e["n_observations"] = len(e["observations"]) or 1
+            e.setdefault("dates", []); e["dates"].append(draft["date"]) if draft["date"] not in e["dates"] else None
+            return "observation", e
+    # NORMALISE: the record, every schema key present, derived fields derived
+    e = {k: None for k in schema["properties"]}
+    e.update({k: v for k, v in draft.items() if k in schema["properties"]})
+    e["slug"] = draft.get("slug") or (re.sub(r"[^a-z0-9]+", "-", draft["q"].lower()).strip("-")[:44].strip("-") + "-" + draft["date"].replace("-", ""))
+    e["surfaces"] = e.get("surfaces") or [draft["surface"]]; e["dates"] = e.get("dates") or [draft["date"]]
+    e["imgs"] = e.get("imgs") or []; e["img_urls"] = e.get("img_urls") or ["https://www.alexanarch.org/" + p for p in e["imgs"]]
+    e["links"] = e.get("links") or [{"url": "https://www.alexanarch.org/captures/#" + e["slug"], "authority": "canonical", "note": "the archive holds the registry and this entry"}]
+    e["cite"] = e.get("cite") or "https://www.alexanarch.org/captures/#" + e["slug"]
+    e["addr_id"] = "ADDR-" + hashlib.sha256(draft["q"].encode()).hexdigest()[:12]
+    e["obs_id"] = "OBS-" + hashlib.sha256((draft["q"] + draft["date"] + draft["surface"]).encode()).hexdigest()[:12]
+    e["n_observations"] = 1; e["observations"] = e.get("observations") or []
+    e["d_full"] = e.get("d_full") or e["d"]; e["d_truncated"] = False
+    e["mt"] = e.get("mt") or "CAPTURE"; e["cites"] = e.get("cites")
+    e["transcript_class"] = e.get("transcript_class") or "CAPTURE-TIME VERBATIM RECORD"; e["transcript_complete"] = e.get("transcript_complete") or "complete as supplied"; e["transcript_read"] = e.get("transcript_read") or ("READ IN FULL " + draft["date"])
+    e["findings"] = list(draft.get("findings") or []); e["defects"] = _flat_defects(e)
+    e["citable_unit"] = e.get("citable_unit") or "address — the exact issued string on one surface, per the Surface Rule (MANUS, 2026-08-15)"
+    extra = [k for k in draft if k not in schema["properties"]]
+    if extra: raise Refused("NORMALISE refused — fields not in the schema: %s. A new field is a schema change in its own commit." % extra)
+    errs = [err.message for err in jsonschema.Draft7Validator(schema).iter_errors(e)]
+    if errs: raise Refused("VALIDATE refused — " + "; ".join(errs[:5]))
+    if any(x.get("slug") == e["slug"] for x in registry["entries"]): raise Refused("slug already seated: " + e["slug"])
+    # INSERT at the end of its section (sections alphabetical; a new section goes where the alphabet puts it)
+    E = registry["entries"]; pos = len(E)
+    if any(x["s"] == e["s"] for x in E):
+        pos = max(i for i, x in enumerate(E) if x["s"] == e["s"]) + 1
+    else:
+        for i, x in enumerate(E):
+            if x["s"] > e["s"]: pos = i; break
+    E.insert(pos, e)
+    return "new", e
+
+
 def main():
     if len(sys.argv) < 2:
         print(__doc__)
-        print("usage: capture_intake.py <capture.json>  [--seat]")
-        print("\ncapture.json minimum:")
-        print(json.dumps({"q": '"exact query as issued"', "date": "2026-08-13",
-                          "surface": "Google AI Mode (native)",
-                          "auth": {"authenticated": False, "incognito": True},
-                          "transcript": "…verbatim machine text…"}, indent=2))
+        print("usage: capture_intake.py <draft.json> [--seat]   (draft = flat record; minimum q, date, surface, auth, ev, s, transcript, d)")
         return 0
-    cap = json.loads(pathlib.Path(sys.argv[1]).read_text())
-    try:
-        admit(cap)
-    except Refused as e:
-        print(e)
-        return 1
-    print("1. ADMIT      ok — transcript, date, surface and auth all present")
+    draft = json.loads(pathlib.Path(sys.argv[1]).read_text())
     reg = json.loads(CANON.read_text())
-    kind, addr, why = route(cap, reg)
-    print("2. ROUTE      %s\n              %s" % (kind.upper(), why))
-    if kind == "observation":
-        print("              record: «%s» (%d existing observations)"
-              % (addr["semantic_address"].get("q_as_issued"), len(addr["observations"])))
-    print("3. NORMALISE  defects, PER vector, citations and source strip derive from the "
-          "seated observation by the same functions used on every other record")
-    print("4. EMIT       fingerprint %s" % fingerprint(cap)[:16])
-    print("\nDRY RUN — nothing written. Seating runs through scripts/deposit_pipeline.py.")
+    schema = json.loads((ROOT / "rebuild/capture-registry/EA-WG-CAPTURES-01.schema.json").read_text())
+    try:
+        kind, e = seat_flat(draft, reg, schema)
+    except Refused as ex:
+        print(ex); return 1
+    print(f"1. ADMIT      ok\n2. ROUTE      {kind.upper()} — «{e['q']}» on {e['surface']}\n3. NORMALISE  {len(e['defects'])} derived defect(s) {e['defects']}; {len(e.get('findings') or [])} finding(s)\n4. VALIDATE   ok against {schema['title'][:40]}…\n5. INSERT     section «{e['s']}», slug {e['slug']}")
+    if "--seat" not in sys.argv:
+        print("dry run — pass --seat to write"); return 0
+    reg["total_captures"] = len(reg["entries"]); reg["address_count"] = len(reg["entries"]); reg["observation_count"] = sum(int(x.get("n_observations") or 1) for x in reg["entries"])
+    CANON.write_text(json.dumps(reg, ensure_ascii=False, indent=1))
+    print(f"6. EMIT       written; totals {reg['total_captures']} entries / {reg['observation_count']} observations. Now: build_capture_gallery.py → seat_capture_postflight.py (runs check_capture_registry.py)")
     return 0
 
 
