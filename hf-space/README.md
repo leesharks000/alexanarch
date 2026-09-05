@@ -11,7 +11,7 @@ license: cc-by-4.0
 ---
 # Crimson Hexagonal Archive — machine interface
 
-Records, citation graph, series chains, heteronym records and Greek-safe full-text search over the dataset [leesharsks/crimson-hexagonal-archive](https://huggingface.co/datasets/leesharsks/crimson-hexagonal-archive). A Gradio panel for people at `/`; a JSON API for agents under `/api`:
+Records, citation graph, series chains, heteronym records and Greek-safe full-text search over the dataset [leesharks/crimson-hexagonal-archive](https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive). A Gradio panel for people at `/`; a JSON API for agents under `/api`:
 
 `/api/record/{n}` · `/api/axn/{hex}` · `/api/neighbours/{n}?hops=2` · `/api/series/{n}` · `/api/search?q=…` · `/api/heteronyms` · `/api/heteronym/{id}` · `/api/health`
 
