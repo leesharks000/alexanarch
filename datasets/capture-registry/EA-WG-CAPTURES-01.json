@@ -77896,12 +77896,13 @@
  ],
  "_projection": {
   "canonical": "https://www.alexanarch.org/captures/",
-  "statement": "The gallery at alexanarch.org/captures/ is the canonical projection of this registry: every entry, anchored by slug, with its transcript rendered in full and its images. It is rebuilt from this file by scripts/build_capture_gallery.py and gated by seat_capture_postflight.py. Galleries on other fleet sites are WINDOWS: they render from this file at page load (client-side) and canonicalise to the alexanarch gallery; they never hold a copy of the registry.",
+  "statement": "The gallery at alexanarch.org/captures/ is the canonical projection of this registry: every entry, anchored by slug, with its transcript rendered in full and its images. It is rebuilt from this file by scripts/build_capture_gallery.py and gated by seat_capture_postflight.py. Galleries on other fleet sites are WINDOWS that render from this file at page load and canonicalise to the alexanarch gallery.",
   "windows": [
    "https://www.godkinggoogle.com/captures",
    "https://www.leesharks.com/captures",
    "https://www.machinemediation.org/captures/"
   ],
-  "ruled": "2026-09-05 (Lee Sharks): the captures projection on alexanarch is canonical"
+  "ruled": "2026-09-05 (Lee Sharks): the captures projection on alexanarch is canonical",
+  "correction_2026_09_05": "The first draft of this note (same day) called the fleet galleries 'stale static copies'. That was true of godkinggoogle.com/captures (hand-built, '258 receptions', no fetch). It was FALSE of leesharks.com/captures (already fetching this file at load) and machinemediation.org/captures (rendering from its own synced copy, v11.6, in step with main) — both showed 377 with main. The error came from testing client-rendered pages as static HTML. Corrected at the source; the windows now in place fetch this file directly, which removes the sync step machinemediation depended on."
  }
 }
