@@ -268,3 +268,5 @@ jobs:
         run: python3 scripts/build_browse_sections.py --check
       - name: DOI shadow pages agree with the resolution index
         run: python3 scripts/build_doi_shadow.py --check
+      - name: Capture Registry — schema, no-loss, order (2026-09-05)
+        run: pip install -q jsonschema && git fetch --depth=1 origin main && python3 scripts/check_capture_registry.py --base origin/main
