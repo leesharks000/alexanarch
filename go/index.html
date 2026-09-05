@@ -6,7 +6,8 @@
 <title>Alexanarch DOI/AXN Resolver — client-side redirect (target not visible without scripts)</title>
 <meta name="description" content="Resolves a DOI or AXN via the current alexanarch resolution map and redirects to the live target. Any resolver-map update propagates instantly on the next click.">
 <meta name="robots" content="noindex, follow">
-<link rel="canonical" href="https://www.alexanarch.org/resolve/">
+<meta name="robots" content="noindex,follow">
+<!-- no canonical: severed DOIs with a live successor are redirected at the edge (vercel.json) to /s/doi/<doi>/ before any HTML; only DOIs with no page in the archive reach this resolver -->
 <style>
 body{font-family:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#fafafa;color:#1a1a1a;padding:60px 24px;max-width:640px;margin:0 auto;line-height:1.6}
 h1{font-size:1.2em;color:#1a3a5c;font-weight:600;margin-bottom:12px}

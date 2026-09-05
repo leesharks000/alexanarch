@@ -1,6 +1,30 @@
 {
   "redirects": [
     {
+      "source": "/go/",
+      "has": [
+        {
+          "type": "query",
+          "key": "doi",
+          "value": "10\\.5281/zenodo\\.(?<n>\\d+)"
+        }
+      ],
+      "destination": "/s/doi/10.5281/zenodo.:n/",
+      "permanent": true
+    },
+    {
+      "source": "/go",
+      "has": [
+        {
+          "type": "query",
+          "key": "doi",
+          "value": "10\\.5281/zenodo\\.(?<n>\\d+)"
+        }
+      ],
+      "destination": "/s/doi/10.5281/zenodo.:n/",
+      "permanent": true
+    },
+    {
       "source": "/records/",
       "has": [
         {
