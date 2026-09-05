@@ -1,12 +1,12 @@
 {
  "name": "Deletion Semantics Conformance Fixture",
- "version": "2.2",
+ "version": "2.4",
  "date": "2026-09-03",
  "license": {
   "dataset": "CC0-1.0",
   "scripts": "MIT"
  },
- "total_cases": 119,
+ "total_cases": 121,
  "total_classes": 23,
  "source_population": 1937,
  "source_repository": "https://github.com/leesharks000/alexanarch",
@@ -55,6 +55,11 @@
    "version": "2.2",
    "date": "2026-09-03",
    "summary": "eight cases added: the matched A/B(i)/B(ii)/C trio (B split in two, the cross-test's finding), the intake-acknowledgment pair offered on knowledge-catalog#207, and two absence-reconciliation cases from the producer's repair; producer instances annotated at 55e6493; reference consumer reads the reconciliation key"
+  },
+  {
+   "version": "2.4",
+   "date": "2026-09-05",
+   "summary": "two identifier-form cases from the cross-test's run 08 finding and the producer's run 09 repair: split forms across presence maps (exclusivity not checkable; interval closed at 3806111) and its uniform must-not-mark twin; version label corrected (cases.json had carried 2.2)"
   }
  ]
 }

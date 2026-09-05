@@ -30,3 +30,8 @@ git -C remember-okf-sample-bundle fetch -q --tags && git -C remember-okf-sample-
 (cd remember-okf-sample-bundle && sha256sum -c SHA256SUMS)
 python3 translator/live_repair.py remember-okf-sample-bundle
 git -C remember-okf-sample-bundle checkout -q pre-absence-records
+echo "== 09 the key-form repair, live (v1.2, 2026-09-05) =="
+git -C remember-okf-sample-bundle fetch -q --tags && git -C remember-okf-sample-bundle checkout -q 3806111cad1a058585242f7ad78716c4a767c782
+(cd remember-okf-sample-bundle && sha256sum -c SHA256SUMS)
+python3 translator/key_form.py remember-okf-sample-bundle
+git -C remember-okf-sample-bundle checkout -q pre-absence-records
