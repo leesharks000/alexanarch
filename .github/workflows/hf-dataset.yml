@@ -2,7 +2,7 @@ name: Hugging Face dataset
 on:
   push:
     branches: [main]
-    paths: ['data/registry.json', 'data/texts/**', 'data/attachments/**', 'data/lexical-minting-registry.json', 'data/EA-WG-CAPTURES-01.json', 'scripts/build_hf_dataset.py']
+    paths: ['data/registry.json', 'data/texts/**', 'data/attachments/**', 'data/lexical-minting-registry.json', 'data/EA-WG-CAPTURES-01.json', 'data/citation-graph.json', 'data/doi-resolution-index.json', 'datasets/**', 'scripts/build_hf_dataset.py']
   schedule:
     - cron: '30 6 * * 1'   # weekly, Mondays 06:30 UTC — picks up fleet-site changes
   workflow_dispatch: {}
