@@ -672,8 +672,7 @@ def main():
         return 0
     r = json.loads(REG.read_text())
     entries = r["entries"]
-    # ORDER IS THE PROJECTOR'S (2026-09-05): the file is grouped by section (its own rule, `_order`); the
-    # gallery renders sections alphabetical and, within a section, entries by the ISSUED query — leading
+    # ORDER IS THE PROJECTOR'S (2026-09-05): the gallery renders entries A–Z by the ISSUED query — leading
     # quote/whitespace stripped for ordering only, numeric-aware, accent/case/punctuation-insensitive;
     # date then slug break ties. Deterministic. Seating cannot disturb this, wherever it lands in the file.
     import unicodedata as _ud, re as _re
@@ -682,7 +681,10 @@ def main():
         q = "".join(ch for ch in _ud.normalize("NFKD", q) if not _ud.combining(ch)).lower()
         q = "".join(ch for ch in q if ch.isalnum() or ch.isspace())
         return [(0, int(t)) if t.isdigit() else (1, t) for t in _re.split(r"(\d+)", q)]
-    entries = sorted(entries, key=lambda e: (str(e.get("s") or ""), _qkey(e), str(e.get("date") or ""), e.get("slug") or ""))
+    # A–Z ACROSS THE WHOLE GALLERY by issued query (the rule #74 established and the operator merged);
+    # sections remain as filter chips, not as display blocks. The FILE stays grouped by section (intake
+    # inserts into its section; check_capture_registry ORDER); file order and display order are decoupled.
+    entries = sorted(entries, key=lambda e: (_qkey(e), str(e.get("date") or ""), e.get("slug") or ""))
     page = PAGE.read_text()
 
     cards = "\n".join(card(e) for e in entries)
