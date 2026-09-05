@@ -667,6 +667,20 @@ def main():
         return 0
     r = json.loads(REG.read_text())
     entries = r["entries"]
+    # ORDER IS THE PROJECTOR'S, NOT THE REGISTRY'S (2026-09-05). Intake appends, so registry
+    # order is arrival order and every seating lands at the tail. The gallery renders in the
+    # order the fleet window on leesharks.com established: alphabetical by the ISSUED query
+    # with leading quote/apostrophe/whitespace stripped for ordering only (the stored value is
+    # untouched — «quoted» is display-significant), numeric-aware, case- and punctuation-
+    # insensitive; date breaks ties. Deterministic, so the determinism gate still holds.
+    import unicodedata as _ud
+    def _sort_key(e):
+        q = str(e.get("q") or "").lstrip('«"\'‘’“” \t').strip()
+        q = "".join(ch for ch in _ud.normalize("NFKD", q) if not _ud.combining(ch)).lower()
+        q = "".join(ch for ch in q if ch.isalnum() or ch.isspace())
+        parts = [int(t) if t.isdigit() else t for t in __import__("re").split(r"(\d+)", q)]
+        return ([(0, x) if isinstance(x, int) else (1, x) for x in parts], str(e.get("date") or ""), e.get("slug") or "")
+    entries = sorted(entries, key=_sort_key)
     page = PAGE.read_text()
 
     cards = "\n".join(card(e) for e in entries)
