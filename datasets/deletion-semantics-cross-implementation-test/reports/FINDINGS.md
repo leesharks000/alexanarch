@@ -212,5 +212,7 @@ checkable from the document alone. Both earlier pins remain reachable (`ea18185f
 
 The producer added a finding of his own that belongs here: his 2026-09-01 audit had computed the intersection
 after silently stripping the URI prefix — a check normalised by knowledge the document never stated, the same
-defect one layer up. Run 08 caught what that audit was built to catch and missed. That is the cross-test doing
-the one thing a self-test cannot.
+defect one layer up. Run 08 caught what that audit was built to catch and missed. The self-test did not find
+it because the test carried the same unstated normalisation as the emitter: producer and validator agreed by
+sharing knowledge absent from the artifact. That is what an independent implementation adds — not a stricter
+check, but one that does not share the assumption.
