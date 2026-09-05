@@ -908,6 +908,20 @@ def regenerate_static_page(d, eidx, registry=None):
                          "description": f"former identifier; severed by the registrant 2026-06-19; {_doi_state(_doi)}; superseded by the AXN",
                          "sameAs": f"https://www.alexanarch.org/s/doi/{_doi}/"})
         _ld["identifier"] = _ids
+    # 2026-09-05: corrections at the point of use. A record corrected by an erratum states it
+    # beside its identifiers, typed by severity (attribution / evidence-status / mathematical),
+    # and in JSON-LD as `correction` (schema.org CorrectionComment) — so a reader reaching a June
+    # claim meets the later correction at the claim, machine-readably.
+    _corr_html = ''; _corr_ld = []
+    for _r in (d.get('related_deposits') or []):
+        if isinstance(_r, dict) and _r.get('relation') == 'corrected_by':
+            _cn = _r.get('deposit_number'); _sev = _r.get('severity') or 'correction'
+            _corr_html += (f'<div style="border-left:4px solid #b23;background:#fff;padding:8px 12px;margin:10px 0;font-size:.86em">'
+                           f'<strong>Corrected by ERRATUM #{_cn}</strong> <span style="font-family:var(--mono);font-size:.85em;color:#b23">{esc(_sev)}</span> — {esc(_r.get("note") or "")} '
+                           f'<a href="/s/records/{_cn}/" style="color:var(--accent)">read the erratum</a>. Canonical bytes of this record are unchanged; the correction is registered here at the point of use.</div>')
+            _corr_ld.append({"@type": "CorrectionComment", "@id": f"https://www.alexanarch.org/s/records/{_cn}/", "url": f"https://www.alexanarch.org/s/records/{_cn}/",
+                             "name": f"ERRATUM #{_cn}", "text": _r.get("note") or "", "about": {"@type": "PropertyValue", "propertyID": "severity", "value": _sev}})
+    if _corr_ld: _ld["correction"] = _corr_ld
     _ident_html = ''
     if _dois:
         _rows = ''.join(f'<div><span style="color:#b23">former DOI</span> <span class="m" style="font-family:var(--mono);font-size:.85em">{esc(_u.replace("https://doi.org/",""))}</span> — severed 2026-06-19 by the registrant; {esc(_doi_state(_u.replace("https://doi.org/","")))}; <a href="/s/doi/{esc(_u.replace("https://doi.org/",""))}/" style="color:var(--accent)">resolution page</a></div>' for _u in _dois)
@@ -1855,7 +1869,7 @@ def regenerate_static_page(d, eidx, registry=None):
 <div style="font-size:.85em;color:#777;margin-bottom:10px">{esc(d["creator"])} · {esc(d["date"])} · {esc(d.get("content_type",""))}{f' · <span style="color:var(--accent);font-weight:500">{esc(version)}</span>' if (version and (version != 'v1.0' or series_id)) else ''}</div>
 <a style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0" href="/data/deposits/AXN-{hex_id}.md" download>↓ Download MD</a> <a style="display:inline-block;background:var(--accent);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0 6px 4px" href="/papers/AXN-{hex_id.zfill(4)}.pdf">↓ PDF</a>
 <div style="margin:8px 0">{kw_html}</div>
-{_ident_html}
+{_corr_html}{_ident_html}
 <h2>Description</h2>
 <p style="font-size:.9em">{_render_inline(d.get("description",""))}</p>
 {wiki_html}

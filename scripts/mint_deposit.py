@@ -201,6 +201,9 @@ CONTENT_TYPE_TO_FAMILY = {
     # the semicolon-separated content_type declarations all begin with
     # "Institutional correspondence" and belong to the GOVERNANCE family.
     "Institutional correspondence": "GOVERNANCE",
+    # Errata are record governance (added 2026-09-05; #1554 was reclassified by hand):
+    "Erratum / record correction": "GOVERNANCE",
+    "Erratum": "GOVERNANCE",
     "Correspondence": "GOVERNANCE",
     # Literary forms (added 2026-07-23 after #1410 defaulted to UNCLASSIFIED):
     # made literary objects — the epistle, the essay, the poem, etc. — are
