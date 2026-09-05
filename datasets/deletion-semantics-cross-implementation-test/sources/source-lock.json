@@ -1,7 +1,7 @@
 {
  "package": "deletion-semantics-cross-implementation-test",
- "version": "1.1",
- "retrieved": "2026-09-03",
+ "version": "1.2",
+ "retrieved": "2026-09-05",
  "sources": {
   "producer_bundle": {
    "repo": "andrewcrenshaw/remember-okf-sample-bundle",
@@ -32,6 +32,13 @@
    "role": "the producer's own repair (2026-09-01): .manifest.json carries absences (removed | never_landed) exclusive with entries, plus absenceReconciliation",
    "integrity": "bundle SHA256SUMS at this commit verified in run 08",
    "non_absence_change": "generated.by human:b26589eb -> human:1c8998e4 (deterministic fallback); log.md, tombstones.md and the observed concept page byte-identical to ea18185f"
+  },
+  "producer_bundle_key_form": {
+   "repo": "andrewcrenshaw/remember-okf-sample-bundle",
+   "commit": "3806111cad1a058585242f7ad78716c4a767c782",
+   "role": "key-form repair (2026-09-05): entries and absences values carry id in remember://lesson/<id> form; exclusivity asserted over id values; bare entries keys retained for addressing",
+   "integrity": "bundle SHA256SUMS 7/7 OK at this commit (run 09)",
+   "pins_reachable": "ea18185f (tag pre-absence-records) and 55e6493 both ancestors of this tip"
   }
  },
  "parameters": {

@@ -192,3 +192,25 @@ will read every absence as exclusive trivially. Not a deletion-semantics defect;
 keying-consistency one, and cheap to fix on either side. Reported to the producer with this run.
 
 Everything in run 08 is stdlib, pinned, and in `commands/reproduce.sh`.
+
+
+---
+
+## 9. The key-form repair, live — v1.2, 2026-09-05
+
+§8 reported that `entries` was keyed by bare lesson id and `absences` by full `remember://` URI: one identity in
+two forms, so the exclusivity rule held before normalisation only by accident of representation. On 2026-09-05
+@andrewcrenshaw shipped the repair at `3806111cad1a058585242f7ad78716c4a767c782`: every `entries` and
+`absences` value carries an `id` field in the `remember://lesson/<id>` form, the invariant is asserted over
+those values, and the bare `entries` keys stay as addressing convenience so nothing an existing reader parses
+moved.
+
+Run 09 reads that manifest with no normalisation: every value carries the field; every id is in the one stated
+form; the two id sets are disjoint. The rule that held by accident now holds by assertion over a stated form,
+checkable from the document alone. Both earlier pins remain reachable (`ea18185f` via `pre-absence-records`,
+`55e6493`); `SHA256SUMS` verifies 7/7 at the new tip.
+
+The producer added a finding of his own that belongs here: his 2026-09-01 audit had computed the intersection
+after silently stripping the URI prefix — a check normalised by knowledge the document never stated, the same
+defect one layer up. Run 08 caught what that audit was built to catch and missed. That is the cross-test doing
+the one thing a self-test cannot.

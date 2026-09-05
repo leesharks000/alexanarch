@@ -69,7 +69,17 @@ def reconciliation_state(case):
         return "not_run"
     return None
 
+def key_form_state(case):
+    """v2.4 (2026-09-05): exclusivity is only a finding if the document states one identifier form."""
+    ds = ((case.get("recorded") or {}).get("declared_state") or "").lower()
+    if "no id field in values" in ds or ("bare lesson id" in ds and "remember://" in ds and "carry id" not in ds): return "split"
+    if "carry id" in ds: return "uniform"
+    return None
+
 def repaired(case):
+    ks = key_form_state(case)
+    if ks == "split": return "exclusivity_not_checkable"
+    if ks == "uniform": return "exclusive"
     v = unrepaired(case)
     rs = reconciliation_state(case)
     if rs == "not_run":
