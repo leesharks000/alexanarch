@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""push_hf_space.py — upload hf-space/ to a Docker Space. Needs HF_TOKEN and HF_SPACE (e.g. leesharsks/crimson-hexagonal-archive-api)."""
+"""push_hf_space.py — upload hf-space/ to a Docker Space. Needs HF_TOKEN and HF_SPACE (e.g. leesharks/crimson-hexagonal-archive-api)."""
 import os, sys, pathlib
 from huggingface_hub import HfApi
 repo = os.environ.get('HF_SPACE'); tok = os.environ.get('HF_TOKEN')

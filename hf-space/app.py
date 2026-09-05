@@ -1,6 +1,6 @@
 """Crimson Hexagonal Archive — machine interface.
 Serves the archive's records, graph and full-text search from the Hub dataset
-(leesharsks/crimson-hexagonal-archive), for agents and tools. No page ranking involved."""
+(leesharks/crimson-hexagonal-archive), for agents and tools. No page ranking involved."""
 import spaces  # must be imported before gradio/torch on ZeroGPU hardware
 import os, json, sqlite3, io, time
 
@@ -13,7 +13,7 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import JSONResponse, HTMLResponse, PlainTextResponse
 from huggingface_hub import hf_hub_download
 
-DATASET = os.environ.get("HF_DATASET", "leesharsks/crimson-hexagonal-archive")
+DATASET = os.environ.get("HF_DATASET", "leesharks/crimson-hexagonal-archive")
 app = FastAPI(title="Crimson Hexagonal Archive — machine interface", version="0.1")
 DB = sqlite3.connect(":memory:", check_same_thread=False)
 STATE = {"loaded": False, "built_at": None, "rows": 0}
