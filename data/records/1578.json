@@ -1,0 +1,165 @@
+{
+ "deposit_number": 1578,
+ "axn": "AXN:066A.GOVERNANCE.🗿♆🫶🔒✨🕗",
+ "hex": "066A",
+ "family": "GOVERNANCE",
+ "emoji": "🗿♆🫶🔒✨🕗",
+ "hash": "fca6bdf9e9690791cc4871514d6b280f56b44175eb03d4240c651b13655eb3a5",
+ "title": "ERRATUM to AXN:02E3 — Monotonicity Per Realization Is Not Established: Re-scoping Appendix A (ii)–(iii) and the Bistability Claim of Deposit #783",
+ "creator": "Lee Sharks, for Nobel Glas",
+ "date": "2026-09-05",
+ "description": "Deposit #783 (Fear and Trembling: Diversity Contraction Across Substrates, v9.1, Nobel Glas) asserts in Appendix A that under axioms A1–A4 Shannon entropy is non-increasing and modal mass non-decreasing at each step of the chain μ_{t+1} = S(Rμ_t). Both properties hold for the selection kernel S alone and for the composed step in expectation and in the long run; they do not hold per realization, because finite resampling R can flatten the distribution before S concentrates it. Counterexample: (0.90, 0.10) → resample (0.80, 0.20) → concentrate (0.85, 0.15); entropy rises 0.325 → 0.423 nats, modal mass falls 0.90 → 0.85. Property (i), support non-increasing with probability 1, stands. The §6 bistability sentence is likewise re-scoped: super-linear vanishing of regeneration makes the zero state absorbing (local); a second stable equilibrium requires g(D) − pD to change sign twice on (0, 1], which the paper's saturating example supplies. No numerical result depends on per-step monotonicity; Figure 4 is the deterministic ODE. Canonical bytes unchanged; registry-level cross-reference per #1554. Counterexample supplied by an external machine reader on 2026-09-05 and recomputed.",
+ "content_type": "Erratum / record correction",
+ "license": "CC-BY-4.0",
+ "substrate": "AI-assisted (substrate) — drafted in working dialogue with Claude (Anthropic) under operator direction; Appendix A fetched from the canonical store in-session; the counterexample was supplied by an external machine reader (ChatGPT, unprimed traversal, 2026-09-05) and recomputed before this erratum was written; ruled and adopted by Lee Sharks on behalf of the heteronym.",
+ "root_axn": "AXN:066A.GOVERNANCE",
+ "axn_schema_version": "v2",
+ "protocol_version": "alexanarch-deposit-protocol/v1",
+ "axn_canonical": "fca6bdf9e9690791cc4871514d6b280f56b44175eb03d4240c651b13655eb3a5",
+ "clusters": [
+  "Terminal",
+  "Alchemical",
+  "Gestural",
+  "Terminal",
+  "Liminal",
+  "Temporal"
+ ],
+ "axn_reading": "Closure -> Transmutation -> Touch -> Closure -> Threshold -> Duration",
+ "minted_at": "2026-09-05T15:35:06Z",
+ "status": "ACTIVE",
+ "status_authorial": "SELF_SERVE_MINTED",
+ "full_text_path": "/data/texts/AXN-066A-text.md",
+ "wiki_article": "\"ERRATUM to AXN:02E3 — Monotonicity Per Realization Is Not Established\" is a record correction by Lee Sharks for Nobel Glas, dated 2026-09-05, in the Crimson Hexagonal Archive (GOVERNANCE family). It re-scopes Appendix A (ii)–(iii) of Fear and Trembling: Diversity Contraction Across Substrates (#783, v9.1), which asserted that Shannon entropy is non-increasing and modal mass non-decreasing at each step of the resample-then-select chain. The properties hold for the selection kernel alone and for the chain in expectation and in the long run, not per realization: a two-type counterexample (0.90, 0.10 → 0.80, 0.20 → 0.85, 0.15) raises entropy from 0.325 to 0.423 nats. Property (i), support non-increasing, stands; no numerical result in the paper depends on per-step monotonicity. The §6 bistability sentence is likewise separated into its local component (super-linear vanishing makes zero absorbing) and the global sign-change condition the paper's saturating example supplies. Counterexample supplied by an external machine reader on 2026-09-05 and recomputed. Canonical bytes of #783 unchanged; registry-level cross-reference per #1554.",
+ "wiki_status": "AUTHORSHIP_REQUIRED",
+ "entities": [
+  {
+   "subject": "ERRATUM to AXN:02E3 — Monotonicity Per Realization Is Not Established: Re-scoping Appendix A (ii)–(i",
+   "predicate": "created_by",
+   "object": "Lee Sharks, for Nobel Glas",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "ERRATUM to AXN:02E3 — Monotonicity Per Realization Is Not Established: Re-scoping Appendix A (ii)–(i",
+   "predicate": "is_type",
+   "object": "Erratum / record correction",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "ERRATUM to AXN:02E3 — Monotonicity Per Realization Is Not Established: Re-scoping Appendix A (ii)–(i",
+   "predicate": "belongs_to_family",
+   "object": "GOVERNANCE",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "ERRATUM to AXN:02E3 — Monotonicity Per Realization Is Not Established: Re-scoping Appendix A (ii)–(i",
+   "predicate": "is_part_of",
+   "object": "Crimson Hexagonal Archive",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "ERRATUM to AXN:02E3 — Monotonicity Per Realization Is Not Established: Re-scoping Appendix A (ii)–(i",
+   "predicate": "references",
+   "object": "Nobel Glas",
+   "type": "heteronym",
+   "evidence_status": "observed"
+  }
+ ],
+ "entity_status": "provisional",
+ "defines_concepts": [],
+ "orcid": "0009-0000-1599-0703",
+ "version": "v1.0 — 2026-09-05",
+ "keywords": [
+  "erratum; entropy; monotonicity; finite resampling; selection kernel; bistability; Allee effect; diversity contraction; model collapse; Fear and Trembling"
+ ],
+ "related_identifiers_raw": "Corrects: AXN:02E3 (deposit #783). Precedent: AXN:064F (deposit #1554, the erratum mechanism).",
+ "mint_source": {
+  "kind": "github_issue",
+  "issue_number": 0,
+  "repository": "leesharks000/alexanarch",
+  "minted_by_workflow": ".github/workflows/mint-axn.yml",
+  "minted_by_script": "scripts/mint_deposit.py",
+  "minted_via": "self_serve_validated_pr"
+ },
+ "body_status": {
+  "class": "full",
+  "lacuna": false,
+  "recovery_status": "COMPLETE",
+  "residual_chars": 5565,
+  "audited_at": "2026-09-05T15:35:06Z",
+  "audit_version": "mint-time-declaration"
+ },
+ "concepts_attested_none": true,
+ "lexical_attested_none": true,
+ "related_deposits": [
+  {
+   "deposit_number": 783,
+   "axn": "AXN:02E3.EMPIRICAL.🔥🌇🌠🦋🍃🤲",
+   "relation": "corrects",
+   "severity": "mathematical",
+   "note": "Appendix A (ii)–(iii) asserted per realization; hold for S alone and for S∘R in expectation and asymptotically; §6 bistability re-scoped to local attraction plus the global sign-change condition"
+  },
+  {
+   "deposit_number": 1554,
+   "axn": "AXN:064F.GOVERNANCE.🏺👆♦️🍃⏪🔃",
+   "relation": "follows_precedent",
+   "note": "the erratum mechanism"
+  }
+ ],
+ "references_concepts": [],
+ "references_concept_count": 0,
+ "citations": [],
+ "wikidata_candidates": [],
+ "cha_cross_references": [],
+ "external_metadata_path": "/data/external-metadata/AXN-066A.json",
+ "spxi_audit": {
+  "spxi_protocol": "v0.2",
+  "validated_at": "2026-09-05T15:35:32.689506+00:00",
+  "layers": {
+   "layer_1_inscription_anchors": {
+    "present": false,
+    "anchors_found": [
+     "date"
+    ],
+    "anchor_count": 1,
+    "orcid_in_body": false,
+    "creator_in_body": false,
+    "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+   },
+   "layer_2_micro_kernels": {
+    "present": false,
+    "fenced_json_blocks": 0,
+    "json_ld_context_markers": 0
+   },
+   "layer_3_content_hash": {
+    "present": true,
+    "canonical_hash": "a3dd317991f967d516501f529cd249286fe89b6769060a62c1fc92ec855f5a86",
+    "hash_in_body": false,
+    "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+   },
+   "layer_4_cross_signing": {
+    "present": false,
+    "cross_references_count": 0,
+    "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+   },
+   "layer_5_external_anchors": {
+    "present": true,
+    "wikidata_qid_count": 0,
+    "external_doi_count": 0,
+    "orcid_present": true
+   }
+  },
+  "overall_conformance": "partial"
+ },
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/1578/",
+  "self_url": "https://www.alexanarch.org/data/records/1578.json",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-066A-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}
