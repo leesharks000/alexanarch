@@ -39,8 +39,10 @@
  "orcid": "0009-0000-1599-0703",
  "license": "CC-BY-4.0",
  "galleries": [
+  "https://www.alexanarch.org/captures/",
   "https://www.godkinggoogle.com/captures",
-  "https://leesharks.com/captures"
+  "https://www.leesharks.com/captures",
+  "https://www.machinemediation.org/captures/"
  ],
  "total_captures": 378,
  "_reseated": "RESEATED 2026-08-13 after the 2026-08-12 withdrawal. Generated FROM rebuild/capture-registry/EA-WG-CAPTURES-01-REBUILD.json, which is canonical. This file is a PROJECTION: the gallery is a window, not a store.",
@@ -77891,5 +77893,15 @@
    "detail": "v11.6 had been re-sorted to strict date order, which interleaved all 21 sections — 254 section runs across 21 sections, meaning almost every entry sat between two unrelated ones. v9.6 and v8.11 both grouped by section (33 runs across 9 sections) and agree with each other 188/194 on ordering; v11.6 agreed with each of them only ~64%. Grouping restored: 21 runs.",
    "operator": "Claude (substrate) under MANUS direction"
   }
- ]
+ ],
+ "_projection": {
+  "canonical": "https://www.alexanarch.org/captures/",
+  "statement": "The gallery at alexanarch.org/captures/ is the canonical projection of this registry: every entry, anchored by slug, with its transcript rendered in full and its images. It is rebuilt from this file by scripts/build_capture_gallery.py and gated by seat_capture_postflight.py. Galleries on other fleet sites are WINDOWS: they render from this file at page load (client-side) and canonicalise to the alexanarch gallery; they never hold a copy of the registry.",
+  "windows": [
+   "https://www.godkinggoogle.com/captures",
+   "https://www.leesharks.com/captures",
+   "https://www.machinemediation.org/captures/"
+  ],
+  "ruled": "2026-09-05 (Lee Sharks): the captures projection on alexanarch is canonical"
+ }
 }
