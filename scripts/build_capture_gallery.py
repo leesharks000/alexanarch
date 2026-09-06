@@ -28,6 +28,20 @@ Usage:  python3 scripts/build_capture_gallery.py
 """
 import json, re, sys, pathlib, html
 
+def _status_slug(mt):
+    """Full-token slug of mt for the outcome facet: lowercase, non-alnum -> '-'.
+    Replaces the first-word scheme, under which ZERO RESULT and ZERO INDEX
+    collided on 'zero' and chip tokens never matched card values (case/prefix
+    mismatch made every outcome chip filter to nothing)."""
+    import re as _re
+    return _re.sub(r"[^a-z0-9]+", "-", (mt or "unrated").lower()).strip("-")[:60]
+
+def _probe_of(q):
+    """Derived probe type: exact iff the issued query contains a straight or
+    curly double-quote; else broad. Mirrors capture_intake.py NORMALISE."""
+    return "exact" if any(ch in (q or "") for ch in ('"', "\u201c", "\u201d")) else "broad"
+
+
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 REG = ROOT / "data/EA-WG-CAPTURES-01.json"
 PAGE = ROOT / "captures/index.html"
@@ -628,7 +642,8 @@ def card(e):
     return (
         f'<div class="cap-card" id="{esc(slug)}" '
         f'data-section="{esc(e.get("s") or "Unsectioned")}" '
-        f'data-status="{esc(mt.split()[0].lower())}" '
+        f'data-status="{esc(_status_slug(mt))}" '
+        f'data-probe="{esc(e.get("probe") or _probe_of(e.get("q")))}" '
         f'data-defects="{esc(" ".join(defects))}" '
         f'itemscope itemtype="https://schema.org/CreativeWork">' + _alias +
         f'<meta itemprop="identifier" content="{esc(cite)}">'

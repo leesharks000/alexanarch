@@ -94,3 +94,16 @@ updated on the seat and total_captures was not, so the chain passed its gate and
 the projection still announced 372 for a 373-entry registry. Both declared counts
 are now checked by check_capture_page_current.py. A count that some consumer
 prefers is a count the gate must hold.
+
+## probe (added 2026-09-06)
+
+`probe` is DERIVED, never author-supplied: `exact` iff the issued `q` contains a
+straight or curly double-quote character; else `broad`. NORMALISE computes it;
+the schema requires it (enum). It exists because `mt` had been carrying two
+axes at once — probe-type (EXACT/BROAD MATCH, a property of the query) and
+outcome (ADOPTION, CAPTURE, ZERO RESULT, ZERO INDEX, PARTIAL, a property of
+what came back) — and the two senses alternated at intake: 98 quoted-query
+entries, only 4 carrying EXACT MATCH; 12 EXACT MATCH entries unquoted; 2 BROAD
+MATCH quoted. Those 14 `mt` labels stand unchanged pending ruling; `probe` now
+records the convention mechanically beside them. The gallery's facet formerly
+labelled "By status" is "By outcome"; a "By probe" facet reads this field.

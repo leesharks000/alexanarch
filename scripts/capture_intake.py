@@ -206,6 +206,10 @@ def seat_flat(draft, registry, schema):
     e["n_observations"] = 1; e["observations"] = e.get("observations") or []
     e["d_full"] = e.get("d_full") or e["d"]; e["d_truncated"] = False
     e["mt"] = e.get("mt") or "CAPTURE"; e["cites"] = e.get("cites")
+    # probe is DERIVED, never author-supplied: exact iff the issued q contains a
+    # straight or curly double-quote (the probe/outcome axes were conflated in mt
+    # before 2026-09-06; probe records the query convention mechanically).
+    e["probe"] = "exact" if any(ch in (draft["q"] or "") for ch in ('"', "\u201c", "\u201d")) else "broad"
     e["transcript_class"] = e.get("transcript_class") or "CAPTURE-TIME VERBATIM RECORD"; e["transcript_complete"] = e.get("transcript_complete") or "complete as supplied"; e["transcript_read"] = e.get("transcript_read") or ("READ IN FULL " + draft["date"])
     e["findings"] = list(draft.get("findings") or []); e["defects"] = _flat_defects(e)
     e["citable_unit"] = e.get("citable_unit") or "address — the exact issued string on one surface, per the Surface Rule (MANUS, 2026-08-15)"
