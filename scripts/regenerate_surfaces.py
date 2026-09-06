@@ -697,9 +697,24 @@ def regenerate_sitemap(reg, dry_run=False):
         reg["deposits"],
         key=lambda d: d.get("deposit_number") or d.get("issue_number") or 0,
     )
+    # RETIRED RECORDS ARE NOT LISTED (2026-09-06). The retirement apparatus of
+    # 2026-08-10 serves superseded and stub records with <meta robots=noindex>
+    # and, where a successor exists, a canonical link to it — the URL is kept
+    # and the record is not deleted, because deletion would hide the severance.
+    # A sitemap that still lists those URLs tells Google "index this" while the
+    # page says "do not": Search Console reported exactly that on 2026-09-06
+    # ("Excluded by 'noindex' tag" and "Duplicate, Google chose different
+    # canonical than user" against submitted sitemap URLs — 239 records). A
+    # sitemap lists canonicals only. The pages, their noindex, their banners
+    # and their successor links are untouched; they are simply not submitted.
+    skipped = 0
     for d in deposits:
         n = d.get("deposit_number") or d.get("issue_number")
         if not n:
+            continue
+        retired = (d.get("body_status") or {}).get("retired")
+        if retired or d.get("status") in ("SUPERSEDED", "WITHDRAWN") or d.get("withdrawn"):
+            skipped += 1
             continue
         # <lastmod> carries the record's own modification date when it has one
         # (see scripts/record_modification.py). Absence means unmodified since
@@ -731,7 +746,7 @@ def regenerate_sitemap(reg, dry_run=False):
     _receipt(target)
     with open(target, "w", encoding="utf-8") as f:
         f.write(out)
-    print(f"  ✓ sitemap.xml ({len(out):,} bytes, {len(deposits)} deposit URLs)")
+    print(f"  ✓ sitemap.xml ({len(out):,} bytes, {len(deposits)-skipped} deposit URLs; {skipped} retired/superseded records not listed)")
 
 
 # ──────────────────────────────────────────────────────────────────────────────
