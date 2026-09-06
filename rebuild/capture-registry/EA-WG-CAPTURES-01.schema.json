@@ -1,68 +1,443 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://www.alexanarch.org/rebuild/capture-registry/EA-WG-CAPTURES-01.schema.json",
-  "title": "EA-WG-CAPTURES-01 entry — the fixed record shape, applied 2026-09-05",
-  "description": "One capture entry in data/EA-WG-CAPTURES-01.json. Written from the census of the file as it stood (378 entries, 73 keys): the 14 universal keys and the 23 near-universal keys are the record; every long-tail key was ruled promoted (typed below), folded into `notes` (preserved under its original name), or nothing dropped. `defects` is the derived controlled vocabulary from capture_intake.extract_defects; editorial sentences live in `findings`. additionalProperties is false: a seating that needs a new field changes this schema first, in its own commit, with a reason.",
-  "type": "object",
-  "additionalProperties": false,
-  "required": ["slug","date","surface","auth","ev","mt","s","q","q_kind","cites","transcript","transcript_class","transcript_complete","transcript_read","per","sf","reading","links","imgs","img_urls","cite","d","addr_id","obs_id","defects","findings","surfaces","dates","n_observations","observations","analysis"],
-  "properties": {
-    "slug": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
-    "date": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$", "description": "ISO date of this capture. Never the string 'null'."},
-    "surface": {"type": "string", "description": "The surface as ruled (MANUS surface rule 2026-08-15). UNDETERMINED / UNRESOLVED are legal historical values, not defaults for new intake."},
-    "surface_basis": {"type": ["string","null"]},
-    "surfaces": {"type": "array", "items": {"type": "string"}},
-    "auth": {"type": ["string","null"], "description": "signed in / signed out, incognito, unprimed… Null only on pre-contract entries."},
-    "auth_basis": {"type": ["string","null"]},
-    "ev": {"type": "string", "enum": ["paste","ocr","paste + frame","frame + paste","frame","none","agent run"]},
-    "mt": {"type": "string", "description": "match type as recorded (CAPTURE, EXACT MATCH, BROAD MATCH, PARTIAL, ADOPTION, …)"},
-    "s": {"type": "string", "description": "section — the grouping key of the gallery"},
-    "q": {"type": "string", "description": "the issued string, exactly as typed, quotes significant"},
-    "q_kind": {"type": ["string","null"]},
-    "cites": {"type": ["integer","null"], "description": "citation-card count; null = apparatus not captured (NULL is not zero)"},
-    "cite_list": {"type": ["array","null"], "items": {"type": "object"}},
-    "archive_controlled_cites": {"type": ["integer","null"]},
-    "transcript": {"type": ["string","null"], "description": "the machine text, verbatim. Required by the intake contract since 2026-08-13; null only on the 16 pre-contract entries."},
-    "transcript_raw": {"type": ["string","null"]},
-    "transcript_class": {"type": ["string","null"]},
-    "transcript_complete": {"type": ["string","null"]},
-    "transcript_read": {"type": ["string","null"]},
-    "per": {"type": ["number","null"]},
-    "per_v": {"type": ["object","null"]},
-    "per_note": {"type": ["string","null"]},
-    "sf": {"type": ["string","null"]},
-    "sf_derived": {"type": ["boolean","null"]},
-    "reading": {"type": ["string","null"]},
-    "analysis": {"type": ["string","null"]},
-    "d": {"type": "string", "description": "the FULL finding (renderer_contract); d_full is its alias"},
-    "d_full": {"type": ["string","null"]},
-    "d_truncated": {"type": ["boolean","null"]},
-    "links": {"type": "array", "items": {"type": "object"}},
-    "imgs": {"type": "array", "items": {"type": "string"}, "description": "repo-relative image paths under data/captures/<slug>/"},
-    "img_urls": {"type": ["array","null"], "items": {"type": "string", "pattern": "^https://"}},
-    "cite": {"type": "string"},
-    "citable_unit": {"type": ["string","null"]},
-    "addr_id": {"type": "string", "pattern": "^ADDR-[0-9a-f]{12}$"},
-    "obs_id": {"type": "string", "pattern": "^OBS-[0-9a-f]{12}$"},
-    "n_observations": {"type": "integer", "minimum": 1},
-    "observations": {"type": "array", "items": {"type": "object"}},
-    "dates": {"type": "array", "items": {"type": "string"}},
-    "defects": {"type": "array", "items": {"type": "string", "enum": ["citations-null","analysis-without-finding","truncated-by-interface","surface-unresolved","unsupported-citations","date-unresolved","stale-state","distinction-collapse"]}, "description": "DERIVED controlled vocabulary only (capture_intake.extract_defects). Never free text."},
-    "findings": {"type": "array", "items": {"type": "string"}, "description": "editorial findings in prose, one per item — the field the 21 free-text 'defects' moved to"},
-    "series": {"type": ["string","null"], "description": "series label; historical ints stringified"},
-    "other_slugs": {"type": ["array","null"], "items": {"type": "string"}},
-    "collisions": {"type": ["array","null"], "items": {"type": "object"}},
-    "oq": {"type": ["array","null"], "items": {"type": "string"}},
-    "rounds": {"type": ["array","null"], "items": {"type": "object", "required": ["n"], "properties": {"n": {"type": "integer"}, "prompt": {"type": ["string","null"]}, "note": {"type": ["string","null"]}}}},
-    "turns": {"type": ["integer","null"]},
-    "rerun": {"type": ["string","null"]},
-    "rerun_alt": {"type": ["object","null"]},
-    "heteronym": {"type": ["string","null"]},
-    "model_attribution": {"type": ["string","null"]},
-    "operator_disclosure": {"type": ["string","null"]},
-    "longitudinal_priors": {"type": ["array","null"], "items": {"type": "string"}},
-    "longitudinal_successors": {"type": ["array","null"], "items": {"type": "string"}},
-    "related_deposits": {"type": ["array","null"], "items": {"type": "integer"}},
-    "notes": {"type": ["object","null"], "description": "one-off fields folded here under their original key, unchanged: abn, omega_s, defect_probe, _paired_note, corpus, contributing_observer, entry_condition, source_payload_sha256, cross_reference, intake_notes, exemplar, analysis_superseded, composed_as, priming_boundary, surface_state, reception_class, reception_protocol, reception_log"}
+ "$schema": "http://json-schema.org/draft-07/schema#",
+ "$id": "https://www.alexanarch.org/rebuild/capture-registry/EA-WG-CAPTURES-01.schema.json",
+ "title": "EA-WG-CAPTURES-01 entry — the fixed record shape, applied 2026-09-05",
+ "description": "One capture entry in data/EA-WG-CAPTURES-01.json. Written from the census of the file as it stood (378 entries, 73 keys): the 14 universal keys and the 23 near-universal keys are the record; every long-tail key was ruled promoted (typed below), folded into `notes` (preserved under its original name), or nothing dropped. `defects` is the derived controlled vocabulary from capture_intake.extract_defects; editorial sentences live in `findings`. additionalProperties is false: a seating that needs a new field changes this schema first, in its own commit, with a reason.",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "slug",
+  "date",
+  "surface",
+  "auth",
+  "ev",
+  "mt",
+  "s",
+  "q",
+  "q_kind",
+  "cites",
+  "transcript",
+  "transcript_class",
+  "transcript_complete",
+  "transcript_read",
+  "per",
+  "sf",
+  "reading",
+  "links",
+  "imgs",
+  "img_urls",
+  "cite",
+  "d",
+  "addr_id",
+  "obs_id",
+  "defects",
+  "findings",
+  "surfaces",
+  "dates",
+  "n_observations",
+  "observations",
+  "analysis",
+  "probe"
+ ],
+ "properties": {
+  "slug": {
+   "type": "string",
+   "pattern": "^[a-z0-9][a-z0-9-]*$"
+  },
+  "date": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+   "description": "ISO date of this capture. Never the string 'null'."
+  },
+  "surface": {
+   "type": "string",
+   "description": "The surface as ruled (MANUS surface rule 2026-08-15). UNDETERMINED / UNRESOLVED are legal historical values, not defaults for new intake."
+  },
+  "surface_basis": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "surfaces": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "auth": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "signed in / signed out, incognito, unprimed… Null only on pre-contract entries."
+  },
+  "auth_basis": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "ev": {
+   "type": "string",
+   "enum": [
+    "paste",
+    "ocr",
+    "paste + frame",
+    "frame + paste",
+    "frame",
+    "none",
+    "agent run"
+   ]
+  },
+  "mt": {
+   "type": "string",
+   "description": "match type as recorded (CAPTURE, EXACT MATCH, BROAD MATCH, PARTIAL, ADOPTION, …)"
+  },
+  "s": {
+   "type": "string",
+   "description": "section — the grouping key of the gallery"
+  },
+  "q": {
+   "type": "string",
+   "description": "the issued string, exactly as typed, quotes significant"
+  },
+  "q_kind": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "cites": {
+   "type": [
+    "integer",
+    "null"
+   ],
+   "description": "citation-card count; null = apparatus not captured (NULL is not zero)"
+  },
+  "cite_list": {
+   "type": [
+    "array",
+    "null"
+   ],
+   "items": {
+    "type": "object"
+   }
+  },
+  "archive_controlled_cites": {
+   "type": [
+    "integer",
+    "null"
+   ]
+  },
+  "transcript": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "the machine text, verbatim. Required by the intake contract since 2026-08-13; null only on the 16 pre-contract entries."
+  },
+  "transcript_raw": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "transcript_class": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "transcript_complete": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "transcript_read": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "per": {
+   "type": [
+    "number",
+    "null"
+   ]
+  },
+  "per_v": {
+   "type": [
+    "object",
+    "null"
+   ]
+  },
+  "per_note": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "sf": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "sf_derived": {
+   "type": [
+    "boolean",
+    "null"
+   ]
+  },
+  "reading": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "analysis": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "d": {
+   "type": "string",
+   "description": "the FULL finding (renderer_contract); d_full is its alias"
+  },
+  "d_full": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "d_truncated": {
+   "type": [
+    "boolean",
+    "null"
+   ]
+  },
+  "links": {
+   "type": "array",
+   "items": {
+    "type": "object"
+   }
+  },
+  "imgs": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "repo-relative image paths under data/captures/<slug>/"
+  },
+  "img_urls": {
+   "type": [
+    "array",
+    "null"
+   ],
+   "items": {
+    "type": "string",
+    "pattern": "^https://"
+   }
+  },
+  "cite": {
+   "type": "string"
+  },
+  "citable_unit": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "addr_id": {
+   "type": "string",
+   "pattern": "^ADDR-[0-9a-f]{12}$"
+  },
+  "obs_id": {
+   "type": "string",
+   "pattern": "^OBS-[0-9a-f]{12}$"
+  },
+  "n_observations": {
+   "type": "integer",
+   "minimum": 1
+  },
+  "observations": {
+   "type": "array",
+   "items": {
+    "type": "object"
+   }
+  },
+  "dates": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "defects": {
+   "type": "array",
+   "items": {
+    "type": "string",
+    "enum": [
+     "citations-null",
+     "analysis-without-finding",
+     "truncated-by-interface",
+     "surface-unresolved",
+     "unsupported-citations",
+     "date-unresolved",
+     "stale-state",
+     "distinction-collapse"
+    ]
+   },
+   "description": "DERIVED controlled vocabulary only (capture_intake.extract_defects). Never free text."
+  },
+  "findings": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "editorial findings in prose, one per item — the field the 21 free-text 'defects' moved to"
+  },
+  "series": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "series label; historical ints stringified"
+  },
+  "other_slugs": {
+   "type": [
+    "array",
+    "null"
+   ],
+   "items": {
+    "type": "string"
+   }
+  },
+  "collisions": {
+   "type": [
+    "array",
+    "null"
+   ],
+   "items": {
+    "type": "object"
+   }
+  },
+  "oq": {
+   "type": [
+    "array",
+    "null"
+   ],
+   "items": {
+    "type": "string"
+   }
+  },
+  "rounds": {
+   "type": [
+    "array",
+    "null"
+   ],
+   "items": {
+    "type": "object",
+    "required": [
+     "n"
+    ],
+    "properties": {
+     "n": {
+      "type": "integer"
+     },
+     "prompt": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "note": {
+      "type": [
+       "string",
+       "null"
+      ]
+     }
+    }
+   }
+  },
+  "turns": {
+   "type": [
+    "integer",
+    "null"
+   ]
+  },
+  "rerun": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "rerun_alt": {
+   "type": [
+    "object",
+    "null"
+   ]
+  },
+  "heteronym": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "model_attribution": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "operator_disclosure": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "longitudinal_priors": {
+   "type": [
+    "array",
+    "null"
+   ],
+   "items": {
+    "type": "string"
+   }
+  },
+  "longitudinal_successors": {
+   "type": [
+    "array",
+    "null"
+   ],
+   "items": {
+    "type": "string"
+   }
+  },
+  "related_deposits": {
+   "type": [
+    "array",
+    "null"
+   ],
+   "items": {
+    "type": "integer"
+   }
+  },
+  "notes": {
+   "type": [
+    "object",
+    "null"
+   ],
+   "description": "one-off fields folded here under their original key, unchanged: abn, omega_s, defect_probe, _paired_note, corpus, contributing_observer, entry_condition, source_payload_sha256, cross_reference, intake_notes, exemplar, analysis_superseded, composed_as, priming_boundary, surface_state, reception_class, reception_protocol, reception_log"
+  },
+  "probe": {
+   "enum": [
+    "exact",
+    "broad"
+   ],
+   "description": "probe type of the issued query, derived mechanically: exact iff q contains a straight or curly double-quote character, else broad. Distinct from mt, which records outcome; the two axes were conflated in one field before 2026-09-06 (12 EXACT MATCH entries have unquoted queries, 2 BROAD MATCH have quoted; those mt labels stand pending ruling)."
   }
+ }
 }
