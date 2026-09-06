@@ -204,7 +204,11 @@ jobs:
 
           # sitemap contains all records
           sitemap = open('sitemap.xml').read()
-          missing_sitemap = [num for num in deposit_numbers if f'/s/records/{num}/' not in sitemap]
+          # Retired/superseded records are served noindex (retirement apparatus, 2026-08-10) and
+          # are deliberately NOT listed in the sitemap (2026-09-06: a sitemap lists canonicals only).
+          retired = {d.get('deposit_number') for d in reg['deposits']
+                     if (d.get('body_status') or {}).get('retired') or d.get('status') in ('SUPERSEDED','WITHDRAWN') or d.get('withdrawn')}
+          missing_sitemap = [num for num in deposit_numbers if num not in retired and f'/s/records/{num}/' not in sitemap]
           check(not missing_sitemap,
                 f"sitemap contains all record URLs"
                 + (f" (missing first: {missing_sitemap[:5]})" if missing_sitemap else ""))
