@@ -1,0 +1,103 @@
+### Protocol Version
+
+alexanarch-deposit-protocol/v1
+
+### Title
+
+EA-CORPORA-12 — The Twelfth Seating: The Transmission Texts — Diogenes Laertius and Strabo Seated Whole, the Peripatetic Wills and Catalogues Cut, and the Rule That Seatings Are Periodically Gathered
+
+### Creator
+
+Sharks, Lee
+
+### ORCID
+
+0009-0000-1599-0703
+
+### Date
+
+2026-09-06
+
+### Description
+
+The gathering record of the twelfth corpus-seating run of the Crimson Hexagonal Archive's primary-source library, executed 6 September 2026. Two seats, bringing the library to sixty-one: Diogenes Laertius, Vitae philosophorum (Perseus canonical-greekLit, perseus-grc2; 4,835 lines, 109,874 Greek tokens), and Strabo, Geographica (perseus-grc2; 3,559 lines, 285,802 tokens). Both are seated whole, commit-pinned, with originals, flat text, source.json and manifest, indexed in data/api/corpora.json, and rendered on the shelf at traininglayerliterature.org/originals/. The run exists because the SE 34 and Second Letter work of 5–6 September needed the transmission texts on the shelf: the four Peripatetic wills (D.L. V.11–16, 51–57, 61–64, 69–74), the two catalogues with their stichometric totals (V.22–27: 445,270 lines; V.42–50: 232,808), the renaming at V.38, and Strabo XIII.1.54 (the custody chain, παρέδωκεν three times). The loci are recorded on the seats as verified_loci. The run also states the standing rule the archive has been following without writing down: seatings of original texts go to data/corpora/ on alexanarch, render on the originals shelf of Training Layer Literature, and are periodically grouped into an EA-CORPORA deposit with links — the deposit being the citable act, the seat the bytes, the shelf the reading room. Pending seatings named for the next run: Plutarch's Lives (Sulla 26 was read from the Perseus text but the Lives are not yet seated as a corpus), Athenaeus (the Ptolemy route, I 3a–b), Aelian (the revocation of the Delphic honours, VH XIV 1), the Delphic decree for Aristotle and Callisthenes (FD III 1, 400), and the scan-class witnesses read in the SE 34 work — the Byzantine paraphrast of the Elenchi (CAG XXIII.4), Michael of Ephesus (CAG II.3), Albert the Great (Borgnet II), Giles of Rome (Venice 1500). Companion working notes produced from these seats and deposited separately: Catalogues and Wills (a groundwork note establishing relations, readings withheld) and The Stone for a List (the Delphic decree read as a material-historical poem in relation to the wills).
+
+### Content Type
+
+Dataset
+
+### License
+
+CC-BY-4.0
+
+### Substrate Disclosure
+
+Human–machine collaborative. Seats fetched, normalized, manifested and indexed in-session by TACHYON (Claude, Anthropic) under MANUS (Lee Sharks) direction, from the open Perseus canonical-greekLit repository at a pinned commit; the shelf cards rendered by the archive's own generator; loci verified by reading the seated bytes. Rulings — which texts, which cuts, what the run states — are Lee Sharks's.
+
+### Keywords
+
+corpus seating, primary sources, Diogenes Laertius, Strabo, Peripatetic wills, Theophrastus, Aristotle, Neleus, Scepsis, catalogues, stichometry, transmission, Training Layer Literature, originals shelf, provenance, EA-CORPORA
+
+### Methodology
+
+Fetch from a pinned commit of PerseusDL/canonical-greekLit; strip teiHeader, note, app, rdg, bibl; flat lines, one file per work, lines without Greek characters dropped; SHA-256 manifest over originals and text; source.json with origin, edition, license, normalization, works, verified_loci and why_seated; data/api/corpora.json updated; cards rendered with build_originals_shelf.py and the shelf index extended; seat_corpus_postflight.py run against the four surfaces once this deposit assigns the card numbers.
+
+### Falsification Conditions
+
+A seat is falsified if its manifest does not verify against the bytes at the canonical URL, if its source.json commit does not resolve in the origin repository, if a verified locus cannot be found in the seated text, or if any of the four surfaces (seat, index, deposit, shelf) disagrees with the others.
+
+### Body
+
+# EA-CORPORA-12 — The Twelfth Seating
+
+## Seat 12/01 — Diogenes Laertius, Vitae philosophorum
+
+- Edition: Perseus canonical-greekLit tlg0004.tlg001, perseus-grc2. Origin commit pinned in source.json.
+- Lines 4,835 · Greek tokens 109,874 · one file per work.
+- Verified loci: V.11–16 (will of Aristotle); V.22–27 (catalogue; total 445,270 στίχοι); V.38 (Τύρταμον … Θεόφραστον … μετωνόμασεν); V.42–50 (catalogue; total 232,808); V.51–57 (will of Theophrastus: τὰ δὲ βιβλία πάντα Νηλεῖ); V.61–64 (will of Strato: πλὴν ὧν αὐτοὶ γεγράφαμεν); V.69–74 (will of Lycon: τὰ δ᾽ ἀνέκδοτα Καλλίνῳ ὅπως ἐπιμελῶς αὐτὰ ἐκδῷ).
+- Files: https://www.alexanarch.org/data/corpora/diogenes-laertius/ — original/, text/tlg001.txt, source.json, MANIFEST.sha256. Shelf: https://traininglayerliterature.org/originals/diogenes-laertius/
+
+## Seat 12/02 — Strabo, Geographica
+
+- Edition: Perseus canonical-greekLit tlg0099.tlg001, perseus-grc2. Commit pinned.
+- Lines 3,559 · Greek tokens 285,802.
+- Verified locus: XIII.1.54 — ὁ γοῦν Ἀριστοτέλης τὴν ἑαυτοῦ Θεοφράστῳ παρέδωκεν … Θεόφραστος δὲ Νηλεῖ παρέδωκεν· ὁ δ᾽ εἰς Σκῆψιν κομίσας τοῖς μετ᾽ αὐτὸν παρέδωκεν; the trench, Apellicon (ἀναπληρῶν οὐκ εὖ), Sulla, Tyrannion, the booksellers οὐκ ἀντιβάλλοντες.
+- Files: https://www.alexanarch.org/data/corpora/strabo/ ; shelf: https://traininglayerliterature.org/originals/strabo/
+
+## The rule this run writes down
+
+Seatings of original texts go to data/corpora/ on alexanarch; they render on the originals shelf of Training Layer Literature; and they are periodically gathered into an EA-CORPORA deposit that links them. The seat is the bytes, the shelf is the reading room, the deposit is the citable act that assigns the card number. A corpus that exists only in a data directory is stored, not published; a corpus on a shelf without a deposit is unciteable; a deposit without bytes is a claim. All three, or none.
+
+## Working notes produced from these seats
+
+- Catalogues and Wills — a groundwork note (relations established, readings withheld): the four wills' books/school clauses side by side; persons across the wills; the catalogues' counts, structure, doublets, cross-name titles, and the entry Ὑπομνημάτων Ἀριστοτελικῶν ἢ Θεοφραστείων; Strabo's chain and what it asserts beyond the wills; Plutarch Sulla 26 (Andronicus ἀναγράψαι τοὺς νῦν φερομένους πίνακας); the counts of the extant corpora against the catalogued totals as two acts. Deposited separately.
+- The Stone for a List — the Delphic decree for Aristotle and Callisthenes read as a material-historical poem in relation to the wills. Deposited separately; the decree's own text still pending seating.
+
+## Pending seatings, named for the thirteenth run
+
+Plutarch, Lives (Sulla 26 read from the Perseus text; corpus not yet seated) · Athenaeus, Deipnosophistae I 3a–b · Aelian, Varia Historia XIV 1 · the Delphic decree FD III 1, 400 · Anonymous paraphrast of the Elenchi, CAG XXIII.4 (scan) · Michael of Ephesus, CAG II.3 (scan) · Albert the Great, Borgnet II (scan) · Giles of Rome, Expositio, Venice 1500 (scan) · Plato, Epistulae — already on the Plato seat (01/08); Ep. II 314c and Ep. VI collated there this run.
+
+## Appendix — the cut of the four wills
+
+Greek from the Perseus canonical-greekLit edition (tlg0004.tlg001.perseus-grc2), cut by the wills' opening formulae and the closing 'διαθῆκαι' sentence; inline apparatus entries of the digital edition (e.g. "αὐτῶν codd.: αὐτὼ Reiske") removed on 2026-09-06 after review; fetched 2026-09-06. These are testamentary texts preserved by Diogenes — descriptions of material arrangements, not surviving contemporary objects. Section numbers from the standard edition; collation against Dorandi pending. The stichometric total for Theophrastus's works stands on the page immediately before his will: **Ἃ γίνονται στίχων Μ′ κ′ γ′ Β ω′ η′ — 232,808 lines.**
+
+## Aristotle (D.L. V.11–16)
+
+Ἔσται μὲν εὖ· ἐὰν δέ τι συμβαίνῃ, τάδε διέθετο Ἀριστοτέλης· ἐπίτροπον μὲν εἶναι πάντων καὶ διὰ παντὸς Ἀντίπατρον· ἕως δʼ ἂν Νικάνωρ καταλάβῃ, ἐπιμελεῖσθαι Ἀριστομένην, Τίμαρχον, Ἵππαρχον, Διοτέλην, Θεόφραστον, ἐὰν βούληται καὶ ἐνδέχηται αὐτῷ, τῶν τε παιδίων καὶ Ἑρπυλλίδος καὶ τῶν καταλελειμμένων. καὶ ὅταν ὥρα ᾖ τῇ παιδί, ἐκδίδοσθαι αὐτὴν Νικάνορι· ἐὰν δὲ τῇ παιδὶ συμβῇ τι—ὃ μὴ γένοιτο οὐδὲ ἔσται—πρὸ τοῦ γήμασθαι ἢ ἐπειδὰν γήμηται, μήπω παιδίων ὄντων, Νικάνωρ κύριος ἔστω καὶ περὶ τοῦ παιδίου καὶ περὶ τῶν ἄλλων διοικεῖν ἀξίως καὶ αὑτοῦ καὶ ἡμῶν. ἐπιμελείσθω δὲ Νικάνωρ καὶ τῆς παιδὸς καὶ τοῦ παιδὸς Νικομάχου, ὅπως ἂν ἀξιοῖ τὰ περὶ αὐτῶν. , ὡς καὶ πατὴρ ὢν καὶ ἀδελφός. ἐὰν δέ τι πρότερον συμβῇ Νικάνορι—ὃ μὴ γένοιτο—ἢ πρὸ τοῦ λαβεῖν τὴν παῖδα ἢ ἐπειδὰν λάβῃ, μήπω παιδίων ὄντων, ἐὰν μέν τι ἐκεῖνος τάξῃ, ταῦτα κύρια ἔστω· ἐὰν δὲ βούληται Θεόφραστος εἶναι μετὰ τῆς παιδός, καθάπερ πρὸς Νικάνορα· εἰ δὲ μή, τοὺς ἐπιτρόπους βουλευομένους μετʼ Ἀντιπάτρου καὶ περὶ τῆς παιδὸς καὶ περὶ τοῦ παιδίου διοικεῖν ὅπως ἂν αὐτοῖς δοκῇ ἄριστα εἶναι. ἐπιμελεῖσθαι δὲ τοὺς ἐπιτρόπους καὶ Νικάνορα μνησθέντας ἐμοῦ καὶ Ἑρπυλλίδος, ὅτι σπουδαία περὶ ἐμὲ ἐγένετο, τῶν τε ἄλλων καὶ ἐὰν βούληται ἄνδρα λαμβάνειν, ὅπως μὴ ἀναξίῳ ἡμῶν δοθῇ. δοῦναι δʼ αὐτῇ πρὸς τοῖς πρότερον δεδομένοις καὶ ἀργυρίου τάλαντον ἐκ τῶν καταλελειμμένων καὶ θεραπαίνας τρεῖς, ἃσ ἂν βούληται, καὶ τὴν παιδίσκην ἣν ἔχει καὶ παῖδα τὸν Πυρραῖον· καὶ ἐὰν μὲν ἐν Χαλκίδι βούληται οἰκεῖν, τὸν ξενῶνα τὸν πρὸς τῷ κήπῳ· ἐὰν δὲ ἐν Σταγείροις, τὴν πατρῴαν οἰκίαν. ὁποτέραν δʼ ἂν τούτων βούληται, κατασκευάσαι τοὺς ἐπιτρόπους σκεύεσιν οἷς ἂν δοκῇ κἀκείνοις καλῶς ἔχειν καὶ Ἑρπυλλίδι ἱκανῶς. ἐπιμελείσθω δὲ Νικάνωρ καὶ Μύρμηκος τοῦ παιδίου, ὅπως ἂν ἀξίως ἡμῶν τοῖς ἰδίοις ἐπικομισθῇ σὺν τοῖς ὑπάρχουσιν ἃ εἰλήφαμεν αὐτοῦ. εἶναι δὲ καὶ Ἀμβρακίδα ἐλευθέραν καὶ δοῦναι αὐτῇ, ὅταν ἡ παῖς ἐκδοθῇ, πεντακοσίας δραχμὰς καὶ τὴν παιδίσκην ἣν ἔχει. δοῦναι δὲ καὶ Θαλῇ πρὸς τῇ παιδίσκῃ ἣν ἔχει, τῇ ὠνηθείσῃ, χιλίας δραχμὰς καὶ παιδίσκην· καὶ Σίμωνι χωρὶς τοῦ πρότερον ἀργυρίου αὐτῷ δοθέντοσ εἰς παῖδʼ ἄλλον, ἢ παῖδα πρίασθαι ἢ ἀργύριον ἐπιδοῦναι. Τύχωνα δʼ ἐλεύθερον εἶναι, ὅταν ἡ παῖς ἐκδοθῇ, καὶ Φίλωνα καὶ Ὀλύμπιον καὶ τὸ παιδίον αὐτοῦ. μὴ πωλεῖν δὲ τῶν παίδων μηδένα τῶν ἐμὲ θεραπευόντων, ἀλλὰ χρῆσθαι αὐτοῖς· ὅταν δʼ ἐν ἡλικίᾳ γένωνται, ἐλευθέρους ἀφεῖναι κατʼ ἀξίαν. ἐπιμελεῖσθαι δὲ καὶ τῶν ἐκδεδομένων εἰκόνων παρὰ Γρυλλίωνα, ὅπως ἐπιτελεσθεῖσαι ἀνατεθῶσιν, ἥ τε Νικάνορος καὶ ἡ Προξένου, ἣν διενοούμην ἐκδοῦναι, καὶ ἡ τῆς μητρὸς τῆς Νικάνορος· καὶ τὴν Ἀριμνήστου τὴν πεποιημένην ἀναθεῖναι, ὅπως μνημεῖον αὐτοῦ ᾖ, ἐπειδὴ ἄπαις ἐτελεύτησε· καὶ τὴν τῆς μητρὸς τῆς ἡμετέρας τῇ Δήμητρι ἀναθεῖναι εἰς Νεμέαν ἢ ὅπου ἂν δοκῇ. ὅπου δʼ ἂν ποιῶνται τὴν ταφήν, ἐνταῦθα καὶ τὰ Πυθιάδος ὀστᾶ ἀνελόντας θεῖναι, ὥσπερ αὐτὴ προσέταξεν· ἀναθεῖναι δὲ καὶ Νικάνορα σωθέντα, ἣν εὐχὴν ὑπὲρ αὐτοῦ ηὐξάμην, ζῷα λίθινα τετραπήχη Διὶ σωτῆρι καὶ Ἀθηνᾷ σωτείρᾳ ἐν Σταγείροις.
+
+## Theophrastus (D.L. V.51–57)
+
+Ἔσται μὲν εὖ· ἐὰν δέ τι συμβῇ, τάδε διατίθεμαι· τὰ μὲν οἴκοι ὑπάρχοντα πάντα δίδωμι Μελάντῃ καὶ Παγκρέοντι τοῖς υἱοῖς Λέοντος. ἀπὸ δὲ τῶν παρʼ Ἱππάρχου συμβεβλημένων τάδε μοι βούλομαι γενέσθαι· πρῶτον μὲν τὰ περὶ τὸ μουσεῖον καὶ τὰς θεὰς συντελεσθῆναι κἄν τι ἄλλο ἰσχύῃ περὶ αὐτὰς ἐπικοσμηθῆναι πρὸς τὸ κάλλιον· ἔπειτα τὴν Ἀριστοτέλους εἰκόνα τεθῆναι εἰς τὸ ἱερὸν καὶ τὰ λοιπὰ ἀναθήματα ὅσα πρότερον ὑπῆρχεν ἐν τῷ ἱερῷ· εἶτα τὸ στωίδιον οἰκοδομηθῆναι τὸ πρὸς τῷ μουσείῳ μὴ χεῖρον ἢ πρότερον· ἀναθεῖναι δὲ καὶ τοὺς πίνακας, ἐν οἷς αἱ τῆς γῆς περίοδοί εἰσιν, εἰς τὴν κάτω στοάν· ἐπισκευασθῆναι δὲ καὶ τὸν βωμόν, ὅπως ἔχῃ τὸ τέλειον καὶ τὸ εὔσχημον. βούλομαι δὲ καὶ τὴν Νικομάχου εἰκόνα συντελεσθῆναι ἴσην. τὸ μὲν τῆς πλάσεως ἔχει Πραξιτέλης, τὸ δʼ ἄλλο ἀνάλωμα ἀπὸ τούτου γενέσθω. σταθῆναι δὲ ὅπου ἂν δοκῇ τοῖς καὶ τῶν ἄλλων ἐπιμελουμένοις τῶν ἐν τῇ διαθήκῃ γεγραμμένων. καὶ τὰ μὲν περὶ τὸ ἱερὸν καὶ τὰ ἀναθήματα τοῦτον ἐχέτω τὸν τρόπον. τὸ δὲ χωρίον τὸ ἐν Σταγείροις ἡμῖν ὑπάρχον δίδωμι Καλλίνῳ· τὰ δὲ βιβλία πάντα Νηλεῖ. τὸν δὲ κῆπον καὶ τὸν περίπατον καὶ τὰς οἰκίας τὰς πρὸς τῷ κήπῳ πάσας δίδωμι τῶν γεγραμμένων φίλων ἀεὶ τοῖς βουλομένοις συσχολάζειν καὶ συμφιλοσοφεῖν ἐν αὐταῖς, ἐπειδήπερ οὐ δυνατὸν πᾶσιν ἀνθρώποις ἀεὶ ἐπιδημεῖν, μήτʼ ἐξαλλοτριοῦσι μήτʼ ἐξιδιαζομένου μηδενός, ἀλλʼ ὡς ἂν ἱερὸν κοινῇ κεκτημένοις, καὶ τὰ πρὸς ἀλλήλους οἰκείως καὶ φιλικῶς χρωμένοις, ὥσπερ προσῆκον καὶ δίκαιον. ἔστωσαν δὲ οἱ κοινωνοῦντες Ἵππαρχος, Νηλεύς, Στράτων, Καλλῖνος, Δημότιμος, Δημάρατος, Καλλισθένης, Μελάντης, Παγκρέων, Νίκιππος. ἐξεῖναι δὲ βουλομένῳ φιλοσοφεῖν καὶ Ἀριστοτέλει τῷ Μητροδώρου καὶ Πυθιάδος υἱῷ καὶ μετέχειν τούτων· καὶ αὐτοῦ πᾶσαν ἐπιμέλειαν ποιεῖσθαι τοὺς πρεσβυτάτους, ὅπως ὅτι μάλιστα προαχθῇ κατὰ φιλοσοφίαν. θάψαι δὲ καὶ ἡμᾶς ὅπου ἂν δοκῇ μάλιστα ἁρμόττον εἶναι τοῦ κήπου, μηδὲν περίεργον μήτε περὶ τὴν ταφὴν μήτε περὶ τὸ μνημεῖον ποιοῦντας. ὅπως δὲ συνείρηται, μετὰ τὰ περὶ ἡμᾶς συμβάντα, τὰ περὶ τὸ ἱερὸν καὶ τὸ μνημεῖον καὶ τὸν κῆπον καὶ τὸν περίπατον θεραπευόμενα συνεπιμελεῖσθαι καὶ Πομπύλον τούτων ἐποικοῦντα αὐτὸν καὶ τὴν τῶν ἄλλων ἐπιμέλειαν ποιούμενον ἣν καὶ πρότερον· τῆς δὲ λυσιτελείας ἐπιμελεῖσθαι αὐτοὺς τοὺς ἔχοντας ταῦτα. Πομπύλῳ δὲ καὶ Θρέπτῃ πάλαι ἐλευθέροις οὖσι καὶ ἡμῖν πολλὴν χρείαν παρεσχημένοις, εἴ τι πρότερον ἔχουσι παρʼ ἡμῶν καὶ εἴ τι αὐτοὶ ἐκτήσαντο καὶ ἃ νῦν παρʼ Ἱππάρχου αὐτοῖς συντέταχα, δισχιλίας δραχμάς, ἀσφαλῶς οἶμαι δεῖν αὐτοῖς ὑπάρχειν ταῦτα, καθάπερ καὶ αὐτὸς. διελέχθην Μελάντῃ καὶ Παγκρέοντι πλεονάκις καὶ πάντα μοι συγκατετίθεντο. δίδωμι δʼ αὐτοῖς καὶ Σωματάλην τὴν παιδίσκην. τῶν δὲ παίδων Μόλωνα μὲν καὶ Τίμωνα καὶ Παρμένοντα ἤδη ἐλευθέρους ἀφίημι· Μανῆν δὲ καὶ Καλλίαν παραμείναντας ἔτη τέτταρα ἐν τῷ κήπῳ καὶ συνεργασαμένους καὶ ἀναμαρτήτους γενομένους ἀφίημι ἐλευθέρους. τῶν δὲ οἰκηματικῶν σκευῶν ἀποδιδόντας Πομπύλῳ ὅσʼ ἂν δοκῇ τοῖς ἐπιμεληταῖς καλῶς ἔχειν, τὰ λοιπὰ ἐξαργυρίσαι. δίδωμι δὲ καὶ Καρίωνα Δημοτίμῳ, Δόνακα δὲ Νηλεῖ· Εὔβοιον δʼ ἀποδόσθαι. δότω δʼ Ἵππαρχος Καλλίνῳ τρισχιλίας δραχμάς· Μελάντῃ δὲ καὶ Παγκρέοντι εἰ μὲν μὴ ἑωρῶμεν Ἵππαρχον καὶ ἡμῖν πρότερον χρείαν παρεσχημένον καὶ νῦν ἐν τοῖς ἰδίοις μάλα νεναυαγηκότα, προσετάξαμεν ἂν μετὰ Μελάντου καὶ Παγκρέοντος ἐξάγειν αὐτά . ἐπειδὴ δὲ οὔτʼ ἐκείνοις ἑώρων ῥᾴδιον ὄντα συνοικονομεῖν λυσιτελέστερόν τʼ αὐτοῖς ὑπελάμβανον εἶναι τεταγμένον τι λαβεῖν παρὰ Ἱππάρχου, δότω Ἵππαρχος Μελάντῃ καὶ Παγκρέοντι, ἑκατέρῳ τάλαντον· διδόναι δʼ Ἵππαρχον καὶ τοῖς ἐπιμεληταῖς εἰς τὰ ἀναλώματα τὰ ἐν τῇ διαθήκῃ γεγραμμένα κατὰ τοὺς ἑκάστου καιροὺς τῶν δαπανημάτων. οἰκονομήσαντα δὲ ταῦτα Ἵππαρχον ἀπηλλάχθαι τῶν συμβολαίων τῶν πρὸς ἐμὲ πάντων· καὶ εἴ τι ἐπὶ τοῦ ἐμοῦ ὀνόματος συμβέβληκεν Ἵππαρχος ἐν Χαλκίδι, Ἱππάρχου τοῦτό ἐστιν. ἐπιμεληταὶ δὲ ἔστωσαν τῶν ἐν τῇ διαθήκῃ γεγραμμένων Ἵππαρχος, Νηλεύς, Στράτων, Καλλῖνος, Δημότιμος, Καλλισθένης, Κτήσαρχος.
+
+## Strato (D.L. V.61–64)
+
+Τάδε διατίθεμαι, ἐάν τι πάσχω· τὰ μὲν οἴκοι καταλείπω πάντα Λαμπυρίωνι καὶ Ἀρκεσιλάῳ. ἀπὸ δὲ τοῦ Ἀθήνησιν ὑπάρχοντός μοι ἀργυρίου πρῶτον μὲν οἱ ἐπιμεληταὶ τὰ περὶ τὴν ἐκφορὰν ἐπιμεληθήτωσαν καὶ ὅσα νομίζεται μετὰ τὴν ἐκφοράν, μηδὲν μήτε περίεργον ποιοῦντες μήτʼ ἀνελεύθερον. ἐπιμεληταὶ δὲ ἔστωσαν τῶν κατὰ τὴν διαθήκην οἵδε· Ὀλύμπιχος, Ἀριστείδης, Μνησιγένης, Ἱπποκράτης, Ἐπικράτης, Γοργύλος, Διοκλῆς, Λύκων, Ἀθάνης. καταλείπω δὲ τὴν μὲν διατριβὴν Λύκωνι, ἐπειδὴ τῶν ἄλλων οἱ μέν εἰσι πρεσβύτεροι, οἱ δὲ ἄσχολοι. καλῶς δʼ ἂν ποιοῖεν καὶ οἱ λοιποὶ συγκατασκευάζοντες τούτῳ. καταλείπω δʼ αὐτῷ καὶ τὰ βιβλία πάντα, πλὴν ὧν αὐτοὶ γεγράφαμεν, καὶ τὰ σκεύη πάντα κατὰ τὸ συσσίτιον καὶ τὰ στρώματα καὶ τὰ ποτήρια. δότωσαν δὲ οἱ ἐπιμεληταὶ Ἐπικράτει πεντακοσίας δραχμὰς καὶ τῶν παίδων ἕνα ὃν ἂν δοκῇ Ἀρκεσιλάῳ. καὶ πρῶτον μὲν Λαμπυρίων καὶ Ἀρκεσίλαος ἀράσθωσαν τὰς συνθήκας ἃς ἔθετο Δάϊππος ὑπὲρ Ἰραίου· καὶ μηδὲν ὀφειλέτω μήτε Λαμπυρίωνι μήτε τοῖς Λαμπυρίωνος κληρονόμοις, ἀλλʼ ἀπηλλάχθω παντὸς τοῦ συμβολαίου. δότωσαν δʼ αὐτῷ καὶ οἱ ἐπιμεληταὶ ἀργυρίου δραχμὰς πεντακοσίας καὶ τῶν παίδων ἕνα ὃν ἂν δοκιμάζῃ Ἀρκεσίλαος, ὅπως ἂν πολλὰ συμπεπονηκὼς ἡμῖν καὶ παρεσχημένος χρείας ἔχῃ βίον ἱκανὸν καὶ εὐσχήμονα. ἀφίημι δὲ καὶ Διόφαντον ἐλεύθερον καὶ Διοκλέα καὶ Ἄβουν· Σιμίαν δὲ ἀποδίδωμι Ἀρκεσιλάῳ. ἀφίημι δὲ καὶ Δρόμωνα ἐλεύθερον. ἐπειδὰν δὲ παραγένηται Ἀρκεσίλαος, λογισάσθω Ἴραιος μετʼ Ὀλυμπίχου καὶ Ἐπικράτους καὶ τῶν ἄλλων ἐπιμελητῶν τὸ γεγονὸς ἀνάλωμα εἰς τὴν ἐκφορὰν καὶ τἄλλα τὰ νομιζόμενα. τὸ δὲ περιὸν ἀργύριον κομισάσθω Ἀρκεσίλαος παρʼ Ὀλυμπίχου, μηδὲν ἐνοχλῶν αὐτὸν κατὰ τοὺς καιροὺς καὶ τοὺς χρόνους· ἀράσθω δὲ καὶ τὰς συνθήκας Ἀρκεσίλαος ἃς ἔθετο Στράτων πρὸς Ὀλύμπιχον καὶ Ἀμεινίαν, τὰς κειμένας παρὰ Φιλοκράτει Τισαμενοῦ. τὰ δὲ περὶ τὸ μνημεῖον ποιείτωσαν ὡς ἂν δοκῇ Ἀρκεσιλάῳ καὶ Ὀλυμπίχῳ καὶ Λύκωνι.
+
+## Lycon (D.L. V.69–74)
+
+Τάδε διατίθεμαι περὶ τῶν κατʼ ἐμαυτόν, ἐὰν μὴ δυνηθῶ τὴν ἀρρωστίαν ταύτην ὑπενεγκεῖν· τὰ μὲν ἐν οἴκῳ πάντα δίδωμι τοῖς ἀδελφοῖς Ἀστυἀνακτι καὶ Λύκωνι. καὶ οἶμαι δεῖν ἀποδοθῆναι ἀπὸ τούτων ὅσα κατακέχρημαι Ἀθήνησι παρά τινος ἔχων ἢ ἐκπεπραχώς· καὶ ἃ ἂν εἰς τὴν ἐκφορὰν ἀναλωθῇ καὶ εἰς τἄλλα τὰ νομιζόμενα. τὰ δʼ ἐν ἄστει καὶ ἐν Αἰγίνῃ δίδωμι Λύκωνι διὰ τὸ καὶ τοὔνομα φέρειν ἡμῶν καὶ συνδιατετριφέναι πλείω χρόνον ἀρεστῶς πάνυ, καθάπερ δίκαιον ἦν τὸν υἱοῦ τάξιν ἐσχηκότα. τὸν δὲ περίπατον καταλείπω τῶν γνωρίμων τοῖς βουλομένοις, Βούλωνι, Καλλίνῳ, Ἀρίστωνι, Ἀμφίωνι, Λύκωνι, Πύθωνι, Ἀριστομάχῳ, Ἡρακλείῳ, Λυκομήδει, Λύκωνι τῷ ἀδελφιδῷ. προστησάσθωσαν δʼ αὐτοὶ ὃν ἂν ὑπολαμβάνωσι διαμενεῖν ἐπὶ τοῦ πράγματος καὶ συναύξειν μάλιστα δυνήσεσθαι. συγκατασκευαζέτωσαν δὲ καὶ οἱ λοιποὶ γνώριμοι κἀμοῦ καὶ τοῦ τόπου χάριν. περὶ δὲ τῆς ἐκφορᾶς καὶ καύσεως ἐπιμεληθήτωσαν Βούλων καὶ Καλλῖνος μετὰ τῶν συνήθων, ὅπως μήτʼ ἀνελεύθερος γένηται μήτε περίεργος. τῶν δʼ ἐν Αἰγίνῃ μοι γενομένων μοριῶν μετὰ τὴν ἐμὴν ἀπόλυσιν καταχωρισάτω Λύκων τοῖς νεανίσκοις εἰς ἐλαιοχρηστίαν, ὅπως κἀμοῦ καὶ τοῦ τιμήσαντος ἐμὲ μνήμη γένηται διὰ τῆς χρείας αὕτη ἡ προσήκουσα. καὶ ἀνδριάντα ἡμῶν ἀναθέτω· τὸν δὲ τόπον, ὅπως ἁρμόττων ᾖ τῆς καταστάσεως, ἐπιβλεψάτω καὶ συμπραγματευθήτω Διόφαντος καὶ Ἡρακλείδης Δημητρίου. ἀπὸ δὲ τῶν ἐν ἄστει Λύκων ἀποδότω πᾶσι παρʼ ὧν τι προείληφα μετὰ τὴν ἀποδημίαν τὴν ἐκείνου. παρεχέσθωσαν δὲ Βούλων καὶ Καλλῖνος καὶ ἃ ἂν εἰς τὴν ἐκφορὰν ἀναλωθῇ καὶ τἄλλα τὰ νομιζόμενα. κομισάσθωσαν δὲ ταῦτʼ ἀπὸ τῶν ἐν οἴκῳ κοινῇ καταλειπομένων ἀμφοτέροις ὑπʼ ἐμοῦ. τιμησάτωσαν δὲ καὶ τοὺς ἰατροὺς Πασίθεμιν καὶ Μηδίαν, ἀξίους ὄντας καὶ διὰ τὴν ἐπιμέλειαν τὴν περὶ ἐμὲ καὶ τὴν τέχνην καὶ μείζονος ἔτι τιμῆς. δίδωμι δὲ τῷ Καλλίνου παιδίῳ Θηρικλείων ζεῦγος, καὶ τῇ γυναικὶ αὐτοῦ Ῥοδιακῶν ζεῦγος, ψιλοτάπιδα, ἀμφίταπιν, περίστρωμα, προσκεφάλαια δύο τὰ βέλτιστα τῶν καταλειπομένων· ὡς ἂν ἐφʼ ὅσον ἀνήκει πρὸς τιμήν, καὶ τούτων φανῶμεν μὴ ἀμνήμονες ὄντες. περὶ δὲ τῶν θεραπευόντων ἐμαυτὸν οὕτως ἐξάγω· Δημητρίῳ μὲν ἐλευθέρῳ πάλαι ὄντι ἀφίημι τὰ λύτρα καὶ διδωμι πέντε μνᾶς καὶ ἱμάτιον καὶ χιτῶνα, ἵνα πολλὰ πεπονηκὼς μετʼ ἐμοῦ βίον εὐσχήμονα ἔχῃ. Κρίτωνι δὲ Χαλκηδονίῳ, καὶ τούτῳ τὰ λύτρα ἀφίημι καὶ δίδωμι τέτταρας μνᾶς. καὶ τὸν Μίκρον ἀφίημι ἐλεύθερον· καὶ θρεψάτω Λύκων αὐτὸν καὶ παιδευσάτω ἀπὸ τοῦ νῦν χρόνου ἓξ ἔτη. καὶ Χάρητα ἀφίημι ἐλεύθερον· καὶ θρεψάτω Λύκων αὐτόν. καὶ δύο μνᾶς αὐτῷ δίδωμι καὶ τἀμὰ βιβλία τὰ ἀνεγνωσμένα· τὰ δʼ ἀνέκδοτα Καλλίνῳ ὅπως ἐπιμελῶς αὐτὰ ἐκδῷ. δίδωμι δὲ καὶ Σύρῳ ἐλευθέρῳ ὄντι τέτταρας μνᾶς καὶ τὴν Μηνοδώραν δίδωμι· καὶ εἴ τί μοι ὀφείλει, ἀφίημι αὐτῷ. καὶ Ἱλαρᾷ πέντε μνᾶς καὶ ἀμφίταπιν καὶ δύο προσκεφάλαια καὶ περίστρωμα καὶ κλίνην ἣν ἂν βούληται. ἀφίημι δʼ ἐλευθέραν καὶ τὴν τοῦ Μίκρου μητέρα καὶ Νοήμονα καὶ Δίωνα καὶ Θέωνα καὶ Εὐφράνορα καὶ Ἑρμείαν. καὶ Ἀγάθωνα δύο ἔτη παραμείναντα ἀφεῖσθαι ἐλεύθερον· καὶ τοὺς φορεαφόρους Ὠφελίωνα καὶ Ποσειδώνιον τέτταρα ἔτη παραμείναντας. δίδωμι δὲ καὶ Δημητρίῳ καὶ Κρίτωνι καὶ Σύρῳ κλίνην ἑκάστῳ καὶ στρώματα τῶν καταλειπομένων ἃ ἂν φαίνηται Λύκωνι καλῶς ἔχειν. ταῦτʼ ἔστω αὐτοῖς ἀποδείξασιν ὀρθῶς ἐφʼ ὧν ἕκαστοι τεταγμένοι εἰσί. περὶ δὲ τῆς ταφῆς ἐάν τʼ αὐτοῦ βούληται Λύκων θάπτειν, ἐάν τʼ ἐν οἴκῳ, οὕτω ποιείτω. πέπεισμαι γὰρ αὐτὸν οὐδὲν ἧττον ἐμοῦ συνορᾶν τὸ εὔσχημον. ταῦτα δὲ πάντα οἰκονομήσαντι κυρία ἔστω ἡ δόσις τῶν ἐνταῦθα. μάρτυρες Καλλῖνος Ἑρμιονεύς, Ἀρίστων Κεῖος, Εὐφρόνιος Παιανιεύς.
+
+(The closing narrative assessment that follows the testament in Diogenes is omitted here as non-testamentary.)
+---
+Aristotle's stichometric total (V.27) as captured: μυριάδες στίχων τέτταρες καὶ τετταράκοντα πρὸς τοῖς πεντακισχιλίοις καὶ διακοσίοις ἑβδομήκοντα.
+

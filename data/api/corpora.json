@@ -1,9 +1,9 @@
 {
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
- "_generated": "2026-08-21",
- "seats": 59,
- "lines_total": 883663,
+ "_generated": "2026-09-06T18:13:36.634895Z",
+ "seats": 61,
+ "lines_total": 892057,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -1866,6 +1866,50 @@
     "source": "https://www.alexanarch.org/data/corpora/aquinas/source.json",
     "manifest": "https://www.alexanarch.org/data/corpora/aquinas/MANIFEST.sha256"
    }
+  },
+  {
+   "seat": "EA-CORPORA-12/01",
+   "corpus": "diogenes-laertius",
+   "edition": "Diogenes Laertius, Vitae philosophorum (Perseus canonical-greekLit, perseus-grc2)",
+   "license": "CC BY-SA 4.0 (Perseus Digital Library); underlying edition public domain",
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "341e309c821d5eca8c976bebca77c28b10bad58f",
+    "paths": [
+     "data/tlg0004/tlg001"
+    ]
+   },
+   "language": "grc",
+   "lines": 4835,
+   "verified_loci": [
+    "V.11–16 (will of Aristotle)",
+    "V.22–27 (catalogue and stichometric total, 445,270)",
+    "V.38 (the renaming of Tyrtamus)",
+    "V.42–50 (catalogue and total, 232,808)",
+    "V.51–57 (will of Theophrastus)",
+    "V.61–64 (will of Strato)",
+    "V.69–74 (will of Lycon)"
+   ],
+   "why_seated": "THE TRANSMISSION TEXT. The four Peripatetic wills and the two catalogues with their line-totals stand in Book V; the note CATALOGUES-AND-WILLS establishes relations among them. Seated whole so that every locus cited from Diogenes resolves to bytes on the shelf."
+  },
+  {
+   "seat": "EA-CORPORA-12/02",
+   "corpus": "strabo",
+   "edition": "Strabo, Geographica (Perseus canonical-greekLit, perseus-grc2)",
+   "license": "CC BY-SA 4.0 (Perseus Digital Library); underlying edition public domain",
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "341e309c821d5eca8c976bebca77c28b10bad58f",
+    "paths": [
+     "data/tlg0099/tlg001"
+    ]
+   },
+   "language": "grc",
+   "lines": 3559,
+   "verified_loci": [
+    "XIII.1.54 (the route of the Aristotelian and Theophrastan books: Neleus, Scepsis, Apellicon, Sulla, Tyrannion)"
+   ],
+   "why_seated": "THE ROUTE. Strabo carries the custody chain in one verb three times (παρέδωκεν) and the Scepsis burial; seated whole beside Diogenes so the two receiving texts can be read against each other and against the wills."
   }
  ]
 }
