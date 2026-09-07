@@ -31,7 +31,22 @@ def main():
             for k in ("imgs", "img_urls"):
                 lost = set(p.get(k) or []) - set(e.get(k) or [])
                 if lost: fails.append(f"NO-LOSS {e['slug']}: {k} lost {sorted(lost)[:2]}")
-        missing = set(pb) - {e["slug"] for e in E}
+        # A slug may leave `entries` only by moving, never by vanishing (MANUS ruling 2026-09-07):
+        # (a) to `registers` — held with its bytes and a stated reason, rendered by no gallery; or
+        # (b) to a new slug declared in `_alias_redirects` whose target is present and carries no
+        #     shorter transcript. Anything else is loss.
+        held = {x["slug"] for x in (P.get("registers") or [])}
+        cur = {e["slug"]: e for e in E}
+        redirected = set()
+        for old_slug, r in (P.get("_alias_redirects") or {}).items():
+            tgt = (r or {}).get("target")
+            if old_slug in pb and tgt in cur and len(cur[tgt].get("transcript") or "") >= len(pb[old_slug].get("transcript") or ""):
+                redirected.add(old_slug)
+        for x in (P.get("registers") or []):
+            pr = pb.get(x["slug"])
+            if pr and len(x.get("transcript") or "") < len(pr.get("transcript") or ""):
+                fails.append(f"NO-LOSS {x['slug']}: transcript shortened on the way to registers")
+        missing = set(pb) - set(cur) - held - redirected
         if missing: fails.append(f"NO-LOSS entries removed: {sorted(missing)[:5]}")
     except subprocess.CalledProcessError:
         print(f"no-loss: no base at {base}; skipped")
