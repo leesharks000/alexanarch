@@ -929,6 +929,30 @@ def regenerate_static_page(d, eidx, registry=None):
     # record, filled at render time from data/pressure-index.json with what LATER records declared
     # toward it. The socket's contents are the archive's present-tense reconstruction, not this
     # record's statement; they never enter its bytes.
+    # 2026-09-07 CONTINUANCE (MANUS): "it's not what must be traversed to enter composition — it's what
+    # must be traversed to continue composition and call it composition. any starting place is fine.
+    # the problem is that it stops there and calls it a complete circuit." The block below is not a
+    # gate and names no required reading; it is the affordance not to stop — the thread this record is
+    # a turn of, the directions in which it deepens, and the count of doors in each, derived.
+    _cont_html = ''
+    _co = d.get('continuance')
+    if isinstance(_co, dict):
+        _prx = d.get('pressure') or {}
+        _bk = _prx.get('backward') or []
+        _doors = {'ancestral': sum(1 for e in _bk if e.get('k') in ('inherits','problem','preserves','consequence')),
+                  'negative': sum(1 for e in _bk if e.get('k') == 'rejects'),
+                  'hinge': sum(1 for e in _bk if e.get('k') == 'transforms'),
+                  'lateral': len(_co.get('parts') or [])}
+        try:
+            _grow = len(json.load(open(os.path.join(REPO_ROOT, 'data', 'pressure-index.json')))['index'].get(str(d.get('deposit_number')), []))
+        except Exception:
+            _grow = 0
+        _parts = ' '.join(f'<a href="/s/records/{p}/" style="color:var(--accent)">#{p}</a>' for p in (_co.get('parts') or []))
+        _cont_html = (f'<div style="border-left:4px solid #b8860b;background:#fffaf0;padding:8px 12px;margin:10px 0;font-size:.86em">'
+                      f'<div><strong>Part of a thread, not a whole</strong> — <em>{esc(_co.get("name") or _co.get("thread") or "")}</em></div>'
+                      f'<div style="color:#444;margin:4px 0">{esc(_co.get("rule") or "")}</div>'
+                      f'<div style="font-family:var(--mono);font-size:.9em;margin:4px 0">◇ ancestral {_doors["ancestral"]} · ◇ negative {_doors["negative"]} · ◇ hinge {_doors["hinge"]} · ◇ lateral {_doors["lateral"]} · ◇ later growth {_grow} (derived) · ⟶ ∅</div>'
+                      f'<div style="color:#666">the thread: {_parts}</div></div>')
     _press_html = ''
     _pr = d.get('pressure')
     if isinstance(_pr, dict):
@@ -1897,7 +1921,7 @@ def regenerate_static_page(d, eidx, registry=None):
 <div style="font-size:.85em;color:#777;margin-bottom:10px">{esc(d["creator"])} · {esc(d["date"])} · {esc(d.get("content_type",""))}{f' · <span style="color:var(--accent);font-weight:500">{esc(version)}</span>' if (version and (version != 'v1.0' or series_id)) else ''}</div>
 <a style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0" href="/data/deposits/AXN-{hex_id}.md" download>↓ Download MD</a> <a style="display:inline-block;background:var(--accent);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0 6px 4px" href="/papers/AXN-{hex_id.zfill(4)}.pdf">↓ PDF</a>
 <div style="margin:8px 0">{kw_html}</div>
-{_corr_html}{_press_html}{_ident_html}
+{_cont_html}{_corr_html}{_press_html}{_ident_html}
 <h2>Description</h2>
 <p style="font-size:.9em">{_render_inline(d.get("description",""))}</p>
 {wiki_html}
