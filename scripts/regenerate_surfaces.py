@@ -2064,6 +2064,8 @@ SURFACE_FNS["semantic-addresses"] = regenerate_semantic_addresses
 
 
 def main():
+    # 2026-09-07: the inverse historical projection first, so every record wired below can fill its socket
+    import subprocess as _sp; _sp.run(['python3','scripts/build_pressure_index.py'],check=False)
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--dry-run", action="store_true", help="show what would change without writing")
     parser.add_argument("--only", default=None,

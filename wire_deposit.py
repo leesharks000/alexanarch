@@ -1,3 +1,5 @@
+import os
+REPO_ROOT = os.path.dirname(os.path.abspath(__file__))
 #!/usr/bin/env python3
 """Wire deposit reading results into all data structures and regenerate static page."""
 
@@ -922,6 +924,32 @@ def regenerate_static_page(d, eidx, registry=None):
             _corr_ld.append({"@type": "CorrectionComment", "@id": f"https://www.alexanarch.org/s/records/{_cn}/", "url": f"https://www.alexanarch.org/s/records/{_cn}/",
                              "name": f"ERRATUM #{_cn}", "text": _r.get("note") or "", "about": {"@type": "PropertyValue", "propertyID": "severity", "value": _sev}})
     if _corr_ld: _ld["correction"] = _corr_ld
+    # 2026-09-07 PROVENANCE GRAVITY (MANUS ruling): the record's declared backward pressure, its
+    # reciprocal declarations toward earlier records, and its forward SOCKET — always empty in the
+    # record, filled at render time from data/pressure-index.json with what LATER records declared
+    # toward it. The socket's contents are the archive's present-tense reconstruction, not this
+    # record's statement; they never enter its bytes.
+    _press_html = ''
+    _pr = d.get('pressure')
+    if isinstance(_pr, dict):
+        _MARK = {'inherits': '⟵A', 'problem': '⟵D', 'preserves': '≈', 'transforms': '↯', 'rejects': '⊘', 'consequence': '∴'}
+        def _tgt(t):
+            return f'<a href="/s/records/{t}/" style="color:var(--accent)">#{t}</a>' if isinstance(t, int) else esc(str(t))
+        _lines = ''.join(f'<div><span style="font-family:var(--mono);display:inline-block;width:2.2em">{_MARK.get(e.get("k"),"?")}</span> {_tgt(e.get("to"))} <span style="color:#666">— {esc(e.get("note") or "")}</span></div>' for e in (_pr.get('backward') or []))
+        _lines += ''.join(f'<div><span style="font-family:var(--mono);display:inline-block;width:2.2em">⇄</span> {_tgt(e.get("to"))} <span style="color:#666">— {esc(e.get("note") or "")}</span></div>' for e in (_pr.get('reciprocal') or []))
+        try:
+            _pidx = json.load(open(os.path.join(REPO_ROOT, 'data', 'pressure-index.json')))['index'].get(str(d.get('deposit_number')), [])
+        except Exception:
+            _pidx = []
+        _growth = ''.join(f'<div style="color:#666"><a href="/s/records/{g["from"]}/" style="color:var(--accent)">#{g["from"]}</a> · {esc(g.get("date") or "")} · {_MARK.get(g["k"], "⇄" if g["k"]=="reciprocal" else "?")} this</div>' for g in _pidx)
+        _press_html = (f'<div style="border-left:4px solid #6a5acd;background:#fff;padding:8px 12px;margin:10px 0;font-size:.86em">'
+                       f'<div><strong>Pressure</strong> <span style="color:#666">— what this record declared at deposit; the ⟶ socket is filled from what later records declared toward it</span></div>'
+                       f'{_lines}'
+                       f'<div><span style="font-family:var(--mono);display:inline-block;width:2.2em">⟶</span> <span style="color:#6a5acd">[socket]</span>'
+                       + (f'<div style="margin:4px 0 0 2.2em"><span style="color:#666;font-style:italic">later growth (derived, not this record\'s statement):</span>{_growth}</div>' if _growth else '<span style="color:#666"> ∅ — nothing has yet grown here that declares it</span>')
+                       + '</div></div>')
+        _bases = [f"https://www.alexanarch.org/s/records/{e['to']}/" for e in (_pr.get('backward') or []) if e.get('k') == 'inherits' and isinstance(e.get('to'), int)]
+        if _bases: _ld['isBasedOn'] = _bases
     _ident_html = ''
     if _dois:
         _rows = ''.join(f'<div><span style="color:#b23">former DOI</span> <span class="m" style="font-family:var(--mono);font-size:.85em">{esc(_u.replace("https://doi.org/",""))}</span> — severed 2026-06-19 by the registrant; {esc(_doi_state(_u.replace("https://doi.org/","")))}; <a href="/s/doi/{esc(_u.replace("https://doi.org/",""))}/" style="color:var(--accent)">resolution page</a></div>' for _u in _dois)
@@ -1869,7 +1897,7 @@ def regenerate_static_page(d, eidx, registry=None):
 <div style="font-size:.85em;color:#777;margin-bottom:10px">{esc(d["creator"])} · {esc(d["date"])} · {esc(d.get("content_type",""))}{f' · <span style="color:var(--accent);font-weight:500">{esc(version)}</span>' if (version and (version != 'v1.0' or series_id)) else ''}</div>
 <a style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0" href="/data/deposits/AXN-{hex_id}.md" download>↓ Download MD</a> <a style="display:inline-block;background:var(--accent);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0 6px 4px" href="/papers/AXN-{hex_id.zfill(4)}.pdf">↓ PDF</a>
 <div style="margin:8px 0">{kw_html}</div>
-{_corr_html}{_ident_html}
+{_corr_html}{_press_html}{_ident_html}
 <h2>Description</h2>
 <p style="font-size:.9em">{_render_inline(d.get("description",""))}</p>
 {wiki_html}
