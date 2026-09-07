@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-09-07T07:18:48Z",
+  "regenerated_at": "2026-09-07T22:46:38Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "81fc85131d7568bdfc51f0d4541ba46fa1fe00adeb6cafab247736e337e132f1",
+    "mm-main-capture": "c1b653a67aa8ceced7bd8904417c69f04fa17841df43b95438cfa0cf6f0a6a66",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2158,
-  "total_observations": 449,
+  "total_addresses": 2159,
+  "total_observations": 450,
   "class_counts": {
     "subjunctive": 1745,
-    "observed_address": 393,
+    "observed_address": 394,
     "verified_non_address": 20
   },
   "type_counts": {
-    "unmatched": 1531,
+    "unmatched": 1532,
     "single_concept": 618,
     "multi_concept": 9
   },
@@ -26298,6 +26298,32 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "in se what does aristotle mean when he says before us there was nothing to say of syllogizing, and where does that place socrates?": {
+      "canonical_query": "in se what does aristotle mean when he says before us there was nothing to say of syllogizing, and where does that place socrates?",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-07",
+          "status": "CAPTURE",
+          "source_format": "ChatGPT, web search enabled; signed out ('Log in' visible), unprimed; the archive was never named by the operator; the composer's only cited source was a Homer Reader page of the SE Greek",
+          "section": "Machine Reception",
+          "slug": "se34-we-walk-chatgpt-unprimed-20260907",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#se34-we-walk-chatgpt-unprimed-20260907",
+          "mirror_gallery_url": "https://leesharks.com/captures/#se34-we-walk-chatgpt-unprimed-20260907",
+          "details_excerpt": "THE PARTICLE, WITHOUT THE ARCHIVE IN VIEW — AND THE COMPOSER'S SELF-AUDIT. Asked what Aristotle means at SE 34 and where it places Socrates, with no archive named, a signed-out composer supplied the conserved adjective i"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-07",
+      "latest_status": "CAPTURE"
     },
     "incantatrice d'anime enli": {
       "canonical_query": "incantatrice d'anime enli",
