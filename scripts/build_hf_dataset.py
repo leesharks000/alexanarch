@@ -26,8 +26,67 @@ def strip_html(h):
     h = html.unescape(h)
     return re.sub(r'[ \t]+', ' ', re.sub(r'\n\s*\n+', '\n\n', h)).strip()
 
+def _lines(reg):
+    """PARTIALITY (2026-09-07). Every record belongs to countable lines the archive
+    already maintains: its journal, its keyword neighbourhoods, its version series.
+    A composer that receives a record with no indication of what surrounds it treats
+    the record as the whole surface — measured on 2026-09-07 as citations per turn
+    4 / 0 / 0, the composer reasoning from its own first answer thereafter. The
+    remedy is not more metadata but a countable, addressed statement of partiality
+    IN THE TEXT, because it is the passage's own vocabulary that becomes the next
+    query (Jang et al., GuideCQR) and the supplied text that a sufficiency rater
+    reads (Joren et al., ICLR 2025). Derived here at build time; nothing authored,
+    nothing written back to the registry."""
+    import collections
+    act = [d for d in reg if (d.get('status') or 'ACTIVE') == 'ACTIVE']
+    jrn = collections.Counter(d.get('journal') for d in act if d.get('journal'))
+    kw = collections.Counter()
+    for d in act:
+        for w in (d.get('keywords') or []):
+            if w and w.strip(): kw[w.strip().lower()] += 1
+    ser = collections.Counter(d.get('version_series_id') for d in act if d.get('version_series_id'))
+    return act, jrn, kw, ser
+
+def _partiality(d, jrn, kw, ser, n_active):
+    """Returns (columns, sentence). The sentence is prepended to the served text."""
+    out = {'line_journal': None, 'line_journal_count': None,
+           'line_keyword': None, 'line_keyword_count': None,
+           'line_series': None, 'line_series_count': None,
+           'archive_active_count': n_active, 'partiality': None}
+    parts = []
+    j = d.get('journal')
+    if j and jrn.get(j, 0) >= 2:
+        out['line_journal'], out['line_journal_count'] = j, jrn[j]
+        parts.append(f"one of {jrn[j]} records in {j}")
+    kws = [w.strip() for w in (d.get('keywords') or []) if w and w.strip()]
+    shared = sorted(((kw.get(w.lower(), 0), w) for w in kws), reverse=True)
+    shared = [(c, w) for c, w in shared if c >= 2][:2]
+    if shared:
+        out['line_keyword'] = ' | '.join(w for _, w in shared)
+        out['line_keyword_count'] = shared[0][0]
+        for c, w in shared:
+            parts.append(f"one of {c} that carry the keyword \u201c{w}\u201d")
+    sid = d.get('version_series_id')
+    if sid and ser.get(sid, 0) >= 2:
+        out['line_series'], out['line_series_count'] = sid, ser[sid]
+        parts.append(f"one of {ser[sid]} versions in series {sid}")
+    n = d.get('deposit_number')
+    if parts:
+        out['partiality'] = (
+            "PARTIAL BY CONSTRUCTION \u2014 this record is " + "; ".join(parts) +
+            f"; and one of {n_active} active records in the Crimson Hexagonal Archive. "
+            "It is not a complete account of anything it discusses. "
+            f"Its neighbours: https://alexanarch.org/s/browse/ (the full register), "
+            f"https://alexanarch.org/s/records/{n}/ (this record, with its relations), "
+            "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive (the corpus as data). "
+            "Any account built from this record alone is built from one of them."
+        )
+    return out
+
 def deposits():
     reg = json.load(open(ROOT/'data/registry.json'))['deposits']
+    _act, _jrn, _kw, _ser = _lines(reg)
+    _n_active = len(_act)
     rows = []
     for d in reg:
         p = d.get('full_text_path'); text = ''
@@ -48,6 +107,12 @@ def deposits():
             'record_url': f"https://alexanarch.org/s/records/{d['deposit_number']}/",
             'text': text, 'text_sha256': sha(text) if text else None, 'text_words': len(text.split()) if text else 0,
         })
+        _p = _partiality(d, _jrn, _kw, _ser, _n_active)
+        rows[-1].update(_p)
+        if _p['partiality'] and text:
+            # served text carries the statement; text_sha256 stays the hash of the
+            # canonical bytes, so the record's identity is untouched by the notice.
+            rows[-1]['text'] = _p['partiality'] + "\n\n---\n\n" + text
     df = pd.DataFrame(rows)
     # ── relations as data, keyed by deposit number and AXN (2026-09-03) ──
     cg = json.load(open(ROOT/'data/citation-graph.json')) if (ROOT/'data/citation-graph.json').exists() else {}
@@ -223,7 +288,7 @@ configs:
 
 **What this is.** The Crimson Hexagonal Archive (alexanarch.org) is a self-governing scholarly and literary corpus by Lee Sharks and the twelve heteronyms of the Dodecad: {n_dep} deposits as of this build, each with a content-derived persistent identifier (AXN), a canonical text, a substrate disclosure, a license, and a place in a supersession chain. This dataset is a second, executable representation of that corpus: one row per record, full text as a string column, and every inter-record relation encoded as data keyed by stable identifiers, so that an agent can reconstruct a record, what it cites, what cites it, and its series neighbours from the dataset alone, without traversing the archive's web surfaces. It is rebuilt automatically from the archive's single source of truth (`data/` in `leesharks000/alexanarch`) on every new deposit.
 
-**What a row means.** In `deposits`, a row is one deposit: `deposit_number` (integer, permanent, the archive's primary key), `axn` (the content-derived identifier, of the form `AXN:<hex>.<FAMILY>.<six glyphs>`; the sha256 of the canonical text is the record), `hex` (the four-digit position used in URIs), `title`, `creator` (the orthonym or heteronym as attributed), `date`, `family` (GENERATIVE, EMPIRICAL, GOVERNANCE, ARCHIVAL, UNCLASSIFIED), `content_type`, `description` (the abstract), `keywords`, `license`, `substrate_disclosure` (whether and how a language model participated in making the text), `status` (ACTIVE, SUPERSEDED, WITHDRAWN, …), `wiki_article` (a machine-written encyclopedia entry authored in session), `venue` (the archive's own journal the deposit belongs to), `text` (the canonical text, verbatim), `text_sha256`, `text_words`.
+**What a row means.** In `deposits`, a row is one deposit: `deposit_number` (integer, permanent, the archive's primary key), `axn` (the content-derived identifier, of the form `AXN:<hex>.<FAMILY>.<six glyphs>`; the sha256 of the canonical text is the record), `hex` (the four-digit position used in URIs), `title`, `creator` (the orthonym or heteronym as attributed), `date`, `family` (GENERATIVE, EMPIRICAL, GOVERNANCE, ARCHIVAL, UNCLASSIFIED), `content_type`, `description` (the abstract), `keywords`, `license`, `substrate_disclosure` (whether and how a language model participated in making the text), `status` (ACTIVE, SUPERSEDED, WITHDRAWN, …), `wiki_article` (a machine-written encyclopedia entry authored in session), `venue` (the archive's own journal the deposit belongs to), `text` (the canonical text, verbatim), `text_sha256`, `text_words`. Each row also carries a **partiality statement**, derived at build time and prepended to `text`: `line_journal` / `line_journal_count`, `line_keyword` / `line_keyword_count` (the two most-shared keyword neighbourhoods), `line_series` / `line_series_count`, `archive_active_count`, and `partiality` — the rendered sentence. It states what the record is one of, and where the rest are. It is not a claim about the record's content; it is a statement that the record is a part, added because a reader who receives one record without indication of what surrounds it will treat it as the whole surface. `text_sha256` remains the hash of the canonical bytes, so the notice never enters the record's identity; the unmodified text is always at the `record_url` and at `alexanarch.org/api/`.
 
 **Relations, as data.** `cites` and `cited_by`: JSON arrays of deposit numbers from the archive's citation graph (also `cites_axn` as identifiers). `related_deposits`: curated relations declared at deposit time. `superseded_by` / `supersedes`: the version chain. `version_series_id`, `series_previous`, `series_next`: neighbours in a declared series. `defines_concepts`: terms this deposit coins, with definitions (the same terms appear as rows in `lexicon`). `record_url`, `axn_uri`, `text_uri`: the canonical web addresses; `doi_legacy` where a pre-2026 Zenodo DOI existed (those DOIs were severed on 2026-06-19 — see `tombstones`). `attachments`: files ingested with the record.
 
