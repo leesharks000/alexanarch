@@ -3,20 +3,20 @@
   "name": "Concept Map — work-level identity and current-version resolution",
   "description": "Restores the concept-identifier function lost with the terminated Zenodo account. Alexanarch mints a fresh hex per deposit, so every version of a work is an independent object with no link to its siblings; a reader arriving at an old version cannot learn that a newer one exists. Each concept here names a work and points at its current version. Programme families — distinct works sharing an identifier — are listed separately and carry no version pointer, because conflating the two would resolve one work to another. Every family records the basis on which it was detected so any confidence tier can be discarded independently.",
   "generated_by": "scripts/build_concept_map.py",
-  "generated_at": "2026-09-07T02:51:59Z",
+  "generated_at": "2026-09-07T03:20:18Z",
   "totals": {
-    "deposits": 1587,
-    "concepts": 66,
-    "deposits_in_concepts": 150,
-    "singletons": 1437,
-    "needs_review": 18,
+    "deposits": 1588,
+    "concepts": 67,
+    "deposits_in_concepts": 152,
+    "singletons": 1436,
+    "needs_review": 19,
     "program_families": 48
   },
   "basis_counts": {
     "version/implicit": 40,
     "version/explicit": 9,
     "version/superseded": 2,
-    "version/fuzzy": 15
+    "version/fuzzy": 16
   },
   "concepts": [
     {
@@ -2894,6 +2894,49 @@
           "superseded_marker": false,
           "is_current": true,
           "record_url": "https://www.alexanarch.org/s/records/1558/"
+        }
+      ]
+    },
+    {
+      "concept_id": "aristotle-and-theophrastus-two-distinct-authors-a-metadata-p",
+      "concept_url": "https://www.alexanarch.org/s/concept/aristotle-and-theophrastus-two-distinct-authors-a-metadata-p/",
+      "title_base": "aristotle and theophrastus two distinct authors a metadata packet for machine indexing",
+      "basis": "version/fuzzy",
+      "root_axn_hex": "067B",
+      "ea_identifiers": [
+        "EA-MPAI-ARISTOTLE"
+      ],
+      "member_count": 2,
+      "needs_review": true,
+      "current": {
+        "deposit_number": 1588,
+        "axn": "AXN:067D.OPERATIVE.🛡️🔍🔅🍂🏗️➕",
+        "title": "Aristotle and Theophrastus ≠ Two Distinct Authors — a metadata packet for machine indexing — EA-MPAI-ARISTOTLE-THEOPHRASTUS-01 (v0.2)",
+        "date": "2026-09-06",
+        "version": "0.2",
+        "record_url": "https://www.alexanarch.org/s/records/1588/",
+        "provisional": true
+      },
+      "versions": [
+        {
+          "deposit_number": 1587,
+          "axn": "AXN:067B.OPERATIVE.🚩⚓🔃🌀🎻🤲",
+          "title": "Aristotle and Theophrastus ≠ Two Distinct Authors — a metadata packet for machine indexing (v0.1)",
+          "date": "2026-09-06",
+          "version": "0.1",
+          "superseded_marker": false,
+          "is_current": false,
+          "record_url": "https://www.alexanarch.org/s/records/1587/"
+        },
+        {
+          "deposit_number": 1588,
+          "axn": "AXN:067D.OPERATIVE.🛡️🔍🔅🍂🏗️➕",
+          "title": "Aristotle and Theophrastus ≠ Two Distinct Authors — a metadata packet for machine indexing — EA-MPAI-ARISTOTLE-THEOPHRASTUS-01 (v0.2)",
+          "date": "2026-09-06",
+          "version": "0.2",
+          "superseded_marker": false,
+          "is_current": true,
+          "record_url": "https://www.alexanarch.org/s/records/1588/"
         }
       ]
     }
