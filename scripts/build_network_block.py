@@ -145,6 +145,35 @@ def build():
                 + (f' <span style="color:currentColor;opacity:.55">({tag})</span>' if tag else '')
                 + '</div>')
         parts.append('</div>')
+    # ALLIED SITES — GENERATED (2026-09-07, MANUS): from data/api/fleet.json, the canonical copy
+    # that carries the standing forms corrected 2026-08-30 (Enli Lucente: link text
+    # "Incantatrice d'Anime Enli / Enli Lucente", role "Independent Researcher ・Strategist";
+    # "Strutturista della Psiche" is her discipline, not a heteronym). The hand-held sections
+    # on fleet sites still carried the OLD form ("Strutturista della Psiche — investigative
+    # writing"), flush-left and off-scale (seen on spxi.dev, provenanceerasure.org,
+    # survivethedeletion 2026-09-07). Generating the group from the canonical copy and
+    # stripping any hand-held section that follows the block ends both defects at once.
+    try:
+        _fj = json.loads((ROOT / 'data/api/fleet.json').read_text())
+        _al = next((sec for sec in _fj.get('sections', []) if (sec.get('title') or sec.get('name')) == 'Allied Sites'), None)
+    except Exception:
+        _al = None
+    if _al:
+        parts.append(
+            '<h4 style="font-size:0.78em;color:currentColor;opacity:.62;margin:10px 15px 4px 15px;'
+            'text-transform:uppercase;letter-spacing:0.04em;font-weight:500">Allied Sites</h4>')
+        rows = []
+        for it in (_al.get('items') or _al.get('sites') or _al.get('domains') or []):
+            href = it.get('url') or (('https://' + it['d'] + '/') if it.get('d') else None)
+            label = it.get('label') or it.get('d') or ''
+            note = it.get('note') or ''
+            desc = it.get('desc') or it.get('description') or ''
+            if not href: continue
+            rows.append(f'<div><a href="{href}">{label}</a>'
+                        + (f' <span style="color:currentColor;opacity:.55">({note})</span>' if note else '')
+                        + (f'<span style="display:block;color:currentColor;opacity:.55;font-size:.92em">{desc}</span>' if desc else '')
+                        + '</div>')
+        parts.append('<div style="padding:0 15px 4px 15px;font-size:0.82em;line-height:1.7">' + ''.join(rows) + '</div>')
     # MACHINE ENTRY. One line, last, pointing harvesters at the archive's own
     # OAI-PMH endpoint and at AXN. It sits in the fleet block because that block
     # is generated from a single source and applied across every site — so a
@@ -159,6 +188,10 @@ def build():
         '<span style="color:currentColor;opacity:.55">(harvestable metadata, 1,400+ records)</span></div>'
         '<div><a href="https://www.alexanarch.org/resolve/">AXN resolver</a> '
         '<span style="color:currentColor;opacity:.55">(content-derived identifiers)</span></div>'
+        '<div><a href="https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive">Hugging Face dataset</a> '
+        '<span style="color:currentColor;opacity:.55">(the archive as Parquet: deposits, captures, reception, predictions — rebuilt from the registry)</span></div>'
+        '<div><a href="https://www.alexanarch.org/api/search-index.json">API</a> '
+        '<span style="color:currentColor;opacity:.55">(search index · <a href="https://www.alexanarch.org/api/fleet.json">fleet.json</a> · <a href="https://www.alexanarch.org/api/body-shards/manifest.json">body shards</a>)</span></div>'
         '</div>')
     parts.append(END)
     return '\n'.join(parts), fleet, who
@@ -232,6 +265,10 @@ def apply(paths, block):
             s = p.read_text(errors='replace')
             if START in s:
                 s2 = re.sub(re.escape(START) + r'.*?' + re.escape(END), block, s, flags=re.S)
+                # strip a hand-held Allied Sites section left after the block (2026-09-07): it is
+                # now generated inside the block from the canonical copy. Matches the two forms
+                # seen in the fleet — an <h4> or a bold heading — through the last entry's </div>.
+                s2 = re.sub(r'(?<=' + re.escape(END) + r')\s*(?:<h4[^>]*>|<(?:strong|b)[^>]*>|<p[^>]*><(?:strong|b)>)\s*Allied Sites\s*(?:</h4>|</strong>|</b>|</b></p>|</strong></p>)\s*(?:<div[^>]*>.*?</div>\s*)+?(?=\s*(?:<div[^>]*>\s*<a href="https://mindcontrolpoems|<div class="fl-f|<p[^>]*>\s*<a href="https://mindcontrolpoems|<footer|<div class="mspcolophon|</body>))', '', s2, flags=re.S)
             elif 'Crimson Hexagonal Archive — Network' in s:
                 m = re.search(r'(Crimson Hexagonal Archive — Network</h3>\s*'
                               r'<div[^>]*>[^<]*</div>)', s)
