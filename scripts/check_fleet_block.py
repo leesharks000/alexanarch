@@ -45,7 +45,7 @@ def check_html(name, html):
     if _al != 1:
         fails.append(f"{name}: renders {_al} 'Allied Sites' headers")
     if html.count('Machine entry') + html.count('Machine Entry') > 1:
-        fails.append(f"{name}: renders {(html.count('Machine entry') + html.count('Machine Entry'))} Machine entry sections")
+        fails.append(f"{name}: renders {len(re.findall(r'<h4[^>]*>\s*Machine [Ee]ntry\s*</h4>', html))} Machine entry sections")
     return fails
 
 
