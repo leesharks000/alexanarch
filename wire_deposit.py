@@ -934,6 +934,11 @@ def regenerate_static_page(d, eidx, registry=None):
     # the problem is that it stops there and calls it a complete circuit." The block below is not a
     # gate and names no required reading; it is the affordance not to stop — the thread this record is
     # a turn of, the directions in which it deepens, and the count of doors in each, derived.
+    # 2026-09-07 later (MANUS): the continuance and pressure blocks are NOT rendered on the page —
+    # "four blocks before reaching full text; repeating it across each deposit would simply turn to
+    # noise." The fields stay in the registry and reach the Hub, the inverse index and JSON-LD
+    # (isBasedOn); the page shows the record. The blocks are still built here so the code path stays
+    # tested, but they are not placed.
     _cont_html = ''
     _co = d.get('continuance')
     if isinstance(_co, dict):
@@ -1921,7 +1926,7 @@ def regenerate_static_page(d, eidx, registry=None):
 <div style="font-size:.85em;color:#777;margin-bottom:10px">{esc(d["creator"])} · {esc(d["date"])} · {esc(d.get("content_type",""))}{f' · <span style="color:var(--accent);font-weight:500">{esc(version)}</span>' if (version and (version != 'v1.0' or series_id)) else ''}</div>
 <a style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0" href="/data/deposits/AXN-{hex_id}.md" download>↓ Download MD</a> <a style="display:inline-block;background:var(--accent);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0 6px 4px" href="/papers/AXN-{hex_id.zfill(4)}.pdf">↓ PDF</a>
 <div style="margin:8px 0">{kw_html}</div>
-{_cont_html}{_corr_html}{_press_html}{_ident_html}
+{_corr_html}{_ident_html}
 <h2>Description</h2>
 <p style="font-size:.9em">{_render_inline(d.get("description",""))}</p>
 {wiki_html}
