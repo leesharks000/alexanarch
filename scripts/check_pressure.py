@@ -30,6 +30,14 @@ for d in reg["deposits"]:
         if not (isinstance(t, int) and t < n): fails.append(f"#{n}: reciprocal must name an EARLIER deposit number (got {t!r})")
     extra = set(p) - {"backward", "reciprocal", "forward"}
     if extra: fails.append(f"#{n}: unknown pressure keys {sorted(extra)}")
+for d in reg["deposits"]:
+    c = d.get("continuance")
+    if c is None: continue
+    n = d.get("deposit_number")
+    if not isinstance(c, dict) or not c.get("thread") or not isinstance(c.get("parts"), list) or not c.get("rule"):
+        fails.append(f"#{n}: continuance must carry thread, parts (list), rule"); continue
+    if n in c["parts"]: fails.append(f"#{n}: continuance.parts must not include the record itself")
+    if not str(d.get("description") or "").startswith("PART OF A THREAD"): fails.append(f"#{n}: a record with continuance must lead its description with the PART OF A THREAD notice")
 for f in fails: print("  FAIL", f)
 print(f"check_pressure: {sum(1 for d in reg['deposits'] if d.get('pressure'))} records carry pressure · {len(fails)} failure(s)")
 sys.exit(1 if fails else 0)
