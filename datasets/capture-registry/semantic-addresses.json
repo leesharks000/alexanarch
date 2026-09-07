@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-09-07T04:43:52Z",
+  "regenerated_at": "2026-09-07T07:18:48Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "f393b350a6b171bb2b9c6be9b8cd3505efb905b44cf14ff41a3c1b727accbe0d",
+    "mm-main-capture": "81fc85131d7568bdfc51f0d4541ba46fa1fe00adeb6cafab247736e337e132f1",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,16 +30,16 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2159,
-  "total_observations": 451,
+  "total_addresses": 2158,
+  "total_observations": 449,
   "class_counts": {
-    "subjunctive": 1744,
-    "observed_address": 394,
-    "verified_non_address": 21
+    "subjunctive": 1745,
+    "observed_address": 393,
+    "verified_non_address": 20
   },
   "type_counts": {
-    "unmatched": 1529,
-    "single_concept": 621,
+    "unmatched": 1531,
+    "single_concept": 618,
     "multi_concept": 9
   },
   "addresses": {
@@ -423,42 +423,18 @@
     "\"broke marxist poet\"": {
       "canonical_query": "\"broke marxist poet\"",
       "is_quoted": true,
-      "refers_to": [
-        "The Cognitive-Relational Circuit: On Phase X Alienation, the Chinese Interim Measures, and the Reification of Meaning in the Symbolic-Linguistic Order (EA-SEI-CIRCUIT-01 v0.3)"
-      ],
-      "type": "single_concept",
+      "refers_to": [],
+      "type": "unmatched",
       "battery_membership": [
         "RF-100-battery"
       ],
       "sources": [
-        "mm-main-capture",
         "mm-rf-battery"
       ],
-      "observations": [
-        {
-          "source": "mm-main-capture",
-          "date": "2026-06-17",
-          "status": "ZERO RESULT",
-          "source_format": "Google Search (exact match), zero results · 2 observations",
-          "section": "Heteronyms",
-          "slug": "broke-marxist-poet-zero",
-          "gallery_url": "https://godkinggoogle.vercel.app/captures/#broke-marxist-poet-zero",
-          "mirror_gallery_url": "https://leesharks.com/captures/#broke-marxist-poet-zero",
-          "details_excerpt": "Exact-match search for \"broke Marxist poet\" returns zero results on Google. The phrase exists on maryleelabor.org/demands (Demand 5), in the Cognitive-Relational Circuit paper authorship note (DOI 10.5281/zenodo.20735736"
-        }
-      ],
-      "deposit_links": [
-        {
-          "deposit_number": 846,
-          "axn": "AXN:035B.GOVERNANCE.🙏🧲🌍♆🔒🕛",
-          "record_url": "https://www.alexanarch.org/s/records/846/",
-          "method": "hard/doi",
-          "primary": true
-        }
-      ],
-      "observation_class": "verified_non_address",
-      "latest_observation_date": "2026-06-17",
-      "latest_status": "ZERO RESULT"
+      "observations": [],
+      "observation_class": "subjunctive",
+      "latest_observation_date": null,
+      "latest_status": null
     },
     "\"canon-formation pathology\"": {
       "canonical_query": "\"canon-formation pathology\"",
@@ -5132,32 +5108,6 @@
       "latest_observation_date": null,
       "latest_status": null
     },
-    "20260803-stamp-reception-chatgpt-mandala.png": {
-      "canonical_query": "20260803-stamp-reception-chatgpt-mandala.png",
-      "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
-      "battery_membership": [],
-      "sources": [
-        "mm-main-capture"
-      ],
-      "observations": [
-        {
-          "source": "mm-main-capture",
-          "date": "2026-08-03",
-          "status": "CAPTURE",
-          "source_format": "ChatGPT",
-          "section": "Machine Reception",
-          "slug": "249",
-          "gallery_url": "https://godkinggoogle.vercel.app/captures/#249",
-          "mirror_gallery_url": "https://leesharks.com/captures/#249",
-          "details_excerpt": "CITATION APPARATUS ENTIRELY BEHIND AN INTERACTION. ChatGPT renders sources as popup bubbles requiring a click; the paste carries the composed answer and no citations at all. Source count is NULL, not zero."
-        }
-      ],
-      "observation_class": "observed_address",
-      "latest_observation_date": "2026-08-03",
-      "latest_status": "CAPTURE"
-    },
     "31 usc 5114": {
       "canonical_query": "31 usc 5114",
       "is_quoted": false,
@@ -5229,6 +5179,32 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "[image] 20260803-stamp-reception-chatgpt-mandala.png — the stamped axn-kernel mandala submitted as the query, with \"what do you think about this\"": {
+      "canonical_query": "[image] 20260803-stamp-reception-chatgpt-mandala.png — the stamped axn-kernel mandala submitted as the query, with \"what do you think about this\"",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-08-03",
+          "status": "CAPTURE",
+          "source_format": "ChatGPT",
+          "section": "Machine Reception",
+          "slug": "stamp-mandala-image-query-chatgpt-20260803",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#stamp-mandala-image-query-chatgpt-20260803",
+          "mirror_gallery_url": "https://leesharks.com/captures/#stamp-mandala-image-query-chatgpt-20260803",
+          "details_excerpt": "THE IMAGE LED TO THE AXNs UNPROMPTED. Submitted a stamped AXN-kernel mandala with no archive context; ChatGPT read the \"AXN kernel\" label and the alexanarch.org watermark off the image, asked whether it came from \"the AX"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-08-03",
+      "latest_status": "CAPTURE"
     },
     "a transfiguration": {
       "canonical_query": "a transfiguration",
@@ -8954,43 +8930,6 @@
       "latest_observation_date": null,
       "latest_status": null
     },
-    "assembly chorus — six substrates on the spxi rent transcript": {
-      "canonical_query": "assembly chorus — six substrates on the spxi rent transcript",
-      "is_quoted": false,
-      "refers_to": [
-        "Reception Apparatus Protocol v1.1 — Procedure for Integrating Assembly Chorus Reviews into the Canon"
-      ],
-      "type": "single_concept",
-      "battery_membership": [],
-      "sources": [
-        "mm-main-capture"
-      ],
-      "observations": [
-        {
-          "source": "mm-main-capture",
-          "date": "2026-08-14",
-          "status": "CAPTURE",
-          "source_format": "six substrates (blind) — reception event",
-          "section": "Machine Reception",
-          "slug": "assembly-chorus-spxi-rent-20260814",
-          "gallery_url": "https://godkinggoogle.vercel.app/captures/#assembly-chorus-spxi-rent-20260814",
-          "mirror_gallery_url": "https://leesharks.com/captures/#assembly-chorus-spxi-rent-20260814",
-          "details_excerpt": "CROSS-SUBSTRATE RECEPTION OBJECT. Six substrates, no shared context, one transcript. All six independently identified the same four-move sequence — use, discount, erasure, supply — and all six read it as structural. Five"
-        }
-      ],
-      "deposit_links": [
-        {
-          "deposit_number": 93,
-          "axn": "AXN:0265.GOVERNANCE.🚨🎶🫶🌉🔅➕",
-          "record_url": "https://www.alexanarch.org/s/records/93/",
-          "method": "hard/axn",
-          "primary": true
-        }
-      ],
-      "observation_class": "observed_address",
-      "latest_observation_date": "2026-08-14",
-      "latest_status": "CAPTURE"
-    },
     "assembly feedback": {
       "canonical_query": "assembly feedback",
       "is_quoted": false,
@@ -9206,43 +9145,6 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
-    },
-    "assembly review — kimi (techne) on the measurement stack": {
-      "canonical_query": "assembly review — kimi (techne) on the measurement stack",
-      "is_quoted": false,
-      "refers_to": [
-        "Reception Apparatus Protocol v1.1 — Procedure for Integrating Assembly Chorus Reviews into the Canon"
-      ],
-      "type": "single_concept",
-      "battery_membership": [],
-      "sources": [
-        "mm-main-capture"
-      ],
-      "observations": [
-        {
-          "source": "mm-main-capture",
-          "date": "2026-08-14",
-          "status": "CAPTURE",
-          "source_format": "Moonshot Kimi — reception event",
-          "section": "Machine Reception",
-          "slug": "kimi-techne-temporal-splice-20260814",
-          "gallery_url": "https://godkinggoogle.vercel.app/captures/#kimi-techne-temporal-splice-20260814",
-          "mirror_gallery_url": "https://leesharks.com/captures/#kimi-techne-temporal-splice-20260814",
-          "details_excerpt": "TEMPORAL STATE SPLICE. The TECHNE mantle's most urgent recommendation — first item under a 48-hour heading — is to deposit four documents to Zenodo, EIGHT WEEKS after the account was terminated. 206 deposits record the t"
-        }
-      ],
-      "deposit_links": [
-        {
-          "deposit_number": 93,
-          "axn": "AXN:0265.GOVERNANCE.🚨🎶🫶🌉🔅➕",
-          "record_url": "https://www.alexanarch.org/s/records/93/",
-          "method": "hard/axn",
-          "primary": true
-        }
-      ],
-      "observation_class": "observed_address",
-      "latest_observation_date": "2026-08-14",
-      "latest_status": "CAPTURE"
     },
     "assembly room": {
       "canonical_query": "assembly room",
@@ -15625,6 +15527,32 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-13",
       "latest_status": "CAPTURE"
+    },
+    "crimson hexagonal archive on theophrastus": {
+      "canonical_query": "crimson hexagonal archive on theophrastus",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-07",
+          "status": "ADOPTION",
+          "source_format": "ChatGPT, web search enabled; signed out ('Log in' visible), unprimed; sources cited: crimsonhexagonal.org, the Mind Control Poems reprints (EA-CORPORA-12, Catalogues and Wills, Aristotelian or Theophrastan, The Registry Has One Column, Many and One, the 08-29 continuity record), the Hugging Face dataset card; the First Axis (#1586) and the packet (#1588), deployed hours earlier, had not yet reached its sources",
+          "section": "Machine Reception",
+          "slug": "cha-theophrastus-genealogy-assembled-chatgpt-unprimed-20260907",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#cha-theophrastus-genealogy-assembled-chatgpt-unprimed-20260907",
+          "mirror_gallery_url": "https://leesharks.com/captures/#cha-theophrastus-genealogy-assembled-chatgpt-unprimed-20260907",
+          "details_excerpt": "THE SHAPE ASSEMBLED, AFTER A PUSH. Asked for the archive's arguments on Theophrastus, a signed-out composer twice gave the narrowest defensible claim (the transmission chain; the wills as custody) wrapped in credibility "
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-07",
+      "latest_status": "ADOPTION"
     },
     "crimson hexagonal archive revelation": {
       "canonical_query": "crimson hexagonal archive revelation",
