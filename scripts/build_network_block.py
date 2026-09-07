@@ -35,7 +35,8 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 FLEET = ROOT / 'data/fleet-domains.json'
 RECORDS = ROOT / 'datasets/heteronyms/records'
-START = '<!-- FLEET-NETWORK-START generated from data/fleet-domains.json -->'
+START = '<!-- FLEET-NETWORK-START generated from https://www.alexanarch.org/api/fleet.json -->'
+ANY_START = re.compile(r'<!-- FLEET-NETWORK-START[^>]*-->')
 END = '<!-- FLEET-NETWORK-END -->'
 
 # The grouping is editorial and lives here rather than in the domain list,
@@ -96,197 +97,75 @@ def holders():
 
 
 def build():
-    # data/fleet-domains.json was upgraded from a bare list of 28 strings to a
-    # structured manifest ({version, count, domains:[{domain, object, ...}]}).
-    # This reader still took set() over the parsed JSON, which over a dict yields
-    # its five TOP-LEVEL KEYS — so `fleet` became {"_FLOW","version","updated",
-    # "count","domains"} and every real domain failed the `d not in fleet` test.
-    # The block has been rendering nearly empty since that change. (2026-08-16)
-    _raw = json.loads(FLEET.read_text())
-    if isinstance(_raw, dict):
-        _entries = _raw.get("domains") or []
-        fleet = {e["domain"] if isinstance(e, dict) else e for e in _entries}
-    else:
-        fleet = set(_raw)
-    who = {**holders(), **EXTRA}
-    grouped = {d for _, ds in GROUPS for d in ds}
-    ungrouped = sorted(fleet - grouped)
+    """UNIFIED (2026-09-07, MANUS): one generator, one source. The block is rendered from
+    data/api/fleet.json — Archive, Framework Sites, Heteronym Institutions, Allied Sites
+    (with the standing forms corrected 2026-08-30), Machine Entry (OAI-PMH, AXN resolver,
+    the Hugging Face dataset, the API), and the footer (blog · Academia.edu · Google Scholar
+    · ORCID) — in the class-based markup chosen on 2026-08-21 (links take each site's own
+    colour). The older inline-styled block and the hand-held Allied Sites sections that
+    followed it on fleet sites (stale Enli form; doubled headers seen on lagrange, vpcor,
+    watergiraffe, restoredacademy 2026-09-07) are replaced by apply()."""
+    fj = json.loads((ROOT / 'data/api/fleet.json').read_text())
     parts = [START]
-    # ALLIED SITES IS NOT GENERATED. It carries people rather than fleet
-    # domains — Alice Thornburgh, Florian Morin, Enli Lucente's Strutturista
-    # della Psiche — plus profile links. A first pass regenerated it from the
-    # domain list and DELETED all of that. The generator writes the three
-    # canonical groups; Allied Sites stays hand-held.
-    #
-    # STANDING FORMS, corrected 2026-08-30 at the contributor's request. If
-    # Allied Sites is ever generated, reproduce these exactly:
-    #   Enli Lucente — link text: "Incantatrice d'Anime Enli / Enli Lucente"
-    #                  role:      "Independent Researcher ・Strategist"
-    # Both names are carried deliberately: the Incantatrice form is the one on
-    # her Zenodo contestation records, and the pair binds them to each other on
-    # a machine-read surface. "Strutturista della Psiche" is her DISCIPLINE —
-    # structural psychology, in Italian — not a heteronym, and has been
-    # mistranslated as one. She was previously described here as doing
-    # "investigative writing"; that was wrong and is corrected.
-    # Canonical copy also in data/api/fleet.json, Allied Sites.
-    for label, domains in GROUPS:
-        parts.append(
-            f'<h4 style="font-size:0.78em;color:currentColor;opacity:.62;margin:10px 15px 4px 15px;'
-            f'text-transform:uppercase;letter-spacing:0.04em;font-weight:500">{label}</h4>')
-        parts.append('<div style="padding:0 15px;display:grid;'
-                     'grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px;row-gap:4px;'
-                     'font-size:0.82em;line-height:1.7">')
-        for d in domains:
-            if d not in fleet:
-                continue
-            tag = who.get(d)
-            parts.append(
-                f'<div><a href="https://{d}/">{d}</a>'
-                + (f' <span style="color:currentColor;opacity:.55">({tag})</span>' if tag else '')
-                + '</div>')
-        parts.append('</div>')
-    # ALLIED SITES — GENERATED (2026-09-07, MANUS): from data/api/fleet.json, the canonical copy
-    # that carries the standing forms corrected 2026-08-30 (Enli Lucente: link text
-    # "Incantatrice d'Anime Enli / Enli Lucente", role "Independent Researcher ・Strategist";
-    # "Strutturista della Psiche" is her discipline, not a heteronym). The hand-held sections
-    # on fleet sites still carried the OLD form ("Strutturista della Psiche — investigative
-    # writing"), flush-left and off-scale (seen on spxi.dev, provenanceerasure.org,
-    # survivethedeletion 2026-09-07). Generating the group from the canonical copy and
-    # stripping any hand-held section that follows the block ends both defects at once.
-    try:
-        _fj = json.loads((ROOT / 'data/api/fleet.json').read_text())
-        _al = next((sec for sec in _fj.get('sections', []) if (sec.get('title') or sec.get('name')) == 'Allied Sites'), None)
-    except Exception:
-        _al = None
-    if _al:
-        parts.append(
-            '<h4 style="font-size:0.78em;color:currentColor;opacity:.62;margin:10px 15px 4px 15px;'
-            'text-transform:uppercase;letter-spacing:0.04em;font-weight:500">Allied Sites</h4>')
+    for sec in fj.get('sections', []):
+        title = sec.get('title') or sec.get('name') or ''
+        items = sec.get('items') or sec.get('sites') or sec.get('domains') or []
         rows = []
-        for it in (_al.get('items') or _al.get('sites') or _al.get('domains') or []):
+        for it in items:
             href = it.get('url') or (('https://' + it['d'] + '/') if it.get('d') else None)
             label = it.get('label') or it.get('d') or ''
-            note = it.get('note') or ''
-            desc = it.get('desc') or it.get('description') or ''
             if not href: continue
+            note = it.get('note') or ''; desc = it.get('desc') or it.get('description') or ''
             rows.append(f'<div><a href="{href}">{label}</a>'
-                        + (f' <span style="color:currentColor;opacity:.55">({note})</span>' if note else '')
-                        + (f'<span style="display:block;color:currentColor;opacity:.55;font-size:.92em">{desc}</span>' if desc else '')
-                        + '</div>')
-        parts.append('<div style="padding:0 15px 4px 15px;font-size:0.82em;line-height:1.7">' + ''.join(rows) + '</div>')
-    # MACHINE ENTRY. One line, last, pointing harvesters at the archive's own
-    # OAI-PMH endpoint and at AXN. It sits in the fleet block because that block
-    # is generated from a single source and applied across every site — so a
-    # harvester arriving at ANY domain in the fleet finds the way in, and one
-    # edit reaches all of them. (2026-08-16)
-    parts.append(
-        '<h4 style="font-size:0.78em;color:currentColor;opacity:.62;margin:10px 15px 4px 15px;'
-        'text-transform:uppercase;letter-spacing:0.04em;font-weight:500">Machine entry</h4>')
-    parts.append(
-        '<div style="padding:0 15px 4px 15px;font-size:0.82em;line-height:1.7">'
-        '<div><a href="https://www.alexanarch.org/oai?verb=Identify">OAI-PMH endpoint</a> '
-        '<span style="color:currentColor;opacity:.55">(harvestable metadata, 1,400+ records)</span></div>'
-        '<div><a href="https://www.alexanarch.org/resolve/">AXN resolver</a> '
-        '<span style="color:currentColor;opacity:.55">(content-derived identifiers)</span></div>'
-        '<div><a href="https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive">Hugging Face dataset</a> '
-        '<span style="color:currentColor;opacity:.55">(the archive as Parquet: deposits, captures, reception, predictions — rebuilt from the registry)</span></div>'
-        '<div><a href="https://www.alexanarch.org/api/search-index.json">API</a> '
-        '<span style="color:currentColor;opacity:.55">(search index · <a href="https://www.alexanarch.org/api/fleet.json">fleet.json</a> · <a href="https://www.alexanarch.org/api/body-shards/manifest.json">body shards</a>)</span></div>'
-        '</div>')
+                        + (f' <span class="fl-n">({note})</span>' if note else '')
+                        + (f'<span class="fl-d">{desc}</span>' if desc else '') + '</div>')
+        cols = 1 if title == 'Allied Sites' else 2
+        parts.append(f'<h4 class="fl-h">{title}</h4><div class="fl-g" style="grid-template-columns:repeat({cols},minmax(0,1fr))">' + ''.join(rows) + '</div>')
+    parts.append('<h4 class="fl-h">Machine Entry</h4><div class="fl-g" style="grid-template-columns:repeat(1,minmax(0,1fr))">'
+                 '<div><a href="https://www.alexanarch.org/oai?verb=Identify">OAI-PMH endpoint</a> <span class="fl-n">(harvestable metadata, 1,400+ records)</span></div>'
+                 '<div><a href="https://www.alexanarch.org/resolve/">AXN resolver</a> <span class="fl-n">(content-derived identifiers)</span></div>'
+                 '<div><a href="https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive">Hugging Face dataset</a> <span class="fl-n">(the archive as Parquet: deposits, captures, reception, predictions — rebuilt from the registry)</span></div>'
+                 '<div><a href="https://www.alexanarch.org/api/search-index.json">API</a> <span class="fl-n">(search index · <a href="https://www.alexanarch.org/api/fleet.json">fleet.json</a> · <a href="https://www.alexanarch.org/api/body-shards/manifest.json">body shards</a>)</span></div></div>')
+    parts.append('<div class="fl-f"><a href="https://mindcontrolpoems.blogspot.com">mindcontrolpoems.blogspot.com</a> &middot; '
+                 '<a href="https://independent.academia.edu/LSharks">Academia.edu</a> &middot; '
+                 '<a href="https://scholar.google.com/citations?user=Ws6IIcgAAAAJ">Google Scholar</a> &middot; '
+                 '<a href="https://orcid.org/0009-0000-1599-0703">ORCID</a></div>')
     parts.append(END)
-    return '\n'.join(parts), fleet, who
+    fleet = {it.get('d') for sec in fj.get('sections', []) for it in (sec.get('items') or sec.get('sites') or sec.get('domains') or []) if it.get('d')}
+    return ''.join(parts), fleet, {}
 
 
-def find_block_span(html):
-    """Return (start, end) of the network block in `html`, or None.
+FLEETCSS = """<style id="fleetcss">
+.fl-h{font-size:.78em;opacity:.72;margin:14px 15px 5px;text-transform:uppercase;letter-spacing:.05em;font-weight:500}
+.fl-g{padding:0 15px;display:grid;column-gap:24px;row-gap:5px;font-size:.82em;line-height:1.7}
+.fl-g a{color:var(--accent,inherit);text-decoration:none;border-bottom:1px solid currentColor;border-bottom-color:color-mix(in srgb,currentColor 34%,transparent);word-break:break-word}
+.fl-g a:hover{border-bottom-color:#c9a227}
+.fl-n{opacity:.6;font-size:.94em}
+.fl-d{display:block;opacity:.6;font-size:.9em;line-height:1.5;margin-top:2px}
+.fl-f{padding:12px 15px 4px;font-size:.75em;opacity:.55;border-top:1px dashed rgba(128,128,128,.28);margin-top:14px}
+.fl-f a{color:var(--accent,inherit);text-decoration:none}
+</style>"""
 
-    Prefers the markers. Falls back to detecting an UNMARKED generated block --
-    a run of <h4>GROUP</h4> followed by its grid div -- and the div span is found
-    by BALANCING <div>/</div>, never by a non-greedy `.*?</div>`.
-
-    WHY THIS EXISTS (2026-08-17). The first marker-wrap used
-        <div[^>]*grid...>.*?</div>
-    which is non-greedy and therefore stopped at the first INNER </div> -- each
-    domain is its own <div>. It replaced the group header plus ONE domain and left
-    the remainder of the original block sitting directly after the inserted one.
-    FOURTEEN SITES DOUBLED, and the doubling was only visible as rendered: the
-    marker count was 1, so every automated check passed. The operator saw it on
-    traininglayerliterature.org and had already warned that we were doubling up.
-
-    ALLIED SITES IS NEVER PART OF THE SPAN. It is curated -- Alice Thornburgh,
-    Florian Morin, Enli Lucente's Strutturista della Psiche, with hand-written
-    descriptions -- and no generator writes it.
-    """
-    s = html.find(START)
-    if s >= 0:
-        e = html.find(END, s)
-        return (s, e + len(END)) if e >= 0 else None
-    m = re.search(r'<h4[^>]*>\s*Archive\s*</h4>', html, re.I)
-    if not m:
-        return None
-    i = m.start()
-    j = m.end()
-    while True:
-        d = re.match(r'\s*<div\b', html[j:])
-        if d:
-            k = _balanced_div_end(html, j + d.start())
-            if k is None:
-                break
-            j = k
-            continue
-        h = re.match(r'\s*<h4[^>]*>\s*(?:Framework Sites|Heteronym Institutions)\s*</h4>',
-                     html[j:], re.I)
-        if h:
-            j += h.end()
-            continue
-        break
-    return (i, j)
-
-
-def _balanced_div_end(html, i):
-    """Index just past the <div> opening at `i`, counting nesting."""
-    depth = 0
-    for m in re.finditer(r'<div\b|</div>', html[i:]):
-        if m.group(0) == '</div>':
-            depth -= 1
-            if depth == 0:
-                return i + m.end()
-        else:
-            depth += 1
-    return None
-
+HAND_HELD_AFTER_END = re.compile(
+    r'(?<=<!-- FLEET-NETWORK-END -->)\s*(?:<h4[^>]*>|<(?:strong|b)[^>]*>|<p[^>]*><(?:strong|b)>)\s*Allied Sites\s*(?:</h4>|</strong>|</b>|</b></p>|</strong></p>)'
+    r'\s*(?:<div[^>]*>.*?</div>\s*)+?(?=\s*(?:<div[^>]*>\s*<a href="https://mindcontrolpoems|<p[^>]*>\s*<a href="https://mindcontrolpoems|<footer|<div class="mspcolophon|<div class="colophon|<div style="[^"]*font-size:0\.7|</body>))', re.S)
+STALE_FOOTER_AFTER_END = re.compile(
+    r'(?<=<!-- FLEET-NETWORK-END -->)\s*<div[^>]*>\s*<a href="https://mindcontrolpoems\.blogspot\.com"[^<]*</a>[^<]*(?:<a href="[^"]*(?:academia|scholar\.google|orcid\.org)[^"]*"[^<]*</a>[^<]*)*</div>', re.S)
 
 def apply(paths, block):
     n = 0
     for path in paths:
         for p in sorted(pathlib.Path(path).rglob('*.html')):
-            if '.git' in str(p):
+            if '.git' in str(p) or 'node_modules' in str(p):
                 continue
             s = p.read_text(errors='replace')
-            if START in s:
-                s2 = re.sub(re.escape(START) + r'.*?' + re.escape(END), block, s, flags=re.S)
-                # strip a hand-held Allied Sites section left after the block (2026-09-07): it is
-                # now generated inside the block from the canonical copy. Matches the two forms
-                # seen in the fleet — an <h4> or a bold heading — through the last entry's </div>.
-                s2 = re.sub(r'(?<=' + re.escape(END) + r')\s*(?:<h4[^>]*>|<(?:strong|b)[^>]*>|<p[^>]*><(?:strong|b)>)\s*Allied Sites\s*(?:</h4>|</strong>|</b>|</b></p>|</strong></p>)\s*(?:<div[^>]*>.*?</div>\s*)+?(?=\s*(?:<div[^>]*>\s*<a href="https://mindcontrolpoems|<div class="fl-f|<p[^>]*>\s*<a href="https://mindcontrolpoems|<footer|<div class="mspcolophon|</body>))', '', s2, flags=re.S)
-            elif 'Crimson Hexagonal Archive — Network' in s:
-                m = re.search(r'(Crimson Hexagonal Archive — Network</h3>\s*'
-                              r'<div[^>]*>[^<]*</div>)', s)
-                if not m:
-                    continue
-                tail = re.search(r'<h4[^>]*>\s*Archive\s*</h4>', s[m.end():])
-                if not tail:
-                    continue
-                # stop at Allied Sites where present, so it is never touched
-                stop = s.find('<h4', m.end())
-                allied = re.search(r'<h4[^>]*>\s*Allied Sites\s*</h4>', s[m.end():])
-                stop = m.end() + allied.start() if allied else s.find(
-                    '<div class="mspcolophon', m.end())
-                if stop < 0:
-                    stop = s.find('</body>', m.end())
-                s2 = s[:m.end()] + '\n' + block + '\n' + s[stop:]
-            else:
+            if not ANY_START.search(s) or END not in s:
                 continue
+            s2 = re.sub(ANY_START.pattern + r'.*?' + re.escape(END), lambda m: block, s, flags=re.S)
+            s2 = HAND_HELD_AFTER_END.sub('', s2)
+            s2 = STALE_FOOTER_AFTER_END.sub('', s2)   # the block now carries the footer
+            if 'id="fleetcss"' not in s2 and '</head>' in s2:
+                s2 = s2.replace('</head>', FLEETCSS + '\n</head>', 1)
             if s2 != s:
                 p.write_text(s2)
                 n += 1
@@ -295,12 +174,9 @@ def apply(paths, block):
 
 if __name__ == '__main__':
     block, fleet, who = build()
-    grouped = {d for _, ds in GROUPS for d in ds}
-    print(f'  {len(fleet)} canonical domains · {len(grouped & fleet)} grouped · '
-          f'{len(fleet - grouped)} allied')
-    print(f'  in GROUPS but NOT canonical: {sorted(grouped - fleet) or "none"}')
-    print(f'  attributions from records: '
-          f'{ {k: v for k, v in who.items() if k not in EXTRA} }')
+    print(f'  {len(fleet)} fleet domains rendered from data/api/fleet.json')
     if '--apply' in sys.argv:
         paths = [a for a in sys.argv[1:] if not a.startswith('--')]
         print(f'  written to {apply(paths, block)} page(s)')
+    else:
+        print('  dry run — pass --apply PATH... to write')
