@@ -1,0 +1,71 @@
+{
+ "axn": "AXN:068A.UNCLASSIFIED.🔐🪦🟤🌙🎺☀️",
+ "position": "068A",
+ "family": "UNCLASSIFIED",
+ "registered": "2026-09-07T22:49:12.553Z",
+ "status": "witnessed-verified",
+ "verified_at": "2026-09-07T22:49:12.553Z",
+ "last_verified_at": "2026-09-07T22:49:12.553Z",
+ "verification_method": "sha256 of stored bytes compared to the AXN₀ kernel at ingest",
+ "core_stored": true,
+ "custody": {
+  "terms": "Stored cores live in this archive's public version-controlled repository and are served without account, login, or expiry. Any change or removal appears as a dated commit; nothing is silently deleted.",
+  "single_point_of_failure": "One administrator, one code host, one serving platform. Durable against link rot, accidental overwrite and quiet editing; NOT durable against a platform decision — this archive was itself terminated elsewhere in June 2026. A registry entry is a record, not a promise of perpetual hosting.",
+  "mirror_freely": "Listed with hash and length in /resourcesync/resourcelist.xml and /data/symbolon-registry/MANIFEST.json, and checksummed in /SHA256SUMS.txt. Fetch, hash, compare — copying requires no permission and verification requires no trust in this archive. Independent custody means a copy held by someone who is not this archive's administrator, on a platform it does not use.",
+  "depositor_holds": "The depositor's own original plus the Seed A sidecar can prove the work anywhere, with or without this archive. That is the point of splitting the identifier in two."
+ },
+ "retrieval": "https://www.alexanarch.org/data/symbolon-registry/files/fbfdc90c8b0b59fe-AXN-0687-text.md",
+ "note": "The registry witnesses the tuple and its internal consistency (glyphs recomputed from hashes at ingest). Seed B was not seen; verification against bytes is a separate act per SPEC §9.",
+ "spec": "AXN-SYMBOLON-SPEC v0.2 · https://www.alexanarch.org/s/records/1432/",
+ "tuple": {
+  "axn0": {
+   "glyphs": "🔐🪦🟤🌙🎺☀️",
+   "sha256": "fbfdc90c8b0b59fee25f87b20073769f68dd09ba2b8020cf61bf34116fc052d0"
+  },
+  "axn1": {
+   "glyphs": "👋🕗👇🚨🔍🔄",
+   "sha256": "bf69b7c0566fc5bf89173d4b5fa990fbcd3033945a92014f1eca06f781106f66"
+  }
+ },
+ "position_note": "The hex position is a registry address allocated from the shared AXN sequence (data/symbolon-registry/allocation.json). An address is not a verification.",
+ "seed_a": {
+  "axn_spec": "AXN-SYMBOLON-SPEC v0.2",
+  "spec_record": "https://www.alexanarch.org/s/records/1432/",
+  "spec_axn": "AXN:05A9.OPERATIVE.🐚🌪️🕖🫵⏩○",
+  "reconstruction_class": "content-addressed",
+  "stamp_generation": 2,
+  "axn0": {
+   "glyphs": "🔐🪦🟤🌙🎺☀️",
+   "sha256": "fbfdc90c8b0b59fee25f87b20073769f68dd09ba2b8020cf61bf34116fc052d0",
+   "role": "identity kernel of the sealed core (the original, pre-stamp bytes)"
+  },
+  "axn1": {
+   "glyphs": "👋🕗👇🚨🔍🔄",
+   "sha256": "bf69b7c0566fc5bf89173d4b5fa990fbcd3033945a92014f1eca06f781106f66",
+   "role": "kernel of the stamped file as it circulates (tamper witness; not a name)"
+  },
+  "manifest": [
+   {
+    "part": 1,
+    "filename": "AXN-0687-text.md",
+    "sha256": "fbfdc90c8b0b59fee25f87b20073769f68dd09ba2b8020cf61bf34116fc052d0",
+    "bytes": 238992
+   }
+  ],
+  "stamp_geometry": {
+   "format": "text",
+   "method": "suffix_comment_block",
+   "delimiters": [
+    "<!-- AXN-STAMP-BEGIN",
+    "AXN-STAMP-END -->"
+   ],
+   "strip_reversible": true
+  },
+  "created": "2026-09-07T22:49:10.279290+00:00",
+  "generator": "scripts/stamp_deposit.py (in-session, transport D; algorithm per https://axnidentifiers.org/stamp/)",
+  "family": "UNCLASSIFIED",
+  "deposit_number": 1594,
+  "deposit_axn": "AXN:0687.UNCLASSIFIED.🔐🪦🟤🌙🎺☀️",
+  "registration": "kernel is authority-independent; registry witnessing via https://www.alexanarch.org/api/register-symbolon"
+ }
+}
