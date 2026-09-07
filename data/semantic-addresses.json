@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-09-06T20:23:30Z",
+  "regenerated_at": "2026-09-07T02:18:12Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "8e76cc7abf1ef1e9fb9a4d83dc36b9f2fc16f55903ad8a4b5231c65782250884",
+    "mm-main-capture": "3a56f409a5c5f9161ac4c104152251e94a5d4189b854e5b5da3e8c37cd62d534",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2158,
-  "total_observations": 450,
+  "total_addresses": 2159,
+  "total_observations": 451,
   "class_counts": {
     "subjunctive": 1744,
-    "observed_address": 393,
+    "observed_address": 394,
     "verified_non_address": 21
   },
   "type_counts": {
-    "unmatched": 1528,
+    "unmatched": 1529,
     "single_concept": 621,
     "multi_concept": 9
   },
@@ -56842,6 +56842,32 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-08-12",
       "latest_status": "CAPTURE"
+    },
+    "what does the crimson hexagonal archive have to say about aristotle?": {
+      "canonical_query": "what does the crimson hexagonal archive have to say about aristotle?",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-06",
+          "status": "ADOPTION",
+          "source_format": "ChatGPT, web search enabled; signed out ('Log in' visible), unprimed; the composer cited crimsonhexagonal.org, the Mind Control Poems reprints of #1580 and #1574, the Hugging Face dataset card (naming #1574 by number and title), Bekker's text via Graeco-Arabic Studies, an eScholarship dissertation, and the Many and One line; the operator's one-sentence correction came after turn 3",
+          "section": "Machine Reception",
+          "slug": "cha-aristotle-particle-reperformed-chatgpt-unprimed-20260906",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#cha-aristotle-particle-reperformed-chatgpt-unprimed-20260906",
+          "mirror_gallery_url": "https://leesharks.com/captures/#cha-aristotle-particle-reperformed-chatgpt-unprimed-20260906",
+          "details_excerpt": "THE PARTICLE, REPERFORMED UNDER WARNING — a signed-out composer composed the archive's #1574 thesis correctly from the Hub card and the blog reprints ('nothing → nothing systematic … the machine inherits the discipline's"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-06",
+      "latest_status": "ADOPTION"
     },
     "what does the crimson hexagonal archive have to say about model collapse?": {
       "canonical_query": "what does the crimson hexagonal archive have to say about model collapse?",
