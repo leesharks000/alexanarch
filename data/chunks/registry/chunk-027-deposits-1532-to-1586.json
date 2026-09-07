@@ -1,8 +1,8 @@
 {
   "chunk_number": 27,
   "first_deposit": 1532,
-  "last_deposit": 1585,
-  "count": 54,
+  "last_deposit": 1586,
+  "count": 55,
   "deposits": [
     {
       "deposit_number": 1532,
@@ -11408,6 +11408,177 @@
           "layer_3_content_hash": {
             "present": true,
             "canonical_hash": "e5beb9daf005ec05dc749e7c1bbba1e9721342fb12063a7b62cf50409fdd9f24",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      }
+    },
+    {
+      "deposit_number": 1586,
+      "axn": "AXN:0679.GENERATIVE.🍀🌕🟠⚙️🎻💎",
+      "hex": "0679",
+      "family": "GENERATIVE",
+      "emoji": "🍀🌕🟠⚙️🎻💎",
+      "hash": "7404c2328a1c6521b01b70445eabb2d21eb14c774fbc843e21bb1ea444574c65",
+      "title": "The First Axis: The Aristotle/Theophrastus Boundary and the Voice of an Operation — a stylometric examination of a seam (v0.7)",
+      "creator": "Sharks, Lee",
+      "date": "2026-09-06",
+      "description": "Stylometry is expected to separate two authors. Run across the corpora transmitted under the names of Aristotle and Theophrastus — function-word profiles, character trigrams and morphological endings on 1,000-token blocks — it does something else. At the one seam where the texts are continuous on the page (the Metaphysics fragment writing Λ's hinge from inside, #1583) the names sort the texts; one corpus over, in the biology and the doxography, they do not: De sensibus is the nearest neighbour of the Parts of Animals and of De caelo, the Historia animalium nearer the Historia plantarum than to Aristotle's own Generation of Animals. The line that predicts both profiles is not the name but the operation. The prediction was measured (the Athenaion Politeia's three nearest neighbours all Theophrastan; the Categories, Δ and the Topics leaning to the instrument; the Politics dividing at book III) and localized by rolling window to the passage (Politics II→III; Metaphysics Α's survey against its critique of the Forms; the Ath. Pol.'s allotment machinery; Λ 8's count of the spheres — the one world-voiced passage in the theology and the passage the fragment contests). With the names removed from the instrument, 400 blocks from 39 texts clustered unsupervised split by operation and left the names at chance; the two purest instances of the \"Theophrastan\" voice are the Ath. Pol. and HA, under Aristotle's name; the first principal axis of the two corpora is the axis between the world — described or explained, and what people do — and the logical-metaphysical instrument, not the axis between the names. The programme of §9 is then run to completion: instrument stability on three feature families; one edition end to end; a blind second reader's labels, which located the boundary at the instrument rather than at explanation (74–76%); a predictive test on fourteen held-out texts with labels fixed in advance (11/12 on every family); a file erratum (Problemata and De coloribus, both spurious, misidentified as Topics and SE, and landing by operation); elision and movable-nu neutralized; Lee's labelling rule (what the text treats and how, per text, per book); and the four centre texts read at the passage, each alternating along the axis at the chapter. Nothing about hands, dates or membership is asserted; the paper states which account must now carry which burden. […abridged for the catalogue; full description in this deposit's record]",
+      "content_type": "Theoretical paper",
+      "license": "CC-BY-4.0",
+      "substrate": "Human–machine collaborative. All counts computed in-session by TACHYON (Claude, Anthropic) at MANUS (Lee Sharks) direction from the seated texts (First1KGreek and Perseus canonical-greekLit), with the pilot's design owed to a ChatGPT exploratory run; the blind labels of §7c are ChatGPT's in a fresh conversation; the reading \"the precise signature of a maker deliberately running the topic through a different function,\" the ruling that refinement on data is not circularity, and the labelling rule are Lee Sharks's. The reading and its errors are Lee Sharks's.",
+      "root_axn": "AXN:0679.GENERATIVE",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "7404c2328a1c6521b01b70445eabb2d21eb14c774fbc843e21bb1ea444574c65",
+      "clusters": [
+        "Organic",
+        "Celestial",
+        "Signal",
+        "Instrumental",
+        "Symbolic",
+        "Elemental"
+      ],
+      "axn_reading": "Growth -> Origin -> Alarm -> Method -> Play -> Force",
+      "minted_at": "2026-09-07T02:24:58Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-0679-text.md",
+      "wiki_article": "\"The First Axis: The Aristotle/Theophrastus Boundary and the Voice of an Operation\" is a paper by Lee Sharks (v0.7, 6 September 2026) that runs stylometry across the corpora transmitted under the two names and finds that the boundary the numbers draw does not coincide with the name-boundary. At the one seam where the texts are continuous on the page — the Metaphysics fragment writing Λ's hinge from inside — the names sort the texts; in the biology and the doxography they do not: De sensibus is the nearest neighbour of the Parts of Animals and De caelo, and the Historia animalium is nearer the Historia plantarum than to Aristotle's own Generation of Animals. The line that predicts both is the operation: the Athenaion Politeia, a registry under Aristotle's name, has all three nearest neighbours Theophrastan; the Categories, Δ and the Topics lean to the instrument; the Politics divides at book III; rolling windows locate the line at the chapter — Metaphysics Α's survey against its critique of the Forms, the Ath. Pol.'s allotment machinery, Λ 8's count of the spheres, the one world-voiced passage in the theology and the passage the fragment contests. With the names removed from the instrument, 400 blocks from 39 texts cluster by operation and leave the names at chance; the purest instances of the supposed Theophrastan voice are the Ath. Pol. and HA, under Aristotle's name; the first principal axis of the two corpora is the axis between the world (described or explained, and what people do) and the logical-metaphysical instrument. The paper's own programme is then run to completion: three feature families, one edition end to end, a blind reader's labels that located the boundary at the instrument rather than at explanation, a predictive test on fourteen held-out texts (11/12), a file erratum (Problemata and De coloribus, both spurious, landing by operation), elision neutralized, Lee's labelling rule (what a text treats and how), and the centre texts read at the passage. Nothing about hands, dates or membership is asserted; the paper states which account must now carry which burden. Extracted from the notebook The First Draft (#1585); companion to Aristotelian or Theophrastan (#1583) and The Registry Has One Column (#1584).",
+      "wiki_status": "AUTHORED_IN_SESSION",
+      "entities": [
+        {
+          "subject": "The First Axis: The Aristotle/Theophrastus Boundary and the Voice of an Operation — a stylometric ex",
+          "predicate": "created_by",
+          "object": "Sharks, Lee",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "The First Axis: The Aristotle/Theophrastus Boundary and the Voice of an Operation — a stylometric ex",
+          "predicate": "is_type",
+          "object": "Theoretical paper",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "The First Axis: The Aristotle/Theophrastus Boundary and the Voice of an Operation — a stylometric ex",
+          "predicate": "belongs_to_family",
+          "object": "GENERATIVE",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "The First Axis: The Aristotle/Theophrastus Boundary and the Voice of an Operation — a stylometric ex",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "defines_concepts": [
+        {
+          "term": "the first axis",
+          "definition": "The first principal axis of stylistic variation across the corpora under the names of Aristotle and Theophrastus: on three feature families and in one edition, the axis between the world (described or explained, and what people do) and the logical-metaphysical instrument, not the axis between the names."
+        },
+        {
+          "term": "voice of an operation",
+          "definition": "A stylistic signature that belongs to what a text does rather than to whose name it carries; measured here as a signature the Theophrastan corpus never leaves and the Aristotelian corpus spans, with its purest instances under Aristotle's name."
+        }
+      ],
+      "orcid": "0009-0000-1599-0703",
+      "keywords": [
+        "Aristotle",
+        "Theophrastus",
+        "stylometry",
+        "authorship",
+        "first axis",
+        "principal component",
+        "function words",
+        "character trigrams",
+        "named authorial function",
+        "Athenaion Politeia",
+        "Historia animalium",
+        "Politics",
+        "Metaphysics Lambda",
+        "Categories",
+        "Problemata",
+        "De coloribus",
+        "blind labels",
+        "held-out prediction",
+        "elision",
+        "First1KGreek",
+        "Perseus"
+      ],
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 0,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 55786,
+        "audited_at": "2026-09-07T02:24:58Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "related_deposits": [
+        1574,
+        1576,
+        1583,
+        1584,
+        1585
+      ],
+      "lexical_attested_none": true,
+      "references_concepts": [
+        "Constitution",
+        "Lee Sharks"
+      ],
+      "references_concept_count": 2,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-0679.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-09-07T02:25:49.484627+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [
+              "date"
+            ],
+            "anchor_count": 1,
+            "orcid_in_body": false,
+            "creator_in_body": false,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": false,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 0
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "ef793fd9a1622395d21345fec779d4e9f1081d285e7c35d252bd7e143e2e5968",
             "hash_in_body": false,
             "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
           },
