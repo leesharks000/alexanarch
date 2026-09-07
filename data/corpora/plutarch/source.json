@@ -1,0 +1,42 @@
+{
+ "corpus": "plutarch",
+ "seat": "EA-CORPORA-13/01",
+ "origin": {
+  "repo": "PerseusDL/canonical-greekLit",
+  "commit": "master @ 2026-09-07 (raw.githubusercontent.com; pin at deposit)",
+  "paths": [
+   "data/tlg0007/tlg047",
+   "data/tlg0007/tlg033"
+  ]
+ },
+ "edition": "Plutarch, Vitae parallelae (Perseus canonical-greekLit, perseus-grc2)",
+ "license": "CC BY-SA 4.0 (Perseus Digital Library); underlying editions public domain",
+ "fetched": "2026-09-07",
+ "normalization": "flat lines from TEI; teiHeader, note, app, rdg, bibl, speaker labels stripped; one file per work; lines without letters dropped",
+ "works": {
+  "count": 2,
+  "units": "one file per work",
+  "per-work": "text/<id>.txt",
+  "list": [
+   {
+    "id": "tlg047",
+    "title": "Plutarch, Alexander",
+    "tokens": 19878,
+    "lines": 2024
+   },
+   {
+    "id": "tlg033",
+    "title": "Plutarch, Sulla",
+    "tokens": 11495,
+    "lines": 205
+   }
+  ]
+ },
+ "verified_loci": [
+  "Alexander 7 (the acroamatic letter: ἐκδεδομένων καὶ μὴ ἐκδεδομένων)",
+  "Alexander 8 (the Iliad ἐκ τοῦ νάρθηκος)",
+  "Alexander 55 (Callisthenes)",
+  "Sulla 26 (Apellicon, Tyrannion, Andronicus)"
+ ],
+ "why_seated": "THE ALEXANDER SEAM. The esoteric/exoteric partition of the corpus is transmitted as a letter between Alexander and Aristotle (Alex. 7); the Iliad recension and Callisthenes stand beside it; Sulla 26 carries the Rome hinge. Seated whole so that every locus resolves to bytes."
+}
