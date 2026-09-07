@@ -8,9 +8,9 @@ passed because it asked whether the MARKERS were present -- the marker count was
 that counts containers.
 
 So this counts what a READER SEES: group headers in the rendered HTML. Exactly one
-Archive, one Framework Sites, one Heteronym Institutions. Allied Sites is curated
-and may appear zero or one time; it is never generated and never counted as a
-fault.
+Archive, one Framework Sites, one Heteronym Institutions. Allied Sites is GENERATED
+from data/api/fleet.json since 2026-09-07 and must appear exactly once; the stale
+hand-held form of Enli Lucente's entry ("investigative writing") is a fault.
 
     python3 scripts/check_fleet_block.py PATH...        # local checkouts
     python3 scripts/check_fleet_block.py --live         # fetch the live fleet
@@ -39,8 +39,13 @@ def check_html(name, html):
             fails.append(f"{name}: renders {n} '{g}' headers — the block is DUPLICATED")
         elif n == 0:
             fails.append(f"{name}: renders no '{g}' header — the block is broken or partial")
-    if html.count('Machine entry') > 1:
-        fails.append(f"{name}: renders {html.count('Machine entry')} Machine entry sections")
+    if 'investigative writing' in html:
+        fails.append(f"{name}: carries the stale Allied Sites form ('investigative writing')")
+    _al = len(re.findall(r'<h4[^>]*>\s*Allied Sites\s*</h4>', html))
+    if _al != 1:
+        fails.append(f"{name}: renders {_al} 'Allied Sites' headers")
+    if html.count('Machine entry') + html.count('Machine Entry') > 1:
+        fails.append(f"{name}: renders {(html.count('Machine entry') + html.count('Machine Entry'))} Machine entry sections")
     return fails
 
 
