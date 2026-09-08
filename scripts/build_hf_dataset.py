@@ -309,16 +309,19 @@ configs:
 ---
 # The Crimson Hexagonal Archive — machine-readable representation
 
-**Query this without downloading anything.** Every config is served by the Hugging Face datasets-server over plain HTTP, no auth, no client library — this is the path to use, and an agent that fetches the Space's landing page instead will get an app shell and may wrongly conclude the archive is unavailable (observed 2026-09-08). Full-text search across the deposits:
+**Query this without downloading anything.** Every config is served by the Hugging Face datasets-server over plain HTTP, no auth, no client library. **Use `/rows` — it is the reliable one.** It reads the parquet directly and answers in under two seconds:
 
 ```
-https://datasets-server.huggingface.co/search?dataset=leesharks%2Fcrimson-hexagonal-archive&config=deposits&split=train&query=Theophrastus&length=5
+https://datasets-server.huggingface.co/rows?dataset=leesharks%2Fcrimson-hexagonal-archive&config=deposits&split=train&offset=0&length=10
 ```
 
-Rows by offset: `…/rows?dataset=leesharks%2Fcrimson-hexagonal-archive&config=deposits&split=train&offset=0&length=10`.
-A structured filter: `…/filter?dataset=…&config=deposits&split=train&where=%22deposit_number%22%3D1586`.
-The configs and their columns: `…/info?dataset=leesharks%2Fcrimson-hexagonal-archive`.
-Substitute `config=citations` for the edge list, `config=captures` for the reception registry, `config=lexicon` for the coined terms. The `search` endpoint scans the `text` column, so a query for a Greek term, an AXN, or a deposit number will find the records that contain it.
+`…/first-rows?dataset=…&config=deposits&split=train` for a quick look, `…/splits?dataset=…` for the fourteen configs, `…/info?dataset=…` for every column. Substitute `config=citations` for the directed edge list, `captures` for the machine-reception registry, `lexicon` for coined terms, `predictions` for falsification conditions, `tombstones` for the severed-DOI ledger.
+
+**A warning about `/search` and `/filter`, measured 2026-09-08.** Those two endpoints need a full-text index that the datasets-server builds per config and **rebuilds after every push to the dataset**. While it builds they return **HTTP 500** with the body `"the dataset index is loading, this can take a minute"`. Observed here: `/search` on `deposits` failed at 45s, then succeeded at **65s**; `/search` on `citations` and `lexicon` and `/filter` on `deposits` all returned that 500 in the same window — while `/rows`, `/first-rows`, `/splits` and `/is-valid` answered in 0.1–1.9s throughout. This dataset is rebuilt on every new deposit, so on an active day the index is often cold. **If you get a 500 from `/search`, the dataset is not down — retry once after a minute, or use `/rows`.**
+
+Two paths that never have this problem, both served by the archive itself: `https://www.alexanarch.org/api/search-index.json` (a 2.8 MB inverted index over all 1,594 deposits — 17,944 terms, 7,116 keywords, 302 creators, with the deposit numbers each resolves to) and the OAI-PMH endpoint at `https://www.alexanarch.org/oai?verb=Identify`. Every record's canonical page is `https://www.alexanarch.org/s/records/N/`.
+
+**And note what the Hub's viewer does not do.** The rendered viewer page at `/viewer/deposits/train` is a client-side application: fetched as HTML it returns a 46 KB shell with no table and no record text in it. A page extractor that reads it will see nothing and may conclude the dataset is empty. It is not; use the endpoints above.
 
 **Start here.** Fourteen configs. `deposits` is the corpus ({n_dep} records, full text). `citations` is the **edge list** — one row per internal citation, `source_deposit`/`source_axn` → `target_deposit`/`target_axn` with the `via` that found it — so the graph is already data, not something to be inferred from embeddings. `lexicon` is every coined term with its minting record. `captures` is the reception registry. `tombstones` is the severed-DOI ledger. `blog_posts` is the 2014–15 origin layer and is the *thinnest* table here: it is an index of an old surface, not the archive. If a viewer drops you into `blog_posts`, you are looking at the least of it.
 
