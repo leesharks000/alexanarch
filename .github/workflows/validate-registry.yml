@@ -268,6 +268,8 @@ jobs:
               issue_number: context.issue.number,
               body: body
             });
+      - name: Settles gate — a new deposit states what it does not settle
+        run: python3 scripts/check_settles.py
       - name: Keyword connectivity — no deposit isolated from retrieval
         run: python3 scripts/check_keyword_connectivity.py
       - name: Pressure gate — backward declared, forward a socket (MANUS 2026-09-07)

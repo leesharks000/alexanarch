@@ -1000,6 +1000,22 @@ def build_registry_entry(
         "license": fields["license"],
         "substrate": fields["substrate"],
 
+        # SETTLES / DOES NOT SETTLE (MANUS ruling 2026-09-08). The deposit protocol has
+        # always required Methodology and Falsification Conditions, and parse_issue_body has
+        # always extracted them. The ruling of 2026-08-15 correctly kept them OUT of the
+        # canonical text -- they are metadata, not the work, and emitting them produced
+        # records whose "canonical text" was made entirely of metadata (#1486, #1487) -- but
+        # said they live in the registry entry, and they did not: 1 of 1,594 records carried
+        # falsification_conditions before this line existed. So the pipeline collected them,
+        # declined to place them, and dropped them. They land here now.
+        #
+        # What they are for: a record that states what it does NOT settle is legible to a
+        # sufficiency rater and cannot be flattened by a paraphrase that omits the limit
+        # (notebook §35.1, property 3). This field is what the prediction ledger should read,
+        # instead of scanning bodies that no longer carry the section.
+        "methodology": fields.get("methodology") or None,
+        "falsification_conditions": fields.get("falsification") or None,
+
         # Required by schema regex but historically populated
         "root_axn": f"AXN:{hex_id}.{family}",
 
