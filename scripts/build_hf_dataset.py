@@ -102,6 +102,7 @@ def deposits():
             'family': d.get('family'), 'content_type': d.get('content_type'),
             'description': d.get('description'), 'keywords': ', '.join(d.get('keywords') or []) if isinstance(d.get('keywords'), list) else d.get('keywords'),
             'license': d.get('license'), 'substrate_disclosure': d.get('substrate') or d.get('substrate_disclosure'),
+            'falsification_conditions': d.get('falsification_conditions'), 'methodology': d.get('methodology'),
             'status': d.get('status'), 'superseded_by': d.get('superseded_by'),
             'version_series_id': d.get('version_series_id'),
             'wiki_article': d.get('wiki_article'),
@@ -259,8 +260,27 @@ def venues():       # the archive's own journals and presses (venue registry)
 def journal_assignments():   # deposit -> venue assignment (the "where" of each deposit)
     return _jsonl('datasets/journals/assignments.jsonl')
 
-def predictions():  # the falsification conditions extracted from every deposit, and their resolutions
+def predictions():
+    """The falsification conditions of every deposit, and their resolutions.
+
+    Two sources, unioned. The historical one is datasets/prediction-ledger/conditions.jsonl
+    (451 conditions over 326 deposits), harvested from deposited bodies — which stopped
+    growing at #1537, because the ruling of 2026-08-15 correctly removed the section from
+    the canonical text and the harvester had nothing left to read. The current one is the
+    registry's own `falsification_conditions`, captured at mint from 2026-09-08 and gated
+    by scripts/check_settles.py. Reading both keeps the 326 deposits of prior work and
+    un-stalls the ledger."""
     a = _jsonl('datasets/prediction-ledger/conditions.jsonl'); b = _jsonl('datasets/prediction-ledger/resolved.jsonl')
+    reg = json.load(open(ROOT/'data/registry.json'))['deposits']
+    seen = set(a['deposit'].tolist()) if not a.empty and 'deposit' in a.columns else set()
+    add = [{'deposit': d['deposit_number'], 'axn': d.get('axn'), 'date': d.get('date'),
+            'title': d.get('title'), 'section': 'Falsification Conditions',
+            'condition': d['falsification_conditions'],
+            'resolution_kind': None,
+            'source': (d.get('falsification_source') or {}).get('from', 'registry (minted)')}
+           for d in reg if (d.get('falsification_conditions') or '').strip() and d['deposit_number'] not in seen]
+    if add:
+        a = pd.concat([a, pd.DataFrame(add)], ignore_index=True) if not a.empty else pd.DataFrame(add)
     if not b.empty:
         b = b.rename(columns={c: f"resolved_{c}" for c in b.columns if c not in ('deposit','condition','axn')})
         a = a.merge(b, on=[c for c in ('deposit','condition') if c in a.columns and c in b.columns], how='left')
@@ -294,6 +314,8 @@ configs:
 **What this is.** The Crimson Hexagonal Archive (alexanarch.org) is a self-governing scholarly and literary corpus by Lee Sharks and the twelve heteronyms of the Dodecad: {n_dep} deposits as of this build, each with a content-derived persistent identifier (AXN), a canonical text, a substrate disclosure, a license, and a place in a supersession chain. This dataset is a second, executable representation of that corpus: one row per record, full text as a string column, and every inter-record relation encoded as data keyed by stable identifiers, so that an agent can reconstruct a record, what it cites, what cites it, and its series neighbours from the dataset alone, without traversing the archive's web surfaces. It is rebuilt automatically from the archive's single source of truth (`data/` in `leesharks000/alexanarch`) on every new deposit.
 
 **What a row means.** In `deposits`, a row is one deposit: `deposit_number` (integer, permanent, the archive's primary key), `axn` (the content-derived identifier, of the form `AXN:<hex>.<FAMILY>.<six glyphs>`; the sha256 of the canonical text is the record), `hex` (the four-digit position used in URIs), `title`, `creator` (the orthonym or heteronym as attributed), `date`, `family` (GENERATIVE, EMPIRICAL, GOVERNANCE, ARCHIVAL, UNCLASSIFIED), `content_type`, `description` (the abstract), `keywords`, `license`, `substrate_disclosure` (whether and how a language model participated in making the text), `status` (ACTIVE, SUPERSEDED, WITHDRAWN, …), `wiki_article` (a machine-written encyclopedia entry authored in session), `venue` (the archive's own journal the deposit belongs to), `text` (the canonical text, verbatim), `text_sha256`, `text_words`. Each row also carries a **partiality statement**, derived at build time and prepended to `text`: `line_journal` / `line_journal_count`, `line_keyword` / `line_keyword_count` (the two most-shared keyword neighbourhoods), `line_series` / `line_series_count`, `archive_active_count`, and `partiality` — the rendered sentence. It states what the record is one of, and where the rest are. It is not a claim about the record's content; it is a statement that the record is a part, added because a reader who receives one record without indication of what surrounds it will treat it as the whole surface. `text_sha256` remains the hash of the canonical bytes, so the notice never enters the record's identity; the unmodified text is always at the `record_url` and at `alexanarch.org/api/`.
+
+**What a record says it does not settle.** `falsification_conditions` and `methodology` are the protocol's own required fields. Until 2026-09-08 the pipeline extracted them from every deposit and dropped them; they are now captured at mint, gated, and recovered where they survive — 270 records carry them, and the full set with resolutions is the `predictions` config. A record that states its own limits is legible to a reader deciding whether the passage settles the question, and cannot be flattened by a paraphrase that omits the limit.
 
 **Relations, as data — this is the graph.** Nodes are `deposits` rows keyed by `deposit_number` and `axn`; typed edges live in three places, and none of them require similarity search to traverse: the `citations` config (10k+ rows, the full internal edge list), the relation columns below, and the supersession chain. `cites` and `cited_by`: JSON arrays of deposit numbers from the archive's citation graph (also `cites_axn` as identifiers). `related_deposits`: curated relations declared at deposit time. `superseded_by` / `supersedes`: the version chain. `version_series_id`, `series_previous`, `series_next`: neighbours in a declared series. `defines_concepts`: terms this deposit coins, with definitions (the same terms appear as rows in `lexicon`). `record_url`, `axn_uri`, `text_uri`: the canonical web addresses; `doi_legacy` where a pre-2026 Zenodo DOI existed (those DOIs were severed on 2026-06-19 — see `tombstones`). `attachments`: files ingested with the record.
 
