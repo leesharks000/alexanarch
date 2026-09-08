@@ -1,8 +1,8 @@
 {
   "chunk_number": 28,
   "first_deposit": 1585,
-  "last_deposit": 1594,
-  "count": 10,
+  "last_deposit": 1595,
+  "count": 11,
   "deposits": [
     {
       "deposit_number": 1585,
@@ -2064,6 +2064,201 @@
         "recovered": "2026-09-08"
       },
       "methodology": "Accumulate; extract standalones periodically; hold two working files; read from the seated bytes; state the received reading first; build keys from the machine-text; keep relations apart from readings; label by what a text treats and how; refine on the data and brake by prediction out of sample; record every ruling in the operator's words."
+    },
+    {
+      "deposit_number": 1595,
+      "axn": "AXN:068B.DATASET.⛵🐝🏛️🌳➗➖",
+      "hex": "068B",
+      "family": "DATASET",
+      "emoji": "⛵🐝🏛️🌳➗➖",
+      "hash": "5c7d20769391e7298617de1212484956ae8add1c1ae857dfecd74693c9f2d2f2",
+      "title": "EA-CORPORA-14 — The Fourteenth Seating: The Natural Order (Theophrastus, On First Principles, and Aristotle, Metaphysics Λ, seated facing), with the plan of the edition",
+      "creator": "Sharks, Lee",
+      "date": "2026-09-08",
+      "description": "Two Greek texts seated as one corpus so that the four openings of a planned facing-page edition resolve to bytes on both sides, together with the plan of that edition. Theophrastus, On First Principles (First1KGreek tlg0093.tlg006, 3,370 tokens) and Aristotle, Metaphysics Λ (Perseus tlg0086.tlg025 book XII, 5,071 tokens), each whole, each with its own numbering — Usener as carried by van Raalte for the fragment, Bekker for Λ. The four openings, every locus verified against the seated bytes: (A) the axiom, fragment 7 b 19-22 δοκεῖ δὲ … πάσχειν against Λ 7's τὸ πρῶτον κινοῦν ἀκίνητον εἶναι καθ᾽ αὑτό, where the fragment adduces αἴσθησις against the received axiom and where the Greek manuscripts split four ways (μὴ ἀεὶ Wimmer, μὴ δεῖ PJ, μὴ δὴ CA, καὶ ὡς δεῖ L) while Laks-Most read μὴ δεῖν on the Arabic's authority — et ut vid. Isḥāq — so that the Arabic breaks the tie at the axiom; (B) the first demand, μέχρι μὲν δὴ τούτων οἷον ἄρτιος ὁ λόγος … τὸ δὲ μετὰ ταῦτ᾽ ἤδη λόγου δεῖται πλείονος, a prior account marked complete to a point and the next question named; (C) the third demand and the method refused, τὸ δὲ κατὰ τὸ πλῆθος τῶν σφαιρῶν τῆς αἰτίας μείζονα ζητεῖ λόγον· οὐ γὰρ ὅ γε τῶν ἀστρολόγων, against Λ 8's derivation of the number of the spheres from Eudoxus and Callippus; (D) the landing, εὐλογώτερον οὖν εἶναί τινα συναφὴν καὶ μὴ ἐπεισοδιῶδες τὸ πᾶν, against Λ 10's ἐπεισοδιώδη τὴν τοῦ παντὸς οὐσίαν ποιοῦσιν at 1076 a 1 — the word van Raalte cites as a lexical parallel and which the edition prints as the place the aporiai arrive. The seat also records an editorial hazard found in the course of the work: the Greek Unicode range contains the koronis U+1FBD, so a tokenizer built on that range keeps elided forms as two-character tokens and any elision-normalization table silently fails to match them; a difference-of-centroids direction fitted on these two texts loaded entirely on δ᾽/ἀλλ᾽/δι᾽ against δέ/ἀλλά — on edition, not on voice — until it was caught. The plan of the edition is carried in the body: what it is, why an edition and not a paper, the four openings, text and apparatus policy, commentary policy, the two outstanding acquisitions (Alon 1985 for Isḥāq at the hinge lemmas; Gutas 2010 for the Arabic entire), the order of work, and what the edition would and would not settle.",
+      "content_type": "Dataset",
+      "license": "CC-BY-4.0",
+      "substrate": "Human–machine collaborative. Seated and verified in-session by TACHYON (Claude, Anthropic) at MANUS (Lee Sharks) direction; the reading of the seam, the identification of the demand-structure, and the decision to make an edition rather than a paper are Lee Sharks's. Van Raalte's apparatus and commentary were read at pp. 343, 349–352, 361, 376 and 378 from a copy the archive does not hold; all citations resolve to the Brill edition (Mnemosyne Supplement 125, 1993) by page, and nothing is cited to a mirror.",
+      "methodology": "Both texts fetched from their repositories and flattened from TEI with the apparatus lemma retained and its variants dropped; NFC applied before tokenizing; SHA-256 manifest; each of the four openings verified by locating its Greek in the seated bytes on both sides before the seat was written; four-surface seating (data, index, deposit, shelf).",
+      "falsification_conditions": "The seat is falsified if its bytes do not match the manifest, if any opening's Greek does not resolve in the seated text on the side claimed, or if the four surfaces disagree. The PLAN is not falsified by this seat: it states its own three counters (that aporetic demands are ordinarily raised against a standing position; that both texts may draw on a shared school discussion; that priority in the order of inquiry is not priority in composition) and claims only an order of inquiry exhibited by the texts, not a maker-count, a date, or a compositional sequence.",
+      "root_axn": "AXN:068B.DATASET",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "5c7d20769391e7298617de1212484956ae8add1c1ae857dfecd74693c9f2d2f2",
+      "clusters": [
+        "Navigational",
+        "Organic",
+        "Architectural",
+        "Organic",
+        "Mathematical",
+        "Mathematical"
+      ],
+      "axn_reading": "Search -> Growth -> Foundation -> Growth -> Proof -> Proof",
+      "minted_at": "2026-09-08T12:37:22Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-068B-text.md",
+      "wiki_article": "EA-CORPORA-14, the fourteenth seating of the Crimson Hexagonal Archive (8 September 2026), places Theophrastus's On First Principles and Aristotle's Metaphysics Λ in one corpus, facing, so that the four openings of a planned facing-page edition resolve to bytes on both sides. The edition, planned in the deposit's body under the title The Natural Order, presents the two texts in the order their own argument exhibits: the fragment holds the position of the question and Λ the position of the attempt. Three times the fragment says a weightier account is needed — λόγου δεῖται πλείονος at 8 a 2, μείζονα ζητεῖ λόγον at 8 a 21 — and once names the method it will not accept, οὐ γὰρ ὅ γε τῶν ἀστρολόγων, which is the method Λ 8 runs on. The seating's argument for being an edition rather than a paper is that the relation cannot be written in the notation the discipline uses for relations between texts: van Raalte's commentary cites Λ five times inside the hinge chapters, including 1076 a 1, ἐπεισοδιώδη, the word the fragment's aporiai land on, and every citation is correct and every one is a parallel. The seat records the openings with their apparatus, the Arabic witness of Isḥāq ibn Ḥunayn breaking a four-way split in the Greek at the axiom, the two outstanding acquisitions, and an editorial hazard found in the work: the Greek Unicode range contains the koronis, so elision-normalization silently fails and a stylistic direction fitted on these two texts loaded on edition rather than voice until it was caught. The order claimed is an order of inquiry, not of composition; the plan states its own three counters.",
+      "wiki_status": "AUTHORED_IN_SESSION",
+      "entities": [
+        {
+          "subject": "EA-CORPORA-14 — The Fourteenth Seating: The Natural Order (Theophrastus, On First Principles, and Ar",
+          "predicate": "created_by",
+          "object": "Sharks, Lee",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-14 — The Fourteenth Seating: The Natural Order (Theophrastus, On First Principles, and Ar",
+          "predicate": "is_type",
+          "object": "Dataset",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-14 — The Fourteenth Seating: The Natural Order (Theophrastus, On First Principles, and Ar",
+          "predicate": "belongs_to_family",
+          "object": "DATASET",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-14 — The Fourteenth Seating: The Natural Order (Theophrastus, On First Principles, and Ar",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "defines_concepts": [
+        {
+          "term": "the natural order",
+          "definition": "The order two texts are placed in when the sequence of their own argument governs, rather than the sequence of their attributed authors: a text that three times demands a weightier account stands before the text that supplies one, in the order of inquiry whether or not in the order of composition."
+        },
+        {
+          "term": "the demand-structure",
+          "definition": "A textual relation in which one text repeatedly states that an account is needed and names the method it will not accept, and a second text supplies an account in precisely that method — placing the first in the position of the question and the second in the position of the attempt."
+        }
+      ],
+      "orcid": "0009-0000-1599-0703",
+      "keywords": [
+        "Theophrastus",
+        "Aristotle",
+        "Metaphysics Lambda",
+        "On First Principles",
+        "the seam",
+        "facing-page edition",
+        "critical edition",
+        "apparatus criticus",
+        "Isḥāq ibn Ḥunayn",
+        "van Raalte",
+        "Laks-Most",
+        "Ross-Fobes",
+        "Usener",
+        "astronomers",
+        "spheres",
+        "epeisodiodes",
+        "order of inquiry",
+        "EA-CORPORA"
+      ],
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 0,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 11382,
+        "audited_at": "2026-09-08T12:37:22Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "related_deposits": [
+        1580,
+        1583,
+        1586,
+        1591,
+        1594
+      ],
+      "lexical_attested_none": true,
+      "pressure": {
+        "backward": [
+          {
+            "k": "inherits",
+            "to": 1583,
+            "note": "the reading of the hinge at four loci, which this seating makes checkable on both sides"
+          },
+          {
+            "k": "problem",
+            "to": "the relation is unrepresentable in the notation the discipline uses — a commentary that cites by cp. can adduce a hundred parallels and never say 'and here the second answers the first'",
+            "note": "the reason for an edition rather than a paper"
+          },
+          {
+            "k": "preserves",
+            "to": "Thphr. De principiis 7 b 19-22, 7 b 23 – 8 a 7, 8 a 21-3, 11 b 24 – 12 a 2; Arist. Met. Λ 7, Λ 8, Λ 10 1076 a 1",
+            "note": "every locus verified in the seated bytes before the seat was written"
+          },
+          {
+            "k": "rejects",
+            "to": "a claim of maker-count, of date, or of compositional sequence",
+            "note": "an order of inquiry only; the plan states its own three counters at full strength"
+          }
+        ],
+        "reciprocal": [],
+        "forward": "∅"
+      },
+      "references_concepts": [
+        "Lee Sharks"
+      ],
+      "references_concept_count": 1,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-068B.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-09-08T12:38:27.992243+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [
+              "date"
+            ],
+            "anchor_count": 1,
+            "orcid_in_body": false,
+            "creator_in_body": false,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": false,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 0
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "a39b5454ccf13d021208d344ff0cdeb82fe2a7f7a8882a8389a564564f619344",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      }
     }
   ]
 }
