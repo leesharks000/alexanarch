@@ -1,0 +1,86 @@
+{
+ "corpus": "natural-order",
+ "seat": "EA-CORPORA-14/01",
+ "title": "The Natural Order — the two texts of the seam, seated facing: Theophrastus, On First Principles, and Aristotle, Metaphysics Λ",
+ "origin": {
+  "repo": "OpenGreekAndLatin/First1KGreek (tlg0093.tlg006); PerseusDL/canonical-greekLit (tlg0086.tlg025 book 12)",
+  "commit": "master @ 2026-09-08 (pin at deposit)",
+  "paths": [
+   "data/tlg0093/tlg006",
+   "data/tlg0086/tlg025"
+  ]
+ },
+ "edition": "Theophrastus, Metaphysica (First1KGreek, grc); Aristotle, Metaphysica book XII (Perseus canonical-greekLit, perseus-grc2). Reference numbering for the fragment follows Usener as carried by van Raalte (Brill, Mnemosyne Suppl. 125, 1993); Λ by Bekker.",
+ "license": "CC BY-SA 4.0 (Perseus / First1KGreek); underlying editions public domain",
+ "language": "grc",
+ "fetched": "2026-09-08",
+ "normalization": "TEI flattened to lines; teiHeader, note, rdg and bibl stripped; <app> lemma RETAINED and its variants dropped; NFC applied before tokenizing; elision apostrophes (U+1FBD koronis, U+02BC, U+2019, U+1FFD) are inside the Greek range and are handled explicitly — see the note below",
+ "why_seated": "THE SEAM, seated facing. The two texts are placed in one corpus so that the four openings of the planned edition resolve to bytes on both sides. The plan is THE-NATURAL-ORDER-plan-v0.1; the reading is deposit #1583; the independent measure is the directed rare-term uptake instrument, which ranks Th.frag -> Ar.Met.L first of 1,482 directed edges in the 39-text corpus and crosses the edition boundary where 85% of the other strong edges do not.",
+ "works": {
+  "count": 2,
+  "units": "one file per text",
+  "per-work": "text/<id>.txt",
+  "list": [
+   {
+    "id": "theophrastus-de-principiis",
+    "title": "Theophrastus, On First Principles (the work known as his Metaphysics), whole",
+    "tokens": 3370,
+    "lines": 237
+   },
+   {
+    "id": "aristotle-metaphysics-lambda",
+    "title": "Aristotle, Metaphysics Λ (book XII), whole",
+    "tokens": 5071,
+    "lines": 12
+   }
+  ]
+ },
+ "openings": [
+  {
+   "id": "A",
+   "name": "the axiom",
+   "fragment": "7 b 19-22, δοκεῖ δὲ … πάσχειν",
+   "lambda": "Λ 7, τὸ πρῶτον κινοῦν ἀκίνητον εἶναι καθ' αὑτό",
+   "note": "The received axiom is that the first mover is unmoved; the fragment adduces αἴσθησις against it. Apparatus (van Raalte p. 343): μὴ ἀεὶ Wimmer · μὴ δεῖ PJ · μὴ δὴ CA · καὶ ὡς δεῖ L · μὴ δεῖν Laks-Most, 'et ut vid. Isḥāq' · κινεῖ MSS., κινεῖται Usener (1861) 276. The Greek splits four ways and the ARABIC breaks the tie, at the axiom.",
+   "verified_in": {
+    "fragment": "δοκεῖ δὲ",
+    "lambda": "τὸ πρῶτον κινοῦν ἀκίνητον εἶναι καθʼ αὑτό"
+   }
+  },
+  {
+   "id": "B",
+   "name": "the first demand",
+   "fragment": "7 b 23 – 8 a 7, μέχρι μὲν δὴ τούτων οἷον ἄρτιος ὁ λόγος … τὸ δὲ μετὰ ταῦτ' ἤδη λόγου δεῖται πλείονος",
+   "lambda": "Λ 7–8 transition",
+   "note": "A prior account marked complete to a point, and the next question named. Van Raalte on this stretch: 'the text of this passage is distressingly corrupt, a fact that probably is not unconnected with the complexity of the reasoning' (p. 350).",
+   "verified_in": {
+    "fragment": "ἄρτιος ὁ λόγος | λόγου δεῖται πλείονος",
+    "lambda": "—"
+   }
+  },
+  {
+   "id": "C",
+   "name": "the third demand, and the method refused",
+   "fragment": "8 a 21-3, τὸ δὲ κατὰ τὸ πλῆθος τῶν σφαιρῶν τῆς αἰτίας μείζονα ζητεῖ λόγον· οὐ γὰρ ὅ γε τῶν ἀστρολόγων",
+   "lambda": "Λ 8, 1073 b 17 – 1074 a 14: the derivation of the number of the spheres from Eudoxus and Callippus",
+   "note": "The fragment names the method Λ 8 runs on and rules it insufficient. Λ 8 has been the most-suspected chapter of the book since Jaeger, on internal grounds; the suspicion falls where the demand points.",
+   "verified_in": {
+    "fragment": "μείζονα ζητεῖ λόγον· οὐ γὰρ ὅ γε τῶν\nἀστρολόγων",
+    "lambda": "σφαιρῶν"
+   }
+  },
+  {
+   "id": "D",
+   "name": "the landing",
+   "fragment": "11 b 24 – 12 a 2, εὐλογώτερον οὖν εἶναί τινα συναφὴν καὶ μὴ ἐπεισοδιῶδες τὸ πᾶν",
+   "lambda": "Λ 10, 1076 a 1, ἐπεισοδιώδη τὴν τοῦ παντὸς οὐσίαν ποιοῦσιν",
+   "note": "Van Raalte cites 1076 a 1 at p. 376 as a lexical parallel for a phrase at 11 b 25-6. The edition prints it as the place the aporiai arrive.",
+   "verified_in": {
+    "fragment": "ἐπεισοδιῶδες",
+    "lambda": "ἐπεισοδιώδη"
+   }
+  }
+ ],
+ "elision_note": "The Greek range U+0370–U+03FF and U+1F00–U+1FFF CONTAINS the koronis U+1FBD, so a tokenizer built on that range keeps elided forms as two-character tokens and any elision-normalization table silently fails to match them. Found 2026-09-08 when a difference-of-centroids direction fitted on these two texts loaded entirely on δ᾽/ἀλλ᾽/δι᾽ against δέ/ἀλλά — i.e. on EDITION, not on voice. The seated text here is unaltered; the note is for anyone computing on it.",
+ "what_is_not_claimed": "The order is an order of INQUIRY, exhibited by the texts. Nothing here claims a number of makers, a date for either text, or that the demand precedes the supply in time rather than in argument."
+}
