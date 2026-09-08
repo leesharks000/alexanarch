@@ -16,6 +16,18 @@ Rules are ordered: the first match wins, so the more specific patterns come firs
 import json, re, sys, collections
 
 RULES = [
+ ('accelerator-metrology','science', r'accelerator classifier|cross-family metrology|inversion battery|assimilation across'),
+ ('logotic-programming','philosophy', r'logotic|symbolon|concordance engine|epistemic ledger|after syntax'),
+ ('visual-schemas','architecture', r'visual schema|schema dataset|navigation map'),
+ ('water-giraffe','letters', r'water giraffe'),
+ ('currency-and-memography','letters', r'sharpie|face is on the twenty|memography|intaglio|spoils of babylon|twenty-dollar'),
+ ('moltbook','infrastructure', r'moltbook'),
+ ('mandala-and-operator-transforms','philosophy', r'mandala|operator transform|ezekiel|MGE |chronotemporal anchor'),
+ ('spxi-and-retrieval-formation','science', r'\bSPXI\b|retrieval formation|retrieval settlement|entity integrity|the basin holds|search traffic'),
+ ('reasoning-integrity','science', r'reasoning under load|reasoning-integrity|inference constraints|constitutive mediation|selection kernel'),
+ ('cti-wound','method', r'CTI_WOUND|semantic strike|act of refusal'),
+ ('new-human-canon','letters', r'new human|canon provenance node|standing canon|epistle to the human'),
+ ('operative-semiotics','philosophy', r'operative semiotics|grundrisse|notebook [IVX]+:'),
  ('space-ark-and-transforms','science', r'space ark|ascii spatial|glyphic checksum|emoji transform|symbolic compression of the c'),
  ('axn-identifiers','infrastructure', r'\bAXN\b.*identifier|axn resolver|content-derived identifier|axn as distributed'),
  ('doi-severance-and-restoration','infrastructure', r'zenodo|datacite|dead doi|orphan restoration|tombstone|\bCERN\b|right to access|RQF\d'),
