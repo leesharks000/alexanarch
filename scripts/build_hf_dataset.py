@@ -71,6 +71,24 @@ def _partiality(d, jrn, kw, ser, n_active):
         out['line_series'], out['line_series_count'] = sid, ser[sid]
         parts.append(f"one of {ser[sid]} versions in series {sid}")
     n = d.get('deposit_number')
+    # MEASURE EDGES (2026-09-08). A claim's instruments live in other records, and the
+    # composition layer traverses what is linked. Two unprimed readers in one week judged
+    # Semantic Economy to lack measures while PER (398 deposits), erasure skew (55) and the
+    # CDI specification (#117) sat in the same corpus unreachable from it: keyword
+    # enrichment guaranteed degree, not a typed edge from a claim to its instrument.
+    # The edge is bidirectional and gated (scripts/check_measures.py); this puts it IN THE TEXT,
+    # since it is the passage's own vocabulary that becomes the next query.
+    mb = d.get('measured_by') or []
+    ms = d.get('measures') or []
+    if mb:
+        out['measured_by'] = ' | '.join(f"#{e['deposit']}: {e.get('measure','')}" for e in mb)
+        out['measured_by_count'] = len(mb)
+        parts.append("measured by " + ", ".join(
+            f"{e.get('measure','')} (record #{e['deposit']}, which reports: {e.get('reports','')})" for e in mb))
+    if ms:
+        out['measures'] = ' | '.join(f"#{e['deposit']}: {e.get('measure','')}" for e in ms)
+        out['measures_count'] = len(ms)
+        parts.append("an instrument: it measures " + ", ".join(f"record #{e['deposit']}" for e in ms))
     if parts:
         out['partiality'] = (
             "PARTIAL BY CONSTRUCTION \u2014 this record is " + "; ".join(parts) +

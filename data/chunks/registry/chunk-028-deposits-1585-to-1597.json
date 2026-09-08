@@ -1863,7 +1863,19 @@
         "from": "issue body",
         "recovered": "2026-09-08"
       },
-      "methodology": "Three feature families reported together; fixed-size blocks; unsupervised and supervised procedures kept apart and both reported for target and controls; vocabulary and scaling fitted inside each fold; text-level label permutation as the comparator; matched removals before attributing a drop to what was removed; blind labels when the labels are the analyst's; every file verified by its opening words."
+      "methodology": "Three feature families reported together; fixed-size blocks; unsupervised and supervised procedures kept apart and both reported for target and controls; vocabulary and scaling fitted inside each fold; text-level label permutation as the comparator; matched removals before attributing a drop to what was removed; blind labels when the labels are the analyst's; every file verified by its opening words.",
+      "measures": [
+        {
+          "deposit": 123,
+          "measure": "operation axis (balanced accuracy, permutation null)",
+          "reports": "names 0.783 balanced / operation 0.846, p=0.007 over 39 texts"
+        },
+        {
+          "deposit": 667,
+          "measure": "operation axis, calibration series",
+          "reports": "Pessoa 0.789 blind 91%; Kierkegaard 0.653 blind 95%; Chatterton 0.864"
+        }
+      ]
     },
     {
       "deposit_number": 1594,
@@ -2063,7 +2075,14 @@
         "from": "issue body",
         "recovered": "2026-09-08"
       },
-      "methodology": "Accumulate; extract standalones periodically; hold two working files; read from the seated bytes; state the received reading first; build keys from the machine-text; keep relations apart from readings; label by what a text treats and how; refine on the data and brake by prediction out of sample; record every ruling in the operator's words."
+      "methodology": "Accumulate; extract standalones periodically; hold two working files; read from the seated bytes; state the received reading first; build keys from the machine-text; keep relations apart from readings; label by what a text treats and how; refine on the data and brake by prediction out of sample; record every ruling in the operator's words.",
+      "measures": [
+        {
+          "deposit": 123,
+          "measure": "blind discovery + directed rare-term uptake",
+          "reports": "placement agrees with operation 95%, names 69%; frag→Λ rank 1 of 1,482, z=+5.05"
+        }
+      ]
     },
     {
       "deposit_number": 1595,
@@ -2258,7 +2277,14 @@
           }
         },
         "overall_conformance": "partial"
-      }
+      },
+      "measures": [
+        {
+          "deposit": 1583,
+          "measure": "the seating: four openings verified in the seated bytes",
+          "reports": "every locus resolves on both sides"
+        }
+      ]
     },
     {
       "deposit_number": 1596,
@@ -2397,9 +2423,9 @@
             "note": "the three counters stand at full strength"
           },
           {
-            "k": "anticipates",
-            "to": "a maximal reading that exceeds this one by rearranging both texts",
-            "note": "realized as #1597, deposited the same day"
+            "k": "problem",
+            "to": "whether the fragment entire can be joined to Λ without moving any of it — and whether a maximal reading rearranging both is available",
+            "note": "the second half realized as #1597, deposited the same day"
           }
         ],
         "reciprocal": [],
@@ -2658,7 +2684,19 @@
           }
         },
         "overall_conformance": "partial"
-      }
+      },
+      "measures": [
+        {
+          "deposit": 123,
+          "measure": "the reconstitution and its four audits",
+          "reports": "ρ=+0.459, τ-b=+0.326; crossings not detectably rougher, CI [−0.174,+1.603]"
+        },
+        {
+          "deposit": 1583,
+          "measure": "binding-dependency audit; continuity trial",
+          "reports": "5 violations found and cleared by redivision; 2 printed"
+        }
+      ]
     }
   ]
 }
