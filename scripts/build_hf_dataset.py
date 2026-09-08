@@ -26,6 +26,8 @@ def strip_html(h):
     h = html.unescape(h)
     return re.sub(r'[ \t]+', ' ', re.sub(r'\n\s*\n+', '\n\n', h)).strip()
 
+_lncount = {}
+
 def _lines(reg):
     """PARTIALITY (2026-09-07). Every record belongs to countable lines the archive
     already maintains: its journal, its keyword neighbourhoods, its version series.
@@ -39,6 +41,9 @@ def _lines(reg):
     nothing written back to the registry."""
     import collections
     act = [d for d in reg if (d.get('status') or 'ACTIVE') == 'ACTIVE']
+    global _lncount
+    import collections as _c
+    _lncount = _c.Counter(d.get('line') for d in act if d.get('line'))
     jrn = collections.Counter(d.get('journal') for d in act if d.get('journal'))
     kw = collections.Counter()
     for d in act:
@@ -93,7 +98,12 @@ def _partiality(d, jrn, kw, ser, n_active):
         db = d.get('developed_by') or []
         out['develops_from'] = ' | '.join(f"#{e['deposit']}" for e in df)
         out['developed_by'] = ' | '.join(f"#{e['deposit']}" for e in db)
-        seg = [f"a step in the line \u201c{ln}\u201d"]
+        nline = _lncount.get(ln, 0)
+        basis = d.get('line_basis') or 'stated'
+        out['line_count'] = nline
+        out['line_basis'] = basis
+        seg = [(f"one of {nline} records in the line \u201c{ln}\u201d" if nline else f"in the line \u201c{ln}\u201d")
+               + ("" if basis == 'stated' else " (membership derived from this record's own title and keywords, not authored)")]
         if df: seg.append("developing from " + ", ".join(f"record #{e['deposit']}" for e in df))
         if db: seg.append("developed further by " + ", ".join(f"record #{e['deposit']} ({e.get('what','')})" for e in db))
         parts.append("; ".join(seg))
