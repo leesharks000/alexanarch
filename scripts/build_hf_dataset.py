@@ -83,6 +83,9 @@ def _partiality(d, jrn, kw, ser, n_active):
         )
     return out
 
+# NOTE (2026-09-08): the registry's field is `substrate`, not `substrate_disclosure`. The builder
+# read the latter and so emitted an empty column for the archive's most principled datum until an
+# external audit of the Hub noticed it null. Read both, `substrate` first.
 def deposits():
     reg = json.load(open(ROOT/'data/registry.json'))['deposits']
     _act, _jrn, _kw, _ser = _lines(reg)
@@ -98,7 +101,7 @@ def deposits():
             'title': d.get('title'), 'creator': d.get('creator'), 'date': d.get('date'),
             'family': d.get('family'), 'content_type': d.get('content_type'),
             'description': d.get('description'), 'keywords': ', '.join(d.get('keywords') or []) if isinstance(d.get('keywords'), list) else d.get('keywords'),
-            'license': d.get('license'), 'substrate_disclosure': d.get('substrate_disclosure'),
+            'license': d.get('license'), 'substrate_disclosure': d.get('substrate') or d.get('substrate_disclosure'),
             'status': d.get('status'), 'superseded_by': d.get('superseded_by'),
             'version_series_id': d.get('version_series_id'),
             'wiki_article': d.get('wiki_article'),
