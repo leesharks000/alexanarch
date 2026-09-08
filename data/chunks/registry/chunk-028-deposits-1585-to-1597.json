@@ -1,8 +1,8 @@
 {
   "chunk_number": 28,
   "first_deposit": 1585,
-  "last_deposit": 1595,
-  "count": 11,
+  "last_deposit": 1597,
+  "count": 13,
   "deposits": [
     {
       "deposit_number": 1585,
@@ -2242,6 +2242,406 @@
           "layer_3_content_hash": {
             "present": true,
             "canonical_hash": "a39b5454ccf13d021208d344ff0cdeb82fe2a7f7a8882a8389a564564f619344",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      }
+    },
+    {
+      "deposit_number": 1596,
+      "axn": "AXN:068C.UNCLASSIFIED.💧🔓🐚🍃👁‍🗨✊",
+      "hex": "068C",
+      "family": "UNCLASSIFIED",
+      "emoji": "💧🔓🐚🍃👁‍🗨✊",
+      "hash": "11fa7a18b0b405540d2870e8217496c9e48b4d68a58cfd984bc0bb2973aa3024",
+      "title": "The Metaphysics of Sigil I — The Full Splice: Theophrastus, On First Principles, entire and in its own order, with Metaphysics Λ joined at eleven points",
+      "creator": "Sigil",
+      "date": "2026-09-08",
+      "description": "An edition under the name Sigil, addressed by content-derived sigils rather than by the received numbering. The conservative reading of the Theophrastus–Lambda relation: hypothesis H2, that the material was removed by operation and kept in order. The fragment is taken ENTIRE — all 3,370 words in its thirty-four movements, in its own received order, nothing omitted and nothing moved — and Λ is spliced in at eleven points where the fragment's argument calls for an account it does not give. 4,100 words: 3,370 Θ, 730 Α, forty-eight units. Every Α unit stands between two Θ movements; at every return the fragment resumes exactly where it left off, at w442, w522 and w713; Λ enters in its own order, at w2282, w2999 and w5038. The eleven joins: the account totalled (μέχρι μὲν δὴ τούτων οἷον ἄρτιος ὁ λόγος) against Λ 7's ἔστι τι ὃ οὐ κινούμενον κινεῖ and κινεῖ δὴ ὡς ἐρώμενον; the method refused (οὐ γὰρ ὅ γε τῶν ἀστρολόγων) against Λ 8's premise and the counts of Eudoxus and Callippus; the aporiai against Λ 10's ἐπεισοδιώδη; rest in the principles against Λ 6's necessity of an eternal unmoved substance; matter and form against Λ 2's third thing beside the contraries; being in many ways against Λ 4; the infinite regress against Λ 3's εἰς ἄπειρον; MIND TOUCHES (θιγόντι) against Λ 7's νοητὸς γὰρ γίγνεται θιγγάνων καὶ νοῶν; the revolution as a kind of life against Λ 7's καὶ ζωὴ δέ γε ὑπάρχει; nature striving for the best against Λ 10's ἐπισκεπτέον δὲ καὶ ποτέρως ἔχει ἡ τοῦ ὅλου φύσις τὸ ἀγαθόν; and the fragment's broken close against Λ's οὐκ ἀγαθὸν πολυκοιρανίη. The argument for an edition rather than a paper: a numbering is an attribution wearing coordinates, the two received coordinate systems cannot intersect, and therefore the pair is not a citable object — which is the same limit found in the commentaries, where van Raalte cites Λ five times inside the hinge chapters, including 1076 a 1 (ἐπεισοδιώδη), and every citation is correct and every one is cp.",
+      "content_type": "Text",
+      "license": "CC-BY-4.0",
+      "substrate": "Human–machine collaborative. The reading of the seam, the identification of the demand-structure, the decision to make an edition rather than a paper, and the ordering are Lee Sharks's; assembly, verification and audit by TACHYON (Claude, Anthropic) in session. Van Raalte's apparatus and commentary were read at pp. 36, 40, 46, 50, 343, 349–352, 361, 376 and 378 from a copy the archive does not hold; all citations resolve to the Brill edition (Mnemosyne Supplement 125, 1993) by page, and nothing is cited to a mirror.",
+      "methodology": "Both texts from the seat EA-CORPORA-14 (#1595): Theophrastus via First1KGreek tlg0093.tlg006, Λ via Perseus tlg0086.tlg025 book XII. Every join located by reading and verified by locating its Greek in the seated bytes on both sides before the unit was written. Units addressed by sigil: first four hex of the SHA-256 of the unit's normalized Greek (NFC; Greek word characters including the koronis U+1FBD and the other elision apostrophes extracted then stripped so elided and unelided coincide; lowercased; diacritics stripped; final sigma to medial), recomputable from what is printed. Usener references for the Theophrastan movements verified against van Raalte's margins.",
+      "falsification_conditions": "The edition is falsified if any printed sigil does not recompute from its printed Greek; if any word-offset does not resolve in the seated text on the side claimed; if the fragment's order is found to have been altered at any point; or if a Λ passage is found to have been placed at a join whose Greek does not stand where claimed. It is NOT falsified by rejection of the ordering, which is editorial and declared as such. It claims that the fragment entire and eleven passages of Λ can be read as one continuous argument with no rearrangement of either; it does not claim a number of makers, a date, or that any demand precedes its supply in time.",
+      "root_axn": "AXN:068C.UNCLASSIFIED",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "11fa7a18b0b405540d2870e8217496c9e48b4d68a58cfd984bc0bb2973aa3024",
+      "clusters": [
+        "Elemental",
+        "Terminal",
+        "Organic",
+        "Elemental",
+        "Gestural",
+        "Gestural"
+      ],
+      "axn_reading": "Force -> Closure -> Growth -> Force -> Touch -> Touch",
+      "minted_at": "2026-09-08T19:24:57Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-068C-text.md",
+      "wiki_article": "The Metaphysics of Sigil I, deposit #1596 of the Crimson Hexagonal Archive (8 September 2026), is an edition under the name Sigil presenting Theophrastus's On First Principles entire and in its own received order, with eleven passages of Aristotle's Metaphysics Λ spliced in where the fragment's argument calls for an account it does not give. It is the conservative reading of the Theophrastus–Lambda relation: nothing of the fragment is moved, and at every return from Λ the fragment resumes exactly where it left off. The edition addresses its units by content-derived sigils rather than by the received Usener and Bekker numbering, on the argument that a numbering is an attribution wearing coordinates: to write 1073 b 17 is to assert Aristotle and the Metaphysics before pointing at anything, and because the two coordinate systems cannot intersect, the relation between a Theophrastan demand and its Aristotelian supply is not a citable object at all. That limit is visible in the commentary tradition, where van Raalte cites Λ five times inside the hinge chapters — including 1076 a 1, ἐπεισοδιώδη, the word the fragment's aporiai answer to — and every citation is correct and every one is cp.",
+      "wiki_status": "AUTHORED_IN_SESSION",
+      "entities": [
+        {
+          "subject": "The Metaphysics of Sigil I — The Full Splice: Theophrastus, On First Principles, entire and in its o",
+          "predicate": "created_by",
+          "object": "Sigil",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "The Metaphysics of Sigil I — The Full Splice: Theophrastus, On First Principles, entire and in its o",
+          "predicate": "is_type",
+          "object": "Text",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "The Metaphysics of Sigil I — The Full Splice: Theophrastus, On First Principles, entire and in its o",
+          "predicate": "belongs_to_family",
+          "object": "UNCLASSIFIED",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "The Metaphysics of Sigil I — The Full Splice: Theophrastus, On First Principles, entire and in its o",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "defines_concepts": [
+        {
+          "term": "the sigil address",
+          "definition": "An address for a textual unit computed from the unit's own normalized Greek rather than assigned by an editor: the first four hex of the SHA-256, recomputable by any reader from the printed text, asserting nothing about author, work, or corpus position."
+        }
+      ],
+      "orcid": "0009-0000-1599-0703",
+      "keywords": [
+        "Theophrastus",
+        "Aristotle",
+        "Metaphysics Lambda",
+        "On First Principles",
+        "the seam",
+        "Sigil",
+        "content-derived address",
+        "sigil numbering",
+        "splice",
+        "H2",
+        "demand-structure",
+        "astronomers",
+        "epeisodiodes",
+        "order of inquiry",
+        "van Raalte",
+        "Isḥāq ibn Ḥunayn"
+      ],
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 0,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 11314,
+        "audited_at": "2026-09-08T19:24:57Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "related_deposits": [
+        1580,
+        1583,
+        1595,
+        1597
+      ],
+      "lexical_attested_none": true,
+      "pressure": {
+        "backward": [
+          {
+            "k": "inherits",
+            "to": 1583,
+            "note": "the reading of the hinge at four loci"
+          },
+          {
+            "k": "inherits",
+            "to": 1595,
+            "note": "the seating of both texts, from which every address is computed"
+          },
+          {
+            "k": "problem",
+            "to": "a numbering is an attribution; the two received coordinate systems cannot intersect; therefore the pair is not a citable object",
+            "note": "the reason for an edition rather than a paper"
+          },
+          {
+            "k": "rejects",
+            "to": "any claim of maker-count, date, or temporal precedence",
+            "note": "the three counters stand at full strength"
+          },
+          {
+            "k": "anticipates",
+            "to": "a maximal reading that exceeds this one by rearranging both texts",
+            "note": "realized as #1597, deposited the same day"
+          }
+        ],
+        "reciprocal": [],
+        "forward": "∅"
+      },
+      "references_concepts": [
+        "Lee Sharks"
+      ],
+      "references_concept_count": 1,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-068C.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-09-08T19:26:52.349917+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [
+              "creator_name",
+              "date"
+            ],
+            "anchor_count": 2,
+            "orcid_in_body": false,
+            "creator_in_body": true,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": false,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 0
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "957ac30ce7c71cb13a34efc77ab5683b3f51d989375f1a3b5fb9030cf67f21d3",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      }
+    },
+    {
+      "deposit_number": 1597,
+      "axn": "AXN:068D.UNCLASSIFIED.🏠📎⛵🏠🕘📜",
+      "hex": "068D",
+      "family": "UNCLASSIFIED",
+      "emoji": "🏠📎⛵🏠🕘📜",
+      "hash": "26475c266a40ccadd887b204b1429009687aed4d03176a7de8706eaade1caaeb",
+      "title": "The Metaphysics of Sigil II — H3: Theophrastus, On First Principles, and Aristotle, Metaphysics Λ, entire, reconstituted as one work",
+      "creator": "Sigil",
+      "date": "2026-09-08",
+      "description": "The maximal reading, and the companion to #1596. Hypothesis H3: one continuous whole, separated, and rearranged into two continuous wholes. Both texts entire in one order — 8,441 words, 3,370 Theophrastus in thirty-five movements and 5,071 Λ in twenty, fifty-five units in eleven parts, nothing omitted and nothing repeated — with the Greek printed whole and unbroken before any apparatus, a working rendering of every unit, and a commentary. The warrant is that no monotone merge of the two received orders exists: matching all sixteen Λ movements to their Theophrastan counterparts by subject gives Spearman ρ = +0.459 (permutation p = 0.039) and Kendall τ-b = +0.326, concordant 79, discordant 40, one tied pair, 40 inversions of 120. Λ runs matter → potency → the unmoved mover → the spheres → mind → the good; the fragment runs the mover → doxography → matter → knowing → astronomy → teleology → the good — same matter, same close, inverse middle. Four audits are reported. (1) Clause completeness: one break in 54 junctions, and the composition inherits rather than makes it, since the fragment ends mid-sentence at ἐν τίσι τὰ ὄντα καὶ πῶς ἔχει πρὸς ἄλληλα. (2) Binding dependencies: connectives naming a specific antecedent (οἱ δέ requiring its οἱ μέν, ἤ requiring the aporia it answers, ἀλλὰ μήν answering a step) must have it adjacent; five violations were found and cleared by redividing five movements at their operational seam, each having contained an ending and a beginning at once; two remain and are printed as violations rather than resolved. (3) The instrument: 55 units on the 120 commonest short words, length-controlled, name-crossings not detectably rougher than within-text junctions (difference +0.724, p = 0.1161, bootstrap 95% CI −0.174 to +1.603) — underpowered to say identical. (4) The continuity trial: the whole read straight through with every mark stripped, which measures nothing and can only be run by reading, and which produced one relocation the computable audits had not. Usener references for the Theophrastan movements are VERIFIED against van Raalte's margins, correcting eight citations carried in earlier files of this line: the whole demand-cluster stands in Chapter II at 5 a 14 – 5 b 10, not at 8 a 21, and ἐπεισοδιῶδες stands at 4 a 13-16 in Chapter I, not at 11 b 24.",
+      "content_type": "Text",
+      "license": "CC-BY-4.0",
+      "substrate": "Human–machine collaborative. The order, the readings, the decision to reconstitute rather than argue, and the ruling on every contested placement are Lee Sharks's; assembly, verification, audit and the working rendering by TACHYON (Claude, Anthropic) in session. Two outside readers contributed corrections that are recorded in the file: the discrepancy between the stated and built boundaries in v1.0, and the redivision of Λ mvt 13 that made the conceptual join and the dependency constraint compatible. Van Raalte read from a copy the archive does not hold; all citations resolve to the Brill edition by page.",
+      "methodology": "Texts from the seat EA-CORPORA-14 (#1595). Movements divided first by clause completeness, then redivided at the operational seam where a binding dependency failed; five splits recorded with the two operations each movement had contained. Units addressed by content-derived sigil, recomputable from the printed Greek. Four audits as described, with permutation estimator (b+1)/(n+1) at 20,000 permutations and bootstrap confidence intervals at 20,000 resamples. Pre-deposit checks run and passed: sigils recompute 55/55; the continuous text is token-identical to the concatenated units, 8,441 to 8,441; the concordance agrees with the built units on every row; no rendering pending.",
+      "falsification_conditions": "Falsified if any printed sigil does not recompute from its printed Greek; if the continuous text is not token-identical to the concatenated units; if any concordance row disagrees with the built text; if a monotone merge of the two received orders is exhibited that preserves the sixteen stated correspondences; or if a Usener reference marked verified is shown wrong against van Raalte. It is NOT falsified by rejection of the order, which is editorial: the edition claims that both texts entire can be set in one order that runs as a single argument, and that no order preserving both received sequences exists — not that this order is the original. The sixteen subject pairings on which ρ and τ are computed are editorial and are listed individually so that each can be disputed; a blind second reader is owed. No claim is made about hands, dates, or which passage precedes which in time; the three counters stand at full strength.",
+      "root_axn": "AXN:068D.UNCLASSIFIED",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "26475c266a40ccadd887b204b1429009687aed4d03176a7de8706eaade1caaeb",
+      "clusters": [
+        "Architectural",
+        "Scriptural",
+        "Navigational",
+        "Architectural",
+        "Temporal",
+        "Scriptural"
+      ],
+      "axn_reading": "Foundation -> Text -> Search -> Foundation -> Duration -> Text",
+      "minted_at": "2026-09-08T19:25:35Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-068D-text.md",
+      "wiki_article": "The Metaphysics of Sigil II, deposit #1597 of the Crimson Hexagonal Archive (8 September 2026), sets Theophrastus's On First Principles and Aristotle's Metaphysics Λ entire in a single order — 8,441 words, fifty-five units, nothing omitted and nothing repeated — under the hypothesis that they are one continuous whole later separated and rearranged into two. Its warrant is that no monotone merge of the two received orders exists: over sixteen subject correspondences the orders give Spearman ρ = +0.459 and Kendall τ-b = +0.326 with forty inversions of a hundred and twenty, sharing their matter and their close while ordering the middle inversely. The edition reports four audits, of which the second and fourth are new instruments: a test of binding dependencies, which asks whether connectives naming a specific antecedent still have it adjacent and which found five violations that were cleared by redividing five movements at their operational seam; and a continuity trial, the whole read straight through with every mark stripped, which measures nothing, can only be run by reading, and produced a relocation the computable audits had missed. Its commentary raises the question the corrected references sharpen: why the text standing under the successor's name reads not as objection but as commission — a specification stating what would count as an answer, issued before any answer is given, naming and refusing the method the other text then uses. Three accounts are offered and none chosen; what would decide between them is Isḥāq's Arabic, from a Greek uncial outside the surviving stemma, read at five loci.",
+      "wiki_status": "AUTHORED_IN_SESSION",
+      "entities": [
+        {
+          "subject": "The Metaphysics of Sigil II — H3: Theophrastus, On First Principles, and Aristotle, Metaphysics Λ, e",
+          "predicate": "created_by",
+          "object": "Sigil",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "The Metaphysics of Sigil II — H3: Theophrastus, On First Principles, and Aristotle, Metaphysics Λ, e",
+          "predicate": "is_type",
+          "object": "Text",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "The Metaphysics of Sigil II — H3: Theophrastus, On First Principles, and Aristotle, Metaphysics Λ, e",
+          "predicate": "belongs_to_family",
+          "object": "UNCLASSIFIED",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "The Metaphysics of Sigil II — H3: Theophrastus, On First Principles, and Aristotle, Metaphysics Λ, e",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "defines_concepts": [
+        {
+          "term": "binding dependency",
+          "definition": "A connective at a unit's opening that names a specific antecedent — οἱ δέ requiring its οἱ μέν, ἤ requiring the disjunct or aporia it answers, ἀλλὰ μήν answering a particular step — as against a loose connective which attaches to whatever precedes. An audit of binding dependencies detects an arranger's hand where clause-completeness cannot, because both ends of a broken dependency are clean sentences."
+        },
+        {
+          "term": "the continuity trial",
+          "definition": "An edition read straight through with every mark, address and heading stripped away. It measures nothing and can only be run by reading; it is the only test that catches a join which passes every mechanical check and still reads as assembled."
+        }
+      ],
+      "orcid": "0009-0000-1599-0703",
+      "keywords": [
+        "Theophrastus",
+        "Aristotle",
+        "Metaphysics Lambda",
+        "On First Principles",
+        "Sigil",
+        "H3",
+        "reconstitution",
+        "binding dependencies",
+        "continuity trial",
+        "Kendall tau",
+        "demand-structure",
+        "commissioning",
+        "van Raalte",
+        "Isḥāq ibn Ḥunayn",
+        "Alon 1985"
+      ],
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 0,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 175949,
+        "audited_at": "2026-09-08T19:25:35Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "related_deposits": [
+        1580,
+        1583,
+        1595,
+        1596
+      ],
+      "lexical_attested_none": true,
+      "pressure": {
+        "backward": [
+          {
+            "k": "inherits",
+            "to": 1595,
+            "note": "the seating"
+          },
+          {
+            "k": "inherits",
+            "to": 1596,
+            "note": "the conservative reading, which this exceeds"
+          },
+          {
+            "k": "problem",
+            "to": "the two received orders share their matter and their close and order the middle inversely; no monotone merge preserving the stated correspondences exists",
+            "note": "the warrant for H3"
+          },
+          {
+            "k": "preserves",
+            "to": "Thphr. 4 a 13-16, 5 a 14-15, 5 a 21-3, 7 b 19-22, 8 a 8-14; Arist. Λ 7, Λ 8, Λ 9, Λ 10",
+            "note": "Usener references verified against van Raalte's margins, correcting eight citations carried in earlier files of this line"
+          },
+          {
+            "k": "rejects",
+            "to": "any claim that this order is the original",
+            "note": "it is an order in which the whole coheres; coherence and originality are separate questions"
+          }
+        ],
+        "reciprocal": [
+          {
+            "k": "companion",
+            "to": 1596,
+            "note": "the conservative reading"
+          }
+        ],
+        "forward": "∅"
+      },
+      "references_concepts": [
+        "Does not",
+        "For both",
+        "PRINCIPLES",
+        "Lee Sharks"
+      ],
+      "references_concept_count": 4,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-068D.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-09-08T19:28:51.453182+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [
+              "creator_name",
+              "date"
+            ],
+            "anchor_count": 2,
+            "orcid_in_body": false,
+            "creator_in_body": true,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": false,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 0
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "c5a45061811eb295a432f5b054b4ffb703d61817768775a4ccd823de6f5e429a",
             "hash_in_body": false,
             "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
           },
