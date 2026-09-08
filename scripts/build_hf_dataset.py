@@ -279,18 +279,20 @@ CARD = """---
 license: cc-by-4.0
 pretty_name: Crimson Hexagonal Archive (Alexanarch)
 language: [en, el]
-size_categories: [1K<n<10K]
+size_categories: [10K<n<100K]
 tags: [scholarship, provenance, heteronymy, reception, aristotle, plato, poetry, archive, ai-mediated-authorship, content-addressed-identifiers, citation-graph]
 configs:
 {configs}
 ---
 # The Crimson Hexagonal Archive — machine-readable representation
 
+**Start here.** Fourteen configs. `deposits` is the corpus ({n_dep} records, full text). `citations` is the **edge list** — one row per internal citation, `source_deposit`/`source_axn` → `target_deposit`/`target_axn` with the `via` that found it — so the graph is already data, not something to be inferred from embeddings. `lexicon` is every coined term with its minting record. `captures` is the reception registry. `tombstones` is the severed-DOI ledger. `blog_posts` is the 2014–15 origin layer and is the *thinnest* table here: it is an index of an old surface, not the archive. If a viewer drops you into `blog_posts`, you are looking at the least of it.
+
 **What this is.** The Crimson Hexagonal Archive (alexanarch.org) is a self-governing scholarly and literary corpus by Lee Sharks and the twelve heteronyms of the Dodecad: {n_dep} deposits as of this build, each with a content-derived persistent identifier (AXN), a canonical text, a substrate disclosure, a license, and a place in a supersession chain. This dataset is a second, executable representation of that corpus: one row per record, full text as a string column, and every inter-record relation encoded as data keyed by stable identifiers, so that an agent can reconstruct a record, what it cites, what cites it, and its series neighbours from the dataset alone, without traversing the archive's web surfaces. It is rebuilt automatically from the archive's single source of truth (`data/` in `leesharks000/alexanarch`) on every new deposit.
 
 **What a row means.** In `deposits`, a row is one deposit: `deposit_number` (integer, permanent, the archive's primary key), `axn` (the content-derived identifier, of the form `AXN:<hex>.<FAMILY>.<six glyphs>`; the sha256 of the canonical text is the record), `hex` (the four-digit position used in URIs), `title`, `creator` (the orthonym or heteronym as attributed), `date`, `family` (GENERATIVE, EMPIRICAL, GOVERNANCE, ARCHIVAL, UNCLASSIFIED), `content_type`, `description` (the abstract), `keywords`, `license`, `substrate_disclosure` (whether and how a language model participated in making the text), `status` (ACTIVE, SUPERSEDED, WITHDRAWN, …), `wiki_article` (a machine-written encyclopedia entry authored in session), `venue` (the archive's own journal the deposit belongs to), `text` (the canonical text, verbatim), `text_sha256`, `text_words`. Each row also carries a **partiality statement**, derived at build time and prepended to `text`: `line_journal` / `line_journal_count`, `line_keyword` / `line_keyword_count` (the two most-shared keyword neighbourhoods), `line_series` / `line_series_count`, `archive_active_count`, and `partiality` — the rendered sentence. It states what the record is one of, and where the rest are. It is not a claim about the record's content; it is a statement that the record is a part, added because a reader who receives one record without indication of what surrounds it will treat it as the whole surface. `text_sha256` remains the hash of the canonical bytes, so the notice never enters the record's identity; the unmodified text is always at the `record_url` and at `alexanarch.org/api/`.
 
-**Relations, as data.** `cites` and `cited_by`: JSON arrays of deposit numbers from the archive's citation graph (also `cites_axn` as identifiers). `related_deposits`: curated relations declared at deposit time. `superseded_by` / `supersedes`: the version chain. `version_series_id`, `series_previous`, `series_next`: neighbours in a declared series. `defines_concepts`: terms this deposit coins, with definitions (the same terms appear as rows in `lexicon`). `record_url`, `axn_uri`, `text_uri`: the canonical web addresses; `doi_legacy` where a pre-2026 Zenodo DOI existed (those DOIs were severed on 2026-06-19 — see `tombstones`). `attachments`: files ingested with the record.
+**Relations, as data — this is the graph.** Nodes are `deposits` rows keyed by `deposit_number` and `axn`; typed edges live in three places, and none of them require similarity search to traverse: the `citations` config (10k+ rows, the full internal edge list), the relation columns below, and the supersession chain. `cites` and `cited_by`: JSON arrays of deposit numbers from the archive's citation graph (also `cites_axn` as identifiers). `related_deposits`: curated relations declared at deposit time. `superseded_by` / `supersedes`: the version chain. `version_series_id`, `series_previous`, `series_next`: neighbours in a declared series. `defines_concepts`: terms this deposit coins, with definitions (the same terms appear as rows in `lexicon`). `record_url`, `axn_uri`, `text_uri`: the canonical web addresses; `doi_legacy` where a pre-2026 Zenodo DOI existed (those DOIs were severed on 2026-06-19 — see `tombstones`). `attachments`: files ingested with the record.
 
 **Other configs.** `sources` — book-length and formerly binary-only works recovered to text (All That Lies Within Me, 234k words; New Human; Cleis; the Logos papers). `heteronyms` — the Dodecad and adjacent figures, with voice signatures, roles, domains. `venues`, `journal_assignments` — the archive's journals and presses and which deposit belongs to which. `reception` — the register of twenty blind machine referee reports on one Aristotle sentence (#1574). `captures` — reception captures from the Capture Registry (how machine surfaces received the archive). `citations` — the full internal edge list. `lexicon` — the lexical minting registry. `predictions` — every falsification condition stated in a deposit, with resolutions. `studies` — the designed/conducted study dashboard. `tombstones` — the 1,136-row Zenodo kill ledger of 2026-06-19. `blog_posts` — the index of the authorial blog surface with AXN crosswalk. `sites` — one row per page of the public fleet of sites that surface the archive.
 
@@ -311,7 +313,14 @@ def main():
         if df is None or df.empty: print(f"  {name}: empty, skipped"); continue
         df = df.astype({c: 'string' for c in df.columns if df[c].dtype == object})
         df.to_parquet(out/f"{name}.parquet", index=False)
-        cfg.append(f"- config_name: {name}\n  data_files: {name}.parquet")
+        # The viewer shows the FIRST config unless one is marked default. Left to itself the
+        # Hub sorts alphabetically and lands on blog_posts — 2,939 rows of 2014–15 posts with
+        # mostly-null axn — which a reader reasonably takes for the whole dataset (measured
+        # 2026-09-07: a composer described the archive as "a text corpus with some archival
+        # identifiers attached, rather than a graph-structured representation", from that view).
+        # deposits is the corpus; citations is the edge list. Both are named first.
+        cfg.append(f"- config_name: {name}\n  data_files: {name}.parquet"
+                   + ("\n  default: true" if name == 'deposits' else ""))
         print(f"  {name}: {len(df):,} rows, {os.path.getsize(out/f'{name}.parquet')/1e6:.1f} MB")
     import datetime as dt
     (out/'README.md').write_text(CARD.format(configs='\n'.join(cfg), n_dep=len(frames['deposits']), built=dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d %H:%MZ')))
