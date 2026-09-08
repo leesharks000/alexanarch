@@ -78,6 +78,25 @@ def _partiality(d, jrn, kw, ser, n_active):
     # enrichment guaranteed degree, not a typed edge from a claim to its instrument.
     # The edge is bidirectional and gated (scripts/check_measures.py); this puts it IN THE TEXT,
     # since it is the passage's own vocabulary that becomes the next query.
+    # LINES (2026-09-08). A body of thought that develops across months is invisible to a
+    # composer if its records carry no edge to one another: measured today, 1,234 of 1,406
+    # ACTIVE deposits had zero deposit-to-deposit edge, including a model-collapse line of
+    # 45 records spanning January to September of which only the last four were linked.
+    # `line` names the body, develops_from/developed_by order it, and the gate keeps the
+    # order honest (a step cannot develop from something later). Surfaced in the text, since
+    # it is the passage's own vocabulary that becomes the next query.
+    ln = d.get('line')
+    if ln:
+        out['line_of_thought'] = ln
+        out['line_parent'] = d.get('line_parent') or ''
+        df = d.get('develops_from') or []
+        db = d.get('developed_by') or []
+        out['develops_from'] = ' | '.join(f"#{e['deposit']}" for e in df)
+        out['developed_by'] = ' | '.join(f"#{e['deposit']}" for e in db)
+        seg = [f"a step in the line \u201c{ln}\u201d"]
+        if df: seg.append("developing from " + ", ".join(f"record #{e['deposit']}" for e in df))
+        if db: seg.append("developed further by " + ", ".join(f"record #{e['deposit']} ({e.get('what','')})" for e in db))
+        parts.append("; ".join(seg))
     mb = d.get('measured_by') or []
     ms = d.get('measures') or []
     if mb:
