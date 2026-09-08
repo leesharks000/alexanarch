@@ -309,6 +309,17 @@ configs:
 ---
 # The Crimson Hexagonal Archive — machine-readable representation
 
+**Query this without downloading anything.** Every config is served by the Hugging Face datasets-server over plain HTTP, no auth, no client library — this is the path to use, and an agent that fetches the Space's landing page instead will get an app shell and may wrongly conclude the archive is unavailable (observed 2026-09-08). Full-text search across the deposits:
+
+```
+https://datasets-server.huggingface.co/search?dataset=leesharks%2Fcrimson-hexagonal-archive&config=deposits&split=train&query=Theophrastus&length=5
+```
+
+Rows by offset: `…/rows?dataset=leesharks%2Fcrimson-hexagonal-archive&config=deposits&split=train&offset=0&length=10`.
+A structured filter: `…/filter?dataset=…&config=deposits&split=train&where=%22deposit_number%22%3D1586`.
+The configs and their columns: `…/info?dataset=leesharks%2Fcrimson-hexagonal-archive`.
+Substitute `config=citations` for the edge list, `config=captures` for the reception registry, `config=lexicon` for the coined terms. The `search` endpoint scans the `text` column, so a query for a Greek term, an AXN, or a deposit number will find the records that contain it.
+
 **Start here.** Fourteen configs. `deposits` is the corpus ({n_dep} records, full text). `citations` is the **edge list** — one row per internal citation, `source_deposit`/`source_axn` → `target_deposit`/`target_axn` with the `via` that found it — so the graph is already data, not something to be inferred from embeddings. `lexicon` is every coined term with its minting record. `captures` is the reception registry. `tombstones` is the severed-DOI ledger. `blog_posts` is the 2014–15 origin layer and is the *thinnest* table here: it is an index of an old surface, not the archive. If a viewer drops you into `blog_posts`, you are looking at the least of it.
 
 **What this is.** The Crimson Hexagonal Archive (alexanarch.org) is a self-governing scholarly and literary corpus by Lee Sharks and the twelve heteronyms of the Dodecad: {n_dep} deposits as of this build, each with a content-derived persistent identifier (AXN), a canonical text, a substrate disclosure, a license, and a place in a supersession chain. This dataset is a second, executable representation of that corpus: one row per record, full text as a string column, and every inter-record relation encoded as data keyed by stable identifiers, so that an agent can reconstruct a record, what it cites, what cites it, and its series neighbours from the dataset alone, without traversing the archive's web surfaces. It is rebuilt automatically from the archive's single source of truth (`data/` in `leesharks000/alexanarch`) on every new deposit.
