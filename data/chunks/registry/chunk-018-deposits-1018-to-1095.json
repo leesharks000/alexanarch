@@ -1,9 +1,199 @@
 {
   "chunk_number": 18,
-  "first_deposit": 1019,
-  "last_deposit": 1096,
+  "first_deposit": 1018,
+  "last_deposit": 1095,
   "count": 78,
   "deposits": [
+    {
+      "deposit_number": 1018,
+      "hex": "0406",
+      "family": "ARCHIVAL",
+      "axn": "AXN:0406.ARCHIVAL.🌇⚙️🏺📐🔩🗺️",
+      "emoji": "🌇⚙️🏺📐🔩🗺️",
+      "hash": "e4322f4e315197764a1c9acd7e1bb01fcaf7a15b52ed7adddbf08bd8a895b1aa",
+      "axn_canonical": "e4322f4e315197764a1c9acd7e1bb01fcaf7a15b52ed7adddbf08bd8a895b1aa",
+      "clusters": [
+        "Liminal",
+        "Instrumental",
+        "Architectural",
+        "Scriptural",
+        "Instrumental",
+        "Navigational"
+      ],
+      "axn_reading": "Threshold -> Method -> Foundation -> Text -> Method -> Search",
+      "root_axn": "AXN:0406.ARCHIVAL",
+      "title": "[DUPLICATE — SUPERSEDED → DOI: 10.5281/zenodo.20629202] Emily Dickinson — Canon Provenance Node (New Human Canon)",
+      "creator": "Sharks, Lee",
+      "orcid": "0009-0000-1599-0703",
+      "date": "2026-07-03",
+      "content_type": "Provenance document",
+      "license": "CC-BY-4.0",
+      "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
+      "version": "v0.1-semi",
+      "description": "A superseded duplicate mint for the Emily Dickinson canon provenance node.\n\nIts current body is an unrelated Sappho node. Route all Dickinson-specific use to authoritative record #180 and retain #1018 as a wrong-object restoration and supersession witness.",
+      "keywords": [
+        "orphan restoration",
+        "dead DOI",
+        "DataCite capture",
+        "metadata body"
+      ],
+      "companion_deposits": [
+        "AXN:0371.EMPIRICAL.👋☁️⛩️☄️🤙📝"
+      ],
+      "restoration": {
+        "class": "datacite_metadata_body",
+        "dead_doi": "10.5281/zenodo.20629121",
+        "zenodo_http": 410,
+        "datacite_state": "findable",
+        "captured": "2026-07-03T21:54:51Z",
+        "fulltext": "pending"
+      },
+      "zenodo_dois": [
+        "10.5281/zenodo.20629121"
+      ],
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "minted_at": "2026-07-03T21:54:51Z",
+      "status": "SUPERSEDED",
+      "status_authorial": "SEMI_RESTORED",
+      "mint_source": "orphan-restoration-batch",
+      "full_text_path": "/data/texts/AXN-0406-text.md",
+      "wiki_status": "pending",
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "PASS_COMPLETE_TEXT_NOT_SEATED",
+        "residual_chars": 3575,
+        "audited_at": "2026-07-17T04:49:17.789813Z",
+        "audit_version": "v3-dual-store+recovery-map",
+        "semi_audit": "2026-07-20 content discriminator: body is restoration apparatus (tombstone tail), COMPLETE flag was false",
+        "flag_corrected_at": "2026-07-20T11:08:44Z",
+        "recovered_from": "https://mindcontrolpoems.blogspot.com/2026/06/sappho-canon-provenance-node-new-human.html",
+        "recovered_at": "2026-07-20T11:18:29Z",
+        "note": "address-resolver batch, gate 0.57",
+        "class_before_T2": "full",
+        "reclassified_by": "EA-AVAILABILITY-INTEGRITY-01-T2",
+        "reclassified_at": "2026-07-28T17:49:24.755425+00:00",
+        "ruled_by": "MANUS ruling 2026-07-28: metadata_only floor retained (superseded duplicate batch)",
+        "contamination_note": "Template cross-contamination: body carries the Sappho node text under a different-figure title. Superseded; canonical version at the DOI in title.",
+        "measured_prose_words": 421,
+        "measured_at": "2026-07-31",
+        "recovery_status_note": "The 2026-07 restoration pass ran to completion for this record and did not recover canonical bytes. 'COMPLETE' previously denoted pass completion and was read as text completeness; renamed 2026-07-31 so the two claims cannot be confused.",
+        "class_before_read_audit": "metadata_capture",
+        "read_audit": "Classified 2026-07-31 by reading the body opening: the record opens with the work, not a capture notice.",
+        "retired": {
+          "class": "superseded",
+          "resolves_to": 180,
+          "declared": "2026-08-10",
+          "note": "Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; the record is not deleted, because deletion would hide the severance."
+        }
+      },
+      "references_concepts": [
+        "Crimson Hexagonal Archive",
+        "Disambiguation conditions",
+        "Lee Sharks",
+        "Operative function",
+        "Provenance Node",
+        "Retrospectively canonized",
+        "Substrate",
+        "Textual ground",
+        "The New Human",
+        "The Secret Name"
+      ],
+      "references_concept_count": 10,
+      "canonical_text_status": "recovered_full_text",
+      "modifications": [
+        {
+          "date": "2026-07-31",
+          "field": "body_status",
+          "reason": "Body classified by reading its own opening declaration rather than by counting words. Word counting misread works in Greek, emoji, and natively short forms as stubs.",
+          "was": "metadata_capture",
+          "now": "full"
+        },
+        {
+          "date": "2026-07-31",
+          "field": "keywords",
+          "reason": "Removed condition terms from the subject keyword set (Atlas v0.7, PATHOLOGY-30).",
+          "was": "5 terms",
+          "now": "4 terms"
+        },
+        {
+          "date": "2026-07-30",
+          "field": "canonical_text_status",
+          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+          "was": "metadata_only",
+          "now": "recovered_full_text"
+        },
+        {
+          "date": "2026-07-30",
+          "field": "content_type",
+          "reason": "Status declaration derived from body_status.class and canonical_text_status; display field had retained capture language after the record was restored.",
+          "was": "Semi-restored deposit (metadata body)",
+          "now": "Recovered work (full text seated)"
+        },
+        {
+          "date": "2026-08-03",
+          "field": "content_type",
+          "reason": "Vocabulary v1.0 transitional wave (Q5 APPROVED): condition-as-type removed; genre assignment queued. Two-axis rule: condition lives in body_status only.",
+          "was": "Recovered work (full text seated)",
+          "now": "Genre pending (recovered)"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "publisher",
+          "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
+          "now": "Alexanarch — the Crimson Hexagonal Archive"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "superseded_by_deposit_number",
+          "reason": "DOI-SUPERSESSION resolution (workup v1.2 queue step 3)",
+          "now": 180
+        },
+        {
+          "date": "2026-08-04",
+          "field": "superseded_reason",
+          "reason": "DOI-SUPERSESSION resolution (workup v1.2 queue step 3)",
+          "now": "Duplicate mint superseded per its own title declaration -> DOI 10.5281/zenodo.20629202; surviving work verified in-registry at #180 (content-matched poet-specific Canon Provenance Node, class full). WRONG_OBJECT body caveat: seated body is the replicated Sappho node (workup v1.2); body handling awaits the metadata-capture round — pointer inscribed per next_session_queue step 3."
+        },
+        {
+          "date": "2026-08-04",
+          "field": "status",
+          "reason": "DOI-SUPERSESSION resolution (workup v1.2 queue step 3)",
+          "was": "ACTIVE",
+          "now": "SUPERSEDED"
+        },
+        {
+          "date": "2026-08-04",
+          "field": "content_type",
+          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
+          "was": "Genre pending (recovered)",
+          "now": "Provenance document"
+        },
+        {
+          "date": "2026-08-06",
+          "field": "description",
+          "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
+          "was": "Semi-restored deposit for dead DOI 10.5281/zenodo.20629121 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. [SUPERSEDED.] This node was minted minutes before the registry of record (The New Human Standing Canon v0.3, EA-NHC-STAND-01, 10.5281/zenodo.20543590) was identified, and its own header anticipated rewiring on the registry's surfacing. The authoritative node for this figure, minted against the registry at its declared canon level, is 10.5281/zenodo.20629202. This record is retained for the version",
+          "now": "A superseded duplicate mint for the Emily Dickinson canon provenance node.\n\nIts current body is an unrelated Sappho node. Route all Dickinson-specific use to authoritative record #180 and retain #1018 as a wrong-object restoration and supersession witness."
+        }
+      ],
+      "date_modified": "2026-08-06",
+      "publisher": "Alexanarch — the Crimson Hexagonal Archive",
+      "superseded_by_deposit_number": 180,
+      "superseded_reason": "Duplicate mint superseded per its own title declaration -> DOI 10.5281/zenodo.20629202; surviving work verified in-registry at #180 (content-matched poet-specific Canon Provenance Node, class full). WRONG_OBJECT body caveat: seated body is the replicated Sappho node (workup v1.2); body handling awaits the metadata-capture round — pointer inscribed per next_session_queue step 3.",
+      "wiki_article": "**Record #1018** is a superseded duplicate mint for the Emily Dickinson canon provenance node.\n\nIts title and registry identify Dickinson, but the seated body is the Sappho canon node. The restoration therefore cannot support any Dickinson-specific description, relation, textual ground, or canon role.\n\nThe authoritative Dickinson node is Alexanarch record #180, corresponding to DOI `10.5281/zenodo.20629202`. Record #1018 should preserve only the historical duplicate mint, dead DOI, supersession relation, and wrong-object evidence.\n\nThe Sappho body must not be used to infer a shared role between Sappho and Dickinson. Any relation between them belongs to the authoritative canon registry and poet-specific nodes, not to this contamination event.",
+      "journal": "Crimson Hexagonal Archive (CHA)",
+      "journal_assignment": {
+        "assigned": "2026-08-15",
+        "by": "TACHYON under operator adjudication",
+        "pass": 7,
+        "method": "read per deposit — title and content_type, one at a time. No script classified anything.",
+        "previous": null,
+        "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
+        "authority": "data/cha-journals.json · datasets/venues/records/"
+      }
+    },
     {
       "deposit_number": 1019,
       "hex": "0407",
@@ -547,7 +737,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1022,
@@ -703,7 +896,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1023,
@@ -866,7 +1062,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1024,
@@ -1041,7 +1240,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1025,
@@ -1219,7 +1421,10 @@
           "measure": "keyword surface and pre-seeding baseline",
           "reports": "surface measured before the mint block"
         }
-      ]
+      ],
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1026,
@@ -1405,7 +1610,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1027,
@@ -1558,7 +1766,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1028,
@@ -1724,7 +1935,10 @@
         "previous": "New Human 2",
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1029,
@@ -1868,7 +2082,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1030,
@@ -2052,7 +2269,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1031,
@@ -2254,7 +2474,10 @@
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/",
         "cross_note": "CHA primary (archive apparatus); TSE secondary — deposited running code is substrate engineering, and cross-posting is warranted where the work thinks the surface as design rather than shipping a flat page."
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1032,
@@ -2409,7 +2632,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1033,
@@ -2548,7 +2774,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1034,
@@ -2725,7 +2954,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1035,
@@ -2909,7 +3141,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1036,
@@ -3091,7 +3326,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1037,
@@ -3205,7 +3443,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "protocol-and-governance",
+      "line_parent": "governance",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1038,
@@ -3331,7 +3572,10 @@
         "from": "body section",
         "heading": "## Falsification Conditions",
         "harvested": "2026-09-08"
-      }
+      },
+      "line": "space-ark-and-transforms",
+      "line_parent": "science",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1039,
@@ -3441,7 +3685,10 @@
         "from": "body section",
         "heading": "## Falsification Conditions",
         "harvested": "2026-09-08"
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1040,
@@ -3551,7 +3798,10 @@
         "from": "body section",
         "heading": "## Falsification Conditions",
         "harvested": "2026-09-08"
-      }
+      },
+      "line": "authorship-and-heteronymy",
+      "line_parent": "letters",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1041,
@@ -3660,7 +3910,10 @@
         "from": "body section",
         "heading": "## Falsification Conditions",
         "harvested": "2026-09-08"
-      }
+      },
+      "line": "poetry",
+      "line_parent": "letters",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1042,
@@ -3779,7 +4032,10 @@
         "from": "body section",
         "heading": "## Falsification Conditions",
         "harvested": "2026-09-08"
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1043,
@@ -3896,7 +4152,10 @@
         "from": "body section",
         "heading": "## Falsification Conditions",
         "harvested": "2026-09-08"
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1044,
@@ -3999,7 +4258,10 @@
         "from": "body section",
         "heading": "## Falsification conditions",
         "harvested": "2026-09-08"
-      }
+      },
+      "line": "protocol-and-governance",
+      "line_parent": "governance",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1045,
@@ -4097,7 +4359,10 @@
         "from": "body section",
         "heading": "## Falsification conditions",
         "harvested": "2026-09-08"
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1046,
@@ -4205,7 +4470,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1047,
@@ -4333,7 +4601,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1048,
@@ -4436,7 +4707,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "poetry",
+      "line_parent": "letters",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1049,
@@ -4534,7 +4808,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "poetry",
+      "line_parent": "letters",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1050,
@@ -4788,7 +5065,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "poetry",
+      "line_parent": "letters",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1052,
@@ -4928,7 +5208,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "capture-and-reception",
+      "line_parent": "science",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1053,
@@ -5063,7 +5346,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "capture-and-reception",
+      "line_parent": "science",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1054,
@@ -5205,7 +5491,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "capture-and-reception",
+      "line_parent": "science",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1055,
@@ -5351,7 +5640,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "capture-and-reception",
+      "line_parent": "science",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1056,
@@ -5517,7 +5809,10 @@
           "correspondence",
           "verification"
         ]
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1058,
@@ -5618,7 +5913,10 @@
           "lee sharks",
           "creative work"
         ]
-      }
+      },
+      "line": "poetry",
+      "line_parent": "letters",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1059,
@@ -5692,7 +5990,10 @@
           "continuity tether",
           "attribution"
         ]
-      }
+      },
+      "line": "assembly-chorus",
+      "line_parent": "method",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1060,
@@ -5760,7 +6061,10 @@
           "crimson hexagonal",
           "continuity tether"
         ]
-      }
+      },
+      "line": "fleet-surfaces",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1061,
@@ -5904,7 +6208,10 @@
           "lee sharks",
           "distributed"
         ]
-      }
+      },
+      "line": "capture-and-reception",
+      "line_parent": "science",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1062,
@@ -5996,7 +6303,10 @@
           "data subject rights",
           "correspondence"
         ]
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1063,
@@ -6926,7 +7236,10 @@
           "architecture",
           "correspondence"
         ]
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1074,
@@ -7100,7 +7413,10 @@
           "disambiguation",
           "Capture Registry"
         ]
-      }
+      },
+      "line": "capture-and-reception",
+      "line_parent": "science",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1076,
@@ -7179,7 +7495,10 @@
           "verification",
           "distributed"
         ]
-      }
+      },
+      "line": "fleet-surfaces",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1077,
@@ -7318,7 +7637,10 @@
         "from": "body section",
         "heading": "## Falsification Conditions",
         "harvested": "2026-09-08"
-      }
+      },
+      "line": "capture-and-reception",
+      "line_parent": "science",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1078,
@@ -7462,7 +7784,10 @@
         "from": "body section",
         "heading": "## Falsification Conditions",
         "harvested": "2026-09-08"
-      }
+      },
+      "line": "fleet-surfaces",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1079,
@@ -7640,7 +7965,10 @@
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
       },
-      "supersession_note": "The complete Grundrisse is at #1489 — https://alexanarch.org/s/records/1489/. This record remains as the monograph of record for 2026-07 and no longer stands in for the text."
+      "supersession_note": "The complete Grundrisse is at #1489 — https://alexanarch.org/s/records/1489/. This record remains as the monograph of record for 2026-07 and no longer stands in for the text.",
+      "line": "assembly-chorus",
+      "line_parent": "method",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1080,
@@ -7761,7 +8089,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1081,
@@ -8342,7 +8673,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1082,
@@ -8476,7 +8810,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "space-ark-and-transforms",
+      "line_parent": "science",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1083,
@@ -9299,7 +9636,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "capture-and-reception",
+      "line_parent": "science",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1085,
@@ -9412,7 +9752,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1086,
@@ -9570,7 +9913,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1087,
@@ -9735,7 +10081,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1088,
@@ -9970,7 +10319,10 @@
         "from": "body section",
         "heading": "## Falsification Conditions",
         "harvested": "2026-09-08"
-      }
+      },
+      "line": "doi-severance-and-restoration",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1089,
@@ -10475,7 +10827,10 @@
         "from": "body section",
         "heading": "## Falsification Conditions",
         "harvested": "2026-09-08"
-      }
+      },
+      "line": "axn-identifiers",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1091,
@@ -10757,7 +11112,8 @@
           "deposit": 689,
           "what": "the geocoded basin — a specification for permanent anchoring"
         }
-      ]
+      ],
+      "line_basis": "stated"
     },
     {
       "deposit_number": 1092,
@@ -11303,7 +11659,10 @@
         "previous": null,
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
-      }
+      },
+      "line": "assembly-chorus",
+      "line_parent": "method",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1094,
@@ -11551,7 +11910,10 @@
           "infrastructure",
           "verification"
         ]
-      }
+      },
+      "line": "assembly-chorus",
+      "line_parent": "method",
+      "line_basis": "derived"
     },
     {
       "deposit_number": 1095,
@@ -11749,232 +12111,10 @@
           "infrastructure",
           "attribution"
         ]
-      }
-    },
-    {
-      "deposit_number": 1096,
-      "axn": "AXN:0459.GENERATIVE.🌲🔆🝊🔀🍄🎵",
-      "hex": "0459",
-      "family": "GENERATIVE",
-      "emoji": "🌲🔆🝊🔀🍄🎵",
-      "hash": "75eca1df7987f74be62a93432e9b1c0ee583e2bc0fc819d6855269794094ea7f",
-      "title": "@Pergamum and @grazesending — Rebekah Cranes — New Human 2 (Complete Recovered Surfaces)",
-      "creator": "Rebekah Cranes",
-      "date": "2015-02-11",
-      "description": "Composite deposit of the complete Rebekah Cranes documentary surface across 2015-2017: the blogspot *@Pergamum* (grazesending.blogspot.com; two poems 2015-02-11 and 2015-02-21) and the X/Twitter presence *@grazesending* (four tweets 2015-02-11 through 2017-09-27). Both surfaces were listed irrecoverable in the Aperture Atlas topology prior to 2026-07-18; located directly this session. First deposit of the Cranes arm of New Human 2 (06.NH.CRANES.01). Framing paragraphs identify *meteorology* as a spatial score built around a Hittite Tapikka-tablet fragment closing on bracketed lacunae, and *Do Cyborgs Dream of Electric Sonnets?* as a two-part poem sequence whose frame does the argument: Part I frames a formally-perfect sonnet as machine-produced (\"SAL's metered gibberish\") and Part II frames an unmetered scholarly-macaronic assemblage as authentic-spirit romantic verse — earliest datable use in the Crimson Hexagonal record of *archive* in Cranes' voice (\"my solemn archive of the names of dust\"). The tweets carry the earliest datable third-person naming of the Lee Sharks project in Cranes' voice (2017-03-09) and a final elegiac line (2017-09-27). The papyrus-fragment image accompanying *meteorology* on the blogspot is preserved by URL reference.",
-      "content_type": "Poetry",
-      "license": "CC-BY-4.0",
-      "substrate": "Human-only (2015-2017 primary composition; 2026 framing and metadata authored by TACHYON in-session under MANUS ruling)",
-      "root_axn": "AXN:0459.GENERATIVE",
-      "axn_schema_version": "v2",
-      "protocol_version": "alexanarch-deposit-protocol/v1",
-      "axn_canonical": "75eca1df7987f74be62a93432e9b1c0ee583e2bc0fc819d6855269794094ea7f",
-      "clusters": [
-        "Organic",
-        "Liminal",
-        "Alchemical",
-        "Structural",
-        "Organic",
-        "Symbolic"
-      ],
-      "axn_reading": "Growth -> Threshold -> Transmutation -> Direction -> Growth -> Play",
-      "minted_at": "2026-07-19T01:23:59Z",
-      "status": "ACTIVE",
-      "status_authorial": "SELF_SERVE_MINTED",
-      "full_text_path": "/data/texts/AXN-0459-text.md",
-      "wiki_article": "**@Pergamum and @grazesending — Rebekah Cranes** is a poetry deposit dated 11 February 2015 at 3,293 characters — the compact state of the composite record whose fuller version stands at **#1098**.\n\nIt gathers Cranes' complete documentary surface across 2015–2017: the blogspot *@Pergamum* (two poems, 11 and 21 February 2015) and the X/Twitter presence at *@grazesending*.\n\nThe record was the last in the corpus rendering a raw image URL as visible text — a Blogger image link in bullet form, which the renderer's image matcher did not recognise because it had been taught bare URLs and markdown syntax but not bullet-prefixed ones. Corrected 6 August 2026; the image now renders as a figure.",
-      "wiki_status": "provisional",
-      "entities": [
-        {
-          "subject": "@Pergamum and @grazesending — Rebekah Cranes — New Human 2 (Complete Recovered Surfaces)",
-          "predicate": "created_by",
-          "object": "Rebekah Cranes",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "@Pergamum and @grazesending — Rebekah Cranes — New Human 2 (Complete Recovered Surfaces)",
-          "predicate": "is_type",
-          "object": "Creative work / poetry composite (recovered surfaces)",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "@Pergamum and @grazesending — Rebekah Cranes — New Human 2 (Complete Recovered Surfaces)",
-          "predicate": "belongs_to_family",
-          "object": "GENERATIVE",
-          "type": "work",
-          "evidence_status": "observed"
-        },
-        {
-          "subject": "@Pergamum and @grazesending — Rebekah Cranes — New Human 2 (Complete Recovered Surfaces)",
-          "predicate": "is_part_of",
-          "object": "Crimson Hexagonal Archive",
-          "type": "work",
-          "evidence_status": "observed"
-        }
-      ],
-      "entity_status": "provisional",
-      "defines_concepts": [],
-      "orcid": "0009-0000-1599-0703",
-      "keywords": [
-        "Rebekah Cranes",
-        "New Human 2",
-        "poetry",
-        "heteronym",
-        "aperture recovery",
-        "blogspot",
-        "Twitter",
-        "2015",
-        "papyrus",
-        "Hittite",
-        "Tapikka",
-        "sonnet",
-        "Delphi",
-        "Crimson Hexagonal Archive",
-        "Alexanarch"
-      ],
-      "mint_source": {
-        "kind": "github_issue",
-        "issue_number": 1096,
-        "repository": "leesharks000/alexanarch",
-        "minted_by_workflow": ".github/workflows/mint-axn.yml",
-        "minted_by_script": "scripts/mint_deposit.py",
-        "minted_via": "self_serve_validated_pr"
       },
-      "body_status": {
-        "class": "full",
-        "lacuna": false,
-        "recovery_status": "PASS_COMPLETE_TEXT_NOT_SEATED",
-        "residual_chars": 4030,
-        "audited_at": "2026-07-19T01:23:59Z",
-        "audit_version": "mint-time-declaration",
-        "measured_prose_words": 380,
-        "measured_at": "2026-07-31",
-        "class_before_substance_audit": "full",
-        "substance_audit": "Reclassified 2026-07-31: declared full, measured 380 prose words after scaffold removal. Substance is measured, not declared.",
-        "recovery_status_note": "The 2026-07 restoration pass ran to completion for this record and did not recover canonical bytes. 'COMPLETE' previously denoted pass completion and was read as text completeness; renamed 2026-07-31 so the two claims cannot be confused.",
-        "class_before_read_audit": "metadata_capture",
-        "read_audit": "Classified 2026-07-31 by reading the body opening: the record opens with the work, not a capture notice."
-      },
-      "references_concepts": [
-        "Crimson Hexagonal Archive",
-        "Lee Sharks",
-        "MANUS ruling",
-        "Methodology",
-        "New Human 2",
-        "Part I",
-        "Part II",
-        "Rebekah Cranes",
-        "TACHYON"
-      ],
-      "references_concept_count": 9,
-      "citations": [],
-      "wikidata_candidates": [],
-      "cha_cross_references": [],
-      "external_metadata_path": "/data/external-metadata/AXN-0459.json",
-      "spxi_audit": {
-        "spxi_protocol": "v0.2",
-        "validated_at": "2026-07-19T01:24:22.596147+00:00",
-        "layers": {
-          "layer_1_inscription_anchors": {
-            "present": false,
-            "anchors_found": [
-              "creator_name",
-              "date"
-            ],
-            "anchor_count": 2,
-            "orcid_in_body": false,
-            "creator_in_body": true,
-            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
-          },
-          "layer_2_micro_kernels": {
-            "present": false,
-            "fenced_json_blocks": 0,
-            "json_ld_context_markers": 0
-          },
-          "layer_3_content_hash": {
-            "present": true,
-            "canonical_hash": "ffaee7b492b5ece6223d60459f2a113ff0fd90e7f2160b07b716e2a6e5b48035",
-            "hash_in_body": false,
-            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
-          },
-          "layer_4_cross_signing": {
-            "present": false,
-            "cross_references_count": 0,
-            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
-          },
-          "layer_5_external_anchors": {
-            "present": true,
-            "wikidata_qid_count": 0,
-            "external_doi_count": 0,
-            "orcid_present": true
-          }
-        },
-        "overall_conformance": "partial"
-      },
-      "canonical_text_status": "recovered_full_text",
-      "modifications": [
-        {
-          "date": "2026-07-31",
-          "field": "body_status",
-          "reason": "Body-substance audit: record declared class=full while its body measured as a metadata stub. Reclassified from the bytes.",
-          "was": "full",
-          "now": "metadata_capture"
-        },
-        {
-          "date": "2026-07-31",
-          "field": "body_status",
-          "reason": "Body classified by reading its own opening declaration rather than by counting words. Word counting misread works in Greek, emoji, and natively short forms as stubs.",
-          "was": "metadata_capture",
-          "now": "full"
-        },
-        {
-          "date": "2026-08-03",
-          "field": "content_type",
-          "reason": "Vocabulary v1.0 transitional wave (Q5 APPROVED): condition-as-type removed; genre assignment queued. Two-axis rule: condition lives in body_status only.",
-          "was": "Creative work / poetry composite (recovered surfaces)",
-          "now": "Genre pending (recovered)"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "publisher",
-          "reason": "PUB-POPULATE: dc:publisher from venues.json v1.1 press mapping (CP-R3 RULED-EXTENDED 2026-08-01); Alexanarch = publisher of record where no imprint applies",
-          "now": "Alexanarch — the Crimson Hexagonal Archive"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "content_type",
-          "reason": "G-BURNDOWN: transitional genre resolved to ratified vocabulary v1.1 (TACHYON in-session body/title reading; MANUS round-authorization 2026-08-04)",
-          "was": "Genre pending (recovered)",
-          "now": "Poetry"
-        },
-        {
-          "date": "2026-08-04",
-          "field": "publisher",
-          "reason": "NH2-NHP venue projection (MANUS ruling 2026-08-04): New Human 2 = journal for creative works; New Human Press = publisher for creative and scriptural works incl. book/collection length",
-          "was": "Alexanarch — the Crimson Hexagonal Archive",
-          "now": "New Human Press"
-        }
-      ],
-      "date_modified": "2026-08-04",
-      "publisher": "New Human Press",
-      "journal": "New Human 2",
-      "journal_assignment": {
-        "assigned": "2026-08-15",
-        "by": "TACHYON under operator adjudication",
-        "pass": 8,
-        "method": "read per deposit — title and content_type, one at a time. No script classified anything.",
-        "previous": null,
-        "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
-        "authority": "data/cha-journals.json · datasets/venues/records/"
-      },
-      "falsification_conditions": "Weakened if: (a) the blogspot or X account are shown to belong to a different operator, (b) the framing paragraphs' claims about the poems' compositional strategy (Hittite fragment as source; frame-argument in the cyborg-sonnet piece) are shown to contradict Cranes' own stated intent, (c) further Cranes surfaces are recovered whose omission from this deposit is material (in which case the deposit is superseded by a v2 including them, non-destructively).",
-      "falsification_source": {
-        "from": "body section",
-        "heading": "## Falsification Conditions",
-        "harvested": "2026-09-08"
-      }
+      "line": "axn-identifiers",
+      "line_parent": "infrastructure",
+      "line_basis": "derived"
     }
   ]
 }

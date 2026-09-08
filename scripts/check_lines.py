@@ -22,6 +22,12 @@ for x in deps:
         fail.append(f"#{n}: line '{ln}' is not declared in registry.lines")
     if x.get('line_parent') and not ln:
         fail.append(f"#{n}: has line_parent but no line")
+    if ln and x.get('line_basis') not in ('derived', 'stated', None):
+        fail.append(f"#{n}: line_basis '{x.get('line_basis')}' is not 'derived' or 'stated'")
+    # A curated line carries ordered edges; a derived membership does not, and must not
+    # pretend to. Derived records may not carry developmental edges.
+    if x.get('line_basis') == 'derived' and (x.get('develops_from') or x.get('developed_by')):
+        fail.append(f"#{n}: line_basis 'derived' but carries a developmental edge — order is authored, not derived")
     for fld, inv in (('develops_from', 'developed_by'), ('developed_by', 'develops_from')):
         for e in (x.get(fld) or []):
             t = e.get('deposit')
