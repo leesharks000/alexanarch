@@ -191,6 +191,8 @@ def reception():
 
 def sources():
     rows = []
+    # data/withheld/ is never projected — see data/withheld/README.md. Withholding is
+    # an authorial act; the files stay in the repository and out of every surface.
     for d in ('atlwm', 'recovered-sources'):
         for p in sorted((ROOT/'data/attachments'/d).glob('*.md')):
             t = p.read_text(encoding='utf-8', errors='replace')
