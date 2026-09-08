@@ -14,6 +14,16 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ vars.HF_REPO != '' }}
     steps:
+      # DEBOUNCE (2026-09-08). concurrency.cancel-in-progress above means a newer push
+      # kills this job; waiting here first turns a burst of merges into ONE build, at the
+      # end of the burst. Every build re-commits changed parquet, and every changed parquet
+      # invalidates that config's full-text index on the datasets-server — measured at over
+      # an hour of HTTP 500 from /search after a push. Eleven deposits in a day were eleven
+      # rebuilds; with this they are one. Skipped for manual dispatch, where the operator
+      # is waiting for the result.
+      - name: Debounce — let a burst of deposits settle
+        if: ${{ github.event_name == 'push' }}
+        run: sleep 900
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: '3.12' }
