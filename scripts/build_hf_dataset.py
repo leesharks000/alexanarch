@@ -351,7 +351,12 @@ def main():
     for name, df in frames.items():
         if df is None or df.empty: print(f"  {name}: empty, skipped"); continue
         df = df.astype({c: 'string' for c in df.columns if df[c].dtype == object})
-        df.to_parquet(out/f"{name}.parquet", index=False)
+        # Deterministic output, so that a config whose data did not change produces the
+        # same bytes and push_hf_dataset.py can leave it alone — which leaves its
+        # datasets-server full-text index standing (2026-09-08).
+        df.to_parquet(out/f"{name}.parquet", index=False, engine='pyarrow',
+                      compression='zstd', compression_level=3, row_group_size=5000,
+                      version='2.6', write_statistics=False, store_schema=False)
         # The viewer shows the FIRST config unless one is marked default. Left to itself the
         # Hub sorts alphabetically and lands on blog_posts — 2,939 rows of 2014–15 posts with
         # mostly-null axn — which a reader reasonably takes for the whole dataset (measured
