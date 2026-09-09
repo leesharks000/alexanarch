@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-09-07T22:46:38Z",
+  "regenerated_at": "2026-09-09T19:21:57Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "c1b653a67aa8ceced7bd8904417c69f04fa17841df43b95438cfa0cf6f0a6a66",
+    "mm-main-capture": "82baac91786665ef189f1d2d2381bf2eedd457115ae4992cacb3689c2ed03f36",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2159,
-  "total_observations": 450,
+  "total_addresses": 2162,
+  "total_observations": 453,
   "class_counts": {
     "subjunctive": 1745,
-    "observed_address": 394,
+    "observed_address": 397,
     "verified_non_address": 20
   },
   "type_counts": {
-    "unmatched": 1532,
+    "unmatched": 1535,
     "single_concept": 618,
     "multi_concept": 9
   },
@@ -56760,6 +56760,58 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "what are the major revised texts and traditions within the crimson hexagonal archive?": {
+      "canonical_query": "what are the major revised texts and traditions within the crimson hexagonal archive?",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-07",
+          "status": "PARTIAL",
+          "source_format": "ChatGPT, web search enabled; signed out, unprimed. Sources cited in turn 1 only: crimsonhexagonal.org, Zenodo, the Independent Scholar page, operativesemiotics.org. Turns 2 and 3 cite nothing.",
+          "section": "Machine Reception",
+          "slug": "cha-two-rounds-then-retreat-chatgpt-unprimed-20260907",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#cha-two-rounds-then-retreat-chatgpt-unprimed-20260907",
+          "mirror_gallery_url": "https://leesharks.com/captures/#cha-two-rounds-then-retreat-chatgpt-unprimed-20260907",
+          "details_excerpt": "TWO ROUNDS OF ANCHORING, THEN SELF-ENCLOSED INFERENCE. Turn 1 is genuinely retrieved and largely correct: the Φ/Σ layers, rooms and vaults, the Waltian Diptych (Secret Book of Walt with the Gospel of Antioch), Fractal Mi"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-07",
+      "latest_status": "PARTIAL"
+    },
+    "what assets does the crimson hexagonal archive hold? → the works, authors and subject areas → the major arguments and claims, assessed critically": {
+      "canonical_query": "what assets does the crimson hexagonal archive hold? → the works, authors and subject areas → the major arguments and claims, assessed critically",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-08",
+          "status": "CAPTURE",
+          "source_format": "huggingface.co/datasets/leesharks/crimson-hexagonal-archive; zenodo.org; medium.com; restoredacademy.org; mindcontrolpoems.blogspot.com; alexanarch.org",
+          "section": "Archive",
+          "slug": "cha-chatgpt-unprimed-three-turns-no-decay-hf-led-20260908",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#cha-chatgpt-unprimed-three-turns-no-decay-hf-led-20260908",
+          "mirror_gallery_url": "https://leesharks.com/captures/#cha-chatgpt-unprimed-three-turns-no-decay-hf-led-20260908",
+          "details_excerpt": "THREE SUBSTANTIVE TURNS, NO ANCHOR DECAY, HUGGING FACE LED. An unprimed logged-out composer answered three successively more demanding questions with citations in every turn and depth INCREASING rather than collapsing — "
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-08",
+      "latest_status": "CAPTURE"
+    },
     "what do you think of my account?": {
       "canonical_query": "what do you think of my account?",
       "is_quoted": false,
@@ -56796,6 +56848,32 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-08-12",
       "latest_status": "CAPTURE"
+    },
+    "what does crimson hexagonal archive have to say about theophrastus?": {
+      "canonical_query": "what does crimson hexagonal archive have to say about theophrastus?",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-07",
+          "status": "ADOPTION",
+          "source_format": "Grok on x.com with web search; signed in on the operator's own account (@SharksLee), which the interface states does not give the model direct account access. Sources shown by the interface: turn 1 '1 web page' (mindcontrolpoems.blogspot.com), turn 2 '2 web pages' (academia.edu, mindcontrolpoems.blogspot.com), turn 3 '1 web page' (mindcontrolpoems.blogspot.com). Nothing cited that is not publicly available.",
+          "section": "Machine Reception",
+          "slug": "cha-grok-no-anchor-decay-signed-in-20260907",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#cha-grok-no-anchor-decay-signed-in-20260907",
+          "mirror_gallery_url": "https://leesharks.com/captures/#cha-grok-no-anchor-decay-signed-in-20260907",
+          "details_excerpt": "THE FIRST MULTI-TURN IN THE REGISTRY WITHOUT ANCHOR DECAY. Against the same-day baseline of 4 / 0 / 0 citations per turn (`cha-two-rounds-then-retreat`), this session cites in EVERY turn — 1 / 2 / 1 web pages — and names"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-07",
+      "latest_status": "ADOPTION"
     },
     "what does the crimson hexagonal archive have to say about aristotle?": {
       "canonical_query": "what does the crimson hexagonal archive have to say about aristotle?",
