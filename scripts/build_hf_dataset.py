@@ -197,6 +197,12 @@ def deposits():
     df['series_previous'] = df['deposit_number'].map(lambda n: prev.get(n))
     df['series_next'] = df['deposit_number'].map(lambda n: nxt.get(n))
     df['supersedes'] = df['deposit_number'].map(lambda n: json.dumps(sorted(supersedes.get(n, ()))))
+    # Named historical entities the deposit deals with, from data/named-entities.json.
+    # Both directions are carried: the ids here, and the deposit numbers in the
+    # `entities` config, so a reader can traverse either way (2026-09-09).
+    _ent = [_entities_for(d) for d in reg]
+    df['entities'] = [json.dumps(e) for e in _ent]
+    df['entity_count'] = [len(e) for e in _ent]
     df['axn_uri'] = df['hex'].map(lambda h: f"https://alexanarch.org/s/axn/{h}/" if h else None)
     df['text_uri'] = df['deposit_number'].map(lambda n: next((f"https://alexanarch.org{d.get('full_text_path')}" for d in reg if d['deposit_number']==n and d.get('full_text_path')), None))
     df['doi_legacy'] = [ (d.get('doi') or d.get('zenodo_doi') or d.get('legacy_doi')) for d in reg ]
@@ -205,6 +211,60 @@ def deposits():
     if not ja.empty and 'deposit' in ja.columns:
         df = df.merge(ja[['deposit','journal']].rename(columns={'deposit':'deposit_number','journal':'venue'}), on='deposit_number', how='left')
     return df
+
+_ENTS = None
+
+def _entities_registry():
+    """data/named-entities.json — the curated register of named historical PERSONS the
+    archive's works deal with. Distinct from data/entity-index.json, which registers
+    concepts. Detection is by the explicit pattern each entity carries; nothing is
+    inferred and nothing is written back to the registry.
+
+    PATTERNS ARE NARROW ON PURPOSE (2026-09-09). A first pass used bare stems and
+    reported Simplicius present in the archive; the match was on "simplicity", and
+    "Nicolaus" matched Kierkegaard's pseudonym Nicolaus Notabene rather than Nicolaus
+    of Damascus. Both now correctly return zero. A registered entity with no deposits
+    is an honest statement that the archive holds no work dealing with it; widening a
+    pattern to raise a count would make the register a worse instrument than none."""
+    global _ENTS
+    if _ENTS is None:
+        f = ROOT/'data/named-entities.json'
+        _ENTS = json.load(open(f, encoding='utf-8'))['entities'] if f.exists() else []
+        for e in _ENTS:
+            e['_rx'] = re.compile(e['pattern'], re.I)
+    return _ENTS
+
+def _entities_for(d):
+    """Which registered persons a deposit deals with. Searches the fields a reader sees:
+    title, description, keywords, wiki_article. Returns ids, sorted."""
+    blob = ' '.join(str(d.get(k) or '') for k in ('title', 'description', 'wiki_article')) \
+           + ' ' + ' '.join(d.get('keywords') or [])
+    return sorted(e['id'] for e in _entities_registry() if e['_rx'].search(blob))
+
+def entities():
+    """One row per named historical entity, with the deposits that deal with it.
+
+    This config exists so that the relation is traversable in BOTH directions: from a
+    deposit, `entities` gives the ids; from here, `deposits` gives the numbers back.
+    A reader who arrives at one Sappho deposit can reach the other hundred and
+    twenty-one without knowing they exist, which is the same failure the partiality
+    statement addresses for lines (2026-09-09).
+    """
+    reg = [d for d in json.load(open(ROOT/'data/registry.json', encoding='utf-8'))['deposits']
+           if (d.get('status') or 'ACTIVE') == 'ACTIVE']
+    rows = []
+    for e in _entities_registry():
+        dep = sorted(d['deposit_number'] for d in reg if e['id'] in _entities_for(d))
+        rows.append({
+            'entity_id': e['id'], 'name': e['name'], 'kind': e.get('kind'),
+            'floruit': e.get('floruit'), 'wikidata': e.get('wikidata'),
+            'wikidata_uri': f"https://www.wikidata.org/wiki/{e['wikidata']}" if e.get('wikidata') else None,
+            'note': e.get('note'), 'match_pattern': e['pattern'],
+            'deposit_count': len(dep),
+            'deposits': json.dumps(dep),
+            'deposit_uris': json.dumps([f"https://alexanarch.org/s/records/{n}/" for n in dep[:50]]),
+        })
+    return pd.DataFrame(sorted(rows, key=lambda r: -r['deposit_count']))
 
 def captures():
     p = ROOT/'data/EA-WG-CAPTURES-01.json'   # the Capture Registry, current head
@@ -376,7 +436,7 @@ Two paths that never have this problem, both served by the archive itself: `http
 
 **What this is.** The Crimson Hexagonal Archive (alexanarch.org) is a self-governing scholarly and literary corpus by Lee Sharks and the twelve heteronyms of the Dodecad: {n_dep} deposits as of this build, each with a content-derived persistent identifier (AXN), a canonical text, a substrate disclosure, a license, and a place in a supersession chain. This dataset is a second, executable representation of that corpus: one row per record, full text as a string column, and every inter-record relation encoded as data keyed by stable identifiers, so that an agent can reconstruct a record, what it cites, what cites it, and its series neighbours from the dataset alone, without traversing the archive's web surfaces. It is rebuilt automatically from the archive's single source of truth (`data/` in `leesharks000/alexanarch`) on every new deposit.
 
-**What a row means.** In `deposits`, a row is one deposit: `deposit_number` (integer, permanent, the archive's primary key), `axn` (the content-derived identifier, of the form `AXN:<hex>.<FAMILY>.<six glyphs>`; the sha256 of the canonical text is the record), `hex` (the four-digit position used in URIs), `title`, `creator` (the orthonym or heteronym as attributed), `date`, `family` (GENERATIVE, EMPIRICAL, GOVERNANCE, ARCHIVAL, UNCLASSIFIED), `content_type`, `description` (the abstract), `keywords`, `license`, `substrate_disclosure` (whether and how a language model participated in making the text), `status` (ACTIVE, SUPERSEDED, WITHDRAWN, …), `wiki_article` (a machine-written encyclopedia entry authored in session), `venue` (the archive's own journal the deposit belongs to), `text` (the canonical text, verbatim), `text_sha256`, `text_words`. Each row also carries a **partiality statement**, derived at build time and prepended to `text`: `line_journal` / `line_journal_count`, `line_keyword` / `line_keyword_count` (the two most-shared keyword neighbourhoods), `line_series` / `line_series_count`, `archive_active_count`, and `partiality` — the rendered sentence. It states what the record is one of, and where the rest are. It is not a claim about the record's content; it is a statement that the record is a part, added because a reader who receives one record without indication of what surrounds it will treat it as the whole surface. `text_sha256` remains the hash of the canonical bytes, so the notice never enters the record's identity; the unmodified text is always at the `record_url` and at `alexanarch.org/api/`.
+**What a row means.** In `deposits`, a row is one deposit: `deposit_number` (integer, permanent, the archive's primary key), `axn` (the content-derived identifier, of the form `AXN:<hex>.<FAMILY>.<six glyphs>`; the sha256 of the canonical text is the record), `hex` (the four-digit position used in URIs), `title`, `creator` (the orthonym or heteronym as attributed), `date`, `family` (GENERATIVE, EMPIRICAL, GOVERNANCE, ARCHIVAL, UNCLASSIFIED), `content_type`, `description` (the abstract), `keywords`, `license`, `substrate_disclosure` (whether and how a language model participated in making the text), `status` (ACTIVE, SUPERSEDED, WITHDRAWN, …), `wiki_article` (a machine-written encyclopedia entry authored in session), `venue` (the archive's own journal the deposit belongs to), `text` (the canonical text, verbatim), `text_sha256`, `text_words`. Each row also carries a **partiality statement**, derived at build time and prepended to `text`: `line_journal` / `line_journal_count`, `line_keyword` / `line_keyword_count` (the two most-shared keyword neighbourhoods), `line_series` / `line_series_count`, `archive_active_count`, and `partiality` — the rendered sentence. It states what the record is one of, and where the rest are. It is not a claim about the record's content; it is a statement that the record is a part, added because a reader who receives one record without indication of what surrounds it will treat it as the whole surface. Each row also carries `entities` — the named historical persons the deposit deals with, as ids into the `entities` config — and `entity_count`. In `entities`, a row is one such person: `entity_id`, `name`, `kind`, `floruit`, `wikidata` and `wikidata_uri`, the `match_pattern` by which deposits were found, `deposit_count`, and `deposits` (the numbers) with `deposit_uris`. **The relation is traversable in both directions**: from a deposit to the persons it treats, and from a person to every deposit that treats them — so that a reader who arrives at one of the hundred and thirty-three Sappho deposits can reach the rest without knowing they exist. Patterns are narrow and are not widened to raise counts; an entity at zero is a statement that the archive holds no work dealing with it yet. `text_sha256` remains the hash of the canonical bytes, so the notice never enters the record's identity; the unmodified text is always at the `record_url` and at `alexanarch.org/api/`.
 
 **What a record says it does not settle.** `falsification_conditions` and `methodology` are the protocol's own required fields. Until 2026-09-08 the pipeline extracted them from every deposit and dropped them; they are now captured at mint, gated, and recovered where they survive — 270 records carry them, and the full set with resolutions is the `predictions` config. A record that states its own limits is legible to a reader deciding whether the passage settles the question, and cannot be flattened by a paraphrase that omits the limit.
 
@@ -394,7 +454,7 @@ Two paths that never have this problem, both served by the archive itself: `http
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--out', default='hf-dataset'); ap.add_argument('--fleet', default=os.environ.get('FLEET_DIR'))
     a = ap.parse_args(); out = ROOT/a.out; out.mkdir(exist_ok=True)
-    frames = {'deposits': deposits(), 'sources': sources(), 'heteronyms': heteronyms(), 'venues': venues(), 'journal_assignments': journal_assignments(), 'reception': reception(), 'captures': captures(), 'citations': citations(), 'lexicon': lexicon(), 'predictions': predictions(), 'studies': studies(), 'tombstones': tombstones(), 'blog_posts': blog_posts()}
+    frames = {'deposits': deposits(), 'sources': sources(), 'heteronyms': heteronyms(), 'venues': venues(), 'journal_assignments': journal_assignments(), 'reception': reception(), 'captures': captures(), 'citations': citations(), 'entities': entities(), 'lexicon': lexicon(), 'predictions': predictions(), 'studies': studies(), 'tombstones': tombstones(), 'blog_posts': blog_posts()}
     if a.fleet: frames['sites'] = sites(a.fleet)
     cfg = []
     for name, df in frames.items():

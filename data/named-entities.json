@@ -1,0 +1,207 @@
+{
+  "version": "1.0",
+  "seat": "EA-ENTITIES-01",
+  "purpose": "Named historical entities the archive's works deal with, curated so that deposit->entity and entity->deposit are both traversable in the Hugging Face projection. This is a REGISTRY OF PERSONS, distinct from data/entity-index.json, which registers concepts and terms.",
+  "method": "Each entity carries an explicit match pattern. Detection runs over title, description, keywords and wiki_article of ACTIVE deposits at build time; nothing is written back to the registry. Patterns are deliberately narrow: a deposit is tagged only where the name or its Greek form appears, not where a topic merely implies it.",
+  "rule": "An entity is listed here when the archive holds work that deals with it, not when the name occurs in passing. Add patterns; do not widen existing ones to raise counts.",
+  "entities": [
+    {
+      "id": "sappho",
+      "name": "Sappho",
+      "kind": "poet",
+      "floruit": "c. 630–570 BC",
+      "pattern": "\\bSappho\\b|\\bSapphic\\b|Σαπφ",
+      "wikidata": "Q17892",
+      "note": "The future-reader thesis and the anticipatory errata both work on her."
+    },
+    {
+      "id": "catullus",
+      "name": "Catullus",
+      "kind": "poet",
+      "floruit": "c. 84–54 BC",
+      "pattern": "\\bCatullus\\b|\\bCatullan\\b",
+      "wikidata": "Q83155",
+      "note": "Paired with Sappho 31 throughout; the contact case."
+    },
+    {
+      "id": "plato",
+      "name": "Plato",
+      "kind": "philosopher",
+      "floruit": "c. 428–348 BC",
+      "pattern": "\\bPlato\\b|\\bPlatonic\\b|\\bPlatonist\\b|Πλάτων",
+      "wikidata": "Q859"
+    },
+    {
+      "id": "socrates",
+      "name": "Socrates",
+      "kind": "philosopher",
+      "floruit": "c. 470–399 BC",
+      "pattern": "\\bSocrat(es|ic)\\b|Σωκράτ",
+      "wikidata": "Q913"
+    },
+    {
+      "id": "aristotle",
+      "name": "Aristotle",
+      "kind": "philosopher",
+      "floruit": "384–322 BC",
+      "pattern": "\\bAristotl(e|es)\\b|\\bAristotelian\\b|Ἀριστοτέλ",
+      "wikidata": "Q868"
+    },
+    {
+      "id": "theophrastus",
+      "name": "Theophrastus",
+      "kind": "philosopher",
+      "floruit": "c. 371–287 BC",
+      "pattern": "\\bTheophrast(us|an|ean)\\b|Θεόφραστ",
+      "wikidata": "Q170396"
+    },
+    {
+      "id": "homer",
+      "name": "Homer",
+      "kind": "poet",
+      "floruit": "c. 8th c. BC",
+      "pattern": "\\bHomer\\b|\\bHomeric\\b|Ὅμηρ",
+      "wikidata": "Q6691"
+    },
+    {
+      "id": "zenodotus",
+      "name": "Zenodotus",
+      "kind": "scholar",
+      "floruit": "c. 325–270 BC",
+      "pattern": "\\bZenodot(us|ean)\\b|Ζηνόδοτ",
+      "wikidata": "Q311744",
+      "note": "First librarian at Alexandria; the archive's editorial patron."
+    },
+    {
+      "id": "eudoxus",
+      "name": "Eudoxus of Cnidus",
+      "kind": "astronomer",
+      "floruit": "c. 390–337 BC",
+      "pattern": "\\bEudox(us|an)\\b|Εὔδοξ",
+      "wikidata": "Q184500"
+    },
+    {
+      "id": "callippus",
+      "name": "Callippus",
+      "kind": "astronomer",
+      "floruit": "c. 370–300 BC",
+      "pattern": "\\bCallipp(us|an)\\b|Κάλλιππ",
+      "wikidata": "Q712433"
+    },
+    {
+      "id": "diogenes-laertius",
+      "name": "Diogenes Laertius",
+      "kind": "biographer",
+      "floruit": "3rd c. AD",
+      "pattern": "Diogenes La[eë]rtius",
+      "wikidata": "Q170772"
+    },
+    {
+      "id": "hermippus",
+      "name": "Hermippus of Smyrna",
+      "kind": "biographer",
+      "floruit": "c. 200 BC",
+      "pattern": "\\bHermipp(us|ean)\\b",
+      "wikidata": "Q1611533"
+    },
+    {
+      "id": "andronicus",
+      "name": "Andronicus of Rhodes",
+      "kind": "editor",
+      "floruit": "c. 60 BC",
+      "pattern": "\\bAndronic(us|an)\\b",
+      "wikidata": "Q347014"
+    },
+    {
+      "id": "nicolaus-of-damascus",
+      "name": "Nicolaus of Damascus",
+      "kind": "philosopher",
+      "floruit": "b. 64 BC",
+      "pattern": "Nicolaus of Damascus",
+      "wikidata": "Q311781"
+    },
+    {
+      "id": "simplicius",
+      "name": "Simplicius of Cilicia",
+      "kind": "commentator",
+      "floruit": "c. 490–560 AD",
+      "pattern": "\\bSimplici(us|an)\\b",
+      "wikidata": "Q318834"
+    },
+    {
+      "id": "marx",
+      "name": "Karl Marx",
+      "kind": "philosopher",
+      "floruit": "1818–1883",
+      "pattern": "\\bMarx\\b|\\bMarxi(st|an|sm)\\b",
+      "wikidata": "Q9061"
+    },
+    {
+      "id": "hegel",
+      "name": "G. W. F. Hegel",
+      "kind": "philosopher",
+      "floruit": "1770–1831",
+      "pattern": "\\bHegel(ian)?\\b",
+      "wikidata": "Q9235"
+    },
+    {
+      "id": "kant",
+      "name": "Immanuel Kant",
+      "kind": "philosopher",
+      "floruit": "1724–1804",
+      "pattern": "\\bKant(ian)?\\b",
+      "wikidata": "Q9312"
+    },
+    {
+      "id": "whitman",
+      "name": "Walt Whitman",
+      "kind": "poet",
+      "floruit": "1819–1892",
+      "pattern": "\\bWhitman\\b|\\bWaltian\\b",
+      "wikidata": "Q81438"
+    },
+    {
+      "id": "dickinson",
+      "name": "Emily Dickinson",
+      "kind": "poet",
+      "floruit": "1830–1886",
+      "pattern": "\\bDickinson\\b",
+      "wikidata": "Q4441"
+    },
+    {
+      "id": "blake",
+      "name": "William Blake",
+      "kind": "poet",
+      "floruit": "1757–1827",
+      "pattern": "\\bBlake\\b",
+      "wikidata": "Q41513"
+    },
+    {
+      "id": "pessoa",
+      "name": "Fernando Pessoa",
+      "kind": "poet",
+      "floruit": "1888–1935",
+      "pattern": "\\bPessoa\\b|\\bPessoan\\b",
+      "wikidata": "Q7343",
+      "note": "The heteronymic lineage the Dodecad works in."
+    },
+    {
+      "id": "borges",
+      "name": "Jorge Luis Borges",
+      "kind": "writer",
+      "floruit": "1899–1986",
+      "pattern": "\\bBorges\\b|\\bBorgesian\\b",
+      "wikidata": "Q909",
+      "note": "The Crimson Hexagon is his."
+    },
+    {
+      "id": "afroman",
+      "name": "Afroman",
+      "kind": "musician",
+      "floruit": "b. 1974",
+      "pattern": "\\bAfroman\\b",
+      "wikidata": "Q368077"
+    }
+  ],
+  "zero_count_note": "An entity with no deposits is registered because the archive expects to hold work dealing with it, and states plainly that it does not yet. Simplicius and Nicolaus of Damascus are both at zero as of 2026-09-09: a looser first pass reported them present, matching 'simplicity' and Kierkegaard's pseudonym Nicolaus Notabene respectively. Patterns are not widened to raise counts."
+}
