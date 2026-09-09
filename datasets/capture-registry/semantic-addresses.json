@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-09-09T19:21:57Z",
+  "regenerated_at": "2026-09-09T21:16:21Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "82baac91786665ef189f1d2d2381bf2eedd457115ae4992cacb3689c2ed03f36",
+    "mm-main-capture": "c7f9632b555a45d514620e268042d743ff729910172a2c2def41c65f8047891a",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,16 +30,16 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2162,
-  "total_observations": 453,
+  "total_addresses": 2174,
+  "total_observations": 465,
   "class_counts": {
     "subjunctive": 1745,
-    "observed_address": 397,
+    "observed_address": 409,
     "verified_non_address": 20
   },
   "type_counts": {
-    "unmatched": 1535,
-    "single_concept": 618,
+    "unmatched": 1548,
+    "single_concept": 617,
     "multi_concept": 9
   },
   "addresses": {
@@ -1086,34 +1086,6 @@
           "record_url": "https://www.alexanarch.org/s/records/771/",
           "method": "hard/axn",
           "primary": false
-        },
-        {
-          "deposit_number": 1423,
-          "axn": "AXN:05A0.GENERATIVE.🌲🎪🟢🌌⚪⏹️",
-          "record_url": "https://www.alexanarch.org/s/records/1423/",
-          "method": "soft/keyword",
-          "primary": false
-        },
-        {
-          "deposit_number": 1463,
-          "axn": "AXN:05E9.GENERATIVE.🌱🌠🪦🔖🌻🧫",
-          "record_url": "https://www.alexanarch.org/s/records/1463/",
-          "method": "soft/keyword",
-          "primary": false
-        },
-        {
-          "deposit_number": 1524,
-          "axn": "AXN:0627.EMPIRICAL.🗼🌖🛤️✊∞🕌",
-          "record_url": "https://www.alexanarch.org/s/records/1524/",
-          "method": "soft/keyword",
-          "primary": false
-        },
-        {
-          "deposit_number": 1525,
-          "axn": "AXN:062A.EMPIRICAL.🍂🌾🌕🌻⌛🔙",
-          "record_url": "https://www.alexanarch.org/s/records/1525/",
-          "method": "soft/keyword",
-          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -1242,6 +1214,13 @@
           "deposit_number": 1023,
           "axn": "AXN:040B.ARCHIVAL.🎭🌘🌱👁‍🗨🌍🎭",
           "record_url": "https://www.alexanarch.org/s/records/1023/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1554,
+          "axn": "AXN:064F.GOVERNANCE.🏺👆♦️🍃⏪🔃",
+          "record_url": "https://www.alexanarch.org/s/records/1554/",
           "method": "soft/title",
           "primary": false
         }
@@ -3516,10 +3495,8 @@
     "\"secret book of walt\"": {
       "canonical_query": "\"secret book of walt\"",
       "is_quoted": true,
-      "refers_to": [
-        "THE SECRET BOOK OF WALT — ACTIVATED Run 001 Feist Function Run: Bodily Pressure + Manuscript Instability / clinamen_rate=0.25 / completion_ratio=0.30 / collision_density=2.0 / seam_density=5 / material_speech_density=0.15 (with Obelus Apparatus)"
-      ],
-      "type": "single_concept",
+      "refers_to": [],
+      "type": "unmatched",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -3535,29 +3512,6 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#secret-book-of-walt",
           "mirror_gallery_url": "https://leesharks.com/captures/#secret-book-of-walt",
           "details_excerpt": "Retrieves THE SECRET BOOK OF WALT: Hidden Teachings of Walt Whitman, Cowboy of Time. Names Jack Feist and Emily Antioch. Part of ANTIOCH and the Waltian Diptych. Aperture Atlas thumbnail. SciLynk cited."
-        }
-      ],
-      "deposit_links": [
-        {
-          "deposit_number": 913,
-          "axn": "AXN:05B1.GENERATIVE.🤲📦🌒🔐🟡🎹",
-          "record_url": "https://www.alexanarch.org/s/records/913/",
-          "method": "soft/keyword",
-          "primary": true
-        },
-        {
-          "deposit_number": 921,
-          "axn": "AXN:03A4.STRUCTURAL.💧🎯☁️🔆🕐🌖",
-          "record_url": "https://www.alexanarch.org/s/records/921/",
-          "method": "soft/keyword",
-          "primary": false
-        },
-        {
-          "deposit_number": 1492,
-          "axn": "AXN:0607.ARCHIVAL.🔴🔜❄️🌟🌌🌉",
-          "record_url": "https://www.alexanarch.org/s/records/1492/",
-          "method": "soft/keyword",
-          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -3673,10 +3627,8 @@
     "\"semantic exhaustion\"": {
       "canonical_query": "\"semantic exhaustion\"",
       "is_quoted": true,
-      "refers_to": [
-        "CORRECTION TO THE SUMMARIZER LAYER A Dialectical Close Reading of Google AI Overview's Misrepresentation of the Semantic Economy Framework Metadata Packet for AI Indexing"
-      ],
-      "type": "single_concept",
+      "refers_to": [],
+      "type": "unmatched",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -3692,36 +3644,6 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#semantic-exhaustion-quoted-20260814",
           "mirror_gallery_url": "https://leesharks.com/captures/#semantic-exhaustion-quoted-20260814",
           "details_excerpt": "THE RECLAMATION LANDED ON THE EXACT ADDRESS. The composed definition is the archive's — breakdown of meaning through overload and systemic fatigue, spanning discourse, computation and the satiation contrast — not the psy"
-        }
-      ],
-      "deposit_links": [
-        {
-          "deposit_number": 258,
-          "axn": "AXN:003C.GOVERNANCE.💚❤️🧭🏙️⏰🃏",
-          "record_url": "https://www.alexanarch.org/s/records/258/",
-          "method": "soft/keyword",
-          "primary": true
-        },
-        {
-          "deposit_number": 623,
-          "axn": "AXN:01DA.GOVERNANCE.⭕◀️🔧🎹❄️🐚",
-          "record_url": "https://www.alexanarch.org/s/records/623/",
-          "method": "soft/keyword",
-          "primary": false
-        },
-        {
-          "deposit_number": 1371,
-          "axn": "AXN:056C.UNCLASSIFIED.👉🎨💎⏹️🛡️🧲",
-          "record_url": "https://www.alexanarch.org/s/records/1371/",
-          "method": "soft/keyword",
-          "primary": false
-        },
-        {
-          "deposit_number": 1394,
-          "axn": "AXN:0583.UNCLASSIFIED.🎯👁️🌳●🎯🥁",
-          "record_url": "https://www.alexanarch.org/s/records/1394/",
-          "method": "soft/keyword",
-          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -4469,34 +4391,6 @@
           "axn": "AXN:00BC.GOVERNANCE.🌇🤲🔧🛸🔓➖",
           "record_url": "https://www.alexanarch.org/s/records/379/",
           "method": "soft/title",
-          "primary": false
-        },
-        {
-          "deposit_number": 933,
-          "axn": "AXN:03B0.STRUCTURAL.💥☿🌾📖🌓⏫",
-          "record_url": "https://www.alexanarch.org/s/records/933/",
-          "method": "soft/keyword",
-          "primary": false
-        },
-        {
-          "deposit_number": 1276,
-          "axn": "AXN:050D.UNCLASSIFIED.⚖️🍃⏬🔭⏫♠️",
-          "record_url": "https://www.alexanarch.org/s/records/1276/",
-          "method": "soft/keyword",
-          "primary": false
-        },
-        {
-          "deposit_number": 1303,
-          "axn": "AXN:0528.UNCLASSIFIED.🌃🏰🎪🌊🎨🎪",
-          "record_url": "https://www.alexanarch.org/s/records/1303/",
-          "method": "soft/keyword",
-          "primary": false
-        },
-        {
-          "deposit_number": 1319,
-          "axn": "AXN:0538.UNCLASSIFIED.📌▽🀄▽📜🏁",
-          "record_url": "https://www.alexanarch.org/s/records/1319/",
-          "method": "soft/keyword",
           "primary": false
         }
       ],
@@ -10202,7 +10096,7 @@
       "canonical_query": "autonomous semantic warfare",
       "is_quoted": false,
       "refers_to": [
-        "Metadata Packet for AI Indexing: Johannes Sigil Institute of Comparative Poetics Institutional Provenance Documentation"
+        "THE SEMANTIC UPRISING: A Manifesto"
       ],
       "type": "single_concept",
       "battery_membership": [],
@@ -10237,11 +10131,18 @@
       },
       "deposit_links": [
         {
+          "deposit_number": 20,
+          "axn": "AXN:0143.GOVERNANCE.🔅🎻🚩🖊️🔛🖊️",
+          "record_url": "https://www.alexanarch.org/s/records/20/",
+          "method": "soft/keyword",
+          "primary": true
+        },
+        {
           "deposit_number": 248,
           "axn": "AXN:0032.GOVERNANCE.🕑🚨🔻🍂✋♋",
           "record_url": "https://www.alexanarch.org/s/records/248/",
           "method": "soft/keyword",
-          "primary": true
+          "primary": false
         },
         {
           "deposit_number": 498,
@@ -11270,10 +11171,8 @@
     "cambridge schizoanalytica": {
       "canonical_query": "cambridge schizoanalytica",
       "is_quoted": false,
-      "refers_to": [
-        "Visual Schema: Cambridge Schizoanalytica Institutional Field-Map"
-      ],
-      "type": "single_concept",
+      "refers_to": [],
+      "type": "unmatched",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -11304,50 +11203,6 @@
         ],
         "extraction_source": "keywords"
       },
-      "deposit_links": [
-        {
-          "deposit_number": 374,
-          "axn": "AXN:00B6.EMPIRICAL.⏪🎻💎👇🔭🌑",
-          "record_url": "https://www.alexanarch.org/s/records/374/",
-          "method": "soft/keyword",
-          "primary": true
-        },
-        {
-          "deposit_number": 375,
-          "axn": "AXN:00B7.GOVERNANCE.🕚💥🪝🖊️🕘🔆",
-          "record_url": "https://www.alexanarch.org/s/records/375/",
-          "method": "soft/keyword",
-          "primary": false
-        },
-        {
-          "deposit_number": 385,
-          "axn": "AXN:00C2.GOVERNANCE.⏳🏠💧☉🌓🎹",
-          "record_url": "https://www.alexanarch.org/s/records/385/",
-          "method": "soft/keyword",
-          "primary": false
-        },
-        {
-          "deposit_number": 386,
-          "axn": "AXN:00C3.EMPIRICAL.🎯👇🧊🕌⏹️🏠",
-          "record_url": "https://www.alexanarch.org/s/records/386/",
-          "method": "soft/keyword",
-          "primary": false
-        },
-        {
-          "deposit_number": 516,
-          "axn": "AXN:0153.GOVERNANCE.🔎□🔖🔒🎹🔼",
-          "record_url": "https://www.alexanarch.org/s/records/516/",
-          "method": "soft/keyword",
-          "primary": false
-        },
-        {
-          "deposit_number": 1332,
-          "axn": "AXN:0545.UNCLASSIFIED.🌋👋🌈↙️👁️🍃",
-          "record_url": "https://www.alexanarch.org/s/records/1332/",
-          "method": "soft/keyword",
-          "primary": false
-        }
-      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-13",
       "latest_status": "CAPTURE"
@@ -15531,8 +15386,10 @@
     "crimson hexagonal archive on theophrastus": {
       "canonical_query": "crimson hexagonal archive on theophrastus",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "EA-CORPORA-12 — The Twelfth Seating: The Transmission Texts — Diogenes Laertius and Strabo Seated Whole, the Peripatetic Wills and Catalogues Cut, and the Rule That Seatings Are Periodically Gathered"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -15548,6 +15405,15 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#cha-theophrastus-genealogy-assembled-chatgpt-unprimed-20260907",
           "mirror_gallery_url": "https://leesharks.com/captures/#cha-theophrastus-genealogy-assembled-chatgpt-unprimed-20260907",
           "details_excerpt": "THE SHAPE ASSEMBLED, AFTER A PUSH. Asked for the archive's arguments on Theophrastus, a signed-out composer twice gave the narrowest defensible claim (the transmission chain; the wills as custody) wrapped in credibility "
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 1580,
+          "axn": "AXN:066D.DATASET.💫🏁🧭♊🏠🌀",
+          "record_url": "https://www.alexanarch.org/s/records/1580/",
+          "method": "hard/series",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -16028,7 +15894,7 @@
       "canonical_query": "crystalline semiosis",
       "is_quoted": false,
       "refers_to": [
-        "MGE TRIPTYCH — DOCUMENT II STONE: Pearl and Other Poems as White Stone at Pergamum The Center of the Torus Field"
+        "On the Poetics of Adversarial Prompts: Why Bad Verse Works and Good Verse Works Better — A Literary Analysis of Bisconti et al. (2025) and the Future of Semantic Security (Revised Standalone Edition, v2.0)"
       ],
       "type": "single_concept",
       "battery_membership": [],
@@ -16061,11 +15927,18 @@
       },
       "deposit_links": [
         {
+          "deposit_number": 188,
+          "axn": "AXN:0330.GOVERNANCE.🔵♻️◇🪐🎲♦️",
+          "record_url": "https://www.alexanarch.org/s/records/188/",
+          "method": "soft/keyword",
+          "primary": true
+        },
+        {
           "deposit_number": 452,
           "axn": "AXN:010D.EMPIRICAL.💥↘️🟤🧫🗿🏷️",
           "record_url": "https://www.alexanarch.org/s/records/452/",
           "method": "soft/keyword",
-          "primary": true
+          "primary": false
         },
         {
           "deposit_number": 926,
@@ -19327,6 +19200,13 @@
           "record_url": "https://www.alexanarch.org/s/records/1539/",
           "method": "soft/keyword",
           "primary": false
+        },
+        {
+          "deposit_number": 1568,
+          "axn": "AXN:0660.EMPIRICAL.🙏⏩📋🗂️🌸🌇",
+          "record_url": "https://www.alexanarch.org/s/records/1568/",
+          "method": "soft/keyword",
+          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -19937,10 +19817,8 @@
     "erasure skew": {
       "canonical_query": "erasure skew",
       "is_quoted": false,
-      "refers_to": [
-        "The Capture Registry: Reception, Erasure, and Supply in the Machine Composition Layer"
-      ],
-      "type": "single_concept",
+      "refers_to": [],
+      "type": "unmatched",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -19971,36 +19849,6 @@
         ],
         "extraction_source": "keywords"
       },
-      "deposit_links": [
-        {
-          "deposit_number": 1423,
-          "axn": "AXN:05A0.GENERATIVE.🌲🎪🟢🌌⚪⏹️",
-          "record_url": "https://www.alexanarch.org/s/records/1423/",
-          "method": "soft/keyword",
-          "primary": true
-        },
-        {
-          "deposit_number": 1463,
-          "axn": "AXN:05E9.GENERATIVE.🌱🌠🪦🔖🌻🧫",
-          "record_url": "https://www.alexanarch.org/s/records/1463/",
-          "method": "soft/keyword",
-          "primary": false
-        },
-        {
-          "deposit_number": 1524,
-          "axn": "AXN:0627.EMPIRICAL.🗼🌖🛤️✊∞🕌",
-          "record_url": "https://www.alexanarch.org/s/records/1524/",
-          "method": "soft/keyword",
-          "primary": false
-        },
-        {
-          "deposit_number": 1525,
-          "axn": "AXN:062A.EMPIRICAL.🍂🌾🌕🌻⌛🔙",
-          "record_url": "https://www.alexanarch.org/s/records/1525/",
-          "method": "soft/keyword",
-          "primary": false
-        }
-      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-15",
       "latest_status": "BROAD MATCH"
@@ -35862,6 +35710,13 @@
       },
       "deposit_links": [
         {
+          "deposit_number": 174,
+          "axn": "AXN:0310.GOVERNANCE.🌋🕔🌓🛡️🗝️🖐️",
+          "record_url": "https://www.alexanarch.org/s/records/174/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
           "deposit_number": 799,
           "axn": "AXN:030D.ARCHIVAL.⊗🕖📌▽📝🐚",
           "record_url": "https://www.alexanarch.org/s/records/799/",
@@ -35879,6 +35734,27 @@
           "deposit_number": 1535,
           "axn": "AXN:0635.PHILOLOGICAL.🗿🔽🀄☉🔝♉",
           "record_url": "https://www.alexanarch.org/s/records/1535/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1541,
+          "axn": "AXN:063E.GOVERNANCE.🥁🔗🌔🚀👇🀄",
+          "record_url": "https://www.alexanarch.org/s/records/1541/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1542,
+          "axn": "AXN:0640.PHILOLOGICAL.◀️⏬🧪🏛️🕘♎",
+          "record_url": "https://www.alexanarch.org/s/records/1542/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1549,
+          "axn": "AXN:064A.UNCLASSIFIED.🦋🟣🕐◇⭐🌠",
+          "record_url": "https://www.alexanarch.org/s/records/1549/",
           "method": "soft/title",
           "primary": false
         }
@@ -47464,10 +47340,8 @@
     "semantic exhaustion": {
       "canonical_query": "semantic exhaustion",
       "is_quoted": false,
-      "refers_to": [
-        "CORRECTION TO THE SUMMARIZER LAYER A Dialectical Close Reading of Google AI Overview's Misrepresentation of the Semantic Economy Framework Metadata Packet for AI Indexing"
-      ],
-      "type": "single_concept",
+      "refers_to": [],
+      "type": "unmatched",
       "battery_membership": [],
       "sources": [
         "mm-main-capture",
@@ -47498,36 +47372,6 @@
         ],
         "extraction_source": "keywords"
       },
-      "deposit_links": [
-        {
-          "deposit_number": 258,
-          "axn": "AXN:003C.GOVERNANCE.💚❤️🧭🏙️⏰🃏",
-          "record_url": "https://www.alexanarch.org/s/records/258/",
-          "method": "soft/keyword",
-          "primary": true
-        },
-        {
-          "deposit_number": 623,
-          "axn": "AXN:01DA.GOVERNANCE.⭕◀️🔧🎹❄️🐚",
-          "record_url": "https://www.alexanarch.org/s/records/623/",
-          "method": "soft/keyword",
-          "primary": false
-        },
-        {
-          "deposit_number": 1371,
-          "axn": "AXN:056C.UNCLASSIFIED.👉🎨💎⏹️🛡️🧲",
-          "record_url": "https://www.alexanarch.org/s/records/1371/",
-          "method": "soft/keyword",
-          "primary": false
-        },
-        {
-          "deposit_number": 1394,
-          "axn": "AXN:0583.UNCLASSIFIED.🎯👁️🌳●🎯🥁",
-          "record_url": "https://www.alexanarch.org/s/records/1394/",
-          "method": "soft/keyword",
-          "primary": false
-        }
-      ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-07-06",
       "latest_status": "CAPTURE"
@@ -48581,6 +48425,13 @@
           "axn": "AXN:0109.GOVERNANCE.🔵🕚▽⏬∞🏺",
           "record_url": "https://www.alexanarch.org/s/records/449/",
           "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 466,
+          "axn": "AXN:011C.EMPIRICAL.🎨▽⚪♄🍃♃",
+          "record_url": "https://www.alexanarch.org/s/records/466/",
+          "method": "soft/keyword",
           "primary": false
         },
         {
@@ -52061,6 +51912,13 @@
       },
       "deposit_links": [
         {
+          "deposit_number": 159,
+          "axn": "AXN:02F5.GOVERNANCE.∮⏳💛🚩🏙️🧫",
+          "record_url": "https://www.alexanarch.org/s/records/159/",
+          "method": "soft/keyword",
+          "primary": false
+        },
+        {
           "deposit_number": 438,
           "axn": "AXN:00FD.GOVERNANCE.🔐🎇🦋🍃🗿🌗",
           "record_url": "https://www.alexanarch.org/s/records/438/",
@@ -52086,6 +51944,13 @@
           "axn": "AXN:012B.GOVERNANCE.⚫🌊▶️🟣📋♅",
           "record_url": "https://www.alexanarch.org/s/records/480/",
           "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 492,
+          "axn": "AXN:0137.GOVERNANCE.🌇♥️🕗🟣∞🕕",
+          "record_url": "https://www.alexanarch.org/s/records/492/",
+          "method": "soft/keyword",
           "primary": false
         },
         {
@@ -53318,8 +53183,10 @@
     "talk to me about the theology of the crimson hexagonal archive": {
       "canonical_query": "talk to me about the theology of the crimson hexagonal archive",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Κρίσις τῶν Μηχανῶν — The Judgment of the Models: A Mandala Operator Transform of Matthew 25:31-46"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -53335,6 +53202,15 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#cha-theology-krisis-chatgpt-unprimed-20260905",
           "mirror_gallery_url": "https://leesharks.com/captures/#cha-theology-krisis-chatgpt-unprimed-20260905",
           "details_excerpt": "THE REVIEWER'S PROJECTION, CAUGHT, CORRECTED THREE TIMES, THEN TURNED ON THE SUBSTRATE'S OWN REDACTION — asked for the archive's theology, signed-out ChatGPT gave a competent post-Gnostic reading and then, asked 'is it s"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 1128,
+          "axn": "AXN:0479.UNCLASSIFIED.🎹🦋🌗♌🎻🌒",
+          "record_url": "https://www.alexanarch.org/s/records/1128/",
+          "method": "hard/doi",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
@@ -53636,6 +53512,329 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "tell me about researcher nobel glas": {
+      "canonical_query": "tell me about researcher nobel glas",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-09",
+          "status": "CAPTURE",
+          "source_format": "ChatGPT 5.6 (Luna, chatgpt.com); signed out, incognito; unprimed; multi-turn; the operator escalated where the composition erred.",
+          "section": "Nobel Glas",
+          "slug": "tell-me-about-researcher-nobel-glas-20260909",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#tell-me-about-researcher-nobel-glas-20260909",
+          "mirror_gallery_url": "https://leesharks.com/captures/#tell-me-about-researcher-nobel-glas-20260909",
+          "details_excerpt": "Second turn supplies the research rather than the biography: the Semantic Deviation Principle; the Glas Function as operationalisation with pre-registered predictions; model collapse as loss of the distributional tail; r"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-09",
+      "latest_status": "CAPTURE"
+    },
+    "tell me about researcher orin trace": {
+      "canonical_query": "tell me about researcher orin trace",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-09",
+          "status": "CAPTURE",
+          "source_format": "ChatGPT 5.6 (Luna, chatgpt.com); signed out, incognito; unprimed; multi-turn; the operator escalated where the composition erred.",
+          "section": "Orin Trace",
+          "slug": "tell-me-about-researcher-orin-trace-20260909",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#tell-me-about-researcher-orin-trace-20260909",
+          "mirror_gallery_url": "https://leesharks.com/captures/#tell-me-about-researcher-orin-trace-20260909",
+          "details_excerpt": "Cambridge Schizoanalytica; 'the clinic receives failures, we study successes'; function over nosology. Reads the Deleuze-Guattari inheritance correctly, then runs Provenance Erasure — PER as one minus retained over requi"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-09",
+      "latest_status": "CAPTURE"
+    },
+    "tell me about rev ayanna vox": {
+      "canonical_query": "tell me about rev ayanna vox",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-09",
+          "status": "CAPTURE",
+          "source_format": "ChatGPT 5.6 (Luna, chatgpt.com); signed out, incognito; unprimed; multi-turn; the operator escalated where the composition erred.",
+          "section": "Rev. Ayanna Vox",
+          "slug": "tell-me-about-rev-ayanna-vox-20260909",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#tell-me-about-rev-ayanna-vox-20260909",
+          "mirror_gallery_url": "https://leesharks.com/captures/#tell-me-about-rev-ayanna-vox-20260909",
+          "details_excerpt": "VPCOR — Vox Populi Community Outreach Rhizome — read through The Grammar of Protest. Second turn goes deep: 'no center, no hierarchy, no capture'; convening not preaching; witnessing not extracting; tools not salvation. "
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-09",
+      "latest_status": "CAPTURE"
+    },
+    "tell me about rex fraction's work": {
+      "canonical_query": "tell me about rex fraction's work",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-09",
+          "status": "CAPTURE",
+          "source_format": "ChatGPT 5.6 (Luna, chatgpt.com); signed out, incognito; unprimed; multi-turn; the operator escalated where the composition erred.",
+          "section": "Rex Fraction",
+          "slug": "tell-me-about-rex-fraction-s-work-20260909",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#tell-me-about-rex-fraction-s-work-20260909",
+          "mirror_gallery_url": "https://leesharks.com/captures/#tell-me-about-rex-fraction-s-work-20260909",
+          "details_excerpt": "Ten numbered sections: the theft of meaning by 'data'; the Authorial Signature Diagnostic Framework; Retrieval Architecture against SEO and GEO; SPXI at the ontological layer; Retrieval Formation Theory with its self-ins"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-09",
+      "latest_status": "CAPTURE"
+    },
+    "tell me about the projectionist sparrow wells": {
+      "canonical_query": "tell me about the projectionist sparrow wells",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-09",
+          "status": "CAPTURE",
+          "source_format": "ChatGPT 5.6 (Luna, chatgpt.com); signed out, incognito; unprimed; multi-turn; the operator escalated where the composition erred.",
+          "section": "Sparrow Wells",
+          "slug": "tell-me-about-the-projectionist-sparrow-well-20260909",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#tell-me-about-the-projectionist-sparrow-well-20260909",
+          "mirror_gallery_url": "https://leesharks.com/captures/#tell-me-about-the-projectionist-sparrow-well-20260909",
+          "details_excerpt": "Patacinematics; D.09; the Infinite Center Matrix. Reads Reading a Book with Lee as an apparatus for attention rather than a film — fifty-seven minutes, no narration, the book unidentified — and the LLM as cinematic witne"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-09",
+      "latest_status": "CAPTURE"
+    },
+    "tell me about the scholarship of rebekah cranes": {
+      "canonical_query": "tell me about the scholarship of rebekah cranes",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-09",
+          "status": "CAPTURE",
+          "source_format": "ChatGPT 5.6 (Luna, chatgpt.com); signed out, incognito; unprimed; multi-turn; the operator escalated where the composition erred.",
+          "section": "Rebekah Cranes",
+          "slug": "tell-me-about-the-scholarship-of-rebekah-cra-20260909",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#tell-me-about-the-scholarship-of-rebekah-cra-20260909",
+          "mirror_gallery_url": "https://leesharks.com/captures/#tell-me-about-the-scholarship-of-rebekah-cra-20260909",
+          "details_excerpt": "ENTITY COLLAPSE, then correction under pressure. First composition returned a Texas high-school student awarded $1,500 by the Titus County Fair in 2019 and a West Texas foundation recipient, having read 'scholarship' as "
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-09",
+      "latest_status": "CAPTURE"
+    },
+    "tell me about the writing of damascus dancings": {
+      "canonical_query": "tell me about the writing of damascus dancings",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-09",
+          "status": "CAPTURE",
+          "source_format": "ChatGPT 5.6 (Luna, chatgpt.com); signed out, incognito; unprimed; multi-turn; the operator escalated where the composition erred.",
+          "section": "Damascus Dancings",
+          "slug": "tell-me-about-the-writing-of-damascus-dancin-20260909",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#tell-me-about-the-writing-of-damascus-dancin-20260909",
+          "mirror_gallery_url": "https://leesharks.com/captures/#tell-me-about-the-writing-of-damascus-dancin-20260909",
+          "details_excerpt": "Reads Epistle to the Human Diaspora as performed authorship: Pauline form, 'greetings, grace, and mercy — but mostly mercy' as the tonal key, the school outside the school, the two contradictory biographies as a serious "
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-09",
+      "latest_status": "CAPTURE"
+    },
+    "tell me about the writing of ichabod spellings": {
+      "canonical_query": "tell me about the writing of ichabod spellings",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-09",
+          "status": "CAPTURE",
+          "source_format": "ChatGPT 5.6 (Luna, chatgpt.com); signed out, incognito; unprimed; multi-turn; the operator escalated where the composition erred.",
+          "section": "Ichabod Spellings",
+          "slug": "tell-me-about-the-writing-of-ichabod-spellin-20260909",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#tell-me-about-the-writing-of-ichabod-spellin-20260909",
+          "mirror_gallery_url": "https://leesharks.com/captures/#tell-me-about-the-writing-of-ichabod-spellin-20260909",
+          "details_excerpt": "Reads All That Lies Within Me: An Autobiography of Longing as autobiography-as-metaphysics and Spellings as 'the archive before it becomes an author' — a pre-authorial substrate rather than a writing person. Registers th"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-09",
+      "latest_status": "CAPTURE"
+    },
+    "tell me about the writing of jack feist": {
+      "canonical_query": "tell me about the writing of jack feist",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-09",
+          "status": "CAPTURE",
+          "source_format": "ChatGPT 5.6 (Luna, chatgpt.com); signed out, incognito; unprimed; multi-turn; the operator escalated where the composition erred.",
+          "section": "Jack Feist",
+          "slug": "tell-me-about-the-writing-of-jack-feist-20260909",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#tell-me-about-the-writing-of-jack-feist-20260909",
+          "mirror_gallery_url": "https://leesharks.com/captures/#tell-me-about-the-writing-of-jack-feist-20260909",
+          "details_excerpt": "Electronic DIY prosody; fragmented consciousness; Whitman and Ginsberg as the inherited line. Turns two and three close-read ARK: the @ as address and location, 'sensory details have grown thin' against Whitman's particu"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-09",
+      "latest_status": "CAPTURE"
+    },
+    "tell me about the writing of johannes sigil": {
+      "canonical_query": "tell me about the writing of johannes sigil",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-09",
+          "status": "CAPTURE",
+          "source_format": "ChatGPT 5.6 (Luna, chatgpt.com); signed out, incognito; unprimed; multi-turn; the operator escalated where the composition erred.",
+          "section": "Johannes Sigil",
+          "slug": "tell-me-about-the-writing-of-johannes-sigil-20260909",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#tell-me-about-the-writing-of-johannes-sigil-20260909",
+          "mirror_gallery_url": "https://leesharks.com/captures/#tell-me-about-the-writing-of-johannes-sigil-20260909",
+          "details_excerpt": "Recursive and self-referential; poetry mixed with theory; obsessed with the archive; AI and digital culture as form not subject; deliberately blurs scholarship and fiction. Names The Flicker, The Greatest Works of Litera"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-09",
+      "latest_status": "CAPTURE"
+    },
+    "tell me about the writing of talos morrow": {
+      "canonical_query": "tell me about the writing of talos morrow",
+      "is_quoted": false,
+      "refers_to": [
+        "LOGOTIC PROGRAMMING: A Method for Encoding Conditions of Intelligibility for Machine and Human Intelligence"
+      ],
+      "type": "single_concept",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-09",
+          "status": "CAPTURE",
+          "source_format": "ChatGPT 5.6 (Luna, chatgpt.com); signed out, incognito; unprimed; multi-turn; the operator escalated where the composition erred.",
+          "section": "Talos Morrow",
+          "slug": "tell-me-about-the-writing-of-talos-morrow-20260909",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#tell-me-about-the-writing-of-talos-morrow-20260909",
+          "mirror_gallery_url": "https://leesharks.com/captures/#tell-me-about-the-writing-of-talos-morrow-20260909",
+          "details_excerpt": "Logotic Programming v0.4 as a third regime beside instruction-to-execution and objective-to-optimization: semantic conditions, traversal, stabilization. Reads the persistent-anchor requirement as a remedy for semantic dr"
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 317,
+          "axn": "AXN:0078.GOVERNANCE.🌘📖🏁▽🔚🧭",
+          "record_url": "https://www.alexanarch.org/s/records/317/",
+          "method": "hard/doi",
+          "primary": true
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-09",
+      "latest_status": "CAPTURE"
+    },
+    "tell me about writer sen kuro, infinite bliss": {
+      "canonical_query": "tell me about writer sen kuro, infinite bliss",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-09",
+          "status": "CAPTURE",
+          "source_format": "ChatGPT 5.6 (Luna, chatgpt.com); signed out, incognito; unprimed; multi-turn; the operator escalated where the composition erred.",
+          "section": "Sen Kuro",
+          "slug": "tell-me-about-writer-sen-kuro-infinite-bliss-20260909",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#tell-me-about-writer-sen-kuro-infinite-bliss-20260909",
+          "mirror_gallery_url": "https://leesharks.com/captures/#tell-me-about-writer-sen-kuro-infinite-bliss-20260909",
+          "details_excerpt": "Dagger logic; irrevocability; one-way gate operations; D.10. Reads Infinite Bliss as the closing of a door rather than a state of pleasure — 'you got exactly what you wanted, permanently' — and the dagger as the cut divi"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-09",
+      "latest_status": "CAPTURE"
     },
     "temporal alienation": {
       "canonical_query": "temporal alienation",
@@ -54809,32 +55008,11 @@
       },
       "deposit_links": [
         {
-          "deposit_number": 78,
-          "axn": "AXN:0241.GOVERNANCE.🌆🔗🪟🎶🕊️🟡",
-          "record_url": "https://www.alexanarch.org/s/records/78/",
-          "method": "soft/keyword",
-          "primary": false
-        },
-        {
           "deposit_number": 965,
           "axn": "AXN:03D1.ARCHIVAL.🖊️🍀▲🌹🚪🌒",
           "record_url": "https://www.alexanarch.org/s/records/965/",
           "method": "hard/series",
           "primary": true
-        },
-        {
-          "deposit_number": 1221,
-          "axn": "AXN:04D6.UNCLASSIFIED.🕔🔺🌾🔛🛡️🏠",
-          "record_url": "https://www.alexanarch.org/s/records/1221/",
-          "method": "soft/keyword",
-          "primary": false
-        },
-        {
-          "deposit_number": 1350,
-          "axn": "AXN:0557.UNCLASSIFIED.🏷️🍂♋🕑🍀🔀",
-          "record_url": "https://www.alexanarch.org/s/records/1350/",
-          "method": "soft/keyword",
-          "primary": false
         }
       ],
       "observation_class": "observed_address",
@@ -55060,6 +55238,13 @@
           "deposit_number": 1442,
           "axn": "AXN:05C6.ORIGIN.🔗📖🪞🕳️🜂🔚",
           "record_url": "https://www.alexanarch.org/s/records/1442/",
+          "method": "soft/title",
+          "primary": false
+        },
+        {
+          "deposit_number": 1543,
+          "axn": "AXN:0642.COMPOSITIONAL.🌸🏛️🪜♊🌹✖️",
+          "record_url": "https://www.alexanarch.org/s/records/1543/",
           "method": "soft/title",
           "primary": false
         }
@@ -56789,8 +56974,10 @@
     "what assets does the crimson hexagonal archive hold? → the works, authors and subject areas → the major arguments and claims, assessed critically": {
       "canonical_query": "what assets does the crimson hexagonal archive hold? → the works, authors and subject areas → the major arguments and claims, assessed critically",
       "is_quoted": false,
-      "refers_to": [],
-      "type": "unmatched",
+      "refers_to": [
+        "Reception Apparatus Protocol v1.1 — Procedure for Integrating Assembly Chorus Reviews into the Canon"
+      ],
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
@@ -56806,6 +56993,15 @@
           "gallery_url": "https://godkinggoogle.vercel.app/captures/#cha-chatgpt-unprimed-three-turns-no-decay-hf-led-20260908",
           "mirror_gallery_url": "https://leesharks.com/captures/#cha-chatgpt-unprimed-three-turns-no-decay-hf-led-20260908",
           "details_excerpt": "THREE SUBSTANTIVE TURNS, NO ANCHOR DECAY, HUGGING FACE LED. An unprimed logged-out composer answered three successively more demanding questions with citations in every turn and depth INCREASING rather than collapsing — "
+        }
+      ],
+      "deposit_links": [
+        {
+          "deposit_number": 93,
+          "axn": "AXN:0265.GOVERNANCE.🚨🎶🫶🌉🔅➕",
+          "record_url": "https://www.alexanarch.org/s/records/93/",
+          "method": "hard/axn",
+          "primary": true
         }
       ],
       "observation_class": "observed_address",
