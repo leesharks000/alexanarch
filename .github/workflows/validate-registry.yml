@@ -280,6 +280,9 @@ jobs:
 
       - name: Lines gate — developmental edges reciprocal, resolving, and backward in time
         run: python3 scripts/check_lines.py
+
+      - name: Authored wikis are on their record pages
+        run: python3 scripts/check_wiki_rendered.py
       - name: Browse sections agree with the registry (WS1 gate)
         run: python3 scripts/build_browse_sections.py --check
       - name: DOI shadow pages agree with the resolution index
