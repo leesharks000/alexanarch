@@ -3,25 +3,25 @@
   "name": "Capture ↔ Deposit Link Map",
   "description": "Edges between EA-WG-CAPTURES-01 (the AI Overview / AI Mode Capture Registry, authored at machinemediation.org) and the Alexanarch deposit corpus. Produced by scripts/resolve_capture_links.py. Each edge records the resolution method so any confidence tier can be discarded. An edge asserts that the capture entry references, or its query matches, the deposit — not that the deposit is the capture's sole subject; exactly one edge per capture is marked primary, ranked by evidence of aboutness rather than by identifier hardness (a DOI can be cited in passing). Deposit-number mentions are deliberately excluded as unsafe. Unresolved captures are enumerated rather than silently dropped.",
   "generated_by": "scripts/resolve_capture_links.py",
-  "generated_at": "2026-09-09T20:42:09Z",
+  "generated_at": "2026-09-09T21:16:21Z",
   "captures_source": {
     "file": "data/EA-WG-CAPTURES-01.json",
     "version": "11.7",
     "date": "2026-09-05",
     "total_captures": 394,
     "canonical_home": "https://www.machinemediation.org/data/registry.json",
-    "sha256": "5fbe6584fe41b1d02c2e696482a859e0f1aed7400a7d65edfb6bf68b56098151"
+    "sha256": "c7f9632b555a45d514620e268042d743ff729910172a2c2def41c65f8047891a"
   },
   "totals": {
     "captures": 394,
-    "captures_linked": 212,
-    "captures_unresolved": 182,
-    "link_rate": 0.5381,
-    "edges": 508
+    "captures_linked": 213,
+    "captures_unresolved": 181,
+    "link_rate": 0.5406,
+    "edges": 509
   },
   "method_counts": {
     "hard/axn": 56,
-    "hard/doi": 30,
+    "hard/doi": 31,
     "hard/series": 29,
     "soft/title": 215,
     "soft/keyword": 68,
@@ -29,12 +29,12 @@
     "soft/body": 82
   },
   "severance_rollup": {
-    "captures_on_severed_works": 125,
+    "captures_on_severed_works": 126,
     "captures_on_unsevered_works": 12,
     "captures_with_no_doi_record": 75,
     "status_counts": {
-      "RECOVERED": 59,
-      "410_GONE": 125,
+      "RECOVERED": 60,
+      "410_GONE": 126,
       "SEMI_RESTORED": 14,
       "ADDED 2026-08-20 — gap found by seating pass; resolver did not carry it": 1,
       "RECOVERED_UNLINKED": 54
@@ -9067,6 +9067,34 @@
         }
       ]
     },
+    "tell-me-about-the-writing-of-talos-morrow-20260909": {
+      "query": "tell me about the writing of Talos Morrow",
+      "date": "2026-09-09",
+      "section": "Talos Morrow",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 317,
+          "axn": "AXN:0078.GOVERNANCE.🌘📖🏁▽🔚🧭",
+          "title": "LOGOTIC PROGRAMMING: A Method for Encoding Conditions of Intelligibility for Machine and Human Intelligence",
+          "record_url": "https://www.alexanarch.org/s/records/317/",
+          "method": "hard/doi",
+          "evidence": "10.5281/zenodo.18286050",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.18286049",
+              "10.5281/zenodo.18286050",
+              "10.5281/zenodo.18317461"
+            ],
+            "statuses": [
+              "RECOVERED",
+              "410_GONE"
+            ]
+          }
+        }
+      ]
+    },
     "water-giraffe-cycle": {
       "query": "\"the water giraffe cycle\"",
       "date": "2026-06-13",
@@ -10418,11 +10446,6 @@
     {
       "slug": "tell-me-about-the-projectionist-sparrow-well-20260909",
       "q": "tell me about the projectionist sparrow wells",
-      "date": "2026-09-09"
-    },
-    {
-      "slug": "tell-me-about-the-writing-of-talos-morrow-20260909",
-      "q": "tell me about the writing of Talos Morrow",
       "date": "2026-09-09"
     },
     {
