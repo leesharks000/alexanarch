@@ -320,6 +320,26 @@ def graph_join():
     j = json.loads((ROOT/'datasets/pessoagraph/join.json').read_text(encoding='utf-8'))
     return pd.DataFrame(j['rows'])
 
+def frame_defs():
+    """datasets/frames/frames.json — the arrangements themselves.
+
+    An edge says A stands in relation R to B. A membership says A occupies position P inside
+    grouping G. A FRAME says that under arrangement F, the memberships take this configuration.
+    The archive needs the third because its own primary set has no single stable configuration:
+    'which figure stands outside the twelve rotates by frame.'"""
+    d = json.loads((ROOT/'datasets/frames/frames.json').read_text(encoding='utf-8'))
+    return pd.DataFrame(d['frames'])
+
+def memberships():
+    """One row per (node, frame): the slot, the role, and THE TOPOLOGY.
+
+    Topology is the field a scalar position cannot carry. Jack Feist is `inside-and-outside`
+    under frame:dodecad-v1.1 — position 12 AND outside the twelve as *LOGOS, both. The seven
+    Assembly Chorus mantles are `position-not-occupant`: the mantle is the office, not whoever
+    wears it, and the records say so in a field of that name."""
+    d = json.loads((ROOT/'datasets/frames/frames.json').read_text(encoding='utf-8'))
+    return pd.DataFrame(d['memberships'])
+
 def captures():
     p = ROOT/'data/EA-WG-CAPTURES-01.json'   # the Capture Registry, current head
     if not p.exists(): return pd.DataFrame()
@@ -508,7 +528,7 @@ Two paths that never have this problem, both served by the archive itself: `http
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--out', default='hf-dataset'); ap.add_argument('--fleet', default=os.environ.get('FLEET_DIR'))
     a = ap.parse_args(); out = ROOT/a.out; out.mkdir(exist_ok=True)
-    frames = {'deposits': deposits(), 'sources': sources(), 'heteronyms': heteronyms(), 'venues': venues(), 'journal_assignments': journal_assignments(), 'reception': reception(), 'captures': captures(), 'citations': citations(), 'entities': entities(), 'relations': relations(), 'nodes': nodes(), 'pessoagraph': pessoagraph(), 'graph_join': graph_join(), 'lexicon': lexicon(), 'predictions': predictions(), 'studies': studies(), 'tombstones': tombstones(), 'blog_posts': blog_posts()}
+    frames = {'deposits': deposits(), 'sources': sources(), 'heteronyms': heteronyms(), 'venues': venues(), 'journal_assignments': journal_assignments(), 'reception': reception(), 'captures': captures(), 'citations': citations(), 'entities': entities(), 'relations': relations(), 'nodes': nodes(), 'pessoagraph': pessoagraph(), 'graph_join': graph_join(), 'frames': frame_defs(), 'memberships': memberships(), 'lexicon': lexicon(), 'predictions': predictions(), 'studies': studies(), 'tombstones': tombstones(), 'blog_posts': blog_posts()}
     if a.fleet: frames['sites'] = sites(a.fleet)
     cfg = []
     for name, df in frames.items():

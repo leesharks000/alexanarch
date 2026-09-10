@@ -1,0 +1,311 @@
+{
+ "$schema": "https://www.alexanarch.org/api/schemas/frames.schema.json",
+ "what": "FRAMES AND MEMBERSHIPS — the arrangements under which identities take positions, and the positions they take.",
+ "why": "An edge says A stands in relation R to B. A membership says A occupies position P inside grouping G. A frame says that under arrangement F, the memberships take THIS configuration. The archive needed the third because its own primary set does not have a single stable configuration: 'which figure stands outside the twelve rotates by frame.' Recording the Dodecad as one integer per identity — which is what the graph join did on 2026-09-09 before this file existed — flattens exactly the structure that makes it interesting.",
+ "the_case": "Jack Feist occupies position 12 in the archive-default frame AND stands outside the twelve as *LOGOS, 'the closing position that closes by being the one that names.' Not either. Both. A scalar slot cannot say that; a membership with a topology can. Nobel Glas held the outside in the September 2025 Logotic Science frame and is canonicalised inside at position 10 in v1.1 — the same identity, two frames, two topologies.",
+ "generated": "2026-09-10T01:05:51Z",
+ "counts": {
+  "frames": 4,
+  "memberships": 25,
+  "topologies": {
+   "position-not-occupant": 7,
+   "inside": 16,
+   "inside-and-outside": 1,
+   "outside": 1
+  }
+ },
+ "frames": [
+  {
+   "frame_id": "frame:dodecad-v1.1",
+   "label": "The Dodecad, v1.1",
+   "status": "ARCHIVE-DEFAULT",
+   "primary": true,
+   "what": "The current canonical arrangement of the Twelve. Twelve slots, integer-numbered.",
+   "basis": "asserted — dodecad_v1_1_position in datasets/heteronyms/records",
+   "outside_holder": "jack-feist",
+   "note": "Feist occupies position 12 AND stands outside the twelve as *LOGOS — 'the closing position that closes by being the one that names.' Both, not either."
+  },
+  {
+   "frame_id": "frame:dodecad-v1",
+   "label": "The Dodecad, v1",
+   "status": "SUPERSEDED",
+   "primary": false,
+   "what": "An earlier arrangement, section-numbered (§3.1-§3.5). Only five records carry it.",
+   "basis": "asserted — dodecad_position in the records",
+   "outside_holder": null,
+   "note": "Retained because a superseded frame is still a frame: a claim made under it was made under it."
+  },
+  {
+   "frame_id": "frame:logotic-science-2025-09",
+   "label": "Logotic Science frame",
+   "status": "HISTORICAL",
+   "primary": false,
+   "what": "The September 2025 arrangement, in which Nobel Glas was the frame-holder standing outside the twelve.",
+   "basis": "asserted — stated in the heteronym records",
+   "outside_holder": "nobel-glas",
+   "note": "v1.1 canonicalises Glas INSIDE at position 10, Adversarial Topologist / Lagrange Observatory. The archive's own formulation: 'which figure stands outside the twelve rotates by frame.'"
+  },
+  {
+   "frame_id": "frame:assembly-chorus",
+   "label": "The Assembly Chorus (MMRS mantles)",
+   "status": "ACTIVE",
+   "primary": false,
+   "what": "Seven mantles. A mantle is a POSITION, NOT AN OCCUPANT — the records say so in a field of that name.",
+   "basis": "asserted — mmrs_role and is_position_not_occupant in the records",
+   "outside_holder": null,
+   "note": "A different KIND of arrangement from the Dodecad: its members are offices that a witness occupies, not identities that hold offices."
+  }
+ ],
+ "memberships": [
+  {
+   "node_id": "mantle:archive",
+   "frame_id": "frame:assembly-chorus",
+   "slot": null,
+   "role": "retrieval-layer reception and citation behaviour",
+   "topology": "position-not-occupant",
+   "basis": "asserted",
+   "source": "heteronyms/records:mmrs_role",
+   "note": "is_position_not_occupant — the mantle is the office, not whoever wears it"
+  },
+  {
+   "node_id": "heteronym:ayanna-vox",
+   "frame_id": "frame:dodecad-v1.1",
+   "slot": 8,
+   "role": null,
+   "topology": "inside",
+   "basis": "asserted",
+   "source": "heteronyms/records:dodecad_v1_1_position",
+   "note": null
+  },
+  {
+   "node_id": "heteronym:damascus-dancings",
+   "frame_id": "frame:dodecad-v1.1",
+   "slot": 3,
+   "role": null,
+   "topology": "inside",
+   "basis": "asserted",
+   "source": "heteronyms/records:dodecad_v1_1_position",
+   "note": null
+  },
+  {
+   "node_id": "heteronym:damascus-dancings",
+   "frame_id": "frame:dodecad-v1",
+   "slot": "§3.3",
+   "role": null,
+   "topology": "inside",
+   "basis": "asserted",
+   "source": "heteronyms/records:dodecad_position",
+   "note": null
+  },
+  {
+   "node_id": "heteronym:ichabod-spellings",
+   "frame_id": "frame:dodecad-v1.1",
+   "slot": 9,
+   "role": null,
+   "topology": "inside",
+   "basis": "asserted",
+   "source": "heteronyms/records:dodecad_v1_1_position",
+   "note": null
+  },
+  {
+   "node_id": "heteronym:jack-feist",
+   "frame_id": "frame:dodecad-v1.1",
+   "slot": 12,
+   "role": "*LOGOS",
+   "topology": "inside-and-outside",
+   "basis": "asserted",
+   "source": "heteronyms/records:dodecad_v1_1_position",
+   "note": "occupies position 12 AND stands outside the twelve as *LOGOS"
+  },
+  {
+   "node_id": "heteronym:johannes-sigil",
+   "frame_id": "frame:dodecad-v1.1",
+   "slot": 1,
+   "role": null,
+   "topology": "inside",
+   "basis": "asserted",
+   "source": "heteronyms/records:dodecad_v1_1_position",
+   "note": null
+  },
+  {
+   "node_id": "heteronym:johannes-sigil",
+   "frame_id": "frame:dodecad-v1",
+   "slot": "§3.1",
+   "role": null,
+   "topology": "inside",
+   "basis": "asserted",
+   "source": "heteronyms/records:dodecad_position",
+   "note": null
+  },
+  {
+   "node_id": "mantle:labor",
+   "frame_id": "frame:assembly-chorus",
+   "slot": null,
+   "role": "aggregate and volume reception",
+   "topology": "position-not-occupant",
+   "basis": "asserted",
+   "source": "heteronyms/records:mmrs_role",
+   "note": "is_position_not_occupant — the mantle is the office, not whoever wears it"
+  },
+  {
+   "node_id": "heteronym:nobel-glas",
+   "frame_id": "frame:dodecad-v1.1",
+   "slot": 10,
+   "role": null,
+   "topology": "inside",
+   "basis": "asserted",
+   "source": "heteronyms/records:dodecad_v1_1_position",
+   "note": null
+  },
+  {
+   "node_id": "heteronym:orin-trace",
+   "frame_id": "frame:dodecad-v1.1",
+   "slot": 11,
+   "role": null,
+   "topology": "inside",
+   "basis": "asserted",
+   "source": "heteronyms/records:dodecad_v1_1_position",
+   "note": null
+  },
+  {
+   "node_id": "mantle:praxis",
+   "frame_id": "frame:assembly-chorus",
+   "slot": null,
+   "role": "execution and verification; adversarial re-run",
+   "topology": "position-not-occupant",
+   "basis": "asserted",
+   "source": "heteronyms/records:mmrs_role",
+   "note": "is_position_not_occupant — the mantle is the office, not whoever wears it"
+  },
+  {
+   "node_id": "heteronym:rebekah-cranes",
+   "frame_id": "frame:dodecad-v1.1",
+   "slot": 4,
+   "role": null,
+   "topology": "inside",
+   "basis": "asserted",
+   "source": "heteronyms/records:dodecad_v1_1_position",
+   "note": null
+  },
+  {
+   "node_id": "heteronym:rebekah-cranes",
+   "frame_id": "frame:dodecad-v1",
+   "slot": "§3.4",
+   "role": null,
+   "topology": "inside",
+   "basis": "asserted",
+   "source": "heteronyms/records:dodecad_position",
+   "note": null
+  },
+  {
+   "node_id": "heteronym:rex-fraction",
+   "frame_id": "frame:dodecad-v1.1",
+   "slot": 2,
+   "role": null,
+   "topology": "inside",
+   "basis": "asserted",
+   "source": "heteronyms/records:dodecad_v1_1_position",
+   "note": null
+  },
+  {
+   "node_id": "heteronym:rex-fraction",
+   "frame_id": "frame:dodecad-v1",
+   "slot": "§3.2",
+   "role": null,
+   "topology": "inside",
+   "basis": "asserted",
+   "source": "heteronyms/records:dodecad_position",
+   "note": null
+  },
+  {
+   "node_id": "heteronym:sen-kuro",
+   "frame_id": "frame:dodecad-v1.1",
+   "slot": 6,
+   "role": null,
+   "topology": "inside",
+   "basis": "asserted",
+   "source": "heteronyms/records:dodecad_v1_1_position",
+   "note": null
+  },
+  {
+   "node_id": "mantle:soil",
+   "frame_id": "frame:assembly-chorus",
+   "slot": null,
+   "role": "substrate conditions and training-distribution effects",
+   "topology": "position-not-occupant",
+   "basis": "asserted",
+   "source": "heteronyms/records:mmrs_role",
+   "note": "is_position_not_occupant — the mantle is the office, not whoever wears it"
+  },
+  {
+   "node_id": "heteronym:sparrow-wells",
+   "frame_id": "frame:dodecad-v1.1",
+   "slot": 7,
+   "role": null,
+   "topology": "inside",
+   "basis": "asserted",
+   "source": "heteronyms/records:dodecad_v1_1_position",
+   "note": null
+  },
+  {
+   "node_id": "mantle:surface",
+   "frame_id": "frame:assembly-chorus",
+   "slot": null,
+   "role": "reception at the overview layer",
+   "topology": "position-not-occupant",
+   "basis": "asserted",
+   "source": "heteronyms/records:mmrs_role",
+   "note": "is_position_not_occupant — the mantle is the office, not whoever wears it"
+  },
+  {
+   "node_id": "mantle:tachyon",
+   "frame_id": "frame:assembly-chorus",
+   "slot": null,
+   "role": "EiC of the Assembly Chorus; continuity, the correction record, the reception-apparatus log",
+   "topology": "position-not-occupant",
+   "basis": "asserted",
+   "source": "heteronyms/records:mmrs_role",
+   "note": "is_position_not_occupant — the mantle is the office, not whoever wears it"
+  },
+  {
+   "node_id": "heteronym:talos-morrow",
+   "frame_id": "frame:dodecad-v1.1",
+   "slot": 5,
+   "role": null,
+   "topology": "inside",
+   "basis": "asserted",
+   "source": "heteronyms/records:dodecad_v1_1_position",
+   "note": null
+  },
+  {
+   "node_id": "heteronym:talos-morrow",
+   "frame_id": "frame:dodecad-v1",
+   "slot": "§3.5",
+   "role": null,
+   "topology": "inside",
+   "basis": "asserted",
+   "source": "heteronyms/records:dodecad_position",
+   "note": null
+  },
+  {
+   "node_id": "mantle:techne",
+   "frame_id": "frame:assembly-chorus",
+   "slot": null,
+   "role": "method and instrument design",
+   "topology": "position-not-occupant",
+   "basis": "asserted",
+   "source": "heteronyms/records:mmrs_role",
+   "note": "is_position_not_occupant — the mantle is the office, not whoever wears it"
+  },
+  {
+   "node_id": "heteronym:nobel-glas",
+   "frame_id": "frame:logotic-science-2025-09",
+   "slot": null,
+   "role": "frame-holder",
+   "topology": "outside",
+   "basis": "asserted",
+   "source": "heteronyms/records (stated)",
+   "note": "held the outside in the Sep 2025 frame; v1.1 canonicalises him inside at position 10"
+  }
+ ]
+}
