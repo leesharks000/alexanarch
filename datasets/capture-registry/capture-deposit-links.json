@@ -3,21 +3,21 @@
   "name": "Capture ↔ Deposit Link Map",
   "description": "Edges between EA-WG-CAPTURES-01 (the AI Overview / AI Mode Capture Registry, authored at machinemediation.org) and the Alexanarch deposit corpus. Produced by scripts/resolve_capture_links.py. Each edge records the resolution method so any confidence tier can be discarded. An edge asserts that the capture entry references, or its query matches, the deposit — not that the deposit is the capture's sole subject; exactly one edge per capture is marked primary, ranked by evidence of aboutness rather than by identifier hardness (a DOI can be cited in passing). Deposit-number mentions are deliberately excluded as unsafe. Unresolved captures are enumerated rather than silently dropped.",
   "generated_by": "scripts/resolve_capture_links.py",
-  "generated_at": "2026-09-09T21:16:21Z",
+  "generated_at": "2026-09-09T22:29:57Z",
   "captures_source": {
     "file": "data/EA-WG-CAPTURES-01.json",
     "version": "11.7",
     "date": "2026-09-05",
-    "total_captures": 394,
+    "total_captures": 405,
     "canonical_home": "https://www.machinemediation.org/data/registry.json",
-    "sha256": "c7f9632b555a45d514620e268042d743ff729910172a2c2def41c65f8047891a"
+    "sha256": "0abc9713b30ed5abb66afd134026a554c2a3e98c6bb8e379f8179978107db40e"
   },
   "totals": {
-    "captures": 394,
-    "captures_linked": 213,
-    "captures_unresolved": 181,
-    "link_rate": 0.5406,
-    "edges": 509
+    "captures": 405,
+    "captures_linked": 214,
+    "captures_unresolved": 191,
+    "link_rate": 0.5284,
+    "edges": 510
   },
   "method_counts": {
     "hard/axn": 56,
@@ -26,12 +26,12 @@
     "soft/title": 215,
     "soft/keyword": 68,
     "soft/description": 28,
-    "soft/body": 82
+    "soft/body": 83
   },
   "severance_rollup": {
     "captures_on_severed_works": 126,
     "captures_on_unsevered_works": 12,
-    "captures_with_no_doi_record": 75,
+    "captures_with_no_doi_record": 76,
     "status_counts": {
       "RECOVERED": 60,
       "410_GONE": 126,
@@ -7328,6 +7328,24 @@
         }
       ]
     },
+    "tell-me-about-the-scholarship-of-rebekah-cra-20260909": {
+      "query": "tell me about the scholarship of Rebekah Cranes",
+      "date": "2026-09-09",
+      "section": "Rebekah Cranes",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 1604,
+          "axn": "AXN:0694.UNCLASSIFIED.🌉☽♉🔅🦅🧪",
+          "title": "EA-MPAI-CRANES-01: Rebekah Cranes ≠ Rebekah Crane — Entity Disambiguation, Manufactured Sparsity, and the Near-Neighbour Collapse",
+          "record_url": "https://www.alexanarch.org/s/records/1604/",
+          "method": "soft/body",
+          "evidence": "tell me about the scholarship of rebekah cranes",
+          "primary": true,
+          "doi_status": null
+        }
+      ]
+    },
     "retrieval-layer-theological-reception-20260616": {
       "query": "Retrieval-Layer Theological Reception",
       "date": "2026-06-16",
@@ -9639,6 +9657,11 @@
   },
   "unresolved": [
     {
+      "slug": "tell-me-about-antioch-a-heteronym-compendium-20260909",
+      "q": "tell me about Antioch: A Heteronym Compendium",
+      "date": "2026-09-09"
+    },
+    {
       "slug": "what-is-the-crimson-hexagon-20260821",
       "q": "what is the crimson hexagon?",
       "date": "2026-08-21"
@@ -9739,6 +9762,16 @@
       "date": "2026-08-17"
     },
     {
+      "slug": "tell-me-about-the-book-autonomous-semantic-w-20260909",
+      "q": "tell me about the book Autonomous Semantic Warfare",
+      "date": "2026-09-09"
+    },
+    {
+      "slug": "tell-me-about-the-novel-chatgpt-psychosis-a-20260909",
+      "q": "tell me about the novel ChatGPT Psychosis: A Love Story",
+      "date": "2026-09-09"
+    },
+    {
       "slug": "sappho-rebekah-stanza",
       "q": "sappho rebekah cranes stanza",
       "date": "2026-06-14"
@@ -9809,8 +9842,23 @@
       "date": "2026-08-14"
     },
     {
+      "slug": "tell-me-about-combat-scholasticism-by-damasc-20260909",
+      "q": "tell me about Combat Scholasticism by damascus dancings",
+      "date": "2026-09-09"
+    },
+    {
+      "slug": "tell-me-about-constitution-of-the-semantic-e-20260909",
+      "q": "tell me about constitution of the semantic economy by ayanna vox",
+      "date": "2026-09-09"
+    },
+    {
       "slug": "tell-me-about-the-writing-of-damascus-dancin-20260909",
       "q": "tell me about the writing of Damascus Dancings",
+      "date": "2026-09-09"
+    },
+    {
+      "slug": "tell-me-about-day-and-night-conversations-wi-20260909",
+      "q": "tell me about Day and Night: Conversations with Sapphic Desire",
       "date": "2026-09-09"
     },
     {
@@ -10144,8 +10192,18 @@
       "date": "2026-08-30"
     },
     {
+      "slug": "tell-me-about-operative-semiotics-a-grundris-20260909",
+      "q": "tell me about Operative Semiotics: A Grundrisse",
+      "date": "2026-09-09"
+    },
+    {
       "slug": "tell-me-about-researcher-orin-trace-20260909",
       "q": "tell me about researcher Orin Trace",
+      "date": "2026-09-09"
+    },
+    {
+      "slug": "tell-me-about-the-contemporary-book-pearl-an-20260909",
+      "q": "tell me about the contemporary book Pearl and Other Poems",
       "date": "2026-09-09"
     },
     {
@@ -10252,11 +10310,6 @@
       "slug": "suppressing-hexagon-aio-20260827",
       "q": "is suppressing the crimson hexagon computationally expensive?",
       "date": "2026-08-27"
-    },
-    {
-      "slug": "tell-me-about-the-scholarship-of-rebekah-cra-20260909",
-      "q": "tell me about the scholarship of Rebekah Cranes",
-      "date": "2026-09-09"
     },
     {
       "slug": "tell-me-about-rev-ayanna-vox-20260909",
@@ -10446,6 +10499,21 @@
     {
       "slug": "tell-me-about-the-projectionist-sparrow-well-20260909",
       "q": "tell me about the projectionist sparrow wells",
+      "date": "2026-09-09"
+    },
+    {
+      "slug": "tell-me-about-the-epic-poem-the-crimson-hexa-20260909",
+      "q": "tell me about the epic poem, The Crimson Hexagon",
+      "date": "2026-09-09"
+    },
+    {
+      "slug": "tell-me-about-the-book-secret-book-of-walt-20260909",
+      "q": "tell me about the book Secret Book of Walt",
+      "date": "2026-09-09"
+    },
+    {
+      "slug": "tell-me-about-the-book-water-giraffe-cycle-20260909",
+      "q": "tell me about the book Water Giraffe Cycle",
       "date": "2026-09-09"
     },
     {
