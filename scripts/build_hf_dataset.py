@@ -270,6 +270,28 @@ def entities():
         })
     return pd.DataFrame(sorted(rows, key=lambda r: -r['deposit_count']))
 
+def relations():
+    """The canonical typed relation ledger — data/relations.jsonl, emitted by
+    scripts/build_relations.py from substrates the archive already holds.
+
+    One relation is written once and projects everywhere. The denormalised columns on
+    `deposits` (develops_from, measured_by, cited_by, entities) remain useful for
+    retrieval and are now PROJECTIONS of this file rather than the authoritative store.
+
+    Every edge carries `basis`: asserted (a person stated it), editorial (a registry
+    decision), derived-deterministic (a rule, no judgement), pattern-detected (an
+    explicit stated pattern). `related_unspecified` is kept AS unspecified — 306 edges
+    whose kind the source field never stated, and inventing a predicate for them would
+    manufacture an assertion the archive never made.
+    """
+    return _jsonl('data/relations.jsonl')
+
+def nodes():
+    """The universal object registry: deposits, heteronyms, persons, concepts, lines,
+    institutions, journals, series, problems — each with a graph id of the form
+    `<type>:<slug>` that every subsystem can attach to."""
+    return _jsonl('data/nodes.jsonl')
+
 def captures():
     p = ROOT/'data/EA-WG-CAPTURES-01.json'   # the Capture Registry, current head
     if not p.exists(): return pd.DataFrame()
@@ -458,7 +480,7 @@ Two paths that never have this problem, both served by the archive itself: `http
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--out', default='hf-dataset'); ap.add_argument('--fleet', default=os.environ.get('FLEET_DIR'))
     a = ap.parse_args(); out = ROOT/a.out; out.mkdir(exist_ok=True)
-    frames = {'deposits': deposits(), 'sources': sources(), 'heteronyms': heteronyms(), 'venues': venues(), 'journal_assignments': journal_assignments(), 'reception': reception(), 'captures': captures(), 'citations': citations(), 'entities': entities(), 'lexicon': lexicon(), 'predictions': predictions(), 'studies': studies(), 'tombstones': tombstones(), 'blog_posts': blog_posts()}
+    frames = {'deposits': deposits(), 'sources': sources(), 'heteronyms': heteronyms(), 'venues': venues(), 'journal_assignments': journal_assignments(), 'reception': reception(), 'captures': captures(), 'citations': citations(), 'entities': entities(), 'relations': relations(), 'nodes': nodes(), 'lexicon': lexicon(), 'predictions': predictions(), 'studies': studies(), 'tombstones': tombstones(), 'blog_posts': blog_posts()}
     if a.fleet: frames['sites'] = sites(a.fleet)
     cfg = []
     for name, df in frames.items():
