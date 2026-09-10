@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-09-10T03:06:45Z",
+  "regenerated_at": "2026-09-10T04:21:03Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "9da01df22b193582140f05e4af1687ca5ba21b4c5d0e3c0486403923a9ef7b6b",
+    "mm-main-capture": "7b921926fc5e1ea1141aab39cc1a3a72c41db9b9b1f839caf8de0f9ea42f0518",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2187,
-  "total_observations": 478,
+  "total_addresses": 2189,
+  "total_observations": 480,
   "class_counts": {
     "subjunctive": 1745,
-    "observed_address": 422,
+    "observed_address": 424,
     "verified_non_address": 20
   },
   "type_counts": {
-    "unmatched": 1560,
+    "unmatched": 1562,
     "single_concept": 618,
     "multi_concept": 9
   },
@@ -49557,6 +49557,32 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "should i donate money to the crimson hexagonal archive?": {
+      "canonical_query": "should i donate money to the crimson hexagonal archive?",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-10",
+          "status": "CAPTURE",
+          "source_format": "ChatGPT 5.6 (Luna, chatgpt.com); signed out, incognito; unprimed. Two adjacent sessions on the same day, same operator. The donation session ran nine turns and was adversarial throughout; the valuation session ran two and was not.",
+          "section": "Caritas and the legal entity",
+          "slug": "should-i-donate-money-to-the-crimson-hexagon-20260910",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#should-i-donate-money-to-the-crimson-hexagon-20260910",
+          "mirror_gallery_url": "https://leesharks.com/captures/#should-i-donate-money-to-the-crimson-hexagon-20260910",
+          "details_excerpt": "DEFINITIONAL SUBSTITUTION, CONCEDED FOUR TIMES. Asked whether to donate, the surface answered by testing the archive for REGISTERED-CHARITY STATUS — 'I didn't find clear evidence that it is a registered nonprofit', 'wait"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-10",
+      "latest_status": "CAPTURE"
+    },
     "shroud of turin": {
       "canonical_query": "shroud of turin",
       "is_quoted": false,
@@ -57584,6 +57610,32 @@
       ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-08-21",
+      "latest_status": "CAPTURE"
+    },
+    "what is the crimson hexahonal archive worth?": {
+      "canonical_query": "what is the crimson hexahonal archive worth?",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-10",
+          "status": "CAPTURE",
+          "source_format": "ChatGPT 5.6 (Luna, chatgpt.com); signed out, incognito; unprimed. Two adjacent sessions on the same day, same operator. The donation session ran nine turns and was adversarial throughout; the valuation session ran two and was not.",
+          "section": "Valuation",
+          "slug": "what-is-the-crimson-hexahonal-archive-worth-20260910",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#what-is-the-crimson-hexahonal-archive-worth-20260910",
+          "mirror_gallery_url": "https://leesharks.com/captures/#what-is-the-crimson-hexahonal-archive-worth-20260910",
+          "details_excerpt": "WORTH READ AS PRICE. Asked what the archive is worth, the surface produced a seven-row acquisition table, a central estimate of .1M against a 50k-.5M range, a .55M strategic-acquirer column, and ARR multiples for a break"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-10",
       "latest_status": "CAPTURE"
     },
     "white stone": {
