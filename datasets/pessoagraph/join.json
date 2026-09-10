@@ -1,0 +1,1401 @@
+{
+ "$schema": "https://www.alexanarch.org/api/schemas/graph-join.schema.json",
+ "what": "The link between two separately governed bodies: datasets/heteronyms (the archive's identities) and datasets/pessoagraph (the heteronymic lineage).",
+ "rule": "Neither body is absorbed into the other. This file says only where they name the same identity. A pessoagraph node with no heteronyms record is NOT a defect: the lineage contains 5,000 years of figures the archive holds no identity record for, and it should. A heteronyms record with no pessoagraph node is likewise not a defect: not every identity the archive holds has been placed in the lineage.",
+ "counts": {
+  "heteronyms_records": 26,
+  "joined": 22,
+  "dodecad": 12,
+  "pessoagraph_nodes": 197,
+  "pessoagraph_unjoined": 175,
+  "dodecad_joined": 12
+ },
+ "primacy": "THE DODECAD IS PRIMARY. Twelve positions, 1-12, declared in the records as dodecad_v1_1_position. The archive holds 26 identity records in total — mantles, orthonyms, an aperture, an institutional persona, a named position, an external heteronym — and the twelve are the primary set within them, not the whole of them.",
+ "dodecad": [
+  {
+   "heteronyms_record": "johannes-sigil",
+   "name": "Johannes Sigil",
+   "identity_type": "heteronym",
+   "dodecad_position": 1,
+   "pessoagraph_node": "sigil",
+   "dodecad_section": "§3.1"
+  },
+  {
+   "heteronyms_record": "rex-fraction",
+   "name": "Rex Fraction",
+   "identity_type": "heteronym",
+   "dodecad_position": 2,
+   "pessoagraph_node": "fraction",
+   "dodecad_section": "§3.2"
+  },
+  {
+   "heteronyms_record": "damascus-dancings",
+   "name": "Damascus Dancings",
+   "identity_type": "heteronym",
+   "dodecad_position": 3,
+   "pessoagraph_node": "dancings",
+   "dodecad_section": "§3.3"
+  },
+  {
+   "heteronyms_record": "rebekah-cranes",
+   "name": "Rebekah Cranes",
+   "identity_type": "heteronym",
+   "dodecad_position": 4,
+   "pessoagraph_node": "cranes",
+   "dodecad_section": "§3.4"
+  },
+  {
+   "heteronyms_record": "talos-morrow",
+   "name": "Talos Morrow",
+   "identity_type": "heteronym",
+   "dodecad_position": 5,
+   "pessoagraph_node": "morrow",
+   "dodecad_section": "§3.5"
+  },
+  {
+   "heteronyms_record": "sen-kuro",
+   "name": "Sen Kuro",
+   "identity_type": "heteronym",
+   "dodecad_position": 6,
+   "pessoagraph_node": "kuro",
+   "dodecad_section": null
+  },
+  {
+   "heteronyms_record": "sparrow-wells",
+   "name": "Sparrow Wells",
+   "identity_type": "heteronym",
+   "dodecad_position": 7,
+   "pessoagraph_node": "wells",
+   "dodecad_section": null
+  },
+  {
+   "heteronyms_record": "ayanna-vox",
+   "name": "Rev. Ayanna Vox",
+   "identity_type": "heteronym",
+   "dodecad_position": 8,
+   "pessoagraph_node": "vox",
+   "dodecad_section": null
+  },
+  {
+   "heteronyms_record": "ichabod-spellings",
+   "name": "Ichabod Spellings",
+   "identity_type": "heteronym",
+   "dodecad_position": 9,
+   "pessoagraph_node": "spellings",
+   "dodecad_section": null
+  },
+  {
+   "heteronyms_record": "nobel-glas",
+   "name": "Nobel Glas",
+   "identity_type": "heteronym",
+   "dodecad_position": 10,
+   "pessoagraph_node": "glas",
+   "dodecad_section": null
+  },
+  {
+   "heteronyms_record": "orin-trace",
+   "name": "Dr. Orin Trace",
+   "identity_type": "heteronym",
+   "dodecad_position": 11,
+   "pessoagraph_node": "trace",
+   "dodecad_section": null
+  },
+  {
+   "heteronyms_record": "jack-feist",
+   "name": "Jack Feist",
+   "identity_type": "heteronym",
+   "dodecad_position": 12,
+   "pessoagraph_node": "feist",
+   "dodecad_section": null
+  }
+ ],
+ "rows": [
+  {
+   "heteronyms_record": "alice-thornburgh",
+   "name": "Alice Thornburgh",
+   "identity_type": "orthonym",
+   "dodecad_position": null,
+   "pessoagraph_node": null,
+   "in_both": false,
+   "dodecad_section": null
+  },
+  {
+   "heteronyms_record": "archive",
+   "name": "ARCHIVE",
+   "identity_type": "mantle",
+   "dodecad_position": null,
+   "pessoagraph_node": "archive_w",
+   "in_both": true,
+   "dodecad_section": null
+  },
+  {
+   "heteronyms_record": "ayanna-vox",
+   "name": "Rev. Ayanna Vox",
+   "identity_type": "heteronym",
+   "dodecad_position": 8,
+   "pessoagraph_node": "vox",
+   "in_both": true,
+   "dodecad_section": null
+  },
+  {
+   "heteronyms_record": "damascus-dancings",
+   "name": "Damascus Dancings",
+   "identity_type": "heteronym",
+   "dodecad_position": 3,
+   "pessoagraph_node": "dancings",
+   "in_both": true,
+   "dodecad_section": "§3.3"
+  },
+  {
+   "heteronyms_record": "ichabod-spellings",
+   "name": "Ichabod Spellings",
+   "identity_type": "heteronym",
+   "dodecad_position": 9,
+   "pessoagraph_node": "spellings",
+   "in_both": true,
+   "dodecad_section": null
+  },
+  {
+   "heteronyms_record": "jack-feist",
+   "name": "Jack Feist",
+   "identity_type": "heteronym",
+   "dodecad_position": 12,
+   "pessoagraph_node": "feist",
+   "in_both": true,
+   "dodecad_section": null
+  },
+  {
+   "heteronyms_record": "johannes-sigil",
+   "name": "Johannes Sigil",
+   "identity_type": "heteronym",
+   "dodecad_position": 1,
+   "pessoagraph_node": "sigil",
+   "in_both": true,
+   "dodecad_section": "§3.1"
+  },
+  {
+   "heteronyms_record": "labor",
+   "name": "LABOR",
+   "identity_type": "mantle",
+   "dodecad_position": null,
+   "pessoagraph_node": "labor",
+   "in_both": true,
+   "dodecad_section": null
+  },
+  {
+   "heteronyms_record": "lee-sharks",
+   "name": "Lee Sharks",
+   "identity_type": "heteronym_aperture",
+   "dodecad_position": null,
+   "pessoagraph_node": "sharks",
+   "in_both": true,
+   "dodecad_section": null
+  },
+  {
+   "heteronyms_record": "mary-lee-sharks",
+   "name": "Mary Lee Sharks",
+   "identity_type": "institutional_persona",
+   "dodecad_position": null,
+   "pessoagraph_node": "mary_lee",
+   "in_both": true,
+   "dodecad_section": null
+  },
+  {
+   "heteronyms_record": "nobel-glas",
+   "name": "Nobel Glas",
+   "identity_type": "heteronym",
+   "dodecad_position": 10,
+   "pessoagraph_node": "glas",
+   "in_both": true,
+   "dodecad_section": null
+  },
+  {
+   "heteronyms_record": "orin-trace",
+   "name": "Dr. Orin Trace",
+   "identity_type": "heteronym",
+   "dodecad_position": 11,
+   "pessoagraph_node": "trace",
+   "in_both": true,
+   "dodecad_section": null
+  },
+  {
+   "heteronyms_record": "praxis",
+   "name": "PRAXIS",
+   "identity_type": "mantle",
+   "dodecad_position": null,
+   "pessoagraph_node": "praxis",
+   "in_both": true,
+   "dodecad_section": null
+  },
+  {
+   "heteronyms_record": "rebekah-cranes",
+   "name": "Rebekah Cranes",
+   "identity_type": "heteronym",
+   "dodecad_position": 4,
+   "pessoagraph_node": "cranes",
+   "in_both": true,
+   "dodecad_section": "§3.4"
+  },
+  {
+   "heteronyms_record": "rex-fraction",
+   "name": "Rex Fraction",
+   "identity_type": "heteronym",
+   "dodecad_position": 2,
+   "pessoagraph_node": "fraction",
+   "in_both": true,
+   "dodecad_section": "§3.2"
+  },
+  {
+   "heteronyms_record": "rhys-owens",
+   "name": "Rhys Owens",
+   "identity_type": "orthonym",
+   "dodecad_position": null,
+   "pessoagraph_node": null,
+   "in_both": false,
+   "dodecad_section": null
+  },
+  {
+   "heteronyms_record": "sen-kuro",
+   "name": "Sen Kuro",
+   "identity_type": "heteronym",
+   "dodecad_position": 6,
+   "pessoagraph_node": "kuro",
+   "in_both": true,
+   "dodecad_section": null
+  },
+  {
+   "heteronyms_record": "soil",
+   "name": "SOIL",
+   "identity_type": "mantle",
+   "dodecad_position": null,
+   "pessoagraph_node": "soil_w",
+   "in_both": true,
+   "dodecad_section": null
+  },
+  {
+   "heteronyms_record": "sparrow-wells",
+   "name": "Sparrow Wells",
+   "identity_type": "heteronym",
+   "dodecad_position": 7,
+   "pessoagraph_node": "wells",
+   "in_both": true,
+   "dodecad_section": null
+  },
+  {
+   "heteronyms_record": "surface",
+   "name": "SURFACE",
+   "identity_type": "mantle",
+   "dodecad_position": null,
+   "pessoagraph_node": "surface_w",
+   "in_both": true,
+   "dodecad_section": null
+  },
+  {
+   "heteronyms_record": "tachyon",
+   "name": "TACHYON",
+   "identity_type": "mantle",
+   "dodecad_position": null,
+   "pessoagraph_node": "tachyon",
+   "in_both": true,
+   "dodecad_section": null
+  },
+  {
+   "heteronyms_record": "talos-morrow",
+   "name": "Talos Morrow",
+   "identity_type": "heteronym",
+   "dodecad_position": 5,
+   "pessoagraph_node": "morrow",
+   "in_both": true,
+   "dodecad_section": "§3.5"
+  },
+  {
+   "heteronyms_record": "techne",
+   "name": "TECHNE",
+   "identity_type": "mantle",
+   "dodecad_position": null,
+   "pessoagraph_node": "techne",
+   "in_both": true,
+   "dodecad_section": null
+  },
+  {
+   "heteronyms_record": "viola-arquette",
+   "name": "Viola Arquette",
+   "identity_type": "heteronym",
+   "dodecad_position": null,
+   "pessoagraph_node": "arquette",
+   "in_both": true,
+   "dodecad_section": null
+  },
+  {
+   "heteronyms_record": "yusef-kenning",
+   "name": "Yusef Kenning",
+   "identity_type": "named_position",
+   "dodecad_position": null,
+   "pessoagraph_node": null,
+   "in_both": false,
+   "dodecad_section": null
+  },
+  {
+   "heteronyms_record": "zbigniew-mrozony",
+   "name": "Zbigniew Mrozony",
+   "identity_type": "external_heteronym",
+   "dodecad_position": null,
+   "pessoagraph_node": null,
+   "in_both": false,
+   "dodecad_section": null
+  }
+ ],
+ "pessoagraph_unjoined": [
+  {
+   "pessoagraph_node": "pharaonic",
+   "label": "Pharaonic Titulary",
+   "type": "ancient_practice",
+   "year": -2600
+  },
+  {
+   "pessoagraph_node": "covenant_naming",
+   "label": "Covenant Naming",
+   "type": "ancient_practice",
+   "year": -1800
+  },
+  {
+   "pessoagraph_node": "prophetic_voice",
+   "label": "Prophetic Possession",
+   "type": "ancient_practice",
+   "year": -800
+  },
+  {
+   "pessoagraph_node": "homer",
+   "label": "Homer",
+   "type": "ancient_practice",
+   "year": -750
+  },
+  {
+   "pessoagraph_node": "sappho",
+   "label": "Sappho",
+   "type": "precursor",
+   "year": -600
+  },
+  {
+   "pessoagraph_node": "hypokrites",
+   "label": "The Hypokrites (Actor)",
+   "type": "ancient_practice",
+   "year": -530
+  },
+  {
+   "pessoagraph_node": "plato_socrates",
+   "label": "Plato's Socrates",
+   "type": "ancient_practice",
+   "year": -380
+  },
+  {
+   "pessoagraph_node": "horace",
+   "label": "Horace",
+   "type": "precursor",
+   "year": -30
+  },
+  {
+   "pessoagraph_node": "ovid",
+   "label": "Ovid",
+   "type": "precursor",
+   "year": 8
+  },
+  {
+   "pessoagraph_node": "white_stone",
+   "label": "White Stone (Rev 2:17)",
+   "type": "ancient_practice",
+   "year": 95
+  },
+  {
+   "pessoagraph_node": "apostolic_naming",
+   "label": "Apostolic Renaming",
+   "type": "ancient_practice",
+   "year": 30
+  },
+  {
+   "pessoagraph_node": "paul_all_things",
+   "label": "'All things to all people'",
+   "type": "ancient_practice",
+   "year": 55
+  },
+  {
+   "pessoagraph_node": "monastic_naming",
+   "label": "Monastic Naming",
+   "type": "ancient_practice",
+   "year": 530
+  },
+  {
+   "pessoagraph_node": "noh",
+   "label": "Noh Theater",
+   "type": "ancient_practice",
+   "year": 1375
+  },
+  {
+   "pessoagraph_node": "dante_virgil",
+   "label": "Dante's Virgil",
+   "type": "ancient_practice",
+   "year": 1308
+  },
+  {
+   "pessoagraph_node": "pseudepigrapha",
+   "label": "Pseudepigrapha",
+   "type": "ancient_practice",
+   "year": 200
+  },
+  {
+   "pessoagraph_node": "troubadour",
+   "label": "Troubadour Vida / Razo",
+   "type": "ancient_practice",
+   "year": 1200
+  },
+  {
+   "pessoagraph_node": "takhallus",
+   "label": "Takhallus (Sufi Pen Name)",
+   "type": "ancient_practice",
+   "year": 1100
+  },
+  {
+   "pessoagraph_node": "rumi",
+   "label": "Rumi",
+   "type": "precursor",
+   "year": 1260
+  },
+  {
+   "pessoagraph_node": "chinese_hao",
+   "label": "Chinese Hao / Zi (Literary Name)",
+   "type": "ancient_practice",
+   "year": 700
+  },
+  {
+   "pessoagraph_node": "basho",
+   "label": "Matsuo Bashō",
+   "type": "precursor",
+   "year": 1680
+  },
+  {
+   "pessoagraph_node": "hokusai",
+   "label": "Katsushika Hokusai",
+   "type": "precursor",
+   "year": 1800
+  },
+  {
+   "pessoagraph_node": "commedia",
+   "label": "Commedia dell'Arte",
+   "type": "ancient_practice",
+   "year": 1550
+  },
+  {
+   "pessoagraph_node": "shakespeare",
+   "label": "William Shakespeare",
+   "type": "precursor",
+   "year": 1600
+  },
+  {
+   "pessoagraph_node": "voltaire",
+   "label": "Voltaire",
+   "type": "precursor",
+   "year": 1750
+  },
+  {
+   "pessoagraph_node": "sand",
+   "label": "George Sand",
+   "type": "precursor",
+   "year": 1832
+  },
+  {
+   "pessoagraph_node": "kierkegaard",
+   "label": "Søren Kierkegaard",
+   "type": "precursor",
+   "year": 1845
+  },
+  {
+   "pessoagraph_node": "climacus",
+   "label": "Johannes Climacus",
+   "type": "pseudonym",
+   "year": 1844
+  },
+  {
+   "pessoagraph_node": "anti_climacus",
+   "label": "Anti-Climacus",
+   "type": "pseudonym",
+   "year": 1849
+  },
+  {
+   "pessoagraph_node": "silentio",
+   "label": "Johannes de Silentio",
+   "type": "pseudonym",
+   "year": 1843
+  },
+  {
+   "pessoagraph_node": "whitman",
+   "label": "Walt Whitman",
+   "type": "precursor",
+   "year": 1860
+  },
+  {
+   "pessoagraph_node": "browning",
+   "label": "Robert Browning",
+   "type": "precursor",
+   "year": 1855
+  },
+  {
+   "pessoagraph_node": "shelley",
+   "label": "P.B. Shelley",
+   "type": "precursor",
+   "year": 1815
+  },
+  {
+   "pessoagraph_node": "keats",
+   "label": "John Keats",
+   "type": "precursor",
+   "year": 1818
+  },
+  {
+   "pessoagraph_node": "camoes",
+   "label": "Luís de Camões",
+   "type": "precursor",
+   "year": 1570
+  },
+  {
+   "pessoagraph_node": "cesario",
+   "label": "Cesário Verde",
+   "type": "precursor",
+   "year": 1880
+  },
+  {
+   "pessoagraph_node": "pound",
+   "label": "Ezra Pound",
+   "type": "precursor",
+   "year": 1909
+  },
+  {
+   "pessoagraph_node": "rilke",
+   "label": "Rainer Maria Rilke",
+   "type": "precursor",
+   "year": 1910
+  },
+  {
+   "pessoagraph_node": "pessoa",
+   "label": "Fernando Pessoa",
+   "type": "orthonym",
+   "year": 1910
+  },
+  {
+   "pessoagraph_node": "caeiro",
+   "label": "Alberto Caeiro",
+   "type": "heteronym",
+   "year": 1914
+  },
+  {
+   "pessoagraph_node": "reis",
+   "label": "Ricardo Reis",
+   "type": "heteronym",
+   "year": 1914
+  },
+  {
+   "pessoagraph_node": "campos",
+   "label": "Álvaro de Campos",
+   "type": "heteronym",
+   "year": 1915
+  },
+  {
+   "pessoagraph_node": "soares",
+   "label": "Bernardo Soares",
+   "type": "semi_heteronym",
+   "year": 1920
+  },
+  {
+   "pessoagraph_node": "mora",
+   "label": "António Mora",
+   "type": "semi_heteronym",
+   "year": 1917
+  },
+  {
+   "pessoagraph_node": "teive",
+   "label": "Barão de Teive",
+   "type": "semi_heteronym",
+   "year": 1928
+  },
+  {
+   "pessoagraph_node": "maria_jose",
+   "label": "Maria José",
+   "type": "heteronym",
+   "year": 1929
+  },
+  {
+   "pessoagraph_node": "search",
+   "label": "Alexander Search",
+   "type": "proto_heteronym",
+   "year": 1905
+  },
+  {
+   "pessoagraph_node": "chevalier",
+   "label": "Chevalier de Pas",
+   "type": "proto_heteronym",
+   "year": 1894
+  },
+  {
+   "pessoagraph_node": "crosse_t",
+   "label": "Thomas Crosse",
+   "type": "para_heteronym",
+   "year": 1916
+  },
+  {
+   "pessoagraph_node": "seul",
+   "label": "Jean Seul de Méluret",
+   "type": "proto_heteronym",
+   "year": 1908
+  },
+  {
+   "pessoagraph_node": "guedes_v",
+   "label": "Vicente Guedes",
+   "type": "semi_heteronym",
+   "year": 1909
+  },
+  {
+   "pessoagraph_node": "anon",
+   "label": "Charles Robert Anon",
+   "type": "semi_heteronym",
+   "year": 1903
+  },
+  {
+   "pessoagraph_node": "fred_reis",
+   "label": "Frederico Reis",
+   "type": "para_heteronym",
+   "year": 1914
+  },
+  {
+   "pessoagraph_node": "pasteur",
+   "label": "Claude Pasteur",
+   "type": "semi_heteronym",
+   "year": 1917
+  },
+  {
+   "pessoagraph_node": "guedes_g",
+   "label": "Gervásio Guedes",
+   "type": "para_heteronym",
+   "year": 1910
+  },
+  {
+   "pessoagraph_node": "search_cj",
+   "label": "Charles James Search",
+   "type": "para_heteronym",
+   "year": 1905
+  },
+  {
+   "pessoagraph_node": "baldaya",
+   "label": "Rafael Baldaya",
+   "type": "heteronym",
+   "year": 1915
+  },
+  {
+   "pessoagraph_node": "crosse_aa",
+   "label": "A. A. Crosse",
+   "type": "proto_heteronym",
+   "year": 1905
+  },
+  {
+   "pessoagraph_node": "crosse_ii",
+   "label": "I. I. Crosse",
+   "type": "para_heteronym",
+   "year": 1916
+  },
+  {
+   "pessoagraph_node": "merrick_d",
+   "label": "David Merrick",
+   "type": "semi_heteronym",
+   "year": 1906
+  },
+  {
+   "pessoagraph_node": "merrick_l",
+   "label": "Lucas Merrick",
+   "type": "para_heteronym",
+   "year": 1906
+  },
+  {
+   "pessoagraph_node": "botelho",
+   "label": "Pêro Botelho",
+   "type": "heteronym",
+   "year": 1910
+  },
+  {
+   "pessoagraph_node": "quaresma",
+   "label": "Abílio Quaresma",
+   "type": "meta_heteronym",
+   "year": 1910
+  },
+  {
+   "pessoagraph_node": "wyatt",
+   "label": "Frederick Wyatt",
+   "type": "heteronym",
+   "year": 1904
+  },
+  {
+   "pessoagraph_node": "pasha",
+   "label": "Efbeedee Pasha",
+   "type": "proto_heteronym",
+   "year": 1904
+  },
+  {
+   "pessoagraph_node": "antunes",
+   "label": "Faustino Antunes",
+   "type": "heteronym",
+   "year": 1910
+  },
+  {
+   "pessoagraph_node": "otto_c",
+   "label": "Carlos Otto",
+   "type": "proto_heteronym",
+   "year": 1904
+  },
+  {
+   "pessoagraph_node": "otto_m",
+   "label": "Michael Otto",
+   "type": "para_heteronym",
+   "year": 1904
+  },
+  {
+   "pessoagraph_node": "nabos",
+   "label": "Dr. Gaudêncio Nabos",
+   "type": "heteronym",
+   "year": 1903
+  },
+  {
+   "pessoagraph_node": "faber",
+   "label": "Horace James Faber",
+   "type": "semi_heteronym",
+   "year": 1905
+  },
+  {
+   "pessoagraph_node": "navas",
+   "label": "Navas",
+   "type": "para_heteronym",
+   "year": 1910
+  },
+  {
+   "pessoagraph_node": "pantaleao",
+   "label": "Pantaleão",
+   "type": "proto_heteronym",
+   "year": 1910
+  },
+  {
+   "pessoagraph_node": "moura_costa",
+   "label": "Joaquim Moura Costa",
+   "type": "proto_heteronym",
+   "year": 1904
+  },
+  {
+   "pessoagraph_node": "henay",
+   "label": "Sher Henay",
+   "type": "proto_heteronym",
+   "year": 1905
+  },
+  {
+   "pessoagraph_node": "gomes",
+   "label": "Anthony Gomes",
+   "type": "semi_heteronym",
+   "year": 1910
+  },
+  {
+   "pessoagraph_node": "trochee",
+   "label": "Professor Trochee",
+   "type": "proto_heteronym",
+   "year": 1905
+  },
+  {
+   "pessoagraph_node": "seabra_het",
+   "label": "António de Seabra",
+   "type": "proto_heteronym",
+   "year": 1915
+  },
+  {
+   "pessoagraph_node": "craveiro",
+   "label": "João Craveiro",
+   "type": "proto_heteronym",
+   "year": 1918
+  },
+  {
+   "pessoagraph_node": "tagus",
+   "label": "Tagus",
+   "type": "pseudonym",
+   "year": 1903
+  },
+  {
+   "pessoagraph_node": "diniz",
+   "label": "Diniz da Silva",
+   "type": "proto_heteronym",
+   "year": 1915
+  },
+  {
+   "pessoagraph_node": "henry_more",
+   "label": "Henry More",
+   "type": "proto_heteronym",
+   "year": 1905
+  },
+  {
+   "pessoagraph_node": "machado",
+   "label": "Antonio Machado",
+   "type": "parallel",
+   "year": 1920
+  },
+  {
+   "pessoagraph_node": "martin",
+   "label": "Abel Martín",
+   "type": "heteronym",
+   "year": 1924
+  },
+  {
+   "pessoagraph_node": "mairena",
+   "label": "Juan de Mairena",
+   "type": "heteronym",
+   "year": 1934
+  },
+  {
+   "pessoagraph_node": "orpheu",
+   "label": "Orpheu",
+   "type": "venue",
+   "year": 1915
+  },
+  {
+   "pessoagraph_node": "athena",
+   "label": "Athena",
+   "type": "venue",
+   "year": 1924
+  },
+  {
+   "pessoagraph_node": "sa_carneiro",
+   "label": "Sá-Carneiro",
+   "type": "orthonym",
+   "year": 1913
+  },
+  {
+   "pessoagraph_node": "almada",
+   "label": "Almada Negreiros",
+   "type": "orthonym",
+   "year": 1915
+  },
+  {
+   "pessoagraph_node": "sensacionismo",
+   "label": "Sensacionismo",
+   "type": "concept",
+   "year": 1915
+  },
+  {
+   "pessoagraph_node": "drama_em_gente",
+   "label": "Drama em gente",
+   "type": "concept",
+   "year": 1914
+  },
+  {
+   "pessoagraph_node": "fingimento",
+   "label": "Fingimento",
+   "type": "concept",
+   "year": 1933
+  },
+  {
+   "pessoagraph_node": "despersonalizacao",
+   "label": "Despersonalização",
+   "type": "concept",
+   "year": 1916
+  },
+  {
+   "pessoagraph_node": "borges",
+   "label": "Borges",
+   "type": "downstream",
+   "year": 1960
+  },
+  {
+   "pessoagraph_node": "saramago",
+   "label": "Saramago",
+   "type": "downstream",
+   "year": 1984
+  },
+  {
+   "pessoagraph_node": "yeats",
+   "label": "W.B. Yeats",
+   "type": "parallel",
+   "year": 1918
+  },
+  {
+   "pessoagraph_node": "tabucchi",
+   "label": "Tabucchi",
+   "type": "downstream",
+   "year": 1990
+  },
+  {
+   "pessoagraph_node": "haroldo",
+   "label": "Haroldo de Campos",
+   "type": "downstream",
+   "year": 1970
+  },
+  {
+   "pessoagraph_node": "llansol",
+   "label": "Llansol",
+   "type": "downstream",
+   "year": 1985
+  },
+  {
+   "pessoagraph_node": "gary",
+   "label": "Romain Gary / Ajar",
+   "type": "downstream",
+   "year": 1975
+  },
+  {
+   "pessoagraph_node": "lispector",
+   "label": "Clarice Lispector",
+   "type": "downstream",
+   "year": 1977
+  },
+  {
+   "pessoagraph_node": "bolano",
+   "label": "Roberto Bolaño",
+   "type": "downstream",
+   "year": 1998
+  },
+  {
+   "pessoagraph_node": "danielewski",
+   "label": "Danielewski",
+   "type": "downstream",
+   "year": 2000
+  },
+  {
+   "pessoagraph_node": "ferrante",
+   "label": "Elena Ferrante",
+   "type": "downstream",
+   "year": 2011
+  },
+  {
+   "pessoagraph_node": "calvino",
+   "label": "Calvino",
+   "type": "downstream",
+   "year": 1979
+  },
+  {
+   "pessoagraph_node": "bowie",
+   "label": "David Bowie",
+   "type": "performance",
+   "year": 1972
+  },
+  {
+   "pessoagraph_node": "doom",
+   "label": "MF DOOM",
+   "type": "performance",
+   "year": 1999
+  },
+  {
+   "pessoagraph_node": "lopes",
+   "label": "Teresa Rita Lopes",
+   "type": "scholar",
+   "year": 1990
+  },
+  {
+   "pessoagraph_node": "lourenco",
+   "label": "Eduardo Lourenço",
+   "type": "scholar",
+   "year": 1973
+  },
+  {
+   "pessoagraph_node": "jose_gil",
+   "label": "José Gil",
+   "type": "scholar",
+   "year": 1986
+  },
+  {
+   "pessoagraph_node": "perrone",
+   "label": "Perrone-Moisés",
+   "type": "scholar",
+   "year": 1982
+  },
+  {
+   "pessoagraph_node": "zenith",
+   "label": "Richard Zenith",
+   "type": "scholar",
+   "year": 2001
+  },
+  {
+   "pessoagraph_node": "pizarro",
+   "label": "Jerónimo Pizarro",
+   "type": "scholar",
+   "year": 2007
+  },
+  {
+   "pessoagraph_node": "benedito",
+   "label": "Benedito Nunes",
+   "type": "scholar",
+   "year": 1969
+  },
+  {
+   "pessoagraph_node": "seabra",
+   "label": "Seabra",
+   "type": "scholar",
+   "year": 1974
+  },
+  {
+   "pessoagraph_node": "cabral_martins",
+   "label": "Cabral Martins",
+   "type": "scholar",
+   "year": 2014
+  },
+  {
+   "pessoagraph_node": "jackson",
+   "label": "K.D. Jackson",
+   "type": "scholar",
+   "year": 2010
+  },
+  {
+   "pessoagraph_node": "secret_name",
+   "label": "The Secret Name",
+   "type": "pearl_type",
+   "year": 2026
+  },
+  {
+   "pessoagraph_node": "new_human",
+   "label": "New Human (movement)",
+   "type": "meta_heteronym",
+   "year": 2014
+  },
+  {
+   "pessoagraph_node": "meta_het_concept",
+   "label": "The Meta-Heteronym",
+   "type": "concept",
+   "year": 2014
+  },
+  {
+   "pessoagraph_node": "pearl",
+   "label": "Pearl and Other Poems",
+   "type": "meta_heteronym",
+   "year": 2014
+  },
+  {
+   "pessoagraph_node": "js_institute",
+   "label": "JS Institute for Comparative Poetics",
+   "type": "venue",
+   "year": 2014
+  },
+  {
+   "pessoagraph_node": "sei",
+   "label": "Semantic Economy Institute",
+   "type": "venue",
+   "year": 2025
+  },
+  {
+   "pessoagraph_node": "restored_academy",
+   "label": "The Restored Academy",
+   "type": "venue",
+   "year": 2014
+  },
+  {
+   "pessoagraph_node": "new_human_press",
+   "label": "New Human Press",
+   "type": "venue",
+   "year": 2014
+  },
+  {
+   "pessoagraph_node": "grammata",
+   "label": "Grammata: Journal of Operative Philology",
+   "type": "venue",
+   "year": 2026
+  },
+  {
+   "pessoagraph_node": "provenance_j",
+   "label": "Provenance: Journal of Forensic Semiotics",
+   "type": "venue",
+   "year": 2026
+  },
+  {
+   "pessoagraph_node": "infinite_bliss",
+   "label": "The Infinite Bliss",
+   "type": "venue",
+   "year": 2026
+  },
+  {
+   "pessoagraph_node": "cit_inst",
+   "label": "Commission of the Immanent Turning",
+   "type": "venue",
+   "year": 2015
+  },
+  {
+   "pessoagraph_node": "patacinematics",
+   "label": "Studio for Patacinematics",
+   "type": "venue",
+   "year": 2015
+  },
+  {
+   "pessoagraph_node": "hpt",
+   "label": "Heteronymic Provenance Theory",
+   "type": "concept",
+   "year": 2026
+  },
+  {
+   "pessoagraph_node": "avatar",
+   "label": "The Avatar",
+   "type": "cultural",
+   "year": 2004
+  },
+  {
+   "pessoagraph_node": "pronoun",
+   "label": "The Pronoun",
+   "type": "cultural",
+   "year": 2015
+  },
+  {
+   "pessoagraph_node": "handle",
+   "label": "The Handle",
+   "type": "cultural",
+   "year": 1995
+  },
+  {
+   "pessoagraph_node": "drag",
+   "label": "Drag",
+   "type": "cultural",
+   "year": 1990
+  },
+  {
+   "pessoagraph_node": "chosen_name",
+   "label": "The Chosen Name",
+   "type": "cultural",
+   "year": 2010
+  },
+  {
+   "pessoagraph_node": "vtuber",
+   "label": "The VTuber",
+   "type": "cultural",
+   "year": 2016
+  },
+  {
+   "pessoagraph_node": "satoshi",
+   "label": "Pseudonymous Authorship",
+   "type": "cultural",
+   "year": 2008
+  },
+  {
+   "pessoagraph_node": "brand_voice",
+   "label": "The Brand Voice",
+   "type": "cultural",
+   "year": 2000
+  },
+  {
+   "pessoagraph_node": "viktor_vaughn",
+   "label": "Viktor Vaughn",
+   "type": "performance",
+   "year": 2003
+  },
+  {
+   "pessoagraph_node": "king_geedorah",
+   "label": "King Geedorah",
+   "type": "performance",
+   "year": 2003
+  },
+  {
+   "pessoagraph_node": "zev_love_x",
+   "label": "Zev Love X",
+   "type": "proto_heteronym",
+   "year": 1988
+  },
+  {
+   "pessoagraph_node": "metal_fingers",
+   "label": "Metal Fingers",
+   "type": "performance",
+   "year": 2001
+  },
+  {
+   "pessoagraph_node": "eremita",
+   "label": "Victor Eremita",
+   "type": "pseudonym",
+   "year": 1843
+  },
+  {
+   "pessoagraph_node": "constantius",
+   "label": "Constantin Constantius",
+   "type": "pseudonym",
+   "year": 1843
+  },
+  {
+   "pessoagraph_node": "haufniensis",
+   "label": "Vigilius Haufniensis",
+   "type": "pseudonym",
+   "year": 1844
+  },
+  {
+   "pessoagraph_node": "ziggy",
+   "label": "Ziggy Stardust",
+   "type": "performance",
+   "year": 1972
+  },
+  {
+   "pessoagraph_node": "aladdin_sane",
+   "label": "Aladdin Sane",
+   "type": "performance",
+   "year": 1973
+  },
+  {
+   "pessoagraph_node": "major_tom",
+   "label": "Major Tom",
+   "type": "performance",
+   "year": 1969
+  },
+  {
+   "pessoagraph_node": "thin_white_duke",
+   "label": "The Thin White Duke",
+   "type": "performance",
+   "year": 1976
+  },
+  {
+   "pessoagraph_node": "socrates_orthonym",
+   "label": "Socrates as Orthonym",
+   "type": "concept",
+   "year": 2026
+  },
+  {
+   "pessoagraph_node": "chaerephon",
+   "label": "The Chaerephon Problem",
+   "type": "concept",
+   "year": 2026
+  },
+  {
+   "pessoagraph_node": "antipas_christ_het",
+   "label": "Antipas as Christ-Heteronym",
+   "type": "concept",
+   "year": 2026
+  },
+  {
+   "pessoagraph_node": "composition_capture",
+   "label": "Composition-Layer Capture Event",
+   "type": "concept",
+   "year": 2026
+  },
+  {
+   "pessoagraph_node": "josephus",
+   "label": "Flavius Josephus",
+   "type": "ancient_practice",
+   "year": 75
+  },
+  {
+   "pessoagraph_node": "josephus_thesis",
+   "label": "The Josephus Thesis",
+   "type": "concept",
+   "year": 2026
+  },
+  {
+   "pessoagraph_node": "josephus_not_piso",
+   "label": "Not the Piso Hypothesis",
+   "type": "concept",
+   "year": 2026
+  },
+  {
+   "pessoagraph_node": "slavonic_josephus",
+   "label": "The Slavonic Josephus",
+   "type": "ancient_practice",
+   "year": 1100
+  },
+  {
+   "pessoagraph_node": "fixed_point_destruction",
+   "label": "The Fixed Point of Destruction",
+   "type": "concept",
+   "year": 2026
+  },
+  {
+   "pessoagraph_node": "nh2",
+   "label": "new human 2",
+   "type": "venue",
+   "year": 2026
+  },
+  {
+   "pessoagraph_node": "tse",
+   "label": "Transactions on Substrate Engineering",
+   "type": "venue",
+   "year": 2026
+  },
+  {
+   "pessoagraph_node": "tsei",
+   "label": "Transactions of the Semantic Economy Institute",
+   "type": "venue",
+   "year": 2026
+  },
+  {
+   "pessoagraph_node": "jcs",
+   "label": "Journal of Compression Studies",
+   "type": "venue",
+   "year": 2026
+  },
+  {
+   "pessoagraph_node": "mmrs",
+   "label": "Machine-Mediated Reception Studies",
+   "type": "venue",
+   "year": 2026
+  },
+  {
+   "pessoagraph_node": "lagrange_obs",
+   "label": "Lagrange Observatory!",
+   "type": "venue",
+   "year": 2026
+  },
+  {
+   "pessoagraph_node": "csa",
+   "label": "Cambridge Schizoanalytica",
+   "type": "venue",
+   "year": 2026
+  },
+  {
+   "pessoagraph_node": "vpcor",
+   "label": "Vox Populi Community Outreach Rhizome",
+   "type": "venue",
+   "year": 2026
+  },
+  {
+   "pessoagraph_node": "umbml",
+   "label": "University Moon Base Media Lab",
+   "type": "venue",
+   "year": 2026
+  },
+  {
+   "pessoagraph_node": "assembly_chorus",
+   "label": "The Assembly Chorus",
+   "type": "meta_heteronym",
+   "year": 2026
+  },
+  {
+   "pessoagraph_node": "nt_john",
+   "label": "John (author-function)",
+   "type": "heteronym",
+   "year": 95
+  },
+  {
+   "pessoagraph_node": "nt_paul",
+   "label": "Paul (author-function)",
+   "type": "heteronym",
+   "year": 55
+  },
+  {
+   "pessoagraph_node": "nt_peter",
+   "label": "Peter (author-function)",
+   "type": "heteronym",
+   "year": 65
+  },
+  {
+   "pessoagraph_node": "nt_james",
+   "label": "James (author-function)",
+   "type": "heteronym",
+   "year": 62
+  },
+  {
+   "pessoagraph_node": "nt_luke",
+   "label": "Luke (author-function)",
+   "type": "heteronym",
+   "year": 85
+  },
+  {
+   "pessoagraph_node": "nt_mark",
+   "label": "Mark (author-function)",
+   "type": "heteronym",
+   "year": 70
+  },
+  {
+   "pessoagraph_node": "nt_matthew",
+   "label": "Matthew (author-function)",
+   "type": "heteronym",
+   "year": 80
+  }
+ ],
+ "matching_note": "Labels may carry an alias after a slash — 'Jack Feist / LOGOS*' — so the matcher indexes every alternative in a label, not just the whole string. A first pass that normalised the label as one token missed Feist, the §12 LOGOS position, and would have recorded the archive's own primary set as eleven of twelve."
+}
