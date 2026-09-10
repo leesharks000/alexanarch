@@ -213,7 +213,25 @@ def seat_flat(draft, registry, schema):
     if extra: raise Refused("NORMALISE refused — fields not in the schema: %s. A new field is a schema change in its own commit." % extra)
     errs = [err.message for err in jsonschema.Draft7Validator(schema).iter_errors(e)]
     if errs: raise Refused("VALIDATE refused — " + "; ".join(errs[:5]))
-    if any(x.get("slug") == e["slug"] for x in registry["entries"]): raise Refused("slug already seated: " + e["slug"])
+    # SLUG COLLISION ON DISTINCT ADDRESSES (2026-09-10). The slug truncates the issued
+    # string at 44 characters, so two DIFFERENT addresses can produce the same slug —
+    # "what does the crimson hexagonal archive have to say about jesus?" and "...about
+    # data?" both truncate to "what-does-the-crimson-hexagonal-archive-have". Before this,
+    # the second was simply refused and could not be seated at all, which silently caps
+    # the registry at one capture per 44-character prefix per day.
+    #
+    # SLUGS ARE PERMANENT (see _FLOW.slugs_are_permanent): the seated one is never renamed,
+    # because a rename breaks every citation to it. The NEW capture is disambiguated instead,
+    # with the first six characters of its address hash — which is already distinct, since
+    # addr_id hashes the full issued string.
+    clash = next((x for x in registry["entries"] if x.get("slug") == e["slug"]), None)
+    if clash is not None:
+        if clash.get("addr_id") == e["addr_id"]:
+            raise Refused("slug already seated at the same address: " + e["slug"])
+        e["slug"] = e["slug"] + "-" + e["addr_id"].replace("ADDR-", "")[:6]
+        if any(x.get("slug") == e["slug"] for x in registry["entries"]):
+            raise Refused("slug still collides after disambiguation: " + e["slug"])
+        print(f"   slug disambiguated: distinct address collided on the 44-char prefix with {clash['slug']}")
     # INSERT at the end of its section (sections alphabetical; a new section goes where the alphabet puts it)
     E = registry["entries"]; pos = len(E)
     if any(x["s"] == e["s"] for x in E):
