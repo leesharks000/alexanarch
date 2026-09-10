@@ -63,9 +63,18 @@ def main():
             N[nid] = {"node_id": nid, "node_type": ntype, "label": label, **{k: v for k, v in kw.items() if v}}
         return nid
 
-    def edge(s, p, t, basis, ttype, note=None, src=None):
-        E.append({"source_id": s, "predicate": p, "target_id": t, "target_type": ttype,
-                  "basis": basis, "note": note, "provenance": src})
+    import hashlib
+
+    def rid(s, p, t):
+        """A stable id for the relation itself, so an assertion can point AT it and a
+        reified relation can hang off it. Content-derived: the same triple always gets the
+        same id, across rebuilds and across machines."""
+        return "rel:" + hashlib.sha256(f"{s}|{p}|{t}".encode()).hexdigest()[:16]
+
+    def edge(s, p, t, basis, ttype, note=None, src=None, frame=None):
+        E.append({"relation_id": rid(s, p, t),
+                  "source_id": s, "predicate": p, "target_id": t, "target_type": ttype,
+                  "basis": basis, "note": note, "provenance": src, "frame_id": frame})
 
     # ---- nodes: deposits, identities, aboutness persons
     for d in act:
@@ -183,12 +192,74 @@ def main():
             edge(s, "orthonymic_relation", f"identity:{slug(orth.get('target'))}", "asserted", "identity",
                  orth.get("relation"), "heteronyms/records")
 
+    # ---- STATUS AND VALIDITY, derived from the endpoints (2026-09-10).
+    # Before this, 210 edges touched a superseded or withdrawn deposit and were
+    # indistinguishable from current ones: the ledger said a relation held without saying
+    # whether either end still stood. An edge is only as live as its endpoints.
+    dstat = {f"deposit:{d['deposit_number']}": (d.get("status") or "ACTIVE") for d in reg}
+    ddate = {f"deposit:{d['deposit_number']}": d.get("date") for d in reg}
+    LIVE = {"ACTIVE", "CANONICAL"}
+    # SOME PREDICATES REQUIRE A DEAD ENDPOINT. `supersedes` points at a superseded record
+    # BY DEFINITION; marking it stale would report the edge doing its job as a defect. The
+    # first run of this flagged 14 supersedes edges that way.
+    EXPECTS_DEAD_TARGET = {"supersedes"}
+    for e in E:
+        ends = [dstat.get(e["source_id"])]
+        if e["predicate"] not in EXPECTS_DEAD_TARGET:
+            ends.append(dstat.get(e["target_id"]))
+        dead = [x for x in ends if x and x not in LIVE]
+        e["status"] = "current" if not dead else f"endpoint_{dead[0].lower()}"
+        # the edge is asserted no earlier than the record that asserts it
+        e["valid_from"] = ddate.get(e["source_id"])
+        e["valid_to"] = None
     OUT_E.write_text("\n".join(json.dumps(e, ensure_ascii=False) for e in E) + "\n", encoding="utf-8")
     OUT_N.write_text("\n".join(json.dumps(n, ensure_ascii=False) for n in N.values()) + "\n", encoding="utf-8")
+    # ---- ASSERTIONS: the speech act, separate from its content.
+    # An edge is WHAT is claimed. An assertion is WHO claimed it, WHEN, on WHAT BASIS, and
+    # whether that claim still stands. Keeping them apart matters because the same relation
+    # can be asserted by different parties at different times: the registry's creator field
+    # and a person's stated pressure block are not the same kind of act, and one can be
+    # revised without the other. Assertions point at relation_id, so they can equally attach
+    # to a membership or to a reified relation later without changing shape.
+    ASSERTERS = {
+        "registry.pressure":        ("person:lee-sharks", "stated in the deposit's own pressure block"),
+        "registry.develops_from":   ("person:lee-sharks", "stated development edge"),
+        "registry.measured_by":     ("person:lee-sharks", "stated instrument relation"),
+        "registry.supersedes":      ("person:lee-sharks", "stated supersession"),
+        "registry.defines_concepts":("person:lee-sharks", "concepts declared by the deposit"),
+        "registry.line":            ("person:lee-sharks", "line membership; basis field says stated or derived"),
+        "journals/assignments.jsonl":("editor:cha", "editorial assignment to a venue"),
+        "heteronyms/records":       ("person:lee-sharks", "the identity record"),
+        "registry.creator":         ("process:build_relations", "resolved from the creator field, no judgement"),
+        "registry.cited_by":        ("process:extract_citations", "extracted from the text"),
+        "registry.related_deposits":("process:build_relations", "carried over; the source field states no kind"),
+        "named-entities.json":      ("process:build_relations", "matched by the register's stated pattern"),
+    }
+    A = []
+    for e in E:
+        who, how = ASSERTERS.get(e.get("provenance") or "", ("process:build_relations", "derived"))
+        A.append({"assertion_id": "as:" + hashlib.sha256(
+                      f"{e['relation_id']}|{who}|{e['provenance']}".encode()).hexdigest()[:16],
+                  "about": e["relation_id"],
+                  "about_type": "relation",
+                  "asserted_by": who,
+                  "act": how,
+                  "basis": e["basis"],
+                  "on_date": e.get("valid_from"),
+                  "status": e["status"],
+                  "source": e.get("provenance"),
+                  "retracted_by": None})
+    (ROOT / "data/assertions.jsonl").write_text(
+        "\n".join(json.dumps(a, ensure_ascii=False) for a in A) + "\n", encoding="utf-8")
+
     pc = collections.Counter(e["predicate"] for e in E)
     bc = collections.Counter(e["basis"] for e in E)
     nt = collections.Counter(n["node_type"] for n in N.values())
-    print(f"relations: {len(E):,} edges over {len(N):,} nodes")
+    sc = collections.Counter(e["status"] for e in E)
+    ac = collections.Counter(a["asserted_by"] for a in A)
+    print(f"relations: {len(E):,} edges over {len(N):,} nodes; {len(A):,} assertions")
+    print("  status:     " + ", ".join(f"{k}={v:,}" for k, v in sc.most_common()))
+    print("  asserted_by:" + ", ".join(f" {k}={v:,}" for k, v in ac.most_common()))
     print("  predicates: " + ", ".join(f"{k}={v:,}" for k, v in pc.most_common()))
     print("  basis:      " + ", ".join(f"{k}={v:,}" for k, v in bc.most_common()))
     print("  node types: " + ", ".join(f"{k}={v:,}" for k, v in nt.most_common()))
