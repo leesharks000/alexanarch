@@ -169,6 +169,7 @@ module.exports = async (req, res) => {
   // are badArgument under OAI-PMH 3.2, and both are exactly what a strict
   // validator sends. Accepting them is not leniency — it means the endpoint
   // reports success for a request it did not honour.
+  const BASE_URL = 'https://www.alexanarch.org/oai';
   const ALLOWED = {
     Identify: [],
     ListMetadataFormats: ['identifier'],
@@ -184,8 +185,24 @@ module.exports = async (req, res) => {
   if (verb && ALLOWED[verb]) {
     const illegal = Object.keys(p).filter((k) => k !== 'verb' && !ALLOWED[verb].includes(k));
     if (illegal.length) {
+      // THE REFUSAL MUST CARRY ITS REMEDY (2026-09-09). Two independent callers — a
+      // language model and this repository's own operator — probed every verb with
+      // `&metadataPrefix=oai_dc` appended, got a correct badArgument, and both read it
+      // as the endpoint being broken. The refusal is required by OAI-PMH 3.2 and is not
+      // relaxed. What was missing is the fix: a caller who is told only that an argument
+      // is illegal has to go and read the spec, and a caller who is told the working URL
+      // retries in one step. State what the verb takes and print the corrected request.
+      const takes = ALLOWED[verb].length
+        ? `${verb} takes: ${ALLOWED[verb].join(', ')}.`
+        : `${verb} takes no arguments besides verb.`;
+      const fixed = `${BASE_URL}?verb=${verb}` + ALLOWED[verb]
+        .filter((k) => p[k] !== undefined && k !== 'resumptionToken')
+        .map((k) => `&${k}=${encodeURIComponent(p[k])}`).join('');
+      const hint = illegal.includes('metadataPrefix')
+        ? ' metadataPrefix belongs to ListIdentifiers, ListRecords and GetRecord only; it is not a global parameter.'
+        : '';
       return send(oaiError(reqAttrs, 'badArgument',
-        `Illegal argument(s) for ${verb}: ${illegal.join(', ')}.`));
+        `Illegal argument(s) for ${verb}: ${illegal.join(', ')}. ${takes}${hint} Retry: ${fixed}`));
     }
     // resumptionToken is exclusive: when present, verb and it are the only
     // permitted arguments. A harvester that pairs it with metadataPrefix has
