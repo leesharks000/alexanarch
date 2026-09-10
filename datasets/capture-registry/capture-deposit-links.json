@@ -3,27 +3,27 @@
   "name": "Capture ↔ Deposit Link Map",
   "description": "Edges between EA-WG-CAPTURES-01 (the AI Overview / AI Mode Capture Registry, authored at machinemediation.org) and the Alexanarch deposit corpus. Produced by scripts/resolve_capture_links.py. Each edge records the resolution method so any confidence tier can be discarded. An edge asserts that the capture entry references, or its query matches, the deposit — not that the deposit is the capture's sole subject; exactly one edge per capture is marked primary, ranked by evidence of aboutness rather than by identifier hardness (a DOI can be cited in passing). Deposit-number mentions are deliberately excluded as unsafe. Unresolved captures are enumerated rather than silently dropped.",
   "generated_by": "scripts/resolve_capture_links.py",
-  "generated_at": "2026-09-10T05:05:17Z",
+  "generated_at": "2026-09-10T12:19:00Z",
   "captures_source": {
     "file": "data/EA-WG-CAPTURES-01.json",
     "version": "11.7",
     "date": "2026-09-05",
-    "total_captures": 411,
+    "total_captures": 412,
     "canonical_home": "https://www.machinemediation.org/data/registry.json",
-    "sha256": "89cd2ff225cb6917e533e2c52b57c93ffdce5a427a89445e55fddf687187b902"
+    "sha256": "52068d957583c92e3a6dc028a156d691b59c7207659f15285d65d8c5993321d5"
   },
   "totals": {
-    "captures": 411,
+    "captures": 412,
     "captures_linked": 214,
-    "captures_unresolved": 197,
-    "link_rate": 0.5207,
-    "edges": 510
+    "captures_unresolved": 198,
+    "link_rate": 0.5194,
+    "edges": 512
   },
   "method_counts": {
     "hard/axn": 56,
     "hard/doi": 31,
     "hard/series": 29,
-    "soft/title": 215,
+    "soft/title": 217,
     "soft/keyword": 68,
     "soft/description": 28,
     "soft/body": 83
@@ -7279,6 +7279,16 @@
           "evidence": "anti-suppression infrastructure",
           "primary": false,
           "doi_status": null
+        },
+        {
+          "deposit_number": 1606,
+          "axn": "AXN:0696.UNCLASSIFIED.🛤️🌅🤲🗂️🔓🍄",
+          "title": "AXN as Anti-Suppression Infrastructure: Historical Precedents and Design Directions (v5 — the text, seated)",
+          "record_url": "https://www.alexanarch.org/s/records/1606/",
+          "method": "soft/title",
+          "evidence": "anti-suppression infrastructure",
+          "primary": false,
+          "doi_status": null
         }
       ]
     },
@@ -7321,6 +7331,16 @@
           "axn": "AXN:0458.EMPIRICAL.🌸♠️🪦📎⚖️🚀",
           "title": "AXN as Anti-Suppression Infrastructure: Historical Precedents and Design Directions (v5, Source-Engaged Revision, Supersession of #1094)",
           "record_url": "https://www.alexanarch.org/s/records/1095/",
+          "method": "soft/title",
+          "evidence": "anti-suppression infrastructure",
+          "primary": false,
+          "doi_status": null
+        },
+        {
+          "deposit_number": 1606,
+          "axn": "AXN:0696.UNCLASSIFIED.🛤️🌅🤲🗂️🔓🍄",
+          "title": "AXN as Anti-Suppression Infrastructure: Historical Precedents and Design Directions (v5 — the text, seated)",
+          "record_url": "https://www.alexanarch.org/s/records/1606/",
           "method": "soft/title",
           "evidence": "anti-suppression infrastructure",
           "primary": false,
@@ -10538,6 +10558,11 @@
     },
     {
       "slug": "estimate-crimson-hexagonal-archive-valuation-20260910-f65e6d",
+      "q": "estimate crimson hexagonal archive valuation as asset/corpus + infrastructure + emerging commercial platform",
+      "date": "2026-09-10"
+    },
+    {
+      "slug": "estimate-crimson-hexagonal-archive-valuation-20260910-592e11",
       "q": "estimate crimson hexagonal archive valuation as asset/corpus + infrastructure + emerging commercial platform",
       "date": "2026-09-10"
     },
