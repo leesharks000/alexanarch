@@ -201,7 +201,19 @@ def seat_flat(draft, registry, schema):
     e["imgs"] = e.get("imgs") or []; e["img_urls"] = e.get("img_urls") or ["https://www.alexanarch.org/" + p for p in e["imgs"]]
     e["links"] = e.get("links") or [{"url": "https://www.alexanarch.org/captures/#" + e["slug"], "authority": "canonical", "note": "the archive holds the registry and this entry"}]
     e["cite"] = e.get("cite") or "https://www.alexanarch.org/captures/#" + e["slug"]
-    e["addr_id"] = "ADDR-" + hashlib.sha256(draft["q"].encode()).hexdigest()[:12]
+    # ADDR_ID MUST IMPLEMENT THE SURFACE RULE (2026-09-10). address_key() has keyed on
+    # (string, surface) for captures dated on or after 2026-08-15 since MANUS ruled it, but
+    # addr_id hashed the STRING ALONE — so four surfaces collapsed to one address id, which
+    # is exactly what the rule forbids. Found when the same valuation prompt, already seated
+    # on Perplexity, was refused on Google AI Overview as "the same address". It is not the
+    # same address; it is the same string on a different composition layer, which is the
+    # comparison the registry exists to make.
+    #
+    # FORWARD-ONLY, like the rule itself. Entries dated before 2026-08-15 keep the
+    # string-only key and are never re-keyed; retroactive re-keying was the 2026-08-13
+    # defect and is not repeated here.
+    e["addr_id"] = "ADDR-" + hashlib.sha256(
+        address_key(draft["q"], draft.get("surface"), draft.get("date")).encode()).hexdigest()[:12]
     e["obs_id"] = "OBS-" + hashlib.sha256((draft["q"] + draft["date"] + draft["surface"]).encode()).hexdigest()[:12]
     e["n_observations"] = 1; e["observations"] = e.get("observations") or []
     e["d_full"] = e.get("d_full") or e["d"]; e["d_truncated"] = False
