@@ -166,6 +166,40 @@ def main():
                 node(pid, "problem", str(t))
                 edge(s, k, pid, "asserted", "problem", pr.get("note"), "registry.pressure")
 
+# ---- CURATED STRUCTURAL EDGES (2026-09-10, operator-directed).
+    # The Pearl / white-stone / Revelation chain is fully documented in the deposits and was
+    # entirely untyped: #452 registers the correspondence between Pearl and Other Poems (2014),
+    # the white stone and new name of Revelation 2:17, and the Lagrange torus field; #165 reads
+    # Rev 2:12-17 as coercive public inscription against a receiver-validated counter-economy;
+    # #828 puts Sappho 31, the Orphic gold tablets and the white stone in one series as
+    # "inscription as threshold technology"; #202 states Revelation First as priority, not
+    # earliness. Every edge below cites the deposit that already asserts it. basis is `editorial`
+    # because the SELECTION is an editorial act even where each relation is asserted in its source.
+    STRUCTURAL = [
+        (452, "registers_correspondence", 165, "Pearl and Other Poems as white stone at Pergamum; #165 reads the Pergamon letter"),
+        (452, "registers_correspondence", 828, "the same white stone, read as threshold inscription"),
+        (165, "reads", 828, "Rev 2:17 in both; the counter-archive and the surviving inscription"),
+        (828, "places_in_series", 283, "Sappho 31 as the earliest structural instance; #828 makes it the first term"),
+        (202, "states_priority_of", 407, "Revelation First; #407 is the Room's ground truth"),
+        (407, "states_priority_of", 636, "the Cosmic Christ as originary image; the Apocalypse as originary scripture"),
+        (636, "develops", 202, "the fourfold thesis restates and extends the priority claim"),
+        (902, "redirects", 202, "from the historical Jesus to the historical Logos"),
+    ]
+    for a, pred, b, why in STRUCTURAL:
+        if a in by_n and b in by_n:
+            edge(f"deposit:{a}", pred, f"deposit:{b}", "editorial", "deposit", why, "curated.pearl-white-stone")
+
+    # The medieval Pearl is a node the archive does not hold and should be addressable anyway:
+    # its dream-vision closes on the New Jerusalem of Revelation 21, which is the same book the
+    # chain above turns on. Recorded as a work node with no deposit behind it.
+    node("work:pearl-middle-english", "work", "Pearl (Middle English, c. 1380)",
+         note="anonymous; Cotton Nero A.x; dream-vision elegy closing on the New Jerusalem of Revelation 21")
+    for d_ in (452,):
+        if d_ in by_n:
+            edge(f"deposit:{d_}", "shares_title_with", "work:pearl-middle-english", "editorial", "work",
+                 "the title collision that summarizers resolve toward the medieval poem; both close on Revelation",
+                 "curated.pearl-white-stone")
+
     # ---- published_in: editorial assignment
     ja = ROOT / "datasets/journals/assignments.jsonl"
     if ja.exists():
