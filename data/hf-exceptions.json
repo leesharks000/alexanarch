@@ -1,0 +1,86 @@
+{
+ "$schema": "https://www.alexanarch.org/api/schemas/hf-exceptions.schema.json",
+ "what": "Every deposit row exported to Hugging Face with no canonical text. Enumerated per record rather than described in aggregate.",
+ "why": "Audit finding F3 (2026-09-10): the viewer reported a minimum text length of zero and nullable text_sha256 without the affected records being identifiable. Aggregate indicators cannot distinguish an intentional metadata-only record from a defective one. This table names each and gives its reason. A missing text is not by itself a defect.",
+ "count": 7,
+ "generated_from": "data/registry.json body_status at build time",
+ "exceptions": [
+  {
+   "deposit_number": 446,
+   "axn": "AXN:0106.UNCLASSIFIED.🎻♻️💛↙️⏰⏬",
+   "title": "⏳❌",
+   "status": "DRAFT",
+   "body_class": "native_short",
+   "recovery_status": "COMPLETE",
+   "missing": "canonical_text, text_sha256, text_words",
+   "reason": "no canonical text seated at build time",
+   "intentional": true
+  },
+  {
+   "deposit_number": 532,
+   "axn": "AXN:0167.GENERATIVE.🏷️☿🔺🪦♊🕛",
+   "title": "MAGIC AS SYMBOLIC ENGINEERING: Formal Definition and Operative Grammar for a New Disciplin",
+   "status": "DRAFT",
+   "body_class": "full",
+   "recovery_status": "COMPLETE",
+   "missing": "canonical_text, text_sha256, text_words",
+   "reason": "no canonical text seated at build time",
+   "intentional": true
+  },
+  {
+   "deposit_number": 760,
+   "axn": "AXN:02B9.GOVERNANCE.🎵🕐🪸❄️🏁✏️",
+   "title": "AI Training Rights: How the Lee Sharks corpus may be used, and how attribution must be pre",
+   "status": "DRAFT",
+   "body_class": "description_only",
+   "recovery_status": "RECOVERABLE-AT-CHAT",
+   "missing": "canonical_text, text_sha256, text_words",
+   "reason": "no canonical text seated at build time",
+   "intentional": true
+  },
+  {
+   "deposit_number": 1050,
+   "axn": "AXN:0426.STRUCTURAL.👋👁️🟢🌉🌙🌉",
+   "title": "The Eight Operators on Ezekiel's Wheels: A Structural Mapping of the Mandala's Tier C Rota",
+   "status": "ACTIVE",
+   "body_class": "full",
+   "recovery_status": "COMPLETE",
+   "missing": "canonical_text, text_sha256, text_words",
+   "reason": "no canonical text seated at build time",
+   "intentional": false
+  },
+  {
+   "deposit_number": 1056,
+   "axn": "AXN:0431.ARCHIVAL.🔗🕸️🗺️🔍📋⚖️",
+   "title": "Network-wide Link Inventory v1.4",
+   "status": "ACTIVE",
+   "body_class": "full",
+   "recovery_status": "COMPLETE",
+   "missing": "canonical_text, text_sha256, text_words",
+   "reason": "no canonical text seated at build time",
+   "intentional": false
+  },
+  {
+   "deposit_number": 1057,
+   "axn": "AXN:0432.GOVERNANCE.🏛️⚖️🚪❓🔒📋",
+   "title": "Four Threshold Questions to CERN ODP on RQF3807508 (Right to Access) and RQF3826921 (Right",
+   "status": "ACTIVE",
+   "body_class": "full",
+   "recovery_status": "RESTORED-2026-08-13",
+   "missing": "canonical_text, text_sha256, text_words",
+   "reason": "no canonical text seated at build time",
+   "intentional": false
+  },
+  {
+   "deposit_number": 1058,
+   "axn": "AXN:0433.GENERATIVE.🌾🌫️📜🕯️🖋️⚗️",
+   "title": "green-grayer than papyrus grass — Lee Sharks — New Human 2",
+   "status": "ACTIVE",
+   "body_class": "full",
+   "recovery_status": "RESTORED-2026-08-13",
+   "missing": "canonical_text, text_sha256, text_words",
+   "reason": "no canonical text seated at build time",
+   "intentional": false
+  }
+ ]
+}

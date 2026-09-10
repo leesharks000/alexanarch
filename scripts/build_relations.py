@@ -51,10 +51,13 @@ def main():
 
     # heteronymic identities: canonical store is datasets/heteronyms/records/
     hets = {}
+    recs_by_slug = {}
     for f in sorted((ROOT / "datasets/heteronyms/records").glob("*.json")):
         h = json.loads(f.read_text(encoding="utf-8"))
         pid = h.get("person_id") or slug(h.get("name", ""))
         hets[pid] = h
+        recs_by_slug[pid] = h
+        recs_by_slug[slug(h.get("name", ""))] = h
 
     E, N = [], {}
 
@@ -82,7 +85,12 @@ def main():
              axn=d.get("axn"), record_url=f"https://alexanarch.org/s/records/{d['deposit_number']}/")
     for pid, h in hets.items():
         it = h.get("identity_type", "identity")
-        node(f"{'heteronym' if 'heteronym' in it else 'identity'}:{pid}", it, h.get("name", pid),
+        # F5 (audit 2026-09-10) — PREFIX MUST MATCH THE CANONICAL STORE. datasets/frames
+        # keys mantles as `mantle:` and this builder emitted them as `identity:`, so seven
+        # memberships pointed at nodes that did not exist under the id they used. The frames
+        # file is canonical for identity prefixes; the ledger follows it.
+        pre = 'heteronym' if 'heteronym' in it else ('mantle' if it == 'mantle' else 'identity')
+        node(f"{pre}:{pid}", it, h.get("name", pid),
              function=h.get("function"), office=(h.get("office") or {}).get("title"))
     for e in ents:
         node(f"person:{e['id']}", "person", e["name"], wikidata=e.get("wikidata"), floruit=e.get("floruit"))
@@ -105,11 +113,16 @@ def main():
         s = f"deposit:{d['deposit_number']}"
         if pid:
             it = hets[pid].get("identity_type", "identity")
-            edge(s, "created_by", f"{'heteronym' if 'heteronym' in it else 'identity'}:{pid}",
+            pre = 'heteronym' if 'heteronym' in it else ('mantle' if it == 'mantle' else 'identity')
+            edge(s, "created_by", f"{pre}:{pid}",
                  "derived-deterministic", it, f"creator field: {d.get('creator')}", "registry.creator")
         else:
-            edge(s, "created_by", f"agent:{slug(d.get('creator') or 'unattributed')}",
-                 "derived-deterministic", "agent", d.get("creator"), "registry.creator")
+            # F5 (audit 2026-09-10) — AN EDGE TARGET MUST BE A REGISTERED NODE.
+            # 111 `agent:` targets were created here and never emitted to nodes.jsonl,
+            # leaving them unresolvable to any consumer joining relations against nodes.
+            aid = f"agent:{slug(d.get('creator') or 'unattributed')}"
+            node(aid, "agent", d.get("creator") or "unattributed")
+            edge(s, "created_by", aid, "derived-deterministic", "agent", d.get("creator"), "registry.creator")
 
     # ---- about: the aboutness register, pattern-detected
     for d in act:
@@ -224,7 +237,8 @@ def main():
     # ---- heteronym affiliations, from the canonical identity records
     for pid, h in hets.items():
         it = h.get("identity_type", "identity")
-        s = f"{'heteronym' if 'heteronym' in it else 'identity'}:{pid}"
+        pre = 'heteronym' if 'heteronym' in it else ('mantle' if it == 'mantle' else 'identity')
+        s = f"{pre}:{pid}"
         for a in (h.get("institutional_affiliations") or []):
             inst = a.get("institution") if isinstance(a, dict) else a
             if not inst: continue
@@ -233,7 +247,15 @@ def main():
                  (a.get("role") if isinstance(a, dict) else None), "heteronyms/records")
         orth = h.get("orthonym_relation")
         if isinstance(orth, dict) and orth.get("target"):
-            edge(s, "orthonymic_relation", f"identity:{slug(orth.get('target'))}", "asserted", "identity",
+            # F5 — RESOLVE THE TARGET THROUGH THE SAME PREFIX RULE AS THE NODE. All twelve
+            # orthonymic_relation edges pointed at `identity:lee-sharks` while the aperture is
+            # typed heteronym_aperture and registered under a different prefix, so every one
+            # was unresolvable. The target is looked up in the records rather than assumed.
+            tgt = slug(orth.get("target"))
+            trec = recs_by_slug.get(tgt)
+            tit = (trec or {}).get("identity_type", "identity")
+            tpre = 'heteronym' if 'heteronym' in tit else ('mantle' if tit == 'mantle' else 'identity')
+            edge(s, "orthonymic_relation", f"{tpre}:{tgt}", "asserted", tit,
                  orth.get("relation"), "heteronyms/records")
 
     # ---- STATUS AND VALIDITY, derived from the endpoints (2026-09-10).
@@ -256,6 +278,32 @@ def main():
         # the edge is asserted no earlier than the record that asserts it
         e["valid_from"] = ddate.get(e["source_id"])
         e["valid_to"] = None
+    # F5 — REFERENCED DEPOSITS MUST BE REGISTERED EVEN WHEN NOT ACTIVE. Node creation
+    # walks ACTIVE deposits only, but supersession and citation edges legitimately point at
+    # SUPERSEDED and WITHDRAWN records — 39 such targets were unresolvable. A superseded
+    # record is exactly the thing a supersession edge should reach.
+    for e in E:
+        for side in ("source_id", "target_id"):
+            nid = e[side]
+            if nid.startswith("deposit:") and nid not in N:
+                num = nid.split(":", 1)[1]
+                dd = by_n.get(int(num)) if num.isdigit() else None
+                if dd:
+                    node(nid, "deposit", dd.get("title", ""), axn=dd.get("axn"),
+                         status=dd.get("status") or "ACTIVE",
+                         record_url=f"https://alexanarch.org/s/records/{num}/")
+
+    # F5 — DEDUPLICATE ON relation_id. The same (source, predicate, target) triple can be
+    # emitted from two substrates — a citation present in both the registry field and the
+    # citation graph, for instance. relation_id is content-derived, so duplicates are exact;
+    # 22 were being written. The first occurrence wins and its provenance is kept.
+    _seen, _uniq = set(), []
+    for e in E:
+        if e["relation_id"] in _seen:
+            continue
+        _seen.add(e["relation_id"]); _uniq.append(e)
+    E[:] = _uniq
+
     OUT_E.write_text("\n".join(json.dumps(e, ensure_ascii=False) for e in E) + "\n", encoding="utf-8")
     OUT_N.write_text("\n".join(json.dumps(n, ensure_ascii=False) for n in N.values()) + "\n", encoding="utf-8")
     # ---- ASSERTIONS: the speech act, separate from its content.

@@ -1,0 +1,141 @@
+{
+ "$schema": "https://www.alexanarch.org/api/schemas/hf-build-manifest.schema.json",
+ "what": "Per-build record of source revision, exporter, per-file hashes and row counts.",
+ "why": "Audit finding F6 (2026-09-10): the repository advertised a Parquet hash but there was no consumer-facing path from an upstream revision to a verifiable rebuild.",
+ "source_revision": "a06dec760887863e915b440e5ada3af9d5623247",
+ "exporter": "scripts/build_hf_dataset.py",
+ "relations_source": "scripts/build_relations.py -> data/relations.jsonl, data/nodes.jsonl, data/assertions.jsonl",
+ "built_at": "2026-09-10T15:56:38Z",
+ "configs": 21,
+ "total_rows": 66356,
+ "hash_note": "These are FILE hashes of the exported Parquet. They are not the canonical record hashes: deposits.text_sha256 is the sha256 of deposits.canonical_text, and AXN glyphs derive from that same canonical digest. Three different things.",
+ "rebuild": "git checkout <source_revision> && python3 scripts/build_relations.py && python3 scripts/build_hf_dataset.py --out <dir>",
+ "files": [
+  {
+   "file": "assertions.parquet",
+   "bytes": 294257,
+   "sha256": "aa7453e7e81625ed57c4d077b0ae897e54f5b7d69a8f3091e9782d0c0549935b",
+   "rows": 12748
+  },
+  {
+   "file": "blog_posts.parquet",
+   "bytes": 517361,
+   "sha256": "31827757b15b87e79c09f8430b48d6e1777152669432a3b1ba1b63d3e51cfef0",
+   "rows": 2939
+  },
+  {
+   "file": "captures.parquet",
+   "bytes": 2091031,
+   "sha256": "0389efd39127a906348722caa08d175826cb7c295405de2ad00f81984893f673",
+   "rows": 416
+  },
+  {
+   "file": "citations.parquet",
+   "bytes": 132083,
+   "sha256": "db4ebb57e76b789e9d06df8d295c32aef99ec4e66668c26ad30c43e687a623b5",
+   "rows": 10483
+  },
+  {
+   "file": "deposits.parquet",
+   "bytes": 34049590,
+   "sha256": "0c96dcfbf82f4e91b0d56cefc40d4d0650ed1d1097bb606960940b34ea26390b",
+   "rows": 1607
+  },
+  {
+   "file": "entities.parquet",
+   "bytes": 6360,
+   "sha256": "23431ab0999936add35fae6fccdb0ca31fae95a8a0276e2f8c378af80e929776",
+   "rows": 24
+  },
+  {
+   "file": "frames.parquet",
+   "bytes": 2241,
+   "sha256": "b7a031ca43982c7092e3823239cde065ee0bf5defa42e0cc14a6561509c8e48d",
+   "rows": 4
+  },
+  {
+   "file": "graph_join.parquet",
+   "bytes": 2131,
+   "sha256": "dd62a3338c1fed8d32daf8ab4d19fa2470f13b0e8c1d2975fdd8373a1ebd4e13",
+   "rows": 26
+  },
+  {
+   "file": "heteronyms.parquet",
+   "bytes": 231378,
+   "sha256": "1acf7ac1797ddf87b2300642c87623835d9b6dceda992a31a749545dc6e5f212",
+   "rows": 26
+  },
+  {
+   "file": "journal_assignments.parquet",
+   "bytes": 121092,
+   "sha256": "3c860866157da42a2baf5c5cce8217fc2da433358674f9ab8e768b95661f0c07",
+   "rows": 1488
+  },
+  {
+   "file": "lexicon.parquet",
+   "bytes": 817453,
+   "sha256": "e9cb4d307d0b739ecd102060851db21cee06e6e188635ca7b342f6d3c81e398c",
+   "rows": 12333
+  },
+  {
+   "file": "memberships.parquet",
+   "bytes": 2268,
+   "sha256": "2363dd9093aaaa5beedce0bf38cfe0679ce9f9b8fe319722e149c424910341f3",
+   "rows": 25
+  },
+  {
+   "file": "nodes.parquet",
+   "bytes": 311415,
+   "sha256": "7a730ed927010931e026de3d88f3230f5479f9655cf4c9490015b78a01fbfd40",
+   "rows": 9287
+  },
+  {
+   "file": "pessoagraph.parquet",
+   "bytes": 32629,
+   "sha256": "102c27fffaa44a0ece09e8563facb0b77b86f74a90387590292a758def396302",
+   "rows": 498
+  },
+  {
+   "file": "predictions.parquet",
+   "bytes": 74826,
+   "sha256": "e8d096505449aa4b60451f5b0748783e1f3ebd5c0a1a237fbfcbc94a0acb6038",
+   "rows": 513
+  },
+  {
+   "file": "reception.parquet",
+   "bytes": 3091,
+   "sha256": "d401b721bbe237a6cdb02fb8f22b225260f67e9afc7321e7541f530eaa5f6f35",
+   "rows": 21
+  },
+  {
+   "file": "relations.parquet",
+   "bytes": 286735,
+   "sha256": "a80670ef99df46df91d77a0a9edf1526ac540cb21a2b5e72a3e078c02f3fb2f3",
+   "rows": 12748
+  },
+  {
+   "file": "sources.parquet",
+   "bytes": 238804,
+   "sha256": "35256fe18c58dc37c990c5b6c0c140e173995af75923ad1ced90143082b9a3d8",
+   "rows": 9
+  },
+  {
+   "file": "studies.parquet",
+   "bytes": 7852,
+   "sha256": "5c13e61c694c6b5a18dd6660538f205c7e7b16560debfe2fa94a5a3db560360b",
+   "rows": 17
+  },
+  {
+   "file": "tombstones.parquet",
+   "bytes": 74121,
+   "sha256": "14267ccc995ac25019cf8952cb3ea30bc2f69e64a4993af2f9d46135b235c514",
+   "rows": 1136
+  },
+  {
+   "file": "venues.parquet",
+   "bytes": 3172,
+   "sha256": "2204f5e81a77f00e06a4332fafe4b670858bfe7a37dd250360bfd71f3ea71fe6",
+   "rows": 8
+  }
+ ]
+}
