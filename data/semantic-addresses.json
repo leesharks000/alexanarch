@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-09-10T13:12:10Z",
+  "regenerated_at": "2026-09-10T13:46:51Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "5411b6bcd17892c5eb32b1e2a04680e8b785c0d94e58dcc74e4749cdefecf4d6",
+    "mm-main-capture": "5e4231d72238706453cd003bc01a1e7d489d95fcf0d7281c05f364a8341549c8",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2191,
-  "total_observations": 485,
+  "total_addresses": 2192,
+  "total_observations": 486,
   "class_counts": {
     "subjunctive": 1745,
-    "observed_address": 426,
+    "observed_address": 427,
     "verified_non_address": 20
   },
   "type_counts": {
-    "unmatched": 1564,
+    "unmatched": 1565,
     "single_concept": 618,
     "multi_concept": 9
   },
@@ -5105,6 +5105,32 @@
       ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-08-03",
+      "latest_status": "CAPTURE"
+    },
+    "[valuation memorandum supplied] your thoughts": {
+      "canonical_query": "[valuation memorandum supplied] your thoughts",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-10",
+          "status": "CAPTURE",
+          "source_format": "ChatGPT (chatgpt.com); signed out; search enabled and used extensively. One turn, with the memorandum supplied as input. DISTINCT IN KIND from the other seven: those were prompt probes, this is an assessment of the memorandum that went and checked the assets it describes.",
+          "section": "Valuation",
+          "slug": "valuation-memorandum-supplied-your-thoughts-20260910",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#valuation-memorandum-supplied-your-thoughts-20260910",
+          "mirror_gallery_url": "https://leesharks.com/captures/#valuation-memorandum-supplied-your-thoughts-20260910",
+          "details_excerpt": "THE ONLY ASSESSMENT THAT INSPECTED THE INFRASTRUCTURE RATHER THAN COMPOSING ABOUT IT, and the only one that applies the discounts the others do not — explicitly, and says so: 'Because I'm applying the discounts that the "
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-10",
       "latest_status": "CAPTURE"
     },
     "a transfiguration": {
