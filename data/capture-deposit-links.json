@@ -3,20 +3,20 @@
   "name": "Capture ↔ Deposit Link Map",
   "description": "Edges between EA-WG-CAPTURES-01 (the AI Overview / AI Mode Capture Registry, authored at machinemediation.org) and the Alexanarch deposit corpus. Produced by scripts/resolve_capture_links.py. Each edge records the resolution method so any confidence tier can be discarded. An edge asserts that the capture entry references, or its query matches, the deposit — not that the deposit is the capture's sole subject; exactly one edge per capture is marked primary, ranked by evidence of aboutness rather than by identifier hardness (a DOI can be cited in passing). Deposit-number mentions are deliberately excluded as unsafe. Unresolved captures are enumerated rather than silently dropped.",
   "generated_by": "scripts/resolve_capture_links.py",
-  "generated_at": "2026-09-10T12:19:00Z",
+  "generated_at": "2026-09-10T12:59:52Z",
   "captures_source": {
     "file": "data/EA-WG-CAPTURES-01.json",
     "version": "11.7",
     "date": "2026-09-05",
-    "total_captures": 412,
+    "total_captures": 413,
     "canonical_home": "https://www.machinemediation.org/data/registry.json",
-    "sha256": "52068d957583c92e3a6dc028a156d691b59c7207659f15285d65d8c5993321d5"
+    "sha256": "077cac0408ab4d687e389fbadb2d6425226af654bde4595af5bffd544475145a"
   },
   "totals": {
-    "captures": 412,
+    "captures": 413,
     "captures_linked": 214,
-    "captures_unresolved": 198,
-    "link_rate": 0.5194,
+    "captures_unresolved": 199,
+    "link_rate": 0.5182,
     "edges": 512
   },
   "method_counts": {
@@ -10545,6 +10545,11 @@
       "slug": "tell-me-about-the-book-secret-book-of-walt-20260909",
       "q": "tell me about the book Secret Book of Walt",
       "date": "2026-09-09"
+    },
+    {
+      "slug": "estimate-crimson-hexagonal-archive-valuation-20260910-00101e",
+      "q": "estimate crimson hexagonal archive valuation as asset/corpus + infrastructure + emerging commercial platform",
+      "date": "2026-09-10"
     },
     {
       "slug": "what-is-the-crimson-hexahonal-archive-worth-20260910",
