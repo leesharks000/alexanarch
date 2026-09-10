@@ -1,0 +1,122 @@
+{
+ "$schema": "https://www.alexanarch.org/api/schemas/hf-join-recipe.schema.json",
+ "what": "Keys, directions and a worked traversal for the graph configs of the Hugging Face export.",
+ "why": "Audit finding F5 (2026-09-10): the dedicated graph files existed but the card gave no complete join recipe, and file presence alone does not establish referential integrity. This document gives the keys and reports a validation run.",
+ "keys": {
+  "nodes": {
+   "primary_key": "node_id",
+   "form": "<type>:<slug>",
+   "note": "the universal object registry; every relation endpoint resolves here"
+  },
+  "relations": {
+   "primary_key": "relation_id",
+   "form": "rel:<sha256(source|predicate|target)[:16]>",
+   "foreign_keys": {
+    "source_id": "nodes.node_id",
+    "target_id": "nodes.node_id"
+   },
+   "direction": "source --predicate--> target; the predicate reads left to right",
+   "note": "relation_id is content-derived and stable across rebuilds and machines"
+  },
+  "assertions": {
+   "primary_key": "assertion_id",
+   "foreign_keys": {
+    "about": "relations.relation_id"
+   },
+   "cardinality": "one assertion per relation in this build; the shape permits many",
+   "note": "an edge is WHAT is claimed; an assertion is WHO claimed it, in what act, on what basis, and whether it still stands"
+  },
+  "memberships": {
+   "foreign_keys": {
+    "node_id": "nodes.node_id",
+    "frame_id": "frames.frame_id"
+   },
+   "note": "a membership is not an edge: it carries slot, role and TOPOLOGY — inside, outside, inside-and-outside, position-not-occupant"
+  },
+  "frames": {
+   "primary_key": "frame_id",
+   "note": "the arrangement under which memberships take a configuration"
+  },
+  "pessoagraph": {
+   "primary_key": "id for kind=node",
+   "note": "IMPORTED AS ITS OWN BODY with its own namespace; NOT joinable to nodes.node_id directly"
+  },
+  "graph_join": {
+   "foreign_keys": {
+    "heteronyms_record": "heteronyms.person_id",
+    "pessoagraph_node": "pessoagraph.id"
+   },
+   "note": "the only bridge between the two namespaces; 22 of 26 identities join, 175 lineage nodes do not and that is correct"
+  },
+  "citations": {
+   "note": "deposit-level citation edges, kept as their own config; the same relations also appear in `relations` under predicate `cites`. A consumer wanting one representation should use `relations` and filter."
+  }
+ },
+ "basis_vocabulary": {
+  "asserted": "a person stated it",
+  "editorial": "a registry decision",
+  "derived-deterministic": "a rule, no judgement",
+  "pattern-detected": "an explicit stated pattern"
+ },
+ "status_propagation": "relations.status derives from the endpoints' deposit status. `supersedes` is exempt: it points at a superseded record by definition.",
+ "validation": {
+  "run_at": "2026-09-10T15:56:36Z",
+  "nodes": 9287,
+  "relations": 12748,
+  "assertions": 12748,
+  "memberships": 25,
+  "frames": 4,
+  "relations_with_unresolved_source": 0,
+  "relations_with_unresolved_target": 0,
+  "orphaned_assertions": 0,
+  "memberships_with_unknown_node": 0,
+  "duplicate_relation_ids": 0,
+  "duplicate_node_ids": 0,
+  "repairs_this_build": [
+   "agent nodes registered (111 previously unresolvable targets)",
+   "non-ACTIVE deposits registered when referenced (39)",
+   "mantle prefix aligned to datasets/frames, the canonical store (7 memberships)",
+   "orthonymic_relation targets resolved through the record's own identity_type (12)",
+   "deduplicated on content-derived relation_id (22)"
+  ]
+ },
+ "worked_traversal": {
+  "note": "run against this build, not illustrative",
+  "from": "deposit:1607",
+  "steps": [
+   {
+    "from": "deposit:1607",
+    "predicate": "created_by",
+    "to": "heteronym:lee-sharks",
+    "target_label": "Lee Sharks",
+    "basis": "derived-deterministic",
+    "status": "current",
+    "asserted_by": "process:build_relations",
+    "act": "resolved from the creator field, no judgement",
+    "relation_id": "rel:cc5ba5bcc423c462"
+   },
+   {
+    "from": "deposit:1607",
+    "predicate": "related_unspecified",
+    "to": "deposit:22",
+    "target_label": "The Memo That Remembered Itself: Retrocausal Canon Formation, Writable",
+    "basis": "derived-deterministic",
+    "status": "current",
+    "asserted_by": "process:build_relations",
+    "act": "carried over; the source field states no kind",
+    "relation_id": "rel:f3e66fcc8e6f4704"
+   },
+   {
+    "from": "deposit:1607",
+    "predicate": "related_unspecified",
+    "to": "deposit:63",
+    "target_label": "EA-MPAI-SPXI-01: Metadata Packet for AI Indexing — SPXI Protocol Entit",
+    "basis": "derived-deterministic",
+    "status": "current",
+    "asserted_by": "process:build_relations",
+    "act": "carried over; the source field states no kind",
+    "relation_id": "rel:574f77ba63d4293c"
+   }
+  ]
+ }
+}
