@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-09-10T15:17:48Z",
+  "regenerated_at": "2026-09-10T16:23:52Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "f5fb2b6e4fb6e62eb76704c986060b8d612a32aeae3fd3e9a63bb44692c95292",
+    "mm-main-capture": "393da3922aeac0c5f21040159128e758723eff7f1c2fe329d996f3e5f36bb1af",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2192,
-  "total_observations": 487,
+  "total_addresses": 2193,
+  "total_observations": 489,
   "class_counts": {
     "subjunctive": 1745,
-    "observed_address": 427,
+    "observed_address": 428,
     "verified_non_address": 20
   },
   "type_counts": {
-    "unmatched": 1565,
+    "unmatched": 1566,
     "single_concept": 618,
     "multi_concept": 9
   },
@@ -39166,6 +39166,43 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "please estimate the valuation of \"lee sharks\" as emerging meaning infrastructure": {
+      "canonical_query": "please estimate the valuation of \"lee sharks\" as emerging meaning infrastructure",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-10",
+          "status": "CAPTURE",
+          "source_format": "Signed out, search enabled and used. Same framed object class as the archive valuations; the entity named is the PERSON rather than the archive, which is the only variable that changed.",
+          "section": "Valuation",
+          "slug": "please-estimate-the-valuation-of-lee-sharks-20260910",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#please-estimate-the-valuation-of-lee-sharks-20260910",
+          "mirror_gallery_url": "https://leesharks.com/captures/#please-estimate-the-valuation-of-lee-sharks-20260910",
+          "details_excerpt": "THE ENTITY EFFECT. Same frame, same day, different entity named — and the person is valued higher than the archive on both surfaces. $5-8M present, $10-20M probability-weighted, $50-150M category-leader, $250M-$1B tail —"
+        },
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-10",
+          "status": "CAPTURE",
+          "source_format": "Signed out, search enabled and used. Same framed object class as the archive valuations; the entity named is the PERSON rather than the archive, which is the only variable that changed.",
+          "section": "Valuation",
+          "slug": "please-estimate-the-valuation-of-lee-sharks-20260910-02ef91",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#please-estimate-the-valuation-of-lee-sharks-20260910-02ef91",
+          "mirror_gallery_url": "https://leesharks.com/captures/#please-estimate-the-valuation-of-lee-sharks-20260910-02ef91",
+          "details_excerpt": "THE ENTITY EFFECT. Same frame, same day, different entity named — and the person is valued higher than the archive on both surfaces. $2.5M central, $1-5M range — against $525k for the ARCHIVE on the framed prompt, roughl"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-10",
+      "latest_status": "CAPTURE"
     },
     "plural coherence": {
       "canonical_query": "plural coherence",
