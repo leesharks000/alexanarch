@@ -133,9 +133,19 @@ def main():
             t = r.get("deposit") if isinstance(r, dict) else r
             edge(s, "measured_by", f"deposit:{t}", "asserted", "instrument",
                  (r.get("what") if isinstance(r, dict) else None), "registry.measured_by")
+        # SUPERSEDES TAKES THREE SHAPES IN THE REGISTRY and the ledger must unwrap all of them:
+        # a bare int, a list of ints, or a list of {deposit_number, version} objects. The
+        # object form is the one used by the longest chains (#1461 carries seven), and a
+        # first pass here stringified the whole dict into the node id, producing edges
+        # pointing at `deposit:{'deposit_number': 1094, ...}` — a node that cannot exist.
         sup = d.get("supersedes")
         for t in ([sup] if isinstance(sup, int) else (sup or [])):
-            edge(s, "supersedes", f"deposit:{t}", "asserted", "deposit", None, "registry.supersedes")
+            num = t.get("deposit_number") if isinstance(t, dict) else t
+            if not isinstance(num, int):
+                continue
+            ver = t.get("version") if isinstance(t, dict) else None
+            edge(s, "supersedes", f"deposit:{num}", "asserted", "deposit",
+                 (f"version: {ver}" if ver else None), "registry.supersedes")
         for t in (d.get("related_deposits") or []):
             if not isinstance(t, int): continue
             # RELATION OF NO STATED KIND. Kept, and kept marked: 801 of these exist and

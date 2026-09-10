@@ -11695,7 +11695,7 @@
       ],
       "axn_reading": "Direction -> Touch -> Touch -> Touch -> Direction -> Alarm",
       "minted_at": "2026-07-18T17:53:48Z",
-      "status": "ACTIVE",
+      "status": "SUPERSEDED",
       "status_authorial": "SELF_SERVE_MINTED",
       "full_text_path": "/data/texts/AXN-0457-text.md",
       "wiki_article": "**AXN as Anti-Suppression Infrastructure: Historical Precedents** is a scholarly paper by Lee Sharks with **Johannes Sigil** and **Rex Fraction**, at **170,275 characters** — the developmental version superseded by **#1095**.\n\nIts draft abstract opens on the event the archive was built to answer: *\"On **19 June 2026**, a major research repository operated by an intergovernmental scientific institution **terminated an account without prior notice, account-level appeal, or per[manent record]**.\"*\n\nThree absences named in one clause — no notice, no appeal, no record — which is the structure the anti-suppression argument is built against. Holding the developmental version at full length alongside its supersession is the archive's version discipline: the superseding deposit states what it supersedes, and the superseded state stays citable rather than being replaced.",
@@ -11916,7 +11916,9 @@
       },
       "line": "assembly-chorus",
       "line_parent": "method",
-      "line_basis": "derived"
+      "line_basis": "derived",
+      "superseded_by": 1095,
+      "version_series_id": "EA-AXN-ANTISUPPRESSION"
     },
     {
       "deposit_number": 1095,
@@ -12118,7 +12120,14 @@
       "line": "axn-identifiers",
       "line_parent": "infrastructure",
       "line_basis": "derived",
-      "superseded_by": 1606
+      "superseded_by": 1606,
+      "supersedes": [
+        {
+          "deposit_number": 1094,
+          "version": "developmental"
+        }
+      ],
+      "version_series_id": "EA-AXN-ANTISUPPRESSION"
     }
   ]
 }
