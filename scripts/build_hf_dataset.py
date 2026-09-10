@@ -292,6 +292,34 @@ def nodes():
     `<type>:<slug>` that every subsystem can attach to."""
     return _jsonl('data/nodes.jsonl')
 
+def pessoagraph():
+    """datasets/pessoagraph/graph.json — the heteronymic lineage, IMPORTED AS ITS OWN DATA.
+
+    197 nodes from -2600 to 2026 and 301 edges, canonical at pessoa-knowledge-graph:src/graph.json
+    and never edited here. It is NOT merged into `nodes`/`relations`: it has its own namespace, its
+    own predicates (master_disciple, lineage, instantiates, heteronym_of, manifests) and its own
+    governance. datasets/heteronyms remains a separate body on the same terms."""
+    import itertools
+    g = json.loads((ROOT/'datasets/pessoagraph/graph.json').read_text(encoding='utf-8'))
+    rows = [{'kind':'node','id':n['id'],'label':n.get('label'),'node_type':n.get('t'),
+             'era':n.get('e'),'layer':n.get('l'),'year':n.get('y'),
+             'source':None,'predicate':None,'target':None,
+             'payload':json.dumps({k:v for k,v in n.items() if k not in ('id','label','t','e','l','y')},ensure_ascii=False)}
+            for n in g['nodes']]
+    rows += [{'kind':'edge','id':None,'label':None,'node_type':None,'era':None,'layer':None,'year':None,
+              'source':e.get('source'),'predicate':e.get('type'),'target':e.get('target'),'payload':None}
+             for e in g['edges']]
+    return pd.DataFrame(rows)
+
+def graph_join():
+    """datasets/pessoagraph/join.json — where the two bodies name the same identity, and where they don't.
+
+    Neither is absorbed. A lineage node with no archive identity record is not a defect: the graph holds
+    5,000 years of figures the archive holds no record for. THE DODECAD IS PRIMARY — twelve declared
+    positions within 26 identity records — and all twelve join."""
+    j = json.loads((ROOT/'datasets/pessoagraph/join.json').read_text(encoding='utf-8'))
+    return pd.DataFrame(j['rows'])
+
 def captures():
     p = ROOT/'data/EA-WG-CAPTURES-01.json'   # the Capture Registry, current head
     if not p.exists(): return pd.DataFrame()
@@ -480,7 +508,7 @@ Two paths that never have this problem, both served by the archive itself: `http
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--out', default='hf-dataset'); ap.add_argument('--fleet', default=os.environ.get('FLEET_DIR'))
     a = ap.parse_args(); out = ROOT/a.out; out.mkdir(exist_ok=True)
-    frames = {'deposits': deposits(), 'sources': sources(), 'heteronyms': heteronyms(), 'venues': venues(), 'journal_assignments': journal_assignments(), 'reception': reception(), 'captures': captures(), 'citations': citations(), 'entities': entities(), 'relations': relations(), 'nodes': nodes(), 'lexicon': lexicon(), 'predictions': predictions(), 'studies': studies(), 'tombstones': tombstones(), 'blog_posts': blog_posts()}
+    frames = {'deposits': deposits(), 'sources': sources(), 'heteronyms': heteronyms(), 'venues': venues(), 'journal_assignments': journal_assignments(), 'reception': reception(), 'captures': captures(), 'citations': citations(), 'entities': entities(), 'relations': relations(), 'nodes': nodes(), 'pessoagraph': pessoagraph(), 'graph_join': graph_join(), 'lexicon': lexicon(), 'predictions': predictions(), 'studies': studies(), 'tombstones': tombstones(), 'blog_posts': blog_posts()}
     if a.fleet: frames['sites'] = sites(a.fleet)
     cfg = []
     for name, df in frames.items():
