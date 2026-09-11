@@ -1,0 +1,74 @@
+name: Hugging Face rhizomes
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'rhizomes/**'
+      - 'scripts/build_rhizome_mc.py'
+      - 'data/relations.jsonl'
+      - 'data/nodes.jsonl'
+      - 'data/assertions.jsonl'
+  schedule:
+    - cron: '45 6 * * 1'   # weekly, 15 min after the parent build
+  workflow_dispatch: {}
+concurrency:
+  group: hf-rhizomes
+  cancel-in-progress: true
+
+# EACH RHIZOME IS ITS OWN HUB DATASET, pushed separately from the parent (2026-09-10).
+# They must not share a push: the datasets-server rebuilds a config's full-text index
+# whenever its file changes, and a rhizome rebuild has no business cold-starting the
+# parent's `deposits` index — measured at over an hour of HTTP 500 on /search after a
+# push. Separate repos, separate indexes, separate blast radius.
+#
+# The repo is created by the token on first run (create_repo exist_ok=True), so no
+# manual setup on the Hub is needed beyond the variable below.
+
+jobs:
+  emit-and-push:
+    runs-on: ubuntu-latest
+    if: ${{ vars.HF_RHIZOME_MC_REPO != '' }}
+    steps:
+      - name: Debounce — let a burst of merges settle
+        if: ${{ github.event_name == 'push' }}
+        run: sleep 600
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install -q huggingface_hub
+
+      # Re-emit rather than pushing what is committed: the rhizome is GENERATED from the
+      # relation ledger, and a committed copy that no longer matches the ledger would be
+      # a stale projection claiming to be a reproducible one.
+      - name: Re-emit EA-RHIZOME-MC-01 from the ledger
+        run: python3 scripts/build_rhizome_mc.py
+
+      - name: Fail if the emitted rhizome differs from the committed one
+        run: |
+          if ! git diff --quiet -- rhizomes/model-collapse-anti-collapse/; then
+            echo "::error::Emitted rhizome differs from the committed copy."
+            echo "The committed files are stale, or the ledger changed without a re-emit."
+            echo "Run scripts/build_rhizome_mc.py locally and commit the result."
+            git --no-pager diff --stat -- rhizomes/model-collapse-anti-collapse/
+            exit 1
+          fi
+
+      - name: Stamp the spore with the source commit
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, os
+          p = pathlib.Path('rhizomes/model-collapse-anti-collapse/spore.json')
+          s = json.loads(p.read_text(encoding='utf-8'))
+          s['source_commit'] = os.environ['GITHUB_SHA']
+          s['source_repo'] = 'https://github.com/leesharks000/alexanarch'
+          p.write_text(json.dumps(s, ensure_ascii=False, indent=1), encoding='utf-8')
+          print('spore stamped:', s['source_commit'][:12])
+          PY
+
+      - name: Push EA-RHIZOME-MC-01
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          python3 scripts/push_hf_dataset.py \
+            rhizomes/model-collapse-anti-collapse \
+            "${{ vars.HF_RHIZOME_MC_REPO }}"

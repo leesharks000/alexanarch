@@ -14,15 +14,31 @@ only what differs. A deposits-only change now leaves the indexes of `citations`,
 `lexicon`, `captures`, `tombstones` and the rest intact.
 
 Needs HF_TOKEN (write) and HF_REPO (e.g. leesharks/crimson-hexagonal-archive).
+
+PARAMETERISED (2026-09-10) so the same selective-upload logic serves the emitted
+rhizomes as well as the main projection. Each rhizome is its own Hub dataset with
+its own full-text indexes, so it must not share a push with the parent — a rhizome
+rebuild should not cold-start the parent's `deposits` index.
+
+    python3 scripts/push_hf_dataset.py                       # hf-dataset/ -> $HF_REPO
+    python3 scripts/push_hf_dataset.py <folder> [$REPO]      # any folder -> repo
+
+create_repo(exist_ok=True) means the token creates the dataset if it does not yet
+exist; no manual creation step is required on the Hub.
 """
 import os, sys, pathlib, hashlib
 from huggingface_hub import HfApi
 
-repo = os.environ.get('HF_REPO'); tok = os.environ.get('HF_TOKEN')
-if not (repo and tok): sys.exit("HF_REPO and HF_TOKEN required")
+_args = [a for a in sys.argv[1:] if not a.startswith('-')]
+folder = (pathlib.Path(_args[0]).resolve() if _args
+          else pathlib.Path(__file__).resolve().parent.parent / 'hf-dataset')
+repo = (_args[1] if len(_args) > 1 else None) or os.environ.get('HF_REPO')
+tok = os.environ.get('HF_TOKEN')
+if not (repo and tok): sys.exit("repo (argv[2] or HF_REPO) and HF_TOKEN required")
+if not folder.is_dir(): sys.exit(f"not a directory: {folder}")
 api = HfApi(token=tok)
 api.create_repo(repo, repo_type='dataset', exist_ok=True)
-folder = pathlib.Path(__file__).resolve().parent.parent / 'hf-dataset'
+print(f"  {folder} -> {repo}")
 local = sorted(p for p in folder.iterdir() if p.is_file())
 
 def sha256(path, buf=1 << 20):
