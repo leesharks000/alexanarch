@@ -1,0 +1,368 @@
+{
+ "$schema": "https://www.alexanarch.org/api/schemas/potential-atlas.schema.json",
+ "atlas_id": "EA-ATLAS-01",
+ "version": "0.1",
+ "what": "The space of datasets this archive can generate, published as addressable objects before their rows exist.",
+ "emitted_not_authored": "Every entry derives from something on disk: a realized rhizome's spore, or a stolon that named an adjacent body without building it. Nothing here is a wish list.",
+ "status_vocabulary": {
+  "proposed": "named, with an articulation recorded, no specification",
+  "specified": "inputs, operations and conditions explicit",
+  "executable": "an implementation exists",
+  "realized": "a run produced an output",
+  "validated": "the output passed named checks"
+ },
+ "status_is_not_a_ranking": "These state what kind of availability is being claimed, not intellectual worth. A failed generation and an empty result are also data about the space.",
+ "three_identities": "Specification, execution and output are distinct. Two outputs with identical rows and different histories are not the same object; deduplicating them would erase the history the archive exists to keep.",
+ "generated": "2026-09-11T12:58:10Z",
+ "counts": {
+  "families": 8,
+  "by_status": {
+   "realized": 1,
+   "proposed": 7
+  },
+  "relations": 7,
+  "constraints": 3
+ },
+ "families": [
+  {
+   "id": "potential:model-collapse-anti-collapse",
+   "rhizome_id": "EA-RHIZOME-MC-01",
+   "kind": "dataset_family",
+   "status": "realized",
+   "title": "model collapse anti collapse",
+   "parent": "crimson-hexagonal-archive",
+   "topology": "bipolar-dynamic",
+   "unit": "node and typed edge",
+   "specification": {
+    "seed_mode": "deterministic",
+    "selection": {
+     "core_A": "a deposit that DEFINES a concept matching the select pattern",
+     "core_B": "a deposit that measures or is measured by an A",
+     "core_C": "a deposit whose TITLE declares a named instrument or mechanism — a weaker signal, marked as such",
+     "gap_found": "Rule C exists because five of the eight deposits the design named DECLARE ZERO CONCEPTS: #783 Fear and Trembling, #156 Self-Audit Module, #789 Atomic Token Rule, #157 Erasure Skew, #788 Measurement Sovereignty. defines_concepts is empty on all five. The traversal was correct and the registry is incomplete. Recorded here rather than patched silently, because a rhizome that hides the holes in its own substrate is the thing this dataset is against.",
+     "neighbour": "one typed hop from core, restricted to the follow set",
+     "frontier": "second hop — emitted as a stolon and NOT included",
+     "select_pattern": "collapse|contraction|monoculture|foreclosure|tail renewal|erasure|diversity loss|pristine fallacy|athetic|custody|non-erasure|source tether|measurement sovereign|atomic token|erasure skew|self-audit|counterexample",
+     "follow": [
+      "consequence",
+      "corrects",
+      "develops_from",
+      "inherits",
+      "measured_by",
+      "measures",
+      "preserves",
+      "reads",
+      "redirects",
+      "registers_correspondence",
+      "rejects",
+      "states_priority_of",
+      "supersedes",
+      "transforms"
+     ],
+     "why_not_text_search": "A keyword pass over titles and descriptions returns 361 deposits — model collapse becomes the whole archive because everything eventually touches everything. Selection on defines_concept, a deposit's own declaration, returns a corpus."
+    },
+    "core_depth": 1,
+    "frontier_depth": 2
+   },
+   "generation": {
+    "recipe": "scripts/build_rhizome_mc.py",
+    "execution_status": "run"
+   },
+   "realization": {
+    "counts": {
+     "nodes": 222,
+     "core": 115,
+     "neighbour": 107,
+     "edges": 140,
+     "stolons": 7
+    },
+    "generated": "2026-09-11T10:42:09Z",
+    "source_commit": null
+   },
+   "articulated_by": "operator-directed, 2026-09-10",
+   "contraction": null
+  },
+  {
+   "id": "potential:provenance-erasure",
+   "rhizome_id": null,
+   "kind": "dataset_family",
+   "status": "proposed",
+   "title": "provenance erasure",
+   "parent": "crimson-hexagonal-archive",
+   "topology": null,
+   "unit": null,
+   "specification": {
+    "seed_mode": null,
+    "selection": null,
+    "core_depth": null,
+    "frontier_depth": null
+   },
+   "generation": {
+    "recipe": null,
+    "execution_status": "not_run"
+   },
+   "realization": null,
+   "articulated_by": {
+    "from_node": "concept:provenance-erasure",
+    "predicate": "measured_through",
+    "named_in": "EA-RHIZOME-MC-01",
+    "note": "PER, Erasure Skew and the Atomic Token Rule are the measurement apparatus; they are their own body"
+   },
+   "contraction": null
+  },
+  {
+   "id": "potential:classifier-governance",
+   "rhizome_id": null,
+   "kind": "dataset_family",
+   "status": "proposed",
+   "title": "classifier governance",
+   "parent": "crimson-hexagonal-archive",
+   "topology": null,
+   "unit": null,
+   "specification": {
+    "seed_mode": null,
+    "selection": null,
+    "core_depth": null,
+    "frontier_depth": null
+   },
+   "generation": {
+    "recipe": null,
+    "execution_status": "not_run"
+   },
+   "realization": null,
+   "articulated_by": {
+    "from_node": "concept:classifier-model-collapse",
+    "predicate": "governed_in",
+    "named_in": "EA-RHIZOME-MC-01",
+    "note": "moderation feedback as a governance question rather than a generative one"
+   },
+   "contraction": null
+  },
+  {
+   "id": "potential:heteronyms",
+   "rhizome_id": null,
+   "kind": "dataset_family",
+   "status": "proposed",
+   "title": "heteronyms",
+   "parent": "crimson-hexagonal-archive",
+   "topology": null,
+   "unit": null,
+   "specification": {
+    "seed_mode": null,
+    "selection": null,
+    "core_depth": null,
+    "frontier_depth": null
+   },
+   "generation": {
+    "recipe": null,
+    "execution_status": "not_run"
+   },
+   "realization": null,
+   "articulated_by": {
+    "from_node": "concept:heteronymic-plurality",
+    "predicate": "instantiated_by",
+    "named_in": "EA-RHIZOME-MC-01",
+    "note": "authorial plurality as an anti-collapse mechanism is instantiated by the identity records"
+   },
+   "contraction": null
+  },
+  {
+   "id": "potential:semantic-economy",
+   "rhizome_id": null,
+   "kind": "dataset_family",
+   "status": "proposed",
+   "title": "semantic economy",
+   "parent": "crimson-hexagonal-archive",
+   "topology": null,
+   "unit": null,
+   "specification": {
+    "seed_mode": null,
+    "selection": null,
+    "core_depth": null,
+    "frontier_depth": null
+   },
+   "generation": {
+    "recipe": null,
+    "execution_status": "not_run"
+   },
+   "realization": null,
+   "articulated_by": {
+    "from_node": "concept:semantic-economy",
+    "predicate": "situated_in",
+    "named_in": "EA-RHIZOME-MC-01",
+    "note": "the political economy in which contraction is profitable"
+   },
+   "contraction": null
+  },
+  {
+   "id": "potential:machine-mediated-reception",
+   "rhizome_id": null,
+   "kind": "dataset_family",
+   "status": "proposed",
+   "title": "machine mediated reception",
+   "parent": "crimson-hexagonal-archive",
+   "topology": null,
+   "unit": null,
+   "specification": {
+    "seed_mode": null,
+    "selection": null,
+    "core_depth": null,
+    "frontier_depth": null
+   },
+   "generation": {
+    "recipe": null,
+    "execution_status": "not_run"
+   },
+   "realization": null,
+   "articulated_by": {
+    "from_node": "concept:machine-reception",
+    "predicate": "observed_in",
+    "named_in": "EA-RHIZOME-MC-01",
+    "note": "the capture registry holds the observations; 411 captures are not reproduced here"
+   },
+   "contraction": null
+  },
+  {
+   "id": "potential:archive-resilience",
+   "rhizome_id": null,
+   "kind": "dataset_family",
+   "status": "proposed",
+   "title": "archive resilience",
+   "parent": "crimson-hexagonal-archive",
+   "topology": null,
+   "unit": null,
+   "specification": {
+    "seed_mode": null,
+    "selection": null,
+    "core_depth": null,
+    "frontier_depth": null
+   },
+   "generation": {
+    "recipe": null,
+    "execution_status": "not_run"
+   },
+   "realization": null,
+   "articulated_by": {
+    "from_node": "concept:archive-resilience",
+    "predicate": "practised_as",
+    "named_in": "EA-RHIZOME-MC-01",
+    "note": "substrate multiplication, mirrors and custody as operational practice"
+   },
+   "contraction": null
+  },
+  {
+   "id": "potential:epistemic-corrections",
+   "rhizome_id": null,
+   "kind": "dataset_family",
+   "status": "proposed",
+   "title": "epistemic corrections",
+   "parent": "crimson-hexagonal-archive",
+   "topology": null,
+   "unit": null,
+   "specification": {
+    "seed_mode": null,
+    "selection": null,
+    "core_depth": null,
+    "frontier_depth": null
+   },
+   "generation": {
+    "recipe": null,
+    "execution_status": "not_run"
+   },
+   "realization": null,
+   "articulated_by": {
+    "from_node": "concept:erratum",
+    "predicate": "corrected_in",
+    "named_in": "EA-RHIZOME-MC-01",
+    "note": "the errata slate is a body in its own right; a correction preserved is anti-collapse by function"
+   },
+   "contraction": null
+  }
+ ],
+ "relations": [
+  {
+   "source": "potential:model-collapse-anti-collapse",
+   "relation": "advertises",
+   "target": "potential:provenance-erasure",
+   "via": "measured_through",
+   "basis": "stolon"
+  },
+  {
+   "source": "potential:model-collapse-anti-collapse",
+   "relation": "advertises",
+   "target": "potential:classifier-governance",
+   "via": "governed_in",
+   "basis": "stolon"
+  },
+  {
+   "source": "potential:model-collapse-anti-collapse",
+   "relation": "advertises",
+   "target": "potential:heteronyms",
+   "via": "instantiated_by",
+   "basis": "stolon"
+  },
+  {
+   "source": "potential:model-collapse-anti-collapse",
+   "relation": "advertises",
+   "target": "potential:semantic-economy",
+   "via": "situated_in",
+   "basis": "stolon"
+  },
+  {
+   "source": "potential:model-collapse-anti-collapse",
+   "relation": "advertises",
+   "target": "potential:machine-mediated-reception",
+   "via": "observed_in",
+   "basis": "stolon"
+  },
+  {
+   "source": "potential:model-collapse-anti-collapse",
+   "relation": "advertises",
+   "target": "potential:archive-resilience",
+   "via": "practised_as",
+   "basis": "stolon"
+  },
+  {
+   "source": "potential:model-collapse-anti-collapse",
+   "relation": "advertises",
+   "target": "potential:epistemic-corrections",
+   "via": "corrected_in",
+   "basis": "stolon"
+  }
+ ],
+ "contraction": [
+  {
+   "id": "constraint:unseated-text",
+   "what": "Deposits whose record declares a work and whose canonical bytes are metadata only.",
+   "count": 98,
+   "blocks": "any family whose unit requires full text of an affected deposit",
+   "evidence": "registry body_status.recovery_status == PASS_COMPLETE_TEXT_NOT_SEATED",
+   "reversible": true,
+   "note": "Detected 2026-07-31 and unrepaired for six weeks on the one case examined (#1095, seated as #1606). The text may exist elsewhere in the repository; unseated is not lost."
+  },
+  {
+   "id": "constraint:severed-external-doi",
+   "what": "Records severed from their original repository in the June 2026 termination.",
+   "count": 1136,
+   "blocks": "any family requiring resolution through the original registrar",
+   "evidence": "data/tombstones — the kill ledger",
+   "reversible": false,
+   "note": "THE ORIGINATING REASON THIS FIELD EXISTS. The archive re-identified and re-routed; a DOI resolution index maps all 1,817 DOIs, preserved and severed, to current locations. The possibility was contracted at one registrar and restored at another, and both facts are part of the record."
+  },
+  {
+   "id": "constraint:non-active-endpoint",
+   "what": "Deposits that are superseded, withdrawn, draft, or preserved as historical seed.",
+   "count": 190,
+   "blocks": "families that select only on ACTIVE status",
+   "evidence": "registry status field; relations ledger marks 204 edges with a non-current endpoint",
+   "reversible": false,
+   "note": "Not a defect. A superseded record is still addressable and still generable FROM; what contracts is the set of families that silently assume currency."
+  }
+ ],
+ "not_yet_modelled": [
+  "Grammar records — what counts as an object under DOI-anchor, neural annotation, mesh-distributed, post-singular authorship, holographic deposit, post-retrieval. The Forward Library (#1447) specifies these; the atlas does not yet carry them, and they are not views of one object but distinct ontologies.",
+  "Translations between grammars, and what each loses. A consultation becoming a citation is not a format conversion.",
+  "Parameter domains as enumerable spaces rather than fixed values.",
+  "Operation families — the atlas currently maps selections. A family that generates alignments, contrasts or new text exceeds the power set of existing records and needs its own space."
+ ]
+}
