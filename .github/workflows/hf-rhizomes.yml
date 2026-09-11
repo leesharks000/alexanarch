@@ -54,6 +54,9 @@ jobs:
       - name: Fail if the emitted data differs from the committed copy
         run: |
           D=rhizomes/model-collapse-anti-collapse
+          # poetics.jsonl is AUTHORED, not emitted from the ledger, so it is not in the
+          # regeneration comparison. Including it would make the gate fail whenever a law
+          # was added — which is the same error as comparing the spore's timestamp.
           if ! git diff --quiet -- $D/nodes.jsonl $D/relations.jsonl $D/stolons.jsonl; then
             echo "::error::Emitted rhizome data differs from the committed copy."
             echo "The committed files are stale, or the ledger changed without a re-emit."

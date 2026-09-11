@@ -68,6 +68,31 @@ can reach the failure; arriving at the failure, they can reconstruct why the pro
 **An anti-collapse dataset whose counterexamples are unreachable from the claims they qualify is a
 list, not a field.**
 
+## The laws this body obeys
+
+**A selection rule is a rhyme.** Things join because a word matched. That is not a figure for the
+select pattern; it is the select pattern, and it has a rhyme's consequences — `tail` found *detail*,
+*entail* and *curtail* and tried to make them family. Twenty-four kin were refused at 24-in-40 noise,
+and **a rhyme declined is as formal an act as one accepted.**
+
+`poetics.jsonl` carries eight such laws. Each names an operation that determined membership or
+classification and records what it admitted, what it refused, and what it cost. **Six of the eight
+document a defect found after the fact.**
+
+| law | governs | |
+| --- | --- | --- |
+| **a rhyme creates kinship** | membership | A dataset about the loss of distinctions nearly acquired 24 relatives by sound alone. |
+| **every metaphor leaves a material remainder** | schema | The metaphor was load-bearing. Renaming it would break the file format. |
+| **things happen only when the measure makes room** | admission | Its declared concepts are section headings. A paper about severance was severed from the dataset by its own table of contents. |
+| **the admission basis outranks the description** | classification | The dataset forgot why it let something in, then described it as the opposite. |
+| **a word can eat a phrase** | role assignment | A dataset about meaning collapse lost a meaning to a substring. |
+| **a gate may not test what can never match** | emission | The instrument failed its own test by testing the clock. |
+| **the counterexample must reach what it disconfirms** | traversal | The promise and the proof it failed were adjacent and unacquainted. |
+| **the instrument is subject to the law it measures** | the author | The machines held the line. The instrument-builder did not. |
+
+**These are stated so they can be contested.** A traversal grammar buried in a generator cannot be
+argued with; one written down can.
+
 ## What this is not
 
 **It is a map of the research, not the experiment.**
