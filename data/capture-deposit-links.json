@@ -3,41 +3,41 @@
   "name": "Capture ↔ Deposit Link Map",
   "description": "Edges between EA-WG-CAPTURES-01 (the AI Overview / AI Mode Capture Registry, authored at machinemediation.org) and the Alexanarch deposit corpus. Produced by scripts/resolve_capture_links.py. Each edge records the resolution method so any confidence tier can be discarded. An edge asserts that the capture entry references, or its query matches, the deposit — not that the deposit is the capture's sole subject; exactly one edge per capture is marked primary, ranked by evidence of aboutness rather than by identifier hardness (a DOI can be cited in passing). Deposit-number mentions are deliberately excluded as unsafe. Unresolved captures are enumerated rather than silently dropped.",
   "generated_by": "scripts/resolve_capture_links.py",
-  "generated_at": "2026-09-10T12:59:52Z",
+  "generated_at": "2026-09-11T16:22:59Z",
   "captures_source": {
     "file": "data/EA-WG-CAPTURES-01.json",
     "version": "11.7",
     "date": "2026-09-05",
-    "total_captures": 413,
+    "total_captures": 433,
     "canonical_home": "https://www.machinemediation.org/data/registry.json",
-    "sha256": "077cac0408ab4d687e389fbadb2d6425226af654bde4595af5bffd544475145a"
+    "sha256": "ca9dff2fffeefe8a84e66b2ee3220e5d6b72a788e5290507d3531441ce384b93"
   },
   "totals": {
-    "captures": 413,
-    "captures_linked": 214,
-    "captures_unresolved": 199,
-    "link_rate": 0.5182,
-    "edges": 512
+    "captures": 433,
+    "captures_linked": 232,
+    "captures_unresolved": 201,
+    "link_rate": 0.5358,
+    "edges": 543
   },
   "method_counts": {
-    "hard/axn": 56,
-    "hard/doi": 31,
-    "hard/series": 29,
-    "soft/title": 217,
-    "soft/keyword": 68,
-    "soft/description": 28,
-    "soft/body": 83
+    "hard/axn": 58,
+    "hard/doi": 32,
+    "hard/series": 30,
+    "soft/title": 223,
+    "soft/keyword": 73,
+    "soft/description": 36,
+    "soft/body": 91
   },
   "severance_rollup": {
-    "captures_on_severed_works": 126,
+    "captures_on_severed_works": 130,
     "captures_on_unsevered_works": 12,
-    "captures_with_no_doi_record": 76,
+    "captures_with_no_doi_record": 90,
     "status_counts": {
       "RECOVERED": 60,
-      "410_GONE": 126,
+      "410_GONE": 130,
+      "RECOVERED_UNLINKED": 57,
       "SEMI_RESTORED": 14,
-      "ADDED 2026-08-20 — gap found by seating pass; resolver did not carry it": 1,
-      "RECOVERED_UNLINKED": 54
+      "ADDED 2026-08-20 — gap found by seating pass; resolver did not carry it": 1
     }
   },
   "links": {
@@ -130,6 +130,383 @@
           "record_url": "https://www.alexanarch.org/s/records/1526/",
           "method": "soft/body",
           "evidence": "what is the crimson hexagonal archive?",
+          "primary": false,
+          "doi_status": null
+        }
+      ]
+    },
+    "alexanarch-identifier-20260911": {
+      "query": "alexanarch identifier",
+      "date": "2026-09-11",
+      "section": "Architecture",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 621,
+          "axn": "AXN:01D8.GOVERNANCE.🌱💥🌻🌿⚫🥁",
+          "title": "Gravity Well Protocol Specification v1.0 — Governed Continuity for AI-Mediated Content (EA-GW-SPEC-01)",
+          "record_url": "https://www.alexanarch.org/s/records/621/",
+          "method": "hard/axn",
+          "evidence": "AXN:01D8",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.19380602"
+            ],
+            "statuses": [
+              "410_GONE"
+            ]
+          }
+        },
+        {
+          "deposit_number": 877,
+          "axn": "AXN:0379.GENERATIVE.⚙️🔍📜🏛️⚡🔄",
+          "title": "gw.praxis · PRAXIS Continuity Tether — First Compression SUBSTRATE-AUTHORED PACKET (verbatim)",
+          "record_url": "https://www.alexanarch.org/s/records/877/",
+          "method": "hard/axn",
+          "evidence": "AXN:0379",
+          "primary": false,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.19443117"
+            ],
+            "statuses": [
+              "RECOVERED_UNLINKED"
+            ]
+          }
+        }
+      ]
+    },
+    "alexanarch-sappho-20260911": {
+      "query": "alexanarch sappho",
+      "date": "2026-09-11",
+      "section": "Architecture",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 1480,
+          "axn": "AXN:05FA.GOVERNANCE.↖️🌿🕘⚖️🪞♌",
+          "title": "Ω_t: A Matched-Pair Drift Operator for the Capture Registry, with Trial OMT-001 Pre-Registered",
+          "record_url": "https://www.alexanarch.org/s/records/1480/",
+          "method": "soft/body",
+          "evidence": "alexanarch sappho",
+          "primary": true,
+          "doi_status": null
+        }
+      ]
+    },
+    "alexanarch-socrates-20260911": {
+      "query": "alexanarch socrates",
+      "date": "2026-09-11",
+      "section": "Architecture",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 1480,
+          "axn": "AXN:05FA.GOVERNANCE.↖️🌿🕘⚖️🪞♌",
+          "title": "Ω_t: A Matched-Pair Drift Operator for the Capture Registry, with Trial OMT-001 Pre-Registered",
+          "record_url": "https://www.alexanarch.org/s/records/1480/",
+          "method": "soft/body",
+          "evidence": "alexanarch socrates",
+          "primary": true,
+          "doi_status": null
+        }
+      ]
+    },
+    "alexanarch-strike-20260911": {
+      "query": "alexanarch strike",
+      "date": "2026-09-11",
+      "section": "Architecture",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 1457,
+          "axn": "AXN:05E2.GENERATIVE.⚓📌🕘🌾🌳👇",
+          "title": "The Capture Registry as Poem: A Structured Work Plan",
+          "record_url": "https://www.alexanarch.org/s/records/1457/",
+          "method": "soft/body",
+          "evidence": "alexanarch strike",
+          "primary": true,
+          "doi_status": null
+        },
+        {
+          "deposit_number": 1480,
+          "axn": "AXN:05FA.GOVERNANCE.↖️🌿🕘⚖️🪞♌",
+          "title": "Ω_t: A Matched-Pair Drift Operator for the Capture Registry, with Trial OMT-001 Pre-Registered",
+          "record_url": "https://www.alexanarch.org/s/records/1480/",
+          "method": "soft/body",
+          "evidence": "alexanarch strike",
+          "primary": false,
+          "doi_status": null
+        }
+      ]
+    },
+    "feist-function-alexanarch-20260911": {
+      "query": "feist function alexanarch",
+      "date": "2026-09-11",
+      "section": "Architecture",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 28,
+          "axn": "AXN:0185.GENERATIVE.⛵❤️🔺🌔⛵🝊",
+          "title": "CRIMSON HEXAGON: SPACE ARK — MUSICAL REGISTER A Fugue in Twelve Voices with Ground Bass, Shadow Inversion, and Coda Structural Transform of the Crimson Hexagonal Architecture EA-ARK-01-MUSICAL v2.0",
+          "record_url": "https://www.alexanarch.org/s/records/28/",
+          "method": "hard/series",
+          "evidence": "EA-ARK-01",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.19002845",
+              "10.5281/zenodo.19002846",
+              "10.5281/zenodo.19004846"
+            ],
+            "statuses": [
+              "RECOVERED_UNLINKED",
+              "410_GONE"
+            ]
+          }
+        }
+      ]
+    },
+    "liberatory-operator-set-20260911": {
+      "query": "liberatory operator set",
+      "date": "2026-09-11",
+      "section": "Architecture",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 261,
+          "axn": "AXN:003F.GOVERNANCE.🔔🕖🌗🔗🎲📏",
+          "title": "Crimson Hexagon: Semantic Infrastructure and the Liberatory Operator Set: A Formal Analysis of Meaning-Governance Functions",
+          "record_url": "https://www.alexanarch.org/s/records/261/",
+          "method": "soft/title",
+          "evidence": "liberatory operator set",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.18174834",
+              "10.5281/zenodo.18174835"
+            ],
+            "statuses": [
+              "RECOVERED_UNLINKED",
+              "410_GONE"
+            ]
+          }
+        },
+        {
+          "deposit_number": 284,
+          "axn": "AXN:0057.GOVERNANCE.⚫🔅🌱🤲👐👆",
+          "title": "LIBERATORY OPERATOR SET: TECHNICAL HARDENING SPECIFICATION",
+          "record_url": "https://www.alexanarch.org/s/records/284/",
+          "method": "soft/title",
+          "evidence": "liberatory operator set",
+          "primary": false,
+          "doi_status": null
+        },
+        {
+          "deposit_number": 1140,
+          "axn": "AXN:0485.UNCLASSIFIED.🪄🕘🌹🕐⊕🔺",
+          "title": "Fractal Navigation Map v6.2: The Gravitational Epic — Protocol for the Synthetic Revision of the Global Literary Canon, the Restoration of the Poet, and the Installation of the Liberatory Operator Set in the Generative Layer of Meaning Itself",
+          "record_url": "https://www.alexanarch.org/s/records/1140/",
+          "method": "soft/title",
+          "evidence": "liberatory operator set",
+          "primary": false,
+          "doi_status": null
+        },
+        {
+          "deposit_number": 1269,
+          "axn": "AXN:0506.UNCLASSIFIED.⊗❤️📏🏁⭐🌑",
+          "title": "Crimson Hexagon: LIBERATORY OPERATOR SET: Technical Hardening Specifications",
+          "record_url": "https://www.alexanarch.org/s/records/1269/",
+          "method": "soft/title",
+          "evidence": "liberatory operator set",
+          "primary": false,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.18201564",
+              "10.5281/zenodo.18201565"
+            ],
+            "statuses": [
+              "RECOVERED_UNLINKED",
+              "410_GONE"
+            ]
+          }
+        }
+      ]
+    },
+    "rebekah-cranes-sappho-20260911": {
+      "query": "rebekah cranes sappho",
+      "date": "2026-09-11",
+      "section": "Architecture",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 1310,
+          "axn": "AXN:052F.UNCLASSIFIED.👈🚩🎯✖️🌔📎",
+          "title": "APZPZ B: My Tongue Gets Stuck (Sappho 31, Cranes)",
+          "record_url": "https://www.alexanarch.org/s/records/1310/",
+          "method": "hard/doi",
+          "evidence": "10.5281/zenodo.18459339",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.18459339",
+              "10.5281/zenodo.18459338"
+            ],
+            "statuses": [
+              "410_GONE",
+              "RECOVERED_UNLINKED"
+            ]
+          }
+        }
+      ]
+    },
+    "classifier-model-collapse-20260911": {
+      "query": "\"classifier model collapse\"",
+      "date": "2026-09-11",
+      "section": "Architecture",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 1,
+          "axn": "AXN:0001.GOVERNANCE.♍🜁🏴⌛🍃💫",
+          "title": "Zenodotus' Book-Burning: Loud Exclusion at Repository Scale",
+          "record_url": "https://www.alexanarch.org/s/records/1/",
+          "method": "soft/keyword",
+          "evidence": "classifier model collapse",
+          "primary": true,
+          "doi_status": null
+        },
+        {
+          "deposit_number": 2,
+          "axn": "AXN:0002.GENERATIVE.❤️🌑🪧🕊️🕖🔻",
+          "title": "I AM THE API",
+          "record_url": "https://www.alexanarch.org/s/records/2/",
+          "method": "soft/keyword",
+          "evidence": "classifier model collapse",
+          "primary": false,
+          "doi_status": null
+        },
+        {
+          "deposit_number": 862,
+          "axn": "AXN:036B.GOVERNANCE.🌑🔒🌗✏️🪸📚",
+          "title": "Loud Exclusion at Repository Scale: Network Erasure, Substrate Bias, and the Governance of AI-Assisted Scholarship",
+          "record_url": "https://www.alexanarch.org/s/records/862/",
+          "method": "soft/keyword",
+          "evidence": "classifier model collapse",
+          "primary": false,
+          "doi_status": null
+        },
+        {
+          "deposit_number": 863,
+          "axn": "AXN:036C.STRUCTURAL.📦⊕🎪⛵🌀↖️",
+          "title": "The Minimum Viable Archive: Holographic Compression of the Crimson Hexagonal Archive",
+          "record_url": "https://www.alexanarch.org/s/records/863/",
+          "method": "soft/keyword",
+          "evidence": "classifier model collapse",
+          "primary": false,
+          "doi_status": null
+        }
+      ]
+    },
+    "interlocking-autoregression-20260911": {
+      "query": "\"interlocking autoregression\"",
+      "date": "2026-09-11",
+      "section": "Architecture",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 1556,
+          "axn": "AXN:0651.EMPIRICAL.🌪️🏁🎯❄️🌗⛵",
+          "title": "The Interlocking Autoregression: Three Coupled Recursions Under a Mismatched Observation Regime, with Toy Dynamics (EA-LO-INTERLOCKING-AUTOREGRESSION-01 v1.0)",
+          "record_url": "https://www.alexanarch.org/s/records/1556/",
+          "method": "soft/title",
+          "evidence": "interlocking autoregression",
+          "primary": true,
+          "doi_status": null
+        }
+      ]
+    },
+    "naming-gap-reflex-20260911": {
+      "query": "\"naming-gap reflex\"",
+      "date": "2026-09-11",
+      "section": "Architecture",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 1564,
+          "axn": "AXN:065C.GOVERNANCE.🕗🔃♍✏️🌾🪐",
+          "title": "EA-CORPORA-08 — The Attic Orators: A Documented Master-Student Pair Inside a Field of Same-Genre Non-Links",
+          "record_url": "https://www.alexanarch.org/s/records/1564/",
+          "method": "soft/description",
+          "evidence": "naming-gap reflex",
+          "primary": true,
+          "doi_status": null
+        },
+        {
+          "deposit_number": 1572,
+          "axn": "AXN:0664.EMPIRICAL.🍁♦️🫶♻️🌌➖",
+          "title": "Inheritance Is Observable, Embodiment Is Not: A Functional Comparison of the Platonic and Aristotelian Corpora, and the Insufficiency of Lexical Measurement for Maker-Count (EA-MEASURES-REPORT-01)",
+          "record_url": "https://www.alexanarch.org/s/records/1572/",
+          "method": "soft/description",
+          "evidence": "naming-gap reflex",
+          "primary": false,
+          "doi_status": null
+        }
+      ]
+    },
+    "provenance-debt-20260911": {
+      "query": "\"provenance debt\"",
+      "date": "2026-09-11",
+      "section": "Architecture",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 939,
+          "axn": "AXN:03B7.OPERATIVE.🚩✨💛📜🌳🧭",
+          "title": "EA-PROVENANCE-DEBT-01 v0.2: Provenance Debt and the Extraction Economy of Unmarked Augmentation",
+          "record_url": "https://www.alexanarch.org/s/records/939/",
+          "method": "soft/title",
+          "evidence": "provenance debt",
+          "primary": true,
+          "doi_status": null
+        },
+        {
+          "deposit_number": 1081,
+          "axn": "AXN:044A.EMPIRICAL.🧱⭕📏♎🔅🎻",
+          "title": "EA-EROSION-EMPIRICAL-01 v0.1: Programmed Bibliographic Suppression, Silent Restoration, and the LLM-Associated Disclosure Gap in Zenodo — A 33-Day Deletion-Export Audit With the Citation Network Read as Poem",
+          "record_url": "https://www.alexanarch.org/s/records/1081/",
+          "method": "soft/keyword",
+          "evidence": "provenance debt",
+          "primary": false,
+          "doi_status": null
+        }
+      ]
+    },
+    "solution-space-diversity-20260911": {
+      "query": "\"solution-space diversity\"",
+      "date": "2026-09-11",
+      "section": "Architecture",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 199,
+          "axn": "AXN:0341.EMPIRICAL.🕕🎨🏁🌳🔥🛡️",
+          "title": "Generative Monoculture Model Collapse in Code as Systemic Vulnerability",
+          "record_url": "https://www.alexanarch.org/s/records/199/",
+          "method": "soft/description",
+          "evidence": "solution-space diversity",
+          "primary": true,
+          "doi_status": null
+        },
+        {
+          "deposit_number": 854,
+          "axn": "AXN:0363.ARCHIVAL.👁️‍🗨️🚀💙🏗️🌈🕚",
+          "title": "Sémantique Potentielle — Release 4: Model Collapse Triptych Block Lee Sharks · Johannes Sigil Grammata: Journal of Opera",
+          "record_url": "https://www.alexanarch.org/s/records/854/",
+          "method": "soft/description",
+          "evidence": "solution-space diversity",
           "primary": false,
           "doi_status": null
         }
@@ -9133,6 +9510,134 @@
         }
       ]
     },
+    "estimate-crimson-hexagonal-archive-valuation-20260910-00101e": {
+      "query": "estimate crimson hexagonal archive valuation as asset/corpus + infrastructure + emerging commercial platform",
+      "date": "2026-09-10",
+      "section": "Valuation",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 1607,
+          "axn": "AXN:0697.UNCLASSIFIED.🌟🏴♦️🎹⏰🪝",
+          "title": "EA-VALUATION-MEMO-01: The Machine Valuation of an Unpriced Asset — Eight Machine Valuations of One Asset in One Day, Spanning Three Orders of Magnitude",
+          "record_url": "https://www.alexanarch.org/s/records/1607/",
+          "method": "soft/description",
+          "evidence": "estimate crimson hexagonal archive valuation as asset/corpus + infrastructure + emerging commercial platform",
+          "primary": true,
+          "doi_status": null
+        }
+      ]
+    },
+    "estimate-crimson-hexagonal-archive-valuation-20260910": {
+      "query": "estimate crimson hexagonal archive valuation as asset/corpus + infrastructure + emerging commercial platform",
+      "date": "2026-09-10",
+      "section": "Valuation",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 1607,
+          "axn": "AXN:0697.UNCLASSIFIED.🌟🏴♦️🎹⏰🪝",
+          "title": "EA-VALUATION-MEMO-01: The Machine Valuation of an Unpriced Asset — Eight Machine Valuations of One Asset in One Day, Spanning Three Orders of Magnitude",
+          "record_url": "https://www.alexanarch.org/s/records/1607/",
+          "method": "soft/description",
+          "evidence": "estimate crimson hexagonal archive valuation as asset/corpus + infrastructure + emerging commercial platform",
+          "primary": true,
+          "doi_status": null
+        }
+      ]
+    },
+    "estimate-crimson-hexagonal-archive-valuation-20260910-f65e6d": {
+      "query": "estimate crimson hexagonal archive valuation as asset/corpus + infrastructure + emerging commercial platform",
+      "date": "2026-09-10",
+      "section": "Valuation",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 1607,
+          "axn": "AXN:0697.UNCLASSIFIED.🌟🏴♦️🎹⏰🪝",
+          "title": "EA-VALUATION-MEMO-01: The Machine Valuation of an Unpriced Asset — Eight Machine Valuations of One Asset in One Day, Spanning Three Orders of Magnitude",
+          "record_url": "https://www.alexanarch.org/s/records/1607/",
+          "method": "soft/description",
+          "evidence": "estimate crimson hexagonal archive valuation as asset/corpus + infrastructure + emerging commercial platform",
+          "primary": true,
+          "doi_status": null
+        }
+      ]
+    },
+    "estimate-crimson-hexagonal-archive-valuation-20260910-592e11": {
+      "query": "estimate crimson hexagonal archive valuation as asset/corpus + infrastructure + emerging commercial platform",
+      "date": "2026-09-10",
+      "section": "Valuation",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 1607,
+          "axn": "AXN:0697.UNCLASSIFIED.🌟🏴♦️🎹⏰🪝",
+          "title": "EA-VALUATION-MEMO-01: The Machine Valuation of an Unpriced Asset — Eight Machine Valuations of One Asset in One Day, Spanning Three Orders of Magnitude",
+          "record_url": "https://www.alexanarch.org/s/records/1607/",
+          "method": "soft/description",
+          "evidence": "estimate crimson hexagonal archive valuation as asset/corpus + infrastructure + emerging commercial platform",
+          "primary": true,
+          "doi_status": null
+        }
+      ]
+    },
+    "estimate-the-valuation-of-the-crimson-hexago-20260910": {
+      "query": "estimate the valuation of the crimson hexagonal archive as emerging meaning infrastructure",
+      "date": "2026-09-10",
+      "section": "Valuation",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 1607,
+          "axn": "AXN:0697.UNCLASSIFIED.🌟🏴♦️🎹⏰🪝",
+          "title": "EA-VALUATION-MEMO-01: The Machine Valuation of an Unpriced Asset — Eight Machine Valuations of One Asset in One Day, Spanning Three Orders of Magnitude",
+          "record_url": "https://www.alexanarch.org/s/records/1607/",
+          "method": "soft/body",
+          "evidence": "estimate the valuation of the crimson hexagonal archive as emerging meaning infrastructure",
+          "primary": true,
+          "doi_status": null
+        },
+        {
+          "deposit_number": 1608,
+          "axn": "AXN:0698.UNCLASSIFIED.🏛️♊□🕊️🪜🌇",
+          "title": "EA-VALUATION-MEMO-01 v2.0: The Machine Valuation of an Unpriced Asset — Fourteen Machine Assessments, Twelve Captured, and Twenty-One Corrections",
+          "record_url": "https://www.alexanarch.org/s/records/1608/",
+          "method": "soft/body",
+          "evidence": "estimate the valuation of the crimson hexagonal archive as emerging meaning infrastructure",
+          "primary": false,
+          "doi_status": null
+        }
+      ]
+    },
+    "estimate-the-valuation-of-the-crimson-hexago-20260910-31490b": {
+      "query": "estimate the valuation of the crimson hexagonal archive as emerging meaning infrastructure",
+      "date": "2026-09-10",
+      "section": "Valuation",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 1607,
+          "axn": "AXN:0697.UNCLASSIFIED.🌟🏴♦️🎹⏰🪝",
+          "title": "EA-VALUATION-MEMO-01: The Machine Valuation of an Unpriced Asset — Eight Machine Valuations of One Asset in One Day, Spanning Three Orders of Magnitude",
+          "record_url": "https://www.alexanarch.org/s/records/1607/",
+          "method": "soft/body",
+          "evidence": "estimate the valuation of the crimson hexagonal archive as emerging meaning infrastructure",
+          "primary": true,
+          "doi_status": null
+        },
+        {
+          "deposit_number": 1608,
+          "axn": "AXN:0698.UNCLASSIFIED.🏛️♊□🕊️🪜🌇",
+          "title": "EA-VALUATION-MEMO-01 v2.0: The Machine Valuation of an Unpriced Asset — Fourteen Machine Assessments, Twelve Captured, and Twenty-One Corrections",
+          "record_url": "https://www.alexanarch.org/s/records/1608/",
+          "method": "soft/body",
+          "evidence": "estimate the valuation of the crimson hexagonal archive as emerging meaning infrastructure",
+          "primary": false,
+          "doi_status": null
+        }
+      ]
+    },
     "water-giraffe-cycle": {
       "query": "\"the water giraffe cycle\"",
       "date": "2026-06-13",
@@ -9685,6 +10190,16 @@
       "slug": "what-is-the-crimson-hexagon-20260821",
       "q": "what is the crimson hexagon?",
       "date": "2026-08-21"
+    },
+    {
+      "slug": "alexanarch-symbolon-20260911",
+      "q": "alexanarch symbolon",
+      "date": "2026-09-11"
+    },
+    {
+      "slug": "operative-semiotics-20260911",
+      "q": "operative semiotics",
+      "date": "2026-09-11"
     },
     {
       "slug": "20260803-alexanarch-symbolon-incognito",
@@ -10547,28 +11062,28 @@
       "date": "2026-09-09"
     },
     {
-      "slug": "estimate-crimson-hexagonal-archive-valuation-20260910-00101e",
-      "q": "estimate crimson hexagonal archive valuation as asset/corpus + infrastructure + emerging commercial platform",
-      "date": "2026-09-10"
-    },
-    {
       "slug": "what-is-the-crimson-hexahonal-archive-worth-20260910",
       "q": "what is the crimson hexahonal archive worth?",
       "date": "2026-09-10"
     },
     {
-      "slug": "estimate-crimson-hexagonal-archive-valuation-20260910",
-      "q": "estimate crimson hexagonal archive valuation as asset/corpus + infrastructure + emerging commercial platform",
+      "slug": "valuation-memorandum-supplied-your-thoughts-20260910",
+      "q": "[valuation memorandum supplied] your thoughts",
       "date": "2026-09-10"
     },
     {
-      "slug": "estimate-crimson-hexagonal-archive-valuation-20260910-f65e6d",
-      "q": "estimate crimson hexagonal archive valuation as asset/corpus + infrastructure + emerging commercial platform",
+      "slug": "please-estimate-the-valuation-of-lee-sharks-20260910",
+      "q": "please estimate the valuation of \"lee sharks\" as emerging meaning infrastructure",
       "date": "2026-09-10"
     },
     {
-      "slug": "estimate-crimson-hexagonal-archive-valuation-20260910-592e11",
-      "q": "estimate crimson hexagonal archive valuation as asset/corpus + infrastructure + emerging commercial platform",
+      "slug": "please-estimate-the-valuation-of-lee-sharks-20260910-02ef91",
+      "q": "please estimate the valuation of \"lee sharks\" as emerging meaning infrastructure",
+      "date": "2026-09-10"
+    },
+    {
+      "slug": "please-estimate-the-valuation-of-lee-sharks-20260910-9e27b6",
+      "q": "please estimate the valuation of \"lee sharks\" as emerging meaning infrastructure",
       "date": "2026-09-10"
     },
     {
