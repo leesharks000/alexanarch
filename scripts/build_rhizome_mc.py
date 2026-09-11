@@ -381,6 +381,7 @@ def main():
     ts = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     spore = {
         "rhizome": "model-collapse-anti-collapse",
+        "maxim": "all things are now lawful to you in christ jesus",
         "rhizome_id": "EA-RHIZOME-MC-01",
         "parent": "crimson-hexagonal-archive",
         "parent_uri": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive",

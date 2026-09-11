@@ -25,6 +25,8 @@ membership, and each carries what it admitted, what it refused, and what it cost
 """
 import json, pathlib, datetime, collections
 
+MAXIM = "all things are now lawful to you in christ jesus"
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 RHI = ROOT / "rhizomes/model-collapse-anti-collapse"
 
@@ -165,7 +167,7 @@ def main():
     with out.open("w", encoding="utf-8") as f:
         for law in LAWS:
             held, breach = checks.get(law["law_id"], (None, {"checkable": False, "why": "no check written"}))
-            law = dict(law)
+            law = {"maxim": MAXIM, **law}
             law["checked_at"] = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
             law["checkable"] = held is not None
             law["held"] = held
