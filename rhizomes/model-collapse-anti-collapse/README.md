@@ -61,12 +61,19 @@ its components are declared rather than measured.
 | **A** | the deposit DEFINES a concept matching the select pattern |
 | **B** | it measures, or is measured by, an A |
 | **C** | its TITLE declares a named instrument or mechanism — a weaker signal, marked as such |
+| **D** | its DESCRIPTION records the failure of a claim already in this corpus — the strongest kind of entry, and the one the rules could not see |
 | neighbour | one typed hop from core, restricted to the follow set |
 | frontier | the second hop — emitted as a **stolon** and NOT included |
 
 **A keyword pass over titles and descriptions returns 361 deposits.** That is the failure this
 rule exists to prevent: model collapse becomes the whole archive because everything eventually
 touches everything. Selection on `defines_concept` — a deposit's own declaration — returns 57.
+
+**A second registry defect, found the same way.** #678 SYMBOLON-02 *records the failure of SYMBOLON-01's
+strongest defensive claim* — a disconfirmed anti-collapse technology, which is the most valuable kind of
+entry this dataset can hold. It declares its concepts as **"Why these matter"** and **"Why these work"**:
+section headings captured as terms. Invisible to rule A, and its title carries no instrument word for rule C.
+Rule D admits it on the description-level signal and marks the weaker basis.
 
 **And the traversal found a hole in its own substrate.** Five of the eight deposits the design
 named — #783 *Fear and Trembling*, #156 *Self-Audit Module*, #789 *Atomic Token Rule*, #157

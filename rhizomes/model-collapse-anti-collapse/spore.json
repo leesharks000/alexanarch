@@ -4,7 +4,7 @@
  "parent": "crimson-hexagonal-archive",
  "parent_uri": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive",
  "version": "0.1",
- "generated": "2026-09-11T13:42:47Z",
+ "generated": "2026-09-11T14:23:08Z",
  "topology": "bipolar-dynamic",
  "poles": [
   "collapse",
@@ -18,10 +18,11 @@
   "core_A": "a deposit that DEFINES a concept matching the select pattern",
   "core_B": "a deposit that measures or is measured by an A",
   "core_C": "a deposit whose TITLE declares a named instrument or mechanism — a weaker signal, marked as such",
-  "gap_found": "Rule C exists because five of the eight deposits the design named DECLARE ZERO CONCEPTS: #783 Fear and Trembling, #156 Self-Audit Module, #789 Atomic Token Rule, #157 Erasure Skew, #788 Measurement Sovereignty. defines_concepts is empty on all five. The traversal was correct and the registry is incomplete. Recorded here rather than patched silently, because a rhizome that hides the holes in its own substrate is the thing this dataset is against.",
+  "core_D": "a deposit whose DESCRIPTION records the failure of a claim already in this corpus — admitted on a description-level signal, marked as such",
+  "gap_found": "Rule C exists because five of the eight deposits the design named DECLARE ZERO CONCEPTS: #783 Fear and Trembling, #156 Self-Audit Module, #789 Atomic Token Rule, #157 Erasure Skew, #788 Measurement Sovereignty. defines_concepts is empty on all five. The traversal was correct and the registry is incomplete. Rule D exists for a second form of the same defect: #678 SYMBOLON-02 declares 'Why these matter' and 'Why these work' as its concepts — section headings captured as terms — so a deposit that records the failure of a claim held in this corpus was invisible to both A and C. Recorded here rather than patched silently, because a rhizome that hides the holes in its own substrate is the thing this dataset is against.",
   "neighbour": "one typed hop from core, restricted to the follow set",
   "frontier": "second hop — emitted as a stolon and NOT included",
-  "select_pattern": "collapse|contraction|monoculture|foreclosure|tail renewal|erasure|diversity loss|pristine fallacy|athetic|custody|non-erasure|source tether|measurement sovereign|atomic token|erasure skew|self-audit|counterexample",
+  "select_pattern": "collapse|contraction|monoculture|foreclosure|tail renewal|erasure|diversity loss|pristine fallacy|athetic|custody|non-erasure|source tether|measurement sovereign|atomic token|erasure skew|self-audit|counterexample|severance|severab|\\bfused\\b|de-fusion|round-trip invariant|behavior invariance|closure test|collision test|coverage test|records the failure|compression arsenal",
   "follow": [
    "consequence",
    "corrects",
@@ -41,10 +42,10 @@
   "why_not_text_search": "A keyword pass over titles and descriptions returns 361 deposits — model collapse becomes the whole archive because everything eventually touches everything. Selection on defines_concept, a deposit's own declaration, returns a corpus."
  },
  "counts": {
-  "nodes": 222,
-  "core": 115,
-  "neighbour": 107,
-  "edges": 140,
+  "nodes": 242,
+  "core": 124,
+  "neighbour": 118,
+  "edges": 151,
   "stolons": 7
  },
  "adjacent": [

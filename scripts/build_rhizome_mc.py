@@ -29,10 +29,23 @@ import json, pathlib, re, collections, datetime, hashlib
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "rhizomes/model-collapse-anti-collapse"
 
+# SEVERANCE IS A COLLAPSE MODE THE PATTERN DID NOT NAME (2026-09-11). The SYMBOLON
+# deposits define severance as dividing a fused object into independently adjudicated
+# layers — the loss of relations BETWEEN parts while every part survives intact. That
+# is distributional collapse's structural cousin: nothing is deleted and the object
+# stops being what it was. It sat outside the rhizome because the pattern named loss of
+# CONTENT and not loss of RELATION.
+#
+# This is a widening of the select pattern and should be read as one. It admits a
+# vocabulary the rule did not previously see, on the stated ground that severance is a
+# contraction of relational structure. It is not a widening to raise counts, and the
+# three deposits it admits were identified by reading, not by search.
 SELECT = re.compile(
     r"collapse|contraction|monoculture|foreclosure|tail renewal|erasure|diversity loss|"
     r"pristine fallacy|athetic|custody|non-erasure|source tether|measurement sovereign|"
-    r"atomic token|erasure skew|self-audit|counterexample", re.I)
+    r"atomic token|erasure skew|self-audit|counterexample|"
+    r"severance|severab|\bfused\b|de-fusion|round-trip invariant|behavior invariance|"
+    r"closure test|collision test|coverage test|records the failure|compression arsenal", re.I)
 
 # axis of contraction — a concept may sit on several
 AXES = {
@@ -48,6 +61,9 @@ AXES = {
     "archival": r"archiv|tombstone|deletion|withdraw|custody|book-burning",
     "authorial": r"heteronym|author|plural",
     "methodological": r"method|protocol|audit|test|measure",
+    # LOSS OF RELATION RATHER THAN LOSS OF CONTENT. Every part survives and the
+    # structure binding them does not — severance, layer-splitting, de-fusion.
+    "relational": r"severance|severab|fused|fusion|register|layer|binding|non-severab",
 }
 
 # dynamic role — what the node DOES in the field, not what it is about
@@ -61,15 +77,21 @@ AXES = {
 # Two repairs: proposal patterns are hoisted above the measure pattern, and the
 # measure pattern's bare tokens are bounded so `measure` alone no longer fires.
 ROLES = [
-    ("anti_collapse_instrument", r"self-audit|audit module|erasure skew|atomic token|measurement sovereign|calculator"),
+    ("anti_collapse_instrument", r"self-audit|audit module|erasure skew|atomic token|measurement sovereign|calculator|"
+                                 r"closure test|collision test|coverage test|round-trip invariant|behavior invariance|invariant"),
     ("anti_collapse_mechanism", r"tail renewal|source tether|non-erasure|athetic|custody|plural authorship|heteronym|redundan|mirror|"
-                                r"relational supervision|training paradigm|anti-severance|fused documentary"),
+                                r"relational supervision|training paradigm|anti-severance|fused documentary|non-severab|threshold clause"),
     ("anti_collapse_intervention", r"intervention|protocol|remedy|restor|reclamation|recover|complementary training"),
     ("collapse_mechanism", r"contraction|foreclosure|monoculture|feedback|pristine fallacy|narrowing|capture"),
     ("collapse_measure", r"\bPER\b|\b\w+ rate\b|\bmetric\b|\bindex\b|\bscore\b|\bmeasurement of\b|\bmeasured across\b"),
     ("collapse_observation", r"observed|event|case|incident|log|ledger"),
     ("correction", r"erratum|correction|corrigend|revis"),
-    ("counterexample", r"counterexample|counter-example|exception|boundary condition"),
+    # A RECORDED FAILURE IS A COUNTEREXAMPLE WHETHER OR NOT IT USES THE WORD. SYMBOLON-02
+    # "records the failure of SYMBOLON-01's strongest defensive claim" and reclassifies
+    # the catalogue accordingly; it is the strongest kind of entry this dataset can hold
+    # and it would have been filed as an observation.
+    ("counterexample", r"counterexample|counter-example|exception|boundary condition|"
+                       r"records the failure|failed to|continued to separate|did not hold|reclassifi"),
 ]
 
 # THE FOLLOW SET EXCLUDES defines_concept ON PURPOSE. A core deposit defines many concepts,
@@ -135,6 +157,28 @@ def main():
         if e["predicate"] in ("measures", "measured_by") and (e["source_id"] in core or e["target_id"] in core):
             for x in (e["source_id"], e["target_id"]):
                 core.setdefault(x, "B")
+
+    # RULE D — A RECORDED FAILURE OF A CLAIM ALREADY IN THE CORPUS (2026-09-11).
+    # #678 SYMBOLON-02 "records the failure of SYMBOLON-01's strongest defensive claim"
+    # and reclassifies the catalogue accordingly. It fell between rules A and C: its
+    # DEFINED CONCEPTS ARE "Why these matter" AND "Why these work" — section headings
+    # captured as terms, which is a registry defect of the same family as the deposits
+    # that declare no concepts at all — and its title carries no instrument word.
+    #
+    # A deposit that records the failure of a claim held in this corpus is the strongest
+    # kind of entry the dataset can hold, and it was the one the rules could not see.
+    # Admitted on the description-level signal, marked core_rule D so the weaker basis
+    # is never confused with a declared concept.
+    FAILURE = re.compile(r"records the failure|failure of|did not hold|continued to|"
+                         r"reclassifi|disconfirm|contrary to|against the (?:author|thesis|claim)", re.I)
+    for num, d in reg.items():
+        nid = f"deposit:{num}"
+        if nid in core:
+            continue
+        blob = " ".join(str(d.get(k) or "") for k in ("title", "description"))
+        if SELECT.search(blob) and FAILURE.search(str(d.get("description") or "")):
+            core[nid] = "D"
+            why[nid].add("[recorded failure: " + (FAILURE.search(d["description"]).group(0)) + "]")
 
     # RULE C — TITLE-DECLARED INSTRUMENTS. The first run missed five of the eight deposits the
     # design named, including Fear and Trembling (#783), the Self-Audit Module (#156), the
@@ -240,10 +284,14 @@ def main():
             "core_A": "a deposit that DEFINES a concept matching the select pattern",
             "core_B": "a deposit that measures or is measured by an A",
             "core_C": "a deposit whose TITLE declares a named instrument or mechanism — a weaker signal, marked as such",
+            "core_D": "a deposit whose DESCRIPTION records the failure of a claim already in this corpus — admitted on a description-level signal, marked as such",
             "gap_found": ("Rule C exists because five of the eight deposits the design named DECLARE ZERO CONCEPTS: "
                           "#783 Fear and Trembling, #156 Self-Audit Module, #789 Atomic Token Rule, #157 Erasure Skew, "
                           "#788 Measurement Sovereignty. defines_concepts is empty on all five. The traversal was correct "
-                          "and the registry is incomplete. Recorded here rather than patched silently, because a rhizome "
+                          "and the registry is incomplete. Rule D exists for a second form of the same defect: "
+                          "#678 SYMBOLON-02 declares 'Why these matter' and 'Why these work' as its concepts — "
+                          "section headings captured as terms — so a deposit that records the failure of a claim "
+                          "held in this corpus was invisible to both A and C. Recorded here rather than patched silently, because a rhizome "
                           "that hides the holes in its own substrate is the thing this dataset is against."),
             "neighbour": "one typed hop from core, restricted to the follow set",
             "frontier": "second hop — emitted as a stolon and NOT included",
