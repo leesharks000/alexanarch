@@ -43,15 +43,25 @@ jobs:
       - name: Re-emit EA-RHIZOME-MC-01 from the ledger
         run: python3 scripts/build_rhizome_mc.py
 
-      - name: Fail if the emitted rhizome differs from the committed one
+      # COMPARE THE DATA, NOT THE TIMESTAMP (2026-09-10). The first CI run of this gate
+      # failed on spore.json alone, one line: `generated`, which changes on every emission
+      # by construction. A gate that compares a field which can never match fails always
+      # and therefore means nothing — it would have blocked every push while appearing to
+      # verify something. Only nodes, relations and stolons are checked; those are the
+      # projection. The spore's timestamp and source_commit are provenance ABOUT the
+      # emission, and source_commit is stamped in CI precisely because a local copy
+      # cannot have it.
+      - name: Fail if the emitted data differs from the committed copy
         run: |
-          if ! git diff --quiet -- rhizomes/model-collapse-anti-collapse/; then
-            echo "::error::Emitted rhizome differs from the committed copy."
+          D=rhizomes/model-collapse-anti-collapse
+          if ! git diff --quiet -- $D/nodes.jsonl $D/relations.jsonl $D/stolons.jsonl; then
+            echo "::error::Emitted rhizome data differs from the committed copy."
             echo "The committed files are stale, or the ledger changed without a re-emit."
             echo "Run scripts/build_rhizome_mc.py locally and commit the result."
-            git --no-pager diff --stat -- rhizomes/model-collapse-anti-collapse/
+            git --no-pager diff --stat -- $D/nodes.jsonl $D/relations.jsonl $D/stolons.jsonl
             exit 1
           fi
+          echo "emitted data matches the committed copy"
 
       - name: Stamp the spore with the source commit
         run: |
