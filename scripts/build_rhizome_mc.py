@@ -309,7 +309,16 @@ def main():
             "region": "core" if nid in core else "neighbour",
             "core_rule": core.get(nid),
             "entered_by": nb.get(nid),
-            "dynamic_role": role_for(blob),
+            # THE ADMISSION BASIS OUTRANKS THE BLOB CLASSIFIER (2026-09-11). A node admitted
+            # by RULE D entered BECAUSE its description records the failure of a claim held in
+            # this corpus. role_for() reads the same blob as every other node and knows nothing
+            # about why the node was admitted, so all five Rule D entries received ordinary
+            # roles and the dataset emitted ZERO counterexample labels — losing exactly the
+            # property that let them in. SYMBOLON-02, which records the failure of SYMBOLON-01's
+            # strongest defensive claim, was filed anti_collapse_mechanism.
+            #
+            # A rule that knows why it admitted something knows more than a regex over the text.
+            "dynamic_role": "counterexample" if core.get(nid) == "D" else role_for(blob),
             "collapse_axis": json.dumps(axes_for(blob)),
             "defines": json.dumps(sorted(why.get(nid, ()))),
             "creator": d.get("creator"),
@@ -332,6 +341,25 @@ def main():
                                            "corrects" if e["predicate"] in ("corrects", "supersedes") else
                                            "develops" if e["predicate"] in ("develops_from", "inherits", "transforms") else
                                            "defines" if e["predicate"] == "defines_concept" else "relates")})
+
+    # THE COUNTEREXAMPLE MUST REACH WHAT IT DISCONFIRMS (2026-09-11). A node admitted for
+    # recording a failure was, until now, connected to nothing that explains what failed:
+    # SYMBOLON-02 and SYMBOLON-01 sat in the same body with no edge between them, so the
+    # dataset held a disconfirmation and no route from the promise to the test that broke it.
+    #
+    # An anti-collapse dataset whose counterexamples are unreachable from the claims they
+    # qualify is a list, not a field. The edge is typed `disconfirms` and is reciprocal in
+    # effect: arriving at the promise, one can reach the failure; arriving at the failure,
+    # one can reconstruct why the promise mattered.
+    DISCONFIRMS = [(678, 675, "records the failure of SYMBOLON-01's strongest defensive claim; "
+                              "the tested model continued to separate fused registers")]
+    for src, tgt, note in DISCONFIRMS:
+        a, b = f"deposit:{src}", f"deposit:{tgt}"
+        if a in included and b in included:
+            edges.append({"relation_id": None, "source_id": a, "predicate": "disconfirms",
+                          "target_id": b, "target_type": "deposit", "basis": "editorial",
+                          "status": "current", "note": note, "asserted_by": "editor:cha",
+                          "rhizome_role": "disconfirms"})
 
     # capture -> deposit, from the resolver, kept only where the deposit is in the body
     for cid, num in cap_edges:
