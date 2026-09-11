@@ -45,11 +45,26 @@ SELECT = re.compile(
     r"pristine fallacy|athetic|custody|non-erasure|source tether|measurement sovereign|"
     r"atomic token|erasure skew|self-audit|counterexample|"
     r"severance|severab|\bfused\b|de-fusion|round-trip invariant|behavior invariance|"
-    r"closure test|collision test|coverage test|records the failure|compression arsenal", re.I)
+    r"closure test|collision test|coverage test|records the failure|compression arsenal|"
+    # THE ARCHIVE'S OWN MEASURE OF THE QUANTITY (2026-09-11). The Semantic Deviation
+    # Principle defines raw semantic magnitude as "variance from what is most likely over
+    # time". Model collapse is loss of the tail. THOSE ARE THE SAME QUANTITY FROM
+    # OPPOSITE ENDS — SDP measures deviation from typical, collapse is the disappearance
+    # of deviation — and the pattern named the mode without naming the measure, so #109
+    # SDP, #107 its audited claims, and #108 Framework 15 all sat outside a dataset about
+    # the thing they measure.
+    #
+    # ADMITTED ON TOKEN PRECISION, SAMPLED BEFORE ADMISSION. deviation 19 hits / 0 noise;
+    # divergence 19 / 0; variance 8 / 0; glas function 1 / 0; winding number 1 / 0.
+    # `tail` BARE was REJECTED at 45 hits and 24/40 noise — it matches detail, entail,
+    # curtail — and a first bounding attempt still leaked because `tails\b` matches
+    # "details". The bounded form below is 20 hits and 0 noise.
+    r"deviation|divergence|\bvariance\b|entropy.?floor|glas function|winding number|"
+    r"jensen-shannon|kullback|\btails?\b|tail-preserv|tail labor|tail.?prun|long tail", re.I)
 
 # axis of contraction — a concept may sit on several
 AXES = {
-    "distributional": r"diversity|distribution|variance|tail|entropy|monoculture",
+    "distributional": r"diversity|distribution|\bvariance\b|\btails?\b|tail-preserv|tail.?prun|entropy|monoculture|deviation|divergence",
     "lexical": r"lexical|vocabulary|term|token",
     "stylistic": r"stylistic|style|voice",
     "epistemic": r"epistemic|foreclosure|search space|pristine|inquiry",
@@ -80,9 +95,17 @@ ROLES = [
     ("anti_collapse_instrument", r"self-audit|audit module|erasure skew|atomic token|measurement sovereign|calculator|"
                                  r"closure test|collision test|coverage test|round-trip invariant|behavior invariance|invariant"),
     ("anti_collapse_mechanism", r"tail renewal|source tether|non-erasure|athetic|custody|plural authorship|heteronym|redundan|mirror|"
-                                r"relational supervision|training paradigm|anti-severance|fused documentary|non-severab|threshold clause"),
+                                r"relational supervision|training paradigm|anti-severance|fused documentary|non-severab|threshold clause|"
+                                r"tail-preserv|tail labor|preserving labor|recognition-pruning"),
+    # A MEASUREMENT PRIMITIVE IS NOT AN INTERVENTION (2026-09-11). #109, the Semantic
+    # Deviation Principle, was classed anti_collapse_intervention because the literal
+    # word "intervention" occurs in its own description. A measure that names itself a
+    # measure outranks a word that happens to appear.
+    ("collapse_measure", r"measurement primitive|\bprinciple\b.{0,40}measur|measur.{0,30}\bprimitive\b|"
+                         r"operationaliz|divergence index|deviation principle"),
     ("anti_collapse_intervention", r"intervention|protocol|remedy|restor|reclamation|recover|complementary training"),
-    ("collapse_mechanism", r"contraction|foreclosure|monoculture|feedback|pristine fallacy|narrowing|capture"),
+    ("collapse_mechanism", r"contraction|foreclosure|monoculture|feedback|pristine fallacy|narrowing|capture|"
+                           r"tail.?prun|tail-prun|pruning instrument|exhaustion"),
     ("collapse_measure", r"\bPER\b|\b\w+ rate\b|\bmetric\b|\bindex\b|\bscore\b|\bmeasurement of\b|\bmeasured across\b"),
     ("collapse_observation", r"observed|event|case|incident|log|ledger"),
     ("correction", r"erratum|correction|corrigend|revis"),

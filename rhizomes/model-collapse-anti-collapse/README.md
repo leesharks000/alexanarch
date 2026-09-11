@@ -82,6 +82,19 @@ correct and the registry is incomplete. Rule C admits them on the weaker title s
 `core_rule = C` so the two are never confused, and the gap is recorded in the spore rather than
 patched silently. A rhizome that hides the holes in its substrate is the thing this dataset is against.
 
+**The archive's own measure of the quantity**
+
+The Semantic Deviation Principle defines raw semantic magnitude as *variance from what is most likely
+over time*. Model collapse is loss of the tail. **Those are the same quantity from opposite ends** — SDP
+measures deviation from typical; collapse is the disappearance of deviation. The selection pattern named
+the mode and not the measure, so #109 SDP, #107 its audited claims and #108 Framework 15 sat outside a
+dataset about the thing they measure. They are now core.
+
+**Vocabulary was admitted on sampled token precision, not on judgement.** `deviation` 19 hits / 0 noise ·
+`divergence` 19 / 0 · `variance` 8 / 0 · `glas function` 1 / 0 · `winding number` 1 / 0. **`tail` bare was
+rejected** at 45 hits and 24-in-40 noise — it matches *detail*, *entail*, *curtail*. A first bounding
+attempt still leaked. The bounded form is 20 hits and 0 noise.
+
 ## No collapse boolean
 
 Every node carries an **axis of contraction** and a **dynamic role**, because a binary would
