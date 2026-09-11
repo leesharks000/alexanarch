@@ -51,12 +51,22 @@ AXES = {
 }
 
 # dynamic role — what the node DOES in the field, not what it is about
+# ORDER IS THE CLASSIFIER (2026-09-11). role_for returns on the first match, so a
+# broad pattern placed above a narrow one swallows it. #635, Fractal Semantic
+# Architecture — a PROPOSED TRAINING PARADIGM whose stated claim is that discrete
+# relational supervision may REDUCE recursive synthetic-data collapse — was classed
+# `collapse_measure` because the bare word `measure` matched inside "measured
+# coherence". An anti-collapse proposal was filed as a collapse metric.
+#
+# Two repairs: proposal patterns are hoisted above the measure pattern, and the
+# measure pattern's bare tokens are bounded so `measure` alone no longer fires.
 ROLES = [
     ("anti_collapse_instrument", r"self-audit|audit module|erasure skew|atomic token|measurement sovereign|calculator"),
-    ("anti_collapse_mechanism", r"tail renewal|source tether|non-erasure|athetic|custody|plural|heteronym|redundan|mirror"),
-    ("anti_collapse_intervention", r"intervention|protocol|remedy|restor|reclamation|recover"),
+    ("anti_collapse_mechanism", r"tail renewal|source tether|non-erasure|athetic|custody|plural authorship|heteronym|redundan|mirror|"
+                                r"relational supervision|training paradigm|anti-severance|fused documentary"),
+    ("anti_collapse_intervention", r"intervention|protocol|remedy|restor|reclamation|recover|complementary training"),
     ("collapse_mechanism", r"contraction|foreclosure|monoculture|feedback|pristine fallacy|narrowing|capture"),
-    ("collapse_measure", r"\bPER\b|rate|metric|index|score|measure"),
+    ("collapse_measure", r"\bPER\b|\b\w+ rate\b|\bmetric\b|\bindex\b|\bscore\b|\bmeasurement of\b|\bmeasured across\b"),
     ("collapse_observation", r"observed|event|case|incident|log|ledger"),
     ("correction", r"erratum|correction|corrigend|revis"),
     ("counterexample", r"counterexample|counter-example|exception|boundary condition"),
