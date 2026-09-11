@@ -103,15 +103,86 @@ LAWS = [
 ]
 
 
+# THE LAWS RECORD; THEY DO NOT PREVENT (2026-09-11). The first version of this file was a
+# static list of eight laws written in prose — a description of defects already fixed, which
+# nothing could subsequently violate. That is the failure the poetics reading warns against:
+# an apparatus so good at explaining itself that nothing can happen to it.
+#
+# A formal law broken is an EVENT IN THE POEM, not a compile error. L6 is precisely the case:
+# a gate that PREVENTED where it should have RECORDED, and so verified nothing while blocking
+# everything. These checks run at emission against the emitted body. A failing check does not
+# raise. It writes `held: false` and a breach, and the emission continues.
+#
+# A law that cannot currently be violated is marked `checkable: false` and says so, rather than
+# reporting a pass it did not earn.
+
+def run_checks(nodes, edges, stolons):
+    """Each check returns (held, breach|None). None of them raise."""
+    out = {}
+
+    d_nodes = [n for n in nodes if n.get("core_rule") == "D"]
+    out["L3"] = (bool(d_nodes),
+                 None if d_nodes else {"what": "no deposit entered by the longer line",
+                                       "reading": "rule D exists and admitted nothing; the measure made room for no one"})
+
+    mislabelled = [n["deposit_number"] for n in d_nodes if n.get("dynamic_role") != "counterexample"]
+    out["L4"] = (not mislabelled,
+                 None if not mislabelled else {"what": "admitted for recording a failure, classified as something else",
+                                               "deposits": mislabelled})
+
+    cx = [n for n in nodes if n.get("dynamic_role") == "counterexample"]
+    reach = {e["source_id"] for e in edges if e.get("predicate") == "disconfirms"}
+    orphan = [n["deposit_number"] for n in cx if n["graph_node_id"] not in reach]
+    out["L7"] = (not orphan,
+                 None if not orphan else {
+                     "what": "counterexamples with no route to what they disconfirm",
+                     "deposits": orphan,
+                     "reading": ("Each of these entered because it records a failure, and none of them "
+                                 "can reach the claim that failed. The body holds the disconfirmation "
+                                 "and not the disagreement.")})
+
+    named = {s.get("to_rhizome") for s in stolons}
+    out["L2"] = (bool(named),
+                 None if named else {"what": "the figure was not paid", "reading": "a rhizome with no stolons"})
+
+    # not currently checkable from the emitted body
+    for k, why in (("L1", "the refused tokens are in the generator's history, not in the emitted rows"),
+                   ("L5", "pattern order is a property of the classifier, not of its output"),
+                   ("L6", "the gate's scope is in the workflow, not in the dataset"),
+                   ("L8", "a reader's misreading leaves no trace in the body it misread")):
+        out[k] = (None, {"checkable": False, "why": why})
+    return out
+
+
 def main():
     out = RHI / "poetics.jsonl"
+    nodes = [json.loads(l) for l in (RHI / "nodes.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()]
+    edges = [json.loads(l) for l in (RHI / "relations.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()]
+    stol = [json.loads(l) for l in (RHI / "stolons.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()]
+    checks = run_checks(nodes, edges, stol)
+
+    broken = []
     with out.open("w", encoding="utf-8") as f:
         for law in LAWS:
+            held, breach = checks.get(law["law_id"], (None, {"checkable": False, "why": "no check written"}))
+            law = dict(law)
+            law["checked_at"] = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+            law["checkable"] = held is not None
+            law["held"] = held
+            law["breach"] = breach if held is False else (None if held else breach)
+            if held is False:
+                broken.append((law["law_id"], law["law"], breach))
             f.write(json.dumps(law, ensure_ascii=False) + "\n")
-    gov = collections.Counter(x["governs"] for x in LAWS)
-    print(f"poetics.jsonl — {len(LAWS)} laws")
-    for k, v in gov.most_common():
-        print(f"  governs {k:18} {v}")
+    held = sum(1 for lid in checks if checks[lid][0] is True)
+    fail = sum(1 for lid in checks if checks[lid][0] is False)
+    unck = sum(1 for lid in checks if checks[lid][0] is None)
+    print(f"poetics.jsonl — {len(LAWS)} laws · {held} held · {fail} BROKEN · {unck} not checkable")
+    for lid, law, breach in broken:
+        print(f"  BROKEN {lid}: {law}")
+        print(f"         {breach.get('what')}")
+        if breach.get("deposits"):
+            print(f"         deposits: {breach['deposits']}")
+    print("  (a broken law is recorded, never raised — the emission continues)")
     # stamp the spore so a reader of the recipe learns the body has laws
     sp = RHI / "spore.json"
     s = json.loads(sp.read_text(encoding="utf-8"))

@@ -79,19 +79,30 @@ and **a rhyme declined is as formal an act as one accepted.**
 classification and records what it admitted, what it refused, and what it cost. **Six of the eight
 document a defect found after the fact.**
 
-| law | governs | |
+| law | governs | at last emission |
 | --- | --- | --- |
-| **a rhyme creates kinship** | membership | A dataset about the loss of distinctions nearly acquired 24 relatives by sound alone. |
-| **every metaphor leaves a material remainder** | schema | The metaphor was load-bearing. Renaming it would break the file format. |
-| **things happen only when the measure makes room** | admission | Its declared concepts are section headings. A paper about severance was severed from the dataset by its own table of contents. |
-| **the admission basis outranks the description** | classification | The dataset forgot why it let something in, then described it as the opposite. |
-| **a word can eat a phrase** | role assignment | A dataset about meaning collapse lost a meaning to a substring. |
-| **a gate may not test what can never match** | emission | The instrument failed its own test by testing the clock. |
-| **the counterexample must reach what it disconfirms** | traversal | The promise and the proof it failed were adjacent and unacquainted. |
-| **the instrument is subject to the law it measures** | the author | The machines held the line. The instrument-builder did not. |
+| **a rhyme creates kinship** | membership | — |
+| **every metaphor leaves a material remainder** | schema | held |
+| **things happen only when the measure makes room** | admission | held |
+| **the admission basis outranks the description** | classification | held |
+| **a word can eat a phrase** | role assignment | — |
+| **a gate may not test what can never match** | emission | — |
+| **the counterexample must reach what it disconfirms** | traversal | **broken** |
+| **the instrument is subject to the law it measures** | the author | — |
 
-**These are stated so they can be contested.** A traversal grammar buried in a generator cannot be
-argued with; one written down can.
+**The laws record. They do not prevent.** The checks run at emission against the emitted body, and a
+law found broken writes `held: false` and a breach — **the emission continues.** A formal law broken is
+an event in the body, not a compile error, and a law that could stop the build would be an enforcement
+rule wearing a poem's clothes.
+
+**At the last emission, L7 is broken.** Four of five counterexamples have no route to what they
+disconfirm: #749, #752, #782, #871 each entered because they record a failure, and none can reach the
+claim that failed. **The body holds the disconfirmation and not the disagreement.** That is recorded
+rather than fixed, because fixing it requires deciding what each of them disconfirms, and that is
+editorial work rather than a build step.
+
+**Four laws are marked `checkable: false`** and say why, rather than reporting a pass they did not
+earn. A misreading by a reader leaves no trace in the body it misread.
 
 ## What this is not
 
