@@ -50,6 +50,24 @@ archive's own resolver.
 **What is still outside:** 469 predictions, 12,333 lexicon entries, 1,136 tombstones, 17 studies. The
 tombstones are dated archival collapse events and are the most obvious next admission.
 
+## The counterexample and what it disconfirms
+
+**Five nodes carry `counterexample`, and they carry it because of how they were admitted rather than
+because of what their text says.** A node entering under rule D entered *because its description
+records the failure of a claim held in this corpus*. Until 11 September 2026 the role classifier read
+the same text as every other node and overwrote that property: SYMBOLON-02, which records the failure
+of SYMBOLON-01's strongest defensive claim, was filed `anti_collapse_mechanism`, and the dataset
+emitted **zero** counterexample labels. **A rule that knows why it admitted something knows more than
+a regular expression over the text.**
+
+**And the failure can now reach what it disconfirms.** The two SYMBOLON deposits sat in the same body
+with no edge between them — a disconfirmation with no route from the promise to the test that broke it.
+`deposit:678 --disconfirms--> deposit:675` is typed and editorial. **Arriving at the promise, a reader
+can reach the failure; arriving at the failure, they can reconstruct why the promise mattered.**
+
+**An anti-collapse dataset whose counterexamples are unreachable from the claims they qualify is a
+list, not a field.**
+
 ## What this is not
 
 **It is a map of the research, not the experiment.**
