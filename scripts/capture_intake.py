@@ -13,6 +13,35 @@ MANUS, 2026-08-13, setting the rule:
 
 Four stages, in order, each refusing to proceed on failure.
 
+
+WHAT IS A CAPTURE — the rule this contract exists to enforce, stated first because
+instances get it wrong repeatedly and the registry has already been rebuilt once over it.
+
+  A CAPTURE IS AN ACT OF SOURCE ENGAGEMENT IN COMPOSITION.
+
+  A surface reached for sources and composed something from them. That composed
+  artefact, with its transcript, IS the capture. Without it there is nothing captured.
+
+  A query you ran is not a capture.
+  A search that returned only organic links is not a capture — no composition occurred.
+  A surface that rendered no panel is not a capture — there is nothing to preserve.
+  A refusal to search is not a capture AT A NEW ADDRESS.
+
+  THE ONE EXCEPTION, AND IT IS NOT A LOOSENING:
+
+  Once an address is IN the registry, subsequent NON-ENGAGEMENT at that address IS
+  recorded, as a longitudinal observation. The null is meaningful because a baseline
+  exists to make it meaningful: "composed from five sources in July, rendered no panel
+  in September" is a measurement. "This string has never produced a panel" is not a
+  capture and never was.
+
+  So: engagement admits a NEW address. Non-engagement is recorded only as a LATER
+  observation on an address engagement already admitted.
+
+  THE OPERATOR'S REASON, recorded because it is the cost of getting this wrong: the
+  registry was rebuilt once after non-captures accumulated in it, and hundreds of old
+  threads had to be re-sorted because transcripts had not been preserved.
+
   1. ADMIT      minimum fields present, or the capture is not seated
   2. ROUTE      exact-string address match decides observation vs new record
   3. NORMALISE  the same derivations, computed the same way, every time
@@ -244,6 +273,22 @@ def seat_flat(draft, registry, schema):
         if any(x.get("slug") == e["slug"] for x in registry["entries"]):
             raise Refused("slug still collides after disambiguation: " + e["slug"])
         print(f"   slug disambiguated: distinct address collided on the 44-char prefix with {clash['slug']}")
+
+    # ENFORCE THE CAPTURE RULE (2026-09-11). A NEW address requires evidence of source
+    # engagement in composition. An EXISTING address may record non-engagement, because a
+    # baseline is what makes a null meaningful. See the rule at the head of this file.
+    _new_address = not any(x.get("addr_id") == e["addr_id"] for x in registry["entries"])
+    _no_engagement = re.search(
+        r"NO PANEL|no panel rendered|did not search|no composed answer|"
+        r"returned nothing|no transcript held|organic (?:results )?only",
+        str(draft.get("transcript", "")) + " " + str(draft.get("ev", "")), re.I) is not None
+    if _new_address and _no_engagement:
+        raise Refused(
+            "NOT A CAPTURE. This is a new address and the draft records no source engagement "
+            "in composition — no panel, no composed answer, or a refusal to search. A capture "
+            "IS the composed artefact and its transcript; without one there is nothing captured. "
+            "Non-engagement is recordable ONLY as a later observation on an address that some "
+            "earlier engagement already admitted.")
     # INSERT at the end of its section (sections alphabetical; a new section goes where the alphabet puts it)
     E = registry["entries"]; pos = len(E)
     if any(x["s"] == e["s"] for x in E):
