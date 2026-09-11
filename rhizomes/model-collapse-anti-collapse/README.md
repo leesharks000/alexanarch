@@ -34,6 +34,22 @@ collapse: preserve plurality, competing mechanisms, counterexamples, corrections
 and outgoing routes to material it does not contain. It is meant to be an anti-collapse
 dataset *in its construction*, not only about anti-collapse.
 
+## The empirical arm
+
+**109 of the archive's 419 captures are in this dataset**, 64 of them carrying a Provenance Erasure Rate.
+A capture records what a composition surface actually did — substituted an entity, declined to search,
+returned a different figure on an identical prompt, dropped an attribution. **They are the observations
+this field otherwise theorises about.**
+
+Until 11 September 2026 the rhizome could not see them. Its node universe was the relation ledger, which
+holds deposits, concepts, lines, series and problems — **and a model-collapse dataset whose empirical arm
+sits outside it is a bibliography.** Captures now enter as their own node type under rule E, typed as
+observations, or as measures where a PER score exists, and linked to the deposits they concern by the
+archive's own resolver.
+
+**What is still outside:** 469 predictions, 12,333 lexicon entries, 1,136 tombstones, 17 studies. The
+tombstones are dated archival collapse events and are the most obvious next admission.
+
 ## What this is not
 
 **It is a map of the research, not the experiment.**
@@ -62,6 +78,7 @@ its components are declared rather than measured.
 | **B** | it measures, or is measured by, an A |
 | **C** | its TITLE declares a named instrument or mechanism — a weaker signal, marked as such |
 | **D** | its DESCRIPTION records the failure of a claim already in this corpus — the strongest kind of entry, and the one the rules could not see |
+| **E** | it is a **CAPTURE** whose finding concerns the collapse vocabulary — a different node type entirely, linked by `observes` to the deposits it concerns |
 | neighbour | one typed hop from core, restricted to the follow set |
 | frontier | the second hop — emitted as a **stolon** and NOT included |
 

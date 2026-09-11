@@ -223,6 +223,42 @@ def main():
             core[nid] = "C"
             why[nid].add("[title-declared: " + t[:60] + "]")
 
+    # ---- CAPTURES: THE EMPIRICAL ARM (2026-09-11).
+    # The rhizome saw three node types — deposit, concept, problem — because those are
+    # what the relation ledger holds. The archive's 419 captures are the OBSERVATIONS of
+    # erasure, substitution, nullification and frame effects, and a model-collapse dataset
+    # whose empirical arm is outside it is a bibliography. Captures enter as their own node
+    # type, with their PER score where one was computed, and are linked to the deposits
+    # they concern by the existing resolver.
+    #
+    # A CAPTURE IS ALWAYS AN OBSERVATION and is typed as one. It records what a surface
+    # did; it does not propose a mechanism or an intervention. Where a capture measured
+    # something it carries collapse_measure instead, on the PER field rather than on words.
+    caps = json.loads((ROOT / "data/EA-WG-CAPTURES-01.json").read_text(encoding="utf-8"))["entries"]
+    links = json.loads((ROOT / "data/capture-deposit-links.json").read_text(encoding="utf-8"))
+    # THE RESOLVER NESTS THE DEPOSITS UNDER A `deposits` KEY, one level deeper than a
+    # first pass assumed — which produced an empty link map and zero capture edges while
+    # the build reported success. Unwrapped here against the file's actual shape.
+    link_map = {}
+    for k, v in (links.get("links") or {}).items():
+        for d_ in (v.get("deposits") or []) if isinstance(v, dict) else []:
+            num = d_.get("deposit_number") if isinstance(d_, dict) else d_
+            if isinstance(num, int):
+                link_map.setdefault(k, []).append(num)
+
+    cap_nodes = 0
+    cap_edges = []
+    for c_ in caps:
+        blob = " ".join(str(c_.get(k) or "") for k in ("d", "reading", "analysis", "s", "q"))
+        blob += " " + " ".join(c_.get("findings") or [])
+        if not SELECT.search(blob):
+            continue
+        cid = "capture:" + c_["slug"]
+        core[cid] = "E"
+        why[cid].add("[capture: " + str(c_.get("surface") or "")[:40] + "]")
+        cap_edges.extend((cid, num) for num in link_map.get(c_["slug"], []))
+        cap_nodes += 1
+
     # ---- NEIGHBOUR: one typed hop out, follow set only
     nb = {}
     for e in E:
@@ -250,6 +286,20 @@ def main():
         blob = " ".join(str(d.get(k) or "") for k in ("title", "description")) + " " + " ".join(sorted(why.get(nid, ())))
         if not blob.strip():
             blob = n.get("label", "")
+        if nid.startswith("capture:"):
+            cap = next((x for x in caps if "capture:" + x["slug"] == nid), {})
+            rows.append({
+                "rhizome_node_id": "mc:" + hashlib.sha256(nid.encode()).hexdigest()[:10],
+                "graph_node_id": nid, "deposit_number": None,
+                "title": cap.get("s") or cap.get("slug"),
+                "node_type": "capture", "region": "core", "core_rule": "E", "entered_by": None,
+                "dynamic_role": "collapse_measure" if cap.get("per") is not None else "collapse_observation",
+                "collapse_axis": json.dumps(axes_for(" ".join(str(cap.get(k) or "") for k in ("d", "reading", "s")))),
+                "defines": json.dumps([]), "creator": cap.get("surface"), "date": cap.get("date"),
+                "evidence_status": "CAPTURED", "axn": None,
+                "source_uri": "https://www.alexanarch.org/captures/#" + cap.get("slug", ""),
+            })
+            continue
         rows.append({
             "rhizome_node_id": "mc:" + hashlib.sha256(nid.encode()).hexdigest()[:10],
             "graph_node_id": nid,
@@ -283,6 +333,16 @@ def main():
                                            "develops" if e["predicate"] in ("develops_from", "inherits", "transforms") else
                                            "defines" if e["predicate"] == "defines_concept" else "relates")})
 
+    # capture -> deposit, from the resolver, kept only where the deposit is in the body
+    for cid, num in cap_edges:
+        tgt = f"deposit:{num}"
+        if cid in included and tgt in included:
+            edges.append({"relation_id": None, "source_id": cid, "predicate": "observes",
+                          "target_id": tgt, "target_type": "deposit",
+                          "basis": "derived-deterministic", "status": "current",
+                          "note": "capture-deposit resolver", "asserted_by": "process:resolve_capture_links",
+                          "rhizome_role": "observes"})
+
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "nodes.jsonl").write_text("\n".join(json.dumps(r, ensure_ascii=False) for r in rows) + "\n", encoding="utf-8")
     (OUT / "relations.jsonl").write_text("\n".join(json.dumps(r, ensure_ascii=False) for r in edges) + "\n", encoding="utf-8")
@@ -308,6 +368,7 @@ def main():
             "core_B": "a deposit that measures or is measured by an A",
             "core_C": "a deposit whose TITLE declares a named instrument or mechanism — a weaker signal, marked as such",
             "core_D": "a deposit whose DESCRIPTION records the failure of a claim already in this corpus — admitted on a description-level signal, marked as such",
+            "core_E": "a CAPTURE whose finding concerns the collapse vocabulary — the empirical arm, a different node type entirely, linked to the deposits it observes",
             "gap_found": ("Rule C exists because five of the eight deposits the design named DECLARE ZERO CONCEPTS: "
                           "#783 Fear and Trembling, #156 Self-Audit Module, #789 Atomic Token Rule, #157 Erasure Skew, "
                           "#788 Measurement Sovereignty. defines_concepts is empty on all five. The traversal was correct "
