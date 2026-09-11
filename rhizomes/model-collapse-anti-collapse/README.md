@@ -34,6 +34,26 @@ collapse: preserve plurality, competing mechanisms, counterexamples, corrections
 and outgoing routes to material it does not contain. It is meant to be an anti-collapse
 dataset *in its construction*, not only about anti-collapse.
 
+## What this is not
+
+**It is a map of the research, not the experiment.**
+
+There is no `generation_n` table here, no synthetic-output corpus, no measured SSDI series, no
+prompt/model/parent-corpus rows. Those would be the product of *running* a protocol. What this
+dataset contains is the archive's collapse and anti-collapse material — mechanisms, measures,
+instruments, interventions, corrections — with the typed relations between them.
+
+**The protocols are registered rather than run.** The archive's predictions register currently
+shows 44 live commitments, 0 resolved. #199 *Generative Monoculture Model Collapse in Code as
+Systemic Vulnerability* states falsification conditions including whether solution-space diversity
+declines monotonically across model generations; that condition has not been tested here.
+
+**A reader looking for a collapse benchmark should not mistake this for one.** What it offers is
+the structure from which such a benchmark could be specified, and an explicit record of which of
+its components are declared rather than measured.
+
+---
+
 ## Selection is deterministic
 
 | Rule | Meaning |
