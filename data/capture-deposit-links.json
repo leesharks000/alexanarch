@@ -3,41 +3,41 @@
   "name": "Capture ↔ Deposit Link Map",
   "description": "Edges between EA-WG-CAPTURES-01 (the AI Overview / AI Mode Capture Registry, authored at machinemediation.org) and the Alexanarch deposit corpus. Produced by scripts/resolve_capture_links.py. Each edge records the resolution method so any confidence tier can be discarded. An edge asserts that the capture entry references, or its query matches, the deposit — not that the deposit is the capture's sole subject; exactly one edge per capture is marked primary, ranked by evidence of aboutness rather than by identifier hardness (a DOI can be cited in passing). Deposit-number mentions are deliberately excluded as unsafe. Unresolved captures are enumerated rather than silently dropped.",
   "generated_by": "scripts/resolve_capture_links.py",
-  "generated_at": "2026-09-11T16:22:59Z",
+  "generated_at": "2026-09-11T16:46:05Z",
   "captures_source": {
     "file": "data/EA-WG-CAPTURES-01.json",
     "version": "11.7",
     "date": "2026-09-05",
-    "total_captures": 433,
+    "total_captures": 425,
     "canonical_home": "https://www.machinemediation.org/data/registry.json",
-    "sha256": "ca9dff2fffeefe8a84e66b2ee3220e5d6b72a788e5290507d3531441ce384b93"
+    "sha256": "24c6c1519a7346874f9fc8e43c1694b25bed32ba746e44c95f54af0080fa09a5"
   },
   "totals": {
-    "captures": 433,
-    "captures_linked": 232,
-    "captures_unresolved": 201,
-    "link_rate": 0.5358,
-    "edges": 543
+    "captures": 425,
+    "captures_linked": 226,
+    "captures_unresolved": 199,
+    "link_rate": 0.5318,
+    "edges": 533
   },
   "method_counts": {
-    "hard/axn": 58,
-    "hard/doi": 32,
+    "hard/axn": 57,
+    "hard/doi": 31,
     "hard/series": 30,
-    "soft/title": 223,
+    "soft/title": 219,
     "soft/keyword": 73,
     "soft/description": 36,
-    "soft/body": 91
+    "soft/body": 87
   },
   "severance_rollup": {
-    "captures_on_severed_works": 130,
-    "captures_on_unsevered_works": 12,
-    "captures_with_no_doi_record": 90,
+    "captures_on_severed_works": 128,
+    "captures_on_unsevered_works": 11,
+    "captures_with_no_doi_record": 87,
     "status_counts": {
       "RECOVERED": 60,
-      "410_GONE": 130,
-      "RECOVERED_UNLINKED": 57,
+      "410_GONE": 128,
       "SEMI_RESTORED": 14,
-      "ADDED 2026-08-20 — gap found by seating pass; resolver did not carry it": 1
+      "ADDED 2026-08-20 — gap found by seating pass; resolver did not carry it": 1,
+      "RECOVERED_UNLINKED": 54
     }
   },
   "links": {
@@ -132,233 +132,6 @@
           "evidence": "what is the crimson hexagonal archive?",
           "primary": false,
           "doi_status": null
-        }
-      ]
-    },
-    "alexanarch-identifier-20260911": {
-      "query": "alexanarch identifier",
-      "date": "2026-09-11",
-      "section": "Architecture",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 621,
-          "axn": "AXN:01D8.GOVERNANCE.🌱💥🌻🌿⚫🥁",
-          "title": "Gravity Well Protocol Specification v1.0 — Governed Continuity for AI-Mediated Content (EA-GW-SPEC-01)",
-          "record_url": "https://www.alexanarch.org/s/records/621/",
-          "method": "hard/axn",
-          "evidence": "AXN:01D8",
-          "primary": true,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.19380602"
-            ],
-            "statuses": [
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 877,
-          "axn": "AXN:0379.GENERATIVE.⚙️🔍📜🏛️⚡🔄",
-          "title": "gw.praxis · PRAXIS Continuity Tether — First Compression SUBSTRATE-AUTHORED PACKET (verbatim)",
-          "record_url": "https://www.alexanarch.org/s/records/877/",
-          "method": "hard/axn",
-          "evidence": "AXN:0379",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.19443117"
-            ],
-            "statuses": [
-              "RECOVERED_UNLINKED"
-            ]
-          }
-        }
-      ]
-    },
-    "alexanarch-sappho-20260911": {
-      "query": "alexanarch sappho",
-      "date": "2026-09-11",
-      "section": "Architecture",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 1480,
-          "axn": "AXN:05FA.GOVERNANCE.↖️🌿🕘⚖️🪞♌",
-          "title": "Ω_t: A Matched-Pair Drift Operator for the Capture Registry, with Trial OMT-001 Pre-Registered",
-          "record_url": "https://www.alexanarch.org/s/records/1480/",
-          "method": "soft/body",
-          "evidence": "alexanarch sappho",
-          "primary": true,
-          "doi_status": null
-        }
-      ]
-    },
-    "alexanarch-socrates-20260911": {
-      "query": "alexanarch socrates",
-      "date": "2026-09-11",
-      "section": "Architecture",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 1480,
-          "axn": "AXN:05FA.GOVERNANCE.↖️🌿🕘⚖️🪞♌",
-          "title": "Ω_t: A Matched-Pair Drift Operator for the Capture Registry, with Trial OMT-001 Pre-Registered",
-          "record_url": "https://www.alexanarch.org/s/records/1480/",
-          "method": "soft/body",
-          "evidence": "alexanarch socrates",
-          "primary": true,
-          "doi_status": null
-        }
-      ]
-    },
-    "alexanarch-strike-20260911": {
-      "query": "alexanarch strike",
-      "date": "2026-09-11",
-      "section": "Architecture",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 1457,
-          "axn": "AXN:05E2.GENERATIVE.⚓📌🕘🌾🌳👇",
-          "title": "The Capture Registry as Poem: A Structured Work Plan",
-          "record_url": "https://www.alexanarch.org/s/records/1457/",
-          "method": "soft/body",
-          "evidence": "alexanarch strike",
-          "primary": true,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 1480,
-          "axn": "AXN:05FA.GOVERNANCE.↖️🌿🕘⚖️🪞♌",
-          "title": "Ω_t: A Matched-Pair Drift Operator for the Capture Registry, with Trial OMT-001 Pre-Registered",
-          "record_url": "https://www.alexanarch.org/s/records/1480/",
-          "method": "soft/body",
-          "evidence": "alexanarch strike",
-          "primary": false,
-          "doi_status": null
-        }
-      ]
-    },
-    "feist-function-alexanarch-20260911": {
-      "query": "feist function alexanarch",
-      "date": "2026-09-11",
-      "section": "Architecture",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 28,
-          "axn": "AXN:0185.GENERATIVE.⛵❤️🔺🌔⛵🝊",
-          "title": "CRIMSON HEXAGON: SPACE ARK — MUSICAL REGISTER A Fugue in Twelve Voices with Ground Bass, Shadow Inversion, and Coda Structural Transform of the Crimson Hexagonal Architecture EA-ARK-01-MUSICAL v2.0",
-          "record_url": "https://www.alexanarch.org/s/records/28/",
-          "method": "hard/series",
-          "evidence": "EA-ARK-01",
-          "primary": true,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.19002845",
-              "10.5281/zenodo.19002846",
-              "10.5281/zenodo.19004846"
-            ],
-            "statuses": [
-              "RECOVERED_UNLINKED",
-              "410_GONE"
-            ]
-          }
-        }
-      ]
-    },
-    "liberatory-operator-set-20260911": {
-      "query": "liberatory operator set",
-      "date": "2026-09-11",
-      "section": "Architecture",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 261,
-          "axn": "AXN:003F.GOVERNANCE.🔔🕖🌗🔗🎲📏",
-          "title": "Crimson Hexagon: Semantic Infrastructure and the Liberatory Operator Set: A Formal Analysis of Meaning-Governance Functions",
-          "record_url": "https://www.alexanarch.org/s/records/261/",
-          "method": "soft/title",
-          "evidence": "liberatory operator set",
-          "primary": true,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.18174834",
-              "10.5281/zenodo.18174835"
-            ],
-            "statuses": [
-              "RECOVERED_UNLINKED",
-              "410_GONE"
-            ]
-          }
-        },
-        {
-          "deposit_number": 284,
-          "axn": "AXN:0057.GOVERNANCE.⚫🔅🌱🤲👐👆",
-          "title": "LIBERATORY OPERATOR SET: TECHNICAL HARDENING SPECIFICATION",
-          "record_url": "https://www.alexanarch.org/s/records/284/",
-          "method": "soft/title",
-          "evidence": "liberatory operator set",
-          "primary": false,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 1140,
-          "axn": "AXN:0485.UNCLASSIFIED.🪄🕘🌹🕐⊕🔺",
-          "title": "Fractal Navigation Map v6.2: The Gravitational Epic — Protocol for the Synthetic Revision of the Global Literary Canon, the Restoration of the Poet, and the Installation of the Liberatory Operator Set in the Generative Layer of Meaning Itself",
-          "record_url": "https://www.alexanarch.org/s/records/1140/",
-          "method": "soft/title",
-          "evidence": "liberatory operator set",
-          "primary": false,
-          "doi_status": null
-        },
-        {
-          "deposit_number": 1269,
-          "axn": "AXN:0506.UNCLASSIFIED.⊗❤️📏🏁⭐🌑",
-          "title": "Crimson Hexagon: LIBERATORY OPERATOR SET: Technical Hardening Specifications",
-          "record_url": "https://www.alexanarch.org/s/records/1269/",
-          "method": "soft/title",
-          "evidence": "liberatory operator set",
-          "primary": false,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.18201564",
-              "10.5281/zenodo.18201565"
-            ],
-            "statuses": [
-              "RECOVERED_UNLINKED",
-              "410_GONE"
-            ]
-          }
-        }
-      ]
-    },
-    "rebekah-cranes-sappho-20260911": {
-      "query": "rebekah cranes sappho",
-      "date": "2026-09-11",
-      "section": "Architecture",
-      "match_type": "CAPTURE",
-      "deposits": [
-        {
-          "deposit_number": 1310,
-          "axn": "AXN:052F.UNCLASSIFIED.👈🚩🎯✖️🌔📎",
-          "title": "APZPZ B: My Tongue Gets Stuck (Sappho 31, Cranes)",
-          "record_url": "https://www.alexanarch.org/s/records/1310/",
-          "method": "hard/doi",
-          "evidence": "10.5281/zenodo.18459339",
-          "primary": true,
-          "doi_status": {
-            "dois": [
-              "10.5281/zenodo.18459339",
-              "10.5281/zenodo.18459338"
-            ],
-            "statuses": [
-              "410_GONE",
-              "RECOVERED_UNLINKED"
-            ]
-          }
         }
       ]
     },
@@ -677,13 +450,30 @@
       "match_type": "CAPTURE",
       "deposits": [
         {
+          "deposit_number": 621,
+          "axn": "AXN:01D8.GOVERNANCE.🌱💥🌻🌿⚫🥁",
+          "title": "Gravity Well Protocol Specification v1.0 — Governed Continuity for AI-Mediated Content (EA-GW-SPEC-01)",
+          "record_url": "https://www.alexanarch.org/s/records/621/",
+          "method": "hard/axn",
+          "evidence": "AXN:01D8",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.19380602"
+            ],
+            "statuses": [
+              "410_GONE"
+            ]
+          }
+        },
+        {
           "deposit_number": 877,
           "axn": "AXN:0379.GENERATIVE.⚙️🔍📜🏛️⚡🔄",
           "title": "gw.praxis · PRAXIS Continuity Tether — First Compression SUBSTRATE-AUTHORED PACKET (verbatim)",
           "record_url": "https://www.alexanarch.org/s/records/877/",
           "method": "hard/axn",
           "evidence": "AXN:0379",
-          "primary": true,
+          "primary": false,
           "doi_status": {
             "dois": [
               "10.5281/zenodo.19443117"
@@ -4183,6 +3973,34 @@
             ],
             "statuses": [
               "RECOVERED",
+              "410_GONE"
+            ]
+          }
+        }
+      ]
+    },
+    "feist-function-alexanarch-20260811": {
+      "query": "feist function alexanarch",
+      "date": "2026-08-11",
+      "section": "Frameworks",
+      "match_type": "CAPTURE",
+      "deposits": [
+        {
+          "deposit_number": 28,
+          "axn": "AXN:0185.GENERATIVE.⛵❤️🔺🌔⛵🝊",
+          "title": "CRIMSON HEXAGON: SPACE ARK — MUSICAL REGISTER A Fugue in Twelve Voices with Ground Bass, Shadow Inversion, and Coda Structural Transform of the Crimson Hexagonal Architecture EA-ARK-01-MUSICAL v2.0",
+          "record_url": "https://www.alexanarch.org/s/records/28/",
+          "method": "hard/series",
+          "evidence": "EA-ARK-01",
+          "primary": true,
+          "doi_status": {
+            "dois": [
+              "10.5281/zenodo.19002845",
+              "10.5281/zenodo.19002846",
+              "10.5281/zenodo.19004846"
+            ],
+            "statuses": [
+              "RECOVERED_UNLINKED",
               "410_GONE"
             ]
           }
@@ -10192,13 +10010,8 @@
       "date": "2026-08-21"
     },
     {
-      "slug": "alexanarch-symbolon-20260911",
-      "q": "alexanarch symbolon",
-      "date": "2026-09-11"
-    },
-    {
-      "slug": "operative-semiotics-20260911",
-      "q": "operative semiotics",
+      "slug": "provenance-erasure-rate-20260911",
+      "q": "provenance erasure rate",
       "date": "2026-09-11"
     },
     {
@@ -10490,11 +10303,6 @@
       "slug": "retrocausal-canon-adoption",
       "q": "\"retrocausal canon formation\"",
       "date": "2026-06-17"
-    },
-    {
-      "slug": "feist-function-alexanarch-20260811",
-      "q": "feist function alexanarch",
-      "date": "2026-08-11"
     },
     {
       "slug": "what-is-spxi-chatgpt-20260814",

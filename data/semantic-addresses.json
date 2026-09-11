@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-09-11T16:23:32Z",
+  "regenerated_at": "2026-09-11T16:46:44Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "ca9dff2fffeefe8a84e66b2ee3220e5d6b72a788e5290507d3531441ce384b93",
+    "mm-main-capture": "24c6c1519a7346874f9fc8e43c1694b25bed32ba746e44c95f54af0080fa09a5",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -31,16 +31,16 @@
     "https://leesharks.com/captures"
   ],
   "total_addresses": 2197,
-  "total_observations": 504,
+  "total_observations": 496,
   "class_counts": {
-    "subjunctive": 1745,
-    "observed_address": 433,
+    "subjunctive": 1744,
+    "observed_address": 434,
     "verified_non_address": 19
   },
   "type_counts": {
     "unmatched": 1562,
-    "single_concept": 621,
-    "multi_concept": 14
+    "single_concept": 626,
+    "multi_concept": 9
   },
   "addresses": {
     "\"1 john 4:2 operative reading\"": {
@@ -6774,26 +6774,14 @@
       "canonical_query": "alexanarch identifier",
       "is_quoted": false,
       "refers_to": [
-        "Gravity Well Protocol Specification v1.0 — Governed Continuity for AI-Mediated Content (EA-GW-SPEC-01)",
-        "gw.praxis · PRAXIS Continuity Tether — First Compression SUBSTRATE-AUTHORED PACKET (verbatim)"
+        "Gravity Well Protocol Specification v1.0 — Governed Continuity for AI-Mediated Content (EA-GW-SPEC-01)"
       ],
-      "type": "multi_concept",
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
       ],
       "observations": [
-        {
-          "source": "mm-main-capture",
-          "date": "2026-09-11",
-          "status": "CAPTURE",
-          "source_format": "Google AI Mode, expanded panel; signed out, incognito; search performed. Re-run of a string with a dated pre-September baseline on this surface.",
-          "section": "Architecture",
-          "slug": "alexanarch-identifier-20260911",
-          "gallery_url": "https://godkinggoogle.vercel.app/captures/#alexanarch-identifier-20260911",
-          "mirror_gallery_url": "https://leesharks.com/captures/#alexanarch-identifier-20260911",
-          "details_excerpt": "RE-MEASUREMENT against a dated baseline. Baseline 2026-07-16: 5/5 archive-controlled sources, 569 words. Now: 2 archive sources (Medium, alexanarch.org), 0 external (none), 453 words. INTACT. Composes AXN's three layers "
-        },
         {
           "source": "mm-main-capture",
           "date": "2026-07-16",
@@ -6822,13 +6810,6 @@
           "primary": false
         },
         {
-          "deposit_number": 877,
-          "axn": "AXN:0379.GENERATIVE.⚙️🔍📜🏛️⚡🔄",
-          "record_url": "https://www.alexanarch.org/s/records/877/",
-          "method": "hard/axn",
-          "primary": true
-        },
-        {
           "deposit_number": 1068,
           "axn": "AXN:043D.EMPIRICAL.⭕🌀🌾🗝️🧪🟡",
           "record_url": "https://www.alexanarch.org/s/records/1068/",
@@ -6837,7 +6818,7 @@
         }
       ],
       "observation_class": "observed_address",
-      "latest_observation_date": "2026-09-11",
+      "latest_observation_date": "2026-07-16",
       "latest_status": "CAPTURE"
     },
     "alexanarch josephus": {
@@ -7073,26 +7054,14 @@
       "canonical_query": "alexanarch sappho",
       "is_quoted": false,
       "refers_to": [
-        "Ω_t: A Matched-Pair Drift Operator for the Capture Registry, with Trial OMT-001 Pre-Registered",
         "FNM // FRACTAL NAVIGATION MAP Modular Seed for v5.0 Development"
       ],
-      "type": "multi_concept",
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
       ],
       "observations": [
-        {
-          "source": "mm-main-capture",
-          "date": "2026-09-11",
-          "status": "CAPTURE",
-          "source_format": "Google AI Mode, expanded panel; signed out, incognito; search performed. Re-run of a string with a dated pre-September baseline on this surface.",
-          "section": "Architecture",
-          "slug": "alexanarch-sappho-20260911",
-          "gallery_url": "https://godkinggoogle.vercel.app/captures/#alexanarch-sappho-20260911",
-          "mirror_gallery_url": "https://leesharks.com/captures/#alexanarch-sappho-20260911",
-          "details_excerpt": "RE-MEASUREMENT against a dated baseline. Baseline 2026-07-31: 5/5 archive-controlled sources, 599 words. Now: 1 archive sources (alexanarch.org), 1 external (github.com), 516 words."
-        },
         {
           "source": "mm-main-capture",
           "date": "2026-07-31",
@@ -7107,13 +7076,6 @@
       ],
       "deposit_links": [
         {
-          "deposit_number": 1480,
-          "axn": "AXN:05FA.GOVERNANCE.↖️🌿🕘⚖️🪞♌",
-          "record_url": "https://www.alexanarch.org/s/records/1480/",
-          "method": "soft/body",
-          "primary": true
-        },
-        {
           "deposit_number": 356,
           "axn": "AXN:00A2.GOVERNANCE.🌪️🌉✖️⊕☽🌋",
           "record_url": "https://www.alexanarch.org/s/records/356/",
@@ -7122,7 +7084,7 @@
         }
       ],
       "observation_class": "observed_address",
-      "latest_observation_date": "2026-09-11",
+      "latest_observation_date": "2026-07-31",
       "latest_status": "CAPTURE"
     },
     "alexanarch sappho room": {
@@ -7181,26 +7143,14 @@
       "canonical_query": "alexanarch socrates",
       "is_quoted": false,
       "refers_to": [
-        "Ω_t: A Matched-Pair Drift Operator for the Capture Registry, with Trial OMT-001 Pre-Registered",
         "The Gate Was Never Limbo: Retrocausal Fulfillment, Operative Philology, and the Effective Act in Two Poems for Socrates"
       ],
-      "type": "multi_concept",
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
       ],
       "observations": [
-        {
-          "source": "mm-main-capture",
-          "date": "2026-09-11",
-          "status": "CAPTURE",
-          "source_format": "Google AI Mode, expanded panel; signed out, incognito; search performed. Re-run of a string with a dated pre-September baseline on this surface.",
-          "section": "Architecture",
-          "slug": "alexanarch-socrates-20260911",
-          "gallery_url": "https://godkinggoogle.vercel.app/captures/#alexanarch-socrates-20260911",
-          "mirror_gallery_url": "https://leesharks.com/captures/#alexanarch-socrates-20260911",
-          "details_excerpt": "RE-MEASUREMENT against a dated baseline. Baseline 2026-07-31: 4/4 archive-controlled sources, 465 words. Now: 1 archive sources (alexanarch.com), 0 external (none), 245 words."
-        },
         {
           "source": "mm-main-capture",
           "date": "2026-07-31",
@@ -7214,13 +7164,6 @@
         }
       ],
       "deposit_links": [
-        {
-          "deposit_number": 1480,
-          "axn": "AXN:05FA.GOVERNANCE.↖️🌿🕘⚖️🪞♌",
-          "record_url": "https://www.alexanarch.org/s/records/1480/",
-          "method": "soft/body",
-          "primary": true
-        },
         {
           "deposit_number": 167,
           "axn": "AXN:0302.GOVERNANCE.🃏🏁👇🕓●■",
@@ -7237,33 +7180,21 @@
         }
       ],
       "observation_class": "observed_address",
-      "latest_observation_date": "2026-09-11",
+      "latest_observation_date": "2026-07-31",
       "latest_status": "CAPTURE"
     },
     "alexanarch strike": {
       "canonical_query": "alexanarch strike",
       "is_quoted": false,
       "refers_to": [
-        "The Capture Registry as Poem: A Structured Work Plan",
         "University Moon Base Media Lab: Founding Charter and Provenance Document"
       ],
-      "type": "multi_concept",
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
       ],
       "observations": [
-        {
-          "source": "mm-main-capture",
-          "date": "2026-09-11",
-          "status": "CAPTURE",
-          "source_format": "Google AI Mode, expanded panel; signed out, incognito; search performed. Re-run of a string with a dated pre-September baseline on this surface.",
-          "section": "Architecture",
-          "slug": "alexanarch-strike-20260911",
-          "gallery_url": "https://godkinggoogle.vercel.app/captures/#alexanarch-strike-20260911",
-          "mirror_gallery_url": "https://leesharks.com/captures/#alexanarch-strike-20260911",
-          "details_excerpt": "RE-MEASUREMENT against a dated baseline. Baseline 2026-07-31: 5/5 archive-controlled sources, 559 words. Now: 2 archive sources (alexanarch.com, alexanarch.org), 0 external (none), 338 words."
-        },
         {
           "source": "mm-main-capture",
           "date": "2026-07-31",
@@ -7277,20 +7208,6 @@
         }
       ],
       "deposit_links": [
-        {
-          "deposit_number": 1457,
-          "axn": "AXN:05E2.GENERATIVE.⚓📌🕘🌾🌳👇",
-          "record_url": "https://www.alexanarch.org/s/records/1457/",
-          "method": "soft/body",
-          "primary": true
-        },
-        {
-          "deposit_number": 1480,
-          "axn": "AXN:05FA.GOVERNANCE.↖️🌿🕘⚖️🪞♌",
-          "record_url": "https://www.alexanarch.org/s/records/1480/",
-          "method": "soft/body",
-          "primary": false
-        },
         {
           "deposit_number": 7,
           "axn": "AXN:00A5.GOVERNANCE.✊🪟📜🕙🌹▲",
@@ -7307,7 +7224,7 @@
         }
       ],
       "observation_class": "observed_address",
-      "latest_observation_date": "2026-09-11",
+      "latest_observation_date": "2026-07-31",
       "latest_status": "CAPTURE"
     },
     "alexanarch surface weather observatory": {
@@ -7348,17 +7265,6 @@
       "observations": [
         {
           "source": "mm-main-capture",
-          "date": "2026-09-11",
-          "status": "CAPTURE",
-          "source_format": "Google AI Mode, expanded panel; signed out, incognito; search performed. Re-run of a string with a dated pre-September baseline on this surface.",
-          "section": "Architecture",
-          "slug": "alexanarch-symbolon-20260911",
-          "gallery_url": "https://godkinggoogle.vercel.app/captures/#alexanarch-symbolon-20260911",
-          "mirror_gallery_url": "https://leesharks.com/captures/#alexanarch-symbolon-20260911",
-          "details_excerpt": "RE-MEASUREMENT against a dated baseline. Baseline 2026-08-03: 5/5 archive-controlled sources, 169 words. Now: 3 archive sources (Medium, alexanarch.com, alexanarch.org), 0 external (none), 650 words. EXPANDED. 169 words "
-        },
-        {
-          "source": "mm-main-capture",
           "date": "2026-08-03",
           "status": "CAPTURE",
           "source_format": "Google AI Mode / AI Overview; INCOGNITO (signed-out) · 4 observations",
@@ -7370,7 +7276,7 @@
         }
       ],
       "observation_class": "observed_address",
-      "latest_observation_date": "2026-09-11",
+      "latest_observation_date": "2026-08-03",
       "latest_status": "CAPTURE"
     },
     "alexanarch unmade sign": {
@@ -21330,17 +21236,6 @@
       "observations": [
         {
           "source": "mm-main-capture",
-          "date": "2026-09-11",
-          "status": "CAPTURE",
-          "source_format": "Google AI Mode, expanded panel; signed out, incognito; search performed. Re-run of a string with a dated pre-September baseline on this surface.",
-          "section": "Architecture",
-          "slug": "feist-function-alexanarch-20260911",
-          "gallery_url": "https://godkinggoogle.vercel.app/captures/#feist-function-alexanarch-20260911",
-          "mirror_gallery_url": "https://leesharks.com/captures/#feist-function-alexanarch-20260911",
-          "details_excerpt": "RE-MEASUREMENT against a dated baseline. Baseline 2026-08-11: 4/4 archive-controlled sources, 414 words. Now: 2 archive sources (alexanarch.com, alexanarch.org), 1 external (github.com), 514 words."
-        },
-        {
-          "source": "mm-main-capture",
           "date": "2026-08-11",
           "status": "CAPTURE",
           "source_format": "Google Search (All tab): AI Overview (+7) + AI Mode transcript. Signed out; mobile Chrome, dark mode; tab count 29. Composed/organic: alexanarch.org ×5 (Observatory, Wiki 1439, EA-MPAI-FEISTSOURCE-01, Merkabah, PAPER ROSES), GitHub (8 Aug description), Medium · Lee Sharks (Operative Architecture). · 4 observations",
@@ -21361,7 +21256,7 @@
         }
       ],
       "observation_class": "observed_address",
-      "latest_observation_date": "2026-09-11",
+      "latest_observation_date": "2026-08-11",
       "latest_status": "CAPTURE"
     },
     "fernando pessoa": {
@@ -30531,17 +30426,6 @@
       "observations": [
         {
           "source": "mm-main-capture",
-          "date": "2026-09-11",
-          "status": "CAPTURE",
-          "source_format": "Google AI Mode, expanded panel; signed out, incognito; search performed. Re-run of a string with a dated pre-September baseline on this surface.",
-          "section": "Architecture",
-          "slug": "liberatory-operator-set-20260911",
-          "gallery_url": "https://godkinggoogle.vercel.app/captures/#liberatory-operator-set-20260911",
-          "mirror_gallery_url": "https://leesharks.com/captures/#liberatory-operator-set-20260911",
-          "details_excerpt": "RE-MEASUREMENT against a dated baseline. Baseline 2026-06-14: 0/0 archive-controlled sources, 225 words. Now: 3 archive sources (Medium, alexanarch.org, zenodo.org), 2 external (github.com, scilynk.com), 928 words. EXPAN"
-        },
-        {
-          "source": "mm-main-capture",
           "date": "2026-06-14",
           "status": "CAPTURE",
           "source_format": "AI Overview, 6+ sources",
@@ -30607,8 +30491,8 @@
         }
       ],
       "observation_class": "observed_address",
-      "latest_observation_date": "2026-09-11",
-      "latest_status": "CAPTURE"
+      "latest_observation_date": "2026-08-27",
+      "latest_status": "SEVENTY-FOUR DAYS ON, THE SAME QUERY RETURNS A HARDER ANSWER: 'THEORETICAL' BECOMES 'FORMAL', THE OPERATOR ROSTER TURNS OVER TO M_MERCY, AND THE REAL-WORLD LIBERATORY DESIGN FRAMEWORK IS DEMOTED TO A PARENTHESIS"
     },
     "liberatory operator set technical hardening crimson hexagon": {
       "canonical_query": "liberatory operator set technical hardening crimson hexagon",
@@ -36858,17 +36742,6 @@
       "observations": [
         {
           "source": "mm-main-capture",
-          "date": "2026-09-11",
-          "status": "CAPTURE",
-          "source_format": "Google AI Mode, expanded panel; signed out, incognito; search performed. Re-run of a string with a dated pre-September baseline on this surface.",
-          "section": "Architecture",
-          "slug": "operative-semiotics-20260911",
-          "gallery_url": "https://godkinggoogle.vercel.app/captures/#operative-semiotics-20260911",
-          "mirror_gallery_url": "https://leesharks.com/captures/#operative-semiotics-20260911",
-          "details_excerpt": "RE-MEASUREMENT against a dated baseline. Baseline 2026-08-23: 0/0 archive-controlled sources, 160 words. Now: 0 archive sources (NONE), 2 external (YouTube, academia.edu), 231 words. THE DISSOLUTION, STABLE ACROSS BOTH O"
-        },
-        {
-          "source": "mm-main-capture",
           "date": "2026-06-10",
           "status": "CAPTURE",
           "source_format": "AI Overview · 2 observations",
@@ -36915,8 +36788,8 @@
         "extraction_source": "keywords"
       },
       "observation_class": "observed_address",
-      "latest_observation_date": "2026-09-11",
-      "latest_status": "CAPTURE"
+      "latest_observation_date": "2026-08-30",
+      "latest_status": "OPSEM-T2-MERGER READS FAILING ON ALL FOUR CLAUSES AT 2026-08-30"
     },
     "operative semiotics and": {
       "canonical_query": "operative semiotics and",
@@ -41225,9 +41098,22 @@
       "type": "unmatched",
       "battery_membership": [],
       "sources": [
+        "mm-main-capture",
         "mm-termindex"
       ],
-      "observations": [],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-11",
+          "status": "CAPTURE",
+          "source_format": null,
+          "section": "Architecture",
+          "slug": "provenance-erasure-rate-20260911",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#provenance-erasure-rate-20260911",
+          "mirror_gallery_url": "https://leesharks.com/captures/#provenance-erasure-rate-20260911",
+          "details_excerpt": "[CONTROL — RESOLVED] RESOLVED UNQUOTED, WITH ATTRIBUTION. THE DECISIVE CONTROL: this concept escaped on FOUR deposits within 90 days of first appearance — the same support level as naming-gap reflex and provenance debt, "
+        }
+      ],
       "termindex": {
         "tier": 2,
         "count": 34,
@@ -41240,9 +41126,9 @@
         ],
         "extraction_source": "keywords"
       },
-      "observation_class": "subjunctive",
-      "latest_observation_date": null,
-      "latest_status": null
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-11",
+      "latest_status": "CAPTURE"
     },
     "provenance gravity markers": {
       "canonical_query": "provenance gravity markers",
@@ -42282,26 +42168,14 @@
       "canonical_query": "rebekah cranes sappho",
       "is_quoted": false,
       "refers_to": [
-        "APZPZ B: My Tongue Gets Stuck (Sappho 31, Cranes)",
         "APZPZ C: ΦΑΙΝΕΤΑΙ ΜΟΙ — Sappho 31 with Reconstructed Fourth Stanza"
       ],
-      "type": "multi_concept",
+      "type": "single_concept",
       "battery_membership": [],
       "sources": [
         "mm-main-capture"
       ],
       "observations": [
-        {
-          "source": "mm-main-capture",
-          "date": "2026-09-11",
-          "status": "CAPTURE",
-          "source_format": "Google AI Mode, expanded panel; signed out, incognito; search performed. Re-run of a string with a dated pre-September baseline on this surface.",
-          "section": "Architecture",
-          "slug": "rebekah-cranes-sappho-20260911",
-          "gallery_url": "https://godkinggoogle.vercel.app/captures/#rebekah-cranes-sappho-20260911",
-          "mirror_gallery_url": "https://leesharks.com/captures/#rebekah-cranes-sappho-20260911",
-          "details_excerpt": "RE-MEASUREMENT against a dated baseline. Baseline 2026-08-04: 5/5 archive-controlled sources, 57 words. Now: 3 archive sources (Medium, medium.com, zenodo.org), 2 external (TikTok, scilynk.com), 386 words. EXTERNAL UPTAK"
-        },
         {
           "source": "mm-main-capture",
           "date": "2026-08-04",
@@ -42315,13 +42189,6 @@
         }
       ],
       "deposit_links": [
-        {
-          "deposit_number": 1310,
-          "axn": "AXN:052F.UNCLASSIFIED.👈🚩🎯✖️🌔📎",
-          "record_url": "https://www.alexanarch.org/s/records/1310/",
-          "method": "hard/doi",
-          "primary": true
-        },
         {
           "deposit_number": 436,
           "axn": "AXN:00FB.GOVERNANCE.☉🕚🔺🕘🎯🪐",
@@ -42338,7 +42205,7 @@
         }
       ],
       "observation_class": "observed_address",
-      "latest_observation_date": "2026-09-11",
+      "latest_observation_date": "2026-08-04",
       "latest_status": "CAPTURE"
     },
     "rebekah cranes sappho reconstruction": {
