@@ -4,7 +4,7 @@
  "parent": "crimson-hexagonal-archive",
  "parent_uri": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive",
  "version": "0.1",
- "generated": "2026-09-11T14:49:08Z",
+ "generated": "2026-09-11T15:05:09Z",
  "topology": "bipolar-dynamic",
  "poles": [
   "collapse",
@@ -19,6 +19,7 @@
   "core_B": "a deposit that measures or is measured by an A",
   "core_C": "a deposit whose TITLE declares a named instrument or mechanism — a weaker signal, marked as such",
   "core_D": "a deposit whose DESCRIPTION records the failure of a claim already in this corpus — admitted on a description-level signal, marked as such",
+  "core_E": "a CAPTURE whose finding concerns the collapse vocabulary — the empirical arm, a different node type entirely, linked to the deposits it observes",
   "gap_found": "Rule C exists because five of the eight deposits the design named DECLARE ZERO CONCEPTS: #783 Fear and Trembling, #156 Self-Audit Module, #789 Atomic Token Rule, #157 Erasure Skew, #788 Measurement Sovereignty. defines_concepts is empty on all five. The traversal was correct and the registry is incomplete. Rule D exists for a second form of the same defect: #678 SYMBOLON-02 declares 'Why these matter' and 'Why these work' as its concepts — section headings captured as terms — so a deposit that records the failure of a claim held in this corpus was invisible to both A and C. Recorded here rather than patched silently, because a rhizome that hides the holes in its own substrate is the thing this dataset is against.",
   "neighbour": "one typed hop from core, restricted to the follow set",
   "frontier": "second hop — emitted as a stolon and NOT included",
@@ -42,10 +43,10 @@
   "why_not_text_search": "A keyword pass over titles and descriptions returns 361 deposits — model collapse becomes the whole archive because everything eventually touches everything. Selection on defines_concept, a deposit's own declaration, returns a corpus."
  },
  "counts": {
-  "nodes": 296,
-  "core": 146,
+  "nodes": 405,
+  "core": 255,
   "neighbour": 150,
-  "edges": 211,
+  "edges": 251,
   "stolons": 7
  },
  "adjacent": [
