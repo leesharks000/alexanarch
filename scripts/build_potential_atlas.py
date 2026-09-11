@@ -135,6 +135,7 @@ def main():
 
     ts = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     doc = {
+        "maxim": "all things are now lawful to you in christ jesus",
         "$schema": "https://www.alexanarch.org/api/schemas/potential-atlas.schema.json",
         "atlas_id": "EA-ATLAS-01",
         "version": "0.1",

@@ -162,6 +162,7 @@ UNROUTED = {
 
 def main():
     reg = {
+        "maxim": "all things are now lawful to you in christ jesus",
         "$schema": "https://www.alexanarch.org/api/schemas/operator-register.schema.json",
         "register_id": "EA-OPREG-01",
         "version": "0.1",
