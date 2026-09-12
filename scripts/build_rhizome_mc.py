@@ -25,6 +25,7 @@ Every row carries collapse_axis and dynamic_role rather than a collapse boolean,
 binary would flatten the phenomenon the dataset is for.
 """
 import json, pathlib, re, collections, datetime, hashlib
+import os
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "rhizomes/model-collapse-anti-collapse"
@@ -40,46 +41,29 @@ OUT = ROOT / "rhizomes/model-collapse-anti-collapse"
 # vocabulary the rule did not previously see, on the stated ground that severance is a
 # contraction of relational structure. It is not a widening to raise counts, and the
 # three deposits it admits were identified by reading, not by search.
-SELECT = re.compile(
-    r"collapse|contraction|monoculture|foreclosure|tail renewal|erasure|diversity loss|"
-    r"pristine fallacy|athetic|custody|non-erasure|source tether|measurement sovereign|"
-    r"atomic token|erasure skew|self-audit|counterexample|"
-    r"severance|severab|\bfused\b|de-fusion|round-trip invariant|behavior invariance|"
-    r"closure test|collision test|coverage test|records the failure|compression arsenal|"
-    # THE ARCHIVE'S OWN MEASURE OF THE QUANTITY (2026-09-11). The Semantic Deviation
-    # Principle defines raw semantic magnitude as "variance from what is most likely over
-    # time". Model collapse is loss of the tail. THOSE ARE THE SAME QUANTITY FROM
-    # OPPOSITE ENDS — SDP measures deviation from typical, collapse is the disappearance
-    # of deviation — and the pattern named the mode without naming the measure, so #109
-    # SDP, #107 its audited claims, and #108 Framework 15 all sat outside a dataset about
-    # the thing they measure.
-    #
-    # ADMITTED ON TOKEN PRECISION, SAMPLED BEFORE ADMISSION. deviation 19 hits / 0 noise;
-    # divergence 19 / 0; variance 8 / 0; glas function 1 / 0; winding number 1 / 0.
-    # `tail` BARE was REJECTED at 45 hits and 24/40 noise — it matches detail, entail,
-    # curtail — and a first bounding attempt still leaked because `tails\b` matches
-    # "details". The bounded form below is 20 hits and 0 noise.
-    r"deviation|divergence|\bvariance\b|entropy.?floor|glas function|winding number|"
-    r"jensen-shannon|kullback|\btails?\b|tail-preserv|tail labor|tail.?prun|long tail", re.I)
+# THE GRAMMAR IS READ, NOT CARRIED (2026-09-12). The select pattern, the role vocabulary
+# and its ORDER, the collapse axes, the follow set and the stolon frontier were hardcoded
+# here, which meant the emitter could VERIFY a configuration and not RE-PARAMETERISE one.
+# Editing the spore alone could not produce a different body, so "deterministic seed" was
+# half true: reproducible, not portable.
+#
+# The demonstration: role_for() applied to 136 retrieval-engineering deposits does not fall
+# to the default. It spreads plausibly across the collapse vocabulary, 33% of it
+# anti_collapse_intervention, because the pattern contains `protocol` and every technical
+# deposit says protocol. THE FAILURE MODE OF AN UNPORTABLE VOCABULARY IS NOT EMPTINESS. It
+# is false confidence — a distribution that looks like a finding and means nothing.
+#
+# A second body needs its own grammar file, not a fork of this script.
+GRAMMAR = os.environ.get("RHIZOME_GRAMMAR", "rhizomes/_grammars/collapse.json")
+_G = json.loads((ROOT / GRAMMAR).read_text(encoding="utf-8"))
+SELECT = re.compile(_G["select"]["pattern"], re.I)
+ROLES = [(r["role"], re.compile(r["pattern"], re.I)) for r in _G["roles"]]
+AXES = {k: re.compile(v, re.I) for k, v in _G["axes"].items()}
+FOLLOW = set(_G["follow"])
+STOLONS = _G["stolons"] or []
 
 # axis of contraction — a concept may sit on several
-AXES = {
-    "distributional": r"diversity|distribution|\bvariance\b|\btails?\b|tail-preserv|tail.?prun|entropy|monoculture|deviation|divergence",
-    "lexical": r"lexical|vocabulary|term|token",
-    "stylistic": r"stylistic|style|voice",
-    "epistemic": r"epistemic|foreclosure|search space|pristine|inquiry",
-    "contextual": r"context|recursive contextual",
-    "provenance": r"provenance|attribution|erasure skew|\bPER\b|citation",
-    "referential": r"referential|ghost|reference",
-    "retrieval": r"retrieval|summar|composition|index",
-    "institutional": r"classifier|moderation|institution|certif|governance",
-    "archival": r"archiv|tombstone|deletion|withdraw|custody|book-burning",
-    "authorial": r"heteronym|author|plural",
-    "methodological": r"method|protocol|audit|test|measure",
-    # LOSS OF RELATION RATHER THAN LOSS OF CONTENT. Every part survives and the
-    # structure binding them does not — severance, layer-splitting, de-fusion.
-    "relational": r"severance|severab|fused|fusion|register|layer|binding|non-severab",
-}
+
 
 # dynamic role — what the node DOES in the field, not what it is about
 # ORDER IS THE CLASSIFIER (2026-09-11). role_for returns on the first match, so a
@@ -91,31 +75,7 @@ AXES = {
 #
 # Two repairs: proposal patterns are hoisted above the measure pattern, and the
 # measure pattern's bare tokens are bounded so `measure` alone no longer fires.
-ROLES = [
-    ("anti_collapse_instrument", r"self-audit|audit module|erasure skew|atomic token|measurement sovereign|calculator|"
-                                 r"closure test|collision test|coverage test|round-trip invariant|behavior invariance|invariant"),
-    ("anti_collapse_mechanism", r"tail renewal|source tether|non-erasure|athetic|custody|plural authorship|heteronym|redundan|mirror|"
-                                r"relational supervision|training paradigm|anti-severance|fused documentary|non-severab|threshold clause|"
-                                r"tail-preserv|tail labor|preserving labor|recognition-pruning"),
-    # A MEASUREMENT PRIMITIVE IS NOT AN INTERVENTION (2026-09-11). #109, the Semantic
-    # Deviation Principle, was classed anti_collapse_intervention because the literal
-    # word "intervention" occurs in its own description. A measure that names itself a
-    # measure outranks a word that happens to appear.
-    ("collapse_measure", r"measurement primitive|\bprinciple\b.{0,40}measur|measur.{0,30}\bprimitive\b|"
-                         r"operationaliz|divergence index|deviation principle"),
-    ("anti_collapse_intervention", r"intervention|protocol|remedy|restor|reclamation|recover|complementary training"),
-    ("collapse_mechanism", r"contraction|foreclosure|monoculture|feedback|pristine fallacy|narrowing|capture|"
-                           r"tail.?prun|tail-prun|pruning instrument|exhaustion"),
-    ("collapse_measure", r"\bPER\b|\b\w+ rate\b|\bmetric\b|\bindex\b|\bscore\b|\bmeasurement of\b|\bmeasured across\b"),
-    ("collapse_observation", r"observed|event|case|incident|log|ledger"),
-    ("correction", r"erratum|correction|corrigend|revis"),
-    # A RECORDED FAILURE IS A COUNTEREXAMPLE WHETHER OR NOT IT USES THE WORD. SYMBOLON-02
-    # "records the failure of SYMBOLON-01's strongest defensive claim" and reclassifies
-    # the catalogue accordingly; it is the strongest kind of entry this dataset can hold
-    # and it would have been filed as an observation.
-    ("counterexample", r"counterexample|counter-example|exception|boundary condition|"
-                       r"records the failure|failed to|continued to separate|did not hold|reclassifi"),
-]
+
 
 # THE FOLLOW SET EXCLUDES defines_concept ON PURPOSE. A core deposit defines many concepts,
 # most of them unrelated to contraction; following that predicate outward pulled 1,470
@@ -124,36 +84,21 @@ ROLES = [
 # defines is part of that deposit's own description — it is carried in the `defines` column
 # — not a neighbour reached by traversal. Concepts enter as neighbours only when they match
 # the select pattern, which is handled separately below.
-FOLLOW = {"measures", "measured_by", "corrects", "develops_from", "supersedes", "inherits",
-          "transforms", "preserves", "rejects", "consequence",
-          "registers_correspondence", "reads", "redirects", "states_priority_of"}
+
 
 # frontier: where this rhizome runs out, and what it advertises instead of absorbing
-STOLONS = [
-    ("concept:provenance-erasure", "measured_through", "provenance-erasure",
-     "PER, Erasure Skew and the Atomic Token Rule are the measurement apparatus; they are their own body"),
-    ("concept:classifier-model-collapse", "governed_in", "classifier-governance",
-     "moderation feedback as a governance question rather than a generative one"),
-    ("concept:heteronymic-plurality", "instantiated_by", "heteronyms",
-     "authorial plurality as an anti-collapse mechanism is instantiated by the identity records"),
-    ("concept:semantic-economy", "situated_in", "semantic-economy",
-     "the political economy in which contraction is profitable"),
-    ("concept:machine-reception", "observed_in", "machine-mediated-reception",
-     "the capture registry holds the observations; 411 captures are not reproduced here"),
-    ("concept:archive-resilience", "practised_as", "archive-resilience",
-     "substrate multiplication, mirrors and custody as operational practice"),
-    ("concept:erratum", "corrected_in", "epistemic-corrections",
-     "the errata slate is a body in its own right; a correction preserved is anti-collapse by function"),
-]
+
 
 
 def axes_for(text):
-    return sorted(a for a, p in AXES.items() if re.search(p, text, re.I)) or ["unclassified"]
+    # AXES and ROLES now hold COMPILED patterns, loaded from the grammar file. Passing a
+    # compiled pattern to re.search with flags raises; call .search on the object instead.
+    return sorted(a for a, p in AXES.items() if p.search(text)) or ["unclassified"]
 
 
 def role_for(text):
     for r, p in ROLES:
-        if re.search(p, text, re.I):
+        if p.search(text):
             return r
     return "collapse_observation"
 
