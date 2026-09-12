@@ -28,7 +28,6 @@ import json, pathlib, re, collections, datetime, hashlib
 import os
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-OUT = ROOT / "rhizomes/model-collapse-anti-collapse"
 
 # SEVERANCE IS A COLLAPSE MODE THE PATTERN DID NOT NAME (2026-09-11). The SYMBOLON
 # deposits define severance as dividing a fused object into independently adjudicated
@@ -61,6 +60,14 @@ ROLES = [(r["role"], re.compile(r["pattern"], re.I)) for r in _G["roles"]]
 AXES = {k: re.compile(v, re.I) for k, v in _G["axes"].items()}
 FOLLOW = set(_G["follow"])
 STOLONS = _G["stolons"] or []
+
+# THE BODY'S IDENTITY IS ALSO CONFIGURATION (2026-09-12). Slug, id, node prefix, parent and
+# topology were hardcoded, so a second grammar would have emitted into the first body's
+# directory under the first body's node ids. A spore is not a template that gets copied; it
+# germinates, and the germinated body needs its own name before it has anything else.
+_B = _G["body"]
+_SR = _G.get("special_roles", {})
+OUT = ROOT / "rhizomes" / _B["slug"]
 
 # axis of contraction — a concept may sit on several
 
@@ -234,11 +241,11 @@ def main():
         if nid.startswith("capture:"):
             cap = next((x for x in caps if "capture:" + x["slug"] == nid), {})
             rows.append({
-                "rhizome_node_id": "mc:" + hashlib.sha256(nid.encode()).hexdigest()[:10],
+                "rhizome_node_id": _B["node_prefix"] + ":" + hashlib.sha256(nid.encode()).hexdigest()[:10],
                 "graph_node_id": nid, "deposit_number": None,
                 "title": cap.get("s") or cap.get("slug"),
                 "node_type": "capture", "region": "core", "core_rule": "E", "entered_by": None,
-                "dynamic_role": "collapse_measure" if cap.get("per") is not None else "collapse_observation",
+                "dynamic_role": _SR["capture_measured"] if cap.get("per") is not None else _SR["capture_unmeasured"],
                 "collapse_axis": json.dumps(axes_for(" ".join(str(cap.get(k) or "") for k in ("d", "reading", "s")))),
                 "defines": json.dumps([]), "creator": cap.get("surface"), "date": cap.get("date"),
                 "evidence_status": "CAPTURED", "axn": None,
@@ -246,7 +253,7 @@ def main():
             })
             continue
         rows.append({
-            "rhizome_node_id": "mc:" + hashlib.sha256(nid.encode()).hexdigest()[:10],
+            "rhizome_node_id": _B["node_prefix"] + ":" + hashlib.sha256(nid.encode()).hexdigest()[:10],
             "graph_node_id": nid,
             "deposit_number": dep,
             "title": d.get("title") or n.get("label"),
@@ -263,7 +270,7 @@ def main():
             # strongest defensive claim, was filed anti_collapse_mechanism.
             #
             # A rule that knows why it admitted something knows more than a regex over the text.
-            "dynamic_role": "counterexample" if core.get(nid) == "D" else role_for(blob),
+            "dynamic_role": _SR["recorded_failure"] if core.get(nid) == "D" else role_for(blob),
             "collapse_axis": json.dumps(axes_for(blob)),
             "defines": json.dumps(sorted(why.get(nid, ()))),
             "creator": d.get("creator"),
@@ -325,14 +332,14 @@ def main():
 
     ts = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     spore = {
-        "rhizome": "model-collapse-anti-collapse",
+        "rhizome": _B["slug"],
         "maxim": "all things are now lawful to you in christ jesus",
-        "rhizome_id": "EA-RHIZOME-MC-01",
-        "parent": "crimson-hexagonal-archive",
+        "rhizome_id": _B["rhizome_id"],
+        "parent": _B["parent"],
         "parent_uri": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive",
         "version": "0.1",
         "generated": ts,
-        "topology": "bipolar-dynamic",
+        "topology": _B["topology"],
         "poles": ["collapse", "anti-collapse", "recovery"],
         "seed_mode": "deterministic",
         "core_depth": 1,
@@ -373,7 +380,7 @@ def main():
 
     rc = collections.Counter(r["dynamic_role"] for r in rows)
     ac = collections.Counter(a for r in rows for a in json.loads(r["collapse_axis"]))
-    print(f"EA-RHIZOME-MC-01 v0.1 — {len(rows)} nodes ({spore['counts']['core']} core, "
+    print(f"{_B['rhizome_id']} v0.1 — {len(rows)} nodes ({spore['counts']['core']} core, "
           f"{spore['counts']['neighbour']} neighbour), {len(edges)} edges, {len(STOLONS)} stolons")
     print("  roles: " + ", ".join(f"{k}={v}" for k, v in rc.most_common()))
     print("  axes:  " + ", ".join(f"{k}={v}" for k, v in ac.most_common(8)))
