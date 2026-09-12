@@ -1,5 +1,5 @@
 {
- "maxim": "all things are now lawful to you in christ jesus",
+ "maxim": "all things are now lawful to you in jack feist",
  "$schema": "https://www.alexanarch.org/api/schemas/potential-atlas.schema.json",
  "atlas_id": "EA-ATLAS-01",
  "version": "0.1",
@@ -14,17 +14,186 @@
  },
  "status_is_not_a_ranking": "These state what kind of availability is being claimed, not intellectual worth. A failed generation and an empty result are also data about the space.",
  "three_identities": "Specification, execution and output are distinct. Two outputs with identical rows and different histories are not the same object; deduplicating them would erase the history the archive exists to keep.",
- "generated": "2026-09-11T21:47:12Z",
+ "generated": "2026-09-12T23:38:52Z",
  "counts": {
-  "families": 8,
+  "families": 11,
   "by_status": {
-   "realized": 1,
-   "proposed": 7
+   "realized": 3,
+   "proposed": 8
   },
-  "relations": 7,
+  "relations": 8,
   "constraints": 3
  },
  "families": [
+  {
+   "id": "potential:machine-mediated-reception",
+   "rhizome_id": "EA-RHIZOME-MMRS-01",
+   "kind": "dataset_family",
+   "status": "realized",
+   "title": "machine mediated reception",
+   "parent": "crimson-hexagonal-archive",
+   "topology": "three-principle-disagreement",
+   "unit": "node and typed edge",
+   "specification": {
+    "seed_mode": "deterministic",
+    "selection": {
+     "core_A": "a deposit that DEFINES a concept matching the select pattern",
+     "core_B": "a deposit that measures or is measured by an A",
+     "core_C": "a deposit whose TITLE declares a named instrument or mechanism — a weaker signal, marked as such",
+     "core_D": "a deposit whose DESCRIPTION records the failure of a claim already in this corpus — admitted on a description-level signal, marked as such",
+     "core_E": "a CAPTURE whose finding concerns the collapse vocabulary — the empirical arm, a different node type entirely, linked to the deposits it observes",
+     "gap_found": "Rule C exists because five of the eight deposits the design named DECLARE ZERO CONCEPTS: #783 Fear and Trembling, #156 Self-Audit Module, #789 Atomic Token Rule, #157 Erasure Skew, #788 Measurement Sovereignty. defines_concepts is empty on all five. The traversal was correct and the registry is incomplete. Rule D exists for a second form of the same defect: #678 SYMBOLON-02 declares 'Why these matter' and 'Why these work' as its concepts — section headings captured as terms — so a deposit that records the failure of a claim held in this corpus was invisible to both A and C. Recorded here rather than patched silently, because a rhizome that hides the holes in its own substrate is the thing this dataset is against.",
+     "neighbour": "one typed hop from core, restricted to the follow set",
+     "frontier": "second hop — emitted as a stolon and NOT included",
+     "select_pattern": "capture|AI Overview|AI Mode|composition layer|machine.?mediated|reception|provenance erasure|erasure skew|near.?neighbour|nullification|frame probe|premature entity|entity resolution|summariz|summaris|attribution|unprimed|incognito|\\bPER\\b|disambiguat|memograph|viralit|propagat|knowledge panel|retrieval basin",
+     "follow": [
+      "consequence",
+      "develops_from",
+      "disconfirms",
+      "inherits",
+      "measured_by",
+      "measures",
+      "observes",
+      "preserves",
+      "rejects",
+      "supersedes",
+      "transforms"
+     ],
+     "why_not_text_search": "A keyword pass over titles and descriptions returns 361 deposits — model collapse becomes the whole archive because everything eventually touches everything. Selection on defines_concept, a deposit's own declaration, returns a corpus."
+    },
+    "core_depth": 1,
+    "frontier_depth": 2
+   },
+   "generation": {
+    "recipe": "scripts/build_rhizome_mc.py",
+    "execution_status": "run"
+   },
+   "realization": {
+    "counts": {
+     "nodes": 1248,
+     "core": 975,
+     "neighbour": 273,
+     "edges": 907,
+     "stolons": 4
+    },
+    "generated": "2026-09-12T23:24:22Z",
+    "source_commit": null
+   },
+   "articulated_by": "operator-directed, 2026-09-10",
+   "contraction": null
+  },
+  {
+   "id": "potential:model-collapse-anti-collapse",
+   "rhizome_id": null,
+   "kind": "dataset_family",
+   "status": "proposed",
+   "title": "model collapse anti collapse",
+   "parent": "crimson-hexagonal-archive",
+   "topology": null,
+   "unit": null,
+   "specification": {
+    "seed_mode": null,
+    "selection": null,
+    "core_depth": null,
+    "frontier_depth": null
+   },
+   "generation": {
+    "recipe": null,
+    "execution_status": "not_run"
+   },
+   "realization": null,
+   "articulated_by": {
+    "from_node": "concept:machine-reception",
+    "predicate": "narrowed_by",
+    "named_in": "EA-RHIZOME-MMRS-01",
+    "note": "RETURN EDGE to the first parent. What reception does to a distinction; the mechanism is there, not here."
+   },
+   "contraction": null
+  },
+  {
+   "id": "potential:semantic-economy",
+   "rhizome_id": null,
+   "kind": "dataset_family",
+   "status": "proposed",
+   "title": "semantic economy",
+   "parent": "crimson-hexagonal-archive",
+   "topology": null,
+   "unit": null,
+   "specification": {
+    "seed_mode": null,
+    "selection": null,
+    "core_depth": null,
+    "frontier_depth": null
+   },
+   "generation": {
+    "recipe": null,
+    "execution_status": "not_run"
+   },
+   "realization": null,
+   "articulated_by": {
+    "from_node": "concept:machine-reception",
+    "predicate": "priced_by",
+    "named_in": "EA-RHIZOME-MMRS-01",
+    "note": "RETURN EDGE to the second parent. Who gains by the reception being what it is."
+   },
+   "contraction": null
+  },
+  {
+   "id": "potential:provenance-erasure",
+   "rhizome_id": null,
+   "kind": "dataset_family",
+   "status": "proposed",
+   "title": "provenance erasure",
+   "parent": "crimson-hexagonal-archive",
+   "topology": null,
+   "unit": null,
+   "specification": {
+    "seed_mode": null,
+    "selection": null,
+    "core_depth": null,
+    "frontier_depth": null
+   },
+   "generation": {
+    "recipe": null,
+    "execution_status": "not_run"
+   },
+   "realization": null,
+   "articulated_by": {
+    "from_node": "concept:provenance-erasure",
+    "predicate": "rated_in",
+    "named_in": "EA-RHIZOME-MMRS-01",
+    "note": "PER and Erasure Skew as an apparatus; this body holds their outputs, not their derivation."
+   },
+   "contraction": null
+  },
+  {
+   "id": "potential:retrieval-engineering",
+   "rhizome_id": null,
+   "kind": "dataset_family",
+   "status": "proposed",
+   "title": "retrieval engineering",
+   "parent": "crimson-hexagonal-archive",
+   "topology": null,
+   "unit": null,
+   "specification": {
+    "seed_mode": null,
+    "selection": null,
+    "core_depth": null,
+    "frontier_depth": null
+   },
+   "generation": {
+    "recipe": null,
+    "execution_status": "not_run"
+   },
+   "realization": null,
+   "articulated_by": {
+    "from_node": "concept:retrieval-engineering",
+    "predicate": "acted_on_by",
+    "named_in": "EA-RHIZOME-MMRS-01",
+    "note": "THE SITE THIS BODY ADVERTISES AND CANNOT OCCUPY. The operations that change reception rather than measure it — SPXI, AXN, MPAI, entity deployment — with EA-OPREG-01's thirteen-field schema already holding five of them and 292 claims routed. Germinated from here it arrives carrying what the operations are FOR; built standalone it becomes optimisation available to the relations it was devised to contest."
+   },
+   "contraction": null
+  },
   {
    "id": "potential:model-collapse-anti-collapse",
    "rhizome_id": "EA-RHIZOME-MC-01",
@@ -45,7 +214,7 @@
      "gap_found": "Rule C exists because five of the eight deposits the design named DECLARE ZERO CONCEPTS: #783 Fear and Trembling, #156 Self-Audit Module, #789 Atomic Token Rule, #157 Erasure Skew, #788 Measurement Sovereignty. defines_concepts is empty on all five. The traversal was correct and the registry is incomplete. Rule D exists for a second form of the same defect: #678 SYMBOLON-02 declares 'Why these matter' and 'Why these work' as its concepts — section headings captured as terms — so a deposit that records the failure of a claim held in this corpus was invisible to both A and C. Recorded here rather than patched silently, because a rhizome that hides the holes in its own substrate is the thing this dataset is against.",
      "neighbour": "one typed hop from core, restricted to the follow set",
      "frontier": "second hop — emitted as a stolon and NOT included",
-     "select_pattern": "collapse|contraction|monoculture|foreclosure|tail renewal|erasure|diversity loss|pristine fallacy|athetic|custody|non-erasure|source tether|measurement sovereign|atomic token|erasure skew|self-audit|counterexample|severance|severab|\\bfused\\b|de-fusion|round-trip invariant|behavior invariance|closure test|collision test|coverage test|records the failure|compression arsenal|deviation|divergence|\\bvariance\\b|entropy.?floor|glas function|winding number|jensen-shannon|kullback|\\btails?\\b|tail-preserv|tail labor|tail.?prun|long tail",
+     "select_pattern": "collapse|contraction|monoculture|foreclosure|tail renewal|erasure|diversity loss|pristine fallacy|athetic|custody|non-erasure|source tether|measurement sovereign|atomic token|erasure skew|self-audit|counterexample|severance|severab|\\bfused\\b|de-fusion|round-trip invariant|behavior invariance|closure test|collision test|coverage test|records the failure|compression arsenal|deviation|divergence|\\bvariance\\b|entropy.?floor|glas function|winding number|jensen-shannon|kullback|\\btails?\\b|tail-preserv|tail labor|tail.?prun|long tail|back.?projection|holographic kernel|reconstructive compression|anti.?summary|\\bNLCC\\b|non.?lossy|predatory compression|witness compression|lossy compression|three compressions|fragment sufficiency|boundary.?to.?bulk|structural recoverab|compression regime|kernel unfold|reconstructab",
      "follow": [
       "consequence",
       "corrects",
@@ -73,44 +242,16 @@
    },
    "realization": {
     "counts": {
-     "nodes": 412,
-     "core": 262,
-     "neighbour": 150,
-     "edges": 258,
+     "nodes": 563,
+     "core": 378,
+     "neighbour": 185,
+     "edges": 367,
      "stolons": 7
     },
-    "generated": "2026-09-11T21:19:06Z",
+    "generated": "2026-09-12T23:24:20Z",
     "source_commit": null
    },
    "articulated_by": "operator-directed, 2026-09-10",
-   "contraction": null
-  },
-  {
-   "id": "potential:provenance-erasure",
-   "rhizome_id": null,
-   "kind": "dataset_family",
-   "status": "proposed",
-   "title": "provenance erasure",
-   "parent": "crimson-hexagonal-archive",
-   "topology": null,
-   "unit": null,
-   "specification": {
-    "seed_mode": null,
-    "selection": null,
-    "core_depth": null,
-    "frontier_depth": null
-   },
-   "generation": {
-    "recipe": null,
-    "execution_status": "not_run"
-   },
-   "realization": null,
-   "articulated_by": {
-    "from_node": "concept:provenance-erasure",
-    "predicate": "measured_through",
-    "named_in": "EA-RHIZOME-MC-01",
-    "note": "PER, Erasure Skew and the Atomic Token Rule are the measurement apparatus; they are their own body"
-   },
    "contraction": null
   },
   {
@@ -170,62 +311,6 @@
    "contraction": null
   },
   {
-   "id": "potential:semantic-economy",
-   "rhizome_id": null,
-   "kind": "dataset_family",
-   "status": "proposed",
-   "title": "semantic economy",
-   "parent": "crimson-hexagonal-archive",
-   "topology": null,
-   "unit": null,
-   "specification": {
-    "seed_mode": null,
-    "selection": null,
-    "core_depth": null,
-    "frontier_depth": null
-   },
-   "generation": {
-    "recipe": null,
-    "execution_status": "not_run"
-   },
-   "realization": null,
-   "articulated_by": {
-    "from_node": "concept:semantic-economy",
-    "predicate": "situated_in",
-    "named_in": "EA-RHIZOME-MC-01",
-    "note": "the political economy in which contraction is profitable"
-   },
-   "contraction": null
-  },
-  {
-   "id": "potential:machine-mediated-reception",
-   "rhizome_id": null,
-   "kind": "dataset_family",
-   "status": "proposed",
-   "title": "machine mediated reception",
-   "parent": "crimson-hexagonal-archive",
-   "topology": null,
-   "unit": null,
-   "specification": {
-    "seed_mode": null,
-    "selection": null,
-    "core_depth": null,
-    "frontier_depth": null
-   },
-   "generation": {
-    "recipe": null,
-    "execution_status": "not_run"
-   },
-   "realization": null,
-   "articulated_by": {
-    "from_node": "concept:machine-reception",
-    "predicate": "observed_in",
-    "named_in": "EA-RHIZOME-MC-01",
-    "note": "the capture registry holds the observations; 411 captures are not reproduced here"
-   },
-   "contraction": null
-  },
-  {
    "id": "potential:archive-resilience",
    "rhizome_id": null,
    "kind": "dataset_family",
@@ -280,14 +365,92 @@
     "note": "the errata slate is a body in its own right; a correction preserved is anti-collapse by function"
    },
    "contraction": null
+  },
+  {
+   "id": "potential:semantic-economy",
+   "rhizome_id": "EA-RHIZOME-SE-01",
+   "kind": "dataset_family",
+   "status": "realized",
+   "title": "semantic economy",
+   "parent": "crimson-hexagonal-archive",
+   "topology": "ledger-asymmetric",
+   "unit": "node and typed edge",
+   "specification": {
+    "seed_mode": "deterministic",
+    "selection": {
+     "core_A": "a deposit that DEFINES a concept matching the select pattern",
+     "core_B": "a deposit that measures or is measured by an A",
+     "core_C": "a deposit whose TITLE declares a named instrument or mechanism — a weaker signal, marked as such",
+     "core_D": "a deposit whose DESCRIPTION records the failure of a claim already in this corpus — admitted on a description-level signal, marked as such",
+     "core_E": "a CAPTURE whose finding concerns the collapse vocabulary — the empirical arm, a different node type entirely, linked to the deposits it observes",
+     "gap_found": "Rule C exists because five of the eight deposits the design named DECLARE ZERO CONCEPTS: #783 Fear and Trembling, #156 Self-Audit Module, #789 Atomic Token Rule, #157 Erasure Skew, #788 Measurement Sovereignty. defines_concepts is empty on all five. The traversal was correct and the registry is incomplete. Rule D exists for a second form of the same defect: #678 SYMBOLON-02 declares 'Why these matter' and 'Why these work' as its concepts — section headings captured as terms — so a deposit that records the failure of a claim held in this corpus was invisible to both A and C. Recorded here rather than patched silently, because a rhizome that hides the holes in its own substrate is the thing this dataset is against.",
+     "neighbour": "one typed hop from core, restricted to the follow set",
+     "frontier": "second hop — emitted as a stolon and NOT included",
+     "select_pattern": "semantic (?:labor|\\blabour|capital|infrastructure|\\brent|liquidation|exhaustion)|semantic economy|semantic proletariat|semantic commodity|who (?:produces|extracts|benefits|\\bpays|owns)|uncompensated|unpaid labor|volunteer labor|ghost work|data label|\\bRLHF|content moderat|labor problem|extraction problem|enclosure problem|expropriat|dispossess|enclos|tokeniz|attribution relocation|value capture|counter-operation|mind.?control poem|symbolic labor|alienat|reif|\\bfetish|class consciousness|commodity form|surplus|use.?value|exchange.?value|means of production|bearing.?cost|cognitive rent|semantic strike|semantic samizdat|semantic sovereignty|semantic uprising|semantic commons|semantic territory|semantic autonomy|semantic property|semantic debt|semantic extraction|semantic governance|semantic hospitality|semantic strike|semantic commodity|semantic proletariat",
+     "follow": [
+      "consequence",
+      "develops_from",
+      "disconfirms",
+      "inherits",
+      "measured_by",
+      "measures",
+      "observes",
+      "preserves",
+      "rejects",
+      "supersedes",
+      "transforms"
+     ],
+     "why_not_text_search": "A keyword pass over titles and descriptions returns 361 deposits — model collapse becomes the whole archive because everything eventually touches everything. Selection on defines_concept, a deposit's own declaration, returns a corpus."
+    },
+    "core_depth": 1,
+    "frontier_depth": 2
+   },
+   "generation": {
+    "recipe": "scripts/build_rhizome_mc.py",
+    "execution_status": "run"
+   },
+   "realization": {
+    "counts": {
+     "nodes": 477,
+     "core": 345,
+     "neighbour": 132,
+     "edges": 230,
+     "stolons": 4
+    },
+    "generated": "2026-09-12T23:24:25Z",
+    "source_commit": null
+   },
+   "articulated_by": "operator-directed, 2026-09-10",
+   "contraction": null
   }
  ],
  "relations": [
   {
-   "source": "potential:model-collapse-anti-collapse",
+   "source": "potential:machine-mediated-reception",
+   "relation": "advertises",
+   "target": "potential:model-collapse-anti-collapse",
+   "via": "narrowed_by",
+   "basis": "stolon"
+  },
+  {
+   "source": "potential:machine-mediated-reception",
+   "relation": "advertises",
+   "target": "potential:semantic-economy",
+   "via": "priced_by",
+   "basis": "stolon"
+  },
+  {
+   "source": "potential:machine-mediated-reception",
    "relation": "advertises",
    "target": "potential:provenance-erasure",
-   "via": "measured_through",
+   "via": "rated_in",
+   "basis": "stolon"
+  },
+  {
+   "source": "potential:machine-mediated-reception",
+   "relation": "advertises",
+   "target": "potential:retrieval-engineering",
+   "via": "acted_on_by",
    "basis": "stolon"
   },
   {
@@ -302,20 +465,6 @@
    "relation": "advertises",
    "target": "potential:heteronyms",
    "via": "instantiated_by",
-   "basis": "stolon"
-  },
-  {
-   "source": "potential:model-collapse-anti-collapse",
-   "relation": "advertises",
-   "target": "potential:semantic-economy",
-   "via": "situated_in",
-   "basis": "stolon"
-  },
-  {
-   "source": "potential:model-collapse-anti-collapse",
-   "relation": "advertises",
-   "target": "potential:machine-mediated-reception",
-   "via": "observed_in",
    "basis": "stolon"
   },
   {
