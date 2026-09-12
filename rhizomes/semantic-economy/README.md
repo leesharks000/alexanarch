@@ -17,7 +17,7 @@ The archive's political economy of meaning, seeded at the stolon the collapse bo
 
 ## Counts
 
-**277** nodes · **170** core · **107** neighbour · **135** edges · **4** stolons
+**395** nodes · **277** core · **118** neighbour · **196** edges · **4** stolons
 
 ## It was advertised before it existed
 
@@ -36,6 +36,10 @@ REBUILT FROM THE DEFINING PAPERS, 2026-09-12. v0.1 scoped this body to the ten n
 #255 SEMANTIC LIQUIDATION: AN EXECUTIVE SUMMARY supplies the operation's internal structure — three properties (irreversibility, value transfer, invisibility) and five stages (tokenization, stripping, attribution relocation, value capture, closure).
 
 #24 MIND-CONTROL POEMS supplies the counter-operation: alienation extended into the symbolic infrastructure through which labor, recognition and desire become thinkable, and the liberatory poem as a symbolic counter-operation that interrupts conditioning and restores contact with relation and historical possibility.
+
+| principle | basis | caution |
+| --- | --- | --- |
+| **vocabulary** | `pattern-detected` | ADDED 2026-09-12 AFTER THE GRID LIED. The organized grid reported that semantic_rent had NO INSTRUMENT AND NO MEASUREMENT, and I wrote that up as the body's largest gap and its most commercial one. It was an artifact. #1462 'Semantic Rent, Measured: Use, Acknowledgment, Discount, Supply', #1470 'One Transcript, Whole Stack: The Full Measurement of the SPXI Rent Event', #1479 its computation record and #1465 'Position Is Not Class' were all ACTIVE, all matched the select pattern on their titles, and all were ABSENT — because this grammar declared no core_principles, so rule V never ran and the body was selected by rule A alone, which matches DECLARED CONCEPTS rather than titles. A paper called 'Semantic Rent, Measured' whose declared concepts do not use the phrase was invisible to a body about semantic rent. |
 
 ## Roles
 
