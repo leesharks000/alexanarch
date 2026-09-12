@@ -17,7 +17,7 @@ The archive's political economy of meaning, seeded at the stolon the collapse bo
 
 ## Counts
 
-**395** nodes · **277** core · **118** neighbour · **196** edges · **4** stolons
+**476** nodes · **344** core · **132** neighbour · **230** edges · **4** stolons
 
 ## It was advertised before it existed
 
@@ -40,6 +40,9 @@ REBUILT FROM THE DEFINING PAPERS, 2026-09-12. v0.1 scoped this body to the ten n
 | principle | basis | caution |
 | --- | --- | --- |
 | **vocabulary** | `pattern-detected` | ADDED 2026-09-12 AFTER THE GRID LIED. The organized grid reported that semantic_rent had NO INSTRUMENT AND NO MEASUREMENT, and I wrote that up as the body's largest gap and its most commercial one. It was an artifact. #1462 'Semantic Rent, Measured: Use, Acknowledgment, Discount, Supply', #1470 'One Transcript, Whole Stack: The Full Measurement of the SPXI Rent Event', #1479 its computation record and #1465 'Position Is Not Class' were all ACTIVE, all matched the select pattern on their titles, and all were ABSENT — because this grammar declared no core_principles, so rule V never ran and the body was selected by rule A alone, which matches DECLARED CONCEPTS rather than titles. A paper called 'Semantic Rent, Measured' whose declared concepts do not use the phrase was invisible to a body about semantic rent. |
+| **title** | `pattern-detected` | ADDED AFTER #137 WAS FOUND ABSENT. The Semantic Commodity Form — the framework's own Marx extension, the paper this grammar was rebuilt from — was excluded because rule V requires a deposit to ALSO declare a concept, and #137 declares none. So do #140 its metadata packet, #150 the Assembly Chorus act, and #765 its ratification record.
+
+The concept requirement was bounding over-selection that came from DESCRIPTION matching: title plus description selects 272, TITLE ALONE SELECTS 107. A title is the author's declaration of subject and needs no second signal. Rule V keeps its bound for description matches; a title match admits on its own. |
 
 ## Roles
 
@@ -47,6 +50,7 @@ REBUILT FROM THE DEFINING PAPERS, 2026-09-12. v0.1 scoped this body to the ten n
 
 | role | what it names |
 | --- | --- |
+| `semantic_commodity_form` | #137 — THE GENERAL CASE, not one of the six. The six forms of #623 §4 are forms OF this: 'the meaning is preserved as retrievable, the authorship is negated as presence. The said survives; the act of saying is the lifted-and-cancelled term.' Sublation performed on meaning rather than labor-time, 'though the two were never separable, because the saying WAS labor.' It sits first because a deposit that names the general case is about the general case, whichever form it discusses. |
 | `semantic_labor` | #623 §4.1 — ontology engineering as semantic labor. Who does the work the value is taken from. |
 | `semantic_capital` | #623 §4.2 — knowledge graphs as semantic capital. Accumulated structured meaning, owned. |
 | `semantic_infrastructure` | #623 §4.3 — standards as infrastructure. What everyone builds on and nobody is paid for. |
@@ -59,7 +63,7 @@ REBUILT FROM THE DEFINING PAPERS, 2026-09-12. v0.1 scoped this body to the ten n
 | `analysis` | the body thinking about itself |
 | `unroled` | the honest floor; its count is this grammar's error bar |
 
-ORDER IS THE CLASSIFIER and the order here is the mapping's own: labor, capital, infrastructure, rent, liquidation, exhaustion — the sequence #623 §4 uses, which runs from what is produced to what is destroyed. counter_operation and accounting follow because they act on the six rather than being among them.
+ORDER IS THE CLASSIFIER. semantic_commodity_form is FIRST because it is the general case and the six are forms of it; a paper naming it is about it, whichever form it discusses. Then the six in #623 §4's own order — labor, capital, infrastructure, rent, liquidation, exhaustion — which runs from what is produced to what is destroyed. counter_operation and accounting follow because they act on the six rather than being among them.
 
 A node matching nothing falls to `unroled`, whose count is this grammar's own error bar.
 
