@@ -5,9 +5,11 @@ on:
     paths:
       - 'rhizomes/**'
       - 'scripts/build_rhizome_mc.py'
+      - 'scripts/build_rhizome_card.py'
       - 'data/relations.jsonl'
       - 'data/nodes.jsonl'
       - 'data/assertions.jsonl'
+      - 'data/capture-deposit-links.json'
   schedule:
     - cron: '45 6 * * 1'   # weekly, 15 min after the parent build
   workflow_dispatch: {}
@@ -15,19 +17,37 @@ concurrency:
   group: hf-rhizomes
   cancel-in-progress: true
 
-# EACH RHIZOME IS ITS OWN HUB DATASET, pushed separately from the parent (2026-09-10).
-# They must not share a push: the datasets-server rebuilds a config's full-text index
-# whenever its file changes, and a rhizome rebuild has no business cold-starting the
-# parent's `deposits` index — measured at over an hour of HTTP 500 on /search after a
-# push. Separate repos, separate indexes, separate blast radius.
+# ONE JOB PER BODY, NOT ONE JOB (2026-09-12). This workflow was written for a single rhizome
+# and hardcoded its repo variable. Three bodies now germinate from the same generator with
+# different grammars, so the matrix is over GRAMMARS and each body pushes to its own Hub
+# dataset under its own variable.
 #
-# The repo is created by the token on first run (create_repo exist_ok=True), so no
-# manual setup on the Hub is needed beyond the variable below.
+# EACH RHIZOME IS ITS OWN HUB DATASET. They must not share a push: the datasets-server
+# rebuilds a config's full-text index whenever its file changes — measured at over an hour of
+# HTTP 500 on /search after a push — and one body's rebuild has no business cold-starting
+# another's index. Separate repos, separate indexes, separate blast radius.
+#
+# A body whose variable is unset is SKIPPED, not failed, so a new grammar can land before its
+# Hub dataset exists. create_repo(exist_ok=True) means the token creates the dataset on first
+# push; no manual setup on the Hub is required.
 
 jobs:
   emit-and-push:
     runs-on: ubuntu-latest
-    if: ${{ vars.HF_RHIZOME_MC_REPO != '' }}
+    strategy:
+      fail-fast: false          # one body's failure must not stop the others
+      max-parallel: 1           # serialise: the datasets-server is the shared resource
+      matrix:
+        include:
+          - slug: model-collapse-anti-collapse
+            grammar: rhizomes/_grammars/collapse.json
+            repo_var: HF_RHIZOME_MC_REPO
+          - slug: semantic-economy
+            grammar: rhizomes/_grammars/semantic-economy.json
+            repo_var: HF_RHIZOME_SE_REPO
+          - slug: machine-mediated-reception
+            grammar: rhizomes/_grammars/machine-mediated-reception.json
+            repo_var: HF_RHIZOME_MMRS_REPO
     steps:
       - name: Debounce — let a burst of merges settle
         if: ${{ github.event_name == 'push' }}
@@ -37,40 +57,54 @@ jobs:
         with: { python-version: '3.12' }
       - run: pip install -q huggingface_hub
 
-      # Re-emit rather than pushing what is committed: the rhizome is GENERATED from the
-      # relation ledger, and a committed copy that no longer matches the ledger would be
-      # a stale projection claiming to be a reproducible one.
-      - name: Re-emit EA-RHIZOME-MC-01 from the ledger
+      - name: Skip if this body has no Hub dataset configured
+        id: gate
+        run: |
+          V='${{ secrets[matrix.repo_var] }}${{ vars[matrix.repo_var] }}'
+          if [ -z "$V" ]; then
+            echo "::notice::${{ matrix.slug }} has no ${{ matrix.repo_var }} set — skipping"
+            echo "go=false" >> $GITHUB_OUTPUT
+          else
+            echo "go=true" >> $GITHUB_OUTPUT
+            echo "repo=$V" >> $GITHUB_OUTPUT
+          fi
+
+      # Re-emit rather than pushing what is committed: a rhizome is GENERATED from the relation
+      # ledger, and a committed copy that no longer matches the ledger would be a stale
+      # projection claiming to be a reproducible one.
+      - name: Re-emit ${{ matrix.slug }} from the ledger
+        if: steps.gate.outputs.go == 'true'
+        env:
+          RHIZOME_GRAMMAR: ${{ matrix.grammar }}
         run: python3 scripts/build_rhizome_mc.py
 
-      # COMPARE THE DATA, NOT THE TIMESTAMP (2026-09-10). The first CI run of this gate
-      # failed on spore.json alone, one line: `generated`, which changes on every emission
-      # by construction. A gate that compares a field which can never match fails always
-      # and therefore means nothing — it would have blocked every push while appearing to
-      # verify something. Only nodes, relations and stolons are checked; those are the
-      # projection. The spore's timestamp and source_commit are provenance ABOUT the
-      # emission, and source_commit is stamped in CI precisely because a local copy
-      # cannot have it.
+      # COMPARE THE DATA, NOT THE TIMESTAMP. An earlier version of this gate compared the whole
+      # directory including spore.json, whose `generated` field changes on every emission by
+      # construction — a gate that tests a field which can never match fails always and
+      # therefore verifies nothing. Cards are authored or rendered, not emitted, and are also
+      # out of scope.
       - name: Fail if the emitted data differs from the committed copy
+        if: steps.gate.outputs.go == 'true'
         run: |
-          D=rhizomes/model-collapse-anti-collapse
-          # poetics.jsonl is AUTHORED, not emitted from the ledger, so it is not in the
-          # regeneration comparison. Including it would make the gate fail whenever a law
-          # was added — which is the same error as comparing the spore's timestamp.
+          D=rhizomes/${{ matrix.slug }}
           if ! git diff --quiet -- $D/nodes.jsonl $D/relations.jsonl $D/stolons.jsonl; then
-            echo "::error::Emitted rhizome data differs from the committed copy."
-            echo "The committed files are stale, or the ledger changed without a re-emit."
-            echo "Run scripts/build_rhizome_mc.py locally and commit the result."
+            echo "::error::${{ matrix.slug }}: emitted data differs from the committed copy."
+            echo "Run with RHIZOME_GRAMMAR=${{ matrix.grammar }} locally and commit the result."
             git --no-pager diff --stat -- $D/nodes.jsonl $D/relations.jsonl $D/stolons.jsonl
             exit 1
           fi
-          echo "emitted data matches the committed copy"
+          echo "${{ matrix.slug }}: emitted data matches the committed copy"
+
+      - name: Render the card from the grammar
+        if: steps.gate.outputs.go == 'true'
+        run: python3 scripts/build_rhizome_card.py ${{ matrix.grammar }}
 
       - name: Stamp the spore with the source commit
+        if: steps.gate.outputs.go == 'true'
         run: |
           python3 - <<'PY'
           import json, pathlib, os
-          p = pathlib.Path('rhizomes/model-collapse-anti-collapse/spore.json')
+          p = pathlib.Path('rhizomes/${{ matrix.slug }}/spore.json')
           s = json.loads(p.read_text(encoding='utf-8'))
           s['source_commit'] = os.environ['GITHUB_SHA']
           s['source_repo'] = 'https://github.com/leesharks000/alexanarch'
@@ -78,10 +112,11 @@ jobs:
           print('spore stamped:', s['source_commit'][:12])
           PY
 
-      - name: Push EA-RHIZOME-MC-01
+      - name: Push ${{ matrix.slug }}
+        if: steps.gate.outputs.go == 'true'
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
           python3 scripts/push_hf_dataset.py \
-            rhizomes/model-collapse-anti-collapse \
-            "${{ vars.HF_RHIZOME_MC_REPO }}"
+            rhizomes/${{ matrix.slug }} \
+            "${{ steps.gate.outputs.repo }}"
