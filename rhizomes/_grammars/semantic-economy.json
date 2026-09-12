@@ -141,5 +141,66 @@
  "special_roles_note": "A capture carrying a PER is the ACCOUNTING — an instrument's output. A capture without one is an INSTANCE: evidence the operation ran, with no claim about which of the six forms it took. Calling an unmeasured capture `liquidation` would assert the operation from the fact of a record, which is the thing this framework's own instruments exist to avoid asserting.",
  "follow_note": "THE FRONTIER EXPLODED AT 1,613 NEIGHBOURS on the first emission because the follow set included defines_concept, about and part_of_line — predicates that fan out across the whole archive. A frontier is one typed hop from a body, not one hop from a category. The collapse grammar keeps them because its core is concept-anchored; this body's core is deposit-anchored and cannot afford them.",
  "default_role": "unroled",
- "extent_test": "§7: 'What remains incomplete is the governance of that infrastructure — THE ACCOUNTING OF WHO PRODUCES, WHO EXTRACTS, AND WHO BENEFITS.' A deposit is in this body's extent if it bears on that accounting in the economy of meaning-production. §6 states why this is not a metaphor and the reason matters for the filter: 'the framework does not impose economic categories on non-economic phenomena — it reveals the economic dynamics that were always present but lacked vocabulary.' So model collapse is inside as semantic EXHAUSTION ('model collapse is not a metaphor'), knowledge panels are inside as semantic RENT, and the capture registry is inside as the measurement of extraction. They are not adjacent bodies; they are regions the mapping already names."
+ "extent_test": "§7: 'What remains incomplete is the governance of that infrastructure — THE ACCOUNTING OF WHO PRODUCES, WHO EXTRACTS, AND WHO BENEFITS.' A deposit is in this body's extent if it bears on that accounting in the economy of meaning-production. §6 states why this is not a metaphor and the reason matters for the filter: 'the framework does not impose economic categories on non-economic phenomena — it reveals the economic dynamics that were always present but lacked vocabulary.' So model collapse is inside as semantic EXHAUSTION ('model collapse is not a metaphor'), knowledge panels are inside as semantic RENT, and the capture registry is inside as the measurement of extraction. They are not adjacent bodies; they are regions the mapping already names.",
+ "kinds_note": "A SECOND AXIS, ORTHOGONAL TO FORM. The roles say what economic form a deposit NAMES — labor, capital, infrastructure, rent, liquidation, exhaustion. They do not say what KIND OF WORK it does. PER names liquidation and IS an instrument; #623 names all six and IS theory. Crossing the two separates a body that argues from one that measures, which the form axis alone cannot do.\n\nTHE SOURCE IS THE ARCHIVE'S OWN content_type FIELD, not a new judgment — but it is free text with 37 distinct values across 89 deposits, one of them a sixty-word paragraph, so it is normalised here by an ordered mapping and the unmapped fall to `unkinded` rather than being forced.\n\n#137 §10.0 and §11 license the instrument/theory split in this framework's own terms: 'Efficacy Before Falsifiability — the instrument must bite', and 'the instrument is not a coinage — it is one operator in a standing system'. An instrument is a distinct kind with its own obligations.",
+ "kinds": [
+  [
+   "instrument",
+   "diagnostic probe|executable|software|apparatus|integrity-lock|pre-registered|calculator|engine",
+   "a thing that measures or acts, not a thing that argues. #137 §10.0: the instrument must bite."
+  ],
+  [
+   "measurement",
+   "empirical|traversal log|field observation|implementation report|forensic record|case study|audit|study",
+   "the output of an instrument, on a date"
+  ],
+  [
+   "practice",
+   "effective act|intervention|protocol companion|commons repair",
+   "an act performed rather than described. #24's counter-operation, #137 §12's commons repair."
+  ],
+  [
+   "specification",
+   "specification|governance|constitution|protocol|address protocol|room spec|technical",
+   "what someone else could build from"
+  ],
+  [
+   "carrier",
+   "metadata packet|navigation map|provenance document|entity map|disambiguation|certificate|index",
+   "a thing whose job is to make another thing findable or attributable"
+  ],
+  [
+   "theory",
+   "theoretical|scholarly essay|manifesto|reconstruction|critical-theory|analysis|white paper|brief|paper",
+   "the articulation. #623, #137, #24."
+  ],
+  [
+   "work",
+   "poetry|creative|short work|book|manuscript|archive work|notebook|prose",
+   "made rather than argued"
+  ],
+  [
+   "unkinded",
+   ".",
+   "content_type said nothing this mapping recognises; its count is the mapping's error bar"
+  ]
+ ],
+ "organized": {
+  "measured_at": "2026-09-12",
+  "axes": [
+   "dynamic_role — the economic form a deposit NAMES, from #623 §4",
+   "kind — the work a deposit DOES, normalised from the archive's content_type"
+  ],
+  "totals": {
+   "theory": 22,
+   "specification": 20,
+   "instrument": 7,
+   "measurement": 48,
+   "practice": 3,
+   "carrier": 13,
+   "work": 10
+  },
+  "reading": "THE THIN COLUMNS ARE THE FINDING. 7 instruments and 3 practices against 48 measurements: the body measures far more than it has instruments to measure with, which is consistent with PER doing most of the work alone and with #137 §11's claim that the instrument 'is one operator in a standing system' — a system with seven members.\n\nSEMANTIC_RENT HAS NO INSTRUMENT AND NO MEASUREMENT. Knowledge-panel and API use is the mechanism by which value is captured — #623 §4.4 — and this body can argue about it and cannot measure it. That is the largest single gap the grid exposes and it is directly commercial: rent is where the money is, and it is the one form with no meter.\n\nSEMANTIC_INFRASTRUCTURE IS BUILT RATHER THAN ARGUED — 11 specifications against 6 theory, the most built-out region. SEMANTIC_LIQUIDATION IS THE REVERSE: 5 works against 1 theory, the operation written through more than written about. accounting is 34 measurements and nothing else, which is correct — it is an instrument's output, not an argument.",
+  "caution": "The kind axis is normalised from a free-text field by an ordered regex mapping. It covers every deposit in this body and zero fall to `unkinded`, but coverage is not accuracy: a deposit whose content_type says 'Theoretical paper' is filed as theory on the strength of its own label."
+ }
 }
