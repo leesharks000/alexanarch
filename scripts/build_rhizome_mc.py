@@ -242,6 +242,20 @@ def main():
                 core.setdefault(nid, "E")
                 why[nid].add(f"[editorial: {field}={want}]")
 
+    # RULE T — TITLE DECLARES THE SUBJECT. A deposit whose TITLE matches the select is in,
+    # with no second signal required. #137 The Semantic Commodity Form — the framework's own
+    # Marx extension — was absent from the body about that framework because rule V requires a
+    # declared concept and #137 declares none. The concept bound exists to stop DESCRIPTION
+    # matches over-selecting: title+description gives 272, title alone gives 107.
+    if _CP.get("title"):
+        for num, d in reg.items():
+            nid = f"deposit:{num}"
+            if nid in core:
+                continue
+            if SELECT.search(str(d.get("title") or "")):
+                core[nid] = "T"
+                why[nid].add("[title declares the subject]")
+
     # RULE V — VOCABULARY, bounded. The unbounded form selects 963 of 1,329 deposits, so it
     # is admitted only where a deposit ALSO declares a concept, which is the archive's own
     # signal that it is making a distinction rather than mentioning one.
