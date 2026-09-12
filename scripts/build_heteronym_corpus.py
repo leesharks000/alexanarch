@@ -78,6 +78,7 @@ def build():
                       "matches alone."),
         "_replaces": ("The hand-picked `works` lists, which covered 34 of 1,468 attributed deposits "
                       "and were assembled by full-text name search."),
+        "maxim": "all things are lawful to those that are in Jack Feist",
         "heteronyms": {},
     }
     for n, ds in corpus.items():
