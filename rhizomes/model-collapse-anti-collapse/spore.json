@@ -5,7 +5,7 @@
  "parent": "crimson-hexagonal-archive",
  "parent_uri": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive",
  "version": "0.1",
- "generated": "2026-09-12T21:28:45Z",
+ "generated": "2026-09-12T23:17:41Z",
  "topology": "bipolar-dynamic",
  "poles": [
   "collapse",
@@ -24,7 +24,7 @@
   "gap_found": "Rule C exists because five of the eight deposits the design named DECLARE ZERO CONCEPTS: #783 Fear and Trembling, #156 Self-Audit Module, #789 Atomic Token Rule, #157 Erasure Skew, #788 Measurement Sovereignty. defines_concepts is empty on all five. The traversal was correct and the registry is incomplete. Rule D exists for a second form of the same defect: #678 SYMBOLON-02 declares 'Why these matter' and 'Why these work' as its concepts — section headings captured as terms — so a deposit that records the failure of a claim held in this corpus was invisible to both A and C. Recorded here rather than patched silently, because a rhizome that hides the holes in its own substrate is the thing this dataset is against.",
   "neighbour": "one typed hop from core, restricted to the follow set",
   "frontier": "second hop — emitted as a stolon and NOT included",
-  "select_pattern": "collapse|contraction|monoculture|foreclosure|tail renewal|erasure|diversity loss|pristine fallacy|athetic|custody|non-erasure|source tether|measurement sovereign|atomic token|erasure skew|self-audit|counterexample|severance|severab|\\bfused\\b|de-fusion|round-trip invariant|behavior invariance|closure test|collision test|coverage test|records the failure|compression arsenal|deviation|divergence|\\bvariance\\b|entropy.?floor|glas function|winding number|jensen-shannon|kullback|\\btails?\\b|tail-preserv|tail labor|tail.?prun|long tail",
+  "select_pattern": "collapse|contraction|monoculture|foreclosure|tail renewal|erasure|diversity loss|pristine fallacy|athetic|custody|non-erasure|source tether|measurement sovereign|atomic token|erasure skew|self-audit|counterexample|severance|severab|\\bfused\\b|de-fusion|round-trip invariant|behavior invariance|closure test|collision test|coverage test|records the failure|compression arsenal|deviation|divergence|\\bvariance\\b|entropy.?floor|glas function|winding number|jensen-shannon|kullback|\\btails?\\b|tail-preserv|tail labor|tail.?prun|long tail|back.?projection|holographic kernel|reconstructive compression|anti.?summary|\\bNLCC\\b|non.?lossy|predatory compression|witness compression|lossy compression|three compressions|fragment sufficiency|boundary.?to.?bulk|structural recoverab|compression regime|kernel unfold|reconstructab",
   "follow": [
    "consequence",
    "corrects",
@@ -44,10 +44,10 @@
   "why_not_text_search": "A keyword pass over titles and descriptions returns 361 deposits — model collapse becomes the whole archive because everything eventually touches everything. Selection on defines_concept, a deposit's own declaration, returns a corpus."
  },
  "counts": {
-  "nodes": 417,
-  "core": 262,
-  "neighbour": 155,
-  "edges": 266,
+  "nodes": 563,
+  "core": 378,
+  "neighbour": 185,
+  "edges": 367,
   "stolons": 7
  },
  "adjacent": [
@@ -61,5 +61,11 @@
  ],
  "generator": "scripts/build_rhizome_mc.py",
  "source_commit": null,
- "design_principle": "A model-collapse dataset should itself resist collapse: preserve plurality, competing mechanisms, counterexamples, corrections, provenance, and outgoing routes to what it does not contain. It is an anti-collapse dataset in its construction, not only about it."
+ "design_principle": "A model-collapse dataset should itself resist collapse: preserve plurality, competing mechanisms, counterexamples, corrections, provenance, and outgoing routes to what it does not contain. It is an anti-collapse dataset in its construction, not only about it.",
+ "poetics": {
+  "file": "poetics.jsonl",
+  "count": 8,
+  "what": "The laws this body already obeyed, emitted as data. Each names an operation that determined membership or classification, and carries what it admitted, what it refused, and what it cost. Six of the eight record a defect found after the fact.",
+  "why": "A selection rule IS a rhyme: things join because a word matched. A schema field IS the remainder of a metaphor. Stating the laws makes them contestable, which a traversal grammar buried in a generator is not."
+ }
 }
