@@ -12,12 +12,27 @@
  "what": "The vocabulary of ONE body, lifted out of the generator. Until 2026-09-12 these five constants were hardcoded, which meant the emitter could verify a configuration and not re-parameterise one: editing the spore alone could not produce a different body.",
  "why_it_matters": "role_for() applied to 136 retrieval-engineering deposits does not fall to the default. It spreads plausibly across the collapse vocabulary — 33% anti_collapse_intervention, because the pattern contains `protocol` and every technical deposit says protocol. A distribution that looks like a finding and means nothing. THE VOCABULARY IS NOT PORTABLE, and its failure mode is not emptiness but false confidence.",
  "select": {
-  "pattern": "collapse|contraction|monoculture|foreclosure|tail renewal|erasure|diversity loss|pristine fallacy|athetic|custody|non-erasure|source tether|measurement sovereign|atomic token|erasure skew|self-audit|counterexample|severance|severab|\\bfused\\b|de-fusion|round-trip invariant|behavior invariance|closure test|collision test|coverage test|records the failure|compression arsenal|deviation|divergence|\\bvariance\\b|entropy.?floor|glas function|winding number|jensen-shannon|kullback|\\btails?\\b|tail-preserv|tail labor|tail.?prun|long tail",
+  "pattern": "collapse|contraction|monoculture|foreclosure|tail renewal|erasure|diversity loss|pristine fallacy|athetic|custody|non-erasure|source tether|measurement sovereign|atomic token|erasure skew|self-audit|counterexample|severance|severab|\\bfused\\b|de-fusion|round-trip invariant|behavior invariance|closure test|collision test|coverage test|records the failure|compression arsenal|deviation|divergence|\\bvariance\\b|entropy.?floor|glas function|winding number|jensen-shannon|kullback|\\btails?\\b|tail-preserv|tail labor|tail.?prun|long tail|back.?projection|holographic kernel|reconstructive compression|anti.?summary|\\bNLCC\\b|non.?lossy|predatory compression|witness compression|lossy compression|three compressions|fragment sufficiency|boundary.?to.?bulk|structural recoverab|compression regime|kernel unfold|reconstructab",
   "flags": "I",
   "note": "A selection rule is a rhyme: things join because a word matched.",
   "extraction_note": "Reassembled from the generator's string literals WITH COMMENT LINES STRIPPED FIRST. A first extraction scraped every quoted string in the SELECT block and pulled text out of the explanatory comments into the pattern — including the comment about `tails\\\\b` matching 'details' — which silently changed membership by four nodes. The body is the test: it must re-emit byte-identical."
  },
  "roles": [
+  {
+   "role": "anti_collapse_instrument",
+   "pattern": "back.?projection|anti.?summary|\\bNLCC\\b|fragment sufficiency|boundary.?to.?bulk|structural recoverab|reconstructab",
+   "note": "the measure of whether a compression preserved what it compressed — #76's two tests and NLCC's ten conditions"
+  },
+  {
+   "role": "anti_collapse_mechanism",
+   "pattern": "holographic kernel|reconstructive compression|witness compression|non.?lossy|kernel unfold",
+   "note": "a compression that discards material to save structure. #579 Regime 3."
+  },
+  {
+   "role": "collapse_mechanism",
+   "pattern": "predatory compression|lossy compression|summar(?:y|ise|ize) (?:rather|not)",
+   "note": "a compression that discards structure. #579 Regime 2 burns collective semantic capital while privatising the benefit."
+  },
   {
    "role": "anti_collapse_instrument",
    "pattern": "self-audit|audit module|erasure skew|atomic token|measurement sovereign|calculator|closure test|collision test|coverage test|round-trip invariant|behavior invariance|invariant"
@@ -138,5 +153,18 @@
  },
  "special_roles_note": "THREE ROLE NAMES WERE HARDCODED IN THE GENERATOR and only a second body could show it: a capture with a measurement, a capture without one, and a deposit admitted for recording a failure. They bypass the ROLES list because their basis is a FIELD rather than a text match — which is correct — but their NAMES belong to a body's vocabulary, not to the emitter.",
  "default_role": "collapse_observation",
- "pattern_hygiene": "LEADING WORD BOUNDARIES ADDED 2026-09-12 after the fourth instance of the same defect this week. `OWL`, the Web Ontology Language, matched inside ACKNOWLEDGMENT and filed #1462 'Semantic Rent, Measured' as semantic_infrastructure — which is how the organized grid came to report that semantic_rent had no instrument and no measurement, a claim written up as this body's largest and most commercial gap. Prior instances: `measure` inside 'measured coherence', `tail` inside 'detail', `tails\\\\b` inside 'details'. Trailing boundaries are NOT added because several tokens are intentional prefixes."
+ "pattern_hygiene": "LEADING WORD BOUNDARIES ADDED 2026-09-12 after the fourth instance of the same defect this week. `OWL`, the Web Ontology Language, matched inside ACKNOWLEDGMENT and filed #1462 'Semantic Rent, Measured' as semantic_infrastructure — which is how the organized grid came to report that semantic_rent had no instrument and no measurement, a claim written up as this body's largest and most commercial gap. Prior instances: `measure` inside 'measured coherence', `tail` inside 'detail', `tails\\\\b` inside 'details'. Trailing boundaries are NOT added because several tokens are intentional prefixes.",
+ "compression_note": "THE ARCHIVE'S COMPRESSION APPARATUS WAS OUTSIDE THE BODY ABOUT COLLAPSE (2026-09-12). #76 the holographic kernel specification, #579 the Three Compressions, #569 the NLCC executable, #175 the Information Bottleneck bridge and #50 the Compression Arsenal all scored OUT, and none matched the select pattern on title or description. The pattern named loss of content, loss of relation and loss of the tail. IT DID NOT NAME COMPRESSION, which is the operation all three losses are forms of.\n\nThe warrant is #579's own taxonomy, not an analogy: REGIME 2 IS PREDATORY COMPRESSION, 'burning collective semantic capital while privatizing benefit', and REGIME 3 IS WITNESS COMPRESSION, 'drawing on private bearing-cost and socializing a recoverable deposit'. Those are a collapse mechanism and an anti-collapse mechanism, named as such, in a March 2026 deposit.\n\nAnd BACK-PROJECTION is the measure of whether a compression preserved what it compressed — the quantity a collapse body exists to track. A compression that preserves reconstructive capacity is an anti-collapse operation; one that does not is a collapse operation. #76 states the line: 'if you can reconstruct the system from the fragment, it is a kernel; if you can only summarise it, it is not.'",
+ "core_principles": {
+  "title": {
+   "basis": "pattern-detected",
+   "matches": "select pattern against the TITLE alone",
+   "caution": "ADDED 2026-09-12, AND THE SAME OMISSION WAS FOUND ON THE SEMANTIC-ECONOMY GRAMMAR AN HOUR EARLIER AND NOT PROPAGATED HERE. This body ran on rules A through D, which match DECLARED CONCEPTS and title instrument-words. A paper titled 'THE THREE COMPRESSIONS: Lossy, Predatory, and Witness' was invisible to a body about collapse. A title is the author's declaration of subject and needs no second signal."
+  },
+  "vocabulary": {
+   "bounded_by": "deposit also declares at least one concept",
+   "basis": "pattern-detected",
+   "caution": "Description matches over-select; the concept requirement is the bound. Titles are handled by the title principle and need no bound."
+  }
+ }
 }

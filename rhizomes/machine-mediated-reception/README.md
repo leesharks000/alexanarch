@@ -17,7 +17,7 @@ Machine-mediated reception: what composition surfaces actually did with this arc
 
 ## Counts
 
-**1247** nodes · **974** core · **273** neighbour · **907** edges · **4** stolons
+**1248** nodes · **975** core · **273** neighbour · **907** edges · **4** stolons
 
 ## It was advertised before it existed
 
