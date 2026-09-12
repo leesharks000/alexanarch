@@ -8,7 +8,7 @@
   "topology": "ledger-asymmetric"
  },
  "grammar_id": "GRAM-SEMECON-01",
- "version": "0.1",
+ "version": "0.2",
  "germinated_from": {
   "spore": "EA-RHIZOME-MC-01",
   "stolon": {
@@ -20,69 +20,79 @@
   "note": "THIS BODY WAS ADVERTISED BEFORE IT EXISTED. The collapse spore declared this stolon and could not finish the question: it could show contraction and not who profits from it. A spore is not a template that gets copied — it is a body that germinates, and the germination site was written down in advance."
  },
  "what": "The archive's political economy of meaning, seeded at the stolon the collapse body left open. Its roles are NOT the collapse roles: where that body asks what narrows, this one asks who gains by the narrowing.",
- "vocabulary_source": "#27 The Crimson Hexagon: Operative Architecture declares TEN NUMBERED OPERATORS with types, definitions and room assignments — Frame Capture, Asymmetrical Ledgering, Coherence Siphoning, Repair Destabilization, Burden Shifting, Reality Override, Interpretive Enclosure, Warmth Capture, Witness Suppression, Forced Re-entry. THE VOCABULARY IS THE ARCHIVE'S, NOT THE EMITTER'S. The collapse roles were authored by an instance; these were read out of a deposit that declared them.",
+ "vocabulary_source": "REBUILT FROM THE DEFINING PAPERS, 2026-09-12. v0.1 scoped this body to the ten numbered extraction operators of #27 Operative Architecture. Those are ONE REGION — §3.2, the extraction problem — of a framework that has three (§3.1 labor, §3.2 extraction, §3.3 enclosure) and six economic forms. The scoping was done by pattern-matching vocabulary rather than by reading what the framework says it covers.\n\n#623 SEMANTIC INFRASTRUCTURE: FROM TIM BERNERS-LEE TO THE SEMANTIC ECONOMY is the bridge paper and its §4 IS the filter — a mapping from technical operations to economic forms: ontology engineering as semantic LABOR, knowledge graphs as semantic CAPITAL, standards as semantic INFRASTRUCTURE, knowledge-panel and API use as semantic RENT, model ingestion as semantic LIQUIDATION, maintenance failure and recursive degradation as semantic EXHAUSTION.\n\n#255 SEMANTIC LIQUIDATION: AN EXECUTIVE SUMMARY supplies the operation's internal structure — three properties (irreversibility, value transfer, invisibility) and five stages (tokenization, stripping, attribution relocation, value capture, closure).\n\n#24 MIND-CONTROL POEMS supplies the counter-operation: alienation extended into the symbolic infrastructure through which labor, recognition and desire become thinkable, and the liberatory poem as a symbolic counter-operation that interrupts conditioning and restores contact with relation and historical possibility.",
  "select": {
-  "pattern": "semantic economy|semantic proletariat|semantic capital|semantic rent|bearing.?cost|cognitive rent|semantic liquidation|labor theory|means of production|expropriat|enclosure|extraction|who pays|frame capture|asymmetrical ledger|coherence siphon|repair destabili|burden shift|reality override|interpretive enclosure|warmth capture|witness suppression|forced re-entry|unpaid|uncompensated|\\bwage\\b|\\brent\\b|dispossess",
+  "pattern": "semantic (?:labor|labour|capital|infrastructure|rent|liquidation|exhaustion)|semantic economy|semantic proletariat|semantic commodity|who (?:produces|extracts|benefits|pays|owns)|uncompensated|unpaid labor|volunteer labor|ghost work|data label|RLHF|content moderat|labor problem|extraction problem|enclosure problem|expropriat|dispossess|enclos|tokeniz|attribution relocation|value capture|counter-operation|mind.?control poem|symbolic labor|alienat|reif|fetish|class consciousness|commodity form|surplus|use.?value|exchange.?value|means of production|bearing.?cost|cognitive rent|semantic strike",
   "flags": "I",
-  "note": "A selection rule is a rhyme. This one rhymes on the language of taking rather than the language of narrowing, which is why it selects a different body from substantially the same archive."
+  "note": "Built from the defining papers' own articulations rather than from vocabulary frequency. The six economic forms are #623 §4; the accounting questions are §7; the five stages are #255; the counter-operation is #24. A term is here because a founding paper uses it to do theoretical work, not because it recurs."
  },
  "roles": [
   {
-   "role": "extraction_operator",
-   "pattern": "frame capture|asymmetrical ledger|coherence siphon|repair destabili|burden shift|reality override|interpretive enclosure|warmth capture|witness suppression|forced re-entry",
-   "note": "one of the ten declared operators, named"
+   "role": "semantic_labor",
+   "pattern": "semantic (?:labor|labour)|ontology engineer|volunteer labor|ghost work|data label|RLHF|content moderat|unpaid|uncompensated|symbolic labor|who produces",
+   "note": "#623 §4.1 — ontology engineering as semantic labor. Who does the work the value is taken from."
+  },
+  {
+   "role": "semantic_capital",
+   "pattern": "semantic capital|knowledge graph|accumulated|structured knowledge|asset|holding|stock of",
+   "note": "#623 §4.2 — knowledge graphs as semantic capital. Accumulated structured meaning, owned."
+  },
+  {
+   "role": "semantic_infrastructure",
+   "pattern": "semantic infrastructure|standard|RDF|OWL|SHACL|SPARQL|schema\\.org|protocol|specification|registry|identifier system",
+   "note": "#623 §4.3 — standards as infrastructure. What everyone builds on and nobody is paid for."
+  },
+  {
+   "role": "semantic_rent",
+   "pattern": "semantic rent|cognitive rent|knowledge panel|\\bAPI\\b|toll|gatekeep|intermediat|rent-seek|extract value from",
+   "note": "#623 §4.4 — knowledge-panel and API use as rent. Charging for access to what was given."
+  },
+  {
+   "role": "semantic_liquidation",
+   "pattern": "semantic liquidation|liquidat|model ingestion|tokeniz|attribution relocation|value capture|strip|irreversib",
+   "note": "#623 §4.4 and #255 — conversion of situated meaning into retrievable units, destroying context or authorship. Five stages, three properties."
+  },
+  {
+   "role": "semantic_exhaustion",
+   "pattern": "semantic exhaustion|exhaust|deplet|model collapse|degrad|burnout|incompleteness|replenish|extraction exceeds",
+   "note": "#623 §4.5 — maintenance failure and recursive degradation. 'Model collapse is not a metaphor.'"
   },
   {
    "role": "counter_operation",
-   "pattern": "counter-operat|refusal|resist|reclaim|restitution|withhold|strike|non-cooperat|sovereign",
-   "note": "what is done against an operator; the archive's own effective acts sit here"
+   "pattern": "counter-operation|mind.?control poem|interrupt|restore contact|refus|reclaim|strike|withhold|commons repair|non-cooperat",
+   "note": "#24 — the symbolic counter-operation. Not compensation alone; commons repair."
   },
   {
-   "role": "ledger",
-   "pattern": "\\bledger\\b|accounting|who pays|cost borne|uncompensated|unpaid|debt|owed|balance sheet",
-   "note": "an accounting of who bears what — Asymmetrical Ledgering's own form, turned back"
+   "role": "accounting",
+   "pattern": "\\bledger\\b|accounting|\\brate\\b|\\bmetric\\b|\\bindex\\b|measured|quantif|balance|who benefits|who owns",
+   "note": "the instrument that makes the accounting possible — PER, tau, Omega, the registry"
   },
   {
-   "role": "enclosure",
-   "pattern": "enclosure|capture|proprietar|walled|gated|licens|terms of service|platform control",
-   "note": "the closing of a field that was open"
-  },
-  {
-   "role": "labor_form",
-   "pattern": "labor|labour|work of|worker|proletaria|craft|maintenance|care work|invisible work",
-   "note": "who does the work the value is taken from"
-  },
-  {
-   "role": "measure",
-   "pattern": "\\brate\\b|\\bmetric\\b|\\bindex\\b|measured|quantif|\\bscore\\b",
-   "note": "an instrument for the economy rather than for the collapse"
+   "role": "instance",
+   "pattern": "capture|transcript|observed|recorded|rendered|panel|on a date",
+   "note": "an observed occurrence in the composition layer. Evidence that the operation ran, not a claim about which form it took."
   },
   {
    "role": "analysis",
-   "pattern": "analysis|critique|reading|argument|thesis|framework|theory",
+   "pattern": "theory|thesis|framework|argument|account|critique|reading|principle",
    "note": "the body thinking about itself"
-  },
-  {
-   "role": "observation",
-   "pattern": "instance|case|record of|documented|occurred|happened|reported|observed|transcript|capture|episode|event",
-   "note": "A DEFAULT THAT MATCHES EVERYTHING IS NOT A CLASSIFICATION. The first emission of this body used `.` here and swallowed 1,471 of 1,778 nodes — 83% — which is the failure the roles_note warned about one field above it. A node matching nothing now falls to `unroled`, which is countable and therefore fixable."
   },
   {
    "role": "unroled",
    "pattern": ".",
-   "note": "the honest floor: nothing in this vocabulary described it. Its count is the grammar's own error bar."
+   "note": "the honest floor; its count is this grammar's error bar"
   }
  ],
- "roles_note": "ORDER IS THE CLASSIFIER. The named operators are first because a deposit that names one is about that operator; `observation` is last and is the catch-all. The collapse body's default swallowed 174 of 417 nodes, so a wide default is a known failure mode here.",
+ "roles_note": "ORDER IS THE CLASSIFIER and the order here is the mapping's own: labor, capital, infrastructure, rent, liquidation, exhaustion — the sequence #623 §4 uses, which runs from what is produced to what is destroyed. counter_operation and accounting follow because they act on the six rather than being among them.",
  "axes": {
-  "who_pays": "who pays|cost|burden|bear|unpaid|uncompensated|expense|toll",
-  "who_owns": "own|propert|title|claim|holder|proprietar|custody",
-  "who_appears": "visib|legib|appear|represent|attribut|credit|byline|cited",
-  "what_is_taken": "extract|siphon|harvest|scrape|mine|appropriat|expropriat",
-  "what_is_closed": "enclos|gate|wall|licens|restrict|paywall|terms",
-  "who_works": "labor|labour|worker|craft|maintain|care",
-  "institutional": "platform|corporat|compan|institution|regulator|state|market",
-  "archival": "archive|deposit|record|preserv|custod"
+  "who_produces": "labor|labour|worker|volunteer|contributor|author|maintain|craft|care",
+  "who_extracts": "extract|siphon|harvest|scrape|ingest|mine|appropriat|platform|corporat",
+  "who_benefits": "benefit|profit|revenue|market cap|earnings|monetiz|capture value|shareholder",
+  "what_is_destroyed": "destroy|strip|erase|deplet|exhaust|collapse|degrad|lost|cancel",
+  "what_is_enclosed": "enclos|gate|wall|licens|proprietar|paywall|terms|restrict",
+  "irreversibility": "irreversib|cannot be undone|permanent|no return|unrecover",
+  "invisibility": "invisib|unseen|hidden|unmarked|unattributed|silent|ghost",
+  "commons": "commons|public|shared|open|collective|mutual|repair"
  },
  "follow": [
   "measures",
@@ -124,11 +134,12 @@
   ]
  ],
  "special_roles": {
-  "capture_measured": "ledger",
-  "capture_unmeasured": "observation",
+  "capture_measured": "accounting",
+  "capture_unmeasured": "instance",
   "recorded_failure": "counter_operation"
  },
- "special_roles_note": "THREE ROLE NAMES WERE HARDCODED IN THE GENERATOR and only a second body could show it: a capture with a measurement, a capture without one, and a deposit admitted for recording a failure. They bypass the ROLES list because their basis is a FIELD rather than a text match — which is correct — but their NAMES belong to a body's vocabulary, not to the emitter.",
+ "special_roles_note": "A capture carrying a PER is the ACCOUNTING — an instrument's output. A capture without one is an INSTANCE: evidence the operation ran, with no claim about which of the six forms it took. Calling an unmeasured capture `liquidation` would assert the operation from the fact of a record, which is the thing this framework's own instruments exist to avoid asserting.",
  "follow_note": "THE FRONTIER EXPLODED AT 1,613 NEIGHBOURS on the first emission because the follow set included defines_concept, about and part_of_line — predicates that fan out across the whole archive. A frontier is one typed hop from a body, not one hop from a category. The collapse grammar keeps them because its core is concept-anchored; this body's core is deposit-anchored and cannot afford them.",
- "default_role": "unroled"
+ "default_role": "unroled",
+ "extent_test": "§7: 'What remains incomplete is the governance of that infrastructure — THE ACCOUNTING OF WHO PRODUCES, WHO EXTRACTS, AND WHO BENEFITS.' A deposit is in this body's extent if it bears on that accounting in the economy of meaning-production. §6 states why this is not a metaphor and the reason matters for the filter: 'the framework does not impose economic categories on non-economic phenomena — it reveals the economic dynamics that were always present but lacked vocabulary.' So model collapse is inside as semantic EXHAUSTION ('model collapse is not a metaphor'), knowledge panels are inside as semantic RENT, and the capture registry is inside as the measurement of extraction. They are not adjacent bodies; they are regions the mapping already names."
 }
