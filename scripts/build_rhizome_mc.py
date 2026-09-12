@@ -107,7 +107,7 @@ def role_for(text):
     for r, p in ROLES:
         if p.search(text):
             return r
-    return "collapse_observation"
+    return _G.get("default_role", "observation")
 
 
 def main():
@@ -174,6 +174,60 @@ def main():
                                           r"collapse|erasure|custody|monoculture", t, re.I):
             core[nid] = "C"
             why[nid].add("[title-declared: " + t[:60] + "]")
+
+    # ---- THREE FURTHER CORE PRINCIPLES, GATED BY THE GRAMMAR (2026-09-12).
+    # Rules A-D select on what a deposit SAYS. Three bodies measured against each other showed
+    # that one family of rules cannot reach the reception body:
+    #
+    #   editorial  MMRS journal assignments          119 deposits
+    #   vocabulary reception word-match              963
+    #   evidence   deposits an actual capture cited  332  — only 29% of the journal
+    #
+    # None reproduces another. The word-match agrees with 86% of the journal's members and
+    # drags in 860 others, because A RECEPTION ARCHIVE'S AMBIENT VOCABULARY IS RECEPTION
+    # VOCABULARY. The editor sees propagation — memography, virality — that no measurement
+    # vocabulary contains. The evidence sees what surfaces actually touched, which is a
+    # different thing from what theorises reception.
+    #
+    # So the disagreements are the body's data, not its error, and each node records which
+    # principle admitted it. A body that declares none of these is unaffected.
+    _CP = _G.get("core_principles", {})
+
+    # RULE E — EDITORIAL. A venue assignment is an ACT, not a rule. This is the first spore
+    # material that CANNOT BE REGENERATED FROM THE LEDGER: the gate can verify it has not
+    # drifted and cannot derive it. Stated in the spore rather than discovered later.
+    if _CP.get("editorial"):
+        field, want = _CP["editorial"]["field"], _CP["editorial"]["match"]
+        for num, d in reg.items():
+            if want.lower() in str(d.get(field) or "").lower():
+                nid = f"deposit:{num}"
+                core.setdefault(nid, "E")
+                why[nid].add(f"[editorial: {field}={want}]")
+
+    # RULE V — VOCABULARY, bounded. The unbounded form selects 963 of 1,329 deposits, so it
+    # is admitted only where a deposit ALSO declares a concept, which is the archive's own
+    # signal that it is making a distinction rather than mentioning one.
+    if _CP.get("vocabulary"):
+        for num, d in reg.items():
+            nid = f"deposit:{num}"
+            if nid in core:
+                continue
+            blob = " ".join(str(d.get(k) or "") for k in ("title", "description"))
+            if SELECT.search(blob) and (d.get("defines_concepts") or []):
+                core[nid] = "V"
+                why[nid].add("[vocabulary + declares a concept]")
+
+    # RULE O — OBSERVED. A deposit an actual capture cited. The only one of the three with a
+    # derived-deterministic basis, and the only one a buyer can check without trusting us.
+    if _CP.get("observed"):
+        links = json.loads((ROOT / "data/capture-deposit-links.json").read_text(encoding="utf-8"))
+        for slug, v in (links.get("links") or {}).items():
+            for d_ in (v.get("deposits") or []):
+                num = d_.get("deposit_number")
+                if isinstance(num, int):
+                    nid = f"deposit:{num}"
+                    core.setdefault(nid, "O")
+                    why[nid].add(f"[observed: cited in capture {slug[:40]}]")
 
     # ---- CAPTURES: THE EMPIRICAL ARM (2026-09-11).
     # The rhizome saw three node types — deposit, concept, problem — because those are
