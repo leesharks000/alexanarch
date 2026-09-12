@@ -67,6 +67,12 @@ STOLONS = _G["stolons"] or []
 # germinates, and the germinated body needs its own name before it has anything else.
 _B = _G["body"]
 _SR = _G.get("special_roles", {})
+# A SECOND AXIS (2026-09-12). `dynamic_role` says what a deposit NAMES; `kind` says what work
+# it DOES. They are orthogonal — an instrument that measures liquidation is both — and a body
+# that cannot tell an argument from a measurement cannot be read for either.
+# Source is the archive's own content_type, normalised by an ordered mapping in the grammar
+# because the raw field is free text with 37 values across 89 deposits in this body alone.
+_KINDS = [(k, re.compile(p, re.I), note) for k, p, note in (_G.get("kinds") or [])]
 OUT = ROOT / "rhizomes" / _B["slug"]
 
 # axis of contraction — a concept may sit on several
@@ -101,6 +107,19 @@ def axes_for(text):
     # AXES and ROLES now hold COMPILED patterns, loaded from the grammar file. Passing a
     # compiled pattern to re.search with flags raises; call .search on the object instead.
     return sorted(a for a, p in AXES.items() if p.search(text)) or ["unclassified"]
+
+
+def kind_for(content_type):
+    # A CONCEPT HAS NO content_type AND SHOULD NOT BE GIVEN A KIND. The first emission put 98
+    # concepts in `unkinded`, which read as a 35% failure rate when the mapping in fact covers
+    # every deposit in the body. A floor that catches things the axis does not apply to is not
+    # an error bar; it is noise dressed as one.
+    if not content_type:
+        return None
+    for k, p, _ in _KINDS:
+        if p.search(content_type):
+            return k
+    return "unkinded" if _KINDS else None
 
 
 def role_for(text):
@@ -300,6 +319,8 @@ def main():
                 "title": cap.get("s") or cap.get("slug"),
                 "node_type": "capture", "region": "core", "core_rule": "E", "entered_by": None,
                 "dynamic_role": _SR["capture_measured"] if cap.get("per") is not None else _SR["capture_unmeasured"],
+                # a capture is not a content_type; its kind is what it is
+                "kind": "measurement" if cap.get("per") is not None else "instance",
                 "collapse_axis": json.dumps(axes_for(" ".join(str(cap.get(k) or "") for k in ("d", "reading", "s")))),
                 "defines": json.dumps([]), "creator": cap.get("surface"), "date": cap.get("date"),
                 "evidence_status": "CAPTURED", "axn": None,
@@ -325,6 +346,7 @@ def main():
             #
             # A rule that knows why it admitted something knows more than a regex over the text.
             "dynamic_role": _SR["recorded_failure"] if core.get(nid) == "D" else role_for(blob),
+            "kind": kind_for(d.get("content_type")),
             "collapse_axis": json.dumps(axes_for(blob)),
             "defines": json.dumps(sorted(why.get(nid, ()))),
             "creator": d.get("creator"),
