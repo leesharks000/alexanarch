@@ -441,8 +441,9 @@ def main():
 
     ts = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     spore = {
+        "maxim_note": _G.get("maxim_note"),
         "rhizome": _B["slug"],
-        "maxim": "all things are now lawful to you in christ jesus",
+        "maxim": "all things are now lawful to you in jack feist",
         "rhizome_id": _B["rhizome_id"],
         "parent": _B["parent"],
         "parent_uri": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive",

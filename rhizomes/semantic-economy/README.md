@@ -9,7 +9,7 @@ configs:
     data_files: stolons.jsonl
 ---
 
-*all things are now lawful to you in christ jesus*
+*all things are now lawful to you in jack feist*
 
 # EA-RHIZOME-SE-01 — semantic economy
 

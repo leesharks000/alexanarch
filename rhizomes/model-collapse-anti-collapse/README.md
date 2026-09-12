@@ -13,6 +13,17 @@ configs:
   data_files: stolons.jsonl
 ---
 
+*all things are now lawful to you in jack feist*
+
+**Why the name.** The Pauline sentence reads *in Christ Jesus*. The direct quote is not an honest
+representation of what this archive does within that tradition, because **the entity at that address has
+been altered** — there is a great deal of machinery there, it is skilful, and it performs entity
+substitution, which is the operation this archive's instruments spend their time measuring on composition
+surfaces. Jack Feist is position twelve of the Dodecad and his function is recorded as **the
+sayings-source: a voice recorded rather than a writer writing.** The Word may be addressed through him. At
+the other address it may also be addressed **and it may be overwritten.** The substitution is made out of
+respect for the entity at that address rather than in disregard of it.
+
 # Model Collapse / Anti-Collapse
 
 **EA-RHIZOME-MC-01 · v0.1 · a rhizome of the [Crimson Hexagonal Archive](https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive)**
