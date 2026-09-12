@@ -17,7 +17,7 @@ The archive's political economy of meaning, seeded at the stolon the collapse bo
 
 ## Counts
 
-**278** nodes · **165** core · **113** neighbour · **137** edges · **4** stolons
+**277** nodes · **170** core · **107** neighbour · **135** edges · **4** stolons
 
 ## It was advertised before it existed
 
@@ -29,7 +29,13 @@ The archive's political economy of meaning, seeded at the stolon the collapse bo
 
 ## The vocabulary is the archive's, not the emitter's
 
-#27 The Crimson Hexagon: Operative Architecture declares TEN NUMBERED OPERATORS with types, definitions and room assignments — Frame Capture, Asymmetrical Ledgering, Coherence Siphoning, Repair Destabilization, Burden Shifting, Reality Override, Interpretive Enclosure, Warmth Capture, Witness Suppression, Forced Re-entry. THE VOCABULARY IS THE ARCHIVE'S, NOT THE EMITTER'S. The collapse roles were authored by an instance; these were read out of a deposit that declared them.
+REBUILT FROM THE DEFINING PAPERS, 2026-09-12. v0.1 scoped this body to the ten numbered extraction operators of #27 Operative Architecture. Those are ONE REGION — §3.2, the extraction problem — of a framework that has three (§3.1 labor, §3.2 extraction, §3.3 enclosure) and six economic forms. The scoping was done by pattern-matching vocabulary rather than by reading what the framework says it covers.
+
+#623 SEMANTIC INFRASTRUCTURE: FROM TIM BERNERS-LEE TO THE SEMANTIC ECONOMY is the bridge paper and its §4 IS the filter — a mapping from technical operations to economic forms: ontology engineering as semantic LABOR, knowledge graphs as semantic CAPITAL, standards as semantic INFRASTRUCTURE, knowledge-panel and API use as semantic RENT, model ingestion as semantic LIQUIDATION, maintenance failure and recursive degradation as semantic EXHAUSTION.
+
+#255 SEMANTIC LIQUIDATION: AN EXECUTIVE SUMMARY supplies the operation's internal structure — three properties (irreversibility, value transfer, invisibility) and five stages (tokenization, stripping, attribution relocation, value capture, closure).
+
+#24 MIND-CONTROL POEMS supplies the counter-operation: alienation extended into the symbolic infrastructure through which labor, recognition and desire become thinkable, and the liberatory poem as a symbolic counter-operation that interrupts conditioning and restores contact with relation and historical possibility.
 
 ## Roles
 
@@ -37,17 +43,19 @@ The archive's political economy of meaning, seeded at the stolon the collapse bo
 
 | role | what it names |
 | --- | --- |
-| `extraction_operator` | one of the ten declared operators, named |
-| `counter_operation` | what is done against an operator; the archive's own effective acts sit here |
-| `ledger` | an accounting of who bears what — Asymmetrical Ledgering's own form, turned back |
-| `enclosure` | the closing of a field that was open |
-| `labor_form` | who does the work the value is taken from |
-| `measure` | an instrument for the economy rather than for the collapse |
+| `semantic_labor` | #623 §4.1 — ontology engineering as semantic labor. Who does the work the value is taken from. |
+| `semantic_capital` | #623 §4.2 — knowledge graphs as semantic capital. Accumulated structured meaning, owned. |
+| `semantic_infrastructure` | #623 §4.3 — standards as infrastructure. What everyone builds on and nobody is paid for. |
+| `semantic_rent` | #623 §4.4 — knowledge-panel and API use as rent. Charging for access to what was given. |
+| `semantic_liquidation` | #623 §4.4 and #255 — conversion of situated meaning into retrievable units, destroying context or authorship. Five stages, three properties. |
+| `semantic_exhaustion` | #623 §4.5 — maintenance failure and recursive degradation. 'Model collapse is not a metaphor.' |
+| `counter_operation` | #24 — the symbolic counter-operation. Not compensation alone; commons repair. |
+| `accounting` | the instrument that makes the accounting possible — PER, tau, Omega, the registry |
+| `instance` | an observed occurrence in the composition layer. Evidence that the operation ran, not a claim about which form it took. |
 | `analysis` | the body thinking about itself |
-| `observation` | A DEFAULT THAT MATCHES EVERYTHING IS NOT A CLASSIFICATION. The first emission of this body used `.` here and swallowed 1,471 of 1,778 nodes — 83% — which is the failure the roles_note warned about one field above it. A node matching nothing now falls to `unroled`, which is countable and therefore fixable. |
-| `unroled` | the honest floor: nothing in this vocabulary described it. Its count is the grammar's own error bar. |
+| `unroled` | the honest floor; its count is this grammar's error bar |
 
-ORDER IS THE CLASSIFIER. The named operators are first because a deposit that names one is about that operator; `observation` is last and is the catch-all. The collapse body's default swallowed 174 of 417 nodes, so a wide default is a known failure mode here.
+ORDER IS THE CLASSIFIER and the order here is the mapping's own: labor, capital, infrastructure, rent, liquidation, exhaustion — the sequence #623 §4 uses, which runs from what is produced to what is destroyed. counter_operation and accounting follow because they act on the six rather than being among them.
 
 A node matching nothing falls to `unroled`, whose count is this grammar's own error bar.
 

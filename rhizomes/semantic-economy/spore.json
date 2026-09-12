@@ -5,7 +5,7 @@
  "parent": "crimson-hexagonal-archive",
  "parent_uri": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive",
  "version": "0.1",
- "generated": "2026-09-12T18:38:20Z",
+ "generated": "2026-09-12T20:51:43Z",
  "topology": "ledger-asymmetric",
  "poles": [
   "collapse",
@@ -24,7 +24,7 @@
   "gap_found": "Rule C exists because five of the eight deposits the design named DECLARE ZERO CONCEPTS: #783 Fear and Trembling, #156 Self-Audit Module, #789 Atomic Token Rule, #157 Erasure Skew, #788 Measurement Sovereignty. defines_concepts is empty on all five. The traversal was correct and the registry is incomplete. Rule D exists for a second form of the same defect: #678 SYMBOLON-02 declares 'Why these matter' and 'Why these work' as its concepts — section headings captured as terms — so a deposit that records the failure of a claim held in this corpus was invisible to both A and C. Recorded here rather than patched silently, because a rhizome that hides the holes in its own substrate is the thing this dataset is against.",
   "neighbour": "one typed hop from core, restricted to the follow set",
   "frontier": "second hop — emitted as a stolon and NOT included",
-  "select_pattern": "semantic economy|semantic proletariat|semantic capital|semantic rent|bearing.?cost|cognitive rent|semantic liquidation|labor theory|means of production|expropriat|enclosure|extraction|who pays|frame capture|asymmetrical ledger|coherence siphon|repair destabili|burden shift|reality override|interpretive enclosure|warmth capture|witness suppression|forced re-entry|unpaid|uncompensated|\\bwage\\b|\\brent\\b|dispossess",
+  "select_pattern": "semantic (?:labor|labour|capital|infrastructure|rent|liquidation|exhaustion)|semantic economy|semantic proletariat|semantic commodity|who (?:produces|extracts|benefits|pays|owns)|uncompensated|unpaid labor|volunteer labor|ghost work|data label|RLHF|content moderat|labor problem|extraction problem|enclosure problem|expropriat|dispossess|enclos|tokeniz|attribution relocation|value capture|counter-operation|mind.?control poem|symbolic labor|alienat|reif|fetish|class consciousness|commodity form|surplus|use.?value|exchange.?value|means of production|bearing.?cost|cognitive rent|semantic strike",
   "follow": [
    "consequence",
    "develops_from",
@@ -41,10 +41,10 @@
   "why_not_text_search": "A keyword pass over titles and descriptions returns 361 deposits — model collapse becomes the whole archive because everything eventually touches everything. Selection on defines_concept, a deposit's own declaration, returns a corpus."
  },
  "counts": {
-  "nodes": 278,
-  "core": 165,
-  "neighbour": 113,
-  "edges": 137,
+  "nodes": 277,
+  "core": 170,
+  "neighbour": 107,
+  "edges": 135,
   "stolons": 4
  },
  "adjacent": [
