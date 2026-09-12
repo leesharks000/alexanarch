@@ -122,7 +122,26 @@ def kind_for(content_type):
     return "unkinded" if _KINDS else None
 
 
-def role_for(text):
+def role_for(text, title=None):
+    # THE TITLE DECLARES THE SUBJECT; THE BODY DISCUSSES EVERYTHING (2026-09-12).
+    # The six economic forms of #623 §4 are interrelated by construction: a paper about RENT
+    # must discuss whose LABOR is being charged for and what INFRASTRUCTURE it is charged on.
+    # So ordered first-match over the full text misfiles systematically — "Semantic Rent,
+    # Measured" was classed semantic_infrastructure and "The Full Measurement of the SPXI Rent
+    # Event" was classed semantic_labor, because those patterns sit earlier in the order and
+    # both papers necessarily mention both things.
+    #
+    # A title is the author's own declaration of subject. It is tried first, and the body is
+    # the fallback for deposits whose titles declare nothing this vocabulary recognises.
+    # THE TITLE PASS MUST SKIP THE CATCH-ALL. `unroled` has pattern `.` and matches every
+    # title, so a first attempt at this returned unroled for any title without a form word and
+    # NEVER CONSULTED THE BODY — making the classification worse than the one it replaced. A
+    # catch-all is a floor for the whole classifier, not a participant in each pass.
+    _default = _G.get("default_role")
+    if title:
+        for r, p in ROLES:
+            if r != _default and p.search(title):
+                return r
     for r, p in ROLES:
         if p.search(text):
             return r
@@ -345,7 +364,7 @@ def main():
             # strongest defensive claim, was filed anti_collapse_mechanism.
             #
             # A rule that knows why it admitted something knows more than a regex over the text.
-            "dynamic_role": _SR["recorded_failure"] if core.get(nid) == "D" else role_for(blob),
+            "dynamic_role": _SR["recorded_failure"] if core.get(nid) == "D" else role_for(blob, d.get("title")),
             "kind": kind_for(d.get("content_type")),
             "collapse_axis": json.dumps(axes_for(blob)),
             "defines": json.dumps(sorted(why.get(nid, ()))),

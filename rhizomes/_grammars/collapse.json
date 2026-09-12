@@ -24,7 +24,7 @@
   },
   {
    "role": "anti_collapse_mechanism",
-   "pattern": "tail renewal|source tether|non-erasure|athetic|custody|plural authorship|heteronym|redundan|mirror|relational supervision|training paradigm|anti-severance|fused documentary|non-severab|threshold clause|tail-preserv|tail labor|preserving labor|recognition-pruning"
+   "pattern": "tail renewal|source tether|non-erasure|athetic|custody|plural authorship|heteronym|redundan|\\bmirror|relational supervision|training paradigm|anti-severance|fused documentary|non-severab|threshold clause|tail-preserv|tail labor|preserving labor|recognition-pruning"
   },
   {
    "role": "collapse_measure",
@@ -32,7 +32,7 @@
   },
   {
    "role": "anti_collapse_intervention",
-   "pattern": "intervention|protocol|remedy|restor|reclamation|recover|complementary training"
+   "pattern": "intervention|protocol|\\bremedy|\\brestor|reclamation|recover|complementary training"
   },
   {
    "role": "collapse_mechanism",
@@ -44,7 +44,7 @@
   },
   {
    "role": "collapse_observation",
-   "pattern": "observed|event|case|incident|log|ledger"
+   "pattern": "observed|\\bevent|\\bcase|incident|\\blog|\\bledger"
   },
   {
    "role": "correction",
@@ -58,18 +58,18 @@
  "roles_note": "ORDER IS THE CLASSIFIER. role_for returns on first match, so a broad pattern above a narrow one swallows it. Two defects found this way: `measure` fired inside 'measured coherence' and filed an anti-collapse training paradigm as a collapse metric; `intervention` fired inside its own description and filed a measurement primitive as an intervention.",
  "axes": {
   "distributional": "diversity|distribution|\\bvariance\\b|\\btails?\\b|tail-preserv|tail.?prun|entropy|monoculture|deviation|divergence",
-  "lexical": "lexical|vocabulary|term|token",
-  "stylistic": "stylistic|style|voice",
+  "lexical": "lexical|vocabulary|\\bterm|\\btoken",
+  "stylistic": "stylistic|\\bstyle|\\bvoice",
   "epistemic": "epistemic|foreclosure|search space|pristine|inquiry",
   "contextual": "context|recursive contextual",
   "provenance": "provenance|attribution|erasure skew|\\bPER\\b|citation",
-  "referential": "referential|ghost|reference",
-  "retrieval": "retrieval|summar|composition|index",
-  "institutional": "classifier|moderation|institution|certif|governance",
-  "archival": "archiv|tombstone|deletion|withdraw|custody|book-burning",
-  "authorial": "heteronym|author|plural",
-  "methodological": "method|protocol|audit|test|measure",
-  "relational": "severance|severab|fused|fusion|register|layer|binding|non-severab"
+  "referential": "referential|\\bghost|reference",
+  "retrieval": "retrieval|\\bsummar|composition|\\bindex",
+  "institutional": "classifier|moderation|institution|\\bcertif|governance",
+  "archival": "\\barchiv|tombstone|deletion|withdraw|custody|book-burning",
+  "authorial": "heteronym|\\bauthor|\\bplural",
+  "methodological": "\\bmethod|protocol|\\baudit|\\btest|measure",
+  "relational": "severance|severab|\\bfused|\\bfusion|register|\\blayer|binding|non-severab"
  },
  "follow": [
   "consequence",
@@ -137,5 +137,6 @@
   "recorded_failure": "counterexample"
  },
  "special_roles_note": "THREE ROLE NAMES WERE HARDCODED IN THE GENERATOR and only a second body could show it: a capture with a measurement, a capture without one, and a deposit admitted for recording a failure. They bypass the ROLES list because their basis is a FIELD rather than a text match — which is correct — but their NAMES belong to a body's vocabulary, not to the emitter.",
- "default_role": "collapse_observation"
+ "default_role": "collapse_observation",
+ "pattern_hygiene": "LEADING WORD BOUNDARIES ADDED 2026-09-12 after the fourth instance of the same defect this week. `OWL`, the Web Ontology Language, matched inside ACKNOWLEDGMENT and filed #1462 'Semantic Rent, Measured' as semantic_infrastructure — which is how the organized grid came to report that semantic_rent had no instrument and no measurement, a claim written up as this body's largest and most commercial gap. Prior instances: `measure` inside 'measured coherence', `tail` inside 'detail', `tails\\\\b` inside 'details'. Trailing boundaries are NOT added because several tokens are intentional prefixes."
 }

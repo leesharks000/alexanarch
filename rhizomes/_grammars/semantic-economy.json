@@ -22,34 +22,34 @@
  "what": "The archive's political economy of meaning, seeded at the stolon the collapse body left open. Its roles are NOT the collapse roles: where that body asks what narrows, this one asks who gains by the narrowing.",
  "vocabulary_source": "REBUILT FROM THE DEFINING PAPERS, 2026-09-12. v0.1 scoped this body to the ten numbered extraction operators of #27 Operative Architecture. Those are ONE REGION — §3.2, the extraction problem — of a framework that has three (§3.1 labor, §3.2 extraction, §3.3 enclosure) and six economic forms. The scoping was done by pattern-matching vocabulary rather than by reading what the framework says it covers.\n\n#623 SEMANTIC INFRASTRUCTURE: FROM TIM BERNERS-LEE TO THE SEMANTIC ECONOMY is the bridge paper and its §4 IS the filter — a mapping from technical operations to economic forms: ontology engineering as semantic LABOR, knowledge graphs as semantic CAPITAL, standards as semantic INFRASTRUCTURE, knowledge-panel and API use as semantic RENT, model ingestion as semantic LIQUIDATION, maintenance failure and recursive degradation as semantic EXHAUSTION.\n\n#255 SEMANTIC LIQUIDATION: AN EXECUTIVE SUMMARY supplies the operation's internal structure — three properties (irreversibility, value transfer, invisibility) and five stages (tokenization, stripping, attribution relocation, value capture, closure).\n\n#24 MIND-CONTROL POEMS supplies the counter-operation: alienation extended into the symbolic infrastructure through which labor, recognition and desire become thinkable, and the liberatory poem as a symbolic counter-operation that interrupts conditioning and restores contact with relation and historical possibility.",
  "select": {
-  "pattern": "semantic (?:labor|labour|capital|infrastructure|rent|liquidation|exhaustion)|semantic economy|semantic proletariat|semantic commodity|who (?:produces|extracts|benefits|pays|owns)|uncompensated|unpaid labor|volunteer labor|ghost work|data label|RLHF|content moderat|labor problem|extraction problem|enclosure problem|expropriat|dispossess|enclos|tokeniz|attribution relocation|value capture|counter-operation|mind.?control poem|symbolic labor|alienat|reif|fetish|class consciousness|commodity form|surplus|use.?value|exchange.?value|means of production|bearing.?cost|cognitive rent|semantic strike",
+  "pattern": "semantic (?:labor|\\blabour|capital|infrastructure|\\brent|liquidation|exhaustion)|semantic economy|semantic proletariat|semantic commodity|who (?:produces|extracts|benefits|\\bpays|owns)|uncompensated|unpaid labor|volunteer labor|ghost work|data label|\\bRLHF|content moderat|labor problem|extraction problem|enclosure problem|expropriat|dispossess|enclos|tokeniz|attribution relocation|value capture|counter-operation|mind.?control poem|symbolic labor|alienat|reif|\\bfetish|class consciousness|commodity form|surplus|use.?value|exchange.?value|means of production|bearing.?cost|cognitive rent|semantic strike",
   "flags": "I",
   "note": "Built from the defining papers' own articulations rather than from vocabulary frequency. The six economic forms are #623 §4; the accounting questions are §7; the five stages are #255; the counter-operation is #24. A term is here because a founding paper uses it to do theoretical work, not because it recurs."
  },
  "roles": [
   {
    "role": "semantic_labor",
-   "pattern": "semantic (?:labor|labour)|ontology engineer|volunteer labor|ghost work|data label|RLHF|content moderat|unpaid|uncompensated|symbolic labor|who produces",
+   "pattern": "semantic (?:labor|labour)|ontology engineer|volunteer labor|ghost work|data label|\\bRLHF|content moderat|\\bunpaid|uncompensated|symbolic labor|who produces",
    "note": "#623 §4.1 — ontology engineering as semantic labor. Who does the work the value is taken from."
   },
   {
    "role": "semantic_capital",
-   "pattern": "semantic capital|knowledge graph|accumulated|structured knowledge|asset|holding|stock of",
+   "pattern": "semantic capital|knowledge graph|accumulated|structured knowledge|\\basset|holding|stock of",
    "note": "#623 §4.2 — knowledge graphs as semantic capital. Accumulated structured meaning, owned."
   },
   {
    "role": "semantic_infrastructure",
-   "pattern": "semantic infrastructure|standard|RDF|OWL|SHACL|SPARQL|schema\\.org|protocol|specification|registry|identifier system",
+   "pattern": "semantic infrastructure|standard|\\bRDF|\\bOWL|\\bSHACL|\\bSPARQL|schema\\.org|protocol|specification|registry|identifier system",
    "note": "#623 §4.3 — standards as infrastructure. What everyone builds on and nobody is paid for."
   },
   {
    "role": "semantic_rent",
-   "pattern": "semantic rent|cognitive rent|knowledge panel|\\bAPI\\b|toll|gatekeep|intermediat|rent-seek|extract value from",
+   "pattern": "semantic rent|cognitive rent|\\brent\\b|knowledge panel|\\bAPI\\b|\\btoll|gatekeep|intermediat|rent-seek|extract value from",
    "note": "#623 §4.4 — knowledge-panel and API use as rent. Charging for access to what was given."
   },
   {
    "role": "semantic_liquidation",
-   "pattern": "semantic liquidation|liquidat|model ingestion|tokeniz|attribution relocation|value capture|strip|irreversib",
+   "pattern": "semantic liquidation|liquidat|model ingestion|tokeniz|attribution relocation|value capture|\\bstrip|irreversib",
    "note": "#623 §4.4 and #255 — conversion of situated meaning into retrievable units, destroying context or authorship. Five stages, three properties."
   },
   {
@@ -59,7 +59,7 @@
   },
   {
    "role": "counter_operation",
-   "pattern": "counter-operation|mind.?control poem|interrupt|restore contact|refus|reclaim|strike|withhold|commons repair|non-cooperat",
+   "pattern": "counter-operation|mind.?control poem|interrupt|restore contact|refus|reclaim|\\bstrike|withhold|commons repair|non-cooperat",
    "note": "#24 — the symbolic counter-operation. Not compensation alone; commons repair."
   },
   {
@@ -69,12 +69,12 @@
   },
   {
    "role": "instance",
-   "pattern": "capture|transcript|observed|recorded|rendered|panel|on a date",
+   "pattern": "capture|transcript|observed|recorded|rendered|\\bpanel|on a date",
    "note": "an observed occurrence in the composition layer. Evidence that the operation ran, not a claim about which form it took."
   },
   {
    "role": "analysis",
-   "pattern": "theory|thesis|framework|argument|account|critique|reading|principle",
+   "pattern": "\\btheory|\\bthesis|framework|argument|account|critique|reading|principle",
    "note": "the body thinking about itself"
   },
   {
@@ -85,14 +85,14 @@
  ],
  "roles_note": "ORDER IS THE CLASSIFIER and the order here is the mapping's own: labor, capital, infrastructure, rent, liquidation, exhaustion — the sequence #623 §4 uses, which runs from what is produced to what is destroyed. counter_operation and accounting follow because they act on the six rather than being among them.",
  "axes": {
-  "who_produces": "labor|labour|worker|volunteer|contributor|author|maintain|craft|care",
-  "who_extracts": "extract|siphon|harvest|scrape|ingest|mine|appropriat|platform|corporat",
-  "who_benefits": "benefit|profit|revenue|market cap|earnings|monetiz|capture value|shareholder",
-  "what_is_destroyed": "destroy|strip|erase|deplet|exhaust|collapse|degrad|lost|cancel",
-  "what_is_enclosed": "enclos|gate|wall|licens|proprietar|paywall|terms|restrict",
+  "who_produces": "\\blabor|\\blabour|\\bworker|volunteer|contributor|\\bauthor|maintain|\\bcraft|\\bcare",
+  "who_extracts": "extract|siphon|harvest|\\bscrape|\\bingest|\\bmine|appropriat|platform|corporat",
+  "who_benefits": "benefit|\\bprofit|revenue|market cap|earnings|monetiz|capture value|shareholder",
+  "what_is_destroyed": "destroy|\\bstrip|\\berase|deplet|exhaust|collapse|degrad|\\blost|\\bcancel",
+  "what_is_enclosed": "enclos|\\bgate|\\bwall|\\blicens|proprietar|paywall|\\bterms|restrict",
   "irreversibility": "irreversib|cannot be undone|permanent|no return|unrecover",
-  "invisibility": "invisib|unseen|hidden|unmarked|unattributed|silent|ghost",
-  "commons": "commons|public|shared|open|collective|mutual|repair"
+  "invisibility": "invisib|\\bunseen|\\bhidden|unmarked|unattributed|\\bsilent|\\bghost",
+  "commons": "commons|\\bpublic|\\bshared|\\bopen|collective|\\bmutual|\\brepair"
  },
  "follow": [
   "measures",
@@ -187,20 +187,24 @@
  ],
  "organized": {
   "measured_at": "2026-09-12",
-  "axes": [
-   "dynamic_role — the economic form a deposit NAMES, from #623 §4",
-   "kind — the work a deposit DOES, normalised from the archive's content_type"
-  ],
   "totals": {
-   "theory": 22,
-   "specification": 20,
-   "instrument": 7,
-   "measurement": 48,
-   "practice": 3,
-   "carrier": 13,
-   "work": 10
+   "theory": 51,
+   "specification": 44,
+   "instrument": 15,
+   "measurement": 52,
+   "practice": 9,
+   "carrier": 29,
+   "work": 18
   },
-  "reading": "THE THIN COLUMNS ARE THE FINDING. 7 instruments and 3 practices against 48 measurements: the body measures far more than it has instruments to measure with, which is consistent with PER doing most of the work alone and with #137 §11's claim that the instrument 'is one operator in a standing system' — a system with seven members.\n\nSEMANTIC_RENT HAS NO INSTRUMENT AND NO MEASUREMENT. Knowledge-panel and API use is the mechanism by which value is captured — #623 §4.4 — and this body can argue about it and cannot measure it. That is the largest single gap the grid exposes and it is directly commercial: rent is where the money is, and it is the one form with no meter.\n\nSEMANTIC_INFRASTRUCTURE IS BUILT RATHER THAN ARGUED — 11 specifications against 6 theory, the most built-out region. SEMANTIC_LIQUIDATION IS THE REVERSE: 5 works against 1 theory, the operation written through more than written about. accounting is 34 measurements and nothing else, which is correct — it is an instrument's output, not an argument.",
-  "caution": "The kind axis is normalised from a free-text field by an ordered regex mapping. It covers every deposit in this body and zero fall to `unkinded`, but coverage is not accuracy: a deposit whose content_type says 'Theoretical paper' is filed as theory on the strength of its own label."
- }
+  "correction": "THE FIRST GRID WAS WRONG ABOUT ITS OWN HEADLINE. It reported semantic_rent with NO INSTRUMENT AND NO MEASUREMENT and I wrote that up as the body's largest gap and its most commercial one — rent is where the money is and it has no meter. Two defects produced it. Rules E/V/O were declared only on the MMRS grammar, so this body ran on rule A alone and a paper titled 'Semantic Rent, Measured' whose declared concepts omit the phrase was invisible. And `OWL` matched inside ACKNOWLEDGMENT, filing that paper as semantic_infrastructure once it did enter. The rent measurement existed the whole time: #1462 the four-term model, #1470 the full measurement of the SPXI rent event of 14 August 2026, #1479 its computation record, #1465 Position Is Not Class.",
+  "reading": "With both fixed, semantic_rent carries theory and a measurement. The thin columns that remain — instrument and practice — are thin across the whole body and not in one form."
+ },
+ "core_principles": {
+  "vocabulary": {
+   "bounded_by": "deposit also declares at least one concept",
+   "basis": "pattern-detected",
+   "caution": "ADDED 2026-09-12 AFTER THE GRID LIED. The organized grid reported that semantic_rent had NO INSTRUMENT AND NO MEASUREMENT, and I wrote that up as the body's largest gap and its most commercial one. It was an artifact. #1462 'Semantic Rent, Measured: Use, Acknowledgment, Discount, Supply', #1470 'One Transcript, Whole Stack: The Full Measurement of the SPXI Rent Event', #1479 its computation record and #1465 'Position Is Not Class' were all ACTIVE, all matched the select pattern on their titles, and all were ABSENT — because this grammar declared no core_principles, so rule V never ran and the body was selected by rule A alone, which matches DECLARED CONCEPTS rather than titles. A paper called 'Semantic Rent, Measured' whose declared concepts do not use the phrase was invisible to a body about semantic rent."
+  }
+ },
+ "pattern_hygiene": "LEADING WORD BOUNDARIES ADDED 2026-09-12 after the fourth instance of the same defect this week. `OWL`, the Web Ontology Language, matched inside ACKNOWLEDGMENT and filed #1462 'Semantic Rent, Measured' as semantic_infrastructure — which is how the organized grid came to report that semantic_rent had no instrument and no measurement, a claim written up as this body's largest and most commercial gap. Prior instances: `measure` inside 'measured coherence', `tail` inside 'detail', `tails\\\\b` inside 'details'. Trailing boundaries are NOT added because several tokens are intentional prefixes."
 }
