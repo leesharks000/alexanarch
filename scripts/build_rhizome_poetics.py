@@ -25,7 +25,7 @@ membership, and each carries what it admitted, what it refused, and what it cost
 """
 import json, pathlib, datetime, collections
 
-MAXIM = "all things are now lawful to you in christ jesus"
+MAXIM = "all things are now lawful to you in jack feist"
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 RHI = ROOT / "rhizomes/model-collapse-anti-collapse"
