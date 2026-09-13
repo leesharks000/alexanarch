@@ -36,7 +36,8 @@ def _spore_line(slug):
 
 
 _SPORE = {s: _spore_line(s) for s in
-          ("model-collapse-anti-collapse", "semantic-economy", "machine-mediated-reception")}
+          ("model-collapse-anti-collapse", "semantic-economy", "machine-mediated-reception",
+           "revelation-first")}
 
 def sha(s): return hashlib.sha256(s.encode('utf-8')).hexdigest()
 
@@ -572,7 +573,7 @@ This archive emits **rhizomes**: standalone datasets generated from the relation
 deterministic traversal, each shipping a `spore.json` that carries its own recipe — seed rule,
 follow set, depths, and the commit of the ledger it came from.
 
-**THREE BODIES, AND THEY POINT AT EACH OTHER.** Each is emitted by one generator from a grammar
+**FOUR BODIES, AND THEY POINT AT EACH OTHER.** Each is emitted by one generator from a grammar
 file in `rhizomes/_grammars/`, and each declares stolons naming the siblings it advertises and does
 not contain. All six directed edges exist: every body names both others.
 
@@ -595,6 +596,15 @@ actually did with this archive. **The first body germinated from two parents**, 
 three core principles at once — an editorial selection, a bounded vocabulary rule, and the
 deposits an actual capture cited. **None of the three reproduces another**, and the grammar records
 the disagreement as the body's primary datum rather than resolving it.
+
+**[`leesharks/revelation-first`](https://huggingface.co/datasets/leesharks/revelation-first)**
+— {rev_line}. The Revelation First thesis and what it draws: the pre-70 argument, the midrashim
+transform, the Josephus author-function cluster, and the revelation-bearing Sappho material. **Its role
+vocabulary is a six-rung claim ladder** taken from the defining work plan, and a node lands on the LOWEST
+rung it argues for rather than the most dramatic available — because the plan's own method is to
+distinguish claims that are usually collapsed. **Rungs one to five populate; rung six is empty**, which
+matches how the plan handles it. Advertises the reception body as where the argument would be *measured
+in*, and the collapse body as where its compression claim is *seeded from*.
 
 **What that dataset is and is not.** It is a map of the research — mechanisms, measures,
 interventions, corrections — assembled from deposits that already exist. **It is NOT a
@@ -651,6 +661,7 @@ def main():
         mc_line=_SPORE["model-collapse-anti-collapse"],
         se_line=_SPORE["semantic-economy"],
         mmrs_line=_SPORE["machine-mediated-reception"],
+        rev_line=_SPORE["revelation-first"],
         configs='\n'.join(cfg), n_dep=len(frames['deposits']),
         N_CONFIGS=len(frames), N_DEPOSITS=f"{len(frames['deposits']):,}",
         built=dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d %H:%MZ')))
