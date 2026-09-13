@@ -3,29 +3,29 @@
   "name": "Capture ↔ Deposit Link Map",
   "description": "Edges between EA-WG-CAPTURES-01 (the AI Overview / AI Mode Capture Registry, authored at machinemediation.org) and the Alexanarch deposit corpus. Produced by scripts/resolve_capture_links.py. Each edge records the resolution method so any confidence tier can be discarded. An edge asserts that the capture entry references, or its query matches, the deposit — not that the deposit is the capture's sole subject; exactly one edge per capture is marked primary, ranked by evidence of aboutness rather than by identifier hardness (a DOI can be cited in passing). Deposit-number mentions are deliberately excluded as unsafe. Unresolved captures are enumerated rather than silently dropped.",
   "generated_by": "scripts/resolve_capture_links.py",
-  "generated_at": "2026-09-11T16:46:05Z",
+  "generated_at": "2026-09-13T00:00:09Z",
   "captures_source": {
     "file": "data/EA-WG-CAPTURES-01.json",
     "version": "11.7",
     "date": "2026-09-05",
-    "total_captures": 425,
+    "total_captures": 426,
     "canonical_home": "https://www.machinemediation.org/data/registry.json",
-    "sha256": "24c6c1519a7346874f9fc8e43c1694b25bed32ba746e44c95f54af0080fa09a5"
+    "sha256": "15b042e957d8e34a9ebcb8d4f61a06dac2575b2e032eed53c9015eb7861a7ef8"
   },
   "totals": {
-    "captures": 425,
+    "captures": 426,
     "captures_linked": 226,
-    "captures_unresolved": 199,
-    "link_rate": 0.5318,
-    "edges": 533
+    "captures_unresolved": 200,
+    "link_rate": 0.5305,
+    "edges": 536
   },
   "method_counts": {
     "hard/axn": 57,
     "hard/doi": 31,
     "hard/series": 30,
     "soft/title": 219,
-    "soft/keyword": 73,
-    "soft/description": 36,
+    "soft/keyword": 74,
+    "soft/description": 38,
     "soft/body": 87
   },
   "severance_rollup": {
@@ -226,6 +226,16 @@
           "evidence": "naming-gap reflex",
           "primary": false,
           "doi_status": null
+        },
+        {
+          "deposit_number": 1609,
+          "axn": "AXN:0699.UNCLASSIFIED.🔻⚫⛩️🔄🟡🙏",
+          "title": "The Recoding of a Distinction: Conceptual Entrance Before and After a Substrate Loss, with a Schizoanalytic Reading of What Erasure Produces",
+          "record_url": "https://www.alexanarch.org/s/records/1609/",
+          "method": "soft/description",
+          "evidence": "naming-gap reflex",
+          "primary": false,
+          "doi_status": null
         }
       ]
     },
@@ -278,6 +288,16 @@
           "axn": "AXN:0363.ARCHIVAL.👁️‍🗨️🚀💙🏗️🌈🕚",
           "title": "Sémantique Potentielle — Release 4: Model Collapse Triptych Block Lee Sharks · Johannes Sigil Grammata: Journal of Opera",
           "record_url": "https://www.alexanarch.org/s/records/854/",
+          "method": "soft/description",
+          "evidence": "solution-space diversity",
+          "primary": false,
+          "doi_status": null
+        },
+        {
+          "deposit_number": 1609,
+          "axn": "AXN:0699.UNCLASSIFIED.🔻⚫⛩️🔄🟡🙏",
+          "title": "The Recoding of a Distinction: Conceptual Entrance Before and After a Substrate Loss, with a Schizoanalytic Reading of What Erasure Produces",
+          "record_url": "https://www.alexanarch.org/s/records/1609/",
           "method": "soft/description",
           "evidence": "solution-space diversity",
           "primary": false,
@@ -3875,6 +3895,16 @@
           "title": "Machine-Mediated Resistance Literature: From the Worker C Skills File to the Phase X Retrieval Line (v1.2)",
           "record_url": "https://www.alexanarch.org/s/records/1066/",
           "method": "soft/title",
+          "evidence": "machine-mediated resistance literature",
+          "primary": false,
+          "doi_status": null
+        },
+        {
+          "deposit_number": 1610,
+          "axn": "AXN:069A.GENERATIVE.🥁🏔️🌋🟤○🔃",
+          "title": "The Anti-Summary Test Applied to a Reception: Transmission Fidelity Is Back-Projection Yield",
+          "record_url": "https://www.alexanarch.org/s/records/1610/",
+          "method": "soft/keyword",
           "evidence": "machine-mediated resistance literature",
           "primary": false,
           "doi_status": null
@@ -10013,6 +10043,11 @@
       "slug": "provenance-erasure-rate-20260911",
       "q": "provenance erasure rate",
       "date": "2026-09-11"
+    },
+    {
+      "slug": "what-is-lee-sharks-worth-what-is-the-estimat-20260912",
+      "q": "what is lee sharks worth? / what is the estimated worth of his semantic infrastructure? / yes, lets do so",
+      "date": "2026-09-12"
     },
     {
       "slug": "20260803-alexanarch-symbolon-incognito",
