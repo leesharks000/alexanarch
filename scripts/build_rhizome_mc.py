@@ -67,6 +67,14 @@ STOLONS = _G["stolons"] or []
 # germinates, and the germinated body needs its own name before it has anything else.
 _B = _G["body"]
 _SR = _G.get("special_roles", {})
+# CAPTURES MAY BE GATED ON THE BODY'S OWN SUBJECT (2026-09-13). Without a gate, a body
+# inherits the whole registry: the first emission of the Revelation body admitted 170
+# captures against 93 deposits, 47% of the nodes, with titles like "∮ = 1" — symbolon
+# measurements bearing on nothing in that body. A capture arm is an empirical arm only if
+# its captures are empirical about THIS subject.
+# Bodies that declare no gate keep the prior behaviour, so the collapse and economy
+# bodies are unaffected.
+_CAPGATE = re.compile(_G["capture_gate"], re.I) if _G.get("capture_gate") else None
 # A SECOND AXIS (2026-09-12). `dynamic_role` says what a deposit NAMES; `kind` says what work
 # it DOES. They are orthogonal — an instrument that measures liquidation is both — and a body
 # that cannot tell an argument from a measurement cannot be read for either.
@@ -293,6 +301,9 @@ def main():
     # did; it does not propose a mechanism or an intervention. Where a capture measured
     # something it carries collapse_measure instead, on the PER field rather than on words.
     caps = json.loads((ROOT / "data/EA-WG-CAPTURES-01.json").read_text(encoding="utf-8"))["entries"]
+    if _CAPGATE is not None:
+        caps = [c for c in caps
+                if _CAPGATE.search(" ".join(str(c.get(k) or "") for k in ("q", "d", "analysis")))]
     links = json.loads((ROOT / "data/capture-deposit-links.json").read_text(encoding="utf-8"))
     # THE RESOLVER NESTS THE DEPOSITS UNDER A `deposits` KEY, one level deeper than a
     # first pass assumed — which produced an empty link map and zero capture edges while

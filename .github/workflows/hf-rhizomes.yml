@@ -48,6 +48,9 @@ jobs:
           - slug: machine-mediated-reception
             grammar: rhizomes/_grammars/machine-mediated-reception.json
             repo_var: HF_RHIZOME_MMRS_REPO
+          - slug: revelation-first
+            grammar: rhizomes/_grammars/revelation-first.json
+            repo_var: HF_RHIZOME_REV_REPO
     steps:
       - name: Debounce — let a burst of merges settle
         if: ${{ github.event_name == 'push' }}
