@@ -18,6 +18,26 @@ import json, re, sys, os, hashlib, argparse, pathlib, html
 import pandas as pd
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
+
+# SPORE COUNTS ARE READ AT BUILD TIME, NOT WRITTEN INTO THIS FILE (2026-09-12).
+# The parent card carried "222 nodes, 140 typed edges" for a body that had grown to 563 and
+# 367, and named two of the three bodies when three existed. A hand-maintained count in a
+# generator goes stale the first time the thing it counts is rebuilt, which is the whole
+# reason the rhizomes emit a spore.json in the first place.
+def _spore_line(slug):
+    import json as _j, pathlib as _p
+    f = _p.Path(__file__).resolve().parent.parent / "rhizomes" / slug / "spore.json"
+    if not f.exists():
+        return slug
+    s = _j.loads(f.read_text(encoding="utf-8"))
+    c = s.get("counts") or {}
+    n, e, st = c.get("nodes"), c.get("relations") or c.get("edges"), c.get("stolons")
+    return f'{s.get("rhizome_id", slug)}. {n} nodes, {e} typed edges, {st} stolons'
+
+
+_SPORE = {s: _spore_line(s) for s in
+          ("model-collapse-anti-collapse", "semantic-economy", "machine-mediated-reception")}
+
 def sha(s): return hashlib.sha256(s.encode('utf-8')).hexdigest()
 
 def strip_html(h):
@@ -552,10 +572,29 @@ This archive emits **rhizomes**: standalone datasets generated from the relation
 deterministic traversal, each shipping a `spore.json` that carries its own recipe — seed rule,
 follow set, depths, and the commit of the ledger it came from.
 
+**THREE BODIES, AND THEY POINT AT EACH OTHER.** Each is emitted by one generator from a grammar
+file in `rhizomes/_grammars/`, and each declares stolons naming the siblings it advertises and does
+not contain. All six directed edges exist: every body names both others.
+
 **[`leesharks/model-collapse-anti-collapse`](https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse)**
-— EA-RHIZOME-MC-01. 222 nodes, 140 typed edges, 7 stolons. The archive's model-collapse and
-anti-collapse material as a bipolar field, with every node carrying a collapse axis and a dynamic
-role rather than a boolean.
+— {mc_line}. What narrows, and what resists narrowing.
+Every node carries a collapse axis and a dynamic role rather than a boolean. Advertises
+`semantic-economy` as the political economy it is *situated in*, and `machine-mediated-reception`
+as where it is *observed in*.
+
+**[`leesharks/semantic-economy`](https://huggingface.co/datasets/leesharks/semantic-economy)**
+— {se_line}. Who produces, who extracts, who benefits. Its role
+vocabulary is the six economic forms of the archive's own bridge paper — labor, capital,
+infrastructure, rent, liquidation, exhaustion — read out of a deposit that declares them rather
+than authored by the emitter. Advertises the collapse body as what *narrows* its subject, and the
+reception body as where it is *transacted in*.
+
+**[`leesharks/machine-mediated-reception`](https://huggingface.co/datasets/leesharks/machine-mediated-reception)**
+— {mmrs_line}. What composition surfaces
+actually did with this archive. **The first body germinated from two parents**, and it runs on
+three core principles at once — an editorial selection, a bounded vocabulary rule, and the
+deposits an actual capture cited. **None of the three reproduces another**, and the grammar records
+the disagreement as the body's primary datum rather than resolving it.
 
 **What that dataset is and is not.** It is a map of the research — mechanisms, measures,
 interventions, corrections — assembled from deposits that already exist. **It is NOT a
@@ -609,6 +648,9 @@ def main():
     # said "fourteen configurations" against a YAML declaring twenty-one, and carried a
     # search-index deposit count of 1,594 beside a newer one. Both now come from the build.
     (out/'README.md').write_text(CARD.format(
+        mc_line=_SPORE["model-collapse-anti-collapse"],
+        se_line=_SPORE["semantic-economy"],
+        mmrs_line=_SPORE["machine-mediated-reception"],
         configs='\n'.join(cfg), n_dep=len(frames['deposits']),
         N_CONFIGS=len(frames), N_DEPOSITS=f"{len(frames['deposits']):,}",
         built=dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d %H:%MZ')))
