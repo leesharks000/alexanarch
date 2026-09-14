@@ -17,7 +17,7 @@ The archive's political economy of meaning, seeded at the stolon the collapse bo
 
 ## Counts
 
-**477** nodes · **345** core · **132** neighbour · **230** edges · **4** stolons
+**478** nodes · **346** core · **132** neighbour · **231** edges · **5** stolons
 
 ## It was advertised before it existed
 
@@ -79,6 +79,8 @@ A node matching nothing falls to `unroled`, whose count is this grammar's own er
   the captures are where the economy is observable; 425 of them are not reproduced here
 - **`heteronyms`** — `laboured_by` from `concept:heteronymic-plurality`
   who does the work when the author is twelve
+- **`revelation-first`** — `settled_in` from `concept:documentary-authority`
+  A DOCUMENTARY-AUTHORITY SETTLEMENT AT SCALE. The Domitianic consensus is a claim about which witness counts, decided by whom, and at what point it stopped being questioned — the same four powers this body measures, applied to a chronology rather than a form. Its primary external anchor is a late and ambiguous reception-history witness, and that is an admissibility question. This body does not adjudicate it.
 
 ## Reproducing it
 
