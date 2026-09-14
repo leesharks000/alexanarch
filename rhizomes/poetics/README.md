@@ -17,7 +17,7 @@ Pearl and Other Poems as its own graph: 42 pieces across four sections, the edge
 
 ## Counts
 
-**84** nodes · **42** core · **0** neighbour · **23** edges · **7** stolons
+**99** nodes · **42** core · **0** neighbour · **31** edges · **7** stolons
 
 ## Roles
 
@@ -25,6 +25,7 @@ Pearl and Other Poems as its own graph: 42 pieces across four sections, the edge
 
 | role | what it names |
 | --- | --- |
+| `passage` | a located span; assigned by the passage layer, not by pattern |
 | `undersong` | a piece that elaborates another piece in the same book. Three Undersongs and a Footnote, all attached to PEARL. |
 | `essay` | the appendix: essays, manifestos, minutiae |
 | `apparatus` | front matter. Note that two of six are by heteronyms — Sigil introduces, Feist supplies from THE CRIMSON HEXAGON. |
