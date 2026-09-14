@@ -365,6 +365,39 @@ def main():
     # A grammar declaring `work_primitives` seats the pieces instead — poems, essays,
     # manifestos — from a work dataset, with the edges the book itself makes. Outward edges
     # come after. Bodies declaring none are unaffected.
+    # CURATED PRIMITIVES (2026-09-14). A body may declare its membership by hand instead of
+    # by pattern. The provenance-erasure body needed this: the word "provenance" does two
+    # unrelated jobs in this archive — the framework, and the ~100 heteronym and canon
+    # PROVENANCE DOCUMENTS — and no regex separates them. Three sweeps admitted both.
+    # Where `curated_primitives` is declared, the named deposits ARE the body.
+    _CUR = _G.get("curated_primitives")
+    cur_rows = []
+    if _CUR:
+        _cs = json.loads((ROOT / _CUR["source"]).read_text(encoding="utf-8"))
+        for _div, _v in _cs["the_framework"].items():
+            for _num, _why in _v["deposits"].items():
+                _n = int(_num)
+                _d = reg.get(_n, {})
+                cur_rows.append({
+                    "rhizome_node_id": _B["node_prefix"] + ":" + hashlib.sha256(str(_n).encode()).hexdigest()[:10],
+                    "graph_node_id": f"deposit:{_n}",
+                    "deposit_number": _n,
+                    "title": _d.get("title"),
+                    "node_type": "deposit",
+                    "region": _div,
+                    "core_rule": "H",
+                    "entered_by": "[read and sorted by hand: " + _why[:110] + "]",
+                    "dynamic_role": _div,
+                    "kind": _v.get("what"),
+                    "collapse_axis": json.dumps(axes_for(str(_d.get("title") or "")), ensure_ascii=False),
+                    "defines": None,
+                    "creator": _d.get("creator"),
+                    "date": _d.get("date"),
+                    "evidence_status": str(_d.get("status") or "ACTIVE"),
+                    "axn": _d.get("hex"),
+                    "source_uri": f"https://www.alexanarch.org/s/records/{_n}/",
+                })
+
     _WORK = _G.get("work_primitives")
     work_rows, work_rels = [], []
     if _WORK:
@@ -399,6 +432,14 @@ def main():
 
     # EXCLUSIVE WORK PRIMITIVES: the pieces are the body, and the deposit sweep is skipped
     # entirely. Keeping both gave 289 nodes of which 247 were the sweep this rebuild replaces.
+    if _CUR:
+        # The curated set is the body — no sweep, no neighbours — BUT THE LEDGER STILL
+        # APPLIES. A first wiring cleared `included` outright and emitted 71 nodes with
+        # ZERO EDGES: a reading list, not a body. The declared relations between these
+        # deposits are the archive's own and belong here.
+        included = set()
+        _CURIDS = {"deposit:%d" % r["deposit_number"] for r in cur_rows}
+
     if _WORK and _WORK.get("exclusive"):
         # EXCLUSIVE MEANS NO DEPOSIT SWEEP, NOT NO CAPTURES. A first pass cleared `included`
         # outright and dropped the 21 captures that name this book alongside the 98 that did
@@ -413,7 +454,7 @@ def main():
         included = included & _keep
 
     # ---- rows
-    rows = list(work_rows)
+    rows = list(cur_rows) + list(work_rows)
     for nid in sorted(included):
         n = N.get(nid, {})
         dep = int(nid.split(":")[1]) if nid.startswith("deposit:") and nid.split(":")[1].isdigit() else None
@@ -469,7 +510,8 @@ def main():
     # ---- edges internal to the body
     edges = []
     for e in E:
-        if e["source_id"] in included and e["target_id"] in included:
+        _ES = _CURIDS if _CUR else included
+        if e["source_id"] in _ES and e["target_id"] in _ES:
             a = A.get(e["relation_id"], {})
             edges.append({**{k: e[k] for k in ("relation_id", "source_id", "predicate", "target_id",
                                                "target_type", "basis", "status", "note")},
@@ -493,7 +535,7 @@ def main():
                               "the tested model continued to separate fused registers")]
     for src, tgt, note in DISCONFIRMS:
         a, b = f"deposit:{src}", f"deposit:{tgt}"
-        if a in included and b in included:
+        if a in (_CURIDS if _CUR else included) and b in (_CURIDS if _CUR else included):
             edges.append({"relation_id": None, "source_id": a, "predicate": "disconfirms",
                           "target_id": b, "target_type": "deposit", "basis": "editorial",
                           "status": "current", "note": note, "asserted_by": "editor:cha",
