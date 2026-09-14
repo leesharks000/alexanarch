@@ -390,7 +390,17 @@ def main():
     # EXCLUSIVE WORK PRIMITIVES: the pieces are the body, and the deposit sweep is skipped
     # entirely. Keeping both gave 289 nodes of which 247 were the sweep this rebuild replaces.
     if _WORK and _WORK.get("exclusive"):
-        included = set()
+        # EXCLUSIVE MEANS NO DEPOSIT SWEEP, NOT NO CAPTURES. A first pass cleared `included`
+        # outright and dropped the 21 captures that name this book alongside the 98 that did
+        # not — removing everything when only the unrelated ones were the problem.
+        _cw = (_WORK.get("captures") or {})
+        _keep = set()
+        if _cw.get("admit"):
+            _cg = re.compile(_cw["gate"], re.I)
+            for _c in caps:
+                if _cg.search(" ".join(str(_c.get(k) or "") for k in ("q", "d", "analysis"))):
+                    _keep.add("capture:" + _c["slug"])
+        included = included & _keep
 
     # ---- rows
     rows = list(work_rows)
@@ -493,6 +503,24 @@ def main():
     # structure — an Undersong elaborates the poem it undersings, an appendix essay names
     # the poem in its title — not derived from the relation ledger, which knows nothing
     # about the inside of a book.
+    # OUTWARD EDGES: a capture that names a piece links to the piece it read.
+    _lp = ((_WORK or {}).get("captures") or {}).get("link_to_pieces") or {}
+    if _lp:
+        _byt = {pc["title"]: pc["piece_id"] for pc in (json.loads((ROOT / _WORK["source"]).read_text(encoding="utf-8"))["pieces"])}
+        for _c in caps:
+            cid = "capture:" + _c["slug"]
+            if cid not in included:
+                continue
+            blob = " ".join(str(_c.get(k) or "") for k in ("q", "d")).lower()
+            for _kw, _title in (_lp if isinstance(_lp, list) else list(_lp.items())):
+                if _kw in blob and _title in _byt:
+                    edges.append({"relation_id": None, "source_id": cid, "predicate": "read",
+                                  "target_id": _byt[_title], "target_type": "piece",
+                                  "basis": "capture names the piece", "status": "current",
+                                  "note": "outward edge: a machine's reading, back to the poem",
+                                  "asserted_by": "process:poetics-grammar", "rhizome_role": "read"})
+                    break
+
     for wr in work_rels:
         edges.append({"relation_id": None, "source_id": wr["from"], "predicate": wr["predicate"],
                       "target_id": wr["to"], "target_type": "piece",

@@ -1,7 +1,7 @@
 {
  "maxim": "all things are now lawful to you in jack feist",
  "dataset_id": "EA-PEARL-01",
- "version": "0.1",
+ "version": "0.2",
  "generated": "2026-09-14",
  "work": {
   "title": "Pearl and Other Poems",
@@ -15,7 +15,7 @@
   "canonical_deposit": "#1121 · AXN:0472",
   "license": "CC-BY-4.0, by the author"
  },
- "what": "PEARL AS ITS OWN GRAPH. The primitive row is a PIECE — a poem, an essay, a manifesto — not a deposit about the book. Edges are within the book first: the Undersongs elaborate PEARL, the Footnote elaborates PEARL, Sigil's essay in the appendix is explicitly about Sharks' Pearl, the Forum Post answers the opening RE:. Outward edges come after, and are not in this version.",
+ "what": "Pearl and Other Poems as its own graph. The primitive row is a PIECE — 42 of them across four sections — with the edges the book itself makes, the epigraphs it carries, the works it lists under conflicting attributions, and the literary-historical diagram in which it places its own authors.",
  "why_this_replaces_the_first_attempt": "The first poetics body took the archive's generic spore shape — deposits, concepts, captures — and applied it to a poetry collection. THE RESULT WAS A BODY WHOSE NODES WERE DOCUMENTS ABOUT PEARL AND WHOSE CAPTURES POSTDATED IT BY TWELVE YEARS, including concepts and heteronyms that did not exist when the book was made. It did not look as though the book had been read, because it had not been.\n\nA poetry collection's primitives are its poems.",
  "the_dedication": "PAGE 5, 2014: 'for Jack Feist, secret hero of these poems, who gave off a brazen clangor of brain in eighteen books composed in half as many seconds, inventing an electronic DIY prosody and contemporary eternal epic' — and Johannes Sigil, 'author of Tiger Leap, a total novel which will invent new madnesses for humanity' — and Ichabod Spellings, 'author of All That Lies within Me, an autobiography composed by the cosmos.'\n\nTHREE HETERONYMS, NAMED AND CREDITED WITH WORKS, IN A BOOK PRINTED IN 2014. All That Lies Within Me is attributed here to Ichabod Spellings; the archive's books inventory lists it under Johannes Sigil with Spellings, and the text is still unrecovered.",
  "unrostered_authors": {
@@ -42,7 +42,12 @@
    "PEARL": 6,
    "FUGUEWORK": 22,
    "APPENDIX: Essays, Manifestos, Minutiae": 8
-  }
+  },
+  "epigraphs": 2,
+  "also_by_works": 9,
+  "attribution_conflicts": 3,
+  "lineage_real_figures": 33,
+  "unrostered_names": 3
  },
  "pieces": [
   {
@@ -59,7 +64,14 @@
    "section": "front matter",
    "attributed_to": "Jack Feist",
    "page": "vii",
-   "within_book_edges": []
+   "within_book_edges": [],
+   "epigraph": {
+    "text": "They were spurred on by the delirium of storming the books in the Crimson Hexagon: books of a smaller than ordinary format, omnipotent, illustrated, magical.",
+    "source": "Jorge Luis Borges, 'The Library of Babel'",
+    "translator": "Anthony Kerrigan",
+    "page": "vii",
+    "note": "THE ARCHIVE'S NAME IS AN EPIGRAPH IN A 2014 POETRY BOOK, in Kerrigan's translation of Borges."
+   }
   },
   {
    "piece_id": "pearl/03",
@@ -300,7 +312,14 @@
    "section": "FUGUEWORK",
    "attributed_to": "Lee Sharks",
    "page": "71",
-   "within_book_edges": []
+   "within_book_edges": [],
+   "epigraph": {
+    "text": "My little girl's face, like bright yellow flowers: Cleis, more precious to me than all Lydia.",
+    "source": "Sappho 132",
+    "translator": "Rebekah Crane",
+    "page": "71",
+    "note": "REBEKAH CRANE TRANSLATES SAPPHO INSIDE THE BOOK. The archive's roster spells her Cranes."
+   }
   },
   {
    "piece_id": "pearl/29",
@@ -429,5 +448,121 @@
    "page": "117",
    "within_book_edges": []
   }
- ]
+ ],
+ "also_by": {
+  "page": "xvii",
+  "heading": "ALSO BY LEE SHARKS",
+  "poetry": [
+   "Angelus Novus",
+   "The Crimson Hexagon",
+   "All That Lies within Me: An Autobiography in Verse",
+   "Tiger Leap (into the Future)",
+   "Minimal Graffito: A History Including Poems",
+   "What Was Lost: The Handmade Juvenilia of Lee Sharks, 1998-2001",
+   "Day and Night: An Anthology of the Greek Lyric Poets, Translated and Introduced by Lee Sharks"
+  ],
+  "prose": [
+   "Fear and Trembling in Las Vegas: A Dialectical Lyric by Lee Sharks",
+   "Your Love Will Carry On: The Collected Correspondence"
+  ]
+ },
+ "internal_attribution_conflict": {
+  "finding": "THE BOOK ASSIGNS THE SAME WORKS TO DIFFERENT NAMES ON DIFFERENT PAGES, and it does so in 2014. This is not an inconsistency to be resolved; it is the heteronymic operation performed inside a printed object twelve years before the archive had a roster.",
+  "cases": [
+   {
+    "work": "All That Lies within Me",
+    "also_by_page_xvii": "Lee Sharks (An Autobiography in Verse)",
+    "dedication_page_5": "Ichabod Spellings ('an autobiography composed by the cosmos')",
+    "archive_today": "Johannes Sigil with Ichabod Spellings — and the text is unrecovered"
+   },
+   {
+    "work": "Tiger Leap",
+    "also_by_page_xvii": "Lee Sharks (Tiger Leap (into the Future))",
+    "dedication_page_5": "Johannes Sigil ('a total novel which will invent new madnesses for humanity')",
+    "archive_today": "not deposited as a work"
+   },
+   {
+    "work": "Day and Night",
+    "also_by_page_xvii": "Lee Sharks (An Anthology of the Greek Lyric Poets, Translated and Introduced by)",
+    "contributor_bio_page_118": "Rebekah Crane ('small-press anthology of literary translations, Day and Night: Conversations with Sapphic Desire')",
+    "archive_today": "Rebekah Cranes, #282 and #324"
+   }
+  ]
+ },
+ "lineage_diagram": {
+  "page": "~100",
+  "piece": "21ST CENTURY LITERARY HISTORY",
+  "attributed_to": "Johannes Sigil",
+  "what": "A LITERARY-HISTORICAL CHART PLACING THE NEW HUMAN POETS INSIDE A REAL LINEAGE. Set as a diagram rather than a list, so the machine score renders it as overlapping columns.",
+  "real_figures": [
+   "Gertrude Stein",
+   "T. S. Eliot",
+   "H. D.",
+   "William Carlos Williams",
+   "Virginia Woolf",
+   "Langston Hughes",
+   "Zora Neale Hurston",
+   "Jack Kerouac",
+   "William Burroughs",
+   "Allen Ginsberg",
+   "Anne Waldman",
+   "Bob Kaufman",
+   "Jack Spicer",
+   "Robin Blaser",
+   "Frank O'Hara",
+   "Kenneth Koch",
+   "Barbara Guest",
+   "Louis Zukofsky",
+   "Charles Reznikoff",
+   "George Oppen",
+   "Muriel Rukeyser",
+   "LeRoi Jones / Amiri Baraka",
+   "Charles Bernstein",
+   "Steve McCaffery",
+   "Susan Howe",
+   "Harryette Mullen",
+   "Juliana Spahr",
+   "Peter Gizzi",
+   "Theresa Cha",
+   "Saul Williams",
+   "Tao Lin",
+   "Sam Pink",
+   "Araki Yasusada"
+  ],
+  "movements": [
+   "Harlem Renaissance",
+   "Beat Generation",
+   "New York School",
+   "Objectivism",
+   "Black Arts Movement",
+   "Conceptual Writing",
+   "Against Expression",
+   "Proceduralism",
+   "Post-language",
+   "The New Sentence",
+   "OuLiPo",
+   "Spoken Word Revolution",
+   "American Hybrid",
+   "Second-wave Modernism",
+   "Asperger's Realism",
+   "40 Likely to Die Under 40",
+   "High New Humanism"
+  ],
+  "heteronyms_placed": {
+   "Lee Sharks": "beside Peter Gizzi",
+   "Johannes Sigil": "beside The 'Objectivist' Anthology",
+   "Rebekah Crane": "beside Louis Zukofsky",
+   "Jack Feist": "beside Charles Reznikoff and Theresa Cha",
+   "Ichabod Spellings": "at the Conceptual Writing edge",
+   "Rhys Owens": "at the Against Expression edge"
+  },
+  "note": "TWO NAMES IN THIS DIAGRAM MATTER BEYOND THE FICTION. RHYS OWENS is in the archive's roster today as an ORTHONYM COLLABORATOR — a real person — placed here in 2014 among heteronyms. And ARAKI YASUSADA is the most famous heteronymic hoax in American poetry, a fictional Hiroshima survivor whose work was published as authentic. Placing the New Human poets beside Yasusada is a signal about what kind of names these are, made in the book, in print."
+ },
+ "names_in_the_book_not_in_the_archive": {
+  "John Johnson": "co-credited on A TELEPATHICIST MANIFESTO",
+  "Cornell Herwitz": "credited with BACKLASH: The New Human Illiterati; the contributor bio quotes him in Partisan Review, Fall 2008",
+  "Alain Boudreau": "French critic, quoted in the contributor bio reviewing Rebekah Crane's Day and Night",
+  "note": "None appears in the 26-record heteronym roster or in any of 1,610 deposits. The contributor bio is a dense fictional reception apparatus — journals, issues, quoted reviews, a feud — and its critics are as unrostered as its poets."
+ },
+ "spelling_note": "THE BOOK SPELLS HER REBEKAH CRANE, SINGULAR. The archive's roster, crosswalk and deposits all read Rebekah Cranes. The 2014 printing is the earlier witness and the difference is recorded rather than reconciled."
 }

@@ -13,11 +13,11 @@ configs:
 
 # EA-RHIZOME-POET-01 — poetics
 
-The poems, the poetics, and what the archive has said about how a poem is read by a machine.
+Pearl and Other Poems as its own graph: 42 pieces across four sections, the edges the book makes between them, and the captures in which a machine read the book or a piece of it.
 
 ## Counts
 
-**42** nodes · **0** core · **0** neighbour · **10** edges · **7** stolons
+**84** nodes · **42** core · **0** neighbour · **23** edges · **7** stolons
 
 ## Roles
 

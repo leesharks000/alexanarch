@@ -9,7 +9,7 @@
   "topology": "two-objects"
  },
  "grammar_id": "GRAM-POET-01",
- "version": "0.2",
+ "version": "0.3",
  "why_this_body_exists": "THE POETRY WAS CONTAINED AND NOT PRESENTED AS A DESTINATION. Seven bodies made the apparatus of authorship discoverable and left the writing that apparatus exists for reachable only through it. A visitor could find the instruments for measuring how machines receive literature and not the literature. THIS BODY IS THE DESTINATION.",
  "the_seat": {
   "corpus": "pearl-and-other-poems",
@@ -38,7 +38,7 @@
   },
   "the_distinction": "TWO OBJECTS, NEITHER SUBSTITUTABLE, AND THAT IS THIS BODY'S TOPOLOGY. 'A machine edition of a book whose lineation and whitespace are load-bearing is A SCORE, NOT THE PIECE.' The seat carries both so a reader who only has the score can see what the score is of.\n\nIt is the archive's reconstruction criterion applied to its own poems, and it answers differently from every other body: the score has high back-projection yield ON THE TEXT and none on the artwork. A PERFECT EXTRACTION IS STILL NOT THE BOOK."
  },
- "what": "The poems, the poetics, and what the archive has said about how a poem is read by a machine.",
+ "what": "Pearl and Other Poems as its own graph: 42 pieces across four sections, the edges the book makes between them, and the captures in which a machine read the book or a piece of it.",
  "select": {
   "pattern": "\\bpearl\\b|machine score|art object|whitespace fidelity|lineation|\\bpoem\\b|\\bpoems\\b|poetry|poetic|poetics|\\bverse\\b|prosody|\\blyric\\b|stanza|\\bsonnet\\b|patent.?poem|prose poem|Antioch|Water Giraffe|King of May|Good Gray Poet|\\bWhitman\\b|\\bSappho\\b|\\bCatullus\\b|\\bBrowning\\b|diagrammatic poetics|New Human Press|Paper Roses|typograph|vertical field|page delimiter",
   "flags": "I",
@@ -152,7 +152,44 @@
   "source": "datasets/pearl/pearl.json",
   "note": "THE PRIMITIVE ROW IS A PIECE, NOT A DEPOSIT. v0.1 of this body took the archive's generic spore shape — deposits, concepts, captures — and applied it to a poetry collection, producing nodes that were documents ABOUT Pearl and captures postdating it by twelve years, carrying concepts and heteronyms that did not exist when the book was made. IT DID NOT LOOK AS THOUGH THE BOOK HAD BEEN READ, BECAUSE IT HAD NOT BEEN.\n\nPearl was then read straight through. Forty-two pieces across four sections, and the edges the book itself makes.",
   "exclusive": true,
-  "exclusive_note": "PIECES ONLY. A first rebuild seated the 42 pieces AND kept the deposit sweep, giving 289 nodes of which 247 were the unread body this rebuild exists to replace. If the primitive is a piece, the deposit is not also a primitive — it is at most an outward edge, and outward comes after."
+  "exclusive_note": "PIECES ONLY. A first rebuild seated the 42 pieces AND kept the deposit sweep, giving 289 nodes of which 247 were the unread body this rebuild exists to replace. If the primitive is a piece, the deposit is not also a primitive — it is at most an outward edge, and outward comes after.",
+  "captures": {
+   "admit": true,
+   "gate": "\\bpearl\\b|new human press|telepathic|the crimson hexagon|pocket humans|noctilucent|tekatak|hums ?&ity",
+   "link_to_pieces": [
+    [
+     "pearl and other poems",
+     "PEARL"
+    ],
+    [
+     "lee sharks pearl",
+     "PEARL"
+    ],
+    [
+     "telepathic",
+     "Footnote to PEARL: belief & technique for telepathic prose"
+    ],
+    [
+     "noctilucent",
+     "noctilucent"
+    ],
+    [
+     "tekatak",
+     "tekatak"
+    ],
+    [
+     "epic poem, the crimson hexagon",
+     "from THE CRIMSON HEXAGON"
+    ],
+    [
+     "the epic poem the crimson hexagon",
+     "from THE CRIMSON HEXAGON"
+    ]
+   ],
+   "note": "A FIRST REBUILD REMOVED EVERY CAPTURE WHEN ONLY THE UNRELATED ONES WERE THE PROBLEM. v0.1 admitted 98 captures, most bearing on nothing in this book. v0.2 admitted none — which loses the 21 that name the book or its contents, including a Google knowledge panel for 'pearl and other poems lee sharks' and a ChatGPT answer to 'tell me about the contemporary book Pearl and Other Poems'.\n\nThe gate is the book's own vocabulary: its title, its press, its series, and words that occur only inside it — telepathicism, noctilucent, tekatak. A capture naming 'crimson hexagon' the ARCHIVE is not admitted; a capture naming THE CRIMSON HEXAGON the poem is.\n\nAND A CAPTURE LINKS TO A PIECE WHERE IT NAMES ONE. That is the outward edge, and it runs from the machine's reading back to the poem it read.",
+   "link_note": "AN ORDERED LIST, MOST SPECIFIC FIRST, AND 'the crimson hexagon' IS NOT A KEY ON ITS OWN. A first pass used it as one and linked twenty archive captures to Jack Feist's poem, because the archive and the poem share a name — which is the entity-collapse this archive builds instruments to measure, committed by its own grammar. The poem is linked only where a capture names it AS A POEM."
+  }
  },
- "topology_note": "EDGES WITHIN THE BOOK FIRST. Ten of them, structural rather than thematic: the three Undersongs elaborate PEARL and each other in sequence; the Footnote elaborates PEARL; Sigil's appendix essay names Sharks' 'Pearl' in its own title; the Forum Post answers the opening RE:; A TELEPATHICIST MANIFESTO answers the Footnote's 'belief & technique for telepathic prose'. OUTWARD EDGES COME AFTER and are carried by the stolons, not by the node set."
+ "topology_note": "EDGES WITHIN THE BOOK FIRST. Ten of them, structural rather than thematic: the three Undersongs elaborate PEARL and each other in sequence; the Footnote elaborates PEARL; Sigil's appendix essay names Sharks' 'Pearl' in its own title; the Forum Post answers the opening RE:; A TELEPATHICIST MANIFESTO answers the Footnote's 'belief & technique for telepathic prose'. OUTWARD EDGES COME AFTER and are carried by the stolons, not by the node set.",
+ "description_correction": "v0.1's card said 'the poems, the poetics, and what the archive has said about how a poem is read by a machine.' THAT DESCRIBED A BODY OF DOCUMENTS ABOUT PEARL, WHICH IS WHAT v0.1 WAS AND IS THE THING THIS REBUILD REPLACED. This body is the book: its pieces, its internal edges, and the observed readings of it. Nothing here is a commentary on poetics in general."
 }
