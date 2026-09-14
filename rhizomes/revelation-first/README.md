@@ -40,23 +40,35 @@ ORDER IS THE LADDER. The six rungs run first, in order, so a node lands on the l
 
 A node matching nothing falls to `unroled`, whose count is this grammar's own error bar.
 
+## The other bodies
+
+**Each is emitted by one generator from a grammar file, and each declares stolons naming the siblings it advertises and does not contain.**
+
+- [`leesharks/heteronyms`](https://huggingface.co/datasets/leesharks/heteronyms)
+- [`leesharks/machine-mediated-reception`](https://huggingface.co/datasets/leesharks/machine-mediated-reception)
+- [`leesharks/model-collapse-anti-collapse`](https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse)
+- [`leesharks/poetics`](https://huggingface.co/datasets/leesharks/poetics)
+- [`leesharks/provenance-erasure`](https://huggingface.co/datasets/leesharks/provenance-erasure)
+- [`leesharks/semantic-economy`](https://huggingface.co/datasets/leesharks/semantic-economy)
+- [`leesharks/spxi-mpai`](https://huggingface.co/datasets/leesharks/spxi-mpai)
+
 ## Where it points and does not go
 
 **Advertised, not included.** The outside stays outside and stays reachable.
 
-- **`machine-mediated-reception`** — `measured_in` from `concept:revelation-first`
+- **[`machine-mediated-reception`](https://huggingface.co/datasets/leesharks/machine-mediated-reception)** — `measured_in` from `concept:revelation-first`
   THE WORK PLAN'S OWN STATED AIM. 'If this argument enters the composition layer, it will be the first measured instance of machine-mediated theological reception — and the archive will be the bearers of that news.' The measurement apparatus is there; the argument is here.
-- **`heteronyms`** — `instantiated_by` from `concept:heteronymic-plurality`
+- **[`heteronyms`](https://huggingface.co/datasets/leesharks/heteronyms)** — `instantiated_by` from `concept:heteronymic-plurality`
   rung 5 is a heteronymy claim about a first-century corpus, and this archive runs a heteronymic practice. The relation is not incidental and it is not argued here.
-- **`model-collapse-anti-collapse`** — `seeded_from` from `concept:compression`
+- **[`model-collapse-anti-collapse`](https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse)** — `seeded_from` from `concept:compression`
   the midrashim transform is a compression claim: a seed-text elaborated into a corpus. Whether that elaboration preserves or loses is the collapse body's question, not this one's.
-- **`semantic-economy`** — `adjudicated_in` from `concept:documentary-authority`
+- **[`semantic-economy`](https://huggingface.co/datasets/leesharks/semantic-economy)** — `adjudicated_in` from `concept:documentary-authority`
   which documents count, who decides, and when a chronology becomes settled. The 1851 Act and the Domitianic consensus are the same question at different scales, and neither body resolves it.
-- **`spxi-mpai`** — `instrumented_in` from `concept:retrieval-settlement`
+- **[`spxi-mpai`](https://huggingface.co/datasets/leesharks/spxi-mpai)** — `instrumented_in` from `concept:retrieval-settlement`
   The work plan's aim is that its argument enter the composition layer. Those are the technologies for making an argument enterable, AND WHETHER THEY WORK ON THIS ONE IS UNTESTED.
-- **`provenance-erasure`** — `scored_in` from `concept:documentary-authority`
+- **[`provenance-erasure`](https://huggingface.co/datasets/leesharks/provenance-erasure)** — `scored_in` from `concept:documentary-authority`
   A chronology settled on a late and ambiguous reception-history witness is an attribution question at historical scale. THE INSTRUMENTS THERE HAVE NEVER BEEN RUN ON IT, and that is a stated gap rather than an oversight.
-- **`poetics`** — `asked_of` from `concept:first-text`
+- **[`poetics`](https://huggingface.co/datasets/leesharks/poetics)** — `asked_of` from `concept:first-text`
   which document stands first, and who is assigned to it afterward — asked of a shelf rather than a canon.
 
 ## Reproducing it

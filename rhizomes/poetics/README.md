@@ -35,23 +35,35 @@ ORDER IS THE BOOK'S OWN. Undersong and Footnote before poem, because a piece tha
 
 A node matching nothing falls to `unroled`, whose count is this grammar's own error bar.
 
+## The other bodies
+
+**Each is emitted by one generator from a grammar file, and each declares stolons naming the siblings it advertises and does not contain.**
+
+- [`leesharks/heteronyms`](https://huggingface.co/datasets/leesharks/heteronyms)
+- [`leesharks/machine-mediated-reception`](https://huggingface.co/datasets/leesharks/machine-mediated-reception)
+- [`leesharks/model-collapse-anti-collapse`](https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse)
+- [`leesharks/provenance-erasure`](https://huggingface.co/datasets/leesharks/provenance-erasure)
+- [`leesharks/revelation-first`](https://huggingface.co/datasets/leesharks/revelation-first)
+- [`leesharks/semantic-economy`](https://huggingface.co/datasets/leesharks/semantic-economy)
+- [`leesharks/spxi-mpai`](https://huggingface.co/datasets/leesharks/spxi-mpai)
+
 ## Where it points and does not go
 
 **Advertised, not included.** The outside stays outside and stays reachable.
 
-- **`machine-mediated-reception`** — `observed_in` from `concept:machine-reading-of-a-poem`
+- **[`machine-mediated-reception`](https://huggingface.co/datasets/leesharks/machine-mediated-reception)** — `observed_in` from `concept:machine-reading-of-a-poem`
   THE SEAT'S OWN CLAIM is that work arguing about how the training layer receives literature does not exempt itself from being received. That body holds the evidence of what happened when these poems were read.
-- **`provenance-erasure`** — `scored_in` from `concept:extraction-fidelity`
+- **[`provenance-erasure`](https://huggingface.co/datasets/leesharks/provenance-erasure)** — `scored_in` from `concept:extraction-fidelity`
   the score preserves the lineation; WHETHER IT PRESERVES THE AUTHOR is scored there.
-- **`model-collapse-anti-collapse`** — `measured_in` from `concept:two-objects`
+- **[`model-collapse-anti-collapse`](https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse)** — `measured_in` from `concept:two-objects`
   a score with perfect back-projection on the text and none on the artwork is a case the kernel apparatus has not been run on. AN EXTRACTION CAN BE LOSSLESS AND STILL NOT BE THE BOOK.
-- **`heteronyms`** — `instantiated_by` from `concept:authorship`
+- **[`heteronyms`](https://huggingface.co/datasets/leesharks/heteronyms)** — `instantiated_by` from `concept:authorship`
   who wrote which poems. Antioch is Lee Sharks with Damascus Dancings and Jack Feist; Day and Night is Rebekah Cranes.
-- **`spxi-mpai`** — `manifested_in` from `concept:seated-original`
+- **[`spxi-mpai`](https://huggingface.co/datasets/leesharks/spxi-mpai)** — `manifested_in` from `concept:seated-original`
   Pearl is EA-CORPORA-03/02. The one seat that is the archive's own, and the only one whose licence lets both objects ship.
-- **`revelation-first`** — `contested_in` from `concept:first-text`
+- **[`revelation-first`](https://huggingface.co/datasets/leesharks/revelation-first)** — `contested_in` from `concept:first-text`
   which document stands first and who is assigned to it afterward — asked of a corpus rather than a shelf.
-- **`semantic-economy`** — `priced_in` from `concept:unpaid-making`
+- **[`semantic-economy`](https://huggingface.co/datasets/leesharks/semantic-economy)** — `priced_in` from `concept:unpaid-making`
   A POEM IS SEMANTIC LABOUR THAT NOBODY PAID FOR, which is that body's §4.1 exactly — ontology engineering as semantic labor, the work the value is taken from. Pearl was printed in 2014 by a press the author runs, and the question of who bears the cost of making it is not answered here.
 
 ## Reproducing it

@@ -38,6 +38,18 @@ is reproducible and **its boundary is visible**. It ships `spore.json` — ident
 seed rule, follow set, depths, and the adjacent bodies it points to — so a reader can
 regenerate it or extend it without knowing the archive first.
 
+## The other bodies
+
+**Each is emitted by one generator from a grammar file, and each declares stolons naming the siblings it advertises and does not contain.**
+
+- [`leesharks/heteronyms`](https://huggingface.co/datasets/leesharks/heteronyms)
+- [`leesharks/machine-mediated-reception`](https://huggingface.co/datasets/leesharks/machine-mediated-reception)
+- [`leesharks/poetics`](https://huggingface.co/datasets/leesharks/poetics)
+- [`leesharks/provenance-erasure`](https://huggingface.co/datasets/leesharks/provenance-erasure)
+- [`leesharks/revelation-first`](https://huggingface.co/datasets/leesharks/revelation-first)
+- [`leesharks/semantic-economy`](https://huggingface.co/datasets/leesharks/semantic-economy)
+- [`leesharks/spxi-mpai`](https://huggingface.co/datasets/leesharks/spxi-mpai)
+
 ## Why this one is first
 
 **The subject and the structure coincide.** A model-collapse dataset should itself resist
@@ -193,14 +205,14 @@ flatten the phenomenon the dataset is for.
 Frontier edges are **advertised, not absorbed**. Adjacent bodies are named and pointed to
 rather than pulled in:
 
-- `concept:provenance-erasure` --measured_through--> **provenance-erasure** — PER, Erasure Skew and the Atomic Token Rule are the measurement apparatus; they are their own body
+- `concept:provenance-erasure` --measured_through--> **[provenance-erasure](https://huggingface.co/datasets/leesharks/provenance-erasure)** — PER, Erasure Skew and the Atomic Token Rule are the measurement apparatus; they are their own body
 - `concept:classifier-model-collapse` --governed_in--> **classifier-governance** — moderation feedback as a governance question rather than a generative one
-- `concept:heteronymic-plurality` --instantiated_by--> **heteronyms** — authorial plurality as an anti-collapse mechanism is instantiated by the identity records
-- `concept:semantic-economy` --situated_in--> **semantic-economy** — the political economy in which contraction is profitable
-- `concept:machine-reception` --observed_in--> **machine-mediated-reception** — the capture registry holds the observations; 411 captures are not reproduced here
+- `concept:heteronymic-plurality` --instantiated_by--> **[heteronyms](https://huggingface.co/datasets/leesharks/heteronyms)** — authorial plurality as an anti-collapse mechanism is instantiated by the identity records
+- `concept:semantic-economy` --situated_in--> **[semantic-economy](https://huggingface.co/datasets/leesharks/semantic-economy)** — the political economy in which contraction is profitable
+- `concept:machine-reception` --observed_in--> **[machine-mediated-reception](https://huggingface.co/datasets/leesharks/machine-mediated-reception)** — the capture registry holds the observations; 411 captures are not reproduced here
 - `concept:archive-resilience` --practised_as--> **archive-resilience** — substrate multiplication, mirrors and custody as operational practice
 - `concept:erratum` --corrected_in--> **epistemic-corrections** — the errata slate is a body in its own right; a correction preserved is anti-collapse by function
-- `concept:compression` --expanded_in--> **revelation-first** — the inverse operation, and a test case this body cannot run. The midrashim transform claims a seed-text unfolded INTO a corpus: letters become epistles, Lamb becomes atonement, operative apocalypse becomes gospel narrative. **That is expansion from a compressed source, where this body measures whether compression preserves.**
+- `concept:compression` --expanded_in--> **[revelation-first](https://huggingface.co/datasets/leesharks/revelation-first)** — the inverse operation, and a test case this body cannot run. The midrashim transform claims a seed-text unfolded INTO a corpus: letters become epistles, Lamb becomes atonement, operative apocalypse becomes gospel narrative. **That is expansion from a compressed source, where this body measures whether compression preserves.**
 
 ## Files
 

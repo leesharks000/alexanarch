@@ -123,13 +123,34 @@ def card(g, body_dir):
              "whose count is this grammar's own error bar.")
     L.append("")
 
+    _sibs = sorted({d.name for d in (ROOT / "rhizomes").iterdir()
+                    if d.is_dir() and d.name != "_grammars"} - {g["body"]["slug"]})
+    if _sibs:
+        L.append("## The other bodies")
+        L.append("")
+        L.append("**Each is emitted by one generator from a grammar file, and each declares stolons naming "
+                 "the siblings it advertises and does not contain.**")
+        L.append("")
+        for _s in _sibs:
+            L.append(f"- [`leesharks/{_s}`](https://huggingface.co/datasets/leesharks/{_s})")
+        L.append("")
+
     L.append("## Where it points and does not go")
     L.append("")
     L.append("**Advertised, not included.** The outside stays outside and stays reachable.")
     L.append("")
+    # A STOLON NAMES A SIBLING DATASET AND THE CARD RENDERED IT AS PLAIN TEXT (2026-09-14).
+    # Each satellite card linked only to the parent, so a reader landing on one body could
+    # reach the parent and nothing else — and where a search index served a stale parent
+    # card naming one satellite, the reachable set was two datasets out of nine.
+    # The stolons already declare the siblings. They are now links.
+    _BODIES = {d.name for d in (ROOT / "rhizomes").iterdir()
+               if d.is_dir() and d.name != "_grammars"}
     for s in (g.get("stolons") or []):
         frm, pred, to, note = (s + [None] * 4)[:4]
-        L.append(f"- **`{to}`** — `{pred}` from `{frm}`")
+        _t = (f"[`{to}`](https://huggingface.co/datasets/leesharks/{to})"
+              if to in _BODIES else f"`{to}`")
+        L.append(f"- **{_t}** — `{pred}` from `{frm}`")
         if note:
             L.append(f"  {note}")
     L.append("")
