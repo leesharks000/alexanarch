@@ -17,7 +17,7 @@ Where provenance disappears, and what measures it. A transformation chain — so
 
 ## Counts
 
-**219** nodes · **147** core · **72** neighbour · **117** edges · **7** stolons
+**71** nodes · **0** core · **0** neighbour · **7** edges · **7** stolons
 
 ## Roles
 
