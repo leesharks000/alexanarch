@@ -17,7 +17,7 @@ The Revelation First thesis and everything it draws: the pre-70 argument, the mi
 
 ## Counts
 
-**271** nodes · **162** core · **109** neighbour · **170** edges · **5** stolons
+**271** nodes · **162** core · **109** neighbour · **170** edges · **6** stolons
 
 ## Roles
 
@@ -54,6 +54,8 @@ A node matching nothing falls to `unroled`, whose count is this grammar's own er
   which documents count, who decides, and when a chronology becomes settled. The 1851 Act and the Domitianic consensus are the same question at different scales, and neither body resolves it.
 - **`spxi-mpai`** — `instrumented_in` from `concept:retrieval-settlement`
   The work plan's aim is that its argument enter the composition layer. Those are the technologies for making an argument enterable, AND WHETHER THEY WORK ON THIS ONE IS UNTESTED.
+- **`provenance-erasure`** — `scored_in` from `concept:documentary-authority`
+  A chronology settled on a late and ambiguous reception-history witness is an attribution question at historical scale. THE INSTRUMENTS THERE HAVE NEVER BEEN RUN ON IT, and that is a stated gap rather than an oversight.
 
 ## Reproducing it
 
