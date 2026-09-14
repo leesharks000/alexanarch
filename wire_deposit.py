@@ -717,8 +717,13 @@ def _inline_md(t):
     def _doi_to_resolution(m):
         _d = m.group(2)
         return (f'<a href="/s/doi/{_d}/" title="severed DOI — resolution page">{m.group(1)}</a>')
-    t = re.sub(r'<a href="https://doi\.org/(10\.5281/zenodo\.\d+)"[^>]*>([^<]*)</a>',
-               lambda m: f'<a href="/s/doi/{m.group(1)}/" title="severed 2026-06-19 — archive resolution page">{m.group(2)}</a>', t)
+    # MATCHES THE HREF ALONE, not a whole anchor. A first pass required the full
+    # <a …>text</a> shape and so caught only anchors this renderer had just built from
+    # markdown — leaving 196 raw links inside canonical texts that carry their own HTML
+    # citation tables, where the archive lists its own papers with their DOIs. Those are
+    # severed too, and each has a resolution page.
+    t = re.sub(r'href="https://doi\.org/(10\.5281/zenodo\.\d+)"',
+               r'href="/s/doi/\1/" title="severed 2026-06-19 — archive resolution page"', t)
     # and bare DOIs in running text, which the link renderer above never saw
     t = re.sub(r'(?<![/">])\b(10\.5281/zenodo\.\d+)\b(?![^<]*</a>)',
                r'<a href="/s/doi/\1/" title="severed 2026-06-19 — archive resolution page">\1</a>', t)
@@ -1505,7 +1510,7 @@ def regenerate_static_page(d, eidx, registry=None):
             '<div style="font-weight:600;color:#7f1d1d;margin-bottom:4px">✕ Withdrawn — external work (typed tombstone)</div>'
             '<div style="color:#7f1d1d">This position was created by an over-inclusive metadata capture. '
             f'The work is by <strong>{esc(w.get("rightful_author",""))}</strong> and is not a holding of this archive. '
-            f'It belongs to its author at DOI <a href="https://doi.org/{esc(w.get("rightful_doi",""))}" '
+            f'It belongs to its author at DOI <a data-rightful="1" href="https://doi.org/{esc(w.get("rightful_doi",""))}" '
             f'style="color:#b91c1c;font-weight:500">{esc(w.get("rightful_doi",""))}</a>. '
             'No content of the work is served here.</div>'
             '</div>'
@@ -1985,6 +1990,32 @@ def regenerate_static_page(d, eidx, registry=None):
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>'''
     
+    # FINAL PASS: SEVERED DOIs RESOLVE TO THE ARCHIVE, NOT TO A DEAD REGISTRAR.
+    # Applied to the assembled page rather than to the markdown, because anchors reach
+    # this HTML by several routes — the markdown link renderer, the figure renderer, and
+    # raw HTML inside canonical texts that carry their own citation tables. Substituting
+    # in only one of those left 196 dead links standing on 25 pages.
+    #
+    # JSON-LD IS DELIBERATELY EXCLUDED. There the DOI is metadata, labelled 'former
+    # identifier; severed by the registrant' beside the AXN labelled 'authoritative
+    # identifier; content-derived; resolves'. A crawler should know the DOI existed and
+    # was severed. That is a statement, not a link offered to a reader.
+    #
+    # Live DOIs belonging to other authors are also left alone: a work that is not a
+    # holding of this archive points at its rightful author's registrar, and routing that
+    # through an archive resolution page would claim standing over someone else's record.
+    def _resolve_severed(html):
+        parts = re.split(r'(<script\b.*?</script>)', html, flags=re.S | re.I)
+        for i, seg in enumerate(parts):
+            if seg[:7].lower() == '<script':
+                continue
+            parts[i] = re.sub(
+                r'href="https://doi\.org/(10\.5281/zenodo\.\d+)"(?![^>]*data-rightful)',
+                r'href="/s/doi/\1/" title="severed 2026-06-19 — archive resolution page"', seg)
+        return ''.join(parts)
+
+    page = _resolve_severed(page)
+
     os.makedirs(f's/records/{dn}', exist_ok=True)
     with open(f's/records/{dn}/index.html', 'w') as f:
         f.write(page)
