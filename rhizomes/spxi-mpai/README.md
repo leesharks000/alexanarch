@@ -17,7 +17,7 @@ The archive's documentary technologies: SPXI and its protocol family, MPAI packe
 
 ## Counts
 
-**256** nodes · **159** core · **97** neighbour · **113** edges · **6** stolons
+**256** nodes · **159** core · **97** neighbour · **113** edges · **7** stolons
 
 ## Roles
 
@@ -54,6 +54,8 @@ A node matching nothing falls to `unroled`, whose count is this grammar's own er
   Whether an inscription survived is measured there; whether it was placed well is specified here. Deliverable ten — the declared SIM set — is an anti-erasure technology whose effect is scored by that body's instruments.
 - **`heteronyms`** — `inscribed_for` from `concept:byline`
   the inscription technologies that make a byline legible to a machine. Deliverable five — disambiguation and negative tags — is what keeps two heteronyms from resolving to one entity.
+- **`poetics`** — `carried_by` from `concept:seated-original`
+  EA-CORPORA-03/02, the one seat that is the archive's own and the only one whose licence lets both objects ship.
 
 ## Reproducing it
 

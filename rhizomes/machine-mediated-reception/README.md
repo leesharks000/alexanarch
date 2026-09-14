@@ -17,7 +17,7 @@ Machine-mediated reception: what composition surfaces actually did with this arc
 
 ## Counts
 
-**1249** nodes · **976** core · **273** neighbour · **910** edges · **7** stolons
+**1249** nodes · **976** core · **273** neighbour · **910** edges · **8** stolons
 
 ## It was advertised before it existed
 
@@ -90,6 +90,8 @@ A node matching nothing falls to `unroled`, whose count is this grammar's own er
   The captures observe what surfaces did. That body holds the technologies by which an inscription is placed to be observed at all.
 - **`heteronyms`** — `tested_on` from `concept:entity-resolution`
   WHETHER RETRIEVAL COLLAPSES TWENTY-SIX DECLARED IDENTITIES INTO ONE is an anti-collapse experiment this archive can run on itself. The captures are the evidence and it has not been run.
+- **`poetics`** — `observed_in` from `concept:machine-reading-of-a-poem`
+  The seat's own claim: work arguing about how the training layer receives literature does not exempt itself from being received. THIS BODY HOLDS WHAT HAPPENED; that one holds the poems.
 
 ## Reproducing it
 

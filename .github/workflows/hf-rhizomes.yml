@@ -60,6 +60,9 @@ jobs:
           - slug: heteronyms
             grammar: rhizomes/_grammars/heteronyms.json
             repo_var: HF_RHIZOME_HET_REPO
+          - slug: poetics
+            grammar: rhizomes/_grammars/poetics.json
+            repo_var: HF_RHIZOME_POET_REPO
     steps:
       - name: Debounce — let a burst of merges settle
         if: ${{ github.event_name == 'push' }}

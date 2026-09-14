@@ -17,7 +17,7 @@ Non-singular authorship: twenty-six declared identities, what each claims, what 
 
 ## Counts
 
-**493** nodes · **326** core · **167** neighbour · **279** edges · **6** stolons
+**493** nodes · **326** core · **167** neighbour · **279** edges · **7** stolons
 
 ## Roles
 
@@ -55,6 +55,8 @@ A node matching nothing falls to `unroled`, whose count is this grammar's own er
   rung 5 is a heteronymy claim about a first-century corpus: John, James, Paul, Peter and Luke as author-functions in a fractured literary system. THE ARCHIVE RUNS ONE AND READS ONE, and does not argue from the first to the second.
 - **`spxi-mpai`** — `inventoried_in` from `concept:book-length-work`
   which heteronym wrote which book is held in EA-BOOKS-01, and the inscription technologies that make a byline legible to a machine are specified there.
+- **`poetics`** — `exercised_in` from `concept:authorship`
+  the roster is here; the work is there. Antioch is Lee Sharks with Damascus Dancings and Jack Feist.
 
 ## Reproducing it
 
