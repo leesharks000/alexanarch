@@ -17,7 +17,7 @@ Where provenance disappears, and what measures it. A transformation chain — so
 
 ## Counts
 
-**344** nodes · **254** core · **90** neighbour · **151** edges · **6** stolons
+**344** nodes · **254** core · **90** neighbour · **151** edges · **7** stolons
 
 ## Roles
 
@@ -57,6 +57,8 @@ A node matching nothing falls to `unroled`, whose count is this grammar's own er
   a chronology settled on a late and ambiguous witness is an attribution question at historical scale. THE INSTRUMENTS HERE HAVE NEVER BEEN RUN ON IT.
 - **`heteronyms`** — `borne_by` from `concept:attribution`
   PER scores whether a byline survived. That body holds the bylines, and its apparatus covers twelve of twenty-six.
+- **`poetics`** — `borne_by` from `concept:extraction-fidelity`
+  Pearl's machine score preserves lineation at whitespace fidelity. WHETHER AN EXTRACTION THAT PERFECT PRESERVES THE AUTHOR is this body's question and it has not been run on it.
 
 ## Reproducing it
 

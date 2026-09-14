@@ -37,7 +37,7 @@ def _spore_line(slug):
 
 _SPORE = {s: _spore_line(s) for s in
           ("model-collapse-anti-collapse", "semantic-economy", "machine-mediated-reception",
-           "revelation-first", "spxi-mpai", "provenance-erasure", "heteronyms")}
+           "revelation-first", "spxi-mpai", "provenance-erasure", "heteronyms", "poetics")}
 
 def sha(s): return hashlib.sha256(s.encode('utf-8')).hexdigest()
 
@@ -616,7 +616,7 @@ This archive emits **rhizomes**: standalone datasets generated from the relation
 deterministic traversal, each shipping a `spore.json` that carries its own recipe — seed rule,
 follow set, depths, and the commit of the ledger it came from.
 
-**SEVEN BODIES, AND THEY POINT AT EACH OTHER.** Each is emitted by one generator from a grammar
+**EIGHT BODIES, AND THEY POINT AT EACH OTHER.** Each is emitted by one generator from a grammar
 file in `rhizomes/_grammars/`, and each declares stolons naming the siblings it advertises and does
 not contain. All six directed edges exist: every body names both others.
 
@@ -674,6 +674,18 @@ provenanced historical figures. **Its primary datum is that the apparatus stops 
 roster does not**: eight fields sit at exactly 12 of 26, `het_id` reaches 11, and the missing identifier is
 inside the Twelve. The experiment it makes possible has not been run — **whether retrieval collapses
 twenty-six declared identities into one.**
+
+**[`leesharks/poetics`](https://huggingface.co/datasets/leesharks/poetics)**
+— {poet_line}. **The poems, and the destination the other bodies were not.** Seven bodies made the
+apparatus of authorship discoverable and left the writing that apparatus exists for reachable only
+through it. Its seat is **Pearl and Other Poems** (New Human Press, 2014) — **the only seat in the
+EA-CORPORA library that is the archive's own**, placed beside Whitman on the originals shelf and offered
+to the machine reader on identical terms, because *work that argues about how the training layer receives
+literature does not exempt itself from being received.* **Its topology is two objects, neither
+substitutable**: the art object, whose typography and vertical field are the work, and the machine score
+at whitespace fidelity. *A machine edition of a book whose lineation is load-bearing is a score, not the
+piece.* **A perfect extraction is still not the book**, and role order here puts the poem first and the
+apparatus last, inverting every other body in this archive.
 
 **What that dataset is and is not.** It is a map of the research — mechanisms, measures,
 interventions, corrections — assembled from deposits that already exist. **It is NOT a
@@ -734,6 +746,7 @@ def main():
         spxi_line=_SPORE["spxi-mpai"],
         per_line=_SPORE["provenance-erasure"],
         het_line=_SPORE["heteronyms"],
+        poet_line=_SPORE["poetics"],
         configs='\n'.join(cfg), n_dep=len(frames['deposits']),
         N_CONFIGS=len(frames), N_DEPOSITS=f"{len(frames['deposits']):,}",
         built=dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d %H:%MZ')))

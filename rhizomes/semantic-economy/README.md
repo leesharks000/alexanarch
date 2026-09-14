@@ -17,7 +17,7 @@ The archive's political economy of meaning, seeded at the stolon the collapse bo
 
 ## Counts
 
-**478** nodes · **346** core · **132** neighbour · **231** edges · **6** stolons
+**478** nodes · **346** core · **132** neighbour · **231** edges · **7** stolons
 
 ## It was advertised before it existed
 
@@ -83,6 +83,8 @@ A node matching nothing falls to `unroled`, whose count is this grammar's own er
   A DOCUMENTARY-AUTHORITY SETTLEMENT AT SCALE. The Domitianic consensus is a claim about which witness counts, decided by whom, and at what point it stopped being questioned — the same four powers this body measures, applied to a chronology rather than a form. Its primary external anchor is a late and ambiguous reception-history witness, and that is an admissibility question. This body does not adjudicate it.
 - **`spxi-mpai`** — `built_in` from `concept:semantic-infrastructure`
   #623 §4.3 maps standards to semantic infrastructure — what everyone builds on and nobody is paid for. That body is this archive's own stock of them, and 91% of its specified protocols carry no deployment marker.
+- **`poetics`** — `made_in` from `concept:semantic-labour`
+  the writing the apparatus exists for. WHO PRODUCES is this body's question and a poem is an answer to it.
 
 ## Reproducing it
 

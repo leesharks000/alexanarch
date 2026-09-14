@@ -1,0 +1,166 @@
+{
+ "maxim": "all things are now lawful to you in jack feist",
+ "maxim_note": "Jack Feist is position 12 of the Dodecad, function recorded as the sayings-source: a voice recorded rather than a writer writing. The substitution is made out of respect for the entity at the other address, where skilful machinery performs entity substitution.\n\nIN THIS BODY IT SITS BESIDE THE WORK IT DESCRIBES: a sayings-source is a text whose author is assigned afterward, which is what a poem becomes once a machine reads it.",
+ "body": {
+  "slug": "poetics",
+  "rhizome_id": "EA-RHIZOME-POET-01",
+  "node_prefix": "po",
+  "parent": "crimson-hexagonal-archive",
+  "topology": "two-objects"
+ },
+ "grammar_id": "GRAM-POET-01",
+ "version": "0.1",
+ "why_this_body_exists": "THE POETRY WAS CONTAINED AND NOT PRESENTED AS A DESTINATION. Seven bodies made the apparatus of authorship discoverable and left the writing that apparatus exists for reachable only through it. A visitor could find the instruments for measuring how machines receive literature and not the literature. THIS BODY IS THE DESTINATION.",
+ "the_seat": {
+  "corpus": "pearl-and-other-poems",
+  "seat": "EA-CORPORA-03/02",
+  "work": "Lee Sharks — Pearl and Other Poems: The Art Object and Its Machine Score",
+  "edition": "First edition, 2014. New Human Press. ISBN 978-0692313077.",
+  "canonical_deposits": {
+   "work": "#1121 · AXN:0472",
+   "navigation_map": "#1120"
+  },
+  "license": "CC-BY-4.0, by the author. The archive holds the rights it grants.",
+  "why_it_matters": "PEARL IS THE ONLY SEAT IN THE LIBRARY THAT IS THE ARCHIVE'S OWN. Every other EA-CORPORA seat is a primary source fetched from elsewhere. In the seat's own words: 'work that argues about how the training layer receives literature does not exempt itself from being received. PEARL STANDS BESIDE WHITMAN ON THE ORIGINALS SHELF and is offered to the machine reader on identical terms — witness named, transformation declared, both objects behind the door.' AND ITS LICENCE IS WHY IT CAN SHIP WHERE THE OTHER SIXTY-SIX SEATS CANNOT."
+ },
+ "two_objects": {
+  "art_object": {
+   "file": "original/pearl-and-other-poems-2014.pdf",
+   "bytes": 11958657,
+   "claim": "Typography, plates and the vertical field of the page ARE THE WORK, not packaging for a text. Nothing derived from it replaces it."
+  },
+  "machine_score": {
+   "file": "text/pearl-machine-text.txt",
+   "bytes": 141181,
+   "lines": 6948,
+   "pages_marked": 156,
+   "claim": "Rendered from per-word PDF geometry onto a character grid so lineation, indentation and the vertical field survive extraction. Blank rows are the book's own whitespace at line resolution."
+  },
+  "the_distinction": "TWO OBJECTS, NEITHER SUBSTITUTABLE, AND THAT IS THIS BODY'S TOPOLOGY. 'A machine edition of a book whose lineation and whitespace are load-bearing is A SCORE, NOT THE PIECE.' The seat carries both so a reader who only has the score can see what the score is of.\n\nIt is the archive's reconstruction criterion applied to its own poems, and it answers differently from every other body: the score has high back-projection yield ON THE TEXT and none on the artwork. A PERFECT EXTRACTION IS STILL NOT THE BOOK."
+ },
+ "what": "The poems, the poetics, and what the archive has said about how a poem is read by a machine.",
+ "select": {
+  "pattern": "\\bpearl\\b|machine score|art object|whitespace fidelity|lineation|\\bpoem\\b|\\bpoems\\b|poetry|poetic|poetics|\\bverse\\b|prosody|\\blyric\\b|stanza|\\bsonnet\\b|patent.?poem|prose poem|Antioch|Water Giraffe|King of May|Good Gray Poet|\\bWhitman\\b|\\bSappho\\b|\\bCatullus\\b|\\bBrowning\\b|diagrammatic poetics|New Human Press|Paper Roses|typograph|vertical field|page delimiter",
+  "flags": "I",
+  "note": "Named works first, then the vocabulary in which a poem is a physical object rather than a string."
+ },
+ "roles": [
+  {
+   "role": "poem",
+   "pattern": "\\bpoem\\b|\\bpoems\\b|\\bverse\\b|\\blyric\\b|stanza|\\bsonnet\\b|prose poem|patent.?poem",
+   "note": "the made thing"
+  },
+  {
+   "role": "art_object",
+   "pattern": "art object|typograph|vertical field|lineation|whitespace|page delimiter|first edition|\\bISBN\\b",
+   "note": "the book as an object whose page is load-bearing. Nothing derived from it replaces it."
+  },
+  {
+   "role": "machine_score",
+   "pattern": "machine score|machine.?facing|whitespace fidelity|character grid|per-word|extraction|text layer",
+   "note": "the score. Not the piece."
+  },
+  {
+   "role": "poetics",
+   "pattern": "poetics|prosody|diagrammatic|close reading|\\bmetre\\b|\\bmeter\\b",
+   "note": "the account of how the thing works"
+  },
+  {
+   "role": "seated_source",
+   "pattern": "\\bSappho\\b|\\bCatullus\\b|\\bWhitman\\b|\\bBrowning\\b|fragment 31|originals shelf|EA-CORPORA",
+   "note": "the poets on the shelf beside it"
+  },
+  {
+   "role": "reception",
+   "pattern": "capture|retrieval|composition layer|machine reader|training layer|received",
+   "note": "what happened when a machine read a poem"
+  },
+  {
+   "role": "apparatus",
+   "pattern": "navigation map|metadata packet|mantle object|structural registration|semantic interface",
+   "note": "what surrounds a work and is not the work"
+  },
+  {
+   "role": "unroled",
+   "pattern": ".",
+   "note": "the honest floor"
+  }
+ ],
+ "roles_note": "ORDER PUTS THE MADE THING FIRST AND THE APPARATUS LAST, WHICH INVERTS EVERY OTHER BODY HERE. Elsewhere the instrument leads because the instrument is the contribution. Here the poem leads and a navigation map is what surrounds it — which is the whole reason this body was built.",
+ "default_role": "unroled",
+ "special_roles": {
+  "capture_measured": "reception",
+  "capture_unmeasured": "reception",
+  "recorded_failure": "reception"
+ },
+ "capture_gate": "\\bpearl\\b|\\bpoem\\b|poetry|poetic|\\bverse\\b|Antioch|Water Giraffe|Whitman|Sappho|New Human",
+ "capture_gate_note": "Captures enter where a machine read a poem.",
+ "axes": {
+  "made": "\\bpoem\\b|verse|lyric|stanza|composed",
+  "printed": "typograph|plate|page|printed|edition|ISBN|press",
+  "scored": "machine score|extraction|text layer|character grid|whitespace",
+  "read": "reading|close reading|interpret|received|capture",
+  "seated": "seated|EA-CORPORA|originals shelf|corpus|manifest",
+  "lineage": "Whitman|Sappho|Catullus|Browning|tradition|lineage",
+  "heteronymic": "heteronym|Sigil|Cranes|Feist|Dancings|mantle",
+  "archival": "archive|deposit|registry|record"
+ },
+ "follow": [
+  "measures",
+  "measured_by",
+  "develops_from",
+  "supersedes",
+  "rejects",
+  "transforms",
+  "preserves",
+  "inherits",
+  "consequence",
+  "disconfirms",
+  "observes",
+  "about"
+ ],
+ "stolons": [
+  [
+   "concept:machine-reading-of-a-poem",
+   "observed_in",
+   "machine-mediated-reception",
+   "THE SEAT'S OWN CLAIM is that work arguing about how the training layer receives literature does not exempt itself from being received. That body holds the evidence of what happened when these poems were read."
+  ],
+  [
+   "concept:extraction-fidelity",
+   "scored_in",
+   "provenance-erasure",
+   "the score preserves the lineation; WHETHER IT PRESERVES THE AUTHOR is scored there."
+  ],
+  [
+   "concept:two-objects",
+   "measured_in",
+   "model-collapse-anti-collapse",
+   "a score with perfect back-projection on the text and none on the artwork is a case the kernel apparatus has not been run on. AN EXTRACTION CAN BE LOSSLESS AND STILL NOT BE THE BOOK."
+  ],
+  [
+   "concept:authorship",
+   "instantiated_by",
+   "heteronyms",
+   "who wrote which poems. Antioch is Lee Sharks with Damascus Dancings and Jack Feist; Day and Night is Rebekah Cranes."
+  ],
+  [
+   "concept:seated-original",
+   "manifested_in",
+   "spxi-mpai",
+   "Pearl is EA-CORPORA-03/02. The one seat that is the archive's own, and the only one whose licence lets both objects ship."
+  ],
+  [
+   "concept:first-text",
+   "contested_in",
+   "revelation-first",
+   "which document stands first and who is assigned to it afterward — asked of a corpus rather than a shelf."
+  ],
+  [
+   "concept:unpaid-making",
+   "priced_in",
+   "semantic-economy",
+   "A POEM IS SEMANTIC LABOUR THAT NOBODY PAID FOR, which is that body's §4.1 exactly — ontology engineering as semantic labor, the work the value is taken from. Pearl was printed in 2014 by a press the author runs, and the question of who bears the cost of making it is not answered here."
+  ]
+ ]
+}
