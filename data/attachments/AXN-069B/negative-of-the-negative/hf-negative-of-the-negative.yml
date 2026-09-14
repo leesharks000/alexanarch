@@ -1,0 +1,28 @@
+name: Hugging Face — negative of the negative
+on:
+  push:
+    branches: [main]
+    paths: ['datasets/negative-of-the-negative/**', 'data/registry.json', 'data/EA-WG-CAPTURES-01.json', 'scripts/build_negative_of_the_negative.py']
+  workflow_dispatch: {}
+concurrency:
+  group: hf-negative-of-the-negative
+  cancel-in-progress: true
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    if: ${{ vars.HF_REPO_NON != '' }}
+    steps:
+      - name: Debounce — let a burst of seatings settle
+        if: ${{ github.event_name == 'push' }}
+        run: sleep 600
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install -q pyarrow pandas jsonschema huggingface_hub
+      - name: Gate — schema, ids, keys (breaches recorded in the manifest; a schema breach fails the gate)
+        run: python3 scripts/build_negative_of_the_negative.py --check
+      - run: python3 scripts/build_negative_of_the_negative.py --out hf-non
+      - name: Push to the Hub (selective, same script as the main projection)
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: python3 scripts/push_hf_dataset.py hf-non "${{ vars.HF_REPO_NON }}"

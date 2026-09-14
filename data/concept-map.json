@@ -3,14 +3,14 @@
   "name": "Concept Map — work-level identity and current-version resolution",
   "description": "Restores the concept-identifier function lost with the terminated Zenodo account. Alexanarch mints a fresh hex per deposit, so every version of a work is an independent object with no link to its siblings; a reader arriving at an old version cannot learn that a newer one exists. Each concept here names a work and points at its current version. Programme families — distinct works sharing an identifier — are listed separately and carry no version pointer, because conflating the two would resolve one work to another. Every family records the basis on which it was detected so any confidence tier can be discarded independently.",
   "generated_by": "scripts/build_concept_map.py",
-  "generated_at": "2026-09-09T02:50:32Z",
+  "generated_at": "2026-09-14T19:07:58Z",
   "totals": {
-    "deposits": 1598,
+    "deposits": 1611,
     "concepts": 68,
-    "deposits_in_concepts": 155,
-    "singletons": 1443,
+    "deposits_in_concepts": 156,
+    "singletons": 1455,
     "needs_review": 20,
-    "program_families": 48
+    "program_families": 49
   },
   "basis_counts": {
     "version/implicit": 40,
@@ -2904,15 +2904,15 @@
       "basis": "version/fuzzy",
       "root_axn_hex": "0677",
       "ea_identifiers": [],
-      "member_count": 3,
+      "member_count": 4,
       "needs_review": true,
       "current": {
-        "deposit_number": 1594,
-        "axn": "AXN:0687.UNCLASSIFIED.🔐🪦🟤🌙🎺☀️",
-        "title": "The First Draft — a notebook: Theophrastus as the Draft of the Aristotle-Position; speculations, seam counts, the named-function model, the stopping rule, transmodality, the Macedonian dossier, handholds and the receiving node, and the seam stylometry through the first axis, the instrument's referee rounds, and the stones (v0.42)",
-        "date": "2026-09-06",
-        "version": "0.42",
-        "record_url": "https://www.alexanarch.org/s/records/1594/",
+        "deposit_number": 1605,
+        "axn": "AXN:0695.UNCLASSIFIED.✖️🔽🧱👈🍂🎆",
+        "title": "The First Draft — a notebook: Theophrastus as the Draft of the Aristotle-Position; speculations, seam counts, the named-function model, the stopping rule, transmodality, the Macedonian dossier, handholds and the receiving node, the seam stylometry through the first axis, the instrument's referee rounds, the stones, and the close — the facing corpus, the splice instruments, the dependency protocol, the paper, and what text we are actually printing (v1.0 FINAL)",
+        "date": "2026-09-10",
+        "version": "1.0",
+        "record_url": "https://www.alexanarch.org/s/records/1605/",
         "provisional": true
       },
       "versions": [
@@ -2943,8 +2943,18 @@
           "date": "2026-09-06",
           "version": "0.42",
           "superseded_marker": false,
-          "is_current": true,
+          "is_current": false,
           "record_url": "https://www.alexanarch.org/s/records/1594/"
+        },
+        {
+          "deposit_number": 1605,
+          "axn": "AXN:0695.UNCLASSIFIED.✖️🔽🧱👈🍂🎆",
+          "title": "The First Draft — a notebook: Theophrastus as the Draft of the Aristotle-Position; speculations, seam counts, the named-function model, the stopping rule, transmodality, the Macedonian dossier, handholds and the receiving node, the seam stylometry through the first axis, the instrument's referee rounds, the stones, and the close — the facing corpus, the splice instruments, the dependency protocol, the paper, and what text we are actually printing (v1.0 FINAL)",
+          "date": "2026-09-10",
+          "version": "1.0",
+          "superseded_marker": false,
+          "is_current": true,
+          "record_url": "https://www.alexanarch.org/s/records/1605/"
         }
       ]
     },
@@ -4465,6 +4475,28 @@
           "title": "The 3:60 Room — Contributor License v2.0: Maria, Canonical Witness (EA-THREE-SIXTY-01)",
           "date": "2026-04-29",
           "record_url": "https://www.alexanarch.org/s/records/1364/"
+        }
+      ]
+    },
+    {
+      "program_id": "EA-VALUATION-MEMO-01",
+      "program_url": "https://www.alexanarch.org/s/program/ea-valuation-memo-01/",
+      "note": "Distinct works sharing a programme identifier. This is a collection, not a version family: no current-version pointer is asserted.",
+      "member_count": 2,
+      "members": [
+        {
+          "deposit_number": 1607,
+          "axn": "AXN:0697.UNCLASSIFIED.🌟🏴♦️🎹⏰🪝",
+          "title": "EA-VALUATION-MEMO-01: The Machine Valuation of an Unpriced Asset — Eight Machine Valuations of One Asset in One Day, Spanning Three Orders of Magnitude",
+          "date": "2026-09-10",
+          "record_url": "https://www.alexanarch.org/s/records/1607/"
+        },
+        {
+          "deposit_number": 1608,
+          "axn": "AXN:0698.UNCLASSIFIED.🏛️♊□🕊️🪜🌇",
+          "title": "EA-VALUATION-MEMO-01 v2.0: The Machine Valuation of an Unpriced Asset — Fourteen Machine Assessments, Twelve Captured, and Twenty-One Corrections",
+          "date": "2026-09-10",
+          "record_url": "https://www.alexanarch.org/s/records/1608/"
         }
       ]
     },
