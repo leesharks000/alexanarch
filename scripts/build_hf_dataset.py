@@ -37,7 +37,7 @@ def _spore_line(slug):
 
 _SPORE = {s: _spore_line(s) for s in
           ("model-collapse-anti-collapse", "semantic-economy", "machine-mediated-reception",
-           "revelation-first", "spxi-mpai", "provenance-erasure")}
+           "revelation-first", "spxi-mpai", "provenance-erasure", "heteronyms")}
 
 def sha(s): return hashlib.sha256(s.encode('utf-8')).hexdigest()
 
@@ -616,7 +616,7 @@ This archive emits **rhizomes**: standalone datasets generated from the relation
 deterministic traversal, each shipping a `spore.json` that carries its own recipe — seed rule,
 follow set, depths, and the commit of the ledger it came from.
 
-**SIX BODIES, AND THEY POINT AT EACH OTHER.** Each is emitted by one generator from a grammar
+**SEVEN BODIES, AND THEY POINT AT EACH OTHER.** Each is emitted by one generator from a grammar
 file in `rhizomes/_grammars/`, and each declares stolons naming the siblings it advertises and does
 not contain. All six directed edges exist: every body names both others.
 
@@ -665,6 +665,15 @@ self-applications — *The Empty Bracket*, an AI Overview that rendered the fram
 empty citation bracket after the sentence naming the self-audit program; *The Self-Audit Module
 Dissolved*, PER 1.00. **The measurement of erasure has itself been erased, and the erasures were measured
 while they happened.**
+
+**[`leesharks/heteronyms`](https://huggingface.co/datasets/leesharks/heteronyms)**
+— {het_line}. Non-singular authorship: **twenty-six declared identities**, and the subcategory field is the
+archive's own taxonomy rather than an imposed one — twelve canonical Twelve, seven Assembly Chorus mantles,
+two orthonym collaborators, an aperture, a non-human institutional persona, an adjacent heteronym, two
+provenanced historical figures. **Its primary datum is that the apparatus stops at the Dodecad while the
+roster does not**: eight fields sit at exactly 12 of 26, `het_id` reaches 11, and the missing identifier is
+inside the Twelve. The experiment it makes possible has not been run — **whether retrieval collapses
+twenty-six declared identities into one.**
 
 **What that dataset is and is not.** It is a map of the research — mechanisms, measures,
 interventions, corrections — assembled from deposits that already exist. **It is NOT a
@@ -724,6 +733,7 @@ def main():
         rev_line=_SPORE["revelation-first"],
         spxi_line=_SPORE["spxi-mpai"],
         per_line=_SPORE["provenance-erasure"],
+        het_line=_SPORE["heteronyms"],
         configs='\n'.join(cfg), n_dep=len(frames['deposits']),
         N_CONFIGS=len(frames), N_DEPOSITS=f"{len(frames['deposits']):,}",
         built=dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d %H:%MZ')))

@@ -17,7 +17,7 @@ Where provenance disappears, and what measures it. A transformation chain — so
 
 ## Counts
 
-**344** nodes · **254** core · **90** neighbour · **151** edges · **5** stolons
+**344** nodes · **254** core · **90** neighbour · **151** edges · **6** stolons
 
 ## Roles
 
@@ -55,6 +55,8 @@ A node matching nothing falls to `unroled`, whose count is this grammar's own er
   whether an inscription survived is measured here; whether it was placed well is specified there. Deliverable ten, the declared SIM set, is an anti-erasure technology.
 - **`revelation-first`** — `adjudicated_in` from `concept:documentary-authority`
   a chronology settled on a late and ambiguous witness is an attribution question at historical scale. THE INSTRUMENTS HERE HAVE NEVER BEEN RUN ON IT.
+- **`heteronyms`** — `borne_by` from `concept:attribution`
+  PER scores whether a byline survived. That body holds the bylines, and its apparatus covers twelve of twenty-six.
 
 ## Reproducing it
 
