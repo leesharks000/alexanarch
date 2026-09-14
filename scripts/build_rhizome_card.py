@@ -18,6 +18,14 @@ import json, pathlib, sys
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 
+def counts_line(body_dir):
+    """The hand-authored card is not regenerated, so its counts go stale silently. The
+    skip message now prints what the spore says, so a build makes the drift visible."""
+    import json as _j
+    c = _j.loads((body_dir / "spore.json").read_text(encoding="utf-8")).get("counts", {})
+    return f"{c.get('nodes')} nodes / {c.get('edges')} edges / {c.get('stolons')} stolons"
+
+
 def card(g, body_dir):
     b = g["body"]
     files = {f.stem: f for f in body_dir.glob("*.jsonl")}
@@ -150,7 +158,8 @@ def main():
     body = ROOT / "rhizomes" / g["body"]["slug"]
     out = body / "README.md"
     if out.exists() and g["body"]["slug"] == "model-collapse-anti-collapse":
-        print(f"  {g['body']['slug']}: card is hand-authored, left alone")
+        print(f"  {g['body']['slug']}: card is hand-authored, left alone — "
+              f"spore says {counts_line(body)}; VERIFY THE CARD STATES THIS")
         return
     out.write_text(card(g, body), encoding="utf-8")
     print(f"  {g['body']['slug']}: card written, {out.stat().st_size} bytes")

@@ -28,7 +28,7 @@ respect for the entity at that address rather than in disregard of it.
 
 **EA-RHIZOME-MC-01 · v0.1 · a rhizome of the [Crimson Hexagonal Archive](https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive)**
 
-222 nodes (115 core, 107 neighbour) · 140 typed edges · 7 stolons
+563 nodes (378 core, 185 neighbour) · 369 typed edges · 8 stolons
 
 ## What a rhizome is here
 
@@ -47,7 +47,7 @@ dataset *in its construction*, not only about anti-collapse.
 
 ## The empirical arm
 
-**109 of the archive's 419 captures are in this dataset**, 64 of them carrying a Provenance Erasure Rate.
+**118 of the archive's 426 captures are in this dataset.**
 A capture records what a composition surface actually did — substituted an entity, declined to search,
 returned a different figure on an identical prompt, dropped an attribution. **They are the observations
 this field otherwise theorises about.**
@@ -147,9 +147,11 @@ its components are declared rather than measured.
 | neighbour | one typed hop from core, restricted to the follow set |
 | frontier | the second hop — emitted as a **stolon** and NOT included |
 
-**A keyword pass over titles and descriptions returns 361 deposits.** That is the failure this
+**A keyword pass over titles and descriptions returns 330 deposits.** That is the failure this
 rule exists to prevent: model collapse becomes the whole archive because everything eventually
 touches everything. Selection on `defines_concept` — a deposit's own declaration — returns 57.
+
+**Both figures moved on 12 September 2026** when the select pattern was widened to carry the archive's compression apparatus — the holographic kernel, the Three Compressions, NLCC, the Information Bottleneck bridge — which had scored OUT of a body about collapse. The gap they illustrate did not close: **330 by keyword against 90 by declaration**, and the body admits 291 deposits on rules that read a deposit's own statements rather than its vocabulary.
 
 **A second registry defect, found the same way.** #678 SYMBOLON-02 *records the failure of SYMBOLON-01's
 strongest defensive claim* — a disconfirmed anti-collapse technology, which is the most valuable kind of
@@ -198,6 +200,7 @@ rather than pulled in:
 - `concept:machine-reception` --observed_in--> **machine-mediated-reception** — the capture registry holds the observations; 411 captures are not reproduced here
 - `concept:archive-resilience` --practised_as--> **archive-resilience** — substrate multiplication, mirrors and custody as operational practice
 - `concept:erratum` --corrected_in--> **epistemic-corrections** — the errata slate is a body in its own right; a correction preserved is anti-collapse by function
+- `concept:compression` --expanded_in--> **revelation-first** — the inverse operation, and a test case this body cannot run. The midrashim transform claims a seed-text unfolded INTO a corpus: letters become epistles, Lamb becomes atonement, operative apocalypse becomes gospel narrative. **That is expansion from a compressed source, where this body measures whether compression preserves.**
 
 ## Files
 
