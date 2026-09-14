@@ -9,7 +9,7 @@
   "topology": "transformation-chain"
  },
  "grammar_id": "GRAM-PER-01",
- "version": "0.3",
+ "version": "0.4",
  "germinated_from": {
   "advertisers": [
    {
@@ -61,7 +61,7 @@
  "the_core_claim": "#716 states it in one sentence: A SYSTEM CAN PRESERVE CONTENT WHILE ERASING THE AUTHORIAL OR DOCUMENTARY RELATION THAT MADE THE CONTENT AVAILABLE.\n\nThat is why PER is not a similarity measure, not a citation-precision measure, and not a faithfulness measure. It scores one thing: whether the relation survived.",
  "self_application": "THE BODY'S DISTINGUISHING PROPERTY, AND IT IS NOT A CURIOSITY. The measurement of erasure has itself been erased, repeatedly, and the erasures were measured while they happened.\n\n#169 THE EMPTY BRACKET: a June 2026 AI Overview rendered the author and framework accurately and left AN EMPTY CITATION BRACKET after the sentence naming the self-audit program. A fresh verbatim query returned an answer sourced entirely to the Self-Audit Module. Classified as a dropped citation rather than an invented claim — 'provenance erasure performed on the specification designed to measure provenance erasure.'\n\n#198 THE SELF-AUDIT MODULE DISSOLVED: total erasure of the same specification. PER 1.00.\n\n#129 THE APPARATUS TURNS INWARD: the instrument self-applied.\n\nA body whose instruments have been dissolved while measuring is not a body with a flaw. It is a body with a result.",
  "select": {
-  "pattern": "provenance erasure|erasure rate|erasure skew|atomic token rule|measurement sovereignty|audit.?performance bifurcation|self.?audit module|lucente extension|claim status packet|four interfaces of provenance|process provenance|artifact provenance|\\bC2PA\\b|attribution (?:loss|survival|retention|indicator|marker)|dropped citation|empty bracket|citation (?:precision|survival)|compression.survival|retrieval capital|wound gauge|non-mutual extraction|second.?order erasure|rebuttal.as.warrant|\\bDSL\\b|\\bQFS\\b|\\bSAS\\b|\\bABN\\b|rank-[0-9] precondition|elicited counterfactual|toshakhana|colonial loot|before the machines|sophistical refutations 183b|the particle|suppress|inversion|authenticated slop|fluency can be generated|\\bPER\\b(?=[\\s:=,)\\]]{0,3}(?:score|rate|value|=|:|\\d))|provenance.erasure.rate|\\bPER-[MCD]\\b",
+  "pattern": "provenance erasure|erasure rate|erasure skew|atomic token rule|measurement sovereignty|audit.?performance bifurcation|self.?audit module|lucente extension|claim status packet|four interfaces of provenance|process provenance|artifact provenance|\\bC2PA\\b|attribution (?:loss|survival|retention|indicator|marker)|dropped citation|empty bracket|citation (?:precision|survival)|compression.survival|retrieval capital|wound gauge|non-mutual extraction|second.?order erasure|rebuttal.as.warrant|\\bDSL\\b|\\bQFS\\b|\\bSAS\\b|\\bABN\\b|rank-[0-9] precondition|elicited counterfactual|toshakhana|colonial loot|before the machines|sophistical refutations 183b|the particle|suppress|inversion|authenticated slop|fluency can be generated|\\bPER\\b(?=[\\s:=,)\\]]{0,3}(?:score|rate|value|=|:|\\d))|provenance.erasure.rate|\\bPER-[MCD]\\b|deep time|first summary layer|four.vector loss|recognition deficit|witness table|the crossing|headless treatise|re.?aeolici[sz]ation|survival.by.quotation|channel.boundary|transmitted continuation|suppression map|loss.profile|transform signature|frozen operator|counter.stack|inseparability engine|technology suppression|pre.registered clause|degradation order|causal class|queen's seizure|re.fired king|the sign under test|undoing the suppression",
   "flags": "I",
   "note": "PER IS ALSO THE PREPOSITION 'PER', AND v0.1 DID NOT KNOW THAT. A bare \\bPER\\b filed 'Caution (per PRAXIS)', 'Concept (per TECHNE)', 'Configurable witness pools (per Gemini)' and 'byproduct per-client census counter' as metrics — 18 of 69. The token now counts only where it stands as an identifier: followed by score, rate, value, a number, a comparison, or the named variants PER-C, PER-D, PER-M. Everything else is selected by an instrument's full name."
  },
@@ -87,14 +87,14 @@
    "note": "what runs before any metric, in an order the module calls load-bearing. ABN is rank zero."
   },
   {
+   "role": "before_the_machines",
+   "pattern": "before the machine|deep time|first summary layer|2,?600.year|transhistorical|four.vector loss|recognition deficit|\\bΔ ?= ?W|witness table|twelve.station|the crossing|channel.boundary|headless treatise|re.?aeolici[sz]ation|survival.by.quotation|sophistical refutations|the particle|toshakhana|colonial loot|bureaucratic removal|philolog|scribal|copyist|palimpsest|doxograph|florilegi|catena|scholia|colophon|transmitted continuation|author.?slot|operator.legibility|suppression map|loss.profile|transform signature|frozen operator|counter.stack|inseparability engine|technology suppression|pre.registered clause|degradation order|causal class|queen's seizure|re.fired king|the sign under test|undoing the suppression",
+   "note": "DOMAIN 2 AND THE FRAMEWORK'S SECOND SPINE, not background to it. Erasure with a 2,600-year measurable record, its own four-vector loss model, its own deficit Δ = W − R, and a twelve-station witness table in which attribution dies at the channel-boundary rather than with time. THE BODY CARRIED FOUR NODES FOR THIS BEFORE THE SITE'S DEEP-TIME WING WAS READ.\n\nAND THE WING'S OWN CHAIN WAS ENTIRELY ABSENT UNTIL ITS VOCABULARY WAS READ. #1512 Deep Time is a SURFACE RECORD — a short pointer to the live page, naming its chips: #1493 The Queen's Seizure and the Re-fired King, #1494 The Transform Signature Frozen, #1495 The Sign Under Test, #1496 The Suppression Map, #1497 Undoing the Suppression: The Counter-Stack. ALL FIVE SCORED OUT, because a grammar built from the site's section headings does not contain the words its deposits are titled with."
+  },
+  {
    "role": "process_provenance",
    "pattern": "process provenance|artifact provenance|\\bC2PA\\b|authenticated slop|what was prompted|what was rejected|disclosure says",
    "note": "the third dimension the site adds to C2PA and PER. 'Fluency can be generated. Provenance must be borne.'"
-  },
-  {
-   "role": "before_the_machines",
-   "pattern": "before the machines|toshakhana|colonial|bureaucratic removal|sophistical refutations|the particle|deep time|historical erasure",
-   "note": "Domain 2. Erasure is older than the composition layer, and the site argues it at Sophistical Refutations 183b."
   },
   {
    "role": "reception",
@@ -108,8 +108,8 @@
   },
   {
    "role": "theory",
-   "pattern": "non-mutual extraction|bearing|what is lost|account of|argument|thesis|finding|interface",
-   "note": "the reasoning about what erasure is"
+   "pattern": "non-mutual extraction|what is lost|provenance is what|attribution survival|bearing (?:cost|the)|retrieval settlement|compositional authority|attribution scar|suppression burden|semantic liquidation|erosion|counterfeit ortho",
+   "note": "the reasoning about what erasure IS. A first pattern used generic words — argument, thesis, finding, interface — and filed Logotic Hacking, the Constitution of the Semantic Economy and a Pessoagraph workplan as provenance theory. OTHER FRAMEWORKS ARE NOT THIS ONE'S THEORY."
   },
   {
    "role": "evidence",
@@ -241,6 +241,12 @@
   "dissolved": "#198 — the module queried, absorbed, stripped, repackaged, and scored PER 1.00",
   "note": "THE SITE SAYS THE MODULE SURVIVES THERE IN FIVE VERSIONS WITH FULL BODIES, AFTER ZENODO DELETED THE DOI ON 19 JUNE 2026. 'Zenodo deleted a DOI, not the instrument.' Two of the five are SUPERSEDED in the registry and are in this body anyway, because a superseded version of an instrument is part of the instrument's record and the site keeps all five."
  },
- "title_rule_words": "rate|rule|module|skew|sovereignty|erasure|audit|provenance|attribution|interface|packet|extension|precondition|metric|instrument|bracket|dissolv|gauge|particle",
- "title_rule_note": "RULE C ADMITS A DEPOSIT WHOSE TITLE DECLARES A NAMED INSTRUMENT, because five of this framework's central deposits declare ZERO concepts and the graph cannot otherwise see them. The word list was hardcoded in the emitter as the collapse body's vocabulary and kept #1528, 'Four Interfaces of Provenance Transformation', out of this body — a v3.1 extension of the module, excluded for containing none of another framework's instrument words. It is now declared here."
+ "title_rule_words": "rate|rule|module|skew|sovereignty|erasure|audit|provenance|attribution|interface|packet|extension|precondition|metric|instrument|bracket|dissolv|gauge|particle|deep time|witness|crossing|treatise|continuation|philolog|suppression|map|signature|operator|stack|engine|seizure|king|sign",
+ "title_rule_note": "RULE C ADMITS A DEPOSIT WHOSE TITLE DECLARES A NAMED INSTRUMENT, because five of this framework's central deposits declare ZERO concepts and the graph cannot otherwise see them. The word list was hardcoded in the emitter as the collapse body's vocabulary and kept #1528, 'Four Interfaces of Provenance Transformation', out of this body — a v3.1 extension of the module, excluded for containing none of another framework's instrument words. It is now declared here.",
+ "the_second_spine": {
+  "what": "THE HISTORICAL WING, AND THE BODY CARRIED FOUR NODES FOR IT. #1485 states the case against the framework's own surface: 'The surface presents its instruments as measurements of what AI summary layers do to attribution; THAT PRESENTATION IS TRUE AND RADICALLY UNDERSIZED.'",
+  "deep_time": "#1512, live at provenanceerasure.org/deep-time/. Provenance erasure as a process with a 2,600-YEAR MEASURABLE RECORD. It carries its own apparatus: the FOUR-VECTOR LOSS MODEL — structure, material, attribution, operator-legibility — the technology-suppression signature, and the RECOGNITION DEFICIT Δ = W − R. A twelve-station witness table scored from verified philology, with THE CROSSING marked as a rule inside the table: the entry into Jewish-Greek prose where attribution drops to zero in every witness at once. And a survival chart in which structure holds high across all witnesses while ATTRIBUTION DIES AT THE CHANNEL-BOUNDARY RATHER THAN WITH TIME.",
+  "five_cases": "#1485's philological record, each scored in the site's own M/C/D vocabulary: THE HEADLESS TREATISE, whose author-slot has stood open as a disjunction since the tenth century and whose erasure is legible AS an erasure; FOUR NAMED REMOVALS of the transmitted continuation of Sappho 31 across four centuries, each a deep-provenance event while the author atom stays intact — a shape the scalar cannot report; THE SILENT RE-AEOLICIZATION, a deep-provenance violation committed by the provenance apparatus itself, the repairing hand present in every accent and attributed in none; and the Sappho corpus at large, where survival is by quotation.",
+  "why_it_matters_to_the_metric": "PER is a scalar and these cases include shapes it cannot report — a deep-provenance event with the author atom intact scores as retention. The historical wing is not background to the metric; IT IS WHERE THE METRIC'S LIMITS WERE FOUND."
+ }
 }

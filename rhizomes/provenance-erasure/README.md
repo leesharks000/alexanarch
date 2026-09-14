@@ -17,7 +17,7 @@ Where provenance disappears, and what measures it. A transformation chain — so
 
 ## Counts
 
-**195** nodes · **127** core · **68** neighbour · **100** edges · **7** stolons
+**219** nodes · **147** core · **72** neighbour · **117** edges · **7** stolons
 
 ## Roles
 
@@ -31,11 +31,13 @@ A FIRST READING SCATTERED THEM. #156 filed as magnitude because its subtitle lis
 | `magnitude` | PER and its M/C/D dimensions — HOW MUCH IS LOST. With the unit rule that says what may be counted, because a PER on the wrong unit is a different metric. |
 | `orientation` | Ω — WHICH WAY IT FALLS. Not a programme beside the metric: the second axis of one framework. 'A rate without an orientation cannot tell you who was erased.' |
 | `precondition` | what runs before any metric, in an order the module calls load-bearing. ABN is rank zero. |
+| `before_the_machines` | DOMAIN 2 AND THE FRAMEWORK'S SECOND SPINE, not background to it. Erasure with a 2,600-year measurable record, its own four-vector loss model, its own deficit Δ = W − R, and a twelve-station witness table in which attribution dies at the channel-boundary rather than with time. THE BODY CARRIED FOUR NODES FOR THIS BEFORE THE SITE'S DEEP-TIME WING WAS READ.
+
+AND THE WING'S OWN CHAIN WAS ENTIRELY ABSENT UNTIL ITS VOCABULARY WAS READ. #1512 Deep Time is a SURFACE RECORD — a short pointer to the live page, naming its chips: #1493 The Queen's Seizure and the Re-fired King, #1494 The Transform Signature Frozen, #1495 The Sign Under Test, #1496 The Suppression Map, #1497 Undoing the Suppression: The Counter-Stack. ALL FIVE SCORED OUT, because a grammar built from the site's section headings does not contain the words its deposits are titled with. |
 | `process_provenance` | the third dimension the site adds to C2PA and PER. 'Fluency can be generated. Provenance must be borne.' |
-| `before_the_machines` | Domain 2. Erasure is older than the composition layer, and the site argues it at Sophistical Refutations 183b. |
 | `reception` | what surfaces did with the instruments. Named shapes rather than generic loss — including the battery where a surface fabricated replacement metrics, ran them on itself, and gave itself perfect scores across all dimensions. |
 | `self_application` | the instrument applied to itself. The Self-Audit Module Dissolved, PER 1.00. The Empty Bracket. |
-| `theory` | the reasoning about what erasure is |
+| `theory` | the reasoning about what erasure IS. A first pattern used generic words — argument, thesis, finding, interface — and filed Logotic Hacking, the Constitution of the Semantic Economy and a Pessoagraph workplan as provenance theory. OTHER FRAMEWORKS ARE NOT THIS ONE'S THEORY. |
 | `evidence` | where an instrument was pointed. Beneath the apparatus, not in front of it. |
 | `unroled` | the honest floor |
 
