@@ -17,7 +17,7 @@ Where provenance disappears, and what measures it. A transformation chain — so
 
 ## Counts
 
-**190** nodes · **123** core · **67** neighbour · **99** edges · **7** stolons
+**195** nodes · **127** core · **68** neighbour · **100** edges · **7** stolons
 
 ## Roles
 
@@ -25,10 +25,12 @@ Where provenance disappears, and what measures it. A transformation chain — so
 
 | role | what it names |
 | --- | --- |
+| `instrument` | THE MODULE AND ITS CHAIN. Five versions survive on the site: #780, #156 v3, #817 v3.1 with its three extensions — #1527 the Lucente Extension carrying ABN, #1528 Four Interfaces, #1529 the Claim Status Packet — and #1530 v3.2, made self-complete 'because by v3.1 the chain had reached four deposits and a module that cannot be run from one document is a changelog rather than a module.'
+
+A FIRST READING SCATTERED THEM. #156 filed as magnitude because its subtitle lists PER and DSL; #1530 and #1527 as precondition because they carry ABN. The module is the module whatever its subtitle leads with, and it is matched by name. |
 | `magnitude` | PER and its M/C/D dimensions — HOW MUCH IS LOST. With the unit rule that says what may be counted, because a PER on the wrong unit is a different metric. |
 | `orientation` | Ω — WHICH WAY IT FALLS. Not a programme beside the metric: the second axis of one framework. 'A rate without an orientation cannot tell you who was erased.' |
 | `precondition` | what runs before any metric, in an order the module calls load-bearing. ABN is rank zero. |
-| `instrument` | the module and its metrics. Five versions; v3.2 self-complete, 'because a module that cannot be run from one document is a changelog rather than a module.' |
 | `process_provenance` | the third dimension the site adds to C2PA and PER. 'Fluency can be generated. Provenance must be borne.' |
 | `before_the_machines` | Domain 2. Erasure is older than the composition layer, and the site argues it at Sophistical Refutations 183b. |
 | `reception` | what surfaces did with the instruments. Named shapes rather than generic loss — including the battery where a surface fabricated replacement metrics, ran them on itself, and gave itself perfect scores across all dimensions. |
@@ -37,9 +39,11 @@ Where provenance disappears, and what measures it. A transformation chain — so
 | `evidence` | where an instrument was pointed. Beneath the apparatus, not in front of it. |
 | `unroled` | the honest floor |
 
-ORDER IS THE SITE'S, AND MAGNITUDE AND ORIENTATION LEAD TOGETHER because the site says they are the two moments of one loss. Preconditions next, because the module runs them before any metric and calls the order load-bearing. Then the instruments that produce a number, then the domains the framework claims, then the named pathologies, then self-application, then evidence.
+ORDER IS THE SITE'S, WITH ONE CORRECTION LEARNED BY EMITTING IT. The named instrument leads, because every version of the module carries PER and DSL in its subtitle and a magnitude-first classifier files the module as the metric — #156 v3 did exactly that, twice.
 
-TWO EARLIER GRAMMARS PUT MY OWN CATEGORIES HERE AND BOTH MISSED THE FRAMEWORK'S CENTRAL PAIR.
+Then magnitude and orientation, which the site says are the two moments of one loss: 'PER measures the first, Ω the second — A RATE WITHOUT AN ORIENTATION CANNOT TELL YOU WHO WAS ERASED.' Then the preconditions the module runs before any metric, in an order it calls load-bearing. Then the domains the framework claims, the named reception shapes, self-application, theory, and evidence last.
+
+EVIDENCE IS LAST BECAUSE A CAPTURE IS WHERE AN INSTRUMENT WAS POINTED. An earlier grammar put it high and the body became its own evidence file.
 
 A node matching nothing falls to `unroled`, whose count is this grammar's own error bar.
 
