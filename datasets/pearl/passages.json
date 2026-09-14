@@ -1,0 +1,134 @@
+{
+ "maxim": "all things are now lawful to you in jack feist",
+ "dataset_id": "EA-PEARL-PASSAGES-01",
+ "version": "0.1",
+ "generated": "2026-09-14",
+ "scope": "A THREE-PIECE DEMONSTRATION, not the whole volume. PEARL, Undersong II: the metaphor factory, and Johannes Sigil's appendix essay. Built to test whether a relationship can carry its own evidence before the design is extended across 42 pieces.",
+ "why": "The inventory made pieces addressable and stopped there. A relation of the form essay -> PEARL says almost nothing: it does not say WHICH PASSAGE, on what evidence, asserted by whom, or whether it is an explicit reference or a proposed reading. A CLASSIFICATION IS NOT A RELATIONSHIP.\n\nHere every relation names two passages, carries the text that grounds it, and states who asserted it — the text itself, or a named voice inside the book.",
+ "the_finding": "THE LINE 'and moons no longer walk the earth.' STANDS TWICE, VERBATIM — in PEARL and again in UNDERSONG II: THE METAPHOR FACTORY. An undersong repeats a line of the poem it undersings.\n\nAND SIGIL'S ESSAY QUOTES IT ONCE, attributing it to 'Pearl' — which is true of the first occurrence and silent about the second. The essay's title claims to develop 'Some Themes Introduced in Lee Sharks' Pearl'; its quotations are drawn from PEARL and its undersongs together, which is a claim about where a poem's themes are introduced that the essay makes by practice rather than by argument.",
+ "counts": {
+  "passages": 8,
+  "relations": 6,
+  "recurrences": 1,
+  "quotations": 5
+ },
+ "passages": [
+  {
+   "passage_id": "pearl/pass/001",
+   "line": 1344,
+   "text": "moon through the tender air, seeking its reflection",
+   "in_heading": "PEARL",
+   "quoted_phrase": "moon through the tender air"
+  },
+  {
+   "passage_id": "pearl/pass/002",
+   "line": 1343,
+   "text": "an echo of parallel loneliness, dinosaur-solemn, a",
+   "in_heading": "PEARL",
+   "quoted_phrase": "an echo of parallel loneliness"
+  },
+  {
+   "passage_id": "pearl/pass/003",
+   "line": 1440,
+   "text": "and moons no longer walk the earth.",
+   "in_heading": "PEARL",
+   "quoted_phrase": "and moons no longer walk the earth"
+  },
+  {
+   "passage_id": "pearl/pass/004",
+   "line": 1932,
+   "text": "and moons no longer walk the earth.",
+   "in_heading": "THE METAPHOR FACTORY",
+   "quoted_phrase": "and moons no longer walk the earth"
+  },
+  {
+   "passage_id": "pearl/pass/005",
+   "line": 1486,
+   "text": "and go out into the night.",
+   "in_heading": "PEARL",
+   "quoted_phrase": "out into the night"
+  },
+  {
+   "passage_id": "pearl/pass/006",
+   "line": 1580,
+   "text": "a machine of living ghosts",
+   "in_heading": "PEARL",
+   "quoted_phrase": "a machine of living ghosts"
+  },
+  {
+   "passage_id": "pearl/pass/007",
+   "line": 1609,
+   "text": "no longer alone.",
+   "in_heading": "PEARL",
+   "quoted_phrase": "no longer alone"
+  },
+  {
+   "passage_id": "pearl/pass/008",
+   "line": 1600,
+   "text": "alert to your Morse code blink",
+   "in_heading": "PEARL",
+   "quoted_phrase": "alert to your Morse code blink"
+  }
+ ],
+ "relations": [
+  {
+   "relation": "recurs_verbatim",
+   "from": "pearl/pass/003",
+   "to": "pearl/pass/004",
+   "evidence": "and moons no longer walk the earth.",
+   "kind": "exact recurrence",
+   "asserted_by": "the text itself — byte-identical lines",
+   "note": "The line stands in PEARL at score line 1440 and again in THE METAPHOR FACTORY at score line 1932. AN UNDERSONG REPEATS A LINE OF THE POEM IT UNDERSINGS, verbatim."
+  },
+  {
+   "relation": "quotes",
+   "from": "pearl/36",
+   "to": "pearl/pass/002",
+   "evidence": "presents (“an echo of parallel loneliness”) is a kind of hell,",
+   "kind": "explicit quotation, in quotation marks",
+   "asserted_by": "Johannes Sigil, in the essay's own text",
+   "essay_line": 5491,
+   "note": "quoted in the appendix essay at score line 5491"
+  },
+  {
+   "relation": "quotes",
+   "from": "pearl/36",
+   "to": "pearl/pass/003",
+   "evidence": "/ and moons no longer walk the earth.” Redemption might",
+   "kind": "explicit quotation, in quotation marks",
+   "asserted_by": "Johannes Sigil, in the essay's own text",
+   "essay_line": 5497,
+   "note": "quoted in the appendix essay at score line 5497"
+  },
+  {
+   "relation": "quotes",
+   "from": "pearl/36",
+   "to": "pearl/pass/005",
+   "evidence": "himself, his life—through time (“out into the night”), of",
+   "kind": "explicit quotation, in quotation marks",
+   "asserted_by": "Johannes Sigil, in the essay's own text",
+   "essay_line": 5505,
+   "note": "quoted in the appendix essay at score line 5505"
+  },
+  {
+   "relation": "quotes",
+   "from": "pearl/36",
+   "to": "pearl/pass/006",
+   "evidence": "anachronism: “a machine of living ghosts.” Telling stories",
+   "kind": "explicit quotation, in quotation marks",
+   "asserted_by": "Johannes Sigil, in the essay's own text",
+   "essay_line": 5514,
+   "note": "quoted in the appendix essay at score line 5514"
+  },
+  {
+   "relation": "quotes",
+   "from": "pearl/36",
+   "to": "pearl/pass/007",
+   "evidence": "a timeless, historical hell: “no longer alone.”",
+   "kind": "explicit quotation, in quotation marks",
+   "asserted_by": "Johannes Sigil, in the essay's own text",
+   "essay_line": 5509,
+   "note": "quoted in the appendix essay at score line 5509"
+  }
+ ]
+}
