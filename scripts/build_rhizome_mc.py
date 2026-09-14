@@ -346,8 +346,54 @@ def main():
 
     included = set(core) | set(nb)
 
+    # ---- WORK PRIMITIVES (2026-09-14). A body whose subject is a BOOK cannot take the
+    # deposit as its primitive row. The first poetics body did, and produced nodes that were
+    # documents ABOUT Pearl and captures postdating it by twelve years, carrying concepts and
+    # heteronyms that did not exist when the book was made. It did not look as though the book
+    # had been read, because it had not been.
+    #
+    # A grammar declaring `work_primitives` seats the pieces instead — poems, essays,
+    # manifestos — from a work dataset, with the edges the book itself makes. Outward edges
+    # come after. Bodies declaring none are unaffected.
+    _WORK = _G.get("work_primitives")
+    work_rows, work_rels = [], []
+    if _WORK:
+        wsrc = json.loads((ROOT / _WORK["source"]).read_text(encoding="utf-8"))
+        wmeta = wsrc.get("work", {})
+        for pc in wsrc["pieces"]:
+            pid = pc["piece_id"]
+            work_rows.append({
+                "rhizome_node_id": _B["node_prefix"] + ":" + hashlib.sha256(pid.encode()).hexdigest()[:10],
+                "graph_node_id": pid,
+                "deposit_number": None,
+                "title": pc["title"],
+                "node_type": "piece",
+                "region": pc["section"],
+                "core_rule": "W",
+                "entered_by": "[the work's own contents]",
+                "dynamic_role": role_for(pc["title"] + " " + pc["section"]),
+                "kind": None,
+                "collapse_axis": json.dumps(axes_for(pc["title"] + " " + pc["section"]), ensure_ascii=False),
+                "defines": None,
+                "creator": pc.get("attributed_to"),
+                "date": str(wmeta.get("year") or ""),
+                "evidence_status": "printed",
+                "axn": wmeta.get("canonical_deposit"),
+                "source_uri": None,
+            })
+            for e in pc.get("within_book_edges", []):
+                tgt = next((q["piece_id"] for q in wsrc["pieces"] if q["title"] == e["to"]), None)
+                if tgt:
+                    work_rels.append({"from": pid, "predicate": e["relation"], "to": tgt,
+                                      "basis": "within-book", "note": "declared by the book's own structure"})
+
+    # EXCLUSIVE WORK PRIMITIVES: the pieces are the body, and the deposit sweep is skipped
+    # entirely. Keeping both gave 289 nodes of which 247 were the sweep this rebuild replaces.
+    if _WORK and _WORK.get("exclusive"):
+        included = set()
+
     # ---- rows
-    rows = []
+    rows = list(work_rows)
     for nid in sorted(included):
         n = N.get(nid, {})
         dep = int(nid.split(":")[1]) if nid.startswith("deposit:") and nid.split(":")[1].isdigit() else None
@@ -442,6 +488,17 @@ def main():
                           "basis": "derived-deterministic", "status": "current",
                           "note": "capture-deposit resolver", "asserted_by": "process:resolve_capture_links",
                           "rhizome_role": "observes"})
+
+    # THE BOOK'S OWN EDGES, FIRST. A within-book relation is declared by the work's
+    # structure — an Undersong elaborates the poem it undersings, an appendix essay names
+    # the poem in its title — not derived from the relation ledger, which knows nothing
+    # about the inside of a book.
+    for wr in work_rels:
+        edges.append({"relation_id": None, "source_id": wr["from"], "predicate": wr["predicate"],
+                      "target_id": wr["to"], "target_type": "piece",
+                      "basis": "within-book", "status": "current",
+                      "note": wr["note"], "asserted_by": "the work itself",
+                      "rhizome_role": wr["predicate"]})
 
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "nodes.jsonl").write_text("\n".join(json.dumps(r, ensure_ascii=False) for r in rows) + "\n", encoding="utf-8")
