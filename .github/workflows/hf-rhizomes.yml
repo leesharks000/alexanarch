@@ -54,6 +54,9 @@ jobs:
           - slug: spxi-mpai
             grammar: rhizomes/_grammars/spxi-mpai.json
             repo_var: HF_RHIZOME_SPXI_REPO
+          - slug: provenance-erasure
+            grammar: rhizomes/_grammars/provenance-erasure.json
+            repo_var: HF_RHIZOME_PER_REPO
     steps:
       - name: Debounce — let a burst of merges settle
         if: ${{ github.event_name == 'push' }}

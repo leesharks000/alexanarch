@@ -37,7 +37,7 @@ def _spore_line(slug):
 
 _SPORE = {s: _spore_line(s) for s in
           ("model-collapse-anti-collapse", "semantic-economy", "machine-mediated-reception",
-           "revelation-first", "spxi-mpai")}
+           "revelation-first", "spxi-mpai", "provenance-erasure")}
 
 def sha(s): return hashlib.sha256(s.encode('utf-8')).hexdigest()
 
@@ -573,7 +573,7 @@ This archive emits **rhizomes**: standalone datasets generated from the relation
 deterministic traversal, each shipping a `spore.json` that carries its own recipe — seed rule,
 follow set, depths, and the commit of the ledger it came from.
 
-**FIVE BODIES, AND THEY POINT AT EACH OTHER.** Each is emitted by one generator from a grammar
+**SIX BODIES, AND THEY POINT AT EACH OTHER.** Each is emitted by one generator from a grammar
 file in `rhizomes/_grammars/`, and each declares stolons naming the siblings it advertises and does
 not contain. All six directed edges exist: every body names both others.
 
@@ -612,6 +612,16 @@ its protocol family, MPAI packets, conformance instruments, disambiguation matri
 blocks, compression kernels. Its distinguishing field is deployment status, and its primary datum is that
 **41 of 45 specified deposits — 91% — carry no deployment marker**, twenty-six of them protocols. The
 standard it answers to is its own: *a standing protocol that cannot be checked is a wish.*
+
+**[`leesharks/provenance-erasure`](https://huggingface.co/datasets/leesharks/provenance-erasure)**
+— {per_line}. **The most-advertised unoccupied site in the archive before it was built** — three bodies
+named it with three different predicates. Where provenance disappears, and what measures it. Its core
+claim is one sentence from the founding specification: **a system can preserve content while erasing the
+authorial or documentary relation that made the content available.** Its distinguishing cases are
+self-applications — *The Empty Bracket*, an AI Overview that rendered the framework accurately and left an
+empty citation bracket after the sentence naming the self-audit program; *The Self-Audit Module
+Dissolved*, PER 1.00. **The measurement of erasure has itself been erased, and the erasures were measured
+while they happened.**
 
 **What that dataset is and is not.** It is a map of the research — mechanisms, measures,
 interventions, corrections — assembled from deposits that already exist. **It is NOT a
@@ -670,6 +680,7 @@ def main():
         mmrs_line=_SPORE["machine-mediated-reception"],
         rev_line=_SPORE["revelation-first"],
         spxi_line=_SPORE["spxi-mpai"],
+        per_line=_SPORE["provenance-erasure"],
         configs='\n'.join(cfg), n_dep=len(frames['deposits']),
         N_CONFIGS=len(frames), N_DEPOSITS=f"{len(frames['deposits']):,}",
         built=dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d %H:%MZ')))

@@ -17,7 +17,7 @@ The archive's documentary technologies: SPXI and its protocol family, MPAI packe
 
 ## Counts
 
-**256** nodes · **159** core · **97** neighbour · **113** edges · **4** stolons
+**256** nodes · **159** core · **97** neighbour · **113** edges · **5** stolons
 
 ## Roles
 
@@ -50,6 +50,8 @@ A node matching nothing falls to `unroled`, whose count is this grammar's own er
   the holographic kernel is deliverable eight here and a formal apparatus there. THIS BODY DEPLOYS IT; that body defines what it must satisfy.
 - **`revelation-first`** — `contested_in` from `concept:retrieval-settlement`
   the Revelation work plan's stated aim is that its argument enter the composition layer, and these are the technologies by which an argument is made enterable. WHETHER THEY WORK ON THAT ARGUMENT IS UNTESTED.
+- **`provenance-erasure`** — `scored_in` from `concept:inscription`
+  Whether an inscription survived is measured there; whether it was placed well is specified here. Deliverable ten — the declared SIM set — is an anti-erasure technology whose effect is scored by that body's instruments.
 
 ## Reproducing it
 
