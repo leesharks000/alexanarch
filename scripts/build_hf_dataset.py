@@ -452,6 +452,24 @@ def sources():
                          'text': t, 'text_sha256': sha(t), 'text_words': len(t.split())})
     return pd.DataFrame(rows)
 
+def corpora():
+    """The EA-CORPORA seating manifest — one row per seated corpus.
+
+    THE TEXTS ARE NOT SHIPPED AND THE REASON IS LICENSING, NOT SIZE. 67 seats: 37 assert
+    CC BY-SA (Perseus, First1KGreek packaging over public-domain editions), 3 assert
+    CC BY-NC, 1 GPL-2.0. This dataset is CC BY 4.0, so shipping those texts inside it
+    would relicense someone else's work, and the NC seats could not go in at all.
+    An archive that measures provenance erasure does not perform it on Perseus.
+
+    What ships is what the archive made: which edition, fetched when, normalized how,
+    verified at which loci, hashing to what. That is what makes "verified against the
+    seated texts" a checkable claim rather than an assertion.
+    """
+    src = ROOT/'datasets/corpora/corpora.json'
+    if not src.exists(): return pd.DataFrame()
+    return pd.DataFrame(json.loads(src.read_text(encoding='utf-8'))['seats'])
+
+
 def sites(fleet_dir):
     rows = []
     for repo in sorted(pathlib.Path(fleet_dir).iterdir()):
@@ -662,7 +680,7 @@ mistake the map for the territory, and the rhizome's own card says so.
 
 **Relations, as data — this is the graph.** Nodes are `deposits` rows keyed by `deposit_number` and `axn`; typed edges live in three places, and none of them require similarity search to traverse: the `citations` config (10k+ rows, the full internal edge list), the relation columns below, and the supersession chain. `cites` and `cited_by`: JSON arrays of deposit numbers from the archive's citation graph (also `cites_axn` as identifiers). `related_deposits`: curated relations declared at deposit time. `superseded_by` / `supersedes`: the version chain. `version_series_id`, `series_previous`, `series_next`: neighbours in a declared series. `defines_concepts`: terms this deposit coins, with definitions (the same terms appear as rows in `lexicon`). `record_url`, `axn_uri`, `text_uri`: the canonical web addresses; `doi_legacy` where a pre-2026 Zenodo DOI existed (those DOIs were severed on 2026-06-19 — see `tombstones`). `attachments`: files ingested with the record.
 
-**Other configs.** `sources` — book-length and formerly binary-only works recovered to text (All That Lies Within Me, 234k words; New Human; Cleis; the Logos papers). `heteronyms` — the Dodecad and adjacent figures, with voice signatures, roles, domains. `venues`, `journal_assignments` — the archive's journals and presses and which deposit belongs to which. `reception` — the register of twenty blind machine referee reports on one Aristotle sentence (#1574). `captures` — reception captures from the Capture Registry (how machine surfaces received the archive). `citations` — the full internal edge list. `lexicon` — the lexical minting registry. `predictions` — every falsification condition stated in a deposit, with resolutions. `studies` — the designed/conducted study dashboard. `tombstones` — the 1,136-row Zenodo kill ledger of 2026-06-19. `blog_posts` — the index of the authorial blog surface with AXN crosswalk. `sites` — one row per page of the public fleet of sites that surface the archive.
+**Other configs.** `sources` — book-length and formerly binary-only works recovered to text (All That Lies Within Me, 234k words; New Human; Cleis; the Logos papers). `heteronyms` — the Dodecad and adjacent figures, with voice signatures, roles, domains. `venues`, `journal_assignments` — the archive's journals and presses and which deposit belongs to which. `reception` — the register of twenty blind machine referee reports on one Aristotle sentence (#1574). `captures` — reception captures from the Capture Registry (how machine surfaces received the archive). `citations` — the full internal edge list. `lexicon` — the lexical minting registry. `predictions` — every falsification condition stated in a deposit, with resolutions. `studies` — the designed/conducted study dashboard. `tombstones` — the 1,136-row Zenodo kill ledger of 2026-06-19. `blog_posts` — the index of the authorial blog surface with AXN crosswalk. `sites` — one row per page of the public fleet of sites that surface the archive. `corpora` — **the EA-CORPORA seating manifest**, 67 rows: which edition of each ancient or modern source was seated, from what origin, under what license stated verbatim, normalized how, verified at which loci, and the sha256 of each seat's MANIFEST. **The texts themselves are not shipped and the reason is licensing rather than size** — 37 seats assert CC BY-SA, three CC BY-NC, one GPL-2.0, and this dataset is CC BY 4.0. **An archive that measures provenance erasure does not perform it on Perseus.** The manifest is what makes *verified against the seated texts* a checkable claim: edition, date, normalization, loci, digest.
 
 **Identifiers and citation.** Cite a deposit by its AXN and number: *Sharks, L. (2026). Title. Crimson Hexagonal Archive #N, AXN:hex.FAMILY. https://alexanarch.org/s/records/N/*. The node declaration is at `https://alexanarch.org/.well-known/axn-node.json`; the AXN resolver at `https://alexanarch.org/s/axn/<hex>/`.
 
@@ -674,7 +692,7 @@ mistake the map for the territory, and the rhizome's own card says so.
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--out', default='hf-dataset'); ap.add_argument('--fleet', default=os.environ.get('FLEET_DIR'))
     a = ap.parse_args(); out = ROOT/a.out; out.mkdir(exist_ok=True)
-    frames = {'deposits': deposits(), 'sources': sources(), 'heteronyms': heteronyms(), 'venues': venues(), 'journal_assignments': journal_assignments(), 'reception': reception(), 'captures': captures(), 'citations': citations(), 'entities': entities(), 'relations': relations(), 'nodes': nodes(), 'pessoagraph': pessoagraph(), 'graph_join': graph_join(), 'frames': frame_defs(), 'memberships': memberships(), 'assertions': assertions(), 'lexicon': lexicon(), 'predictions': predictions(), 'studies': studies(), 'tombstones': tombstones(), 'blog_posts': blog_posts()}
+    frames = {'deposits': deposits(), 'sources': sources(), 'heteronyms': heteronyms(), 'venues': venues(), 'journal_assignments': journal_assignments(), 'reception': reception(), 'captures': captures(), 'citations': citations(), 'entities': entities(), 'relations': relations(), 'nodes': nodes(), 'pessoagraph': pessoagraph(), 'graph_join': graph_join(), 'frames': frame_defs(), 'memberships': memberships(), 'assertions': assertions(), 'lexicon': lexicon(), 'predictions': predictions(), 'studies': studies(), 'tombstones': tombstones(), 'blog_posts': blog_posts(), 'corpora': corpora()}
     if a.fleet: frames['sites'] = sites(a.fleet)
     cfg = []
     for name, df in frames.items():
