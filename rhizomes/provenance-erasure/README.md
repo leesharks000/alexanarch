@@ -17,7 +17,7 @@ Where provenance disappears, and what measures it. A transformation chain — so
 
 ## Counts
 
-**344** nodes · **254** core · **90** neighbour · **151** edges · **7** stolons
+**110** nodes · **82** core · **28** neighbour · **53** edges · **7** stolons
 
 ## Roles
 
@@ -25,19 +25,21 @@ Where provenance disappears, and what measures it. A transformation chain — so
 
 | role | what it names |
 | --- | --- |
-| `unit_rule` | what may be counted. #789: decomposing a query into lexical tokens is A DIFFERENT METRIC and a disqualifying error. |
-| `sovereignty_rule` | who may run the audit. #788. The module expressly rejects self-certification. |
-| `self_application` | the instrument applied to itself, and what happened. The body's distinguishing cases. |
-| `skew_analysis` | #146: retention varies with retrieval capital rather than demographic position, and demographic categories are not variables in the estimator |
-| `metric` | a defined quantity with a unit of analysis. #716, #141, #780. |
-| `extraction` | erasure described as something taken rather than something lost |
-| `measurement` | an instrument's output on a date, at an address |
-| `analysis` | the body reasoning about its own instruments |
-| `unroled` | the honest floor; its count is this grammar's error bar |
+| `unit_rule` | what may be counted. #789: a PER computed on lexical tokens is A DIFFERENT METRIC, not a worse one. |
+| `sovereignty_rule` | who may run the audit. #788, and the module's ordered preconditions. |
+| `specification` | the founding definition of a metric. #716. |
+| `instrument` | a thing that can be run. The module, its nine rendering metrics, its family metrics. |
+| `skew_program` | Ω and its measurement program. #146: power-conditioned, not demographic. |
+| `self_application` | the instrument applied to itself, and what happened |
+| `theory` | the reasoning about what erasure is, as distinct from what measures it |
+| `observation` | EVIDENCE, NOT THE BODY. A capture is where an instrument was pointed, and it belongs beneath the instrument rather than in front of it. |
+| `unroled` | the honest floor |
 
-ORDER PUTS THE RULES ABOVE THE OUTPUTS, and a first emission got this backwards. With `metric` first, #789 'Provenance Erasure Rate Under the Atomic Token Rule' matched on PER and filed as a metric — leaving `unit_rule` with one node and `sovereignty_rule` with one, the two roles this grammar argues matter most.
+ORDER IS THE APPARATUS, TOP DOWN, WITH THE RULES ABOVE THE THING THEY GOVERN AND OBSERVATION SECOND TO LAST.
 
-A metric's unit rule and its sovereignty rule are what make its number mean anything. #789 exists because a PER computed on the wrong unit is 'A DIFFERENT METRIC', not a worse one, and #788 exists because a self-certified audit is not an audit. `self_application` and `skew_analysis` follow, because a case where the instrument was turned on itself is a finding rather than a reading, and Ω's power-conditioning is a property of the estimator rather than an output of it.
+The rules lead because #789 is titled 'Provenance Erasure Rate Under the Atomic Token Rule' — it names the metric first and is ABOUT the unit, so a classifier reaching for `specification` first files the unit rule as another specification. It did, twice: once in this body's first emission and once in its rebuild.
+
+Observation is second to last because v0.1 put `measurement` high and mapped every capture to it — 178 of 344 nodes were measurements and 154 of those were captures. THE BODY WAS ITS OWN EVIDENCE FILE. A specification, its unit rule and its sovereignty rule are what make a number mean anything; the instrument makes it obtainable; the capture is where it was pointed.
 
 A node matching nothing falls to `unroled`, whose count is this grammar's own error bar.
 
