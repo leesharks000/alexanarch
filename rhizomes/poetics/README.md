@@ -17,7 +17,7 @@ The poems, the poetics, and what the archive has said about how a poem is read b
 
 ## Counts
 
-**247** nodes · **158** core · **89** neighbour · **124** edges · **7** stolons
+**42** nodes · **0** core · **0** neighbour · **10** edges · **7** stolons
 
 ## Roles
 
@@ -25,16 +25,13 @@ The poems, the poetics, and what the archive has said about how a poem is read b
 
 | role | what it names |
 | --- | --- |
-| `poem` | the made thing |
-| `art_object` | the book as an object whose page is load-bearing. Nothing derived from it replaces it. |
-| `machine_score` | the score. Not the piece. |
-| `poetics` | the account of how the thing works |
-| `seated_source` | the poets on the shelf beside it |
-| `reception` | what happened when a machine read a poem |
-| `apparatus` | what surrounds a work and is not the work |
+| `undersong` | a piece that elaborates another piece in the same book. Three Undersongs and a Footnote, all attached to PEARL. |
+| `essay` | the appendix: essays, manifestos, minutiae |
+| `apparatus` | front matter. Note that two of six are by heteronyms — Sigil introduces, Feist supplies from THE CRIMSON HEXAGON. |
+| `poem` | the made thing. In this book, most of it. |
 | `unroled` | the honest floor |
 
-ORDER PUTS THE MADE THING FIRST AND THE APPARATUS LAST, WHICH INVERTS EVERY OTHER BODY HERE. Elsewhere the instrument leads because the instrument is the contribution. Here the poem leads and a navigation map is what surrounds it — which is the whole reason this body was built.
+ORDER IS THE BOOK'S OWN. Undersong and Footnote before poem, because a piece that elaborates another is a different kind of thing and the generic pattern would swallow it. Apparatus last, because in this body the front matter is what surrounds the work.
 
 A node matching nothing falls to `unroled`, whose count is this grammar's own error bar.
 

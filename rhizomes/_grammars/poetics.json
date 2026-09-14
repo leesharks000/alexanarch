@@ -9,7 +9,7 @@
   "topology": "two-objects"
  },
  "grammar_id": "GRAM-POET-01",
- "version": "0.1",
+ "version": "0.2",
  "why_this_body_exists": "THE POETRY WAS CONTAINED AND NOT PRESENTED AS A DESTINATION. Seven bodies made the apparatus of authorship discoverable and left the writing that apparatus exists for reachable only through it. A visitor could find the instruments for measuring how machines receive literature and not the literature. THIS BODY IS THE DESTINATION.",
  "the_seat": {
   "corpus": "pearl-and-other-poems",
@@ -46,39 +46,24 @@
  },
  "roles": [
   {
-   "role": "poem",
-   "pattern": "\\bpoem\\b|\\bpoems\\b|\\bverse\\b|\\blyric\\b|stanza|\\bsonnet\\b|prose poem|patent.?poem",
-   "note": "the made thing"
+   "role": "undersong",
+   "pattern": "Undersong|Footnote to",
+   "note": "a piece that elaborates another piece in the same book. Three Undersongs and a Footnote, all attached to PEARL."
   },
   {
-   "role": "art_object",
-   "pattern": "art object|typograph|vertical field|lineation|whitespace|page delimiter|first edition|\\bISBN\\b",
-   "note": "the book as an object whose page is load-bearing. Nothing derived from it replaces it."
-  },
-  {
-   "role": "machine_score",
-   "pattern": "machine score|machine.?facing|whitespace fidelity|character grid|per-word|extraction|text layer",
-   "note": "the score. Not the piece."
-  },
-  {
-   "role": "poetics",
-   "pattern": "poetics|prosody|diagrammatic|close reading|\\bmetre\\b|\\bmeter\\b",
-   "note": "the account of how the thing works"
-  },
-  {
-   "role": "seated_source",
-   "pattern": "\\bSappho\\b|\\bCatullus\\b|\\bWhitman\\b|\\bBrowning\\b|fragment 31|originals shelf|EA-CORPORA",
-   "note": "the poets on the shelf beside it"
-  },
-  {
-   "role": "reception",
-   "pattern": "capture|retrieval|composition layer|machine reader|training layer|received",
-   "note": "what happened when a machine read a poem"
+   "role": "essay",
+   "pattern": "MANIFESTO|HISTORY|LITTACHUR|Make It Human|Tradition and the|BACKLASH|Forum Post|EMOTICONS",
+   "note": "the appendix: essays, manifestos, minutiae"
   },
   {
    "role": "apparatus",
-   "pattern": "navigation map|metadata packet|mantle object|structural registration|semantic interface",
-   "note": "what surrounds a work and is not the work"
+   "pattern": "Introduction|Contents|Wiki Article|ALSO BY|Contributor Bio|from THE CRIMSON HEXAGON",
+   "note": "front matter. Note that two of six are by heteronyms — Sigil introduces, Feist supplies from THE CRIMSON HEXAGON."
+  },
+  {
+   "role": "poem",
+   "pattern": "^(?!.*(?:Introduction|Contents|Wiki Article|ALSO BY|Contributor Bio|MANIFESTO|HISTORY|LITTACHUR|Forum Post|BACKLASH|Make It Human|Tradition and the)).*$",
+   "note": "the made thing. In this book, most of it."
   },
   {
    "role": "unroled",
@@ -86,7 +71,7 @@
    "note": "the honest floor"
   }
  ],
- "roles_note": "ORDER PUTS THE MADE THING FIRST AND THE APPARATUS LAST, WHICH INVERTS EVERY OTHER BODY HERE. Elsewhere the instrument leads because the instrument is the contribution. Here the poem leads and a navigation map is what surrounds it — which is the whole reason this body was built.",
+ "roles_note": "ORDER IS THE BOOK'S OWN. Undersong and Footnote before poem, because a piece that elaborates another is a different kind of thing and the generic pattern would swallow it. Apparatus last, because in this body the front matter is what surrounds the work.",
  "default_role": "unroled",
  "special_roles": {
   "capture_measured": "reception",
@@ -162,5 +147,12 @@
    "semantic-economy",
    "A POEM IS SEMANTIC LABOUR THAT NOBODY PAID FOR, which is that body's §4.1 exactly — ontology engineering as semantic labor, the work the value is taken from. Pearl was printed in 2014 by a press the author runs, and the question of who bears the cost of making it is not answered here."
   ]
- ]
+ ],
+ "work_primitives": {
+  "source": "datasets/pearl/pearl.json",
+  "note": "THE PRIMITIVE ROW IS A PIECE, NOT A DEPOSIT. v0.1 of this body took the archive's generic spore shape — deposits, concepts, captures — and applied it to a poetry collection, producing nodes that were documents ABOUT Pearl and captures postdating it by twelve years, carrying concepts and heteronyms that did not exist when the book was made. IT DID NOT LOOK AS THOUGH THE BOOK HAD BEEN READ, BECAUSE IT HAD NOT BEEN.\n\nPearl was then read straight through. Forty-two pieces across four sections, and the edges the book itself makes.",
+  "exclusive": true,
+  "exclusive_note": "PIECES ONLY. A first rebuild seated the 42 pieces AND kept the deposit sweep, giving 289 nodes of which 247 were the unread body this rebuild exists to replace. If the primitive is a piece, the deposit is not also a primitive — it is at most an outward edge, and outward comes after."
+ },
+ "topology_note": "EDGES WITHIN THE BOOK FIRST. Ten of them, structural rather than thematic: the three Undersongs elaborate PEARL and each other in sequence; the Footnote elaborates PEARL; Sigil's appendix essay names Sharks' 'Pearl' in its own title; the Forum Post answers the opening RE:; A TELEPATHICIST MANIFESTO answers the Footnote's 'belief & technique for telepathic prose'. OUTWARD EDGES COME AFTER and are carried by the stolons, not by the node set."
 }
