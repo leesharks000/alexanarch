@@ -704,6 +704,24 @@ def _inline_md(t):
     # [^<>] stops a match spanning an anchor this pass has already made.
     t = re.sub(r'(?<!!)\[([^\]\n<>]{1,120})\]\((https?://[^\s)<>]+|/[^\s)<>]+)\)',
                r'<a href="\2" target="_blank" rel="noopener">\1</a>', t)
+    # 2026-09-13 A SEVERED DOI IS NOT A REFERENCE, IT IS A DEAD END. The Zenodo registrant
+    # severed 1,136 DOIs on 2026-06-19, and a canonical text that names one — many do, in
+    # their own front matter — rendered as a live doi.org link that resolves to nothing.
+    # A reader following it leaves the archive and finds a tombstone or an error.
+    #
+    # The archive mints its own content-derived identifiers and serves a resolution page per
+    # severed DOI at /s/doi/<doi>/, which states what the DOI was, that it was severed, by
+    # whom, and where the record now lives. Linking there instead is not rewriting the text:
+    # THE BYTES STILL SAY THE DOI. Only the destination changes, from a dead registrar to the
+    # archive's own account of what happened to it.
+    def _doi_to_resolution(m):
+        _d = m.group(2)
+        return (f'<a href="/s/doi/{_d}/" title="severed DOI — resolution page">{m.group(1)}</a>')
+    t = re.sub(r'<a href="https://doi\.org/(10\.5281/zenodo\.\d+)"[^>]*>([^<]*)</a>',
+               lambda m: f'<a href="/s/doi/{m.group(1)}/" title="severed 2026-06-19 — archive resolution page">{m.group(2)}</a>', t)
+    # and bare DOIs in running text, which the link renderer above never saw
+    t = re.sub(r'(?<![/">])\b(10\.5281/zenodo\.\d+)\b(?![^<]*</a>)',
+               r'<a href="/s/doi/\1/" title="severed 2026-06-19 — archive resolution page">\1</a>', t)
     # non-greedy and asterisk-permitting: bold frequently wraps an italic,
     # '**Kierkegaard (*Fear and Trembling*, 1843):**', and a [^*] class cannot
     # span the inner pair — three such on #99 alone.
