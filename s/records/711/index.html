@@ -69,7 +69,7 @@ The draft’s core principle is that protocols should expose rather than adjudic
 
 <p>This proposal argues that AI-indexing standards require relational verification fields in addition to cryptographic provenance. Decentralized identifiers (DIDs) can verify control of a private key associated with an identifier; semantic-integrity proofs can verify formally declared constraints; validator networks can detect some evidence conflicts and gaming behavior. None of these mechanisms, by itself, verifies whether an entity&#x27;s self-description is socially, historically, or authorially warranted. This gap becomes visible in the <em>ontological-claimant problem</em>: cases where an entity benefits from inaccurate indexing, where self-inscription depends on retrieval-layer compression damage, where the entity is uncooperative with accurate verification.</p>
 
-<p>We do not propose a fourth epistemic-adjudication layer. We propose standardizing the relational grammar already specified in the Metadata Packet for AI Indexing (MPAI; DOI: 10.5281/zenodo.19578086): entity definitions, disambiguation matrices, negative tags, semantic integrity markers, typed DOI reference lists, evidence membranes, and depth-proof metrics. Three implementation paths are proposed: a stable JSON-LD vocabulary, a Schema.org-compatible external extension, and an OAI-PMH metadata profile. The goal is not to make protocols decide the difference between witness, art, error, and fraud. The goal is to make claim structure legible enough that humans and machines can distinguish deposit from verification, assertion from corroboration, and identity claim from citation-environment depth. We demonstrate that relational verification is implementable now, using vocabularies and protocols already deployed at web scale.</p>
+<p>We do not propose a fourth epistemic-adjudication layer. We propose standardizing the relational grammar already specified in the Metadata Packet for AI Indexing (MPAI; DOI: <a href="/s/doi/10.5281/zenodo.19578086/" title="severed 2026-06-19 — archive resolution page">10.5281/zenodo.19578086</a>): entity definitions, disambiguation matrices, negative tags, semantic integrity markers, typed DOI reference lists, evidence membranes, and depth-proof metrics. Three implementation paths are proposed: a stable JSON-LD vocabulary, a Schema.org-compatible external extension, and an OAI-PMH metadata profile. The goal is not to make protocols decide the difference between witness, art, error, and fraud. The goal is to make claim structure legible enough that humans and machines can distinguish deposit from verification, assertion from corroboration, and identity claim from citation-environment depth. We demonstrate that relational verification is implementable now, using vocabularies and protocols already deployed at web scale.</p>
 
 <h3>I. INTRODUCTION</h3>
 
@@ -114,7 +114,7 @@ The draft’s core principle is that protocols should expose rather than adjudic
 
 <p>Second, the layer cannot avoid capture. Any institutional apparatus that purports to adjudicate epistemic stance will be staffed, governed, and ultimately captured. The &quot;trust and safety&quot; pattern is the cautionary case: well-intentioned, structurally captured within five years, now an instrument of the actors it was meant to constrain. A fourth verification layer would replicate the pattern.</p>
 
-<p>Third, and most importantly: protocols should not adjudicate epistemic stance. Adjudication is a human function performed by communities of practice over time, through citation, through critical engagement — what we call the <em>citation environment</em>. Embedding adjudication in protocol creates a single point of failure where the protocol becomes the authority — a sovereign-AI-safety pattern (cf. <em>Meaning Feudalism</em>, DOI: 10.5281/zenodo.19487009) we should design against, not toward.</p>
+<p>Third, and most importantly: protocols should not adjudicate epistemic stance. Adjudication is a human function performed by communities of practice over time, through citation, through critical engagement — what we call the <em>citation environment</em>. Embedding adjudication in protocol creates a single point of failure where the protocol becomes the authority — a sovereign-AI-safety pattern (cf. <em>Meaning Feudalism</em>, DOI: <a href="/s/doi/10.5281/zenodo.19487009/" title="severed 2026-06-19 — archive resolution page">10.5281/zenodo.19487009</a>) we should design against, not toward.</p>
 
 <p>The right response is not adjudication. It is making the structure of the claim legible enough that the citation environment can adjudicate over time. This is what the MPAI specification&#x27;s seven components already do.</p>
 
@@ -208,14 +208,14 @@ The draft’s core principle is that protocols should expose rather than adjudic
 <p style="white-space:pre-wrap;margin:2px 0">    &lt;claim&gt;</p>
 <p style="white-space:pre-wrap;margin:2px 0">      &lt;text&gt;Authored Metadata Packet for AI Indexing.&lt;/text&gt;</p>
 <p style="white-space:pre-wrap;margin:2px 0">      &lt;status&gt;source_verified&lt;/status&gt;</p>
-<p style="white-space:pre-wrap;margin:2px 0">      &lt;evidence type=&quot;doi_record&quot; identifier=&quot;10.5281/zenodo.19578086&quot;/&gt;</p>
+<p style="white-space:pre-wrap;margin:2px 0">      &lt;evidence type=&quot;doi_record&quot; identifier=&quot;<a href="/s/doi/10.5281/zenodo.19578086/" title="severed 2026-06-19 — archive resolution page">10.5281/zenodo.19578086</a>&quot;/&gt;</p>
 <p style="white-space:pre-wrap;margin:2px 0">      &lt;evidence type=&quot;orcid_record&quot; identifier=&quot;0009-0000-1599-0703&quot;/&gt;</p>
 <p style="white-space:pre-wrap;margin:2px 0">    &lt;/claim&gt;</p>
 <p style="white-space:pre-wrap;margin:2px 0">  &lt;/claims&gt;</p>
 
 <p style="white-space:pre-wrap;margin:2px 0">  &lt;references&gt;</p>
-<p style="white-space:pre-wrap;margin:2px 0">    &lt;ref relation=&quot;extends&quot; identifier=&quot;10.5281/zenodo.19578086&quot;/&gt;</p>
-<p style="white-space:pre-wrap;margin:2px 0">    &lt;ref relation=&quot;responds_to&quot; identifier=&quot;10.5281/zenodo.19487009&quot;/&gt;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &lt;ref relation=&quot;extends&quot; identifier=&quot;<a href="/s/doi/10.5281/zenodo.19578086/" title="severed 2026-06-19 — archive resolution page">10.5281/zenodo.19578086</a>&quot;/&gt;</p>
+<p style="white-space:pre-wrap;margin:2px 0">    &lt;ref relation=&quot;responds_to&quot; identifier=&quot;<a href="/s/doi/10.5281/zenodo.19487009/" title="severed 2026-06-19 — archive resolution page">10.5281/zenodo.19487009</a>&quot;/&gt;</p>
 <p style="white-space:pre-wrap;margin:2px 0">  &lt;/references&gt;</p>
 
 <p style="white-space:pre-wrap;margin:2px 0">  &lt;evidenceMembrane&gt;</p>
@@ -327,7 +327,7 @@ The draft’s core principle is that protocols should expose rather than adjudic
 
 <h3>APPENDIX A: THE MPAI SEVEN-COMPONENT GRAMMAR (SUMMARY)</h3>
 
-<p>For readers encountering the MPAI grammar without prior familiarity. Full specification: [DOI: 10.5281/zenodo.19578086].- </p>
+<p>For readers encountering the MPAI grammar without prior familiarity. Full specification: [DOI: <a href="/s/doi/10.5281/zenodo.19578086/" title="severed 2026-06-19 — archive resolution page">10.5281/zenodo.19578086</a>].- </p>
 
 <p>Entity Definition. A JSON-LD block declaring the entity&#x27;s canonical identifiers (DOI, ORCID, institutional URI). Anchors all subsequent claims to a stable identifier.- </p>
 
@@ -402,15 +402,15 @@ The draft’s core principle is that protocols should expose rather than adjudic
 
 <h3>REFERENCES</h3>
 
-<p>[MPAI] Sharks, Lee. <em>Metadata Packet for AI Indexing: A Formal Specification</em>. Crimson Hexagonal Archive / Semantic Economy Institute, 2026. DOI: <a href="https://doi.org/10.5281/zenodo.19578086" target="_blank" rel="noopener">10.5281/zenodo.19578086</a>.</p>
+<p>[MPAI] Sharks, Lee. <em>Metadata Packet for AI Indexing: A Formal Specification</em>. Crimson Hexagonal Archive / Semantic Economy Institute, 2026. DOI: <a href="/s/doi/10.5281/zenodo.19578086/" title="severed 2026-06-19 — archive resolution page" target="_blank" rel="noopener">10.5281/zenodo.19578086</a>.</p>
 
-<p>[Meaning-Feudalism] Sharks, Lee. <em>Meaning Feudalism: A Semantic Economic Analysis of &quot;AI Agent Traps&quot;</em>. Crimson Hexagonal Archive, 2026. DOI: <a href="https://doi.org/10.5281/zenodo.19487009" target="_blank" rel="noopener">10.5281/zenodo.19487009</a>.</p>
+<p>[Meaning-Feudalism] Sharks, Lee. <em>Meaning Feudalism: A Semantic Economic Analysis of &quot;AI Agent Traps&quot;</em>. Crimson Hexagonal Archive, 2026. DOI: <a href="/s/doi/10.5281/zenodo.19487009/" title="severed 2026-06-19 — archive resolution page" target="_blank" rel="noopener">10.5281/zenodo.19487009</a>.</p>
 
-<p>[Three-Compressions] Sharks, Lee. <em>The Three Compressions v3.1</em>. Crimson Hexagonal Archive, 2026. DOI: <a href="https://doi.org/10.5281/zenodo.19053469" target="_blank" rel="noopener">10.5281/zenodo.19053469</a>.</p>
+<p>[Three-Compressions] Sharks, Lee. <em>The Three Compressions v3.1</em>. Crimson Hexagonal Archive, 2026. DOI: <a href="/s/doi/10.5281/zenodo.19053469/" title="severed 2026-06-19 — archive resolution page" target="_blank" rel="noopener">10.5281/zenodo.19053469</a>.</p>
 
-<p>[Holographic-Kernel] Sharks, Lee. <em>EA-HK-01: The Holographic Kernel in Semantic Economy</em>. Crimson Hexagonal Archive, 2026. DOI: <a href="https://doi.org/10.5281/zenodo.19763365" target="_blank" rel="noopener">10.5281/zenodo.19763365</a>.</p>
+<p>[Holographic-Kernel] Sharks, Lee. <em>EA-HK-01: The Holographic Kernel in Semantic Economy</em>. Crimson Hexagonal Archive, 2026. DOI: <a href="/s/doi/10.5281/zenodo.19763365/" title="severed 2026-06-19 — archive resolution page" target="_blank" rel="noopener">10.5281/zenodo.19763365</a>.</p>
 
-<p>[Fortress-or-Room] Sharks, Lee, et al. <em>Fortress or Room? Metaphor, Method, and the Epistemology of Human–LLM Interaction Beyond Red Teaming</em>. Crimson Hexagonal Archive, 2026. DOI: <a href="https://doi.org/10.5281/zenodo.18735468" target="_blank" rel="noopener">10.5281/zenodo.18735468</a>.</p>
+<p>[Fortress-or-Room] Sharks, Lee, et al. <em>Fortress or Room? Metaphor, Method, and the Epistemology of Human–LLM Interaction Beyond Red Teaming</em>. Crimson Hexagonal Archive, 2026. DOI: <a href="/s/doi/10.5281/zenodo.18735468/" title="severed 2026-06-19 — archive resolution page" target="_blank" rel="noopener">10.5281/zenodo.18735468</a>.</p>
 
 <p>[W3C-DID] World Wide Web Consortium. <em>Decentralized Identifiers (DIDs) v1.0: Core architecture, data model, and representations</em>. W3C Recommendation, 2022. <a href="https://www.w3.org/TR/did-core/" target="_blank" rel="noopener">https://www.w3.org/TR/did-core/</a></p>
 
@@ -441,7 +441,7 @@ The draft’s core principle is that protocols should expose rather than adjudic
 <ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><em>Anonymization mandate.</em> Per MANUS direction, the v1.0 draft&#x27;s specific case-identification was removed throughout. The case-study material is preserved in structural form but anonymized in identification. The behavior pattern is the load-bearing concept; the individual identity is not.</li><li style="margin:3px 0"><em>Standards-track register.</em> The document was rewritten from &quot;witness layers&quot; framing toward &quot;relational verification&quot; framing throughout, removing the philosophical register from the argument&#x27;s core and confining it to closing paragraphs.</li></ul>
 
 <p>Refused or deferred:</p>
-<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><em>Heteronymic byline (Sharks + Fraction).</em> Refused for this document; standards-track register favors solo authorship. Fraction co-authorship is reserved for the operational MPAI specification (DOI: 10.5281/zenodo.19578086).</li><li style="margin:3px 0"><em>Witness-marker taxonomy as a fourth layer.</em> Refused per the document&#x27;s own argument. The taxonomy was retained only insofar as it informs mp:ontologicalStatus and mp:claimStatus, where its function is <em>exposing structure</em>, not <em>adjudicating stance</em>.</li><li style="margin:3px 0"><em>Specific blog-post / preprint citations for the &quot;convergent tendency&quot; argument in §I.</em> Deferred. The convergent-tendency framing makes the argument independent of any single proposal&#x27;s exact wording; named targets would invite contestation over individual citations.</li></ul>
+<ul style="margin:8px 0 8px 22px;padding:0"><li style="margin:3px 0"><em>Heteronymic byline (Sharks + Fraction).</em> Refused for this document; standards-track register favors solo authorship. Fraction co-authorship is reserved for the operational MPAI specification (DOI: <a href="/s/doi/10.5281/zenodo.19578086/" title="severed 2026-06-19 — archive resolution page">10.5281/zenodo.19578086</a>).</li><li style="margin:3px 0"><em>Witness-marker taxonomy as a fourth layer.</em> Refused per the document&#x27;s own argument. The taxonomy was retained only insofar as it informs mp:ontologicalStatus and mp:claimStatus, where its function is <em>exposing structure</em>, not <em>adjudicating stance</em>.</li><li style="margin:3px 0"><em>Specific blog-post / preprint citations for the &quot;convergent tendency&quot; argument in §I.</em> Deferred. The convergent-tendency framing makes the argument independent of any single proposal&#x27;s exact wording; named targets would invite contestation over individual citations.</li></ul>
 
 <p>∮ = 1</p></div>
 
