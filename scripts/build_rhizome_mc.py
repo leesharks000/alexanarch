@@ -453,6 +453,29 @@ def main():
                     _keep.add("capture:" + _c["slug"])
         included = included & _keep
 
+    # THE PASSAGE LAYER (2026-09-14). Pieces made the book addressable; passages make the
+    # place inside a piece addressable, which is what a relationship needs to carry evidence.
+    # A grammar declares `passages` beside `source`; bodies that do not are unaffected.
+    if _WORK and _WORK.get("passages"):
+        _ps = json.loads((ROOT / _WORK["passages"]).read_text(encoding="utf-8"))
+        for pg in _ps.get("passages", []):
+            work_rows.append({
+                "rhizome_node_id": _B["node_prefix"] + ":" + hashlib.sha256(pg["passage_id"].encode()).hexdigest()[:10],
+                "graph_node_id": pg["passage_id"], "deposit_number": None,
+                "title": pg["text"][:120], "node_type": "passage",
+                "region": pg.get("in_heading"), "core_rule": "P",
+                "entered_by": "[quoted or repeated inside the book]",
+                "dynamic_role": "passage", "kind": None,
+                "collapse_axis": json.dumps(axes_for(pg["text"]), ensure_ascii=False),
+                "defines": None, "creator": None, "date": None,
+                "evidence_status": "score line " + str(pg.get("line")),
+                "axn": None, "source_uri": None})
+        for rl in _ps.get("relations", []):
+            work_rels.append({"from": rl["from"], "predicate": rl["relation"], "to": rl["to"],
+                              "basis": rl.get("kind") or "within-book",
+                              "note": (rl.get("evidence") or "")[:180],
+                              "asserted_by": rl.get("asserted_by")})
+
     # ---- rows
     rows = list(cur_rows) + list(work_rows)
     for nid in sorted(included):
@@ -577,7 +600,7 @@ def main():
         edges.append({"relation_id": None, "source_id": wr["from"], "predicate": wr["predicate"],
                       "target_id": wr["to"], "target_type": "piece",
                       "basis": "within-book", "status": "current",
-                      "note": wr["note"], "asserted_by": "the work itself",
+                      "note": wr["note"], "asserted_by": wr.get("asserted_by") or "the work itself",
                       "rhizome_role": wr["predicate"]})
 
     OUT.mkdir(parents=True, exist_ok=True)
