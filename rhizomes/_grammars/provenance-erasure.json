@@ -9,7 +9,7 @@
   "topology": "transformation-chain"
  },
  "grammar_id": "GRAM-PER-01",
- "version": "0.1",
+ "version": "0.2",
  "germinated_from": {
   "advertisers": [
    {
@@ -61,66 +61,66 @@
  "the_core_claim": "#716 states it in one sentence: A SYSTEM CAN PRESERVE CONTENT WHILE ERASING THE AUTHORIAL OR DOCUMENTARY RELATION THAT MADE THE CONTENT AVAILABLE.\n\nThat is why PER is not a similarity measure, not a citation-precision measure, and not a faithfulness measure. It scores one thing: whether the relation survived.",
  "self_application": "THE BODY'S DISTINGUISHING PROPERTY, AND IT IS NOT A CURIOSITY. The measurement of erasure has itself been erased, repeatedly, and the erasures were measured while they happened.\n\n#169 THE EMPTY BRACKET: a June 2026 AI Overview rendered the author and framework accurately and left AN EMPTY CITATION BRACKET after the sentence naming the self-audit program. A fresh verbatim query returned an answer sourced entirely to the Self-Audit Module. Classified as a dropped citation rather than an invented claim — 'provenance erasure performed on the specification designed to measure provenance erasure.'\n\n#198 THE SELF-AUDIT MODULE DISSOLVED: total erasure of the same specification. PER 1.00.\n\n#129 THE APPARATUS TURNS INWARD: the instrument self-applied.\n\nA body whose instruments have been dissolved while measuring is not a body with a flaw. It is a body with a result.",
  "select": {
-  "pattern": "provenance erasure|erasure rate|\\bPER\\b|erasure skew|\\bomega\\b|\\bΩ\\b|atomic token|measurement sovereignty|attribution (?:loss|survival|retention)|dropped citation|empty bracket|uncited|unattributed|citation (?:precision|survival)|compression survival|self.?audit|audit.?performance|bifurcation|retrieval capital|wound gauge|non-mutual extraction|bycatch|second.?order erasure|summariz|summaris|composition layer|AI overview|attribution indicator",
+  "pattern": "provenance erasure|erasure rate|erasure skew|atomic token rule|measurement sovereignty|audit.?performance bifurcation|self.?audit module|attribution (?:loss|survival|retention|indicator)|dropped citation|empty bracket|citation (?:precision|survival)|compression.survival|retrieval capital|wound gauge|non-mutual extraction|second.?order erasure|\\bDSL\\b|\\bQFS\\b|\\bSAS\\b|\\bABN\\b|rank-[0-9] precondition|elicited counterfactual|\\bPER\\b(?=[\\s:=,)\\]]{0,3}(?:score|rate|value|=|:|\\d))|provenance.erasure.rate|\\bPER-[CDM]\\b",
   "flags": "I",
-  "note": "Built from the five defining papers and their declared instrument names. The terms are metric names, failure names and case names, not ambient vocabulary."
+  "note": "PER IS ALSO THE PREPOSITION 'PER', AND v0.1 DID NOT KNOW THAT. A bare \\bPER\\b filed 'Caution (per PRAXIS)', 'Concept (per TECHNE)', 'Configurable witness pools (per Gemini)' and 'byproduct per-client census counter' as metrics — 18 of 69. The token now counts only where it stands as an identifier: followed by score, rate, value, a number, a comparison, or the named variants PER-C, PER-D, PER-M. Everything else is selected by an instrument's full name."
  },
  "roles": [
   {
    "role": "unit_rule",
-   "pattern": "atomic token|unit of analysis|granularity|referent|disqualifying|claim.?eligib|preregister",
-   "note": "what may be counted. #789: decomposing a query into lexical tokens is A DIFFERENT METRIC and a disqualifying error."
+   "pattern": "atomic token rule|unit of analysis|claim.?eligib|granularity|referent|disqualifying|preregister",
+   "note": "what may be counted. #789: a PER computed on lexical tokens is A DIFFERENT METRIC, not a worse one."
   },
   {
    "role": "sovereignty_rule",
-   "pattern": "measurement sovereignty|audit.?performance|bifurcation|self.?certif|decoupled|another substrate",
-   "note": "who may run the audit. #788. The module expressly rejects self-certification."
+   "pattern": "measurement sovereignty|audit.?performance|bifurcation|self.?certif|decoupled substrate|rank-[0-9] precondition",
+   "note": "who may run the audit. #788, and the module's ordered preconditions."
+  },
+  {
+   "role": "specification",
+   "pattern": "provenance erasure rate|compression.survival metric|specification|\\bspec\\b|defines the metric|EA-EROSION",
+   "note": "the founding definition of a metric. #716."
+  },
+  {
+   "role": "instrument",
+   "pattern": "self.?audit module|\\bDSL\\b|\\bQFS\\b|\\bSAS\\b|\\bABN\\b|rendering metric|family metric|elicited counterfactual|executable|runnable|calculator",
+   "note": "a thing that can be run. The module, its nine rendering metrics, its family metrics."
+  },
+  {
+   "role": "skew_program",
+   "pattern": "erasure skew|retrieval capital|power.?condition|structural presence|citation density|\\bomega\\b",
+   "note": "Ω and its measurement program. #146: power-conditioned, not demographic."
   },
   {
    "role": "self_application",
-   "pattern": "empty bracket|dissolved|turns inward|self.?applied|performed on the specification|wound gauge|second.?order",
-   "note": "the instrument applied to itself, and what happened. The body's distinguishing cases."
+   "pattern": "empty bracket|dissolved|turns inward|self.?applied|wound gauge|second.?order|performed on the specification",
+   "note": "the instrument applied to itself, and what happened"
   },
   {
-   "role": "skew_analysis",
-   "pattern": "retrieval capital|power.?condition|demographic|structural presence|citation density|canonical status",
-   "note": "#146: retention varies with retrieval capital rather than demographic position, and demographic categories are not variables in the estimator"
+   "role": "theory",
+   "pattern": "non-mutual extraction|bearing|erasure as|what is lost|account of|argument|thesis|finding|interface",
+   "note": "the reasoning about what erasure is, as distinct from what measures it"
   },
   {
-   "role": "metric",
-   "pattern": "\\bPER\\b|erasure rate|erasure skew|\\bomega\\b|\\bΩ\\b|\\bQFS\\b|\\bDSL\\b|\\bSAS\\b|coefficient|weighted proportion",
-   "note": "a defined quantity with a unit of analysis. #716, #141, #780."
-  },
-  {
-   "role": "extraction",
-   "pattern": "non-mutual|extraction registry|bycatch|biolabor|uncompensated|harvest|taken without",
-   "note": "erasure described as something taken rather than something lost"
-  },
-  {
-   "role": "measurement",
-   "pattern": "capture|transcript|observed|baseline|score|measured|battery|run\\b|specimen|exhibit",
-   "note": "an instrument's output on a date, at an address"
-  },
-  {
-   "role": "analysis",
-   "pattern": "theory|thesis|argument|framework|account|note|specification|companion",
-   "note": "the body reasoning about its own instruments"
+   "role": "observation",
+   "pattern": "capture|transcript|baseline|observed|run\\b|specimen|exhibit|battery",
+   "note": "EVIDENCE, NOT THE BODY. A capture is where an instrument was pointed, and it belongs beneath the instrument rather than in front of it."
   },
   {
    "role": "unroled",
    "pattern": ".",
-   "note": "the honest floor; its count is this grammar's error bar"
+   "note": "the honest floor"
   }
  ],
- "roles_note": "ORDER PUTS THE RULES ABOVE THE OUTPUTS, and a first emission got this backwards. With `metric` first, #789 'Provenance Erasure Rate Under the Atomic Token Rule' matched on PER and filed as a metric — leaving `unit_rule` with one node and `sovereignty_rule` with one, the two roles this grammar argues matter most.\n\nA metric's unit rule and its sovereignty rule are what make its number mean anything. #789 exists because a PER computed on the wrong unit is 'A DIFFERENT METRIC', not a worse one, and #788 exists because a self-certified audit is not an audit. `self_application` and `skew_analysis` follow, because a case where the instrument was turned on itself is a finding rather than a reading, and Ω's power-conditioning is a property of the estimator rather than an output of it.",
+ "roles_note": "ORDER IS THE APPARATUS, TOP DOWN, WITH THE RULES ABOVE THE THING THEY GOVERN AND OBSERVATION SECOND TO LAST.\n\nThe rules lead because #789 is titled 'Provenance Erasure Rate Under the Atomic Token Rule' — it names the metric first and is ABOUT the unit, so a classifier reaching for `specification` first files the unit rule as another specification. It did, twice: once in this body's first emission and once in its rebuild.\n\nObservation is second to last because v0.1 put `measurement` high and mapped every capture to it — 178 of 344 nodes were measurements and 154 of those were captures. THE BODY WAS ITS OWN EVIDENCE FILE. A specification, its unit rule and its sovereignty rule are what make a number mean anything; the instrument makes it obtainable; the capture is where it was pointed.",
  "default_role": "unroled",
  "special_roles": {
-  "capture_measured": "measurement",
-  "capture_unmeasured": "measurement",
+  "capture_measured": "observation",
+  "capture_unmeasured": "observation",
   "recorded_failure": "self_application"
  },
- "capture_gate": "provenance|erasure|\\bPER\\b|attribution|uncited|unattributed|citation|source|summariz|summaris|AI overview|composition",
- "capture_gate_note": "Captures enter where they bear on attribution retention. This is the one body where a wide gate is defensible: the registry exists to measure this, and 198 of its addresses carry a PER.",
+ "capture_gate": "provenance|erasure|attribution|uncited|unattributed|citation|\\bPER\\b(?=[\\s:=]*\\d)|summariz|summaris|AI overview",
+ "capture_gate_note": "TIGHTER THAN v0.1, WHICH ADMITTED 154 CAPTURES INTO A BODY OF 344. The registry exists to measure this and its captures are the evidence — but evidence beneath an apparatus, not the apparatus. A capture enters where it bears on attribution retention specifically.",
  "axes": {
   "source": "source|author|origin|provenance|bearer|creator",
   "retrieval": "retriev|index|rank|surface|search|crawl",
