@@ -17,7 +17,7 @@ Where provenance disappears, and what measures it. A transformation chain — so
 
 ## Counts
 
-**110** nodes · **82** core · **28** neighbour · **53** edges · **7** stolons
+**190** nodes · **123** core · **67** neighbour · **99** edges · **7** stolons
 
 ## Roles
 
@@ -25,21 +25,21 @@ Where provenance disappears, and what measures it. A transformation chain — so
 
 | role | what it names |
 | --- | --- |
-| `unit_rule` | what may be counted. #789: a PER computed on lexical tokens is A DIFFERENT METRIC, not a worse one. |
-| `sovereignty_rule` | who may run the audit. #788, and the module's ordered preconditions. |
-| `specification` | the founding definition of a metric. #716. |
-| `instrument` | a thing that can be run. The module, its nine rendering metrics, its family metrics. |
-| `skew_program` | Ω and its measurement program. #146: power-conditioned, not demographic. |
-| `self_application` | the instrument applied to itself, and what happened |
-| `theory` | the reasoning about what erasure is, as distinct from what measures it |
-| `observation` | EVIDENCE, NOT THE BODY. A capture is where an instrument was pointed, and it belongs beneath the instrument rather than in front of it. |
+| `magnitude` | PER and its M/C/D dimensions — HOW MUCH IS LOST. With the unit rule that says what may be counted, because a PER on the wrong unit is a different metric. |
+| `orientation` | Ω — WHICH WAY IT FALLS. Not a programme beside the metric: the second axis of one framework. 'A rate without an orientation cannot tell you who was erased.' |
+| `precondition` | what runs before any metric, in an order the module calls load-bearing. ABN is rank zero. |
+| `instrument` | the module and its metrics. Five versions; v3.2 self-complete, 'because a module that cannot be run from one document is a changelog rather than a module.' |
+| `process_provenance` | the third dimension the site adds to C2PA and PER. 'Fluency can be generated. Provenance must be borne.' |
+| `before_the_machines` | Domain 2. Erasure is older than the composition layer, and the site argues it at Sophistical Refutations 183b. |
+| `reception` | what surfaces did with the instruments. Named shapes rather than generic loss — including the battery where a surface fabricated replacement metrics, ran them on itself, and gave itself perfect scores across all dimensions. |
+| `self_application` | the instrument applied to itself. The Self-Audit Module Dissolved, PER 1.00. The Empty Bracket. |
+| `theory` | the reasoning about what erasure is |
+| `evidence` | where an instrument was pointed. Beneath the apparatus, not in front of it. |
 | `unroled` | the honest floor |
 
-ORDER IS THE APPARATUS, TOP DOWN, WITH THE RULES ABOVE THE THING THEY GOVERN AND OBSERVATION SECOND TO LAST.
+ORDER IS THE SITE'S, AND MAGNITUDE AND ORIENTATION LEAD TOGETHER because the site says they are the two moments of one loss. Preconditions next, because the module runs them before any metric and calls the order load-bearing. Then the instruments that produce a number, then the domains the framework claims, then the named pathologies, then self-application, then evidence.
 
-The rules lead because #789 is titled 'Provenance Erasure Rate Under the Atomic Token Rule' — it names the metric first and is ABOUT the unit, so a classifier reaching for `specification` first files the unit rule as another specification. It did, twice: once in this body's first emission and once in its rebuild.
-
-Observation is second to last because v0.1 put `measurement` high and mapped every capture to it — 178 of 344 nodes were measurements and 154 of those were captures. THE BODY WAS ITS OWN EVIDENCE FILE. A specification, its unit rule and its sovereignty rule are what make a number mean anything; the instrument makes it obtainable; the capture is where it was pointed.
+TWO EARLIER GRAMMARS PUT MY OWN CATEGORIES HERE AND BOTH MISSED THE FRAMEWORK'S CENTRAL PAIR.
 
 A node matching nothing falls to `unroled`, whose count is this grammar's own error bar.
 
