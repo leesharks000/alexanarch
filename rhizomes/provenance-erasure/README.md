@@ -41,23 +41,35 @@ A metric's unit rule and its sovereignty rule are what make its number mean anyt
 
 A node matching nothing falls to `unroled`, whose count is this grammar's own error bar.
 
+## The other bodies
+
+**Each is emitted by one generator from a grammar file, and each declares stolons naming the siblings it advertises and does not contain.**
+
+- [`leesharks/heteronyms`](https://huggingface.co/datasets/leesharks/heteronyms)
+- [`leesharks/machine-mediated-reception`](https://huggingface.co/datasets/leesharks/machine-mediated-reception)
+- [`leesharks/model-collapse-anti-collapse`](https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse)
+- [`leesharks/poetics`](https://huggingface.co/datasets/leesharks/poetics)
+- [`leesharks/revelation-first`](https://huggingface.co/datasets/leesharks/revelation-first)
+- [`leesharks/semantic-economy`](https://huggingface.co/datasets/leesharks/semantic-economy)
+- [`leesharks/spxi-mpai`](https://huggingface.co/datasets/leesharks/spxi-mpai)
+
 ## Where it points and does not go
 
 **Advertised, not included.** The outside stays outside and stays reachable.
 
-- **`model-collapse-anti-collapse`** — `narrowed_by` from `concept:provenance-erasure`
+- **[`model-collapse-anti-collapse`](https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse)** — `narrowed_by` from `concept:provenance-erasure`
   what erasure does to a distribution over time. This body scores single transformations; that one holds the question of what repeated erasure does to the space of what can be said.
-- **`semantic-economy`** — `priced_in` from `concept:bearing-cost`
+- **[`semantic-economy`](https://huggingface.co/datasets/leesharks/semantic-economy)** — `priced_in` from `concept:bearing-cost`
   erasure is a cost borne by the provenance-bearer and never by the composer. WHO PAYS is that body's question and this one does not answer it — it only establishes that something was taken.
-- **`machine-mediated-reception`** — `observed_in` from `concept:attribution`
+- **[`machine-mediated-reception`](https://huggingface.co/datasets/leesharks/machine-mediated-reception)** — `observed_in` from `concept:attribution`
   the 425-address registry holds the observations these instruments score. This body defines PER; that body is where PER values live.
-- **`spxi-mpai`** — `instrumented_in` from `concept:inscription`
+- **[`spxi-mpai`](https://huggingface.co/datasets/leesharks/spxi-mpai)** — `instrumented_in` from `concept:inscription`
   whether an inscription survived is measured here; whether it was placed well is specified there. Deliverable ten, the declared SIM set, is an anti-erasure technology.
-- **`revelation-first`** — `adjudicated_in` from `concept:documentary-authority`
+- **[`revelation-first`](https://huggingface.co/datasets/leesharks/revelation-first)** — `adjudicated_in` from `concept:documentary-authority`
   a chronology settled on a late and ambiguous witness is an attribution question at historical scale. THE INSTRUMENTS HERE HAVE NEVER BEEN RUN ON IT.
-- **`heteronyms`** — `borne_by` from `concept:attribution`
+- **[`heteronyms`](https://huggingface.co/datasets/leesharks/heteronyms)** — `borne_by` from `concept:attribution`
   PER scores whether a byline survived. That body holds the bylines, and its apparatus covers twelve of twenty-six.
-- **`poetics`** — `borne_by` from `concept:extraction-fidelity`
+- **[`poetics`](https://huggingface.co/datasets/leesharks/poetics)** — `borne_by` from `concept:extraction-fidelity`
   Pearl's machine score preserves lineation at whitespace fidelity. WHETHER AN EXTRACTION THAT PERFECT PRESERVES THE AUTHOR is this body's question and it has not been run on it.
 
 ## Reproducing it

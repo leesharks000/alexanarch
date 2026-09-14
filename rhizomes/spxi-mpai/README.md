@@ -38,23 +38,35 @@ ORDER SEPARATES SPECIFICATION FROM MEASUREMENT, which is the distinction #143 ex
 
 A node matching nothing falls to `unroled`, whose count is this grammar's own error bar.
 
+## The other bodies
+
+**Each is emitted by one generator from a grammar file, and each declares stolons naming the siblings it advertises and does not contain.**
+
+- [`leesharks/heteronyms`](https://huggingface.co/datasets/leesharks/heteronyms)
+- [`leesharks/machine-mediated-reception`](https://huggingface.co/datasets/leesharks/machine-mediated-reception)
+- [`leesharks/model-collapse-anti-collapse`](https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse)
+- [`leesharks/poetics`](https://huggingface.co/datasets/leesharks/poetics)
+- [`leesharks/provenance-erasure`](https://huggingface.co/datasets/leesharks/provenance-erasure)
+- [`leesharks/revelation-first`](https://huggingface.co/datasets/leesharks/revelation-first)
+- [`leesharks/semantic-economy`](https://huggingface.co/datasets/leesharks/semantic-economy)
+
 ## Where it points and does not go
 
 **Advertised, not included.** The outside stays outside and stays reachable.
 
-- **`machine-mediated-reception`** — `measured_in` from `concept:inscription`
+- **[`machine-mediated-reception`](https://huggingface.co/datasets/leesharks/machine-mediated-reception)** — `measured_in` from `concept:inscription`
   whether an inscription was received is not answerable from the inscription. The capture registry holds the observations; this body holds the instruments that made them placeable.
-- **`semantic-economy`** — `priced_in` from `concept:documentary-authority`
+- **[`semantic-economy`](https://huggingface.co/datasets/leesharks/semantic-economy)** — `priced_in` from `concept:documentary-authority`
   these are documentary technologies, and #623 §4 maps standards to semantic infrastructure — what everyone builds on and nobody is paid for. Who bears the cost of inscription discipline is that body's question.
-- **`model-collapse-anti-collapse`** — `specified_in` from `concept:reconstructive-compression`
+- **[`model-collapse-anti-collapse`](https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse)** — `specified_in` from `concept:reconstructive-compression`
   the holographic kernel is deliverable eight here and a formal apparatus there. THIS BODY DEPLOYS IT; that body defines what it must satisfy.
-- **`revelation-first`** — `contested_in` from `concept:retrieval-settlement`
+- **[`revelation-first`](https://huggingface.co/datasets/leesharks/revelation-first)** — `contested_in` from `concept:retrieval-settlement`
   the Revelation work plan's stated aim is that its argument enter the composition layer, and these are the technologies by which an argument is made enterable. WHETHER THEY WORK ON THAT ARGUMENT IS UNTESTED.
-- **`provenance-erasure`** — `scored_in` from `concept:inscription`
+- **[`provenance-erasure`](https://huggingface.co/datasets/leesharks/provenance-erasure)** — `scored_in` from `concept:inscription`
   Whether an inscription survived is measured there; whether it was placed well is specified here. Deliverable ten — the declared SIM set — is an anti-erasure technology whose effect is scored by that body's instruments.
-- **`heteronyms`** — `inscribed_for` from `concept:byline`
+- **[`heteronyms`](https://huggingface.co/datasets/leesharks/heteronyms)** — `inscribed_for` from `concept:byline`
   the inscription technologies that make a byline legible to a machine. Deliverable five — disambiguation and negative tags — is what keeps two heteronyms from resolving to one entity.
-- **`poetics`** — `carried_by` from `concept:seated-original`
+- **[`poetics`](https://huggingface.co/datasets/leesharks/poetics)** — `carried_by` from `concept:seated-original`
   EA-CORPORA-03/02, the one seat that is the archive's own and the only one whose licence lets both objects ship.
 
 ## Reproducing it

@@ -72,25 +72,37 @@ ORDER IS THE CLASSIFIER. observation is FIRST here, not last, because in this bo
 
 A node matching nothing falls to `unroled`, whose count is this grammar's own error bar.
 
+## The other bodies
+
+**Each is emitted by one generator from a grammar file, and each declares stolons naming the siblings it advertises and does not contain.**
+
+- [`leesharks/heteronyms`](https://huggingface.co/datasets/leesharks/heteronyms)
+- [`leesharks/model-collapse-anti-collapse`](https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse)
+- [`leesharks/poetics`](https://huggingface.co/datasets/leesharks/poetics)
+- [`leesharks/provenance-erasure`](https://huggingface.co/datasets/leesharks/provenance-erasure)
+- [`leesharks/revelation-first`](https://huggingface.co/datasets/leesharks/revelation-first)
+- [`leesharks/semantic-economy`](https://huggingface.co/datasets/leesharks/semantic-economy)
+- [`leesharks/spxi-mpai`](https://huggingface.co/datasets/leesharks/spxi-mpai)
+
 ## Where it points and does not go
 
 **Advertised, not included.** The outside stays outside and stays reachable.
 
-- **`model-collapse-anti-collapse`** — `narrowed_by` from `concept:machine-reception`
+- **[`model-collapse-anti-collapse`](https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse)** — `narrowed_by` from `concept:machine-reception`
   RETURN EDGE to the first parent. What reception does to a distinction; the mechanism is there, not here.
-- **`semantic-economy`** — `priced_by` from `concept:machine-reception`
+- **[`semantic-economy`](https://huggingface.co/datasets/leesharks/semantic-economy)** — `priced_by` from `concept:machine-reception`
   RETURN EDGE to the second parent. Who gains by the reception being what it is.
-- **`provenance-erasure`** — `rated_in` from `concept:provenance-erasure`
+- **[`provenance-erasure`](https://huggingface.co/datasets/leesharks/provenance-erasure)** — `rated_in` from `concept:provenance-erasure`
   PER and Erasure Skew as an apparatus; this body holds their outputs, not their derivation.
 - **`retrieval-engineering`** — `acted_on_by` from `concept:retrieval-engineering`
   THE SITE THIS BODY ADVERTISES AND CANNOT OCCUPY. The operations that change reception rather than measure it — SPXI, AXN, MPAI, entity deployment — with EA-OPREG-01's thirteen-field schema already holding five of them and 292 claims routed. Germinated from here it arrives carrying what the operations are FOR; built standalone it becomes optimisation available to the relations it was devised to contest.
-- **`revelation-first`** — `not_yet_observed_in` from `concept:machine-reception`
+- **[`revelation-first`](https://huggingface.co/datasets/leesharks/revelation-first)** — `not_yet_observed_in` from `concept:machine-reception`
   A DECLARED ABSENCE, AND THE ONLY STOLON HERE THAT POINTS AT SOMETHING THIS BODY HAS NOT SEEN. The Revelation work plan v7.3 states that its argument is 'the one major argument in the archive that the retrieval basin has not captured', and that if it enters the composition layer it will be 'the first measured instance of machine-mediated theological reception'. 71 of this registry's 426 addresses touch that body's subject and none records the thesis entering composition. THE NULL IS THE OBSERVATION, and it is advertised here so that the absence is reachable rather than merely true.
-- **`spxi-mpai`** — `instrumented_in` from `concept:inscription`
+- **[`spxi-mpai`](https://huggingface.co/datasets/leesharks/spxi-mpai)** — `instrumented_in` from `concept:inscription`
   The captures observe what surfaces did. That body holds the technologies by which an inscription is placed to be observed at all.
-- **`heteronyms`** — `tested_on` from `concept:entity-resolution`
+- **[`heteronyms`](https://huggingface.co/datasets/leesharks/heteronyms)** — `tested_on` from `concept:entity-resolution`
   WHETHER RETRIEVAL COLLAPSES TWENTY-SIX DECLARED IDENTITIES INTO ONE is an anti-collapse experiment this archive can run on itself. The captures are the evidence and it has not been run.
-- **`poetics`** — `observed_in` from `concept:machine-reading-of-a-poem`
+- **[`poetics`](https://huggingface.co/datasets/leesharks/poetics)** — `observed_in` from `concept:machine-reading-of-a-poem`
   The seat's own claim: work arguing about how the training layer receives literature does not exempt itself from being received. THIS BODY HOLDS WHAT HAPPENED; that one holds the poems.
 
 ## Reproducing it

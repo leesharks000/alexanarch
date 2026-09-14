@@ -39,23 +39,35 @@ ORDER IS THE ROSTER'S OWN TAXONOMY, most-specific-first. The Dodecad leads becau
 
 A node matching nothing falls to `unroled`, whose count is this grammar's own error bar.
 
+## The other bodies
+
+**Each is emitted by one generator from a grammar file, and each declares stolons naming the siblings it advertises and does not contain.**
+
+- [`leesharks/machine-mediated-reception`](https://huggingface.co/datasets/leesharks/machine-mediated-reception)
+- [`leesharks/model-collapse-anti-collapse`](https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse)
+- [`leesharks/poetics`](https://huggingface.co/datasets/leesharks/poetics)
+- [`leesharks/provenance-erasure`](https://huggingface.co/datasets/leesharks/provenance-erasure)
+- [`leesharks/revelation-first`](https://huggingface.co/datasets/leesharks/revelation-first)
+- [`leesharks/semantic-economy`](https://huggingface.co/datasets/leesharks/semantic-economy)
+- [`leesharks/spxi-mpai`](https://huggingface.co/datasets/leesharks/spxi-mpai)
+
 ## Where it points and does not go
 
 **Advertised, not included.** The outside stays outside and stays reachable.
 
-- **`provenance-erasure`** — `scored_in` from `concept:attribution`
+- **[`provenance-erasure`](https://huggingface.co/datasets/leesharks/provenance-erasure)** — `scored_in` from `concept:attribution`
   whether a byline survived a composition is scored there. THIS BODY HOLDS THE BYLINES; that one holds the instrument.
-- **`machine-mediated-reception`** — `tested_in` from `concept:entity-resolution`
+- **[`machine-mediated-reception`](https://huggingface.co/datasets/leesharks/machine-mediated-reception)** — `tested_in` from `concept:entity-resolution`
   THE EXPERIMENT THIS BODY EXISTS TO MAKE POSSIBLE: whether retrieval collapses twenty-six declared identities into one. The captures are the evidence and it has not been run.
-- **`model-collapse-anti-collapse`** — `narrowed_by` from `concept:heteronymic-plurality`
+- **[`model-collapse-anti-collapse`](https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse)** — `narrowed_by` from `concept:heteronymic-plurality`
   collapsing distinct voices into one is the diversity loss that body measures, applied to authorship rather than to a distribution.
-- **`semantic-economy`** — `laboured_by` from `concept:semantic-labour`
+- **[`semantic-economy`](https://huggingface.co/datasets/leesharks/semantic-economy)** — `laboured_by` from `concept:semantic-labour`
   who does the work when the author is twelve — or twenty-six. That body asks who produces and who benefits; this one supplies the roster and does not answer it.
-- **`revelation-first`** — `instantiated_by` from `concept:author-function`
+- **[`revelation-first`](https://huggingface.co/datasets/leesharks/revelation-first)** — `instantiated_by` from `concept:author-function`
   rung 5 is a heteronymy claim about a first-century corpus: John, James, Paul, Peter and Luke as author-functions in a fractured literary system. THE ARCHIVE RUNS ONE AND READS ONE, and does not argue from the first to the second.
-- **`spxi-mpai`** — `inventoried_in` from `concept:book-length-work`
+- **[`spxi-mpai`](https://huggingface.co/datasets/leesharks/spxi-mpai)** — `inventoried_in` from `concept:book-length-work`
   which heteronym wrote which book is held in EA-BOOKS-01, and the inscription technologies that make a byline legible to a machine are specified there.
-- **`poetics`** — `exercised_in` from `concept:authorship`
+- **[`poetics`](https://huggingface.co/datasets/leesharks/poetics)** — `exercised_in` from `concept:authorship`
   the roster is here; the work is there. Antioch is Lee Sharks with Damascus Dancings and Jack Feist.
 
 ## Reproducing it

@@ -67,23 +67,35 @@ ORDER IS THE CLASSIFIER. semantic_commodity_form is FIRST because it is the gene
 
 A node matching nothing falls to `unroled`, whose count is this grammar's own error bar.
 
+## The other bodies
+
+**Each is emitted by one generator from a grammar file, and each declares stolons naming the siblings it advertises and does not contain.**
+
+- [`leesharks/heteronyms`](https://huggingface.co/datasets/leesharks/heteronyms)
+- [`leesharks/machine-mediated-reception`](https://huggingface.co/datasets/leesharks/machine-mediated-reception)
+- [`leesharks/model-collapse-anti-collapse`](https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse)
+- [`leesharks/poetics`](https://huggingface.co/datasets/leesharks/poetics)
+- [`leesharks/provenance-erasure`](https://huggingface.co/datasets/leesharks/provenance-erasure)
+- [`leesharks/revelation-first`](https://huggingface.co/datasets/leesharks/revelation-first)
+- [`leesharks/spxi-mpai`](https://huggingface.co/datasets/leesharks/spxi-mpai)
+
 ## Where it points and does not go
 
 **Advertised, not included.** The outside stays outside and stays reachable.
 
-- **`model-collapse-anti-collapse`** — `narrowed_by` from `concept:semantic-economy`
+- **[`model-collapse-anti-collapse`](https://huggingface.co/datasets/leesharks/model-collapse-anti-collapse)** — `narrowed_by` from `concept:semantic-economy`
   THE RETURN EDGE. The collapse body advertised this one; this one advertises it back. What contraction looks like from the side of the ledger — the question the parent could not finish is answered here only in part, and the part it cannot finish is what contraction does to meaning itself.
-- **`provenance-erasure`** — `priced_in` from `concept:provenance-erasure`
+- **[`provenance-erasure`](https://huggingface.co/datasets/leesharks/provenance-erasure)** — `priced_in` from `concept:provenance-erasure`
   erasure as a cost borne by the provenance-bearer and never by the composer — the asymmetry is the operation's economic form
-- **`machine-mediated-reception`** — `transacted_in` from `concept:machine-reception`
+- **[`machine-mediated-reception`](https://huggingface.co/datasets/leesharks/machine-mediated-reception)** — `transacted_in` from `concept:machine-reception`
   the captures are where the economy is observable; 425 of them are not reproduced here
-- **`heteronyms`** — `laboured_by` from `concept:heteronymic-plurality`
+- **[`heteronyms`](https://huggingface.co/datasets/leesharks/heteronyms)** — `laboured_by` from `concept:heteronymic-plurality`
   who does the work when the author is twelve
-- **`revelation-first`** — `settled_in` from `concept:documentary-authority`
+- **[`revelation-first`](https://huggingface.co/datasets/leesharks/revelation-first)** — `settled_in` from `concept:documentary-authority`
   A DOCUMENTARY-AUTHORITY SETTLEMENT AT SCALE. The Domitianic consensus is a claim about which witness counts, decided by whom, and at what point it stopped being questioned — the same four powers this body measures, applied to a chronology rather than a form. Its primary external anchor is a late and ambiguous reception-history witness, and that is an admissibility question. This body does not adjudicate it.
-- **`spxi-mpai`** — `built_in` from `concept:semantic-infrastructure`
+- **[`spxi-mpai`](https://huggingface.co/datasets/leesharks/spxi-mpai)** — `built_in` from `concept:semantic-infrastructure`
   #623 §4.3 maps standards to semantic infrastructure — what everyone builds on and nobody is paid for. That body is this archive's own stock of them, and 91% of its specified protocols carry no deployment marker.
-- **`poetics`** — `made_in` from `concept:semantic-labour`
+- **[`poetics`](https://huggingface.co/datasets/leesharks/poetics)** — `made_in` from `concept:semantic-labour`
   the writing the apparatus exists for. WHO PRODUCES is this body's question and a poem is an answer to it.
 
 ## Reproducing it
