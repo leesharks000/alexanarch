@@ -1,0 +1,285 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "paired-layer capture — proposed extension to EA-WG-CAPTURES-01 (a schema change is its own commit; not applied)",
+ "description": "One query, one session, one timestamp: the visible organic ordering (O), the presented retrieval set exposed as cards or chips (C), and the composed answer (A). Two diffs: ΔR = C − O, the retrieval-mediation transform, observable; ΔC = A − C, the composition transform. C is the PRESENTED retrieval set, not the internal candidate basin — hidden candidates may exist. Organic sets have been noted in prose on 124 of 474 carded observations and structured on none; this schema makes O a field. Diff operations named (from the review of 2026-09-14): exclusion (o∈O, o∉C), admission (c∈C, c∉O_k), promotion/demotion, substitution (an archive family in O replaced by a rival family in C), type transformation (same source, different category on the card), provenance transformation (content survives, creator or institution changes or disappears). The last two are where retrieval is visibly a meaning layer.",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "organic",
+  "cards",
+  "answer_transcript"
+ ],
+ "properties": {
+  "organic": {
+   "type": "array",
+   "description": "top-k organic results as rendered, in order, k stated",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "rank",
+     "host",
+     "title",
+     "archive_relation"
+    ],
+    "properties": {
+     "rank": {
+      "type": "integer"
+     },
+     "host": {
+      "type": "string"
+     },
+     "title": {
+      "type": "string"
+     },
+     "snippet": {
+      "type": "string"
+     },
+     "url": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "congruence": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2,
+      "description": "how directly the result addresses the query's intended concept: 0 adjacent · 1 relevant · 2 carries the load-bearing distinction in its snippet; scored by the seating reader, stated as such"
+     },
+     "archive_relation": {
+      "type": "string",
+      "enum": [
+       "archive-owned",
+       "archive-authored-third-party",
+       "syndication",
+       "third-party",
+       "unknown"
+      ]
+     },
+     "entity": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "the entity the result is presented as being about (person, work, project, rival concept)"
+     },
+     "observed_type": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "paper · protocol · dataset · metadata page · blog · video · encyclopedia · forum · other — as the surface presents it"
+     }
+    }
+   }
+  },
+  "organic_k": {
+   "type": "integer"
+  },
+  "organic_notices": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "the surface's own readings shown on the organic layer: 'Missing: X', 'These are results for…', 'People also ask' heads, knowledge-panel presence"
+  },
+  "cards": {
+   "type": "array",
+   "description": "the presented retrieval set: chips inline and the source carousel, in order",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "position",
+     "host",
+     "archive_relation"
+    ],
+    "properties": {
+     "position": {
+      "type": "integer"
+     },
+     "host": {
+      "type": "string"
+     },
+     "title": {
+      "type": "string"
+     },
+     "snippet": {
+      "type": "string"
+     },
+     "chipped_to": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      },
+      "description": "the composed sentences or bullets this source is attached to; empty = present in the set, cited by no assertion"
+     },
+     "organic_rank": {
+      "type": [
+       "integer",
+       "null"
+      ],
+      "description": "the organic rank of the same host/page, or null if it did not appear in the top-k organic set"
+     },
+     "archive_relation": {
+      "type": "string",
+      "enum": [
+       "archive-owned",
+       "archive-authored-third-party",
+       "syndication",
+       "third-party",
+       "unknown"
+      ]
+     },
+     "entity": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "the entity the result is presented as being about (person, work, project, rival concept)"
+     },
+     "observed_type": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "paper · protocol · dataset · metadata page · blog · video · encyclopedia · forum · other — as the surface presents it"
+     }
+    }
+   }
+  },
+  "answer_transcript": {
+   "type": "string"
+  },
+  "derived": {
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "CAR_k": {
+     "type": "number",
+     "description": "|O_k ∩ C| / k"
+    },
+    "RD_k": {
+     "type": "number",
+     "description": "1 − ORS_k, retrieval displacement"
+    },
+    "HCE": {
+     "type": "number",
+     "description": "congruence-weighted exclusion: share of organic congruence mass absent from the cards"
+    },
+    "rank_survival_1": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "description": "card position of organic #1, or null if absent"
+    },
+    "card_to_answer_uptake": {
+     "type": "number",
+     "description": "cards chipped to at least one assertion / cards"
+    },
+    "archive_organic_share": {
+     "type": "number"
+    },
+    "archive_card_share": {
+     "type": "number"
+    },
+    "archive_answer_share": {
+     "type": "number",
+     "description": "assertions chipped to an archive-side source / assertions"
+    },
+    "case": {
+     "type": "string",
+     "enum": [
+      "A: organic+ card- answer-",
+      "B: organic+ card+ answer-",
+      "C: organic+ card* answer*",
+      "D: organic+ card+ answer+",
+      "E: organic- card+ answer+"
+     ],
+     "description": "A: mediated before presented supply · B: admitted, not used · C: admitted transformed, answer distorted — the before/after semantic object on one screen · D: full uptake · E: summarizer-specific sourcing"
+    },
+    "OAS_k": {
+     "type": "number",
+     "description": "Organic Admission Survival: rank-weighted survival of the top-k organic results into the cards, w_i = 1/log2(i+1)"
+    },
+    "AAD_k": {
+     "type": "number",
+     "description": "Archive Admission Differential: S_H(C) − S_H(O_k); negative = the card regime depletes archive material relative to the visible organic field, positive = enriches"
+    },
+    "HAE": {
+     "type": "number",
+     "description": "High-congruence Archive Exclusion: Σ w_i g(o_i) 1[o_i archive-side] 1[o_i ∉ C], normalised by Σ w_i g(o_i) 1[archive-side]"
+    },
+    "diff_ops": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "op",
+       "organic_rank_or_card"
+      ],
+      "properties": {
+       "op": {
+        "type": "string",
+        "enum": [
+         "exclusion",
+         "admission",
+         "promotion",
+         "demotion",
+         "substitution",
+         "type_transformation",
+         "provenance_transformation"
+        ]
+       },
+       "organic_rank_or_card": {
+        "type": "string"
+       },
+       "note": {
+        "type": "string"
+       }
+      }
+     }
+    },
+    "replication_of": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "obs_id of a same-session observation with the same card set; replications are not state changes"
+    }
+   }
+  },
+  "composition": {
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "cited_sources": {
+     "type": "array",
+     "items": {
+      "type": "integer"
+     },
+     "description": "card positions listed as sources"
+    },
+    "used_sources": {
+     "type": "array",
+     "items": {
+      "type": "integer"
+     },
+     "description": "card positions whose content is detectably used in the answer"
+    },
+    "attributed_sources": {
+     "type": "array",
+     "items": {
+      "type": "integer"
+     },
+     "description": "card positions chipped to an assertion"
+    }
+   }
+  }
+ },
+ "pair_rule": "ΔAAD = AAD(entity + concept) − AAD(concept), on the same surface and session: if organic archive share is similar in both arms and card admission diverges, the asymmetry is located inside retrieval mediation rather than in public ranking.",
+ "intake_rule_proposed": "paired organic + card capture mandatory whenever an Overview is rendered — a ruling for the intake contract, not applied here"
+}
