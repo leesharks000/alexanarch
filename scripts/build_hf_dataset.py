@@ -37,7 +37,7 @@ def _spore_line(slug):
 
 _SPORE = {s: _spore_line(s) for s in
           ("model-collapse-anti-collapse", "semantic-economy", "machine-mediated-reception",
-           "revelation-first")}
+           "revelation-first", "spxi-mpai")}
 
 def sha(s): return hashlib.sha256(s.encode('utf-8')).hexdigest()
 
@@ -573,7 +573,7 @@ This archive emits **rhizomes**: standalone datasets generated from the relation
 deterministic traversal, each shipping a `spore.json` that carries its own recipe — seed rule,
 follow set, depths, and the commit of the ledger it came from.
 
-**FOUR BODIES, AND THEY POINT AT EACH OTHER.** Each is emitted by one generator from a grammar
+**FIVE BODIES, AND THEY POINT AT EACH OTHER.** Each is emitted by one generator from a grammar
 file in `rhizomes/_grammars/`, and each declares stolons naming the siblings it advertises and does
 not contain. All six directed edges exist: every body names both others.
 
@@ -605,6 +605,13 @@ rung it argues for rather than the most dramatic available — because the plan'
 distinguish claims that are usually collapsed. **Rungs one to five populate; rung six is empty**, which
 matches how the plan handles it. Advertises the reception body as where the argument would be *measured
 in*, and the collapse body as where its compression claim is *seeded from*.
+
+**[`leesharks/spxi-mpai`](https://huggingface.co/datasets/leesharks/spxi-mpai)**
+— {spxi_line}. **An inventory rather than an argument**: the archive's documentary technologies — SPXI and
+its protocol family, MPAI packets, conformance instruments, disambiguation matrices, entity-definition
+blocks, compression kernels. Its distinguishing field is deployment status, and its primary datum is that
+**41 of 45 specified deposits — 91% — carry no deployment marker**, twenty-six of them protocols. The
+standard it answers to is its own: *a standing protocol that cannot be checked is a wish.*
 
 **What that dataset is and is not.** It is a map of the research — mechanisms, measures,
 interventions, corrections — assembled from deposits that already exist. **It is NOT a
@@ -662,6 +669,7 @@ def main():
         se_line=_SPORE["semantic-economy"],
         mmrs_line=_SPORE["machine-mediated-reception"],
         rev_line=_SPORE["revelation-first"],
+        spxi_line=_SPORE["spxi-mpai"],
         configs='\n'.join(cfg), n_dep=len(frames['deposits']),
         N_CONFIGS=len(frames), N_DEPOSITS=f"{len(frames['deposits']):,}",
         built=dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d %H:%MZ')))
