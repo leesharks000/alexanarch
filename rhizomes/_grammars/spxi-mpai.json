@@ -9,7 +9,7 @@
   "topology": "inventory-with-deployment-status"
  },
  "grammar_id": "GRAM-SPXI-01",
- "version": "0.1",
+ "version": "1.0",
  "defining_papers": [
   {
    "deposit": 63,
@@ -190,5 +190,9 @@
   },
   "reading": "THE BODY'S PRIMARY DATUM AND THE REASON IT IS AN INVENTORY RATHER THAN AN ARGUMENT. 41 of 45 specified deposits — 91% — carry no deployment marker. Twenty-six of those are PROTOCOLS: the Traversal Grammar, the Retrieval Settlement Fortification Protocol, the SPXI Self-Audit Protocol, the Composition Divergence Index, the Untethered Tag.\n\n#143 states the standard this measures against: 'A STANDING PROTOCOL THAT CANNOT BE CHECKED IS A WISH; the instrument is what makes conformance a fact rather than an intention.' A specification with no instrument is a wish. A specification with an instrument that nothing runs is a wish with a test.\n\nAND THE FIGURE IS NOT A REPROACH. A stock of documentary technologies is useful in proportion to what it holds available, not to what is currently running — but an inventory that does not distinguish the two cannot tell an operator which is which, and this body's whole reason for existing is that distinction.",
   "caution": "Deployment is inferred from an axis regex over titles and descriptions — `deployed|live|implementation report|in production|running|shipped`. A technology deployed without a deposit saying so reads as undeployed. THE FIGURE IS A LOWER BOUND ON DEPLOYMENT and an upper bound on dormancy, and the correct fix is a stated field at intake rather than a better regex."
+ },
+ "curated_primitives": {
+  "source": "datasets/spxi-mpai/spore.json",
+  "note": "THE BODY IS READ, NOT SWEPT. 97 ACTIVE deposits name SPXI, MPAI or 'metadata packet' in their titles; the swept body held 28 and omitted 69 — INCLUDING EA-SPXI-01, THE PROTOCOL'S OWN FOUNDING SPECIFICATION, along with SPXI as Concept, the five-layer protocol v0.2, the training-layer protocol, the heteronym surface specification, and both SPXI.dev landings.\n\nTHE SWEEP SELECTED ON INSTRUMENT VOCABULARY — SIM, AXN, kernel, schema, deliverable — AND THE DISCIPLINE'S CHARACTERISTIC ACT IS DISAMBIGUATION, WHICH DOES NOT USE THAT VOCABULARY. Nineteen of the ninety-seven are titled 'X Is Not Y': SPXI ≠ GEO, Sappho 31 ≠ Jealousy, the Josephus Thesis is not the Piso Hypothesis and separately not the Jesus Myth Thesis, the Semantic Strike is not a withholding of labor, Aristotle and Theophrastus ≠ two distinct authors. Fixing an entity boundary by naming what the entity is not IS the discipline, and a generic 'packet' role loses the only thing those nineteen have in common.\n\nEight divisions, 69 deposits, all verified present and ACTIVE on 2026-09-14."
  }
 }

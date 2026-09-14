@@ -17,7 +17,7 @@ The archive's documentary technologies: SPXI and its protocol family, MPAI packe
 
 ## Counts
 
-**256** nodes · **159** core · **97** neighbour · **113** edges · **7** stolons
+**69** nodes · **0** core · **0** neighbour · **0** edges · **7** stolons
 
 ## Roles
 
