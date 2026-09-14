@@ -924,6 +924,24 @@ def regenerate_static_page(d, eidx, registry=None):
             _corr_ld.append({"@type": "CorrectionComment", "@id": f"https://www.alexanarch.org/s/records/{_cn}/", "url": f"https://www.alexanarch.org/s/records/{_cn}/",
                              "name": f"ERRATUM #{_cn}", "text": _r.get("note") or "", "about": {"@type": "PropertyValue", "propertyID": "severity", "value": _sev}})
     if _corr_ld: _ld["correction"] = _corr_ld
+    # 2026-09-13 SURFACE POROSITY. A seated room document is a closed surface: a machine
+    # traversing it meets the room's form of the argument and nothing telling it a more
+    # developed one exists. Observed directly — a traversal stayed locked in the Revelation
+    # room's framing under repeated pressure to expand, because the page offered no exit.
+    #
+    # The `surfaces` field existed on exactly one deposit and RENDERED NOWHERE, which is the
+    # same as not existing. It is now emitted as a visible block and as schema.org
+    # relatedLink, so a reader — human or machine — leaves the room by a stated door.
+    _surf = [u for u in (d.get('surfaces') or []) if isinstance(u, str) and u.startswith('http')]
+    _surf_html = ''
+    if _surf:
+        _items = ''.join(
+            f'<div><a href="{esc(u)}" style="color:var(--accent)">{esc(u.replace("https://", "").replace("www.", ""))}</a></div>'
+            for u in _surf)
+        _surf_html = (f'<div style="border-left:4px solid var(--accent);background:#fff;padding:8px 12px;margin:10px 0;font-size:.86em">'
+                      f'<strong>The current argument continues elsewhere.</strong> This record is seated and its bytes are fixed. '
+                      f'The work it belongs to is developed at:{_items}</div>')
+        _ld["relatedLink"] = _surf
     # 2026-09-07 PROVENANCE GRAVITY (MANUS ruling): the record's declared backward pressure, its
     # reciprocal declarations toward earlier records, and its forward SOCKET — always empty in the
     # record, filled at render time from data/pressure-index.json with what LATER records declared
@@ -1926,7 +1944,7 @@ def regenerate_static_page(d, eidx, registry=None):
 <div style="font-size:.85em;color:#777;margin-bottom:10px">{esc(d["creator"])} · {esc(d["date"])} · {esc(d.get("content_type",""))}{f' · <span style="color:var(--accent);font-weight:500">{esc(version)}</span>' if (version and (version != 'v1.0' or series_id)) else ''}</div>
 <a style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0" href="/data/deposits/AXN-{hex_id}.md" download>↓ Download MD</a> <a style="display:inline-block;background:var(--accent);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0 6px 4px" href="/papers/AXN-{hex_id.zfill(4)}.pdf">↓ PDF</a>
 <div style="margin:8px 0">{kw_html}</div>
-{_corr_html}{_ident_html}
+{_corr_html}{_surf_html}{_ident_html}
 <h2>Description</h2>
 <p style="font-size:.9em">{_render_inline(d.get("description",""))}</p>
 {wiki_html}
