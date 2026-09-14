@@ -1,24 +1,30 @@
 {
  "maxim": "all things are now lawful to you in jack feist",
  "dataset_id": "EA-BOOKS-01",
- "version": "0.1",
+ "version": "0.2",
  "generated": "2026-09-13",
  "what": "The book-length works of the Crimson Hexagonal Archive, gathered by work rather than by deposit. A work may have several editions and an apparatus of navigation maps, metadata packets and negation graphs around it; those are listed separately because a navigation map is not the book.",
  "why": "Assembled as a precondition for a heteronyms body. A body about non-singular authorship needs to know what each author wrote, and the registry stores that as deposits rather than as works — so editions, samplers, critical editions and apparatus all appear as separate rows with no field joining them.",
  "method": "Candidates taken from content_type declaring a book form, plus titles declaring a volume or cycle. Works separated from apparatus by hand, because the registry has no field distinguishing them. THIS IS AN EDITORIAL GATHERING, NOT A DERIVED ONE, and a different editor would group differently.",
  "counts": {
-  "works": 14,
-  "deposited": 13,
-  "apparatus_only": 1,
-  "editions": 15,
-  "apparatus_deposits": 7
+  "works": 20,
+  "deposited": 18,
+  "unrecovered": 2,
+  "editions": 22,
+  "apparatus_deposits": 25,
+  "reassignments": 3
  },
  "by_primary": {
-  "Lee Sharks": 8,
+  "Lee Sharks": 7,
   "Johannes Sigil": 3,
+  "Jack Feist": 2,
+  "Damascus Dancings": 2,
   "Talos Morrow": 1,
   "Rex Fraction": 1,
-  "Jack Feist": 1
+  "Sen Kuro": 1,
+  "Rebekah Cranes": 1,
+  "Ayanna Vox": 1,
+  "Sparrow Wells": 1
  },
  "works": [
   {
@@ -97,23 +103,6 @@
    "form": "combined volume",
    "deposits": [
     438
-   ],
-   "edition_count": 1,
-   "status": "deposited",
-   "het_ids": {},
-   "first_deposit": "2026-02-03"
-  },
-  {
-   "work": "Reading a Book with Lee: Complete Patacinematic Archive",
-   "editions": [
-    440
-   ],
-   "apparatus": [],
-   "primary": "Lee Sharks",
-   "with": [],
-   "form": "collected volume",
-   "deposits": [
-    440
    ],
    "edition_count": 1,
    "status": "deposited",
@@ -321,6 +310,186 @@
     "Ichabod Spellings": "HET-SPELLINGS-001"
    },
    "first_deposit": "2026-01-19"
+  },
+  {
+   "work": "Combat Scholasticism",
+   "editions": [],
+   "apparatus": [
+    1341,
+    591,
+    588,
+    589,
+    590,
+    586,
+    587,
+    585,
+    35,
+    584,
+    592
+   ],
+   "primary": "Damascus Dancings",
+   "with": [],
+   "form": "scholastic sequence",
+   "status": "UNRECOVERED — parts deposited, full edition absent",
+   "note": "ELEVEN DEPOSITS AND NO EDITION. Parts One through Five are deposited, several in duplicate (#588/#589/#590 are all Part Two; #586/#587 are both Part Three; #591/#1341 are both Part One), alongside #584 A Commentary Tradition and #592 the Prolegomenon and Commentary Outline. THE OPERATOR'S RULE: if there is no full edition, it is an unrecovered work. There is not, so it is. This is the inverse of All That Lies Within Me — that work has an apparatus and no text; this one has the whole text in pieces and no edition.",
+   "reassignment": "was attributed to Lee Sharks across all parts",
+   "deposits": [
+    35,
+    584,
+    585,
+    586,
+    587,
+    588,
+    589,
+    590,
+    591,
+    592,
+    1341
+   ],
+   "edition_count": 0,
+   "het_ids": {
+    "Damascus Dancings": "HET-DANCINGS-001"
+   }
+  },
+  {
+   "work": "Epistle to the Human Diaspora",
+   "editions": [
+    85
+   ],
+   "apparatus": [
+    402,
+    1447
+   ],
+   "primary": "Damascus Dancings",
+   "with": [
+    "Lee Sharks"
+   ],
+   "form": "epistle with commentary",
+   "note": "#85 is the critical edition; #402 the seed text; #1447 The Forward Library of the Epistle. The TANG is to be located.",
+   "deposits": [
+    85,
+    402,
+    1447
+   ],
+   "edition_count": 1,
+   "status": "deposited",
+   "het_ids": {
+    "Damascus Dancings": "HET-DANCINGS-001"
+   }
+  },
+  {
+   "work": "Chronoarithmics",
+   "editions": [
+    818
+   ],
+   "apparatus": [],
+   "primary": "Sen Kuro",
+   "with": [],
+   "form": "contemplative mathematics",
+   "note": "Kuro's claimed function is contemplative mathematics, the patient counter. #818 is the updated text.",
+   "reassignment": "was attributed to Lee Sharks",
+   "deposits": [
+    818
+   ],
+   "edition_count": 1,
+   "status": "deposited",
+   "het_ids": {
+    "Sen Kuro": "HET-KURO-001"
+   }
+  },
+  {
+   "work": "Day and Night: Conversations with Sapphic Desire",
+   "editions": [
+    282,
+    324
+   ],
+   "apparatus": [],
+   "primary": "Rebekah Cranes",
+   "with": [],
+   "form": "conversations",
+   "note": "Cranes claims Day and Night among her terms, and Sappho. Two deposits, both already hers.",
+   "deposits": [
+    282,
+    324
+   ],
+   "edition_count": 2,
+   "status": "deposited",
+   "het_ids": {
+    "Rebekah Cranes": "HET-CRANES-001"
+   }
+  },
+  {
+   "work": "The Space Ark: EA-ARK-01 v4.2.7",
+   "editions": [
+    558
+   ],
+   "apparatus": [
+    549,
+    557,
+    28
+   ],
+   "primary": "Jack Feist",
+   "with": [],
+   "form": "mobile ontological object",
+   "note": "#558 is v4.2.7. #549 and #557 are Feist's on the mathematical and formal symbols; #28 the musical register with Lee Sharks.",
+   "deposits": [
+    28,
+    549,
+    557,
+    558
+   ],
+   "edition_count": 1,
+   "status": "deposited",
+   "het_ids": {
+    "Jack Feist": "HET-FEIST-001"
+   }
+  },
+  {
+   "work": "The Constitution of the Semantic Economy",
+   "editions": [
+    82,
+    87
+   ],
+   "apparatus": [
+    88,
+    94
+   ],
+   "primary": "Ayanna Vox",
+   "with": [],
+   "form": "constitution",
+   "note": "#82 the book; #87 Meaning as Credit, the Pocket Humans volume; #88 and #94 the architecture statements. THE EXPANDED EDITION IS OWED.",
+   "deposits": [
+    82,
+    87,
+    88,
+    94
+   ],
+   "edition_count": 2,
+   "status": "deposited",
+   "het_ids": {}
+  },
+  {
+   "work": "Reading a Book with Lee",
+   "editions": [
+    440
+   ],
+   "apparatus": [],
+   "primary": "Sparrow Wells",
+   "with": [
+    "Lee Sharks"
+   ],
+   "form": "episodes and movie",
+   "note": "the complete patacinematic archive — episodes and movie.",
+   "reassignment": "was attributed to Lee Sharks",
+   "deposits": [
+    440
+   ],
+   "edition_count": 1,
+   "status": "deposited",
+   "het_ids": {
+    "Sparrow Wells": "HET-WELLS-001"
+   }
   }
- ]
+ ],
+ "unrecovered_note": "TWO KINDS OF ABSENCE, AND THE INVENTORY DISTINGUISHES THEM. All That Lies Within Me has an apparatus and no text: a work-provenance record, a navigation map, a metadata packet, and no book. Combat Scholasticism has the whole text in eleven deposited parts and no edition. The operator's rule covers both: IF THERE IS NO FULL EDITION, IT IS AN UNRECOVERED WORK."
 }

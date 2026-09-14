@@ -417,14 +417,39 @@ def reception():
     return pd.DataFrame(rows)
 
 def sources():
+    """Book-length and formerly binary-only works recovered to text.
+
+    THE TABLE HAD NO AUTHOR FIELD UNTIL 2026-09-13, which made it unable to hold the one
+    thing a book-length works section is for: who wrote what. Attribution now comes from
+    datasets/books/books.json, which groups deposits into WORKS — the registry stores
+    editions, samplers, critical editions and apparatus as separate rows with no field
+    joining them, so the grouping is editorial and is declared as such in that file.
+    """
     rows = []
     # data/withheld/ is never projected — see data/withheld/README.md. Withholding is
     # an authorial act; the files stay in the repository and out of every surface.
+    books = json.loads((ROOT/'datasets/books/books.json').read_text(encoding='utf-8'))
+    by_title = {}
+    for w in books['works']:
+        key = re.sub(r'[^a-z0-9]', '', w['work'].lower())[:24]
+        by_title[key] = w
+
+    def attribute(title):
+        k = re.sub(r'[^a-z0-9]', '', (title or '').lower())[:24]
+        for key, w in by_title.items():
+            if k and (k.startswith(key[:14]) or key.startswith(k[:14])):
+                return w['primary'], json.dumps(w.get('het_ids') or {}, ensure_ascii=False), w['work']
+        return None, None, None
+
     for d in ('atlwm', 'recovered-sources'):
         for p in sorted((ROOT/'data/attachments'/d).glob('*.md')):
             t = p.read_text(encoding='utf-8', errors='replace')
-            rows.append({'source_id': f"{d}/{p.name}", 'title': t.splitlines()[0].lstrip('# ').strip() if t else p.stem,
-                         'recovered_from': 'leesharks000/semantic-economy (docx, converted 2026-09-02)', 'text': t, 'text_sha256': sha(t), 'text_words': len(t.split())})
+            title = t.splitlines()[0].lstrip('# ').strip() if t else p.stem
+            author, het_ids, work = attribute(title)
+            rows.append({'source_id': f"{d}/{p.name}", 'title': title,
+                         'author': author, 'het_ids': het_ids, 'work': work,
+                         'recovered_from': 'leesharks000/semantic-economy (docx, converted 2026-09-02)',
+                         'text': t, 'text_sha256': sha(t), 'text_words': len(t.split())})
     return pd.DataFrame(rows)
 
 def sites(fleet_dir):
