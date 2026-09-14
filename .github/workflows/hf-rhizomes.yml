@@ -51,6 +51,9 @@ jobs:
           - slug: revelation-first
             grammar: rhizomes/_grammars/revelation-first.json
             repo_var: HF_RHIZOME_REV_REPO
+          - slug: spxi-mpai
+            grammar: rhizomes/_grammars/spxi-mpai.json
+            repo_var: HF_RHIZOME_SPXI_REPO
     steps:
       - name: Debounce — let a burst of merges settle
         if: ${{ github.event_name == 'push' }}

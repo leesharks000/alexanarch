@@ -17,7 +17,7 @@ Machine-mediated reception: what composition surfaces actually did with this arc
 
 ## Counts
 
-**1249** nodes · **976** core · **273** neighbour · **910** edges · **5** stolons
+**1249** nodes · **976** core · **273** neighbour · **910** edges · **6** stolons
 
 ## It was advertised before it existed
 
@@ -86,6 +86,8 @@ A node matching nothing falls to `unroled`, whose count is this grammar's own er
   THE SITE THIS BODY ADVERTISES AND CANNOT OCCUPY. The operations that change reception rather than measure it — SPXI, AXN, MPAI, entity deployment — with EA-OPREG-01's thirteen-field schema already holding five of them and 292 claims routed. Germinated from here it arrives carrying what the operations are FOR; built standalone it becomes optimisation available to the relations it was devised to contest.
 - **`revelation-first`** — `not_yet_observed_in` from `concept:machine-reception`
   A DECLARED ABSENCE, AND THE ONLY STOLON HERE THAT POINTS AT SOMETHING THIS BODY HAS NOT SEEN. The Revelation work plan v7.3 states that its argument is 'the one major argument in the archive that the retrieval basin has not captured', and that if it enters the composition layer it will be 'the first measured instance of machine-mediated theological reception'. 71 of this registry's 426 addresses touch that body's subject and none records the thesis entering composition. THE NULL IS THE OBSERVATION, and it is advertised here so that the absence is reachable rather than merely true.
+- **`spxi-mpai`** — `instrumented_in` from `concept:inscription`
+  The captures observe what surfaces did. That body holds the technologies by which an inscription is placed to be observed at all.
 
 ## Reproducing it
 
