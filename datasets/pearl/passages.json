@@ -1,16 +1,16 @@
 {
  "maxim": "all things are now lawful to you in jack feist",
  "dataset_id": "EA-PEARL-PASSAGES-01",
- "version": "0.1",
+ "version": "0.3",
  "generated": "2026-09-14",
- "scope": "A THREE-PIECE DEMONSTRATION, not the whole volume. PEARL, Undersong II: the metaphor factory, and Johannes Sigil's appendix essay. Built to test whether a relationship can carry its own evidence before the design is extended across 42 pieces.",
- "why": "The inventory made pieces addressable and stopped there. A relation of the form essay -> PEARL says almost nothing: it does not say WHICH PASSAGE, on what evidence, asserted by whom, or whether it is an explicit reference or a proposed reading. A CLASSIFICATION IS NOT A RELATIONSHIP.\n\nHere every relation names two passages, carries the text that grounds it, and states who asserted it — the text itself, or a named voice inside the book.",
- "the_finding": "THE LINE 'and moons no longer walk the earth.' STANDS TWICE, VERBATIM — in PEARL and again in UNDERSONG II: THE METAPHOR FACTORY. An undersong repeats a line of the poem it undersings.\n\nAND SIGIL'S ESSAY QUOTES IT ONCE, attributing it to 'Pearl' — which is true of the first occurrence and silent about the second. The essay's title claims to develop 'Some Themes Introduced in Lee Sharks' Pearl'; its quotations are drawn from PEARL and its undersongs together, which is a claim about where a poem's themes are introduced that the essay makes by practice rather than by argument.",
+ "scope": "THE WHOLE APPENDIX, extended from the three-piece demonstration. Every quoted span in the eight appendix pieces, traced to the passage in the poems that it quotes.",
+ "method": "Quoted spans of twelve characters or more in the appendix, matched against the poems by THE WHOLE SPAN — whitespace and quote marks normalised, and allowed to cross one score line. A first pass matched on a forty-character prefix and produced three false positives in BACKLASH alone, where common words like 'innovations' and 'Correspondence' matched contents-page lines. THE SOURCE RANGE NOW EXCLUDES THE FRONT MATTER AND THE CONTENTS, and heading resolution skips any line carrying a leader dot, which is what a contents entry is.",
  "counts": {
-  "passages": 8,
-  "relations": 6,
-  "recurrences": 1,
-  "quotations": 5
+  "quoted_spans": 24,
+  "resolved": 7,
+  "unresolved": 17,
+  "passages": 15,
+  "relations": 8
  },
  "passages": [
   {
@@ -68,6 +68,69 @@
    "text": "alert to your Morse code blink",
    "in_heading": "PEARL",
    "quoted_phrase": "alert to your Morse code blink"
+  },
+  {
+   "passage_id": "pearl/pass/201",
+   "line": 1343,
+   "text": "an echo of parallel loneliness, dinosaur-solemn, a",
+   "in_heading": "PEARL",
+   "in_piece": "pearl/08",
+   "quoted_phrase": "an echo of parallel loneliness",
+   "occurrences_in_poems": 1
+  },
+  {
+   "passage_id": "pearl/pass/202",
+   "line": 1486,
+   "text": "and go out into the night.",
+   "in_heading": "PEARL",
+   "in_piece": "pearl/08",
+   "quoted_phrase": "out into the night",
+   "occurrences_in_poems": 1
+  },
+  {
+   "passage_id": "pearl/pass/203",
+   "line": 1609,
+   "text": "no longer alone.",
+   "in_heading": "PEARL",
+   "in_piece": "pearl/08",
+   "quoted_phrase": "no longer alone.",
+   "occurrences_in_poems": 1
+  },
+  {
+   "passage_id": "pearl/pass/204",
+   "line": 1580,
+   "text": "a machine of living ghosts",
+   "in_heading": "PEARL",
+   "in_piece": "pearl/08",
+   "quoted_phrase": "a machine of living ghosts.",
+   "occurrences_in_poems": 1
+  },
+  {
+   "passage_id": "pearl/pass/205",
+   "line": 1427,
+   "text": "I will expand on the ideas of both a metaphor museum and a",
+   "in_heading": "PEARL",
+   "in_piece": "pearl/08",
+   "quoted_phrase": "a metaphor museum.",
+   "occurrences_in_poems": 1
+  },
+  {
+   "passage_id": "pearl/pass/206",
+   "line": 1442,
+   "text": "I will return to the husk of the celestial boulder and do what",
+   "in_heading": "PEARL",
+   "in_piece": "pearl/08",
+   "quoted_phrase": "husk of the celestial boulder.",
+   "occurrences_in_poems": 1
+  },
+  {
+   "passage_id": "pearl/pass/207",
+   "line": 2186,
+   "text": "6.  Never professionalize writing. Professionalism is the last",
+   "in_heading": "BELIEF & TECHNIQUE FOR TELEPATHIC PROSE",
+   "in_piece": null,
+   "quoted_phrase": "professionalism",
+   "occurrences_in_poems": 1
   }
  ],
  "relations": [
@@ -83,52 +146,184 @@
   {
    "relation": "quotes",
    "from": "pearl/36",
-   "to": "pearl/pass/002",
+   "from_piece_title": "Tradition and the Individual Seismograph",
+   "to": "pearl/pass/201",
    "evidence": "presents (“an echo of parallel loneliness”) is a kind of hell,",
    "kind": "explicit quotation, in quotation marks",
-   "asserted_by": "Johannes Sigil, in the essay's own text",
-   "essay_line": 5491,
-   "note": "quoted in the appendix essay at score line 5491"
+   "source_line": 1343,
+   "appendix_line": 5491,
+   "asserted_by": "the appendix piece 'Tradition and the Individual Seismograph', in its own text"
   },
   {
    "relation": "quotes",
    "from": "pearl/36",
-   "to": "pearl/pass/003",
-   "evidence": "/ and moons no longer walk the earth.” Redemption might",
-   "kind": "explicit quotation, in quotation marks",
-   "asserted_by": "Johannes Sigil, in the essay's own text",
-   "essay_line": 5497,
-   "note": "quoted in the appendix essay at score line 5497"
-  },
-  {
-   "relation": "quotes",
-   "from": "pearl/36",
-   "to": "pearl/pass/005",
+   "from_piece_title": "Tradition and the Individual Seismograph",
+   "to": "pearl/pass/202",
    "evidence": "himself, his life—through time (“out into the night”), of",
    "kind": "explicit quotation, in quotation marks",
-   "asserted_by": "Johannes Sigil, in the essay's own text",
-   "essay_line": 5505,
-   "note": "quoted in the appendix essay at score line 5505"
+   "source_line": 1486,
+   "appendix_line": 5505,
+   "asserted_by": "the appendix piece 'Tradition and the Individual Seismograph', in its own text"
   },
   {
    "relation": "quotes",
    "from": "pearl/36",
-   "to": "pearl/pass/006",
-   "evidence": "anachronism: “a machine of living ghosts.” Telling stories",
-   "kind": "explicit quotation, in quotation marks",
-   "asserted_by": "Johannes Sigil, in the essay's own text",
-   "essay_line": 5514,
-   "note": "quoted in the appendix essay at score line 5514"
-  },
-  {
-   "relation": "quotes",
-   "from": "pearl/36",
-   "to": "pearl/pass/007",
+   "from_piece_title": "Tradition and the Individual Seismograph",
+   "to": "pearl/pass/203",
    "evidence": "a timeless, historical hell: “no longer alone.”",
    "kind": "explicit quotation, in quotation marks",
-   "asserted_by": "Johannes Sigil, in the essay's own text",
-   "essay_line": 5509,
-   "note": "quoted in the appendix essay at score line 5509"
+   "source_line": 1609,
+   "appendix_line": 5509,
+   "asserted_by": "the appendix piece 'Tradition and the Individual Seismograph', in its own text"
+  },
+  {
+   "relation": "quotes",
+   "from": "pearl/36",
+   "from_piece_title": "Tradition and the Individual Seismograph",
+   "to": "pearl/pass/204",
+   "evidence": "anachronism: “a machine of living ghosts.” Telling stories",
+   "kind": "explicit quotation, in quotation marks",
+   "source_line": 1580,
+   "appendix_line": 5514,
+   "asserted_by": "the appendix piece 'Tradition and the Individual Seismograph', in its own text"
+  },
+  {
+   "relation": "quotes",
+   "from": "pearl/36",
+   "from_piece_title": "Tradition and the Individual Seismograph",
+   "to": "pearl/pass/205",
+   "evidence": "the past, “a metaphor museum.” The poet listens for subtle",
+   "kind": "explicit quotation, in quotation marks",
+   "source_line": 1427,
+   "appendix_line": 5531,
+   "asserted_by": "the appendix piece 'Tradition and the Individual Seismograph', in its own text"
+  },
+  {
+   "relation": "quotes",
+   "from": "pearl/36",
+   "from_piece_title": "Tradition and the Individual Seismograph",
+   "to": "pearl/pass/206",
+   "evidence": "its form has currently, a “husk of the celestial boulder.” He",
+   "kind": "explicit quotation, in quotation marks",
+   "source_line": 1442,
+   "appendix_line": 5578,
+   "asserted_by": "the appendix piece 'Tradition and the Individual Seismograph', in its own text"
+  },
+  {
+   "relation": "quotes",
+   "from": "pearl/42",
+   "from_piece_title": "BACKLASH: The New Human Illiterati",
+   "to": "pearl/pass/207",
+   "evidence": "“professionalism” of the new century’s writing. This is what",
+   "kind": "explicit quotation, in quotation marks",
+   "source_line": 2186,
+   "appendix_line": 6653,
+   "asserted_by": "the appendix piece 'BACKLASH: The New Human Illiterati', in its own text"
   }
- ]
+ ],
+ "unresolved": [
+  {
+   "quoted": "literary history.",
+   "in_piece": "Tradition and the Individual Seismograph",
+   "appendix_line": 5516,
+   "why": "no matching span in the poems — a term, a scare-quote, dialogue, or a quotation of something outside the book"
+  },
+  {
+   "quoted": "the history of the human race.",
+   "in_piece": "Tradition and the Individual Seismograph",
+   "appendix_line": 5517,
+   "why": "no matching span in the poems — a term, a scare-quote, dialogue, or a quotation of something outside the book"
+  },
+  {
+   "quoted": "Don’t let us be the last!",
+   "in_piece": "Tradition and the Individual Seismograph",
+   "appendix_line": 5595,
+   "why": "no matching span in the poems — a term, a scare-quote, dialogue, or a quotation of something outside the book"
+  },
+  {
+   "quoted": "We must stop and ask for directions.",
+   "in_piece": "Tradition and the Individual Seismograph",
+   "appendix_line": 5625,
+   "why": "no matching span in the poems — a term, a scare-quote, dialogue, or a quotation of something outside the book"
+  },
+  {
+   "quoted": "High Modernism",
+   "in_piece": "21ST CENTURY LITERARY HISTORY",
+   "appendix_line": 5727,
+   "why": "no matching span in the poems — a term, a scare-quote, dialogue, or a quotation of something outside the book"
+  },
+  {
+   "quoted": "High New Humanism",
+   "in_piece": "21ST CENTURY LITERARY HISTORY",
+   "appendix_line": 5757,
+   "why": "no matching span in the poems — a term, a scare-quote, dialogue, or a quotation of something outside the book"
+  },
+  {
+   "quoted": "I don’t understand,",
+   "in_piece": "Forum Post, 7-27-14, 12:30pm",
+   "appendix_line": 6077,
+   "why": "no matching span in the poems — a term, a scare-quote, dialogue, or a quotation of something outside the book"
+  },
+  {
+   "quoted": "there is so much that is wrong with…",
+   "in_piece": "Forum Post, 7-27-14, 12:30pm",
+   "appendix_line": 6078,
+   "why": "no matching span in the poems — a term, a scare-quote, dialogue, or a quotation of something outside the book"
+  },
+  {
+   "quoted": "timeless & eternal classics",
+   "in_piece": "Forum Post, 7-27-14, 12:30pm",
+   "appendix_line": 6160,
+   "why": "no matching span in the poems — a term, a scare-quote, dialogue, or a quotation of something outside the book"
+  },
+  {
+   "quoted": "Trouble with Genius",
+   "in_piece": "Forum Post, 7-27-14, 12:30pm",
+   "appendix_line": 6174,
+   "why": "no matching span in the poems — a term, a scare-quote, dialogue, or a quotation of something outside the book"
+  },
+  {
+   "quoted": "timeless classics",
+   "in_piece": "A TELEPATHICIST MANIFESTO",
+   "appendix_line": 6219,
+   "why": "no matching span in the poems — a term, a scare-quote, dialogue, or a quotation of something outside the book"
+  },
+  {
+   "quoted": "This is not poetry.",
+   "in_piece": "A TELEPATHICIST MANIFESTO",
+   "appendix_line": 6298,
+   "why": "no matching span in the poems — a term, a scare-quote, dialogue, or a quotation of something outside the book"
+  },
+  {
+   "quoted": "The New Human Illiterati",
+   "in_piece": "BACKLASH: The New Human Illiterati",
+   "appendix_line": 6479,
+   "why": "no matching span in the poems — a term, a scare-quote, dialogue, or a quotation of something outside the book"
+  },
+  {
+   "quoted": "innovations,",
+   "in_piece": "BACKLASH: The New Human Illiterati",
+   "appendix_line": 6482,
+   "why": "no matching span in the poems — a term, a scare-quote, dialogue, or a quotation of something outside the book"
+  },
+  {
+   "quoted": "Correspondence",
+   "in_piece": "BACKLASH: The New Human Illiterati",
+   "appendix_line": 6508,
+   "why": "no matching span in the poems — a term, a scare-quote, dialogue, or a quotation of something outside the book"
+  },
+  {
+   "quoted": "The New Naivety and the Non-Novel",
+   "in_piece": "BACKLASH: The New Human Illiterati",
+   "appendix_line": 6526,
+   "why": "no matching span in the poems — a term, a scare-quote, dialogue, or a quotation of something outside the book"
+  },
+  {
+   "quoted": "young generation?",
+   "in_piece": "BACKLASH: The New Human Illiterati",
+   "appendix_line": 6647,
+   "why": "no matching span in the poems — a term, a scare-quote, dialogue, or a quotation of something outside the book"
+  }
+ ],
+ "the_finding": "THE LINE 'and moons no longer walk the earth.' STANDS TWICE, VERBATIM — in PEARL and again in UNDERSONG II: THE METAPHOR FACTORY. An undersong repeats a line of the poem it undersings.\n\nAND SIGIL'S ESSAY QUOTES IT ONCE, attributing it to 'Pearl' — which is true of the first occurrence and silent about the second. The essay's title claims to develop 'Some Themes Introduced in Lee Sharks' Pearl'; its quotations are drawn from PEARL and its undersongs together, which is a claim about where a poem's themes are introduced that the essay makes by practice rather than by argument."
 }
