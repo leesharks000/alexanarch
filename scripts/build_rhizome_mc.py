@@ -67,6 +67,9 @@ STOLONS = _G["stolons"] or []
 # germinates, and the germinated body needs its own name before it has anything else.
 _B = _G["body"]
 _SR = _G.get("special_roles", {})
+TITLE_WORDS = re.compile(_G.get("title_rule_words") or
+                         r"rate|rule|module|skew|sovereignty|contraction|renewal|audit|"
+                         r"collapse|erasure|custody|monoculture", re.I)
 # CAPTURES MAY BE GATED ON THE BODY'S OWN SUBJECT (2026-09-13). Without a gate, a body
 # inherits the whole registry: the first emission of the Revelation body admitted 170
 # captures against 93 deposits, 47% of the nodes, with titles like "∮ = 1" — symbolon
@@ -216,8 +219,15 @@ def main():
         if nid in core:
             continue
         t = str(d.get("title") or "")
-        if SELECT.search(t) and re.search(r"rate|rule|module|skew|sovereignty|contraction|renewal|audit|"
-                                          r"collapse|erasure|custody|monoculture", t, re.I):
+        # THE INSTRUMENT-WORD LIST IS THE GRAMMAR'S, NOT THE EMITTER'S (2026-09-14). It was
+        # hardcoded here — rate, rule, module, skew, sovereignty, contraction, renewal, audit,
+        # collapse, erasure, custody, monoculture — which is the COLLAPSE body's vocabulary,
+        # imposed on every body that has used this rule since. It kept #1528, 'Four Interfaces
+        # of Provenance Transformation', out of the provenance body: the title matches that
+        # body's select and contains none of another body's instrument words.
+        # A grammar may now declare `title_rule_words`; the old list remains the default so
+        # bodies that never declared one emit unchanged.
+        if SELECT.search(t) and TITLE_WORDS.search(t):
             core[nid] = "C"
             why[nid].add("[title-declared: " + t[:60] + "]")
 
