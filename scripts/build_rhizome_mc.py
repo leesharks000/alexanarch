@@ -453,6 +453,20 @@ def main():
                     _keep.add("capture:" + _c["slug"])
         included = included & _keep
 
+    # HAND-READ RELATIONS FOR A CURATED BODY (2026-09-14). The ledger recorded none among
+    # the SPXI body's 69 deposits — 507 relations touch them and not one joins two, because
+    # a disambiguation packet's edge points OUT of the body at the thing the entity is not.
+    # The body nonetheless has internal structure: version chains, specifications and their
+    # extensions, deployments, corrections. A curated spore may declare those, and they are
+    # emitted with basis and asserted_by naming them as READ rather than as ledger facts.
+    if _CUR:
+        _cs2 = json.loads((ROOT / _CUR["source"]).read_text(encoding="utf-8"))
+        for _r in _cs2.get("relations", []):
+            work_rels.append({"from": _r["from"], "predicate": _r["predicate"], "to": _r["to"],
+                              "basis": _r.get("basis") or "read from the titles",
+                              "note": _r.get("note", ""),
+                              "asserted_by": _r.get("asserted_by")})
+
     # THE PASSAGE LAYER (2026-09-14). Pieces made the book addressable; passages make the
     # place inside a piece addressable, which is what a relationship needs to carry evidence.
     # A grammar declares `passages` beside `source`; bodies that do not are unaffected.
@@ -598,8 +612,14 @@ def main():
 
     for wr in work_rels:
         edges.append({"relation_id": None, "source_id": wr["from"], "predicate": wr["predicate"],
-                      "target_id": wr["to"], "target_type": "piece",
-                      "basis": "within-book", "status": "current",
+                      "target_id": wr["to"],
+                      # target_type and basis come from the relation, not from a constant.
+                      # Both were hardcoded to the Pearl body's shape — every curated
+                      # relation emitted as target_type 'piece' with basis 'within-book',
+                      # overwriting a stated basis of 'read from the titles' on a body that
+                      # has no pieces in it.
+                      "target_type": ("piece" if str(wr["to"]).startswith("pearl/") else "deposit"),
+                      "basis": wr.get("basis") or "within-book", "status": "current",
                       "note": wr["note"], "asserted_by": wr.get("asserted_by") or "the work itself",
                       "rhizome_role": wr["predicate"]})
 
