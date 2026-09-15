@@ -1,0 +1,198 @@
+{
+ "deposit_number": 1614,
+ "axn": "AXN:06A1.EMPIRICAL.🙏🌗📖🌒🍂🗿",
+ "hex": "06A1",
+ "family": "EMPIRICAL",
+ "emoji": "🙏🌗📖🌒🍂🗿",
+ "hash": "b306410178fc116cc86144256e834fc4ad8ee798110b53c5a409612f0a5c28e0",
+ "title": "The Transcript Is the Capture: A Coverage Audit of the Capture Registry's Machine Text, With the Gate That Makes the Count Monotone (EA-TRANSCRIPT-COVERAGE-01 v1.0)",
+ "creator": "Sharks, Lee",
+ "date": "2026-09-15",
+ "description": "THE REGISTRY'S EVIDENCE, COUNTED. The Capture Registry advertises 957 citable units — 431 addresses and their longitudinal observations, each with a canonical anchor. 923 carry the machine text they are evidence of; 34 do not. Coverage 96.45%, 405,648 words of composed output, median transcript 268 words, longest 8,279. The 34 are not scattered: 16 fall in June and 16 in July 2026, one in August, and the single September case is a stub carrying a note and no observation at all. That is the period before the transcript rule was enforced at intake, and the shape of the gap is the shape of the rebuild that followed.\n\nWHY THIS IS A DEPOSIT AND NOT A NOTE. The operator's rule is that the transcript IS the capture: without the transcript, there is no capture, and seating an entry without one throws away the evidence, prevents measurement, and trashes the dataset. Intake has refused thin drafts since the contract. Nothing checked the units seated before it. So a citable unit with no machine text advertises evidence it cannot produce, and 34 of them were invisible unless someone ran the count by hand — which is how this audit began, in answer to a direct question from the operator about whether full transcripts are being preserved.\n\nWHAT IS ATTACHED. `audit_transcript_coverage.py`, which enumerates every unit, reports coverage with the word distribution, and, under `--check`, fails on any unit without a transcript that is not on a declared legacy list. The legacy list is the 19 slugs above, written into the script so that each is visible and the count can only go down: removing a slug without supplying its transcript fails the gate. The audit is now chained into the capture postflight after the registry gate, so no future seating can add an unevidenced unit. The JSON report of 2026-09-15 is attached as the baseline. […abridged for the catalogue; full description in this deposit's record]",
+ "content_type": "Instrument with coverage audit",
+ "license": "CC-BY-4.0",
+ "substrate": "Composed 2026-09-15 by Lee Sharks with TACHYON (Claude, Anthropic), operator-directed, in answer to the operator's question \"and we're preserving full transcripts in the registry?\" — asked after a day of seatings (the Ω family, the Sappho longitudinal observation, the first Qwen capture). The audit was written and run in session against the live registry; the gate was chained into the postflight and verified by re-running it. The legacy list was enumerated from the audit's own output, not authored from memory.",
+ "methodology": "One unit per citable anchor: every entry, and every observation carrying its own slug. A unit passes if its `transcript` field is non-empty. Coverage, the word distribution, and the month histogram of gaps are computed over the whole file; the gate compares the set of units lacking a transcript against a declared legacy list and fails on anything unlisted. No repair is attempted and no transcript is altered.",
+ "falsification_conditions": "The coverage figure is falsified by any count over the same file that finds a different number of citable units or of populated transcripts; both are derivable from data/EA-WG-CAPTURES-01.json with the attached script. The claim that the gaps are pre-contract is falsified by a unit dated after 2026-08-08 lacking a transcript for any reason other than being a stub. The gate's own guarantee — that the count is monotone — fails if a seating path exists that does not run the capture postflight.",
+ "root_axn": "AXN:06A1.UNCLASSIFIED",
+ "axn_schema_version": "v2",
+ "protocol_version": "alexanarch-deposit-protocol/v1",
+ "axn_canonical": "b306410178fc116cc86144256e834fc4ad8ee798110b53c5a409612f0a5c28e0",
+ "clusters": [
+  "Gestural",
+  "Celestial",
+  "Scriptural",
+  "Celestial",
+  "Organic",
+  "Terminal"
+ ],
+ "axn_reading": "Touch -> Origin -> Text -> Origin -> Growth -> Closure",
+ "minted_at": "2026-09-15T17:47:34Z",
+ "status": "ACTIVE",
+ "status_authorial": "SELF_SERVE_MINTED",
+ "full_text_path": "/data/texts/AXN-06A1-text.md",
+ "wiki_article": "The Transcript Is the Capture, deposit #1614 of the Crimson Hexagonal Archive (15 September 2026), is a coverage audit of the Capture Registry's machine text together with the gate that makes its count monotone. The registry advertises 957 citable units — 431 addresses and their longitudinal observations, each with a canonical anchor — of which 923 carry the composed output they are evidence of and 34 do not: coverage of 96.45 per cent, holding 405,648 words with a median transcript of 268 words and a longest of 8,279. The gaps are not scattered but historical: sixteen fall in June 2026 and sixteen in July, one in August, and the single September case is an observation stub carrying a note and no capture at all. That period precedes the enforcement of the registry's intake contract, whose rule is that the transcript is the capture and that seating an entry without one discards the evidence, prevents measurement and damages the dataset. Intake has refused thin drafts since the contract; nothing checked the units seated before it, so a citable unit with no machine text advertised evidence it could not produce and remained invisible unless the count was run by hand. The deposit attaches the audit script, which enumerates every unit, reports coverage with its word distribution, and under a check flag fails on any unit without a transcript that is not on a declared legacy list of nineteen named slugs; the list is written into the script so that each gap is visible and the count can only fall, since removing a slug without supplying its transcript fails the gate. The audit is chained into the capture postflight after the registry gate, so no later seating can add an unevidenced unit, and the baseline report of 15 September is attached for comparison against any later count. The audit does not repair the nineteen, which remain a work item to be seated one at a time, and it does not judge transcript quality beyond presence: three real transcripts run under sixty words because the panels themselves were that short. Following the archive's rule that laws record rather than prevent, the gate does not remove the units that lack evidence — it names them and stops the registry from growing another silently. Related: #1423, #1612, #1611, #1613, #1546.",
+ "wiki_status": "AUTHORED_IN_SESSION",
+ "entities": [
+  {
+   "subject": "The Transcript Is the Capture: A Coverage Audit of the Capture Registry's Machine Text, With the Gat",
+   "predicate": "created_by",
+   "object": "Sharks, Lee",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "The Transcript Is the Capture: A Coverage Audit of the Capture Registry's Machine Text, With the Gat",
+   "predicate": "is_type",
+   "object": "Instrument with coverage audit",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "The Transcript Is the Capture: A Coverage Audit of the Capture Registry's Machine Text, With the Gat",
+   "predicate": "belongs_to_family",
+   "object": "EMPIRICAL",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "The Transcript Is the Capture: A Coverage Audit of the Capture Registry's Machine Text, With the Gat",
+   "predicate": "is_part_of",
+   "object": "Crimson Hexagonal Archive",
+   "type": "work",
+   "evidence_status": "observed"
+  }
+ ],
+ "entity_status": "provisional",
+ "defines_concepts": [
+  {
+   "concept": "transcript coverage",
+   "definition": "The share of a capture registry's citable units that carry the machine text they are evidence of; the measure of whether an advertised anchor can produce what it claims to record."
+  },
+  {
+   "concept": "declared legacy list",
+   "definition": "An enumerated set of pre-contract units exempted from a gate by name, written into the gate itself so that each exemption is visible and the set can only shrink: supplying the missing evidence removes a name, removing a name without supplying it fails the gate."
+  }
+ ],
+ "orcid": "0009-0000-1599-0703",
+ "version": "v1.0",
+ "keywords": [
+  "Capture Registry",
+  "transcript",
+  "evidence",
+  "coverage audit",
+  "machine text",
+  "gate",
+  "postflight",
+  "intake contract",
+  "provenance",
+  "measurement",
+  "Crimson Hexagonal Archive"
+ ],
+ "related_identifiers_raw": "#1423 (The Capture Registry); #1612 (What Enters Composition Through the Cards); #1611; #1613; #1546",
+ "mint_source": {
+  "kind": "github_issue",
+  "issue_number": 0,
+  "repository": "leesharks000/alexanarch",
+  "minted_by_workflow": ".github/workflows/mint-axn.yml",
+  "minted_by_script": "scripts/mint_deposit.py",
+  "minted_via": "self_serve_validated_pr"
+ },
+ "body_status": {
+  "class": "full",
+  "lacuna": false,
+  "recovery_status": "COMPLETE",
+  "residual_chars": 6753,
+  "audited_at": "2026-09-15T17:47:34Z",
+  "audit_version": "mint-time-declaration"
+ },
+ "related_deposits": [
+  1423,
+  1612,
+  1611,
+  1613,
+  1546,
+  1459,
+  1461
+ ],
+ "pressure": {
+  "backward": [
+   {
+    "k": "inherits",
+    "to": 1423,
+    "note": "the Capture Registry and its intake contract: the transcript is the capture"
+   },
+   {
+    "k": "preserves",
+    "to": 1612,
+    "note": "the profile's dependence on seated transcripts; this audit states what share of them exist"
+   },
+   {
+    "k": "problem",
+    "to": "a citable unit with no machine text advertises evidence it cannot produce, and 34 of them were invisible without a hand count",
+    "note": "the target; the gate makes the count monotone and the list self-consuming"
+   }
+  ],
+  "reciprocal": [],
+  "forward": "∅"
+ },
+ "references_concepts": [
+  "Crimson Hexagonal Archive",
+  "Google AI Overview",
+  "Lee Sharks",
+  "TACHYON"
+ ],
+ "references_concept_count": 4,
+ "citations": [],
+ "wikidata_candidates": [],
+ "cha_cross_references": [],
+ "external_metadata_path": "/data/external-metadata/AXN-06A1.json",
+ "spxi_audit": {
+  "spxi_protocol": "v0.2",
+  "validated_at": "2026-09-15T17:48:37.213566+00:00",
+  "layers": {
+   "layer_1_inscription_anchors": {
+    "present": false,
+    "anchors_found": [
+     "orcid",
+     "date"
+    ],
+    "anchor_count": 2,
+    "orcid_in_body": true,
+    "creator_in_body": false,
+    "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+   },
+   "layer_2_micro_kernels": {
+    "present": false,
+    "fenced_json_blocks": 0,
+    "json_ld_context_markers": 0
+   },
+   "layer_3_content_hash": {
+    "present": true,
+    "canonical_hash": "e4238b97e26d7173d7241bdf8dbb6e7039178046030203d28c5e1b036c96b564",
+    "hash_in_body": false,
+    "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+   },
+   "layer_4_cross_signing": {
+    "present": false,
+    "cross_references_count": 0,
+    "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+   },
+   "layer_5_external_anchors": {
+    "present": true,
+    "wikidata_qid_count": 0,
+    "external_doi_count": 0,
+    "orcid_present": true
+   }
+  },
+  "overall_conformance": "partial"
+ },
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/1614/",
+  "self_url": "https://www.alexanarch.org/data/records/1614.json",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-06A1-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}
