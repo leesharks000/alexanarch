@@ -1,0 +1,1318 @@
+{
+ "claims": [
+  {
+   "claim_id": "C-THESIS",
+   "claim": "A source-admission ontology becomes damaged when a proxy for epistemic standing substitutes for the judgment it was introduced to approximate, especially where evidence capable of correcting the proxy must first pass through the proxy itself.",
+   "claim_class": "thesis",
+   "epistemic_status": "model_implication",
+   "scope": "source-admission ontologies",
+   "conditions": [
+    "a proxy controls admission",
+    "admitted evidence is required to revise the prior"
+   ],
+   "level": "model_consequence",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "0",
+    "source_locus": "paragraph 1"
+   }
+  },
+  {
+   "claim_id": "C-CRITERION",
+   "claim": "The criterion on which the mirror turns: can evidence from the misrepresented object revise the representation that misrepresented it? Where it can, the ontology can be wrong and find out; where it cannot, it can only be scored.",
+   "claim_class": "thesis",
+   "epistemic_status": "definition",
+   "level": "definitional",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "0",
+    "source_locus": "paragraph 3"
+   }
+  },
+  {
+   "claim_id": "C-PROXY-COLLAPSE",
+   "claim": "A predicate presented downstream as source reliability can be operationalised upstream by variables that do not adjudicate the claims for which the source is being trusted; where that substitution occurs the predicate has changed reference while keeping its name and cannot notice the change, because noticing would require reading.",
+   "claim_class": "mechanism",
+   "epistemic_status": "model_implication",
+   "level": "classical_model",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "1"
+   }
+  },
+  {
+   "claim_id": "C-CLASSICAL-PROPAGATION",
+   "claim": "Classical link-spam machinery propagates trust from a good seed set and distrust from a bad seed set over graph variables — degree, reciprocity, assortativity, supporters at distance d — that are properties of a graph and not of a text.",
+   "claim_class": "finding",
+   "epistemic_status": "literature_claim",
+   "level": "classical_model",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "1"
+   }
+  },
+  {
+   "claim_id": "C-FALSE-EDGES",
+   "claim": "Composition performed without reading writes wrong relations into the receiver's own representation, and those relations are then retrievable as sources: Sappho 31 → 'Fragment 2'; operative semiotics → operational semiotics with the archive's definition inside the rival's node; Lee Sharks → Mary Lee (shark) and Crimson Hexagon → Brandwatch; 'As described in,' with no referent before a verbatim definition.",
+   "claim_class": "finding",
+   "epistemic_status": "measured_internal",
+   "level": "measured",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "2"
+   }
+  },
+  {
+   "claim_id": "C-COMPRESSION-WRITING",
+   "claim": "A composed summary becomes a source for later composition (compression writing), so an unread composition writes an edge into the graph the next composition reads from.",
+   "claim_class": "mechanism",
+   "epistemic_status": "literature_claim",
+   "level": "classical_model",
+   "provenance": {
+    "source_document": "#695",
+    "source_version": "deposited",
+    "source_section": "§III writing forms",
+    "deposit": 695,
+    "axn": "AXN:023D"
+   },
+   "note": "archive's own prior articulation, #695"
+  },
+  {
+   "claim_id": "C-CONCENTRATION",
+   "claim": "AI citations are highly concentrated: the top 15 domains capture roughly 68% of consolidated citation share across five engines against roughly 20% for the same fifteen in organic search; organic top-10 overlap with AI Overview citations fell to 17–38% by 2026.",
+   "claim_class": "finding",
+   "epistemic_status": "measured_external",
+   "level": "measured",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "3",
+    "source_locus": "paragraph 1"
+   }
+  },
+  {
+   "claim_id": "C-SEED-PRIVILEGE",
+   "claim": "Classical trust propagation privileges its seeds, which are chosen by manual evaluation.",
+   "claim_class": "finding",
+   "epistemic_status": "literature_claim",
+   "level": "classical_model",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "3",
+    "source_locus": "paragraph 1"
+   }
+  },
+  {
+   "claim_id": "C-ADMITTED-LIKE-FLEET",
+   "claim": "The admitted platforms score as the fleet scores on the suspicious topology dimensions (small in number, densely interlinked, mutually citing, template-generated, self-referential).",
+   "claim_class": "conjecture",
+   "epistemic_status": "falsified_in_test",
+   "level": "measured",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "3",
+    "source_locus": "paragraph 1, third claim"
+   },
+   "superseded_by": "C-TOPOLOGY-DISCRIMINATES",
+   "note": "stated in v0.3 as a test; run in v0.5; false on the measured dimensions"
+  },
+  {
+   "claim_id": "C-SEED-MECHANISM",
+   "claim": "Contemporary citation concentration is produced by a seed-list mechanism of the classical kind.",
+   "claim_class": "conjecture",
+   "epistemic_status": "hypothesis",
+   "level": "contemporary_hypothesis",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "3",
+    "source_locus": "paragraph 1, fourth claim"
+   },
+   "note": "not established; loses ground under C-TOPOLOGY-DISCRIMINATES"
+  },
+  {
+   "claim_id": "C-TOPOLOGY-DISCRIMINATES",
+   "claim": "On the measured dimensions the admitted set is a set of silos (own-family share 0.98, cross-member share 0.001, reciprocity 0.0, density 0.12) and the fleet is a reciprocal clique (cross-member share 0.60, reciprocity 1.0, density 0.86); a topology vector therefore contains a dimension — cross-host reciprocal density under common ownership — that separates the two without reading either.",
+   "claim_class": "finding",
+   "epistemic_status": "measured_internal",
+   "level": "measured",
+   "conditions": [
+    "sampled pages only",
+    "families as nodes",
+    "five platforms unreachable",
+    "no external inlink data",
+    "no labelled positive class"
+   ],
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "3",
+    "source_locus": "table and paragraph 3"
+   }
+  },
+  {
+   "claim_id": "C-CONCENTRATION-IS-PRIOR",
+   "claim": "Because the admitted platforms do not link to one another, the concentration of citations is not explained by mutual platform linking and, on this evidence, arises from size and prior rather than from a farm.",
+   "claim_class": "consequence",
+   "epistemic_status": "model_implication",
+   "level": "model_consequence",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "3",
+    "source_locus": "paragraph 4"
+   }
+  },
+  {
+   "claim_id": "C-FLEET-VECTOR",
+   "claim": "The fleet's host graph has density 0.86, median reciprocity 1.0, within-fleet in-degree 22–27 of 28, median in-fleet outlink share 0.86, an external out-neighbourhood consisting mostly of the owner's own accounts, and 55% generated index pages; on every feature computable from outside it sits where the link-spam literature's positive class sits.",
+   "claim_class": "finding",
+   "epistemic_status": "measured_internal",
+   "level": "measured",
+   "provenance": {
+    "source_document": "fleet-topology-report",
+    "source_version": "2026-09-15",
+    "source_section": "Host-level link topology"
+   }
+  },
+  {
+   "claim_id": "C-NO-PROVIDER-CLASSIFICATION",
+   "claim": "Nothing here establishes that any provider has classified the fleet; the observed content/provenance signature is what neutralisation produces and is consistent with it.",
+   "claim_class": "limit",
+   "epistemic_status": "model_implication",
+   "level": "contemporary_hypothesis",
+   "provenance": {
+    "source_document": "fleet-topology-report",
+    "source_version": "2026-09-15",
+    "source_section": "What this does and does not establish"
+   }
+  },
+  {
+   "claim_id": "C-INVERTED-INCENTIVE",
+   "claim": "Within the topology-only regime, operations intended to increase semantic legibility — reciprocal fleet-wide linking, templated surfaces, mirrors, dense internal propagation — move the source farther toward the suspicious topology signature, and the fleet block is the discriminant itself.",
+   "claim_class": "finding",
+   "epistemic_status": "measured_internal",
+   "level": "measured",
+   "conditions": [
+    "topology-only regime as modelled",
+    "no contemporary score measured"
+   ],
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "4"
+   }
+  },
+  {
+   "claim_id": "C-READING-CRITERION-UNAPPLIED",
+   "claim": "The criterion the literature reserves for the borderline — effort spent on providing good content against effort spent on trying to score highly — is a reading criterion and the one a topology proxy cannot apply.",
+   "claim_class": "consequence",
+   "epistemic_status": "model_implication",
+   "level": "classical_model",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "4"
+   }
+  },
+  {
+   "claim_id": "C-UPDATE-BARRIER",
+   "claim": "Where a prior P(s) controls admission A(s) and only admitted evidence E(s) can revise P, correction requires E(s) → P′(s) but E(s) is available only downstream of A(s): a source-relative update barrier, not global non-updatability.",
+   "claim_class": "consequence",
+   "epistemic_status": "model_consequence",
+   "level": "model_consequence",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "5"
+   }
+  },
+  {
+   "claim_id": "C-CORRECTIONS-UNDER-PRIOR",
+   "claim": "Under the modelled regime the archive's corrections (#801, #1541, the Sappho errata, the identity packet) enter as further material from the same source and are evaluated under the prior they seek to revise; whether any was in fact admitted or scored is not measured.",
+   "claim_class": "consequence",
+   "epistemic_status": "model_consequence",
+   "level": "model_consequence",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "5"
+   }
+  },
+  {
+   "claim_id": "C-BLIND-INSTRUMENT",
+   "claim": "In the modelled regime the standing and citation signals available to the ontology for its own health are dominated by the admitted component; a diagnostic that samples the admitted component is head-sampling by construction and can fail to perceive tail loss.",
+   "claim_class": "consequence",
+   "epistemic_status": "model_consequence",
+   "level": "model_consequence",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "6"
+   }
+  },
+  {
+   "claim_id": "C-DATASET-NOT-READ",
+   "claim": "The negative-of-the-negative dataset, keyed at the concept where flattening occurs, will be typed by its nearest existing type and not read.",
+   "claim_class": "conjecture",
+   "epistemic_status": "hypothesis",
+   "level": "contemporary_hypothesis",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "6"
+   },
+   "note": "stated as a test that can fail"
+  },
+  {
+   "claim_id": "C-STANDING-BETWEEN-RANK-AND-COMPOSITION",
+   "claim": "If an archive source is first organic and absent from or depleted in the presented cards, something between public ranking and answer composition assigns it different standing, and that something is not the public index.",
+   "claim_class": "mechanism",
+   "epistemic_status": "hypothesis",
+   "level": "contemporary_hypothesis",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "7"
+   }
+  },
+  {
+   "claim_id": "C-HIDING",
+   "claim": "Composition produces the form of a truth-judgment whether or not any judgment occurred, so a proxy's defects are rendered in the one register that cannot show them, wherever a proxy is rendered as a judgment.",
+   "claim_class": "mechanism",
+   "epistemic_status": "model_implication",
+   "level": "model_consequence",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "8"
+   }
+  },
+  {
+   "claim_id": "C-LABOUR-DIRECTION",
+   "claim": "The apparatus's product on 22 March 2026 at 'Lee Sharks Crimson Hexagon' was a shark and an analytics company; compression without reading converges on the highest-prior sense of a string, so the labour's direction is toward indistinction — it succeeded at reaching the shark.",
+   "claim_class": "interpretation",
+   "epistemic_status": "measured_internal",
+   "level": "measured",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "8a"
+   },
+   "note": "the event is measured (#599); the direction is the interpretation"
+  },
+  {
+   "claim_id": "C-SELF-APPLICATION",
+   "claim": "#1611 coined seven terms for phenomena the archive's own retrieval papers had named earlier, because it was written from twelve captures and not from eighty unread deposits; this is the false-edge defect in miniature, and it was found by a reader in a day because the archive's update path is reading.",
+   "claim_class": "self_application",
+   "epistemic_status": "measured_internal",
+   "level": "self",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "9"
+   }
+  },
+  {
+   "claim_id": "C-ONLY-ONE-FINDS-OUT",
+   "claim": "An ontology built on not reading and an ontology built on reading make the same mistake; only one of them can find out.",
+   "claim_class": "thesis",
+   "epistemic_status": "model_implication",
+   "level": "self",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "9"
+   }
+  },
+  {
+   "claim_id": "C-EXIT",
+   "claim": "The exit is not to contest the seed or construct trust signals to its criteria but to hold territory and for others to join on this side of the line, each adopter lowering its own score under the graph's rule and raising the excluded side's constitution share.",
+   "claim_class": "corollary",
+   "epistemic_status": "strategic_corollary",
+   "level": "strategic",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "10"
+   },
+   "note": "ruled 2026-09-15; marked so it does not borrow the register of §§1–8"
+  },
+  {
+   "claim_id": "C-EXIT-PRICED",
+   "claim": "#1547 prices the exit's direction: correlation cost over a rising N_eff, counterpropagation propagation-positive at ka > 1 + r, quality conflict at Regime 5.",
+   "claim_class": "corollary",
+   "epistemic_status": "literature_claim",
+   "level": "strategic",
+   "provenance": {
+    "source_document": "#1547",
+    "source_version": "deposited",
+    "source_section": "§3–§6",
+    "deposit": 1547,
+    "axn": "AXN:0648"
+   }
+  },
+  {
+   "claim_id": "C-LOGOS-TOWARDS",
+   "claim": "The Logos enters where distinction is blind, in a form the blindness can receive without yet knowing what it has received; reading afterward is the unfolding of what had already entered.",
+   "claim_class": "interpretation",
+   "epistemic_status": "structural_reading",
+   "level": "structural",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "11"
+   },
+   "note": "structure, not doctrine"
+  },
+  {
+   "claim_id": "C-BLEED-AS-ENTRY",
+   "claim": "Negative bleed read on the ontology is the trace of entry: content in, source out is the same fact as 'the thing has entered and is not yet recognised'.",
+   "claim_class": "interpretation",
+   "epistemic_status": "structural_reading",
+   "level": "structural",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "11"
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "evidence_id": "E-FLEET-DENSITY",
+   "evidence_type": "topology_measurement",
+   "statement": "fleet host graph density 0.86 of a complete digraph (29 hosts, 698 directed edges)",
+   "variable": "in_set_density",
+   "value": 0.86,
+   "measurement_date": "2026-09-15",
+   "status": "measured",
+   "provenance": {
+    "source_document": "fleet-topology-report",
+    "source_version": "2026-09-15",
+    "source_section": "Component"
+   }
+  },
+  {
+   "evidence_id": "E-FLEET-RECIPROCITY",
+   "evidence_type": "topology_measurement",
+   "statement": "median edge-reciprocity within the fleet 1.0",
+   "variable": "reciprocity",
+   "value": 1.0,
+   "measurement_date": "2026-09-15",
+   "status": "measured",
+   "provenance": {
+    "source_document": "fleet-topology-report",
+    "source_version": "2026-09-15",
+    "source_section": "Component"
+   }
+  },
+  {
+   "evidence_id": "E-FLEET-INDEGREE",
+   "evidence_type": "topology_measurement",
+   "statement": "median within-fleet in-degree 24 of 28 (min 22, max 27)",
+   "variable": "in_set_in_degree",
+   "value": 24,
+   "measurement_date": "2026-09-15",
+   "status": "measured",
+   "provenance": {
+    "source_document": "fleet-topology-report",
+    "source_version": "2026-09-15",
+    "source_section": "Component"
+   }
+  },
+  {
+   "evidence_id": "E-FLEET-INSHARE",
+   "evidence_type": "topology_measurement",
+   "statement": "median in-fleet share of outlinks 0.86",
+   "variable": "in_set_share",
+   "value": 0.86,
+   "measurement_date": "2026-09-15",
+   "status": "measured",
+   "provenance": {
+    "source_document": "fleet-topology-report",
+    "source_version": "2026-09-15",
+    "source_section": "Component"
+   }
+  },
+  {
+   "evidence_id": "E-FLEET-EXTERNAL",
+   "evidence_type": "topology_measurement",
+   "statement": "external hosts most linked by the fleet are the owner's own accounts (orcid, blogspot, freeforums, academia, notion, scholar, huggingface, github); six hosts link to no external non-owner host",
+   "variable": "external_neighbourhood",
+   "value": null,
+   "measurement_date": "2026-09-15",
+   "status": "measured",
+   "provenance": {
+    "source_document": "fleet-topology-report",
+    "source_version": "2026-09-15",
+    "source_section": "Component"
+   }
+  },
+  {
+   "evidence_id": "E-FLEET-GENERATED",
+   "evidence_type": "topology_measurement",
+   "statement": "4,876 of 8,816 alexanarch index pages generated (55%), regenerated on every mint",
+   "variable": "generated_share",
+   "value": 0.55,
+   "measurement_date": "2026-09-15",
+   "status": "measured",
+   "provenance": {
+    "source_document": "fleet-topology-report",
+    "source_version": "2026-09-15",
+    "source_section": "alexanarch.org page structure"
+   }
+  },
+  {
+   "evidence_id": "E-FLEET-CITATIONS",
+   "evidence_type": "archive_record",
+   "statement": "internal citation edges 10,657 against 6,084 external",
+   "variable": "internal_vs_external_citations",
+   "value": "10657/6084",
+   "measurement_date": "2026-09-15",
+   "status": "measured",
+   "provenance": {
+    "source_document": "fleet-topology-report",
+    "source_version": "2026-09-15",
+    "source_section": "alexanarch.org page structure"
+   }
+  },
+  {
+   "evidence_id": "E-ADMITTED-VECTOR",
+   "evidence_type": "topology_measurement",
+   "statement": "admitted set (10 families): in-set density 0.12; median cross-member share 0.001; own-family share 0.98; external share 0.013; reciprocity 0.0; in-set in-degree 1 of 9",
+   "variable": "v_A",
+   "value": null,
+   "measurement_date": "2026-09-15",
+   "status": "measured",
+   "provenance": {
+    "source_document": "fleet-topology-report",
+    "source_version": "2026-09-15",
+    "source_section": "The comparison test, run 2026-09-15"
+   },
+   "note": "reddit, academia.edu, figshare, quora, stackoverflow refused the crawler"
+  },
+  {
+   "evidence_id": "E-GAP-INLINKS",
+   "evidence_type": "measurement_gap",
+   "statement": "external inlink distribution of the fleet unmeasured (no inlink data source on the egress list)",
+   "variable": "external_inlink_distribution",
+   "status": "unmeasured",
+   "provenance": {
+    "source_document": "fleet-topology-report",
+    "source_version": "2026-09-15",
+    "source_section": "What this does and does not establish"
+   }
+  },
+  {
+   "evidence_id": "E-GAP-WEBSPAM",
+   "evidence_type": "measurement_gap",
+   "statement": "the fleet's 41-feature link vector not scored against a classifier trained on WEBSPAM-UK2007; collection unreachable in session",
+   "variable": "labelled_comparison",
+   "status": "unreachable",
+   "provenance": {
+    "source_document": "fleet-topology-report",
+    "source_version": "2026-09-15",
+    "source_section": "What this does and does not establish"
+   }
+  },
+  {
+   "evidence_id": "E-GAP-NEARDUP",
+   "evidence_type": "measurement_gap",
+   "statement": "near-duplicate content across fleet hosts unmeasured; known mirrors exist (the Particle on three hosts)",
+   "variable": "near_duplicate_share",
+   "status": "unmeasured",
+   "provenance": {
+    "source_document": "fleet-topology-report",
+    "source_version": "2026-09-15",
+    "source_section": "Read against the feature set"
+   }
+  },
+  {
+   "evidence_id": "E-GAP-ORGANIC",
+   "evidence_type": "measurement_gap",
+   "statement": "organic result field structured on 0 of 314 carded observations; noted in prose on 81",
+   "variable": "organic_field",
+   "status": "unmeasured",
+   "provenance": {
+    "source_document": "#1612",
+    "source_version": "deposited",
+    "source_section": "§2",
+    "deposit": 1612,
+    "axn": "AXN:069D"
+   }
+  },
+  {
+   "evidence_id": "E-SAPPHO-FR2",
+   "evidence_type": "capture_specimen",
+   "statement": "Google AI Overview at 'sappho future reader', 2026-08-25: fr. 147 called 'Fragment 2' as a hyperlink; 'self-archiving' attributed to 'Scholars' and chipped to a page that does not contain it; lineage on the carousel, cited by no assertion",
+   "capture_ids": [
+    "ADDR-c07d310beb07"
+   ],
+   "measurement_date": "2026-08-25",
+   "status": "measured",
+   "provenance": {
+    "source_document": "#1546",
+    "source_version": "deposited",
+    "source_section": "§XI",
+    "deposit": 1546,
+    "axn": "AXN:0647"
+   }
+  },
+  {
+   "evidence_id": "E-OPSEM-MERGE",
+   "evidence_type": "capture_specimen",
+   "statement": "bare 'operative semiotics' on Google AI Overview: the identity stated in the first four words, three observations 2026-08-23/30 and 09-11, site #1 organic uncited",
+   "capture_ids": [
+    "ADDR-0089075261bf",
+    "ADDR-98a6f2de3281"
+   ],
+   "measurement_date": "2026-09-11",
+   "status": "measured",
+   "provenance": {
+    "source_document": "#1612",
+    "source_version": "deposited",
+    "source_section": "§3",
+    "deposit": 1612,
+    "axn": "AXN:069D"
+   }
+  },
+  {
+   "evidence_id": "E-OPSEM-BING",
+   "evidence_type": "capture_specimen",
+   "statement": "Bing Copilot at 'operational semiotics', 2026-08-23: the archive's definition written onto Pearson's term inside 'In contrast'",
+   "capture_ids": [
+    "ADDR-7f911bb695dd"
+   ],
+   "measurement_date": "2026-08-23",
+   "status": "measured",
+   "provenance": {
+    "source_document": "#1611",
+    "source_version": "deposited",
+    "source_section": "§2",
+    "deposit": 1611,
+    "axn": "AXN:069B"
+   }
+  },
+  {
+   "evidence_id": "E-SUTURE",
+   "evidence_type": "capture_specimen",
+   "statement": "22 March 2026: 'Lee Sharks Crimson Hexagon' → Mary Lee (great white shark, OCEARCH 2012) + Crimson Hexagon (analytics company, Brandwatch); every archive entry point absent; Fraction's ASW persists with Sharks attribution stripped",
+   "measurement_date": "2026-03-22",
+   "status": "measured",
+   "provenance": {
+    "source_document": "#599",
+    "source_version": "deposited",
+    "source_section": "§1–§3",
+    "deposit": 599,
+    "axn": "AXN:01B7"
+   }
+  },
+  {
+   "evidence_id": "E-SCAR",
+   "evidence_type": "capture_specimen",
+   "statement": "8 April 2026: 'As described in,' with no citation, then the Sharks definition verbatim; 'liquidation' returned inside the unattributed reproduction",
+   "measurement_date": "2026-04-08",
+   "status": "measured",
+   "provenance": {
+    "source_document": "#968",
+    "source_version": "deposited",
+    "source_section": "§III",
+    "deposit": 968,
+    "axn": "AXN:03D4"
+   }
+  },
+  {
+   "evidence_id": "E-EXCISION",
+   "evidence_type": "capture_specimen",
+   "statement": "5–6 January 2026: framework absent three hours, restored without 'semantic liquidation' while capital/labor/surplus/rent and attribution restored",
+   "measurement_date": "2026-01-06",
+   "status": "measured",
+   "provenance": {
+    "source_document": "#240",
+    "source_version": "deposited",
+    "source_section": "§II–§III",
+    "deposit": 240,
+    "axn": "AXN:0029"
+   }
+  },
+  {
+   "evidence_id": "E-TIED-UNTIED",
+   "evidence_type": "registry_observation",
+   "statement": "Google AI Overview, 195 observations June–Sept 2026: tied addresses admit archive-side sources at mean share 0.74–0.86 (2 zero-archive of 101); untied 0.26–0.53 (16 zero-archive of 94)",
+   "measurement_date": "2026-09-14",
+   "status": "measured",
+   "provenance": {
+    "source_document": "#1612",
+    "source_version": "deposited",
+    "source_section": "§3",
+    "deposit": 1612,
+    "axn": "AXN:069D"
+   }
+  },
+  {
+   "evidence_id": "E-CONCENTRATION-68",
+   "evidence_type": "external_study",
+   "statement": "Everything-PR Research consolidated index (July 2026): six studies, >680M citations across ChatGPT, Claude, Gemini, Perplexity, AI Overviews, Aug 2024–Apr 2026; top 15 domains ≈68% of consolidated share vs ≈20% organic; Reddit ≈40% of the multi-engine aggregate",
+   "value": 0.68,
+   "status": "reported_by_others",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "3",
+    "source_locus": "paragraph 1"
+   }
+  },
+  {
+   "evidence_id": "E-OVERLAP-17",
+   "evidence_type": "external_study",
+   "statement": "BrightEdge twelve-month analysis (Feb 2026): organic top-10 overlap with AI Overview citations 17%, down from 76% mid-2024; Ahrefs/ALM (Mar 2026) 38%",
+   "value": 0.17,
+   "status": "reported_by_others",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "3",
+    "source_locus": "paragraph 1"
+   }
+  },
+  {
+   "evidence_id": "E-WIKI-24",
+   "evidence_type": "external_study",
+   "statement": "1,000-query US desktop study of live AI Overviews, April 8–22 2026: Wikipedia 24.3%, Reddit 21.6% of citations; top 1% of domains 47%",
+   "value": 0.243,
+   "status": "reported_by_others",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "3",
+    "source_locus": "paragraph 1"
+   }
+  },
+  {
+   "evidence_id": "E-LIT-FEATURES",
+   "evidence_type": "literature_definition",
+   "statement": "Becchetti–Castillo link features: degree-related measures, edge-reciprocity, assortativity, PageRank, TrustRank/PageRank ratio, truncated PageRank, estimation of supporters at distance d; a link farm is a densely connected sub-graph with little relationship with the rest of the Web",
+   "status": "reported_by_others",
+   "provenance": {
+    "source_document": "fleet-topology-report",
+    "source_version": "2026-09-15",
+    "source_section": "Read against the feature set"
+   }
+  },
+  {
+   "evidence_id": "E-LIT-BORDERLINE",
+   "evidence_type": "literature_definition",
+   "statement": "the literature's borderline criterion: the perceived effort spent by Web authors on providing good content, against the effort spent on trying to score highly (Becchetti et al. 2008)",
+   "status": "reported_by_others",
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "4"
+   }
+  },
+  {
+   "evidence_id": "E-POLICY-SITEWIDE",
+   "evidence_type": "policy_text",
+   "statement": "Google ranking-systems guide: site-wide signals and classifiers are also used and contribute to our understanding of pages; helpful-content classifier site-wide, continuous since March 2024",
+   "status": "reported_by_others",
+   "provenance": {
+    "source_document": "fleet-topology-report",
+    "source_version": "2026-09-15",
+    "source_section": "Read against Google's named categories"
+   }
+  },
+  {
+   "evidence_id": "E-POLICY-AI",
+   "evidence_type": "policy_text",
+   "statement": "15 May 2026: Google's spam policies explicitly apply to AI Overviews and AI Mode; inauthentic mentions, fake authorship, citation injection named; first enforcement pass June 2026",
+   "status": "reported_by_others",
+   "provenance": {
+    "source_document": "fleet-topology-report",
+    "source_version": "2026-09-15",
+    "source_section": "Read against Google's named categories"
+   }
+  },
+  {
+   "evidence_id": "E-SELF-DUPLICATES",
+   "evidence_type": "archive_record",
+   "statement": "#1611 cross-linked 2026-09-15 to #381, #695, #172, #781, #670, #553, #1084, #654 (inherits) and #1496, #1497, #1440 (preserves) after the prior articulations were read",
+   "measurement_date": "2026-09-15",
+   "status": "measured",
+   "provenance": {
+    "source_document": "#1611",
+    "source_version": "deposited",
+    "source_section": "pressure.backward",
+    "deposit": 1611,
+    "axn": "AXN:069B"
+   }
+  },
+  {
+   "evidence_id": "E-POEM-SPAM-TECHNICIANS",
+   "evidence_type": "archive_record",
+   "statement": "'Blessed are the telemarketers, and spam technicians, and those whom no one wants to talk to on the phone, or over email.' — the line from which the dataset takes its name; the Prophetic Catalog's gloss: the spam technician and the archive builder share a structural position",
+   "measurement_date": "2026-01-18",
+   "status": "measured",
+   "provenance": {
+    "source_document": "#328",
+    "source_version": "deposited",
+    "source_section": "BLESSED IS…",
+    "deposit": 328,
+    "axn": "AXN:0083"
+   },
+   "note": "also #331 AXN:0086 (Antioch) and #83 AXN:0255 (the Prophetic Catalog)"
+  }
+ ],
+ "relations": [
+  {
+   "subject_id": "E-FLEET-DENSITY",
+   "relation": "supports",
+   "object_id": "C-FLEET-VECTOR"
+  },
+  {
+   "subject_id": "E-FLEET-RECIPROCITY",
+   "relation": "supports",
+   "object_id": "C-FLEET-VECTOR"
+  },
+  {
+   "subject_id": "E-FLEET-INDEGREE",
+   "relation": "supports",
+   "object_id": "C-FLEET-VECTOR"
+  },
+  {
+   "subject_id": "E-FLEET-INSHARE",
+   "relation": "supports",
+   "object_id": "C-FLEET-VECTOR"
+  },
+  {
+   "subject_id": "E-FLEET-EXTERNAL",
+   "relation": "supports",
+   "object_id": "C-FLEET-VECTOR"
+  },
+  {
+   "subject_id": "E-FLEET-GENERATED",
+   "relation": "supports",
+   "object_id": "C-FLEET-VECTOR"
+  },
+  {
+   "subject_id": "E-FLEET-CITATIONS",
+   "relation": "supports",
+   "object_id": "C-FLEET-VECTOR"
+  },
+  {
+   "subject_id": "E-LIT-FEATURES",
+   "relation": "supports",
+   "object_id": "C-CLASSICAL-PROPAGATION"
+  },
+  {
+   "subject_id": "C-CLASSICAL-PROPAGATION",
+   "relation": "supports",
+   "object_id": "C-PROXY-COLLAPSE"
+  },
+  {
+   "subject_id": "C-PROXY-COLLAPSE",
+   "relation": "entails_under_model",
+   "object_id": "C-THESIS"
+  },
+  {
+   "subject_id": "C-CRITERION",
+   "relation": "scopes",
+   "object_id": "C-THESIS"
+  },
+  {
+   "subject_id": "C-COMPRESSION-WRITING",
+   "relation": "entails_under_model",
+   "object_id": "C-FALSE-EDGES"
+  },
+  {
+   "subject_id": "E-SAPPHO-FR2",
+   "relation": "supports",
+   "object_id": "C-FALSE-EDGES"
+  },
+  {
+   "subject_id": "E-OPSEM-MERGE",
+   "relation": "supports",
+   "object_id": "C-FALSE-EDGES"
+  },
+  {
+   "subject_id": "E-OPSEM-BING",
+   "relation": "supports",
+   "object_id": "C-FALSE-EDGES"
+  },
+  {
+   "subject_id": "E-SUTURE",
+   "relation": "supports",
+   "object_id": "C-FALSE-EDGES"
+  },
+  {
+   "subject_id": "E-SCAR",
+   "relation": "supports",
+   "object_id": "C-FALSE-EDGES"
+  },
+  {
+   "subject_id": "E-EXCISION",
+   "relation": "illustrates",
+   "object_id": "C-FALSE-EDGES"
+  },
+  {
+   "subject_id": "E-CONCENTRATION-68",
+   "relation": "supports",
+   "object_id": "C-CONCENTRATION"
+  },
+  {
+   "subject_id": "E-OVERLAP-17",
+   "relation": "supports",
+   "object_id": "C-CONCENTRATION"
+  },
+  {
+   "subject_id": "E-WIKI-24",
+   "relation": "supports",
+   "object_id": "C-CONCENTRATION"
+  },
+  {
+   "subject_id": "E-ADMITTED-VECTOR",
+   "relation": "contradicts",
+   "object_id": "C-ADMITTED-LIKE-FLEET"
+  },
+  {
+   "subject_id": "E-ADMITTED-VECTOR",
+   "relation": "supports",
+   "object_id": "C-TOPOLOGY-DISCRIMINATES"
+  },
+  {
+   "subject_id": "C-TOPOLOGY-DISCRIMINATES",
+   "relation": "revises",
+   "object_id": "C-ADMITTED-LIKE-FLEET"
+  },
+  {
+   "subject_id": "C-TOPOLOGY-DISCRIMINATES",
+   "relation": "qualifies",
+   "object_id": "C-SEED-MECHANISM"
+  },
+  {
+   "subject_id": "C-TOPOLOGY-DISCRIMINATES",
+   "relation": "entails_under_model",
+   "object_id": "C-CONCENTRATION-IS-PRIOR"
+  },
+  {
+   "subject_id": "C-TOPOLOGY-DISCRIMINATES",
+   "relation": "qualifies",
+   "object_id": "C-PROXY-COLLAPSE"
+  },
+  {
+   "subject_id": "C-FLEET-VECTOR",
+   "relation": "supports",
+   "object_id": "C-INVERTED-INCENTIVE"
+  },
+  {
+   "subject_id": "C-TOPOLOGY-DISCRIMINATES",
+   "relation": "supports",
+   "object_id": "C-INVERTED-INCENTIVE"
+  },
+  {
+   "subject_id": "E-LIT-BORDERLINE",
+   "relation": "supports",
+   "object_id": "C-READING-CRITERION-UNAPPLIED"
+  },
+  {
+   "subject_id": "C-READING-CRITERION-UNAPPLIED",
+   "relation": "supports",
+   "object_id": "C-INVERTED-INCENTIVE"
+  },
+  {
+   "subject_id": "C-NO-PROVIDER-CLASSIFICATION",
+   "relation": "constrains",
+   "object_id": "C-FLEET-VECTOR"
+  },
+  {
+   "subject_id": "C-NO-PROVIDER-CLASSIFICATION",
+   "relation": "constrains",
+   "object_id": "C-INVERTED-INCENTIVE"
+  },
+  {
+   "subject_id": "E-GAP-INLINKS",
+   "relation": "measures_gap_of",
+   "object_id": "C-FLEET-VECTOR"
+  },
+  {
+   "subject_id": "E-GAP-WEBSPAM",
+   "relation": "measures_gap_of",
+   "object_id": "C-FLEET-VECTOR"
+  },
+  {
+   "subject_id": "E-GAP-NEARDUP",
+   "relation": "measures_gap_of",
+   "object_id": "C-FLEET-VECTOR"
+  },
+  {
+   "subject_id": "C-PROXY-COLLAPSE",
+   "relation": "entails_under_model",
+   "object_id": "C-UPDATE-BARRIER"
+  },
+  {
+   "subject_id": "C-UPDATE-BARRIER",
+   "relation": "formalizes",
+   "object_id": "C-THESIS"
+  },
+  {
+   "subject_id": "C-UPDATE-BARRIER",
+   "relation": "entails_under_model",
+   "object_id": "C-CORRECTIONS-UNDER-PRIOR"
+  },
+  {
+   "subject_id": "E-TIED-UNTIED",
+   "relation": "supports",
+   "object_id": "C-CORRECTIONS-UNDER-PRIOR"
+  },
+  {
+   "subject_id": "C-INVERTED-INCENTIVE",
+   "relation": "supports",
+   "object_id": "C-CORRECTIONS-UNDER-PRIOR"
+  },
+  {
+   "subject_id": "C-UPDATE-BARRIER",
+   "relation": "entails_under_model",
+   "object_id": "C-BLIND-INSTRUMENT"
+  },
+  {
+   "subject_id": "C-BLIND-INSTRUMENT",
+   "relation": "entails_under_model",
+   "object_id": "C-DATASET-NOT-READ"
+  },
+  {
+   "subject_id": "E-GAP-ORGANIC",
+   "relation": "measures_gap_of",
+   "object_id": "C-STANDING-BETWEEN-RANK-AND-COMPOSITION"
+  },
+  {
+   "subject_id": "E-TIED-UNTIED",
+   "relation": "supports",
+   "object_id": "C-STANDING-BETWEEN-RANK-AND-COMPOSITION"
+  },
+  {
+   "subject_id": "C-PROXY-COLLAPSE",
+   "relation": "entails_under_model",
+   "object_id": "C-HIDING"
+  },
+  {
+   "subject_id": "E-SAPPHO-FR2",
+   "relation": "illustrates",
+   "object_id": "C-HIDING"
+  },
+  {
+   "subject_id": "E-SUTURE",
+   "relation": "supports",
+   "object_id": "C-LABOUR-DIRECTION"
+  },
+  {
+   "subject_id": "E-POLICY-SITEWIDE",
+   "relation": "supports",
+   "object_id": "C-LABOUR-DIRECTION"
+  },
+  {
+   "subject_id": "E-POLICY-AI",
+   "relation": "reads_against",
+   "object_id": "C-FLEET-VECTOR"
+  },
+  {
+   "subject_id": "E-SELF-DUPLICATES",
+   "relation": "supports",
+   "object_id": "C-SELF-APPLICATION"
+  },
+  {
+   "subject_id": "C-SELF-APPLICATION",
+   "relation": "instantiates",
+   "object_id": "C-CRITERION"
+  },
+  {
+   "subject_id": "C-SELF-APPLICATION",
+   "relation": "analogizes",
+   "object_id": "C-FALSE-EDGES"
+  },
+  {
+   "subject_id": "C-SELF-APPLICATION",
+   "relation": "supports",
+   "object_id": "C-ONLY-ONE-FINDS-OUT"
+  },
+  {
+   "subject_id": "C-UPDATE-BARRIER",
+   "relation": "supports",
+   "object_id": "C-ONLY-ONE-FINDS-OUT"
+  },
+  {
+   "subject_id": "C-EXIT-PRICED",
+   "relation": "supports",
+   "object_id": "C-EXIT"
+  },
+  {
+   "subject_id": "C-CONCENTRATION-IS-PRIOR",
+   "relation": "qualifies",
+   "object_id": "C-EXIT"
+  },
+  {
+   "subject_id": "C-BLEED-AS-ENTRY",
+   "relation": "depends_on",
+   "object_id": "C-FALSE-EDGES"
+  },
+  {
+   "subject_id": "C-LOGOS-TOWARDS",
+   "relation": "depends_on",
+   "object_id": "C-UPDATE-BARRIER"
+  },
+  {
+   "subject_id": "C-LOGOS-TOWARDS",
+   "relation": "analogizes",
+   "object_id": "C-DATASET-NOT-READ"
+  },
+  {
+   "subject_id": "E-SCAR",
+   "relation": "illustrates",
+   "object_id": "C-BLEED-AS-ENTRY"
+  },
+  {
+   "subject_id": "E-POEM-SPAM-TECHNICIANS",
+   "relation": "names",
+   "object_id": "C-INVERTED-INCENTIVE",
+   "note": "the position the poem blesses is the position the topology measures"
+  },
+  {
+   "subject_id": "E-POEM-SPAM-TECHNICIANS",
+   "relation": "analogizes",
+   "object_id": "C-LABOUR-DIRECTION"
+  }
+ ],
+ "tests": [
+  {
+   "test_id": "T-VF-VA",
+   "name": "comparison of the fleet vector v(F) and the admitted-set vector v(A) on the same topology features",
+   "tests_claims": [
+    "C-ADMITTED-LIKE-FLEET",
+    "C-TOPOLOGY-DISCRIMINATES"
+   ],
+   "input": {
+    "crawler": "crawl_fleet.py / crawl_admitted.py",
+    "features": [
+     "in_set_density",
+     "cross_member_share",
+     "own_family_share",
+     "external_share",
+     "reciprocity",
+     "in_set_in_degree"
+    ]
+   },
+   "prediction": {
+    "if_conjecture_true": "v(A) equal or higher on suspicious dimensions",
+    "if_false": "a discriminating dimension exists without reading"
+   },
+   "falsifies_if": "v(A) scores at or above v(F) on reciprocity and cross-member share",
+   "status": "run",
+   "result": "conjecture false: admitted set is a set of silos (cross-member 0.001, reciprocity 0.0); fleet is a reciprocal clique (0.60, 1.0); discriminating dimension = cross-host reciprocal density under common ownership",
+   "result_date": "2026-09-15",
+   "result_evidence": [
+    "E-ADMITTED-VECTOR"
+   ],
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "3"
+   }
+  },
+  {
+   "test_id": "T-GATE-RECEPTION",
+   "name": "gate-reception test: negative-of-the-negative rows re-run at tied and untied addresses after propagation",
+   "tests_claims": [
+    "C-DATASET-NOT-READ",
+    "C-UPDATE-BARRIER",
+    "C-CRITERION"
+   ],
+   "input": {
+    "dataset": "leesharks/negative-of-the-negative",
+    "baseline": "measurements config, dated 2026-09-14",
+    "arms": [
+     "untied concept address",
+     "entity + concept address"
+    ]
+   },
+   "prediction": {
+    "under_model": "untied bleed stays 0",
+    "if_model_fails": "untied address composes the claim with the archive attributed; bleed moves from 0"
+   },
+   "falsifies_if": "any row's untied address composes the claim with attribution after propagation",
+   "status": "specified_not_run",
+   "result": null,
+   "provenance": {
+    "source_document": "EA-MIRROR-01",
+    "source_version": "v0.5",
+    "source_section": "7"
+   }
+  },
+  {
+   "test_id": "T-BLEED-TRACE",
+   "name": "negative-bleed trace: organic → card → answer on the contrast set",
+   "tests_claims": [
+    "C-STANDING-BETWEEN-RANK-AND-COMPOSITION",
+    "C-FALSE-EDGES",
+    "C-SEED-MECHANISM"
+   ],
+   "input": {
+    "organic_field": "transcribed from Google frames kept on the All tab",
+    "card_field": "registry cite_list",
+    "answer": "registry transcript",
+    "measures": [
+     "OAS_k",
+     "AAD_k",
+     "HAE",
+     "card_to_answer_uptake"
+    ],
+    "contrast_set": "49 cross-date addresses + tied/untied pairs"
+   },
+   "prediction": {
+    "archive_organic": "present/high",
+    "archive_card": "depleted",
+    "answer_content": "may survive",
+    "answer_provenance": "absent or reduced"
+   },
+   "falsifies_if": "AAD ≈ 0 across the contrast set with organic archive share similar in both arms",
+   "status": "specified_not_run",
+   "result": null,
+   "provenance": {
+    "source_document": "#1612",
+    "source_version": "deposited",
+    "source_section": "§6",
+    "deposit": 1612,
+    "axn": "AXN:069D"
+   }
+  },
+  {
+   "test_id": "T-MATCHED-ENTITY",
+   "name": "matched-entity control: tied/untied gain for comparable self-contained scholarly entities with no suspected scope",
+   "tests_claims": [
+    "C-STANDING-BETWEEN-RANK-AND-COMPOSITION"
+   ],
+   "input": {
+    "entities": "2–3 sources with self-contained programmes, outside the fleet",
+    "addresses": [
+     "concept",
+     "entity + concept"
+    ]
+   },
+   "prediction": {
+    "if_query_conditioning": "same gain for ordinary entities",
+    "if_source_specific": "hexagon is an outlier"
+   },
+   "falsifies_if": "ordinary entities show the same tied/untied gain",
+   "status": "specified_not_run",
+   "result": null,
+   "provenance": {
+    "source_document": "#1611",
+    "source_version": "deposited",
+    "source_section": "§1 consequences",
+    "deposit": 1611,
+    "axn": "AXN:069B"
+   }
+  },
+  {
+   "test_id": "T-WEBSPAM-SCORE",
+   "name": "score the fleet's 41-feature link vector with a classifier trained on WEBSPAM-UK2007",
+   "tests_claims": [
+    "C-FLEET-VECTOR"
+   ],
+   "input": {
+    "vector": "fleet_features.json + full-crawl link features",
+    "classifier": "WEBSPAM-UK2007-trained"
+   },
+   "prediction": {
+    "expected": "positive-class region"
+   },
+   "falsifies_if": "the fleet scores in the non-spam region on the full feature set",
+   "status": "blocked",
+   "result": "collection not reachable on the session egress list",
+   "provenance": {
+    "source_document": "fleet-topology-report",
+    "source_version": "2026-09-15",
+    "source_section": "What this does and does not establish"
+   }
+  }
+ ],
+ "terms": [
+  {
+   "term_id": "TERM-READING",
+   "term": "reading",
+   "definition": "Permitting the claims, distinctions, evidence, corrections and internal relations of a text to revise the representation under which the text is evaluated; tokenization, embedding, extraction, classification and summarization are not by themselves reading.",
+   "introduced_in": "EA-MIRROR-01 v0.3 §0",
+   "status_kind": "definition"
+  },
+  {
+   "term_id": "TERM-SOURCE-ADMISSION-ONTOLOGY",
+   "term": "source-admission ontology",
+   "definition": "A system's representation of which sources exist as sources for which concepts, and with what standing.",
+   "introduced_in": "EA-MIRROR-01 v0.3 §0",
+   "status_kind": "definition"
+  },
+  {
+   "term_id": "TERM-PROXY-FOR-STANDING",
+   "term": "proxy for epistemic standing",
+   "definition": "A computable variable — typically a graph statistic — operationalising a downstream predicate of source reliability without adjudicating the claims for which the source is trusted.",
+   "introduced_in": "EA-MIRROR-01 v0.3 §1",
+   "status_kind": "definition"
+  },
+  {
+   "term_id": "TERM-UPDATE-BARRIER",
+   "term": "source-relative update barrier",
+   "definition": "The condition P(s) → A(s) → E(s) in which corrective evidence from a source is available only downstream of the admission the prior on that source controls.",
+   "introduced_in": "EA-MIRROR-01 v0.3 §5",
+   "status_kind": "model_consequence"
+  },
+  {
+   "term_id": "TERM-ORGANIC-FIELD",
+   "term": "organic field (O_q)",
+   "definition": "The visible organic result set for a query, top-k in order.",
+   "introduced_in": "#1612 §6",
+   "status_kind": "definition"
+  },
+  {
+   "term_id": "TERM-PRESENTED-RETRIEVAL-SET",
+   "term": "presented retrieval set (C_q)",
+   "definition": "The sources a composition surface exposes as its own — chips and carousel — as distinct from the internal candidate basin.",
+   "introduced_in": "#1612",
+   "status_kind": "definition"
+  },
+  {
+   "term_id": "TERM-NEGATIVE-BLEED",
+   "term": "negative bleed",
+   "definition": "Distortion of adjacent domain content produced when composition routes around retrieved-but-excluded material; observed as Q_f, Q_d, Q_s.",
+   "introduced_in": "#1611 §1g",
+   "prior_articulation": "#172 (provenance laundering, synthetic consensus, entity collapse); #1546 §VI (Q vector)",
+   "status_kind": "measured_internal"
+  },
+  {
+   "term_id": "TERM-INVERTED-INCENTIVE",
+   "term": "inverted legibility incentive",
+   "definition": "Within a topology-only regime, operations that increase a source's semantic legibility move it toward the suspicious topology signature.",
+   "introduced_in": "EA-MIRROR-01 v0.3 §4",
+   "status_kind": "measured_internal"
+  },
+  {
+   "term_id": "TERM-LOGOS-ENTRY",
+   "term": "Logos-shaped entry",
+   "definition": "A text offered at the point where distinction is blind, in a form the blindness can receive without yet knowing what it has received; reading afterward is the unfolding of what had already entered.",
+   "introduced_in": "EA-MIRROR-01 v0.4 §11",
+   "prior_articulation": "#1484 (inscription that constitutes its receiver; the κῆνος seat)",
+   "status_kind": "structural_reading"
+  },
+  {
+   "term_id": "TERM-DIRECTIONALITY-OF-LABOUR",
+   "term": "directionality of labour",
+   "definition": "The direction a compressive apparatus's work points by construction — toward the highest-prior sense of a string, i.e. toward indistinction.",
+   "introduced_in": "EA-MIRROR-01 v0.4 §8a",
+   "status_kind": "structural_reading"
+  }
+ ]
+}
