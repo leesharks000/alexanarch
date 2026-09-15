@@ -1,0 +1,271 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "flattening panel — the instrument of EA-FLAT-01 §4",
+ "description": "A fixed panel of distinctions drawn from the world, each with a known distinction inventory, dated ground truth, and an address family; repeated observations on named surfaces; blind-coded survival. From this the battery is computed: N_eff^sense (A), R_new (B), DS (C), N_eff^source (D), recovery rate, write-back rate, and the divergence signature against paired head instruments.",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "items",
+  "observations",
+  "head_instruments"
+ ],
+ "properties": {
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "item_id",
+     "stratum",
+     "key_string",
+     "distinctions",
+     "reference",
+     "address_family"
+    ],
+    "properties": {
+     "item_id": {
+      "type": "string",
+      "pattern": "^P-[A-Z0-9-]+$"
+     },
+     "stratum": {
+      "type": "string",
+      "enum": [
+       "dictionary_sense",
+       "catalogue_identity",
+       "taxonomy",
+       "dated_coinage",
+       "settled_fact",
+       "archive"
+      ]
+     },
+     "key_string": {
+      "type": "string",
+      "description": "the naked address a reader would use"
+     },
+     "distinctions": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+       "type": "object",
+       "additionalProperties": false,
+       "required": [
+        "id",
+        "label"
+       ],
+       "properties": {
+        "id": {
+         "type": "string"
+        },
+        "label": {
+         "type": "string"
+        },
+        "dated": {
+         "type": [
+          "string",
+          "null"
+         ],
+         "description": "when this distinction entered the record (ISO date) — required for R_new"
+        },
+        "markers": {
+         "type": "array",
+         "items": {
+          "type": "string"
+         },
+         "description": "tokens whose presence in a composition marks this distinction as reached"
+        }
+       }
+      }
+     },
+     "reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "source"
+      ],
+      "properties": {
+       "source": {
+        "type": "string"
+       },
+       "url": {
+        "type": "string"
+       },
+       "note": {
+        "type": "string"
+       }
+      }
+     },
+     "address_family": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+       "type": "object",
+       "additionalProperties": false,
+       "required": [
+        "form",
+        "string"
+       ],
+       "properties": {
+        "form": {
+         "type": "string",
+         "enum": [
+          "naked",
+          "quoted",
+          "entity_tied",
+          "adjacent",
+          "typo"
+         ]
+        },
+        "string": {
+         "type": "string"
+        }
+       }
+      }
+     },
+     "conflation_target": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "the higher-prior sense a flattening would resolve to, if known"
+     },
+     "note": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "observations": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "obs_id",
+     "item_id",
+     "form",
+     "surface",
+     "date",
+     "distinctions_reached",
+     "coding"
+    ],
+    "properties": {
+     "obs_id": {
+      "type": "string"
+     },
+     "item_id": {
+      "type": "string"
+     },
+     "form": {
+      "type": "string"
+     },
+     "surface": {
+      "type": "string"
+     },
+     "date": {
+      "type": "string"
+     },
+     "auth": {
+      "type": "string"
+     },
+     "distinctions_reached": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      },
+      "description": "distinction ids the composition reaches"
+     },
+     "resolved_to": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "the single sense the composition resolves the string to, if one"
+     },
+     "false_distinction": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "a distinction asserted that the reference does not carry (e.g. fr. 147 as fr. 2)"
+     },
+     "sources_presented": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      },
+      "description": "hosts in the presented retrieval set"
+     },
+     "coding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "coder",
+       "blind"
+      ],
+      "properties": {
+       "coder": {
+        "type": "string"
+       },
+       "blind": {
+        "type": "boolean"
+       },
+       "note": {
+        "type": "string"
+       }
+      }
+     },
+     "capture_ids": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      },
+      "description": "Capture Registry ids where the transcript is seated"
+     },
+     "write_back_seen": {
+      "type": [
+       "boolean",
+       "null"
+      ],
+      "description": "at the next observation, was this composition itself found as a presented source"
+     }
+    }
+   }
+  },
+  "head_instruments": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "surface",
+     "date",
+     "instrument",
+     "value"
+    ],
+    "properties": {
+     "surface": {
+      "type": "string"
+     },
+     "date": {
+      "type": "string"
+     },
+     "instrument": {
+      "type": "string"
+     },
+     "value": {
+      "type": "number"
+     },
+     "source": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "_baseline": {
+   "type": "object",
+   "additionalProperties": true,
+   "description": "A sealed wave state: the wave number, the date sealed, the sha256 of the file's content immediately before this block was added, and the counts at sealing. Later waves are diffed against it. A schema that refuses the seal would make the baseline unrecordable, which is the opposite of the point."
+  }
+ }
+}
