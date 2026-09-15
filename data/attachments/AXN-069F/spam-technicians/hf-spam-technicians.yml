@@ -1,0 +1,25 @@
+name: Hugging Face — spam technicians (argument as dataset)
+on:
+  push:
+    branches: [main]
+    paths: ['datasets/argument-as-dataset/**', 'scripts/build_argument_as_dataset.py']
+  workflow_dispatch: {}
+concurrency:
+  group: hf-spam-technicians
+  cancel-in-progress: true
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    if: ${{ vars.HF_REPO_SPAM != '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install -q pyarrow pandas jsonschema huggingface_hub
+      - name: Gate — schema and referential integrity
+        run: python3 scripts/build_argument_as_dataset.py --check
+      - run: python3 scripts/build_argument_as_dataset.py --out hf-aad
+      - name: Push to the Hub (selective push, same script as the main projection)
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: python3 scripts/push_hf_dataset.py hf-aad "${{ vars.HF_REPO_SPAM }}"

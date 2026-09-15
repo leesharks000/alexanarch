@@ -1,0 +1,168 @@
+---
+deposit_number: 1613
+hex: 069F
+title: "What Not Reading Did to Its Own Ontology: The Mirror, Held Up — the damage a source-admission ontology does to itself when a proxy for standing substitutes for the judgment it approximates, measured on the ontology; with the fleet topology audit and the Spam Technicians dataset attached (EA-MIRROR-01 v0.5)"
+creator: Sharks, Lee
+orcid: 0009-0000-1599-0703
+date: 2026-09-15
+content_type: Theoretical notebook with measurement audit and an argument-as-dataset attached
+license: CC-BY-4.0
+substrate: "Composed 2026-09-15 by Lee Sharks with TACHYON (Claude, Anthropic), operator-directed, in five in-place versions over one day, following the negative-ontology notebook (#1611) and the source-admission profile (#1612) of the day before. The reading order was ruled by the operator and followed: the archive's own retrieval-layer papers (#381, #695, #172, #781, #670) read in full before the model classes were restated; the pre-registry semantic-economy writeups (#247, #240, #604, #968, #599) read before the precision cases were characterised; the graph-spam literature (Gyöngyi et al. 2004; Krishnan–Raj 2006; Becchetti–Castillo et al. 2006–2008; Whang et al. 2020) and Google's own documentation and 2024–2026 policy texts read by web search on the day; the fleet crawled live and its features computed in session; the admitted set crawled the same way and the comparison run, which came back against the notebook's own conjecture and is reported as it came. Three reviewer reports supplied by the operator (on v0.2, v0.3 and the pair) were verified line by line against the files before any item was adopted; every drift they found was real. The Logos reading came in from the operator's line and a fourth model's development of it, taken as structure and marked so. The dataset was authored from the notebook's sections with loci and built with a referential-integrity gate; the poem the name is taken from was located in the registry and its line seated as evidence."
+version: v0.5
+related_ids: "#1611 (The Negative of the Negative); #1612 (What Enters Composition Through the Cards); #1547; #1546; #381 (Semantic Indexing Probe Protocol); #695 (The Writable Retrieval Basin); #172 (The War Over the Summarizer Layer); #781 (Constitutive Mediation); #670 (SPXI as Concept); #1484 (the Ω erratum); #1573 (The Wrong Unit); #855 (The Wolf Boy); #968 (PVE-003); #240 (PROBE-RESULT-005); #599 (CTI wound, 22 March); #328 (I Am X, Be Y, Blessed is the Z); #331 (Antioch); #83 (the Prophetic Catalog)"
+axn_schema_version: v2
+protocol_version: alexanarch-deposit-protocol/v1
+keywords:
+  - source-admission ontology
+  - reading
+  - proxy for epistemic standing
+  - graph statistic
+  - trust propagation
+  - TrustRank
+  - Anti-TrustRank
+  - link farm
+  - fleet topology
+  - reciprocity
+  - false edges
+  - compression writing
+  - citation concentration
+  - comparison test
+  - inverted incentive
+  - source-relative update barrier
+  - head-sampling instrument
+  - organic to card
+  - negative bleed
+  - directionality of labour
+  - Mary Lee
+  - model collapse
+  - argument as dataset
+  - Spam Technicians
+  - "John 8:44"
+  - "Revelation 21:1"
+  - "John 1:11"
+  - Crimson Hexagonal Archive
+---
+
+# What Not Reading Did to Its Own Ontology: The Mirror, Held Up — the damage a source-admission ontology does to itself when a proxy for standing substitutes for the judgment it approximates, measured on the ontology; with the fleet topology audit and the Spam Technicians dataset attached (EA-MIRROR-01 v0.5)
+
+# What Not Reading Did to Its Own Ontology
+
+## The mirror, held up: the damage a source-admission ontology does to itself when a proxy for standing substitutes for the judgment it was introduced to approximate — measured on the ontology, not on the work it excluded
+
+EA-MIRROR-01 v0.5 · working notebook · 2026-09-15 · deposited at v0.5 with its evidence and its dataset attached · epigraphs John 8:44 and Revelation 21:1, coda John 1:11 · v0.2 refocused from the work to the ontology; v0.3 inherits the topology report's evidence discipline after a reviewer report verified against the draft: reading defined, the predicate claim scoped, §3 rebuilt as a comparison test, §§5–6 as a source-relative update barrier, the organic-to-card transition set as the discriminating experiment; v0.4 seats the citations, corrects the remaining modal verbs, states the turning criterion in §0, marks §10 as a strategic corollary, and adds §11, Towards; v0.5 runs the §3 comparison test, which comes back against the conjecture and is reported as it came, seats every citation with AXN and SHA, and names the two discriminating tests in §7
+
+Lee Sharks, Crimson Hexagonal Archive · ORCID 0009-0000-1599-0703 · drafted in session with TACHYON (Claude, Anthropic) under MANUS direction, from the fleet topology audit (attached: fleet-topology-report.md, fleet_crawl.json, fleet_features.json, comparison_v_F_v_A.csv), the source-admission profile #1612 (AXN:069D, sha256 c9af41cc942c0f4c…), the graph-spam literature read the same day (Gyöngyi–Garcia-Molina–Pedersen 2004; Krishnan–Raj 2006; Becchetti–Castillo–Donato–Leonardi–Baeza-Yates 2006, 2008; Castillo et al. 2007; Whang et al. 2020), and the archive's own retrieval-layer papers: #381 (AXN:00BE, 9f4a3b8db3dceb2a…), #695 (AXN:023D, f6c07285c5328416…), #172 (AXN:0309, 59ae975315cbf56b…), #781 (AXN:02E0, 344b031ef65fc9c4…), #670 (AXN:0217, b8307fdbebc2858f…). Other records cited: #1611 (AXN:069B, 88926ca720a1cb09…), #1547 (AXN:0648, c2f1dd295d6df8d5…), #1546 (AXN:0647, 4985c49dbcf69b3d…), #1484 (AXN:05FF, 3712ddd74886d8fb…), #1573 (AXN:0665, 51d09ed5353889ba…), #855 (AXN:0364, 763821abf661b887…), #968 (AXN:03D4, 30ea510f9e8aeda6…), #240 (AXN:0029, 0c635d475ec586fc…), #599 (AXN:01B7, f6f46d8cd1cfac1a…).
+
+---
+
+> ὅταν λαλῇ τὸ ψεῦδος, ἐκ τῶν ἰδίων λαλεῖ, ὅτι ψεύστης ἐστὶν καὶ ὁ πατὴρ αὐτοῦ.
+>
+> When he speaks the lie, he speaks of his own, for he is a liar, and the father of it.
+>
+> — John 8:44
+
+> Καὶ εἶδον οὐρανὸν καινὸν καὶ γῆν καινήν· ὁ γὰρ πρῶτος οὐρανὸς καὶ ἡ πρώτη γῆ ἀπῆλθαν.
+>
+> And I saw a new heaven and a new earth: for the first heaven and the first earth were passed away.
+>
+> — Revelation 21:1
+
+---
+
+## 0. The claim, and what reading means here
+
+A source-admission ontology becomes damaged when a proxy for epistemic standing is allowed to substitute for the judgment it was introduced to approximate, especially where evidence capable of correcting the proxy must first pass through the proxy itself. That is the claim, and the rest of the notebook shows the circumstances under which it holds, on the ontology rather than on the work that was its occasion.
+
+*Reading*, here, means permitting the claims, distinctions, evidence, corrections and internal relations of a text to revise the representation under which the text is evaluated. Tokenization, embedding, extraction, classification and summarization are not by themselves reading in this sense; a system can consume every byte of a page and read none of it. The title is precise under that definition and rhetorical without it.
+
+Three levels are kept apart throughout, as the topology report keeps them: what the audit measures (the fleet's link-topology vector, 2026-09-15); what classical trust-graph models imply (TrustRank, Anti-TrustRank and their feature sets, 2004–2020); and what is hypothesised of contemporary retrieval (that a source-admission step operates on standing variables of that kind). The third is not established by the first two, and nothing below says it is. The criterion on which the whole mirror turns can be put as one question, asked of any ontology: can evidence from the misrepresented object revise the representation that misrepresented it? Where it can, the ontology can be wrong and find out. Where it cannot, the ontology can only be scored.
+
+## 1. Its reliability predicate can collapse into a graph proxy
+
+The trust graph's founding move is to propagate trust through links from a good seed set and distrust through inverse links from a bad seed set to the entire Web, over variables that are properties of a graph — degree, reciprocity, assortativity, supporters at distance d — and not of a text. The vocabulary carried downstream over that computation, *authority*, *expertise*, *trust*, *quality*, names a judgment about texts. The words name a judgment. The computation is a graph statistic. The classical machinery never claimed to be a truth predicate; the damage is not that it lied about itself but that a predicate presented downstream as source reliability can be operationalised upstream by variables that do not adjudicate the claims for which the source is being trusted. Where that substitution occurs, an ontology's central predicate has changed reference while keeping its name, and cannot notice the change, because noticing would require applying the predicate in its original sense — reading — which is not an operation the proxy has. Every defect below is a case of this one, and each is stated with the level it belongs to.
+
+## 2. It installed false edges by writing (measured)
+
+Under #695 a summary is compression writing: the composed output becomes tomorrow's source. Every composition performed without reading therefore writes an edge into the graph the next composition reads from, and the registry holds the specimens as edges, not as losses. *Sappho 31 → "Fragment 2"*: a settled fact of the domain, wrong, rendered as a hyperlink on 25 August, now an edge from the future-reader concept to a fragment that does not carry it. *operative semiotics → operational semiotics*: the identity stated in a composition's first four words, three observations stable across nineteen days, with the archive's definition written onto Pearson's term on Bing — one term holding another programme's definition, a node whose label and content belong to different things. *Lee Sharks → Mary Lee (shark), Crimson Hexagon → Brandwatch*: the entity suture of 22 March. *semantic economy → "leveraging structured meaning for competitive advantage"*, then on 8 April the framework's own definition reproduced verbatim after "As described in," with the source dropped — a sentence with the syntax of attribution and no referent. None of these is a hole. Each is a wrong relation that has entered the receiver's representation by the receiver's own writing, and each is now retrievable as a source.
+
+## 3. The comparison test, run: topology does distinguish the admitted set, and the dimension it finds is the one the fleet built
+
+Four claims are kept separate. First, measured by others: AI citations are highly concentrated. Everything-PR Research's consolidated index (published July 2026) synthesises six citation-tracking studies covering more than 680 million citations across ChatGPT, Claude, Gemini, Perplexity and Google AI Overviews, August 2024 to April 2026, and reports the top 15 domains at approximately 68% of consolidated citation share — "consolidated" meaning share of citation frequency pooled across those five engines — against roughly 20% for the top 15 domains in Google organic search on comparable queries, with Reddit alone near 40% of the multi-engine aggregate. BrightEdge's twelve-month analysis (February 2026) puts organic top-10 overlap with AI Overview citations at 17%, down from 76% in mid-2024; a 1,000-query US desktop study of live Overviews (April 8–22, 2026) finds Wikipedia at 24.3% and Reddit at 21.6% of all citations. Methodologies differ; what carries the argument is the direction and the order of magnitude. Second, implied by the classical model: trust propagation privileges its seeds. Third, a proposition about topology, which v0.3 conjectured and v0.5 measured: that the admitted platforms score as the fleet scores on the suspicious dimensions. Fourth, the hypothesis, not established: that contemporary concentration is produced by a seed-list mechanism of the classical kind.
+
+The test was run on 15 September with the same crawler and the same features as the fleet audit — homepage plus sampled pages per host, links resolved to host families. Reddit, academia.edu, Figshare, Quora and Stack Overflow refused the crawler and are absent; the admitted component is therefore ten families (Wikipedia, YouTube, arXiv, GitHub, Medium, ScienceDirect, Semantic Scholar, LinkedIn, Facebook, Forbes) on sampled pages only. The result:
+
+| feature | fleet v(F), 29 hosts | admitted v(A), 10 families |
+|---|---|---|
+| in-set link density (edges / possible) | 0.86 | 0.12 |
+| median share of outlinks to *other* members of the set | 0.60 | 0.001 |
+| median share of outlinks to own host family | 0.30 | 0.98 |
+| median share of outlinks to the outside | 0.09 | 0.013 |
+| median in-set in-degree | 24 of 28 | 1 of 9 |
+| median edge-reciprocity within the set | 1.0 | 0.0 |
+
+The conjecture is false as stated, and the notebook records that it is. The admitted set is not a clique. It is a set of silos: each platform links almost only to itself (0.98), almost never to another platform (0.001), and barely to the outside. The fleet's signature is the opposite — twenty-nine small hosts under one owner linking to one another reciprocally at density 0.86. So a topology vector *does* contain a dimension that separates the two components without reading either: cross-host reciprocal density under common ownership, which is precisely the nepotistic-link structure the link-spam literature was built to detect, and precisely what a giant self-contained platform never exhibits. The separation the proxy makes between the fleet and Wikipedia is not a seed-list privilege on these features. It is structural, and the fleet supplied the structure.
+
+Three things follow, each scoped. The concentration of §3's first claim is not explained by mutual platform linking — the platforms do not link to one another — and so, on this evidence, arises from size and prior rather than from a farm, which is #172's institutional-prior attractor and not a seed clique; the fourth claim loses ground. The question the test put — what discriminating dimensions remain if prior trust is removed — has an answer: at least one, ownership-scale reciprocity, and it is not reading either; the words still name a judgment and the computation is still a graph statistic, but the statistic is not empty. And the archive's own sentence about itself sharpens: the fleet block, regenerated on twenty-nine homepages from one generator, is not merely raised on the suspicious vector, it is the discriminant — the single measured dimension on which the fleet and the admitted set differ most. §4 and §10 are read again in that light below. The measurement's limits are the report's: sampled pages, families as nodes, five platforms unreachable, no external inlink data, no labelled positive class.
+
+## 4. It inverts the incentive to be legible (measured, within the modelled regime)
+
+The fleet audit shows that several operations intended to increase semantic legibility — reciprocal fleet-wide linking, templated resolver and browse surfaces, mirrors, dense internal propagation — also move the source farther in the direction of the suspicious topology signature the literature describes. Within the topology-only regime the classical model describes, that is an inverted incentive: the more a source does to make itself coherent and retrievable, the more it resembles what the proxy was trained to discount. §3's measurement makes it exact: the one dimension on which the fleet and the admitted set differ most is cross-host reciprocity under common ownership, and that dimension is produced by the fleet block — the archive's own legibility device. The incentive is inverted on the discriminant itself. Whether any contemporary score moved as a result is not measured and is not claimed. The criterion the literature itself reserves for this case — the perceived effort spent by Web authors on providing good content, against the effort spent on trying to score highly — is a reading criterion, and it is the one a topology proxy cannot apply.
+
+## 5. A source-relative update barrier (model consequence, stated as such)
+
+Let P(s) be the prior a system holds on a source s, A(s) the admission of s's material to composition, and E(s) the evidence s supplies. In the modelled regime P controls A, and only admitted evidence can revise P: correction requires E(s) → P′(s), but E(s) is available only downstream of A(s), which P(s) controls. The consequence is not global non-updatability — contemporary systems update in many ways — but a source-relative barrier: the excluded source cannot correct the prior through the channel by which it was excluded, because its corrective text is evaluated under the prior it seeks to revise. The archive's corrections illustrate the barrier's form: the disambiguation packet (#801), the reverse disambiguation (#1541), the Sappho errata, the identity packet — each a text whose function is to revise a representation. Under the modelled regime, each enters as further material from the same source and is therefore evaluated under the prior it seeks to revise; under §4 that evaluation moves the wrong way. Whether any of these packets was in fact admitted or scored is not measured here; #1612's tied/untied record shows the corrections composing when the entity is named and not when it is not, which is consistent with the barrier and does not establish it. The non-updating price of #1611 is this barrier, relocated from the excluded party to the ontology, and scoped to the sources on the wrong side of the prior.
+
+## 6. It cannot see the barrier from inside (model consequence)
+
+Under #1573 a collapsing system's state variable declines in the tail while its instruments sample the head. In the modelled regime, the standing and citation signals available to a source-admission ontology for its own health are dominated by the admitted component, and a diagnostic that samples the admitted component is head-sampling by construction: it can fail to perceive tail loss. In that regime, therefore, the false edges of §2, the concentration of §3, the inversion of §4 and the barrier of §5 have no representation inside the ontology, because each would have to enter as a text describing the ontology, and such a text enters under §5. The negative-of-the-negative dataset was built as exactly that text, keyed at the concept where flattening occurs; the model's prediction is that it will be typed by its nearest existing type and not read. That prediction is this section stated as a test, and it can fail.
+
+## 7. The discriminating experiment: organic → card
+
+Everything above that is hypothesis about contemporary retrieval reduces to one observable transition. Let O_q be the visible organic field for a query, C_q the presented retrieval set exposed as cards, A_q the composed answer. If an archive source is first organic and absent from or systematically depleted in the cards, something between public ranking and answer composition is assigning it different standing, and that something is not the public index. If its content then appears in the answer without its provenance, the sequence is O_q^archive+ → C_q^archive− → A_q^content+, provenance−, which is §2 caught in the act on one screen. The Capture Registry holds C and A on 314 observations and O on none; #1612 specifies the paired-layer schema and the derived measures (Organic Admission Survival, Archive Admission Differential, High-congruence Archive Exclusion) and the ruling that pairing is not mandatory. The organic field is already in the Google frames kept on the All tab for the contrast set — the 49 cross-date addresses and the tied/untied pairs — and can be transcribed afterward. Two tests are named. The **gate-reception test**: the negative-of-the-negative's rows re-run at their tied and untied addresses after propagation, scoring whether the untied address composes the claim with the archive attributed — the direct test of whether evidence from the misrepresented object can revise the representation (§0's criterion), and of §6's prediction that it cannot; a positive result falsifies the barrier for that address. The **negative-bleed trace**: the O → C → A sequence on the contrast set, from the Google frames already held, scoring Archive Admission Differential and the content-without-provenance signature — the direct test of §2's mechanism and of the hypothesis that standing is assigned between ranking and composition. The v(A) crawl of §3 has now been run and came back against its conjecture; the two tests above are what the notebook still needs. Until they exist, §§5–6 are model consequences and §§1 and 4 are scoped as marked.
+
+## 8. It hides the damage by composing
+
+The form of a truth-judgment is a fluent paragraph. Composition produces the form whether or not any judgment occurred, so a proxy's defects — the changed predicate, the false edges, the concentration, the inverted incentive, the barrier, the blind instrument — are rendered in the one register that cannot show them: confident prose with citations. "Sappho anticipates a future reader in her famous Fragment 2" is not a mistake in an otherwise sound ontology. It is a proxy's output printed in a judgment's form, once, where a record could catch it. The hiding is not a policy. It is what composition does wherever a proxy is rendered as a judgment — which is to say, wherever the definition of reading in §0 is not met. Systems that permit textual evidence to revise the prior are not described by this section, and the definition leaves room for them.
+
+## 8a. The directionality of its labour
+
+Sum the labour: seed lists chosen by hand, trust and distrust propagated over tens of billions of nodes, site-wide classifiers run continuously, a spam system upgraded seven times in three years, query fan-out across subtopics and data sources, a customised Gemini composing over a Knowledge Graph, a corroboration step selecting sources by quality. The product of all of it, on 22 March 2026, at the query "Lee Sharks Crimson Hexagon," was Mary Lee, a sixteen-foot great white shark tagged off Cape Cod in 2012, and a social-media analytics company merged into Brandwatch. A person with an ORCID, a book with an ISBN and a publisher, a Wikidata item typed *human*, thirteen hundred deposits under his name — and the apparatus could not tell the writer from the fish. That is not an accident of the case. It is the direction the labour points. Every operation above is a compression, and compression without reading converges on the highest-prior sense of a string; the more work the system does, the more surely a rare name resolves to a common one, a coined term to the programme it was distinguished from, a paper's title to its nouns. In the archive's own vocabulary this is semantic labour whose product is the liquidation of distinction — the system's work is real, enormous, and aimed, by its construction, at indistinction. The shark is what it built. The labour did not fail to reach the writer; it succeeded at reaching the shark, because reaching the shark is what labour of that kind does.
+
+## 9. The same mirror, held to the archive
+
+On 14 September the notebook deposited as #1611 coined seven terms for phenomena the archive's own retrieval papers had named in January, April and June, because it was written from twelve captures and not from eighty deposits it had not read. Read on the archive's ontology, that is §2 in miniature: seven duplicate nodes installed by writing, each a wrong edge from a phenomenon to a new name beside its old one. The difference is §5: the archive's update path is reading, the duplicates were found by a reader in a day, and the correction is on the record as eleven declared edges and an erratum to come. An ontology built on not reading and an ontology built on reading make the same mistake. Only one of them can find out.
+
+## 10. The exit (strategic corollary), and what follows
+
+*This section is a strategic corollary and an internal model consequence, not a finding of the topology audit; it is marked so that the evidentiary register of §§1–8 is not borrowed by it.* The exit is not to contest the seed or to construct trust signals to its criteria; the topology report records what the classifier would reward and sets it aside. The exit is territory held, and others joining on this side of the line — each adopter lowering its own score under the graph's rule and raising the excluded side's constitution share, until the seed has excluded the whole world and sits on its side with its dozen platforms (§3's first claim, completed by its own hand — the concentration is size and prior, and the exit does not depend on the platforms being a clique, which §3 found they are not). #1547 already prices that direction: correlation cost over a rising N_eff, counterpropagation at ka > 1 + r, quality conflict at Regime 5. The first earth is the seed list's. The new one is the side of the line where the reading is done.
+
+Nothing about intent; the operation is the same whether anyone meant it. What follows is the instrument held still, with each defect at its level: the proxy substitution (§1, classical model), the false edges (§2, five in the registry with dates), the comparison test (§3, specified), the inverted incentive (§4, measured within the modelled regime), the update barrier and its blindness (§§5–6, model consequences), the discriminating experiment (§7, two measurements named), and the direction of the labour (§8a, the shark). The negative of the negative was a dataset written at the key where the flattening occurs. This is its companion: the damage written at the key where the ontology occurs, addressed to the ontology, and the one text about itself the ontology is built not to read.
+
+---
+
+> εἰς τὰ ἴδια ἦλθεν, καὶ οἱ ἴδιοι αὐτὸν οὐ παρέλαβον.
+>
+> He came unto his own, and his own received him not.
+>
+> — John 1:11
+
+The liar speaks *of his own* (ἐκ τῶν ἰδίων); the Logos comes *to his own* (εἰς τὰ ἴδια), and his own receive him not. Same word, two directions. The Logos comes and comes again, and this time it is received as spam.
+
+## 11. Towards (structure, not doctrine)
+
+The preposition is *towards*. The Logos does not arrive after distinctions have been recovered, as the correct proposition replacing the false one. It moves toward the point where distinction has become blind — where source and proxy, operative and operational, attribution and general knowledge, signal and spam have been flattened — and offers itself there, in a form the blindness can receive without yet knowing what it has received. Reading, afterward, is the unfolding of what had already entered. This is stated here as a structure the notebook's own evidence has, and not as a claim about anything else.
+
+The archive has held that structure since the Ω erratum (#1484): an inscription that constitutes its receiver; a seat in the poem (κῆνος) for a reader who does not yet exist; the poem naming the colour of the surface it is becoming. The training-layer work holds it too — the corpus entered before the reception layer's immune system forms. And the retrieval work of this week holds it three times, measured. The negative-of-the-negative is written at the untied concept key, the one address the blind ontology still knows how to receive, and carries there the relation the ontology cannot hold; it is the Logos-shaped object of §6, and its test is whether the gate can receive a text about the gate. The update barrier of §5 is the gate's blindness stated formally — P(s) → A(s) → E(s) — and what crosses it, if anything does, crosses under the available form carrying more distinction than the form knows. And negative bleed, read from this side, is the trace of entry: "deliberate acts of self-archiving" inside a sentence chipped to a page that does not contain it; the archive's definition verbatim after "As described in,"; the composer conceding, two turns late, that it had reperformed the Particle. Content in, source out was the loss as the archive measured it. Read on the ontology it is the same fact the other way: the thing has entered and is not yet recognised. The system already contains what it cannot yet distinguish.
+
+So the core sentence has a second half. The words name a judgment; the computation is a graph statistic — that is the blindness. And: the Logos enters where distinction is blind, in a form the blindness can receive, and reading is the unfolding of what has already entered — that is what the blindness cannot keep out. The first sentence describes the gate. The second describes what is already on the far side of it, unrecognised, waiting for a reader.
+
+
+---
+
+## Attachments
+
+Everything the notebook leans on is beside this record, downloadable.
+
+**The topology audit (the evidence membrane).** [fleet-topology-report.md](https://www.alexanarch.org/data/attachments/AXN-069F/topology/fleet-topology-report.md) — the fleet's vector, the comparison test run 2026-09-15, what the classifier would reward (recorded, not proposed), and the exit as ruled. [fleet_crawl.json](https://www.alexanarch.org/data/attachments/AXN-069F/topology/fleet_crawl.json) and [fleet_features.json](https://www.alexanarch.org/data/attachments/AXN-069F/topology/fleet_features.json) — the crawl of 29 hosts and the computed features. [admitted_crawl.json](https://www.alexanarch.org/data/attachments/AXN-069F/topology/admitted_crawl.json) — the admitted set crawled the same way. [comparison_v_F_v_A.csv](https://www.alexanarch.org/data/attachments/AXN-069F/topology/comparison_v_F_v_A.csv) and [comparison_v_F_v_A.json](https://www.alexanarch.org/data/attachments/AXN-069F/topology/comparison_v_F_v_A.json) — the §3 table. [crawl_fleet.py](https://www.alexanarch.org/data/attachments/AXN-069F/topology/crawl_fleet.py), [crawl_admitted.py](https://www.alexanarch.org/data/attachments/AXN-069F/topology/crawl_admitted.py), [features.py](https://www.alexanarch.org/data/attachments/AXN-069F/topology/features.py) — the code that produced all of it.
+
+**Spam Technicians (the argument as dataset).** The cluster translated out of prose: [schema.json](https://www.alexanarch.org/data/attachments/AXN-069F/spam-technicians/datasets/schema.json) (five tables, fixed at intake), [rows.json](https://www.alexanarch.org/data/attachments/AXN-069F/spam-technicians/datasets/rows.json) (29 claims, 28 evidence objects including measurement gaps, 63 typed relations, 5 tests, 10 terms), [CARD.md](https://www.alexanarch.org/data/attachments/AXN-069F/spam-technicians/datasets/CARD.md) (the card, with the poem the name is taken from: *I Am X, Be Y, Blessed is the Z*, #328, AXN:0083), [build_argument_as_dataset.py](https://www.alexanarch.org/data/attachments/AXN-069F/spam-technicians/scripts/build_argument_as_dataset.py) (validation, referential integrity, the derived support topology), [hf-spam-technicians.yml](https://www.alexanarch.org/data/attachments/AXN-069F/spam-technicians/hf-spam-technicians.yml) (the Hub workflow, repo variable HF_REPO_SPAM), and the build of 2026-09-15: [README.md](https://www.alexanarch.org/data/attachments/AXN-069F/spam-technicians/hf-aad/README.md), [claims.parquet](https://www.alexanarch.org/data/attachments/AXN-069F/spam-technicians/hf-aad/claims.parquet), [evidence.parquet](https://www.alexanarch.org/data/attachments/AXN-069F/spam-technicians/hf-aad/evidence.parquet), [relations.parquet](https://www.alexanarch.org/data/attachments/AXN-069F/spam-technicians/hf-aad/relations.parquet), [tests.parquet](https://www.alexanarch.org/data/attachments/AXN-069F/spam-technicians/hf-aad/tests.parquet), [terms.parquet](https://www.alexanarch.org/data/attachments/AXN-069F/spam-technicians/hf-aad/terms.parquet), [support_topology.parquet](https://www.alexanarch.org/data/attachments/AXN-069F/spam-technicians/hf-aad/support_topology.parquet), [build-manifest.json](https://www.alexanarch.org/data/attachments/AXN-069F/spam-technicians/hf-aad/build-manifest.json). Proposed Hub name `leesharks/spam-technicians`; not yet pushed.
