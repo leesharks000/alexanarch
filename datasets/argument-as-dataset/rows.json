@@ -383,6 +383,23 @@
     "source_version": "v0.5",
     "source_section": "11"
    }
+  },
+  {
+   "claim_id": "C-OPERATORS-ARE-ADDRESS",
+   "claim": "Search operators are part of the address: at the paper's own name, the quoted exact-match form composes the paper faithfully with no entity token, while the same string unquoted, with or without the article, dissolves it; the three addresses that compose (entity token, quotation marks, unresolved string) share the property of preventing query expansion.",
+   "claim_class": "finding",
+   "epistemic_status": "measured_internal",
+   "level": "measured",
+   "conditions": [
+    "the two dissolving addresses are the operator's same-session report, not seated"
+   ],
+   "provenance": {
+    "source_document": "Capture Registry",
+    "source_version": "2026-09-15",
+    "source_section": "Classics & Philology",
+    "source_locus": "omega-erratum-quoted-aio-20260915"
+   },
+   "note": "prior articulation: #1084 (the address as the unit, operators included); the 2026-08-13 quoted/unquoted pair (5 of 5 vs 1 of 8 archive cards); inverse of #604 (TL;DR:010), where a quoted marker was overridden"
   }
  ],
  "evidence": [
@@ -788,6 +805,23 @@
     "source_locus": "alexanarch-omega-erratum-aio-20260915 / omega-erratum-exact-title-aio-20260914"
    },
    "note": "the first capture seated with the organic layer in the transcript (paired-layer: O, C, A on one screen); AAD ≈ 0 at this address"
+  },
+  {
+   "evidence_id": "E-OMEGA-QUOTED",
+   "evidence_type": "capture_specimen",
+   "statement": "'\"the Ω erratum\"' on Google AI Overview, 2026-09-15, signed out, no entity token: the paper composed as a paper from the Academia PDF — the three peaks named (meaning without voice, command without executor, action without doer) and the three evidentiary rings — 1 of 1 source archive-controlled, 8 of 8 organic archive-side; operator reports the unquoted forms dissolved it",
+   "variable": "quoted_arm_omega",
+   "capture_ids": [
+    "ADDR-798ae17c85d0"
+   ],
+   "measurement_date": "2026-09-15",
+   "status": "measured",
+   "provenance": {
+    "source_document": "Capture Registry",
+    "source_version": "2026-09-15",
+    "source_section": "Classics & Philology",
+    "source_locus": "omega-erratum-quoted-aio-20260915"
+   }
   }
  ],
  "relations": [
@@ -1124,6 +1158,29 @@
    "relation": "supports",
    "object_id": "C-STANDING-BETWEEN-RANK-AND-COMPOSITION",
    "note": "the tied condition against which the untied depletion is read"
+  },
+  {
+   "subject_id": "E-OMEGA-QUOTED",
+   "relation": "supports",
+   "object_id": "C-OPERATORS-ARE-ADDRESS"
+  },
+  {
+   "subject_id": "E-OMEGA-TIED",
+   "relation": "supports",
+   "object_id": "C-OPERATORS-ARE-ADDRESS",
+   "note": "the entity token as an operator on expansion"
+  },
+  {
+   "subject_id": "C-OPERATORS-ARE-ADDRESS",
+   "relation": "qualifies",
+   "object_id": "C-STANDING-BETWEEN-RANK-AND-COMPOSITION",
+   "note": "whatever assigns standing operates on expansion; consistent with #695's fan-out, not separated from scope by this evidence"
+  },
+  {
+   "subject_id": "C-COMPRESSION-WRITING",
+   "relation": "depends_on",
+   "object_id": "C-OPERATORS-ARE-ADDRESS",
+   "note": "expansion is what carries a composition into adjacent basins"
   }
  ],
  "tests": [
