@@ -51,6 +51,11 @@ def main():
     import subprocess as _sp
     _r = _sp.run([sys.executable, str(ROOT / "scripts/check_capture_registry.py"), "--base", "origin/main"], cwd=ROOT)
     if _r.returncode: print("[postflight] REGISTRY GATE FAILED — the capture is NOT seated."); return 1
+    # 2026-09-15: the transcript gate. Intake refuses thin drafts, but nothing checked the units seated
+    # before the contract, so 34 citable units carried no machine text and were invisible without a hand
+    # audit. The transcript IS the capture; this makes the count monotone.
+    _t = _sp.run([sys.executable, str(ROOT / "scripts/audit_transcript_coverage.py"), "--check"], cwd=ROOT)
+    if _t.returncode: print("[postflight] TRANSCRIPT GATE FAILED — a citable unit has no machine text. NOT seated."); return 1
     for name, cmd in STEPS:
         print(f"[postflight] {name}: {' '.join(cmd[1:])}")
         r = subprocess.run(cmd, cwd=ROOT)
