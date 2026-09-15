@@ -400,6 +400,23 @@
     "source_locus": "omega-erratum-quoted-aio-20260915"
    },
    "note": "prior articulation: #1084 (the address as the unit, operators included); the 2026-08-13 quoted/unquoted pair (5 of 5 vs 1 of 8 archive cards); inverse of #604 (TL;DR:010), where a quoted marker was overridden"
+  },
+  {
+   "claim_id": "C-SURFACE-SPECIFIC-TRANSPORT",
+   "claim": "What level of a source crosses, and whether its provenance crosses with it, is surface-specific rather than corpus-specific: in one week at untied addresses, one surface exported the archive's abstraction and dropped both the derivation and the source, while another composed the derivation whole and named author, title and year.",
+   "claim_class": "finding",
+   "epistemic_status": "measured_internal",
+   "level": "measured",
+   "conditions": [
+    "two surfaces, one week, one address family",
+    "the second surface's source markers are unexpanded, so citation-level provenance is unobservable"
+   ],
+   "provenance": {
+    "source_document": "Capture Registry",
+    "source_version": "2026-09-15",
+    "source_section": "Classics & Philology",
+    "source_locus": "qwen-sappho-future-reader-20260915 against sappho-future-reader-aio-20260915"
+   }
   }
  ],
  "evidence": [
@@ -841,6 +858,23 @@
     "source_locus": "sappho-future-reader-aio-20260915 (observation on ADDR-c07d310beb07)"
    },
    "note": "phrase-by-phrase source comparison recorded in the observation's analysis; Instagram sources unreadable behind login"
+  },
+  {
+   "evidence_id": "E-QWEN-SAPPHO",
+   "evidence_type": "capture_specimen",
+   "statement": "Qwen 3.7, logged out and incognito, open prompt 'tell me about sappho and the future reader', 2026-09-15: the archive's Sappho 31 reading composed whole — κῆνος pointing to the future reader rather than a present rival, ἐνάντιος face-to-face with the inscribed text, ἴσος θεοῖσιν, lyric self-archiving, the somatic catalogue as voice becoming text, chloros as papyrus — attributed to 'Rebekah Cranes' 2026 close reading, ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader'; every element verified against #1270 (AXN:0507, 92efb40bc301752c)",
+   "variable": "qwen_untied_20260915",
+   "capture_ids": [
+    "ADDR-626a3c0d0292"
+   ],
+   "measurement_date": "2026-09-15",
+   "status": "measured",
+   "provenance": {
+    "source_document": "Capture Registry",
+    "source_version": "2026-09-15",
+    "source_section": "Classics & Philology",
+    "source_locus": "qwen-sappho-future-reader-20260915"
+   }
   }
  ],
  "relations": [
@@ -1217,6 +1251,29 @@
    "subject_id": "E-SAPPHO-20260915",
    "relation": "illustrates",
    "object_id": "C-LOGOS-TOWARDS"
+  },
+  {
+   "subject_id": "E-QWEN-SAPPHO",
+   "relation": "supports",
+   "object_id": "C-SURFACE-SPECIFIC-TRANSPORT"
+  },
+  {
+   "subject_id": "E-SAPPHO-20260915",
+   "relation": "supports",
+   "object_id": "C-SURFACE-SPECIFIC-TRANSPORT",
+   "note": "the other arm: abstraction exported, derivation and source dropped"
+  },
+  {
+   "subject_id": "C-SURFACE-SPECIFIC-TRANSPORT",
+   "relation": "qualifies",
+   "object_id": "C-UPDATE-BARRIER",
+   "note": "a barrier measured on one surface is not a property of the material; another surface admitted the same source with its provenance"
+  },
+  {
+   "subject_id": "E-QWEN-SAPPHO",
+   "relation": "contradicts",
+   "object_id": "C-DATASET-NOT-READ",
+   "note": "weakly: a text keyed at a concept was read and attributed at an untied address on another surface"
   }
  ],
  "tests": [
