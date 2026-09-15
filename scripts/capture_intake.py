@@ -219,6 +219,14 @@ def seat_flat(draft, registry, schema):
     for e in registry["entries"]:
         if e.get("q") == draft["q"] and e.get("surface") == draft["surface"]:
             obs = {"date": draft["date"], "auth": draft["auth"], "ev": draft["ev"], "transcript": draft["transcript"], "imgs": draft.get("imgs") or [], "img_urls": draft.get("img_urls") or [], "d": draft["d"], "cites": draft.get("cites"), "obs_id": "OBS-" + hashlib.sha256((draft["q"] + draft["date"] + draft["surface"]).encode()).hexdigest()[:12]}
+            # A longitudinal observation is a citable unit (2026-08-27) and a measurable one: it carries
+            # its own slug (so build_capture_links derives its canonical citation instead of skipping it),
+            # its presented set, and its reading. Found missing on the 11 Sept seatings and repaired by hand
+            # at the mint of #1611; fixed here at intake so it is never missing again (2026-09-15).
+            obs["slug"] = draft.get("slug") or f"{slug}-{draft['date'].replace('-', '')}"
+            for k in ("surface", "cite_list", "archive_controlled_cites", "reading", "findings", "analysis", "sf", "transcript_class", "transcript_complete", "transcript_read", "per", "per_note", "longitudinal_priors"):
+                if draft.get(k) is not None:
+                    obs[k] = draft[k]
             e.setdefault("observations", []).append(obs); e["n_observations"] = len(e["observations"]) or 1
             e.setdefault("dates", []); e["dates"].append(draft["date"]) if draft["date"] not in e["dates"] else None
             return "observation", e
