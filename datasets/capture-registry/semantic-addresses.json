@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-09-14T19:14:21Z",
+  "regenerated_at": "2026-09-15T14:30:30Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "e5d48a04665309b85e138b3d6363b38e1e1e29a5c11b4e3280307a820378fa52",
+    "mm-main-capture": "8b35ee05bf11d67c0605e4a80a1d81239091a9327c8392a7e94a881ec04b40bf",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2198,
-  "total_observations": 497,
+  "total_addresses": 2200,
+  "total_observations": 499,
   "class_counts": {
     "subjunctive": 1744,
-    "observed_address": 435,
+    "observed_address": 437,
     "verified_non_address": 19
   },
   "type_counts": {
-    "unmatched": 1563,
+    "unmatched": 1565,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -45698,6 +45698,32 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "sappho future reader": {
+      "canonical_query": "sappho future reader",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-08-25",
+          "status": "CAPTURE",
+          "source_format": "Google mobile web, dark mode, signed out (page header 'Sign in'). All tab: AI Overview with +5 chip and Show more; the expanded AI Mode panel; the source carousel across two landscape frames. Device clock 20:26:12–20:26:37 on 2026-08-25. Four of six frames preserved with SHA-256 (manifest.json); two frames and two attachments not recovered.",
+          "section": "Classics & Philology",
+          "slug": "sappho-future-reader-aio-20260825",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#sappho-future-reader-aio-20260825",
+          "mirror_gallery_url": "https://leesharks.com/captures/#sappho-future-reader-aio-20260825",
+          "details_excerpt": "NEGATIVE BLEED, THE CALIBRATION SPECIMEN: THE LINEAGE RETRIEVED, THE DOMAIN DISTORTED. At the broad concept query the organic layer carries the archive's thesis in the first two snippets (Substack: the κῆνος deictic; Med"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-08-25",
+      "latest_status": "CAPTURE"
+    },
     "sappho provenance node": {
       "canonical_query": "sappho provenance node",
       "is_quoted": false,
@@ -55244,6 +55270,32 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-08-11",
       "latest_status": "CAPTURE"
+    },
+    "the ω erratum — sappho, mother of the logos: the transmission chain from fragment 31 to the apocalypse, with longinus as the key (v1.1)": {
+      "canonical_query": "the ω erratum — sappho, mother of the logos: the transmission chain from fragment 31 to the apocalypse, with longinus as the key (v1.1)",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-14",
+          "status": "EXACT MATCH",
+          "source_format": "Google Search: AI Overview panel, pasted expanded. Signed out, incognito. The issued string is the deposited title of #1484, unquoted, as reported by the operator; the frame is not held.",
+          "section": "Classics & Philology",
+          "slug": "omega-erratum-exact-title-aio-20260914",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#omega-erratum-exact-title-aio-20260914",
+          "mirror_gallery_url": "https://leesharks.com/captures/#omega-erratum-exact-title-aio-20260914",
+          "details_excerpt": "THE EXACT DEPOSITED TITLE, AND THE PAPER IS FABRICATED THEN RECLASSIFIED AS FICTION. Queried by its full title as deposited (#1484, AXN:05FF; #1483), the Overview treats the title as 'a fascinating, highly sophisticated "
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-14",
+      "latest_status": "EXACT MATCH"
     },
     "theoretical foundation": {
       "canonical_query": "theoretical foundation",
