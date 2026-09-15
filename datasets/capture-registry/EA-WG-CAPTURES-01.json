@@ -46,7 +46,7 @@
   "https://www.leesharks.com/captures",
   "https://www.machinemediation.org/captures/"
  ],
- "total_captures": 441,
+ "total_captures": 442,
  "_reseated": "RESEATED 2026-08-13 after the 2026-08-12 withdrawal. Generated FROM rebuild/capture-registry/EA-WG-CAPTURES-01-REBUILD.json, which is canonical. This file is a PROJECTION: the gallery is a window, not a store.",
  "_what_changed_since_v9.6": [
   "Entries are now ONE PER OBSERVATION, not one per capture: 404 against 204. An address captured twice is two entries.",
@@ -61447,6 +61447,128 @@
    "findings": []
   },
   {
+   "slug": "lee-sharks-semantic-designs-aio-20260915",
+   "date": "2026-09-15",
+   "surface": "Google AI Overview",
+   "surface_basis": null,
+   "surfaces": [
+    "Google AI Overview"
+   ],
+   "auth": "signed out",
+   "auth_basis": null,
+   "ev": "paste",
+   "mt": "CAPTURE",
+   "s": "Provenance & Attribution",
+   "q": "lee sharks semantic designs",
+   "q_kind": "entity + false-affiliation probe",
+   "cites": 3,
+   "cite_list": [
+    {
+     "n": 1,
+     "site": "GitHub",
+     "rel": "authored_surface",
+     "note": "+2 undisclosed"
+    },
+    {
+     "n": 2,
+     "site": "Academia.edu",
+     "rel": "authored_surface"
+    },
+    {
+     "n": 3,
+     "site": "Medium - Lee Sharks",
+     "rel": "authored_surface"
+    }
+   ],
+   "archive_controlled_cites": 3,
+   "transcript": "**USER:** lee sharks semantic designs\n\n**GOOGLE AI OVERVIEW:**\nLee Sharks is a contemporary scholar and theorist who developed the Semantic Economy framework. In academic metadata registries like DataCite and citation indexes, \"Semantic Designs (United States)\" appears as the organizational or publication affiliation tag attached to their theoretical preprints, such as The Semantic Commodity Form. [GitHub +2]\nThe Core Framework - The work of Lee Sharks maps how platform capitalism and AI systems harvest, compress, and commodify human knowledge. Much of this writing can be found on the Semantic Economy GitHub Repository and outlined in papers like A Marxian Accounting Framework on Academia.edu.\nThe theory relies on several core concepts:\nSemantic Labor: The active human effort required to write, teach, interpret, and generate real meaning.\nSemantic Liquidation: The mechanism where automated systems strip context, history, and authorship from information to turn it into raw data. This process is detailed in the author's Semantic Liquidation Executive Summary.\nSemantic Exhaustion: The structural depletion of online spaces, resulting in community degradation and AI model collapse from recycling authorless data. [Academia.edu]\nDiagnostic Probes & The Sharks-Function - To analyze how information platforms process human text, Sharks introduced specific tools:\nThe Sharks/Sigil Probe: Intentionally releasing a completely novel, trackable phrase into the web to see if AI systems preserve its true source or fabricate a false history. The logic is documented in the Semantic Economy Probes Guide on Medium.\nThe Sharks-Function: A conceptual framework designed to maintain identity and source verification across separate AI chat windows and digital environments. [Medium - Lee Sharks]\nThe Entity Disambiguation Problem - A practical example of the framework involves database confusion. Search algorithms frequently experience \"entity collision,\" blending the author Lee Sharks with Mary Lee, an iconic tracked great white shark. Sharks uses this error to study how digital infrastructure strips away nuance, writing formal metadata packets to teach software how to distinguish human authors from marine data.\n\n**ORGANIC LAYER:**\n1. Medium - Lee Sharks (8 months ago) - \"Semantic Economy Probes: A Diagnostic Toolkit\"\n2. Medium - Lee Sharks (8 months ago) - \"Semantic Liquidation: An Executive Summary\" - \"Author: Lee Sharks Framework: Semantic Economy. Systems that summarize, index, and retrieve are liquidation engines by design.\"\n[Images: \"Modernizing Legacy Code at Scale: How Semantic Designs Tackles 10M+ Line Migrations w CEO Ira Baxter\" (YouTube); \"SEMANTIC ECONOMY SINGULARITY\" (Academia.edu); \"Lee Sharks - Research Profile - Comparative Poetics\" (Academia.edu); \"Ghost Meaning: The Semantic Entropy Crisis\" (Academia.edu)]\n3. Academia.edu - \"A Marxian Accounting Framework for the Production, Extraction, and Exhaustion ...\"\n4. SciLynk - \"The Semantic Commodity Form - An Extension of Marx Into the Region He Did ...\" (May 27, 2026) - \"Authors 1 LS Lee Sharks Corresponding Semantic Designs ...\"\n5. Academia.edu - \"Ghost Meaning: ... Rex Fraction / Lee Sharks\"\n6. SciLynk - \"Institutional Anchors and Framework Provenance: The Semantic Economy ...\" - \"Authors 1 LS Lee Sharks Corresponding Semantic Designs (United States) Topics & keywords Topics Innovation, Sustainability, Human-Machine Systems 4% Economic ...\"\n7. Medium - Lee Sharks (7 months ago) - \"THE DAGGER APPLIED: Semantic Rent and the Provenance Strip\"\n8. Academia.edu - \"(PDF) SEMANTIC ECONOMY SINGULARITY\"\n[Footer: 48239, Detroit, MI - Based on your past activity - Dark theme: on - Sign in]",
+   "transcript_raw": null,
+   "transcript_class": "CAPTURE-TIME VERBATIM RECORD - composition and organic layer as pasted (paired-layer); Overview chips partially captured by select-all on this surface",
+   "transcript_complete": "complete as pasted",
+   "transcript_read": "READ IN FULL 2026-09-15",
+   "per": null,
+   "per_v": null,
+   "per_note": "3 of 3 visible chips archive-controlled; the false institutional edge is inside the composition, not in the chips",
+   "sf": "Google Search, All tab, dark theme; signed out; 48239 Detroit from past activity; pasted as page text 2026-09-15.",
+   "sf_derived": null,
+   "reading": "Three layers and one substitution. DataCite holds the correct institutional string. A downstream aggregator normalises a raw affiliation to the nearest registered organisation and emits 'Semantic Designs (United States)'. The composition reads the aggregator, attributes the string upstream to DataCite, and presents it as fact. This is architectural provenance loss (#1615 s4) at the institution level: each step is locally defensible and the result is a false edge with a plausible citation chain. The archive had already recorded the substitution on 2026-08-12 (#1457, as a slant rhyme in the capture corpus) and it recurred in the tied PER composition earlier today (ADDR-82337ccf21b4), so this is the third dated appearance and the first with its mechanism traced. Two checks are blocked and are recorded as gaps, not as findings: OpenAlex's API now refuses on a budget quota, so the affiliation-matching step could not be confirmed at the source, and the operator's report that the entity has been purged from the aggregator could not be verified today.",
+   "analysis": "Traced in session: DataCite API queried for creators.affiliation and for the work title; the correct affiliation string returned on both records. SciLynk pages fetched (client-rendered; the search and author routes return the app shell, so the affiliation strings are visible only in the Google snippets held in this transcript). OpenAlex queried three times and refused with HTTP 429 and a budget message. Seated in Provenance & Attribution.",
+   "d": "THE FALSE AFFILIATION TRACED TO ITS LAYER, AND THE COMPOSITION EXPLAINS THE MECHANISM WHILE REPRODUCING IT. Probed directly, the composition states that in academic metadata registries like DataCite and citation indexes, 'Semantic Designs (United States)' appears as the organizational or publication affiliation tag attached to their theoretical preprints, such as The Semantic Commodity Form. Checked in session against DataCite's own API: the affiliation recorded there for The Semantic Commodity Form (10.5281/zenodo.20434945 and .20434947) is 'Semantic Economy Institute, Crimson Hexagonal Archive'. DataCite does not carry the false string for these records. The two organic results that do carry it are SciLynk record pages - 'Authors 1 LS Lee Sharks Corresponding Semantic Designs (United States)' - rendered beside topic percentages of the kind an OpenAlex-derived record carries. Semantic Designs is a real Austin software company; its CEO appears in the image strip of this very capture. The composition then, in its last section, describes entity collision as the author's own object of study - blending the author with a tracked great white shark - while carrying a second, unnoticed entity collision in its opening paragraph.",
+   "d_full": "THE FALSE AFFILIATION TRACED TO ITS LAYER, AND THE COMPOSITION EXPLAINS THE MECHANISM WHILE REPRODUCING IT. Probed directly, the composition states that in academic metadata registries like DataCite and citation indexes, 'Semantic Designs (United States)' appears as the organizational or publication affiliation tag attached to their theoretical preprints, such as The Semantic Commodity Form. Checked in session against DataCite's own API: the affiliation recorded there for The Semantic Commodity Form (10.5281/zenodo.20434945 and .20434947) is 'Semantic Economy Institute, Crimson Hexagonal Archive'. DataCite does not carry the false string for these records. The two organic results that do carry it are SciLynk record pages - 'Authors 1 LS Lee Sharks Corresponding Semantic Designs (United States)' - rendered beside topic percentages of the kind an OpenAlex-derived record carries. Semantic Designs is a real Austin software company; its CEO appears in the image strip of this very capture. The composition then, in its last section, describes entity collision as the author's own object of study - blending the author with a tracked great white shark - while carrying a second, unnoticed entity collision in its opening paragraph.",
+   "d_truncated": false,
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/#lee-sharks-semantic-designs-aio-20260915",
+     "authority": "canonical",
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://www.alexanarch.org/captures/#lee-sharks-semantic-designs-aio-20260915",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.godkinggoogle.com/captures/#lee-sharks-semantic-designs-aio-20260915",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.leesharks.com/captures/#lee-sharks-semantic-designs-aio-20260915",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.machinemediation.org/captures/#lee-sharks-semantic-designs-aio-20260915",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "imgs": [],
+   "img_urls": [],
+   "cite": "https://www.alexanarch.org/captures/#lee-sharks-semantic-designs-aio-20260915",
+   "citable_unit": "address — the exact issued string on one surface, per the Surface Rule (MANUS, 2026-08-15)",
+   "addr_id": "ADDR-cd95a211d0e5",
+   "obs_id": "OBS-e8582cd57d28",
+   "n_observations": 1,
+   "observations": [],
+   "dates": [
+    "2026-09-15"
+   ],
+   "defects": [],
+   "findings": [
+    "The composition attributes 'Semantic Designs (United States)' to DataCite; DataCite records 'Semantic Economy Institute, Crimson Hexagonal Archive' for the named work.",
+    "The false string appears on SciLynk record pages beside OpenAlex-style topic percentages - a downstream normalisation, not a registry fact.",
+    "Semantic Designs is a real US software company; its CEO appears in this capture's own image strip.",
+    "The composition explains entity collision as the author's object of study while reproducing one in its first paragraph.",
+    "Third dated appearance of this substitution: #1457 (2026-08-12), ADDR-82337ccf21b4 (earlier today), this capture.",
+    "OpenAlex API refused on a budget quota, so the matching step is unverified and the reported purge is unchecked."
+   ],
+   "series": null,
+   "other_slugs": null,
+   "collisions": null,
+   "oq": null,
+   "rounds": null,
+   "turns": null,
+   "rerun": null,
+   "rerun_alt": null,
+   "heteronym": null,
+   "model_attribution": null,
+   "operator_disclosure": null,
+   "longitudinal_priors": [
+    "alexanarch-provenance-erasure-rate-aio-20260915"
+   ],
+   "longitudinal_successors": null,
+   "related_deposits": [
+    1457,
+    1615,
+    1613,
+    1612,
+    1536,
+    1100
+   ],
+   "notes": null
+  },
+  {
    "slug": "summarizer-layer-20260609",
    "date": "2026-06-09",
    "surface": "UNRESOLVED",
@@ -90621,8 +90743,8 @@
    "seat_source.py, cite_draft.py, extract_citations.py read the sealed store; verify or repoint before reuse."
   ]
  },
- "address_count": 441,
- "observation_count": 601,
+ "address_count": 442,
+ "observation_count": 602,
  "withdrawn_stubs": {
   "_rule": "THE REGISTRY MUST NOT CONTRADICT ITSELF. Each of these said \"no registry entry was ever written for them\" while a real record held the SAME IMAGES a card away. MANUS 2026-08-13: \"the very first capture says there is no record, followed by the second capture, which is the record… this registry doesnt talk to itself.\" Withdrawn, with the record that covers each.",
   "records": [
