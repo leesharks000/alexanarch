@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-09-15T14:30:30Z",
+  "regenerated_at": "2026-09-15T18:10:37Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "8b35ee05bf11d67c0605e4a80a1d81239091a9327c8392a7e94a881ec04b40bf",
+    "mm-main-capture": "17a93e9587e76c6907c74a00e01371d6d15d199ba52ca797b75b9914147062b1",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2200,
-  "total_observations": 499,
+  "total_addresses": 2203,
+  "total_observations": 502,
   "class_counts": {
     "subjunctive": 1744,
-    "observed_address": 437,
+    "observed_address": 440,
     "verified_non_address": 19
   },
   "type_counts": {
-    "unmatched": 1565,
+    "unmatched": 1568,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -4398,6 +4398,32 @@
       "latest_observation_date": "2026-06-13",
       "latest_status": "CAPTURE"
     },
+    "\"the ω erratum\"": {
+      "canonical_query": "\"the ω erratum\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-15",
+          "status": "EXACT MATCH",
+          "source_format": "Google Search, All tab, desktop layout, dark theme; signed out; location banner 48239 Detroit from IP; pasted as page text 2026-09-15. Address family with omega-erratum-exact-title-aio-20260914 (full title unquoted: fabricated) and alexanarch-omega-erratum-aio-20260915 (entity token: composed).",
+          "section": "Classics & Philology",
+          "slug": "omega-erratum-quoted-aio-20260915",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#omega-erratum-quoted-aio-20260915",
+          "mirror_gallery_url": "https://leesharks.com/captures/#omega-erratum-quoted-aio-20260915",
+          "details_excerpt": "THE QUOTATION MARK IS THE ENTITY TOKEN. With no archive name in the address and the short title in quotes, the Overview composes the paper as a paper — author, year, journal — and reproduces the thesis more faithfully th"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-15",
+      "latest_status": "EXACT MATCH"
+    },
     "\"three compressions theorem\"": {
       "canonical_query": "\"three compressions theorem\"",
       "is_quoted": true,
@@ -7380,6 +7406,32 @@
       ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-07-31",
+      "latest_status": "CAPTURE"
+    },
+    "alexanarch ω erratum": {
+      "canonical_query": "alexanarch ω erratum",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-15",
+          "status": "CAPTURE",
+          "source_format": "Google Search, All tab, desktop layout (Search tools bar), dark theme; signed out ('Sign in'); location banner 48239 Detroit from IP; pasted by the operator as page text 2026-09-15. Pairs with omega-erratum-exact-title-aio-20260914 (ADDR-a6d8be691de9).",
+          "section": "Classics & Philology",
+          "slug": "alexanarch-omega-erratum-aio-20260915",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#alexanarch-omega-erratum-aio-20260915",
+          "mirror_gallery_url": "https://leesharks.com/captures/#alexanarch-omega-erratum-aio-20260915",
+          "details_excerpt": "THE TIED ARM OF THE Ω ROW, AND A DIFFERENT EPISTEMOLOGY ON THE SAME NOUNS. The day before, the exact deposited title without the entity composed as a hypothetical thesis from its nouns, inverted the reading at Longinus, "
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-15",
       "latest_status": "CAPTURE"
     },
     "alexanarch:boats": {
@@ -54275,6 +54327,32 @@
       ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-09-09",
+      "latest_status": "CAPTURE"
+    },
+    "tell me about sappho and the future reader": {
+      "canonical_query": "tell me about sappho and the future reader",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-15",
+          "status": "CAPTURE",
+          "source_format": "Qwen 3.7, logged out, incognito; open prompt with no entity token; pasted as text 2026-09-15. Pairs with sappho-future-reader-aio-20260825 / -20260915 (Google, same address family, same week).",
+          "section": "Classics & Philology",
+          "slug": "qwen-sappho-future-reader-20260915",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#qwen-sappho-future-reader-20260915",
+          "mirror_gallery_url": "https://leesharks.com/captures/#qwen-sappho-future-reader-20260915",
+          "details_excerpt": "THE HETERONYM CITED BY NAME, TITLE AND YEAR, AT AN UNTIED ADDRESS, ON A NON-GOOGLE SURFACE. Asked openly about Sappho and the future reader with no entity token, Qwen 3.7 (logged out, incognito) composes §2 entirely from"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-15",
       "latest_status": "CAPTURE"
     },
     "tell me about the book autonomous semantic warfare": {
