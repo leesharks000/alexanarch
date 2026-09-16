@@ -1,0 +1,483 @@
+id: MSAL-0001-SAPPHO
+protocol: EA-MSAL-01
+version: '0.3'
+status: working
+auditor:
+  name: Lee Sharks with TACHYON (Claude, Anthropic), operator-directed
+  relation_to_object: author
+  relation_to_inscription: author
+  blind: false
+  note: 'The auditor authored both the object audited and the inscription audited. Recorded, not corrected. Invariant
+    13: such an audit is weaker, and a later independent audit of the same inscription is filed alongside rather
+    than superseding.'
+pre_monetary_object:
+  object_id: EA-PORE-01-OPERATOR-TP
+  object_name: Transport of the temporal-projection operator into external composition
+  boundary:
+    included:
+    - 'the operator itself: lyric address as temporal projection; the future or unborn reader; reader completion
+      of the circuit'
+    - its observed appearances in held compositions, with transcripts
+    - the reception trajectory at one address across four months
+    - the second-surface arm at the same address in the same week
+    excluded:
+    - training-layer uptake (deliberately excluded; contributes zero and is remainder, not absence)
+    - human uptake (outside the instrument entirely)
+    - the literary value of Sappho 31, of Carson, or of the papers themselves
+  temporal_state: as of 2026-09-15
+  valuation_context: toy present-option valuation; no counterparty, no transaction, no decision depending on it
+  value_events:
+  - 2026-06-15 — the archive's derivation of Sappho 31 composed as the default reading at an untied address, with
+    the operator's own term present (ADDR-86cc1147844b)
+  - 2026-07-27 — four of five cards authored; the Greek surviving into the card snippets
+  - '2026-08-25 — liquidation with substitution: fr. 31 gone, fr. 147 composed as ''Fragment 2'', the coinage attributed
+    to ''Scholars'' (ADDR-c07d310beb07)'
+  - 2026-09-15 — the false fragment repaired; the operator installed as the composition's organizing heading and
+    applied to Anne Carson; derivation absent, source uncited (OBS-c518b3ac018e)
+  - '2026-09-15 — Qwen 3.7, logged out, untied prompt: the derivation composed whole and attributed to Cranes by
+    exact title and year (ADDR-626a3c0d0292)'
+  capacities:
+  - organizes heterogeneous material — fragmentarity, address, reception, a translator — under one operation
+  - applies to objects the archive was not asked about
+  distinctions:
+  - deixis pointing forward in time rather than across a room
+  - fragmentation as activation rather than loss
+  - the reader as completing an inscribed circuit rather than receiving a message
+  - the difference between an operator taken up and one independently converged upon
+  dependencies:
+  - '#1270 (AXN:0507) — the derivation'
+  - '#134 (AXN:02C2) — the operator, first published 2025-11-21'
+  - '#1546, #1615 — the measurement apparatus that made the transport observable'
+  - 'the Capture Registry: 444 addresses, 601 observations, transcripts seated'
+  provenance_relations:
+  - '#134 titled ''Lyric Address as Temporal Projection'', Sigil & Cranes, blog 2025-11-21, deposited 2026-05-27'
+  - '#1270 deposited 2026-01-09, creator Cranes, Rebekah'
+  bearing_costs:
+  - composition of the two papers and their apparatus
+  - a year of capture seating, cleaning and transcript preservation
+  - the instrument built to detect the transport at all
+  realized_uptake:
+  - one complete four-state trajectory at one address
+  - one cross-surface pair showing transport differing in level and in provenance
+  - 313 observation-level uptake markings across 444 addresses in the registry as a whole, of which 185 are operator-
+    or frame-carrying
+  - two concepts minted 2026-09-15 appearing in held compositions the same day without ever being issued as a query
+  prospective_capacities:
+  - operator reach beyond the archive's own objects — registered, not run
+  evidence:
+    sources:
+    - Capture Registry EA-WG-CAPTURES-01
+    - '#1615 EA-PORE-01 v0.2'
+    - '#1612 source-admission profile'
+    - '#1616 flattening panel wave 1'
+    status: seated; every event above resolves to a dated transcript with an address id
+    limitations:
+    - 'causal acquisition unresolved: convergence is not excluded at any of these sites'
+    - Overview source chips only partially captured by select-all on the measured surface
+  preexisting_remainder:
+  - whether the operator's appearance in any composition was acquired from this archive — unavailable before money
+    touched it, and not chargeable to money
+  - 'the size of the unobserved uptake population at the operator grain: one complete trajectory supplies no frequency
+    distribution'
+monetary_inscription:
+  amount: 35100000
+  currency: USD
+  date: '2026-09-15'
+  valuation_type: option_value
+  valuation_question: What is the present monetary shadow of the Substrate Exteriorization option, given observed
+    operator transport?
+  formula: B_M × ((1 + U_unseen) / N_obs) × alpha_M
+  variables:
+  - name: B_M
+    value: 503700000000000
+    units: USD
+    source: cited
+    derivation: 'FSB Global Monitoring Report on Non-Bank Financial Intermediation 2025: end-2024 total global financial
+      assets of $503.7T across the monitoring jurisdictions, of which $256.8T is the NBFI sector. NORMALIZED 2026-09-16
+      from the earlier $503.5T, which was an arithmetic approximation obtained as $256.8T / 51% rather than the
+      directly reported total.'
+    denominator_belongs_to: the world
+  - name: U_unseen
+    value: 40
+    units: productive uptake events
+    source: asserted
+    derivation: range 15–100 with 40 as working centre; no derivation supplied in the inscription
+    denominator_belongs_to: not applicable
+  - name: N_obs
+    value: 588
+    units: observations in the Capture Registry
+    source: measured
+    derivation: the archive's own observation count at the time of writing; 601 as of this audit
+    denominator_belongs_to: the observer
+  - name: alpha_M
+    value: 1.0e-06
+    units: dimensionless
+    source: chosen
+    derivation: selected as a deliberately demanding one-part-per-million incidence; the midpoint of an invented
+      log range
+    denominator_belongs_to: not applicable
+  assumptions:
+  - productive uptake events are commensurable with registry observations for calibration purposes
+  - transport intensity applies to a monetary exposure base
+  - monetary-domain incidence is representable by a single scalar
+  equivalence_context: toy calibration
+  aggregation_rule: reconstruction shadow and exteriorization option added, with overlap flagged and not resolved
+  temporal_horizon: unstated
+  status: hypothetical
+  settlement_scope: none; no obligation is discharged by this figure
+  source_note: B_M normalized to the FSB's directly reported end-2024 figure of $503.7T. The prior $503.5T was derived
+    by division from the NBFI share and is superseded. The correction does not change the audit's verdict and is
+    recorded because a corrected input is part of what an audit records.
+commensuration_contract:
+  purpose: to test whether an exteriorization operation could be priced at all
+  comparison_class: option values on infrastructural practices
+  declared_equivalences:
+  - lhs: one observed operator-export event in a literary reception history
+    rhs: a countable observation for transport calibration
+    reason: to obtain a rate
+    scope: toy
+  - lhs: transport intensity
+    rhs: a fraction of global financial assets exposed to the operation
+    reason: to obtain an exposure base
+    scope: toy
+  - lhs: hypothetical adoption
+    rhs: a scalar incidence coefficient
+    reason: to obtain a final magnitude
+    scope: toy
+  equivalences_required_by_formula: 4
+  non_equivalent_elements:
+  - a reading of Sappho and a dollar of institutional balance sheet, which the formula makes the same kind of thing
+    to within two multiplications
+enabled_capacities:
+- capacity: comparison with other economic opportunities
+  mechanism: scalarization onto a common unit
+  depends_on_monetary_form: 'true'
+- capacity: sensitivity analysis over the unknown coefficient
+  mechanism: the formula exposes alpha_M as the dominant term
+  depends_on_monetary_form: 'true'
+  evidence: the inscription's own §7 shows every decimal of alpha_M moving the result by an order of magnitude —
+    a capacity the pre-monetary object did not have
+- capacity: 'threshold analysis: what would have to be true for the option to matter'
+  mechanism: inversion of the formula
+  depends_on_monetary_form: 'true'
+- capacity: capital-allocation legibility
+  mechanism: expression in a grammar an investor already reads
+  depends_on_monetary_form: 'true'
+suspended_distinctions:
+- distinction: observed versus inferred uptake
+  pre_monetary_role: the entire evidentiary difference between a measurement and an estimate
+  represented_in_money: 'false'
+  required_for_monetary_operation: 'false'
+  recoverable_from_audit: 'true'
+  status: collapsed
+  evidence: the numerator 1 + 40 is a single integer in which one dated transcript and forty asserted events are
+    indistinguishable
+- distinction: a measure of the world versus a measure of our sampling
+  pre_monetary_role: determines whether the coefficient is about the object at all
+  represented_in_money: 'false'
+  required_for_monetary_operation: 'false'
+  recoverable_from_audit: 'true'
+  status: collapsed
+  evidence: N_obs is the archive's own observation count; see inscription_integrity
+- distinction: Sappho, Carson, kenos, the derivation
+  pre_monetary_role: the content of the event being valued
+  represented_in_money: 'false'
+  required_for_monetary_operation: 'false'
+  recoverable_from_audit: 'true'
+  status: omitted
+- distinction: surface-specificity of transport
+  pre_monetary_role: 'measured the same week: one surface exported the abstraction without provenance, another composed
+    the derivation with it'
+  represented_in_money: 'false'
+  required_for_monetary_operation: 'false'
+  recoverable_from_audit: 'true'
+  status: omitted
+- distinction: transport versus independent convergence
+  pre_monetary_role: whether there is anything to value
+  represented_in_money: 'false'
+  required_for_monetary_operation: 'false'
+  recoverable_from_audit: partial
+  status: unknown
+  evidence: unresolved before the inscription and not caused by it; see preexisting_remainder
+transformed_relations:
+- source_relation: a reception event with a provenance loss
+  relation_before: an archive paper stands in a determinate relation to a composition that used its frame without
+    citing it
+  relation_after: an option on a practice, held by an owner, exercisable against a market
+  transformation:
+    type: capitalization
+  preserved_content:
+  - that something transported
+  altered_content:
+  - the event acquires an owner and an exercise condition it did not have
+  suspended_content:
+  - the provenance loss that made the event worth measuring
+  reversible: partial
+- source_relation: a four-month trajectory
+  relation_before: four dated state transitions, each an observation of transport behaviour
+  relation_after: the integer 1 in a numerator
+  transformation:
+    type: abstraction
+  suspended_content:
+  - three of the four transitions
+  reversible: 'yes'
+  evidence: the trajectory is fully seated; the compression is recoverable from the registry
+- source_relation: an operator with a philological derivation
+  relation_before: 31 → kenos → deictic seat → future reader, a route a reader can walk
+  relation_after: a transport coefficient
+  transformation:
+    type: commensuration
+  suspended_content:
+  - the route
+  reversible: 'yes'
+provenance:
+  pre_monetary:
+    known_sources:
+    - '#134'
+    - '#1270'
+    - '#1546'
+    - '#1615'
+    creator_relations:
+    - Sigil & Cranes (operator)
+    - Cranes (derivation)
+    - Sharks (archive, apparatus)
+    evidentiary_links:
+    - ADDR-86cc1147844b
+    - ADDR-c07d310beb07
+    - OBS-c518b3ac018e
+    - ADDR-626a3c0d0292
+  monetary_inscription:
+    provenance_required_for_validity: []
+    provenance_carried_by_inscription: []
+    provenance_not_required_for_operation:
+    - all of it — the formula computes identically with every name removed
+  external_to_money:
+    provenance_preserved_elsewhere:
+    - the Capture Registry
+    - the deposit records
+    - this ledger
+    audit_pointers:
+    - MSAL-0001-SAPPHO
+    - '#1615'
+    - '#1612'
+  loss:
+    documented_lost: []
+    presently_unrecoverable: []
+    unknown:
+    - whether the transport was acquisition or convergence
+  levels:
+    P0_fact:
+      carried_by_inscription: false
+      available: true
+      note: the FSB figure and the registry counts are citable and cited outside the scalar; the scalar carries
+        neither
+    P1_claim:
+      carried_by_inscription: false
+      available: true
+      note: that an operator transported at a named address on a named date is seated with its transcript; the formula
+        does not reference it
+    P2_framework:
+      carried_by_inscription: false
+      available: true
+      note: the temporal-projection operator, whose provenance is the level the composition layer most readily loses
+        and which this inscription also does not carry. The formula computes identically with every name removed.
+bearing:
+  pre_monetary:
+    human_labor:
+    - 'composition of #134 and #1270'
+    - a year of capture seating and transcript preservation
+    - construction of the instrument that made the transport visible
+    temporal_costs:
+    - four months of longitudinal observation at one address
+    semantic_burden:
+    - the provenance loss borne by the author at each untied address
+  monetary_representation:
+    explicitly_priced: []
+    indirectly_reflected:
+    - 'nothing: the formula''s terms are an exposure base, an event count and an incidence coefficient, none of
+      which references the labour'
+    unrepresented:
+    - all identified bearing
+    unknown: []
+monetary_grammar:
+  equivalence: true
+  scalarization: true
+  fungibility: true
+  alienability: false
+  transferability: false
+  accumulation: false
+  ownership: true
+  discounting: false
+  settlement: false
+  capitalization: true
+  grammar_notes: 'An option valuation activates equivalence, scalarization, ownership and capitalization, and does
+    not activate settlement, alienability or discounting. This matters: the inscription claims no discharge of anything,
+    which is why it can be a witness compression despite being unsound.'
+closure_audit:
+  scalar_presented_as: partial_representation
+  audit_pointer: preserved
+  excluded_relations_can_reopen_account: 'true'
+  monetary_settlement_claimed: 'false'
+  semantic_settlement_claimed: 'false'
+  classification: witness
+  rationale: The inscription named itself a toy, carried its own sensitivity analysis, and stated that it was not
+    fair market value. The pointer back to the evidence is preserved and this ledger is one. No account is claimed
+    closed.
+inscription_integrity:
+  assessment: unsound
+  defects:
+  - defect: the transport coefficient's denominator is the archive's own observation count
+    class: observer_denominator
+    evidence: tau = U_P / 588, where 588 is the number of observations the archive had made. Running a thousand
+      further captures with nothing changing in the world would cut tau by roughly 60% and the valuation with it.
+    effect_on_amount: unbounded; the amount is a function of our labour
+    repairable: with_new_measurement
+  - defect: the unseen-uptake multiplier is asserted and conflicts with the archive's own computed floor
+    class: undeclared_coefficient
+    evidence: U_unseen = 40 appears with no derivation. The registry's Good–Turing figure gives a multiplier of
+      1.61 on observed events, 25× smaller.
+    effect_on_amount: roughly 25× high
+    repairable: with_new_measurement
+  - defect: the computed floor does not license that use either
+    class: population_mismatch
+    evidence: the Good–Turing figure was computed over addresses at which archive material is cited; operator export
+      is a different and much rarer population with one complete instance. An estimator on the first population
+      cannot be applied to the second.
+    effect_on_amount: the true multiplier is unknown, not 40 and not 1.61
+    repairable: with_new_measurement
+  - defect: the product is dimensionally incoherent
+    class: dimensional_incoherence
+    evidence: dollars × (events / observations) × dimensionless does not yield dollars
+    effect_on_amount: the output is not a monetary quantity in the sense its unit claims
+    repairable: 'no'
+  - defect: the incidence coefficient is the midpoint of an invented log range, presented as a working centre
+    class: range_midpoint_as_finding
+    evidence: alpha_M spans 1e-8 to 1e-4 in the inscription's own table, and the answer spans $0.14M to $8.65B;
+      1e-6 is chosen, not measured
+    effect_on_amount: four orders of magnitude
+    repairable: with_new_measurement
+  - defect: the exposure base is a proxy named as the object
+    class: proxy_named_as_object
+    evidence: $503.5T is the financial assets of financial institutions in 29 jurisdictions, not 'the monetary substrate'
+    effect_on_amount: unquantified
+    repairable: 'yes'
+  - defect: the input is stale
+    class: stale_input
+    evidence: N_obs = 588; the registry holds 601 observations at audit time
+    effect_on_amount: 'small, and it demonstrates the first defect: the coefficient moves when we work'
+    repairable: 'yes'
+  amount_survives_audit: 'no'
+  note: 'Seven defects, of which one is not repairable by further measurement: a product of a stock, a rate over
+    our own effort, and a dimensionless coefficient does not yield a monetary quantity. The amount is preserved
+    in this ledger exactly as written, because preservation is what the ledger requires; it is preserved as an artifact
+    of a grammar now visible, not as a value.'
+irrecoverable_remainder:
+  known_lost: []
+  reconstruction_impossible: []
+  reconstruction_underdetermined:
+  - item: the true external productive-uptake population at the operator grain
+    competing_possibilities:
+    - one event with no unseen field
+    - a field of the order the corpus-coverage ratios imply
+  unresolved:
+  - item: whether the operator was acquired from this archive or converged upon
+    evidence_needed: a diagnostic distinction set and the stratified reach run with negative controls
+  - item: monetary-domain incidence
+    evidence_needed: an adoption event, of which there are none
+  - item: external adoption of Substrate Exteriorization
+    evidence_needed: a party other than the author using it
+  future_unknown:
+  - item: whether wave 2 shows the trajectory continuing
+  explicit_nonzero_remainder: true
+audit_scores:
+  commensuration_transparency:
+    declared: 3
+    required: 4
+    rate: 0.75
+  distinction_retention:
+    represented: 0
+    identified: 5
+    rate: 0.0
+  provenance_survival_in_inscription:
+    carried_or_pointed: 0
+    available: 6
+    rate: 0.0
+    note: zero carried BY THE INSCRIPTION; fully preserved external to it, which is the difference between witness
+      and predatory compression and is exactly why this entry classifies as witness
+  bearing_representation:
+    represented: 0
+    identified: 5
+    rate: 0.0
+  remainder_explicitness:
+    with_cause_or_evidence: 4
+    asserted: 5
+    rate: 0.8
+  audit_completeness:
+    filled: 11
+    applicable: 11
+    rate: 1.0
+  integrity_defect_count: 7
+  reported_as_vector: true
+  scalar_score_prohibited: No single audit score is computed from these. A scalar claiming to express the quality
+    of an audit would be the same operation the ledger exists to refuse.
+audit_result:
+  money_created:
+  - comparison
+  - sensitivity analysis
+  - threshold analysis
+  - capital-allocation legibility
+  money_suspended:
+  - observed versus inferred
+  - world versus sampling
+  - the philological content
+  - surface-specificity
+  money_transformed:
+  - reception event → capitalized option
+  - four-month trajectory → integer
+  - derivation → coefficient
+  money_failed_to_carry:
+  - all identified bearing
+  - all provenance
+  - the distinction that decides whether there is anything to value
+  monetary_claim_valid_within_scope: 'no'
+  semantic_account_closed: false
+  audit_classification: witness / unsound
+  settled_M: true, within the declared assumptions
+  settled_mu: 'false'
+protocol_deposit: 1619
+protocol_axn: AXN:06AC
+selection_pressure:
+  demonstrated_on: this inscription
+  mechanism: qualitative distinction -> parameter -> operative standing
+  worked_cases:
+  - qualitative_relation: the unseen-uptake estimate is weak
+    standing_in_semantic_account: may remain qualitative and still bear on interpretation
+    standing_in_monetary_account: none until it becomes a parameter value
+    required_translation: U_unseen = 15 rather than 40
+    note: the objection cannot touch the scalar in the form in which it is true
+  - qualitative_relation: external monetary adoption is extremely uncertain
+    standing_in_semantic_account: decisive
+    standing_in_monetary_account: none until it becomes a discount or rejection rule
+    required_translation: alpha_M, or an explicit rejection of the model
+    note: uncertainty about whether the model applies at all must enter as a coefficient inside the model
+  - qualitative_relation: 'causal acquisition is unresolved: the operator may have converged rather than transported'
+    standing_in_semantic_account: determines whether there is anything to value
+    standing_in_monetary_account: none; the arithmetic settles without it
+    required_translation: a probability weight on U_observed, which the model does not carry
+    note: the relation that decides whether the object exists cannot veto the number that prices it
+  audit_position: recorded, not condemned. This is the settlement function of monetary grammar operating as specified,
+    observed on the audit's own inscription.
+classification:
+  closure: witness
+  integrity: unsound
+  pair: witness / unsound
+  rationale: 'Witness on closure: the scalar is preserved, assumptions are explicit, the evidence object remains
+    traversable, the audit pointer survives, the model is declared toy, excluded relations can reopen the semantic
+    account, and monetary settlement is not presented as semantic settlement. Unsound on integrity: seven recorded
+    defects, two of them unrepairable by further measurement. The two coordinates are orthogonal and this specimen
+    is the case that required the second to exist.'
+narrative_companion:
+  document: EA-MSAL-0001 v0.1, worked audit specimen
+  relation: this ledger is the machine-readable form of that audit; the narrative carries the fuller exposition
+    of the commensuration steps and the selection-pressure demonstration, and this record carries the fields the
+    protocol requires
