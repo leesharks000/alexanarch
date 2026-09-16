@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.alexanarch.org/protocols/msal-01/schema.json",
+  "title": "MSAL-01 — Monetary Substrate Audit Ledger, v0.2",
+  "description": "Records what happens when an evidence-bearing value object is rendered writable in the grammar of money. The canonical object is the ledger; the amount is one field inside it. v0.2 adds two sections the v0.1 specification lacked: inscription_integrity, which asks whether the calculation was legal (orthogonal to whether its presentation claims finality), and audit_scores, a vector of coverage rates that is never summed — a single audit score would be a scalar claiming to exhaust the audit, which is the fetish this ledger exists to break.",
+  "type": "object",
+  "required": ["id", "protocol", "version", "pre_monetary_object", "monetary_inscription", "commensuration_contract", "monetary_grammar", "closure_audit", "inscription_integrity", "irrecoverable_remainder", "audit_scores"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^MSAL-[0-9]{4}"},
+    "protocol": {"const": "MSAL-01"},
+    "version": {"type": "string"},
+    "status": {"type": "string", "enum": ["working", "sealed", "superseded"]},
+    "auditor": {"type": "object", "properties": {"name": {"type": "string"}, "blind": {"type": "boolean"}, "note": {"type": "string"}}},
+
+    "pre_monetary_object": {"type": "object", "required": ["object_name", "boundary", "evidence"], "properties": {
+      "object_id": {"type": "string"}, "object_name": {"type": "string"},
+      "boundary": {"type": "object", "properties": {"included": {"type": "array"}, "excluded": {"type": "array"}}},
+      "temporal_state": {"type": "string"}, "valuation_context": {"type": "string"},
+      "value_events": {"type": "array"}, "capacities": {"type": "array"}, "distinctions": {"type": "array"},
+      "dependencies": {"type": "array"}, "provenance_relations": {"type": "array"}, "bearing_costs": {"type": "array"},
+      "realized_uptake": {"type": "array"}, "prospective_capacities": {"type": "array"},
+      "evidence": {"type": "object", "properties": {"sources": {"type": "array"}, "status": {"type": "string"}, "limitations": {"type": "array"}}},
+      "preexisting_remainder": {"type": "array", "description": "what was already unavailable before money touched it; the audit must not later charge money for this"}}},
+
+    "monetary_inscription": {"type": "object", "required": ["amount", "currency", "valuation_type", "status"], "properties": {
+      "amount": {"type": ["number", "string"]}, "currency": {"type": "string"}, "date": {"type": "string"},
+      "valuation_type": {"type": "string", "enum": ["price","wage","fee","rent","debt_balance","damages","replacement_cost","asset_price","market_cap","strategic_value","option_value","dependency_loss","other"]},
+      "valuation_question": {"type": "string"}, "formula": {"type": "string"},
+      "variables": {"type": "array", "items": {"type": "object", "required": ["name", "value", "source"], "properties": {
+        "name": {"type": "string"}, "value": {}, "units": {"type": "string"}, "source": {"type": "string", "enum": ["measured", "cited", "derived", "asserted", "chosen"]},
+        "derivation": {"type": "string"},
+        "denominator_belongs_to": {"type": "string", "enum": ["the object", "the world", "the observer", "not applicable", "unknown"], "description": "v0.2. A coefficient whose denominator is the observer's own effort moves when the instrument moves and the world does not; it is not measuring the world and must be flagged here."}}}},
+      "assumptions": {"type": "array"}, "comparables": {"type": "array"}, "discount_factors": {"type": "array"},
+      "equivalence_context": {"type": "string"}, "aggregation_rule": {"type": "string"}, "temporal_horizon": {"type": "string"},
+      "status": {"type": "string", "enum": ["observed", "calculated", "modelled", "hypothetical"]},
+      "settlement_scope": {"type": "string"}}},
+
+    "commensuration_contract": {"type": "object", "required": ["purpose", "declared_equivalences"], "properties": {
+      "purpose": {"type": "string"}, "comparison_class": {"type": "string"},
+      "declared_equivalences": {"type": "array", "items": {"type": "object", "required": ["lhs", "rhs", "reason"], "properties": {"lhs": {"type": "string"}, "rhs": {"type": "string"}, "reason": {"type": "string"}, "scope": {"type": "string"}}}},
+      "equivalences_required_by_formula": {"type": "integer", "description": "v0.2. The count the arithmetic actually needed. Commensuration transparency is declared/required and can be below 1."},
+      "unitization": {"type": "object"}, "arithmetic_permissions": {"type": "object"}, "non_equivalent_elements": {"type": "array"}}},
+
+    "enabled_capacities": {"type": "array", "items": {"type": "object", "properties": {"capacity": {"type": "string"}, "mechanism": {"type": "string"}, "evidence": {"type": "string"}, "depends_on_monetary_form": {"type": "string", "enum": ["true", "false", "partial"]}}}},
+
+    "suspended_distinctions": {"type": "array", "items": {"type": "object", "required": ["distinction", "status"], "properties": {
+      "distinction": {"type": "string"}, "pre_monetary_role": {"type": "string"},
+      "represented_in_money": {"type": "string", "enum": ["true", "false", "partial"]},
+      "required_for_monetary_operation": {"type": "string", "enum": ["true", "false"]},
+      "recoverable_from_audit": {"type": "string", "enum": ["true", "false", "partial"]},
+      "status": {"type": "string", "enum": ["omitted", "abstracted", "collapsed", "erased", "unknown"]},
+      "evidence": {"type": "string"}}}},
+
+    "transformed_relations": {"type": "array", "items": {"type": "object", "properties": {"source_relation": {"type": "string"}, "relation_before": {"type": "string"}, "relation_after": {"type": "string"}, "transformation": {"type": "object"}, "preserved_content": {"type": "array"}, "altered_content": {"type": "array"}, "suspended_content": {"type": "array"}, "reversible": {"type": "string", "enum": ["yes", "no", "partial", "unknown"]}, "evidence": {"type": "string"}}}},
+
+    "provenance": {"type": "object", "properties": {"pre_monetary": {"type": "object"}, "monetary_inscription": {"type": "object"}, "external_to_money": {"type": "object"}, "loss": {"type": "object"}}},
+    "bearing": {"type": "object", "properties": {"pre_monetary": {"type": "object"}, "monetary_representation": {"type": "object"}}},
+    "monetary_grammar": {"type": "object"},
+
+    "closure_audit": {"type": "object", "required": ["classification"], "properties": {
+      "scalar_presented_as": {"type": "string", "enum": ["partial_representation", "decision_tool", "market_term", "exhaustive_value", "unknown"]},
+      "audit_pointer": {"type": "string", "enum": ["preserved", "partial", "absent"]},
+      "excluded_relations_can_reopen_account": {"type": "string", "enum": ["true", "false", "unknown"]},
+      "monetary_settlement_claimed": {"type": "string", "enum": ["true", "false"]},
+      "semantic_settlement_claimed": {"type": "string", "enum": ["true", "false"]},
+      "classification": {"type": "string", "enum": ["witness", "predatory", "mixed", "unresolved"]},
+      "rationale": {"type": "string"}}},
+
+    "inscription_integrity": {"type": "object", "description": "v0.2, and the section the specification most needed. The closure audit asks whether the scalar claims finality; this asks whether the calculation was legal. The two are ORTHOGONAL: a witness compression of an unsound number and a predatory compression of a sound one are both possible, and the ledger must be able to say so.", "required": ["assessment", "defects"], "properties": {
+      "assessment": {"type": "string", "enum": ["sound", "unsound", "partially_sound", "unassessed"]},
+      "defects": {"type": "array", "items": {"type": "object", "required": ["defect", "class", "evidence"], "properties": {
+        "defect": {"type": "string"},
+        "class": {"type": "string", "enum": ["dimensional_incoherence", "observer_denominator", "undeclared_coefficient", "population_mismatch", "stale_input", "unit_confusion", "double_counting", "proxy_named_as_object", "range_midpoint_as_finding", "other"]},
+        "evidence": {"type": "string"},
+        "effect_on_amount": {"type": "string"},
+        "repairable": {"type": "string", "enum": ["yes", "no", "with_new_measurement"]}}}},
+      "amount_survives_audit": {"type": "string", "enum": ["yes", "no", "within_stated_scope_only"]},
+      "note": {"type": "string"}}},
+
+    "irrecoverable_remainder": {"type": "object", "required": ["explicit_nonzero_remainder"], "properties": {
+      "known_lost": {"type": "array"}, "reconstruction_impossible": {"type": "array"},
+      "reconstruction_underdetermined": {"type": "array"}, "unresolved": {"type": "array"},
+      "future_unknown": {"type": "array"}, "explicit_nonzero_remainder": {"type": "boolean"}}},
+
+    "audit_scores": {"type": "object", "description": "v0.2. A VECTOR, never summed. Rule: no scalar audit score may be computed from these, because a single number claiming to express audit quality is the same operation the ledger exists to refuse. Each score is reported with its numerator and denominator visible.", "required": ["reported_as_vector"], "properties": {
+      "commensuration_transparency": {"type": "object", "properties": {"declared": {"type": "integer"}, "required": {"type": "integer"}, "rate": {"type": ["number", "null"]}}},
+      "distinction_retention": {"type": "object", "properties": {"represented": {"type": "integer"}, "identified": {"type": "integer"}, "rate": {"type": ["number", "null"]}}},
+      "provenance_survival_in_inscription": {"type": "object", "properties": {"carried_or_pointed": {"type": "integer"}, "available": {"type": "integer"}, "rate": {"type": ["number", "null"]}, "note": {"type": "string"}}},
+      "bearing_representation": {"type": "object", "properties": {"represented": {"type": "integer"}, "identified": {"type": "integer"}, "rate": {"type": ["number", "null"]}}},
+      "remainder_explicitness": {"type": "object", "properties": {"with_cause_or_evidence": {"type": "integer"}, "asserted": {"type": "integer"}, "rate": {"type": ["number", "null"]}}},
+      "audit_completeness": {"type": "object", "properties": {"filled": {"type": "integer"}, "applicable": {"type": "integer"}, "rate": {"type": ["number", "null"]}}},
+      "integrity_defect_count": {"type": "integer", "description": "a count, not a rate; defects do not average"},
+      "reported_as_vector": {"const": true},
+      "scalar_score_prohibited": {"type": "string"}}},
+
+    "audit_result": {"type": "object", "properties": {
+      "money_created": {"type": "array"}, "money_suspended": {"type": "array"}, "money_transformed": {"type": "array"}, "money_failed_to_carry": {"type": "array"},
+      "monetary_claim_valid_within_scope": {"type": "string", "enum": ["yes", "no", "unassessed"]},
+      "semantic_account_closed": {"const": false},
+      "audit_classification": {"type": "string", "description": "the 2x2: closure classification x inscription integrity, e.g. 'witness / unsound'"}}}
+  }
+}
