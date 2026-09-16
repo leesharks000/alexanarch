@@ -50,6 +50,40 @@ def card(g, body_dir):
     L.append("")
     L.append(g.get("what", ""))
     L.append("")
+    # THE BODIES ARE SYMBOLA AND THE CARD MUST SAY SO (2026-09-16). An unprimed traversal
+    # read the card, the field names and the landing page, said competent things about the
+    # vocabulary, and resolved no referent at all -- then proposed to read one capture's
+    # metadata "as prose" with that capture's own machine text one link away. Nothing in any
+    # card said that a row is half a token and the referent is the other half. The cards
+    # explained how rows GOT IN and never how to get OUT, so a reader inferring from the card
+    # read the card. This section is emitted SECOND, before the counts, because a reader who
+    # stops early should have stopped after being told what they are holding.
+    htr = g.get("how_to_read")
+    if htr:
+        L.append("## These are symbola. They are for traversal.")
+        L.append("")
+        L.append(f"> {htr['definition']}")
+        L.append("")
+        L.append(f"*{htr['source']}*")
+        L.append("")
+        L.append(f"**A row is an index, not a text.** {htr['what_a_row_is']}")
+        L.append("")
+        L.append(f"**The other half is `source_uri`.** {htr['the_other_half']}")
+        L.append("")
+        L.append("**The traversal:**")
+        L.append("")
+        for i, step in enumerate(htr["the_traversal"], 1):
+            L.append(f"{i}. {step}")
+        L.append("")
+        L.append(f"**Atomized for reassembly.** {htr['atomization_is_for_reassembly']}")
+        L.append("")
+        L.append(f"**A failure mode, recorded.** {htr['the_failure_mode_named']}")
+        L.append("")
+        L.append(f"**Check.** {htr['how_to_verify_you_have_read_it']}")
+        L.append("")
+        L.append(f"**What the rows will not give you.** {htr['what_the_rows_will_not_give_you']}")
+        L.append("")
+
     L.append("## Counts")
     L.append("")
     L.append(" · ".join(f"**{v}** {k}" for k, v in counts.items()))
