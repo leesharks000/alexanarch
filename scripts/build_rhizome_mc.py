@@ -671,7 +671,15 @@ def main():
                    "neighbour": sum(1 for r in rows if r["region"] == "neighbour"),
                    "edges": len(edges), "stolons": len(STOLONS)},
         "adjacent": [s[2] for s in STOLONS],
+        # THE SPORE MUST NAME ITS OTHER HALF (2026-09-16). A spore naming only the generator
+        # does not identify the body it emitted: eight bodies share this one generator and
+        # differ ONLY by grammar. Under the symbolon ladder the spore/body fracture is the
+        # level whose fit is machine-checked -- the workflow re-emits and fails if the result
+        # differs -- so a spore that cannot say which grammar to re-emit from has broken the
+        # fit at exactly the level where the fit is testable.
         "generator": "scripts/build_rhizome_mc.py",
+        "grammar": GRAMMAR,
+        "reemit": f"RHIZOME_GRAMMAR={GRAMMAR} python3 scripts/build_rhizome_mc.py",
         "source_commit": None,
         "design_principle": ("A model-collapse dataset should itself resist collapse: preserve plurality, competing "
                              "mechanisms, counterexamples, corrections, provenance, and outgoing routes to what it "
