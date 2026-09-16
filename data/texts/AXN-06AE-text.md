@@ -796,7 +796,7 @@ The audit to this point has recorded what the scalar closed and what it ceased t
 
 **Amount survives audit: no.**
 
-The amount is preserved exactly, as the protocol requires. It is preserved as an artifact of a grammar now visible, not as a value. Two of the seven defects cannot be repaired by measuring anything further.
+The amount is preserved exactly, as the protocol requires. It is preserved as an artifact of a grammar now visible, not as a value. ONE of the seven defects cannot be repaired by measuring anything further: defect 4, dimensional incoherence, since no better inputs close a product whose units do not close. Defect 1, the observer denominator, is repairable only by replacing the denominator with one belonging to the object or the world, which is a change of model rather than a further measurement. The distinction is between an invalid operation, which no evidence repairs, and a bad parameter, which evidence can. [CORRECTED 2026-09-16: v0.2 as deposited said two, while the structured record marked one. The structured record is correct and the narrative overstated.]
 
 This section is not a criticism of the model's author, who is also this audit's author. It is the field without which an audit can bless a number that never held.
 
