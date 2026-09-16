@@ -15,6 +15,32 @@ configs:
 
 The archive's political economy of meaning, seeded at the stolon the collapse body left open. Its roles are NOT the collapse roles: where that body asks what narrows, this one asks who gains by the narrowing.
 
+## These are symbola. They are for traversal.
+
+> A token broken in two, each half held by a different party, no half carrying complete authority, the fit of the fracture proving the covenant. Verification is the act of reunion.
+
+*AXN-SYMBOLON-SPEC v0.2, deposit #1432 (AXN:05A9); the figure's anti-severance sense in SYMBOLON-01, #675 and #1355 — symvolon, thrown together, against diavolon, thrown apart.*
+
+**A row is an index, not a text.** A row carries enough to find, verify and rejoin its referent, and it does not carry the referent. Reading the row as the object is holding one half of the token and calling it whole.
+
+**The other half is `source_uri`.** Where a row carries one, the referent is a deposit, a capture or a concept in the Crimson Hexagonal Archive — with its own text, its transcript where it has one, its provenance, and its own edges. Resolve it.
+
+**The traversal:**
+
+1. open a row
+2. resolve its source_uri and read the referent — the deposit's text, the capture's transcript
+3. follow the row's edges in relations.jsonl to the rows they point at
+4. resolve those
+5. return to the first row and state what changed
+
+**Atomized for reassembly.** These bodies are atomized so that a reader can reassemble more completely than the prose ever was, not so that the atoms can be read as atoms. The grammar, the roles, the axes and the evidence statuses are apparatus for finding the way back to the work; they are not the work. A reading that stops at the schema has performed severance on an object built to resist it.
+
+**A failure mode, recorded.** Observed 2026-09-16. An unprimed traversal read the card, the field names and the landing page, produced competent observations about the vocabulary, and resolved no referent at all — then proposed to read one capture's sixteen metadata fields 'as prose' while that capture's own machine text sat one link away. Competent, and it never crossed the fracture. This block exists because the bodies had no instruction saying that crossing it is the point.
+
+**Check.** Name a referent you resolved, quote a sentence from it, and state something you could not have said from the row.
+
+**What the rows will not give you.** The argument. Every body advertises its siblings as stolons and its referents as URIs precisely because it does not contain them. The outside stays outside and stays reachable, and reaching is the reader's part of the covenant.
+
 ## Counts
 
 **512** nodes · **353** core · **159** neighbour · **424** edges · **7** stolons
