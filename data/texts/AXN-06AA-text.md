@@ -533,9 +533,9 @@ It is that settlement no longer requires it.
 
 Thus:
 
-    P[\rm available]
+    P[available]
     !=
-    P[\rm required].
+    P[required].
     }
 
 A monetary inscription may coexist with rich provenance outside the scalar while remaining operationally valid without carrying that provenance itself.
@@ -747,7 +747,7 @@ A purchase price may complete a transfer.
 But:
 
     settled[M]
-    \not⇒
+    ⇏
     settledₘu.
     }
 
@@ -875,14 +875,14 @@ These are not interchangeable.
 Thus:
 
     constitutional debt
-    \not⇒
+    ⇏
     contractual debt.
     }
 
 And:
 
     semantic dependency
-    \not⇒
+    ⇏
     specific monetary liability.
     }
 
@@ -1027,7 +1027,7 @@ became the governing relation, the money-form would simply reappear under anothe
 Instead, ₳₳ marks that monetary closure does not automatically become semantic closure:
 
     \$20
-    \not⇒
+    ⇏
     settledₘu.
     }
 
@@ -1074,11 +1074,11 @@ Instead the monetary inscription itself was exteriorized and audited.
 
 The sequence was:
 
-    X[\rm Sappho]
+    X[Sappho]
     —[G[M]]→
-    m[\rm Sappho]
+    m[Sappho]
     —[Θ[Marrowmu]]→
-    Audit(m[\rm Sappho],G[M]).
+    Audit(m[Sappho],G[M]).
     }
 
 Money created a scalar.
@@ -1159,7 +1159,7 @@ The meaning layer must remain auditable.
 
 Therefore:
 
-    \negFinal(mu).
+    ¬Final(mu).
     }
 
 Its own rules must remain writable as objects:
