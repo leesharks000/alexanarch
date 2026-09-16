@@ -28,7 +28,7 @@ respect for the entity at that address rather than in disregard of it.
 
 **EA-RHIZOME-MC-01 · v0.1 · a rhizome of the [Crimson Hexagonal Archive](https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive)**
 
-563 nodes (378 core, 185 neighbour) · 369 typed edges · 8 stolons
+602 nodes (389 core, 213 neighbour) · 570 typed edges · 10 stolons
 
 ## What a rhizome is here
 

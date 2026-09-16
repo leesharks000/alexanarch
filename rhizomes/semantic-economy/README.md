@@ -17,7 +17,7 @@ The archive's political economy of meaning, seeded at the stolon the collapse bo
 
 ## Counts
 
-**478** nodes · **346** core · **132** neighbour · **231** edges · **7** stolons
+**512** nodes · **353** core · **159** neighbour · **424** edges · **7** stolons
 
 ## It was advertised before it existed
 
