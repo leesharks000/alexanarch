@@ -63,7 +63,7 @@ keywords:
   {
    "name": "Θ_{M→μ}",
    "type": "m → ⟨m, δ, G_M, ∼_δ, K_M, Δ_D^M, Δ_C^M, R_M, P_M, B_M, C_M, ρ_M⟩",
-   "role": "canonical twelve-element money-grammar translation; the seven-element form in #1617 §13 and the eleven-element MSAL record are abbreviations of it"
+   "role": "canonical twelve-element money-grammar translation, from the inscription; the seven-element form in #1617 is an abbreviation, and the MSAL ledger's thirteen is this operator plus the pre-monetary object, MSAL(X) = TH(m) union {X_E} [corrected 2026-09-16 from 'eleven-element MSAL record']"
   },
   {
    "name": "S_M",
@@ -651,7 +651,7 @@ It is an account of the first price.
 
 ### 9.1 Three arities, reconciled
 
-The operator has been written at three lengths across the archive and they must not be allowed to disagree. *Substrate Sovereignty* (#1617, AXN:06A8) §13 gives a seven-element abbreviated form, ⟨ m,delta,~[d]elta,P,D,L,rho⟩, sufficient for exposition. The Monetary Substrate Audit Ledger records eleven. This protocol's twelve-element form is **canonical**; the shorter forms are abbreviations of it and carry no element the long form lacks. The two elements the abbreviated forms omit are K[M], the capacities money created, and Delta[C][M], the standing loss — and omitting either is what produces a reading of the protocol as anti-money, since without K[M] the audit records only destruction and without Delta[C][M] it records only omission rather than disqualification.
+The operator has been written at three lengths across the archive and they must not be allowed to disagree. *Substrate Sovereignty* (#1617, AXN:06A8) §13 gives a seven-element abbreviated form, ⟨ m,delta,~[d]elta,P,D,L,rho⟩, sufficient for exposition. The Monetary Substrate Audit Ledger carries thirteen, because it begins from the object rather than from the inscription: MSAL(X) = TH(m) union {X_E}. This protocol's twelve-element form is **canonical for the operator**, and the ledger's thirteen is that operator plus the pre-monetary object it was applied to; the seven-element form is an abbreviation and carries no element the longer forms lack. [CORRECTED 2026-09-16, v0.4.1: v0.4 as deposited stated that the ledger records eleven. That figure counted the top-level sections of a draft schema rather than the canonical tuple and was wrong as written. The erratum was raised in EA-MSAL-01 v0.3 and is made here rather than left standing.] The two elements the abbreviated forms omit are K[M], the capacities money created, and Delta[C][M], the standing loss — and omitting either is what produces a reading of the protocol as anti-money, since without K[M] the audit records only destruction and without Delta[C][M] it records only omission rather than disqualification.
 
 ### 9.2 A check the translation performs on every coefficient
 
