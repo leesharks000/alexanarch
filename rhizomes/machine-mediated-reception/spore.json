@@ -6,7 +6,7 @@
  "parent": "crimson-hexagonal-archive",
  "parent_uri": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive",
  "version": "0.1",
- "generated": "2026-09-14T15:40:32Z",
+ "generated": "2026-09-16T20:13:36Z",
  "topology": "three-principle-disagreement",
  "poles": [
   "collapse",
@@ -42,10 +42,10 @@
   "why_not_text_search": "A keyword pass over titles and descriptions returns 361 deposits — model collapse becomes the whole archive because everything eventually touches everything. Selection on defines_concept, a deposit's own declaration, returns a corpus."
  },
  "counts": {
-  "nodes": 1249,
-  "core": 976,
-  "neighbour": 273,
-  "edges": 910,
+  "nodes": 1289,
+  "core": 995,
+  "neighbour": 294,
+  "edges": 1181,
   "stolons": 8
  },
  "adjacent": [
@@ -59,6 +59,8 @@
   "poetics"
  ],
  "generator": "scripts/build_rhizome_mc.py",
+ "grammar": "rhizomes/_grammars/machine-mediated-reception.json",
+ "reemit": "RHIZOME_GRAMMAR=rhizomes/_grammars/machine-mediated-reception.json python3 scripts/build_rhizome_mc.py",
  "source_commit": null,
  "design_principle": "A model-collapse dataset should itself resist collapse: preserve plurality, competing mechanisms, counterexamples, corrections, provenance, and outgoing routes to what it does not contain. It is an anti-collapse dataset in its construction, not only about it."
 }

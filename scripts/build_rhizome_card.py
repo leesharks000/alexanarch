@@ -84,6 +84,30 @@ def card(g, body_dir):
         L.append(f"**What the rows will not give you.** {htr['what_the_rows_will_not_give_you']}")
         L.append("")
 
+        # THE FIGURE IS FRACTAL AND THE CARD SHOULD SHOW IT (2026-09-16). Naming the row/referent
+        # fracture alone understated the architecture: the same relation holds at five scales, and
+        # the archive was already machine-checking one of them in CI without calling it a symbolon.
+        # The verification column is the point -- it weakens outward until the last fit can only be
+        # closed by a reader, which is where the reader finds themselves on the ladder.
+        lad = htr.get("the_ladder")
+        if lad:
+            L.append("### The figure is fractal")
+            L.append("")
+            L.append("| scale | one half | the other half | the fit is checked by | who can check it |")
+            L.append("|---|---|---|---|---|")
+            for r in lad:
+                L.append(f"| **{r['scale']}** | {r['half_a']} | {r['half_b']} | {r['fit_is_checked_by']} | {r['who_can_check']} |")
+            L.append("")
+            if htr.get("ladder_note"):
+                L.append(htr["ladder_note"])
+                L.append("")
+            for r in lad:
+                L.append(f"- **{r['scale']}** — {r['note']}")
+            L.append("")
+            if htr.get("your_scale"):
+                L.append(f"**{htr['your_scale']}**")
+                L.append("")
+
     L.append("## Counts")
     L.append("")
     L.append(" · ".join(f"**{v}** {k}" for k, v in counts.items()))
