@@ -7209,11 +7209,11 @@
     },
     {
       "deposit_number": 1165,
-      "axn": "AXN:049E.UNCLASSIFIED.🔜⏩👇🔬🎹🛡️",
+      "axn": "AXN:049E.UNCLASSIFIED.↙️📏📜⚓📦👁️",
       "hex": "049E",
       "family": "UNCLASSIFIED",
       "emoji": "🔜⏩👇🔬🎹🛡️",
-      "hash": "f6d6b737892deaaa060363e0ee3a53f6b37ec86822507ce5786eff82cd524733",
+      "hash": "dc4f402c4b570a57016965fa9b3b03bd28fe0ac54989c82a6844a1fe3f7a126d",
       "title": "Cleis: more precious to me than all Lydia",
       "creator": "Jack E. Feist; Rebekah Cranes",
       "date": "2026-03-14",
@@ -7226,12 +7226,12 @@
       "protocol_version": "alexanarch-deposit-protocol/v1",
       "axn_canonical": "f6d6b737892deaaa060363e0ee3a53f6b37ec86822507ce5786eff82cd524733",
       "clusters": [
-        "Terminal",
         "Structural",
-        "Gestural",
-        "Instrumental",
-        "Symbolic",
-        "Architectural"
+        "Scriptural",
+        "Scriptural",
+        "Architectural",
+        "Scriptural",
+        "Navigational"
       ],
       "axn_reading": "Closure -> Direction -> Touch -> Method -> Play -> Foundation",
       "minted_at": "2026-07-19T20:29:54Z",
@@ -7614,6 +7614,17 @@
         "previous": "New Human 2",
         "supersedes": "the 2026-06-21 preliminary batch mapping (#866), which assigned 864 deposits and put 371 in one venue",
         "authority": "data/cha-journals.json · datasets/venues/records/"
+      },
+      "reading": "Direction -> Text -> Text -> Foundation -> Text -> Search",
+      "redaction": {
+        "date": "2026-09-18",
+        "reason": "given names of private individuals replaced with initials; the archive is public and permanent and the names are not the operator's to publish",
+        "replacements": {
+          "\\bHaley\\b": 5,
+          "\\bhaley\\b": 2
+        },
+        "hash_before_redaction": "f6d6b737892deaaa060363e0ee3a53f6b37ec86822507ce5786eff82cd524733",
+        "note": "The work, its address, its deposit number and its hex position are unchanged. The AXN emoji and hash are re-derived because the AXN is content-derived; a redaction that left the stored hash pointing at bytes that no longer exist would be a silent corruption of the identifier."
       }
     },
     {

@@ -26,7 +26,7 @@ keywords:
 ---
 
 
-haley  [picture haley, one of our stories]
+H.  [picture H., one of our stories]
 [facebook announcement]
 
 
@@ -183,13 +183,13 @@ will love you.
 *
 
 
-Haley,
+H.,
 
 	you could never know how much you've meant to me. My heart breaks into tiny pieces with the weight of this gift God's given. You are my light song, yr halo hair like sunflowers, leaves yr brown-gold tuft of feathers--sad-precious-sweet, and the love is bittersweet, to know you'll grow. Remember your daddy. i love you so.
 
-Haley I want you, more than anything, to know how much your daddy loves you.
+H. I want you, more than anything, to know how much your daddy loves you.
 
-Dear Haley,
+Dear H.,
 
 	I have not been the strongest man. I have failed, and buckled, and surrendered to life. I have done the wrong thing. I have lied and deceived. I want to be a better man for you, dearheart. I want to love you with a love so full and real it surrounds you, and stays with you forever, wherever you go. I want to love you with a love so great it / clamors to you in all your silences and says to you--"i love you, i love you, i love you." i want the smell of my love to linger in your hair, + on your little purple dress so that it covers you all day long. i want to love you with a love so real, it comes to you in your dark hours, when the sting is too much, and when the lights are out and you feel like life has forgotten you, and the tiny day of your oh-so-fading life--all our lives so fleeting--and says to you, "light, comfort, a bandage. a song to fill you up, a reminder that i'm with you." life so brief, baby girl. here and gone. i will be there for you.
 
@@ -535,7 +535,7 @@ released
 *
 
 
-by Haley--(transcription)
+by H.--(transcription)
 
 Once upon a time, there was a Lady named Aunt Amy. She was going to walk on the stairs, and she knew why run on a treadmill she was having a baby, but she knew why that she played and
 
@@ -687,7 +687,7 @@ in a hospital room npw sleeping on the chair my wife with her breast out and our
 
 		Dear All,
 
-I had planned on being back for teaching tomorrow, but early Wednesday morning we took Haley to the emergency room with a fever, and have been here since. We should be home tomorrow afternoon, but not in time for teaching.
+I had planned on being back for teaching tomorrow, but early Wednesday morning we took H. to the emergency room with a fever, and have been here since. We should be home tomorrow afternoon, but not in time for teaching.
 
 I will be back next week, but until then I need to give you some direction for your final paper. I have been remiss in my duties, as I know that you are all eagerly bursting to begin work on your papers. I am sure that you want to spend as much time as possible in diligent labor, and I would hate to be the one to stand in your way.
 

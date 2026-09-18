@@ -43,7 +43,24 @@ REG = ROOT / 'data' / 'registry.json'
 
 # ordered: longest / most specific first
 MACROS = [
-    (r'\\boxed\{', ''),
+
+    (r'\\begin\{[bpvBV]?matrix\}', '\n'),
+    (r'&', '  '),
+
+    (r'\\end\{[bpvBV]?matrix\}', ''),
+    (r'\\dot\{([^{}]*)\}', r'd\1/dt'),
+    (r'\\dot\s+([A-Za-z](?:\[[^\]]*\]|_[A-Za-z0-9]+)?)', r'd\1/dt'),
+    (r'\\dot\\([A-Za-z]+)', r'd\\\1/dt'),
+
+    (r'\\ddot\{([^{}]*)\}', r'd2\1/dt2'),
+    (r'\\boldsymbol\s*', ''),
+    (r'\\mathsf\{([^{}]*)\}', r'\1'),
+    (r'\\mathsf\s+([A-Za-z0-9]+)', r'\1'),
+    (r'\\mathbb\s+([A-Za-z])', r'\1'),
+    (r'\\mathfrak\s+([A-Za-z])', r'\1'),
+    (r'\\mathcal\s*', ''),
+    (r'\\(?:Bigg|bigg|Big|big)[lrm]?', ''),
+    (r'\\operatorname\*?\{([^{}]*)\}', r'\1'),
     (r'\\begin\{[a-z*]+\}', ''),
     (r'\\end\{[a-z*]+\}', ''),
     (r'\\widehat\s*', 'est. '),
@@ -53,7 +70,7 @@ MACROS = [
     (r'\\mathcal\s+([A-Za-z])', r'\1'),
     (r'\\getau', ' >= tau'),
     (r'\\simBernoulli', ' ~ Bernoulli'),
-    (r'\\in(?=[A-Za-z])', ' \u2208 '),
+    (r'\\in(?=[A-Za-z])(?!fty)(?!f)(?!t)', ' \u2208 '),
     (r'\\succ', ' > '),
     (r'\\xrightarrow\{([^{}]*)\}', ' \u2014[\\1]\u2192 '),
     (r'\\xleftarrow\{([^{}]*)\}', ' \u2190[\\1]\u2014 '),
@@ -73,6 +90,16 @@ MACROS = [
     (r'\\\\', '\n'),
 ]
 SYMBOLS = {
+    r'\\ge': '>=', r'\\le': '<=', r'\\ell': 'l', r'\\varnothing': '{}',
+    r'\\iff': '<=>', r'\\Longleftrightarrow': '<=>', r'\\Leftrightarrow': '<=>',
+    r'\\bigcup': 'union', r'\\bigcap': 'intersection', r'\\subsetneq': 'strict subset',
+    r'\\supseteq': 'superset', r'\\supset': 'superset',
+    r'\\sup': 'sup', r'\\inf': 'inf', r'\\lim': 'lim', r'\\ln': 'ln',
+    r'\\argmin': 'argmin', r'\\argmax': 'argmax',
+    r'\\downarrow': ' decreasing', r'\\uparrow': ' increasing',
+    r'\\vartheta': 'theta', r'\\Lambda': 'Lambda', r'\\Gamma': 'Gamma',
+    r'\\not': 'not ', r'\\nrightarrow': '-/->', r'\\nsubseteq': 'not a subset of',
+    r'\\kappa': 'kappa', r'\\eta': 'eta', r'\\zeta': 'zeta', r'\\xi': 'xi',
     r'\\times': '×', r'\\cdot': '·', r'\\cdots': '...', r'\\dots': '...', r'\\ldots': '...',
     r'\\leq': '<=', r'\\geq': '>=', r'\\neq': '!=', r'\\approx': '≈', r'\\sim': '~',
     r'\\equiv': '=', r'\\propto': '∝', r'\\pm': '±', r'\\ll': '<<', r'\\gg': '>>',
@@ -123,14 +150,57 @@ def _inner(s, _passes=2):
     return s
 
 
+def _strip_wrapper(s, macro):
+    """Remove \\macro{...} keeping the contents, matching braces properly.
+
+    A regex cannot do this: \\boxed{} blocks in real deposits wrap multi-line
+    aligned environments containing their own braces, so a one-level pattern
+    leaves the closing brace orphaned on its own line. Every boxed display in
+    EA-TRANSITION-ENTROPIC-SYSTEMS produced such an orphan.
+    """
+    tag = '\\\\' + macro
+    out, i = [], 0
+    while True:
+        k = s.find('\\' + macro, i)
+        if k < 0:
+            out.append(s[i:]); break
+        j = k + 1 + len(macro)
+        while j < len(s) and s[j] in ' \n\t':
+            j += 1
+        if j >= len(s) or s[j] != '{':
+            out.append(s[i:j]); i = j; continue
+        depth, m = 1, j + 1
+        while m < len(s) and depth:
+            if s[m] == '{': depth += 1
+            elif s[m] == '}': depth -= 1
+            m += 1
+        out.append(s[i:k]); out.append(s[j+1:m-1] if depth == 0 else s[j+1:])
+        i = m
+    return ''.join(out)
+
 def _one_pass(s):
+    for _m in ('boxed',):
+        s = _strip_wrapper(s, _m)
     for entry in MACROS:
         if len(entry) == 3:
             s = re.sub(entry[0], entry[1], s, flags=entry[2])
         else:
             s = re.sub(entry[0], entry[1], s)
-    for pat, rep in sorted(SYMBOLS.items(), key=lambda kv: -len(kv[0])):
+    # Guarded pass: the lookahead stops a short macro matching inside a longer
+    # one (\\ge inside \\geq). It also, however, blocks a legitimate match when the
+    # NEXT macro has already been converted -- source \\ge\\rho becomes \\ge + rho,
+    # and the guard then sees a letter and refuses, leaving \\gerho in the body.
+    # That defect produced 16 malformed joins in EA-TRANSITION-ENTROPIC-SYSTEMS
+    # (\\gerho, \\capL, \\timesA, \\notinF, \\subseteqC, \\midl, ...) and had
+    # previously been patched one instance at a time (see \\getau in MACROS).
+    # The length-descending sort already consumes every longer macro first, so a
+    # second UNGUARDED pass over the same ordered list cleans up the joins without
+    # risking a short macro eating a long one.
+    ordered = sorted(SYMBOLS.items(), key=lambda kv: -len(kv[0]))
+    for pat, rep in ordered:
         s = re.sub(pat + r'(?![A-Za-z])', rep.replace('\\', '\\\\'), s)
+    for pat, rep in ordered:
+        s = re.sub(pat, rep.replace('\\', '\\\\'), s)
     # subscripts / superscripts: X_{i-1} -> X_(i-1); X^{*} -> X*
     s = re.sub(r'\^\{\\?\*\}', '*', s)
     s = re.sub(r'\^\\ast', '*', s)

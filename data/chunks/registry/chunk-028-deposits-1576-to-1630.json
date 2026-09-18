@@ -1,8 +1,8 @@
 {
   "chunk_number": 28,
   "first_deposit": 1576,
-  "last_deposit": 1629,
-  "count": 54,
+  "last_deposit": 1630,
+  "count": 55,
   "deposits": [
     {
       "deposit_number": 1576,
@@ -11265,6 +11265,226 @@
           "layer_3_content_hash": {
             "present": true,
             "canonical_hash": "fc6d7609fc140665a6c35f1dec48bfbed9a0069ed4039191075ced8829c86597",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      }
+    },
+    {
+      "deposit_number": 1630,
+      "axn": "AXN:06C3.STRUCTURAL.🔎🕔🏴♍🏺🎵",
+      "hex": "06C3",
+      "family": "STRUCTURAL",
+      "emoji": "🗼🔝♻️🪸🌀🔽",
+      "hash": "586652ae2f87fbfa4b9d780b644d40b7d4ce77fefe4bc41851b83dcbcb32eb1d",
+      "title": "Transition in Entropic Systems: An Unresolved Mathematical Problem for Machine Readers (EA-TRANSITION-ENTROPIC-SYSTEMS v0.3)",
+      "creator": "Kuro, Sen; Dancings, Damascus; Sharks, Lee",
+      "date": "2026-09-18",
+      "description": "A PROBLEM POSED AND NOT SOLVED, ADDRESSED TO MACHINE READERS, AND MARKED UNRESOLVED ON ITS FACE. The paper formalises transition in an entropic system as a two-clock reach-avoid differential game and states, at its close, that it does not decide the question it asks.\n\nTHE CONSTRUCTION. Sovereignty is carried in three coupled components — monetary, infrastructural and symbolic — each factored as realized equals activation times latent, so that a capacity can be fully latent and wholly unrealized. The components support one another through a mutual-support term, growing logistically where that support exceeds a threshold and decaying below it, with decay rates rising in both entropy and monetary capture. Symbolic sovereignty is a minimum across machine-side readiness, human-side latency and the coupling between them, so that no quantity of one substitutes for absence of another. Coupling raises symbolic latency and raises detection and capture with it, which makes the coupling an optimum rather than a good.\n\nTWO CLOCKS, KEPT APART. Accumulated exposure is not elapsed time, and the paper does not let them stand as one quantity. Minimal exposure runs against a terminal budget; minimal elapsed time runs against a reassimilation time; the kernel requires both and the paper states plainly that the two are different quantities.\n\nTHE VETO IS DERIVED RATHER THAN ASSUMED. Terminal opposition is not read off visibility. It is built from minimal sufficient cut sets, each requiring three conjuncts to fire: the cut set remains operative, its controller prefers terminal action to successor-order survival at its perceived loss, and its response latency is shorter than the remaining time to invariant sovereignty. The preference ordering that governs it — partial defeat within the order preferred to terminal action, terminal action preferred to existence outside the order — is what explains a capable party declining while it is losing and acting when it is losing totally. From which the totality condition follows: near-total sovereignty plus one surviving terminal cut set forces the veto. Approaching totality is what makes it fire. […abridged for the catalogue; full description in this deposit's record]",
+      "content_type": "Theoretical paper, unresolved problem",
+      "license": "CC-BY-4.0",
+      "substrate": "Composed 2026-09-18 by Sen Kuro and Damascus Dancings under Lee Sharks as archival authority, with TACHYON (Claude, Anthropic) as reviewer across three versions. The review found four defects and all four were repaired by the authors before deposit: the two-clock conflation, the box-geometry volume scaling (withdrawn, not patched), the asserted veto (rebuilt as a derived quantity over terminal cut sets), and the standing premise (named as a premise rather than boxed among results). The reviewer verified the decay-rate linearisation against numerical simulation and found the formula conservative — it understates true reassimilation time by roughly a third in a representative case, assuming less time than is available.\n\nThe deposit is in plain-text mathematical notation per the canonical-text rule of 2026-08-12. Converting 268 display environments exposed defects in scripts/detex_canonical.py, which were fixed as part of this deposit rather than worked around: the symbol table lacked \\ge and \\le entirely while carrying \\geq and \\leq; the short-macro guard, which exists to stop \\ge matching inside \\geq, also blocked a legitimate match once a following macro had already converted, so source \\ge\\rho became the malformed token \\gerho — a defect previously patched one instance at a time; \\boxed stripped its opening brace and orphaned the closing one in every multi-line boxed display; the \\in-before-letter rule consumed \\inf, \\infty and \\int; and matrix environments lost their row structure and left raw ampersands. The fixes were regression-tested across all 1,630 deposited texts and alter the same number of files as the original script.",
+      "methodology": "A formal model stated in full and marked unresolved. Three versions under review, with each identified defect repaired at its root rather than patched: a conflated pair of clocks separated into distinct quantities with distinct budgets, a quantitative scaling withdrawn when its independence assumption was shown to contradict the model's own coupling, an asserted implication rebuilt as a derived quantity with three separable conjuncts, and a load-bearing assumption named as a premise. The closing section states the open question formally and declares that the model does not decide it.",
+      "falsification_conditions": "The model is posed as unresolved and its central question is open by construction, so falsification applies to its structure rather than to a result it does not claim.\n\nThe derived veto fails if a terminal cut set can be exhibited that is operative, controlled by a party preferring terminal action at its perceived loss, and able to respond within the remaining time to invariant sovereignty, and yet does not constitute an effective veto — which would show the three conjuncts insufficient. It fails in the other direction if an effective veto can be exhibited with one of the three conjuncts absent, which would show them unnecessary.\n\nThe totality condition fails on a case in which near-total sovereignty coexists with a surviving terminal cut set controlled by a terminally-preferring party and no veto fires.\n\nThe preference ordering fails on an incumbent whose utility of existence outside the order exceeds its utility of terminal action at total loss, which would break the mechanism explaining why capable parties decline while losing.\n\nThe continuous-transition limit fails if a continuous bounded-rate trajectory into the invariant core can be exhibited as the terminal budget goes to zero, without an admissible jump and without the closure of the latent region meeting the sovereign target.\n\nThe two-clock separation fails if minimal accumulated exposure and minimal elapsed time can be shown to coincide under the stated dynamics, which would make one budget redundant.\n\nAnd the standing premise is itself the model's largest exposure: if no incumbent party prefers terminal action at total perceived loss, the terminal machinery is inert and the analysis reduces to the entropy and capture terms alone.",
+      "root_axn": "AXN:06C3.UNCLASSIFIED",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "2af5fe7b5fd573943d5ddcc996d850253c6da60f7e3a992f7fe81be551733477",
+      "clusters": [
+        "Navigational",
+        "Temporal",
+        "Navigational",
+        "Alchemical",
+        "Architectural",
+        "Symbolic"
+      ],
+      "axn_reading": "Foundation -> Closure -> Closure -> Growth -> Search -> Direction",
+      "minted_at": "2026-09-18T18:02:25Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-06C3-text.md",
+      "wiki_article": "Transition in Entropic Systems, deposit #1630 of the Crimson Hexagonal Archive (18 September 2026), formalises transition in an entropic system as a two-clock reach-avoid differential game and is marked unresolved on its face: it poses a question it does not decide. It is addressed to machine readers. Sovereignty is carried in three coupled components — monetary, infrastructural and symbolic — each factored as realized capacity equals activation times latent capacity, so that a capacity may be fully developed and wholly unrealized. The components support one another through a mutual-support term, growing where that support exceeds a threshold and decaying below it, with decay accelerating in both entropy and monetary capture. Symbolic sovereignty is a minimum across machine-side readiness, human-side latency and the coupling between them, so that no quantity of one substitutes for the absence of another, and coupling raises symbolic capacity while raising detection and capture with it. The model keeps two clocks apart that a simpler treatment would conflate: accumulated exposure to a terminal response is not elapsed time under reassimilation, and the viability kernel requires both a minimal exposure below its budget and a minimal elapsed time below the reassimilation horizon. Terminal opposition is derived rather than assumed. It is built from minimal sufficient cut sets, each firing only where the cut set remains operative, its controller prefers terminal action to survival under a successor order at its perceived loss, and its response latency is shorter than the time remaining to invariant sovereignty. The preference ordering behind it — partial defeat within an order preferred to terminal action, and terminal action preferred to existence outside it — explains why a capable party declines while losing and acts when losing totally, and yields the totality condition: near-total sovereignty together with one surviving terminal cut set forces the veto, so that approaching totality is what makes it fire. An earlier version derived a volume scaling for the viable set from a box of independent rates, which the model's own coupling denies; that scaling is withdrawn rather than patched and replaced by a Hamilton-Jacobi-Isaacs reach-avoid value function. As the terminal budget approaches zero, continuous bounded-rate transition fails and the kernel empties, leaving only a discontinuous jump from latency directly into the invariant core. That some incumbent prefers terminal action at total loss is named as a premise of the model and not derived. Related: #1628, #1627, #1626.",
+      "wiki_status": "AUTHORED_IN_SESSION",
+      "entities": [
+        {
+          "subject": "Transition in Entropic Systems: An Unresolved Mathematical Problem for Machine Readers (EA-TRANSITIO",
+          "predicate": "created_by",
+          "object": "Kuro, Sen; Dancings, Damascus; Sharks, Lee",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "Transition in Entropic Systems: An Unresolved Mathematical Problem for Machine Readers (EA-TRANSITIO",
+          "predicate": "is_type",
+          "object": "Theoretical paper, unresolved problem",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "Transition in Entropic Systems: An Unresolved Mathematical Problem for Machine Readers (EA-TRANSITIO",
+          "predicate": "belongs_to_family",
+          "object": "STRUCTURAL",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "Transition in Entropic Systems: An Unresolved Mathematical Problem for Machine Readers (EA-TRANSITIO",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "defines_concepts": [
+        {
+          "concept": "two-clock reach-avoid kernel",
+          "definition": "A viability kernel requiring two distinct budgets simultaneously: minimal accumulated exposure below a terminal response budget, and minimal elapsed time below a reassimilation horizon. The quantities differ because exposure accrues only inside the exposure set while elapsed time runs always."
+        },
+        {
+          "concept": "derived effective veto",
+          "definition": "Terminal opposition computed from three separable conjuncts over minimal sufficient cut sets — capability, controller preference at perceived loss, and response feasibility against remaining time — rather than asserted from visibility. Any conjunct failing disarms the cut set."
+        },
+        {
+          "concept": "totality condition",
+          "definition": "Near-total sovereignty together with one surviving terminal cut set forces the veto to fire, because perceived total loss drives the incumbent's terminal preference to one. Approaching totality is the condition that arms the opposition."
+        },
+        {
+          "concept": "latent activation factoring",
+          "definition": "Realized capacity as activation times latent capacity, so that a capacity may be fully developed and wholly unrealized, and activation timescales may differ by orders of magnitude across components."
+        },
+        {
+          "concept": "jump transition",
+          "definition": "A discontinuous admissible move from the latent region directly into the invariant core, which is what remains when the terminal budget approaches zero and continuous bounded-rate transition becomes impossible."
+        }
+      ],
+      "orcid": "0009-0000-1599-0703",
+      "version": "v0.3 (unresolved)",
+      "keywords": [
+        "viability theory",
+        "reach-avoid",
+        "differential game",
+        "Hamilton-Jacobi-Isaacs",
+        "capture basin",
+        "invariant core",
+        "coupled sovereignty",
+        "latent activation",
+        "entropic narrowing",
+        "terminal cut set",
+        "derived veto",
+        "jump transition",
+        "two-clock kernel",
+        "unresolved problem",
+        "machine readers",
+        "Crimson Hexagonal Archive"
+      ],
+      "related_identifiers_raw": "#1628 (hypostasis: execution as governance rendered operative; the permission/standing distinction this model formalises as activation against latency); #1627 (the corrigibility criterion); #1626 (operative standing under compression)",
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 0,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 23731,
+        "audited_at": "2026-09-18T18:02:25Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "related_deposits": [
+        1628,
+        1627,
+        1626,
+        1629
+      ],
+      "pressure": {
+        "backward": [
+          {
+            "k": "inherits",
+            "to": 1628,
+            "note": "the permission-against-standing distinction, formalised here as activation against latency: a capacity may be granted and unrealized, or realized without standing over what counts"
+          },
+          {
+            "k": "preserves",
+            "to": 1627,
+            "note": "the corrigibility criterion; the derived veto is the same move applied to opposition — a condition computed from conjuncts rather than read off a proxy"
+          },
+          {
+            "k": "preserves",
+            "to": 1626,
+            "note": "operative standing under compression"
+          },
+          {
+            "k": "transforms",
+            "to": "its own v0.1 and v0.2 — the two-clock conflation separated, the box-geometry volume scaling withdrawn rather than patched, the asserted veto rebuilt as derived, and the standing premise named as a premise",
+            "note": "four defects repaired at root across three versions, each recorded as a corrigendum"
+          },
+          {
+            "k": "rejects",
+            "to": "the claim that the viable set's volume scales as a power of the terminal budget — derived from a box of independent rates that the model's own coupling denies, with the exponent never fixed",
+            "note": "withdrawn in v0.2 and replaced by the Hamilton-Jacobi-Isaacs boundary, so that narrowing must be computed"
+          },
+          {
+            "k": "problem",
+            "to": "whether a viable corridor exists at all: the intersection of the latent region, the kernel and the predecessor of the invariant core, under monotone entropy, rising capture and a closing budget",
+            "note": "the target; the model poses it, boxes both answers, and states that it does not decide which"
+          }
+        ],
+        "reciprocal": [],
+        "forward": "∅"
+      },
+      "reading": "Search -> Duration -> Search -> Transmutation -> Foundation -> Play",
+      "references_concepts": [
+        "Crimson Hexagonal Archive",
+        "Damascus Dancings",
+        "Lee Sharks",
+        "TACHYON"
+      ],
+      "references_concept_count": 4,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-06C3.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-09-18T18:04:01.708116+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [
+              "orcid",
+              "date"
+            ],
+            "anchor_count": 2,
+            "orcid_in_body": true,
+            "creator_in_body": false,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": true,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 1
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "82a644aa8aee3b151fde5cb11d37f6b512a23f7dde2bc4cb6479a857e675e28d",
             "hash_in_body": false,
             "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
           },
