@@ -6221,9 +6221,9 @@ waiting to reply until i could send you a revised edition of Pearl,
 which just isn't happening.
 
                i have to poop. i am tired because i just finished a
-double shift at the group home. sitting on couch, my daughter zoe
-playing kindle on my left, daughter haley playing minecraft PS3 on my
-right, stepson gio playing PS3 on the computer chair, upstairs messy,
+double shift at the group home. sitting on couch, my daughter Z.
+playing kindle on my left, daughter H. playing minecraft PS3 on my
+right, stepson G. playing PS3 on the computer chair, upstairs messy,
 floor cluttered, A/C unit wheezing, disconsolate, my hair-sad head,
 depressed for no good reason---stuck in a pit because of r******dness.
 
