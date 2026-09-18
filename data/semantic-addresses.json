@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-09-18T10:54:07Z",
+  "regenerated_at": "2026-09-18T13:33:23Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "dd2db254b9d871a863e20d2f90190829851dc00dad7a205141924f9fc34bf47e",
+    "mm-main-capture": "c2ebea3b38ab9471598f0639358bb255ff92f672d45c592f81279d53701062d1",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2221,
-  "total_observations": 523,
+  "total_addresses": 2222,
+  "total_observations": 524,
   "class_counts": {
     "subjunctive": 1744,
-    "observed_address": 458,
+    "observed_address": 459,
     "verified_non_address": 19
   },
   "type_counts": {
-    "unmatched": 1586,
+    "unmatched": 1587,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -58667,6 +58667,32 @@
       ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-09-15",
+      "latest_status": "CAPTURE"
+    },
+    "whats the constitution of the semantic economy?": {
+      "canonical_query": "whats the constitution of the semantic economy?",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-18",
+          "status": "CAPTURE",
+          "source_format": null,
+          "section": "Provenance -- laundering through abstraction",
+          "slug": "constitution-semantic-economy-provenance-laundering-chatgpt-20260918",
+          "gallery_url": "https://godkinggoogle.vercel.app/captures/#constitution-semantic-economy-provenance-laundering-chatgpt-20260918",
+          "mirror_gallery_url": "https://leesharks.com/captures/#constitution-semantic-economy-provenance-laundering-chatgpt-20260918",
+          "details_excerpt": "PROVENANCE LAUNDERING THROUGH ABSTRACTION: A COMPOSITION ORPHANS ITS OWN PARAPHRASE AND THEN ASSIGNS THE ORPHAN TO A THIRD PARTY. Seven rounds. The mechanism is new to the registry and is distinct from provenance erasure"
+        }
+      ],
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-18",
       "latest_status": "CAPTURE"
     },
     "white stone": {
