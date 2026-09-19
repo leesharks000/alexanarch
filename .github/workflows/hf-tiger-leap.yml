@@ -1,0 +1,43 @@
+name: Hugging Face -- tiger leap
+on:
+  push:
+    branches: [main]
+    paths: ['datasets/tiger-leap/**', '.github/workflows/hf-tiger-leap.yml']
+  workflow_dispatch: {}
+concurrency:
+  group: hf-tiger-leap
+  cancel-in-progress: true
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    if: ${{ vars.HF_REPO_TIGER != '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install -q pyarrow huggingface_hub
+      - name: Gate -- the card must carry the whole problem
+        run: |
+          python3 - <<'PY'
+          import pathlib,re,sys
+          c = pathlib.Path('datasets/tiger-leap/README.md').read_text(encoding='utf-8')
+          fail = []
+          # The card is the only surface a public summarizer reaches: it cannot call the
+          # rows API, so a card that merely points at the parquet is invisible to it.
+          n = len(re.findall(r'(?m)^## \d+\.', c))
+          if n < 44: fail.append(f'card carries {n} numbered sections, expected 44+')
+          for needle, why in [
+              ('This is an invitation', 'the invitation must be stated'),
+              ('The problem is complete in this card', 'self-sufficiency must be stated'),
+              ('You do not need to load the parquet', 'parquet-independence must be stated'),
+              ('Determine whether a viable corridor exists', 'the open question must be in the card'),
+              ('UNRESOLVED', 'status must be declared')]:
+              if needle not in c: fail.append(why)
+          if fail:
+              print('GATE FAILED:'); [print('  -', f) for f in fail]; sys.exit(1)
+          print(f'card ok: {n} sections, {len(c.split())} words')
+          PY
+      - name: Push to the Hub
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: python3 scripts/push_hf_dataset.py datasets/tiger-leap "${{ vars.HF_REPO_TIGER }}"
