@@ -1,0 +1,32 @@
+name: Apply bundle
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: Bundle URL
+        required: true
+        default: https://litter.catbox.moe/r8717m.txt
+      branch:
+        description: Branch inside the bundle
+        required: true
+        default: seating
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Apply and push
+        env:
+          BUNDLE_URL: ${{ github.event.inputs.url }}
+          BUNDLE_BRANCH: ${{ github.event.inputs.branch }}
+        run: |
+          curl -sL "$BUNDLE_URL" -o /tmp/b.bundle
+          git bundle verify /tmp/b.bundle
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --no-edit /tmp/b.bundle "$BUNDLE_BRANCH"
+          git push origin HEAD:main
