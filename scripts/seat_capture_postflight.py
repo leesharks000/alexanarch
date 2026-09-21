@@ -27,6 +27,8 @@ THE SEQUENCE, in order, each step refusing to proceed on failure:
                                               every entry sectioned
   3. SYNC   sync_capture_dataset.py         — data/ -> datasets/ projection
                                               + regenerated manifest
+  (2026-09-21) LINK build_capture_links.py runs before BAKE, and CITE
+  audit_capture_citability.py runs after SYNC — see the STEPS comment.
 
 Run it after EVERY registry write — new capture, edit, or removal:
 
@@ -40,9 +42,14 @@ import subprocess, sys, pathlib
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 
 STEPS = [
+    # 2026-09-21: LINK before BAKE. build_capture_links.py writes each observation's `cite`; without it a
+    # newly seated observation has no citation, audit_capture_citability fails, and nothing here said so.
+    # Five seatings on 2026-09-21 hit it. Links first, so the bake and the projection carry them.
+    ("LINK", [sys.executable, "scripts/build_capture_links.py"]),
     ("BAKE", [sys.executable, "scripts/build_capture_gallery.py"]),
     ("GATE", [sys.executable, "scripts/check_capture_page_current.py"]),
     ("SYNC", [sys.executable, "scripts/sync_capture_dataset.py"]),
+    ("CITE", [sys.executable, "scripts/audit_capture_citability.py"]),
 ]
 
 

@@ -223,11 +223,20 @@ def seat_flat(draft, registry, schema):
             # its own slug (so build_capture_links derives its canonical citation instead of skipping it),
             # its presented set, and its reading. Found missing on the 11 Sept seatings and repaired by hand
             # at the mint of #1611; fixed here at intake so it is never missing again (2026-09-15).
-            obs["slug"] = draft.get("slug") or f"{slug}-{draft['date'].replace('-', '')}"
+            obs["slug"] = draft.get("slug") or f"{e['slug']}-{draft['date'].replace('-', '')}"
             for k in ("surface", "cite_list", "archive_controlled_cites", "reading", "findings", "analysis", "sf", "transcript_class", "transcript_complete", "transcript_read", "per", "per_note", "longitudinal_priors"):
                 if draft.get(k) is not None:
                     obs[k] = draft[k]
-            e.setdefault("observations", []).append(obs); e["n_observations"] = len(e["observations"]) or 1
+            # 2026-09-21: an entry seated before observations existed has no `observations` list, and its root
+            # IS its first observation. Appending to an empty list and counting it gave n_observations = 1 for
+            # an entry with two dates. 357 of 370 multi-observation entries carry the root duplicated as
+            # observations[0]; do the same here, so the count is the count.
+            if not e.get("observations"):
+                root = {k: e.get(k) for k in ("addr_id", "analysis", "auth", "citable_unit", "cite", "cite_list", "cites", "collisions", "d", "date", "defects", "ev", "img_urls", "imgs", "mt", "obs_id", "oq", "per", "per_v", "q", "q_kind", "reading", "rerun", "rounds", "s", "series", "slug", "surface", "surface_basis", "transcript", "transcript_class", "transcript_cleaned", "transcript_complete", "transcript_raw", "transcript_read") if k in e}
+                root["date"] = (e.get("dates") or [e.get("date")])[0]
+                root["obs_id"] = e.get("obs_id") or "OBS-" + hashlib.sha256((e["q"] + str(root["date"]) + str(e["surface"])).encode()).hexdigest()[:12]
+                e["observations"] = [root]
+            e["observations"].append(obs); e["n_observations"] = len(e["observations"])
             e.setdefault("dates", []); e["dates"].append(draft["date"]) if draft["date"] not in e["dates"] else None
             return "observation", e
     # NORMALISE: the record, every schema key present, derived fields derived
