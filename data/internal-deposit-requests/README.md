@@ -44,15 +44,27 @@ Example:
     "related_attested_none": false,
     "entities": [],
     "entity_status": "in-session",
-    "lexical_attested_none": true
-  }
+    "lexical_attested_none": false
+  },
+  "lexical_mints": [
+    {
+      "term": "example term",
+      "definition": "A definition authored in-session.",
+      "type": "concept"
+    }
+  ]
 }
 ```
 
-The packet cannot alter mint-owned identity fields. The normal completeness
-gate still requires wiki substance, concepts-or-attested-none,
-related-or-attested-none, lexical receipt-or-attested-none, citation edges,
-render integrity, and declared files.
+The packet cannot alter mint-owned identity fields. `lexical_mints` are seated
+after the AXN and deposit number exist, so the packet supplies only semantic
+content (`term`, `definition`, optional `type`); the bridge supplies the
+deposit number, title, date, and AXN and writes both lexical registries. A packet
+must not combine lexical mints with `lexical_attested_none: true`.
+
+The normal completeness gate still requires wiki substance,
+concepts-or-attested-none, related-or-attested-none, lexical receipt-or-attested-none,
+citation edges, render integrity, and declared files.
 
 This bridge deliberately has **no model API key**. The already-running session
 does the semantic work; GitHub Actions supplies only the missing shell.
