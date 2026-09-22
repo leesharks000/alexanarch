@@ -105,6 +105,12 @@ jobs:
           python3 scripts/apply_internal_deposit_packet.py --deposit-number "${{ steps.mint.outputs.deposit_number }}" --packet "${{ steps.req.outputs.req }}/packet.json"
           cp /tmp/familiarization-receipt.txt "${{ steps.req.outputs.req }}/familiarization-receipt.txt"
 
+      - name: Canonicalize minted body math
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/detex_canonical.py --deposits "${{ steps.mint.outputs.deposit_number }}" --apply
+
       - name: Build citation and concept edges
         shell: bash
         run: |
@@ -112,7 +118,6 @@ jobs:
           python3 scripts/citation_extractor.py
           python3 scripts/extract_citations_external.py
           python3 scripts/concept_backlink.py
-          python3 scripts/build_lexical_overlay.py
           python3 scripts/build_lexical_overlay.py
 
       - name: Run canonical Transport D pipeline
