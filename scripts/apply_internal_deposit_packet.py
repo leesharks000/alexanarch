@@ -48,8 +48,6 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 REGISTRY = ROOT / "data" / "registry.json"
-LEXICAL_JSON = ROOT / "data" / "lexical-minting-registry.json"
-LEXICAL_CSV = ROOT / "data" / "lexical-minting-registry.csv"
 LMR_JSON = ROOT / "data" / "lexical-minting-registry.json"
 LMR_CSV = ROOT / "data" / "lexical-minting-registry.csv"
 
@@ -246,63 +244,6 @@ def main() -> None:
 
     for key, value in patch.items():
         entry[key] = value
-
-    lexical_mints = packet.get("lexical_mints") or []
-    if not isinstance(lexical_mints, list):
-        raise SystemExit("lexical_mints must be an array when present")
-    if lexical_mints and patch.get("lexical_attested_none") is True:
-        raise SystemExit("lexical_mints supplied while lexical_attested_none is true")
-
-    if lexical_mints:
-        lmr = json.loads(LEXICAL_JSON.read_text(encoding="utf-8"))
-        terms = lmr.setdefault("terms", [])
-        new_rows = []
-        seen = {(str(t.get("term", "")).strip().casefold(), t.get("defined_in_deposit"))
-                for t in terms if isinstance(t, dict)}
-        for item in lexical_mints:
-            if not isinstance(item, dict):
-                raise SystemExit("each lexical_mints item must be an object")
-            term = str(item.get("term") or "").strip()
-            definition = str(item.get("definition") or "").strip()
-            kind = str(item.get("type") or "concept").strip()
-            if not term or not definition:
-                raise SystemExit("each lexical mint requires non-empty term and definition")
-            key = (term.casefold(), args.deposit_number)
-            if key in seen:
-                continue
-            row = {
-                "term": term,
-                "definition": definition,
-                "deposit_number": args.deposit_number,
-                "defined_in_deposit": args.deposit_number,
-                "deposit_title": entry.get("title"),
-                "defined_in_title": entry.get("title"),
-                "type": kind,
-                "minted": True,
-                "axn": entry.get("axn"),
-            }
-            terms.append(row)
-            new_rows.append(row)
-            seen.add(key)
-
-        if new_rows:
-            for count_key in ("total_terms", "total"):
-                if count_key in lmr and isinstance(lmr[count_key], int):
-                    lmr[count_key] = len(terms)
-            LEXICAL_JSON.write_text(
-                json.dumps(lmr, indent=2, ensure_ascii=False) + "\n",
-                encoding="utf-8",
-            )
-            if LEXICAL_CSV.exists():
-                with LEXICAL_CSV.open("r", encoding="utf-8", newline="") as fh:
-                    reader = csv.reader(fh)
-                    header = next(reader, [])
-                if header:
-                    with LEXICAL_CSV.open("a", encoding="utf-8", newline="") as fh:
-                        writer = csv.DictWriter(fh, fieldnames=header, extrasaction="ignore")
-                        for row in new_rows:
-                            writer.writerow({k: row.get(k, "") for k in header})
-        entry["lexical_attested_none"] = False
 
     wiki = str(entry.get("wiki_article") or "").strip()
     if wiki and len(wiki.split()) < 60:
