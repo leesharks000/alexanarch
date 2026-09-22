@@ -1,0 +1,51 @@
+name: Internal deposit post-merge verification
+
+on:
+  pull_request:
+    branches: [main]
+    types: [closed]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    if: >
+      github.event.pull_request.merged == true &&
+      startsWith(github.event.pull_request.head.ref, 'internal-deposit/') &&
+      startsWith(github.event.pull_request.title, 'internal deposit: #')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout merged main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Resolve deposit number
+        id: deposit
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          N=$(printf '%s' "$PR_TITLE" | sed -nE 's/^internal deposit: #([0-9]+).*/\1/p')
+          test -n "$N"
+          echo "number=$N" >> "$GITHUB_OUTPUT"
+
+      - name: Familiarize
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/bootstrap_familiarization.py             --strict             --instance "internal-deposit postmerge run ${{ github.run_id }}"
+
+      - name: Verify live content and announce
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/deposit_pipeline.py             --deposit-number "${{ steps.deposit.outputs.number }}"             --stages verify,announce
