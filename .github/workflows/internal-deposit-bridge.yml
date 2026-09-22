@@ -5,7 +5,8 @@ on:
     branches:
       - internal-deposit/**
     paths:
-      - data/internal-deposit-requests/**
+      - 'data/internal-deposit-requests/**/body.md'
+      - 'data/internal-deposit-requests/**/packet.json'
 
 permissions:
   contents: write
@@ -92,6 +93,7 @@ jobs:
           python3 scripts/citation_extractor.py
           python3 scripts/extract_citations_external.py
           python3 scripts/concept_backlink.py
+          python3 scripts/build_lexical_overlay.py
 
       - name: Run canonical Transport D pipeline
         shell: bash
