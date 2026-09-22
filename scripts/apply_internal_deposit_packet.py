@@ -109,8 +109,10 @@ def _apply_lexical_mints(packet: dict, entry: dict) -> int:
         raise SystemExit("lexical-minting-registry.json has no array 'terms'")
 
     existing = {
-        str(t.get("term") or "").strip()
+        str(t.get("term") or "").strip().casefold():
+            str(t.get("term") or "").strip()
         for t in terms if isinstance(t, dict)
+        and str(t.get("term") or "").strip()
     }
     concept_types = {
         str(c.get("term") or c.get("concept") or "").strip():
@@ -130,6 +132,7 @@ def _apply_lexical_mints(packet: dict, entry: dict) -> int:
         minted_value = True
 
     rows = []
+    skipped_existing = []
     seen = set()
     for i, mint in enumerate(mints, start=1):
         if not isinstance(mint, dict):
@@ -143,14 +146,13 @@ def _apply_lexical_mints(packet: dict, entry: dict) -> int:
             raise SystemExit(f"lexical_mints[{i}] has empty definition")
         if not kind:
             raise SystemExit(f"lexical_mints[{i}] has empty type")
-        if term in seen:
+        term_key = term.casefold()
+        if term_key in seen:
             raise SystemExit(f"duplicate term inside packet: {term!r}")
-        if term in existing:
-            raise SystemExit(
-                f"lexical term already exists in minting registry: {term!r}; "
-                "reference or revise it rather than reminting it"
-            )
-        seen.add(term)
+        seen.add(term_key)
+        if term_key in existing:
+            skipped_existing.append((term, existing[term_key]))
+            continue
         row = {
             "term": term,
             "definition": definition,
@@ -195,11 +197,17 @@ def _apply_lexical_mints(packet: dict, entry: dict) -> int:
         for row in rows:
             writer.writerow(row)
 
-    entry["lexical_attested_none"] = False
+    if rows:
+        entry["lexical_attested_none"] = False
+    if skipped_existing:
+        print(
+            "referenced pre-existing lexical term(s), not reminted: "
+            + ", ".join(display for _, display in skipped_existing)
+        )
     print(
         f"minted {len(rows)} lexical term(s) for "
         f"#{entry['deposit_number']}: "
-        + ", ".join(r["term"] for r in rows)
+        + (", ".join(r["term"] for r in rows) if rows else "(none)")
     )
     return len(rows)
 
