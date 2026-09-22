@@ -3,7 +3,7 @@ title: "Monetary Dark Matter"
 subtitle: "Constitutive Labor, Obligating Provenance, and the Shear into Money-Form"
 designator: EA-SE-DARK-01
 version: v0.2
-status: "staged for deposit"
+status: "deposit version"
 date: 2026-09-21
 creator: "Sharks, Lee"
 orcid: 0009-0000-1599-0703
@@ -31,7 +31,7 @@ keywords:
 
 ## Constitutive Labor, Obligating Provenance, and the Shear into Money-Form
 
-**EA-SE-DARK-01 · v0.2 · staged for deposit · 21 September 2026**
+**EA-SE-DARK-01 · v0.2 · 21 September 2026**
 **Lee Sharks · Semantic Economy Institute · Crimson Hexagonal Archive**
 
 **Stands on:** *Whose Face Is on the Twenty?* · *Whose Image and Superscription? Toward a Semantic Economics of the Mint* · *Money Writes the Claim; the Semantic Economy Writes What the Claim Owes* · *Monetary Substrate Audit Ledger* · *Substrate Sovereignty* · *The Non-Summable Magnitude* · *Mammonic Transmission Engineering* · *After the Obelus* · EA-SPXI-16.
