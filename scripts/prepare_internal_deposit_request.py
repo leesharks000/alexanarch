@@ -19,20 +19,20 @@ from pathlib import Path
 from detex_canonical import detex
 
 EXTRA_SYMBOLS = {
-    r"\\Pi": "Pi",
-    r"\\iota": "iota",
-    r"\\langle": "<",
-    r"\\rangle": ">",
-    r"\\ominus": "⊖",
-    r"\\prec": "<",
-    r"\\wedge": " and ",
-    r"\\rm": "",
+    r"\Pi": "Pi",
+    r"\iota": "iota",
+    r"\langle": "<",
+    r"\rangle": ">",
+    r"\ominus": "⊖",
+    r"\prec": "<",
+    r"\wedge": " and ",
+    r"\rm": "",
 }
 
 
 def canonicalize_body(issue_body: str) -> str:
     pattern = re.compile(
-        r"(###\\s+Body\\s*\\n\\s*)(.*?)(?=\\n###\\s+Terms\\s*\\n|\\Z)",
+        r"(###\s+Body\s*\n\s*)(.*?)(?=\n###\s+Terms\s*\n|\Z)",
         re.S | re.I,
     )
     match = pattern.search(issue_body)
@@ -44,7 +44,7 @@ def canonicalize_body(issue_body: str) -> str:
     for old, new in EXTRA_SYMBOLS.items():
         converted = converted.replace(old, new)
 
-    residual = sorted(set(re.findall(r"\\\\[A-Za-z]+", converted)))
+    residual = sorted(set(re.findall(r"\\[A-Za-z]+", converted)))
     if residual:
         raise SystemExit(
             "canonical math conversion left unsupported macro(s): "
