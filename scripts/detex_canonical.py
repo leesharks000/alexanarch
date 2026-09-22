@@ -90,6 +90,8 @@ MACROS = [
     (r'\\\\', '\n'),
 ]
 SYMBOLS = {
+    r'\\Pi': 'Pi', r'\\iota': 'iota', r'\\langle': '<', r'\\rangle': '>',
+    r'\\ominus': '⊖', r'\\prec': '<', r'\\wedge': ' and ', r'\\rm': '',
     r'\\ge': '>=', r'\\le': '<=', r'\\ell': 'l', r'\\varnothing': '{}',
     r'\\iff': '<=>', r'\\Longleftrightarrow': '<=>', r'\\Leftrightarrow': '<=>',
     r'\\bigcup': 'union', r'\\bigcap': 'intersection', r'\\subsetneq': 'strict subset',
