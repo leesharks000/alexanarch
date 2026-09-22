@@ -5,7 +5,8 @@ on:
     branches:
       - internal-deposit/**
     paths:
-      - data/internal-deposit-requests/**
+      - 'data/internal-deposit-requests/**/body.md'
+      - 'data/internal-deposit-requests/**/packet.json'
 
 permissions:
   contents: write
@@ -58,17 +59,26 @@ jobs:
           python3 scripts/bootstrap_familiarization.py --strict --instance "internal-deposit bridge run ${{ github.run_id }}" --receipt-file /tmp/familiarization-receipt.txt
           cat /tmp/familiarization-receipt.txt
 
+      - name: Prepare canonical request body
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/prepare_internal_deposit_request.py \
+            --body "${{ steps.req.outputs.req }}/body.md" \
+            --packet "${{ steps.req.outputs.req }}/packet.json" \
+            --output /tmp/internal-deposit-body.md
+
       - name: Validate request body
         shell: bash
         run: |
           set -euo pipefail
-          python3 scripts/validate_deposit.py --issue-body "${{ steps.req.outputs.req }}/body.md" --strict
+          python3 scripts/validate_deposit.py --issue-body /tmp/internal-deposit-body.md --strict
 
       - name: Mint canonical object
         shell: bash
         run: |
           set -euo pipefail
-          python3 scripts/deposit_pipeline.py --issue-body "${{ steps.req.outputs.req }}/body.md" --issue-number 0 --stages mint --no-push
+          python3 scripts/deposit_pipeline.py --issue-body /tmp/internal-deposit-body.md --issue-number 0 --stages mint --no-push
 
       - name: Resolve deposit number
         id: mint
@@ -92,6 +102,7 @@ jobs:
           python3 scripts/citation_extractor.py
           python3 scripts/extract_citations_external.py
           python3 scripts/concept_backlink.py
+          python3 scripts/build_lexical_overlay.py
 
       - name: Run canonical Transport D pipeline
         shell: bash
