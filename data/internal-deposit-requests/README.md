@@ -35,6 +35,7 @@ Example:
 ```json
 {
   "schema": "alexanarch-internal-session-packet/v1",
+  "canonicalize_math": true,
   "registry_patch": {
     "wiki_article": "A substantive article of at least sixty words...",
     "wiki_status": "in-session",
@@ -55,6 +56,11 @@ Example:
   ]
 }
 ```
+
+`canonicalize_math: true` converts only the request's `### Body` field from
+LaTeX notation to the archive's plain-text canonical math before identity bytes
+are minted; the staged/source manuscript is left untouched. Unsupported residual
+macros fail closed.
 
 The packet cannot alter mint-owned identity fields. `lexical_mints` are seated
 after the AXN and deposit number exist, so the packet supplies only semantic
