@@ -62,7 +62,7 @@ LaTeX notation to the archive's plain-text canonical math before identity bytes
 are minted; the staged/source manuscript is left untouched. Unsupported residual
 macros fail closed.
 
-The packet cannot alter mint-owned identity fields. `lexical_mints` are seated
+When `lexical_mints` is non-empty, the bridge writes deposit-number/AXN-anchored rows to the lexical minting registry and sets `lexical_attested_none` false. It then rebuilds the lexical overlay.\n\nThe packet cannot alter mint-owned identity fields. `lexical_mints` are seated
 after the AXN and deposit number exist, so the packet supplies only semantic
 content (`term`, `definition`, optional `type`); the bridge supplies the
 deposit number, title, date, and AXN and writes both lexical registries. A packet
