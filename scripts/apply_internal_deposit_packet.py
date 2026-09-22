@@ -113,9 +113,11 @@ def _apply_lexical_mints(packet: dict, entry: dict) -> int:
         for t in terms if isinstance(t, dict)
     }
     concept_types = {
-        str(c.get("term") or "").strip(): str(c.get("type") or "concept")
+        str(c.get("term") or c.get("concept") or "").strip():
+            str(c.get("type") or "concept")
         for c in (entry.get("defines_concepts") or [])
-        if isinstance(c, dict) and str(c.get("term") or "").strip()
+        if isinstance(c, dict)
+        and str(c.get("term") or c.get("concept") or "").strip()
     }
 
     sample = next((t for t in reversed(terms) if isinstance(t, dict)), {})
