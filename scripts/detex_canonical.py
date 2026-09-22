@@ -61,6 +61,7 @@ MACROS = [
     (r'\\mathcal\s*', ''),
     (r'\\(?:Bigg|bigg|Big|big)[lrm]?', ''),
     (r'\\operatorname\*?\{([^{}]*)\}', r'\1'),
+    (r'\\begin\{array\}\{[^{}]*\}', ''),
     (r'\\begin\{[a-z*]+\}', ''),
     (r'\\end\{[a-z*]+\}', ''),
     (r'\\widehat\s*', 'est. '),
@@ -87,6 +88,7 @@ MACROS = [
     (r'\\tilde\{([^{}]*)\}', r'\1-tilde'),
     (r'\\left', ''), (r'\\right', ''),
     (r'\\,', ' '), (r'\\;', ' '), (r'\\!', ''), (r'\\quad', '   '), (r'\\qquad', '      '),
+    (r'\\\\\s*\[[^\]]*\]', '\n'),
     (r'\\\\', '\n'),
 ]
 SYMBOLS = {
