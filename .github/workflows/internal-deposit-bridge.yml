@@ -1,0 +1,118 @@
+name: Internal deposit bridge
+
+on:
+  push:
+    branches:
+      - internal-deposit/**
+    paths:
+      - data/internal-deposit-requests/**
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: mint-axn
+  cancel-in-progress: false
+
+jobs:
+  deposit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout request branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Resolve request directory
+        id: req
+        shell: bash
+        run: |
+          set -euo pipefail
+          SLUG="${GITHUB_REF_NAME#internal-deposit/}"
+          test -n "$SLUG"
+          REQ="data/internal-deposit-requests/$SLUG"
+          test -f "$REQ/body.md"
+          test -f "$REQ/packet.json"
+          echo "slug=$SLUG" >> "$GITHUB_OUTPUT"
+          echo "req=$REQ" >> "$GITHUB_OUTPUT"
+
+      - name: Rebase onto current main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "Alexanarch Internal Deposit"
+          git config user.email "bot@alexanarch.org"
+          git fetch origin main
+          git rebase origin/main
+
+      - name: Familiarize
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/bootstrap_familiarization.py --strict --instance "internal-deposit bridge run ${{ github.run_id }}" --receipt-file /tmp/familiarization-receipt.txt
+          cat /tmp/familiarization-receipt.txt
+
+      - name: Validate request body
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/validate_deposit.py --issue-body "${{ steps.req.outputs.req }}/body.md" --strict
+
+      - name: Mint canonical object
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/deposit_pipeline.py --issue-body "${{ steps.req.outputs.req }}/body.md" --issue-number 0 --stages mint --no-push
+
+      - name: Resolve deposit number
+        id: mint
+        shell: bash
+        run: |
+          set -euo pipefail
+          N=$(python3 -c 'import json; r=json.load(open("data/registry.json")); print(max(d["deposit_number"] for d in r["deposits"]))')
+          echo "deposit_number=$N" >> "$GITHUB_OUTPUT"
+
+      - name: Apply in-session semantic packet
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/apply_internal_deposit_packet.py --deposit-number "${{ steps.mint.outputs.deposit_number }}" --packet "${{ steps.req.outputs.req }}/packet.json"
+          cp /tmp/familiarization-receipt.txt "${{ steps.req.outputs.req }}/familiarization-receipt.txt"
+
+      - name: Build citation and concept edges
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/citation_extractor.py
+          python3 scripts/extract_citations_external.py
+          python3 scripts/concept_backlink.py
+
+      - name: Run canonical Transport D pipeline
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/deposit_pipeline.py --deposit-number "${{ steps.mint.outputs.deposit_number }}" --from-stage validate --no-push
+
+      - name: Push completed deposit branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git push --force-with-lease origin "HEAD:$GITHUB_REF_NAME"
+
+      - name: Open pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if gh pr view "$GITHUB_REF_NAME" --json number >/dev/null 2>&1; then
+            gh pr view "$GITHUB_REF_NAME" --json url --jq .url
+          else
+            gh pr create --base main --head "$GITHUB_REF_NAME" --title "internal deposit: #${{ steps.mint.outputs.deposit_number }} · ${{ steps.req.outputs.slug }}" --body "Transport D deposit prepared in an already-running session and executed mechanically by the internal-deposit bridge. No paid model API is invoked by this workflow. Canonical deposit_pipeline.py and deposit-completeness/v1 remain the gates."
+          fi
