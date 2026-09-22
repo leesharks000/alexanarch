@@ -1,31 +1,16 @@
 name: Internal deposit bridge
 
-# Transport D for sessions that can write repository files but cannot execute
-# the Alexanarch working tree directly (for example, a phone-first ChatGPT
-# thread using the installed GitHub App).
-#
-# The intelligence stays in the already-running session. GitHub Actions is only
-# the mechanical execution substrate. No Anthropic/OpenAI API key is used here.
-
 on:
   push:
     branches:
-      - 'internal-deposit/**'
+      - internal-deposit/**
     paths:
-      - 'data/internal-deposit-requests/**'
-  workflow_dispatch:
-    inputs:
-      slug:
-        description: 'Request directory name under data/internal-deposit-requests/'
-        required: true
-        type: string
+      - data/internal-deposit-requests/**
 
 permissions:
   contents: write
   pull-requests: write
 
-# Share the mint lock with mint-axn.yml so two deposits cannot independently
-# assign the same next deposit number.
 concurrency:
   group: mint-axn
   cancel-in-progress: false
@@ -39,19 +24,18 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Resolve request
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Resolve request directory
         id: req
         shell: bash
         run: |
           set -euo pipefail
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            SLUG="${{ inputs.slug }}"
-          else
-            SLUG="${GITHUB_REF_NAME#internal-deposit/}"
-          fi
-          case "$SLUG" in
-            ""|*..*|/*) echo "invalid slug: $SLUG" >&2; exit 2 ;;
-          esac
+          SLUG="${GITHUB_REF_NAME#internal-deposit/}"
+          test -n "$SLUG"
           REQ="data/internal-deposit-requests/$SLUG"
           test -f "$REQ/body.md"
           test -f "$REQ/packet.json"
@@ -67,51 +51,41 @@ jobs:
           git fetch origin main
           git rebase origin/main
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Familiarize against canonical protocol index
+      - name: Familiarize
         shell: bash
         run: |
           set -euo pipefail
-          python3 scripts/bootstrap_familiarization.py             --strict             --instance "internal-deposit bridge run ${{ github.run_id }}"             --receipt-file /tmp/familiarization-receipt.txt
+          python3 scripts/bootstrap_familiarization.py --strict --instance "internal-deposit bridge run ${{ github.run_id }}" --receipt-file /tmp/familiarization-receipt.txt
           cat /tmp/familiarization-receipt.txt
 
       - name: Validate request body
         shell: bash
         run: |
           set -euo pipefail
-          python3 scripts/validate_deposit.py             --issue-body "${{ steps.req.outputs.req }}/body.md"             --strict
+          python3 scripts/validate_deposit.py --issue-body "${{ steps.req.outputs.req }}/body.md" --strict
 
-      - name: Mint canonical object only
+      - name: Mint canonical object
         shell: bash
         run: |
           set -euo pipefail
-          python3 scripts/deposit_pipeline.py             --issue-body "${{ steps.req.outputs.req }}/body.md"             --issue-number 0             --stages mint             --no-push
+          python3 scripts/deposit_pipeline.py --issue-body "${{ steps.req.outputs.req }}/body.md" --issue-number 0 --stages mint --no-push
 
-      - name: Resolve freshly minted deposit number
+      - name: Resolve deposit number
         id: mint
         shell: bash
         run: |
           set -euo pipefail
-          N=$(python3 - <<'PY'
-          import json
-          r=json.load(open("data/registry.json"))
-          print(max(d["deposit_number"] for d in r["deposits"]))
-          PY
-          )
+          N=$(python3 -c 'import json; r=json.load(open("data/registry.json")); print(max(d["deposit_number"] for d in r["deposits"]))')
           echo "deposit_number=$N" >> "$GITHUB_OUTPUT"
-          echo "fresh deposit: #$N"
 
       - name: Apply in-session semantic packet
         shell: bash
         run: |
           set -euo pipefail
-          python3 scripts/apply_internal_deposit_packet.py             --deposit-number "${{ steps.mint.outputs.deposit_number }}"             --packet "${{ steps.req.outputs.req }}/packet.json"
+          python3 scripts/apply_internal_deposit_packet.py --deposit-number "${{ steps.mint.outputs.deposit_number }}" --packet "${{ steps.req.outputs.req }}/packet.json"
+          cp /tmp/familiarization-receipt.txt "${{ steps.req.outputs.req }}/familiarization-receipt.txt"
 
-      - name: Build citation and concept edges before completeness
+      - name: Build citation and concept edges
         shell: bash
         run: |
           set -euo pipefail
@@ -123,27 +97,15 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python3 scripts/deposit_pipeline.py             --deposit-number "${{ steps.mint.outputs.deposit_number }}"             --from-stage validate             --no-push
-
-      - name: Attach familiarization receipt to mint commit
-        shell: bash
-        run: |
-          set -euo pipefail
-          git config user.name "Alexanarch Internal Deposit"
-          git config user.email "bot@alexanarch.org"
-          if [ -s /tmp/familiarization-receipt.txt ]; then
-            git commit --amend --no-edit -m "$(git log -1 --pretty=%B)
-
-$(cat /tmp/familiarization-receipt.txt)"
-          fi
+          python3 scripts/deposit_pipeline.py --deposit-number "${{ steps.mint.outputs.deposit_number }}" --from-stage validate --no-push
 
       - name: Push completed deposit branch
         shell: bash
         run: |
           set -euo pipefail
-          git push --force-with-lease origin HEAD:"$GITHUB_REF_NAME"
+          git push --force-with-lease origin "HEAD:$GITHUB_REF_NAME"
 
-      - name: Open PR to main if needed
+      - name: Open pull request
         env:
           GH_TOKEN: ${{ github.token }}
         shell: bash
@@ -152,5 +114,5 @@ $(cat /tmp/familiarization-receipt.txt)"
           if gh pr view "$GITHUB_REF_NAME" --json number >/dev/null 2>&1; then
             gh pr view "$GITHUB_REF_NAME" --json url --jq .url
           else
-            gh pr create               --base main               --head "$GITHUB_REF_NAME"               --title "internal deposit: #${{ steps.mint.outputs.deposit_number }} · ${{ steps.req.outputs.slug }}"               --body "Transport D deposit prepared in an already-running session and executed mechanically by the internal-deposit bridge. No paid model API was invoked by this workflow. Canonical deposit_pipeline.py and deposit-completeness/v1 remain the gates."
+            gh pr create --base main --head "$GITHUB_REF_NAME" --title "internal deposit: #${{ steps.mint.outputs.deposit_number }} · ${{ steps.req.outputs.slug }}" --body "Transport D deposit prepared in an already-running session and executed mechanically by the internal-deposit bridge. No paid model API is invoked by this workflow. Canonical deposit_pipeline.py and deposit-completeness/v1 remain the gates."
           fi
