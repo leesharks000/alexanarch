@@ -30,6 +30,16 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install deposit render dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq pandoc texlive-xetex texlive-latex-extra fonts-dejavu ghostscript poppler-utils
+          command -v pandoc
+          command -v xelatex
+          command -v pdftotext
+
       - name: Resolve request directory
         id: req
         shell: bash
