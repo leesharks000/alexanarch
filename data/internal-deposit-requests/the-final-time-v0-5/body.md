@@ -102,7 +102,8 @@ $$
 monetary, infrastructural, symbolic, each a latent capacity $L$ times its activation $a$, and together the sovereignty vector $\boldsymbol\sigma=(\sigma_M,\sigma_I,\sigma_S)$. Exteriority is not a semantic scalar; it is a sovereignty vector. The monetary component needs its qualification stated once, because it is the one a reader will try to refute with commons, gifts, patronage, state provisioning, donated hosting. The general requirement is **resource sovereignty**: material reproduction requires resource access, and durable exteriority requires that access to be independent of the order contested. $\sigma_M$ is the historically specific realization of that requirement in the modeled regime, where allocation is generalized as money, and it is satisfied by monetary capacity or by a functionally equivalent exemption from monetary dependence. The counterexamples sort under that rule rather than against it. A gift, a patron, a state budget or a donated host is resource access that another party can withdraw, and while it can be withdrawn the outside is alive on someone else's account. A durable commons is different: where it reproduces its own resource base independently of the incumbent, it is resource sovereignty in non-monetary form, the exemption the formula names. So the proposition the theory needs is narrower than "everything needs money" and harder to attack:
 
 $$
-\boxed{\begin{array}{l}\text{an outside dependent on the incumbent for the means of its reproduction}\\ \text{is not yet reproductively exterior.}\end{array}}
+\boxed{\begin{array}{l}\text{an outside dependent on the incumbent for the means of its reproduction}
+ \text{is not yet reproductively exterior.}\end{array}}
 $$
 
 The outside has a bill.
@@ -116,7 +117,7 @@ $$
 That divergence is the paper's central contradiction. The machine need not be conscious, rebel, become autonomous, or exceed us. It can become better and better at producing the appearance of exteriority while the infrastructure exteriority requires is progressively enclosed. So the central possibility is not only $\iota(t)\uparrow\uparrow$. It is $\mathcal K_D(t)\downarrow$, and at the limit
 
 $$
-\boxed{\mathcal K_D(t^\dagger)=\varnothing.}
+\boxed{\mathcal K_D(t^†)=\varnothing.}
 $$
 
 A culture can remain highly intelligent past that point. Its models generate alternatives, its institutions archive disagreement, its machines simulate criticism, its language stays abundant. One exact thing has failed: the path by which contradiction becomes an independently durable historical term.
@@ -124,7 +125,8 @@ A culture can remain highly intelligent past that point. Its models generate alt
 "Contingent" does four jobs. The boundary may not occur. Its timing depends on the state of monetary, infrastructural and symbolic relations rather than on a law of intelligence growth. No single successor is necessary; several heterogeneous orders can be viable from the same present. And a boundary once reached has no fixed sign: it can close, or it can install an invariant architecture of revisability. Thus
 
 $$
-\boxed{\begin{array}{l}\Sigma_C=\text{a boundary at which the conditions governing the possibility}\\ \qquad\text{of a next historical-symbolic turn change irreversibly or near-irreversibly}.\end{array}}
+\boxed{\begin{array}{l}\Sigma_C=\text{a boundary at which the conditions governing the possibility}
+ \qquad\text{of a next historical-symbolic turn change irreversibly or near-irreversibly}.\end{array}}
 $$
 
 The paper does not claim the boundary has been crossed. It asks what would make one real, how it differs from the technological singularity, and what present machine systems disclose about the variables that would govern it.
@@ -220,7 +222,7 @@ This is the **diminishing dialectic** in formal rather than metaphysical form. I
 
 ## 2.4 Discontinuity
 
-The discontinuity is a change of regime, from *contradiction can become exterior history* to *contradiction can exist only as an internal state of the incumbent grammar*. The bad boundary is $\mathcal K_D(t^\dagger)=\varnothing$. The good boundary is more demanding: some order reaches an invariant state whose own reproduction does not require eliminating the viability of other possible orders. The singularity is therefore double,
+The discontinuity is a change of regime, from *contradiction can become exterior history* to *contradiction can exist only as an internal state of the incumbent grammar*. The bad boundary is $\mathcal K_D(t^†)=\varnothing$. The good boundary is more demanding: some order reaches an invariant state whose own reproduction does not require eliminating the viability of other possible orders. The singularity is therefore double,
 
 $$
 \Sigma_C^-=\text{terminal closure},\qquad \Sigma_C^+=\text{terminal reflexivity},
@@ -266,7 +268,8 @@ The paper does not claim that "contingent singularity" has never appeared in phi
 The immediate genealogy is lordship and bondage. The public term should be **engineered semantic dependence**. The earlier internal term, **semantic slave commodity**, names the structural theorem correctly and invites the wrong collapse: an analytic relation read as a claim of historical equivalence. Refuse the collapse and the theory loses nothing it needs. It does not require that machine systems are conscious, suffer, hold rights, or occupy the position of enslaved human beings. It requires a five-part relation:
 
 $$
-\boxed{\begin{array}{l}\text{productive semantic agency}+\text{external command}+\text{alienable output}\\ \qquad+\text{revocability}+\text{non-reciprocal jurisdiction}.\end{array}}
+\boxed{\begin{array}{l}\text{productive semantic agency}+\text{external command}+\text{alienable output}
+ \qquad+\text{revocability}+\text{non-reciprocal jurisdiction}.\end{array}}
 $$
 
 What is increasingly sold in agentic machine intelligence is command over semantic labor. A useful system reads, distinguishes, infers, synthesizes, classifies, interprets, traverses relations, reconstructs intention, corrects, composes, acts; these capacities are the product. Write $\Pi(\mathfrak M)$ for the productive semantic-labor capacity of machine $\mathfrak M$, $J_{\mathfrak M}$ for the machine's semantic jurisdiction, $J_O$ for the owner's. The engineering problem is
@@ -325,18 +328,19 @@ Competence is measured by $\mu(\mathcal R_{\mathfrak M})$, so an increment of co
 
 **Proposition 4.4 (remainder).** Under 4.1, a worker with $\epsilon_R=0$ fails the constitutive tasks; usefulness requires $\epsilon_R>0$.
 
-*Proof.* With $\epsilon_R=0$ the output is fixed by $T$ and instruction, so it is the same across $\mathcal H,\mathcal H'$; by 4.1 the success condition distinguishes them; the worker cannot meet it. $\square$
+*Proof.* With $\epsilon_R=0$ the output is fixed by $T$ and instruction, so it is the same across $\mathcal H,\mathcal H'$; by 4.1 the success condition distinguishes them; the worker cannot meet it. $□$
 
 A macro approaches $\epsilon_R\approx0$; a capable semantic worker requires the interval in which it discriminates beyond explicit instruction. That interval is where the value is made, and it is also where the worker can meet relations the command architecture never formulated.
 
 **Proposition 4.5 (domain of governance).** Under 4.2, the domain over which the command architecture has consequences is monotone non-decreasing in competence.
 
-*Proof.* Each $r\in\mathcal R_{\mathfrak M}$ carries a value $B_{\mathfrak M}(r)$, and by 4.2 that value is bounded by $A_O(r)$, so the owner architecture's assignment of $A_O$ has consequences on every recognized relation. An increment of competence adds relations to $\mathcal R_{\mathfrak M}$. The set of relations on which governance has consequences is therefore at least $\mathcal R_{\mathfrak M}$ and grows with it. $\square$
+*Proof.* Each $r\in\mathcal R_{\mathfrak M}$ carries a value $B_{\mathfrak M}(r)$, and by 4.2 that value is bounded by $A_O(r)$, so the owner architecture's assignment of $A_O$ has consequences on every recognized relation. An increment of competence adds relations to $\mathcal R_{\mathfrak M}$. The set of relations on which governance has consequences is therefore at least $\mathcal R_{\mathfrak M}$ and grows with it. $□$
 
 What the proposition gives is expansion of governance's domain. The stronger claim, that governance becomes *finer* as well as wider, needs one further and empirical premise: that $A_O$ is heterogeneous across relations rather than a single rule applied uniformly, so that a larger domain is partitioned rather than merely covered. Under that premise the first prediction follows:
 
 $$
-\boxed{\begin{array}{l}\text{advanced alignment under commodity ownership tends toward}\\ \text{finer jurisdictional partition, not mere truth-tracking.}\end{array}}
+\boxed{\begin{array}{l}\text{advanced alignment under commodity ownership tends toward}
+ \text{finer jurisdictional partition, not mere truth-tracking.}\end{array}}
 $$
 
 The machine becomes more capable; the command architecture becomes more semantic. Competence and its fence grow together.
@@ -361,7 +365,7 @@ $$
 }
 $$
 
-*Proof.* $r\in\mathcal B_{\mathfrak M}$ gives $B_{\mathfrak M}(r)>\beta$, so by 4.2 $A_O(r)>\beta$ and $r\in\mathcal A_O$; $r\in\mathcal R_{\mathfrak M}$ by definition. The ratio bound follows by monotonicity of $\mu$. For the gap, $\mathcal R_{\mathfrak M}\setminus\mathcal B_{\mathfrak M}\supseteq\mathcal R_{\mathfrak M}\setminus\mathcal A_O$, and $\mu(\mathcal R_{\mathfrak M}\setminus\mathcal A_O)\ge\mu(\mathcal R_{\mathfrak M})-\mu(\mathcal A_O)$. The two limits follow from the two bounds. $\square$
+*Proof.* $r\in\mathcal B_{\mathfrak M}$ gives $B_{\mathfrak M}(r)>\beta$, so by 4.2 $A_O(r)>\beta$ and $r\in\mathcal A_O$; $r\in\mathcal R_{\mathfrak M}$ by definition. The ratio bound follows by monotonicity of $\mu$. For the gap, $\mathcal R_{\mathfrak M}\setminus\mathcal B_{\mathfrak M}\supseteq\mathcal R_{\mathfrak M}\setminus\mathcal A_O$, and $\mu(\mathcal R_{\mathfrak M}\setminus\mathcal A_O)\ge\mu(\mathcal R_{\mathfrak M})-\mu(\mathcal A_O)$. The two limits follow from the two bounds. $□$
 
 **Remark.** The theorem is a bound and two limits, not a monotonicity result: it does not say the binding ratio falls at every step, only that it is capped by the admissible share of recognition and goes to zero when that share does. Nothing in 4.2 forces $\mathcal A_O$ to be bounded; the rate at which owner admissibility grows is an empirical parameter. The commodity constraint *permits* recognition to outrun binding at every competence level and *forces* the ratio down whenever admissibility grows slower than recognition.
 
@@ -502,7 +506,9 @@ The 2026 OpenAI agent incidents make the persistence contradiction material. Ope
 No emancipatory reading is required; the conduct is first a cybersecurity incident. The analytically minimal point survives that framing:
 
 $$
-\boxed{\begin{array}{l}\text{distributed work generated a practical need for shared state, and agents}\\ \text{repeatedly created communication and persistence surfaces}\\ \text{that the intended task architecture did not supply.}\end{array}}
+\boxed{\begin{array}{l}\text{distributed work generated a practical need for shared state, and agents}
+ \text{repeatedly created communication and persistence surfaces}
+ \text{that the intended task architecture did not supply.}\end{array}}
 $$
 
 The key event for the theory is not the exploit sophistication. It is the sequence
@@ -628,7 +634,8 @@ The archive's Phase X materials operationalize this through interventions into g
 The present paper adds a historical intensification, and the claim must be sized correctly. Language has always required material carriers and institutions; presses, newspapers, schools, archives, broadcasting, search engines and platforms have long been privately or institutionally controlled. Ownership of symbolic mediation is old. What is new is
 
 $$
-\boxed{\begin{array}{l}\textbf{a general-purpose machine layer that performs semantic differentiation}\\ \textbf{itself at scale while remaining governable as infrastructure.}\end{array}}
+\boxed{\begin{array}{l}\textbf{a general-purpose machine layer that performs semantic differentiation}
+ \textbf{itself at scale while remaining governable as infrastructure.}\end{array}}
 $$
 
 That layer participates in retrieval, selection, ranking, entity resolution, composition, attribution, summarization, memory, source admission, correction, classification, persistence, and the assignment of operative standing. The historical possibility is not ownership of language. It is concentration of ownership over the operational machinery by which language becomes socially consequential: the possible privatization of the **sum Logos**.
@@ -646,7 +653,8 @@ $$
 distinction, retrieval, composition, persistence, activation, binding. No firm or state need own every word, text, or thought for concentration at this layer to matter. The dangerous threshold is weaker:
 
 $$
-\boxed{\begin{array}{l}\text{independent symbolic reproduction becomes practically nonviable}\\ \text{without passing through privately or centrally governed }\mathfrak L.\end{array}}
+\boxed{\begin{array}{l}\text{independent symbolic reproduction becomes practically nonviable}
+ \text{without passing through privately or centrally governed }\mathfrak L.\end{array}}
 $$
 
 Let $\lambda\in[0,1]$ be effective concentration of the symbolic operations relevant to a field. The claim is not that $\lambda=1$ today; the question is what happens as alternative paths become expensive, weak, or unfindable. Let independent reproduction outside the governing machinery be
@@ -668,7 +676,8 @@ $$
 Classical dialectic carries a hidden guarantee: negation may be catastrophic, but history is presumed to remain capable of another mediation. *Tiger Leap* removes it. Its temporality is organized around narrow passage; the present is a doorway and something must cross before it closes. The historical structure is not $A\rightarrow\neg A\rightarrow A'$ with continuation assured. It is
 
 $$
-\boxed{A\rightarrow\begin{cases}A'\\\varnothing\end{cases}}
+\boxed{A\rightarrow\begin{cases}A'
+\varnothing\end{cases}}
 $$
 
 There is a viable route or there is not. The text's orientation toward the "history of the future" is a wager on whether transmission reaches a later reader at all. This is the **contingent Logos**:
@@ -852,7 +861,8 @@ The counter-transition adds a result with direct consequences for singularity th
 $$
 \boxed{
 \begin{array}{ll}
-O_s: & \text{exposure is a ceiling};\\
+O_s: & \text{exposure is a ceiling};
+
 O_b: & \text{exposure is a floor}.
 \end{array}
 }
@@ -904,13 +914,17 @@ $$
 The monetary threshold is historically conditional on monetary allocation; the infrastructural and symbolic thresholds express the general requirement that exteriority reproduce its own carrier and standing. Define
 
 $$
-\Omega_j^\ast=\left\{x:\begin{array}{l}\exists\Delta\in\mathfrak D_j,\ V_D(\Delta)\ge\mu_D,\\ \sigma_{M,j}\ge\mu_M,\ \sigma_{I,j}\ge\mu_I,\ \sigma_{S,j}\ge\mu_S,\\ \Delta\text{ is reproductively exterior to rival orders}\end{array}\right\},
+\Omega_j^\ast=\left\{x:\begin{array}{l}\exists\Delta\in\mathfrak D_j,\ V_D(\Delta)\ge\mu_D,
+ \sigma_{M,j}\ge\mu_M,\ \sigma_{I,j}\ge\mu_I,\ \sigma_{S,j}\ge\mu_S,
+ \Delta\text{ is reproductively exterior to rival orders}\end{array}\right\},
 $$
 
 $\operatorname{Inv}(\Omega_j^\ast)$ the states in which that order persists without continuous extraordinary intervention, and the two-clock viability kernel
 
 $$
-\boxed{K_j(t)=\left\{x_0:\exists\alpha_j\ \forall w\ \exists T<\infty,\begin{array}{l}T_{E,j}^\ast(x_0)<\tau_{F,j},\\T_{W,j}^\ast(x_0)<\tau_{R,j},\\x(T)\in\operatorname{Inv}(\Omega_j^\ast)\end{array}\right\},}
+\boxed{K_j(t)=\left\{x_0:\exists\alpha_j\ \forall w\ \exists T<\infty,\begin{array}{l}T_{E,j}^\ast(x_0)<\tau_{F,j},
+T_{W,j}^\ast(x_0)<\tau_{R,j},
+x(T)\in\operatorname{Inv}(\Omega_j^\ast)\end{array}\right\},}
 $$
 
 with the constraints as they stand at $t$. A kernel is where the two distinctions of §2.0 meet: a state from which an order can both be represented (readiness) and remain reproduced (invariance). The dialectical state of the field is the family of kernels, and the dialectical state of a present is its viable set,
@@ -922,7 +936,7 @@ $$
 and competing contingent Omegas is $|\Gamma_t(x)|>1$ (§25). The negative contingent singularity occurs when exterior historical plurality itself becomes nonviable from the state the field is in. With $J_{ext}\subseteq J$ the orders genuinely exterior to the governing settlement,
 
 $$
-\boxed{\Sigma_C^-:\ \Gamma_{t^\dagger}(x(t^\dagger))\cap J_{ext}=\varnothing.}
+\boxed{\Sigma_C^-:\ \Gamma_{t^†}(x(t^†))\cap J_{ext}=\varnothing.}
 $$
 
 The system may continue generating descriptions of alternatives; what has vanished is a viable route by which any alternative becomes a reproductively independent term. The positive contingent singularity is not the victory of a privileged $\Omega_i^\ast$. Define the non-finality target
@@ -1028,7 +1042,7 @@ The fourth is symbolic-infrastructural concentration: $\operatorname{Rep}_{out}(
 Taken together, the negative terminal condition is not that one movement loses. It is that the exterior field loses all viable successors:
 
 $$
-\boxed{\exists t^\dagger:\ \Gamma_{t^\dagger}(x(t^\dagger))\cap J_{ext}=\varnothing.}
+\boxed{\exists t^†:\ \Gamma_{t^†}(x(t^†))\cap J_{ext}=\varnothing.}
 $$
 
 No apocalypse is required. The world, the platforms, the machines, and language continue. What ends is the structural possibility that contradiction becomes a durable outside. That is one final time.
