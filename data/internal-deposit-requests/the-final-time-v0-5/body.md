@@ -59,17 +59,6 @@ The theory would be weakened if durable exterior symbolic orders remain robust d
 
 ### Body
 
----
-title: "The Final Time"
-subtitle: "Contingent Singularity and the Viability of the Next Dialectical Turn"
-status: "working draft"
-version: "v0.5"
-date: "2026-09-23"
-author: "[open]"
-designator: "TBD"
-changes: "v0.5 — pre-print kill pass: math delimiters converted to $$/$ (Pandoc-safe); §25 defines the viable set Γ_t(x) of orders viable from a state, and §§2.6, 29, 30, 35 restated on it (K_j(x) type error removed); Theorem 4.6 restated as the bound and limits it proves, Proposition 4.5 scoped to domain expansion; §0 M-I-S seam patched (resource sovereignty general, σ_M its monetary realization); §2.5 'special case' withdrawn; [^kurzweilQA] given an exact target; Appendix B references to the work as *The Final Time*; perfective items from the v0.4 read (§§2.0, 2.5, 4, 7, 11, 13, 29, 31, 35, 36, 37, A, B). v0.4 — retitled The Final Time (from the Walt line and §35), Contingent Singularity to subtitle; singularity literature moved to notes and Appendix B (§1 reduced to coordinates); master distinction stated in §2.0 and the ≠-family derived from it, with the second distinction (event/invariant) named; the Generate/ReproduceExterior contradiction moved to §0; §§7–13 headed as specimens of the architectural chain; §38 ending built as the removal of weaker questions. v0.3 — densification pass; notation rebuilt (Appendix A); §4 theorem section; monetary qualification in §0; symmetric mechanism rule in §5"
----
-
 # THE FINAL TIME
 
 ## Contingent Singularity and the Viability of the Next Dialectical Turn
