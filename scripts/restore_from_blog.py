@@ -20,6 +20,7 @@ restored: {deposit_number, axn, date}; each skip gains skip: {reason, date}.
 Re-runs resume past entries carrying either marker.
 """
 import argparse, hashlib, json, re, subprocess, sys, urllib.request
+from legal_name import contains_legal_name  # hashed guard
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -156,7 +157,7 @@ def main():
             print(f"SKIP  {e['dois'][0]} | {e['title'][:55]} | gate: no candidate post matched")
             continue
         url, raw, html, ptitle, body = matched
-        if re.search(r'(?i)pfaff', html):
+        if contains_legal_name(html, substring=True):
             e['skip'] = {'reason': 'legal_name_hygiene', 'date': '2026-07-19'}
             print(f"SKIP  {e['dois'][0]} | LEGAL-NAME HYGIENE FLAG — manual review")
             continue

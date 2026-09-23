@@ -36,7 +36,7 @@ from record_state import derive_state, load_registry  # noqa: E402
 # preserved local file paths from a .docx conversion. This clause fails the
 # build unconditionally — it is not a hygiene preference, it is the archive's
 # most absolute standing rule.
-LEGAL_NAME = re.compile(r'(?i)mpfaff|matthew\s+pfaff|\bpfaff\b')
+from legal_name import LEGAL_NAME  # held as hashes; see scripts/legal_name.py
 
 BODY_STALE = re.compile(
     r'(?i)SEMI-RESTORED RECORD|metadata capture only; no full text|Full text not yet recovered',
