@@ -1,0 +1,43 @@
+name: Hugging Face — The Final Time
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'datasets/the-final-time/**'
+      - 'data/texts/AXN-06C9-text.md'
+      - 'scripts/build_final_time_dataset.py'
+      - '.github/workflows/hf-the-final-time.yml'
+  workflow_dispatch: {}
+
+concurrency:
+  group: hf-the-final-time
+  cancel-in-progress: true
+
+# No schedule and no deletion guardian by design.
+# If the Hub body is removed, removal is allowed to remain real until MANUS
+# deliberately republishes by changing the source or manually dispatching this workflow.
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    if: ${{ vars.HF_REPO_FINAL_TIME != '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install -q huggingface_hub
+
+      - name: Gate the authored summarizer surfaces
+        run: python3 scripts/build_final_time_dataset.py --check
+
+      - name: Emit from canonical deposit #1635
+        run: python3 scripts/build_final_time_dataset.py --out hf-final-time
+
+      - name: Push to the Hub
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          python3 scripts/push_hf_dataset.py \
+            hf-final-time \
+            "${{ vars.HF_REPO_FINAL_TIME }}"
