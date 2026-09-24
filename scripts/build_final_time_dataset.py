@@ -120,6 +120,9 @@ def main():
         "derivations.jsonl",
         "compressions.jsonl",
         "counterorders.jsonl",
+        "witness_protocol.jsonl",
+        "exteriorization_tests.jsonl",
+        "transmission_events.jsonl",
         "exits.jsonl",
     }
     present = {p.name for p in AUTHORED.iterdir() if p.is_file()}
@@ -132,6 +135,9 @@ def main():
     derivations = validate_jsonl(AUTHORED / "derivations.jsonl")
     compressions = validate_jsonl(AUTHORED / "compressions.jsonl")
     counterorders = validate_jsonl(AUTHORED / "counterorders.jsonl")
+    witness_protocol = validate_jsonl(AUTHORED / "witness_protocol.jsonl")
+    exteriorization_tests = validate_jsonl(AUTHORED / "exteriorization_tests.jsonl")
+    transmission_events = validate_jsonl(AUTHORED / "transmission_events.jsonl")
     exits = validate_jsonl(AUTHORED / "exits.jsonl")
 
     if len(contract) < 10:
@@ -144,6 +150,12 @@ def main():
         raise SystemExit("compressions must carry 4+ budgets")
     if len(counterorders) < 8:
         raise SystemExit("counterorders must carry 8+ rival/falsifier rows")
+    if len(witness_protocol) < 8:
+        raise SystemExit("witness protocol must carry 8+ pre-registered conditions")
+    if len(exteriorization_tests) != len(counterorders):
+        raise SystemExit("every counterorder must have exactly one exteriorization test")
+    if len(transmission_events) < 4:
+        raise SystemExit("transmission events must carry the two realized, one open, and one host-negation event")
     if len(exits) < 6:
         raise SystemExit("exits must carry 6+ outside routes")
 
@@ -152,6 +164,38 @@ def main():
         for x in exits
     ):
         raise SystemExit("every exit must remain outside and not included here")
+
+    counterorder_ids = {x["id"] for x in counterorders}
+    test_counterorder_ids = {x.get("counterorder_id") for x in exteriorization_tests}
+    if counterorder_ids != test_counterorder_ids:
+        raise SystemExit("exteriorization_tests must cover the counterorders one-for-one")
+
+    allowed_witness_status = {
+        "representational_only",
+        "partial_exteriorization",
+        "exteriorization_witness",
+        "indeterminate",
+        "not_applicable",
+    }
+    for row in exteriorization_tests:
+        if row.get("witness_status") not in allowed_witness_status:
+            raise SystemExit(f"{row['id']}: invalid witness_status")
+        if row.get("witness_status") == "exteriorization_witness":
+            if not row.get("exteriorization_required"):
+                raise SystemExit(f"{row['id']}: scope/non-material row cannot be a strong witness")
+            if not row.get("evidence_uri"):
+                raise SystemExit(f"{row['id']}: strong witness requires evidence_uri")
+            for key in (
+                "candidate_carrier",
+                "originating_system_dependency",
+                "independent_persistence",
+                "independent_resources",
+                "independent_agents",
+                "external_consequence",
+                "viable_set_entry",
+            ):
+                if row.get(key) in (None, "unresolved", "not_applicable", "not_the_primary_test"):
+                    raise SystemExit(f"{row['id']}: strong witness has unresolved field {key}")
 
     for row in handholds:
         if not row.get("must_preserve") or not row.get("fatal_loss"):
@@ -172,6 +216,8 @@ def main():
         "The outside stays outside and stays reachable",
         "Others may destroy what I build, if they believe that is right",
         "Does the next dialectical turn remain viable?",
+        "Has the negation crossed?",
+        "represented counterexample",
     ]:
         if needle not in card:
             raise SystemExit(f"README gate missing: {needle}")
@@ -181,7 +227,9 @@ def main():
             "ok:",
             f"{len(contract)} contract rules, {len(handholds)} handholds,",
             f"{len(derivations)} derivations, {len(compressions)} compressions,",
-            f"{len(counterorders)} counterorders, {len(exits)} exits",
+            f"{len(counterorders)} counterorders, {len(witness_protocol)} witness conditions,",
+            f"{len(exteriorization_tests)} exteriorization tests,",
+            f"{len(transmission_events)} transmission events, {len(exits)} exits",
         )
         return
 
