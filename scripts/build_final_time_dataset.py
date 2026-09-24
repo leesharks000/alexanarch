@@ -104,9 +104,9 @@ def main():
         raise SystemExit(f"missing authored dataset dir: {AUTHORED}")
 
     src = SOURCE.read_text(encoding="utf-8")
-    if EXPECTED_AXN not in src or "deposit_number: 1635" not in src:
+    if "deposit_number: 1635" not in src or "hex: 06C9" not in src:
         raise SystemExit(
-            "canonical source identity mismatch: expected deposit #1635 / AXN-06C9"
+            "canonical source identity mismatch: expected deposit #1635 / hex 06C9"
         )
     if "version: v0.5" not in src and 'version: "v0.5"' not in src:
         raise SystemExit("canonical source version mismatch: expected v0.5")
