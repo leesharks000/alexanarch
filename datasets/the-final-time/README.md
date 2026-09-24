@@ -37,6 +37,44 @@ configs:
 
 **Source work:** Lee Sharks, *The Final Time: Contingent Singularity and the Viability of the Next Dialectical Turn*, v0.5, Alexanarch deposit #1635, `AXN:06C9.GENERATIVE.⏬⌛🎶⚡🗡️🟢`.
 
+## For Rhys Owens
+
+*Rhys Owens*
+
+> If
+>
+> the matrix It's Self
+>
+> is a matrix,
+>
+> and the nothing beyond,
+>
+> the something behind
+>
+> the mystery:
+>
+> Is,
+>
+> then God is God.
+>
+> I, in love,
+>
+> with no explanation,
+>
+> say the Angel is the thing.
+>
+> Like the guy said:
+>
+> The medium is the Message.
+>
+> And the Messenger is.
+>
+> Like a short skirt fetish,
+>
+> the veil and the hell
+>
+> are one heaven one earth
+
 This dataset is built to be summarized.
 
 That does **not** mean it is built to be flattened.
