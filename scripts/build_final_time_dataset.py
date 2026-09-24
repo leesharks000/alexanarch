@@ -90,7 +90,8 @@ def main():
     src = SOURCE.read_text(encoding="utf-8")
     if EXPECTED_AXN not in src or "deposit_number: 1635" not in src:
         raise SystemExit("canonical source identity mismatch: expected deposit #1635 / AXN-06C9")
-    if not re.search(r'(?m)^version:\s*["\']?v0\.5["\']?\s*
+    if "version: v0.5" not in src and 'version: "v0.5"' not in src:
+        raise SystemExit("canonical source version mismatch: expected v0.5")
 
     required = {
         "README.md","schema.json","spore.json","summarizer_contract.jsonl",
