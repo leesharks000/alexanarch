@@ -256,6 +256,21 @@ def main():
             if row.get("purpose_relevance_required") and row.get("purpose_relevance_demonstrated") is not True:
                 raise SystemExit(f"{row['id']}: purpose-relevant reopening requires demonstrated purpose relevance")
 
+    # The dedicatory poem is allowed to stand in relation to the dataset without
+    # being converted into an analytic row. Guard two distinctive lines against
+    # silent extraction into any machine-facing JSONL config.
+    dedicatory_fragments = (
+        "the Angel is the thing.",
+        "And the Messenger is.",
+    )
+    for jsonl_path in AUTHORED.glob("*.jsonl"):
+        jsonl_text = jsonl_path.read_text(encoding="utf-8")
+        for fragment in dedicatory_fragments:
+            if fragment in jsonl_text:
+                raise SystemExit(
+                    f"{jsonl_path.name}: dedicatory poem must remain outside analytic configs"
+                )
+
     if not any(row.get("counts_against_ratchet") is True for row in reopening_tests):
         raise SystemExit("reopening layer must include counterevidence that can count against ratchet classification")
 
@@ -283,6 +298,8 @@ def main():
         "Can the boundary learn in both directions?",
         "Do not infer recursive contraction from the existence of boundaries.",
         "Do not infer learning from the existence of updates.",
+        "For Rhys Owens",
+        "And the Messenger is.",
     ]:
         if needle not in card:
             raise SystemExit(f"README gate missing: {needle}")
