@@ -117,15 +117,15 @@ A proposition can negate another proposition without yet negating the material o
 
 The point is not to immunize the theory. The point is to fix the success condition **before** the counterexample is offered.
 
-[
+$
 \boxed{\text{failed exteriorization attempt} \neq \text{proof of impossibility}}
-]
+$
 
 and equally,
 
-[
+$
 \boxed{\text{represented counterexample} \neq \text{successful exteriorization witness}.}
-]
+$
 
 A single clean `exteriorization_witness` can weaken the corresponding strong regime claim.
 
