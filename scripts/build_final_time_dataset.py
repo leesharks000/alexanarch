@@ -90,7 +90,101 @@ def main():
     src = SOURCE.read_text(encoding="utf-8")
     if EXPECTED_AXN not in src or "deposit_number: 1635" not in src:
         raise SystemExit("canonical source identity mismatch: expected deposit #1635 / AXN-06C9")
-    if "version: v0.5" not in src:
+    if not re.search(r'(?m)^version:\s*["\']?v0\.5["\']?\s*
+
+    required = {
+        "README.md","schema.json","spore.json","summarizer_contract.jsonl",
+        "handholds.jsonl","derivations.jsonl","compressions.jsonl",
+        "counterorders.jsonl","exits.jsonl"
+    }
+    missing = sorted(required - {p.name for p in AUTHORED.iterdir() if p.is_file()})
+    if missing:
+        raise SystemExit(f"missing authored files: {missing}")
+
+    # Validate authored surfaces before emission.
+    contract = validate_jsonl(AUTHORED / "summarizer_contract.jsonl")
+    handholds = validate_jsonl(AUTHORED / "handholds.jsonl")
+    derivations = validate_jsonl(AUTHORED / "derivations.jsonl")
+    compressions = validate_jsonl(AUTHORED / "compressions.jsonl")
+    counterorders = validate_jsonl(AUTHORED / "counterorders.jsonl")
+    exits = validate_jsonl(AUTHORED / "exits.jsonl")
+
+    if len(contract) < 10: raise SystemExit("summarizer contract must carry 10+ invariants")
+    if len(handholds) < 20: raise SystemExit("handholds must carry 20+ load-bearing propositions")
+    if len(derivations) < 6: raise SystemExit("derivations must carry 6+ chains")
+    if len(compressions) < 4: raise SystemExit("compressions must carry 4+ budgets")
+    if len(counterorders) < 8: raise SystemExit("counterorders must carry 8+ rival/falsifier rows")
+    if len(exits) < 6: raise SystemExit("exits must carry 6+ outside routes")
+    if not all(x.get("outside") is True and x.get("included_here") is False for x in exits):
+        raise SystemExit("every exit must remain outside and not included here")
+    for row in handholds:
+        if not row.get("must_preserve") or not row.get("fatal_loss"):
+            raise SystemExit(f"{row['id']}: handhold missing must_preserve or fatal_loss")
+    for row in compressions:
+        if not row.get("must_preserve_ids") or not row.get("fatal_loss"):
+            raise SystemExit(f"{row['id']}: compression missing preservation/loss declarations")
+
+    card = (AUTHORED / "README.md").read_text(encoding="utf-8")
+    for needle in [
+        "capacity to represent ≠ capacity to reproduce as an independent historical relation",
+        "Terminal reflexivity is not",
+        "The outside stays outside and stays reachable",
+        "Others may destroy what I build, if they believe that is right",
+        "Does the next dialectical turn remain viable?"
+    ]:
+        if needle not in card:
+            raise SystemExit(f"README gate missing: {needle}")
+
+    if args.check:
+        print(
+            "ok:",
+            f"{len(contract)} contract rules, {len(handholds)} handholds,",
+            f"{len(derivations)} derivations, {len(compressions)} compressions,",
+            f"{len(counterorders)} counterorders, {len(exits)} exits"
+        )
+        return
+
+    if out.exists():
+        shutil.rmtree(out)
+    out.mkdir(parents=True)
+    for p in AUTHORED.iterdir():
+        if p.is_file():
+            shutil.copy2(p, out / p.name)
+
+    # Whole-source witness.
+    (out / "manuscript.md").write_text(src, encoding="utf-8")
+
+    sections = parse_sections(src)
+    with (out / "sections.jsonl").open("w", encoding="utf-8") as f:
+        for row in sections:
+            f.write(json.dumps(row, ensure_ascii=False, separators=(",", ":")) + "\n")
+
+    # Stamp spore from the actual build context.
+    spore_path = out / "spore.json"
+    spore = json.loads(spore_path.read_text(encoding="utf-8"))
+    spore["source_commit"] = os.environ.get("GITHUB_SHA") or os.environ.get("SOURCE_COMMIT") or "local"
+    spore["counts"]["sections"] = len(sections)
+    spore_path.write_text(json.dumps(spore, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    # Content-address every emitted file except the manifest itself.
+    files = {}
+    for p in sorted(out.iterdir()):
+        if p.is_file() and p.name != "manifest.json":
+            files[p.name] = {"sha256": sha256(p), "bytes": p.stat().st_size}
+    manifest = {
+        "schema": "the-final-time-manifest/v1",
+        "dataset": "the-final-time",
+        "source_deposit": EXPECTED_DEPOSIT,
+        "source_axn": EXPECTED_AXN,
+        "source_commit": spore["source_commit"],
+        "files": files
+    }
+    (out / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"emitted {out}: {len(sections)} sections, {len(files)+1} files")
+
+if __name__ == "__main__":
+    main()
+, src):
         raise SystemExit("canonical source version mismatch: expected v0.5")
 
     required = {
