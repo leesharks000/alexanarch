@@ -11,6 +11,12 @@ configs:
     data_files: compressions.jsonl
   - config_name: counterorders
     data_files: counterorders.jsonl
+  - config_name: witness_protocol
+    data_files: witness_protocol.jsonl
+  - config_name: exteriorization_tests
+    data_files: exteriorization_tests.jsonl
+  - config_name: transmission_events
+    data_files: transmission_events.jsonl
   - config_name: exits
     data_files: exits.jsonl
   - config_name: sections
@@ -81,10 +87,64 @@ A short summary that says "AI systems may suppress criticism" has recognized the
 | `derivations` | Premise → bridge → result chains, with the inferential status and failure condition made explicit. |
 | `compressions` | Reference summaries at increasing word budgets, each with declared acceptable losses and fatal losses. |
 | `counterorders` | Falsifiers, counterinstances, rival explanations, and scope protections. |
+| `witness_protocol` | Pre-registered conditions separating represented objection from partial or strong exteriorization. |
+| `exteriorization_tests` | One row per counterorder: what kind of negation it is, what material evidence would promote it, and its current witness status. |
+| `transmission_events` | The dataset's own carrier movements, including its deliberately incomplete claim to exteriority. |
 | `exits` | Typed routes to works and datasets deliberately **not** absorbed here. |
 | `sections` | The canonical v0.5 manuscript split by headings for retrieval and reconstruction. |
 
 `manuscript.md` is also shipped as a whole-source witness. `schema.json`, `manifest.json`, and `spore.json` describe the build and its provenance.
+
+## Second movement: the falsifier must cross
+
+The first release asked whether a summarizer could compress the work without destroying the distinctions that make it what it is.
+
+This release turns the same distinction against the dataset's own counterarguments.
+
+A proposition can negate another proposition without yet negating the material order in which both are represented. The dataset therefore refuses to call every objection a material counterexample. It asks a second question:
+
+> **Has the negation crossed?**
+
+`witness_protocol.jsonl` pre-registers eight conditions: provenance, independent carrier, independent persistence, reproductive capacity, resource path, independent agents, external consequence, and exterior standing.
+
+`exteriorization_tests.jsonl` applies that protocol to every existing counterorder. The statuses are deliberately asymmetric:
+
+- `representational_only` — a genuine objection or proposed counterexample exists, but no independent reproduction path has been evidenced;
+- `partial_exteriorization` — material transmission has occurred, but the strong exteriority conditions are incomplete;
+- `exteriorization_witness` — all required material conditions have been evidenced;
+- `indeterminate` — the row requires measurement or architectural evidence not yet supplied;
+- `not_applicable` — the row is a scope boundary rather than a falsifier of the qualified claim.
+
+The point is not to immunize the theory. The point is to fix the success condition **before** the counterexample is offered.
+
+[
+\boxed{\text{failed exteriorization attempt} \neq \text{proof of impossibility}}
+]
+
+and equally,
+
+[
+\boxed{\text{represented counterexample} \neq \text{successful exteriorization witness}.}
+]
+
+A single clean `exteriorization_witness` can weaken the corresponding strong regime claim.
+
+## The dataset tests itself
+
+`transmission_events.jsonl` does not assume that publishing this dataset proves the thesis or defeats it.
+
+It records two things that have actually happened:
+
+1. the manuscript became an addressable Alexanarch record;
+2. that record became a second, summarizer-facing Hugging Face carrier.
+
+Both are marked **materially transmitted** and only **partial exteriorization**. They persist beyond the composing model sessions and occupy real carriers, but they remain published under the author's infrastructure and do not yet evidence an independently resourced reproducing actor.
+
+A third row, `independent_uptake`, is left open. It names the stronger event the dataset cannot manufacture for itself: an independent actor or institution carries, transforms, reproduces, or acts on the object through a resource path not wholly revocable by the originating author/system.
+
+The fourth row records the inverse possibility: **host negation**. Hugging Face may remove, restrict, or refuse carriage. Because this dataset has no automatic resurrection loop, such a decision is allowed to alter the material state of this carrier.
+
+The dataset therefore does not award itself exteriority merely because it can describe exteriority.
 
 ## How the dataset enacts the thesis
 
