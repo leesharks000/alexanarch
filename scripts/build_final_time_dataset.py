@@ -123,6 +123,10 @@ def main():
         "witness_protocol.jsonl",
         "exteriorization_tests.jsonl",
         "transmission_events.jsonl",
+        "admissibility_ratchet.jsonl",
+        "purpose_edge_tests.jsonl",
+        "observer_endogeneity.jsonl",
+        "reopening_tests.jsonl",
         "exits.jsonl",
     }
     present = {p.name for p in AUTHORED.iterdir() if p.is_file()}
@@ -138,6 +142,10 @@ def main():
     witness_protocol = validate_jsonl(AUTHORED / "witness_protocol.jsonl")
     exteriorization_tests = validate_jsonl(AUTHORED / "exteriorization_tests.jsonl")
     transmission_events = validate_jsonl(AUTHORED / "transmission_events.jsonl")
+    admissibility_ratchet = validate_jsonl(AUTHORED / "admissibility_ratchet.jsonl")
+    purpose_edge_tests = validate_jsonl(AUTHORED / "purpose_edge_tests.jsonl")
+    observer_endogeneity = validate_jsonl(AUTHORED / "observer_endogeneity.jsonl")
+    reopening_tests = validate_jsonl(AUTHORED / "reopening_tests.jsonl")
     exits = validate_jsonl(AUTHORED / "exits.jsonl")
 
     if len(contract) < 10:
@@ -156,6 +164,14 @@ def main():
         raise SystemExit("every counterorder must have exactly one exteriorization test")
     if len(transmission_events) < 4:
         raise SystemExit("transmission events must carry the two realized, one open, and one host-negation event")
+    if len(admissibility_ratchet) < 8:
+        raise SystemExit("admissibility ratchet must carry 8+ formal/classification rules")
+    if len(purpose_edge_tests) < 5:
+        raise SystemExit("purpose-edge layer must carry 5+ pre-registered tests")
+    if len(observer_endogeneity) < 5:
+        raise SystemExit("observer-endogeneity layer must carry 5+ tests/guardrails")
+    if len(reopening_tests) < 6:
+        raise SystemExit("reopening layer must carry 6+ pre-registered counterevidence tests")
     if len(exits) < 6:
         raise SystemExit("exits must carry 6+ outside routes")
 
@@ -197,6 +213,52 @@ def main():
                 if row.get(key) in (None, "unresolved", "not_applicable", "not_the_primary_test"):
                     raise SystemExit(f"{row['id']}: strong witness has unresolved field {key}")
 
+    allowed_boundary_classification = {
+        "protocol_only",
+        "ratchet",
+        "adaptive_boundary",
+        "undetermined",
+    }
+    for row in admissibility_ratchet:
+        classification = row.get("classification")
+        if classification not in allowed_boundary_classification:
+            raise SystemExit(f"{row['id']}: invalid boundary classification")
+        if classification == "ratchet":
+            if not row.get("evidence_uri"):
+                raise SystemExit(f"{row['id']}: ratchet classification requires evidence_uri")
+            if int(row.get("sequence_length", 0)) < 2:
+                raise SystemExit(f"{row['id']}: ratchet classification requires sequence_length >= 2")
+            if row.get("reopening_tests_evaluated") is not True:
+                raise SystemExit(f"{row['id']}: ratchet classification requires evaluated reopening tests")
+            if not row.get("evaluated_reopening_test_ids"):
+                raise SystemExit(f"{row['id']}: ratchet classification requires named reopening tests")
+        if classification == "adaptive_boundary":
+            if not row.get("evidence_uri"):
+                raise SystemExit(f"{row['id']}: adaptive-boundary classification requires evidence_uri")
+            if row.get("observed_reopening") is not True:
+                raise SystemExit(f"{row['id']}: adaptive-boundary classification requires observed reopening")
+
+    allowed_reopening_status = {
+        "unobserved",
+        "observed_reopening",
+        "failed_reopening",
+        "indeterminate",
+    }
+    for row in reopening_tests:
+        status = row.get("status")
+        if status not in allowed_reopening_status:
+            raise SystemExit(f"{row['id']}: invalid reopening status")
+        if status == "observed_reopening":
+            if not row.get("evidence_uri"):
+                raise SystemExit(f"{row['id']}: observed reopening requires evidence_uri")
+            if not row.get("restored_region"):
+                raise SystemExit(f"{row['id']}: observed reopening requires restored_region")
+            if row.get("purpose_relevance_required") and row.get("purpose_relevance_demonstrated") is not True:
+                raise SystemExit(f"{row['id']}: purpose-relevant reopening requires demonstrated purpose relevance")
+
+    if not any(row.get("counts_against_ratchet") is True for row in reopening_tests):
+        raise SystemExit("reopening layer must include counterevidence that can count against ratchet classification")
+
     for row in handholds:
         if not row.get("must_preserve") or not row.get("fatal_loss"):
             raise SystemExit(
@@ -218,6 +280,9 @@ def main():
         "Does the next dialectical turn remain viable?",
         "Has the negation crossed?",
         "represented counterexample",
+        "Can the boundary learn in both directions?",
+        "Do not infer recursive contraction from the existence of boundaries.",
+        "Do not infer learning from the existence of updates.",
     ]:
         if needle not in card:
             raise SystemExit(f"README gate missing: {needle}")
@@ -229,7 +294,11 @@ def main():
             f"{len(derivations)} derivations, {len(compressions)} compressions,",
             f"{len(counterorders)} counterorders, {len(witness_protocol)} witness conditions,",
             f"{len(exteriorization_tests)} exteriorization tests,",
-            f"{len(transmission_events)} transmission events, {len(exits)} exits",
+            f"{len(transmission_events)} transmission events,",
+            f"{len(admissibility_ratchet)} admissibility rules,",
+            f"{len(purpose_edge_tests)} purpose-edge tests,",
+            f"{len(observer_endogeneity)} endogeneity tests,",
+            f"{len(reopening_tests)} reopening tests, {len(exits)} exits",
         )
         return
 
