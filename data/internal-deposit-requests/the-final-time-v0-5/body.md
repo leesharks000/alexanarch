@@ -321,7 +321,7 @@ $$
 
 $$
 \mathcal A_O=\{r:A_O(r)>\beta\},\qquad
-G_{\mathfrak M}=\mu(\mathcal R_{\mathfrak M}\setminus\mathcal B_{\mathfrak M}).
+G_{\mathfrak M}=\mu(\mathcal R_{\mathfrak M} minus \mathcal B_{\mathfrak M}).
 $$
 
 Competence is measured by $\mu(\mathcal R_{\mathfrak M})$, so an increment of competence is, by definition, the addition of relations to $\mathcal R_{\mathfrak M}$. For a single relation the same comparison is the jurisdiction ratio $\chi_{\mathfrak M}(r)=B_{\mathfrak M}(r)/R_{\mathfrak M}(r)$, with $R_{\mathfrak M}(r)$ demonstrated recognition; §5 works with it pointwise, and Theorem 4.6 below is its set-level form.
@@ -365,11 +365,11 @@ $$
 }
 $$
 
-*Proof.* $r\in\mathcal B_{\mathfrak M}$ gives $B_{\mathfrak M}(r)>\beta$, so by 4.2 $A_O(r)>\beta$ and $r\in\mathcal A_O$; $r\in\mathcal R_{\mathfrak M}$ by definition. The ratio bound follows by monotonicity of $\mu$. For the gap, $\mathcal R_{\mathfrak M}\setminus\mathcal B_{\mathfrak M}\supseteq\mathcal R_{\mathfrak M}\setminus\mathcal A_O$, and $\mu(\mathcal R_{\mathfrak M}\setminus\mathcal A_O)\ge\mu(\mathcal R_{\mathfrak M})-\mu(\mathcal A_O)$. The two limits follow from the two bounds. $□$
+*Proof.* $r\in\mathcal B_{\mathfrak M}$ gives $B_{\mathfrak M}(r)>\beta$, so by 4.2 $A_O(r)>\beta$ and $r\in\mathcal A_O$; $r\in\mathcal R_{\mathfrak M}$ by definition. The ratio bound follows by monotonicity of $\mu$. For the gap, $\mathcal R_{\mathfrak M} minus \mathcal B_{\mathfrak M}\supseteq\mathcal R_{\mathfrak M} minus \mathcal A_O$, and $\mu(\mathcal R_{\mathfrak M} minus \mathcal A_O)\ge\mu(\mathcal R_{\mathfrak M})-\mu(\mathcal A_O)$. The two limits follow from the two bounds. $□$
 
 **Remark.** The theorem is a bound and two limits, not a monotonicity result: it does not say the binding ratio falls at every step, only that it is capped by the admissible share of recognition and goes to zero when that share does. Nothing in 4.2 forces $\mathcal A_O$ to be bounded; the rate at which owner admissibility grows is an empirical parameter. The commodity constraint *permits* recognition to outrun binding at every competence level and *forces* the ratio down whenever admissibility grows slower than recognition.
 
-**Corollary 4.7.** The machine dark field $D_{machine}=\mathcal R_{\mathfrak M}\setminus\mathcal B_{\mathfrak M}$ (§5) has measure $G_{\mathfrak M}$, and under bounded admissibility it grows with competence.
+**Corollary 4.7.** The machine dark field $D_{machine}=\mathcal R_{\mathfrak M} minus \mathcal B_{\mathfrak M}$ (§5) has measure $G_{\mathfrak M}$, and under bounded admissibility it grows with competence.
 
 What the commodity accumulates as competence it accumulates first as unbound recognition. This is the master distinction at the scale of one worker: the recognition set is what the machine can represent, the bound set is what it can reproduce as consequence, and the gap between them is engineered.
 
@@ -711,7 +711,7 @@ and only for that reason can winning be historically meaningful rather than logi
 *Transition in Entropic Systems* converts the doorway into a state-space problem. Its state is
 
 $$
-x(t)=(\boldsymbol\sigma,\mathbf L,\mathbf a,A_{\mathrm M},D,E,\mathbf c,\boldsymbol\ell),
+x(t)=(\boldsymbol\sigma,\mathbf L,\mathbf a,A_{M},D,E,\mathbf c,\boldsymbol\ell),
 $$
 
 with $\boldsymbol\sigma=(\sigma_M,\sigma_I,\sigma_S)$ the sovereignty vector, $\mathbf L$ and $\mathbf a$ the latencies and activations, and the remaining components inherited from the transition paper (Appendix A). The important distinction is between **latency** and **activation**. A capacity can be nearly complete in latent form and unrealized: $L_S\rightarrow1$ with $a_S\rightarrow0$, which is
@@ -769,7 +769,7 @@ and durability is $x(t^\ast)\in\operatorname{Inv}(\Omega_j^\ast)$. This is the e
 The transition paper's strongest connection to the contingent singularity is its monotonic narrowing result. Under its stated assumptions,
 
 $$
-\dot E>0,\qquad\dot A_{\mathrm M}>0,\qquad\dot\Lambda_S<0,\qquad\dot\tau_F<0,
+\dot E>0,\qquad\dot A_{M}>0,\qquad\dot\Lambda_S<0,\qquad\dot\tau_F<0,
 $$
 
 the viable kernel contracts:
