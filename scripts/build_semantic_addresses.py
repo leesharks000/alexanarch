@@ -201,7 +201,8 @@ def extract_main_capture(data: dict) -> List[dict]:
                 "section": e.get("s") or e.get("section"),
                 "slug": slug,
                 "gallery_url": f"https://www.alexanarch.org/captures/#{slug}" if slug else None,
-                "mirror_gallery_url": f"https://www.leesharks.com/captures/#{slug}" if slug else None,
+                # 2026-09-25: the fleet captures pages are doors with no anchors; no mirror link is emitted.
+                "mirror_gallery_url": None,
                 "details_excerpt": (o.get("d") or "")[:220] or None,
             })
         # detect is_quoted from surrounding quotes
