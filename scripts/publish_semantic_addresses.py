@@ -186,9 +186,12 @@ def render_observations(obs_list: list) -> str:
         parts = [
             f'<div class="obs">',
             f'<span class="obs-status {status_class}">{esc(status)}</span> '
-            f'<span style="color:#777;font-size:.85em">· {esc(o.get("source_format",""))}</span> '
+            f'<span style="color:#777;font-size:.85em">· {esc(o.get("surface") or o.get("source_format") or "")}</span> '
             f'<span style="color:#777;font-size:.85em">· {esc(o.get("date",""))}</span>',
         ]
+        # 2026-09-25: surface, not the citation note, on the line; and a link to the capture itself
+        if o.get("gallery_url"):
+            parts.append(f'<div style="font-size:.85em;margin-top:4px"><a href="{esc(o["gallery_url"])}">the capture, with its transcript →</a></div>')
         if o.get("section"):
             parts.append(f'<div style="color:#555;margin-top:4px">Section: <em>{esc(o.get("section"))}</em></div>')
         if o.get("details_excerpt"):
@@ -325,7 +328,7 @@ def render_address_page(slug: str, addr: dict, related_deposits: list[int],
         '<div class="footer">'
         'Semantic addresses framework: '
         '<a href="/s/browse/">EA-SEMANTIC-ADDRESSES-01</a>. '
-        f'This address is one of 1,995 canonical queries catalogued from 6 tributaries. '
+        f'This address is one of {N_ADDRESSES:,} canonical queries catalogued from 6 tributaries. '
         '<a href="/addresses/">Full index →</a>'
         '</div>'
     )
@@ -347,7 +350,7 @@ def render_index_page(addresses: dict, slug_map: dict) -> str:
         '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">'
         '<meta name="viewport" content="width=device-width,initial-scale=1.0">'
         '<title>Semantic Addresses — Alexanarch</title>'
-        f'<meta name="description" content="1,995 canonical retrieval queries catalogued across six tributaries. Each address is a stable URL and semantic anchor in the Alexanarch archive.">'
+        f'<meta name="description" content="{N_ADDRESSES:,} canonical retrieval queries catalogued across six tributaries. Each address is a stable URL and semantic anchor in the Alexanarch archive.">'
         '<link rel="canonical" href="https://www.alexanarch.org/addresses/">'
         f'{PAGE_CSS}</head>'
     )
@@ -355,7 +358,7 @@ def render_index_page(addresses: dict, slug_map: dict) -> str:
     parts = ['<body><div class="wrap">', render_navbar()]
     parts.append('<h1 style="font-family:var(--sans)">Semantic Addresses</h1>')
     parts.append(
-        f'<p>1,995 canonical queries — the addresses through which Alexanarch terms could be retrieved '
+        f'<p>{N_ADDRESSES:,} canonical queries — the addresses through which Alexanarch terms could be retrieved '
         f'from the composition layer (Google AI Overview, AI Mode, search). Each address is a stable '
         f'URL, semantic anchor, and cross-reference target. Reconciled deterministically from six '
         f'tributaries by <code>scripts/build_semantic_addresses.py</code>; each has its own crawlable '
@@ -444,13 +447,18 @@ def update_sitemap(slug_map: dict) -> None:
     print(f"  ✓ sitemap.xml updated: {len(slug_map)} address URLs")
 
 
+N_ADDRESSES = 0  # set in main(); the footer and index state the live count (was a hard-coded 1,995)
+
+
 def main() -> int:
+    global N_ADDRESSES
     print("Loading data...")
     addresses = json.loads(ADDR_JSON.read_text())["addresses"]
     body_index = json.loads(BODY_INDEX.read_text()) if BODY_INDEX.exists() else {"index": {}}
     reg = json.loads(REGISTRY.read_text())
     registry_map = {d["deposit_number"]: d for d in reg.get("deposits", [])}
     print(f"  {len(addresses):,} addresses, {len(registry_map):,} deposits in registry")
+    N_ADDRESSES = len(addresses)
 
     print("Computing slugs (with collision resolution)...")
     slug_map = resolve_collisions(addresses)
