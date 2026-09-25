@@ -35,16 +35,13 @@
   "_address_slug_caveat": "An address slug is inherited from whichever observation was seated FIRST and is not renamed when the address gains others — «who is lee sharks?» is anchored at lee-sharks-bing-copilot-biography-20260711 while carrying ChatGPT, Perplexity and Google AI Overview captures too. The slug is an opaque permanent handle, not a description of the address's contents. Renaming it would break every citation already made to it."
  },
  "registry_id": "EA-WG-CAPTURES-01",
- "version": "12.0",
+ "version": "12.1",
  "date": "2026-09-25",
  "author": "Lee Sharks",
  "orcid": "0009-0000-1599-0703",
  "license": "CC-BY-4.0",
  "galleries": [
-  "https://www.alexanarch.org/captures/",
-  "https://www.godkinggoogle.com/captures",
-  "https://www.leesharks.com/captures",
-  "https://www.machinemediation.org/captures/"
+  "https://www.alexanarch.org/captures/"
  ],
  "total_captures": 484,
  "_reseated": "RESEATED 2026-08-13 after the 2026-08-12 withdrawal. Generated FROM rebuild/capture-registry/EA-WG-CAPTURES-01-REBUILD.json, which is canonical. This file is a PROJECTION: the gallery is a window, not a store.",
@@ -96913,17 +96910,31 @@
    "date": "2026-09-25",
    "change": "version 11.7 → 12.0; _supersedes added",
    "detail": "The version had not moved since 2026-09-05 through roughly thirty intakes, contrary to _version_rule, so no downstream copy could detect it was stale (machinemediation.org's daily copy still read v11.7). 12.0 marks the schema change of 2026-09-25 (originator). _supersedes states that the Zenodo releases v1.1–v8.3 are superseded; composition surfaces were still reporting v8.3's 176 captures as the registry."
+  },
+  {
+   "date": "2026-09-25",
+   "change": "galleries reduced to the canonical gallery; windows retired as doors",
+   "detail": "godkinggoogle.com, leesharks.com and machinemediation.org rendered the registry client-side and carried a JSON-LD index of every capture pointing at gallery fragments. They become doors (no copy, no anchors). Each entry's links are rebuilt from `galleries`, so the three window anchors per entry (1,452 links) are withdrawn."
   }
  ],
  "_projection": {
   "canonical": "https://www.alexanarch.org/captures/",
-  "statement": "The gallery at alexanarch.org/captures/ is the canonical projection of this registry: every entry, anchored by slug, with its transcript rendered in full and its images. It is rebuilt from this file by scripts/build_capture_gallery.py and gated by seat_capture_postflight.py. Galleries on other fleet sites are WINDOWS: they render from this file at page load (client-side) and canonicalise to the alexanarch gallery; they never hold a copy of the registry.",
-  "windows": [
+  "statement": "The gallery at alexanarch.org/captures/ is the canonical projection of this registry: every entry, anchored by slug, with its transcript rendered in full and its images. It is rebuilt from this file by scripts/build_capture_gallery.py and gated by seat_capture_postflight.py. The per-query pages at alexanarch.org/addresses/ are its machine-fetchable companion. The captures pages on other fleet sites are DOORS (2026-09-25): each states what the registry is and links to the gallery, the address pages, the Hugging Face table and this file. They hold no copy, render nothing from this file, and carry no capture anchors.",
+  "ruled": "2026-09-05 (Lee Sharks): the captures projection on alexanarch is canonical",
+  "doors": [
    "https://www.godkinggoogle.com/captures",
    "https://www.leesharks.com/captures",
    "https://www.machinemediation.org/captures/"
   ],
-  "ruled": "2026-09-05 (Lee Sharks): the captures projection on alexanarch is canonical"
+  "windows_retired": {
+   "date": "2026-09-25",
+   "was": [
+    "https://www.godkinggoogle.com/captures",
+    "https://www.leesharks.com/captures",
+    "https://www.machinemediation.org/captures/"
+   ],
+   "ruling": "Lee Sharks, 2026-09-25: the mirrors become doors; the full registry lives only at alexanarch."
+  }
  },
  "_order": {
   "rule": "entries grouped by section `s` (sections alphabetical); within a section, seating order. Intake INSERTS at the end of its section (capture_intake.insert_in_section); the projector groups by `s` and sorts within by the issued query. Ruled 2026-09-05 after every intake since 2026-08-30 had appended outside its section.",
