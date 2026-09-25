@@ -171,47 +171,59 @@ def _capture_links(repo_root: str = ".") -> dict:
 
 def extract_main_capture(data: dict) -> List[dict]:
     """
-    EA-WG-CAPTURES-01.json — each entry is a capture event.
-    Compressed keys: s=section, q=query, sf=source_format, mt=match_type/status, d=details.
+    EA-WG-CAPTURES-01.json — each entry is an address; its root is its first observation and
+    `observations` holds the rest. Compressed keys: s=section, q=query, sf=source_format,
+    mt=match_type/status, d=details.
+
+    2026-09-25: (1) every observation is extracted, not only the root — the layer counted 555
+    observations against the registry's 651 — it now follows the registry's own counting rule; (2) gallery_url is the canonical projection,
+    alexanarch.org/captures (ruled 2026-09-05), not a window; (3) each observation carries its
+    surface.
     """
     out = []
     for e in data.get("entries", []):
         query = e.get("q") or e.get("query") or ""
         if not query:
             continue
-        slug = e.get("slug", "")
-        gallery = f"https://godkinggoogle.vercel.app/captures/#{slug}" if slug else None
-        mirror = f"https://leesharks.com/captures/#{slug}" if slug else None
-        obs = {
-            "source": "mm-main-capture",
-            "date": e.get("date") or "",
-            "status": e.get("mt") or e.get("status"),
-            "source_format": e.get("sf") or e.get("source_format"),
-            "section": e.get("s") or e.get("section"),
-            "slug": slug,
-            "gallery_url": gallery,
-            "mirror_gallery_url": mirror,
-            "details_excerpt": (e.get("d") or "")[:220] or None,
-        }
+        root_slug = e.get("slug", "")
+        # The registry's own rule (capture_intake.py, 2026-09-21): when `observations` exists it is the
+        # complete set, with the root carried as observations[0]; otherwise the root is the one observation.
+        rows = [o for o in (e.get("observations") or []) if isinstance(o, dict)] or [e]
+        obs_list = []
+        for o in rows:
+            slug = o.get("slug") or root_slug
+            obs_list.append({
+                "source": "mm-main-capture",
+                "date": o.get("date") or "",
+                "status": o.get("mt") or e.get("mt") or o.get("status") or e.get("status"),
+                "surface": o.get("surface") or e.get("surface"),
+                "source_format": o.get("sf") or e.get("sf") or e.get("source_format"),
+                "section": e.get("s") or e.get("section"),
+                "slug": slug,
+                "gallery_url": f"https://www.alexanarch.org/captures/#{slug}" if slug else None,
+                "mirror_gallery_url": f"https://www.leesharks.com/captures/#{slug}" if slug else None,
+                "details_excerpt": (o.get("d") or "")[:220] or None,
+            })
         # detect is_quoted from surrounding quotes
         is_q = query.startswith('"') and query.endswith('"')
-        link = _capture_links().get(slug) or {}
+        link = _capture_links().get(root_slug) or {}
         _deps = link.get("deposits") or []
         # refers_to carries the human-readable object of the address, which is
         # what infer_type() classifies on; deposit_links carries the edges.
         _refers = [x["title"] for x in _deps if x.get("primary")] or \
                   [x["title"] for x in _deps]
-        out.append({
-            "raw_query": query,
-            "is_quoted": is_q,
-            "refers_to": _refers,
-            "deposit_links": [{k: x[k] for k in
-                               ("deposit_number", "axn", "record_url", "method", "primary")}
-                              for x in _deps],
-            "type": None,
-            "battery_membership": [],
-            "observation": obs,
-        })
+        for i, obs in enumerate(obs_list):
+            out.append({
+                "raw_query": query,
+                "is_quoted": is_q,
+                "refers_to": _refers if i == 0 else [],
+                "deposit_links": [{k: x[k] for k in
+                                   ("deposit_number", "axn", "record_url", "method", "primary")}
+                                  for x in _deps] if i == 0 else [],
+                "type": None,
+                "battery_membership": [],
+                "observation": obs,
+            })
     return out
 
 
