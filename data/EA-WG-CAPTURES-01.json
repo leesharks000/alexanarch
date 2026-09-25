@@ -35,8 +35,8 @@
   "_address_slug_caveat": "An address slug is inherited from whichever observation was seated FIRST and is not renamed when the address gains others — «who is lee sharks?» is anchored at lee-sharks-bing-copilot-biography-20260711 while carrying ChatGPT, Perplexity and Google AI Overview captures too. The slug is an opaque permanent handle, not a description of the address's contents. Renaming it would break every citation already made to it."
  },
  "registry_id": "EA-WG-CAPTURES-01",
- "version": "11.7",
- "date": "2026-09-05",
+ "version": "12.0",
+ "date": "2026-09-25",
  "author": "Lee Sharks",
  "orcid": "0009-0000-1599-0703",
  "license": "CC-BY-4.0",
@@ -96908,6 +96908,11 @@
    "change": "entry order restored to section-grouped, chronological within section",
    "detail": "v11.6 had been re-sorted to strict date order, which interleaved all 21 sections — 254 section runs across 21 sections, meaning almost every entry sat between two unrelated ones. v9.6 and v8.11 both grouped by section (33 runs across 9 sections) and agree with each other 188/194 on ordering; v11.6 agreed with each of them only ~64%. Grouping restored: 21 runs.",
    "operator": "Claude (substrate) under MANUS direction"
+  },
+  {
+   "date": "2026-09-25",
+   "change": "version 11.7 → 12.0; _supersedes added",
+   "detail": "The version had not moved since 2026-09-05 through roughly thirty intakes, contrary to _version_rule, so no downstream copy could detect it was stale (machinemediation.org's daily copy still read v11.7). 12.0 marks the schema change of 2026-09-25 (originator). _supersedes states that the Zenodo releases v1.1–v8.3 are superseded; composition surfaces were still reporting v8.3's 176 captures as the registry."
   }
  ],
  "_projection": {
@@ -97414,5 +97419,13 @@
   "the_daynight_result": "The sharpest result in the batch is a control on the same day's Cranes failure. Asked for 'Day and Night: Conversations with Sapphic Desire', the same surface in the same auth state ATTRIBUTED IT CORRECTLY TO REBEKAH CRANES, read its five movements, its calls-and-responses structure with Catullus 51 against Sappho 31, its preservation of lacunae, and quoted the translation. The name that collapsed when queried as a person resolved when queried as the author of a titled work — which localises the failure at entity resolution rather than at retrieval.",
   "the_constitution_result": "The surface performed the marked substitution that EA-MPAI-CRANES-01 (#1604) asks for, unprompted and on the same day: asked for the Constitution of the Semantic Economy 'by ayanna vox', it noticed that the circulating enacted text names Lee Sharks while other records connect Vox to a related title, STATED THE AMBIGUITY, and offered the operator the choice rather than resolving it silently.",
   "evidence_held": "Marks the ChatGPT Psychosis prospectus as IN DEVELOPMENT rather than published, and holds it through the turn; states at Combat Scholasticism that the documentation is fragmentary and separates documented structure from interpretation."
+ },
+ "_supersedes": {
+  "statement": "This is the current AI Overview Capture Registry. It supersedes every Zenodo release of EA-WG-CAPTURES-01 (v1.1 through v8.3, the last at 176 captures), which were severed when the host terminated the account on 2026-06-19 and survive only as tombstones and cached descriptions. Any count, version or finding read from those releases is out of date; this file, its gallery at https://www.alexanarch.org/captures/ and its per-query pages at https://www.alexanarch.org/addresses/ are the registry.",
+  "severed_releases": "Zenodo v1.1–v8.3",
+  "last_severed_count": 176,
+  "severed_on": "2026-06-19",
+  "current": "https://www.alexanarch.org/data/EA-WG-CAPTURES-01.json",
+  "ruled": "2026-09-25 (Lee Sharks): the overview registry must be inspectable, and read as current"
  }
 }
