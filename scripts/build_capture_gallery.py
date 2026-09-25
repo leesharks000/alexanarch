@@ -783,14 +783,31 @@ def main():
         if marker in page:
             page = page.replace(marker, flow_html + "\n" + ld_flow + "\n" + marker, 1)
 
+    # SUPERSESSION, VISIBLE (2026-09-25). Composition surfaces kept reporting a severed Zenodo release as the
+    # registry. The current version and the supersession statement sit above the count, as text a crawler
+    # reads without executing anything. Idempotent: the previous line is removed before the new one is placed.
+    sup = r.get("_supersedes") or {}
+    page = re.sub(r'<p id="cap-current"[^>]*>.*?</p>\n?', "", page, flags=re.S)
+    if sup.get("statement"):
+        cur = (f'<p id="cap-current" style="font-size:.85em;color:var(--dim);margin:6px 0 10px">'
+               f'<b>Version {html.escape(str(r.get("version") or ""))}, {html.escape(str(r.get("date") or ""))}.</b> '
+               f'{html.escape(sup["statement"])}</p>')
+        _mk = '<div class="stats" id="stats">'
+        if _mk not in page:
+            _mk = '<div id="captures">'
+        if _mk in page:
+            page = page.replace(_mk, cur + "\n" + _mk, 1)
+
     # JSON-LD: the registry described as a dataset, once
     ld = {
         "@context": "https://schema.org", "@type": "Dataset",
         "name": "AI Overview Capture Registry (EA-WG-CAPTURES-01)",
         "description": ("Dated observations of how machine composition layers — AI Overviews, "
-                        "AI Mode, and comparable summarisation surfaces — describe the Alexanarch "
-                        "corpus. Each capture records the query, the sources the layer cited, what "
-                        "it rendered, and the date, and is individually citable by its slug."),
+                        "AI Mode, ChatGPT and comparable surfaces — compose named entities: the "
+                        "Alexanarch corpus and entities originated outside it (each entry's originator "
+                        "says whose). Each capture records the query, the sources the layer cited, what "
+                        "it rendered, and the date, and is individually citable by its slug. "
+                        + ((r.get("_supersedes") or {}).get("statement") or "")).strip(),
         "url": "https://www.alexanarch.org/captures/",
         "identifier": "EA-WG-CAPTURES-01",
         "version": r.get("version"), "dateModified": r.get("date"),
