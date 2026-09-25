@@ -618,6 +618,19 @@ def card(e):
     # exists solely for the SOLITARY case, where no <details> is written and an
     # observation slug that differs from the card id would otherwise resolve
     # nowhere.
+    # ORIGINATOR (2026-09-25): whose entity the query asks about, when ruled — on the face of the card, as a
+    # data attribute a filter can use, and as microdata. Out-universe entities must not read as the archive's own.
+    _o = e.get("originator") or {}
+    _rel = {"archive": "inside the archive", "external": "outside the archive (out-universe)",
+            "none": "no originated entity"}.get(_o.get("relation"), _o.get("relation") or "")
+    origin_line = ""
+    if _o:
+        _bits = [x for x in (_o.get("name"), _rel, _o.get("entity_type")) if x]
+        _tr = f' · SPXI treatment: {_o["spxi_treatment"]}' if _o.get("spxi_treatment") else ""
+        origin_line = (f'<div class="cap-origin" style="font-size:.8em;color:#666;margin:2px 0 4px">'
+                       f'Originator: {esc(" · ".join(_bits))}{esc(_tr)}</div>'
+                       f'<meta itemprop="about" content="{esc(" · ".join(_bits))}">')
+
     _obs_all = e.get("observations") or []
     _alias = "".join(
         '<span class="cap-alias" id="%s"></span>' % esc(_o["slug"])
@@ -630,6 +643,7 @@ def card(e):
         f'data-section="{esc(e.get("s") or "Unsectioned")}" '
         f'data-status="{esc(mt.split()[0].lower())}" '
         f'data-defects="{esc(" ".join(defects))}" '
+        f'data-origin="{esc(_o.get("relation") or "")}" '
         f'itemscope itemtype="https://schema.org/CreativeWork">' + _alias +
         f'<meta itemprop="identifier" content="{esc(cite)}">'
         f'<meta itemprop="isPartOf" content="EA-WG-CAPTURES-01">'
@@ -637,7 +651,8 @@ def card(e):
         f'<meta itemprop="citation" content="{esc(citation)}">'
         f'<div class="cap-head"><span class="cap-section">{esc(e.get("s") or "Unsectioned")}</span>'
         f'<span class="cap-date" itemprop="dateCreated">{esc(datespan)}</span></div>'
-        f'<div class="cap-query" itemprop="name">{esc(e.get("q") or "")}</div>'
+        f'<div class="cap-query" itemprop="name">{esc(e.get("q") or "")}</div>' + origin_line +
+        f''
         f'<div class="cap-status-row">'
         f'<span class="cap-status cap-status-{esc(mt.split()[0].lower())}">{esc(mt)}</span>'
         f'<span class="cap-sf">{esc(e.get("sf") or "")}</span></div>'
