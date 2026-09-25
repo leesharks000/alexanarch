@@ -177,6 +177,13 @@
             "string",
             "null"
           ]
+        },
+        "originator": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "description": "Carried from the Capture Registry's `originator` when ruled (2026-09-25): name, relation (archive|external|none), entity_type, spxi_treatment, basis."
         }
       }
     },
@@ -253,6 +260,13 @@
             "string",
             "null"
           ]
+        },
+        "surface": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "surface of this observation as recorded in the Capture Registry (2026-09-25)"
         }
       }
     }

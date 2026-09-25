@@ -232,6 +232,13 @@ def render_address_page(slug: str, addr: dict, related_deposits: list[int],
         "inDefinedTermSet": "https://www.alexanarch.org/addresses/",
         "termCode": slug,
     }
+    # 2026-09-25: whose entity the address asks about, when ruled in the Capture Registry.
+    _orig = addr.get("originator") or {}
+    if _orig:
+        jsonld["additionalProperty"] = [
+            {"@type": "PropertyValue", "name": k, "value": _orig.get(k)}
+            for k in ("name", "relation", "entity_type", "spxi_treatment") if _orig.get(k)
+        ]
 
     head = (
         '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">'
@@ -294,6 +301,13 @@ def render_address_page(slug: str, addr: dict, related_deposits: list[int],
     if refers_to:
         ref_html = ', '.join(esc(r) for r in refers_to)
         meta.append(f'<div class="meta-row"><strong>Refers to:</strong> {ref_html}</div>')
+    if _orig:
+        _rel = {"archive": "inside the archive", "external": "outside the archive (out-universe)",
+                "none": "no originated entity"}.get(_orig.get("relation"), _orig.get("relation") or "")
+        _bits = [esc(x) for x in (_orig.get("name"), _rel, _orig.get("entity_type")) if x]
+        meta.append(f'<div class="meta-row"><strong>Originator:</strong> {" · ".join(_bits)}</div>')
+        if _orig.get("spxi_treatment"):
+            meta.append(f'<div class="meta-row"><strong>SPXI treatment:</strong> {esc(_orig.get("spxi_treatment"))}</div>')
     meta.append('</div>')
     parts.append('\n'.join(meta))
 

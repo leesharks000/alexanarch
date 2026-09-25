@@ -178,7 +178,7 @@ def extract_main_capture(data: dict) -> List[dict]:
     2026-09-25: (1) every observation is extracted, not only the root — the layer counted 555
     observations against the registry's 651 — it now follows the registry's own counting rule; (2) gallery_url is the canonical projection,
     alexanarch.org/captures (ruled 2026-09-05), not a window; (3) each observation carries its
-    surface.
+    surface; (4) the address carries the registry's `originator` when ruled.
     """
     out = []
     for e in data.get("entries", []):
@@ -222,6 +222,7 @@ def extract_main_capture(data: dict) -> List[dict]:
                                   for x in _deps] if i == 0 else [],
                 "type": None,
                 "battery_membership": [],
+                "originator": e.get("originator") if i == 0 else None,
                 "observation": obs,
             })
     return out
@@ -510,6 +511,8 @@ def build_addresses(repo_root: str) -> Tuple[dict, dict]:
                 a["termindex"] = c["termindex"]
             if c.get("mint") and not a["mint"]:
                 a["mint"] = c["mint"]
+            if c.get("originator") and not a.get("originator"):
+                a["originator"] = c["originator"]
 
     # Second pass — classify and finalize
     out = {}
