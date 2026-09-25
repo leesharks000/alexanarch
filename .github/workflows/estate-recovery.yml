@@ -1,0 +1,52 @@
+name: Estate recovery export
+
+on:
+  workflow_dispatch:
+    inputs:
+      upload_to_internet_archive:
+        description: Upload the verified recovery set to Internet Archive
+        required: true
+        type: boolean
+        default: true
+  schedule:
+    - cron: '17 5 * * 0'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: estate-recovery
+  cancel-in-progress: false
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install Git LFS
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git-lfs
+          git lfs install --skip-repo
+
+      - name: Generate verified recovery set
+        env:
+          ESTATE_GH_TOKEN: ${{ secrets.ESTATE_GH_TOKEN }}
+          IA_ACCESS: ${{ secrets.IA_ACCESS }}
+          IA_SECRET: ${{ secrets.IA_SECRET }}
+          UPLOAD_IA: ${{ (github.event_name == 'schedule' || inputs.upload_to_internet_archive) && '1' || '0' }}
+          IA_IDENTIFIER: alexanarch-estate-recovery
+        run: bash scripts/export-estate.sh counterinfra/estate-repos.tsv estate-recovery
+
+      - name: Upload temporary staging artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: alexanarch-estate-recovery-${{ github.run_id }}
+          path: estate-recovery/
+          if-no-files-found: error
+          retention-days: 7
+          compression-level: 0
