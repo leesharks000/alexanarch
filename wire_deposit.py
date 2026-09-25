@@ -874,7 +874,12 @@ def regenerate_static_page(d, eidx, registry=None):
         "identifier": d['axn'],
         **({"version": d['version']} if d.get('version') else {}),
         "description": d.get('description', '')[:300],
-        "license": "https://creativecommons.org/licenses/by/4.0/",
+        **({"license": {
+            "CC-BY-4.0": "https://creativecommons.org/licenses/by/4.0/",
+            "CC-BY-SA-4.0": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "CC0-1.0": "https://creativecommons.org/publicdomain/zero/1.0/",
+        }.get(str(d.get("license") or "").strip(), str(d.get("license") or "").strip())}
+           if str(d.get("license") or "").strip() else {}),
         "publisher": {"@type": "Organization", "name": "Alexanarch"},
         "keywords": ", ".join(d.get('keywords', []) if isinstance(d.get('keywords'), list) else []),
         "url": _rec_url,
