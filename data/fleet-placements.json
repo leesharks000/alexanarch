@@ -4,7 +4,7 @@
   "deposit_number": 1472,
   "axn": "AXN:05F2.GOVERNANCE"
  },
- "updated": "2026-09-25T20:30:00Z",
+ "updated": "2026-09-25T21:10:00Z",
  "placements": [
   {
    "deposit_number": 1484,
@@ -328,13 +328,31 @@
   },
   {
    "deposit_number": 1635,
-   "short": "The Final Time (v0.5)",
+   "short": "The Final Time (v0.5) — text cut at §36.2; superseded by #1637",
    "surfaces": [
     {
      "surface": "operativesemiotics.org",
      "form": "CANONICAL",
-     "status": "HELD 2026-09-25 — the seated text ends at '## 36.3 Persistence tests' (the submission was cut; §§36.3–38, the appendices and the notes are absent) while body_status reads COMPLETE. The papers page waits for the full text.",
+     "status": "RESOLVED 2026-09-25 — the full text is seated as #1637 and #1635 is marked SUPERSEDED with its lacuna stated. The page is placed for #1637, not for this record.",
      "note": "Home ruled by Lee Sharks 2026-09-25: 'probably operativesemiotics, for the final time'."
+    }
+   ]
+  },
+  {
+   "deposit_number": 1637,
+   "short": "The Final Time (v0.5 — the text, seated)",
+   "surfaces": [
+    {
+     "surface": "operativesemiotics.org",
+     "form": "CANONICAL",
+     "status": "STAGED 2026-09-25 — committed on branch final-time-20260925 of the surface repo; not live until landed",
+     "note": "Home ruled by Lee Sharks 2026-09-25: 'probably operativesemiotics, for the final time'. /papers/final-time drawn from the whole text; entry on /papers; sitemap."
+    },
+    {
+     "surface": "huggingface.co/datasets/leesharks/the-final-time",
+     "form": "EVIDENCE",
+     "status": "STAGED 2026-09-25 — source repointed to #1637 in this repository; the Hub rebuilds on landing",
+     "note": "The dataset had carried the cut: manuscript.md ended at §36.3 and sections.jsonl at an empty S50. The rebuild emits 71 sections through the Notes; T05 records the cut and its repair."
     }
    ]
   }
