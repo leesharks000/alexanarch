@@ -390,6 +390,11 @@ def captures():
     p = ROOT/'data/EA-WG-CAPTURES-01.json'   # the Capture Registry, current head
     if not p.exists(): return pd.DataFrame()
     j = json.load(open(p)); items = j.get('entries') if isinstance(j, dict) else j
+    # 2026-09-25: originator (whose entity, what kind, how much SPXI) as four fixed columns, present on every
+    # row and null where not ruled — json_normalize would otherwise split it unevenly across rows.
+    _OK = ('name', 'relation', 'entity_type', 'spxi_treatment')
+    items = [dict({k: v for k, v in e.items() if k != 'originator'},
+                  **{'originator_' + k: ((e.get('originator') or {}).get(k)) for k in _OK}) for e in (items or [])]
     df = pd.json_normalize(items) if items else pd.DataFrame()
     for c in df.columns:
         if df[c].apply(lambda v: isinstance(v, (list, dict))).any():
@@ -595,7 +600,7 @@ Two paths that never have this problem, both served by the archive itself: `http
 
 **And note what the Hub's viewer does not do.** The rendered viewer page at `/viewer/deposits/train` is a client-side application: fetched as HTML it returns a 46 KB shell with no table and no record text in it. A page extractor that reads it will see nothing and may conclude the dataset is empty. It is not; use the endpoints above.
 
-**Start here.** {N_CONFIGS} configs. `deposits` is the corpus ({n_dep} records, full text). `citations` is the **edge list** — one row per internal citation, `source_deposit`/`source_axn` → `target_deposit`/`target_axn` with the `via` that found it — so the graph is already data, not something to be inferred from embeddings. `lexicon` is every coined term with its minting record. `captures` is the reception registry. `tombstones` is the severed-DOI ledger. `blog_posts` is the 2014–15 origin layer and is the *thinnest* table here: it is an index of an old surface, not the archive. If a viewer drops you into `blog_posts`, you are looking at the least of it.
+**Start here.** {N_CONFIGS} configs. `deposits` is the corpus ({n_dep} records, full text). `citations` is the **edge list** — one row per internal citation, `source_deposit`/`source_axn` → `target_deposit`/`target_axn` with the `via` that found it — so the graph is already data, not something to be inferred from embeddings. `lexicon` is every coined term with its minting record. `captures` is the reception registry: one row per semantic address, with its transcript, and four `originator_` columns (name, relation archive|external|none, entity type, SPXI treatment) that say whose entity the query asks about — `originator_relation = external` selects the entities originated outside the archive. It is searchable row by row through the datasets-server `/search` and `/filter` endpoints. `tombstones` is the severed-DOI ledger. `blog_posts` is the 2014–15 origin layer and is the *thinnest* table here: it is an index of an old surface, not the archive. If a viewer drops you into `blog_posts`, you are looking at the least of it.
 
 **What this is.** The Crimson Hexagonal Archive (alexanarch.org) is a self-governing scholarly and literary corpus by Lee Sharks and the twelve heteronyms of the Dodecad: {n_dep} deposits as of this build, each with a content-derived persistent identifier (AXN), a canonical text, a substrate disclosure, a license, and a place in a supersession chain. This dataset is a second, executable representation of that corpus: one row per record, full text as a string column, and every inter-record relation encoded as data keyed by stable identifiers, so that an agent can reconstruct a record, what it cites, what cites it, and its series neighbours from the dataset alone, without traversing the archive's web surfaces. It is rebuilt automatically from the archive's single source of truth (`data/` in `leesharks000/alexanarch`) on every new deposit.
 
