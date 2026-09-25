@@ -333,8 +333,17 @@ def main():
     if "--seat" not in sys.argv:
         print("dry run — pass --seat to write"); return 0
     reg["total_captures"] = len(reg["entries"]); reg["address_count"] = len(reg["entries"]); reg["observation_count"] = sum(int(x.get("n_observations") or 1) for x in reg["entries"])
+    # 2026-09-25: _version_rule — the version moves when the content moves. It sat at 11.7 through ~30 intakes,
+    # so no downstream copy could detect staleness. Every seat now bumps the minor version and dates the file.
+    import datetime as _dt, re as _re
+    _m = _re.fullmatch(r"(\d+)\.(\d+)", str(reg.get("version") or ""))
+    if _m:
+        reg["version"] = f"{_m.group(1)}.{int(_m.group(2)) + 1}"
+    else:
+        print(f"   note: version {reg.get('version')!r} is not MAJOR.MINOR; left unchanged")
+    reg["date"] = _dt.date.today().isoformat()
     CANON.write_text(json.dumps(reg, ensure_ascii=False, indent=1))
-    print(f"6. EMIT       written; totals {reg['total_captures']} entries / {reg['observation_count']} observations. Now: build_capture_gallery.py → seat_capture_postflight.py (runs check_capture_registry.py)")
+    print(f"6. EMIT       written; v{reg.get('version')} ({reg.get('date')}); totals {reg['total_captures']} entries / {reg['observation_count']} observations. Now: build_capture_gallery.py → seat_capture_postflight.py (runs check_capture_registry.py)")
     return 0
 
 
