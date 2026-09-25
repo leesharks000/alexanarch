@@ -437,7 +437,9 @@ def update_sitemap(slug_map: dict) -> None:
         )
     injection = "\n" + "\n".join(lines) + "\n"
 
-    new_txt = header + injection + tail
+    # 2026-09-25: the strip above removes the address lines but not the line breaks around them, and the
+    # injection adds its own, so every run grew the sitemap by one blank line. Normalise the seam instead.
+    new_txt = header.rstrip("\n") + "\n" + injection + tail.lstrip("\n")
     SITEMAP.write_text(new_txt, encoding="utf-8")
     print(f"  ✓ sitemap.xml updated: {len(slug_map)} address URLs")
 

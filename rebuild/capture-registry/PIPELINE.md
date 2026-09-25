@@ -90,6 +90,10 @@ canonical file.
     node   scripts/check_gallery_js.js          # executes the page scripts
     python3 scripts/check_render_determinism.py # two builds, byte-identical
 
+`scripts/seat_capture_postflight.py` runs the whole seat in order — link, bake, gate, then (2026-09-25) the semantic
+address layer (`build_semantic_addresses.py`, `publish_semantic_addresses.py`), then sync and cite, so the query has its `/addresses/{slug}/` page in the same commit.
+That page, not the 7.5 MB gallery, is what a fetcher can read whole.
+
 `node --check` is a syntax check and passed for a full day while the page was
 broken. The runtime gate exists because of that day.
 

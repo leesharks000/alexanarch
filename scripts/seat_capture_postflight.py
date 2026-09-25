@@ -29,6 +29,10 @@ THE SEQUENCE, in order, each step refusing to proceed on failure:
                                               + regenerated manifest
   (2026-09-21) LINK build_capture_links.py runs before BAKE, and CITE
   audit_capture_citability.py runs after SYNC — see the STEPS comment.
+  (2026-09-25) ADDR build_semantic_addresses.py and PAGE
+  publish_semantic_addresses.py run after GATE and before SYNC, so every
+  seated query has its /addresses/{slug}/ page in the same commit and the
+  datasets/ copy of the address layer is current.
 
 Run it after EVERY registry write — new capture, edit, or removal:
 
@@ -48,6 +52,12 @@ STEPS = [
     ("LINK", [sys.executable, "scripts/build_capture_links.py"]),
     ("BAKE", [sys.executable, "scripts/build_capture_gallery.py"]),
     ("GATE", [sys.executable, "scripts/check_capture_page_current.py"]),
+    # 2026-09-25: ADDR and PAGE after GATE, before SYNC (SYNC copies semantic-addresses.json into datasets/). The semantic address layer (/addresses/{slug}/) is the registry's
+    # per-query, machine-fetchable surface, and it regenerated only on deposit mint, so a capture seated
+    # between mints had no address page: 23 on 2026-09-25, and 232 addresses had data but no page.
+    # Both scripts are deterministic; unchanged addresses produce no diff.
+    ("ADDR", [sys.executable, "scripts/build_semantic_addresses.py"]),
+    ("PAGE", [sys.executable, "scripts/publish_semantic_addresses.py"]),
     ("SYNC", [sys.executable, "scripts/sync_capture_dataset.py"]),
     ("CITE", [sys.executable, "scripts/audit_capture_citability.py"]),
 ]
