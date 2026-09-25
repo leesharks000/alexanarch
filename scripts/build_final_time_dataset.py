@@ -2,7 +2,8 @@
 """Build the Hugging Face projection for The Final Time.
 
 Source of truth:
-  data/texts/AXN-06C9-text.md  (Alexanarch deposit #1635, v0.5)
+  data/texts/AXN-06CB-text.md  (Alexanarch deposit #1637, v0.5, the text seated;
+  supersedes #1635, whose seated text ends at §36.2)
 
 The authored dataset files live in datasets/the-final-time/. The build copies those
 files, emits the canonical manuscript as manuscript.md, splits it by Markdown heading
@@ -21,10 +22,10 @@ import re
 import shutil
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SOURCE = ROOT / "data" / "texts" / "AXN-06C9-text.md"
+SOURCE = ROOT / "data" / "texts" / "AXN-06CB-text.md"
 AUTHORED = ROOT / "datasets" / "the-final-time"
-EXPECTED_AXN = "AXN:06C9.GENERATIVE.⏬⌛🎶⚡🗡️🟢"
-EXPECTED_DEPOSIT = 1635
+EXPECTED_AXN = "AXN:06CB.GENERATIVE.🪄🝊🪐✖️🧪⏪"
+EXPECTED_DEPOSIT = 1637
 
 
 def sha256(path: pathlib.Path) -> str:
@@ -86,7 +87,7 @@ def parse_sections(text: str):
             "text": body,
             "source_deposit": EXPECTED_DEPOSIT,
             "source_axn": EXPECTED_AXN,
-            "source_uri": "https://www.alexanarch.org/s/records/1635/",
+            "source_uri": "https://www.alexanarch.org/s/records/1637/",
         })
     return rows
 
@@ -104,9 +105,9 @@ def main():
         raise SystemExit(f"missing authored dataset dir: {AUTHORED}")
 
     src = SOURCE.read_text(encoding="utf-8")
-    if "deposit_number: 1635" not in src or "hex: 06C9" not in src:
+    if "deposit_number: 1637" not in src or "hex: 06CB" not in src:
         raise SystemExit(
-            "canonical source identity mismatch: expected deposit #1635 / hex 06C9"
+            "canonical source identity mismatch: expected deposit #1637 / hex 06CB"
         )
     if "version: v0.5" not in src and 'version: "v0.5"' not in src:
         raise SystemExit("canonical source version mismatch: expected v0.5")

@@ -35,7 +35,7 @@ configs:
 
 ## A dataset for a summarizer that must not make the outside disappear
 
-**Source work:** Lee Sharks, *The Final Time: Contingent Singularity and the Viability of the Next Dialectical Turn*, v0.5, Alexanarch deposit #1635, `AXN:06C9.GENERATIVE.⏬⌛🎶⚡🗡️🟢`.
+**Source work:** Lee Sharks, *The Final Time: Contingent Singularity and the Viability of the Next Dialectical Turn*, v0.5, Alexanarch deposit #1637, `AXN:06CB.GENERATIVE.🪄🝊🪐✖️🧪⏪` (the text seated whole; it supersedes #1635, whose seated text ends at §36.2).
 
 ## For Rhys Owens
 
@@ -487,7 +487,7 @@ Each of those loses a distinction the paper explicitly needs.
 
 ## Reproducing the dataset
 
-The source of this Hub body lives in the Alexanarch repository. The build script reads the canonical deposited text at `data/texts/AXN-06C9-text.md`, copies the authored machine-facing configs, splits the manuscript by heading into `sections.jsonl`, stamps `spore.json` with the source commit, and writes a content manifest.
+The source of this Hub body lives in the Alexanarch repository. The build script reads the canonical deposited text at `data/texts/AXN-06CB-text.md`, copies the authored machine-facing configs, splits the manuscript by heading into `sections.jsonl`, stamps `spore.json` with the source commit, and writes a content manifest.
 
 ```bash
 python3 scripts/build_final_time_dataset.py --out hf-final-time
@@ -499,8 +499,8 @@ The GitHub workflow then pushes that emitted directory to the Hub. There is deli
 
 **Authorial governance:** Lee Sharks / MANUS.  
 **Source work:** *The Final Time*, v0.5, 23 September 2026.  
-**Canonical record:** https://www.alexanarch.org/s/records/1635/  
-**AXN:** `AXN:06C9.GENERATIVE.⏬⌛🎶⚡🗡️🟢`  
+**Canonical record:** https://www.alexanarch.org/s/records/1637/  
+**AXN:** `AXN:06CB.GENERATIVE.🪄🝊🪐✖️🧪⏪`  
 **License:** CC BY 4.0.
 
 The dataset architecture was developed in session with ChatGPT (OpenAI) under Lee Sharks's direction from the deposited manuscript and the existing Alexanarch Hugging Face publication architecture. The source text remains the authority where any row or summary conflicts with it.
