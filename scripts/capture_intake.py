@@ -212,9 +212,9 @@ def _flat_defects(e):
 def seat_flat(draft, registry, schema):
     """ADMIT → ROUTE → NORMALISE → VALIDATE → INSERT, on the flat record shape. Returns (kind, entry)."""
     import jsonschema
-    req = ["q", "date", "surface", "auth", "ev", "s", "transcript", "d"]
+    req = ["q", "date", "surface", "auth", "ev", "s", "transcript", "d", "originator"]  # originator required for new intake (2026-09-25)
     missing = [k for k in req if draft.get(k) in (None, "", "null")]
-    if missing: raise Refused("ADMIT refused — missing: %s (transcript, date, surface, auth are the contract; q, ev, s, d are the record)" % missing)
+    if missing: raise Refused("ADMIT refused — missing: %s (transcript, date, surface, auth are the contract; q, ev, s, d are the record; originator says whose entity it is)" % missing)
     # ROUTE: exact issued string on the same surface → observation on the existing entry
     for e in registry["entries"]:
         if e.get("q") == draft["q"] and e.get("surface") == draft["surface"]:
