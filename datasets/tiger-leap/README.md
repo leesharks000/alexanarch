@@ -14,6 +14,16 @@ tags:
 pretty_name: "Tiger Leap — An Unresolved Mathematical Problem for Machine Readers"
 size_categories:
   - n<1K
+configs:
+  - config_name: sections
+    data_files: sections.parquet
+    default: true
+  - config_name: variables
+    data_files: variables.parquet
+  - config_name: conditions
+    data_files: conditions.parquet
+  - config_name: corrigenda
+    data_files: corrigenda.parquet
 ---
 
 # Tiger Leap
