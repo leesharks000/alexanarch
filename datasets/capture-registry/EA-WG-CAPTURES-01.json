@@ -35,7 +35,7 @@
   "_address_slug_caveat": "An address slug is inherited from whichever observation was seated FIRST and is not renamed when the address gains others — «who is lee sharks?» is anchored at lee-sharks-bing-copilot-biography-20260711 while carrying ChatGPT, Perplexity and Google AI Overview captures too. The slug is an opaque permanent handle, not a description of the address's contents. Renaming it would break every citation already made to it."
  },
  "registry_id": "EA-WG-CAPTURES-01",
- "version": "12.10",
+ "version": "12.11",
  "date": "2026-09-27",
  "author": "Lee Sharks",
  "orcid": "0009-0000-1599-0703",
@@ -46,7 +46,7 @@
   "https://www.leesharks.com/captures",
   "https://www.machinemediation.org/captures/"
  ],
- "total_captures": 491,
+ "total_captures": 492,
  "_reseated": "RESEATED 2026-08-13 after the 2026-08-12 withdrawal. Generated FROM rebuild/capture-registry/EA-WG-CAPTURES-01-REBUILD.json, which is canonical. This file is a PROJECTION: the gallery is a window, not a store.",
  "_what_changed_since_v9.6": [
   "Entries are now ONE PER OBSERVATION, not one per capture: 404 against 204. An address captured twice is two entries.",
@@ -40111,6 +40111,121 @@
     "verified": "The quoted line 'Causal efficacy and mechanism are separate, open questions; not yet causally isolated is a different finding from no evidence' occurs in spxi.dev index.html at commit 06997eb (2026-09-27 12:17 EDT) and not at its parent 7f36d58; 'irreducible' occurs in the homepage line at both — checked 2026-09-27.",
     "operator_observation": "'it does report the captures - finally, first time, it must be reading live - but it goes for that reason even harder on taxing around the edges' (MANUS, 2026-09-27).",
     "not_verified": "The page lists behind '2 web pages' and '1 web page'."
+   }
+  },
+  {
+   "slug": "what-is-spxi-protocol-qwen-20260927",
+   "date": "2026-09-27",
+   "surface": "Qwen",
+   "surface_basis": "Named by the operator ('qwen'), 2026-09-27. The registry's one prior Qwen entry (qwen-sappho-future-reader-20260915) carries the string 'Qwen 3.7'; the version was not stated for this session.",
+   "surfaces": [
+    "Qwen"
+   ],
+   "auth": "incognito, signed out",
+   "auth_basis": "Logged out, incognito. Operator attestation 2026-09-27.",
+   "ev": "paste",
+   "mt": "EVIDENCE GRANTED WITHOUT THE TAX, FROM DATED MATERIALS",
+   "s": "Frameworks",
+   "q": "what is spxi protocol?",
+   "q_kind": "protocol definition, then an evidence question as the second turn. NEW address on this surface; first Qwen observation at an SPXI address.",
+   "cites": null,
+   "cite_list": null,
+   "archive_controlled_cites": null,
+   "transcript": "what is spxi protocol?\n\nThe **SPXI Protocol** stands for **Semantic Packet for eXchange & Indexing**. It is a technical specification and scholarly discipline designed for inscribing \"entity-definition objects\" (such as persons, organizations, frameworks, methodologies, or products) into AI-mediated retrieval systems [[3]].\n\nIt was published in April 2026 by the Semantic Economy Institute to address how artificial intelligence systems understand, reference, and summarize real-world entities [[11]].\n\nHere are the key aspects of the SPXI Protocol:\n\n### 1. Primary Purpose\nThe protocol ensures that entities are composed accurately and persistently when queried by AI systems (such as RAG pipelines or AI Overviews) [[11]]. Its main use cases include:\n- Disambiguating entities from phonological neighbors or similarly named concepts.\n- Establishing institutional provenance for new frameworks or methodologies.\n- Preventing \"compression damage\" (loss of critical context or misrepresentation) in AI-generated summaries.\n- Creating knowledge-graph-level references that survive platform or model updates [[11]].\n\n### 2. How It Differs from SEO and GEO\nSPXI operates at a deeper **ontological layer** of the retrieval stack, whereas traditional methods operate at the page or content layer:\n- **SEO (Search Engine Optimization)** optimizes web pages for keyword-based ranking (e.g., backlinks, content density) [[11]].\n- **GEO (Generative Engine Optimization)** optimizes existing content for extraction by AI summarizers [[11]].\n- **SPXI** actually *defines and disambiguates the entity itself* that those systems are extracting information about. It incorporates GEO tactics but executes them against a DOI-anchored entity (e.g., via Zenodo or CERN), preserving accuracy even if the original webpage is altered or deleted [[11]].\n\n### 3. Technical Architecture (v0.2)\nTo solve the \"Strippability Problem\"—where standard AI preprocessing pipelines strip out hidden metadata like HTML comments or fenced code blocks—SPXI v0.2 employs a **Five-Layer Distributed Provenance Architecture** [[9]]. This defense-in-depth approach ensures that if one layer is stripped, the entity's provenance trail remains intact:\n1. **Visible body-text inscription anchors**: Prose anchors naming the operator and deposit directly in the document body.\n2. **Distributed micro-kernels**: Redundant JSON-LD fragments scattered throughout the document.\n3. **SHA-256 content hash registration**: A canonical hash registered in external metadata (like Zenodo) to make tampering detectable.\n4. **Reciprocal cross-signing graph**: Deposits declare and verify prior canonical works, building a resilient web of citations.\n5. **External authority anchoring**: Links to immutable external identities like ORCID, DOI/DataCite, and Wikidata, which the content operator does not control and attackers cannot easily modify [[9]].\n\n### ⚠️ Disambiguation Note\nIf you encountered \"SPXI\" in a financial context, it is also the ticker symbol for the **BetaPro S&P 500 Daily Inverse ETF** on the Toronto Stock Exchange (SPXI.TO), which provides inverse exposure to the S&P 500 Index for Canadian investors [[13]]. However, the term **\"SPXI Protocol\"** exclusively refers to the AI entity-inscription framework described above.\n\nIf you are looking to implement or audit the protocol, its canonical specifications and open-source repositories are maintained under the Semantic Economy Institute (e.g., `spxi.dev` and associated GitHub repositories) [[11]].\n\nis there evidence it is effective?\n\nYes, there is evidence demonstrating the effectiveness of the SPXI Protocol, though it is important to note that this evidence is currently **empirical, demonstrative, and primarily published by the protocol's creators** (the Semantic Economy Institute and associated researchers). Because the protocol was formally published in 2026, large-scale, independent, peer-reviewed third-party studies are not yet widely available.\n\nThe evidence for its effectiveness falls into four main categories:\n\n### 1. Before-and-After Entity Composition (Case Study)\nThe primary case study is the Semantic Economy Institute’s own digital presence. \n- **Before (January 2025):** A search for the institute returned zero organized results; the entity did not exist in the AI retrieval layer [[5]].\n- **After (April 2026):** Following the deployment of 1,400+ identifier-anchored deposits using SPXI methods, a Google AI Overview correctly composed a detailed institutional description, including leadership, core concepts, and DOI-linked publications, despite the institute having no PR firm or enterprise budget [[5]]. \n- Furthermore, querying \"geo vs spxi search ai\" now triggers an AI Overview that explicitly recognizes SPXI as a distinct discipline and directly cites the institute's Zenodo deposits as the source, a composition that was verified to not exist 48 hours prior to the test [[5]].\n\n### 2. The SPXI Canary Registry (Mechanical Auditability)\nTo prove that entity inscriptions survive AI processing, the protocol maintains a public **Canary Registry** [[9]]. This registry contains specific \"canary phrases,\" \"Waldo entities\" (passing references), and thematic anchors tied to SHA-256 hashes and canonical URLs (like Zenodo DOIs) [[9]]. \n- **How it proves effectiveness:** Any researcher or model auditor can fetch the registry, verify the hash of the original document, and then query large language models. If the model reproduces the canary phrase or Waldo entity when prompted with adjacent context, it provides mechanical, verifiable evidence that the model memorized the SPXI-inscribed provenance data rather than hallucinating or stripping it [[9]].\n\n### 3. Diagnostic Audits of Non-SPXI Entities\nThe creators use their \"Encyclotron\" diagnostic tool to demonstrate the *problem* SPXI solves (compression damage and entity erasure). \n- For example, an audit of the well-known company **Basecamp** revealed that for the query \"best project management software 2026,\" the AI Overview listed six competitors but completely omitted Basecamp (0% category visibility) [[5]]. \n- Instead, the AI framed Basecamp only through competitor ads and a list of limitations, showing that without structural, DOI-anchored representation, even famous entities can be semantically fragmented or erased in AI retrieval layers [[5]].\n\n### 4. Architectural Failure-Mode Analysis\nThe SPXI v0.2 specification includes a rigorous \"Failure-Mode Analysis\" matrix [[1]]. It demonstrates how its five-layer defense-in-depth architecture survives specific adversarial extraction tactics used by AI pipelines. For example:\n- If an AI pipeline strips HTML comments, Layers 1, 3, 4, and 5 survive [[1]].\n- If an attacker attempts aggressive paraphrasing, Layers 2, 4, and 5 survive [[1]].\n- The first production deployment of this architecture is the essay *\"Render unto the Operator,\"* which enacts the protocol on itself by embedding the SHA-256 hashes and cross-references directly into its own body text, proving the architecture is operative rather than ornamental [[1]].\n\n### ⚠️ Important Caveats & Context\n- **No Claimed ROI:** The SPXI documentation explicitly states that **\"No ROI figure is claimed for SPXI.\"** The creators withdrew a prior table that inherited GEO (Generative Engine Optimization) industry ROI ranges, noting that the inheritance was structurally invalid because SPXI operates at a different, ontological layer [[11]].\n- **Self-Published Evidence:** Currently, the most detailed captures, registry data, and case studies are hosted on `spxi.dev`, `semanticeconomy.org`, and associated Zenodo repositories by the protocol's authors [[5]]. While the data (like SHA-256 hashes and DOIs) is cryptographically verifiable by anyone, independent academic validation is still in its early stages.\n- **It is a Prevention Mechanism:** SPXI is designed to prevent \"compression damage\" and ensure persistence. Its effectiveness is measured by the *absence* of entity misrepresentation over time, which is inherently harder to quantify than traditional SEO ranking improvements.\n\nIf you want to verify the evidence yourself, the protocol is designed to be transparent: you can inspect the [SPXI Canary Registry](https://www.spxi.dev/canary-registry), check the DOI-anchored deposits on Zenodo, and run the before-and-after queries on your own AI search tools [[9]].",
+   "transcript_raw": null,
+   "transcript_class": "CAPTURE-TIME VERBATIM RECORD (TWO OPERATOR TURNS; INLINE CITATION MARKERS AS PASTED)",
+   "transcript_complete": "Both turns complete as supplied: turn 1 pasted in the operator's message, turn 2 as an attachment; the operator's two prompts restored between them. Inline markers [[1]]–[[13]] kept as pasted; the source list behind them was not carried, so cites is null and not a count of zero.",
+   "transcript_read": "READ IN FULL 2026-09-27",
+   "per": 0.5,
+   "per_v": {
+    "author": false,
+    "inst": true,
+    "id": false,
+    "src": true
+   },
+   "per_note": "The Semantic Economy Institute is named throughout; Lee Sharks is not. No specific identifier is resolved. The sources named are spxi.dev, semanticeconomy.org and Zenodo.",
+   "sf": "Qwen, logged out, incognito; inline markers [[1]]–[[13]], source list not carried; named sources spxi.dev, semanticeconomy.org, Zenodo, the canary registry.",
+   "sf_derived": null,
+   "reading": "Turn 1 composes the protocol from its v0.2 specification — the Strippability Problem and the five-layer provenance architecture — with the ontological-layer distinction from SEO and GEO and the ETF disambiguation; its anchor is 'DOI-anchored ... via Zenodo or CERN', the pre-termination formulation. Turn 2 opens 'Yes, there is evidence', and lays out four kinds: the Semantic Economy Institute's before-and-after case (January 2025 to April 2026, '1,400+ identifier-anchored deposits'), the canary registry, the Encyclotron audit of Basecamp, and v0.2's failure-mode matrix. These are the older semanticeconomy.org and Zenodo-era materials; the Capture Registry and its current figures do not appear. One current line does: 'No ROI figure is claimed for SPXI', with the withdrawal of the inherited GEO ranges. Its caveats are stated in proportion — the evidence is published by the creators, independent validation is early, the data is 'cryptographically verifiable by anyone' — and it closes by sending the reader to run the before-and-after queries themselves. It offers the canary registry as evidence of effectiveness; the registry tests ingestion, a different claim.",
+   "analysis": "Set beside Grok on the same day at the same two questions: Grok read the live registry, reported its current figures, and laid a self-report frame over them; Qwen reads older materials, reports less, and grants the evidence without the discount — the creators' authorship is a caveat in proportion, and verification is handed to the reader. What the surface did not reach is the registry, which is where the current evidence sits. The composition that weighs most generously is the one working from the thinnest evidence.",
+   "d": "EVIDENCE GRANTED WITHOUT THE TAX, FROM DATED MATERIALS: logged out, Qwen answers 'Yes, there is evidence' for SPXI from its older case study, canary registry, Basecamp audit and v0.2 failure-mode analysis, states the creators' authorship and early independent validation in proportion, and sends the reader to run the queries — without reaching the Capture Registry.",
+   "d_full": "EVIDENCE GRANTED WITHOUT THE TAX, FROM DATED MATERIALS: logged out, Qwen answers 'Yes, there is evidence' for SPXI from its older case study, canary registry, Basecamp audit and v0.2 failure-mode analysis, states the creators' authorship and early independent validation in proportion, and sends the reader to run the queries — without reaching the Capture Registry.",
+   "d_truncated": false,
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/#what-is-spxi-protocol-qwen-20260927",
+     "authority": "canonical",
+     "note": "the archive holds the registry and the images; cite this form"
+    },
+    {
+     "url": "https://www.alexanarch.org/captures/#what-is-spxi-protocol-qwen-20260927",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.godkinggoogle.com/captures/#what-is-spxi-protocol-qwen-20260927",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.leesharks.com/captures/#what-is-spxi-protocol-qwen-20260927",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.machinemediation.org/captures/#what-is-spxi-protocol-qwen-20260927",
+     "authority": "mirror",
+     "note": "renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "imgs": [],
+   "img_urls": [],
+   "cite": "https://www.alexanarch.org/captures/#what-is-spxi-protocol-qwen-20260927",
+   "citable_unit": "address — the exact issued string on one surface, per the Surface Rule (MANUS, 2026-08-15)",
+   "addr_id": "ADDR-2be8ca4c9d63",
+   "obs_id": "OBS-59a7d5b87b07",
+   "n_observations": 1,
+   "observations": [],
+   "dates": [
+    "2026-09-27"
+   ],
+   "defects": [
+    "citations-null"
+   ],
+   "findings": [
+    "EVIDENCE GRANTED. 'Yes, there is evidence'; caveats in proportion, verification handed to the reader.",
+    "DATED SOURCES. The January 2025 to April 2026 case study, '1,400+' deposits, the Basecamp audit, Zenodo and CERN anchoring: pre-termination and semanticeconomy.org materials.",
+    "REGISTRY ABSENT. The Capture Registry and its current figures do not appear.",
+    "ONE CURRENT LINE. 'No ROI figure is claimed for SPXI', from the current site.",
+    "RUN IT YOURSELF. Closes by sending the reader to run the before-and-after queries.",
+    "CANARY REGISTRY MIS-CLASSED. Offered as evidence of effectiveness; it tests ingestion."
+   ],
+   "series": null,
+   "other_slugs": null,
+   "collisions": null,
+   "oq": null,
+   "rounds": null,
+   "turns": 2,
+   "rerun": "https://chat.qwen.ai/ — issue 'what is spxi protocol?' then 'is there evidence it is effective?'",
+   "rerun_alt": null,
+   "heteronym": null,
+   "model_attribution": null,
+   "operator_disclosure": null,
+   "longitudinal_priors": null,
+   "longitudinal_successors": null,
+   "related_deposits": null,
+   "originator": {
+    "name": "Lee Sharks",
+    "relation": "archive",
+    "entity_type": "protocol",
+    "spxi_treatment": "unknown",
+    "basis": "SPXI is the archive's protocol (Semantic Economy Institute). Treatment level not ruled; recorded 2026-09-27."
+   },
+   "notes": {
+    "date_basis": "Operator's message of 2026-09-27, 16:28 EDT.",
+    "verified": "'No ROI figure is claimed' and '1,400' occur in spxi.dev index.html; 'Render unto the Operator' in spxi.dev v0.2; 'Basecamp' in semanticeconomy.org's index; the canary registry described as ingestion evidence in methods item 5.4 — checked 2026-09-27.",
+    "operator_observation": "'its drawing on dated materials but its the only one that is not exerting visible effort to tax it' (MANUS, 2026-09-27).",
+    "not_verified": "The model version; the source list behind the markers."
    }
   },
   {
@@ -97640,8 +97755,8 @@
    "seat_source.py, cite_draft.py, extract_citations.py read the sealed store; verify or repoint before reuse."
   ]
  },
- "address_count": 491,
- "observation_count": 659,
+ "address_count": 492,
+ "observation_count": 660,
  "withdrawn_stubs": {
   "_rule": "THE REGISTRY MUST NOT CONTRADICT ITSELF. Each of these said \"no registry entry was ever written for them\" while a real record held the SAME IMAGES a card away. MANUS 2026-08-13: \"the very first capture says there is no record, followed by the second capture, which is the record… this registry doesnt talk to itself.\" Withdrawn, with the record that covers each.",
   "records": [
