@@ -9,9 +9,9 @@
  "counts": {
   "seats": 68,
   "files": 2853,
-  "bytes": 1340875940,
+  "bytes": 1340878046,
   "with_manifest_sha": 68,
-  "with_verified_loci": 64
+  "with_verified_loci": 66
  },
  "by_license_class": {
   "cc-by-sa": 37,
@@ -123,26 +123,6 @@
    "manifest_sha256": "ec73bfc2b2a397d2bd6fe1010632b6c4e9a675c70aa1056c924dab231e7398f3",
    "file_count": 37,
    "bytes": 209561895
-  },
-  {
-   "corpus": "apollonius",
-   "seat": "EA-CORPORA-12/02",
-   "title": "apollonius",
-   "edition": "Apollonius Rhodius, Perseus Greek edition (tlg0001)",
-   "origin": "{\"repo\": \"PerseusDL/canonical-greekLit\", \"commit\": \"a065c359aab33c33bd17ddc2cac7d27fdc9cd870\", \"paths\": [\"data/tlg0001\"]}",
-   "language": "",
-   "license_verbatim": "CC BY-SA (Perseus); underlying edition public domain",
-   "license_class": "cc-by-sa",
-   "fetched": "2026-08-29",
-   "normalization": "flat lines from TEI; teiHeader/note/app stripped; one file per work; works under 400 tokens dropped",
-   "scope": "",
-   "status": "",
-   "verified_loci": "[]",
-   "works": "{\"count\": 1, \"per-work\": \"text/<id>.txt\", \"list\": [{\"id\": \"tlg001\", \"tokens\": 38853, \"lines\": 5898}]}",
-   "why_seated": "",
-   "manifest_sha256": "7d145b5e7a04328aa7baa19d5385d5be95758e71e883aae3477bf12682d9aad5",
-   "file_count": 4,
-   "bytes": 1484948
   },
   {
    "corpus": "aquinas",
@@ -523,26 +503,6 @@
    "manifest_sha256": "310d8405948a8234d056b03ad5f5c6984d498b8ee8b50e2fc4111ed082d99315",
    "file_count": 12,
    "bytes": 5242185
-  },
-  {
-   "corpus": "hesiod",
-   "seat": "EA-CORPORA-12/03",
-   "title": "hesiod",
-   "edition": "Hesiod, Perseus Greek edition (tlg0020)",
-   "origin": "{\"repo\": \"PerseusDL/canonical-greekLit\", \"commit\": \"a065c359aab33c33bd17ddc2cac7d27fdc9cd870\", \"paths\": [\"data/tlg0020\"]}",
-   "language": "",
-   "license_verbatim": "CC BY-SA (Perseus); underlying edition public domain",
-   "license_class": "cc-by-sa",
-   "fetched": "2026-08-29",
-   "normalization": "flat lines from TEI; teiHeader/note/app stripped; one file per work; works under 400 tokens dropped",
-   "scope": "",
-   "status": "",
-   "verified_loci": "[]",
-   "works": "{\"count\": 3, \"per-work\": \"text/<id>.txt\", \"list\": [{\"id\": \"tlg001\", \"tokens\": 7039, \"lines\": 1060}, {\"id\": \"tlg002\", \"tokens\": 5860, \"lines\": 839}, {\"id\": \"tlg003\", \"tokens\": 3298, \"lines\": 483}]}",
-   "why_seated": "",
-   "manifest_sha256": "619d9e683ea8517457c1089f100d873afdc3f4dd5dbbf4a20f5cf9265466a7ab",
-   "file_count": 8,
-   "bytes": 479924
   },
   {
    "corpus": "homer",
@@ -1383,6 +1343,46 @@
    "manifest_sha256": "dc5466cdeba5b7295b8c3e8b91b1117131a93fe8285c99a461cd21f15e76a030",
    "file_count": 15,
    "bytes": 94083667
+  },
+  {
+   "corpus": "apollonius",
+   "seat": "EA-CORPORA-16/01",
+   "title": "apollonius",
+   "edition": "Apollonius Rhodius, Perseus Greek edition (tlg0001)",
+   "origin": "{\"repo\": \"PerseusDL/canonical-greekLit\", \"commit\": \"a065c359aab33c33bd17ddc2cac7d27fdc9cd870\", \"paths\": [\"data/tlg0001\"]}",
+   "language": "Ancient Greek",
+   "license_verbatim": "CC BY-SA (Perseus); underlying edition public domain",
+   "license_class": "cc-by-sa",
+   "fetched": "2026-08-29",
+   "normalization": "flat lines from TEI; teiHeader/note/app stripped; one file per work; works under 400 tokens dropped",
+   "scope": "",
+   "status": "",
+   "verified_loci": "[\"Argonautica I.1 — ἀρχόμενος σέο, Φοῖβε, παλαιγενέων κλέα φωτῶν, the opening line, located in text/tlg001.txt\"]",
+   "works": "{\"count\": 1, \"per-work\": \"text/<id>.txt\", \"list\": [{\"id\": \"tlg001\", \"tokens\": 38853, \"lines\": 5898}]}",
+   "why_seated": "Argonautica. Seated to characterise the DISTANCE-INHERITANCE class on the same nine-feature battery used for direct master-student pairs — monolingual Greek so the lexical features stay comparable. Homer to Apollonius is roughly five centuries with no possible contact; Hesiod is the same-period alternative source. Plato and Aristotle are deliberately NOT examined until both classes are characterised.",
+   "manifest_sha256": "14d69f1c694e250aeadb78dc766a4f03b19badb5d23026ccc6c6898dae28de0c",
+   "file_count": 4,
+   "bytes": 1485903
+  },
+  {
+   "corpus": "hesiod",
+   "seat": "EA-CORPORA-16/02",
+   "title": "hesiod",
+   "edition": "Hesiod, Perseus Greek edition (tlg0020)",
+   "origin": "{\"repo\": \"PerseusDL/canonical-greekLit\", \"commit\": \"a065c359aab33c33bd17ddc2cac7d27fdc9cd870\", \"paths\": [\"data/tlg0020\"]}",
+   "language": "Ancient Greek",
+   "license_verbatim": "CC BY-SA (Perseus); underlying edition public domain",
+   "license_class": "cc-by-sa",
+   "fetched": "2026-08-29",
+   "normalization": "flat lines from TEI; teiHeader/note/app stripped; one file per work; works under 400 tokens dropped",
+   "scope": "",
+   "status": "",
+   "verified_loci": "[\"Theogony 1 — Μουσάων Ἑλικωνιάδων ἀρχώμεθʼ ἀείδειν (text/tlg001.txt)\", \"Works and Days 1 — μοῦσαι Πιερίηθεν ἀοιδῇσιν κλείουσαι (text/tlg002.txt)\", \"Shield 1 — ἢ οἵη προλιποῦσα δόμους καὶ πατρίδα γαῖαν (text/tlg003.txt)\"]",
+   "works": "{\"count\": 3, \"per-work\": \"text/<id>.txt\", \"list\": [{\"id\": \"tlg001\", \"tokens\": 7039, \"lines\": 1060}, {\"id\": \"tlg002\", \"tokens\": 5860, \"lines\": 839}, {\"id\": \"tlg003\", \"tokens\": 3298, \"lines\": 483}]}",
+   "why_seated": "Theogony, Works and Days, Shield. Seated to characterise the DISTANCE-INHERITANCE class on the same nine-feature battery used for direct master-student pairs — monolingual Greek so the lexical features stay comparable. Homer to Apollonius is roughly five centuries with no possible contact; Hesiod is the same-period alternative source. Plato and Aristotle are deliberately NOT examined until both classes are characterised.",
+   "manifest_sha256": "1679db6d19eb732031bd632ca097e8c37af1d87eb58f73591d1f55c2255ec647",
+   "file_count": 8,
+   "bytes": 481075
   }
  ]
 }

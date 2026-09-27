@@ -1,9 +1,9 @@
 {
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
- "_generated": "2026-09-27T09:44:55.247428Z",
- "seats": 62,
- "lines_total": 957543,
+ "_generated": "2026-09-27T10:52:55.288083Z",
+ "seats": 64,
+ "lines_total": 965823,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -2084,7 +2084,83 @@
    "why_seated": "Specimen §11 of The Final Time (#1635/#1637) rests on this corpus: the three states — visible; removed with a retained transition record; removed without one — and the inequality never existed != existed and was removed. The deletion record is here as data (5,217 delete events beside the saves they removed), so the specimen's claim can be checked against the bytes rather than against the report.",
    "ruling": "Seated under the MANUS ruling of 2026-09-27, against this index's principle that a seat is not taken where a licence cannot be verified at the file: no licence is stated for the payload. The text is agent-written and has no owner to license it; MANUS: 'its not really nightingale's property tho, is it?' The reconstruction is credited to the Nightingale Collective. What is seated is the swarm's words; the investigators' and OpenAI's accounts of the incident are pointed to, not hosted ('their article is not part of the original being seated - the swarm's words are').",
    "data": "https://www.alexanarch.org/data/corpora/dsewiki-swarm/"
+  },
+  {
+   "seat": "EA-CORPORA-16/01",
+   "corpus": "apollonius",
+   "edition": "Apollonius Rhodius, Perseus Greek edition (tlg0001)",
+   "license": "CC BY-SA (Perseus); underlying edition public domain",
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "a065c359aab33c33bd17ddc2cac7d27fdc9cd870",
+    "paths": [
+     "data/tlg0001"
+    ]
+   },
+   "language": "Ancient Greek",
+   "lines": 5898,
+   "verified_loci": [
+    "Argonautica I.1 — ἀρχόμενος σέο, Φοῖβε, παλαιγενέων κλέα φωτῶν, the opening line, located in text/tlg001.txt"
+   ],
+   "why_seated": "Argonautica. Seated to characterise the DISTANCE-INHERITANCE class on the same nine-feature battery used for direct master-student pairs — monolingual Greek so the lexical features stay comparable. Homer to Apollonius is roughly five centuries with no possible contact; Hesiod is the same-period alternative source. Plato and Aristotle are deliberately NOT examined until both classes are characterised.",
+   "works": {
+    "count": 1,
+    "per-work": "text/<id>.txt",
+    "list": [
+     {
+      "id": "tlg001",
+      "tokens": 38853,
+      "lines": 5898
+     }
+    ]
+   },
+   "note": "Round 33 (commit e4c14dcc5, 2026-08-30; recorded in the authorship notebook #1569 and the measurement register #1570) reclassed Homer to Apollonius from a neutral distance control to a distant CONSTRUCTED lineage — the Alexandrian poet claiming epic descent — and refuted the lexical battery the seats were first stored for. why_seated above is kept as written at storing.",
+   "data": "https://www.alexanarch.org/data/corpora/apollonius/"
+  },
+  {
+   "seat": "EA-CORPORA-16/02",
+   "corpus": "hesiod",
+   "edition": "Hesiod, Perseus Greek edition (tlg0020)",
+   "license": "CC BY-SA (Perseus); underlying edition public domain",
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "a065c359aab33c33bd17ddc2cac7d27fdc9cd870",
+    "paths": [
+     "data/tlg0020"
+    ]
+   },
+   "language": "Ancient Greek",
+   "lines": 2382,
+   "verified_loci": [
+    "Theogony 1 — Μουσάων Ἑλικωνιάδων ἀρχώμεθʼ ἀείδειν (text/tlg001.txt)",
+    "Works and Days 1 — μοῦσαι Πιερίηθεν ἀοιδῇσιν κλείουσαι (text/tlg002.txt)",
+    "Shield 1 — ἢ οἵη προλιποῦσα δόμους καὶ πατρίδα γαῖαν (text/tlg003.txt)"
+   ],
+   "why_seated": "Theogony, Works and Days, Shield. Seated to characterise the DISTANCE-INHERITANCE class on the same nine-feature battery used for direct master-student pairs — monolingual Greek so the lexical features stay comparable. Homer to Apollonius is roughly five centuries with no possible contact; Hesiod is the same-period alternative source. Plato and Aristotle are deliberately NOT examined until both classes are characterised.",
+   "works": {
+    "count": 3,
+    "per-work": "text/<id>.txt",
+    "list": [
+     {
+      "id": "tlg001",
+      "tokens": 7039,
+      "lines": 1060
+     },
+     {
+      "id": "tlg002",
+      "tokens": 5860,
+      "lines": 839
+     },
+     {
+      "id": "tlg003",
+      "tokens": 3298,
+      "lines": 483
+     }
+    ]
+   },
+   "note": "Round 33 (commit e4c14dcc5, 2026-08-30; recorded in the authorship notebook #1569 and the measurement register #1570) reclassed Homer to Apollonius from a neutral distance control to a distant CONSTRUCTED lineage — the Alexandrian poet claiming epic descent — and refuted the lexical battery the seats were first stored for. why_seated above is kept as written at storing.",
+   "data": "https://www.alexanarch.org/data/corpora/hesiod/"
   }
  ],
- "count": 66
+ "count": 68
 }
