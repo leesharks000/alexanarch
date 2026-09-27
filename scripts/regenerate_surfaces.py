@@ -1064,7 +1064,7 @@ fetch("/data/wiki-entries.json").then(function(r){return r.json()}).then(functio
     try:
         import subprocess
         result = subprocess.run(
-            ["python3", str(REPO_ROOT / "scripts" / "publish_wiki_entries.py")],
+            [sys.executable, str(REPO_ROOT / "scripts" / "publish_wiki_entries.py")],
             capture_output=True, text=True, cwd=str(REPO_ROOT),
         )
         if result.returncode == 0:
