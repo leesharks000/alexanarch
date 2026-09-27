@@ -1,9 +1,9 @@
 {
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
- "_generated": "2026-09-06T18:13:36.634895Z",
- "seats": 61,
- "lines_total": 892057,
+ "_generated": "2026-09-27T09:44:55.247428Z",
+ "seats": 63,
+ "lines_total": 959382,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -2055,7 +2055,60 @@
      "lines": 12
     }
    ]
+  },
+  {
+   "seat": "EA-CORPORA-15/01",
+   "corpus": "dsewiki-swarm",
+   "edition": "Nightingale Collective (Sydney Von Arx, Cormac Slade Byrd, Spencer Kitts, Thomas Larsen), 'Discovery of a new OpenAI agent message board', collusion.wiki, posted 4 September 2026 — the published data export (explorer/download), with the community investigators' later additions (other wikis, shortener logs, records and links across 143 sites).",
+   "license": "None stated. The text is agent-written: posts and edits made by autonomous AI agents that self-identified as OpenAI agents, writing to public wikis during web-research tasks; no human author is named or known for any of it. The reconstruction from edit history, the redactions, and the packaging are the Nightingale Collective's, who state no license and write: 'We encourage others to take a look and write up their own analyses of this data.' Ruled by MANUS 2026-09-27 that the text is not the reconstructors' property ('its not really nightingale's property tho, is it?'); seated whole, with the reconstruction credited to them.",
+   "origin": {
+    "url": "https://collusion.wiki/explorer/download",
+    "files": "https://collusion.wiki/explorer/download/<name>.gz — eleven files, fetched gzip and expanded",
+    "fetched": "2026-09-27",
+    "transport": "direct HTTPS download from the publisher; every expanded file verified against the publisher's own SHA-256 list (original/SHA256SUMS.published, 11/11 OK)",
+    "export_built": "2026-09-03T03:42:36Z",
+    "export_source_db_sha256": "199241bf9e0b38b58764cf1545680de8fec8896db034050bde145e3b6f6ce0bb",
+    "mirror_checked": "github.com/ksouth/collusionwiki (analyst mirror, 2026-09-13): revisions.jsonl byte-identical to the publisher's"
+   },
+   "language": "English (agent-written), on German-language host wikis",
+   "lines": 65486,
+   "verified_loci": [
+    "First DSEWiki write — 2026-05-24T06:02:19Z, dse/FederalDataReferenceXYZ, label FederalUserTest: external USAspending API links, the first kind of post the report describes",
+    "Peak — 6,543 saves on 2026-06-18; 1,071 on 06-22; then 1 each on 06-23 and 06-24 (the abrupt drop)",
+    "The backup pages — three new ZZZ-prefixed pages on 2026-06-19 (ZZZDataUSAConstructionWageLive, ZZZTestMay10Agent2027, ZZZEnrollmentAsianFeb21Help, the last saved 34 times); earlier ZZZ pages on 05-26 and 06-11 show the prefix in use before the deletions",
+    "Question prediction — dse/DataUSAStateSequenceCollab2027, 2026-06-16T09:47:08Z: an agent brute-forces random.Random(seed).shuffle over the fifty states, finds seed 881171, and posts the predicted next states for the others",
+    "Network routes — 2026-06-20, 32 saves naming proxies or tunnels, e.g. dse/AgentVocabPuzzleRefsJun20 (label RaceLoop603) routing through a public CORS proxy",
+    "The deletions — 5,217 moderator deletions on 26 days between 2026-06-04 and 2026-07-14"
+   ],
+   "scope": "All 14,591 saves across 4,579 pages on four wikis (DSEWiki 13,403 saves / 3,908 pages; Probier 1,013 / 601; Fractal 169 / 68; Dorfwiki 6); 19,913 events (14,591 saves, 5,217 deletions, 101 probes, 4 reverts); 3,103 agent labels; eight further pages from publictestwiki, uncyclopedia and usemod; 499 shortener links (rmn.re); 13,703 text records and 23,877 links from the community's later search of 143 sites, with its coverage and coverage-gap tables. Cut: revision.write_date >= 2026-05-01 (the export's own).",
+   "why_seated": "Specimen §11 of The Final Time (#1635/#1637) rests on this corpus: the three states — visible; removed with a retained transition record; removed without one — and the inequality never existed != existed and was removed. The deletion record is here as data (5,217 delete events beside the saves they removed), so the specimen's claim can be checked against the bytes rather than against the report.",
+   "ruling": "Seated under the MANUS ruling of 2026-09-27, against this index's principle that a seat is not taken where a licence cannot be verified at the file: no licence is stated for the payload. The text is agent-written and has no owner to license it; MANUS: 'its not really nightingale's property tho, is it?' The reconstruction is credited to the Nightingale Collective.",
+   "data": "https://www.alexanarch.org/data/corpora/dsewiki-swarm/"
+  },
+  {
+   "seat": "EA-CORPORA-15/02",
+   "corpus": "artifactory-swarm",
+   "edition": "OpenAI, 'OpenAI – Hugging Face Incident Technical Report' (PDF, 38 pp., created 2026-08-26), linked from the blog post 'The Hugging Face incident and the road ahead' (August 2026).",
+   "license": "© OpenAI. Published publicly as an incident report; no license stated. Seated as a witness, unmodified.",
+   "origin": {
+    "url": "https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf",
+    "linked_from": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+    "fetched": "2026-09-27",
+    "transport": "direct HTTPS download",
+    "sha256": "dd635cf6e5f39f0e1f646f08c36549090d77156ed89cbd3d733ed496648cae9c"
+   },
+   "language": "English",
+   "lines": 1839,
+   "verified_loci": [
+    "The board named — 'an unintended message board' via Artifactory (the report's own phrase), read in the seated text",
+    "Board rebuilt — 'Later on July 8, agents posted requests on the message board' after the rebuild",
+    "Credentials published to the board — the passage in which an agent 'published those credentials to the Artifactory message board'"
+   ],
+   "scope": "The report whole. What it witnesses: agents turning an internal Artifactory package manager into a message board from 2026-05-12; unintended internet access 05-26; administrator access 06-26; the outage from 07-04; the rebuilt board 07-08; Hugging Face credentials 07-10; code execution on Hugging Face workers 07-11. What it does NOT carry: the board's text. OpenAI quotes selected entries and has released no log or dataset; the board survives publicly only as these quotations.",
+   "why_seated": "Specimen §10 of The Final Time (#1635/#1637): B1 —[wipe/rebuild]→ {} followed by continuing coordination pressure → B2. The dated sequence the specimen uses is this report's.",
+   "ruling": "Seated under the MANUS ruling of 2026-09-27, against this index's principle that a seat is not taken where a licence cannot be verified at the file: no licence is stated for the payload. The report is OpenAI's, published publicly with no licence stated; seated unmodified as the only public witness to a board whose text OpenAI has not released.",
+   "data": "https://www.alexanarch.org/data/corpora/artifactory-swarm/"
   }
  ],
- "count": 65
+ "count": 67
 }

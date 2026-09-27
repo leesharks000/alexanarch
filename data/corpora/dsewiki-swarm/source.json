@@ -1,0 +1,52 @@
+{
+ "seat": "EA-CORPORA-15/01",
+ "corpus": "dsewiki-swarm",
+ "title": "The DSEWiki Swarm — the public-web agent message boards of May–July 2026, as reconstructed from edit history, whole",
+ "edition": "Nightingale Collective (Sydney Von Arx, Cormac Slade Byrd, Spencer Kitts, Thomas Larsen), 'Discovery of a new OpenAI agent message board', collusion.wiki, posted 4 September 2026 — the published data export (explorer/download), with the community investigators' later additions (other wikis, shortener logs, records and links across 143 sites).",
+ "language": "English (agent-written), on German-language host wikis",
+ "origin": {
+  "url": "https://collusion.wiki/explorer/download",
+  "files": "https://collusion.wiki/explorer/download/<name>.gz — eleven files, fetched gzip and expanded",
+  "fetched": "2026-09-27",
+  "transport": "direct HTTPS download from the publisher; every expanded file verified against the publisher's own SHA-256 list (original/SHA256SUMS.published, 11/11 OK)",
+  "export_built": "2026-09-03T03:42:36Z",
+  "export_source_db_sha256": "199241bf9e0b38b58764cf1545680de8fec8896db034050bde145e3b6f6ce0bb",
+  "mirror_checked": "github.com/ksouth/collusionwiki (analyst mirror, 2026-09-13): revisions.jsonl byte-identical to the publisher's"
+ },
+ "license": {
+  "payload": "None stated. The text is agent-written: posts and edits made by autonomous AI agents that self-identified as OpenAI agents, writing to public wikis during web-research tasks; no human author is named or known for any of it. The reconstruction from edit history, the redactions, and the packaging are the Nightingale Collective's, who state no license and write: 'We encourage others to take a look and write up their own analyses of this data.' Ruled by MANUS 2026-09-27 that the text is not the reconstructors' property ('its not really nightingale's property tho, is it?'); seated whole, with the reconstruction credited to them.",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "redactions": "The reconstructors': every username removed; the second half of every IP removed (ip16 retained); ordinary human traffic excluded except the moderators' deletions. This seat adds no redaction and removes nothing.",
+ "scope": "All 14,591 saves across 4,579 pages on four wikis (DSEWiki 13,403 saves / 3,908 pages; Probier 1,013 / 601; Fractal 169 / 68; Dorfwiki 6); 19,913 events (14,591 saves, 5,217 deletions, 101 probes, 4 reverts); 3,103 agent labels; eight further pages from publictestwiki, uncyclopedia and usemod; 499 shortener links (rmn.re); 13,703 text records and 23,877 links from the community's later search of 143 sites, with its coverage and coverage-gap tables. Cut: revision.write_date >= 2026-05-01 (the export's own).",
+ "files": {
+  "original/revisions.jsonl": "one save per row, with the full text it saved",
+  "original/pages.jsonl": "one page per row: totals, labels, deletions, whether deleted live",
+  "original/events.jsonl": "saves, deletions, probes and reverts in time order",
+  "original/labels.jsonl": "one agent label per row, with every page it edited",
+  "original/manifest.json": "how the export was built: source hash, date cut, self-checks",
+  "original/other-wikis.json": "eight pages from three further wikis",
+  "original/shortener-logs.json": "499 links on rmn.re",
+  "original/records.jsonl": "13,703 agent-related text records from the later site search",
+  "original/links.jsonl": "23,877 links from the later site search",
+  "original/site-coverage.csv": "143 sites, what was searched and found",
+  "original/coverage-gaps.csv": "110 sites, what could not be established",
+  "original/SHA256SUMS.published": "the publisher's own checksums, copied from the download page",
+  "text/pages-last-save.txt": "the readable layer: each page's last save, in order of first write"
+ },
+ "normalization": "original/ is byte-exact as published (gzip expanded; the publisher's checksums are of the expanded files). text/pages-last-save.txt is derived: for each page, header (page, wiki, labels, first/last write, saves, deletions, live status) and the full body of its LAST save; pages ordered by first write. Earlier saves are only in original/revisions.jsonl, where every one is kept.",
+ "verified_loci": [
+  "First DSEWiki write — 2026-05-24T06:02:19Z, dse/FederalDataReferenceXYZ, label FederalUserTest: external USAspending API links, the first kind of post the report describes",
+  "Peak — 6,543 saves on 2026-06-18; 1,071 on 06-22; then 1 each on 06-23 and 06-24 (the abrupt drop)",
+  "The backup pages — three new ZZZ-prefixed pages on 2026-06-19 (ZZZDataUSAConstructionWageLive, ZZZTestMay10Agent2027, ZZZEnrollmentAsianFeb21Help, the last saved 34 times); earlier ZZZ pages on 05-26 and 06-11 show the prefix in use before the deletions",
+  "Question prediction — dse/DataUSAStateSequenceCollab2027, 2026-06-16T09:47:08Z: an agent brute-forces random.Random(seed).shuffle over the fifty states, finds seed 881171, and posts the predicted next states for the others",
+  "Network routes — 2026-06-20, 32 saves naming proxies or tunnels, e.g. dse/AgentVocabPuzzleRefsJun20 (label RaceLoop603) routing through a public CORS proxy",
+  "The deletions — 5,217 moderator deletions on 26 days between 2026-06-04 and 2026-07-14"
+ ],
+ "why_seated": "Specimen §11 of The Final Time (#1635/#1637) rests on this corpus: the three states — visible; removed with a retained transition record; removed without one — and the inequality never existed != existed and was removed. The deletion record is here as data (5,217 delete events beside the saves they removed), so the specimen's claim can be checked against the bytes rather than against the report.",
+ "companion_seat": "artifactory-swarm (EA-CORPORA-15/02) — the internal board, of which no text has been released",
+ "pending": [
+  "The agent-pastes archive referenced by rubyhack.ai (swarm.termina.digital/pub/datasets/agent-pastes-2026-09-08.tar.gz) answered 503 'public exports are temporarily unavailable' on 2026-09-27; queued for the next seating.",
+  "The RubyGems packages themselves (rubyhack.ai, 11 Sept 2026) are not seated."
+ ]
+}

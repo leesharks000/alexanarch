@@ -41,6 +41,15 @@ KIND = {
 }
 
 
+def license_text(v):
+    """A seat's license may be a string or a {payload, record, ...} object. Render the
+    object as the words it holds, payload first — never as a Python repr on the shelf."""
+    if isinstance(v, dict):
+        order = ["payload", "record"] + [k for k in v if k not in ("payload", "record")]
+        return " · ".join(f"{k}: {v[k]}" for k in order if v.get(k))
+    return str(v)
+
+
 def kind_of(p):
     if p.name == "MANIFEST.sha256":
         return "sha256"
@@ -114,7 +123,7 @@ def card(name, seat, card_no, tpl, title=None):
     for f in seat_files(seat):
         rel = f.relative_to(seat).as_posix()
         rows.append(
-            f'<tr><td><a href="{CANON}/data/corpora/{name}/{rel}">{html.escape(rel)}</a></td>'
+            f'<tr><td style="overflow-wrap:anywhere"><a href="{CANON}/data/corpora/{name}/{rel}">{html.escape(rel)}</a></td>'
             f'<td class="mono">{kind_of(f)}</td><td class="mono">{size_of(f)}</td></tr>')
     prov = ""
     src = seat / "source.json"
@@ -123,7 +132,8 @@ def card(name, seat, card_no, tpl, title=None):
         bits = []
         for key, label in (("edition", "edition"), ("license", "license")):
             if s.get(key):
-                bits.append(f"<p><b>{label}</b> &middot; {html.escape(str(s[key]))}</p>")
+                val = license_text(s[key]) if key == "license" else str(s[key])
+                bits.append(f"<p><b>{label}</b> &middot; {html.escape(val)}</p>")
         org = s.get("origin")
         for o in (org if isinstance(org, list) else ([org] if org else [])):
             if isinstance(o, dict):
@@ -172,7 +182,7 @@ def ocard(name, seat, display_title=None):
     if lang:
         rows.append(f"LANGUAGE &middot; {html.escape(str(lang))}")
     if s.get("license"):
-        rows.append(f"LICENSE &middot; {html.escape(str(s['license']))}")
+        rows.append(f"LICENSE &middot; {html.escape(license_text(s['license']))}")
     w = s.get("works") or {}
     status = f"{w.get('count','?')} works &middot; {s.get('lines_total','?'):,} lines" if isinstance(s.get('lines_total'), int) \
              else f"{w.get('count','?')} works"

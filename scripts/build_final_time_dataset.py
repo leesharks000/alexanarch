@@ -27,6 +27,65 @@ AUTHORED = ROOT / "datasets" / "the-final-time"
 EXPECTED_AXN = "AXN:06CB.GENERATIVE.🪄🝊🪐✖️🧪⏪"
 EXPECTED_DEPOSIT = 1637
 
+# The swarm layer (EA-CORPORA-15, deposit #1639). The seat on the originals shelf is the
+# source of truth; its files are verified against the seat's own MANIFEST.sha256 and
+# carried in byte-exact, so the dataset and the shelf cannot drift apart.
+SWARM_SEAT = ROOT / "data" / "corpora" / "dsewiki-swarm"
+SWARM_CONFIGS = {
+    "dsewiki_revisions.jsonl": "original/revisions.jsonl",
+    "dsewiki_pages.jsonl": "original/pages.jsonl",
+    "dsewiki_events.jsonl": "original/events.jsonl",
+    "dsewiki_labels.jsonl": "original/labels.jsonl",
+    "swarm_site_records.jsonl": "original/records.jsonl",
+    "swarm_site_links.jsonl": "original/links.jsonl",
+}
+
+
+# One transform, stated. The publisher's events file gives round_id and related_event_id
+# as an array in most rows and a bare string in a few (29 and 4 rows), which the Hub's
+# Arrow loader cannot type. In the dataset copy those strings are wrapped as one-item
+# arrays; nothing else changes. The seat keeps the publisher's bytes untouched.
+LIST_FIELDS = {"dsewiki_events.jsonl": ("round_id", "related_event_id")}
+
+
+def carry(src, dest):
+    fields = LIST_FIELDS.get(dest.name)
+    if not fields:
+        shutil.copyfile(src, dest)
+        return {}
+    wrapped = {f: 0 for f in fields}
+    with src.open(encoding="utf-8") as fin, dest.open("w", encoding="utf-8") as fout:
+        for line in fin:
+            if not line.strip():
+                continue
+            row = json.loads(line)
+            for f in fields:
+                if isinstance(row.get(f), str):
+                    row[f] = [row[f]]
+                    wrapped[f] += 1
+            fout.write(json.dumps(row, ensure_ascii=False, separators=(",", ":")) + "\n")
+    return wrapped
+
+
+def swarm_sources():
+    manifest = SWARM_SEAT / "MANIFEST.sha256"
+    if not manifest.exists():
+        raise SystemExit(f"swarm seat missing its manifest: {manifest}")
+    pinned = {}
+    for line in manifest.read_text(encoding="utf-8").splitlines():
+        if line.strip():
+            digest, rel = line.split(None, 1)
+            pinned[rel.strip().lstrip("./")] = digest
+    out = {}
+    for dest, rel in SWARM_CONFIGS.items():
+        src = SWARM_SEAT / rel
+        if not src.exists():
+            raise SystemExit(f"swarm seat missing {rel}")
+        if pinned.get(rel) != sha256(src):
+            raise SystemExit(f"swarm seat {rel} does not verify against MANIFEST.sha256")
+        out[dest] = src
+    return out
+
 
 def sha256(path: pathlib.Path) -> str:
     h = hashlib.sha256()
@@ -129,6 +188,7 @@ def main():
         "observer_endogeneity.jsonl",
         "reopening_tests.jsonl",
         "exits.jsonl",
+        "swarm_specimens.jsonl",
     }
     present = {p.name for p in AUTHORED.iterdir() if p.is_file()}
     missing = sorted(required - present)
@@ -148,6 +208,14 @@ def main():
     observer_endogeneity = validate_jsonl(AUTHORED / "observer_endogeneity.jsonl")
     reopening_tests = validate_jsonl(AUTHORED / "reopening_tests.jsonl")
     exits = validate_jsonl(AUTHORED / "exits.jsonl")
+    swarm_specimens = validate_jsonl(AUTHORED / "swarm_specimens.jsonl")
+    if len(swarm_specimens) < 2:
+        raise SystemExit("swarm layer must link both specimens (§10 and §11) to their seats")
+    for row in swarm_specimens:
+        seat = ROOT / "data" / "corpora" / row.get("seat", "")
+        if not row.get("seat") or not (seat / "source.json").exists():
+            raise SystemExit(f"{row['id']}: swarm row names no seated corpus")
+    swarm = swarm_sources()
 
     if len(contract) < 10:
         raise SystemExit("summarizer contract must carry 10+ invariants")
@@ -316,7 +384,8 @@ def main():
             f"{len(admissibility_ratchet)} admissibility rules,",
             f"{len(purpose_edge_tests)} purpose-edge tests,",
             f"{len(observer_endogeneity)} endogeneity tests,",
-            f"{len(reopening_tests)} reopening tests, {len(exits)} exits",
+            f"{len(reopening_tests)} reopening tests, {len(exits)} exits,",
+            f"{len(swarm_specimens)} swarm specimen rows, {len(swarm)} seated swarm configs verified",
         )
         return
 
@@ -328,6 +397,12 @@ def main():
         if p.is_file():
             shutil.copy2(p, out / p.name)
 
+    transforms = {}
+    for dest, src_path in swarm.items():
+        wrapped = carry(src_path, out / dest)
+        if wrapped:
+            transforms[dest] = {"wrapped_string_as_one_item_array": wrapped,
+                                "original": f"data/corpora/dsewiki-swarm/{SWARM_CONFIGS[dest]}"}
     (out / "manuscript.md").write_text(src, encoding="utf-8")
 
     sections = parse_sections(src)
@@ -345,6 +420,10 @@ def main():
         or "local"
     )
     spore["counts"]["sections"] = len(sections)
+    for dest in swarm:
+        with (out / dest).open("rb") as fh:
+            spore["counts"][dest[:-6]] = sum(1 for _ in fh)
+    spore["swarm_transforms"] = transforms
     spore_path.write_text(
         json.dumps(spore, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
