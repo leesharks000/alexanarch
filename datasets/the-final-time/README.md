@@ -29,6 +29,20 @@ configs:
     data_files: exits.jsonl
   - config_name: sections
     data_files: sections.jsonl
+  - config_name: swarm_specimens
+    data_files: swarm_specimens.jsonl
+  - config_name: dsewiki_revisions
+    data_files: dsewiki_revisions.jsonl
+  - config_name: dsewiki_pages
+    data_files: dsewiki_pages.jsonl
+  - config_name: dsewiki_events
+    data_files: dsewiki_events.jsonl
+  - config_name: dsewiki_labels
+    data_files: dsewiki_labels.jsonl
+  - config_name: swarm_site_records
+    data_files: swarm_site_records.jsonl
+  - config_name: swarm_site_links
+    data_files: swarm_site_links.jsonl
 ---
 
 # THE FINAL TIME
@@ -142,6 +156,13 @@ A short summary that says "AI systems may suppress criticism" has recognized the
 | `reopening_tests` | Pre-registered counterevidence: restoration, reversal, useful-space expansion, and viable-order re-entry. |
 | `exits` | Typed routes to works and datasets deliberately **not** absorbed here. |
 | `sections` | The canonical v0.5 manuscript split by headings for retrieval and reconstruction. |
+| `swarm_specimens` | The swarm layer: §10 and §11 linked to their seats on the originals shelf, and §11's three states counted in the seated bytes. |
+| `dsewiki_revisions` | Every save the agents made to the public wikis, May–July 2026, each with the full text it saved (14,591 rows). |
+| `dsewiki_pages` | One row per page (4,579): saves, labels, deletions, recreations. |
+| `dsewiki_events` | Saves, moderator deletions, probes and reverts in time order (19,913 rows). |
+| `dsewiki_labels` | The names the agents signed with (3,103), each with every page it edited. |
+| `swarm_site_records` | Agent-related text from the later search of 143 further sites (13,703 rows). |
+| `swarm_site_links` | Links from that search (23,877 rows). |
 
 `manuscript.md` is also shipped as a whole-source witness. `schema.json`, `manifest.json`, and `spore.json` describe the build and its provenance.
 
@@ -424,6 +445,18 @@ The limit is not perfect safety.
 
 It is a system in which nothing remains capable of reaching anything that matters.
 
+## Fourth layer: the swarm, seated
+
+§10 and §11 rest on two incidents, and both are now on the archive's originals shelf as EA-CORPORA-15 (deposit #1639, `AXN:06CD.DATASET.👉♻️🔴👁️❤️🎺`).
+
+**The public swarm is here whole.** The six `dsewiki_*` and `swarm_site_*` configs are the seat `data/corpora/dsewiki-swarm/` carried into the dataset: every save autonomous agents made to DSEWiki and three smaller wikis, beside the 5,217 moderator deletions that removed them, as reconstructed from edit history and published by the Nightingale Collective (collusion.wiki, 4 September 2026). The build verifies each file against the seat's own manifest before it ships, so the dataset and the shelf cannot drift apart. Five ship byte-exact. `dsewiki_events` carries one stated transform: `round_id` and `related_event_id` are arrays in most of the publisher's rows and bare strings in 29 and 4, which the Hub's loader cannot type, so those strings are wrapped as one-item arrays and nothing else changes. `spore.json` records the counts; the seat keeps the publisher's bytes.
+
+**The internal swarm is not.** OpenAI has released no log of the Artifactory board, only quotations in its technical report. The report is seated on the shelf (`data/corpora/artifactory-swarm/`) and linked from `swarm_specimens`; it is not copied here.
+
+That difference is §11's argument, carried as data. The public board's deletions were retained as a record, so the transition from visible to removed survives beside the thing removed: 3,898 of 3,908 DSEWiki pages carry at least one deletion, and every one of them is in these configs with all of its retained saves. The internal board's record stayed with its operator. `swarm_specimens` counts the three states in the bytes and says plainly that the third — removed without a record — cannot appear in a reconstruction, and is bounded only by the reconstructors' own table of 110 sites where the search could not establish what existed.
+
+**Terms.** CC BY 4.0 covers this dataset's own authored rows. The six seated configs carry their seat's terms: the text is agent-written, no human author is named or known for it, and its publisher states no licence; the reconstruction is the Nightingale Collective's and is credited to them. Their redactions stand (usernames removed, the second half of every IP removed); nothing is added or removed here.
+
 ## How the dataset enacts the thesis
 
 ### 1. It distinguishes recognition from standing
@@ -487,7 +520,7 @@ Each of those loses a distinction the paper explicitly needs.
 
 ## Reproducing the dataset
 
-The source of this Hub body lives in the Alexanarch repository. The build script reads the canonical deposited text at `data/texts/AXN-06CB-text.md`, copies the authored machine-facing configs, splits the manuscript by heading into `sections.jsonl`, stamps `spore.json` with the source commit, and writes a content manifest.
+The source of this Hub body lives in the Alexanarch repository. The build script reads the canonical deposited text at `data/texts/AXN-06CB-text.md`, copies the authored machine-facing configs, splits the manuscript by heading into `sections.jsonl`, carries the seated swarm files in from `data/corpora/dsewiki-swarm/` after verifying them against the seat's manifest, stamps `spore.json` with the source commit, and writes a content manifest.
 
 ```bash
 python3 scripts/build_final_time_dataset.py --out hf-final-time

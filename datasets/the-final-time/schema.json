@@ -1,6 +1,6 @@
 {
   "dataset": "the-final-time",
-  "version": "v0.4",
+  "version": "v0.5",
   "source": {
     "deposit_number": 1637,
     "axn": "AXN:06CB.GENERATIVE.🪄🝊🪐✖️🧪⏪",
@@ -63,6 +63,34 @@
     "reopening_tests": {
       "primary_key": "id",
       "purpose": "Pre-registered counterevidence that gives restoration and purpose-relevant reopening the same standing as contraction."
+    },
+    "swarm_specimens": {
+      "primary_key": "id",
+      "purpose": "The swarm layer: §10 and §11 linked to their seats (EA-CORPORA-15, #1639), and §11's three states counted in the seated bytes."
+    },
+    "dsewiki_revisions": {
+      "primary_key": "rev_id",
+      "purpose": "Seated (data/corpora/dsewiki-swarm/original/revisions.jsonl), byte-exact: one agent save per row with its full text."
+    },
+    "dsewiki_pages": {
+      "primary_key": "page_id",
+      "purpose": "Seated (original/pages.jsonl), byte-exact: one page per row."
+    },
+    "dsewiki_events": {
+      "primary_key": "event_id",
+      "purpose": "Seated (original/events.jsonl), byte-exact: saves, deletions, probes, reverts."
+    },
+    "dsewiki_labels": {
+      "primary_key": "label",
+      "purpose": "Seated (original/labels.jsonl), byte-exact: agent labels."
+    },
+    "swarm_site_records": {
+      "primary_key": "id",
+      "purpose": "Seated (original/records.jsonl), byte-exact: text from the later 143-site search."
+    },
+    "swarm_site_links": {
+      "primary_key": "url",
+      "purpose": "Seated (original/links.jsonl), byte-exact: links from that search."
     }
   },
   "standing_principle": "Others may destroy what I build, if they believe that is right.",
