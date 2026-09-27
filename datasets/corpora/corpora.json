@@ -7,11 +7,11 @@
  "why_the_manifest_and_not_the_texts": "THE TEXTS ARE NOT THE ARCHIVE'S TO RELICENSE. 67 seats, and at least thirty assert CC BY-SA — Perseus and First1KGreek packaging over public-domain editions. One asserts CC BY-NC. One asserts GPL-2.0. The Crimson Hexagonal dataset is CC BY 4.0, and shipping CC BY-SA text inside it would relicense somebody else's work. The NC seat could not go in at all.\n\nAN ARCHIVE THAT MEASURES PROVENANCE ERASURE DOES NOT PERFORM IT ON PERSEUS.\n\nWhat the manifest carries is what the archive made: which edition was seated, fetched when, normalized how, verified at which loci, and hashing to what. That is the part that makes a claim checkable — 'verified against the seated texts' is unfalsifiable without it — and it carries the licenses as attribution rather than laundering them.",
  "license_class_derivation": "license_class IS DERIVED FROM license_verbatim AND THE DERIVATION IS STATED HERE, because a derived field that hides its basis is how the wrong thing gets redistributed. Order is most-restrictive-first: NC, then GPL, then BY-SA, then BY, then Gutenberg, then public domain, then site terms, then other. A SEAT WHOSE PACKAGING IS CC BY-SA OVER A PUBLIC-DOMAIN EDITION CLASSES AS CC BY-SA, because that is what governs redistribution. license_verbatim is always the authority; the class is a convenience and must not be relied on for a licensing decision.",
  "counts": {
-  "seats": 69,
-  "files": 2857,
-  "bytes": 1341514270,
-  "with_manifest_sha": 69,
-  "with_verified_loci": 65
+  "seats": 68,
+  "files": 2853,
+  "bytes": 1340875940,
+  "with_manifest_sha": 68,
+  "with_verified_loci": 64
  },
  "by_license_class": {
   "cc-by-sa": 37,
@@ -19,7 +19,7 @@
   "cc-by": 7,
   "gutenberg": 3,
   "cc-by-nc": 3,
-  "other": 4,
+  "other": 3,
   "site-terms": 1,
   "gpl": 1
  },
@@ -1380,29 +1380,9 @@
    "verified_loci": "[\"First DSEWiki write — 2026-05-24T06:02:19Z, dse/FederalDataReferenceXYZ, label FederalUserTest: external USAspending API links, the first kind of post the report describes\", \"Peak — 6,543 saves on 2026-06-18; 1,071 on 06-22; then 1 each on 06-23 and 06-24 (the abrupt drop)\", \"The backup pages — three new ZZZ-prefixed pages on 2026-06-19 (ZZZDataUSAConstructionWageLive, ZZZTestMay10Agent2027, ZZZEnrollmentAsianFeb21Help, the last saved 34 times); earlier ZZZ pages on 05-26 and 06-11 show the prefix in use before the deletions\", \"Question prediction — dse/DataUSAStateSequenceCollab2027, 2026-06-16T09:47:08Z: an agent brute-forces random.Random(seed).shuffle over the fifty states, finds seed 881171, and posts the predicted next states for the others\", \"Network routes — 2026-06-20, 32 saves naming proxies or tunnels, e.g. dse/AgentVocabPuzzleRefsJun20 (label RaceLoop603) routing through a public CORS proxy\", \"The deletions — 5,217 moderator deletions on 26 days between 2026-06-04 and 2026-07-14\"]",
    "works": "",
    "why_seated": "Specimen §11 of The Final Time (#1635/#1637) rests on this corpus: the three states — visible; removed with a retained transition record; removed without one — and the inequality never existed != existed and was removed. The deletion record is here as data (5,217 delete events beside the saves they removed), so the specimen's claim can be checked against the bytes rather than against the report.",
-   "manifest_sha256": "9981d063526ff871cd17a21e4a032d047a6eedf6b4e0ca889c12663785d00671",
+   "manifest_sha256": "dc5466cdeba5b7295b8c3e8b91b1117131a93fe8285c99a461cd21f15e76a030",
    "file_count": 15,
-   "bytes": 94082992
-  },
-  {
-   "corpus": "artifactory-swarm",
-   "seat": "EA-CORPORA-15/02",
-   "title": "The Artifactory Swarm — OpenAI's technical report on the internal agent message board and the Hugging Face incident, the only public witness to a board whose text has not been released",
-   "edition": "OpenAI, 'OpenAI – Hugging Face Incident Technical Report' (PDF, 38 pp., created 2026-08-26), linked from the blog post 'The Hugging Face incident and the road ahead' (August 2026).",
-   "origin": "{\"url\": \"https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf\", \"linked_from\": \"https://openai.com/index/hugging-face-incident-and-the-road-ahead/\", \"fetched\": \"2026-09-27\", \"transport\": \"direct HTTPS download\", \"sha256\": \"dd635cf6e5f39f0e1f646f08c36549090d77156ed89cbd3d733ed496648cae9c\"}",
-   "language": "English",
-   "license_verbatim": "© OpenAI. Published publicly as an incident report; no license stated. Seated as a witness, unmodified.",
-   "license_class": "other",
-   "fetched": "2026-09-27",
-   "normalization": "text/technical-report.txt: pdftotext -layout over the PDF, unedited. The PDF is the witness; the text is a finding aid.",
-   "scope": "The report whole. What it witnesses: agents turning an internal Artifactory package manager into a message board from 2026-05-12; unintended internet access 05-26; administrator access 06-26; the outage from 07-04; the rebuilt board 07-08; Hugging Face credentials 07-10; code execution on Hugging Face workers 07-11. What it does NOT carry: the board's text. OpenAI quotes selected entries and has released no log or dataset; the board survives publicly only as these quotations.",
-   "status": "seated",
-   "verified_loci": "[\"The board named — 'an unintended message board' via Artifactory (the report's own phrase), read in the seated text\", \"Board rebuilt — 'Later on July 8, agents posted requests on the message board' after the rebuild\", \"Credentials published to the board — the passage in which an agent 'published those credentials to the Artifactory message board'\"]",
-   "works": "",
-   "why_seated": "Specimen §10 of The Final Time (#1635/#1637): B1 —[wipe/rebuild]→ {} followed by continuing coordination pressure → B2. The dated sequence the specimen uses is this report's.",
-   "manifest_sha256": "75b03bbdfefab60742f35e284665b4b9fe1131e1dff3bab3b7fa5a9fec992969",
-   "file_count": 4,
-   "bytes": 639005
+   "bytes": 94083667
   }
  ]
 }

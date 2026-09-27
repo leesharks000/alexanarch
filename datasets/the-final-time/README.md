@@ -156,7 +156,7 @@ A short summary that says "AI systems may suppress criticism" has recognized the
 | `reopening_tests` | Pre-registered counterevidence: restoration, reversal, useful-space expansion, and viable-order re-entry. |
 | `exits` | Typed routes to works and datasets deliberately **not** absorbed here. |
 | `sections` | The canonical v0.5 manuscript split by headings for retrieval and reconstruction. |
-| `swarm_specimens` | The swarm layer: §10 and §11 linked to their seats on the originals shelf, and §11's three states counted in the seated bytes. |
+| `swarm_specimens` | The swarm layer: §11 linked to its seat on the originals shelf with its three states counted in the seated bytes; §10's internal board pointed to, not seated. |
 | `dsewiki_revisions` | Every save the agents made to the public wikis, May–July 2026, each with the full text it saved (14,591 rows). |
 | `dsewiki_pages` | One row per page (4,579): saves, labels, deletions, recreations. |
 | `dsewiki_events` | Saves, moderator deletions, probes and reverts in time order (19,913 rows). |
@@ -447,11 +447,11 @@ It is a system in which nothing remains capable of reaching anything that matter
 
 ## Fourth layer: the swarm, seated
 
-§10 and §11 rest on two incidents, and both are now on the archive's originals shelf as EA-CORPORA-15 (deposit #1639, `AXN:06CD.DATASET.⏫🌸🔛⚪🌈🔓`).
+§10 and §11 rest on two incidents. The one whose words are public is now on the archive's originals shelf as EA-CORPORA-15 (deposit #1639, `AXN:06CD.DATASET.👉♻️🔴👁️❤️🎺`).
 
 **The public swarm is here whole.** The six `dsewiki_*` and `swarm_site_*` configs are the seat `data/corpora/dsewiki-swarm/` carried into the dataset: every save autonomous agents made to DSEWiki and three smaller wikis, beside the 5,217 moderator deletions that removed them, as reconstructed from edit history and published by the Nightingale Collective (collusion.wiki, 4 September 2026). The build verifies each file against the seat's own manifest before it ships, so the dataset and the shelf cannot drift apart. Five ship byte-exact. `dsewiki_events` carries one stated transform: `round_id` and `related_event_id` are arrays in most of the publisher's rows and bare strings in 29 and 4, which the Hub's loader cannot type, so those strings are wrapped as one-item arrays and nothing else changes. `spore.json` records the counts; the seat keeps the publisher's bytes.
 
-**The internal swarm is not.** OpenAI has released no log of the Artifactory board, only quotations in its technical report. The report is seated on the shelf (`data/corpora/artifactory-swarm/`) and linked from `swarm_specimens`; it is not copied here.
+**The internal swarm is not.** OpenAI has released no log of the Artifactory board, only quotations in its [technical report](https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf). The swarm's words on that board are not public, so there is nothing of them to seat; `swarm_specimens` points to OpenAI's account and keeps it outside. What is seated is the swarm's words, not accounts of them.
 
 That difference is §11's argument, carried as data. The public board's deletions were retained as a record, so the transition from visible to removed survives beside the thing removed: 3,898 of 3,908 DSEWiki pages carry at least one deletion, and every one of them is in these configs with all of its retained saves. The internal board's record stayed with its operator. `swarm_specimens` counts the three states in the bytes and says plainly that the third — removed without a record — cannot appear in a reconstruction, and is bounded only by the reconstructors' own table of 110 sites where the search could not establish what existed.
 

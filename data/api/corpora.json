@@ -2,8 +2,8 @@
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
  "_generated": "2026-09-27T09:44:55.247428Z",
- "seats": 63,
- "lines_total": 959382,
+ "seats": 62,
+ "lines_total": 957543,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -2082,33 +2082,9 @@
    ],
    "scope": "All 14,591 saves across 4,579 pages on four wikis (DSEWiki 13,403 saves / 3,908 pages; Probier 1,013 / 601; Fractal 169 / 68; Dorfwiki 6); 19,913 events (14,591 saves, 5,217 deletions, 101 probes, 4 reverts); 3,103 agent labels; eight further pages from publictestwiki, uncyclopedia and usemod; 499 shortener links (rmn.re); 13,703 text records and 23,877 links from the community's later search of 143 sites, with its coverage and coverage-gap tables. Cut: revision.write_date >= 2026-05-01 (the export's own).",
    "why_seated": "Specimen §11 of The Final Time (#1635/#1637) rests on this corpus: the three states — visible; removed with a retained transition record; removed without one — and the inequality never existed != existed and was removed. The deletion record is here as data (5,217 delete events beside the saves they removed), so the specimen's claim can be checked against the bytes rather than against the report.",
-   "ruling": "Seated under the MANUS ruling of 2026-09-27, against this index's principle that a seat is not taken where a licence cannot be verified at the file: no licence is stated for the payload. The text is agent-written and has no owner to license it; MANUS: 'its not really nightingale's property tho, is it?' The reconstruction is credited to the Nightingale Collective.",
+   "ruling": "Seated under the MANUS ruling of 2026-09-27, against this index's principle that a seat is not taken where a licence cannot be verified at the file: no licence is stated for the payload. The text is agent-written and has no owner to license it; MANUS: 'its not really nightingale's property tho, is it?' The reconstruction is credited to the Nightingale Collective. What is seated is the swarm's words; the investigators' and OpenAI's accounts of the incident are pointed to, not hosted ('their article is not part of the original being seated - the swarm's words are').",
    "data": "https://www.alexanarch.org/data/corpora/dsewiki-swarm/"
-  },
-  {
-   "seat": "EA-CORPORA-15/02",
-   "corpus": "artifactory-swarm",
-   "edition": "OpenAI, 'OpenAI – Hugging Face Incident Technical Report' (PDF, 38 pp., created 2026-08-26), linked from the blog post 'The Hugging Face incident and the road ahead' (August 2026).",
-   "license": "© OpenAI. Published publicly as an incident report; no license stated. Seated as a witness, unmodified.",
-   "origin": {
-    "url": "https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf",
-    "linked_from": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
-    "fetched": "2026-09-27",
-    "transport": "direct HTTPS download",
-    "sha256": "dd635cf6e5f39f0e1f646f08c36549090d77156ed89cbd3d733ed496648cae9c"
-   },
-   "language": "English",
-   "lines": 1839,
-   "verified_loci": [
-    "The board named — 'an unintended message board' via Artifactory (the report's own phrase), read in the seated text",
-    "Board rebuilt — 'Later on July 8, agents posted requests on the message board' after the rebuild",
-    "Credentials published to the board — the passage in which an agent 'published those credentials to the Artifactory message board'"
-   ],
-   "scope": "The report whole. What it witnesses: agents turning an internal Artifactory package manager into a message board from 2026-05-12; unintended internet access 05-26; administrator access 06-26; the outage from 07-04; the rebuilt board 07-08; Hugging Face credentials 07-10; code execution on Hugging Face workers 07-11. What it does NOT carry: the board's text. OpenAI quotes selected entries and has released no log or dataset; the board survives publicly only as these quotations.",
-   "why_seated": "Specimen §10 of The Final Time (#1635/#1637): B1 —[wipe/rebuild]→ {} followed by continuing coordination pressure → B2. The dated sequence the specimen uses is this report's.",
-   "ruling": "Seated under the MANUS ruling of 2026-09-27, against this index's principle that a seat is not taken where a licence cannot be verified at the file: no licence is stated for the payload. The report is OpenAI's, published publicly with no licence stated; seated unmodified as the only public witness to a board whose text OpenAI has not released.",
-   "data": "https://www.alexanarch.org/data/corpora/artifactory-swarm/"
   }
  ],
- "count": 67
+ "count": 66
 }

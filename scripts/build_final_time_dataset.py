@@ -212,9 +212,13 @@ def main():
     if len(swarm_specimens) < 2:
         raise SystemExit("swarm layer must link both specimens (§10 and §11) to their seats")
     for row in swarm_specimens:
-        seat = ROOT / "data" / "corpora" / row.get("seat", "")
-        if not row.get("seat") or not (seat / "source.json").exists():
-            raise SystemExit(f"{row['id']}: swarm row names no seated corpus")
+        # A row either names a seat on the originals shelf, or points outward to an
+        # account that is not seated (source_uri) — never neither.
+        if row.get("seat"):
+            if not (ROOT / "data" / "corpora" / row["seat"] / "source.json").exists():
+                raise SystemExit(f"{row['id']}: swarm row names a seat that is not on the shelf")
+        elif not row.get("source_uri") or row.get("included_here") is not False:
+            raise SystemExit(f"{row['id']}: an unseated swarm row must point outward and stay outside")
     swarm = swarm_sources()
 
     if len(contract) < 10:
