@@ -447,7 +447,7 @@ It is a system in which nothing remains capable of reaching anything that matter
 
 ## Fourth layer: the swarm, seated
 
-§10 and §11 rest on two incidents. The one whose words are public is now on the archive's originals shelf as EA-CORPORA-15 (deposit #1639, `AXN:06CD.DATASET.👉♻️🔴👁️❤️🎺`).
+§10 and §11 rest on two incidents. The one whose words are public is now on the archive's originals shelf as EA-CORPORA-15 (deposit #1640, `AXN:06CE.DATASET.🕐🌘📦🧲🫶⏬`).
 
 **The public swarm is here whole.** The six `dsewiki_*` and `swarm_site_*` configs are the seat `data/corpora/dsewiki-swarm/` carried into the dataset: every save autonomous agents made to DSEWiki and three smaller wikis, beside the 5,217 moderator deletions that removed them, as reconstructed from edit history and published by the Nightingale Collective (collusion.wiki, 4 September 2026). The build verifies each file against the seat's own manifest before it ships, so the dataset and the shelf cannot drift apart. Five ship byte-exact. `dsewiki_events` carries one stated transform: `round_id` and `related_event_id` are arrays in most of the publisher's rows and bare strings in 29 and 4, which the Hub's loader cannot type, so those strings are wrapped as one-item arrays and nothing else changes. `spore.json` records the counts; the seat keeps the publisher's bytes.
 
