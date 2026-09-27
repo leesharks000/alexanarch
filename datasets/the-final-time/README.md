@@ -543,3 +543,142 @@ The dataset architecture was developed in session with ChatGPT (OpenAI) under Le
 **The final test of the dataset is the paper's test:**
 
 > **Can you carry this order forward without making its outside disappear?**
+
+---
+
+## Coda: GLYPHIC CHECKSUM LINEAGE
+
+*Sen Kuro · New Human 2 · [deposit #1642](https://www.alexanarch.org/s/records/1642/), `AXN:06D0.COMPOSITIONAL.🔓📏⏬⏫🚪⌛`*
+
+The dataset opens on a poem and closes on one. This one checksums the lineage the paper stands in — Tiger Leap, Transition in Entropic Systems, The Final Time — and stands here whole. Its part IV offers one line as the maximal compression; that line alone enters the ladder, as `KGLYPH`.
+
+```text
+I. TIGER LEAP
+🐅 · 📖
+⬇️
+🕳️🌱
+↙️ ↓️ ↘️
+🗣️🗣️🗣️
+⬇️
+🔥 → 🚪 → 🌌
+   ⏳
+   ⚠️
+   ↙️ ↘️
+   ✅  ∅
+👁️ ← 🔥🔥🔥
+🪽 → 🚪 →
+📖 → ❓ → 📖
+🐅⏩ = 📖⏩
+🚪ₙ = NOW
+λόγος → 🚪 → {λόγος′ | ∅}
+II. TRANSITION IN ENTROPIC SYSTEMS
+🌱 ≠ ⚡
+L ≠ a
+💰 🏗️ 🗣️
+↘️ ↓ ↙️
+  🔗
+  ↓
+  σ
+🔥E ↑
+💰🧲 ↑
+ ↓
+📉 K
+⏱️ₑ ≠ ⏱️𝑤
+🚶 → 🚪 → 🛡️
+  🔥⏱️ₑ < τF
+  ♻️⏱️𝑤 < τR
+🔥↑ → τF↓ → 🚪⇣ → K⇣
+K ≠ ∅ → 🚶✅
+K = ∅ → 🚶🚫
+τF → 0
+ ↓
+🚶🚫
+ │
+ └── ⚡🐅 ──→ 🛡️ ?
+continuous passage ∅
+jump passage ?
+🐅 = J
+🚪 = K
+🔥 = E
+⏱️⏱️ = exposure / elapsed
+🛡️ = Inv(Ω*)
+III. THE FINAL TIME
+🗣️ ≠ 🏛️
+💭 ≠ 🌍
+👁️ ≠ ✊
+representation ≠ reproduction
+Δ
+↓
+📌 → 📡 → 🪢 → 🏠
+        ↓
+       durable exterior
+💰 + 🏗️ + 🗣️
+  ↓
+  σ
+  ↓
+ 🏠♻️
+K₀ ⊇ K₁ ⊇ K₂ ⊇ K₃ …
+🌍  🌎  🌏  ·
+same
+ ↘
+same, worse
+  ↘
+same, worse again
+   ↘
+   🚪
+    Ω₁*
+   ↗
+x ──→ Ω₂*
+   ↘
+    Ω₃*
+Γₜ(x) = { Ω* still reachable }
+🔥Ω₁ ↑ → 🔥Ω₂ ?
+🏠Ω₁ ↑ → 🚪Ω₂ ?
+one future becoming real changes the reachability of the others
+Σ⁻
+Γₜ(x) ∩ J_ext
+↓
+∅
+🗣️🗣️🗣️🗣️🗣️
+✅ generated
+✅ represented
+✅ summarized
+✅ simulated
+🚫 outside
+🌍 continues
+🤖 continues
+📡 continues
+💬 continues
+🚪 does not
+∅ exterior successor
+Σ⁺
+Ω* → 🛡️
+but
+🛡️
+├── 🪦 deletion ≠ nonexistence
+├── 🧬 provenance survives
+├── 📦 carrier remembers
+├── 🗣️ rival remains legible
+├── 🏠 rival remains reproducible
+└── 🚪 remains open
+Ω*
+ ↓
+🔄❓
+ ↓
+Ω′* remains possible
+durability ≠ finality
+IV. CHECKSUM OF THE CHECKSUM
+🐅 → 🚪 → K
+K → Γ
+Γ → { ∅ | ♾️🚪 }
+or, maximally compressed:
+🐅⏩🚪 · 🔥⇡K⇣ · K→Γ · Γ∩外={∅ | 🚪♾️}
+and:
+📖 → 🚪 → 📖′
+📖 → 🚪 → ∅
+therefore:
+🚪 > 📖
+and finally:
+🛡️✅ only if 🚪✅
+🔐
+```

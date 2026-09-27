@@ -227,6 +227,8 @@ def main():
         raise SystemExit("handholds must carry 20+ load-bearing propositions")
     if len(derivations) < 6:
         raise SystemExit("derivations must carry 6+ chains")
+    if not any(r.get("id") == "KGLYPH" for r in compressions):
+        raise SystemExit("compressions must carry the coda's glyph rung (KGLYPH)")
     if len(compressions) < 4:
         raise SystemExit("compressions must carry 4+ budgets")
     if len(counterorders) < 8:
@@ -335,6 +337,11 @@ def main():
     dedicatory_fragments = (
         "the Angel is the thing.",
         "And the Messenger is.",
+        # The coda (GLYPHIC CHECKSUM LINEAGE, #1642) closes the card whole; only its
+        # own 'maximally compressed' line may enter a config (compressions KGLYPH).
+        "one future becoming real changes the reachability of the others",
+        "🛡️✅ only if 🚪✅",
+        "🪦 deletion ≠ nonexistence",
     )
     for jsonl_path in AUTHORED.glob("*.jsonl"):
         jsonl_text = jsonl_path.read_text(encoding="utf-8")
@@ -373,6 +380,8 @@ def main():
         "Do not infer learning from the existence of updates.",
         "For Rhys Owens",
         "And the Messenger is.",
+        "Coda: GLYPHIC CHECKSUM LINEAGE",
+        "🛡️✅ only if 🚪✅",
     ]:
         if needle not in card:
             raise SystemExit(f"README gate missing: {needle}")
