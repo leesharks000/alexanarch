@@ -409,12 +409,12 @@ def stage_sitemap(args):
     sm = REPO_ROOT / "sitemap.xml"
     txt = sm.read_text(encoding="utf-8")
     add = []
-    if f"/s/records/{n}/" not in txt:
-        add.append(f"  <url><loc>https://alexanarch.org/s/records/{n}/</loc>"
-                   f"<changefreq>monthly</changefreq><priority>0.7</priority></url>")
-    if f"/papers/AXN-{hx}.pdf" not in txt:
-        add.append(f"  <url><loc>https://alexanarch.org/papers/AXN-{hx}.pdf</loc>"
-                   f"<changefreq>monthly</changefreq><priority>0.6</priority></url>")
+    # 2026-09-27: brought into line with regenerate_sitemap(). The record URL is written on the
+    # canonical host (www; the apex 308-redirects), and no PDF URL is appended: PDFs were demoted
+    # from the sitemap on 2026-07-19 and remain linked from every record page.
+    if f"www.alexanarch.org/s/records/{n}/" not in txt:
+        add.append(f"  <url><loc>https://www.alexanarch.org/s/records/{n}/</loc>"
+                   f"<lastmod>{d.get('date_modified') or d.get('date')}</lastmod><priority>0.8</priority></url>")
     if add:
         i = txt.rfind("</urlset>")
         sm.write_text(txt[:i] + "\n".join(add) + "\n" + txt[i:], encoding="utf-8")

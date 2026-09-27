@@ -426,15 +426,22 @@ def update_sitemap(slug_map: dict) -> None:
 
     # Remove any existing per-address URL entries (avoid duplicates on re-run)
     # Keep only /addresses/ index; strip /addresses/{anything else}/
+    # 2026-09-27: BOUNDED TO ONE LINE. The pattern was
+    #   <url><loc>…/addresses/X/</loc>[^<]*(?:<[^>]+>[^<]*)*</url>
+    # and the repeated group crosses newlines, so each match ran greedily to the LAST </url> in
+    # the file and every entry after the address block went with it — which is where the deposit
+    # pipeline appends each new record. Records #1637–#1642 vanished from the sitemap this way on
+    # every capture seat. Each entry is one line; the pattern now stops at the end of its line.
+    # Both hosts are matched, so entries written under the old apex host are replaced, not doubled.
     txt = re.sub(
-        r"[ \t]*<url><loc>https://alexanarch\.org/addresses/[^<]+/</loc>[^<]*(?:<[^>]+>[^<]*)*</url>\n?",
+        r"[ \t]*<url><loc>https://(?:www\.)?alexanarch\.org/addresses/[^<\n]+/</loc>[^\n]*</url>\n?",
         "",
         txt,
     )
 
     # Inject new URLs immediately after the /addresses/ line
     addr_index_re = re.compile(
-        r"(<url><loc>https://alexanarch\.org/addresses/</loc>[^<]*(?:<[^>]+>[^<]*)*</url>)"
+        r"(<url><loc>https://(?:www\.)?alexanarch\.org/addresses/</loc>[^\n]*</url>)"
     )
     m = addr_index_re.search(txt)
     if not m:
@@ -449,7 +456,8 @@ def update_sitemap(slug_map: dict) -> None:
     lines = []
     for slug in sorted(set(slug_map.values())):
         lines.append(
-            f'  <url><loc>https://alexanarch.org/addresses/{slug}/</loc>'
+            # www: the canonical host every address page declares (the apex 308-redirects to it)
+            f'  <url><loc>https://www.alexanarch.org/addresses/{slug}/</loc>'
             f'<changefreq>weekly</changefreq><priority>0.6</priority></url>'
         )
     injection = "\n" + "\n".join(lines) + "\n"

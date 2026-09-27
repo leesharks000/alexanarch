@@ -597,7 +597,8 @@ STATIC_URLS = [
     ("https://www.alexanarch.org/data/registry.json", 0.5),
     ("https://www.alexanarch.org/data/state.json", 0.6),
     ("https://www.alexanarch.org/data/navigation.json", 0.4),
-    ("https://www.alexanarch.org/data/doi-resolution-index.json", 0.5),
+    # doi-resolution-index.json is listed once, above, in the resolution layer (a second 0.5 entry
+    # here doubled it in the sitemap; removed 2026-09-27).
     ("https://www.alexanarch.org/data/batch-axn-assignment.json", 0.4),
     ("https://www.alexanarch.org/data/chunks/registry/_index.json", 0.4),
     ("https://www.alexanarch.org/api/search-index.json", 0.7),
