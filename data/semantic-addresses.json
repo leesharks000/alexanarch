@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-09-27T20:30:18Z",
+  "regenerated_at": "2026-09-27T20:47:18Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "be9b6041cdd64f531f4ab93a2a24eee62e3b64b0de6cbb82799039c9db829020",
+    "mm-main-capture": "581014ef38a49c030e405a346c7e97ce8c1815f0cb4c71e6c5eb5634c02457a0",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2254,
-  "total_observations": 728,
+  "total_addresses": 2255,
+  "total_observations": 729,
   "class_counts": {
     "subjunctive": 1744,
-    "observed_address": 492,
+    "observed_address": 493,
     "verified_non_address": 18
   },
   "type_counts": {
-    "unmatched": 1619,
+    "unmatched": 1620,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -58698,6 +58698,40 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-08-11",
       "latest_status": "CAPTURE"
+    },
+    "the ω erratum — sappho, mother of the logos": {
+      "canonical_query": "the ω erratum — sappho, mother of the logos",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-27",
+          "status": "THE DESCRIPTION CARRIED WHOLE, THE RISK HELD",
+          "surface": "Google AI Overview",
+          "source_format": "5 source cards, 4 archive-controlled (two Academia.edu listings, the Zenodo record of #897, crimsonhexagonal.org), 1 third-party (Poetry Foundation).",
+          "section": "Classics & Philology",
+          "slug": "omega-erratum-mother-of-the-logos-aio-20260927",
+          "gallery_url": "https://www.alexanarch.org/captures/#omega-erratum-mother-of-the-logos-aio-20260927",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#omega-erratum-mother-of-the-logos-aio-20260927",
+          "details_excerpt": "THE DESCRIPTION CARRIED WHOLE, THE RISK HELD: at the truncated title, the Overview composes the Ω erratum from its own description nearly verbatim — the Logos as a voice that survives its flesh as inscription, Fragment 3"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "unknown",
+        "basis": "The Ω erratum is the archive's paper (#1483, #1484). Treatment level not ruled; recorded 2026-09-27."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-27",
+      "latest_status": "THE DESCRIPTION CARRIED WHOLE, THE RISK HELD"
     },
     "the ω erratum — sappho, mother of the logos: the transmission chain from fragment 31 to the apocalypse, with longinus as the key (v1.1)": {
       "canonical_query": "the ω erratum — sappho, mother of the logos: the transmission chain from fragment 31 to the apocalypse, with longinus as the key (v1.1)",
