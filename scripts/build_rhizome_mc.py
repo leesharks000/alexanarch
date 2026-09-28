@@ -299,6 +299,19 @@ def main():
                     core.setdefault(nid, "O")
                     why[nid].add(f"[observed: cited in capture {slug[:40]}]")
 
+    # RULE S — SEEDED FROM THE DEFINING CHAIN (2026-09-28). A body's extent is taken from
+    # its defining papers, not widened by vocabulary. When the defining papers themselves
+    # extend the body — #1634 Ontological Economy: "Ontological economy specifies one layer
+    # inside that larger economy" — the grammar names those deposits explicitly, with the
+    # reason, rather than adding "monetary|ontolog|shear" to the select pattern and hoping.
+    # A grammar declaring no `seeds` is unaffected.
+    _SEEDS = (_G.get("seeds") or {}).get("deposits") or {}
+    for _num, _sv in _SEEDS.items():
+        nid = f"deposit:{int(_num)}"
+        if int(_num) in reg:
+            core[nid] = "S"
+            why[nid].add("[seeded: " + str(_sv.get("why", ""))[:110] + "]")
+
     # ---- CAPTURES: THE EMPIRICAL ARM (2026-09-11).
     # The rhizome saw three node types — deposit, concept, problem — because those are
     # what the relation ledger holds. The archive's 419 captures are the OBSERVATIONS of
@@ -624,6 +637,38 @@ def main():
                       "rhizome_role": wr["predicate"]})
 
     OUT.mkdir(parents=True, exist_ok=True)
+    # ---- ORTHOGONAL ECONOMY AXES (2026-09-28). A grammar may declare `economy_axes`:
+    # economy_layer (one value), economic_process and economic_object (lists). They sit
+    # BESIDE dynamic_role, which is kept unchanged for backward compatibility. Seeds carry
+    # their layer explicitly; otherwise the TITLE is tried first and the description is the
+    # fallback, for the reason role_for gives: the title is the author's declaration of
+    # subject, and the body of a paper discusses everything. Bodies declaring none are
+    # unaffected and gain no columns.
+    _EA = _G.get("economy_axes")
+    if _EA:
+        _LAY = [(k, re.compile(v, re.I)) for k, v in _EA["layer"]["patterns"]]
+        _PRO = [(k, re.compile(v, re.I)) for k, v in _EA["process"]["patterns"]]
+        _OBJ = [(k, re.compile(v, re.I)) for k, v in _EA["object"]["patterns"]]
+        def _multi(pats, title, desc):
+            got = [k for k, rx in pats if rx.search(title or "")]
+            return got or [k for k, rx in pats if rx.search(desc or "")]
+        for r in rows:
+            dn = r.get("deposit_number")
+            d = reg.get(dn, {}) if dn else {}
+            title = str(r.get("title") or "")
+            desc = str(d.get("description") or "")
+            sv = _SEEDS.get(str(dn)) if dn else None
+            if sv and sv.get("layer"):
+                lay, basis = sv["layer"], "seeded"
+            else:
+                lay = next((k for k, rx in _LAY if rx.search(title)), None)
+                basis = "title" if lay else "default"
+                lay = lay or _EA["layer"]["default"]
+            r["economy_axes_basis"] = basis
+            r["economy_layer"] = lay
+            r["economic_process"] = json.dumps((sv or {}).get("process") or _multi(_PRO, title, desc), ensure_ascii=False)
+            r["economic_object"] = json.dumps((sv or {}).get("object") or _multi(_OBJ, title, desc), ensure_ascii=False)
+
     (OUT / "nodes.jsonl").write_text("\n".join(json.dumps(r, ensure_ascii=False) for r in rows) + "\n", encoding="utf-8")
     (OUT / "relations.jsonl").write_text("\n".join(json.dumps(r, ensure_ascii=False) for r in edges) + "\n", encoding="utf-8")
     (OUT / "stolons.jsonl").write_text("\n".join(json.dumps(
@@ -638,7 +683,7 @@ def main():
         "rhizome_id": _B["rhizome_id"],
         "parent": _B["parent"],
         "parent_uri": "https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive",
-        "version": "0.1",
+        "version": _G.get("version", "0.1"),
         "generated": ts,
         "topology": _B["topology"],
         "poles": ["collapse", "anti-collapse", "recovery"],
@@ -689,7 +734,7 @@ def main():
 
     rc = collections.Counter(r["dynamic_role"] for r in rows)
     ac = collections.Counter(a for r in rows for a in json.loads(r["collapse_axis"]))
-    print(f"{_B['rhizome_id']} v0.1 — {len(rows)} nodes ({spore['counts']['core']} core, "
+    print(f"{_B['rhizome_id']} v{_G.get('version', '0.1')} — {len(rows)} nodes ({spore['counts']['core']} core, "
           f"{spore['counts']['neighbour']} neighbour), {len(edges)} edges, {len(STOLONS)} stolons")
     print("  roles: " + ", ".join(f"{k}={v}" for k, v in rc.most_common()))
     print("  axes:  " + ", ".join(f"{k}={v}" for k, v in ac.most_common(8)))

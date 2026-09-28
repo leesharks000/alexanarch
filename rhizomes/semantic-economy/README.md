@@ -63,7 +63,7 @@ The relation recurs at every scale and the verification does not. What is self-s
 
 ## Counts
 
-**512** nodes · **353** core · **159** neighbour · **424** edges · **7** stolons
+**545** nodes · **377** core · **168** neighbour · **512** edges · **7** stolons
 
 ## It was advertised before it existed
 
@@ -89,6 +89,14 @@ REBUILT FROM THE DEFINING PAPERS, 2026-09-12. v0.1 scoped this body to the ten n
 | **title** | `pattern-detected` | ADDED AFTER #137 WAS FOUND ABSENT. The Semantic Commodity Form — the framework's own Marx extension, the paper this grammar was rebuilt from — was excluded because rule V requires a deposit to ALSO declare a concept, and #137 declares none. So do #140 its metadata packet, #150 the Assembly Chorus act, and #765 its ratification record.
 
 The concept requirement was bounding over-selection that came from DESCRIPTION matching: title plus description selects 272, TITLE ALONE SELECTS 107. A title is the author's declaration of subject and needs no second signal. Rule V keeps its bound for description matches; a title match admits on its own. |
+
+## Layers, processes, objects
+
+ADDED 2026-09-28, v0.3, BESIDE dynamic_role, which is kept unchanged. The six forms of #623 §4 remain the core; the September work added two layers that cannot be written as more peer roles: the monetary layer (#1617–1625, #1631) and the ontological layer (#1634, #1638), both inside the Semantic Economy. economy_layer takes one value; economic_process and economic_object take several. Seeds carry their values explicitly; other nodes are read from the title first and the description as fallback.
+
+`economy_layer`: `semantic_core` (default), `ontological`, `monetary`. `economic_process`: `production`, `accumulation`, `translation`, `extraction`, `shear`, `allocation`, `enclosure`, `transfer`, `depletion`, `repair`, `measurement`. `economic_object`: `meaning`, `provenance`, `money_form`, `entity_standing`, `relation`, `infrastructure`. `economy_axes_basis` records how each node's layer was assigned: `seeded`, `title`, or `default`.
+
+Seeded from the defining chain: #1617 (monetary) — Substrate Sovereignty: money in the chair of the one-who-values; the general form of the monetary sequence; #1618 (monetary) — the translation protocol — money writes the claim, the semantic economy writes what the claim leaves out; #1619 (monetary) — the Monetary Substrate Audit Ledger; #1620 (monetary) — the first worked audit specimen (Sappho–Carson); #1621 (monetary) — the valuation protocol: value before number; #1622 (monetary) — the non-summable magnitude: what the meaning layer can write; #1623 (monetary) — an entity as emerging meaning infrastructure, valued; #1624 (monetary) — anticipatory erratum withdrawing in advance a creditor claim; #1625 (monetary) — Mammonic Transmission Engineering: money as a transmission device; #1631 (monetary) — the hinge: constitutive labor, obligating provenance, the shear into money-form, monetary dark matter; #1634 (ontological) — founding node: 'Ontological economy specifies one layer inside that larger economy' — entity standing produced, allocated, enclosed, extracted and repaired; #1638 (ontological) — first downstream application: validation foreclosure and relational enclosure used as instruments.
 
 ## Roles
 

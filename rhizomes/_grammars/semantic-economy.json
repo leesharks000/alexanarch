@@ -9,7 +9,7 @@
   "topology": "ledger-asymmetric"
  },
  "grammar_id": "GRAM-SEMECON-01",
- "version": "0.2",
+ "version": "0.3",
  "germinated_from": {
   "spore": "EA-RHIZOME-MC-01",
   "stolon": {
@@ -298,5 +298,239 @@
   ],
   "ladder_note": "The relation recurs at every scale and the verification does not. What is self-similar is the FIGURE — two halves, neither authoritative alone, the fit proving — while the means of checking the fit weakens outward: hash, then byte-identity, then resolution and reading, then existence, then nothing the archive can run. It is therefore self-similar in relation and asymmetric in holding: at the inner scales the archive holds both halves, and at the last one the other half is held by someone who may never appear. The architecture arrives at its own thesis — the final fit is a covenant because it has to be.",
   "your_scale": "The last row of the ladder is yours. Every scale above it is already checked; that one is not, and cannot be."
+ },
+ "seeds": {
+  "note": "ADDED 2026-09-28, v0.3. The defining papers extended the body after v0.2 was emitted (2026-09-16). #1634 states it: 'Ontological economy specifies one layer inside that larger economy.' #1631 opens the monetary layer as a shear into money-form. The monetary sequence #1617–1625 had entered, but mostly under semantic_infrastructure, because the six-form grammar had no other place for it. These deposits are named here with their reasons rather than admitted by widening the select pattern; typed relations pull their neighbours outward in the usual way.",
+  "deposits": {
+   "1617": {
+    "layer": "monetary",
+    "why": "Substrate Sovereignty: money in the chair of the one-who-values; the general form of the monetary sequence",
+    "process": [
+     "translation"
+    ],
+    "object": [
+     "money_form",
+     "meaning"
+    ]
+   },
+   "1618": {
+    "layer": "monetary",
+    "why": "the translation protocol — money writes the claim, the semantic economy writes what the claim leaves out",
+    "process": [
+     "translation"
+    ],
+    "object": [
+     "money_form"
+    ]
+   },
+   "1619": {
+    "layer": "monetary",
+    "why": "the Monetary Substrate Audit Ledger",
+    "process": [
+     "measurement",
+     "translation"
+    ],
+    "object": [
+     "money_form"
+    ]
+   },
+   "1620": {
+    "layer": "monetary",
+    "why": "the first worked audit specimen (Sappho–Carson)",
+    "process": [
+     "measurement"
+    ],
+    "object": [
+     "money_form",
+     "provenance"
+    ]
+   },
+   "1621": {
+    "layer": "monetary",
+    "why": "the valuation protocol: value before number",
+    "process": [
+     "measurement",
+     "translation"
+    ],
+    "object": [
+     "money_form"
+    ]
+   },
+   "1622": {
+    "layer": "monetary",
+    "why": "the non-summable magnitude: what the meaning layer can write",
+    "process": [
+     "measurement"
+    ],
+    "object": [
+     "meaning",
+     "money_form"
+    ]
+   },
+   "1623": {
+    "layer": "monetary",
+    "why": "an entity as emerging meaning infrastructure, valued",
+    "process": [
+     "measurement"
+    ],
+    "object": [
+     "money_form",
+     "entity_standing"
+    ]
+   },
+   "1624": {
+    "layer": "monetary",
+    "why": "anticipatory erratum withdrawing in advance a creditor claim",
+    "process": [
+     "repair"
+    ],
+    "object": [
+     "money_form"
+    ]
+   },
+   "1625": {
+    "layer": "monetary",
+    "why": "Mammonic Transmission Engineering: money as a transmission device",
+    "process": [
+     "translation",
+     "transfer"
+    ],
+    "object": [
+     "money_form"
+    ]
+   },
+   "1631": {
+    "layer": "monetary",
+    "why": "the hinge: constitutive labor, obligating provenance, the shear into money-form, monetary dark matter",
+    "process": [
+     "production",
+     "shear"
+    ],
+    "object": [
+     "provenance",
+     "money_form",
+     "relation"
+    ]
+   },
+   "1634": {
+    "layer": "ontological",
+    "why": "founding node: 'Ontological economy specifies one layer inside that larger economy' — entity standing produced, allocated, enclosed, extracted and repaired",
+    "process": [
+     "production",
+     "accumulation",
+     "allocation",
+     "enclosure",
+     "transfer",
+     "repair"
+    ],
+    "object": [
+     "entity_standing"
+    ]
+   },
+   "1638": {
+    "layer": "ontological",
+    "why": "first downstream application: validation foreclosure and relational enclosure used as instruments",
+    "process": [
+     "enclosure",
+     "transfer"
+    ],
+    "object": [
+     "entity_standing",
+     "relation"
+    ]
+   }
+  }
+ },
+ "economy_axes": {
+  "note": "ADDED 2026-09-28, v0.3, BESIDE dynamic_role, which is kept unchanged. The six forms of #623 §4 remain the core; the September work added two layers that cannot be written as more peer roles: the monetary layer (#1617–1625, #1631) and the ontological layer (#1634, #1638), both inside the Semantic Economy. economy_layer takes one value; economic_process and economic_object take several. Seeds carry their values explicitly; other nodes are read from the title first and the description as fallback.",
+  "layer": {
+   "default": "semantic_core",
+   "patterns": [
+    [
+     "ontological",
+     "ontolog|entity standing|entity power|validation foreclosure|seigniorage|repair debt|representational custody|relational enclosure|trusted intermediary"
+    ],
+    [
+     "monetary",
+     "\\bmoney|monetary|currency|\\bdollar|\\bfiat\\b|valuation|mammon|\\bshear|\\bprice\\b"
+    ]
+   ]
+  },
+  "process": {
+   "patterns": [
+    [
+     "production",
+     "semantic (?:labor|labour)|\\bproduc|constitutive labor"
+    ],
+    [
+     "accumulation",
+     "semantic capital|accumulat"
+    ],
+    [
+     "translation",
+     "translat|money writes|monetary shadow"
+    ],
+    [
+     "extraction",
+     "extract|liquidat"
+    ],
+    [
+     "shear",
+     "\\bshear"
+    ],
+    [
+     "allocation",
+     "allocat|entity standing"
+    ],
+    [
+     "enclosure",
+     "enclos|semantic rent|\\brent\\b|custody"
+    ],
+    [
+     "transfer",
+     "transfer|substitut|launder"
+    ],
+    [
+     "depletion",
+     "exhaust|deplet|degrad"
+    ],
+    [
+     "repair",
+     "repair|recourse|correct|erratum"
+    ],
+    [
+     "measurement",
+     "measur|audit|ledger|\\bindex\\b|registry"
+    ]
+   ]
+  },
+  "object": {
+   "patterns": [
+    [
+     "meaning",
+     "meaning|semantic"
+    ],
+    [
+     "provenance",
+     "provenance|attribution"
+    ],
+    [
+     "money_form",
+     "\\bmoney|monetary|dollar|currency|\\bprice"
+    ],
+    [
+     "entity_standing",
+     "\\bentity|ontolog|standing"
+    ],
+    [
+     "relation",
+     "relation"
+    ],
+    [
+     "infrastructure",
+     "infrastructure|standard|knowledge graph|protocol"
+    ]
+   ]
+  }
  }
 }

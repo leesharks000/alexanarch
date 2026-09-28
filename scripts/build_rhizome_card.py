@@ -164,6 +164,24 @@ def card(g, body_dir):
             L.append(f"**Caution.** {md['caution']}")
             L.append("")
 
+    ea = g.get("economy_axes")
+    if ea:
+        # ADDED 2026-09-28: a grammar that declares orthogonal axes beside the roles says so
+        # on its card, with the seeded deposits named, so the layer structure is legible
+        # without opening the grammar file.
+        L.append("## Layers, processes, objects")
+        L.append("")
+        L.append(ea.get("note", ""))
+        L.append("")
+        L.append("`economy_layer`: " + ", ".join(["`" + ea["layer"]["default"] + "` (default)"] + ["`" + k + "`" for k, _ in ea["layer"]["patterns"]]) + ". "
+                 "`economic_process`: " + ", ".join("`" + k + "`" for k, _ in ea["process"]["patterns"]) + ". "
+                 "`economic_object`: " + ", ".join("`" + k + "`" for k, _ in ea["object"]["patterns"]) + ". "
+                 "`economy_axes_basis` records how each node's layer was assigned: `seeded`, `title`, or `default`.")
+        L.append("")
+        sd = (g.get("seeds") or {}).get("deposits") or {}
+        if sd:
+            L.append("Seeded from the defining chain: " + "; ".join(f"#{n} ({v.get('layer')}) — {v.get('why')}" for n, v in sd.items()) + ".")
+            L.append("")
     L.append("## Roles")
     L.append("")
     L.append("**Order is the classifier** — `role_for` returns on first match, so a broad pattern "
