@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-09-27T21:28:25Z",
+  "regenerated_at": "2026-09-28T15:32:52Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "2d47f6ced4c3f0bc41720e8c99d738aa7acbaba79ab333b8ea76227f9da30155",
+    "mm-main-capture": "40c3c7b23e954977d71524e2a3adf8dd662320d72a898d9bd3b1962c36832d64",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2255,
-  "total_observations": 731,
+  "total_addresses": 2256,
+  "total_observations": 732,
   "class_counts": {
     "subjunctive": 1744,
-    "observed_address": 493,
+    "observed_address": 494,
     "verified_non_address": 18
   },
   "type_counts": {
-    "unmatched": 1620,
+    "unmatched": 1621,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -58783,6 +58783,40 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-09-14",
       "latest_status": "EXACT MATCH"
+    },
+    "the-final-time leesharks": {
+      "canonical_query": "the-final-time leesharks",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-28",
+          "status": "THE POEM READ AS THE THEORY'S NOTATION: THE CREATIVE AND CRITICAL WORK CLOSED INTO ONE LOOP",
+          "surface": "Google AI Overview",
+          "source_format": "26 source cards across four rounds, 21 archive-controlled (Hugging Face dataset and file pages, leesharks.com, crimsonhexagonal.org, operativesemiotics.org, Hello Poetry, secretbookofwalt.org, machinemediation.org, alexanarch.org, Academia.edu), 5 third-party (an End-Times explainer, a sea-kayaking trip report, a dictionary PDF, Columbia law blog on Benjamin, a Bitcoin philosophy book).",
+          "section": "Works",
+          "slug": "the-final-time-leesharks-aio-20260928",
+          "gallery_url": "https://www.alexanarch.org/captures/#the-final-time-leesharks-aio-20260928",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#the-final-time-leesharks-aio-20260928",
+          "details_excerpt": "THE POEM READ AS THE THEORY'S NOTATION: at 'the-final-time leesharks', four rounds compose The Final Time as one project across the creative and critical work. The Secret Book of Walt supplies the theorem as experience, "
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "unknown",
+        "basis": "The Final Time is the archive's paper (#1637), with its dataset; The Secret Book of Walt (#683, #1362) and the Tiger Leap glyph poem (#1642) are the archive's works. Treatment level not ruled; recorded 2026-09-28."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-28",
+      "latest_status": "THE POEM READ AS THE THEORY'S NOTATION: THE CREATIVE AND CRITICAL WORK CLOSED INTO ONE LOOP"
     },
     "theoretical foundation": {
       "canonical_query": "theoretical foundation",
