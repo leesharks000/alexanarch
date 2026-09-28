@@ -83,12 +83,28 @@ def main():
                 return {'status': 'unresolved', 'addr_id': aid}
             meas.append({'row_key': r['key'], 'arm': arm, 'addr_id': aid, 'obs_id': m.get('obs_id') or e.get('obs_id'),
                          'slug': e['slug'], 'query': e.get('q'), 'surface': e.get('surface'), 'auth': e.get('auth'),
-                         'date': e.get('date'), 'n_observations': e.get('n_observations'),
-                         'composed_sort': m.get('composed_sort'), 'admitted': m['admitted'], 'note': m.get('note'),
+                         'date': m.get('date') or e.get('date'), 'n_observations': e.get('n_observations'),
+                         'composed_sort': m.get('composed_sort'), 'admitted': m['admitted'], 'attributed': m.get('attributed'), 'treatment': None, 'note': m.get('note'),
                          'permalink': CAPTURE.format(slug=e['slug'])})
             return {'status': 'seated', 'addr_id': aid, 'obs_id': m.get('obs_id') or e.get('obs_id'), 'slug': e['slug'],
                     'permalink': CAPTURE.format(slug=e['slug']), 'date': e.get('date'), 'surface': e.get('surface')}
         mu, mt = resolve(r.get('measured_untied'), 'untied'), resolve(r.get('measured_tied'), 'tied')
+        # the longitudinal record (2026-09-28): later observations, of either arm or of a control address
+        latest = {}
+        for o in r.get('observations', []):
+            e = by_addr.get(o['addr_id'])
+            if e is None:
+                breaches.append(f"{r['key']}: observation addr_id {o['addr_id']} not in the Capture Registry"); continue
+            if o.get('obs_id') and o['obs_id'] not in by_obs:
+                breaches.append(f"{r['key']}: observation obs_id {o['obs_id']} not in the Capture Registry")
+            meas.append({'row_key': r['key'], 'arm': o['arm'], 'addr_id': o['addr_id'], 'obs_id': o.get('obs_id'),
+                         'slug': e['slug'], 'query': e.get('q'), 'surface': e.get('surface'), 'auth': e.get('auth'),
+                         'date': o['date'], 'n_observations': e.get('n_observations'),
+                         'composed_sort': o.get('composed_sort'), 'admitted': o['admitted'], 'attributed': o.get('attributed'),
+                         'treatment': o.get('treatment'), 'note': o.get('note'),
+                         'permalink': CAPTURE.format(slug=e['slug'])})
+            if o['arm'] != 'control' and (o['arm'] not in latest or o['date'] >= latest[o['arm']]['date']):
+                latest[o['arm']] = {'date': o['date'], 'composed_sort': o.get('composed_sort'), 'admitted': o['admitted'], 'attributed': o.get('attributed'), 'addr_id': o['addr_id'], 'obs_id': o.get('obs_id')}
         u_adm = r['measured_untied']['admitted'] if r.get('measured_untied') else None
         t_adm = r['measured_tied']['admitted'] if r.get('measured_tied') else None
         bleed = None
@@ -107,6 +123,7 @@ def main():
             'record_url': RECORD.format(n=r['source_deposit']), 'record_status': d.get('status') if d else None,
             'companion_record_urls': [RECORD.format(n=n) for n in r.get('companion_deposits', [])],
             'measured_untied_resolved': mu, 'measured_tied_resolved': mt,
+            'latest_untied': latest.get('untied'), 'latest_tied': latest.get('tied'),
             'bleed': bleed, 'bleed_status': 'measured' if bleed is not None else ('untied only' if u_adm is not None else ('tied only' if t_adm is not None else 'unmeasured')),
             'maxim': MAXIM,
         })
@@ -115,7 +132,7 @@ def main():
                                  f"({d.get('axn') if d else 'AXN unresolved'}), Crimson Hexagonal Archive; "
                                  + (f"distinguished from: {r['distinction']}; " if r.get('distinction') else '')
                                  + (f"what stands at this concept when the archive is scoped out: {r['default_at_concept']}." if r.get('default_at_concept') else ''))
-        for k in ['external_unscoped','convergent_arrivals','world_arrivals','missed_updates','dimensions_RH','neighbours_distorted','introduces_type','coherence','prior_state','distortion','measured_untied','measured_tied','convergence_pair','seated','measured_untied_resolved','measured_tied_resolved']:
+        for k in ['external_unscoped','convergent_arrivals','world_arrivals','missed_updates','dimensions_RH','neighbours_distorted','introduces_type','coherence','prior_state','distortion','measured_untied','measured_tied','convergence_pair','seated','measured_untied_resolved','measured_tied_resolved','observations','transition','latest_untied','latest_tied']:
             row[k] = json.dumps(row.get(k), ensure_ascii=False) if row.get(k) is not None else None
         out_rows.append(row)
         # keys
