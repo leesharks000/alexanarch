@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-09-28T21:11:05Z",
+  "regenerated_at": "2026-09-28T22:46:04Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "b38ba147334bca5c418191aaa35f4b760815bc07bcad165752e5009325877882",
+    "mm-main-capture": "0d7d598d976a0dd5427812c4c15cc1cdb73d49398eca62e910e4476d218aaa05",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2262,
-  "total_observations": 744,
+  "total_addresses": 2263,
+  "total_observations": 745,
   "class_counts": {
     "subjunctive": 1744,
-    "observed_address": 500,
+    "observed_address": 501,
     "verified_non_address": 18
   },
   "type_counts": {
-    "unmatched": 1627,
+    "unmatched": 1628,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -36078,6 +36078,40 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-12",
       "latest_status": "CAPTURE"
+    },
+    "metadatapacket.dev": {
+      "canonical_query": "metadatapacket.dev",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-28",
+          "status": "THE CATALOG COMPOSED FROM ITS OWN HAND-TYPED STAT, UNCITED",
+          "surface": "Google AI Overview",
+          "source_format": "No source cards ('no sources cited', operator). 'Based on the provided documentation' — composed from the site without citing it.",
+          "section": "Sites",
+          "slug": "metadatapacket-dev-aio-20260928",
+          "gallery_url": "https://www.alexanarch.org/captures/#metadatapacket-dev-aio-20260928",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#metadatapacket-dev-aio-20260928",
+          "details_excerpt": "THE CATALOG COMPOSED FROM ITS OWN HAND-TYPED STAT, UNCITED: asked 'metadatapacket.dev', the AI Overview describes the MPAI catalog faithfully from its homepage — purpose, tooth, verification schema, drop-in files, Lee Sh"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "site",
+        "spxi_treatment": "unknown",
+        "basis": "metadatapacket.dev is a fleet site (Framework Sites); the MPAI catalog. Treatment level not ruled; recorded 2026-09-28."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-28",
+      "latest_status": "THE CATALOG COMPOSED FROM ITS OWN HAND-TYPED STAT, UNCITED"
     },
     "metrical pressure": {
       "canonical_query": "metrical pressure",
