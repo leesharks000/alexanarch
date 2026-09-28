@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-09-28T17:01:48Z",
+  "regenerated_at": "2026-09-28T18:45:07Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "136ab8b44ba9e903ac5d0a6116b4eb0d869e8e932d7c7db3206f4bc02d00c126",
+    "mm-main-capture": "0cb5b4dc4f417269aaa15cfc17e045bd420c93e0edfd9f05ebe5b6158fe191d3",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2256,
-  "total_observations": 738,
+  "total_addresses": 2257,
+  "total_observations": 739,
   "class_counts": {
     "subjunctive": 1744,
-    "observed_address": 494,
+    "observed_address": 495,
     "verified_non_address": 18
   },
   "type_counts": {
-    "unmatched": 1621,
+    "unmatched": 1622,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -9973,6 +9973,40 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "aristotle and theophrastus \"one author\"": {
+      "canonical_query": "aristotle and theophrastus \"one author\"",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-28",
+          "status": "CAPTURE",
+          "surface": "Google AI Overview",
+          "source_format": "4 final-round cards: three on AI citation failure (Medium, USC, YouTube) and the packet itself (Medium, Lee Sharks). Round 2 cites EBSCO and the Loeb Classical Library.",
+          "section": "Classics & Philology",
+          "slug": "aristotle-theophrastus-one-author-aio-20260928",
+          "gallery_url": "https://www.alexanarch.org/captures/#aristotle-theophrastus-one-author-aio-20260928",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#aristotle-theophrastus-one-author-aio-20260928",
+          "details_excerpt": "POLARITY INVERSION, THEN THE SOURCE READ RIGHTLY ON THE FOURTH ASKING: asked 'aristotle and theophrastus \"one author\"', the Overview answers 'two distinct historical authors' and cites as its authority the packet titled "
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "partial",
+        "basis": "EA-MPAI-ARISTOTLE-THEOPHRASTUS-01 (#1588) is the archive's packet; the claim is the archive's."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-28",
+      "latest_status": "CAPTURE"
     },
     "arithmetic signature": {
       "canonical_query": "arithmetic signature",
