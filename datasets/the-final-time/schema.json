@@ -91,6 +91,10 @@
     "swarm_site_links": {
       "primary_key": "url",
       "purpose": "Seated (original/links.jsonl), byte-exact: links from that search."
+    },
+    "composition_trials": {
+      "primary_key": "id",
+      "purpose": "Observed compositions of this work by retrieval surfaces, each set against the source claim it replaced and the summarizer-contract rule it broke (added 2026-09-28). Failure classes: NOVELTY_SUBSTITUTION, EXTERIORITY_INTERNALIZATION, RECURSIVE_UPTAKE, LOCAL_OVERCOMPLETION, RECORD_READ_AS_DESIGN. Every row cites a seated capture."
     }
   },
   "standing_principle": "Others may destroy what I build, if they believe that is right.",

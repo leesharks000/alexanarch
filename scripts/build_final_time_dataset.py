@@ -209,6 +209,12 @@ def main():
     reopening_tests = validate_jsonl(AUTHORED / "reopening_tests.jsonl")
     exits = validate_jsonl(AUTHORED / "exits.jsonl")
     swarm_specimens = validate_jsonl(AUTHORED / "swarm_specimens.jsonl")
+    # COMPOSITION TRIALS (2026-09-28): observed compositions of the work, each against the
+    # source claim it replaced. Optional file; when present every row must cite a seated
+    # capture, carry a known failure class, and name only contract rules that exist.
+    trials = validate_jsonl(AUTHORED / "composition_trials.jsonl") if (AUTHORED / "composition_trials.jsonl").exists() else []
+    _TRIAL_CLASSES = {"NOVELTY_SUBSTITUTION", "EXTERIORITY_INTERNALIZATION", "RECURSIVE_UPTAKE",
+                      "LOCAL_OVERCOMPLETION", "RECORD_READ_AS_DESIGN"}
     if len(swarm_specimens) < 2:
         raise SystemExit("swarm layer must link both specimens (§10 and §11) to their seats")
     for row in swarm_specimens:
@@ -221,6 +227,15 @@ def main():
             raise SystemExit(f"{row['id']}: an unseated swarm row must point outward and stay outside")
     swarm = swarm_sources()
 
+    _rule_ids = {r["id"] for r in contract}
+    for row in trials:
+        if row.get("failure_class") not in _TRIAL_CLASSES:
+            raise SystemExit(f"{row['id']}: unknown failure_class")
+        if not str(row.get("capture_url", "")).startswith("https://www.alexanarch.org/captures/#"):
+            raise SystemExit(f"{row['id']}: a composition trial must cite a seated capture")
+        bad = [x for x in row.get("contract_rule_violated") or [] if x not in _rule_ids]
+        if bad:
+            raise SystemExit(f"{row['id']}: names contract rules that do not exist: {bad}")
     if len(contract) < 10:
         raise SystemExit("summarizer contract must carry 10+ invariants")
     if len(handholds) < 20:
@@ -398,7 +413,8 @@ def main():
             f"{len(purpose_edge_tests)} purpose-edge tests,",
             f"{len(observer_endogeneity)} endogeneity tests,",
             f"{len(reopening_tests)} reopening tests, {len(exits)} exits,",
-            f"{len(swarm_specimens)} swarm specimen rows, {len(swarm)} seated swarm configs verified",
+            f"{len(swarm_specimens)} swarm specimen rows, {len(swarm)} seated swarm configs verified,",
+            f"{len(trials)} composition trials",
         )
         return
 

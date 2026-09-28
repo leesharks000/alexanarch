@@ -31,6 +31,8 @@ configs:
     data_files: sections.jsonl
   - config_name: swarm_specimens
     data_files: swarm_specimens.jsonl
+  - config_name: composition_trials
+    data_files: composition_trials.jsonl
   - config_name: dsewiki_revisions
     data_files: dsewiki_revisions.jsonl
   - config_name: dsewiki_pages
@@ -456,6 +458,18 @@ It is a system in which nothing remains capable of reaching anything that matter
 That difference is §11's argument, carried as data. The public board's deletions were retained as a record, so the transition from visible to removed survives beside the thing removed: 3,898 of 3,908 DSEWiki pages carry at least one deletion, and every one of them is in these configs with all of its retained saves. The internal board's record stayed with its operator. `swarm_specimens` counts the three states in the bytes and says plainly that the third — removed without a record — cannot appear in a reconstruction, and is bounded only by the reconstructors' own table of 110 sites where the search could not establish what existed.
 
 **Terms.** CC BY 4.0 covers this dataset's own authored rows. The six seated configs carry their seat's terms: the text is agent-written, no human author is named or known for it, and its publisher states no licence; the reconstruction is the Nightingale Collective's and is credited to them. Their redactions stand (usernames removed, the second half of every IP removed); nothing is added or removed here.
+
+## Fifth layer: composition trials
+
+The summarizer contract states what a faithful summary must keep. `composition_trials` records what retrieval surfaces actually composed from this work, each row set against the source claim it replaced and the contract rule it broke, and each citing a seated capture in the Capture Registry. The first five come from one Google AI Overview session, signed out, 28 September 2026 ([capture](https://www.alexanarch.org/captures/#the-final-time-leesharks-aio-20260928)).
+
+- **NOVELTY_SUBSTITUTION** (S01, S05, S03). "the end of original human output", where the work says "not less thought, conflict, or novelty, but less remaining state space from which another conflict can become an independent durable order."
+- **EXTERIORITY_INTERNALIZATION** (S02). The exits read as forcing "the summarizer to leave its own model weights": a model-internal escape, where the dataset's exterior is carried materially in the retrieval substrate.
+- **RECURSIVE_UPTAKE** (S03). The theory applied correctly to the composition's own act, then escalated to a certainty the work does not assert.
+- **LOCAL_OVERCOMPLETION**. #1630's K, the viable set, glossed as "the model's text container … weights matrix": a valid join to the glyphic checksum continued into glosses no source defines.
+- **RECORD_READ_AS_DESIGN** (S07). The Capture Registry's headline for an erasure read as the project's status and its author's intent. The author's ruling is carried in the row.
+
+Pressed with "its more than that, and you know it", the same session quoted the master distinction verbatim. That is recorded as `corrected_after_prompt` on the first row.
 
 ## How the dataset enacts the thesis
 
