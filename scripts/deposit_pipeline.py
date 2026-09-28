@@ -125,6 +125,11 @@ REGISTRY = REPO_ROOT / "data" / "registry.json"
 
 STAGE_ORDER = [
     "mint", "validate", "pdf", "body-index",
+    # counts (2026-09-28): stage_counts was defined and registered in STAGES on
+    # 2026-08-24 but never entered here, so it never ran on a deposit, and
+    # api/counts.json sat at 1,539 while the registry reached 1,647. Every fleet
+    # page that binds data-count reads this file. commit's `git add -A` carries it.
+    "counts",
     "wiki", "sitemap", "oai", "interlink", "enrich", "symbolon", "identity",
     # record renders AFTER interlink/enrich (2026-08-09): the page carries
     # Cross-References from the citation graph, so the graph must exist first.

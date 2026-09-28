@@ -106,6 +106,14 @@ def build():
     followed it on fleet sites (stale Enli form; doubled headers seen on lagrange, vpcor,
     watergiraffe, restoredacademy 2026-09-07) are replaced by apply()."""
     fj = json.loads((ROOT / 'data/api/fleet.json').read_text())
+    # OAI figure (2026-09-28): was typed as '1,400+' and stayed there while the endpoint grew to
+    # 1,586. Derived now from the index the endpoint serves, floored to the hundred so the block
+    # stays true between regenerations.
+    try:
+        _n = len(json.loads((ROOT / 'data/oai-index.json').read_text())['records'])
+        oai_fig = f'{(_n // 100) * 100:,}+'
+    except Exception:
+        oai_fig = '1,500+'
     parts = [START]
     for sec in fj.get('sections', []):
         title = sec.get('title') or sec.get('name') or ''
@@ -122,7 +130,7 @@ def build():
         cols = 1 if title == 'Allied Sites' else 2
         parts.append(f'<h4 class="fl-h">{title}</h4><div class="fl-g" style="grid-template-columns:repeat({cols},minmax(0,1fr))">' + ''.join(rows) + '</div>')
     parts.append('<h4 class="fl-h">Machine Entry</h4><div class="fl-g" style="grid-template-columns:repeat(1,minmax(0,1fr))">'
-                 '<div><a href="https://www.alexanarch.org/oai?verb=Identify">OAI-PMH endpoint</a> <span class="fl-n">(harvestable metadata, 1,400+ records)</span></div>'
+                 '<div><a href="https://www.alexanarch.org/oai?verb=Identify">OAI-PMH endpoint</a> <span class="fl-n">(harvestable metadata, ' + oai_fig + ' records)</span></div>'
                  '<div><a href="https://www.alexanarch.org/resolve/">AXN resolver</a> <span class="fl-n">(content-derived identifiers)</span></div>'
                  '<div><a href="https://huggingface.co/datasets/leesharks/crimson-hexagonal-archive">Hugging Face dataset</a> <span class="fl-n">(the archive as Parquet: deposits, captures, reception, predictions — rebuilt from the registry)</span></div>'
                  '<div><a href="https://datasets-server.huggingface.co/rows?dataset=leesharks%2Fcrimson-hexagonal-archive&amp;config=deposits&amp;split=train&amp;offset=0&amp;length=10">dataset query endpoint</a> <span class="fl-n">(no auth, no client; config=citations for the edge list. /search needs an index that rebuilds after every deposit and 500s while it does &mdash; use /rows)</span></div>'
