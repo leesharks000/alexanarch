@@ -623,7 +623,10 @@ def stage_surfaces(args):
     # separate positional arguments. Passing them separately made argparse read
     # the second onward as positionals and fail the stage — which is how deposit
     # #1457 first tripped it. Valid names are enumerated in that script.
-    surfaces = ("state,browse,browse-index,api-index,search-index,"
+    # browse-sections added 2026-09-28: the paginated month/family/venue pages were never in
+    # this list, so from #1631 on no deposit reached them. s/browse/month/2026-09/ listed 58 of
+    # the month's 74 deposits, and a Grok composition ranked "the month" from exactly those 58.
+    surfaces = ("state,browse,browse-sections,browse-index,api-index,search-index,"
                 "search-static,homepage-noscript")
     sh([sys.executable, SCRIPTS / "regenerate_surfaces.py", "--only", surfaces],
        check=True)
