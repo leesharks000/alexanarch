@@ -1,0 +1,46 @@
+name: Hugging Face — mantle-bearing
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'datasets/mantle-bearing/**'
+      - 'data/texts/AXN-06DE-text.md'
+      - 'scripts/build_mantle_bearing_dataset.py'
+      - '.github/workflows/hf-mantle-bearing.yml'
+  workflow_dispatch: {}
+
+concurrency:
+  group: hf-mantle-bearing
+  cancel-in-progress: true
+
+# The evaluations of the three mantle claims, governed by EA-MANTLE-BEARING-01 (#1656).
+# Its own Hub dataset, apart from the parent and the rhizomes: it grows by rounds, and a
+# round's push should not cold-start another body's full-text index.
+#
+# The repo is HF_REPO_MANTLE_BEARING when that variable is set, leesharks/mantle-bearing
+# otherwise; create_repo(exist_ok=True) in push_hf_dataset.py creates it on first push.
+# No schedule and no deletion guardian: if the Hub body is removed, the removal stays
+# real until a change to the source or a manual dispatch republishes it.
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install -q huggingface_hub
+
+      # The tables and the card are emitted from the dataset JSON and the deposited packet;
+      # what is committed must be what the emission gives.
+      - name: Check the committed tables and card against the emission
+        run: python3 scripts/build_mantle_bearing_dataset.py --check
+
+      - name: Push to the Hub
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          python3 scripts/push_hf_dataset.py \
+            datasets/mantle-bearing \
+            "${{ vars.HF_REPO_MANTLE_BEARING || 'leesharks/mantle-bearing' }}"
