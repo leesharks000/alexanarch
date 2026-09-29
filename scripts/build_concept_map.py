@@ -27,6 +27,8 @@ This script therefore keys on normalised title base, uses EA identifiers only
 as corroboration, and emits programme families separately and explicitly.
 
 DETECTION TIERS (recorded per family so any tier can be discarded)
+  version/declared   records share a version_series_id (governs; its members
+                     are excluded from every title tier below)
   version/explicit   shared title base AND >=2 members carry version tokens
   version/superseded shared title base AND a member is marked SUPERSEDED
   version/implicit   shared title base, no version tokens (possible duplicates)
@@ -89,8 +91,100 @@ def build():
     concepts, programs, review = [], [], 0
     claimed = set()
 
-    for base, members in sorted(bases.items()):
+    # DECLARED TIER (2026-09-29). A record's own version_series_id is the archive
+    # saying which records are states of one work. It governs, and the title tiers
+    # below may not overrule it. Before this tier the fuzzy grouper merged the v1.1
+    # mantle objects of three different mantles (#1651 Prince of Poets, #1652 King
+    # of May, #1653 Good Gray Poet) because their titles differ only in the mantle's
+    # name, and #1652's page listed the Prince of Poets as "another version of this
+    # work", while each v1.1 was never joined to its own v1.0 (#332, #333, #334),
+    # whose titles carry no version token. Members of a declared series of two or
+    # more are therefore taken out of title grouping, and no title tier may join
+    # records that declare two different series.
+    byn = {d['deposit_number']: d for d in deps}
+    declared = collections.defaultdict(list)
+    for d in deps:
+        if d.get('version_series_id'):
+            declared[d['version_series_id']].append(d)
+
+    def dkey(m):
+        v = vtuple(m.get('version')) or vtuple(m.get('title')) or (0,)
+        return (v, str(m.get('date') or ''), m['deposit_number'])
+
+    for sid, members in sorted(declared.items()):
         if len(members) < 2:
+            continue
+        ordered = sorted(members, key=dkey)
+        live = [m for m in ordered if m.get('status') not in ('SUPERSEDED', 'WITHDRAWN')]
+        current = (live or ordered)[-1]
+        vstr = lambda m: '.'.join(map(str, vtuple(m.get('version')) or vtuple(m.get('title')) or [])) or None
+        hexes = [HEX.match(str(m.get('axn', ''))) for m in ordered]
+        cid = slug(sid)
+        concepts.append({
+            'concept_id': cid,
+            'concept_url': f'https://www.alexanarch.org/s/concept/{cid}/',
+            'title_base': norm_title(current.get('title')),
+            'basis': 'version/declared',
+            'version_series_id': sid,
+            'root_axn_hex': next((h.group(1).upper() for h in hexes if h), None),
+            'ea_identifiers': sorted({e for m in members for e in EA.findall(str(m.get('title', '')))}),
+            'member_count': len(members),
+            'needs_review': False,
+            'current': {
+                'deposit_number': current['deposit_number'],
+                'axn': current.get('axn'),
+                'title': current.get('title'),
+                'date': current.get('date'),
+                'version': vstr(current),
+                'record_url': f"https://www.alexanarch.org/s/records/{current['deposit_number']}/",
+            },
+            'versions': [{
+                'deposit_number': m['deposit_number'],
+                'axn': m.get('axn'),
+                'title': m.get('title'),
+                'date': m.get('date'),
+                'version': vstr(m),
+                'superseded_marker': m.get('status') == 'SUPERSEDED',
+                'is_current': m['deposit_number'] == current['deposit_number'],
+                'record_url': f"https://www.alexanarch.org/s/records/{m['deposit_number']}/",
+            } for m in ordered],
+        })
+        claimed.update(m['deposit_number'] for m in members)
+    def mixed_series(group):
+        return len({m['version_series_id'] for m in group if m.get('version_series_id')}) > 1
+
+    by_sid = {c['version_series_id']: c for c in concepts}
+
+    def attach(group, basis):
+        """A title group touching exactly one declared series joins it: the
+        undeclared records are added to that series' concept, marked with the
+        basis they were joined on. Returns True when the group was absorbed."""
+        sids = {m.get('version_series_id') for m in group
+                if m['deposit_number'] in claimed and m.get('version_series_id') in by_sid}
+        if len(sids) != 1:
+            return False
+        c = by_sid[sids.pop()]
+        for m in group:
+            if m['deposit_number'] in claimed:
+                continue
+            c['versions'].append({
+                'deposit_number': m['deposit_number'], 'axn': m.get('axn'),
+                'title': m.get('title'), 'date': m.get('date'),
+                'version': '.'.join(map(str, vtuple(m.get('version')) or vtuple(m.get('title')) or [])) or None,
+                'superseded_marker': m.get('status') == 'SUPERSEDED',
+                'is_current': False, 'joined_by': basis,
+                'record_url': f"https://www.alexanarch.org/s/records/{m['deposit_number']}/",
+            })
+            c['member_count'] += 1
+            claimed.add(m['deposit_number'])
+        c['versions'].sort(key=lambda v: v['deposit_number'])
+        return True
+
+    for base, members in sorted(bases.items()):
+        if len(members) >= 2 and attach(members, 'title'):
+            continue
+        members = [m for m in members if m['deposit_number'] not in claimed]
+        if len(members) < 2 or mixed_series(members):
             continue
         vt = [m for m in members if vtuple(m.get('title'))]
         sup = [m for m in members if SUPERSEDED.search(str(m.get('title', '')))]
@@ -156,7 +250,12 @@ def build():
     # signs it off. Requires version tokens in >=2 members, so that distinct
     # works are not merged merely for sharing a subject.
     import difflib
-    remaining = [d for d in deps if d['deposit_number'] not in claimed
+    declared_n = {v['deposit_number'] for c in concepts if c['basis'] == 'version/declared'
+                  for v in c['versions']}
+    # Members of declared families stay in the fuzzy pool as anchors: a fuzzy group
+    # that meets exactly one declared family joins it (attach), and never founds a
+    # family of its own around a declared member.
+    remaining = [d for d in deps if (d['deposit_number'] not in claimed or d['deposit_number'] in declared_n)
                  and vtuple(d.get('title'))]
     rem_bases = [(d, norm_title(d.get('title'))) for d in remaining]
     used = set()
@@ -170,7 +269,12 @@ def build():
             r = difflib.SequenceMatcher(None, b1[:70], b2[:70]).ratio()
             if r >= 0.86:
                 group.append(d2)
-        if len(group) < 2:
+        if len(group) < 2 or mixed_series(group):
+            continue
+        if attach(group, 'fuzzy'):
+            used.update(m['deposit_number'] for m in group)
+            continue
+        if any(m['deposit_number'] in declared_n for m in group):
             continue
         ordered = sorted(group, key=lambda m: ((vtuple(m.get('title')) or (0,)),
                                                str(m.get('date') or ''),
