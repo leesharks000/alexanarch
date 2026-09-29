@@ -13,7 +13,7 @@ configs:
 
 # EA-RHIZOME-POET-01 — poetics
 
-Pearl and Other Poems as its own graph: 44 pieces across four sections, the edges the book makes between them, and the captures in which a machine read the book or a piece of it.
+Pearl and Other Poems as its own graph: 42 pieces across four sections, the edges the book makes between them, and the captures in which a machine read the book or a piece of it.
 
 ## These are symbola. They are for traversal.
 
@@ -63,7 +63,7 @@ The relation recurs at every scale and the verification does not. What is self-s
 
 ## Counts
 
-**101** nodes · **44** core · **0** neighbour · **33** edges · **7** stolons
+**104** nodes · **45** core · **0** neighbour · **33** edges · **8** stolons
 
 ## Roles
 
@@ -112,6 +112,8 @@ A node matching nothing falls to `unroled`, whose count is this grammar's own er
   which document stands first and who is assigned to it afterward — asked of a corpus rather than a shelf.
 - **[`semantic-economy`](https://huggingface.co/datasets/leesharks/semantic-economy)** — `priced_in` from `concept:unpaid-making`
   A POEM IS SEMANTIC LABOUR THAT NOBODY PAID FOR, which is that body's §4.1 exactly — ontology engineering as semantic labor, the work the value is taken from. Pearl was printed in 2014 by a press the author runs, and the question of who bears the cost of making it is not answered here.
+- **[`mantle-bearing`](https://huggingface.co/datasets/leesharks/mantle-bearing)** — `adjudicated_in` from `concept:king-of-may-claim`
+  THE KING OF MAY IS CLAIMED FOR THIS BOOK, read as a book against Howl and Other Poems as a book: the arrangement, a distinct I in each piece, an ecstatic democratic topology, pages 85 and 87 its sabbath. The claim is stated in EA-MANTLE-BEARING-01 (#1656) and judged in that body, round by round, with the transcripts; its pearl_arrangement table is keyed to this body's piece ids.
 
 ## Reproducing it
 

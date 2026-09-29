@@ -222,6 +222,11 @@ def card(g, body_dir):
     # The stolons already declare the siblings. They are now links.
     _BODIES = {d.name for d in (ROOT / "rhizomes").iterdir()
                if d.is_dir() and d.name != "_grammars"}
+    # A stolon may also name a dataset outside the rhizomes that publishes as its own Hub
+    # dataset (2026-09-29, mantle-bearing): a directory under datasets/ with its own
+    # .github/workflows/hf-<name>.yml. Those are links too.
+    _BODIES |= {d.name for d in (ROOT / "datasets").iterdir()
+                if d.is_dir() and (ROOT / ".github" / "workflows" / f"hf-{d.name}.yml").exists()}
     for s in (g.get("stolons") or []):
         frm, pred, to, note = (s + [None] * 4)[:4]
         _t = (f"[`{to}`](https://huggingface.co/datasets/leesharks/{to})"

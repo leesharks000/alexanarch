@@ -1,10 +1,10 @@
 {
  "catalog": "alexanarch-dataset-catalog",
- "generated": "2026-09-29T17:05:27Z",
+ "generated": "2026-09-29T17:24:45Z",
  "generator": "scripts/build_dataset_catalog.py",
  "registry_latest_deposit_date": "2026-09-29",
  "note": "Generated from the publishing workflows, the rhizome grammars, the dataset directories and git. Freshness is recorded, not enforced: trails_registry_by_days is the gap between the registry's latest deposit and a body's latest node, measured on the emission committed in this repository — the Hub copy is rebuilt in CI from source and may be newer or older. datasets/set.json (the hand-kept set of July) is carried as members of class archive_set_member; directories under datasets/ that no entry covers are listed in unlisted_directories.",
- "count": 24,
+ "count": 25,
  "entries": [
   {
    "slug": "crimson-hexagonal-archive",
@@ -16,7 +16,7 @@
    "hub_repo": "leesharks/crimson-hexagonal-archive",
    "hub_repo_basis": "referenced on archive surfaces",
    "update_trigger": "push touching data/registry.json, data/texts/**, captures, citations, datasets/**",
-   "last_source_commit": "c604d3cd2901",
+   "last_source_commit": "6f62c08177e0",
    "last_source_date": "2026-09-29",
    "parent_body": null,
    "status": "live"
@@ -257,6 +257,7 @@
    "stolons": [
     "heteronyms",
     "machine-mediated-reception",
+    "mantle-bearing",
     "model-collapse-anti-collapse",
     "provenance-erasure",
     "revelation-first",
@@ -322,6 +323,21 @@
    "update_trigger": "push touching datasets/tiger-leap/**, .github/workflows/hf-tiger-leap.yml",
    "last_source_commit": "7be73de14050",
    "last_source_date": "2026-09-26",
+   "parent_body": "crimson-hexagonal-archive",
+   "status": "live"
+  },
+  {
+   "slug": "mantle-bearing",
+   "dataset_class": "evaluation",
+   "source_path": "datasets/mantle-bearing/",
+   "builder": "scripts/build_mantle_bearing_dataset.py",
+   "workflow": "hf-mantle-bearing.yml",
+   "hub_repo_var": "HF_REPO_MANTLE_BEARING",
+   "hub_repo": "leesharks/mantle-bearing",
+   "hub_repo_basis": "referenced on archive surfaces",
+   "update_trigger": "see workflow",
+   "last_source_commit": "c9582b12dda3",
+   "last_source_date": "2026-09-29",
    "parent_body": "crimson-hexagonal-archive",
    "status": "live"
   },
@@ -547,7 +563,6 @@
   "erosion-empirical-audit-01",
   "frames",
   "journals",
-  "mantle-bearing",
   "mret",
   "pearl",
   "pessoagraph",

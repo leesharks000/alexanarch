@@ -102,6 +102,7 @@ def main():
         ("the-final-time", "experiment", "datasets/the-final-time/", "scripts/build_final_time_dataset.py", "hf-the-final-time.yml", "HF_REPO_FINAL_TIME", "leesharks/the-final-time"),
         ("spam-technicians", "argument", "datasets/argument-as-dataset/", "scripts/build_argument_as_dataset.py", "hf-spam-technicians.yml", "HF_REPO_SPAM", "leesharks/spam-technicians"),
         ("tiger-leap", "problem", "datasets/tiger-leap/", None, "hf-tiger-leap.yml", "HF_REPO_TIGER", "leesharks/tiger-leap"),
+        ("mantle-bearing", "evaluation", "datasets/mantle-bearing/", "scripts/build_mantle_bearing_dataset.py", "hf-mantle-bearing.yml", "HF_REPO_MANTLE_BEARING", "leesharks/mantle-bearing"),
     ]
     for slug, cls, src, builder, wfn, var, repo in singles:
         h, d = git_last(ROOT / src)
