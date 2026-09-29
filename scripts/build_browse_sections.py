@@ -38,6 +38,34 @@ def head(title, desc, canonical, extra_jsonld=None):
 
 FOOT = '<div class="sub" style="margin-top:24px">Complete registry: <a href="/s/browse/">all deposits on one page</a> · machine index: <a href="/data/browse-index.json">browse-index.json</a> · ∮ = 1</div><script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></div></body></html>'
 
+def fold_heads(deps):
+    """Older versions fold into the newest (MANUS, 2026-09-29: "older versions are folded
+    into newer versions. one can navigate to them from most recent but they dont continue
+    to clutter up main and browse"). The same rule as the monolith: a SUPERSEDED record
+    whose superseded_by chain ends at a record that is not superseded is listed under that
+    record, and nowhere else. Cycles and dangling pointers stay in the main flow."""
+    by = {d['deposit_number']: d for d in deps}
+    heads = collections.defaultdict(list)
+    for d in deps:
+        if d.get('status') != 'SUPERSEDED' or not d.get('superseded_by_deposit_number'):
+            continue
+        cur, seen = d, set()
+        while cur and cur.get('status') == 'SUPERSEDED' and cur.get('superseded_by_deposit_number'):
+            if cur['deposit_number'] in seen:
+                cur = None; break
+            seen.add(cur['deposit_number'])
+            try:
+                cur = by.get(int(cur['superseded_by_deposit_number']))
+            except (TypeError, ValueError):
+                cur = None
+        if cur and cur['deposit_number'] != d['deposit_number']:
+            heads[cur['deposit_number']].append(d)
+    return heads
+
+
+HEADS = {}
+
+
 def record_html(d):
     n = d['deposit_number']; desc = (d.get('description') or '').strip()
     if len(desc) > 420: desc = desc[:417].rsplit(' ',1)[0] + '…'
@@ -46,7 +74,11 @@ def record_html(d):
             f'<a class="t" itemprop="url" href="/s/records/{n}/"><span itemprop="name">{esc(d.get("title"))}</span></a>{badge} '
             f'<time itemprop="datePublished" datetime="{esc(d.get("date"))}" class="m">{esc(d.get("date"))}</time>'
             f'<div class="d" itemprop="description">{esc(desc)}</div>'
-            f'<div class="m">{esc(d.get("axn"))}</div></div>')
+            f'<div class="m">{esc(d.get("axn"))}</div>'
+            + (('<div class="m" style="color:#6b7280">↳ earlier versions: ' + ' · '.join(
+                f'<a href="/s/records/{a["deposit_number"]}/" style="color:#6b7280">#{a["deposit_number"]} {esc(a.get("version") or "")}</a>'
+                for a in sorted(HEADS[n], key=lambda x: x['deposit_number'])) + '</div>') if n in HEADS else '')
+            + '</div>')
 
 def paginate(items):
     return [items[i:i+PAGE] for i in range(0, len(items), PAGE)] or [[]]
@@ -78,6 +110,9 @@ def build(reg_path=ROOT/'data/registry.json', out_dir=ROOT, check=False):
     reg = json.load(open(reg_path))['deposits']
     deps = [d for d in reg if d.get('deposit_number')]
     deps.sort(key=lambda d: (d.get('date') or '', d['deposit_number']))
+    HEADS.clear(); HEADS.update(fold_heads(deps))
+    folded = {a['deposit_number'] for v in HEADS.values() for a in v}
+    deps = [d for d in deps if d['deposit_number'] not in folded]
     fam = collections.defaultdict(list); mon = collections.defaultdict(list); ven = collections.defaultdict(list)
     vmap = {}
     ja = ROOT/'datasets/journals/assignments.jsonl'
