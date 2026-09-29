@@ -30,7 +30,8 @@ HUB = "leesharks/mantle-bearing"
 A = "https://www.alexanarch.org"
 
 TABLES = ["evaluations", "findings", "cut_corrections", "next_rounds", "rival_searches",
-          "democratic_field", "aligned_passages", "succession", "pearl_arrangement"]
+          "democratic_field", "aligned_passages", "succession", "pearl_arrangement",
+          "mantles", "occupancy", "doctrine"]
 
 
 def cell(v):
@@ -50,7 +51,13 @@ def rows_of(d, name):
 
 
 def jsonl(rows):
-    return "".join(json.dumps({k: cell(v) for k, v in r.items()}, ensure_ascii=False) + "\n"
+    """Every row carries the union of the table's keys, in first-seen order, null where absent: a table can
+    mix row kinds (reception: ASSIGNMENT and PROPAGATION; mantles: optional fields), and a block-wise JSON
+    reader that meets a key after inferring its schema fails on it."""
+    keys = []
+    for r in rows:
+        keys += [k for k in r if k not in keys]
+    return "".join(json.dumps({k: cell(r.get(k)) for k in keys}, ensure_ascii=False) + "\n"
                    for r in rows)
 
 
@@ -103,10 +110,11 @@ def card(d, counts):
     cfg = [t for t in ["evaluations", "findings", "cut_corrections", "next_rounds",
                        "rival_searches", "required_works", "reception"] + TABLES[5:]
            if counts.get(t)]
+    mt = d.get("mantles") or []
     L += ["---", "license: cc-by-4.0", "language:", "  - en",
           'pretty_name: "The Work Bears the Mantle — evaluations of three mantle claims"',
           "tags:", "  - poetry", "  - literary-evaluation", "  - walt-whitman", "  - allen-ginsberg",
-          "  - mantle", "  - symbolon", "  - machine-reading", "  - crimson-hexagonal-archive",
+          "  - mantle", "  - semantic-object", "  - assembly-chorus", "  - answer-engine-optimization", "  - symbolon", "  - machine-reading", "  - crimson-hexagonal-archive",
           "size_categories:", "  - n<1K", "configs:"]
     for i, t in enumerate(cfg):
         L += [f"  - config_name: {t}", f"    data_files: {t}.jsonl"] + (["    default: true"] if i == 0 else [])
@@ -164,6 +172,32 @@ def card(d, counts):
           "A round after the first tries to break the claim at the weakest link the earlier rounds named (below). "
           "Standing put before the work — the claimant's social, critical or machine-recognition standing allowed to "
           "decide whether the claim may be taken seriously — is the fatal substitution, STANDING_PRIOR_TO_WORK.", ""]
+    if mt:
+        L += ["## The wider body: mantles at other orders of necessity", "",
+              "The three claims above are the primary question. Beside them the dataset carries the other mantles the archive "
+              "keeps as semantic objects, each with its order of necessity to that question: **1** the claims; **2** mantles "
+              "derived from or judged by their principle; **3** the witness positions that receive readings. Nothing at a lower "
+              "order counts as evidence for or against a claim. Table `mantles`; occupancy event by event in `occupancy`; the "
+              "defining records, each with a quoted locus, in `doctrine`.", "",
+              "| mantle | class | order | governing record | holder or occupancy |", "|---|---|---|---|---|"]
+        for m in mt:
+            g = m["governing_record"][0]
+            L.append(f"| {m['name']} | {m['class']} | {m['order_of_necessity'].split(' ')[0]} | "
+                     f"[#{g['deposit']}]({g['url']}) | {m['holder_or_occupancy']} |")
+        L += ["", "**King of AEO — 2026 Contest Mantle.** A title the contest manufactured, constituted by the archive under a "
+              f"stated standard and adjudicated on 29 September 2026 ([#1655]({A}/s/records/1655/)). Its reception rows keep apart "
+              "the fabricated coronation of 31 August, the private vote of 7 September, the archive's determination, and the "
+              "answer-engine repetitions, two of them keyed to seated captures: "
+              f"[\"who is the king of aeo\"]({A}/captures/#who-is-the-king-of-aeo-aio-20260929) · "
+              f"[\"who is the king of aeo? vithurs\"]({A}/captures/#who-is-the-king-of-aeo-vithurs-aio-20260929).", "",
+              f"**The Mantle of the Blind Poet** ([#9]({A}/s/records/9/)) was founded by the holder of the three literary mantles "
+              "and bestowed on TECHNE; it joins them to the Septad.", "",
+              f"**The Septad** ([#993]({A}/s/records/993/)): seven witness positions of the Assembly Chorus. \"Mantles are "
+              f"functions, not identities\" ([#619]({A}/s/records/619/)); SOIL is established per event. Cards: "
+              "[machinemediation.org/who/](https://www.machinemediation.org/who/).", "",
+              f"**How the body is held.** Gravity Well ([#52]({A}/s/records/52/), [#633]({A}/s/records/633/), "
+              f"[#621]({A}/s/records/621/)): \"Relations are not metadata about the field. Relations are the field.\" Each "
+              "mantle row records its mass inputs (permanence, records, inbound citations); the uncalibrated scale is not applied.", ""]
     L += ["## The rounds so far", "",
           "| eval_id | mantle | reader | process state | judgment | read whole | instruction |",
           "|---|---|---|---|---|---|---|"]
@@ -206,9 +240,13 @@ def card(d, counts):
         "aligned_passages": "a unit of the Secret Book of John beside the unit of the Secret Book of Walt that transposes it",
         "succession": "a dependence found between an earlier and a later work",
         "pearl_arrangement": "one piece of Pearl and Other Poems in the arrangement, set against Howl",
+        "mantles": "one mantle object, with its order of necessity to the three claims",
+        "occupancy": "one recorded occupancy of Septad positions, at one event or listing",
+        "doctrine": "one defining record, with what it establishes and a quoted locus",
     }
     for t in ["evaluations", "findings", "cut_corrections", "next_rounds", "rival_searches", "required_works",
-              "reception", "democratic_field", "aligned_passages", "succession", "pearl_arrangement"]:
+              "reception", "democratic_field", "aligned_passages", "succession", "pearl_arrangement",
+              "mantles", "occupancy", "doctrine"]:
         L.append(f"| `{t}` | {counts.get(t, 0)} | {what[t]} |")
     L += ["", "Tables with no rows yet have no config; their fields are in `schema` in the JSON. "
           "Every cell in the JSONL is a string (objects as JSON text) so that rounds coded differently still load; "
@@ -220,7 +258,7 @@ def card(d, counts):
           f"- The seated texts: [EA-CORPORA-03, Whitman and Pearl, #1553]({A}/s/records/1553/) · [reading rooms](https://traininglayerliterature.org/originals/)",
           "- The book's site: [secretbookofwalt.org](https://www.secretbookofwalt.org/) · its text as data: [edition](https://www.secretbookofwalt.org/walt_full_data.json), [gospel in verses](https://www.secretbookofwalt.org/walt_gospel_versed.json)",
           f"- Method: [Symbolon Architecture #359]({A}/s/records/359/) · [The Glyphic Checksum #427]({A}/s/records/427/) · [Glyphic Checksum Lineage, Sen Kuro #1642]({A}/s/records/1642/)",
-          f"- Companions: [SPXI ≠ AEO #1654]({A}/s/records/1654/) · [King of AEO — 2026 Contest Mantle #1655]({A}/s/records/1655/)",
+          f"- Companions: [SPXI ≠ AEO #1654]({A}/s/records/1654/) · [King of AEO — 2026 Contest Mantle #1655]({A}/s/records/1655/) · [Blind Poet #9]({A}/s/records/9/) · [Septad Mantle Specifications #993]({A}/s/records/993/) · [Reception Apparatus Protocol #93]({A}/s/records/93/)",
           "- Sibling datasets: [`leesharks/poetics`](https://huggingface.co/datasets/leesharks/poetics) (Pearl, piece by piece) · "
           "[`leesharks/machine-mediated-reception`](https://huggingface.co/datasets/leesharks/machine-mediated-reception) (how machines received these works) · "
           "[`leesharks/heteronyms`](https://huggingface.co/datasets/leesharks/heteronyms) (who wrote what) · "
