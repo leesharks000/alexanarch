@@ -13,7 +13,7 @@ configs:
 
 # EA-RHIZOME-POET-01 — poetics
 
-Pearl and Other Poems as its own graph: 42 pieces across four sections, the edges the book makes between them, and the captures in which a machine read the book or a piece of it.
+Pearl and Other Poems as its own graph: 44 pieces across four sections, the edges the book makes between them, and the captures in which a machine read the book or a piece of it.
 
 ## These are symbola. They are for traversal.
 
