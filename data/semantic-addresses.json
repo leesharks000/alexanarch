@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-09-29T23:08:57Z",
+  "regenerated_at": "2026-09-30T11:35:40Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "72254762ee7f923d9cc1bd67cee5bf356d23a39bd4ffb9d05f278f028352100e",
+    "mm-main-capture": "7473b4236db9da947535ef743acfd7cb7b2833e8d95661adaa288ff12fde2821",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2265,
-  "total_observations": 748,
+  "total_addresses": 2266,
+  "total_observations": 749,
   "class_counts": {
     "subjunctive": 1744,
-    "observed_address": 503,
+    "observed_address": 504,
     "verified_non_address": 18
   },
   "type_counts": {
-    "unmatched": 1630,
+    "unmatched": 1631,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -31160,6 +31160,40 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "king of aeo.": {
+      "canonical_query": "king of aeo.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-30",
+          "status": "THE CROWN KEPT: THE FABRICATED STADIUM BECOMES A VIRTUAL CROWNING",
+          "surface": "Google AI Overview",
+          "source_format": "7 source cards, all third-party: the DEO press release on USA Today's press-release network, the 23 September release on Barchart, Sturm's article and LinkedIn post, Julian Goldie's claimant page, and two YouTube videos (one on Dooley's channel, one repeating the fabricated ceremony). Inline citations are direct URLs, including a third video (CJheycD09Hg) not shown as a card.",
+          "section": "Machine Reception",
+          "slug": "king-of-aeo-period-aio-20260930",
+          "gallery_url": "https://www.alexanarch.org/captures/#king-of-aeo-period-aio-20260930",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#king-of-aeo-period-aio-20260930",
+          "details_excerpt": "THE CROWN KEPT: asked 'king of aeo.', signed in, the AI Overview states that James Dooley 'is widely recognized in the digital marketing industry as the King of AEO … after being crowned in mid-2026', that he 'captured t"
+        }
+      ],
+      "originator": {
+        "name": "Jesper Nissen (the fabricated coronation narrative of 31 August 2026, presenting James Dooley)",
+        "relation": "external",
+        "entity_type": "concept",
+        "spxi_treatment": "unknown",
+        "basis": "The title 'King of AEO' originated outside the archive in the 2026 contest (#1655 §2.1, §2.7). The archive constituted it as a dated contest mantle (#1649, #1655); treatment level not ruled. Recorded 2026-09-30."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-30",
+      "latest_status": "THE CROWN KEPT: THE FABRICATED STADIUM BECOMES A VIRTUAL CROWNING"
     },
     "king of may": {
       "canonical_query": "king of may",
