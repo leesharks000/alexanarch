@@ -439,7 +439,7 @@ The order runs one way: transcript → coded evaluation → derived tables. Ever
 | `next_rounds` | 7 | the weakest link a round named, and the test that could break it |
 | `rival_searches` | 2 | a round's search of the rival field (SNG) |
 | `required_works` | 6 | a work the claims require, with every route to its text |
-| `reception` | 9 | an ASSIGNMENT (a judgment that seats a title) or a PROPAGATION (its repetition); kept apart from evaluation |
+| `reception` | 10 | an ASSIGNMENT (a judgment that seats a title) or a PROPAGATION (its repetition); kept apart from evaluation |
 | `democratic_field` | 0 | one work read on one coordinate of the democratic field (packet S6, D) |
 | `aligned_passages` | 0 | a unit of the Secret Book of John beside the unit of the Secret Book of Walt that transposes it |
 | `succession` | 0 | a dependence found between an earlier and a later work |
