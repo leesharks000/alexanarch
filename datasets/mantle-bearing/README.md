@@ -438,9 +438,9 @@ Append-only. The reader's proposal stays as proposed; the author's ruling is add
 | `prince-of-poets--chatgpt--2026-09-29g::cut1` | democratic field | proposed |  |
 | `prince-of-poets--chatgpt--2026-09-29g::cut2` | chronology as succession | proposed |  |
 | `good-gray-poet--chatgpt--2026-09-29g::cut1` | The Secret Book of Walt read as plain Whitman inheritance | proposed |  |
-| `good-gray-poet--chatgpt--2026-09-30a::cut1` | Leaves of Grass (packet S5) | proposed |  |
-| `king-of-may--chatgpt--2026-09-30a::cut1` | Howl and Other Poems (packet S5) | proposed |  |
-| `prince-of-poets--chatgpt--2026-09-30a::cut1` | the genealogy: The Secret Book of Walt as a necessary link (packet S5; GGP claim) | proposed |  |
+| `good-gray-poet--chatgpt--2026-09-30a::cut1` | Leaves of Grass (packet S5) | adopted | 1.2 (drafted 2026-09-30; not yet deposited) |
+| `king-of-may--chatgpt--2026-09-30a::cut1` | Howl and Other Poems (packet S5) | adopted | 1.2 (drafted 2026-09-30; not yet deposited) |
+| `prince-of-poets--chatgpt--2026-09-30a::cut1` | the genealogy: The Secret Book of Walt as a necessary link (packet S5; GGP claim) | adopted | 1.2 (drafted 2026-09-30; not yet deposited) |
 
 ## The criterion, as it develops
 
@@ -450,12 +450,12 @@ The evaluative criterion is recorded as it moves: each formulation with its sour
 |---|---|---|---|
 | `criteria::c-kom-position` | reader | proposed |  |
 | `criteria::c-six` | reader | proposed | the operator: Dylan and Tao Lin as contenders |
-| `criteria::c-continuity` | reader | proposed | the operator: Dylan 'is not ultimately faithful to the lineage' |
+| `criteria::c-continuity` | reader | adopted | the operator: Dylan 'is not ultimately faithful to the lineage' |
 | `criteria::c-five` | reader | proposed; superseded in session by c-event |  |
-| `criteria::c-author-magnitude` | author (in session) | author statement in session; not a packet ruling |  |
-| `criteria::c-event` | author (in session) | author statement in session; not a packet ruling |  |
-| `criteria::c-csm` | reader | proposed | criteria::c-event |
-| `criteria::c-benchmark` | reader | proposed | criteria::c-event |
+| `criteria::c-author-magnitude` | author (in session) | adopted |  |
+| `criteria::c-event` | author (in session) | adopted |  |
+| `criteria::c-csm` | reader | adopted | criteria::c-event |
+| `criteria::c-benchmark` | reader | adopted | criteria::c-event |
 
 ## Tables
 
