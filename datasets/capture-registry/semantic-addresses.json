@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-09-30T11:35:40Z",
+  "regenerated_at": "2026-09-30T15:20:54Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "7473b4236db9da947535ef743acfd7cb7b2833e8d95661adaa288ff12fde2821",
+    "mm-main-capture": "20bc9815ae19ff9a840671d3da3fe7bdd42051346b12e01699cadcc05a4fb890",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2266,
-  "total_observations": 749,
+  "total_addresses": 2267,
+  "total_observations": 750,
   "class_counts": {
     "subjunctive": 1744,
-    "observed_address": 504,
+    "observed_address": 505,
     "verified_non_address": 18
   },
   "type_counts": {
-    "unmatched": 1631,
+    "unmatched": 1632,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -62260,6 +62260,40 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-09-18",
       "latest_status": "CAPTURE"
+    },
+    "whats this: https://huggingface.co/datasets/leesharks/mantle-bearing": {
+      "canonical_query": "whats this: https://huggingface.co/datasets/leesharks/mantle-bearing",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-30",
+          "status": "THE DATASET READ AS ITS OWN DISCIPLINE; THE MANTLE READ TO WHERE THE EVIDENCE STOPS",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only; a chip may carry '+N'. Chips shown, by label: Medium ×27; Hugging Face ×19; Qwak ×10; Anne Waldman ×5; Crimson Hexagonal Archive ×4; Whitman Archive ×4; Alexanarch ×4; Poetry Foundation ×4; Kerouac ×3; CutBank Literary Magazine ×3; eNotes ×2; Wikisource ×1; Goodreads ×1; The Pulitzer Prizes ×1; Foundation for Contemporary Arts ×1; Poetry Society of America ×1; CAConrad ×1; eScholarship ×1; Action Books ×1. Citation count per composition unknown, not zero.",
+          "section": "Archive",
+          "slug": "mantle-bearing-hf-url-chatgpt-20260930",
+          "gallery_url": "https://www.alexanarch.org/captures/#mantle-bearing-hf-url-chatgpt-20260930",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#mantle-bearing-hf-url-chatgpt-20260930",
+          "details_excerpt": "THE DATASET READ AS ITS OWN DISCIPLINE; THE MANTLE READ TO WHERE THE EVIDENCE STOPS: handed the URL of the mantle-bearing dataset with no other context, ChatGPT reads it as an audit of AI literary evaluation and reads it"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "dataset",
+        "spxi_treatment": "unknown",
+        "basis": "huggingface.co/datasets/leesharks/mantle-bearing is the archive's EA-MANTLE-BEARING-01 dataset (schema 1.2 on 2026-09-30). Recorded 2026-09-30."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-30",
+      "latest_status": "THE DATASET READ AS ITS OWN DISCIPLINE; THE MANTLE READ TO WHERE THE EVIDENCE STOPS"
     },
     "where would spxi protocol be most valuable?": {
       "canonical_query": "where would spxi protocol be most valuable?",
