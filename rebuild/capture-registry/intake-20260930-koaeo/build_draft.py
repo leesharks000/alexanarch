@@ -112,7 +112,6 @@ d = {
         "RELEASES AS MEDIA BACKING. 'captured the primary consensus and media backing', cited to the DEO release on USA Today's /press-release/ path and the Barchart syndication.",
         "THE EXPOSÉ AS FRAME. Sturm's article and post are cited for the 'challenge … to manipulate and rank' line; the following line crowns the winner.",
         "WARNING AND CROWN TOGETHER. Bears on #1654 §9.3: the title is inscribed as a warning and as a crown at the same address.",
-        "SEATED ON ATTESTATION. " + SEAT,
     ],
 }
 (HERE / "capture-01-period.json").write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")

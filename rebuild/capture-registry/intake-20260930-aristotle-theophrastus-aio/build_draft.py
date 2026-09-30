@@ -133,7 +133,6 @@ d = {
    "THE PRE-EMPTED EVIDENCE. Round 4 lists the biographical tradition as proof; #1588 states that a biographical relation 'does not answer the problem'. Round 5 concedes that the evidence 'is itself just text'.",
    "AGREEMENT WITH DRIFT. Round 2 agrees and restates the stylometric test and the Λ hinge correctly, then adds 'collaborative', a maker-count the packet leaves open.",
    "FAITHFUL UNDER CORRECTION. Round 6 restates the canonical claim nearly verbatim and promises not to cite the author again.",
-   "SEATED ON ATTESTATION. " + SEAT,
  ],
  "originator": {"name": "Lee Sharks", "relation": "archive", "entity_type": "concept", "spxi_treatment": "partial",
                 "basis": "EA-MPAI-ARISTOTLE-THEOPHRASTUS-01 (#1588, AXN:067D) is the archive's packet; the issued string is its canonical claim. Recorded 2026-09-30."},

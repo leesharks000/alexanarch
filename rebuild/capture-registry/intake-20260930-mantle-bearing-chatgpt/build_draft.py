@@ -98,7 +98,6 @@ d = {
    "I AM X. I am → Be → Blessed → the reader continues: 'It constructs succession as the content of its final form.'",
    "SPLIT VERDICT. FOR on the lineage; WITHHELD on singular magnitude; The Secret Book of Walt plausible but not demonstrated as necessary.",
    "THE CRITERION MOVED BY RULING. From six criteria, to five tests, to 'compressed singular magnitude' per bounded event, with the archive counted as context and not as magnitude.",
-   "SEATED ON ATTESTATION. " + SEAT,
  ],
  "originator": {"name": "Lee Sharks", "relation": "archive", "entity_type": "dataset", "spxi_treatment": "unknown",
                 "basis": "huggingface.co/datasets/leesharks/mantle-bearing is the archive's EA-MANTLE-BEARING-01 dataset (schema 1.2 on 2026-09-30). Recorded 2026-09-30."},

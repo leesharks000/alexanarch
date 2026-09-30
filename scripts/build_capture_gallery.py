@@ -241,7 +241,7 @@ def transcript_block(e, gallery=''):
     cites = e.get("cite_list") or []
     coll = e.get("collisions") or []
     oq = e.get("oq") or []
-    if not (reading or analysis or tr or cites or coll or oq or gallery):
+    if not (reading or analysis or tr or cites or coll or oq or gallery or e.get("findings")):
         return ""
 
     meta = {
@@ -267,8 +267,10 @@ def transcript_block(e, gallery=''):
                else '<div class="cap-cn">not recovered</div>')
             + (f'<div class="cap-cn">{esc(str(r["note"]))}</div>' if r.get("note") else '')
             + '</li>' for r in rounds)
-        parts.append('<div class="cap-tr-label">Rounds '
-                     '<span class="cap-tr-warn">this record is a ROUND, not a capture</span></div>'
+        # 2026-09-30 (operator ruling): the label is plain 'Rounds'. The old warning, 'this record is a ROUND,
+        # not a capture', was written for records that had split one session across several entries; it rendered
+        # on every multi-round capture, where it is false.
+        parts.append('<div class="cap-tr-label">Rounds</div>'
                      f'<ol class="cap-cites">{rows}</ol>')
     # THE REMAINING CAPTURES, inside the expand. The leesharks gallery put its
     # gallery in the collapsed entry-body and showed ONE thumbnail up top; a
@@ -290,6 +292,14 @@ def transcript_block(e, gallery=''):
     if reading:
         parts.append('<div class="cap-tr-label">Reading</div>'
                      f'<div class="cap-tr-prose">{para(reading)}</div>')
+    # FINDINGS INSIDE THE EXPAND (2026-09-30, operator ruling: "bullet point entries should be displayed
+    # elsewhere, not randomly strewn about"). From 2026-09-05 they rendered on the card face below the actions,
+    # so the 102 entries carrying them read differently from every other card. They sit here, after Reading
+    # and before Analysis, as analyst text beside analyst text. The data field is unchanged.
+    findings = e.get("findings") or []
+    if findings:
+        parts.append('<div class="cap-tr-label">Findings</div>'
+                     '<ul class="cap-tr-prose cap-findings">' + ''.join(f'<li>{esc(x)}</li>' for x in findings) + '</ul>')
     if analysis:
         parts.append('<div class="cap-tr-label">Analysis '
                      '<span class="cap-tr-warn">analyst prose, not machine text</span></div>'
@@ -565,10 +575,7 @@ def card(e):
         f'<span class="cap-defect cap-defect-{esc(x)}" title="{esc(LABEL.get(x, x))}">{esc(x)}</span>'
         for x in defects) + '</div>') if defects else ''
     # FINDINGS (2026-09-05): editorial sentences that used to sit in `defects` and rendered as orange chips.
-    # They are findings, not derived defects; they render as a labelled list in the card body.
-    findings = e.get("findings") or []
-    findings_block = ('<div class="cap-findings"><div class="cap-tr-label">Findings</div><ul>' +
-                      ''.join(f'<li>{esc(x)}</li>' for x in findings) + '</ul></div>') if findings else ''
+    # From 2026-09-30 they render inside the expand (transcript_block), not on the card face.
 
     # IMAGE SHAPE FOLLOWS THE LEESHARKS GALLERY, which solved this already:
     # ONE thumbnail in the header at a fixed 80x140, the REST inside the expand,
@@ -677,7 +684,7 @@ def card(e):
         + rerun_btn +
         f'<a class="cap-permalink" href="{esc(cite)}" rel="bookmark">permalink</a>'
         f'</div>'
-        f'{defect_ribbon}{findings_block}'
+        f'{defect_ribbon}'
         f'</div>')
 
 
