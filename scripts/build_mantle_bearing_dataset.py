@@ -31,7 +31,7 @@ A = "https://www.alexanarch.org"
 
 TABLES = ["evaluations", "findings", "cut_corrections", "next_rounds", "rival_searches",
           "democratic_field", "aligned_passages", "succession", "pearl_arrangement",
-          "mantles", "occupancy", "doctrine"]
+          "mantles", "occupancy", "doctrine", "criteria"]
 
 
 def cell(v):
@@ -208,7 +208,11 @@ def card(d, counts):
         ic = ic.split(" — ")[0] if ic else ""
         L.append(f"| `{e['eval_id']}` | {e['mantle']} | {e['reader']} | {e['process_state']} | {e['judgment']} | "
                  f"{len(whole) if isinstance(whole, list) else ''} | {ic} |")
-    L += ["", "Judgments are the readers' own, coded conservatively from the transcripts; each row's coding note says how.", ""]
+    L += ["", "Judgments are the readers' own, coded conservatively from the transcripts; each row's coding note says how. "
+          "Where a reader judges the parts of a claim separately, the row carries them in `proposition_judgments`.", ""]
+    caps = sorted({e["capture"] for e in ev if e.get("capture")})
+    if caps:
+        L += ["Rounds seated as captures, with the whole session: " + " · ".join(f"[{c}]({A}/captures/#{c})" for c in caps), ""]
     nr = d.get("next_rounds") or []
     if nr:
         L += ["## Weakest links named so far", ""]
@@ -223,6 +227,15 @@ def card(d, counts):
         for c in cc:
             L.append(f"| `{c['correction_id']}` | {c.get('target')} | {c.get('status')} | "
                      f"{c.get('adopted_in_packet_version') or c.get('prompted_revision_in_packet_version') or ''} |")
+        L.append("")
+    cr = d.get("criteria") or []
+    if cr:
+        L += ["## The criterion, as it develops", "",
+              "The evaluative criterion is recorded as it moves: each formulation with its source, a reader's proposal or the author's "
+              "statement in session. Neither is a ruling on the packet until the author rules. Table `criteria`.", "",
+              "| criterion | source | status | responds to |", "|---|---|---|---|"]
+        for c in cr:
+            L.append(f"| `{c['criterion_id']}` | {c['source']} | {c['status']} | {c.get('responds_to') or ''} |")
         L.append("")
     L += ["## Tables", "",
           "The order runs one way: transcript → coded evaluation → derived tables. Every derived row carries the "
@@ -243,10 +256,11 @@ def card(d, counts):
         "mantles": "one mantle object, with its order of necessity to the three claims",
         "occupancy": "one recorded occupancy of Septad positions, at one event or listing",
         "doctrine": "one defining record, with what it establishes and a quoted locus",
+        "criteria": "one formulation of the evaluative criterion, with its source, what it responds to and supersedes, and the author's ruling",
     }
     for t in ["evaluations", "findings", "cut_corrections", "next_rounds", "rival_searches", "required_works",
               "reception", "democratic_field", "aligned_passages", "succession", "pearl_arrangement",
-              "mantles", "occupancy", "doctrine"]:
+              "mantles", "occupancy", "doctrine", "criteria"]:
         L.append(f"| `{t}` | {counts.get(t, 0)} | {what[t]} |")
     L += ["", "Tables with no rows yet have no config; their fields are in `schema` in the JSON. "
           "Every cell in the JSONL is a string (objects as JSON text) so that rounds coded differently still load; "
