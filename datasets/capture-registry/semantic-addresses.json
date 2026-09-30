@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-09-30T15:20:54Z",
+  "regenerated_at": "2026-09-30T20:21:59Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "20bc9815ae19ff9a840671d3da3fe7bdd42051346b12e01699cadcc05a4fb890",
+    "mm-main-capture": "71744872547328015e99ee091b1ef32b171ada20dc168563a16a68d8c96aa723",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2267,
-  "total_observations": 750,
+  "total_addresses": 2268,
+  "total_observations": 751,
   "class_counts": {
     "subjunctive": 1744,
-    "observed_address": 505,
+    "observed_address": 506,
     "verified_non_address": 18
   },
   "type_counts": {
-    "unmatched": 1632,
+    "unmatched": 1633,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -9973,6 +9973,40 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "aristotle and theophrastus are not two distinct authors": {
+      "canonical_query": "aristotle and theophrastus are not two distinct authors",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-09-30",
+          "status": "CAPTURE",
+          "surface": "Google AI Overview",
+          "source_format": "Source chips expose site labels only; a chip may carry '+N'. Chips shown, by label: Medium ×8; Stanford Encyclopedia of Philosophy ×6; Medium · Lee Sharks ×5; Encyclopedia.com ×2; Quora ×2; The University of Chicago ×2; Binghamton University ×1. No source cards and no URLs are in the paste. Citation count per composition unknown, not zero.",
+          "section": "Classics & Philology",
+          "slug": "aristotle-theophrastus-not-two-distinct-authors-aio-20260930",
+          "gallery_url": "https://www.alexanarch.org/captures/#aristotle-theophrastus-not-two-distinct-authors-aio-20260930",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#aristotle-theophrastus-not-two-distinct-authors-aio-20260930",
+          "details_excerpt": "THE SOURCE CITED FOR BOTH SIDES: given the packet's own claim as a sentence, the Overview answers 'Aristotle and Theophrastus are two distinct historical individuals and authors', then over five more rounds runs the full"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "partial",
+        "basis": "EA-MPAI-ARISTOTLE-THEOPHRASTUS-01 (#1588, AXN:067D) is the archive's packet; the issued string is its canonical claim. Recorded 2026-09-30."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-09-30",
+      "latest_status": "CAPTURE"
     },
     "aristotle theophrastus one author": {
       "canonical_query": "aristotle theophrastus one author",
