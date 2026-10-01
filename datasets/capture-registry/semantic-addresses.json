@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-01T18:43:23Z",
+  "regenerated_at": "2026-10-01T20:46:08Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "cde154c65d8918e8a30ad3477e86c4e54c2a7364008737a9fc8c3de52abda890",
+    "mm-main-capture": "9d2fcc2a7cc17f5999bb95bf3db58728e8f962fa0219d498473940ecb2e11d13",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2271,
-  "total_observations": 754,
+  "total_addresses": 2272,
+  "total_observations": 755,
   "class_counts": {
     "subjunctive": 1744,
-    "observed_address": 509,
+    "observed_address": 510,
     "verified_non_address": 18
   },
   "type_counts": {
-    "unmatched": 1636,
+    "unmatched": 1637,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -35345,6 +35345,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "mantles as semantic object": {
+      "canonical_query": "mantles as semantic object",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-01",
+          "status": "CAPTURE",
+          "surface": "Google AI Overview",
+          "source_format": "7 source cards: one archive-controlled (#27 on Medium, 'by Lee Sharks'), six third-party (mantleai.dev ×2, Innovatily, three YouTube videos on SAP Fiori and semantic layers). Inline citations are /goto redirects; the #27 card carries every citation in §2.",
+          "section": "Machine Reception",
+          "slug": "mantles-as-semantic-object-aio-20261001",
+          "gallery_url": "https://www.alexanarch.org/captures/#mantles-as-semantic-object-aio-20261001",
+          "record_url": "https://www.alexanarch.org/captures/mantles-as-semantic-object-aio-20261001/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#mantles-as-semantic-object-aio-20261001",
+          "details_excerpt": "THE MANTLE GIVEN A BLOCKCHAIN AND AN OWNER: asked 'mantles as semantic object', signed out, the Overview offers three senses — an enterprise semantic layer (Mantle AI), the archive's mantle, and SAP Fiori's semantic obje"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "partial",
+        "basis": "The mantle as semantic object, with its necessary conditions, is the archive's (#27 §'Mantles'; the mantle line #1651–#1656). Recorded 2026-10-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-01",
+      "latest_status": "CAPTURE"
     },
     "manuscript attrition index": {
       "canonical_query": "manuscript attrition index",
