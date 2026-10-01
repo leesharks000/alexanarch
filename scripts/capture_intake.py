@@ -245,8 +245,9 @@ def seat_flat(draft, registry, schema):
     e["slug"] = draft.get("slug") or (re.sub(r"[^a-z0-9]+", "-", draft["q"].lower()).strip("-")[:44].strip("-") + "-" + draft["date"].replace("-", ""))
     e["surfaces"] = e.get("surfaces") or [draft["surface"]]; e["dates"] = e.get("dates") or [draft["date"]]
     e["imgs"] = e.get("imgs") or []; e["img_urls"] = e.get("img_urls") or ["https://www.alexanarch.org/" + p for p in e["imgs"]]
-    e["links"] = e.get("links") or [{"url": "https://www.alexanarch.org/captures/#" + e["slug"], "authority": "canonical", "note": "the archive holds the registry and this entry"}]
-    e["cite"] = e.get("cite") or "https://www.alexanarch.org/captures/#" + e["slug"]
+    # the record page is the citation (ruling 2026-10-01); build_capture_links.py writes the full link set
+    e["links"] = e.get("links") or [{"url": "https://www.alexanarch.org/captures/" + e["slug"] + "/", "authority": "canonical", "note": "the capture's own record page; cite this form"}]
+    e["cite"] = e.get("cite") or "https://www.alexanarch.org/captures/" + e["slug"] + "/"
     # ADDR_ID MUST IMPLEMENT THE SURFACE RULE (2026-09-10). address_key() has keyed on
     # (string, surface) for captures dated on or after 2026-08-15 since MANUS ruled it, but
     # addr_id hashed the STRING ALONE — so four surfaces collapsed to one address id, which

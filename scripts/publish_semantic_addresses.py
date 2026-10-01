@@ -190,8 +190,8 @@ def render_observations(obs_list: list) -> str:
             f'<span style="color:#777;font-size:.85em">· {esc(o.get("date",""))}</span>',
         ]
         # 2026-09-25: surface, not the citation note, on the line; and a link to the capture itself
-        if o.get("gallery_url"):
-            parts.append(f'<div style="font-size:.85em;margin-top:4px"><a href="{esc(o["gallery_url"])}">the capture, with its transcript →</a></div>')
+        if o.get("record_url") or o.get("gallery_url"):
+            parts.append(f'<div style="font-size:.85em;margin-top:4px"><a href="{esc(o.get("record_url") or o["gallery_url"])}">the capture, with its transcript →</a></div>')
         if o.get("section"):
             parts.append(f'<div style="color:#555;margin-top:4px">Section: <em>{esc(o.get("section"))}</em></div>')
         if o.get("details_excerpt"):

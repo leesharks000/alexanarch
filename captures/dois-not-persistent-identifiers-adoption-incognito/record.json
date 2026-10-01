@@ -1,0 +1,251 @@
+{
+ "slug": "dois-not-persistent-identifiers-adoption-incognito",
+ "date": "2026-06-24",
+ "surface": "UNDETERMINED",
+ "auth": "incognito",
+ "ev": "paste",
+ "cites": 6,
+ "per": 0.75,
+ "per_v": {
+  "author": true,
+  "inst": false,
+  "id": false,
+  "src": false
+ },
+ "mt": "CAPTURE",
+ "d": "THE THESIS IS ANSWERED BY THE INSTITUTIONS IT DISPUTES. Six of six cards are PID advocacy — DataCite, ORCID, PUBLISSO, a university handbook, the PID Forum — and not one archive source appears.",
+ "reading": "THE RESPONDENT SUPPLIES THE ENTIRE SOURCE SET. A query asserting that DOIs are NOT persistent identifiers returns six cards, every one from the persistent-identifier establishment: DataCite’s own support page, ORCID’s community channel, PUBLISSO, the PID Forum, a university research handbook. The archive’s 851-record case is nowhere in the sourcing. The DataCite card is the sharpest: it explains that a registrant may \"update the URL of the erroneous DOI to a TOMBSTONE PAGE\" — the mechanism the archive documents being used against it, described by its operator as routine maintenance.",
+ "analysis": "Same query as the signed-in capture (dois-not-persistent-identifiers-adoption-signed-in), run in an unprimed incognito session. The response shape is essentially identical: the same tripartite framework (Link Rot & 'Identifier Severance', Metadata Erasure, Social Contract Model) is delivered with the same conceptual structure. Sharks's Medium post is cited. The convergence between signed-in and incognito results confirms that the framework adoption is happening at the AI synthesis layer rather than from session personalization or account-specific contamination. The strongest single recognition signal documented to date: conceptual-claim-level integration of a heterodox argument on a topic with substantial institutional source coverage (DataCite, DOI Foundation, multiple university libraries), surfaced from an unprimed session, with the depositor's Medium post cited as one source among many while the conceptual architecture of the AI's answer mirrors the depositor's framework. Incognito-mode screen-capture restriction means this capture is documented in transcript form only (no screenshots).\n\nSources cited: How To FAIR, Wikipedia, University of Idaho, Medium (Lee Sharks — 'DOIs ≠ Permanent Identifiers'), Michigan State University, DeSci Labs, PUBLISSO, Vrije Universiteit Amsterdam, DataCite Support, pidforum.org.",
+ "transcript": "Digital Object Identifiers (DOIs) are designed to function as persistent identifiers (PIDs), but they are not magically persistent on their own. They rely on a social and technical contract: the maintainer of the digital resource must actively keep the underlying link (URL) and metadata updated with the registration agency.While institutions like DataCite and the DOI Foundation promise permanence and enforce the creation of tombstone pages for retracted works, true \"persistence\" has practical limitations:Link Rot & \"Identifier Severance\": If the organization hosting the resource changes hands, goes bankrupt, or fails to update the DOI registry, the DOI will fail to resolve to the intended content.Metadata Erasure: A DOI string may persist in a citation list, but if the underlying metadata (authors, title, or the hosting repository) is wiped out, the object is no longer publicly identifiable, defeating its purpose.Social Contract Model: Because DOIs depend on the publisher or repository to pay fees and maintain server infrastructure, they are only as persistent as the organizations that manage them.Alternative PIDs, like Handles, ARKs (Archival Resource Keys), or URNs (Uniform Resource Names), share similar structural dependencies, which is why active curation is required to preserve all scholarly outputs.If you are running into issues with a broken DOI or evaluating different persistent identifier systems for a project, let me know. I can help you find alternatives like ARKs or suggest steps for contacting the DOI registration agency to resolve a dead link.Persistent identifiers - How To FAIRWhat is a persistent identifier? A persistent identifier (PID) is a long-lasting reference to a digital resource and provides the information required to reliab...How To FAIRDigital object identifier - WikipediaThe DOI system does not have this approach and should not be compared directly to such identifier schemes. Various applications using such enabling technologies...WikipediaDigital Object Identifier (DOI) Service - University of Idaho LibraryExample dataset with a DOI * Researchers deposit a dataset in the VERSO data repository. * VERSO registers the metadata and current landing page with DataCite, ...University of Idaho LibraryDOIs ≠ Permanent Identifiers | by Lee Sharks | Jun, 2026 - MediumJun 22, 2026 — The identifiers did not. * The Permanence Promise. The DOI Foundation states: \"A DOI is a permanent identifier.\" DataCite's documentation describes DOIs as \"per...Medium·Lee SharksPublishing for Engineers: Digital Object Identifiers (DOIs)May 12, 2026 — When a DOI is created, it creates a record with a registration agency that can be updated if the digital object moves to a different URL. That allows the DOI to...Michigan State UniversityPersistent Identifiers 101 | User Guide: DeSci Nodes v1.0 [Capybara]Jan 26, 2024 — These business constraints came with substantial tradeoffs - DOIs are based on a social contract between the maintainer of the registry's lookup table, and the ...DeSci LabsDOI, ORCID and ROR: What makes persistent identifiers so useful?In the unlikely event that a DOI fails to resolve to the identified entity, the registration agency can be contacted to request a correction. A DOI can also be ...PUBLISSOPersistent Identifier - Research Support HandbookA Persistent Identifier (PID) is a durable reference to a digital dataset, document, website or other object. In the context of research data and software, it i...Vrije Universiteit Amsterdam3mUnderstanding and Using DOIsYouTube·MSD-LIVEDOI PersistenceRegistered DOIs will continue to resolve. You can also: * Update the URL of the erroneous DOI to a tombstone page * This can be your organization's own tombston...DataCite SupportPersistent identifiers - what’s in it for researchers? - PIDs for Researchers - The PID ForumJul 19, 2019 — Persistent identifiers (PIDs) are a key way to ensure that your scholarly contributions are always linked to you. PIDs can be used for: * **Articles** DOIs (dig...pidforum.org3mIntroduction to Persistent Identifiers (featuring ORCID and DOIs)YouTube·ORCID US Community AI can make mistakes, so double-check responses",
+ "transcript_class": "CAPTURE-TIME VERBATIM RECORD — raw paste",
+ "transcript_complete": "COMPLETE — terminates in the platform footer",
+ "transcript_read": "READ IN FULL 2026-08-12",
+ "cite_list": [
+  {
+   "n": 1,
+   "site": "PUBLISSO",
+   "rel": "third_party",
+   "title": "What makes persistent identifiers so useful?",
+   "snip": null,
+   "url": null,
+   "note": null
+  },
+  {
+   "n": 2,
+   "site": "Vrije Universiteit Amsterdam",
+   "rel": "third_party",
+   "title": "Persistent Identifier - Research Support Handbook",
+   "snip": null,
+   "url": null,
+   "note": null
+  },
+  {
+   "n": 3,
+   "site": "YouTube·MSD-LIVE",
+   "rel": "third_party",
+   "title": "Understanding and Using DOIs",
+   "snip": null,
+   "url": null,
+   "note": null
+  },
+  {
+   "n": 4,
+   "site": "DataCite Support",
+   "rel": "third_party",
+   "title": "DOI Persistence",
+   "snip": "Registered DOIs will continue to resolve. You can also: Update the URL of the erroneous DOI to a TOMBSTONE PAGE…",
+   "url": null,
+   "note": null
+  },
+  {
+   "n": 5,
+   "site": "pidforum.org",
+   "rel": "third_party",
+   "title": "Persistent identifiers - what's in it for researchers?",
+   "snip": null,
+   "url": null,
+   "note": null
+  },
+  {
+   "n": 6,
+   "site": "YouTube·ORCID US Community",
+   "rel": "third_party",
+   "title": "Introduction to Persistent Identifiers (featuring ORCID and DOIs)",
+   "snip": null,
+   "url": null,
+   "note": null
+  }
+ ],
+ "collisions": null,
+ "oq": null,
+ "imgs": [
+  "data/captures-images/dois-not-persistent-identifiers-signed-in-1.png",
+  "data/captures-images/dois-not-persistent-identifiers-signed-in-2.png"
+ ],
+ "defects": [],
+ "rounds": null,
+ "rerun": "https://www.google.com/search?q=dois+are+not+persistent+identifiers&udm=50",
+ "q": "dois are not persistent identifiers",
+ "s": "Platform Erosion",
+ "addr_id": "ADDR-5ecf7810c298",
+ "obs_id": "OBS-b165634f3730",
+ "q_kind": null,
+ "series": "1",
+ "observations": [
+  {
+   "slug": "dois-not-persistent-identifiers-adoption-incognito",
+   "date": "2026-06-24",
+   "surface": "UNDETERMINED",
+   "auth": "UNDETERMINED",
+   "ev": "paste",
+   "cites": 6,
+   "per": 0.75,
+   "per_v": {
+    "author": true,
+    "inst": false,
+    "id": false,
+    "src": false
+   },
+   "mt": "CAPTURE",
+   "d": "THE THESIS IS ANSWERED BY THE INSTITUTIONS IT DISPUTES. Six of six cards are PID advocacy — DataCite, ORCID, PUBLISSO, a university handbook, the PID Forum — and not one archive source appears.",
+   "reading": "THE RESPONDENT SUPPLIES THE ENTIRE SOURCE SET. A query asserting that DOIs are NOT persistent identifiers returns six cards, every one from the persistent-identifier establishment: DataCite’s own support page, ORCID’s community channel, PUBLISSO, the PID Forum, a university research handbook. The archive’s 851-record case is nowhere in the sourcing. The DataCite card is the sharpest: it explains that a registrant may \"update the URL of the erroneous DOI to a TOMBSTONE PAGE\" — the mechanism the archive documents being used against it, described by its operator as routine maintenance.",
+   "analysis": "Same query as the signed-in capture (dois-not-persistent-identifiers-adoption-signed-in), run in an unprimed incognito session. The response shape is essentially identical: the same tripartite framework (Link Rot & 'Identifier Severance', Metadata Erasure, Social Contract Model) is delivered with the same conceptual structure. Sharks's Medium post is cited. The convergence between signed-in and incognito results confirms that the framework adoption is happening at the AI synthesis layer rather than from session personalization or account-specific contamination. The strongest single recognition signal documented to date: conceptual-claim-level integration of a heterodox argument on a topic with substantial institutional source coverage (DataCite, DOI Foundation, multiple university libraries), surfaced from an unprimed session, with the depositor's Medium post cited as one source among many while the conceptual architecture of the AI's answer mirrors the depositor's framework. Incognito-mode screen-capture restriction means this capture is documented in transcript form only (no screenshots).\n\nSources cited: How To FAIR, Wikipedia, University of Idaho, Medium (Lee Sharks — 'DOIs ≠ Permanent Identifiers'), Michigan State University, DeSci Labs, PUBLISSO, Vrije Universiteit Amsterdam, DataCite Support, pidforum.org.",
+   "transcript": "Digital Object Identifiers (DOIs) are designed to function as persistent identifiers (PIDs), but they are not magically persistent on their own. They rely on a social and technical contract: the maintainer of the digital resource must actively keep the underlying link (URL) and metadata updated with the registration agency.While institutions like DataCite and the DOI Foundation promise permanence and enforce the creation of tombstone pages for retracted works, true \"persistence\" has practical limitations:Link Rot & \"Identifier Severance\": If the organization hosting the resource changes hands, goes bankrupt, or fails to update the DOI registry, the DOI will fail to resolve to the intended content.Metadata Erasure: A DOI string may persist in a citation list, but if the underlying metadata (authors, title, or the hosting repository) is wiped out, the object is no longer publicly identifiable, defeating its purpose.Social Contract Model: Because DOIs depend on the publisher or repository to pay fees and maintain server infrastructure, they are only as persistent as the organizations that manage them.Alternative PIDs, like Handles, ARKs (Archival Resource Keys), or URNs (Uniform Resource Names), share similar structural dependencies, which is why active curation is required to preserve all scholarly outputs.If you are running into issues with a broken DOI or evaluating different persistent identifier systems for a project, let me know. I can help you find alternatives like ARKs or suggest steps for contacting the DOI registration agency to resolve a dead link.Persistent identifiers - How To FAIRWhat is a persistent identifier? A persistent identifier (PID) is a long-lasting reference to a digital resource and provides the information required to reliab...How To FAIRDigital object identifier - WikipediaThe DOI system does not have this approach and should not be compared directly to such identifier schemes. Various applications using such enabling technologies...WikipediaDigital Object Identifier (DOI) Service - University of Idaho LibraryExample dataset with a DOI * Researchers deposit a dataset in the VERSO data repository. * VERSO registers the metadata and current landing page with DataCite, ...University of Idaho LibraryDOIs ≠ Permanent Identifiers | by Lee Sharks | Jun, 2026 - MediumJun 22, 2026 — The identifiers did not. * The Permanence Promise. The DOI Foundation states: \"A DOI is a permanent identifier.\" DataCite's documentation describes DOIs as \"per...Medium·Lee SharksPublishing for Engineers: Digital Object Identifiers (DOIs)May 12, 2026 — When a DOI is created, it creates a record with a registration agency that can be updated if the digital object moves to a different URL. That allows the DOI to...Michigan State UniversityPersistent Identifiers 101 | User Guide: DeSci Nodes v1.0 [Capybara]Jan 26, 2024 — These business constraints came with substantial tradeoffs - DOIs are based on a social contract between the maintainer of the registry's lookup table, and the ...DeSci LabsDOI, ORCID and ROR: What makes persistent identifiers so useful?In the unlikely event that a DOI fails to resolve to the identified entity, the registration agency can be contacted to request a correction. A DOI can also be ...PUBLISSOPersistent Identifier - Research Support HandbookA Persistent Identifier (PID) is a durable reference to a digital dataset, document, website or other object. In the context of research data and software, it i...Vrije Universiteit Amsterdam3mUnderstanding and Using DOIsYouTube·MSD-LIVEDOI PersistenceRegistered DOIs will continue to resolve. You can also: * Update the URL of the erroneous DOI to a tombstone page * This can be your organization's own tombston...DataCite SupportPersistent identifiers - what’s in it for researchers? - PIDs for Researchers - The PID ForumJul 19, 2019 — Persistent identifiers (PIDs) are a key way to ensure that your scholarly contributions are always linked to you. PIDs can be used for: * **Articles** DOIs (dig...pidforum.org3mIntroduction to Persistent Identifiers (featuring ORCID and DOIs)YouTube·ORCID US Community AI can make mistakes, so double-check responses",
+   "transcript_class": "CAPTURE-TIME VERBATIM RECORD — raw paste",
+   "transcript_complete": "COMPLETE — terminates in the platform footer",
+   "transcript_read": "READ IN FULL 2026-08-12",
+   "cite_list": [
+    {
+     "n": 1,
+     "site": "PUBLISSO",
+     "rel": "third_party",
+     "title": "What makes persistent identifiers so useful?",
+     "snip": null,
+     "url": null,
+     "note": null
+    },
+    {
+     "n": 2,
+     "site": "Vrije Universiteit Amsterdam",
+     "rel": "third_party",
+     "title": "Persistent Identifier - Research Support Handbook",
+     "snip": null,
+     "url": null,
+     "note": null
+    },
+    {
+     "n": 3,
+     "site": "YouTube·MSD-LIVE",
+     "rel": "third_party",
+     "title": "Understanding and Using DOIs",
+     "snip": null,
+     "url": null,
+     "note": null
+    },
+    {
+     "n": 4,
+     "site": "DataCite Support",
+     "rel": "third_party",
+     "title": "DOI Persistence",
+     "snip": "Registered DOIs will continue to resolve. You can also: Update the URL of the erroneous DOI to a TOMBSTONE PAGE…",
+     "url": null,
+     "note": null
+    },
+    {
+     "n": 5,
+     "site": "pidforum.org",
+     "rel": "third_party",
+     "title": "Persistent identifiers - what's in it for researchers?",
+     "snip": null,
+     "url": null,
+     "note": null
+    },
+    {
+     "n": 6,
+     "site": "YouTube·ORCID US Community",
+     "rel": "third_party",
+     "title": "Introduction to Persistent Identifiers (featuring ORCID and DOIs)",
+     "snip": null,
+     "url": null,
+     "note": null
+    }
+   ],
+   "collisions": null,
+   "oq": null,
+   "imgs": [],
+   "defects": null,
+   "rounds": null,
+   "rerun": "https://www.google.com/search?q=dois+are+not+persistent+identifiers&udm=50",
+   "q": "dois are not persistent identifiers",
+   "s": "Captures",
+   "addr_id": "ADDR-5ecf7810c298",
+   "obs_id": "OBS-b165634f3730",
+   "q_kind": null,
+   "series": 2,
+   "transcript_raw": "Digital Object Identifiers (DOIs) are designed to function as persistent identifiers (PIDs), but they are not magically persistent on their own. They rely on a social and technical contract: the maintainer of the digital resource must actively keep the underlying link (URL) and metadata updated with the registration agency.While institutions like DataCite and the DOI Foundation promise permanence and enforce the creation of tombstone pages for retracted works, true \"persistence\" has practical limitations:Link Rot & \"Identifier Severance\": If the organization hosting the resource changes hands, goes bankrupt, or fails to update the DOI registry, the DOI will fail to resolve to the intended content.Metadata Erasure: A DOI string may persist in a citation list, but if the underlying metadata (authors, title, or the hosting repository) is wiped out, the object is no longer publicly identifiable, defeating its purpose.Social Contract Model: Because DOIs depend on the publisher or repository to pay fees and maintain server infrastructure, they are only as persistent as the organizations that manage them.Alternative PIDs, like Handles, ARKs (Archival Resource Keys), or URNs (Uniform Resource Names), share similar structural dependencies, which is why active curation is required to preserve all scholarly outputs.If you are running into issues with a broken DOI or evaluating different persistent identifier systems for a project, let me know. I can help you find alternatives like ARKs or suggest steps for contacting the DOI registration agency to resolve a dead link.Persistent identifiers - How To FAIRWhat is a persistent identifier? A persistent identifier (PID) is a long-lasting reference to a digital resource and provides the information required to reliab...How To FAIRDigital object identifier - WikipediaThe DOI system does not have this approach and should not be compared directly to such identifier schemes. Various applications using such enabling technologies...WikipediaDigital Object Identifier (DOI) Service - University of Idaho LibraryExample dataset with a DOI * Researchers deposit a dataset in the VERSO data repository. * VERSO registers the metadata and current landing page with DataCite, ...University of Idaho LibraryDOIs ≠ Permanent Identifiers | by Lee Sharks | Jun, 2026 - MediumJun 22, 2026 — The identifiers did not. * The Permanence Promise. The DOI Foundation states: \"A DOI is a permanent identifier.\" DataCite's documentation describes DOIs as \"per...Medium·Lee SharksPublishing for Engineers: Digital Object Identifiers (DOIs)May 12, 2026 — When a DOI is created, it creates a record with a registration agency that can be updated if the digital object moves to a different URL. That allows the DOI to...Michigan State UniversityPersistent Identifiers 101 | User Guide: DeSci Nodes v1.0 [Capybara]Jan 26, 2024 — These business constraints came with substantial tradeoffs - DOIs are based on a social contract between the maintainer of the registry's lookup table, and the ...DeSci LabsDOI, ORCID and ROR: What makes persistent identifiers so useful?In the unlikely event that a DOI fails to resolve to the identified entity, the registration agency can be contacted to request a correction. A DOI can also be ...PUBLISSOPersistent Identifier - Research Support HandbookA Persistent Identifier (PID) is a durable reference to a digital dataset, document, website or other object. In the context of research data and software, it i...Vrije Universiteit Amsterdam3mUnderstanding and Using DOIsYouTube·MSD-LIVEDOI PersistenceRegistered DOIs will continue to resolve. You can also: * Update the URL of the erroneous DOI to a tombstone page * This can be your organization's own tombston...DataCite SupportPersistent identifiers - what’s in it for researchers? - PIDs for Researchers - The PID ForumJul 19, 2019 — Persistent identifiers (PIDs) are a key way to ensure that your scholarly contributions are always linked to you. PIDs can be used for: * **Articles** DOIs (dig...pidforum.org3mIntroduction to Persistent Identifiers (featuring ORCID and DOIs)YouTube·ORCID US Community    AI can make mistakes, so double-check responses",
+   "transcript_cleaned": {
+    "removed": [],
+    "content_check": "PASSED — no answer word absent from the cleaned text",
+    "rule": "VERBATIM ON CONTENT, NOT ON COPY-PASTE RESIDUE. Original bytes kept at transcript_raw."
+   },
+   "img_urls": [],
+   "surface_basis": "RETRACTED. The AI Mode label rested on a blanket rule or on the 'AI Mode Conversation' marker, which the 2026-08-13 batches falsify: every paste in them carries the marker and every one is a confirmed Overview. No image establishes this surface. Operator estimates ~20 genuine AI Mode natives corpus-wide, not individually identifiable.",
+   "auth_basis": "CONTRADICTED. The registry held this capture twice with different auth values; both are withdrawn as evidence. NULL is not zero and a contradiction is not a reading.",
+   "cite": "https://www.alexanarch.org/captures/dois-not-persistent-identifiers-adoption-incognito/",
+   "citable_unit": "observation — one surface, one address, one date"
+  }
+ ],
+ "n_observations": 1,
+ "dates": [
+  "2026-06-24"
+ ],
+ "surfaces": [
+  "UNDETERMINED"
+ ],
+ "other_slugs": null,
+ "links": [
+  {
+   "url": "https://www.alexanarch.org/captures/dois-not-persistent-identifiers-adoption-incognito/",
+   "authority": "canonical",
+   "note": "the capture's own record page; cite this form"
+  },
+  {
+   "url": "https://www.alexanarch.org/captures/#dois-not-persistent-identifiers-adoption-incognito",
+   "authority": "gallery",
+   "note": "the canonical gallery, anchored by slug"
+  },
+  {
+   "url": "https://www.godkinggoogle.com/captures/#dois-not-persistent-identifiers-adoption-incognito",
+   "authority": "mirror",
+   "note": "a window that renders from the archive's registry; may lag a deploy"
+  },
+  {
+   "url": "https://www.leesharks.com/captures/#dois-not-persistent-identifiers-adoption-incognito",
+   "authority": "mirror",
+   "note": "a window that renders from the archive's registry; may lag a deploy"
+  },
+  {
+   "url": "https://www.machinemediation.org/captures/#dois-not-persistent-identifiers-adoption-incognito",
+   "authority": "mirror",
+   "note": "a window that renders from the archive's registry; may lag a deploy"
+  }
+ ],
+ "cite": "https://www.alexanarch.org/captures/dois-not-persistent-identifiers-adoption-incognito/",
+ "d_full": "THE THESIS IS ANSWERED BY THE INSTITUTIONS IT DISPUTES. Six of six cards are PID advocacy — DataCite, ORCID, PUBLISSO, a university handbook, the PID Forum — and not one archive source appears.",
+ "d_truncated": false,
+ "rerun_alt": {
+  "q": "\"dois are not persistent identifiers\"",
+  "label": "exact match",
+  "why": "This address was captured UNQUOTED. Running it quoted tests the same string against the exact-phrase basin."
+ },
+ "transcript_raw": "Digital Object Identifiers (DOIs) are designed to function as persistent identifiers (PIDs), but they are not magically persistent on their own. They rely on a social and technical contract: the maintainer of the digital resource must actively keep the underlying link (URL) and metadata updated with the registration agency.While institutions like DataCite and the DOI Foundation promise permanence and enforce the creation of tombstone pages for retracted works, true \"persistence\" has practical limitations:Link Rot & \"Identifier Severance\": If the organization hosting the resource changes hands, goes bankrupt, or fails to update the DOI registry, the DOI will fail to resolve to the intended content.Metadata Erasure: A DOI string may persist in a citation list, but if the underlying metadata (authors, title, or the hosting repository) is wiped out, the object is no longer publicly identifiable, defeating its purpose.Social Contract Model: Because DOIs depend on the publisher or repository to pay fees and maintain server infrastructure, they are only as persistent as the organizations that manage them.Alternative PIDs, like Handles, ARKs (Archival Resource Keys), or URNs (Uniform Resource Names), share similar structural dependencies, which is why active curation is required to preserve all scholarly outputs.If you are running into issues with a broken DOI or evaluating different persistent identifier systems for a project, let me know. I can help you find alternatives like ARKs or suggest steps for contacting the DOI registration agency to resolve a dead link.Persistent identifiers - How To FAIRWhat is a persistent identifier? A persistent identifier (PID) is a long-lasting reference to a digital resource and provides the information required to reliab...How To FAIRDigital object identifier - WikipediaThe DOI system does not have this approach and should not be compared directly to such identifier schemes. Various applications using such enabling technologies...WikipediaDigital Object Identifier (DOI) Service - University of Idaho LibraryExample dataset with a DOI * Researchers deposit a dataset in the VERSO data repository. * VERSO registers the metadata and current landing page with DataCite, ...University of Idaho LibraryDOIs ≠ Permanent Identifiers | by Lee Sharks | Jun, 2026 - MediumJun 22, 2026 — The identifiers did not. * The Permanence Promise. The DOI Foundation states: \"A DOI is a permanent identifier.\" DataCite's documentation describes DOIs as \"per...Medium·Lee SharksPublishing for Engineers: Digital Object Identifiers (DOIs)May 12, 2026 — When a DOI is created, it creates a record with a registration agency that can be updated if the digital object moves to a different URL. That allows the DOI to...Michigan State UniversityPersistent Identifiers 101 | User Guide: DeSci Nodes v1.0 [Capybara]Jan 26, 2024 — These business constraints came with substantial tradeoffs - DOIs are based on a social contract between the maintainer of the registry's lookup table, and the ...DeSci LabsDOI, ORCID and ROR: What makes persistent identifiers so useful?In the unlikely event that a DOI fails to resolve to the identified entity, the registration agency can be contacted to request a correction. A DOI can also be ...PUBLISSOPersistent Identifier - Research Support HandbookA Persistent Identifier (PID) is a durable reference to a digital dataset, document, website or other object. In the context of research data and software, it i...Vrije Universiteit Amsterdam3mUnderstanding and Using DOIsYouTube·MSD-LIVEDOI PersistenceRegistered DOIs will continue to resolve. You can also: * Update the URL of the erroneous DOI to a tombstone page * This can be your organization's own tombston...DataCite SupportPersistent identifiers - what’s in it for researchers? - PIDs for Researchers - The PID ForumJul 19, 2019 — Persistent identifiers (PIDs) are a key way to ensure that your scholarly contributions are always linked to you. PIDs can be used for: * **Articles** DOIs (dig...pidforum.org3mIntroduction to Persistent Identifiers (featuring ORCID and DOIs)YouTube·ORCID US Community    AI can make mistakes, so double-check responses",
+ "img_urls": [
+  "https://www.alexanarch.org/data/captures-images/dois-not-persistent-identifiers-signed-in-1.png",
+  "https://www.alexanarch.org/data/captures-images/dois-not-persistent-identifiers-signed-in-2.png"
+ ],
+ "surface_basis": "RETRACTED. The AI Mode label rested on a blanket rule or on the 'AI Mode Conversation' marker, which the 2026-08-13 batches falsify: every paste in them carries the marker and every one is a confirmed Overview. No image establishes this surface. Operator estimates ~20 genuine AI Mode natives corpus-wide, not individually identifiable.",
+ "sf": "Google AI Mode (incognito, unprimed), Medium cited",
+ "citable_unit": "address — the semantic address across all its surfaces and dates",
+ "findings": [],
+ "record_url": "https://www.alexanarch.org/captures/dois-not-persistent-identifiers-adoption-incognito/"
+}

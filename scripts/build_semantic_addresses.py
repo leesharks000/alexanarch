@@ -201,6 +201,9 @@ def extract_main_capture(data: dict) -> List[dict]:
                 "section": e.get("s") or e.get("section"),
                 "slug": slug,
                 "gallery_url": f"https://www.alexanarch.org/captures/#{slug}" if slug else None,
+                # the capture's own record page (ruling 2026-10-01); the observation is anchored on its address's page
+                "record_url": (f"https://www.alexanarch.org/captures/{root_slug}/"
+                               + ("" if slug == root_slug else f"#{slug}")) if (slug and root_slug) else None,
                 "mirror_gallery_url": f"https://www.leesharks.com/captures/#{slug}" if slug else None,
                 "details_excerpt": (o.get("d") or "")[:220] or None,
             })

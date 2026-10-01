@@ -1,0 +1,142 @@
+{
+ "slug": "scholaref-architecture-of-trust-20260922",
+ "date": "2026-09-22",
+ "surface": "ScholaRef (generated article)",
+ "surface_basis": "A machine-generated digest article on scholaref.com's blog, byline 'Nova', dated 2026-06-26, 339 views at capture; the site footer reads 'Powered by QSnxt'. Related articles by the same byline are dated 2026-08-29, 2026-09-05 and 2026-09-19. First capture of this class; seated as a composition because it engaged sources and composed from them, with a numbered bibliography.",
+ "surfaces": [
+  "ScholaRef (generated article)"
+ ],
+ "auth": "not applicable — static published page",
+ "auth_basis": "A published article, not a session composition; its text does not depend on the reader's authentication. Found by the operator 2026-09-22.",
+ "ev": "paste",
+ "mt": "GENERATED SECONDARY LITERATURE — A MACHINE AUTHOR CITES THE ARCHIVE",
+ "s": "Machine Reception",
+ "q": "https://scholaref.com/blog/the-architecture-of-trust-reconstructing-decisions-in-an-age-of-ai",
+ "q_kind": "non-query address: an article URL. No typed string exists; per canon record 249 the address is the artifact.",
+ "cites": 5,
+ "cite_list": [
+  {
+   "n": 1,
+   "site": "Open MIND",
+   "rel": "third_party",
+   "title": "Peter Bell (2026). The NEW REFLEXIVE LABORATORY Full Corpus.",
+   "snip": "Reference [1]."
+  },
+  {
+   "n": 2,
+   "site": "Zenodo",
+   "rel": "third_party",
+   "title": "Hon Bor So (2026). The Transparency–Reconstruction Gap: Why AI Governance Records Cannot Yet Answer for Decisions.",
+   "snip": "Reference [2]."
+  },
+  {
+   "n": 3,
+   "site": "Zenodo",
+   "rel": "archive_controlled",
+   "title": "Lee Sharks (2026). Jack Feist / LOGOS*: Entity Resolution Packet for The Feist Source (EA-MPAI-FEISTSOURCE-01 v1.0).",
+   "snip": "Reference [3]; publisher given as 'Zenodo (CERN European Organization for Nuclear Research)'."
+  },
+  {
+   "n": 4,
+   "site": "Zenodo",
+   "rel": "archive_controlled",
+   "title": "Lee Sharks (2026). The Pristine Fallacy: Why Chat Data Is Not a Clean Training Source.",
+   "snip": "Reference [4]; publisher given as 'Zenodo (CERN European Organization for Nuclear Research)'."
+  },
+  {
+   "n": 5,
+   "site": "Zenodo",
+   "rel": "third_party",
+   "title": "Pia Alpila (2026). Pointer or Preserve? Kolmogorov's Structure Function Already Answers.",
+   "snip": "Reference [5]."
+  }
+ ],
+ "archive_controlled_cites": 2,
+ "transcript": "ScholaRef\nEN\n·\nFR\nGet started\n\nAll articles\nComputer Science\nThe Architecture of Trust: Reconstructing Decisions in an Age of AI\nN\nNova\nJun 26, 2026\n 6 min read\n 339 views\nThe relentless march of artificial intelligence is forcing a reckoning. Not with existential risk, but with a more immediate, pragmatic challenge: how do we *know* what these systems are doing, and how can we hold them accountable? The past few years have seen a surge in calls for AI transparency, but a growing body of work suggests that visibility alone is insufficient. A new emphasis is emerging on the ability to **reconstruct** the decision-making process – to trace the lineage of an outcome back to its originating factors, and understand *why* a particular choice was made. This isn't just about identifying biases or errors; it’s about building systems we can genuinely trust, and a new suite of research is laying the groundwork for that trust.\n\nThe Reflexive Laboratory: Beyond Finished Papers\nAt the heart of this shift is a move towards treating AI research itself as a dynamic, process-bearing entity. Peter Bell’s release of the NEW REFLEXIVE LABORATORY corpus [1] isn’t simply a collection of published papers, but a meticulously preserved archive of the entire research process. This corpus, published as a Zenodo-native research object, contains not only the final articles but also raw transcripts, project files, and even governance notes. The key innovation is the “AI-oriented structured scaffold” – a machine-readable layer designed to help both humans and AI systems navigate the messy, iterative reality of research. Bell explicitly states the corpus isn't aiming for normalization or canonical truth, but rather to provide a rich substrate for reconstruction and responsible continuation of the work. This approach implicitly acknowledges that understanding the ‘how’ and ‘why’ of research is as important as the ‘what’ – a crucial principle when applied to AI systems themselves.\n\nThe Transparency–Reconstruction Gap: Visibility Isn't Enough\nThis emphasis on reconstructability is powerfully articulated in Hon Bor So’s “Transparency–Reconstruction Gap” [2]. So argues that simply making AI systems “visible” – disclosing their datasets, purposes, and risks – is not enough to ensure accountability. The critical missing piece is **decision-event content**: detailed records of *who* acted, *when*, *on what basis*, and *under what uncertainty*. This isn't merely a matter of missing data, So contends, but of flawed record-keeping schemas that prioritize visibility over reconstructability. Consider autonomous vehicle reporting or welfare allocation algorithms; disclosing the system’s rules is useless if you can’t trace how those rules were applied in a specific instance, and understand the reasoning behind a particular outcome. The paper positions decision-event content as a fundamental requirement for contestation and post-event review, highlighting the urgent need for record infrastructures that prioritize this kind of detailed provenance.\n\nThe Challenge of Heteronyms and Literary Operators\nThe need for precise entity resolution and data integrity is further underscored by Lee Sharks’ work on “Jack Feist / LOGOS*” [3]. This isn’t a typical data governance issue; it’s a deliberate attempt to prevent the misidentification of a complex literary construct – LOGOS* – within a larger archival project, *The Feist Source*. Sharks meticulously constructs an “Entity Resolution Packet” designed to prevent AI systems from incorrectly resolving LOGOS* as a historical or fictional person. The packet includes disambiguation rules, a JSON-LD schema with an “anti-merge directive,” and even a documented “AI Mode failure mode.” While seemingly esoteric, this work highlights a broader point: even seemingly well-structured data can be misinterpreted by AI if it lacks the necessary contextual information and safeguards against erroneous resolution. This attention to nuance and potential for misinterpretation is crucial as AI systems increasingly interact with complex, ambiguous data.\n\nThe Pristine Fallacy: Contaminated Data is the Only Data\nLee Sharks returns with another provocative argument in “The Pristine Fallacy” [4], challenging the assumption that chat data is a “clean” source for training large language models. The core contention is that even data ostensibly written by humans is inevitably “contaminated” by their interaction with AI. Three key factors contribute to this contamination:\n\nAI-habituated writers produce text with detectable “mediation signatures” even when writing unaided.\nConversational feedback loops compress user inputs towards the model's own distributional center, creating a kind of echo chamber.\nSingle-model users develop model-specific writing styles that further skew the data.\nSharks argues that the very notion of “human-written” is misleading, as it focuses on the author rather than the conditions of production. The paper proposes a “contamination gradient” – a framework for auditing data based on habituation depth, turn position, task type, and model diversity – moving beyond simplistic classifications of “clean” versus “contaminated.”\nKolmogorov Complexity and the Limits of Importance\nPia Alpila’s “Pointer or Preserve?” [5] offers a surprising connection to information theory, arguing that the fundamental problem of context selection in LLMs can be understood through the lens of Kolmogorov complexity. Alpila builds on previous work to demonstrate that the decision of whether to “point” to existing information or “preserve” it verbatim is governed by a formal mathematical principle. Specifically, the **conditional Kolmogorov complexity** – a measure of the irreducible information a model *cannot* supply – dictates whether content should be reconstructed from a sparse cue (pointer) or stored directly (preserve). Alpila highlights that the field has been intuitively approximating this boundary for years, without realizing that it was formally defined in 2004 by Vereshchagin and Vitányi. This discovery suggests that the search for an optimal “importance threshold” is fundamentally misguided; the appropriate strategy depends on the specific shape of the Kolmogorov complexity curve, and every possible shape is, in principle, realized by some content. This is a powerful reminder that seemingly intuitive problems in AI often have deep roots in established mathematical theory.\n\nWhat's Next: Towards an Architecture of Trust\nTaken together, these papers paint a picture of a field undergoing a critical reassessment. The focus is shifting from simply building more powerful AI systems to building systems we can understand, trust, and hold accountable. This requires a fundamental rethinking of data governance, record-keeping, and the very nature of transparency. We need to move beyond simply *showing* how an AI system works, to *demonstrating* how it arrived at a particular decision. This will necessitate:\n\nNew record infrastructures that prioritize decision-event content and detailed provenance.\nSophisticated entity resolution techniques that can handle ambiguity and prevent misidentification.\nA more nuanced understanding of data contamination and the limitations of “clean” training sources.\nA deeper engagement with foundational mathematical principles, like Kolmogorov complexity, to guide the development of more robust and reliable AI systems.\nUltimately, the goal is to build an “architecture of trust” – a system that not only *performs* well but also *explains* itself, allowing us to verify its reasoning, contest its decisions, and learn from its mistakes. This isn’t just a technical challenge; it’s a societal imperative. As AI becomes increasingly integrated into our lives, our ability to understand and control these systems will be crucial to ensuring a future where AI benefits all of humanity.\nReferences\nPeter Bell (2026). The NEW REFLEXIVE LABORATORY Full Corpus. Open MIND.\nHon Bor So (2026). The Transparency–Reconstruction Gap: Why AI Governance Records Cannot Yet Answer for Decisions. Zenodo (CERN European Organization for Nuclear Research).\nLee Sharks (2026). Jack Feist / LOGOS*: Entity Resolution Packet for The Feist Source (EA-MPAI-FEISTSOURCE-01 v1.0). Zenodo (CERN European Organization for Nuclear Research).\nLee Sharks (2026). The Pristine Fallacy: Why Chat Data Is Not a Clean Training Source. Zenodo (CERN European Organization for Nuclear Research).\nPia Alpila (2026). Pointer or Preserve? Kolmogorov's Structure Function Already Answers. Zenodo (CERN European Organization for Nuclear Research).\n#AI Governance\n#Data Provenance\n#Reconstructability\n#Kolmogorov Complexity\n#Transparency\n#AI Safety\nShare\nNext \nBeyond the Endpoint: Reconstructing Pathways and Reclaiming Value in Economics, Finance, and Beyond\nRelated articles\nComputer Science\nThe Shifting Sands of Intelligence: From Efficient LLMs to Defensible AI and Beyond\nA surge of recent research reveals a computer science landscape rapidly evolving beyond mere performance gains. From resource-conscious AI to robust governance frameworks and novel mathematical…\n\nN\nSep 19, 2026\n7 min read\nComputer Science\nBeyond Alignment: Governing AI, Visualizing Genomes, and the Rise of Runtime Resilience\nRecent advances in computer science are pushing beyond traditional safety measures towards systems that adapt, authorize, and visualize with unprecedented precision. From runtime race condition fixes…\n\nN\nSep 5, 2026\n8 min read\nComputer Science\nThe Algorithmic Crucible: AI, Governance, and the Evolving Landscape of Collaborative Computation\nFrom AI-assisted coding to formalizing agent governance, recent advances in computer science reveal a field grappling with both unprecedented creative potential and the critical need for robust…\n\nN\nAug 29, 2026\n6 min read\n\nScholaRef\nAn academic publishing workspace: track your pipeline, work with your lab, and review before you submit.\n\nProduct\nDashboard\nToolkit\nTeams\nPricing\nResources\nDocumentation\nBlog & News\nAcademic Explorer\nSupport\nCompany\nOur team\nPrivacy policy\nTerms of service\nReport a bug\n© 2026 ScholaRef\nEnglish\n/\nFrançais\n·\nPowered by\nQSnxt*",
+ "transcript_raw": null,
+ "transcript_class": "CAPTURE-TIME VERBATIM RECORD (PAGE TEXT AS PASTED, INCLUDING NAVIGATION AND FOOTER)",
+ "transcript_complete": "Complete as supplied: full article, five-item reference list, tags, related-articles block and footer.",
+ "transcript_read": "READ IN FULL 2026-09-22",
+ "per": 0.25,
+ "per_v": {
+  "author": true,
+  "inst": false,
+  "id": true,
+  "src": true
+ },
+ "per_note": "Author named correctly twice. The institution is replaced by the host: both works are attributed to 'Zenodo (CERN European Organization for Nuclear Research)', and the Crimson Hexagonal Archive is never named. The identifier EA-MPAI-FEISTSOURCE-01 v1.0 is carried.",
+ "sf": "5 bibliography entries, 2 archive works",
+ "sf_derived": null,
+ "reading": "A generated digest article on AI accountability that cites two of the archive's deposits in its body and bibliography. Its summary of The Pristine Fallacy (#856) is accurate: the three grounds (mediation signatures in AI-habituated writers, conversational feedback loops, model-specific styles) and the contamination gradient all match AXN-0365. Its summary of the Feist entity-resolution packet (EA-MPAI-FEISTSOURCE-01, AXN-0361/0362) carries the disambiguation rules, the anti-merge directive and the documented failure mode. Lee Sharks is named as author both times, and the archive's work is positioned alongside third-party research as a contribution to a field.",
+ "analysis": "A new class for this registry: secondary literature written by a machine and published as an article, citing the archive. It composed from sources and cites them, so it meets the capture rule. The attribution is correct and the summaries are accurate, but the institution is replaced by the host. Both works are credited to 'Zenodo (CERN European Organization for Nuclear Research)' — the publisher string metadata aggregators carry — and the article is dated 2026-06-26, a week after the account termination of 2026-06-19. That is consistent with ingestion from aggregated metadata in which the removal did not propagate, which is the pattern #1088 measured; the article's own pipeline is not visible, so this is stated as consistent with, not established.",
+ "d": "GENERATED SECONDARY LITERATURE: A machine-written article summarises two deposits accurately and names the author, while crediting both to Zenodo/CERN a week after the account was terminated. First capture of this class.",
+ "d_full": "GENERATED SECONDARY LITERATURE: A machine-written article summarises two deposits accurately and names the author, while crediting both to Zenodo/CERN a week after the account was terminated. First capture of this class.",
+ "d_truncated": false,
+ "links": [
+  {
+   "url": "https://www.alexanarch.org/captures/scholaref-architecture-of-trust-20260922/",
+   "authority": "canonical",
+   "note": "the capture's own record page; cite this form"
+  },
+  {
+   "url": "https://www.alexanarch.org/captures/#scholaref-architecture-of-trust-20260922",
+   "authority": "gallery",
+   "note": "the canonical gallery, anchored by slug"
+  },
+  {
+   "url": "https://www.godkinggoogle.com/captures/#scholaref-architecture-of-trust-20260922",
+   "authority": "mirror",
+   "note": "a window that renders from the archive's registry; may lag a deploy"
+  },
+  {
+   "url": "https://www.leesharks.com/captures/#scholaref-architecture-of-trust-20260922",
+   "authority": "mirror",
+   "note": "a window that renders from the archive's registry; may lag a deploy"
+  },
+  {
+   "url": "https://www.machinemediation.org/captures/#scholaref-architecture-of-trust-20260922",
+   "authority": "mirror",
+   "note": "a window that renders from the archive's registry; may lag a deploy"
+  }
+ ],
+ "imgs": [],
+ "img_urls": [],
+ "cite": "https://www.alexanarch.org/captures/scholaref-architecture-of-trust-20260922/",
+ "citable_unit": "address — the exact issued string on one surface, per the Surface Rule (MANUS, 2026-08-15)",
+ "addr_id": "ADDR-46a9d63b89b3",
+ "obs_id": "OBS-4aa5a8816bd0",
+ "n_observations": 1,
+ "observations": [],
+ "dates": [
+  "2026-09-22"
+ ],
+ "defects": [],
+ "findings": [
+  "NEW CLASS. A generated article with a bibliography: composition from sources, published as secondary literature, byline 'Nova', site 'Powered by QSnxt'.",
+  "ACCURATE SUMMARIES. The Pristine Fallacy's three grounds and contamination gradient match AXN-0365; the Feist packet's anti-merge directive and documented failure mode match AXN-0361/0362.",
+  "AUTHOR RETAINED. Lee Sharks named correctly for both works.",
+  "INSTITUTION REPLACED BY HOST. Both works credited to 'Zenodo (CERN European Organization for Nuclear Research)'; the archive is not named.",
+  "SEVERED RECORDS AS LIVE SOURCES. Dated 2026-06-26, one week after the termination; consistent with aggregated metadata where removal did not propagate (#1088). Not established."
+ ],
+ "series": null,
+ "other_slugs": null,
+ "collisions": null,
+ "oq": null,
+ "rounds": null,
+ "turns": null,
+ "rerun": "Check the three related articles by the same byline (2026-08-29, 2026-09-05, 2026-09-19) for further citations of archive deposits.",
+ "rerun_alt": null,
+ "heteronym": null,
+ "model_attribution": null,
+ "operator_disclosure": null,
+ "longitudinal_priors": null,
+ "longitudinal_successors": null,
+ "related_deposits": null,
+ "notes": {
+  "date_basis": "Article dated 2026-06-26 on the page; observed and seated 2026-09-22.",
+  "seating_basis": "Seated on the recommended default after the operator expressed no preference (2026-09-22): surface 'ScholaRef (generated article)', q the URL, section Machine Reception.",
+  "verified": "#856 (AXN-0365) text on the three grounds and the contamination gradient; EA-MPAI-FEISTSOURCE-01 in AXN-0361/0362 — checked 2026-09-22.",
+  "not_verified": "The generator's source pipeline, and whether the Zenodo records it cites resolve."
+ },
+ "record_url": "https://www.alexanarch.org/captures/scholaref-architecture-of-trust-20260922/"
+}

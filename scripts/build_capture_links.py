@@ -29,14 +29,31 @@ import json, sys, pathlib, argparse
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 REG = ROOT / "data/EA-WG-CAPTURES-01.json"
 CANONICAL = "https://www.alexanarch.org/captures/"
+# THE RECORD PAGE IS THE CITATION (ruling, Lee Sharks, 2026-10-01: "b"). Until then a capture was cited at
+# captures/#{slug}, an anchor inside one page that had grown past 8 MB. A fetcher drops the fragment and requests
+# the whole page, and the fetch interfaces composition surfaces use refuse a response above about 4 MiB, so no
+# citation in the registry resolved for a machine (diagnosed by ChatGPT, 2026-10-01: "Content length is too
+# large: 4,194,305+ bytes"). Each capture now has its own page, captures/{slug}/, written by
+# build_capture_records.py; an observation is cited at captures/{address_slug}/#{observation_slug} on that page,
+# and captures/{observation_slug}/ resolves to it. The gallery anchors remain and still resolve in a browser.
+RECORD = CANONICAL + "{slug}/"
+
+
+def record_url(slug):
+    return RECORD.format(slug=slug)
 
 
 def links_for(slug, galleries):
-    out = [{"url": f"{CANONICAL}#{slug}", "authority": "canonical",
-            "note": "the archive holds the registry and the images; cite this form"}]
+    out = [{"url": record_url(slug), "authority": "canonical",
+            "note": "the capture's own record page; cite this form"}]
     for g in galleries:
-        out.append({"url": f"{g.rstrip('/')}/#{slug}", "authority": "mirror",
-                    "note": "renders from the archive's registry; may lag a deploy"})
+        g = g.rstrip('/')
+        if g + '/' == CANONICAL:
+            out.append({"url": f"{CANONICAL}#{slug}", "authority": "gallery",
+                        "note": "the canonical gallery, anchored by slug"})
+        else:
+            out.append({"url": f"{g}/#{slug}", "authority": "mirror",
+                        "note": "a window that renders from the archive's registry; may lag a deploy"})
     return out
 
 
@@ -63,7 +80,7 @@ def main():
             (stale if have else missing).append(slug)
             if not a.check:
                 e["links"] = want
-        e_cite = f"{CANONICAL}#{slug}"
+        e_cite = record_url(slug)
         if e.get("cite") != e_cite and not a.check:
             e["cite"] = e_cite
 
@@ -79,7 +96,7 @@ def main():
             o_slug = o.get("slug")
             if not o_slug:
                 continue
-            o_cite = f"{CANONICAL}#{o_slug}"
+            o_cite = record_url(slug) + ("" if o_slug == slug else f"#{o_slug}")
             if o.get("cite") != o_cite and not a.check:
                 o["cite"] = o_cite
 
@@ -99,7 +116,9 @@ def main():
         return 0
 
     r["link_policy"] = {
-        "canonical": CANONICAL + "#{slug}",
+        "canonical": RECORD,
+        "observation": RECORD + "#{observation_slug}",
+        "ruled": "2026-10-01 (Lee Sharks): the capture's record page is the citation (option b); gallery anchors remain",
         "rule": "Links are DATA, written when a capture is added — not assembled at render "
                 "time by whichever gallery happens to be running. The archive is canonical "
                 "because it is the authority; mirrors are marked as mirrors and may lag.",

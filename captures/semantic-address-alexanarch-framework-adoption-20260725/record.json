@@ -1,0 +1,184 @@
+{
+ "slug": "semantic-address-alexanarch-framework-adoption-20260725",
+ "date": "2026-07-25",
+ "surface": "Google AI Overview",
+ "auth": "incognito",
+ "ev": "paste",
+ "cites": 3,
+ "per": 0.5,
+ "per_v": {
+  "author": false,
+  "inst": true,
+  "id": false,
+  "src": true
+ },
+ "mt": "CAPTURE",
+ "d": "THE COMPOSITION LAYER CITES THE ADDRESS SET BUILT TO QUERY IT. 1,964 canonical queries, published as a dataset with a file size, retrieved by the system they address.",
+ "reading": "THE INSTRUMENT’S INDEX IS IN THE BASIN IT INDEXES. Three of three cards are alexanarch.org, and two of them describe the semantic-address dataset in its own terms: \"1,964 canonical queries — THE ADDRESSES THROUGH WHICH ALEXANARCH TERMS COULD BE RETRIEVED FROM THE COMPOSITION LAYER (Google AI Overview, AI Mode)\", published as data/semantic-addresses.json at 1.28 MB.\n\nThat is the addressing scheme of this registry, served back by the surface it was built to address. Earlier today the gallery was cited with a prior capture’s ANALYSIS as its snippet; here it is the QUERY SET ITSELF, with a byte count.\n\nCard 1’s snippet is the NAVIGATION BAR — \"Browse Wiki Graph Lexical Citations Observatory Captures Book Resolve Addresses Datasets Principles Identifiers Deposit\" — the archive’s entire surface inventory rendered as description. Second navigation-bar-as-snippet in the corpus after the «alexanarch deleuze» capture.\n\nThe composed answer also offers to \"pull the exact data you need\" and asks whether the user wants \"the cryptographic identifier (AXN) rules\" — the layer volunteering to serve the archive’s own identifier specification.",
+ "analysis": "Framework-level adoption, and the only capture in the registry whose grounding set is entirely first-party. The surface did not describe a work in the corpus; it described the corpus's own retrieval instrumentation — canonical query paths, observation classes, the entity bridge to the lexical layer, the JSON repository — and got the architecture substantially right, sourcing every claim to alexanarch.org. The system that measures how retrieval surfaces receive this archive was itself received, accurately, by a retrieval surface.\n\nSCHEMA-DATA DRIFT (archive-side defect, not confabulation). The composition lists four observation classes: observed, subjunctive, unrated, and verified non-address. The live data carries three — subjunctive 1751, observed_address 238, verified_non_address 20 — and no address anywhere in the file bears the class 'unrated'. But the term is not invented: it is declared in the published schema at /data/semantic-addresses.schema.json, under class_counts, and the registry changelog records that on 2026-07-16 'observed_address and unrated collapsed into one class'. The class was retired in the data and left standing in the schema. The surface read the authoritative machine-readable contract and reported it faithfully; the contract was stale. FINDING: a published schema that outlives its own data becomes a source of durable, well-grounded, incorrect composition — and the error is unfalsifiable from outside, because the citing surface is quoting the archive's own declaration.\n\nCOINAGE BY COMPOSITION LAYER. 'Entity Bridge: Connects unique target references directly to the underlying lexical database' names a real function — refers_to and the lexical overlay — with a label that appears nowhere in the archive: zero occurrences across data/, scripts/, and the published surfaces. The composition did not adopt a term; it minted one, in the archive's own register, and attributed it implicitly to the archive by grounding the surrounding claims there. Distinct from the same-day cross-document blend (machine-eligible-handwritten-artifacts-definitional-adoption-20260725), where the uncited material belonged to a real third author: here the uncited material has no author at all. 'Cryptographic identifier (AXN)' in the offered follow-up is a related, milder case — a defensible gloss on a SHA-256-derived identifier, but not the archive's phrasing, which is content-derived.\n\nDATED PRE-INTERVENTION BASELINE. The snippet records 1,964 addresses at capture time. This capture initiated an audit of the archive's retrieval surface the same day, which found: full body text served but never declared to structured data; 375 of 1,379 record pages opening their body with unparsed YAML frontmatter; three deposits whose corrupted metadata caused a severed Zenodo DOI to outrank its own live successor; and 1,406 AXN identifier URLs carrying both rel=canonical to another page and a zero-second meta refresh, i.e. listed in a sitemap and engineered not to be indexed. Remediation shipped the same day (alexanarch commits b738d5fa, c3b73506, b3e3ae40): articleBody and encoding on 1,406 record pages, sameAs to severed DOIs on 986, frontmatter stripped, AXN republished as independent DefinedTerm entities in a DefinedTermSet, subjectOf reception back-links on 231 deposits, llms.txt, and the capture-deposit link map. Address count at capture 1,964; after rebuild 2,009, of which 101 now carry deposit_links. Re-running this query after re-crawl gives a post-intervention measurement against a documented cause — the registry's first controlled before/after on its own subject.",
+ "transcript": "Semantic addresses in Alexanarch are canonical query paths used to retrieve terms and track observations from a composition layer. They consist of nearly 2,000 tracked queries categorized into observation classes like observed, subjunctive, unrated, and verified non-address.Address Structure and ClassesCanonical Query: The precise text string or search prompt posed to retrieval layers like AI overviews.Observation Status: Tracks whether a query is actively retrievable, catalogued but untested, or unretrievable.Entity Bridge: Connects unique target references directly to the underlying lexical database.Access and DatasetsData Repository: Maintained via structured JSON logs under the Alexanarch Datasets directory.Live Reference: Managed alongside repository identifiers and provenance systems at Alexanarch Semantic Addresses.If you'd like, let me know:Are you looking for a specific query string or ID?Do you want to explore the cryptographic identifier (AXN) rules?I can pull the exact data you need.Semantic Addresses - AlexanarchSemantic Addresses — Alexanarch. Alexanarch Browse Wiki Graph Lexical Citations Observatory Captures Book Resolve Addresses Datasets Principles Identifiers Depo...www.alexanarch.orgDatasets - Alexanarchdata/semantic-addresses.json 1.28 MB · 1,964 addresses. Query addresses — canonical queries posed to the composition layer (AI Overview, Google Search) with the...www.alexanarch.orgSemantic Addresses - AlexanarchSemantic Addresses. 1,964 canonical queries — the addresses through which Alexanarch terms could be retrieved from the composition layer (Google AI Overview, AI...www.alexanarch.org",
+ "transcript_class": "CAPTURE-TIME VERBATIM RECORD — raw paste",
+ "transcript_complete": "as pasted; no footer, so the tail cannot be proven whole. Source strip intact.",
+ "transcript_read": "READ IN FULL 2026-08-12",
+ "cite_list": [
+  {
+   "n": 1,
+   "site": "www.alexanarch.org",
+   "rel": "archive_controlled",
+   "title": "Semantic Addresses — Alexanarch",
+   "snip": "Alexanarch · Browse Wiki Graph Lexical Citations Observatory Captures Book Resolve Addresses Datasets Principles Identifiers Depo[sit]…",
+   "url": null,
+   "note": "The snippet is the NAVIGATION BAR — every surface of the archive listed as if it were prose."
+  },
+  {
+   "n": 2,
+   "site": "www.alexanarch.org",
+   "rel": "archive_controlled",
+   "title": "Datasets — Alexanarch",
+   "snip": "data/semantic-addresses.json 1.28 MB · 1,964 ADDRESSES. Query addresses — CANONICAL QUERIES POSED TO THE COMPOSITION LAYER (AI Overview, Google Search)…",
+   "url": null,
+   "note": null
+  },
+  {
+   "n": 3,
+   "site": "www.alexanarch.org",
+   "rel": "archive_controlled",
+   "title": "Semantic Addresses — Alexanarch",
+   "snip": "1,964 canonical queries — THE ADDRESSES THROUGH WHICH ALEXANARCH TERMS COULD BE RETRIEVED FROM THE COMPOSITION LAYER (Google AI Overview, AI[ Mode])…",
+   "url": null,
+   "note": null
+  }
+ ],
+ "collisions": null,
+ "oq": null,
+ "imgs": [],
+ "defects": [],
+ "rounds": null,
+ "rerun": "https://www.google.com/search?q=semantic+address+alexanarch&udm=50",
+ "q": "semantic address alexanarch",
+ "s": "Archive",
+ "addr_id": "ADDR-c97d217be610",
+ "obs_id": "OBS-5e33a80bc129",
+ "q_kind": null,
+ "series": null,
+ "observations": [
+  {
+   "slug": "semantic-address-alexanarch-framework-adoption-20260725",
+   "date": "2026-07-25",
+   "surface": "Google AI Overview",
+   "auth": "incognito",
+   "ev": "paste",
+   "cites": 3,
+   "per": 0.5,
+   "per_v": {
+    "author": false,
+    "inst": true,
+    "id": false,
+    "src": true
+   },
+   "mt": "CAPTURE",
+   "d": "THE COMPOSITION LAYER CITES THE ADDRESS SET BUILT TO QUERY IT. 1,964 canonical queries, published as a dataset with a file size, retrieved by the system they address.",
+   "reading": "THE INSTRUMENT’S INDEX IS IN THE BASIN IT INDEXES. Three of three cards are alexanarch.org, and two of them describe the semantic-address dataset in its own terms: \"1,964 canonical queries — THE ADDRESSES THROUGH WHICH ALEXANARCH TERMS COULD BE RETRIEVED FROM THE COMPOSITION LAYER (Google AI Overview, AI Mode)\", published as data/semantic-addresses.json at 1.28 MB.\n\nThat is the addressing scheme of this registry, served back by the surface it was built to address. Earlier today the gallery was cited with a prior capture’s ANALYSIS as its snippet; here it is the QUERY SET ITSELF, with a byte count.\n\nCard 1’s snippet is the NAVIGATION BAR — \"Browse Wiki Graph Lexical Citations Observatory Captures Book Resolve Addresses Datasets Principles Identifiers Deposit\" — the archive’s entire surface inventory rendered as description. Second navigation-bar-as-snippet in the corpus after the «alexanarch deleuze» capture.\n\nThe composed answer also offers to \"pull the exact data you need\" and asks whether the user wants \"the cryptographic identifier (AXN) rules\" — the layer volunteering to serve the archive’s own identifier specification.",
+   "analysis": "Framework-level adoption, and the only capture in the registry whose grounding set is entirely first-party. The surface did not describe a work in the corpus; it described the corpus's own retrieval instrumentation — canonical query paths, observation classes, the entity bridge to the lexical layer, the JSON repository — and got the architecture substantially right, sourcing every claim to alexanarch.org. The system that measures how retrieval surfaces receive this archive was itself received, accurately, by a retrieval surface.\n\nSCHEMA-DATA DRIFT (archive-side defect, not confabulation). The composition lists four observation classes: observed, subjunctive, unrated, and verified non-address. The live data carries three — subjunctive 1751, observed_address 238, verified_non_address 20 — and no address anywhere in the file bears the class 'unrated'. But the term is not invented: it is declared in the published schema at /data/semantic-addresses.schema.json, under class_counts, and the registry changelog records that on 2026-07-16 'observed_address and unrated collapsed into one class'. The class was retired in the data and left standing in the schema. The surface read the authoritative machine-readable contract and reported it faithfully; the contract was stale. FINDING: a published schema that outlives its own data becomes a source of durable, well-grounded, incorrect composition — and the error is unfalsifiable from outside, because the citing surface is quoting the archive's own declaration.\n\nCOINAGE BY COMPOSITION LAYER. 'Entity Bridge: Connects unique target references directly to the underlying lexical database' names a real function — refers_to and the lexical overlay — with a label that appears nowhere in the archive: zero occurrences across data/, scripts/, and the published surfaces. The composition did not adopt a term; it minted one, in the archive's own register, and attributed it implicitly to the archive by grounding the surrounding claims there. Distinct from the same-day cross-document blend (machine-eligible-handwritten-artifacts-definitional-adoption-20260725), where the uncited material belonged to a real third author: here the uncited material has no author at all. 'Cryptographic identifier (AXN)' in the offered follow-up is a related, milder case — a defensible gloss on a SHA-256-derived identifier, but not the archive's phrasing, which is content-derived.\n\nDATED PRE-INTERVENTION BASELINE. The snippet records 1,964 addresses at capture time. This capture initiated an audit of the archive's retrieval surface the same day, which found: full body text served but never declared to structured data; 375 of 1,379 record pages opening their body with unparsed YAML frontmatter; three deposits whose corrupted metadata caused a severed Zenodo DOI to outrank its own live successor; and 1,406 AXN identifier URLs carrying both rel=canonical to another page and a zero-second meta refresh, i.e. listed in a sitemap and engineered not to be indexed. Remediation shipped the same day (alexanarch commits b738d5fa, c3b73506, b3e3ae40): articleBody and encoding on 1,406 record pages, sameAs to severed DOIs on 986, frontmatter stripped, AXN republished as independent DefinedTerm entities in a DefinedTermSet, subjectOf reception back-links on 231 deposits, llms.txt, and the capture-deposit link map. Address count at capture 1,964; after rebuild 2,009, of which 101 now carry deposit_links. Re-running this query after re-crawl gives a post-intervention measurement against a documented cause — the registry's first controlled before/after on its own subject.",
+   "transcript": "Semantic addresses in Alexanarch are canonical query paths used to retrieve terms and track observations from a composition layer. They consist of nearly 2,000 tracked queries categorized into observation classes like observed, subjunctive, unrated, and verified non-address.Address Structure and ClassesCanonical Query: The precise text string or search prompt posed to retrieval layers like AI overviews.Observation Status: Tracks whether a query is actively retrievable, catalogued but untested, or unretrievable.Entity Bridge: Connects unique target references directly to the underlying lexical database.Access and DatasetsData Repository: Maintained via structured JSON logs under the Alexanarch Datasets directory.Live Reference: Managed alongside repository identifiers and provenance systems at Alexanarch Semantic Addresses.If you'd like, let me know:Are you looking for a specific query string or ID?Do you want to explore the cryptographic identifier (AXN) rules?I can pull the exact data you need.Semantic Addresses - AlexanarchSemantic Addresses — Alexanarch. Alexanarch Browse Wiki Graph Lexical Citations Observatory Captures Book Resolve Addresses Datasets Principles Identifiers Depo...www.alexanarch.orgDatasets - Alexanarchdata/semantic-addresses.json 1.28 MB · 1,964 addresses. Query addresses — canonical queries posed to the composition layer (AI Overview, Google Search) with the...www.alexanarch.orgSemantic Addresses - AlexanarchSemantic Addresses. 1,964 canonical queries — the addresses through which Alexanarch terms could be retrieved from the composition layer (Google AI Overview, AI...www.alexanarch.org",
+   "transcript_class": "CAPTURE-TIME VERBATIM RECORD — raw paste",
+   "transcript_complete": "as pasted; no footer, so the tail cannot be proven whole. Source strip intact.",
+   "transcript_read": "READ IN FULL 2026-08-12",
+   "cite_list": [
+    {
+     "n": 1,
+     "site": "www.alexanarch.org",
+     "rel": "archive_controlled",
+     "title": "Semantic Addresses — Alexanarch",
+     "snip": "Alexanarch · Browse Wiki Graph Lexical Citations Observatory Captures Book Resolve Addresses Datasets Principles Identifiers Depo[sit]…",
+     "url": null,
+     "note": "The snippet is the NAVIGATION BAR — every surface of the archive listed as if it were prose."
+    },
+    {
+     "n": 2,
+     "site": "www.alexanarch.org",
+     "rel": "archive_controlled",
+     "title": "Datasets — Alexanarch",
+     "snip": "data/semantic-addresses.json 1.28 MB · 1,964 ADDRESSES. Query addresses — CANONICAL QUERIES POSED TO THE COMPOSITION LAYER (AI Overview, Google Search)…",
+     "url": null,
+     "note": null
+    },
+    {
+     "n": 3,
+     "site": "www.alexanarch.org",
+     "rel": "archive_controlled",
+     "title": "Semantic Addresses — Alexanarch",
+     "snip": "1,964 canonical queries — THE ADDRESSES THROUGH WHICH ALEXANARCH TERMS COULD BE RETRIEVED FROM THE COMPOSITION LAYER (Google AI Overview, AI[ Mode])…",
+     "url": null,
+     "note": null
+    }
+   ],
+   "collisions": null,
+   "oq": null,
+   "imgs": [],
+   "defects": null,
+   "rounds": null,
+   "rerun": "https://www.google.com/search?q=semantic+address+alexanarch&udm=50",
+   "q": "semantic address alexanarch",
+   "s": "Captures",
+   "addr_id": "ADDR-c97d217be610",
+   "obs_id": "OBS-5e33a80bc129",
+   "q_kind": null,
+   "series": null,
+   "img_urls": [],
+   "surface_basis": "Google AI Overview BY EXCLUSION, operator attestation: AI Mode was avoided after June. An expanded Overview presented as AI Mode chrome and was recorded as the surface.",
+   "cite": "https://www.alexanarch.org/captures/semantic-address-alexanarch-framework-adoption-20260725/",
+   "citable_unit": "observation — one surface, one address, one date"
+  }
+ ],
+ "n_observations": 1,
+ "dates": [
+  "2026-07-25"
+ ],
+ "surfaces": [
+  "Google AI Overview"
+ ],
+ "other_slugs": null,
+ "links": [
+  {
+   "url": "https://www.alexanarch.org/captures/semantic-address-alexanarch-framework-adoption-20260725/",
+   "authority": "canonical",
+   "note": "the capture's own record page; cite this form"
+  },
+  {
+   "url": "https://www.alexanarch.org/captures/#semantic-address-alexanarch-framework-adoption-20260725",
+   "authority": "gallery",
+   "note": "the canonical gallery, anchored by slug"
+  },
+  {
+   "url": "https://www.godkinggoogle.com/captures/#semantic-address-alexanarch-framework-adoption-20260725",
+   "authority": "mirror",
+   "note": "a window that renders from the archive's registry; may lag a deploy"
+  },
+  {
+   "url": "https://www.leesharks.com/captures/#semantic-address-alexanarch-framework-adoption-20260725",
+   "authority": "mirror",
+   "note": "a window that renders from the archive's registry; may lag a deploy"
+  },
+  {
+   "url": "https://www.machinemediation.org/captures/#semantic-address-alexanarch-framework-adoption-20260725",
+   "authority": "mirror",
+   "note": "a window that renders from the archive's registry; may lag a deploy"
+  }
+ ],
+ "cite": "https://www.alexanarch.org/captures/semantic-address-alexanarch-framework-adoption-20260725/",
+ "d_full": "THE COMPOSITION LAYER CITES THE ADDRESS SET BUILT TO QUERY IT. 1,964 canonical queries, published as a dataset with a file size, retrieved by the system they address.",
+ "d_truncated": false,
+ "rerun_alt": {
+  "q": "\"semantic address alexanarch\"",
+  "label": "exact match",
+  "why": "This address was captured UNQUOTED. Running it quoted tests the same string against the exact-phrase basin."
+ },
+ "transcript_raw": null,
+ "img_urls": [],
+ "surface_basis": "Google AI Overview BY EXCLUSION, operator attestation: AI Mode was avoided after June. An expanded Overview presented as AI Mode chrome and was recorded as the surface.",
+ "sf": "Google AI Mode. Composed a structured account of the semantic-address system under two headings (Address Structure and Classes; Access and Datasets) with four defined terms, then offered two follow-ups ('a specific query string or ID', 'the cryptographic identifier (AXN) rules'). All three grounding sources are the archive's own surfaces: /addresses/ (twice, as 'Semantic Addresses — Alexanarch') and /datasets/ (snippet: 'data/semantic-addresses.json 1.28 MB · 1,964 addresses'). No third-party source appears anywhere in the composition.",
+ "citable_unit": "address — the semantic address across all its surfaces and dates",
+ "findings": [],
+ "record_url": "https://www.alexanarch.org/captures/semantic-address-alexanarch-framework-adoption-20260725/"
+}

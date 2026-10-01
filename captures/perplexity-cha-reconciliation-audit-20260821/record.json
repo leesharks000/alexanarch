@@ -1,0 +1,89 @@
+{
+ "slug": "perplexity-cha-reconciliation-audit-20260821",
+ "date": "2026-08-21",
+ "surface": "Perplexity (agentic)",
+ "auth": "unknown; querent's own account",
+ "ev": "agent run",
+ "mt": "CAPTURE",
+ "s": "Architecture",
+ "q": "what is the crimson hexagonal archive?",
+ "q_kind": "natural-language question, unprimed — the surface autonomously escalated to a reconciliation audit",
+ "turns": 2,
+ "cites": 0,
+ "transcript": "[QUERENT] what is the crimson hexagonal archive?\n\n[AGENT — TOOL TRACE, as reported by the surface]\nCompleted 41 steps.\nLoading skill opticodds → judged irrelevant and set aside.\nChecking workspace contents. Searching for the Crimson Hexagonal Archive and Sovereign Asset Registry.\nRunning advisor. Plan: discover the GitHub repo + registry JSON, scan files, reconcile programmatically, produce report + appendix.\nResolving the registry JSON URL across two candidate repos.\nFetching the downloads manifest and the GitHub git tree (recursive).\nManifest content truncated at 200KB by the fetch wrapper → re-downloaded directly via curl.\nWriting audit/reconcile.py. Running reconciliation. Fixing a function-defined-after-use error. Re-running.\nGenerating per-file appendix (CSV + JSON). Writing the audit report.\nRunning advisor on the deliverables → applying returned fixes.\nRegenerating appendices and verifying the JSON summary.\n\n[AGENT — FINAL REPORT]\nAudit complete. I scanned all 999 GitHub-hosted deposit files in the leesharks000/semantic-economy repo and reconciled them against the 871-asset Sovereign Asset Registry, then generated a structured report plus a per-file appendix.\n\nKey findings\n\nMigration integrity: confirmed. All 999 deposit files are present in the GitHub repository tree (0 missing), totaling 132.99 MB — matching the downloads page's \"999 files, 133 MB\" claim. 958 of 999 files carry a Sovereign Asset Registry ID (MM-CHA-nnnn), and every one of those 958 resolves to a live registry asset — zero dangling references. The 41 files without a registry ID are ancillary (LICENSE, AUTHOR, protocol stubs), as expected.\n\nContent-type mapping: .md / .pdf / .docx / .jsx plus .png/.json/.html/.m4a/.gz/.txt/.js/.csv/.zip/.cff/.svg. The four named types cover 968 of 999 files (96.9%).\n\nVerification status: 881 RECONCILED (exact size match), 77 SIZE_MISMATCH, 41 NO_REGISTRY_ID. The registry-ID resolution rate is 95.9% (958/999); the page's \"97% reconciled\" was not exactly reproduced, likely due to rounding or the 41 ancillary files.\n\nThree findings worth your attention:\n\n77 files show size drift — the live GitHub blob is larger than the manifest's recorded size in every sampled case. Likely post-snapshot commits or line-ending normalization. Not content loss (all files exist and their registry IDs resolve), but the manifest snapshot is stale for these.\n\nOnly 452 of 871 registry assets are referenced by the GitHub files; 419 are recovered via blog mirrors / Alexanarch deposits instead — consistent with the registry being the broader recovery index.\n\nRegistry body-status labels (truncated 442, severely_truncated 362, partial 120, complete 34) propagate correctly to matched files, confirming linkage.\n\nDeliverables shared: audit report (Markdown) with methodology, integrity checklist, and conclusions; per-file CSV appendix (999 rows: filename, content type, manifest size, live GitHub size, blob SHA, registry ID, body status, Zenodo status, mapping types, verification status); summary JSON with totals and anomaly lists.\n\nOne actionable recommendation: refresh the manifest's recorded sizes for the 77 drifted files so the downloads page's size display stays accurate.\n",
+ "transcript_class": "AGENT RUN RECORD, NOT A DIALOGUE. One querent turn and one composite emission. The tool trace is the surface's own step narration as displayed, condensed to one line per step; the final report is verbatim. This is not a Q&A transcript and must not be read as one.",
+ "transcript_complete": "PARTIAL BY KIND — the querent turn and the final report are complete; the 41-step tool trace is the surface's narration as shown, not raw logs. The three generated deliverables (report, CSV, JSON) are cited and not reproduced.",
+ "transcript_read": "READ IN FULL 2026-08-21",
+ "per": 0.0,
+ "per_v": {
+  "author": true,
+  "inst": true,
+  "id": true,
+  "src": true
+ },
+ "sf": "Perplexity agentic mode, 41 steps, code execution, self-directed re-fetch after truncation",
+ "citable_unit": "run — the audit is the unit; no single emission carries it",
+ "operator_disclosure": "No upload, no system instruction. The surface fetched all data itself from public endpoints.",
+ "model_attribution": "UNDECLARED — vendor surface is Perplexity; model not stated",
+ "reading": "An AUDIT event rather than a composition event, and the first in the registry. Asked what the archive is, the surface fetched three datasets, wrote reconciliation code, ran it, caught its own 200KB fetch truncation and re-fetched via curl, consulted a reviewer, applied fixes, and produced a report with a per-file appendix. VERIFIED EXACT against the live data: 999 files, 132.99 MB, 958 carrying registry IDs, 871 registry assets. AND IT DECLINED TO REPRODUCE THE SITE'S OWN FIGURE: with the downloads page's '97% reconciled' in front of it, it reported its own computation of 95.9% and flagged the discrepancy rather than matching the number it was reading. That is the finding — a layer measuring the archive and disagreeing with it.",
+ "analysis": "One error, of a kind the batch specifies. The body_status distribution (truncated 442, severely_truncated 362, partial 120, complete 34) does not match the registry, which holds severely_truncated 341, truncated 336, partial 120, complete 70, unknown 4. The reported totals sum to 958 — the count of FILES carrying registry IDs, not the 871 ASSETS. It counted status per matched file and reported it as the registry distribution: A CORRECT COUNT AT THE WRONG UNIT, presented as a fact about a different object. This is the Atomic Token Rule failure (Erasure Skew v3 §3) occurring in an auditing layer. It also understates 'complete' by half. Separately, its 77 size-drift finding is REAL and was actionable — but undercounted: its GitHub tree was truncated at 1,000 blobs where the full tree holds 1,440. The true figure is 84, since refreshed.",
+ "defects": [],
+ "links": [
+  {
+   "url": "https://www.alexanarch.org/captures/perplexity-cha-reconciliation-audit-20260821/",
+   "authority": "canonical",
+   "note": "the capture's own record page; cite this form"
+  },
+  {
+   "url": "https://www.alexanarch.org/captures/#perplexity-cha-reconciliation-audit-20260821",
+   "authority": "gallery",
+   "note": "the canonical gallery, anchored by slug"
+  },
+  {
+   "url": "https://www.godkinggoogle.com/captures/#perplexity-cha-reconciliation-audit-20260821",
+   "authority": "mirror",
+   "note": "a window that renders from the archive's registry; may lag a deploy"
+  },
+  {
+   "url": "https://www.leesharks.com/captures/#perplexity-cha-reconciliation-audit-20260821",
+   "authority": "mirror",
+   "note": "a window that renders from the archive's registry; may lag a deploy"
+  },
+  {
+   "url": "https://www.machinemediation.org/captures/#perplexity-cha-reconciliation-audit-20260821",
+   "authority": "mirror",
+   "note": "a window that renders from the archive's registry; may lag a deploy"
+  }
+ ],
+ "imgs": [],
+ "img_urls": [],
+ "addr_id": "ADDR-6e00d957c3df",
+ "obs_id": "OBS-18b7bf575546",
+ "d": "AN AUDIT, NOT A DESCRIPTION — asked what the archive is, the surface fetched three datasets, wrote reconciliation code, and disagreed with the site's own published figure. Counts verified exact. One error: a correct count at the wrong unit.",
+ "cite": "https://www.alexanarch.org/captures/perplexity-cha-reconciliation-audit-20260821/",
+ "findings": [
+  "body_status distribution reported at the file unit and presented as the asset-level registry distribution. Sums to 958, not 871.",
+  "'complete' understated at 34 against an actual 70.",
+  "Size-drift count of 77 undercounted; the GitHub tree API truncated at 1,000 blobs against 1,440 actual. True figure 84.",
+  "The 452/871 figure describes GitHub-file coverage, not recovery coverage; a reader could take it as a recovery rate."
+ ],
+ "notes": {
+  "priming_boundary": {
+   "unprimed": "the single querent turn. No instruction to audit, reconcile, or verify anything.",
+   "_rule": "The audit was not requested. The surface chose reconciliation as its response to an identity question."
+  },
+  "abn": {
+   "score": 0,
+   "note": "Nothing is reported nonexistent. The surface retrieved everything it needed."
+  }
+ },
+ "surfaces": [
+  "Perplexity (agentic)"
+ ],
+ "dates": [
+  "2026-08-21"
+ ],
+ "n_observations": 1,
+ "observations": [],
+ "record_url": "https://www.alexanarch.org/captures/perplexity-cha-reconciliation-audit-20260821/"
+}

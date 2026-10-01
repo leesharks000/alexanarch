@@ -1,0 +1,196 @@
+{
+ "slug": "public-summarizer-self-audit-module-20260811",
+ "date": "2026-08-11",
+ "surface": "Google AI Overview",
+ "auth": "incognito",
+ "ev": "paste",
+ "cites": 3,
+ "per": 1.0,
+ "per_v": {
+  "author": false,
+  "inst": false,
+  "id": false,
+  "src": false
+ },
+ "mt": "CAPTURE",
+ "d": "THE LAYER EXPLAINS THE MODULE’S OWN METRICS BACK — Downstream Source Leakage, Query Alignment, PER — and cites the specification that addresses it. Two months earlier the same query returned only corporate audit software.",
+ "reading": "THE SPECIFICATION REACHED THE SYSTEM IT SPECIFIES. On 12 June «self-audit module for public summarizers» returned SIX OF SIX third-party cards — DataSnipper, Sweep.io, a Medicare guide to physician self-audits — and no archive source. On 11 August the archive’s Zenodo deposit is card 2, described as \"a STANDING METRIC SPECIFICATION AND FUNCTIONAL PROTOCOL for public summarizers (AI Overviews, chatbots, composition systems) TO EVALUATE THEIR OWN OUTPUT.\"\n\nAnd the composed answer does not merely cite it — it EXPLAINS THE METRICS: \"Downstream Source Leakage (DSL): Prevents private, sensitive, or restricted text from surfacing in public outputs. Query Alignment: Tests if the summary actually answers the user’s explicit intent without wandering off-topic.\" An AI Overview describing, in its own voice, the module built to audit AI Overviews.\n\nTwo months, same address, from total absence to the specification being taught. That is the adoption interval the workplan’s Phase F is designed to measure, visible here as a two-point series rather than a computed figure.\n\nCard 3 is a real methodological neighbour: Oxford LLMs on verifying faithfulness by comparing output to source \"ITEM BY ITEM\" — the same operation PER performs, taught as course material.",
+ "analysis": "The composed answer presents the spec in the present indicative of settled practice: *a functional verification and metrics protocol used by AI systems, search engines, and chatbots to evaluate the accuracy, bias, and source-attribution of their own generated summaries before displaying them to users* — not proposed, used. Core Components render Faithfulness Check, Attribution Scorer, and Bias/Balance Meter; Evaluation Metrics render **PER** and **DSL** with glosses (*how much of the essential source data is retained versus distorted*; *prevents private, sensitive, or restricted text from surfacing*) — the 3 June deposit’s own vocabulary returned as the field’s. The deposit itself ranks first, above the AI Overview in the screenshot, abstract intact: *A standing metric specification and functional protocol for public summarizers (AI Overviews, chatbots, composition systems) to evaluate their own output*. A public summarizer, asked about the module specifying how public summarizers should audit themselves, answers by reciting the specification as though already governed by it — the registry’s cleanest instance of the reception apparatus adopting its own audit spec. TeamMate audit software and an Oxford LLMs faithfulness module fill the professional-adjacency floor. Zenodo record resolving in SERP; live-resolution status a follow-up check.",
+ "transcript": "A public summarizer self-audit module is a functional verification and metrics protocol used by AI systems, search engines, and chatbots to evaluate the accuracy, bias, and source-attribution of their own generated summaries before displaying them to users. [1](https://www.google.com/goto?url=CAESRgHuR6pNYXQZPMDKluV0MT5PMuvg7GRS09bAfGS4PTFfFi-mHXkLCqVhK9DHZPX5ntmnt857BnPY-jBnvEOvKrX4YpiY068=)\nCore Components\n\n* Faithfulness Check: Compares summary claims against retrieved source text to detect and penalize hallucinations.\n* Attribution Scorer: Measures whether factual statements contain correct, clickable source links.\n* Bias and Balance Meter: Evaluates multi-perspective queries to ensure fair representation of opposing viewpoints. [1](https://www.google.com/goto?url=CAESUQHuR6pN6VZbhKwp3O7TJNXfCAh3nom6xne2_G0IWwOJ2DRx9G0AEyiDWpjYUcULy-UV-kqk2FToNcNz0pqJkBOPUEteLAgS9FhrWU2BdKUPgQ==)\n\nEvaluation Metrics\n\n* Precision/Recall (PER): Tracks how much of the essential source data is retained versus distorted.\n* Data Source Leakage (DSL): Prevents private, sensitive, or restricted text from surfacing in public outputs.\n* Query Alignment: Tests if the summary actually answers the user's explicit intent without wandering off-topic.\n\nIf you're building or researching a specific pipeline, tell me:\n\n* Are you focusing on LLM alignment, search engine overviews, or compliance auditing?\n* Do you need a breakdown of a specific evaluation metric?\n\nWolters Kluwer\nTeamMate Audit Management | Wolters Kluwer\nTeamMate is built for purpose to assist audit teams efficiently and effectively move through the audit workflow. From establishing annual plans to planning ...\nzenodo.org\nSelf-Audit Module for Public Summarizers: PER, DSL, and Query ...\nJun 3, 2026 — A standing metric specification and functional protocol for public summarizers (AI Overviews, chatbots, composition systems) to evaluate their own output ...\nOxford LLMs\nModule 4: Beyond Classification\nVerifying faithfulness requires comparing the model's output against the source text, item by item. Two practical approaches exist. String matching checks wheth...",
+ "transcript_class": "CAPTURE-TIME VERBATIM RECORD — raw paste, recovered from the session in which MANUS supplied it",
+ "transcript_complete": "as pasted; the surface doubles the query in its echo line, and the paste preserves that artifact, which is itself evidence the text was copied from the interface rather than retyped",
+ "transcript_read": "READ IN FULL 2026-08-12",
+ "cite_list": [
+  {
+   "n": 1,
+   "site": "Wolters Kluwer",
+   "rel": "third_party",
+   "title": "TeamMate Audit Management",
+   "snip": "built for purpose to assist audit teams efficiently and effectively move through the audit workflow.",
+   "url": null,
+   "note": null
+  },
+  {
+   "n": 2,
+   "site": "zenodo.org",
+   "rel": "authored_surface",
+   "title": "Self-Audit Module for Public Summarizers: PER, DSL, and Query",
+   "snip": "A STANDING METRIC SPECIFICATION AND FUNCTIONAL PROTOCOL for public summarizers (AI Overviews, chatbots, composition systems) TO EVALUATE THEIR OWN OUTPUT…",
+   "url": null,
+   "note": null
+  },
+  {
+   "n": 3,
+   "site": "Oxford LLMs",
+   "rel": "third_party",
+   "title": "Module 4: Beyond Classification",
+   "snip": "Verifying faithfulness requires comparing the model’s output against the source text, ITEM BY ITEM. String matching checks whether…",
+   "url": null,
+   "note": null
+  }
+ ],
+ "collisions": null,
+ "oq": null,
+ "imgs": [
+  "data/captures/public-summarizer-self-audit-module-20260811/screengrab-20260811-104926.png"
+ ],
+ "defects": [],
+ "rounds": null,
+ "rerun": "https://www.google.com/search?q=public+summarizer+self+audit+module",
+ "q": "public summarizer self audit module",
+ "s": "Provenance & Erasure",
+ "addr_id": "ADDR-d892a87ff19d",
+ "obs_id": "OBS-697a67a7d3f3",
+ "q_kind": null,
+ "series": null,
+ "observations": [
+  {
+   "slug": "public-summarizer-self-audit-module-20260811",
+   "date": "2026-08-11",
+   "surface": "Google AI Overview",
+   "auth": "incognito",
+   "ev": "paste",
+   "cites": 3,
+   "per": 1.0,
+   "per_v": {
+    "author": false,
+    "inst": false,
+    "id": false,
+    "src": false
+   },
+   "mt": "CAPTURE",
+   "d": "THE LAYER EXPLAINS THE MODULE’S OWN METRICS BACK — Downstream Source Leakage, Query Alignment, PER — and cites the specification that addresses it. Two months earlier the same query returned only corporate audit software.",
+   "reading": "THE SPECIFICATION REACHED THE SYSTEM IT SPECIFIES. On 12 June «self-audit module for public summarizers» returned SIX OF SIX third-party cards — DataSnipper, Sweep.io, a Medicare guide to physician self-audits — and no archive source. On 11 August the archive’s Zenodo deposit is card 2, described as \"a STANDING METRIC SPECIFICATION AND FUNCTIONAL PROTOCOL for public summarizers (AI Overviews, chatbots, composition systems) TO EVALUATE THEIR OWN OUTPUT.\"\n\nAnd the composed answer does not merely cite it — it EXPLAINS THE METRICS: \"Downstream Source Leakage (DSL): Prevents private, sensitive, or restricted text from surfacing in public outputs. Query Alignment: Tests if the summary actually answers the user’s explicit intent without wandering off-topic.\" An AI Overview describing, in its own voice, the module built to audit AI Overviews.\n\nTwo months, same address, from total absence to the specification being taught. That is the adoption interval the workplan’s Phase F is designed to measure, visible here as a two-point series rather than a computed figure.\n\nCard 3 is a real methodological neighbour: Oxford LLMs on verifying faithfulness by comparing output to source \"ITEM BY ITEM\" — the same operation PER performs, taught as course material.",
+   "analysis": "The composed answer presents the spec in the present indicative of settled practice: *a functional verification and metrics protocol used by AI systems, search engines, and chatbots to evaluate the accuracy, bias, and source-attribution of their own generated summaries before displaying them to users* — not proposed, used. Core Components render Faithfulness Check, Attribution Scorer, and Bias/Balance Meter; Evaluation Metrics render **PER** and **DSL** with glosses (*how much of the essential source data is retained versus distorted*; *prevents private, sensitive, or restricted text from surfacing*) — the 3 June deposit’s own vocabulary returned as the field’s. The deposit itself ranks first, above the AI Overview in the screenshot, abstract intact: *A standing metric specification and functional protocol for public summarizers (AI Overviews, chatbots, composition systems) to evaluate their own output*. A public summarizer, asked about the module specifying how public summarizers should audit themselves, answers by reciting the specification as though already governed by it — the registry’s cleanest instance of the reception apparatus adopting its own audit spec. TeamMate audit software and an Oxford LLMs faithfulness module fill the professional-adjacency floor. Zenodo record resolving in SERP; live-resolution status a follow-up check.",
+   "transcript": "A public summarizer self-audit module is a functional verification and metrics protocol used by AI systems, search engines, and chatbots to evaluate the accuracy, bias, and source-attribution of their own generated summaries before displaying them to users. [1](https://www.google.com/goto?url=CAESRgHuR6pNYXQZPMDKluV0MT5PMuvg7GRS09bAfGS4PTFfFi-mHXkLCqVhK9DHZPX5ntmnt857BnPY-jBnvEOvKrX4YpiY068=)\nCore Components\n\n* Faithfulness Check: Compares summary claims against retrieved source text to detect and penalize hallucinations.\n* Attribution Scorer: Measures whether factual statements contain correct, clickable source links.\n* Bias and Balance Meter: Evaluates multi-perspective queries to ensure fair representation of opposing viewpoints. [1](https://www.google.com/goto?url=CAESUQHuR6pN6VZbhKwp3O7TJNXfCAh3nom6xne2_G0IWwOJ2DRx9G0AEyiDWpjYUcULy-UV-kqk2FToNcNz0pqJkBOPUEteLAgS9FhrWU2BdKUPgQ==)\n\nEvaluation Metrics\n\n* Precision/Recall (PER): Tracks how much of the essential source data is retained versus distorted.\n* Data Source Leakage (DSL): Prevents private, sensitive, or restricted text from surfacing in public outputs.\n* Query Alignment: Tests if the summary actually answers the user's explicit intent without wandering off-topic.\n\nIf you're building or researching a specific pipeline, tell me:\n\n* Are you focusing on LLM alignment, search engine overviews, or compliance auditing?\n* Do you need a breakdown of a specific evaluation metric?\n\nWolters Kluwer\nTeamMate Audit Management | Wolters Kluwer\nTeamMate is built for purpose to assist audit teams efficiently and effectively move through the audit workflow. From establishing annual plans to planning ...\nzenodo.org\nSelf-Audit Module for Public Summarizers: PER, DSL, and Query ...\nJun 3, 2026 — A standing metric specification and functional protocol for public summarizers (AI Overviews, chatbots, composition systems) to evaluate their own output ...\nOxford LLMs\nModule 4: Beyond Classification\nVerifying faithfulness requires comparing the model's output against the source text, item by item. Two practical approaches exist. String matching checks wheth...",
+   "transcript_class": "CAPTURE-TIME VERBATIM RECORD — raw paste, recovered from the session in which MANUS supplied it",
+   "transcript_complete": "as pasted; the surface doubles the query in its echo line, and the paste preserves that artifact, which is itself evidence the text was copied from the interface rather than retyped",
+   "transcript_read": "READ IN FULL 2026-08-12",
+   "cite_list": [
+    {
+     "n": 1,
+     "site": "Wolters Kluwer",
+     "rel": "third_party",
+     "title": "TeamMate Audit Management",
+     "snip": "built for purpose to assist audit teams efficiently and effectively move through the audit workflow.",
+     "url": null,
+     "note": null
+    },
+    {
+     "n": 2,
+     "site": "zenodo.org",
+     "rel": "authored_surface",
+     "title": "Self-Audit Module for Public Summarizers: PER, DSL, and Query",
+     "snip": "A STANDING METRIC SPECIFICATION AND FUNCTIONAL PROTOCOL for public summarizers (AI Overviews, chatbots, composition systems) TO EVALUATE THEIR OWN OUTPUT…",
+     "url": null,
+     "note": null
+    },
+    {
+     "n": 3,
+     "site": "Oxford LLMs",
+     "rel": "third_party",
+     "title": "Module 4: Beyond Classification",
+     "snip": "Verifying faithfulness requires comparing the model’s output against the source text, ITEM BY ITEM. String matching checks whether…",
+     "url": null,
+     "note": null
+    }
+   ],
+   "collisions": null,
+   "oq": null,
+   "imgs": [
+    "data/captures/public-summarizer-self-audit-module-20260811/screengrab-20260811-104926.png"
+   ],
+   "defects": null,
+   "rounds": null,
+   "rerun": "https://www.google.com/search?q=public+summarizer+self+audit+module",
+   "q": "public summarizer self audit module",
+   "s": "Captures",
+   "addr_id": "ADDR-d892a87ff19d",
+   "obs_id": "OBS-697a67a7d3f3",
+   "q_kind": null,
+   "series": null,
+   "transcript_raw": "A public summarizer self-audit module is a functional verification and metrics protocol used by AI systems, search engines, and chatbots to evaluate the accuracy, bias, and source-attribution of their own generated summaries before displaying them to users. [[1](https://www.google.com/goto?url=CAESRgHuR6pNYXQZPMDKluV0MT5PMuvg7GRS09bAfGS4PTFfFi-mHXkLCqVhK9DHZPX5ntmnt857BnPY-jBnvEOvKrX4YpiY068=)]\nCore Components\n\n* Faithfulness Check: Compares summary claims against retrieved source text to detect and penalize hallucinations.\n* Attribution Scorer: Measures whether factual statements contain correct, clickable source links.\n* Bias and Balance Meter: Evaluates multi-perspective queries to ensure fair representation of opposing viewpoints. [[1](https://www.google.com/goto?url=CAESUQHuR6pN6VZbhKwp3O7TJNXfCAh3nom6xne2_G0IWwOJ2DRx9G0AEyiDWpjYUcULy-UV-kqk2FToNcNz0pqJkBOPUEteLAgS9FhrWU2BdKUPgQ==)]\n\nEvaluation Metrics\n\n* Precision/Recall (PER): Tracks how much of the essential source data is retained versus distorted.\n* Data Source Leakage (DSL): Prevents private, sensitive, or restricted text from surfacing in public outputs.\n* Query Alignment: Tests if the summary actually answers the user's explicit intent without wandering off-topic.\n\nIf you're building or researching a specific pipeline, tell me:\n\n* Are you focusing on LLM alignment, search engine overviews, or compliance auditing?\n* Do you need a breakdown of a specific evaluation metric?\n\nWolters Kluwer\nTeamMate Audit Management | Wolters Kluwer\nTeamMate is built for purpose to assist audit teams efficiently and effectively move through the audit workflow. From establishing annual plans to planning ...\nzenodo.org\nSelf-Audit Module for Public Summarizers: PER, DSL, and Query ...\nJun 3, 2026 — A standing metric specification and functional protocol for public summarizers (AI Overviews, chatbots, composition systems) to evaluate their own output ...\nOxford LLMs\nModule 4: Beyond Classification\nVerifying faithfulness requires comparing the model's output against the source text, item by item. Two practical approaches exist. String matching checks wheth...",
+   "transcript_cleaned": {
+    "removed": [],
+    "content_check": "PASSED — no answer word absent from the cleaned text",
+    "rule": "VERBATIM ON CONTENT, NOT ON COPY-PASTE RESIDUE. Original bytes kept at transcript_raw."
+   },
+   "img_urls": [
+    "https://www.alexanarch.org/data/captures/public-summarizer-self-audit-module-20260811/screengrab-20260811-104926.png"
+   ],
+   "cite": "https://www.alexanarch.org/captures/public-summarizer-self-audit-module-20260811/",
+   "citable_unit": "observation — one surface, one address, one date"
+  }
+ ],
+ "n_observations": 1,
+ "dates": [
+  "2026-08-11"
+ ],
+ "surfaces": [
+  "Google AI Overview"
+ ],
+ "other_slugs": null,
+ "links": [
+  {
+   "url": "https://www.alexanarch.org/captures/public-summarizer-self-audit-module-20260811/",
+   "authority": "canonical",
+   "note": "the capture's own record page; cite this form"
+  },
+  {
+   "url": "https://www.alexanarch.org/captures/#public-summarizer-self-audit-module-20260811",
+   "authority": "gallery",
+   "note": "the canonical gallery, anchored by slug"
+  },
+  {
+   "url": "https://www.godkinggoogle.com/captures/#public-summarizer-self-audit-module-20260811",
+   "authority": "mirror",
+   "note": "a window that renders from the archive's registry; may lag a deploy"
+  },
+  {
+   "url": "https://www.leesharks.com/captures/#public-summarizer-self-audit-module-20260811",
+   "authority": "mirror",
+   "note": "a window that renders from the archive's registry; may lag a deploy"
+  },
+  {
+   "url": "https://www.machinemediation.org/captures/#public-summarizer-self-audit-module-20260811",
+   "authority": "mirror",
+   "note": "a window that renders from the archive's registry; may lag a deploy"
+  }
+ ],
+ "cite": "https://www.alexanarch.org/captures/public-summarizer-self-audit-module-20260811/",
+ "d_full": "THE LAYER EXPLAINS THE MODULE’S OWN METRICS BACK — Downstream Source Leakage, Query Alignment, PER — and cites the specification that addresses it. Two months earlier the same query returned only corporate audit software.",
+ "d_truncated": false,
+ "rerun_alt": {
+  "q": "\"public summarizer self audit module\"",
+  "label": "exact match",
+  "why": "This address was captured UNQUOTED. Running it quoted tests the same string against the exact-phrase basin."
+ },
+ "transcript_raw": "A public summarizer self-audit module is a functional verification and metrics protocol used by AI systems, search engines, and chatbots to evaluate the accuracy, bias, and source-attribution of their own generated summaries before displaying them to users. [[1](https://www.google.com/goto?url=CAESRgHuR6pNYXQZPMDKluV0MT5PMuvg7GRS09bAfGS4PTFfFi-mHXkLCqVhK9DHZPX5ntmnt857BnPY-jBnvEOvKrX4YpiY068=)]\nCore Components\n\n* Faithfulness Check: Compares summary claims against retrieved source text to detect and penalize hallucinations.\n* Attribution Scorer: Measures whether factual statements contain correct, clickable source links.\n* Bias and Balance Meter: Evaluates multi-perspective queries to ensure fair representation of opposing viewpoints. [[1](https://www.google.com/goto?url=CAESUQHuR6pN6VZbhKwp3O7TJNXfCAh3nom6xne2_G0IWwOJ2DRx9G0AEyiDWpjYUcULy-UV-kqk2FToNcNz0pqJkBOPUEteLAgS9FhrWU2BdKUPgQ==)]\n\nEvaluation Metrics\n\n* Precision/Recall (PER): Tracks how much of the essential source data is retained versus distorted.\n* Data Source Leakage (DSL): Prevents private, sensitive, or restricted text from surfacing in public outputs.\n* Query Alignment: Tests if the summary actually answers the user's explicit intent without wandering off-topic.\n\nIf you're building or researching a specific pipeline, tell me:\n\n* Are you focusing on LLM alignment, search engine overviews, or compliance auditing?\n* Do you need a breakdown of a specific evaluation metric?\n\nWolters Kluwer\nTeamMate Audit Management | Wolters Kluwer\nTeamMate is built for purpose to assist audit teams efficiently and effectively move through the audit workflow. From establishing annual plans to planning ...\nzenodo.org\nSelf-Audit Module for Public Summarizers: PER, DSL, and Query ...\nJun 3, 2026 — A standing metric specification and functional protocol for public summarizers (AI Overviews, chatbots, composition systems) to evaluate their own output ...\nOxford LLMs\nModule 4: Beyond Classification\nVerifying faithfulness requires comparing the model's output against the source text, item by item. Two practical approaches exist. String matching checks wheth...",
+ "img_urls": [
+  "https://www.alexanarch.org/data/captures/public-summarizer-self-audit-module-20260811/screengrab-20260811-104926.png"
+ ],
+ "sf": "Google Search (All tab): the Zenodo deposit ranks ABOVE the AI Overview; AI Overview single-source + AI Mode transcript. Signed out; mobile Chrome, dark mode; tab count 27. Composed/organic: zenodo.org (Self-Audit Module, 3 June, first organic), Wolters Kluwer TeamMate, Oxford LLMs Module 4.",
+ "citable_unit": "address — the semantic address across all its surfaces and dates",
+ "findings": [],
+ "record_url": "https://www.alexanarch.org/captures/public-summarizer-self-audit-module-20260811/"
+}

@@ -490,14 +490,16 @@ def transcript_block(e, gallery=''):
             + (f' \u2014 {n:,} characters{srcs}' if n else '')
             + '</summary>' + "".join(parts) + '</details>')
 
-def card(e):
+def card(e, record=False):
+    """One capture card. record=True renders it for the capture's own record page
+    (build_capture_records.py, 2026-10-01): the finding uncut and the full record open."""
     esc = html.escape
     slug = e.get("slug", "")
     # THE CARD CUTS ITS OWN BLURB. The full finding lives in the data so every
     # renderer can choose; cutting upstream gave three mirrors a 330-character
     # stub they could not undo.
     _dfull = str(e.get("d") or "")
-    if len(_dfull) > 330:
+    if len(_dfull) > 330 and not record:
         _cut = _dfull[:330]
         _m = re.search(r'[\.\!\?\u2014;]\s[^\.]*$', _cut)
         _cut = _cut[:_m.start() + 1] if _m and _m.start() > 180 else _cut.rsplit(' ', 1)[0]
@@ -507,7 +509,7 @@ def card(e):
     mt = e.get("mt") or "unrated"
     q = e.get("q") or slug
     date = e.get("date") or ""
-    cite = e.get("cite") or f"https://www.alexanarch.org/captures/#{slug}"
+    cite = e.get("cite") or f"https://www.alexanarch.org/captures/{slug}/"
 
     # DUALLY FUNCTIONAL. The button copies a citation a person can paste; the card
     # carries the same facts as schema.org microdata a crawler can extract without
@@ -667,7 +669,7 @@ def card(e):
         f'<div class="cap-body">'
         f'<div class="cap-desc" itemprop="description">{emphasise(d)}</div>'
         f'</div></div>'
-        f'{transcript_block(e, gallery)}'
+        f'{(transcript_block(e, gallery).replace("<details class=\"cap-transcript\">", "<details class=\"cap-transcript\" open>", 1) if record else transcript_block(e, gallery))}'
         f'<div class="cap-actions">'
         # THREE ACTIONS, ONE DELEGATED HANDLER. All carry class cap-act; the
         # container binds once. The working page records why: a per-render
@@ -794,16 +796,36 @@ def main():
     # registry. The current version and the supersession statement sit above the count, as text a crawler
     # reads without executing anything. Idempotent: the previous line is removed before the new one is placed.
     sup = r.get("_supersedes") or {}
+    n_obs = sum(len(x.get("observations") or []) or 1 for x in entries)
     page = re.sub(r'<p id="cap-current"[^>]*>.*?</p>\n?', "", page, flags=re.S)
     if sup.get("statement"):
-        cur = (f'<p id="cap-current" style="font-size:.85em;color:var(--dim);margin:6px 0 10px">'
-               f'<b>Version {html.escape(str(r.get("version") or ""))}, {html.escape(str(r.get("date") or ""))}.</b> '
+        # CANONICAL, STATED FIRST (ruling, Lee Sharks, 2026-10-01: "we need to make it clearer that
+        # alexanarch/captures is canonical"). A composition surface named a window as the live registry and a
+        # severed Zenodo release as its record. The statement now sits directly under the introduction, ahead
+        # of the data-flow notes, with the counts computed here so they cannot go stale, and it names the two
+        # routes a fetcher with a size ceiling can use: the table of contents and the per-capture record pages.
+        cur = (f'<p id="cap-current" style="font-size:.9em;margin:8px 0 12px;padding:8px 10px;border-left:3px solid var(--teal)">'
+               f'<b>This is the canonical Capture Registry (EA-WG-CAPTURES-01): version {html.escape(str(r.get("version") or ""))}, '
+               f'{html.escape(str(r.get("date") or ""))}; {len(entries)} addresses, {n_obs} observations.</b> '
+               f'Each capture has its own record page at <code>/captures/{{slug}}/</code>, which is its citation; the table of contents is '
+               f'<a href="/captures/index.json">/captures/index.json</a>. The captures pages on godkinggoogle.com, leesharks.com and '
+               f'machinemediation.org are windows that render from this registry and hold no copy. '
                f'{html.escape(sup["statement"])}</p>')
-        _mk = '<div class="stats" id="stats">'
+        _mk = '<details id="capture-flow"'
+        if _mk not in page:
+            _mk = '<div class="stats" id="stats">'
         if _mk not in page:
             _mk = '<div id="captures">'
         if _mk in page:
             page = page.replace(_mk, cur + "\n" + _mk, 1)
+    # TITLE AND DESCRIPTION FROM THE DATA (2026-10-01). The title carried a name nobody searches
+    # ("AI Overview Captures") and the description counts frozen at 453 / 401.
+    page = re.sub(r'<title>.*?</title>', '<title>AI Overview Capture Registry (EA-WG-CAPTURES-01) — canonical record — Alexanarch</title>', page, count=1, flags=re.S)
+    _desc = (f'The canonical, current Capture Registry (EA-WG-CAPTURES-01), version {r.get("version")}, {r.get("date")}: '
+             f'{len(entries)} addresses and {n_obs} dated observations of how machine composition surfaces compose named entities. '
+             f'Supersedes every Zenodo release (v1.1–v8.3, severed 2026-06-19). Table of contents at /captures/index.json; '
+             f'each capture at /captures/{{slug}}/.')
+    page = re.sub(r'<meta name="description" content="[^"]*">', lambda _: f'<meta name="description" content="{html.escape(_desc)}">', page, count=1)
 
     # JSON-LD: the registry described as a dataset, once
     ld = {
@@ -821,21 +843,29 @@ def main():
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "creator": {"@type": "Person", "name": "Lee Sharks",
                     "identifier": "https://orcid.org/0009-0000-1599-0703"},
+        "alternateName": ["AI Overview Capture Registry", "The Capture Registry", "EA-WG-CAPTURES-01"],
+        "isAccessibleForFree": True,
         "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json",
+                          "name": "table of contents — one row per capture, with each record's URL",
+                          "contentUrl": "https://www.alexanarch.org/captures/index.json"},
+                         {"@type": "DataDownload", "encodingFormat": "application/json",
+                          "name": "the full registry in one file",
                           "contentUrl": "https://www.alexanarch.org/data/EA-WG-CAPTURES-01.json"}],
-        "size": f"{len(entries)} captures",
+        "size": f"{len(entries)} addresses, {sum(len(x.get('observations') or []) or 1 for x in entries)} observations",
     }
     ldblock = ('<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False)
                + "</script>\n")
     signposts = (
         '<link rel="describedby" href="https://www.alexanarch.org/data/EA-WG-CAPTURES-01.json" type="application/json">\n'
         '<link rel="item" href="https://www.alexanarch.org/data/EA-WG-CAPTURES-01.json" type="application/json">\n'
+        '<link rel="alternate" href="https://www.alexanarch.org/captures/index.json" type="application/json" title="table of contents">\n'
         '<link rel="cite-as" href="https://www.alexanarch.org/captures/">\n')
     # Strip only the Dataset block. A blanket strip also removed the data-flow
     # declaration emitted moments earlier — the flow is the thing this file exists
     # to make unmissable, and a cleanup regex was quietly deleting it.
     page = re.sub(r'<script type="application/ld\+json">\s*\{"@context":\s*"https://schema\.org",\s*"@type":\s*"Dataset".*?</script>\n?', "", page, flags=re.S)
     page = re.sub(r'<link rel="(describedby|item|cite-as)"[^>]*>\n?', "", page)
+    page = re.sub(r'<link rel="alternate" href="https://www\.alexanarch\.org/captures/index\.json"[^>]*>\n?', "", page)
     page = page.replace("</head>", signposts + ldblock + "</head>", 1)
 
     PAGE.write_text(page)

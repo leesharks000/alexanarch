@@ -58,6 +58,10 @@ STEPS = [
     # Both scripts are deterministic; unchanged addresses produce no diff.
     ("ADDR", [sys.executable, "scripts/build_semantic_addresses.py"]),
     ("PAGE", [sys.executable, "scripts/publish_semantic_addresses.py"]),
+    # 2026-10-01: RECS after PAGE (it reads the address layer's record_url to link each record to its address
+    # page). One page and one JSON file per capture, a table of contents and a sitemap: the record page is the
+    # citation (ruling, Lee Sharks, 2026-10-01), and every output stays far under the ~4 MiB fetch ceiling.
+    ("RECS", [sys.executable, "scripts/build_capture_records.py"]),
     ("SYNC", [sys.executable, "scripts/sync_capture_dataset.py"]),
     ("CITE", [sys.executable, "scripts/audit_capture_citability.py"]),
 ]

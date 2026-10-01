@@ -102,6 +102,10 @@ def main():
             "rebuilt from the files actually present, so it cannot declare a member the "
             "dataset does not hold."),
         "canonical_home": "https://www.alexanarch.org/captures/",
+        # 2026-10-01: the routes that stay under a fetcher's size ceiling (the full file here is ~12 MB)
+        "table_of_contents": "https://www.alexanarch.org/captures/index.json",
+        "record_form": "https://www.alexanarch.org/captures/{slug}/",
+        "record_json_form": "https://www.alexanarch.org/captures/{slug}/record.json",
         "source_of_truth": "alexanarch — data/EA-WG-CAPTURES-01.json (see the registry's _FLOW block)",
         "total_captures": total_captures,
         "generated_by": "scripts/sync_capture_dataset.py",
