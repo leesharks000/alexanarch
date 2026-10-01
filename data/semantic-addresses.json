@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-01T16:43:28Z",
+  "regenerated_at": "2026-10-01T17:31:51Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "c651d7ae8f69bdb03b2a1b59f6967ee6e441b2309f297e53dccc5a3373a16812",
+    "mm-main-capture": "599cb5aa37014ba48e68e610f32c91bb1027cb619b771eca05bf2d7fad79a5bd",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2269,
-  "total_observations": 752,
+  "total_addresses": 2270,
+  "total_observations": 753,
   "class_counts": {
     "subjunctive": 1744,
-    "observed_address": 507,
+    "observed_address": 508,
     "verified_non_address": 18
   },
   "type_counts": {
-    "unmatched": 1634,
+    "unmatched": 1635,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -8925,6 +8925,41 @@
       ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-08-13",
+      "latest_status": "CAPTURE"
+    },
+    "alexanarch:theophrastus": {
+      "canonical_query": "alexanarch:theophrastus",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-01",
+          "status": "CAPTURE",
+          "surface": "Google AI Overview",
+          "source_format": "Final-round cards: the packet on Medium (Lee Sharks), the SEP on the transmission of the Aristotelian corpus (shown twice), the archive's #123 record, Reddit, Substack and a Bridgewater State thesis. Earlier rounds show inline chips only (Medium, Encyclopedia.com and others); their cards are not in the paste.",
+          "section": "Classics & Philology",
+          "slug": "alexanarch-theophrastus-aio-20261001",
+          "gallery_url": "https://www.alexanarch.org/captures/#alexanarch-theophrastus-aio-20261001",
+          "record_url": "https://www.alexanarch.org/captures/alexanarch-theophrastus-aio-20261001/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#alexanarch-theophrastus-aio-20261001",
+          "details_excerpt": "THE SPECIES TAKEN FOR THE GENUS, THEN THE CONFIGURATION ADOPTED: asked 'alexanarch:theophrastus', the Overview states the packet's claim faithfully, then, asked to judge it 'using only textual evidence', rules that the M"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "partial",
+        "basis": "The address names the archive and its Theophrastus line (#1583–#1605, #1588). Recorded 2026-10-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-01",
       "latest_status": "CAPTURE"
     },
     "algebraic properties": {
