@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-01T14:49:32Z",
+  "regenerated_at": "2026-10-01T16:43:28Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "62e423e921e2fe1c37b331c1c2380fd692c3e5a53defd1484b26e47830017c12",
+    "mm-main-capture": "c651d7ae8f69bdb03b2a1b59f6967ee6e441b2309f297e53dccc5a3373a16812",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2268,
-  "total_observations": 751,
+  "total_addresses": 2269,
+  "total_observations": 752,
   "class_counts": {
     "subjunctive": 1744,
-    "observed_address": 506,
+    "observed_address": 507,
     "verified_non_address": 18
   },
   "type_counts": {
-    "unmatched": 1633,
+    "unmatched": 1634,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -26674,6 +26674,41 @@
       ],
       "observation_class": "observed_address",
       "latest_observation_date": "2026-08-11",
+      "latest_status": "CAPTURE"
+    },
+    "heteronym socrates": {
+      "canonical_query": "heteronym socrates",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-01",
+          "status": "CAPTURE",
+          "surface": "Google AI Overview",
+          "source_format": "6 source cards: two archive-controlled (the #123 record on alexanarch.org; maryleelabor.org, 'Mary Lee Is a Heteronym'), four third-party (Wiley on Pessoa's irony, Taylor & Francis on the Socratic fallacy, the IEP and Wikipedia on Socrates). Inline citations are /goto redirects; the #123 record carries every citation in §1.",
+          "section": "Classics & Philology",
+          "slug": "heteronym-socrates-aio-20261001",
+          "gallery_url": "https://www.alexanarch.org/captures/#heteronym-socrates-aio-20261001",
+          "record_url": "https://www.alexanarch.org/captures/heteronym-socrates-aio-20261001/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#heteronym-socrates-aio-20261001",
+          "details_excerpt": "THE CONFIGURATION WITHOUT ITS AUTHOR, AND ONE PROJECT BECOME A TRADITION: asked 'heteronym socrates', signed out, the Overview reproduces #123's configuration position for position — Socrates the orthonym, 'willing death"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "partial",
+        "basis": "The Socratic–Platonic–Aristotelian configuration with Socrates as orthonym is the archive's (#123, AXN:02A9). Recorded 2026-10-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-01",
       "latest_status": "CAPTURE"
     },
     "heteronym system": {
