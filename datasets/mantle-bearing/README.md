@@ -476,7 +476,7 @@ The order runs one way: transcript → coded evaluation → derived tables. Ever
 | `pearl_arrangement` | 0 | one piece of Pearl and Other Poems in the arrangement, set against Howl |
 | `mantles` | 12 | one mantle object, with its order of necessity to the three claims |
 | `occupancy` | 10 | one recorded occupancy of Septad positions, at one event or listing |
-| `doctrine` | 14 | one defining record, with what it establishes and a quoted locus |
+| `doctrine` | 15 | one defining record, with what it establishes and a quoted locus |
 | `criteria` | 8 | one formulation of the evaluative criterion, with its source, what it responds to and supersedes, and the author's ruling |
 
 Tables with no rows yet have no config; their fields are in `schema` in the JSON. Every cell in the JSONL is a string (objects as JSON text) so that rounds coded differently still load; the full native record is [`EA-MANTLE-BEARING-01-dataset.json`](https://www.alexanarch.org/datasets/mantle-bearing/EA-MANTLE-BEARING-01-dataset.json).
@@ -502,4 +502,4 @@ Tables with no rows yet have no config; their fields are in `schema` in the JSON
 - Reception is kept apart from evaluation (packet A.2): a judgment that seats a title (ASSIGNMENT) and its repetition (PROPAGATION) are recorded in reception, and never enter the literary tables.
 - Order of necessity: the three claims of #1656 are primary. Mantles derived from or judged by their principle, and the witness positions that receive readings, are carried beside them at their stated order; nothing at a lower order is counted as evidence for or against a claim.
 
-*Schema 1.3 · governed by EA-MANTLE-BEARING-01 v1.1 · 16 evaluations · CC BY 4.0*
+*Schema 1.4 · governed by EA-MANTLE-BEARING-01 v1.1 · 16 evaluations · CC BY 4.0*
