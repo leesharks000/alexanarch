@@ -189,6 +189,7 @@ def main():
         "reopening_tests.jsonl",
         "exits.jsonl",
         "swarm_specimens.jsonl",
+        "checksum_lineage.jsonl",
     }
     present = {p.name for p in AUTHORED.iterdir() if p.is_file()}
     missing = sorted(required - present)
@@ -226,6 +227,15 @@ def main():
         elif not row.get("source_uri") or row.get("included_here") is not False:
             raise SystemExit(f"{row['id']}: an unseated swarm row must point outward and stay outside")
     swarm = swarm_sources()
+    # CHECKSUM LINEAGE (2026-10-02): the coda and the checksum_lineage config are shared
+    # byte-identical with datasets/tiger-leap and generated from the seated deposits by
+    # scripts/build_checksum_lineage.py; a drifted copy fails the build here.
+    import subprocess, sys as _sys
+    if subprocess.run([_sys.executable, str(ROOT / "scripts" / "build_checksum_lineage.py"), "--check"]).returncode:
+        raise SystemExit("checksum lineage drifted: run scripts/build_checksum_lineage.py")
+    lineage = validate_jsonl(AUTHORED / "checksum_lineage.jsonl")
+    if any(r.get("converted_into_rows") is not False or "body" in r for r in lineage):
+        raise SystemExit("checksum_lineage indexes the poems; their bodies stand in the card")
 
     _rule_ids = {r["id"] for r in contract}
     for row in trials:
@@ -414,7 +424,7 @@ def main():
             f"{len(observer_endogeneity)} endogeneity tests,",
             f"{len(reopening_tests)} reopening tests, {len(exits)} exits,",
             f"{len(swarm_specimens)} swarm specimen rows, {len(swarm)} seated swarm configs verified,",
-            f"{len(trials)} composition trials",
+            f"{len(trials)} composition trials, {len(lineage)} lineage poems",
         )
         return
 

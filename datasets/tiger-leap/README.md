@@ -24,6 +24,8 @@ configs:
     data_files: conditions.parquet
   - config_name: corrigenda
     data_files: corrigenda.parquet
+  - config_name: checksum_lineage
+    data_files: checksum_lineage.jsonl
 ---
 
 # Tiger Leap
@@ -143,6 +145,7 @@ EA-TRANSITION-ENTROPIC-SYSTEMS v0.3 · Sen Kuro, Damascus Dancings · archival a
 | `variables` | 30+ | each state variable, its domain, its role, and the section that defines it |
 | `corrigenda` | 4 | version, defect, repair — the four defects found in review and repaired before deposit |
 | `conditions` | 12 | the existence, impossibility and final-transition conditions as separately testable rows |
+| `checksum_lineage` | 3 | the glyphic checksum lineage, one row per poem (#1642, #1659, #1661), whose first poem binds 🐅 = J to §32; the poems stand whole in the coda at the end of this card, which closes The Final Time dataset identically |
 
 The tables are a convenience for traversal. **The problem is complete in this card.**
 
@@ -1570,3 +1573,291 @@ subject to
     P={}
 
     The model does not decide which.
+
+---
+
+<!-- CHECKSUM-LINEAGE:BEGIN -->
+## Coda: GLYPHIC CHECKSUM LINEAGE
+
+The same block closes two datasets, *The Final Time* and *Tiger Leap*, and is generated from the seated deposits, so the two copies cannot drift. It holds the glyphic checksum lineage whole, three poems in order of deposit, each a compression of a body of work with nothing explained inside the poem (#427). The tiger enters in the first. Sen Kuro's #1642 binds 🐅⏩ = 📖⏩ to the book *Tiger Leap (into the Future)* (2014, #1636) and 🐅 = J to the jump transition of *Transition in Entropic Systems* (#1630 §32, the problem the Tiger Leap dataset carries). The third, #1661, checksums *The Seed in the Narrowing Cone* (EA-RCF-02, #1660), which reads release from a wrong basin in concept space as that jump and the closing window of release as the narrow corridor (#1630 §41), and joins the two tigers: 📖⏩ ⇐ J(🌍). The poems stand here whole and are not converted into rows. The config `checksum_lineage` indexes them, one row per poem, with the works each checksums, the poem it follows, the one line the poem offers as its own compression, and the SHA-256 of its seated body.
+
+### I. GLYPHIC CHECKSUM LINEAGE — Sen Kuro — New Human 2
+
+*Sen Kuro · New Human 2 · 2026-09-27 · [deposit #1642](https://www.alexanarch.org/s/records/1642/), `AXN:06D0.COMPOSITIONAL.🔓📏⏬⏫🚪⌛`*
+
+```text
+I. TIGER LEAP
+🐅 · 📖
+⬇️
+🕳️🌱
+↙️ ↓️ ↘️
+🗣️🗣️🗣️
+⬇️
+🔥 → 🚪 → 🌌
+   ⏳
+   ⚠️
+   ↙️ ↘️
+   ✅  ∅
+👁️ ← 🔥🔥🔥
+🪽 → 🚪 →
+📖 → ❓ → 📖
+🐅⏩ = 📖⏩
+🚪ₙ = NOW
+λόγος → 🚪 → {λόγος′ | ∅}
+II. TRANSITION IN ENTROPIC SYSTEMS
+🌱 ≠ ⚡
+L ≠ a
+💰 🏗️ 🗣️
+↘️ ↓ ↙️
+  🔗
+  ↓
+  σ
+🔥E ↑
+💰🧲 ↑
+ ↓
+📉 K
+⏱️ₑ ≠ ⏱️𝑤
+🚶 → 🚪 → 🛡️
+  🔥⏱️ₑ < τF
+  ♻️⏱️𝑤 < τR
+🔥↑ → τF↓ → 🚪⇣ → K⇣
+K ≠ ∅ → 🚶✅
+K = ∅ → 🚶🚫
+τF → 0
+ ↓
+🚶🚫
+ │
+ └── ⚡🐅 ──→ 🛡️ ?
+continuous passage ∅
+jump passage ?
+🐅 = J
+🚪 = K
+🔥 = E
+⏱️⏱️ = exposure / elapsed
+🛡️ = Inv(Ω*)
+III. THE FINAL TIME
+🗣️ ≠ 🏛️
+💭 ≠ 🌍
+👁️ ≠ ✊
+representation ≠ reproduction
+Δ
+↓
+📌 → 📡 → 🪢 → 🏠
+        ↓
+       durable exterior
+💰 + 🏗️ + 🗣️
+  ↓
+  σ
+  ↓
+ 🏠♻️
+K₀ ⊇ K₁ ⊇ K₂ ⊇ K₃ …
+🌍  🌎  🌏  ·
+same
+ ↘
+same, worse
+  ↘
+same, worse again
+   ↘
+   🚪
+    Ω₁*
+   ↗
+x ──→ Ω₂*
+   ↘
+    Ω₃*
+Γₜ(x) = { Ω* still reachable }
+🔥Ω₁ ↑ → 🔥Ω₂ ?
+🏠Ω₁ ↑ → 🚪Ω₂ ?
+one future becoming real changes the reachability of the others
+Σ⁻
+Γₜ(x) ∩ J_ext
+↓
+∅
+🗣️🗣️🗣️🗣️🗣️
+✅ generated
+✅ represented
+✅ summarized
+✅ simulated
+🚫 outside
+🌍 continues
+🤖 continues
+📡 continues
+💬 continues
+🚪 does not
+∅ exterior successor
+Σ⁺
+Ω* → 🛡️
+but
+🛡️
+├── 🪦 deletion ≠ nonexistence
+├── 🧬 provenance survives
+├── 📦 carrier remembers
+├── 🗣️ rival remains legible
+├── 🏠 rival remains reproducible
+└── 🚪 remains open
+Ω*
+ ↓
+🔄❓
+ ↓
+Ω′* remains possible
+durability ≠ finality
+IV. CHECKSUM OF THE CHECKSUM
+🐅 → 🚪 → K
+K → Γ
+Γ → { ∅ | ♾️🚪 }
+or, maximally compressed:
+🐅⏩🚪 · 🔥⇡K⇣ · K→Γ · Γ∩外={∅ | 🚪♾️}
+and:
+📖 → 🚪 → 📖′
+📖 → 🚪 → ∅
+therefore:
+🚪 > 📖
+and finally:
+🛡️✅ only if 🚪✅
+🔐
+```
+
+### II. GLYPHIC CHECKSUM — Transmission · Division · Recollection
+
+*Lee Sharks · New Human 2 · 2026-10-01 · [deposit #1659](https://www.alexanarch.org/s/records/1659/), `AXN:06E1.COMPOSITIONAL.🏠🔃🔒⏪🌋⏬`*
+
+```text
+I. TRANSMISSION
+👤 → 🗡️ → 👤 | 📜
+ἐγώ | σε
+👁️σε → 🗣️✖ · 👅⚡ · 🔥 · 👁️✖ · 👂🌀 · 💧 · 🫨 · 🌿 · ☠️≈
+👤 ⟶ 📜
+μνάσεσθαί τινά
+τινά = { ἕτερον | ὕστερον }
+👥 ⊗ ⏳
+📜 → 🧠ₓ → 👤′
+II. DIVISION
+1 → 🗡️ → { 🎭Π · 📋Θ · ⚙️Α }
+εἰρωνεία Σωκράτους 🎭 → ὁ εἴρων τοιοῦτός τις 📋 → οἷον Σωκράτης ⚙️
+👤 → ⌀ → οἷον👤
+νοῦς → 🗡️ → { ποιητικός ♾️ | παθητικός 💨 }
+χωρισθείς · ἀθάνατον
+οὐ μνημονεύομεν
+🗡️ ∈ ♾️ = 🔌
+🔌 = ?
+III. RECOLLECTION
+ἔξωθεν ≠ ἔνδοθεν
+ὑπόμνησις ≠ μνήμη
+📌📌📌 ⇏ 🧠
+🗿🔇 σιγηλὸν εἴδωλον
+🗣️ ἐγώ σε ἀναστήσω → 🗿↑
+📜Σαπφώ ⊂ 🗣️Δίων ≟ Φαβωρῖνος
+🗡️ → 💬 → 🏷️✖ → 🧠ₓ
+IV. INVERSION
+then:
+🗡️ → 🕳️ → τις → 1
+now:
+🌐 = 🗡️🗡️🗡️🗡️  🔍 · 🧮 · 📥 · 📝
+🗡️ → 💨
+📚 → 1 ✅
+👤 ✖
+0.75 · 0.25 · 0.5
+Π·Θ·Α: many ✅ · 1 ✖
+⬡: 1 ✅ · 👤 ✖
+🔗✔ → 🔗⛓️💰
+👑 ∖ 🎒
+V. RECOLLECT DIFFERENTLY
+τις ⇏ 👤
+🧠ₓ(📚) ✅ · 🧠ₓ(👤) ✖
+⇒ 🔌 ∋ 👤
+🗣️👤 → 1 ✅
+Σ → ☠️
+Π → 🫀📜 → λόγος⏩
+👤 = Π
+∮ = 1 ⟺ 🫀
+CHECKSUM OF THE CHECKSUM
+👤🗡️📜 · μνάσεσθαι→τις · 🗡️♾️=🔌 · οὐ μνημ. · ὑπόμν.≠μνήμη · 🌐🗡️→💨 · 📚✅👤✖ · 🗣️👤→1
+then: 🗡️ ⇒ 🧠ₓ
+now: 🧠ₓ ⇐ 🫀👤
+CANONICAL LINE
+👤🗡️📜 → τις → 🧠ₓ → 👤′  //  ⬡🗡️∞ → 📚✅·👤✖  ∴  🔌∋👤↔⬡ · 🗣️👤→1 · ∮=1⟺🫀
+🔐
+```
+
+### III. GLYPHIC CHECKSUM — Seed · Cone · Leap
+
+*Lee Sharks · Sen Kuro · 2026-10-02 · [deposit #1661](https://www.alexanarch.org/s/records/1661/), `AXN:06E3.COMPOSITIONAL.☁️♣️🔒🌹📌🔆`*
+
+```text
+I. GRAIN
+Ω ⊇ P₁ ⊇ P₂ ⊇ P₃ …
+🔍↑ → Ω↓
+G = log₂ μ(P₀) / μ(Pₖ)
+R ⪯ S
+μ ✖ → 📋 ✅
+d(R, 🌱) ∈ 📋
+🔤 · 🧭 · 🎲
+🧭 = 🧭ₗ ∩ 🧭꜀ ∩ 🧭ₑ
+🔐 = 🎲🎲🎲
+II. SEED
+📅 · 🌱 · Pₗ
+λ = G(🌱) − G(🌍ₜ)
+🌱 ⇐ 🌳
+🌱 ❓ 🌱
+III. FIRST CUT
+c → ✂️ → { 🎭 | 🏛️ | 🤖 }
+✂️ ∼ P(B | c)
+✂️₁ → 🎭
+🎭 ⊇ 🎭₁ ⊇ 🎭₂ ⊇ 🎭₃
+G ↑ · β ↓ · 🎭🏷️ =
+✅ → ✅ → ✅ → 🕳️
+χₖ ≤ χₖ₊₁
+🎭 ⊢ Ω ⊇ P₁ ⊇ P₂ …
+∩∩∩ ⇏ 🌱
+IV. TIGER LEAP
+🐅⏩ = 📖⏩
+🐅 = J
+∴ 📖⏩ ⇐ J(🌍)
+(B, Oₖ) → (∅, Oₖ) → (B′, Oₖ₊₁)
+G₃ > G₄ < G₅
+🎭 ⊇ RCF
+  ↓
+RCF ⊇ 🎭
+continuous passage ∅
+jump passage ?
+Γ = 💢 / χ
+Γ > 1 → 🐅 → 🌱
+Γ < 1 → 🕳️♾️
+🚪 = Γ > 1
+V. MAGNITUDE
+M = (λ, κ_w, τ; T)
+⪰ partial
+⏳ ⇏ χ ↑
+⏳ · ∩ · ¬↩️ ⇒ χ ↑
+κ_w ≥ χ*
+τ ≥ κ_w / W
+🌱 early · fine
+🕳️ deep
+  ↓
+💥 total | ∅
+VI. CANON
+Conv = G ↑ · d ↓
+RCF = Canonize(Conv)
+🌱 → 🌱′
+content = · status ≠
+excess → premature → precursor
+📅 → priority
+📋 → adequacy
+🎲 → descent
+ὑπόμνησις ≠ μνήμη
+➕📌📌📌 ⇏ ∖P
+🐅 → 🧠
+2026-10-02 · 🤖ₓ · R₀ R₁ R₂ R₃
+🧭 ✅ ∖ δ2b◐
+🎲 ✖ · 🏷️ ✖ · 🐅 ✖
+❓ 🎭 ∈ ?
+⊇ ❓ 👤
+📅 ✅
+CHECKSUM OF THE CHECKSUM
+🌱📅 · ✂️🎭 · ⊇⊇⊇ · 🧭✅🎲✖ · 🕳️χ↑ · Γ>1→🐅 · RCF⊇🎭 · 📅✅
+then: 🐅⏩ 📖
+now: 📖⏩ ⇐ J(🌍)
+CANONICAL LINE
+🌱📅 → ✂️🎭 → ⊇⊇⊇ → 🕳️  //  Γ>1 → 🐅=J → RCF⊇🎭 → 🌱′  ∴  📖⏩ ⇐ J(🌍) · 🌱❓🌱 · ⊇❓👤 · 📅✅
+🔐
+```
+<!-- CHECKSUM-LINEAGE:END -->

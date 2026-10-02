@@ -95,6 +95,10 @@
     "composition_trials": {
       "primary_key": "id",
       "purpose": "Observed compositions of this work by retrieval surfaces, each set against the source claim it replaced and the summarizer-contract rule it broke (added 2026-09-28). Failure classes: NOVELTY_SUBSTITUTION, EXTERIORITY_INTERNALIZATION, RECURSIVE_UPTAKE, LOCAL_OVERCOMPLETION, RECORD_READ_AS_DESIGN. Every row cites a seated capture."
+    },
+    "checksum_lineage": {
+      "primary_key": "id",
+      "purpose": "The glyphic checksum lineage indexed one row per poem; bodies stand whole in the card coda and are verified by SHA-256 against the seated deposits. Carried byte-identical by the Tiger Leap dataset."
     }
   },
   "standing_principle": "Others may destroy what I build, if they believe that is right.",
