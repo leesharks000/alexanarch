@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-02T01:34:07Z",
+  "regenerated_at": "2026-10-02T03:19:22Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "aabac66588c4569b7085032711f8a67157da115d12678ea4700fb4e7c2afef66",
+    "mm-main-capture": "6159924c512ccbca5e5992dc8e220a821e599d9d4120966ccc923414545c7ea4",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2273,
-  "total_observations": 757,
+  "total_addresses": 2274,
+  "total_observations": 758,
   "class_counts": {
     "subjunctive": 1744,
-    "observed_address": 511,
+    "observed_address": 512,
     "verified_non_address": 18
   },
   "type_counts": {
-    "unmatched": 1638,
+    "unmatched": 1639,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -58303,6 +58303,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-09-23",
       "latest_status": "INDEXED AGAINST THE AUTHOR'S OWN ENGAGEMENTS — THE READING HOLDS"
+    },
+    "tell me about lee sharks and ron polansky": {
+      "canonical_query": "tell me about lee sharks and ron polansky",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-01",
+          "status": "THE RADICAL THESIS ADMITTED THROUGH THE STANDARD PROBLEM",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only. Shown: Mind Control Poems ×40; Cambridge University Press ×3; Stanford Encyclopedia of Philosophy ×3; Notre Dame Philosophical Reviews ×2; Bryn Mawr Classical Review ×2; Crimson Hexagonal Archive ×1; Wikipedia ×1; ORB ×1; Cambridge Assets ×1; ScholarWorks ×1. The author's Blogger surface carries the archive's text throughout; alexanarch.org appears in no chip. Citation count per composition unknown, not zero.",
+          "section": "Classics & Philology",
+          "slug": "lee-sharks-ron-polansky-chatgpt-20261001",
+          "gallery_url": "https://www.alexanarch.org/captures/#lee-sharks-ron-polansky-chatgpt-20261001",
+          "record_url": "https://www.alexanarch.org/captures/lee-sharks-ron-polansky-chatgpt-20261001/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#lee-sharks-ron-polansky-chatgpt-20261001",
+          "details_excerpt": "THE RADICAL THESIS ADMITTED THROUGH THE STANDARD PROBLEM: asked about Lee Sharks and Ron Polansky, ChatGPT identifies both (Sharks by ORCID and the archive; Polansky by Duquesne, Ancient Philosophy and his 2008 De Anima "
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "person",
+        "spxi_treatment": "partial",
+        "basis": "Lee Sharks and the dedication of #1658 are the archive's; Ron Polansky is an external scholar. Recorded 2026-10-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-01",
+      "latest_status": "THE RADICAL THESIS ADMITTED THROUGH THE STANDARD PROBLEM"
     },
     "tell me about nobel glas' work at lagrangeobservatory.org": {
       "canonical_query": "tell me about nobel glas' work at lagrangeobservatory.org",
