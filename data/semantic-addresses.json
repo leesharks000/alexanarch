@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-02T17:35:58Z",
+  "regenerated_at": "2026-10-02T20:10:05Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "8bb186a60d19b5d48381d6f4478877621f7b85b8c2ae2f8a4de3443c7f2d3266",
+    "mm-main-capture": "7b266ea13e5279d04b2361822f7ec15e9ab0ce878f0ba713b705406fb30f8bf1",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2276,
-  "total_observations": 765,
+  "total_addresses": 2277,
+  "total_observations": 766,
   "class_counts": {
     "subjunctive": 1743,
-    "observed_address": 516,
+    "observed_address": 517,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1641,
+    "unmatched": 1642,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -62280,6 +62280,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "walk me thru lee sharks' data poems in the meaning layer": {
+      "canonical_query": "walk me thru lee sharks' data poems in the meaning layer",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-02",
+          "status": "THE PAPER READ AS THE POEM",
+          "surface": "ChatGPT",
+          "source_format": "One chip label across both answers: Goodreads ×11. 'Sources' panels not opened; the underlying pages are unknown.",
+          "section": "Frameworks",
+          "slug": "data-poems-meaning-layer-chatgpt-20261002",
+          "gallery_url": "https://www.alexanarch.org/captures/#data-poems-meaning-layer-chatgpt-20261002",
+          "record_url": "https://www.alexanarch.org/captures/data-poems-meaning-layer-chatgpt-20261002/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#data-poems-meaning-layer-chatgpt-20261002",
+          "details_excerpt": "THE PAPER READ AS THE POEM: asked to walk through Lee Sharks's data poems in the meaning layer, ChatGPT takes 'data poem' as a name for the semantic-economy work and, asked to pick one, picks The Non-Summable Magnitude ("
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "#1622 and the monetary-substrate line (#1618–#1620) are the archive's. Recorded 2026-10-02."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-02",
+      "latest_status": "THE PAPER READ AS THE POEM"
     },
     "walt whitman": {
       "canonical_query": "walt whitman",
