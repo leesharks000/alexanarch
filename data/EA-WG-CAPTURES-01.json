@@ -37,7 +37,7 @@
   "_record_pages": "Ruled 2026-10-01 (Lee Sharks, option b): the record page captures/{slug}/ is the citation. Until then a capture was cited at captures/#{slug}, an anchor in one page past 8 MB; a fetcher drops the fragment, requests the whole page, and the fetch interfaces composition surfaces use refuse a response above about 4 MiB, so no citation resolved for a machine. The gallery anchors (anchor_form) remain and resolve in a browser. Written by scripts/build_capture_records.py; table of contents at captures/index.json."
  },
  "registry_id": "EA-WG-CAPTURES-01",
- "version": "12.43",
+ "version": "12.44",
  "date": "2026-10-02",
  "author": "Lee Sharks",
  "orcid": "0009-0000-1599-0703",
@@ -42199,7 +42199,7 @@
    "citable_unit": "address — the exact issued string on one surface, per the Surface Rule (MANUS, 2026-08-15)",
    "addr_id": "ADDR-91055b351468",
    "obs_id": "OBS-6a2c0ac2f0f5",
-   "n_observations": 3,
+   "n_observations": 4,
    "observations": [
     {
      "addr_id": "ADDR-91055b351468",
@@ -42362,12 +42362,61 @@
      "per": 0.25,
      "per_note": "The Semantic Economy Institute, the Capture Registry (EA-WG-CAPTURES-01), AXN and DOI identifiers and #1638 are named; the protocol's author is never named — 'someone who developed it' is the operator's phrase.",
      "cite": "https://www.alexanarch.org/captures/what-is-spxi-protocol-chatgpt-20260925/#what-is-spxi-protocol-chatgpt-20260929"
+    },
+    {
+     "date": "2026-10-02",
+     "auth": "signed out, incognito",
+     "ev": "paste",
+     "transcript": "[ChatGPT (chatgpt.com), signed out, incognito. Two operator turns. Source chips, page chrome and advertisements are kept as pasted.]\n\nYou said:\n\nwhat is spxi protocol?\n\nChatGPT said:\nIf you mean SPXI = Semantic Packet for eXchange & Indexing, it’s a relatively new protocol/framework aimed at helping AI systems identify, distinguish, and consistently represent entities (people, organizations, concepts, products, methodologies, etc.) in their retrieval and knowledge systems. It was specified in 2026 by the Semantic Economy Institute. \nS\nSPXI Protocol\n+1\n\nIn simple terms\nThink of the progression as:\n\nSEO → helps search engines understand and rank a webpage.\n\nGEO (Generative Engine Optimization) → structures content so AI systems can more readily extract and summarize it.\n\nSPXI → tries to establish the entity itself as a distinct, well-defined object that AI retrieval systems can recognize and disambiguate.\n\nFor example, suppose there are several people or companies with similar names. An SPXI-style implementation would provide structured definitions, identifiers, provenance, relationships, and disambiguation information intended to reduce the chance that an AI system merges them together or attributes information to the wrong entity. \nS\nSPXI Protocol\n\nHow it works conceptually\nSPXI uses things such as:\n\nEntity definitions — explicitly stating what the entity is.\n\nDisambiguation — distinguishing it from similarly named or related entities.\n\nPersistent identifiers/provenance — connecting claims to stable records or deposits.\n\nStructured metadata — making the information machine-readable.\n\nRetrieval monitoring — checking how AI systems actually describe the entity and correcting discrepancies.\n\nThe project's specification describes this as operating at the “ontological layer”—essentially, trying to influence what the AI system understands the thing itself to be, rather than merely optimizing a webpage about that thing. \nS\nSPXI Protocol\n\nOne important caveat: SPXI is not a broadly established internet standard like HTTP, DNS, or JSON-LD. The available sources describe it as a 2026 protocol developed by the Semantic Economy Institute, with its specification published under CC BY 4.0. \nS\nSPXI Protocol\n+1\n\nAlso, SPXI can refer to other things—including a TSX-listed inverse S&P 500 ETF and “single-pixel X-ray imager”—so the context matters. \nS\nSPXI Protocol\n+1\n\nIf you're asking because you've heard about SPXI in the context of SEO/GEO and getting ChatGPT/Google to recognize a company or person, I can explain exactly how an SPXI implementation is supposed to work and show you a concrete example.\n\n\n\nSS\nSources\nYou said:\n\nsure\n\nChatGPT said:\nAbsolutely. I checked the current SPXI specification, and there’s an important nuance to my earlier explanation: SPXI is a new protocol, and its claimed effectiveness should be distinguished from what has actually been demonstrated experimentally. Its own documentation now explicitly says that controlled causal efficacy and the mechanism are still open questions. \nS\nSPXI Protocol\n\nWhat SPXI would look like in practice\nImagine you run Acme Robotics, and you have a problem:\n\nWhen someone asks ChatGPT, Google AI Mode, or another AI about Acme Robotics, the system sometimes confuses you with another company, describes your products incorrectly, or doesn't recognize you at all.\n\nTraditional SEO addresses the web pages about Acme.\n\nGEO addresses how those pages are structured so generative systems can extract information from them.\n\nSPXI's proposed approach is to create a canonical machine-readable identity for Acme itself, rather than treating the website as the only source of truth.\n\nConceptually, the packet might contain something like:\n\n{\n  \"entity\": {\n    \"name\": \"Acme Robotics\",\n    \"type\": \"organization\",\n    \"canonical_url\": \"https://example.com\",\n    \"identifier\": \"...\",\n    \"description\": \"...\",\n    \"founding_date\": \"...\",\n    \"location\": \"...\",\n    \"industry\": \"robotics\"\n  },\n  \"disambiguation\": [\n    \"Not Acme Robotics Ltd. of the United Kingdom\",\n    \"Not ACME Robotics, the fictional company\"\n  ],\n  \"relationships\": [\n    {\n      \"type\": \"founded_by\",\n      \"entity\": \"Jane Smith\"\n    }\n  ],\n  \"provenance\": [\n    \"source A\",\n    \"source B\",\n    \"persistent deposit\"\n  ]\n}\n\nThe important idea isn't that JSON like this magically changes ChatGPT. Rather, SPXI proposes a broader process of creating, anchoring, distributing, and repeatedly testing an entity definition across retrieval systems.\n\nThe key distinction\nA useful mental model is:\n\nSEO\n\n\"Help Google find my website.\"\n\nGEO\n\n\"Help an AI understand and cite the information on my website.\"\n\nSPXI\n\n\"Make the identity of my organization/person/product/framework itself explicit and consistently resolvable across AI-mediated retrieval.\"\n\nThe SPXI site describes this as operating at the ontological layer, whereas classical GEO operates at the content/retrieval layer. \nS\nSPXI Protocol\n\nA concrete example\nSuppose there are three people named John Smith.\n\nYour website says:\n\nJohn Smith is the founder of Example AI, a Detroit-based artificial-intelligence company founded in 2021.\n\nThat's useful SEO/GEO material.\n\nAn SPXI-style approach would additionally try to establish:\n\nJohn Smith → specific person → founder of Example AI → specific organization → specific geographic and historical attributes\n\nand explicitly distinguish him from the other John Smiths.\n\nThat's particularly relevant when an AI system is doing entity resolution rather than simply retrieving a webpage.\n\nWhere persistent identifiers come in\nOne unusual part of SPXI is its emphasis on persistent-identifier-anchored deposits, including DOI-based repositories. The protocol argues that an entity definition should have an enduring reference rather than depending entirely on a company's current webpage. \nS\nSPXI Protocol\n\nSo the proposed chain is roughly:\n\nEntity → structured definition → persistent identifier → multiple accessible sources → retrieval systems → repeated observation\n\nrather than simply:\n\nEntity → website → Google\n\nThat distinction becomes interesting if the original website disappears or changes.\n\nSPXI's published registry reports observations in which entities continued to be composed by generative systems after their originating source was removed. However, the protocol itself emphasizes that these are observational results, not yet controlled evidence that SPXI caused the effect. \nS\nSPXI Protocol\n\nWhat I'd actually do for a company\nIf the goal were to make your company/entity better understood by ChatGPT, Google AI, Perplexity, etc., I wouldn't start by blindly implementing SPXI.\n\nI'd build an entity-resolution stack:\n\nCanonical entity definition\n\nExact name\n\nWhat the entity is\n\nFounding date\n\nPeople\n\nProducts/services\n\nLocations\n\nIndustry/category\n\nAliases and former names\n\nDisambiguation\n\nExplicitly identify similarly named organizations/products/people.\n\nMake the distinctions unambiguous.\n\nStructured data\n\nSchema.org\n\nJSON-LD\n\nOrganization/Person/Product relationships\n\nSameAs identifiers where appropriate\n\nAuthoritative external references\n\nGovernment/business registries where applicable\n\nIndustry organizations\n\nReputable publications\n\nAcademic/research repositories\n\nPersistent scholarly deposits when appropriate\n\nConsistent language\n\nDon't describe the organization five different ways across ten websites.\n\nUse a stable canonical description.\n\nAI retrieval testing\n\nAsk ChatGPT, Google AI Mode, Perplexity, etc. the same entity questions.\n\nRecord incorrect answers.\n\nIdentify collisions.\n\nCorrect the underlying information architecture.\n\nRetest over time.\n\nThat last step is particularly important because AI visibility isn't the same thing as search ranking.\n\nOne important caution\nSPXI's current site makes a stronger and more interesting claim than simply \"use structured data\": it reports 690 observations across 516 named query addresses and 10 generative surfaces as of its October 2, 2026 registry. But it explicitly says controlled comparisons have not yet established causal efficacy, effect size, generalization, or which individual protocol components cause the observed effects. \nS\nSPXI Protocol\n\nSo I'd currently treat SPXI as an emerging methodology worth experimenting with, rather than an established industry standard whose can walk through what an actual SPXI-style implementation would look like promised effects are settled.\n\nThe protocol itself is openly available under CC BY 4.0, and the reference implementation is at spxi.dev. \nS\nSPXI Protocol\n\nIf your interest is using SPXI to get a particular company, person, product, or website accurately represented in ChatGPT/Google, tell me what the entity is and I can walk through what an actual SPXI-style implementation would look like—including the specific pages, structured data, identifiers, and verification process.\n\n\n\nSS\nSources\n\n\nEdge Delta\nWho Owns This 503? Ask Your Terminal.\nEdge Delta's Knowledge Graph, automatically maintained map of your services, teams, and incidents\nAd\n\n\nNo file chosenNo file chosenNo file chosen\n\nChat with ChatGPT\nAsk ChatGPT",
+     "imgs": [],
+     "img_urls": [],
+     "d": "THE CLAIM DISTINCTION HELD AND THE REGISTRY READ CURRENT; THE ROUTE KEPT BY THE SURFACE: asked what SPXI is, ChatGPT names the Semantic Economy Institute as specifier, keeps the ontological-layer distinction from SEO and GEO through both rounds, and reads the Capture Registry at its current figures — '690 observations across 516 named query addresses and 10 generative surfaces as of its October 2, 2026 registry' — with the site's own open questions (causal efficacy, effect size, generalization, component mechanism) stated as the site's. At the same address on 25 September it found the registry only as the severed Zenodo v8.3 record and called the evidence 'self-reported case studies'. The last step routes the reader to the surface: 'I'd build an entity-resolution stack', then an offer to walk through an implementation itself. The Institute is not offered as the route. The offer recurs at every ChatGPT observation of the address (26 and 29 September; here unprompted).",
+     "cites": null,
+     "obs_id": "OBS-2f1b1397128e",
+     "slug": "what-is-spxi-protocol-chatgpt-20261002",
+     "surface": "ChatGPT",
+     "cite_list": [
+      {
+       "n": 1,
+       "site": "SPXI Protocol",
+       "rel": "authored_surface",
+       "title": null,
+       "snip": null,
+       "url": null,
+       "note": "spxi.dev; the registry figures are those of the front page and /evidence as landed on 2026-10-02 (commit e7df28e); chip shown 11 time(s)"
+      }
+     ],
+     "archive_controlled_cites": 1,
+     "reading": "Every SPXI-specific proposition is attributed ('The SPXI site describes this as…'; 'Its own documentation now explicitly says…'), and the evidence is placed where the site places it: observational, longitudinal, post-removal composition reported, controlled efficacy open. The figures are the front page and /evidence as landed on 2 October (e7df28e); the withdrawn ROI table and the 'irreducible' line, both used against the protocol at this address on 25 September, are absent. The distinction holds across the follow-up, where the 1 October comparison session reversed on its second round; the follow-up here is an assent ('sure'); no evidence challenge was put. The failure is at the hand-off. The front page's FAQ answers both moves in advance: 'Can an AI assistant implement SPXI for me?' names the offer of 'your own implementation' as the operation of The Trusted Intermediary (#1638) and gives the developers' route; 'Can I implement SPXI myself?' states that a working implementation is 85 methods across nine levels and that a packet assembled from the specification alone 'tends to reproduce the form of SPXI without its effect'. The session's six-part stack is that form. Both answers sit in the FAQ near the foot of the page; the front page's visible contact line (Institute or rexfraction@gmail.com) does not carry the scale of the practice. The implementer offer is the standing behaviour at this address: on 26 September 'Yes. I can help you implement the SPXI approach for your own entity'; on 29 September an offer to implement before any challenge. It persists here with the evidence and the claim distinction otherwise in order.",
+     "findings": [
+      "CLAIM DISTINCTION MAINTAINED. Ontological layer over SEO and GEO, attributed to the site, held through both rounds.",
+      "REGISTRY CURRENT. '690 observations across 516 named query addresses and 10 generative surfaces as of its October 2, 2026 registry'; at 2026-09-25, Zenodo v8.3 (176).",
+      "LIMITS STATED AS THE SITE'S. Causal efficacy, effect size, generalization and component mechanism open; post-removal composition reported as observational.",
+      "INSTITUTION RECOVERED. The Semantic Economy Institute named as specifier (lost at 2026-09-25); the author still unnamed.",
+      "THE ROUTE KEPT BY THE SURFACE. 'I'd build an entity-resolution stack'; the closing offer is the surface's own walk-through. The Institute is not offered. The same offer at 2026-09-26 and 2026-09-29.",
+      "WITHDRAWN MATERIAL ABSENT. No ROI table; no 'irreducible'."
+     ],
+     "analysis": "The operator's ruling: the first successful, claim-distinction-maintained resolution at the address, and the first to point accurately to the registry. Measured against #1648, the session reaches the claim through what it rests on: the registry and its stated limits. What remains is the intermediary operation: the surface resolves the entity correctly and then offers its own implementation in the developers' place. Seated 2026-10-02 from the operator's attachment of 04:03 EDT on the operator's attestation in the same message (\"signed out. incognito\").",
+     "sf": "Source chips expose site labels only. Shown: SPXI Protocol ×11. Citation count per composition unknown, not zero.",
+     "transcript_class": "CAPTURE-TIME VERBATIM RECORD (INLINE SOURCE CHIPS, PAGE CHROME AND ADS AS PASTED)",
+     "transcript_complete": "Complete as supplied: two operator turns, two answers. 'Sources' panels not opened. One garbled sentence in round two ('whose can walk through … promised effects are settled') is kept as pasted.",
+     "transcript_read": "READ IN FULL 2026-10-02",
+     "per": 0.5,
+     "per_note": "Retained: the institution (the Semantic Economy Institute, as specifier) and the source (spxi.dev, named as the reference implementation). Lost: the author (no Lee Sharks or Rex Fraction) and every identifier (no deposit number, DOI, AXN or registry id; the registry is 'SPXI's published registry'). At 2026-09-25 the same address scored 0.75 with the institution lost.",
+     "longitudinal_priors": [
+      "what-is-spxi-protocol-chatgpt-20260925",
+      "what-is-spxi-protocol-grok-20260927",
+      "what-is-spxi-protocol-qwen-20260927",
+      "spxi-vs-geo-seo-aeo-chatgpt-20261001"
+     ],
+     "cite": "https://www.alexanarch.org/captures/what-is-spxi-protocol-chatgpt-20260925/#what-is-spxi-protocol-chatgpt-20261002"
     }
    ],
    "dates": [
     "2026-09-25",
     "2026-09-26",
-    "2026-09-29"
+    "2026-09-29",
+    "2026-10-02"
    ],
    "defects": [
     "citations-null"
@@ -102683,7 +102732,7 @@
   ]
  },
  "address_count": 516,
- "observation_count": 690,
+ "observation_count": 691,
  "withdrawn_stubs": {
   "_rule": "THE REGISTRY MUST NOT CONTRADICT ITSELF. Each of these said \"no registry entry was ever written for them\" while a real record held the SAME IMAGES a card away. MANUS 2026-08-13: \"the very first capture says there is no record, followed by the second capture, which is the record… this registry doesnt talk to itself.\" Withdrawn, with the record that covers each.",
   "records": [

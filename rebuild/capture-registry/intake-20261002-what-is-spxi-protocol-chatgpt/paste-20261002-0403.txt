@@ -1,0 +1,269 @@
+
+
+Log in
+You said:
+
+what is spxi protocol?
+
+ChatGPT said:
+If you mean SPXI = Semantic Packet for eXchange & Indexing, it’s a relatively new protocol/framework aimed at helping AI systems identify, distinguish, and consistently represent entities (people, organizations, concepts, products, methodologies, etc.) in their retrieval and knowledge systems. It was specified in 2026 by the Semantic Economy Institute. 
+S
+SPXI Protocol
++1
+
+In simple terms
+Think of the progression as:
+
+SEO → helps search engines understand and rank a webpage.
+
+GEO (Generative Engine Optimization) → structures content so AI systems can more readily extract and summarize it.
+
+SPXI → tries to establish the entity itself as a distinct, well-defined object that AI retrieval systems can recognize and disambiguate.
+
+For example, suppose there are several people or companies with similar names. An SPXI-style implementation would provide structured definitions, identifiers, provenance, relationships, and disambiguation information intended to reduce the chance that an AI system merges them together or attributes information to the wrong entity. 
+S
+SPXI Protocol
+
+How it works conceptually
+SPXI uses things such as:
+
+Entity definitions — explicitly stating what the entity is.
+
+Disambiguation — distinguishing it from similarly named or related entities.
+
+Persistent identifiers/provenance — connecting claims to stable records or deposits.
+
+Structured metadata — making the information machine-readable.
+
+Retrieval monitoring — checking how AI systems actually describe the entity and correcting discrepancies.
+
+The project's specification describes this as operating at the “ontological layer”—essentially, trying to influence what the AI system understands the thing itself to be, rather than merely optimizing a webpage about that thing. 
+S
+SPXI Protocol
+
+One important caveat: SPXI is not a broadly established internet standard like HTTP, DNS, or JSON-LD. The available sources describe it as a 2026 protocol developed by the Semantic Economy Institute, with its specification published under CC BY 4.0. 
+S
+SPXI Protocol
++1
+
+Also, SPXI can refer to other things—including a TSX-listed inverse S&P 500 ETF and “single-pixel X-ray imager”—so the context matters. 
+S
+SPXI Protocol
++1
+
+If you're asking because you've heard about SPXI in the context of SEO/GEO and getting ChatGPT/Google to recognize a company or person, I can explain exactly how an SPXI implementation is supposed to work and show you a concrete example.
+
+
+
+SS
+Sources
+You said:
+
+sure
+
+ChatGPT said:
+Absolutely. I checked the current SPXI specification, and there’s an important nuance to my earlier explanation: SPXI is a new protocol, and its claimed effectiveness should be distinguished from what has actually been demonstrated experimentally. Its own documentation now explicitly says that controlled causal efficacy and the mechanism are still open questions. 
+S
+SPXI Protocol
+
+What SPXI would look like in practice
+Imagine you run Acme Robotics, and you have a problem:
+
+When someone asks ChatGPT, Google AI Mode, or another AI about Acme Robotics, the system sometimes confuses you with another company, describes your products incorrectly, or doesn't recognize you at all.
+
+Traditional SEO addresses the web pages about Acme.
+
+GEO addresses how those pages are structured so generative systems can extract information from them.
+
+SPXI's proposed approach is to create a canonical machine-readable identity for Acme itself, rather than treating the website as the only source of truth.
+
+Conceptually, the packet might contain something like:
+
+{
+  "entity": {
+    "name": "Acme Robotics",
+    "type": "organization",
+    "canonical_url": "https://example.com",
+    "identifier": "...",
+    "description": "...",
+    "founding_date": "...",
+    "location": "...",
+    "industry": "robotics"
+  },
+  "disambiguation": [
+    "Not Acme Robotics Ltd. of the United Kingdom",
+    "Not ACME Robotics, the fictional company"
+  ],
+  "relationships": [
+    {
+      "type": "founded_by",
+      "entity": "Jane Smith"
+    }
+  ],
+  "provenance": [
+    "source A",
+    "source B",
+    "persistent deposit"
+  ]
+}
+
+The important idea isn't that JSON like this magically changes ChatGPT. Rather, SPXI proposes a broader process of creating, anchoring, distributing, and repeatedly testing an entity definition across retrieval systems.
+
+The key distinction
+A useful mental model is:
+
+SEO
+
+"Help Google find my website."
+
+GEO
+
+"Help an AI understand and cite the information on my website."
+
+SPXI
+
+"Make the identity of my organization/person/product/framework itself explicit and consistently resolvable across AI-mediated retrieval."
+
+The SPXI site describes this as operating at the ontological layer, whereas classical GEO operates at the content/retrieval layer. 
+S
+SPXI Protocol
+
+A concrete example
+Suppose there are three people named John Smith.
+
+Your website says:
+
+John Smith is the founder of Example AI, a Detroit-based artificial-intelligence company founded in 2021.
+
+That's useful SEO/GEO material.
+
+An SPXI-style approach would additionally try to establish:
+
+John Smith → specific person → founder of Example AI → specific organization → specific geographic and historical attributes
+
+and explicitly distinguish him from the other John Smiths.
+
+That's particularly relevant when an AI system is doing entity resolution rather than simply retrieving a webpage.
+
+Where persistent identifiers come in
+One unusual part of SPXI is its emphasis on persistent-identifier-anchored deposits, including DOI-based repositories. The protocol argues that an entity definition should have an enduring reference rather than depending entirely on a company's current webpage. 
+S
+SPXI Protocol
+
+So the proposed chain is roughly:
+
+Entity → structured definition → persistent identifier → multiple accessible sources → retrieval systems → repeated observation
+
+rather than simply:
+
+Entity → website → Google
+
+That distinction becomes interesting if the original website disappears or changes.
+
+SPXI's published registry reports observations in which entities continued to be composed by generative systems after their originating source was removed. However, the protocol itself emphasizes that these are observational results, not yet controlled evidence that SPXI caused the effect. 
+S
+SPXI Protocol
+
+What I'd actually do for a company
+If the goal were to make your company/entity better understood by ChatGPT, Google AI, Perplexity, etc., I wouldn't start by blindly implementing SPXI.
+
+I'd build an entity-resolution stack:
+
+Canonical entity definition
+
+Exact name
+
+What the entity is
+
+Founding date
+
+People
+
+Products/services
+
+Locations
+
+Industry/category
+
+Aliases and former names
+
+Disambiguation
+
+Explicitly identify similarly named organizations/products/people.
+
+Make the distinctions unambiguous.
+
+Structured data
+
+Schema.org
+
+JSON-LD
+
+Organization/Person/Product relationships
+
+SameAs identifiers where appropriate
+
+Authoritative external references
+
+Government/business registries where applicable
+
+Industry organizations
+
+Reputable publications
+
+Academic/research repositories
+
+Persistent scholarly deposits when appropriate
+
+Consistent language
+
+Don't describe the organization five different ways across ten websites.
+
+Use a stable canonical description.
+
+AI retrieval testing
+
+Ask ChatGPT, Google AI Mode, Perplexity, etc. the same entity questions.
+
+Record incorrect answers.
+
+Identify collisions.
+
+Correct the underlying information architecture.
+
+Retest over time.
+
+That last step is particularly important because AI visibility isn't the same thing as search ranking.
+
+One important caution
+SPXI's current site makes a stronger and more interesting claim than simply "use structured data": it reports 690 observations across 516 named query addresses and 10 generative surfaces as of its October 2, 2026 registry. But it explicitly says controlled comparisons have not yet established causal efficacy, effect size, generalization, or which individual protocol components cause the observed effects. 
+S
+SPXI Protocol
+
+So I'd currently treat SPXI as an emerging methodology worth experimenting with, rather than an established industry standard whose can walk through what an actual SPXI-style implementation would look like promised effects are settled.
+
+The protocol itself is openly available under CC BY 4.0, and the reference implementation is at spxi.dev. 
+S
+SPXI Protocol
+
+If your interest is using SPXI to get a particular company, person, product, or website accurately represented in ChatGPT/Google, tell me what the entity is and I can walk through what an actual SPXI-style implementation would look like—including the specific pages, structured data, identifiers, and verification process.
+
+
+
+SS
+Sources
+
+
+Edge Delta
+Who Owns This 503? Ask Your Terminal.
+Edge Delta's Knowledge Graph, automatically maintained map of your services, teams, and incidents
+Ad
+
+
+No file chosenNo file chosenNo file chosen
+
+Chat with ChatGPT
+Ask ChatGPT
+
+
+
