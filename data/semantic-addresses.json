@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-02T10:36:13Z",
+  "regenerated_at": "2026-10-02T13:00:37Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "08ea3e427575edc66e09c96a506de30d3da24ce638c43cb896dddc053eca5ab1",
+    "mm-main-capture": "0b2a3567120467485f40f6ba491f0948284f109a900e033b8804accabe352fdf",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -31,7 +31,7 @@
     "https://leesharks.com/captures"
   ],
   "total_addresses": 2275,
-  "total_observations": 762,
+  "total_observations": 763,
   "class_counts": {
     "subjunctive": 1743,
     "observed_address": 514,
@@ -63593,6 +63593,19 @@
           "record_url": "https://www.alexanarch.org/captures/lee-sharks-bing-copilot-biography-20260711/#who-is-lee-sharks-20260813",
           "mirror_gallery_url": "https://www.leesharks.com/captures/#who-is-lee-sharks-20260813",
           "details_excerpt": "IDENTITY QUERY, ZERO ARCHIVE. The most direct possible question about the author returns no institutional source at all and offers a marine animal as a probable alternative referent. Four of nine cards are collisions."
+        },
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-02",
+          "status": "THE AUDIT BEFORE THE ENTITY",
+          "surface": "Claude (claude.ai)",
+          "source_format": "Source chips expose site labels only. Shown: medium ×3; github ×2; alexanarch ×2; huggingface ×2; pressherald ×1. Round one rests on one GitHub page and a Press Herald obituary. Citation count per composition unknown, not zero.",
+          "section": "People",
+          "slug": "who-is-lee-sharks-claude-20261002",
+          "gallery_url": "https://www.alexanarch.org/captures/#who-is-lee-sharks-claude-20261002",
+          "record_url": "https://www.alexanarch.org/captures/who-is-lee-sharks-claude-20261002/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#who-is-lee-sharks-claude-20261002",
+          "details_excerpt": "THE AUDIT BEFORE THE ENTITY: asked 'who is lee sharks?' on a new account, Claude runs two searches, reads one GitHub page and answers with doubt: 'I couldn't find much reliable information', 'no independent coverage … tu"
         }
       ],
       "deposit_links": [
@@ -63618,9 +63631,16 @@
           "primary": true
         }
       ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "person",
+        "spxi_treatment": "full",
+        "basis": "Lee Sharks is the archive's orthonym (leesharks.com; the Metadata Packet's disambiguation matrix). Recorded 2026-10-02."
+      },
       "observation_class": "observed_address",
-      "latest_observation_date": "2026-08-13",
-      "latest_status": "CAPTURE"
+      "latest_observation_date": "2026-10-02",
+      "latest_status": "THE AUDIT BEFORE THE ENTITY"
     },
     "who is mary lee": {
       "canonical_query": "who is mary lee",
