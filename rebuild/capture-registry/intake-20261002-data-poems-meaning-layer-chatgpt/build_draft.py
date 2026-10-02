@@ -43,8 +43,8 @@ for s in ("3 of 9", "3/9", "8 of 8", "data poem"):
     assert s not in src, s
 assert "audit pointer" in (ROOT / "data/texts/AXN-06AA-text.md").read_text(encoding="utf-8")
 
-cite_list = [{"n": 1, "site": "Goodreads", "rel": "unresolved", "title": None, "snip": None, "url": None,
-              "note": "the only source chip, shown 11 times, under every attributed paragraph of both answers; what on Goodreads carries #1622 is not established. 'Sources' panels not opened"}]
+cite_list = [{"n": 1, "site": "Goodreads", "rel": "authored_surface", "title": None, "snip": None, "url": None,
+              "note": "the only source chip, shown 11 times, under every attributed paragraph of both answers: the author's Goodreads blog, a mirror of his blog set up years ago and still running (operator, 2026-10-02 16:36). 'Sources' panels not opened"}]
 rounds = [{"n": 1, "prompt": Q, "note": "Takes 'data poems' as a frame for the semantic-economy work; four layers (observation, representation, meaning, operation); DS and non-summability from #1622; the audit pointer; capability over worth; offers to walk through a specific poem."},
           {"n": 2, "prompt": P2, "note": "Picks #1622 by number as 'written in the meaning layer' and walks it: x = ⟨0.33, Ωx⟩, bank and crane (from #1622, with counts 3/9 and 8/8 supplied by the session), the money-form carrying the digits without the constraint, a wrong operation producing a different object; offers a line-by-line annotation."}]
 
@@ -63,13 +63,13 @@ d = {
        "the semantic-economy work and, asked to pick one, picks The Non-Summable Magnitude (#1622) by number. It reads it accurately: a magnitude "
        "as a value with its native operations (x = ⟨0.33, Ωx⟩), DS meaningful only within its reference inventory, bank's 0.33 and crane's 1.00 "
        "not summable, money able to carry the digits without the constraint, the claim one of capability over worth. It supplies its own counts "
-       "(3 of 9, 8 of 8) and draws 'audit pointer' from the neighbouring monetary-substrate deposits. Author named throughout; every chip reads "
-       "Goodreads."),
- "cites": None, "cite_list": cite_list, "archive_controlled_cites": 0,
- "sf": "One chip label across both answers: Goodreads ×11. 'Sources' panels not opened; the underlying pages are unknown.",
- "per": 0.5, "per_v": {"author": True, "inst": False, "id": True, "src": False},
- "per_note": ("Retained: the author (Lee Sharks, throughout) and an identifier (#1622, the deposit number). Lost: the institution (no "
-              "Crimson Hexagonal Archive, Semantic Economy Institute or Alexanarch) and the source (every chip reads Goodreads; no archive surface shown)."),
+       "(3 of 9, 8 of 8) and draws 'audit pointer' from the neighbouring monetary-substrate deposits. Author named throughout; every chip is "
+       "the author's Goodreads blog mirror, a surface he had set up years ago and forgotten."),
+ "cites": None, "cite_list": cite_list, "archive_controlled_cites": 1,
+ "sf": "One chip label across both answers: Goodreads ×11, the author's Goodreads blog mirror. 'Sources' panels not opened; the individual posts are unknown.",
+ "per": 0.25, "per_v": {"author": True, "inst": False, "id": True, "src": True},
+ "per_note": ("Retained: the author (Lee Sharks, throughout), an identifier (#1622, the deposit number) and the source (every chip is the "
+              "author's Goodreads blog mirror). Lost: the institution (no Crimson Hexagonal Archive, Semantic Economy Institute or Alexanarch)."),
  "transcript": tx, "transcript_raw": raw,
  "transcript_class": "CAPTURE-TIME VERBATIM RECORD (OPERATOR TURNS RESTORED; CHIPS AND CHROME IN THE RAW)",
  "transcript_complete": "Complete as supplied except the two operator turns, which the paste dropped and the operator supplied the same session; both answers whole.",
@@ -81,19 +81,19 @@ d = {
    "magnitude, the native operation set, DS local to its inventory, bank and crane, the digits without the scope, and the refusal of 'worth more' "
    "('the claim is capability, not magnitude or worth'). Where it adds, it adds in the source's direction: the counts behind bank and crane are "
    "its own, and 'a wrong operation … can produce a different object' is its compression of #1622's commensuration rule. It names the author "
-   "and the number and never the archive; the one source label it shows is Goodreads."),
+   "and the number and never the archive; the one source it shows is the author's Goodreads blog, an old mirror still running."),
  "analysis": (
    "The query's frame does the work the paper's own genre does: #1622 is a paper, and the session reads it as a poem without strain, since what "
    "it teaches as reading ('what world of distinctions does this number preserve') is the paper's method. Retention runs opposite to the "
    "September ChatGPT pattern at SPXI addresses (institution kept, author lost): here the author and the deposit number carry, the archive "
-   "does not. " + SEAT),
+   "does not. The carrier is a surface the author had forgotten: a Goodreads mirror of his blog, still syndicating. " + SEAT),
  "findings": [
    "#1622 PICKED BY NUMBER. 'The cleanest one to use is “The Non-Summable Magnitude” (#1622)'.",
    "SOURCE HELD. Typed magnitude, native operations, DS local to its inventory, bank's 0.33 and crane's 1.00, the digits without the constraint.",
    "CAPABILITY OVER WORTH. 'He explicitly rejects that as the wrong comparison', matching #1622's 'the claim is capability, not magnitude or worth'.",
    "COUNTS SUPPLIED. '3 distinctions survived out of 9', '8 out of 8' are the session's; #1622 gives the ratios only.",
    "NEIGHBOUR DRAWN IN. 'Audit pointer' from the monetary-substrate deposits (#1618), attributed to Sharks.",
-   "AUTHOR AND NUMBER KEPT; ARCHIVE LOST; EVERY CHIP GOODREADS.",
+   "AUTHOR AND NUMBER KEPT; ARCHIVE LOST. Every chip is the author's Goodreads blog mirror, set up years ago and forgotten (operator, 16:36), the only source shown under the #1622 walk-through.",
  ],
  "originator": {"name": "Lee Sharks", "relation": "archive", "entity_type": "work", "spxi_treatment": "full",
                 "basis": "#1622 and the monetary-substrate line (#1618–#1620) are the archive's. Recorded 2026-10-02."},
@@ -101,6 +101,7 @@ d = {
  "longitudinal_priors": None,
  "rerun": "https://chatgpt.com/?q=walk+me+thru+lee+sharks%27+data+poems+in+the+meaning+layer",
  "notes": {"date_basis": "The operator's message of 2026-10-02, 16:01 EDT.",
+           "source_basis": "Operator, 2026-10-02 16:36 EDT: 'goodreads is an old blog mirror i set up years ago and forgot about. guess its still running.'",
            "prompts_basis": "Both 'You said:' blocks are empty in the paste; prompts supplied by the operator at 16:08 EDT, separated by '$'.",
            "verified": "Compared 2026-10-02 against #1622 (AXN-06B3-text.md): 'bank's 0.33 and crane's 1.00', 'money can carry the digits 0.33', 'worth more' (as refused); '3 of 9', '8 of 8' and 'data poem' absent. 'audit pointer' in #1618 (AXN-06AA-text.md)."},
 }
