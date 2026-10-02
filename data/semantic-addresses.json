@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-02T14:49:54Z",
+  "regenerated_at": "2026-10-02T17:35:58Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "a8814261e6d4e78e9da57035f635e06778dc0ce7a8f78c897dbcdca6497a52f1",
+    "mm-main-capture": "8bb186a60d19b5d48381d6f4478877621f7b85b8c2ae2f8a4de3443c7f2d3266",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2275,
-  "total_observations": 763,
+  "total_addresses": 2276,
+  "total_observations": 765,
   "class_counts": {
     "subjunctive": 1743,
-    "observed_address": 514,
-    "verified_non_address": 18
+    "observed_address": 516,
+    "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1640,
+    "unmatched": 1641,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -2772,10 +2772,24 @@
         "RF-100-battery"
       ],
       "sources": [
+        "mm-main-capture",
         "mm-rf-reception",
         "mm-rf-battery"
       ],
       "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-02",
+          "status": "THE OPERATOR FIRST, AS SCHOLARSHIP",
+          "surface": "Google AI Overview",
+          "source_format": "15 source cards: 4 archive-controlled (medium.com #202; crimsonhexagonal.org, the Algorithmic Kernel page; zenodo.org, the work plan, served after the account's termination; alexanarch.org #1415), 11 on rabbinic midrash (Brill, My Jewish Learning, Rabbi Laura Duhan-Kaplan, Bible Odyssey, Substack, Chabad, HuffPost, Sacred Structures, Headcoverings by Devorah, two videos). The archive's cards close the rail. No inline citation markers.",
+          "section": "Revelation & Theology",
+          "slug": "midrashim-transform-aio-20261002",
+          "gallery_url": "https://www.alexanarch.org/captures/#midrashim-transform-aio-20261002",
+          "record_url": "https://www.alexanarch.org/captures/midrashim-transform-aio-20261002/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#midrashim-transform-aio-20261002",
+          "details_excerpt": "THE OPERATOR FIRST, AS SCHOLARSHIP: asked for \"midrashim transform\" in quotes, the Overview gives the archive's operator as sense 1: 'the operation M', 'a formally specified structural or algorithmic operation' mapping c"
+        },
         {
           "source": "mm-rf-reception",
           "date": "2026-06-17",
@@ -2785,9 +2799,16 @@
           "details_excerpt": "AI Mode reads as conventional rabbinic midrash — filling narrative gaps, addressing ethical dilemmas, modernizing. Grokipedia mentions 'midrashim transform' in context of Thirteen Attributes of Mercy. No connection to th"
         }
       ],
-      "observation_class": "verified_non_address",
-      "latest_observation_date": "2026-06-17",
-      "latest_status": "BASIN_MISS"
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "full",
+        "basis": "The midrashim transform M is the archive's operator (#202; #832; #1414; #1415). Recorded 2026-10-02."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-02",
+      "latest_status": "THE OPERATOR FIRST, AS SCHOLARSHIP"
     },
     "\"model collapse\"": {
       "canonical_query": "\"model collapse\"",
@@ -4206,6 +4227,41 @@
       "observation_class": "verified_non_address",
       "latest_observation_date": "2026-06-17",
       "latest_status": "CORRECTION"
+    },
+    "\"revelation first thesis\"": {
+      "canonical_query": "\"revelation first thesis\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-02",
+          "status": "EXACT MATCH DISPERSED BY ORDINAL",
+          "surface": "Google AI Overview",
+          "source_format": "8 source cards: 2 archive-controlled (revelationfirst.com, one card carrying #202's AXN in its title, one the work plan's Josephus sentence), 3 on Benjamin's Theses (SFU, autonomies.org, Wikipedia), 1 Wiley card on the Pannenberg line, 1 video, 1 late-date (Redeemed Mind). Inline citations are /goto redirects.",
+          "section": "Revelation & Theology",
+          "slug": "revelation-first-thesis-aio-20261002",
+          "gallery_url": "https://www.alexanarch.org/captures/#revelation-first-thesis-aio-20261002",
+          "record_url": "https://www.alexanarch.org/captures/revelation-first-thesis-aio-20261002/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#revelation-first-thesis-aio-20261002",
+          "details_excerpt": "EXACT MATCH DISPERSED BY ORDINAL: asked for \"revelation first thesis\" in quotes, the Overview gives the archive's thesis first and correctly (Revelation the earliest written New Testament document, the rest unfolding fro"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "full",
+        "basis": "The Revelation First thesis is the archive's (#202; revelationfirst.com; EA-LOGOS-REVFIRST series). Recorded 2026-10-02."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-02",
+      "latest_status": "EXACT MATCH DISPERSED BY ORDINAL"
     },
     "\"revelation first\"": {
       "canonical_query": "\"revelation first\"",
