@@ -85,7 +85,27 @@ COPY_JS = ("<script>document.addEventListener('click',function(ev){var b=ev.targ
            "b.textContent='copied';setTimeout(function(){b.textContent=o},1200)})}});</script>")
 
 
-def page(e, reg, style, addr_url):
+def deposit_titles():
+    """deposit number -> title, from the deposit registry, for the related-deposits line."""
+    p = ROOT / "data/registry.json"
+    if not p.exists():
+        return {}
+    return {d.get("deposit_number"): d.get("title") or "" for d in json.loads(p.read_text())["deposits"]}
+
+
+def related_line(e, titles):
+    nums = [n for n in (e.get("related_deposits") or []) if isinstance(n, int)]
+    if not nums:
+        return ""
+    items = []
+    for n in nums:
+        t = titles.get(n, "")
+        t = (t[:90] + "…") if len(t) > 90 else t
+        items.append(f'<a href="/s/records/{n}/">#{n}</a>' + (f" {esc(t)}" if t else ""))
+    return '<p class="sub" style="font-size:.85em">Related deposits: ' + " · ".join(items) + "</p>\n"
+
+
+def page(e, reg, style, addr_url, titles=None):
     slug = e["slug"]
     q = e.get("q") or slug
     surf = ", ".join(e.get("surfaces") or [e.get("surface") or ""])
@@ -109,6 +129,9 @@ def page(e, reg, style, addr_url):
              '<a href="/captures/index.json">table of contents</a>']
     if addr_url:
         links.insert(1, f'<a href="{esc(addr_url)}">the address page</a>')
+    rel = [n for n in (e.get("related_deposits") or []) if isinstance(n, int)]
+    if rel:
+        ld["mentions"] = [{"@type": "CreativeWork", "url": f"{BASE}/s/records/{n}/", "identifier": f"#{n}"} for n in rel]
     return (
         "<!doctype html>\n<html lang=\"en\"><head>\n" + MARK + "\n"
         '<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">\n'
@@ -124,6 +147,7 @@ def page(e, reg, style, addr_url):
         f'<p style="font-size:.85em;margin:10px 0 4px"><a href="/captures/">Capture Registry</a> › capture <code>{esc(slug)}</code></p>\n'
         f'<p class="sub" style="font-size:.85em">One record of the canonical Capture Registry (EA-WG-CAPTURES-01), '
         f'cited at <code>{url}</code>. ' + " · ".join(links) + ".</p>\n"
+        + related_line(e, titles or {})
         + G.card(e, record=True) + "\n" + COPY_JS + "\n</body></html>\n")
 
 
@@ -147,6 +171,7 @@ def build():
     entries = reg["entries"]
     style = gallery_style()
     addr = address_pages()
+    titles = deposit_titles()
     files = {}
     toc = []
     for e in entries:
@@ -155,7 +180,7 @@ def build():
         rec["record_url"] = record_url(slug)
         rj = jdump(rec)
         files[f"{slug}/record.json"] = rj
-        files[f"{slug}/index.html"] = page(e, reg, style, addr.get(slug))
+        files[f"{slug}/index.html"] = page(e, reg, style, addr.get(slug), titles)
         obs = []
         for o in e.get("observations") or []:
             os_ = o.get("slug") or slug

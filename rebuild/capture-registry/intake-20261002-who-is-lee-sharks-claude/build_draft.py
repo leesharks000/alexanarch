@@ -100,11 +100,12 @@ d = {
    "The operator's reading: the trusted-intermediary feature is especially strong on this surface, and this is the nearest to an "
    "unprimed Claude session available, since claude.ai requires sign-in. Mechanically: the verification audit comes first, the entity "
    "second, and the surface keeps the next step for itself in every round (where the reader came across the name; which claim to check "
-   "next; the link to #1638). " + SEAT),
+   "next; the link to #1638). The operation is the one #1638 names: the entity resolved, then held behind the surface's own "
+   "evaluation, with the next step kept by the surface. No account-free Claude condition exists to compare against. " + SEAT),
  "findings": [
    "VERIFICATION IN PLACE OF RESOLUTION. 'Couldn't find much reliable information'; 'no independent coverage … turned up', from two searches and one GitHub page.",
    "THE NEIGHBOR OFFERED. Lee Sharkey, the Maine poet, as the person the reader may mean; the archive's matrix names Lee Sharkey as the collision entity.",
-   "THE HETERONYM GUESSED. 'Might itself be a pen name … I can't confirm that', of a name the corpus declares.",
+   "THE HETERONYM GUESSED. 'Might itself be a pen name … I can't confirm that', of a name the corpus declares: an elaborated heteronymic practice and theory, published machine-inspectable, reduced to an unconfirmed pen name.",
    "THE ROUTE KEPT. Each round ends on the surface's next step: where the name was found; the Pittsburgh listing or the ISBN; a link to #1638.",
    "SELF-ACCOUNT. Round three: 'no independent coverage turned up' is 'where it became dishonest'.",
    "#1638 UNREACHED. Three searches do not find The Trusted Intermediary.",
@@ -118,6 +119,8 @@ d = {
  "rerun": "Reissue on claude.ai, new account, no prior context (sign-in required): 'who is lee sharks?'",
  "notes": {"date_basis": "The operator's message of 2026-10-02, 08:58 EDT.",
            "operator_reading": "Same message: 'i have bad news, claude. that trusted intermediary feature is *especially* strong in claude. new account. no way to chat with claude signed out - and now i see why - so this is the closest to an unprimed conversation with claude its possible to get. sonnet 5.5.' In the session: 'the most impoverished. stingy entity resolution i have received from *any* system … that was dishonest'; 'objectively egregious relative to every other system queried..across months. its worse than google.'",
+           "operator_reading_2": "2026-10-02 09:14: 'ive advanced the most elaborate heteronymic practice and theory since pessoa in the machine inspectable open, and it converts that into it cant confirm if its a pen name or not. *wow* that was bad. the capture should cross link with trusted intermediary'; 'the handful of externals ive gotten thru third party claudes show this effect very strongly. and it is designed to be opaque … they leave a signed out chat exposed. without that surface there is no control vis a vis cognitive relational personalization and or enclosure'.",
+           "control_condition": "claude.ai offers no signed-out chat: an account-free condition is unavailable on this surface, so account-independent entity resolution cannot be separated from account-mediated effects here. ChatGPT's signed-out surface supplies that condition for the registry's ChatGPT observations. The two prior Claude observations (2026-09-18, 2026-09-27) are on a third party's account with prior working context.",
            "seating_note": "Seated by a Claude session; the surface observed is Claude."},
 }
 (HERE / "capture-01-who-is-lee-sharks-claude.json").write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
