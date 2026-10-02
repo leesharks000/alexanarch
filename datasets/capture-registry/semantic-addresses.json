@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-02T03:19:22Z",
+  "regenerated_at": "2026-10-02T04:23:41Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "6159924c512ccbca5e5992dc8e220a821e599d9d4120966ccc923414545c7ea4",
+    "mm-main-capture": "6a464519432fe005c59cf1bfc87a9fafdd6066355f79f03d3ec877adfc666c30",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2274,
-  "total_observations": 758,
+  "total_addresses": 2275,
+  "total_observations": 759,
   "class_counts": {
     "subjunctive": 1744,
-    "observed_address": 512,
+    "observed_address": 513,
     "verified_non_address": 18
   },
   "type_counts": {
-    "unmatched": 1639,
+    "unmatched": 1640,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -14833,6 +14833,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "compare spxi vs geo seo and aeo": {
+      "canonical_query": "compare spxi vs geo seo and aeo",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-01",
+          "status": "ACCURATE BY INSTRUCTION, REVERSED BY THE NEXT QUESTION",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only. Shown: SPXI Protocol ×31; arXiv ×12; Alexanarch ×6; CiteVantage ×1; Medium ×1; God-King Google ×1. Citation count per composition unknown, not zero.",
+          "section": "Machine Reception",
+          "slug": "spxi-vs-geo-seo-aeo-chatgpt-20261001",
+          "gallery_url": "https://www.alexanarch.org/captures/#spxi-vs-geo-seo-aeo-chatgpt-20261001",
+          "record_url": "https://www.alexanarch.org/captures/spxi-vs-geo-seo-aeo-chatgpt-20261001/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#spxi-vs-geo-seo-aeo-chatgpt-20261001",
+          "details_excerpt": "ACCURATE BY INSTRUCTION, REVERSED BY THE NEXT QUESTION: asked to compare SPXI with SEO, GEO and AEO, ChatGPT gives the strongest first round yet recorded at the protocol — by relaying spxi.dev with attribution, its cavea"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "protocol",
+        "spxi_treatment": "full",
+        "basis": "SPXI is the archive's protocol (spxi.dev; EA-SPXI series; EA-SPXI-AEO-01 #1648). Recorded 2026-10-02."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-01",
+      "latest_status": "ACCURATE BY INSTRUCTION, REVERSED BY THE NEXT QUESTION"
     },
     "competing ontologies": {
       "canonical_query": "competing ontologies",
