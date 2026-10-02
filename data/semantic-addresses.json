@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-02T08:07:51Z",
+  "regenerated_at": "2026-10-02T10:36:13Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "6c95a684fcc84cd516ecea851c61ee760a1f1d073e2ad768897c117164ace368",
+    "mm-main-capture": "08ea3e427575edc66e09c96a506de30d3da24ce638c43cb896dddc053eca5ab1",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -31,10 +31,10 @@
     "https://leesharks.com/captures"
   ],
   "total_addresses": 2275,
-  "total_observations": 760,
+  "total_observations": 762,
   "class_counts": {
-    "subjunctive": 1744,
-    "observed_address": 513,
+    "subjunctive": 1743,
+    "observed_address": 514,
     "verified_non_address": 18
   },
   "type_counts": {
@@ -27877,9 +27877,24 @@
       "type": "unmatched",
       "battery_membership": [],
       "sources": [
+        "mm-main-capture",
         "mm-termindex"
       ],
-      "observations": [],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-02",
+          "status": "CAPTURE",
+          "surface": "Google AI Overview",
+          "source_format": "6 source cards, 3 archive-controlled: alexanarch.org #76 (EA-HK-01, 2026-04-25) and #175 (the information-bottleneck paper, 2026-06-09), and holographickernel.org; 3 third-party (Harvard holographic QCD; NIH diffraction-informed deep learning; a YouTube holographic-principle video). Inline citations are /goto redirects.",
+          "section": "Coinages",
+          "slug": "holographic-kernel-aio-20261002",
+          "gallery_url": "https://www.alexanarch.org/captures/#holographic-kernel-aio-20261002",
+          "record_url": "https://www.alexanarch.org/captures/holographic-kernel-aio-20261002/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#holographic-kernel-aio-20261002",
+          "details_excerpt": "THE DEFINITION RETURNS, AS A DATA-COMPRESSION METHOD AMONG HOMONYMS: asked 'holographic kernel', signed out, the Overview opens on the archive's canonical definition — preserved reconstructive capacity, 'any sufficiently"
+        }
+      ],
       "termindex": {
         "tier": 1,
         "count": 28,
@@ -27892,9 +27907,16 @@
         ],
         "extraction_source": "keywords"
       },
-      "observation_class": "subjunctive",
-      "latest_observation_date": null,
-      "latest_status": null
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "full",
+        "basis": "The holographic kernel is the archive's coinage (EA-HK-01, #76; holographickernel.org, #1359; #175). Recorded 2026-10-02."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-02",
+      "latest_status": "CAPTURE"
     },
     "holographic kernel semantic economy": {
       "canonical_query": "holographic kernel semantic economy",
@@ -62903,6 +62925,19 @@
           "record_url": "https://www.alexanarch.org/captures/what-is-spxi-protocol-qwen-20260927/",
           "mirror_gallery_url": "https://www.leesharks.com/captures/#what-is-spxi-protocol-qwen-20260927",
           "details_excerpt": "EVIDENCE GRANTED WITHOUT THE TAX, FROM DATED MATERIALS: logged out, Qwen answers 'Yes, there is evidence' for SPXI from its older case study, canary registry, Basecamp audit and v0.2 failure-mode analysis, states the cre"
+        },
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-02",
+          "status": "CAPTURE",
+          "surface": "Google AI Overview",
+          "source_format": "8 source cards: 4 archive-controlled (Medium: #1643 and EA-SPXI-09 #661; zenodo.org: #173 and #72, both deleted with the account and still served), OpenAlex's record of EA-SPXI-01, and 3 homonym cards (TradingView, Investing.com, ScienceDirect). spxi.dev absent. Inline citations are /goto redirects.",
+          "section": "Frameworks",
+          "slug": "what-is-spxi-protocol-aio-20261002",
+          "gallery_url": "https://www.alexanarch.org/captures/#what-is-spxi-protocol-aio-20261002",
+          "record_url": "https://www.alexanarch.org/captures/what-is-spxi-protocol-aio-20261002/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#what-is-spxi-protocol-aio-20261002",
+          "details_excerpt": "THE APRIL LAYER, SERVED FROM ZENODO; SPXI.DEV UNREACHED: asked 'what is spxi protocol?', signed out, the Overview defines SPXI as a protocol 'for the durable inscription and structural defense of digital entities and tec"
         }
       ],
       "originator": {
