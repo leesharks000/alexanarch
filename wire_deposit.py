@@ -1992,6 +1992,7 @@ def regenerate_static_page(d, eidx, registry=None):
 {mods_html}
 {traversal_html}
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script src="https://www.themandalaoracle.com/embed/sigil.js" defer></script>
 <div class="footer"><strong>Alexanarch</strong> · Self-governing static archive<div style="color:var(--accent)">∮ = 1</div></div>
 </div></body></html>'''
     
