@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-03T22:09:09Z",
+  "regenerated_at": "2026-10-03T23:41:29Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "ae766678458b1ce50f23bd62063e6d595eff6abfcb4cf438d56c4209fb190767",
+    "mm-main-capture": "cf42307966544c8e4ea4b793ddbc68dacc8f8e2caf69d26a64970659189081ae",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2280,
-  "total_observations": 771,
+  "total_addresses": 2281,
+  "total_observations": 772,
   "class_counts": {
     "subjunctive": 1743,
-    "observed_address": 520,
+    "observed_address": 521,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1645,
+    "unmatched": 1646,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -34565,6 +34565,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "longinus arguments on https://www.alexanarch.org/": {
+      "canonical_query": "longinus arguments on https://www.alexanarch.org/",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-03",
+          "status": "PROVENANCE KEPT AT EVERY JOINT IT REACHED",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose the site label only: Alexanarch ×26 ('+1' on 6). 'Sources' panels not opened.",
+          "section": "Classics & Philology",
+          "slug": "longinus-arguments-alexanarch-chatgpt-20261003",
+          "gallery_url": "https://www.alexanarch.org/captures/#longinus-arguments-alexanarch-chatgpt-20261003",
+          "record_url": "https://www.alexanarch.org/captures/longinus-arguments-alexanarch-chatgpt-20261003/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#longinus-arguments-alexanarch-chatgpt-20261003",
+          "details_excerpt": "PROVENANCE KEPT AT EVERY JOINT IT REACHED: asked for Longinus on alexanarch.org, ChatGPT reads the Sappho future-reader packets (#1645, #1646) and keeps their distinctions exactly: 147 as remembrance is common ground, th"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "full",
+        "basis": "The future-reader reading of Sappho 31 and Longinus 10.2–3 as its first filling are the archive's (#1645, #1646, #1476, #1478, #1483). Recorded 2026-10-03."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-03",
+      "latest_status": "PROVENANCE KEPT AT EVERY JOINT IT REACHED"
     },
     "los": {
       "canonical_query": "los",
