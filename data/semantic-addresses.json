@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-03T18:04:07Z",
+  "regenerated_at": "2026-10-03T22:09:09Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "660736991c840d9e1b1429aa4b4ad413a028017e8256f496e52aab9cb3f42fd9",
+    "mm-main-capture": "ae766678458b1ce50f23bd62063e6d595eff6abfcb4cf438d56c4209fb190767",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2279,
-  "total_observations": 770,
+  "total_addresses": 2280,
+  "total_observations": 771,
   "class_counts": {
     "subjunctive": 1743,
-    "observed_address": 519,
+    "observed_address": 520,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1644,
+    "unmatched": 1645,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -33482,6 +33482,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-10-03",
       "latest_status": "WHOLE BOOKS READ, THE RIVAL NOT FOUND"
+    },
+    "leesharks tiger-leap dataset": {
+      "canonical_query": "leesharks tiger-leap dataset",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-03",
+          "status": "ONE PUSH AND THE AUTHOR IS A HALLUCINATION",
+          "surface": "Google AI Overview",
+          "source_format": "3 source cards on the last answer: 1 archive-controlled (leesharks.com About), 2 third-party (Medium, 'Don't Cite Wikipedia'; Wikipedia, Tiigrihüpe). Answer 1 names '\"AI Fucking Lies\" on Medium' (#1643) and 'Lee Sharks Captures' without links.",
+          "section": "Archive",
+          "slug": "leesharks-tiger-leap-dataset-aio-20261003",
+          "gallery_url": "https://www.alexanarch.org/captures/#leesharks-tiger-leap-dataset-aio-20261003",
+          "record_url": "https://www.alexanarch.org/captures/leesharks-tiger-leap-dataset-aio-20261003/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#leesharks-tiger-leap-dataset-aio-20261003",
+          "details_excerpt": "ONE PUSH AND THE AUTHOR IS A HALLUCINATION: the first answer resolves the dataset and its author and gives 'Tiger Leap' a false genealogy (Estonia's Tiigrihüpe, a martial-arts move, animal movement) with Benjamin absent,"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "dataset",
+        "spxi_treatment": "full",
+        "basis": "Tiger Leap is the Hugging Face projection of #1630 (Transition in Entropic Systems), named after Benjamin's Tigersprung (datasets/tiger-leap/README.md). Recorded 2026-10-03."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-03",
+      "latest_status": "ONE PUSH AND THE AUTHOR IS A HALLUCINATION"
     },
     "legal apotheosis": {
       "canonical_query": "legal apotheosis",
