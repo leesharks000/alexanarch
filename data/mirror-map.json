@@ -3,14 +3,14 @@
   "name": "Mirror Map — off-archive copies, for entity consolidation",
   "description": "Every known copy of each deposit hosted outside this archive. Its purpose is sameAs emission: mirrors on Medium, Blogger and Academia.edu cannot be made to carry rel=canonical, but the archive can declare from its own pages that those copies are the same work, which consolidates the entity graph toward the declaring page. Built because a 2026-07-26 capture showed composed answers citing scilynk, Medium and Academia.edu for six documents all deposited here: the archive was losing not to strangers but to its own distribution copies. Each mirror records its source and join method so any tier can be discarded; known-but-unlinked mirrors are emitted with url=null rather than dropped, because a missing URL is a collection task and hiding it would hide the work.",
   "generated_by": "scripts/build_mirror_map.py",
-  "generated_at": "2026-10-03T01:12:26Z",
+  "generated_at": "2026-10-03T16:43:28Z",
   "totals": {
     "deposits": 1663,
-    "deposits_with_mirrors": 861,
-    "coverage": 0.5177,
-    "mirror_links": 2869,
-    "safe_for_sameas": 1285,
-    "works_with_a_safe_mirror": 431
+    "deposits_with_mirrors": 862,
+    "coverage": 0.5183,
+    "mirror_links": 2870,
+    "safe_for_sameas": 1286,
+    "works_with_a_safe_mirror": 432
   },
   "source_counts": {
     "blog/high": 636,
@@ -27,7 +27,7 @@
     "repo/medium": 6,
     "excluded/no_alexanarch_equivalent": 9,
     "medium/unmatched": 2,
-    "medium/high": 18
+    "medium/high": 19
   },
   "confidence_note": "The resolution index tiers its own axn assignments and this map carries those tiers rather than flattening them. Only mapping types direct_verified and direct are marked safe_for_sameas; fuzzy, containment and provisional rows are retained for inspection but must not be emitted automatically. Two classes are excluded outright: misclassified_other_author and no_alexanarch_equivalent.",
   "known_gaps": {
@@ -41331,6 +41331,25 @@
           "safe_for_sameas": true,
           "dead_doi": "10.5281/zenodo.20752596",
           "note": "Sovereign registry anchor (MM-CHA)"
+        }
+      ]
+    },
+    {
+      "deposit_number": 1490,
+      "axn": "AXN:0605.SCRIPTURAL.⌛🔅🌻📌🌳🌸",
+      "title": "Prediction Memorandum: Hunter Biden and the Gnostic Presidency",
+      "record_url": "https://www.alexanarch.org/s/records/1490/",
+      "mirrors": [
+        {
+          "platform": "medium",
+          "host": "medium.com",
+          "url": "https://medium.com/@leesharks00/prediction-memorandum-hunter-biden-and-the-gnostic-presidency-1f820ece4803",
+          "source": "medium-rss",
+          "join": "title~1.00",
+          "confidence": "high",
+          "safe_for_sameas": true,
+          "handle": "leesharks00",
+          "published": "19 Aug 2026"
         }
       ]
     }
