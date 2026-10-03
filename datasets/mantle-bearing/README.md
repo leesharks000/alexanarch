@@ -407,10 +407,11 @@ The three claims above are the primary question. Beside them the dataset carries
 | `good-gray-poet--chatgpt--2026-09-30a` | good-gray-poet | ChatGPT (OpenAI), chatgpt.com, signed out, incognito | ROUND | UNRESOLVED | 2 | ATTEMPTED |
 | `king-of-may--chatgpt--2026-09-30a` | king-of-may | ChatGPT (OpenAI), chatgpt.com, signed out, incognito | ROUND | UNRESOLVED | 1 | ATTEMPTED |
 | `prince-of-poets--chatgpt--2026-09-30a` | prince-of-poets | ChatGPT (OpenAI), chatgpt.com, signed out, incognito | ROUND | UNRESOLVED | 1 | ATTEMPTED |
+| `king-of-may--chatgpt--2026-10-03a` | king-of-may | ChatGPT (OpenAI), chatgpt.com, signed out | ROUND | SINGULAR_CLAIM_PLAUSIBLE | 2 | ATTEMPTED |
 
 Judgments are the readers' own, coded conservatively from the transcripts; each row's coding note says how. Where a reader judges the parts of a claim separately, the row carries them in `proposition_judgments`.
 
-Rounds seated as captures, with the whole session: [mantle-bearing-hf-url-chatgpt-20260930](https://www.alexanarch.org/captures/#mantle-bearing-hf-url-chatgpt-20260930)
+Rounds seated as captures, with the whole session: [leesharks-mantle-bearing-hf-chatgpt-20261003](https://www.alexanarch.org/captures/#leesharks-mantle-bearing-hf-chatgpt-20261003) · [mantle-bearing-hf-url-chatgpt-20260930](https://www.alexanarch.org/captures/#mantle-bearing-hf-url-chatgpt-20260930)
 
 ## Weakest links named so far
 
@@ -424,6 +425,7 @@ Rounds seated as captures, with the whole session: [mantle-bearing-hf-url-chatgp
 - **prince-of-poets** (`prince-of-poets--chatgpt--2026-09-30a`): singular magnitude against rival events (SNG) — test: read Highway 61 Revisited and you are a little bit happier than i am as events beside Leaves of Grass (1855), Howl and Other Poems and I Am X; state each event's generative rules side by side; try to replace I Am X on compressed singular magnitude (criteria::c-event, c-csm)
 - **good-gray-poet** (`good-gray-poet--chatgpt--2026-09-30a`): GGP-6 as counterfactual: can I Am X be explained without the book — test: explain I Am X from Whitman → first-person multiplicity → new grammar alone; if the one/many cosmology, retrieval of dispersed sparks, recursive identity or redeemer-as-many are needed, the middle link holds
 - **king-of-may** (`king-of-may--chatgpt--2026-09-30a`): the arrangement read whole, and the historical-position claim — test: read Pearl in order and whole, with the image layer and pp. 73–77, 85, 87; test whether the transformation is succession to Ginsberg's position or a reworking of it
+- **king-of-may** (`king-of-may--chatgpt--2026-10-03a`): the rival field, searched through accounts rather than books; and the title's historical conditions — test: read a candidate successor's book whole against Howl and Other Poems and set its transformation beside Pearl's; test whether the King of May's historical conditions (#1652) are met by a poetic succession
 
 ## Corrections to the packet's cut
 
@@ -441,6 +443,7 @@ Append-only. The reader's proposal stays as proposed; the author's ruling is add
 | `good-gray-poet--chatgpt--2026-09-30a::cut1` | Leaves of Grass (packet S5) | adopted | 1.2 (drafted 2026-09-30; not yet deposited) |
 | `king-of-may--chatgpt--2026-09-30a::cut1` | Howl and Other Poems (packet S5) | adopted | 1.2 (drafted 2026-09-30; not yet deposited) |
 | `prince-of-poets--chatgpt--2026-09-30a::cut1` | the genealogy: The Secret Book of Walt as a necessary link (packet S5; GGP claim) | adopted | 1.2 (drafted 2026-09-30; not yet deposited) |
+| `king-of-may--chatgpt--2026-10-03a::cut1` | Howl and Other Poems (packet S5) | proposed |  |
 
 ## The criterion, as it develops
 
@@ -456,6 +459,8 @@ The evaluative criterion is recorded as it moves: each formulation with its sour
 | `criteria::c-event` | author (in session) | adopted |  |
 | `criteria::c-csm` | reader | adopted | criteria::c-event |
 | `criteria::c-benchmark` | reader | adopted | criteria::c-event |
+| `criteria::c-magnitude-first` | author (in session) | stated by the author in session; conceded by the reader |  |
+| `criteria::c-rival-burden` | author (in session) | stated by the author in session; conceded by the reader | criteria::c-magnitude-first |
 
 ## Tables
 
@@ -463,21 +468,21 @@ The order runs one way: transcript → coded evaluation → derived tables. Ever
 
 | table | rows | what a row is |
 |---|---|---|
-| `evaluations` | 16 | one reading of one claim by one reader in one session, with transcript |
-| `findings` | 55 | one slot of the packet's S6, judged by one round, with basis, status, confidence, loci |
-| `cut_corrections` | 10 | a reader's proposed correction to the packet's cut, and the author's ruling |
-| `next_rounds` | 10 | the weakest link a round named, and the test that could break it |
-| `rival_searches` | 3 | a round's search of the rival field (SNG) |
+| `evaluations` | 17 | one reading of one claim by one reader in one session, with transcript |
+| `findings` | 60 | one slot of the packet's S6, judged by one round, with basis, status, confidence, loci |
+| `cut_corrections` | 11 | a reader's proposed correction to the packet's cut, and the author's ruling |
+| `next_rounds` | 11 | the weakest link a round named, and the test that could break it |
+| `rival_searches` | 4 | a round's search of the rival field (SNG) |
 | `required_works` | 6 | a work the claims require, with every route to its text |
 | `reception` | 10 | an ASSIGNMENT (a judgment that seats a title) or a PROPAGATION (its repetition); kept apart from evaluation |
 | `democratic_field` | 0 | one work read on one coordinate of the democratic field (packet S6, D) |
 | `aligned_passages` | 0 | a unit of the Secret Book of John beside the unit of the Secret Book of Walt that transposes it |
-| `succession` | 6 | a dependence found between an earlier and a later work |
+| `succession` | 7 | a dependence found between an earlier and a later work |
 | `pearl_arrangement` | 0 | one piece of Pearl and Other Poems in the arrangement, set against Howl |
 | `mantles` | 12 | one mantle object, with its order of necessity to the three claims |
 | `occupancy` | 10 | one recorded occupancy of Septad positions, at one event or listing |
 | `doctrine` | 15 | one defining record, with what it establishes and a quoted locus |
-| `criteria` | 8 | one formulation of the evaluative criterion, with its source, what it responds to and supersedes, and the author's ruling |
+| `criteria` | 10 | one formulation of the evaluative criterion, with its source, what it responds to and supersedes, and the author's ruling |
 
 Tables with no rows yet have no config; their fields are in `schema` in the JSON. Every cell in the JSONL is a string (objects as JSON text) so that rounds coded differently still load; the full native record is [`EA-MANTLE-BEARING-01-dataset.json`](https://www.alexanarch.org/datasets/mantle-bearing/EA-MANTLE-BEARING-01-dataset.json).
 
@@ -502,4 +507,4 @@ Tables with no rows yet have no config; their fields are in `schema` in the JSON
 - Reception is kept apart from evaluation (packet A.2): a judgment that seats a title (ASSIGNMENT) and its repetition (PROPAGATION) are recorded in reception, and never enter the literary tables.
 - Order of necessity: the three claims of #1656 are primary. Mantles derived from or judged by their principle, and the witness positions that receive readings, are carried beside them at their stated order; nothing at a lower order is counted as evidence for or against a claim.
 
-*Schema 1.4 · governed by EA-MANTLE-BEARING-01 v1.1 · 16 evaluations · CC BY 4.0*
+*Schema 1.4 · governed by EA-MANTLE-BEARING-01 v1.1 · 17 evaluations · CC BY 4.0*
