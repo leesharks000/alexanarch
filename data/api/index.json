@@ -177,7 +177,7 @@
       "name": "Deposit Registry (the AXN registry)",
       "canonical_path": "/data/registry.json",
       "purpose": "Canonical list of every deposit. Drives home-page Recent Deposits, browse page, sitemap, chunks. THE source of truth — all other surfaces are derived.",
-      "current_count": 1662,
+      "current_count": 1663,
       "validates_against": [
         "/api/schemas/deposit-entry.schema.json"
       ],
@@ -556,16 +556,16 @@
   "state": {
     "canonical_path": "/data/state.json",
     "description": "Canonical generated source for all displayed counts. Read this rather than hand-maintaining counts here.",
-    "content_sha256": "3670f0dde995865a89c006c1a08986e5bb6ad2e9a7e240e19ffc34305f7982fb"
+    "content_sha256": "856680238edaf78b9c022442113c2ba8a61c1323cf95c7388a3dd5319fc01d2a"
   },
   "surface_hashes": {
     "algorithm": "sha256",
-    "hashed_at": "2026-10-03T00:27:23Z",
+    "hashed_at": "2026-10-03T01:16:41Z",
     "files": {
-      "data/registry.json": "4ed35be9dc26f177a8248cd9cb084fef9bc5039943f80c7f5532cfd2a7d2b308",
-      "data/api/search-index.json": "645fad4d349d706ef911714059a961c629d420e8ff6aba6f1b7daadda3b428f1",
-      "data/api/body-index.json": "661884833a1b92539ded9024b0950957442afba7c77e30e09e66045623619f61",
-      "data/api/axn-index.json": "fcb404d0bdd368c15a7480e3d1b009c23250ee935d4260efc003b8a5e284d6db",
+      "data/registry.json": "f221859ab055b3087ef8539cae3ad64547d8c655a3b7e03d86fb4a83e11b30df",
+      "data/api/search-index.json": "2f1e2be08111ac673b2546857a8623e78356d6e4895cf9adb6876a791999aea4",
+      "data/api/body-index.json": "a94775cdf215ca868cd7b211b42bd90627ff914399104984066e321b78dd5266",
+      "data/api/axn-index.json": "8897347017ab76fec1f7747427a1668e6e33e0da57132003ddfa46f2ea0ed8eb",
       "data/doi-resolution-index.json": "911dea19c261d9da51b20b3b10e0dc4a4e812805f43b0993d4af55742d12d248"
     }
   }
