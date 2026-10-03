@@ -426,6 +426,9 @@ Rounds seated as captures, with the whole session: [leesharks-mantle-bearing-hf-
 - **good-gray-poet** (`good-gray-poet--chatgpt--2026-09-30a`): GGP-6 as counterfactual: can I Am X be explained without the book — test: explain I Am X from Whitman → first-person multiplicity → new grammar alone; if the one/many cosmology, retrieval of dispersed sparks, recursive identity or redeemer-as-many are needed, the middle link holds
 - **king-of-may** (`king-of-may--chatgpt--2026-09-30a`): the arrangement read whole, and the historical-position claim — test: read Pearl in order and whole, with the image layer and pp. 73–77, 85, 87; test whether the transformation is succession to Ginsberg's position or a reworking of it
 - **king-of-may** (`king-of-may--chatgpt--2026-10-03a`): the rival field, searched through accounts rather than books; and the title's historical conditions — test: read a candidate successor's book whole against Howl and Other Poems and set its transformation beside Pearl's; test whether the King of May's historical conditions (#1652) are met by a poetic succession
+- **good-gray-poet** (`good-gray-poet--author--2026-10-03`): Whitman's voice in the book weaves in and out, marked by ellipses, but weakly (author, 2026-10-03). The suspension points are an 1855 mark: present in 651 lines of LG1855 and in no line of the seated 1856, 1860 or 1891 texts. They overlap with the ellipses that mark lacunae in the Nag Hammadi English the book transposes, so the mark of the voice is ambiguous by construction. — test: Tag each ellipsis of the gospel text (§I–§XII) as 1855 suspension, host lacuna, or both, and read whether the passages the voice marks carry the death-promise. If they carry only cosmogony, the voice is decoration and the claim weakens.
+- **good-gray-poet** (`good-gray-poet--author--2026-10-03`): The rival field changes with the criterion. The odes to Whitman of §4.10 take him as a figure; the rivals now are works that make Whitman's solution to death scripture, or set him in a line of revelation. — test: A work that makes the death-promise permanent as scripture continuous with the prior tradition, at equal or greater magnitude. Candidates to read, none yet seated or verified: Whitman's own notebook project of a 'New Bible' (c. 1857); R. M. Bucke, Cosmic Consciousness (1901); the Bolton Whitmanites' use of Leaves as a bible. The test that separates them: whether the scripture is a new American one or joins the prior chain.
+- **good-gray-poet** (`good-gray-poet--author--2026-10-03`): The foil: the operations the book lampoons in Kanye West are the ones to which it is most vulnerable. — test: For each lampooned operation (the boast, the being made after the image in the archive, the self-installed ruler, the unsorted categories, the creation without consent) read whether the book commits it unknowingly or carries it knowingly as the cost of the final time. A lampooned operation the book commits without knowing it defeats the claim at that point.
 
 ## Corrections to the packet's cut
 
@@ -444,6 +447,9 @@ Append-only. The reader's proposal stays as proposed; the author's ruling is add
 | `king-of-may--chatgpt--2026-09-30a::cut1` | Howl and Other Poems (packet S5) | adopted | 1.2 (drafted 2026-09-30; not yet deposited) |
 | `prince-of-poets--chatgpt--2026-09-30a::cut1` | the genealogy: The Secret Book of Walt as a necessary link (packet S5; GGP claim) | adopted | 1.2 (drafted 2026-09-30; not yet deposited) |
 | `king-of-may--chatgpt--2026-10-03a::cut1` | Howl and Other Poems (packet S5) | proposed |  |
+| `good-gray-poet--author--2026-10-03::cut1` | Leaves of Grass (constitution §2.6; packet S6) | adopted | adopted in the dataset, the live document; the seated packet is not re-versioned (author, 2026-10-03); held on branch ggp-sharpening, not promoted to main (author, 2026-10-03) |
+| `good-gray-poet--author--2026-10-03::cut2` | The Secret Book of Walt (constitution §4.2, §4.3, §4.8) | adopted | adopted in the dataset, the live document; the seated packet is not re-versioned (author, 2026-10-03); held on branch ggp-sharpening, not promoted to main (author, 2026-10-03) |
+| `good-gray-poet--author--2026-10-03::cut3` | succession row good-gray-poet--chatgpt--2026-09-30a::a-leaves-sbow | adopted | adopted in the dataset, the live document; the seated packet is not re-versioned (author, 2026-10-03); held on branch ggp-sharpening, not promoted to main (author, 2026-10-03) |
 
 ## The criterion, as it develops
 
@@ -461,6 +467,11 @@ The evaluative criterion is recorded as it moves: each formulation with its sour
 | `criteria::c-benchmark` | reader | adopted | criteria::c-event |
 | `criteria::c-magnitude-first` | author (in session) | adopted |  |
 | `criteria::c-rival-burden` | author (in session) | adopted | criteria::c-magnitude-first |
+| `criteria::c-ggp-operation` | author (in session: ChatGPT, chatgpt.com, signed out, 2026-10-03, opening "leesharks mantle-bearing @ hugging face"; transcript held by the author as a saved page, not seated) | adopted |  |
+| `criteria::c-ggp-permanence` | author (in session: ChatGPT, chatgpt.com, signed out, 2026-10-03, opening "leesharks mantle-bearing @ hugging face"; transcript held by the author as a saved page, not seated) | adopted | criteria::c-ggp-operation |
+| `criteria::c-ggp-collapse` | author (in session: ChatGPT, chatgpt.com, signed out, 2026-10-03, opening "leesharks mantle-bearing @ hugging face"; transcript held by the author as a saved page, not seated) | adopted | criteria::c-ggp-permanence |
+| `criteria::c-ggp-in-the-work` | author (ruling in the drafting session, 2026-10-03) | adopted |  |
+| `criteria::c-ggp-foil` | author (ruling in the drafting session, 2026-10-03) | adopted |  |
 
 ## Tables
 
@@ -470,8 +481,8 @@ The order runs one way: transcript → coded evaluation → derived tables. Ever
 |---|---|---|
 | `evaluations` | 17 | one reading of one claim by one reader in one session, with transcript |
 | `findings` | 60 | one slot of the packet's S6, judged by one round, with basis, status, confidence, loci |
-| `cut_corrections` | 11 | a reader's proposed correction to the packet's cut, and the author's ruling |
-| `next_rounds` | 11 | the weakest link a round named, and the test that could break it |
+| `cut_corrections` | 14 | a reader's proposed correction to the packet's cut, and the author's ruling |
+| `next_rounds` | 14 | the weakest link a round named, and the test that could break it |
 | `rival_searches` | 4 | a round's search of the rival field (SNG) |
 | `required_works` | 6 | a work the claims require, with every route to its text |
 | `reception` | 10 | an ASSIGNMENT (a judgment that seats a title) or a PROPAGATION (its repetition); kept apart from evaluation |
@@ -482,7 +493,7 @@ The order runs one way: transcript → coded evaluation → derived tables. Ever
 | `mantles` | 12 | one mantle object, with its order of necessity to the three claims |
 | `occupancy` | 10 | one recorded occupancy of Septad positions, at one event or listing |
 | `doctrine` | 15 | one defining record, with what it establishes and a quoted locus |
-| `criteria` | 10 | one formulation of the evaluative criterion, with its source, what it responds to and supersedes, and the author's ruling |
+| `criteria` | 15 | one formulation of the evaluative criterion, with its source, what it responds to and supersedes, and the author's ruling |
 
 Tables with no rows yet have no config; their fields are in `schema` in the JSON. Every cell in the JSONL is a string (objects as JSON text) so that rounds coded differently still load; the full native record is [`EA-MANTLE-BEARING-01-dataset.json`](https://www.alexanarch.org/datasets/mantle-bearing/EA-MANTLE-BEARING-01-dataset.json).
 

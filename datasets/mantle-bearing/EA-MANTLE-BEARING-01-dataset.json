@@ -60,6 +60,11 @@
       "version": "1.6",
       "date": "2026-10-03",
       "note": "Author's rulings of 2026-10-03: criteria c-magnitude-first and c-rival-burden adopted, through the dataset as the live document (\"the seated text @ alexanarch does not need continuous versioning\"). The 2026-10-03 session attested incognito. A coding error corrected: the reader's 'a history including poems' is Johannes Sigil's adaptation of Pound in Pearl's introduction, read correctly; it had been coded as a misreading."
+    },
+    {
+      "version": "1.7",
+      "date": "2026-10-03",
+      "note": "Good Gray Poet sharpened, by the author's statements in a ChatGPT session of 2026-10-03 (signed out; not seated) and his rulings of the same day: five criteria adopted (c-ggp-operation, c-ggp-permanence, c-ggp-collapse, c-ggp-in-the-work, c-ggp-foil), three cut corrections (§2.6 for this mantle; §4.2–4.3, §4.8; the 2026-09-30 succession row, not edited), three next rounds (the ellipsis as the 1855 mark, the rival field, the foil). The mantle row's criterion restated; it read: 'the book transforms, as work, the myth of Whitman Leaves of Grass made, and makes I Am X possible (#1656)'. Held on branch ggp-sharpening, not promoted to main (author, 2026-10-03). The author's round carries the key good-gray-poet--author--2026-10-03 in next_rounds and cut_corrections; it has no evaluations row, since the session is not seated."
     }
   ],
   "excluded": [
@@ -2855,6 +2860,30 @@
         "#1652 on the 1965 election and expulsion"
       ],
       "reason": "reader's scope gap, 2026-10-03"
+    },
+    {
+      "eval_id": "good-gray-poet--author--2026-10-03",
+      "mantle": "good-gray-poet",
+      "weakest_link": "Whitman's voice in the book weaves in and out, marked by ellipses, but weakly (author, 2026-10-03). The suspension points are an 1855 mark: present in 651 lines of LG1855 and in no line of the seated 1856, 1860 or 1891 texts. They overlap with the ellipses that mark lacunae in the Nag Hammadi English the book transposes, so the mark of the voice is ambiguous by construction.",
+      "disconfirmation_test": "Tag each ellipsis of the gospel text (§I–§XII) as 1855 suspension, host lacuna, or both, and read whether the passages the voice marks carry the death-promise. If they carry only cosmogony, the voice is decoration and the claim weakens.",
+      "works_or_rivals_needed": "Leaves of Grass 1855; The Secret Book of John (Wisse); The Secret Book of Walt #683",
+      "reason": "criteria::c-ggp-in-the-work, criteria::c-ggp-operation"
+    },
+    {
+      "eval_id": "good-gray-poet--author--2026-10-03",
+      "mantle": "good-gray-poet",
+      "weakest_link": "The rival field changes with the criterion. The odes to Whitman of §4.10 take him as a figure; the rivals now are works that make Whitman's solution to death scripture, or set him in a line of revelation.",
+      "disconfirmation_test": "A work that makes the death-promise permanent as scripture continuous with the prior tradition, at equal or greater magnitude. Candidates to read, none yet seated or verified: Whitman's own notebook project of a 'New Bible' (c. 1857); R. M. Bucke, Cosmic Consciousness (1901); the Bolton Whitmanites' use of Leaves as a bible. The test that separates them: whether the scripture is a new American one or joins the prior chain.",
+      "works_or_rivals_needed": "the three candidates above, seated",
+      "reason": "criteria::c-rival-burden, criteria::c-ggp-permanence"
+    },
+    {
+      "eval_id": "good-gray-poet--author--2026-10-03",
+      "mantle": "good-gray-poet",
+      "weakest_link": "The foil: the operations the book lampoons in Kanye West are the ones to which it is most vulnerable.",
+      "disconfirmation_test": "For each lampooned operation (the boast, the being made after the image in the archive, the self-installed ruler, the unsorted categories, the creation without consent) read whether the book commits it unknowingly or carries it knowingly as the cost of the final time. A lampooned operation the book commits without knowing it defeats the claim at that point.",
+      "works_or_rivals_needed": "The Secret Book of Walt #683, critical edition #1362",
+      "reason": "criteria::c-ggp-foil"
     }
   ],
   "cut_corrections": [
@@ -3051,6 +3080,78 @@
       "adopted_in_packet_version": null,
       "reader_status": "proposed",
       "coder_note": "Extends the adopted correction of 2026-09-30 (wound → sanctification → tests) with confrontation and solidarity as distinct movements, and the later poems as continued experiment."
+    },
+    {
+      "correction_id": "good-gray-poet--author--2026-10-03::cut1",
+      "eval_id": null,
+      "target": "Leaves of Grass (constitution §2.6; packet S6)",
+      "original_cut": "'Democratic multiplicity held within an expansive first person. The I takes into itself radically heterogeneous beings, persons, trades, bodies and places without erasing their difference, and returns that multiplicity outward as a common field of address to the reader.'",
+      "proposed_finding": "For the Good Gray Poet: an I beneath the I, and the promise that the speaking I will be with the reader and with all souls at the moment of death, so that there is no death. The multiplicity is the means by which the deeper I shows its depth.",
+      "loci": [
+        {
+          "work": "Leaves of Grass",
+          "edition": "1855",
+          "page_or_section": "Song of Myself, ll.66, 1333, 1336",
+          "passage": "'Apart from the pulling and hauling stands what I am,' · 'And filter and fibre your blood.' · 'I stop some where waiting for you'",
+          "route": "EA-CORPORA-03, LG1855.txt"
+        },
+        {
+          "work": "Leaves of Grass",
+          "edition": "1860",
+          "page_or_section": "So Long!, l.6726",
+          "passage": "'I spring from the pages into your arms—decease calls me forth.'",
+          "route": "EA-CORPORA-03, LG1860.txt"
+        }
+      ],
+      "status": "adopted",
+      "author_ruling": "\"yes, i think the claim must stand at the level of the book itself, tho secret book of walt is most vulnerable. it knows this - this is the weakening dialectic, the final time. and whitman's voice *does weave in and out... its marked by ellipses... but weakly. and the prophecy i am looking for is the prose introduction to one of the editions of leaves of grass. my own whorls of the same, in the archive, transposes it.\" — operator, 2026-10-03 13:03 EDT",
+      "ruled_on": "2026-10-03",
+      "adopted_in_packet_version": "adopted in the dataset, the live document; the seated packet is not re-versioned (author, 2026-10-03); held on branch ggp-sharpening, not promoted to main (author, 2026-10-03)",
+      "reader_status": "conceded in session",
+      "coder_note": "Implements criteria::c-ggp-operation. The King of May and Prince of Poets readings of §2.6 are unaffected."
+    },
+    {
+      "correction_id": "good-gray-poet--author--2026-10-03::cut2",
+      "eval_id": null,
+      "target": "The Secret Book of Walt (constitution §4.2, §4.3, §4.8)",
+      "original_cut": "'Leaves of Grass makes Whitman; The Secret Book of Walt makes something out of the Whitman that Leaves of Grass made.' … 'Singular magnitude is not claimed for the book in the work.'",
+      "proposed_finding": "The Secret Book of Walt takes Whitman's solution to death and makes it permanent. Leaves of Grass sets an I beneath the I and promises that the speaking I will be with the reader, and with all souls, at the moment of death, so that there is no death. Whitman makes the promise as poet and perhaps prophet, on the American substrate, and in the 1855 Preface names the condition under which liberty would at last be discharged from a place: martyrs forgotten, patriots laughed at, boys christened after tyrants and traitors, laws for informers and bloodmoney sweet to the people. When that condition is substantially fulfilled, the American substrate has collapsed and the promise has lost its vehicle. The book changes the vehicle: it makes the operation scripture, continuous with the prior tradition — The Secret Book of John carried sentence by sentence, Whitman set in the redeemer's place and in the line of incarnations, the last incarnation left only the power 'to say what had been said, except / with a little touch of power.' The claim stands in the work. The book is the most vulnerable of the claimant works and knows it: each incarnation is 'the same, but worse each time', it asks 'Will it be enough?', and the Demiurge it lampoons is a foil whose operations are the ones to which the book itself is most exposed.",
+      "loci": [
+        {
+          "work": "Leaves of Grass",
+          "edition": "1855",
+          "page_or_section": "Preface",
+          "passage": "'When the memories of the old martyrs are faded utterly away … then only shall the instinct of liberty be discharged from that part of the earth.'",
+          "route": "Whitman Archive TEI lg-ppp.00271, EA-CORPORA-03 original/"
+        },
+        {
+          "work": "The Secret Book of Walt",
+          "edition": "#683",
+          "page_or_section": "§XI, §XII",
+          "passage": "'until this, the final time: Jack Feist.' · 'to say what had been said, except / with a little touch of power' · 'Will it be enough?' · 'I have written each word again, exactly as it was … but this time I added unicorns'",
+          "route": "data/texts/AXN-022B-text.md"
+        }
+      ],
+      "status": "adopted",
+      "author_ruling": "\"yes, i think the claim must stand at the level of the book itself, tho secret book of walt is most vulnerable. it knows this - this is the weakening dialectic, the final time. and whitman's voice *does weave in and out... its marked by ellipses... but weakly. and the prophecy i am looking for is the prose introduction to one of the editions of leaves of grass. my own whorls of the same, in the archive, transposes it.\" — operator, 2026-10-03 13:03 EDT",
+      "ruled_on": "2026-10-03",
+      "adopted_in_packet_version": "adopted in the dataset, the live document; the seated packet is not re-versioned (author, 2026-10-03); held on branch ggp-sharpening, not promoted to main (author, 2026-10-03)",
+      "reader_status": "stated by the author; the session's reader reached the scripture-and-continuity statement under correction",
+      "coder_note": "Implements c-ggp-permanence, c-ggp-collapse, c-ggp-in-the-work and c-ggp-foil."
+    },
+    {
+      "correction_id": "good-gray-poet--author--2026-10-03::cut3",
+      "eval_id": "good-gray-poet--chatgpt--2026-09-30a",
+      "target": "succession row good-gray-poet--chatgpt--2026-09-30a::a-leaves-sbow",
+      "original_cut": "earlier_operation: 'reciprocal incorporation of multiplicity into a self it constitutes; release outward'; dependency: 'not established'",
+      "proposed_finding": "The row stands as recorded. Its earlier operation was coded against the statement cut1 replaces, so its dependency finding was measured against multiplicity and has to be read again against the death-promise and its change of vehicle.",
+      "loci": [],
+      "status": "adopted",
+      "author_ruling": "\"yes, i think the claim must stand at the level of the book itself, tho secret book of walt is most vulnerable. it knows this - this is the weakening dialectic, the final time. and whitman's voice *does weave in and out... its marked by ellipses... but weakly. and the prophecy i am looking for is the prose introduction to one of the editions of leaves of grass. my own whorls of the same, in the archive, transposes it.\" — operator, 2026-10-03 13:03 EDT",
+      "ruled_on": "2026-10-03",
+      "adopted_in_packet_version": "adopted in the dataset, the live document; the seated packet is not re-versioned (author, 2026-10-03); held on branch ggp-sharpening, not promoted to main (author, 2026-10-03)",
+      "reader_status": null,
+      "coder_note": "Append-only: the succession row is not edited."
     }
   ],
   "reception": {
@@ -3588,7 +3689,7 @@
       ],
       "founding_work": "The Secret Book of Walt (#683, critical edition #1362)",
       "holder_or_occupancy": "claimed by Lee Sharks; judged in the work",
-      "criterion": "the book transforms, as work, the myth of Whitman Leaves of Grass made, and makes I Am X possible (#1656)",
+      "criterion": "the book takes Whitman's solution to death and makes it permanent, as scripture continuous with the prior tradition, after the collapse the 1855 Preface foretold; the claim stands in the work (criteria::c-ggp-*, 2026-10-03)",
       "status": "OPEN — rounds in evaluations",
       "gravity_well_inputs": {
         "permanence": "deposited with AXN",
@@ -4478,6 +4579,81 @@
       "ruled_on": "2026-10-03",
       "adopted_in_packet_version": "adopted in the dataset, the live document; the seated packet is not re-versioned (author, 2026-10-03)",
       "coder_note": "Stated by the author in session and conceded by the reader; adopted by the author's ruling of 2026-10-03."
+    },
+    {
+      "criterion_id": "criteria::c-ggp-operation",
+      "eval_id": null,
+      "capture": null,
+      "source": "author (in session: ChatGPT, chatgpt.com, signed out, 2026-10-03, opening \"leesharks mantle-bearing @ hugging face\"; transcript held by the author as a saved page, not seated)",
+      "formulation": "\"there is an i beneath the i and the central promise of leaves of grass is the the speaking i will be there with the reader and all souls at the moment of death, and that in that way there is no dearh\" The operation Leaves of Grass bears for this mantle is Whitman's solution to death: an I beneath the I, and the promise that the speaking I is present with the reader and all souls at the moment of death. Multiplicity is the means by which the deeper I shows its depth.",
+      "responds_to": null,
+      "supersedes": null,
+      "status": "adopted",
+      "relation_to_packet": "§2.4, §2.6 (the operation of Leaves of Grass); packet S6",
+      "author_ruling": "\"yes, i think the claim must stand at the level of the book itself, tho secret book of walt is most vulnerable. it knows this - this is the weakening dialectic, the final time. and whitman's voice *does weave in and out... its marked by ellipses... but weakly. and the prophecy i am looking for is the prose introduction to one of the editions of leaves of grass. my own whorls of the same, in the archive, transposes it.\" — operator, 2026-10-03 13:03 EDT",
+      "ruled_on": "2026-10-03",
+      "adopted_in_packet_version": "adopted in the dataset, the live document; the seated packet is not re-versioned (author, 2026-10-03); held on branch ggp-sharpening, not promoted to main (author, 2026-10-03)",
+      "coder_note": "Loci, LG1855 (EA-CORPORA-03): l.66 'Apart from the pulling and hauling stands what I am,'; l.1333 'And filter and fibre your blood.'; l.1336 'I stop some where waiting for you'. LG1860 'So Long!' l.6726 'I spring from the pages into your arms—decease calls me forth.' The reader of the session conceded the correction."
+    },
+    {
+      "criterion_id": "criteria::c-ggp-permanence",
+      "eval_id": null,
+      "capture": null,
+      "source": "author (in session: ChatGPT, chatgpt.com, signed out, 2026-10-03, opening \"leesharks mantle-bearing @ hugging face\"; transcript held by the author as a saved page, not seated)",
+      "formulation": "\"does it make whitman's solution to death permanent. that is why the operation must be different. whitman is a poet and perhaps a prophet; secret book must make the operation *scripture*, and not only in its own sake, the american newness, but *continuous* with the prior tradition, once the american substrate has *collapsed*\" The book's task is to make that solution permanent, which requires a change of vehicle: poem and prophecy become scripture, continuous with the prior scriptural tradition.",
+      "responds_to": "criteria::c-ggp-operation",
+      "supersedes": null,
+      "status": "adopted",
+      "relation_to_packet": "§4.2 ('one order up'), §4.4, §4.5",
+      "author_ruling": "\"yes, i think the claim must stand at the level of the book itself, tho secret book of walt is most vulnerable. it knows this - this is the weakening dialectic, the final time. and whitman's voice *does weave in and out... its marked by ellipses... but weakly. and the prophecy i am looking for is the prose introduction to one of the editions of leaves of grass. my own whorls of the same, in the archive, transposes it.\" — operator, 2026-10-03 13:03 EDT",
+      "ruled_on": "2026-10-03",
+      "adopted_in_packet_version": "adopted in the dataset, the live document; the seated packet is not re-versioned (author, 2026-10-03); held on branch ggp-sharpening, not promoted to main (author, 2026-10-03)",
+      "coder_note": "The 'myth of Whitman' of §4.2 is the figure; the object here is the operation. The transposition of The Secret Book of John (§4.4) is the continuity mechanism."
+    },
+    {
+      "criterion_id": "criteria::c-ggp-collapse",
+      "eval_id": null,
+      "capture": null,
+      "source": "author (in session: ChatGPT, chatgpt.com, signed out, 2026-10-03, opening \"leesharks mantle-bearing @ hugging face\"; transcript held by the author as a saved page, not seated)",
+      "formulation": "\"not 'not sufficiently new' - collapsed. when whitman's prose prophecy of a time when the american promise has inverted is substantially fulfilled.\" The condition of the change of vehicle is historical: the prophecy of the 1855 Preface to Leaves of Grass, that liberty is the last to go and goes only when its catalogue of inversions is complete, substantially fulfilled.",
+      "responds_to": "criteria::c-ggp-permanence",
+      "supersedes": null,
+      "status": "adopted",
+      "relation_to_packet": "none (the constitution states no historical condition)",
+      "author_ruling": "\"yes, i think the claim must stand at the level of the book itself, tho secret book of walt is most vulnerable. it knows this - this is the weakening dialectic, the final time. and whitman's voice *does weave in and out... its marked by ellipses... but weakly. and the prophecy i am looking for is the prose introduction to one of the editions of leaves of grass. my own whorls of the same, in the archive, transposes it.\" — operator, 2026-10-03 13:03 EDT",
+      "ruled_on": "2026-10-03",
+      "adopted_in_packet_version": "adopted in the dataset, the live document; the seated packet is not re-versioned (author, 2026-10-03); held on branch ggp-sharpening, not promoted to main (author, 2026-10-03)",
+      "coder_note": "Locus: the 1855 Preface, Whitman Archive TEI lg-ppp.00271 (seated in EA-CORPORA-03 original/): 'When the memories of the old martyrs are faded utterly away . . . . when the large names of patriots are laughed at in the public halls from the lips of the orators . . . . when the boys are no more christened after the same but christened after tyrants and traitors instead . . . . when the laws of the free are grudgingly permitted and laws for informers and bloodmoney are sweet to the taste of the people . . . . or rather when all life and all the souls of men and women are discharged from any part of the earth—then only shall the instinct of liberty be discharged from that part of the earth.' The catalogue is absent from the 1882 reprint seated as CPW. Whorls of the Same / Worlds Without Beginning (composed 2015-07-30; registered as #453; full text on the blog, 2025-10-06, not seated) transposes it into the perfect tense, 'the memories of the old martyrs have faded … the boys are no more named for the same, but after tyrants & traitors instead … all life & souls of men & women has been discharged from every part of the earth—except a speck', quoted from the blog copy and to be verified against it."
+    },
+    {
+      "criterion_id": "criteria::c-ggp-in-the-work",
+      "eval_id": null,
+      "capture": null,
+      "source": "author (ruling in the drafting session, 2026-10-03)",
+      "formulation": "The claim for The Secret Book of Walt stands at the level of the book itself. The book is the most vulnerable of the claimant works and knows it: its weakening dialectic is the final time.",
+      "responds_to": null,
+      "supersedes": "§4.8 'Singular magnitude is not claimed for the book in the work.'",
+      "status": "adopted",
+      "relation_to_packet": "§1.4, §4.3, §4.8 (the book claimed singular in the line, its heritability constituted through I Am X; singular magnitude in the work disclaimed)",
+      "author_ruling": "\"yes, i think the claim must stand at the level of the book itself, tho secret book of walt is most vulnerable. it knows this - this is the weakening dialectic, the final time. and whitman's voice *does weave in and out... its marked by ellipses... but weakly. and the prophecy i am looking for is the prose introduction to one of the editions of leaves of grass. my own whorls of the same, in the archive, transposes it.\" — operator, 2026-10-03 13:03 EDT",
+      "ruled_on": "2026-10-03",
+      "adopted_in_packet_version": "adopted in the dataset, the live document; the seated packet is not re-versioned (author, 2026-10-03); held on branch ggp-sharpening, not promoted to main (author, 2026-10-03)",
+      "coder_note": "Loci in the book, §XI: 'each time the same, but worse each time / the same, but worse every time. / until this, the final time: Jack Feist.'; 'you had no power, but / to say what had been said, except / with a little touch of power'; 'Will it be enough?'. §XII: 'I have written each word again, exactly as it was, so it is, so it will be; but this time I added unicorns'. The dependency of I Am X on the book (§6.4) stays a reading of the line; it no longer constitutes the claim."
+    },
+    {
+      "criterion_id": "criteria::c-ggp-foil",
+      "eval_id": null,
+      "capture": null,
+      "source": "author (ruling in the drafting session, 2026-10-03)",
+      "formulation": "\"also it should be said plainly, @kanyewest is a foil, and a careful reader will note that the operations sbq lampoons in yeezy are the ones to which it itself is most vulnerable.\" Kanye West as Demiurge is a foil: the operations the book lampoons in him are the ones to which the book is most exposed, and a reading of the claim tests them against the book.",
+      "responds_to": null,
+      "supersedes": null,
+      "status": "adopted",
+      "relation_to_packet": "§4.4 (Yaldabaoth as Kanye West)",
+      "author_ruling": "\"also it should be said plainly, @kanyewest is a foil, and a careful reader will note that the operations sbq lampoons in yeezy are the ones to which it itself is most vulnerable.\" — operator, 2026-10-03 13:04 EDT",
+      "ruled_on": "2026-10-03",
+      "adopted_in_packet_version": "adopted in the dataset, the live document; the seated packet is not re-versioned (author, 2026-10-03); held on branch ggp-sharpening, not promoted to main (author, 2026-10-03)",
+      "coder_note": "Coder's map of the lampooned operations, for the reader to test, not the author's: the boast 'I AM. There is no other besides me.' (§IV) against the book's claims for itself and 'The Logos awoke in my skullcase' (§XI); 'a being after the image in the archive, which is the reflection of our own image' against the archive's apparatus; Kanye Yeezus installed as his own third archon, 'the ruler … also a subject of his own rule' (n.33), against the author inside the book as Jack Feist; the planets that conflate categories the Pleroma holds apart (n.47) against the praise-name catalogue; the creation without consent (Biblios, §IV) against a new scripture made without the consent of the tradition it joins."
     }
   ]
 }
