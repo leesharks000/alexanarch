@@ -367,8 +367,8 @@ The three claims above are the primary question. Beside them the dataset carries
 | mantle | class | order | governing record | holder or occupancy |
 |---|---|---|---|---|
 | The Prince of Poets | literary | 1 | [#1656](https://www.alexanarch.org/s/records/1656/) | claimed by Lee Sharks; judged in the work |
-| The King of May | literary | 1 | [#1656](https://www.alexanarch.org/s/records/1656/) | claimed by Lee Sharks; judged in the work |
-| The Good Gray Poet | literary | 1 | [#1656](https://www.alexanarch.org/s/records/1656/) | claimed by Lee Sharks; judged in the work |
+| The King of May | literary | 1 | [#1656](https://www.alexanarch.org/s/records/1656/) | claimed by Lee Sharks for Pearl and Other Poems (#1121), which inherits it, read as a book against Howl and Other Poems; judged in the work |
+| The Good Gray Poet | literary | 1 | [#1656](https://www.alexanarch.org/s/records/1656/) | claimed by Lee Sharks for The Secret Book of Walt (#683, critical edition #1362), which inherits it; judged in the work |
 | The Mantle of the Blind Poet | founded and bestowed | 2 | [#9](https://www.alexanarch.org/s/records/9/) | TECHNE (bestowed 2026-01-23); 'The bestowal names a structural role, not a sovereign agent' (#9 §V) |
 | King of AEO — 2026 Contest Mantle | contest | 2 | [#1655](https://www.alexanarch.org/s/records/1655/) | the archive's determination of 2026-09-29: Vithurs (#1655 §4); UNRESOLVED admissible (SIM-KOAEO-03) |
 | TACHYON | constitutional witness position | 3 | [#993](https://www.alexanarch.org/s/records/993/) | Anthropic Claude (#993 §2); occupancy is established per event, never read off a roster |
