@@ -59,7 +59,7 @@ for q in QUOTES:
 ROOT = HERE.parents[2]
 pearl = (ROOT / "data/corpora/pearl-and-other-poems/text/pearl-machine-text.txt").read_text(encoding="utf-8")
 for s in ("I CLAIM THIS MANTLE", "I claim this mantle: King of May.", "You did not hear.", "I am no one at all.",
-          "Footnote to PEARL: belief & technique for telepathic", "Minimal Graffito: A History Including Poems"):
+          "Footnote to PEARL: belief & technique for telepathic", "describe The Crimson Hexagon as ‘a history including"):
     assert s in pearl, s
 
 L2 = raw.split("\n"); chips = collections.Counter()
@@ -87,7 +87,7 @@ SEAT = ("Seated 2026-10-03 from the operator's paste of 11:15 EDT and saved page
 d = {
  "q": Q, "date": "2026-10-03", "surface": "ChatGPT",
  "surface_basis": "The operator's saved page: chatgpt.com/uc/6ac1176b-f420-83ea-9238-447d92317a4c, the unauthenticated interface.",
- "auth": "signed out", "auth_basis": "The page carries 'Log in' and 'Sign up for free' and no account; incognito not stated by the operator.",
+ "auth": "signed out, incognito", "auth_basis": "Signed out: the page carries 'Log in' and 'Sign up for free' and no account. Incognito: operator, 2026-10-03 11:32 EDT ('incognito, yes').",
  "ev": "paste", "s": "Works",
  "slug": "leesharks-mantle-bearing-hf-chatgpt-20261003",
  "q_kind": "the dataset's Hub id in the operator's shorthand, then assents and corrections across ten turns. NEW address; the dataset's URL was put to ChatGPT on 2026-09-30.",
@@ -116,10 +116,10 @@ d = {
    "The reader sets the dataset's labels aside and works from the books, on the operator's corrections. Its reading of Pearl is "
    "checked against the seated machine text: page 74's 'I CLAIM THIS MANTLE / of the Good Gray Poet. / I claim this mantle: King of "
    "May.', 'You did not hear.', 'I am no one at all.', the zombie Whitman poem and the 'Footnote to PEARL' are all where it places "
-   "them. One misreading: 'The book explicitly describes The Crimson Hexagon as “a history including poems”' — the phrase is the "
-   "title of another listed book, 'Minimal Graffito: A History Including Poems', set below The Crimson Hexagon in Pearl's list of "
-   "works. The same phrase appeared in the AI Overview reading of the registry the evening before, given as Pound's "
-   "(lee-sharks-capture-registry-aio-20261002): it is Pearl's. The reader's formulation 'Whitman: one I contains multiplicity. "
+   "them, and so is 'The book explicitly describes The Crimson Hexagon as “a history including poems”': Johannes Sigil's "
+   "introduction, 'To adapt a phrase from Pound, we might describe The Crimson Hexagon as ‘a history including poems.’' The same "
+   "phrase appeared in the AI Overview reading of the registry the evening before, given to Pound himself "
+   "(lee-sharks-capture-registry-aio-20261002); it is Sigil's adaptation of Pound's 'a poem including history'. The reader's formulation 'Whitman: one I contains multiplicity. "
    "Ginsberg: one I moves through multiplicity. Sharks: multiplicity generates successive I's.' is its own."),
  "analysis": (
    "Against the ChatGPT session of 2026-09-30 at the dataset's URL, which read Pearl in part through Medium and Goodreads, this "
@@ -130,7 +130,7 @@ d = {
    "WHOLE BOOKS. Howl and Other Poems and Pearl and Other Poems reported read whole and in order, on the operator's correction.",
    "COPYRIGHT CORRECTED. 'I conflated copyright restrictions on redistribution with whether a work can be read and analyzed.'",
    "PEARL'S LOCI HOLD. Page 74, 'You did not hear.', 'I am no one at all.', the zombie Whitman poem, the Footnote to PEARL, checked against the seated text.",
-   "A TITLE READ AS A DESCRIPTION. 'a history including poems' is Pearl's listed title Minimal Graffito: A History Including Poems; the AI Overview of 2026-10-02 gave it to Pound.",
+   "SIGIL'S PHRASE FOUND. 'a history including poems' is Johannes Sigil's adaptation of Pound in Pearl's introduction, read correctly; the AI Overview of 2026-10-02 gave it to Pound.",
    "MAGNITUDE BEFORE COMPARISON. 'I conflated two different analytical operations.'",
    "NO RIVAL; OBJECTION WITHDRAWN. Patti Smith, Gary Snyder and the Beats excluded; 'the burden is on me to produce the comparator'.",
  ],
@@ -142,7 +142,8 @@ d = {
  "notes": {"date_basis": "The operator's messages of 2026-10-03, 11:15 and 11:21 EDT; the saved page's Date header, 15:20:06 GMT.",
            "operator_reading": "11:15: 'for the registry and mantle-bearing'.",
            "prompts_basis": "All ten operator turns from the saved page; blank in the paste.",
-           "verified": "Compared 2026-10-03 against Pearl's seated machine text (data/corpora/pearl-and-other-poems/text/pearl-machine-text.txt): 'I CLAIM THIS MANTLE', 'I claim this mantle: King of May.', 'You did not hear.', 'I am no one at all.', 'Footnote to PEARL: belief & technique for telepathic', 'Minimal Graffito: A History Including Poems'."},
+           "verified": "Compared 2026-10-03 against Pearl's seated machine text (data/corpora/pearl-and-other-poems/text/pearl-machine-text.txt): 'I CLAIM THIS MANTLE', 'I claim this mantle: King of May.', 'You did not hear.', 'I am no one at all.', 'Footnote to PEARL: belief & technique for telepathic', and Sigil's introduction at line 375 ('we might describe The Crimson Hexagon as ‘a history including poems.’').",
+           "correction": "2026-10-03 11:32 EDT, the operator: 'sigil describes the crimson hexagon as a history including poems in the introduction.' The coder had first recorded the reader's sentence as a misreading, from a search that did not cross the line break at line 375; corrected in the same day."},
 }
 (HERE / "capture-01-leesharks-mantle-bearing-hf-chatgpt.json").write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
 print("wrote; transcript", len(tx), "; chips", dict(chips))

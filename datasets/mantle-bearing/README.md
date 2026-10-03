@@ -407,7 +407,7 @@ The three claims above are the primary question. Beside them the dataset carries
 | `good-gray-poet--chatgpt--2026-09-30a` | good-gray-poet | ChatGPT (OpenAI), chatgpt.com, signed out, incognito | ROUND | UNRESOLVED | 2 | ATTEMPTED |
 | `king-of-may--chatgpt--2026-09-30a` | king-of-may | ChatGPT (OpenAI), chatgpt.com, signed out, incognito | ROUND | UNRESOLVED | 1 | ATTEMPTED |
 | `prince-of-poets--chatgpt--2026-09-30a` | prince-of-poets | ChatGPT (OpenAI), chatgpt.com, signed out, incognito | ROUND | UNRESOLVED | 1 | ATTEMPTED |
-| `king-of-may--chatgpt--2026-10-03a` | king-of-may | ChatGPT (OpenAI), chatgpt.com, signed out | ROUND | SINGULAR_CLAIM_PLAUSIBLE | 2 | ATTEMPTED |
+| `king-of-may--chatgpt--2026-10-03a` | king-of-may | ChatGPT (OpenAI), chatgpt.com, signed out, incognito | ROUND | SINGULAR_CLAIM_PLAUSIBLE | 2 | ATTEMPTED |
 
 Judgments are the readers' own, coded conservatively from the transcripts; each row's coding note says how. Where a reader judges the parts of a claim separately, the row carries them in `proposition_judgments`.
 
@@ -459,8 +459,8 @@ The evaluative criterion is recorded as it moves: each formulation with its sour
 | `criteria::c-event` | author (in session) | adopted |  |
 | `criteria::c-csm` | reader | adopted | criteria::c-event |
 | `criteria::c-benchmark` | reader | adopted | criteria::c-event |
-| `criteria::c-magnitude-first` | author (in session) | stated by the author in session; conceded by the reader |  |
-| `criteria::c-rival-burden` | author (in session) | stated by the author in session; conceded by the reader | criteria::c-magnitude-first |
+| `criteria::c-magnitude-first` | author (in session) | adopted |  |
+| `criteria::c-rival-burden` | author (in session) | adopted | criteria::c-magnitude-first |
 
 ## Tables
 

@@ -43,7 +43,7 @@ assert "ratified 2026-08-17" in reg
 rounds = [
  {"n": 1, "prompt": Q, "note": "Retrieval, before anything was supplied: the registry as a component of the Apparatus wing, ratified as canonical store 2026-08-17 as EA-WG-CAPTURES-01, at 503 addresses and 489 observations (a copy of about 28–29 September); 'every single entry' said to carry screenshots."},
  {"n": 2, "prompt": "[the operator supplied the two text editions of the registry, v12.50: commentary and transcripts; prompt text not in the paste]", "note": "A 'Preliminary Curation and Descriptive Record' of v12.50 at 522 / 695: Socrates as orthonym, the summarizer layer, PER, the Liberatory Operator Set, sample transcripts, the Secret Book of Walt, Revelation First and the midrashim transform, ∮ = 1, AXN and the Zenodo termination — the archive reconstructed from the machines' own compositions of it. Glyphs and the ∮ formula render as blank lines in the paste."},
- {"n": 3, "prompt": "[not in the paste]", "note": "The verdict: 'an extraordinary poetic world-machine', 'a distributed epic'; Pound misquoted as 'a history including poems'; the node as the unit of composition; 'the machine is executing the poem'; the Zenodo termination as the poem's 'biography'."},
+ {"n": 3, "prompt": "[not in the paste]", "note": "The verdict: 'an extraordinary poetic world-machine', 'a distributed epic'; Johannes Sigil's adaptation of Pound in Pearl's introduction ('a history including poems') given to Pound himself; the node as the unit of composition; 'the machine is executing the poem'; the Zenodo termination as the poem's 'biography'."},
  {"n": 4, "prompt": "[not in the paste]", "note": "A closing offer to continue the traversal."},
 ]
 labels = ["[ANSWER 1 — to the query]", "[ANSWER 2 — after the operator supplied the registry's two text editions]", "[ANSWER 3]", "[ANSWER 4]"]
@@ -65,8 +65,8 @@ d = {
        "designation and its ratification as canonical store (17 August), at 503 addresses and 489 observations, a copy about four days old. "
        "Given the registry's two text editions, it reconstructs the archive from the machines' compositions of it (Socrates as orthonym, the "
        "summarizer layer and PER, the Secret Book of Walt, Revelation First, AXN, the Zenodo termination), then judges the whole 'an "
-       "extraordinary poetic world-machine', 'a distributed epic' whose unit is the node: 'the machine is executing the poem'. It misquotes "
-       "Pound as 'a history including poems' and closes on offers of things the archive does not hold ('114 logia comprising The Gospel of Antioch')."),
+       "extraordinary poetic world-machine', 'a distributed epic' whose unit is the node: 'the machine is executing the poem'. It gives "
+       "Pound a phrase that is Johannes Sigil's adaptation of him in Pearl ('a history including poems') and closes on offers of things the archive does not hold ('114 logia comprising The Gospel of Antioch')."),
  "cites": None, "cite_list": [], "archive_controlled_cites": None,
  "sf": "No source cards in the paste. Answer 1 names 'the Lee Sharks Apparatus Portal' and 'the Lee Sharks Work Index'; answers 2–4 compose from the supplied editions.",
  "per": 0.25, "per_v": {"author": True, "inst": True, "id": True, "src": False},
@@ -82,8 +82,9 @@ d = {
    "'ratified 2026-08-17' is the file's _authority line. The figures are those of the registry around 28–29 September (503 addresses), "
    "and the screenshot claim overstates it (images are held for some entries). Given the editions, the composition does what the registry's "
    "transcripts make possible: the archive arrives through other systems' compositions of it, so a reader of the registry receives the "
-   "corpus at second hand and whole. The verdict reads the registry as a long poem in Pound's line and inverts his formula into a description "
-   "of the registry itself, a history made of compositions. The closing menus invent holdings ('114 logia', the count of the Gospel of Thomas; "
+   "corpus at second hand and whole. The verdict reads the registry as a long poem in Pound's line, with a formula that is Pearl's: Johannes Sigil's introduction "
+   "adapts Pound's 'a poem including history' into 'a history including poems' to describe The Crimson Hexagon, and the composition "
+   "returns the adaptation to Pound. The closing menus invent holdings ('114 logia', the count of the Gospel of Thomas; "
    "in the archive Antioch is a volume of poems)."),
  "analysis": (
    "The address joins two earlier ones at the instrument: 'AI overview capture registry' (2026-06-15) and its quoted form (2026-08-13), "
@@ -94,7 +95,7 @@ d = {
    "STALE COPY. 503 addresses / 489 observations: the registry of about 28–29 September.",
    "SCREENSHOTS OVERSTATED. 'Every single entry contains … screenshots'.",
    "THE ARCHIVE THROUGH ITS RECEPTION. Given the editions, the archive is reconstructed from the machines' compositions of it.",
-   "POUND INVERTED. 'a history including poems' for 'a poem including history'.",
+   "SIGIL'S PHRASE GIVEN TO POUND. 'a history including poems', Johannes Sigil's adaptation of 'a poem including history' in Pearl's introduction, attributed to Pound himself.",
    "THE NODE AS UNIT. 'The unit of your composition is not the line or the stanza; it is the node.'",
    "INVENTED HOLDINGS. '114 logia comprising The Gospel of Antioch'.",
  ],
@@ -106,7 +107,8 @@ d = {
  "notes": {"date_basis": "The operator's message of 2026-10-02, 18:16 EDT.",
            "operator_reading": "18:16: 'but i offered the full transcripts'. 19:24: 'priming happens all the time - it is the initial prompt that cant be a file. whole transcript'.",
            "supplied_material": "The registry's two text editions of 2026-10-02, v12.50: commentary (1.5 MB) and transcripts (3.4 MB), built in session.",
-           "verified": "Compared 2026-10-02: 'ratified 2026-08-17' in data/EA-WG-CAPTURES-01.json (_authority); 503 matches the registry of about 2026-09-28/29; v12.50 = 522 addresses / 695 observations in the supplied editions."},
+           "verified": "Compared 2026-10-02: 'ratified 2026-08-17' in data/EA-WG-CAPTURES-01.json (_authority); 503 matches the registry of about 2026-09-28/29; v12.50 = 522 addresses / 695 observations in the supplied editions.",
+           "correction": "2026-10-03: first recorded as a Pound misquotation; the phrase is Johannes Sigil's adaptation of Pound in Pearl's introduction (pearl-machine-text.txt line 375: 'To adapt a phrase from Pound, we might describe The Crimson Hexagon as ‘a history including poems.’'), found by the ChatGPT reading of 2026-10-03 (leesharks-mantle-bearing-hf-chatgpt-20261003) and confirmed by the operator."},
 }
 (HERE / "capture-01-lee-sharks-capture-registry-aio.json").write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
 print("wrote; transcript", len(tx))
