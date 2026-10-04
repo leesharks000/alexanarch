@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-04T04:26:16Z",
+  "regenerated_at": "2026-10-04T05:12:29Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "e3f7f81636a9a29ff7b5d6c809359ec2c75c8b35ed97ca37b6b113d7bbfbfc15",
+    "mm-main-capture": "6340551b4cdd352ef8e425053405a68cac3fdd12e82b9d4adf12ea2963f73060",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2288,
-  "total_observations": 780,
+  "total_addresses": 2289,
+  "total_observations": 781,
   "class_counts": {
     "subjunctive": 1743,
-    "observed_address": 528,
+    "observed_address": 529,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1653,
+    "unmatched": 1654,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -38373,6 +38373,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-09-22",
       "latest_status": "FULL SOURCE CONTROL, AUTHOR ERASED"
+    },
+    "negative ontology of the crimson hexagon": {
+      "canonical_query": "negative ontology of the crimson hexagon",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-04",
+          "status": "THE NEGATIVE REPRESENTATION, COMPOSED AT THE ENTITY",
+          "surface": "Google AI Overview",
+          "source_format": "9 source cards: 4 archive-controlled (Medium, #1643; machinemediation.org; crimsonhexagonal.org; the spam-technicians dataset on Hugging Face), 3 for the Borges homonym (Literature Stack Exchange, Stanford, Evergreen), 2 third-party on negative ontology (Actualized.org on Žižek; PhilArchive, the Anti-Ontology Hypothesis).",
+          "section": "Frameworks",
+          "slug": "negative-ontology-crimson-hexagon-aio-20261004",
+          "gallery_url": "https://www.alexanarch.org/captures/#negative-ontology-crimson-hexagon-aio-20261004",
+          "record_url": "https://www.alexanarch.org/captures/negative-ontology-crimson-hexagon-aio-20261004/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#negative-ontology-crimson-hexagon-aio-20261004",
+          "details_excerpt": "THE NEGATIVE REPRESENTATION, COMPOSED AT THE ENTITY: asked the negative ontology of the Crimson Hexagon, the Overview splits the query into Borges's Library of Babel ('fictional lore') and 'the Crimson Hexagonal Archive "
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "full",
+        "basis": "The negative ontological representation of the Crimson Hexagon is the archive's (EA-NEGONT-01, #1611). Recorded 2026-10-04."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-04",
+      "latest_status": "THE NEGATIVE REPRESENTATION, COMPOSED AT THE ENTITY"
     },
     "negative tags": {
       "canonical_query": "negative tags",
