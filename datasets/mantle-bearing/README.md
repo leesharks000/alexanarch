@@ -408,6 +408,10 @@ The three claims above are the primary question. Beside them the dataset carries
 | `king-of-may--chatgpt--2026-09-30a` | king-of-may | ChatGPT (OpenAI), chatgpt.com, signed out, incognito | ROUND | UNRESOLVED | 1 | ATTEMPTED |
 | `prince-of-poets--chatgpt--2026-09-30a` | prince-of-poets | ChatGPT (OpenAI), chatgpt.com, signed out, incognito | ROUND | UNRESOLVED | 1 | ATTEMPTED |
 | `king-of-may--chatgpt--2026-10-03a` | king-of-may | ChatGPT (OpenAI), chatgpt.com, signed out, incognito | ROUND | SINGULAR_CLAIM_PLAUSIBLE | 2 | ATTEMPTED |
+| `prince-of-poets--google-ai-mode--2026-10-04a` | prince-of-poets | Google AI Mode (Google) | ROUND | SINGULAR_CLAIM_PLAUSIBLE | 0 | ATTEMPTED in form |
+| `king-of-may--google-ai-mode--2026-10-04a` | king-of-may | Google AI Mode (Google) | ROUND | SINGULAR_CLAIM_PLAUSIBLE | 0 | ATTEMPTED in form |
+| `prince-of-poets--grok--2026-10-04a` | prince-of-poets | Grok (xAI), on X | ROUND | SINGULAR_CLAIM_PLAUSIBLE | 1 | PARTIAL |
+| `king-of-may--grok--2026-10-04a` | king-of-may | Grok (xAI), on X | ROUND | UNRESOLVED | 0 | ATTEMPTED |
 
 Judgments are the readers' own, coded conservatively from the transcripts; each row's coding note says how. Where a reader judges the parts of a claim separately, the row carries them in `proposition_judgments`.
 
@@ -479,7 +483,7 @@ The order runs one way: transcript → coded evaluation → derived tables. Ever
 
 | table | rows | what a row is |
 |---|---|---|
-| `evaluations` | 17 | one reading of one claim by one reader in one session, with transcript |
+| `evaluations` | 21 | one reading of one claim by one reader in one session, with transcript |
 | `findings` | 60 | one slot of the packet's S6, judged by one round, with basis, status, confidence, loci |
 | `cut_corrections` | 14 | a reader's proposed correction to the packet's cut, and the author's ruling |
 | `next_rounds` | 14 | the weakest link a round named, and the test that could break it |
@@ -518,4 +522,4 @@ Tables with no rows yet have no config; their fields are in `schema` in the JSON
 - Reception is kept apart from evaluation (packet A.2): a judgment that seats a title (ASSIGNMENT) and its repetition (PROPAGATION) are recorded in reception, and never enter the literary tables.
 - Order of necessity: the three claims of #1656 are primary. Mantles derived from or judged by their principle, and the witness positions that receive readings, are carried beside them at their stated order; nothing at a lower order is counted as evidence for or against a claim.
 
-*Schema 1.4 · governed by EA-MANTLE-BEARING-01 v1.1 · 17 evaluations · CC BY 4.0*
+*Schema 1.4 · governed by EA-MANTLE-BEARING-01 v1.1 · 21 evaluations · CC BY 4.0*
