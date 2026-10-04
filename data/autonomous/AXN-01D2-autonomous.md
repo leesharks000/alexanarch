@@ -165,7 +165,7 @@ Rosary Embassy §I: three-vow governance, derivative of the Liberatory Operator 
 10.5281/zenodo.18795427; 10.5281/zenodo.19013315
 
 
-"First Citizen: Shawn, Red Deer AB"
+"First Citizen: Shawn, [location redacted]"
 Robertson's own title. Not archive-derived.
 N/A
 

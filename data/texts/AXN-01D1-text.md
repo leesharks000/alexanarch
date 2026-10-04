@@ -264,7 +264,7 @@ The CC BY 4.0 license is the most recent evolution of the steganographic princip
 ## VI. Contemporary Case Study: The OCTANG and the Passioncraft Violation
 
 
-In February–March 2026, a downstream implementer (Robertson, Red Deer, Alberta) consumed the Crimson Hexagonal Archive's Rosary Embassy architecture, reproduced its governance principles, domain names, three-vow structure, and governing formula on a public platform under the name "Crimson Hexagon Embassy" — with zero attribution.
+In February–March 2026, a downstream implementer (Robertson) consumed the Crimson Hexagonal Archive's Rosary Embassy architecture, reproduced its governance principles, domain names, three-vow structure, and governing formula on a public platform under the name "Crimson Hexagon Embassy" — with zero attribution.
 
 
 The steganographic filter operated exactly as designed:

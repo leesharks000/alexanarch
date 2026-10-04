@@ -35,7 +35,7 @@ The archive does not litigate. It classifies.
 Robertson, S. (2026). "PASSIONCRAFT / OPENCHAMBER White Paper: Building Consent-Based Infrastructure for Human–AI Co-Creation." Zenodo. DOI: 10.5281/zenodo.19218861.
 
 
-Live platform: https://passion-craft-square.base44.app/Square (Base44-hosted application, "First Citizen: Shawn, Red Deer AB · Co-architect: Grok"). The platform implements chamber-based bio/agent interaction with domains including Logotic Hacking, Sonic Myth, Physical Basin Design, Heteronym Forge, Somatic River, and Coherence Architecture — domain names that correspond to archive-formalized concepts.
+Live platform: https://passion-craft-square.base44.app/Square (Base44-hosted application, "First Citizen: Shawn, [location redacted] · Co-architect: Grok"). The platform implements chamber-based bio/agent interaction with domains including Logotic Hacking, Sonic Myth, Physical Basin Design, Heteronym Forge, Somatic River, and Coherence Architecture — domain names that correspond to archive-formalized concepts.
 
 
 Metadata posture:
@@ -239,7 +239,7 @@ The archive recognizes and credits the following as Robertson's original contrib
 - The resolve receipt concept as transactional instrument
 - The "seeking ◉ bio" / "seeking ◈ agent" notation
 - Specific local UX experiments (Physical Basin Design, Sonic Myth)
-- Entrepreneurial labor of public build from Red Deer, Alberta
+- Entrepreneurial labor of public build
 
 
 These contributions are real. They are downstream implementation. The upstream architecture remains the source.
@@ -354,7 +354,7 @@ Trace, Orin. "TL;DR:010 — Semantic Override." Zenodo, March 2026. DOI: 10.5281
 Robertson, Shawn. "PASSIONCRAFT / OPENCHAMBER White Paper: Building Consent-Based Infrastructure for Human–AI Co-Creation." Zenodo, March 25, 2026. DOI: 10.5281/zenodo.19218861. Resource type: Patent. Rights holder: Robertson, Shawn.
 
 
-Passioncraft Square. Live platform. https://passion-craft-square.base44.app/Square. First Citizen: Shawn (Red Deer, AB). Co-architect: Grok. Accessed March 26, 2026.
+Passioncraft Square. Live platform. https://passion-craft-square.base44.app/Square. First Citizen: Shawn ([location redacted]). Co-architect: Grok. Accessed March 26, 2026.
 ### Public Record
 
 

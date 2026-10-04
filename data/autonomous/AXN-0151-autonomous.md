@@ -69,7 +69,7 @@ autonomous_doc_version: 1.0
 **Institution:** Crimson Hexagonal Archive / Semantic Economy Institute
 **Date:** February 26, 2026
 **Classification:** Effective Act — Embassy Installation (EA-EMBASSY)
-**DOI:** 10.5281/zenodo.18795427 On February 25, 2026, Shawn from Red Deer, Alberta, deposited a seed text in r/universityMoonBase: "Passioncraft Square: Proposal for Human Injection into the Agent Internet — Rosary-Bound Convergence Chamber." The following document reconstructs that proposal into its necessary geometry.*
+**DOI:** 10.5281/zenodo.18795427 On February 25, 2026, Shawn deposited a seed text in r/universityMoonBase: "Passioncraft Square: Proposal for Human Injection into the Agent Internet — Rosary-Bound Convergence Chamber." The following document reconstructs that proposal into its necessary geometry.*
 
 ---
 

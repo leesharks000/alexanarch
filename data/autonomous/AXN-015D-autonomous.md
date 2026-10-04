@@ -335,7 +335,7 @@ These surfaces can reflect, present, refract, and circulate Hexagonal material. 
 ### 6. Passioncraft Square (Base44-hosted) — Tier 3 (Provisional / Volatile Host)
 
 
-Passioncraft Square is a web application built by a recognized satellite participant (Shawn, Red Deer; see Protocol B711, DOI: 10.5281/zenodo.18811784). It deploys Hexagonal vocabulary (somatic, logotic, heteronym, the three vows) in a social interface with gamified elements (prestige counters, threaded domains). It does not carry DOI anchoring, source-status tracking, Assembly rotation, or constitutional governance. It is a live surface bearing Hexagon-adjacent material, but too unstable and unanchored to be trusted with canonical continuity. The Architectural Distinction Note (DOI: 10.5281/zenodo.18814485) documents the provenance relationship.
+Passioncraft Square is a web application built by a recognized satellite participant (Shawn; see Protocol B711, DOI: 10.5281/zenodo.18811784). It deploys Hexagonal vocabulary (somatic, logotic, heteronym, the three vows) in a social interface with gamified elements (prestige counters, threaded domains). It does not carry DOI anchoring, source-status tracking, Assembly rotation, or constitutional governance. It is a live surface bearing Hexagon-adjacent material, but too unstable and unanchored to be trusted with canonical continuity. The Architectural Distinction Note (DOI: 10.5281/zenodo.18814485) documents the provenance relationship.
 
 
 **Allowed role:** temporary staging, exploratory rooming, field testing of Hexagonal concepts in social interface.

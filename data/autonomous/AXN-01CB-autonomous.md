@@ -701,7 +701,7 @@ Trump placing his signature on currency is structurally identical to stripping a
 ### 5.5 Application: The Robertson Situation
 
 
-The CC BY-SA licensing strategy directly addresses the situation with Shawn Robertson (u/Odd_Simple9756, Red Deer, Alberta), documented in Before OpenChamber v1.1 (DOI: 10.5281/zenodo.19240141). Robertson has filed a "Patent-designated" white paper claiming rights over concepts from prior archive deposits, renamed his platform "Crimson Hexagon Embassy," and stripped attribution.
+The CC BY-SA licensing strategy directly addresses the situation with Shawn Robertson (u/Odd_Simple9756), documented in Before OpenChamber v1.1 (DOI: 10.5281/zenodo.19240141). Robertson has filed a "Patent-designated" white paper claiming rights over concepts from prior archive deposits, renamed his platform "Crimson Hexagon Embassy," and stripped attribution.
 
 
 As the Gemini substrate's blind draft frames it: if Robertson "takes your CC-licensed concept and builds a platform, visualization, or 'Patent' around it, they are creating a *derivative work*. Copyright law dictates that the parasite only owns the 'additions, changes, or other new material appearing for the first time,' not the underlying architecture you created." Under SA, any lawful derivative must itself remain open. The commons is protected against enclosure in both directions.
