@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-04T03:51:11Z",
+  "regenerated_at": "2026-10-04T04:26:16Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "d556a4888e1965a199b3b4828f37cbefe9232cf6d63aff44c2a3fa6e2fe30f74",
+    "mm-main-capture": "e3f7f81636a9a29ff7b5d6c809359ec2c75c8b35ed97ca37b6b113d7bbfbfc15",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2287,
-  "total_observations": 778,
+  "total_addresses": 2288,
+  "total_observations": 780,
   "class_counts": {
     "subjunctive": 1743,
-    "observed_address": 527,
+    "observed_address": 528,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1652,
+    "unmatched": 1653,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -1015,6 +1015,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "\"crystalline semiosis\"": {
+      "canonical_query": "\"crystalline semiosis\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-04",
+          "status": "THE EXACT STRING, SOURCELESS",
+          "surface": "Google AI Overview",
+          "source_format": "No source cards and no inline citations in the paste.",
+          "section": "Coinages",
+          "slug": "crystalline-semiosis-quoted-aio-20261004",
+          "gallery_url": "https://www.alexanarch.org/captures/#crystalline-semiosis-quoted-aio-20261004",
+          "record_url": "https://www.alexanarch.org/captures/crystalline-semiosis-quoted-aio-20261004/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#crystalline-semiosis-quoted-aio-20261004",
+          "details_excerpt": "THE EXACT STRING, SOURCELESS: asked for the coinage in quotation marks, the Overview cites nothing and shows no source card. It says the phrase 'is not a mainstream academic term' yet 'is used in philosophy, biosemiotics"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "full",
+        "basis": "Crystalline semiosis is the author's coinage (treatise posted 2025-11-28; #234 §VI). Recorded 2026-10-04."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-04",
+      "latest_status": "THE EXACT STRING, SOURCELESS"
     },
     "\"demand 4\" \"composition layer\"": {
       "canonical_query": "\"demand 4\" \"composition layer\"",
@@ -18087,6 +18122,19 @@
           "record_url": "https://www.alexanarch.org/captures/crystalline-semiosis/",
           "mirror_gallery_url": "https://www.leesharks.com/captures/#crystalline-semiosis",
           "details_excerpt": "'A conceptual framework that merges biosemiotics with mineralogy, proposing that meaning-making and information-processing exist on a physical continuum from inorganic matter to biological cognition. It suggests that per"
+        },
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-04",
+          "status": "CAPTURE",
+          "surface": "Google AI Overview",
+          "source_format": "10 source cards, 0 archive-controlled: the lithosemiotics paper three times (De Gruyter Brill, Ingenta Connect, ResearchGate), 'On the Origin of Semiosis' (ResearchGate), and general semiosis and biosemiotics sources (ScienceDirect, Springer, MDPI, Academia.edu, two Wikipedia articles). No Lee Sharks card; in June the Medium treatise was card one.",
+          "section": "Coinages",
+          "slug": "crystalline-semiosis-aio-20261004",
+          "gallery_url": "https://www.alexanarch.org/captures/#crystalline-semiosis-aio-20261004",
+          "record_url": "https://www.alexanarch.org/captures/crystalline-semiosis/#crystalline-semiosis-aio-20261004",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#crystalline-semiosis-aio-20261004",
+          "details_excerpt": "THE COINAGE FLATTENED INTO THE NEIGHBOURING FRAMEWORK: in June the Overview defined crystalline semiosis from Lee Sharks's treatise and carded it under his name. Signed out on 2026-10-04 it defines the term as 'a framewo"
         }
       ],
       "termindex": {
@@ -18130,7 +18178,7 @@
         }
       ],
       "observation_class": "observed_address",
-      "latest_observation_date": "2026-06-13",
+      "latest_observation_date": "2026-10-04",
       "latest_status": "CAPTURE"
     },
     "cti_wound": {
