@@ -123,7 +123,7 @@ def main():
     b = []
     b.append('<h1>The Negative of the Negative</h1>')
     b.append('<p class="sub">Public knowledge, composed three ways at one address: as the composition layer gave it, as its own disclosed sources give it, and with the Crimson Hexagonal Archive admitted on equal terms. Each row is adjudicated later against what the world does.</p>')
-    b.append('<div class="status"><strong>Under construction, by design.</strong> The generation procedure (EA-NEGONT-02 v0.7, drafted 2026-10-05 from <a href="/s/records/1664/">#1664</a> v0.6) is being tested, iterated and revised; the panel below is a working list and is frozen only after the procedure is (§7.0, ruled 2026-10-05). Nothing on this page is a frozen measurement.</div>')
+    b.append('<div class="status"><strong>Under construction, by design.</strong> The generation procedure (EA-NEGONT-02 v0.7, <a href="/s/records/1665/">#1665</a>, which supersedes <a href="/s/records/1664/">#1664</a>) is being tested, iterated and revised; the panel below is a working list and is frozen only after the procedure is (§7.0, ruled 2026-10-05). Nothing on this page is a frozen measurement.</div>')
     b.append('<h2>How a row reads</h2><div class="objs">'
              '<div class="obj"><b>T</b>the transcript: what the composition layer gave, verbatim, with its source cards</div>'
              '<div class="obj"><b>L(B)</b>the address recomposed from the full texts of the sources the layer itself surfaced</div>'
@@ -176,7 +176,7 @@ def main():
     b.append(f'<h2>The panel — {esc(panel["status"])}</h2><p class="sub">{esc(panel["rule"])} {len(panel["rows"])} rows.</p>')
     b.append(f'<details><summary>All rows</summary>{table(panel["rows"], ["address", "type", "source", "stage"])}</details>')
     b.append('<h2>Procedure and data</h2><ul>'
-             '<li>Specification: <a href="/s/records/1664/">#1664</a> (EA-NEGONT-02 v0.6, deposited 2026-10-04); v0.7 drafted 2026-10-05, not yet deposited</li>'
+             '<li>Specification: <a href="/s/records/1665/">#1665</a> (EA-NEGONT-02 v0.7, 2026-10-05), superseding <a href="/s/records/1664/">#1664</a> (v0.6, 2026-10-04)</li>'
              '<li>Traversal tool: <a href="/scripts/non_traverse.py">scripts/non_traverse.py</a> · configurations: <a href="/datasets/negative-of-the-negative/v2/panel/configs/">v2/panel/configs/</a></li>'
              '<li>Panel: <a href="/datasets/negative-of-the-negative/v2/panel/panel.json">panel.json</a> · v1 rows: <a href="/datasets/negative-of-the-negative/rows.json">rows.json</a></li>'
              '<li>This page is built by <a href="/scripts/build_non.py">scripts/build_non.py</a> from those files; it writes nothing back.</li></ul>')
@@ -185,7 +185,7 @@ def main():
     jsonld = {"@context": "https://schema.org", "@type": "Dataset", "name": "The Negative of the Negative (v2, compositional)",
               "url": f"{BASE}/non/", "creator": {"@type": "Person", "name": "Lee Sharks", "identifier": "https://orcid.org/0009-0000-1599-0703"},
               "license": "https://creativecommons.org/licenses/by/4.0/", "creativeWorkStatus": "working; procedure not frozen",
-              "isBasedOn": f"{BASE}/s/records/1664/"}
+              "isBasedOn": f"{BASE}/s/records/1665/"}
     OUT.mkdir(exist_ok=True)
     (OUT / "index.html").write_text(page("The Negative of the Negative — /non — Alexanarch",
                                          "Public knowledge composed three ways at one address, with the archive admitted on equal terms; working, not frozen.",
