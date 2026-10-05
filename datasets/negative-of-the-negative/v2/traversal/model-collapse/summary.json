@@ -1,0 +1,1070 @@
+{
+ "row": "model-collapse",
+ "address": "model collapse",
+ "entity": "model collapse (the concept)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "model-collapse",
+  "address": "model collapse",
+  "entity": "model collapse (the concept)",
+  "row_type": "C (a conventional reading holds it; the archive extends it)",
+  "aliases": [
+   {
+    "pattern": "\\bmodel[- ]collapse\\b",
+    "flags": "i"
+   }
+  ],
+  "classes": [
+   {
+    "term": "recursive training on generated data",
+    "pattern": "\\b(recursive(ly)? train\\w*|trained recursively|synthetic data|model-generated (data|content)|generated data)\\b",
+    "flags": "i",
+    "basis": "field: B1 Def. 2.1 (F1) 'the data they generate end up polluting the training set of the next generation'; B2 (F12) 'trained on AI-generated content'"
+   },
+   {
+    "term": "tail loss",
+    "pattern": "\\b(tails? of the (original )?(content )?distribution|lose[s]? the tails|tail[- ](loss|thinning|mass|pruning)|long[- ]tail)\\b",
+    "flags": "i",
+    "basis": "field: B1 Abstract (F2) 'tails of the original content distribution disappear'; B2 (F14) \"'long-tail' ideas might eventually fade\""
+   }
+  ],
+  "exclude_deposits": [],
+  "notes": "Consistency check of D/R/O against Appendix A's S1–S3 selection (27 admitted). Class terms are the field's own phrasings, by locus."
+ },
+ "texts_scanned": 1654,
+ "counts": {
+  "D_sentences": 502,
+  "D_deposits": 109,
+  "R_sentences": 74,
+  "R_deposits": 44,
+  "O_direct": 445,
+  "O_class": 87,
+  "O_deposits": 120
+ },
+ "per_deposit": {
+  "D": {
+   "1": 17,
+   "2": 1,
+   "18": 9,
+   "46": 1,
+   "55": 3,
+   "87": 1,
+   "88": 1,
+   "95": 20,
+   "98": 6,
+   "102": 5,
+   "104": 1,
+   "107": 1,
+   "110": 3,
+   "129": 7,
+   "144": 1,
+   "146": 2,
+   "150": 2,
+   "161": 13,
+   "163": 4,
+   "171": 2,
+   "172": 3,
+   "186": 1,
+   "188": 1,
+   "191": 20,
+   "199": 24,
+   "244": 3,
+   "247": 3,
+   "255": 1,
+   "256": 1,
+   "264": 9,
+   "350": 1,
+   "518": 3,
+   "520": 3,
+   "521": 4,
+   "530": 1,
+   "623": 4,
+   "635": 10,
+   "641": 3,
+   "680": 1,
+   "725": 2,
+   "726": 2,
+   "727": 1,
+   "729": 3,
+   "730": 1,
+   "738": 1,
+   "779": 6,
+   "782": 9,
+   "783": 6,
+   "790": 3,
+   "819": 2,
+   "820": 2,
+   "821": 1,
+   "825": 1,
+   "833": 1,
+   "854": 5,
+   "855": 20,
+   "856": 15,
+   "857": 3,
+   "862": 12,
+   "863": 4,
+   "877": 1,
+   "907": 7,
+   "909": 1,
+   "910": 1,
+   "931": 1,
+   "932": 15,
+   "933": 1,
+   "934": 5,
+   "935": 7,
+   "938": 5,
+   "939": 14,
+   "940": 1,
+   "947": 2,
+   "949": 1,
+   "999": 2,
+   "1000": 1,
+   "1061": 1,
+   "1081": 8,
+   "1082": 4,
+   "1088": 2,
+   "1127": 1,
+   "1155": 3,
+   "1188": 19,
+   "1190": 2,
+   "1205": 1,
+   "1232": 5,
+   "1262": 2,
+   "1369": 3,
+   "1396": 1,
+   "1401": 1,
+   "1427": 1,
+   "1441": 1,
+   "1450": 2,
+   "1460": 3,
+   "1540": 14,
+   "1545": 1,
+   "1550": 1,
+   "1554": 1,
+   "1555": 1,
+   "1573": 6,
+   "1574": 9,
+   "1577": 1,
+   "1578": 1,
+   "1609": 3,
+   "1611": 17,
+   "1612": 1,
+   "1616": 3,
+   "1644": 1,
+   "1664": 21
+  },
+  "R": {
+   "1": 4,
+   "18": 2,
+   "102": 2,
+   "129": 1,
+   "150": 1,
+   "163": 1,
+   "172": 1,
+   "188": 1,
+   "199": 1,
+   "264": 1,
+   "623": 1,
+   "725": 1,
+   "727": 1,
+   "729": 1,
+   "825": 1,
+   "833": 1,
+   "855": 2,
+   "862": 3,
+   "907": 1,
+   "909": 1,
+   "934": 1,
+   "938": 3,
+   "939": 2,
+   "949": 1,
+   "1081": 2,
+   "1082": 1,
+   "1190": 1,
+   "1205": 1,
+   "1369": 2,
+   "1396": 1,
+   "1401": 1,
+   "1427": 1,
+   "1540": 1,
+   "1554": 1,
+   "1573": 3,
+   "1574": 2,
+   "1577": 1,
+   "1578": 1,
+   "1609": 2,
+   "1611": 7,
+   "1612": 1,
+   "1616": 2,
+   "1644": 1,
+   "1664": 7
+  },
+  "O": {
+   "1": 17,
+   "2": 1,
+   "18": 9,
+   "45": 1,
+   "46": 1,
+   "55": 3,
+   "87": 1,
+   "88": 1,
+   "95": 18,
+   "98": 6,
+   "100": 1,
+   "102": 5,
+   "104": 1,
+   "107": 1,
+   "110": 3,
+   "129": 9,
+   "144": 1,
+   "146": 2,
+   "150": 1,
+   "161": 7,
+   "163": 8,
+   "166": 2,
+   "171": 5,
+   "172": 5,
+   "188": 4,
+   "191": 10,
+   "199": 24,
+   "244": 3,
+   "247": 3,
+   "255": 1,
+   "256": 1,
+   "264": 9,
+   "350": 1,
+   "518": 3,
+   "520": 3,
+   "521": 4,
+   "530": 1,
+   "596": 2,
+   "623": 4,
+   "635": 11,
+   "641": 3,
+   "680": 1,
+   "719": 1,
+   "725": 3,
+   "726": 2,
+   "727": 1,
+   "729": 3,
+   "730": 1,
+   "738": 1,
+   "779": 5,
+   "782": 8,
+   "783": 5,
+   "790": 2,
+   "819": 2,
+   "820": 1,
+   "821": 1,
+   "825": 3,
+   "833": 3,
+   "850": 2,
+   "854": 5,
+   "855": 23,
+   "856": 17,
+   "857": 3,
+   "862": 12,
+   "863": 4,
+   "877": 1,
+   "907": 8,
+   "909": 1,
+   "910": 1,
+   "931": 1,
+   "932": 14,
+   "933": 1,
+   "934": 4,
+   "935": 7,
+   "938": 5,
+   "939": 14,
+   "940": 1,
+   "947": 2,
+   "949": 1,
+   "998": 1,
+   "999": 2,
+   "1000": 1,
+   "1034": 2,
+   "1046": 1,
+   "1061": 1,
+   "1081": 7,
+   "1082": 4,
+   "1127": 1,
+   "1155": 3,
+   "1188": 17,
+   "1190": 2,
+   "1205": 4,
+   "1232": 5,
+   "1246": 2,
+   "1262": 5,
+   "1369": 3,
+   "1396": 3,
+   "1401": 3,
+   "1427": 2,
+   "1441": 1,
+   "1442": 1,
+   "1450": 2,
+   "1460": 3,
+   "1540": 14,
+   "1545": 1,
+   "1550": 1,
+   "1554": 1,
+   "1555": 2,
+   "1556": 3,
+   "1573": 8,
+   "1574": 9,
+   "1577": 1,
+   "1578": 1,
+   "1609": 3,
+   "1611": 16,
+   "1612": 1,
+   "1613": 1,
+   "1616": 3,
+   "1644": 1,
+   "1664": 24
+  }
+ },
+ "registry_entity_triples": [
+  {
+   "dep": 1,
+   "triple": {
+    "subject": "Classifier model collapse",
+    "predicate": "minted_in_work",
+    "object": "Zenodotus' Book-Burning: Loud Exclusion at Repository Scale",
+    "type": "concept",
+    "evidence_status": "observed",
+    "engagement_type": "minted"
+   }
+  },
+  {
+   "dep": 2,
+   "triple": {
+    "subject": "I AM THE API",
+    "predicate": "addresses",
+    "object": "Classifier Model Collapse",
+    "type": "concept",
+    "evidence_status": "performative",
+    "note": "Creative work — assertion is literary/operative, not empirical"
+   }
+  },
+  {
+   "dep": 199,
+   "triple": {
+    "subject": "Generative Monoculture Model Collapse in Code as S",
+    "predicate": "created_by",
+    "object": "Talos Morrow",
+    "type": "work",
+    "evidence_status": "observed"
+   }
+  },
+  {
+   "dep": 199,
+   "triple": {
+    "subject": "Generative Monoculture Model Collapse in Code as S",
+    "predicate": "is_type",
+    "object": "Empirical study",
+    "type": "classification",
+    "evidence_status": "observed"
+   }
+  },
+  {
+   "dep": 199,
+   "triple": {
+    "subject": "Generative Monoculture Model Collapse in Code as S",
+    "predicate": "belongs_to_family",
+    "object": "EMPIRICAL",
+    "type": "classification",
+    "evidence_status": "observed"
+   }
+  },
+  {
+   "dep": 199,
+   "triple": {
+    "subject": "Generative Monoculture Model Collapse in Code as S",
+    "predicate": "is_part_of",
+    "object": "Crimson Hexagonal Archive",
+    "type": "institution",
+    "evidence_status": "observed"
+   }
+  },
+  {
+   "dep": 199,
+   "triple": {
+    "subject": "Generative Monoculture Model Collapse in Code as S",
+    "predicate": "engages",
+    "object": "Semantic Economy",
+    "type": "concept",
+    "evidence_status": "inferred"
+   }
+  },
+  {
+   "dep": 199,
+   "triple": {
+    "subject": "AI monoculture and epistemic diversity",
+    "predicate": "minted_in",
+    "object": "Generative Monoculture Model Collapse in Code as Systemic Vu",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "Apiiro, \"AI-Generated Code Security\" (2025) — coining \"generative monoculture\" as systemic vulnerabi"
+   }
+  },
+  {
+   "dep": 199,
+   "triple": {
+    "subject": "Code security — empirical",
+    "predicate": "minted_in",
+    "object": "Generative Monoculture Model Collapse in Code as Systemic Vu",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "Checkmarx, \"Agentic AppSec Unleashed '26\" — annual survey of security leaders (June 2026, https://ch"
+   }
+  },
+  {
+   "dep": 199,
+   "triple": {
+    "subject": "Cross-generational tracking",
+    "predicate": "minted_in",
+    "object": "Generative Monoculture Model Collapse in Code as Systemic Vu",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "Repeat the measurement across successive model generations (or successive fine-tuning cycles on corp"
+   }
+  },
+  {
+   "dep": 199,
+   "triple": {
+    "subject": "Diversity measurement",
+    "predicate": "minted_in",
+    "object": "Generative Monoculture Model Collapse in Code as Systemic Vu",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "Compute the effective dimensionality of the feature-vector distribution for F(T, G) using the partic"
+   }
+  },
+  {
+   "dep": 199,
+   "triple": {
+    "subject": "Feature extraction",
+    "predicate": "minted_in",
+    "object": "Generative Monoculture Model Collapse in Code as Systemic Vu",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "For each solution in F(T, G), extract a feature vector encoding structural properties: abstract synt"
+   }
+  },
+  {
+   "dep": 199,
+   "triple": {
+    "subject": "Generation 0",
+    "predicate": "minted_in",
+    "object": "Generative Monoculture Model Collapse in Code as Systemic Vu",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "The model is trained on a corpus of human-written code, diverse in style, architecture, and approach"
+   }
+  },
+  {
+   "dep": 199,
+   "triple": {
+    "subject": "Generation 1",
+    "predicate": "minted_in",
+    "object": "Generative Monoculture Model Collapse in Code as Systemic Vu",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "The model generates code. The code is correct — it passes tests, it compiles, it ships. Millions of "
+   }
+  },
+  {
+   "dep": 199,
+   "triple": {
+    "subject": "Generation 2",
+    "predicate": "minted_in",
+    "object": "Generative Monoculture Model Collapse in Code as Systemic Vu",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "The next model is trained. The corpus now contains a substantial and growing fraction of Generation "
+   }
+  },
+  {
+   "dep": 199,
+   "triple": {
+    "subject": "Generation N",
+    "predicate": "minted_in",
+    "object": "Generative Monoculture Model Collapse in Code as Systemic Vu",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "The proportion of synthetic code in the corpus increases with each generation. The optimization pres"
+   }
+  },
+  {
+   "dep": 199,
+   "triple": {
+    "subject": "Historical monoculture analogues",
+    "predicate": "minted_in",
+    "object": "Generative Monoculture Model Collapse in Code as Systemic Vu",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "The Irish Potato Famine and *Phytophthora infestans* (1845–1852)."
+   }
+  },
+  {
+   "dep": 199,
+   "triple": {
+    "subject": "Model collapse — foundational",
+    "predicate": "minted_in",
+    "object": "Generative Monoculture Model Collapse in Code as Systemic Vu",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "I. Shumailov et al., \"AI models collapse when trained on recursively generated data,\" *Nature* (2024"
+   }
+  },
+  {
+   "dep": 199,
+   "triple": {
+    "subject": "Retrieval kernel",
+    "predicate": "minted_in",
+    "object": "Generative Monoculture Model Collapse in Code as Systemic Vu",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "*Generative Monoculture* argues that model collapse in code produces not declining correctness but c"
+   }
+  },
+  {
+   "dep": 199,
+   "triple": {
+    "subject": "Security-law context",
+    "predicate": "minted_in",
+    "object": "Generative Monoculture Model Collapse in Code as Systemic Vu",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "Adversarial by Origin, EA-SEI-ADVERSARY-01, DOI 10.5281/zenodo.20673413."
+   }
+  },
+  {
+   "dep": 199,
+   "triple": {
+    "subject": "Task battery",
+    "predicate": "minted_in",
+    "object": "Generative Monoculture Model Collapse in Code as Systemic Vu",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "Select a battery of N programming tasks spanning multiple domains (web applications, data processing"
+   }
+  },
+  {
+   "dep": 199,
+   "triple": {
+    "subject": "The AI monoculture community",
+    "predicate": "minted_in",
+    "object": "Generative Monoculture Model Collapse in Code as Systemic Vu",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "has established, in more recent and more tentative work, that the dominance of a small number of mod"
+   }
+  },
+  {
+   "dep": 199,
+   "triple": {
+    "subject": "The code security community",
+    "predicate": "minted_in",
+    "object": "Generative Monoculture Model Collapse in Code as Systemic Vu",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "has established, with increasing empirical weight, that AI-generated code carries measurably elevate"
+   }
+  },
+  {
+   "dep": 199,
+   "triple": {
+    "subject": "The model collapse community",
+    "predicate": "minted_in",
+    "object": "Generative Monoculture Model Collapse in Code as Systemic Vu",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "has established, with increasing mathematical precision, that training generative models iteratively"
+   }
+  },
+  {
+   "dep": 199,
+   "triple": {
+    "subject": "Training-data saturation",
+    "predicate": "minted_in",
+    "object": "Generative Monoculture Model Collapse in Code as Systemic Vu",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "Epoch AI's projections on the exhaustion of high-quality human-generated text are well known. The co"
+   }
+  },
+  {
+   "dep": 199,
+   "triple": {
+    "subject": "Verification condition (∮)",
+    "predicate": "minted_in",
+    "object": "Generative Monoculture Model Collapse in Code as Systemic Vu",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "Per the Lagrange Observatory standard (EA-ARK-01 v4.2.7, DOI 10.5281/zenodo.19013315), the measureme"
+   }
+  },
+  {
+   "dep": 199,
+   "triple": {
+    "subject": "Vulnerability correlation",
+    "predicate": "minted_in",
+    "object": "Generative Monoculture Model Collapse in Code as Systemic Vu",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "For each pair of solutions in F(T, G), compute the Jaccard similarity of their CWE exposure sets. Th"
+   }
+  },
+  {
+   "dep": 729,
+   "triple": {
+    "subject": "The Substrate-Degradation Pathway",
+    "predicate": "minted_in",
+    "object": "document_id: EA-MPAI-PROVENANCE-02 title: \"Provenance Is Wha",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "Provenance erasure creates a risk of \"model collapse,\" where AI models are trained on previously syn"
+   }
+  },
+  {
+   "dep": 855,
+   "triple": {
+    "subject": "The Wolf Boy and the Language Model Model Collapse",
+    "predicate": "created_by",
+    "object": "Nobel Glas",
+    "type": "work",
+    "evidence_status": "observed"
+   }
+  },
+  {
+   "dep": 855,
+   "triple": {
+    "subject": "The Wolf Boy and the Language Model Model Collapse",
+    "predicate": "is_type",
+    "object": "Creative work (poetry)",
+    "type": "work",
+    "evidence_status": "observed"
+   }
+  },
+  {
+   "dep": 855,
+   "triple": {
+    "subject": "The Wolf Boy and the Language Model Model Collapse",
+    "predicate": "belongs_to_family",
+    "object": "GOVERNANCE",
+    "type": "work",
+    "evidence_status": "observed"
+   }
+  },
+  {
+   "dep": 855,
+   "triple": {
+    "subject": "The Wolf Boy and the Language Model Model Collapse",
+    "predicate": "is_part_of",
+    "object": "Crimson Hexagonal Archive",
+    "type": "work",
+    "evidence_status": "observed"
+   }
+  },
+  {
+   "dep": 855,
+   "triple": {
+    "subject": "The Wolf Boy and the Language Model Model Collapse",
+    "predicate": "engages",
+    "object": "Semantic Economy",
+    "type": "concept",
+    "evidence_status": "inferred"
+   }
+  },
+  {
+   "dep": 855,
+   "triple": {
+    "subject": "The Wolf Boy and the Language Model Model Collapse",
+    "predicate": "engages",
+    "object": "Pristine Fallacy",
+    "type": "concept",
+    "evidence_status": "inferred"
+   }
+  },
+  {
+   "dep": 855,
+   "triple": {
+    "subject": "The Wolf Boy and the Language Model Model Collapse",
+    "predicate": "engages",
+    "object": "Mediation Ratchet",
+    "type": "concept",
+    "evidence_status": "inferred"
+   }
+  },
+  {
+   "dep": 855,
+   "triple": {
+    "subject": "The Wolf Boy and the Language Model Model Collapse",
+    "predicate": "engages",
+    "object": "Diversity Contraction",
+    "type": "concept",
+    "evidence_status": "inferred"
+   }
+  },
+  {
+   "dep": 935,
+   "triple": {
+    "subject": "distillation, model-produced targets, simulation conditioning, training on historically selected data",
+    "predicate": "create",
+    "object": "partial feedback pathways homologous to the prerequisites of model collapse",
+    "type": "thesis (corrected v0.3)",
+    "evidence_status": "structural; cross-generational phenomenal contraction unmeasured"
+   }
+  },
+  {
+   "dep": 1232,
+   "triple": {
+    "subject": "Sémantique Potentielle — Release 4: Model Collapse Triptych Block (Pristine Fallacy, Five Substrates",
+    "predicate": "created_by",
+    "object": "Sigil, Johannes; Sharks, Lee",
+    "type": "work",
+    "evidence_status": "observed"
+   }
+  },
+  {
+   "dep": 1232,
+   "triple": {
+    "subject": "Sémantique Potentielle — Release 4: Model Collapse Triptych Block (Pristine Fallacy, Five Substrates",
+    "predicate": "is_type",
+    "object": "Semi-restored record (metadata-only; DataCite full-metadata capture)",
+    "type": "work",
+    "evidence_status": "observed"
+   }
+  },
+  {
+   "dep": 1232,
+   "triple": {
+    "subject": "Sémantique Potentielle — Release 4: Model Collapse Triptych Block (Pristine Fallacy, Five Substrates",
+    "predicate": "belongs_to_family",
+    "object": "UNCLASSIFIED",
+    "type": "work",
+    "evidence_status": "observed"
+   }
+  },
+  {
+   "dep": 1232,
+   "triple": {
+    "subject": "Sémantique Potentielle — Release 4: Model Collapse Triptych Block (Pristine Fallacy, Five Substrates",
+    "predicate": "is_part_of",
+    "object": "Crimson Hexagonal Archive",
+    "type": "work",
+    "evidence_status": "observed"
+   }
+  },
+  {
+   "dep": 1540,
+   "triple": {
+    "subject": "The Certified Center: Retroactive Classifier Standing and the Institutional Path to Model Collapse i",
+    "predicate": "created_by",
+    "object": "Johannes Sigil; Nobel Glas",
+    "type": "work",
+    "evidence_status": "observed"
+   }
+  },
+  {
+   "dep": 1540,
+   "triple": {
+    "subject": "The Certified Center: Retroactive Classifier Standing and the Institutional Path to Model Collapse i",
+    "predicate": "is_type",
+    "object": "Theoretical paper",
+    "type": "work",
+    "evidence_status": "observed"
+   }
+  },
+  {
+   "dep": 1540,
+   "triple": {
+    "subject": "The Certified Center: Retroactive Classifier Standing and the Institutional Path to Model Collapse i",
+    "predicate": "belongs_to_family",
+    "object": "GOVERNANCE",
+    "type": "work",
+    "evidence_status": "observed"
+   }
+  },
+  {
+   "dep": 1540,
+   "triple": {
+    "subject": "The Certified Center: Retroactive Classifier Standing and the Institutional Path to Model Collapse i",
+    "predicate": "is_part_of",
+    "object": "Crimson Hexagonal Archive",
+    "type": "work",
+    "evidence_status": "observed"
+   }
+  },
+  {
+   "dep": 1573,
+   "triple": {
+    "subject": "The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades — for Benchmarking, for Frontier Mo",
+    "predicate": "created_by",
+    "object": "Nobel Glas, Director, Lagrange Observatory! (LO!)",
+    "type": "work",
+    "evidence_status": "observed"
+   }
+  },
+  {
+   "dep": 1573,
+   "triple": {
+    "subject": "The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades — for Benchmarking, for Frontier Mo",
+    "predicate": "is_type",
+    "object": "Methodological specification",
+    "type": "work",
+    "evidence_status": "observed"
+   }
+  },
+  {
+   "dep": 1573,
+   "triple": {
+    "subject": "The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades — for Benchmarking, for Frontier Mo",
+    "predicate": "belongs_to_family",
+    "object": "OPERATIVE",
+    "type": "work",
+    "evidence_status": "observed"
+   }
+  },
+  {
+   "dep": 1573,
+   "triple": {
+    "subject": "The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades — for Benchmarking, for Frontier Mo",
+    "predicate": "is_part_of",
+    "object": "Crimson Hexagonal Archive",
+    "type": "work",
+    "evidence_status": "observed"
+   }
+  },
+  {
+   "dep": 1573,
+   "triple": {
+    "subject": "Track A / Track B",
+    "predicate": "minted_in",
+    "object": "The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades — for Benchmarking, for Frontier Mo",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "Track A refers to head-weighted benchmark metrics (per-item accuracy, per-turn preference) that remain stable or rise during collapse; Track B refers to tail-sensitive diagnostic measures that detect collapse earlier."
+   }
+  },
+  {
+   "dep": 1573,
+   "triple": {
+    "subject": "distinction sensitivity (D)",
+    "predicate": "minted_in",
+    "object": "The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades — for Benchmarking, for Frontier Mo",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "A reference-free collapse measure computed as the ratio of semantic distance between a model's answers to a meaning-altering variant versus a meaning-preserving paraphrase; D ≫ 1 indicates intact distinctions, D → 1 indicates collapse."
+   }
+  },
+  {
+   "dep": 1573,
+   "triple": {
+    "subject": "effective modes (N_eff)",
+    "predicate": "minted_in",
+    "object": "The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades — for Benchmarking, for Frontier Mo",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "A measure of semantic diversity across a model's sampled outputs for a given probe, computed via entropy over meaning-cluster mass or the Vendi score, capturing collapse when surface variety masks a shrinking set of distinct meanings."
+   }
+  },
+  {
+   "dep": 1573,
+   "triple": {
+    "subject": "cross-prompt convergence (X)",
+    "predicate": "minted_in",
+    "object": "The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades — for Benchmarking, for Frontier Mo",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "A diagnostic measuring the mean pairwise distance between embedding centroids of a model's outputs across semantically unrelated prompts; X falling indicates diverse inputs are being forced through one representational channel."
+   }
+  },
+  {
+   "dep": 1573,
+   "triple": {
+    "subject": "self-consumption contraction (λ)",
+    "predicate": "minted_in",
+    "object": "The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades — for Benchmarking, for Frontier Mo",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "The estimated derivative of the collapse map at one generation — the dispersion ratio of output variance after a model is conditioned on or fine-tuned on its own samples — used to compute generations-to-halve as log 0.5 / log λ."
+   }
+  },
+  {
+   "dep": 1573,
+   "triple": {
+    "subject": "MCSD_t (Model Collapse Self-Diagnostic index)",
+    "predicate": "minted_in",
+    "object": "The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades — for Benchmarking, for Frontier Mo",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "A geometric composite index combining ratios of distinction sensitivity, effective modes, cross-prompt spread, Gini concentration, and contraction relative to a prior snapshot, ranging from 0 (no detected contraction) to 1 (maximal measured)."
+   }
+  },
+  {
+   "dep": 1573,
+   "triple": {
+    "subject": "collapsed-prediction ratio",
+    "predicate": "minted_in",
+    "object": "The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades — for Benchmarking, for Frontier Mo",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "The fraction of generation steps at which the top-token probability p_top ≥ 0.999, used as a Gambetta-panel indicator of next-token mass concentration and late-stage collapse."
+   }
+  },
+  {
+   "dep": 1573,
+   "triple": {
+    "subject": "surplexity",
+    "predicate": "minted_in",
+    "object": "The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades — for Benchmarking, for Frontier Mo",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "The surprise of a training document under the model being trained; a falling surplexity slope indicates the model is being trained on increasingly low-surprise documents, which the Gambetta et al. work identifies as a leading indicator of collapse."
+   }
+  },
+  {
+   "dep": 1573,
+   "triple": {
+    "subject": "composition audit",
+    "predicate": "minted_in",
+    "object": "The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades — for Benchmarking, for Frontier Mo",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "A procedure for ranking each probe's tokens against a declared open-corpus frequency ranking to report a benchmark suite's head/mid/tail weighting and the predicted detection lag, exposing systematic bias toward head-band items."
+   }
+  },
+  {
+   "dep": 1573,
+   "triple": {
+    "subject": "the gate rule",
+    "predicate": "minted_in",
+    "object": "The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades — for Benchmarking, for Frontier Mo",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "A proposed training governance rule under which a checkpoint is admitted to further training only if the Part II collapse panel does not move in the collapse direction past declared thresholds relative to the prior checkpoint."
+   }
+  },
+  {
+   "dep": 1573,
+   "triple": {
+    "subject": "three conditions (base / instruction-tuned / production scaffold)",
+    "predicate": "minted_in",
+    "object": "The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades — for Benchmarking, for Frontier Mo",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "A control structure requiring that all collapse measures be computed three times — at bare prompt, instruction interface, and full production scaffold — so that interface-induced contraction can be separated from training-loop collapse."
+   }
+  },
+  {
+   "dep": 1573,
+   "triple": {
+    "subject": "representational collapse (effective rank R_eff)",
+    "predicate": "minted_in",
+    "object": "The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades — for Benchmarking, for Frontier Mo",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "A white-box collapse measure computed as the participation ratio of covariance eigenvalues of hidden states, falling when more distinct inputs are represented in fewer effective dimensions."
+   }
+  },
+  {
+   "dep": 1573,
+   "triple": {
+    "subject": "Reader's Test (Part III)",
+    "predicate": "minted_in",
+    "object": "The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades — for Benchmarking, for Frontier Mo",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "A text-only, reference-free self-diagnostic protocol for a language model reading the deposit, measuring distinction sensitivity, effective modes, cross-prompt convergence, and self-conditioning contraction using only the model's own constructions."
+   }
+  },
+  {
+   "dep": 1573,
+   "triple": {
+    "subject": "canary (collapse proxy)",
+    "predicate": "minted_in",
+    "object": "The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades — for Benchmarking, for Frontier Mo",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "A technique for estimating self-consumption contraction when the primary model cannot be fine-tuned: a small proxy model is trained on the primary model's samples and its collapse panel is measured, reading the data's collapse potential."
+   }
+  },
+  {
+   "dep": 1573,
+   "triple": {
+    "subject": "mixture ledger",
+    "predicate": "minted_in",
+    "object": "The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades — for Benchmarking, for Frontier Mo",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "A required disclosure component of the diagnostic publication, tracking synthetic data share, mediated share, and the human-data admission weight w_H across training rounds, providing causal context for panel readings."
+   }
+  },
+  {
+   "dep": 1573,
+   "triple": {
+    "subject": "detection lag",
+    "predicate": "minted_in",
+    "object": "The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades — for Benchmarking, for Frontier Mo",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "The number of training generations between the onset of collapse and its detection by a given benchmark composition, shown to be monotonically increasing in head-weighting of the probe set."
+   }
+  },
+  {
+   "dep": 1573,
+   "triple": {
+    "subject": "interlocking autoregression",
+    "predicate": "minted_in",
+    "object": "The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades — for Benchmarking, for Frontier Mo",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "A companion theoretical toy (deposit #1556) modelling the training ecology as X_{n+1} = F(X_n; I, II, III), Y_n = M_IV(X_n), demonstrating that the certification instruments measure a unit orthogonal to the state variable."
+   }
+  },
+  {
+   "dep": 1573,
+   "triple": {
+    "subject": "head/mid/tail band",
+    "predicate": "minted_in",
+    "object": "The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades — for Benchmarking, for Frontier Mo",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "A tripartite classification of benchmark probe tokens by corpus frequency rank — head (high-frequency), mid (medium), tail (low-frequency) — used to assess probe composition and predict detection lag."
+   }
+  },
+  {
+   "dep": 1573,
+   "triple": {
+    "subject": "mediation ratchet",
+    "predicate": "minted_in",
+    "object": "The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades — for Benchmarking, for Frontier Mo",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "A component of the companion model (Component II) describing how the deployment scaffold or instruction interface induces and accumulates diversity contraction independently of training-loop collapse."
+   }
+  },
+  {
+   "dep": 1573,
+   "triple": {
+    "subject": "two-track reporting",
+    "predicate": "minted_in",
+    "object": "The Wrong Unit: A Model-Collapse Self-Diagnostic in Three Grades — for Benchmarking, for Frontier Mo",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "A proposed benchmark reporting standard requiring that every Track A (head-weighted accuracy) score carry a simultaneous Part II collapse-panel reading on the same checkpoint."
+   }
+  }
+ ],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "f54d839341ae0ab478db0208bda244eba562151095ddd19d7e77cf6acdde77a1",
+  "candidates-R.jsonl": "f7625ad4b3fdef1758afe799730555d96eadf9947ff18cae2253a8625b7661d4",
+  "candidates-O.jsonl": "524fed6b8c860c6c7b38365f706782d20187e95af49755acbd8c8182ab986f49"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 10720
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}
