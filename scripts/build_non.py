@@ -21,11 +21,13 @@ OUT = ROOT / "non"
 BASE = "https://www.alexanarch.org"
 esc = html.escape
 
-NAV = ROOT / "how/index.html"
+import sys
+sys.path.insert(0, str(ROOT))
+from scripts.render_navbar import render_navbar
 
 def nav():
-    m = re.search(r'<nav class="nav">.*?</nav>', NAV.read_text(encoding="utf-8"), re.S)
-    return m.group(0) if m else '<nav class="nav"><a href="/">Alexanarch</a></nav>'
+    """The canonical nav (data/navigation.json), with /non marked as the page in view."""
+    return render_navbar(active="/non/")
 
 def md_inline(t):
     t = esc(t)
