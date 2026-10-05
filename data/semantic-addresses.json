@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-04T20:54:00Z",
+  "regenerated_at": "2026-10-05T00:55:42Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "70c6413427576f5d0d0a5a503126d36b9db6217e39acdceb00d084b27123d3b0",
+    "mm-main-capture": "b1edc4fca8e22d7afc84b82ed80008f0d712b1c308c0a16a74f605452a86aed0",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2292,
-  "total_observations": 784,
+  "total_addresses": 2293,
+  "total_observations": 785,
   "class_counts": {
     "subjunctive": 1743,
-    "observed_address": 532,
+    "observed_address": 533,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1657,
+    "unmatched": 1658,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -30903,6 +30903,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "johannes sigil \"final time\"": {
+      "canonical_query": "johannes sigil \"final time\"",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-04",
+          "status": "THE HETERONYM JOINED TO A PAPER IT DID NOT WRITE",
+          "surface": "Google AI Overview",
+          "source_format": "5 source cards, all the archive's: Academia.edu ×2 (The Final Time; The Seal Before the Name, #42), Medium·Johannes Sigil ×2 (#532, #312), and alexanarch.org (#6, the Antioch navigation map).",
+          "section": "Heteronyms",
+          "slug": "johannes-sigil-final-time-aio-20261004",
+          "gallery_url": "https://www.alexanarch.org/captures/#johannes-sigil-final-time-aio-20261004",
+          "record_url": "https://www.alexanarch.org/captures/johannes-sigil-final-time-aio-20261004/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#johannes-sigil-final-time-aio-20261004",
+          "details_excerpt": "THE HETERONYM JOINED TO A PAPER IT DID NOT WRITE: asked for Johannes Sigil and the quoted phrase 'final time', the Overview names Sigil as Lee Sharks's 'functional heteronym' and says the phrase 'primarily connects to th"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "person",
+        "spxi_treatment": "full",
+        "basis": "Johannes Sigil is a heteronym of Lee Sharks; The Final Time (#1635, #1637) is by Lee Sharks. Recorded 2026-10-04."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-04",
+      "latest_status": "THE HETERONYM JOINED TO A PAPER IT DID NOT WRITE"
     },
     "johannes sigil grundrisse": {
       "canonical_query": "johannes sigil grundrisse",
