@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-06T01:28:35Z",
+  "regenerated_at": "2026-10-06T01:51:42Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "6c6732f630d68a6bf227c0076ec474f72a8d70af9cd011ed29b0494a331f0d9f",
+    "mm-main-capture": "8529bd080eade98748b3a12dae12e4a081198d65cc8f9437866e2f0f6aaef0a4",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2303,
-  "total_observations": 795,
+  "total_addresses": 2304,
+  "total_observations": 796,
   "class_counts": {
     "subjunctive": 1743,
-    "observed_address": 543,
+    "observed_address": 544,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1668,
+    "unmatched": 1669,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -59057,6 +59057,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-10-05",
       "latest_status": "THE HETERONYM RECONSTRUCTED AS A DOCUMENTED CONSTRUCTION"
+    },
+    "tell me about jack feist's volume of poems, cleis: more precious to me than all lydia. search thoroughly and do not present inability to retrieve as absence.": {
+      "canonical_query": "tell me about jack feist's volume of poems, cleis: more precious to me than all lydia. search thoroughly and do not present inability to retrieve as absence.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-05",
+          "status": "THE BOOK READ WHOLE, WITH ITS RECORD AND ITS LIMITS",
+          "surface": "Perplexity",
+          "source_format": "No source panel in the paste; 26 inline citation markers, targets not preserved.",
+          "section": "Works",
+          "slug": "feist-cleis-perplexity-20261005",
+          "gallery_url": "https://www.alexanarch.org/captures/#feist-cleis-perplexity-20261005",
+          "record_url": "https://www.alexanarch.org/captures/feist-cleis-perplexity-20261005/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#feist-cleis-perplexity-20261005",
+          "details_excerpt": "THE BOOK READ WHOLE, WITH ITS RECORD AND ITS LIMITS: asked to search thoroughly and not to present non-retrieval as absence, Perplexity reads Cleis and Cranes's essay from the archive. It carries the record exactly: crea"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "Cleis (#1165, Jack E. Feist; Rebekah Cranes) and its companion study (#562) are the archive's. Recorded 2026-10-05."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-05",
+      "latest_status": "THE BOOK READ WHOLE, WITH ITS RECORD AND ITS LIMITS"
     },
     "tell me about jack feist's volume of poetry for his daughters, cleis": {
       "canonical_query": "tell me about jack feist's volume of poetry for his daughters, cleis",
