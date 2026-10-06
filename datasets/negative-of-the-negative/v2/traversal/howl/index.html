@@ -84,6 +84,9 @@ ul.claims .qt::before{content:"\201C"} ul.claims .qt::after{content:"\201D"}
 .plist>li:last-child{border:0}
 .plist .stage{color:var(--dim);font-size:.9em;flex-basis:100%}
 .foot{color:var(--dim);font-size:.82em;margin-top:30px;border-top:1px solid var(--border);padding-top:12px}
+.arms{display:inline-flex;border:1px solid var(--border);border-radius:999px;padding:3px;margin:4px 0 12px;background:#f5f5f5;gap:2px;flex-wrap:wrap}
+.arms button{border:0;background:none;font:500 .8em var(--sans);color:#555;padding:5px 12px;border-radius:999px;cursor:pointer}
+.arms button[aria-pressed="true"]{background:var(--surface);color:var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.12)}
 /* two levels of resolution: the compression (popup) and the expansion (entry), one simultaneous projection (2026-10-06) */
 .lv{margin:6px 0 10px}
 .lv-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}

@@ -144,6 +144,9 @@ ul.claims .qt::before{content:"\\201C"} ul.claims .qt::after{content:"\\201D"}
 .plist>li:last-child{border:0}
 .plist .stage{color:var(--dim);font-size:.9em;flex-basis:100%}
 .foot{color:var(--dim);font-size:.82em;margin-top:30px;border-top:1px solid var(--border);padding-top:12px}
+.arms{display:inline-flex;border:1px solid var(--border);border-radius:999px;padding:3px;margin:4px 0 12px;background:#f5f5f5;gap:2px;flex-wrap:wrap}
+.arms button{border:0;background:none;font:500 .8em var(--sans);color:#555;padding:5px 12px;border-radius:999px;cursor:pointer}
+.arms button[aria-pressed="true"]{background:var(--surface);color:var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.12)}
 /* two levels of resolution: the compression (popup) and the expansion (entry), one simultaneous projection (2026-10-06) */
 .lv{margin:6px 0 10px}
 .lv-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
@@ -234,11 +237,13 @@ def _sources():
     reg = {x["deposit_number"]: x for x in json.loads((ROOT / "data/registry.json").read_text(encoding="utf-8"))["deposits"]}
     return reg
 
-def claim_li(cid, ko, ledger, reg):
+def claim_li(cid, ko, ledger, reg, FC=None, FS=None):
     """One sourced claim, the same rendering wherever it appears (provenance list, lineage card)."""
-    if cid in ko["field_claims"]:
-        f = ko["field_claims"][cid]
-        return (f'<li><code class="cid">{esc(cid)}</code> {esc(ko["field_sources"].get(f["source"], f["source"]))}, {esc(f["locus"])} '
+    FC = FC if FC is not None else ko["field_claims"]
+    FS = FS if FS is not None else ko["field_sources"]
+    if cid in FC:
+        f = FC[cid]
+        return (f'<li><code class="cid">{esc(cid)}</code> {esc(FS.get(f["source"], f["source"]))}, {esc(f["locus"])} '
                 f'<span class="pill dim">documented · field</span><br><span class="qt">{esc(unquote(f["quote"]))}</span></li>')
     c = ledger[cid]; d = reg[c["dep"]]
     return (f'<li><code class="cid">{esc(cid)}</code> <a href="/s/records/{c["dep"]}/">#{c["dep"]}</a> <em>{esc(d["title"][:120])}</em> '
@@ -248,7 +253,7 @@ def claim_li(cid, ko, ledger, reg):
 def _words(t):
     return len(re.findall(r"[A-Za-z0-9'’-]+", t or ""))
 
-def two_levels(row, key):
+def two_levels(row, key, pk="P", kk="KO", arm="Field and archive (B ∪ A)"):
     """The compression and the expansion as one simultaneous projection.
 
     The compression (objects.P, the popup) is the surface; the expansion (objects.KO, the entry) is projected
@@ -257,16 +262,18 @@ def two_levels(row, key):
     computed from the ledger. Desktop: two columns, the compression held in view, pointing at a line on either
     side lights its counterparts on the other. Phone: each compression line opens in place into the expansion
     sentences it compresses, and the whole entry follows below."""
-    o = row["objects"]; pop, ko = o["P"], o["KO"]
+    o = row["objects"]; pop, ko = o[pk], o[kk]
     ledger = {c["id"]: c for c in json.loads((ROOT / row["ledger"]["archive"]).read_text(encoding="utf-8"))}
     reg = _sources()
+    FC = {**row.get("field_claims", {}), **ko.get("field_claims", {})}
+    FS = {**row.get("field_sources", {}), **ko.get("field_sources", {})}
     sents = ko["sentences"]
     def match(claims):
         cs = set(claims)
         return [x["n"] for x in sents if cs & set(x["claims"])]
     items = []  # (pid, claims)
     # compression
-    pc = [f'<div class="lv-pop"><div class="lv-label"><span>Compression</span><span>{esc(row["address"])}</span></div><div class="pop">']
+    pc = [f'<div class="lv-pop"><div class="lv-label"><span>Compression · {esc(arm)}</span><span>{esc(row["address"])}</span></div><div class="pop">']
     lk = match(pop["lede"]["claims"])
     items.append(("p0", pop["lede"]["claims"]))
     pc.append(f'<p class="pop-lede pi-lede" id="{key}-p0" data-k="{" ".join(map(str, lk))}"><b>{esc(pop["title"])}</b> {esc(pop["lede"]["text"])}</p>')
@@ -286,13 +293,13 @@ def two_levels(row, key):
     for i, ln in enumerate(pop["rail"], 1):
         e = ln["earliest"]
         if isinstance(e, str):
-            src = ko["field_sources"].get(e, e); eh = esc(src)
+            src = FS.get(e, e); eh = esc(src)
         else:
             d = reg[e]; eh = f'#{e} {esc(d["title"][:70])} · {esc(str(d.get("date") or ""))}'
-        others = sorted({("#%d" % ledger[c]["dep"]) if c in ledger else ko["field_claims"][c]["source"] for c in ln["claims"]})
+        others = sorted({("#%d" % ledger[c]["dep"]) if c in ledger else FC[c]["source"] for c in ln["claims"]})
         cards.append(f'<details class="lc"><summary><span class="lc-n">{i}</span>{esc(ln["lineage"])}<span class="lc-e">{eh}</span>'
                      f'<span class="lc-c">{len(ln["claims"])} claim{"" if len(ln["claims"]) == 1 else "s"} · {esc(", ".join(others))}</span></summary>'
-                     f'<ul class="claims">{"".join(claim_li(c, ko, ledger, reg) for c in ln["claims"])}</ul></details>')
+                     f'<ul class="claims">{"".join(claim_li(c, ko, ledger, reg, FC, FS) for c in ln["claims"])}</ul></details>')
     pc.append(f'<div class="rail" aria-label="Sources, one card per lineage">{"".join(cards)}</div></div></div>')
     # expansion: the entry, each sentence addressable and linked back to the compression lines that share its claims
     back = {x["n"]: [pid for pid, cl in items if set(cl) & set(x["claims"])] for x in sents}
@@ -300,32 +307,25 @@ def two_levels(row, key):
     for x in sents:
         paras.setdefault(x["para"], []).append(
             f'<span class="ks" id="{key}-ks{x["n"]}" data-p="{" ".join(back[x["n"]])}">{esc(x["text"])}</span>')
-    ec = [f'<div class="ent"><div class="lv-label"><span>Expansion</span><span>{len(sents)} sentences · every one sourced below</span></div>',
+    ec = [f'<div class="ent"><div class="lv-label"><span>Expansion · {esc(arm)}</span><span>{len(sents)} sentences · every one sourced below</span></div>',
           '<div class="ko">', f'<h3 class="ko-title">{esc(ko["title"])}</h3>']
     ec += [f"<p>{' '.join(v)}</p>" for _, v in sorted(paras.items())]
     ec.append('</div>')
     entries = []
     for x in sents:
         entries.append(det(f'{x["n"]}.', f'<span class="prov-s">{esc(x["text"])}</span>',
-                           f'<ul class="claims">{"".join(claim_li(c, ko, ledger, reg) for c in x["claims"])}</ul>', n=f'{len(x["claims"])}'))
+                           f'<ul class="claims">{"".join(claim_li(c, ko, ledger, reg, FC, FS) for c in x["claims"])}</ul>', n=f'{len(x["claims"])}'))
     used = {c for x in sents for c in x["claims"]}
-    nf = sum(1 for c in used if c in ko["field_claims"])
+    nf = sum(1 for c in used if c in FC)
     ec.append(det("", "Provenance — every sentence sourced",
                   f'<p class="meta">{len(sents)} sentences; {nf} field claims, {len(used) - nf} archive claims. Modality is the source\'s own; the prose carries it in its grammar.</p>'
                   f'<div class="stack">{"".join(entries)}</div>', n=f'{len(sents)} sentences'))
     ec.append('</div>')
-    # the form ledger, computed
+    # the numbers for the row's form ledger, computed
     pw = _words(pop["lede"]["text"]) + _words(pop["title"]) + sum(_words(it["label"] + " " + it["text"]) for s_ in pop["sections"] for it in s_["items"])
     pcl = set(pop["lede"]["claims"]) | {c for s_ in pop["sections"] for it in s_["items"] for c in it["claims"]}
     kw = sum(_words(x["text"]) for x in sents)
-    tw, tcl, tcards = o["T"]["words"], len(o["T"]["claims"]), o["T"]["cards"]
-    rows_ = [("body words", tw, pw, kw), ("distinct claims", tcl, len(pcl), len(used)),
-             ("claims per 100 words", f"{100 * tcl / tw:.1f}", f"{100 * len(pcl) / pw:.1f}", f"{100 * len(used) / kw:.1f}"),
-             ("rail", f"{tcards} documents", f"{len(pop['rail'])} lineages", "provenance per sentence"),
-             ("modality shown", "none", "in the typography", "in the grammar")]
-    flg = ('<table class="flg"><thead><tr><th></th><th>AIO (T)</th><th>compression</th><th>expansion</th></tr></thead><tbody>'
-           + "".join(f"<tr><td>{esc(a)}</td><td>{esc(str(b))}</td><td>{esc(str(c_))}</td><td>{esc(str(d_))}</td></tr>" for a, b, c_, d_ in rows_)
-           + '</tbody></table><p class="meta">Computed from the row at build: words counted in the text, claims from the ledger ids each line carries.</p>')
+    stats = {"P": {"words": pw, "claims": pcl, "rail": len(pop["rail"])}, "KO": {"words": kw, "claims": used, "sentences": len(sents)}}
     script = ('<script>(function(){var r=document.getElementById("lv-' + key + '");if(!r)return;'
               'function on(ids,cls){ids.forEach(function(i){var e=document.getElementById(i);if(e)e.classList.add(cls)})}'
               'function clear(){r.querySelectorAll(".hl").forEach(function(e){e.classList.remove("hl")})}'
@@ -337,9 +337,39 @@ def two_levels(row, key):
               'var f=document.getElementById(ks[0]);if(f){var b=f.getBoundingClientRect();if(b.top<0||b.bottom>innerHeight)f.scrollIntoView({block:"center",behavior:"smooth"})}})});'
               'r.querySelectorAll(".ks[data-p]").forEach(function(k){var ps=(k.dataset.p||"").split(" ").filter(Boolean).map(function(i){return "' + key + '-"+i});'
               'if(!ps.length)return;k.addEventListener("mouseenter",function(){clear();k.classList.add("hl");on(ps,"hl")});k.addEventListener("mouseleave",clear)})})();</script>')
-    return (f'<section class="lv" id="lv-{key}"><div class="lv-grid">{"".join(pc)}{"".join(ec)}</div>'
-            + det("", "Form ledger — the two levels against AIO", flg) + f'<p class="meta" style="margin-top:6px">{esc(pop["genre"])}. {esc(pop["entity"])} {esc(pop["status"])}</p>'
-            + script + '</section>')
+    return (f'<section class="lv" id="lv-{key}" data-arm="{esc(arm)}"><div class="lv-grid">{"".join(pc)}{"".join(ec)}</div>'
+            + f'<p class="meta" style="margin-top:6px">{esc(pop["genre"])}. {esc(pop["entity"])} {esc(pop["status"])}</p>'
+            + script + '</section>'), stats
+
+def form_ledger(row, arms):
+    """One table per row: AIO's transcript against every composed object of both arms, computed at build."""
+    o = row["objects"]
+    FC = set(row.get("field_claims", {})) | set(o.get("KO", {}).get("field_claims", {}))
+    tw, tcl = o["T"]["words"], len(o["T"]["claims"])
+    cols = [("AIO (T)", tw, None, f'{o["T"]["cards"]} documents', "none")]
+    for label, st in arms:
+        for lvl, name, rail, mod in (("P", "compression", f'{st["P"]["rail"]} lineages', "typography"), ("KO", "expansion", "per sentence", "grammar")):
+            cols.append((f"{label} {name}", st[lvl]["words"], st[lvl]["claims"], rail, mod))
+    rows_ = [("body words", [c[1] for c in cols]),
+             ("distinct claims", [tcl] + [len(c[2]) for c in cols[1:]]),
+             ("claims per 100 words", [f"{100 * tcl / tw:.1f}"] + [f"{100 * len(c[2]) / c[1]:.1f}" for c in cols[1:]]),
+             ("field claims carried (of %d)" % len(FC), ["—"] + [len(c[2] & FC) for c in cols[1:]]),
+             ("archive claims", ["0"] + [len(c[2] - FC) for c in cols[1:]]),
+             ("rail", [c[3] for c in cols]), ("modality shown in", [c[4] for c in cols])]
+    head = "".join(f"<th>{esc(c[0])}</th>" for c in cols)
+    body = "".join(f"<tr><td>{esc(n)}</td>" + "".join(f"<td>{esc(str(v))}</td>" for v in vals) + "</tr>" for n, vals in rows_)
+    return det("", "Form ledger — AIO against both arms, at both levels",
+               f'<div class="tw"><table class="flg"><thead><tr><th></th>{head}</tr></thead><tbody>{body}</tbody></table></div>'
+               '<p class="meta">Computed from the row at build: words counted in the text; claims from the ledger ids each line or sentence carries. '
+               'T\'s claims are the worked example\'s T1–T9.</p>')
+
+def arm_switch(key, arms):
+    btns = "".join(f'<button type="button" data-t="lv-{esc(k)}"{" aria-pressed=" + chr(34) + "true" + chr(34) if i == 0 else ""}>{esc(lab)}</button>' for i, (k, lab) in enumerate(arms))
+    js = ('<script>document.addEventListener("DOMContentLoaded",function(){var w=document.getElementById("arms-' + key + '");if(!w)return;var bs=w.querySelectorAll("button");'
+          'function show(t){bs.forEach(function(b){var on=b.dataset.t===t;b.setAttribute("aria-pressed",on?"true":"false");'
+          'var s=document.getElementById(b.dataset.t);if(s)s.hidden=!on})}'
+          'bs.forEach(function(b){b.addEventListener("click",function(){show(b.dataset.t)})});show(bs[0].dataset.t)});</script>')
+    return f'<div class="arms" id="arms-{key}" role="group" aria-label="Arm">{btns}</div>' + js
 
 def knowledge_object(ko, row):
     """The knowledge object: the plan of L(B ∪ A) realized as encyclopedic prose with no provenance in it, and every sentence
@@ -464,7 +494,14 @@ def main():
              f'<div class="card-query">{q}</div><div class="card-status">{"".join(pills)}</div>',
              f'<p class="meta" style="margin-bottom:12px">{md_inline(r["status"]["procedure"])}. Ledger: {md_inline(r["status"]["ledger"])}.</p>']
         if o.get("P") and ko:
-            c.append(two_levels(r, key))
+            arms, stats = [], []
+            html_a, st_a = two_levels(r, key, "P", "KO", "Field and archive (B ∪ A)")
+            arms.append((key, "Field and archive (B ∪ A)")); stats.append(("B ∪ A", st_a))
+            html_b = ""
+            if o.get("P_B") and o.get("KO_B"):
+                html_b, st_b = two_levels(r, key + "-b", "P_B", "KO_B", "Field alone (B)")
+                arms.append((key + "-b", "Field alone (B)")); stats.append(("B", st_b))
+            c.append(arm_switch(key, arms) + html_a + html_b + form_ledger(r, list(reversed(stats))))
         elif ko:
             c.append(knowledge_object(ko, r))
         tclaims = "".join(f"<li>{md_inline(x)}</li>" for x in o["T"]["claims"])
