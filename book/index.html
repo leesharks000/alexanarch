@@ -30,6 +30,11 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:6px}
 .conv-snippet{font-family:var(--serif);font-size:1em;color:#333;margin:8px 0 4px;line-height:1.55;font-style:italic}
 .conv-mode{display:inline-block;font-family:var(--mono);font-size:0.7em;padding:1px 8px;border-radius:10px;background:#f0f4f8;color:var(--accent);letter-spacing:0.04em}
 .conv-mode.merkabah{background:#fff4e8;color:var(--accent2)}
+.conv-axn a{color:inherit;text-decoration:none}.conv-axn a:hover{color:var(--accent2)}
+.conv-link{font-family:var(--mono);font-size:0.72em;color:var(--dim);text-decoration:none;border:1px solid var(--border);border-radius:10px;padding:1px 8px;margin-left:6px;white-space:nowrap}
+.conv-link:hover{color:var(--accent2);border-color:var(--accent2)}
+.conv:target,.conv.linked{border-color:var(--teal);box-shadow:0 0 0 2px rgba(10,124,106,.15)}
+.transcript-wrap{cursor:auto}
 .expanded{padding:20px 22px;background:#fefcf8}
 .expanded .conv-head{margin-bottom:14px}
 .transcript{font-family:var(--serif);line-height:1.7}
@@ -80,6 +85,21 @@ The Book is a dataset of the Mandala Oracle's public-API conversations. Data hom
 const INDEX_URL = 'https://raw.githubusercontent.com/leesharks000/the-mandala-oracle/main/book/index.json';
 const CONVERSATION_URL_BASE = 'https://raw.githubusercontent.com/leesharks000/the-mandala-oracle/main/book/data/';
 
+// Each conversation has its own link, #AXN-XXXX (the hex of its AXN, the key of its data file).
+// 2026-10-06: the Book already opened a conversation from #<full AXN>, but no link was shown, opening a
+// card did not put one in the address bar, and nothing scrolled to it. The full-AXN form still works.
+function axnHex(axn) {
+  const m = String(axn || '').match(/^AXN[:\-]([0-9A-Fa-f]{4,})/);
+  return m ? m[1].toUpperCase() : null;
+}
+function anchorFor(axn) { const h = axnHex(axn); return h ? 'AXN-' + h : null; }
+function hexFromHash() {
+  let h = location.hash.slice(1);
+  try { h = decodeURIComponent(h); } catch (e) {}
+  return axnHex(h);
+}
+function permalink(axn) { return location.origin + location.pathname + '#' + anchorFor(axn); }
+
 function axnToFilename(axn) {
   // AXN:XXXX.CONVERSATION.EMOJIS → AXN-XXXX.json
   const m = axn.match(/^AXN:([0-9A-F]+)\./);
@@ -117,20 +137,54 @@ function renderIndex(index) {
     const div = document.createElement('div');
     div.className = 'conv';
     div.dataset.axn = c.axn;
-    if (location.hash === '#' + c.axn) div.dataset.expanded = '1';
+    const anchor = anchorFor(c.axn);
+    if (anchor) div.id = anchor;
+    if (axnHex(c.axn) && axnHex(c.axn) === hexFromHash()) div.dataset.expanded = '1';
     div.innerHTML = `
       <div class="conv-head">
-        <span class="conv-axn">${escapeHtml(c.axn)}</span>
+        <span class="conv-axn">${anchor ? `<a href="#${anchor}" title="Link to this conversation">${escapeHtml(c.axn)}</a>` : escapeHtml(c.axn)}${anchor ? `<a class="conv-link" href="#${anchor}" title="Copy a link to this conversation">link</a>` : ''}</span>
         <span class="conv-meta"><strong>${c.turn_count || 0}</strong> turn${c.turn_count === 1 ? '' : 's'} · <strong>${escapeHtml(c.witness || 'anonymous')}</strong> · ${fmtDate(c.last_updated)}</span>
       </div>
       <div class="conv-snippet">${escapeHtml(c.opening_snippet || '')}</div>
       <span class="conv-mode ${c.mode === 'merkabah' ? 'merkabah' : ''}">${escapeHtml(c.mode || 'sabbath')}</span>
     `;
-    div.addEventListener('click', () => toggleConversation(div, c.axn));
+    div.addEventListener('click', (ev) => {
+      if (ev.target.closest('.transcript-wrap')) return;      // reading or selecting a transcript does not fold it
+      const a = ev.target.closest('a');
+      if (a && a.classList.contains('conv-link')) { ev.preventDefault(); ev.stopPropagation(); copyLink(a, c.axn); openTo(div, c.axn); return; }
+      if (a) { ev.preventDefault(); openTo(div, c.axn); return; }
+      const opening = div.dataset.loaded !== '1' || (div.querySelector('.transcript-wrap') || {}).style?.display === 'none';
+      toggleConversation(div, c.axn);
+      if (opening && anchor) history.replaceState(null, '', '#' + anchor);
+    });
     list.appendChild(div);
-    if (div.dataset.expanded) toggleConversation(div, c.axn);
+    if (div.dataset.expanded) { toggleConversation(div, c.axn); scrollToCard(div); if (anchor) history.replaceState(null, '', '#' + anchor); }
   });
 }
+
+function scrollToCard(el) {
+  document.querySelectorAll('.conv.linked').forEach(x => x.classList.remove('linked'));
+  el.classList.add('linked');
+  requestAnimationFrame(() => el.scrollIntoView({ block: 'start', behavior: 'auto' }));
+}
+function openTo(el, axn) {
+  const anchor = anchorFor(axn);
+  if (anchor) history.replaceState(null, '', '#' + anchor);
+  const t = el.querySelector('.transcript-wrap');
+  if (el.dataset.loaded !== '1') toggleConversation(el, axn);
+  else if (t && t.style.display === 'none') t.style.display = 'block';
+  scrollToCard(el);
+}
+function copyLink(a, axn) {
+  const url = permalink(axn);
+  const done = () => { const was = a.textContent; a.textContent = 'copied'; setTimeout(() => { a.textContent = was; }, 1400); };
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done, () => {});
+}
+window.addEventListener('hashchange', () => {
+  const hex = hexFromHash(); if (!hex) return;
+  const el = document.getElementById('AXN-' + hex);
+  if (el) openTo(el, el.dataset.axn);
+});
 
 async function toggleConversation(el, axn) {
   if (el.dataset.loaded === '1') {
