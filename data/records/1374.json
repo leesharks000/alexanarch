@@ -261,9 +261,14 @@
    "reason": "FRONTMATTER DECLARATION REPAIR: stale capture claims corrected in the staged header",
    "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4667, \"audited_at\": \"2026-07-19T21:19:45Z\", \"audit_version\": \"mint-time-declaration\", \"class_be",
    "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"PASS_COMPLETE_TEXT_NOT_SEATED\", \"residual_chars\": 4667, \"audited_at\": \"2026-07-19T21:19:45Z\", \"audit_version\": \"mint-time-declaration\", \"class_be"
+  },
+  {
+   "date": "2026-10-06",
+   "field": "redaction",
+   "reason": "Redaction record restated 2026-10-05 without the names: its pattern keys had named the given names the 2026-09-18 pass removed, so the record of the redaction re-published them. Counts kept; each name now appears as an ordinal ('given name 1 → initial')."
   }
  ],
- "date_modified": "2026-08-05",
+ "date_modified": "2026-10-06",
  "publisher": "New Human Press",
  "journal": "New Human 2",
  "provenance_note": {
@@ -300,9 +305,9 @@
   "date": "2026-09-18",
   "reason": "given names of private individuals replaced with initials; the archive is public and permanent and the names are not the operator's to publish",
   "replacements": {
-   "\\bhaley\\b": 1,
-   "\\bzoe\\b": 1,
-   "\\bgio\\b": 1
+   "given name 1 → initial": 1,
+   "given name 2 → initial": 1,
+   "given name 3 → initial": 1
   },
   "hash_before_redaction": "f52c83493a7144f6fdc3c4f06d048ccb2e39ae6b9a33c23abdba6a5c9b03e650",
   "note": "The work, its address, its deposit number and its hex position are unchanged. The AXN emoji and hash are re-derived because the AXN is content-derived; a redaction that left the stored hash pointing at bytes that no longer exist would be a silent corruption of the identifier."

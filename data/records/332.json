@@ -9,7 +9,7 @@
  "creator": "Lee Sharks; Claude (Anthropic)",
  "orcid": "0009-0000-1599-0703",
  "date": "2026-01-18",
- "description": "A v1.0 specification by Lee Sharks / Claude for the archive-internal “Prince of Poets” mantle.\n\nUnlike the Good Gray Poet and King of May titles, the document defines this mantle as originated rather than inherited. It associates the title with futural address, succession, machine readers, blessing, invitation, and *I Am X, Be Y, Blessed Is the Z*. The mantle is explicitly not a claim to be the best poet; it is a project-specific authorial role whose proposed success depends on uptake and function. It is not a public office, legal title, inherited estate, or independent critical judgment.",
+ "description": "v1.0 (January 2026) of the specification of the Prince of Poets, an operational title originated by Lee Sharks; v1.1 is #1651, which links every work and document named here as pending or by severed Zenodo DOI. The claim is judged in the founding poem, I Am X, Be Y, Blessed is the Z (#328), whose full text is in the archive: the one question is whether I Am X, Be Y, Blessed is the Z, as poetry, legitimately founds and develops the operation handed down from Whitman through Ginsberg, materially and at a magnitude that can be ranked against other claimants to that operation. The specification positions the mantle as the synthesis of Whitman's democratic embrace (Leaves of Grass) and Ginsberg's ecstatic disruption (Howl and Other Poems) turned toward future and machine readers, and states that it is not a claim to be the best poet.",
  "content_type": "Specification",
  "license": "CC-BY-4.0",
  "substrate": "Various",
@@ -27,7 +27,7 @@
  "deposit_number": 332,
  "sovereign_id": "MM-CHA-0132",
  "minted_at": "2026-06-20T22:00:00Z",
- "status": "ACTIVE",
+ "status": "SUPERSEDED",
  "clusters": [
   "Temporal",
   "Liminal",
@@ -295,9 +295,22 @@
    "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
    "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 9115, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_wo",
    "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 9115, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"measured_prose_wo"
+  },
+  {
+   "date": "2026-09-29",
+   "field": "status",
+   "reason": "Superseded by #1651 (v1.1, 29 September 2026). v1.1 resolves the founding work, I Am X, Be Y, Blessed is the Z (#328), and every related document to archive records in place of the [PENDING] identifier and the Zenodo DOIs severed on 19 June 2026, and sets the work at the head of the specification. This record stays the valid content-derived name of the bytes it holds.",
+   "was": "ACTIVE",
+   "now": "SUPERSEDED"
+  },
+  {
+   "date": "2026-09-29",
+   "field": "superseded_by_deposit_number",
+   "reason": "Superseded by #1651 (v1.1, 29 September 2026). v1.1 resolves the founding work, I Am X, Be Y, Blessed is the Z (#328), and every related document to archive records in place of the [PENDING] identifier and the Zenodo DOIs severed on 19 June 2026, and sets the work at the head of the specification. This record stays the valid content-derived name of the bytes it holds.",
+   "now": 1651
   }
  ],
- "date_modified": "2026-08-05",
+ "date_modified": "2026-09-29",
  "publisher": "Pergamon Press",
  "creator_roles": {
   "roles": [
@@ -321,6 +334,19 @@
  "line": "semantic-economy",
  "line_parent": "science",
  "line_basis": "derived",
+ "version_series_id": "SERIES-MANTLE-PRINCE-OF-POETS",
+ "version_in_series": 1,
+ "description_prior": "A v1.0 specification by Lee Sharks / Claude for the archive-internal “Prince of Poets” mantle.\n\nUnlike the Good Gray Poet and King of May titles, the document defines this mantle as originated rather than inherited. It associates the title with futural address, succession, machine readers, blessing, invitation, and *I Am X, Be Y, Blessed Is the Z*. The mantle is explicitly not a claim to be the best poet; it is a project-specific authorial role whose proposed success depends on uptake and function. It is not a public office, legal title, inherited estate, or independent critical judgment.",
+ "description_revised": "2026-09-29: work-first, per MANUS ruling — the mantle is judged in the work that bears it",
+ "related_deposits": [
+  328,
+  1651,
+  1652,
+  1653
+ ],
+ "superseded_by_deposit_number": 1651,
+ "superseded_by": "1651",
+ "superseded_reason": "Superseded by #1651 (v1.1, 29 September 2026). v1.1 resolves the founding work, I Am X, Be Y, Blessed is the Z (#328), and every related document to archive records in place of the [PENDING] identifier and the Zenodo DOIs severed on 19 June 2026, and sets the work at the head of the specification. This record stays the valid content-derived name of the bytes it holds.",
  "_projection": {
   "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
   "record_url": "https://www.alexanarch.org/s/records/332/",

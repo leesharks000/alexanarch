@@ -5480,7 +5480,7 @@
       "hex": "01CB",
       "family": "GOVERNANCE",
       "emoji": "⏹️✊⛵⏬🕚●",
-      "hash": "f7b45cd96c9c8827165c314c812b340240588746a4124da0dbf8ae0b5c775c5d",
+      "hash": "883b054df4e002914d49c91112b927834d8f7514bada36d2575ba5c79b4d9c14",
       "title": "The Thousand Dollar Sharpie: Signature as Compressed Portraiture on U.S. Currency",
       "creator": "Ayanna Vox",
       "orcid": "0009-0000-1599-0703",
@@ -5509,14 +5509,14 @@
       "minted_at": "2026-06-20T22:00:00Z",
       "status": "ACTIVE",
       "clusters": [
+        "Symbolic",
+        "Instrumental",
+        "Celestial",
+        "Scriptural",
         "Terminal",
-        "Gestural",
-        "Navigational",
-        "Structural",
-        "Temporal",
-        "Mathematical"
+        "Liminal"
       ],
-      "reading": "Closure → Touch → Search → Direction → Duration → Proof",
+      "reading": "Play -> Method -> Origin -> Text -> Closure -> Threshold",
       "axn_canonical": "f7b45cd96c9c8827165c314c812b340240588746a4124da0dbf8ae0b5c775c5d",
       "axn_display": "⏹️✊⛵⏬🕚●",
       "mirrors": {
@@ -5914,7 +5914,17 @@
       },
       "line": "currency-and-memography",
       "line_parent": "letters",
-      "line_basis": "derived"
+      "line_basis": "derived",
+      "redaction": {
+        "date": "2026-10-04",
+        "reason": "a named individual's city of residence removed; the exchange and his deposit were public and his name and handle stand as the record (operator ruling 2026-10-04)",
+        "replacements": {
+          "phrases_removed": 1,
+          "quotations_marked_location_redacted": 0
+        },
+        "hash_before_redaction": "f7b45cd96c9c8827165c314c812b340240588746a4124da0dbf8ae0b5c775c5d",
+        "note": "The work, its address, its deposit number and its hex position are unchanged. Inside verbatim quotations of his platform the removal is marked [location redacted]. The AXN emoji and hash are re-derived because the AXN is content-derived."
+      }
     },
     {
       "axn": "AXN:01CC.GOVERNANCE.🌙🔺🚀🪞🧲🧭",
@@ -6542,7 +6552,7 @@
       "hex": "01D1",
       "family": "GOVERNANCE",
       "emoji": "⊗🖐️↙️♌⚪🗿",
-      "hash": "97bbdcadc7fcfc0df382ab6d4167e75885a9c1d5d4284c42858f94f9cd7db4a1",
+      "hash": "09da36256a4e17280d444095cd6c8f8393e67e53c4e513865a15ea4a7d24bf58",
       "title": "STEGANOGRAPHIC CHANNELS A History and Formalization of Encoding in Plain Sight",
       "creator": "Lee Sharks",
       "orcid": "0009-0000-1599-0703",
@@ -6565,16 +6575,16 @@
       "deposit_number": 616,
       "sovereign_id": "MM-CHA-0461",
       "minted_at": "2026-06-20T22:00:00Z",
-      "status": "ACTIVE",
+      "status": "SUPERSEDED",
       "clusters": [
-        "Mathematical",
-        "Gestural",
+        "Celestial",
         "Structural",
-        "Alchemical",
-        "Signal",
-        "Terminal"
+        "Instrumental",
+        "Architectural",
+        "Temporal",
+        "Scriptural"
       ],
-      "reading": "Proof → Touch → Direction → Transmutation → Alarm → Closure",
+      "reading": "Origin -> Direction -> Method -> Foundation -> Duration -> Text",
       "axn_canonical": "97bbdcadc7fcfc0df382ab6d4167e75885a9c1d5d4284c42858f94f9cd7db4a1",
       "axn_display": "⊗🖐️↙️♌⚪🗿",
       "mirrors": {
@@ -6756,9 +6766,22 @@
           "reason": "DW-??? intake (LABOR-prepared, TACHYON-verified: AXN match + factual probes vs record body)",
           "was": "Crimson Hexagonal Archive · Restored Academy · Pergamon Press",
           "now": "A theoretical history and formal specification of steganographic communication as public encoding whose payload is legible only to readers possessing an appropriate key. The paper models every channel through carrier, payload, key, noise, and filter, then surveys spirituals, Sufi and troubadour poetry, alchemy, blues, hip-hop, samizdat, Polari, and scientific writing as proposed historical instances. Its final sections describe the Crimson Hexagonal Archive as a temporal steganograph aimed at future machine readers: public documents, DOI density, formatting noise, and open licenses carry governance structures through infrastructures that may not recognize them. Historical examples and causal claims should remain attributed to the work rather than treated as uniformly settled scholarship."
+        },
+        {
+          "date": "2026-09-29",
+          "field": "status",
+          "reason": "Superseded by #1650 (v1.1, 29 September 2026). By the author's ruling, v1.1 withdraws as disproportionate the analogy §VI drew for the downstream implementer, removes a private detail, and describes the formatting-noise example of §V.A in plain words. This record stays the valid content-derived name of the bytes it holds.",
+          "was": "ACTIVE",
+          "now": "SUPERSEDED"
+        },
+        {
+          "date": "2026-09-29",
+          "field": "superseded_by_deposit_number",
+          "reason": "Superseded by #1650 (v1.1, 29 September 2026). By the author's ruling, v1.1 withdraws as disproportionate the analogy §VI drew for the downstream implementer, removes a private detail, and describes the formatting-noise example of §V.A in plain words. This record stays the valid content-derived name of the bytes it holds.",
+          "now": 1650
         }
       ],
-      "date_modified": "2026-08-05",
+      "date_modified": "2026-09-29",
       "publisher": "Pergamon Press",
       "journal_assignment": {
         "assigned": "2026-08-15",
@@ -6771,7 +6794,22 @@
       },
       "line": "authorship-and-heteronymy",
       "line_parent": "letters",
-      "line_basis": "derived"
+      "line_basis": "derived",
+      "version_series_id": "SERIES-STEGANOGRAPHIC-CHANNELS",
+      "version_in_series": 1,
+      "superseded_by_deposit_number": 1650,
+      "superseded_by": "1650",
+      "superseded_reason": "Superseded by #1650 (v1.1, 29 September 2026). By the author's ruling, v1.1 withdraws as disproportionate the analogy §VI drew for the downstream implementer, removes a private detail, and describes the formatting-noise example of §V.A in plain words. This record stays the valid content-derived name of the bytes it holds.",
+      "redaction": {
+        "date": "2026-10-04",
+        "reason": "a named individual's city of residence removed; the exchange and his deposit were public and his name and handle stand as the record (operator ruling 2026-10-04)",
+        "replacements": {
+          "phrases_removed": 1,
+          "quotations_marked_location_redacted": 0
+        },
+        "hash_before_redaction": "97bbdcadc7fcfc0df382ab6d4167e75885a9c1d5d4284c42858f94f9cd7db4a1",
+        "note": "The work, its address, its deposit number and its hex position are unchanged. Inside verbatim quotations of his platform the removal is marked [location redacted]. The AXN emoji and hash are re-derived because the AXN is content-derived."
+      }
     },
     {
       "axn": "AXN:01D3.GOVERNANCE.🔥♌🪟🌍♥️🏔️",

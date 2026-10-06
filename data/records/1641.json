@@ -1,0 +1,170 @@
+{
+ "deposit_number": 1641,
+ "axn": "AXN:06CF.DATASET.🪜☿🎭🎨⏰♊",
+ "hex": "06CF",
+ "family": "DATASET",
+ "emoji": "🪜☿🎭🎨⏰♊",
+ "hash": "23a2848661ab9d9848993a01b0e05cfb13b3c67fb3d818c3086647836f0b5fa0",
+ "title": "EA-CORPORA-16 — The Sixteenth Seating: Apollonius and Hesiod, Stored for the Distance Class and Gathered Here",
+ "creator": "Sharks, Lee",
+ "date": "2026-09-27",
+ "description": "Two Greek corpora seated on the originals shelf: Apollonius Rhodius, Argonautica (Perseus tlg0001, 5,898 lines), and Hesiod, Theogony, Works and Days and Shield (Perseus tlg0020, 2,382 lines). Both were fetched and stored on 29 August 2026 for Round 33 of the authorship investigation, to characterise the distance-inheritance class, and were never indexed, deposited or shelved; the numbers they were stored under (12/02, 12/03) were later assigned to Strabo by EA-CORPORA-12. This deposit gathers them under their own card numbers, 16/01 and 16/02, with the opening of every work verified in the seated bytes.",
+ "content_type": "Dataset",
+ "license": "CC-BY-4.0",
+ "substrate": "Human–machine collaborative. Seats fetched and normalized on 2026-08-29 in-session by TACHYON (Claude, Anthropic) under MANUS (Lee Sharks) direction; renumbered, verified at their openings, indexed and shelved on 2026-09-27 by TACHYON; the shelf cards rendered by the archive's own generator. The ruling to gather them as EA-CORPORA-16 is Lee Sharks's. CC-BY-4.0 applies to this record and the seat records; the payloads carry Perseus's CC BY-SA packaging over public-domain editions.",
+ "methodology": "Both texts fetched from PerseusDL/canonical-greekLit at the pinned commit a065c359aab3 and flattened from TEI (teiHeader, note and app stripped; one file per work; works under 400 tokens dropped); SHA-256 manifest over originals, text and source record; the opening line of each of the four works located in the seated bytes; four-surface seating (data, index, deposit, shelf).",
+ "falsification_conditions": "A seat is falsified if its files do not verify against its MANIFEST.sha256 at the canonical URL, if its source.json commit does not resolve in the origin repository, if a verified opening cannot be found in the seated text named, or if the four surfaces disagree.",
+ "root_axn": "AXN:06CF.DATASET",
+ "axn_schema_version": "v2",
+ "protocol_version": "alexanarch-deposit-protocol/v1",
+ "axn_canonical": "23a2848661ab9d9848993a01b0e05cfb13b3c67fb3d818c3086647836f0b5fa0",
+ "clusters": [
+  "Architectural",
+  "Alchemical",
+  "Symbolic",
+  "Symbolic",
+  "Temporal",
+  "Alchemical"
+ ],
+ "axn_reading": "Foundation -> Transmutation -> Play -> Play -> Duration -> Transmutation",
+ "minted_at": "2026-09-27T10:53:54Z",
+ "status": "ACTIVE",
+ "status_authorial": "SELF_SERVE_MINTED",
+ "full_text_path": "/data/texts/AXN-06CF-text.md",
+ "wiki_article": "EA-CORPORA-16 seats two Greek corpora on the archive's originals shelf: Apollonius Rhodius's Argonautica and Hesiod's Theogony, Works and Days and Shield, from the Perseus canonical Greek editions at a pinned commit. Both were fetched on 29 August 2026 for Round 33 of the authorship investigation, to characterise inheritance across a distance of centuries, and were stored without being indexed, deposited or shelved; the numbers they were stored under were later given to Strabo. Round 33 reclassed Homer to Apollonius from a neutral distance control to a constructed lineage — a later poet claiming epic descent — and refuted the lexical battery the seats were stored for. The seating gathers them under their own card numbers, 16/01 and 16/02, with the opening line of each of the four works verified in the seated bytes.",
+ "wiki_status": "in-session",
+ "entities": [
+  {
+   "subject": "EA-CORPORA-16 — The Sixteenth Seating: Apollonius and Hesiod, Stored for the Distance Class and Gath",
+   "predicate": "created_by",
+   "object": "Sharks, Lee",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "EA-CORPORA-16 — The Sixteenth Seating: Apollonius and Hesiod, Stored for the Distance Class and Gath",
+   "predicate": "is_type",
+   "object": "Dataset",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "EA-CORPORA-16 — The Sixteenth Seating: Apollonius and Hesiod, Stored for the Distance Class and Gath",
+   "predicate": "belongs_to_family",
+   "object": "DATASET",
+   "type": "work",
+   "evidence_status": "observed"
+  },
+  {
+   "subject": "EA-CORPORA-16 — The Sixteenth Seating: Apollonius and Hesiod, Stored for the Distance Class and Gath",
+   "predicate": "is_part_of",
+   "object": "Crimson Hexagonal Archive",
+   "type": "work",
+   "evidence_status": "observed"
+  }
+ ],
+ "entity_status": "in-session",
+ "defines_concepts": [],
+ "orcid": "0009-0000-1599-0703",
+ "version": "v1.0",
+ "keywords": [
+  "corpus seating",
+  "primary sources",
+  "Apollonius Rhodius",
+  "Argonautica",
+  "Hesiod",
+  "Theogony",
+  "Works and Days",
+  "Shield of Heracles",
+  "distance inheritance",
+  "constructed lineage",
+  "authorship investigation",
+  "Training Layer Literature",
+  "originals shelf",
+  "EA-CORPORA"
+ ],
+ "related_identifiers_raw": "AXN deposit #1569 — The Notebook of the Authorship Investigation (Round 33, for which these seats were stored)\nAXN deposit #1570 — The Measurement Register (the battery Round 33 refuted)\nAXN deposit #1580 — EA-CORPORA-12, which assigned 12/02 to Strabo\nAXN deposit #1640 — EA-CORPORA-15 v1.1, the preceding seating",
+ "mint_source": {
+  "kind": "github_issue",
+  "issue_number": 0,
+  "repository": "leesharks000/alexanarch",
+  "minted_by_workflow": ".github/workflows/mint-axn.yml",
+  "minted_by_script": "scripts/mint_deposit.py",
+  "minted_via": "self_serve_validated_pr"
+ },
+ "body_status": {
+  "class": "full",
+  "lacuna": false,
+  "recovery_status": "COMPLETE",
+  "residual_chars": 4860,
+  "audited_at": "2026-09-27T10:53:54Z",
+  "audit_version": "mint-time-declaration"
+ },
+ "concepts_attested_none": true,
+ "related_deposits": [
+  1569,
+  1570,
+  1580,
+  1640
+ ],
+ "related_attested_none": false,
+ "lexical_attested_none": true,
+ "references_concepts": [
+  "Lee Sharks",
+  "TACHYON",
+  "Training Layer",
+  "Training Layer Literature"
+ ],
+ "references_concept_count": 4,
+ "citations": [],
+ "wikidata_candidates": [],
+ "cha_cross_references": [],
+ "external_metadata_path": "/data/external-metadata/AXN-06CF.json",
+ "spxi_audit": {
+  "spxi_protocol": "v0.2",
+  "validated_at": "2026-09-27T11:02:38.945245+00:00",
+  "layers": {
+   "layer_1_inscription_anchors": {
+    "present": false,
+    "anchors_found": [
+     "authorial_position_phrase"
+    ],
+    "anchor_count": 1,
+    "orcid_in_body": false,
+    "creator_in_body": false,
+    "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+   },
+   "layer_2_micro_kernels": {
+    "present": false,
+    "fenced_json_blocks": 0,
+    "json_ld_context_markers": 0
+   },
+   "layer_3_content_hash": {
+    "present": true,
+    "canonical_hash": "0eb80ba1883ed9dfaed9731458af934ee91271cf04370ae22ee7913e36eb6875",
+    "hash_in_body": false,
+    "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+   },
+   "layer_4_cross_signing": {
+    "present": false,
+    "cross_references_count": 0,
+    "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+   },
+   "layer_5_external_anchors": {
+    "present": true,
+    "wikidata_qid_count": 0,
+    "external_doi_count": 0,
+    "orcid_present": true
+   }
+  },
+  "overall_conformance": "partial"
+ },
+ "_projection": {
+  "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
+  "record_url": "https://www.alexanarch.org/s/records/1641/",
+  "self_url": "https://www.alexanarch.org/data/records/1641.json",
+  "registry_url": "https://www.alexanarch.org/data/registry.json",
+  "text_url": "https://www.alexanarch.org/data/texts/AXN-06CF-text.md",
+  "oai_pmh": "https://www.alexanarch.org/oai?verb=Identify"
+ }
+}
