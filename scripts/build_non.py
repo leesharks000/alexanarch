@@ -144,6 +144,46 @@ ul.claims .qt::before{content:"\\201C"} ul.claims .qt::after{content:"\\201D"}
 .plist>li:last-child{border:0}
 .plist .stage{color:var(--dim);font-size:.9em;flex-basis:100%}
 .foot{color:var(--dim);font-size:.82em;margin-top:30px;border-top:1px solid var(--border);padding-top:12px}
+/* two levels of resolution: the compression (popup) and the expansion (entry), one simultaneous projection (2026-10-06) */
+.lv{margin:6px 0 10px}
+.lv-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+.lv-grid>*,.pop,.rail{min-width:0}
+.lv-label{font-family:var(--mono);font-size:.68em;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin-bottom:6px;display:flex;justify-content:space-between;gap:8px}
+.pop{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px 16px 12px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.pop-lede{font-size:1.02em;line-height:1.6;color:#1f1f1f;margin-bottom:10px}
+.pop-lede b{color:var(--accent)}
+.pop h4{font-size:.92em;font-weight:600;color:#222;margin:12px 0 4px}
+.pop ul.pi-list{list-style:none;margin:0}
+.pop details.pi{border:0;background:none;margin:0;border-radius:6px}
+.pop details.pi>summary{display:block;padding:4px 6px 4px 16px;font-size:.92em;color:#2a2a2a;position:relative;line-height:1.5}
+.pop details.pi>summary::before{content:"•";position:absolute;left:4px;top:4px;color:var(--teal);transform:none}
+.pop details.pi[open]>summary{border-bottom:0}
+.pop details.pi>summary b{color:#111}
+.pop .pi-x{font-family:var(--mono);font-size:.72em;color:var(--teal);margin-left:4px;white-space:nowrap}
+.pop .pi-exp{margin:2px 0 8px 16px;padding:8px 10px;border-left:3px solid var(--accent);background:#f7f9fb;font-family:Georgia,"Times New Roman",serif;font-size:.95em;line-height:1.6;color:#222}
+.pop .pi-exp a{font-family:var(--mono);font-size:.72em;border:0;margin-left:4px}
+.pi.hl>summary,.ks.hl{background:#fff3c4;border-radius:4px}
+.ks{transition:background .15s;border-radius:3px;cursor:default}
+.ks[data-p]:hover{background:#fff8dd}
+.rail{display:flex;gap:8px;overflow-x:auto;padding:10px 2px 4px;margin-top:10px;border-top:1px solid var(--border);-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity}
+.rail details.lc{flex:0 0 200px;scroll-snap-align:start;background:#fbfbfb;border:1px solid var(--border);border-radius:8px;margin:0;font-size:.8em}
+.rail details.lc[open]{flex-basis:300px;background:var(--surface)}
+.rail details.lc>summary{display:block;padding:8px 10px;color:#333;line-height:1.35}
+.rail details.lc>summary::before{content:none}
+.rail .lc-n{font-family:var(--mono);color:var(--teal);margin-right:4px}
+.rail .lc-e{display:block;color:var(--dim);font-size:.92em;margin-top:3px}
+.rail .lc-c{display:block;color:var(--accent);font-family:var(--mono);font-size:.85em;margin-top:3px}
+.rail ul.claims{padding:0 10px 8px}
+.ent .ko{margin-top:0}
+.ent .ko p{font-size:1em}
+.flg{width:auto;min-width:60%;font-size:.8em}
+@media (min-width:960px){
+ .wrap{max-width:1180px}
+ .lv-grid{grid-template-columns:minmax(0,5fr) minmax(0,6fr);align-items:start;gap:22px}
+ .lv-pop{position:sticky;top:12px}
+ .pop .pi-exp{display:none}
+ .pop details.pi>summary{cursor:pointer}
+}
 @media (max-width:560px){.wrap{padding:24px 14px}.ko{padding:14px 15px}.card{padding:13px}dl.kv{grid-template-columns:1fr}dl.kv dt{margin-top:4px}}
 """
 
@@ -189,6 +229,117 @@ def address_href(row, address):
         if slug and (ROOT / "addresses" / slug / "index.html").exists():
             return f"/addresses/{slug}/"
     return None
+
+def _sources():
+    reg = {x["deposit_number"]: x for x in json.loads((ROOT / "data/registry.json").read_text(encoding="utf-8"))["deposits"]}
+    return reg
+
+def claim_li(cid, ko, ledger, reg):
+    """One sourced claim, the same rendering wherever it appears (provenance list, lineage card)."""
+    if cid in ko["field_claims"]:
+        f = ko["field_claims"][cid]
+        return (f'<li><code class="cid">{esc(cid)}</code> {esc(ko["field_sources"].get(f["source"], f["source"]))}, {esc(f["locus"])} '
+                f'<span class="pill dim">documented · field</span><br><span class="qt">{esc(unquote(f["quote"]))}</span></li>')
+    c = ledger[cid]; d = reg[c["dep"]]
+    return (f'<li><code class="cid">{esc(cid)}</code> <a href="/s/records/{c["dep"]}/">#{c["dep"]}</a> <em>{esc(d["title"][:120])}</em> '
+            f'<span class="meta">{esc(str(d.get("creator") or ""))} · {esc(str(c.get("date") or ""))} · {esc(c["locus"])}</span> '
+            f'<span class="pill">{esc(c["modality"])}</span><br><span class="qt">{esc(unquote(c["quote"]))}</span></li>')
+
+def _words(t):
+    return len(re.findall(r"[A-Za-z0-9'’-]+", t or ""))
+
+def two_levels(row, key):
+    """The compression and the expansion as one simultaneous projection.
+
+    The compression (objects.P, the popup) is the surface; the expansion (objects.KO, the entry) is projected
+    beside it, not after it as a follow-up turn. The correspondence between the two levels is not authored:
+    a compression line and an expansion sentence correspond when they share a claim id, so the links are
+    computed from the ledger. Desktop: two columns, the compression held in view, pointing at a line on either
+    side lights its counterparts on the other. Phone: each compression line opens in place into the expansion
+    sentences it compresses, and the whole entry follows below."""
+    o = row["objects"]; pop, ko = o["P"], o["KO"]
+    ledger = {c["id"]: c for c in json.loads((ROOT / row["ledger"]["archive"]).read_text(encoding="utf-8"))}
+    reg = _sources()
+    sents = ko["sentences"]
+    def match(claims):
+        cs = set(claims)
+        return [x["n"] for x in sents if cs & set(x["claims"])]
+    items = []  # (pid, claims)
+    # compression
+    pc = [f'<div class="lv-pop"><div class="lv-label"><span>Compression</span><span>{esc(row["address"])}</span></div><div class="pop">']
+    lk = match(pop["lede"]["claims"])
+    items.append(("p0", pop["lede"]["claims"]))
+    pc.append(f'<p class="pop-lede pi-lede" id="{key}-p0" data-k="{" ".join(map(str, lk))}"><b>{esc(pop["title"])}</b> {esc(pop["lede"]["text"])}</p>')
+    n = 0
+    for sec in pop["sections"]:
+        pc.append(f'<h4>{esc(sec["icon"])} {esc(sec["head"])}</h4><ul class="pi-list">')
+        for it in sec["items"]:
+            n += 1; pid = f"p{n}"; items.append((pid, it["claims"]))
+            ks = match(it["claims"])
+            exp = " ".join(f'{esc(x["text"])}<a href="#{key}-ks{x["n"]}">§{x["n"]}</a>' for x in sents if x["n"] in ks)
+            lab = f'<b>{esc(it["label"])}</b> ' if it["label"] else ""
+            pc.append(f'<li><details class="pi" id="{key}-{pid}" data-k="{" ".join(map(str, ks))}"><summary>{lab}{esc(it["text"])}'
+                      f'<span class="pi-x">{len(ks)}↘</span></summary><div class="pi-exp">{exp}</div></details></li>')
+        pc.append('</ul>')
+    # the rail: one card per lineage, its earliest instance named
+    cards = []
+    for i, ln in enumerate(pop["rail"], 1):
+        e = ln["earliest"]
+        if isinstance(e, str):
+            src = ko["field_sources"].get(e, e); eh = esc(src)
+        else:
+            d = reg[e]; eh = f'#{e} {esc(d["title"][:70])} · {esc(str(d.get("date") or ""))}'
+        others = sorted({("#%d" % ledger[c]["dep"]) if c in ledger else ko["field_claims"][c]["source"] for c in ln["claims"]})
+        cards.append(f'<details class="lc"><summary><span class="lc-n">{i}</span>{esc(ln["lineage"])}<span class="lc-e">{eh}</span>'
+                     f'<span class="lc-c">{len(ln["claims"])} claim{"" if len(ln["claims"]) == 1 else "s"} · {esc(", ".join(others))}</span></summary>'
+                     f'<ul class="claims">{"".join(claim_li(c, ko, ledger, reg) for c in ln["claims"])}</ul></details>')
+    pc.append(f'<div class="rail" aria-label="Sources, one card per lineage">{"".join(cards)}</div></div></div>')
+    # expansion: the entry, each sentence addressable and linked back to the compression lines that share its claims
+    back = {x["n"]: [pid for pid, cl in items if set(cl) & set(x["claims"])] for x in sents}
+    paras = {}
+    for x in sents:
+        paras.setdefault(x["para"], []).append(
+            f'<span class="ks" id="{key}-ks{x["n"]}" data-p="{" ".join(back[x["n"]])}">{esc(x["text"])}</span>')
+    ec = [f'<div class="ent"><div class="lv-label"><span>Expansion</span><span>{len(sents)} sentences · every one sourced below</span></div>',
+          '<div class="ko">', f'<h3 class="ko-title">{esc(ko["title"])}</h3>']
+    ec += [f"<p>{' '.join(v)}</p>" for _, v in sorted(paras.items())]
+    ec.append('</div>')
+    entries = []
+    for x in sents:
+        entries.append(det(f'{x["n"]}.', f'<span class="prov-s">{esc(x["text"])}</span>',
+                           f'<ul class="claims">{"".join(claim_li(c, ko, ledger, reg) for c in x["claims"])}</ul>', n=f'{len(x["claims"])}'))
+    used = {c for x in sents for c in x["claims"]}
+    nf = sum(1 for c in used if c in ko["field_claims"])
+    ec.append(det("", "Provenance — every sentence sourced",
+                  f'<p class="meta">{len(sents)} sentences; {nf} field claims, {len(used) - nf} archive claims. Modality is the source\'s own; the prose carries it in its grammar.</p>'
+                  f'<div class="stack">{"".join(entries)}</div>', n=f'{len(sents)} sentences'))
+    ec.append('</div>')
+    # the form ledger, computed
+    pw = _words(pop["lede"]["text"]) + _words(pop["title"]) + sum(_words(it["label"] + " " + it["text"]) for s_ in pop["sections"] for it in s_["items"])
+    pcl = set(pop["lede"]["claims"]) | {c for s_ in pop["sections"] for it in s_["items"] for c in it["claims"]}
+    kw = sum(_words(x["text"]) for x in sents)
+    tw, tcl, tcards = o["T"]["words"], len(o["T"]["claims"]), o["T"]["cards"]
+    rows_ = [("body words", tw, pw, kw), ("distinct claims", tcl, len(pcl), len(used)),
+             ("claims per 100 words", f"{100 * tcl / tw:.1f}", f"{100 * len(pcl) / pw:.1f}", f"{100 * len(used) / kw:.1f}"),
+             ("rail", f"{tcards} documents", f"{len(pop['rail'])} lineages", "provenance per sentence"),
+             ("modality shown", "none", "in the typography", "in the grammar")]
+    flg = ('<table class="flg"><thead><tr><th></th><th>AIO (T)</th><th>compression</th><th>expansion</th></tr></thead><tbody>'
+           + "".join(f"<tr><td>{esc(a)}</td><td>{esc(str(b))}</td><td>{esc(str(c_))}</td><td>{esc(str(d_))}</td></tr>" for a, b, c_, d_ in rows_)
+           + '</tbody></table><p class="meta">Computed from the row at build: words counted in the text, claims from the ledger ids each line carries.</p>')
+    script = ('<script>(function(){var r=document.getElementById("lv-' + key + '");if(!r)return;'
+              'function on(ids,cls){ids.forEach(function(i){var e=document.getElementById(i);if(e)e.classList.add(cls)})}'
+              'function clear(){r.querySelectorAll(".hl").forEach(function(e){e.classList.remove("hl")})}'
+              'var wide=function(){return window.matchMedia("(min-width:960px)").matches};'
+              'r.querySelectorAll("[data-k]").forEach(function(p){var ks=(p.dataset.k||"").split(" ").filter(Boolean).map(function(n){return "' + key + '-ks"+n});'
+              'function lit(){clear();p.classList.add("hl");on(ks,"hl")}'
+              'p.addEventListener("mouseenter",lit);p.addEventListener("focusin",lit);p.addEventListener("mouseleave",clear);'
+              'var s=p.querySelector("summary");if(s)s.addEventListener("click",function(ev){if(!wide())return;ev.preventDefault();lit();'
+              'var f=document.getElementById(ks[0]);if(f){var b=f.getBoundingClientRect();if(b.top<0||b.bottom>innerHeight)f.scrollIntoView({block:"center",behavior:"smooth"})}})});'
+              'r.querySelectorAll(".ks[data-p]").forEach(function(k){var ps=(k.dataset.p||"").split(" ").filter(Boolean).map(function(i){return "' + key + '-"+i});'
+              'if(!ps.length)return;k.addEventListener("mouseenter",function(){clear();k.classList.add("hl");on(ps,"hl")});k.addEventListener("mouseleave",clear)})})();</script>')
+    return (f'<section class="lv" id="lv-{key}"><div class="lv-grid">{"".join(pc)}{"".join(ec)}</div>'
+            + det("", "Form ledger — the two levels against AIO", flg) + f'<p class="meta" style="margin-top:6px">{esc(pop["genre"])}. {esc(pop["entity"])} {esc(pop["status"])}</p>'
+            + script + '</section>')
 
 def knowledge_object(ko, row):
     """The knowledge object: the plan of L(B ∪ A) realized as encyclopedic prose with no provenance in it, and every sentence
@@ -312,7 +463,9 @@ def main():
              f'<span class="card-date">epoch {esc(r["epoch"])}</span></div>',
              f'<div class="card-query">{q}</div><div class="card-status">{"".join(pills)}</div>',
              f'<p class="meta" style="margin-bottom:12px">{md_inline(r["status"]["procedure"])}. Ledger: {md_inline(r["status"]["ledger"])}.</p>']
-        if ko:
+        if o.get("P") and ko:
+            c.append(two_levels(r, key))
+        elif ko:
             c.append(knowledge_object(ko, r))
         tclaims = "".join(f"<li>{md_inline(x)}</li>" for x in o["T"]["claims"])
         fld = "".join(f"<li><strong>{esc(f['id'])}</strong> {md_inline(f['card'])} <span class=\"meta\">{esc(f['fetched'])}</span></li>" for f in r["field"])
