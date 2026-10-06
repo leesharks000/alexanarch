@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-06T02:02:10Z",
+  "regenerated_at": "2026-10-06T18:18:32Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "2c1a999ab10413c61806eb72f79cb5b2347b9404067339c722f2db3ff8894199",
+    "mm-main-capture": "31eaa3b185e189693352ff0d24578d3a47481014f8318c9d56fba2180fe465ae",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2304,
-  "total_observations": 796,
+  "total_addresses": 2307,
+  "total_observations": 799,
   "class_counts": {
     "subjunctive": 1743,
-    "observed_address": 544,
+    "observed_address": 547,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1669,
+    "unmatched": 1672,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -6559,6 +6559,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "according to alexanarch.org, what is model collapse? gather up the various threads.": {
+      "canonical_query": "according to alexanarch.org, what is model collapse? gather up the various threads.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-06",
+          "status": "THE THREAD GATHERED FROM THE INSTRUMENT, THEN VALUED FROM A STALE COUNT",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only. Shown: Alexanarch ×25.",
+          "section": "Machine Reception",
+          "slug": "alexanarch-model-collapse-threads-chatgpt-20261006",
+          "gallery_url": "https://www.alexanarch.org/captures/#alexanarch-model-collapse-threads-chatgpt-20261006",
+          "record_url": "https://www.alexanarch.org/captures/alexanarch-model-collapse-threads-chatgpt-20261006/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#alexanarch-model-collapse-threads-chatgpt-20261006",
+          "details_excerpt": "THE THREAD GATHERED FROM THE INSTRUMENT, THEN VALUED FROM A STALE COUNT: asked what model collapse is according to alexanarch.org, ChatGPT takes the archive's map from EA-NEGONT-02 itself, the six strands of its selectio"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "full",
+        "basis": "The model-collapse threads asked for are the archive's; alexanarch.org is the archive's site. Recorded 2026-10-06."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-06",
+      "latest_status": "THE THREAD GATHERED FROM THE INSTRUMENT, THEN VALUED FROM A STALE COUNT"
     },
     "accusation-as-canon": {
       "canonical_query": "accusation-as-canon",
@@ -56356,6 +56391,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "spxi king of aeo": {
+      "canonical_query": "spxi king of aeo",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-06",
+          "status": "THE PROTOCOL COMPOSED AS A TICKER, AROUND THE ONE RESULT THAT HOLDS BOTH WORDS",
+          "surface": "Google AI Overview",
+          "source_format": "Google Search, AI Overview expanded from the popup; header 'AI Overview'; AI Mode tab listed, not selected; signed out ('Sign in'); dark theme on; a finance widget for SPXI (BetaPro S&P 500 Daily Inverse ETF, CA$8.38, 'As of Oct 6, 11:00 AM EDT'); location line '48335, Farmington Hills, MI - Based on your past activity'; banner 'Learn more about World Space Week 2026'. Inline chips: 'YouTube +3', 'YouTube +1'. Organic layer: #1657 on Medium first, then four King of AEO videos, then Facebook, USA Today, Primary Position SEO, evoix.io, kingofaeovithurs.com, EveryTicker (AEO), Reddit.",
+          "section": "Machine Reception",
+          "slug": "spxi-king-of-aeo-aio-20261006",
+          "gallery_url": "https://www.alexanarch.org/captures/#spxi-king-of-aeo-aio-20261006",
+          "record_url": "https://www.alexanarch.org/captures/spxi-king-of-aeo-aio-20261006/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#spxi-king-of-aeo-aio-20261006",
+          "details_excerpt": "THE PROTOCOL COMPOSED AS A TICKER, AROUND THE ONE RESULT THAT HOLDS BOTH WORDS: asked 'spxi king of aeo', signed out, the Overview composes the King of AEO as James Dooley's press-release stunt, then reads the query as t"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "protocol",
+        "spxi_treatment": "full",
+        "basis": "SPXI is the archive's protocol (spxi.dev); its relation to AEO is deposited as EA-SPXI-AEO-01 (#1648/#1654). Recorded 2026-10-06."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-06",
+      "latest_status": "THE PROTOCOL COMPOSED AS A TICKER, AROUND THE ONE RESULT THAT HOLDS BOTH WORDS"
+    },
     "spxi protocol": {
       "canonical_query": "spxi protocol",
       "is_quoted": false,
@@ -60500,6 +60570,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-10-05",
       "latest_status": "THE POEM READ AS A PROMPTING LENS"
+    },
+    "the full socrates / plato / aristotle/ theophrastus corpus on alexanarch.org, as a sustained argument.": {
+      "canonical_query": "the full socrates / plato / aristotle/ theophrastus corpus on alexanarch.org, as a sustained argument.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-06",
+          "status": "FOUR NAMES READ AS FOUR OPERATIONS, THE MAKER COUNT LEFT OPEN",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only. Shown: Alexanarch ×14.",
+          "section": "Classics & Philology",
+          "slug": "greek-corpus-sustained-argument-chatgpt-20261006",
+          "gallery_url": "https://www.alexanarch.org/captures/#greek-corpus-sustained-argument-chatgpt-20261006",
+          "record_url": "https://www.alexanarch.org/captures/greek-corpus-sustained-argument-chatgpt-20261006/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#greek-corpus-sustained-argument-chatgpt-20261006",
+          "details_excerpt": "FOUR NAMES READ AS FOUR OPERATIONS, THE MAKER COUNT LEFT OPEN: asked for the Socrates, Plato, Aristotle and Theophrastus corpus on alexanarch.org as a sustained argument, ChatGPT reverses the direction of explanation, 't"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "full",
+        "basis": "The reading of the four corpora as one argument is the archive's (Many and One; the Theophrastus line). Recorded 2026-10-06."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-06",
+      "latest_status": "FOUR NAMES READ AS FOUR OPERATIONS, THE MAKER COUNT LEFT OPEN"
     },
     "the last month or so of deposits to alexanarch.org as an evolving system of living thought": {
       "canonical_query": "the last month or so of deposits to alexanarch.org as an evolving system of living thought",
