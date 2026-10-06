@@ -175,6 +175,12 @@ def unquote(q):
         q = q[1:-1].strip()
     return q
 
+def cite_links(tx):
+    """A transcript for reading: each inline citation [n](url) shown as the numbered link the layer rendered.
+    The register keeps the transcript as cleaned; this changes the page only."""
+    t = esc(tx)
+    return re.sub(r"\[(\d{1,2})\]\((https?://[^)\s]+)\)", lambda m: f'<a href="{m.group(2)}" rel="nofollow noopener">[{m.group(1)}]</a>', t)
+
 def kv(d):
     return '<dl class="kv">' + "".join(f"<dt>{esc(str(k))}</dt><dd>{md_inline(str(v))}</dd>" for k, v in d.items()) + "</dl>"
 
@@ -248,7 +254,7 @@ def main():
     b.append('<h1>The Negative of the Negative</h1>')
     b.append('<p class="sub">Public knowledge, composed three ways at one address: as the composition layer gave it, as its own disclosed sources give it, and with the Crimson Hexagonal Archive admitted on equal terms. Each row is adjudicated later against what the world does.</p>')
     b.append('<div class="status"><strong>Under construction, by design.</strong> The generation procedure (EA-NEGONT-02 v0.7, <a href="/s/records/1665/">#1665</a>, which supersedes <a href="/s/records/1664/">#1664</a>) is being tested, iterated and revised; the panel below is a working list and is frozen only after the procedure is (§7.0, ruled 2026-10-05). Nothing on this page is a frozen measurement.</div>')
-    b.append('<nav class="jump"><a href="#rows">rows</a><a href="#traversals">traversals</a><a href="#panel">panel</a><a href="#procedure">procedure and data</a></nav>')
+    b.append('<nav class="jump"><a href="#register">register</a><a href="#rows">rows</a><a href="#traversals">traversals</a><a href="#panel">panel</a><a href="#procedure">procedure and data</a></nav>')
     b.append('<h2>How a row reads</h2><div class="objs">'
              '<div class="obj"><b>T</b>the transcript: what the composition layer gave, verbatim, with its source cards</div>'
              '<div class="obj"><b>L(B)</b>the address recomposed from the full texts of the sources the layer itself surfaced</div>'
@@ -257,6 +263,39 @@ def main():
              '<div class="obj"><b>KO</b>the knowledge object: L(B ∪ A) written as public knowledge, with no provenance in the prose and every sentence sourced below it</div>'
              '<div class="obj"><b>K</b>the prospective kernel: what admission adds, derived from the plan, adjudicated later in both directions</div></div>')
     b.append('<p>The archive\'s subset is selected by its <strong>bearing</strong> on the address, in three strata: <strong>D</strong>, direct (the archive names the entity and says something about it); <strong>R</strong>, relational (the archive relates the entity to one of its own objects); <strong>O</strong>, ontological (the archive applies one of its own categories to the entity, or to a class the field says it belongs to). A citation hop from what reading admits finds the term-absent tail. Volume never removes a source.</p>')
+
+    # the register: one card per address, captures grammar (2026-10-06)
+    regp = V2 / "register.json"
+    if regp.exists():
+        reg = json.loads(regp.read_text(encoding="utf-8"))
+        b.append(f'<h2 id="register">The register — {reg["address_count"]} address{"" if reg["address_count"] == 1 else "es"}, '
+                 f'{reg["observation_count"]} observation{"" if reg["observation_count"] == 1 else "s"} · v{esc(str(reg["version"]))}</h2>'
+                 f'<p class="sub">{esc(reg["_what_this_is"])}</p>')
+        for e in reg["entries"]:
+            pills = [f'<span class="pill dim">{esc(e["auth"])}</span>', f'<span class="pill dim">panel row {esc(e["panel_row"])}</span>',
+                     ('<span class="pill warn">archive present · also a capture</span>' if e["archive_present"] else '<span class="pill">archive absent</span>')]
+            if e.get("cites") is not None:
+                pills.append(f'<span class="pill dim">{e["cites"]} source cards</span>')
+            obs = [e] + e["observations"][1:] if e["observations"] else [e]
+            inner = []
+            for ob in obs:
+                tx = ob.get("transcript")
+                body = (f'<pre style="white-space:pre-wrap;overflow-wrap:anywhere;font-family:var(--mono);font-size:.8em;color:#333">{cite_links(tx)}</pre>' if tx
+                        else f'<p>Held by the Capture Registry: <a href="/captures/{esc((ob.get("capture_ref") or {}).get("slug", ""))}/">{esc((ob.get("capture_ref") or {}).get("slug", ""))}</a></p>')
+                cl = "".join(f'<li>{esc(str(x.get("n")))}. {esc(str(x.get("site")))} — {esc(str(x.get("title")))}</li>' for x in (ob.get("cite_list") or []))
+                inner.append(det("", f'{esc(ob["date"])} · transcript', body + (f'<h3>Source cards</h3><ul>{cl}</ul>' if cl else "")
+                                 + f'<p class="meta">{esc(ob["obs_id"])} · {esc(ob.get("transcript_class") or "")} · {esc(ob.get("transcript_read") or "")}'
+                                 + (f' · sha256 {esc(ob["transcript_sha256"][:16])}…' if ob.get("transcript_sha256") else "") + '</p>'
+                                 + f'<p class="meta">Archive: {esc(ob.get("archive_basis") or "")}</p>', n=esc(ob["obs_id"])))
+            href = address_href(e["panel_row"], e["q"])
+            qh = f'<a href="{href}">{esc(e["q"])}</a>' if href else esc(e["q"])
+            b.append(f'<div class="card" id="reg-{esc(e["slug"])}"><div class="card-head"><span class="card-section">{esc(e["surface"])}</span>'
+                     f'<span class="card-date">{esc(", ".join(e["dates"]))}</span></div>'
+                     f'<div class="card-query">{qh}</div>'
+                     f'<div class="card-status">{"".join(pills)}</div><div class="stack">{"".join(inner)}</div>'
+                     f'<div class="card-links"><a href="/datasets/negative-of-the-negative/v2/register.json">register json</a>'
+                     f'<a href="/datasets/negative-of-the-negative/v2/register.schema.json">schema</a><a href="/scripts/non_intake.py">intake</a>'
+                     + (f'<a href="#row-{esc(e["panel_row"])}">composed row</a>' if e["panel_row"] in rows else "") + '</div></div>')
 
     # rows with compositions: one card per row, captures grammar
     b.append('<h2 id="rows">Rows composed</h2>')
@@ -281,7 +320,10 @@ def main():
         kent = "".join(det(esc(k.get("K", "")), md_inline(str(k.get("claim", ""))) + f' <span class="meta">{md_inline(str(k.get("source", "")))}</span>',
                            kv({kk: vv for kk, vv in k.items() if kk not in ("K",)}), n=esc(str(k.get("contrast", "")))) for k in r["kernel"])
         c.append('<h3 style="margin-top:18px">The objects</h3><div class="stack">')
-        c.append(det("T", "the transcript", f'<p><a href="/{o["T"]["path"]}">verbatim text</a> <span class="meta">sha256 {o["T"]["sha256"][:16]}…</span></p><ul>{tclaims}</ul>',
+        tref = o["T"].get("register")
+        tlink = (f'<a href="#reg-{esc(tref["slug"])}">register entry {esc(tref["slug"])}</a> <span class="meta">{esc(tref["obs_id"])}</span> · '
+                 if tref else "")
+        c.append(det("T", "the transcript", f'<p>{tlink}<a href="/{o["T"]["path"]}">file as first run</a> <span class="meta">sha256 {o["T"]["sha256"][:16]}…</span></p><ul>{tclaims}</ul>',
                      n=f'{o["T"]["words"]} words · {o["T"]["cards"]} cards'))
         c.append(det("B", "the disclosed field", f"<ul>{fld}</ul>", n=f'{len(r["field"])} sources'))
         c.append(det("L(B)", "recomposed from the disclosed field", md_block(o["L_B"]["text"]), n=f'{o["L_B"]["words"]} words'))
