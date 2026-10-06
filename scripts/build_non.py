@@ -82,6 +82,11 @@ ul{margin:0 0 10px 20px} li{margin-bottom:4px;color:#333}
 p,li,td,th,summary,dd{overflow-wrap:anywhere}
 code,.mono{font-family:var(--mono);font-size:.84em}
 code.cid{color:var(--teal);font-size:.78em;white-space:normal;overflow-wrap:anywhere}
+/* the nav: the captures gallery's rules, verbatim (2026-10-06: the 10-06 restyle dropped them, and the
+   page's own link underline reached the nav) */
+.nav{display:flex;gap:20px;margin-bottom:30px;font-size:0.85em;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;padding-bottom:6px}
+.nav a{color:var(--dim);text-decoration:none;font-weight:500;border:0}
+.nav a:hover,.nav a.active{color:var(--accent)}
 .sub{color:var(--dim);font-size:.92em;margin-bottom:16px}
 .jump{display:flex;flex-wrap:wrap;gap:6px 14px;font-family:var(--mono);font-size:.76em;margin:14px 0 4px}
 .jump a{border:0;color:var(--dim)} .jump a:hover{color:var(--accent2)}
