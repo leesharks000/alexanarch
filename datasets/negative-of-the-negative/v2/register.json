@@ -1,0 +1,16 @@
+{
+ "register_id": "EA-NEGONT-02-REGISTER",
+ "title": "The Negative of the Negative — register of public knowledge at the panel's addresses",
+ "version": "1.0",
+ "date": "2026-10-06",
+ "author": "Lee Sharks",
+ "orcid": "0009-0000-1599-0703",
+ "license": "CC BY 4.0",
+ "_what_this_is": "The Capture Registry (data/EA-WG-CAPTURES-01.json) records the composition layer's engagements with the archive: successful captures, the distortion of sources within them, and their solidification or loss over time. This register records public knowledge at the addresses of the /non panel, where the archive is most often not represented — that is the point. A general 'model collapse' search is recorded here. (Lee Sharks, 2026-10-06.)",
+ "_both_registers": "A panel run that returns the archive is seated in both registers: here, and in the Capture Registry through its own intake. The two observations share one obs_id, derived the same way in both. (Ruled 2026-10-06.)",
+ "_erasure_rows": "An erasure row (spec §1.3) keeps pointing at its seated capture: its entry here has ev 'capture' and a capture_ref, and holds no copy of the transcript. (Ruled 2026-10-06.)",
+ "_intake": "Seated only by scripts/non_intake.py: ADMIT (the Capture Registry's minimum, plus a panel row) → ROUTE (exact issued string on the same surface) → NORMALISE (scripts/clean_transcript.py; raw kept) → ARCHIVE (presence computed with scripts/extract_citations.relation; the both-registers rule enforced) → VALIDATE (register.schema.json) → EMIT. A refusal writes nothing.",
+ "address_count": 0,
+ "observation_count": 0,
+ "entries": []
+}
