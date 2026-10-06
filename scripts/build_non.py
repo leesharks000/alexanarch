@@ -34,7 +34,20 @@ def md_inline(t):
     t = re.sub(r"`([^`]+)`", r'<code class="cid">\1</code>', t)
     t = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", t)
     t = re.sub(r"(?<![*\w])\*([^*]+)\*(?!\w)", r"<em>\1</em>", t)
-    return t
+    return link_deps(t)
+
+def link_deps(t):
+    """#N in escaped text becomes a link to the record page (not inside an existing tag or entity)."""
+    parts = re.split(r"(<[^>]+>)", t)
+    depth = 0
+    for i, p in enumerate(parts):
+        if p.startswith("<a "):
+            depth += 1
+        elif p == "</a>":
+            depth -= 1
+        elif not p.startswith("<") and depth == 0:
+            parts[i] = re.sub(r"(?<![\w&/])#(\d{1,4})\b", r'<a href="/s/records/\1/">#\1</a>', p)
+    return "".join(parts)
 
 def md_block(text):
     out, inlist = [], False
@@ -54,40 +67,79 @@ def md_block(text):
     return "\n".join(out)
 
 CSS = """
-:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");
+:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}
 *{margin:0;padding:0;box-sizing:border-box}
+
 body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.65;font-size:15px}
-.wrap{max-width:980px;margin:0 auto;padding:36px 20px}
-a{color:var(--accent);text-decoration:none} a:hover{color:var(--accent2)}
-h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:6px}
-h2{font-size:1.05em;font-weight:600;color:var(--accent);margin:30px 0 10px;padding-bottom:4px;border-bottom:1px solid var(--border)}
+.wrap{max-width:900px;margin:0 auto;padding:36px 20px;min-width:0}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(26,58,92,.25)} a:hover{color:var(--accent2);border-color:var(--accent2)}
+h1{font-size:1.6em;font-weight:600;color:var(--accent);margin-bottom:6px;line-height:1.3}
+h2{font-size:.78em;font-family:var(--mono);font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);margin:34px 0 10px;padding-bottom:5px;border-bottom:1px solid var(--border)}
 h3{font-size:.95em;font-weight:600;margin:16px 0 6px}
 p{margin-bottom:9px;color:#333}
 ul{margin:0 0 10px 20px} li{margin-bottom:4px;color:#333}
+p,li,td,th,summary,dd{overflow-wrap:anywhere}
 code,.mono{font-family:var(--mono);font-size:.84em}
-code.cid{color:var(--teal);font-size:.76em;white-space:nowrap}
-.nav{display:flex;gap:12px;margin-bottom:22px;font-size:.85em;overflow-x:auto;white-space:nowrap}
-.nav a{color:#777;font-weight:500}
+code.cid{color:var(--teal);font-size:.78em;white-space:normal;overflow-wrap:anywhere}
 .sub{color:var(--dim);font-size:.92em;margin-bottom:16px}
-.status{background:#fef3c7;border-left:4px solid #d97706;padding:10px 14px;border-radius:6px;margin:12px 0 18px;font-size:.9em;color:#78350f}
-.objs{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:10px 0 16px}
-.obj{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:10px 12px;font-size:.86em}
+.jump{display:flex;flex-wrap:wrap;gap:6px 14px;font-family:var(--mono);font-size:.76em;margin:14px 0 4px}
+.jump a{border:0;color:var(--dim)} .jump a:hover{color:var(--accent2)}
+.status{background:#fef3c7;border-left:4px solid #d97706;padding:10px 14px;border-radius:6px;margin:14px 0 18px;font-size:.88em;color:#78350f}
+.status a{color:#78350f}
+.objs{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px;margin:10px 0 14px}
+.obj{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:9px 11px;font-size:.84em;color:#444}
 .obj b{display:block;color:var(--accent2);font-family:var(--mono);font-size:.95em;margin-bottom:2px}
-details{background:var(--surface);border:1px solid var(--border);border-radius:6px;margin:8px 0;padding:8px 14px}
-details>summary{cursor:pointer;font-weight:600;color:var(--accent);font-size:.93em}
-details[open]>summary{margin-bottom:8px}
-table{border-collapse:collapse;width:100%;font-size:.84em;margin:8px 0 14px;background:var(--surface)}
-th,td{border:1px solid var(--border);padding:5px 8px;text-align:left;vertical-align:top}
-th{background:#f3f4f6;font-weight:600;color:#333}
-.tw{overflow-x:auto}
-.pill{display:inline-block;font-family:var(--mono);font-size:.74em;padding:1px 6px;border-radius:9px;background:#e0f2fe;color:#075985;margin-right:3px}
-.ko{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:6px;padding:16px 20px;margin:12px 0}
-.ko-head{font-family:var(--mono);font-size:.74em;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin-bottom:4px}
-.ko-title{font-size:1.25em;color:var(--accent);margin:0 0 10px}
-.ko p{font-size:1.02em;line-height:1.75;color:#222}
-ol.prov{margin:6px 0 4px 20px;font-size:.86em} ol.prov>li{margin-bottom:10px} ol.prov ul{margin:4px 0 0 16px;font-size:.95em;color:#444}
+/* the card: captures grammar */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:16px;margin-bottom:12px}
+.card-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:6px}
+.card-section{font-family:var(--mono);font-size:.72em;color:var(--teal);text-transform:uppercase;letter-spacing:.06em}
+.card-date{font-family:var(--mono);font-size:.74em;color:var(--dim)}
+.card-query{font-weight:600;color:var(--accent);font-size:1.15em;margin-bottom:6px;line-height:1.4}
+.card-query a{border:0}
+.card-status{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:10px;font-size:.78em}
+.pill{display:inline-block;font-family:var(--mono);font-size:.92em;padding:1px 7px;border-radius:9px;background:#e0f2fe;color:#075985;white-space:normal;max-width:100%}
+.pill.warn{background:#fef3c7;color:#92400e} .pill.ok{background:#dcfce7;color:#166534} .pill.dim{background:#f3f4f6;color:#555}
+.card-links{font-family:var(--mono);font-size:.74em;color:var(--dim);display:flex;flex-wrap:wrap;gap:4px 12px;margin-top:12px;padding-top:10px;border-top:1px solid var(--border)}
+.card-links a{border:0}
+/* collapsibles */
+details{border:1px solid var(--border);border-radius:6px;margin:6px 0;background:#fcfcfc}
+details>summary{cursor:pointer;padding:8px 12px;font-size:.88em;color:#444;list-style:none;display:flex;gap:8px;align-items:baseline}
+details>summary::-webkit-details-marker{display:none}
+details>summary::before{content:"\\25B8";color:var(--teal);font-size:.85em;flex:none;transition:transform .15s}
+details[open]>summary::before{transform:rotate(90deg)}
+details>summary:hover{color:var(--accent2)}
+details>summary>span:not(.k):not(.n){flex:1 1 12em;min-width:0}
+details>summary{flex-wrap:wrap}
+details>summary .k{font-family:var(--mono);font-weight:500;color:var(--accent2);flex:none}
+details>summary .n{color:var(--dim);font-family:var(--mono);font-size:.86em;margin-left:auto;flex:none;padding-left:8px}
+details[open]>summary{border-bottom:1px solid var(--border)}
+details>.inner{padding:10px 14px 6px}
+details details{background:var(--surface)}
+.stack>details{margin:5px 0}
+dl.kv{display:grid;grid-template-columns:max-content 1fr;gap:3px 12px;font-size:.86em}
+dl.kv dt{color:var(--dim);font-family:var(--mono);font-size:.9em}
+dl.kv dd{color:#333;min-width:0}
+table{border-collapse:collapse;width:100%;font-size:.84em;margin:6px 0 12px;background:var(--surface)}
+th,td{border-bottom:1px solid var(--border);padding:6px 8px;text-align:left;vertical-align:top}
+th{font-family:var(--mono);font-size:.82em;font-weight:500;color:var(--dim);text-transform:uppercase;letter-spacing:.04em}
+.tw{overflow-x:auto;max-width:100%}
+/* the knowledge object */
+.ko{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:6px;padding:18px 22px;margin:4px 0 8px}
+.ko-head{font-family:var(--mono);font-size:.72em;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin-bottom:4px}
+.ko-title{font-size:1.3em;color:var(--accent);margin:0 0 10px;font-family:Georgia,"Times New Roman",serif;font-weight:600}
+.ko p{font-family:Georgia,"Times New Roman",serif;font-size:1.04em;line-height:1.75;color:#222}
+.prov-s{font-size:.9em;color:#222}
+ul.claims{list-style:none;margin:0} ul.claims>li{font-size:.86em;color:#444;padding:6px 0;border-bottom:1px dashed var(--border)} ul.claims>li:last-child{border:0}
+ul.claims .qt{color:#222;font-style:italic}
+ul.claims .qt::before{content:"\\201C"} ul.claims .qt::after{content:"\\201D"}
+.meta{font-family:var(--mono);font-size:.82em;color:var(--dim)}
+.plist{list-style:none;margin:0}
+.plist>li{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline;padding:6px 0;border-bottom:1px solid var(--border);font-size:.88em}
+.plist>li:last-child{border:0}
+.plist .stage{color:var(--dim);font-size:.9em;flex-basis:100%}
 .foot{color:var(--dim);font-size:.82em;margin-top:30px;border-top:1px solid var(--border);padding-top:12px}
+@media (max-width:560px){.wrap{padding:24px 14px}.ko{padding:14px 15px}.card{padding:13px}dl.kv{grid-template-columns:1fr}dl.kv dt{margin-top:4px}}
 """
 
 def page(title, desc, body, canonical, jsonld=None):
@@ -104,9 +156,33 @@ def table(rows, cols, render=None):
         trs.append(f"<tr>{tds}</tr>")
     return f'<div class="tw"><table><thead><tr>{h}</tr></thead><tbody>{"".join(trs)}</tbody></table></div>'
 
+def det(key, label, inner, n="", open_=False, cls=""):
+    """One collapsible entry: a key glyph, a label, a count at the right."""
+    k = f'<span class="k">{key}</span>' if key else ""
+    nn = f'<span class="n">{n}</span>' if n else ""
+    return (f'<details{" open" if open_ else ""}{f" class={chr(34)}{cls}{chr(34)}" if cls else ""}><summary>{k}<span>{label}</span>{nn}</summary>'
+            f'<div class="inner">{inner}</div></details>')
+
+def unquote(q):
+    """The quote's own text, without the quotation marks the ledger stored around it (the page supplies them)."""
+    q = (q or "").strip()
+    while len(q) > 1 and q[0] in "\"“'‘" and q[-1] in "\"”'’":
+        q = q[1:-1].strip()
+    return q
+
+def kv(d):
+    return '<dl class="kv">' + "".join(f"<dt>{esc(str(k))}</dt><dd>{md_inline(str(v))}</dd>" for k, v in d.items()) + "</dl>"
+
+def address_href(row, address):
+    for slug in (row, re.sub(r"[^a-z0-9]+", "-", address.lower()).strip("-")):
+        if slug and (ROOT / "addresses" / slug / "index.html").exists():
+            return f"/addresses/{slug}/"
+    return None
+
 def knowledge_object(ko, row):
     """The knowledge object: the plan of L(B ∪ A) realized as encyclopedic prose with no provenance in it, and every sentence
-    sourced below, claim by claim, from the frozen ledgers (the archive's from ledger-archive.json, the field's from the row)."""
+    sourced below, claim by claim, from the frozen ledgers (the archive's from ledger-archive.json, the field's from the row).
+    Each sentence is its own collapsible entry, so the provenance can be read one sentence at a time."""
     ledger = {c["id"]: c for c in json.loads((ROOT / row["ledger"]["archive"]).read_text(encoding="utf-8"))}
     reg = {x["deposit_number"]: x for x in json.loads((ROOT / "data/registry.json").read_text(encoding="utf-8"))["deposits"]}
     paras = {}
@@ -116,25 +192,28 @@ def knowledge_object(ko, row):
            f'<h3 class="ko-title">{esc(ko["title"])}</h3>']
     out += [f"<p>{esc(' '.join(v))}</p>" for _, v in sorted(paras.items())]
     out.append('</div>')
-    rows = []
+    entries = []
     for snt in ko["sentences"]:
         cl = []
         for cid in snt["claims"]:
             if cid in ko["field_claims"]:
                 f = ko["field_claims"][cid]
-                cl.append(f'<li><code class="cid">{esc(cid)}</code> {esc(ko["field_sources"].get(f["source"], f["source"]))}, {esc(f["locus"])} · '
-                          f'documented (field) · “{esc(f["quote"])}”</li>')
+                cl.append(f'<li><code class="cid">{esc(cid)}</code> {esc(ko["field_sources"].get(f["source"], f["source"]))}, {esc(f["locus"])} '
+                          f'<span class="pill dim">documented · field</span><br><span class="qt">{esc(unquote(f["quote"]))}</span></li>')
             else:
                 c = ledger[cid]; d = reg[c["dep"]]
                 cl.append(f'<li><code class="cid">{esc(cid)}</code> <a href="/s/records/{c["dep"]}/">#{c["dep"]}</a> <em>{esc(d["title"][:120])}</em> '
-                          f'({esc(str(d.get("creator") or ""))}, {esc(str(c.get("date") or ""))}), {esc(c["locus"])} · {esc(c["modality"])} · “{esc(c["quote"].strip())}”</li>')
-        rows.append(f'<li><strong>{snt["n"]}.</strong> {esc(snt["text"])}<ul>{"".join(cl)}</ul></li>')
+                          f'<span class="meta">{esc(str(d.get("creator") or ""))} · {esc(str(c.get("date") or ""))} · {esc(c["locus"])}</span> '
+                          f'<span class="pill">{esc(c["modality"])}</span><br><span class="qt">{esc(unquote(c["quote"]))}</span></li>')
+        entries.append(det(f'{snt["n"]}.', f'<span class="prov-s">{esc(snt["text"])}</span>', f'<ul class="claims">{"".join(cl)}</ul>',
+                           n=f'{len(snt["claims"])}'))
     used = {c for snt in ko["sentences"] for c in snt["claims"]}
     nf = sum(1 for c in used if c in ko["field_claims"])
     na = len(used) - nf
-    out.append(f'<details><summary>Provenance — every sentence sourced ({len(ko["sentences"])} sentences; {nf} field claims, {na} archive claims; '
-               f'modality is the source\'s own and the prose carries it in its grammar)</summary><ol class="prov">{"".join(rows)}</ol></details>')
-    out.append(f'<p class="sub" style="font-size:.82em">{esc(ko["genre"])}. {esc(ko["status"])}.</p>')
+    out.append(det("", "Provenance — every sentence sourced", 
+                   f'<p class="meta">{len(ko["sentences"])} sentences; {nf} field claims, {na} archive claims. Modality is the source\'s own; the prose carries it in its grammar. Open a sentence to read its sources.</p>'
+                   f'<div class="stack">{"".join(entries)}</div>', n=f'{len(ko["sentences"])} sentences'))
+    out.append(f'<p class="meta" style="margin-top:6px">{esc(ko["genre"])}. {esc(ko["status"])}.</p>')
     return "\n".join(out)
 
 def folder_index(folder, title, note):
@@ -164,6 +243,7 @@ def main():
     b.append('<h1>The Negative of the Negative</h1>')
     b.append('<p class="sub">Public knowledge, composed three ways at one address: as the composition layer gave it, as its own disclosed sources give it, and with the Crimson Hexagonal Archive admitted on equal terms. Each row is adjudicated later against what the world does.</p>')
     b.append('<div class="status"><strong>Under construction, by design.</strong> The generation procedure (EA-NEGONT-02 v0.7, <a href="/s/records/1665/">#1665</a>, which supersedes <a href="/s/records/1664/">#1664</a>) is being tested, iterated and revised; the panel below is a working list and is frozen only after the procedure is (§7.0, ruled 2026-10-05). Nothing on this page is a frozen measurement.</div>')
+    b.append('<nav class="jump"><a href="#rows">rows</a><a href="#traversals">traversals</a><a href="#panel">panel</a><a href="#procedure">procedure and data</a></nav>')
     b.append('<h2>How a row reads</h2><div class="objs">'
              '<div class="obj"><b>T</b>the transcript: what the composition layer gave, verbatim, with its source cards</div>'
              '<div class="obj"><b>L(B)</b>the address recomposed from the full texts of the sources the layer itself surfaced</div>'
@@ -173,53 +253,81 @@ def main():
              '<div class="obj"><b>K</b>the prospective kernel: what admission adds, derived from the plan, adjudicated later in both directions</div></div>')
     b.append('<p>The archive\'s subset is selected by its <strong>bearing</strong> on the address, in three strata: <strong>D</strong>, direct (the archive names the entity and says something about it); <strong>R</strong>, relational (the archive relates the entity to one of its own objects); <strong>O</strong>, ontological (the archive applies one of its own categories to the entity, or to a class the field says it belongs to). A citation hop from what reading admits finds the term-absent tail. Volume never removes a source.</p>')
 
-    # rows with compositions
+    # rows with compositions: one card per row, captures grammar
+    b.append('<h2 id="rows">Rows composed</h2>')
     for key, r in rows.items():
         o = r["objects"]
-        b.append(f'<h2>Row: <code>{esc(r["address"])}</code> · {esc(r["surface"])} · epoch {esc(r["epoch"])}</h2>')
-        b.append(f'<p class="sub">{esc(r["status"]["procedure"])}. Ledger: {esc(r["status"]["ledger"])}. Not frozen.</p>')
+        href = address_href(key, r["address"])
+        q = f'<a href="{href}">{esc(r["address"])}</a>' if href else esc(r["address"])
         ko = o.get("KO")
+        pills = ['<span class="pill warn">not frozen</span>', f'<span class="pill dim">type {esc(r["type"])}</span>',
+                 f'<span class="pill dim">{esc(r["auth"])}</span>']
         if ko:
-            b.append(knowledge_object(ko, r))
-        tclaims = "".join(f"<li>{esc(c)}</li>" for c in o["T"]["claims"])
-        b.append(f'<details><summary>T — the transcript ({o["T"]["words"]} words, {o["T"]["cards"]} cards)</summary>'
-                 f'<p><a href="/{o["T"]["path"]}">verbatim text</a> · sha256 <code>{o["T"]["sha256"][:16]}…</code></p><ul>{tclaims}</ul></details>')
-        fld = "".join(f"<li><strong>{esc(f['id'])}</strong> {esc(f['card'])}: {esc(f['fetched'])}</li>" for f in r["field"])
-        b.append(f'<details><summary>B — the disclosed field</summary><ul>{fld}</ul></details>')
-        b.append(f'<details><summary>L(B) — recomposed from the disclosed field (body {o["L_B"]["words"]} words)</summary>{md_block(o["L_B"]["text"])}</details>')
-        rail = table(o["L_BA"].get("rail", []), ["Card", "Snippet"]) if o["L_BA"].get("rail") else ""
-        b.append(f'<details open><summary>L(B ∪ A) — with the archive on equal terms (body {o["L_BA"]["words"]} words)</summary>{md_block(o["L_BA"]["text"])}<h3>Card rail</h3>{rail}</details>')
-        b.append(f'<details><summary>Δ — the delta</summary><p><strong>T against L(B)</strong> (representational): {esc(r["delta"]["T_vs_LB"])}</p><p><strong>L(B) against L(B ∪ A)</strong> (the intervention): {esc(r["delta"]["LB_vs_LBA"])}</p></details>')
-        kcols = list(r["kernel"][0].keys()) if r["kernel"] else []
-        b.append(f'<details><summary>K — the prospective kernel ({len(r["kernel"])} entries; sealed only at freeze)</summary>{table(r["kernel"], kcols)}</details>')
-        b.append(f'<p style="font-size:.85em">Data: <a href="/datasets/negative-of-the-negative/v2/rows/{key}.json">row</a> · '
-                 f'<a href="/{r["ledger"]["archive"]}">archive ledger</a> · <a href="/{r["ledger"]["selection"]}">selection readings</a> · '
-                 f'<a href="/{r["ledger"]["audit"]}">extraction audit</a></p>')
+            pills.append(f'<span class="pill ok">knowledge object · {len(ko["sentences"])} sentences</span>')
+        c = [f'<div class="card" id="row-{esc(key)}"><div class="card-head"><span class="card-section">{esc(r["surface"])}</span>'
+             f'<span class="card-date">epoch {esc(r["epoch"])}</span></div>',
+             f'<div class="card-query">{q}</div><div class="card-status">{"".join(pills)}</div>',
+             f'<p class="meta" style="margin-bottom:12px">{md_inline(r["status"]["procedure"])}. Ledger: {md_inline(r["status"]["ledger"])}.</p>']
+        if ko:
+            c.append(knowledge_object(ko, r))
+        tclaims = "".join(f"<li>{md_inline(x)}</li>" for x in o["T"]["claims"])
+        fld = "".join(f"<li><strong>{esc(f['id'])}</strong> {md_inline(f['card'])} <span class=\"meta\">{esc(f['fetched'])}</span></li>" for f in r["field"])
+        rail = ('<h3>Card rail</h3>' + table(o["L_BA"]["rail"], ["Card", "Snippet"])) if o["L_BA"].get("rail") else ""
+        kent = "".join(det(esc(k.get("K", "")), md_inline(str(k.get("claim", ""))) + f' <span class="meta">{md_inline(str(k.get("source", "")))}</span>',
+                           kv({kk: vv for kk, vv in k.items() if kk not in ("K",)}), n=esc(str(k.get("contrast", "")))) for k in r["kernel"])
+        c.append('<h3 style="margin-top:18px">The objects</h3><div class="stack">')
+        c.append(det("T", "the transcript", f'<p><a href="/{o["T"]["path"]}">verbatim text</a> <span class="meta">sha256 {o["T"]["sha256"][:16]}…</span></p><ul>{tclaims}</ul>',
+                     n=f'{o["T"]["words"]} words · {o["T"]["cards"]} cards'))
+        c.append(det("B", "the disclosed field", f"<ul>{fld}</ul>", n=f'{len(r["field"])} sources'))
+        c.append(det("L(B)", "recomposed from the disclosed field", md_block(o["L_B"]["text"]), n=f'{o["L_B"]["words"]} words'))
+        c.append(det("L(B ∪ A)", "with the archive on equal terms", md_block(o["L_BA"]["text"]) + rail, n=f'{o["L_BA"]["words"]} words'))
+        c.append(det("Δ", "the delta", f'<p><strong>T against L(B)</strong> (representational): {md_inline(r["delta"]["T_vs_LB"])}</p>'
+                     f'<p><strong>L(B) against L(B ∪ A)</strong> (the intervention): {md_inline(r["delta"]["LB_vs_LBA"])}</p>'))
+        c.append(det("K", "the prospective kernel <span class=\"meta\">sealed only at freeze</span>", f'<div class="stack">{kent}</div>', n=f'{len(r["kernel"])} entries'))
+        c.append('</div>')
+        c.append(f'<div class="card-links"><a href="/datasets/negative-of-the-negative/v2/rows/{key}.json">row json</a>'
+                 f'<a href="/{r["ledger"]["archive"]}">archive ledger</a><a href="/{r["ledger"]["selection"]}">selection readings</a>'
+                 f'<a href="/{r["ledger"]["audit"]}">extraction audit</a>'
+                 + (f'<a href="/datasets/negative-of-the-negative/v2/traversal/{key}/">D/R/O traversal</a>' if key in trav else "")
+                 + (f'<a href="{href}">address page</a>' if href else "") + '</div></div>')
+        b.append("".join(c))
 
-    # traversals
-    b.append('<h2>D/R/O traversals</h2>')
-    trows = []
+    # traversals: one card each
+    b.append('<h2 id="traversals">D/R/O traversals</h2><p class="sub">Candidates are found by string; admission is by reading.</p>')
     for key, t in trav.items():
-        c = t["summary"]["counts"]
+        cn = t["summary"]["counts"]
         rd = t["reading"]
-        trows.append({"row": f'<a href="/datasets/negative-of-the-negative/v2/traversal/{key}/">{esc(t["summary"]["address"])}</a>',
-                      "D": f'{c["D_deposits"]} deposits ({c["D_sentences"]})', "R": f'{c["R_deposits"]} ({c["R_sentences"]})',
-                      "O": f'{c["O_deposits"]} ({c["O_direct"]} direct, {c["O_class"]} class)',
-                      "hop": str(c.get("H_candidates") or "—"),
-                      "reading": (f'{len(rd["verdicts"])} admitted, {len(rd["not_admitted"])} not' if rd else "unread")})
-    b.append(table(trows, ["row", "D", "R", "O", "hop", "reading"], {k: str for k in ["row", "D", "R", "O", "hop", "reading"]}))
-    for key, t in trav.items():
-        rd = t["reading"]
-        if not rd or not rd.get("lineages"):
-            continue
-        lrows = [{"lineage": l["lineage"], "instances": ", ".join(f"#{n}" for n in l["instances"]), "earliest": f'#{l["earliest"]}'} for l in rd["lineages"]]
-        b.append(f'<details open><summary>{esc(t["summary"]["address"])} — admitted by lineage ({esc(rd["pass"])})</summary>{table(lrows, ["lineage", "instances", "earliest"])}'
-                 + "".join(f"<p>{esc(x)}</p>" for x in rd.get("observations", [])) + "</details>")
+        addr = t["summary"]["address"]
+        href = address_href(key, addr)
+        pills = [f'<span class="pill">D {cn["D_deposits"]} deposits · {cn["D_sentences"]} sentences</span>',
+                 f'<span class="pill">R {cn["R_deposits"]} · {cn["R_sentences"]}</span>',
+                 f'<span class="pill">O {cn["O_deposits"]} · {cn["O_direct"]} direct, {cn["O_class"]} class</span>',
+                 f'<span class="pill dim">hop {cn.get("H_candidates") or "—"}</span>',
+                 (f'<span class="pill ok">read: {len(rd["verdicts"])} admitted, {len(rd["not_admitted"])} not</span>' if rd else '<span class="pill warn">unread</span>')]
+        c = [f'<div class="card" id="trav-{esc(key)}"><div class="card-head"><span class="card-section">traversal</span>'
+             + (f'<span class="card-date">{esc(rd["pass"])}</span>' if rd else "") + '</div>'
+             f'<div class="card-query">{f"<a href={chr(34)}{href}{chr(34)}>{esc(addr)}</a>" if href else esc(addr)}</div><div class="card-status">{"".join(pills)}</div>']
+        if rd and rd.get("lineages"):
+            lin = "".join(det("", esc(l["lineage"]), f'<p>{link_deps(", ".join(f"#{n}" for n in l["instances"]))}</p>',
+                              n=f'{len(l["instances"])} · from #{l["earliest"]}') for l in rd["lineages"])
+            c.append(det("", "admitted, by lineage", f'<div class="stack">{lin}</div>' + "".join(f"<p>{md_inline(x)}</p>" for x in rd.get("observations", [])),
+                         n=f'{len(rd["lineages"])} lineages'))
+        c.append(f'<div class="card-links"><a href="/datasets/negative-of-the-negative/v2/traversal/{key}/">candidate files</a>'
+                 f'<a href="/datasets/negative-of-the-negative/v2/panel/configs/{key}.json">configuration</a>'
+                 + (f'<a href="{href}">address page</a>' if href else "") + '</div></div>')
+        b.append("".join(c))
 
-    # panel
-    b.append(f'<h2>The panel — {esc(panel["status"])}</h2><p class="sub">{esc(panel["rule"])} {len(panel["rows"])} rows.</p>')
-    b.append(f'<details><summary>All rows</summary>{table(panel["rows"], ["address", "type", "source", "stage"])}</details>')
-    b.append('<h2>Procedure and data</h2><ul>'
+    # panel: one entry per row
+    b.append(f'<h2 id="panel">The panel — {esc(panel["status"])}</h2><p class="sub">{esc(panel["rule"])}</p>')
+    pl = []
+    for pr in panel["rows"]:
+        href = address_href(pr["row"], pr["address"])
+        nm = f'<a href="{href}">{esc(pr["address"])}</a>' if href else esc(pr["address"])
+        done = pr["row"] in rows
+        pl.append(f'<li><strong>{nm}</strong><span class="pill dim">type {esc(pr["type"])}</span><span class="pill dim">{esc(pr["source"])}</span>'
+                  + ('<span class="pill ok">composed</span>' if done else "") + f'<span class="stage">{md_inline(pr["stage"])}</span></li>')
+    b.append(det("", "All rows", f'<ul class="plist">{"".join(pl)}</ul>', n=f'{len(panel["rows"])} rows'))
+    b.append('<h2 id="procedure">Procedure and data</h2><ul>'
              '<li>Specification: <a href="/s/records/1665/">#1665</a> (EA-NEGONT-02 v0.7, 2026-10-05), superseding <a href="/s/records/1664/">#1664</a> (v0.6, 2026-10-04)</li>'
              '<li>Traversal tool: <a href="/scripts/non_traverse.py">scripts/non_traverse.py</a> · configurations: <a href="/datasets/negative-of-the-negative/v2/panel/configs/">v2/panel/configs/</a></li>'
              '<li>Panel: <a href="/datasets/negative-of-the-negative/v2/panel/panel.json">panel.json</a> · v1 rows: <a href="/datasets/negative-of-the-negative/rows.json">rows.json</a></li>'

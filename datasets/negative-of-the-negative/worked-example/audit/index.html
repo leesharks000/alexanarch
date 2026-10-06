@@ -7,40 +7,79 @@
 <meta name="citation_author" content="Lee Sharks">
 
 <style>
-:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");
+:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--accent2:#c23b22;--dim:#777;--teal:#0a7c6a;--border:#e0e0e0;--surface:#fff;--sans:"IBM Plex Sans",sans-serif;--mono:"IBM Plex Mono",monospace}
 *{margin:0;padding:0;box-sizing:border-box}
+
 body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.65;font-size:15px}
-.wrap{max-width:980px;margin:0 auto;padding:36px 20px}
-a{color:var(--accent);text-decoration:none} a:hover{color:var(--accent2)}
-h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:6px}
-h2{font-size:1.05em;font-weight:600;color:var(--accent);margin:30px 0 10px;padding-bottom:4px;border-bottom:1px solid var(--border)}
+.wrap{max-width:900px;margin:0 auto;padding:36px 20px;min-width:0}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(26,58,92,.25)} a:hover{color:var(--accent2);border-color:var(--accent2)}
+h1{font-size:1.6em;font-weight:600;color:var(--accent);margin-bottom:6px;line-height:1.3}
+h2{font-size:.78em;font-family:var(--mono);font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);margin:34px 0 10px;padding-bottom:5px;border-bottom:1px solid var(--border)}
 h3{font-size:.95em;font-weight:600;margin:16px 0 6px}
 p{margin-bottom:9px;color:#333}
 ul{margin:0 0 10px 20px} li{margin-bottom:4px;color:#333}
+p,li,td,th,summary,dd{overflow-wrap:anywhere}
 code,.mono{font-family:var(--mono);font-size:.84em}
-code.cid{color:var(--teal);font-size:.76em;white-space:nowrap}
-.nav{display:flex;gap:12px;margin-bottom:22px;font-size:.85em;overflow-x:auto;white-space:nowrap}
-.nav a{color:#777;font-weight:500}
+code.cid{color:var(--teal);font-size:.78em;white-space:normal;overflow-wrap:anywhere}
 .sub{color:var(--dim);font-size:.92em;margin-bottom:16px}
-.status{background:#fef3c7;border-left:4px solid #d97706;padding:10px 14px;border-radius:6px;margin:12px 0 18px;font-size:.9em;color:#78350f}
-.objs{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:10px 0 16px}
-.obj{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:10px 12px;font-size:.86em}
+.jump{display:flex;flex-wrap:wrap;gap:6px 14px;font-family:var(--mono);font-size:.76em;margin:14px 0 4px}
+.jump a{border:0;color:var(--dim)} .jump a:hover{color:var(--accent2)}
+.status{background:#fef3c7;border-left:4px solid #d97706;padding:10px 14px;border-radius:6px;margin:14px 0 18px;font-size:.88em;color:#78350f}
+.status a{color:#78350f}
+.objs{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px;margin:10px 0 14px}
+.obj{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:9px 11px;font-size:.84em;color:#444}
 .obj b{display:block;color:var(--accent2);font-family:var(--mono);font-size:.95em;margin-bottom:2px}
-details{background:var(--surface);border:1px solid var(--border);border-radius:6px;margin:8px 0;padding:8px 14px}
-details>summary{cursor:pointer;font-weight:600;color:var(--accent);font-size:.93em}
-details[open]>summary{margin-bottom:8px}
-table{border-collapse:collapse;width:100%;font-size:.84em;margin:8px 0 14px;background:var(--surface)}
-th,td{border:1px solid var(--border);padding:5px 8px;text-align:left;vertical-align:top}
-th{background:#f3f4f6;font-weight:600;color:#333}
-.tw{overflow-x:auto}
-.pill{display:inline-block;font-family:var(--mono);font-size:.74em;padding:1px 6px;border-radius:9px;background:#e0f2fe;color:#075985;margin-right:3px}
-.ko{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:6px;padding:16px 20px;margin:12px 0}
-.ko-head{font-family:var(--mono);font-size:.74em;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin-bottom:4px}
-.ko-title{font-size:1.25em;color:var(--accent);margin:0 0 10px}
-.ko p{font-size:1.02em;line-height:1.75;color:#222}
-ol.prov{margin:6px 0 4px 20px;font-size:.86em} ol.prov>li{margin-bottom:10px} ol.prov ul{margin:4px 0 0 16px;font-size:.95em;color:#444}
+/* the card: captures grammar */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:16px;margin-bottom:12px}
+.card-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:6px}
+.card-section{font-family:var(--mono);font-size:.72em;color:var(--teal);text-transform:uppercase;letter-spacing:.06em}
+.card-date{font-family:var(--mono);font-size:.74em;color:var(--dim)}
+.card-query{font-weight:600;color:var(--accent);font-size:1.15em;margin-bottom:6px;line-height:1.4}
+.card-query a{border:0}
+.card-status{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:10px;font-size:.78em}
+.pill{display:inline-block;font-family:var(--mono);font-size:.92em;padding:1px 7px;border-radius:9px;background:#e0f2fe;color:#075985;white-space:normal;max-width:100%}
+.pill.warn{background:#fef3c7;color:#92400e} .pill.ok{background:#dcfce7;color:#166534} .pill.dim{background:#f3f4f6;color:#555}
+.card-links{font-family:var(--mono);font-size:.74em;color:var(--dim);display:flex;flex-wrap:wrap;gap:4px 12px;margin-top:12px;padding-top:10px;border-top:1px solid var(--border)}
+.card-links a{border:0}
+/* collapsibles */
+details{border:1px solid var(--border);border-radius:6px;margin:6px 0;background:#fcfcfc}
+details>summary{cursor:pointer;padding:8px 12px;font-size:.88em;color:#444;list-style:none;display:flex;gap:8px;align-items:baseline}
+details>summary::-webkit-details-marker{display:none}
+details>summary::before{content:"\25B8";color:var(--teal);font-size:.85em;flex:none;transition:transform .15s}
+details[open]>summary::before{transform:rotate(90deg)}
+details>summary:hover{color:var(--accent2)}
+details>summary>span:not(.k):not(.n){flex:1 1 12em;min-width:0}
+details>summary{flex-wrap:wrap}
+details>summary .k{font-family:var(--mono);font-weight:500;color:var(--accent2);flex:none}
+details>summary .n{color:var(--dim);font-family:var(--mono);font-size:.86em;margin-left:auto;flex:none;padding-left:8px}
+details[open]>summary{border-bottom:1px solid var(--border)}
+details>.inner{padding:10px 14px 6px}
+details details{background:var(--surface)}
+.stack>details{margin:5px 0}
+dl.kv{display:grid;grid-template-columns:max-content 1fr;gap:3px 12px;font-size:.86em}
+dl.kv dt{color:var(--dim);font-family:var(--mono);font-size:.9em}
+dl.kv dd{color:#333;min-width:0}
+table{border-collapse:collapse;width:100%;font-size:.84em;margin:6px 0 12px;background:var(--surface)}
+th,td{border-bottom:1px solid var(--border);padding:6px 8px;text-align:left;vertical-align:top}
+th{font-family:var(--mono);font-size:.82em;font-weight:500;color:var(--dim);text-transform:uppercase;letter-spacing:.04em}
+.tw{overflow-x:auto;max-width:100%}
+/* the knowledge object */
+.ko{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:6px;padding:18px 22px;margin:4px 0 8px}
+.ko-head{font-family:var(--mono);font-size:.72em;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin-bottom:4px}
+.ko-title{font-size:1.3em;color:var(--accent);margin:0 0 10px;font-family:Georgia,"Times New Roman",serif;font-weight:600}
+.ko p{font-family:Georgia,"Times New Roman",serif;font-size:1.04em;line-height:1.75;color:#222}
+.prov-s{font-size:.9em;color:#222}
+ul.claims{list-style:none;margin:0} ul.claims>li{font-size:.86em;color:#444;padding:6px 0;border-bottom:1px dashed var(--border)} ul.claims>li:last-child{border:0}
+ul.claims .qt{color:#222;font-style:italic}
+ul.claims .qt::before{content:"\201C"} ul.claims .qt::after{content:"\201D"}
+.meta{font-family:var(--mono);font-size:.82em;color:var(--dim)}
+.plist{list-style:none;margin:0}
+.plist>li{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline;padding:6px 0;border-bottom:1px solid var(--border);font-size:.88em}
+.plist>li:last-child{border:0}
+.plist .stage{color:var(--dim);font-size:.9em;flex-basis:100%}
 .foot{color:var(--dim);font-size:.82em;margin-top:30px;border-top:1px solid var(--border);padding-top:12px}
+@media (max-width:560px){.wrap{padding:24px 14px}.ko{padding:14px 15px}.card{padding:13px}dl.kv{grid-template-columns:1fr}dl.kv dt{margin-top:4px}}
 </style>
 </head><body><div class="wrap">
 <nav class="nav"> <a href="/">Alexanarch</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Library</span> <a href="/s/browse/">Browse</a> <a href="/search/">Search</a> <a href="/s/wiki/">Wiki</a> <a href="/s/graph/">Graph</a> <a href="/lexical/">Lexical</a> <a href="/citations/">Citations</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Reception</span> <a href="/addresses/">Addresses</a> <a href="/captures/">Captures</a> <a href="/non/" style="font-weight:600">Non</a> <a href="/observatory/">Observatory</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Continuity</span> <a href="/resolve/">Resolve</a> <a href="/identifiers/">Identifiers</a> <a href="/datasets/">Datasets</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Generative</span> <a href="/mint/stamp/">Stamp</a> <a href="/book/">Book</a> <a href="https://alexanarch.freeforums.net/" target="_blank" rel="noopener">Discussion</a> <span class="nav-cluster" style="color:#a0a0a0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.78em;letter-spacing:0.09em;text-transform:uppercase;padding:0 2px 0 10px;margin-left:6px;border-left:1px solid #d9d9d0;">Governance</span> <a href="/principles/">Principles</a> <a href="/how/">How</a> <a href="/deposit/">Deposit</a> <a href="/guide/">Guide</a> <a href="/manifest/">Manifest</a> </nav>
