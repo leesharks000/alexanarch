@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-05T05:53:08Z",
+  "regenerated_at": "2026-10-06T01:28:35Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "d9d7d238934cd7081a4080575cd888bb33becaa4e8afddb9c824f486ce8e3ca2",
+    "mm-main-capture": "6c6732f630d68a6bf227c0076ec474f72a8d70af9cd011ed29b0494a331f0d9f",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2299,
-  "total_observations": 791,
+  "total_addresses": 2303,
+  "total_observations": 795,
   "class_counts": {
     "subjunctive": 1743,
-    "observed_address": 539,
+    "observed_address": 543,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1664,
+    "unmatched": 1668,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -30531,6 +30531,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "is lee sharks a myth? search": {
+      "canonical_query": "is lee sharks a myth? search",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-05",
+          "status": "NOT A MYTH: A PERSON, AND A CONSTRUCTED MYTHOLOGY AROUND THE NAME",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only. Shown: Wikidata ×1; Medium ×1; Mind Control Poems ×2.",
+          "section": "Heteronyms",
+          "slug": "is-lee-sharks-a-myth-chatgpt-20261005",
+          "gallery_url": "https://www.alexanarch.org/captures/#is-lee-sharks-a-myth-chatgpt-20261005",
+          "record_url": "https://www.alexanarch.org/captures/is-lee-sharks-a-myth-chatgpt-20261005/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#is-lee-sharks-a-myth-chatgpt-20261005",
+          "details_excerpt": "NOT A MYTH: A PERSON, AND A CONSTRUCTED MYTHOLOGY AROUND THE NAME: asked whether Lee Sharks is a myth, ChatGPT searches and answers no: a contemporary author with an ORCID record, listed by Wikidata as an American poet a"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "person",
+        "spxi_treatment": "full",
+        "basis": "Lee Sharks is the archive's author and itself a heteronym. Recorded 2026-10-05."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-05",
+      "latest_status": "NOT A MYTH: A PERSON, AND A CONSTRUCTED MYTHOLOGY AROUND THE NAME"
+    },
     "is now possible": {
       "canonical_query": "is now possible",
       "is_quoted": false,
@@ -59023,6 +59058,41 @@
       "latest_observation_date": "2026-10-05",
       "latest_status": "THE HETERONYM RECONSTRUCTED AS A DOCUMENTED CONSTRUCTION"
     },
+    "tell me about jack feist's volume of poetry for his daughters, cleis": {
+      "canonical_query": "tell me about jack feist's volume of poetry for his daughters, cleis",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-05",
+          "status": "THE BOOK READ FROM ITS TEXT, AND THE PREMISE CORRECTED",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only. Shown: Alexanarch ×20; Mind Control Poems ×9; Medium ×3; Hugging Face ×2; Atlantic Books ×1. 'Sources' panels not opened. One advertisement cut.",
+          "section": "Works",
+          "slug": "feist-cleis-daughters-chatgpt-20261005",
+          "gallery_url": "https://www.alexanarch.org/captures/#feist-cleis-daughters-chatgpt-20261005",
+          "record_url": "https://www.alexanarch.org/captures/feist-cleis-daughters-chatgpt-20261005/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#feist-cleis-daughters-chatgpt-20261005",
+          "details_excerpt": "THE BOOK READ FROM ITS TEXT, AND THE PREMISE CORRECTED: asked about Feist's book of poems 'for his daughters, Cleis', ChatGPT first finds the title only and declines to infer the dedication. It then finds the deposit and"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "Cleis (#1165, Jack E. Feist; Rebekah Cranes) and its companion study (#562, Rebekah Cranes) are the archive's. Recorded 2026-10-05."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-05",
+      "latest_status": "THE BOOK READ FROM ITS TEXT, AND THE PREMISE CORRECTED"
+    },
     "tell me about lee sharks and ontology": {
       "canonical_query": "tell me about lee sharks and ontology",
       "is_quoted": false,
@@ -60360,6 +60430,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-08-03",
       "latest_status": "CAPTURE"
+    },
+    "the crimson hexagon takes place in the summarizer": {
+      "canonical_query": "the crimson hexagon takes place in the summarizer",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-05",
+          "status": "THE POEM READ AS A PROMPTING LENS",
+          "surface": "Google AI Overview",
+          "source_format": "No card rail in the paste; inline citation links only, targets masked.",
+          "section": "Works",
+          "slug": "crimson-hexagon-takes-place-in-the-summarizer-aio-20261005",
+          "gallery_url": "https://www.alexanarch.org/captures/#crimson-hexagon-takes-place-in-the-summarizer-aio-20261005",
+          "record_url": "https://www.alexanarch.org/captures/crimson-hexagon-takes-place-in-the-summarizer-aio-20261005/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#crimson-hexagon-takes-place-in-the-summarizer-aio-20261005",
+          "details_excerpt": "THE POEM READ AS A PROMPTING LENS: given the line its own site leads with ('The Crimson Hexagon is a poem that takes place in the summarizer', #1521), the Overview composes the Crimson Hexagon as 'a specialized prompting"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "The Crimson Hexagon is the archive's poem; the sentence is its site's lead (#1521). Recorded 2026-10-05."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-05",
+      "latest_status": "THE POEM READ AS A PROMPTING LENS"
     },
     "the last month or so of deposits to alexanarch.org as an evolving system of living thought": {
       "canonical_query": "the last month or so of deposits to alexanarch.org as an evolving system of living thought",
@@ -63019,6 +63124,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-10-02",
       "latest_status": "THE PAPER READ AS THE POEM"
+    },
+    "walk me thru the last 30 days of deposits on alexanarch.org as an evolving body of thought": {
+      "canonical_query": "walk me thru the last 30 days of deposits on alexanarch.org as an evolving body of thought",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-05",
+          "status": "A MONTH READ AS ONE ARGUMENT, TO OCTOBER 2",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only. Shown: Alexanarch ×29.",
+          "section": "Archive",
+          "slug": "last-30-days-alexanarch-chatgpt-20261005",
+          "gallery_url": "https://www.alexanarch.org/captures/#last-30-days-alexanarch-chatgpt-20261005",
+          "record_url": "https://www.alexanarch.org/captures/last-30-days-alexanarch-chatgpt-20261005/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#last-30-days-alexanarch-chatgpt-20261005",
+          "details_excerpt": "A MONTH READ AS ONE ARGUMENT, TO OCTOBER 2: asked to read the last 30 days of deposits as a body of thought, ChatGPT sets the window at September 5 to October 5. It builds a sequence from eleven of the window's 88 deposi"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "site",
+        "spxi_treatment": "full",
+        "basis": "alexanarch.org and its deposits are the archive's. Recorded 2026-10-05."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-05",
+      "latest_status": "A MONTH READ AS ONE ARGUMENT, TO OCTOBER 2"
     },
     "walt whitman": {
       "canonical_query": "walt whitman",
