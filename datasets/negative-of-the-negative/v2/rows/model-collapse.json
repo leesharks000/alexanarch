@@ -157,6 +157,234 @@
      "Snippet": "\"head-sampling by construction: it can fail to perceive tail loss.\""
     }
    ]
+  },
+  "KO": {
+   "title": "Model collapse",
+   "genre": "encyclopedic knowledge object (the plan of L(B ∪ A), realized without provenance in the prose)",
+   "status": "draft 2026-10-05; ruled as the object the dataset is striving towards ('yes. this is the object. this is the one it is striving towards.' — operator, 2026-10-05)",
+   "sentences": [
+    {
+     "para": 0,
+     "text": "Model collapse is a degenerative process in generative models trained, generation after generation, on data that earlier models produced: the generated data pollute the next training set, and models trained on it come to misperceive the reality they were built to model.",
+     "n": 1,
+     "claims": [
+      "F1"
+     ]
+    },
+    {
+     "para": 0,
+     "text": "Information about the tails of the original distribution is lost first; later, the learned distribution converges toward one with little resemblance to the original and much reduced variance.",
+     "n": 2,
+     "claims": [
+      "F2",
+      "F3"
+     ]
+    },
+    {
+     "para": 0,
+     "text": "The effect has been shown in large language models, variational autoencoders and Gaussian mixture models, and under indiscriminate recursive training it is inevitable even in conditions close to ideal.",
+     "n": 3,
+     "claims": [
+      "F2",
+      "F4"
+     ]
+    },
+    {
+     "para": 0,
+     "text": "In language models it can appear as increasingly irrelevant, nonsensical or repetitive text; in image models, as digits and faces that grow more alike.",
+     "n": 4,
+     "claims": [
+      "F13"
+     ]
+    },
+    {
+     "para": 0,
+     "text": "It is distinct from catastrophic forgetting, mode collapse and model drift, and close to performative prediction, a self-fulfilling loop that becomes a fairness feedback loop when it entrenches discrimination.",
+     "n": 5,
+     "claims": [
+      "F11",
+      "F15"
+     ]
+    },
+    {
+     "para": 1,
+     "text": "Because the head of a distribution survives longest, collapse can proceed while standard evaluations hold steady: in a toy model, tail mass halves by the seventh generation while a standard benchmark does not turn until the fifteenth.",
+     "n": 6,
+     "claims": [
+      "C1556-06"
+     ]
+    },
+    {
+     "para": 1,
+     "text": "A diagnostic that samples only what a system already admits is head-sampling by construction and can fail to perceive tail loss; an instrument that reads the tail directly has been specified but not calibrated, tested or run.",
+     "n": 7,
+     "claims": [
+      "C1613-02",
+      "L1573-01",
+      "L1573-04"
+     ]
+    },
+    {
+     "para": 1,
+     "text": "What is lost is the rare: low-probability events are often those relevant to marginalized groups, long-tail ideas may fade from public consciousness, and a rare output, though neither common nor popular, may be the accurate one.",
+     "n": 8,
+     "claims": [
+      "F8",
+      "F14",
+      "F17"
+     ]
+    },
+    {
+     "para": 2,
+     "text": "On one proposal, model collapse is a property of language rather than of language models: a single dynamical law would govern recursively trained models, writers habituated to AI-generated text and children deprived of linguistic input, the three differing in severity, mechanism and timescale, and in whether the loss can be reversed.",
+     "n": 9,
+     "claims": [
+      "L855-01",
+      "L855-11",
+      "L855-05"
+     ]
+    },
+    {
+     "para": 2,
+     "text": "Described more cautiously, what such cases share is an operator form, transmission composed with selection, and not a common causal mechanism.",
+     "n": 10,
+     "claims": [
+      "A779-10",
+      "A779-02"
+     ]
+    },
+    {
+     "para": 3,
+     "text": "Preserving original data keeps degradation minor, and accumulating real data alongside synthetic, determining provenance, improving synthetic data and governance tools are proposed as preventives.",
+     "n": 11,
+     "claims": [
+      "F5",
+      "F16"
+     ]
+    },
+    {
+     "para": 3,
+     "text": "How model-generated content can be tracked at scale is unclear, and the preventives depend on it: on one analysis provenance is the operating condition of any solution, capping a corpus's synthetic share presupposes telling synthetic from human text, and provenance cannot modulate collapse unless it reaches the training system as a signal.",
+     "n": 12,
+     "claims": [
+      "F7",
+      "B939-02",
+      "C1556-11",
+      "A745-03"
+     ]
+    },
+    {
+     "para": 3,
+     "text": "Data from genuine human interaction is expected to grow more valuable; whether it is a clean corrective is disputed, since human inputs to chat systems may already carry the signatures of model mediation and training on them may produce collapse signatures comparable to those of synthetic data, if more slowly, and the studies that would decide it have not been conducted.",
+     "n": 13,
+     "claims": [
+      "F6",
+      "L856-01",
+      "A161-02",
+      "L856-06"
+     ]
+    },
+    {
+     "para": 4,
+     "text": "Recursive narrowing of the same shape has been described outside generative training: in moderation classifiers trained on their own enforcement, in particle-physics triggers that never learn the tails of the physical distribution, in journal screening, in the reception of a discipline, in code, where it shows as declining solution-space diversity rather than declining correctness, in detectors that prune high-perplexity input, and in retrieval layers whose flattened summaries are written back as sources.",
+     "n": 14,
+     "claims": [
+      "P001-08",
+      "P932-04",
+      "D1540-03",
+      "D1574-03",
+      "C199-02",
+      "C191-05",
+      "D1616-02"
+     ]
+    },
+    {
+     "para": 4,
+     "text": "In none of these has full recursive collapse in the strict technical sense been demonstrated.",
+     "n": 15,
+     "claims": [
+      "P001-08",
+      "P932-09",
+      "D1540-03"
+     ]
+    }
+   ],
+   "field_claims": {
+    "F1": {
+     "source": "B1",
+     "locus": "Def. 2.1",
+     "quote": "\"Model collapse is a degenerative process affecting generations of learned generative models, in which the data they generate end up polluting the training set of the next generation. Being trained on polluted data, they then mis-perceive reality.\""
+    },
+    "F2": {
+     "source": "B1",
+     "locus": "Abstract",
+     "quote": "\"indiscriminate use of model-generated content in training causes irreversible defects in the resulting models, in which tails of the original content distribution disappear … it can occur in LLMs as well as in variational autoencoders (VAEs) and Gaussian mixture models (GMMs)\""
+    },
+    "F3": {
+     "source": "B1",
+     "locus": "text",
+     "quote": "early collapse loses \"information about the tails\"; late collapse converges on \"a distribution that carries little resemblance to the original one, often with substantially reduced variance\""
+    },
+    "F4": {
+     "source": "B1",
+     "locus": "Main",
+     "quote": "\"this process is inevitable, even for cases with almost ideal conditions for long-term learning\""
+    },
+    "F5": {
+     "source": "B1",
+     "locus": "text",
+     "quote": "\"preservation of the original data allows for better model fine-tuning and leads to only minor degradation of performance.\""
+    },
+    "F6": {
+     "source": "B1",
+     "locus": "Abstract",
+     "quote": "\"the value of data collected about genuine human interactions with systems will be increasingly valuable\""
+    },
+    "F7": {
+     "source": "B1",
+     "locus": "Discussion",
+     "quote": "\"it is unclear how content generated by LLMs can be tracked at scale. One option is community-wide coordination\""
+    },
+    "F8": {
+     "source": "B1",
+     "locus": "Discussion",
+     "quote": "\"Preserving the ability of LLMs to model low-probability events is essential to the fairness of their predictions: such events are often relevant to marginalized groups.\""
+    },
+    "F11": {
+     "source": "B1",
+     "locus": "Main",
+     "quote": "catastrophic forgetting and data poisoning are close concepts; \"Neither is able to explain the phenomenon of model collapse fully\""
+    },
+    "F13": {
+     "source": "B2",
+     "locus": "text",
+     "quote": "\"In LLMs, model collapse can manifest in increasingly irrelevant, nonsensical and repetitive text outputs\"; image models give digits that resemble each other and \"more homogeneous faces\""
+    },
+    "F14": {
+     "source": "B2",
+     "locus": "text",
+     "quote": "consequences: poor decision-making (a rare disease \"forgotten\"); user disengagement; knowledge decline, \"'long-tail' ideas might eventually fade out of the public's consciousness\"; research tools \"might provide only widely cited studies\""
+    },
+    "F15": {
+     "source": "B2",
+     "locus": "text",
+     "quote": "distinct from catastrophic forgetting, mode collapse and model drift; compared to performative prediction, a \"self-fulling [sic] prophecy\", \"also known as a fairness feedback loop when this process entrenches discrimination\""
+    },
+    "F16": {
+     "source": "B2",
+     "locus": "text",
+     "quote": "prevention: retaining non-AI data sources; determining data provenance (the Data Provenance Initiative, \"more than 4,000 datasets\"); data accumulation; better synthetic data; governance tools"
+    },
+    "F17": {
+     "source": "B2",
+     "locus": "text",
+     "quote": "a rare output \"might not be common or popular, but is still, in fact, most accurate\" (the \"rarely cited study\")"
+    }
+   },
+   "field_sources": {
+    "B1": "Shumailov et al., \"AI models collapse when trained on recursively generated data\", Nature 631 (2024)",
+    "B2": "IBM, \"What Is Model Collapse?\" (Gomstyn & Jonker, 14 Oct 2024)"
+   }
   }
  },
  "field": [

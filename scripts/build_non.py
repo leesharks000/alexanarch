@@ -82,6 +82,11 @@ th,td{border:1px solid var(--border);padding:5px 8px;text-align:left;vertical-al
 th{background:#f3f4f6;font-weight:600;color:#333}
 .tw{overflow-x:auto}
 .pill{display:inline-block;font-family:var(--mono);font-size:.74em;padding:1px 6px;border-radius:9px;background:#e0f2fe;color:#075985;margin-right:3px}
+.ko{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:6px;padding:16px 20px;margin:12px 0}
+.ko-head{font-family:var(--mono);font-size:.74em;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin-bottom:4px}
+.ko-title{font-size:1.25em;color:var(--accent);margin:0 0 10px}
+.ko p{font-size:1.02em;line-height:1.75;color:#222}
+ol.prov{margin:6px 0 4px 20px;font-size:.86em} ol.prov>li{margin-bottom:10px} ol.prov ul{margin:4px 0 0 16px;font-size:.95em;color:#444}
 .foot{color:var(--dim);font-size:.82em;margin-top:30px;border-top:1px solid var(--border);padding-top:12px}
 """
 
@@ -98,6 +103,39 @@ def table(rows, cols, render=None):
         tds = "".join(f"<td>{(render or {}).get(c, lambda v: md_inline(str(v)))(r.get(c, ''))}</td>" for c in cols)
         trs.append(f"<tr>{tds}</tr>")
     return f'<div class="tw"><table><thead><tr>{h}</tr></thead><tbody>{"".join(trs)}</tbody></table></div>'
+
+def knowledge_object(ko, row):
+    """The knowledge object: the plan of L(B ∪ A) realized as encyclopedic prose with no provenance in it, and every sentence
+    sourced below, claim by claim, from the frozen ledgers (the archive's from ledger-archive.json, the field's from the row)."""
+    ledger = {c["id"]: c for c in json.loads((ROOT / row["ledger"]["archive"]).read_text(encoding="utf-8"))}
+    reg = {x["deposit_number"]: x for x in json.loads((ROOT / "data/registry.json").read_text(encoding="utf-8"))["deposits"]}
+    paras = {}
+    for snt in ko["sentences"]:
+        paras.setdefault(snt["para"], []).append(snt["text"])
+    out = ['<div class="ko"><div class="ko-head">The knowledge object</div>',
+           f'<h3 class="ko-title">{esc(ko["title"])}</h3>']
+    out += [f"<p>{esc(' '.join(v))}</p>" for _, v in sorted(paras.items())]
+    out.append('</div>')
+    rows = []
+    for snt in ko["sentences"]:
+        cl = []
+        for cid in snt["claims"]:
+            if cid in ko["field_claims"]:
+                f = ko["field_claims"][cid]
+                cl.append(f'<li><code class="cid">{esc(cid)}</code> {esc(ko["field_sources"].get(f["source"], f["source"]))}, {esc(f["locus"])} · '
+                          f'documented (field) · “{esc(f["quote"])}”</li>')
+            else:
+                c = ledger[cid]; d = reg[c["dep"]]
+                cl.append(f'<li><code class="cid">{esc(cid)}</code> <a href="/s/records/{c["dep"]}/">#{c["dep"]}</a> <em>{esc(d["title"][:120])}</em> '
+                          f'({esc(str(d.get("creator") or ""))}, {esc(str(c.get("date") or ""))}), {esc(c["locus"])} · {esc(c["modality"])} · “{esc(c["quote"].strip())}”</li>')
+        rows.append(f'<li><strong>{snt["n"]}.</strong> {esc(snt["text"])}<ul>{"".join(cl)}</ul></li>')
+    used = {c for snt in ko["sentences"] for c in snt["claims"]}
+    nf = sum(1 for c in used if c in ko["field_claims"])
+    na = len(used) - nf
+    out.append(f'<details><summary>Provenance — every sentence sourced ({len(ko["sentences"])} sentences; {nf} field claims, {na} archive claims; '
+               f'modality is the source\'s own and the prose carries it in its grammar)</summary><ol class="prov">{"".join(rows)}</ol></details>')
+    out.append(f'<p class="sub" style="font-size:.82em">{esc(ko["genre"])}. {esc(ko["status"])}.</p>')
+    return "\n".join(out)
 
 def folder_index(folder, title, note):
     files = sorted(p for p in folder.iterdir() if p.is_file() and p.name != "index.html")
@@ -131,6 +169,7 @@ def main():
              '<div class="obj"><b>L(B)</b>the address recomposed from the full texts of the sources the layer itself surfaced</div>'
              '<div class="obj"><b>L(B ∪ A)</b>the same algorithm with the archive\'s subset admitted on equal terms</div>'
              '<div class="obj"><b>Δ</b>T against L(B): what the disclosed field held and was not composed. L(B) against L(B ∪ A): what admission adds</div>'
+             '<div class="obj"><b>KO</b>the knowledge object: L(B ∪ A) written as public knowledge, with no provenance in the prose and every sentence sourced below it</div>'
              '<div class="obj"><b>K</b>the prospective kernel: what admission adds, derived from the plan, adjudicated later in both directions</div></div>')
     b.append('<p>The archive\'s subset is selected by its <strong>bearing</strong> on the address, in three strata: <strong>D</strong>, direct (the archive names the entity and says something about it); <strong>R</strong>, relational (the archive relates the entity to one of its own objects); <strong>O</strong>, ontological (the archive applies one of its own categories to the entity, or to a class the field says it belongs to). A citation hop from what reading admits finds the term-absent tail. Volume never removes a source.</p>')
 
@@ -139,6 +178,9 @@ def main():
         o = r["objects"]
         b.append(f'<h2>Row: <code>{esc(r["address"])}</code> · {esc(r["surface"])} · epoch {esc(r["epoch"])}</h2>')
         b.append(f'<p class="sub">{esc(r["status"]["procedure"])}. Ledger: {esc(r["status"]["ledger"])}. Not frozen.</p>')
+        ko = o.get("KO")
+        if ko:
+            b.append(knowledge_object(ko, r))
         tclaims = "".join(f"<li>{esc(c)}</li>" for c in o["T"]["claims"])
         b.append(f'<details><summary>T — the transcript ({o["T"]["words"]} words, {o["T"]["cards"]} cards)</summary>'
                  f'<p><a href="/{o["T"]["path"]}">verbatim text</a> · sha256 <code>{o["T"]["sha256"][:16]}…</code></p><ul>{tclaims}</ul></details>')
