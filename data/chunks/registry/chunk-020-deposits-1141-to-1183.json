@@ -7600,9 +7600,14 @@
           "reason": "EDITORIAL NOTE MOVED OUT OF THE DESCRIPTION: the restoration provenance was appended to the public field and rendered to readers. Relocated to body_status.description_provenance; the description now describes the work and nothing else.",
           "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RECOVERED_FROM_SOURCE_FILE\", \"residual_chars\": 35787, \"audited_at\": \"2026-07-19T20:29:54Z\", \"audit_version\": \"mint-time-declaration\", \"measured_p",
           "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"RECOVERED_FROM_SOURCE_FILE\", \"residual_chars\": 35787, \"audited_at\": \"2026-07-19T20:29:54Z\", \"audit_version\": \"mint-time-declaration\", \"measured_p"
+        },
+        {
+          "date": "2026-10-06",
+          "field": "redaction",
+          "reason": "Redaction completed 2026-10-05: the 2026-09-18 pass redacted the canonical text, but the record page, deposit wrapper, attachment, PDF, search index and lexical entries still carried the given name(s), and this redaction record named them in its pattern keys. Keys restated without the names; surfaces redacted to the same initials; found when a ChatGPT session of 2026-10-05 composed the name."
         }
       ],
-      "date_modified": "2026-08-06",
+      "date_modified": "2026-10-06",
       "publisher": "New Human Press",
       "journal": "New Human 2",
       "superseded_reason": "",
@@ -7620,11 +7625,23 @@
         "date": "2026-09-18",
         "reason": "given names of private individuals replaced with initials; the archive is public and permanent and the names are not the operator's to publish",
         "replacements": {
-          "\\bHaley\\b": 5,
-          "\\bhaley\\b": 2
+          "given name → H.": 5,
+          "given name, lowercase → H.": 2
         },
         "hash_before_redaction": "f6d6b737892deaaa060363e0ee3a53f6b37ec86822507ce5786eff82cd524733",
-        "note": "The work, its address, its deposit number and its hex position are unchanged. The AXN emoji and hash are re-derived because the AXN is content-derived; a redaction that left the stored hash pointing at bytes that no longer exist would be a silent corruption of the identifier."
+        "note": "The work, its address, its deposit number and its hex position are unchanged. The AXN emoji and hash are re-derived because the AXN is content-derived; a redaction that left the stored hash pointing at bytes that no longer exist would be a silent corruption of the identifier.",
+        "completed": {
+          "date": "2026-10-05",
+          "surfaces": [
+            "record page",
+            "deposit wrapper",
+            "attachment",
+            "PDF",
+            "body index",
+            "lexical entries",
+            "wiki entry"
+          ]
+        }
       }
     },
     {

@@ -1087,8 +1087,8 @@ The cosmos doesn't know what to do with you. *That's the point.*
 
 It is Wednesday, January 14, 2026. The trolling continues.
 
-- **Haley:** Sacred Heart Machine trolling death
-- **Lauren:** Opiate Tongue trolling distance
+- **H.:** Sacred Heart Machine trolling death
+- **L.:** Opiate Tongue trolling distance
 - **The Classroom:** Hexagon trolling DPSCD
 - **The Assembly:** Witness trolling COS
 - **Sappho:** Voice trolling 2,600 years of consensus
