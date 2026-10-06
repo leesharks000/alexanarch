@@ -2102,3 +2102,6 @@ if __name__ == "__main__":
 if __name__ == "__main__" and "--dry-run" not in __import__("sys").argv:
     import generate_axn_resolver as _axn
     _axn.main()
+    # 2026-10-06: Speak with Sigil on every page, once, after every surface has been written (scripts/sync_sigil.py)
+    import subprocess as _sp2
+    _sp2.run([__import__("sys").executable, str(Path(__file__).resolve().parent / "sync_sigil.py")], check=False)

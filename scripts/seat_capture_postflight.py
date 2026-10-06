@@ -63,6 +63,9 @@ STEPS = [
     # citation (ruling, Lee Sharks, 2026-10-01), and every output stays far under the ~4 MiB fetch ceiling.
     ("RECS", [sys.executable, "scripts/build_capture_records.py"]),
     ("SYNC", [sys.executable, "scripts/sync_capture_dataset.py"]),
+    # 2026-10-06: SIGIL after every page-writing step: Speak with Sigil on every page, once (scripts/sync_sigil.py).
+    # The gallery, record and address generators write no common footer, so the panel is restored here.
+    ("SIGIL", [sys.executable, "scripts/sync_sigil.py"]),
     ("CITE", [sys.executable, "scripts/audit_capture_citability.py"]),
 ]
 

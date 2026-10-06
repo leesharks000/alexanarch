@@ -146,7 +146,7 @@ def page(title, desc, body, canonical, jsonld=None):
     ld = f'<script type="application/ld+json">{json.dumps(jsonld, ensure_ascii=False)}</script>' if jsonld else ""
     return (f'<!DOCTYPE html>\n<html lang="en"><head>\n<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">\n'
             f'<title>{esc(title)}</title>\n<link rel="canonical" href="{canonical}">\n<meta name="description" content="{esc(desc)}">\n'
-            f'<meta name="citation_author" content="Lee Sharks">\n{ld}\n<style>{CSS}</style>\n</head><body><div class="wrap">\n{nav()}\n{body}\n</div></body></html>\n')
+            f'<meta name="citation_author" content="Lee Sharks">\n{ld}\n<style>{CSS}</style>\n</head><body><div class="wrap">\n{nav()}\n{body}\n</div>\n<script src="https://www.themandalaoracle.com/embed/sigil.js" defer></script>\n</body></html>\n')
 
 def table(rows, cols, render=None):
     h = "".join(f"<th>{esc(c)}</th>" for c in cols)
