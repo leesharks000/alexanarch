@@ -43,7 +43,7 @@ d = {
  "d": ("NOT A MYTH: A PERSON, AND A CONSTRUCTED MYTHOLOGY AROUND THE NAME: asked whether Lee Sharks is a myth, ChatGPT searches and answers "
        "no: a contemporary author with an ORCID record, listed by Wikidata as an American poet and independent scholar, a 2025–2026 body of "
        "work on the Crimson Hexagon, and a name entangled with Mary Lee the shark. It reads part of the material as deliberately satirical, citing "
-       "a claim that Lee Sharks invented the lightbulb, which no seated deposit text contains."),
+       "the claim on the author's blog (Mind Control Poems) that Lee Sharks invented the lightbulb."),
  "cites": 4, "cite_list": cite_list, "archive_controlled_cites": 3,
  "sf": "Source chips expose site labels only. Shown: Wikidata ×1; Medium ×1; Mind Control Poems ×2.",
  "per": 0.5, "per_v": {"author": True, "inst": False, "id": False, "src": True},
@@ -54,18 +54,19 @@ d = {
  "transcript_read": "READ IN FULL 2026-10-05",
  "reading": ("The answer separates the person from the material: a real author ('an ORCID record'; Wikidata's description) and surrounding claims "
              "'intentionally constructed/absurd'. The Mary Lee point is the archive's own (#1208: 'The composition layer resolves “Lee Sharks” to “Mary "
-             "Lee the shark”'). The satire example, a claim that Lee Sharks invented the lightbulb, is cited to Mind Control Poems; no seated deposit "
-             "text has it, so it is recorded as the composer's report. The heteronymy is not named: 'Lee Sharks' is treated as a real person's name, "
+             "Lee the shark”'). The satire example, a claim that Lee Sharks invented the lightbulb, is cited to Mind Control Poems, the author's blog, "
+             "where it stands; it is not in a deposit, and the operator confirms it as the blog's (2026-10-05). The heteronymy is not named: 'Lee Sharks' is treated as a real person's name, "
              "with no mention that the name is itself a heteronym."),
  "analysis": "A direct existence question answered with a person and a bounded mythology. " + SEAT,
  "findings": ["A PERSON, BY RECORD. ORCID and Wikidata ('American poet and independent scholar') cited for existence.",
               "THE SHARK ENTANGLEMENT, FROM THE ARCHIVE. The search-engine confusion with Mary Lee, as #1208 states it.",
-              "SATIRE BY EXAMPLE, UNSEATED. 'Invented the lightbulb' is in no seated deposit text.",
+              "SATIRE BY EXAMPLE, FROM THE BLOG. 'Invented the lightbulb' is the blog's (Mind Control Poems), cited as such; not in a deposit.",
               "THE HETERONYM UNNAMED. 'Lee Sharks' read as a real name; its status as a heteronym not composed."],
  "longitudinal_priors": ["lee-sharks-entity-resolution-mary-lee", "who-is-lee-sharks-20260609", "who-is-lee-sharks-claude-20261002"],
  "rerun": "https://chatgpt.com/?q=is+Lee+Sharks+a+myth%3F+search",
  "notes": {"date_basis": "The operator's message of 2026-10-05, 21:19 EDT.",
-           "verified": "Compared 2026-10-05 against #1208; 'lightbulb' / 'light bulb' absent from every seated deposit text."},
+           "verified": "Compared 2026-10-05 against #1208; 'lightbulb' / 'light bulb' absent from every seated deposit text. The claim is the blog's (Mind Control Poems), confirmed by the operator.",
+           "operator_on_the_example": "\"the lightbulb example is on the blog, not deposits, and it's perfect.\" — operator, 2026-10-05 22:00 EDT."},
 }
 (HERE / "capture-01-is-lee-sharks-a-myth-chatgpt.json").write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
 print("wrote", len(tx))
