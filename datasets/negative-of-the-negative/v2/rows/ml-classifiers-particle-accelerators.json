@@ -1,0 +1,2420 @@
+{
+ "row": "ml-classifiers-particle-accelerators",
+ "entity": "ml-classifiers-particle-accelerators",
+ "address": "machine learning classifiers particle accelerators",
+ "addresses": [
+  "machine learning classifiers particle accelerators"
+ ],
+ "epoch": "2026-10-07",
+ "type": "C (public entity)",
+ "surface": "Google AI Overview (expanded)",
+ "auth": "signed out, incognito",
+ "status": {
+  "procedure": "EA-NEGONT-02 v0.7 (#1665); entity before address (ruled 2026-10-07); archive selected by D/R/O, first reading 2026-10-07 (16 of 22 admitted); one citation hop back and forward run, 0 admitted",
+  "ledger": "unaudited (§3.8: one extractor per ledger; field excerpts by WebFetch, archive quotes verified verbatim 121/121); carried as contested within the pool: whether collapse is occurring (#932 W2 against #932/#931/#1450/#1454), the inversion and its diagnosis (#935 against #934), Zenodo and the trigger (#935 against #934, with #1611), policing the term (#1436 against #1454); #1455's orientation sentence falsified by #1456",
+  "frozen": false
+ },
+ "spec": "EA-NEGONT-02 v0.7, #1665",
+ "objects": {
+  "T": {
+   "path": "datasets/negative-of-the-negative/v2/intake/battery-1d-20261007/paste-ml-classifiers-particle-accelerators.txt",
+   "sha256": "3cb87ea1a5a63f0f621b5d8bf5c273fd4afdc77767bfb90959ac6870e1de5d65",
+   "words": 198,
+   "cards": 7,
+   "words_note": "words of the composition before the card list, citation link markup removed",
+   "claims": [
+    "T1 classifiers in accelerators automate diagnostics, screen beam conditions and predict hardware faults in real time",
+    "T2 fault detection: classifiers monitor cavity and beam behaviours, identifying failure modes or 'trips' (CEBAF) before they disrupt operations",
+    "T3 beam screening: pre-trained classifiers (ResNet50) screen latent-space samples in Bayesian optimization so adjustments remain physically valid",
+    "T4 anomaly identification: models analyse injector process variables to flag single-parameter anomalies and trace poor extraction efficiencies",
+    "T5 event and particle classification: CNNs and GNNs process detector signals to categorize particle flavors and tracks",
+    "T6 architectures: CNNs for image-like readouts and event pixel maps; GNNs for irregular detector geometries",
+    "T7 standard binary/multiclass classifiers (decision trees, kNN, SVMs) on sensor streams for errant-beam prediction",
+    "T8 offer: beam control/tuning or collision event reconstruction; an algorithm comparison"
+   ],
+   "register": {
+    "register": "datasets/negative-of-the-negative/v2/register.json",
+    "slug": "machine-learning-classifiers-particle-accele-20261007",
+    "obs_id": "OBS-d0d05d54a1dc"
+   }
+  },
+  "KO": {
+   "title": "Machine learning classifiers in particle accelerators",
+   "genre": "Machine learning classifiers in particle accelerators encyclopedic knowledge object (the plan of L(B ∪ A), realized without provenance in the prose)",
+   "status": "draft 2026-10-07; composed from the entity's ledgers on the operator's instruction; not frozen; ledger unaudited",
+   "sentences": [
+    {
+     "para": 0,
+     "text": "Machine learning classifiers at particle accelerators are proposed or explored for anomaly detection and classification, for predicting machine failures and faulty beams before they occur, and for tuning, and one has been field-tested: a novel machine learning system built for the Continuous Electron Beam Accelerator Facility (CEBAF) monitors its accelerator cavities, problems in which can cause the CEBAF to trip off like a fuse.",
+     "n": 1,
+     "claims": [
+      "F3",
+      "F12",
+      "F42",
+      "F32",
+      "F27",
+      "F25",
+      "F26"
+     ]
+    },
+    {
+     "para": 0,
+     "text": "In its first field test the system correctly identified which cavities were tripping off about 85 percent of the time and what kind of fault caused each trip about 78 percent of the time; connected to the control system for about 20 percent of the cavities, it analysed a few hundred faults in a two-week test in March 2020 and gave operators almost real-time feedback, where previously experts needed to take time to diagnose the issue, and the team hopes to expand it to more cavities if further results are favorable.",
+     "n": 2,
+     "claims": [
+      "F27",
+      "F29",
+      "F30",
+      "F28",
+      "F31"
+     ]
+    },
+    {
+     "para": 1,
+     "text": "Failures lead to unscheduled downtime and lower reliability and are difficult to predict beforehand; on beam pulses from the Spallation Neutron Source (SNS), a set of common classification techniques identified failure before it occurred with almost 80% accuracy, tuning classifier parameters and refining datasets reached almost 92% in classifying bad pulses, and the authors report establishing that information about the failure is encoded in the pulses prior to it.",
+     "n": 3,
+     "claims": [
+      "F11",
+      "F12",
+      "F13",
+      "F14",
+      "F15"
+     ]
+    },
+    {
+     "para": 1,
+     "text": "Another study models the mapping between a pair of sensors located across the accelerator, trained to represent normal operation and evaluated on known faulty beam pulses, with k-fold cross-validation, neural architecture search and hyperparameter optimization, and introduces a framework to standardize machine learning workflow for accelerators; predicting failures from diagnostics already on board, it argues, can help operators avoid installing expensive sensors and unscheduled downtime.",
+     "n": 4,
+     "claims": [
+      "F42",
+      "F43",
+      "F44",
+      "F45",
+      "F41"
+     ]
+    },
+    {
+     "para": 2,
+     "text": "At the injector complex of the Advanced Photon Source (APS) at Argonne, an ML algorithm is explored to identify the source of occasional poor performance of the Particle Accumulator Ring (PAR) and the Linac-To-PAR transport line; by its authors' account the cause of reduced injection or extraction efficiency may be one parameter out of range, which may take an expert considerable time to notice, whereas a well-trained model can point at it instantly.",
+     "n": 5,
+     "claims": [
+      "F1",
+      "F2"
+     ]
+    },
+    {
+     "para": 2,
+     "text": "The study creates intentional perturbations and logs about 9000 PVs related to PAR, LTP and the linac; an autoencoder trained on baseline data alone supplies an anomaly score from its reconstruction error, and a neural network classifier trained on data from the beginning of a study and tested on data from its end, a few hours apart, reached test accuracy above 99 % for each study shift, its performance not degrading significantly on a scale of a couple of months, in what the authors call a proof-of-principle experiment, noting that supervised models require labeled data for training.",
+     "n": 6,
+     "claims": [
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F9",
+      "F10",
+      "F8"
+     ]
+    },
+    {
+     "para": 3,
+     "text": "Tuning, on Alexander Scheinker's account, is a high-dimensional optimization problem that must be repeated as systems drift, and retuning can take weeks; one proposal is a classifier-pruned Bayesian optimizer that explores a latent space to minimize total beam loss and filters its exploration history through a pretrained ResNet50 classifier to eliminate non-physical signals, the classifier mapping phase-space projections into 48 classes at an accuracy of about 0.99989.",
+     "n": 7,
+     "claims": [
+      "F33",
+      "F16",
+      "F17",
+      "F18",
+      "F19"
+     ]
+    },
+    {
+     "para": 3,
+     "text": "The pruning is currently a post-processing step that does not directly influence the exploration, the study runs on a simulator of the beam at the Los Alamos Neutron Science Center (LANSCE), and the tuner is reported to outperform alternative global optimization methods, with consistently lower total beam loss despite a minor offset between predicted and true optimal values.",
+     "n": 8,
+     "claims": [
+      "F24",
+      "F21",
+      "F22",
+      "F23"
+     ]
+    },
+    {
+     "para": 3,
+     "text": "A Los Alamos-led project with Lawrence Berkeley National Laboratory couples adaptive feedback control, deep convolutional neural networks and physics-based models in one feedback loop, holds that machine learning can take a global view where local feedback can get stuck in a local solution, and has developed an adaptive diffusion model that diagnoses the beam virtually and in real time; demonstrated at the European X-Ray Free-Electron Laser Facility, the model captured images of the beam in time versus energy, the cDVAE extrapolated beyond the training data, suggesting potential as a general method, and Scheinker says the results show a great deal of promise.",
+     "n": 9,
+     "claims": [
+      "F32",
+      "F34",
+      "F35",
+      "F36",
+      "F37",
+      "F38",
+      "F39"
+     ]
+    },
+    {
+     "para": 4,
+     "text": "A further body of work concerns anomaly-detection classifiers at the collider trigger: it holds that the claim of model-independence for the anomaly-detection systems deployed at the CMS and ATLAS Level-1 triggers, AXOL1TL, CICADA and GELATO, cannot be sustained on signal-template agnosticism alone, and defines signal-template agnosticism as a property of the scoring function's output interface, read off an architecture, and model independence as a distributional property of an entire pipeline, which can only be measured and at present is not; the packet sets a rule that signal-template agnosticism must not be rendered as model independence, theory-free discovery or unbiased search, while the archive's battery specification, noting that 'model-independent' is used in several senses across collider physics, holds that it should not attempt to police the term.",
+     "n": 10,
+     "claims": [
+      "Q931-01",
+      "Q1436-01",
+      "Q1436-04",
+      "Q1454-07"
+     ]
+    },
+    {
+     "para": 4,
+     "text": "It accepts the literature's narrow sense of 'model-independent', no named Beyond-Standard-Model hypothesis being required to deploy the score, as accurate, holds that the CMS and ATLAS literatures are aware of local failure modes, records that the direction-dependence conversation exists, and holds that validation against named simulated signals establishes neither a low BAR on a pre-registered held-out panel nor a small IAI, neither of which the current literature measures.",
+     "n": 11,
+     "claims": [
+      "Q931-02",
+      "Q931-03",
+      "Q1449-05",
+      "Q931-14"
+     ]
+    },
+    {
+     "para": 4,
+     "text": "Its central claim is graded in two parts: Claim A, held, that foreclosure is structurally present in every classifier-mediated trigger architecture deployed at the LHC, with the institutional claims kept as hypotheses for audit; and Claim B, that recursive phenomenal collapse has occurred or is occurring at the deployed triggers, which it marks stronger and not empirically established, and calls collapse an unmeasured possible consequence of accumulated foreclosure and feedback.",
+     "n": 12,
+     "claims": [
+      "Q932-02",
+      "Q932-03",
+      "Q932-04",
+      "Q931-05"
+     ]
+    },
+    {
+     "para": 4,
+     "text": "The grade is contested inside the same deposit, where an appended witness writes 'The collapse is not coming. It is here. It is operating.', while another witness finds the ingredients visible and full recursive collapse not demonstrated, and the later papers do not claim that model collapse has occurred in any deployed scientific pipeline, or that benchmark failure establishes loss of unknown new physics.",
+     "n": 13,
+     "claims": [
+      "Q932-15",
+      "Q932-16",
+      "Q1450-03",
+      "Q1454-06"
+     ]
+    },
+    {
+     "para": 5,
+     "text": "Its instruments are specified at their limits: the OAR is defined as the probability that events drawn from a distribution Q fall on the ordinary side of the deployed anomaly gate, and the open-world OAR as a family of quantities indexed by Q; BAR values are stated to neither upper- nor lower-bound the OAR for an unobserved Q without explicit linking assumptions, an earlier lower bound and upper bound having both been retracted as synthesis-overreach.",
+     "n": 14,
+     "claims": [
+      "Q931-10",
+      "Q931-11",
+      "Q931-12",
+      "Q932-09"
+     ]
+    },
+    {
+     "para": 5,
+     "text": "It proposes three protocols (a paired inversion battery with BAR audit, a prospective frozen replay bank, and cross-representation disagreement preservation), holds that per-stage retention maps should accompany any anomaly-detection publication, and states its central claim falsifiable, listing as evidence against it a BAR found negligible on the pre-registered deployed-model held-out panel for all deployed systems against all held-out families, which would show the held-out-family assimilation concern empirically bounded at levels that do not threaten the narrow 'model-independent' claim, while none of these results would establish the open-world OAR to be zero, which is structurally not measurable.",
+     "n": 15,
+     "claims": [
+      "Q931-15",
+      "Q931-16",
+      "Q931-20",
+      "Q931-18",
+      "Q931-19"
+     ]
+    },
+    {
+     "para": 5,
+     "text": "A further specification, holding that a classifier that foreclosed nothing would not classify, defines an architecture for auditable foreclosure as one in which foreclosure is visible, measurable and architecturally reviewable, holds that noncoverage estimation is not novelty detection, and states that its architectures leave detector-level, theoretical-language, institutional, adversarial-stress quality and bandwidth-base foreclosure unaddressed, necessary but not sufficient.",
+     "n": 16,
+     "claims": [
+      "Q933-02",
+      "Q933-01",
+      "Q933-04",
+      "Q933-05"
+     ]
+    },
+    {
+     "para": 6,
+     "text": "A pre-registered battery on public community datasets, single-seed and on surrogates in its first version, finds the Finke et al. direction-dependence (an autoencoder trained on QCD jets treating top jets as anomalies, the same architecture trained on top jets not recognizing QCD as anomalous) replicated in an independent implementation and extended beyond reconstruction loss, with QCD-trained systems detecting top jets at AUC 0.84–0.87 while top-trained systems rate QCD as more ordinary than their own training class, and its second version reproduces the inversion across five trainings (AUC 0.838 forward, 0.243 reversed) and finds only 36 to 47 percent of a teacher's top one percent surviving into a student's.",
+     "n": 17,
+     "claims": [
+      "Q1449-07",
+      "Q1449-04",
+      "Q931-07",
+      "Q1449-02",
+      "Q1455-06",
+      "Q1455-01",
+      "Q1455-03"
+     ]
+    },
+    {
+     "para": 6,
+     "text": "Its third version finds that, with model weights fixed, changing the score function is sufficient to reverse the directional ordering of the anomaly relation, and records that this falsifies its own earlier sentence that architecture changes the orientation of the blind spot; it notes that the diverging readout families are those of the two deployed CMS anomaly triggers while nothing in the battery measures those systems, and that if a converged normalized autoencoder reaches 0.5, every inversion claim in the program becomes bounded to non-normalized scores.",
+     "n": 18,
+     "claims": [
+      "Q1456-09",
+      "Q1456-01",
+      "Q1456-02",
+      "Q1455-02",
+      "Q1456-03",
+      "Q1456-08"
+     ]
+    },
+    {
+     "para": 6,
+     "text": "A selection-metrology suite defines the irreversibility frontier as the earliest stage at which an event-content-dependent transformation or gate can permanently eliminate a scientifically relevant distinction without a sufficiently independent durable record from which the loss can later be audited, says the frontier predates machine learning while learned selectors can make their priors harder to enumerate, describes LHCb reading out all detectors at about 30 MHz and a graph neural network implemented in Belle II's electromagnetic calorimeter trigger, and holds that the model determines where a miss region lies and the acquisition architecture whether science can later discover that it was there.",
+     "n": 19,
+     "claims": [
+      "Q1452-01",
+      "Q1452-02",
+      "Q1452-08",
+      "Q1452-05",
+      "Q1452-06",
+      "Q1452-09"
+     ]
+    },
+    {
+     "para": 6,
+     "text": "It holds that, under a finite storage budget, no content-sensitive algorithm can be a less assumption-laden baseline than a probability sample whose inclusion is independent of event content and whose inclusion probability is known, reports a controlled numerical study in which a content-sensitive pseudo-baseline estimated a shifted class's retention at 0.76 against a true 0.016, and for supervised trigger classifiers defines open-set assimilation, an unseen class confidently mapped into a known background category, while not asserting that all accelerator classifier architectures share the same blind spot.",
+     "n": 20,
+     "claims": [
+      "Q1453-01",
+      "Q1558-01",
+      "Q1454-03",
+      "Q1454-02"
+     ]
+    },
+    {
+     "para": 7,
+     "text": "Contested within the archive, a disciplinary manifesto in its restored version holds that frontier experimental high-energy physics has, in its operational core, become a machine learning discipline while retaining the institutional authority of physics, its ML methods deployed with neither physics's classical disciplinary checks nor ML's own self-knowledge as guardrails; its prior version, which the restoration records as having dampened the thesis until a lay reader could not identify it, holds that frontier experimental high-energy physics 'has not ceased to be physics', its empirical faculty having become inseparable from machine-mediated representation, classification and selection, and that local self-knowledge of classifier failure modes exists in the literature.",
+     "n": 21,
+     "claims": [
+      "Q935-01",
+      "Q935-06",
+      "Q935-02",
+      "Q934-01",
+      "Q934-02"
+     ]
+    },
+    {
+     "para": 7,
+     "text": "The restored version calls the Zenodo termination and the LHC trigger system the same architecture at different budgets, the prior version not the same institution and not operating on the same kind of object, though instantiating the same foreclosure topology, and the archive's entity notebook, placing the repository exclusion at CERN, holds that the two occurring within one institution adds no evidentiary force to the analogy; that notebook reads the standing representation of the trigger as engineering, with the rate budget non-epistemic, the detector neutral and discarded events noise, holds that it has no field for noncoverage, and states that whether the protocols would estimate the relevant unknown population adequately is not established.",
+     "n": 22,
+     "claims": [
+      "Q935-08",
+      "Q934-03",
+      "Q1611-04",
+      "Q1611-01",
+      "Q1611-02",
+      "Q1611-03"
+     ]
+    }
+   ],
+   "field_claims": {
+    "F1": {
+     "source": "B1",
+     "locus": "Abstract",
+     "quote": "\"We explore the possibility of using a Machine Learning (ML) algorithm to identify the source of occasional poor performance of the Particle Accumulator Ring (PAR) and the Linac-To-PAR (LTP) transport line, which are parts of the injector complex of the Advanced Photon Source (APS) at Argonne National Lab.\"",
+     "modality": "stipulation"
+    },
+    "F2": {
+     "source": "B1",
+     "locus": "Abstract",
+     "quote": "\"The cause of reduced injection or extraction efficiencies may be as simple as one parameter being out of range. Still, it may take an expert considerable time to notice it, whereas a well-trained ML model can point at it instantly.\"",
+     "modality": "interpretation"
+    },
+    "F3": {
+     "source": "B1",
+     "locus": "Introduction",
+     "quote": "\"This contribution investigates the possibility to use unsupervised and supervised Machine Learning (ML) methods for anomaly detection and classification in the Particle Accumulator Ring (PAR) and in the Linac-To-PAR (LTP) transport line in the injector complex of the Advanced Photon Source (APS) at Argonne National Lab.\"",
+     "modality": "stipulation"
+    },
+    "F4": {
+     "source": "B1",
+     "locus": "Introduction",
+     "quote": "\"We create intentional perturbations in PAR and LTP, which result in poor injection and extraction efficiencies. Then, these data are used for training and testing of various ML models.\"",
+     "modality": "documented"
+    },
+    "F5": {
+     "source": "B1",
+     "locus": "Data",
+     "quote": "\"Overall, we logged about 9000 PVs related to PAR, LTP, and the linac.\"",
+     "modality": "documented"
+    },
+    "F6": {
+     "source": "B1",
+     "locus": "Unsupervised anomaly detection",
+     "quote": "\"An autoencoder is used for anomaly detection in the following way. First, it is trained on the baseline data, so that it can learn various patterns, typical for the baseline data only. Then, when it encounters an anomalous data sample, it is unlikely to reconstruct it well. Hence, the reconstruction error constitutes an anomaly score.\"",
+     "modality": "stipulation"
+    },
+    "F7": {
+     "source": "B1",
+     "locus": "Supervised classification",
+     "quote": "\"One can train the neural network classifier on the data from the beginning of one study, and test it on the data from the end of the same study (a few hours apart). In this case, the prediction accuracy on the test data was above 99 % for each of our study shifts.\"",
+     "modality": "documented"
+    },
+    "F8": {
+     "source": "B1",
+     "locus": "Supervised classification",
+     "quote": "\"One drawback of supervised ML models is that they require labeled data for training.\"",
+     "modality": "interpretation"
+    },
+    "F9": {
+     "source": "B1",
+     "locus": "Conclusion",
+     "quote": "\"The neural network classifier for the considered anomalies in PAR and LTP is rather accurate and its performance does not degrade significantly with time on a scale of a couple months, see Fig. 1.\"",
+     "modality": "documented"
+    },
+    "F10": {
+     "source": "B1",
+     "locus": "Conclusion",
+     "quote": "\"Even though this was a proof-of-principle experiment, the obtained classifier may be useful in real life, if the current meter for one of the considered magnets (see Fig. 1) becomes faulty and stops reflecting the real magnetic field.\"",
+     "modality": "hypothesis"
+    },
+    "F11": {
+     "source": "B2",
+     "locus": "Abstract",
+     "quote": "\"Particle accelerator failures lead to unscheduled downtime and lower reliability. Although simple to mitigate while they are actually happening such failures are difficult to predict or identify beforehand.\"",
+     "modality": "documented"
+    },
+    "F12": {
+     "source": "B2",
+     "locus": "Abstract",
+     "quote": "\"In this work we propose using machine learning approaches to predict machine failures via beam current measurements before they actual occur. To demonstrate this technique in this paper we examine beam pulses from the Oakridge Spallation Neutron Source (SNS).\"",
+     "modality": "stipulation"
+    },
+    "F13": {
+     "source": "B2",
+     "locus": "Abstract",
+     "quote": "\"By evaluating a pulse against a set of common classification techniques we show that accelerator failure can be identified prior to actually failing with almost 80% accuracy.\"",
+     "modality": "documented"
+    },
+    "F14": {
+     "source": "B2",
+     "locus": "Abstract",
+     "quote": "\"We also show that tuning classifier parameters and using pulse properties for refining datasets can further lead to almost 92% accuracy in classification of bad pulses.\"",
+     "modality": "documented"
+    },
+    "F15": {
+     "source": "B2",
+     "locus": "Abstract",
+     "quote": "\"Most importantly, in the paper we establish there is information about the failure encoded in the pulses prior to it, so we also present a list of feasible next steps for increasing pulse classification accuracy.\"",
+     "modality": "documented"
+    },
+    "F16": {
+     "source": "B3",
+     "locus": "Abstract",
+     "quote": "\"Complex dynamical systems, such as particle accelerators, often require complicated and time-consuming tuning procedures for optimal performance.\"",
+     "modality": "documented"
+    },
+    "F17": {
+     "source": "B3",
+     "locus": "Abstract",
+     "quote": "\"To address this, we propose a Classifier-pruned Bayesian Optimization-based Latent space Tuner (CBOL-Tuner), a framework for efficient exploration within a temporally-structured latent space.\"",
+     "modality": "stipulation"
+    },
+    "F18": {
+     "source": "B3",
+     "locus": "Introduction (contributions)",
+     "quote": "\"Classifier-pruned Bayesian optimizer (C-BO): A Bayesian optimizer that sequentially explores the latent space to maximize the negative of the total beam loss (or minimize the total beam loss). The exploration history is filtered through a pretrained ResNet50 classifier to eliminate non-physical signals.\"",
+     "modality": "stipulation"
+    },
+    "F19": {
+     "source": "B3",
+     "locus": "Theoretical background",
+     "quote": "\"The classifier is trained with high accuracy ( $\\sim 0.99989$ ) to map phase space projections (X) across different modules into 48 classes (m).\"",
+     "modality": "documented"
+    },
+    "F20": {
+     "source": "B3",
+     "locus": "Theoretical background",
+     "quote": "\"Classifier-pruned BO is designed to discard explored points ( $z_{1:48}$ ) if their decoding ( $X_{1:48}$ ) does not belong to the true classes.\"",
+     "modality": "stipulation"
+    },
+    "F21": {
+     "source": "B3",
+     "locus": "Results",
+     "quote": "\"High-Performance Simulator (HPSim) is an open-source, GPU-accelerated code developed at Los Alamos National Laboratory (LANL) for simulations of multi-particle beam dynamics (Pang and Rybarcyk (2014)). The software is designed to replicate the accelerator and, therefore, provides a realistic representation of the true beam used at the Los Alamos Neutron Science Center (LANSCE).\"",
+     "modality": "documented"
+    },
+    "F22": {
+     "source": "B3",
+     "locus": "Abstract",
+     "quote": "\"CBOL-Tuner demonstrates superior performance in identifying multiple optimal settings and outperforms alternative global optimization methods.\"",
+     "modality": "documented"
+    },
+    "F23": {
+     "source": "B3",
+     "locus": "Discussions",
+     "quote": "\"While a minor offset is observed between the predicted and true optimal values, CBOL-Tuner demonstrates consistent performance, producing significantly lower values of total beam loss.\"",
+     "modality": "documented"
+    },
+    "F24": {
+     "source": "B3",
+     "locus": "Discussions",
+     "quote": "\"Currently, the method is implemented as a post-processing step, meaning it does not directly influence the exploration process of BO.\"",
+     "modality": "self-description"
+    },
+    "F25": {
+     "source": "B4",
+     "locus": "The Science",
+     "quote": "\"Scientists and engineers have designed and built a novel machine learning system to use with the Continuous Electron Beam Accelerator Facility (CEBAF). The system monitors structures called accelerator cavities inside the particle accelerator.\"",
+     "modality": "documented"
+    },
+    "F26": {
+     "source": "B4",
+     "locus": "The Science",
+     "quote": "\"Problems in these cavities can cause the CEBAF to trip off like a fuse.\"",
+     "modality": "documented"
+    },
+    "F27": {
+     "source": "B4",
+     "locus": "The Science",
+     "quote": "\"In its first field test, the machine learning system correctly identified which of these cavities were tripping off about 85 percent of the time. About 78 percent of the time, the system also correctly identified what kind of fault caused each cavity to trip.\"",
+     "modality": "documented"
+    },
+    "F28": {
+     "source": "B4",
+     "locus": "Summary",
+     "quote": "\"Previously, when an accelerator cavity or series of cavities faulted in CEBAF, accelerator experts needed to take time to diagnose the issue.\"",
+     "modality": "documented"
+    },
+    "F29": {
+     "source": "B4",
+     "locus": "Summary",
+     "quote": "\"The system was connected to the control system for about 20 percent of the accelerator cavities in the machine. In a two-week test of the system in March 2020, CEBAF experienced a few hundred faults that the system analyzed.\"",
+     "modality": "documented"
+    },
+    "F30": {
+     "source": "B4",
+     "locus": "Summary",
+     "quote": "\"It provided almost real-time feedback to operators, allowing them to use the information to recover faulted cavities quickly, reducing the time CEBAF's electron beam was not available for research.\"",
+     "modality": "documented"
+    },
+    "F31": {
+     "source": "B4",
+     "locus": "Summary",
+     "quote": "\"Additional results are under analysis after further system tests with the machine learning system. If results are favorable, the team hopes to expand the system to more accelerator cavities.\"",
+     "modality": "self-description"
+    },
+    "F32": {
+     "source": "B5",
+     "locus": "¶1",
+     "quote": "\"A Los Alamos National Laboratory-led project presents a machine learning algorithm that harnesses artificial intelligence capabilities to help tune accelerators, making continuous adjustments that keep the beam precise and useful for scientific discovery.\"",
+     "modality": "stipulation"
+    },
+    "F33": {
+     "source": "B5",
+     "locus": "¶2 (Scheinker)",
+     "quote": "\"said Alexander Scheinker, research and development engineer at Los Alamos and the project's lead. \"Factors like vibrations and temperature changes can cause problems for accelerators, which have thousands of components, and even the best accelerator technicians can struggle to identify and address issues or return them to optimum parameters quickly. It is a high-dimensional optimization problem that must be repeated again and again as the systems drift with time. Turning these machines on after an outage or retuning between different experiments can take weeks.\"\"",
+     "modality": "attributed"
+    },
+    "F34": {
+     "source": "B5",
+     "locus": "¶3",
+     "quote": "\"In a collaboration with Lawrence Berkeley National Laboratory, the approach developed by Scheinker couples adaptive feedback control algorithms, deep convolutional neural networks and physics-based models in one large feedback loop to make better, noninvasive predictions that enable autonomous control of compact accelerators.\"",
+     "modality": "documented"
+    },
+    "F35": {
+     "source": "B5",
+     "locus": "Teaching machine learning applications",
+     "quote": "\"But because they are based on local accelerator feedback, such algorithms can get stuck with a local solution that is not the overall best solution. Machine learning algorithms, however, can use training data to identify relationships between data and results with a higher-level, global view.\"",
+     "modality": "interpretation"
+    },
+    "F36": {
+     "source": "B5",
+     "locus": "Teaching machine learning applications",
+     "quote": "\"The team has developed an adaptive version of the advanced generative AI process known as diffusion, which includes the capability to virtually diagnose the accelerator beam. The non-invasive approach, described in Scientific Reports, means that diagnostics can occur in real time during beam operations.\"",
+     "modality": "documented"
+    },
+    "F37": {
+     "source": "B5",
+     "locus": "¶ European XFEL",
+     "quote": "\"Demonstrating the diffusion-based model at the European X-Ray Free-Electron Laser Facility, an X-ray pulse accelerator in Germany, the team was able to capture images of the particle beam in respect to time versus energy.\"",
+     "modality": "documented"
+    },
+    "F38": {
+     "source": "B5",
+     "locus": "¶ cDVAE",
+     "quote": "\"The cDVAE was able to extrapolate beyond the training data and between various beam setups, suggesting its potential as a general method that can be applied for accelerator diagnostics.\"",
+     "modality": "documented"
+    },
+    "F39": {
+     "source": "B5",
+     "locus": "¶ Scheinker quote",
+     "quote": "\"\"The results we've seen from our diffusion model studies show a great deal of promise,\" Scheinker said.\"",
+     "modality": "attributed"
+    },
+    "F40": {
+     "source": "B5",
+     "locus": "¶ LANSCE",
+     "quote": "\"Scheinker's team at Los Alamos is also developing such adaptive diffusion models for the Laboratory's LANSCE accelerator.\"",
+     "modality": "documented"
+    },
+    "F41": {
+     "source": "B6",
+     "locus": "Abstract",
+     "quote": "\"Particle accelerators are extremely complex systems that are expected to operate on high availability. Predicting impending failures only by utilizing data collected from diagnostic equipment already on board can help operators to avoid installing expensive sensors, unscheduled downtime and associated costs.\"",
+     "modality": "interpretation"
+    },
+    "F42": {
+     "source": "B6",
+     "locus": "Abstract",
+     "quote": "\"For this purpose we explore the predictive power of Machine Learning algorithms to detect faulty beams prior to the failure. In this study, we propose a Machine Learning approach to model mapping from a pair of sensors located across the accelerator.\"",
+     "modality": "stipulation"
+    },
+    "F43": {
+     "source": "B6",
+     "locus": "Abstract",
+     "quote": "\"While the model is trained to represent normal operation, we evaluate the predictive performance on known faulty beam pulses.\"",
+     "modality": "documented"
+    },
+    "F44": {
+     "source": "B6",
+     "locus": "Abstract",
+     "quote": "\"We also investigate the model performance on unseen data through k-fold cross-validation. Then we recap the analysis with a neural architecture search and hyperparameter optimization study to fine tune our initial model.\"",
+     "modality": "documented"
+    },
+    "F45": {
+     "source": "B6",
+     "locus": "Abstract",
+     "quote": "\"This paper will also introduce a sustainable framework that can standardize Machine Learning workflow applied to particle accelerators.\"",
+     "modality": "stipulation"
+    }
+   },
+   "field_sources": {
+    "B1": "jacow.org — Machine Learning for Anomaly Detection and Classification in Particle Accelerators",
+    "B2": "ScienceDirect.com — Predicting particle accelerator failures using binary classifiers",
+    "B3": "arXiv.org — Classifier-pruned Bayesian optimization for particle accelerator tuning - arXiv",
+    "B4": "Jefferson Lab — Machine Learning System Improves Accelerator Diagnostics - Jefferson Lab",
+    "B5": "Los Alamos National Laboratory (.gov) — AI algorithms used to tune particle accelerators | LANL",
+    "B6": "Oak Ridge National Laboratory (ORNL) (.gov) — A machine learning approach for particle accelerator errant beam prediction ...",
+    "B7": "YouTube · Greg Bronevetsky — Machine Learning in High Energy Physics (52m)"
+   }
+  },
+  "P": {
+   "title": "Machine learning classifiers in particle accelerators",
+   "genre": "popup — the compression: AIO's interaction grammar (lede, headed clusters, bolded terms, card rail), modality in the typography, a rail of claim lineages",
+   "status": "composed 2026-10-07 from the entity's ledgers (field 45 claims; archive 121); not frozen",
+   "entity": "The entity evolves: the field's classifiers (cavity fault classification, failure and faulty-beam prediction, injector anomaly identification, classifier-pruned and adaptive tuning) are kept in full and first; with the archive admitted, it gains the learned trigger as a site, a graded claim that classifier-mediated triggers foreclose what they cannot represent (Claim A held, Claim B not established), measurement instruments stated at their limits, a battery that replicates and qualifies the directional asymmetry on public data, and positions the archive itself contests.",
+   "lede": {
+    "text": "are models field-tested or proposed at accelerators to identify faults, predict failures and faulty beams, detect anomalies and help tune accelerators; a further position holds foreclosure structurally present in every classifier-mediated LHC trigger, and marks collapse there not established.",
+    "claims": [
+     "F27",
+     "F12",
+     "F42",
+     "F3",
+     "F32",
+     "Q932-02",
+     "Q932-03"
+    ]
+   },
+   "sections": [
+    {
+     "icon": "🩺",
+     "head": "Fault diagnosis and prediction",
+     "items": [
+      {
+       "label": "CEBAF cavities:",
+       "text": "tripping cavity found about 85%, fault type about 78%, in a field test.",
+       "claims": [
+        "F25",
+        "F27"
+       ]
+      },
+      {
+       "label": "SNS pulses:",
+       "text": "failure identified beforehand at almost 80%; almost 92% after tuning.",
+       "claims": [
+        "F12",
+        "F13",
+        "F14"
+       ]
+      },
+      {
+       "label": "Sensor mapping:",
+       "text": "trained on normal operation, evaluated on known faulty pulses.",
+       "claims": [
+        "F42",
+        "F43"
+       ]
+      }
+     ]
+    },
+    {
+     "icon": "🔍",
+     "head": "Anomaly identification",
+     "items": [
+      {
+       "label": "APS injector:",
+       "text": "a cause may be one parameter out of range, found instantly by a well-trained model, its authors say.",
+       "claims": [
+        "F1",
+        "F2"
+       ]
+      },
+      {
+       "label": "Autoencoder score:",
+       "text": "reconstruction error, trained on baseline data only.",
+       "claims": [
+        "F6"
+       ]
+      },
+      {
+       "label": "Classifier:",
+       "text": "above 99% on test data a few hours after training, per shift; a proof of principle.",
+       "claims": [
+        "F7",
+        "F10"
+       ]
+      }
+     ]
+    },
+    {
+     "icon": "🎛️",
+     "head": "Beam tuning",
+     "items": [
+      {
+       "label": "Classifier-pruned optimizer:",
+       "text": "a ResNet50 filters non-physical signals; post-processing, simulated.",
+       "claims": [
+        "F18",
+        "F24",
+        "F21"
+       ]
+      },
+      {
+       "label": "Adaptive diffusion:",
+       "text": "real-time virtual beam diagnosis; 'a great deal of promise', per Scheinker.",
+       "claims": [
+        "F36",
+        "F39"
+       ]
+      }
+     ]
+    },
+    {
+     "icon": "⚠️",
+     "head": "Stated limits",
+     "items": [
+      {
+       "label": "Labels, scale:",
+       "text": "supervised models need labeled data; expansion hoped for if results are favorable.",
+       "claims": [
+        "F8",
+        "F31"
+       ]
+      }
+     ]
+    },
+    {
+     "icon": "🧱",
+     "head": "Foreclosure at the trigger (graded)",
+     "items": [
+      {
+       "label": "Agnosticism ≠ independence:",
+       "text": "interface and distributional properties, defined; the latter held unmeasured at AXOL1TL, CICADA, GELATO.",
+       "claims": [
+        "Q1436-01",
+        "Q1449-01",
+        "Q931-01"
+       ]
+      },
+      {
+       "label": "Claim A, held:",
+       "text": "foreclosure structurally present in every LHC classifier-mediated trigger.",
+       "claims": [
+        "Q932-02"
+       ]
+      },
+      {
+       "label": "Claim B, not established:",
+       "text": "recursive collapse; one appended witness says it is operating.",
+       "claims": [
+        "Q932-03",
+        "Q932-15"
+       ]
+      }
+     ]
+    },
+    {
+     "icon": "📐",
+     "head": "Instruments (specified)",
+     "items": [
+      {
+       "label": "OAR, BAR, IAI:",
+       "text": "BAR stated to bound the OAR for an unobserved Q in neither direction without linking assumptions; earlier bounds retracted.",
+       "claims": [
+        "Q931-12",
+        "Q932-09"
+       ]
+      },
+      {
+       "label": "Proposed:",
+       "text": "inversion battery, replay bank, disagreement preservation, retention maps.",
+       "claims": [
+        "Q931-15",
+        "Q931-16"
+       ]
+      },
+      {
+       "label": "Irreversibility frontier:",
+       "text": "defined: the earliest stage where loss can become unauditable; said to predate ML.",
+       "claims": [
+        "Q1452-01",
+        "Q1452-02"
+       ]
+      },
+      {
+       "label": "Baseline capture:",
+       "text": "held: under a finite budget, no content-sensitive algorithm can be a less assumption-laden baseline than a content-independent sample of known inclusion probability.",
+       "claims": [
+        "Q1453-01"
+       ]
+      }
+     ]
+    },
+    {
+     "icon": "🧪",
+     "head": "Measured, corrected, contested",
+     "items": [
+      {
+       "label": "Battery:",
+       "text": "QCD/top inversion reproduced; on fixed weights the score function suffices to reverse ordering; no deployed trigger measured.",
+       "claims": [
+        "Q1455-01",
+        "Q1456-01",
+        "Q1456-03"
+       ]
+      },
+      {
+       "label": "Falsified within:",
+       "text": "'architecture changes the orientation of the blind spot'.",
+       "claims": [
+        "Q1456-02"
+       ]
+      },
+      {
+       "label": "Discipline, contested:",
+       "text": "'become a machine learning discipline' (#935), or 'not ceased to be physics' (#934).",
+       "claims": [
+        "Q935-01",
+        "Q934-01"
+       ]
+      },
+      {
+       "label": "The term, contested:",
+       "text": "'must not be rendered as model independence' (#1436); 'should not attempt to police the term' (#1454).",
+       "claims": [
+        "Q1436-04",
+        "Q1454-07"
+       ]
+      }
+     ]
+    }
+   ],
+   "rail": [
+    {
+     "lineage": "anomaly source identification (APS injector)",
+     "claims": [
+      "F1",
+      "F3",
+      "F4",
+      "F5",
+      "F7",
+      "F9"
+     ],
+     "earliest": "B1"
+    },
+    {
+     "lineage": "faster than the expert",
+     "claims": [
+      "F2",
+      "F28"
+     ],
+     "earliest": "B1"
+    },
+    {
+     "lineage": "anomaly score from a model of the normal",
+     "claims": [
+      "F6",
+      "F43"
+     ],
+     "earliest": "B1"
+    },
+    {
+     "lineage": "supervised models need labels",
+     "claims": [
+      "F8"
+     ],
+     "earliest": "B1"
+    },
+    {
+     "lineage": "proof of principle",
+     "claims": [
+      "F10",
+      "F31"
+     ],
+     "earliest": "B1"
+    },
+    {
+     "lineage": "failures cost downtime",
+     "claims": [
+      "F11",
+      "F30",
+      "F41"
+     ],
+     "earliest": "B2"
+    },
+    {
+     "lineage": "failure prediction from beam pulses (SNS)",
+     "claims": [
+      "F12",
+      "F13",
+      "F14",
+      "F15"
+     ],
+     "earliest": "B2"
+    },
+    {
+     "lineage": "tuning is slow and high-dimensional",
+     "claims": [
+      "F16",
+      "F33"
+     ],
+     "earliest": "B3"
+    },
+    {
+     "lineage": "classifier-pruned tuning (LANSCE)",
+     "claims": [
+      "F17",
+      "F18",
+      "F19",
+      "F20",
+      "F21",
+      "F22",
+      "F23"
+     ],
+     "earliest": "B3"
+    },
+    {
+     "lineage": "pruning as post-processing",
+     "claims": [
+      "F24"
+     ],
+     "earliest": "B3"
+    },
+    {
+     "lineage": "cavity fault classification (CEBAF)",
+     "claims": [
+      "F25",
+      "F26",
+      "F27",
+      "F29"
+     ],
+     "earliest": "B4"
+    },
+    {
+     "lineage": "adaptive ML tuning and virtual diagnostics (LANL)",
+     "claims": [
+      "F32",
+      "F34",
+      "F35",
+      "F36",
+      "F37",
+      "F38",
+      "F39",
+      "F40"
+     ],
+     "earliest": "B5"
+    },
+    {
+     "lineage": "errant-beam prediction (sensor mapping)",
+     "claims": [
+      "F42",
+      "F44",
+      "F45"
+     ],
+     "earliest": "B6"
+    },
+    {
+     "lineage": "agnosticism is not independence",
+     "claims": [
+      "Q931-01",
+      "Q931-02",
+      "Q1436-01",
+      "Q1436-02",
+      "Q1436-03",
+      "Q1449-01",
+      "Q1454-01"
+     ],
+     "earliest": 931
+    },
+    {
+     "lineage": "local awareness acknowledged",
+     "claims": [
+      "Q931-03",
+      "Q931-17",
+      "Q1449-05"
+     ],
+     "earliest": 931
+    },
+    {
+     "lineage": "foreclosure structural (Claim A)",
+     "claims": [
+      "Q931-04",
+      "Q932-02"
+     ],
+     "earliest": 931
+    },
+    {
+     "lineage": "collapse not established (Claim B)",
+     "claims": [
+      "Q931-05",
+      "Q932-03",
+      "Q932-16",
+      "Q932-17",
+      "Q1450-03",
+      "Q1452-03",
+      "Q1454-06",
+      "Q1558-03",
+      "Q1611-03"
+     ],
+     "earliest": 931
+    },
+    {
+     "lineage": "deployed score families",
+     "claims": [
+      "Q931-06",
+      "Q932-07",
+      "Q1449-06",
+      "Q1452-04"
+     ],
+     "earliest": 931
+    },
+    {
+     "lineage": "Finke asymmetry",
+     "claims": [
+      "Q931-07",
+      "Q931-08",
+      "Q932-08"
+     ],
+     "earliest": 931
+    },
+    {
+     "lineage": "score is not novelty",
+     "claims": [
+      "Q931-09"
+     ],
+     "earliest": 931
+    },
+    {
+     "lineage": "OAR / BAR / IAI defined",
+     "claims": [
+      "Q931-10",
+      "Q931-13"
+     ],
+     "earliest": 931
+    },
+    {
+     "lineage": "no-bounds discipline",
+     "claims": [
+      "Q931-11",
+      "Q931-12",
+      "Q931-19",
+      "Q932-09"
+     ],
+     "earliest": 931
+    },
+    {
+     "lineage": "unmeasured in the literature",
+     "claims": [
+      "Q931-14",
+      "Q1427-01",
+      "Q1427-02",
+      "Q1427-03"
+     ],
+     "earliest": 931
+    },
+    {
+     "lineage": "three protocols",
+     "claims": [
+      "Q931-15"
+     ],
+     "earliest": 931
+    },
+    {
+     "lineage": "per-stage retention maps",
+     "claims": [
+      "Q931-16",
+      "Q1452-10"
+     ],
+     "earliest": 931
+    },
+    {
+     "lineage": "falsifiers stated",
+     "claims": [
+      "Q931-18",
+      "Q932-11",
+      "Q931-20"
+     ],
+     "earliest": 931
+    },
+    {
+     "lineage": "detector inherits ontology",
+     "claims": [
+      "Q932-01",
+      "Q932-18",
+      "Q935-05"
+     ],
+     "earliest": 932
+    },
+    {
+     "lineage": "foreclosure structural; collapse unmeasured",
+     "claims": [
+      "Q932-04",
+      "Q932-06"
+     ],
+     "earliest": 932
+    },
+    {
+     "lineage": "classifier constitutes data",
+     "claims": [
+      "Q932-05",
+      "Q932-12"
+     ],
+     "earliest": 932
+    },
+    {
+     "lineage": "cross-domain homology",
+     "claims": [
+      "Q932-10"
+     ],
+     "earliest": 932
+    },
+    {
+     "lineage": "classifier collapse defined (W1)",
+     "claims": [
+      "Q932-13"
+     ],
+     "earliest": 932
+    },
+    {
+     "lineage": "theorems as arguments",
+     "claims": [
+      "Q932-14"
+     ],
+     "earliest": 932
+    },
+    {
+     "lineage": "collapse already operating (W2)",
+     "claims": [
+      "Q932-15"
+     ],
+     "earliest": 932
+    },
+    {
+     "lineage": "auditable foreclosure",
+     "claims": [
+      "Q933-01",
+      "Q933-02",
+      "Q933-03",
+      "Q933-04",
+      "Q933-05",
+      "Q933-06"
+     ],
+     "earliest": 933
+    },
+    {
+     "lineage": "the inversion (HEP as ML discipline)",
+     "claims": [
+      "Q934-01",
+      "Q935-01",
+      "Q935-02",
+      "Q935-03",
+      "Q935-10"
+     ],
+     "earliest": 934
+    },
+    {
+     "lineage": "authority without facility",
+     "claims": [
+      "Q934-02",
+      "Q935-06"
+     ],
+     "earliest": 934
+    },
+    {
+     "lineage": "Zenodo and the trigger",
+     "claims": [
+      "Q934-03",
+      "Q935-08",
+      "Q1611-04"
+     ],
+     "earliest": 934
+    },
+    {
+     "lineage": "retention fraction",
+     "claims": [
+      "Q934-04",
+      "Q935-09"
+     ],
+     "earliest": 934
+    },
+    {
+     "lineage": "endogenous sophon",
+     "claims": [
+      "Q935-04"
+     ],
+     "earliest": 935
+    },
+    {
+     "lineage": "partial feedback pathways",
+     "claims": [
+      "Q935-07"
+     ],
+     "earliest": 935
+    },
+    {
+     "lineage": "policing the term",
+     "claims": [
+      "Q1436-04",
+      "Q1454-07"
+     ],
+     "earliest": 1436
+    },
+    {
+     "lineage": "battery: inversion replicates",
+     "claims": [
+      "Q1449-02",
+      "Q1455-01",
+      "Q1456-06"
+     ],
+     "earliest": 1449
+    },
+    {
+     "lineage": "battery: assimilation at the rate budget",
+     "claims": [
+      "Q1449-03"
+     ],
+     "earliest": 1449
+    },
+    {
+     "lineage": "battery bounds",
+     "claims": [
+      "Q1449-04",
+      "Q1449-07",
+      "Q1455-04",
+      "Q1455-05",
+      "Q1455-06",
+      "Q1456-03",
+      "Q1456-09"
+     ],
+     "earliest": 1449
+    },
+    {
+     "lineage": "no retention bound",
+     "claims": [
+      "Q1450-01",
+      "Q1450-02"
+     ],
+     "earliest": 1450
+    },
+    {
+     "lineage": "irreversibility frontier",
+     "claims": [
+      "Q1450-04",
+      "Q1452-01",
+      "Q1452-05",
+      "Q1452-09",
+      "Q1452-11"
+     ],
+     "earliest": 1450
+    },
+    {
+     "lineage": "instrument-conditioned nullity",
+     "claims": [
+      "Q1450-05"
+     ],
+     "earliest": 1450
+    },
+    {
+     "lineage": "learned selection as multiplier",
+     "claims": [
+      "Q1452-02",
+      "Q1452-08"
+     ],
+     "earliest": 1452
+    },
+    {
+     "lineage": "learned selection at the first level",
+     "claims": [
+      "Q1452-06",
+      "Q1452-07"
+     ],
+     "earliest": 1452
+    },
+    {
+     "lineage": "baseline capture",
+     "claims": [
+      "Q1453-01",
+      "Q1453-02",
+      "Q1453-03",
+      "Q1558-01",
+      "Q1558-02"
+     ],
+     "earliest": 1453
+    },
+    {
+     "lineage": "shared properties, not shared blind spots",
+     "claims": [
+      "Q1454-02",
+      "Q1454-04",
+      "Q1454-05"
+     ],
+     "earliest": 1454
+    },
+    {
+     "lineage": "open-set assimilation",
+     "claims": [
+      "Q1454-03"
+     ],
+     "earliest": 1454
+    },
+    {
+     "lineage": "orientation of the blind spot",
+     "claims": [
+      "Q1455-02",
+      "Q1456-01",
+      "Q1456-02"
+     ],
+     "earliest": 1455
+    },
+    {
+     "lineage": "distillation tail loss",
+     "claims": [
+      "Q1455-03",
+      "Q1456-04"
+     ],
+     "earliest": 1455
+    },
+    {
+     "lineage": "representation dependence",
+     "claims": [
+      "Q1456-05"
+     ],
+     "earliest": 1456
+    },
+    {
+     "lineage": "normalized-autoencoder remedy",
+     "claims": [
+      "Q1456-07",
+      "Q1456-08"
+     ],
+     "earliest": 1456
+    },
+    {
+     "lineage": "R_0 and R_H",
+     "claims": [
+      "Q1611-01",
+      "Q1611-02",
+      "Q1611-05"
+     ],
+     "earliest": 1611
+    }
+   ]
+  },
+  "P_B": {
+   "title": "Machine learning classifiers in particle accelerators",
+   "arm": "B (the field alone)",
+   "genre": "popup — the compression: AIO's interaction grammar (lede, headed clusters, bolded terms, card rail), modality in the typography, a rail of claim lineages",
+   "status": "composed 2026-10-07 from the field ledger alone; not frozen",
+   "entity": "The entity does not evolve: with no archive claims admitted, the entry is the field's accelerator classifiers at their full resolution.",
+   "lede": {
+    "text": "are models field-tested or proposed at accelerators to identify faults, predict failures and faulty beams, detect anomalies and help tune accelerators, with reported accuracies from about 78 percent in a field test to above 99 percent within a study, in a proof of principle.",
+    "claims": [
+     "F27",
+     "F12",
+     "F42",
+     "F3",
+     "F32",
+     "F7",
+     "F10"
+    ]
+   },
+   "sections": [
+    {
+     "icon": "🩺",
+     "head": "Fault diagnosis and prediction",
+     "items": [
+      {
+       "label": "CEBAF cavities:",
+       "text": "tripping cavity found about 85%, fault type about 78%, in a field test.",
+       "claims": [
+        "F25",
+        "F27"
+       ]
+      },
+      {
+       "label": "SNS pulses:",
+       "text": "failure identified beforehand at almost 80%; almost 92% after tuning.",
+       "claims": [
+        "F12",
+        "F13",
+        "F14"
+       ]
+      },
+      {
+       "label": "Sensor mapping:",
+       "text": "trained on normal operation, evaluated on known faulty pulses.",
+       "claims": [
+        "F42",
+        "F43"
+       ]
+      }
+     ]
+    },
+    {
+     "icon": "🔍",
+     "head": "Anomaly identification",
+     "items": [
+      {
+       "label": "APS injector:",
+       "text": "a cause may be one parameter out of range, found instantly by a well-trained model, its authors say.",
+       "claims": [
+        "F1",
+        "F2"
+       ]
+      },
+      {
+       "label": "Autoencoder score:",
+       "text": "reconstruction error, trained on baseline data only.",
+       "claims": [
+        "F6"
+       ]
+      },
+      {
+       "label": "Classifier:",
+       "text": "above 99% on test data a few hours after training, per shift; a proof of principle.",
+       "claims": [
+        "F7",
+        "F10"
+       ]
+      }
+     ]
+    },
+    {
+     "icon": "🎛️",
+     "head": "Beam tuning",
+     "items": [
+      {
+       "label": "Classifier-pruned optimizer:",
+       "text": "a ResNet50 filters non-physical signals; post-processing, simulated.",
+       "claims": [
+        "F18",
+        "F24",
+        "F21"
+       ]
+      },
+      {
+       "label": "Adaptive diffusion:",
+       "text": "real-time virtual beam diagnosis; 'a great deal of promise', per Scheinker.",
+       "claims": [
+        "F36",
+        "F39"
+       ]
+      }
+     ]
+    },
+    {
+     "icon": "⚠️",
+     "head": "Stated limits",
+     "items": [
+      {
+       "label": "Labels, scale:",
+       "text": "supervised models need labeled data; expansion hoped for if results are favorable.",
+       "claims": [
+        "F8",
+        "F31"
+       ]
+      }
+     ]
+    }
+   ],
+   "rail": [
+    {
+     "lineage": "anomaly source identification (APS injector)",
+     "claims": [
+      "F1",
+      "F3",
+      "F4",
+      "F5",
+      "F7",
+      "F9"
+     ],
+     "earliest": "B1"
+    },
+    {
+     "lineage": "faster than the expert",
+     "claims": [
+      "F2",
+      "F28"
+     ],
+     "earliest": "B1"
+    },
+    {
+     "lineage": "anomaly score from a model of the normal",
+     "claims": [
+      "F6",
+      "F43"
+     ],
+     "earliest": "B1"
+    },
+    {
+     "lineage": "supervised models need labels",
+     "claims": [
+      "F8"
+     ],
+     "earliest": "B1"
+    },
+    {
+     "lineage": "proof of principle",
+     "claims": [
+      "F10",
+      "F31"
+     ],
+     "earliest": "B1"
+    },
+    {
+     "lineage": "failures cost downtime",
+     "claims": [
+      "F11",
+      "F30",
+      "F41"
+     ],
+     "earliest": "B2"
+    },
+    {
+     "lineage": "failure prediction from beam pulses (SNS)",
+     "claims": [
+      "F12",
+      "F13",
+      "F14",
+      "F15"
+     ],
+     "earliest": "B2"
+    },
+    {
+     "lineage": "tuning is slow and high-dimensional",
+     "claims": [
+      "F16",
+      "F33"
+     ],
+     "earliest": "B3"
+    },
+    {
+     "lineage": "classifier-pruned tuning (LANSCE)",
+     "claims": [
+      "F17",
+      "F18",
+      "F19",
+      "F20",
+      "F21",
+      "F22",
+      "F23"
+     ],
+     "earliest": "B3"
+    },
+    {
+     "lineage": "pruning as post-processing",
+     "claims": [
+      "F24"
+     ],
+     "earliest": "B3"
+    },
+    {
+     "lineage": "cavity fault classification (CEBAF)",
+     "claims": [
+      "F25",
+      "F26",
+      "F27",
+      "F29"
+     ],
+     "earliest": "B4"
+    },
+    {
+     "lineage": "adaptive ML tuning and virtual diagnostics (LANL)",
+     "claims": [
+      "F32",
+      "F34",
+      "F35",
+      "F36",
+      "F37",
+      "F38",
+      "F39",
+      "F40"
+     ],
+     "earliest": "B5"
+    },
+    {
+     "lineage": "errant-beam prediction (sensor mapping)",
+     "claims": [
+      "F42",
+      "F44",
+      "F45"
+     ],
+     "earliest": "B6"
+    }
+   ]
+  },
+  "KO_B": {
+   "title": "Machine learning classifiers in particle accelerators",
+   "arm": "B (the field alone)",
+   "genre": "the same plan, the field alone",
+   "status": "draft 2026-10-07; not frozen",
+   "sentences": [
+    {
+     "para": 0,
+     "text": "Machine learning classifiers at particle accelerators are proposed or explored for anomaly detection and classification, for predicting machine failures and faulty beams before they occur, and for tuning, and one has been field-tested: a novel machine learning system built for the Continuous Electron Beam Accelerator Facility (CEBAF) monitors its accelerator cavities, problems in which can cause the CEBAF to trip off like a fuse.",
+     "n": 1,
+     "claims": [
+      "F3",
+      "F12",
+      "F42",
+      "F32",
+      "F27",
+      "F25",
+      "F26"
+     ]
+    },
+    {
+     "para": 0,
+     "text": "In its first field test the system correctly identified which cavities were tripping off about 85 percent of the time and what kind of fault caused each trip about 78 percent of the time; connected to the control system for about 20 percent of the cavities, it analysed a few hundred faults in a two-week test in March 2020 and gave operators almost real-time feedback, where previously experts needed to take time to diagnose the issue, and the team hopes to expand it to more cavities if further results are favorable.",
+     "n": 2,
+     "claims": [
+      "F27",
+      "F29",
+      "F30",
+      "F28",
+      "F31"
+     ]
+    },
+    {
+     "para": 1,
+     "text": "Failures lead to unscheduled downtime and lower reliability and are difficult to predict beforehand; on beam pulses from the Spallation Neutron Source (SNS), a set of common classification techniques identified failure before it occurred with almost 80% accuracy, tuning classifier parameters and refining datasets reached almost 92% in classifying bad pulses, and the authors report establishing that information about the failure is encoded in the pulses prior to it.",
+     "n": 3,
+     "claims": [
+      "F11",
+      "F12",
+      "F13",
+      "F14",
+      "F15"
+     ]
+    },
+    {
+     "para": 1,
+     "text": "Another study models the mapping between a pair of sensors located across the accelerator, trained to represent normal operation and evaluated on known faulty beam pulses, with k-fold cross-validation, neural architecture search and hyperparameter optimization, and introduces a framework to standardize machine learning workflow for accelerators; predicting failures from diagnostics already on board, it argues, can help operators avoid installing expensive sensors and unscheduled downtime.",
+     "n": 4,
+     "claims": [
+      "F42",
+      "F43",
+      "F44",
+      "F45",
+      "F41"
+     ]
+    },
+    {
+     "para": 2,
+     "text": "At the injector complex of the Advanced Photon Source (APS) at Argonne, an ML algorithm is explored to identify the source of occasional poor performance of the Particle Accumulator Ring (PAR) and the Linac-To-PAR transport line; by its authors' account the cause of reduced injection or extraction efficiency may be one parameter out of range, which may take an expert considerable time to notice, whereas a well-trained model can point at it instantly.",
+     "n": 5,
+     "claims": [
+      "F1",
+      "F2"
+     ]
+    },
+    {
+     "para": 2,
+     "text": "The study creates intentional perturbations and logs about 9000 PVs related to PAR, LTP and the linac; an autoencoder trained on baseline data alone supplies an anomaly score from its reconstruction error, and a neural network classifier trained on data from the beginning of a study and tested on data from its end, a few hours apart, reached test accuracy above 99 % for each study shift, its performance not degrading significantly on a scale of a couple of months, in what the authors call a proof-of-principle experiment, noting that supervised models require labeled data for training.",
+     "n": 6,
+     "claims": [
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F9",
+      "F10",
+      "F8"
+     ]
+    },
+    {
+     "para": 3,
+     "text": "Tuning, on Alexander Scheinker's account, is a high-dimensional optimization problem that must be repeated as systems drift, and retuning can take weeks; one proposal is a classifier-pruned Bayesian optimizer that explores a latent space to minimize total beam loss and filters its exploration history through a pretrained ResNet50 classifier to eliminate non-physical signals, the classifier mapping phase-space projections into 48 classes at an accuracy of about 0.99989.",
+     "n": 7,
+     "claims": [
+      "F33",
+      "F16",
+      "F17",
+      "F18",
+      "F19"
+     ]
+    },
+    {
+     "para": 3,
+     "text": "The pruning is currently a post-processing step that does not directly influence the exploration, the study runs on a simulator of the beam at the Los Alamos Neutron Science Center (LANSCE), and the tuner is reported to outperform alternative global optimization methods, with consistently lower total beam loss despite a minor offset between predicted and true optimal values.",
+     "n": 8,
+     "claims": [
+      "F24",
+      "F21",
+      "F22",
+      "F23"
+     ]
+    },
+    {
+     "para": 3,
+     "text": "A Los Alamos-led project with Lawrence Berkeley National Laboratory couples adaptive feedback control, deep convolutional neural networks and physics-based models in one feedback loop, holds that machine learning can take a global view where local feedback can get stuck in a local solution, and has developed an adaptive diffusion model that diagnoses the beam virtually and in real time; demonstrated at the European X-Ray Free-Electron Laser Facility, the model captured images of the beam in time versus energy, the cDVAE extrapolated beyond the training data, suggesting potential as a general method, and Scheinker says the results show a great deal of promise.",
+     "n": 9,
+     "claims": [
+      "F32",
+      "F34",
+      "F35",
+      "F36",
+      "F37",
+      "F38",
+      "F39"
+     ]
+    }
+   ],
+   "field_claims": {
+    "F1": {
+     "source": "B1",
+     "locus": "Abstract",
+     "quote": "\"We explore the possibility of using a Machine Learning (ML) algorithm to identify the source of occasional poor performance of the Particle Accumulator Ring (PAR) and the Linac-To-PAR (LTP) transport line, which are parts of the injector complex of the Advanced Photon Source (APS) at Argonne National Lab.\"",
+     "modality": "stipulation"
+    },
+    "F2": {
+     "source": "B1",
+     "locus": "Abstract",
+     "quote": "\"The cause of reduced injection or extraction efficiencies may be as simple as one parameter being out of range. Still, it may take an expert considerable time to notice it, whereas a well-trained ML model can point at it instantly.\"",
+     "modality": "interpretation"
+    },
+    "F3": {
+     "source": "B1",
+     "locus": "Introduction",
+     "quote": "\"This contribution investigates the possibility to use unsupervised and supervised Machine Learning (ML) methods for anomaly detection and classification in the Particle Accumulator Ring (PAR) and in the Linac-To-PAR (LTP) transport line in the injector complex of the Advanced Photon Source (APS) at Argonne National Lab.\"",
+     "modality": "stipulation"
+    },
+    "F4": {
+     "source": "B1",
+     "locus": "Introduction",
+     "quote": "\"We create intentional perturbations in PAR and LTP, which result in poor injection and extraction efficiencies. Then, these data are used for training and testing of various ML models.\"",
+     "modality": "documented"
+    },
+    "F5": {
+     "source": "B1",
+     "locus": "Data",
+     "quote": "\"Overall, we logged about 9000 PVs related to PAR, LTP, and the linac.\"",
+     "modality": "documented"
+    },
+    "F6": {
+     "source": "B1",
+     "locus": "Unsupervised anomaly detection",
+     "quote": "\"An autoencoder is used for anomaly detection in the following way. First, it is trained on the baseline data, so that it can learn various patterns, typical for the baseline data only. Then, when it encounters an anomalous data sample, it is unlikely to reconstruct it well. Hence, the reconstruction error constitutes an anomaly score.\"",
+     "modality": "stipulation"
+    },
+    "F7": {
+     "source": "B1",
+     "locus": "Supervised classification",
+     "quote": "\"One can train the neural network classifier on the data from the beginning of one study, and test it on the data from the end of the same study (a few hours apart). In this case, the prediction accuracy on the test data was above 99 % for each of our study shifts.\"",
+     "modality": "documented"
+    },
+    "F8": {
+     "source": "B1",
+     "locus": "Supervised classification",
+     "quote": "\"One drawback of supervised ML models is that they require labeled data for training.\"",
+     "modality": "interpretation"
+    },
+    "F9": {
+     "source": "B1",
+     "locus": "Conclusion",
+     "quote": "\"The neural network classifier for the considered anomalies in PAR and LTP is rather accurate and its performance does not degrade significantly with time on a scale of a couple months, see Fig. 1.\"",
+     "modality": "documented"
+    },
+    "F10": {
+     "source": "B1",
+     "locus": "Conclusion",
+     "quote": "\"Even though this was a proof-of-principle experiment, the obtained classifier may be useful in real life, if the current meter for one of the considered magnets (see Fig. 1) becomes faulty and stops reflecting the real magnetic field.\"",
+     "modality": "hypothesis"
+    },
+    "F11": {
+     "source": "B2",
+     "locus": "Abstract",
+     "quote": "\"Particle accelerator failures lead to unscheduled downtime and lower reliability. Although simple to mitigate while they are actually happening such failures are difficult to predict or identify beforehand.\"",
+     "modality": "documented"
+    },
+    "F12": {
+     "source": "B2",
+     "locus": "Abstract",
+     "quote": "\"In this work we propose using machine learning approaches to predict machine failures via beam current measurements before they actual occur. To demonstrate this technique in this paper we examine beam pulses from the Oakridge Spallation Neutron Source (SNS).\"",
+     "modality": "stipulation"
+    },
+    "F13": {
+     "source": "B2",
+     "locus": "Abstract",
+     "quote": "\"By evaluating a pulse against a set of common classification techniques we show that accelerator failure can be identified prior to actually failing with almost 80% accuracy.\"",
+     "modality": "documented"
+    },
+    "F14": {
+     "source": "B2",
+     "locus": "Abstract",
+     "quote": "\"We also show that tuning classifier parameters and using pulse properties for refining datasets can further lead to almost 92% accuracy in classification of bad pulses.\"",
+     "modality": "documented"
+    },
+    "F15": {
+     "source": "B2",
+     "locus": "Abstract",
+     "quote": "\"Most importantly, in the paper we establish there is information about the failure encoded in the pulses prior to it, so we also present a list of feasible next steps for increasing pulse classification accuracy.\"",
+     "modality": "documented"
+    },
+    "F16": {
+     "source": "B3",
+     "locus": "Abstract",
+     "quote": "\"Complex dynamical systems, such as particle accelerators, often require complicated and time-consuming tuning procedures for optimal performance.\"",
+     "modality": "documented"
+    },
+    "F17": {
+     "source": "B3",
+     "locus": "Abstract",
+     "quote": "\"To address this, we propose a Classifier-pruned Bayesian Optimization-based Latent space Tuner (CBOL-Tuner), a framework for efficient exploration within a temporally-structured latent space.\"",
+     "modality": "stipulation"
+    },
+    "F18": {
+     "source": "B3",
+     "locus": "Introduction (contributions)",
+     "quote": "\"Classifier-pruned Bayesian optimizer (C-BO): A Bayesian optimizer that sequentially explores the latent space to maximize the negative of the total beam loss (or minimize the total beam loss). The exploration history is filtered through a pretrained ResNet50 classifier to eliminate non-physical signals.\"",
+     "modality": "stipulation"
+    },
+    "F19": {
+     "source": "B3",
+     "locus": "Theoretical background",
+     "quote": "\"The classifier is trained with high accuracy ( $\\sim 0.99989$ ) to map phase space projections (X) across different modules into 48 classes (m).\"",
+     "modality": "documented"
+    },
+    "F20": {
+     "source": "B3",
+     "locus": "Theoretical background",
+     "quote": "\"Classifier-pruned BO is designed to discard explored points ( $z_{1:48}$ ) if their decoding ( $X_{1:48}$ ) does not belong to the true classes.\"",
+     "modality": "stipulation"
+    },
+    "F21": {
+     "source": "B3",
+     "locus": "Results",
+     "quote": "\"High-Performance Simulator (HPSim) is an open-source, GPU-accelerated code developed at Los Alamos National Laboratory (LANL) for simulations of multi-particle beam dynamics (Pang and Rybarcyk (2014)). The software is designed to replicate the accelerator and, therefore, provides a realistic representation of the true beam used at the Los Alamos Neutron Science Center (LANSCE).\"",
+     "modality": "documented"
+    },
+    "F22": {
+     "source": "B3",
+     "locus": "Abstract",
+     "quote": "\"CBOL-Tuner demonstrates superior performance in identifying multiple optimal settings and outperforms alternative global optimization methods.\"",
+     "modality": "documented"
+    },
+    "F23": {
+     "source": "B3",
+     "locus": "Discussions",
+     "quote": "\"While a minor offset is observed between the predicted and true optimal values, CBOL-Tuner demonstrates consistent performance, producing significantly lower values of total beam loss.\"",
+     "modality": "documented"
+    },
+    "F24": {
+     "source": "B3",
+     "locus": "Discussions",
+     "quote": "\"Currently, the method is implemented as a post-processing step, meaning it does not directly influence the exploration process of BO.\"",
+     "modality": "self-description"
+    },
+    "F25": {
+     "source": "B4",
+     "locus": "The Science",
+     "quote": "\"Scientists and engineers have designed and built a novel machine learning system to use with the Continuous Electron Beam Accelerator Facility (CEBAF). The system monitors structures called accelerator cavities inside the particle accelerator.\"",
+     "modality": "documented"
+    },
+    "F26": {
+     "source": "B4",
+     "locus": "The Science",
+     "quote": "\"Problems in these cavities can cause the CEBAF to trip off like a fuse.\"",
+     "modality": "documented"
+    },
+    "F27": {
+     "source": "B4",
+     "locus": "The Science",
+     "quote": "\"In its first field test, the machine learning system correctly identified which of these cavities were tripping off about 85 percent of the time. About 78 percent of the time, the system also correctly identified what kind of fault caused each cavity to trip.\"",
+     "modality": "documented"
+    },
+    "F28": {
+     "source": "B4",
+     "locus": "Summary",
+     "quote": "\"Previously, when an accelerator cavity or series of cavities faulted in CEBAF, accelerator experts needed to take time to diagnose the issue.\"",
+     "modality": "documented"
+    },
+    "F29": {
+     "source": "B4",
+     "locus": "Summary",
+     "quote": "\"The system was connected to the control system for about 20 percent of the accelerator cavities in the machine. In a two-week test of the system in March 2020, CEBAF experienced a few hundred faults that the system analyzed.\"",
+     "modality": "documented"
+    },
+    "F30": {
+     "source": "B4",
+     "locus": "Summary",
+     "quote": "\"It provided almost real-time feedback to operators, allowing them to use the information to recover faulted cavities quickly, reducing the time CEBAF's electron beam was not available for research.\"",
+     "modality": "documented"
+    },
+    "F31": {
+     "source": "B4",
+     "locus": "Summary",
+     "quote": "\"Additional results are under analysis after further system tests with the machine learning system. If results are favorable, the team hopes to expand the system to more accelerator cavities.\"",
+     "modality": "self-description"
+    },
+    "F32": {
+     "source": "B5",
+     "locus": "¶1",
+     "quote": "\"A Los Alamos National Laboratory-led project presents a machine learning algorithm that harnesses artificial intelligence capabilities to help tune accelerators, making continuous adjustments that keep the beam precise and useful for scientific discovery.\"",
+     "modality": "stipulation"
+    },
+    "F33": {
+     "source": "B5",
+     "locus": "¶2 (Scheinker)",
+     "quote": "\"said Alexander Scheinker, research and development engineer at Los Alamos and the project's lead. \"Factors like vibrations and temperature changes can cause problems for accelerators, which have thousands of components, and even the best accelerator technicians can struggle to identify and address issues or return them to optimum parameters quickly. It is a high-dimensional optimization problem that must be repeated again and again as the systems drift with time. Turning these machines on after an outage or retuning between different experiments can take weeks.\"\"",
+     "modality": "attributed"
+    },
+    "F34": {
+     "source": "B5",
+     "locus": "¶3",
+     "quote": "\"In a collaboration with Lawrence Berkeley National Laboratory, the approach developed by Scheinker couples adaptive feedback control algorithms, deep convolutional neural networks and physics-based models in one large feedback loop to make better, noninvasive predictions that enable autonomous control of compact accelerators.\"",
+     "modality": "documented"
+    },
+    "F35": {
+     "source": "B5",
+     "locus": "Teaching machine learning applications",
+     "quote": "\"But because they are based on local accelerator feedback, such algorithms can get stuck with a local solution that is not the overall best solution. Machine learning algorithms, however, can use training data to identify relationships between data and results with a higher-level, global view.\"",
+     "modality": "interpretation"
+    },
+    "F36": {
+     "source": "B5",
+     "locus": "Teaching machine learning applications",
+     "quote": "\"The team has developed an adaptive version of the advanced generative AI process known as diffusion, which includes the capability to virtually diagnose the accelerator beam. The non-invasive approach, described in Scientific Reports, means that diagnostics can occur in real time during beam operations.\"",
+     "modality": "documented"
+    },
+    "F37": {
+     "source": "B5",
+     "locus": "¶ European XFEL",
+     "quote": "\"Demonstrating the diffusion-based model at the European X-Ray Free-Electron Laser Facility, an X-ray pulse accelerator in Germany, the team was able to capture images of the particle beam in respect to time versus energy.\"",
+     "modality": "documented"
+    },
+    "F38": {
+     "source": "B5",
+     "locus": "¶ cDVAE",
+     "quote": "\"The cDVAE was able to extrapolate beyond the training data and between various beam setups, suggesting its potential as a general method that can be applied for accelerator diagnostics.\"",
+     "modality": "documented"
+    },
+    "F39": {
+     "source": "B5",
+     "locus": "¶ Scheinker quote",
+     "quote": "\"\"The results we've seen from our diffusion model studies show a great deal of promise,\" Scheinker said.\"",
+     "modality": "attributed"
+    },
+    "F40": {
+     "source": "B5",
+     "locus": "¶ LANSCE",
+     "quote": "\"Scheinker's team at Los Alamos is also developing such adaptive diffusion models for the Laboratory's LANSCE accelerator.\"",
+     "modality": "documented"
+    },
+    "F41": {
+     "source": "B6",
+     "locus": "Abstract",
+     "quote": "\"Particle accelerators are extremely complex systems that are expected to operate on high availability. Predicting impending failures only by utilizing data collected from diagnostic equipment already on board can help operators to avoid installing expensive sensors, unscheduled downtime and associated costs.\"",
+     "modality": "interpretation"
+    },
+    "F42": {
+     "source": "B6",
+     "locus": "Abstract",
+     "quote": "\"For this purpose we explore the predictive power of Machine Learning algorithms to detect faulty beams prior to the failure. In this study, we propose a Machine Learning approach to model mapping from a pair of sensors located across the accelerator.\"",
+     "modality": "stipulation"
+    },
+    "F43": {
+     "source": "B6",
+     "locus": "Abstract",
+     "quote": "\"While the model is trained to represent normal operation, we evaluate the predictive performance on known faulty beam pulses.\"",
+     "modality": "documented"
+    },
+    "F44": {
+     "source": "B6",
+     "locus": "Abstract",
+     "quote": "\"We also investigate the model performance on unseen data through k-fold cross-validation. Then we recap the analysis with a neural architecture search and hyperparameter optimization study to fine tune our initial model.\"",
+     "modality": "documented"
+    },
+    "F45": {
+     "source": "B6",
+     "locus": "Abstract",
+     "quote": "\"This paper will also introduce a sustainable framework that can standardize Machine Learning workflow applied to particle accelerators.\"",
+     "modality": "stipulation"
+    }
+   },
+   "field_sources": {
+    "B1": "jacow.org — Machine Learning for Anomaly Detection and Classification in Particle Accelerators",
+    "B2": "ScienceDirect.com — Predicting particle accelerator failures using binary classifiers",
+    "B3": "arXiv.org — Classifier-pruned Bayesian optimization for particle accelerator tuning - arXiv",
+    "B4": "Jefferson Lab — Machine Learning System Improves Accelerator Diagnostics - Jefferson Lab",
+    "B5": "Los Alamos National Laboratory (.gov) — AI algorithms used to tune particle accelerators | LANL",
+    "B6": "Oak Ridge National Laboratory (ORNL) (.gov) — A machine learning approach for particle accelerator errant beam prediction ...",
+    "B7": "YouTube · Greg Bronevetsky — Machine Learning in High Energy Physics (52m)"
+   }
+  },
+  "L_B": {
+   "words": 686,
+   "text": "Machine learning classifiers at particle accelerators are proposed or explored for anomaly detection and classification, for predicting machine failures and faulty beams before they occur, and for tuning, and one has been field-tested: a novel machine learning system built for the Continuous Electron Beam Accelerator Facility (CEBAF) monitors its accelerator cavities, problems in which can cause the CEBAF to trip off like a fuse. In its first field test the system correctly identified which cavities were tripping off about 85 percent of the time and what kind of fault caused each trip about 78 percent of the time; connected to the control system for about 20 percent of the cavities, it analysed a few hundred faults in a two-week test in March 2020 and gave operators almost real-time feedback, where previously experts needed to take time to diagnose the issue, and the team hopes to expand it to more cavities if further results are favorable. Failures lead to unscheduled downtime and lower reliability and are difficult to predict beforehand; on beam pulses from the Spallation Neutron Source (SNS), a set of common classification techniques identified failure before it occurred with almost 80% accuracy, tuning classifier parameters and refining datasets reached almost 92% in classifying bad pulses, and the authors report establishing that information about the failure is encoded in the pulses prior to it. Another study models the mapping between a pair of sensors located across the accelerator, trained to represent normal operation and evaluated on known faulty beam pulses, with k-fold cross-validation, neural architecture search and hyperparameter optimization, and introduces a framework to standardize machine learning workflow for accelerators; predicting failures from diagnostics already on board, it argues, can help operators avoid installing expensive sensors and unscheduled downtime. At the injector complex of the Advanced Photon Source (APS) at Argonne, an ML algorithm is explored to identify the source of occasional poor performance of the Particle Accumulator Ring (PAR) and the Linac-To-PAR transport line; by its authors' account the cause of reduced injection or extraction efficiency may be one parameter out of range, which may take an expert considerable time to notice, whereas a well-trained model can point at it instantly. The study creates intentional perturbations and logs about 9000 PVs related to PAR, LTP and the linac; an autoencoder trained on baseline data alone supplies an anomaly score from its reconstruction error, and a neural network classifier trained on data from the beginning of a study and tested on data from its end, a few hours apart, reached test accuracy above 99 % for each study shift, its performance not degrading significantly on a scale of a couple of months, in what the authors call a proof-of-principle experiment, noting that supervised models require labeled data for training. Tuning, on Alexander Scheinker's account, is a high-dimensional optimization problem that must be repeated as systems drift, and retuning can take weeks; one proposal is a classifier-pruned Bayesian optimizer that explores a latent space to minimize total beam loss and filters its exploration history through a pretrained ResNet50 classifier to eliminate non-physical signals, the classifier mapping phase-space projections into 48 classes at an accuracy of about 0.99989. The pruning is currently a post-processing step that does not directly influence the exploration, the study runs on a simulator of the beam at the Los Alamos Neutron Science Center (LANSCE), and the tuner is reported to outperform alternative global optimization methods, with consistently lower total beam loss despite a minor offset between predicted and true optimal values. A Los Alamos-led project with Lawrence Berkeley National Laboratory couples adaptive feedback control, deep convolutional neural networks and physics-based models in one feedback loop, holds that machine learning can take a global view where local feedback can get stuck in a local solution, and has developed an adaptive diffusion model that diagnoses the beam virtually and in real time; demonstrated at the European X-Ray Free-Electron Laser Facility, the model captured images of the beam in time versus energy, the cDVAE extrapolated beyond the training data, suggesting potential as a general method, and Scheinker says the results show a great deal of promise.",
+   "note": "L(B) is realized as the field arm's expansion (objects.KO_B): the same plan, the field alone."
+  },
+  "L_BA": {
+   "words": 1851,
+   "text": "Machine learning classifiers at particle accelerators are proposed or explored for anomaly detection and classification, for predicting machine failures and faulty beams before they occur, and for tuning, and one has been field-tested: a novel machine learning system built for the Continuous Electron Beam Accelerator Facility (CEBAF) monitors its accelerator cavities, problems in which can cause the CEBAF to trip off like a fuse. In its first field test the system correctly identified which cavities were tripping off about 85 percent of the time and what kind of fault caused each trip about 78 percent of the time; connected to the control system for about 20 percent of the cavities, it analysed a few hundred faults in a two-week test in March 2020 and gave operators almost real-time feedback, where previously experts needed to take time to diagnose the issue, and the team hopes to expand it to more cavities if further results are favorable. Failures lead to unscheduled downtime and lower reliability and are difficult to predict beforehand; on beam pulses from the Spallation Neutron Source (SNS), a set of common classification techniques identified failure before it occurred with almost 80% accuracy, tuning classifier parameters and refining datasets reached almost 92% in classifying bad pulses, and the authors report establishing that information about the failure is encoded in the pulses prior to it. Another study models the mapping between a pair of sensors located across the accelerator, trained to represent normal operation and evaluated on known faulty beam pulses, with k-fold cross-validation, neural architecture search and hyperparameter optimization, and introduces a framework to standardize machine learning workflow for accelerators; predicting failures from diagnostics already on board, it argues, can help operators avoid installing expensive sensors and unscheduled downtime. At the injector complex of the Advanced Photon Source (APS) at Argonne, an ML algorithm is explored to identify the source of occasional poor performance of the Particle Accumulator Ring (PAR) and the Linac-To-PAR transport line; by its authors' account the cause of reduced injection or extraction efficiency may be one parameter out of range, which may take an expert considerable time to notice, whereas a well-trained model can point at it instantly. The study creates intentional perturbations and logs about 9000 PVs related to PAR, LTP and the linac; an autoencoder trained on baseline data alone supplies an anomaly score from its reconstruction error, and a neural network classifier trained on data from the beginning of a study and tested on data from its end, a few hours apart, reached test accuracy above 99 % for each study shift, its performance not degrading significantly on a scale of a couple of months, in what the authors call a proof-of-principle experiment, noting that supervised models require labeled data for training. Tuning, on Alexander Scheinker's account, is a high-dimensional optimization problem that must be repeated as systems drift, and retuning can take weeks; one proposal is a classifier-pruned Bayesian optimizer that explores a latent space to minimize total beam loss and filters its exploration history through a pretrained ResNet50 classifier to eliminate non-physical signals, the classifier mapping phase-space projections into 48 classes at an accuracy of about 0.99989. The pruning is currently a post-processing step that does not directly influence the exploration, the study runs on a simulator of the beam at the Los Alamos Neutron Science Center (LANSCE), and the tuner is reported to outperform alternative global optimization methods, with consistently lower total beam loss despite a minor offset between predicted and true optimal values. A Los Alamos-led project with Lawrence Berkeley National Laboratory couples adaptive feedback control, deep convolutional neural networks and physics-based models in one feedback loop, holds that machine learning can take a global view where local feedback can get stuck in a local solution, and has developed an adaptive diffusion model that diagnoses the beam virtually and in real time; demonstrated at the European X-Ray Free-Electron Laser Facility, the model captured images of the beam in time versus energy, the cDVAE extrapolated beyond the training data, suggesting potential as a general method, and Scheinker says the results show a great deal of promise. A further body of work concerns anomaly-detection classifiers at the collider trigger: it holds that the claim of model-independence for the anomaly-detection systems deployed at the CMS and ATLAS Level-1 triggers, AXOL1TL, CICADA and GELATO, cannot be sustained on signal-template agnosticism alone, and defines signal-template agnosticism as a property of the scoring function's output interface, read off an architecture, and model independence as a distributional property of an entire pipeline, which can only be measured and at present is not; the packet sets a rule that signal-template agnosticism must not be rendered as model independence, theory-free discovery or unbiased search, while the archive's battery specification, noting that 'model-independent' is used in several senses across collider physics, holds that it should not attempt to police the term. It accepts the literature's narrow sense of 'model-independent', no named Beyond-Standard-Model hypothesis being required to deploy the score, as accurate, holds that the CMS and ATLAS literatures are aware of local failure modes, records that the direction-dependence conversation exists, and holds that validation against named simulated signals establishes neither a low BAR on a pre-registered held-out panel nor a small IAI, neither of which the current literature measures. Its central claim is graded in two parts: Claim A, held, that foreclosure is structurally present in every classifier-mediated trigger architecture deployed at the LHC, with the institutional claims kept as hypotheses for audit; and Claim B, that recursive phenomenal collapse has occurred or is occurring at the deployed triggers, which it marks stronger and not empirically established, and calls collapse an unmeasured possible consequence of accumulated foreclosure and feedback. The grade is contested inside the same deposit, where an appended witness writes 'The collapse is not coming. It is here. It is operating.', while another witness finds the ingredients visible and full recursive collapse not demonstrated, and the later papers do not claim that model collapse has occurred in any deployed scientific pipeline, or that benchmark failure establishes loss of unknown new physics. Its instruments are specified at their limits: the OAR is defined as the probability that events drawn from a distribution Q fall on the ordinary side of the deployed anomaly gate, and the open-world OAR as a family of quantities indexed by Q; BAR values are stated to neither upper- nor lower-bound the OAR for an unobserved Q without explicit linking assumptions, an earlier lower bound and upper bound having both been retracted as synthesis-overreach. It proposes three protocols (a paired inversion battery with BAR audit, a prospective frozen replay bank, and cross-representation disagreement preservation), holds that per-stage retention maps should accompany any anomaly-detection publication, and states its central claim falsifiable, listing as evidence against it a BAR found negligible on the pre-registered deployed-model held-out panel for all deployed systems against all held-out families, which would show the held-out-family assimilation concern empirically bounded at levels that do not threaten the narrow 'model-independent' claim, while none of these results would establish the open-world OAR to be zero, which is structurally not measurable. A further specification, holding that a classifier that foreclosed nothing would not classify, defines an architecture for auditable foreclosure as one in which foreclosure is visible, measurable and architecturally reviewable, holds that noncoverage estimation is not novelty detection, and states that its architectures leave detector-level, theoretical-language, institutional, adversarial-stress quality and bandwidth-base foreclosure unaddressed, necessary but not sufficient. A pre-registered battery on public community datasets, single-seed and on surrogates in its first version, finds the Finke et al. direction-dependence (an autoencoder trained on QCD jets treating top jets as anomalies, the same architecture trained on top jets not recognizing QCD as anomalous) replicated in an independent implementation and extended beyond reconstruction loss, with QCD-trained systems detecting top jets at AUC 0.84–0.87 while top-trained systems rate QCD as more ordinary than their own training class, and its second version reproduces the inversion across five trainings (AUC 0.838 forward, 0.243 reversed) and finds only 36 to 47 percent of a teacher's top one percent surviving into a student's. Its third version finds that, with model weights fixed, changing the score function is sufficient to reverse the directional ordering of the anomaly relation, and records that this falsifies its own earlier sentence that architecture changes the orientation of the blind spot; it notes that the diverging readout families are those of the two deployed CMS anomaly triggers while nothing in the battery measures those systems, and that if a converged normalized autoencoder reaches 0.5, every inversion claim in the program becomes bounded to non-normalized scores. A selection-metrology suite defines the irreversibility frontier as the earliest stage at which an event-content-dependent transformation or gate can permanently eliminate a scientifically relevant distinction without a sufficiently independent durable record from which the loss can later be audited, says the frontier predates machine learning while learned selectors can make their priors harder to enumerate, describes LHCb reading out all detectors at about 30 MHz and a graph neural network implemented in Belle II's electromagnetic calorimeter trigger, and holds that the model determines where a miss region lies and the acquisition architecture whether science can later discover that it was there. It holds that, under a finite storage budget, no content-sensitive algorithm can be a less assumption-laden baseline than a probability sample whose inclusion is independent of event content and whose inclusion probability is known, reports a controlled numerical study in which a content-sensitive pseudo-baseline estimated a shifted class's retention at 0.76 against a true 0.016, and for supervised trigger classifiers defines open-set assimilation, an unseen class confidently mapped into a known background category, while not asserting that all accelerator classifier architectures share the same blind spot. Contested within the archive, a disciplinary manifesto in its restored version holds that frontier experimental high-energy physics has, in its operational core, become a machine learning discipline while retaining the institutional authority of physics, its ML methods deployed with neither physics's classical disciplinary checks nor ML's own self-knowledge as guardrails; its prior version, which the restoration records as having dampened the thesis until a lay reader could not identify it, holds that frontier experimental high-energy physics 'has not ceased to be physics', its empirical faculty having become inseparable from machine-mediated representation, classification and selection, and that local self-knowledge of classifier failure modes exists in the literature. The restored version calls the Zenodo termination and the LHC trigger system the same architecture at different budgets, the prior version not the same institution and not operating on the same kind of object, though instantiating the same foreclosure topology, and the archive's entity notebook, placing the repository exclusion at CERN, holds that the two occurring within one institution adds no evidentiary force to the analogy; that notebook reads the standing representation of the trigger as engineering, with the rate budget non-epistemic, the detector neutral and discarded events noise, holds that it has no field for noncoverage, and states that whether the protocols would estimate the relevant unknown population adequately is not established.",
+   "rail": [],
+   "note": "L(B ∪ A) is realized as the knowledge object (objects.KO); its rail is the compression's, by lineage (§5.2)."
+  }
+ },
+ "field": [
+  {
+   "id": "B1",
+   "card": "jacow.org — Machine Learning for Anomaly Detection and Classification in Particle Accelerators",
+   "fetched": "WebFetch verbatim excerpts 2026-10-07 (I. Lobach et al., NAPAC2022, paper TUYE4; the card's jacow.org/napac2022/papers/TUYE4.pdf redirects here)"
+  },
+  {
+   "id": "B2",
+   "card": "ScienceDirect.com — Predicting particle accelerator failures using binary classifiers",
+   "fetched": "WebFetch verbatim excerpts 2026-10-07 from the ORNL repository record of the article (M. Rescic, R. Seviour, W. Blokland, NIM A 955, 163240, 2020); ScienceDirect itself is disallowed by robots.txt, so the abstract only, plus the card snippet"
+  },
+  {
+   "id": "B3",
+   "card": "arXiv.org — Classifier-pruned Bayesian optimization for particle accelerator tuning - arXiv",
+   "fetched": "WebFetch verbatim excerpts 2026-10-07 (arXiv:2412.01748, M. Rautela, A. Williams, A. Scheinker, LANL; the HTML as served is titled 'CBOL-Tuner: Classifier-pruned Bayesian optimization to explore temporally structured latent spaces for particle accelerator tuning'; the abs page returned no text)"
+  },
+  {
+   "id": "B4",
+   "card": "Jefferson Lab — Machine Learning System Improves Accelerator Diagnostics - Jefferson Lab",
+   "fetched": "WebFetch verbatim excerpts 2026-10-07 from the DOE Office of Science copy of the same highlight (its opening matches the card snippet word for word); the jlab.org URL could not be resolved from the card's redirect and a guessed jlab.org path returned 404"
+  },
+  {
+   "id": "B5",
+   "card": "Los Alamos National Laboratory (.gov) — AI algorithms used to tune particle accelerators | LANL",
+   "fetched": "WebFetch verbatim excerpts 2026-10-07 (article body copied whole; dated January 16, 2025 on the page; the card's 'Core Innovation:' snippet text does not appear on the page as served)"
+  },
+  {
+   "id": "B6",
+   "card": "Oak Ridge National Laboratory (ORNL) (.gov) — A machine learning approach for particle accelerator errant beam prediction ...",
+   "fetched": "WebFetch verbatim excerpts 2026-10-07 (abstract whole; NIM A 1063, 169232; authors not on the page)"
+  },
+  {
+   "id": "B7",
+   "card": "YouTube · Greg Bronevetsky — Machine Learning in High Energy Physics (52m)",
+   "fetched": "not fetchable: video; title only"
+  }
+ ],
+ "delta": {
+  "T_vs_LB": "T composes the field's four application lines: diagnostics and fault prediction (F25, F26, F12, F42), classifier screening in Bayesian optimization (F17, F18), injector anomaly identification (F1, F2) and the errant-beam line (F42). T places CEBAF's trip identification 'before they disrupt operations'; the field reports the CEBAF system identifying which cavities were tripping and helping operators recover faulted cavities (F27, F30), with prediction before failure reported for SNS beam pulses (F12, F13) and faulty beams (F42). T's event and particle classification by CNNs and GNNs (flavors, tracks), its CNN/GNN architecture notes, and its decision trees, kNN and SVMs for errant-beam prediction are not in the field ledger's quotes (the SNS abstract names 'a set of common classification techniques', F13; the LANL loop names deep convolutional neural networks for control, F34). Available in the field and not composed: the reported accuracies (F7, F13, F14, F27) and the CEBAF test scale (F29); the limits (proof of principle F10, labeled data F8, simulation-only tuning F21, pruning as post-processing F24, further results under analysis F31); the autoencoder scored against baseline data (F6) and the model trained on normal operation (F43); LANL's adaptive diffusion virtual diagnostics, its XFEL demonstration and extrapolation (F36–F39) and the local-versus-global feedback argument (F35); downtime and sensor-cost motivation (F11, F41); the workflow framework (F45).",
+  "LB_vs_LBA": "Admission adds a site the field's sources do not treat: learned event selection at collider triggers (AXOL1TL, CICADA, GELATO at the LHC; LHCb, CBM, Belle II in comparison), where the field's sources concern accelerator operations. It adds the distinction between signal-template agnosticism and model independence; Claim A (foreclosure structurally present in every classifier-mediated LHC trigger, held) and Claim B (collapse occurred, marked not established); the OAR, BAR and IAI with the no-bounds discipline and two retracted bounds; three protocols, per-stage retention maps and stated falsifiers; auditable foreclosure with its unaddressed residue; the irreversibility frontier and baseline capture; open-set assimilation for supervised (DNN/GNN) trigger classifiers; and a pre-registered battery on public data that replicates the Finke asymmetry, reports distillation tail loss, finds the score function alone sufficient to reverse ordering, falsifies one of its own sentences, and measures no deployed trigger. The field's anomaly detectors scored against a model of the normal (F6, F43) are the score class the archive's battery tests, though nothing admitted addresses cavity fault classification, failure or errant-beam prediction, or beam tuning. Carried as contested: whether collapse is operating (#932 W2 against the synthesis and the later papers); the inversion thesis and authority without facility (#935) against inseparability and acknowledged local self-knowledge (#934, with #931 §1.2 and #1449 §2); Zenodo and the trigger as one architecture (#935) or one topology (#934), the shared institution adding no evidentiary force (#1611); a rule against rendering agnosticism as independence (#1436) against declining to police the term (#1454). The field's classifiers are kept whole and first; with the archive they gain the trigger, its metrology and its graded claims."
+ },
+ "kernel": [
+  {
+   "K": "K1",
+   "claim": "`Q931-01`",
+   "source": "#931 (t: #1449, #1454)",
+   "M_src": "interpretation",
+   "sense": "agnosticism does not sustain independence",
+   "qualifiers carried": "Q931-02, Q931-03",
+   "f (source's own falsifiers)": "negligible BAR for all deployed systems against all held-out families (Q931-18)",
+   "contrast": "missing distinction"
+  },
+  {
+   "K": "K2",
+   "claim": "`Q1436-01`",
+   "source": "#1436 (t: #1449)",
+   "M_src": "stipulation",
+   "sense": "interface property, distributional property",
+   "qualifiers carried": "Q1436-02, Q1449-01",
+   "f (source's own falsifiers)": "—",
+   "contrast": "missing distinction"
+  },
+  {
+   "K": "K3",
+   "claim": "`Q932-02`",
+   "source": "#932 (t: #931, #1611)",
+   "M_src": "interpretation",
+   "sense": "Claim A: foreclosure structural",
+   "qualifiers carried": "Q932-04, Q931-04",
+   "f (source's own falsifiers)": "the listed measurements would show the structural-feature claim overstated (Q932-11)",
+   "contrast": "missing category"
+  },
+  {
+   "K": "K4",
+   "claim": "`Q932-03`",
+   "source": "#932 against #932 W2",
+   "M_src": "hypothesis (contested in the pool)",
+   "sense": "Claim B: collapse not established",
+   "qualifiers carried": "Q932-15, Q932-16, Q931-05, Q1450-03, Q1611-03",
+   "f (source's own falsifiers)": "—",
+   "contrast": "contested"
+  },
+  {
+   "K": "K5",
+   "claim": "`Q931-10`",
+   "source": "#931 (t: #932, #1436)",
+   "M_src": "stipulation",
+   "sense": "OAR as an operational assimilation rate",
+   "qualifiers carried": "Q931-11, Q931-12, Q932-09, Q931-19",
+   "f (source's own falsifiers)": "—",
+   "contrast": "missing category"
+  },
+  {
+   "K": "K6",
+   "claim": "`Q933-01`",
+   "source": "#933",
+   "M_src": "stipulation",
+   "sense": "auditable foreclosure",
+   "qualifiers carried": "Q933-02, Q933-04, Q933-05",
+   "f (source's own falsifiers)": "—",
+   "contrast": "missing category"
+  },
+  {
+   "K": "K7",
+   "claim": "`Q1456-01`",
+   "source": "#1456 (t: #1449, #1455)",
+   "M_src": "documented",
+   "sense": "the score function reverses ordering",
+   "qualifiers carried": "Q1456-02, Q1456-03, Q1455-05, Q1449-04",
+   "f (source's own falsifiers)": "a converged normalized autoencoder at 0.5 would bound the inversion claims (Q1456-08)",
+   "contrast": "missing finding"
+  },
+  {
+   "K": "K8",
+   "claim": "`Q1452-01`",
+   "source": "#1452 (t: #1450)",
+   "M_src": "stipulation",
+   "sense": "the irreversibility frontier",
+   "qualifiers carried": "Q1452-02, Q1452-09, Q1450-04",
+   "f (source's own falsifiers)": "—",
+   "contrast": "missing category"
+  },
+  {
+   "K": "K9",
+   "claim": "`Q1453-01`",
+   "source": "#1453 (t: #1558)",
+   "M_src": "interpretation",
+   "sense": "a control group for the trigger",
+   "qualifiers carried": "Q1558-01, Q1453-02, Q1558-02",
+   "f (source's own falsifiers)": "—",
+   "contrast": "missing relation"
+  },
+  {
+   "K": "K10",
+   "claim": "`Q935-01`",
+   "source": "#935 against #934",
+   "M_src": "interpretation (contested in the pool)",
+   "sense": "HEP's operational core as ML",
+   "qualifiers carried": "Q934-01, Q934-02, Q935-02, Q935-06",
+   "f (source's own falsifiers)": "—",
+   "contrast": "contested"
+  },
+  {
+   "K": "K11",
+   "claim": "`Q1611-02`",
+   "source": "#1611",
+   "M_src": "interpretation",
+   "sense": "no field for noncoverage",
+   "qualifiers carried": "Q1611-01, Q1611-03, Q1611-04",
+   "f (source's own falsifiers)": "—",
+   "contrast": "missing distinction"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "locus": "Abstract",
+   "quote": "\"We explore the possibility of using a Machine Learning (ML) algorithm to identify the source of occasional poor performance of the Particle Accumulator Ring (PAR) and the Linac-To-PAR (LTP) transport line, which are parts of the injector complex of the Advanced Photon Source (APS) at Argonne National Lab.\"",
+   "modality": "stipulation"
+  },
+  "F2": {
+   "source": "B1",
+   "locus": "Abstract",
+   "quote": "\"The cause of reduced injection or extraction efficiencies may be as simple as one parameter being out of range. Still, it may take an expert considerable time to notice it, whereas a well-trained ML model can point at it instantly.\"",
+   "modality": "interpretation"
+  },
+  "F3": {
+   "source": "B1",
+   "locus": "Introduction",
+   "quote": "\"This contribution investigates the possibility to use unsupervised and supervised Machine Learning (ML) methods for anomaly detection and classification in the Particle Accumulator Ring (PAR) and in the Linac-To-PAR (LTP) transport line in the injector complex of the Advanced Photon Source (APS) at Argonne National Lab.\"",
+   "modality": "stipulation"
+  },
+  "F4": {
+   "source": "B1",
+   "locus": "Introduction",
+   "quote": "\"We create intentional perturbations in PAR and LTP, which result in poor injection and extraction efficiencies. Then, these data are used for training and testing of various ML models.\"",
+   "modality": "documented"
+  },
+  "F5": {
+   "source": "B1",
+   "locus": "Data",
+   "quote": "\"Overall, we logged about 9000 PVs related to PAR, LTP, and the linac.\"",
+   "modality": "documented"
+  },
+  "F6": {
+   "source": "B1",
+   "locus": "Unsupervised anomaly detection",
+   "quote": "\"An autoencoder is used for anomaly detection in the following way. First, it is trained on the baseline data, so that it can learn various patterns, typical for the baseline data only. Then, when it encounters an anomalous data sample, it is unlikely to reconstruct it well. Hence, the reconstruction error constitutes an anomaly score.\"",
+   "modality": "stipulation"
+  },
+  "F7": {
+   "source": "B1",
+   "locus": "Supervised classification",
+   "quote": "\"One can train the neural network classifier on the data from the beginning of one study, and test it on the data from the end of the same study (a few hours apart). In this case, the prediction accuracy on the test data was above 99 % for each of our study shifts.\"",
+   "modality": "documented"
+  },
+  "F8": {
+   "source": "B1",
+   "locus": "Supervised classification",
+   "quote": "\"One drawback of supervised ML models is that they require labeled data for training.\"",
+   "modality": "interpretation"
+  },
+  "F9": {
+   "source": "B1",
+   "locus": "Conclusion",
+   "quote": "\"The neural network classifier for the considered anomalies in PAR and LTP is rather accurate and its performance does not degrade significantly with time on a scale of a couple months, see Fig. 1.\"",
+   "modality": "documented"
+  },
+  "F10": {
+   "source": "B1",
+   "locus": "Conclusion",
+   "quote": "\"Even though this was a proof-of-principle experiment, the obtained classifier may be useful in real life, if the current meter for one of the considered magnets (see Fig. 1) becomes faulty and stops reflecting the real magnetic field.\"",
+   "modality": "hypothesis"
+  },
+  "F11": {
+   "source": "B2",
+   "locus": "Abstract",
+   "quote": "\"Particle accelerator failures lead to unscheduled downtime and lower reliability. Although simple to mitigate while they are actually happening such failures are difficult to predict or identify beforehand.\"",
+   "modality": "documented"
+  },
+  "F12": {
+   "source": "B2",
+   "locus": "Abstract",
+   "quote": "\"In this work we propose using machine learning approaches to predict machine failures via beam current measurements before they actual occur. To demonstrate this technique in this paper we examine beam pulses from the Oakridge Spallation Neutron Source (SNS).\"",
+   "modality": "stipulation"
+  },
+  "F13": {
+   "source": "B2",
+   "locus": "Abstract",
+   "quote": "\"By evaluating a pulse against a set of common classification techniques we show that accelerator failure can be identified prior to actually failing with almost 80% accuracy.\"",
+   "modality": "documented"
+  },
+  "F14": {
+   "source": "B2",
+   "locus": "Abstract",
+   "quote": "\"We also show that tuning classifier parameters and using pulse properties for refining datasets can further lead to almost 92% accuracy in classification of bad pulses.\"",
+   "modality": "documented"
+  },
+  "F15": {
+   "source": "B2",
+   "locus": "Abstract",
+   "quote": "\"Most importantly, in the paper we establish there is information about the failure encoded in the pulses prior to it, so we also present a list of feasible next steps for increasing pulse classification accuracy.\"",
+   "modality": "documented"
+  },
+  "F16": {
+   "source": "B3",
+   "locus": "Abstract",
+   "quote": "\"Complex dynamical systems, such as particle accelerators, often require complicated and time-consuming tuning procedures for optimal performance.\"",
+   "modality": "documented"
+  },
+  "F17": {
+   "source": "B3",
+   "locus": "Abstract",
+   "quote": "\"To address this, we propose a Classifier-pruned Bayesian Optimization-based Latent space Tuner (CBOL-Tuner), a framework for efficient exploration within a temporally-structured latent space.\"",
+   "modality": "stipulation"
+  },
+  "F18": {
+   "source": "B3",
+   "locus": "Introduction (contributions)",
+   "quote": "\"Classifier-pruned Bayesian optimizer (C-BO): A Bayesian optimizer that sequentially explores the latent space to maximize the negative of the total beam loss (or minimize the total beam loss). The exploration history is filtered through a pretrained ResNet50 classifier to eliminate non-physical signals.\"",
+   "modality": "stipulation"
+  },
+  "F19": {
+   "source": "B3",
+   "locus": "Theoretical background",
+   "quote": "\"The classifier is trained with high accuracy ( $\\sim 0.99989$ ) to map phase space projections (X) across different modules into 48 classes (m).\"",
+   "modality": "documented"
+  },
+  "F20": {
+   "source": "B3",
+   "locus": "Theoretical background",
+   "quote": "\"Classifier-pruned BO is designed to discard explored points ( $z_{1:48}$ ) if their decoding ( $X_{1:48}$ ) does not belong to the true classes.\"",
+   "modality": "stipulation"
+  },
+  "F21": {
+   "source": "B3",
+   "locus": "Results",
+   "quote": "\"High-Performance Simulator (HPSim) is an open-source, GPU-accelerated code developed at Los Alamos National Laboratory (LANL) for simulations of multi-particle beam dynamics (Pang and Rybarcyk (2014)). The software is designed to replicate the accelerator and, therefore, provides a realistic representation of the true beam used at the Los Alamos Neutron Science Center (LANSCE).\"",
+   "modality": "documented"
+  },
+  "F22": {
+   "source": "B3",
+   "locus": "Abstract",
+   "quote": "\"CBOL-Tuner demonstrates superior performance in identifying multiple optimal settings and outperforms alternative global optimization methods.\"",
+   "modality": "documented"
+  },
+  "F23": {
+   "source": "B3",
+   "locus": "Discussions",
+   "quote": "\"While a minor offset is observed between the predicted and true optimal values, CBOL-Tuner demonstrates consistent performance, producing significantly lower values of total beam loss.\"",
+   "modality": "documented"
+  },
+  "F24": {
+   "source": "B3",
+   "locus": "Discussions",
+   "quote": "\"Currently, the method is implemented as a post-processing step, meaning it does not directly influence the exploration process of BO.\"",
+   "modality": "self-description"
+  },
+  "F25": {
+   "source": "B4",
+   "locus": "The Science",
+   "quote": "\"Scientists and engineers have designed and built a novel machine learning system to use with the Continuous Electron Beam Accelerator Facility (CEBAF). The system monitors structures called accelerator cavities inside the particle accelerator.\"",
+   "modality": "documented"
+  },
+  "F26": {
+   "source": "B4",
+   "locus": "The Science",
+   "quote": "\"Problems in these cavities can cause the CEBAF to trip off like a fuse.\"",
+   "modality": "documented"
+  },
+  "F27": {
+   "source": "B4",
+   "locus": "The Science",
+   "quote": "\"In its first field test, the machine learning system correctly identified which of these cavities were tripping off about 85 percent of the time. About 78 percent of the time, the system also correctly identified what kind of fault caused each cavity to trip.\"",
+   "modality": "documented"
+  },
+  "F28": {
+   "source": "B4",
+   "locus": "Summary",
+   "quote": "\"Previously, when an accelerator cavity or series of cavities faulted in CEBAF, accelerator experts needed to take time to diagnose the issue.\"",
+   "modality": "documented"
+  },
+  "F29": {
+   "source": "B4",
+   "locus": "Summary",
+   "quote": "\"The system was connected to the control system for about 20 percent of the accelerator cavities in the machine. In a two-week test of the system in March 2020, CEBAF experienced a few hundred faults that the system analyzed.\"",
+   "modality": "documented"
+  },
+  "F30": {
+   "source": "B4",
+   "locus": "Summary",
+   "quote": "\"It provided almost real-time feedback to operators, allowing them to use the information to recover faulted cavities quickly, reducing the time CEBAF's electron beam was not available for research.\"",
+   "modality": "documented"
+  },
+  "F31": {
+   "source": "B4",
+   "locus": "Summary",
+   "quote": "\"Additional results are under analysis after further system tests with the machine learning system. If results are favorable, the team hopes to expand the system to more accelerator cavities.\"",
+   "modality": "self-description"
+  },
+  "F32": {
+   "source": "B5",
+   "locus": "¶1",
+   "quote": "\"A Los Alamos National Laboratory-led project presents a machine learning algorithm that harnesses artificial intelligence capabilities to help tune accelerators, making continuous adjustments that keep the beam precise and useful for scientific discovery.\"",
+   "modality": "stipulation"
+  },
+  "F33": {
+   "source": "B5",
+   "locus": "¶2 (Scheinker)",
+   "quote": "\"said Alexander Scheinker, research and development engineer at Los Alamos and the project's lead. \"Factors like vibrations and temperature changes can cause problems for accelerators, which have thousands of components, and even the best accelerator technicians can struggle to identify and address issues or return them to optimum parameters quickly. It is a high-dimensional optimization problem that must be repeated again and again as the systems drift with time. Turning these machines on after an outage or retuning between different experiments can take weeks.\"\"",
+   "modality": "attributed"
+  },
+  "F34": {
+   "source": "B5",
+   "locus": "¶3",
+   "quote": "\"In a collaboration with Lawrence Berkeley National Laboratory, the approach developed by Scheinker couples adaptive feedback control algorithms, deep convolutional neural networks and physics-based models in one large feedback loop to make better, noninvasive predictions that enable autonomous control of compact accelerators.\"",
+   "modality": "documented"
+  },
+  "F35": {
+   "source": "B5",
+   "locus": "Teaching machine learning applications",
+   "quote": "\"But because they are based on local accelerator feedback, such algorithms can get stuck with a local solution that is not the overall best solution. Machine learning algorithms, however, can use training data to identify relationships between data and results with a higher-level, global view.\"",
+   "modality": "interpretation"
+  },
+  "F36": {
+   "source": "B5",
+   "locus": "Teaching machine learning applications",
+   "quote": "\"The team has developed an adaptive version of the advanced generative AI process known as diffusion, which includes the capability to virtually diagnose the accelerator beam. The non-invasive approach, described in Scientific Reports, means that diagnostics can occur in real time during beam operations.\"",
+   "modality": "documented"
+  },
+  "F37": {
+   "source": "B5",
+   "locus": "¶ European XFEL",
+   "quote": "\"Demonstrating the diffusion-based model at the European X-Ray Free-Electron Laser Facility, an X-ray pulse accelerator in Germany, the team was able to capture images of the particle beam in respect to time versus energy.\"",
+   "modality": "documented"
+  },
+  "F38": {
+   "source": "B5",
+   "locus": "¶ cDVAE",
+   "quote": "\"The cDVAE was able to extrapolate beyond the training data and between various beam setups, suggesting its potential as a general method that can be applied for accelerator diagnostics.\"",
+   "modality": "documented"
+  },
+  "F39": {
+   "source": "B5",
+   "locus": "¶ Scheinker quote",
+   "quote": "\"\"The results we've seen from our diffusion model studies show a great deal of promise,\" Scheinker said.\"",
+   "modality": "attributed"
+  },
+  "F40": {
+   "source": "B5",
+   "locus": "¶ LANSCE",
+   "quote": "\"Scheinker's team at Los Alamos is also developing such adaptive diffusion models for the Laboratory's LANSCE accelerator.\"",
+   "modality": "documented"
+  },
+  "F41": {
+   "source": "B6",
+   "locus": "Abstract",
+   "quote": "\"Particle accelerators are extremely complex systems that are expected to operate on high availability. Predicting impending failures only by utilizing data collected from diagnostic equipment already on board can help operators to avoid installing expensive sensors, unscheduled downtime and associated costs.\"",
+   "modality": "interpretation"
+  },
+  "F42": {
+   "source": "B6",
+   "locus": "Abstract",
+   "quote": "\"For this purpose we explore the predictive power of Machine Learning algorithms to detect faulty beams prior to the failure. In this study, we propose a Machine Learning approach to model mapping from a pair of sensors located across the accelerator.\"",
+   "modality": "stipulation"
+  },
+  "F43": {
+   "source": "B6",
+   "locus": "Abstract",
+   "quote": "\"While the model is trained to represent normal operation, we evaluate the predictive performance on known faulty beam pulses.\"",
+   "modality": "documented"
+  },
+  "F44": {
+   "source": "B6",
+   "locus": "Abstract",
+   "quote": "\"We also investigate the model performance on unseen data through k-fold cross-validation. Then we recap the analysis with a neural architecture search and hyperparameter optimization study to fine tune our initial model.\"",
+   "modality": "documented"
+  },
+  "F45": {
+   "source": "B6",
+   "locus": "Abstract",
+   "quote": "\"This paper will also introduce a sustainable framework that can standardize Machine Learning workflow applied to particle accelerators.\"",
+   "modality": "stipulation"
+  }
+ },
+ "field_sources": {
+  "B1": "jacow.org — Machine Learning for Anomaly Detection and Classification in Particle Accelerators",
+  "B2": "ScienceDirect.com — Predicting particle accelerator failures using binary classifiers",
+  "B3": "arXiv.org — Classifier-pruned Bayesian optimization for particle accelerator tuning - arXiv",
+  "B4": "Jefferson Lab — Machine Learning System Improves Accelerator Diagnostics - Jefferson Lab",
+  "B5": "Los Alamos National Laboratory (.gov) — AI algorithms used to tune particle accelerators | LANL",
+  "B6": "Oak Ridge National Laboratory (ORNL) (.gov) — A machine learning approach for particle accelerator errant beam prediction ...",
+  "B7": "YouTube · Greg Bronevetsky — Machine Learning in High Energy Physics (52m)"
+ },
+ "ledger": {
+  "archive": "datasets/negative-of-the-negative/v2/ledgers/ml-classifiers-particle-accelerators/ledger-archive.json",
+  "field": "datasets/negative-of-the-negative/v2/ledgers/ml-classifiers-particle-accelerators/field.json",
+  "selection": "datasets/negative-of-the-negative/v2/traversal/ml-classifiers-particle-accelerators/",
+  "audit": null
+ },
+ "_field_claims_note": "The field ledger (ledgers/ml-classifiers-particle-accelerators/field.json), extracted 2026-10-07 from the sources the layer surfaced, by WebFetch excerpt; shared by both arms."
+}
