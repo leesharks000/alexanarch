@@ -8,7 +8,7 @@ Auth was not stated in the message and is recorded as not attested (schema: "nev
 """
 import json, pathlib, re
 HERE = pathlib.Path(__file__).resolve().parent
-AUTH = "not attested"
+AUTH = "not attested"  # as seated at 09:08; corrected in the register to "signed out, incognito" on the operator's attestation of 09:21
 AUTH_BASIS = "The operator's message of 2026-10-07 09:08 EDT does not state sign-in or incognito; the battery as proposed (2026-10-06) asked for signed out, incognito."
 SEAT = "Seated 2026-10-07 from the operator's message of 09:08 EDT (battery 1)."
 
