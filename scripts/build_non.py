@@ -250,6 +250,50 @@ def claim_li(cid, ko, ledger, reg, FC=None, FS=None):
             f'<span class="meta">{esc(str(d.get("creator") or ""))} · {esc(str(c.get("date") or ""))} · {esc(c["locus"])}</span> '
             f'<span class="pill">{esc(c["modality"])}</span><br><span class="qt">{esc(unquote(c["quote"]))}</span></li>')
 
+def lineage_rail(row):
+    """L(B ∪ A)'s card rail at spec §5.2: one visible card per lineage, its snippet the lineage's earliest instance,
+    the other source instances nested under it; a source in no lineage keeps its own card. The lineages are the
+    compression's (objects.P.rail); a claim's source is the ledger's deposit or the field claim's source."""
+    o = row["objects"]; cards = o["L_BA"].get("rail") or []
+    if not cards:
+        return ""
+    ledger = {c["id"]: c for c in json.loads((ROOT / row["ledger"]["archive"]).read_text(encoding="utf-8"))}
+    FC = {**row.get("field_claims", {}), **(o.get("KO") or {}).get("field_claims", {})}
+    def ckey(card):
+        m = re.match(r"#(\d+)\b", card)
+        return int(m.group(1)) if m else card.split()[0]
+    bykey = {ckey(c["Card"]): c for c in cards}
+    def src(cid):
+        if cid in ledger: return ledger[cid]["dep"]
+        if cid in FC: return FC[cid]["source"]
+        m = re.match(r"[A-Z](\d+)-", cid)
+        return int(m.group(1)) if m else None
+    used, out = set(), []
+    for i, ln in enumerate((o.get("P") or {}).get("rail") or [], 1):
+        docs = []
+        for c in ln["claims"]:
+            k = src(c)
+            if k in bykey and k not in docs: docs.append(k)
+        e = ln["earliest"]
+        if e not in docs and e in bykey: docs.insert(0, e)
+        if not docs: continue
+        lead = e if e in docs else docs[0]
+        used.update(docs)
+        rest = [d for d in docs if d != lead]
+        inner = "".join(f'<li>{md_inline(bykey[d]["Card"])} — {md_inline(bykey[d]["Snippet"])}</li>' for d in rest)
+        out.append(f'<details class="lc"><summary><span class="lc-n">{i}</span>{esc(ln["lineage"])}'
+                   f'<span class="lc-e">{md_inline(bykey[lead]["Card"])} — {md_inline(bykey[lead]["Snippet"])}</span>'
+                   f'<span class="lc-c">{len(docs)} source{"" if len(docs) == 1 else "s"}</span></summary>'
+                   + (f'<ul class="claims">{inner}</ul>' if inner else '<p class="meta">one source</p>') + '</details>')
+    own = [c for k, c in bykey.items() if k not in used]
+    for c in own:
+        out.append(f'<details class="lc"><summary><span class="lc-n">·</span>{md_inline(c["Card"])}'
+                   f'<span class="lc-e">{md_inline(c["Snippet"])}</span><span class="lc-c">own card</span></summary>'
+                   '<p class="meta">a source in no shared lineage keeps its own card (§5.2)</p></details>')
+    return (f'<h3>Card rail</h3><p class="meta">One card per lineage (§5.2): {len(out) - len(own)} lineages carry '
+            f'{len(used)} of {len(bykey)} sources; {len(own)} keep their own card. Expand a lineage for its instances.</p>'
+            f'<div class="rail" aria-label="Sources, one card per lineage">{"".join(out)}</div>')
+
 def _words(t):
     return len(re.findall(r"[A-Za-z0-9'’-]+", t or ""))
 
@@ -430,28 +474,29 @@ def main():
             trav[d.name] = {"summary": json.loads((d / "summary.json").read_text(encoding="utf-8")),
                             "reading": json.loads((d / "reading.json").read_text(encoding="utf-8")) if (d / "reading.json").exists() else None}
     built = datetime.date.today().isoformat()
+    REGH, ROWH, TRAVH, REGQ = {}, {}, {}, {}
 
     b = []
     b.append('<h1>The Negative of the Negative</h1>')
     b.append('<p class="sub">Public knowledge of an entity, constructed before the addresses at which it is found, and composed three ways: as the composition layer gave it, as its own disclosed sources give it, and with the Crimson Hexagonal Archive admitted on equal terms. Each row is adjudicated later against what the world does.</p>')
     b.append('<div class="status"><strong>Under construction, by design.</strong> The generation procedure (EA-NEGONT-02 v0.7, <a href="/s/records/1665/">#1665</a>, which supersedes <a href="/s/records/1664/">#1664</a>) is being tested, iterated and revised; the panel below is a working list and is frozen only after the procedure is (§7.0, ruled 2026-10-05). Nothing on this page is a frozen measurement.</div>')
-    b.append('<nav class="jump"><a href="#register">register</a><a href="#rows">rows</a><a href="#traversals">traversals</a><a href="#panel">panel</a><a href="#procedure">procedure and data</a></nav>')
-    b.append('<h2>How a row reads</h2><div class="objs">'
+    how = ('<div class="objs">'
              '<div class="obj"><b>T</b>the transcript: what the composition layer gave, verbatim, with its source cards</div>'
              '<div class="obj"><b>L(B)</b>the address recomposed from the full texts of the sources the layer itself surfaced</div>'
              '<div class="obj"><b>L(B ∪ A)</b>the same algorithm with the archive\'s subset admitted on equal terms</div>'
              '<div class="obj"><b>Δ</b>T against L(B): what the disclosed field held and was not composed. L(B) against L(B ∪ A): what admission adds</div>'
              '<div class="obj"><b>KO</b>the knowledge object: L(B ∪ A) written as public knowledge, with no provenance in the prose and every sentence sourced below it</div>'
-             '<div class="obj"><b>K</b>the prospective kernel: what admission adds, derived from the plan, adjudicated later in both directions</div></div>')
-    b.append('<p>The archive\'s subset is selected by its <strong>bearing</strong> on the address, in three strata: <strong>D</strong>, direct (the archive names the entity and says something about it); <strong>R</strong>, relational (the archive relates the entity to one of its own objects); <strong>O</strong>, ontological (the archive applies one of its own categories to the entity, or to a class the field says it belongs to). A citation hop from what reading admits finds the term-absent tail. Volume never removes a source.</p>')
+             '<div class="obj"><b>K</b>the prospective kernel: what admission adds, derived from the plan, adjudicated later in both directions</div></div>'
+             '<p>The archive\'s subset is selected by its <strong>bearing</strong> on the address, in three strata: <strong>D</strong>, direct (the archive names the entity and says something about it); <strong>R</strong>, relational (the archive relates the entity to one of its own objects); <strong>O</strong>, ontological (the archive applies one of its own categories to the entity, or to a class the field says it belongs to). A citation hop from what reading admits finds the term-absent tail. Volume never removes a source.</p>')
+    HOW = det("", "How an entity reads", how, n="T · L(B) · L(B ∪ A) · Δ · KO · K")
 
     # the register: one card per address, captures grammar (2026-10-06)
     regp = V2 / "register.json"
     if regp.exists():
         reg = json.loads(regp.read_text(encoding="utf-8"))
-        b.append(f'<h2 id="register">The register — {len(set(x["entity"] for x in reg["entries"]))} entities, {reg["address_count"]} address{"" if reg["address_count"] == 1 else "es"}, '
-                 f'{reg["observation_count"]} observation{"" if reg["observation_count"] == 1 else "s"} · v{esc(str(reg["version"]))}</h2>'
-                 f'<p class="sub">{esc(reg["_what_this_is"])}</p>')
+        REGHEAD = (f'<p class="meta" id="register">The register — {len(set(x["entity"] for x in reg["entries"]))} entities, {reg["address_count"]} address{"" if reg["address_count"] == 1 else "es"}, '
+                 f'{reg["observation_count"]} observation{"" if reg["observation_count"] == 1 else "s"} · v{esc(str(reg["version"]))}. '
+                 f'{esc(reg["_what_this_is"])}</p>')
         ents = {x["entity"]: x for x in panel["entities"]}
         groups = {}
         for e in reg["entries"]:
@@ -484,7 +529,8 @@ def main():
                              f'<div class="card-query" style="font-size:1em">{qh}</div><div class="card-status">{"".join(pills)}</div>'
                              f'<div class="stack">{"".join(inner)}</div></div>')
             n_a = len(groups[ek])
-            b.append(f'<div class="card" id="ent-{esc(ek)}"><div class="card-head"><span class="card-section">entity · type {esc(en["type"])}</span>'
+            REGQ[ek] = n_a
+            REGH[ek] = (f'<div class="card" id="ent-{esc(ek)}"><div class="card-head"><span class="card-section">entity · type {esc(en["type"])}</span>'
                      f'<span class="card-date">{n_a} address{"" if n_a == 1 else "es"}</span></div>'
                      f'<div class="card-query">{esc(en["name"])}</div>'
                      + "".join(addrs)
@@ -493,7 +539,6 @@ def main():
                      + (f'<a href="#row-{esc(ek)}">composed row</a>' if ek in rows else "") + '</div></div>')
 
     # rows with compositions: one card per row, captures grammar
-    b.append('<h2 id="rows">Rows composed</h2>')
     for key, r in rows.items():
         o = r["objects"]
         href = address_href(key, r["address"])
@@ -515,12 +560,16 @@ def main():
             if o.get("P_B") and o.get("KO_B"):
                 html_b, st_b = two_levels(r, key + "-b", "P_B", "KO_B", "Field alone (B)")
                 arms.append((key + "-b", "Field alone (B)")); stats.append(("B", st_b))
+            led = r["status"]["ledger"].lower()
+            badge = ("working knowledge object · not frozen · ledger " + ("unaudited" if "unaudited" in led else "audited")).upper()
+            c.append(f'<p class="kobadge" style="font-family:var(--mono);font-size:.72em;letter-spacing:.08em;color:#8a5a00;background:#fff4dc;'
+                     f'border:1px solid #f0d9a6;border-radius:4px;padding:5px 9px;margin:10px 0 8px;display:inline-block">{esc(badge)}</p>')
             c.append(arm_switch(key, arms) + html_a + html_b + form_ledger(r, list(reversed(stats))))
         elif ko:
             c.append(knowledge_object(ko, r))
         tclaims = "".join(f"<li>{md_inline(x)}</li>" for x in o["T"]["claims"])
         fld = "".join(f"<li><strong>{esc(f['id'])}</strong> {md_inline(f['card'])} <span class=\"meta\">{esc(f['fetched'])}</span></li>" for f in r["field"])
-        rail = ('<h3>Card rail</h3>' + table(o["L_BA"]["rail"], ["Card", "Snippet"])) if o["L_BA"].get("rail") else ""
+        rail = lineage_rail(r)
         kent = "".join(det(esc(k.get("K", "")), md_inline(str(k.get("claim", ""))) + f' <span class="meta">{md_inline(str(k.get("source", "")))}</span>',
                            kv({kk: vv for kk, vv in k.items() if kk not in ("K",)}), n=esc(str(k.get("contrast", "")))) for k in r["kernel"])
         c.append('<h3 style="margin-top:18px">The objects</h3><div class="stack">')
@@ -541,10 +590,9 @@ def main():
                  f'<a href="/{r["ledger"]["audit"]}">extraction audit</a>'
                  + (f'<a href="/datasets/negative-of-the-negative/v2/traversal/{key}/">D/R/O traversal</a>' if key in trav else "")
                  + (f'<a href="{href}">address page</a>' if href else "") + '</div></div>')
-        b.append("".join(c))
+        ROWH[key] = "".join(c)
 
     # traversals: one card each
-    b.append('<h2 id="traversals">D/R/O traversals</h2><p class="sub">Candidates are found by string; admission is by reading.</p>')
     for key, t in trav.items():
         cn = t["summary"]["counts"]
         rd = t["reading"]
@@ -566,8 +614,40 @@ def main():
         c.append(f'<div class="card-links"><a href="/datasets/negative-of-the-negative/v2/traversal/{key}/">candidate files</a>'
                  f'<a href="/datasets/negative-of-the-negative/v2/panel/configs/{key}.json">configuration</a>'
                  + (f'<a href="{href}">address page</a>' if href else "") + '</div></div>')
-        b.append("".join(c))
+        TRAVH[key] = "".join(c)
 
+    # the page, entity first (ruled 2026-10-07): each entity's knowledge object leads; its addresses, transcripts and
+    # archive bearing fold beneath it; the panel and the method follow.
+    names = {x["entity"]: x for x in panel["entities"]}
+    keys = [x["entity"] for x in panel["entities"] if x["entity"] in ROWH or x["entity"] in REGH or x["entity"] in TRAVH]
+    keys.sort(key=lambda k: (k not in ROWH, k not in REGH))
+    b.append('<nav class="jump">' + "".join(f'<a href="#e-{esc(k)}">{esc(names[k]["name"])}</a>' for k in keys)
+             + '<a href="#panel">panel</a><a href="#procedure">procedure and data</a></nav>')
+    b.append(HOW)
+    for k in keys:
+        en = names[k]
+        sec = [f'<section id="e-{esc(k)}" style="margin-top:28px"><h2>{esc(en["name"])}</h2>'
+               f'<p class="meta">type {esc(en["type"])} · sought at {" · ".join("<code>" + esc(a["address"]) + "</code>" for a in en["addresses"])}</p>']
+        if k in ROWH:
+            sec.append(ROWH[k])
+        else:
+            sec.append('<p class="meta">No knowledge object composed yet.</p>')
+        if k in REGH:
+            sec.append(det("", "Addresses and transcripts", REGH[k], n=f'{REGQ[k]} address{"" if REGQ[k] == 1 else "es"}'))
+        if k in TRAVH:
+            note = ""
+            if k in REGH and k not in ROWH:
+                obs = [e for e in reg["entries"] if e["entity"] == k]
+                note = ('<p class="meta" style="margin-top:6px"><strong>Since ' + esc(min(e["date"] for e in obs)) + '</strong> the entity has a seated transcript, at '
+                        + ", ".join(f'<a href="#reg-{esc(e["slug"])}"><code>{esc(e["q"])}</code></a> ({esc(e["surface"])})' for e in obs)
+                        + ': its disclosed field B exists, and T against L(B) can now be built. The reading below is dated to its pass.</p>')
+            sec.append(det("", "Archive bearing — D/R/O traversal", '<p class="sub">Candidates are found by string; admission is by reading.</p>' + note + TRAVH[k],
+                           n="read" if '>read:' in TRAVH[k] else "unread"))
+        sec.append('</section>')
+        b.append("".join(sec))
+
+    if regp.exists():
+        b.append('<h2 style="margin-top:32px">The register</h2>' + REGHEAD.replace('<p class="meta" id="register">', '<p class="sub" id="register">'))
     # panel: one entry per entity, its addresses under it (keyed entity before address, ruled 2026-10-07)
     b.append(f'<h2 id="panel">The panel — {esc(panel["status"])}</h2><p class="sub">{esc(panel["keying"])} {esc(panel["rule"])}</p>')
     seen = {}
@@ -585,6 +665,12 @@ def main():
         pl.append(f'<li><strong>{esc(pr["name"])}</strong><span class="pill dim">type {esc(pr["type"])}</span><span class="pill dim">{esc(pr["source"])}</span>'
                   + ('<span class="pill ok">composed</span>' if done else "") + f'<span class="stage">addresses: {" · ".join(al)}</span>'
                   + f'<span class="stage">{md_inline(pr["stage"])}</span></li>')
+    b.append('<dl class="legend" style="font-size:.85em;margin:8px 0 12px"><dt style="font-weight:600">Entity types (spec §1.2)</dt>'
+             '<dd><b>A</b> the archive coined the concept; the default at it is empty</dd>'
+             '<dd><b>B</b> a rival occupant holds it</dd>'
+             '<dd><b>C</b> a conventional reading holds it; a public entity (a work, a person, a concept of general knowledge) on which the archive bears</dd>'
+             '<dd><b>I</b> a function of the archive\'s infrastructure</dd>'
+             '<dd><b>E</b> the entity: the archive, its author and heteronyms, its works, its mantles</dd></dl>')
     b.append(det("", "All entities", f'<ul class="plist">{"".join(pl)}</ul>', n=f'{len(panel["entities"])} entities'))
     b.append('<h2 id="procedure">Procedure and data</h2><ul>'
              '<li>Specification: <a href="/s/records/1665/">#1665</a> (EA-NEGONT-02 v0.7, 2026-10-05), superseding <a href="/s/records/1664/">#1664</a> (v0.6, 2026-10-04)</li>'
