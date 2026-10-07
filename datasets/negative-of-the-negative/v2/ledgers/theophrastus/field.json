@@ -1,0 +1,674 @@
+{
+ "field": [
+  {
+   "id": "B1",
+   "card": "Wikipedia — Theophrastus",
+   "url": "https://en.wikipedia.org/wiki/Theophrastus",
+   "fetched": "WebFetch verbatim excerpts 2026-10-07 (knowledge-panel source on 'theophrastus')"
+  },
+  {
+   "id": "B2",
+   "card": "Stanford Encyclopedia of Philosophy — Theophrastus (Ierodiakonou)",
+   "url": "https://plato.stanford.edu/entries/theophrastus/",
+   "fetched": "WebFetch verbatim excerpts 2026-10-07"
+  },
+  {
+   "id": "B3",
+   "card": "University at Buffalo — Theophrastus 372-287 BC – A History of Speech – Language Pathology",
+   "url": "https://ubwp.buffalo.edu/history-of-cds/wp-json/wp/v2/pages/466",
+   "fetched": "WebFetch verbatim excerpts 2026-10-07 (WordPress JSON of the page)"
+  },
+  {
+   "id": "B4",
+   "card": "EBSCO Research Starters — Theophrastus",
+   "url": "https://www.ebsco.com/research-starters/history/theophrastus",
+   "fetched": "WebFetch verbatim excerpts 2026-10-07"
+  },
+  {
+   "id": "B5",
+   "card": "Loeb Classical Library — Theophrastus, Enquiry into Plants, Volume I: Books 1-5",
+   "url": "https://www.loebclassics.com/view/LCL070/1916/volume.xml",
+   "fetched": "not fetchable: 403; description quoted from the HUP book page https://www.hup.harvard.edu/books/9780674990777 (WebFetch 2026-10-07), which matches the card snippet"
+  },
+  {
+   "id": "B6",
+   "card": "Herbal Academy — Botany Beginnings: Who was Theophrastus?",
+   "url": "https://theherbalacademy.com/?p=619608",
+   "fetched": "WebFetch verbatim excerpts 2026-10-07 (some returned quotes are fragments)"
+  },
+  {
+   "id": "B7",
+   "card": "Classical Liberal Arts Academy — Theophrastus - Characters",
+   "url": null,
+   "fetched": "not fetchable: page URL not located (guessed URL 404; searches did not surface it); no snippet supplied — title only"
+  },
+  {
+   "id": "B8",
+   "card": "Google Books — Enquiry into Plants, Volume I",
+   "url": "https://books.google.com/books/about/Enquiry_into_Plants_Volume_I.html",
+   "fetched": "not fetchable: guessed id 404; card snippet stands"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "locus": "lead",
+   "quote": "\"Theophrastus...was an ancient Greek philosopher and naturalist.\"",
+   "claim": "An ancient Greek philosopher and naturalist",
+   "modality": "stipulation",
+   "kernel": true,
+   "const": true,
+   "lineage": "theo-definition"
+  },
+  "F2": {
+   "source": "B1",
+   "locus": "lead",
+   "quote": "\"A native of Eresos in Lesbos, he was Aristotle's close colleague and successor as head of the Lyceum\"",
+   "claim": "Native of Eresos; Aristotle's colleague and successor at the Lyceum",
+   "modality": "documented",
+   "kernel": false,
+   "const": true,
+   "lineage": "lyceum-successor"
+  },
+  "F3": {
+   "source": "B1",
+   "locus": "lead",
+   "quote": "\"His given name was Tyrtamos (Τύρταμος); the nickname Theophrastus ('divine speaker') was reputedly given to him by Aristotle\"",
+   "claim": "Given name Tyrtamos; 'Theophrastus' reputedly given by Aristotle",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "renaming-by-aristotle"
+  },
+  "F4": {
+   "source": "B1",
+   "locus": "Life",
+   "quote": "\"the nickname 'Theophrastus', given to him, it is said, by Aristotle to indicate the grace of his conversation\"",
+   "claim": "Aristotle named him for the grace of his conversation (it is said)",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "renaming-by-aristotle"
+  },
+  "F5": {
+   "source": "B1",
+   "locus": "Life",
+   "quote": "\"When Aristotle moved to Mytilene on Lesbos in 345/4, it is very likely that he did so at the urging of Theophrastus.\"",
+   "claim": "Aristotle's move to Lesbos 345/4 likely urged by Theophrastus",
+   "modality": "hypothesis",
+   "kernel": false,
+   "const": false,
+   "lineage": "lesbos-345"
+  },
+  "F6": {
+   "source": "B1",
+   "locus": "Life",
+   "quote": "\"Aristotle likewise bequeathed to him his library and the originals of his works, and designated him as his successor at the Lyceum.\"",
+   "claim": "Aristotle left him his library and autographs and named him successor",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "aristotle-library-bequest"
+  },
+  "F7": {
+   "source": "B1",
+   "locus": "Life",
+   "quote": "\"at his death, according to the terms of his will preserved by Diogenes, he bequeathed to it his garden with house and colonnades\"",
+   "claim": "His will, preserved by Diogenes, left the school its garden, house and colonnades",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "theo-will"
+  },
+  "F8": {
+   "source": "B1",
+   "locus": "Works",
+   "quote": "\"From the lists of Diogenes, giving 227 titles, it appears that the activity of Theophrastus extended over the whole field of contemporary knowledge.\"",
+   "claim": "Diogenes lists 227 titles across the whole field of knowledge",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "catalogue-of-works"
+  },
+  "F9": {
+   "source": "B1",
+   "locus": "Works",
+   "quote": "\"Like Aristotle, most of his writings are lost works.\"",
+   "claim": "Most of his writings are lost",
+   "modality": "documented",
+   "kernel": true,
+   "const": false,
+   "lineage": "most-works-lost"
+  },
+  "F10": {
+   "source": "B1",
+   "locus": "Life",
+   "quote": "\"The text of these fragments and extracts is often so corrupt that there is a certain plausibility to the well-known story that the works of Aristotle and Theophrastus were allowed to languish in the cellar of Neleus of Scepsis and his descendants.\"",
+   "claim": "Corrupt texts lend plausibility to the story of the works languishing in Neleus of Scepsis's cellar",
+   "modality": "hypothesis",
+   "kernel": false,
+   "const": false,
+   "lineage": "scepsis-cellar"
+  },
+  "F11": {
+   "source": "B1",
+   "locus": "Botany",
+   "quote": "\"The Enquiry into Plants was originally ten books, of which nine survive.\"",
+   "claim": "Enquiry into Plants: ten books, nine survive",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "botanical-works"
+  },
+  "F12": {
+   "source": "B1",
+   "locus": "Botany",
+   "quote": "\"on the strength of these works some, following Linnaeus, call him the 'father of botany'.\"",
+   "claim": "Some, after Linnaeus, call him 'father of botany'",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "father-of-botany"
+  },
+  "F13": {
+   "source": "B1",
+   "locus": "Botany",
+   "quote": "\"The work is arranged into a system whereby plants are classified according to their modes of generation, their localities, their sizes\"",
+   "claim": "Plants classified by generation, locality, size",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "plant-classification"
+  },
+  "F14": {
+   "source": "B1",
+   "locus": "Characters",
+   "quote": "\"His book Characters (originally titled Χαρακτήρες, literally Traits, also known in antiquity as Ἠθικοὶ χαρακτῆρες, literally Character Traits, and best known in the tradition simply as Characters contains thirty brief outlines of moral types.\"",
+   "claim": "Characters: thirty brief outlines of moral types",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "characters-thirty"
+  },
+  "F15": {
+   "source": "B1",
+   "locus": "Characters",
+   "quote": "\"They are the first recorded attempt at systematic character writing.\"",
+   "claim": "First recorded systematic character writing",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "characters-first"
+  },
+  "F16": {
+   "source": "B1",
+   "locus": "infobox",
+   "quote": "\"Notable ideas: Prosleptic and hypothetical syllogisms; Modus ponens and modus tollens\"",
+   "claim": "Notable ideas: prosleptic and hypothetical syllogisms",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "theo-logic"
+  },
+  "F17": {
+   "source": "B1",
+   "locus": "Metaphysics",
+   "quote": "\"The Metaphysics (anachronistic Greek title: Θεοφράστου τῶν μετὰ τὰ φυσικά), in nine chapters (also known as On First Principles)\"",
+   "claim": "Metaphysics / On First Principles, nine chapters",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "theo-metaphysics"
+  },
+  "F18": {
+   "source": "B1",
+   "locus": "Senses",
+   "quote": "\"A treatise On Sense Perception (Περὶ αἰσθήσεων) and its objects is important for a knowledge of the doctrines\"",
+   "claim": "On Sense Perception is important for the doctrines (of earlier thinkers)",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "on-the-senses-doxography"
+  },
+  "F19": {
+   "source": "B1",
+   "locus": "Relation to Aristotle",
+   "quote": "\"The extent to which Theophrastus followed Aristotle's doctrines, or defined them more accurately, or conceived them in a different form...can only be partially determined\"",
+   "claim": "How far he followed or diverged from Aristotle can only partly be determined",
+   "modality": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "distinguishing-from-aristotle"
+  },
+  "F20": {
+   "source": "B1",
+   "locus": "Relation to Aristotle",
+   "quote": "\"Many of his opinions have to be reconstructed from the works of later writers such as Alexander of Aphrodisias and Simplicius.\"",
+   "claim": "Many opinions reconstructed from Alexander of Aphrodisias and Simplicius",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "reconstructed-from-commentators"
+  },
+  "F21": {
+   "source": "B1",
+   "locus": "Relation to Aristotle",
+   "quote": "\"He was doubtful of Aristotle's teleology and recommended that such ideas be used with caution\"",
+   "claim": "Doubtful of Aristotle's teleology",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "teleology-critique"
+  },
+  "F22": {
+   "source": "B1",
+   "locus": "Relation to Aristotle",
+   "quote": "\"Theophrastus seems, generally speaking, where the investigation overstepped the limits of experience, to have preferred to develop the difficulties rather than solve them\"",
+   "claim": "Beyond experience he developed difficulties rather than solving them",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "aporetic-method"
+  },
+  "F23": {
+   "source": "B2",
+   "locus": "opening",
+   "quote": "\"Theophrastus (c. 371–287 BCE) was a Peripatetic philosopher who was Aristotle's close colleague and successor at the Lyceum.\"",
+   "claim": "Peripatetic philosopher, Aristotle's colleague and successor at the Lyceum",
+   "modality": "stipulation",
+   "kernel": true,
+   "const": true,
+   "lineage": "lyceum-successor"
+  },
+  "F24": {
+   "source": "B2",
+   "locus": "Life and Works",
+   "quote": "\"he was born in Eresos on the island of Lesbos around 371 BCE and his original name was Tyrtamus\"",
+   "claim": "Born Eresos, Lesbos c. 371; original name Tyrtamus",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "renaming-by-aristotle"
+  },
+  "F25": {
+   "source": "B2",
+   "locus": "Life and Works",
+   "quote": "\"Aristotle changed it to Theophrastus because of the godlike manner of his speech (theos-phrazein)\"",
+   "claim": "Aristotle renamed him for his godlike speech",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "renaming-by-aristotle"
+  },
+  "F26": {
+   "source": "B2",
+   "locus": "Life and Works",
+   "quote": "\"Theophrastus succeeded Aristotle at the school, which during the next thirty-five years, under his headship, acquired a more institutionalized character.\"",
+   "claim": "35-year headship institutionalized the school",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "lyceum-successor"
+  },
+  "F27": {
+   "source": "B2",
+   "locus": "Life and Works",
+   "quote": "\"he left all his books to his disciple Neleus, including the manuscripts of Aristotle's works, which he had inherited when he took over the Lyceum\"",
+   "claim": "Left all books, including Aristotle's manuscripts, to Neleus",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "neleus-bequest"
+  },
+  "F28": {
+   "source": "B2",
+   "locus": "Life and Works",
+   "quote": "\"Diogenes attributes to Theophrastus well over two hundred separate treatises...totaling 232,808 lines\"",
+   "claim": "Diogenes attributes 200+ treatises totalling 232,808 lines",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "catalogue-of-works"
+  },
+  "F29": {
+   "source": "B2",
+   "locus": "Life and Works",
+   "quote": "\"of these less than ten per cent survives\"",
+   "claim": "Less than ten per cent survives",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "most-works-lost"
+  },
+  "F30": {
+   "source": "B2",
+   "locus": "Relation to Aristotle",
+   "quote": "\"It seems...that neither the portrait of Theophrastus as a disciple who simply added footnotes to Aristotle's work...nor the image of him as an innovator who introduced radical changes...can be upheld\"",
+   "claim": "Neither footnoting disciple nor radical innovator",
+   "modality": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "distinguishing-from-aristotle"
+  },
+  "F31": {
+   "source": "B2",
+   "locus": "Relation to Aristotle",
+   "quote": "\"he always began where Aristotle left off, but sometimes his treatment of particular issues did not only expand Aristotle's thought but also presented a challenge to it\"",
+   "claim": "Began where Aristotle left off; sometimes challenged him",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "distinguishing-from-aristotle"
+  },
+  "F32": {
+   "source": "B2",
+   "locus": "Logic",
+   "quote": "\"Theophrastus introduced the so-called 'prosleptic' (kata proslēpsin) syllogisms that have prosleptic premises\"",
+   "claim": "Introduced prosleptic syllogisms",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "theo-logic"
+  },
+  "F33": {
+   "source": "B2",
+   "locus": "Logic",
+   "quote": "\"Theophrastus and Eudemus...discussed 'hypothetical' (hupothetikoi) syllogisms, i.e., arguments at least one of whose premises is hypothetical\"",
+   "claim": "With Eudemus discussed hypothetical syllogisms",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "theo-logic"
+  },
+  "F34": {
+   "source": "B2",
+   "locus": "Logic",
+   "quote": "\"he introduced the in peiorem rule for mixed modal syllogisms, according to which the conclusion always has the same modal character as the weaker of the premises\"",
+   "claim": "In peiorem rule for mixed modal syllogisms",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "modal-in-peiorem"
+  },
+  "F35": {
+   "source": "B2",
+   "locus": "Logic",
+   "quote": "\"In contrast to Aristotle, Theophrastus defined possibility as no longer entailing non-necessity\"",
+   "claim": "Possibility defined without entailing non-necessity, against Aristotle",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "modal-in-peiorem"
+  },
+  "F36": {
+   "source": "B2",
+   "locus": "Metaphysics",
+   "quote": "\"The aporetic character of many of his writings, especially on metaphysics, physics and psychology, exemplify Theophrastus' dialectical method\"",
+   "claim": "Aporetic writings exemplify a dialectical method",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "aporetic-method"
+  },
+  "F37": {
+   "source": "B2",
+   "locus": "Metaphysics",
+   "quote": "\"natural phenomena such as extremely dry and moist seasons...seem to violate the principle that all things in nature are for the sake of something\"",
+   "claim": "Natural phenomena challenge universal teleology",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "teleology-critique"
+  },
+  "F38": {
+   "source": "B2",
+   "locus": "Metaphysics",
+   "quote": "\"Theophrastus preferred to locate the cause of the movement of the heavens in the heavens themselves, rather than in their desire for something else, and he thus abandoned the Prime Unmoved Mover postulated by Aristotle\"",
+   "claim": "Located heavenly motion in the heavens; abandoned the Unmoved Mover",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "unmoved-mover-abandoned"
+  },
+  "F39": {
+   "source": "B2",
+   "locus": "On the Senses",
+   "quote": "\"On the Senses or On Sensations (peri aisthēseōn)...was...treated as a mere source for the physical doctrines of previous philosophers\"",
+   "claim": "On the Senses long treated as a mere doxographic source",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "on-the-senses-doxography"
+  },
+  "F40": {
+   "source": "B2",
+   "locus": "On the Senses",
+   "quote": "\"It is rather recently that scholars have eventually recognized it as an independent work\"",
+   "claim": "Only recently recognized as an independent work",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "on-the-senses-doxography"
+  },
+  "F41": {
+   "source": "B2",
+   "locus": "Botany",
+   "quote": "\"The Enquiry into Plants (Historia Plantarum) is considered as one of the most important books of natural history in antiquity\"",
+   "claim": "Enquiry into Plants among antiquity's most important natural history",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "botanical-works"
+  },
+  "F42": {
+   "source": "B2",
+   "locus": "Ethics",
+   "quote": "\"The Characters, a collection of thirty concise, often humorous sketches of negative types of individuals from everyday Athenian life\"",
+   "claim": "Characters: thirty humorous sketches of negative Athenian types",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "characters-thirty"
+  },
+  "F43": {
+   "source": "B2",
+   "locus": "Doxography",
+   "quote": "\"the fragmentary information on the Presocratics found in his reconstructed Aëtius' Placita...is linked to Theophrastus' treatises in a direct and vertical line of descent\"",
+   "claim": "Diels: Aëtius' Placita descends directly from Theophrastus",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "diels-doxography"
+  },
+  "F44": {
+   "source": "B2",
+   "locus": "Doxography",
+   "quote": "\"Diels has also been criticized for having failed to take into account the possibility that already before Aëtius more than a single tradition existed\"",
+   "claim": "Diels's single-line model criticized",
+   "modality": "contested",
+   "kernel": false,
+   "const": false,
+   "lineage": "diels-doxography"
+  },
+  "F45": {
+   "source": "B3",
+   "locus": "page",
+   "quote": "\"Theophrastus was a Greek philosopher who wrote on the classification of plants.\"",
+   "claim": "Greek philosopher who wrote on plant classification",
+   "modality": "stipulation",
+   "kernel": true,
+   "const": false,
+   "lineage": "theo-definition"
+  },
+  "F46": {
+   "source": "B3",
+   "locus": "page",
+   "quote": "\"He was a student of Plato and a friend of Aristotle.\"",
+   "claim": "Student of Plato, friend of Aristotle",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "plato-student"
+  },
+  "F47": {
+   "source": "B3",
+   "locus": "page",
+   "quote": "\"In his book called The Characters, Theophrastus developed a taxonomy of undesirable personality traits.\"",
+   "claim": "Characters: a taxonomy of undesirable traits",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "characters-thirty"
+  },
+  "F48": {
+   "source": "B3",
+   "locus": "page",
+   "quote": "\"On the Opinions of the Physical Philosophers, a treatise about philosophical schools of thought, was the major source of study for later philosophers.\"",
+   "claim": "On the Opinions of the Physical Philosophers a major source for later philosophers",
+   "modality": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "physikon-doxai"
+  },
+  "F49": {
+   "source": "B4",
+   "locus": "opening",
+   "quote": "\"Theophrastus, originally named Tyrtamus, was a prominent Greek philosopher and naturalist born in Eresus on the island of Lesbos around 371 BCE.\"",
+   "claim": "Born Tyrtamus, Eresus c. 371; philosopher and naturalist",
+   "modality": "stipulation",
+   "kernel": true,
+   "const": false,
+   "lineage": "theo-definition"
+  },
+  "F50": {
+   "source": "B4",
+   "locus": "text",
+   "quote": "\"It was Aristotle who called him Theophrastus, 'he of godlike speech,' a compliment to his polished Greek style.\"",
+   "claim": "Aristotle named him 'he of godlike speech'",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "renaming-by-aristotle"
+  },
+  "F51": {
+   "source": "B4",
+   "locus": "text",
+   "quote": "\"The men were only twelve years apart in age, and the relationship between them was as much that of friends and colleagues as that of master and disciple.\"",
+   "claim": "Twelve years apart; friends and colleagues as much as master and disciple",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "colleague-not-disciple"
+  },
+  "F52": {
+   "source": "B4",
+   "locus": "text",
+   "quote": "\"The titles of 227 works by Theophrastus have been recorded, but only a small fraction have survived.\"",
+   "claim": "227 titles recorded, small fraction survive",
+   "modality": "documented",
+   "kernel": true,
+   "const": false,
+   "lineage": "catalogue-of-works"
+  },
+  "F53": {
+   "source": "B4",
+   "locus": "text",
+   "quote": "\"His will provided for the maintenance of the Lyceum garden, where he asked to have his body buried.\"",
+   "claim": "Will provided for the garden and his burial there",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "theo-will"
+  },
+  "F54": {
+   "source": "B4",
+   "locus": "text",
+   "quote": "\"Charactēres ethikōi (c. 319; The Moral Characters of Theophrastus, 1616, best known as Characters) is Theophrastus's only surviving literary work.\"",
+   "claim": "Characters (c. 319) his only surviving literary work",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "characters-thirty"
+  },
+  "F55": {
+   "source": "B4",
+   "locus": "text",
+   "quote": "\"He has been recognized as the founder of the science of botany, having made many observations about plants for the first time.\"",
+   "claim": "Recognized as founder of botany",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "father-of-botany"
+  },
+  "F56": {
+   "source": "B5",
+   "locus": "description",
+   "quote": "\"In the Enquiry into Plants Theophrastus classifies and describes varieties—covering trees, plants of particular regions, shrubs, herbaceous plants, and cereals; in the last of the nine books he focuses on plant juices and medicinal properties of herbs.\"",
+   "claim": "Enquiry classifies trees, regional plants, shrubs, herbs, cereals; book 9 on juices and medicinal herbs",
+   "modality": "documented",
+   "kernel": true,
+   "const": false,
+   "lineage": "plant-classification"
+  },
+  "F57": {
+   "source": "B6",
+   "locus": "opening",
+   "quote": "\"Approximately 2,300 years ago, a time which we can somewhat imagine through the marble monuments still standing and the relatively few parchments that have survived, a person named Theophrastus (c. 370 BCE – c. 287 BCE) reportedly wrote 227 books about animals, trees, shrubs, fruits, and flowers.\"",
+   "claim": "Reportedly wrote 227 books on natural subjects",
+   "modality": "attributed",
+   "kernel": true,
+   "const": false,
+   "lineage": "catalogue-of-works"
+  },
+  "F58": {
+   "source": "B6",
+   "locus": "text",
+   "quote": "\"he would become known as the 'father of botany' because his descriptive writings, specifically his surviving book, Enquiry into Plants (Historia Plantarum), helped create a new frontier in scientific botanical terminology.\"",
+   "claim": "'Father of botany' for founding botanical terminology",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "father-of-botany"
+  },
+  "F59": {
+   "source": "B6",
+   "locus": "text",
+   "quote": "\"from his original Tyrtamus, to indicate the grace of his conversation, meaning 'divine expression.'\"",
+   "claim": "Renamed from Tyrtamus for the grace of his conversation",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "renaming-by-aristotle"
+  },
+  "F60": {
+   "source": "B6",
+   "locus": "text",
+   "quote": "\"For thirty-five years, Theophrastus was head of the Peripatetic School, which at the height of its operations accommodated nearly 2,000 students.\"",
+   "claim": "35 years head; nearly 2,000 students",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "lyceum-successor"
+  },
+  "F61": {
+   "source": "B6",
+   "locus": "text",
+   "quote": "\"Unfortunately, less than ten of these books have survived\"",
+   "claim": "Fewer than ten books survive",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "most-works-lost"
+  },
+  "F62": {
+   "source": "B8",
+   "locus": "card snippet",
+   "quote": "\"Enquiry into Plants and De Causis Plantarum by Theophrastus (c. 370-c. 285 BCE) are a counterpart to Aristotle's zoological work and the most important botanica...\"",
+   "claim": "The botanical works are the counterpart to Aristotle's zoology and the most important botanical works (of antiquity)",
+   "modality": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "botany-counterpart-to-zoology"
+  }
+ }
+}
