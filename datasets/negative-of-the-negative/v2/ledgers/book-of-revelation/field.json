@@ -1,0 +1,466 @@
+{
+ "field": [
+  {
+   "id": "B1",
+   "card": "Wikipedia — Book of Revelation (chips 'Wikipedia +3' after Core Message and 'Wikipedia +2' after the seven churches and recursive cycles)",
+   "url": "https://en.wikipedia.org/wiki/Book_of_Revelation",
+   "fetched": "page text fetched 2026-10-07 (curl through the session proxy; WebFetch's summarizer paraphrases, so quotes were copied from the raw page text and verified)"
+  },
+  {
+   "id": "B2",
+   "card": "Bible Gateway — Encyclopedia of The Bible: Book of the Revelation (chip 'Bible Gateway +2' after the figures and New Jerusalem)",
+   "url": "https://www.biblegateway.com/resources/encyclopedia-of-the-bible/Book-Revelation",
+   "fetched": "page text fetched 2026-10-07 (curl through the session proxy; WebFetch's summarizer paraphrases, so quotes were copied from the raw page text and verified); the opening paragraph is truncated on the page"
+  },
+  {
+   "id": "B3",
+   "card": "PBS FRONTLINE, Apocalypse! — Understanding the Book of Revelation (L. Michael White) (chip 'PBS +1' after the interpretive frameworks)",
+   "url": "https://www.pbs.org/wgbh/pages/frontline/shows/apocalypse/revelation/white.html",
+   "fetched": "page text fetched 2026-10-07 (curl through the session proxy; WebFetch's summarizer paraphrases, so quotes were copied from the raw page text and verified)"
+  },
+  {
+   "id": "B4",
+   "card": "PBS FRONTLINE, Apocalypse! — The Book of Revelation: The Views of Historians and Biblical Scholars",
+   "url": "https://www.pbs.org/wgbh/pages/frontline/shows/apocalypse/explanation/brevelation.html",
+   "fetched": "page text fetched 2026-10-07 (curl through the session proxy; WebFetch's summarizer paraphrases, so quotes were copied from the raw page text and verified); speakers identified on the page by surname and bio"
+  },
+  {
+   "id": "B?",
+   "card": "hidden cards behind 'Wikipedia +3', 'Wikipedia +2', 'Bible Gateway +2' and 'PBS +1' (eight cards)",
+   "url": null,
+   "fetched": "not fetchable: cards not shown in the capture; unknown"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "locus": "lead",
+   "quote": "\"The Book of Revelation, also known as the Book of the Apocalypse or the Apocalypse of John, is canonically the last book of the New Testament.\"",
+   "claim": "The last book of the NT; also Apocalypse of John",
+   "modality": "stipulation",
+   "kernel": true,
+   "const": true,
+   "lineage": "rev-definition"
+  },
+  "F2": {
+   "source": "B1",
+   "locus": "lead",
+   "quote": "\"The Book of Revelation is the only apocalyptic book in the New Testament canon, and occupies a central place in Christian eschatology.\"",
+   "claim": "The only apocalyptic book of the NT; central to eschatology",
+   "modality": "documented",
+   "kernel": false,
+   "const": true,
+   "lineage": "only-apocalypse"
+  },
+  "F3": {
+   "source": "B1",
+   "locus": "lead",
+   "quote": "\"The book spans three literary genres: the epistolary, the apocalyptic, and the prophetic.\"",
+   "claim": "Three genres: epistolary, apocalyptic, prophetic",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "genre"
+  },
+  "F4": {
+   "source": "B1",
+   "locus": "lead",
+   "quote": "\"It begins with John, on the island of Patmos in the Aegean Sea, addressing letters to the \"Seven Churches of Asia\" with exhortations from Christ.\"",
+   "claim": "Begins with John on Patmos writing to the Seven Churches of Asia",
+   "modality": "documented",
+   "kernel": false,
+   "const": true,
+   "lineage": "seven-churches"
+  },
+  "F5": {
+   "source": "B1",
+   "locus": "lead",
+   "quote": "\"These visions include figures such as a woman clothed with the sun with the moon under her feet and a crown of twelve stars, the seven-headed Dragon, and the seven-headed Beast.\"",
+   "claim": "Figures: the woman clothed with the sun, the Dragon, the Beast",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "figures"
+  },
+  "F6": {
+   "source": "B1",
+   "locus": "lead",
+   "quote": "\"The author names himself as simply \"John\" in the text, but his precise identity remains a point of academic debate.\"",
+   "claim": "The author is 'John'; his identity is debated",
+   "modality": "contested",
+   "kernel": false,
+   "const": false,
+   "lineage": "authorship"
+  },
+  "F7": {
+   "source": "B1",
+   "locus": "lead",
+   "quote": "\"Modern biblical scholarship views Revelation as a first-century apocalyptic message warning early Christian communities not to assimilate into Roman imperial culture\"",
+   "claim": "Modern scholarship: a warning not to assimilate into Roman imperial culture",
+   "modality": "attributed",
+   "kernel": true,
+   "const": false,
+   "lineage": "purpose-anti-assimilation"
+  },
+  "F8": {
+   "source": "B1",
+   "locus": "Title, authorship, and date",
+   "quote": "\"a tradition dating from Irenaeus (c. 130 – c. 202 AD) identifies John the Apostle as the author of all five\"",
+   "claim": "Irenaeus's tradition names John the Apostle as author of the five Johannine works",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "authorship"
+  },
+  "F9": {
+   "source": "B1",
+   "locus": "Title, authorship, and date",
+   "quote": "\"The Book of Revelation is commonly dated to about 95 AD, as suggested by clues in the visions pointing to the reign of the Roman Emperor Domitian (81–96)\"",
+   "claim": "Commonly dated c. 95 under Domitian",
+   "modality": "attributed",
+   "kernel": true,
+   "const": false,
+   "lineage": "date-domitianic"
+  },
+  "F10": {
+   "source": "B1",
+   "locus": "Title, authorship, and date",
+   "quote": "\"The Beast with seven heads and the number 666 seem to allude directly to the Emperor Nero (reigned 54–68), but this does not imply that the book was written in the 60s, as there was a widespread belief in later decades that Nero would return.\"",
+   "claim": "666 and the seven-headed Beast seem to allude to Nero, without implying a date in the 60s",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "666-nero"
+  },
+  "F11": {
+   "source": "B1",
+   "locus": "Sources",
+   "quote": "\"Over half of the references stem from Daniel, Ezekiel, Psalms, Isaiah, and Zechariah, with Daniel providing the largest number in proportion to length and Ezekiel standing out as the most influential.\"",
+   "claim": "Allusions mostly to Daniel, Ezekiel, Psalms, Isaiah, Zechariah",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "ot-allusion"
+  },
+  "F12": {
+   "source": "B1",
+   "locus": "Setting",
+   "quote": "\"Modern understanding has been that the Book of Revelation was written to comfort beleaguered Christians as they underwent religious persecution at the hands of a Roman Emperor.\"",
+   "claim": "Written to comfort Christians under imperial persecution (modern understanding)",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose-persecution"
+  },
+  "F13": {
+   "source": "B1",
+   "locus": "Setting",
+   "quote": "\"Domitian may not have been a cruel despot imposing the Roman imperial cult upon his subjects, and there may not have been any systematic empire-wide persecution of Christians in his time.\"",
+   "claim": "Domitianic persecution may not have been systematic",
+   "modality": "contested",
+   "kernel": false,
+   "const": false,
+   "lineage": "persecution-contested"
+  },
+  "F14": {
+   "source": "B1",
+   "locus": "Canonical history",
+   "quote": "\"Revelation was among the last books accepted into the Christian biblical canon, and to the present day some churches that derive from the Church of the East reject it.\"",
+   "claim": "Among the last books accepted into the canon",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "canon-late"
+  },
+  "F15": {
+   "source": "B1",
+   "locus": "Structure and content",
+   "quote": "\"there is a \"complete lack of consensus\" among scholars about the structure of Revelation\"",
+   "claim": "No consensus on its structure",
+   "modality": "contested",
+   "kernel": false,
+   "const": false,
+   "lineage": "structure"
+  },
+  "F16": {
+   "source": "B1",
+   "locus": "Symbolism",
+   "quote": "\"Much use is made of significant numbers, especially the number seven, which represented perfection according to ancient numerology.\"",
+   "claim": "Significant numbers, especially seven",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "sevens"
+  },
+  "F17": {
+   "source": "B1",
+   "locus": "Outline, Pergamum",
+   "quote": "\"Pergamum: From this church, he who overcomes will be given the hidden manna to eat and a white stone with a secret name on it.\"",
+   "claim": "To Pergamum: hidden manna and a white stone with a secret name (2:12-17)",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "white-stone"
+  },
+  "F18": {
+   "source": "B1",
+   "locus": "Outline",
+   "quote": "\"God comes to dwell with humanity in the New Jerusalem.\"",
+   "claim": "God dwells with humanity in the New Jerusalem (21:2-8)",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "new-jerusalem"
+  },
+  "F19": {
+   "source": "B1",
+   "locus": "Interpretations",
+   "quote": "\"Preterist interpretations treat Revelation as mostly referring to the events of the Apostolic Age (1st century), or, at the latest, the fall of the Western Roman Empire in the 5th century.\"",
+   "claim": "Preterist",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "school-preterist"
+  },
+  "F20": {
+   "source": "B1",
+   "locus": "Interpretations",
+   "quote": "\"Futurist interpretations see Revelation as describing future events\"",
+   "claim": "Futurist",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "school-futurist"
+  },
+  "F21": {
+   "source": "B1",
+   "locus": "Interpretations",
+   "quote": "\"Idealist or symbolic interpretations consider that Revelation does not refer to actual people or events but is an allegory of the spiritual path and the ongoing struggle between good and evil.\"",
+   "claim": "Idealist/symbolic",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "school-idealist"
+  },
+  "F22": {
+   "source": "B1",
+   "locus": "Interpretations",
+   "quote": "\"Historicist interpretations see Revelation as containing a broad view of history.\"",
+   "claim": "Historicist",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "school-historicist"
+  },
+  "F23": {
+   "source": "B2",
+   "locus": "lead",
+   "quote": "\"The Book of Revelation is unique as the sole totally apocalyptic work in the NT.\"",
+   "claim": "The sole totally apocalyptic work of the NT",
+   "modality": "stipulation",
+   "kernel": true,
+   "const": false,
+   "lineage": "only-apocalypse"
+  },
+  "F24": {
+   "source": "B2",
+   "locus": "III. Authorship",
+   "quote": "\"Definite objections to the Johannine authorship were first raised by Dionysius of Alexandria\"",
+   "claim": "Dionysius first objected to Johannine authorship",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "authorship"
+  },
+  "F25": {
+   "source": "B2",
+   "locus": "III. Authorship",
+   "quote": "\"The weight of early testimony favors the view that the Apocalypse was written by John, the son of Zebedee, and there is no absolute proof that he could not have done so.\"",
+   "claim": "The encyclopedia favours John son of Zebedee",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "authorship"
+  },
+  "F26": {
+   "source": "B2",
+   "locus": "IV. Date",
+   "quote": "\"Three possible dates have been suggested for the Apocalypse.\"",
+   "claim": "Three dates proposed (Claudius, Nero, Domitian)",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "date-options"
+  },
+  "F27": {
+   "source": "B2",
+   "locus": "IV. Date",
+   "quote": "\"An argument for a date during the administration of Nero (a.d. 54-68) has been constructed from the statement in Revelation that the number of the beast is 666.\"",
+   "claim": "A Neronic date argued from 666",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "666-nero"
+  },
+  "F28": {
+   "source": "B2",
+   "locus": "IV. Date",
+   "quote": "\"The traditional date is prob. the best of the options.\"",
+   "claim": "The traditional (Domitianic) date probably best",
+   "modality": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "date-domitianic"
+  },
+  "F29": {
+   "source": "B2",
+   "locus": "V. Place of origin",
+   "quote": "\"The island of Patmos was the place where the visions were received.\"",
+   "claim": "Visions received on Patmos",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "patmos"
+  },
+  "F30": {
+   "source": "B2",
+   "locus": "VIII. Purpose",
+   "quote": "\"Preparation for the Second Advent is the dominant theme of Revelation.\"",
+   "claim": "Dominant theme: preparation for the Second Advent",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose-advent"
+  },
+  "F31": {
+   "source": "B2",
+   "locus": "XII. Interpretation",
+   "quote": "\"The interpretation of Revelation is difficult and uncertain, no two interpreters agree exactly on all details.\"",
+   "claim": "Interpretation difficult and uncertain",
+   "modality": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "interpretation-limit"
+  },
+  "F32": {
+   "source": "B2",
+   "locus": "XII. Interpretation",
+   "quote": "\"In general there are four main types of interpretation that appear in the historic attempts to explain this book.\"",
+   "claim": "Four main types: preterist, historicist, futurist, idealist",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "four-schools"
+  },
+  "F33": {
+   "source": "B2",
+   "locus": "XIII. Theology",
+   "quote": "\"He is depicted as the Lamb, slaughtered as a sacrifice (5:6)\"",
+   "claim": "Christ depicted as the slaughtered Lamb",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "lamb"
+  },
+  "F34": {
+   "source": "B3",
+   "locus": "opening",
+   "quote": "\"The Book of Revelation was written sometime around 96 CE in Asia Minor. The author was probably a Christian from Ephesus known as \"John the Elder.\"\"",
+   "claim": "White: c. 96 CE; probably John the Elder of Ephesus",
+   "modality": "attributed",
+   "kernel": true,
+   "const": false,
+   "lineage": "date-domitianic"
+  },
+  "F35": {
+   "source": "B3",
+   "locus": "opening",
+   "quote": "\"Some scholars, however, have suggested that it might have been a regular stop on a preaching circuit.\"",
+   "claim": "Patmos as exile traditionally; perhaps a preaching stop",
+   "modality": "contested",
+   "kernel": false,
+   "const": false,
+   "lineage": "patmos"
+  },
+  "F36": {
+   "source": "B3",
+   "locus": "layout",
+   "quote": "\"The book breaks naturally into five major visions plus a prologue and an epilogue\"",
+   "claim": "Five major visions with prologue and epilogue",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "structure"
+  },
+  "F37": {
+   "source": "B3",
+   "locus": "time-line",
+   "quote": "\"The various visions of Revelation are not a linear progression\"",
+   "claim": "The visions are cyclical, not linear",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "recursive-cycles"
+  },
+  "F38": {
+   "source": "B3",
+   "locus": "imperial cult",
+   "quote": "\"The \"image\" (13.14-15) and the mysterious number \"666\" (13.18) refer to statues and coins or inscriptions with the emperor's image and titles.\"",
+   "claim": "The image and 666 refer to statues, coins, inscriptions with the emperor's image and titles",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "666-imperial-image"
+  },
+  "F39": {
+   "source": "B3",
+   "locus": "dating",
+   "quote": "\"Almost all New Testament scholars now take the view that Revelation was written during the reign of Domitian, sometime around 95-96 CE.\"",
+   "claim": "Almost all NT scholars: Domitian, c. 95-96",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "date-domitianic"
+  },
+  "F40": {
+   "source": "B3",
+   "locus": "preterist view",
+   "quote": "\"This approach is sometimes called the \"preterist\" (or \"past history\") view, meaning that the events described in Revelation all took place in the past and the work must be read in that ancient historical context. It is almost universally followed in both New Testament scholarship and by scholars of Christian history.\"",
+   "claim": "The preterist (past-history) view is almost universally followed in scholarship",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "school-preterist"
+  },
+  "F41": {
+   "source": "B4",
+   "locus": "Collins (Chicago, New Testament)",
+   "quote": "\"The image of the Harlot of Babylon--in effect what he is saying is that Roma is not a goddess, she's a whore.\"",
+   "claim": "Collins: the Harlot of Babylon says Roma is no goddess",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "babylon-rome"
+  },
+  "F42": {
+   "source": "B4",
+   "locus": "Collins (Chicago, Hebrew Bible)",
+   "quote": "\"That the powers of this world, no matter how terrifying they may be, are passing away and that in the end righteousness and justice will prevail.\"",
+   "claim": "Collins: the powers of this world are passing away",
+   "modality": "attributed",
+   "kernel": true,
+   "const": false,
+   "lineage": "central-message"
+  },
+  "F43": {
+   "source": "B2",
+   "locus": "XIII. Theology",
+   "quote": "\"Revelation is strongly Christological.\"",
+   "claim": "Strongly Christological",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "lamb"
+  }
+ }
+}

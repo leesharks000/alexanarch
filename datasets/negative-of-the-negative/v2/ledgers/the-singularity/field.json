@@ -1,0 +1,562 @@
+{
+ "field": [
+  {
+   "id": "B1",
+   "card": "Wikipedia — Technological singularity",
+   "url": "https://en.wikipedia.org/wiki/Technological_singularity",
+   "fetched": "WebFetch verbatim excerpts 2026-10-07 (lead copied whole)"
+  },
+  {
+   "id": "B2",
+   "card": "Third Way — What is the Artificial Intelligence Singularity? (M. Sexton, 30 May 2025)",
+   "url": "https://www.thirdway.org/memo/what-is-the-artificial-intelligence-singularity",
+   "fetched": "WebFetch verbatim excerpts 2026-10-07"
+  },
+  {
+   "id": "B3",
+   "card": "IBM — What is the Technological Singularity?",
+   "url": "https://www.ibm.com/think/topics/technological-singularity",
+   "fetched": "WebFetch verbatim excerpts 2026-10-07"
+  },
+  {
+   "id": "B4",
+   "card": "Daniel Miessler — What the Singularity Actually Means (30 Jul 2026)",
+   "url": "https://danielmiessler.com/blog/what-the-singularity-actually-means",
+   "fetched": "WebFetch verbatim excerpts 2026-10-07"
+  },
+  {
+   "id": "B5",
+   "card": "Wikipedia — The Singularity Is Near",
+   "url": "https://en.wikipedia.org/wiki/The_Singularity_Is_Near",
+   "fetched": "WebFetch verbatim excerpts 2026-10-07"
+  },
+  {
+   "id": "B6",
+   "card": "Forbes — What Is The Singularity And Are We There Yet? (B. Marr, 1 Sep 2026)",
+   "url": "https://bernardmarr.com/?p=17454",
+   "fetched": "WebFetch verbatim excerpts 2026-10-07 from the author's own copy (bernardmarr.com); the Forbes URL could not be resolved from the card's redirect and a guessed Forbes path returned 404"
+  },
+  {
+   "id": "B7",
+   "card": "singularity.com — The Singularity is Near » Homepage",
+   "url": "https://www.singularity.com/",
+   "fetched": "WebFetch verbatim excerpts 2026-10-07 (the page as served carried two descriptive passages only)"
+  },
+  {
+   "id": "B8",
+   "card": "The Hill — What is the AI singularity? Some experts say it's closer than ever",
+   "url": null,
+   "fetched": "not fetchable: the card's Google redirect is opaque, the article URL was not found by search, and thehill.com search is disallowed by robots.txt; card snippet only"
+  },
+  {
+   "id": "B9",
+   "card": "Britannica — Singularity | Benefits, Challenges & Implications",
+   "url": "https://www.britannica.com/technology/singularity-technology",
+   "fetched": "WebFetch verbatim excerpts 2026-10-07"
+  },
+  {
+   "id": "B10",
+   "card": "Reddit — Would anyone mind explaining to me like I'm 5 what the singularity is?",
+   "url": null,
+   "fetched": "not fetchable: reddit; title only"
+  },
+  {
+   "id": "B11",
+   "card": "YouTube — The Singularity is Coming (Absolutely Agentic, 19:19)",
+   "url": null,
+   "fetched": "not fetchable: video; title only"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "locus": "lead ¶1",
+   "quote": "\"The technological singularity, often simply called the singularity, is a hypothetical event in which technological growth accelerates beyond human control, producing unpredictable changes in human civilization.\"",
+   "claim": "The singularity is a hypothetical event in which technological growth accelerates beyond human control",
+   "modality": "stipulation",
+   "kernel": true,
+   "const": true,
+   "lineage": "singularity defined"
+  },
+  "F2": {
+   "source": "B1",
+   "locus": "lead ¶1",
+   "quote": "\"According to the most popular version of the singularity hypothesis, I. J. Good's intelligence explosion model of 1965, an upgradable intelligent agent could eventually enter a positive feedback loop of successive self-improvement cycles\"",
+   "claim": "The most popular version is Good's 1965 intelligence explosion model: self-improvement cycles in positive feedback",
+   "modality": "attributed",
+   "kernel": true,
+   "const": true,
+   "lineage": "intelligence explosion (Good 1965)"
+  },
+  "F3": {
+   "source": "B1",
+   "locus": "lead ¶2",
+   "quote": "\"Prominent technologists and academics dispute the plausibility of a technological singularity and associated artificial intelligence \"explosion\", including Paul Allen, Jeff Hawkins, John Holland, Jaron Lanier, Steven Pinker, Theodore Modis, Gordon Moore, and Roger Penrose.\"",
+   "claim": "Prominent technologists and academics dispute its plausibility",
+   "modality": "contested",
+   "kernel": true,
+   "const": false,
+   "lineage": "plausibility disputed"
+  },
+  "F4": {
+   "source": "B1",
+   "locus": "lead ¶2",
+   "quote": "\"One claim is that artificial intelligence growth is likely to run into decreasing returns instead of accelerating ones.\"",
+   "claim": "One objection: AI growth will meet decreasing returns",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "saturation / S-curve"
+  },
+  "F5": {
+   "source": "B1",
+   "locus": "lead ¶2",
+   "quote": "\"Stuart J. Russell and Peter Norvig observe that in the history of technology, improvement in a particular area tends to follow an S curve: it begins with accelerating improvement, then levels off without continuing upward into a hyperbolic singularity.\"",
+   "claim": "Russell and Norvig: technological improvement follows an S curve",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "saturation / S-curve"
+  },
+  "F6": {
+   "source": "B1",
+   "locus": "lead ¶2",
+   "quote": "\"But a technological singularity is not required for machines that can perform at or beyond a human level on certain tasks to be developed, nor does their existence imply the possibility of such an occurrence\"",
+   "claim": "Human-level task performance neither requires nor implies a singularity",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "capability is not the singularity"
+  },
+  "F7": {
+   "source": "B1",
+   "locus": "lead ¶3",
+   "quote": "\"The Hungarian-American mathematician John von Neumann is the first person known to have discussed a \"singularity\" in technological progress.\"",
+   "claim": "Von Neumann is the first known to discuss a technological 'singularity'",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "von Neumann / Ulam 1958"
+  },
+  "F8": {
+   "source": "B1",
+   "locus": "lead ¶3",
+   "quote": "\"Stanislaw Ulam reported in 1958 that an earlier discussion with von Neumann \"centered on the accelerating progress of technology and changes in human life, which gives the appearance of approaching some essential singularity in the history of the race beyond which human affairs, as we know them, could not continue\".\"",
+   "claim": "Ulam (1958): a singularity beyond which human affairs could not continue",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "von Neumann / Ulam 1958"
+  },
+  "F9": {
+   "source": "B1",
+   "locus": "lead, Good quotation",
+   "quote": "\"Thus the first ultraintelligent machine is the last invention that man need ever make, provided that the machine is docile enough to tell us how to keep it under control.\"",
+   "claim": "Good: the first ultraintelligent machine is the last invention, provided it is docile enough",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "intelligence explosion (Good 1965)"
+  },
+  "F10": {
+   "source": "B1",
+   "locus": "lead ¶5",
+   "quote": "\"The concept and the term \"singularity\" were popularized by Vernor Vinge, first in a 1983 op-ed in Omni magazine\"",
+   "claim": "Vinge popularized the term, first in a 1983 Omni op-ed",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "Vinge"
+  },
+  "F11": {
+   "source": "B1",
+   "locus": "lead ¶5",
+   "quote": "\"In his 1993 essay \"The Coming Technological Singularity\", Vinge wrote that the transition would signal the end of the human era\"",
+   "claim": "Vinge 1993: the transition would end the human era",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "Vinge"
+  },
+  "F12": {
+   "source": "B1",
+   "locus": "lead ¶5",
+   "quote": "\"he would be surprised if it occurred before 2005 or after 2030\"",
+   "claim": "Vinge: surprised if before 2005 or after 2030",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "predicted dates"
+  },
+  "F13": {
+   "source": "B1",
+   "locus": "lead ¶6",
+   "quote": "\"Another significant contribution to wider circulation of the notion was Ray Kurzweil's 2005 book The Singularity Is Near, predicting singularity by 2045.\"",
+   "claim": "Kurzweil's 2005 book circulated the notion, predicting 2045",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "Kurzweil 2045"
+  },
+  "F14": {
+   "source": "B1",
+   "locus": "lead ¶9",
+   "quote": "\"I. J. Good, Vernor Vinge, and Ray Kurzweil define the concept in terms of the technological creation of super intelligence, arguing that it is difficult or impossible for present-day humans to predict what human beings' lives would be like in a post-singularity world\"",
+   "claim": "Good, Vinge, Kurzweil: a post-singularity world is hard or impossible to predict",
+   "modality": "attributed",
+   "kernel": false,
+   "const": true,
+   "lineage": "loss of predictability"
+  },
+  "F15": {
+   "source": "B1",
+   "locus": "lead ¶10",
+   "quote": "\"The related concept of \"speed superintelligence\" describes an artificial intelligence that can function like a human mind but much faster.\"",
+   "claim": "Speed superintelligence: a human-like mind running much faster",
+   "modality": "stipulation",
+   "kernel": false,
+   "const": false,
+   "lineage": "speed superintelligence"
+  },
+  "F16": {
+   "source": "B1",
+   "locus": "lead ¶11",
+   "quote": "\"Technology forecasters and researchers disagree about when, or whether, human intelligence will be surpassed.\"",
+   "claim": "Forecasters disagree on when or whether human intelligence will be surpassed",
+   "modality": "contested",
+   "kernel": false,
+   "const": false,
+   "lineage": "predicted dates"
+  },
+  "F17": {
+   "source": "B1",
+   "locus": "lead ¶12",
+   "quote": "\"Some writers use \"the singularity\" in a broader way, to refer to any radical changes in society brought about by new technology (such as molecular nanotechnology), although Vinge and other writers say that without superintelligence, such changes would not be a true singularity.\"",
+   "claim": "A broader use covers any radical technological change; Vinge denies it is a true singularity without superintelligence",
+   "modality": "contested",
+   "kernel": false,
+   "const": false,
+   "lineage": "broader sense"
+  },
+  "F18": {
+   "source": "B1",
+   "locus": "body",
+   "quote": "\"It is unclear whether an intelligence explosion resulting in a singularity would be beneficial or harmful, or even an existential threat.\"",
+   "claim": "Unclear whether beneficial, harmful or existential threat",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "beneficial or harmful"
+  },
+  "F19": {
+   "source": "B1",
+   "locus": "body, criticism",
+   "quote": "\"There is not the slightest reason to believe in a coming singularity.\"",
+   "claim": "Pinker: no reason to believe in a coming singularity",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "plausibility disputed"
+  },
+  "F20": {
+   "source": "B2",
+   "locus": "definition",
+   "quote": "\"The singularity is the point where AI surpasses human intelligence and can improve itself better than humans can.\"",
+   "claim": "The singularity is where AI surpasses human intelligence and self-improves",
+   "modality": "stipulation",
+   "kernel": true,
+   "const": false,
+   "lineage": "AI surpasses and self-improves"
+  },
+  "F21": {
+   "source": "B2",
+   "locus": "history",
+   "quote": "\"British mathematician I. J. Good first hypothesized the singularity in a 1965 paper.\"",
+   "claim": "Good first hypothesized it in 1965",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "intelligence explosion (Good 1965)"
+  },
+  "F22": {
+   "source": "B2",
+   "locus": "process",
+   "quote": "\"AGI will quickly lead to artificial superintelligence (ASI) in a process known as the intelligence explosion.\"",
+   "claim": "AGI will quickly lead to ASI: the intelligence explosion",
+   "modality": "hypothesis",
+   "kernel": false,
+   "const": false,
+   "lineage": "AGI as gateway"
+  },
+  "F23": {
+   "source": "B2",
+   "locus": "timeline",
+   "quote": "\"There is an emerging consensus among experts that AGI should arrive at least by the end of the decade.\"",
+   "claim": "An emerging expert consensus puts AGI by the end of the decade",
+   "modality": "attributed",
+   "kernel": true,
+   "const": false,
+   "lineage": "predicted dates"
+  },
+  "F24": {
+   "source": "B2",
+   "locus": "policy",
+   "quote": "\"American leadership in AI, including open source, is a national security issue.\"",
+   "claim": "AI leadership is a national security issue",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "policy frame"
+  },
+  "F25": {
+   "source": "B3",
+   "locus": "opening",
+   "quote": "\"The technological singularity is a theoretical scenario where technological growth becomes uncontrollable and irreversible, culminating in profound and unpredictable changes to human civilization.\"",
+   "claim": "A theoretical scenario of uncontrollable, irreversible growth",
+   "modality": "stipulation",
+   "kernel": true,
+   "const": false,
+   "lineage": "singularity defined"
+  },
+  "F26": {
+   "source": "B3",
+   "locus": "history",
+   "quote": "\"Ray Kurzweil, one of the most vocal proponents of the singularity, has famously predicted that the singularity is near and will happen by 2045.\"",
+   "claim": "Kurzweil predicts it by 2045",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "Kurzweil 2045"
+  },
+  "F27": {
+   "source": "B3",
+   "locus": "skepticism",
+   "quote": "\"Many critics argue that significant and perhaps insurmountable obstacles stand in the way.\"",
+   "claim": "Critics argue there are perhaps insurmountable obstacles",
+   "modality": "contested",
+   "kernel": true,
+   "const": false,
+   "lineage": "plausibility disputed"
+  },
+  "F28": {
+   "source": "B3",
+   "locus": "skepticism",
+   "quote": "\"Skeptics note a decline in the rate of technological innovation, contradicting the exponential growth expected in singularity scenarios.\"",
+   "claim": "Skeptics note a decline in innovation's rate",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "saturation / S-curve"
+  },
+  "F29": {
+   "source": "B3",
+   "locus": "risks",
+   "quote": "\"There is a concern that super intelligent machines could prioritize their own survival and goals over human needs.\"",
+   "claim": "Concern that superintelligent machines put their goals over human needs",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "existential risk"
+  },
+  "F30": {
+   "source": "B4",
+   "locus": "argument",
+   "quote": "\"AGI and ASI are about the machine. The singularity is about us—specifically, about the moment we lose the ability to see what's coming\"",
+   "claim": "The singularity is about us: the moment we lose the ability to see what's coming",
+   "modality": "stipulation",
+   "kernel": true,
+   "const": false,
+   "lineage": "loss of predictability"
+  },
+  "F31": {
+   "source": "B4",
+   "locus": "argument",
+   "quote": "\"The singularity is the point past which we can't really predict anything, because at that point it's essentially ASIs running things\"",
+   "claim": "Past the singularity nothing can be predicted, because ASIs run things",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "loss of predictability"
+  },
+  "F32": {
+   "source": "B4",
+   "locus": "limit",
+   "quote": "\"Vinge's thirty-year window from 1993 has basically closed, and his specific claim remains outstanding\"",
+   "claim": "Vinge's thirty-year window has closed; his claim is outstanding",
+   "modality": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "predicted dates"
+  },
+  "F33": {
+   "source": "B5",
+   "locus": "lead",
+   "quote": "\"The Singularity Is Near: When Humans Transcend Biology is a 2005 non-fiction book about artificial intelligence and the future of humanity by inventor and futurist Ray Kurzweil.\"",
+   "claim": "Kurzweil's 2005 book on AI and humanity's future",
+   "modality": "documented",
+   "kernel": true,
+   "const": false,
+   "lineage": "Kurzweil 2045"
+  },
+  "F34": {
+   "source": "B5",
+   "locus": "content",
+   "quote": "\"I set the date for the Singularity—representing a profound and disruptive transformation in human capability—as 2045\"",
+   "claim": "Kurzweil: 'I set the date for the Singularity ... as 2045'",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "Kurzweil 2045"
+  },
+  "F35": {
+   "source": "B5",
+   "locus": "content",
+   "quote": "\"the Law of Accelerating Returns, which predicts an exponential increase in technologies like computers, genetics, nanotechnology, robotics and artificial intelligence\"",
+   "claim": "The Law of Accelerating Returns predicts exponential technological increase",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "accelerating returns"
+  },
+  "F36": {
+   "source": "B5",
+   "locus": "reception",
+   "quote": "\"the key point about exponential growth is that it never lasts\"",
+   "claim": "Davies: exponential growth never lasts",
+   "modality": "attributed",
+   "kernel": true,
+   "const": false,
+   "lineage": "saturation / S-curve"
+  },
+  "F37": {
+   "source": "B5",
+   "locus": "sequel",
+   "quote": "\"A sequel book, The Singularity Is Nearer, was released on June 25, 2024\"",
+   "claim": "Sequel The Singularity Is Nearer, 2024",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "Kurzweil 2045"
+  },
+  "F38": {
+   "source": "B6",
+   "locus": "definition",
+   "quote": "\"a point when machine intelligence surpasses human intelligence and begins advancing at a speed we can no longer control or predict\"",
+   "claim": "A point when machine intelligence surpasses ours and advances beyond control or prediction",
+   "modality": "stipulation",
+   "kernel": true,
+   "const": false,
+   "lineage": "AI surpasses and self-improves"
+  },
+  "F39": {
+   "source": "B6",
+   "locus": "AGI",
+   "quote": "\"AGI is a level of capability. The singularity is what could happen next.\"",
+   "claim": "AGI is a capability level; the singularity is what could follow",
+   "modality": "stipulation",
+   "kernel": false,
+   "const": false,
+   "lineage": "AGI as gateway"
+  },
+  "F40": {
+   "source": "B6",
+   "locus": "status",
+   "quote": "\"The key test is whether AI can improve itself without human direction.\"",
+   "claim": "The test is self-improvement without human direction",
+   "modality": "stipulation",
+   "kernel": true,
+   "const": false,
+   "lineage": "AI surpasses and self-improves"
+  },
+  "F41": {
+   "source": "B6",
+   "locus": "predictions",
+   "quote": "\"we are now, like, in the singularity\"",
+   "claim": "Altman: 'we are now, like, in the singularity'",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "already here"
+  },
+  "F42": {
+   "source": "B7",
+   "locus": "homepage",
+   "quote": "\"features ideas, writing, and technologies of visionaries examining the confluence of accelerating revolutions that will shape the future\"",
+   "claim": "The site presents visionaries on accelerating revolutions",
+   "modality": "self-description",
+   "kernel": true,
+   "const": false,
+   "lineage": "accelerating returns"
+  },
+  "F43": {
+   "source": "B8",
+   "locus": "card snippet",
+   "quote": "\"Good speculated that superhuman intelligence could trigger an “intelligence explosion”\"",
+   "claim": "Good speculated superhuman intelligence could trigger an intelligence explosion",
+   "modality": "attributed",
+   "kernel": true,
+   "const": false,
+   "lineage": "intelligence explosion (Good 1965)"
+  },
+  "F44": {
+   "source": "B9",
+   "locus": "opening",
+   "quote": "\"theoretical condition that could arrive in the near future when a synthesis of several powerful new technologies will radically change the realities in which we find ourselves\"",
+   "claim": "A theoretical condition: a synthesis of technologies radically changing reality",
+   "modality": "stipulation",
+   "kernel": true,
+   "const": false,
+   "lineage": "singularity defined"
+  },
+  "F45": {
+   "source": "B9",
+   "locus": "Vinge",
+   "quote": "\"an opaque wall across the future\"",
+   "claim": "Vinge: an opaque wall across the future",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "loss of predictability"
+  },
+  "F46": {
+   "source": "B9",
+   "locus": "Vinge",
+   "quote": "\"the new era is simply too different to fit into the classical frame of good and evil\"",
+   "claim": "Vinge: the new era is too different for the frame of good and evil",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "beneficial or harmful"
+  },
+  "F47": {
+   "source": "B9",
+   "locus": "uncertainty",
+   "quote": "\"It could be amazing or apocalyptic, but we cannot know the details\"",
+   "claim": "It could be amazing or apocalyptic; details unknowable",
+   "modality": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "beneficial or harmful"
+  },
+  "F48": {
+   "source": "B9",
+   "locus": "Kurzweil",
+   "quote": "\"in the future we will have the medical tools to banish disease and disease-related death\"",
+   "claim": "Kurzweil: medical tools will banish disease",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "optimistic outcomes"
+  },
+  "F49": {
+   "source": "B9",
+   "locus": "NBIC",
+   "quote": "\"the near-future synthesis of nanotech, biotech, infotech, and cognitive science\"",
+   "claim": "The singularity as NBIC convergence",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "broader sense"
+  }
+ }
+}
