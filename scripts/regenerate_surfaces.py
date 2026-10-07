@@ -584,6 +584,7 @@ STATIC_URLS = [
     ("https://www.alexanarch.org/lexical/", 0.8),
     ("https://www.alexanarch.org/citations/", 0.8),
     ("https://www.alexanarch.org/captures/", 0.8),
+    ("https://www.alexanarch.org/non/", 0.8),  # the Negative of the Negative; its entity pages are in sitemap-non.xml
     ("https://www.alexanarch.org/addresses/", 0.7),
     ("https://www.alexanarch.org/resolve/", 0.7),
     ("https://www.alexanarch.org/datasets/", 0.7),
