@@ -433,7 +433,7 @@ def main():
 
     b = []
     b.append('<h1>The Negative of the Negative</h1>')
-    b.append('<p class="sub">Public knowledge, composed three ways at one address: as the composition layer gave it, as its own disclosed sources give it, and with the Crimson Hexagonal Archive admitted on equal terms. Each row is adjudicated later against what the world does.</p>')
+    b.append('<p class="sub">Public knowledge of an entity, constructed before the addresses at which it is found, and composed three ways: as the composition layer gave it, as its own disclosed sources give it, and with the Crimson Hexagonal Archive admitted on equal terms. Each row is adjudicated later against what the world does.</p>')
     b.append('<div class="status"><strong>Under construction, by design.</strong> The generation procedure (EA-NEGONT-02 v0.7, <a href="/s/records/1665/">#1665</a>, which supersedes <a href="/s/records/1664/">#1664</a>) is being tested, iterated and revised; the panel below is a working list and is frozen only after the procedure is (§7.0, ruled 2026-10-05). Nothing on this page is a frozen measurement.</div>')
     b.append('<nav class="jump"><a href="#register">register</a><a href="#rows">rows</a><a href="#traversals">traversals</a><a href="#panel">panel</a><a href="#procedure">procedure and data</a></nav>')
     b.append('<h2>How a row reads</h2><div class="objs">'
@@ -449,34 +449,48 @@ def main():
     regp = V2 / "register.json"
     if regp.exists():
         reg = json.loads(regp.read_text(encoding="utf-8"))
-        b.append(f'<h2 id="register">The register — {reg["address_count"]} address{"" if reg["address_count"] == 1 else "es"}, '
+        b.append(f'<h2 id="register">The register — {len(set(x["entity"] for x in reg["entries"]))} entities, {reg["address_count"]} address{"" if reg["address_count"] == 1 else "es"}, '
                  f'{reg["observation_count"]} observation{"" if reg["observation_count"] == 1 else "s"} · v{esc(str(reg["version"]))}</h2>'
                  f'<p class="sub">{esc(reg["_what_this_is"])}</p>')
+        ents = {x["entity"]: x for x in panel["entities"]}
+        groups = {}
         for e in reg["entries"]:
-            pills = [f'<span class="pill dim">{esc(e["auth"])}</span>', f'<span class="pill dim">panel row {esc(e["panel_row"])}</span>',
-                     ('<span class="pill warn">archive present · also a capture</span>' if e["archive_present"] else '<span class="pill">archive absent</span>')]
-            if e.get("cites") is not None:
-                pills.append(f'<span class="pill dim">{e["cites"]} source cards</span>')
-            obs = [e] + e["observations"][1:] if e["observations"] else [e]
-            inner = []
-            for ob in obs:
-                tx = ob.get("transcript")
-                body = (f'<pre style="white-space:pre-wrap;overflow-wrap:anywhere;font-family:var(--mono);font-size:.8em;color:#333">{cite_links(tx)}</pre>' if tx
-                        else f'<p>Held by the Capture Registry: <a href="/captures/{esc((ob.get("capture_ref") or {}).get("slug", ""))}/">{esc((ob.get("capture_ref") or {}).get("slug", ""))}</a></p>')
-                cl = "".join(f'<li>{esc(str(x.get("n")))}. {esc(str(x.get("site")))} — {esc(str(x.get("title")))}</li>' for x in (ob.get("cite_list") or []))
-                inner.append(det("", f'{esc(ob["date"])} · transcript', body + (f'<h3>Source cards</h3><ul>{cl}</ul>' if cl else "")
-                                 + f'<p class="meta">{esc(ob["obs_id"])} · {esc(ob.get("transcript_class") or "")} · {esc(ob.get("transcript_read") or "")}'
-                                 + (f' · sha256 {esc(ob["transcript_sha256"][:16])}…' if ob.get("transcript_sha256") else "") + '</p>'
-                                 + f'<p class="meta">Archive: {esc(ob.get("archive_basis") or "")}</p>', n=esc(ob["obs_id"])))
-            href = address_href(e["panel_row"], e["q"])
-            qh = f'<a href="{href}">{esc(e["q"])}</a>' if href else esc(e["q"])
-            b.append(f'<div class="card" id="reg-{esc(e["slug"])}"><div class="card-head"><span class="card-section">{esc(e["surface"])}</span>'
-                     f'<span class="card-date">{esc(", ".join(e["dates"]))}</span></div>'
-                     f'<div class="card-query">{qh}</div>'
-                     f'<div class="card-status">{"".join(pills)}</div><div class="stack">{"".join(inner)}</div>'
-                     f'<div class="card-links"><a href="/datasets/negative-of-the-negative/v2/register.json">register json</a>'
+            groups.setdefault(e["entity"], []).append(e)
+        order = [x["entity"] for x in panel["entities"] if x["entity"] in groups] + [k for k in groups if k not in ents]
+        for ek in order:
+            en = ents.get(ek, {"name": ek, "type": "not on the panel"})
+            addrs = []
+            for e in groups[ek]:
+                pills = [f'<span class="pill dim">{esc(e["surface"])}</span>', f'<span class="pill dim">{esc(e["auth"])}</span>',
+                         ('<span class="pill warn">archive present · also a capture</span>' if e["archive_present"] else '<span class="pill">archive absent</span>')]
+                if e.get("cites") is not None:
+                    pills.append(f'<span class="pill dim">{e["cites"]} source card{"" if e["cites"] == 1 else "s"}</span>')
+                obs = [e] + e["observations"][1:] if e["observations"] else [e]
+                inner = []
+                for ob in obs:
+                    tx = ob.get("transcript")
+                    body = (f'<pre style="white-space:pre-wrap;overflow-wrap:anywhere;font-family:var(--mono);font-size:.8em;color:#333">{cite_links(tx)}</pre>' if tx
+                            else f'<p>Held by the Capture Registry: <a href="/captures/{esc((ob.get("capture_ref") or {}).get("slug", ""))}/">{esc((ob.get("capture_ref") or {}).get("slug", ""))}</a></p>')
+                    cl = "".join(f'<li>{esc(str(x.get("n")))}. {esc(str(x.get("site")))} — {esc(str(x.get("title")))}</li>' for x in (ob.get("cite_list") or []))
+                    inner.append(det("", f'{esc(ob["date"])} · transcript', body + (f'<h3>Source cards</h3><ul>{cl}</ul>' if cl else "")
+                                     + f'<p class="meta">{esc(ob["obs_id"])} · {esc(ob.get("transcript_class") or "")} · {esc(ob.get("transcript_read") or "")}'
+                                     + (f' · sha256 {esc(ob["transcript_sha256"][:16])}…' if ob.get("transcript_sha256") else "") + '</p>'
+                                     + f'<p class="meta">Surface: {esc(ob.get("surface_basis") or "")}</p>'
+                                     + f'<p class="meta">Archive: {esc(ob.get("archive_basis") or "")}</p>', n=esc(ob["obs_id"])))
+                href = address_href(ek, e["q"])
+                qh = f'<a href="{href}">{esc(e["q"])}</a>' if href else esc(e["q"])
+                addrs.append(f'<div id="reg-{esc(e["slug"])}" style="margin:12px 0 4px;padding-top:10px;border-top:1px solid var(--rule,#e5e5e5)">'
+                             f'<p class="meta" style="margin:0 0 4px">at the address · {esc(", ".join(e["dates"]))}</p>'
+                             f'<div class="card-query" style="font-size:1em">{qh}</div><div class="card-status">{"".join(pills)}</div>'
+                             f'<div class="stack">{"".join(inner)}</div></div>')
+            n_a = len(groups[ek])
+            b.append(f'<div class="card" id="ent-{esc(ek)}"><div class="card-head"><span class="card-section">entity · type {esc(en["type"])}</span>'
+                     f'<span class="card-date">{n_a} address{"" if n_a == 1 else "es"}</span></div>'
+                     f'<div class="card-query">{esc(en["name"])}</div>'
+                     + "".join(addrs)
+                     + f'<div class="card-links"><a href="/datasets/negative-of-the-negative/v2/register.json">register json</a>'
                      f'<a href="/datasets/negative-of-the-negative/v2/register.schema.json">schema</a><a href="/scripts/non_intake.py">intake</a>'
-                     + (f'<a href="#row-{esc(e["panel_row"])}">composed row</a>' if e["panel_row"] in rows else "") + '</div></div>')
+                     + (f'<a href="#row-{esc(ek)}">composed row</a>' if ek in rows else "") + '</div></div>')
 
     # rows with compositions: one card per row, captures grammar
     b.append('<h2 id="rows">Rows composed</h2>')
@@ -554,16 +568,24 @@ def main():
                  + (f'<a href="{href}">address page</a>' if href else "") + '</div></div>')
         b.append("".join(c))
 
-    # panel: one entry per row
-    b.append(f'<h2 id="panel">The panel — {esc(panel["status"])}</h2><p class="sub">{esc(panel["rule"])}</p>')
+    # panel: one entry per entity, its addresses under it (keyed entity before address, ruled 2026-10-07)
+    b.append(f'<h2 id="panel">The panel — {esc(panel["status"])}</h2><p class="sub">{esc(panel["keying"])} {esc(panel["rule"])}</p>')
+    seen = {}
+    if regp.exists():
+        for e in reg["entries"]:
+            seen.setdefault(e["entity"], set()).add(e["q"])
     pl = []
-    for pr in panel["rows"]:
-        href = address_href(pr["row"], pr["address"])
-        nm = f'<a href="{href}">{esc(pr["address"])}</a>' if href else esc(pr["address"])
-        done = pr["row"] in rows
-        pl.append(f'<li><strong>{nm}</strong><span class="pill dim">type {esc(pr["type"])}</span><span class="pill dim">{esc(pr["source"])}</span>'
-                  + ('<span class="pill ok">composed</span>' if done else "") + f'<span class="stage">{md_inline(pr["stage"])}</span></li>')
-    b.append(det("", "All rows", f'<ul class="plist">{"".join(pl)}</ul>', n=f'{len(panel["rows"])} rows'))
+    for pr in panel["entities"]:
+        al = []
+        for ad in pr["addresses"]:
+            href = address_href(pr["entity"], ad["address"])
+            nm = f'<a href="{href}">{esc(ad["address"])}</a>' if href else esc(ad["address"])
+            al.append(f'<code>{nm}</code>' + (' <span class="pill ok">observed</span>' if ad["address"] in seen.get(pr["entity"], ()) else ""))
+        done = pr["entity"] in rows
+        pl.append(f'<li><strong>{esc(pr["name"])}</strong><span class="pill dim">type {esc(pr["type"])}</span><span class="pill dim">{esc(pr["source"])}</span>'
+                  + ('<span class="pill ok">composed</span>' if done else "") + f'<span class="stage">addresses: {" · ".join(al)}</span>'
+                  + f'<span class="stage">{md_inline(pr["stage"])}</span></li>')
+    b.append(det("", "All entities", f'<ul class="plist">{"".join(pl)}</ul>', n=f'{len(panel["entities"])} entities'))
     b.append('<h2 id="procedure">Procedure and data</h2><ul>'
              '<li>Specification: <a href="/s/records/1665/">#1665</a> (EA-NEGONT-02 v0.7, 2026-10-05), superseding <a href="/s/records/1664/">#1664</a> (v0.6, 2026-10-04)</li>'
              '<li>Traversal tool: <a href="/scripts/non_traverse.py">scripts/non_traverse.py</a> · configurations: <a href="/datasets/negative-of-the-negative/v2/panel/configs/">v2/panel/configs/</a></li>'
