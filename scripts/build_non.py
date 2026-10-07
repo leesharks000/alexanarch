@@ -587,7 +587,8 @@ def main():
         c.append('</div>')
         c.append(f'<div class="card-links"><a href="/datasets/negative-of-the-negative/v2/rows/{key}.json">row json</a>'
                  f'<a href="/{r["ledger"]["archive"]}">archive ledger</a><a href="/{r["ledger"]["selection"]}">selection readings</a>'
-                 f'<a href="/{r["ledger"]["audit"]}">extraction audit</a>'
+                 + (f'<a href="/{r["ledger"]["field"]}">field ledger</a>' if r["ledger"].get("field") else "")
+                 + (f'<a href="/{r["ledger"]["audit"]}">extraction audit</a>' if r["ledger"].get("audit") else '<span class="meta">extraction unaudited</span>')
                  + (f'<a href="/datasets/negative-of-the-negative/v2/traversal/{key}/">D/R/O traversal</a>' if key in trav else "")
                  + (f'<a href="{href}">address page</a>' if href else "") + '</div></div>')
         ROWH[key] = "".join(c)
