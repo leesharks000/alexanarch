@@ -2486,17 +2486,17 @@
       "deposit_number": 1032,
       "hex": "0414",
       "family": "ARCHIVAL",
-      "axn": "AXN:0414.ARCHIVAL.❌⚙️🗂️❤️🤙↗️",
-      "emoji": "❌⚙️🗂️❤️🤙↗️",
-      "hash": "ef324acfbedafd091135f54e738c50459a5c8ab327c8eca0926a198ce0f88c44",
-      "axn_canonical": "ef324acfbedafd091135f54e738c50459a5c8ab327c8eca0926a198ce0f88c44",
+      "axn": "AXN:0414.ARCHIVAL.💛🌺🟠💜⚡🐝",
+      "emoji": "💛🌺🟠💜⚡🐝",
+      "hash": "cd71c2ca137df1f1c94b954cc183f111d654010afced708a17c729d9c5e7ca2f",
+      "axn_canonical": "cd71c2ca137df1f1c94b954cc183f111d654010afced708a17c729d9c5e7ca2f",
       "clusters": [
-        "Liminal",
-        "Instrumental",
-        "Scriptural",
         "Signal",
-        "Gestural",
-        "Structural"
+        "Organic",
+        "Signal",
+        "Signal",
+        "Elemental",
+        "Organic"
       ],
       "axn_reading": "Threshold -> Method -> Text -> Alarm -> Touch -> Direction",
       "root_axn": "AXN:0414.ARCHIVAL",
@@ -2507,7 +2507,7 @@
       "content_type": "Working paper",
       "license": "CC-BY-4.0",
       "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
-      "version": "v0.1-semi",
+      "version": "v0.2-restored",
       "description": "Semi-restored deposit for dead DOI 10.5281/zenodo.20735337 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. revelationfirst.com / revelationfirst.org — the thesis site for the Revelation First argument: that the Apocalypse of John was the first book composed in the New Testament, preceding Paul's letters and the Synoptic Gospels.\nThe thesis builds on Robinson (Redating the New Testament, 1976) and Gentry (Before Jerusalem Fell, 1989), extends them with the literary-genetic argument (the midrashim transf",
       "keywords": [
         "orphan restoration",
@@ -2524,7 +2524,13 @@
         "zenodo_http": 410,
         "datacite_state": "findable",
         "captured": "2026-07-03T21:54:51Z",
-        "fulltext": "pending"
+        "fulltext": "restored",
+        "fulltext_source": "https://github.com/leesharks000/revelationfirst-com/blob/18d3eed852224e22129d98787856cdaa1af4ccf9/STAGING.md",
+        "restored_at": "2026-10-07",
+        "axn_before_restoration": "AXN:0414.ARCHIVAL.❌⚙️🗂️❤️🤙↗️",
+        "superseded_body_sha256": "558c7cb0080bce122f21e50d67644ececb6f034645270c89149bc45e38e038cb",
+        "superseded_body": "blog-mirror conversion of the staging document, seated 2026-07-20",
+        "ruled_by": "operator, 2026-10-07: 'lets make these fixes'"
       },
       "zenodo_dois": [
         "10.5281/zenodo.20735337"
@@ -2540,26 +2546,17 @@
       "body_status": {
         "class": "full",
         "lacuna": false,
-        "recovery_status": "COMPLETE",
-        "residual_chars": 10482,
-        "audited_at": "2026-07-17T04:49:17.789813Z",
-        "audit_version": "v3-dual-store+recovery-map",
-        "semi_audit": "2026-07-20 content discriminator: body is restoration apparatus (tombstone tail), COMPLETE flag was false",
-        "flag_corrected_at": "2026-07-20T11:08:44Z",
-        "recovered_from": "https://mindcontrolpoems.blogspot.com/2026/06/revelation-first-staging-document-for.html",
-        "recovered_at": "2026-07-20T11:19:44Z",
-        "note": "address-resolver pass 2, gate 0.54",
-        "class_before_T2": "full",
-        "reclassified_by": "EA-AVAILABILITY-INTEGRITY-01-T2b",
-        "reclassified_at": "2026-07-28T18:55:42.116782+00:00",
-        "class_before_T2b": "metadata_capture",
-        "note_T2b": "Genuine inversion: body carries restored full text under stale semi-restored content_type; typing axes now govern.",
-        "measured_prose_words": 1173,
-        "measured_at": "2026-07-31",
-        "work_sha256": "97214e1e5f117d9c398a45712291d13d42f6128190091a1c12b684417e0152ec",
-        "prior_bytes_sha256": "558c7cb0080bce122f21e50d67644ececb6f034645270c89149bc45e38e038cb",
-        "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 15 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
-        "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write."
+        "recovery_status": "RESTORED-20261007",
+        "recovered_from": "https://github.com/leesharks000/revelationfirst-com/blob/18d3eed852224e22129d98787856cdaa1af4ccf9/STAGING.md",
+        "residual_chars": 11216,
+        "audited_at": "2026-10-07T20:04:49.099742+00:00",
+        "audit_version": "repair_misseated_bodies-20261007",
+        "class_before_restoration": "full",
+        "superseded_status": {
+          "recovery_status": "COMPLETE",
+          "recovered_from": "https://mindcontrolpoems.blogspot.com/2026/06/revelation-first-staging-document-for.html",
+          "semi_audit": "2026-07-20 content discriminator: body is restoration apparatus (tombstone tail), COMPLETE flag was false"
+        }
       },
       "references_concepts": [
         "Constitution",
@@ -2641,6 +2638,17 @@
       "line_basis": "derived",
       "surfaces": [
         "https://revelationfirst.com/"
+      ],
+      "reading": "Alarm -> Growth -> Alarm -> Alarm -> Force -> Growth",
+      "remediation_note": "2026-10-07 BODY RETURNED TO ITS WORK (in-place, recorded correction): the body seated 2026-07-20 from a blog mirror was the staging document in a degraded conversion (opening characters cut: 'VELATION FIRST'; headings, emphasis, rules and tables flattened); the canonical STAGING.md from leesharks000/revelationfirst-com (git blob be2b3e566d0404039a3d7b83f32cfffbf125ac5a) is seated.",
+      "record_modifications": [
+        {
+          "date": "2026-10-07",
+          "field": "canonical_text",
+          "note": "the body seated 2026-07-20 from a blog mirror was the staging document in a degraded conversion (opening characters cut: 'VELATION FIRST'; headings, emphasis, rules and tables flattened); the canonical STAGING.md from leesharks000/revelationfirst-com (git blob be2b3e566d0404039a3d7b83f32cfffbf125ac5a) is seated.",
+          "axn_before": "AXN:0414.ARCHIVAL.❌⚙️🗂️❤️🤙↗️",
+          "axn_after": "AXN:0414.ARCHIVAL.💛🌺🟠💜⚡🐝"
+        }
       ]
     },
     {

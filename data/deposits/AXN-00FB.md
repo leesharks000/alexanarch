@@ -1,4 +1,14 @@
 # APZPZ C: ΦΑΙΝΕΤΑΙ ΜΟΙ — Sappho 31 with Reconstructed Fourth Stanza
+
+**Lee Sharks** · restored 2026-10-07
+
+**AXN:** AXN:00FB — Alexanarch deposit #436 (self-reference in root form by pre-hash necessity)
+**Restoration status:** RESTORED (v0.2) — the record's original seated text (2026-06-20), byte-identical to its deposit wrapper, returned as the canonical body. The 2026-08-05 recovery wave had seated the text of #1048 (EA-ERRATUM-SAPPHO31-STANZA-02) here under a title-overlap probe; that work is held whole at #1048.
+**Dead DOI:** 10.5281/zenodo.18459573 — severed 2026-06-19.
+
+---
+
+# APZPZ C: ΦΑΙΝΕΤΑΙ ΜΟΙ — Sappho 31 with Reconstructed Fourth Stanza
 ## DOI: 10.5281/zenodo.18459573
 
 
