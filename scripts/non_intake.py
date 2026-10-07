@@ -24,8 +24,10 @@ registers carries one obs_id in both.
 THE STEPS
 ---------
   1. ADMIT      the Capture Registry's minimum (transcript, date, surface, auth as attested, ev) plus the
-                panel row the address belongs to. /non admits any composition at a panel address: a null,
-                a refusal, a body with no source is a transcript (spec §2.2).
+                entity the run seeks. /non is keyed to entity before address (ruled 2026-10-07): the entity
+                must be on the panel; the address is whatever string was issued to find it, and needs no
+                panel entry of its own. Any composition is admitted: a null, a refusal, a body with no
+                source is a transcript (spec §2.2).
   2. ROUTE      exact issued string on the same surface → a later observation of the existing entry;
                 otherwise a new entry.
   3. NORMALISE  clean the transcript; keep the raw bytes and the list of what was removed.
@@ -70,7 +72,7 @@ def ids(q, date, surface):
 
 
 def admit(d, panel):
-    req = ["q", "date", "surface", "auth", "ev", "panel_row"]
+    req = ["q", "date", "surface", "auth", "ev", "entity"]
     if d.get("ev") != "capture":
         req.append("transcript")
     missing = [k for k in req if d.get(k) in (None, "", "null")]
@@ -78,11 +80,11 @@ def admit(d, panel):
         raise Refused("ADMIT refused — missing: %s" % missing)
     if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", d["date"]):
         raise Refused("ADMIT refused — date must be YYYY-MM-DD (Michigan local)")
-    rows = {r["row"]: r for r in panel["rows"]}
-    if d["panel_row"] not in rows:
-        raise Refused("ADMIT refused — panel_row %r is not on the panel (panel/panel.json). /non admits compositions "
-                      "at the panel's addresses; add the row to the panel first, in its own commit." % d["panel_row"])
-    return rows[d["panel_row"]]
+    ents = {e["entity"]: e for e in panel["entities"]}
+    if d["entity"] not in ents:
+        raise Refused("ADMIT refused — entity %r is not on the panel (panel/panel.json). /non constructs the entity before the "
+                      "address at which it is found; add the entity to the panel first, in its own commit." % d["entity"])
+    return ents[d["entity"]]
 
 
 def archive_presence(d, text):
@@ -155,7 +157,7 @@ def seat(d, reg, schema, panel):
         "slug": d.get("slug") or (re.sub(r"[^a-z0-9]+", "-", d["q"].lower()).strip("-")[:44].strip("-") + "-" + d["date"].replace("-", "")),
         "addr_id": addr_id, "obs_id": obs_id, "q": d["q"], "date": d["date"], "surface": d["surface"],
         "surface_basis": d.get("surface_basis"), "auth": d["auth"], "auth_basis": d.get("auth_basis"), "ev": d["ev"],
-        "panel_row": d["panel_row"], "transcript": text, "transcript_raw": raw if d["ev"] != "capture" else None,
+        "entity": d["entity"], "transcript": text, "transcript_raw": raw if d["ev"] != "capture" else None,
         "transcript_removed": [list(x) for x in removed] if d["ev"] != "capture" else None,
         "transcript_sha256": hashlib.sha256(text.encode("utf-8")).hexdigest() if text else None,
         "transcript_class": d.get("transcript_class"), "transcript_complete": d.get("transcript_complete"),
@@ -202,7 +204,7 @@ def main():
     except Refused as ex:
         print(ex); return 1
     o = e if kind == "new" else e["observations"][-1]
-    print(f"1. ADMIT      ok — panel row {d['panel_row']}\n2. ROUTE      {kind.upper()} — «{e['q']}» on {e['surface']} ({e['addr_id']}, {o['obs_id']})\n"
+    print(f"1. ADMIT      ok — entity {d['entity']}\n2. ROUTE      {kind.upper()} — «{e['q']}» on {e['surface']} ({e['addr_id']}, {o['obs_id']})\n"
           f"3. NORMALISE  removed: {o.get('transcript_removed')}\n4. ARCHIVE    {'PRESENT — ' + o['archive_basis'] if o['archive_present'] else 'absent — ' + o['archive_basis']}\n"
           f"5. VALIDATE   ok against register.schema.json\n6. ENTRY      slug {e['slug']}")
     if "--seat" not in sys.argv:

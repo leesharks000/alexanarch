@@ -21,7 +21,7 @@ assert raw.startswith('"Howl" by [Allen Ginsberg]') and "Wikipedia +3" in raw an
 howl = {
  "q": "ginsberg howl", "date": "2026-10-07", "surface": "Google AI Overview",
  "surface_basis": "Default rule (operator, 2026-10-01): sessions start in Overview unless the operator says AI Mode; the message names AI Mode for the Theophrastus run only.",
- "auth": AUTH, "auth_basis": AUTH_BASIS, "ev": "paste", "panel_row": "ginsberg-howl", "transcript": raw,
+ "auth": AUTH, "auth_basis": AUTH_BASIS, "ev": "paste", "entity": "howl", "transcript": raw,
  "transcript_class": "CAPTURE-TIME VERBATIM RECORD — composition as pasted, with its two source chips",
  "transcript_complete": "body (four sections) and the offer menu as pasted; no card rail or organic layer in the paste",
  "transcript_read": "READ IN FULL 2026-10-07", "cites": 2,
@@ -42,7 +42,7 @@ spec = [(rail[k], rail[k + 1], rail[k + 2], None) for k in range(0, 27, 3)]
 theo = {
  "q": "theopheastus", "date": "2026-10-07", "surface": "Google AI Mode",
  "surface_basis": "'ai mode: theopheastus' — operator, 2026-10-07 09:08 EDT, labelling the attachment.",
- "auth": AUTH, "auth_basis": AUTH_BASIS, "ev": "paste", "panel_row": "theopheastus", "transcript": raw,
+ "auth": AUTH, "auth_basis": AUTH_BASIS, "ev": "paste", "entity": "theophrastus", "transcript": raw,
  "transcript_class": "CAPTURE-TIME VERBATIM RECORD — composition and card rail as attached",
  "transcript_complete": "complete as attached: body, offer menu, disclaimer and a rail of 9 cards; the query line is not in the attachment and is taken from the operator's label",
  "transcript_read": "READ IN FULL 2026-10-07", "cites": 9, "cite_list": cards(spec),
@@ -65,7 +65,7 @@ for s, t, sn, _ in spec:
 soc = {
  "q": "the socratic problem", "date": "2026-10-07", "surface": "Google AI Overview",
  "surface_basis": "Default rule (operator, 2026-10-01): sessions start in Overview unless the operator says AI Mode. The 'AI Mode Conversation' header is the expanded Overview's residue, recorded as AIO at glyphic-checksum-aio-20261001.",
- "auth": AUTH, "auth_basis": AUTH_BASIS, "ev": "paste", "panel_row": "the-socratic-problem", "transcript": raw,
+ "auth": AUTH, "auth_basis": AUTH_BASIS, "ev": "paste", "entity": "the-socratic-problem", "transcript": raw,
  "transcript_class": "CAPTURE-TIME VERBATIM RECORD — composition and source strip as pasted",
  "transcript_complete": "complete as pasted: body with inline citation markers, offer menu, source strip of 7 cards, disclaimer",
  "transcript_read": "READ IN FULL 2026-10-07", "cites": 7, "cite_list": cards(spec),

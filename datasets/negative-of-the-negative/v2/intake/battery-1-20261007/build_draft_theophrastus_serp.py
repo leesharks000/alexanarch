@@ -24,7 +24,7 @@ d = {
                    "null composition (spec §2.2), from the results page the operator attached at 09:24."),
  "auth": "not attested",
  "auth_basis": "The attachment of 09:24 carries no statement; the page shows 'Sign in'. The 09:21 attestation ('signed out, incognito') was given for battery 1's three runs.",
- "ev": "paste", "panel_row": "theophrastus", "transcript": raw,
+ "ev": "paste", "entity": "theophrastus", "transcript": raw,
  "transcript_class": "CAPTURE-TIME VERBATIM RECORD — results page with no Overview: knowledge panel, organic layer, footer",
  "transcript_complete": "complete as attached: tab row, knowledge panel (images, born/died, the Wikipedia extract, quick facts), People also ask, organic results to the footer",
  "transcript_read": "READ IN FULL 2026-10-07", "cites": 1,
