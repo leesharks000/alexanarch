@@ -1,0 +1,2069 @@
+[
+ {
+  "id": "Q931-01",
+  "dep": 931,
+  "claim": "The model-independence claim for the deployed L1 anomaly systems (AXOL1TL, CICADA, GELATO) cannot be sustained on signal-template agnosticism alone.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "Abstract ¶1",
+  "quote": "We argue that the claim of model-independence for the autoencoder-based and encoder-only anomaly detection systems currently deployed at the CMS and ATLAS Level-1 triggers — AXOL1TL (CMS, encoder-side latent-prior score), CICADA (CMS, distilled surrogate of a reconstruction-loss teacher), and GELATO (ATLAS, staged Level-1 and High-Level Trigger anomaly scores) — cannot be sustained on the strength of *signal-template agnosticism* alone.",
+  "kernel": true,
+  "const": true,
+  "lineage": "agnosticism is not independence",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q931-02",
+  "dep": 931,
+  "claim": "The literature's narrow sense of 'model-independent' (no named BSM hypothesis needed) is accepted as accurate.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§1.1",
+  "quote": "The deployed LHC anomaly-detection literature uses the phrase *model-independent* in a specific and bounded sense: no named Beyond-Standard-Model signal hypothesis is required to deploy the score. The systems are *signal-template-agnostic* at the final scoring stage. We accept this narrower claim as accurate to the literature.",
+  "kernel": false,
+  "const": false,
+  "lineage": "agnosticism is not independence",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q931-03",
+  "dep": 931,
+  "claim": "The CMS and ATLAS literatures are aware of local failure modes; these defences are real.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§1.2",
+  "quote": "The CMS and ATLAS literatures are genuinely aware of local failure modes of deployed anomaly detection.",
+  "kernel": false,
+  "const": false,
+  "lineage": "local awareness acknowledged",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q931-04",
+  "dep": 931,
+  "claim": "Foreclosure is structurally present in every classifier-mediated LHC trigger; whether it has composed into recursive collapse is the missing measurement.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D",
+   "O"
+  ],
+  "locus": "Abstract ¶4",
+  "quote": "foreclosure is a structurally present feature of every classifier-mediated trigger architecture deployed at the LHC, and whether accumulated foreclosure has composed longitudinally into recursive phenomenal collapse is precisely the missing measurement.",
+  "kernel": true,
+  "const": true,
+  "lineage": "foreclosure structural (Claim A)",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q931-05",
+  "dep": 931,
+  "claim": "The paper does not claim classifier collapse has occurred at the LHC anomaly streams.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "§1.4",
+  "quote": "We do not claim that classifier collapse has occurred at the LHC anomaly streams.",
+  "kernel": true,
+  "const": false,
+  "lineage": "collapse not established (Claim B)",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q931-06",
+  "dep": 931,
+  "claim": "AXOL1TL deploys only the encoder of a VAE; its score is the sum of squared latent means.",
+  "kind": "finding",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "§2.1",
+  "quote": "AXOL1TL (CMS-DP-2025-061) deploys only the encoder of a variational autoencoder. The operational anomaly score is the sum of squared latent means:",
+  "kernel": false,
+  "const": false,
+  "lineage": "deployed score families",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q931-07",
+  "dep": 931,
+  "claim": "Finke et al.: an autoencoder trained on QCD flags top jets, trained on top it does not flag QCD.",
+  "kind": "finding",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "§2.2",
+  "quote": "an autoencoder trained on QCD jets successfully treated top jets as anomalies, while the same architecture trained on top jets did not recognize QCD jets as anomalous",
+  "kernel": false,
+  "const": false,
+  "lineage": "Finke asymmetry",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q931-08",
+  "dep": 931,
+  "claim": "Single-direction success does not validate sensitivity to anomalies of different structure.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§2.2",
+  "quote": "single-direction success does not validate sensitivity to anomalies whose structure differs from those tested",
+  "kernel": false,
+  "const": false,
+  "lineage": "Finke asymmetry",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q931-09",
+  "dep": 931,
+  "claim": "None of the deployed scores directly measures physical novelty.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§2.5",
+  "quote": "None of the deployed scores is a measurement of physical novelty in any direct sense.",
+  "kernel": false,
+  "const": false,
+  "lineage": "score is not novelty",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q931-10",
+  "dep": 931,
+  "claim": "OAR defined: the probability that events from Q fall on the ordinary side of the gate.",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§3.1",
+  "quote": "The OAR is the probability that events drawn from $Q$ fall on the ordinary side of the deployed anomaly gate.",
+  "kernel": false,
+  "const": true,
+  "lineage": "OAR / BAR / IAI defined",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q931-11",
+  "dep": 931,
+  "claim": "The open-world OAR is a family indexed by Q, not a scalar; no defensible distribution over all unknowns.",
+  "kind": "limit",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§3.1",
+  "quote": "The open-world OAR is a family of quantities indexed by $Q$, not a universal scalar. There is no defensible probability distribution over all unknown unknowns.",
+  "kernel": false,
+  "const": false,
+  "lineage": "no-bounds discipline",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q931-12",
+  "dep": 931,
+  "claim": "BAR neither upper- nor lower-bounds OAR without linking assumptions.",
+  "kind": "limit",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§3.2",
+  "quote": "BAR values neither upper- nor lower-bound OAR for an unobserved $Q$ without explicit assumptions linking the benchmark distributions to that $Q$.",
+  "kernel": true,
+  "const": false,
+  "lineage": "no-bounds discipline",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q931-13",
+  "dep": 931,
+  "claim": "IAI measures direction-dependence on a tested pair at a specified rate.",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§3.3",
+  "quote": "IAI measures direction-dependence on the tested pair at the specified operating rate.",
+  "kernel": false,
+  "const": false,
+  "lineage": "OAR / BAR / IAI defined",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q931-14",
+  "dep": 931,
+  "claim": "Validation on named simulated signals does not establish low BAR or small IAI; the literature measures neither.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§3.4",
+  "quote": "The institutional claim becomes: validation against named simulated signals does not establish that BAR is low across a pre-registered held-out panel, and does not establish that IAI is small. Both should be measured. The current literature does neither.",
+  "kernel": false,
+  "const": false,
+  "lineage": "unmeasured in the literature",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q931-15",
+  "dep": 931,
+  "claim": "Three protocols: inversion battery and BAR audit; prospective frozen replay bank; cross-representation disagreement preservation.",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§8 Finding 7",
+  "quote": "Three protocols are proposed: paired inversion battery and BAR audit; prospective frozen replay bank for compatible future algorithms; cross-representation disagreement preservation with quantile-normalized scores.",
+  "kernel": false,
+  "const": false,
+  "lineage": "three protocols",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q931-16",
+  "dep": 931,
+  "claim": "Per-stage retention maps should accompany any anomaly-detection publication.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§8 Finding 8",
+  "quote": "Per-stage retention maps should accompany any anomaly-detection publication as a documentation standard. Without retention maps, anomaly-detection results report what the trigger allows to count as physical reality, not what physical reality is.",
+  "kernel": false,
+  "const": false,
+  "lineage": "per-stage retention maps",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q931-17",
+  "dep": 931,
+  "claim": "Existing defences are not absent or worthless; they are not measurements of BAR or IAI.",
+  "kind": "limit",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§6",
+  "quote": "The argument is not that the existing defenses are absent or worthless. It is that the existing defenses do not constitute, and have not been claimed to constitute, measurement of the BAR or the IAI.",
+  "kernel": false,
+  "const": false,
+  "lineage": "local awareness acknowledged",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q931-18",
+  "dep": 931,
+  "claim": "Falsifier: negligible BAR across all deployed systems and held-out families would bound the concern.",
+  "kind": "falsifier",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§8.1",
+  "quote": "If the BAR is measured on the pre-registered deployed-model held-out panel and found to be negligible (e.g., $< 10^{-4}$) for all deployed systems against all held-out families, the held-out-family assimilation concern would be shown to be empirically bounded at levels that do not threaten the narrow \"model-independent\" claim.",
+  "kernel": false,
+  "const": false,
+  "lineage": "falsifiers stated",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q931-19",
+  "dep": 931,
+  "claim": "No such result would establish open-world OAR is zero; that is structurally not measurable.",
+  "kind": "limit",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§8.1",
+  "quote": "None of these results would establish that the open-world OAR is zero; that is structurally not measurable.",
+  "kernel": false,
+  "const": false,
+  "lineage": "no-bounds discipline",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q932-01",
+  "dep": 932,
+  "claim": "Anomaly detectors on physical reality cannot detect what their architecture foreclosed, and validation closed under its assumptions cannot detect this.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§2",
+  "quote": "Anomaly detection systems deployed on physical reality cannot detect what their architecture has foreclosed, and the validation framework — closed under its own assumptions — cannot detect this failure.",
+  "kernel": true,
+  "const": false,
+  "lineage": "detector inherits ontology",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q932-02",
+  "dep": 932,
+  "claim": "Claim A: foreclosure is structurally present in every LHC classifier-mediated trigger; institutional claims remain hypotheses for audit.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D",
+   "O"
+  ],
+  "locus": "§2.2 Claim A",
+  "quote": "Foreclosure is structurally present in every classifier-mediated trigger architecture deployed at the LHC. The witnesses propose eight foreclosure mechanisms and twelve associated institutional beliefs; published trigger systems instantiate several of the mechanisms in their corresponding architectural forms; the institutional claims remain hypotheses for audit rather than established measurements of collaboration-wide belief.",
+  "kernel": true,
+  "const": true,
+  "lineage": "foreclosure structural (Claim A)",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q932-03",
+  "dep": 932,
+  "claim": "Claim B, marked stronger and not empirically established: recursive collapse has occurred or is occurring at the deployed triggers.",
+  "kind": "limit",
+  "modality": "hypothesis",
+  "strata": [
+   "D"
+  ],
+  "locus": "§2.2 Claim B",
+  "quote": "**Claim B (stronger, not empirically established):** Recursive phenomenal collapse has occurred or is occurring at the deployed LHC triggers.",
+  "kernel": true,
+  "const": true,
+  "lineage": "collapse not established (Claim B)",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q932-04",
+  "dep": 932,
+  "claim": "Corrected formulation: foreclosure is structural; recursive collapse is an unmeasured possible consequence.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D",
+   "O"
+  ],
+  "locus": "§2.2",
+  "quote": "Foreclosure is an active structural feature. Recursive phenomenal collapse is an unmeasured possible consequence of accumulated foreclosure and feedback.",
+  "kernel": false,
+  "const": true,
+  "lineage": "foreclosure structural; collapse unmeasured",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q932-05",
+  "dep": 932,
+  "claim": "The classifier constitutes the data; the threshold is an ontology cap.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§2.3",
+  "quote": "the classifier does not merely filter data; it constitutes the data",
+  "kernel": false,
+  "const": false,
+  "lineage": "classifier constitutes data",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q932-06",
+  "dep": 932,
+  "claim": "Internal validation cannot by itself establish sensitivity to distinctions removed upstream; whether collapse occurred is empirical.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§2.4",
+  "quote": "Standard internal validation can test behavior within those layers, but it cannot by itself establish sensitivity to distinctions already removed upstream. Whether repeated local foreclosure has composed into longitudinal classifier collapse is an empirical question.",
+  "kernel": false,
+  "const": false,
+  "lineage": "foreclosure structural; collapse unmeasured",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q932-07",
+  "dep": 932,
+  "claim": "Deployed score forms: AXOL1TL, CICADA (CMS L1), GELATO L1 and HLT (ATLAS).",
+  "kind": "finding",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "§3 Finding 3",
+  "quote": "The deployed LHC anomaly score forms are: AXOL1TL (CMS L1, encoder-side latent-prior); CICADA (CMS L1, distilled reconstruction-loss surrogate); GELATO L1 (ATLAS L1, encoder-side); GELATO HLT (ATLAS HLT, reconstruction-based).",
+  "kernel": false,
+  "const": false,
+  "lineage": "deployed score families",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q932-08",
+  "dep": 932,
+  "claim": "Finke is the counterexample to inference from single-direction success; it does not quantify assimilation at the deployed triggers.",
+  "kind": "limit",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§3 Finding 2",
+  "quote": "The Finke et al. (2021) result is the empirical counterexample to universal inference from single-direction anomaly-detection success. It does not, by itself, quantify open-world assimilation at the deployed LHC triggers.",
+  "kernel": false,
+  "const": false,
+  "lineage": "Finke asymmetry",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q932-09",
+  "dep": 932,
+  "claim": "The v0.1 lower bound and v0.2 upper bound on the OAR are both retracted.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "O"
+  ],
+  "locus": "§3 Finding 4",
+  "quote": "The v0.1 lower-bound claim ($\\mathrm{OAR} \\geq \\Delta_{\\max}$) and the v0.2 upper-bound claim (OAR bounded above by structurally-similar BARs) are both retracted as synthesis-overreach.",
+  "kernel": false,
+  "const": false,
+  "lineage": "no-bounds discipline",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q932-10",
+  "dep": 932,
+  "claim": "Homology to repository classification, summarization, ranking, moderation and clinical support is a hypothesis to test domain by domain.",
+  "kind": "claim",
+  "modality": "hypothesis",
+  "strata": [
+   "R"
+  ],
+  "locus": "§3 Finding 9",
+  "quote": "This is a homology hypothesis to be tested domain by domain, not an assertion that every classifier-mediated system instantiates identical mechanisms or rates.",
+  "kernel": false,
+  "const": false,
+  "lineage": "cross-domain homology",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q932-11",
+  "dep": 932,
+  "claim": "Falsifier: the listed measurements, if negative, would show the structural-feature claim overstated.",
+  "kind": "falsifier",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§3.1",
+  "quote": "then the claim that foreclosure is an active structural feature requiring architectural response would be shown to be overstated.",
+  "kernel": false,
+  "const": false,
+  "lineage": "falsifiers stated",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q932-12",
+  "dep": 932,
+  "claim": "Collisions occur whether or not the trigger sees them; the LHC is the methodologically optimal proof-of-concept site.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§5.1",
+  "quote": "Collisions occur whether or not the trigger sees them.",
+  "kernel": false,
+  "const": false,
+  "lineage": "classifier constitutes data",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q932-13",
+  "dep": 932,
+  "claim": "W1 defines classifier collapse: a discriminative model trained on a known distribution progressively loses capacity to represent or retain events outside it.",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "Appendix W1 §0",
+  "quote": "in physical systems is the degenerative process by which a discriminative model, trained exclusively or dominantly on a known distribution of physical events, progressively loses the capacity to represent, detect, or retain events that fall outside that distribution.",
+  "kernel": false,
+  "const": false,
+  "lineage": "classifier collapse defined (W1)",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q932-14",
+  "dep": 932,
+  "claim": "The witnesses' 'theorems' are treated as arguments.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "O"
+  ],
+  "locus": "Appendix A",
+  "quote": "The witnesses' \"Irretrievability Theorem\" (Witness 1) and \"Inevitability Theorem\" (Witness 2) are treated in this deposit as **Irretrievability Argument** and **Inevitability Argument** respectively, preserving force without overstating formal status.",
+  "kernel": false,
+  "const": false,
+  "lineage": "theorems as arguments",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q932-15",
+  "dep": 932,
+  "claim": "W2 (witness, polemical register): the collapse is here and operating.",
+  "kind": "claim",
+  "modality": "contested",
+  "strata": [
+   "D"
+  ],
+  "locus": "Appendix W2 closing",
+  "quote": "The collapse is not coming. It is here. It is operating.",
+  "kernel": false,
+  "const": false,
+  "lineage": "collapse already operating (W2)",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q932-16",
+  "dep": 932,
+  "claim": "W3: the ingredients are visible; full recursive collapse has not been demonstrated.",
+  "kind": "limit",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "Appendix W3 §4",
+  "quote": "The ingredients are visible. Full recursive collapse has not been demonstrated.",
+  "kernel": false,
+  "const": false,
+  "lineage": "collapse not established (Claim B)",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q932-17",
+  "dep": 932,
+  "claim": "W3: no evidence that CERN discards novel physics as bad detector data; that would be unsupported.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "Appendix W3 §2 Mechanism J",
+  "quote": "I found no evidence that CERN simply discards novel physics as bad detector data. That would be an unsupported claim.",
+  "kernel": false,
+  "const": false,
+  "lineage": "collapse not established (Claim B)",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q932-18",
+  "dep": 932,
+  "claim": "Anomaly detection does not prevent ontological collapse when the detector inherits the ontology in question.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§8.3; Appendix W3 §5",
+  "quote": "Anomaly detection does not prevent ontological collapse when the anomaly detector inherits the ontology whose collapse is in question.",
+  "kernel": false,
+  "const": false,
+  "lineage": "detector inherits ontology",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q933-01",
+  "dep": 933,
+  "claim": "An architecture for auditable foreclosure: not free of foreclosure (impossible) but one where it is visible, measurable, reviewable.",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§8 Finding 1",
+  "quote": "An architecture for auditable foreclosure is not a system free of foreclosure (impossible) but a system in which foreclosure is visible, measurable, and architecturally reviewable.",
+  "kernel": true,
+  "const": true,
+  "lineage": "auditable foreclosure",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q933-02",
+  "dep": 933,
+  "claim": "A classifier that foreclosed nothing would not classify.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§1.1",
+  "quote": "A classifier that did not foreclose anything would not classify.",
+  "kernel": false,
+  "const": false,
+  "lineage": "auditable foreclosure",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q933-03",
+  "dep": 933,
+  "claim": "Five features: abstention/noncoverage; cross-representation disagreement; prospective anchor; per-stage retention map; audited noncoverage output.",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§8 Finding 2",
+  "quote": "Five features compose the architectural target: abstention and estimated noncoverage; cross-representation disagreement preservation; temporal invariance via prospective anchor preservation for compatible future algorithms; per-stage retention mapping as architectural property; audited noncoverage estimation as first-class output.",
+  "kernel": false,
+  "const": false,
+  "lineage": "auditable foreclosure",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q933-04",
+  "dep": 933,
+  "claim": "Noncoverage estimation is not novelty detection.",
+  "kind": "limit",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§2.1",
+  "quote": "Noncoverage estimation is not novelty detection.",
+  "kernel": false,
+  "const": false,
+  "lineage": "auditable foreclosure",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q933-05",
+  "dep": 933,
+  "claim": "None of the architectures addresses detector-level, theoretical-language, institutional, stress-quality or bandwidth-base foreclosure; necessary, not sufficient.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "§8 Finding 5",
+  "quote": "None of the architectures addresses detector-level, theoretical-language, institutional, adversarial-stress quality, or bandwidth-base foreclosure. The architectural alternative is necessary but not sufficient.",
+  "kernel": true,
+  "const": false,
+  "lineage": "auditable foreclosure",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q933-06",
+  "dep": 933,
+  "claim": "Feasibility for any specific deployment is not established by the document.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "§9",
+  "quote": "Feasibility for any specific deployment has not been established by this document.",
+  "kernel": false,
+  "const": false,
+  "lineage": "auditable foreclosure",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q934-01",
+  "dep": 934,
+  "claim": "v0.2: HEP has not ceased to be physics; its empirical faculty has become inseparable from machine-mediated representation and selection.",
+  "kind": "claim",
+  "modality": "contested",
+  "strata": [
+   "D"
+  ],
+  "locus": "§7 Finding 1",
+  "quote": "This manifesto argues that frontier experimental high-energy physics has not ceased to be physics, but its empirical faculty has become inseparable from machine-mediated representation, reconstruction, classification, and real-time selection.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the inversion (HEP as ML discipline)",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q934-02",
+  "dep": 934,
+  "claim": "v0.2: the form is authority without integrated self-audit; local self-knowledge of failure modes exists in the literature.",
+  "kind": "claim",
+  "modality": "contested",
+  "strata": [
+   "D"
+  ],
+  "locus": "§7 Finding 5",
+  "quote": "The disciplinary form is *authority without integrated self-audit*. The discipline possesses both physical authority and formidable ML facility. Local technical self-knowledge of classifier failure modes exists in the literature.",
+  "kernel": false,
+  "const": false,
+  "lineage": "authority without facility",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q934-03",
+  "dep": 934,
+  "claim": "v0.2: Zenodo and the LHC trigger are not the same institution or object; they share a foreclosure topology.",
+  "kind": "claim",
+  "modality": "contested",
+  "strata": [
+   "R"
+  ],
+  "locus": "§7 Finding 7",
+  "quote": "The Zenodo termination and the LHC trigger system are not the same institution and do not operate on the same kind of object. They instantiate the same foreclosure topology under radically different material, institutional, and governance conditions.",
+  "kernel": false,
+  "const": false,
+  "lineage": "Zenodo and the trigger",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q934-04",
+  "dep": 934,
+  "claim": "Retained fraction ~2.5e-5; it does not demonstrate wrongdoing and is not an anomaly-trigger rejection rate.",
+  "kind": "limit",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§7 Finding 8",
+  "quote": "At the LHC, the retained fraction of physical interactions is approximately $2.5 \\times 10^{-5}$; the discarded fraction is approximately 99.9975%. This number makes the epistemic condition legible. It does not demonstrate wrongdoing and should not be confused with an anomaly-trigger rejection rate.",
+  "kernel": false,
+  "const": false,
+  "lineage": "retention fraction",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q935-01",
+  "dep": 935,
+  "claim": "Frontier experimental HEP has, in its operational core, become an ML discipline while retaining physics's institutional authority.",
+  "kind": "claim",
+  "modality": "contested",
+  "strata": [
+   "D"
+  ],
+  "locus": "Abstract",
+  "quote": "Frontier experimental high-energy physics has, in its operational core, become a machine learning discipline while retaining the institutional authority of physics.",
+  "kernel": true,
+  "const": false,
+  "lineage": "the inversion (HEP as ML discipline)",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q935-02",
+  "dep": 935,
+  "claim": "v0.3 records that v0.2 dampened the thesis until it was unidentifiable, and restores v0.1's wording.",
+  "kind": "self-description",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "Note on v0.3",
+  "quote": "The v0.2 perfective sweep responded to Kimi and ChatGPT third-round audits by dampening the manifesto's central thesis to the point where a lay reader could no longer identify what was being claimed. The v0.2 deposit (AXN:03B1, deposit #934) stands as the record of that over-correction. v0.3 restores v0.1's precise central-claim wording",
+  "kernel": false,
+  "const": false,
+  "lineage": "the inversion (HEP as ML discipline)",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q935-03",
+  "dep": 935,
+  "claim": "W04: HEP has not ceased to be physics, but its empirical faculty has increasingly become an ML system.",
+  "kind": "claim",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "§1 (W04)",
+  "quote": "High-energy physics has not ceased to be physics, but its empirical faculty has increasingly become a machine-learning system.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the inversion (HEP as ML discipline)",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q935-04",
+  "dep": 935,
+  "claim": "Endogenous sophon: classifier collapse breaks the feedback loop by making reality prematurely interpretable.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§2.2 (W04)",
+  "quote": "Sophons break the experimental feedback loop by making reality uninterpretable. Classifier collapse breaks it by making reality prematurely interpretable.",
+  "kernel": false,
+  "const": false,
+  "lineage": "endogenous sophon",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q935-05",
+  "dep": 935,
+  "claim": "The machinery that reveals failures of the physical model is trained and evaluated through its products.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§2.4",
+  "quote": "The machinery responsible for revealing failures of the physical model is itself trained and evaluated through products of the physical model.",
+  "kernel": false,
+  "const": false,
+  "lineage": "detector inherits ontology",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q935-06",
+  "dep": 935,
+  "claim": "Authority without facility: ML methods under physics's authority with neither discipline's checks.",
+  "kind": "claim",
+  "modality": "contested",
+  "strata": [
+   "D",
+   "O"
+  ],
+  "locus": "§4",
+  "quote": "ML methods deployed under physics's institutional authority, with neither physics's classical disciplinary checks nor ML's own disciplinary self-knowledge as guardrails",
+  "kernel": true,
+  "const": false,
+  "lineage": "authority without facility",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q935-07",
+  "dep": 935,
+  "claim": "Partial feedback pathways homologous to model-collapse prerequisites; whether they produced contraction is what the replay bank would test.",
+  "kind": "limit",
+  "modality": "hypothesis",
+  "strata": [
+   "D"
+  ],
+  "locus": "§4.4",
+  "quote": "distillation, model-produced targets, simulation conditioning, and training on historically selected data create partial feedback pathways homologous to the prerequisites of model collapse; whether these pathways have produced cross-generational phenomenal contraction is precisely what the operative paper's prospective frozen replay bank — 06.SEI.OAR_PROTOCOL v0.3 §4.2 — is designed to test.",
+  "kernel": false,
+  "const": false,
+  "lineage": "partial feedback pathways",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q935-08",
+  "dep": 935,
+  "claim": "v0.3: the Zenodo termination and the LHC trigger are the same architecture at different budgets.",
+  "kind": "claim",
+  "modality": "contested",
+  "strata": [
+   "R"
+  ],
+  "locus": "§9 Finding 6",
+  "quote": "The Zenodo termination and the LHC trigger system are the same architecture at different budgets.",
+  "kernel": false,
+  "const": false,
+  "lineage": "Zenodo and the trigger",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q935-09",
+  "dep": 935,
+  "claim": "Precision: the dominant discard is the L1 menu; the claim is about the whole trigger system, anomaly detectors one component.",
+  "kind": "limit",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§3.5",
+  "quote": "The claim is therefore not that anomaly detectors alone determine what physics can see; it is that the entire trigger system, of which anomaly detectors are one component, operates as classifier-mediated foreclosure under a bureaucratic justification — \"rate budget\" — that does not require disclosure of what is being foreclosed.",
+  "kernel": false,
+  "const": false,
+  "lineage": "retention fraction",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q935-10",
+  "dep": 935,
+  "claim": "'Terminal condition' is kept for the current institutional trajectory, rejected for the wider possibility space.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "§1.2",
+  "quote": "We retain \"terminal condition\" as a description of the existing institutional trajectory and reject its extension to the broader possibility space.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the inversion (HEP as ML discipline)",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q931-20",
+  "dep": 931,
+  "claim": "Its central claim is stated falsifiable: the listed measurements would constitute evidence against it.",
+  "kind": "falsifier",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "§8.1",
+  "quote": "The paper's central claim is falsifiable. The following measurements, if performed and producing the corresponding results, would constitute evidence against the paper's claim:",
+  "kernel": false,
+  "const": false,
+  "lineage": "falsifiers stated",
+  "date": "2026-06-29",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1427-01",
+  "dep": 1427,
+  "claim": "The field knows model dependence and turned to anomaly searches for that reason; what is unmeasured is what the pipeline discards.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "What would measure this",
+  "quote": "The field already knows the underlying problem and has a name for it — model dependence — and the turn toward model-independent and anomaly-detection searches at the LHC exists precisely because a pipeline tuned on simulated signatures can only find what the simulation can imagine. The unmeasured part is not whether model dependence exists. It is what the *pipeline* discards before analysis begins.",
+  "kernel": false,
+  "const": false,
+  "lineage": "unmeasured in the literature",
+  "date": "2026-07-30",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1427-02",
+  "dep": 1427,
+  "claim": "These measurements are not published in any form the author has located; the absence is not evidence of foreclosure.",
+  "kind": "limit",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "What would measure this",
+  "quote": "Here is the peculiar fact: these measurements are not published.** Not for the repository, and not, in any form this author has located, for the classification pipelines of frontier experimental physics.",
+  "kernel": false,
+  "const": false,
+  "lineage": "unmeasured in the literature",
+  "date": "2026-07-30",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1427-03",
+  "dep": 1427,
+  "claim": "That absence is not evidence of foreclosure; it is the condition under which foreclosure would be undetectable.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "What would measure this",
+  "quote": "That absence is not evidence of foreclosure. It is the condition under which foreclosure would be undetectable",
+  "kernel": false,
+  "const": false,
+  "lineage": "unmeasured in the literature",
+  "date": "2026-07-30",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1436-01",
+  "dep": 1436,
+  "claim": "Signal-template agnosticism is an interface property read off an architecture; model independence a distributional property only measurable, and not measured.",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D",
+   "O"
+  ],
+  "locus": "§1 Canonical Claim",
+  "quote": "Signal-template agnosticism is a property of the scoring function's output interface: the decision boundary is computed without evaluating an explicit parametric hypothesis for a named target class. Model independence is a distributional property of an entire pipeline: sensitivity that does not vary across structurally distinct out-of-distribution processes. The first can be read off an architecture. The second can only be measured, and at present is not.",
+  "kernel": true,
+  "const": true,
+  "lineage": "agnosticism is not independence",
+  "date": "2026-08-07",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1436-02",
+  "dep": 1436,
+  "claim": "The packet does not claim deployed triggers are invalid or that template-agnostic scoring is a defect.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "§1",
+  "quote": "This packet does not claim that deployed LHC anomaly triggers are invalid, nor that template-agnostic scoring is a defect.",
+  "kernel": true,
+  "const": false,
+  "lineage": "agnosticism is not independence",
+  "date": "2026-08-07",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1436-03",
+  "dep": 1436,
+  "claim": "In summaries the weaker, supported property is reported under the stronger, unmeasured term.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§4",
+  "quote": "The two terms are used interchangeably in motivational and public-facing summaries of anomaly-trigger work, and the interchange runs in one direction: the weaker, architecturally supported property is reported using the stronger, unmeasured term.",
+  "kernel": false,
+  "const": false,
+  "lineage": "agnosticism is not independence",
+  "date": "2026-08-07",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1436-04",
+  "dep": 1436,
+  "claim": "Rule: template agnosticism must not be rendered as model independence, theory-free discovery or unbiased search.",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§3.2",
+  "quote": "signal-template agnosticism must not be rendered as model independence, theory-free discovery, or unbiased search.",
+  "kernel": false,
+  "const": false,
+  "lineage": "policing the term",
+  "date": "2026-08-07",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1449-01",
+  "dep": 1449,
+  "claim": "Programme thesis: agnosticism is an interface property; model independence distributional and unmeasured at the deployed triggers.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§0",
+  "quote": "Signal-template agnosticism is an **interface** property: it can be read off an architecture. Model independence is a **distributional** property of an entire pipeline: it can only be established by measurement, and at the deployed LHC anomaly triggers it is unmeasured.",
+  "kernel": false,
+  "const": false,
+  "lineage": "agnosticism is not independence",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1449-02",
+  "dep": 1449,
+  "claim": "v0.1: Finke direction-dependence replicates and extends beyond reconstruction loss (AUC 0.84–0.87 vs 0.24–0.30).",
+  "kind": "finding",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "Description (1)",
+  "quote": "the Finke et al. (2021) direction-dependence replicates in an independent implementation and extends beyond reconstruction loss — on jet constituents, QCD-trained systems detect top jets at AUC 0.84–0.87 while top-trained systems rate QCD as more ordinary than their own training class (AUC 0.24–0.30), for the autoencoder and the density family alike",
+  "kernel": true,
+  "const": false,
+  "lineage": "battery: inversion replicates",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1449-03",
+  "dep": 1449,
+  "claim": "v0.1: at trigger-like operating points every tested system assimilates at least 93% of the partner class.",
+  "kind": "finding",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "Description (3)",
+  "quote": "at trigger-like operating points every tested system assimilates ≥93% of the structurally distinct partner class as ordinary",
+  "kernel": false,
+  "const": false,
+  "lineage": "battery: assimilation at the rate budget",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1449-04",
+  "dep": 1449,
+  "claim": "v0.1 is single-seed, demonstration-scale, on surrogates, not deployed systems.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "Description",
+  "quote": "Calibrated claims, no more: v0.1 is single-seed and demonstration-scale, on surrogates, not deployed systems.",
+  "kernel": true,
+  "const": false,
+  "lineage": "battery bounds",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1449-05",
+  "dep": 1449,
+  "claim": "The direction-dependence conversation exists; the programme joins it.",
+  "kind": "claim",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "§2",
+  "quote": "The direction-dependence conversation exists, and the program joins it rather than founding it.",
+  "kernel": false,
+  "const": false,
+  "lineage": "local awareness acknowledged",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1449-06",
+  "dep": 1449,
+  "claim": "AXOL1TL and CICADA run in the CMS L1 trigger through Run 3 on 2024 collision data.",
+  "kind": "finding",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "§2",
+  "quote": "Deployed-system status: AXOL1TL and CICADA are running in the CMS Level-1 trigger through Run 3 on 2024 collision data",
+  "kernel": false,
+  "const": false,
+  "lineage": "deployed score families",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1449-07",
+  "dep": 1449,
+  "claim": "v0.1 was executed on public community datasets, the top-quark tagging reference and the LHC Olympics 2020 R&D set, pre-registered.",
+  "kind": "finding",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "Description",
+  "quote": "The record contains the pre-registered inversion battery v0.1 executed 2026-08-11 on public community datasets — the top-quark tagging reference dataset (10.5281/zenodo.2603256) and the LHC Olympics 2020 R&D dataset (10.5281/zenodo.6466204)",
+  "kernel": false,
+  "const": false,
+  "lineage": "battery bounds",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1450-01",
+  "dep": 1450,
+  "claim": "No-Retention-Bound: per-stage validation on design support sets no nontrivial lower bound on end-to-end retention off that support.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D",
+   "O"
+  ],
+  "locus": "§2.1 (Layer II)",
+  "quote": "Validation of each stage on its design and validation support establishes no nontrivial lower bound on R_end(Q) for a novelty distribution Q outside that characterized support, unless the relevant off-support conditional retention functions are themselves constrained.",
+  "kernel": true,
+  "const": false,
+  "lineage": "no retention bound",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1450-02",
+  "dep": 1450,
+  "claim": "The claim is not that retention is near zero; only that standard evidence does not bound it away from zero.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "§2.1",
+  "quote": "The claim is not that end-to-end retention *is* near zero. The claim is that the standard evidence *does not bound it away from zero*",
+  "kernel": false,
+  "const": false,
+  "lineage": "no retention bound",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1450-03",
+  "dep": 1450,
+  "claim": "The document does not claim model collapse has occurred in any deployed pipeline; prerequisites documented, measurement absent.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "§0.1",
+  "quote": "This document does **not** claim: (1) that new physics has been missed — only that the null-result era is observationally ambiguous under unaudited instruments; (2) that the post-Higgs desert is illusory — only that some unknown fraction *could* reflect instrument-conditioned absence, and that this fraction is currently unbounded in either direction; (3) that model collapse has occurred in any deployed scientific pipeline — only that its structural prerequisites are documented and its longitudinal measurement absent",
+  "kernel": true,
+  "const": false,
+  "lineage": "collapse not established (Claim B)",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1450-04",
+  "dep": 1450,
+  "claim": "The irreversibility locus, not the presence of ML, is the fundamental variable.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§2.2 (Layer II)",
+  "quote": "The irreversibility locus, not the presence of ML, is the fundamental variable.",
+  "kernel": false,
+  "const": false,
+  "lineage": "irreversibility frontier",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1450-05",
+  "dep": 1450,
+  "claim": "A null result constrains only hypotheses for which end-to-end acceptance is characterized.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§3.2 (Layer III)",
+  "quote": "A null result constrains only those hypotheses for which the end-to-end acceptance of the acquisition and analysis chain is sufficiently characterized.",
+  "kernel": false,
+  "const": false,
+  "lineage": "instrument-conditioned nullity",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1452-01",
+  "dep": 1452,
+  "claim": "Irreversibility frontier defined: the earliest stage that can permanently eliminate a relevant distinction without an auditable independent record.",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§3",
+  "quote": "For a specified scientific question and fidelity hierarchy, define the **irreversibility frontier** as the earliest stage at which an event-content-dependent transformation or gate can permanently eliminate a scientifically relevant distinction without a sufficiently independent durable record from which that loss can later be audited.",
+  "kernel": true,
+  "const": true,
+  "lineage": "irreversibility frontier",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1452-02",
+  "dep": 1452,
+  "claim": "The frontier predates ML; conventional thresholds and trigger logic also create irreversible selection.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "Claim boundary",
+  "quote": "The irreversibility frontier predates machine learning; conventional thresholds, object definitions, zero suppression, compression, and trigger logic can also create irreversible selection.",
+  "kernel": true,
+  "const": false,
+  "lineage": "learned selection as multiplier",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1452-03",
+  "dep": 1452,
+  "claim": "The paper does not claim an undiscovered phenomenon has already been rejected.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "Claim boundary",
+  "quote": "The manuscript does **not** claim that an undiscovered physical phenomenon has already been rejected.",
+  "kernel": false,
+  "const": false,
+  "lineage": "collapse not established (Claim B)",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1452-04",
+  "dep": 1452,
+  "claim": "AXOL1TL is deployed in the CMS L1 Global Trigger as an unsupervised, signal-agnostic anomaly detector trained on Zero Bias.",
+  "kind": "finding",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "§5",
+  "quote": "AXOL1TL is now deployed in the Level-1 Global Trigger as a real-time unsupervised, signal-agnostic event-level anomaly detector trained on Zero Bias data.",
+  "kernel": false,
+  "const": false,
+  "lineage": "deployed score families",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1452-05",
+  "dep": 1452,
+  "claim": "LHCb Run 3 removed the hardware trigger and reads out all detectors at ~30 MHz.",
+  "kind": "finding",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "§7",
+  "quote": "LHCb provides the strongest existing LHC counterarchitecture. The Run-3 upgrade removed the hardware physics trigger and reads out all detectors at the full non-empty LHC collision rate of approximately 30 MHz.",
+  "kernel": false,
+  "const": false,
+  "lineage": "irreversibility frontier",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1452-06",
+  "dep": 1452,
+  "claim": "Belle II has implemented a GNN for its first-level calorimeter trigger.",
+  "kind": "finding",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "§9",
+  "quote": "Belle II has long developed neural-network methods for first-level track triggering. More recently, a graph neural network has been implemented for the electromagnetic calorimeter trigger.",
+  "kernel": false,
+  "const": false,
+  "lineage": "learned selection at the first level",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1452-07",
+  "dep": 1452,
+  "claim": "The more expressive an irreversible early selector, the more consequential its retention metrology.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§9",
+  "quote": "the more expressive an irreversible early selector becomes, the more consequential its retention metrology becomes.",
+  "kernel": false,
+  "const": false,
+  "lineage": "learned selection at the first level",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1452-08",
+  "dep": 1452,
+  "claim": "Learned selectors can make their priors harder to enumerate.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§14",
+  "quote": "It is that learned selectors can make their priors harder to enumerate.",
+  "kernel": false,
+  "const": false,
+  "lineage": "learned selection as multiplier",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1452-09",
+  "dep": 1452,
+  "claim": "The model fixes where a miss region lies; the acquisition architecture whether science can later find it.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "Canonical compression",
+  "quote": "The model determines where a miss region lies; the acquisition architecture determines whether science can later discover that it was there.",
+  "kernel": false,
+  "const": false,
+  "lineage": "irreversibility frontier",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1452-10",
+  "dep": 1452,
+  "claim": "Trigger documentation should include an Irreversibility Statement.",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§17",
+  "quote": "Trigger documentation should include an explicit **Irreversibility Statement**.",
+  "kernel": false,
+  "const": false,
+  "lineage": "per-stage retention maps",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1452-11",
+  "dep": 1452,
+  "claim": "The paper does not claim CMS or ATLAS could simply adopt the LHCb or CBM architecture.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "§20",
+  "quote": "The paper does not claim that CMS or ATLAS could simply adopt the LHCb or CBM architecture under their own detector conditions.",
+  "kernel": false,
+  "const": false,
+  "lineage": "irreversibility frontier",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1453-01",
+  "dep": 1453,
+  "claim": "No content-sensitive algorithm is a less assumption-laden baseline than a content-independent probability sample.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D",
+   "O"
+  ],
+  "locus": "Abstract",
+  "quote": "Under a finite storage budget, no content-sensitive algorithm can constitute a less assumption-laden baseline than a probability sample whose inclusion mechanism is independent of event content and whose inclusion probability is known.",
+  "kernel": true,
+  "const": true,
+  "lineage": "baseline capture",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1453-02",
+  "dep": 1453,
+  "claim": "BCA does not guarantee capture of arbitrarily rare unknowns; it makes selection auditable over the represented population.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "Claim boundary",
+  "quote": "BCA does **not** guarantee capture of arbitrarily rare unknown phenomena; it makes the selection function statistically auditable over the population represented by its control channels.",
+  "kernel": true,
+  "const": false,
+  "lineage": "baseline capture",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1453-03",
+  "dep": 1453,
+  "claim": "Existing CMS components are precedents, not a completed BCA.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "Claim boundary",
+  "quote": "Existing CMS components are treated as architectural precedents, not retroactively relabeled as a completed BCA implementation.",
+  "kernel": false,
+  "const": false,
+  "lineage": "baseline capture",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1454-01",
+  "dep": 1454,
+  "claim": "A model can be agnostic to signal labels while highly selective about the geometry and complexity of departures.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "Abstract",
+  "quote": "A model can be agnostic with respect to signal labels during training while remaining highly selective with respect to the geometry, complexity, and representation of departures from its learned reference distribution.",
+  "kernel": true,
+  "const": false,
+  "lineage": "agnosticism is not independence",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1454-02",
+  "dep": 1454,
+  "claim": "ACRB does not assert all accelerator classifier architectures share the same blind spot.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "Claim boundary",
+  "quote": "ACRB does **not** assert that all accelerator classifier architectures share the same blind spot.",
+  "kernel": true,
+  "const": false,
+  "lineage": "shared properties, not shared blind spots",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1454-03",
+  "dep": 1454,
+  "claim": "Open-set assimilation: an unseen class confidently mapped to a known background category (supervised DNN/GNN triggers).",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§4.6",
+  "quote": "Supervised trigger classifiers require a terminological distinction. Their primary failure mode is not necessarily anomaly-score inversion because they are trained to separate named classes. The analogous open-set problem occurs when an unseen class is confidently mapped into a known background category. This can be called **open-set assimilation**",
+  "kernel": false,
+  "const": false,
+  "lineage": "open-set assimilation",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1454-04",
+  "dep": 1454,
+  "claim": "The architectural spread falsifies any simple claim that real-time accelerator ML converged on one autoencoder design.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§1",
+  "quote": "This architectural spread falsifies any simple claim that real-time accelerator machine learning has converged on one autoencoder design.",
+  "kernel": false,
+  "const": false,
+  "lineage": "shared properties, not shared blind spots",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1454-05",
+  "dep": 1454,
+  "claim": "Shared properties suffice for common metrology, not to assert common blind spots.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "§11",
+  "quote": "Those shared properties are sufficient to motivate common metrology. They are not sufficient to assert common blind spots.",
+  "kernel": false,
+  "const": false,
+  "lineage": "shared properties, not shared blind spots",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1454-06",
+  "dep": 1454,
+  "claim": "Benchmark failure does not establish loss of unknown new physics.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "§13",
+  "quote": "First, failure on benchmark distributions does not establish loss of unknown new physics.",
+  "kernel": false,
+  "const": false,
+  "lineage": "collapse not established (Claim B)",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1454-07",
+  "dep": 1454,
+  "claim": "'Model-independent' has several senses in collider physics; the paper declines to police the term.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "§13",
+  "quote": "Fourth, “model-independent” is used in several senses across collider physics. The paper should not attempt to police the term.",
+  "kernel": false,
+  "const": false,
+  "lineage": "policing the term",
+  "date": "2026-08-11",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1455-01",
+  "dep": 1455,
+  "claim": "v0.2: the top/QCD inversion reproduces across five trainings (AUC 0.838 forward, 0.243 reversed).",
+  "kind": "finding",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "§3",
+  "quote": "The top/QCD inversion reproduces across five independent trainings: the reconstruction autoencoder detects top jets from a QCD-trained system at AUC 0.838 and, reversed, rates QCD as more ordinary than its own training class at AUC 0.243.",
+  "kernel": true,
+  "const": false,
+  "lineage": "battery: inversion replicates",
+  "date": "2026-08-12",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1455-02",
+  "dep": 1455,
+  "claim": "v0.2 wrote that architecture changes the orientation of the blind spot (later falsified by #1456).",
+  "kind": "finding",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "§3",
+  "quote": "The encoder-side latent score alone escapes the T1 inversion (0.535 / 0.739) while carrying the largest T1 asymmetry. Architecture changes the orientation of the blind spot",
+  "kernel": false,
+  "const": false,
+  "lineage": "orientation of the blind spot",
+  "date": "2026-08-12",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1455-03",
+  "dep": 1455,
+  "claim": "v0.2: only 36–47% of the teacher's top 1% survives into the distilled student's top 1%.",
+  "kind": "finding",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "§4",
+  "quote": "Global rank agreement is moderate while only 36 to 47 percent of the teacher's top one percent survives into the student's top one percent.",
+  "kernel": false,
+  "const": false,
+  "lineage": "distillation tail loss",
+  "date": "2026-08-12",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1455-04",
+  "dep": 1455,
+  "claim": "Assembly readings that the run proves the thesis were rejected.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "§7",
+  "quote": "Two witnesses described the run as unassailable, as proving the thesis, and as a pristine payload. Rejected:",
+  "kernel": false,
+  "const": false,
+  "lineage": "battery bounds",
+  "date": "2026-08-12",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1455-05",
+  "dep": 1455,
+  "claim": "Nothing here bounds any open-world rate or measures a deployed trigger.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "Falsification Conditions",
+  "quote": "Nothing here bounds any open-world assimilation rate in either direction, and nothing here measures a deployed trigger.",
+  "kernel": true,
+  "const": false,
+  "lineage": "battery bounds",
+  "date": "2026-08-12",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1455-06",
+  "dep": 1455,
+  "claim": "v0.2 re-runs the #1449 battery with five seeds per cell.",
+  "kind": "self-description",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "§1",
+  "quote": "v0.2 re-runs the pre-registered inversion battery of #1449 with five independent seeds per cell",
+  "kernel": false,
+  "const": false,
+  "lineage": "battery bounds",
+  "date": "2026-08-12",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1456-01",
+  "dep": 1456,
+  "claim": "With weights fixed, changing the score function suffices to reverse the directional ordering.",
+  "kind": "finding",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "§2 T5",
+  "quote": "With model weights fixed, changing the score function is sufficient to reverse the directional ordering of the anomaly relation.",
+  "kernel": true,
+  "const": false,
+  "lineage": "orientation of the blind spot",
+  "date": "2026-08-12",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1456-02",
+  "dep": 1456,
+  "claim": "The v0.2 sentence 'architecture changes the orientation of the blind spot' is falsified.",
+  "kind": "self-description",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "§2 T5",
+  "quote": "After v0.2 this program wrote: *architecture changes the orientation of the blind spot*. That sentence is **falsified**.",
+  "kernel": false,
+  "const": false,
+  "lineage": "orientation of the blind spot",
+  "date": "2026-08-12",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1456-03",
+  "dep": 1456,
+  "claim": "The diverging readout families are those of the two deployed CMS triggers; nothing in the battery measures those systems.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "§2 T5",
+  "quote": "Deployment relevance, stated at the strength the evidence permits: the two readout families whose orientations diverge here are the families the two deployed CMS anomaly triggers use — an encoder-side latent score and a distilled reconstruction teacher. **Nothing in this battery measures those systems.**",
+  "kernel": true,
+  "const": false,
+  "lineage": "battery bounds",
+  "date": "2026-08-12",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1456-04",
+  "dep": 1456,
+  "claim": "Global teacher–student agreement does not guarantee preservation of the operational tail.",
+  "kind": "finding",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "§3 T6",
+  "quote": "Global teacher–student agreement does not guarantee preservation of the operational tail.",
+  "kernel": false,
+  "const": false,
+  "lineage": "distillation tail loss",
+  "date": "2026-08-12",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1456-05",
+  "dep": 1456,
+  "claim": "An architecture's detection behaviour is not transportable across representations of the same events.",
+  "kind": "finding",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "§5 T7",
+  "quote": "An architecture's detection behaviour is not transportable across representations of the same events.",
+  "kernel": false,
+  "const": false,
+  "lineage": "representation dependence",
+  "date": "2026-08-12",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1456-06",
+  "dep": 1456,
+  "claim": "The constituent inversion survives hierarchical uncertainty, its whole interval below chance.",
+  "kind": "finding",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "§1 T3",
+  "quote": "The constituent inversion survives with its entire interval below chance.",
+  "kernel": false,
+  "const": false,
+  "lineage": "battery: inversion replicates",
+  "date": "2026-08-12",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1456-07",
+  "dep": 1456,
+  "claim": "The published NAE remedy reduces asymmetry on the LHCO pairs with a converged sampler.",
+  "kind": "finding",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "§6 T8",
+  "quote": "On the LHCO pairs the remedy works, and the diagnostic says we may believe it",
+  "kernel": false,
+  "const": false,
+  "lineage": "normalized-autoencoder remedy",
+  "date": "2026-08-12",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1456-08",
+  "dep": 1456,
+  "claim": "Open handoff: a converged NAE at AUC 0.5 would bound every inversion claim to non-normalized scores.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "§8 T10",
+  "quote": "if a converged normalized autoencoder reaches 0.5, every inversion claim in this program becomes bounded to non-normalized scores.",
+  "kernel": false,
+  "const": false,
+  "lineage": "normalized-autoencoder remedy",
+  "date": "2026-08-12",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1456-09",
+  "dep": 1456,
+  "claim": "v0.3 was designed to clear the v0.2 (#1455) correction ledger.",
+  "kind": "self-description",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "§0",
+  "quote": "v0.2 (#1455) closed with a seven-item correction ledger. v0.3 was designed to clear it",
+  "kernel": false,
+  "const": false,
+  "lineage": "battery bounds",
+  "date": "2026-08-12",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1558-01",
+  "dep": 1558,
+  "claim": "Synthetic validation: a content-sensitive pseudo-baseline estimates a shifted class at 0.76 against a true 0.016; the content-independent sample measures the blind class at 0.000.",
+  "kind": "finding",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "Abstract",
+  "quote": "A controlled numerical study quantifies what binding them yields: a content-sensitive pseudo-baseline estimates the retention of a shifted class at 0.76 (95\\% interval [0.71, 0.81]) against a true 0.016, while the content-independent sample measures a deliberately representation-blind class at 0.000 [0, 0.073].",
+  "kernel": true,
+  "const": false,
+  "lineage": "baseline capture",
+  "date": "2026-08-27",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1558-02",
+  "dep": 1558,
+  "claim": "BCA does not solve the unknown-unknown problem.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "§14",
+  "quote": "BCA does not solve the unknown-unknown problem.",
+  "kernel": true,
+  "const": false,
+  "lineage": "baseline capture",
+  "date": "2026-08-27",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1558-03",
+  "dep": 1558,
+  "claim": "It does not assert learned triggers are uniquely unreliable or that a phenomenon has already been discarded.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "§15",
+  "quote": "It does not assert that learned triggers are uniquely unreliable. It does not assert that an unknown physical phenomenon has already been discarded.",
+  "kernel": false,
+  "const": false,
+  "lineage": "collapse not established (Claim B)",
+  "date": "2026-08-27",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1611-01",
+  "dep": 1611,
+  "claim": "The standing representation R_0 of the trigger is engineering: non-epistemic rate budget, neutral detector, coverage by injection, discards as noise.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D",
+   "R"
+  ],
+  "locus": "§1f Classifier foreclosure",
+  "quote": "The standing representation R_0 of the trigger is engineering: the rate budget is a non-epistemic constraint, the anomaly detector is a neutral instrument, validation by known-unknown injection establishes coverage, and the discarded events are noise.",
+  "kernel": false,
+  "const": false,
+  "lineage": "R_0 and R_H",
+  "date": "2026-09-14",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1611-02",
+  "dep": 1611,
+  "claim": "R_H: each is a belief preventing measurement; R_0 has no field for noncoverage.",
+  "kind": "claim",
+  "modality": "interpretation",
+  "strata": [
+   "D",
+   "R",
+   "O"
+  ],
+  "locus": "§1f",
+  "quote": "The archive's representation R_H is that each of these is a belief that prevents a mechanism from being measured — the synthesis catalogues twelve — and that the decisive epistemic acts now occur before any physicist sees an event. Under R_0 the graph cannot represent noncoverage as a quantity, because R_0 has no field for it.",
+  "kernel": true,
+  "const": false,
+  "lineage": "R_0 and R_H",
+  "date": "2026-09-14",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1611-03",
+  "dep": 1611,
+  "claim": "Protocol adequacy is not established; under Claim A the cost is a foregone opportunity, a physical loss only under B with a validated protocol.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "§1f",
+  "quote": "Whether the protocols would estimate the relevant unknown population adequately is the family's engineering claim and is not established; the cost under A is stated as the foregone opportunity, and only under B and a validated protocol would it be a physical loss converted to a permanent unknown.",
+  "kernel": true,
+  "const": false,
+  "lineage": "collapse not established (Claim B)",
+  "date": "2026-09-14",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1611-04",
+  "dep": 1611,
+  "claim": "The Zenodo/LHC same-institution fact adds no evidentiary force; no organisational relation is claimed.",
+  "kind": "limit",
+  "modality": "self-description",
+  "strata": [
+   "R"
+  ],
+  "locus": "§1f self-inclusion",
+  "quote": "The archive's own exclusion from the repository layer was performed at CERN by an automated classifier under a platform-quality rule (~870 deposits, #862, #1426, #1082), and the manifesto's formulation is that the Zenodo termination and the LHC trigger are the same architecture at different budgets: automated foreclosure under a rate or quality budget, with no noncoverage estimate. That the two occur within one institution is the reflexive fact on the record, and it is stated as such: it adds no evidentiary force to the architectural analogy, which stands or falls on the mechanisms, and no organisational relation between the two classifiers is claimed.",
+  "kernel": false,
+  "const": false,
+  "lineage": "Zenodo and the trigger",
+  "date": "2026-09-14",
+  "quote_ok": true
+ },
+ {
+  "id": "Q1611-05",
+  "dep": 1611,
+  "claim": "The dollar table is a toy and not a finding; the finding is that L stays unmeasured.",
+  "kind": "limit",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§4 toy cost",
+  "quote": "Under Claim A alone — the small portion — the cell is not the finding; the finding is that L is the quantity the exclusion keeps unmeasured",
+  "kernel": false,
+  "const": false,
+  "lineage": "R_0 and R_H",
+  "date": "2026-09-14",
+  "quote_ok": true
+ }
+]

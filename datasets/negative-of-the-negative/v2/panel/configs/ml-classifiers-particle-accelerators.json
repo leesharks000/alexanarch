@@ -1,0 +1,19 @@
+{
+ "row": "ml-classifiers-particle-accelerators",
+ "address": "machine learning classifiers particle accelerators",
+ "entity": "Machine learning classifiers in particle accelerators",
+ "row_type": "C (public entity)",
+ "aliases": [
+  {"pattern": "\\bparticle accelerator\\w*", "flags": "i"},
+  {"pattern": "\\bLarge Hadron Collider\\b", "flags": "i"},
+  {"pattern": "\\bLHC\\b", "flags": ""},
+  {"pattern": "\\b(level-1|L1|high-level|HLT)\\s+trigger\\w*", "flags": "i"},
+  {"pattern": "\\b(AXOL1TL|CICADA|GELATO)\\b", "flags": ""},
+  {"pattern": "\\b(CEBAF|beam loss|errant beam|beam tuning)\\b", "flags": "i"},
+  {"pattern": "\\bhigh[- ]energy physics\\b", "flags": "i"}
+ ],
+ "classes": [],
+ "classes_note": "O-class not run on this pass.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-07; the field topic. The narrower lhc-trigger-foreclosure entity (classifier-mediated triggers at the LHC) falls inside its D stratum."
+}
