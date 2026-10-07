@@ -294,6 +294,17 @@ def lineage_rail(row):
             f'{len(used)} of {len(bykey)} sources; {len(own)} keep their own card. Expand a lineage for its instances.</p>'
             f'<div class="rail" aria-label="Sources, one card per lineage">{"".join(out)}</div>')
 
+TYPE_KEY = {"A": "the archive coined it", "B": "a rival occupant holds it", "C": "a conventional reading holds it",
+            "I": "the archive's infrastructure", "E": "the archive's own entity"}
+
+def type_label(t):
+    """'C (public entity)' → 'type C — a conventional reading holds it (public entity)': the code never appears bare."""
+    m = re.match(r"\s*([ABCEI])(?:/([ABCEI]))?\s*(\(.*\))?\s*$", str(t))
+    if not m:
+        return f"type {t}"
+    codes = [c for c in m.groups()[:2] if c]
+    return "type " + "/".join(codes) + " — " + "; ".join(TYPE_KEY[c] for c in codes) + (f" {m.group(3)}" if m.group(3) else "")
+
 def _words(t):
     return len(re.findall(r"[A-Za-z0-9'’-]+", t or ""))
 
@@ -530,7 +541,7 @@ def main():
                              f'<div class="stack">{"".join(inner)}</div></div>')
             n_a = len(groups[ek])
             REGQ[ek] = n_a
-            REGH[ek] = (f'<div class="card" id="ent-{esc(ek)}"><div class="card-head"><span class="card-section">entity · type {esc(en["type"])}</span>'
+            REGH[ek] = (f'<div class="card" id="ent-{esc(ek)}"><div class="card-head"><span class="card-section">entity · {esc(type_label(en["type"]))}</span>'
                      f'<span class="card-date">{n_a} address{"" if n_a == 1 else "es"}</span></div>'
                      f'<div class="card-query">{esc(en["name"])}</div>'
                      + "".join(addrs)
@@ -544,7 +555,7 @@ def main():
         href = address_href(key, r["address"])
         q = f'<a href="{href}">{esc(r["address"])}</a>' if href else esc(r["address"])
         ko = o.get("KO")
-        pills = ['<span class="pill warn">not frozen</span>', f'<span class="pill dim">type {esc(r["type"])}</span>',
+        pills = ['<span class="pill warn">not frozen</span>', f'<span class="pill dim">{esc(type_label(r["type"]))}</span>',
                  f'<span class="pill dim">{esc(r["auth"])}</span>']
         if ko:
             pills.append(f'<span class="pill ok">knowledge object · {len(ko["sentences"])} sentences</span>')
@@ -628,7 +639,7 @@ def main():
     for k in keys:
         en = names[k]
         sec = [f'<section id="e-{esc(k)}" style="margin-top:28px"><h2>{esc(en["name"])}</h2>'
-               f'<p class="meta">type {esc(en["type"])} · sought at {" · ".join("<code>" + esc(a["address"]) + "</code>" for a in en["addresses"])}</p>']
+               f'<p class="meta">{esc(type_label(en["type"]))} · sought at {" · ".join("<code>" + esc(a["address"]) + "</code>" for a in en["addresses"])}</p>']
         if k in ROWH:
             sec.append(ROWH[k])
         else:
@@ -663,7 +674,7 @@ def main():
             nm = f'<a href="{href}">{esc(ad["address"])}</a>' if href else esc(ad["address"])
             al.append(f'<code>{nm}</code>' + (' <span class="pill ok">observed</span>' if ad["address"] in seen.get(pr["entity"], ()) else ""))
         done = pr["entity"] in rows
-        pl.append(f'<li><strong>{esc(pr["name"])}</strong><span class="pill dim">type {esc(pr["type"])}</span><span class="pill dim">{esc(pr["source"])}</span>'
+        pl.append(f'<li><strong>{esc(pr["name"])}</strong><span class="pill dim">{esc(type_label(pr["type"]))}</span><span class="pill dim">{esc(pr["source"])}</span>'
                   + ('<span class="pill ok">composed</span>' if done else "") + f'<span class="stage">addresses: {" · ".join(al)}</span>'
                   + f'<span class="stage">{md_inline(pr["stage"])}</span></li>')
     b.append('<dl class="legend" style="font-size:.85em;margin:8px 0 12px"><dt style="font-weight:600">Entity types (spec §1.2)</dt>'
