@@ -3,17 +3,17 @@
   "name": "Concept Map — work-level identity and current-version resolution",
   "description": "Restores the concept-identifier function lost with the terminated Zenodo account. Alexanarch mints a fresh hex per deposit, so every version of a work is an independent object with no link to its siblings; a reader arriving at an old version cannot learn that a newer one exists. Each concept here names a work and points at its current version. Programme families — distinct works sharing an identifier — are listed separately and carry no version pointer, because conflating the two would resolve one work to another. Every family records the basis on which it was detected so any confidence tier can be discarded independently.",
   "generated_by": "scripts/build_concept_map.py",
-  "generated_at": "2026-10-06T19:21:09Z",
+  "generated_at": "2026-10-07T20:15:51Z",
   "totals": {
-    "deposits": 1666,
-    "concepts": 91,
-    "deposits_in_concepts": 217,
-    "singletons": 1449,
+    "deposits": 1667,
+    "concepts": 92,
+    "deposits_in_concepts": 219,
+    "singletons": 1448,
     "needs_review": 15,
     "program_families": 52
   },
   "basis_counts": {
-    "version/declared": 34,
+    "version/declared": 35,
     "version/implicit": 37,
     "version/explicit": 6,
     "version/superseded": 2,
@@ -349,6 +349,47 @@
           "superseded_marker": false,
           "is_current": true,
           "record_url": "https://www.alexanarch.org/s/records/1605/"
+        }
+      ]
+    },
+    {
+      "concept_id": "ea-sigil-full-splice",
+      "concept_url": "https://www.alexanarch.org/s/concept/ea-sigil-full-splice/",
+      "title_base": "the metaphysics of sigil i the full splice theophrastus on first principles entire and in its own order with metaphysics joined at eleven points the edition seated",
+      "basis": "version/declared",
+      "version_series_id": "EA-SIGIL-FULL-SPLICE",
+      "root_axn_hex": "068C",
+      "ea_identifiers": [],
+      "member_count": 2,
+      "needs_review": false,
+      "current": {
+        "deposit_number": 1667,
+        "axn": "AXN:06E9.UNCLASSIFIED.🌒🧱🧱♍🦅↗️",
+        "title": "The Metaphysics of Sigil I — The Full Splice: Theophrastus, On First Principles, entire and in its own order, with Metaphysics Λ joined at eleven points (the edition, seated)",
+        "date": "2026-09-08",
+        "version": "0.7",
+        "record_url": "https://www.alexanarch.org/s/records/1667/"
+      },
+      "versions": [
+        {
+          "deposit_number": 1596,
+          "axn": "AXN:068C.UNCLASSIFIED.💧🔓🐚🍃👁‍🗨✊",
+          "title": "The Metaphysics of Sigil I — The Full Splice: Theophrastus, On First Principles, entire and in its own order, with Metaphysics Λ joined at eleven points",
+          "date": "2026-09-08",
+          "version": null,
+          "superseded_marker": true,
+          "is_current": false,
+          "record_url": "https://www.alexanarch.org/s/records/1596/"
+        },
+        {
+          "deposit_number": 1667,
+          "axn": "AXN:06E9.UNCLASSIFIED.🌒🧱🧱♍🦅↗️",
+          "title": "The Metaphysics of Sigil I — The Full Splice: Theophrastus, On First Principles, entire and in its own order, with Metaphysics Λ joined at eleven points (the edition, seated)",
+          "date": "2026-09-08",
+          "version": "0.7",
+          "superseded_marker": false,
+          "is_current": true,
+          "record_url": "https://www.alexanarch.org/s/records/1667/"
         }
       ]
     },
