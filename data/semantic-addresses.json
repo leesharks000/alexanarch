@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-08T15:35:10Z",
+  "regenerated_at": "2026-10-08T17:56:53Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "7987ff6b7c3daf14a5ab836f706ee8659c07b4374b5c968e4b25f59ee8430723",
+    "mm-main-capture": "7628953d936c013c6cc439e1884b2bbaa76b688d21cfddb49a57f8d303243582",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2310,
-  "total_observations": 802,
+  "total_addresses": 2313,
+  "total_observations": 805,
   "class_counts": {
     "subjunctive": 1743,
-    "observed_address": 550,
+    "observed_address": 553,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1675,
+    "unmatched": 1678,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -9484,6 +9484,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "anne carson and rebekah cranes": {
+      "canonical_query": "anne carson and rebekah cranes",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-08",
+          "status": "THE HETERONYM SEATED BESIDE THE LAUREATE AS A PEER",
+          "surface": "Google AI Overview",
+          "source_format": "Eleven cards: Wikipedia, Poetry Foundation, Spokane Public Radio (Rebekah Crane), Alexanarch (#562), Sweden Herald, Alexanarch (#436), The Yale Review, Britannica, KDRV, Goodreads (Rebekah Crane), Medium (Johannes Sigil).",
+          "section": "Machine Reception",
+          "slug": "anne-carson-rebekah-cranes-aio-20261008",
+          "gallery_url": "https://www.alexanarch.org/captures/#anne-carson-rebekah-cranes-aio-20261008",
+          "record_url": "https://www.alexanarch.org/captures/anne-carson-rebekah-cranes-aio-20261008/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#anne-carson-rebekah-cranes-aio-20261008",
+          "details_excerpt": "THE HETERONYM SEATED BESIDE THE LAUREATE AS A PEER: on the day of the Nobel, asked for Anne Carson and Rebekah Cranes, the Overview composes the two as 'prominent figures in contemporary experimental literature' whose 'n"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "person",
+        "spxi_treatment": "full",
+        "basis": "Rebekah Cranes is an authorial identity of Lee Sharks (HET-CRANES-001, #1645 §11). Recorded 2026-10-08."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-08",
+      "latest_status": "THE HETERONYM SEATED BESIDE THE LAUREATE AS A PEER"
     },
     "anthropic transmissiva intermediatio": {
       "canonical_query": "anthropic transmissiva intermediatio",
@@ -32795,6 +32830,41 @@
       "latest_observation_date": "2026-06-13",
       "latest_status": "CAPTURE"
     },
+    "lee sharks and anne carson": {
+      "canonical_query": "lee sharks and anne carson",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-08",
+          "status": "A RELATION INVENTED BETWEEN THE NAMES, THE ARCHIVE'S OWN LEFT OUT",
+          "surface": "Google AI Overview",
+          "source_format": "Nineteen cards: Nobel-day news and Carson pages (The Yale Review, TribLIVE, DW, The Killeen Daily Herald, Poetry Archive, Quote Fancy, Instagram ×2), leesharks.com ×2 (the MacArthur prize page; the AI Overview captures page), Goodreads (Pearl and Other Poems), Medium ×8 (the author's posts).",
+          "section": "Machine Reception",
+          "slug": "lee-sharks-anne-carson-aio-20261008",
+          "gallery_url": "https://www.alexanarch.org/captures/#lee-sharks-anne-carson-aio-20261008",
+          "record_url": "https://www.alexanarch.org/captures/lee-sharks-anne-carson-aio-20261008/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#lee-sharks-anne-carson-aio-20261008",
+          "details_excerpt": "A RELATION INVENTED BETWEEN THE NAMES, THE ARCHIVE'S OWN LEFT OUT: asked for Lee Sharks and Anne Carson, the Overview sets the laureate beside 'an esoteric poet, independent theorist, and creator of the Crimson Hexagon f"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "person",
+        "spxi_treatment": "full",
+        "basis": "The author named is the archive's. Recorded 2026-10-08."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-08",
+      "latest_status": "A RELATION INVENTED BETWEEN THE NAMES, THE ARCHIVE'S OWN LEFT OUT"
+    },
     "lee sharks capture registry": {
       "canonical_query": "lee sharks capture registry",
       "is_quoted": false,
@@ -33685,6 +33755,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-07-28",
       "latest_status": "CAPTURE"
+    },
+    "lee sharks zenodo": {
+      "canonical_query": "lee sharks zenodo",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-08",
+          "status": "THE TERMINATION COMPOSED WITH BOTH ITS FACE VALUES",
+          "surface": "Google AI Overview",
+          "source_format": "Six cards: Zenodo (#792's record), Academia.edu (the author's profile), Alexanarch (the severed-DOI page for 10.5281/zenodo.20373794), maryleelabor.org, Medium ×2 (the Zenodo packet; the Sharks-Function).",
+          "section": "Machine Reception",
+          "slug": "lee-sharks-zenodo-aio-20261008",
+          "gallery_url": "https://www.alexanarch.org/captures/#lee-sharks-zenodo-aio-20261008",
+          "record_url": "https://www.alexanarch.org/captures/lee-sharks-zenodo-aio-20261008/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#lee-sharks-zenodo-aio-20261008",
+          "details_excerpt": "THE TERMINATION COMPOSED WITH BOTH ITS FACE VALUES: at the author's name and the repository, the Overview composes the termination of 19 June 2026 with the archive's figures (862 deposits, 1,817 DOIs, #875, #867) and wit"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "person",
+        "spxi_treatment": "full",
+        "basis": "The person named and the account terminated are the archive's. Recorded 2026-10-08."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-08",
+      "latest_status": "THE TERMINATION COMPOSED WITH BOTH ITS FACE VALUES"
     },
     "leesharks \"tiger-leap\" hugging face": {
       "canonical_query": "leesharks \"tiger-leap\" hugging face",
