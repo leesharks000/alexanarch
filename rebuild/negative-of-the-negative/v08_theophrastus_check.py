@@ -12,6 +12,8 @@
 import json, re, sys, difflib, pathlib
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 draft = pathlib.Path(sys.argv[1]).read_text(encoding="utf-8")
+C = draft.split("## Appendix C")[1] if "## Appendix C" in draft else draft   # the v0.8 text, or the earlier draft
+TH = ("### C.2.", "### C.3.", "### C.4.") if "### C.2." in C else ("### 3.2.", "### 3.3.", "### 3.4.")
 L = ROOT / "datasets/negative-of-the-negative/v2/ledgers/theophrastus"
 field = json.loads((L / "field.json").read_text(encoding="utf-8"))["field_claims"]
 arch = {c["id"]: c for c in json.loads((L / "ledger-archive.json").read_text(encoding="utf-8"))}
@@ -23,17 +25,17 @@ def expand(tok):
     m = re.fullmatch(r"F(\d+)[–-]F(\d+)", tok)
     return [f"F{i}" for i in range(int(m.group(1)), int(m.group(2)) + 1)] if m else [tok]
 
-ids = set(re.findall(r"\b(?:F\d+(?:[–-]F\d+)?|T\d+-\d+)\b", draft))
+ids = set(re.findall(r"\b(?:F\d+(?:[–-]F\d+)?|T\d+-\d+)\b", C))
 cited = {x for t in ids for x in expand(t)}
 bad = sorted(x for x in cited if x not in field and x not in arch)
 print("1. cited ids not in either ledger:", bad or "none")
 
-tab = draft.split("### 3.2. The translation table")[1].split("### 3.3.")[0]
+tab = C.split(TH[0])[1].split(TH[1])[0]
 tab_f = {x for t in re.findall(r"\bF\d+(?:[–-]F\d+)?\b", tab) for x in expand(t)}
 missing = sorted((k for k in field if k not in tab_f), key=lambda k: int(k[1:]))
 print(f"2. field claims carried in the translation table: {len(field) - len(missing)} of {len(field)}; missing:", missing or "none")
 
-ko = draft.split("### 3.3. The knowledge object (draft)")[1].split("### 3.4.")[0]
+ko = C.split(TH[1])[1].split(TH[2])[0]
 sents = re.findall(r"^\d+\. (.+?) `([^`]+)`\s*$", ko, re.M)
 ko_ids = {x for _, c in sents for t in c.split() for x in expand(t)}
 kf = sorted((k for k in field if k in ko_ids), key=lambda k: int(k[1:]))
