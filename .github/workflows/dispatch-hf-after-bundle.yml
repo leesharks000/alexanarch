@@ -1,0 +1,58 @@
+name: Dispatch Hugging Face builds after a bundle lands
+# A bundle landed by "Apply bundle from issue" is pushed with github.token, and a push made with
+# that token starts no on:push workflow, so the Hugging Face builds never ran on their own. This
+# workflow runs when the apply workflow finishes, reads each hf-*.yml for its own push paths, and
+# dispatches the builds whose paths the landed commits touched (workflow_dispatch is exempt from
+# the token rule). Added 2026-10-08 on the operator's ruling ("yes, lets add that step").
+on:
+  workflow_run:
+    workflows: ["Apply bundle from issue"]
+    types: [completed]
+permissions:
+  contents: read
+  actions: write
+jobs:
+  dispatch:
+    if: github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Dispatch the builds the landed paths call for
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BEFORE: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          set -euo pipefail
+          git diff --name-only "$BEFORE" HEAD > /tmp/changed.txt
+          echo "landed: $BEFORE..$(git rev-parse HEAD), $(wc -l < /tmp/changed.txt) files"
+          python3 - <<'PY' > /tmp/dispatch.txt
+          import glob, re, yaml
+          changed = [l.strip() for l in open("/tmp/changed.txt") if l.strip()]
+          def rx(pat):
+              out, i = "", 0
+              while i < len(pat):
+                  if pat.startswith("**", i):
+                      out += ".*"; i += 2
+                      if pat.startswith("/", i): i += 1
+                  elif pat[i] == "*":
+                      out += "[^/]*"; i += 1
+                  else:
+                      out += re.escape(pat[i]); i += 1
+              return re.compile(out + "$")
+          for f in sorted(glob.glob(".github/workflows/hf-*.yml")):
+              d = yaml.safe_load(open(f)) or {}
+              on = d.get("on", d.get(True)) or {}
+              if not isinstance(on, dict) or "workflow_dispatch" not in on:
+                  continue
+              pats = (on.get("push") or {}).get("paths") or []
+              if pats and any(rx(p).match(c) for p in pats for c in changed):
+                  print(f.split("/")[-1])
+          PY
+          if [ ! -s /tmp/dispatch.txt ]; then echo "no Hugging Face build matches the landed paths"; exit 0; fi
+          while read -r wf; do
+            echo "dispatch: $wf"
+            gh workflow run "$wf" --ref main
+          done < /tmp/dispatch.txt
