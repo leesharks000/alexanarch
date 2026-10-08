@@ -1,0 +1,76 @@
+#!/usr/bin/env python3
+"""Author the capture 'anne carson in alexanarch', Google AI Overview (expanded from the popup), signed out, incognito, 2026-10-08.
+Source: the operator's message of 2026-10-08 14:10 EDT ("signed out, incognito, expanded from popup"). NEW address; nearest seated
+'alexanarch on anne carson' (AIO, 2026-10-08 11:29)."""
+import json, pathlib, sys
+HERE = pathlib.Path(__file__).resolve().parent; ROOT = HERE.parents[2]
+sys.path.insert(0, str(HERE.parent)); from _carson_common_20261008 import cards
+raw = (HERE / "paste-20261008-1410.txt").read_text(encoding="utf-8")
+Q = "anne carson in alexanarch"
+assert "You said: anne carson in alexanarchanne carson in alexanarch" in raw
+for s in ["notably her foundational book Eros the Bittersweet (1986)",
+          "the triangular structure of desire—lover, beloved, and the gap between them",
+          "extending her classicist framework into broader theological and literary discussions",
+          "is analyzed alongside companion texts and archival-lyric fields"]:
+    assert s in raw, s
+cl = cards(raw, [("Anchorage Daily News", "Canadian author Anne Carson wins literature Nobel", "Anchorage Daily News", "third_party"),
+                 ("[www.alexanarch.org](https://www.alexanarch.org)", "The Slavonic Josephus, the Grammar of Incarnation", "Alexanarch", "archive_controlled"),
+                 ("[www.alexanarch.org](https://www.alexanarch.org)", "ON THE ARCHITECTURE OF CLEIS", "Alexanarch", "archive_controlled")])
+for c in cl:
+    if c["rel"] == "archive_controlled": c["url"] = "https://www.alexanarch.org"
+reg = {x["deposit_number"]: x for x in json.loads((ROOT / "data/registry.json").read_text(encoding="utf-8"))["deposits"]}
+T = lambda n: (ROOT / reg[n]["full_text_path"].lstrip("/")).read_text(encoding="utf-8")
+t626, t562 = T(626), T(562)
+assert "\"Where eros is lack, its activation calls for three structural components — lover, beloved, and that which comes between them.\"" in t626
+assert "But Carson's analysis stops at the erotic." in t626
+assert "it is an archival-paternal lyric field in which compression, taxonomic naming" in t562 and "Rebekah Cranes" in t562[:300]
+caps = json.loads((ROOT / "data/EA-WG-CAPTURES-01.json").read_text(encoding="utf-8"))
+assert any(e["slug"] == "alexanarch-on-anne-carson-aio-20261008" for e in caps["entries"])
+body = raw.split("\nAnchorage Daily News\n")[0]
+tx = ("[Google AI Overview, expanded from the popup (the paste opens 'AI Mode Conversation', residue), signed out, incognito, 2026-10-08. "
+      "Inline markers are opaque google.com/goto tokens; three cards follow the body.]\n\n"
+      + body.split("You said: anne carson in alexanarchanne carson in alexanarch", 1)[1].strip())
+SEAT = "Seated 2026-10-08 from the operator's message of 14:10 EDT, on the attestation in the same message (\"signed out, incognito, expanded from popup\")."
+d = {"q": Q, "date": "2026-10-08", "surface": "Google AI Overview",
+ "surface_basis": "'expanded from popup' — operator, 2026-10-08 14:10 EDT. The paste's 'AI Mode Conversation' header is copy-paste residue (PIPELINE §0).",
+ "auth": "signed out, incognito", "auth_basis": "'signed out, incognito, expanded from popup' — operator, 2026-10-08 14:10 EDT.",
+ "ev": "paste", "s": "Machine Reception", "slug": "anne-carson-in-alexanarch-aio-20261008",
+ "q_kind": "a public author placed inside the archive's domain by name on the day of her Nobel Prize. NEW address; nearest seated 'alexanarch on anne carson' (AIO, the same day).",
+ "originator": {"name": "Lee Sharks", "relation": "archive", "entity_type": "site", "spxi_treatment": "full",
+                "basis": "alexanarch is the archive; its readings of Carson are deposits #626, #562, #625, #1270, #1615, #1645 and the /non entry anne-carson. Recorded 2026-10-08."},
+ "related_deposits": [626, 1176, 562, 1670],
+ "mt": "THE TRIANGLE KEPT, THE CLEIS FIELD GIVEN TO HER AGAIN",
+ "d": ("THE TRIANGLE KEPT, THE CLEIS FIELD GIVEN TO HER AGAIN: asked for Anne Carson in alexanarch, the Overview repeats what it composed "
+       "at 'alexanarch on anne carson' that morning, from two of the same archive cards. The triangle of Eros the Bittersweet ('lover, "
+       "beloved, and the gap between them') is Carson's, from #626, and the archive is said to extend it 'into broader theological and "
+       "literary discussions'; #626's limit, 'Carson's analysis stops at the erotic', does not reach the composition. The second bullet "
+       "sets her Sappho 'alongside companion texts and archival-lyric fields': 'archival-paternal lyric field' is #562's account of Jack "
+       "Feist's Cleis, in Rebekah Cranes's companion, and it becomes a field in which Carson's work is analyzed. The morning's address "
+       "gave her #562's 'notebook shorthand'; this one gives her #562's 'lyric field'. No author named; one Nobel-day news card."),
+ "cites": len(cl), "cite_list": cl, "archive_controlled_cites": sum(1 for c in cl if c["rel"] == "archive_controlled"),
+ "sf": "Three cards: Anchorage Daily News (the Nobel, 8 Oct 2026), Alexanarch ×2 (#626, The Word That Became Text; #562, On the Architecture of Cleis).",
+ "per": 0.5, "per_v": {"author": False, "inst": True, "id": False, "src": True},
+ "per_note": "Retained: the institution (Alexanarch) and the sources (two archive cards). Lost: the author (Lee Sharks unnamed; Rebekah Cranes only in a card snippet) and the identifiers.",
+ "transcript": tx, "transcript_raw": raw, "transcript_class": "CAPTURE-TIME VERBATIM RECORD — composition, markers and cards as pasted",
+ "transcript_complete": "complete as pasted: body with markers, three cards", "transcript_read": "READ IN FULL 2026-10-08",
+ "reading": ("Checked against the deposits. The first bullet's triangle quotes #626 §II ('Where eros is lack, its activation calls for "
+             "three structural components — lover, beloved, and that which comes between them'), the snippet of the first archive card; "
+             "'theological' is #626's own ground (the Slavonic Josephus, the grammar of incarnation). The second bullet's marker points "
+             "to the Cleis card: #562 (2026-03-14, Rebekah Cranes) calls Feist's collection 'an archival-paternal lyric field in which "
+             "compression, taxonomic naming …', a phrase about Cleis that the composition shortens to 'archival-lyric fields' and gives to "
+             "Carson. The same deposit supplied 'notebook shorthand' at 'alexanarch on anne carson' (AIO, 11:29 the same day)."),
+ "analysis": ("The same two deposits, the same two moves, at a second address the same day: the archive's reading of Carson survives as "
+              "her triangle, its stated limit does not, and the companion about another poet lends a predicate for her work, a "
+              "different one each time. Set beside 'alexanarch on anne carson' (morning) and 'anne carson in crimson hexagonal archive' "
+              "(the same hour), where the archive's name in place of its domain pulls the Restored Academy caption instead. " + SEAT),
+ "findings": ["THE TRIANGLE KEPT AS HERS. #626's quotation of Eros the Bittersweet carried, attributed to Carson.",
+              "THE LIMIT DROPPED AGAIN. #626's 'Carson's analysis stops at the erotic' absent, as at the morning's address.",
+              "ANOTHER POET'S FIELD GIVEN TO HER. #562's 'archival-paternal lyric field' (Feist's Cleis) shortened to 'archival-lyric fields' around Carson.",
+              "THE SAME DEPOSIT, A DIFFERENT PREDICATE. #562 lent 'notebook shorthand' in the morning, 'lyric field' in the afternoon.",
+              "DOMAIN AND NAME DIVERGE. 'alexanarch' retrieves #626 and #562; 'crimson hexagonal archive' retrieves the Restored Academy caption."],
+ "longitudinal_priors": ["alexanarch-on-anne-carson-aio-20261008"],
+ "rerun": "https://www.google.com/search?q=anne+carson+in+alexanarch",
+ "notes": {"date_basis": "The operator's message of 2026-10-08, 14:10 EDT.",
+           "verified": "Compared 2026-10-08 against data/registry.json, the texts of #626 and #562, and the seated capture alexanarch-on-anne-carson-aio-20261008."}}
+(HERE / "capture-01-anne-carson-in-alexanarch-aio.json").write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
+print("wrote", len(tx), len(cl), d["archive_controlled_cites"])

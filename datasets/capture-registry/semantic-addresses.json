@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-08T17:56:53Z",
+  "regenerated_at": "2026-10-08T18:17:06Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "7628953d936c013c6cc439e1884b2bbaa76b688d21cfddb49a57f8d303243582",
+    "mm-main-capture": "dea2ddf20516a7e98682075e49bfe743870acfe0338e0b1b151a2c1f8cd5da49",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2313,
-  "total_observations": 805,
+  "total_addresses": 2316,
+  "total_observations": 808,
   "class_counts": {
     "subjunctive": 1743,
-    "observed_address": 553,
+    "observed_address": 556,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1678,
+    "unmatched": 1681,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -9485,6 +9485,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "anne carson and johannes sigil": {
+      "canonical_query": "anne carson and johannes sigil",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-08",
+          "status": "ONE REMARK ON ONE POEM, THE POEM'S NAME DROPPED",
+          "surface": "Google AI Overview",
+          "source_format": "Five cards: restoredacademy.com (the Sigil page, with the Carson caption and the DOI 10.5281/zenodo.19825730), Academia.edu ×2 (Sigil's profile; The Epic Without Hero, #1271), Medium ×2 (Magic as Symbolic Engineering, #532; The Fourth Mode, #301). No third-party card.",
+          "section": "Machine Reception",
+          "slug": "anne-carson-johannes-sigil-aio-20261008",
+          "gallery_url": "https://www.alexanarch.org/captures/#anne-carson-johannes-sigil-aio-20261008",
+          "record_url": "https://www.alexanarch.org/captures/anne-carson-johannes-sigil-aio-20261008/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#anne-carson-johannes-sigil-aio-20261008",
+          "details_excerpt": "ONE REMARK ON ONE POEM, THE POEM'S NAME DROPPED: asked for Anne Carson and Johannes Sigil on the day of her Nobel, the Overview opens on the one Carson sentence the archive's surfaces carry. The Restored Academy's Sigil "
+        }
+      ],
+      "originator": {
+        "name": "Johannes Sigil",
+        "relation": "archive",
+        "entity_type": "person",
+        "spxi_treatment": "full",
+        "basis": "Johannes Sigil is a heteronym of Lee Sharks (the Dodecad, D.02). Recorded 2026-10-08."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-08",
+      "latest_status": "ONE REMARK ON ONE POEM, THE POEM'S NAME DROPPED"
+    },
     "anne carson and rebekah cranes": {
       "canonical_query": "anne carson and rebekah cranes",
       "is_quoted": false,
@@ -9519,6 +9554,76 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-10-08",
       "latest_status": "THE HETERONYM SEATED BESIDE THE LAUREATE AS A PEER"
+    },
+    "anne carson in alexanarch": {
+      "canonical_query": "anne carson in alexanarch",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-08",
+          "status": "THE TRIANGLE KEPT, THE CLEIS FIELD GIVEN TO HER AGAIN",
+          "surface": "Google AI Overview",
+          "source_format": "Three cards: Anchorage Daily News (the Nobel, 8 Oct 2026), Alexanarch ×2 (#626, The Word That Became Text; #562, On the Architecture of Cleis).",
+          "section": "Machine Reception",
+          "slug": "anne-carson-in-alexanarch-aio-20261008",
+          "gallery_url": "https://www.alexanarch.org/captures/#anne-carson-in-alexanarch-aio-20261008",
+          "record_url": "https://www.alexanarch.org/captures/anne-carson-in-alexanarch-aio-20261008/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#anne-carson-in-alexanarch-aio-20261008",
+          "details_excerpt": "THE TRIANGLE KEPT, THE CLEIS FIELD GIVEN TO HER AGAIN: asked for Anne Carson in alexanarch, the Overview repeats what it composed at 'alexanarch on anne carson' that morning, from two of the same archive cards. The trian"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "site",
+        "spxi_treatment": "full",
+        "basis": "alexanarch is the archive; its readings of Carson are deposits #626, #562, #625, #1270, #1615, #1645 and the /non entry anne-carson. Recorded 2026-10-08."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-08",
+      "latest_status": "THE TRIANGLE KEPT, THE CLEIS FIELD GIVEN TO HER AGAIN"
+    },
+    "anne carson in crimson hexagonal archive": {
+      "canonical_query": "anne carson in crimson hexagonal archive",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-08",
+          "status": "A REMARK ON ONE POEM COMPOSED AS THE LAUREATE'S PRAISE OF THE ARCHIVE",
+          "surface": "Google AI Overview",
+          "source_format": "Two cards: restoredacademy.com (the Sigil page; its snippet joins the Snub-Poemed caption to the 'What I hold' list by an ellipsis), The Yale Review (Carson's Short Talks, reposted for the Nobel, 8 Oct 2026).",
+          "section": "Machine Reception",
+          "slug": "anne-carson-crimson-hexagonal-archive-aio-20261008",
+          "gallery_url": "https://www.alexanarch.org/captures/#anne-carson-crimson-hexagonal-archive-aio-20261008",
+          "record_url": "https://www.alexanarch.org/captures/anne-carson-crimson-hexagonal-archive-aio-20261008/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#anne-carson-crimson-hexagonal-archive-aio-20261008",
+          "details_excerpt": "A REMARK ON ONE POEM COMPOSED AS THE LAUREATE'S PRAISE OF THE ARCHIVE: asked for Anne Carson in the Crimson Hexagonal Archive, the Overview answers in one sentence: 'Anne Carson described the work housed in the Crimson H"
+        }
+      ],
+      "originator": {
+        "name": "Crimson Hexagonal Archive",
+        "relation": "archive",
+        "entity_type": "site",
+        "spxi_treatment": "full",
+        "basis": "The archive named in the query. Recorded 2026-10-08."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-08",
+      "latest_status": "A REMARK ON ONE POEM COMPOSED AS THE LAUREATE'S PRAISE OF THE ARCHIVE"
     },
     "anthropic transmissiva intermediatio": {
       "canonical_query": "anthropic transmissiva intermediatio",
