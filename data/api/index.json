@@ -4,7 +4,7 @@
   "title": "Alexanarch Protocol Index",
   "purpose": "Central machine-readable catalog of all Alexanarch protocols, schemas, and data registries. Single source of truth — every other document (AGENTS.md, DEPOSIT-FLOW.md, scripts, workflows) MUST pull from this index, not duplicate it. If this file disagrees with any other surface, this file wins and the other surface is wrong.",
   "index_version": "v1.1",
-  "last_updated": "2026-10-06",
+  "last_updated": "2026-10-08",
   "operator_directive": {
     "for_new_instances": [
       "STOP before any action.",
@@ -182,7 +182,7 @@
         "/api/schemas/deposit-entry.schema.json"
       ],
       "regenerated_by_change": "scripts/regenerate_surfaces.py must run after every change. Mint workflow does this automatically; manual edits must do it explicitly.",
-      "last_updated": "2026-07-28T22:52:54Z"
+      "last_updated": "2026-10-07T20:04:49Z"
     },
     "entities": {
       "name": "Entity / Concept Index",
@@ -560,12 +560,12 @@
   },
   "surface_hashes": {
     "algorithm": "sha256",
-    "hashed_at": "2026-10-06T19:32:29Z",
+    "hashed_at": "2026-10-08T15:37:23Z",
     "files": {
-      "data/registry.json": "185fb16f1f49493e97e0734fe889c5351221073af560ae54ad6dacaff6fae9f7",
-      "data/api/search-index.json": "e52b1471878001e214a2f3cabd84a6f8c66eb11f9dd3cf927817a1294144c1bd",
-      "data/api/body-index.json": "0f43657eccd0ad85113531ae9e4ed4b65034becf3f3fb7415e245c9040a8d1f2",
-      "data/api/axn-index.json": "352a6242d54eb25f82f7e1dc5e7c158717947d5bddac323f6f9838434c064c24",
+      "data/registry.json": "f354fcaae9faae430123cf0ea9f688a5d86056699ea694ac08e5532046c40e11",
+      "data/api/search-index.json": "86de41f240894bba6c0dc1f233f06efa73998e37fa8c4d02e45e1eabfd6aeb7e",
+      "data/api/body-index.json": "9b751207d10e1d2459d240dc8e1bfbcf1db6d253b69fb127265f1da2d5075931",
+      "data/api/axn-index.json": "7c49b534c1c38e56d61c35827d96d5e2d2f8e7163b3d4c2b0886a94cdf4daad5",
       "data/doi-resolution-index.json": "a34761b03da4f82378c9d226bdbdc60bdb2accafd3e56f9beb98639e1f533165"
     }
   }
