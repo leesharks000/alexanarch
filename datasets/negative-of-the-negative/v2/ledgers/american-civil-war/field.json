@@ -1,0 +1,552 @@
+{
+ "field": [
+  {
+   "id": "B1",
+   "card": "Wikipedia — American Civil War - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/American_Civil_War",
+   "fetched": "WebFetch verbatim excerpts 2026-10-07, collated against the article's raw wikitext (action=raw, fetched the same day; markup, references and templates removed)"
+  },
+  {
+   "id": "B2",
+   "card": "History.com — American Civil War: Causes, Dates & Battles | HISTORY",
+   "url": "https://www.history.com/articles/american-civil-war-history",
+   "fetched": "WebFetch verbatim excerpts 2026-10-07, collated against the page HTML (the card's URL redirects here; served title 'Civil War: Causes, Dates, Battles & Aftermath | HISTORY'; byline HISTORY.com Editors, published October 15, 2009, updated September 30, 2026; the card's '3 Key Civil War Battles' snippet does not appear on the page as served)"
+  },
+  {
+   "id": "B3",
+   "card": "Britannica — American Civil War | History, Summary, Dates, Causes, Map ... - Britannica",
+   "url": "https://www.britannica.com/event/American-Civil-War",
+   "fetched": "WebFetch verbatim excerpts 2026-10-07 of the summary and key facts only (article by Jennifer L. Weber, last updated Sep. 23, 2026); the article body was not served (a Cloudflare challenge to direct download; WebFetch received navigation and the summary), so the opening sentence is completed from the card snippet"
+  },
+  {
+   "id": "B4",
+   "card": "Gilder Lehrman Institute of American History — The American Civil War | Gilder Lehrman Institute of American History",
+   "url": "https://www.gilderlehrman.org/history-resources/essays/american-civil-war",
+   "fetched": "not fetchable: robots.txt disallows the page; the card snippet is the only quote (the card's own link is a Google redirect and the URL here is the institute's essay path, not confirmed)"
+  },
+  {
+   "id": "B5",
+   "card": "American Battlefield Trust — A Brief Overview of the American Civil War | American Battlefield Trust",
+   "url": "https://www.battlefields.org/learn/articles/brief-overview-american-civil-war",
+   "fetched": "WebFetch verbatim excerpts 2026-10-07, collated against the page HTML (by James McPherson; November 20, 2008, updated September 3, 2026)"
+  },
+  {
+   "id": "B6",
+   "card": "YouTube · Mapper Maniac — Why did the American civil war happen? (1:00)",
+   "url": null,
+   "fetched": "not fetchable: video; title only"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "locus": "Lead ¶1",
+   "quote": "\"The American Civil War (April 12, 1861 – May 26, 1865; also known by other names) was a civil war in the United States between the Union (\"the North\") and the Confederacy (\"the South\"), which was formed in 1861 by states that had seceded from the Union to preserve slavery in the United States.\"",
+   "claim": "The war, 1861–1865, between the Union and a Confederacy formed by states that seceded to preserve slavery",
+   "modality": "stipulation",
+   "kernel": true,
+   "const": true,
+   "lineage": "secession to preserve slavery"
+  },
+  "F2": {
+   "source": "B1",
+   "locus": "Lead ¶1",
+   "quote": "\"The war ended with Union victory, the dissolution of the Confederacy and the abolition of slavery, freeing four million African Americans.\"",
+   "claim": "It ended with Union victory, the Confederacy dissolved and slavery abolished, four million freed",
+   "modality": "documented",
+   "kernel": true,
+   "const": false,
+   "lineage": "outcome: Union preserved, slavery abolished"
+  },
+  "F3": {
+   "source": "B1",
+   "locus": "Lead ¶2",
+   "quote": "\"Decades of controversy over slavery came to a head when Abraham Lincoln, a Republican who opposed slavery's expansion, won the 1860 presidential election. Seven slave states in the South responded to Lincoln's victory by seceding from the United States and forming the Confederate States of America.\"",
+   "claim": "Lincoln, opposed to slavery's expansion, won in 1860; seven slave states seceded",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "1860 election and secession"
+  },
+  "F4": {
+   "source": "B1",
+   "locus": "Lead ¶2",
+   "quote": "\"The war began on April 12, 1861, when the Confederacy bombarded Fort Sumter in South Carolina.\"",
+   "claim": "The war began with the bombardment of Fort Sumter, April 12, 1861",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "Fort Sumter, April 12, 1861"
+  },
+  "F5": {
+   "source": "B1",
+   "locus": "Lead ¶2",
+   "quote": "\"Four more Southern states seceded after the war began and, led by its president, Jefferson Davis, the Confederacy comprised eleven states, containing a third of the US population.\"",
+   "claim": "Four more states seceded; the Confederacy comprised eleven states",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "1860 election and secession"
+  },
+  "F6": {
+   "source": "B1",
+   "locus": "Lead ¶3",
+   "quote": "\"The abolition of slavery became a Union war goal on January 1, 1863, when Lincoln issued the Emancipation Proclamation, which declared all slaves in rebel states to be free, applying to more than 3.5 million of the 4 million enslaved people in the country.\"",
+   "claim": "Abolition became a Union war goal with the Emancipation Proclamation, January 1, 1863",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "emancipation as war measure"
+  },
+  "F7": {
+   "source": "B1",
+   "locus": "Lead ¶3",
+   "quote": "\"The successful 1863 Union siege of Vicksburg split the Confederacy in two at the Mississippi River, while Confederate general Robert E. Lee's incursion north failed at the Battle of Gettysburg.\"",
+   "claim": "Vicksburg split the Confederacy; Lee's incursion failed at Gettysburg (1863)",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "turning points 1863"
+  },
+  "F8": {
+   "source": "B1",
+   "locus": "Lead ¶4",
+   "quote": "\"The Confederates abandoned Richmond, and on April 9, 1865, Lee surrendered to Grant following the Battle of Appomattox Court House, setting in motion the end of the war. Lincoln lived to see this victory but was shot by an assassin on April 14, dying the next day.\"",
+   "claim": "Lee surrendered at Appomattox, April 9, 1865; Lincoln was assassinated",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "surrender, 1865"
+  },
+  "F9": {
+   "source": "B1",
+   "locus": "Lead ¶5",
+   "quote": "\"The Confederacy collapsed, the Thirteenth Amendment abolished slavery, and four million enslaved black people were freed. The war-torn nation then entered the Reconstruction era in an attempt to rebuild the country, bring the former Confederate states back into the United States, and grant civil rights to freed slaves.\"",
+   "claim": "The Thirteenth Amendment abolished slavery; Reconstruction followed",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "outcome: Union preserved, slavery abolished"
+  },
+  "F10": {
+   "source": "B1",
+   "locus": "Lead ¶5",
+   "quote": "\"The war was among the first to use industrial warfare.\"",
+   "claim": "Among the first wars to use industrial warfare",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "industrial war"
+  },
+  "F11": {
+   "source": "B1",
+   "locus": "Lead ¶5",
+   "quote": "\"The war left an estimated 700,000 soldiers dead, along with an undetermined number of civilian deaths, making it the deadliest in American history.\"",
+   "claim": "About 700,000 soldiers dead; the deadliest American war",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "the deadliest war"
+  },
+  "F12": {
+   "source": "B1",
+   "locus": "Origins ¶1",
+   "quote": "\"The origins of the war were rooted in the desire of the Southern states to preserve the institution of slavery. Historians in the 21st century overwhelmingly agree on the centrality of slavery in the conflict—at least for the Southern states. They disagree on the North's reasons for refusing to allow the Southern states to secede.\"",
+   "claim": "Historians agree slavery was central, at least for the South; they disagree on the North's reasons",
+   "modality": "attributed",
+   "kernel": true,
+   "const": false,
+   "lineage": "slavery caused the war"
+  },
+  "F13": {
+   "source": "B1",
+   "locus": "Origins ¶1",
+   "quote": "\"The pseudo-historical Lost Cause ideology denies that slavery was the principal cause of the secession, a view disproven by historical evidence, including the seceding states' own secession documents. After leaving the Union, Mississippi issued a declaration stating, \"Our position is thoroughly identified with the institution of slavery—the greatest material interest of the world.\"\"",
+   "claim": "The Lost Cause denial is disproven by the secession documents, Mississippi's among them",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "Mississippi: identified with slavery"
+  },
+  "F14": {
+   "source": "B1",
+   "locus": "Origins ¶2",
+   "quote": "\"The principal political battle leading to Southern secession was over whether slavery would expand into the Western territories destined to become states.\"",
+   "claim": "The principal battle was over slavery's expansion into the territories",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "slavery in the territories"
+  },
+  "F15": {
+   "source": "B1",
+   "locus": "Origins ¶2",
+   "quote": "\"The primary reason for the North to reject secession was to preserve the Union, a cause based on American nationalism.\"",
+   "claim": "The North rejected secession primarily to preserve the Union",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the North fought for the Union"
+  },
+  "F16": {
+   "source": "B1",
+   "locus": "Origins ¶3",
+   "quote": "\"As a panel of historians said in 2011, \"while slavery and its various and multifaceted discontents were the primary cause of disunion, it was disunion itself that sparked the war.\"\"",
+   "claim": "A 2011 panel: slavery caused disunion; disunion sparked the war",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "slavery caused the war"
+  },
+  "F17": {
+   "source": "B1",
+   "locus": "Secession crisis",
+   "quote": "\"As Southerners resigned their Senate and House seats, Republicans could pass projects that had been blocked. These included the Morrill Tariff, land grant colleges, a Homestead Act, a transcontinental railroad, the National Bank Act, authorization of United States Notes by the Legal Tender Act of 1862, the end of slavery in the District of Columbia, and a ban on slavery in the territories.\"",
+   "claim": "With Southern members gone, Republicans passed the Morrill Tariff, a Homestead Act and other blocked projects",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "the wartime Republican program"
+  },
+  "F18": {
+   "source": "B1",
+   "locus": "Casualties ¶2",
+   "quote": "\"The war resulted in at least 1,030,000 casualties (3 percent of the population), including an estimated 698,000 soldier deaths—two-thirds by disease.\"",
+   "claim": "At least 1,030,000 casualties, about 698,000 soldier deaths",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "the deadliest war"
+  },
+  "F19": {
+   "source": "B1",
+   "locus": "Casualties",
+   "quote": "\"Professor Jim Downs states that tens of thousands to hundreds of thousands of slaves died during the war from disease, starvation, or exposure, and that if these deaths are counted in the war's total, the death toll would exceed 1 million.\"",
+   "claim": "Downs: counting enslaved deaths would take the toll past one million",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "the deadliest war"
+  },
+  "F20": {
+   "source": "B1",
+   "locus": "Emancipation ¶1",
+   "quote": "\"Abolishing slavery was not a Union war goal from the outset but quickly became one. Lincoln initially claimed that preserving the Union was the central goal. In contrast, the South fought to preserve slavery.\"",
+   "claim": "Abolition became a Union war goal; the South fought to preserve slavery",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "emancipation as war measure"
+  },
+  "F21": {
+   "source": "B1",
+   "locus": "Reconstruction ¶1",
+   "quote": "\"The war destroyed much of the South's wealth, in part because wealth held in enslaved people (at least $1,000 each for a healthy adult prior to the war) was wiped off the books.\"",
+   "claim": "Wealth held in enslaved people, at least $1,000 per healthy adult, was wiped off the books",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "wealth in persons erased"
+  },
+  "F22": {
+   "source": "B1",
+   "locus": "Reconstruction ¶1",
+   "quote": "\"From the Union perspective, the goals of Reconstruction were to consolidate victory by reuniting the Union, to guarantee a \"republican form of government\" for the ex-Confederate states, and to permanently end slavery—and prevent semi-slavery status.\"",
+   "claim": "Reconstruction's goals, from the Union perspective, included preventing semi-slavery status",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "Reconstruction and its reversal"
+  },
+  "F23": {
+   "source": "B1",
+   "locus": "Reconstruction ¶3",
+   "quote": "\"With the withdrawal of federal troops, white men retook control of every Southern legislature, and the Jim Crow era of disenfranchisement and legal segregation was ushered in.\"",
+   "claim": "After 1877, Jim Crow disenfranchisement and segregation",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "Reconstruction and its reversal"
+  },
+  "F24": {
+   "source": "B1",
+   "locus": "Lost Cause",
+   "quote": "\"The Lost Cause myth was formalized by Charles A. Beard and Mary R. Beard, whose The Rise of American Civilization (1927) spawned Beardian historiography. The Beards downplayed slavery, abolitionism, and issues of morality. Though this interpretation was abandoned by the Beards in the 1940s, and by historians generally by the 1950s, Beardian themes still echo among Lost Cause writers.\"",
+   "claim": "Beardian historiography downplayed slavery; abandoned by the 1950s",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "Beardian interpretation abandoned"
+  },
+  "F25": {
+   "source": "B1",
+   "locus": "Lead ¶5",
+   "quote": "\"The war is one of the most extensively studied and written about episodes in the history of the United States. It remains the subject of cultural and historiographical debate. Of continuing interest is the myth of the Lost Cause of the Confederacy.\"",
+   "claim": "The war is extensively studied and remains debated",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "central and debated"
+  },
+  "F26": {
+   "source": "B1",
+   "locus": "Infobox, Strength",
+   "quote": "\"2,200,000 total\"",
+   "claim": "Union strength, 2,200,000 total",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "strength"
+  },
+  "F27": {
+   "source": "B1",
+   "locus": "Infobox, Strength",
+   "quote": "\"750,000–1,000,000 total\"",
+   "claim": "Confederate strength, 750,000–1,000,000 total",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "strength"
+  },
+  "F28": {
+   "source": "B2",
+   "locus": "Opening",
+   "quote": "\"The Civil War in the United States began in 1861, after decades of simmering tensions between northern and southern states over slavery, states’ rights and westward expansion. The election of Abraham Lincoln in 1860 caused seven southern states to secede and form the Confederate States of America; four more states soon joined them. The War Between the States, as the conflict is also known, ended in Confederate surrender in 1865.\"",
+   "claim": "Begun 1861 after tensions over slavery, states' rights and westward expansion; ended in Confederate surrender, 1865",
+   "modality": "stipulation",
+   "kernel": true,
+   "const": false,
+   "lineage": "slavery, states' rights, expansion"
+  },
+  "F29": {
+   "source": "B2",
+   "locus": "Causes",
+   "quote": "\"In the North, manufacturing and industry were well established, and agriculture was mostly limited to small-scale farms, while the South’s economy was based on a system of large-scale farming that depended on the labor of Black enslaved people to grow certain crops, especially on cotton and tobacco plantations.\"",
+   "claim": "A Northern industrial economy against a Southern economy dependent on enslaved labor",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "two economies"
+  },
+  "F30": {
+   "source": "B2",
+   "locus": "Causes",
+   "quote": "\"Growing abolitionist sentiment in the North in the early 1800s and northern opposition to slavery’s extension into the new western territories led many southerners to fear that the existence of slavery in America—and thus the backbone of their economy—was in danger.\"",
+   "claim": "Southerners feared for slavery, the backbone of their economy",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "slavery in the territories"
+  },
+  "F31": {
+   "source": "B2",
+   "locus": "First Bull Run",
+   "quote": "\"On July 21, 1861, in the First Battle of Bull Run (known in the South as First Manassas), 35,000 Confederate soldiers under the command of General “Stonewall” Jackson forced a greater number of Union forces (or Federals) to retreat towards Washington, D.C., dashing any hopes of a quick Union victory and leading Lincoln to call for 500,000 more recruits.\"",
+   "claim": "Bull Run dashed hopes of a quick Union victory",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "a long war"
+  },
+  "F32": {
+   "source": "B2",
+   "locus": "Antietam",
+   "quote": "\"On September 17, the Army of the Potomac hit Lee’s forces (reinforced by Jackson’s) in what became the war’s bloodiest single day of fighting.\"",
+   "claim": "Antietam, the war's bloodiest single day",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "Antietam"
+  },
+  "F33": {
+   "source": "B2",
+   "locus": "Emancipation Proclamation",
+   "quote": "\"Lincoln used the occasion of the Union victory at Antietam to issue a preliminary Emancipation Proclamation, which freed all enslaved people in the rebellious states after January 1, 1863. He justified his decision as a wartime measure, and did not go so far as to free the enslaved people in the border states loyal to the Union.\"",
+   "claim": "After Antietam, a preliminary Proclamation, justified as a wartime measure",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "emancipation as war measure"
+  },
+  "F34": {
+   "source": "B2",
+   "locus": "Emancipation Proclamation",
+   "quote": "\"Still, the Emancipation Proclamation deprived the Confederacy of the bulk of its labor forces and put international public opinion strongly on the Union side. Some 186,000 Black Civil War soldiers would join the Union Army by the time the war ended in 1865, and 38,000 lost their lives.\"",
+   "claim": "The Proclamation deprived the Confederacy of the bulk of its labor forces; some 186,000 Black soldiers joined the Union Army",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "labor withdrawn from the Confederacy"
+  },
+  "F35": {
+   "source": "B2",
+   "locus": "Gettysburg",
+   "quote": "\"Over three days of fierce fighting, the Confederates were unable to push through the Union center and suffered casualties close to 60 percent.\"",
+   "claim": "At Gettysburg the Confederates failed to break the Union center",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "turning points 1863"
+  },
+  "F36": {
+   "source": "B2",
+   "locus": "End of the war",
+   "quote": "\"Days later, Sherman received Confederate General Joseph E. Johnston's surrender at Durham Station, North Carolina, on April 26, effectively ending the Civil War.\"",
+   "claim": "Johnston's surrender, April 26, effectively ended the war",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "surrender, 1865"
+  },
+  "F37": {
+   "source": "B2",
+   "locus": "Legacy",
+   "quote": "\"The Civil War was the costliest and deadliest war ever fought on American soil, with an estimated 620,000 to 750,000 soldiers killed, millions more injured and much of the South left in ruin.\"",
+   "claim": "The deadliest war on American soil, 620,000–750,000 soldiers killed",
+   "modality": "documented",
+   "kernel": true,
+   "const": false,
+   "lineage": "the deadliest war"
+  },
+  "F38": {
+   "source": "B2",
+   "locus": "Legacy",
+   "quote": "\"An emerging manufacturing and industrial center before the war, America quickly grew into an international economic and cultural powerhouse, though the economy in ravaged former Confederate states would lag behind the rest of the country.\"",
+   "claim": "After the war America grew into an economic powerhouse; the former Confederacy lagged",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "postwar economy"
+  },
+  "F39": {
+   "source": "B2",
+   "locus": "Legacy",
+   "quote": "\"Reconstruction was an attempt to help the South and assist former Black slaves, but Jim Crow laws, Black Codes and other impediments would slow progress for generations.\"",
+   "claim": "Reconstruction slowed by Jim Crow laws and Black Codes",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "Reconstruction and its reversal"
+  },
+  "F40": {
+   "source": "B3",
+   "locus": "Opening (card snippet and summary)",
+   "quote": "\"American Civil War, four-year war (1861–65) fought between the United States and 11 Southern states that seceded to form the Confederate States of America.\"",
+   "claim": "A four-year war between the United States and 11 seceded Southern states",
+   "modality": "stipulation",
+   "kernel": true,
+   "const": false,
+   "lineage": "secession to preserve slavery"
+  },
+  "F41": {
+   "source": "B3",
+   "locus": "Summary",
+   "quote": "\"It arose out of disputes over slavery and states' rights.\"",
+   "claim": "It arose out of disputes over slavery and states' rights",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "slavery, states' rights, expansion"
+  },
+  "F42": {
+   "source": "B3",
+   "locus": "Summary",
+   "quote": "\"When antislavery candidate Abraham Lincoln was elected president (1860), the Southern states seceded.\"",
+   "claim": "Lincoln's election in 1860 was followed by secession",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "1860 election and secession"
+  },
+  "F43": {
+   "source": "B4",
+   "locus": "Card snippet",
+   "quote": "\"Causes: Secession of eleven slaveholding states in 1860–1861 over slavery and territorial expansion disputes triggered the American Civil War in April 1861.\"",
+   "claim": "Secession of eleven slaveholding states over slavery and expansion triggered the war",
+   "modality": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "slavery in the territories"
+  },
+  "F44": {
+   "source": "B5",
+   "locus": "¶1",
+   "quote": "\"The Civil War is the central event in America's historical consciousness. While the Revolution of 1776-1783 created the United States, the Civil War of 1861-1865 determined what kind of nation it would be.\"",
+   "claim": "McPherson: the central event; it determined what kind of nation the United States would be",
+   "modality": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "central and debated"
+  },
+  "F45": {
+   "source": "B5",
+   "locus": "¶1",
+   "quote": "\"The war resolved two fundamental questions left unresolved by the revolution: whether the United States was to be a dissolvable confederation of sovereign states or an indivisible nation with a sovereign national government; and whether this nation, born of a declaration that all men were created with an equal right to liberty, would continue to exist as the largest slaveholding country in the world.\"",
+   "claim": "It resolved union against confederation and the survival of slavery",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "outcome: Union preserved, slavery abolished"
+  },
+  "F46": {
+   "source": "B5",
+   "locus": "¶2",
+   "quote": "\"Northern victory in the war preserved the United States as one nation and ended the institution of slavery that had divided the country from its beginning. But these achievements came at the cost of 625,000 lives--nearly as many American soldiers as died in all the other wars in which this country has fought combined.\"",
+   "claim": "Victory preserved the nation and ended slavery at the cost of 625,000 lives",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "outcome: Union preserved, slavery abolished"
+  },
+  "F47": {
+   "source": "B5",
+   "locus": "¶2",
+   "quote": "\"The American Civil War was the largest and most destructive conflict in the Western world between the end of the Napoleonic Wars in 1815 and the onset of World War I in 1914.\"",
+   "claim": "The largest and most destructive Western conflict between 1815 and 1914",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "the deadliest war"
+  },
+  "F48": {
+   "source": "B5",
+   "locus": "¶3",
+   "quote": "\"The Civil War started because of uncompromising differences between the free and slave states over the power of the national government to prohibit slavery in the territories that had not yet become states.\"",
+   "claim": "It started over the national government's power to prohibit slavery in the territories",
+   "modality": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "slavery in the territories"
+  },
+  "F49": {
+   "source": "B5",
+   "locus": "¶4",
+   "quote": "\"The event that triggered war came at Fort Sumter in Charleston Bay on April 12, 1861.\"",
+   "claim": "Fort Sumter, April 12, 1861, triggered the war",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "Fort Sumter, April 12, 1861"
+  },
+  "F50": {
+   "source": "B5",
+   "locus": "¶5",
+   "quote": "\"By 1864 the original Northern goal of a limited war to restore the Union had given way to a new strategy of \"total war\" to destroy the Old South and its basic institution of slavery and to give the restored Union a \"new birth of freedom,\" as President Lincoln put it in his address at Gettysburg to dedicate a cemetery for Union soldiers killed in the battle there.\"",
+   "claim": "By 1864 a limited war for the Union had become total war on the Old South and slavery",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "emancipation as war measure"
+  },
+  "F51": {
+   "source": "B5",
+   "locus": "¶7",
+   "quote": "\"By the spring of 1865 all the principal Confederate armies surrendered, and when Union cavalry captured the fleeing Confederate President Jefferson Davis in Georgia on May 10, 1865, resistance collapsed and the war ended. The long, painful process of rebuilding a united nation free of slavery began.\"",
+   "claim": "The armies surrendered by spring 1865; Davis was captured May 10; rebuilding began",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "surrender, 1865"
+  }
+ }
+}

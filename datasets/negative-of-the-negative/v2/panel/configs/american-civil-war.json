@@ -1,0 +1,16 @@
+{
+ "row": "american-civil-war",
+ "address": "the civil war",
+ "entity": "The American Civil War (1861–1865)",
+ "row_type": "C (public entity: an event)",
+ "aliases": [
+  {"pattern": "\\bCivil War\\b", "flags": ""},
+  {"pattern": "\\bsecession\\w*", "flags": "i"},
+  {"pattern": "\\b(Confedera\\w+|Fort Sumter|Gettysburg|Antietam|Emancipation Proclamation|Reconstruction)\\b", "flags": ""},
+  {"pattern": "\\bThirteenth Amendment\\b|\\b13th Amendment\\b", "flags": ""}
+ ],
+ "classes": [],
+ "classes_note": "O-class not run on this pass.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-10-07. Other civil wars (Spanish, English, Russian) and figurative uses are excluded by reading."
+}

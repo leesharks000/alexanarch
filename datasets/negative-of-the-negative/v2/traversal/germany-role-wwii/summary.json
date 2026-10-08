@@ -1,0 +1,88 @@
+{
+ "row": "germany-role-wwii",
+ "address": "the causes of the german roke in wwii",
+ "entity": "Germany's role in the Second World War (its causes)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "germany-role-wwii",
+  "address": "the causes of the german roke in wwii",
+  "entity": "Germany's role in the Second World War (its causes)",
+  "row_type": "C (public entity: a historical question)",
+  "aliases": [
+   {
+    "pattern": "\\b(World War II|Second World War|WWII|WW2)\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\b(Nazi\\w*|National Socialis\\w+|Third Reich|Hitler\\w*)\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\b(Lebensraum|Versailles|Weimar|Wehrmacht|appeasement)\\b",
+    "flags": "i"
+   }
+  ],
+  "classes": [],
+  "classes_note": "O-class not run on this pass.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-10-07; 'roke' read as 'role' (operator). Bears: the causes of the war as Germany's, Nazi aims and economy, and, as the composition also treated it, why Germany lost."
+ },
+ "texts_scanned": 1659,
+ "counts": {
+  "D_sentences": 87,
+  "D_deposits": 9,
+  "R_sentences": 22,
+  "R_deposits": 3,
+  "O_direct": 17,
+  "O_class": 0,
+  "O_deposits": 4,
+  "H_candidates": 0
+ },
+ "per_deposit": {
+  "D": {
+   "32": 1,
+   "382": 1,
+   "499": 1,
+   "564": 2,
+   "650": 1,
+   "708": 1,
+   "923": 1,
+   "1668": 3,
+   "1669": 76
+  },
+  "R": {
+   "708": 1,
+   "1668": 1,
+   "1669": 20
+  },
+  "O": {
+   "650": 1,
+   "708": 1,
+   "923": 1,
+   "1669": 14
+  }
+ },
+ "registry_entity_triples": [
+  {
+   "dep": 1669,
+   "triple": {
+    "subject": "The Colony Enters the Factory: War Fordism, Racial Labor Hierarchy, and the Industrialization of Con",
+    "predicate": "is_type",
+    "object": "Theoretical paper (historical political economy: war Fordism, forced labor and the Nazi camp economy)",
+    "type": "work",
+    "evidence_status": "observed"
+   }
+  }
+ ],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "5451ed03cc67958d717c2bc0439d62825abd04bd1e37612f6c3d7032b2d0e16b",
+  "candidates-R.jsonl": "b32bce3ab752294c0dd525b91b3f90a4ce0733673778c7db156bfdcfa951dcc8",
+  "candidates-O.jsonl": "ed890385d700c0929f9ec1ea126d51afcac7504fc8e0e8cf3e557e7b971a6433",
+  "candidates-H.jsonl": null
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 10738
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}
