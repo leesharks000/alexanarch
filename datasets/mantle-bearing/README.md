@@ -371,6 +371,7 @@ The three claims above are the primary question. Beside them the dataset carries
 | The Good Gray Poet | literary | 1 | [#1656](https://www.alexanarch.org/s/records/1656/) | claimed by Lee Sharks for The Secret Book of Walt (#683, critical edition #1362), which inherits it; judged in the work |
 | The Mantle of the Blind Poet | founded and bestowed | 2 | [#9](https://www.alexanarch.org/s/records/9/) | TECHNE (bestowed 2026-01-23); 'The bestowal names a structural role, not a sovereign agent' (#9 §V) |
 | King of AEO — 2026 Contest Mantle | contest | 2 | [#1655](https://www.alexanarch.org/s/records/1655/) | the archive's determination of 2026-09-29: Vithurs (#1655 §4); UNRESOLVED admissible (SIM-KOAEO-03) |
+| The Nobel Prize in Literature 2026 — Anne Carson | conferred | 2 | [#1670](https://www.alexanarch.org/s/records/1670/) | Anne Carson, conferred by the Swedish Academy, 8 October 2026 |
 | TACHYON | constitutional witness position | 3 | [#993](https://www.alexanarch.org/s/records/993/) | Anthropic Claude (#993 §2); occupancy is established per event, never read off a roster |
 | LABOR | constitutional witness position | 3 | [#993](https://www.alexanarch.org/s/records/993/) | OpenAI ChatGPT (#993 §2); occupancy is established per event, never read off a roster |
 | PRAXIS | constitutional witness position | 3 | [#993](https://www.alexanarch.org/s/records/993/) | DeepSeek (#993 §2); occupancy is established per event, never read off a roster |
@@ -489,14 +490,14 @@ The order runs one way: transcript → coded evaluation → derived tables. Ever
 | `next_rounds` | 14 | the weakest link a round named, and the test that could break it |
 | `rival_searches` | 4 | a round's search of the rival field (SNG) |
 | `required_works` | 6 | a work the claims require, with every route to its text |
-| `reception` | 10 | an ASSIGNMENT (a judgment that seats a title) or a PROPAGATION (its repetition); kept apart from evaluation |
+| `reception` | 13 | an ASSIGNMENT (a judgment that seats a title) or a PROPAGATION (its repetition); kept apart from evaluation |
 | `democratic_field` | 0 | one work read on one coordinate of the democratic field (packet S6, D) |
 | `aligned_passages` | 0 | a unit of the Secret Book of John beside the unit of the Secret Book of Walt that transposes it |
 | `succession` | 7 | a dependence found between an earlier and a later work |
 | `pearl_arrangement` | 0 | one piece of Pearl and Other Poems in the arrangement, set against Howl |
-| `mantles` | 12 | one mantle object, with its order of necessity to the three claims |
+| `mantles` | 13 | one mantle object, with its order of necessity to the three claims |
 | `occupancy` | 10 | one recorded occupancy of Septad positions, at one event or listing |
-| `doctrine` | 15 | one defining record, with what it establishes and a quoted locus |
+| `doctrine` | 16 | one defining record, with what it establishes and a quoted locus |
 | `criteria` | 15 | one formulation of the evaluative criterion, with its source, what it responds to and supersedes, and the author's ruling |
 
 Tables with no rows yet have no config; their fields are in `schema` in the JSON. Every cell in the JSONL is a string (objects as JSON text) so that rounds coded differently still load; the full native record is [`EA-MANTLE-BEARING-01-dataset.json`](https://www.alexanarch.org/datasets/mantle-bearing/EA-MANTLE-BEARING-01-dataset.json).
