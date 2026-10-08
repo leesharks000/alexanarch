@@ -1,0 +1,730 @@
+{
+ "field": [
+  {
+   "id": "B1",
+   "card": "search.google — Google AI Overviews - Search anything, effortlessly",
+   "url": "https://search.google/ways-to-search/ai-overviews/",
+   "fetched": "page HTML downloaded 2026-10-08 and converted to text (pages/b1.html, b1.txt sha256 2f3c7b34c6a700bd); the composition's card 1"
+  },
+  {
+   "id": "B2",
+   "card": "Wikipedia — AI Overviews - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/AI_Overviews",
+   "fetched": "raw wikitext (action=raw) downloaded 2026-10-08, references and templates removed (pages/b2.wiki, b2.txt sha256 b31fe95d347b3e39); the composition's body links its own 'Wikipedia' through one Google redirect token, the same token as its Technology marker and its third Availability marker"
+  },
+  {
+   "id": "B3",
+   "card": "Google Help — Find information in faster & easier ways with AI Overviews in Google ...",
+   "url": "https://support.google.com/websearch/answer/14901683?hl=en&co=GENIE.Platform%3DAndroid",
+   "fetched": "page HTML downloaded 2026-10-08 at the exact URL of the composition's one direct marker (Interactivity [1]); served title 'Find information in faster & easier ways with AI Overviews in Google Search - Android - Google Search Help' (pages/b3.html, b3.txt sha256 2bfbadd0182ed283)"
+  },
+  {
+   "id": "B4",
+   "card": "Botify — What Are Google AI Overviews and How Do They Work? - Botify",
+   "url": "https://www.botify.com/insight/what-are-google-ai-overviews",
+   "fetched": "page HTML downloaded 2026-10-08 (URL located by search on the card title; served title matches) (pages/b4.html, b4.txt sha256 4ce7545ae19d936b)"
+  },
+  {
+   "id": "B5",
+   "card": "Semrush — AI Overviews: What Are They & How to Optimize for Them - Semrush",
+   "url": "https://www.semrush.com/blog/ai-overviews/",
+   "fetched": "page HTML downloaded 2026-10-08 (contributors Christine Skopec and Carlos Silva) (pages/b5.html, b5.txt sha256 9ffadddec4e76990)"
+  },
+  {
+   "id": "B6",
+   "card": "TechRepublic — What Is Google’s AI Overviews?",
+   "url": "https://www.techrepublic.com/article/google-ai-overviews/",
+   "fetched": "WebFetch verbatim excerpts 2026-10-08 (byline Owen Hughes, Aug 15, 2024); direct download refused (Cloudflare 403), so quotes are the fetch tool's quoted fragments, saved at pages/webfetch-b6.txt; the URL is the one Wikipedia cites for this article"
+  },
+  {
+   "id": "B7",
+   "card": "Digital Marketing Institute — Google AI Overviews: What Do They Mean for Search?",
+   "url": "https://digitalmarketinginstitute.com/blog/google-ai-overviews-what-do-they-mean-for-search",
+   "fetched": "page HTML downloaded 2026-10-08; the article body is carried in the page's embedded JSON blocks and was extracted from them (by Joe Williams, Oct 22, 2025) (pages/b7.html, b7.txt sha256 f08b000f96f42f96)"
+  },
+  {
+   "id": "B8",
+   "card": "Quora — What is Google AI Overview and how does it affect website traffic?",
+   "url": "https://www.quora.com/What-is-Google-AI-Overview-and-how-does-it-affect-website-traffic",
+   "fetched": "not fetchable: robots.txt disallows the page (WebFetch ROBOTS_DISALLOWED); title and card snippet are the only text; URL inferred from the title, not confirmed"
+  },
+  {
+   "id": "B9",
+   "card": "Coalition Technologies — What Are Google AI Overviews? Everything You Need To Know",
+   "url": "https://coalitiontechnologies.com/blog/what-are-google-ai-overviews-everything-you-need-to-know",
+   "fetched": "WebFetch excerpts 2026-10-08 (by Jordan Brannon, December 16, 2025); direct download refused (Cloudflare 403); only the strings the tool returned in quotation marks are used, saved at pages/webfetch-b9.txt"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "locus": "Find what you're looking for ¶",
+   "quote": "\"AI Overviews provide a snapshot of key information about a topic or question with links so you can easily explore more on the web.\"",
+   "claim": "AI Overviews give a snapshot of key information with links to explore further",
+   "modality": "stipulation",
+   "kernel": true,
+   "const": true,
+   "lineage": "AI-generated answer at the top of Search, with links"
+  },
+  "F2": {
+   "source": "B1",
+   "locus": "When your question has questions ¶",
+   "quote": "\"AI Overviews makes it easier than ever for people to find the information they need and discover the richness of the web.\"",
+   "claim": "Google says AIO makes it easier to find information and discover the web",
+   "modality": "self-description",
+   "kernel": false,
+   "const": false,
+   "lineage": "AIO serves users and the web (the provider's account)"
+  },
+  "F3": {
+   "source": "B1",
+   "locus": "When your question has questions ¶",
+   "quote": "\"Currently available in over 120 countries and territories, and 11 languages.\"",
+   "claim": "Available in over 120 countries and territories, 11 languages",
+   "modality": "documented",
+   "kernel": true,
+   "const": false,
+   "lineage": "availability"
+  },
+  "F4": {
+   "source": "B1",
+   "locus": "Ask questions in any way ¶",
+   "quote": "\"Get AI-powered responses for more of your questions and ask follow-ups with the new experimental AI Mode in Google Search.\"",
+   "claim": "Follow-ups in the experimental AI Mode",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "Show more and follow-ups into AI Mode"
+  },
+  "F5": {
+   "source": "B2",
+   "locus": "Lead ¶1",
+   "quote": "\"AI Overviews is an generative artificial intelligence (AI) feature integrated into Google Search that produces AI-generated responses at the top of search results. It uses the Gemini 3 family of large language models developed by Google DeepMind.\"",
+   "claim": "A generative AI feature of Google Search producing responses at the top of results, using Gemini 3 (Google DeepMind)",
+   "modality": "stipulation",
+   "kernel": true,
+   "const": true,
+   "lineage": "AI-generated answer at the top of Search, with links"
+  },
+  "F6": {
+   "source": "B2",
+   "locus": "Lead ¶1",
+   "quote": "\"It launched in May 2024 in the United States, and globally by October 2024.\"",
+   "claim": "Launched May 2024 in the US, globally by October 2024",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "launch, May 2024"
+  },
+  "F7": {
+   "source": "B2",
+   "locus": "Lead ¶1",
+   "quote": "\"A June 2025 study found its most cited sources as Quora, followed by Reddit.\"",
+   "claim": "A June 2025 study: most cited sources Quora, then Reddit",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "which sources it cites"
+  },
+  "F8": {
+   "source": "B2",
+   "locus": "Lead ¶2",
+   "quote": "\"The feature has been criticized for its inaccuracy, hallucination, reducing web traffic and not being able to be opted out.\"",
+   "claim": "Criticized for inaccuracy, hallucination, reduced traffic, no opt-out",
+   "modality": "attributed",
+   "kernel": true,
+   "const": false,
+   "lineage": "criticism: errors and hallucination"
+  },
+  "F9": {
+   "source": "B2",
+   "locus": "History ¶1",
+   "quote": "\"AI Overviews were first introduced as part of Google's Search Generative Experience (SGE), which was unveiled at the Google I/O conference in 10-11 May 2023.\"",
+   "claim": "First introduced as part of SGE, unveiled at I/O May 2023",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin in SGE"
+  },
+  "F10": {
+   "source": "B2",
+   "locus": "History ¶2",
+   "quote": "\"In December 2024, Botify x Demandsphere released findings stating that when AI Overviews and featured snippets appear together on the search engine results page, they take up approximately 67.1% of the screen on desktop and 75.7% on mobile.\"",
+   "claim": "Botify x Demandsphere: with featured snippets, about 67.1% of desktop and 75.7% of mobile screen",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "screen share and placement"
+  },
+  "F11": {
+   "source": "B2",
+   "locus": "History ¶2",
+   "quote": "\"As of May 2025, AI Overviews are available in over 200 countries and territories and in more than 40 languages—every country except Cuba, Iran, and mainland China.\"",
+   "claim": "Over 200 countries and territories, 40+ languages, except Cuba, Iran, mainland China (May 2025)",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "availability"
+  },
+  "F12": {
+   "source": "B2",
+   "locus": "Functionality ¶1",
+   "quote": "\"The AI Overviews feature uses large language models to generate summaries from web content.\"",
+   "claim": "Uses LLMs to generate summaries from web content",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "how it composes"
+  },
+  "F13": {
+   "source": "B2",
+   "locus": "Functionality ¶1",
+   "quote": "\"The overviews also include links to sources.\"",
+   "claim": "Includes links to sources",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "AI-generated answer at the top of Search, with links"
+  },
+  "F14": {
+   "source": "B2",
+   "locus": "History ¶2",
+   "quote": "\"The company was also considering adding advertisements to the AI Mode, as they already exist in AI Overviews.\"",
+   "claim": "Advertisements exist in AI Overviews",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "ads in AI Overviews"
+  },
+  "F15": {
+   "source": "B2",
+   "locus": "Reception ¶1",
+   "quote": "\"The feature has faced criticism for inaccuracies, including instances where erroneous or nonsensical content was generated.\"",
+   "claim": "Criticized for inaccuracies, erroneous or nonsensical content",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "criticism: errors and hallucination"
+  },
+  "F16": {
+   "source": "B2",
+   "locus": "Reception ¶1",
+   "quote": "\"In May 2024, Google temporarily restricted the AI tool after it provided suggestions that were seen as nonsensical and harmful, such as telling users to eat rocks or apply glue on pizza.\"",
+   "claim": "May 2024: Google temporarily restricted the tool after nonsensical and harmful suggestions",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "criticism: errors and hallucination"
+  },
+  "F17": {
+   "source": "B2",
+   "locus": "Reception ¶1",
+   "quote": "\"Concerns were also raised by content publishers, who feared a decline in web traffic as users relied on the summaries instead of visiting source websites.\"",
+   "claim": "Publishers feared traffic decline as users relied on summaries",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "traffic and clicks"
+  },
+  "F18": {
+   "source": "B2",
+   "locus": "Reception ¶2",
+   "quote": "\"The European Commission announced in December 2025 that they were investigating whether AI Overviews breached European competition law.\"",
+   "claim": "EC investigating (Dec 2025) whether AIO breached EU competition law",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "regulators and publisher complaints"
+  },
+  "F19": {
+   "source": "B2",
+   "locus": "Reception ¶2",
+   "quote": "\"In January 2026, Google restricted AI Overviews on certain health-related searches following an investigation by The Guardian.\"",
+   "claim": "Jan 2026: restricted on certain health searches after a Guardian investigation",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "health removals, January 2026"
+  },
+  "F20": {
+   "source": "B2",
+   "locus": "Lawsuits, 2025",
+   "quote": "\"On 24 February 2025, Chegg sued Google over the AI Overviews feature, alleging that publishers could not avoid providing information for AI Overviews while remaining visible on Google Search, violating antitrust law through product tying.\"",
+   "claim": "Chegg sued (Feb 2025): publishers cannot avoid supplying AIO while staying visible",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "lawsuits"
+  },
+  "F21": {
+   "source": "B2",
+   "locus": "Lawsuits, 2025",
+   "quote": "\"In September 2025, Penske Media Corporation, the publisher of Rolling Stone and The Hollywood Reporter, sued Google, claiming that AI Overviews illegally regurgitate content from their websites and drive off potential site visitors by always appearing on top of the search results while leaving little incentive to see the linked sources.\"",
+   "claim": "Penske sued (Sep 2025): AIO regurgitates content and drives off visitors",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "lawsuits"
+  },
+  "F22": {
+   "source": "B2",
+   "locus": "Lawsuits, 2025",
+   "quote": "\"Google spokesperson José Castañeda called the claims \"meritless\" and stated that \"AI Overviews send traffic to a greater diversity of sites.\"\"",
+   "claim": "Google's spokesperson: claims meritless; AIO sends traffic to a greater diversity of sites",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "AIO serves users and the web (the provider's account)"
+  },
+  "F23": {
+   "source": "B2",
+   "locus": "Lawsuits, 2026",
+   "quote": "\"A Munich regional court sent a temporary injunction to Google due to AI Overviews claiming two Munich-based publishers were performing scams, subscription traps, and other immoral business practices. Initially, the publishers had sent Google a cease-and-desist letter. The court claimed that unlike regular search engines which simply redirect users to websites, AI Overviews generate \"independent, new, and substantive statements\".\"",
+   "claim": "A Munich court enjoined Google: AIO generates independent, new and substantive statements",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "AIO statements as Google's own"
+  },
+  "F24": {
+   "source": "B2",
+   "locus": "Lawsuits, 2026",
+   "quote": "\"The article goes on to reference a Pew study that showed that only 1% of users click source links provided by AI Overviews.\"",
+   "claim": "Pew: only 1% of users click AIO source links",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "traffic and clicks"
+  },
+  "F25": {
+   "source": "B3",
+   "locus": "Opening ¶",
+   "quote": "\"Find what you're looking for faster and easier with AI Overviews in search results. AI Overviews can take the work out of searching by providing an AI-generated snapshot with key information and links to dig deeper.\"",
+   "claim": "An AI-generated snapshot with key information and links",
+   "modality": "stipulation",
+   "kernel": true,
+   "const": false,
+   "lineage": "AI-generated answer at the top of Search, with links"
+  },
+  "F26": {
+   "source": "B3",
+   "locus": "AI Overviews in Search results",
+   "quote": "\"You'll find AI Overviews in your Google Search results when our systems determine that generative AI can be especially helpful – for example, when you want to quickly understand information from a range of sources.\"",
+   "claim": "AIO appears when Google's systems determine generative AI can be especially helpful",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "when it appears"
+  },
+  "F27": {
+   "source": "B3",
+   "locus": "AI Overviews in Search results",
+   "quote": "\"Important: AI responses may include mistakes.\"",
+   "claim": "AI responses may include mistakes",
+   "modality": "self-description",
+   "kernel": true,
+   "const": false,
+   "lineage": "the provider: it may make mistakes"
+  },
+  "F28": {
+   "source": "B3",
+   "locus": "Show only web links",
+   "quote": "\"AI Overviews are a core Google Search feature, like knowledge panels. Features cannot be turned off. However, you can select the Web filter after you perform a search. This filter displays only text-based links without features like AI Overviews.\"",
+   "claim": "A core feature that cannot be turned off; the Web filter shows only links",
+   "modality": "documented",
+   "kernel": true,
+   "const": false,
+   "lineage": "no off switch; the Web filter"
+  },
+  "F29": {
+   "source": "B3",
+   "locus": "Generative AI limits",
+   "quote": "\"While exciting, this technology is rapidly evolving and improving, and may provide inaccurate or offensive information. AI Overviews can and will make mistakes.\"",
+   "claim": "May provide inaccurate or offensive information; can and will make mistakes",
+   "modality": "self-description",
+   "kernel": false,
+   "const": false,
+   "lineage": "the provider: it may make mistakes"
+  },
+  "F30": {
+   "source": "B3",
+   "locus": "Generative AI limits",
+   "quote": "\"Always check important info in more than one place.\"",
+   "claim": "Users are told to check important info in more than one place",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "verification left to the user"
+  },
+  "F31": {
+   "source": "B3",
+   "locus": "Continue your conversation in AI Mode",
+   "quote": "\"You can now seamlessly transition from an AI Overview to a deeper conversation in AI Mode. This feature is available on mobile devices in all regions and languages where AI Overviews and AI Mode are supported. How it works: Select Show more at the bottom of the AI Overview to open the detailed view.\"",
+   "claim": "Show more opens the detailed view and continues in AI Mode",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "Show more and follow-ups into AI Mode"
+  },
+  "F32": {
+   "source": "B3",
+   "locus": "How data helps Google develop generative AI",
+   "quote": "\"To develop and improve generative AI experiences in Search and the related machine learning technologies, Google uses people's interactions with Search and these AI experiences.\"",
+   "claim": "Google uses people's interactions with Search and AI experiences to develop them",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "interactions used for development"
+  },
+  "F33": {
+   "source": "B4",
+   "locus": "Opening ¶",
+   "quote": "\"Google AI Overviews are an organic Google SERP feature providing AI-generated summaries in response to a consumer’s search query. They appear at the very top of the results page in “position zero,” and can sometimes be followed by a carousel of AI Overview Ads when the query has a commercial intent.\"",
+   "claim": "An organic SERP feature at the very top, 'position zero', sometimes followed by AIO ads",
+   "modality": "stipulation",
+   "kernel": true,
+   "const": false,
+   "lineage": "AI-generated answer at the top of Search, with links"
+  },
+  "F34": {
+   "source": "B4",
+   "locus": "Rollout timeline",
+   "quote": "\"January 2026: Google combined AI Overviews and AI Mode into a fluid experience, allowing a person who clicks “Show more” to transition automatically into AI Mode.\"",
+   "claim": "Jan 2026: Show more transitions into AI Mode",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "Show more and follow-ups into AI Mode"
+  },
+  "F35": {
+   "source": "B4",
+   "locus": "Main components",
+   "quote": "\"Key points: A list of main ideas, each linked to a website. The AI adds these links after generating the text.\"",
+   "claim": "Links are added after the text is generated",
+   "modality": "documented",
+   "kernel": true,
+   "const": false,
+   "lineage": "links matched after composition"
+  },
+  "F36": {
+   "source": "B4",
+   "locus": "Main components",
+   "quote": "\"Cited sources: A list of linked websites related to the answer. Users can click “show all” to see more sources, usually taken from the top 12 organic search results.\"",
+   "claim": "Cited sources usually from the top 12 organic results",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "citations and organic rank"
+  },
+  "F37": {
+   "source": "B4",
+   "locus": "How they work",
+   "quote": "\"Because the information within an LLM is restricted to its training timeframe and can’t trace knowledge back to a specific, linkable source, Google pairs their AI-generated summaries with a list of linked website sources that best match the content of the generative response. The websites cited in AI Overviews are pulled from a different data source: Google’s organic search index\"",
+   "claim": "Sources that best match the generated response are paired from the organic index",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "links matched after composition"
+  },
+  "F38": {
+   "source": "B4",
+   "locus": "Impact",
+   "quote": "\"Additionally, because they do such a good job of answering the consumer’s need directly in the SERP on Google, there may not be a reason for a consumer to click on a website link. They could get all the information they want in the AI Overview, impacting brand metrics like traffic and CTR.\"",
+   "claim": "There may be no reason to click, affecting traffic and CTR",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "traffic and clicks"
+  },
+  "F39": {
+   "source": "B4",
+   "locus": "Impact",
+   "quote": "\"AI Overviews currently appear for 59% of searches with informational intent and for 19% of searches with commercial intent.\"",
+   "claim": "Appear for 59% of informational and 19% of commercial searches",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "when it appears"
+  },
+  "F40": {
+   "source": "B5",
+   "locus": "What are AI Overviews",
+   "quote": "\"Google’s AI Overviews are a type of highly prominent search feature that provides users with AI-generated answers to certain queries. AI Overviews typically appear at the top of search results, although they sometimes appear below sponsored results and even unpaid results.\"",
+   "claim": "AI-generated answers to certain queries; typically at the top, sometimes below sponsored and unpaid results",
+   "modality": "stipulation",
+   "kernel": true,
+   "const": false,
+   "lineage": "AI-generated answer at the top of Search, with links"
+  },
+  "F41": {
+   "source": "B5",
+   "locus": "What are AI Overviews",
+   "quote": "\"Google’s Gemini models generate AI Overview answers by gathering information from different sources on the web. The summary also contains links to these sources that users can click for more information.\"",
+   "claim": "Gemini models gather information from sources; the summary links to them",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "how it composes"
+  },
+  "F42": {
+   "source": "B5",
+   "locus": "What are AI Overviews",
+   "quote": "\"AI Overviews are separate from AI Mode, a newer and more expansive AI-powered search experience Google introduced in 2025.\"",
+   "claim": "Separate from AI Mode (2025)",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "Show more and follow-ups into AI Mode"
+  },
+  "F43": {
+   "source": "B5",
+   "locus": "When and where",
+   "quote": "\"Not all searches trigger AI Overviews, even in supported countries. They’re selectively displayed based on query complexity and whether Google’s systems determine an AI-generated summary would genuinely help users.\"",
+   "claim": "Selectively displayed by query complexity and Google's judgment of help",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "when it appears"
+  },
+  "F44": {
+   "source": "B5",
+   "locus": "When and where",
+   "quote": "\"AI Overviews appear for a range of search queries and are available in over 200 countries and territories and in 40+ languages.\"",
+   "claim": "Over 200 countries and territories, 40+ languages",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "availability"
+  },
+  "F45": {
+   "source": "B5",
+   "locus": "Why important",
+   "quote": "\"A Pew Research Center report suggests users click traditional search result links just 8% of the time when an AI Overview is present, versus 15% of the time when there’s no AI Overview present. And users only click results within the AI Overview 1% of the time.\"",
+   "claim": "Pew: 8% vs 15% clicks with and without AIO; 1% click inside",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "traffic and clicks"
+  },
+  "F46": {
+   "source": "B5",
+   "locus": "How they work",
+   "quote": "\"AI Overviews can also use a process called query fan-out. This involves the systems running multiple related searches to put together a more comprehensive response for the user.\"",
+   "claim": "Query fan-out runs multiple related searches",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "query fan-out"
+  },
+  "F47": {
+   "source": "B5",
+   "locus": "How to optimize",
+   "quote": "\"Google’s official recommendation for optimizing for AI features like AI Overviews is to “apply the same foundational SEO best practices for AI features as you do for Google Search overall.”\"",
+   "claim": "Google: apply the same foundational SEO practices for AI features",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "optimizing for AIO"
+  },
+  "F48": {
+   "source": "B5",
+   "locus": "How to prevent",
+   "quote": "\"AI Overviews are a feature of Google search results, which means websites cannot directly opt out of them.\"",
+   "claim": "Websites cannot directly opt out",
+   "modality": "documented",
+   "kernel": true,
+   "const": false,
+   "lineage": "no opt-out for websites"
+  },
+  "F49": {
+   "source": "B6",
+   "locus": "Opening",
+   "quote": "\"Google AI Overviews is a feature within Google Search that provides AI-generated summaries and insights\"",
+   "claim": "A Search feature providing AI-generated summaries",
+   "modality": "stipulation",
+   "kernel": true,
+   "const": false,
+   "lineage": "AI-generated answer at the top of Search, with links"
+  },
+  "F50": {
+   "source": "B6",
+   "locus": "AI Overviews vs Google SGE",
+   "quote": "\"SGE has since become AI Overviews\"",
+   "claim": "SGE became AI Overviews",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin in SGE"
+  },
+  "F51": {
+   "source": "B6",
+   "locus": "How to access, customize or disable",
+   "quote": "\"There's currently no default option to disable AI Overviews entirely.\"",
+   "claim": "No default option to disable AIO entirely",
+   "modality": "documented",
+   "kernel": true,
+   "const": false,
+   "lineage": "no off switch; the Web filter"
+  },
+  "F52": {
+   "source": "B6",
+   "locus": "How to access, customize or disable",
+   "quote": "\"If you prefer the usual list of links, you can switch to the Web tab at the top of the Google Search results page.\"",
+   "claim": "Switch to the Web tab for links",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "no off switch; the Web filter"
+  },
+  "F53": {
+   "source": "B6",
+   "locus": "Rollout",
+   "quote": "\"The rollout of Google AI Overviews hasn't been smooth sailing.\"",
+   "claim": "The rollout hasn't been smooth",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "criticism: errors and hallucination"
+  },
+  "F54": {
+   "source": "B6",
+   "locus": "Rollout",
+   "quote": "\"Google attributed the issues to its AI model misunderstanding queries or nuances in language\"",
+   "claim": "Google attributed the issues to misunderstood queries",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "criticism: errors and hallucination"
+  },
+  "F55": {
+   "source": "B7",
+   "locus": "What are AI Overviews?",
+   "quote": "\"AI Overviews are Google's generative artificial intelligence summaries that appear prominently on search results, often before organic listings and sometimes even above ads.\"",
+   "claim": "Generative summaries shown often before organic listings, sometimes above ads",
+   "modality": "stipulation",
+   "kernel": true,
+   "const": false,
+   "lineage": "AI-generated answer at the top of Search, with links"
+  },
+  "F56": {
+   "source": "B7",
+   "locus": "What are AI Overviews?",
+   "quote": "\"Unlike featured snippets, which extract concise information from a single web page to answer a specific query, AI Overviews synthesize information from multiple sources to provide a more comprehensive summary.\"",
+   "claim": "They synthesize multiple sources, unlike featured snippets",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "how it composes"
+  },
+  "F57": {
+   "source": "B7",
+   "locus": "What are AI Overviews?",
+   "quote": "\"Unlike conversational AI models like ChatGPT, there is no input box below the AI Overview for follow-up questions.\"",
+   "claim": "No input box for follow-ups (Oct 2025)",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "Show more and follow-ups into AI Mode"
+  },
+  "F58": {
+   "source": "B7",
+   "locus": "Opening",
+   "quote": "\"In 2025, AIO reported having more than 2 billion users, according to Google.\"",
+   "claim": "Over 2 billion users in 2025, according to Google",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "scale of use"
+  },
+  "F59": {
+   "source": "B7",
+   "locus": "Impact on SEO",
+   "quote": "\"we discuss that 93.8% of AI Overview citations were not from the top 10 organic results, according to a study by Authoritas.\"",
+   "claim": "Authoritas: 93.8% of citations not from the top 10",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "citations and organic rank"
+  },
+  "F60": {
+   "source": "B7",
+   "locus": "Crocodile effect",
+   "quote": "\"Most AI Overview citations come from content already ranking highly in organic results.\"",
+   "claim": "Most citations come from highly ranked content",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "citations and organic rank"
+  },
+  "F61": {
+   "source": "B7",
+   "locus": "Crocodile effect",
+   "quote": "\"Ahrefs’ independent research across 300,000 keywords found that AI Overview presence correlates with a 34.5% reduction in click-through rate.\"",
+   "claim": "Ahrefs: AIO presence correlates with a 34.5% CTR reduction",
+   "modality": "attributed",
+   "kernel": true,
+   "const": false,
+   "lineage": "traffic and clicks"
+  },
+  "F62": {
+   "source": "B7",
+   "locus": "How have AI Overviews evolved?",
+   "quote": "\"In 2025, Google expanded its tests and availability of ads within AI overviews and began bringing ads to AI mode.\"",
+   "claim": "Ads within AI Overviews expanded in 2025",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "ads in AI Overviews"
+  },
+  "F63": {
+   "source": "B8",
+   "locus": "card snippet",
+   "quote": "\"For 25 years, a #1 ranking on Google guaranteed website traffic. Today, AI Overviews consume ...\"",
+   "claim": "A Quora answer: a #1 ranking once guaranteed traffic; AIO now consumes it",
+   "modality": "attributed",
+   "kernel": true,
+   "const": false,
+   "lineage": "traffic and clicks"
+  },
+  "F64": {
+   "source": "B9",
+   "locus": "The Rundown",
+   "quote": "\"Google AI Overviews are AI-generated answers at the top of Google Search results.\"",
+   "claim": "AI-generated answers at the top of Search",
+   "modality": "stipulation",
+   "kernel": true,
+   "const": false,
+   "lineage": "AI-generated answer at the top of Search, with links"
+  },
+  "F65": {
+   "source": "B9",
+   "locus": "The Rundown",
+   "quote": "\"AI Overviews were reported to be less likely to cite pages in Google’s top 10 organic results.\"",
+   "claim": "Reported less likely to cite top-10 pages",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "citations and organic rank"
+  },
+  "F66": {
+   "source": "B9",
+   "locus": "The Rundown",
+   "quote": "\"Oversimplification and query misinterpretation can lead to inaccurate or misleading summaries.\"",
+   "claim": "Oversimplification and misread queries can mislead",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "criticism: errors and hallucination"
+  },
+  "F67": {
+   "source": "B9",
+   "locus": "The Rundown",
+   "quote": "\"Google positions AI Overviews as a way to drive qualified traffic to websites,\"",
+   "claim": "Google positions AIO as driving qualified traffic",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "AIO serves users and the web (the provider's account)"
+  }
+ }
+}
