@@ -1,0 +1,424 @@
+{
+ "field": [
+  {
+   "id": "B1",
+   "card": "Wikipedia — Anne Carson (chips 'Wikipedia +4' and 'Wikipedia +1')",
+   "url": "https://en.wikipedia.org/wiki/Anne_Carson",
+   "fetched": "raw wikitext (action=raw) downloaded 2026-10-08, references, templates and tables removed (pages/b1.wiki, b1.txt sha256 490516a1ae35d1f8); the chip names the site, not the page, and the page is inferred from the address"
+  },
+  {
+   "id": "B2",
+   "card": "Poetry Foundation — Anne Carson (chip 'Poetry Foundation +1')",
+   "url": "https://www.poetryfoundation.org/poets/anne-carson",
+   "fetched": "page rendered 2026-10-08 in a headless browser past the site's challenge page (curl was refused, 403) and converted to text (pages/b2.html, b2.txt sha256 5e701fec7f6d4875); the chip names the site, not the page, and the page is inferred from the address"
+  },
+  {
+   "id": "B?",
+   "card": "six undisclosed sources behind the chips (+4, +1, +1)",
+   "url": null,
+   "fetched": "not disclosed by the composition; not read"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "locus": "Lead ¶1",
+   "quote": "\"Anne Patricia Carson (born June 21, 1950) is a Canadian poet, essayist, translator, classicist, professor, and Nobel Laureate.\"",
+   "claim": "Born June 21, 1950; Canadian poet, essayist, translator, classicist, professor, Nobel laureate",
+   "modality": "stipulation",
+   "kernel": true,
+   "const": true,
+   "lineage": "who she is"
+  },
+  "F2": {
+   "source": "B1",
+   "locus": "Lead ¶2",
+   "quote": "\"Trained at the University of Toronto, Carson has taught classics, comparative literature, and creative writing at universities across the United States and Canada since 1979, including McGill, University of Michigan, New York University, and Princeton University.\"",
+   "claim": "Taught classics, comparative literature and creative writing since 1979 (McGill, Michigan, NYU, Princeton)",
+   "modality": "documented",
+   "kernel": true,
+   "const": false,
+   "lineage": "teaching career"
+  },
+  "F3": {
+   "source": "B1",
+   "locus": "Lead ¶3",
+   "quote": "\"With more than twenty books of writings and translations published to date, Carson has been awarded Guggenheim and MacArthur Fellowships, has won the Lannan Literary Award, two Griffin Poetry Prizes, the T. S. Eliot Prize, the Princess of Asturias Award, the Governor General's Award for English-language poetry, and the PEN/Nabokov Award, and was appointed a Member of the Order of Canada in 2005 for her contribution to Canadian letters.\"",
+   "claim": "More than twenty books; Guggenheim, MacArthur, Lannan, two Griffins, T. S. Eliot, Asturias, Governor General's, PEN/Nabokov; Order of Canada 2005",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "honours"
+  },
+  "F4": {
+   "source": "B1",
+   "locus": "Lead ¶3",
+   "quote": "\"In 2026, she was awarded the Nobel Prize in Literature \"for her bold and inventive oeuvre that, in playful dialogue with the classical tradition, has created new forms for contemporary literature.\"\"",
+   "claim": "Nobel Prize in Literature 2026, with the citation",
+   "modality": "documented",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Nobel Prize, 2026"
+  },
+  "F5": {
+   "source": "B1",
+   "locus": "Early life and education",
+   "quote": "\"In high school, a Latin instructor introduced Carson to the world and language of Ancient Greece and tutored her privately.\"",
+   "claim": "A high-school Latin instructor introduced her to Ancient Greece and tutored her privately",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "early life and education"
+  },
+  "F6": {
+   "source": "B1",
+   "locus": "Early life and education",
+   "quote": "\"She did eventually return to the University of Toronto where she completed her Bachelor of Arts in 1974, her Master of Arts in 1975, and her Ph.D. in 1981. She also spent a year studying Greek metrics and Greek textual criticism at the University of St Andrews.\"",
+   "claim": "BA 1974, MA 1975, PhD 1981 at Toronto; a year of Greek metrics and textual criticism at St Andrews",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "early life and education"
+  },
+  "F7": {
+   "source": "B1",
+   "locus": "Writing ¶1",
+   "quote": "\"She frequently references, modernises, and translates Ancient Greek and Latin literature – writers such as Aeschylus, Catullus, Euripides, Homer, Ibycus, Mimnermus, Sappho, Simonides, Sophocles, Stesichorus, and Thucydides.\"",
+   "claim": "She references, modernises and translates Greek and Latin literature (Aeschylus to Thucydides)",
+   "modality": "documented",
+   "kernel": true,
+   "const": false,
+   "lineage": "classical material"
+  },
+  "F8": {
+   "source": "B1",
+   "locus": "Writing ¶1",
+   "quote": "\"Many of her books blend the forms of poetry, essay, prose, criticism, translation, dramatic dialogue, fiction, and non-fiction to varying degrees.\"",
+   "claim": "Her books blend poetry, essay, prose, criticism, translation, dialogue, fiction and non-fiction",
+   "modality": "interpretation",
+   "kernel": true,
+   "const": true,
+   "lineage": "hybrid form"
+  },
+  "F9": {
+   "source": "B1",
+   "locus": "Works",
+   "quote": "\"Eros the Bittersweet – Carson's first book of criticism, published in 1986 – examines eros as a simultaneous experience of pleasure and pain best exemplified by \"glukupikron\", a word of Sappho's creation and the \"bittersweet\" of the book's title.\"",
+   "claim": "Eros the Bittersweet (1986): eros as pleasure and pain together, Sappho's glukupikron",
+   "modality": "documented",
+   "kernel": true,
+   "const": false,
+   "lineage": "Eros the Bittersweet"
+  },
+  "F10": {
+   "source": "B1",
+   "locus": "Works",
+   "quote": "\"It considers how triangulations of desire appear in the writings of Sappho, ancient Greek novelists, and Plato.\"",
+   "claim": "It considers triangulations of desire in Sappho, the Greek novelists and Plato",
+   "modality": "documented",
+   "kernel": true,
+   "const": false,
+   "lineage": "Eros the Bittersweet"
+  },
+  "F11": {
+   "source": "B1",
+   "locus": "Works",
+   "quote": "\"A reworking of her 1981 doctoral thesis Odi et Amo Ergo Sum (\"I Hate and I Love, Therefore I Am\"), Eros the Bittersweet \"laid the groundwork for her subsequent publications, […] formulating the ideas on desire that would come to dominate her poetic output\", and establishing her \"style of patterning her writings after classical Greek literature\".\"",
+   "claim": "A reworking of her 1981 thesis; it laid the groundwork for her later work",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "Eros the Bittersweet"
+  },
+  "F12": {
+   "source": "B1",
+   "locus": "Reception ¶1",
+   "quote": "\"the book \"first stunned the classics community as a work of Greek scholarship; then it stunned the nonfiction community as an inspired return to the lyrically based essays once produced by Seneca, Montaigne, and Emerson; and then, and only then, deep into the 1990s, reissued as 'literature' and redesigned for an entirely new audience, it finally stunned the poets.\"\"",
+   "claim": "Its reception: classicists, then nonfiction, then poets",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "Eros the Bittersweet"
+  },
+  "F13": {
+   "source": "B1",
+   "locus": "Reception ¶3",
+   "quote": "\"Shortlisted for the T. S. Eliot Prize four times between 1999 and 2013, Carson won for The Beauty of the Husband in 2001 (her third consecutive nomination), making her the first woman to be awarded this honour.\"",
+   "claim": "T. S. Eliot Prize 2001 for The Beauty of the Husband, the first woman to win it",
+   "modality": "documented",
+   "kernel": true,
+   "const": false,
+   "lineage": "honours"
+  },
+  "F14": {
+   "source": "B1",
+   "locus": "Reception ¶3",
+   "quote": "\"Carson was the first poet to be awarded the Griffin Poetry Prize (for Men in the Off Hours in 2001), and the first to win the prize for a second time (for Red Doc> in 2013).\"",
+   "claim": "First poet to win the Griffin, and the first to win it twice",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "honours"
+  },
+  "F15": {
+   "source": "B1",
+   "locus": "Reception ¶3",
+   "quote": "\"The National Book Critics Circle Award shortlisted Carson three times (for Autobiography of Red in 1998, Men in the Off Hours in 2000, and Nox in 2010), making her and Alice Munro the first two non-Americans to be nominated after the Award went global in 1998.\"",
+   "claim": "NBCC shortlist three times (Autobiography of Red, Men in the Off Hours, Nox)",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "honours"
+  },
+  "F16": {
+   "source": "B1",
+   "locus": "Reception ¶5",
+   "quote": "\"Her 2024 book, Wrong Norma, was longlisted for the National Book Award for Poetry.\"",
+   "claim": "Wrong Norma (2024) longlisted for the National Book Award for Poetry",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "honours"
+  },
+  "F17": {
+   "source": "B1",
+   "locus": "Reception ¶7",
+   "quote": "\"Carson had been regarded as a likely candidate for the Nobel Prize in Literature before eventually receiving the award in 2026\"",
+   "claim": "Long regarded as a likely Nobel candidate before receiving it in 2026",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Nobel Prize, 2026"
+  },
+  "F18": {
+   "source": "B1",
+   "locus": "Reception ¶6",
+   "quote": "\"Carson has also been the subject of two edited volumes: Anne Carson: Ecstatic Lyre, edited by Joshua Marie Wilkinson and published by the University of Michigan Press in 2015, which is dedicated to the breadth of her works; and Anne Carson/ Antiquity (sic), edited by Laura Jansen and published by Bloomsbury in 2021, which examines Carson's classicism as it emerges in her poetry, translations, essays, and visual artistry.\"",
+   "claim": "Subject of two edited volumes (Ecstatic Lyre, 2015; Anne Carson/Antiquity, 2021)",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "scholarship on her"
+  },
+  "F19": {
+   "source": "B1",
+   "locus": "Translation ¶1",
+   "quote": "\"Carson has published translations of ten ancient Greek tragedies – one by Aeschylus (Agamemnon), two by Sophocles (Antigone, Electra), and seven by Euripides (Alcestis, Hecuba, Herakles, Hippolytus, Iphigenia in Tauris, Orestes, and The Bacchae) – as well as the poetry of Sappho in English.\"",
+   "claim": "Translations of ten Greek tragedies and of Sappho",
+   "modality": "documented",
+   "kernel": true,
+   "const": false,
+   "lineage": "translations"
+  },
+  "F20": {
+   "source": "B1",
+   "locus": "Translation ¶3",
+   "quote": "\"It was eventually published in 2001 and included in her 2009 book An Oresteia, which won the PEN Award for Poetry in Translation in 2010.\"",
+   "claim": "An Oresteia (2009) won the PEN Award for Poetry in Translation",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "translations"
+  },
+  "F21": {
+   "source": "B1",
+   "locus": "Selected bibliography, Translations",
+   "quote": "\"If Not, Winter (2002)\"",
+   "claim": "If Not, Winter (2002), in the translations list",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "translations"
+  },
+  "F22": {
+   "source": "B1",
+   "locus": "Personal life ¶1",
+   "quote": "\"Carson is known to be reticent about her private life, and discourages autobiographical readings of her writings.\"",
+   "claim": "She is reticent about her private life and discourages autobiographical readings",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "reticence"
+  },
+  "F23": {
+   "source": "B1",
+   "locus": "Personal life ¶5",
+   "quote": "\"Nox, an epitaph Carson created for her brother in 2000 and published in 2010, has been described as her most explicitly personal work.\"",
+   "claim": "Nox: an epitaph for her brother, made 2000, published 2010",
+   "modality": "documented",
+   "kernel": true,
+   "const": false,
+   "lineage": "Nox"
+  },
+  "F24": {
+   "source": "B1",
+   "locus": "Personal life ¶6",
+   "quote": "\"Projects they have worked on together include book designs and performances for Nox and Antigonick.\"",
+   "claim": "With Robert Currie: book designs and performances for Nox and Antigonick",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "Nox"
+  },
+  "F25": {
+   "source": "B2",
+   "locus": "Biography ¶1",
+   "quote": "\"Anne Carson is a poet, essayist, professor of Classics, and translator.\"",
+   "claim": "A poet, essayist, professor of Classics and translator",
+   "modality": "stipulation",
+   "kernel": true,
+   "const": false,
+   "lineage": "who she is"
+  },
+  "F26": {
+   "source": "B2",
+   "locus": "Biography ¶1",
+   "quote": "\"Carson has gained both critical accolades and a wide readership over the course of her “unclassifiable” publishing career.\"",
+   "claim": "Critical accolades and a wide readership over an 'unclassifiable' career",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "hybrid form"
+  },
+  "F27": {
+   "source": "B2",
+   "locus": "Biography ¶1",
+   "quote": "\"In addition to her many highly-regarded translations of classical writers such as Sappho and Euripides, and her triptych rendering of An Oresteia (2009), she has published poems, essays, libretti, prose criticism, and verse novels that often cross genres.\"",
+   "claim": "Translations of Sappho and Euripides; poems, essays, libretti, criticism and verse novels that cross genres",
+   "modality": "documented",
+   "kernel": true,
+   "const": false,
+   "lineage": "hybrid form"
+  },
+  "F28": {
+   "source": "B2",
+   "locus": "Biography ¶1",
+   "quote": "\"Known for her supreme erudition—Merkin called her “one of the great pasticheurs”—her poetry can also be heart-breaking and she regularly writes on love, desire, sexual longing and despair.\"",
+   "claim": "Erudition (Merkin: 'one of the great pasticheurs'); she writes on love, desire, longing and despair",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception"
+  },
+  "F29": {
+   "source": "B2",
+   "locus": "Biography ¶2",
+   "quote": "\"A high-school encounter with a Latin instructor, who agreed to teach her ancient Greek over the lunch hour, led to her passionate embrace of classical and Hellenic literature, influences which mark her work still.\"",
+   "claim": "A Latin instructor taught her Greek over the lunch hour",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "early life and education"
+  },
+  "F30": {
+   "source": "B2",
+   "locus": "Biography ¶2",
+   "quote": "\"Carson attended the University of Toronto, though she dropped out twice before earning her BA, MA and PhD in Classics.\"",
+   "claim": "Dropped out twice before BA, MA and PhD in Classics at Toronto",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "early life and education"
+  },
+  "F31": {
+   "source": "B2",
+   "locus": "Biography ¶2",
+   "quote": "\"Her publishing career began with Eros the Bittersweet: An Essay (1986), which also established Carson’s style of patterning her writings after classical Greek literature.\"",
+   "claim": "Eros the Bittersweet began her career and set her pattern after Greek literature",
+   "modality": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "Eros the Bittersweet"
+  },
+  "F32": {
+   "source": "B2",
+   "locus": "Biography ¶3",
+   "quote": "\"Autobiography of Red (1998) takes its cue from the legend of Hercules—Herakles in the traditional spelling from the tale by Steischoros—whose tenth labor was to slay the red-winged monster Geryon.\"",
+   "claim": "Autobiography of Red takes its cue from Herakles' tenth labour, the slaying of Geryon (after Stesichoros)",
+   "modality": "documented",
+   "kernel": true,
+   "const": false,
+   "lineage": "Autobiography of Red"
+  },
+  "F33": {
+   "source": "B2",
+   "locus": "Biography ¶3",
+   "quote": "\"“In Steischoros, Herakles kills Geryon and steals his red cattle,” explained Adam Kirsch in New Republic. “In Carson, Herakles breaks Geryon’s heart and steals his innocence.”\"",
+   "claim": "Kirsch: in Carson, Herakles breaks Geryon's heart",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "Autobiography of Red"
+  },
+  "F34": {
+   "source": "B2",
+   "locus": "Biography ¶3",
+   "quote": "\"“The writing is clearly prose,” he maintained, “laid out in alternating long and short lines, with no strictness of measure or rhythm; the division between a long line and a short one is typographical only, or at best syntactic.”\"",
+   "claim": "Kirsch: the writing is clearly prose, its line division typographical",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "verse or prose"
+  },
+  "F35": {
+   "source": "B2",
+   "locus": "Biography ¶4",
+   "quote": "\"Carson’s work, D’Agata alleges, asks one to consider “how prosaic, rhetorical, or argumentative can a poem be before it becomes something else altogether, before it reverts to prose, to essay?”\"",
+   "claim": "D'Agata: how prosaic can a poem be before it becomes something else",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "verse or prose"
+  },
+  "F36": {
+   "source": "B2",
+   "locus": "Biography ¶5",
+   "quote": "\"In 2001 Carson also published The Beauty of the Husband: A Fictional Essay in 29 Tangos, a verse novel whose subject is “the waywardness of lust and the disaffection of the heart as seen through a marital breakup,” as Daphne Merkin wrote. It also received high praise and was awarded the T.S. Eliot Prize.\"",
+   "claim": "The Beauty of the Husband (2001), a verse novel of a marital breakup; T. S. Eliot Prize",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "honours"
+  },
+  "F37": {
+   "source": "B2",
+   "locus": "Biography ¶6",
+   "quote": "\"As Carson explains, Weil’s notion of “decreation” is “an undoing of the creature in us—that creature enclosed in self and defined by self.”\"",
+   "claim": "Decreation (2005) takes Weil's 'decreation' as title and impetus",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "Decreation"
+  },
+  "F38": {
+   "source": "B2",
+   "locus": "Biography ¶7",
+   "quote": "\"The volume received somewhat mixed reviews for just those liberties; Brad Leithauser in the New York Times Book Review found Carson’s choice of diction irregular and often jarringly contemporary\"",
+   "claim": "An Oresteia drew mixed reviews for its liberties (Leithauser: diction jarringly contemporary)",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "translations"
+  },
+  "F39": {
+   "source": "B2",
+   "locus": "Biography ¶8",
+   "quote": "\"Speaking to poet-critic Stephanie Burt, Carson admitted that at heart she considers herself a visual, not verbal, artist:\"",
+   "claim": "To Burt, she called herself at heart a visual artist",
+   "modality": "attributed",
+   "kernel": false,
+   "const": false,
+   "lineage": "the visual"
+  },
+  "F40": {
+   "source": "B2",
+   "locus": "Biography ¶1",
+   "quote": "\"Her honors and awards are many, including fellowships from the Guggenheim Foundation, the MacArthur Foundation, and the American Academy in Berlin. She has also received the Lannan Literary Award, the Pushcart Prize, and the Griffin Poetry Prize.\"",
+   "claim": "Guggenheim, MacArthur and Berlin fellowships; Lannan, Pushcart, Griffin",
+   "modality": "documented",
+   "kernel": false,
+   "const": false,
+   "lineage": "honours"
+  }
+ }
+}
