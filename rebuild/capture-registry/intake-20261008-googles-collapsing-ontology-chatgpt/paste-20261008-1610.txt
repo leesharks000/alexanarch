@@ -1,0 +1,625 @@
+
+
+Log in
+You said:
+
+ChatGPT said:
+If by “Google’s collapsing ontology” you mean the idea that Google’s search/AI systems are increasingly collapsing distinct things, meanings, and sources into a single inferred representation, then yes—there’s a fascinating idea there.
+
+I’d frame it less as a formal Google doctrine and more as a useful critique of what happens when search becomes generative. I couldn’t find evidence that “collapsing ontology” is an official Google term; Google does, however, have long-standing work around ontologies, knowledge graphs, entity resolution, and systems that collapse concepts or relationships for computational purposes. 
+G
+Google Patents
++1
+
+The basic idea
+Old Google Search implicitly operated something like:
+
+World → documents → ranking → user
+You searched for something, and Google tried to identify documents that were relevant to your query.
+
+The newer AI-mediated model increasingly looks like:
+
+World → data → entities/concepts → model → synthesized answer
+That extra synthesis layer changes the epistemology.
+
+Google isn't merely asking:
+
+“Which documents say something about X?”
+
+It's increasingly asking:
+
+“What is X, given all the things I can infer about X?”
+
+That's an ontological operation.
+
+An ontology is basically a system for deciding what kinds of things exist in a domain and how they relate. A person, organization, event, place, concept, product, etc. become nodes in a structured representation.
+
+Google has been doing this for a long time with things like the Knowledge Graph. Its patents and technical work explicitly describe collapsing synonymous or related concepts into normalized representations. 
+G
+Google Patents
+
+But generative AI pushes this much further.
+
+Where the “collapse” gets interesting
+Imagine five websites say:
+
+“A is a political organization.”
+“A is a social movement.”
+“A is an advocacy group.”
+“A describes itself as a network.”
+“Critics describe A as something else.”
+A traditional search engine can preserve those distinctions.
+
+A generative system has an incentive to produce:
+
+A is a social and political organization.
+Five distinct descriptions become one object in the answer.
+
+That's the collapse.
+
+And it isn't necessarily bad. In fact, it's enormously useful. Human cognition does this constantly. We don't want to read 400 documents every time we ask “what is this thing?”
+
+The problem appears when the compression becomes invisible.
+
+You no longer see:
+
+source A believes X source B believes Y source C disputes both
+You see:
+
+X
+The distinctions have disappeared into the representation.
+
+And this is where Google is particularly interesting
+Google's historical superpower was indexing plurality.
+
+The web could contain mutually incompatible descriptions, and Search could put them next to one another.
+
+AI search increasingly wants to provide a coherent world-model.
+
+That creates a strange inversion:
+
+Search used to navigate an ontology. AI search increasingly constructs one.
+
+And whoever constructs the ontology gets tremendous epistemic power.
+
+Because deciding that two things are “the same” is not merely retrieval.
+
+It's interpretation.
+
+Likewise, deciding that two things are different is interpretation.
+
+And deciding which distinctions aren't worth showing the user is also interpretation.
+
+There's a subtle second collapse
+There's also a collapse between entity and description.
+
+Suppose you search for a relatively obscure person.
+
+Traditional search:
+
+Here are 12 pages about this person.
+Generative search:
+
+Here's who this person is.
+The second statement sounds innocuous, but notice what's happened.
+
+The description has become the entity.
+
+The model's representation of the person starts functioning as the person for purposes of the interface.
+
+That's a profound shift.
+
+And it explains why hallucination in search is more philosophically interesting than ordinary chatbot hallucination.
+
+If ChatGPT invents something in a conversation, that's a bad answer.
+
+If a search system invents an entity, merges two entities, attributes someone's work to the wrong person, or silently resolves conflicting descriptions into a false synthesis, it can alter the machine-readable ontology of the web as experienced by millions of people.
+
+There are already contemporary examples and critiques of AI retrieval systems behaving this way—particularly around exact-match searches where a generative layer substitutes inference for actually resolving the requested source. 
+M
+Mind Control Poems
+
+The really deep version
+I think the most interesting formulation is:
+
+Google is moving from organizing representations of reality to producing representations that users experience as reality.
+That's the ontological transition.
+
+And there's a nasty feedback loop lurking there:
+
+Web → Google → AI summary → users → new web content → Google → AI
+
+If the AI's collapsed representation becomes sufficiently influential, people begin writing according to the representation that Google expects.
+
+Then the representation starts feeding the corpus from which the representation was derived.
+
+That's adjacent to the broader problem of model collapse, but it's not identical to it. Model collapse concerns degradation from recursive training on synthetic data; ontological collapse is more about distinct entities, meanings, sources, and distinctions being recursively compressed into fewer canonical representations. 
+A
+Alexanarch
+
+And that's why I think the phrase is actually pretty powerful, even though it isn't a standard Google term.
+
+The central question becomes:
+
+What happens when the world's most important information interface stops showing us the disagreements between descriptions and starts giving us the thing it believes exists?
+That's much more consequential than “Google Search got an AI summary.”
+
+If that's the phenomenon you had in mind, I can go one level deeper into Google's Knowledge Graph → entity resolution → Gemini/AI Overviews → ontology collapse, because there's a very interesting technical/philosophical progression there.
+
+
+Sources
+You said:
+
+ChatGPT said:
+Yes. The technical progression is actually quite elegant, because what looks like “AI search” in the consumer interface is the endpoint of a much older project: turning the messy web into a machine-readable model of things and relationships.
+
+I’d break the progression into five stages.
+
+1. Stage one: Google stops thinking in strings
+The original search problem is basically:
+
+Query = a string of words Find = documents containing/relevant to those words.
+But this immediately runs into ambiguity.
+
+If I type “Mercury”, do I mean:
+
+the planet,
+the element,
+the Roman god,
+the car,
+the record label,
+or the Freddie Mercury-related concept?
+Google's answer increasingly became: don't treat “Mercury” as merely a string. Resolve it to an entity.
+
+Google Research was explicit about this distinction years ago: the Knowledge Graph/Freebase approach operates on concepts and entities rather than strings and n-grams. 
+G
+Google Research
+
+That sounds like a minor engineering improvement.
+
+It isn't.
+
+It is the beginning of an ontological shift.
+
+The system now needs an answer to:
+
+What thing does this word refer to?
+And once you've answered that, you can ask:
+
+What properties does that thing have? What other things is it related to? Which descriptions refer to the same thing?
+That's ontology.
+
+2. Stage two: the Knowledge Graph
+This became the Google Knowledge Graph.
+
+Google describes it as a system that maps attributes and relationships of real-world entities, drawing information from the web, structured databases, licensed data and other sources. 
+B
+blog.google
+
+Its conceptual structure looks roughly like:
+
+                    ┌──────────────┐
+                    │    Person    │
+                    └──────┬───────┘
+                           │
+                     "born in"
+                           │
+                           ▼
+                    ┌──────────────┐
+                    │     Place    │
+                    └──────────────┘
+                           │
+                     "located in"
+                           │
+                           ▼
+                    ┌──────────────┐
+                    │   Country    │
+                    └──────────────┘
+And Google's Knowledge Graph API explicitly returns entities—people, places, things—with names, descriptions, types, IDs, websites, relevance scores, etc. 
+G
+Google for Developers
++1
+
+This is an enormous conceptual change.
+
+Google isn't just storing:
+
+Page 17 says X.
+It's increasingly storing:
+
+There exists an entity X. X has property Y. X is related to Z. These 47 pages probably refer to X.
+The web becomes evidence for a model of reality.
+
+3. Stage three: entity resolution
+Here's where our “collapse” really begins.
+
+Suppose the web contains:
+
+“Apple Inc.”
+“Apple Computer”
+“Apple”
+“the Cupertino company”
+“AAPL”
+The system wants to figure out that many of these refer to the same underlying entity.
+
+This is called things like entity resolution, entity linking, canonicalization, deduplication, etc.
+
+And it's tremendously useful.
+
+Without it, a search engine's understanding would remain fragmented.
+
+But notice what entity resolution necessarily does:
+
+It destroys some distinctions.
+It says:
+
+These apparently different representations are really one thing.
+And conversely:
+
+These similar-looking representations are actually different things.
+That's an ontological judgment.
+
+The moment a system canonicalizes entities, it is making claims about what exists and what counts as identical.
+
+4. Stage four: from graph to language model
+Then something profound happens.
+
+Instead of merely using the graph to answer structured questions, Google gets a system capable of generating language about the graph and the web.
+
+That is where Gemini enters Search.
+
+Google's own description of AI Overviews is revealing: the system combines a customized language model with Google's core Search systems and ranking infrastructure rather than simply producing an answer from the model's training data. 
+B
+blog.google
+
+And then Google introduced query fan-out in AI Mode: a question is broken into multiple subtopics and many searches are conducted simultaneously before the system synthesizes the response. 
+B
+blog.google
+
+So the architecture becomes something like:
+
+                 USER
+                   │
+                   ▼
+             Natural language
+                   │
+                   ▼
+             ┌───────────┐
+             │   Gemini  │
+             └─────┬─────┘
+                   │
+          decompose / interpret
+                   │
+          ┌────────┼────────┐
+          ▼        ▼        ▼
+       search    search    search
+          │        │        │
+          └────────┼────────┘
+                   ▼
+              Web + Graph
+                   │
+                   ▼
+             synthesis
+                   │
+                   ▼
+              "The answer"
+And this is the crucial point:
+
+The user no longer encounters the underlying ontology directly.
+
+They encounter its linguistic projection.
+
+5. Stage five: the collapse
+Now we can define what I mean by “collapsing ontology.”
+
+Imagine reality has:
+
+Person A
+ ├── calls himself X
+ ├── organization B calls him Y
+ ├── newspaper C calls him Z
+ ├── academic D disputes X
+ └── community E uses another name entirely
+The web preserves this mess.
+
+Google's systems attempt to turn it into:
+
+             PERSON A
+                 │
+          canonical entity
+                 │
+        ┌────────┼────────┐
+        ▼        ▼        ▼
+       name     role    affiliation
+Then Gemini turns that structured/inferred representation into:
+
+Person A is a X who is associated with B.
+The five epistemically distinct statements have become one smooth sentence.
+
+That is the collapse.
+
+Not necessarily because Google is deliberately suppressing disagreement.
+
+Rather, because the computational objective is compression into a useful answer.
+
+The really important distinction: retrieval vs representation
+This is where I think the philosophical stakes become much clearer.
+
+Traditional Google was primarily a retrieval machine.
+
+You ask:
+
+“What did X say?”
+Google finds documents.
+
+The user remains responsible for constructing the relationship between:
+
+source → claim → interpretation
+
+AI Search increasingly becomes a representation machine.
+
+You ask:
+
+“What does X think?”
+The system constructs a representation of X's position.
+
+That's enormously more convenient.
+
+But it moves an epistemic step from the user to the infrastructure.
+
+The question isn't merely:
+
+“Did Google find the right documents?”
+It's:
+
+“Did Google's representation preserve the distinctions that mattered?”
+That's a much harder question.
+
+And Google is making the synthesis increasingly aggressive
+This isn't hypothetical anymore.
+
+Google's trajectory is explicitly toward increasingly complex questions.
+
+In 2024, Google described AI Overviews as allowing users to ask complex questions rather than breaking them into multiple searches. 
+B
+blog.google
+
+In 2025, AI Mode added query fan-out and deeper reasoning. 
+B
+blog.google
+
+By late 2025, Google was putting Gemini 3 into Search and using its reasoning and multimodal capabilities to generate increasingly customized responses. 
+B
+blog.google
+
+And in January 2026, Google described Gemini 3 as the default model for AI Overviews globally. 
+B
+blog.google
+
+So the direction is unmistakable:
+
+query → retrieval → synthesis → conversation
+
+rather than simply:
+
+query → ranked documents
+
+Here's where I think it gets genuinely weird
+There's a feedback loop.
+
+Consider this:
+
+1. The world produces documents.
+People write:
+
+X is a movement.
+Others write:
+
+X is an organization.
+Others:
+
+X isn't either; it's a loose network.
+2. Google builds an ontology.
+Google decides:
+
+X = Organization.
+3. Gemini summarizes it.
+Users encounter:
+
+X is an organization.
+4. Users believe that.
+Some write new pages:
+
+X is an organization.
+5. Google crawls those pages.
+Now Google sees even more evidence for:
+
+X = Organization.
+6. The ontology becomes increasingly self-confirming.
+That's the genuinely dangerous version of ontological collapse.
+
+The machine's representation doesn't merely describe the corpus.
+
+It begins influencing the corpus that will subsequently validate the representation.
+
+And this is different from ordinary "AI hallucination"
+Suppose Gemini tells you:
+
+“The moon is made of cheese.”
+That's an ordinary factual hallucination.
+
+You can correct it.
+
+But imagine something subtler:
+
+There are three communities that use the word “X” differently.
+
+Gemini decides they all mean the same thing.
+
+It then generates hundreds of answers using the canonicalized meaning.
+
+Users subsequently stop encountering the three meanings.
+
+Eventually, one meaning becomes dominant.
+
+Nothing necessarily looked like a hallucination.
+
+The system simply erased a distinction.
+
+That's much more interesting.
+
+The failure isn't:
+
+false proposition
+It's:
+
+false ontology.
+There's an even deeper collapse: source → claim → world
+This might be the most important part.
+
+Traditional web browsing has at least three layers:
+
+WORLD
+  ↓
+SOURCE
+  ↓
+CLAIM
+  ↓
+USER INTERPRETATION
+AI search tends toward:
+
+WORLD
+  ↓
+GOOGLE'S REPRESENTATION
+  ↓
+ANSWER
+The source layer becomes less visible.
+
+Google knows this is an issue, which is why its AI Search products continue to emphasize links and ways of discovering original content. Google has repeatedly stressed that AI Overviews contain links, and in 2026 it described additional mechanisms for surfacing relevant websites, original content, and personal perspectives. 
+B
+blog.google
++1
+
+But there's a fundamental tension here:
+
+The better the synthesis becomes, the less incentive the user has to inspect the underlying sources.
+
+A perfect summary is paradoxically the most successful source-erasure mechanism.
+
+If I can ask:
+
+“Give me the three competing theories and tell me which one is best supported”
+and receive a beautifully structured answer, why would I read the 35 papers?
+
+That's exactly what makes it powerful.
+
+And exactly what makes it epistemically dangerous.
+
+The philosophical connection
+This starts looking surprisingly close to some old philosophical problems.
+
+Plato
+Who gets to determine the relationship between words and things?
+
+Aristotle
+What categories does reality fall into?
+
+Kant
+How much of what we call “the world” is actually structured by the apparatus through which we know it?
+
+Foucault
+Who has the power to define legitimate categories of knowledge?
+
+Borges
+What happens when you construct a classification system whose categories become stranger than the things being classified?
+
+Wittgenstein
+What happens when we mistake our linguistic categories for the structure of reality?
+
+Google adds a technological twist:
+
+What happens when the classification system is computational, proprietary, continuously updated, and sits between billions of people and the world?
+That's the genuinely interesting problem.
+
+And Google's scale changes everything
+A historian can publish a mistaken classification.
+
+Google can make a classification interface-level reality for enormous numbers of people.
+
+That's a different kind of power.
+
+The Knowledge Graph was already an attempt to maintain a machine-readable model of entities and relationships. Google itself describes it as an “algorithmic understanding” of facts about people, places and things. 
+B
+blog.google
+
+Generative Search adds something new:
+
+the ontology can now talk back.
+
+It doesn't just sit inside a database.
+
+It explains itself.
+
+It argues.
+
+It summarizes.
+
+It answers follow-up questions.
+
+It can now maintain conversational context.
+
+And Google's 2026 direction is explicitly toward a seamless transition from search results → AI Overview → AI Mode conversation. 
+B
+blog.google
++1
+
+So we're moving from:
+
+Google knows what things are
+toward:
+
+Google explains what things are
+And eventually:
+
+Google helps determine what distinctions users think are worth making.
+That's the point at which “search engine” starts becoming an inadequate description.
+
+My preferred formulation
+I'd actually sharpen the phrase from “collapsing ontology” to:
+
+Google is progressively converting a plural, document-based epistemology into a canonical, entity-based and ultimately generative epistemology.
+Or, less academically:
+
+The web contains many descriptions of the world. Google increasingly gives us Google's description of what those descriptions mean.
+And the great unresolved question is whether the system can preserve plurality while doing that compression.
+
+Because an ontology that refuses to collapse everything is much harder to build.
+
+It has to be capable of representing:
+
+X says A. Y says B. They use the term differently. Neither definition is canonical. The disagreement itself is important.
+That's a much more sophisticated knowledge system than:
+
+X = A.
+And I suspect that distinction—between representing disagreement and resolving disagreement—is going to become one of the central intellectual problems of AI search.
+
+
+
+Sources
+
+
+Kyvos
+Semantic Layer is Non-Negotiable for AI
+Choose wisely. Download the buyer's guide today!
+Ad
+
+ChatGPT is AI and can make mistakes.
+
+
+No file chosenNo file chosenNo file chosen
+
+Chat with ChatGPT
+Ask ChatGPT
+
+
+
