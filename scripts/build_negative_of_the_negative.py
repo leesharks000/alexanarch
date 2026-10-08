@@ -30,6 +30,102 @@ CAPTURE = "https://www.alexanarch.org/captures/#{slug}"
 def load(p):
     return json.load(open(p, encoding='utf-8'))
 
+# ── v2: the /non work (EA-NEGONT-02, #1665), added 2026-10-08 on the operator's ruling ("publish now with the labels").
+# Read-only joins of files already in the repo; nothing is authored here. Every row carries its entry's status
+# label: these are working objects, draft and not frozen, with unaudited ledgers unless the row's status says otherwise.
+V2 = SRC / 'v2'
+NON = "https://www.alexanarch.org/non/{e}/"
+
+def _status_label(st):
+    if not isinstance(st, dict):
+        return 'draft, not frozen; ledger unaudited'
+    frozen = 'frozen' if st.get('frozen') else 'not frozen'
+    led = st.get('ledger') or 'unaudited'
+    return f"draft, {frozen}; ledger {led.split(' (')[0]}"
+
+def build_v2(deps, breaches):
+    T = {k: [] for k in ('non_entities', 'non_observations', 'non_compositions', 'non_field_claims',
+                         'non_archive_claims', 'non_readings', 'non_kernel')}
+    panel = load(V2 / 'panel' / 'panel.json')
+    register = load(V2 / 'register.json')
+    reg_entries = next(v for k, v in register.items() if isinstance(v, list) and v and isinstance(v[0], dict) and 'addr_id' in v[0])
+    rowfiles = {f.stem: load(f) for f in sorted((V2 / 'rows').glob('*.json'))}
+    labels = {}
+    for ent in panel['entities']:
+        e = ent['entity']; row = rowfiles.get(e)
+        labels[e] = _status_label(row.get('status')) if row else 'no entry composed'
+        T['non_entities'].append({'entity': e, 'name': ent.get('name'), 'type': ent.get('type'), 'type_basis': ent.get('type_basis'),
+            'source': ent.get('source'), 'stage': ent.get('stage'), 'addresses': json.dumps(ent.get('addresses', []), ensure_ascii=False),
+            'has_entry': row is not None, 'status_label': labels[e], 'frozen': bool(row and (row.get('status') or {}).get('frozen')),
+            'page_url': NON.format(e=e) if (ROOT / 'non' / e / 'index.html').exists() else None,
+            'json_url': NON.format(e=e) + 'entity.json' if (ROOT / 'non' / e / 'entity.json').exists() else None})
+    for o in reg_entries:
+        e = o.get('entity')
+        if e not in labels:
+            breaches.append(f"v2 register {o.get('slug')}: entity {e} not on the panel")
+        T['non_observations'].append({'slug': o['slug'], 'addr_id': o['addr_id'], 'obs_id': o['obs_id'], 'query': o['q'], 'entity': e,
+            'date': o['date'], 'surface': o['surface'], 'surface_basis': o.get('surface_basis'), 'auth': o.get('auth'), 'auth_basis': o.get('auth_basis'),
+            'cites': o.get('cites'), 'cite_list': json.dumps(o.get('cite_list'), ensure_ascii=False), 'archive_present': o.get('archive_present'),
+            'transcript': o.get('transcript'), 'transcript_sha256': o.get('transcript_sha256'), 'transcript_complete': o.get('transcript_complete'),
+            'source_form': o.get('sf'), 'page_url': (NON.format(e=e) + '#reg-' + o['slug']) if e else None})
+    for e, row in rowfiles.items():
+        lab = labels.get(e) or _status_label(row.get('status'))
+        O = row.get('objects', {})
+        for obj, arm in (('KO', 'B ∪ A'), ('KO_B', 'B'), ('P', 'B ∪ A'), ('P_B', 'B')):
+            x = O.get(obj)
+            if not x: continue
+            if obj.startswith('KO'):
+                for s_ in (x.get('sentences') if isinstance(x, dict) else x) or []:
+                    T['non_compositions'].append({'entity': e, 'object': obj, 'arm': arm, 'unit': 'sentence', 'position': s_.get('n'),
+                        'section': None, 'label': None, 'text': s_.get('text'), 'claims': json.dumps(s_.get('claims', [])), 'status_label': lab})
+            else:
+                L = x.get('lede') or {}
+                T['non_compositions'].append({'entity': e, 'object': obj, 'arm': arm, 'unit': 'lede', 'position': 0, 'section': None, 'label': None,
+                    'text': L.get('text') if isinstance(L, dict) else L, 'claims': json.dumps(L.get('claims', []) if isinstance(L, dict) else []), 'status_label': lab})
+                i = 0
+                for sec in x.get('sections', []):
+                    for it in sec.get('items', []):
+                        i += 1
+                        T['non_compositions'].append({'entity': e, 'object': obj, 'arm': arm, 'unit': 'item', 'position': i, 'section': sec.get('head'),
+                            'label': it.get('label'), 'text': it.get('text'), 'claims': json.dumps(it.get('claims', [])), 'status_label': lab})
+        for k in row.get('kernel') or []:
+            T['non_kernel'].append({'entity': e, 'K': k.get('K'), 'claim': k.get('claim'), 'source': k.get('source'), 'modality': k.get('M_src'),
+                'sense': k.get('sense'), 'qualifiers': k.get('qualifiers carried'), 'falsifiers': k.get('f (source\'s own falsifiers)'), 'contrast': k.get('contrast'), 'status_label': lab})
+        led = V2 / 'ledgers' / e
+        if (led / 'field.json').exists():
+            F = load(led / 'field.json'); src = {s_['id']: s_ for s_ in F.get('field', [])}
+            for cid, c in F.get('field_claims', {}).items():
+                card = src.get(c.get('source'), {})
+                T['non_field_claims'].append({'entity': e, 'claim_id': cid, 'source': c.get('source'), 'card': card.get('card'), 'url': card.get('url'),
+                    'locus': c.get('locus'), 'quote': c.get('quote'), 'claim': c.get('claim'), 'modality': c.get('modality'),
+                    'kernel': c.get('kernel'), 'lineage': c.get('lineage'), 'status_label': lab})
+        if (led / 'ledger-archive.json').exists():
+            for c in load(led / 'ledger-archive.json'):
+                n = c.get('dep'); d = deps.get(n)
+                if d is None:
+                    breaches.append(f"v2 {e}: archive claim {c.get('id')} cites deposit {n} not in registry")
+                T['non_archive_claims'].append({'entity': e, 'claim_id': c.get('id'), 'deposit': n, 'axn': d.get('axn') if d else None,
+                    'record_url': RECORD.format(n=n), 'title': c.get('title') or (d.get('title') if d else None), 'locus': c.get('locus'),
+                    'quote': c.get('quote'), 'claim': c.get('claim'), 'kind': c.get('kind'), 'modality': c.get('modality'),
+                    'strata': json.dumps(c.get('strata')) if isinstance(c.get('strata'), (list, dict)) else c.get('strata'),
+                    'kernel': c.get('kernel'), 'lineage': c.get('lineage'), 'quote_verified': c.get('quote_ok'), 'status_label': lab})
+        rd = V2 / 'traversal' / e / 'reading.json'
+        if rd.exists():
+            R = load(rd)
+            for v in R.get('verdicts', []):
+                x_ = v.get('dep')
+                for n in (x_ if isinstance(x_, list) else [x_]):
+                    T['non_readings'].append({'entity': e, 'deposit': n, 'record_url': RECORD.format(n=n) if n is not None else None,
+                        'verdict': 'admitted', 'strata': json.dumps(v.get('strata')) if isinstance(v.get('strata'), (list, dict)) else v.get('strata'),
+                        'n_candidates': len(v.get('cands') or []), 'reason': v.get('reason'), 'status_label': lab})
+            for v in R.get('not_admitted', []):
+                x_ = v.get('deps') if v.get('deps') is not None else v.get('dep')
+                deps_ = x_ if isinstance(x_, list) else ([x_] if x_ is not None else [])
+                for n in deps_:
+                    T['non_readings'].append({'entity': e, 'deposit': n, 'record_url': RECORD.format(n=n), 'verdict': 'not admitted',
+                        'strata': None, 'n_candidates': len(v.get('cands') or []), 'reason': v.get('reason') or v.get('group'), 'status_label': lab})
+    return T
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--out', default=str(ROOT / 'hf-non'))
@@ -149,6 +245,7 @@ def main():
         if r.get('distinction'):
             edges.append({'subject': r['concept'], 'predicate': 'distinguished_from', 'object_deposit': None, 'object_axn': None, 'object_url': None, 'row_key': r['key'], 'locus': r['distinction']})
 
+    v2 = build_v2(deps, breaches)
     if breaches:
         print('BREACHES (recorded, not blocking):'); [print('  -', b) for b in breaches]
     if a.check:
@@ -156,6 +253,7 @@ def main():
 
     out = pathlib.Path(a.out); out.mkdir(parents=True, exist_ok=True)
     frames = {'rows': pd.DataFrame(out_rows), 'keys': pd.DataFrame(keys_rows), 'edges': pd.DataFrame(edges), 'measurements': pd.DataFrame(meas)}
+    frames.update({k: pd.DataFrame(v) for k, v in v2.items()})
     cfg, manifest = [], {'built': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'source_rows_sha256': hashlib.sha256(open(SRC/'rows.json','rb').read()).hexdigest(), 'schema_sha256': hashlib.sha256(open(SRC/'schema.json','rb').read()).hexdigest(), 'registry_total': len(deps), 'captures_total': len(caps['entries']), 'breaches': breaches, 'configs': {}}
     for name, df in frames.items():
         for c in df.columns:
@@ -168,7 +266,7 @@ def main():
     n_meas = sum(1 for r in rows if r.get('measured_untied') and r.get('measured_tied'))
     n_half = sum(1 for r in rows if bool(r.get('measured_untied')) != bool(r.get('measured_tied')))
     card = (out.parent / 'datasets' / 'negative-of-the-negative' / 'CARD.md').read_text(encoding='utf-8') if (out.parent / 'datasets' / 'negative-of-the-negative' / 'CARD.md').exists() else (SRC / 'CARD.md').read_text(encoding='utf-8')
-    (out / 'README.md').write_text(card.format(configs='\n'.join(cfg), n_rows=len(rows), n_meas=n_meas, n_half=n_half, n_keys=len(keys_rows), n_edges=len(edges), built=manifest['built'][:10], maxim=MAXIM), encoding='utf-8')
+    (out / 'README.md').write_text(card.format(configs='\n'.join(cfg), n_rows=len(rows), n_meas=n_meas, n_half=n_half, n_keys=len(keys_rows), n_edges=len(edges), built=manifest['built'][:10], maxim=MAXIM, n_non_entities=len(v2['non_entities']), n_non_entries=sum(1 for r in v2['non_entities'] if r['has_entry']), n_non_obs=len(v2['non_observations']), n_non_units=len(v2['non_compositions']), n_non_field=len(v2['non_field_claims']), n_non_archive=len(v2['non_archive_claims'])), encoding='utf-8')
     json.dump(manifest, open(out / 'build-manifest.json', 'w'), indent=1)
     print('card + manifest written to', out)
 
