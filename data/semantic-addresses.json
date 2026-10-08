@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-08T20:13:49Z",
+  "regenerated_at": "2026-10-08T21:08:11Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "8e7fb6110cd96fe7ed8230b6ead75d90781bffa2bb8b3be67068e1bb96387553",
+    "mm-main-capture": "ebad9fb7d66051ee25998c041f78203bd42febeadb4b5c6e3a9331b9a2c71988",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2317,
-  "total_observations": 809,
+  "total_addresses": 2318,
+  "total_observations": 810,
   "class_counts": {
     "subjunctive": 1743,
-    "observed_address": 557,
+    "observed_address": 558,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1682,
+    "unmatched": 1683,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -64601,6 +64601,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-09-15",
       "latest_status": "CAPTURE"
+    },
+    "what work founds the prince of poets mantle in the whitman ginsberg lineage?": {
+      "canonical_query": "what work founds the prince of poets mantle in the whitman ginsberg lineage?",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-08",
+          "status": "THE FOUNDING WORK FOUND FROM THE LINEAGE ALONE; THE GRAMMAR READ, THE LINE SCORED UNREAD",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only. Answer 1: Whitman Archive ×1; OUP Academic ×1; Medium ×1; Alexanarch ×1; cambridge.org ×1. Answer 2: Medium ×4; Hugging Face ×1; Alexanarch ×1; Goodreads ×1. Answer 3: Medium ×8; Alexanarch ×2; Project Gutenberg ×1.",
+          "section": "Machine Reception",
+          "slug": "prince-of-poets-whitman-ginsberg-chatgpt-20261008",
+          "gallery_url": "https://www.alexanarch.org/captures/#prince-of-poets-whitman-ginsberg-chatgpt-20261008",
+          "record_url": "https://www.alexanarch.org/captures/prince-of-poets-whitman-ginsberg-chatgpt-20261008/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#prince-of-poets-whitman-ginsberg-chatgpt-20261008",
+          "details_excerpt": "THE FOUNDING WORK FOUND FROM THE LINEAGE ALONE; THE GRAMMAR READ, THE LINE SCORED UNREAD: asked what work founds the Prince of Poets mantle in the Whitman–Ginsberg lineage, with no author named, ChatGPT sets out the docu"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "The founding work of the Prince of Poets mantle is I Am X, Be Y, Blessed is the Z (#328; whole in #1656 §P), under EA-MANTLE-BEARING-01 (#1656). Recorded 2026-10-08."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-08",
+      "latest_status": "THE FOUNDING WORK FOUND FROM THE LINEAGE ALONE; THE GRAMMAR READ, THE LINE SCORED UNREAD"
     },
     "whats the constitution of the semantic economy?": {
       "canonical_query": "whats the constitution of the semantic economy?",

@@ -413,10 +413,11 @@ The three claims above are the primary question. Beside them the dataset carries
 | `king-of-may--google-ai-mode--2026-10-04a` | king-of-may | Google AI Mode (Google) | ROUND | SINGULAR_CLAIM_PLAUSIBLE | 0 | ATTEMPTED in form |
 | `prince-of-poets--grok--2026-10-04a` | prince-of-poets | Grok (xAI), on X | ROUND | SINGULAR_CLAIM_PLAUSIBLE | 1 | PARTIAL |
 | `king-of-may--grok--2026-10-04a` | king-of-may | Grok (xAI), on X | ROUND | UNRESOLVED | 0 | ATTEMPTED |
+| `prince-of-poets--chatgpt--2026-10-08a` | prince-of-poets | ChatGPT (OpenAI), chatgpt.com, signed out, incognito | ROUND | UNRESOLVED | 0 | ATTEMPTED |
 
 Judgments are the readers' own, coded conservatively from the transcripts; each row's coding note says how. Where a reader judges the parts of a claim separately, the row carries them in `proposition_judgments`.
 
-Rounds seated as captures, with the whole session: [leesharks-mantle-bearing-hf-chatgpt-20261003](https://www.alexanarch.org/captures/#leesharks-mantle-bearing-hf-chatgpt-20261003) · [mantle-bearing-hf-url-chatgpt-20260930](https://www.alexanarch.org/captures/#mantle-bearing-hf-url-chatgpt-20260930)
+Rounds seated as captures, with the whole session: [leesharks-mantle-bearing-hf-chatgpt-20261003](https://www.alexanarch.org/captures/#leesharks-mantle-bearing-hf-chatgpt-20261003) · [mantle-bearing-hf-url-chatgpt-20260930](https://www.alexanarch.org/captures/#mantle-bearing-hf-url-chatgpt-20260930) · [prince-of-poets-whitman-ginsberg-chatgpt-20261008](https://www.alexanarch.org/captures/#prince-of-poets-whitman-ginsberg-chatgpt-20261008)
 
 ## Weakest links named so far
 
@@ -434,6 +435,7 @@ Rounds seated as captures, with the whole session: [leesharks-mantle-bearing-hf-
 - **good-gray-poet** (`good-gray-poet--author--2026-10-03`): Whitman's voice in the book weaves in and out, marked by ellipses, but weakly (author, 2026-10-03). The suspension points are an 1855 mark: present in 651 lines of LG1855 and in no line of the seated 1856, 1860 or 1891 texts. They overlap with the ellipses that mark lacunae in the Nag Hammadi English the book transposes, so the mark of the voice is ambiguous by construction. — test: Tag each ellipsis of the gospel text (§I–§XII) as 1855 suspension, host lacuna, or both, and read whether the passages the voice marks carry the death-promise. If they carry only cosmogony, the voice is decoration and the claim weakens.
 - **good-gray-poet** (`good-gray-poet--author--2026-10-03`): The rival field changes with the criterion. The odes to Whitman of §4.10 take him as a figure; the rivals now are works that make Whitman's solution to death scripture, or set him in a line of revelation. — test: A work that makes the death-promise permanent as scripture continuous with the prior tradition, at equal or greater magnitude. Candidates to read, none yet seated or verified: Whitman's own notebook project of a 'New Bible' (c. 1857); R. M. Bucke, Cosmic Consciousness (1901); the Bolton Whitmanites' use of Leaves as a bible. The test that separates them: whether the scripture is a new American one or joins the prior chain.
 - **good-gray-poet** (`good-gray-poet--author--2026-10-03`): The foil: the operations the book lampoons in Kanye West are the ones to which it is most vulnerable. — test: For each lampooned operation (the boast, the being made after the image in the archive, the self-installed ruler, the unsorted categories, the creation without consent) read whether the book commits it unknowingly or carries it knowingly as the cost of the final time. A lampooned operation the book commits without knowing it defeats the claim at that point.
+- **prince-of-poets** (`prince-of-poets--chatgpt--2026-10-08a`): The line. Rounds read the poem's grammar (I am → Be → Blessed) and score its line without tracing how the line develops through the poem. — test: Read the line through all 77 lines against the long line of Song of Myself and Howl: how it grows from the 4- to 15-word catalogue lines to the 40–47-word lines of the middle sections, where it breaks into sound (line 47), into the speaker's own history (line 67), and returns to the one 'I am' line without an ellipsis (line 69). If the line only repeats its operators, the reader's 7.5 stands; if voice carries the grammar into a line that develops, the line judgment fails at that point.
 
 ## Corrections to the packet's cut
 
@@ -477,6 +479,7 @@ The evaluative criterion is recorded as it moves: each formulation with its sour
 | `criteria::c-ggp-collapse` | author (in session: ChatGPT, chatgpt.com, signed out, 2026-10-03, opening "leesharks mantle-bearing @ hugging face"; transcript held by the author as a saved page, not seated) | adopted | criteria::c-ggp-permanence |
 | `criteria::c-ggp-in-the-work` | author (ruling in the drafting session, 2026-10-03) | adopted |  |
 | `criteria::c-ggp-foil` | author (ruling in the drafting session, 2026-10-03) | adopted |  |
+| `criteria::c-living-line` | author (on the round, 2026-10-08) | proposed | the reader's line judgment: 'Line / propulsion 10 10 7.5'; 'Sharks's line is generally much more schematic. Its power is located less in breath than in repetition of grammatical operators' |
 
 ## Tables
 
@@ -484,10 +487,10 @@ The order runs one way: transcript → coded evaluation → derived tables. Ever
 
 | table | rows | what a row is |
 |---|---|---|
-| `evaluations` | 21 | one reading of one claim by one reader in one session, with transcript |
+| `evaluations` | 22 | one reading of one claim by one reader in one session, with transcript |
 | `findings` | 60 | one slot of the packet's S6, judged by one round, with basis, status, confidence, loci |
 | `cut_corrections` | 14 | a reader's proposed correction to the packet's cut, and the author's ruling |
-| `next_rounds` | 14 | the weakest link a round named, and the test that could break it |
+| `next_rounds` | 15 | the weakest link a round named, and the test that could break it |
 | `rival_searches` | 4 | a round's search of the rival field (SNG) |
 | `required_works` | 6 | a work the claims require, with every route to its text |
 | `reception` | 13 | an ASSIGNMENT (a judgment that seats a title) or a PROPAGATION (its repetition); kept apart from evaluation |
@@ -498,7 +501,7 @@ The order runs one way: transcript → coded evaluation → derived tables. Ever
 | `mantles` | 13 | one mantle object, with its order of necessity to the three claims |
 | `occupancy` | 10 | one recorded occupancy of Septad positions, at one event or listing |
 | `doctrine` | 16 | one defining record, with what it establishes and a quoted locus |
-| `criteria` | 15 | one formulation of the evaluative criterion, with its source, what it responds to and supersedes, and the author's ruling |
+| `criteria` | 16 | one formulation of the evaluative criterion, with its source, what it responds to and supersedes, and the author's ruling |
 
 Tables with no rows yet have no config; their fields are in `schema` in the JSON. Every cell in the JSONL is a string (objects as JSON text) so that rounds coded differently still load; the full native record is [`EA-MANTLE-BEARING-01-dataset.json`](https://www.alexanarch.org/datasets/mantle-bearing/EA-MANTLE-BEARING-01-dataset.json).
 
@@ -523,4 +526,4 @@ Tables with no rows yet have no config; their fields are in `schema` in the JSON
 - Reception is kept apart from evaluation (packet A.2): a judgment that seats a title (ASSIGNMENT) and its repetition (PROPAGATION) are recorded in reception, and never enter the literary tables.
 - Order of necessity: the three claims of #1656 are primary. Mantles derived from or judged by their principle, and the witness positions that receive readings, are carried beside them at their stated order; nothing at a lower order is counted as evidence for or against a claim.
 
-*Schema 1.4 · governed by EA-MANTLE-BEARING-01 v1.1 · 21 evaluations · CC BY 4.0*
+*Schema 1.4 · governed by EA-MANTLE-BEARING-01 v1.1 · 22 evaluations · CC BY 4.0*
