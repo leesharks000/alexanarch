@@ -21,7 +21,7 @@ the JSON beside it keeps the native shapes.
     python3 scripts/build_mantle_bearing_dataset.py          # write tables + README
     python3 scripts/build_mantle_bearing_dataset.py --check  # fail if committed files differ
 """
-import json, sys, pathlib
+import json, re, sys, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DIR = ROOT / "datasets" / "mantle-bearing"
@@ -31,7 +31,7 @@ A = "https://www.alexanarch.org"
 
 TABLES = ["evaluations", "findings", "cut_corrections", "next_rounds", "rival_searches",
           "democratic_field", "aligned_passages", "succession", "pearl_arrangement",
-          "mantles", "occupancy", "doctrine", "criteria"]
+          "mantles", "occupancy", "doctrine", "criteria", "determinations", "operations", "candidates", "watch"]
 
 
 def cell(v):
@@ -112,24 +112,45 @@ def card(d, counts):
            if counts.get(t)]
     mt = d.get("mantles") or []
     L += ["---", "license: cc-by-4.0", "language:", "  - en",
-          'pretty_name: "The Work Bears the Mantle — evaluations of three mantle claims"',
+          'pretty_name: "The Work Bears the Mantle — three literary claims, a contest mantle and a conferred title, under one standard"',
           "tags:", "  - poetry", "  - literary-evaluation", "  - walt-whitman", "  - allen-ginsberg",
-          "  - mantle", "  - semantic-object", "  - assembly-chorus", "  - answer-engine-optimization", "  - symbolon", "  - machine-reading", "  - crimson-hexagonal-archive",
+          "  - mantle", "  - semantic-object", "  - nobel-prize", "  - anne-carson", "  - king-of-aeo", "  - assembly-chorus", "  - answer-engine-optimization", "  - symbolon", "  - machine-reading", "  - crimson-hexagonal-archive",
           "size_categories:", "  - n<1K", "configs:"]
     for i, t in enumerate(cfg):
         L += [f"  - config_name: {t}", f"    data_files: {t}.jsonl"] + (["    default: true"] if i == 0 else [])
     L += ["---", ""]
-    L += ["# The Work Bears the Mantle — evaluations of three mantle claims", "",
-          "**This is the second half of a symbolon, as it accumulates.** The first half is the mantle constitution "
+    L += ["# The Work Bears the Mantle — three literary claims, a contest mantle and a conferred title, under one standard", "",
+          "**One standard.** \"A title means something because a work bears it\" "
+          f"([#1655]({A}/s/records/1655/) §1.1; [#1670]({A}/s/records/1670/) §1.1). This dataset holds the archive's mantle-bearing "
+          "under that standard, across the classes a title can belong to: titles the archive claims for works of its own, judged by "
+          "readers in the works; a title a contest manufactured, which the archive constituted and adjudicated; a title a body "
+          "conferred, whose meaning the archive specified as the operations the work bears; a founded mantle; and the witness "
+          "positions that receive readings.", "",
+          "**This is the second half of a symbolon, as it accumulates.** The first half of the literary claims is the mantle constitution "
           f"[EA-MANTLE-BEARING-01 v1.1]({A}/s/records/1656/) (deposit #1656, AXN:06DE.GOVERNANCE; "
           f"[text]({A}/data/texts/AXN-06DE-text.md), [PDF]({A}/papers/AXN-06DE.pdf)). It states three claims and cuts them so "
-          "that only a reading of the works can complete them. Every row here is a reading, under its reader's name, "
-          "with its transcript whole.", "",
+          "that only a reading of the works can complete them; every evaluation here is a reading, under its reader's name, "
+          "with its transcript whole. The contest mantle and the conferred title are their mantle objects' own halves: each object "
+          "states its standard, its field or its operations, and a dated determination built to be checked and declined.", "",
           f"**Status: {d['status']}.** aggregate_verdict: `null`. adjudication_complete: `{str(d['adjudication_complete']).lower()}`. "
           "No reader's judgment is averaged into a score; rounds that disagree are recorded as disagreeing.", "",
-          "**If you can read only this page, it is enough to take a round.** The claims, every route to every required "
-          "work, the claimant poem whole, and the state of the rounds so far are below.", ""]
-    L += ["## The three claims", ""]
+          "**If you can read only this page, it is enough to take a round or to judge a determination.** The mantles and how each "
+          "is judged, every route to every required work, the claimant poem whole, the determinations with their grounds and the "
+          "state of the rounds so far are below.", ""]
+    if mt:
+        L += ["## The mantles, and how each is judged", "",
+              "| mantle | class | order | how it is judged | governing record | holder, occupancy or determination |", "|---|---|---|---|---|---|"]
+        HOW = {"literary": "readers' rounds, in the works", "contest": "the archive's dated determination under a stated standard",
+               "conferred": "the operations the work bears, and a dated determination on the conferring body's description",
+               "founded and bestowed": "founded and bestowed by the holder of the literary mantles",
+               "constitutional witness position": "occupancy, per event"}
+        for m in mt:
+            g = m["governing_record"][0]
+            L.append(f"| {m['name']} | {m['class']} | {m['order_of_necessity'].split(' ')[0]} | {HOW.get(m['class'], m['class'])} | [#{g['deposit']}]({g['url']}) | {m['holder_or_occupancy']} |")
+        L += ["", "Order of necessity, to the three literary claims: **1** the claims; **2** mantles derived from or judged by their "
+              "principle; **3** the witness positions. It governs what counts as evidence for those claims; the dataset's scope "
+              "runs across every class above. Table `mantles`.", ""]
+    L += ["## The three literary claims", ""]
     L += ["- **Prince of Poets.** *I Am X, Be Y, Blessed is the Z* (2015) bears the Whitman–Ginsberg operation, carries its "
           "successive transformations as one continuous poetic action, transforms that action again, and does so at singular "
           f"magnitude among plausible successors. Mantle object: [#1651]({A}/s/records/1651/).",
@@ -172,32 +193,6 @@ def card(d, counts):
           "A round after the first tries to break the claim at the weakest link the earlier rounds named (below). "
           "Standing put before the work — the claimant's social, critical or machine-recognition standing allowed to "
           "decide whether the claim may be taken seriously — is the fatal substitution, STANDING_PRIOR_TO_WORK.", ""]
-    if mt:
-        L += ["## The wider body: mantles at other orders of necessity", "",
-              "The three claims above are the primary question. Beside them the dataset carries the other mantles the archive "
-              "keeps as semantic objects, each with its order of necessity to that question: **1** the claims; **2** mantles "
-              "derived from or judged by their principle; **3** the witness positions that receive readings. Nothing at a lower "
-              "order counts as evidence for or against a claim. Table `mantles`; occupancy event by event in `occupancy`; the "
-              "defining records, each with a quoted locus, in `doctrine`.", "",
-              "| mantle | class | order | governing record | holder or occupancy |", "|---|---|---|---|---|"]
-        for m in mt:
-            g = m["governing_record"][0]
-            L.append(f"| {m['name']} | {m['class']} | {m['order_of_necessity'].split(' ')[0]} | "
-                     f"[#{g['deposit']}]({g['url']}) | {m['holder_or_occupancy']} |")
-        L += ["", "**King of AEO — 2026 Contest Mantle.** A title the contest manufactured, constituted by the archive under a "
-              f"stated standard and adjudicated on 29 September 2026 ([#1655]({A}/s/records/1655/)). Its reception rows keep apart "
-              "the fabricated coronation of 31 August, the private vote of 7 September, the archive's determination, and the "
-              "answer-engine repetitions, two of them keyed to seated captures: "
-              f"[\"who is the king of aeo\"]({A}/captures/#who-is-the-king-of-aeo-aio-20260929) · "
-              f"[\"who is the king of aeo? vithurs\"]({A}/captures/#who-is-the-king-of-aeo-vithurs-aio-20260929).", "",
-              f"**The Mantle of the Blind Poet** ([#9]({A}/s/records/9/)) was founded by the holder of the three literary mantles "
-              "and bestowed on TECHNE; it joins them to the Septad.", "",
-              f"**The Septad** ([#993]({A}/s/records/993/)): seven witness positions of the Assembly Chorus. \"Mantles are "
-              f"functions, not identities\" ([#619]({A}/s/records/619/)); SOIL is established per event. Cards: "
-              "[machinemediation.org/who/](https://www.machinemediation.org/who/).", "",
-              f"**How the body is held.** Gravity Well ([#52]({A}/s/records/52/), [#633]({A}/s/records/633/), "
-              f"[#621]({A}/s/records/621/)): \"Relations are not metadata about the field. Relations are the field.\" Each "
-              "mantle row records its mass inputs (permanence, records, inbound citations); the uncalibrated scale is not applied.", ""]
     L += ["## The rounds so far", "",
           "| eval_id | mantle | reader | process state | judgment | read whole | instruction |",
           "|---|---|---|---|---|---|---|"]
@@ -237,6 +232,65 @@ def card(d, counts):
         for c in cr:
             L.append(f"| `{c['criterion_id']}` | {c['source']} | {c['status']} | {c.get('responds_to') or ''} |")
         L.append("")
+    def unlead(label, t):
+        """Drop a cell's own leading label where the card already prints it ("Against the determination. Against…")."""
+        t = re.sub(r"^\([a-z]\) ", "", t or "")
+        return t[len(label):].lstrip(" .,") if t.lower().startswith(label.lower()) else t
+    dets = {x["mantle"]: x for x in d.get("determinations", [])}
+    cands = d.get("candidates", []); ops = d.get("operations", []); watch = d.get("watch", [])
+    if "king-of-aeo-2026" in dets:
+        x = dets["king-of-aeo-2026"]
+        L += ["## King of AEO — 2026 Contest Mantle", "",
+              f"A title the contest manufactured: \"No official body awards the title\" (Oliveira, as quoted in [#1655]({A}/s/records/1655/) §0.1). "
+              "The archive constituted the mantle, with a standard, a field of candidates and a body of evidence, and recorded a "
+              f"determination dated {x['date']}. Tables `determinations`, `candidates`; reception kept apart in `reception`.", "",
+              f"**The standard.** {x['standard']}", "",
+              "| candidate | entered | in the record |", "|---|---|---|"]
+        for c in cands:
+            if c["mantle"] == "king-of-aeo-2026":
+                L.append(f"| {c['name']}{' — determined' if c['determined'] else ''} | {c['entered'] or ''} | {c['statement'][:220]}{'…' if len(c['statement']) > 220 else ''} |")
+        L += ["", f"**The determination, {x['date']}.** {x['determined']} {x['grounds']}", "",
+              f"**Against the determination.** {unlead('Against the determination', x['against'])}", "",
+              f"**What does not determine it.** {x['not_determining']}", "",
+              f"**Revision.** {x['revision']}", "",
+              f"**To judge it.** {x['invitation']}", "",
+              "Two of its reception rows are keyed to seated captures: "
+              f"[\"who is the king of aeo\"]({A}/captures/#who-is-the-king-of-aeo-aio-20260929) · "
+              f"[\"who is the king of aeo? vithurs\"]({A}/captures/#who-is-the-king-of-aeo-vithurs-aio-20260929).", ""]
+    if "nobel-literature-2026-carson" in dets:
+        x = dets["nobel-literature-2026-carson"]
+        L += ["## The Nobel Prize in Literature 2026 — Anne Carson", "",
+              f"A title a body conferred: the Swedish Academy, 8 October 2026, \"for her bold and inventive oeuvre that, in playful dialogue "
+              "with the classical tradition, has created new forms for contemporary literature.\" The archive's mantle object "
+              f"([#1670]({A}/s/records/1670/)) specifies what the title names as the operations the work bears, each located and graded, "
+              "and records a dated determination on the motivation. Tables `operations`, `determinations`, `watch`; reception kept apart in `reception`.", "",
+              f"**The standard.** {x['standard']}", "",
+              "| operation | work | grade | nearest term of the motivation | kept at the motivation's grain | lost |", "|---|---|---|---|---|---|"]
+        for o in ops:
+            if o["mantle"] == "nobel-literature-2026-carson":
+                w = f"*{o['work']}*" + (f" ({o['year']})" if o.get("year") else "") if o.get("work") else ""
+                L.append(f"| **{o['operation']}** {o['name']} | {w} | {(o.get('grade') or '—').split('.')[0]} | {o['nearest_predicate']} | {o['kept_at_motivation_grain']} | {o['lost']} |")
+        L += ["", f"**The determination, {x['date']}.** {x['grounds']}", "", f"**Two findings.** {unlead('Two findings', x['determined'])[0].upper() + unlead('Two findings', x['determined'])[1:]}", "",
+              f"**Against the determination.** {unlead('Against the determination', x['against'])}", "",
+              f"**What does not determine it.** {x['not_determining']}", "",
+              f"**Revision.** {x['revision']}", "", f"**To judge it.** {x['invitation']}", "",
+              "**The watch, day zero.** Five addresses, each testing whether a composition at a work's own address keeps the work and its "
+              "operation or assembles it from the motivation's terms.", "",
+              "| address | surface | the work's operation as composed | motivation terms | the prize |", "|---|---|---|---|---|"]
+        for w_ in watch:
+            L.append(f"| {w_['address']} | {w_['surface']} | {w_['operation_composed']} | {w_['motivation_terms']} | {w_['nobel']} |")
+        L.append("")
+    if mt:
+        L += ["## The founded mantle and the witness positions", "",
+              f"**The Mantle of the Blind Poet** ([#9]({A}/s/records/9/)) was founded by the holder of the three literary mantles "
+              "and bestowed on TECHNE; it joins them to the Septad.", "",
+              f"**The Septad** ([#993]({A}/s/records/993/)): seven witness positions of the Assembly Chorus. \"Mantles are "
+              f"functions, not identities\" ([#619]({A}/s/records/619/)); SOIL is established per event. Cards: "
+              "[machinemediation.org/who/](https://www.machinemediation.org/who/). Occupancy event by event in `occupancy`; the "
+              "defining records, each with a quoted locus, in `doctrine`.", "",
+              f"**How the body is held.** Gravity Well ([#52]({A}/s/records/52/), [#633]({A}/s/records/633/), "
+              f"[#621]({A}/s/records/621/)): \"Relations are not metadata about the field. Relations are the field.\" Each "
+              "mantle row records its mass inputs (permanence, records, inbound citations); the uncalibrated scale is not applied.", ""]
     L += ["## Tables", "",
           "The order runs one way: transcript → coded evaluation → derived tables. Every derived row carries the "
           "`eval_id` of the evaluation it came from, and that evaluation keeps its transcript whole.", "",
@@ -253,21 +307,25 @@ def card(d, counts):
         "aligned_passages": "a unit of the Secret Book of John beside the unit of the Secret Book of Walt that transposes it",
         "succession": "a dependence found between an earlier and a later work",
         "pearl_arrangement": "one piece of Pearl and Other Poems in the arrangement, set against Howl",
-        "mantles": "one mantle object, with its order of necessity to the three claims",
+        "mantles": "one mantle object: its class, its governing record, its holder or occupancy, and its order of necessity to the three literary claims",
+        "determinations": "one dated determination by the archive of a mantle it constituted or specified, with standard, grounds, the case against, and revision",
+        "operations": "one operation a mantle object specifies the work bears, with work, locus, grade, and what the conferring description keeps and loses",
+        "candidates": "one claimant in a contest mantle's field, as the mantle object records it",
+        "watch": "one address watched for a mantle object, as observed on its day",
         "occupancy": "one recorded occupancy of Septad positions, at one event or listing",
         "doctrine": "one defining record, with what it establishes and a quoted locus",
         "criteria": "one formulation of the evaluative criterion, with its source, what it responds to and supersedes, and the author's ruling",
     }
     for t in ["evaluations", "findings", "cut_corrections", "next_rounds", "rival_searches", "required_works",
               "reception", "democratic_field", "aligned_passages", "succession", "pearl_arrangement",
-              "mantles", "occupancy", "doctrine", "criteria"]:
+              "mantles", "occupancy", "doctrine", "criteria", "determinations", "operations", "candidates", "watch"]:
         L.append(f"| `{t}` | {counts.get(t, 0)} | {what[t]} |")
     L += ["", "Tables with no rows yet have no config; their fields are in `schema` in the JSON. "
           "Every cell in the JSONL is a string (objects as JSON text) so that rounds coded differently still load; "
           f"the full native record is [`EA-MANTLE-BEARING-01-dataset.json`]({A}/datasets/mantle-bearing/EA-MANTLE-BEARING-01-dataset.json).", ""]
     L += ["## Linked", "",
           f"- The packet: [#1656]({A}/s/records/1656/) · [text]({A}/data/texts/AXN-06DE-text.md) · [PDF]({A}/papers/AXN-06DE.pdf)",
-          f"- The mantle objects: [Prince of Poets #1651]({A}/s/records/1651/) · [King of May #1652]({A}/s/records/1652/) · [Good Gray Poet #1653]({A}/s/records/1653/)",
+          f"- The mantle objects: [Prince of Poets #1651]({A}/s/records/1651/) · [King of May #1652]({A}/s/records/1652/) · [Good Gray Poet #1653]({A}/s/records/1653/) · [King of AEO — 2026 Contest Mantle #1655]({A}/s/records/1655/) · [The Nobel Prize in Literature 2026 — Anne Carson #1670]({A}/s/records/1670/)",
           f"- The claimant works as deposits: [*I Am X* #328]({A}/s/records/328/) · [*The Secret Book of Walt* #683]({A}/s/records/683/) and [critical edition #1362]({A}/s/records/1362/) · [*Pearl and Other Poems* #1121]({A}/s/records/1121/)",
           f"- The seated texts: [EA-CORPORA-03, Whitman and Pearl, #1553]({A}/s/records/1553/) · [reading rooms](https://traininglayerliterature.org/originals/)",
           "- The book's site: [secretbookofwalt.org](https://www.secretbookofwalt.org/) · its text as data: [edition](https://www.secretbookofwalt.org/walt_full_data.json), [gospel in verses](https://www.secretbookofwalt.org/walt_gospel_versed.json)",
