@@ -2,16 +2,16 @@
  "maxim": "all things are now lawful to you in jack feist",
  "dataset_id": "EA-CORPORA-MANIFEST-01",
  "version": "0.1",
- "generated": "2026-09-27",
+ "generated": "2026-10-09",
  "what": "The seating manifest for the EA-CORPORA series: one row per seated corpus, with the edition, its origin, its license stated verbatim, the normalization applied, the verified loci, and the sha256 of each seat's MANIFEST.",
  "why_the_manifest_and_not_the_texts": "THE TEXTS ARE NOT THE ARCHIVE'S TO RELICENSE. 67 seats, and at least thirty assert CC BY-SA — Perseus and First1KGreek packaging over public-domain editions. One asserts CC BY-NC. One asserts GPL-2.0. The Crimson Hexagonal dataset is CC BY 4.0, and shipping CC BY-SA text inside it would relicense somebody else's work. The NC seat could not go in at all.\n\nAN ARCHIVE THAT MEASURES PROVENANCE ERASURE DOES NOT PERFORM IT ON PERSEUS.\n\nWhat the manifest carries is what the archive made: which edition was seated, fetched when, normalized how, verified at which loci, and hashing to what. That is the part that makes a claim checkable — 'verified against the seated texts' is unfalsifiable without it — and it carries the licenses as attribution rather than laundering them.",
  "license_class_derivation": "license_class IS DERIVED FROM license_verbatim AND THE DERIVATION IS STATED HERE, because a derived field that hides its basis is how the wrong thing gets redistributed. Order is most-restrictive-first: NC, then GPL, then BY-SA, then BY, then Gutenberg, then public domain, then site terms, then other. A SEAT WHOSE PACKAGING IS CC BY-SA OVER A PUBLIC-DOMAIN EDITION CLASSES AS CC BY-SA, because that is what governs redistribution. license_verbatim is always the authority; the class is a convenience and must not be relied on for a licensing decision.",
  "counts": {
-  "seats": 68,
-  "files": 2853,
-  "bytes": 1340878046,
-  "with_manifest_sha": 68,
-  "with_verified_loci": 66
+  "seats": 69,
+  "files": 14392,
+  "bytes": 2024199662,
+  "with_manifest_sha": 69,
+  "with_verified_loci": 67
  },
  "by_license_class": {
   "cc-by-sa": 37,
@@ -19,7 +19,7 @@
   "cc-by": 7,
   "gutenberg": 3,
   "cc-by-nc": 3,
-  "other": 3,
+  "other": 4,
   "site-terms": 1,
   "gpl": 1
  },
@@ -1383,6 +1383,26 @@
    "manifest_sha256": "1679db6d19eb732031bd632ca097e8c37af1d87eb58f73591d1f55c2255ec647",
    "file_count": 8,
    "bytes": 481075
+  },
+  {
+   "corpus": "openai-math",
+   "seat": "EA-CORPORA-17/01",
+   "title": "The OpenAI Mathematics Release of October 2026 — 719 current manuscripts in 372 result families, with 27 previous versions and 3 withdrawn manuscripts, as published at github.com/openai/math, commit fd4aeeb2",
+   "edition": "OpenAI, openai/math (GitHub), commit fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb, 2026-10-07 22:20 -0700 — the release first published 2026-10-06, after the withdrawals and fixes of 2026-10-07 recorded in its history.md.",
+   "origin": "{\"repo\": \"openai/math\", \"commit\": \"fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb\", \"commit_date\": \"2026-10-07T22:20:00-07:00\", \"withdrawn_revision\": \"adc7f1241b42e322a6451854ab7e4b4c146bf78a — the revision each withdrawal notice names as holding its pre-withdrawal manuscript\", \"fetched\": \"2026-10-09\", \"transport\": \"git over HTTPS from github.com/openai/math. Every file of the commit hashed in session (original/SOURCE-TREE.sha256, SHA-256, 133,955 files) and its publisher object id recorded (original/GIT-TREE.txt, git ls-tree -r). The payload is carried into original/ by scripts/seat_openai_math.py, which refuses any file whose git object id or SHA-256 differs from these records. The three pre-withdrawal manuscripts were fetched at adc7f124 and verified against that revision's object ids (37/37).\"}",
+   "language": "English (mathematical prose, LaTeX); Lean 4",
+   "license_verbatim": "Apache License 2.0, the LICENSE file at the commit (also lean/LICENSE, identical). No NOTICE file and no copyright line; the licensor is 'OpenAI' by the author line of every manuscript. Apache-2.0 permits reproduction and redistribution with the licence carried, notices retained and changes stated: this seat carries LICENSE byte-exact under original/ and changes no file of the publisher's.",
+   "license_class": "other",
+   "fetched": "2026-10-09",
+   "normalization": "original/ and original-adc7f124/ are byte-exact. text/manuscripts.tsv is derived from preprints/*/README.md (title, author line, date, version notes, withdrawal notices) and CONTENTS.md (family number and title, the Lean link); inline HTML in family titles (<i>, <sup>, <sub>) is removed and entities are unescaped; dates absent from a README are taken from the directory name and marked so.",
+   "scope": "Seated in the archive (11,496 files): every manuscript directory under preprints/ — 719 current, 27 previous versions kept by the publisher, 3 withdrawal notices — with their PDFs, LaTeX sources, bibliographies, build files and verification certificates; the top-level README.md, CONTENTS.md, history.md, LICENSE, overview.pdf and overview.tex; the eleven files of reasoning_traces/ (the abridged reasoning summaries for ten families, as ten PDFs, with the LaTeX source of one); and from lean/ the README, LICENSE, formalization.yaml (173 catalogued sources), the build files (lakefile.lean, lake-manifest.json, lean-toolchain, OAI.lean), the scope notes (docs/, 242 files), the Comparator challenge statements and configurations (ComparatorChallenges/) and the dependency patches (patches/). Pinned and mirrored, kept out of the archive: the Lean proof library lean/OAI/ (122,000+ files, 1.7 GB), each file named with its object id and SHA-256 in the two tree files; the whole commit is mirrored on Hugging Face.",
+   "status": "seated",
+   "verified_loci": "[\"README.md §How the results were produced: 'Over the course of the evaluation, the model was posed approximately 4,000 problems.'\", \"README.md §How the results were produced: 'Exceptions to this fixed procedure include work on a zero-free region for the Riemann zeta function and proof of the Hodge Conjecture for CM abelian varieties. Additionally, the writeup for the Re(s) > 11/12 zero-free region for the Riemann zeta function was human edited for readability.'\", \"README.md: 'Some of the unformalized results could have issues. We will endeavor to fix any such issues quickly.'\", \"history.md, October 7, 2026: 'This brings the total percentage of top-line results formalized to 300 / 719 = ~42%.'\", \"preprints/Algebraicity-of-Weil-classes-on-split-abelian-eightfolds-September-18-2026/README.md: 'This withdrawal concerns the proof; it does not assert that the mathematical statement is false.'\", \"lean/ComparatorChallenges/QuasiRiemannHypothesis.lean: theorem riemannZeta_ne_zero_of_seven_eighths_lt_re {s : ℂ} (hs : (7 / 8 : ℝ) < s.re) : riemannZeta s ≠ 0\"]",
+   "works": "",
+   "why_seated": "The largest single release of machine-produced mathematics to date, published under one corporate author line, with a share of its claims formally stated against standard Mathlib and checkable by anyone. Seated so the release can be read, cited and checked at the bytes of a fixed commit, whatever the publisher later revises, moves or withdraws; and so its record of authorship stands beside it as data. The archive's independent kernel check of three headline results (scripts/verify_openai_math/, workflow verify-openai-math) reads from the same commit.",
+   "manifest_sha256": "903df81e2436bdf6c2407b29b196b29e8c4b57eb89d73907da98ac578fd5da3b",
+   "file_count": 11539,
+   "bytes": 683321616
   }
  ]
 }

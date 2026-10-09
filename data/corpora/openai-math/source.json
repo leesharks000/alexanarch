@@ -1,0 +1,79 @@
+{
+ "seat": "EA-CORPORA-17/01",
+ "corpus": "openai-math",
+ "title": "The OpenAI Mathematics Release of October 2026 — 719 current manuscripts in 372 result families, with 27 previous versions and 3 withdrawn manuscripts, as published at github.com/openai/math, commit fd4aeeb2",
+ "edition": "OpenAI, openai/math (GitHub), commit fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb, 2026-10-07 22:20 -0700 — the release first published 2026-10-06, after the withdrawals and fixes of 2026-10-07 recorded in its history.md.",
+ "language": "English (mathematical prose, LaTeX); Lean 4",
+ "origin": {
+  "repo": "openai/math",
+  "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "commit_date": "2026-10-07T22:20:00-07:00",
+  "withdrawn_revision": "adc7f1241b42e322a6451854ab7e4b4c146bf78a — the revision each withdrawal notice names as holding its pre-withdrawal manuscript",
+  "fetched": "2026-10-09",
+  "transport": "git over HTTPS from github.com/openai/math. Every file of the commit hashed in session (original/SOURCE-TREE.sha256, SHA-256, 133,955 files) and its publisher object id recorded (original/GIT-TREE.txt, git ls-tree -r). The payload is carried into original/ by scripts/seat_openai_math.py, which refuses any file whose git object id or SHA-256 differs from these records. The three pre-withdrawal manuscripts were fetched at adc7f124 and verified against that revision's object ids (37/37)."
+ },
+ "license": {
+  "payload": "Apache License 2.0, the LICENSE file at the commit (also lean/LICENSE, identical). No NOTICE file and no copyright line; the licensor is 'OpenAI' by the author line of every manuscript. Apache-2.0 permits reproduction and redistribution with the licence carried, notices retained and changes stated: this seat carries LICENSE byte-exact under original/ and changes no file of the publisher's.",
+  "record": "CC-BY-4.0 applies to this seat record, its derived text layer and its deposit only."
+ },
+ "scope": "Seated in the archive (11,496 files): every manuscript directory under preprints/ — 719 current, 27 previous versions kept by the publisher, 3 withdrawal notices — with their PDFs, LaTeX sources, bibliographies, build files and verification certificates; the top-level README.md, CONTENTS.md, history.md, LICENSE, overview.pdf and overview.tex; the eleven files of reasoning_traces/ (the abridged reasoning summaries for ten families, as ten PDFs, with the LaTeX source of one); and from lean/ the README, LICENSE, formalization.yaml (173 catalogued sources), the build files (lakefile.lean, lake-manifest.json, lean-toolchain, OAI.lean), the scope notes (docs/, 242 files), the Comparator challenge statements and configurations (ComparatorChallenges/) and the dependency patches (patches/). Pinned and mirrored, kept out of the archive: the Lean proof library lean/OAI/ (122,000+ files, 1.7 GB), each file named with its object id and SHA-256 in the two tree files; the whole commit is mirrored on Hugging Face.",
+ "files": {
+  "original/": "the seated paths of the commit, byte-exact, in the publisher's layout",
+  "original/GIT-TREE.txt": "git ls-tree -r of the whole commit: mode, type, object id, path, for all 133,955 files",
+  "original/SOURCE-TREE.sha256": "SHA-256 of all 133,955 files of the commit, seated or not",
+  "original-adc7f124/preprints/": "the three withdrawn manuscripts as they stood before withdrawal (37 files), from the revision their notices name",
+  "original-adc7f124/GIT-TREE.txt": "the publisher's object ids for those 37 files",
+  "text/manuscripts.tsv": "the finding aid: one row per manuscript directory (749) — title, author line, date, family, whether the family has a Lean scope note, status (current, previous version and what supersedes it, withdrawn), PDF path",
+  "source.json": "this record",
+  "MANIFEST.sha256": "SHA-256 of every file of the seat"
+ },
+ "normalization": "original/ and original-adc7f124/ are byte-exact. text/manuscripts.tsv is derived from preprints/*/README.md (title, author line, date, version notes, withdrawal notices) and CONTENTS.md (family number and title, the Lean link); inline HTML in family titles (<i>, <sup>, <sub>) is removed and entities are unescaped; dates absent from a README are taken from the directory name and marked so.",
+ "verified_loci": [
+  "README.md §How the results were produced: 'Over the course of the evaluation, the model was posed approximately 4,000 problems.'",
+  "README.md §How the results were produced: 'Exceptions to this fixed procedure include work on a zero-free region for the Riemann zeta function and proof of the Hodge Conjecture for CM abelian varieties. Additionally, the writeup for the Re(s) > 11/12 zero-free region for the Riemann zeta function was human edited for readability.'",
+  "README.md: 'Some of the unformalized results could have issues. We will endeavor to fix any such issues quickly.'",
+  "history.md, October 7, 2026: 'This brings the total percentage of top-line results formalized to 300 / 719 = ~42%.'",
+  "preprints/Algebraicity-of-Weil-classes-on-split-abelian-eightfolds-September-18-2026/README.md: 'This withdrawal concerns the proof; it does not assert that the mathematical statement is false.'",
+  "lean/ComparatorChallenges/QuasiRiemannHypothesis.lean: theorem riemannZeta_ne_zero_of_seven_eighths_lt_re {s : ℂ} (hs : (7 / 8 : ℝ) < s.re) : riemannZeta s ≠ 0"
+ ],
+ "provenance": {
+  "as_recorded_by_the_publisher": [
+   "Author line 'OpenAI' on all 749 manuscript READMEs; \\author{OpenAI} in all 751 \\author fields of the LaTeX sources. No manuscript names a person.",
+   "No LaTeX source carries an acknowledgments section of its own (searched: \\section{Acknowledgments}, \\begin{acknowledgments}, 'we thank', 'grateful').",
+   "The release records other mathematicians' credit to machines, in its own footnotes and paragraphs: 'Liu and Luo explicitly acknowledge assistance from ChatGPT Codex' (A linear list-coloring bound in terms of the Hadwiger number, build/sections/01-introduction.tex:83–84); 'Joshi et al. acknowledge ChatGPT's contribution to a lemma's proof idea and other interactions; Kintali discloses assistance from Claude, ChatGPT, and two open-weight models' (Regular trajectories, pruning and quantum parity, build/sections/01-introduction.tex:169–171); 'Houdayer and Marrakchi credit GPT-5.6 Sol with counterexample exploration and an initial strict-outerness proof ... They report checking and rewriting those proofs and retaining responsibility for their work' (Expected amenable subalgebras preserving core commutants, build/paper.tex:251–256). (Quoted with TeX markup and line breaks removed.) The credit runs from named people to models; the release's own author line names no person.",
+   "The procedure: 'The vast majority of results were obtained with the same procedure using an unreleased internal OpenAI model.' The exceptions (the zeta zero-free region, Hodge for CM abelian varieties) are named and their procedure is not described.",
+   "One human edit is stated ('the writeup for the Re(s) > 11/12 zero-free region ... was human edited for readability'); the editor is not named.",
+   "The approximately 4,000 problems posed are not published, nor the prompts; reasoning summaries are published for 10 of 372 families and are described as abridged.",
+   "The Lean dependency patches carry the only thanks in the release: 'We thank the authors of these packages for their work.' (lean/patches/README.md)",
+   "The manuscripts cite prior literature (521 .bib files in preprints/)."
+  ],
+  "ruling": "MANUS, 2026-10-09: 'this seems to me to be provenance-erased work. openai's models were working in collaboration with human mathematicians, and thats been liquidated for corporate power, as ahm says.' The seat records the release as published and states its authorship record as data, above.",
+  "loci_verified": "Every quotation in this record was located in the seated bytes on 2026-10-09 (whitespace normalized; \\emph{} removed)."
+ },
+ "why_seated": "The largest single release of machine-produced mathematics to date, published under one corporate author line, with a share of its claims formally stated against standard Mathlib and checkable by anyone. Seated so the release can be read, cited and checked at the bytes of a fixed commit, whatever the publisher later revises, moves or withdraws; and so its record of authorship stands beside it as data. The archive's independent kernel check of three headline results (scripts/verify_openai_math/, workflow verify-openai-math) reads from the same commit.",
+ "rulings": [
+  "MANUS, 2026-10-09: the manuscripts (PDF and TeX) and the release's top-level, reasoning and Lean records are seated in the archive; the whole commit is mirrored on Hugging Face; the 122,000 Lean proof files are pinned by hash and carried in the mirror."
+ ],
+ "pointed_to_not_seated": {
+  "why": "Accounts of the release are pointed to; the release is the original being seated.",
+  "accounts": [
+   {
+    "what": "Association for Human Mathematics, statement of 2026-10-07 urging mathematicians to discontinue their work with OpenAI (reposted by Terence Tao); quoted in explainx.ai's survey",
+    "url": "https://explainx.ai/blog/openai-math-results-that-matter-expert-reactions-2026"
+   },
+   {
+    "what": "Scientific American, on the Fields medalists' letter",
+    "url": "https://www.scientificamerican.com/article/25-winners-of-maths-nobel-prize-decry-the-ai-invasion-of-their-discipline/"
+   },
+   {
+    "what": "Bastounis, Circelli and Hansen, comparison of OpenAI's Navier–Stokes Lean code with its manuscript (arXiv 2610.08144), as reported",
+    "url": "https://explainx.ai/blog/openai-math-results-that-matter-expert-reactions-2026"
+   }
+  ]
+ },
+ "pending": [
+  "The Hugging Face mirror of the whole commit (workflow seat-openai-math, job mirror); its URL enters this record when it runs.",
+  "The archive's kernel check of the Kaplansky, Hadwiger and zeta 7/8 statements (workflow verify-openai-math); its result enters this record when it runs."
+ ],
+ "lines_total": 749
+}
