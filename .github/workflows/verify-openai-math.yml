@@ -1,0 +1,67 @@
+# Independent check of openai/math headline results; the logic is in scripts/verify_openai_math/run.sh.
+name: verify-openai-math
+on:
+  workflow_dispatch:
+    inputs:
+      targets:
+        description: "JSON list: kaplansky, hadwiger, zeta"
+        default: '["kaplansky","hadwiger","zeta"]'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    strategy:
+      fail-fast: false
+      matrix:
+        target: ${{ fromJson(inputs.targets) }}
+    env:
+      GLIBC_TUNABLES: glibc.malloc.mmap_max=0:glibc.malloc.arena_max=1
+      R: scripts/verify_openai_math/run.sh
+      T: ${{ matrix.target }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts/verify_openai_math
+      - run: bash $R fetch $T && echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - uses: actions/cache/restore@v4
+        with:
+          path: oai/lean/.lake
+          key: oai-${{ matrix.target }}
+          restore-keys: oai-
+      - run: bash $R deps $T
+      - id: build
+        timeout-minutes: 320
+        run: bash $R build $T
+      - if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: oai/lean/.lake
+          key: oai-${{ matrix.target }}-${{ github.run_id }}
+      - id: check
+        if: steps.build.outcome == 'success'
+        run: bash $R check $T
+      - id: comparator
+        if: steps.build.outcome == 'success'
+        continue-on-error: true
+        timeout-minutes: 60
+        run: bash $R comparator $T
+      - if: always()
+        run: bash $R summary $T
+        env:
+          BUILD_OUTCOME: ${{ steps.build.outcome }}
+          CHECK_OUTCOME: ${{ steps.check.outcome }}
+          COMPARATOR_OUTCOME: ${{ steps.comparator.outcome }}
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: verify-${{ matrix.target }}
+          path: |
+            commit.txt
+            mathlib.txt
+            manifest.diff
+            build.log
+            check.log
+            comparator.log
+          if-no-files-found: ignore
