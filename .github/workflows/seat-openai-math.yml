@@ -1,0 +1,57 @@
+# Seat EA-CORPORA-17/01 (openai/math at fd4aeeb2): the payload into the archive, the whole commit to Hugging Face.
+# The logic and the verification are in scripts/seat_openai_math.py and scripts/mirror_openai_math_hf.py.
+name: seat-openai-math
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: apply-bundle
+env:
+  OAI_COMMIT: fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb
+jobs:
+  seat:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - run: sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
+      - uses: actions/checkout@v4
+      - name: Fetch openai/math at the pinned commit
+        run: |
+          git init -q oai && cd oai
+          git remote add origin https://github.com/openai/math.git
+          git sparse-checkout set --no-cone '/*' '!/lean/OAI/'
+          git fetch -q --depth 1 --filter=blob:none origin "$OAI_COMMIT"
+          git checkout -q FETCH_HEAD
+      - name: Seat, verified file by file
+        run: python3 scripts/seat_openai_math.py --src oai
+      - name: Commit and push
+        run: |
+          rm -rf oai
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/corpora/openai-math
+          git commit -q -m "EA-CORPORA-17/01 payload: openai/math at fd4aeeb2, $(git diff --cached --name-only | wc -l) files, verified against GIT-TREE.txt, SOURCE-TREE.sha256 and MANIFEST.sha256"
+          git pull -q --rebase origin main
+          git push origin HEAD:main
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - run: sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            scripts
+            data/corpora/openai-math
+      - name: Fetch openai/math at the pinned commit, whole
+        run: |
+          git init -q oai && cd oai
+          git remote add origin https://github.com/openai/math.git
+          git fetch -q --depth 1 origin "$OAI_COMMIT"
+          git checkout -q FETCH_HEAD
+      - run: pip install -q huggingface_hub && sudo apt-get install -y -qq zstd
+      - name: Mirror to Hugging Face
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: python3 scripts/mirror_openai_math_hf.py --src oai
