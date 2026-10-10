@@ -30,6 +30,8 @@ The Pessoa Knowledge Graph (#668, #669) already carries a translator relation: i
 
 So the archive held the category, held the source edition, and held Haroldo de Campos, the poet Nácher now studies. It lacked the instance: the Spanish transmission of that very edition, and the person who made it. Among Spanish-language receivers it names Paz, and among writers downstream, Borges; and it names the gap itself, inviting contributions on "literary traditions (Spanish, French, Italian, Arabic, other) that the author's existing scholarship does not cover adequately." The edge from Pizarro and Uribe's Reis to its Spanish state had no receiver on it. The witness supplied the contribution the graph had asked for.
 
+As a condition on the graph G with relation set Rel: the source S is in G, the relation translator-of is in Rel, and the receiver R is absent from G. That is instance-level transmission erasure: the failure to instantiate an available category, which is a different defect from the absence of the category itself. The archive's case is the first.
+
 ## 4. Reading the actual words
 
 Sigil asked for the translator's own account. It exists, and the archive holds the Portuguese the translator worked from. Read together, they correct the reading Sigil improvised.
@@ -46,6 +48,8 @@ The ode beginning "Deixa passar o vento" (12 September 1916), from the publisher
 
 He also kept rhymes where Reis rhymes ("Algunos poemas tienen rimas que he intentado conservar"), varied his rendering where two poems open on the same line, and allowed himself "algunas licencias (la rima de 'tinieblas' y 'estrellas')" in "Nirvâna".⁴ None of this is the problem Sigil named. The translator's problems were height, rhythm, rhyme and repetition.
 
+The result is in the sequence. With the receiver missing, the archive filled the gap with the canonical expectation of what translating Reis must involve. With the receiver recovered, his actual intervention differs from that expectation, and the difference is where it can be read: in a preposition that became an adjective, a distance that became a pause, a verb that changed tense.
+
 ## 5. Three receivers
 
 The comparison that made this erratum necessary is structural. Three receivers of a classical or neo-classical source now stand in the archive's record, each in a different position.
@@ -56,7 +60,14 @@ Rebekah Cranes: the archive's own philologist and translator, whose intervention
 
 Max Hidalgo Nácher: a receiver the archive did not record at all. The source and its edition were present; the transmission into Spanish, and its translator, were absent.
 
-The three describe one requirement. A transmission is recorded when the source, the receiver and the change the receiver made are all recorded. A source recorded without its receivers loses its transmissions. A receiver allowed to stand in for the source becomes its description. A receiver recorded with the intervention keeps the change inspectable. The archive recorded the second failure, in Carson's case, four hours before it committed the first in Nácher's.
+The three describe one requirement. Write a transmission as T = (S, R, D): the source, the receiver, and the change the receiver made. A transmission is recorded when all three are recorded and each can be inspected. The states it can be found in:
+
+- (S, —, —): the source without its receiver or the change. Receiver erasure. Nácher's case in the archive before this erratum.
+- (S, R, —): the receiver named and the change hidden, the translation presented as the original. False transparency. None of the three cases here; it is the remaining state, named so it can be recognized.
+- (S as a predicate of R, R, D replaced): the source carried only as a property of the receiver, and the change replaced by a manner. Receptional inversion. Carson's case at her entity: the motivation's "in playful dialogue with the classical tradition" holds Sappho, Stesichoros and Catullus as one class noun inside a sentence about Carson, and puts "playful" where the relation was (#1670 §2).
+- (S, R, D), each inspectable: Cranes's case, and the state this erratum restores for Nácher.
+
+The archive recorded the third state, in Carson's case, four hours before it fell into the first, in Nácher's.
 
 ## 6. Graph repair
 
