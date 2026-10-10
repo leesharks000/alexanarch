@@ -31,7 +31,7 @@ A = "https://www.alexanarch.org"
 
 TABLES = ["evaluations", "findings", "cut_corrections", "next_rounds", "rival_searches",
           "democratic_field", "aligned_passages", "succession", "pearl_arrangement",
-          "mantles", "occupancy", "doctrine", "criteria", "determinations", "operations", "candidates", "watch"]
+          "mantles", "occupancy", "doctrine", "criteria", "determinations", "operations", "candidates", "watch", "readings"]
 
 
 def cell(v):
@@ -137,11 +137,16 @@ def card(d, counts):
           "**If you can read only this page, it is enough to take a round or to judge a determination.** The mantles and how each "
           "is judged, every route to every required work, the claimant poem whole, the determinations with their grounds and the "
           "state of the rounds so far are below.", ""]
+    nobd = [x for x in d.get("determinations", []) if x.get("under_evaluation")]
+    if nobd:
+        L += ["**At the conferred title, the sentence is judged.** The Nobel material evaluates the Swedish Academy's motivation as a "
+              "description of Anne Carson's work. Her works are the evidence and the measure; nothing here evaluates Carson or the worth "
+              "of the works. Read from a work's locus to the sentence, and see the collapses the Nobel section names before judging.", ""]
     if mt:
         L += ["## The mantles, and how each is judged", "",
               "| mantle | class | order | how it is judged | governing record | holder, occupancy or determination |", "|---|---|---|---|---|---|"]
         HOW = {"literary": "readers' rounds, in the works", "contest": "the archive's dated determination under a stated standard",
-               "conferred": "the operations the work bears, and a dated determination on the conferring body's description",
+               "conferred": "a dated determination on the conferring body's description, with the works at their loci as its evidence",
                "founded and bestowed": "founded and bestowed by the holder of the literary mantles",
                "constitutional witness position": "occupancy, per event"}
         for m in mt:
@@ -259,11 +264,15 @@ def card(d, counts):
               f"[\"who is the king of aeo? vithurs\"]({A}/captures/#who-is-the-king-of-aeo-vithurs-aio-20260929).", ""]
     if "nobel-literature-2026-carson" in dets:
         x = dets["nobel-literature-2026-carson"]
-        L += ["## The Nobel Prize in Literature 2026 — Anne Carson", "",
-              f"A title a body conferred: the Swedish Academy, 8 October 2026, \"for her bold and inventive oeuvre that, in playful dialogue "
+        L += ["## The Nobel Prize in Literature 2026 — Anne Carson", ""]
+        if x.get("under_evaluation"):
+            L += [f"**Under evaluation.** {x['under_evaluation']}", "", f"**The evidence.** {x['evidence']}", "",
+                  f"**Outside the evaluation.** {x['outside_evaluation']}", "", f"**The direction of reading.** {x['direction']}", "",
+                  f"**What is open.** {x['open']}", ""]
+        L += [f"A title a body conferred: the Swedish Academy, 8 October 2026, \"for her bold and inventive oeuvre that, in playful dialogue "
               "with the classical tradition, has created new forms for contemporary literature.\" The archive's mantle object "
-              f"([#1670]({A}/s/records/1670/)) specifies what the title names as the operations the work bears, each located and graded, "
-              "and records a dated determination on the motivation. Tables `operations`, `determinations`, `watch`; reception kept apart in `reception`.", "",
+              f"([#1670]({A}/s/records/1670/)) records a dated determination on the motivation, read against the operations the work "
+              "bears, each located and graded. Tables `determinations`, `operations`, `watch`, `readings`; reception kept apart in `reception`.", "",
               f"**The standard.** {x['standard']}", "",
               "| operation | work | grade | nearest term of the motivation | kept at the motivation's grain | lost |", "|---|---|---|---|---|---|"]
         for o in ops:
@@ -280,6 +289,25 @@ def card(d, counts):
         for w_ in watch:
             L.append(f"| {w_['address']} | {w_['surface']} | {w_['operation_composed']} | {w_['motivation_terms']} | {w_['nobel']} |")
         L.append("")
+        if x.get("collapses"):
+            L += ["**The collapses.** What a reading of this determination can do in place of it, each with the record it fails. A reading "
+                  "that commits one has evaluated something other than the sentence.", "",
+                  "| code | collapse | what happens | the record |", "|---|---|---|---|"]
+            for c in x["collapses"]:
+                L.append(f"| `{c['code']}` | {c['name']} | {c['what']} | {c['record']} |")
+            a_ = x.get("author_statement")
+            if a_:
+                L += ["", f"**The author, {a_['date']}.** \"{a_['text']}\" {a_['relation_to_record']}"]
+            L.append("")
+        rd = [r for r in d.get("readings", []) if r["mantle"] == "nobel-literature-2026-carson"]
+        if rd:
+            L += ["**Readings of the determination so far.** Table `readings`: a reading outside the packet's rounds, coded for its direction "
+                  "and the collapses it commits.", "",
+                  "| reading | reader | date | direction | determination engaged | collapses | after correction | capture |", "|---|---|---|---|---|---|---|---|"]
+            for r in rd:
+                L.append(f"| `{r['reading_id']}` | {r['reader']} | {r['date']} | {r['direction']} | {'yes' if r['determination_engaged'] else 'no'} | "
+                         f"{', '.join('`' + c + '`' for c in r['collapses'])} | {r['after_correction_state']} | [{r['capture']}]({r['capture_url']}) |")
+            L.append("")
     if mt:
         L += ["## The founded mantle and the witness positions", "",
               f"**The Mantle of the Blind Poet** ([#9]({A}/s/records/9/)) was founded by the holder of the three literary mantles "
@@ -312,13 +340,14 @@ def card(d, counts):
         "operations": "one operation a mantle object specifies the work bears, with work, locus, grade, and what the conferring description keeps and loses",
         "candidates": "one claimant in a contest mantle's field, as the mantle object records it",
         "watch": "one address watched for a mantle object, as observed on its day",
+        "readings": "one reading of a determination by one reader in one session, coded for its direction and the collapses it commits",
         "occupancy": "one recorded occupancy of Septad positions, at one event or listing",
         "doctrine": "one defining record, with what it establishes and a quoted locus",
         "criteria": "one formulation of the evaluative criterion, with its source, what it responds to and supersedes, and the author's ruling",
     }
     for t in ["evaluations", "findings", "cut_corrections", "next_rounds", "rival_searches", "required_works",
               "reception", "democratic_field", "aligned_passages", "succession", "pearl_arrangement",
-              "mantles", "occupancy", "doctrine", "criteria", "determinations", "operations", "candidates", "watch"]:
+              "mantles", "occupancy", "doctrine", "criteria", "determinations", "operations", "candidates", "watch", "readings"]:
         L.append(f"| `{t}` | {counts.get(t, 0)} | {what[t]} |")
     L += ["", "Tables with no rows yet have no config; their fields are in `schema` in the JSON. "
           "Every cell in the JSONL is a string (objects as JSON text) so that rounds coded differently still load; "
