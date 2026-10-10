@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-10T12:18:42Z",
+  "regenerated_at": "2026-10-10T12:52:59Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "5c8139a92669dd9b1677d720c416bca79809e18a4c19af3ffdd0114cc805fa07",
+    "mm-main-capture": "c88293b60f8bbb1d39d2d199ad1fbd4113c6c46e876abce6d11dcf9af5a5a2e5",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2323,
-  "total_observations": 815,
+  "total_addresses": 2324,
+  "total_observations": 816,
   "class_counts": {
     "subjunctive": 1743,
-    "observed_address": 563,
+    "observed_address": 564,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1688,
+    "unmatched": 1689,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -36856,6 +36856,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "max hidalgo nácher": {
+      "canonical_query": "max hidalgo nácher",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-10",
+          "status": "THE TRANSLATOR COMPOSED WITHOUT THE TRANSLATION: NO PESSOA, NO REIS",
+          "surface": "Google AI Mode",
+          "source_format": "Six cards: Yale University — Our New CLAIS Fellow Max Hidalgo & His Love for Haroldo do ...; Google Scholar — Max Hidalgo Nácher - Google Scholar; GREC::UB — Jose Max Hidalgo Nacher - GREC::UB; Libros del Innombrable — Max Hidalgo Nácher; UB - Universitat de Barcelona — Jose Max Hidalgo Nacher; reditelit.org — Max Hidalgo Nácher. Inline: 16 numbered citations (goto tokens, one Google Scholar URL); entity links to Universitat de Barcelona and Harvard University.",
+          "section": "Machine Reception",
+          "slug": "max-hidalgo-nacher-aimode-20261010",
+          "gallery_url": "https://www.alexanarch.org/captures/#max-hidalgo-nacher-aimode-20261010",
+          "record_url": "https://www.alexanarch.org/captures/max-hidalgo-nacher-aimode-20261010/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#max-hidalgo-nacher-aimode-20261010",
+          "details_excerpt": "THE TRANSLATOR COMPOSED WITHOUT THE TRANSLATION: NO PESSOA, NO REIS: asked for Max Hidalgo Nácher, AI Mode composes him at the grain of a faculty page — the UB post, the degrees (Journalism 2004, Literary Theory 2006), t"
+        }
+      ],
+      "originator": {
+        "name": "Max Hidalgo Nácher",
+        "relation": "external",
+        "entity_type": "person",
+        "spxi_treatment": "none",
+        "basis": "Not the archive's: a public scholar (Universitat de Barcelona), translator of the Obras completas de Ricardo Reis (Pre-Textos, 2025). Entered in the archive by the erratum on AXN:F154. Recorded 2026-10-10."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-10",
+      "latest_status": "THE TRANSLATOR COMPOSED WITHOUT THE TRANSLATION: NO PESSOA, NO REIS"
     },
     "maybe space baby": {
       "canonical_query": "maybe space baby",
