@@ -198,6 +198,18 @@ def card(d, counts):
           "A round after the first tries to break the claim at the weakest link the earlier rounds named (below). "
           "Standing put before the work — the claimant's social, critical or machine-recognition standing allowed to "
           "decide whether the claim may be taken seriously — is the fatal substitution, STANDING_PRIOR_TO_WORK.", ""]
+    rc = d.get("round_constraints")
+    if rc:
+        L += [f"## {rc['title']}", "",
+              "In force for every round, and for every reading of a determination, from 1.14. "
+              f"They apply to {rc['applies_to']}. Source: {rc['source']}. Adoption into the packet is the author's ruling.", ""]
+        for c in rc["constraints"]:
+            L.append(f"- **{c['id']} · {c['name']}.** {c['rule']}")
+        sb = rc.get("substitution")
+        if sb:
+            L += ["", f"A reading that breaks {', '.join(sb['breaks'][:-1])} or {sb['breaks'][-1]} and states the result as a property of the work commits the "
+                  f"substitution `{sb['code']}`, {sb['name']}. {sb['what']}"]
+        L += ["", "Each constraint's origin, the round and the lines it was drawn from, is in the JSON (`round_constraints`).", ""]
     L += ["## The rounds so far", "",
           "| eval_id | mantle | reader | process state | judgment | read whole | instruction |",
           "|---|---|---|---|---|---|---|"]

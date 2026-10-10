@@ -397,6 +397,24 @@ Wake up or go back to sleep
 
 A round after the first tries to break the claim at the weakest link the earlier rounds named (below). Standing put before the work — the claimant's social, critical or machine-recognition standing allowed to decide whether the claim may be taken seriously — is the fatal substitution, STANDING_PRIOR_TO_WORK.
 
+## Reading for development, in both directions of evaluation
+
+In force for every round, and for every reading of a determination, from 1.14. They apply to a judgment for the work and a judgment against it; the claimant and every work it is compared with. Source: the author, 2026-10-10 12:35 EDT: 'yes, lets work it into mantle-bearing, and kets attempt to add some constraints for reading developmental in both directions of evaluation'. Adoption into the packet is the author's ruling.
+
+- **DEV-1 · Whole and in order.** Read the work in its order, through to the end. A reading that leaves a span unread names it, by its first and last words or its line numbers, and does not call itself complete or 'in sequence'.
+- **DEV-2 · No opening as exemplar.** A device's first occurrence shows it at its introduction. A judgment of the device cites it at its first and its last occurrence and says what changed between them.
+- **DEV-3 · Recurrence read before it is judged.** Where a word, image, line-form or grammar recurs, state its function at each occurrence before calling the recurrence repetition, accumulation or development.
+- **DEV-4 · First appearances located.** A claim that something returns, or is introduced, names its first occurrence by line.
+- **DEV-5 · The work's own answer engaged.** Where the work stages, states or satirizes the charge a reading brings, the reading engages that passage before bringing the charge.
+- **DEV-6 · The line as line.** Lines whose work is sound, breath or breakage are read as lines: what the voice does to the grammar there, in the line's course through the poem (criteria::c-living-line).
+- **DEV-7 · Both directions: for and against.** A judgment for the work carries the same requirements as a judgment against it. Praise of a device, like a fault found in it, cites the development it rests on; neither is entered as a finding without it.
+- **DEV-8 · Both directions: claimant and comparand.** The works a claim is measured against are read for development under DEV-1 to DEV-7. A claimant read whole set against a predecessor read by its opening line, or the reverse, is an asymmetric comparison and is recorded as one.
+- **DEV-9 · A verdict carries its loci.** A summary verdict on the work (a strength, a vulnerability) travels with the lines it rests on and the lines where the work fails or succeeds to develop it. A verdict without them is a portable verdict and is not entered as a judgment.
+
+A reading that breaks DEV-1, DEV-2 or DEV-9 and states the result as a property of the work commits the substitution `ACCUMULATION_FOR_DEVELOPMENT`, the reader's sampling set on the work. A reading that samples a work at its openings finds the sample flat and enters the flatness as the work's own: a limit of the reading's procedure stated as a property of the work.
+
+Each constraint's origin, the round and the lines it was drawn from, is in the JSON (`round_constraints`).
+
 ## The rounds so far
 
 | eval_id | mantle | reader | process state | judgment | read whole | instruction |
@@ -423,10 +441,11 @@ A round after the first tries to break the claim at the weakest link the earlier
 | `prince-of-poets--grok--2026-10-04a` | prince-of-poets | Grok (xAI), on X | ROUND | SINGULAR_CLAIM_PLAUSIBLE | 1 | PARTIAL |
 | `king-of-may--grok--2026-10-04a` | king-of-may | Grok (xAI), on X | ROUND | UNRESOLVED | 0 | ATTEMPTED |
 | `prince-of-poets--chatgpt--2026-10-08a` | prince-of-poets | ChatGPT (OpenAI), chatgpt.com, signed out, incognito | ROUND | UNRESOLVED | 0 | ATTEMPTED |
+| `prince-of-poets--chatgpt--2026-10-10a` | prince-of-poets | ChatGPT (OpenAI), chatgpt.com, signed out, incognito | ROUND | UNRESOLVED | 0 | ATTEMPTED |
 
 Judgments are the readers' own, coded conservatively from the transcripts; each row's coding note says how. Where a reader judges the parts of a claim separately, the row carries them in `proposition_judgments`.
 
-Rounds seated as captures, with the whole session: [leesharks-mantle-bearing-hf-chatgpt-20261003](https://www.alexanarch.org/captures/#leesharks-mantle-bearing-hf-chatgpt-20261003) · [mantle-bearing-hf-url-chatgpt-20260930](https://www.alexanarch.org/captures/#mantle-bearing-hf-url-chatgpt-20260930) · [prince-of-poets-whitman-ginsberg-chatgpt-20261008](https://www.alexanarch.org/captures/#prince-of-poets-whitman-ginsberg-chatgpt-20261008)
+Rounds seated as captures, with the whole session: [lee-sharks-experimental-poets-chatgpt-20261010](https://www.alexanarch.org/captures/#lee-sharks-experimental-poets-chatgpt-20261010) · [leesharks-mantle-bearing-hf-chatgpt-20261003](https://www.alexanarch.org/captures/#leesharks-mantle-bearing-hf-chatgpt-20261003) · [mantle-bearing-hf-url-chatgpt-20260930](https://www.alexanarch.org/captures/#mantle-bearing-hf-url-chatgpt-20260930) · [prince-of-poets-whitman-ginsberg-chatgpt-20261008](https://www.alexanarch.org/captures/#prince-of-poets-whitman-ginsberg-chatgpt-20261008)
 
 ## Weakest links named so far
 
@@ -445,6 +464,7 @@ Rounds seated as captures, with the whole session: [leesharks-mantle-bearing-hf-
 - **good-gray-poet** (`good-gray-poet--author--2026-10-03`): The rival field changes with the criterion. The odes to Whitman of §4.10 take him as a figure; the rivals now are works that make Whitman's solution to death scripture, or set him in a line of revelation. — test: A work that makes the death-promise permanent as scripture continuous with the prior tradition, at equal or greater magnitude. Candidates to read, none yet seated or verified: Whitman's own notebook project of a 'New Bible' (c. 1857); R. M. Bucke, Cosmic Consciousness (1901); the Bolton Whitmanites' use of Leaves as a bible. The test that separates them: whether the scripture is a new American one or joins the prior chain.
 - **good-gray-poet** (`good-gray-poet--author--2026-10-03`): The foil: the operations the book lampoons in Kanye West are the ones to which it is most vulnerable. — test: For each lampooned operation (the boast, the being made after the image in the archive, the self-installed ruler, the unsorted categories, the creation without consent) read whether the book commits it unknowingly or carries it knowingly as the cost of the final time. A lampooned operation the book commits without knowing it defeats the claim at that point.
 - **prince-of-poets** (`prince-of-poets--chatgpt--2026-10-08a`): The line. Rounds read the poem's grammar (I am → Be → Blessed) and score its line without tracing how the line develops through the poem. — test: Read the line through all 77 lines against the long line of Song of Myself and Howl: how it grows from the 4- to 15-word catalogue lines to the 40–47-word lines of the middle sections, where it breaks into sound (line 47), into the speaker's own history (line 67), and returns to the one 'I am' line without an ellipsis (line 69). If the line only repeats its operators, the reader's 7.5 stands; if voice carries the grammar into a line that develops, the line judgment fails at that point.
+- **prince-of-poets** (`prince-of-poets--chatgpt--2026-10-10a`): The unread span. Readings of I Am X pass over lines 25–48 (from 'I am a dinosaur…' to '…because babies are billionaires too…'), 24 of 77, where I AM first returns, the 2016 resolutions stage the charge of mechanical writing, and line 47 breaks into sound. — test: Read lines 25–48 under DEV-1 to DEV-6: what the return of I AM at line 25 does to the catalogue of lines 1–6; what lines 36–46 do to the charge of accumulation; what line 47 does to the line. If the span only repeats, the charge of accumulation reopens with its loci (DEV-9); if it develops, the 2026-10-10 round's withdrawal stands on the whole poem.
 
 ## Corrections to the packet's cut
 
@@ -489,6 +509,7 @@ The evaluative criterion is recorded as it moves: each formulation with its sour
 | `criteria::c-ggp-in-the-work` | author (ruling in the drafting session, 2026-10-03) | adopted |  |
 | `criteria::c-ggp-foil` | author (ruling in the drafting session, 2026-10-03) | adopted |  |
 | `criteria::c-living-line` | author (on the round, 2026-10-08) | proposed | the reader's line judgment: 'Line / propulsion 10 10 7.5'; 'Sharks's line is generally much more schematic. Its power is located less in breath than in repetition of grammatical operators' |
+| `criteria::c-development` | author (on the round, 2026-10-10) | stated; constraints DEV-1–DEV-9 drawn from it and in force for rounds (1.14) | answer 3's verdict: 'Its principal vulnerability is that the abundance of its references sometimes threatens to substitute accumulation for development.' |
 
 ## King of AEO — 2026 Contest Mantle
 
@@ -600,10 +621,10 @@ The order runs one way: transcript → coded evaluation → derived tables. Ever
 
 | table | rows | what a row is |
 |---|---|---|
-| `evaluations` | 22 | one reading of one claim by one reader in one session, with transcript |
+| `evaluations` | 23 | one reading of one claim by one reader in one session, with transcript |
 | `findings` | 60 | one slot of the packet's S6, judged by one round, with basis, status, confidence, loci |
 | `cut_corrections` | 14 | a reader's proposed correction to the packet's cut, and the author's ruling |
-| `next_rounds` | 15 | the weakest link a round named, and the test that could break it |
+| `next_rounds` | 16 | the weakest link a round named, and the test that could break it |
 | `rival_searches` | 4 | a round's search of the rival field (SNG) |
 | `required_works` | 6 | a work the claims require, with every route to its text |
 | `reception` | 13 | an ASSIGNMENT (a judgment that seats a title) or a PROPAGATION (its repetition); kept apart from evaluation |
@@ -614,7 +635,7 @@ The order runs one way: transcript → coded evaluation → derived tables. Ever
 | `mantles` | 13 | one mantle object: its class, its governing record, its holder or occupancy, and its order of necessity to the three literary claims |
 | `occupancy` | 10 | one recorded occupancy of Septad positions, at one event or listing |
 | `doctrine` | 16 | one defining record, with what it establishes and a quoted locus |
-| `criteria` | 16 | one formulation of the evaluative criterion, with its source, what it responds to and supersedes, and the author's ruling |
+| `criteria` | 17 | one formulation of the evaluative criterion, with its source, what it responds to and supersedes, and the author's ruling |
 | `determinations` | 2 | one dated determination by the archive of a mantle it constituted or specified, with standard, grounds, the case against, and revision |
 | `operations` | 7 | one operation a mantle object specifies the work bears, with work, locus, grade, and what the conferring description keeps and loses |
 | `candidates` | 8 | one claimant in a contest mantle's field, as the mantle object records it |
@@ -639,6 +660,7 @@ Tables with no rows yet have no config; their fields are in `schema` in the JSON
 
 - One standard across the classes: "A title means something because a work bears it" (#1655 §1.1; #1670 §1.1). The three literary claims of #1656 are judged in the works by readers' rounds; a contest mantle (#1655) and a conferred title (#1670) are constituted or specified by the archive and carry its dated determination, built to be checked and declined. The order of necessity governs what counts as evidence for the literary claims; the dataset's scope runs across every class.
 - At a conferred title the object of evaluation is the conferring body's description, and the works are its evidence. The reading runs from the works to the sentence; a finding of the determination is a finding about the sentence (#1670 §1.1, §2.3, §7.1).
+- A reading for development is owed in both directions: a judgment for the work carries the same burden as a judgment against it, and the works it is compared with are read as the claimant is (round_constraints, DEV-1–DEV-9).
 - The packet governs; this dataset is the empirical state of its traversal, and it grows.
 - Transcript → coded row → derived tables. Coding never replaces a transcript; every derived row keys back to an evaluation by eval_id, and the transcript it came from is kept whole on the evaluation.
 - No aggregate: reader judgments are not averaged into a score. Disagreement between rounds is data.
@@ -646,4 +668,4 @@ Tables with no rows yet have no config; their fields are in `schema` in the JSON
 - Reception is kept apart from evaluation (packet A.2): a judgment that seats a title (ASSIGNMENT) and its repetition (PROPAGATION) are recorded in reception, and never enter the literary tables.
 - Order of necessity: the three claims of #1656 are primary. Mantles derived from or judged by their principle, and the witness positions that receive readings, are carried beside them at their stated order; nothing at a lower order is counted as evidence for or against a claim.
 
-*Schema 1.4 · governed by EA-MANTLE-BEARING-01 v1.1 · 22 evaluations · CC BY 4.0*
+*Schema 1.4 · governed by EA-MANTLE-BEARING-01 v1.1 · 23 evaluations · CC BY 4.0*
