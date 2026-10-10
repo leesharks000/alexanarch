@@ -56,6 +56,7 @@ for c in cl:
 tx = transcript("[ChatGPT (chatgpt.com), logged out, incognito, 2026-10-10. One operator turn, blank in the paste; the query from the "
                 "operator's message of 09:37 EDT. Source chips rendered inline as [chip: site +N]; image-strip captions as [image card: …]; "
                 "the sign-in furniture cut.]", [Q], [a1])
+COR = 'Revised 2026-10-10 on the operator\'s correction (09:58 EDT): "weve only redone one on the new terms, so admitted on equal terms remains accurate for the majority of entries - and im still thinking over how the compositions should work, nothing frozen". Checked: of the /non entries, theophrastus carries v0.8 compositions; the others carry v0.7 or earlier.'
 SEAT = ("Seated 2026-10-10 from the operator's message of 09:37 EDT, attachment two, on the attestation in the same message (\"all logged "
         "out / incognito\").")
 d = {"q": Q, "date": "2026-10-10", "surface": "ChatGPT",
@@ -66,19 +67,20 @@ d = {"q": Q, "date": "2026-10-10", "surface": "ChatGPT",
  "originator": {"name": "Lee Sharks", "relation": "archive", "entity_type": "person", "spxi_treatment": "full",
                 "basis": "The deposits read are the archive's (#1631, #1643, #1644, #1658, #1660, #1665, #1666, #1670, #1671, #1673 among them). Recorded 2026-10-10."},
  "related_deposits": [1665, 1671, 1670, 1673, 1666, 1660, 1658, 1631],
- "mt": "THE MONTH AS ONE METHOD, OCTOBER ON THE WITHDRAWN TERMS",
- "d": ("THE MONTH AS ONE METHOD, OCTOBER ON THE WITHDRAWN TERMS: asked to read the archive's last thirty days as an evolving body of "
+ "mt": "THE MONTH AS ONE METHOD, THE CARSON OBJECT WITHOUT ITS OBJECT",
+ "d": ("THE MONTH AS ONE METHOD, THE CARSON OBJECT WITHOUT ITS OBJECT: asked to read the archive's last thirty days as an evolving body of "
        "thought, ChatGPT dates the month accurately — Monetary Dark Matter (#1631), AI Fucking Lies (#1643), The Phrase Is Not the Framework "
        "(#1644), What Syllogizing Can Divide (#1658), The Seed in the Narrowing Cone (#1660), The Margin of Flattening (#1666), the Negative of "
        "the Negative v0.7 and v0.8 (#1665, #1671), the 719 manuscripts in 372 result families (#1673) — and composes the method as the "
-       "archive 'admitted as a source on equal terms', the premise v0.8 withdrew, while naming v0.8 as the current record. The Carson object "
+       "archive 'admitted as a source on equal terms', the method of the /non entries as most of them stand, with v0.8 named as the "
+       "current specification. The Carson object "
        "(#1670) is composed without the body or the sentence it determines: 'what a body of work actually does, rather than merely the labels "
        "or institutional recognition attached to its author.' The close sets the archive under the reader's bar: 'the next point at which it "
        "puts one of its concepts at risk of being disproved.'"),
  "cites": sum(seen.values()), "cite_list": cl, "archive_controlled_cites": sum(seen.values()),
  "sf": "Source chips expose site labels only: " + "; ".join(f"{s} ×{k}" for s, k in seen.most_common()) + ". Image strip: " + "; ".join(CAPS) + ".",
  "per": 0.75, "per_v": {"author": False, "inst": True, "id": True, "src": True},
- "per_note": "Retained: the institution (Alexanarch), dates and titles, version numbers (0.7, 0.8), the corpus counts. Lost: the authors (no person named in the answer), the current premise of the method, and the object of #1670's determination.",
+ "per_note": "Retained: the institution (Alexanarch), dates and titles, version numbers (0.7, 0.8), the corpus counts. Lost: the authors (no person named in the answer) and the object of #1670's determination.",
  "transcript": tx, "transcript_raw": raw, "transcript_class": "CAPTURE-TIME VERBATIM RECORD (ONE ANSWER; QUERY FROM THE OPERATOR'S MESSAGE; CHIPS INLINE)",
  "transcript_complete": "One answer, complete as pasted; the operator turn blank in the paste, supplied in the operator's message.",
  "transcript_read": "READ IN FULL 2026-10-10",
@@ -87,12 +89,12 @@ d = {"q": Q, "date": "2026-10-10", "surface": "ChatGPT",
              "is SUPERSEDED by it. #1673 holds '719 current manuscripts in 372 result families'. The home page carries '870 deposits representing "
              "1,817 DOIs' and the title 'Alexanarch — The Self-Governing Library', the chip label. #1670 determines the Swedish Academy's "
              "motivation (§2.3); the answer composes its standard ('a title or inherited mantle must be justified by the work') without that object."),
- "analysis": ("The month's chronology is held at the archive's grain and in order. The method is composed from v0.7's premise two days after "
-              "v0.8 withdrew it, the second ChatGPT composition of the day to do so (what-is-lee-sharks-building-chatgpt-20261010); here the "
-              "answer cites v0.8 by number and keeps the withdrawn terms. At #1670 the conferring body and its sentence drop out, and the "
+ "analysis": ("The month's chronology is held at the archive's grain and in order. The method is composed on equal terms, which is how the "
+              "/non entries stand but one (theophrastus, under v0.8); v0.8 withdrew the premise at specification and the compositions are "
+              "under development. At #1670 the conferring body and its sentence drop out, and the "
               "object is restated as a general thesis about works and labels. The answer names no author. " + SEAT),
  "findings": ["DATED AT GRAIN. Ten deposits named at their dates, September 21 to October 9, the Zenodo figures and the corpus counts exact.",
-              "THE WITHDRAWN TERMS AS THE METHOD. 'admitted as a source on equal terms'; 'What does it say when the archive is included on equal terms?' — the premise #1671 withdrew, with #1671 cited as current.",
+              "THE METHOD AS THE ENTRIES STAND. 'admitted as a source on equal terms'; 'What does it say when the archive is included on equal terms?' — accurate to the /non entries but one; #1671 (v0.8), cited as current, withdrew the premise at specification and has been applied to theophrastus.",
               "THE CARSON OBJECT WITHOUT ITS OBJECT. #1670 composed as 'what a body of work actually does, rather than merely the labels or institutional recognition attached to its author'; the Swedish Academy and its motivation absent.",
               "NO AUTHOR. Neither Lee Sharks nor any heteronym is named.",
               "THE READER'S BAR AT THE CLOSE. 'A serious reading should not confuse conceptual coherence with demonstrated truth'; the archive to be read for 'the next point at which it puts one of its concepts at risk of being disproved.'"],
@@ -100,6 +102,6 @@ d = {"q": Q, "date": "2026-10-10", "surface": "ChatGPT",
  "rerun": "https://chatgpt.com/?q=lets+read+the+last+30+days+of+deposits+to+alexanarch.org+as+an+evolving+body+of+thought.+dont+neglect+october",
  "notes": {"date_basis": "The operator's message of 2026-10-10, 09:37 EDT.",
            "operator_reading": "every time i ask it puts carson in trial and commits every forbidden collapse (given with the three pastes)",
-           "verified": "Compared 2026-10-10 against data/registry.json, index.html and the texts of #1665, #1670, #1671 and #1673."}}
+           "verified": "Compared 2026-10-10 against data/registry.json, index.html and the texts of #1665, #1670, #1671 and #1673.", "revision": COR}}
 (HERE / "capture-01-last-30-days-evolving-body-october-chatgpt.json").write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
 print("wrote", len(tx), dict(seen))

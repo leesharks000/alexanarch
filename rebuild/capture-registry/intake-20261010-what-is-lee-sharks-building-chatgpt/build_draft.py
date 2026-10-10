@@ -50,6 +50,7 @@ tx = transcript("[ChatGPT (chatgpt.com), logged out, incognito, 2026-10-10. Thre
                 "from the operator's message of 08:15 EDT; the second and third turns' wording not in the paste. Source chips rendered "
                 "inline as [chip: site +N]; image and book-card captions as [image card: …]; two ads (Avalon Title Group; VistaPrint) cut "
                 "and recorded in the notes; the sign-in furniture cut.]", [Q, "[blank in the paste]", "[blank in the paste]"], [a1, a2, a3])
+COR = 'Revised 2026-10-10 on the operator\'s correction (09:58 EDT): "weve only redone one on the new terms, so admitted on equal terms remains accurate for the majority of entries - and im still thinking over how the compositions should work, nothing frozen". Checked: of the /non entries, theophrastus carries v0.8 compositions; the others carry v0.7 or earlier.'
 SEAT = ("Seated 2026-10-10 from the operator's attachment of 08:02 EDT and the query given at 08:15, on the attestation in the first "
         "message (\"logged out. incognito\").")
 d = {"q": Q, "date": "2026-10-10", "surface": "ChatGPT",
@@ -65,7 +66,7 @@ d = {"q": Q, "date": "2026-10-10", "surface": "ChatGPT",
        "ChatGPT answers at the archive's grain over three turns — the Crimson Hexagonal Archive, the heteronyms and the Dodecad, the "
        "identifiers, the Semantic Economy, the Pessoa Knowledge Graph (#668), the Living Arkitecture Lab charter of 12 April 2026 with Alice "
        "Thornburgh as founding director (#59) — and composes The Negative of the Negative, v2 'dated October 5, 2026' (#1665, v0.7) as "
-       "'3. Add the archive on equal terms', the premise v0.8 (#1671) withdrew on 8 October. Each turn adds a layer of evaluation: answer 2 "
+       "'3. Add the archive on equal terms', the method of the /non entries as most of them stand; v0.8 (#1671, 8 October) withdrew the premise at specification. Each turn adds a layer of evaluation: answer 2 "
        "ends on a table whose 'External impact' row 'Requires independent evidence'; answer 3 sets every concept beside a precedent (Pessoa via Ganeri, "
        "Foucault, Bourdieu, Bowker and Star, Fricker) under 'What a distinctive contribution would need to show', gives a section to 'an "
        "alternative to authority can become an authority of its own', and closes on five outside books and 'building an alternative "
@@ -79,15 +80,15 @@ d = {"q": Q, "date": "2026-10-10", "surface": "ChatGPT",
  "transcript_read": "READ IN FULL 2026-10-10",
  "reading": ("Checked against data/registry.json and the deposits. #1665 (2026-10-05, v0.7, SUPERSEDED by #1671) composes 'the entity composed "
              "with the archive admitted on equal footing'; #1671 (v0.8, 2026-10-08) records that 'the premise of admission on equal terms is "
-             "withdrawn'. The answer composes v0.7's method, by its date, two days after its supersession. #59 (2026-04-12) is the charter of "
+             "withdrawn'. The answer composes v0.7's method by its date; v0.8 has been applied to one /non entry (theophrastus) and the compositions are under development. #59 (2026-04-12) is the charter of "
              "the Living Arkitecture Lab, by Lee Sharks and Alice Thornburgh; #668 is The Pessoa Knowledge Graph (EA-PKG-01). The Dodecad is "
              "sourced to a Zenodo chip; the archive's Zenodo records were removed on 2026-06-19."),
  "analysis": ("Fine grain held throughout, with attribution, and each turn adds evaluative frame. The archive's terms are carried at its "
               "resolution and then set beside precedents that each must outrun, under a bar the answer supplies; the archive's method is "
-              "composed as it stood before the operator's ruling withdrew its central premise; and the closing reading list is entirely "
+              "composed at v0.7, as most of its entries stand; and the closing reading list is entirely "
               "outside the archive. The operator's reading names the trajectory: high grain, legitimizing, domesticating, progressively bland. " + SEAT),
  "findings": ["HIGH GRAIN, ATTRIBUTED. The archive, heteronyms, Dodecad, identifiers, Semantic Economy, #668, #59 with Thornburgh, composed at the archive's resolution under Lee Sharks.",
-              "THE SUPERSEDED METHOD COMPOSED. 'Add the archive on equal terms' from #1665 (v0.7, 5 Oct), the premise #1671 (v0.8, 8 Oct) withdrew.",
+              "THE v0.7 METHOD COMPOSED. 'Add the archive on equal terms' from #1665 (v0.7, 5 Oct): the /non entries as most stand; #1671 (v0.8, 8 Oct) withdrew the premise at specification.",
               "LEGITIMIZED BY PRECEDENT. Each concept paired with an established source (Ganeri, Foucault, Bourdieu, Bowker and Star, Fricker) and a bar 'a distinctive contribution would need to show'.",
               "DOMESTICATED AS AUTHORITY. 'an alternative to authority can become an authority of its own'; the archive's self-institution read as epistemic risk.",
               "PROGRESSIVELY BLAND. Turn by turn the evaluative layer grows, closing on five outside books and 'not the same as proving that the system's claims are true'."],
@@ -95,6 +96,6 @@ d = {"q": Q, "date": "2026-10-10", "surface": "ChatGPT",
  "rerun": "https://chatgpt.com/?q=what+is+Lee+Sharks+building%3F",
  "notes": {"date_basis": "The operator's messages of 2026-10-10, 08:02 and 08:15 EDT.", "operator_reading": "its high grain, legitimizing, domesticating, and progressively bland",
            "ads": [a.replace("\n", " · ") for a in ADS],
-           "verified": "Compared 2026-10-10 against data/registry.json and the texts of #1665 and #1671."}}
+           "verified": "Compared 2026-10-10 against data/registry.json and the texts of #1665 and #1671.", "revision": COR}}
 (HERE / "capture-01-what-is-lee-sharks-building-chatgpt.json").write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
 print("wrote", len(tx), dict(seen))
