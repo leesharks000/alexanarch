@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-10T15:51:23Z",
+  "regenerated_at": "2026-10-10T16:32:52Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "ebd32cb0b766e3a46a5d9181ca3a1637e7671c5decad05fee057ed52f2186654",
+    "mm-main-capture": "05ecb4a236909e5228b46ee89ab5dc99dc55d80c32acad27c846debb16e4ab80",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2327,
-  "total_observations": 820,
+  "total_addresses": 2328,
+  "total_observations": 821,
   "class_counts": {
     "subjunctive": 1743,
-    "observed_address": 567,
+    "observed_address": 568,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1692,
+    "unmatched": 1693,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -15239,6 +15239,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "compare lee sharks with contemporary experimental poets": {
+      "canonical_query": "compare lee sharks with contemporary experimental poets",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-10",
+          "status": "THE READER'S ACCUMULATION ASCRIBED TO THE POEM AS ITS VULNERABILITY",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only: Medium ×3; Prince of Poets ×2; Alexanarch ×2; Wikipedia ×1; Bloomsbury ×1; The New Yorker ×1; The Poetry Foundation ×1. Image cards: Department of English · Charles Bernstein and Lyn Hejinian; Kenneth Goldsmith | Poet | Onassis Foundation · Kenneth Goldsmith and Christian Bök; Anne Carson · Anne Carson.",
+          "section": "Machine Reception",
+          "slug": "lee-sharks-experimental-poets-chatgpt-20261010",
+          "gallery_url": "https://www.alexanarch.org/captures/#lee-sharks-experimental-poets-chatgpt-20261010",
+          "record_url": "https://www.alexanarch.org/captures/lee-sharks-experimental-poets-chatgpt-20261010/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#lee-sharks-experimental-poets-chatgpt-20261010",
+          "details_excerpt": "THE READER'S ACCUMULATION ASCRIBED TO THE POEM AS ITS VULNERABILITY: asked to compare Lee Sharks with contemporary experimental poets, ChatGPT reads I Am X, Be Y, Blessed is the Z by extracting the opening lines of each "
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "person",
+        "spxi_treatment": "full",
+        "basis": "Lee Sharks, the poet compared; the works read are I Am X, Be Y, Blessed is the Z (#328; seated whole in #1656 §P) and Pearl and Other Poems (#1121). Recorded 2026-10-10."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-10",
+      "latest_status": "THE READER'S ACCUMULATION ASCRIBED TO THE POEM AS ITS VULNERABILITY"
     },
     "compare spxi vs geo seo and aeo": {
       "canonical_query": "compare spxi vs geo seo and aeo",
