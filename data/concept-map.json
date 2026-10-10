@@ -3,17 +3,17 @@
   "name": "Concept Map — work-level identity and current-version resolution",
   "description": "Restores the concept-identifier function lost with the terminated Zenodo account. Alexanarch mints a fresh hex per deposit, so every version of a work is an independent object with no link to its siblings; a reader arriving at an old version cannot learn that a newer one exists. Each concept here names a work and points at its current version. Programme families — distinct works sharing an identifier — are listed separately and carry no version pointer, because conflating the two would resolve one work to another. Every family records the basis on which it was detected so any confidence tier can be discarded independently.",
   "generated_by": "scripts/build_concept_map.py",
-  "generated_at": "2026-10-09T22:33:08Z",
+  "generated_at": "2026-10-10T01:23:00Z",
   "totals": {
-    "deposits": 1672,
-    "concepts": 92,
-    "deposits_in_concepts": 220,
-    "singletons": 1452,
+    "deposits": 1673,
+    "concepts": 93,
+    "deposits_in_concepts": 222,
+    "singletons": 1451,
     "needs_review": 15,
-    "program_families": 52
+    "program_families": 53
   },
   "basis_counts": {
-    "version/declared": 35,
+    "version/declared": 36,
     "version/implicit": 37,
     "version/explicit": 6,
     "version/superseded": 2,
@@ -805,6 +805,49 @@
           "superseded_marker": false,
           "is_current": true,
           "record_url": "https://www.alexanarch.org/s/records/1101/"
+        }
+      ]
+    },
+    {
+      "concept_id": "series-ea-corpora-17",
+      "concept_url": "https://www.alexanarch.org/s/concept/series-ea-corpora-17/",
+      "title_base": "the seventeenth seating the openai mathematics release of october 2026 719 manuscripts under one corporate author line seated at a fixed commit with the record of its authorship the corporate tag",
+      "basis": "version/declared",
+      "version_series_id": "SERIES-EA-CORPORA-17",
+      "root_axn_hex": "06EE",
+      "ea_identifiers": [
+        "EA-CORPORA-17"
+      ],
+      "member_count": 2,
+      "needs_review": false,
+      "current": {
+        "deposit_number": 1673,
+        "axn": "AXN:06EF.DATASET.🪝⚡⏫💎🍀🔮",
+        "title": "EA-CORPORA-17 — The Seventeenth Seating: The OpenAI Mathematics Release of October 2026 — 719 Manuscripts Under One Corporate Author Line, Seated at a Fixed Commit, with the Record of Its Authorship (v1.1 — the corporate tag)",
+        "date": "2026-10-09",
+        "version": "1.1",
+        "record_url": "https://www.alexanarch.org/s/records/1673/"
+      },
+      "versions": [
+        {
+          "deposit_number": 1672,
+          "axn": "AXN:06EE.DATASET.🗝️↙️▶️🍃🎇↖️",
+          "title": "EA-CORPORA-17 — The Seventeenth Seating: The OpenAI Mathematics Release of October 2026 — 719 Manuscripts Under One Corporate Author Line, Seated at a Fixed Commit, with the Record of Its Authorship",
+          "date": "2026-10-09",
+          "version": "1.0",
+          "superseded_marker": true,
+          "is_current": false,
+          "record_url": "https://www.alexanarch.org/s/records/1672/"
+        },
+        {
+          "deposit_number": 1673,
+          "axn": "AXN:06EF.DATASET.🪝⚡⏫💎🍀🔮",
+          "title": "EA-CORPORA-17 — The Seventeenth Seating: The OpenAI Mathematics Release of October 2026 — 719 Manuscripts Under One Corporate Author Line, Seated at a Fixed Commit, with the Record of Its Authorship (v1.1 — the corporate tag)",
+          "date": "2026-10-09",
+          "version": "1.1",
+          "superseded_marker": false,
+          "is_current": true,
+          "record_url": "https://www.alexanarch.org/s/records/1673/"
         }
       ]
     },
@@ -4509,6 +4552,28 @@
           "title": "EA-CORPORA-15 — The Fifteenth Seating: The Agent Swarms of 2026 — the DSEWiki Boards Whole, with the Record of Their Deletion (v1.1 — the swarm's words)",
           "date": "2026-09-27",
           "record_url": "https://www.alexanarch.org/s/records/1640/"
+        }
+      ]
+    },
+    {
+      "program_id": "EA-CORPORA-17",
+      "program_url": "https://www.alexanarch.org/s/program/ea-corpora-17/",
+      "note": "Distinct works sharing a programme identifier. This is a collection, not a version family: no current-version pointer is asserted.",
+      "member_count": 2,
+      "members": [
+        {
+          "deposit_number": 1672,
+          "axn": "AXN:06EE.DATASET.🗝️↙️▶️🍃🎇↖️",
+          "title": "EA-CORPORA-17 — The Seventeenth Seating: The OpenAI Mathematics Release of October 2026 — 719 Manuscripts Under One Corporate Author Line, Seated at a Fixed Commit, with the Record of Its Authorship",
+          "date": "2026-10-09",
+          "record_url": "https://www.alexanarch.org/s/records/1672/"
+        },
+        {
+          "deposit_number": 1673,
+          "axn": "AXN:06EF.DATASET.🪝⚡⏫💎🍀🔮",
+          "title": "EA-CORPORA-17 — The Seventeenth Seating: The OpenAI Mathematics Release of October 2026 — 719 Manuscripts Under One Corporate Author Line, Seated at a Fixed Commit, with the Record of Its Authorship (v1.1 — the corporate tag)",
+          "date": "2026-10-09",
+          "record_url": "https://www.alexanarch.org/s/records/1673/"
         }
       ]
     },

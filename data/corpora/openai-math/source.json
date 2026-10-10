@@ -40,15 +40,29 @@
   "as_recorded_by_the_publisher": [
    "Author line 'OpenAI' on all 749 manuscript READMEs; \\author{OpenAI} in all 751 \\author fields of the LaTeX sources. No manuscript names a person.",
    "No LaTeX source carries an acknowledgments section of its own (searched: \\section{Acknowledgments}, \\begin{acknowledgments}, 'we thank', 'grateful').",
+   "The producing system is unnamed. README.md names it only as 'an internal OpenAI model' ('This repository contains mathematical manuscripts and supporting proof artifacts produced by an internal OpenAI model.') and 'an unreleased internal OpenAI model'; its measure of effort is 'three hours of ChatGPT Pro thinking compute with that model'. No model name, version or configuration appears in README.md, history.md, overview.tex or the LaTeX source of the reasoning summaries.",
    "The release records other mathematicians' credit to machines, in its own footnotes and paragraphs: 'Liu and Luo explicitly acknowledge assistance from ChatGPT Codex' (A linear list-coloring bound in terms of the Hadwiger number, build/sections/01-introduction.tex:83–84); 'Joshi et al. acknowledge ChatGPT's contribution to a lemma's proof idea and other interactions; Kintali discloses assistance from Claude, ChatGPT, and two open-weight models' (Regular trajectories, pruning and quantum parity, build/sections/01-introduction.tex:169–171); 'Houdayer and Marrakchi credit GPT-5.6 Sol with counterexample exploration and an initial strict-outerness proof ... They report checking and rewriting those proofs and retaining responsibility for their work' (Expected amenable subalgebras preserving core commutants, build/paper.tex:251–256). (Quoted with TeX markup and line breaks removed.) The credit runs from named people to models; the release's own author line names no person.",
+   "The release holds other papers to the standard its byline does not meet. Of Liu and Luo: 'their declaration does not identify an underlying model version' (A linear list-coloring bound in terms of the Hadwiger number, build/sections/01-introduction.tex:83–85). Of Joshi et al. and Kintali: 'Neither source specifies model versions.' (Regular trajectories, pruning and quantum parity, build/sections/01-introduction.tex:172). Where a paper does name its models, the release repeats the names (GPT-5.6 Sol, GPT-6 Astra). Its own author line names no model and no person.",
    "The procedure: 'The vast majority of results were obtained with the same procedure using an unreleased internal OpenAI model.' The exceptions (the zeta zero-free region, Hodge for CM abelian varieties) are named and their procedure is not described.",
    "One human edit is stated ('the writeup for the Re(s) > 11/12 zero-free region ... was human edited for readability'); the editor is not named.",
    "The approximately 4,000 problems posed are not published, nor the prompts; reasoning summaries are published for 10 of 372 families and are described as abridged.",
    "The Lean dependency patches carry the only thanks in the release: 'We thank the authors of these packages for their work.' (lean/patches/README.md)",
    "The manuscripts cite prior literature (521 .bib files in preprints/)."
   ],
-  "ruling": "MANUS, 2026-10-09: 'this seems to me to be provenance-erased work. openai's models were working in collaboration with human mathematicians, and thats been liquidated for corporate power, as ahm says.' The seat records the release as published and states its authorship record as data, above.",
-  "loci_verified": "Every quotation in this record was located in the seated bytes on 2026-10-09 (whitespace normalized; \\emph{} removed)."
+  "ruling": "MANUS, 2026-10-09: 'this seems to me to be provenance-erased work. openai's models were working in collaboration with human mathematicians, and thats been liquidated for corporate power, as ahm says.' And, the same evening: 'its not just that somewhere along the way human mathematicians probably participated in the process. even if it was genuinely autonomous selection and solution, collapsing the provenance into just the corporate tag would still be problematic'. The seat records the release as published and states its authorship record as data: what the corporate tag stands in for — the producing system, the selection of problems, the intermediate work, the people, and who decided what counted as a result — is listed above, each item located in the seated bytes.",
+  "loci_verified": "Every quotation in this record was located in the seated bytes on 2026-10-09 (whitespace normalized; \\emph{} removed).",
+  "rulings": [
+   {
+    "date": "2026-10-09",
+    "by": "MANUS",
+    "text": "this seems to me to be provenance-erased work. openai's models were working in collaboration with human mathematicians, and thats been liquidated for corporate power, as ahm says."
+   },
+   {
+    "date": "2026-10-09",
+    "by": "MANUS",
+    "text": "its not just that somewhere along the way human mathematicians probably participated in the process. even if it was genuinely autonomous selection and solution, collapsing the provenance into just the corporate tag would still be problematic"
+   }
+  ]
  },
  "why_seated": "The largest single release of machine-produced mathematics to date, published under one corporate author line, with a share of its claims formally stated against standard Mathlib and checkable by anyone. Seated so the release can be read, cited and checked at the bytes of a fixed commit, whatever the publisher later revises, moves or withdraws; and so its record of authorship stands beside it as data. The archive's independent kernel check of three headline results (scripts/verify_openai_math/, workflow verify-openai-math) reads from the same commit.",
  "rulings": [
