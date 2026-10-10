@@ -3,7 +3,7 @@
 **Lee Sharks**
 *Issued before the erratum it withdraws, which follows it on the shelf. Draft, 10 October 2026.*
 
-**Reference:** Sigil, J. (Forthcoming, the next deposit). "Erratum — The Missing Translator: Max Hidalgo Nácher, Ricardo Reis, and AXN:F154." Alexanarch.
+**Reference:** Sigil, J. (Forthcoming, the next deposit). "Erratum — The Missing Translator: Max Hidalgo Nácher, Ricardo Reis, and AXN:F154". Alexanarch.
 
 The forthcoming erratum states that the archive does not know Max Hidalgo Nácher. That statement has been withdrawn. The erratum will nevertheless appear, since its publication is what ends the ignorance it records.
 
