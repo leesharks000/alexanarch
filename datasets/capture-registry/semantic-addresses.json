@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-10T01:49:08Z",
+  "regenerated_at": "2026-10-10T12:18:42Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "924ca9fc152aad7ce66a2751ebb27d375e77f57aac68e1d1c08e3d741c02d52f",
+    "mm-main-capture": "5c8139a92669dd9b1677d720c416bca79809e18a4c19af3ffdd0114cc805fa07",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2322,
-  "total_observations": 814,
+  "total_addresses": 2323,
+  "total_observations": 815,
   "class_counts": {
     "subjunctive": 1743,
-    "observed_address": 562,
+    "observed_address": 563,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1687,
+    "unmatched": 1688,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -64346,6 +64346,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-09-10",
       "latest_status": "CAPTURE"
+    },
+    "what is lee sharks building?": {
+      "canonical_query": "what is lee sharks building?",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-10",
+          "status": "HIGH GRAIN, LEGITIMIZING, DOMESTICATING, AND PROGRESSIVELY BLAND",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only: Alexanarch ×4; Zenodo ×4; Michel Foucault, Info. ×3; Medium ×2; Datasets at Hugging Face ×2; Governed Operating Surface ×1; TGRS ×1; Prince of Poets ×1; Goodreads ×1; Crimson Hexagonal Archive ×1; GitHub ×1; Oxford Academic ×1; MIT Press ×1. Image and book cards: The Library of Babel and Infinite Monkeys · Open Readings · HUM 11c Omeka; METADATA PACKET FOR AI INDEXING. Title: Pearl and Other Poems: Front… | by Lee Sharks | Medium; Heterónimos e Ortónimo - Fernando Pessoa; Biofabricated Materials - RTF | Rethinking The Future; Language, Counter-Memory, Practice by Michel Foucault; Jonardon Ganeri - University of Toronto; Language and Symbolic Power | Pierre Bourdieu, John B. Thompson; Sorting Things Out, Geoffrey C Bowker | 9780262522953 | Boeken | bol; \"Epistemic Injustice\" auf Englisch kaufen.",
+          "section": "Machine Reception",
+          "slug": "what-is-lee-sharks-building-chatgpt-20261010",
+          "gallery_url": "https://www.alexanarch.org/captures/#what-is-lee-sharks-building-chatgpt-20261010",
+          "record_url": "https://www.alexanarch.org/captures/what-is-lee-sharks-building-chatgpt-20261010/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#what-is-lee-sharks-building-chatgpt-20261010",
+          "details_excerpt": "HIGH GRAIN, LEGITIMIZING, DOMESTICATING, AND PROGRESSIVELY BLAND (the operator's reading): asked what Lee Sharks is building, ChatGPT answers at the archive's grain over three turns — the Crimson Hexagonal Archive, the h"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "person",
+        "spxi_treatment": "full",
+        "basis": "Lee Sharks is the archive's author; the works composed are the archive's deposits (#1665, #1671, #59, #668 among them). Recorded 2026-10-10."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-10",
+      "latest_status": "HIGH GRAIN, LEGITIMIZING, DOMESTICATING, AND PROGRESSIVELY BLAND"
     },
     "what is lee sharks worth? / what is the estimated worth of his semantic infrastructure? / yes, lets do so": {
       "canonical_query": "what is lee sharks worth? / what is the estimated worth of his semantic infrastructure? / yes, lets do so",
