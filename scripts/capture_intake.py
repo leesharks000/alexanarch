@@ -154,6 +154,13 @@ def route(cap, registry):
 
 
 # ------------------------------------------------------------ 3. NORMALISE
+# MATCH IS THE ADDRESS'S, AND IT IS READ OFF THE ADDRESS (operator, 2026-10-11: "exact is quoted. broad is unquoted."). A phrase
+# in double quotation marks is the exact-match operator. The mt slot had come to hold CAPTURE, ADOPTION and descriptive titles, so
+# the match type was recorded for 56 addresses of 574; it has its own field now and is never typed in by hand.
+QUOTED = re.compile(r'["\u201c\u201d][^"\u201c\u201d]{2,}["\u201c\u201d]')
+def match_of(q):
+    return "EXACT MATCH" if QUOTED.search(q or "") else "BROAD MATCH"
+
 def extract_defects(obs):
     """The same defect vocabulary, computed the same way, on every capture."""
     d = []
@@ -265,6 +272,7 @@ def seat_flat(draft, registry, schema):
     e["n_observations"] = 1; e["observations"] = e.get("observations") or []
     e["d_full"] = e.get("d_full") or e["d"]; e["d_truncated"] = False
     e["mt"] = e.get("mt") or "CAPTURE"; e["cites"] = e.get("cites")
+    e["match"] = match_of(draft["q"]); e["match_note"] = None
     e["transcript_class"] = e.get("transcript_class") or "CAPTURE-TIME VERBATIM RECORD"; e["transcript_complete"] = e.get("transcript_complete") or "complete as supplied"; e["transcript_read"] = e.get("transcript_read") or ("READ IN FULL " + draft["date"])
     e["findings"] = list(draft.get("findings") or []); e["defects"] = _flat_defects(e)
     e["citable_unit"] = e.get("citable_unit") or "address — the exact issued string on one surface, per the Surface Rule (MANUS, 2026-08-15)"
