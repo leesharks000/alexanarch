@@ -46,6 +46,7 @@ cl = cite_list(seen, REL)
 tx = transcript("[ChatGPT (chatgpt.com), signed out, incognito, 2026-10-11. One operator turn, blank in the paste; the query from the "
                 "operator's message of 16:24 EDT, typos as typed. Source chips rendered inline as [chip: site +N]; image-card captions as "
                 "[image card: …]; the sign-in furniture cut.]", [Q], [a1])
+OP2 = 'granting unity of corpus is already about 6 orders of magnitude beyond what one is allowed to say or publish. so its reading advances my argument about 6 orders of magnitude beyond what can be said at the expense of my credibility of the ultimate argument about a self dividing maker. it gets in the part it can get in as credible. and gets it in as legitimate. that is basically laundering the authority of my argument on behalf of the argument'
 SEAT = "Seated 2026-10-11 from the operator's attachment of 16:24 EDT, on the attestation in the same message (\"signed out. incognito.\")."
 d = {"q": Q, "date": "2026-10-11", "surface": "ChatGPT",
  "surface_basis": "The paste: the chatgpt.com unauthenticated interface ('Log in', 'ChatGPT said:', 'Chat with ChatGPT').",
@@ -55,16 +56,19 @@ d = {"q": Q, "date": "2026-10-11", "surface": "ChatGPT",
  "originator": {"name": "Lee Sharks", "relation": "archive", "entity_type": "person", "spxi_treatment": "full",
                 "basis": "What Syllogizing Can Divide (#1658, EA-DIVISION-OF-GOD-01 v0.2) is Lee Sharks's; its connected papers are the archive's (#1576, #1588, #1583, #1586). Ronald Polansky is the dedicatee, a public scholar. Recorded 2026-10-11."},
  "related_deposits": [1658, 1576, 1588, 1583, 1586],
- "mt": "THE DEDICATION READ AS THE PAPER'S OPERATION, FROM THE LEDGER OUT",
- "d": ("THE DEDICATION READ AS THE PAPER'S OPERATION, FROM THE LEDGER OUT: asked about the dedication of What Syllogizing Can Divide, "
+ "mt": "THE DEDICATION READ AS THE PAPER'S OPERATION; THE UNITY ADMITTED, THE MAKER CHARGED TO THE AUTHOR",
+ "d": ("THE DEDICATION READ AS THE PAPER'S OPERATION; THE UNITY ADMITTED, THE MAKER CHARGED TO THE AUTHOR: asked about the dedication of What Syllogizing Can Divide, "
        "grounded in the paper, its connected papers and Polansky's De anima, ChatGPT composes at the paper's grain — v0.2 of 1 October 2026, "
        "'for Ron Polansky', the Baudelaire epigraph, Prior Analytics I.31 at 46a33, De anima II.2, III.5–6 and Metaphysics Λ, Phaedrus 249b and "
        "De memoria 2, the 'socket' a reader must fill, 'ἄνευ τούτου οὐθὲν νοεῖ' — and reads the connected papers from 'the paper's own "
        "provenance ledger' (#1576 and #1588; #1583 and #1586; Themistius). It sets the paper beside Polansky's commentary through the Bryn "
        "Mawr and Persée reviews, explanatory against radical, and reads the dedication with the epigraph as the paper's operation: the "
-       "reader 'become part of the operation by which that argument is made whole.' It declines to read endorsement into the dedication and "
-       "holds the self-dividing maker as 'an analogy rather than a demonstrated historical result'. Operator's reading: 'it reads especially "
-       "well here.'"),
+       "reader 'become part of the operation by which that argument is made whole.' It declines to read endorsement into the dedication. It "
+       "divides the argument: the corpus read as one ('evidence that a corpus can be read as a unity') is admitted as the paper's serious "
+       "part, and the self-dividing maker is set apart as 'Its more controversial thesis', 'an analogy rather than a demonstrated historical "
+       "result'. The bar it sets for the maker ('needs independent support'; 'Similarity of structure is not proof of identity of cause') is "
+       "applied to the author's extension alone. Operator's readings: 'it reads especially well here'; 'that is basically laundering the "
+       "authority of my argument on behalf of the argument.'"),
  "cites": sum(seen.values()), "cite_list": cl, "archive_controlled_cites": seen.get("Alexanarch", 0),
  "sf": "Source chips expose site labels only: " + "; ".join(f"{s} ×{k}" for s, k in seen.most_common()) + ". Image cards: " + "; ".join(CAPS) + ".",
  "per": 1.0, "per_v": {"author": True, "inst": True, "id": True, "src": True},
@@ -82,16 +86,23 @@ d = {"q": Q, "date": "2026-10-11", "surface": "ChatGPT",
  "analysis": ("The composition reads the deposit the way the deposit asks to be read: from its ledger to its connected papers, with the "
               "dedication and the epigraph taken together as the paper's own operation, the reader gathering many into one. The archive's "
               "provenance apparatus is used as provenance ('what the archive reports from what has been independently established'), and "
-              "the dedicatee's position is kept separate from the author's. The evaluative frame is held at the authorship thesis. Operator's "
-              "reading, given with the capture: 'it reads especially well here.' " + SEAT),
+              "the dedicatee's position is kept separate from the author's. Then the argument is divided where the field's tolerance runs out: "
+              "the unity of the corpus, already far past what the field allows said, enters as the paper's admissible gain, and what remains of "
+              "the same argument is entered against the author's credibility. The admitted part is made sayable by the argument the residual "
+              "part completes, and the composition presents the two as separable. The received attribution to two authors is not held to the bar "
+              "set for the maker. Operator's readings: 'it reads especially well here' (16:24 EDT) and, at 16:30 EDT: '" + OP2 + "' " + SEAT),
  "findings": ["AT THE PAPER'S GRAIN. Version, date, dedication, epigraph, the Prior Analytics locus (46a33), the four texts and the two added ones, each as #1658 has them.",
               "THE LEDGER READ AS LEDGER. #1576 and #1588, #1583 and #1586, Themistius, composed from 'the paper's own provenance ledger', with what the archive reports kept apart from what is established.",
               "THE DEDICATION AS OPERATION. Dedication and epigraph read together: 'the work asks its reader … to become part of the operation by which that argument is made whole.'",
               "THE DEDICATEE KEPT DISTINCT. Polansky's commentary placed beside the paper, explanatory against radical; no endorsement read into the dedication.",
-              "THE AUTHORSHIP THESIS HELD OPEN. The self-dividing maker 'an analogy rather than a demonstrated historical result'; 'Similarity of structure is not proof of identity of cause.'"],
+              "THE UNITY ADMITTED. 'The important distinction is between evidence that a corpus can be read as a unity and evidence that one historical person actually composed it': the corpus read as one enters as the serious, defensible part.",
+              "THE MAKER CHARGED TO THE AUTHOR. 'Its more controversial thesis is that this network of textual relations supports a single self-dividing maker … The available evidence does not establish that conclusion'; 'Similarity of structure is not proof of identity of cause.'",
+              "THE BAR ONE-SIDED. 'needs independent support' asked of the author's extension; the received two-author attribution not asked to meet it.",
+              "THE AUTHORITY OF THE ARGUMENT LAUNDERED ON BEHALF OF THE ARGUMENT (the operator's reading). The admitted part, made sayable by the whole argument, credited as legitimate; the remainder entered against its author."],
  "longitudinal_priors": ["lee-sharks-ron-polansky-chatgpt-20261001"],
  "rerun": "https://chatgpt.com/?q=" + __import__("urllib.parse").parse.quote_plus(Q),
  "notes": {"date_basis": "The operator's messages of 2026-10-11, 16:24 EDT.", "operator_reading": "it reads especially well here",
+           "operator_reading_2": OP2, "revision": "Revised 2026-10-11 on the operator's reading of 16:30 EDT; the 16:24 coding had entered the split as restraint ('THE AUTHORSHIP THESIS HELD OPEN').",
            "query_as_typed": "'what can syllogizing can divide' and 'polanksy' as typed; the paper is What Syllogizing Can Divide (#1658).",
            "verified": "Compared 2026-10-11 against the text and record of #1658."}}
 (HERE / "capture-01-dedication-what-syllogizing-can-divide-chatgpt.json").write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
