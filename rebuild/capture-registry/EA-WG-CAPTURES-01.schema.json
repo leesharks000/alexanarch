@@ -16,6 +16,8 @@
     "auth_basis": {"type": ["string","null"]},
     "ev": {"type": "string", "enum": ["paste","ocr","paste + frame","frame + paste","frame","none","agent run"]},
     "mt": {"type": "string", "description": "match type as recorded (CAPTURE, EXACT MATCH, BROAD MATCH, PARTIAL, ADOPTION, …)"},
+    "match": {"type": "string", "enum": ["EXACT MATCH", "BROAD MATCH", "INDETERMINATE"], "description": "the address's match type, derived from q: a phrase in quotation marks (the exact-match operator) is EXACT MATCH; no quoted phrase is BROAD MATCH. INDETERMINATE where the recorded mt contradicts the address (operator's rulings, 2026-10-11: 'exact is quoted. broad is unquoted.'; 'we can leave the 15 indeterminate - there may have been some question early in the data whether the distinction was being recorded at each point')."},
+    "match_note": {"type": ["string", "null"], "description": "why match is INDETERMINATE, with the mt as recorded"},
     "s": {"type": "string", "description": "section — the grouping key of the gallery"},
     "q": {"type": "string", "description": "the issued string, exactly as typed, quotes significant"},
     "q_kind": {"type": ["string","null"]},
