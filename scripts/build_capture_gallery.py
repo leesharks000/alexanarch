@@ -46,6 +46,9 @@ IMG_BASES = {
 }
 
 
+
+MT_CLASSES = ("ADOPTION", "ZERO RESULT", "ZERO INDEX", "WOUND GAUGE")  # mt values that are evidentiary classes, beside the match
+
 def image_urls(e):
     """Resolve the three recorded forms into fetchable URLs."""
     out = []
@@ -507,6 +510,12 @@ def card(e, record=False):
     else:
         d = _dfull
     mt = e.get("mt") or "unrated"
+    # THE STATUS IS THE ADDRESS'S MATCH (2026-10-11): `match`, read off the address at intake ("exact is quoted. broad is
+    # unquoted."). mt had come to hold CAPTURE and descriptive titles, which rendered as statuses ('the', 'deleuze'); it now
+    # adds a second badge only where it carries an evidentiary class of its own.
+    match = e.get("match") or "INDETERMINATE"
+    mt_class = next((c for c in MT_CLASSES if str(mt).startswith(c)), None)
+    status_attr = match + ("|" + mt_class if mt_class else "")
     q = e.get("q") or slug
     date = e.get("date") or ""
     cite = e.get("cite") or f"https://www.alexanarch.org/captures/{slug}/"
@@ -650,7 +659,7 @@ def card(e, record=False):
     return (
         f'<div class="cap-card" id="{esc(slug)}" '
         f'data-section="{esc(e.get("s") or "Unsectioned")}" '
-        f'data-status="{esc(mt.split()[0].lower())}" '
+        f'data-status="{esc(status_attr)}" '
         f'data-defects="{esc(" ".join(defects))}" '
         f'data-origin="{esc(_o.get("relation") or "")}" '
         f'itemscope itemtype="https://schema.org/CreativeWork">' + _alias +
@@ -663,7 +672,8 @@ def card(e, record=False):
         f'<div class="cap-query" itemprop="name">{esc(e.get("q") or "")}</div>' + origin_line +
         f''
         f'<div class="cap-status-row">'
-        f'<span class="cap-status cap-status-{esc(mt.split()[0].lower())}">{esc(mt)}</span>'
+        f'<span class="cap-status cap-status-{esc(match.replace(" ", "-"))}">{esc(match)}</span>'
+        + (f'<span class="cap-status cap-status-{esc(mt_class.replace(" ", "-"))}">{esc(mt_class)}</span>' if mt_class else '') +
         f'<span class="cap-sf">{esc(e.get("sf") or "")}</span></div>'
         f'<div class="cap-row">{imgs_html}'
         f'<div class="cap-body">'
