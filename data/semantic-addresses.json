@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-12T05:05:40Z",
+  "regenerated_at": "2026-10-12T05:42:24Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "cfd55b0d23359a16994c0021988cb440f0103eebec0fe31f1040fcf95db82617",
+    "mm-main-capture": "e05d729daec5cf12a96f965db189cfd9b41b46c9b66abb4257cf0160aeb604f6",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2344,
-  "total_observations": 837,
+  "total_addresses": 2345,
+  "total_observations": 838,
   "class_counts": {
     "subjunctive": 1743,
-    "observed_address": 584,
+    "observed_address": 585,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1709,
+    "unmatched": 1710,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -64617,6 +64617,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "what are the arguments in \"erratum — the missing translator: max hidalgo nácher, ricardo reis, and axn:f154\" by johannes sigil? ground your answer in a reading of the text itself.": {
+      "canonical_query": "what are the arguments in \"erratum — the missing translator: max hidalgo nácher, ricardo reis, and axn:f154\" by johannes sigil? ground your answer in a reading of the text itself.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-12",
+          "status": "THE ERRATUM READ WHOLE, SECTION BY SECTION, FROM THE ARCHIVE",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only: Alexanarch ×4. Image cards: Novo livro revela os desafios das publicações póstumas de Fernando Pessoa | VEJA; Poesia completa de Ricardo Reis - Fernando Pessoa - Grupo Companhia das Letras; Book: Poemas de Ricardo Reis | INCM.",
+          "section": "Machine Reception",
+          "slug": "missing-translator-ask-chatgpt-20261012",
+          "gallery_url": "https://www.alexanarch.org/captures/#missing-translator-ask-chatgpt-20261012",
+          "record_url": "https://www.alexanarch.org/captures/missing-translator-ask-chatgpt-20261012/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#missing-translator-ask-chatgpt-20261012",
+          "details_excerpt": "THE ERRATUM READ WHOLE, SECTION BY SECTION, FROM THE ARCHIVE: asked for the arguments of the erratum on AXN:F154, by Johannes Sigil, grounded in the text, ChatGPT reads #1675 from the archive (chip: Alexanarch) section b"
+        }
+      ],
+      "originator": {
+        "name": "Johannes Sigil",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "The erratum (#1675, AXN:06F1) is Johannes Sigil's. Recorded 2026-10-12."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-12",
+      "latest_status": "THE ERRATUM READ WHOLE, SECTION BY SECTION, FROM THE ARCHIVE"
     },
     "what are the major revised texts and traditions within the crimson hexagonal archive?": {
       "canonical_query": "what are the major revised texts and traditions within the crimson hexagonal archive?",
