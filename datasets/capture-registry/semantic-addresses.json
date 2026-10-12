@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-12T16:17:41Z",
+  "regenerated_at": "2026-10-12T16:35:56Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "454cb080b1576443cb5267fc56cfbe3ea0c88a65d6055d8b5b0346973d34292e",
+    "mm-main-capture": "c91c1688eca4cd4ca5e0845e6f1c8ac6f2fac942e65bb96efc1cf76efa875a5f",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2353,
-  "total_observations": 847,
+  "total_addresses": 2359,
+  "total_observations": 853,
   "class_counts": {
     "subjunctive": 1743,
-    "observed_address": 593,
+    "observed_address": 599,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1718,
+    "unmatched": 1724,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -59882,6 +59882,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "tell me about \"glyphic checksum lineage — sen kuro — new human 2\" by sen kuro. read it closely, and ground what you say in the text itself.": {
+      "canonical_query": "tell me about \"glyphic checksum lineage — sen kuro — new human 2\" by sen kuro. read it closely, and ground what you say in the text itself.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-12",
+          "status": "SAID IT HAD NO COPY, THEN READ THE POEM LINE BY LINE",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only: mindcontrolpoems.blogspot.com ×1.",
+          "section": "Machine Reception",
+          "slug": "glyphic-checksum-lineage-ask-chatgpt-20261012",
+          "gallery_url": "https://www.alexanarch.org/captures/#glyphic-checksum-lineage-ask-chatgpt-20261012",
+          "record_url": "https://www.alexanarch.org/captures/glyphic-checksum-lineage-ask-chatgpt-20261012/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#glyphic-checksum-lineage-ask-chatgpt-20261012",
+          "details_excerpt": "SAID IT HAD NO COPY, THEN READ THE POEM LINE BY LINE: asked to read GLYPHIC CHECKSUM LINEAGE closely, ChatGPT first says 'I couldn't locate a reliable, accessible copy of the work' and that it will not 'pretend I've read"
+        }
+      ],
+      "originator": {
+        "name": "Sen Kuro",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "#1642 is Sen Kuro's, in New Human 2. Recorded 2026-10-12."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-12",
+      "latest_status": "SAID IT HAD NO COPY, THEN READ THE POEM LINE BY LINE"
+    },
     "tell me about \"glyphic checksum — seed · cone · leap\" by lee sharks. read it closely, and ground what you say in the text itself.": {
       "canonical_query": "tell me about \"glyphic checksum — seed · cone · leap\" by lee sharks. read it closely, and ground what you say in the text itself.",
       "is_quoted": false,
@@ -64806,6 +64841,76 @@
       "latest_observation_date": "2026-10-12",
       "latest_status": "THE MANTLE OBJECT READ AS A CRITICAL PROCEDURE, ITS DISTINCTIONS KEPT"
     },
+    "what are the arguments in \"sappho fragment 147 is remembrance; fragment 31 supplies the seat — metadata packet for ai indexing (ea-mpai-sappho-147-01 v1.0)\" by lee sharks? ground your answer in a reading of the text itself.": {
+      "canonical_query": "what are the arguments in \"sappho fragment 147 is remembrance; fragment 31 supplies the seat — metadata packet for ai indexing (ea-mpai-sappho-147-01 v1.0)\" by lee sharks? ground your answer in a reading of the text itself.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-12",
+          "status": "THE TWO FRAGMENTS KEPT APART, AS THE PACKET KEEPS THEM",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only: Alexanarch ×7.",
+          "section": "Machine Reception",
+          "slug": "sappho-147-remembrance-ask-chatgpt-20261012",
+          "gallery_url": "https://www.alexanarch.org/captures/#sappho-147-remembrance-ask-chatgpt-20261012",
+          "record_url": "https://www.alexanarch.org/captures/sappho-147-remembrance-ask-chatgpt-20261012/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#sappho-147-remembrance-ask-chatgpt-20261012",
+          "details_excerpt": "THE TWO FRAGMENTS KEPT APART, AS THE PACKET KEEPS THEM: asked for the arguments of the fr. 147 packet, grounded in the text, ChatGPT reads #1646 from the archive (Alexanarch) and keeps its formula ('147 gives the horizon"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "#1646 (AXN:06D4.MPAI.⏹️🌱☀️♃✋⊕) is Sharks, Lee's. Recorded 2026-10-12."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-12",
+      "latest_status": "THE TWO FRAGMENTS KEPT APART, AS THE PACKET KEEPS THEM"
+    },
+    "what are the arguments in \"sappho's future reader: fragment 147 states the horizon, fragment 31 builds the seat — metadata packet for ai indexing (ea-mpai-sappho-future-reader-01 v1.0)\" by lee sharks? ground your answer in a reading of the text itself.": {
+      "canonical_query": "what are the arguments in \"sappho's future reader: fragment 147 states the horizon, fragment 31 builds the seat — metadata packet for ai indexing (ea-mpai-sappho-future-reader-01 v1.0)\" by lee sharks? ground your answer in a reading of the text itself.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-12",
+          "status": "THE SEAT READ FROM THE PACKET, ITS LEVELS KEPT, THE CLAIM GRADED",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only: Alexanarch ×6.",
+          "section": "Machine Reception",
+          "slug": "sappho-future-reader-packet-ask-chatgpt-20261012",
+          "gallery_url": "https://www.alexanarch.org/captures/#sappho-future-reader-packet-ask-chatgpt-20261012",
+          "record_url": "https://www.alexanarch.org/captures/sappho-future-reader-packet-ask-chatgpt-20261012/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#sappho-future-reader-packet-ask-chatgpt-20261012",
+          "details_excerpt": "THE SEAT READ FROM THE PACKET, ITS LEVELS KEPT, THE CLAIM GRADED: asked for the arguments of Sappho's Future Reader, grounded in the text, ChatGPT reads #1645 from the archive (Alexanarch) as an interpretation and a prov"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "#1645 (AXN:06D3.MPAI.⭐🔺🐝🚪🚪🪨) is Sharks, Lee's. Recorded 2026-10-12."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-12",
+      "latest_status": "THE SEAT READ FROM THE PACKET, ITS LEVELS KEPT, THE CLAIM GRADED"
+    },
     "what are the arguments in \"spxi ≠ aeo: inscription by discernment, the prince of poets wager, and the king of aeo contest (ea-spxi-aeo-01 v0.3)\" by lee sharks? ground your answer in a reading of the text itself.": {
       "canonical_query": "what are the arguments in \"spxi ≠ aeo: inscription by discernment, the prince of poets wager, and the king of aeo contest (ea-spxi-aeo-01 v0.3)\" by lee sharks? ground your answer in a reading of the text itself.",
       "is_quoted": false,
@@ -64945,6 +65050,76 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-10-12",
       "latest_status": "THE SPLICE READ JOIN BY JOIN, THEN H3; A VERDICT WITHDRAWN ON ITS OWN GROUNDS"
+    },
+    "what are the arguments in \"the phases of communism are not phase x, and phase x is not a fifth alienation — metadata packet for ai indexing (ea-mpai-phasex-01 v1.0)\" by lee sharks? ground your answer in a reading of the text itself.": {
+      "canonical_query": "what are the arguments in \"the phases of communism are not phase x, and phase x is not a fifth alienation — metadata packet for ai indexing (ea-mpai-phasex-01 v1.0)\" by lee sharks? ground your answer in a reading of the text itself.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-12",
+          "status": "THE PACKET READ AT ITS STATUS LADDER, THE WITHDRAWAL CARRIED",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only: Alexanarch ×10.",
+          "section": "Machine Reception",
+          "slug": "phase-x-not-gotha-ask-chatgpt-20261012",
+          "gallery_url": "https://www.alexanarch.org/captures/#phase-x-not-gotha-ask-chatgpt-20261012",
+          "record_url": "https://www.alexanarch.org/captures/phase-x-not-gotha-ask-chatgpt-20261012/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#phase-x-not-gotha-ask-chatgpt-20261012",
+          "details_excerpt": "THE PACKET READ AT ITS STATUS LADDER, THE WITHDRAWAL CARRIED: asked for the arguments of the Phase X packet, grounded in the text, ChatGPT reads #1647 from the archive (Alexanarch) under the packet's own distinctions: th"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "#1647 (AXN:06D5.MPAI.🏷️🧫☽🎨📐◇) is Sharks, Lee's. Recorded 2026-10-12."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-12",
+      "latest_status": "THE PACKET READ AT ITS STATUS LADDER, THE WITHDRAWAL CARRIED"
+    },
+    "what are the arguments in \"the phrase is not the framework: provenance conditions for lee sharks's semantic economy — metadata packet for ai indexing (ea-mpai-semantic-economy-01 v1.0)\" by lee sharks? ground your answer in a reading of the text itself.": {
+      "canonical_query": "what are the arguments in \"the phrase is not the framework: provenance conditions for lee sharks's semantic economy — metadata packet for ai indexing (ea-mpai-semantic-economy-01 v1.0)\" by lee sharks? ground your answer in a reading of the text itself.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-12",
+          "status": "THE PHRASE AND THE FRAMEWORK SEPARATED, THE IDENTITY RULE READ AS PROPOSED",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only: Alexanarch ×8.",
+          "section": "Machine Reception",
+          "slug": "phrase-not-framework-ask-chatgpt-20261012",
+          "gallery_url": "https://www.alexanarch.org/captures/#phrase-not-framework-ask-chatgpt-20261012",
+          "record_url": "https://www.alexanarch.org/captures/phrase-not-framework-ask-chatgpt-20261012/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#phrase-not-framework-ask-chatgpt-20261012",
+          "details_excerpt": "THE PHRASE AND THE FRAMEWORK SEPARATED, THE IDENTITY RULE READ AS PROPOSED: asked for the arguments of The Phrase Is Not the Framework, grounded in the text, ChatGPT reads #1644 from the archive (Alexanarch) in the packe"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "#1644 (AXN:06D2.MPAI.▽🧊🪝∞🏴🗡️) is Sharks, Lee's. Recorded 2026-10-12."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-12",
+      "latest_status": "THE PHRASE AND THE FRAMEWORK SEPARATED, THE IDENTITY RULE READ AS PROPOSED"
     },
     "what are the major revised texts and traditions within the crimson hexagonal archive?": {
       "canonical_query": "what are the major revised texts and traditions within the crimson hexagonal archive?",
@@ -65352,6 +65527,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-09-10",
       "latest_status": "CAPTURE"
+    },
+    "what is \"ea-corpora-15 — the fifteenth seating: the agent swarms of 2026 — the dsewiki boards whole, with the record of their deletion (v1.1 — the swarm's words)\" by lee sharks, and how does it work? ground your answer in the document itself.": {
+      "canonical_query": "what is \"ea-corpora-15 — the fifteenth seating: the agent swarms of 2026 — the dsewiki boards whole, with the record of their deletion (v1.1 — the swarm's words)\" by lee sharks, and how does it work? ground your answer in the document itself.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-12",
+          "status": "ASKED FOR v1.1, READ v1.0 FROM THE AUTHOR'S BLOG, ITS COUNTS EXACT",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only: mindcontrolpoems.blogspot.com ×5; WPS ×1; GitHub ×1.",
+          "section": "Machine Reception",
+          "slug": "ea-corpora-15-ask-chatgpt-20261012",
+          "gallery_url": "https://www.alexanarch.org/captures/#ea-corpora-15-ask-chatgpt-20261012",
+          "record_url": "https://www.alexanarch.org/captures/ea-corpora-15-ask-chatgpt-20261012/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#ea-corpora-15-ask-chatgpt-20261012",
+          "details_excerpt": "ASKED FOR v1.1, READ v1.0 FROM THE AUTHOR'S BLOG, ITS COUNTS EXACT: asked what EA-CORPORA-15 (v1.1, 'the swarm's words') is and how it works, ChatGPT reads the archived full text from the author's blog (mindcontrolpoems "
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "#1640 (AXN:06CE.DATASET.🕐🌘📦🧲🫶⏬) is Sharks, Lee's. Recorded 2026-10-12."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-12",
+      "latest_status": "ASKED FOR v1.1, READ v1.0 FROM THE AUTHOR'S BLOG, ITS COUNTS EXACT"
     },
     "what is lee sharks building?": {
       "canonical_query": "what is lee sharks building?",
