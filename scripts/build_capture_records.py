@@ -93,6 +93,121 @@ def deposit_titles():
     return {d.get("deposit_number"): d.get("title") or "" for d in json.loads(p.read_text())["deposits"]}
 
 
+def deposit_index():
+    """deposit number -> the fields the concept block needs (2026-10-12)."""
+    p = ROOT / "data/registry.json"
+    if not p.exists():
+        return {}
+    return {d["deposit_number"]: d for d in json.loads(p.read_text())["deposits"]}
+
+
+def _n(s):
+    return re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).strip()
+
+
+def _person(c):
+    """'Sharks, Lee' -> 'Lee Sharks'; anything else as written."""
+    c = (c or "").strip()
+    m = re.fullmatch(r"([^,]+),\s*([^,]+)", c)
+    return f"{m.group(2)} {m.group(1)}" if m else c
+
+
+CONCEPT_MAX = 6
+
+
+def concept_definitions(deps):
+    """deposit number -> [(term, definition)] from the archive's WRITTEN definitions only (2026-10-12):
+    the registry's own defines_concepts entries that carry a definition, and lexicon entries minted in session or
+    with no batch mode (data/lexical-minting-registry.json). Batch and bulk extractions are left out: they hold
+    fragments read off the text ('Works cited', 'Exoconsistency: SPXI connects to:'), not definitions."""
+    out = {}
+    def add(n, term, defn):
+        term, defn = (term or "").strip(), (defn or "").strip()
+        if not isinstance(n, int) or not term or len(defn) < 40 or len(term.split()) > 7:
+            return
+        if not (defn[:1].isupper() or defn[:1] in "\"'“‘(") or term.endswith(":"):
+            return
+        lst = out.setdefault(n, [])
+        if all(_n(t) != _n(term) for t, _ in lst):
+            lst.append((term, defn))
+    for n, d in deps.items():
+        for c in d.get("defines_concepts") or []:
+            if isinstance(c, dict):
+                add(n, c.get("concept") or c.get("term"), c.get("definition"))
+    p = ROOT / "data/lexical-minting-registry.json"
+    if p.exists():
+        for t in json.loads(p.read_text()).get("terms") or []:
+            if t.get("mint_mode") in (None, "in-session, transport D"):
+                add(t.get("defined_in_deposit"), t.get("term"), t.get("definition"))
+    return out
+
+
+def concepts_of(e, deps, defs=None):
+    """THE CONCEPT BLOCK (2026-10-12). The concepts this capture's own text uses, as the deposits it is linked to
+    define them. Linked = related_deposits (resolved from its cards) and intended (the record the run was meant to
+    reach). A concept is shown only when its name occurs in the issued string or a transcript of the capture: the
+    composition is the evidence that the concept is in play, so a deposit that defines thirty terms contributes
+    only the ones this capture touches. Each line carries the term, the definition as deposited, the creator and
+    the deposit, in one sentence, so a reader or a composer that takes the definition takes the attribution."""
+    linked = [n for n in (e.get("related_deposits") or []) if isinstance(n, int)]
+    it = (e.get("intended") or {}).get("deposit")
+    if isinstance(it, int) and it not in linked:
+        linked = [it] + linked
+    if not linked:
+        return []
+    text = " " + _n(" ".join([e.get("q") or "", e.get("transcript") or ""] +
+                             [o.get("transcript") or "" for o in (e.get("observations") or [])])) + " "
+    found = {}
+    defs = defs if defs is not None else concept_definitions(deps)
+    for n in linked:
+        d = deps.get(n)
+        if not d:
+            continue
+        for term, definition in defs.get(n, []):
+            c = {"concept": term, "definition": definition}
+            k = _n(c["concept"])
+            if len(k) < 10 and " " not in k:
+                continue                       # single short words occur by accident
+            hits = text.count(" " + k + " ")
+            if not hits:
+                continue
+            rank = (0 if n == it else 1, -hits, d.get("date") or "")
+            if k not in found or rank < found[k][0]:
+                found[k] = (rank, c["concept"], c["definition"], n)
+    return [v[1:] for v in sorted(found.values())[:CONCEPT_MAX]]
+
+
+def _standing(n, deps):
+    seen = set()
+    while n in deps and n not in seen:
+        seen.add(n); x = deps[n].get("superseded_by_deposit_number") or deps[n].get("superseded_by")
+        if not isinstance(x, int) or x not in deps: break
+        n = x
+    return n
+
+
+def concept_block(e, deps, defs=None):
+    rows = concepts_of(e, deps, defs)
+    if not rows:
+        return "", []
+    out, ld = [], []
+    for term, definition, n in rows:
+        # the record of standing, never a superseded version: a composer carries forward the identifier it is given
+        n = _standing(n, deps)
+        d = deps[n]
+        who = _person(d.get("creator"))
+        defn = definition if len(definition) <= 600 else definition[:600].rsplit(" ", 1)[0] + " …"
+        out.append(f'<p class="cap-concept" style="margin:4px 0"><b>{esc(term[:1].upper() + term[1:])}</b> '
+                   f'({esc(who)}, <a href="/s/records/{n}/">#{n}</a>): {esc(defn)}</p>')
+        ld.append({"@type": "DefinedTerm", "name": term, "description": defn,
+                   "url": f"{BASE}/s/records/{n}/", "inDefinedTermSet": f"{BASE}/s/records/{n}/",
+                   "creator": {"@type": "Person", "name": who}})
+    html = ('<section class="cap-concepts" style="font-size:.9em;margin:8px 0 10px;padding:8px 10px;'
+            'border-left:3px solid #b33">\n<h2 style="font-size:1em;margin:0 0 4px">Concepts in this composition</h2>\n'
+            + "\n".join(out) + "\n</section>\n")
+    return html, ld
+
+
 def related_line(e, titles):
     nums = [n for n in (e.get("related_deposits") or []) if isinstance(n, int)]
     if not nums:
@@ -105,7 +220,10 @@ def related_line(e, titles):
     return '<p class="sub" style="font-size:.85em">Related deposits: ' + " · ".join(items) + "</p>\n"
 
 
-def page(e, reg, style, addr_url, titles=None):
+DEFS = None
+
+
+def page(e, reg, style, addr_url, titles=None, deps=None):
     slug = e["slug"]
     q = e.get("q") or slug
     surf = ", ".join(e.get("surfaces") or [e.get("surface") or ""])
@@ -129,6 +247,9 @@ def page(e, reg, style, addr_url, titles=None):
              '<a href="/captures/index.json">table of contents</a>']
     if addr_url:
         links.insert(1, f'<a href="{esc(addr_url)}">the address page</a>')
+    cblock, cld = concept_block(e, deps or {}, DEFS)
+    if cld:
+        ld["about"] = cld
     rel = [n for n in (e.get("related_deposits") or []) if isinstance(n, int)]
     if rel:
         ld["mentions"] = [{"@type": "CreativeWork", "url": f"{BASE}/s/records/{n}/", "identifier": f"#{n}"} for n in rel]
@@ -147,7 +268,7 @@ def page(e, reg, style, addr_url, titles=None):
         f'<p style="font-size:.85em;margin:10px 0 4px"><a href="/captures/">Capture Registry</a> › capture <code>{esc(slug)}</code></p>\n'
         f'<p class="sub" style="font-size:.85em">One record of the canonical Capture Registry (EA-WG-CAPTURES-01), '
         f'cited at <code>{url}</code>. ' + " · ".join(links) + ".</p>\n"
-        + related_line(e, titles or {})
+        + cblock + related_line(e, titles or {})
         + G.card(e, record=True) + "\n" + COPY_JS + "\n</body></html>\n")
 
 
@@ -172,6 +293,9 @@ def build():
     style = gallery_style()
     addr = address_pages()
     titles = deposit_titles()
+    deps = deposit_index()
+    global DEFS
+    DEFS = concept_definitions(deps)
     files = {}
     toc = []
     for e in entries:
@@ -180,7 +304,7 @@ def build():
         rec["record_url"] = record_url(slug)
         rj = jdump(rec)
         files[f"{slug}/record.json"] = rj
-        files[f"{slug}/index.html"] = page(e, reg, style, addr.get(slug), titles)
+        files[f"{slug}/index.html"] = page(e, reg, style, addr.get(slug), titles, deps)
         obs = []
         for o in e.get("observations") or []:
             os_ = o.get("slug") or slug
