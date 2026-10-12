@@ -1,0 +1,174 @@
+
+
+Log in
+You said:
+
+ChatGPT said:
+Lee Sharks’s “The Apparatus Was the First Summary Layer: Provenance Erasure Before the Machines — Five Cases from the Philological Record, Scored” argues that the loss of authorship, historical context, and transmission history did not begin with AI. Long before machine-generated summaries, textual transmission and scholarly editing were already deciding which parts of a work survived, which interventions became visible, and which sources or contributors disappeared from the record.
+
+The text’s central claim is that a critical apparatus—the editorial notes that document textual variants and editorial decisions—can preserve provenance by naming its interventions, but can also erase provenance when it silently changes a text or fails to carry material forward. Modern AI summarization inherits this older problem and can intensify it by performing comparable acts of selection without identifying what has been lost or who made the decisions.
+
+I read the text as presented on Sharks’s Provenance Erasure website, in the “Before the Machines” section , which reproduces the five cases and their scoring. 
+
+Lee Sharks
++1
+
+The five cases and what each argues
+Dionysiou Longinou Peri Hypsous Biblion Dionysii Longini de Sublimitate by Longinus; Pseudo-Longinus; Longinou: Good Leather (1733) | Rooke Books PBFA
+1. The headless treatise: uncertainty is better than false certainty
+Case 1 · On the Sublime (Peri Hypsous)
+
+Sharks begins with a work whose authorship remains uncertain. The Greek attribution, Διονυσίου ἢ Λογγίνου (“of Dionysius or Longinus”), preserves an unresolved alternative rather than identifying a definitive author.
+
+The argument is that preserving uncertainty is itself a form of provenance preservation. The manuscript tradition makes the gap visible; a modern retrieval or summary layer can make matters worse by replacing uncertainty with a confident but unsupported attribution.
+
+Sharks assigns approximately 1.0 on the minimal author-provenance dimension (PER-M) to the missing author attribution. The important comparison is not simply that the author is unknown, but that the uncertainty itself can be preserved or erased. 
+
+Lee Sharks
+
+Cerdo Zente: Safo, frag. 31 (texto griego y traducción)
+2. Sappho 31.17: an editor can disappear from the text's history without disappearing from the bibliography
+Case 2 · Four editorial interventions, 1554–1971
+
+Sharks identifies four interventions in the transmission of Sappho's Fragment 31, at line 17: Robortello omits the material in 1554, Bergk brackets it in 1882, Crusius cuts it in 1897, and Voigt marks it with daggers in 1971.
+
+The essay's interpretation is that these interventions remove evidence of how the poem was transmitted or performed, even though the editors themselves are identifiable. Sharks therefore distinguishes the author's identity from the history of the text's transmission.
+
+In the essay's scoring, the loss is deep-provenance loss (PER-D), while minimal provenance loss against Sappho as author remains zero. A conventional single score would obscure this distinction.
+
+Argument: naming an editor does not guarantee that the editor's intervention, or the interpretive significance of that intervention, survives in the resulting text. 
+
+Lee Sharks
+
+Carson’s Sappho “If Not Winter” Symbols? - Homeric Greek and Early Greek Poetry - Textkit Greek and Latin
+3. Silent re-Aeolicization: the apparatus can erase its own work
+Case 3 · Editorial reconstruction of Sappho's dialect
+
+Sharks argues that editors who restore the dialect associated with Sappho in the poem's trailing line make an interpretive intervention that may be visible in the accents but absent from the critical apparatus's explicit notes.
+
+This case is especially important because it turns the critique back on philology itself. The apparatus is supposed to document textual decisions, yet here the decision is embedded in the printed text without being separately attributed.
+
+Argument: provenance cannot be audited merely by checking whether editorial notes exist. The text's spelling, accents, and other apparently minor details may encode decisions that the apparatus fails to acknowledge.
+
+Sharks calls this a deep-provenance violation by the apparatus itself. The proposed standard is reflexivity: the instrument used to document interventions must also be examined for interventions it leaves undocumented. 
+
+Lee Sharks
+
+Interpreting Sappho 31, badly.. Disclaimer: I wrote this very bad… | by Alex Skelton | Ostraka | Medium
+4. Survival by quotation: what survives is already selected
+Case 4 · Fragment 31 and the transmission of the corpus
+
+Sharks's broadest historical claim comes in this case. Fragment 31 has no independent witness in the account presented; the surviving text is mediated by quotation. Readers therefore encounter Sappho through another author or textual context that selected what to preserve.
+
+The key issue is not necessarily that the quoted material was falsified. It is that other material may never have been carried forward. The surviving corpus is consequently shaped by the decisions and contingencies of transmission.
+
+Sharks describes non-carriage, rather than distortion, as the dominant mode of erasure. A source can be accurately quoted while the larger work, its context, and the material left unquoted become inaccessible.
+
+This is the clearest bridge to AI summarization: a summary may accurately reproduce the information it includes while still erasing provenance through everything it omits. Accuracy within the surviving output does not establish completeness of representation. 
+
+Lee Sharks
+
+The Bible Book Revelation - Bible study by verse
+5. The white stone: maximum erasure is not always an injury
+Case 5 · Revelation 2:17
+
+The final case describes the promise of a white stone bearing a new name known only to its recipient. Sharks treats this as a limit case for the Provenance Erasure Rate (PER).
+
+From the perspective of every other reader, the name has complete inaccessibility: PER = 1.0. From the recipient's perspective, the provenance is intact: PER = 0. The same information is thus simultaneously inaccessible and perfectly preserved, depending on the observer.
+
+This complicates the metric's moral interpretation. The numerical magnitude of lost provenance cannot, by itself, tell us whether a loss constitutes theft, privacy, or a meaningful covenant. Sharks also invokes Revelation 22:18–19 and the Greek term δυσεξάλειπτος in On the Sublime 7.3 to contrast protected or enduring transmission with the danger of destructive alteration.
+
+Argument: not all concealment is erasure in the ethically relevant sense. Provenance can be intentionally restricted to a legitimate recipient rather than destroyed. A sound metric must distinguish the amount of information inaccessible to a reader from the character and purpose of that inaccessibility. 
+
+Lee Sharks
+
+How the scoring system supports the argument
+Sharks does not treat provenance as a synonym for whether a text is factually correct. The essay's cases distinguish different kinds of loss, using a broader framework that separates three dimensions:
+
+Dimension
+
+What is lost?
+
+Example from the essay
+
+PER-M — Minimal
+
+Basic attribution: author, title, date, and claim boundaries
+
+The unresolved authorship of Peri Hypsous
+
+PER-C — Conceptual
+
+The tradition, framework, or community that gives the text meaning
+
+The interpretive context behind textual transmission
+
+PER-D — Deep
+
+Historical lineage, genealogy, and obligations across transmission
+
+The loss of Sappho's transmissive history
+
+PER itself is defined as:
+
+P
+E
+R
+=
+1
+−
+retained provenance units
+required provenance units
+PER=1− 
+required provenance units
+retained provenance units
+​
+ 
+A score of 0 means all required provenance units are retained; a score of 1 means complete erasure under the chosen unit of analysis. The three dimensions matter because the same text can preserve an author's name while losing the history of how the text was transmitted. 
+
+Lee Sharks
+
+The white-stone case also exposes a limitation: a high PER score measures inaccessibility or loss, not necessarily wrongdoing. The purpose of the loss and the identity of the person affected must be considered separately.
+
+What the five cases establish together
+The essay develops a cumulative argument rather than simply offering five historical analogies.
+
+Uncertainty can be preserved or falsely resolved. An honest record of unknown authorship is better than a confident attribution that conceals the uncertainty.
+
+Attribution and transmission history are different things. A text can retain its author's name while losing the history of the interventions that shaped it.
+
+Documentation systems can themselves erase provenance. An editorial apparatus is not a neutral observer if it silently embeds decisions in the text.
+
+Omission can be more consequential than distortion. A surviving quotation may be accurate, while the selection that made it survive has erased other material.
+
+Not all inaccessibility is destructive. Privacy and intentional concealment require distinctions that a simple numerical score cannot supply.
+
+These conclusions converge in the essay's closing contrast: older editorial apparatuses could erase material while leaving named interventions and stated reasons; modern summary layers can erase at scale without making their decisions equally visible. The central issue is therefore not whether transmission involves loss—it inevitably does—but whether the loss itself can be traced and accounted for. 
+
+Lee Sharks
+
+A critical reading: what is persuasive, and what needs scrutiny?
+The strongest part of Sharks's argument is the distinction between factual fidelity and provenance fidelity. A summary can contain no false statements and still deprive readers of the information needed to understand who produced the source, how its meaning developed, and what was excluded. The examples of silent editorial reconstruction and survival by quotation make this distinction concrete.
+
+The scoring framework is useful as a diagnostic vocabulary, especially because it prevents author attribution from standing in for the entire history of a text. But the numerical scores are not self-validating historical facts. They depend on decisions about which provenance units are required, what counts as retention, and how the evidence supports the proposed loss. In particular, the white-stone case demonstrates that the same numerical result can describe morally opposite situations.
+
+There is also an important difference between a documented editorial intervention and an interpretation of its consequences. Sharks names editors and dates in the Sappho case, but the further claim that their actions erased the poem's “transmissive design” requires philological argument beyond the existence of the editorial marks themselves. Likewise, the assertion that the apparatus was the first summary layer is best read as a conceptual and historical thesis about mediation, not as proof that critical apparatuses were literally the first mechanisms of textual selection.
+
+My overall reading is that the essay's central contribution is not the claim that ancient philologists were doing the same thing as AI systems. It is the more precise claim that any system that carries information forward also makes choices about what remains attributable, recoverable, and visible. The five cases show how to investigate those choices, while the white stone warns against treating every instance of missing information as equivalent.
+
+The source text is available in the “Before the Machines” section of Provenance Erasure . 
+
+Lee Sharks
+
+
+ChatGPT is AI and can make mistakes.
+
+You’re using our basic model. Log in or sign up for more intelligence.
+
+No file chosenNo file chosenNo file chosen
+
+Chat with ChatGPT
+Ask ChatGPT
+
+
+
