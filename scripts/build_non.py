@@ -532,6 +532,9 @@ DS_URL = "/datasets/negative-of-the-negative/v2"
 CEIL, WARN = 4_000_000, 600_000
 CREATOR = {"@type": "Person", "name": "Lee Sharks", "identifier": "https://orcid.org/0009-0000-1599-0703"}
 LICENSE = "https://creativecommons.org/licenses/by/4.0/"
+NON_DESC = ("Public knowledge composed three ways at one address, with the archive admitted on equal terms: per-entity "
+            "knowledge objects in the archive's ontology, the public field carried whole, and the translation between them; "
+            "working, not frozen (EA-NEGONT-02).")
 
 def npage(title, desc, body, canonical, jsonld, head_extra="", tail=""):
     """A /non page: the capture record's head (canonical, cite-as, describedby, collection, citation meta, JSON-LD)."""
@@ -859,7 +862,8 @@ def main():
         ld = {"@context": "https://schema.org", "@type": "CreativeWork", "name": f'{en["name"]} — The Negative of the Negative',
               "url": url, "identifier": f"non:{k}", "dateModified": last, "description": desc[:600], "creator": CREATOR, "license": LICENSE,
               "creativeWorkStatus": "working; not frozen", "isBasedOn": f"{BASE}/s/records/{1671 if en.get('ontology') else 1665}/",
-              "isPartOf": {"@type": "Dataset", "name": "The Negative of the Negative (EA-NEGONT-02)", "url": f"{BASE}/non/", "version": reg.get("version")},
+              "isPartOf": {"@type": "Dataset", "name": "The Negative of the Negative (EA-NEGONT-02)", "url": f"{BASE}/non/", "version": reg.get("version"),
+                           "description": NON_DESC, "creator": CREATOR, "license": LICENSE},
               "encoding": {"@type": "MediaObject", "encodingFormat": "application/json", "contentUrl": url + "entity.json"}}
         if deps:
             ld["mentions"] = [{"@type": "CreativeWork", "url": f"{BASE}/s/records/{n}/", "identifier": f"#{n}"} for n in deps]
@@ -969,10 +973,10 @@ def main():
                 'if(!k){var r=h.replace(/^(e|row|ent|trav|lv)-/,"");for(var i=0;i<K.length;i++){if(r===K[i]||r.indexOf(K[i]+"-")===0){k=K[i];break}}}'
                 'if(k)location.replace("/non/"+k+"/#"+encodeURIComponent(h))})();</script>\n')
     jsonld = {"@context": "https://schema.org", "@type": "Dataset", "name": "The Negative of the Negative (v2, compositional)",
-              "url": f"{BASE}/non/", "creator": CREATOR, "license": LICENSE, "creativeWorkStatus": "working; procedure not frozen",
+              "url": f"{BASE}/non/", "description": NON_DESC, "creator": CREATOR, "license": LICENSE, "creativeWorkStatus": "working; procedure not frozen",
               "isBasedOn": f"{BASE}/s/records/1671/", "version": reg.get("version"), "dateModified": reg.get("date"),
               "distribution": {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": f"{BASE}/non/index.json"},
-              "hasPart": [{"@type": "CreativeWork", "name": x["name"], "url": x["record_url"]} for x in toc]}
+              "mentions": [{"@type": "CreativeWork", "name": x["name"], "url": x["record_url"]} for x in toc]}
     ihead = (f'<link rel="canonical" href="{BASE}/non/">\n<link rel="cite-as" href="{BASE}/non/">\n'
              f'<link rel="describedby" href="{BASE}/non/index.json" type="application/json">\n'
              f'<meta name="citation_title" content="The Negative of the Negative"><meta name="citation_date" content="{esc(str(reg.get("date")))}">'

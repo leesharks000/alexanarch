@@ -49,6 +49,21 @@ IMG_BASES = {
 
 MT_CLASSES = ("ADOPTION", "ZERO RESULT", "ZERO INDEX", "WOUND GAUGE")  # mt values that are evidentiary classes, beside the match
 
+# 2026-10-12: every NESTED reference to the registry carries the fields Google's Dataset report requires —
+# description, license, creator. A bare {"@type":"Dataset","name":…} is parsed as a Dataset item of its own and
+# reported invalid ('Missing field "description"', 34–35 items in Search Console, 2026-10-09). Same object as the
+# record pages' subjectOf reference (wire_deposit.py).
+CAPTURE_DATASET_REF = {
+    "@type": "Dataset", "@id": "https://www.alexanarch.org/data/EA-WG-CAPTURES-01.json",
+    "name": "EA-WG-CAPTURES-01 — the Capture Registry",
+    "description": ("Dated captures of how machine surfaces (AI overviews, answer engines, search snippets) retrieved and "
+                    "composed from the Crimson Hexagonal Archive; each capture records the query, the surface, the match "
+                    "type, and the deposits it drew on."),
+    "url": "https://www.alexanarch.org/captures/",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": {"@type": "Person", "name": "Lee Sharks", "identifier": "https://orcid.org/0009-0000-1599-0703"},
+}
+
 def image_urls(e):
     """Resolve the three recorded forms into fetchable URLs."""
     out = []
@@ -800,7 +815,7 @@ def main():
         ld_flow = ('<script type="application/ld+json">' +
                    json.dumps({"@context":"https://schema.org","@type":"CreativeWork",
                                "name":"Capture registry data flow",
-                               "isPartOf":{"@type":"Dataset","name":"EA-WG-CAPTURES-01"},
+                               "isPartOf":CAPTURE_DATASET_REF,
                                "text":flow.get("READ_THIS_FIRST",""),
                                "step":flow.get("flow",[]),
                                "url":"https://www.alexanarch.org/captures/#capture-flow"},

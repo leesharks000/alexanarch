@@ -280,7 +280,7 @@ def main():
 <title>The Refrain Index — a concordance of ∮ | Alexanarch</title>
 <meta name="description" content="Every variant family of the contour-integral refrain across the Crimson Hexagonal Archive: forms, glosses drawn from usage, attestation counts, first attestations, exemplar records.">
 <link rel="canonical" href="https://www.alexanarch.org/datasets/refrain-index/">
-<script type="application/ld+json">{json.dumps({k: ds[k] for k in ("@context","@type","name","description","version","dateModified","license")}, ensure_ascii=False)}</script>
+<script type="application/ld+json">{json.dumps(dict({k: ds[k] for k in ("@context","@type","name","description","version","dateModified","license")}, creator={"@type": "Person", "name": "Lee Sharks", "identifier": "https://orcid.org/0009-0000-1599-0703"}, url="https://www.alexanarch.org/datasets/refrain-index/"), ensure_ascii=False)}</script>
 <style>:root{{--bg:#0f0f12;--fg:#e8e4dc;--dim:#9a958c;--line:#2a2a30;--acc:#c9a227}}
 *{{box-sizing:border-box}}body{{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 Georgia,serif;padding:0 16px}}
 main{{max-width:880px;margin:0 auto;padding:36px 0 70px}}a{{color:var(--acc)}}.dim{{color:var(--dim);font-weight:400;font-size:.82em}}

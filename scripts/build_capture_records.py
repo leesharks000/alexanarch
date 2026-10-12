@@ -237,8 +237,7 @@ def page(e, reg, style, addr_url, titles=None, deps=None):
         "dateCreated": dates[0], "description": d[:600],
         "creator": {"@type": "Person", "name": "Lee Sharks", "identifier": "https://orcid.org/0009-0000-1599-0703"},
         "license": "https://creativecommons.org/licenses/by/4.0/",
-        "isPartOf": {"@type": "Dataset", "name": "AI Overview Capture Registry (EA-WG-CAPTURES-01)",
-                     "url": f"{BASE}/captures/", "version": reg.get("version")},
+        "isPartOf": dict(G.CAPTURE_DATASET_REF, version=reg.get("version")),
         "encoding": {"@type": "MediaObject", "encodingFormat": "application/json", "contentUrl": url + "record.json"},
     }
     links = [f'<a href="/captures/">the canonical Capture Registry</a> (version {esc(str(reg.get("version")))})',
