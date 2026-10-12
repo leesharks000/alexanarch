@@ -1,0 +1,43 @@
+{
+ "title": "Search-form test: which issued string carries an unindexed deposit into composition",
+ "opened": "2026-10-11",
+ "instruction": "Operator, 2026-10-11 23:11 EDT: \"lets test this before deciding. heres how an unindexed one composed with axn and title\". The decision pending: whether the record pages' 'Search this title (exact match)' link carries the title alone (current, 1,473 pages) or the title with the AXN.",
+ "not_captures": "A run that composes without engaging an archive source, at a new address, is not a capture (operator, 2026-09-11); such runs are kept here as test data, transcripts verbatim. A run that engages the archive is seated in the Capture Registry and referenced here by slug.",
+ "forms": {
+  "T": "the title, quoted (the current link)",
+  "A+T": "the full AXN and the title, unquoted, as one string",
+  "T+A": "the title quoted and the AXN quoted, two phrases",
+  "A": "the full AXN alone",
+  "D": "the series designation alone"
+ },
+ "runs": [
+  {"run": 1, "date": "2026-10-11", "time": "23:00 EDT", "deposit": 1675, "indexed": false, "indexed_basis": "operator", "form": "T",
+   "issued": "\"Erratum — The Missing Translator: Max Hidalgo Nácher, Ricardo Reis, and AXN:F154\"",
+   "surface": "Google AI Overview (expanded view)", "auth": "signed out, incognito",
+   "composed": true, "archive_cited": "via the registry mirror only (leesharks.com/captures)", "deposit_page_cited": false,
+   "carried": "the relation, #668, the Reis edition and the article, from the capture of the deposit's occasion (v12.101); the capture's description composed as the deposit's finding",
+   "prior_capture_at_subject": true, "capture": "erratum-missing-translator-exact-title-aio-20261011",
+   "transcript": "run-01-1675-title-quoted-20261011-2300.txt"},
+  {"run": 2, "date": "2026-10-11", "time": "23:11 EDT", "deposit": 1673, "indexed": false, "indexed_basis": "operator", "form": "A+T",
+   "issued": "AXN:06EF.DATASET.🪝⚡⏫💎🍀🔮 EA-CORPORA-17 — The Seventeenth Seating: The OpenAI Mathematics Release of October 2026 — 719 Manuscripts Under One Corporate Author Line, Seated at a Fixed Commit, with the Record of Its Authorship (v1.1 — the corporate tag)",
+   "surface": "Google AI Overview (expanded view)", "auth": "signed out, incognito (operator's attestation for the evening's runs)",
+   "composed": true, "archive_cited": false, "deposit_page_cited": false,
+   "carried": "the subject composed whole from twelve field cards (OpenAI, AHM, MathOverflow, The Guardian, OpenAI Developer Community, The New York Times, shattered.io, The Washington Post, Sky News, Kingy AI, The Structural Lens); the designation read as 'This designation tracks the repository snapshot'; the title's 'One Corporate Author Line' composed as the field's controversy ('A major flashpoint for controversy in the mathematical community'); the archive's seating, its rulings on provenance and its record of authorship absent",
+   "prior_capture_at_subject": false, "capture": null,
+   "transcript": "run-02-1673-axn-title-unquoted-20261011-2311.txt"},
+  {"run": null, "date": "2026-10-11", "deposit": 1673, "form": "D", "issued": "EA-CORPORA-17", "composed": false,
+   "note": "operator's report, no transcript: 'it couldnt compose it'"},
+  {"run": null, "date": "2026-10-11", "deposit": null, "form": "A", "issued": "a full AXN", "composed": true,
+   "note": "operator's report, no transcript: composed an overview for the title below it, from Browse (the AXN sits at the foot of its row, adjacent to the next row's title; 'its aio's problem, not ours')"}
+ ],
+ "reading_so_far": [
+  "Runs 1 and 2 differ in form and in two conditions besides: #1675's subject had been captured the day before (v12.101, on the mirror) and its field is thin; #1673's subject had no capture and a dense field (the OpenAI release was news). The difference in outcome cannot yet be assigned to the form.",
+  "Where a field exists, the title's terms are composed from it: the archive's claim in the title ('One Corporate Author Line') reaches the composition as the field's controversy, with no attribution to the archive.",
+  "Identifiers alone carry nothing or bind to their neighbours."
+ ],
+ "next": [
+  "#1673 in form T and in form T+A (same deposit, same evening if possible), so form is the only variable.",
+  "#1675 in form T+A, against run 1.",
+  "One deposit with no capture and a thin field, in T and T+A."
+ ]
+}
