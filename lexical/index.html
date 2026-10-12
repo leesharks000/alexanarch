@@ -152,7 +152,7 @@ Promise.all([
     '<div class="fbtn" data-mint="deliberate" title="from a deposit minting fewer than 20 terms">Deliberate ('+mintCount.deliberate.toLocaleString()+')</div>'+
     '<div class="fbtn" data-mint="batch" title="from a deposit minting 20–49 terms at once">Batch ('+mintCount.batch.toLocaleString()+')</div>'+
     '<div class="fbtn" data-mint="bulk" title="from a deposit minting 50 or more terms at once">Bulk extraction ('+mintCount.bulk.toLocaleString()+')</div>'+
-    '<div class="fbtn" data-mint="unflagged" title="definition not flagged by a cleaning pass">Definition not flagged ('+(allTerms.length-flagCount).toLocaleString()+')</div>';
+    '<div class="fbtn" data-mint="unflagged" title="neither the term nor its definition flagged by a cleaning pass">Not flagged ('+(allTerms.length-flagCount).toLocaleString()+')</div>';
   var mbox = document.getElementById('mint-filter');
   if(mbox) mbox.innerHTML = mintChipHtml;
   var activeMint = 'all';
@@ -236,7 +236,7 @@ Promise.all([
         '<div><span class="term-name">'+termHtml+'</span><span class="term-type">'+(t.type||'')+'</span></div>'+
         (t.definition ? (flagOf(t)
           ? '<div class="term-def" style="opacity:.55" title="flagged by a cleaning pass: the recorded definition is not a definition of the term">'+
-            '<span style="font-size:.8em;border:1px solid var(--dim);padding:0 4px;margin-right:6px">definition flagged: '+flagOf(t)+'</span>'+t.definition+'</div>'
+            '<span style="font-size:.8em;border:1px solid var(--dim);padding:0 4px;margin-right:6px">'+(flagOf(t)==='not-a-term' ? 'not a minted term (read 2026-10-12)' : 'definition flagged: '+flagOf(t))+'</span>'+t.definition+'</div>'
           : '<div class="term-def">'+t.definition+'</div>') : '')+
         '<div class="term-eng">'+engBadge+'</div>'+
         (dn?'<div class="term-meta">defined in '+dnLink+title+'</div>':'')+
