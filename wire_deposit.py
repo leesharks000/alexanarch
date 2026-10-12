@@ -896,6 +896,76 @@ def _strip_inline_ingests(raw, d):
         return raw
     return out
 
+_SHARKS_ORCID = '0009-0000-1599-0703'
+_HET_CARDS = None
+
+def _het_cards():
+    """Heteronym identity cards (datasets/heteronyms/records/*.json): name variants → (display, /who/ url, relation)."""
+    global _HET_CARDS
+    if _HET_CARDS is not None:
+        return _HET_CARDS
+    import glob
+    out = []
+    for f in sorted(glob.glob('datasets/heteronyms/records/*.json')):
+        try:
+            c = json.load(open(f, encoding='utf-8'))
+        except Exception:
+            continue
+        name = (c.get('name') or '').strip()
+        if not name or name.isupper():          # mantles (TACHYON, LABOR …) are not heteronyms
+            continue
+        surf = c.get('surface') if isinstance(c.get('surface'), dict) else {}
+        rel = c.get('orthonym_relation')
+        bare = re.sub(r'^(Rev\.|Dr\.)\s+', '', name)
+        parts = bare.split()
+        variants = {bare}
+        if len(parts) >= 2:
+            variants.add(f"{parts[-1]}, {' '.join(parts[:-1])}")
+        out.append({'name': name, 'variants': sorted(variants, key=len, reverse=True),
+                    'url': surf.get('canonical'),
+                    'equiv': (rel.get('identity_equivalence') if isinstance(rel, dict) else None),
+                    'type': c.get('identity_type')})
+    out.sort(key=lambda x: -max(len(v) for v in x['variants']))   # Mary Lee Sharks before Lee Sharks
+    _HET_CARDS = out
+    return out
+
+def _authorship(d):
+    """Return (html, [(name, who_url)], accountable) for the record's creator line."""
+    creator = str(d.get('creator') or '')
+    masked, hits = creator, []
+    for c in _het_cards():
+        for v in c['variants']:
+            m = re.search(r'(?<![A-Za-z])' + re.escape(v) + r'(?![A-Za-z])', masked, re.I)
+            if m:
+                hits.append((m.start(), c))
+                masked = masked[:m.start()] + '#' * len(m.group(0)) + masked[m.end():]
+                break
+    hits.sort(key=lambda h: h[0])
+    hcards = [c for _, c in hits if c['type'] == 'heteronym' or c['url']]
+    hets = [(c['name'], c['url']) for c in hcards]
+    acct = str(d.get('orcid') or '').strip() == _SHARKS_ORCID
+    e = _html_escape
+    rows = []
+    if hets:
+        links = ', '.join(f'<a href="{e(u)}" style="color:var(--accent)">{e(n)}</a>' if u else e(n) for n, u in hets)
+        rel = (' · <strong>Relation:</strong> non-identical, provenance-linked'
+               if acct and all(c['equiv'] is False for c in hcards) else '')
+        rows.append(f'<div><strong>Heteronymic identity:</strong> {links}{rel}</div>')
+    if acct:
+        rows.append(f'<div><strong>Deposit accountability:</strong> Lee Sharks, ORCID '
+                    f'<a href="https://orcid.org/{_SHARKS_ORCID}" style="color:var(--accent)">{_SHARKS_ORCID}</a></div>')
+    sub = str(d.get('substrate') or '').strip()
+    if sub:
+        rows.append(f'<div><strong>Substrate:</strong> {e(sub)}</div>')
+    lic = str(d.get('license') or '').strip()
+    if lic:
+        rows.append(f'<div><strong>License:</strong> {e(lic)}</div>')
+    if not rows:
+        return '', hets, acct
+    html = ('<div style="font-size:.82em;color:#555;line-height:1.6;margin:0 0 10px;padding:6px 10px;'
+            'border-left:3px solid var(--border)">' + ''.join(rows) + '</div>')
+    return html, hets, acct
+
 def regenerate_static_page(d, eidx, registry=None):
     _kernel_html = ''
     """Regenerate the static HTML page for a deposit with full enrichment.
@@ -1100,6 +1170,17 @@ def regenerate_static_page(d, eidx, registry=None):
                        f'<div><strong>Authoritative identifier:</strong> <span style="font-family:var(--mono);font-size:.9em">{esc(d.get("axn"))}</span> — content-derived; resolves at <a href="/s/axn/{esc(hex_id)}/" style="color:var(--accent)">/s/axn/{esc(hex_id)}/</a>. Cite this record by AXN and URL.</div>'
                        f'{_rows}</div>')
     _search_html = search_this_title_html(d, len(_caps or []))
+    # Authorship block (MANUS ruling 2026-10-12): the record carries the same three facts as the
+    # heteronym's /who/ authority record — heteronymic identity, deposit accountability, relation —
+    # projected from datasets/heteronyms/records/*.json, plus the registry's substrate and license.
+    # Authorial identity and site responsibility are kept separate: the heteronym stays the author;
+    # Lee Sharks is never written in as the heteronym's identity (orthonym_relation.identity_equivalence
+    # is false on every card).
+    _author_html, _hets, _acct = _authorship(d)
+    if len(_hets) == 1 and _hets[0][1]:
+        _ld["author"] = {"@type": "Person", "name": d['creator'], "url": _hets[0][1]}
+    if _acct:
+        _ld["accountablePerson"] = {"@type": "Person", "name": "Lee Sharks", "identifier": f"https://orcid.org/{_SHARKS_ORCID}"}
     jsonld = json.dumps(_ld, ensure_ascii=False)
     
     # Read full text
@@ -2039,6 +2120,7 @@ def regenerate_static_page(d, eidx, registry=None):
 {rel_block}
 <h1>{esc(d["title"])}</h1>
 <div style="font-size:.85em;color:#777;margin-bottom:10px">{esc(d["creator"])} · {esc(d["date"])} · {esc(d.get("content_type",""))}{f' · <span style="color:var(--accent);font-weight:500">{esc(version)}</span>' if (version and (version != 'v1.0' or series_id)) else ''}</div>
+{_author_html}
 <a style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0" href="/data/deposits/AXN-{hex_id}.md" download>↓ Download MD</a> <a style="display:inline-block;background:var(--accent);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0 6px 4px" href="/papers/AXN-{hex_id.zfill(4)}.pdf">↓ PDF</a>
 <div style="margin:8px 0">{kw_html}</div>
 {_corr_html}{_surf_html}{_ident_html}{_search_html}
