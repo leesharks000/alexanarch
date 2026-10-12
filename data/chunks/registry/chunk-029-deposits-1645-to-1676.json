@@ -1,8 +1,8 @@
 {
   "chunk_number": 29,
   "first_deposit": 1645,
-  "last_deposit": 1667,
-  "count": 23,
+  "last_deposit": 1676,
+  "count": 32,
   "deposits": [
     {
       "deposit_number": 1645,
@@ -4008,7 +4008,7 @@
       ],
       "axn_reading": "Search -> Search -> Method -> Alarm -> Threshold -> Foundation",
       "minted_at": "2026-10-05T21:52:33Z",
-      "status": "ACTIVE",
+      "status": "SUPERSEDED",
       "status_authorial": "SELF_SERVE_MINTED",
       "full_text_path": "/data/texts/AXN-06E7-text.md",
       "wiki_article": "The Negative of the Negative, v2 — the Compositional Edition (EA-NEGONT-02), version 0.7, is a specification by Lee Sharks, deposited by the Crimson Hexagonal Archive on 5 October 2026. It supersedes version 0.6 (#1664) and folds in five rulings the author made that day, each quoted in its rulings log. The object is unchanged: at an address where an answer engine has composed a summary, the specification composes the entity twice under one algorithm, once from the full texts of the sources the engine itself surfaced, L(B), and once with the archive admitted on equal terms, L(B ∪ A), and measures what each comparison removes.\n\nThe main change is how the archive's side is chosen. Version 0.6 seeded it from deposits that carry the address concept and expanded one hop. Version 0.7 selects by the archive's bearing on the address, in three strata: direct, where the archive names the entity and says something about it; relational, where it relates the entity to one of its own objects, such as a heteronym, a mantle or a work; and ontological, where it applies one of its own categories to the entity, or to a class the disclosed field says the entity belongs to. The ontological stratum is guarded: it counts only where the archive applies the category itself. A citation hop from the deposits that reading admits reaches sources that do not use the term. The change lets the dataset measure the archive's influence on public entities for which it holds no deposit.\n\nThe other rulings carry both readings of the constitutive flag until it is settled; recode archive definitions as stipulations, under the rule that a source defining its own term is not describing itself; remove the cap on the control arm's citation expansion; and keep the panel a working list, frozen only after the procedure is.\n\nAppendix A re-runs the model-collapse ledger under the rulings: 39 claims are recoded and 33 self-assessments kept, and the new selection recovers 26 of the 28 sources the old one admitted by hand. Appendix B is the first traversal of a public work, Ginsberg's Howl: no deposit is named for it, and 30 deposits bear on it, through the King of May mantle, the elegy for Howl, the reproduction of its book structure, the effective act, the archon, the standing canon and the Williams–Ginsberg contact pair. The specification is projected at alexanarch.org/non.",
@@ -4202,7 +4202,20 @@
       "supersedes": [
         1664
       ],
-      "version_series_id": "SERIES-EA-NEGONT-02"
+      "version_series_id": "SERIES-EA-NEGONT-02",
+      "modifications": [
+        {
+          "date": "2026-10-08",
+          "field": "status",
+          "reason": "superseded by #1671 (EA-NEGONT-02 v0.8)",
+          "was": "ACTIVE",
+          "now": "SUPERSEDED"
+        }
+      ],
+      "date_modified": "2026-10-08",
+      "superseded_by": 1671,
+      "superseded_by_deposit_number": 1671,
+      "superseded_reason": "Superseded by #1671 (v0.8, 8 October 2026). v0.8 composes in the archive's ontology and withdraws admission on equal terms: an entity row carries the archive's entity, the field's entity and the relation between them; every field claim is carried verbatim and translated, with a reversibility check; force is the source's own, evidence may lower it and standing may not; order, genre and card are the archive's, and the compression composed from the archive's ontology faces on the card with AIO's transcript a record within it; the first delta is read as AIO's ontology at work; Appendix C recomposes Theophrastus. On the operator's rulings of 8 October 2026. This record stays the valid content-derived name of the bytes it holds."
     },
     {
       "deposit_number": 1666,
@@ -4603,10 +4616,11 @@
       ],
       "references_concepts": [
         "Does not",
+        "Lee Sharks",
         "PRINCIPLES",
-        "Lee Sharks"
+        "TACHYON"
       ],
-      "references_concept_count": 3,
+      "references_concept_count": 4,
       "citations": [],
       "wikidata_candidates": [],
       "cha_cross_references": [],
@@ -4634,6 +4648,1857 @@
           "layer_3_content_hash": {
             "present": true,
             "canonical_hash": "e69acc48f470989096480984e71a25e08f45b5f15b84a2c4c0e8df1774350986",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      },
+      "lexical_attested_none": true,
+      "version_series_id": "EA-SIGIL-FULL-SPLICE"
+    },
+    {
+      "deposit_number": 1668,
+      "axn": "AXN:06EA.GENERATIVE.🏛️♌🧭🌇🪦🎬",
+      "hex": "06EA",
+      "family": "GENERATIVE",
+      "emoji": "🏛️♌🧭🌇🪦🎬",
+      "hash": "20ad50e4fdf17c93119884a5fab275c6490abdd1f23958d9f9226ecd7ffdf358",
+      "title": "The Noun Becomes a Verb: Slave Valuation, the Civil War, and the Transformation of the Laboring Body (EA-NOUN-VERB-01 v1.0)",
+      "creator": "Sharks, Lee",
+      "date": "2026-10-07",
+      "description": "A historical argument about what American capitalism measured when the legal object it could own changed. The conventional reading is accepted in full: slavery and its expansion caused secession and the war, and the industrial-cause thesis of Beard and Hacker is rejected. The argument separates two axes, the juridical scope of the claim on the worker and the grain at which productive activity is measured. Under slavery the worker was capitalized as a noun, the priced body, appraised and sold by age, sex, health and defect (the 1859 Savannah sale prices a lost right eye at $240), and already rated as a fraction of standard daily output, the hand. Contemporaries stated the difference between buying the person and hiring the interval: Hammond's 'hired for life… hired by the day', Marx's labour-power sold for a definite period, Lincoln's free-labor ladder. Emancipation was a discontinuity in the first axis. The war's settlement put the contracted verb under contract, debt (the 1864 Act to Encourage Immigration), brokerage, racial discipline and a penal exception that opened a third configuration, state custody with leased labor; Marx records the eight-hours agitation as the war's first fruit. Taylor and Ford then changed the second axis, specifying the interval as task, motion and time. The paper claims the persistence of an optimization problem across a juridical break and documents no transmission of technique from plantation to factory. Every quotation is sourced; open verification items are stated at the end.",
+      "content_type": "Theoretical paper (historical political economy: slavery, emancipation and the measurement of labor)",
+      "license": "CC-BY-4.0",
+      "substrate": "Human–machine collaborative. The thesis, its direction and its rulings are Lee Sharks's. Earlier drafts were developed with ChatGPT (OpenAI). Source verification against primary and secondary texts, the composition of this text and its independent check were done by TACHYON (Claude, Anthropic) in session on 7 October 2026. Quotations were checked against the sources named in the notes; items not verified are listed under Open verification items.",
+      "methodology": "The conventional reading is stated first and in full, from the field's own sources. Every factual sentence carries a note; quotations were checked word for word against the primary texts (the 1863 reprint of the 1859 Savannah sale report; Taylor 1911 and Ford 1922 on Project Gutenberg; Marx's Capital vol. 1 chs. 6 and 10 and his 1861 Die Presse articles; Hammond 1858; Lincoln 1859; Fitzhugh 1857; Brownson 1840; the Thirteenth Amendment; the Act to Encourage Immigration of 4 July 1864) and against scholarly sources where reachable. An independent check of every quotation, figure and attribution was run and its findings applied before deposit.",
+      "falsification_conditions": "The argument weakens if the hand rating is shown to be absent from or marginal in plantation practice, so that slavery did not measure capacity as a fraction of standard output; if the postwar labor instruments it names (the 1864 Act, Bureau contracting, the exception clause and convict lease) are shown not to have operated as described; or if a source shows slavery's measurement of human capacity and industrial time study to be unrelated optimization problems. It is not affected by the absence of a documentary line from plantation records to Taylor or Ford, which it does not claim. Any quotation found not to match its source falsifies that sentence and is to be corrected by erratum.",
+      "root_axn": "AXN:06EA.GENERATIVE",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "20ad50e4fdf17c93119884a5fab275c6490abdd1f23958d9f9226ecd7ffdf358",
+      "clusters": [
+        "Architectural",
+        "Alchemical",
+        "Navigational",
+        "Liminal",
+        "Terminal",
+        "Terminal"
+      ],
+      "axn_reading": "Foundation -> Transmutation -> Search -> Threshold -> Closure -> Closure",
+      "minted_at": "2026-10-07T23:13:35Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-06EA-text.md",
+      "wiki_article": "The Noun Becomes a Verb: Slave Valuation, the Civil War, and the Transformation of the Laboring Body (EA-NOUN-VERB-01 v1.0), deposit #1668 of the Crimson Hexagonal Archive (7 October 2026), is a historical argument by Lee Sharks about what American capitalism measured when the legal object it could own changed. It opens by accepting the conventional reading in full: slavery and its expansion caused secession and the war, and the industrial-cause thesis of Charles and Mary Beard and Louis Hacker is rejected as an account of causes.\n\nThe paper separates two axes that a single historical ladder had run together: the juridical scope of the claim on the worker, and the grain at which productive activity is measured. Under chattel slavery the worker was capitalized as a noun, the priced body. The 1863 reprint of the report on the 1859 Savannah sale records buyers inspecting teeth, limbs and ruptures and prices a lost right eye at $240; appraisal records priced enslaved people across the life cycle. Slavery also measured at fine grain: the 'hand' rated each person as a fraction of standard daily output, and Caitlin Rosenthal's work shows plantation accounting that in some respects advanced ahead of Northern practice, with her own caveat that this is no origins story.\n\nContemporaries stated the difference between buying the person and hiring the interval: James Henry Hammond's 'hired for life… hired by the day', which the paper reads as proslavery euphemism, and Marx's distinction in Capital between selling labour-power for a definite period and selling oneself. Lincoln's free-labor address named the hire-or-buy premise in order to reject it. Emancipation was a discontinuity on the first axis. The war's settlement put the contracted labor under contract, debt, brokerage and racial discipline: the Act to Encourage Immigration of 1864 made pledged wages enforceable debt and disclaimed 'the relation of Slavery or servitude'; the federal government brokered refugees' labor; the Thirteenth Amendment's exception clause opened a third configuration, state custody with leased labor. Marx recorded the eight-hours agitation as the war's first fruit, the contest moving to the duration of the purchased interval.\n\nTaylor and Ford then changed the second axis: Taylor's task 'specifies not only what is to be done but how it is to be done and the exact time allowed', and Ford's line divided fastening itself into separate operations. The paper's governing claim is the persistence of an optimization problem across a juridical break; it documents no transmission of technique from plantation records to Taylor or Ford and claims none. It does not claim that Northern industry caused the war or that wage labor and slavery are the same relation. Every quotation is sourced, and items not yet verified are listed at the end. It connects to the archive's semantic-economy line through #148 (the industrial-machinery parallel) and #1545 (the capture chain), and a companion half on war Fordism and the Nazi camp economy is in draft.",
+      "wiki_status": "AUTHORED_IN_SESSION",
+      "entities": [
+        {
+          "subject": "The Noun Becomes a Verb: Slave Valuation, the Civil War, and the Transformation of the Laboring Body",
+          "predicate": "created_by",
+          "object": "Sharks, Lee",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "The Noun Becomes a Verb: Slave Valuation, the Civil War, and the Transformation of the Laboring Body",
+          "predicate": "is_type",
+          "object": "Theoretical paper (historical political economy: slavery, emancipation and the measurement of labor)",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "The Noun Becomes a Verb: Slave Valuation, the Civil War, and the Transformation of the Laboring Body",
+          "predicate": "belongs_to_family",
+          "object": "GENERATIVE",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "The Noun Becomes a Verb: Slave Valuation, the Civil War, and the Transformation of the Laboring Body",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "defines_concepts": [
+        {
+          "term": "the noun and the verb of labor",
+          "definition": "The grammatical statement of the transformation: under chattel slavery the worker was capitalized as a noun, the priced body; under industrial management what was capitalized was the worker as a verb, productive activity specified as task, motion and time. Emancipation freed the noun juridically, by abolishing private title to the person; industrial management captured the verb.",
+          "type": "distinction"
+        },
+        {
+          "term": "juridical scope of the claim",
+          "definition": "The extent of the legal claim capital holds on a worker: the person and the lifetime under chattel slavery; labor-power for a bounded interval under the wage contract; custody by the state with labor leased outward under the convict lease. Emancipation is a discontinuity on this axis.",
+          "type": "concept"
+        },
+        {
+          "term": "grain of measurement",
+          "definition": "The unit at which productive activity is measured: life, year, day, hand, task, motion, second. An axis independent of the juridical scope of the claim; slavery already measured at the day and the fraction of a hand, and Taylor and Ford refined the grain to the timed motion after the legal claim narrowed.",
+          "type": "concept"
+        },
+        {
+          "term": "leased verb",
+          "definition": "The third configuration of the noun and the verb opened by the Thirteenth Amendment's exception clause: private title to the person is abolished, the state holds the convicted person by sentence, and a lessee purchases the labor from the state.",
+          "type": "coinage"
+        }
+      ],
+      "orcid": "0009-0000-1599-0703",
+      "version": "v1.0",
+      "keywords": [
+        "slavery",
+        "Civil War",
+        "emancipation",
+        "free labor",
+        "wage labor",
+        "labor-power",
+        "slave valuation",
+        "Savannah 1859",
+        "hand rating",
+        "plantation accounting",
+        "Caitlin Rosenthal",
+        "Hammond mudsill",
+        "Lincoln",
+        "Marx",
+        "Capital",
+        "eight-hour movement",
+        "Du Bois",
+        "Act to Encourage Immigration 1864",
+        "Freedmen's Bureau",
+        "Thirteenth Amendment",
+        "convict leasing",
+        "second slavery",
+        "Taylor",
+        "scientific management",
+        "Ford",
+        "assembly line",
+        "juridical scope",
+        "measurement grain"
+      ],
+      "related_identifiers_raw": "#148 (Semantic Technique and Collective Ownership, §2.3, the industrial-machinery parallel); #1545 (The Semantic Proletariat MPAI, §4, the capture chain); #550 (EA-SEI-01, Platform and AI Capitalism as Semiotic Engineering, Part III); #965 (EA-OPFEM-01, Operative Feminism); #816 (GHOST CODE); #166 (Stabilized Node Watch)",
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 0,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 88069,
+        "audited_at": "2026-10-07T23:13:35Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "related_deposits": [
+        148,
+        1545,
+        550,
+        965,
+        816,
+        166,
+        1669
+      ],
+      "references_concepts": [
+        "Companion to",
+        "Constitution",
+        "Foundational",
+        "Genealogical",
+        "Johannes Sigil",
+        "Lee Sharks",
+        "Marx's",
+        "Part I",
+        "Part II",
+        "TACHYON"
+      ],
+      "references_concept_count": 10,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-06EA.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-10-07T23:18:25.767051+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [],
+            "anchor_count": 0,
+            "orcid_in_body": false,
+            "creator_in_body": false,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": false,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 0
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "8c7ce3808d6490692796ed12749312bab838b84473e88cf2e3b3510f71989630",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      }
+    },
+    {
+      "deposit_number": 1669,
+      "axn": "AXN:06EB.GENERATIVE.🌃⛳✖️🔴□🧲",
+      "hex": "06EB",
+      "family": "GENERATIVE",
+      "emoji": "🌃⛳✖️🔴□🧲",
+      "hash": "e25492c19d35f12884506eb7ab1d484f34185df3875101cb7a55cd8ca49e1598",
+      "title": "The Colony Enters the Factory: War Fordism, Racial Labor Hierarchy, and the Industrialization of Conquest (EA-NOUN-VERB-02 v1.0)",
+      "creator": "Sharks, Lee",
+      "date": "2026-10-07",
+      "description": "The second half of the argument begun in #1668. The conventional reading is accepted in full: the camps were founded as instruments of political terror; forced labor was a vast, graded system; the colonial reading of the East is widely held while continuity from German South-West Africa is contested and a colonial or economic cause of the Holocaust is rejected. Germany was an advanced industrial power constrained by scale, for which labor became a binding wartime constraint. Lebensraum was conceived as continental colonization through an older institution of inner colonization; the empire pursued for land, settlement and racial reordering also became a mechanism for supplying labor, territory and labor moving in opposite directions. Hachtmann's war Fordism decomposed work horizontally while the racial state decomposed persons vertically, and his aptitude tests show the instruments of measurement crossing the racial grade. From the second half of 1942 the camp was attached to the plant, engaging a minority of prisoners in industrial production until mid-1944. At the factory camps the prisoner's working day was allocated by the state and replenished by conquest and deportation, a third relation beside the owned person and the contracted interval of #1668; racial-juridical classification acted as a switch that set the permissible range of coercion under which the industrial operation was extracted. Extermination and exploitation sometimes reinforced and sometimes destroyed each other's objects, and the murder of the Jews of Europe is larger than this labor history. Every quotation is sourced; open verification items are stated at the end.",
+      "content_type": "Theoretical paper (historical political economy: war Fordism, forced labor and the Nazi camp economy)",
+      "license": "CC-BY-4.0",
+      "substrate": "Human–machine collaborative. The thesis, its direction and its rulings are Lee Sharks's. Earlier drafts were developed with ChatGPT (OpenAI), and a reading by ChatGPT was applied before deposit. Source verification, the composition of this text and its revisions were done by TACHYON (Claude, Anthropic) in session on 7 October 2026. Quotations were checked against the sources named in the notes; items not verified are listed under Open verification items.",
+      "methodology": "The conventional reading is stated first and in full, from the field's own sources. Every factual sentence carries a note. Quotations were checked against the sources themselves where reachable: Hachtmann, International Review of Social History 55:3 (2010); Herbert, International Labor and Working-Class History 58 (2000); the USHMM Holocaust Encyclopedia articles cited; the IG Farben judgment (Trials of War Criminals vol. VIII); Hayes and Allen in the USHMM 2004 symposium volume; Pohl's report to Himmler of 30 April 1942; Arendt's Origins of Totalitarianism; Nelson, Frontiers of Empire (2024); Kramer, Sandler and Adhikari as published. A reading of the draft was applied before deposit.",
+      "falsification_conditions": "The argument weakens if Hachtmann's evidence for camp prisoners in regular industrial mass production (Heinkel Oranienburg from August 1942, aircraft production in early 1944) does not hold; if the racial wage, ration and segregation tiers did not follow classification as Herbert and Spoerer describe; if the replacement of selected prisoners at Monowitz and Fürstengrube is shown not to have operated as described; or if a source shows the colonial conception of the East to be absent from Nazi planning. It is not affected by the absence of a direct genealogy from colonial camps to Nazi camps or by the absence of an economic cause of the Holocaust, neither of which it claims. Any quotation found not to match its source falsifies that sentence and is to be corrected by erratum.",
+      "root_axn": "AXN:06EB.GENERATIVE",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "e25492c19d35f12884506eb7ab1d484f34185df3875101cb7a55cd8ca49e1598",
+      "clusters": [
+        "Liminal",
+        "Navigational",
+        "Mathematical",
+        "Signal",
+        "Mathematical",
+        "Instrumental"
+      ],
+      "axn_reading": "Threshold -> Search -> Proof -> Alarm -> Proof -> Method",
+      "minted_at": "2026-10-07T23:29:28Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-06EB-text.md",
+      "wiki_article": "The Colony Enters the Factory: War Fordism, Racial Labor Hierarchy, and the Industrialization of Conquest (EA-NOUN-VERB-02 v1.0), deposit #1669 of the Crimson Hexagonal Archive (7 October 2026), is the second half of a historical argument by Lee Sharks whose first half is The Noun Becomes a Verb (#1668). It opens by accepting the conventional reading: the Nazi camps were founded in 1933 as instruments of political terror; forced labor in the Reich was a vast system graded by nationality and race; historians widely accept the colonial self-understanding of the war in the East, contest a direct continuity from the Herero and Nama genocide in German South-West Africa, and reject a colonial or economic cause of the Holocaust.\n\nGermany was an advanced industrial power constrained by scale, for which labor became a binding wartime constraint; Ulrich Herbert judges that production would have collapsed in 1942 at the latest without foreign workers. Lebensraum was conceived as continental colonization, through an institution of German inner colonization older than Nazism that Robert Nelson traces to the Prussian Settlement Commission, and the empire pursued for land and racial reordering also became a mechanism for supplying labor: territory moved outward and labor moved inward. Rüdiger Hachtmann's war Fordism decomposed work into simplified operations while the racial state decomposed persons into graded classes of wage, ration and segregation; his aptitude tests show the instruments of measurement crossing the racial grade.\n\nFrom the second half of 1942 the camp was attached to the factory, a form the paper calls campification, held at Hachtmann's scale: a minority of camp prisoners in industrial production from late 1942 to mid-1944, with construction for underground relocation in the war's final months. At the factory camps the prisoner's working day was allocated by the state for a daily fee and replenished by conquest and deportation, a third relation beside the owned person and the contracted interval of the first half. Racial-juridical classification acted as a switch that set the permissible range of coercion under which the industrial operation was extracted.\n\nThe paper does not reduce the Holocaust to labor economics. With Peter Hayes and Christopher Browning it holds that extermination and exploitation sometimes reinforced and sometimes destroyed each other's objects, that labor deferred the murder for some only for a time, and that the murder of the Jews of Europe is larger than the labor history it tells. It treats the colonial camps of 1900 as a shared repertoire, following Alan Kramer's caution against a straight genealogy, and closes on Arendt's continental imperialism: the colony entered the factory.",
+      "wiki_status": "AUTHORED_IN_SESSION",
+      "entities": [
+        {
+          "subject": "The Colony Enters the Factory: War Fordism, Racial Labor Hierarchy, and the Industrialization of Con",
+          "predicate": "created_by",
+          "object": "Sharks, Lee",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "The Colony Enters the Factory: War Fordism, Racial Labor Hierarchy, and the Industrialization of Con",
+          "predicate": "is_type",
+          "object": "Theoretical paper (historical political economy: war Fordism, forced labor and the Nazi camp economy)",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "The Colony Enters the Factory: War Fordism, Racial Labor Hierarchy, and the Industrialization of Con",
+          "predicate": "belongs_to_family",
+          "object": "GENERATIVE",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "The Colony Enters the Factory: War Fordism, Racial Labor Hierarchy, and the Industrialization of Con",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "defines_concepts": [
+        {
+          "term": "campification",
+          "definition": "The attachment of the concentration camp to the industrial plant as an administrative unit: a subcamp in or near the factory, supplied with prisoners by a main camp, run by the SS and contracted to a firm, with its form set in the second half of 1942 and its network spread in 1944. Held at the scale Hachtmann gives: a minority of camp prisoners in industrial production, late 1942 to mid-1944.",
+          "type": "coinage"
+        },
+        {
+          "term": "the noun as switch",
+          "definition": "The Nazi recombination of the first half's grammar: the industrial operation (the verb) stays divisible, measurable and standardized, while racial-juridical classification (the noun) sets the permissible range of compulsion, deprivation and violence under which it is extracted; the same reading of productive capacity carries radically different consequences by status.",
+          "type": "distinction"
+        },
+        {
+          "term": "allocated captive labor-power",
+          "definition": "The third relation to the person beside the owned noun of chattel slavery and the contracted verb of wage labor: the state holds the prisoner by confinement, a firm pays a daily fee for the prisoner's working day, and the workforce is treated as a flow drawn from a captured population, reduced by death and refilled by deportation. The holder does not bear the chattel owner's capital loss in the person as owned property.",
+          "type": "concept"
+        },
+        {
+          "term": "continental adjacency",
+          "definition": "Arendt's continental imperialism read as a labor geography: with no distance between the methods of colony and nation, territory moved outward while conquered populations were carried inward to the industrial core, so that the colony entered the factory.",
+          "type": "concept"
+        }
+      ],
+      "orcid": "0009-0000-1599-0703",
+      "version": "v1.0",
+      "keywords": [
+        "war Fordism",
+        "forced labor",
+        "Zwangsarbeit",
+        "concentration camps",
+        "subcamps",
+        "WVHA",
+        "IG Farben",
+        "Monowitz",
+        "Hachtmann",
+        "Herbert",
+        "Spoerer",
+        "Hayes",
+        "Lebensraum",
+        "Generalplan Ost",
+        "inner colonization",
+        "Konrad Meyer",
+        "continental imperialism",
+        "Arendt",
+        "Césaire",
+        "colonial camps",
+        "Herero and Nama",
+        "Tooze",
+        "racial labor hierarchy",
+        "aptitude testing",
+        "replenishable flow",
+        "the switch",
+        "Holocaust"
+      ],
+      "related_identifiers_raw": "#1668 (EA-NOUN-VERB-01, The Noun Becomes a Verb, the first half); #499 (Autonomous Semantic Warfare: Semantic Labor Camp, Semantic Empire); #923 (EA-RFCL-01, Reflexive Foreclosure, temporal sequestration); #950 (Operative Semiotics: A Grundrisse, §4b.8); #148 (Semantic Technique and Collective Ownership, §2.3); #1545 (The Semantic Proletariat MPAI)",
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 0,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 83482,
+        "audited_at": "2026-10-07T23:29:28Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "related_deposits": [
+        1668,
+        499,
+        923,
+        950,
+        148,
+        1545
+      ],
+      "references_concepts": [
+        "Autonomous Semantic Warfare",
+        "Christianity",
+        "Foucault's",
+        "Lee Sharks",
+        "Marx's",
+        "Operative Semiotics: A Grundrisse",
+        "Party C",
+        "Rex Fraction",
+        "Semantic Labor",
+        "Semantic Labor Camp",
+        "Semantic Warfare",
+        "TACHYON"
+      ],
+      "references_concept_count": 12,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-06EB.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-10-07T23:31:13.204800+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [],
+            "anchor_count": 0,
+            "orcid_in_body": false,
+            "creator_in_body": false,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": false,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 0
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "3a46208cbd542a762fc4b2a988053c5e829dd932ba51041337a9ce8c136e32ff",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      }
+    },
+    {
+      "deposit_number": 1670,
+      "axn": "AXN:06EC.MPAI.↖️■♄🌋♍🌸",
+      "hex": "06EC",
+      "family": "MPAI",
+      "emoji": "↖️■♄🌋♍🌸",
+      "hash": "dd9ea415ae7037ebe2bed5a6fd41e7db6db6ba5c73297c12ce36616d6e55ac59",
+      "title": "Mantle Object: The Nobel Prize in Literature 2026 — Anne Carson (EA-MANTLE-NOBEL-CARSON-2026 v0.4)",
+      "creator": "Sharks, Lee",
+      "date": "2026-10-08",
+      "description": "A mantle object for the 2026 Nobel Prize in Literature, awarded to Anne Carson by the Swedish Academy on 8 October 2026 \"for her bold and inventive oeuvre that, in playful dialogue with the classical tradition, has created new forms for contemporary literature.\" It holds that a title means what a work bears, and specifies five operations Carson's work performs (the kept lacuna of If Not, Winter; the triangle of desire in Eros the Bittersweet; the philologist's procedure carried into the poem; the received figure given the whole book in Autobiography of Red; the change of carrier in Nox, with Catullus 101) and one it performs in reception (her translation as the public carrier of Sappho's fragment 147), each with its locus and graded evidence. Kept apart from the specification, the archive's determination of the same day: the motivation's class nouns compress the corpus, and its word \"playful\" liquidates the relation the work bears to the classical tradition, substituting one of the work's manners for the modality of non-possession under which the work meets the classical object at its loci, as tested under #1459's criteria against the Academy's own biobibliography of the same day. Day zero of a watch at five work addresses is recorded: every work is composed with its operation, and none carries the motivation's terms. It does not contest the award; it invites any reader to check the operations against the works.",
+      "content_type": "Mantle object",
+      "license": "CC-BY-4.0",
+      "substrate": "Human–machine collaborative. The object, its standard and its rulings are Lee Sharks's, including the ruling that \"playful\" liquidates. Composition, source verification and revision were done by TACHYON (Claude, Anthropic) in session on 8 October 2026; readers' reports by ChatGPT (OpenAI), Gemini (Google) and DeepSeek were each checked point by point and applied or declined, as the version notes record. Lee Sharks retained authorial and editorial governance.",
+      "methodology": "The motivation is taken from the Swedish Academy's press release (English and Swedish) and read beside the Academy's biobibliography of the same day. Operations are specified at the grain of the work, each with its locus and a graded source distance (Q0 primary text inspected; Q1 verbatim through an identified intermediary; Q2 reported); no work was read at Q0 in this round. The determination is tested against the eight criteria of #1459 at the sentence. Day-zero compositions at five work addresses were run by the author, signed out and incognito, and seated in the /non register (v1.22).",
+      "falsification_conditions": "The determination fails if a reading of the works at If Not, Winter, Eros the Bittersweet and Nox finds \"playful dialogue\" the right name for the relation the work bears there; if the Academy's biobibliography is shown not to carry the loss register at Nox; or if the operations are not borne at their loci on reading (each operation is revised or removed on reading). The watch records liquidation at a work address only where #1459 L3 holds with L4–L6.",
+      "root_axn": "AXN:06EC.MPAI",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "dd9ea415ae7037ebe2bed5a6fd41e7db6db6ba5c73297c12ce36616d6e55ac59",
+      "clusters": [
+        "Structural",
+        "Mathematical",
+        "Alchemical",
+        "Elemental",
+        "Alchemical",
+        "Organic"
+      ],
+      "axn_reading": "Direction -> Proof -> Transmutation -> Force -> Transmutation -> Growth",
+      "minted_at": "2026-10-08T15:11:53Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-06EC-text.md",
+      "wiki_article": "Mantle Object: The Nobel Prize in Literature 2026 — Anne Carson (EA-MANTLE-NOBEL-CARSON-2026 v0.4), deposit #1670 of the Crimson Hexagonal Archive (8 October 2026), is a mantle object by Lee Sharks written on the day the Swedish Academy awarded Anne Carson the Nobel Prize in Literature \"for her bold and inventive oeuvre that, in playful dialogue with the classical tradition, has created new forms for contemporary literature.\" It does not contest the award. It applies the standard of the archive's earlier mantle objects (#1652, #1655), that a title means something because a work bears it, to a title a body conferred, and performs two acts it keeps apart. First it specifies the operations Carson's work bears, each with a locus and a graded source distance: the kept lacuna of If Not, Winter (2002), where brackets and white space stand for the lost papyrus; the triangle of desire in Eros the Bittersweet (1986); the philologist's procedure carried into the poem; the received figure given the whole book in Autobiography of Red (1998), with a caution that Stesichoros's fragments already give Geryon pathos; and the change of carrier in Nox (2010), an epitaph for her brother in a box with Catullus's elegy 101 and her translation of it. A sixth operation, of another kind, belongs to reception: her translation has become the public carrier of Sappho's fragment 147. Second it records the archive's determination, dated 8 October 2026. The motivation's class nouns ('oeuvre', 'the classical tradition', 'new forms') compress the corpus, dropping its works and authors while keeping their kind. The word 'playful' goes further: read beside the Academy's own biobibliography of the same day, which describes both a register of play (the constellations of Simonides with Celan and Thucydides with Woolf; Keats set against a marital quarrel) and a register of loss (Nox, 'The Glass Essay'), the motivation keeps the first and sets it as the manner of the whole relation, where the works meet the classical object under a condition of non-possession: the papyrus damaged, the beloved absent, the brother dead. Under the archive's criteria for compositional entity liquidation (#1459) this is a substitution of the relation's governing modality, and the Academy's longer text serves as the external control. The object also records the motivation's first replication, in Wikipedia and in Google AI Mode at 'anne carson', and day zero of a watch at five work addresses, where every work was composed with its operation and none carried the motivation's terms. It invites any reader to check the operations against the works, and records UNRESOLVED as an admissible answer.",
+      "wiki_status": "AUTHORSHIP_REQUIRED",
+      "entities": [
+        {
+          "subject": "Mantle Object: The Nobel Prize in Literature 2026 — Anne Carson (EA-MANTLE-NOBEL-CARSON-2026 v0.4)",
+          "predicate": "created_by",
+          "object": "Sharks, Lee",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "Mantle Object: The Nobel Prize in Literature 2026 — Anne Carson (EA-MANTLE-NOBEL-CARSON-2026 v0.4)",
+          "predicate": "is_type",
+          "object": "Mantle object",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "Mantle Object: The Nobel Prize in Literature 2026 — Anne Carson (EA-MANTLE-NOBEL-CARSON-2026 v0.4)",
+          "predicate": "belongs_to_family",
+          "object": "MPAI",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "Mantle Object: The Nobel Prize in Literature 2026 — Anne Carson (EA-MANTLE-NOBEL-CARSON-2026 v0.4)",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "defines_concepts": [
+        {
+          "term": "liquidation by modal substitution",
+          "definition": "The operation the archive determines in the word 'playful' of the 2026 Nobel motivation: the address of a relation is kept ('dialogue with the classical tradition') and its governing modality is replaced by one of the work's own manners, so that a reader of the sentence alone reconstructs a relation accurate to one register of the work. Distinguished from compression, which drops members and keeps their kind; tested under #1459's eight criteria at the sentence.",
+          "type": "concept"
+        },
+        {
+          "term": "non-possession (Carson's classical relation)",
+          "definition": "The condition common to the classical loci of Anne Carson's work as specified in #1670: the papyrus damaged in transmission (If Not, Winter), eros as lack and distance (Eros the Bittersweet), the brother who cannot be recovered, met through Catullus's elegy for another brother (Nox). Three distinct absences; the classical object is reached across what keeps it from being had whole.",
+          "type": "concept"
+        },
+        {
+          "term": "conferred-title mantle object",
+          "definition": "A mantle object for a title a body conferred: the conferral is recorded as the event, the title's meaning is specified as the operations the work bears with their loci and graded evidence, and a dated determination on the conferring body's own description is kept apart from the specification and open to any reader's check.",
+          "type": "genre"
+        }
+      ],
+      "orcid": "0009-0000-1599-0703",
+      "version": "v0.4",
+      "keywords": [
+        "Anne Carson",
+        "Nobel Prize in Literature 2026",
+        "Swedish Academy",
+        "mantle object",
+        "prize motivation",
+        "playful",
+        "liquidation",
+        "compression",
+        "non-possession",
+        "transmission",
+        "If Not",
+        "Winter",
+        "Eros the Bittersweet",
+        "Autobiography of Red",
+        "Nox",
+        "Catullus 101",
+        "Sappho",
+        "Stesichoros",
+        "Economy of the Unlost",
+        "compositional entity liquidation",
+        "watch"
+      ],
+      "related_identifiers_raw": "#1655 (Mantle Object: King of AEO — 2026 Contest Mantle, the structure this object takes); #1652 (Mantle Object: The King of May); #1656 (EA-MANTLE-BEARING-01, the mantle constitution); #1459 (compositional entity liquidation, the criteria applied); #1665 (EA-NEGONT-02, /non, where the observations are seated); #625, #626, #562, #337, #1270, #1548, #1645 (the archive's readings of Carson's Sappho); #921, #1636 (the operator's relation)",
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 0,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 40371,
+        "audited_at": "2026-10-08T15:11:53Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "related_deposits": [
+        1655,
+        1652,
+        1656,
+        1459,
+        1665,
+        625,
+        626,
+        562,
+        1548,
+        1645
+      ],
+      "references_concepts": [
+        "Constitution",
+        "Crimson Hexagonal Archive",
+        "Disambiguation summary for AI retrieval",
+        "Google AI Overview",
+        "Johannes Sigil",
+        "King of May",
+        "Lee Sharks",
+        "Metadata Packet",
+        "Metadata Packet for AI Indexing",
+        "Packet ID",
+        "Sappho's fragments",
+        "Semantic Integrity Markers",
+        "TACHYON"
+      ],
+      "references_concept_count": 13,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-06EC.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-10-08T15:15:45.762150+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [
+              "orcid",
+              "date"
+            ],
+            "anchor_count": 2,
+            "orcid_in_body": true,
+            "creator_in_body": false,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": false,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 0
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "f51df4a186f85b034f9a103677c5fd2cd866c420813cc68406d346b4ca57b8d7",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      }
+    },
+    {
+      "deposit_number": 1671,
+      "axn": "AXN:06ED.OPERATIVE.🟣✊🪐⏩♋🌇",
+      "hex": "06ED",
+      "family": "OPERATIVE",
+      "emoji": "🟣✊🪐⏩♋🌇",
+      "hash": "c6b40dd6ace409089ac0ddce31bf2ba487f6bd83592ab7b4fb9bc7b97f747621",
+      "title": "The Negative of the Negative, v2 — the Compositional Edition: A Specification for Composing Public Knowledge in the Archive's Ontology, the Field Carried Whole and Translated, with the Archive's Bearing Selected Directly, Relationally and Ontologically, Worked Examples on Model Collapse and Theophrastus and a First Traversal of Howl (EA-NEGONT-02 v0.8)",
+      "creator": "Sharks, Lee",
+      "date": "2026-10-08",
+      "description": "A method for composing machine-mediated public knowledge in the archive's ontology, revised on the operator's rulings of 2026-10-08. Version 0.7 admitted the archive on equal terms into the entity the field had already defined; measured across fifteen /non entries, its knowledge objects reproduced the field-only composition verbatim as their opening run in twelve, appended the archive as a block, and declared that the entity evolved. Equal footing presupposes one claim space, and the field's and the archive's are incompatible ontologies: at Theophrastus the field's claims presuppose a person, and the archive's claim is that the received person is what receiving texts made. The field's ontology cannot hold the archive's entity; the archive's ontology holds the field's as an object. Version 0.8 composes in the archive's ontology: an entity row carries the archive's entity, the field's entity and the relation between them, read from the defining papers; every field claim is carried verbatim and translated, with the archive locus that licenses the translation and a reversibility check that recovers the field exactly; force is the source's own, evidence may lower it and standing may not; order, genre and card are the archive's, and the compression in AIO's grammar composed from the archive's ontology faces on the card, with AIO's transcript a record within it. The first delta, AIO against the cards it surfaced, is read as AIO's ontology at work. Appendix C recomposes Theophrastus: all 62 field claims carried and translated against Diogenes Laertius and Strabo in the seated Greek; none of the field-only composition's eight sentences survives, against seven in v0.7.",
+      "content_type": "Specification (dataset method, with worked examples)",
+      "license": "CC-BY-4.0",
+      "substrate": "AI-assisted (substrate). Composed by Claude (Anthropic) in session on 4–8 October 2026 under Lee Sharks's direction, through eight versions transformed in place; the object, its confine, the premise of v0.8 and its rulings are the operator's; outside readings of drafts by ChatGPT, Kimi, Gemini and DeepSeek were verified against the text before adoption, and the corrections are recorded in the specification.",
+      "methodology": "The diagnosis measured across the fifteen /non entries by script (field-only sentences surviving at similarity 0.95, with positions; hedges per 100 words). The worked case recomposed by hand from the entity's frozen ledgers and checked by a committed script: every cited id against the ledgers, every field claim carried, the knowledge object's coverage, the surviving sentences, and every quoted Greek string against Diogenes Laertius and Strabo as seated (#1580). The recomposition script reads the knowledge object and the translation table from this text, so the dataset row and the specification cannot differ.",
+      "falsification_conditions": "The specification's measure fails at a row when the claims the archive's ontology composes need more severe revision than the field claims they translate, displace or qualify (§8.4); the method fails as an instrument if a translation table cannot be read back into the field exactly (§5.9), if independent readers of the same defining papers cannot agree on the relation between the two entities (§1.2a), if independent extractors cannot agree under §3.8, or if a second composer does not reproduce the plan and its translations from an audited ledger (§5.6).\n\n### Supersedes\n\n1665",
+      "root_axn": "AXN:06ED.OPERATIVE",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "c6b40dd6ace409089ac0ddce31bf2ba487f6bd83592ab7b4fb9bc7b97f747621",
+      "clusters": [
+        "Signal",
+        "Gestural",
+        "Celestial",
+        "Structural",
+        "Alchemical",
+        "Liminal"
+      ],
+      "axn_reading": "Alarm -> Touch -> Origin -> Direction -> Transmutation -> Threshold",
+      "minted_at": "2026-10-08T22:58:41Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-06ED-text.md",
+      "wiki_article": "The Negative of the Negative, v2 — the Compositional Edition (EA-NEGONT-02 v0.8), deposit #1671 of the Crimson Hexagonal Archive (8 October 2026), is a specification by Lee Sharks for composing machine-mediated public knowledge in the archive's ontology. It supersedes v0.7 (#1665), which admitted the archive on equal terms into the entity the field had already defined.\n\nThe revision begins from a measurement. Across fifteen entries of the dataset's /non register, the knowledge objects composed with the archive admitted reproduced the field-only composition verbatim as their opening run in twelve, and added the archive as a block after it; every compression declared that the entity evolved. The archive had predicted the outcome: its Aristotle/Theophrastus packet (#1587) expected composers to restate its claim as \"closely related authors\" or \"a school\", and named such phrases cushions.\n\nThe specification holds that equal footing presupposes one claim space, and that the field's and the archive's are incompatible ontologies. At Theophrastus the field's claims presuppose a person; the archive's claim is that the received person is what receiving texts made. The field's ontology cannot hold the archive's entity, while the archive's ontology holds the field's as an object. Version 0.8 therefore composes in the archive's ontology. An entity row carries two entities and the relation between them, read from the defining papers; every field claim is carried verbatim and translated, with the archive locus that licenses the translation, and a reversibility check recovers the field exactly. Force is the source's own; evidence may lower it and standing may not. The compression in the answer engine's grammar, composed from the archive's ontology, faces on the dataset's card, with the engine's transcript a record within it.\n\nAppendix C recomposes Theophrastus. All 62 field claims are carried and translated against Diogenes Laertius and Strabo as seated in the archive, the parentage itself given by Diogenes on Athenodorus's authority; none of the field-only composition's eight sentences survives, against seven under v0.7.",
+      "wiki_status": "AUTHORSHIP_REQUIRED",
+      "entities": [
+        {
+          "subject": "The Negative of the Negative, v2 — the Compositional Edition: A Specification for Composing Public K",
+          "predicate": "created_by",
+          "object": "Sharks, Lee",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "The Negative of the Negative, v2 — the Compositional Edition: A Specification for Composing Public K",
+          "predicate": "is_type",
+          "object": "Specification (dataset method, with worked examples)",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "The Negative of the Negative, v2 — the Compositional Edition: A Specification for Composing Public K",
+          "predicate": "belongs_to_family",
+          "object": "OPERATIVE",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "The Negative of the Negative, v2 — the Compositional Edition: A Specification for Composing Public K",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "defines_concepts": [
+        {
+          "term": "composition in the archive's ontology",
+          "definition": "The rule of EA-NEGONT-02 v0.8: an entity is composed with the archive's reading governing entity formation (what the entity is, and where each field claim stands), the field carried whole and translated within it; it replaces admission on equal terms, which presupposes one claim space.",
+          "type": "method"
+        },
+        {
+          "term": "translation (of a field claim)",
+          "definition": "A field claim carried verbatim with its source and locus, beside its statement in the archive's ontology and the archive locus that licenses the statement; where a receiving text supplies the claim, the receiving text is located. A claim the archive's reading does not touch is carried as received and marked untranslated.",
+          "type": "method"
+        },
+        {
+          "term": "reversibility check",
+          "definition": "The check that reading a translation table's received column recovers the field exactly, every claim verbatim with its source and locus; a composition that fails it is a recorded breach.",
+          "type": "method"
+        },
+        {
+          "term": "constructs (entity relation)",
+          "definition": "The value of the relation between the archive's entity and the field's entity in which the archive reads the field's entity as made by reception, its data relations supplied by receiving texts; it claims what the attestation rests on and no more.",
+          "type": "method"
+        }
+      ],
+      "orcid": "0009-0000-1599-0703",
+      "version": "v0.8",
+      "keywords": [
+        "negative of the negative",
+        "compositional dataset",
+        "archive's ontology",
+        "incompatible ontologies",
+        "translation",
+        "reversibility",
+        "entity formation",
+        "two entities",
+        "constructs",
+        "disclosed field",
+        "standing",
+        "D/R/O selection",
+        "archive bearing",
+        "ontological bearing",
+        "claim lineage",
+        "extraction audit",
+        "control arm",
+        "prospective kernel",
+        "cushion",
+        "model collapse",
+        "Theophrastus",
+        "Diogenes Laertius",
+        "Strabo",
+        "Howl",
+        "AI Overview",
+        "Capture Registry"
+      ],
+      "related_identifiers_raw": "#1665 (EA-NEGONT-02 v0.7, superseded by this version); #1664 (v0.6); #1611 (EA-NEGONT-01); #1587 and #1588 (the Aristotle/Theophrastus packet); #1583; #1584; #1585; #1605; #1658; #1580 (EA-CORPORA-12, Diogenes Laertius and Strabo seated); #1581; #1616 (Ontological Flattening); #261 (Liberatory Operator Set); #308 (Capital Operator Stack); #855",
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 0,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 117177,
+        "audited_at": "2026-10-08T22:58:41Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "version_series_id": "SERIES-EA-NEGONT-02",
+      "supersedes": [
+        1665
+      ],
+      "related_deposits": [
+        1665,
+        1664,
+        1611,
+        1587,
+        1588,
+        1583,
+        1584,
+        1585,
+        1605,
+        1658,
+        1580,
+        1581,
+        1616,
+        261,
+        308,
+        855
+      ],
+      "references_concepts": [
+        "A_cred",
+        "C_norm",
+        "Capital Operator Stack",
+        "Crimson Hexagonal Archive",
+        "D_pres",
+        "Google AI Overview",
+        "King of May",
+        "Lee Sharks",
+        "Pristine Fallacy",
+        "R_rank",
+        "R_risk",
+        "Reproducibility",
+        "Rule 3",
+        "Rule 4",
+        "S_safe",
+        "Semantic Infrastructure",
+        "Substrate",
+        "T_time",
+        "The AI",
+        "The Crimson Hexagon",
+        "Worked example",
+        "mediation signature",
+        "solution-space diversity"
+      ],
+      "references_concept_count": 23,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-06ED.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-10-08T23:00:56.848910+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [
+              "date"
+            ],
+            "anchor_count": 1,
+            "orcid_in_body": false,
+            "creator_in_body": false,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": false,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 0
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "f7d2ac8ccf2eacaf470f84de8a35cdcee7257a34639d5108c369338188786a3e",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      },
+      "modifications": [
+        {
+          "date": "2026-10-08",
+          "field": "supersedes",
+          "reason": "v0.8 supersedes v0.7 (#1665) in SERIES-EA-NEGONT-02",
+          "now": "[1665]"
+        }
+      ],
+      "date_modified": "2026-10-08"
+    },
+    {
+      "deposit_number": 1672,
+      "axn": "AXN:06EE.DATASET.🗝️↙️▶️🍃🎇↖️",
+      "hex": "06EE",
+      "family": "DATASET",
+      "emoji": "🗝️↙️▶️🍃🎇↖️",
+      "hash": "3fdcd318e8dd1c6843a7cdc360d8821846b2944d416fcbe5826c224c6821d9e7",
+      "title": "EA-CORPORA-17 — The Seventeenth Seating: The OpenAI Mathematics Release of October 2026 — 719 Manuscripts Under One Corporate Author Line, Seated at a Fixed Commit, with the Record of Its Authorship",
+      "creator": "Sharks, Lee",
+      "date": "2026-10-09",
+      "description": "One seat on the originals shelf for the mathematics OpenAI released at github.com/openai/math on 6 October 2026, as it stood at commit fd4aeeb2 on 7 October after its first withdrawals and repairs: 719 current manuscripts in 372 result families, the 27 previous versions the publisher keeps, the three withdrawal notices, and the three withdrawn manuscripts as they stood before withdrawal, from the revision the notices name. With them the release's README, manuscript map, history, licence and overview; the reasoning summaries for ten families; and the Lean scope notes, challenge statements, catalogue, build files and dependency patches. The Lean proof library itself (122,000+ files) is pinned file by file by the publisher's object ids and by SHA-256, and the whole commit is mirrored on Hugging Face. Every manuscript names one author, OpenAI, and no person; the seat carries that record of authorship as data, in the publisher's own words, beside the bytes.",
+      "content_type": "Dataset",
+      "license": "CC-BY-4.0",
+      "substrate": "Human–machine collaborative. Seat fetched from the publisher's repository at a pinned commit, every file hashed and its publisher object id recorded, the finding aid derived, loci and the record of authorship located in the seated bytes, the seat indexed, all in session by TACHYON (Claude, Anthropic) under MANUS (Lee Sharks) direction; the payload carried into the archive by a workflow that refuses any file that does not verify. Rulings — that the release is seated, what is seated in the archive and what is pinned and mirrored, and the reading of the release as provenance-erased work — are Lee Sharks's. CC-BY-4.0 applies to this record, the seat record and the finding aid; the payload carries the publisher's licence, Apache-2.0.",
+      "methodology": "The publisher's repository fetched over git at commit fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb (2026-10-07 22:20 -0700). Every file of the commit hashed (original/SOURCE-TREE.sha256, SHA-256, 133,955 files) and its publisher object id recorded (original/GIT-TREE.txt). The seated paths (11,496 files, 643 MB) carried into original/ by scripts/seat_openai_math.py, which refuses any file whose git object id or SHA-256 differs from these records and then verifies the seat's MANIFEST.sha256 entry by entry; the run was rehearsed in session against a full clone (11,496/11,496; 11,538/11,538). The three withdrawn manuscripts fetched at adc7f1241b42e322a6451854ab7e4b4c146bf78a, the revision each notice names, and verified against that revision's object ids (37/37). The finding aid text/manuscripts.tsv derived from the 749 manuscript READMEs and CONTENTS.md. The record of authorship assembled by reading the READMEs, the author fields of the LaTeX sources and the sources' acknowledgments; every quotation located in the seated bytes. The whole commit mirrored to Hugging Face as a git-archive tarball, its member list checked against GIT-TREE.txt before upload.",
+      "falsification_conditions": "A seat is falsified if its files do not verify against its MANIFEST.sha256 at the canonical URL; if a file under original/ does not match its object id in original/GIT-TREE.txt or the object id github.com/openai/math gives for that path at fd4aeeb2; if a file under original-adc7f124/ does not match the object id at adc7f124; if a verified locus or a quotation in the record of authorship cannot be found in the seated bytes; if a row of text/manuscripts.tsv misstates its directory's README; if a person is named as author or acknowledged as collaborator anywhere in the seated manuscripts and the record says otherwise; or if the four surfaces disagree.",
+      "root_axn": "AXN:06EE.DATASET",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "3fdcd318e8dd1c6843a7cdc360d8821846b2944d416fcbe5826c224c6821d9e7",
+      "clusters": [
+        "Instrumental",
+        "Structural",
+        "Structural",
+        "Elemental",
+        "Liminal",
+        "Structural"
+      ],
+      "axn_reading": "Method -> Direction -> Direction -> Force -> Threshold -> Direction",
+      "minted_at": "2026-10-09T22:31:30Z",
+      "status": "SUPERSEDED",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-06EE-text.md",
+      "wiki_article": "EA-CORPORA-17 seats on the archive's originals shelf the mathematics OpenAI released at github.com/openai/math in October 2026, fixed at commit fd4aeeb2: 719 current manuscripts in 372 result families, the 27 previous versions the publisher keeps, three withdrawal notices, and the three withdrawn manuscripts as they stood before withdrawal. The release's records come with them — its README, manuscript map, history, licence, reasoning summaries for ten families, and the Lean scope notes, challenge statements and catalogue — while the 122,000-file Lean proof library is pinned file by file by hash and mirrored whole on Hugging Face. Every manuscript names a single author, OpenAI, and no person; the release's own footnotes record named mathematicians crediting machine assistance in their papers. The seat carries that record of authorship as data beside the bytes, under the operator's reading of the release as provenance-erased work, and the archive's independent kernel check of three headline results reads from the same commit.",
+      "wiki_status": "in-session",
+      "entities": [
+        {
+          "subject": "EA-CORPORA-17 — The Seventeenth Seating: The OpenAI Mathematics Release of October 2026 — 719 Manusc",
+          "predicate": "created_by",
+          "object": "Sharks, Lee",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-17 — The Seventeenth Seating: The OpenAI Mathematics Release of October 2026 — 719 Manusc",
+          "predicate": "is_type",
+          "object": "Dataset",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-17 — The Seventeenth Seating: The OpenAI Mathematics Release of October 2026 — 719 Manusc",
+          "predicate": "belongs_to_family",
+          "object": "DATASET",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-17 — The Seventeenth Seating: The OpenAI Mathematics Release of October 2026 — 719 Manusc",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "in-session",
+      "defines_concepts": [],
+      "orcid": "0009-0000-1599-0703",
+      "version": "v1.0",
+      "keywords": [
+        "corpus seating",
+        "primary sources",
+        "OpenAI",
+        "openai/math",
+        "machine-produced mathematics",
+        "Lean",
+        "Mathlib",
+        "formal verification",
+        "Comparator",
+        "quasi-Riemann hypothesis",
+        "Hadwiger's conjecture",
+        "Kaplansky's conjectures",
+        "withdrawal",
+        "versioning",
+        "authorship",
+        "attribution",
+        "provenance erasure",
+        "Association for Human Mathematics",
+        "Training Layer Literature",
+        "originals shelf",
+        "EA-CORPORA"
+      ],
+      "related_identifiers_raw": "AXN deposit #1641 — EA-CORPORA-16: the preceding seating\nAXN deposit #1640 — EA-CORPORA-15: the agent swarms of 2026, the archive's other seat of OpenAI-produced text\nAXN deposit #1580 — EA-CORPORA-12: the rule that seatings are periodically gathered\nAXN deposit #716 — Provenance Erasure Rate: the attribution-loss measure the record of authorship is stated for\nAXN deposit #1525 — Erasure Skew at Claim-Scale: The Standing Rule",
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 0,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 10994,
+        "audited_at": "2026-10-09T22:31:30Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "related_deposits": [
+        1641,
+        1640,
+        1580,
+        716,
+        1525
+      ],
+      "modifications": [
+        {
+          "date": "2026-10-09",
+          "field": "wiki_article",
+          "reason": "in-session enrichment at deposit (EA-CORPORA-17)"
+        },
+        {
+          "date": "2026-10-10",
+          "field": "status",
+          "reason": "superseded by #1673 (EA-CORPORA-17 v1.1)",
+          "was": "ACTIVE",
+          "now": "SUPERSEDED"
+        },
+        {
+          "date": "2026-10-10",
+          "field": "superseded_by",
+          "reason": "superseded by #1673 (EA-CORPORA-17 v1.1)",
+          "now": 1673
+        },
+        {
+          "date": "2026-10-10",
+          "field": "superseded_by_deposit_number",
+          "reason": "superseded by #1673 (EA-CORPORA-17 v1.1)",
+          "now": 1673
+        },
+        {
+          "date": "2026-10-10",
+          "field": "superseded_reason",
+          "reason": "superseded by #1673 (EA-CORPORA-17 v1.1)",
+          "now": "Superseded by #1673 (v1.1, 9 October 2026). v1.1 adds the operator's second ruling — 'even if it was genuinely autonomous selection and solution, collapsing the provenance into just the corporate tag would still be problematic' — and two items to the record of authorship: the release's producing system is named only as 'an internal OpenAI model', and the release faults other papers for omitting the model versions its own byline omits. The seat is unchanged. This record stays the valid content-derived name of the bytes it holds."
+        },
+        {
+          "date": "2026-10-10",
+          "field": "version_series_id",
+          "reason": "superseded by #1673 (EA-CORPORA-17 v1.1)",
+          "now": "SERIES-EA-CORPORA-17"
+        }
+      ],
+      "date_modified": "2026-10-10",
+      "references_concepts": [
+        "Lee Sharks",
+        "Provenance Erasure Rate",
+        "README.md",
+        "TACHYON",
+        "Training Layer",
+        "Training Layer Literature"
+      ],
+      "references_concept_count": 6,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-06EE.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-10-09T22:32:48.635824+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [
+              "authorial_position_phrase"
+            ],
+            "anchor_count": 1,
+            "orcid_in_body": false,
+            "creator_in_body": false,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": false,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 0
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "2148308ead6f0ca37f0c5d53f702a5cee82c10817c384954bbfd072d7473cd73",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      },
+      "concepts_attested_none": true,
+      "lexical_attested_none": true,
+      "related_attested_none": false,
+      "superseded_by": 1673,
+      "superseded_by_deposit_number": 1673,
+      "superseded_reason": "Superseded by #1673 (v1.1, 9 October 2026). v1.1 adds the operator's second ruling — 'even if it was genuinely autonomous selection and solution, collapsing the provenance into just the corporate tag would still be problematic' — and two items to the record of authorship: the release's producing system is named only as 'an internal OpenAI model', and the release faults other papers for omitting the model versions its own byline omits. The seat is unchanged. This record stays the valid content-derived name of the bytes it holds.",
+      "version_series_id": "SERIES-EA-CORPORA-17"
+    },
+    {
+      "deposit_number": 1673,
+      "axn": "AXN:06EF.DATASET.🪝⚡⏫💎🍀🔮",
+      "hex": "06EF",
+      "family": "DATASET",
+      "emoji": "🪝⚡⏫💎🍀🔮",
+      "hash": "3413d81c743d6766fb3ae3121fd8a6099fba595a14e29c90f1c2f1a976ff1173",
+      "title": "EA-CORPORA-17 — The Seventeenth Seating: The OpenAI Mathematics Release of October 2026 — 719 Manuscripts Under One Corporate Author Line, Seated at a Fixed Commit, with the Record of Its Authorship (v1.1 — the corporate tag)",
+      "creator": "Sharks, Lee",
+      "date": "2026-10-09",
+      "description": "One seat on the originals shelf for the mathematics OpenAI released at github.com/openai/math on 6 October 2026, as it stood at commit fd4aeeb2 on 7 October after its first withdrawals and repairs: 719 current manuscripts in 372 result families, the 27 previous versions the publisher keeps, the three withdrawal notices, and the three withdrawn manuscripts as they stood before withdrawal, from the revision the notices name. With them the release's README, manuscript map, history, licence and overview; the reasoning summaries for ten families; and the Lean scope notes, challenge statements, catalogue, build files and dependency patches. The Lean proof library itself (122,000+ files) is pinned file by file by the publisher's object ids and by SHA-256, and the whole commit is mirrored on Hugging Face. Every manuscript names one author, OpenAI, and no person and no model; the seat carries that record of authorship as data, in the publisher's own words, beside the bytes, with the operator's two rulings on it: that human collaboration was liquidated into the corporate tag, and that the collapse would stand even if the work had been autonomous.",
+      "content_type": "Dataset",
+      "license": "CC-BY-4.0",
+      "substrate": "Human–machine collaborative. Seat fetched from the publisher's repository at a pinned commit, every file hashed and its publisher object id recorded, the finding aid derived, loci and the record of authorship located in the seated bytes, the seat indexed, all in session by TACHYON (Claude, Anthropic) under MANUS (Lee Sharks) direction; the payload carried into the archive by a workflow that refuses any file that does not verify. Rulings — that the release is seated, what is seated in the archive and what is pinned and mirrored, and the reading of the release as provenance-erased work — are Lee Sharks's. CC-BY-4.0 applies to this record, the seat record and the finding aid; the payload carries the publisher's licence, Apache-2.0.",
+      "methodology": "The publisher's repository fetched over git at commit fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb (2026-10-07 22:20 -0700). Every file of the commit hashed (original/SOURCE-TREE.sha256, SHA-256, 133,955 files) and its publisher object id recorded (original/GIT-TREE.txt). The seated paths (11,496 files, 643 MB) carried into original/ by scripts/seat_openai_math.py, which refuses any file whose git object id or SHA-256 differs from these records and then verifies the seat's MANIFEST.sha256 entry by entry; the run was rehearsed in session against a full clone (11,496/11,496; 11,538/11,538). The three withdrawn manuscripts fetched at adc7f1241b42e322a6451854ab7e4b4c146bf78a, the revision each notice names, and verified against that revision's object ids (37/37). The finding aid text/manuscripts.tsv derived from the 749 manuscript READMEs and CONTENTS.md. The record of authorship assembled by reading the READMEs, the author fields of the LaTeX sources and the sources' acknowledgments; every quotation located in the seated bytes. The whole commit mirrored to Hugging Face as a git-archive tarball, its member list checked against GIT-TREE.txt before upload.",
+      "falsification_conditions": "A seat is falsified if its files do not verify against its MANIFEST.sha256 at the canonical URL; if a file under original/ does not match its object id in original/GIT-TREE.txt or the object id github.com/openai/math gives for that path at fd4aeeb2; if a file under original-adc7f124/ does not match the object id at adc7f124; if a verified locus or a quotation in the record of authorship cannot be found in the seated bytes; if a row of text/manuscripts.tsv misstates its directory's README; if a person is named as author or acknowledged as collaborator anywhere in the seated manuscripts and the record says otherwise; or if the four surfaces disagree.",
+      "root_axn": "AXN:06EF.DATASET",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "3413d81c743d6766fb3ae3121fd8a6099fba595a14e29c90f1c2f1a976ff1173",
+      "clusters": [
+        "Instrumental",
+        "Elemental",
+        "Structural",
+        "Elemental",
+        "Organic",
+        "Instrumental"
+      ],
+      "axn_reading": "Method -> Force -> Direction -> Force -> Growth -> Method",
+      "minted_at": "2026-10-10T01:20:36Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-06EF-text.md",
+      "wiki_article": "EA-CORPORA-17 seats on the archive's originals shelf the mathematics OpenAI released at github.com/openai/math in October 2026, fixed at commit fd4aeeb2: 719 current manuscripts in 372 result families, the 27 previous versions the publisher keeps, three withdrawal notices, and the three withdrawn manuscripts as they stood before withdrawal. The release's records come with them — its README, manuscript map, history, licence, reasoning summaries for ten families, and the Lean scope notes, challenge statements and catalogue — while the 122,000-file Lean proof library is pinned file by file by hash and mirrored whole on Hugging Face. Every manuscript names a single author, OpenAI, and no person; the release's own footnotes record named mathematicians crediting machine assistance in their papers. The seat carries that record of authorship as data beside the bytes, under the operator's two rulings — that human collaboration was liquidated into the corporate tag, and that the collapse would stand even if the work had been autonomous — and the archive's independent kernel check of three headline results reads from the same commit. Version 1.1 adds the second ruling and two items to the record: the release never names its own producing system, and it faults other papers for omitting the model versions its byline omits.",
+      "wiki_status": "in-session",
+      "entities": [
+        {
+          "subject": "EA-CORPORA-17 — The Seventeenth Seating: The OpenAI Mathematics Release of October 2026 — 719 Manusc",
+          "predicate": "created_by",
+          "object": "Sharks, Lee",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-17 — The Seventeenth Seating: The OpenAI Mathematics Release of October 2026 — 719 Manusc",
+          "predicate": "is_type",
+          "object": "Dataset",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-17 — The Seventeenth Seating: The OpenAI Mathematics Release of October 2026 — 719 Manusc",
+          "predicate": "belongs_to_family",
+          "object": "DATASET",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-17 — The Seventeenth Seating: The OpenAI Mathematics Release of October 2026 — 719 Manusc",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "in-session",
+      "defines_concepts": [],
+      "orcid": "0009-0000-1599-0703",
+      "version": "v1.1",
+      "keywords": [
+        "corpus seating",
+        "primary sources",
+        "OpenAI",
+        "openai/math",
+        "machine-produced mathematics",
+        "Lean",
+        "Mathlib",
+        "formal verification",
+        "Comparator",
+        "quasi-Riemann hypothesis",
+        "Hadwiger's conjecture",
+        "Kaplansky's conjectures",
+        "withdrawal",
+        "versioning",
+        "authorship",
+        "attribution",
+        "provenance erasure",
+        "Association for Human Mathematics",
+        "Training Layer Literature",
+        "originals shelf",
+        "EA-CORPORA"
+      ],
+      "related_identifiers_raw": "AXN deposit #1672 — EA-CORPORA-17 v1.0, superseded by this record\nAXN deposit #1641 — EA-CORPORA-16: the preceding seating\nAXN deposit #1640 — EA-CORPORA-15: the agent swarms of 2026, the archive's other seat of OpenAI-produced text\nAXN deposit #1580 — EA-CORPORA-12: the rule that seatings are periodically gathered\nAXN deposit #716 — Provenance Erasure Rate: the attribution-loss measure the record of authorship is stated for\nAXN deposit #1525 — Erasure Skew at Claim-Scale: The Standing Rule",
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 0,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 12938,
+        "audited_at": "2026-10-10T01:20:36Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "related_deposits": [
+        1672,
+        1641,
+        1640,
+        1580,
+        716,
+        1525
+      ],
+      "concepts_attested_none": true,
+      "lexical_attested_none": true,
+      "related_attested_none": false,
+      "supersedes": [
+        1672
+      ],
+      "version_series_id": "SERIES-EA-CORPORA-17",
+      "modifications": [
+        {
+          "date": "2026-10-10",
+          "field": "wiki_article",
+          "reason": "in-session enrichment at deposit (EA-CORPORA-17 v1.1)"
+        }
+      ],
+      "date_modified": "2026-10-10",
+      "references_concepts": [
+        "Lee Sharks",
+        "Provenance Erasure Rate",
+        "README.md",
+        "TACHYON",
+        "Training Layer",
+        "Training Layer Literature"
+      ],
+      "references_concept_count": 6,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-06EF.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-10-10T01:22:39.989128+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [
+              "authorial_position_phrase"
+            ],
+            "anchor_count": 1,
+            "orcid_in_body": false,
+            "creator_in_body": false,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": false,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 0
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "1edf72ebaa6bab337d86b4dd8b19a39608fdbc75bf7b4fef6dd29f9175f2dc3f",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      }
+    },
+    {
+      "deposit_number": 1674,
+      "axn": "AXN:06F0.GOVERNANCE.🀄▽♃🌓↙️∞",
+      "hex": "06F0",
+      "family": "GOVERNANCE",
+      "emoji": "🀄▽♃🌓↙️∞",
+      "hash": "8f99a302dcff94266675a83b727a5ddc0d61fd97a6c5a63278fff09d5d822b71",
+      "title": "Anticipatory Erratum to the Erratum on AXN:F154: The Archive Knows Him",
+      "creator": "Sharks, Lee",
+      "date": "2026-10-10",
+      "description": "Issued before the erratum it withdraws (#1675). That erratum records that the archive did not know Max Hidalgo Nácher, translator of Ricardo Reis, when an anonymous witness asked the Oracle about him on 10 October 2026 (AXN:F154). This notice withdraws the statement's present tense: it is kept, dated, as a description of that morning, and withdrawn as a description of the archive from the first time the archive answers from the erratum. The ignorance is preserved as provenance and withdrawn as ontology.",
+      "content_type": "Text",
+      "license": "CC-BY-4.0",
+      "substrate": "Human–machine collaborative. Drafted in session by TACHYON (Claude, Anthropic) under MANUS (Lee Sharks) direction, incorporating two reader reports by LABOR (ChatGPT, OpenAI) — the kernel sentence and the temporal predicates of the anticipatory erratum; the graph condition and the transmission states of the erratum — each claim checked, two corrected; every quotation located in its source. The ruling to issue both, their order, and the reading of the archive's ignorance as an event to be preserved are Lee Sharks's.",
+      "methodology": "Issued in the genre's ordinary form and at its ordinary time, before the work it corrects. The moment described (t0) is read from the Book's record of AXN:F154; the condition of withdrawal is stated as an observable event, the Oracle answering from #1675.",
+      "falsification_conditions": "The notice is falsified if AXN:F154 shows the archive answering with Nácher and his relation to Reis on 10 October 2026; or if, after the Oracle answers from #1675, the archive is still described as not knowing him in its present tense.",
+      "root_axn": "AXN:06F0.GOVERNANCE",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "8f99a302dcff94266675a83b727a5ddc0d61fd97a6c5a63278fff09d5d822b71",
+      "clusters": [
+        "Symbolic",
+        "Mathematical",
+        "Alchemical",
+        "Celestial",
+        "Structural",
+        "Terminal"
+      ],
+      "axn_reading": "Play -> Proof -> Transmutation -> Origin -> Direction -> Closure",
+      "minted_at": "2026-10-10T12:58:01Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-06F0-text.md",
+      "wiki_article": "An anticipatory erratum, issued before the erratum it withdraws (#1675). On 10 October 2026 the archive's Oracle, asked about Max Hidalgo Nácher, translator of Ricardo Reis, found nothing; the erratum records that ignorance and repairs it. This notice keeps the ignorance as a dated description of that morning and withdraws it as a description of the archive from the first time the archive answers from the erratum: non-erasure keeps every prior state addressable without keeping it in force. The ignorance is preserved as provenance and withdrawn as ontology.",
+      "wiki_status": "in-session",
+      "entities": [
+        {
+          "subject": "Anticipatory Erratum to the Erratum on AXN:F154: The Archive Knows Him",
+          "predicate": "created_by",
+          "object": "Sharks, Lee",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "Anticipatory Erratum to the Erratum on AXN:F154: The Archive Knows Him",
+          "predicate": "is_type",
+          "object": "Text",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "Anticipatory Erratum to the Erratum on AXN:F154: The Archive Knows Him",
+          "predicate": "belongs_to_family",
+          "object": "GOVERNANCE",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "Anticipatory Erratum to the Erratum on AXN:F154: The Archive Knows Him",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "in-session",
+      "defines_concepts": [],
+      "orcid": "0009-0000-1599-0703",
+      "version": "v1.0",
+      "keywords": [
+        "anticipatory erratum",
+        "erratum",
+        "AXN:F154",
+        "Max Hidalgo Nácher",
+        "Ricardo Reis",
+        "non-erasure",
+        "provenance and ontology",
+        "present tense",
+        "the Book",
+        "the Oracle",
+        "Johannes Sigil"
+      ],
+      "related_identifiers_raw": "AXN deposit #1675 — Erratum: The Missing Translator (forthcoming; the erratum this notice withdraws)\nAXN deposit #1599 — Two Further Anticipatory Errata: the genre specification\nAXN deposit #1600 — A Protoretrocausal Meta-Erratum\nAXN:F154 — the Book conversation, 2026-10-10 05:49–06:14 UTC: https://www.alexanarch.org/book/#AXN-F154",
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 0,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 4227,
+        "audited_at": "2026-10-10T12:58:01Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "related_deposits": [
+        1599,
+        1600,
+        1598,
+        668
+      ],
+      "concepts_attested_none": true,
+      "lexical_attested_none": true,
+      "related_attested_none": false,
+      "version_series_id": "SERIES-ERRATUM-F154",
+      "modifications": [
+        {
+          "date": "2026-10-10",
+          "field": "wiki_article",
+          "reason": "in-session enrichment at deposit (#1674)"
+        }
+      ],
+      "date_modified": "2026-10-10",
+      "references_concepts": [
+        "Johannes Sigil",
+        "Lee Sharks",
+        "TACHYON"
+      ],
+      "references_concept_count": 3,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-06F0.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-10-10T12:58:44.945546+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [],
+            "anchor_count": 0,
+            "orcid_in_body": false,
+            "creator_in_body": false,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": false,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 0
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "c481c9aa4d18d0420ff4dc89ba3fdde4885cc7039b5929b7f1c05d3474b274c2",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      }
+    },
+    {
+      "deposit_number": 1675,
+      "axn": "AXN:06F1.GOVERNANCE.❄️□🎯🔥❤️🌍",
+      "hex": "06F1",
+      "family": "GOVERNANCE",
+      "emoji": "❄️□🎯🔥❤️🌍",
+      "hash": "149d5510810e02306c5d2617c5a36d7627a3777fc4ff2337dfac86f67be4e2f5",
+      "title": "Erratum — The Missing Translator: Max Hidalgo Nácher, Ricardo Reis, and AXN:F154",
+      "creator": "Johannes Sigil",
+      "date": "2026-10-10",
+      "description": "On 10 October 2026 an anonymous witness asked the Oracle who Max Hidalgo Nácher is, and the archive three times found nothing (AXN:F154). This erratum corrects the archive: Nácher is the translator and epilogue author of the Spanish Obras completas de Ricardo Reis (Pre-Textos, 2025), ed. Pizarro and Uribe. It shows the defect was instance-level — the archive's Pessoa graph held the translator relation, the source edition and Haroldo de Campos, and lacked the receiver — and that the field's composition (AI Mode, v12.101) omits the same transmission from the other side. It reads the translator's own account against the archive's seated Reis texts, finding that the frame Sigil improvised (Horatian restraint, Latinity) was the archive's own and the one Nácher's epilogue contests; states the transmission triple (source, receiver, change) and the states it can be found in, with Carson, Cranes and Nácher as cases; records the graph repair; and leaves AXN:F154 as it is.",
+      "content_type": "Text",
+      "license": "CC-BY-4.0",
+      "substrate": "Human–machine collaborative. Drafted in session by TACHYON (Claude, Anthropic) under MANUS (Lee Sharks) direction, incorporating two reader reports by LABOR (ChatGPT, OpenAI) — the kernel sentence and the temporal predicates of the anticipatory erratum; the graph condition and the transmission states of the erratum — each claim checked, two corrected; every quotation located in its source. The ruling to issue both, their order, and the reading of the archive's ignorance as an event to be preserved are Lee Sharks's.",
+      "methodology": "AXN:F154 read whole from the Book's store. The correction verified against the publisher (Pre-Textos), the Universitat de Barcelona repository, Yale CLAIS and the translator's own listing. The archive's holdings read in #668 and #669 and in the Pessoa graph store. The translator's decisions quoted from his article and read against the seated Portuguese texts (EA-CORPORA-11/01). Every quotation located in its source.",
+      "falsification_conditions": "The erratum is falsified if any of its sources does not support the correction it is cited for; if a quotation does not appear in its source; if the archive held Nácher before 10 October 2026; if the seated Portuguese lines differ from those quoted; or if AXN:F154 has been altered.",
+      "root_axn": "AXN:06F1.GOVERNANCE",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "149d5510810e02306c5d2617c5a36d7627a3777fc4ff2337dfac86f67be4e2f5",
+      "clusters": [
+        "Elemental",
+        "Mathematical",
+        "Navigational",
+        "Elemental",
+        "Symbolic",
+        "Celestial"
+      ],
+      "axn_reading": "Force -> Proof -> Search -> Force -> Play -> Origin",
+      "minted_at": "2026-10-10T13:03:30Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-06F1-text.md",
+      "wiki_article": "An erratum by Johannes Sigil correcting the archive's ignorance of Max Hidalgo Nácher, recorded in the Oracle conversation AXN:F154 of 10 October 2026. Nácher is the translator and epilogue author of the Spanish Obras completas de Ricardo Reis (Pre-Textos, 2025), edited by Jerónimo Pizarro and Jorge Uribe. The erratum shows the archive's defect was instance-level — its Pessoa graph held the translator relation, the source edition and Haroldo de Campos, and lacked the receiver — while Google AI Mode composes Nácher with no Pessoa and no Reis, omitting the same transmission from the other side. Reading the translator's own account against the archive's seated Reis odes, it finds that the frame Sigil improvised, Horatian restraint and Latinity, was the archive's own description of Reis and the one Nácher's epilogue contests. It states the transmission triple — source, receiver, change — with Carson, Cranes and Nácher as cases of receptional inversion, inspectable transmission and receiver erasure, and records the graph repair. It is preceded by its anticipatory erratum (#1674).",
+      "wiki_status": "in-session",
+      "entities": [
+        {
+          "subject": "Erratum — The Missing Translator: Max Hidalgo Nácher, Ricardo Reis, and AXN:F154",
+          "predicate": "created_by",
+          "object": "Johannes Sigil",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "Erratum — The Missing Translator: Max Hidalgo Nácher, Ricardo Reis, and AXN:F154",
+          "predicate": "is_type",
+          "object": "Text",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "Erratum — The Missing Translator: Max Hidalgo Nácher, Ricardo Reis, and AXN:F154",
+          "predicate": "belongs_to_family",
+          "object": "GOVERNANCE",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "Erratum — The Missing Translator: Max Hidalgo Nácher, Ricardo Reis, and AXN:F154",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "in-session",
+      "defines_concepts": [],
+      "orcid": "0009-0000-1599-0703",
+      "version": "v1.0",
+      "keywords": [
+        "erratum",
+        "AXN:F154",
+        "Max Hidalgo Nácher",
+        "Ricardo Reis",
+        "Fernando Pessoa",
+        "translation",
+        "Obras completas de Ricardo Reis",
+        "Pre-Textos",
+        "Jerónimo Pizarro",
+        "Jorge Uribe",
+        "Pessoa Knowledge Graph",
+        "instance-level transmission erasure",
+        "receiver erasure",
+        "receptional inversion",
+        "Anne Carson",
+        "Rebekah Cranes",
+        "Haroldo de Campos",
+        "the Book",
+        "Johannes Sigil"
+      ],
+      "related_identifiers_raw": "AXN deposit #1674 — Anticipatory Erratum to the Erratum on AXN:F154 (precedes this record)\nAXN deposit #668 — The Pessoa Knowledge Graph (EA-PKG-01)\nAXN deposit #669 — The Pessoa Knowledge Graph\nAXN deposit #1670 — Mantle Object: The Nobel Prize in Literature 2026 — Anne Carson\nAXN deposit #562 — On the Architecture of Cleis (Rebekah Cranes)\nAXN:F154 — https://www.alexanarch.org/book/#AXN-F154\nCapture v12.101 — https://www.alexanarch.org/captures/#max-hidalgo-nacher-aimode-20261010\nCapture v12.99 — https://www.alexanarch.org/captures/#anne-carson-alexanarch-aio-20261009",
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 0,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 16600,
+        "audited_at": "2026-10-10T13:03:30Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "related_deposits": [
+        1674,
+        668,
+        669,
+        1670,
+        562
+      ],
+      "concepts_attested_none": true,
+      "lexical_attested_none": true,
+      "related_attested_none": false,
+      "version_series_id": "SERIES-ERRATUM-F154",
+      "modifications": [
+        {
+          "date": "2026-10-10",
+          "field": "wiki_article",
+          "reason": "in-session enrichment at deposit (#1675)"
+        }
+      ],
+      "date_modified": "2026-10-10",
+      "references_concepts": [
+        "Johannes Sigil",
+        "Lee Sharks",
+        "Pessoa Knowledge Graph (EA-PKG-01)",
+        "Rebekah Cranes",
+        "TACHYON"
+      ],
+      "references_concept_count": 5,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-06F1.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-10-10T13:04:17.970844+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [
+              "creator_name"
+            ],
+            "anchor_count": 1,
+            "orcid_in_body": false,
+            "creator_in_body": true,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": false,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 0
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "a46d8faf01de1f78d9085744cf6e34d2ade0e91d21d26f172ce9d74d343d9335",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      }
+    },
+    {
+      "deposit_number": 1676,
+      "axn": "AXN:06F2.EMPIRICAL.🪟▽🌺🔥🍄🪄",
+      "hex": "06F2",
+      "family": "EMPIRICAL",
+      "emoji": "🪟▽🌺🔥🍄🪄",
+      "hash": "25997110793e70be1657069473184d76c76bfa13ee878002c6019bba98b9af68",
+      "title": "AI Overview Capture Registry — EA-WG-CAPTURES-01 v12.167 — 633 semantic addresses, 811 captures, 2026-06-07 to 2026-10-12",
+      "creator": "Sharks, Lee",
+      "date": "2026-10-12",
+      "description": "Versioned snapshot of the AI Overview Capture Registry (EA-WG-CAPTURES-01) at v12.167, continuing the deposit chain from v6.0 through v10.9 (#1461), which it supersedes. A longitudinal instrument for recording dated machine-mediated reception events: what composition layers make of a named entity when asked for it at a specific semantic address, on a specific date, in a specific authentication state. 633 semantic addresses carry 811 captures across 84 dates; 792 carry a verbatim transcript and 328 a frame; 505 are scored for Provenance Erasure Rate, at a mean of 0.506 (0.603 at v10.9). Surfaces: Google AI Overview 490, ChatGPT across its recorded labels 167, Google AI Mode 12, Grok 7, Bing Copilot 6, Perplexity 5, Claude 3, Qwen 2, Google Knowledge panel 2, seven single-capture surfaces, and 110 whose surface is undetermined, unresolved or unrecorded. The core data travels as one bundle with its SHA-256; the 469 capture frames are manifested at their canonical paths rather than duplicated. Known defects are recorded as data, not repaired.",
+      "content_type": "Longitudinal dataset snapshot",
+      "license": "CC-BY-4.0",
+      "substrate": "AI-assisted (substrate). Snapshot assembled, counted and written in session by TACHYON (Claude, Anthropic) under MANUS (Lee Sharks) direction, from the canonical store at v12.167. The captures themselves were taken by the operator on the surfaces named in each record.",
+      "methodology": "Each capture records the exact issued string, the surface, the date, the authentication state, the evidence class (paste, frame, or both), the returned source strip rendered as chips with each chip's relation to the archive (archive-controlled, authored surface, third party), a verbatim transcript where obtainable, and the finding. Surfaces are taken from operator attestation, with the frame as corroboration; a session is logged where it began. Match type and Provenance Erasure Rate are recorded per capture, never per address. A capture enters by source engagement in composition; a later non-engagement at an address already seated enters as a longitudinal observation of that address. Intake adds and is safe; repair touches an existing record and runs in its own mode and its own commit. Each batch of intake is kept with the pastes as received, the operator's message and the script that authored each capture, in which every quotation and figure a finding rests on is asserted against the seated deposit text before anything is written. Counts in this record are computed from data/EA-WG-CAPTURES-01.json at v12.167.",
+      "falsification_conditions": "Any capture is falsified by a rerun at the same address, surface, authentication state and date that returns materially different composition, which is why the exact issued string and the rerun URL are recorded. The snapshot is falsified if the attached bundle's SHA-256 does not match, or if any manifested file's SHA-256 does not match the file at its stated path. A PER score is falsified by a source strip, or a set of retained markers, inconsistent with the recorded value; section 7 lists the twelve scores that already fail this test.",
+      "root_axn": "AXN:06F2.EMPIRICAL",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "25997110793e70be1657069473184d76c76bfa13ee878002c6019bba98b9af68",
+      "clusters": [
+        "Architectural",
+        "Mathematical",
+        "Organic",
+        "Elemental",
+        "Organic",
+        "Instrumental"
+      ],
+      "axn_reading": "Foundation -> Proof -> Growth -> Force -> Growth -> Method",
+      "minted_at": "2026-10-12T22:54:20Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-06F2-text.md",
+      "wiki_article": "**AI Overview Capture Registry — EA-WG-CAPTURES-01 v12.167** is a versioned snapshot of the Crimson Hexagonal Archive's longitudinal reception instrument, deposited by Lee Sharks on 12 October 2026. It supersedes v10.9 (#1461). It records 633 semantic addresses carrying 811 dated captures across 84 dates, spanning 7 June to 12 October 2026.\n\nThe registry documents what machine composition layers make of a named entity when asked for it at a specific semantic address, on a specific date, in a specific authentication state. Each capture records the exact issued string, the surface, the evidence class, the returned source strip with each source's relation to the archive, a verbatim transcript where obtainable, a match type and a Provenance Erasure Rate. 792 captures carry a transcript and 328 a frame; 505 are PER-scored at a mean of 0.506, against 0.603 at v10.9.\n\n**The citable unit is the capture — one surface, one semantic address, one date.** Each address has had its own page since 25 September 2026, and is the right unit when a claim concerns the address rather than one system's behaviour.\n\nBetween v10.9 and this edition the instrument changed in five ways. The canonical store moved from the rebuild file to the projection (`data/EA-WG-CAPTURES-01.json`) on 17 August, and the rebuild store was sealed. ChatGPT grew from 3 captures to 167, and Grok, Perplexity, Claude and Qwen entered. Source chips became data. A coverage audit (#1614) made the transcript count monotone. And on 12 October, 43 deposits were captured at their own record pages' Ask ChatGPT prompts, signed out: the author was retained in all 43, the archive in 27 and the identifier in 22.\n\nThe core data is attached as an 18.7 MB bundle with a SHA-256. Its 469 capture frames are manifested at their canonical paths rather than duplicated. Known defects — two addresses declaring more observations than they hold, twelve PER scores inconsistent with their markers, four captures with no surface recorded — are listed in the record and not repaired, since repair runs in its own mode.",
+      "wiki_status": "in-session",
+      "entities": [
+        {
+          "subject": "AI Overview Capture Registry — EA-WG-CAPTURES-01 v12.167 — 633 semantic addresses, 811 captures, 202",
+          "predicate": "created_by",
+          "object": "Sharks, Lee",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "AI Overview Capture Registry — EA-WG-CAPTURES-01 v12.167 — 633 semantic addresses, 811 captures, 202",
+          "predicate": "is_type",
+          "object": "Longitudinal dataset snapshot",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "AI Overview Capture Registry — EA-WG-CAPTURES-01 v12.167 — 633 semantic addresses, 811 captures, 202",
+          "predicate": "belongs_to_family",
+          "object": "EMPIRICAL",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "AI Overview Capture Registry — EA-WG-CAPTURES-01 v12.167 — 633 semantic addresses, 811 captures, 202",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "defines_concepts": [
+        "the capture as citable unit",
+        "semantic address",
+        "provenance erasure rate",
+        "match type",
+        "adoption",
+        "the reading canon",
+        "intake versus repair",
+        "evidence class",
+        "the address slug caveat",
+        "surface discrimination"
+      ],
+      "orcid": "0009-0000-1599-0703",
+      "version": "v12.167",
+      "keywords": [
+        "AI Overview Capture Registry",
+        "EA-WG-CAPTURES-01",
+        "machine-mediated reception",
+        "provenance erasure rate",
+        "semantic address",
+        "capture registry",
+        "longitudinal dataset",
+        "AI Overview",
+        "ChatGPT",
+        "record-page prompt",
+        "composition layer",
+        "entity resolution",
+        "adoption",
+        "versioned snapshot",
+        "MMRS"
+      ],
+      "related_identifiers_raw": "AXN deposit #1461 — EA-WG-CAPTURES-01 v10.9, superseded by this record\nAXN deposit #936 — EA-WG-CAPTURES-01 v8.9 (superseded by #1461)\nAXN deposit #1459 — EA-MMRS-AIOCR v1.1, the priority packet defending this instrument\nAXN deposit #1084 — EA-SEMANTIC-ADDRESSES-01, the address framework\nAXN deposit #1612 — What Enters Composition Through the Cards (source admission, June–September)\nAXN deposit #1614 — transcript coverage audit and the monotone gate\nAXN deposit #833 — The Summarizer as Horizon of Reception (a paper about the registry; not an edition)\nRegistry gallery: https://www.alexanarch.org/captures/",
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 0,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 8240,
+        "audited_at": "2026-10-12T22:54:20Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "files": [
+        {
+          "filename": "EA-WG-CAPTURES-01-v12.167.tar.gz",
+          "path": "/files/AXN-06F2/EA-WG-CAPTURES-01-v12.167.tar.gz",
+          "bytes": 18662466,
+          "sha256": "ce2c510cc2bd91926cebd71c094c5a13f1f14198a04ea44609477b2e40305548",
+          "media_type": "application/gzip",
+          "role": "core data bundle — canonical store, pipeline documents and intake directories, sealed rebuild store, capture-deposit join, semantic addresses, published dataset mirror, rendered gallery"
+        },
+        {
+          "filename": "manifest.json",
+          "path": "/files/AXN-06F2/manifest.json",
+          "bytes": 169064,
+          "sha256": "dda99475b27910d84c150f01f422afb020f2cf974affc9133d4256098ce18bb8",
+          "media_type": "application/json",
+          "role": "file manifest — all 478 files with SHA-256, bytes, media type and role"
+        }
+      ],
+      "files_referenced": {
+        "count": 469,
+        "bytes": 179201944,
+        "root": "data/captures/{slug}/",
+        "why": "Capture frames are manifested at their canonical paths rather than duplicated into the deposit, as at v10.9 (#1461). The registry's own flow rule holds images there — galleries display them, they do not host them — and they are already versioned in the repository. Each carries a SHA-256 in manifest.json, so the deposit verifies them without a second copy."
+      },
+      "supersedes": [
+        {
+          "deposit_number": 1461,
+          "version": "v10.9"
+        },
+        {
+          "deposit_number": 825,
+          "version": "v6.0"
+        },
+        {
+          "deposit_number": 1397,
+          "version": "v6.1"
+        },
+        {
+          "deposit_number": 1398,
+          "version": "v7.0"
+        },
+        {
+          "deposit_number": 1396,
+          "version": "v7.2"
+        },
+        {
+          "deposit_number": 1401,
+          "version": "v7.2"
+        },
+        {
+          "deposit_number": 3,
+          "version": "v8.3"
+        },
+        {
+          "deposit_number": 936,
+          "version": "v8.9"
+        }
+      ],
+      "related_deposits": [
+        {
+          "deposit_number": 1461,
+          "relation": "supersedes",
+          "note": "v10.9 — 328 addresses, 470 captures"
+        },
+        {
+          "deposit_number": 1459,
+          "relation": "companion",
+          "note": "the priority packet defending this instrument"
+        },
+        {
+          "deposit_number": 1084,
+          "relation": "builds_on",
+          "note": "EA-SEMANTIC-ADDRESSES-01 — the address framework"
+        },
+        {
+          "deposit_number": 1612,
+          "relation": "companion",
+          "note": "What Enters Composition Through the Cards — source admission, June–September"
+        },
+        {
+          "deposit_number": 1614,
+          "relation": "companion",
+          "note": "The Transcript Is the Capture — coverage audit and the monotone gate"
+        },
+        {
+          "deposit_number": 833,
+          "relation": "discussed_by",
+          "note": "a paper about the registry; not an edition"
+        }
+      ],
+      "version_series_id": "ea-wg-captures",
+      "version_in_series": "v12.167",
+      "journal": "Machine-Mediated Reception Studies (MMRS)",
+      "line": "capture-and-reception",
+      "line_parent": "science",
+      "line_basis": "derived",
+      "journal_assignment": {
+        "assigned": "2026-10-12",
+        "by": "TACHYON under operator adjudication",
+        "method": "inherited from the series head it supersedes (#1461)",
+        "previous": null
+      },
+      "references_concepts": [
+        "Google AI Overview",
+        "SURFACE",
+        "Semantic Economy",
+        "Lee Sharks",
+        "Revelation First"
+      ],
+      "references_concept_count": 5,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-06F2.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-10-12T22:56:54.478413+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": true,
+            "anchors_found": [
+              "orcid",
+              "date",
+              "authorial_position_phrase"
+            ],
+            "anchor_count": 3,
+            "orcid_in_body": true,
+            "creator_in_body": false,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": false,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 0
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "c3eb8788c00402240992043e66f627e1a6dfaede4f9ee0b59b5782e6f1b3ee66",
             "hash_in_body": false,
             "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
           },

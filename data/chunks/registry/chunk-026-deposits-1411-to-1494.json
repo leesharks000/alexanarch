@@ -9821,7 +9821,7 @@
       ],
       "axn_reading": "Direction -> Proof -> Touch -> Search -> Threshold -> Alarm",
       "minted_at": "2026-08-14T22:56:39Z",
-      "status": "ACTIVE",
+      "status": "SUPERSEDED",
       "status_authorial": "SELF_SERVE_MINTED",
       "full_text_path": "/data/texts/AXN-05E7-text.md",
       "wiki_article": "**AI Overview Capture Registry — EA-WG-CAPTURES-01 v10.9** is a versioned snapshot of the Crimson Hexagonal Archive's longitudinal reception instrument, deposited by Lee Sharks on 14 August 2026. It records 328 semantic addresses carrying 470 dated captures across 41 distinct dates and thirteen surfaces, spanning 7 June to 14 August 2026.\n\nThe registry documents what machine composition layers make of a named entity when asked for it at a specific semantic address, on a specific date, in a specific authentication state. Each capture records the exact issued string, the surface, the evidence class (paste, frame, or both), the returned source strip, a verbatim transcript where obtainable, a match type, and a Provenance Erasure Rate. 451 captures carry a transcript and 287 carry a frame; 290 are PER-scored at a mean of 0.603.\n\n**The citable unit is the capture — one surface, one semantic address, one date** — independently anchored at `captures/#slug`. The address is separately citable across its surfaces and dates and is the right unit when a claim concerns the address rather than a system's behaviour. An address slug is inherited from whichever capture was seated first and never renamed, so it names only that one.\n\nArchitecturally the registry holds one writable authority: the canonical store at `rebuild/capture-registry/EA-WG-CAPTURES-01-REBUILD.json`. The published projection is derived from it, galleries render from the projection, and no surface writes back. Intake is safe; repair is not, and the repair posture is stated in PIPELINE.md.\n\nThis deposit continues the chain from v6.0 (#1397) through v7.x (#825, #1396, #1398, #1401), v8.3 (#3) and v8.9 (#936). Its core data — projection, canonical store, pipeline documents, capture-deposit join, semantic addresses, dataset mirror and rendered gallery — is attached as an 8.7 MB bundle with a SHA-256. Its 420 capture frames are manifested at their canonical paths with per-file hashes rather than duplicated, following the registry's own rule that galleries display images rather than host them.\n\nThe instrument has measured its own liquidation (EA-MMRS-AIOCR v1.1, #1459), a reclamation of the coinage «semantic exhaustion» against its own July baseline, and three unprimed cold-start traversals (#1460).",
@@ -10062,7 +10062,11 @@
       },
       "line": "capture-and-reception",
       "line_parent": "science",
-      "line_basis": "derived"
+      "line_basis": "derived",
+      "superseded_by_deposit_number": 1676,
+      "superseded_by_axn": "AXN:06F2.EMPIRICAL.🪟▽🌺🔥🍄🪄",
+      "superseded_at": "2026-10-12",
+      "superseded_reason": "EA-WG-CAPTURES-01 version chain. This edition (v10.9) is superseded by v12.167 at deposit #1676."
     },
     {
       "deposit_number": 1462,
