@@ -649,6 +649,19 @@ def card(e, record=False):
                        f'Originator: {esc(" · ".join(_bits))}{esc(_tr)}</div>'
                        f'<meta itemprop="about" content="{esc(" · ".join(_bits))}">')
 
+    # THE RECORD THE RUN WAS MEANT TO REACH (2026-10-11). Operator: "captures would need to include links to the title and link they
+    # were *supposed* to point to, even when they dont appear in overview cards". A title or identifier run carries `intended`; the
+    # card links the record and its exact-title search, and says whether the composition cited the record page.
+    _it = e.get("intended") or {}
+    intended_line = ""
+    if _it.get("record"):
+        _reach = "cited in the composition" if _it.get("reached") else "not cited in the composition"
+        _srch = (f' · <a href="{esc(_it["search"])}" target="_blank" rel="noopener">Search this title (exact match)</a>'
+                 if _it.get("search") else "")
+        intended_line = (f'<div class="cap-intended" style="font-size:.8em;color:#666;margin:2px 0 4px">'
+                         f'Intended record: <a href="{esc(_it["record"])}" itemprop="mentions">#{esc(str(_it.get("deposit") or ""))}'
+                         f' — {esc(_it.get("title") or "")}</a>{_srch} · {_reach}</div>')
+
     _obs_all = e.get("observations") or []
     _alias = "".join(
         '<span class="cap-alias" id="%s"></span>' % esc(_o["slug"])
@@ -669,7 +682,7 @@ def card(e, record=False):
         f'<meta itemprop="citation" content="{esc(citation)}">'
         f'<div class="cap-head"><span class="cap-section">{esc(e.get("s") or "Unsectioned")}</span>'
         f'<span class="cap-date" itemprop="dateCreated">{esc(datespan)}</span></div>'
-        f'<div class="cap-query" itemprop="name">{esc(e.get("q") or "")}</div>' + origin_line +
+        f'<div class="cap-query" itemprop="name">{esc(e.get("q") or "")}</div>' + origin_line + intended_line +
         f''
         f'<div class="cap-status-row">'
         f'<span class="cap-status cap-status-{esc(match.replace(" ", "-"))}">{esc(match)}</span>'
