@@ -201,8 +201,9 @@
  ],
  "decision": {
   "date": "2026-10-11",
-  "unit": "the full title as deposited, designation included, quoted, without the AXN",
-  "basis": "runs 4 ≈ 3, 7 < 8, 6 misbound; the operator's proposal of 23:3x ('full title only without axn as the unit on the link-to-search'). The 1,473 links already carry this form.",
-  "status": "proposed by the operator, concurred; open to the quoted/unquoted pair"
+  "unit": "the full title as deposited, designation included, without the AXN",
+  "form": "broad first: the main link is the title unquoted; a small '(exact match)' link beside it carries the title quoted",
+  "basis": "operator 23:3x: 'full title only without axn as the unit on the link-to-search'; 23:31: 'what about broad match? exact match is more and more useless'; ruled 23:34: 'option 2' (broad main link, exact beside it). Runs: 4 ≈ 3, 7 < 8, 6 misbound; run 8 (unquoted) reached a citing surface.",
+  "applied": "1,473 record pages, replaced in place by rebuild/record-pages/insert_search_this_title.py; the renderer (wire_deposit.search_this_title_html) emits the same line."
  }
 }

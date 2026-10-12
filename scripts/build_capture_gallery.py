@@ -656,8 +656,10 @@ def card(e, record=False):
     intended_line = ""
     if _it.get("record"):
         _reach = "cited in the composition" if _it.get("reached") else "not cited in the composition"
-        _srch = (f' · <a href="{esc(_it["search"])}" target="_blank" rel="noopener">Search this title (exact match)</a>'
+        _srch = (f' · <a href="{esc(_it["search"])}" target="_blank" rel="noopener">Search this title</a>'
                  if _it.get("search") else "")
+        if _it.get("search_exact"):
+            _srch += f' <a href="{esc(_it["search_exact"])}" target="_blank" rel="noopener">(exact match)</a>'
         intended_line = (f'<div class="cap-intended" style="font-size:.8em;color:#666;margin:2px 0 4px">'
                          f'Intended record: <a href="{esc(_it["record"])}" itemprop="mentions">#{esc(str(_it.get("deposit") or ""))}'
                          f' — {esc(_it.get("title") or "")}</a>{_srch} · {_reach}</div>')

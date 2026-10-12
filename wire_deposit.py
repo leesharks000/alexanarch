@@ -201,7 +201,7 @@ _CAPTURE_BY_DEPOSIT = None
 
 # SEARCH THIS TITLE (operator, 2026-10-11: "each deposit would have a link to exact match search on its title. force the retrieval /
 # composition, then it gets into the broader basin by means of the capture"; the goal: "get some of the work into the retrieval
-# basin"). One link: the deposit's own title in quotation marks, the exact-match operator, in general search so the link does not
+# basin"). Originally one link, the title in quotation marks (the exact-match operator); broad first since 23:34 (below). In general search so the link does not
 # decide the surface measured. A composition the run forces can be seated as a capture, and the capture page carries the work into
 # the broad basin. Superseded, withdrawn and draft records carry none: their pages point to the successor. Titles over Google's
 # 32-word query limit use the main title, before the first colon or dash. Shared by the renderer and by
@@ -212,17 +212,25 @@ def search_title_of(d):
     if len(t.split()) > 32:
         t = re.split(r':\s|\s[\u2014\u2013]\s', t, maxsplit=1)[0].strip()
     return t
+# BROAD FIRST (operator, 2026-10-11 23:31: "what about broad match? exact match is more and more useless"; ruled 23:34, "option 2"):
+# the link is the full title as deposited, without the AXN, unquoted; a small exact-match link (the same title in quotation marks)
+# stands beside it. The search-form test (rebuild/record-pages/search-form-test/) holds the runs behind the unit.
+def search_title_urls(d):
+    t = search_title_of(d)
+    if not t:
+        return None, None
+    from urllib.parse import quote_plus
+    return ('https://www.google.com/search?q=' + quote_plus(t), 'https://www.google.com/search?q=' + quote_plus('"' + t + '"'))
 def search_this_title_html(d, n_caps=0):
     if (d.get('status') or 'ACTIVE') not in SEARCH_STATUSES:
         return ''
-    t = search_title_of(d)
-    if not t:
+    broad, exact = search_title_urls(d)
+    if not broad:
         return ''
-    from urllib.parse import quote_plus
-    url = 'https://www.google.com/search?q=' + quote_plus('"' + t + '"')
-    held = (f' {n_caps} capture{"" if n_caps == 1 else "s"} already hold this record.' if n_caps else '')
+    held = (f' {n_caps} {"capture already holds" if n_caps == 1 else "captures already hold"} this record.' if n_caps else '')
     return (f'<div class="search-this-title" style="font-size:.84em;color:#555;margin:6px 0 10px">'
-            f'<a href="{_html_escape(url)}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:500">Search this title (exact match) \u2197</a> \u2014 '
+            f'<a href="{_html_escape(broad)}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:500">Search this title \u2197</a> '
+            f'<a href="{_html_escape(exact)}" target="_blank" rel="noopener" style="color:var(--accent);font-size:.9em">(exact match)</a> \u2014 '
             f'a composition the search forces can be seated in the <a href="/captures/" style="color:var(--accent)">Capture Registry</a>.{held}</div>')
 
 def _captures_for_deposit(dn):
