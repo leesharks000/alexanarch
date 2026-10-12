@@ -67,6 +67,7 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:6px}
 <div class="stats" id="stats"></div>
 <input class="search" id="search" placeholder="Search terms or definitions...">
 <div class="filter-btns" id="engagement-filter"></div>
+<div class="filter-btns" id="mint-filter"></div>
 <div class="alpha" id="alpha"></div>
 <div id="terms">Loading…</div>
 <div class="pager" id="pager"></div>
@@ -134,6 +135,34 @@ Promise.all([
   var fbox = document.getElementById('engagement-filter');
   if(fbox) fbox.innerHTML = engChipHtml;
   
+  // 2026-10-12: how a term was minted (the _CLEANING mint_mode rule: a term from a 282-term extraction is a heading
+  // until shown otherwise; a term from a 13-term deposit is a coinage). Flags are shown, never hidden: nothing is deleted.
+  function mintClass(t){
+    var m = t.mint_mode;
+    if(m === 'bulk-extraction') return 'bulk';
+    if(m === 'batch') return 'batch';
+    if(m === 'deliberate') return 'deliberate';
+    return 'coined';
+  }
+  function flagOf(t){ return t.definition_status || t.entry_class || ''; }
+  var mintCount = {coined:0, deliberate:0, batch:0, bulk:0}, flagCount = 0;
+  allTerms.forEach(function(t){ mintCount[mintClass(t)]++; if(flagOf(t)) flagCount++; });
+  var mintChipHtml = '<div class="fbtn active" data-mint="all">Any minting</div>'+
+    '<div class="fbtn" data-mint="coined" title="minted in session or as a single coinage">Coined ('+mintCount.coined.toLocaleString()+')</div>'+
+    '<div class="fbtn" data-mint="deliberate" title="from a deposit minting fewer than 20 terms">Deliberate ('+mintCount.deliberate.toLocaleString()+')</div>'+
+    '<div class="fbtn" data-mint="batch" title="from a deposit minting 20–49 terms at once">Batch ('+mintCount.batch.toLocaleString()+')</div>'+
+    '<div class="fbtn" data-mint="bulk" title="from a deposit minting 50 or more terms at once">Bulk extraction ('+mintCount.bulk.toLocaleString()+')</div>'+
+    '<div class="fbtn" data-mint="unflagged" title="definition not flagged by a cleaning pass">Definition not flagged ('+(allTerms.length-flagCount).toLocaleString()+')</div>';
+  var mbox = document.getElementById('mint-filter');
+  if(mbox) mbox.innerHTML = mintChipHtml;
+  var activeMint = 'all';
+  if(mbox) mbox.addEventListener('click', function(ev){
+    var b = ev.target.closest('.fbtn'); if(!b) return;
+    activeMint = b.dataset.mint;
+    mbox.querySelectorAll('.fbtn').forEach(function(x){ x.classList.remove('active'); });
+    b.classList.add('active'); page = 0; render();
+  });
+
   var activeLetter = 'all';
   var activeEng = 'all';
   var page = 0;
@@ -150,6 +179,9 @@ Promise.all([
         if(activeEng === 'addressed') return ovRow && ovRow.address_count;
         return true;
       });
+    }
+    if(activeMint !== 'all'){
+      pool = pool.filter(function(t){ return activeMint === 'unflagged' ? !flagOf(t) : mintClass(t) === activeMint; });
     }
     if(query){
       var q = query.toLowerCase();
@@ -202,7 +234,10 @@ Promise.all([
       var termHtml = ovRow ? '<a href="/graph/?search='+encodeURIComponent(t.term)+'" class="term-name-link">'+t.term+'</a>' : t.term;
       return '<div class="term-card">'+
         '<div><span class="term-name">'+termHtml+'</span><span class="term-type">'+(t.type||'')+'</span></div>'+
-        (t.definition?'<div class="term-def">'+t.definition+'</div>':'')+
+        (t.definition ? (flagOf(t)
+          ? '<div class="term-def" style="opacity:.55" title="flagged by a cleaning pass: the recorded definition is not a definition of the term">'+
+            '<span style="font-size:.8em;border:1px solid var(--dim);padding:0 4px;margin-right:6px">definition flagged: '+flagOf(t)+'</span>'+t.definition+'</div>'
+          : '<div class="term-def">'+t.definition+'</div>') : '')+
         '<div class="term-eng">'+engBadge+'</div>'+
         (dn?'<div class="term-meta">defined in '+dnLink+title+'</div>':'')+
         '</div>';
