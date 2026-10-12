@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Author the capture 'what is the encyclotron by semantic economy institute', ChatGPT, 2026-10-12, two answers. Source: the operator's
-attachment of 00:38 EDT, the query in the same message. Auth by the evening's attestation for the ChatGPT runs ('logged out,
-incognito', 00:22), not restated at 00:38. The second operator turn is blank in the paste; the second answer is a correction. NEW
+attachment of 00:38 EDT, the query in the same message. Attested at 00:41 ('both logged out and incognito'). The second operator turn is blank in the paste; the second answer is a correction. NEW
 address; the same night's AI Overview run at #637's title is encyclotron-title-aio-20261012. The message also carries a Stabilized
 Node Watch answer pasted inline with no query; it is held (snw-answer-20261012-0038.txt) until its issued string is given."""
 import json, re, pathlib, sys
@@ -29,7 +28,7 @@ for s in ["You're right. I conflated two different claims, and that was a substa
     assert s in a2, s
 reg = {x["deposit_number"]: x for x in json.loads((ROOT / "data/registry.json").read_text(encoding="utf-8"))["deposits"]}
 caps = json.loads((ROOT / "data/EA-WG-CAPTURES-01.json").read_text(encoding="utf-8"))
-assert not any(e["q"] == Q for e in caps["entries"])
+assert not any(e["q"] == Q and e["slug"] != "encyclotron-by-semantic-economy-institute-chatgpt-20261012" for e in caps["entries"])
 T658 = (ROOT / reg[658]["full_text_path"].lstrip("/")).read_text(encoding="utf-8")
 assert reg[658]["title"].startswith("SAMPLE ENCYCLOTRON AUDIT Why a 20-year-old iconic software company is invisible in AI search — and what it means for you")
 assert reg[658]["creator"] == "Rex Fraction"
@@ -42,13 +41,13 @@ cl[0]["note"] += "; the label is the tail of #658's title ('… — and what it 
 def intended(n):
     b, x = search_title_urls(reg[n])
     return {"deposit": n, "axn": reg[n]["axn"], "title": reg[n]["title"], "record": f"https://www.alexanarch.org/s/records/{n}/", "search": b, "search_exact": x, "reached": False}
-SEAT = "Seated 2026-10-12 from the operator's attachment of 00:38 EDT; auth by the evening's attestation ('logged out, incognito', 00:22)."
-tx = transcript("[ChatGPT (chatgpt.com), logged out, incognito (the evening's attestation), 2026-10-12. Two operator turns, blank in the paste: "
+SEAT = "Seated 2026-10-12 from the operator's attachment of 00:38 EDT; attested at 00:41 ('both logged out and incognito')."
+tx = transcript("[ChatGPT (chatgpt.com), logged out, incognito, 2026-10-12. Two operator turns, blank in the paste: "
                 "the query from the operator's message of 00:38 EDT; turn 2 not given. Source chips rendered inline as [chip: …]; image-card "
                 "captions as [image card: …]; an ad (Teradata) cut and recorded in the notes; the sign-in furniture cut.]", [Q, "[blank in the paste]"], [a1, a2])
 d = {"q": Q, "date": "2026-10-12", "surface": "ChatGPT",
  "surface_basis": "The paste: the chatgpt.com unauthenticated interface ('Log in', 'ChatGPT said:', 'Chat with ChatGPT').",
- "auth": "logged out, incognito", "auth_basis": "The operator's attestation for the evening's ChatGPT runs, 'logged out, incognito' (2026-10-12 00:22 EDT); not restated with this attachment at 00:38.",
+ "auth": "logged out, incognito", "auth_basis": "'both logged out and incognito' — operator, 2026-10-12 00:41 EDT (this run and the Stabilized Node Watch run).",
  "ev": "paste", "s": "Machine Reception", "slug": "encyclotron-by-semantic-economy-institute-chatgpt-20261012",
  "q_kind": "an instrument's name with its institution, after 'what is'. NEW address; the same night's AI Overview run at #637's full title: encyclotron-title-aio-20261012.",
  "originator": {"name": "Semantic Economy Institute", "relation": "archive", "entity_type": "protocol", "spxi_treatment": "full",
@@ -89,7 +88,7 @@ d = {"q": Q, "date": "2026-10-12", "surface": "ChatGPT",
               "AGAINST THE SAME NIGHT'S OVERVIEW. At #637's title the AI Overview composed a summarization benchmark (encyclotron-title-aio-20261012)."],
  "rerun": "https://chatgpt.com/?q=" + quote_plus(Q),
  "notes": {"date_basis": "The operator's message of 2026-10-12, 00:38 EDT.", "ad": AD,
-           "held": "The same message carries a Stabilized Node Watch answer pasted inline without its query (snw-answer-20261012-0038.txt); held for its issued string.",
+           "paired": "The same message carries the Stabilized Node Watch answer, seated as stabilized-node-watch-by-lee-sharks-chatgpt-20261012 once its query was given (00:41).",
            "verified": "Compared 2026-10-12 against the texts of #658 and #637."}}
 (HERE / "capture-encyclotron-by-sei-chatgpt.json").write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
 print("wrote", d["cites"])
