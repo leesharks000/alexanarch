@@ -208,12 +208,33 @@ def _flat_defects(e):
     """The same derived vocabulary, on the flat record shape the file actually uses (2026-09-05)."""
     d = []
     if e.get("cites") is None: d.append("citations-null")
+    # 2026-10-12: counted but never extracted. Citation extraction is an intake step; a count with no cards
+    # means the step was skipped, and nothing on the capture can be resolved to a deposit. Recorded, not refused.
+    if (e.get("cites") or 0) > 0 and not e.get("cite_list"): d.append("citations-unextracted")
     if (e.get("surface") or "").upper() in ("UNDETERMINED", "UNRESOLVED"): d.append("surface-unresolved")
     if not e.get("date") or e.get("date") == "null": d.append("date-unresolved")
     tc = (e.get("transcript_complete") or "").lower()
     if "truncat" in tc or "cut" in tc: d.append("truncated-by-interface")
     if (e.get("analysis") or "") and not (e.get("d") or ""): d.append("analysis-without-finding")
     return sorted(set(d))
+
+
+def link_cards(e, cards):
+    """Resolve source cards to deposits and add them to the entry's related_deposits (2026-10-12).
+    Citation extraction records cards as shown; this is the step that joins them to the registry, so a
+    capture's deposit links no longer depend on a session writing them in by hand. Each resolution is
+    written on its card (deposit, deposit_basis); see scripts/capture_deposit_links.py for the rules."""
+    sys.path.insert(0, str(ROOT / "scripts")); import capture_deposit_links as L
+    idx = L.Index(json.loads((ROOT / "data/registry.json").read_text(encoding="utf-8"))["deposits"])
+    rel = list(e.get("related_deposits") or [])
+    for c in cards or []:
+        n, basis, cands = idx.resolve(c)
+        if n is not None:
+            c["deposit"], c["deposit_basis"] = n, basis
+            if n not in rel: rel.append(n)
+        elif cands:
+            c["deposit_candidates"] = cands
+    e["related_deposits"] = rel or e.get("related_deposits")
 
 
 def seat_flat(draft, registry, schema):
@@ -243,6 +264,7 @@ def seat_flat(draft, registry, schema):
                 root["date"] = (e.get("dates") or [e.get("date")])[0]
                 root["obs_id"] = e.get("obs_id") or "OBS-" + hashlib.sha256((e["q"] + str(root["date"]) + str(e["surface"])).encode()).hexdigest()[:12]
                 e["observations"] = [root]
+            link_cards(e, obs.get("cite_list"))
             e["observations"].append(obs); e["n_observations"] = len(e["observations"])
             e.setdefault("dates", []); e["dates"].append(draft["date"]) if draft["date"] not in e["dates"] else None
             return "observation", e
@@ -274,6 +296,7 @@ def seat_flat(draft, registry, schema):
     e["mt"] = e.get("mt") or "CAPTURE"; e["cites"] = e.get("cites")
     e["match"] = match_of(draft["q"]); e["match_note"] = None
     e["transcript_class"] = e.get("transcript_class") or "CAPTURE-TIME VERBATIM RECORD"; e["transcript_complete"] = e.get("transcript_complete") or "complete as supplied"; e["transcript_read"] = e.get("transcript_read") or ("READ IN FULL " + draft["date"])
+    link_cards(e, e.get("cite_list"))
     e["findings"] = list(draft.get("findings") or []); e["defects"] = _flat_defects(e)
     e["citable_unit"] = e.get("citable_unit") or "address — the exact issued string on one surface, per the Surface Rule (MANUS, 2026-08-15)"
     extra = [k for k in draft if k not in schema["properties"]]

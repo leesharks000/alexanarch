@@ -49,7 +49,7 @@
     "n_observations": {"type": "integer", "minimum": 1},
     "observations": {"type": "array", "items": {"type": "object"}},
     "dates": {"type": "array", "items": {"type": "string"}},
-    "defects": {"type": "array", "items": {"type": "string", "enum": ["citations-null","analysis-without-finding","truncated-by-interface","surface-unresolved","unsupported-citations","date-unresolved","stale-state","distinction-collapse"]}, "description": "DERIVED controlled vocabulary only (capture_intake.extract_defects). Never free text."},
+    "defects": {"type": "array", "items": {"type": "string", "enum": ["citations-null","analysis-without-finding","truncated-by-interface","surface-unresolved","unsupported-citations","date-unresolved","stale-state","distinction-collapse","citations-unextracted"]}, "description": "DERIVED controlled vocabulary only (capture_intake.extract_defects). Never free text. citations-unextracted (2026-10-12): the capture counts citations (cites > 0) but no card was extracted into cite_list, so its sources cannot be resolved to deposits."},
     "findings": {"type": "array", "items": {"type": "string"}, "description": "editorial findings in prose, one per item — the field the 21 free-text 'defects' moved to"},
     "series": {"type": ["string","null"], "description": "series label; historical ints stringified"},
     "other_slugs": {"type": ["array","null"], "items": {"type": "string"}},

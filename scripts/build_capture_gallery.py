@@ -578,6 +578,7 @@ def card(e, record=False):
         'truncated-by-interface': 'answer truncated by interface — absence here is absence from the VISIBLE portion',
         'unsupported-citations': 'CITATIONS UNSUPPORTED by this transcript — do not count',
         'citations-null': 'citation apparatus not captured — count is NULL, not zero',
+        'citations-unextracted': 'citations counted but no source card extracted — sources not resolvable to deposits',
         'surface-unresolved': 'surface unresolved',
         'date-unresolved': 'date unresolved',
         'analysis-without-finding': 'analysis present, no finding written',
