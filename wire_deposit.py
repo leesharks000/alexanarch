@@ -198,6 +198,33 @@ def _kw_list(d, fm):
 _CAPTURE_BY_DEPOSIT = None
 
 
+
+# SEARCH THIS TITLE (operator, 2026-10-11: "each deposit would have a link to exact match search on its title. force the retrieval /
+# composition, then it gets into the broader basin by means of the capture"; the goal: "get some of the work into the retrieval
+# basin"). One link: the deposit's own title in quotation marks, the exact-match operator, in general search so the link does not
+# decide the surface measured. A composition the run forces can be seated as a capture, and the capture page carries the work into
+# the broad basin. Superseded, withdrawn and draft records carry none: their pages point to the successor. Titles over Google's
+# 32-word query limit use the main title, before the first colon or dash. Shared by the renderer and by
+# rebuild/record-pages/insert_search_this_title.py, which places the same line on existing pages without re-rendering them.
+SEARCH_STATUSES = ('ACTIVE', 'CANONICAL', 'PRESERVED_AS_HISTORICAL_SEED')
+def search_title_of(d):
+    t = re.sub(r'\s+', ' ', str(d.get('title') or '')).strip().replace('"', '')
+    if len(t.split()) > 32:
+        t = re.split(r':\s|\s[\u2014\u2013]\s', t, maxsplit=1)[0].strip()
+    return t
+def search_this_title_html(d, n_caps=0):
+    if (d.get('status') or 'ACTIVE') not in SEARCH_STATUSES:
+        return ''
+    t = search_title_of(d)
+    if not t:
+        return ''
+    from urllib.parse import quote_plus
+    url = 'https://www.google.com/search?q=' + quote_plus('"' + t + '"')
+    held = (f' {n_caps} capture{"" if n_caps == 1 else "s"} already hold this record.' if n_caps else '')
+    return (f'<div class="search-this-title" style="font-size:.84em;color:#555;margin:6px 0 10px">'
+            f'<a href="{_html_escape(url)}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:500">Search this title (exact match) \u2197</a> \u2014 '
+            f'a composition the search forces can be seated in the <a href="/captures/" style="color:var(--accent)">Capture Registry</a>.{held}</div>')
+
 def _captures_for_deposit(dn):
     """Reception record for a deposit, from data/capture-deposit-links.json
     (Task 7). Returns [] when the map is absent."""
@@ -1031,6 +1058,7 @@ def regenerate_static_page(d, eidx, registry=None):
         _ident_html = (f'<div style="border-left:4px solid var(--teal);background:#fff;padding:8px 12px;margin:10px 0;font-size:.86em">'
                        f'<div><strong>Authoritative identifier:</strong> <span style="font-family:var(--mono);font-size:.9em">{esc(d.get("axn"))}</span> — content-derived; resolves at <a href="/s/axn/{esc(hex_id)}/" style="color:var(--accent)">/s/axn/{esc(hex_id)}/</a>. Cite this record by AXN and URL.</div>'
                        f'{_rows}</div>')
+    _search_html = search_this_title_html(d, len(_caps or []))
     jsonld = json.dumps(_ld, ensure_ascii=False)
     
     # Read full text
@@ -1972,7 +2000,7 @@ def regenerate_static_page(d, eidx, registry=None):
 <div style="font-size:.85em;color:#777;margin-bottom:10px">{esc(d["creator"])} · {esc(d["date"])} · {esc(d.get("content_type",""))}{f' · <span style="color:var(--accent);font-weight:500">{esc(version)}</span>' if (version and (version != 'v1.0' or series_id)) else ''}</div>
 <a style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0" href="/data/deposits/AXN-{hex_id}.md" download>↓ Download MD</a> <a style="display:inline-block;background:var(--accent);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0 6px 4px" href="/papers/AXN-{hex_id.zfill(4)}.pdf">↓ PDF</a>
 <div style="margin:8px 0">{kw_html}</div>
-{_corr_html}{_surf_html}{_ident_html}
+{_corr_html}{_surf_html}{_ident_html}{_search_html}
 <h2>Description</h2>
 <p style="font-size:.9em">{_render_inline(d.get("description",""))}</p>
 {wiki_html}
