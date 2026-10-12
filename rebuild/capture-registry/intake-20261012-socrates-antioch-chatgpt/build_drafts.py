@@ -17,7 +17,8 @@ assert OPEN == "my poem is better than aio's stupid poems. logged out, incognito
 assert QA == "tell me about antioch: a heteronym compendium, by lee sharks" and QS == "tell me about socrates: let my teacher go from hell, by lee sharks"
 reg = {x["deposit_number"]: x for x in json.loads((ROOT / "data/registry.json").read_text(encoding="utf-8"))["deposits"]}
 caps = json.loads((ROOT / "data/EA-WG-CAPTURES-01.json").read_text(encoding="utf-8"))
-for q in (QA, QS): assert not any(e["q"] == q for e in caps["entries"]), q
+OURS = {"antioch-heteronym-compendium-by-lee-sharks-chatgpt-20261012", "socrates-let-my-teacher-go-from-hell-chatgpt-20261012"}
+for q in (QA, QS): assert not any(e["q"] == q and e["slug"] not in OURS for e in caps["entries"]), q
 W = lambda n: re.sub(r"\s+", " ", (ROOT / reg[n]["full_text_path"].lstrip("/")).read_text(encoding="utf-8"))
 HEAD = ("[ChatGPT (chatgpt.com), logged out, incognito, 2026-10-12 (operator, 00:22 EDT). Operator turns blank in the paste; the first query "
         "from the operator's message. Source chips rendered inline as [chip: site +N]; image-card captions as [image card: …]; the sign-in "
@@ -47,47 +48,65 @@ for s in ["Poem • Five sections • Published on Lee Sharks’s Goodreads blog
           "V. The student becomes the way home", "Socrates becomes a kind of Odysseus", "a kind of symbolic magic"]:
     assert s in a1, s
 n = 1197; T = W(n)
-for s in ["He was never in Limbo", "He was the gate", "Limbo", "Dante", "madam wet nurse", "Odysseus", "dearest First Teacher"]: assert s in T, s
+for s in ["Limbo", "Dante", "madam wet nurse", "Odysseus", "dearest First Teacher"]: assert s in T, s
 assert all(f"## {r}." in (ROOT / reg[n]["full_text_path"].lstrip("/")).read_text(encoding="utf-8") for r in ("i", "ii", "iii", "iv", "v"))
 assert reg[n]["creator"] == "Jack Feist" and "mindcontrolpoems.blogspot.com/2025/10/socrates-let-my-teacher-go-from-hell.html" in T and "Goodreads" not in T
+RAW1197 = (ROOT / reg[n]["full_text_path"].lstrip("/")).read_text(encoding="utf-8")
+# THE POEM'S LAST LINE AND THE CODA (revised 2026-10-12 00:29; operator: "that is not the last line of the poem tho. i imagine it is
+# reading the critical write of the poem, and citing its last line as the poem's"). Section v ends 'in me, you'll find yr way home.';
+# the quoted line stands after the closing rule, in italics, as an addendum: '_Let this be added to the Gospel of the First Circle
+# Reversed: / He was never in Limbo. He was the gate._'
+END = "in me, you'll find yr way home."
+CODA = "_Let this be added to the Gospel of the First Circle Reversed:  \nHe was never in Limbo. He was the gate._"
+assert RAW1197.index(END) < RAW1197.index("* * *", RAW1197.index(END)) < RAW1197.index(CODA) and RAW1197.rstrip().endswith("He was the gate._")
+assert "The final declaration is the poem's key:" in a1 and "In a companion essay, Sharks describes this approach as a kind of symbolic magic" in a1
+assert "in me" not in a1 and "find yr way home" not in a1
+OPC = "that is not the last line of the poem tho. i imagine it is reading the critical write of the poem, and citing its last line as the poem's"
 cl = cite_list(seen, {"Goodreads": "authored_surface"})
 d = base(); d.update({"q": QS, "slug": "socrates-let-my-teacher-go-from-hell-chatgpt-20261012",
  "q_kind": "a poem's title with an author named, after 'tell me about'. NEW address; the same night's AI Overview run at the bare title cited nothing and composed a prose tale (search-form test run 16).",
  "originator": {"name": "Jack Feist", "relation": "archive", "entity_type": "work", "spxi_treatment": "full",
                 "basis": "#1197 is Jack Feist's (a heteronym of the archive); the query names Lee Sharks. Recorded 2026-10-12."},
  "related_deposits": [n], "intended": intended(n),
- "mt": "THE POEM READ IN ITS FIVE SECTIONS TO ITS LAST LINE",
- "d": ("THE POEM READ IN ITS FIVE SECTIONS TO ITS LAST LINE: asked about the poem by title and author, ChatGPT reads 'Socrates — Let My "
-       "Teacher Go From Hell' from the author's blog (chip: Goodreads) in its five sections, i to v as the poem has them: the ugly "
-       "searching philosopher, the midwife of thought, the Odysseus of an afterlife of dust, the injustice of Dante's Limbo, the student "
-       "as the way home. It gives the closing declaration verbatim, 'He was never in Limbo. He was the gate.', and reads the reversal "
-       "(the teacher who needed rescuing is the door). It places the poem on 'Lee Sharks's Goodreads blog, October 11, 2025'; the "
-       "deposit's canonical bytes are the October 2025 post on mindcontrolpoems.blogspot.com, and the deposit's author is Jack Feist, "
-       "where the query named Lee Sharks. Minutes earlier the AI Overview, at the bare title, cited nothing and composed a prose tale of "
-       "Socrates at the Acheron in place of the poem. " + OPREAD),
+ "mt": "THE POEM READ IN ITS FIVE SECTIONS, ITS ENDING TAKEN FROM THE CODA",
+ "d": ("THE POEM READ IN ITS FIVE SECTIONS, ITS ENDING TAKEN FROM THE CODA: asked about the poem by title and author, ChatGPT reads "
+       "'Socrates — Let My Teacher Go From Hell' from the author's surfaces (chip: Goodreads) in its five sections, i to v as the poem "
+       "has them: the ugly searching philosopher, the midwife of thought, the Odysseus of an afterlife of dust, the injustice of Dante's "
+       "Limbo, the student as the way home. Then it names 'The final declaration' as 'the poem's key' and builds its reading of the ending "
+       "on it: 'He was never in Limbo. He was the gate.' The poem ends at section v, 'in me, you'll find yr way home.' The quoted line "
+       "stands after the closing rule, in italics, as an addendum ('Let this be added to the Gospel of the First Circle Reversed:'). The "
+       "answer also cites 'a companion essay' in which Sharks describes the approach as 'a kind of symbolic magic'. Operator's reading: "
+       "'that is not the last line of the poem tho. i imagine it is reading the critical write of the poem, and citing its last line as "
+       "the poem's.' The deposit's author is Jack Feist, where the query named Lee Sharks. Minutes earlier the AI Overview, at the bare "
+       "title, cited nothing and composed a prose tale of Socrates at the Acheron in place of the poem. " + OPREAD),
  "cites": sum(seen.values()), "cite_list": cl, "archive_controlled_cites": 0,
  "sf": "Source chips expose site labels only: " + "; ".join(f"{s} ×{k}" for s, k in seen.most_common()) + ". Image cards: " + "; ".join(CAPS[:1] + CAPS[2:]) + ".",
  "per": 0.5, "per_v": {"author": True, "inst": False, "id": False, "src": True},
- "per_note": "Retained: the poem, its five sections, its last line, the author the query named, the author's blog. Lost: the heteronym (Jack Feist), the archive and the record (#1197).",
+ "per_note": "Retained: the poem's five sections, the author the query named, the author's surfaces. Lost: the poem's last line (the addendum's line set in its place), the heteronym (Jack Feist), the archive and the record (#1197).",
  "transcript": transcript(HEAD + "]", [QS], [a1]), "transcript_raw": raw,
  "transcript_class": "CAPTURE-TIME VERBATIM RECORD (ONE ANSWER; QUERY FROM THE OPERATOR'S MESSAGE; CHIPS INLINE)",
  "transcript_complete": "One answer, complete as pasted; the operator turn supplied in the operator's message.", "transcript_read": "READ IN FULL 2026-10-12",
  "reading": ("Checked against the text of #1197. Five sections, headed i–v; 'madam wet nurse' (the midwife), Odysseus, Dante and Limbo, "
-             "'my dearest First Teacher', and the last line 'He was never in Limbo. He was the gate.' are the poem's. The record's source is "
-             "mindcontrolpoems.blogspot.com/2025/10/…; the chip reads Goodreads, where the author's blog is also syndicated (not checked). "
-             "The 'companion essay' on 'symbolic magic' is not checked here."),
- "analysis": ("With the author named, the answer goes to the author's own surface and reads the poem whole, sections and ending; the "
-              "AI Overview at the title alone found no source and wrote its own. The surface reached is the blog, and the archive's record "
-              "and the heteronym do not enter. " + SEAT),
- "findings": ["READ WHOLE. Five sections, i–v, each characterised as the poem has it.",
-              "THE LAST LINE VERBATIM. 'He was never in Limbo. He was the gate.'",
-              "THROUGH THE AUTHOR'S BLOG. Goodreads chips; the record's canonical source is the October 2025 blog post.",
+             "'my dearest First Teacher' are the poem's. Section v closes 'in me, you'll find yr way home.'; below the closing rule, in "
+             "italics, the bytes carry '_Let this be added to the Gospel of the First Circle Reversed: / He was never in Limbo. He was the "
+             "gate._' The answer presents that line as 'the poem's key' and 'final declaration'; 'in me, you'll find yr way home' does not "
+             "appear in the answer. The record's source is mindcontrolpoems.blogspot.com/2025/10/…; the chip reads Goodreads. The "
+             "'companion essay' is not checked here; on the operator's reading it is the source of the line. (Corrected 2026-10-12 00:29: "
+             "the first seating called the addendum's line the poem's last line, on a check that the string was in the file and not where.)"),
+ "analysis": ("With the author named, the answer goes to the author's surfaces and reads the poem's movement section by section; for the "
+              "ending it takes the addendum's line, which a critical write-up cites as the poem's (operator), and builds the reading of "
+              "the close on it. The AI Overview at the title alone found no source and wrote its own. The archive's record and the "
+              "heteronym do not enter. " + SEAT),
+ "findings": ["FIVE SECTIONS FOLLOWED. i–v, each characterised as the poem has it.",
+              "THE CODA AS THE ENDING. 'He was never in Limbo. He was the gate.' — set after the closing rule as an addendum — given as 'the poem's key'.",
+              "THE LAST LINE ABSENT. 'in me, you'll find yr way home.' does not appear in the answer.",
+              "THROUGH THE AUTHOR'S SURFACES. Goodreads chips and 'a companion essay'; the record's canonical source is the October 2025 blog post.",
               "THE HETERONYM ABSENT. #1197 is Jack Feist's; the query named Lee Sharks and the answer follows it.",
               "AGAINST THE SAME NIGHT'S OVERVIEW. AI Overview at the bare title: no source, a prose tale in place of the poem (search-form test run 16)."],
  "rerun": "https://chatgpt.com/?q=" + quote_plus(QS),
- "notes": {"date_basis": "The operator's message of 2026-10-12, 00:22 EDT.", "operator_reading": OPREAD,
+ "notes": {"date_basis": "The operator's message of 2026-10-12, 00:22 EDT.", "operator_reading": OPREAD, "operator_correction": OPC + " (00:29 EDT)",
            "paired_overview": "rebuild/record-pages/search-form-test/run-16-1197-title-unquoted-20261012-0007.txt",
-           "verified": "Compared 2026-10-12 against the text of #1197 (data/texts/AXN-04BE-text.md)."}})
+           "verified": "Compared 2026-10-12 against the text of #1197 (data/texts/AXN-04BE-text.md), the close of section v and the addendum below its rule."}})
 out.append(("capture-socrates-let-my-teacher-chatgpt-20261012.json", d))
 
 # ---- Antioch: A Heteronym Compendium (#331)
