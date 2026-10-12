@@ -227,8 +227,8 @@ def search_title_urls(d):
 # night's runs found the author's name carried ChatGPT to the work (#1197, #166) and a request for a reading carried it to the work's
 # grain (#1658). The verb follows the kind of work: a poem or story is told about and read closely; a specification or instrument is
 # asked what it is and how it works; a paper is asked for its arguments. Incognito cannot be opened from a link (a browser boundary);
-# temporary-chat=true opens ChatGPT's Temporary Chat, which a signed-in reader's history and memory do not enter; hints=search asks it
-# to search. Both parameters are the interface's, observed in use and not documented as an API.
+# the link is chatgpt.com/?q= alone: temporary-chat=true (tried first) errors signed out, and hints=search is dropped with it.
+# The parameter is the interface's, observed in use and not documented as an API.
 _CREATIVE = re.compile(r'poe|poetry|creative|scripture|score|story|fiction|song|lyric|drama|play\b|gospel|literary|prose', re.I)
 _INSTRUMENT = re.compile(r'specification|protocol|software|dataset|instrument|module|metric|registry|navigation|charter|constitution|license|schema|apparatus|kernel|map\b|standard|tool', re.I)
 _ARGUED = re.compile(r'paper|essay|study|article|treatise|monograph|erratum|note\\b|analysis|reading|commentary|thesis', re.I)
@@ -249,7 +249,9 @@ def chatgpt_prompt_of(d):
     return f'What are the arguments in \u201c{t}\u201d by {a}? Ground your answer in a reading of the text itself.'
 def chatgpt_url_of(d):
     from urllib.parse import quote_plus
-    return 'https://chatgpt.com/?temporary-chat=true&hints=search&q=' + quote_plus(chatgpt_prompt_of(d))
+    # PLAIN ?q= (2026-10-12 01:26; operator: "it gives a verification error when opened in incognito, and opens in the app,
+    # otherwise"). temporary-chat=true is a signed-in feature and fails signed out; signed out there is no history to keep out.
+    return 'https://chatgpt.com/?q=' + quote_plus(chatgpt_prompt_of(d))
 def search_this_title_html(d, n_caps=0):
     if (d.get('status') or 'ACTIVE') not in SEARCH_STATUSES:
         return ''
@@ -261,7 +263,7 @@ def search_this_title_html(d, n_caps=0):
             f'<a href="{_html_escape(broad)}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:500">Search this title \u2197</a> '
             f'<a href="{_html_escape(exact)}" target="_blank" rel="noopener" style="color:var(--accent);font-size:.9em">(exact match)</a> \u00b7 '
             f'<a href="{_html_escape(chatgpt_url_of(d))}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:500">Ask ChatGPT \u2197</a> '
-            f'<span style="font-size:.9em">(temporary chat)</span> \u2014 '
+            f'\u2014 '
             f'a composition either forces can be seated in the <a href="/captures/" style="color:var(--accent)">Capture Registry</a>.{held}</div>')
 
 def _captures_for_deposit(dn):
