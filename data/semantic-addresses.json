@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-12T02:16:38Z",
+  "regenerated_at": "2026-10-12T03:06:33Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "ee5101e1df56313f1bfbc411c5efaa88f1838d7e260b4e81d767b63dea1e5456",
+    "mm-main-capture": "10a8c9594ab22614d5ead2383945ceb949f43a51b4c8a4ac050c091b45f4eb24",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2330,
-  "total_observations": 823,
+  "total_addresses": 2331,
+  "total_observations": 824,
   "class_counts": {
     "subjunctive": 1743,
-    "observed_address": 570,
+    "observed_address": 571,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1695,
+    "unmatched": 1696,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -1333,6 +1333,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-07-23",
       "latest_status": "CAPTURE"
+    },
+    "\"erratum — the missing translator: max hidalgo nácher, ricardo reis, and axn:f154\"": {
+      "canonical_query": "\"erratum — the missing translator: max hidalgo nácher, ricardo reis, and axn:f154\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-11",
+          "status": "THE DEPOSIT COMPOSED FROM THE CAPTURE OF ITS OCCASION, BEFORE IT IS INDEXED",
+          "surface": "Google AI Overview",
+          "source_format": "Two cards: www.leesharks.com — AI Overview Captures - Lee Sharks; Editorial Pre-Textos — Obras completas de Ricardo Reis. Inline: 6 numbered citations to the same two pages; name links to Academia (ub.academia.edu) and Pre-Textos.",
+          "section": "Machine Reception",
+          "slug": "erratum-missing-translator-exact-title-aio-20261011",
+          "gallery_url": "https://www.alexanarch.org/captures/#erratum-missing-translator-exact-title-aio-20261011",
+          "record_url": "https://www.alexanarch.org/captures/erratum-missing-translator-exact-title-aio-20261011/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#erratum-missing-translator-exact-title-aio-20261011",
+          "details_excerpt": "THE DEPOSIT COMPOSED FROM THE CAPTURE OF ITS OCCASION, BEFORE IT IS INDEXED: run at its exact title the day after deposit, with the deposit not indexed (operator), the erratum on AXN:F154 (#1675) is composed from two sou"
+        }
+      ],
+      "originator": {
+        "name": "Johannes Sigil",
+        "relation": "archive",
+        "entity_type": "person",
+        "spxi_treatment": "full",
+        "basis": "The erratum (#1675, AXN:06F1) is Johannes Sigil's; the capture it composes from (v12.101) is the archive's. Recorded 2026-10-11."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-11",
+      "latest_status": "THE DEPOSIT COMPOSED FROM THE CAPTURE OF ITS OCCASION, BEFORE IT IS INDEXED"
     },
     "\"executable scripture\"": {
       "canonical_query": "\"executable scripture\"",
