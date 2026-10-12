@@ -144,10 +144,12 @@ Promise.all([
     if(m === 'deliberate') return 'deliberate';
     return 'coined';
   }
-  function flagOf(t){ return t.definition_status || t.entry_class || ''; }
-  var mintCount = {coined:0, deliberate:0, batch:0, bulk:0}, flagCount = 0;
-  allTerms.forEach(function(t){ mintCount[mintClass(t)]++; if(flagOf(t)) flagCount++; });
+  function flagOf(t){ return t.definition_status || (t.entry_class === 'coinage' ? '' : t.entry_class) || ''; }
+  function isCoinage(t){ return t.entry_class === 'coinage'; }
+  var mintCount = {coined:0, deliberate:0, batch:0, bulk:0}, flagCount = 0, coinCount = 0;
+  allTerms.forEach(function(t){ mintCount[mintClass(t)]++; if(flagOf(t)) flagCount++; if(isCoinage(t)) coinCount++; });
   var mintChipHtml = '<div class="fbtn active" data-mint="all">Any minting</div>'+
+    '<div class="fbtn" data-mint="coinage" title="read by hand 2026-10-12: a concept, mechanism, instrument, operator or role coined in the archive">Archive coinages ('+coinCount.toLocaleString()+')</div>'+
     '<div class="fbtn" data-mint="coined" title="minted in session or as a single coinage">Coined ('+mintCount.coined.toLocaleString()+')</div>'+
     '<div class="fbtn" data-mint="deliberate" title="from a deposit minting fewer than 20 terms">Deliberate ('+mintCount.deliberate.toLocaleString()+')</div>'+
     '<div class="fbtn" data-mint="batch" title="from a deposit minting 20–49 terms at once">Batch ('+mintCount.batch.toLocaleString()+')</div>'+
@@ -181,7 +183,7 @@ Promise.all([
       });
     }
     if(activeMint !== 'all'){
-      pool = pool.filter(function(t){ return activeMint === 'unflagged' ? !flagOf(t) : mintClass(t) === activeMint; });
+      pool = pool.filter(function(t){ return activeMint === 'unflagged' ? !flagOf(t) : activeMint === 'coinage' ? isCoinage(t) : mintClass(t) === activeMint; });
     }
     if(query){
       var q = query.toLowerCase();
@@ -233,7 +235,7 @@ Promise.all([
       // user can pivot from lexical view to concept-relation view
       var termHtml = ovRow ? '<a href="/graph/?search='+encodeURIComponent(t.term)+'" class="term-name-link">'+t.term+'</a>' : t.term;
       return '<div class="term-card">'+
-        '<div><span class="term-name">'+termHtml+'</span><span class="term-type">'+(t.type||'')+'</span></div>'+
+        '<div><span class="term-name">'+termHtml+'</span><span class="term-type">'+(t.type||'')+'</span>'+(isCoinage(t)?'<span class="term-type" title="read 2026-10-12: a coinage of the archive">coinage</span>':'')+'</div>'+
         (t.definition ? (flagOf(t)
           ? '<div class="term-def" style="opacity:.55" title="flagged by a cleaning pass: the recorded definition is not a definition of the term">'+
             '<span style="font-size:.8em;border:1px solid var(--dim);padding:0 4px;margin-right:6px">'+(flagOf(t)==='not-a-term' ? 'not a minted term (read 2026-10-12)' : 'definition flagged: '+flagOf(t))+'</span>'+t.definition+'</div>'
