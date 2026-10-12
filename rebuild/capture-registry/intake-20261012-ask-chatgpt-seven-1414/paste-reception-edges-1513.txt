@@ -1,0 +1,329 @@
+
+
+Log in
+You said:
+
+ChatGPT said:
+What is EA-RECEPTION-01 v1.0?
+EA-RECEPTION-01 v1.0, “The Reception Edge as First-Class Object — Schema and the Nine Founding Edges,” is a research-data specification by Lee Sharks for recording relationships between literary and historical texts as explicit, machine-readable evidence objects. It is published on the Machine-Mediated Reception Studies website under the heading Reception Edges . The document identifies it as workstream 4 of the EA-OMEGA-BUILD-01 project. 
+
+Machine-Mediated Reception Studies
++1
+
+Its central idea is that a relationship between two texts should not exist only as a scholar's explanation in an essay. It should be recorded as a structured object that identifies the texts, specifies the proposed relationship, points to evidence, records the interpretation's status, and includes counterarguments.
+
+The page summarizes its goal as restoring provenance “as relation, not bibliography.” In other words, it aims to preserve not just which sources exist, but what relationship is being claimed between them, why that claim is being made, and how certain or contested it is. 
+
+Machine-Mediated Reception Studies
+
+One important qualification: this is a specific scholarly framework developed by Sharks, not a universally established standard for literary studies. Its nine founding examples illustrate how the author intends the framework to work; they do not, by themselves, prove every proposed textual relationship.
+
+1. How the system works
+The document defines a “reception edge” as a typed, evidenced, versioned, attributed assertion that one text carries a worked reception of another. Its data structure follows a JSON Schema specification based on JSON Schema Draft 2020-12. 
+
+alexanarch.org
+
+The basic model looks like this:
+
+Source text
+
+The proposed origin of a relationship
+
+Reception edge
+
+Type · Evidence · Preserved features · Transformations · Status · Objections
+
+Witness text
+
+The text in which the proposed reception appears
+
+The edge is a separate data object connecting the texts, not merely a citation linking two bibliographic records.
+
+The source and witness labels describe the direction of the proposed relationship. The edge then records what the scholar believes was carried across, what changed, and what evidence supports that interpretation. The source and witness also have optional archive identifiers and corpus-seat references. 
+
+alexanarch.org
++1
+
+The fields that make an edge useful
+The schema specifies the following required fields:
+
+Field
+
+Purpose
+
+id
+
+Stable identifier, such as RE-0001.
+
+source and witness
+
+Identify the texts being related.
+
+relation_type
+
+Classifies the proposed relationship.
+
+operator_clauses
+
+Identifies the analytical rules or clauses applied.
+
+preserved
+
+Records features retained across the relationship.
+
+transformed
+
+Records features altered, removed, inverted, or recast.
+
+evidence
+
+Points to textual locations and corpus deposits.
+
+status
+
+Indicates the claim's current epistemic status.
+
+asserted_by, date, version
+
+Record attribution and version history.
+
+counterarguments
+
+Stores objections to the interpretation.
+
+Two additional fields are particularly useful: direction_score, where applicable, and contamination_flags, which can disclose methodological problems such as an unblinded analysis. Both are optional in the schema. 
+
+alexanarch.org
+
+2. What kinds of relationships can it represent?
+EA-RECEPTION-01 defines eight relation types:
+
+Quotation
+
+A text quotes another text.
+
+Translation
+
+A text carries another text into a different language.
+
+Material transform
+
+A recognizable textual or structural pattern is recast in another work.
+
+Doctrinal compression
+
+A more extensive pattern is condensed into a doctrinal or conceptual form.
+
+Redactional intensification
+
+A later textual form sharpens or amplifies features of an earlier pattern.
+
+Inversion
+
+A pattern is retained but important elements are reversed.
+
+Contested carrier
+
+The proposed relationship depends on a textual witness whose authority or status is disputed.
+
+Tested transform
+
+A proposed transformation is evaluated against a specified analytical framework.
+
+These are categories for organizing scholarly claims, not automatic findings. The type tells a reader or a program what sort of relationship the author is asserting; the evidence and status fields provide the context needed to assess it. 
+
+alexanarch.org
+
+3. The nine founding edges
+The published dataset contains nine founding edges, identified as RE-0001 through RE-0009. They use Sappho's Fragment 31 as a major reference point and extend the proposed reception pattern across classical, Jewish, Christian, and later textual traditions. The table below summarizes the document's own claims, not independently established conclusions. 
+
+alexanarch.org
+
+ID
+
+Proposed relationship
+
+Status in the document
+
+RE-0001
+
+Sappho, Fragment 31 → [Longinus], On the Sublime 10.2.
+
+Replicated
+
+RE-0002
+
+Sappho, Fragment 31 → Catullus 51.
+
+Replicated
+
+RE-0003
+
+Sappho, Fragment 31 → Philo's Migr. / Her. / Mut.
+
+Tested
+
+RE-0004
+
+Sappho, Fragment 31 → Greek Esther, Addition D.
+
+Tested
+
+RE-0005
+
+Esther, Addition D → Josephus, Jewish Antiquities 11.234–241.
+
+Tested
+
+RE-0006
+
+Sappho, Fragment 31 → Josephus, Jewish War 1.436–444.
+
+Tested
+
+RE-0007
+
+Sappho, Fragment 31 → Revelation 12.
+
+Tested transform
+
+RE-0008
+
+Isaiah 66:7 → Revelation 12:2 and 12:5.
+
+Tested
+
+RE-0009
+
+Sappho, Fragment 31 → eight Slavonic Josephus pericopes.
+
+Contested
+
+Source: Founding graph, edges.json . 
+
+alexanarch.org
+
+Three examples that explain the method
+Cerdo Zente: Safo, frag. 31 (texto griego y traducción)
+Example A — RE-0002: Sappho and Catullus
+
+The document classifies Catullus 51 as a translation of Sappho's Fragment 31. It records the preservation of bodily imagery involving the tongue, fire, ears, and eyes, while identifying changes to the order of eyes and ears and the omission of other bodily symptoms. It also notes that this well-known relationship serves as a calibration anchor.
+
+The point is to encode both continuity and change rather than simply label Catullus as a translation. 
+
+alexanarch.org
+
+
+Example B — RE-0004: Sappho and Esther
+
+The author argues that Greek Esther's Addition D preserves a sequence resembling Fragment 31: an exchange of sight, fire, a bodily jolt, voice, collapse, and reactivation. The edge also records differences, including the relocation of the fire imagery and the omission of ears and sweat.
+
+Crucially, its counterargument acknowledges that courtly audience conventions may independently explain parts of the scene. The claim therefore rests on the proposed sequence and combination of features, rather than on one shared motif alone. 
+
+alexanarch.org
+
+Revelation represents men as sol novus and umbra viventis lucis – purple motes
+Example C — RE-0007: Sappho and Revelation 12
+
+This edge proposes that Revelation 12 reproduces eight of nine analytical “stations” associated with Fragment 31, transforming the poem's bodily and near-death experience into a cosmic vision involving birth, flight, and a public sign.
+
+But the record also admits that one clause fails when the proposed pattern is tested as a whole, identifies competing explanations for some features, discloses a prior unblinded pass, and invites blind replication. Its status remains tested, not replicated. 
+
+alexanarch.org
+
+The third example is especially revealing: the framework is designed to preserve a scholar's negative findings and methodological limitations alongside the positive argument.
+
+4. What do the status labels mean?
+The schema permits four statuses. They describe the state of the assertion within this research framework; they should not automatically be equated with universal scholarly consensus.
+
+hypothesis — a proposed relationship that has not yet been recorded as tested.
+
+tested — a relationship that has undergone the author's specified analytical procedure.
+
+replicated — a relationship designated as replicated in the dataset.
+
+contested — a relationship whose status or supporting evidence remains disputed.
+
+For example, the Catullus translation is marked replicated, the Revelation transformation is marked tested, and the Slavonic Josephus relationship is marked contested. These differences are visible in the actual data rather than left for readers to infer from the prose. 
+
+alexanarch.org
++1
+
+The document also illustrates why these distinctions matter. For RE-0009, it explicitly notes that the Slavonic recension's authority is disputed and that no openly licensed text is available. The edge is retained as contested reception data rather than presented as an uncontested witness to Josephus.
+
+5. How does it work in practice?
+The intended workflow can be reconstructed from the schema and the founding dataset.
+
+Identify a possible relationship. A researcher proposes that one text quotes, translates, transforms, intensifies, or otherwise receives material from another.
+
+Classify the relationship. Assign a stable ID and one of the eight defined relationship types.
+
+Make the claim inspectable. Record preserved and transformed features, analytical operator clauses, and specific textual locations tied to corpus seats and deposits.
+
+Record uncertainty and provenance. Attribute the claim, date it, version it, assign a status, and include counterarguments and any relevant contamination flags.
+
+Publish and extend the graph. Make the structured edges available for search, computational analysis, and further scholarly interpretation. Add new versions or competing edges when the argument changes instead of silently replacing earlier claims.
+
+The final step is explicit in the document: extensions are to be represented as versioned edges, while disputes should be represented as counterarguments or rival edges rather than silent overwrites. The intended result is a graph that search engines and language models can query without reconstructing the relationships from unstructured prose. 
+
+Machine-Mediated Reception Studies
++1
+
+6. Why does the author consider this important?
+The specification addresses a particular problem: provenance can disappear when texts and scholarly claims are reduced to isolated documents, citations, or summaries.
+
+A bibliography might establish that two works exist or that one scholar cites another. It does not necessarily capture the detailed argument that one text preserves a particular sequence from another, alters it in a particular way, or may have acquired it through an alternative tradition.
+
+A reception edge attempts to preserve that intermediate layer:
+
+For researchers: the reasoning and objections behind a proposed textual relationship remain attached to the claim.
+
+For search systems: relationships become searchable data rather than implicit connections buried in essays.
+
+For computational analysis: different proposed relationships can be compared using common fields.
+
+For future revisions: the record can evolve without erasing earlier versions or hiding disagreement.
+
+These are the intended benefits described by the project, not demonstrated guarantees that every search engine or AI system will use the data correctly. 
+
+Machine-Mediated Reception Studies
++1
+
+7. What the document does not establish
+A careful reading requires separating the system's design from the strength of its historical conclusions.
+
+A valid schema does not prove a historical relationship. It ensures that a record follows a structure, not that the interpretation is correct.
+
+A tested status is not independent confirmation. RE-0007, for instance, explicitly records a single adjudicator and invites blind replication.
+
+Counterarguments are recorded, not necessarily resolved. Their presence makes a claim more transparent but does not determine which interpretation is right.
+
+The nine edges are a founding dataset, not proof of the entire theory. Each relationship must be assessed against its underlying textual evidence and alternative explanations.
+
+These limitations follow from the distinction between the schema's data-validation rules and the scholarly assertions stored within it. 
+
+alexanarch.org
++1
+
+Primary documents
+For a document-grounded reading, these are the three most useful sources:
+
+EA-RECEPTION-01 v1.0 — Reception Edges  — the explanatory document, relationship definitions, and summaries of all nine edges.
+
+The JSON Schema  — the formal field definitions, required properties, and permitted values.
+
+The founding graph (edges.json)  — the actual machine-readable records, including textual evidence, statuses, counterarguments, and contamination disclosures.
+
+In short: EA-RECEPTION-01 turns scholarly claims about how texts relate to one another into explicit, traceable, versioned data. Its defining design principle is that a relationship should carry not only the argument for it, but also its evidence, provenance, uncertainty, and objections. The framework's contribution is this architecture for making claims inspectable; whether any individual claim is historically persuasive remains a separate scholarly question.
+
+
+ChatGPT is AI and can make mistakes.
+
+
+No file chosenNo file chosenNo file chosen
+
+Chat with ChatGPT
+Ask ChatGPT
+
+
+
