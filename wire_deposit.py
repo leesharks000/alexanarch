@@ -221,6 +221,35 @@ def search_title_urls(d):
         return None, None
     from urllib.parse import quote_plus
     return ('https://www.google.com/search?q=' + quote_plus(t), 'https://www.google.com/search?q=' + quote_plus('"' + t + '"'))
+# ASK CHATGPT (operator, 2026-10-12 00:46: "lets add a link to search on titles with chatgpt. that needs to be conversational tho. tell me
+# about or what is or what are the arguments in - a crafted conversational prompt to elicit a detailed, credible answer"; 00:47: "and can
+# it be to incognito?"). The prompt names the work in quotation marks and its author, and asks for an answer grounded in the text: the
+# night's runs found the author's name carried ChatGPT to the work (#1197, #166) and a request for a reading carried it to the work's
+# grain (#1658). The verb follows the kind of work: a poem or story is told about and read closely; a specification or instrument is
+# asked what it is and how it works; a paper is asked for its arguments. Incognito cannot be opened from a link (a browser boundary);
+# temporary-chat=true opens ChatGPT's Temporary Chat, which a signed-in reader's history and memory do not enter; hints=search asks it
+# to search. Both parameters are the interface's, observed in use and not documented as an API.
+_CREATIVE = re.compile(r'poe|poetry|creative|scripture|score|story|fiction|song|lyric|drama|play\b|gospel|literary|prose', re.I)
+_INSTRUMENT = re.compile(r'specification|protocol|software|dataset|instrument|module|metric|registry|navigation|charter|constitution|license|schema|apparatus|kernel|map\b|standard|tool', re.I)
+_ARGUED = re.compile(r'paper|essay|study|article|treatise|monograph|erratum|note\\b|analysis|reading|commentary|thesis', re.I)
+def author_of(d):
+    a = re.split(r'\s*(?:;|·|\(| with )\s*', str(d.get('creator') or '').strip())[0].strip()
+    if not a or a.startswith('No explicit author'):
+        return 'Lee Sharks'
+    m = re.fullmatch(r"([A-Z][\w'-]+), ([A-Z][\w.'-]*)", a)
+    if m:
+        a = 'Lee Sharks' if a == 'Sharks, L.' else f'{m.group(2)} {m.group(1)}'
+    return a.split(', ')[0].strip()
+def chatgpt_prompt_of(d):
+    t, a, ct = search_title_of(d), author_of(d), str(d.get('content_type') or '')
+    if _CREATIVE.search(ct) and not _INSTRUMENT.search(ct) and not _ARGUED.search(ct):
+        return f'Tell me about \u201c{t}\u201d by {a}. Read it closely, and ground what you say in the text itself.'
+    if _INSTRUMENT.search(ct) and not _ARGUED.search(ct):
+        return f'What is \u201c{t}\u201d by {a}, and how does it work? Ground your answer in the document itself.'
+    return f'What are the arguments in \u201c{t}\u201d by {a}? Ground your answer in a reading of the text itself.'
+def chatgpt_url_of(d):
+    from urllib.parse import quote_plus
+    return 'https://chatgpt.com/?temporary-chat=true&hints=search&q=' + quote_plus(chatgpt_prompt_of(d))
 def search_this_title_html(d, n_caps=0):
     if (d.get('status') or 'ACTIVE') not in SEARCH_STATUSES:
         return ''
@@ -230,8 +259,10 @@ def search_this_title_html(d, n_caps=0):
     held = (f' {n_caps} {"capture already holds" if n_caps == 1 else "captures already hold"} this record.' if n_caps else '')
     return (f'<div class="search-this-title" style="font-size:.84em;color:#555;margin:6px 0 10px">'
             f'<a href="{_html_escape(broad)}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:500">Search this title \u2197</a> '
-            f'<a href="{_html_escape(exact)}" target="_blank" rel="noopener" style="color:var(--accent);font-size:.9em">(exact match)</a> \u2014 '
-            f'a composition the search forces can be seated in the <a href="/captures/" style="color:var(--accent)">Capture Registry</a>.{held}</div>')
+            f'<a href="{_html_escape(exact)}" target="_blank" rel="noopener" style="color:var(--accent);font-size:.9em">(exact match)</a> \u00b7 '
+            f'<a href="{_html_escape(chatgpt_url_of(d))}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:500">Ask ChatGPT \u2197</a> '
+            f'<span style="font-size:.9em">(temporary chat)</span> \u2014 '
+            f'a composition either forces can be seated in the <a href="/captures/" style="color:var(--accent)">Capture Registry</a>.{held}</div>')
 
 def _captures_for_deposit(dn):
     """Reception record for a deposit, from data/capture-deposit-links.json
