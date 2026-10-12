@@ -131,6 +131,12 @@ def main():
     if "--list" in sys.argv:
         for s, had, n in per:
             print(f"  {s}: +{n}" + ("" if not had else "  (added to declared)"))
+    unext = [e["slug"] for e in reg["entries"] if (e.get("cites") or 0) > 0 and not e.get("cite_list")]
+    print(f"captures counting citations with no cards extracted (citations-unextracted): {len(unext)}")
+    if write:
+        for e in reg["entries"]:
+            if e["slug"] in unext and "citations-unextracted" not in (e.get("defects") or []):
+                e["defects"] = sorted(set((e.get("defects") or []) + ["citations-unextracted"]))
     if write:
         CANON.write_text(json.dumps(reg, ensure_ascii=False, indent=1), encoding="utf-8")
         print("written")
