@@ -656,7 +656,9 @@ def card(e, record=False):
     _it = e.get("intended") or {}
     intended_line = ""
     if _it.get("record"):
-        _reach = "cited in the composition" if _it.get("reached") else "not cited in the composition"
+        # 2026-10-12: reached is absent when the capture's cards were never extracted — unknown, not false
+        _reach = ("whether the composition cited it is not recorded (its source cards were not extracted)" if "reached" not in _it
+                  else "cited in the composition" if _it["reached"] else "not cited in the composition")
         _srch = (f' · <a href="{esc(_it["search"])}" target="_blank" rel="noopener">Search this title</a>'
                  if _it.get("search") else "")
         if _it.get("search_exact"):
