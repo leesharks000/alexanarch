@@ -62,7 +62,7 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:6px}
 <!-- NAV-END -->
 
 <h1>Lexical Minting Registry</h1>
-<div class="sub">Every term minted, coined, or formally extracted across the deposited corpus. Each term is anchored to its defining deposit.</div>
+<div class="sub">The terms the archive coins, and the established terms it gives its own fixed sense, each read by hand and anchored to its defining deposit.</div>
 
 <div class="stats" id="stats"></div>
 <input class="search" id="search" placeholder="Search terms or definitions...">
@@ -73,7 +73,7 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:6px}
 <div class="pager" id="pager"></div>
 
 <div class="footer">
-  <div><strong>Alexanarch</strong> · Read from <a href="/data/lexical-minting-registry.json">data/lexical-minting-registry.json</a> · paginated alphabetically with type/source filters</div>
+  <div><strong>Alexanarch</strong> · Read from <a href="/data/lexical-minting-registry.json">data/lexical-minting-registry.json</a>, entries classed coinage or archive-reworked term · paginated alphabetically with type/source filters</div>
   <div class="glyph">∮ = 1</div>
 </div>
 </div>
@@ -92,7 +92,13 @@ Promise.all([
   var ov = results[1] || {overlay:{}, stats:{}};
   var overlay = ov.overlay || {};
   var ovStats = ov.stats || {};
-  var allTerms = lmr.terms || [];
+  // 2026-10-12: the page shows the lexicon — entries read by hand as archive coinages or archive-reworked terms.
+  // Everything else the automated extractions recorded (headings, phrases, names, not-a-term) stays in the JSON,
+  // classed, so that no cited entry breaks; it is not presented here as a term.
+  function inLexicon(t){ return t.entry_class === 'coinage' || t.entry_class === 'archive-reworked term'; }
+  var allTerms = (lmr.terms || []).filter(inLexicon);
+  var engagedN = 0, addressedN = 0;
+  allTerms.forEach(function(t){ var r = overlay[t.term]; if(r){ engagedN++; if(r.address_count) addressedN++; } });
   // Index terms by first letter
   var byLetter = {};
   allTerms.forEach(function(t){
@@ -112,11 +118,11 @@ Promise.all([
     '<div class="stat"><div class="stat-num">'+sources.size+'</div><div class="stat-label">Defining deposits</div></div>'+
     '<div class="stat"><div class="stat-num">'+Object.keys(typeCount).length+'</div><div class="stat-label">Types</div></div>';
   // Wire-in stats from overlay
-  if(ovStats.engaged){
-    statsHtml += '<div class="stat"><div class="stat-num">'+ovStats.engaged.toLocaleString()+'</div><div class="stat-label">Engaged in concept layer</div></div>';
+  if(engagedN){
+    statsHtml += '<div class="stat"><div class="stat-num">'+engagedN.toLocaleString()+'</div><div class="stat-label">Engaged in concept layer</div></div>';
   }
-  if(ovStats.addressed){
-    statsHtml += '<div class="stat"><div class="stat-num">'+ovStats.addressed.toLocaleString()+'</div><div class="stat-label">Tested as queries</div></div>';
+  if(addressedN){
+    statsHtml += '<div class="stat"><div class="stat-num">'+addressedN.toLocaleString()+'</div><div class="stat-label">Tested as queries</div></div>';
   }
   document.getElementById('stats').innerHTML = statsHtml;
   
@@ -129,9 +135,9 @@ Promise.all([
   
   // Engagement filter chips
   var engChipHtml = '<div class="fbtn active" data-eng="all">All</div>'+
-                    '<div class="fbtn" data-eng="engaged">Engaged ('+(ovStats.engaged||0).toLocaleString()+')</div>'+
-                    '<div class="fbtn" data-eng="raw">LMR-only / raw ('+(ovStats.raw_only||0).toLocaleString()+')</div>'+
-                    '<div class="fbtn" data-eng="addressed">Tested as queries ('+(ovStats.addressed||0).toLocaleString()+')</div>';
+                    '<div class="fbtn" data-eng="engaged">Engaged ('+engagedN.toLocaleString()+')</div>'+
+                    '<div class="fbtn" data-eng="raw">Not yet in concept layer ('+(allTerms.length-engagedN).toLocaleString()+')</div>'+
+                    '<div class="fbtn" data-eng="addressed">Tested as queries ('+addressedN.toLocaleString()+')</div>';
   var fbox = document.getElementById('engagement-filter');
   if(fbox) fbox.innerHTML = engChipHtml;
   
@@ -199,7 +205,7 @@ Promise.all([
   
   function renderEngagementBadge(ovRow){
     if(!ovRow) {
-      return '<span class="eng-badge eng-raw" title="LMR-only — not curated into the concept layer">raw</span>';
+      return '<span class="eng-badge eng-raw" title="not yet curated into the concept layer">not in concept layer</span>';
     }
     var bits = [];
     var et = ovRow.engagement_type || 'unclassified';

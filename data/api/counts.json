@@ -2,7 +2,7 @@
  "_note": "Canonical counts for the fleet. Every surface that states a number should FETCH IT FROM HERE rather than hand-setting it. Derived from source by scripts/build_counts.py — not hand-maintained, because a hand-maintained canonical count is just another surface that drifts.",
  "_source": "https://www.alexanarch.org/api/counts.json",
  "_generator": "scripts/build_counts.py",
- "_generated": "2026-10-10",
+ "_generated": "2026-10-12",
  "deposits": {
   "total": 1675,
   "highest_number": 1675,
@@ -11,11 +11,13 @@
   "_derived_from": "data/registry.json"
  },
  "captures": {
-  "total": 569,
+  "total": 624,
   "_derived_from": "data/EA-WG-CAPTURES-01.json"
  },
  "lexicon": {
-  "terms_minted": 12523,
+  "terms_minted": 3194,
+  "registry_entries": 12871,
+  "note": "terms_minted counts entries classed coinage or archive-reworked term; registry_entries includes extraction residue kept for addressability",
   "_derived_from": "data/lexical-minting-registry.json"
  },
  "fleet": {

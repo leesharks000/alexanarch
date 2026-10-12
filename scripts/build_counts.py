@@ -47,7 +47,11 @@ def build() -> dict:
     n_posts = (blog or {}).get("total_posts") or (blog or {}).get("posts")
 
     lex = _load("data/lexical-minting-registry.json", {})
-    n_terms = len(lex.get("terms") or lex.get("entries") or [])
+    _entries = lex.get("terms") or lex.get("entries") or []
+    # 2026-10-12 (lexicon pass 7): the lexicon is the entries read as archive coinages or archive-reworked terms;
+    # the rest of the registry is extraction residue kept for addressability, and is not a count of terms.
+    n_terms = sum(1 for t in _entries if t.get("entry_class") in ("coinage", "archive-reworked term"))
+    n_entries = len(_entries)
 
     counts = {
         "_note": ("Canonical counts for the fleet. Every surface that states a number should "
@@ -67,7 +71,9 @@ def build() -> dict:
             "_derived_from": "data/registry.json",
         },
         "captures": {"total": n_caps, "_derived_from": "data/EA-WG-CAPTURES-01.json"},
-        "lexicon": {"terms_minted": n_terms, "_derived_from": "data/lexical-minting-registry.json"},
+        "lexicon": {"terms_minted": n_terms, "registry_entries": n_entries,
+                    "note": "terms_minted counts entries classed coinage or archive-reworked term; registry_entries includes extraction residue kept for addressability",
+                    "_derived_from": "data/lexical-minting-registry.json"},
         "fleet": {"domains": n_domains, "_derived_from": "data/fleet-domains.json"},
     }
     if n_posts:

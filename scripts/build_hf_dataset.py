@@ -409,7 +409,10 @@ def citations():
 
 def lexicon():
     p = ROOT/'data/lexical-minting-registry.json'
-    j = json.load(open(p)); return pd.DataFrame(j.get('terms') or [])
+    # 2026-10-12 (lexicon pass 7): the lexicon config carries the lexicon — entries read as archive coinages or
+    # archive-reworked terms. Extraction residue stays in data/lexical-minting-registry.json and is not published as terms.
+    j = json.load(open(p))
+    return pd.DataFrame([t for t in (j.get('terms') or []) if t.get('entry_class') in ('coinage', 'archive-reworked term')])
 
 def reception():
     # the register in the #1574 appendix, parsed from its markdown table
