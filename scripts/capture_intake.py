@@ -219,7 +219,7 @@ def _flat_defects(e):
     return sorted(set(d))
 
 
-def link_cards(e, cards):
+def link_cards(e, cards, date=None):
     """Resolve source cards to deposits and add them to the entry's related_deposits (2026-10-12).
     Citation extraction records cards as shown; this is the step that joins them to the registry, so a
     capture's deposit links no longer depend on a session writing them in by hand. Each resolution is
@@ -228,7 +228,7 @@ def link_cards(e, cards):
     idx = L.Index(json.loads((ROOT / "data/registry.json").read_text(encoding="utf-8"))["deposits"])
     rel = list(e.get("related_deposits") or [])
     for c in cards or []:
-        n, basis, cands = idx.resolve(c)
+        n, basis, cands = idx.resolve(c, date or e.get("date"))
         if n is not None:
             c["deposit"], c["deposit_basis"] = n, basis
             if n not in rel: rel.append(n)
@@ -264,7 +264,7 @@ def seat_flat(draft, registry, schema):
                 root["date"] = (e.get("dates") or [e.get("date")])[0]
                 root["obs_id"] = e.get("obs_id") or "OBS-" + hashlib.sha256((e["q"] + str(root["date"]) + str(e["surface"])).encode()).hexdigest()[:12]
                 e["observations"] = [root]
-            link_cards(e, obs.get("cite_list"))
+            link_cards(e, obs.get("cite_list"), obs.get("date"))
             e["observations"].append(obs); e["n_observations"] = len(e["observations"])
             e.setdefault("dates", []); e["dates"].append(draft["date"]) if draft["date"] not in e["dates"] else None
             return "observation", e
