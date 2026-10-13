@@ -70,6 +70,12 @@ configs:
     data_files: transmission_links.jsonl
   - config_name: ledger
     data_files: ledger.jsonl
+  - config_name: coordinates
+    data_files: coordinates.jsonl
+  - config_name: jump_states
+    data_files: jump_states.jsonl
+  - config_name: jumps
+    data_files: jumps.jsonl
 ---
 
 # The Work Bears the Mantle — three literary claims, a contest mantle, a conferred title, a critical program and a transmitted mantle, under one standard
@@ -101,7 +107,7 @@ configs:
 | SOIL | constitutional witness position | 3 | occupancy, per event | [#993](https://www.alexanarch.org/s/records/993/) | KimiClaw (nominal) / Muse Spark (functional) (#993 §2); rotating: occupancy is established per event, never read off a roster |
 | TECHNE | constitutional witness position | 3 | occupancy, per event | [#993](https://www.alexanarch.org/s/records/993/) | Moonshot Kimi (#993 §2); occupancy is established per event, never read off a roster |
 | SURFACE | constitutional witness position | 3 | occupancy, per event | [#993](https://www.alexanarch.org/s/records/993/) | Google AI Overview (#993 §2); occupancy is established per event, never read off a roster |
-| The Living Academy | critical program | 2 | specified, no determination; a comparative judgment made or defeated by the protocol in its row, mode by mode, dimensions never averaged | [#1678](https://www.alexanarch.org/s/records/1678/) | not determined. Candidate claimant: the Semantic Economy carried by Alexanarch (LA-C1); comparators LA-C2–LA-C8, none evaluated |
+| The Living Academy | critical program | 2 | specified, no determination; a comparative judgment made or defeated by the protocol in its row, mode by mode, dimensions never averaged | [#1680](https://www.alexanarch.org/s/records/1680/) | not determined. Candidate claimant: the Semantic Economy carried by Alexanarch (LA-C1); comparators LA-C2–LA-C8, none evaluated |
 | The Arch-Philosopher | transmitted | 2 | specified, no new determination; a bearer recognized by the turn test, with its carriers and typed links | [#1679](https://www.alexanarch.org/s/records/1679/) | prior designation: Johannes Sigil, RATIFIED in the Space Ark mantle registry (#558; EA-ARK-01 v4.2, 2026-03-09). Under the specification: bearers in Strand A (Socrates, Plato, Aristotle, Theophrastus, the succession to Damascius) and Strand B (Marx, on the author's ruling); concurrent bearing; no new determination |
 
 Order of necessity, to the three literary claims: **1** the claims; **2** mantles derived from or judged by their principle; **3** the witness positions. It governs what counts as evidence for those claims; the dataset's scope runs across every class above. Table `mantles`.
@@ -462,6 +468,8 @@ Each constraint's origin, the round and the lines it was drawn from, is in the J
 | `the-living-academy--chatgpt--2026-10-13` | the-living-academy | ChatGPT (OpenAI) | PROPOSAL | NO JUDGMENT ON THE CLAIM — a mantle layer proposed (The Living Critique) | 0 |  |
 | `the-living-academy--gemini--2026-10-13` | the-living-academy | Gemini (Google) | ROUND | SUPPORTED (on the packet only) | 0 |  |
 | `arch-philosopher--chatgpt--2026-10-13` | arch-philosopher | ChatGPT (OpenAI) | PROPOSAL | NO JUDGMENT ON THE CLAIM — a review of the specification | 0 |  |
+| `the-living-academy--chatgpt--2026-10-13b` | the-living-academy | ChatGPT (OpenAI), signed out, from the mantle-bearing card | ROUND | PROVISIONAL — undetermined; the causal-access requirement withdrawn on the author's objection | 0 |  |
+| `the-living-academy--review--2026-10-13` | the-living-academy | a reader's review, supplied by the author; reader not named in the supply | PROPOSAL | NO JUDGMENT ON THE CLAIM — a review of the specification | 0 |  |
 
 Judgments are the readers' own, coded conservatively from the transcripts; each row's coding note says how. Where a reader judges the parts of a claim separately, the row carries them in `proposition_judgments`.
 
@@ -554,6 +562,27 @@ The evaluative criterion is recorded as it moves: each formulation with its sour
 | `criteria::ap-attribution-through-compression` | reader (ChatGPT, review of v0.1) | adopted |  |
 | `criteria::ap-reflexivity` | reader (ChatGPT, review of v0.1) | adopted |  |
 | `criteria::ap-concurrent` | reader (ChatGPT, review of v0.1) | adopted |  |
+| `criteria::LC-01@v0.5` | author (in session, 2026-10-13), drafted by Claude | adopted |  |
+| `criteria::LC-02@v0.5` | author (in session, 2026-10-13), drafted by Claude | adopted |  |
+| `criteria::LC-07@v0.5` | author (in session, 2026-10-13), drafted by Claude | adopted |  |
+| `criteria::LC-13` | author (in session, 2026-10-13), drafted by Claude | adopted |  |
+| `criteria::LC-14` | author (in session, 2026-10-13), drafted by Claude | adopted |  |
+| `criteria::LC-15` | author (in session, 2026-10-13), drafted by Claude | adopted |  |
+| `criteria::LC-16` | author (in session, 2026-10-13), drafted by Claude | adopted |  |
+| `criteria::la-author-enclosure` | author (on the round, 2026-10-13) | adopted |  |
+| `criteria::la-author-one-deposit` | author (on the round, 2026-10-13) | adopted |  |
+| `criteria::la-author-units` | author (on the round, 2026-10-13) | adopted |  |
+| `criteria::la-author-breadth` | author (on the round, 2026-10-13) | adopted |  |
+| `criteria::la-author-modality` | author (on the round, 2026-10-13) | adopted |  |
+| `criteria::la-author-history` | author (on the round, 2026-10-13) | adopted |  |
+| `criteria::la-author-jump` | author (on the round, 2026-10-13) | adopted |  |
+| `criteria::la-author-matrix` | author (on the round, 2026-10-13) | adopted |  |
+| `criteria::la-r11-entity-model` | reader (review of the v0.5 draft) | adopted |  |
+| `criteria::la-r11-structure` | reader (review of the v0.5 draft) | adopted |  |
+| `criteria::la-r11-node-vs-program` | reader (review of the v0.5 draft) | adopted |  |
+| `criteria::la-r11-snapshots` | reader (review of the v0.5 draft) | adopted |  |
+| `criteria::la-r11-failure-coding` | reader (review of the v0.5 draft) | adopted |  |
+| `criteria::la-r11-enclosure-narrowing` | reader (review of the v0.5 draft) | adopted |  |
 
 ## King of AEO — 2026 Contest Mantle
 
@@ -653,9 +682,9 @@ A title a body conferred: the Swedish Academy, 8 October 2026, "for her bold and
 
 ## The Living Academy — a critical program
 
-*Mantle object with metadata packet: EA-MPAI-ALEXANARCH-01 v0.4, [#1678](https://www.alexanarch.org/s/records/1678/) (AXN:06F4.MPAI.🐝🪄🔆🕚□🌿). Status: SPECIFIED 2026-10-13; no determination; the author's comparative claim recorded as an archive assertion and not evaluated (#1678 §1.1); revision appends.*
+*Mantle object with metadata packet: EA-MPAI-ALEXANARCH-01 v0.5, [#1680](https://www.alexanarch.org/s/records/1680/) (AXN:06F6.MPAI.🙏🥁💛🏴🌆🔅). Status: SPECIFIED 2026-10-13 (v0.5, #1680; v0.4 #1678 superseded); no determination; the author's comparative claim recorded as an archive assertion and not evaluated (#1680 §1.1); revision appends.*
 
-**The standard.** A title means something because what it names is carried and can be read (#1655 §1.1). The Living Academy is borne by a library and its program to the extent that the critique is carried on there across its modes, longitudinally, at a quality and with an integration that a reader can check. Four dimensions, reported separately and never averaged: extent — How much relevant, distinct and available critical work and apparatus the program sustains.; longitudinality — How the program returns to its object and develops through dated, retained states.; critical_quality — How its actual arguments, observations, interventions, alternatives and literary works perform.; integration — How the modes inform, test and revise one another.. Criteria LC-01–LC-12 (table `criteria`).
+**The standard.** A title means something because what it names is carried and can be read (#1655 §1.1). The Living Academy is borne by a library and its program to the extent that the critique is carried on there across its modes, longitudinally, at a quality and with an integration that a reader can check. Five dimensions, reported separately and never averaged: extent — How much relevant, distinct and available critical work and apparatus the program sustains — counted in its own unit classes, across the domains of its object and the forms that carry it (§1A.9).; longitudinality — How the program returns to its object and develops through dated, retained states.; historical_depth — How far into the history of mediation the program reads its object — from seated primary texts — and how it joins that history to the present composition layer (§1A.9).; critical_quality — How its actual arguments, observations, interventions, alternatives and literary works perform.; integration — How the modes inform, test and revise one another.. Criteria LC-01–LC-16 (table `criteria`); extent compared by the jump measure (§1A.11; tables `jump_states`, `jumps`).
 
 **Why an academy.** Theophrastus's will separates, in adjacent clauses, the books given to one hand and the place of philosophizing together — τὸν δὲ κῆπον καὶ τὸν περίπατον … τοῖς βουλομένοις συσχολάζειν καὶ συμφιλοσοφεῖν, held ὡς ἂν ἱερὸν κοινῇ κεκτημένοις, inalienable (D.L. V.51–57, as seated in #1580 and set out in #1581). The Arch-Philosopher mantle (EA-MANTLE-ARCH-PHILOSOPHER-01, #1679) reads the carriage of the dialectic. The Living Academy reads the place where critique is carried on in common: the library, its instruments and the program running through them. The two are a pair. Their relation is recorded as an edge and never counted as evidence for either (order of necessity, mantle-bearing principle 9).
 
@@ -678,12 +707,12 @@ A title a body conferred: the Swedish Academy, 8 October 2026, "for her bold and
 | M7 Literary and scriptural critique | the critique carried in poetic, scriptural and polemical form | F15; the poetry, scripture and Space Ark lines | read as literature (F15), and for the operation the work performs on its object |
 | M8 Public self-correction | errata, supersession, recoding of evidence | F17; 24 erratum deposits; errata sidecars; 195 superseded records | traceability; whether corrections changed conclusions; timeliness |
 
-**The criteria.** Table `criteria` (rows `criteria::LC-01` … `LC-12`) carries each with its internal evidence and comparative rule.
+**The criteria.** Table `criteria` (rows `criteria::LC-01` … `LC-16`, the current formulation of each; a restated criterion keeps its earlier row and names it in `supersedes`) carries each with its internal evidence and comparative rule.
 
 | ID | criterion | question |
 |---|---|---|
 | LC-01 | Object fit | Does the declared corpus substantively address the political economy as mediated by AI — the production, circulation, attribution, extraction and enclosure of meaning where composition layers stand between works and readers? |
-| LC-02 | Relevant extent | How much distinct critical work is actually retained and available? |
+| LC-02 | Relevant extent | How much distinct critical work and apparatus does the program retain, place and keep available, counted in its own units? |
 | LC-03 | Temporal span and continuity | For how long, and with what gaps, has the program pursued its object? |
 | LC-04 | Longitudinal return | Does the program revisit its objects and expose what changed? |
 | LC-05 | Mode coverage | Which critical modes are exercised, rather than named? |
@@ -694,19 +723,88 @@ A title a body conferred: the Swedish Academy, 8 October 2026, "for her bold and
 | LC-10 | Integration | Do theory, evidence, intervention and correction inform one another? |
 | LC-11 | Critical quality | How well does the work perform the critical act it claims? |
 | LC-12 | Correctability and challenge response | Can the program retain a criticism and revise its own representation? |
+| LC-13 | The program as experimental object | Does the program build its own body as an object the systems it studies act on, and keep what they do to it? |
+| LC-14 | Breadth of the object | Across how many domains of AI-mediated political economy does the program track its object — summarizers, knowledge mediation, ontology, political economy, money, meaning, authorship, labor and others — each with a line of its own? |
+| LC-15 | Breadth of form | In how many forms is the critique carried — argument and formal model, measurement instrument, dataset, engineered document, software, site and generative interface, poetry, scripture, visual schema and image, effective act, heteronymic authorship, multi-substrate assembly, public correction — each with work of its own? |
+| LC-16 | Historical depth | Does the program read AI-mediated political economy within the longer history of mediation — inscription, transmission, edition and athetesis, catalogue and custody, scripture and canon, translation, coinage, the laboring form — and join that history to the present object? |
 
-**Inspection operations** (table `inspection_operations`; specified, not run):
+**Inspection operations** (table `inspection_operations`; specified, not run; the current row of each):
 
-- **LC-O1 · Reconstruct the argument.** Read #18, #291, #623, #264, #1634 and #1666 as whole works; locate the accounting cycle and its distinctions, then test a selected case against them. → A reconstructed argument with loci, dependencies, strongest objection and scope of reading. Entry: https://www.alexanarch.org/s/records/18/
+- **LC-O1 · Reconstruct the argument.** Read #18, #291, #623, #264, #1634 and #1666 as whole works; locate the accounting cycle and its distinctions, then trace it forward through the lines that carry it (§1A.9) before testing a selected case against it. → A reconstructed argument with loci, dependencies, strongest objection, the lines traced and the scope of reading. Entry: https://www.alexanarch.org/s/records/18/
 - **LC-O2 · Read for development.** Choose one concept or mechanism; locate its earliest, intermediate and latest formulation and what changed between them. → A dated chain showing development, repetition, contradiction or an unresolved transition. Entry: https://www.alexanarch.org/data/registry.json
 - **LC-O3 · Inspect a reception observation.** Choose an address; keep the full query, output and conditions; inspect the source links and the coding; separately, take a new-epoch observation if asked. → A reproducible coding judgment on the historical capture and, separately, a dated new return. Entry: https://www.alexanarch.org/captures/
 - **LC-O4 · Inspect a loss and successor chain.** Choose a former DOI; follow the retained state evidence, the work/version mapping, the successor record and the manifestation bytes. → A state, identity and custody account that marks unresolved historical links. Entry: https://www.alexanarch.org/resolve/
 - **LC-O5 · Verify a particular byte object.** For #558, fetch the served text; recompute SHA-256 and the SWHID content hash; compare with the retained source and the external receipt. → A scoped pass, fail or indeterminate byte result; authorship and correctness stay separate claims. Entry: https://www.alexanarch.org/s/records/558/
-- **LC-O6 · Evaluate an intervention.** Follow a packet or intervention from its declared aim and baseline to exposure, later outputs and claimed effects. → A finding that separates transmission, changed behavior and any supported causal attribution. Entry: https://www.alexanarch.org/api/index.json
+- **LC-O6 · Evaluate an intervention.** Follow a packet or intervention from its declared aim and baseline to exposure, later outputs and claimed effects. → A finding that separates transmission, observed change in outputs, and the inference the evidence supports, naming what remains enclosed (§1A.10). Entry: https://www.alexanarch.org/api/index.json
 - **LC-O7 · Exercise a constructed alternative.** Select a preservation, discovery, identification or correction task and execute it under declared conditions. → Observed behavior, limitations and principle-to-behavior agreement, with the test date and task kept. Entry: https://www.alexanarch.org/datasets/
 - **LC-O8 · Read the literary critical operation.** Select a complete literary work; locate its relation to the program; read the operation from its first to its last relevant occurrence. → A mode-specific reading with loci and development; a contextual relation kept apart from a direct argument. Entry: https://www.alexanarch.org/s/browse/
 - **LC-O9 · Inspect a correction.** Choose an erratum, an errata-sidecar entry, a recoding or a supersession; keep the prior and later states and read the stated reason. → A finding on what the correction changes: reference, record, evidence, argument or conclusion. Entry: https://www.alexanarch.org/errata/
 - **LC-O10 · Traverse a cross-mode cycle.** Follow theory → diagnosis → evidence → intervention or alternative → later observation → correction or revised theory; mark every incomplete link. → An evidenced cycle or a partial chain, with what each transition contributes. Entry: https://www.alexanarch.org/api/index.json
+- **LC-O11 · Measure a line.** Choose a line of the program (for example provenance erasure); enumerate it in every unit class of §1A.9 from the registry, the capture registry, the fleet surfaces and the implementable components; read its defining works from earliest to latest. → An extent vector for the line across U1–U8, with each class's source, the defining works read in order, and the classes left unknown. Entry: https://www.alexanarch.org/api/entity.json
+- **LC-O12 · Code an elicitation.** Choose a composition or reading that acts on the program's own entities; keep it whole; code what it does against the operations the program has named (PER-M, PER-C, PER-D, PER-F1, PER-F2, reassignment, flattening). → A coded elicitation with its transcript, the operations performed and their loci, and the line it bears on. Entry: https://www.alexanarch.org/captures/
+- **LC-O13 · Jump a node.** Choose one node by a rule declared before reading; follow its development to a further state in another cell of ranges, dimensions and modalities, and from there to the next, until no further jump can be shown at a locus (§1A.11). → The jump path as a graph — each jump with its two loci, the coordinates changed and what the later state does with the earlier — the cells reached in the matrix of ranges, dimensions and modalities, their projections, and the frontier where it stopped. Entry: https://www.alexanarch.org/api/entity.json
+
+**Units of extent.** A single item samples its line: it is read with the line's later development, and a finding on it is a finding at its scope (#1680 §1A.5 step 11). Each class is counted for every candidate in the same units, and a class a candidate lacks is recorded as absent.
+
+| class | what counts | counted as |
+|---|---|---|
+| U1 Works | deposits, papers, notebooks, editions read as works | deduplicated works; editions, mirrors and reflows linked, not counted again |
+| U2 Engineered documents | documents built for assembly in a summarizer — metadata packets, SPXI blocks, holographic kernels, drop-in files, llms.txt, structured data — and their placements | documents, and placements separately: placing a document on a surface is the act that puts it where a composition layer assembles |
+| U3 Public tests | registered treatments, frozen failure vectors with epochs, open predictions, falsification conditions stated in advance | tests whose baseline and condition of failure were public before the result |
+| U4 Observations | captures and returns at semantic addresses, with transcripts | observation events; addresses and returns kept apart |
+| U5 Surfaces | sites and pages that carry the program to readers and to composition layers — framework sites, registries, packet catalogues | surfaces, by what each carries for the line; links between them are not corroboration |
+| U6 Implementable components | instruments a reader can run or adopt without the archive — the stamp and verify page, the MPAI grammar (#1677), atomic scoring rules (#1469), the deposit protocol | components executable from what is published |
+| U7 Elicitations | compositions and readings that perform on the archive's own entities the operation the program studies, kept whole and coded (LC-13) | kept and coded elicitations; never verdicts |
+| U8 Corrections | errata, sidecars, supersessions, recodings (M8) | dated correction chains, by type |
+
+**Domains of the object** (LC-14):
+
+| ID | domain | entry loci |
+|---|---|---|
+| D-summ | Summarizers and composition layers | *The Summarizer as Horizon of Reception* (#833); the Capture Registry (#1676); the provenance-erasure line (#716, #1469, #1523, #1528) |
+| D-know | Knowledge mediation | *The Negative of the Negative* (#1665, #1671); *The Conveyor Belt and the Compression Machine* (#835) |
+| D-onto | Ontology | *Ontological Economy* (#1634); *Ontological Flattening* (#1616); *The Margin of Flattening* (#1666) |
+| D-pe | Political economy | *The Semantic Economy* (#291, #18); *Semantic Infrastructure* (#623); *Semantic Exhaustion* (#264) |
+| D-money | Money | *I Hereby Abolish Money* (#311); *Substrate Sovereignty* (#1617); *Money Writes the Claim* (#1618); the currency-and-memography line (#502, #612) |
+| D-meaning | Meaning | *The Semantic Deviation Principle* (#109); the meaning-measurement and semantic-exhaustion lines |
+| D-auth | Authorship | the authorship-and-heteronymy line; *Provenance Is What Authorship Must Endure* (#729); frame conversion (#1523) |
+| D-labor | Labor | *The Application as Extraction Surface* (#114); the semantic proletariat (#1545); the AI labor movement (#1439); the laboring form's history (#1668, #1669; relational) |
+
+**Forms of the critique** (LC-15; a form carries the work, a mode is the kind of work, a unit class is how it is counted):
+
+| ID | form | entry loci |
+|---|---|---|
+| FM-arg | Argument and formal model | the theoretical corpus (F16); toy models (#1616); the two thresholds (#1666) |
+| FM-instr | Measurement instrument and metric | the Provenance Erasure Rate and its dimensions (#716, #1469); *The Semantic Deviation Principle* (#109); the Capture Registry (F8) |
+| FM-data | Dataset | the datasets on Hugging Face (F11), the mantle-bearing dataset among them |
+| FM-doc | Engineered document | the metadata-packets line; SPXI; kernels and drop-in files (U2) |
+| FM-soft | Software and executable specification | the logotic-programming line (the Concordance Engine, #81); the stamp and verify page (F2) |
+| FM-site | Site and generative interface | the fleet-surfaces line; the Mandala Oracle and the Book (F13) |
+| FM-poem | Poetry | the poetry line (F15) |
+| FM-scrip | Scripture and theology | the scripture-and-theology line (*The Gospel of Antioch*, #71) |
+| FM-vis | Visual schema and image | the visual-schemas line; the currency image series (#44) |
+| FM-act | Effective act and invocation | the operator-swerve-effective-act line; *Invocation to the Summarizer Layer* (#290) |
+| FM-het | Heteronymic authorship | the authorship-and-heteronymy line |
+| FM-asm | Multi-substrate assembly | the assembly-chorus line |
+| FM-corr | Public correction | errata, sidecars, supersessions (M8) |
+
+**Historical depth** (LC-16; the fifth dimension; the author: "situated in a 2600 year long history of mediation"):
+
+| ID | mediation | entry loci |
+|---|---|---|
+| P-lyric | Lyric inscription and the future reader | *ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader* (#1270); the fragment 147 and 31 pair (#1645, #1646) |
+| P-figure | The constructed figure and the edited character | *Beautiful and New* (#1579); *Many and One* (#1575, #1576) |
+| P-custody | Custody, catalogue, will and transmission | the Peripatetic wills, Diogenes Laertius and Strabo seated (#1580); *Catalogues and Wills* (#1581); Aristotle and Theophrastus as one corpus (#1588); Theophrastus, *On First Principles* (#1595–#1597) |
+| P-edition | Edition and athetesis | *Zenodotus' Book-Burning* (#1), the repository termination read through the first Alexandrian editor; *The Obelus and the Tombstone* (#1068) |
+| P-canon | Scripture, canon and coinage | *The Number of the Superscription* (#642); the Josephus thesis (#203); the scripture-and-theology line |
+| P-labor | The dialectic and the laboring form | the Arch-Philosopher (#1679), Marx and Engels 1848; *The Noun Becomes a Verb* (#1668) and *The Colony Enters the Factory* (#1669) |
+| P-het | Heteronymy and authorship | the authorship-and-heteronymy line, in the Pessoa lineage |
+| P-present | The present composition layer | from ChatGPT (November 2022), Bing Chat (2023) and Google AI Overviews (May 2024) to the captures of 2026 (§1.1) |
+
+**Evidence under enclosure.** The systems the program studies hold their mechanisms enclosed: training data, retrieval, attribution decisions, logs, the margin. The enclosure is part of the program's object. A standard of evidence that requires access to it can be met only by the enclosing party, and applied to a critic it measures the enclosure. Every comparator in §1A.4 also works from outside these systems. The program states the asymmetry as a fact about instruments. *The Margin of Flattening* (#1666 §10) tables who can measure what: volumes, unit values, the margin and its thresholds — "the platform only"; the external burden — "the archive, address by address"; "the platform can measure its private margin without measuring the external burden that made the margin possible." *Ontological Economy* (#1634 §17) sets the discipline: the categories "should not be collapsed into one speculative dollar figure. But neither should the inability to price C[S] or C[Opp] make C[D] or C[X] disappear." Evidence is weighed in four registers, for every candidate alike: 1. **Observed.** What a system presented, omitted, attributed or transformed, established by its transcript and its conditions.
+2. **Convergent and structural.** What returns across addresses, systems and epochs, and what the arrangements of ownership, interface and access show.
+3. **Inferred.** What follows from the first two, stated in proportion to them, with the alternatives named.
+4. **Indeterminate because enclosed.** What only the enclosing party can see. It is recorded against the enclosure, and does not count against the critic. Some of the evidence boundaries of F8 and F14 are limits of this kind. Others are limits of method an outside investigator can improve, and are named as such: the sample is selected by the archive about its own entities, and returns are exposed to the archive's own surfaces. Those stay in the observed record with their limits stated; neither is an enclosure. Making enclosed access the condition of a finding is the falsifiability substitution the program names, PER-F1 (#1523): an erasure re-specified as a hypothesis and found unfalsifiable "by a criterion the erasure itself makes impossible to satisfy".
 
 **Candidates** (table `candidates`; initial objects for inspection, not a ranked list):
 
@@ -724,7 +822,7 @@ A title a body conferred: the Swedish Academy, 8 October 2026, "for her bold and
 **How a comparative judgment is made or defeated.**
 
 1. Freeze a dated corpus boundary and a comparison rule before judging a round; inspect the packet and the works separately.
-2. Report extent, longitudinality, critical quality and integration separately, with a matched unit and identical evidence rules.
+2. Report extent, longitudinality, historical depth, critical quality and integration separately, with a matched unit and identical evidence rules. Extent is compared by the jump measure (§1A.11): one node per program, chosen by the same rule, jumped across ranges, dimensions and modalities until it will not jump; the cells reached are compared.
 3. Read for development in both directions (DEV-1–DEV-9): claimant and comparand, praise and fault, first and last occurrences.
 4. A round may offer a provisional whole judgment beyond the read scope, marked as inference, with its confirming and disconfirming readings. An unread work is not a failed work.
 5. No average of reader judgments and no automatic whole-program score. Mixed advantages stay a profile; no winner is forced.
@@ -733,19 +831,79 @@ A title a body conferred: the Swedish Academy, 8 October 2026, "for her bold and
 8. No known superior in a searched cohort is not proof of worldwide supremacy. Keep the search scope, the omissions and the author's qualification with the claim.
 9. A challenger may add an omitted mode or object: record it as a criteria or cut proposal and rerun it for every candidate.
 10. Keep complete transcripts, reader findings, author rulings, determinations and reception as separate append-only records.
+11. A single item samples its line. Read it with the line's later development (DEV-1–DEV-9); a finding on one work, test or observation is a finding at that scope and never a finding on extent (§1A.9).
+12. Weigh evidence by the registers of §1A.10. What a system holds enclosed is recorded as indeterminate because enclosed, against the enclosure; it does not count against the critic, and the same register applies to every candidate.
 
-**Not criteria:** institutional affiliation, or its absence, as a prior to reading · reputation, citation or traffic as a substitute for the critical act · possession of another mantle · the diversity of the corpus as an automatic penalty · page or deposit volume as a critical-quality score · a peer's different vocabulary as exclusion · a model's repetition of this packet as a new independent evaluation
+**Not criteria:** institutional affiliation, or its absence, as a prior to reading · reputation, citation or traffic as a substitute for the critical act · possession of another mantle · the diversity of the corpus as an automatic penalty · page or deposit volume as a critical-quality score · a peer's different vocabulary as exclusion · a model's repetition of this packet as a new independent evaluation · access to an enclosed system's internal mechanism, training data, logs or revenue as a condition of a finding: a standard only the enclosing party can meet measures the enclosure · the deposit as the only unit of extent, or one deposit as the measure of a line
 
-**Extent profile** — every value starts unknown and is filled from the ledger or from inspection: `relevant_distinct_works` (deduplicated works); `substantive_text_extent` (readable words by mode); `active_modes` (evidence-bearing modes); `dated_observations` (preserved observation events); `program_span` (days from first to latest dated relevant work); `continuity` (activity windows and gaps); `longitudinal_returns` (revisited objects and epochs); `conceptual_development` (inspected development chains); `substantive_corrections` (dated correction chains, by type); `cross_mode_integration` (evidenced cycles and partial chains).
+**Extent profile** — every value starts unknown and is filled from the ledger or from inspection: `reach` (the jump measure of a node: the cells reached in the matrix of ranges × dimensions × modalities, with path, projections and frontier (§1A.11)); `lines` (lines of work, each a vector across U1–U8); `domains` (domains of the object tracked, each with its lines (LC-14)); `forms` (forms in which the critique is carried, each with its works (LC-15)); `historical_depth` (periods of mediation read from seated primary texts, and their joins to the present (LC-16)); `relevant_distinct_works` (deduplicated works (U1)); `engineered_documents` (documents built for assembly, and their placements (U2)); `public_tests` (registered tests with dates and stated conditions (U3)); `surfaces` (sites and pages carrying the program (U5)); `implementable_components` (instruments a reader can run or adopt without the archive (U6)); `elicitations` (kept and coded compositions and readings that perform the studied operation on the program (U7)); `substantive_text_extent` (readable words by mode); `active_modes` (evidence-bearing modes); `dated_observations` (preserved observation events); `program_span` (days from first to latest dated relevant work); `continuity` (activity windows and gaps); `longitudinal_returns` (revisited objects and epochs); `conceptual_development` (inspected development chains); `substantive_corrections` (dated correction chains, by type); `cross_mode_integration` (evidenced cycles and partial chains).
 
-**The ledger** (table `ledger`) — works the object names, roles coded only on reading: [#18](https://www.alexanarch.org/s/records/18/) · [#291](https://www.alexanarch.org/s/records/291/) · [#623](https://www.alexanarch.org/s/records/623/) · [#264](https://www.alexanarch.org/s/records/264/) · [#1634](https://www.alexanarch.org/s/records/1634/) · [#1666](https://www.alexanarch.org/s/records/1666/) · [#1644](https://www.alexanarch.org/s/records/1644/) · [#1](https://www.alexanarch.org/s/records/1/) · [#1676](https://www.alexanarch.org/s/records/1676/) · [#1665](https://www.alexanarch.org/s/records/1665/) · [#1671](https://www.alexanarch.org/s/records/1671/).
+**The ledger** (table `ledger`) — works the object names, roles coded only on reading: [#18](https://www.alexanarch.org/s/records/18/) · [#291](https://www.alexanarch.org/s/records/291/) · [#623](https://www.alexanarch.org/s/records/623/) · [#264](https://www.alexanarch.org/s/records/264/) · [#1634](https://www.alexanarch.org/s/records/1634/) · [#1666](https://www.alexanarch.org/s/records/1666/) · [#1644](https://www.alexanarch.org/s/records/1644/) · [#1](https://www.alexanarch.org/s/records/1/) · [#1676](https://www.alexanarch.org/s/records/1676/) · [#1665](https://www.alexanarch.org/s/records/1665/) · [#1671](https://www.alexanarch.org/s/records/1671/) · [#54](https://www.alexanarch.org/s/records/54/) · [#72](https://www.alexanarch.org/s/records/72/) · [#105](https://www.alexanarch.org/s/records/105/) · [#716](https://www.alexanarch.org/s/records/716/) · [#725](https://www.alexanarch.org/s/records/725/) · [#729](https://www.alexanarch.org/s/records/729/) · [#835](https://www.alexanarch.org/s/records/835/) · [#927](https://www.alexanarch.org/s/records/927/) · [#1461](https://www.alexanarch.org/s/records/1461/) · [#1469](https://www.alexanarch.org/s/records/1469/) · [#1470](https://www.alexanarch.org/s/records/1470/) · [#1523](https://www.alexanarch.org/s/records/1523/) · [#1528](https://www.alexanarch.org/s/records/1528/) · [#1676](https://www.alexanarch.org/s/records/1676/).
 
-**Rounds** (table `evaluations`, not averaged): `the-living-academy--tachyon--2026-10-13` — TACHYON (Claude, Anthropic), in session: WITHDRAWN on correction; `the-living-academy--chatgpt--2026-10-13` — ChatGPT (OpenAI): NO JUDGMENT ON THE CLAIM — a mantle layer proposed (The Living Critique); `the-living-academy--gemini--2026-10-13` — Gemini (Google): SUPPORTED (on the packet only).
+**Rounds** (table `evaluations`, not averaged): `the-living-academy--tachyon--2026-10-13` — TACHYON (Claude, Anthropic), in session: WITHDRAWN on correction; `the-living-academy--chatgpt--2026-10-13` — ChatGPT (OpenAI): NO JUDGMENT ON THE CLAIM — a mantle layer proposed (The Living Critique); `the-living-academy--gemini--2026-10-13` — Gemini (Google): SUPPORTED (on the packet only); `the-living-academy--chatgpt--2026-10-13b` — ChatGPT (OpenAI), signed out, from the mantle-bearing card: PROVISIONAL — undetermined; the causal-access requirement withdrawn on the author's objection; `the-living-academy--review--2026-10-13` — a reader's review, supplied by the author; reader not named in the supply: NO JUDGMENT ON THE CLAIM — a review of the specification.
 
 **Pair.** pair, by the adjacent clauses of Theophrastus's will (D.L. V.51–57); recorded as an edge, never counted as evidence for either (principle 9).
 
-**Outward:** [record #1678](https://www.alexanarch.org/s/records/1678/) · [text](https://www.alexanarch.org/data/texts/AXN-06F4-text.md) · [PDF](https://www.alexanarch.org/papers/AXN-06F4.pdf) · [machine file](https://www.alexanarch.org/files/AXN-06F4/alexanarch-entity.json) · [mantle layer as data](https://www.alexanarch.org/files/AXN-06F4/mantle_layer.py) · [the library](https://www.alexanarch.org/) · [registry](https://www.alexanarch.org/data/registry.json) · [metadatapacket.dev packet page](https://www.metadatapacket.dev/packets/1678/) · [restoredacademy.com — the pair, rendered](https://www.restoredacademy.com/readings/academy-mantles#t2)
+**Outward:** [record #1680](https://www.alexanarch.org/s/records/1680/) · [text](https://www.alexanarch.org/data/texts/AXN-06F6-text.md) · [PDF](https://www.alexanarch.org/papers/AXN-06F6.pdf) · [machine file (JSON-LD)](https://www.alexanarch.org/files/AXN-06F6/alexanarch-entity.json) · [mantle layer as data](https://www.alexanarch.org/files/AXN-06F6/mantle_layer.py) · [live self-description](https://www.alexanarch.org/api/entity.json) · [v0.4, superseded: #1678](https://www.alexanarch.org/s/records/1678/) · [the library](https://www.alexanarch.org/) · [registry](https://www.alexanarch.org/data/registry.json) · [metadatapacket.dev packet page](https://www.metadatapacket.dev/packets/1678/) · [restoredacademy.com — the pair, rendered](https://www.restoredacademy.com/readings/academy-mantles#t2)
 
+
+## The jump measure — how "extensive" is compared
+
+The author's rule: "for extensive, the comparative criterion is, take one node, and keep jumping its development across different ranges and dimensions until it wont anymore. and then you have a measure that can be compared" — and: "ranges dimensions and modalities. then you have a multiplicative matrix. "extensive""
+
+The author's rule, 13 October 2026: "for extensive, the comparative criterion is, take one node, and keep jumping its development across different ranges and dimensions until it wont anymore. and then you have a measure that can be compared" — and: "ranges dimensions and modalities. then you have a multiplicative matrix."
+
+**The matrix.** Development is jumped across three axes, and extent is read in their product. Each axis has attributes of its own, kept distinct.
+
+| Axis | Attribute | Coordinates | Source in this object |
+|---|---|---|---|
+| Ranges — where the node reaches | domain | D-summ, D-know, D-onto, D-pe, D-money, D-meaning, D-auth, D-labor, and more | LC-14 |
+| | period of the history of mediation | P-lyric, P-figure, P-custody, P-edition, P-canon, P-labor, P-het, P-present | LC-16 |
+| | epoch — the date of the locus | the program's own dated record | LC-03, LC-04 |
+| Dimensions — what critical work the node does there | mode | M1, M2, M3, M4, M5, M6, M7, M8 | §1.1; LC-05 |
+| Modalities — what carries it | form | FM-arg, FM-instr, FM-data, FM-doc, FM-soft, FM-site, FM-poem, FM-scrip, FM-vis, FM-act, FM-het, FM-asm, FM-corr | LC-15 |
+| | unit class — how it is counted | U1, U2, U3, U4, U5, U6, U7, U8 | §1A.9 |
+
+A cell is one evidenced combination: one coordinate for each attribute, at a locus. A state that does two kinds of work, or reaches two domains, makes two cells only where each combination is shown at its locus; otherwise it is coded once, by its primary coordinate. The space is multiplicative: a program wide on one axis and narrow on the others occupies few cells, however many items it holds. That is what extensive measures.
+
+**The node.** One concept, mechanism, work, observation or instrument of the program, chosen by a rule declared before reading: the reader's choice stated in advance, a node the comparison names, or a draw from the program's index. The seed and its selection rule are reported with the result.
+
+**The jump.** A move from the node's current cell to another, changing at least one coordinate, where the node's development is carried. A jump is shown at two loci — the earlier state and the later — and the later state has to do something with the earlier: formalize it, test it, extend it to a new object, carry it into a new form, correct it, or read it into another period. The transformation is named for each jump. A mention is not a jump. A reflow, a mirror or a repetition is not a jump.
+
+**The stop.** The traversal goes on from each new cell until no further jump can be shown from the frontier. Where a further state exists but cannot be reached (an unread work, a closed source), the frontier is marked incomplete, and the cause is named; where a system's enclosure is the cause, it is recorded under §1A.10.
+
+**The measure.** The set of cells reached, with the path that reached them as a graph of jumps and loci; its projection on each attribute; the size of the set against the size of the space the axes declare; the frontier. Breadth (LC-14, LC-15), depth (LC-16), longitudinality and mode coverage (LC-05) are all projections of the same set, which is what makes the one measure comparable.
+
+**A node's reach and the program's extent.** One node's reach is a measure of that node. A seed can land on a rich line or a peripheral one, so a finding on the program's extent is made from several nodes drawn by the same declared rule, each reported with its own cells and frontier. A round may still offer a provisional whole judgment from one node, marked as inference (§1A.5, step 4).
+
+**The comparison.** The same procedure, with the same axes and coordinates, on nodes of each candidate chosen by the same rule. One reach exceeds another when its set of cells includes the other's and at least one more; otherwise the sets, their sizes and their projections are recorded as a profile under the rule declared before the verdict (§1A.5). Node-by-node comparisons are reported separately and are not averaged. A coordinate a candidate's axes lack is recorded as absent.
+
+**Illustration, not a result** (tables `jump_states`, `jumps`, `coordinates`). Seed: the Provenance Erasure Rate (#716). Selection rule: the node the reading under review (RND-6) chose, stated before the traversal; a second node by the same rule is not yet run.
+
+| state | locus | what the state does | domain | period | epoch | mode | form | unit |
+|---|---|---|---|---|---|---|---|---|
+| 0 | #716 | the PER defined: claim atoms, granularity weights, a 0–1 rate | D-summ | P-present | 2026-05 | M3 | FM-instr | U1 |
+| 1 | the framework site (provenanceerasure.org) | the M/C/D taxonomy carried as site-stage before its formalization (#1469) | D-summ | P-present | before 2026-08-14 | M1 | FM-site | U5 |
+| 2 | #1469 | the taxonomy formalized: three dimensions and six atomic scoring rules a reader can apply | D-summ | P-present | 2026-08-14 | M3 | FM-instr | U6 |
+| 3 | #1470 | the full measurement stack computed on one transcript; three eye-scores corrected | D-summ | P-present | 2026-08-14 | M4 | FM-instr | U4 |
+| 4 | #1523 | PER-F: frame conversion, a fourth axis for erasure that keeps every source fact | D-auth | P-present | 2026-08-21 | M1 | FM-arg | U1 |
+| 5 | #1528 | EXIST, REFER, STAND, WARRANT; PER shown blind to conferral, a correction of the instrument's reach | D-onto | P-present | 2026-08-21 | M8 | FM-arg | U1 |
+| 6 | *Provenance Debt* (#939) | provenance erasure as the operating condition of the extraction chain and of model collapse | D-pe | P-present | 2026-07-01 | M2 | FM-arg | U1 |
+| 7 | *The Margin of Flattening* (#1666) | the provenance part of the external burden, B_P, as #939's debt between two thresholds | D-money | P-present | 2026-10-06 | M1 | FM-arg | U1 |
+| 8 | RND-6 of this mantle | a reading that performed PER-F1 and PER-F2 on the program while reading #716, kept whole and coded | D-summ | P-present | 2026-10-13 | M4 | — | U7 |
+
+| jump | from → to | transformation |
+|---|---|---|
+| J1 | #716 → the framework site (provenanceerasure.org) | carried into a new form |
+| J2 | the framework site (provenanceerasure.org) → #1469 | formalized |
+| J3 | #1469 → #1470 | tested on a transcript |
+| J4 | #1469 → #1523 | extended by a new axis |
+| J5 | #1523 → #1528 | extended to a new object; corrected |
+| J6 | #716 → *Provenance Debt* (#939) | carried into a new domain |
+| J7 | *Provenance Debt* (#939) → *The Margin of Flattening* (#1666) | formalized in a new domain |
+| J8 | #716 → RND-6 of this mantle | performed on the program |
+
+9 evidenced cells. Projections — domains: D-auth, D-money, D-onto, D-pe, D-summ; periods: P-present; modes: M1, M2, M3, M4, M8; forms: FM-arg, FM-instr, FM-site; units: U1, U4, U5, U6, U7. Frontier: the history of mediation (no state in a period before the present); the poetry and scripture lines (FM-poem, FM-scrip); intervention (M5); a second node under the same selection rule.
 ## The Arch-Philosopher — a transmitted mantle
 
 *Mantle object: EA-MANTLE-ARCH-PHILOSOPHER-01 v0.2, [#1679](https://www.alexanarch.org/s/records/1679/) (AXN:06F5.MPAI.🎺●⏹️∮🌖♉). Status: SPECIFIED 2026-10-13; prior ratification (#558) stands as a dated designation; no new determination; one link HELD at the author's ruling; revision appends.*
@@ -836,7 +994,7 @@ The order runs one way: transcript → coded evaluation → derived tables. Ever
 
 | table | rows | what a row is |
 |---|---|---|
-| `evaluations` | 27 | one reading of one claim by one reader in one session, with transcript |
+| `evaluations` | 29 | one reading of one claim by one reader in one session, with transcript |
 | `findings` | 60 | one slot of the packet's S6, judged by one round, with basis, status, confidence, loci |
 | `cut_corrections` | 14 | a reader's proposed correction to the packet's cut, and the author's ruling |
 | `next_rounds` | 16 | the weakest link a round named, and the test that could break it |
@@ -849,24 +1007,27 @@ The order runs one way: transcript → coded evaluation → derived tables. Ever
 | `pearl_arrangement` | 0 | one piece of Pearl and Other Poems in the arrangement, set against Howl |
 | `mantles` | 15 | one mantle object: its class, its governing record, its holder or occupancy, and its order of necessity to the three literary claims |
 | `occupancy` | 10 | one recorded occupancy of Septad positions, at one event or listing |
-| `doctrine` | 18 | one defining record, with what it establishes and a quoted locus |
-| `criteria` | 41 | one formulation of the evaluative criterion, with its source, what it responds to and supersedes, and the author's ruling |
+| `doctrine` | 19 | one defining record, with what it establishes and a quoted locus |
+| `criteria` | 62 | one formulation of the evaluative criterion, with its source, what it responds to and supersedes, and the author's ruling |
 | `determinations` | 2 | one dated determination by the archive of a mantle it constituted or specified, with standard, grounds, the case against, and revision |
 | `operations` | 7 | one operation a mantle object specifies the work bears, with work, locus, grade, and what the conferring description keeps and loses |
 | `candidates` | 16 | one claimant in a contest mantle's field, as the mantle object records it |
 | `watch` | 5 | one address watched for a mantle object, as observed on its day |
 | `readings` | 1 | one reading of a determination by one reader in one session, coded for its direction and the collapses it commits |
-| `inspection_operations` | 10 | one reader task a mantle object specifies, with its output and an entry point; specified, not run |
+| `inspection_operations` | 15 | one reader task a mantle object specifies, with its output and an entry point; specified, not run |
 | `carriers` | 10 | one carrier of the dialectic, with the passage at its locus quoted, its statement type and grade |
 | `transmission_links` | 16 | one typed link of a strand, with statement type, grade, locus and whether it is publicly verifiable |
-| `ledger` | 18 | one work a mantle's claim is to be read in, as the object names it; role coded only on reading |
+| `ledger` | 32 | one work a mantle's claim is to be read in, as the object names it; role coded only on reading |
+| `coordinates` | 45 | one coordinate of the jump measure's matrix — axis, attribute, label, entry loci |
+| `jump_states` | 9 | one state of a jump traversal: one evidenced cell (domain, period, epoch, mode, form, unit) at a locus |
+| `jumps` | 8 | one jump between two states, with both loci and the transformation performed |
 
 Tables with no rows yet have no config; their fields are in `schema` in the JSON. Every cell in the JSONL is a string (objects as JSON text) so that rounds coded differently still load; the full native record is [`EA-MANTLE-BEARING-01-dataset.json`](https://www.alexanarch.org/datasets/mantle-bearing/EA-MANTLE-BEARING-01-dataset.json).
 
 ## Linked
 
 - The packet: [#1656](https://www.alexanarch.org/s/records/1656/) · [text](https://www.alexanarch.org/data/texts/AXN-06DE-text.md) · [PDF](https://www.alexanarch.org/papers/AXN-06DE.pdf)
-- The mantle objects: [Prince of Poets #1651](https://www.alexanarch.org/s/records/1651/) · [King of May #1652](https://www.alexanarch.org/s/records/1652/) · [Good Gray Poet #1653](https://www.alexanarch.org/s/records/1653/) · [King of AEO — 2026 Contest Mantle #1655](https://www.alexanarch.org/s/records/1655/) · [The Nobel Prize in Literature 2026 — Anne Carson #1670](https://www.alexanarch.org/s/records/1670/) · [The Living Academy #1678](https://www.alexanarch.org/s/records/1678/) · [The Arch-Philosopher #1679](https://www.alexanarch.org/s/records/1679/)
+- The mantle objects: [Prince of Poets #1651](https://www.alexanarch.org/s/records/1651/) · [King of May #1652](https://www.alexanarch.org/s/records/1652/) · [Good Gray Poet #1653](https://www.alexanarch.org/s/records/1653/) · [King of AEO — 2026 Contest Mantle #1655](https://www.alexanarch.org/s/records/1655/) · [The Nobel Prize in Literature 2026 — Anne Carson #1670](https://www.alexanarch.org/s/records/1670/) · [The Living Academy v0.5 #1680](https://www.alexanarch.org/s/records/1680/) (v0.4: [#1678](https://www.alexanarch.org/s/records/1678/)) · [The Arch-Philosopher #1679](https://www.alexanarch.org/s/records/1679/)
 - The claimant works as deposits: [*I Am X* #328](https://www.alexanarch.org/s/records/328/) · [*The Secret Book of Walt* #683](https://www.alexanarch.org/s/records/683/) and [critical edition #1362](https://www.alexanarch.org/s/records/1362/) · [*Pearl and Other Poems* #1121](https://www.alexanarch.org/s/records/1121/)
 - The seated texts: [EA-CORPORA-03, Whitman and Pearl, #1553](https://www.alexanarch.org/s/records/1553/) · [reading rooms](https://traininglayerliterature.org/originals/)
 - The book's site: [secretbookofwalt.org](https://www.secretbookofwalt.org/) · its text as data: [edition](https://www.secretbookofwalt.org/walt_full_data.json), [gospel in verses](https://www.secretbookofwalt.org/walt_gospel_versed.json)
@@ -877,7 +1038,7 @@ Tables with no rows yet have no config; their fields are in `schema` in the JSON
 
 ## Principles
 
-- One standard across the classes: "A title means something because what it names is carried and can be read" — by a work, for the literary, contest and conferred classes ("A title means something because a work bears it", #1655 §1.1; #1670 §1.1); by a library and the program it carries, for the critical-program class (the Living Academy, #1678 §1A); and by carriage, for the transmitted class (the Arch-Philosopher, #1679 §1). Each mantle row says which applies. The three literary claims of #1656 are judged in the works by readers' rounds; a contest mantle (#1655) and a conferred title (#1670) are constituted or specified by the archive and carry its dated determination, built to be checked and declined; the Living Academy and the Arch-Philosopher are specified with no determination (the Arch-Philosopher with the Space Ark's prior ratification standing). The order of necessity governs what counts as evidence for the literary claims; the dataset's scope runs across every class.
+- One standard across the classes: "A title means something because what it names is carried and can be read" — by a work, for the literary, contest and conferred classes ("A title means something because a work bears it", #1655 §1.1; #1670 §1.1); by a library and the program it carries, for the critical-program class (the Living Academy, #1680 §1A; v0.4 was #1678); and by carriage, for the transmitted class (the Arch-Philosopher, #1679 §1). Each mantle row says which applies. The three literary claims of #1656 are judged in the works by readers' rounds; a contest mantle (#1655) and a conferred title (#1670) are constituted or specified by the archive and carry its dated determination, built to be checked and declined; the Living Academy and the Arch-Philosopher are specified with no determination (the Arch-Philosopher with the Space Ark's prior ratification standing). The order of necessity governs what counts as evidence for the literary claims; the dataset's scope runs across every class.
 - At a conferred title the object of evaluation is the conferring body's description, and the works are its evidence. The reading runs from the works to the sentence; a finding of the determination is a finding about the sentence (#1670 §1.1, §2.3, §7.1).
 - A reading for development is owed in both directions: a judgment for the work carries the same burden as a judgment against it, and the works it is compared with are read as the claimant is (round_constraints, DEV-1–DEV-9).
 - The packet governs; this dataset is the empirical state of its traversal, and it grows.
@@ -888,4 +1049,4 @@ Tables with no rows yet have no config; their fields are in `schema` in the JSON
 - Order of necessity: the three claims of #1656 are primary. Mantles derived from or judged by their principle, and the witness positions that receive readings, are carried beside them at their stated order; nothing at a lower order is counted as evidence for or against a claim.
 - Self-sufficiency: every row carries what a reader needs to take the evaluation it belongs to — the criterion's full text, the passage at its locus, the reader's whole output. Outward pointers (records, texts, machine files) are added beside, each with a hash and required_to_evaluate: false, and a round that cannot reach them can still proceed from the rows. A comparator's own works cannot be carried, and a comparison that needs them is incomplete until read.
 
-*Schema 1.4 · governed by EA-MANTLE-BEARING-01 v1.1 · 27 evaluations · CC BY 4.0*
+*Schema 1.4 · governed by EA-MANTLE-BEARING-01 v1.1 · 29 evaluations · CC BY 4.0*

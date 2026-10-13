@@ -32,7 +32,8 @@ A = "https://www.alexanarch.org"
 TABLES = ["evaluations", "findings", "cut_corrections", "next_rounds", "rival_searches",
           "democratic_field", "aligned_passages", "succession", "pearl_arrangement",
           "mantles", "occupancy", "doctrine", "criteria", "determinations", "operations", "candidates", "watch", "readings",
-          "inspection_operations", "carriers", "transmission_links", "ledger"]
+          "inspection_operations", "carriers", "transmission_links", "ledger",
+          "coordinates", "jump_states", "jumps"]
 
 
 def cell(v):
@@ -366,18 +367,21 @@ def card(d, counts):
         "carriers": "one carrier of the dialectic, with the passage at its locus quoted, its statement type and grade",
         "transmission_links": "one typed link of a strand, with statement type, grade, locus and whether it is publicly verifiable",
         "ledger": "one work a mantle's claim is to be read in, as the object names it; role coded only on reading",
+        "coordinates": "one coordinate of the jump measure's matrix — axis, attribute, label, entry loci",
+        "jump_states": "one state of a jump traversal: one evidenced cell (domain, period, epoch, mode, form, unit) at a locus",
+        "jumps": "one jump between two states, with both loci and the transformation performed",
     }
     for t in ["evaluations", "findings", "cut_corrections", "next_rounds", "rival_searches", "required_works",
               "reception", "democratic_field", "aligned_passages", "succession", "pearl_arrangement",
               "mantles", "occupancy", "doctrine", "criteria", "determinations", "operations", "candidates", "watch", "readings",
-              "inspection_operations", "carriers", "transmission_links", "ledger"]:
+              "inspection_operations", "carriers", "transmission_links", "ledger", "coordinates", "jump_states", "jumps"]:
         L.append(f"| `{t}` | {counts.get(t, 0)} | {what[t]} |")
     L += ["", "Tables with no rows yet have no config; their fields are in `schema` in the JSON. "
           "Every cell in the JSONL is a string (objects as JSON text) so that rounds coded differently still load; "
           f"the full native record is [`EA-MANTLE-BEARING-01-dataset.json`]({A}/datasets/mantle-bearing/EA-MANTLE-BEARING-01-dataset.json).", ""]
     L += ["## Linked", "",
           f"- The packet: [#1656]({A}/s/records/1656/) · [text]({A}/data/texts/AXN-06DE-text.md) · [PDF]({A}/papers/AXN-06DE.pdf)",
-          f"- The mantle objects: [Prince of Poets #1651]({A}/s/records/1651/) · [King of May #1652]({A}/s/records/1652/) · [Good Gray Poet #1653]({A}/s/records/1653/) · [King of AEO — 2026 Contest Mantle #1655]({A}/s/records/1655/) · [The Nobel Prize in Literature 2026 — Anne Carson #1670]({A}/s/records/1670/) · [The Living Academy #1678]({A}/s/records/1678/) · [The Arch-Philosopher #1679]({A}/s/records/1679/)",
+          f"- The mantle objects: [Prince of Poets #1651]({A}/s/records/1651/) · [King of May #1652]({A}/s/records/1652/) · [Good Gray Poet #1653]({A}/s/records/1653/) · [King of AEO — 2026 Contest Mantle #1655]({A}/s/records/1655/) · [The Nobel Prize in Literature 2026 — Anne Carson #1670]({A}/s/records/1670/) · [The Living Academy v0.5 #1680]({A}/s/records/1680/) (v0.4: [#1678]({A}/s/records/1678/)) · [The Arch-Philosopher #1679]({A}/s/records/1679/)",
           f"- The claimant works as deposits: [*I Am X* #328]({A}/s/records/328/) · [*The Secret Book of Walt* #683]({A}/s/records/683/) and [critical edition #1362]({A}/s/records/1362/) · [*Pearl and Other Poems* #1121]({A}/s/records/1121/)",
           f"- The seated texts: [EA-CORPORA-03, Whitman and Pearl, #1553]({A}/s/records/1553/) · [reading rooms](https://traininglayerliterature.org/originals/)",
           "- The book's site: [secretbookofwalt.org](https://www.secretbookofwalt.org/) · its text as data: [edition](https://www.secretbookofwalt.org/walt_full_data.json), [gospel in verses](https://www.secretbookofwalt.org/walt_gospel_versed.json)",
@@ -412,7 +416,7 @@ def kernels(d):
     la = mt.get("the-living-academy")
     if la:
         L += ["## The Living Academy — a critical program", "",
-              f"*Mantle object with metadata packet: EA-MPAI-ALEXANARCH-01 v0.4, [#1678]({A}/s/records/1678/) ({la['governing_record'][0]['axn']}). "
+              f"*Mantle object with metadata packet: EA-MPAI-ALEXANARCH-01 {la.get('packet_version', 'v0.4')}, [#{la['governing_record'][0]['deposit']}]({la['governing_record'][0]['url']}) ({la['governing_record'][0]['axn']}). "
               f"Status: {la['status']}.*", "",
               f"**The standard.** {la['criterion']}", "",
               f"**Why an academy.** {la['why_an_academy']}", "",
@@ -422,17 +426,50 @@ def kernels(d):
               "A challenge is a comparator program evaluated on the same modes and criteria under a rule declared before the verdict.", "",
               "**The modes.** The critique is evaluated mode by mode before it is evaluated as a whole.", "",
               "| Mode | What counts | Where it lives | Criteria native to the mode |", "|---|---|---|---|"] + la["modes"] + [""]
-        L += ["**The criteria.** Table `criteria` (rows `criteria::LC-01` … `LC-12`) carries each with its internal evidence and comparative rule.", "",
-              "| ID | criterion | question |", "|---|---|---|"]
+        latest = {}
         for c in d["criteria"]:
             if c.get("mantle") == "the-living-academy" and c["criterion_id"].startswith("criteria::LC-"):
-                name, _, rest = c["formulation"].partition(". ")
-                q = rest.split(" Internal evidence:")[0]
-                L.append(f"| {c['criterion_id'].split('::')[1]} | {name} | {_cut(q, 400)} |")
-        L += ["", "**Inspection operations** (table `inspection_operations`; specified, not run):", ""]
+                latest[c["criterion_id"].split("::")[1].split("@")[0]] = c
+        L += [f"**The criteria.** Table `criteria` (rows `criteria::LC-01` … `LC-{len(latest):02d}`, the current formulation of each; a restated criterion keeps its earlier row and names it in `supersedes`) carries each with its internal evidence and comparative rule.", "",
+              "| ID | criterion | question |", "|---|---|---|"]
+        for cid in sorted(latest):
+            c = latest[cid]
+            name, _, rest = c["formulation"].partition(". ")
+            q = rest.split(" Internal evidence:")[0]
+            L.append(f"| {cid} | {name} | {_cut(q, 400)} |")
+        L += ["", "**Inspection operations** (table `inspection_operations`; specified, not run; the current row of each):", ""]
+        cur = {}
         for o in d.get("inspection_operations", []):
             if o["mantle"] == "the-living-academy":
-                L.append(f"- **{o['operation_id']} · {o['name']}.** {o['task']} → {o['output']} Entry: {o['entry']}")
+                cur[o["operation_id"]] = o
+        for oid in sorted(cur, key=lambda s: int(s.split("O")[-1])):
+            o = cur[oid]
+            L.append(f"- **{o['operation_id']} · {o['name']}.** {o['task']} → {o['output']} Entry: {o['entry']}")
+        ax = la.get("axes")
+        if ax:
+            L += ["", "**Units of extent.** " + la.get("lines_rule", ""), "", "| class | what counts | counted as |", "|---|---|---|"]
+            L += [f"| {u['id']} {u['label']} | {u['counts']} | {u['counted_as']} |" for u in ax["modalities"]["unit"]]
+            L += ["", "**Domains of the object** (LC-14):", "", "| ID | domain | entry loci |", "|---|---|---|"]
+            L += [f"| {x['id']} | {x['label']} | {x['loci']} |" for x in ax["ranges"]["domain"]]
+            L += ["", "**Forms of the critique** (LC-15; a form carries the work, a mode is the kind of work, a unit class is how it is counted):", "", "| ID | form | entry loci |", "|---|---|---|"]
+            L += [f"| {x['id']} | {x['label']} | {x['loci']} |" for x in ax["modalities"]["form"]]
+            L += ["", "**Historical depth** (LC-16; the fifth dimension; the author: \"situated in a 2600 year long history of mediation\"):", "", "| ID | mediation | entry loci |", "|---|---|---|"]
+            L += [f"| {x['id']} | {x['label']} | {x['loci']} |" for x in ax["ranges"]["period"]]
+        if la.get("evidence_under_enclosure"):
+            L += ["", "**Evidence under enclosure.** " + la["evidence_under_enclosure"].split("\n", 1)[1].strip().replace("\n\n", " ")]
+        JL = []
+        jm = la.get("jump_measure")
+        if jm:
+            ill = jm["illustration"]
+            JL += ["", "## The jump measure — how \"extensive\" is compared", "",
+                  "The author's rule: " + " — and: ".join(f"\"{r}\"" for r in jm["rule"]), "", jm["procedure"], "",
+                  f"**Illustration, not a result** (tables `jump_states`, `jumps`, `coordinates`). Seed: {ill['node']}. Selection rule: {ill['selection_rule']}.", "",
+                  "| state | locus | what the state does | domain | period | epoch | mode | form | unit |", "|---|---|---|---|---|---|---|---|---|"]
+            JL += [f"| {s['state']} | {s['locus']} | {s['does']} | {s['domain']} | {s['period']} | {s['epoch']} | {s['mode']} | {s['form'] or '—'} | {s['unit']} |" for s in ill["states"]]
+            JL += ["", "| jump | from → to | transformation |", "|---|---|---|"]
+            JL += [f"| {j['id']} | {j['from_locus']} → {j['to_locus']} | {j['transformation']} |" for j in ill["jumps"]]
+            pr = ill["projections"]
+            JL += ["", f"{len(ill['cells'])} evidenced cells. Projections — domains: {', '.join(pr['domain'])}; periods: {', '.join(pr['period'])}; modes: {', '.join(pr['mode'])}; forms: {', '.join(pr['form'])}; units: {', '.join(pr['unit'])}. Frontier: " + "; ".join(ill["frontier"]) + "."]
         L += ["", "**Candidates** (table `candidates`; initial objects for inspection, not a ranked list):", "",
               "| ID | candidate | role | status |", "|---|---|---|---|"]
         for c in d.get("candidates", []):
@@ -448,9 +485,11 @@ def kernels(d):
               "**Rounds** (table `evaluations`, not averaged): "
               + "; ".join(f"`{e['eval_id']}` — {e['reader']}: {e['judgment']}" for e in ev if e["mantle"] == "the-living-academy") + ".", "",
               f"**Pair.** {la['pair']['relation']}.", "",
-              "**Outward:** " + _links(1678, "06F4", [f"[machine file]({A}/files/AXN-06F4/alexanarch-entity.json)",
-                                                      f"[mantle layer as data]({A}/files/AXN-06F4/mantle_layer.py)",
+              "**Outward:** " + _links(1680, "06F6", [f"[machine file (JSON-LD)]({A}/files/AXN-06F6/alexanarch-entity.json)",
+                                                      f"[mantle layer as data]({A}/files/AXN-06F6/mantle_layer.py)", f"[live self-description]({A}/api/entity.json)",
+                                                      f"[v0.4, superseded: #1678]({A}/s/records/1678/)",
                                                       f"[the library]({A}/)", f"[registry]({A}/data/registry.json)", "[metadatapacket.dev packet page](https://www.metadatapacket.dev/packets/1678/)", "[restoredacademy.com — the pair, rendered](https://www.restoredacademy.com/readings/academy-mantles#t2)"]), ""]
+        L += JL
     ap = mt.get("arch-philosopher")
     if ap:
         L += ["## The Arch-Philosopher — a transmitted mantle", "",
