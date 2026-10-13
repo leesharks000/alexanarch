@@ -528733,7 +528733,33 @@
           }
         },
         "overall_conformance": "partial"
-      }
+      },
+      "files": [
+        {
+          "filename": "alexanarch-entity.json",
+          "path": "/files/AXN-06F6/alexanarch-entity.json",
+          "bytes": 120319,
+          "sha256": "01c0aa8fda4df24b61b2d56b7d24e4289e0063d82bdc7054a75087da3e2e9c4a",
+          "media_type": "application/ld+json",
+          "role": "machine file — JSON-LD with one entity model (library, holdings, program, mantle, person) and an explicit vocabulary, converting to RDF; computed from the registry at deposit (as_of): functions, counts with sources, checks, comparators, rules, navigation, datasets, program, discrepancies, frozen failure vectors, the Living Academy mantle layer with its axes, cells and jumps as data"
+        },
+        {
+          "filename": "build_entity_json.py",
+          "path": "/files/AXN-06F6/build_entity_json.py",
+          "bytes": 20156,
+          "sha256": "e86b7643a0d5114ca22c5caef748315b8652312cfa577da4d626e885d83a4ca6",
+          "media_type": "text/x-python",
+          "role": "build script — parses this deposit's text and computes the machine file from repository state"
+        },
+        {
+          "filename": "mantle_layer.py",
+          "path": "/files/AXN-06F6/mantle_layer.py",
+          "bytes": 59569,
+          "sha256": "b09ed5bb02decbcd2a4bea02755adb45cb7cb0a5fd2226b292a73b4868251763",
+          "media_type": "text/x-python",
+          "role": "the Living Academy mantle layer v0.5 — one data source that writes §1A of the text and the mantle block of the machine file"
+        }
+      ]
     }
   ],
   "last_updated": "2026-10-07T20:04:49Z",
