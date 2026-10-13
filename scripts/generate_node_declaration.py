@@ -76,6 +76,10 @@ def main():
              if k in computed and k != "declared_at" and cur.get(k) != computed[k]}
 
     new.update(computed)
+    new["self_description"] = {
+        "url": "https://www.alexanarch.org/api/entity.json",
+        "described_by": "https://www.alexanarch.org/s/records/1678/",
+        "note": "what this node is, function by function (EA-MPAI-ALEXANARCH-01); not a measured field"}
     new["generated_by"] = "scripts/generate_node_declaration.py"
     new["generation_note"] = (
         "Every measured field on this declaration is computed from registry state on "

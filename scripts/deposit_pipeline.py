@@ -627,7 +627,9 @@ def stage_surfaces(args):
     # this list, so from #1631 on no deposit reached them. s/browse/month/2026-09/ listed 58 of
     # the month's 74 deposits, and a Grok composition ranked "the month" from exactly those 58.
     surfaces = ("state,browse,browse-sections,browse-index,api-index,search-index,"
-                "search-static,homepage-noscript")
+                "search-static,homepage-noscript,entity")
+    # entity added 2026-10-13: the library's machine self-description (/api/entity.json,
+    # from #1678's attached builder) carries counts, so it is brought to head with the rest.
     sh([sys.executable, SCRIPTS / "regenerate_surfaces.py", "--only", surfaces],
        check=True)
 

@@ -405,6 +405,14 @@
         "additional_facets": "series_prefixes (structured), keyword_phrases (2-4 word capitalized noun phrases)",
         "excluded_content": "markdown fenced code blocks, inline code, HTML tags"
       }
+    },
+    "entity_json": {
+      "canonical_path": "/data/api/entity.json",
+      "served_at": "/api/entity.json",
+      "derived_from": "/data/texts/AXN-06F4-text.md (EA-MPAI-ALEXANARCH-01 v0.4, #1678) and /data/registry.json",
+      "regenerated_by": "scripts/regenerate_surfaces.py (surface 'entity') → scripts/build_entity_surface.py → files/AXN-06F4/build_entity_json.py",
+      "purpose": "the library's machine self-description: seventeen functions and their joins, each with field, comparators, criteria, checks and evidence boundary; the program; navigation; datasets; evaluation rules; the Living Academy mantle; counts computed live",
+      "frozen_witness": "/files/AXN-06F4/alexanarch-entity.json"
     }
   },
   "scripts": {
@@ -574,7 +582,7 @@
   },
   "surface_hashes": {
     "algorithm": "sha256",
-    "hashed_at": "2026-10-13T19:40:04Z",
+    "hashed_at": "2026-10-13T20:11:33Z",
     "files": {
       "data/registry.json": "27af0bbc3c3be3c1604b482d1e12d8e7b945cc6b169f8958697eb14f19da7934",
       "data/api/search-index.json": "1b553de235854657c20012b18235bd9761d6bfa5972109cdb1ec7218319aeb07",

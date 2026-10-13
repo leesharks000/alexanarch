@@ -76,7 +76,7 @@ except ImportError:
     _OVERWRITE_GUARD_AVAILABLE = False
 
 HOMEPAGE_RECENT_N = 12  # must equal the JS slice in index.html
-ALL_SURFACES = ["state", "browse", "browse-sections", "doi-shadow", "feed", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index", "search-index", "search-static", "capture-gallery", "record-api", "errata-sidecars", "dynamic-counts", "semantic-addresses"]
+ALL_SURFACES = ["state", "browse", "browse-sections", "doi-shadow", "feed", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index", "search-index", "search-static", "capture-gallery", "record-api", "errata-sidecars", "entity", "dynamic-counts", "semantic-addresses"]
 
 
 def _version_label(version: str) -> tuple:
@@ -2041,6 +2041,25 @@ def regenerate_errata_sidecars(reg, dry_run=False):
 
 
 SURFACE_FNS["errata-sidecars"] = regenerate_errata_sidecars
+
+
+def regenerate_entity(reg, dry_run=False):
+    """Emit data/api/entity.json, the live self-description (delegates to build_entity_surface).
+
+    REGISTERED 2026-10-13 with EA-MPAI-ALEXANARCH-01 v0.4 (#1678): the deposit's own attached builder
+    run against today's registry. A failure is recorded, not raised: the surface stays as last built,
+    and the message says so."""
+    if dry_run:
+        print("  (entity: dry run, not built)"); return
+    r = subprocess.run([sys.executable, str(REPO_ROOT / "scripts/build_entity_surface.py")],
+                       capture_output=True, text=True, cwd=str(REPO_ROOT))
+    sys.stdout.write(r.stdout)
+    if r.returncode != 0:
+        sys.stdout.write(r.stderr)
+        print("  BREACH entity surface not rebuilt — data/api/entity.json is as last built")
+
+
+SURFACE_FNS["entity"] = regenerate_entity
 SURFACE_FNS["capture-gallery"] = regenerate_capture_gallery
 SURFACE_FNS["dynamic-counts"] = regenerate_dynamic_counts
 
