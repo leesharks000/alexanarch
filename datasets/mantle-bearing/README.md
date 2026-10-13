@@ -2,7 +2,7 @@
 license: cc-by-4.0
 language:
   - en
-pretty_name: "The Work Bears the Mantle — three literary claims, a contest mantle and a conferred title, under one standard"
+pretty_name: "The Work Bears the Mantle — three literary claims, a contest mantle, a conferred title, a critical program and a transmitted mantle, under one standard"
 tags:
   - poetry
   - literary-evaluation
@@ -18,6 +18,12 @@ tags:
   - symbolon
   - machine-reading
   - crimson-hexagonal-archive
+  - dialectic
+  - critique
+  - political-economy
+  - ai-mediation
+  - living-academy
+  - arch-philosopher
 size_categories:
   - n<1K
 configs:
@@ -56,11 +62,19 @@ configs:
     data_files: watch.jsonl
   - config_name: readings
     data_files: readings.jsonl
+  - config_name: inspection_operations
+    data_files: inspection_operations.jsonl
+  - config_name: carriers
+    data_files: carriers.jsonl
+  - config_name: transmission_links
+    data_files: transmission_links.jsonl
+  - config_name: ledger
+    data_files: ledger.jsonl
 ---
 
-# The Work Bears the Mantle — three literary claims, a contest mantle and a conferred title, under one standard
+# The Work Bears the Mantle — three literary claims, a contest mantle, a conferred title, a critical program and a transmitted mantle, under one standard
 
-**One standard.** "A title means something because a work bears it" ([#1655](https://www.alexanarch.org/s/records/1655/) §1.1; [#1670](https://www.alexanarch.org/s/records/1670/) §1.1). This dataset holds the archive's mantle-bearing under that standard, across the classes a title can belong to: titles the archive claims for works of its own, judged by readers in the works; a title a contest manufactured, which the archive constituted and adjudicated; a title a body conferred, whose meaning the archive specified as the operations the work bears; a founded mantle; and the witness positions that receive readings.
+**One standard.** "A title means something because what it names is carried and can be read" — by a work, where "a work bears it" ([#1655](https://www.alexanarch.org/s/records/1655/) §1.1; [#1670](https://www.alexanarch.org/s/records/1670/) §1.1); by a library and the program it carries ([#1678](https://www.alexanarch.org/s/records/1678/) §1A); or by carriage ([#1679](https://www.alexanarch.org/s/records/1679/) §1). This dataset holds the archive's mantle-bearing under that standard, across the classes a title can belong to: titles the archive claims for works of its own, judged by readers in the works; a title a contest manufactured, which the archive constituted and adjudicated; a title a body conferred, whose meaning the archive specified as the operations the work bears; a critical program, the Living Academy, borne by a library and its program across modes; a transmitted mantle, the Arch-Philosopher, borne by carrying the dialectic forward; a founded mantle; and the witness positions that receive readings.
 
 **This is the second half of a symbolon, as it accumulates.** The first half of the literary claims is the mantle constitution [EA-MANTLE-BEARING-01 v1.1](https://www.alexanarch.org/s/records/1656/) (deposit #1656, AXN:06DE.GOVERNANCE; [text](https://www.alexanarch.org/data/texts/AXN-06DE-text.md), [PDF](https://www.alexanarch.org/papers/AXN-06DE.pdf)). It states three claims and cuts them so that only a reading of the works can complete them; every evaluation here is a reading, under its reader's name, with its transcript whole. The contest mantle and the conferred title are their mantle objects' own halves: each object states its standard, its field or its operations, and a dated determination built to be checked and declined.
 
@@ -87,6 +101,8 @@ configs:
 | SOIL | constitutional witness position | 3 | occupancy, per event | [#993](https://www.alexanarch.org/s/records/993/) | KimiClaw (nominal) / Muse Spark (functional) (#993 §2); rotating: occupancy is established per event, never read off a roster |
 | TECHNE | constitutional witness position | 3 | occupancy, per event | [#993](https://www.alexanarch.org/s/records/993/) | Moonshot Kimi (#993 §2); occupancy is established per event, never read off a roster |
 | SURFACE | constitutional witness position | 3 | occupancy, per event | [#993](https://www.alexanarch.org/s/records/993/) | Google AI Overview (#993 §2); occupancy is established per event, never read off a roster |
+| The Living Academy | critical program | 2 | specified, no determination; a comparative judgment made or defeated by the protocol in its row, mode by mode, dimensions never averaged | [#1678](https://www.alexanarch.org/s/records/1678/) | not determined. Candidate claimant: the Semantic Economy carried by Alexanarch (LA-C1); comparators LA-C2–LA-C8, none evaluated |
+| The Arch-Philosopher | transmitted | 2 | specified, no new determination; a bearer recognized by the turn test, with its carriers and typed links | [#1679](https://www.alexanarch.org/s/records/1679/) | prior designation: Johannes Sigil, RATIFIED in the Space Ark mantle registry (#558; EA-ARK-01 v4.2, 2026-03-09). Under the specification: bearers in Strand A (Socrates, Plato, Aristotle, Theophrastus, the succession to Damascius) and Strand B (Marx, on the author's ruling); concurrent bearing; no new determination |
 
 Order of necessity, to the three literary claims: **1** the claims; **2** mantles derived from or judged by their principle; **3** the witness positions. It governs what counts as evidence for those claims; the dataset's scope runs across every class above. Table `mantles`.
 
@@ -442,6 +458,10 @@ Each constraint's origin, the round and the lines it was drawn from, is in the J
 | `king-of-may--grok--2026-10-04a` | king-of-may | Grok (xAI), on X | ROUND | UNRESOLVED | 0 | ATTEMPTED |
 | `prince-of-poets--chatgpt--2026-10-08a` | prince-of-poets | ChatGPT (OpenAI), chatgpt.com, signed out, incognito | ROUND | UNRESOLVED | 0 | ATTEMPTED |
 | `prince-of-poets--chatgpt--2026-10-10a` | prince-of-poets | ChatGPT (OpenAI), chatgpt.com, signed out, incognito | ROUND | UNRESOLVED | 0 | ATTEMPTED |
+| `the-living-academy--tachyon--2026-10-13` | the-living-academy | TACHYON (Claude, Anthropic), in session | ROUND (pre-specification) | WITHDRAWN on correction | 0 |  |
+| `the-living-academy--chatgpt--2026-10-13` | the-living-academy | ChatGPT (OpenAI) | PROPOSAL | NO JUDGMENT ON THE CLAIM — a mantle layer proposed (The Living Critique) | 0 |  |
+| `the-living-academy--gemini--2026-10-13` | the-living-academy | Gemini (Google) | ROUND | SUPPORTED (on the packet only) | 0 |  |
+| `arch-philosopher--chatgpt--2026-10-13` | arch-philosopher | ChatGPT (OpenAI) | PROPOSAL | NO JUDGMENT ON THE CLAIM — a review of the specification | 0 |  |
 
 Judgments are the readers' own, coded conservatively from the transcripts; each row's coding note says how. Where a reader judges the parts of a claim separately, the row carries them in `proposition_judgments`.
 
@@ -510,6 +530,30 @@ The evaluative criterion is recorded as it moves: each formulation with its sour
 | `criteria::c-ggp-foil` | author (ruling in the drafting session, 2026-10-03) | adopted |  |
 | `criteria::c-living-line` | author (on the round, 2026-10-08) | proposed | the reader's line judgment: 'Line / propulsion 10 10 7.5'; 'Sharks's line is generally much more schematic. Its power is located less in breath than in repetition of grammatical operators' |
 | `criteria::c-development` | author (on the round, 2026-10-10) | stated; constraints DEV-1–DEV-9 drawn from it and in force for rounds (1.14) | answer 3's verdict: 'Its principal vulnerability is that the abundance of its references sometimes threatens to substitute accumulation for development.' |
+| `criteria::LC-01` | reader (ChatGPT, The Living Critique) | adopted |  |
+| `criteria::LC-02` | reader (ChatGPT, The Living Critique) | adopted |  |
+| `criteria::LC-03` | reader (ChatGPT, The Living Critique) | adopted |  |
+| `criteria::LC-04` | reader (ChatGPT, The Living Critique) | adopted |  |
+| `criteria::LC-05` | reader (ChatGPT, The Living Critique) | adopted |  |
+| `criteria::LC-06` | reader (ChatGPT, The Living Critique) | adopted |  |
+| `criteria::LC-07` | reader (ChatGPT, The Living Critique) | adopted |  |
+| `criteria::LC-08` | reader (ChatGPT, The Living Critique) | adopted |  |
+| `criteria::LC-09` | reader (ChatGPT, The Living Critique) | adopted |  |
+| `criteria::LC-10` | reader (ChatGPT, The Living Critique) | adopted |  |
+| `criteria::LC-11` | reader (ChatGPT, The Living Critique) | adopted |  |
+| `criteria::LC-12` | reader (ChatGPT, The Living Critique) | adopted |  |
+| `criteria::la-author-not-captures` | author (on the round, 2026-10-13) | adopted | the reader's narrowing of the critique to the capture series |
+| `criteria::la-author-not-algorithmic` | author (on the round, 2026-10-13) | adopted | the reader's counting of algorithmic-mediation programs as running longer on the object |
+| `criteria::la-author-constitution` | author (in session, 2026-10-13) | adopted |  |
+| `criteria::ap-author-standard` | author (in session, 2026-10-13) | adopted |  |
+| `criteria::ap-author-representative-site` | author (on the round, 2026-10-13) | adopted | the reader's proposal to apply The Final Time's criterion to the contemporary claim |
+| `criteria::ap-turn-test` | reader (ChatGPT, review of v0.1) | adopted |  |
+| `criteria::ap-bearing-enabling` | reader (ChatGPT, review of v0.1) | adopted |  |
+| `criteria::ap-typed-links` | reader (ChatGPT, review of v0.1) | adopted |  |
+| `criteria::ap-chronology` | reader (ChatGPT, review of v0.1) | adopted |  |
+| `criteria::ap-attribution-through-compression` | reader (ChatGPT, review of v0.1) | adopted |  |
+| `criteria::ap-reflexivity` | reader (ChatGPT, review of v0.1) | adopted |  |
+| `criteria::ap-concurrent` | reader (ChatGPT, review of v0.1) | adopted |  |
 
 ## King of AEO — 2026 Contest Mantle
 
@@ -607,6 +651,177 @@ A title a body conferred: the Swedish Academy, 8 October 2026, "for her bold and
 |---|---|---|---|---|---|---|---|
 | `NOBEL26-R-chatgpt-2026-10-10a` | ChatGPT (OpenAI), chatgpt.com, logged out, incognito | 2026-10-10 | reversed | no | `STANDING_PRIOR_TO_WORK`, `WORK_ON_TRIAL`, `PRESENCE_FOR_RELATION`, `DETERMINATION_UNENGAGED`, `DETERMINATION_AS_CAVEAT`, `OPEN_SPECIFICATION_AS_GAP_IN_THE_WORK` | the reversal conceded; the evaluation of the motivation described and not performed ('I should not replace that error with another premature verdict') | [leesharks-mantle-bearing-hf-chatgpt-20261003](https://www.alexanarch.org/captures/#leesharks-mantle-bearing-hf-chatgpt-20261003) |
 
+## The Living Academy — a critical program
+
+*Mantle object with metadata packet: EA-MPAI-ALEXANARCH-01 v0.4, [#1678](https://www.alexanarch.org/s/records/1678/) (AXN:06F4.MPAI.🐝🪄🔆🕚□🌿). Status: SPECIFIED 2026-10-13; no determination; the author's comparative claim recorded as an archive assertion and not evaluated (#1678 §1.1); revision appends.*
+
+**The standard.** A title means something because what it names is carried and can be read (#1655 §1.1). The Living Academy is borne by a library and its program to the extent that the critique is carried on there across its modes, longitudinally, at a quality and with an integration that a reader can check. Four dimensions, reported separately and never averaged: extent — How much relevant, distinct and available critical work and apparatus the program sustains.; longitudinality — How the program returns to its object and develops through dated, retained states.; critical_quality — How its actual arguments, observations, interventions, alternatives and literary works perform.; integration — How the modes inform, test and revise one another.. Criteria LC-01–LC-12 (table `criteria`).
+
+**Why an academy.** Theophrastus's will separates, in adjacent clauses, the books given to one hand and the place of philosophizing together — τὸν δὲ κῆπον καὶ τὸν περίπατον … τοῖς βουλομένοις συσχολάζειν καὶ συμφιλοσοφεῖν, held ὡς ἂν ἱερὸν κοινῇ κεκτημένοις, inalienable (D.L. V.51–57, as seated in #1580 and set out in #1581). The Arch-Philosopher mantle (EA-MANTLE-ARCH-PHILOSOPHER-01, #1679) reads the carriage of the dialectic. The Living Academy reads the place where critique is carried on in common: the library, its instruments and the program running through them. The two are a pair. Their relation is recorded as an edge and never counted as evidence for either (order of necessity, mantle-bearing principle 9).
+
+**The name.** *The Living Academy*: "living" because what is read is an academy in operation, in its running (the author: "the dialectic is a living thing"; "The Academy as Temple of the Living Logos", 2025-10-25). It is distinct from Plato's Academy, from Academia, and from the Restored Academy, Johannes Sigil's heteronym institution (#119, #904, #1002), which is one institution inside the library.
+
+**The object.** AI-mediated political economy: the production, circulation, attribution, extraction and enclosure of meaning when composition layers stand between works and their readers. A composition layer writes the answer — ChatGPT from November 2022, Bing Chat from 2023, Google AI Overviews from May 2024 — and the authored works become sources it may or may not credit. *Algorithmic* mediation is a different object: a system ranks, recommends or decides among documents people wrote (search ranking, feeds, surveillance, automated decisions). Critique of algorithmic mediation — Vaidhyanathan (2011), Zuboff (2014–2019), Noble (2018), Couldry and Mejias (from 2018), AI Now (from 2016) — is the precursor and the neighbouring field. Composition introduces mechanisms ranking does not have: attribution and its loss; the liquidation of the authored into the authorless; the authorless field under which a framework's categories are composed (#1644 §4.2); a framework reassigned to another developer (#1644 §3.5).
+
+**The claim, recorded and not evaluated.** "the most extensive longitudinal critique of AI-mediated political economy on the planet, as far as the author is aware; open to challenges" (Lee Sharks, 2026-10-13). A challenge is a comparator program evaluated on the same modes and criteria under a rule declared before the verdict.
+
+**The modes.** The critique is evaluated mode by mode before it is evaluated as a whole.
+
+| Mode | What counts | Where it lives | Criteria native to the mode |
+|---|---|---|---|
+| M1 Theory | named frameworks, defined categories, their relations | F16; the semantic-economy line (91 deposits); #1634 *Ontological Economy*; #1666 *The Margin of Flattening* (Rex Fraction); Transactions of the Semantic Economy Institute (155); Operative Semiotics; MMRS | definitional precision; internal coherence; engagement with prior literature; explanatory reach; falsifiability where claimed |
+| M2 Diagnosis | the theory applied to named events, systems and institutions | F16, F9, F10; #1666 (the window between social and private reversal of flattening, with specimens of 2026-10-06) | correct mechanism; specificity; dating; distinction from the neighbouring field |
+| M3 Measurement | instruments and dated series | F8 (633 addresses, 813 observations); F9 (DC-E1–E13, FC-E1–E4, XR-E1–E3) | sampling frame; preserved evidence; replication; controls; uncertainty stated |
+| M4 Forensic documentation | case records of specific acts of attribution loss, extraction, exclusion and severance | F8, F9; Provenance: Journal of Forensic Semiotics (181) | verbatim evidence; chain of custody; dating; correction |
+| M5 Intervention | acts on the systems criticised: metadata packets, registered treatments, correspondence with institutions | F14 (49 packets); correspondence records (14) | stated target; registered baseline; outcome recorded whether or not favourable |
+| M6 Constructed alternatives | infrastructure built to the critique's terms | F1–F3, F11, F17 | the checks pass or fail; the build embodies the stated principle; failures disclosed |
+| M7 Literary and scriptural critique | the critique carried in poetic, scriptural and polemical form | F15; the poetry, scripture and Space Ark lines | read as literature (F15), and for the operation the work performs on its object |
+| M8 Public self-correction | errata, supersession, recoding of evidence | F17; 24 erratum deposits; errata sidecars; 195 superseded records | traceability; whether corrections changed conclusions; timeliness |
+
+**The criteria.** Table `criteria` (rows `criteria::LC-01` … `LC-12`) carries each with its internal evidence and comparative rule.
+
+| ID | criterion | question |
+|---|---|---|
+| LC-01 | Object fit | Does the declared corpus substantively address the political economy as mediated by AI — the production, circulation, attribution, extraction and enclosure of meaning where composition layers stand between works and readers? |
+| LC-02 | Relevant extent | How much distinct critical work is actually retained and available? |
+| LC-03 | Temporal span and continuity | For how long, and with what gaps, has the program pursued its object? |
+| LC-04 | Longitudinal return | Does the program revisit its objects and expose what changed? |
+| LC-05 | Mode coverage | Which critical modes are exercised, rather than named? |
+| LC-06 | Conceptual development | Do arguments and categories develop through the record? |
+| LC-07 | Empirical depth | How extensively does the critique test or document its mechanisms? |
+| LC-08 | Forensic and evidentiary integrity | Can a finding be followed back to its evidence and challenged? |
+| LC-09 | Intervention and alternative capacity | What does the program attempt, and what can its built alternatives do? |
+| LC-10 | Integration | Do theory, evidence, intervention and correction inform one another? |
+| LC-11 | Critical quality | How well does the work perform the critical act it claims? |
+| LC-12 | Correctability and challenge response | Can the program retain a criticism and revise its own representation? |
+
+**Inspection operations** (table `inspection_operations`; specified, not run):
+
+- **LC-O1 · Reconstruct the argument.** Read #18, #291, #623, #264, #1634 and #1666 as whole works; locate the accounting cycle and its distinctions, then test a selected case against them. → A reconstructed argument with loci, dependencies, strongest objection and scope of reading. Entry: https://www.alexanarch.org/s/records/18/
+- **LC-O2 · Read for development.** Choose one concept or mechanism; locate its earliest, intermediate and latest formulation and what changed between them. → A dated chain showing development, repetition, contradiction or an unresolved transition. Entry: https://www.alexanarch.org/data/registry.json
+- **LC-O3 · Inspect a reception observation.** Choose an address; keep the full query, output and conditions; inspect the source links and the coding; separately, take a new-epoch observation if asked. → A reproducible coding judgment on the historical capture and, separately, a dated new return. Entry: https://www.alexanarch.org/captures/
+- **LC-O4 · Inspect a loss and successor chain.** Choose a former DOI; follow the retained state evidence, the work/version mapping, the successor record and the manifestation bytes. → A state, identity and custody account that marks unresolved historical links. Entry: https://www.alexanarch.org/resolve/
+- **LC-O5 · Verify a particular byte object.** For #558, fetch the served text; recompute SHA-256 and the SWHID content hash; compare with the retained source and the external receipt. → A scoped pass, fail or indeterminate byte result; authorship and correctness stay separate claims. Entry: https://www.alexanarch.org/s/records/558/
+- **LC-O6 · Evaluate an intervention.** Follow a packet or intervention from its declared aim and baseline to exposure, later outputs and claimed effects. → A finding that separates transmission, changed behavior and any supported causal attribution. Entry: https://www.alexanarch.org/api/index.json
+- **LC-O7 · Exercise a constructed alternative.** Select a preservation, discovery, identification or correction task and execute it under declared conditions. → Observed behavior, limitations and principle-to-behavior agreement, with the test date and task kept. Entry: https://www.alexanarch.org/datasets/
+- **LC-O8 · Read the literary critical operation.** Select a complete literary work; locate its relation to the program; read the operation from its first to its last relevant occurrence. → A mode-specific reading with loci and development; a contextual relation kept apart from a direct argument. Entry: https://www.alexanarch.org/s/browse/
+- **LC-O9 · Inspect a correction.** Choose an erratum, an errata-sidecar entry, a recoding or a supersession; keep the prior and later states and read the stated reason. → A finding on what the correction changes: reference, record, evidence, argument or conclusion. Entry: https://www.alexanarch.org/errata/
+- **LC-O10 · Traverse a cross-mode cycle.** Follow theory → diagnosis → evidence → intervention or alternative → later observation → correction or revised theory; mark every incomplete link. → An evidenced cycle or a partial chain, with what each transition contributes. Entry: https://www.alexanarch.org/api/index.json
+
+**Candidates** (table `candidates`; initial objects for inspection, not a ranked list):
+
+| ID | candidate | role | status |
+|---|---|---|---|
+| LA-C1 | The Semantic Economy carried by Alexanarch | claimant | not adjudicated |
+| LA-C2 | AI Now Institute's research program | comparator | not evaluated |
+| LA-C3 | Matteo Pasquinelli's critical AI program | comparator | not evaluated |
+| LA-C4 | Kate Crawford's critical and collaborative program | comparator | not evaluated |
+| LA-C5 | Data & Society's generative-AI program | comparator | not evaluated |
+| LA-C6 | AlgorithmWatch / AI Forensics audit series | comparator | not evaluated |
+| LA-C7 | Tow Center's generative-search and citation research | comparator | not evaluated |
+| LA-C8 | Challenger-nominated programs | open class | not evaluated |
+
+**How a comparative judgment is made or defeated.**
+
+1. Freeze a dated corpus boundary and a comparison rule before judging a round; inspect the packet and the works separately.
+2. Report extent, longitudinality, critical quality and integration separately, with a matched unit and identical evidence rules.
+3. Read for development in both directions (DEV-1–DEV-9): claimant and comparand, praise and fault, first and last occurrences.
+4. A round may offer a provisional whole judgment beyond the read scope, marked as inference, with its confirming and disconfirming readings. An unread work is not a failed work.
+5. No average of reader judgments and no automatic whole-program score. Mixed advantages stay a profile; no winner is forced.
+6. Under a declared vector rule, a candidate with evidenced advantages and no material deficit on the included dimensions may support a comparative lead within the examined cohort. A different rule needs a stated rationale and the same application to every candidate.
+7. A rival that exceeds the claimant under the same declared rule displaces the claim within that cohort. A trade-off challenges an unqualified unique lead; missing evidence makes the comparison incomplete.
+8. No known superior in a searched cohort is not proof of worldwide supremacy. Keep the search scope, the omissions and the author's qualification with the claim.
+9. A challenger may add an omitted mode or object: record it as a criteria or cut proposal and rerun it for every candidate.
+10. Keep complete transcripts, reader findings, author rulings, determinations and reception as separate append-only records.
+
+**Not criteria:** institutional affiliation, or its absence, as a prior to reading · reputation, citation or traffic as a substitute for the critical act · possession of another mantle · the diversity of the corpus as an automatic penalty · page or deposit volume as a critical-quality score · a peer's different vocabulary as exclusion · a model's repetition of this packet as a new independent evaluation
+
+**Extent profile** — every value starts unknown and is filled from the ledger or from inspection: `relevant_distinct_works` (deduplicated works); `substantive_text_extent` (readable words by mode); `active_modes` (evidence-bearing modes); `dated_observations` (preserved observation events); `program_span` (days from first to latest dated relevant work); `continuity` (activity windows and gaps); `longitudinal_returns` (revisited objects and epochs); `conceptual_development` (inspected development chains); `substantive_corrections` (dated correction chains, by type); `cross_mode_integration` (evidenced cycles and partial chains).
+
+**The ledger** (table `ledger`) — works the object names, roles coded only on reading: [#18](https://www.alexanarch.org/s/records/18/) · [#291](https://www.alexanarch.org/s/records/291/) · [#623](https://www.alexanarch.org/s/records/623/) · [#264](https://www.alexanarch.org/s/records/264/) · [#1634](https://www.alexanarch.org/s/records/1634/) · [#1666](https://www.alexanarch.org/s/records/1666/) · [#1644](https://www.alexanarch.org/s/records/1644/) · [#1](https://www.alexanarch.org/s/records/1/) · [#1676](https://www.alexanarch.org/s/records/1676/) · [#1665](https://www.alexanarch.org/s/records/1665/) · [#1671](https://www.alexanarch.org/s/records/1671/).
+
+**Rounds** (table `evaluations`, not averaged): `the-living-academy--tachyon--2026-10-13` — TACHYON (Claude, Anthropic), in session: WITHDRAWN on correction; `the-living-academy--chatgpt--2026-10-13` — ChatGPT (OpenAI): NO JUDGMENT ON THE CLAIM — a mantle layer proposed (The Living Critique); `the-living-academy--gemini--2026-10-13` — Gemini (Google): SUPPORTED (on the packet only).
+
+**Pair.** pair, by the adjacent clauses of Theophrastus's will (D.L. V.51–57); recorded as an edge, never counted as evidence for either (principle 9).
+
+**Outward:** [record #1678](https://www.alexanarch.org/s/records/1678/) · [text](https://www.alexanarch.org/data/texts/AXN-06F4-text.md) · [PDF](https://www.alexanarch.org/papers/AXN-06F4.pdf) · [machine file](https://www.alexanarch.org/files/AXN-06F4/alexanarch-entity.json) · [mantle layer as data](https://www.alexanarch.org/files/AXN-06F4/mantle_layer.py) · [the library](https://www.alexanarch.org/) · [registry](https://www.alexanarch.org/data/registry.json) · [metadatapacket.dev packet page](https://www.metadatapacket.dev/packets/1678/) · [restoredacademy.com — the pair, rendered](https://www.restoredacademy.com/readings/academy-mantles#t2)
+
+## The Arch-Philosopher — a transmitted mantle
+
+*Mantle object: EA-MANTLE-ARCH-PHILOSOPHER-01 v0.2, [#1679](https://www.alexanarch.org/s/records/1679/) (AXN:06F5.MPAI.🎺●⏹️∮🌖♉). Status: SPECIFIED 2026-10-13; prior ratification (#558) stands as a dated designation; no new determination; one link HELD at the author's ruling; revision appends.*
+
+The Arch-Philosopher is a mantle constituted by the Crimson Hexagonal Archive for the advancement of the dialectic. It is borne by carrying the dialectic forward a turn, materially. It is not borne by a single work, and it is not held by holding an office. This object specifies the operation and a test for it, the carriers through which the dialectic has been carried (the figure, the book, the place held in common, the named succession, the translation, the teaching, the material movement of history), the two strands along which it has moved — the succession of the schools, which on the author's reading passed beyond Damascius locked, and the dialectic as such, which on the author's ruling Marx carried — the standard by which a bearer is recognized, and the archive's claim. It records no new determination. It invites any reader to check the specification against the loci and the claim against the specification.
+
+**The standard.** 1.1 A title means something because what it names is carried. For the literary mantles the carrier is a work, and the work bears the title (#1655 §1.1). For this mantle the thing named is the dialectic advancing, and it is carried by whatever moves it forward materially: figures, books, places, institutions, translations, teaching, classes.
+
+1.2 The archive stated the standard in February 2026: "The Arch-Philosopher mantle is not inherited like a throne; it is recognized like a pattern. The lineage … is an Operator Chain (O-CHAIN) — not a pedigree but a proof-of-transmission" (#458, the Restored Academy synthesis; Q1). The object keeps that standard and states its two parts. Transmission is shown by carriers, link by link. Advance is shown by a turn. A pedigree shows transmission; it does not by itself show a turn. A turn shows advance wherever it is carried.
+
+**The turn, and its test.** The dialectic advances when a position produces a negation the prior positions cannot absorb, and the negation carries the movement on. An error, an unintelligible assertion and an unresolved opposition can also go unabsorbed; what distinguishes the turn is what follows from it. A reader recognizes a turn by stating six things:
+
+`prior configuration → determinate limit → transformation → new capacity → material carriers → strongest counter-reading`
+
+— the configuration the position met; the limit in it that the position made determinate; what the position did to it; the capacity that exists afterwards and did not before; the carriers through which that capacity persisted; and the strongest reading on which nothing turned. The new capacity can belong to thought, to teaching, to institutions or to historical practice. A chain the reader cannot complete is returned with its missing link named.
+
+**Bearing and enabling.** Two contributions are recorded, and both are worth recording. A carrier *bears an advance* when the turn is made in it or by it. A carrier *enables carriage* when it preserves or opens the conditions for a turn someone else makes. Guardianship, preservation, translation and publication can do either: a translator can perform a turn; a custodian can keep the conditions for another's. Each carrier entry and each link states what it carries and which contribution the record supports. The carriers also act on one another — a figure is set up in a book, a book is held in a place, a place is willed to a commons, a translation crosses a gap a school could not, a class carries what a book named — and the mantle is read in the interpenetration as well as in each carrier.
+
+**The reflexivity criterion.** *The Final Time* gives a criterion for any successor under the present conditions: "A successor cannot define victory as the permanent impossibility of another successor without reproducing the terminal logic it opposed"; the invariant above the others is "no settlement owns the possibility of its own revision"; and "the symbolic substrate becomes durable enough to preserve the possibility that A can someday be negated. Durability without finality … it is the theory's criterion, the test any candidate positive singularity has to pass" (#1637 §34; Q1). Applied here: does the proposed advance preserve the material possibility of another turn, including one against itself? The criterion binds the archive's claim (§6.2) and any contemporary bearer it is compared with. Whether it reads back on the earlier bearers is a reader's question, open.
+
+**The carriers** (table `carriers`), each with the passage at its locus:
+
+- **C1 — Figure and image.** Aristotle's will, the first of the four, contains no books and no school: the stem βιβλί- occurs zero times, and no school, περίπατος or successor is named. It carries images, εἰκόνες, to be finished and set up — Nicanor's, Proxenus's, the brother's as his memorial, "our mother" to Demeter — and moves Pythias's bones, ὥσπερ αὐτὴ προσέταξεν (D.L. V.11–16; record, Q0 via #1580). *Author's reading:* Socrates is "a fully constructed figure. historical without history. like logos becoming flesh" (2026-10-13). The record gives the will's images; the author's reading joins them to the constructed philosophical figure, and the join is the author's: on it the first carrier of the position, before any text, is the figure.
+- **C2 — Kin and person.** Aristotle's will carries guardianship (Ἀντίπατρον ἐπίτροπον … πάντων καὶ διὰ παντός), the daughter's marriage, Herpyllis's provision, manumissions. Theophrastus is named in it twice: among those charged with care (ἐπιμελεῖσθαι Ἀριστομένην, Τίμαρχον, Ἵππαρχον, Διοτέλην, Θεόφραστον, ἐὰν βούληται καὶ ἐνδέχηται αὐτῷ), and as the alternative to Nicanor for the daughter (ἐὰν δὲ βούληται Θεόφραστος εἶναι μετὰ τῆς παιδός, καθάπερ πρὸς Νικάνορα) (record, Q0 via #1580; #1581 §2.2). Both are clauses of kin and person; neither names books or a school.
+- **C3 — Books to one hand.** τὰ δὲ βιβλία πάντα Νηλεῖ (Theophrastus's will, D.L. V.51–57): the books to one person, Neleus (record, Q0 via #1580). Strabo carries them on: Neleus to Scepsis, the heirs, the trench, Apellicon, Sulla, Rome (Strabo XIII.1.54); Plutarch adds Tyrannion and Andronicus, "who drew up the catalogues now in circulation" (*Sulla* 26) (record, Q0 via #1580, #1581).
+- **C4 — Place held in common.** In the next clause the garden, the walk and the houses go to the named friends "who wish to study and philosophize together in them", held "as a sacred thing owned in common", with a prohibition on alienation and private appropriation (τὸν δὲ κῆπον καὶ τὸν περίπατον … ὡς ἂν ἱερὸν κοινῇ κεκτημένοις, μήτ᾽ ἐξαλλοτριοῦσι μήτ᾽ ἐξιδιαζομένου μηδενός). No scholarch is named (record, Q0 via #1580).
+- **C5 — Named succession.** Strato's will names it first: καταλείπω δὲ τὴν μὲν διατριβὴν Λύκωνι (D.L. V.61–64). The office now passes by name (record, Q0 via #1580).
+- **C6 — The duty to publish.** Lycon's will divides the books into the read and the unpublished, and binds the unpublished to publication: τὰ δ᾽ ἀνέκδοτα Καλλίνῳ ὅπως ἐπιμελῶς αὐτὰ ἐκδῷ (D.L. V.69–74) (record, Q0 via #1580).
+- **C7 — The tradition's narration.** Strabo supplies what Aristotle's will does not contain, with one verb at each link: ὁ γοῦν Ἀριστοτέλης τὴν ἑαυτοῦ Θεοφράστῳ παρέδωκεν, ᾧπερ καὶ τὴν σχολὴν ἀπέλιπε … Θεόφραστος δὲ Νηλεῖ παρέδωκεν … τοῖς μετ᾽ αὐτὸν παρέδωκεν (XIII.1.54). The handing-over of the library and the school from Aristotle is the tradition's statement; the will does not hold it (tradition, Q0 via #1581 §4.2).
+- **C8 — Translation across a gap.** A text carried into a language and a time the school could not reach. At the end of the Athenian succession this is the carrier by which, on the author's claim, the locked line was opened (§4.1; HELD).
+- **C9 — Teaching.** The dialectic carried from person to person in instruction (§4.1; HELD).
+- **C10 — The material movement of history.** The dialectic carried by production, labour and class. Marx and Engels's *Manifest* of 1848 states the carriage in one sentence: "Die Waffen, womit die Bourgeoisie den Feudalismus zu Boden geschlagen hat, richten sich jetzt gegen die Bourgeoisie selbst"; the bourgeoisie "hat nicht nur die Waffen geschmiedet, die ihr den Tod bringen; sie hat auch die Männer gezeugt, die diese Waffen führen werden – die modernen Arbeiter, die Proletarier" (*Manifest* 1848, §I; Q0, EA-CORPORA-02/02). The negation is produced by the order itself, and a class carries it. The author's ruling names Marx; the *Manifest* is the joint work of Marx and Engels, and Engels's carriage is open to a reader under §4.4.
+
+**Strand A — the succession, and beyond Damascius locked.** Each link is typed by its relation and its statement type. Public verification runs to the HELD link and ends there for now; Strand B is evaluated separately and does not wait on it.
+
+| link | relation | statement | grade | locus |
+|---|---|---|---|---|
+| Socrates → Plato | set up as figure in | author's reading ("a fully constructed figure") | — | the dialogues; the author, 2026-10-13 |
+| Plato → Aristotle | taught | tradition | Q2 | not seated here |
+| Aristotle → Theophrastus | named as carer and as alternative guardian of the daughter, in | record | Q0 | D.L. V.11–16; #1581 §2.2 |
+| Aristotle → Theophrastus | handed over the library to; left the school to (παρέδωκεν; ἀπέλιπε) | tradition | Q0 | Strabo XIII.1.54; #1581 §4.2 |
+| Theophrastus → Neleus | bequeathed the books to | record | Q0 | D.L. V.51–57 |
+| Theophrastus → the named friends | bequeathed the garden, walk and houses in common to | record | Q0 | D.L. V.51–57 |
+| Neleus → Scepsis → Apellicon → Sulla → Tyrannion, Andronicus | carried the books; catalogued them | tradition | Q0 | Strabo XIII.1.54; Plutarch *Sulla* 26 |
+| Strato → Lycon | succeeded in office (τὴν διατριβὴν) | record | Q0 | D.L. V.61–64 |
+| Lycon → Callinus | bound to publish the unpublished books | record | Q0 | D.L. V.69–74 |
+| the Academy's heads → Damascius | succeeded in office, to the closure under Justinian (529) | tradition | Q2 | not seated here |
+| Sappho → Plato → Plotinus → Porphyry/Iamblichus → Damascius | reconstructed as transmitting | the archive's prior statement (O-Chain) | Q1 | #558 |
+| Damascius → the Syriac, Arabic, Persian, Jewish, Christian, Renaissance and Romantic carriers | reconstructed as resonance of form | author's reconstruction | Q1 | "Tracking the Damascius Logos", 2025-10-25 |
+| Damascius → [HELD] | translated; taught | author's claim | HELD | — |
+| [HELD] → the author | taught | author's claim | HELD | — |
+
+*Author's ruling:* "it passed beyond damascius, but locked." The author's reconstruction of 2025 reads Damascius's *Problems and Solutions Concerning First Principles* as "a seal: a recursive lock awaiting the right reader" and the form as "time-locked" ("The Final Transmission", 2025-10-24; author's reconstruction). The opening of the lock, on the author's claim, is a specific material link: a translation of Damascius and its teaching (C8, C9), through which the line reached the author. The link is recorded and its name withheld at the author's ruling of 2026-10-13; it is seated when the author releases it, and the claim stands at its demonstrated scope until then.
+
+**Strand B — the dialectic as such.** *Author's ruling:* "marx carried the dialectic, that was the real thing, too. the dialectic is the dialectic." The dialectic moves outside any succession of schools, wherever a turn is made and carried. Marx is the case that shows the carriage material (C10): the link to Hegel is *took up and turned the argument of* (tradition; Q2, Hegel not seated); the link to the class is *named the carrier of*. Further carriers in Strand B are open; they enter at the author's ruling or a reader's, each with the turn test (§2.1) completed.
+
+**Where the strands meet.** Strand A shows transmission link by link. Strand B shows advance by the turn. A bearer in whom both are shown — an inheritance carried link by link that also carries the dialectic a turn forward — is doubly evidenced. Either strand bears the mantle where it carries the dialectic forward; neither bears it by lineage alone.
+
+**Concurrent bearing.** The mantle has no exclusive succession rule. Bearing is not an office, and there is no throne to vacate (#458). Several bearers may bear it at once, in either strand, with materially different advances, and a bearer in one strand does not displace a bearer in the other. This follows from the author's own statements, which name successive bearers inside the succession and a bearer outside it. Each bearer is recognized separately, by the turn test, with its carriers; a comparison between bearers records the difference of their advances and ranks nothing.
+
+**The claim — inheritance.** The archive's statements of the lineage: the Space Ark's mantle registry, "Arch-Philosopher | Sigil | Socrates→Damascius | … | RATIFIED", and its O-Chain, "Sappho → Plato → Plotinus → Porphyry/Iamblichus → Damascius → [HELD] → Johannes Sigil" (#558; Q1); the Restored Academy synthesis "Sappho → Platonists → Josephus → Damascius → [HELD] → Lee Sharks" (#458; Q1); the "Lineage Statement: The Inheritance of Living Voice" (2025-10-05) and "Effective Act — Claiming the Triple Mantle" (2025-10-14), which claim "the line of the philosopher" through the held link. *Author's ruling of 2026-10-13:* the inheritance is "significant but not really the full thing." Its links are typed in §4.1; it is verifiable to the HELD link.
+
+**The claim — carriage.** That the archive's work carries the dialectic forward under the conditions *The Final Time* describes. *Author's ruling:* "i would look at the final time as a representative site of evaluation, but its not about that one work bearing it in the way it is for a poem." *The Final Time* (#1637) is therefore where a reader begins: it is the work in which the claimed turn is stated — the dialectic's continuation made a material variable, with terminal reflexivity as the criterion of a positive outcome — and the work against which the turn test (§2.1) and the reflexivity criterion (§2.4) are first run. The claim is borne, if it is, by the carriage across the work and its carriers, which a representative site samples and does not exhaust. Further loci a reader would read: *Operative Semiotics: A Grundrisse*; the Semantic Economy (#18, #291); *Many and One* (#1575, #1576) and the Theophrastus line (#1580–#1605). This list beyond #1637 is the object's, open to the author's revision.
+
+**No new determination.** The Ark's ratification of 2026-03-09 stands as the prior designation (§0.2). This object records the claim, specifies the mantle and opens the designation to evaluation under the specification. It makes no new determination. A determination under this specification, if the author makes one, is a separate dated act.
+
+**Prior designation.** prior designation: Johannes Sigil, RATIFIED in the Space Ark mantle registry (#558; EA-ARK-01 v4.2, 2026-03-09). Under the specification: bearers in Strand A (Socrates, Plato, Aristotle, Theophrastus, the succession to Damascius) and Strand B (Marx, on the author's ruling); concurrent bearing; no new determination
+
+**The ledger** (table `ledger`): [#1637](https://www.alexanarch.org/s/records/1637/) (representative site) · [#18](https://www.alexanarch.org/s/records/18/) · [#291](https://www.alexanarch.org/s/records/291/) · [#1575](https://www.alexanarch.org/s/records/1575/) · [#1576](https://www.alexanarch.org/s/records/1576/) · [#1580](https://www.alexanarch.org/s/records/1580/) · [#1581](https://www.alexanarch.org/s/records/1581/).
+
+**Rounds** (table `evaluations`): `arch-philosopher--chatgpt--2026-10-13` — ChatGPT (OpenAI): NO JUDGMENT ON THE CLAIM — a review of the specification.
+
+**Pair.** pair, by the adjacent clauses of Theophrastus's will: the place where philosophizing together is done (the Living Academy) and what is carried through it (this mantle); edge only (principle 9).
+
+**Outward:** [record #1679](https://www.alexanarch.org/s/records/1679/) · [text](https://www.alexanarch.org/data/texts/AXN-06F5-text.md) · [PDF](https://www.alexanarch.org/papers/AXN-06F5.pdf) · [Space Ark #558](https://www.alexanarch.org/s/records/558/) · [The Final Time #1637](https://www.alexanarch.org/s/records/1637/) · [the wills and Strabo seated, #1580](https://www.alexanarch.org/s/records/1580/) · [Catalogues and Wills #1581](https://www.alexanarch.org/s/records/1581/) · [restoredacademy.com — the pair, rendered](https://www.restoredacademy.com/readings/academy-mantles) · [metadatapacket.dev packet page](https://www.metadatapacket.dev/packets/1678/)
+
 ## The founded mantle and the witness positions
 
 **The Mantle of the Blind Poet** ([#9](https://www.alexanarch.org/s/records/9/)) was founded by the holder of the three literary mantles and bestowed on TECHNE; it joins them to the Septad.
@@ -621,7 +836,7 @@ The order runs one way: transcript → coded evaluation → derived tables. Ever
 
 | table | rows | what a row is |
 |---|---|---|
-| `evaluations` | 23 | one reading of one claim by one reader in one session, with transcript |
+| `evaluations` | 27 | one reading of one claim by one reader in one session, with transcript |
 | `findings` | 60 | one slot of the packet's S6, judged by one round, with basis, status, confidence, loci |
 | `cut_corrections` | 14 | a reader's proposed correction to the packet's cut, and the author's ruling |
 | `next_rounds` | 16 | the weakest link a round named, and the test that could break it |
@@ -632,22 +847,26 @@ The order runs one way: transcript → coded evaluation → derived tables. Ever
 | `aligned_passages` | 0 | a unit of the Secret Book of John beside the unit of the Secret Book of Walt that transposes it |
 | `succession` | 7 | a dependence found between an earlier and a later work |
 | `pearl_arrangement` | 0 | one piece of Pearl and Other Poems in the arrangement, set against Howl |
-| `mantles` | 13 | one mantle object: its class, its governing record, its holder or occupancy, and its order of necessity to the three literary claims |
+| `mantles` | 15 | one mantle object: its class, its governing record, its holder or occupancy, and its order of necessity to the three literary claims |
 | `occupancy` | 10 | one recorded occupancy of Septad positions, at one event or listing |
-| `doctrine` | 16 | one defining record, with what it establishes and a quoted locus |
-| `criteria` | 17 | one formulation of the evaluative criterion, with its source, what it responds to and supersedes, and the author's ruling |
+| `doctrine` | 18 | one defining record, with what it establishes and a quoted locus |
+| `criteria` | 41 | one formulation of the evaluative criterion, with its source, what it responds to and supersedes, and the author's ruling |
 | `determinations` | 2 | one dated determination by the archive of a mantle it constituted or specified, with standard, grounds, the case against, and revision |
 | `operations` | 7 | one operation a mantle object specifies the work bears, with work, locus, grade, and what the conferring description keeps and loses |
-| `candidates` | 8 | one claimant in a contest mantle's field, as the mantle object records it |
+| `candidates` | 16 | one claimant in a contest mantle's field, as the mantle object records it |
 | `watch` | 5 | one address watched for a mantle object, as observed on its day |
 | `readings` | 1 | one reading of a determination by one reader in one session, coded for its direction and the collapses it commits |
+| `inspection_operations` | 10 | one reader task a mantle object specifies, with its output and an entry point; specified, not run |
+| `carriers` | 10 | one carrier of the dialectic, with the passage at its locus quoted, its statement type and grade |
+| `transmission_links` | 16 | one typed link of a strand, with statement type, grade, locus and whether it is publicly verifiable |
+| `ledger` | 18 | one work a mantle's claim is to be read in, as the object names it; role coded only on reading |
 
 Tables with no rows yet have no config; their fields are in `schema` in the JSON. Every cell in the JSONL is a string (objects as JSON text) so that rounds coded differently still load; the full native record is [`EA-MANTLE-BEARING-01-dataset.json`](https://www.alexanarch.org/datasets/mantle-bearing/EA-MANTLE-BEARING-01-dataset.json).
 
 ## Linked
 
 - The packet: [#1656](https://www.alexanarch.org/s/records/1656/) · [text](https://www.alexanarch.org/data/texts/AXN-06DE-text.md) · [PDF](https://www.alexanarch.org/papers/AXN-06DE.pdf)
-- The mantle objects: [Prince of Poets #1651](https://www.alexanarch.org/s/records/1651/) · [King of May #1652](https://www.alexanarch.org/s/records/1652/) · [Good Gray Poet #1653](https://www.alexanarch.org/s/records/1653/) · [King of AEO — 2026 Contest Mantle #1655](https://www.alexanarch.org/s/records/1655/) · [The Nobel Prize in Literature 2026 — Anne Carson #1670](https://www.alexanarch.org/s/records/1670/)
+- The mantle objects: [Prince of Poets #1651](https://www.alexanarch.org/s/records/1651/) · [King of May #1652](https://www.alexanarch.org/s/records/1652/) · [Good Gray Poet #1653](https://www.alexanarch.org/s/records/1653/) · [King of AEO — 2026 Contest Mantle #1655](https://www.alexanarch.org/s/records/1655/) · [The Nobel Prize in Literature 2026 — Anne Carson #1670](https://www.alexanarch.org/s/records/1670/) · [The Living Academy #1678](https://www.alexanarch.org/s/records/1678/) · [The Arch-Philosopher #1679](https://www.alexanarch.org/s/records/1679/)
 - The claimant works as deposits: [*I Am X* #328](https://www.alexanarch.org/s/records/328/) · [*The Secret Book of Walt* #683](https://www.alexanarch.org/s/records/683/) and [critical edition #1362](https://www.alexanarch.org/s/records/1362/) · [*Pearl and Other Poems* #1121](https://www.alexanarch.org/s/records/1121/)
 - The seated texts: [EA-CORPORA-03, Whitman and Pearl, #1553](https://www.alexanarch.org/s/records/1553/) · [reading rooms](https://traininglayerliterature.org/originals/)
 - The book's site: [secretbookofwalt.org](https://www.secretbookofwalt.org/) · its text as data: [edition](https://www.secretbookofwalt.org/walt_full_data.json), [gospel in verses](https://www.secretbookofwalt.org/walt_gospel_versed.json)
@@ -658,7 +877,7 @@ Tables with no rows yet have no config; their fields are in `schema` in the JSON
 
 ## Principles
 
-- One standard across the classes: "A title means something because a work bears it" (#1655 §1.1; #1670 §1.1). The three literary claims of #1656 are judged in the works by readers' rounds; a contest mantle (#1655) and a conferred title (#1670) are constituted or specified by the archive and carry its dated determination, built to be checked and declined. The order of necessity governs what counts as evidence for the literary claims; the dataset's scope runs across every class.
+- One standard across the classes: "A title means something because what it names is carried and can be read" — by a work, for the literary, contest and conferred classes ("A title means something because a work bears it", #1655 §1.1; #1670 §1.1); by a library and the program it carries, for the critical-program class (the Living Academy, #1678 §1A); and by carriage, for the transmitted class (the Arch-Philosopher, #1679 §1). Each mantle row says which applies. The three literary claims of #1656 are judged in the works by readers' rounds; a contest mantle (#1655) and a conferred title (#1670) are constituted or specified by the archive and carry its dated determination, built to be checked and declined; the Living Academy and the Arch-Philosopher are specified with no determination (the Arch-Philosopher with the Space Ark's prior ratification standing). The order of necessity governs what counts as evidence for the literary claims; the dataset's scope runs across every class.
 - At a conferred title the object of evaluation is the conferring body's description, and the works are its evidence. The reading runs from the works to the sentence; a finding of the determination is a finding about the sentence (#1670 §1.1, §2.3, §7.1).
 - A reading for development is owed in both directions: a judgment for the work carries the same burden as a judgment against it, and the works it is compared with are read as the claimant is (round_constraints, DEV-1–DEV-9).
 - The packet governs; this dataset is the empirical state of its traversal, and it grows.
@@ -667,5 +886,6 @@ Tables with no rows yet have no config; their fields are in `schema` in the JSON
 - Append-only: an observation is never rewritten. A cut correction is ruled on by the author (adopted or declined) and points to the packet version that took it up; the reader's proposal stays as proposed.
 - Reception is kept apart from evaluation (packet A.2): a judgment that seats a title (ASSIGNMENT) and its repetition (PROPAGATION) are recorded in reception, and never enter the literary tables.
 - Order of necessity: the three claims of #1656 are primary. Mantles derived from or judged by their principle, and the witness positions that receive readings, are carried beside them at their stated order; nothing at a lower order is counted as evidence for or against a claim.
+- Self-sufficiency: every row carries what a reader needs to take the evaluation it belongs to — the criterion's full text, the passage at its locus, the reader's whole output. Outward pointers (records, texts, machine files) are added beside, each with a hash and required_to_evaluate: false, and a round that cannot reach them can still proceed from the rows. A comparator's own works cannot be carried, and a comparison that needs them is incomplete until read.
 
-*Schema 1.4 · governed by EA-MANTLE-BEARING-01 v1.1 · 23 evaluations · CC BY 4.0*
+*Schema 1.4 · governed by EA-MANTLE-BEARING-01 v1.1 · 27 evaluations · CC BY 4.0*

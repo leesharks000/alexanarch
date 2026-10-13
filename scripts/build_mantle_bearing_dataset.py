@@ -31,7 +31,8 @@ A = "https://www.alexanarch.org"
 
 TABLES = ["evaluations", "findings", "cut_corrections", "next_rounds", "rival_searches",
           "democratic_field", "aligned_passages", "succession", "pearl_arrangement",
-          "mantles", "occupancy", "doctrine", "criteria", "determinations", "operations", "candidates", "watch", "readings"]
+          "mantles", "occupancy", "doctrine", "criteria", "determinations", "operations", "candidates", "watch", "readings",
+          "inspection_operations", "carriers", "transmission_links", "ledger"]
 
 
 def cell(v):
@@ -112,20 +113,22 @@ def card(d, counts):
            if counts.get(t)]
     mt = d.get("mantles") or []
     L += ["---", "license: cc-by-4.0", "language:", "  - en",
-          'pretty_name: "The Work Bears the Mantle — three literary claims, a contest mantle and a conferred title, under one standard"',
+          'pretty_name: "The Work Bears the Mantle — three literary claims, a contest mantle, a conferred title, a critical program and a transmitted mantle, under one standard"',
           "tags:", "  - poetry", "  - literary-evaluation", "  - walt-whitman", "  - allen-ginsberg",
-          "  - mantle", "  - semantic-object", "  - nobel-prize", "  - anne-carson", "  - king-of-aeo", "  - assembly-chorus", "  - answer-engine-optimization", "  - symbolon", "  - machine-reading", "  - crimson-hexagonal-archive",
+          "  - mantle", "  - semantic-object", "  - nobel-prize", "  - anne-carson", "  - king-of-aeo", "  - assembly-chorus", "  - answer-engine-optimization", "  - symbolon", "  - machine-reading", "  - crimson-hexagonal-archive", "  - dialectic", "  - critique", "  - political-economy", "  - ai-mediation", "  - living-academy", "  - arch-philosopher",
           "size_categories:", "  - n<1K", "configs:"]
     for i, t in enumerate(cfg):
         L += [f"  - config_name: {t}", f"    data_files: {t}.jsonl"] + (["    default: true"] if i == 0 else [])
     L += ["---", ""]
-    L += ["# The Work Bears the Mantle — three literary claims, a contest mantle and a conferred title, under one standard", "",
-          "**One standard.** \"A title means something because a work bears it\" "
-          f"([#1655]({A}/s/records/1655/) §1.1; [#1670]({A}/s/records/1670/) §1.1). This dataset holds the archive's mantle-bearing "
-          "under that standard, across the classes a title can belong to: titles the archive claims for works of its own, judged by "
+    L += ["# The Work Bears the Mantle — three literary claims, a contest mantle, a conferred title, a critical program and a transmitted mantle, under one standard", "",
+          "**One standard.** \"A title means something because what it names is carried and can be read\" — by a work, where "
+          f"\"a work bears it\" ([#1655]({A}/s/records/1655/) §1.1; [#1670]({A}/s/records/1670/) §1.1); by a library and the program it "
+          f"carries ([#1678]({A}/s/records/1678/) §1A); or by carriage ([#1679]({A}/s/records/1679/) §1). This dataset holds the archive's "
+          "mantle-bearing under that standard, across the classes a title can belong to: titles the archive claims for works of its own, judged by "
           "readers in the works; a title a contest manufactured, which the archive constituted and adjudicated; a title a body "
-          "conferred, whose meaning the archive specified as the operations the work bears; a founded mantle; and the witness "
-          "positions that receive readings.", "",
+          "conferred, whose meaning the archive specified as the operations the work bears; a critical program, the Living Academy, "
+          "borne by a library and its program across modes; a transmitted mantle, the Arch-Philosopher, borne by carrying the dialectic "
+          "forward; a founded mantle; and the witness positions that receive readings.", "",
           "**This is the second half of a symbolon, as it accumulates.** The first half of the literary claims is the mantle constitution "
           f"[EA-MANTLE-BEARING-01 v1.1]({A}/s/records/1656/) (deposit #1656, AXN:06DE.GOVERNANCE; "
           f"[text]({A}/data/texts/AXN-06DE-text.md), [PDF]({A}/papers/AXN-06DE.pdf)). It states three claims and cuts them so "
@@ -148,7 +151,9 @@ def card(d, counts):
         HOW = {"literary": "readers' rounds, in the works", "contest": "the archive's dated determination under a stated standard",
                "conferred": "a dated determination on the conferring body's description, with the works at their loci as its evidence",
                "founded and bestowed": "founded and bestowed by the holder of the literary mantles",
-               "constitutional witness position": "occupancy, per event"}
+               "constitutional witness position": "occupancy, per event",
+               "critical program": "specified, no determination; a comparative judgment made or defeated by the protocol in its row, mode by mode, dimensions never averaged",
+               "transmitted": "specified, no new determination; a bearer recognized by the turn test, with its carriers and typed links"}
         for m in mt:
             g = m["governing_record"][0]
             L.append(f"| {m['name']} | {m['class']} | {m['order_of_necessity'].split(' ')[0]} | {HOW.get(m['class'], m['class'])} | [#{g['deposit']}]({g['url']}) | {m['holder_or_occupancy']} |")
@@ -320,6 +325,7 @@ def card(d, counts):
                 L.append(f"| `{r['reading_id']}` | {r['reader']} | {r['date']} | {r['direction']} | {'yes' if r['determination_engaged'] else 'no'} | "
                          f"{', '.join('`' + c + '`' for c in r['collapses'])} | {r['after_correction_state']} | [{r['capture']}]({r['capture_url']}) |")
             L.append("")
+    L += kernels(d)
     if mt:
         L += ["## The founded mantle and the witness positions", "",
               f"**The Mantle of the Blind Poet** ([#9]({A}/s/records/9/)) was founded by the holder of the three literary mantles "
@@ -356,17 +362,22 @@ def card(d, counts):
         "occupancy": "one recorded occupancy of Septad positions, at one event or listing",
         "doctrine": "one defining record, with what it establishes and a quoted locus",
         "criteria": "one formulation of the evaluative criterion, with its source, what it responds to and supersedes, and the author's ruling",
+        "inspection_operations": "one reader task a mantle object specifies, with its output and an entry point; specified, not run",
+        "carriers": "one carrier of the dialectic, with the passage at its locus quoted, its statement type and grade",
+        "transmission_links": "one typed link of a strand, with statement type, grade, locus and whether it is publicly verifiable",
+        "ledger": "one work a mantle's claim is to be read in, as the object names it; role coded only on reading",
     }
     for t in ["evaluations", "findings", "cut_corrections", "next_rounds", "rival_searches", "required_works",
               "reception", "democratic_field", "aligned_passages", "succession", "pearl_arrangement",
-              "mantles", "occupancy", "doctrine", "criteria", "determinations", "operations", "candidates", "watch", "readings"]:
+              "mantles", "occupancy", "doctrine", "criteria", "determinations", "operations", "candidates", "watch", "readings",
+              "inspection_operations", "carriers", "transmission_links", "ledger"]:
         L.append(f"| `{t}` | {counts.get(t, 0)} | {what[t]} |")
     L += ["", "Tables with no rows yet have no config; their fields are in `schema` in the JSON. "
           "Every cell in the JSONL is a string (objects as JSON text) so that rounds coded differently still load; "
           f"the full native record is [`EA-MANTLE-BEARING-01-dataset.json`]({A}/datasets/mantle-bearing/EA-MANTLE-BEARING-01-dataset.json).", ""]
     L += ["## Linked", "",
           f"- The packet: [#1656]({A}/s/records/1656/) · [text]({A}/data/texts/AXN-06DE-text.md) · [PDF]({A}/papers/AXN-06DE.pdf)",
-          f"- The mantle objects: [Prince of Poets #1651]({A}/s/records/1651/) · [King of May #1652]({A}/s/records/1652/) · [Good Gray Poet #1653]({A}/s/records/1653/) · [King of AEO — 2026 Contest Mantle #1655]({A}/s/records/1655/) · [The Nobel Prize in Literature 2026 — Anne Carson #1670]({A}/s/records/1670/)",
+          f"- The mantle objects: [Prince of Poets #1651]({A}/s/records/1651/) · [King of May #1652]({A}/s/records/1652/) · [Good Gray Poet #1653]({A}/s/records/1653/) · [King of AEO — 2026 Contest Mantle #1655]({A}/s/records/1655/) · [The Nobel Prize in Literature 2026 — Anne Carson #1670]({A}/s/records/1670/) · [The Living Academy #1678]({A}/s/records/1678/) · [The Arch-Philosopher #1679]({A}/s/records/1679/)",
           f"- The claimant works as deposits: [*I Am X* #328]({A}/s/records/328/) · [*The Secret Book of Walt* #683]({A}/s/records/683/) and [critical edition #1362]({A}/s/records/1362/) · [*Pearl and Other Poems* #1121]({A}/s/records/1121/)",
           f"- The seated texts: [EA-CORPORA-03, Whitman and Pearl, #1553]({A}/s/records/1553/) · [reading rooms](https://traininglayerliterature.org/originals/)",
           "- The book's site: [secretbookofwalt.org](https://www.secretbookofwalt.org/) · its text as data: [edition](https://www.secretbookofwalt.org/walt_full_data.json), [gospel in verses](https://www.secretbookofwalt.org/walt_gospel_versed.json)",
@@ -381,6 +392,99 @@ def card(d, counts):
     L += [f"*Schema {d['schema_version']} · governed by {d['governing_packet']} v{d['packet_version']} · "
           f"{len(ev)} evaluations · CC BY 4.0*", ""]
     return "\n".join(L)
+
+
+def _cut(s, n=260):
+    s = (s or "").replace("\n", " ").replace("|", "/")
+    return s if len(s) <= n else s[:n].rsplit(" ", 1)[0] + "…"
+
+
+def _links(n, hx, extra=()):
+    out = [f"[record #{n}]({A}/s/records/{n}/)", f"[text]({A}/data/texts/AXN-{hx}-text.md)", f"[PDF]({A}/papers/AXN-{hx}.pdf)"]
+    return " · ".join(out + list(extra))
+
+
+def kernels(d):
+    """A whole kernel of each carried mantle, for readers that see the card and not the rows. Every sentence is drawn from the rows."""
+    L = []
+    mt = {m["mantle"]: m for m in d.get("mantles", [])}
+    ev = [e for e in d.get("evaluations", [])]
+    la = mt.get("the-living-academy")
+    if la:
+        L += ["## The Living Academy — a critical program", "",
+              f"*Mantle object with metadata packet: EA-MPAI-ALEXANARCH-01 v0.4, [#1678]({A}/s/records/1678/) ({la['governing_record'][0]['axn']}). "
+              f"Status: {la['status']}.*", "",
+              f"**The standard.** {la['criterion']}", "",
+              f"**Why an academy.** {la['why_an_academy']}", "",
+              f"**The name.** {la['name_note']}", "",
+              f"**The object.** {la['object']}", "",
+              f"**The claim, recorded and not evaluated.** \"{la['comparative_claim']['text']}\" ({la['comparative_claim']['by']}, {la['comparative_claim']['date']}). "
+              "A challenge is a comparator program evaluated on the same modes and criteria under a rule declared before the verdict.", "",
+              "**The modes.** The critique is evaluated mode by mode before it is evaluated as a whole.", "",
+              "| Mode | What counts | Where it lives | Criteria native to the mode |", "|---|---|---|---|"] + la["modes"] + [""]
+        L += ["**The criteria.** Table `criteria` (rows `criteria::LC-01` … `LC-12`) carries each with its internal evidence and comparative rule.", "",
+              "| ID | criterion | question |", "|---|---|---|"]
+        for c in d["criteria"]:
+            if c.get("mantle") == "the-living-academy" and c["criterion_id"].startswith("criteria::LC-"):
+                name, _, rest = c["formulation"].partition(". ")
+                q = rest.split(" Internal evidence:")[0]
+                L.append(f"| {c['criterion_id'].split('::')[1]} | {name} | {_cut(q, 400)} |")
+        L += ["", "**Inspection operations** (table `inspection_operations`; specified, not run):", ""]
+        for o in d.get("inspection_operations", []):
+            if o["mantle"] == "the-living-academy":
+                L.append(f"- **{o['operation_id']} · {o['name']}.** {o['task']} → {o['output']} Entry: {o['entry']}")
+        L += ["", "**Candidates** (table `candidates`; initial objects for inspection, not a ranked list):", "",
+              "| ID | candidate | role | status |", "|---|---|---|---|"]
+        for c in d.get("candidates", []):
+            if c["mantle"] == "the-living-academy":
+                L.append(f"| {c['cand_id']} | {c['name']} | {c['role']} | {c.get('status') or ''} |")
+        L += ["", "**How a comparative judgment is made or defeated.**", ""]
+        L += [f"{i}. {s}" for i, s in enumerate(la["protocol"], 1)]
+        L += ["", "**Not criteria:** " + " · ".join(la["non_criteria"]), "",
+              "**Extent profile** — every value starts unknown and is filled from the ledger or from inspection: "
+              + "; ".join(f"`{x['key']}` ({x['unit']})" for x in la["extent_profile"]) + ".", "",
+              "**The ledger** (table `ledger`) — works the object names, roles coded only on reading: "
+              + " · ".join(f"[#{x['deposit']}]({x['url']})" for x in d.get("ledger", []) if x["mantle"] == "the-living-academy") + ".", "",
+              "**Rounds** (table `evaluations`, not averaged): "
+              + "; ".join(f"`{e['eval_id']}` — {e['reader']}: {e['judgment']}" for e in ev if e["mantle"] == "the-living-academy") + ".", "",
+              f"**Pair.** {la['pair']['relation']}.", "",
+              "**Outward:** " + _links(1678, "06F4", [f"[machine file]({A}/files/AXN-06F4/alexanarch-entity.json)",
+                                                      f"[mantle layer as data]({A}/files/AXN-06F4/mantle_layer.py)",
+                                                      f"[the library]({A}/)", f"[registry]({A}/data/registry.json)", "[metadatapacket.dev packet page](https://www.metadatapacket.dev/packets/1678/)", "[restoredacademy.com — the pair, rendered](https://www.restoredacademy.com/readings/academy-mantles#t2)"]), ""]
+    ap = mt.get("arch-philosopher")
+    if ap:
+        L += ["## The Arch-Philosopher — a transmitted mantle", "",
+              f"*Mantle object: EA-MANTLE-ARCH-PHILOSOPHER-01 v0.2, [#1679]({A}/s/records/1679/) ({ap['governing_record'][0]['axn']}). Status: {ap['status']}.*", "",
+              ap["summary"], "", f"**The standard.** {ap['criterion']}", "",
+              f"**The turn, and its test.** {ap['turn_test_text']}", "",
+              f"**Bearing and enabling.** {ap['bearing_and_enabling']}", "",
+              f"**The reflexivity criterion.** {ap['reflexivity_criterion']}", "",
+              "**The carriers** (table `carriers`), each with the passage at its locus:", ""]
+        for c in d.get("carriers", []):
+            if c["mantle"] == "arch-philosopher":
+                L.append(f"- **{c['carrier']} — {c['name']}.** {c['statement']}")
+        L += ["", f"**Strand A — the succession, and beyond Damascius locked.** {ap['strands']['A']}", "",
+              "| link | relation | statement | grade | locus |", "|---|---|---|---|---|"]
+        for x in d.get("transmission_links", []):
+            if x["mantle"] == "arch-philosopher" and x["strand"] == "A":
+                L.append(f"| {x['link']} | {x['relation']} | {x['statement']} | {x['grade']} | {x['locus']} |")
+        L += ["", ap["strands"]["A_after_links"], "",
+              f"**Strand B — the dialectic as such.** {ap['strands']['B']}", "",
+              f"**Where the strands meet.** {ap['strands']['meeting']}", "",
+              f"**Concurrent bearing.** {ap['strands']['concurrent_bearing']}", "",
+              f"**The claim — inheritance.** {ap['claim']['inheritance']}", "",
+              f"**The claim — carriage.** {ap['claim']['carriage']}", "",
+              f"**No new determination.** {ap['claim']['determination']}", "",
+              f"**Prior designation.** {ap['holder_or_occupancy']}", "",
+              "**The ledger** (table `ledger`): "
+              + " · ".join(f"[#{x['deposit']}]({x['url']})" + (" (representative site)" if x["representative_site"] else "") for x in d.get("ledger", []) if x["mantle"] == "arch-philosopher") + ".", "",
+              "**Rounds** (table `evaluations`): "
+              + "; ".join(f"`{e['eval_id']}` — {e['reader']}: {e['judgment']}" for e in ev if e["mantle"] == "arch-philosopher") + ".", "",
+              f"**Pair.** {ap['pair']['relation']}.", "",
+              "**Outward:** " + _links(1679, "06F5", [f"[Space Ark #558]({A}/s/records/558/)", f"[The Final Time #1637]({A}/s/records/1637/)",
+                                                      f"[the wills and Strabo seated, #1580]({A}/s/records/1580/)", f"[Catalogues and Wills #1581]({A}/s/records/1581/)",
+                                                      "[restoredacademy.com — the pair, rendered](https://www.restoredacademy.com/readings/academy-mantles)", "[metadatapacket.dev packet page](https://www.metadatapacket.dev/packets/1678/)"]), ""]
+    return L
 
 
 def emit():
