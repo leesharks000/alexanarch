@@ -181,6 +181,26 @@ listed as <span class="unres">UNRESOLVED</span> rather than omitted or guessed.<
 <div class="k">type</div><div class="v">{html.escape(d.get('content_type') or '')}</div>
 <div class="k">resolved by</div><div class="v mono">{html.escape(r['evidence'])}</div>
 </div></div>""")
+    # 2026-10-13: the errata sidecars (MPAI Formal Specification v2.0, #1677 §10) — reference, citation,
+    # source and count corrections recorded on the corrected record itself, below its full text.
+    side = [d for d in sorted(by_num.values(), key=lambda x: x['deposit_number']) if d.get('errata')]
+    out.append(f"""<h2 style="font-size:20px;margin:34px 0 8px">Errata sidecars</h2>
+<div class="principle">Corrections of reference, citation, source or count are not minted as erratum deposits.
+They are recorded on the corrected record, rendered below its full text, and served as data at
+<span class="mono">/data/errata/&lt;n&gt;.json</span> (every deposit has one; the index is
+<a href="/data/errata/index.json">/data/errata/index.json</a>). The deposited text and its AXN are unchanged.</div>
+<p class="mono">{len(side)} records &middot; {sum(len(d['errata']) for d in side)} entries</p>""")
+    for d in side:
+        es = d['errata']
+        last = es[-1] if isinstance(es[-1], dict) else {}
+        what = ' · '.join(html.escape(str(last.get(k))) for k in ('date', 'kind', 'locus') if last.get(k))
+        out.append(f"""<div class="e">
+<h3><a href="/s/records/{d['deposit_number']}/#errata">#{d['deposit_number']} — {html.escape((d.get('title') or '')[:150])}</a></h3>
+<div class="meta">
+<div class="k">entries</div><div class="v mono">{len(es)}</div>
+<div class="k">latest</div><div class="v">{what or '—'}</div>
+<div class="k">sidecar</div><div class="v mono"><a href="/data/errata/{d['deposit_number']}.json">/data/errata/{d['deposit_number']}.json</a></div>
+</div></div>""")
     out.append("""<footer>Generated from <span class="mono">data/registry.json</span> by
 <span class="mono">scripts/build_errata_surface.py</span>. Detection is by declared
 content type or title, never inferred from content. Re-run after any erratum mint.

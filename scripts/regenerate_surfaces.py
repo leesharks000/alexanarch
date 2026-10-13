@@ -76,7 +76,7 @@ except ImportError:
     _OVERWRITE_GUARD_AVAILABLE = False
 
 HOMEPAGE_RECENT_N = 12  # must equal the JS slice in index.html
-ALL_SURFACES = ["state", "browse", "browse-sections", "doi-shadow", "feed", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index", "search-index", "search-static", "capture-gallery", "record-api", "dynamic-counts", "semantic-addresses"]
+ALL_SURFACES = ["state", "browse", "browse-sections", "doi-shadow", "feed", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index", "search-index", "search-static", "capture-gallery", "record-api", "errata-sidecars", "dynamic-counts", "semantic-addresses"]
 
 
 def _version_label(version: str) -> tuple:
@@ -2026,6 +2026,21 @@ def regenerate_record_api(reg, dry_run=False):
 
 
 SURFACE_FNS["record-api"] = regenerate_record_api
+
+
+def regenerate_errata_sidecars(reg, dry_run=False):
+    """Emit data/errata/<n>.json for every deposit (delegates to build_errata_sidecars).
+
+    REGISTERED 2026-10-13 with the sidecar itself (MPAI Formal Specification v2.0, #1677 §10)."""
+    r = subprocess.run([sys.executable, str(REPO_ROOT / "scripts/build_errata_sidecars.py")] + (["--dry-run"] if dry_run else []),
+                       capture_output=True, text=True, cwd=str(REPO_ROOT))
+    sys.stdout.write(r.stdout)
+    if r.returncode != 0:
+        sys.stdout.write(r.stderr)
+        raise RuntimeError("build_errata_sidecars.py failed — the sidecars are now STALE")
+
+
+SURFACE_FNS["errata-sidecars"] = regenerate_errata_sidecars
 SURFACE_FNS["capture-gallery"] = regenerate_capture_gallery
 SURFACE_FNS["dynamic-counts"] = regenerate_dynamic_counts
 

@@ -967,6 +967,55 @@ def _authorship(d):
             'border-left:3px solid var(--border)">' + ''.join(rows) + '</div>')
     return html, hets, acct
 
+def _errata_entries(d):
+    """Normalize the registry `errata` field to rows for rendering.
+
+    The field predates a fixed shape (four records carried it before 2026-10-13, in four shapes), so
+    the reader is generous and the writer is strict: new entries use
+    {date, kind, locus, was, now, reason, raised_by, status}. Older keys are read as their nearest
+    equivalent; nothing is dropped — an unknown key is shown under its own name."""
+    out = []
+    for e in (d.get('errata') or []):
+        if not isinstance(e, dict):
+            out.append({'date': '', 'kind': '', 'locus': '', 'was': '', 'now': '', 'reason': str(e), 'ref': None, 'extra': []})
+            continue
+        pick = lambda *ks: next((str(e[k]) for k in ks if e.get(k) not in (None, '', [])), '')
+        used = {'date', 'kind', 'relation', 'locus', 'section', 'field', 'was', 'defect', 'given', 'now', 'correction',
+                'correct', 'reason', 'note', 'deposit_number', 'raised_by', 'raised_in', 'status'}
+        out.append({'date': pick('date'), 'kind': pick('kind', 'relation'), 'locus': pick('locus', 'section', 'field'),
+                    'was': pick('was', 'defect', 'given'), 'now': pick('now', 'correction', 'correct'),
+                    'reason': pick('reason', 'note'), 'ref': e.get('deposit_number'),
+                    'raised_by': pick('raised_by', 'raised_in'), 'status': pick('status'),
+                    'extra': [(k, v) for k, v in e.items() if k not in used]})
+    return out
+
+
+def _errata_html(d, dn, esc):
+    rows = _errata_entries(d)
+    if not rows:
+        return ''
+    items = []
+    for e in rows:
+        head = ' · '.join(esc(x) for x in (e['date'], e['kind'], e['locus'] and f"at {e['locus']}") if x)
+        lines = []
+        if e['was']: lines.append(f'<div><span style="color:#777">Was:</span> {esc(e["was"])}</div>')
+        if e['now']: lines.append(f'<div><span style="color:#777">Now:</span> {esc(e["now"])}</div>')
+        if e['reason']: lines.append(f'<div>{esc(e["reason"])}</div>')
+        if e.get('ref'): lines.append(f'<div><a href="/s/records/{esc(str(e["ref"]))}/" style="color:var(--accent)">#{esc(str(e["ref"]))}</a></div>')
+        if e.get('raised_by'): lines.append(f'<div style="color:#777">Raised by: {esc(e["raised_by"])}</div>')
+        if e.get('status'): lines.append(f'<div style="color:#777">{esc(e["status"])}</div>')
+        for k, v in e.get('extra') or []:
+            lines.append(f'<div style="color:#777">{esc(k)}: {esc(v if isinstance(v, str) else json.dumps(v, ensure_ascii=False))}</div>')
+        head_html = ('<div style="font-weight:600">' + head + '</div>') if head else ''
+        items.append('<li style="margin:.5rem 0">' + head_html + ''.join(lines) + '</li>')
+    return ('<section id="errata" style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid #b23;font-size:.86em">'
+            '<div style="font-weight:600;margin-bottom:.3rem">Errata</div>'
+            f'<ul style="margin:0;padding-left:1.1rem">{"".join(items)}</ul>'
+            '<div style="opacity:.7;margin-top:.4rem;font-size:.92em">Corrections of reference, citation, source or count, '
+            'recorded beside the record. The deposited text and its AXN are unchanged. As data: '
+            f'<a href="/data/errata/{dn}.json" style="color:var(--accent)">/data/errata/{dn}.json</a>.</div></section>')
+
+
 def regenerate_static_page(d, eidx, registry=None):
     _kernel_html = ''
     """Regenerate the static HTML page for a deposit with full enrichment.
@@ -1095,6 +1144,17 @@ def regenerate_static_page(d, eidx, registry=None):
                            f'<a href="/s/records/{_cn}/" style="color:var(--accent)">read the erratum</a>. Canonical bytes of this record are unchanged; the correction is registered here at the point of use.</div>')
             _corr_ld.append({"@type": "CorrectionComment", "@id": f"https://www.alexanarch.org/s/records/{_cn}/", "url": f"https://www.alexanarch.org/s/records/{_cn}/",
                              "name": f"ERRATUM #{_cn}", "text": _r.get("note") or "", "about": {"@type": "PropertyValue", "propertyID": "severity", "value": _sev}})
+    # 2026-10-13 ERRATA SIDECAR (MPAI Formal Specification v2.0 #1677 §10; MANUS: "a wrong reference
+    # doesnt require a full erratum deposit - it can go in an errata sidecar on each deposit ... below
+    # the deposit, not first thing"). Entries live in the registry's `errata` field, render below the
+    # full text (errata_html, apparatus bloc) and are served at /data/errata/<n>.json. Here they also
+    # enter JSON-LD as CorrectionComment, so a machine reader meets them with the record.
+    for _e in _errata_entries(d):
+        _corr_ld.append({"@type": "CorrectionComment", "url": f"https://www.alexanarch.org/s/records/{dn}/#errata",
+                         "name": f"Errata sidecar — {_e['kind'] or 'correction'}" + (f" ({_e['date']})" if _e['date'] else ''),
+                         "text": " · ".join(x for x in (_e['locus'] and f"at {_e['locus']}", _e['was'] and f"was: {_e['was']}",
+                                                        _e['now'] and f"now: {_e['now']}", _e['reason']) if x),
+                         "isBasedOn": f"https://www.alexanarch.org/data/errata/{dn}.json"})
     if _corr_ld: _ld["correction"] = _corr_ld
     # 2026-09-13 SURFACE POROSITY. A seated room document is a closed surface: a machine
     # traversing it meets the room's form of the argument and nothing telling it a more
@@ -1769,6 +1829,8 @@ def regenerate_static_page(d, eidx, registry=None):
             + '</div>'
         )
 
+    errata_html = _errata_html(d, dn, esc)
+
     mods = d.get('modifications') or []
     mods_html = ''
     if mods:
@@ -2144,6 +2206,7 @@ def regenerate_static_page(d, eidx, registry=None):
      not what the work says. It follows the work because a reader came for the
      work. (MANUS standing rule, 2026-08-06: recording of method or modification
      does not appear in body text.) -->
+{errata_html}
 {external_metadata_html}
 {version_history}
 {mods_html}

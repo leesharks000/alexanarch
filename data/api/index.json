@@ -42,7 +42,7 @@
       "current_version": "alexanarch-deposit-protocol/v1",
       "schema_version": "2026-06-22-axn-v2",
       "canonical_path": "/api/deposit-protocol.json",
-      "content_sha256": "26bb9d552bdcc582ad2858c072d6bd42749568acf03d2af54216876ae70ff237",
+      "content_sha256": "fcafbafad0d1c95b560ba5e0cfd0503c76182bdf1feb7b419caedf41ae1296bf",
       "governs": "What a deposit is, what fields it requires, how it's submitted (Path A auto-mint, Path B canonical rich), how it's validated, what enrichment runs.",
       "depends_on": [
         "axn",
@@ -60,7 +60,7 @@
         ".github/workflows/validate-registry.yml",
         "scripts/validate_deposit.py"
       ],
-      "last_updated": "2026-08-27"
+      "last_updated": "2026-10-13"
     },
     "axn": {
       "name": "AXN Identifier Protocol",
@@ -558,12 +558,19 @@
       "changes": [
         "Updated protocol 'axn': axn/v2.2: record_dimensions (mint_derivation, founding_event, manifestations), applied to the 2026-06-20 batch"
       ]
+    },
+    {
+      "index_version": "v1.1",
+      "date": "2026-10-13",
+      "changes": [
+        "Updated protocol 'deposit': Add errata (the per-record errata sidecar) to recommended_deposit_fields: reference, citation, source and count corrections rendered below the full text and served at /data/errata/<n>.json; canonical bytes and AXN unchanged (MPAI Formal Specification v2.0, #1677 §10; MANUS ruling 2026-10-13)."
+      ]
     }
   ],
   "state": {
     "canonical_path": "/data/state.json",
     "description": "Canonical generated source for all displayed counts. Read this rather than hand-maintaining counts here.",
-    "content_sha256": "4682864f6e61fab6455da53fc62deb96243f56a81ca50abf3800f2cc16b01139"
+    "content_sha256": "65ed55b922ccecaa176fbf8954e9a20f09947c20291b9d0b4565ec7b170eb098"
   },
   "surface_hashes": {
     "algorithm": "sha256",
