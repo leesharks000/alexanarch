@@ -45,6 +45,9 @@ arrives and in which environment this script executes:
 
        python3 scripts/citation_extractor.py             # internal edges
        python3 scripts/extract_citations_external.py     # external edges + refsec queue
+       python3 scripts/refsec_parse.py                   # parse the queue's reference entries
+       python3 scripts/parse_refsec_queue.py             # freeform graph from every parsed entry
+       python3 scripts/build_outside_works.py            # /citations "Works cited" rows
        python3 scripts/concept_backlink.py               # entity backlinks
 
      For transport D deposits, the depositing MANUS/TACHYON also authors
@@ -260,7 +263,8 @@ def exit_room(entry, ran_stages):
     for stage in ("pdf", "interlink", "enrich", "identity", "verify"):
         if stage not in ran_stages:
             undone.append(stage)
-    for script in ("citation_extractor.py", "extract_citations_external.py", "concept_backlink.py"):
+    for script in ("citation_extractor.py", "extract_citations_external.py", "refsec_parse.py",
+                   "parse_refsec_queue.py", "build_outside_works.py", "concept_backlink.py"):
         undone.append(script)
     print("│")
     print("│  still undone:")

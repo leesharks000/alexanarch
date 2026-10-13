@@ -19,7 +19,22 @@ Deterministic; safe to wire as a deposit_pipeline stage (Stage E).
 """
 import json, re, hashlib, pathlib, datetime
 
-APPARATUS_DOMAINS = {'creativecommons.org', 'spdx.org', 'schema.org', 'www.w3.org', 'purl.org', 'licensebuttons.net'}
+APPARATUS_DOMAINS = {'creativecommons.org', 'spdx.org', 'schema.org', 'www.w3.org', 'purl.org', 'licensebuttons.net',
+                     # page furniture: fonts, CDNs, placeholders, local hosts — present in the text, not cited
+                     'fonts.googleapis.com', 'fonts.gstatic.com', 'cdnjs.cloudflare.com', 'cdn.jsdelivr.net', 'unpkg.com',
+                     'example.org', 'example.com', 'localhost', '127.0.0.1'}
+# Hosts where a link names a place on a platform (a profile, a repository, a
+# share link, a search, an API) rather than a cited work. Kept as data under
+# via=url_platform; the outside-works view shows them only on request.
+PLATFORM_DOMAINS = {'orcid.org', 'zenodo.org', 'about.zenodo.org', 'support.zenodo.org', 'github.com',
+                    'raw.githubusercontent.com', 'gist.github.com', 'blogger.googleusercontent.com',
+                    'share.google', 'claude.ai', 'chatgpt.com', 'chat.openai.com', 'gemini.google.com',
+                    'google.com', 'support.google.com', 'developers.google.com', 'scholar.google.com',
+                    'search.google.com', 'datacite.org', 'api.datacite.org', 'commons.datacite.org',
+                    'search.datacite.org', 'huggingface.co', 'perplexity.ai', 'bing.com', 'copilot.microsoft.com',
+                    'web.archive.org', 'archive.org', 'openaire.eu', 'explore.openaire.eu',
+                    'academia.edu', 'independent.academia.edu', 'scholar.archive.org', 'semanticscholar.org',
+                    'researchgate.net', 'linkedin.com', 'x.com', 'twitter.com', 'substack.com'}
 SELF_PLATFORM_DOMAINS = {'mindcontrolpoems.blogspot.com', 'm.facebook.com', 'www.facebook.com', 'facebook.com', 'medium.com', 'soundcloud.com'}
 from collections import defaultdict
 
@@ -31,7 +46,19 @@ OWN_DOMAINS = {
     'www.machinemediation.org', 'leesharks.com', 'www.leesharks.com',
     'crimsonhexagonal.org', 'persistentidentifiers.org', 'spxi.dev',
     'semanticphysics.org', 'themandalaoracle.com', 'gravitywell-1.onrender.com',
+    'alexanarch.freeforums.net',  # the archive's discussion forum (site nav)
 }
+
+def fleet_domains():
+    """The archive's own sites, from data/fleet-domains.json (the fleet manifest)."""
+    p = ROOT / 'data' / 'fleet-domains.json'
+    if not p.exists():
+        return set()
+    return {d['domain'].lower() for d in json.loads(p.read_text()).get('domains', []) if d.get('domain')}
+
+def in_domains(dom, doms):
+    dom = dom[4:] if dom.startswith('www.') else dom
+    return any(dom == x or dom.endswith('.' + x) for x in doms)
 
 DOI_RE = re.compile(r'\b(10\.\d{4,9}/[^\s\)\]\">,;]+)')
 URL_RE = re.compile(r'https?://[^\s\)\]\">]+')
@@ -42,10 +69,15 @@ REFSEC_RE = re.compile(r'^#{1,4}[^\n]{0,40}\b(Works Cited|References|Bibliograph
 HEADING_RE = re.compile(r'^#{1,4}\s+\S', re.M)
 
 def norm_doi(d):
-    return d.rstrip('.').rstrip(')').rstrip(']').lower()
+    # Trailing markdown and punctuation (` * _ ' " ” ’ . , ; : ! ?) is not part of
+    # a DOI. Before 2026-10-13 only . ) ] were stripped, so `10.5281/zenodo.N``
+    # missed the own-DOI test and an archive DOI was filed as a foreign work.
+    d = d.lower().rstrip('`*_\'"\u201d\u2019.,;:!?)]>')
+    m = re.match(r'(10\.5281/zenodo\.\d+)', d)
+    return m.group(1) if m else d
 
 def norm_url(u):
-    u = u.rstrip(".,;:)]'\"")
+    u = u.rstrip(".,;:)]'\"*`_")
     u = re.sub(r'#.*$', '', u)
     u = re.sub(r'^https?://', '', u).rstrip('/')
     return u
@@ -77,6 +109,23 @@ def main():
                 elif isinstance(o, str) and o.startswith('10.5281'):
                     own_dois.add(norm_doi(o))
             harvest(j)
+
+    # The archive's own legacy DOIs that no deposit resolves: the registry's
+    # zenodo_dois fields, and the DataCite captures of the archive's account
+    # (queried by ORCID and by heteronym creator names). A citation of one of
+    # these is a citation of the archive, never of a foreign work.
+    for d in reg['deposits']:
+        for z in d.get('zenodo_dois') or []:
+            if isinstance(z, str):
+                own_dois.add(norm_doi(z))
+    own_unresolved = set()
+    for cand in ['data/datacite-full-backup.json', 'data/datacite-survivors-multi-heteronym.json',
+                 'data/heteronym-doi-sift.json']:
+        p = ROOT / cand
+        if p.exists():
+            own_unresolved |= set(re.findall(r'10\.5281/zenodo\.\d+', p.read_text().lower()))
+    own_unresolved -= own_dois
+    fleet = fleet_domains() | OWN_DOMAINS
 
     edges, nodes = [], {}
     refsec_texts = 0
@@ -139,7 +188,8 @@ def main():
             if d.startswith('10.5281'):
                 if d in own_dois:
                     continue  # internal; handled by citation_extractor.py
-                add_edge(num, axn, 'doi:' + d, 'foreign_zenodo', locus(mm.start()), mm.group(0))
+                via = 'own_zenodo_unresolved' if d in own_unresolved else 'foreign_zenodo'
+                add_edge(num, axn, 'doi:' + d, via, locus(mm.start()), mm.group(0))
             else:
                 add_edge(num, axn, 'doi:' + d, 'doi', locus(mm.start()), mm.group(0))
         for mm in ARXIV_RE.finditer(body):
@@ -150,9 +200,20 @@ def main():
         for mm in URL_RE.finditer(body):
             u = norm_url(mm.group(0))
             dom = url_domain(u)
-            if dom in OWN_DOMAINS or 'doi.org' in dom or not dom:
-                continue  # own-fleet, or DOI already captured via DOI_RE
-            via = 'url_apparatus' if dom in APPARATUS_DOMAINS else ('url_self_platform' if dom in SELF_PLATFORM_DOMAINS else 'url')
+            if 'doi.org' in dom or not dom:
+                continue  # DOI already captured via DOI_RE
+            if dom.endswith('.internal') or dom.endswith('.local'):
+                via = 'url_apparatus'
+            elif in_domains(dom, fleet):
+                via = 'url_fleet'          # the archive's own sites (fleet manifest)
+            elif dom in APPARATUS_DOMAINS:
+                via = 'url_apparatus'
+            elif dom in SELF_PLATFORM_DOMAINS:
+                via = 'url_self_platform'
+            elif in_domains(dom, PLATFORM_DOMAINS):
+                via = 'url_platform'
+            else:
+                via = 'url'                # an outside host
             add_edge(num, axn, 'url:' + u, via, locus(mm.start()), mm.group(0))
 
     now = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
@@ -161,7 +222,15 @@ def main():
         'name': 'Alexanarch External Citation Graph (Stage A: mechanical)',
         'edge_fields': {'relation': 'TANG edge vocabulary (genre spec, deposit #542): cites | critiques | builds_upon | temporal_precedence | methodological_lineage | contradiction. Mechanical extraction defaults to cites; Stage C retypes.',
                         'ontic_status': 'real (verified existent) | forward_library (cited before existence) | fictive_retro (invented past work) | unverified (default until Stage C/D classification). Fictive and forward citations are first-class literary structure, never broken links.'},
-        'description': 'External citation edges extracted mechanically from canonical texts: external-prefix DOIs, foreign Zenodo DOIs, URLs (own-fleet excluded), arXiv IDs, ISBNs. Freeform reference-section entries pending Stage C in-session parsing (see worklists/refsec-parse-queue.json).',
+        'description': 'External citation edges extracted mechanically from canonical texts: external-prefix DOIs, Zenodo DOIs the archive does not hold, URLs, arXiv IDs, ISBNs. Freeform reference-section entries are parsed into citation-graph-freeform.json.',
+        'via_classes': {
+            'doi': 'a DOI outside Zenodo', 'arxiv': 'an arXiv identifier', 'isbn': 'an ISBN',
+            'foreign_zenodo': 'a Zenodo DOI not found among the archive\'s own DOIs',
+            'own_zenodo_unresolved': 'one of the archive\'s own legacy Zenodo DOIs (DataCite captures of the account) that no deposit resolves; a citation of the archive, not an outside work',
+            'url': 'a link to an outside host', 'url_fleet': 'a link to one of the archive\'s own sites (data/fleet-domains.json)',
+            'url_platform': 'a link to a place on a platform (profile, repository, share link, search, API) rather than a cited work',
+            'url_self_platform': 'a link to the author\'s own platform account (blog, Medium, SoundCloud, Facebook)',
+            'url_apparatus': 'licence, schema, font, CDN, placeholder or local host: page furniture, not cited'},
         'dateModified': now, 'total_edges': len(edges), 'edges': edges,
     }, ensure_ascii=False, indent=1) + '\n')
 
@@ -177,7 +246,7 @@ def main():
     # reset finished triage to pending and the same non-references were re-queued
     # forever — work recorded as owed where none was.
     TERMINAL = {'parsed', 'relation_line', 'legal_citation', 'apparatus',
-                'prose', 'provenance_row', 'bare_url', 'nav_relation'}
+                'prose', 'provenance_row', 'bare_url', 'nav_relation', 'footnote', 'tang_prose'}
     qp = ROOT / 'data' / 'worklists' / 'refsec-parse-queue.json'
     parsed_keep = []
     if qp.exists():

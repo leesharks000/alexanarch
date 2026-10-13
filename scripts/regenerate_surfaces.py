@@ -76,7 +76,7 @@ except ImportError:
     _OVERWRITE_GUARD_AVAILABLE = False
 
 HOMEPAGE_RECENT_N = 12  # must equal the JS slice in index.html
-ALL_SURFACES = ["state", "browse", "browse-sections", "doi-shadow", "feed", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index", "search-index", "search-static", "capture-gallery", "record-api", "errata-sidecars", "entity", "dynamic-counts", "semantic-addresses"]
+ALL_SURFACES = ["state", "browse", "browse-sections", "doi-shadow", "feed", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index", "search-index", "search-static", "capture-gallery", "record-api", "errata-sidecars", "entity", "outside-works", "dynamic-counts", "semantic-addresses"]
 
 
 def _version_label(version: str) -> tuple:
@@ -2060,6 +2060,24 @@ def regenerate_entity(reg, dry_run=False):
 
 
 SURFACE_FNS["entity"] = regenerate_entity
+
+
+def regenerate_outside_works(reg, dry_run=False):
+    """Emit data/outside-works.json and .csv, the /citations "Works cited" rows (delegates to build_outside_works).
+
+    REGISTERED 2026-10-13. Reads the freeform and external citation graphs as they stand; it does not
+    re-extract. A failure is recorded, not raised: the rows stay as last built, and the message says so."""
+    if dry_run:
+        print("  (outside-works: dry run, not built)"); return
+    r = subprocess.run([sys.executable, str(REPO_ROOT / "scripts/build_outside_works.py")],
+                       capture_output=True, text=True, cwd=str(REPO_ROOT))
+    sys.stdout.write(r.stdout)
+    if r.returncode != 0:
+        sys.stdout.write(r.stderr)
+        print("  BREACH outside-works not rebuilt — data/outside-works.json is as last built")
+
+
+SURFACE_FNS["outside-works"] = regenerate_outside_works
 SURFACE_FNS["capture-gallery"] = regenerate_capture_gallery
 SURFACE_FNS["dynamic-counts"] = regenerate_dynamic_counts
 

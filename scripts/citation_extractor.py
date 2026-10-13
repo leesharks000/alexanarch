@@ -156,6 +156,15 @@ def build_resolvers(reg, doi_index):
                 if dep_num is not None:
                     doi_to_deposit[doi] = dep_num
 
+    # Registry zenodo_dois: the legacy DOIs each deposit records as its own.
+    # The resolution index does not carry all of them; without this, a deposit
+    # citing an archive DOI the index lacks was filed as a foreign Zenodo work
+    # in citation-graph-external.json. The index keeps precedence.
+    for d in reg["deposits"]:
+        for z in d.get("zenodo_dois") or []:
+            if isinstance(z, str) and z.lower().startswith("10.5281/zenodo."):
+                doi_to_deposit.setdefault(z.lower(), d["deposit_number"])
+
     return {
         "axn": axn_to_deposit,
         "hex": hex_to_deposit,

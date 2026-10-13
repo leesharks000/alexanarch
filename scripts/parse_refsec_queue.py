@@ -97,10 +97,36 @@ def main():
     edges = []
     stats = Counter()
 
+    import sys
+    bulk = '--bulk' in sys.argv
     for e in q['entries']:
         if e.get('status') == 'parsed':
+            # Every parsed entry is an edge, whichever pass parsed it. Before
+            # 2026-10-13 only entries parsed in THIS run were emitted, so the
+            # freeform graph froze at the July bulk pass (1,799 edges) while
+            # refsec_parse.py went on parsing into the queue unseen.
             stats['already_parsed'] += 1
+            pz = e.get('parsed') or {}
+            key = pz.get('bibkey')
+            if not key:
+                continue
+            st = pz.get('ontic_status') or 'unverified'
+            n = nodes.setdefault(key, {'bibkey': key, 'cited_by': []})
+            for f in ('authors', 'title', 'venue', 'year'):
+                if pz.get(f) and not n.get(f): n[f] = pz[f]
+            n.setdefault('ontic_status', st)
+            if e['source_axn'] not in n['cited_by']:
+                n['cited_by'].append(e['source_axn'])
+            locus = e.get('locus', 'refsec')
+            edges.append({'source_deposit': e['source_deposit'], 'source_axn': e['source_axn'],
+                          'target_bibkey': key, 'via': f'{locus}_entry', 'locus': locus,
+                          'relation': 'cites', 'ontic_status': st, 'raw': e['raw'][:300],
+                          'authors': pz.get('authors'), 'title': pz.get('title'),
+                          'venue': pz.get('venue'), 'year': pz.get('year'),
+                          'confidence': pz.get('confidence')})
             continue
+        if not bulk or e.get('status') != 'pending':
+            continue  # the score-threshold bulk pass runs only with --bulk; refsec_parse.py is the parser
         raw = e['raw']
         locus = e.get('locus', 'refsec')
         sc = score(raw)
@@ -133,7 +159,7 @@ def main():
     q['dateModified'] = now
     q['pending'] = sum(1 for e in q['entries'] if e.get('status') == 'pending')
     q['parsed'] = sum(1 for e in q['entries'] if e.get('status') == 'parsed')
-    q['triaged'] = sum(1 for e in q['entries'] if e.get('status') == 'triaged')
+    q['triaged'] = sum(1 for e in q['entries'] if e.get('status') not in ('parsed', 'pending'))
     qp.write_text(json.dumps(q, ensure_ascii=False, indent=1) + '\n')
 
     works['dateModified'] = now

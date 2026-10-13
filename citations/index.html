@@ -41,6 +41,25 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:6px}
 .pager button:disabled{opacity:0.4;cursor:default}
 .footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--border);font-size:0.78em;color:var(--dim)}
 .glyph{margin-top:8px;color:var(--accent)}
+.tabs{display:flex;gap:0;border-bottom:1px solid var(--border);margin-bottom:18px}
+.tab{padding:8px 16px;font-size:0.88em;cursor:pointer;color:var(--dim);border-bottom:2px solid transparent;margin-bottom:-1px;font-weight:500;background:none;border-top:0;border-left:0;border-right:0;font-family:var(--sans)}
+.tab.active{color:var(--accent);border-bottom-color:var(--teal)}
+.ow-head,.ow-row{display:grid;grid-template-columns:minmax(0,1fr) 64px 76px 64px;gap:10px;align-items:baseline}
+.ow-head{font-size:0.72em;text-transform:uppercase;letter-spacing:0.08em;color:var(--dim);padding:6px 10px;border-bottom:1px solid var(--border)}
+.ow-head span{cursor:pointer;user-select:none}.ow-head span:hover{color:var(--accent)}
+.ow-head span.on{color:var(--teal)}
+.ow-row{padding:8px 10px;border-bottom:1px solid #eee;font-size:0.86em;cursor:pointer;background:var(--surface)}
+.ow-row:hover{background:#f3f7f6}
+.ow-t{color:var(--fg);overflow-wrap:anywhere}.ow-a{color:var(--dim);font-size:0.92em}
+.ow-y,.ow-n{font-family:var(--mono);font-size:0.86em;text-align:right}.ow-n{color:var(--teal);font-weight:500}
+.ow-k{font-family:var(--mono);font-size:0.74em;color:var(--dim)}
+.ow-x{grid-column:1/-1;font-size:0.82em;color:#444;padding:6px 0 2px;display:none}
+.ow-row.open .ow-x{display:block}
+.ow-raw{font-family:var(--mono);font-size:0.9em;background:#f6f6f2;padding:6px 8px;border-radius:3px;margin:4px 0;white-space:pre-wrap;overflow-wrap:anywhere}
+.ow-x a{margin-right:6px}
+.note{font-size:0.8em;color:var(--dim);margin:-6px 0 14px}
+@media (max-width:560px){.ow-head,.ow-row{grid-template-columns:minmax(0,1fr) 48px 44px}.ow-k,.ow-head .hk{display:none}.ow-m{display:block}}
+.ow-m{display:none;font-size:0.76em;color:var(--dim);font-family:var(--mono)}
 </style>
 </head>
 <body>
@@ -50,16 +69,33 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:6px}
 <!-- NAV-END -->
 
 <h1>Citation Graph</h1>
-<div class="sub">Inter-deposit citation edges, grouped by citing deposit. Extracted via DOI, AXN, EA-* sovereign IDs, and #N references.</div>
+<div class="tabs" role="tablist">
+  <button class="tab active" id="tab-internal" data-tab="internal" role="tab">Deposit to deposit</button>
+  <button class="tab" id="tab-outside" data-tab="outside" role="tab">Works cited</button>
+</div>
 
+<section id="panel-internal">
+<div class="sub">Inter-deposit citation edges, grouped by citing deposit. Extracted via DOI, AXN, EA-* sovereign IDs, and #N references.</div>
 <div class="stats" id="stats"></div>
 <input class="search" id="search" placeholder="Search by AXN, title, deposit number, or via-type...">
 <div class="filter-btns" id="filters"></div>
 <div id="edges">Loading…</div>
 <div class="pager" id="pager"></div>
+</section>
+
+<section id="panel-outside" hidden>
+<div class="sub">One row per work the archive cites, outside itself: books, articles, DOIs, arXiv papers, ISBNs, outside links. Built from the parsed reference sections and the mechanically extracted identifiers. Parsing is heuristic; open a row to see the entry as written and the deposits that cite it.</div>
+<div class="stats" id="ow-stats"></div>
+<input class="search" id="ow-search" placeholder="Search author, title, venue, identifier, or entry text...">
+<div class="filter-btns" id="ow-filters"></div>
+<div class="note">Sort by clicking a column. <a href="/data/outside-works.json">JSON</a> · <a href="/data/outside-works.csv">CSV</a></div>
+<div class="ow-head" id="ow-head"><span data-s="title">Work</span><span class="hy" data-s="year" style="text-align:right">Year</span><span class="hk" data-s="kind">Kind</span><span data-s="n" style="text-align:right">Cited by</span></div>
+<div id="ow-rows">Loading…</div>
+<div class="pager" id="ow-pager"></div>
+</section>
 
 <div class="footer">
-  <div><strong>Alexanarch</strong> · Read from <a href="/data/citation-graph.json">data/citation-graph.json</a> · grouped by citing deposit · via-type filter</div>
+  <div><strong>Alexanarch</strong> · Deposit to deposit: <a href="/data/citation-graph.json">data/citation-graph.json</a> · Works cited: <a href="/data/outside-works.json">data/outside-works.json</a>, built by <code>scripts/build_outside_works.py</code> from <a href="/data/citation-graph-freeform.json">citation-graph-freeform.json</a> and <a href="/data/citation-graph-external.json">citation-graph-external.json</a></div>
   <div class="glyph">∮ = 1</div>
 </div>
 </div>
@@ -188,6 +224,97 @@ Promise.all([
   
   render();
 });
+</script>
+
+<script>
+(function(){
+  var KIND_LABEL = {book:'Books', article:'Articles', reference:'Other references', doi:'DOIs', arxiv:'arXiv', isbn:'ISBNs', zenodo:'Zenodo (outside)', web:'Web', platform:'Platform links', archive:"The archive's own"};
+  var WORK_KINDS = ['book','article','reference','doi','arxiv','isbn','zenodo','web'];
+  var loaded = false, works = [], active = 'works', sortKey = 'n', sortDir = -1, q = '', page = 0, PS = 50;
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function yr(w){ var m = String(w.year||'').match(/\d{3,4}/); return m ? +m[0] : null; }
+  function idLink(i){
+    var k = i.split(':')[0], v = i.slice(k.length+1);
+    if(k==='doi') return '<a href="https://doi.org/'+esc(v)+'" rel="noopener">doi:'+esc(v)+'</a>';
+    if(k==='arxiv') return '<a href="https://arxiv.org/abs/'+esc(v)+'" rel="noopener">arXiv:'+esc(v)+'</a>';
+    if(k==='url') return '<a href="https://'+esc(v)+'" rel="noopener">'+esc(v)+'</a>';
+    return esc(i);
+  }
+  function show(tab){
+    var o = tab==='outside';
+    document.getElementById('panel-outside').hidden = !o;
+    document.getElementById('panel-internal').hidden = o;
+    document.getElementById('tab-outside').classList.toggle('active', o);
+    document.getElementById('tab-internal').classList.toggle('active', !o);
+    if(o && !loaded){ loaded = true; load(); }
+  }
+  document.querySelectorAll('.tab').forEach(function(b){
+    b.addEventListener('click', function(){ var t = b.dataset.tab; history.replaceState(null,'', t==='outside' ? '#outside' : location.pathname); show(t); });
+  });
+  function pool(){
+    var p = works.filter(function(w){
+      if(active==='works') return WORK_KINDS.indexOf(w.kind)!==-1;
+      if(active==='all') return true;
+      return w.kind===active;
+    });
+    if(q){
+      var s = q.toLowerCase();
+      p = p.filter(function(w){ return [w.title,w.authors,w.venue,w.raw,(w.identifiers||[]).join(' '),w.year].join(' ').toLowerCase().indexOf(s)!==-1; });
+    }
+    var key = {
+      n: function(w){ return w.cited_by_count; },
+      year: function(w){ var y = yr(w); return y==null ? (sortDir>0 ? 1e9 : -1e9) : y; },
+      title: function(w){ return (w.authors||w.title||'').toLowerCase(); },
+      kind: function(w){ return w.kind; }
+    }[sortKey];
+    return p.slice().sort(function(a,b){ var x = key(a), y = key(b); return (x<y?-1:x>y?1:0)*sortDir || (b.cited_by_count-a.cited_by_count); });
+  }
+  function render(){
+    var p = pool(), tp = Math.max(1, Math.ceil(p.length/PS)); if(page>=tp) page = tp-1;
+    document.getElementById('ow-rows').innerHTML = p.slice(page*PS,(page+1)*PS).map(function(w){
+      var cites = w.cited_by.map(function(n){ return '<a href="/s/records/'+n+'/">#'+n+'</a>'; }).join(' ');
+      var own = w.deposit ? '<div>This is the archive\'s own work: <a href="/s/records/'+w.deposit+'/">#'+w.deposit+'</a></div>' : '';
+      return '<div class="ow-row"><div><div class="ow-t">'+esc(w.title||'(untitled)')+'</div>'+
+        (w.authors ? '<div class="ow-a">'+esc(w.authors)+(w.venue && w.kind!=='web' && w.kind!=='platform' ? ' · '+esc(w.venue) : '')+'</div>' : (w.venue && w.kind!=='web' && w.kind!=='platform' ? '<div class="ow-a">'+esc(w.venue)+'</div>' : ''))+
+        '<div class="ow-m">'+esc(w.kind)+'</div></div>'+
+        '<div class="ow-y">'+esc(w.year||'')+'</div><div class="ow-k">'+esc(w.kind)+'</div><div class="ow-n">'+w.cited_by_count+'</div>'+
+        '<div class="ow-x">'+(w.raw ? '<div class="ow-raw">'+esc(w.raw)+'</div>' : '')+own+
+        ((w.identifiers||[]).length ? '<div>'+w.identifiers.map(idLink).join(' ')+'</div>' : '')+
+        '<div>Cited by '+cites+'</div>'+(w.confidence!=null ? '<div style="color:var(--dim)">parse confidence '+w.confidence+'</div>' : '')+'</div></div>';
+    }).join('') || '<p style="color:var(--dim);padding:10px">No matches.</p>';
+    document.getElementById('ow-pager').innerHTML =
+      '<button id="ow-prev"'+(page<=0?' disabled':'')+'>← Previous</button>'+
+      '<span style="color:var(--dim)">Page '+(page+1)+' of '+tp+' · '+p.length.toLocaleString()+' works</span>'+
+      '<button id="ow-next"'+(page>=tp-1?' disabled':'')+'>Next →</button>';
+    document.getElementById('ow-prev').onclick = function(){ if(page>0){ page--; render(); document.getElementById('panel-outside').scrollIntoView(); } };
+    document.getElementById('ow-next').onclick = function(){ if(page<tp-1){ page++; render(); document.getElementById('panel-outside').scrollIntoView(); } };
+    document.querySelectorAll('#ow-head span').forEach(function(h){ h.classList.toggle('on', h.dataset.s===sortKey); });
+  }
+  function load(){
+    fetch('/data/outside-works.json').then(function(r){ return r.json(); }).then(function(d){
+      works = d.works || [];
+      var c = {}; works.forEach(function(w){ c[w.kind] = (c[w.kind]||0)+1; });
+      var nw = works.filter(function(w){ return WORK_KINDS.indexOf(w.kind)!==-1; });
+      var deps = {}; nw.forEach(function(w){ w.cited_by.forEach(function(n){ deps[n] = 1; }); });
+      document.getElementById('ow-stats').innerHTML =
+        '<div class="stat"><div class="stat-num">'+nw.length.toLocaleString()+'</div><div class="stat-label">Works cited</div></div>'+
+        '<div class="stat"><div class="stat-num">'+Object.keys(deps).length.toLocaleString()+'</div><div class="stat-label">Citing deposits</div></div>'+
+        '<div class="stat"><div class="stat-num">'+((c.book||0)+(c.article||0)).toLocaleString()+'</div><div class="stat-label">Books and articles</div></div>';
+      var f = '<div class="fbtn active" data-k="works">Works cited ('+nw.length+')</div>';
+      WORK_KINDS.concat(['archive','platform']).forEach(function(k){ if(c[k]) f += '<div class="fbtn" data-k="'+k+'">'+KIND_LABEL[k]+' ('+c[k]+')</div>'; });
+      f += '<div class="fbtn" data-k="all">Everything ('+works.length+')</div>';
+      var fe = document.getElementById('ow-filters'); fe.innerHTML = f;
+      fe.addEventListener('click', function(ev){ var b = ev.target; if(!b.dataset.k) return; active = b.dataset.k; page = 0;
+        fe.querySelectorAll('.fbtn').forEach(function(x){ x.classList.toggle('active', x===b); }); render(); });
+      render();
+    }).catch(function(){ document.getElementById('ow-rows').textContent = 'Could not load /data/outside-works.json.'; });
+  }
+  document.getElementById('ow-search').addEventListener('input', function(ev){ q = ev.target.value; page = 0; render(); });
+  document.getElementById('ow-head').addEventListener('click', function(ev){ var k = ev.target.dataset.s; if(!k) return;
+    if(sortKey===k) sortDir = -sortDir; else { sortKey = k; sortDir = (k==='n') ? -1 : 1; } page = 0; render(); });
+  document.getElementById('ow-rows').addEventListener('click', function(ev){ if(ev.target.closest('a')) return; var r = ev.target.closest('.ow-row'); if(r) r.classList.toggle('open'); });
+  if(location.hash==='#outside') show('outside');
+})();
 </script>
 
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
