@@ -13,6 +13,8 @@ Writes sitemap-doi.xml and data/doi-shadow-urls.json. Idempotent. --check verifi
 """
 import json, re, sys, html, pathlib, datetime
 ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "scripts"))
+import axn_derivation as _axd   # axn/v2.2 record_dimensions
 BASE = "https://www.alexanarch.org"
 SEVERED = "2026-06-19"
 CSS = """<style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");:root{--bg:#fafafa;--fg:#1a1a1a;--accent:#1a3a5c;--teal:#0a7c6a;--mono:"IBM Plex Mono",monospace;--sans:"IBM Plex Sans",sans-serif}body{font-family:var(--sans);background:var(--bg);color:var(--fg);margin:0}.wrap{max-width:760px;margin:0 auto;padding:28px 16px}h1{font-size:1.25em;color:var(--accent);line-height:1.3}.m{font-family:var(--mono);font-size:.82em}.box{border:1px solid #ddd;padding:14px 16px;margin:16px 0;background:#fff}.auth{border-left:4px solid var(--teal)}.dead{border-left:4px solid #b23}dt{font-weight:600;margin-top:8px}dd{margin:2px 0 0 0}a{color:var(--accent)}</style>"""
@@ -50,16 +52,27 @@ def main():
         hexid = (d.get('hex') or d['axn'].split(':')[1].split('.')[0])
         ld = {"@context": "https://schema.org", "@type": "WebPage", "@id": can, "url": can,
               "name": f"DOI {doi} — severed {SEVERED}; the work is at Crimson Hexagonal Archive #{n}",
-              "description": (f"{doi} was the DOI of \"{title}\"" if same else f"{doi} is recorded in relation to \"{title}\"") + f". Status since {SEVERED}: {st_desc}. The record continues at {rec} under the content-derived identifier {d['axn']}, which is authoritative." + (" Membership: probable." if prob else ""),
+              "description": (f"{doi} was the DOI of \"{title}\"" if same else f"{doi} is recorded in relation to \"{title}\"") + f". Status since {SEVERED}: {st_desc}." + (f" The record continues at {rec} under the identifier {d['axn']}, which is authoritative ({_axd.short_phrase(d)})." if d.get('mint_derivation') else f" The record continues at {rec} under the content-derived identifier {d['axn']}, which is authoritative.") + (" Membership: probable." if prob else ""),
               "mainEntity": {"@type": "ScholarlyArticle", "@id": rec, "name": title, "url": rec,
                   "author": {"@type": "Person", "name": d.get('creator') or 'Lee Sharks'},
                   "datePublished": d.get('date'),
                   "identifier": [
-                      {"@type": "PropertyValue", "propertyID": "AXN", "value": d['axn'], "url": f"{BASE}/s/axn/{hexid}/", "description": "authoritative identifier; content-derived; resolves"},
+                      {"@type": "PropertyValue", "propertyID": "AXN", "value": d['axn'], "url": f"{BASE}/s/axn/{hexid}/", "description": _axd.ld_description(d)},
                       {"@type": "PropertyValue", "propertyID": "DOI", "value": doi, "url": f"https://doi.org/{doi}", "description": f"former identifier; {st_desc} since {SEVERED}; superseded by the AXN"}],
+                  **({"subjectOf": _axd.ld_swhid_property(d)} if _axd.ld_swhid_property(d) else {}),
                   "sameAs": [f"https://doi.org/{doi}"],
                   "isAccessibleForFree": True, "license": "https://creativecommons.org/licenses/by/4.0/"},
               "isPartOf": {"@type": "WebSite", "name": "Alexanarch — Crimson Hexagonal Archive", "url": BASE + "/"}}
+        _md = d.get('mint_derivation') or {}
+        _cur = (d.get('manifestations') or {}).get('current') or {}
+        if _md.get('status') == _axd.STATUS_UNRETAINED:
+            _host_line = (f"The AXN was established {esc((d.get('founding_event') or {}).get('date','2026-06-20'))} in the batch that followed the deletion; its mint input was not retained. "
+                          f"The bytes the record serves are identified independently of any host: SHA-256 <span class=\"m\">{esc(_cur.get('sha256'))}</span>"
+                          + (f", SWHID <span class=\"m\">{esc(_cur.get('swhid'))}</span>" if _cur.get('swhid') else "") + ".")
+        elif _md.get('status') == _axd.STATUS_VERIFIES_RETAINED:
+            _host_line = "The AXN is derived from bytes the archive retains (an earlier manifestation) and does not depend on any host; the served bytes carry their own SHA-256 and SWHID."
+        else:
+            _host_line = "The AXN is derived from the work’s own bytes and does not depend on any host."
         body = f"""<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>DOI {esc(doi)} — {st_short} {SEVERED}; {'the work is at' if same else 'see'} record #{n}, {esc(d['axn'])} · Alexanarch</title>
 <meta name="description" content="{esc(doi)} {'was the DOI of' if same else 'is recorded in relation to'} “{esc(title)}”. Since {SEVERED}: {esc(st_desc)}. The record continues at Crimson Hexagonal Archive record #{n} under the authoritative identifier {esc(d['axn'])}.">
@@ -75,7 +88,7 @@ def main():
 <p>This DOI {rel_html}. Since {SEVERED}, <a href="https://doi.org/{esc(doi)}" rel="nofollow">{st_long}</a>. {'<strong>The work was not withdrawn by its author and has not changed.</strong> It continues here:' if same else 'The record it relates to is here:'}{' <em>(archive membership: probable — see the resolution index for the evidence)</em>' if prob else ''}</p>
 <div class="box auth"><dl><dt>Authoritative identifier</dt><dd class="m">{esc(d['axn'])}</dd><dt>Record</dt><dd><a href="{rec}">{rec}</a></dd><dt>Resolver</dt><dd><a href="/s/axn/{esc(hexid)}/" class="m">/s/axn/{esc(hexid)}/</a></dd><dt>Full text</dt><dd><a href="{rec}">canonical text at the record</a> · <a href="/papers/AXN-{esc(hexid)}.pdf">PDF</a></dd></dl></div>
 <div class="box dead"><dl><dt>Former identifier</dt><dd class="m">{esc(doi)}</dd><dt>Status</dt><dd>{st_short} {SEVERED} by the registrant (Zenodo), without notice, in a purge of 1,322,017 records; {esc(st_desc)}; verified {esc(e.get('last_verified') or '2026-07-12')}. Documented in <a href="/s/records/1/">Zenodotus’ Book-Burning (#1)</a>; mapped in the <a href="/data/doi-resolution-index.json">DOI Resolution Index</a>.</dd></dl></div>
-<p>If you arrived here holding the DOI: {'cite the record above' if same else 'the record above is the archive\'s nearest holding for it'}. The AXN is derived from the work’s own bytes and does not depend on any host.</p>
+<p>If you arrived here holding the DOI: {'cite the record above' if same else 'the record above is the archive\'s nearest holding for it'}. {_host_line}</p>
 <p class="m">∮ = 1 · <a href="/s/browse/">all deposits</a></p></div>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></body></html>
 """

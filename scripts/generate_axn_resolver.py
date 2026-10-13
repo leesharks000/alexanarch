@@ -23,6 +23,9 @@ s/axn/index.html (the DefinedTermSet), api/axn-index.json (machine map),
 sitemap-axn.xml. Idempotent; called by regenerate_surfaces.py so every mint
 refreshes resolution automatically.
 """
+import sys as _sys_axd, pathlib as _pl_axd
+_sys_axd.path.insert(0, str(_pl_axd.Path(__file__).resolve().parent))
+import axn_derivation as _axd
 import json, os, html
 from collections import defaultdict
 from pathlib import Path
@@ -45,6 +48,25 @@ def main():
             parts = str(e['axn']).split('.')
             family = parts[1] if len(parts) > 2 else ''
             glyphs = parts[-1] if len(parts) > 2 else ''
+            # axn/v2.2 record_dimensions: a record whose mint input was not retained is not described
+            # as derived from its served text; the stored hash, its status and the served bytes are shown apart.
+            _md = e.get('mint_derivation') or {}
+            _cur = (e.get('manifestations') or {}).get('current') or {}
+            _fe = e.get('founding_event') or {}
+            if _md.get('status') == _axd.STATUS_UNRETAINED:
+                _desc = (f"AXN {hx} is the identifier of Alexanarch deposit #{n}, established {_fe.get('date','2026-06-20')} in the "
+                         f"batch assignment that followed the 2026-06-19 deletion. Its mint input was not retained, so the six-glyph "
+                         f"suffix (a display hash of the stored SHA-256) cannot be re-derived from bytes the archive holds; the "
+                         f"record's served bytes carry their own SHA-256 and SWHID. Family: {family}.")
+            elif _md.get('status') == _axd.STATUS_VERIFIES_RETAINED:
+                _desc = (f"AXN {hx} is the identifier of Alexanarch deposit #{n}, derived from an earlier manifestation of the "
+                         f"record that the archive retains; the served bytes have changed since and carry their own SHA-256 and "
+                         f"SWHID. Family: {family}.")
+            else:
+                _desc = (f"AXN {hx} is the content-derived identifier of Alexanarch deposit "
+                         f"#{n}. The hex marks position in the archive; the six-glyph suffix is "
+                         f"a display hash of the canonical text's SHA-256, so the identifier is "
+                         f"derived from the work rather than assigned to it. Family: {family}.")
             ld_obj = {
                 "@context": "https://schema.org",
                 "@type": "DefinedTerm",
@@ -64,16 +86,19 @@ def main():
                     "name": "AXN — Alexanarch content-derived identifiers",
                     "url": "https://www.alexanarch.org/s/axn/",
                 },
-                "description": (
-                    f"AXN {hx} is the content-derived identifier of Alexanarch deposit "
-                    f"#{n}. The hex marks position in the archive; the six-glyph suffix is "
-                    f"a display hash of the canonical text's SHA-256, so the identifier is "
-                    f"derived from the work rather than assigned to it. Family: {family}."),
+                "description": _desc,
                 "about": {"@type": "ScholarlyArticle", "@id": url, "url": url,
                           "name": e.get('title', '')},
                 "subjectOf": {"@type": "WebPage", "@id": url, "url": url},
                 "sameAs": [url],
             }
+            if _md:
+                ld_obj["identifier"][2]["description"] = f"stored mint hash; {_md.get('status','')}"
+                _swp = _axd.ld_swhid_property(e)
+                if _swp: ld_obj["identifier"].append(_swp)
+                if _cur.get('sha256'):
+                    ld_obj["identifier"].append({"@type": "PropertyValue", "propertyID": "sha256-served",
+                                                 "value": _cur['sha256'], "description": "SHA-256 of the bytes the record serves"})
             if family:
                 ld_obj["termCode"] = e['axn']
                 ld_obj["additionalProperty"] = [
@@ -81,25 +106,37 @@ def main():
                     {"@type": "PropertyValue", "name": "glyph_hash", "value": glyphs},
                 ]
             ld = json.dumps(ld_obj, ensure_ascii=False)
+            _meta = f'<meta name="description" content="AXN {hx} — content-derived identifier of Alexanarch deposit #{n}. Hex position {hx}; family {html.escape(family)}; six-glyph display hash of the canonical text SHA-256.">'
+            if _md and _md.get('status') != _axd.STATUS_VERIFIES_SERVED:
+                _meta = f'<meta name="description" content="{html.escape(_desc)}">'
+                _intro = f'<p>{html.escape(_desc).replace(f"#{n}", f"<a href=\"{url}\">#{n}</a>", 1)}</p>'
+                _sw = _cur.get('swhid') or ''
+                _hashrows = (f"<dt>Stored hash (mint)</dt><dd><code>{e.get('hash','')}</code> &mdash; {html.escape(_md.get('status','').replace('_',' '))}</dd>"
+                             f"<dt>Served bytes SHA-256</dt><dd><code>{_cur.get('sha256','')}</code></dd>"
+                             + (f"<dt>SWHID</dt><dd><code>{html.escape(_sw)}</code>" + (" (held by Software Heritage)" if _cur.get('swh_known') else " (computed)") + "</dd>" if _sw else "")
+                             + "<dt>Derivation ledger</dt><dd><a href=\"/data/axn-derivation-ledger.json\">/data/axn-derivation-ledger.json</a></dd>")
+            else:
+                _intro = (f'<p><strong>AXN {hx}</strong> is the content-derived identifier of Alexanarch deposit\n'
+                          f'<a href="{url}">#{n}</a>. It is an identifier, not a copy of the work: the hex marks\n'
+                          f'position in the archive, and the six-glyph suffix is a display hash of the canonical\n'
+                          f'text&rsquo;s SHA-256, so the identifier is derived from the work rather than assigned to it.</p>')
+                _hashrows = f"<dt>Canonical-text SHA-256</dt><dd><code>{e.get('hash','')}</code></dd>"
             (d/'index.html').write_text(f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <title>{html.escape(e['axn'])} — Alexanarch AXN resolver</title>
 <link rel="canonical" href="{axn_url}">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
-<meta name="description" content="AXN {hx} — content-derived identifier of Alexanarch deposit #{n}. Hex position {hx}; family {html.escape(family)}; six-glyph display hash of the canonical text SHA-256.">
+{_meta}
 <script type="application/ld+json">{ld}</script>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></head><body>
 <h1>{html.escape(e['axn'])}</h1>
-<p><strong>AXN {hx}</strong> is the content-derived identifier of Alexanarch deposit
-<a href="{url}">#{n}</a>. It is an identifier, not a copy of the work: the hex marks
-position in the archive, and the six-glyph suffix is a display hash of the canonical
-text&rsquo;s SHA-256, so the identifier is derived from the work rather than assigned to it.</p>
+{_intro}
 <dl>
 <dt>Identifies</dt><dd><a href="{url}">{html.escape(e.get('title','') or ('Deposit #' + str(n)))}</a></dd>
 <dt>Hex position</dt><dd><code>{hx}</code></dd>
 <dt>Family</dt><dd><code>{html.escape(family) or '&mdash;'}</code></dd>
 <dt>Glyph hash</dt><dd>{html.escape(glyphs)}</dd>
-<dt>Canonical-text SHA-256</dt><dd><code>{e.get('hash','')}</code></dd>
+{_hashrows}
 <dt>Record</dt><dd><a href="{url}">{url}</a></dd>
 </dl>
 <p>Resolver rule: <code>alexanarch.org/axn/&lt;HEX&gt;</code> &middot;

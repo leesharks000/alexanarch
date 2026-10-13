@@ -13,6 +13,7 @@ _sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), 
 from record_state import derive_state   # single canonical state; see scripts/record_state.py
 from scripts.render_navbar import render_navbar
 from scripts.glyph_aria import axn_aria_label as _axn_aria
+import axn_derivation as _axd   # AXN protocol v2.2 record_dimensions: how one record's AXN may be described
 
 # --- EA-RETRIEVAL-DENSITY-01 Task 6 ---
 _DOI_INDEX_CACHE = None
@@ -1064,12 +1065,17 @@ def regenerate_static_page(d, eidx, registry=None):
         }
     _didx = _load_doi_index()
     _dois = _didx.get(d.get('axn', ''), []) or _didx.get((hex_id or '').upper(), [])
-    if _dois:
-        _ld["sameAs"] = _dois
+    if _dois or d.get('mint_derivation'):
+        if _dois: _ld["sameAs"] = _dois
         # 2026-09-04: a composer that reaches this page while holding the old DOI must not read the
         # DOI as canonical. Declare the AXN authoritative and each DOI former and severed, in-band.
+        # 2026-10-13 (axn/v2.2): the AXN's description is read from the record's mint_derivation, so a
+        # batch AXN whose mint input was not retained is not called content-derived; the served bytes'
+        # SWHID travels beside it.
         _ids = [{"@type": "PropertyValue", "propertyID": "AXN", "value": d.get('axn'), "url": f"https://www.alexanarch.org/s/axn/{hex_id}/",
-                 "description": "authoritative identifier; content-derived; resolves"}]
+                 "description": _axd.ld_description(d)}]
+        _swp = _axd.ld_swhid_property(d)
+        if _swp: _ids.append(_swp)
         for _u in _dois:
             _doi = _u.replace('https://doi.org/', '')
             _ids.append({"@type": "PropertyValue", "propertyID": "DOI", "value": _doi, "url": _u,
@@ -1164,11 +1170,11 @@ def regenerate_static_page(d, eidx, registry=None):
         _bases = [f"https://www.alexanarch.org/s/records/{e['to']}/" for e in (_pr.get('backward') or []) if e.get('k') == 'inherits' and isinstance(e.get('to'), int)]
         if _bases: _ld['isBasedOn'] = _bases
     _ident_html = ''
-    if _dois:
+    if _dois or d.get('mint_derivation'):
         _rows = ''.join(f'<div><span style="color:#b23">former DOI</span> <span class="m" style="font-family:var(--mono);font-size:.85em">{esc(_u.replace("https://doi.org/",""))}</span> — severed 2026-06-19 by the registrant; {esc(_doi_state(_u.replace("https://doi.org/","")))}; <a href="/s/doi/{esc(_u.replace("https://doi.org/",""))}/" style="color:var(--accent)">resolution page</a></div>' for _u in _dois)
         _ident_html = (f'<div style="border-left:4px solid var(--teal);background:#fff;padding:8px 12px;margin:10px 0;font-size:.86em">'
-                       f'<div><strong>Authoritative identifier:</strong> <span style="font-family:var(--mono);font-size:.9em">{esc(d.get("axn"))}</span> — content-derived; resolves at <a href="/s/axn/{esc(hex_id)}/" style="color:var(--accent)">/s/axn/{esc(hex_id)}/</a>. Cite this record by AXN and URL.</div>'
-                       f'{_rows}</div>')
+                       f'<div><strong>Authoritative identifier:</strong> <span style="font-family:var(--mono);font-size:.9em">{esc(d.get("axn"))}</span> — {esc(_axd.short_phrase(d))}; resolves at <a href="/s/axn/{esc(hex_id)}/" style="color:var(--accent)">/s/axn/{esc(hex_id)}/</a>. Cite this record by AXN and URL.</div>'
+                       f'{_axd.html_bytes_line(d, esc)}{_rows}</div>')
     _search_html = search_this_title_html(d, len(_caps or []))
     # Authorship block (MANUS ruling 2026-10-12): the record carries the same three facts as the
     # heteronym's /who/ authority record — heteronymic identity, deposit accountability, relation —

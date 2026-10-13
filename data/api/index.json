@@ -4,7 +4,7 @@
   "title": "Alexanarch Protocol Index",
   "purpose": "Central machine-readable catalog of all Alexanarch protocols, schemas, and data registries. Single source of truth — every other document (AGENTS.md, DEPOSIT-FLOW.md, scripts, workflows) MUST pull from this index, not duplicate it. If this file disagrees with any other surface, this file wins and the other surface is wrong.",
   "index_version": "v1.1",
-  "last_updated": "2026-10-12",
+  "last_updated": "2026-10-13",
   "operator_directive": {
     "for_new_instances": [
       "STOP before any action.",
@@ -67,7 +67,7 @@
       "current_version": "axn/v2",
       "schema_version": "2026-06-22-axn-v2",
       "canonical_path": "/api/axn-protocol.json",
-      "content_sha256": "47af12f7b9bdf06f92795e13acf8e529fb0bdc66c018a6d12b6824adf6924dc4",
+      "content_sha256": "fd3e988e08494d61f52c12ce3815886a4aa31071af3ce8ae5332963d67e43e91",
       "governs": "AXN format, AXN_GLYPHS table (256 entries), CLUSTERS table (256 entries), generation algorithm, legacy resolution (v1 → v2), substrate-chosen glyph preservation in glyphic_canary, recognition-vs-identity principle.",
       "depends_on": [],
       "referenced_by": [
@@ -84,7 +84,7 @@
       "canonical_implementations": {
         "python": "scripts/axn_lib.py"
       },
-      "last_updated": "2026-08-15"
+      "last_updated": "2026-10-13"
     },
     "enrichment": {
       "name": "enrichment",
@@ -550,6 +550,13 @@
       "date": "2026-08-27",
       "changes": [
         "Updated protocol 'deposit-completeness': EVID-001 advisory removed from the contract alongside its removal from the gate"
+      ]
+    },
+    {
+      "index_version": "v1.1",
+      "date": "2026-10-13",
+      "changes": [
+        "Updated protocol 'axn': axn/v2.2: record_dimensions (mint_derivation, founding_event, manifestations), applied to the 2026-06-20 batch"
       ]
     }
   ],

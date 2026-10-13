@@ -5,7 +5,7 @@
   "protocol_name": "axn",
   "protocol_version": "axn/v2",
   "schema_version": "2026-06-22-axn-v2",
-  "last_updated": "2026-08-14",
+  "last_updated": "2026-10-13",
   "summary": "Canonical specification of the AXN (Alexanarch Identifier) format, generation algorithm, glyph table, cluster table, family enum, validation rules, and legacy resolution. Any code that generates, validates, parses, or resolves AXNs must be derivable from this document. The canonical Python implementation is scripts/axn_lib.py. The canonical JavaScript implementation is embedded in .github/workflows/mint-axn.yml. Both must agree with this protocol.",
   "canonical_implementations": {
     "python": "scripts/axn_lib.py",
@@ -116,6 +116,16 @@
   ],
   "change_log": [
     {
+      "version": "axn/v2.2",
+      "date": "2026-10-13",
+      "changes": [
+        "record_dimensions added: mint_derivation / founding_event / manifestations as independent fields (MANUS ruling 2026-10-13, reviewer corrections adopted).",
+        "Applied to the 2026-06-20 batch: 858 registered records; 841 unverified_input_not_retained, 16 verifies_against_served_bytes, 1 verifies_against_retained_bytes; 13 assignments never registered are listed in the ledger.",
+        "Ledger /data/axn-derivation-ledger.json built by scripts/build_axn_derivation_ledger.py; renderers read scripts/axn_derivation.py.",
+        "No AXN, hash or canonical text changed."
+      ]
+    },
+    {
       "version": "axn/v2.1",
       "date": "2026-08-14",
       "changes": [
@@ -144,6 +154,35 @@
     "axn_version": "immutable version relation — AXN:<hex>.<FAMILY>.<glyph>, one edition",
     "record_number": "local presentation address",
     "minting_is_once": "An AXN version is minted ONCE, at deposit, and does NOT move when the record is later updated. It names the edition that was minted. A registry hash that no longer matches its file therefore indicates CONTENT DRIFT — the file has changed since minting — and not a broken identifier. Content that has genuinely changed should become a new version with its own AXN, not a silent re-derivation of the existing one.",
-    "known_gap": "axn_root is currently composed from the per-deposit hex, so it is NOT yet stable across editions of one work as the invariant requires. Two editions of the same work today carry different roots. Implementing a genuinely stable work relation is open work, not a new identifier type."
+    "known_gap": "axn_root is currently composed from the per-deposit hex, so it is NOT yet stable across editions of one work as the invariant requires. Two editions of the same work today carry different roots. Implementing a genuinely stable work relation is open work, not a new identifier type.",
+    "record_dimensions": "See record_dimensions (axn/v2.2): mint derivation, founding event and manifestation history are recorded separately, so an AXN can persist without the record overstating what its hash witnesses."
+  },
+  "record_dimensions": {
+    "ruling": "MANUS, 2026-10-13: \"lets go ahead and adopt the solution for those batched axns\" — first applied to the 2026-06-20 batch (858 registered records), with the reviewer corrections of the same day.",
+    "principle": "A record's AXN, the act that established it, and the bytes the record has held are three different facts, recorded in three independent fields. No AXN, hash or text is changed by recording them.",
+    "mint_derivation": {
+      "fields": "hash (the stored registry hash, unchanged), status, verified_against, input_retained, recipe, checked",
+      "status": {
+        "verifies_against_served_bytes": "the stored hash equals the SHA-256 of the file served now",
+        "verifies_against_retained_bytes": "the stored hash equals the SHA-256 of an earlier manifestation held in git",
+        "unverified_input_not_retained": "no bytes this archive holds hash to the stored value; the derivation cannot be re-checked, and the record says so"
+      },
+      "rule": "A hash's preimage is bytes. No retained body is described as the preimage unless it hashes to the stored value. Recording this dimension cannot repair an unreproduced hash; it states the limit and the verification walk ends at the first retained manifestation."
+    },
+    "founding_event": {
+      "fields": "date, kind, basis, upstream_deletion, sovereign_id, batch_axn, batch_hash, batch_axn_current, batch_derivation, former_doi_count (full list in the ledger), attestation, superseded_by_restoration_mint (where a restoration recomposed the AXN)",
+      "rule": "The founding event records the act under which the AXN was established. An operator attestation about that act is kept as attestation, never as derivation evidence."
+    },
+    "manifestations": {
+      "fields": "ledger pointer, count, first_retained, current {path, sha256, swhid, swh_known, swh_checked, observed}, unaccounted_byte_differences; the full chain (placeholder, first retained canonical body, later bodies, each with commit, date, sha256, swhid, swh_known, commit_subject) lives in /data/axn-derivation-ledger.json",
+      "rules": [
+        "∅ before a first retained canonical body means: no canonical body was seated in this archive at the preceding recorded state. It asserts nothing about the work or about an old hash's input.",
+        "A body that differs from the preceding manifestation is an unaccounted_byte_difference. A cause is named only where a commit or ledger entry states it; the commit subject is carried as what the commit said.",
+        "A byte change does not establish that two bodies are the same edition: same_edition is 'undetermined' unless an editorial determination, with its reason, is recorded.",
+        "A SWHID is computed from bytes; swh_known records separately, and dated, whether Software Heritage holds them."
+      ]
+    },
+    "surfaces": "A renderer describing one record's AXN reads scripts/axn_derivation.py: where mint_derivation.status is unverified_input_not_retained, the AXN is not called content-derived; the served bytes' SHA-256 and SWHID are given beside it, and JSON-LD carries a SWHID PropertyValue.",
+    "unchanged": "AXN format, generation algorithm for new mints, legacy resolution, and the 2026-09-18 redaction rule (a redaction re-derives the AXN and records the prior hash) stand as before. The record_dimensions model is applied to the 2026-06-20 batch; extending it to other records is a separate ruling."
   }
 }
