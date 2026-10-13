@@ -3,17 +3,17 @@
   "name": "Concept Map — work-level identity and current-version resolution",
   "description": "Restores the concept-identifier function lost with the terminated Zenodo account. Alexanarch mints a fresh hex per deposit, so every version of a work is an independent object with no link to its siblings; a reader arriving at an old version cannot learn that a newer one exists. Each concept here names a work and points at its current version. Programme families — distinct works sharing an identifier — are listed separately and carry no version pointer, because conflating the two would resolve one work to another. Every family records the basis on which it was detected so any confidence tier can be discarded independently.",
   "generated_by": "scripts/build_concept_map.py",
-  "generated_at": "2026-10-13T19:34:58Z",
+  "generated_at": "2026-10-13T21:51:32Z",
   "totals": {
-    "deposits": 1679,
-    "concepts": 95,
-    "deposits_in_concepts": 227,
-    "singletons": 1452,
+    "deposits": 1680,
+    "concepts": 96,
+    "deposits_in_concepts": 229,
+    "singletons": 1451,
     "needs_review": 15,
     "program_families": 53
   },
   "basis_counts": {
-    "version/declared": 38,
+    "version/declared": 39,
     "version/implicit": 37,
     "version/explicit": 6,
     "version/superseded": 2,
@@ -1557,6 +1557,49 @@
           "superseded_marker": false,
           "is_current": true,
           "record_url": "https://www.alexanarch.org/s/records/578/"
+        }
+      ]
+    },
+    {
+      "concept_id": "ea-mpai-alexanarch-01",
+      "concept_url": "https://www.alexanarch.org/s/concept/ea-mpai-alexanarch-01/",
+      "title_base": "the living academy alexanarch function by function mantle object with metadata packet for ai indexing",
+      "basis": "version/declared",
+      "version_series_id": "ea-mpai-alexanarch-01",
+      "root_axn_hex": "06F4",
+      "ea_identifiers": [
+        "EA-MPAI-ALEXANARCH-01"
+      ],
+      "member_count": 2,
+      "needs_review": false,
+      "current": {
+        "deposit_number": 1680,
+        "axn": "AXN:06F6.MPAI.🙏🥁💛🏴🌆🔅",
+        "title": "The Living Academy: Alexanarch, Function by Function — Mantle object with Metadata Packet for AI Indexing (EA-MPAI-ALEXANARCH-01 v0.5)",
+        "date": "2026-10-13",
+        "version": "0.5",
+        "record_url": "https://www.alexanarch.org/s/records/1680/"
+      },
+      "versions": [
+        {
+          "deposit_number": 1678,
+          "axn": "AXN:06F4.MPAI.🐝🪄🔆🕚□🌿",
+          "title": "The Living Academy: Alexanarch, Function by Function — Mantle object with Metadata Packet for AI Indexing (EA-MPAI-ALEXANARCH-01 v0.4)",
+          "date": "2026-10-13",
+          "version": "0.4",
+          "superseded_marker": true,
+          "is_current": false,
+          "record_url": "https://www.alexanarch.org/s/records/1678/"
+        },
+        {
+          "deposit_number": 1680,
+          "axn": "AXN:06F6.MPAI.🙏🥁💛🏴🌆🔅",
+          "title": "The Living Academy: Alexanarch, Function by Function — Mantle object with Metadata Packet for AI Indexing (EA-MPAI-ALEXANARCH-01 v0.5)",
+          "date": "2026-10-13",
+          "version": "0.5",
+          "superseded_marker": false,
+          "is_current": true,
+          "record_url": "https://www.alexanarch.org/s/records/1680/"
         }
       ]
     },

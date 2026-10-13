@@ -630,13 +630,13 @@
    "evidence_boundary": "A registry entry establishes a listed object. It does not by itself establish peer review, complete text, originality or correctness; \"undeclared\" means the field is absent, not that the artifact is missing. Founded 2026-06-19; one operator; no external peer review of deposits.",
    "measured": {
     "deposits": {
-     "value": 1679,
+     "value": 1680,
      "source": "/data/registry.json"
     },
     "by_status": {
      "value": {
       "ACTIVE": 1464,
-      "SUPERSEDED": 195,
+      "SUPERSEDED": 196,
       "DRAFT": 4,
       "PRESERVED_AS_HISTORICAL_SEED": 1,
       "CANONICAL": 5,
@@ -652,7 +652,7 @@
       "attachment_only": 1,
       "metadata_only": 56,
       "SEATED": 1,
-      "undeclared": 261
+      "undeclared": 262
      },
      "source": "/data/registry.json canonical_text_status"
     }
@@ -759,11 +759,11 @@
    "evidence_boundary": "A generated wiki article is a library view, not independent corroboration. Encyclopedia coverage of the world is not the unit of a per-deposit reading interface. Search accuracy is untested until a sample is run.",
    "measured": {
     "record_pages": {
-     "value": 1679,
+     "value": 1680,
      "source": "/s/records/"
     },
     "wiki_entries": {
-     "value": 1679,
+     "value": 1680,
      "source": "registry wiki_article"
     }
    },
@@ -780,11 +780,11 @@
    "evidence_boundary": "Entry counts are counts of a local index. They do not establish recognized discoveries, novelty or consensus; priority beyond the archive's own dates is an assertion.",
    "measured": {
     "lexical_entries": {
-     "value": 12876,
+     "value": 12879,
      "source": "/data/lexical-minting-registry.json terms[]"
     },
     "terms_minted": {
-     "value": 3199,
+     "value": 3202,
      "source": "/api/counts.json"
     },
     "concepts": {
@@ -805,7 +805,7 @@
    "evidence_boundary": "11,506 extracted internal edges are not 11,506 independent citations. A shared creator, a mirrored text, a thematic match, an extracted reference string and an evidentiary citation are different edges.",
    "measured": {
     "internal_edges": {
-     "value": 11651,
+     "value": 11734,
      "source": "/data/citation-graph.json"
     },
     "external_edges": {
@@ -920,7 +920,7 @@
    "evidence_boundary": "OAI lists `oai_dc` only, and an `oai_dc` record carries the URL and AXN but not the record's SWHID or former DOIs, which the registry holds. ResourceSync is present; full conformance is not certified here. Hosting a dataset does not show inclusion in any model or discovery graph.",
    "measured": {
     "oai_exposed": {
-     "value": 1618,
+     "value": 1619,
      "source": "/oai (completeListSize)",
      "check": "ListIdentifiers metadataPrefix=oai_dc"
     },
@@ -1040,11 +1040,11 @@
    "evidence_boundary": "A proposal is evaluated as a proposal and an empirical claim against data; poetry does not prove a theorem and metadata does not prove an argument. Little external citation so far; no peer-reviewed venue publication recorded in the registry.",
    "measured": {
     "defining_concepts": {
-     "value": 736,
+     "value": 737,
      "source": "registry defines_concepts"
     },
     "falsification_conditions": {
-     "value": 336,
+     "value": 337,
      "source": "registry falsification_conditions"
     },
     "lines_of_work": {
@@ -1098,7 +1098,7 @@
    "evidence_boundary": "Not yet reproduced by an outside party; no outside adoption recorded. Fleet links do not show common ownership, endorsement or independent corroboration.",
    "measured": {
     "internal_edges": {
-     "value": 11651,
+     "value": 11734,
      "source": "/data/citation-graph.json"
     },
     "registry_head": {
@@ -1141,7 +1141,7 @@
   {
    "surface": "/api/network.json",
    "header": 1091,
-   "data": 1679,
+   "data": 1680,
    "note": "stated deposit count vs registry"
   },
   {
