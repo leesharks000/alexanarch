@@ -17,8 +17,10 @@ sys.path.insert(0, str(HERE.parent)); sys.path.insert(0, str(ROOT))
 from _chatgpt_common_20261008 import parse, cite_list
 
 D = "2026-10-14"
-CG_AUTH, CG_AUTHB = "signed out", "Not stated in the operator's message of 15:48 EDT; the paste shows the unauthenticated chatgpt.com interface ('Log in'). Incognito not stated."
-AIO_AUTH, AIO_AUTHB = "undetermined", "Not stated in the operator's message of 15:48 EDT, and the paste carries no sign-in marker."
+# Seated at 15:48 as 'signed out' / 'undetermined'; corrected in the registry at 16:05 on the operator's ruling (repair commit of the same day):
+# 'theyre all signed out and incognito. that is the rule rather than the exception, and i will say otherwise if otherwise.'
+CG_AUTH = AIO_AUTH = "incognito, signed out"
+CG_AUTHB = AIO_AUTHB = "Operator, 2026-10-14 16:05 EDT: 'theyre all signed out and incognito. that is the rule rather than the exception, and i will say otherwise if otherwise.'"
 CG_BASIS = "The paste: the chatgpt.com unauthenticated interface ('Log in', 'You said:', 'ChatGPT said:', 'Chat with ChatGPT')."
 AIO_BASIS = ("Surface not stated; the standing default applies (operator, 2026-10-01: 'assume they do [start in overview], i will specify if they "
              "begin in ai mode'). The 'AI Mode Conversation' header is the expanded Overview's residue (rule of 2026-09-21).")
@@ -44,7 +46,7 @@ def common(q, slug, surface, s, orig, rel, priors):
 
 
 def cg_transcript(q, answers, blank_after_first=False, extra=""):
-    parts = [f"[ChatGPT (chatgpt.com), signed out, 2026-10-14. {len(answers)} answer{'s' if len(answers) > 1 else ''}. Source chips inline as [chip: site +N]; "
+    parts = [f"[ChatGPT (chatgpt.com), signed out, incognito, 2026-10-14. {len(answers)} answer{'s' if len(answers) > 1 else ''}. Source chips inline as [chip: site +N]; "
              f"image-card captions as [image card: …]{extra}; the sign-in furniture cut.]", ""]
     for i, a in enumerate(answers, 1):
         if i == 1:
