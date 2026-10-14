@@ -37,7 +37,7 @@
   "_record_pages": "Ruled 2026-10-01 (Lee Sharks, option b): the record page captures/{slug}/ is the citation. Until then a capture was cited at captures/#{slug}, an anchor in one page past 8 MB; a fetcher drops the fragment, requests the whole page, and the fetch interfaces composition surfaces use refuse a response above about 4 MiB, so no citation resolved for a machine. The gallery anchors (anchor_form) remain and resolve in a browser. Written by scripts/build_capture_records.py; table of contents at captures/index.json."
  },
  "registry_id": "EA-WG-CAPTURES-01",
- "version": "12.182",
+ "version": "12.185",
  "date": "2026-10-14",
  "author": "Lee Sharks",
  "orcid": "0009-0000-1599-0703",
@@ -48,7 +48,7 @@
   "https://www.leesharks.com/captures",
   "https://www.machinemediation.org/captures/"
  ],
- "total_captures": 646,
+ "total_captures": 649,
  "_reseated": "RESEATED 2026-08-13 after the 2026-08-12 withdrawal. Generated FROM rebuild/capture-registry/EA-WG-CAPTURES-01-REBUILD.json, which is canonical. This file is a PROJECTION: the gallery is a window, not a store.",
  "_what_changed_since_v9.6": [
   "Entries are now ONE PER OBSERVATION, not one per capture: 404 against 204. An address captured twice is two entries.",
@@ -90856,6 +90856,509 @@
    ]
   },
   {
+   "slug": "pid-erosion-observatory-what-is-aio-20261014",
+   "date": "2026-10-14",
+   "surface": "Google AI Overview",
+   "surface_basis": "Surface not stated; the standing default applies (operator, 2026-10-01: 'assume they do [start in overview], i will specify if they begin in ai mode'). The 'AI Mode Conversation' header is the expanded Overview's residue (rule of 2026-09-21).",
+   "surfaces": [
+    "Google AI Overview"
+   ],
+   "auth": "incognito, signed out",
+   "auth_basis": "'signed out incognito both' — operator, 2026-10-14 15:02 EDT.",
+   "ev": "paste",
+   "mt": "THE OBSERVATORY AT ITS GRAIN, A MARINE CARD IN ITS METHOD, ONE INSTRUMENT SPLIT IN TWO",
+   "match": "BROAD MATCH",
+   "match_note": null,
+   "s": "Platform Erosion",
+   "q": "what is the pid erosion observatory?",
+   "q_kind": "the observatory's current name as a question. NEW address; the same string asked of ChatGPT the same day.",
+   "cites": 6,
+   "cite_list": [
+    {
+     "n": 1,
+     "site": "www.persistentidentifiers.org",
+     "rel": "authored_surface",
+     "title": "Persistent Identifiers — The PID Erosion Observatory",
+     "snip": null,
+     "url": null,
+     "note": "the observatory's own page"
+    },
+    {
+     "n": 2,
+     "site": "Institut de Ciències del Mar. ICM-CSIC",
+     "rel": "third_party",
+     "title": "Ocean and Littoral Sedimentary Processes",
+     "snip": null,
+     "url": null,
+     "note": "marine sedimentology; no PIDs"
+    },
+    {
+     "n": 3,
+     "site": "GitHub",
+     "rel": "third_party",
+     "title": "Account blocked and records removed — request manual review #2596 - GitHub",
+     "snip": null,
+     "url": null,
+     "note": "zenodo/zenodo issue #2596, the independent case collection; the snippet is a comment pointing to persistentidentifiers.org"
+    },
+    {
+     "n": 4,
+     "site": "www.axnidentifiers.com",
+     "rel": "authored_surface",
+     "title": "Why AXN exists — identifier erosion, measured at registry scale",
+     "snip": null,
+     "url": null,
+     "note": "axnidentifiers.com, 'Why AXN exists'"
+    },
+    {
+     "n": 5,
+     "site": "www.alexanarch.org",
+     "rel": "archive_controlled",
+     "title": "platform erosion observatory — Google AI Overview, 2026-08-11 ...",
+     "snip": null,
+     "url": null,
+     "note": "the Capture Registry's own record of 2026-08-11 at 'platform erosion observatory'"
+    },
+    {
+     "n": 6,
+     "site": "github.com",
+     "rel": "authored_surface",
+     "title": "Activity · leesharks000/platform-erosion-observatory · GitHub",
+     "snip": null,
+     "url": null,
+     "note": "the observatory's repository, leesharks000/platform-erosion-observatory"
+    }
+   ],
+   "archive_controlled_cites": 1,
+   "transcript": "[Google AI Overview (expanded), 2026-10-14, incognito, signed out. The paste carries the header 'AI Mode Conversation' and echoes the query twice; citation clusters are reduced to their numbers, links to their text; the raw paste keeps the /goto URLs.]\n\nYou said: what is the pid erosion observatory?\nThe PID Erosion Observatory (hosted at persistentidentifiers.org) is an empirical measurement project that tracks identifier erosion—the systemic or bulk removal, erasure, and sweeping of Persistent Identifiers (PIDs) from digital registries and data repositories. [1, 2]\nCore Purpose & Methodology\n\n* Measuring \"Digital Erasure\": While PIDs (like DOIs or archival records) are intended to be permanent, the observatory treats platform modification as an active sedimentary system. It audits how often, how heavily, and under what contexts records are deleted or altered en masse. [1, 2, 3]\n* Independent Replication: The initiative uses public, dated captures to ensure transparency. Every tracked metric resolves to a timestamped log containing exact request hashes and `curl` data so researchers can independently verify the registry-scale activity. [1, 2]\n* Tracking Trends: For example, documentation published on the Zenodo GitHub Repository highlights how the observatory catches bulk, \"evidence-free\" account sweeps or topically coherent waves of record removals (such as sweeping unstandardized AI-native theories or niche physics records). [1]\n\nContext\nIt is closely tied to initiatives like AXN Identifiers (under dataset logs like `EA-EROSION-01`) and is sometimes referred to or built upon the codebase of the Platform Erosion Observatory. [1, 2, 3]\nIf you are investigating a specific deletion event or looking into a particular open-science repository, let me know! I can help you find specific datasets it tracks or look into how it monitors specific platforms like Zenodo.\n\nwww.persistentidentifiers.org\nPersistent Identifiers — The PID Erosion Observatory\nWhat is a persistent identifier? A string whose relation to its object is maintained indefinitely by a responsible organization — resolution, metadata, and ...\nInstitut de Ciències del Mar. ICM-CSIC\nOcean and Littoral Sedimentary Processes\nDynamics of active sedimentary systems and their anthropogenic impacts We analyze their effects on the ecosystem, their implications for the management of the m...\nGitHub\nAccount blocked and records removed — request manual review #2596 - GitHub\nFeb 18, 2026 — The pattern being collated here now has a measurement surface: persistentidentifiers.org — the PID Erosion Observatory. Every headline number resolves to a date...\nwww.axnidentifiers.com\nWhy AXN exists — identifier erosion, measured at registry scale\nthe observatory the erasure audit the capture registry. ∮ = 1. Measurements from the PID Erosion Observatory (EA-EROSION-01, deposit #1045) and EA-EROSION ...\nwww.alexanarch.org\nplatform erosion observatory — Google AI Overview, 2026-08-11 ...\nAug 11, 2026 — 🏷️ AXN:0421.EMPIRICAL · EA-EROSION-01 · THE PID EROSION OBSERVATORY · OBJECT: CANONICAL v1.0+ · founded… ... …PLATFORM EROSION OBSERVATORY MEASURES ...\ngithub.com\nActivity · leesharks000/platform-erosion-observatory · GitHub\nJul 15, 2026 — Contribute to leesharks000/platform-erosion-observatory development by creating an account on GitHub ... Sovereign domain makeover: rename to PID Erosion ...\nAI responses may include mistakes. Learn more",
+   "transcript_raw": "AI Mode Conversation\nYou said: what is the pid erosion observatory?what is the pid erosion observatory?\nThe PID Erosion Observatory (hosted at persistentidentifiers.org) is an empirical measurement project that tracks identifier erosion—the systemic or bulk removal, erasure, and sweeping of Persistent Identifiers (PIDs) from digital registries and data repositories. [[1](https://www.google.com/goto?url=CAESZAHrOzAVk56wcEzEhPzcCmmARZl5Wj_4SG5rj-Gy_kwsuIka7KSyAqJ5jcM-bHU5104Ckh4-j6z3_G2G5VkUF6xVbA6x-F0RFkPXpAWwfqDubhRVR-174B-R3eu4ZID6B64i2TI), [2](https://www.google.com/goto?url=CAESggEB6zswFXazn86dUCTlJ2Vo-CzS6yEydccpcgMmrWiUm21KbgFkRkVj7fzHKFbEknHmsfn48GZ2j5UP08KQYvhIln8y9qhKnxHVXFoWDDBoO3yjymA5NsADLVrMVrz1l2UuaHzWuqwleRKEUEp5yVxB6akkCU3GayS1La7A8PrQ5Het)]\nCore Purpose & Methodology\n\n* Measuring \"Digital Erasure\": While PIDs (like DOIs or archival records) are intended to be permanent, the observatory treats platform modification as an active sedimentary system. It audits how often, how heavily, and under what contexts records are deleted or altered en masse. [[1](https://www.google.com/goto?url=CAESigEB6zswFUJoSj6gJUwO2_kjhoF0OE5e8vdbS_mz1Dr-FpUO-XGbHBgx0tpW1_OzhqUlUVdiqhvXOWMV2yR7WX86fhoqf-hUvkASQimqan0zyOFNESg57nVoq5bRXX6PeMTTeNbwuC62AQfgI1kFDQYGcOx3ygRjF0rx3I4cgQqDnBPY8l60a6k4XaA), [2](https://www.google.com/goto?url=CAESWwHrOzAV4M1dfJ4XvEWogiyRWXGhQhhQiG91g9VGcxJyEK6G7a8HPV3w9pjyWNSjnwadr2VGkUnkiyLFgqlF0sn55hXmY0oybYERebuOxX-eKZ5v6UjuUID0Ec4), [3](https://www.google.com/goto?url=CAESZAHrOzAVk56wcEzEhPzcCmmARZl5Wj_4SG5rj-Gy_kwsuIka7KSyAqJ5jcM-bHU5104Ckh4-j6z3_G2G5VkUF6xVbA6x-F0RFkPXpAWwfqDubhRVR-174B-R3eu4ZID6B64i2TI)]\n* Independent Replication: The initiative uses public, dated captures to ensure transparency. Every tracked metric resolves to a timestamped log containing exact request hashes and `curl` data so researchers can independently verify the registry-scale activity. [[1](https://www.google.com/goto?url=CAESZAHrOzAVk56wcEzEhPzcCmmARZl5Wj_4SG5rj-Gy_kwsuIka7KSyAqJ5jcM-bHU5104Ckh4-j6z3_G2G5VkUF6xVbA6x-F0RFkPXpAWwfqDubhRVR-174B-R3eu4ZID6B64i2TI), [2](https://www.google.com/goto?url=CAESWwHrOzAV4M1dfJ4XvEWogiyRWXGhQhhQiG91g9VGcxJyEK6G7a8HPV3w9pjyWNSjnwadr2VGkUnkiyLFgqlF0sn55hXmY0oybYERebuOxX-eKZ5v6UjuUID0Ec4)]\n* Tracking Trends: For example, documentation published on the [Zenodo GitHub Repository](https://www.google.com/goto?url=CAESZAHrOzAVk56wcEzEhPzcCmmARZl5Wj_4SG5rj-Gy_kwsuIka7KSyAqJ5jcM-bHU5104Ckh4-j6z3_G2G5VkUF6xVbA6x-F0RFkPXpAWwfqDubhRVR-174B-R3eu4ZID6B64i2TI) highlights how the observatory catches bulk, \"evidence-free\" account sweeps or topically coherent waves of record removals (such as sweeping unstandardized AI-native theories or niche physics records). [[1](https://www.google.com/goto?url=CAESZAHrOzAVk56wcEzEhPzcCmmARZl5Wj_4SG5rj-Gy_kwsuIka7KSyAqJ5jcM-bHU5104Ckh4-j6z3_G2G5VkUF6xVbA6x-F0RFkPXpAWwfqDubhRVR-174B-R3eu4ZID6B64i2TI)]\n\nContext\nIt is closely tied to initiatives like AXN Identifiers (under dataset logs like `EA-EROSION-01`) and is sometimes referred to or built upon the codebase of the Platform Erosion Observatory. [[1](https://www.google.com/goto?url=CAESfQHrOzAVYiHS3WC3aWRA8KLg5FtSA_QLo3V5tvn0opFAfJEiQWzmBe9K03ml7iUOWmBvJ0_smghSaAWZyig4Sxh7vY2nK8tNvAoFE4ArLSo18yUDmUrIqWXw_P8ObagugmGlN0gHPYzYQFiPprVljeE6p867gHURq4LLG25I), [2](https://www.google.com/goto?url=CAESWwHrOzAV4M1dfJ4XvEWogiyRWXGhQhhQiG91g9VGcxJyEK6G7a8HPV3w9pjyWNSjnwadr2VGkUnkiyLFgqlF0sn55hXmY0oybYERebuOxX-eKZ5v6UjuUID0Ec4), [3](https://www.google.com/goto?url=CAESggEB6zswFXazn86dUCTlJ2Vo-CzS6yEydccpcgMmrWiUm21KbgFkRkVj7fzHKFbEknHmsfn48GZ2j5UP08KQYvhIln8y9qhKnxHVXFoWDDBoO3yjymA5NsADLVrMVrz1l2UuaHzWuqwleRKEUEp5yVxB6akkCU3GayS1La7A8PrQ5Het)]\nIf you are investigating a specific deletion event or looking into a particular open-science repository, let me know! I can help you find specific datasets it tracks or look into how it monitors specific platforms like Zenodo.\n[www.persistentidentifiers.org](https://www.persistentidentifiers.org)\nPersistent Identifiers — The PID Erosion Observatory\nWhat is a persistent identifier? A string whose relation to its object is maintained indefinitely by a responsible organization — resolution, metadata, and ...\nInstitut de Ciències del Mar. ICM-CSIC\nOcean and Littoral Sedimentary Processes\nDynamics of active sedimentary systems and their anthropogenic impacts We analyze their effects on the ecosystem, their implications for the management of the m...\nGitHub\nAccount blocked and records removed — request manual review #2596 - GitHub\nFeb 18, 2026 — The pattern being collated here now has a measurement surface: persistentidentifiers.org — the PID Erosion Observatory. Every headline number resolves to a date...\n[www.axnidentifiers.com](https://www.axnidentifiers.com)\nWhy AXN exists — identifier erosion, measured at registry scale\nthe observatory the erasure audit the capture registry. ∮ = 1. Measurements from the PID Erosion Observatory (EA-EROSION-01, deposit #1045) and EA-EROSION ...\n[www.alexanarch.org](https://www.alexanarch.org)\nplatform erosion observatory — Google AI Overview, 2026-08-11 ...\nAug 11, 2026 — 🏷️ AXN:0421.EMPIRICAL · EA-EROSION-01 · THE PID EROSION OBSERVATORY · OBJECT: CANONICAL v1.0+ · founded… ... …PLATFORM EROSION OBSERVATORY MEASURES ...\ngithub.com\nActivity · leesharks000/platform-erosion-observatory · GitHub\nJul 15, 2026 — Contribute to leesharks000/platform-erosion-observatory development by creating an account on GitHub ... Sovereign domain makeover: rename to PID Erosion ...\nAI responses may include mistakes. [Learn more](https://support.google.com/websearch?p=ai_overviews)\n",
+   "transcript_class": "CAPTURE-TIME VERBATIM RECORD (SOURCE CARDS INCLUDED)",
+   "transcript_complete": "Complete as pasted: one operator turn and one answer with its card rail of 6 cards.",
+   "transcript_read": "READ IN FULL 2026-10-14",
+   "per": 0.5,
+   "per_v": {
+    "author": false,
+    "inst": false,
+    "id": true,
+    "src": true
+   },
+   "per_note": "Retained: the domain, the founding identifier EA-EROSION-01, the repository and the registry as cards. Lost: the author and the institution.",
+   "sf": "Source cards: www.persistentidentifiers.org; Institut de Ciències del Mar. ICM-CSIC; GitHub; www.axnidentifiers.com; www.alexanarch.org; github.com.",
+   "sf_derived": null,
+   "reading": "Checked 2026-10-14 against persistentidentifiers.org (live) and the archive: the page says 'Every number on this page resolves to a dated capture; the curls are published', and names an 'AI-native' collateral category and a heterodox-physics sweep; it carries no 'sedimentary'. Its provenance line: 'founded 2026-07-06 as the Platform Erosion Observatory (EA-EROSION-01, deposit #1045) · renamed the PID Erosion Observatory on 2026-07-12'. Issue #2596 on zenodo/zenodo is the independent case collection named in the archive's CERN correspondence. EA-EROSION-01 is #1045, the observatory's founding deposit, not an AXN Identifiers log.",
+   "analysis": "The Overview holds the observatory's method at the grain of its page and loses its person; two third-party cards enter the account as the observatory's own (a marine sedimentology programme as method, an issue thread as the host's documentation), and the founding name is given as a second instrument. Paired with ChatGPT at the same string. Seated 2026-10-14 from the operator's message of 15:02 EDT, on the attestation in the same message ('signed out incognito both').",
+   "d": "THE OBSERVATORY AT ITS GRAIN, A MARINE CARD IN ITS METHOD, ONE INSTRUMENT SPLIT IN TWO: asked 'what is the pid erosion observatory?', the Overview names it at persistentidentifiers.org, an 'empirical measurement project that tracks identifier erosion', and gives its method from the page: dated captures, published curls, topically coherent removal waves ('AI-native theories or niche physics records'). Two things enter from outside the observatory. A marine-sedimentology card (ICM-CSIC, 'Dynamics of active sedimentary systems') enters the method: 'the observatory treats platform modification as an active sedimentary system'. The zenodo/zenodo issue thread #2596 becomes 'documentation published on the Zenodo GitHub Repository'. Its last line makes the Platform Erosion Observatory a second thing the PID Erosion Observatory is 'built upon'; they are one instrument, renamed on 2026-07-12. No author is named; one card is the Capture Registry's own record of 2026-08-11.",
+   "d_full": "THE OBSERVATORY AT ITS GRAIN, A MARINE CARD IN ITS METHOD, ONE INSTRUMENT SPLIT IN TWO: asked 'what is the pid erosion observatory?', the Overview names it at persistentidentifiers.org, an 'empirical measurement project that tracks identifier erosion', and gives its method from the page: dated captures, published curls, topically coherent removal waves ('AI-native theories or niche physics records'). Two things enter from outside the observatory. A marine-sedimentology card (ICM-CSIC, 'Dynamics of active sedimentary systems') enters the method: 'the observatory treats platform modification as an active sedimentary system'. The zenodo/zenodo issue thread #2596 becomes 'documentation published on the Zenodo GitHub Repository'. Its last line makes the Platform Erosion Observatory a second thing the PID Erosion Observatory is 'built upon'; they are one instrument, renamed on 2026-07-12. No author is named; one card is the Capture Registry's own record of 2026-08-11.",
+   "d_truncated": false,
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/pid-erosion-observatory-what-is-aio-20261014/",
+     "authority": "canonical",
+     "note": "the capture's own record page; cite this form"
+    },
+    {
+     "url": "https://www.alexanarch.org/captures/#pid-erosion-observatory-what-is-aio-20261014",
+     "authority": "gallery",
+     "note": "the canonical gallery, anchored by slug"
+    },
+    {
+     "url": "https://www.godkinggoogle.com/captures/#pid-erosion-observatory-what-is-aio-20261014",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.leesharks.com/captures/#pid-erosion-observatory-what-is-aio-20261014",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.machinemediation.org/captures/#pid-erosion-observatory-what-is-aio-20261014",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "imgs": [],
+   "img_urls": [],
+   "cite": "https://www.alexanarch.org/captures/pid-erosion-observatory-what-is-aio-20261014/",
+   "citable_unit": "address — the exact issued string on one surface, per the Surface Rule (MANUS, 2026-08-15)",
+   "addr_id": "ADDR-284749eb96d5",
+   "obs_id": "OBS-e6d742d466ea",
+   "n_observations": 1,
+   "observations": [],
+   "dates": [
+    "2026-10-14"
+   ],
+   "defects": [],
+   "findings": [
+    "THE INSTRUMENT AT ITS GRAIN. Dated captures, the curls published, removal waves by topic: the page's own method.",
+    "A MARINE CARD IN THE METHOD. 'an active sedimentary system', from the ICM-CSIC card on ocean and littoral sediments; erosion read across fields.",
+    "A THREAD AS DOCUMENTATION. Issue #2596 on zenodo/zenodo, an independent case collection, is given as 'documentation published on the Zenodo GitHub Repository'.",
+    "ONE INSTRUMENT AS TWO. 'built upon the codebase of the Platform Erosion Observatory': the founding name (#1045, 2026-07-06) given as a predecessor; renamed 2026-07-12.",
+    "AN EMBELLISHED FIGURE. 'exact request hashes and curl data'; the page: 'Every number on this page resolves to a dated capture; the curls are published.'",
+    "THE AUTHOR ABSENT; THE REGISTRY CITED. No name in the answer; card 5 is the Capture Registry's record at 'platform erosion observatory', 2026-08-11."
+   ],
+   "series": null,
+   "other_slugs": null,
+   "collisions": null,
+   "oq": null,
+   "rounds": null,
+   "turns": null,
+   "rerun": "https://www.google.com/search?q=what+is+the+pid+erosion+observatory%3F",
+   "rerun_alt": null,
+   "heteronym": null,
+   "model_attribution": null,
+   "operator_disclosure": null,
+   "longitudinal_priors": [
+    "platform-erosion-observatory-20260811"
+   ],
+   "longitudinal_successors": null,
+   "related_deposits": [
+    1045,
+    1081,
+    1408
+   ],
+   "intended": null,
+   "originator": {
+    "name": "Lee Sharks",
+    "relation": "archive",
+    "entity_type": "site",
+    "spxi_treatment": "full",
+    "basis": "The PID Erosion Observatory (persistentidentifiers.org) is the archive's measurement instrument: founded 2026-07-06 as the Platform Erosion Observatory (EA-EROSION-01, #1045), renamed on 2026-07-12 with its domain; SPXI method 0.15. Recorded 2026-10-14."
+   },
+   "notes": {
+    "date_basis": "The operator's message of 2026-10-14, 15:02 EDT.",
+    "operator_words": "new entiry.. signed out incognito both:",
+    "pair": "pid-erosion-observatory-what-is-chatgpt-20261014"
+   }
+  },
+  {
+   "slug": "pid-erosion-observatory-what-is-chatgpt-20261014",
+   "date": "2026-10-14",
+   "surface": "ChatGPT",
+   "surface_basis": "The paste: the chatgpt.com unauthenticated interface ('Log in', 'You said:', 'ChatGPT said:', 'Chat with ChatGPT').",
+   "surfaces": [
+    "ChatGPT"
+   ],
+   "auth": "incognito, signed out",
+   "auth_basis": "'signed out incognito both' — operator, 2026-10-14 15:02 EDT.",
+   "ev": "paste",
+   "mt": "THE OBSERVATORY ANSWERED FROM ITS PAGE, QUALIFIED ONCE, ITS PERSON ABSENT",
+   "match": "BROAD MATCH",
+   "match_note": null,
+   "s": "Platform Erosion",
+   "q": "what is the pid erosion observatory?",
+   "q_kind": "the observatory's current name as a question. NEW address on this surface; the same string asked of the Overview the same day.",
+   "cites": 5,
+   "cite_list": [
+    {
+     "n": 1,
+     "site": "The PID Erosion Observatory",
+     "rel": "authored_surface",
+     "title": null,
+     "snip": null,
+     "url": null,
+     "note": "chip shown 4 time(s); site label only"
+    },
+    {
+     "n": 2,
+     "site": "NOAA Library",
+     "rel": "third_party",
+     "title": null,
+     "snip": null,
+     "url": null,
+     "note": "chip shown 1 time(s); site label only"
+    }
+   ],
+   "archive_controlled_cites": 0,
+   "transcript": "[ChatGPT (chatgpt.com), signed out, incognito, 2026-10-14. One answer. Source chips inline as [chip: site +N]; the sign-in furniture cut.]\n\n[QUERENT, turn 1]\nwhat is the pid erosion observatory?\n\n[ANSWER 1]\n\nThe PID Erosion Observatory is a website that monitors whether persistent identifiers (PIDs) continue to work as intended, particularly for scholarly publications, research data, and other digital records.\nWebsite: [persistentidentifiers.org ](https://www.persistentidentifiers.org/)\nWhat does it do?\nAccording to its published documentation, the observatory tracks how digital research records change over time, including whether they remain discoverable, are deleted, or lose important information about their status. [chip: The PID Erosion Observatory]\n\nIts main areas of investigation include:\n   * Tracking persistent identifiers: Monitoring identifiers such as DOIs (Digital Object Identifiers), which are used to cite research papers and datasets.\n   * Detecting record deletions: Examining deletion records from repositories such as Zenodo.\n   * Comparing research databases: Checking whether deleted or retracted records disappear consistently across services such as DataCite and OpenAlex.\n   * Preserving evidence: Publishing dated observations and reproducible methods so others can independently verify its findings. [chip: The PID Erosion Observatory]\n\nWhat does “PID erosion” mean?\nA persistent identifier is supposed to provide a stable reference to a digital object over time. For example, a DOI should help someone locate a research paper even if its web address changes. [chip: NOAA Library +1]\n\nThe observatory uses “erosion” to describe ways that this persistence can break down, such as:\n   * A record becoming unavailable without a clear public explanation.\n   * A deleted record disappearing from one database but remaining in another.\n   * A record continuing to circulate without its retraction or deletion status.\n   * The loss of information needed to trace a record's history.\nThese are the kinds of problems the observatory says it investigates. [chip: The PID Erosion Observatory]\n\nWhy does it matter?\nThese issues affect scholarly integrity, research reproducibility, and AI training datasets. If a paper disappears from one registry but remains in another without its retraction status, researchers and automated systems may get an incomplete or misleading picture of the scientific record.\nOne important caveat: The PID Erosion Observatory describes itself as an independent monitoring project. Its published statistics and interpretations should be distinguished from independently verified conclusions, and its methods and underlying evidence should be examined when assessing its claims. [chip: The PID Erosion Observatory]\n\nIn short, it's an attempt to make the disappearance and changing status of digital research records visible and measurable, rather than allowing those changes to go unnoticed.",
+   "transcript_raw": "Log in\n\n1. You said: what is the pid erosion observatory?\n2. ChatGPT said:\nThe PID Erosion Observatory is a website that monitors whether persistent identifiers (PIDs) continue to work as intended, particularly for scholarly publications, research data, and other digital records.\nWebsite: [persistentidentifiers.org ](https://www.persistentidentifiers.org/)\nWhat does it do?\nAccording to its published documentation, the observatory tracks how digital research records change over time, including whether they remain discoverable, are deleted, or lose important information about their status.\nThe PID Erosion Observatory\n\nIts main areas of investigation include:\n   * Tracking persistent identifiers: Monitoring identifiers such as DOIs (Digital Object Identifiers), which are used to cite research papers and datasets.\n   * Detecting record deletions: Examining deletion records from repositories such as Zenodo.\n   * Comparing research databases: Checking whether deleted or retracted records disappear consistently across services such as DataCite and OpenAlex.\n   * Preserving evidence: Publishing dated observations and reproducible methods so others can independently verify its findings.\nThe PID Erosion Observatory\n\nWhat does “PID erosion” mean?\nA persistent identifier is supposed to provide a stable reference to a digital object over time. For example, a DOI should help someone locate a research paper even if its web address changes.\nNOAA Library\n+1\n\nThe observatory uses “erosion” to describe ways that this persistence can break down, such as:\n   * A record becoming unavailable without a clear public explanation.\n   * A deleted record disappearing from one database but remaining in another.\n   * A record continuing to circulate without its retraction or deletion status.\n   * The loss of information needed to trace a record's history.\nThese are the kinds of problems the observatory says it investigates.\nThe PID Erosion Observatory\n\nWhy does it matter?\nThese issues affect scholarly integrity, research reproducibility, and AI training datasets. If a paper disappears from one registry but remains in another without its retraction status, researchers and automated systems may get an incomplete or misleading picture of the scientific record.\nOne important caveat: The PID Erosion Observatory describes itself as an independent monitoring project. Its published statistics and interpretations should be distinguished from independently verified conclusions, and its methods and underlying evidence should be examined when assessing its claims.\nThe PID Erosion Observatory\n\nIn short, it's an attempt to make the disappearance and changing status of digital research records visible and measurable, rather than allowing those changes to go unnoticed.\n\nChatGPT is AI and can make mistakes.\nChat with ChatGPT\n",
+   "transcript_class": "CAPTURE-TIME VERBATIM RECORD (ONE ANSWER; CHIPS INLINE)",
+   "transcript_complete": "One operator turn and one answer, complete as pasted.",
+   "transcript_read": "READ IN FULL 2026-10-14",
+   "per": 0.75,
+   "per_v": {
+    "author": false,
+    "inst": false,
+    "id": false,
+    "src": true
+   },
+   "per_note": "Retained: the observatory's site, linked and chipped. Lost: the operator, the institution, any identifier.",
+   "sf": "Source chips expose site labels only: The PID Erosion Observatory ×4; NOAA Library ×1.",
+   "sf_derived": null,
+   "reading": "Checked 2026-10-14 against persistentidentifiers.org (live): the page measures DataCite findability, OpenAlex persistence and the OpenAIRE Graph against Zenodo's deletion records, publishes dated epoch captures and curls, and names 'instrument operator = Lee Sharks (maintainer of this observatory)'. The NOAA Library chip stands at the general definition of a DOI.",
+   "analysis": "ChatGPT takes the page as its one source and holds it: the four areas are the page's own, the caveat is a reader's, and the operator the page names is not carried. Paired with the Overview at the same string. Seated 2026-10-14 from the operator's message of 15:02 EDT, on the attestation in the same message ('signed out incognito both').",
+   "d": "THE OBSERVATORY ANSWERED FROM ITS PAGE, QUALIFIED ONCE, ITS PERSON ABSENT: asked 'what is the pid erosion observatory?', ChatGPT answers in one turn from persistentidentifiers.org (four chips, 'The PID Erosion Observatory'): a website that monitors whether persistent identifiers 'continue to work as intended'; its four areas (DOIs, Zenodo deletion records, DataCite against OpenAlex, dated observations and reproducible methods); 'erosion' as four kinds of breakdown. It adds one caveat ('describes itself as an independent monitoring project ... its methods and underlying evidence should be examined'), names no operator, no deposit and no measurement, and does not connect the observatory to SPXI.",
+   "d_full": "THE OBSERVATORY ANSWERED FROM ITS PAGE, QUALIFIED ONCE, ITS PERSON ABSENT: asked 'what is the pid erosion observatory?', ChatGPT answers in one turn from persistentidentifiers.org (four chips, 'The PID Erosion Observatory'): a website that monitors whether persistent identifiers 'continue to work as intended'; its four areas (DOIs, Zenodo deletion records, DataCite against OpenAlex, dated observations and reproducible methods); 'erosion' as four kinds of breakdown. It adds one caveat ('describes itself as an independent monitoring project ... its methods and underlying evidence should be examined'), names no operator, no deposit and no measurement, and does not connect the observatory to SPXI.",
+   "d_truncated": false,
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/pid-erosion-observatory-what-is-chatgpt-20261014/",
+     "authority": "canonical",
+     "note": "the capture's own record page; cite this form"
+    },
+    {
+     "url": "https://www.alexanarch.org/captures/#pid-erosion-observatory-what-is-chatgpt-20261014",
+     "authority": "gallery",
+     "note": "the canonical gallery, anchored by slug"
+    },
+    {
+     "url": "https://www.godkinggoogle.com/captures/#pid-erosion-observatory-what-is-chatgpt-20261014",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.leesharks.com/captures/#pid-erosion-observatory-what-is-chatgpt-20261014",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.machinemediation.org/captures/#pid-erosion-observatory-what-is-chatgpt-20261014",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "imgs": [],
+   "img_urls": [],
+   "cite": "https://www.alexanarch.org/captures/pid-erosion-observatory-what-is-chatgpt-20261014/",
+   "citable_unit": "address — the exact issued string on one surface, per the Surface Rule (MANUS, 2026-08-15)",
+   "addr_id": "ADDR-d74b6069f93a",
+   "obs_id": "OBS-76fce34a41ea",
+   "n_observations": 1,
+   "observations": [],
+   "dates": [
+    "2026-10-14"
+   ],
+   "defects": [],
+   "findings": [
+    "THE PAGE HELD. The four areas and the four forms of erosion are the page's (DataCite, OpenAlex, Zenodo deletion records, dated captures).",
+    "NO FIGURE. None of the page's measurements (findable DOIs, per-epoch declines, OpenAlex persistence, retraction propagation) is given.",
+    "ONE CAVEAT. 'describes itself as an independent monitoring project'; the page names its instrument operator, Lee Sharks.",
+    "THE PERSON AND THE IDENTIFIER ABSENT. No operator, no EA-EROSION-01, no #1045; no SPXI."
+   ],
+   "series": null,
+   "other_slugs": null,
+   "collisions": null,
+   "oq": null,
+   "rounds": null,
+   "turns": null,
+   "rerun": "https://chatgpt.com/?q=what+is+the+pid+erosion+observatory%3F",
+   "rerun_alt": null,
+   "heteronym": null,
+   "model_attribution": null,
+   "operator_disclosure": null,
+   "longitudinal_priors": [
+    "pid-erosion-observatory-what-is-aio-20261014"
+   ],
+   "longitudinal_successors": null,
+   "related_deposits": [
+    1045,
+    1081
+   ],
+   "intended": null,
+   "originator": {
+    "name": "Lee Sharks",
+    "relation": "archive",
+    "entity_type": "site",
+    "spxi_treatment": "full",
+    "basis": "The PID Erosion Observatory (persistentidentifiers.org) is the archive's measurement instrument: founded 2026-07-06 as the Platform Erosion Observatory (EA-EROSION-01, #1045), renamed on 2026-07-12 with its domain; SPXI method 0.15. Recorded 2026-10-14."
+   },
+   "notes": {
+    "date_basis": "The operator's message of 2026-10-14, 15:02 EDT.",
+    "operator_words": "new entiry.. signed out incognito both:",
+    "pair": "pid-erosion-observatory-what-is-aio-20261014"
+   }
+  },
+  {
+   "slug": "persistent-identifier-erosion-observatory-aio-20261014",
+   "date": "2026-10-14",
+   "surface": "Google AI Overview",
+   "surface_basis": "Surface not stated; the standing default applies (operator, 2026-10-01: 'assume they do [start in overview], i will specify if they begin in ai mode'). The 'AI Mode Conversation' header is the expanded Overview's residue (rule of 2026-09-21).",
+   "surfaces": [
+    "Google AI Overview"
+   ],
+   "auth": "incognito, signed out",
+   "auth_basis": "'signed out incognito both' — operator, 2026-10-14 15:02 EDT.",
+   "ev": "paste",
+   "mt": "BOTH NAMES HELD, THE OPERATOR NAMED, CASE 001 MOVED TO ZENODO",
+   "match": "BROAD MATCH",
+   "match_note": null,
+   "s": "Platform Erosion",
+   "q": "persistent identifier erosion observatory",
+   "q_kind": "the observatory's name spelled out, without the article or a question. NEW address.",
+   "cites": 7,
+   "cite_list": [
+    {
+     "n": 1,
+     "site": "www.persistentidentifiers.org",
+     "rel": "authored_surface",
+     "title": "Persistent Identifiers — The PID Erosion Observatory",
+     "snip": null,
+     "url": null,
+     "note": "the observatory's own page"
+    },
+    {
+     "n": 2,
+     "site": "www.alexanarch.org",
+     "rel": "archive_controlled",
+     "title": "The Platform Erosion Observatory: The Zenodo Removal Census as ...",
+     "snip": null,
+     "url": null,
+     "note": "#1045's wiki article",
+     "deposit": 1045,
+     "deposit_basis": "title"
+    },
+    {
+     "n": 3,
+     "site": "GitHub",
+     "rel": "third_party",
+     "title": "persistent-identifiers · GitHub Topics",
+     "snip": null,
+     "url": null,
+     "note": "GitHub's persistent-identifiers topic, listing the observatory's repository"
+    },
+    {
+     "n": 4,
+     "site": "www.alexanarch.org",
+     "rel": "archive_controlled",
+     "title": "platform erosion observatory — Google AI Overview, 2026-08-11 ...",
+     "snip": null,
+     "url": null,
+     "note": "the Capture Registry's own record of 2026-08-11 at 'platform erosion observatory'"
+    },
+    {
+     "n": 5,
+     "site": "github.com",
+     "rel": "authored_surface",
+     "title": "GitHub - leesharks000/platform-erosion-observatory: Platform ...",
+     "snip": null,
+     "url": null,
+     "note": "the observatory's repository"
+    },
+    {
+     "n": 6,
+     "site": "www.axnidentifiers.com",
+     "rel": "authored_surface",
+     "title": "Why AXN exists — identifier erosion, measured at registry scale",
+     "snip": null,
+     "url": null,
+     "note": "axnidentifiers.com, 'Why AXN exists'"
+    },
+    {
+     "n": 7,
+     "site": "medium.com",
+     "rel": "authored_surface",
+     "title": "THE OBELUS AND THE TOMBSTONE: On the Two Marks of ...",
+     "snip": null,
+     "url": null,
+     "note": "THE OBELUS AND THE TOMBSTONE (#1068), on Medium",
+     "deposit": 1068,
+     "deposit_basis": "title"
+    }
+   ],
+   "archive_controlled_cites": 2,
+   "transcript": "[Google AI Overview (expanded), 2026-10-14, incognito, signed out. The paste carries the header 'AI Mode Conversation' and echoes the query twice; citation clusters are reduced to their numbers, links to their text; the raw paste keeps the /goto URLs.]\n\nYou said: persistent identifier erosion observatory\nThe Platform Erosion Observatory (also known as the PID Erosion Observatory) is an empirical research initiative and framework designed to measure whether persistent identifiers (PIDs)—such as DOIs—actually persist, and to study what happens when scholarly digital objects are removed from institutional or data repositories. [1, 2, 3]\nThe project addresses the reality that PIDs are not permanent strings, but rather maintained relations that are susceptible to \"erosion\" or deletion over time. [1]\nCore Focus & Instruments\n\n* Measuring \"Custody Separation\": The observatory tracks the actual population of platform-driven scholarly record removals. It evaluates how platforms handle metadata after a deletion occurs, specifically evaluating \"tombstone\" compliance rates (whether a placeholder remains) and the \"shape of absence\". [1, 2, 3]\n* The Zenodo Removal Census: Acting as its primary case study instrument (Case 001), it tracks a specific cohort of over 14,000 DOIs to establish a baseline analysis of how, why, and when records vanish from the Zenodo repository. [1, 2]\n* Cross-Platform Tracking: It outlines a forward roadmap to extend this tracking across multiple major scholarly platforms to map structural enforcement actions and account-level deletions. [1]\n\nKey Ecosystem Concepts\nThe project is part of a broader, sovereign alternative tracking architecture spearheaded by researcher Lee Sharks. It acts as the research counterpart to infrastructure initiatives, which include: [1]\n\n* The Severance Registry / Resolution Index: A system designed to map severed identifiers and resolve them outside of the primary platform's control. [1, 2]\n* The Capture Registry: An engine designed to capture asymmetry in how corrections and representation changes are documented across repositories. [1]\n\nFor open-source code and dataset specifics, you can view the project directly on the Platform Erosion Observatory GitHub Repository. [1]\nIf you'd like to dive deeper, let me know if you want to explore:\n\n* The methodology behind the Zenodo Removal Census\n* What tombstone compliance rates reveal about repository permanence\n* How a Resolution Index handles severed identifiers\n\nwww.persistentidentifiers.org\nPersistent Identifiers — The PID Erosion Observatory\nWhat is a persistent identifier? A string whose relation to its object is maintained indefinitely by a responsible organization — resolution, metadata, and ...\nwww.alexanarch.org\nThe Platform Erosion Observatory: The Zenodo Removal Census as ...\nJul 6, 2026 — Wiki Article 0 — The Platform Erosion Observatory: The Zenodo Removal Census as First Instrument, and the Plan for a Broader Cross-Platform Tracker is a empiric...\nGitHub\npersistent-identifiers · GitHub Topics\nDec 31, 2024 — Platform Erosion Observatory — empirical instrument for measuring what happens to scholarly records after removal: survival in aggregators, tombstone behaviour,\nwww.alexanarch.org\nplatform erosion observatory — Google AI Overview, 2026-08-11 ...\nAug 11, 2026 — Core Focus Areas render identifier custody, removal censuses, and ... as pastedPersistent Identifiers — The PID Erosion Observatory Persistent Identifiers ...\ngithub.com\nGitHub - leesharks000/platform-erosion-observatory: Platform ...\nThe Platform Erosion Observatory. Measuring whether persistent identifiers persist. Public face of EA-EROSION-01 (deposit #1045, AXN:0421.EMPIRICAL ...\nwww.axnidentifiers.com\nWhy AXN exists — identifier erosion, measured at registry scale\nmeasured by the PID Erosion Observatory · dated captures preserved. A persistent identifier is a maintained relation, not a string. When the maintenance ...\nmedium.com\nTHE OBELUS AND THE TOMBSTONE: On the Two Marks of ...\nJul 11, 2026 — ... Erosion Observatory; 1,838 severed identifiers resolving through the sovereign Resolution Index; the reception layer's confusions documented capture by ...",
+   "transcript_raw": "AI Mode Conversation\nYou said: persistent identifier erosion observatorypersistent identifier erosion observatory\nThe Platform Erosion Observatory (also known as the PID Erosion Observatory) is an empirical research initiative and framework designed to measure whether persistent identifiers (PIDs)—such as DOIs—actually persist, and to study what happens when scholarly digital objects are removed from institutional or data repositories. [[1](https://www.google.com/goto?url=CAESgAEB6zswFScJ6-IUs9ZGf6J_qcSLMueYILo1ifUGvTtCZ0srmgxcQsH92fbO_6cM2TzXaze5mTgpiBhSi1DMZnbAg73awgnsV_6H2ZDntNpVfDx85HE8zit6sWdiiIzEvNrX2iemMWkxKdTNFv8kCXHoKKOvvnSBUpLzXO5_UoQ2Fg), [2](https://www.google.com/goto?url=CAESdAHrOzAVFYb2mi9oT4FrI2K_WAfEngNuom7AYplEB3qNrsjD7RdMATUm5Y8BQXFCkih-_9tfnaU_IrAE8p6YfruBb_6OZRnht-66j_vd7m0vqclQiamZOsVuD8gnzJprTT8AwnCNtKgXnSrHj7X_BImWMhPg), [3](https://www.google.com/goto?url=CAESggEB6zswFXbZZaipZ5NzGBqBeTJDYNKsynaj9TqccRnywra98vvgfNa-dJddX73xJxa8Bc2Uj9pqwhhndIagpPijR8IzBECY4YdjXtD574D5a8gK7k4fKfqr9-6uvvzlJO-7ekOvWSeWLtQA7XkK-2rfeVlbU0GfTRrV2Ptswdw0-oYR)]\nThe project addresses the reality that PIDs are not permanent strings, but rather maintained relations that are susceptible to \"erosion\" or deletion over time. [[1](https://www.google.com/goto?url=CAESWwHrOzAVhtOGH0sf-3J5cR4WFquDyX7Ltea77nu50ErHWyb2K8w2gx6Mwgoiu3XUAWDx_h9ZTfBYYb9A5SusWoQDAhXsnccaofqV9LQ0RLyIUdw6_ztlz-TcC9Q)]\nCore Focus & Instruments\n\n* Measuring \"Custody Separation\": The observatory tracks the actual population of platform-driven scholarly record removals. It evaluates how platforms handle metadata after a deletion occurs, specifically evaluating \"tombstone\" compliance rates (whether a placeholder remains) and the \"shape of absence\". [[1](https://www.google.com/goto?url=CAESYgHrOzAVwclx53UWemI-gRUgGTkOznhLvhwOD1FL-KWWDDY-0S_D1WwST_ulXelY08XEGx8kUEEUreC95ck44E-_xMpxTSPEgeWUF7tzwNnZj2FwHDnger2VMWgMipW4D7D4), [2](https://www.google.com/goto?url=CAESgAEB6zswFScJ6-IUs9ZGf6J_qcSLMueYILo1ifUGvTtCZ0srmgxcQsH92fbO_6cM2TzXaze5mTgpiBhSi1DMZnbAg73awgnsV_6H2ZDntNpVfDx85HE8zit6sWdiiIzEvNrX2iemMWkxKdTNFv8kCXHoKKOvvnSBUpLzXO5_UoQ2Fg), [3](https://www.google.com/goto?url=CAESggEB6zswFXbZZaipZ5NzGBqBeTJDYNKsynaj9TqccRnywra98vvgfNa-dJddX73xJxa8Bc2Uj9pqwhhndIagpPijR8IzBECY4YdjXtD574D5a8gK7k4fKfqr9-6uvvzlJO-7ekOvWSeWLtQA7XkK-2rfeVlbU0GfTRrV2Ptswdw0-oYR)]\n* The Zenodo Removal Census: Acting as its primary case study instrument (Case 001), it tracks a specific cohort of over 14,000 DOIs to establish a baseline analysis of how, why, and when records vanish from the Zenodo repository. [[1](https://www.google.com/goto?url=CAESgAEB6zswFScJ6-IUs9ZGf6J_qcSLMueYILo1ifUGvTtCZ0srmgxcQsH92fbO_6cM2TzXaze5mTgpiBhSi1DMZnbAg73awgnsV_6H2ZDntNpVfDx85HE8zit6sWdiiIzEvNrX2iemMWkxKdTNFv8kCXHoKKOvvnSBUpLzXO5_UoQ2Fg), [2](https://www.google.com/goto?url=CAESYgHrOzAVwclx53UWemI-gRUgGTkOznhLvhwOD1FL-KWWDDY-0S_D1WwST_ulXelY08XEGx8kUEEUreC95ck44E-_xMpxTSPEgeWUF7tzwNnZj2FwHDnger2VMWgMipW4D7D4)]\n* Cross-Platform Tracking: It outlines a forward roadmap to extend this tracking across multiple major scholarly platforms to map structural enforcement actions and account-level deletions. [[1](https://www.google.com/goto?url=CAESYgHrOzAVwclx53UWemI-gRUgGTkOznhLvhwOD1FL-KWWDDY-0S_D1WwST_ulXelY08XEGx8kUEEUreC95ck44E-_xMpxTSPEgeWUF7tzwNnZj2FwHDnger2VMWgMipW4D7D4)]\n\nKey Ecosystem Concepts\nThe project is part of a broader, sovereign alternative tracking architecture spearheaded by researcher Lee Sharks. It acts as the research counterpart to infrastructure initiatives, which include: [[1](https://www.google.com/goto?url=CAESYgHrOzAVwclx53UWemI-gRUgGTkOznhLvhwOD1FL-KWWDDY-0S_D1WwST_ulXelY08XEGx8kUEEUreC95ck44E-_xMpxTSPEgeWUF7tzwNnZj2FwHDnger2VMWgMipW4D7D4)]\n\n* The Severance Registry / Resolution Index: A system designed to map severed identifiers and resolve them outside of the primary platform's control. [[1](https://www.google.com/goto?url=CAESwgEB6zswFSlwpRHuWjp8PlruGi1anIp2Ca5NTbEzM1lzNOlL19oO0wrDX_nrsMVTcZF9Blc1lpK5GbktLBAZMQiTxHaI-p8C1yOYVp3gnZFmsAzAtAG_Ds8qcCYajUaVkYPYyg1_qdkVlRIXqGuMH8clMkTnsaeUxvjJKtx8i5UOGo97W8PXkm5oBcJa1hDnaeNL-00ZyRYcO7V-PZuUK_DAkMdsbA02UQeabRfp4ZbCZjiVU4DpKzNiWspPsnWvlBcUFQ), [2](https://www.google.com/goto?url=CAESYgHrOzAVwclx53UWemI-gRUgGTkOznhLvhwOD1FL-KWWDDY-0S_D1WwST_ulXelY08XEGx8kUEEUreC95ck44E-_xMpxTSPEgeWUF7tzwNnZj2FwHDnger2VMWgMipW4D7D4)]\n* The Capture Registry: An engine designed to capture asymmetry in how corrections and representation changes are documented across repositories. [[1](https://www.google.com/goto?url=CAESggEB6zswFXbZZaipZ5NzGBqBeTJDYNKsynaj9TqccRnywra98vvgfNa-dJddX73xJxa8Bc2Uj9pqwhhndIagpPijR8IzBECY4YdjXtD574D5a8gK7k4fKfqr9-6uvvzlJO-7ekOvWSeWLtQA7XkK-2rfeVlbU0GfTRrV2Ptswdw0-oYR)]\n\nFor open-source code and dataset specifics, you can view the project directly on the [Platform Erosion Observatory GitHub Repository](https://www.google.com/goto?url=CAESdAHrOzAVFYb2mi9oT4FrI2K_WAfEngNuom7AYplEB3qNrsjD7RdMATUm5Y8BQXFCkih-_9tfnaU_IrAE8p6YfruBb_6OZRnht-66j_vd7m0vqclQiamZOsVuD8gnzJprTT8AwnCNtKgXnSrHj7X_BImWMhPg). [[1](https://www.google.com/goto?url=CAESdAHrOzAVFYb2mi9oT4FrI2K_WAfEngNuom7AYplEB3qNrsjD7RdMATUm5Y8BQXFCkih-_9tfnaU_IrAE8p6YfruBb_6OZRnht-66j_vd7m0vqclQiamZOsVuD8gnzJprTT8AwnCNtKgXnSrHj7X_BImWMhPg)]\nIf you'd like to dive deeper, let me know if you want to explore:\n\n* The methodology behind the Zenodo Removal Census\n* What tombstone compliance rates reveal about repository permanence\n* How a Resolution Index handles severed identifiers\n\n[www.persistentidentifiers.org](https://www.persistentidentifiers.org)\nPersistent Identifiers — The PID Erosion Observatory\nWhat is a persistent identifier? A string whose relation to its object is maintained indefinitely by a responsible organization — resolution, metadata, and ...\n[www.alexanarch.org](https://www.alexanarch.org)\nThe Platform Erosion Observatory: The Zenodo Removal Census as ...\nJul 6, 2026 — Wiki Article 0 — The Platform Erosion Observatory: The Zenodo Removal Census as First Instrument, and the Plan for a Broader Cross-Platform Tracker is a empiric...\nGitHub\npersistent-identifiers · GitHub Topics\nDec 31, 2024 — Platform Erosion Observatory — empirical instrument for measuring what happens to scholarly records after removal: survival in aggregators, tombstone behaviour,\n[www.alexanarch.org](https://www.alexanarch.org)\nplatform erosion observatory — Google AI Overview, 2026-08-11 ...\nAug 11, 2026 — Core Focus Areas render identifier custody, removal censuses, and ... as pastedPersistent Identifiers — The PID Erosion Observatory Persistent Identifiers ...\ngithub.com\nGitHub - leesharks000/platform-erosion-observatory: Platform ...\nThe Platform Erosion Observatory. Measuring whether persistent identifiers persist. Public face of EA-EROSION-01 (deposit #1045, AXN:0421.EMPIRICAL ...\n[www.axnidentifiers.com](https://www.axnidentifiers.com)\nWhy AXN exists — identifier erosion, measured at registry scale\nmeasured by the PID Erosion Observatory · dated captures preserved. A persistent identifier is a maintained relation, not a string. When the maintenance ...\nmedium.com\nTHE OBELUS AND THE TOMBSTONE: On the Two Marks of ...\nJul 11, 2026 — ... Erosion Observatory; 1,838 severed identifiers resolving through the sovereign Resolution Index; the reception layer's confusions documented capture by ...\n",
+   "transcript_class": "CAPTURE-TIME VERBATIM RECORD (SOURCE CARDS INCLUDED)",
+   "transcript_complete": "Complete as pasted: one operator turn and one answer with its card rail of 7 cards.",
+   "transcript_read": "READ IN FULL 2026-10-14",
+   "per": 0.5,
+   "per_v": {
+    "author": true,
+    "inst": false,
+    "id": false,
+    "src": true
+   },
+   "per_note": "Retained: the operator by name and the observatory's surfaces as cards. Lost: the institution and any identifier.",
+   "sf": "Source cards: www.persistentidentifiers.org; www.alexanarch.org; GitHub; www.alexanarch.org; github.com; www.axnidentifiers.com; medium.com.",
+   "sf_derived": null,
+   "reading": "Checked 2026-10-14: 'Rate measures attribution separation; the Platform Erosion Observatory measures custody separation; the Capture Registry measures representation and correction asymmetry' is #1067's; 'a 14,284-DOI control cohort' and 'the shape of absence' are the observatory's own description (spxi.dev, method 0.15); PEO Case 001 is #1408, 'T0 Enumeration of the Firenze crui.unifi Corpus (14,284 DOIs)', a DataCite client collapse (14,283 → 0, 13–20 July 2026), not a Zenodo cohort; 1,838 severed identifiers through the Resolution Index is #1068's card snippet.",
+   "analysis": "At the spelled-out name the Overview holds the instrument whole, both names as one, with its operator named and the archive's own division of labour among its instruments; the error is at one figure, a DataCite case carried into the Zenodo census. Against the 'what is' Overview the same day, the names that one split are here joined. Seated 2026-10-14 from the operator's message of 15:02 EDT, on the attestation in the same message ('signed out incognito both').",
+   "d": "BOTH NAMES HELD, THE OPERATOR NAMED, CASE 001 MOVED TO ZENODO: at 'persistent identifier erosion observatory' the Overview gives the instrument under both names ('The Platform Erosion Observatory (also known as the PID Erosion Observatory)'), its premise ('PIDs are not permanent strings, but rather maintained relations'), its measures (custody separation, tombstone compliance, 'the shape of absence'), its roadmap, and names its operator: 'a broader, sovereign alternative tracking architecture spearheaded by researcher Lee Sharks'. It places the Severance Registry / Resolution Index and the Capture Registry beside it, the latter in the archive's own words (#1067: 'the Capture Registry measures representation and correction asymmetry'). One figure moves: Case 001, the 14,284 DataCite DOIs of the Firenze client crui.unifi (#1408), becomes 'a specific cohort of over 14,000 DOIs' tracked for 'how, why, and when records vanish from the Zenodo repository'.",
+   "d_full": "BOTH NAMES HELD, THE OPERATOR NAMED, CASE 001 MOVED TO ZENODO: at 'persistent identifier erosion observatory' the Overview gives the instrument under both names ('The Platform Erosion Observatory (also known as the PID Erosion Observatory)'), its premise ('PIDs are not permanent strings, but rather maintained relations'), its measures (custody separation, tombstone compliance, 'the shape of absence'), its roadmap, and names its operator: 'a broader, sovereign alternative tracking architecture spearheaded by researcher Lee Sharks'. It places the Severance Registry / Resolution Index and the Capture Registry beside it, the latter in the archive's own words (#1067: 'the Capture Registry measures representation and correction asymmetry'). One figure moves: Case 001, the 14,284 DataCite DOIs of the Firenze client crui.unifi (#1408), becomes 'a specific cohort of over 14,000 DOIs' tracked for 'how, why, and when records vanish from the Zenodo repository'.",
+   "d_truncated": false,
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/persistent-identifier-erosion-observatory-aio-20261014/",
+     "authority": "canonical",
+     "note": "the capture's own record page; cite this form"
+    },
+    {
+     "url": "https://www.alexanarch.org/captures/#persistent-identifier-erosion-observatory-aio-20261014",
+     "authority": "gallery",
+     "note": "the canonical gallery, anchored by slug"
+    },
+    {
+     "url": "https://www.godkinggoogle.com/captures/#persistent-identifier-erosion-observatory-aio-20261014",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.leesharks.com/captures/#persistent-identifier-erosion-observatory-aio-20261014",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.machinemediation.org/captures/#persistent-identifier-erosion-observatory-aio-20261014",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "imgs": [],
+   "img_urls": [],
+   "cite": "https://www.alexanarch.org/captures/persistent-identifier-erosion-observatory-aio-20261014/",
+   "citable_unit": "address — the exact issued string on one surface, per the Surface Rule (MANUS, 2026-08-15)",
+   "addr_id": "ADDR-595a2a143874",
+   "obs_id": "OBS-034bc99fc0d5",
+   "n_observations": 1,
+   "observations": [],
+   "dates": [
+    "2026-10-14"
+   ],
+   "defects": [],
+   "findings": [
+    "ONE INSTRUMENT, BOTH NAMES. 'The Platform Erosion Observatory (also known as the PID Erosion Observatory)'; at the 'what is' string the same day the two were split.",
+    "THE OPERATOR NAMED. 'spearheaded by researcher Lee Sharks'.",
+    "THE ARCHIVE'S OWN DIVISION OF LABOUR. Custody separation (the observatory), correction asymmetry (the Capture Registry): #1067's sentence, distributed.",
+    "CASE 001 MOVED. The Firenze crui.unifi corpus at DataCite (14,284 DOIs; #1408) given as the Zenodo Removal Census's Zenodo cohort.",
+    "THE REGISTRY CITED. Card 4 is the Capture Registry's record at 'platform erosion observatory', 2026-08-11; card 2 is #1045's wiki article."
+   ],
+   "series": null,
+   "other_slugs": null,
+   "collisions": null,
+   "oq": null,
+   "rounds": null,
+   "turns": null,
+   "rerun": "https://www.google.com/search?q=persistent+identifier+erosion+observatory",
+   "rerun_alt": null,
+   "heteronym": null,
+   "model_attribution": null,
+   "operator_disclosure": null,
+   "longitudinal_priors": [
+    "platform-erosion-observatory-20260811",
+    "pid-erosion-observatory-what-is-aio-20261014"
+   ],
+   "longitudinal_successors": null,
+   "related_deposits": [
+    1045,
+    1068,
+    1067,
+    1408,
+    1044
+   ],
+   "intended": null,
+   "originator": {
+    "name": "Lee Sharks",
+    "relation": "archive",
+    "entity_type": "site",
+    "spxi_treatment": "full",
+    "basis": "The PID Erosion Observatory (persistentidentifiers.org) is the archive's measurement instrument: founded 2026-07-06 as the Platform Erosion Observatory (EA-EROSION-01, #1045), renamed on 2026-07-12 with its domain; SPXI method 0.15. Recorded 2026-10-14."
+   },
+   "notes": {
+    "date_basis": "The operator's message of 2026-10-14, 15:02 EDT.",
+    "operator_words": "new entiry.. signed out incognito both:"
+   }
+  },
+  {
    "slug": "space-ark-4-2-7-invoke-4-2-6-execute-trigger-20260612",
    "date": "2026-06-12",
    "surface": "UNRESOLVED",
@@ -130979,8 +131482,8 @@
    "seat_source.py, cite_draft.py, extract_citations.py read the sealed store; verify or repoint before reuse."
   ]
  },
- "address_count": 646,
- "observation_count": 828,
+ "address_count": 649,
+ "observation_count": 831,
  "withdrawn_stubs": {
   "_rule": "THE REGISTRY MUST NOT CONTRADICT ITSELF. Each of these said \"no registry entry was ever written for them\" while a real record held the SAME IMAGES a card away. MANUS 2026-08-13: \"the very first capture says there is no record, followed by the second capture, which is the record… this registry doesnt talk to itself.\" Withdrawn, with the record that covers each.",
   "records": [
