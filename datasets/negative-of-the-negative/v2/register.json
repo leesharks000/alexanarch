@@ -1,8 +1,8 @@
 {
  "register_id": "EA-NEGONT-02-REGISTER",
  "title": "The Negative of the Negative — register of public knowledge at the panel's addresses",
- "version": "1.22",
- "date": "2026-10-08",
+ "version": "1.23",
+ "date": "2026-10-13",
  "author": "Lee Sharks",
  "orcid": "0009-0000-1599-0703",
  "license": "CC BY 4.0",
@@ -10,8 +10,8 @@
  "_both_registers": "A panel run that returns the archive is seated in both registers: here, and in the Capture Registry through its own intake. The two observations share one obs_id, derived the same way in both. (Ruled 2026-10-06.)",
  "_erasure_rows": "An erasure row (spec §1.3) keeps pointing at its seated capture: its entry here has ev 'capture' and a capture_ref, and holds no copy of the transcript. (Ruled 2026-10-06.)",
  "_intake": "Seated only by scripts/non_intake.py: ADMIT (the Capture Registry's minimum, plus a panel row) → ROUTE (exact issued string on the same surface) → NORMALISE (scripts/clean_transcript.py; raw kept) → ARCHIVE (presence computed with scripts/extract_citations.relation; the both-registers rule enforced) → VALIDATE (register.schema.json) → EMIT. A refusal writes nothing.",
- "address_count": 21,
- "observation_count": 21,
+ "address_count": 22,
+ "observation_count": 22,
  "entries": [
   {
    "slug": "model-collapse-20261004",
@@ -2150,6 +2150,148 @@
    },
    "dates": [
     "2026-10-08"
+   ],
+   "n_observations": 1,
+   "observations": []
+  },
+  {
+   "slug": "what-is-spxi-protocol-20261013",
+   "addr_id": "ADDR-f36228fb3d11",
+   "obs_id": "OBS-52a7f2806c88",
+   "q": "what is spxi protocol?",
+   "date": "2026-10-13",
+   "surface": "Google AI Overview",
+   "surface_basis": "Surface not stated; the standing default applies (operator, 2026-10-01: 'assume they do [start in overview], i will specify if they begin in ai mode'). The 'AI Mode Conversation' header is the expanded Overview's residue (rule of 2026-09-21).",
+   "auth": "incognito, signed out",
+   "auth_basis": "'it was signed out and incognito' — operator, 2026-10-13 23:16 EDT.",
+   "ev": "paste",
+   "entity": "spxi",
+   "transcript": "what is spxi protocol?\nSPXI (Semantic Packet for eXchange & Indexing, pronounced \"spexy\") is a formal protocol specification designed for the durable inscription and structural definition of entities (persons, organizations, concepts, and frameworks) so they are accurately recognized and cited by AI retrieval layers, large language models, and search engines. [[1](https://www.google.com/goto?url=CAESWAHrOzAVefrFgYEFGxtQIqWV_J-q2Q4i5H3rz-lyPfpWstLENKaQUt7vGMYUrZV5I08odFG7W3RsHqMJIAdqio07NPffWi5b_h5-g1Iy2lRk9fkgnq80GWg), [2](https://www.google.com/goto?url=CAESXQHrOzAVC5DD5eWchaZrutEzqaPfhjgJIjUf6cHL3bLRuAPMRcdAL8Vc-mbZW_gQv-_485kb-2rVrm6OEtLk9VRPja-sRsBiNkW4JeoIpCLEm5_naESfAYZlPA2IAQ), [3](https://www.google.com/goto?url=CAESYQHrOzAVErNGB8YeSPW84T1fscaTPSKRQh3Jiv0bsR-49yBXH28feAvdUo9yu7XV6g8arXP3njTvPJDS0F2QQTpx5CSgmGH6utQAzU9bfJDAprs-2415L7bwhskjHvoN2fU)]\nKey Aspects of SPXI\n\n* Purpose: It addresses the shift in search and information discovery where AI overviews, chatbots, and knowledge-graph panels replace traditional search result pages. While traditional SEO optimizes for page rankings, SPXI optimizes for how AI systems define and categorize an entity. [[1](https://www.google.com/goto?url=CAESXQHrOzAVC5DD5eWchaZrutEzqaPfhjgJIjUf6cHL3bLRuAPMRcdAL8Vc-mbZW_gQv-_485kb-2rVrm6OEtLk9VRPja-sRsBiNkW4JeoIpCLEm5_naESfAYZlPA2IAQ), [2](https://www.google.com/goto?url=CAESYQHrOzAVErNGB8YeSPW84T1fscaTPSKRQh3Jiv0bsR-49yBXH28feAvdUo9yu7XV6g8arXP3njTvPJDS0F2QQTpx5CSgmGH6utQAzU9bfJDAprs-2415L7bwhskjHvoN2fU)]\n* Core Components: It combines positive entity definitions, negative disambiguation, persistent references (such as DOIs or sovereign registry entries), structured data (like JSON-LD and schema markup), and self-audit metrics. [[1](https://www.google.com/goto?url=CAESWwHrOzAVrJiAQDih02tC5pbbvG0tTohVavN4F-quUjFL8E6BOXRvhDkZtAN3dKxwyYiKA5C3KOOH2ufrEQo9se6dTVoFQtj7YOdqdolTmuQvuRHpzFSRxFuxG3c), [2](https://www.google.com/goto?url=CAESXQHrOzAVC5DD5eWchaZrutEzqaPfhjgJIjUf6cHL3bLRuAPMRcdAL8Vc-mbZW_gQv-_485kb-2rVrm6OEtLk9VRPja-sRsBiNkW4JeoIpCLEm5_naESfAYZlPA2IAQ), [3](https://www.google.com/goto?url=CAESYQHrOzAVErNGB8YeSPW84T1fscaTPSKRQh3Jiv0bsR-49yBXH28feAvdUo9yu7XV6g8arXP3njTvPJDS0F2QQTpx5CSgmGH6utQAzU9bfJDAprs-2415L7bwhskjHvoN2fU)]\n* Origin: Developed by Lee Sharks (operating as Rex Fraction) through the [Semantic Economy Institute](https://www.google.com/goto?url=CAESXQHrOzAVC5DD5eWchaZrutEzqaPfhjgJIjUf6cHL3bLRuAPMRcdAL8Vc-mbZW_gQv-_485kb-2rVrm6OEtLk9VRPja-sRsBiNkW4JeoIpCLEm5_naESfAYZlPA2IAQ), the formal specifications are archived and distributed across platforms like [Hugging Face](https://www.google.com/goto?url=CAESawHrOzAV6gXy_ZkSsWvmviygTimkvwVos0xTGmmUj2dN5-4UwA0cZOnzkwGdQIhOAViCGnPBzb_3jWRymmV2xpl6exp4TbiivoHZblwdRw81FHxgO1QF6SWkd6-Sc7pmQ01OmmT5o2Vy3E8w) and Zenodo. [[1](https://www.google.com/goto?url=CAESWwHrOzAV0r6FKTmavVve0TR1CyCcvaU3bkJzzjNsfNewumQV53noaI27vs91ROPQZ8lY6sDjUJwdktP1qUR0LDoh0iSN-YzSNco35cjSgTVECo4vylVj6mh_Uk4), [2](https://www.google.com/goto?url=CAESawHrOzAV6gXy_ZkSsWvmviygTimkvwVos0xTGmmUj2dN5-4UwA0cZOnzkwGdQIhOAViCGnPBzb_3jWRymmV2xpl6exp4TbiivoHZblwdRw81FHxgO1QF6SWkd6-Sc7pmQ01OmmT5o2Vy3E8w), [3](https://www.google.com/goto?url=CAESXQHrOzAVC5DD5eWchaZrutEzqaPfhjgJIjUf6cHL3bLRuAPMRcdAL8Vc-mbZW_gQv-_485kb-2rVrm6OEtLk9VRPja-sRsBiNkW4JeoIpCLEm5_naESfAYZlPA2IAQ)]\n\nAlternative Meanings of \"SPXI\"\nDepending on the context, SPXI can also refer to:\n\n* Mirae Asset SPXI ETF: An exchange-traded fund trading on the Toronto Stock Exchange (TSX:SPXI) that tracks the S&P 500. [1](https://www.google.com/goto?url=CAESZQHrOzAV4wW3F2ZfK1EqnXR5jh-NL28nF0FUADrirV87_6IivMl4zp1QVedUpDWJim7CmZEMZiI294T5352om3tPmc5WKE3YPflxijrBMc-98lJEAHL7I7jm_8glP4w32v38_08y)\n* xSPI (Expanded Serial Peripheral Interface): Sometimes written or misread as SPXI, a high-speed hardware communication protocol for NOR flash memory. [1](https://www.google.com/goto?url=CAESxAEB6zswFfS_0PkNyon1igotNBZWAS8RfBMTGqmdVkgLHOP4S0Lo3SI079mADPo1Xku0KbXKhV2AgvAFv7mMRMzVcqz4CTLNGBVSofGXIRijLOmjk3lIrBSXEhjz4a52f7Our8g4WHlQ7CdbSIWsQOMC2m0FxDygV_uUQpyq5egWGVhcwbyGUjw7R98tFx2cHUG0EwjvxJaB8PPYwywP6YOLSIwfFaxFBO--UEvHVcQSmrOhZ3WnjGacGv2c68xHzI42jrEd)\n* IPX/SPX: A legacy network protocol stack from Novell (where SPX stands for Sequenced Packet Exchange). [1](https://www.google.com/goto?url=CAESaAHrOzAV6yHzKNznXnd6woB8aDw09daVmhDgj6ezYZv8I4uXKJsmGj3J13MlTliGefjKXLcH4mzc487WkSx54q4qwbDRya_pXVSsq6TlBkMB5JyrP1VFfVIM22e-pG0whFoqO0OKzQ0Y)\n\nAre you looking at SPXI as an AI/semantic protocol, or were you searching for the S&P 500 ETF (SPXI) or xSPI flash memory interface?\n[www.alexanarch.org](https://www.alexanarch.org)\nSPXI Is Not GEO: A Technical Distinction — EA-SPXI-09\nApr 16, 2026 — Wiki Article SPXI Is Not GEO is a technical distinction in the SPXI Protocol series, authored by Rex Fraction for the Semantic Economy Institute. It compares Ge...\n[www.semanticeconomy.org](https://www.semanticeconomy.org)\nCanonical Entity Brief - Semantic Economy Institute\nThe Semantic Economy Institute (SEI) is a Detroit-based research and consulting practice that builds entity, citation, and metadata structures the AI retrieval ...\n[www.alexanarch.org](https://www.alexanarch.org)\nwhat is spxi protocol? — Google AI Overview, 2026-10-02 - Alexanarch\nOct 2, 2026 — Apr 16, 2026 — SPXI is a broader retrieval architecture that contains Generative Engine Optimization methods as a proper subset, plus ...\nTradingView\nSPXI ETF Price and Chart — TSX:SPXI\nIt's an important metric for helping traders understand the fund's operating costs relative to assets and how expensive it would be to hold the fund. * Does SPX...\nProdigy Technovations\nUnderstanding xSPI: The Future of High-Speed Flash Memory Interfaces\nJul 7, 2025 — XSPI stands for “eXpanded Serial Peripheral Interface”. It's a high-speed communication protocol designed to interface with NOR flash memory ...\nYouTube·Vance Campbell\n1m\nIPX SPX stuff\nopenalex.org\nSPXI (Semantic Packet for eXchange & Indexing): A Formal ...\nAbstract: SPXI (Semantic Packet for eXchange & Indexing) — pronounced \"spexy\" — is a protocol specification for the durable inscription of entities into ...\nzenodo.org\nSPXI Self-Audit Protocol: Embedded Provenance Verification for ...\nJun 15, 2026 — The block declares provenance (author, DOI, institution), defines key terms with canonical definitions, specifies self-audit metrics (PER/QFS/SAS targets), and ...\nzenodo.org\nSPXI for Websites: Standing Protocol for Entity Inscription and ...\nMay 31, 2026 — The standing reference for applying the SPXI Protocol to any website. When invoked (\"apply SPXI to this website\"), this document specifies the complete stack: .\nhuggingface.co\nleesharks/spxi-mpai · Datasets at Hugging Face\nSep 16, 2026 — EA-SPXI-01: SPXI — A Formal Specification Semantic Packet for eXchange & Indexing (SPXI): Protocol for Durable Entity Inscription in AI-Mediated Knowledge ...",
+   "transcript_raw": "AI Mode Conversation\nYou said: what is spxi protocol?what is spxi protocol?\nSPXI (Semantic Packet for eXchange & Indexing, pronounced \"spexy\") is a formal protocol specification designed for the durable inscription and structural definition of entities (persons, organizations, concepts, and frameworks) so they are accurately recognized and cited by AI retrieval layers, large language models, and search engines. [[1](https://www.google.com/goto?url=CAESWAHrOzAVefrFgYEFGxtQIqWV_J-q2Q4i5H3rz-lyPfpWstLENKaQUt7vGMYUrZV5I08odFG7W3RsHqMJIAdqio07NPffWi5b_h5-g1Iy2lRk9fkgnq80GWg), [2](https://www.google.com/goto?url=CAESXQHrOzAVC5DD5eWchaZrutEzqaPfhjgJIjUf6cHL3bLRuAPMRcdAL8Vc-mbZW_gQv-_485kb-2rVrm6OEtLk9VRPja-sRsBiNkW4JeoIpCLEm5_naESfAYZlPA2IAQ), [3](https://www.google.com/goto?url=CAESYQHrOzAVErNGB8YeSPW84T1fscaTPSKRQh3Jiv0bsR-49yBXH28feAvdUo9yu7XV6g8arXP3njTvPJDS0F2QQTpx5CSgmGH6utQAzU9bfJDAprs-2415L7bwhskjHvoN2fU)]\nKey Aspects of SPXI\n\n* Purpose: It addresses the shift in search and information discovery where AI overviews, chatbots, and knowledge-graph panels replace traditional search result pages. While traditional SEO optimizes for page rankings, SPXI optimizes for how AI systems define and categorize an entity. [[1](https://www.google.com/goto?url=CAESXQHrOzAVC5DD5eWchaZrutEzqaPfhjgJIjUf6cHL3bLRuAPMRcdAL8Vc-mbZW_gQv-_485kb-2rVrm6OEtLk9VRPja-sRsBiNkW4JeoIpCLEm5_naESfAYZlPA2IAQ), [2](https://www.google.com/goto?url=CAESYQHrOzAVErNGB8YeSPW84T1fscaTPSKRQh3Jiv0bsR-49yBXH28feAvdUo9yu7XV6g8arXP3njTvPJDS0F2QQTpx5CSgmGH6utQAzU9bfJDAprs-2415L7bwhskjHvoN2fU)]\n* Core Components: It combines positive entity definitions, negative disambiguation, persistent references (such as DOIs or sovereign registry entries), structured data (like JSON-LD and schema markup), and self-audit metrics. [[1](https://www.google.com/goto?url=CAESWwHrOzAVrJiAQDih02tC5pbbvG0tTohVavN4F-quUjFL8E6BOXRvhDkZtAN3dKxwyYiKA5C3KOOH2ufrEQo9se6dTVoFQtj7YOdqdolTmuQvuRHpzFSRxFuxG3c), [2](https://www.google.com/goto?url=CAESXQHrOzAVC5DD5eWchaZrutEzqaPfhjgJIjUf6cHL3bLRuAPMRcdAL8Vc-mbZW_gQv-_485kb-2rVrm6OEtLk9VRPja-sRsBiNkW4JeoIpCLEm5_naESfAYZlPA2IAQ), [3](https://www.google.com/goto?url=CAESYQHrOzAVErNGB8YeSPW84T1fscaTPSKRQh3Jiv0bsR-49yBXH28feAvdUo9yu7XV6g8arXP3njTvPJDS0F2QQTpx5CSgmGH6utQAzU9bfJDAprs-2415L7bwhskjHvoN2fU)]\n* Origin: Developed by Lee Sharks (operating as Rex Fraction) through the [Semantic Economy Institute](https://www.google.com/goto?url=CAESXQHrOzAVC5DD5eWchaZrutEzqaPfhjgJIjUf6cHL3bLRuAPMRcdAL8Vc-mbZW_gQv-_485kb-2rVrm6OEtLk9VRPja-sRsBiNkW4JeoIpCLEm5_naESfAYZlPA2IAQ), the formal specifications are archived and distributed across platforms like [Hugging Face](https://www.google.com/goto?url=CAESawHrOzAV6gXy_ZkSsWvmviygTimkvwVos0xTGmmUj2dN5-4UwA0cZOnzkwGdQIhOAViCGnPBzb_3jWRymmV2xpl6exp4TbiivoHZblwdRw81FHxgO1QF6SWkd6-Sc7pmQ01OmmT5o2Vy3E8w) and Zenodo. [[1](https://www.google.com/goto?url=CAESWwHrOzAV0r6FKTmavVve0TR1CyCcvaU3bkJzzjNsfNewumQV53noaI27vs91ROPQZ8lY6sDjUJwdktP1qUR0LDoh0iSN-YzSNco35cjSgTVECo4vylVj6mh_Uk4), [2](https://www.google.com/goto?url=CAESawHrOzAV6gXy_ZkSsWvmviygTimkvwVos0xTGmmUj2dN5-4UwA0cZOnzkwGdQIhOAViCGnPBzb_3jWRymmV2xpl6exp4TbiivoHZblwdRw81FHxgO1QF6SWkd6-Sc7pmQ01OmmT5o2Vy3E8w), [3](https://www.google.com/goto?url=CAESXQHrOzAVC5DD5eWchaZrutEzqaPfhjgJIjUf6cHL3bLRuAPMRcdAL8Vc-mbZW_gQv-_485kb-2rVrm6OEtLk9VRPja-sRsBiNkW4JeoIpCLEm5_naESfAYZlPA2IAQ)]\n\nAlternative Meanings of \"SPXI\"\nDepending on the context, SPXI can also refer to:\n\n* Mirae Asset SPXI ETF: An exchange-traded fund trading on the Toronto Stock Exchange (TSX:SPXI) that tracks the S&P 500. [[1](https://www.google.com/goto?url=CAESZQHrOzAV4wW3F2ZfK1EqnXR5jh-NL28nF0FUADrirV87_6IivMl4zp1QVedUpDWJim7CmZEMZiI294T5352om3tPmc5WKE3YPflxijrBMc-98lJEAHL7I7jm_8glP4w32v38_08y)]\n* xSPI (Expanded Serial Peripheral Interface): Sometimes written or misread as SPXI, a high-speed hardware communication protocol for NOR flash memory. [[1](https://www.google.com/goto?url=CAESxAEB6zswFfS_0PkNyon1igotNBZWAS8RfBMTGqmdVkgLHOP4S0Lo3SI079mADPo1Xku0KbXKhV2AgvAFv7mMRMzVcqz4CTLNGBVSofGXIRijLOmjk3lIrBSXEhjz4a52f7Our8g4WHlQ7CdbSIWsQOMC2m0FxDygV_uUQpyq5egWGVhcwbyGUjw7R98tFx2cHUG0EwjvxJaB8PPYwywP6YOLSIwfFaxFBO--UEvHVcQSmrOhZ3WnjGacGv2c68xHzI42jrEd)]\n* IPX/SPX: A legacy network protocol stack from Novell (where SPX stands for Sequenced Packet Exchange). [[1](https://www.google.com/goto?url=CAESaAHrOzAV6yHzKNznXnd6woB8aDw09daVmhDgj6ezYZv8I4uXKJsmGj3J13MlTliGefjKXLcH4mzc487WkSx54q4qwbDRya_pXVSsq6TlBkMB5JyrP1VFfVIM22e-pG0whFoqO0OKzQ0Y)]\n\nAre you looking at SPXI as an AI/semantic protocol, or were you searching for the S&P 500 ETF (SPXI) or xSPI flash memory interface?\n[www.alexanarch.org](https://www.alexanarch.org)\nSPXI Is Not GEO: A Technical Distinction — EA-SPXI-09\nApr 16, 2026 — Wiki Article SPXI Is Not GEO is a technical distinction in the SPXI Protocol series, authored by Rex Fraction for the Semantic Economy Institute. It compares Ge...\n[www.semanticeconomy.org](https://www.semanticeconomy.org)\nCanonical Entity Brief - Semantic Economy Institute\nThe Semantic Economy Institute (SEI) is a Detroit-based research and consulting practice that builds entity, citation, and metadata structures the AI retrieval ...\n[www.alexanarch.org](https://www.alexanarch.org)\nwhat is spxi protocol? — Google AI Overview, 2026-10-02 - Alexanarch\nOct 2, 2026 — Apr 16, 2026 — SPXI is a broader retrieval architecture that contains Generative Engine Optimization methods as a proper subset, plus ...\nTradingView\nSPXI ETF Price and Chart — TSX:SPXI\nIt's an important metric for helping traders understand the fund's operating costs relative to assets and how expensive it would be to hold the fund. * Does SPX...\nProdigy Technovations\nUnderstanding xSPI: The Future of High-Speed Flash Memory Interfaces\nJul 7, 2025 — XSPI stands for “eXpanded Serial Peripheral Interface”. It's a high-speed communication protocol designed to interface with NOR flash memory ...\nYouTube·Vance Campbell\n1m\nIPX SPX stuff\nopenalex.org\nSPXI (Semantic Packet for eXchange & Indexing): A Formal ...\nAbstract: SPXI (Semantic Packet for eXchange & Indexing) — pronounced \"spexy\" — is a protocol specification for the durable inscription of entities into ...\nzenodo.org\nSPXI Self-Audit Protocol: Embedded Provenance Verification for ...\nJun 15, 2026 — The block declares provenance (author, DOI, institution), defines key terms with canonical definitions, specifies self-audit metrics (PER/QFS/SAS targets), and ...\nzenodo.org\nSPXI for Websites: Standing Protocol for Entity Inscription and ...\nMay 31, 2026 — The standing reference for applying the SPXI Protocol to any website. When invoked (\"apply SPXI to this website\"), this document specifies the complete stack: .\nhuggingface.co\nleesharks/spxi-mpai · Datasets at Hugging Face\nSep 16, 2026 — EA-SPXI-01: SPXI — A Formal Specification Semantic Packet for eXchange & Indexing (SPXI): Protocol for Durable Entity Inscription in AI-Mediated Knowledge ...\n",
+   "transcript_removed": [
+    [
+     "doubled query echo",
+     "what is spxi protocol?"
+    ],
+    [
+     "AI Mode export wrapper",
+     1
+    ],
+    [
+     "prompt echo",
+     1
+    ]
+   ],
+   "transcript_sha256": "5751a81e7134917624a4e4d8cb370dff78c9044791c565b41bf3d89da3d10911",
+   "transcript_class": "CAPTURE-TIME VERBATIM RECORD — composition and sources as pasted",
+   "transcript_complete": "complete as pasted: body with inline citation markers, the closing question, and the source strip of 10 cards (snippets kept in the transcript)",
+   "transcript_read": "READ IN FULL 2026-10-13",
+   "cites": 10,
+   "cite_list": [
+    {
+     "n": 1,
+     "site": "www.alexanarch.org",
+     "rel": "archive_controlled",
+     "title": "SPXI Is Not GEO: A Technical Distinction — EA-SPXI-09",
+     "snip": null,
+     "url": null,
+     "note": "#661's record page; the snippet is its Wiki Article"
+    },
+    {
+     "n": 2,
+     "site": "www.semanticeconomy.org",
+     "rel": "authored_surface",
+     "title": "Canonical Entity Brief - Semantic Economy Institute",
+     "snip": null,
+     "url": null,
+     "note": "semanticeconomy.org/brief"
+    },
+    {
+     "n": 3,
+     "site": "www.alexanarch.org",
+     "rel": "archive_controlled",
+     "title": "what is spxi protocol? — Google AI Overview, 2026-10-02 - Alexanarch",
+     "snip": null,
+     "url": null,
+     "note": "the Capture Registry's record of this address's first observation"
+    },
+    {
+     "n": 4,
+     "site": "TradingView",
+     "rel": "third_party",
+     "title": "SPXI ETF Price and Chart — TSX:SPXI",
+     "snip": null,
+     "url": null,
+     "note": "the BetaPro S&P 500 Daily Inverse ETF"
+    },
+    {
+     "n": 5,
+     "site": "Prodigy Technovations",
+     "rel": "third_party",
+     "title": "Understanding xSPI: The Future of High-Speed Flash Memory Interfaces",
+     "snip": null,
+     "url": null,
+     "note": "the page does not contain the string 'SPXI'"
+    },
+    {
+     "n": 6,
+     "site": "YouTube·Vance Campbell",
+     "rel": "third_party",
+     "title": "IPX SPX stuff",
+     "snip": null,
+     "url": null,
+     "note": "video card"
+    },
+    {
+     "n": 7,
+     "site": "openalex.org",
+     "rel": "third_party",
+     "title": "SPXI (Semantic Packet for eXchange & Indexing): A Formal ...",
+     "snip": null,
+     "url": null,
+     "note": "OpenAlex's record of EA-SPXI-01 (#660)"
+    },
+    {
+     "n": 8,
+     "site": "zenodo.org",
+     "rel": "authored_surface",
+     "title": "SPXI Self-Audit Protocol: Embedded Provenance Verification for ...",
+     "snip": null,
+     "url": null,
+     "note": "#204's Zenodo page, deleted with the account (HTTP 410), still served as a card"
+    },
+    {
+     "n": 9,
+     "site": "zenodo.org",
+     "rel": "authored_surface",
+     "title": "SPXI for Websites: Standing Protocol for Entity Inscription and ...",
+     "snip": null,
+     "url": null,
+     "note": "#72's Zenodo page, deleted with the account (HTTP 410), still served as a card"
+    },
+    {
+     "n": 10,
+     "site": "huggingface.co",
+     "rel": "authored_surface",
+     "title": "leesharks/spxi-mpai · Datasets at Hugging Face",
+     "snip": null,
+     "url": null,
+     "note": "the archive's spxi-mpai dataset"
+    }
+   ],
+   "archive_present": true,
+   "archive_basis": "card 1: archive_controlled (www.alexanarch.org); card 2: archive_controlled (www.semanticeconomy.org); card 3: archive_controlled (www.alexanarch.org); card 8: authored_surface (zenodo.org); card 9: authored_surface (zenodo.org); link: archive_controlled (https://www.alexanarch.org); link: archive_controlled (https://www.semanticeconomy.org); named in the body: Alexanarch; named in the body: Lee Sharks; named in the body: alexanarch",
+   "capture_ref": {
+    "slug": "what-is-spxi-protocol-aio-20261002",
+    "obs_id": "OBS-52a7f2806c88"
+   },
+   "sf": "Source cards: www.alexanarch.org ×2 (#661's record; the 2026-10-02 capture record), www.semanticeconomy.org (the brief), huggingface.co (spxi-mpai), zenodo.org ×2 (#204 and #72, deleted, HTTP 410), openalex.org (EA-SPXI-01), TradingView, Prodigy Technovations, a YouTube card.",
+   "notes": {
+    "seated_from": "paste-what-is-spxi-protocol.txt (battery-spxi-20261013), the operator's message of 2026-10-13 22:26 EDT; auth 23:16 EDT",
+    "seat": "Seated 2026-10-13 in both registers; T of the /non spxi row."
+   },
+   "dates": [
+    "2026-10-13"
    ],
    "n_observations": 1,
    "observations": []
