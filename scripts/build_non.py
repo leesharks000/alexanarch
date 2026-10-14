@@ -245,7 +245,15 @@ def address_href(row, address):
 
 def _sources():
     reg = {x["deposit_number"]: x for x in json.loads((ROOT / "data/registry.json").read_text(encoding="utf-8"))["deposits"]}
+    # archive sources that are surfaces, not deposits (admitted outside the string pass; first: spxi.dev, 2026-10-13)
+    reg["spxi.dev"] = {"title": "spxi.dev — the protocol's canonical surface (current; not a deposit)", "creator": "Lee Sharks / Rex Fraction", "date": "2026-10-13"}
     return reg
+
+def dep_href(dep):
+    return f"/s/records/{dep}/" if isinstance(dep, int) else {"spxi.dev": "https://www.spxi.dev/"}.get(dep, "#")
+
+def dep_label(dep):
+    return f"#{dep}" if isinstance(dep, int) else str(dep)
 
 def claim_li(cid, ko, ledger, reg, FC=None, FS=None):
     """One sourced claim, the same rendering wherever it appears (provenance list, lineage card)."""
@@ -256,7 +264,7 @@ def claim_li(cid, ko, ledger, reg, FC=None, FS=None):
         return (f'<li><code class="cid">{esc(cid)}</code> {esc(FS.get(f["source"], f["source"]))}, {esc(f["locus"])} '
                 f'<span class="pill dim">documented · field</span><br><span class="qt">{esc(unquote(f["quote"]))}</span></li>')
     c = ledger[cid]; d = reg[c["dep"]]
-    return (f'<li><code class="cid">{esc(cid)}</code> <a href="/s/records/{c["dep"]}/">#{c["dep"]}</a> <em>{esc(d["title"][:120])}</em> '
+    return (f'<li><code class="cid">{esc(cid)}</code> <a href="{dep_href(c["dep"])}">{esc(dep_label(c["dep"]))}</a> <em>{esc(d["title"][:120])}</em> '
             f'<span class="meta">{esc(str(d.get("creator") or ""))} · {esc(str(c.get("date") or ""))} · {esc(c["locus"])}</span> '
             f'<span class="pill">{esc(c["modality"])}</span><br><span class="qt">{esc(unquote(c["quote"]))}</span></li>')
 
@@ -378,7 +386,7 @@ def two_levels(row, key, pk="P", kk="KO", arm="Field and archive (B ∪ A)"):
             src = FS.get(e, e); eh = esc(src)
         else:
             d = reg[e]; eh = f'#{e} {esc(d["title"][:70])} · {esc(str(d.get("date") or ""))}'
-        others = sorted({("#%d" % ledger[c]["dep"]) if c in ledger else FC[c]["source"] for c in ln["claims"]})
+        others = sorted({dep_label(ledger[c]["dep"]) if c in ledger else FC[c]["source"] for c in ln["claims"]})
         cards.append(f'<details class="lc"><summary><span class="lc-n">{i}</span>{esc(ln["lineage"])}<span class="lc-e">{eh}</span>'
                      f'<span class="lc-c">{len(ln["claims"])} claim{"" if len(ln["claims"]) == 1 else "s"} · {esc(", ".join(others))}</span></summary>'
                      f'<ul class="claims">{"".join(claim_li(c, ko, ledger, reg, FC, FS) for c in ln["claims"])}</ul></details>')
@@ -459,7 +467,7 @@ def knowledge_object(ko, row):
     sourced below, claim by claim, from the frozen ledgers (the archive's from ledger-archive.json, the field's from the row).
     Each sentence is its own collapsible entry, so the provenance can be read one sentence at a time."""
     ledger = {c["id"]: c for c in json.loads((ROOT / row["ledger"]["archive"]).read_text(encoding="utf-8"))}
-    reg = {x["deposit_number"]: x for x in json.loads((ROOT / "data/registry.json").read_text(encoding="utf-8"))["deposits"]}
+    reg = _sources()
     paras = {}
     for snt in ko["sentences"]:
         paras.setdefault(snt["para"], []).append(snt["text"])
@@ -477,7 +485,7 @@ def knowledge_object(ko, row):
                           f'<span class="pill dim">documented · field</span><br><span class="qt">{esc(unquote(f["quote"]))}</span></li>')
             else:
                 c = ledger[cid]; d = reg[c["dep"]]
-                cl.append(f'<li><code class="cid">{esc(cid)}</code> <a href="/s/records/{c["dep"]}/">#{c["dep"]}</a> <em>{esc(d["title"][:120])}</em> '
+                cl.append(f'<li><code class="cid">{esc(cid)}</code> <a href="{dep_href(c["dep"])}">{esc(dep_label(c["dep"]))}</a> <em>{esc(d["title"][:120])}</em> '
                           f'<span class="meta">{esc(str(d.get("creator") or ""))} · {esc(str(c.get("date") or ""))} · {esc(c["locus"])}</span> '
                           f'<span class="pill">{esc(c["modality"])}</span><br><span class="qt">{esc(unquote(c["quote"]))}</span></li>')
         entries.append(det(f'{snt["n"]}.', f'<span class="prov-s">{esc(snt["text"])}</span>', f'<ul class="claims">{"".join(cl)}</ul>',
@@ -699,9 +707,24 @@ def main():
                          n=f'{nfc} field claims · {len(on["translation"])} rows'))
             ms = r.get("measure") or {}
             if ms:
-                c.append(det("R7", "the measure", f'<p>{md_inline(ms["rule"])}: v0.8 {ms["v0.8"]["surviving"]} of {ms["v0.8"]["of"]}; '
-                             f'v0.7 {ms["v0.7"]["surviving"]} of {ms["v0.7"]["of"]} (positions {esc(str(ms["v0.7"]["positions"]))}).</p>',
+                v7 = (f'; v0.7 {ms["v0.7"]["surviving"]} of {ms["v0.7"]["of"]} (positions {esc(str(ms["v0.7"]["positions"]))})' if ms.get("v0.7") else
+                      f' (positions {esc(str(ms["v0.8"]["positions"]))}; composed first under v0.8, so there is no v0.7 object to measure against)')
+                c.append(det("R7", "the measure", f'<p>{md_inline(ms["rule"])}: v0.8 {ms["v0.8"]["surviving"]} of {ms["v0.8"]["of"]}{v7}.</p>',
                              n=f'{ms["v0.8"]["surviving"]} of {ms["v0.8"]["of"]} survive'))
+            ng = r.get("negative")
+            if ng:
+                ex = ng["exhibit"]
+                crs = "".join(f'<tr><td>{esc(x["id"])}</td><td><span class="qt">{esc(x["span"])}</span></td><td>{esc(x["type"])}</td>'
+                              f'<td>{esc(", ".join(x["answered_by"]))}</td><td>{esc(", ".join("§%d" % n for n in x["KO_sentences"]))}</td>'
+                              f'<td>{esc("; ".join(x["P_items"]))}</td><td>{esc(x["check"])}</td></tr>' for x in ng["corrections"])
+                pe = r.get("procedure_experimental") or {}
+                c.append(det("N", "the negative exhibit and its corrections <span class=\"meta\">procedure tried first; not in v0.8</span>",
+                             f'<p><a href="{esc(ex["record"])}">{esc(ex["address"])}</a> · {esc(ex["surface"])} · {esc(ex["date"])} · {esc(ex["auth"])}. {md_inline(ex["role"])}</p>'
+                             f'<div class="tw"><table class="flg"><thead><tr><th></th><th>N, verbatim</th><th>move</th><th>answered by</th><th>KO</th><th>compression</th><th>check</th></tr></thead>'
+                             f'<tbody>{crs}</tbody></table></div><p class="meta">{md_inline(ng["check"]["rule"])}: {ng["check"]["answered"]} of {ng["check"]["of"]} answered.</p>'
+                             + (f'<p class="meta"><strong>The procedure, as metadata of this worked example.</strong> {esc(pe.get("status", ""))}</p><ul>'
+                                + "".join(f"<li>{md_inline(x)}</li>" for x in pe.get("steps", [])) + '</ul>' if pe else ""),
+                             n=f'{ng["check"]["answered"]} of {ng["check"]["of"]} answered'))
         c.append(det("L_F(B)" if onto else "L(B)", "recomposed from the disclosed field" + (", in the field's ontology" if onto else ""),
                      md_block(o["L_B"]["text"]), n=f'{o["L_B"]["words"]} words'))
         c.append(det("L_A(B ∪ A)" if onto else "L(B ∪ A)",
