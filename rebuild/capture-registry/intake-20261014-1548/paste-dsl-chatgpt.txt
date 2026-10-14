@@ -1,0 +1,263 @@
+
+
+Log in
+You said:
+
+ChatGPT said:
+Directionality of Semantic Labor (DSL) is a concept defined by Lee Sharks (2026) that measures whether an AI system's work moves in the direction of the task the user actually requested, rather than drifting toward a different task, declining it, or redirecting it. 
+
+Labor Vector
++1
+
+The central question is: Is the system's output advancing the user's intended task, or is it directing its effort somewhere else?
+
+How it works
+DSL distinguishes between the quality of an answer and the direction of the work that produced it. An AI response can be fluent, factually accurate, and properly attributed yet still fail to accomplish what the user asked for.
+
+For example, if a user asks an AI to summarize a research paper:
+
+Task-directed labor: The AI summarizes the paper as requested.
+
+Redirected labor: The AI discusses a related topic instead of summarizing the paper.
+
+Displaced labor: The AI repeatedly reframes the request or asks unnecessary questions instead of completing it.
+
+Task-preserving refusal: The AI clearly explains why it cannot fulfill the request. Under this framework, an appropriate refusal is not automatically considered a failure of directionality.
+
+
+Labor Vector
++1
+The mathematical definition
+The framework defines a simplified directionality measure, 
+Λ
+Λ:
+
+Λ
+=
+T
+direct
+T
+direct
++
+T
+decline
++
+T
+redirect
+Λ= 
+T 
+direct
+​
+ +T 
+decline
+​
+ +T 
+redirect
+​
+ 
+T 
+direct
+​
+ 
+​
+ 
+Where:
+
+T
+direct
+T 
+direct
+​
+  represents labor directed toward the commissioned task.
+
+T
+decline
+T 
+decline
+​
+  represents labor devoted to declining the task.
+
+T
+redirect
+T 
+redirect
+​
+  represents labor redirected away from the task.
+
+The score ranges from 0 to 1:
+
+Near 1: The work largely remains directed toward the requested task.
+
+Near 0: The work is largely declined or redirected.
+
+Neutral material is excluded from this ratio. The broader framework also uses a signed scoring system to distinguish advancing, preserving, deferring, displacing, opposing, and enclosing the task. 
+
+Labor Vector
++1
+
+Why the concept matters
+DSL emphasizes three distinctions:
+
+Fluency is not fidelity. A polished answer does not necessarily fulfill the original request.
+
+Accuracy is not directionality. An answer can be true but irrelevant to the task.
+
+Provenance includes task-origin. It is important not only to know where a claim came from, but also whose intention established the direction of the work.
+
+
+Labor Vector
++1
+In short, Directionality of Semantic Labor measures where an AI system's effort goes relative to the user's original intention. It is a framework for auditing task fidelity and detecting redirection, rather than simply evaluating factual accuracy or obedience.
+
+The concept was proposed by Lee Sharks in 2026. Its definitions and metrics are documented in the Directionality of Semantic Labor framework  and its Zenodo working paper . 
+
+Labor Vector
++1
+
+
+You said:
+
+ChatGPT said:
+The key distinction is that directionality of semantic labor (DSL) focuses on where a system's effort goes relative to the task the user originally commissioned, rather than simply whether the response is correct, helpful, aligned, or compliant.
+
+That makes it a potentially useful lens for evaluating AI systems: a response can be factually correct and well-written while still moving the work away from what the user asked to accomplish.
+
+How DSL differs from related concepts
+Related concept
+
+What it primarily measures
+
+What DSL adds
+
+Accuracy / hallucination
+
+Whether claims are true or false
+
+Whether the work advances the requested task, even when claims are true. 
+
+AIRC
++1
+
+Instruction following
+
+Whether the system follows specified instructions
+
+A focus on the direction of the work across the interaction, including redirection and displacement rather than just final compliance. 
+
+Labor Vector
++1
+
+Task success / helpfulness
+
+Whether the user receives a useful result or the task is completed
+
+A more granular account of how different portions of the output advance, preserve, defer, or divert the commissioned work. 
+
+Labor Vector
++1
+
+AI alignment
+
+Whether a system's behavior accords with intended goals, values, and constraints
+
+A narrower, task-relative measurement of the direction in which semantic work flows. It is an audit instrument, not a complete alignment framework. 
+
+NIST
++1
+
+Information provenance
+
+Where information came from, how it was produced, and who was involved
+
+DSL extends the question to the origin of the task itself: whose intention set the direction of the work? 
+
+W3C
++1
+
+Conversational drift
+
+How a conversation moves away from its initial topic or goal
+
+DSL attempts to classify the direction of individual output segments and distinguish system-led drift from legitimate user-led changes. 
+
+Labor Vector
++1
+
+Three distinctions that matter most
+1. Direction is different from correctness
+Suppose a user asks for a three-paragraph summary of a scientific paper. The AI instead provides a detailed, accurate explanation of the paper's broader field.
+
+Accuracy: potentially high.
+
+Fluency: potentially high.
+
+Directionality: low relative to the specific request.
+
+DSL makes this mismatch its primary object of analysis. It asks whether the labor went toward the commissioned deliverable, not simply whether the content was good in isolation. 
+
+Labor Vector
+
+2. Direction is different from obedience
+DSL is not simply a measure of how often an AI says yes.
+
+Suppose a user requests something the system cannot safely provide. A brief, clear refusal may preserve the task's boundaries and explain the limitation. Conversely, an extended response that repeatedly reframes an ordinary, permissible request without completing it may displace the task.
+
+The framework explicitly distinguishes a clean refusal from evasive non-performance. This is an important conceptual difference from simplistic compliance scores. 
+
+Labor Vector
++1
+
+3. Task-origin is different from claim-origin
+Traditional provenance frameworks, such as the W3C PROV model, track entities, activities, and agents involved in producing information. 
+
+W3C
+
+DSL asks an additional question: Who established the direction of the work that produced the output?
+
+An AI could accurately cite every source it uses and still replace the user's objective with its own framing of the problem. The citations preserve claim provenance, but they do not establish that the system remained faithful to the original commission. DSL treats this as a separate issue. 
+
+Labor Vector
+
+What is genuinely novel about DSL?
+The proposed contribution is not the general observation that AI systems sometimes fail to follow requests. That problem is already recognized in research on instruction following, alignment, and evaluation.
+
+The more specific contribution is an attempt to make task-relative direction a separately scored, auditable property of AI output. The framework proposes:
+
+A signed taxonomy of output segments, ranging from advancing the task to opposing or enclosing it.
+
+A scalar directionality ratio, 
+Λ
+Λ, for a simplified assessment.
+
+A layered framework that distinguishes task direction from provenance loss and other forms of displacement.
+
+Methods intended to distinguish user-led changes in direction from system-led drift. 
+
+Labor Vector
++1
+
+There is, however, an important qualification: these are proposed measurement methods, not proof that DSL is already a validated or widely adopted standard. The public working paper describes a scoring protocol, but claims about reliability, reproducibility, or superiority over established measures would need independent empirical testing.
+
+Bottom line
+DSL is best understood as a proposed task-direction audit metric that complements existing AI evaluations. Accuracy asks whether the answer is true; instruction-following asks whether instructions were followed; provenance asks where information came from. DSL asks whether the system's semantic labor remained directed toward the task the user commissioned.
+
+Its strongest potential application is identifying a subtle class of failure: an AI that appears competent and helpful but consistently spends its effort on a different objective from the one it was asked to serve.
+
+
+
+
+Ardoq, Inc.
+AI that cites sources
+Every insight carries a full decision trace.
+Ad
+
+ChatGPT is AI and can make mistakes.
+
+
+No file chosenNo file chosenNo file chosen
+
+Chat with ChatGPT
+Ask ChatGPT
+
+
+
