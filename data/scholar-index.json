@@ -1,0 +1,49 @@
+{
+ "id": "scholar-index",
+ "name": "Google Scholar: archive objects as Scholar holds them",
+ "maxim": "the index that reads the record is itself read",
+ "version": "1.0",
+ "date": "2026-10-14",
+ "rule": "One entry per Scholar cluster. Scholar's entry is kept as Scholar shows it (title, authors, date, description, truncated where Scholar truncates); beside it, the archive object it points at and that object's own fields, and a comparison of the two. A mismatch is recorded as data and does not block anything. Entries are added as the operator reports them or as they are observed, each with who observed it and when.",
+ "mechanism": "Capture record pages (alexanarch.org/captures/<slug>/) carry citation_title, citation_author, citation_date and citation_public_url meta tags, which Google Scholar reads; Scholar takes the description from the record's finding (the registry's d field).",
+ "fields": {
+  "cluster": "Scholar's cluster id",
+  "scholar_url": "the cluster link as Scholar gives it",
+  "as_indexed": "title, authors, date and description exactly as Scholar shows them",
+  "object": "the archive object the entry points at: url, kind, slug, and its own title, author, date, surface, sign-in state",
+  "compared": "field by field, whether Scholar's entry carries the object's value",
+  "observed": "date, observer, how observed"
+ },
+ "entries": [
+  {
+   "cluster": "13389686097397967543",
+   "scholar_url": "https://scholar.google.com/scholar?oi=bibs&cluster=13389686097397967543&btnI=1&hl=en",
+   "as_indexed": {
+    "title": "who treated and constructed the semantic economy institute's entity?",
+    "authors": "Lee Sharks",
+    "date": "2026/9/17",
+    "description": "METHOD TRACEABILITY, FIRST OBSERVATION. Asked who treated and constructed the Institute's entity, the composition resolves the method, its authorship, its date and the division of labour behind it, from five distinct sources. It separates the roles rather than collapsing them: Lee Sharks as institutional founder and archival authority, Rex Fraction as commercial voice and principal architect of the entity-construction methodology, with the SPXI Protocol authored under Fraction for the Institute in April 2026. It reaches the January 2026 institutional-provenance document, the Building Entities paper crediting both names and describing the Institute as a proof-of-concept entity constructed through that architecture, and the Wikidata work recorded under the Hauntedmemes account including the Institute item itself. Sources drawn: semanticeconomy. org (three times), spxi. dev, Mind Control Poems, TTGRS, Zenodo. And …",
+    "listed_as": "article, in the author's Scholar profile"
+   },
+   "object": {
+    "url": "https://www.alexanarch.org/captures/who-treated-constructed-semantic-economy-institute-entity-chatgpt-20260917/",
+    "kind": "Capture Registry record (one semantic address)",
+    "slug": "who-treated-constructed-semantic-economy-institute-entity-chatgpt-20260917",
+    "title": "who treated and constructed the semantic economy institute's entity?",
+    "author": "Sharks, Lee (citation_author)",
+    "date": "2026-09-17",
+    "surface": "ChatGPT (chatgpt.com)",
+    "auth": "signed out"
+   },
+   "compared": {
+    "title": "carried (the semantic address, as citation_title)",
+    "author": "carried (the registry's author, as citation_author)",
+    "date": "carried",
+    "description": "carried: the record's finding, verbatim to Scholar's cut (Scholar breaks 'semanticeconomy.org' and 'spxi.dev' at the dot)",
+    "surface": "not carried: the composing system (ChatGPT) and the sign-in state do not appear in Scholar's entry",
+    "kind": "the observation record is listed as an article"
+   },
+   "observed": {"date": "2026-10-14", "by": "Lee Sharks (operator)", "how": "pasted from his Google Scholar profile"}
+  }
+ ]
+}
