@@ -42,10 +42,25 @@ STATUS_DOC = {
     'real': 'the reader identifies the work as existing',
     'unverified': 'plausible; not identified by the reader',
     'forward_library': 'Retrocausal Citation Entry · Forward Library · not a historical publication record: '
-                       'the work is cited ahead of its existence (a date after the citing text, '
-                       '"forthcoming", or the scholarship of a field that does not yet exist)',
+                       'the citing text itself marks the work as not yet existing — "forthcoming", '
+                       '"pending deposit", "in progress", "projected", a date after the citing text, '
+                       'or a declared Forward Library / projected-reception section. Never inferred by '
+                       'comparing dates: a citation of a work deposited after the citing deposit\'s '
+                       'registry date, with no such mark, is read as real (the text may have been revised)',
     'fictive_retro': 'an invented past work, cited as though it existed',
 }
+
+
+DESCRIPTION = ('In-session readings of the reference-section segments in '
+               'data/worklists/refsec-parse-queue.json: each work named in a segment, with authors, title, '
+               'container, year, kind and ontic status, or the finding that the segment names no work. '
+               'Authoritative over the heuristic parse. Every refsec-locus segment is read. In the tang locus, '
+               'segments the heuristic classed as prose or apparatus are read only when they carry citation '
+               'features (a parenthesised year, a DOI, an italic title with a year, "et al.", ISBN, arXiv or a URL); '
+               'the rest keep their heuristic class. Segments stored at 1,200 characters are read as far as stored, '
+               'and the basis says so. A basis line records corrections the reader noticed (misattributions, '
+               'wrong DOIs or subtitles, conflicting years) without altering what the text says. '
+               'Written by scripts/ingest_citation_readings.py.')
 
 
 def norm(s):
@@ -78,6 +93,9 @@ def main():
                         'authors, title, container, year, kind and ontic status. Authoritative over '
                         'the heuristic parse. Written by scripts/ingest_citation_readings.py.'),
         'status_vocabulary': STATUS_DOC, 'kinds': sorted(KINDS), 'readings': {}}
+    doc['description'] = DESCRIPTION
+    doc['status_vocabulary'] = STATUS_DOC
+    doc['kinds'] = sorted(KINDS)
     R = doc['readings']
     batch = {}
     bad = []

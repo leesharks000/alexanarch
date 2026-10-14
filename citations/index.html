@@ -259,12 +259,22 @@ Promise.all([
   document.querySelectorAll('.tab').forEach(function(b){
     b.addEventListener('click', function(){ var t = b.dataset.tab; history.replaceState(null,'', t==='outside' ? '#outside' : location.pathname); show(t); });
   });
+  function inKind(w){
+    if(active==='works') return isWork(w);
+    if(active==='all') return true;
+    return w.kind===active;
+  }
+  function statusCounts(){
+    var sc = {}; works.forEach(function(w){ if(inKind(w)) sc[w.ontic_status] = (sc[w.ontic_status]||0)+1; });
+    document.querySelectorAll('#ow-status .fbtn').forEach(function(b){
+      var k = b.dataset.st; if(k==='all') return;
+      b.textContent = STATUS_LABEL[k]+' ('+(sc[k]||0)+')';
+    });
+  }
   function pool(){
     var p = works.filter(function(w){
       if(status!=='all' && w.ontic_status!==status) return false;
-      if(active==='works') return isWork(w);
-      if(active==='all') return true;
-      return w.kind===active;
+      return inKind(w);
     });
     if(q){
       var s = q.toLowerCase();
@@ -322,11 +332,12 @@ Promise.all([
       f += '<div class="fbtn" data-k="all">Everything ('+works.length+')</div>';
       var fe = document.getElementById('ow-filters'); fe.innerHTML = f;
       fe.addEventListener('click', function(ev){ var b = ev.target; if(!b.dataset.k) return; active = b.dataset.k; page = 0;
-        fe.querySelectorAll('.fbtn').forEach(function(x){ x.classList.toggle('active', x===b); }); render(); });
+        fe.querySelectorAll('.fbtn').forEach(function(x){ x.classList.toggle('active', x===b); }); statusCounts(); render(); });
       var sc = {}; works.forEach(function(w){ sc[w.ontic_status] = (sc[w.ontic_status]||0)+1; });
       var sh = '<div class="fbtn active" data-st="all">Any status</div>';
+      // chips are listed for every status present anywhere; counts follow the kind filter (statusCounts)
       ['real','unverified','forward_library','fictive_retro'].forEach(function(k){ if(sc[k]) sh += '<div class="fbtn" data-st="'+k+'">'+STATUS_LABEL[k]+' ('+sc[k]+')</div>'; });
-      var se = document.getElementById('ow-status'); se.innerHTML = sh;
+      var se = document.getElementById('ow-status'); se.innerHTML = sh; statusCounts();
       se.addEventListener('click', function(ev){ var b = ev.target; if(!b.dataset.st) return; status = b.dataset.st; page = 0;
         se.querySelectorAll('.fbtn').forEach(function(x){ x.classList.toggle('active', x===b); }); render(); });
       render();

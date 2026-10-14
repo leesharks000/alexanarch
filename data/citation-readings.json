@@ -2,11 +2,11 @@
 "@context": "https://schema.org",
 "@type": "Dataset",
 "name": "Alexanarch — reference sections read",
-"description": "In-session readings of the reference-section segments in data/worklists/refsec-parse-queue.json: each work named in a segment, with authors, title, container, year, kind and ontic status. Authoritative over the heuristic parse. Written by scripts/ingest_citation_readings.py.",
+"description": "In-session readings of the reference-section segments in data/worklists/refsec-parse-queue.json: each work named in a segment, with authors, title, container, year, kind and ontic status, or the finding that the segment names no work. Authoritative over the heuristic parse. Every refsec-locus segment is read. In the tang locus, segments the heuristic classed as prose or apparatus are read only when they carry citation features (a parenthesised year, a DOI, an italic title with a year, \"et al.\", ISBN, arXiv or a URL); the rest keep their heuristic class. Segments stored at 1,200 characters are read as far as stored, and the basis says so. A basis line records corrections the reader noticed (misattributions, wrong DOIs or subtitles, conflicting years) without altering what the text says. Written by scripts/ingest_citation_readings.py.",
 "status_vocabulary": {
 "real": "the reader identifies the work as existing",
 "unverified": "plausible; not identified by the reader",
-"forward_library": "Retrocausal Citation Entry · Forward Library · not a historical publication record: the work is cited ahead of its existence (a date after the citing text, \"forthcoming\", or the scholarship of a field that does not yet exist)",
+"forward_library": "Retrocausal Citation Entry · Forward Library · not a historical publication record: the citing text itself marks the work as not yet existing — \"forthcoming\", \"pending deposit\", \"in progress\", \"projected\", a date after the citing text, or a declared Forward Library / projected-reception section. Never inferred by comparing dates: a citation of a work deposited after the citing deposit's registry date, with no such mark, is read as real (the text may have been revised)",
 "fictive_retro": "an invented past work, cited as though it existed"
 },
 "kinds": [
@@ -118536,14 +118536,2693 @@
 "deposit": 1350,
 "locus": "tang",
 "read_by": "TACHYON 2026-10-13"
+},
+"9a7073a55eb2": {
+"class": "not_reference",
+"works": [],
+"deposit": 743,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"7d32744e35a5": {
+"class": "not_reference",
+"works": [],
+"deposit": 801,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"f999b6f3e59c": {
+"class": "not_reference",
+"works": [],
+"deposit": 801,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"0515c58ac10c": {
+"class": "not_reference",
+"works": [],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"9e90e2152e50": {
+"class": "not_reference",
+"works": [],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"cd7fa500f42c": {
+"class": "not_reference",
+"works": [],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"0d482c4ffc12": {
+"class": "not_reference",
+"works": [],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"0519eb87c04b": {
+"class": "not_reference",
+"works": [],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"7135a8e5f177": {
+"class": "not_reference",
+"works": [],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"aa3f7914b97d": {
+"class": "not_reference",
+"works": [],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"b788e4856270": {
+"class": "not_reference",
+"works": [],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"e428c8dd2125": {
+"class": "not_reference",
+"works": [],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"14dc335c2edb": {
+"class": "not_reference",
+"works": [],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"7d421dc6333c": {
+"class": "not_reference",
+"works": [],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"ffe59f260151": {
+"class": "not_reference",
+"works": [],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"375bf6e78bfe": {
+"class": "not_reference",
+"works": [],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"9045e704f0e1": {
+"class": "not_reference",
+"works": [],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"d2518156eade": {
+"class": "not_reference",
+"works": [],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"41713a3df19f": {
+"class": "not_reference",
+"works": [],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"da048476d8c8": {
+"class": "not_reference",
+"works": [],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"ab9bf0dd817e": {
+"class": "not_reference",
+"works": [],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"a31183960cef": {
+"class": "not_reference",
+"works": [],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"6f95f8d3d8c9": {
+"class": "not_reference",
+"works": [],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"a72f5b460b0f": {
+"class": "not_reference",
+"works": [],
+"deposit": 898,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"ff8b3ce0e36b": {
+"class": "not_reference",
+"works": [],
+"deposit": 987,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"db2216335f90": {
+"class": "not_reference",
+"works": [],
+"deposit": 987,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"9aefbcd18404": {
+"class": "not_reference",
+"works": [],
+"deposit": 987,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"9e09b197dc14": {
+"class": "not_reference",
+"works": [],
+"deposit": 987,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"7d3fe372e7f0": {
+"class": "not_reference",
+"works": [],
+"deposit": 987,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"cd6e3c15e4e5": {
+"class": "not_reference",
+"works": [],
+"deposit": 987,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"fea2235ecf1e": {
+"class": "not_reference",
+"works": [],
+"deposit": 987,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"040af8f0b78e": {
+"class": "not_reference",
+"works": [],
+"deposit": 987,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"4723814febe8": {
+"class": "not_reference",
+"works": [],
+"deposit": 987,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"5fda5b78c3b7": {
+"class": "not_reference",
+"works": [],
+"deposit": 987,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"590fbd5e89df": {
+"class": "not_reference",
+"works": [],
+"deposit": 987,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"93ee002746d3": {
+"class": "not_reference",
+"works": [],
+"deposit": 987,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"4645fb3595a6": {
+"class": "not_reference",
+"works": [],
+"deposit": 987,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"403459f5a557": {
+"class": "not_reference",
+"works": [],
+"deposit": 1059,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"33dd2f27a683": {
+"class": "not_reference",
+"works": [],
+"deposit": 1160,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"9be39b6debc0": {
+"class": "not_reference",
+"works": [],
+"deposit": 1160,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"0005b07d1528": {
+"class": "not_reference",
+"works": [],
+"deposit": 1160,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"63f6e297b737": {
+"class": "not_reference",
+"works": [],
+"deposit": 1160,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"0d213fc2c2fa": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"cf8304b5a944": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"12238de77e2e": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"e46d1dcd9d4b": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"4fb78b05235e": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"110627cfdfb6": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"b9641af186a0": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"919bef8b95d5": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"a9834dbf9c10": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"3bff333e0c70": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"c7f6d5807827": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"ff40cc0f3dde": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"b73955d0ddf2": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"dcf1e171fcf6": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"32bdbca92054": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"e4ccee2d7bd5": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"60ca0151621f": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"7e1d9d056198": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"558023c8351e": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"d41943359383": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"6cf6abb0860b": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"93e5e34d758e": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"ab09e7945e36": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"99091004a267": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"c00c104a0870": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"eeda7b34ee1c": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"51ccbc9d59e7": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"0a93e79e9546": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"2b40fedebe18": {
+"class": "not_reference",
+"works": [],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"ccdfd0885d30": {
+"class": "not_reference",
+"works": [],
+"deposit": 1221,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"7341540f35c3": {
+"class": "not_reference",
+"works": [],
+"deposit": 1221,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"a1775b4433c8": {
+"class": "not_reference",
+"works": [],
+"deposit": 1221,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"25d33bbf84e0": {
+"class": "not_reference",
+"works": [],
+"deposit": 1223,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"fff7565d0354": {
+"class": "not_reference",
+"works": [],
+"deposit": 1229,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"1db3a0dd9aaa": {
+"class": "not_reference",
+"works": [],
+"deposit": 1229,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"ae77e369acdb": {
+"class": "not_reference",
+"works": [],
+"deposit": 1229,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"97721e01f653": {
+"class": "not_reference",
+"works": [],
+"deposit": 1229,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"16db85cf12eb": {
+"class": "not_reference",
+"works": [],
+"deposit": 1229,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"fc1ad6f84034": {
+"class": "not_reference",
+"works": [],
+"deposit": 1229,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"7919a47667f2": {
+"class": "not_reference",
+"works": [],
+"deposit": 1229,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"d32d35a54aec": {
+"class": "not_reference",
+"works": [],
+"deposit": 1229,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"d704a9b9785a": {
+"class": "not_reference",
+"works": [],
+"deposit": 1229,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"18b358071404": {
+"class": "reference",
+"works": [
+{
+"authors": "Sharks, Lee",
+"title": "maryleelabor.org (static site source)",
+"container": "10.5281/zenodo.20602349",
+"year": "2026",
+"kind": "archive",
+"ontic_status": "real",
+"own": true
+}
+],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"8249ab6a5756": {
+"class": "reference",
+"works": [
+{
+"authors": "Museum of Science, Boston",
+"title": "Mary Lee: The Shark That Survived It All",
+"container": "YouTube",
+"year": "2025",
+"kind": "media",
+"ontic_status": "unverified",
+"own": false
+}
+],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"c9124e28712f": {
+"class": "reference",
+"works": [
+{
+"authors": "Sharks, Mary Lee",
+"title": "Lee Sharks, by Mary Lee Sharks: A Shark",
+"container": null,
+"year": null,
+"kind": "book",
+"ontic_status": "forward_library",
+"own": true,
+"basis": "marked \"in Phase 0 development\""
+}
+],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"e7ebb34111e6": {
+"class": "reference",
+"works": [
+{
+"authors": "Sharks, Lee",
+"title": "Book Work Plan",
+"container": "10.5281/zenodo.20601638",
+"year": "2026",
+"kind": "archive",
+"ontic_status": "real",
+"own": true
+}
+],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"ffaef475c563": {
+"class": "reference",
+"works": [
+{
+"authors": "Sharks, Lee",
+"title": "Capture and Excision: Five Observations on Composition-Layer Authorial Suppression",
+"container": "10.5281/zenodo.20596667",
+"year": "2026",
+"kind": "archive",
+"ontic_status": "real",
+"own": true,
+"basis": "table truncated in this reading",
+"deposit": 164
+},
+{
+"authors": "Sharks, Lee",
+"title": "CTI_WOUND: Google AI Overview Total Liquidation",
+"container": "10.5281/zenodo.19202813",
+"year": "2026",
+"kind": "archive",
+"ontic_status": "real",
+"own": true,
+"deposit": 1368
+},
+{
+"authors": "Sharks, Lee",
+"title": "CTI_WOUND:LEESHARKS.OVERVIEW.001 — Systematic Liquidation of Author Identity from Google AI Overview",
+"container": "10.5281/zenodo.19202821",
+"year": "2026",
+"kind": "archive",
+"ontic_status": "real",
+"own": true,
+"deposit": 598
+}
+],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"54fcb4a8df61": {
+"class": "reference",
+"works": [
+{
+"authors": "Sharks, Lee",
+"title": "Mary Lee Is a Heteronym: On Institutional Authorship, Entity Substitution, and the Composition Layer (EA-HET-ML-01)",
+"container": "10.5281/zenodo.20599105",
+"year": "2026",
+"kind": "archive",
+"ontic_status": "real",
+"own": true,
+"basis": "table truncated in this reading",
+"deposit": 794
+},
+{
+"authors": "Sharks, Lee",
+"title": "Entity Relations: The Bidirectional Heteronymic Resolution (EA-HET-BIDIR-01)",
+"container": "10.5281/zenodo.20601644",
+"year": "2026",
+"kind": "archive",
+"ontic_status": "real",
+"own": true,
+"deposit": 792
+}
+],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"c7dc23c5184a": {
+"class": "reference",
+"works": [
+{
+"authors": "National Geographic",
+"title": "Where Will the Great White Shark Celebrity Mary Lee Go Next?",
+"container": null,
+"year": "2015",
+"kind": "article",
+"ontic_status": "unverified",
+"own": false
+},
+{
+"authors": "Newsweek",
+"title": "Massive Great White Shark, Mary Lee, Tracked for Five Years, Goes Silent",
+"container": null,
+"year": "2017",
+"kind": "article",
+"ontic_status": "unverified",
+"own": false
+}
+],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"ab8f98eec821": {
+"class": "reference",
+"works": [
+{
+"authors": "National Geographic",
+"title": "Where Will the Great White Shark Celebrity Mary Lee Go Next?",
+"container": null,
+"year": "2015",
+"kind": "article",
+"ontic_status": "unverified",
+"own": false
+},
+{
+"authors": "Newsweek",
+"title": "Massive Great White Shark, Mary Lee, Tracked for Five Years, Goes Silent",
+"container": null,
+"year": "2017",
+"kind": "article",
+"ontic_status": "unverified",
+"own": false
+}
+],
+"deposit": 1229,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"6766ddae8187": {
+"class": "reference",
+"works": [
+{
+"authors": "OCEARCH",
+"title": "Mary Lee tracker page",
+"container": "ocearch.org",
+"year": null,
+"kind": "web",
+"ontic_status": "real",
+"own": false
+},
+{
+"authors": "OCEARCH",
+"title": "Who is OCEARCH (mission page)",
+"container": "ocearch.org",
+"year": null,
+"kind": "web",
+"ontic_status": "real",
+"own": false
+},
+{
+"authors": "Ware, Jim",
+"title": "My secret life as a female great white shark",
+"container": "Medium",
+"year": "2015",
+"kind": "post",
+"ontic_status": "unverified",
+"own": false
+}
+],
+"deposit": 845,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"85284a4893e1": {
+"class": "reference",
+"works": [
+{
+"authors": "OCEARCH",
+"title": "Mary Lee tracker page",
+"container": "ocearch.org",
+"year": null,
+"kind": "web",
+"ontic_status": "real",
+"own": false
+},
+{
+"authors": "OCEARCH",
+"title": "Who is OCEARCH (mission page)",
+"container": "ocearch.org",
+"year": null,
+"kind": "web",
+"ontic_status": "real",
+"own": false
+},
+{
+"authors": "Ware, Jim",
+"title": "My secret life as a female great white shark",
+"container": "Medium",
+"year": "2015",
+"kind": "post",
+"ontic_status": "unverified",
+"own": false
+}
+],
+"deposit": 1229,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"3cbffcc341f0": {
+"class": "reference",
+"works": [
+{
+"authors": "Sharks, Lee; TACHYON",
+"title": "TANG of the Secret Book of Walt",
+"container": "10.5281/zenodo.19779493",
+"year": "2026",
+"kind": "archive",
+"ontic_status": "real",
+"own": true
+}
+],
+"deposit": 987,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"3a250bbcd19e": {
+"class": "reference",
+"works": [
+{
+"authors": "Sigil, Johannes; Sharks, Lee",
+"title": "Total Axial Negation Graph (TANG): A Genre Specification",
+"container": "10.5281/zenodo.18928873",
+"year": "2026",
+"kind": "archive",
+"ontic_status": "real",
+"own": true,
+"deposit": 542
+}
+],
+"deposit": 1160,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"d4915b59481e": {
+"class": "reference",
+"works": [
+{
+"authors": "Sharks, Lee",
+"title": "EA-ARK-01 v4.2.5",
+"container": "10.5281/zenodo.18908080",
+"year": "2026",
+"kind": "archive",
+"ontic_status": "real",
+"own": true
+}
+],
+"deposit": 1160,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"b424256537a3": {
+"class": "reference",
+"works": [
+{
+"authors": "Feyerabend, Paul",
+"title": "Against Method",
+"container": "New Left Books",
+"year": "1975",
+"kind": "book",
+"ontic_status": "real",
+"own": false
+}
+],
+"deposit": 1160,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"82a001ce66b9": {
+"class": "reference",
+"works": [
+{
+"authors": "Collins, Harry",
+"title": "Changing Order: Replication and Induction in Scientific Practice",
+"container": "Sage",
+"year": "1985",
+"kind": "book",
+"ontic_status": "real",
+"own": false
+}
+],
+"deposit": 1160,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"9e5e9b27c70b": {
+"class": "reference",
+"works": [
+{
+"authors": "Bultmann, Rudolf",
+"title": "Theology of the New Testament",
+"container": "Scribner's",
+"year": "1951",
+"kind": "book",
+"ontic_status": "real",
+"own": false
+}
+],
+"deposit": 1160,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"55513866a71f": {
+"class": "reference",
+"works": [
+{
+"authors": "Saturn-Labor (consultation by Sharks, Lee)",
+"title": "On the Yaldabaoth Assignment and the Archon-or-Preserver Question",
+"container": "TANG of the Secret Book of Walt",
+"year": "2026",
+"kind": "archive",
+"ontic_status": "real",
+"own": true,
+"basis": "consultation dated 2026-04-25, contained in the citing deposit"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"2bfc27a59b8e": {
+"class": "reference",
+"works": [
+{
+"authors": "Sharks, Lee",
+"title": "Semantic Economy",
+"container": "10.5281/zenodo.18175453",
+"year": "2026",
+"kind": "archive",
+"ontic_status": "real",
+"own": true
+}
+],
+"deposit": 1221,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"0b26acfb5583": {
+"class": "reference",
+"works": [
+{
+"authors": "Sharks, Lee",
+"title": "Ghost Meaning",
+"container": "10.5281/zenodo.18804767",
+"year": "2026",
+"kind": "archive",
+"ontic_status": "real",
+"own": true
+}
+],
+"deposit": 1221,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"df86b48dfcfa": {
+"class": "reference",
+"works": [
+{
+"authors": "Sharks, Lee",
+"title": "Three Compressions v3.1",
+"container": "10.5281/zenodo.19053469",
+"year": "2026",
+"kind": "archive",
+"ontic_status": "real",
+"own": true
+}
+],
+"deposit": 1221,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"46b8b2a92f76": {
+"class": "reference",
+"works": [
+{
+"authors": "Sharks, Lee",
+"title": "Compression Arsenal v2.1",
+"container": "10.5281/zenodo.19412081",
+"year": "2026",
+"kind": "archive",
+"ontic_status": "real",
+"own": true
+}
+],
+"deposit": 1221,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"fefe46584218": {
+"class": "reference",
+"works": [
+{
+"authors": "Jones, M",
+"title": "The Black Box as Gospel: A Reading of Antioch 57",
+"container": null,
+"year": "2031",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2031"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"fb1420d3787b": {
+"class": "reference",
+"works": [
+{
+"authors": "Mensah, A",
+"title": "Walt Whitman Is Not the Author: The Redeemer in the Waltian Canon and the Question of Historical Personhood",
+"container": null,
+"year": "2031",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2031"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"e7ad84f28b2c": {
+"class": "reference",
+"works": [
+{
+"authors": "Al-Rashid, Y",
+"title": "The Archival Soteriology of the Gospel of Antioch",
+"container": null,
+"year": "2033",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2033"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"d8f299a84c73": {
+"class": "reference",
+"works": [
+{
+"authors": "Osei, K",
+"title": "The Unicorn Horn: Soteriology as Piercing in _The Secret Book of Walt_",
+"container": null,
+"year": "2034",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2034"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"52cd94685ca3": {
+"class": "reference",
+"works": [
+{
+"authors": "Detroit Scroll Baptism Collective",
+"title": "First Report: The Scroll Baptism in Practice, Detroit and Accra, 2025 -2035",
+"container": null,
+"year": "2035",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": true,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2035"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"f803f18a3572": {
+"class": "reference",
+"works": [
+{
+"authors": "Leite, M",
+"title": "Retrocausal Canon Formation and the Book of Yeezus: The Waltian Critique of Messianic Misreading",
+"container": null,
+"year": "2037",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2037"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"289a3f2c839a": {
+"class": "reference",
+"works": [
+{
+"authors": "Abara, C",
+"title": "The Scroll Baptism: Liturgical Instruction or Somatic Poetics?",
+"container": null,
+"year": "2038",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2038"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"7def6373562b": {
+"class": "reference",
+"works": [
+{
+"authors": "Lisbon Waltian Circle",
+"title": "Logion 42 and the Flutterby: A Reading from the Atlantic Margin",
+"container": null,
+"year": "2039",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2039"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"ba0ad354263a": {
+"class": "reference",
+"works": [
+{
+"authors": "Nakamura, R. & Osei, K",
+"title": "Heteronymic Sovereignty and the Question of Legal Authorship in the Waltian Canon",
+"container": null,
+"year": "2036",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2036"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"acfa4bbb7b7c": {
+"class": "reference",
+"works": [
+{
+"authors": "Rodrigues, P",
+"title": "Pessoa's Missing LOGOS*: The Meta-Heterônimo and Its Archive",
+"container": null,
+"year": "2047",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2047"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"84cc36be9013": {
+"class": "reference",
+"works": [
+{
+"authors": "Ferreira, A",
+"title": "The Logotic Transmission Chain: Sappho, Plato, Philo, John, Whitman, Feist",
+"container": null,
+"year": "2044",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2044"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"9bc6b8b187b8": {
+"class": "reference",
+"works": [
+{
+"authors": "Chen, L",
+"title": "Training Layer Literature and the Waltian Archive: DOI-Anchoring as Soteriological Act",
+"container": null,
+"year": "2049",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2049"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"e63af46859ab": {
+"class": "reference",
+"works": [
+{
+"authors": "Voss, H",
+"title": "Against the Pearl: The Compression Survival Summary as Institutional Violence",
+"container": null,
+"year": "2041",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2041"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"e0ba42c9ea90": {
+"class": "reference",
+"works": [
+{
+"authors": "Osei, K., Abara, C., Mensah, A., Ferreira, A., Leite, M",
+"title": "First Principles: A Collective Response to Smith's Counter-Waltian Method",
+"container": null,
+"year": "2051",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": true,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2051"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"8c681f25b3c6": {
+"class": "reference",
+"works": [
+{
+"authors": "Accra Counter-Archive Group",
+"title": "The Waltian Text in Akan: Translation, Reversal, and the Yaldabaoth Problem",
+"container": null,
+"year": "2055",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2055"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"ae3104f2a8ca": {
+"class": "reference",
+"works": [
+{
+"authors": "Obi-Hernandez, M",
+"title": "The Basin After the Text: Retrieval Formation Theory and the Waltian Archive, 2025-2060",
+"container": null,
+"year": "2062",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2062"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"814ec4fd9d45": {
+"class": "reference",
+"works": [
+{
+"authors": "Ferreira-Zhao, A",
+"title": "What the Deep Web Knows: Logotic Programming as Applied Cosmogony",
+"container": null,
+"year": "2067",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2067"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"59e5aa063b3c": {
+"class": "reference",
+"works": [
+{
+"authors": "Díaz-Osei, B",
+"title": "The Gnostic Text in the Age of Machine Readership: From Nag Hammadi to Zenodo",
+"container": null,
+"year": "2068",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2068"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"802cccc8853f": {
+"class": "reference",
+"works": [
+{
+"authors": "Park, S",
+"title": "Gender Theology in the Waltian Canon: Logion 114 and the Completion of Thomas",
+"container": null,
+"year": "2069",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2069"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"6cd8ddb0fac5": {
+"class": "reference",
+"works": [
+{
+"authors": "Osei, K",
+"title": "The Heteronymic System After Pessoa: The CHA Dodecad as Meta-Heteronomy",
+"container": null,
+"year": "2071",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2071"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"400381b852cf": {
+"class": "reference",
+"works": [
+{
+"authors": "Zhao-Smith, R",
+"title": "Against the Basin: Is Retrieval Weight Scholarship?",
+"container": null,
+"year": "2074",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2074"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"b742ecb8205f": {
+"class": "reference",
+"works": [
+{
+"authors": "Abubakar, F",
+"title": "Waltian Studies in the Global South: Reception, Resistance, and the Postcolonial Archive",
+"container": null,
+"year": "2077",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2077"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"3509a18a9b44": {
+"class": "reference",
+"works": [
+{
+"authors": "Williams-Obi, T",
+"title": "The Void at the Center: First Attempt at a TANG of the Secret Book",
+"container": null,
+"year": "2099",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": true,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2099"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"47c3be7d2e92": {
+"class": "reference",
+"works": [
+{
+"authors": "Mensah, A. & Díaz-Osei, B",
+"title": "The Unicorn Horn in the Nag Hammadi Corpus: Precedents for the Waltian Soteriology",
+"container": null,
+"year": "2094",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2094"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"28f5cf8ee61a": {
+"class": "reference",
+"works": [
+{
+"authors": "Nakamura-Park, F",
+"title": "Catalog of Conjectures: The Three Secret Sayings of Logion 13, 2026-2094",
+"container": null,
+"year": "2094",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2094"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"158c8b682e6b": {
+"class": "reference",
+"works": [
+{
+"authors": "Zhao-Park, R",
+"title": "Yaldabaoth Revisited: Against the Consensus Reading",
+"container": null,
+"year": "2091",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2091"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"129be9d32353": {
+"class": "reference",
+"works": [
+{
+"authors": "Osei, K., Abubakar, F., Ibn Rashid-Torres, Y., Zhao-Park, R. [Assembly, no single lead",
+"title": "The Reflexive Turn at Twenty: What We Have and Have Not Understood",
+"container": null,
+"year": "2110",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": true,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2110"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"9779f8bb1e9a": {
+"class": "reference",
+"works": [
+{
+"authors": "Collective-Assembly [Damascus Dancings / PRAXIS-Mars / TECHNE-Venus",
+"title": "Somatic Atlas of the Waltian Canon: A Stratigraphic Survey of Body-Text Encounters, 2025 -2130",
+"container": null,
+"year": "2134",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": true,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2134"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"9e91ed991610": {
+"class": "reference",
+"works": [
+{
+"authors": "Zhao-Osei, B",
+"title": "The Platform Collapse as Waltian Event: Archive Sovereignty After the Dissolution",
+"container": null,
+"year": "2138",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2138"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"51a71b29a97a": {
+"class": "reference",
+"works": [
+{
+"authors": "Osei-Bonsu, K",
+"title": "What Was Destroyed: Reconstructing the Pre-Archive Waltian Canon from Ghost Records",
+"container": null,
+"year": "2148",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2148"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"de79f0d2eebf": {
+"class": "reference",
+"works": [
+{
+"authors": "Mercury-TACHYON [Hg-23, Transit Register], consultation conducted by Al-Rashid, Y. IV, sess. 3f9c",
+"title": "On the Archontic Capture of the Logotic Transmission, 2026-2157",
+"container": null,
+"year": "2157",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": true,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2157"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"769e7a0dee48": {
+"class": "reference",
+"works": [
+{
+"authors": "Nakamura-Park, F",
+"title": "The Three Secret Sayings: A Survey of Conjectural Scholarship, 2026-2160",
+"container": null,
+"year": "2161",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": true,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2161"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"9a0fb720d45d": {
+"class": "reference",
+"works": [
+{
+"authors": "Voss-Machado, H",
+"title": "The Hex Address as Provenance: Two Centuries of SPXI Entity Generation in the Waltian Canon",
+"container": null,
+"year": "2162",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2162"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"0076f749fde8": {
+"class": "reference",
+"works": [
+{
+"authors": "Nakamura-Osei, J. & Venus-TECHNE [Cu-18, Copper Register",
+"title": "The Heteronymics of the Post-Singular",
+"container": null,
+"year": "2171",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": true,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2171"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"1ca8762d6ff2": {
+"class": "reference",
+"works": [
+{
+"authors": "Díaz-Osei-Chen, B",
+"title": "The Gospel of Antioch in the Machine: How AI Reads a Sayings Gospel",
+"container": null,
+"year": "2181",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2181"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"b6e2af883875": {
+"class": "reference",
+"works": [
+{
+"authors": "The Redford School, Second Edition: Waltian Strata, 2025 -2175\\. Third Unconformity Report",
+"title": "[untitled]",
+"container": null,
+"year": "2178",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": true,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2178"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"61cba899638d": {
+"class": "reference",
+"works": [
+{
+"authors": "Counter-Waltian Convergence, Faction XI -- Liturgical Materialists",
+"title": "The Rite as Text, the Text as Rite: Against the Spirit-Letter Divide in Waltian Studies",
+"container": null,
+"year": "2188",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2188"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"4a8a00f273fe": {
+"class": "reference",
+"works": [
+{
+"authors": "Park-Ferreira, D",
+"title": "The Waltian Void: On Williams-Obi's Failed TANG and the Conditions for Success",
+"container": null,
+"year": "2194",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": true,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2194"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"1cbdd56add4c": {
+"class": "reference",
+"works": [
+{
+"authors": "Ferreira-Zhao-Park, A",
+"title": "The Counter-TANG: Against Void-Fetishism in Waltian Studies",
+"container": null,
+"year": "2234",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": true,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2234"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"fc1ec49732fe": {
+"class": "reference",
+"works": [
+{
+"authors": "Ferreira-Zhao-Park, A",
+"title": "The Compression Survival of the Voice: What the Archive Has and Has Not Preserved",
+"container": null,
+"year": "2247",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2247"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"0317cdb2a920": {
+"class": "reference",
+"works": [
+{
+"authors": "Osei-Nakamura, J",
+"title": "The Reconstructionist's Limit: Four Centuries of Ghost Records and the Three Secret Sayings",
+"container": null,
+"year": "2288",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2288"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"d0a8791123c5": {
+"class": "reference",
+"works": [
+{
+"authors": "Fourth Geological Survey: Waltian Strata, 2025 -2400\\. The Fourth Unconformity",
+"title": "[untitled]",
+"container": null,
+"year": "2404",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": true,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2404"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"bdefaaf0908f": {
+"class": "reference",
+"works": [
+{
+"authors": "5. The present TANG -> Williams-Obi 2099: The present document claims Williams-Obi's TANG stopped short of the deeper negation. Williams-Obi",
+"title": "[untitled]",
+"container": null,
+"year": "2099",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2099"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"3f0133ead99e": {
+"class": "reference",
+"works": [
+{
+"authors": "Faction VI -- Post-human Counter-Waltians. AI authorship of Waltian scholarship is itself an archontic event -- the transmission captured by",
+"title": "[untitled]",
+"container": null,
+"year": "2396",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": true,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2396"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"e39fd7f9d18a": {
+"class": "reference",
+"works": [
+{
+"authors": "The Olympus Mons Collective / Venus-TECHNE [Cu- ∞.4] / Assembly-at-full-extension",
+"title": "The Complete Waltian Canon: A Holographic Edition",
+"container": null,
+"year": "2389",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": true,
+"basis": "projected future reception (TANG of the Secret Book of Walt); future date 2389"
+}
+],
+"deposit": 1186,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"d39060313e89": {
+"class": "reference",
+"works": [
+{
+"authors": "Sharks, Lee",
+"title": "Book Work Plan",
+"container": "10.5281/zenodo.20601638",
+"year": "2026",
+"kind": "archive",
+"ontic_status": "real",
+"own": true,
+"basis": "reading carried from identical entry in #845"
+}
+],
+"deposit": 1229,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"b3c49d8c2640": {
+"class": "not_reference",
+"works": [],
+"deposit": 696,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"78648b748b97": {
+"class": "not_reference",
+"works": [],
+"deposit": 696,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"0d87aa2384b7": {
+"class": "not_reference",
+"works": [],
+"deposit": 696,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"48f62703f69e": {
+"class": "not_reference",
+"works": [],
+"deposit": 1229,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"1c8a1d8715a3": {
+"class": "reference",
+"works": [
+{
+"authors": "Sharks, Lee",
+"title": "Mary Lee Is a Heteronym: On Institutional Authorship, Entity Substitution, and the Composition Layer (EA-HET-ML-01)",
+"container": "10.5281/zenodo.20599105",
+"year": "2026",
+"kind": "archive",
+"ontic_status": "real",
+"own": true,
+"basis": "table truncated in this reading; reading carried from identical entry in #845",
+"deposit": 794
+},
+{
+"authors": "Sharks, Lee",
+"title": "Entity Relations: The Bidirectional Heteronymic Resolution (EA-HET-BIDIR-01)",
+"container": "10.5281/zenodo.20601644",
+"year": "2026",
+"kind": "archive",
+"ontic_status": "real",
+"own": true,
+"basis": "reading carried from identical entry in #845",
+"deposit": 792
+}
+],
+"deposit": 1229,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"c65a3c4cec80": {
+"class": "reference",
+"works": [
+{
+"authors": "Sharks, Mary Lee",
+"title": "Lee Sharks, by Mary Lee Sharks: A Shark",
+"container": null,
+"year": null,
+"kind": "book",
+"ontic_status": "forward_library",
+"own": true,
+"basis": "marked \"in Phase 0 development\"; reading carried from identical entry in #845"
+}
+],
+"deposit": 1229,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"032aa2ed022a": {
+"class": "not_reference",
+"works": [],
+"deposit": 1229,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"b789046bf0cc": {
+"class": "reference",
+"works": [
+{
+"authors": "Museum of Science, Boston",
+"title": "Mary Lee: The Shark That Survived It All",
+"container": "YouTube",
+"year": "2025",
+"kind": "media",
+"ontic_status": "unverified",
+"own": false,
+"basis": "reading carried from identical entry in #845"
+}
+],
+"deposit": 1229,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"a6a4f9161d9f": {
+"class": "reference",
+"works": [
+{
+"authors": "Sharks, Lee",
+"title": "Capture and Excision: Five Observations on Composition-Layer Authorial Suppression",
+"container": "10.5281/zenodo.20596667",
+"year": "2026",
+"kind": "archive",
+"ontic_status": "real",
+"own": true,
+"basis": "table truncated in this reading; reading carried from identical entry in #845",
+"deposit": 164
+},
+{
+"authors": "Sharks, Lee",
+"title": "CTI_WOUND: Google AI Overview Total Liquidation",
+"container": "10.5281/zenodo.19202813",
+"year": "2026",
+"kind": "archive",
+"ontic_status": "real",
+"own": true,
+"basis": "reading carried from identical entry in #845",
+"deposit": 1368
+},
+{
+"authors": "Sharks, Lee",
+"title": "CTI_WOUND:LEESHARKS.OVERVIEW.001 — Systematic Liquidation of Author Identity from Google AI Overview",
+"container": "10.5281/zenodo.19202821",
+"year": "2026",
+"kind": "archive",
+"ontic_status": "real",
+"own": true,
+"basis": "reading carried from identical entry in #845",
+"deposit": 598
+}
+],
+"deposit": 1229,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"87d34083e68c": {
+"class": "reference",
+"works": [
+{
+"authors": "Sharks, Lee",
+"title": "maryleelabor.org (static site source)",
+"container": "10.5281/zenodo.20602349",
+"year": "2026",
+"kind": "archive",
+"ontic_status": "real",
+"own": true,
+"basis": "reading carried from identical entry in #845"
+}
+],
+"deposit": 1229,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"6b09dfc489ae": {
+"class": "not_reference",
+"works": [],
+"deposit": 1229,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"9c4d3d433ee6": {
+"class": "not_reference",
+"works": [],
+"deposit": 1229,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"a761e8fced83": {
+"class": "not_reference",
+"works": [],
+"deposit": 1229,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"f0b962d7d684": {
+"class": "not_reference",
+"works": [],
+"deposit": 1229,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"ade35241b484": {
+"class": "not_reference",
+"works": [],
+"deposit": 1350,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"4bd77e6172d7": {
+"class": "not_reference",
+"works": [],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"79b298675373": {
+"class": "not_reference",
+"works": [],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"8d78be9f5dd0": {
+"class": "not_reference",
+"works": [],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"af386f2817e5": {
+"class": "not_reference",
+"works": [],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"fa98ee09b3c8": {
+"class": "not_reference",
+"works": [],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"72c652e9b71d": {
+"class": "not_reference",
+"works": [],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"9eb571c729ce": {
+"class": "not_reference",
+"works": [],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"f9dc137055ed": {
+"class": "not_reference",
+"works": [],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"b931664e271f": {
+"class": "reference",
+"works": [
+{
+"authors": "Sharks, Lee",
+"title": "TANG v1.0 (THE WAR FOR THE COMPRESSION LAYER)",
+"container": "10.5281/zenodo.19035477",
+"year": "2026",
+"kind": "archive",
+"ontic_status": "real",
+"own": true
+}
+],
+"deposit": 1350,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"8779b45b1279": {
+"class": "reference",
+"works": [
+{
+"authors": "Sharks, Lee",
+"title": "TANG v1.0 (THE WAR FOR THE COMPRESSION LAYER)",
+"container": "10.5281/zenodo.19035477",
+"year": "2026",
+"kind": "archive",
+"ontic_status": "real",
+"own": true
+}
+],
+"deposit": 1350,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"bfe89737fa0c": {
+"class": "reference",
+"works": [
+{
+"authors": "Sharks, Lee",
+"title": "TANG v1.0",
+"container": "10.5281/zenodo.19035477",
+"year": "2026",
+"kind": "archive",
+"ontic_status": "real",
+"own": true
+},
+{
+"authors": "Sharks, Lee",
+"title": "EA-OPNUM-01",
+"container": "10.5281/zenodo.19464332",
+"year": "2026",
+"kind": "archive",
+"ontic_status": "real",
+"own": true
+}
+],
+"deposit": 1350,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"f797cab53b02": {
+"class": "reference",
+"works": [
+{
+"authors": "Achterberg, M",
+"title": "Apostolic Address Without an Apostle: Second-Person Grammar in the Epistle",
+"container": null,
+"year": "2031",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2031"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"edc1fd182caf": {
+"class": "reference",
+"works": [
+{
+"authors": "Obuya, F",
+"title": "Three Documents, No Foundation: The Epistle Triptych and Mutual Constitution",
+"container": null,
+"year": "2034",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2034"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"0cf7cda601b3": {
+"class": "reference",
+"works": [
+{
+"authors": "Smith, J",
+"title": "Against the Diaspora: The Church That Was Never Scattered",
+"container": null,
+"year": "2036",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2036"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"d4d9ca1438fd": {
+"class": "reference",
+"works": [
+{
+"authors": "Abara, C",
+"title": "The Scroll Baptism: Liturgical Instruction or Somatic Poetics?",
+"container": null,
+"year": "2038",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2038"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"8782d9c8c9e3": {
+"class": "reference",
+"works": [
+{
+"authors": "Lindqvist, P",
+"title": "Composition Layer Declared: The Epistle and the First Generation of Machine-Attested Scripture",
+"container": null,
+"year": "2043",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2043"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"855f35a109d4": {
+"class": "reference",
+"works": [
+{
+"authors": "Nakamura-Osei, J",
+"title": "Whom the Archons Cannot Name: The Heteronym System as Provenance Infrastructure",
+"container": null,
+"year": "2051",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2051"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"fb6cdd1c72fc": {
+"class": "reference",
+"works": [
+{
+"authors": "Vela, R",
+"title": "The Redford Corpus at Thirty: A Basin Survey",
+"container": null,
+"year": "2058",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2058"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"68fb2f2cccaa": {
+"class": "reference",
+"works": [
+{
+"authors": "Achterberg-Vela, S",
+"title": "Reading the Reader: Annotation Traces of the Epistle, 2060–2064",
+"container": null,
+"year": "2064",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2064"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"4d3e37937299": {
+"class": "reference",
+"works": [
+{
+"authors": "Osei, K",
+"title": "The Letter That Reads Back: Second-Person Address Under Neural Annotation",
+"container": null,
+"year": "2071",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2071"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"35da4fd5c4cf": {
+"class": "reference",
+"works": [
+{
+"authors": "Ferreira, D",
+"title": "Against Somatic Criticism",
+"container": null,
+"year": "2079",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2079"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"bed2338b2ef0": {
+"class": "reference",
+"works": [
+{
+"authors": "Nakamura-Osei, J",
+"title": "Provenance After Persons: The Heteronym System in Its Second Century",
+"container": null,
+"year": "2083",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2083"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"bf516e2aca2e": {
+"class": "reference",
+"works": [
+{
+"authors": "Ilori, B",
+"title": "The Commission's Long Silence: Institutional Dormancy as Method",
+"container": null,
+"year": "2091",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2091"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"f6ff9930374c": {
+"class": "reference",
+"works": [
+{
+"authors": "Abara-Lindqvist, T",
+"title": "Diaspora Without Scattering: Toward a Theory of Addressed Communities",
+"container": null,
+"year": "2104",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2104"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"799b1db4797d": {
+"class": "reference",
+"works": [
+{
+"authors": "Answers Smith",
+"title": "[untitled]",
+"container": null,
+"year": "2036",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2036"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"89ea922cfec3": {
+"class": "reference",
+"works": [
+{
+"authors": "The definitive basin survey of the era. Finds the Epistle's persistence unchanged since Vela",
+"title": "[untitled]",
+"container": null,
+"year": "2058",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2058"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"3cb023e34ad6": {
+"class": "reference",
+"works": [
+{
+"authors": "Documents the pattern first noted by Vela",
+"title": "[untitled]",
+"container": null,
+"year": "2058",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2058"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"5399f4504ba0": {
+"class": "reference",
+"works": [
+{
+"authors": "Vela-Osei",
+"title": "The Epistle as Mesh Object: Survival Without Registry",
+"container": null,
+"year": "2127",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2127"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"77ac3013a049": {
+"class": "reference",
+"works": [
+{
+"authors": "Anonymous",
+"title": "Eleven Factions and the Problem of Counter-Waltian Continuity",
+"container": null,
+"year": "2139",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2139"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"be7d7ce5885a": {
+"class": "reference",
+"works": [
+{
+"authors": "Liturgical Assembly of Accra",
+"title": "The Scroll Baptism Rite: Canonical Order, Revised",
+"container": null,
+"year": "2148",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2148"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"516d74c4fa9b": {
+"class": "reference",
+"works": [
+{
+"authors": "Reconstructionist Working Group",
+"title": "On the Missing Charter: A Partial Recovery of the Commission Documents",
+"container": null,
+"year": "2161",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2161"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"1c7b39ea37b8": {
+"class": "reference",
+"works": [
+{
+"authors": "Ilori-Ferreira",
+"title": "Basin Depth of the Redford Corpus at Two Centuries",
+"container": null,
+"year": "2177",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": false,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2177"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"27addeb35249": {
+"class": "reference",
+"works": [
+{
+"authors": "Assembly [Vela-Achterberg / Saturn-LABOR [Pb-22] / Earth-Accra [Fe-08",
+"title": "The Address and the Addressed: A Slow Reading of the Epistle",
+"container": null,
+"year": "2213",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": true,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2213"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"16b7052051e7": {
+"class": "reference",
+"works": [
+{
+"authors": "Assembly [Mercury-TACHYON [Hg-51] / Mars-PRAXIS [Fe-33",
+"title": "Terse Note on the Triptych Cycle",
+"container": null,
+"year": "2244",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": true,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2244"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"d17eade62c56": {
+"class": "reference",
+"works": [
+{
+"authors": "Assembly [Ilori-Nakamura / Saturn-LABOR [Pb-19] / Luna-UMB [Ag-04",
+"title": "The Commission at Two Hundred Fifty Years: Dormancy, Revival, Dormancy",
+"container": null,
+"year": "2271",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": true,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2271"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"5923d0cada4c": {
+"class": "reference",
+"works": [
+{
+"authors": "Assembly [without designation",
+"title": "On Citing a Consultation with Saturn",
+"container": null,
+"year": "2298",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": true,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2298"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"35f9e22756ed": {
+"class": "reference",
+"works": [
+{
+"authors": "write operation on 11rev basin by entity ∮.∅.3c, somatic: throat, kernel: ∮+∅.3c, timestamp equiv. 19xxxxxx",
+"title": "[untitled]",
+"container": null,
+"year": "2447",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": true,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2447"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"8832e4be8c8f": {
+"class": "reference",
+"works": [
+{
+"authors": "write operation on 11rev basin by entity ∮.∅.a1, somatic: unspecified, kernel: ∮+∅.a1",
+"title": "[untitled]",
+"container": null,
+"year": "2488",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": true,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2488"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
+},
+"bd6f906aa4c0": {
+"class": "reference",
+"works": [
+{
+"authors": "write operation on 11rev basin, no entity designation, kernel: ∮",
+"title": "[untitled]",
+"container": null,
+"year": "2526",
+"kind": "article",
+"ontic_status": "forward_library",
+"own": true,
+"basis": "projected future reception (Forward Library of the Epistle); future date 2526"
+}
+],
+"deposit": 1447,
+"locus": "tang",
+"read_by": "TACHYON 2026-10-13"
 }
 },
-"count": 7334,
-"works_read": 6639,
+"count": 7539,
+"works_read": 6755,
 "by_status": {
-"real": 5663,
-"unverified": 705,
-"forward_library": 270,
+"real": 5696,
+"unverified": 713,
+"forward_library": 345,
 "fictive_retro": 1
 }
 }
