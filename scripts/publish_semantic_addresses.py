@@ -42,6 +42,8 @@ ADDR_JSON = REPO_ROOT / "data" / "semantic-addresses.json"
 BODY_INDEX = REPO_ROOT / "data" / "api" / "body-index.json"
 REGISTRY = REPO_ROOT / "data" / "registry.json"
 ADDR_DIR = REPO_ROOT / "addresses"
+sys.path.insert(0, str(REPO_ROOT / "scripts"))
+from spxi_instrument_label import label as _spxi_label  # SPXI instrument label (method 0.8), 2026-10-14
 SITEMAP = REPO_ROOT / "sitemap.xml"
 
 # Try to reuse the render_navbar function
@@ -499,6 +501,7 @@ def main() -> int:
         if related:
             n_with_related += 1
         html_text = render_address_page(slug, v, related, registry_map)
+        html_text = _spxi_label(html_text, f"https://www.alexanarch.org/addresses/{slug}/")
         (page_dir / "index.html").write_text(html_text, encoding="utf-8")
         n_written += 1
         if n_written % 500 == 0:
@@ -509,6 +512,7 @@ def main() -> int:
 
     print("Rebuilding /addresses/index.html...")
     idx_html = render_index_page(addresses, slug_map)
+    idx_html = _spxi_label(idx_html, "https://www.alexanarch.org/addresses/")
     (ADDR_DIR / "index.html").write_text(idx_html, encoding="utf-8")
     print(f"  ✓ addresses/index.html ({len(idx_html):,} bytes)")
 

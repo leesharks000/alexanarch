@@ -911,6 +911,10 @@ def main():
     page = re.sub(r'<link rel="alternate" href="https://www\.alexanarch\.org/captures/index\.json"[^>]*>\n?', "", page)
     page = page.replace("</head>", signposts + ldblock + "</head>", 1)
 
+    # SPXI instrument label (method 0.9), from data/spxi-instruments.json (2026-10-14)
+    sys.path.insert(0, str(ROOT / "scripts"))
+    from spxi_instrument_label import label as _spxi_label
+    page = _spxi_label(page, "https://www.alexanarch.org/captures/")
     PAGE.write_text(page)
     # RUNTIME GATE. node --check is a SYNTAX check and passed all day while the
     # page was broken: an undefined identifier is legal syntax and fails only

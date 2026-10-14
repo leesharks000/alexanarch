@@ -341,6 +341,18 @@ def build():
         last = max(x for x in r["dates"] if x) if any(r["dates"]) else reg.get("date")
         sm.append(f"  <url><loc>{r['record_url']}</loc><lastmod>{last}</lastmod></url>")
     sm.append("</urlset>\n")
+    # SPXI instrument label (method 0.9), from data/spxi-instruments.json (2026-10-14): visible line, meta and JSON-LD
+    from spxi_instrument_label import label as _spxi_label, record as _spxi_record
+    for k in list(files):
+        if k.endswith("index.html"):
+            files[k] = _spxi_label(files[k], f"{BASE}/captures/" + k[:-len("index.html")])
+    _ins = _spxi_record(f"{BASE}/captures/")
+    for k in list(files):
+        if k.endswith(".json"):
+            d = json.loads(files[k])
+            if isinstance(d, dict) and "spxi_instrument" not in d:
+                d = {"spxi_instrument": _ins, **d}
+                files[k] = jdump(d)
     return files, "\n".join(sm), len(toc), n_obs
 
 
