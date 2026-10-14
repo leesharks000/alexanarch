@@ -1,0 +1,57 @@
+{
+ "surface": "alexanarch.org",
+ "as_of": "2026-10-14",
+ "registry_version": "12.182",
+ "source": "https://www.alexanarch.org/data/capture-joins.json",
+ "rows": [
+  {
+   "obs_id": "OBS-cc6551df1865",
+   "date": "2026-10-14",
+   "engine": "Google AI Overview",
+   "q": "give examples of spxi instruments and spxi-treated entities and surfaces",
+   "auth": "incognito, signed out",
+   "observation": "https://www.alexanarch.org/captures/spxi-instruments-treated-entities-surfaces-aio-20261014/#spxi-instruments-treated-entities-surfaces-aio-20261014",
+   "verdict": "distorts",
+   "finding": "Components given where treated entities and surfaces were asked for.",
+   "excerpt": "Examples of components embedded on these treated surfaces include",
+   "appeared_in": [
+    "deposit:143",
+    "deposit:61",
+    "deposit:72",
+    "surface:alexanarch.org",
+    "surface:spxi.dev"
+   ],
+   "non": [
+    "spxi"
+   ],
+   "instruments": [
+    [
+     "held_by",
+     "0.8"
+    ],
+    [
+     "held_by",
+     "0.9"
+    ],
+    [
+     "mentions_instrument",
+     "0.10"
+    ],
+    [
+     "scored_by",
+     "0.6"
+    ]
+   ],
+   "pairs": [
+    {
+     "obs_id": "OBS-1bca50e639f7",
+     "observation": "https://www.alexanarch.org/captures/spxi-instruments-noticed-chatgpt-20261014/#spxi-instruments-noticed-chatgpt-20261014"
+    },
+    {
+     "obs_id": "OBS-c6a50b644c22",
+     "observation": "https://www.alexanarch.org/captures/spxi-instruments-treated-entities-surfaces-chatgpt-20261014/#spxi-instruments-treated-entities-surfaces-chatgpt-20261014"
+    }
+   ]
+  }
+ ]
+}

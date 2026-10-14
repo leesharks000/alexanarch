@@ -1135,6 +1135,14 @@ def regenerate_static_page(d, eidx, registry=None):
     # beside its identifiers, typed by severity (attribution / evidence-status / mathematical),
     # and in JSON-LD as `correction` (schema.org CorrectionComment) — so a reader reaching a June
     # claim meets the later correction at the claim, machine-readably.
+    # 2026-10-14: the capture join's projection — observations whose cards resolved to this deposit, or that name it,
+    # each with its obs_id, finding and excerpt (scripts/capture_join_render.py; data/capture-joins.json).
+    try:
+        from scripts import capture_join_render as _CJ
+        _read_in_composition_html = _CJ.deposit_block(dn)
+    except Exception as _e:
+        print(f"  [read-in-composition] skipped for #{dn}: {_e}")
+        _read_in_composition_html = ''
     _corr_html = ''; _corr_ld = []
     for _r in (d.get('related_deposits') or []):
         if isinstance(_r, dict) and _r.get('relation') == 'corrected_by':
@@ -2202,6 +2210,7 @@ def regenerate_static_page(d, eidx, registry=None):
 <div class="ft">{_kernel_html}{fulltext_marked}</div>
 {files_html}
 {lifted_apparatus_html}
+{_read_in_composition_html}
 <!-- APPARATUS BLOC — everything below records how this record was processed,
      not what the work says. It follows the work because a reader came for the
      work. (MANUS standing rule, 2026-08-06: recording of method or modification

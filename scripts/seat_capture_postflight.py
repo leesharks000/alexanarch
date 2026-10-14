@@ -61,6 +61,10 @@ STEPS = [
     # 2026-10-01: RECS after PAGE (it reads the address layer's record_url to link each record to its address
     # page). One page and one JSON file per capture, a table of contents and a sitemap: the record page is the
     # citation (ruling, Lee Sharks, 2026-10-01), and every output stays far under the ~4 MiB fetch ceiling.
+    # 2026-10-14: JOIN before RECS. build_capture_joins.py derives each observation's relations to deposits, /non entities,
+    # surfaces and instruments (data/capture-joins.json, data/surface-joins/<domain>.json); RECS, the deposit pages and /non
+    # render its confirmed relations within render_scope. Derived and deterministic; the seated records are not touched.
+    ("JOIN", [sys.executable, "scripts/build_capture_joins.py"]),
     ("RECS", [sys.executable, "scripts/build_capture_records.py"]),
     ("SYNC", [sys.executable, "scripts/sync_capture_dataset.py"]),
     # 2026-10-06: SIGIL after every page-writing step: Speak with Sigil on every page, once (scripts/sync_sigil.py).

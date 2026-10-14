@@ -1,0 +1,179 @@
+{
+ "name": "Capture-join decisions",
+ "rule": "Each decision binds to a relation id (sha1 of obs_id|verb|object|basis) and the evidence revision it was read against. Rejections are kept with confirmations. A decision whose relation no longer derives stays here as history.",
+ "render_scope": [
+  "OBS-c6a50b644c22",
+  "OBS-cc6551df1865",
+  "OBS-1bca50e639f7"
+ ],
+ "decisions": [
+  {
+   "id": "REL-a13bea09cdab",
+   "decision": "confirmed",
+   "reader": "Claude (TACHYON), on the operator's go",
+   "date": "2026-10-14",
+   "revision": "EA-WG-CAPTURES-01 v12.182",
+   "reason": "read: the chip label is spxi.dev's own title (\"SPXI — Semantic Packet for eXchange & Indexing\"), and the passage it stands beside is spxi.dev's account of the protocol"
+  },
+  {
+   "id": "REL-3b73d6629cea",
+   "decision": "confirmed",
+   "reader": "Claude (TACHYON), on the operator's go",
+   "date": "2026-10-14",
+   "revision": "EA-WG-CAPTURES-01 v12.182",
+   "reason": "read: the chip label is spxi.dev's own title (\"SPXI — Semantic Packet for eXchange & Indexing\"), and the passage it stands beside is spxi.dev's account of the protocol"
+  },
+  {
+   "id": "REL-3d8487527539",
+   "decision": "confirmed",
+   "reader": "Claude (TACHYON), on the operator's go",
+   "date": "2026-10-14",
+   "revision": "EA-WG-CAPTURES-01 v12.182",
+   "reason": "read: the answer concerns the SPXI protocol, the entity of /non spxi"
+  },
+  {
+   "id": "REL-6cab723f30d3",
+   "decision": "confirmed",
+   "reader": "Claude (TACHYON), on the operator's go",
+   "date": "2026-10-14",
+   "revision": "EA-WG-CAPTURES-01 v12.182",
+   "reason": "read: the answer concerns the SPXI protocol, the entity of /non spxi"
+  },
+  {
+   "id": "REL-d61478314475",
+   "decision": "confirmed",
+   "reader": "Claude (TACHYON), on the operator's go",
+   "date": "2026-10-14",
+   "revision": "EA-WG-CAPTURES-01 v12.182",
+   "reason": "read: the answer concerns the SPXI protocol, the entity of /non spxi"
+  }
+ ],
+ "asserted": [
+  {
+   "obs_id": "OBS-c6a50b644c22",
+   "verb": "distorts",
+   "object": "request",
+   "basis": "read",
+   "reader": "Claude (TACHYON), on the operator's go",
+   "date": "2026-10-14",
+   "revision": "EA-WG-CAPTURES-01 v12.182",
+   "finding": "The protocol named, then called unrelated; the request returned to the querent (manufactured ambiguity).",
+   "excerpt": "one unrelated result, for example, uses SPXI for a semantic indexing protocol"
+  },
+  {
+   "obs_id": "OBS-cc6551df1865",
+   "verb": "distorts",
+   "object": "request",
+   "basis": "read",
+   "reader": "Claude (TACHYON), on the operator's go",
+   "date": "2026-10-14",
+   "revision": "EA-WG-CAPTURES-01 v12.182",
+   "finding": "Components given where treated entities and surfaces were asked for.",
+   "excerpt": "Examples of components embedded on these treated surfaces include"
+  },
+  {
+   "obs_id": "OBS-cc6551df1865",
+   "verb": "mentions_instrument",
+   "object": "instrument:0.10",
+   "basis": "read: the Conformance Instrument is named (card 3, #143)",
+   "reader": "Claude (TACHYON), on the operator's go",
+   "date": "2026-10-14",
+   "revision": "EA-WG-CAPTURES-01 v12.182"
+  },
+  {
+   "obs_id": "OBS-1bca50e639f7",
+   "verb": "distorts",
+   "object": "request",
+   "basis": "read",
+   "reader": "Claude (TACHYON), on the operator's go",
+   "date": "2026-10-14",
+   "revision": "EA-WG-CAPTURES-01 v12.182",
+   "finding": "The specification given as an instrument; examples of all three kinds, each list qualified.",
+   "excerpt": "SPXI Standing Protocol: the specification for entity inscription on websites."
+  },
+  {
+   "obs_id": "OBS-1bca50e639f7",
+   "verb": "mentions",
+   "object": "deposit:72",
+   "basis": "read: the Standing Protocol is named",
+   "reader": "Claude (TACHYON), on the operator's go",
+   "date": "2026-10-14",
+   "revision": "EA-WG-CAPTURES-01 v12.182",
+   "excerpt": "SPXI Standing Protocol: the specification for entity inscription on websites."
+  },
+  {
+   "obs_id": "OBS-1bca50e639f7",
+   "verb": "mentions",
+   "object": "deposit:637",
+   "basis": "read: the Encyclotron is named",
+   "reader": "Claude (TACHYON), on the operator's go",
+   "date": "2026-10-14",
+   "revision": "EA-WG-CAPTURES-01 v12.182",
+   "excerpt": "Encyclotron: an instrument named in the project's documentation."
+  },
+  {
+   "obs_id": "OBS-1bca50e639f7",
+   "verb": "mentions_instrument",
+   "object": "instrument:0.15",
+   "basis": "read: the Platform Erosion Observatory, named as the PID Erosion Observatory",
+   "reader": "Claude (TACHYON), on the operator's go",
+   "date": "2026-10-14",
+   "revision": "EA-WG-CAPTURES-01 v12.182",
+   "excerpt": "PID Erosion Observatory (PEO)"
+  },
+  {
+   "obs_id": "OBS-c6a50b644c22",
+   "verb": "pair_of",
+   "object": "observation:OBS-cc6551df1865",
+   "basis": "same string, two surfaces, same day",
+   "reader": "Claude (TACHYON), on the operator's go",
+   "date": "2026-10-14",
+   "revision": "EA-WG-CAPTURES-01 v12.182"
+  },
+  {
+   "obs_id": "OBS-cc6551df1865",
+   "verb": "pair_of",
+   "object": "observation:OBS-c6a50b644c22",
+   "basis": "same string, two surfaces, same day",
+   "reader": "Claude (TACHYON), on the operator's go",
+   "date": "2026-10-14",
+   "revision": "EA-WG-CAPTURES-01 v12.182"
+  },
+  {
+   "obs_id": "OBS-c6a50b644c22",
+   "verb": "pair_of",
+   "object": "observation:OBS-1bca50e639f7",
+   "basis": "same surface, the string with a clause appended",
+   "reader": "Claude (TACHYON), on the operator's go",
+   "date": "2026-10-14",
+   "revision": "EA-WG-CAPTURES-01 v12.182"
+  },
+  {
+   "obs_id": "OBS-1bca50e639f7",
+   "verb": "pair_of",
+   "object": "observation:OBS-c6a50b644c22",
+   "basis": "same surface, the string with a clause appended",
+   "reader": "Claude (TACHYON), on the operator's go",
+   "date": "2026-10-14",
+   "revision": "EA-WG-CAPTURES-01 v12.182"
+  },
+  {
+   "obs_id": "OBS-cc6551df1865",
+   "verb": "pair_of",
+   "object": "observation:OBS-1bca50e639f7",
+   "basis": "the string and the string with a clause appended, two surfaces, same day",
+   "reader": "Claude (TACHYON), on the operator's go",
+   "date": "2026-10-14",
+   "revision": "EA-WG-CAPTURES-01 v12.182"
+  },
+  {
+   "obs_id": "OBS-1bca50e639f7",
+   "verb": "pair_of",
+   "object": "observation:OBS-cc6551df1865",
+   "basis": "the string and the string with a clause appended, two surfaces, same day",
+   "reader": "Claude (TACHYON), on the operator's go",
+   "date": "2026-10-14",
+   "revision": "EA-WG-CAPTURES-01 v12.182"
+  }
+ ]
+}

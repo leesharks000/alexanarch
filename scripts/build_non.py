@@ -33,6 +33,7 @@ esc = html.escape
 
 sys.path.insert(0, str(ROOT))
 from scripts.render_navbar import render_navbar
+from scripts import capture_join_render as CJ
 
 def nav():
     """The canonical nav (data/navigation.json), with /non marked as the page in view."""
@@ -736,6 +737,7 @@ def main():
                      + (f'<p class="meta">{md_inline(r["delta"]["T_vs_LB_reading"])}</p>' if r["delta"].get("T_vs_LB_reading") else "")
                      + f'<p><strong>{"L_F(B) against L_A(B ∪ A)" if onto else "L(B) against L(B ∪ A)"}</strong> (the intervention): {md_inline(r["delta"]["LB_vs_LBA"])}</p>'))
         c.append(det("K", "the prospective kernel <span class=\"meta\">sealed only at freeze</span>", f'<div class="stack">{kent}</div>', n=f'{len(r["kernel"])} entries'))
+        c.append(CJ.non_block(key))  # the capture join: observations read as concerning this entity (2026-10-14)
         c.append('</div>')
         c.append(f'<div class="card-links"><a href="{DS_URL}/rows/{key}.json">row json</a>'
                  f'<a href="/{r["ledger"]["archive"]}">archive ledger</a><a href="/{r["ledger"]["selection"]}">selection readings</a>'
