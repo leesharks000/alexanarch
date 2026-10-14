@@ -58,6 +58,10 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:6px}
 .ow-raw{font-family:var(--mono);font-size:0.9em;background:#f6f6f2;padding:6px 8px;border-radius:3px;margin:4px 0;white-space:pre-wrap;overflow-wrap:anywhere}
 .ow-x a{margin-right:6px}
 .note{font-size:0.8em;color:var(--dim);margin:-6px 0 14px}
+.ow-badge{display:inline-block;font-family:var(--mono);font-size:0.7em;padding:1px 6px;border-radius:3px;margin-left:6px;vertical-align:1px;white-space:nowrap}
+.b-fl{background:#efe7f7;color:#5b3f86;border:1px solid #d9c8ee}.b-fx{background:#fbeee6;color:#8a4a1f;border:1px solid #efd3bf}
+.b-un{color:var(--dim);border:1px solid var(--border)}
+.ow-fl{font-size:0.92em;color:#5b3f86;margin:2px 0 4px}
 @media (max-width:560px){.ow-head,.ow-row{grid-template-columns:minmax(0,1fr) 48px 44px}.ow-k,.ow-head .hk{display:none}.ow-m{display:block}}
 .ow-m{display:none;font-size:0.76em;color:var(--dim);font-family:var(--mono)}
 </style>
@@ -84,10 +88,11 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:6px}
 </section>
 
 <section id="panel-outside" hidden>
-<div class="sub">One row per work the archive cites, outside itself: books, articles, DOIs, arXiv papers, ISBNs, outside links. Built from the parsed reference sections and the mechanically extracted identifiers. Parsing is heuristic; open a row to see the entry as written and the deposits that cite it.</div>
+<div class="sub">One row per work the archive cites, outside itself: books, articles, DOIs, arXiv papers, ISBNs, outside links. Built from the reference sections and the mechanically extracted identifiers. Entries read in session carry their kind and ontic status; entries not yet read are parsed by heuristic and marked so. Works cited ahead of their existence are kept and labelled <span class="ow-badge b-fl">⟐ Forward Library</span>: a Retrocausal Citation Entry, not a historical publication record. Open a row to see the entry as written and the deposits that cite it.</div>
 <div class="stats" id="ow-stats"></div>
 <input class="search" id="ow-search" placeholder="Search author, title, venue, identifier, or entry text...">
 <div class="filter-btns" id="ow-filters"></div>
+<div class="filter-btns" id="ow-status"></div>
 <div class="note">Sort by clicking a column. <a href="/data/outside-works.json">JSON</a> · <a href="/data/outside-works.csv">CSV</a></div>
 <div class="ow-head" id="ow-head"><span data-s="title">Work</span><span class="hy" data-s="year" style="text-align:right">Year</span><span class="hk" data-s="kind">Kind</span><span data-s="n" style="text-align:right">Cited by</span></div>
 <div id="ow-rows">Loading…</div>
@@ -228,9 +233,12 @@ Promise.all([
 
 <script>
 (function(){
-  var KIND_LABEL = {book:'Books', article:'Articles', reference:'Other references', doi:'DOIs', arxiv:'arXiv', isbn:'ISBNs', zenodo:'Zenodo (outside)', web:'Web', platform:'Platform links', archive:"The archive's own"};
-  var WORK_KINDS = ['book','article','reference','doi','arxiv','isbn','zenodo','web'];
-  var loaded = false, works = [], active = 'works', sortKey = 'n', sortDir = -1, q = '', page = 0, PS = 50;
+  var KIND_LABEL = {book:'Books', article:'Articles', chapter:'Chapters', paper:'Conference papers', preprint:'Preprints', thesis:'Theses', report:'Reports', post:'Posts', legal:'Legal', scripture:'Scripture', classical:'Ancient & classical', dataset:'Datasets', software:'Software', media:'Broadcast & media', other:'Other', reference:'Other references (unread)', doi:'DOIs', arxiv:'arXiv', isbn:'ISBNs', zenodo:'Zenodo (outside)', web:'Web', platform:'Platform links', archive:"The archive's own"};
+  var KIND_ORDER = ['book','article','chapter','paper','preprint','thesis','report','classical','scripture','legal','dataset','software','media','post','web','other','reference','doi','arxiv','isbn','zenodo'];
+  var STATUS_LABEL = {real:'Real', unverified:'Unverified', forward_library:'⟐ Forward Library', fictive_retro:'Fictive (retro)'};
+  var NOT_WORK = {archive:1, platform:1};
+  var loaded = false, works = [], active = 'works', status = 'all', sortKey = 'n', sortDir = -1, q = '', page = 0, PS = 50;
+  function isWork(w){ return !NOT_WORK[w.kind]; }
   function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
   function yr(w){ var m = String(w.year||'').match(/\d{3,4}/); return m ? +m[0] : null; }
   function idLink(i){
@@ -253,7 +261,8 @@ Promise.all([
   });
   function pool(){
     var p = works.filter(function(w){
-      if(active==='works') return WORK_KINDS.indexOf(w.kind)!==-1;
+      if(status!=='all' && w.ontic_status!==status) return false;
+      if(active==='works') return isWork(w);
       if(active==='all') return true;
       return w.kind===active;
     });
@@ -273,14 +282,21 @@ Promise.all([
     var p = pool(), tp = Math.max(1, Math.ceil(p.length/PS)); if(page>=tp) page = tp-1;
     document.getElementById('ow-rows').innerHTML = p.slice(page*PS,(page+1)*PS).map(function(w){
       var cites = w.cited_by.map(function(n){ return '<a href="/s/records/'+n+'/">#'+n+'</a>'; }).join(' ');
+      var fwd = (w.forward_in||[]).length ? '<div class="ow-fl">Cited ahead of its existence in '+w.forward_in.map(function(n){ return '<a href="/s/records/'+n+'/">#'+n+'</a>'; }).join(' ')+' (forthcoming, or a DOI still to be minted); the work now exists.</div>' : '';
       var own = w.deposit ? '<div>This is the archive\'s own work: <a href="/s/records/'+w.deposit+'/">#'+w.deposit+'</a></div>' : '';
-      return '<div class="ow-row"><div><div class="ow-t">'+esc(w.title||'(untitled)')+'</div>'+
+      var badge = w.ontic_status==='forward_library' ? '<span class="ow-badge b-fl">⟐ Forward Library</span>' :
+                  w.ontic_status==='fictive_retro' ? '<span class="ow-badge b-fx">fictive (retro)</span>' :
+                  (!w.read ? '<span class="ow-badge b-un">not yet read</span>' : '');
+      var fl = w.ontic_status==='forward_library' ? '<div class="ow-fl">⟐ Retrocausal Citation Entry · Forward Library · not a historical publication record.</div>' :
+               w.ontic_status==='fictive_retro' ? '<div class="ow-fl" style="color:#8a4a1f">An invented past work, cited as though it existed.</div>' : '';
+      var how = '<div style="color:var(--dim)">'+(w.read ? 'Read in session · status '+esc(STATUS_LABEL[w.ontic_status]||w.ontic_status) : 'Parsed by heuristic, not yet read'+(w.confidence!=null ? ' · parse confidence '+w.confidence : ''))+(w.form && w.kind==='archive' ? ' · '+esc(w.form) : '')+(w.basis ? ' · '+esc(w.basis) : '')+'</div>';
+      return '<div class="ow-row"><div><div class="ow-t">'+esc(w.title||'(untitled)')+badge+'</div>'+
         (w.authors ? '<div class="ow-a">'+esc(w.authors)+(w.venue && w.kind!=='web' && w.kind!=='platform' ? ' · '+esc(w.venue) : '')+'</div>' : (w.venue && w.kind!=='web' && w.kind!=='platform' ? '<div class="ow-a">'+esc(w.venue)+'</div>' : ''))+
         '<div class="ow-m">'+esc(w.kind)+'</div></div>'+
         '<div class="ow-y">'+esc(w.year||'')+'</div><div class="ow-k">'+esc(w.kind)+'</div><div class="ow-n">'+w.cited_by_count+'</div>'+
-        '<div class="ow-x">'+(w.raw ? '<div class="ow-raw">'+esc(w.raw)+'</div>' : '')+own+
+        '<div class="ow-x">'+fl+fwd+(w.raw ? '<div class="ow-raw">'+esc(w.raw)+'</div>' : '')+own+
         ((w.identifiers||[]).length ? '<div>'+w.identifiers.map(idLink).join(' ')+'</div>' : '')+
-        '<div>Cited by '+cites+'</div>'+(w.confidence!=null ? '<div style="color:var(--dim)">parse confidence '+w.confidence+'</div>' : '')+'</div></div>';
+        '<div>Cited by '+cites+'</div>'+how+'</div></div>';
     }).join('') || '<p style="color:var(--dim);padding:10px">No matches.</p>';
     document.getElementById('ow-pager').innerHTML =
       '<button id="ow-prev"'+(page<=0?' disabled':'')+'>← Previous</button>'+
@@ -294,18 +310,25 @@ Promise.all([
     fetch('/data/outside-works.json').then(function(r){ return r.json(); }).then(function(d){
       works = d.works || [];
       var c = {}; works.forEach(function(w){ c[w.kind] = (c[w.kind]||0)+1; });
-      var nw = works.filter(function(w){ return WORK_KINDS.indexOf(w.kind)!==-1; });
+      var nw = works.filter(isWork);
       var deps = {}; nw.forEach(function(w){ w.cited_by.forEach(function(n){ deps[n] = 1; }); });
       document.getElementById('ow-stats').innerHTML =
         '<div class="stat"><div class="stat-num">'+nw.length.toLocaleString()+'</div><div class="stat-label">Works cited</div></div>'+
         '<div class="stat"><div class="stat-num">'+Object.keys(deps).length.toLocaleString()+'</div><div class="stat-label">Citing deposits</div></div>'+
         '<div class="stat"><div class="stat-num">'+((c.book||0)+(c.article||0)).toLocaleString()+'</div><div class="stat-label">Books and articles</div></div>';
       var f = '<div class="fbtn active" data-k="works">Works cited ('+nw.length+')</div>';
-      WORK_KINDS.concat(['archive','platform']).forEach(function(k){ if(c[k]) f += '<div class="fbtn" data-k="'+k+'">'+KIND_LABEL[k]+' ('+c[k]+')</div>'; });
+      var kinds = KIND_ORDER.filter(function(k){ return c[k]; }).concat(Object.keys(c).filter(function(k){ return KIND_ORDER.indexOf(k)===-1 && !NOT_WORK[k]; }));
+      kinds.concat(['archive','platform']).forEach(function(k){ if(c[k]) f += '<div class="fbtn" data-k="'+k+'">'+(KIND_LABEL[k]||k)+' ('+c[k]+')</div>'; });
       f += '<div class="fbtn" data-k="all">Everything ('+works.length+')</div>';
       var fe = document.getElementById('ow-filters'); fe.innerHTML = f;
       fe.addEventListener('click', function(ev){ var b = ev.target; if(!b.dataset.k) return; active = b.dataset.k; page = 0;
         fe.querySelectorAll('.fbtn').forEach(function(x){ x.classList.toggle('active', x===b); }); render(); });
+      var sc = {}; works.forEach(function(w){ sc[w.ontic_status] = (sc[w.ontic_status]||0)+1; });
+      var sh = '<div class="fbtn active" data-st="all">Any status</div>';
+      ['real','unverified','forward_library','fictive_retro'].forEach(function(k){ if(sc[k]) sh += '<div class="fbtn" data-st="'+k+'">'+STATUS_LABEL[k]+' ('+sc[k]+')</div>'; });
+      var se = document.getElementById('ow-status'); se.innerHTML = sh;
+      se.addEventListener('click', function(ev){ var b = ev.target; if(!b.dataset.st) return; status = b.dataset.st; page = 0;
+        se.querySelectorAll('.fbtn').forEach(function(x){ x.classList.toggle('active', x===b); }); render(); });
       render();
     }).catch(function(){ document.getElementById('ow-rows').textContent = 'Could not load /data/outside-works.json.'; });
   }

@@ -214,12 +214,50 @@ def parse_reference(s):
     }
 
 
+READINGS = QUEUE.parents[1] / "citation-readings.json"
+
+
+def apply_readings(entries, counts):
+    """An in-session reading (data/citation-readings.json) settles a segment, whatever
+    the heuristic made of it: a reference becomes parsed with one record per work read,
+    anything else becomes not_reference."""
+    if not READINGS.exists():
+        return set()
+    R = json.loads(READINGS.read_text(encoding="utf-8")).get("readings", {})
+    done = set()
+    for i, e in enumerate(entries):
+        k = hashlib.sha256(f"{e['source_deposit']}|{e.get('raw', '')}".encode()).hexdigest()[:12]
+        r = R.get(k)
+        if not r:
+            continue
+        done.add(i)
+        e["read"] = r.get("read_by") or True
+        if r.get("class") != "reference" or not r.get("works"):
+            e["status"] = "not_reference"; e.pop("parsed", None); e.pop("works", None)
+            counts["read_not_reference"] += 1
+            continue
+        works = []
+        for w in r["works"]:
+            base = (norm(w.get("authors") or "") + "|" + norm(w.get("title") or "") + "|" + (w.get("year") or "")).lower()
+            works.append(dict(w, venue=w.get("container"),
+                              bibkey="bib:" + hashlib.sha256(base.encode("utf-8")).hexdigest()[:12],
+                              confidence=1.0))
+        e["status"] = "parsed"
+        e["works"] = works
+        e["parsed"] = works[0]
+        counts["read_reference"] += 1
+    return done
+
+
 def main():
     q = json.loads(QUEUE.read_text(encoding="utf-8"))
     entries = q["entries"]
     counts = Counter()
+    read_idx = apply_readings(entries, counts)
     last_author = {}
-    for e in entries:
+    for i, e in enumerate(entries):
+        if i in read_idx:
+            continue
         if e.get("status") == "parsed" and (e.get("parsed") or {}).get("authors"):
             last_author[e["source_deposit"]] = e["parsed"]["authors"]
         if e.get("status") != "pending":
@@ -252,6 +290,7 @@ def main():
         counts["parsed"] += 1
     q["pending"] = sum(1 for e in entries if e.get("status") == "pending")
     q["parsed"] = sum(1 for e in entries if e.get("status") == "parsed")
+    q["read"] = sum(1 for e in entries if e.get("read"))
     q["dateModified"] = __import__("datetime").datetime.now(
         __import__("datetime").timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     q["bibkey_convention"] = "bib:<sha256(normalized raw)[:12]>; deterministic from 2026-07-30"
@@ -266,6 +305,7 @@ def main():
         "provenance_row": "capture/provenance table row (platform, account, state, date); apparatus of the capture registry, not bibliography",
         "footnote": "a numbered note; may mention works, is not a bibliography entry",
         "tang_prose": "a TANG body paragraph without a reference shape: the genre's citation set in prose (deposit #542); raw kept",
+        "not_reference": "read in session (data/citation-readings.json): not a bibliographic reference",
         "pending": "resisted deterministic parse; awaits in-session judgment",
     }
     QUEUE.write_text(json.dumps(q, indent=1, ensure_ascii=False), encoding="utf-8")

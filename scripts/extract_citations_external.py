@@ -65,8 +65,66 @@ URL_RE = re.compile(r'https?://[^\s\)\]\">]+')
 ARXIV_RE = re.compile(r'\barXiv:\s?(\d{4}\.\d{4,5})(v\d+)?', re.I)
 ISBN_RE = re.compile(r'\bISBN[:\s-]*((?:97[89][- ]?)?(?:\d[- ]?){9}[\dXx])\b')
 TANG_RE = re.compile(r'(Total Axial Negation Graph|\bTANG\b|\bOCTANG\b)', re.I)
-REFSEC_RE = re.compile(r'^#{1,4}[^\n]{0,40}\b(Works Cited|References|Bibliography|Sources)\b[^\n]{0,25}$', re.I | re.M)
-HEADING_RE = re.compile(r'^#{1,4}\s+\S', re.M)
+# A reference section opens at a markdown heading OR a bold line naming one.
+# "Cross-references" and "non-citations" are internal apparatus and stay out.
+REFSEC_RE = re.compile(r'^(#{1,4}|\*\*)(?![^\n]*\b(?:cross-?references|non-citations)\b)[^\n]{0,40}\b('
+                       r'Works Cited|Works Referenced|References|Bibliography|Sources|Select(?:ed)? Bibliography|'
+                       r'Further Reading|Literature Cited|Reference List|External(?: / Archive)? Citations|'
+                       r'Forward Library|Primary Sources|Secondary Sources)\b[^\n]{0,30}$', re.I | re.M)
+HEADING_RE = re.compile(r'^(#{1,6})\s+\S', re.M)
+# a line that begins a new bibliographic entry (as opposed to continuing one)
+ENTRY_START = re.compile(r'^\s*(?:[-*\u2022+]\s+|\d{1,3}[.)]\s+|\[\^?\w{1,4}\]:?\s|\u2014{2,3}|-{3}|'
+                         r'[A-Z\u00C0-\u024F][\w\'\u2019\-]+(?:\s[A-Z][\w\'\u2019\-]+){0,3}[,.(]|\*[A-Z]|"[A-Z]|\u201c[A-Z])')
+# inline-flattened lists: " - Surname, I. (" repeated on one line
+INLINE_SPLIT = re.compile(r'\s[-\u2022]\s(?=(?:[A-Z\u00C0-\u024F][\w\'\u2019\-]+(?:\s[A-Z][\w\'\u2019\-]+)?,\s|\d{1,2}\s?U\.S\.C))')
+
+
+def refsec_spans(body):
+    """Every reference section in a body: (start, end) after its heading line.
+
+    A section ends at the next heading of the same or higher level (sub-headings such
+    as "### Primary sources" stay inside it); a bold-line opener ends at the next
+    heading of any level."""
+    spans = []
+    for m in REFSEC_RE.finditer(body):
+        level = len(m.group(1)) if m.group(1).startswith('#') else 7
+        end = len(body)
+        for h in HEADING_RE.finditer(body, m.end()):
+            if len(h.group(1)) <= level and not REFSEC_RE.match(body, h.start()):
+                end = h.start(); break
+        if spans and m.start() < spans[-1][1]:
+            continue  # nested inside the previous section
+        spans.append((m.end(), end))
+    return spans
+
+
+def segment_entries(sec):
+    """One entry per bibliographic item: lines that begin an entry start one; other
+    non-blank lines continue the entry before them; blank lines close it."""
+    out, cur = [], []
+    def flush():
+        if cur:
+            out.append(' '.join(' '.join(cur).split()))
+            cur.clear()
+    for line in sec.split('\n'):
+        if not line.strip():
+            flush(); continue
+        if line.lstrip().startswith('#'):
+            # a heading inside the section opens an entry of its own (in annotated
+            # bibliographies the heading IS the citation; a sub-section label stays
+            # short and is read as such)
+            flush()
+            cur.append(line.strip().lstrip('#').strip())
+            continue
+        if cur and ENTRY_START.match(line):
+            flush()
+        cur.append(line.strip())
+    flush()
+    res = []
+    for e in out:
+        parts = INLINE_SPLIT.split(e) if len(re.findall(r'\b(1[5-9]\d\d|20\d\d)\b', e)) > 1 else [e]
+        res.extend(p.strip() for p in parts if p.strip())
+    return res
 
 def norm_doi(d):
     # Trailing markdown and punctuation (` * _ ' " ” ’ . , ; : ! ?) is not part of
@@ -165,23 +223,19 @@ def main():
                                           'raw': e[:600], 'locus': 'tang',
                                           'status': 'pending'})
 
-        # refsec span (locus classification + Stage B segmentation)
-        rs = REFSEC_RE.search(body)
-        refsec_span = (rs.end(), len(body)) if rs else None
-        if rs:
-            nxt = HEADING_RE.search(body, rs.end())
-            refsec_span = (rs.end(), nxt.start() if nxt else len(body))
+        # refsec spans (locus classification + Stage B segmentation)
+        spans = refsec_spans(body)
+        if spans:
             refsec_texts += 1
-            sec = body[refsec_span[0]:refsec_span[1]]
-            for entry in re.split(r'\n\s*\n', sec):
-                e = ' '.join(entry.split())
+        for a, b in spans:
+            for e in segment_entries(body[a:b]):
                 if len(e) > 25 and not e.startswith('#'):
                     queue_entries.append({'source_deposit': num, 'source_axn': axn,
-                                          'raw': e[:600], 'locus': 'refsec',
+                                          'raw': e[:1200], 'locus': 'refsec',
                                           'status': 'pending'})
 
         def locus(pos):
-            return 'refsec' if refsec_span and refsec_span[0] <= pos < refsec_span[1] else 'inline'
+            return 'refsec' if any(a <= pos < b for a, b in spans) else 'inline'
 
         for mm in DOI_RE.finditer(body):
             d = norm_doi(mm.group(1))
@@ -246,20 +300,35 @@ def main():
     # reset finished triage to pending and the same non-references were re-queued
     # forever — work recorded as owed where none was.
     TERMINAL = {'parsed', 'relation_line', 'legal_citation', 'apparatus',
-                'prose', 'provenance_row', 'bare_url', 'nav_relation', 'footnote', 'tang_prose'}
+                'prose', 'provenance_row', 'bare_url', 'nav_relation', 'footnote', 'tang_prose', 'not_reference'}
     qp = ROOT / 'data' / 'worklists' / 'refsec-parse-queue.json'
     parsed_keep = []
+    retired = 0
     if qp.exists():
         old = json.loads(qp.read_text())
-        parsed_keep = [e for e in old.get('entries', []) if e.get('status') in TERMINAL]
-        done_raw = {e['raw'] for e in parsed_keep}
-        queue_entries = [e for e in queue_entries if e['raw'] not in done_raw]
+        # A finished entry is kept only while its text is still a segment of the
+        # current segmentation; an entry from an older segmentation (several
+        # references run together, cut at 600 characters) is retired, and its
+        # parts re-enter the queue on their own.
+        current = {(e['source_deposit'], e['raw']) for e in queue_entries}
+        olds = [e for e in old.get('entries', []) if e.get('status') in TERMINAL]
+        parsed_keep = [e for e in olds if (e['source_deposit'], e['raw']) in current]
+        retired = len(olds) - len(parsed_keep)
+        done = {(e['source_deposit'], e['raw']) for e in parsed_keep}
+        seen = set(); fresh = []
+        for e in queue_entries:
+            k = (e['source_deposit'], e['raw'])
+            if k in done or k in seen:
+                continue
+            seen.add(k); fresh.append(e)
+        queue_entries = fresh
     qp.write_text(json.dumps({
         'description': 'Stage B/C queue: freeform reference-section entries awaiting in-session interpretive parsing (No-Double-Draw: TACHYON parses in-session; never via API). Parsed entries carry structured records and bib: keys.',
         'dateModified': now,
         'pending': len(queue_entries),
         'parsed': sum(1 for e in parsed_keep if e.get('status') == 'parsed'),
         'triaged': sum(1 for e in parsed_keep if e.get('status') != 'parsed'),
+        'retired_from_older_segmentation': retired,
         'entries': parsed_keep + queue_entries,
     }, ensure_ascii=False, indent=1) + '\n')
 

@@ -139,7 +139,47 @@ def build():
         return r
 
     # 1. parsed entries
+    # read entries first, so a row takes its fields from the reading where there is one
+    ff = sorted(ff, key=lambda e: 0 if e.get('read') else 1)
     for e in ff:
+        if e.get('read'):
+            t, a = (e.get('title') or '').strip(), e.get('authors')
+            if not t:
+                set_aside += 1; continue
+            key = title_key(t, a)
+            r = row(key)
+            if not r.get('read'):
+                for f in ('title', 'authors', 'year', 'venue'):
+                    r[f] = e.get(f) or r[f]
+                r['raw'], r['confidence'] = e.get('raw'), 1.0
+            st = e.get('ontic_status') or 'unverified'
+            # the work's status across its citations: a work any citation identifies as
+            # existing is real; one cited ahead of its existence in some deposit keeps that
+            # fact in forward_in. Otherwise forward > fictive > unverified.
+            RANK = {'real': 3, 'forward_library': 2, 'fictive_retro': 1, 'unverified': 0}
+            if not r.get('read') or RANK.get(st, 0) > RANK.get(r['ontic_status'], 0):
+                r['ontic_status'] = st
+            if st == 'forward_library':
+                r.setdefault('forward_in', set()).add(e['source_deposit'])
+            r['read'] = True
+            if e.get('basis') and not r.get('basis'):
+                r['basis'] = e['basis']
+            r['form'] = e.get('kind')
+            r['kind'] = 'archive' if (e.get('own') or e.get('deposit')) else e.get('kind')
+            if e.get('deposit'):
+                r['deposit'] = e['deposit']
+            r['cited_by'].add(e['source_deposit'])
+            raw = e.get('raw') or ''
+            for m in DOI_IN.finditer(raw):
+                i = 'doi:' + norm_doi(m.group(1)); id_to_row.setdefault(i, key)
+                if i not in r['identifiers']: r['identifiers'].append(i)
+            for m in ARXIV_IN.finditer(raw):
+                i = 'arxiv:' + m.group(1); id_to_row.setdefault(i, key)
+                if i not in r['identifiers']: r['identifiers'].append(i)
+            for m in ISBN_IN.finditer(raw):
+                i = 'isbn:' + re.sub(r'[- ]', '', m.group(1)); id_to_row.setdefault(i, key)
+                if i not in r['identifiers']: r['identifiers'].append(i)
+            continue
         t, a = clean_title(e.get('title')), e.get('authors')
         if not t or len(t) < 8 or t.endswith(':') or JUNK_TITLE.match(t):
             set_aside += 1      # a parse with no usable title; the entry stays in the freeform graph
@@ -151,6 +191,9 @@ def build():
         e = dict(e, title=t)
         key = title_key(t, a)
         r = row(key)
+        if r.get('read'):
+            r['cited_by'].add(e['source_deposit'])   # a reading already settled this work
+            continue
         for f in ('title', 'authors', 'year', 'venue'):
             if e.get(f) and not r[f]:
                 r[f] = e[f]
@@ -206,7 +249,11 @@ def build():
     for r in rows.values():
         cb = sorted(r['cited_by'])
         y = r['year']
-        out.append({'id': r['id'], 'kind': r['kind'] or 'reference', 'title': r['title'], 'authors': r['authors'],
+        extra = {k: r[k] for k in ('form', 'basis') if r.get(k)}
+        if r.get('forward_in') and r['ontic_status'] == 'real':
+            extra['forward_in'] = sorted(r['forward_in'])   # cited ahead of its existence here
+        extra['read'] = bool(r.get('read'))
+        out.append({'id': r['id'], 'kind': r['kind'] or 'reference', 'title': r['title'], 'authors': r['authors'], **extra,
                     'year': y, 'venue': r['venue'], 'identifiers': r['identifiers'], 'deposit': r['deposit'],
                     'cited_by_count': len(cb), 'cited_by': cb, 'raw': (r['raw'] or '')[:300],
                     'confidence': r['confidence'], 'ontic_status': r['ontic_status']})
@@ -238,7 +285,18 @@ def render(out, set_aside=0):
         'by_kind': dict(kinds.most_common()),
         'citing_deposits': len({n for r in out for n in r['cited_by']}),
         'parsed_entries_set_aside': set_aside,
-        'fields': {'kind': 'book | article | reference | doi | arxiv | isbn | zenodo | web | platform | archive',
+        'by_ontic_status': dict(Counter(r['ontic_status'] for r in out).most_common()),
+        'read': sum(1 for r in out if r.get('read')),
+        'ontic_status_vocabulary': {
+            'real': 'the reader identifies the work as existing',
+            'unverified': 'not identified: plausible, or parsed but not yet read',
+            'forward_library': 'Retrocausal Citation Entry · Forward Library · not a historical publication record',
+            'fictive_retro': 'an invented past work, cited as though it existed'},
+        'fields': {'kind': 'book | article | chapter | paper | preprint | thesis | report | web | post | legal | scripture | classical | dataset | software | media | other | reference | doi | arxiv | isbn | zenodo | platform | archive',
+                   'forward_in': 'for a real work: deposits that cited it ahead of its existence (forthcoming, DOI to be minted)',
+                   'read': 'true when the entry was read in session (data/citation-readings.json); false when parsed by heuristic only',
+                   'form': 'for kind archive: the form of the archive\'s own work as read (book, post, archive deposit...)',
+                   'basis': 'the reader\'s note on a status that is not obvious',
                    'deposit': 'the deposit whose title the cited title matches (kind archive)',
                    'cited_by': 'deposit numbers citing the work', 'raw': 'one source entry as written',
                    'confidence': 'parser confidence for parsed entries (refsec_parse.py)'},

@@ -106,6 +106,25 @@ def main():
             # freeform graph froze at the July bulk pass (1,799 edges) while
             # refsec_parse.py went on parsing into the queue unseen.
             stats['already_parsed'] += 1
+            if e.get('works'):
+                # read in session: one edge per work the reader found in the segment
+                locus = e.get('locus', 'refsec')
+                for w in e['works']:
+                    key = w['bibkey']; st = w.get('ontic_status') or 'unverified'
+                    n = nodes.setdefault(key, {'bibkey': key, 'cited_by': []})
+                    for f in ('authors', 'title', 'venue', 'year', 'kind'):
+                        if w.get(f) and not n.get(f): n[f] = w[f]
+                    n['ontic_status'] = st
+                    if e['source_axn'] not in n['cited_by']:
+                        n['cited_by'].append(e['source_axn'])
+                    edges.append({'source_deposit': e['source_deposit'], 'source_axn': e['source_axn'],
+                                  'target_bibkey': key, 'via': f'{locus}_read', 'locus': locus,
+                                  'relation': 'cites', 'ontic_status': st, 'raw': e['raw'][:300],
+                                  'authors': w.get('authors'), 'title': w.get('title'),
+                                  'venue': w.get('venue'), 'year': w.get('year'), 'kind': w.get('kind'),
+                                  'own': w.get('own', False), 'deposit': w.get('deposit'),
+                                  'basis': w.get('basis'), 'read': True, 'confidence': 1.0})
+                continue
             pz = e.get('parsed') or {}
             key = pz.get('bibkey')
             if not key:
