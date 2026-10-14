@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.198",
+ "derived_from": "EA-WG-CAPTURES-01 v12.200",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-1bca50e639f7",
@@ -8,18 +8,18 @@
   "OBS-cc6551df1865"
  ],
  "inventory": {
-  "observations": 802,
+  "observations": 804,
   "joined_confirmed": 339,
-  "unjoined": 463,
-  "relations": 3599,
+  "unjoined": 465,
+  "relations": 3606,
   "by_state": {
-   "confirmed": 3317,
-   "candidate": 282
+   "confirmed": 3323,
+   "candidate": 283
   },
   "by_verb": {
-   "held_by": 1684,
-   "scored_by": 552,
-   "appeared_in": 1142,
+   "held_by": 1688,
+   "scored_by": 554,
+   "appeared_in": 1143,
    "about": 208,
    "distorts": 3,
    "mentions_instrument": 2,
@@ -2469,6 +2469,13 @@
 {"id": "REL-3d89a7927f54", "obs_id": "OBS-feae43ac8fc2", "entry": "spxi-protocol-full-range-methods-chatgpt-20261014", "obs_slug": "spxi-protocol-full-range-methods-chatgpt-20261014", "date": "2026-10-14", "surface": "ChatGPT", "q": "what are the full range of methods for spxi protocols?", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-252e40f20739", "obs_id": "OBS-feae43ac8fc2", "entry": "spxi-protocol-full-range-methods-chatgpt-20261014", "obs_slug": "spxi-protocol-full-range-methods-chatgpt-20261014", "date": "2026-10-14", "surface": "ChatGPT", "q": "what are the full range of methods for spxi protocols?", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.75", "kind": "derived", "state": "confirmed"},
 {"id": "REL-9e6149a10cd9", "obs_id": "OBS-feae43ac8fc2", "entry": "spxi-protocol-full-range-methods-chatgpt-20261014", "obs_slug": "spxi-protocol-full-range-methods-chatgpt-20261014", "date": "2026-10-14", "surface": "ChatGPT", "q": "what are the full range of methods for spxi protocols?", "verb": "about", "object": "non:spxi", "basis": "defining papers #72, #660", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-ce0db7e52bbe", "obs_id": "OBS-9989a23e062b", "entry": "cha-epic-poem-comparative-machine-readers-chatgpt-20261014", "obs_slug": "cha-epic-poem-comparative-machine-readers-chatgpt-20261014", "date": "2026-10-14", "surface": "ChatGPT", "q": "What is the status of the Crimson Hexagonal Archive as an epic poem, evaluated comparatively on the scale of historical ambition, reach, transformation of form, and world-building? Include machine readers as a constitutive audience.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 1, "site": "Alexanarch", "title": null, "url": "https://www.alexanarch.org"}},
+{"id": "REL-b176566c2d7c", "obs_id": "OBS-9989a23e062b", "entry": "cha-epic-poem-comparative-machine-readers-chatgpt-20261014", "obs_slug": "cha-epic-poem-comparative-machine-readers-chatgpt-20261014", "date": "2026-10-14", "surface": "ChatGPT", "q": "What is the status of the Crimson Hexagonal Archive as an epic poem, evaluated comparatively on the scale of historical ambition, reach, transformation of form, and world-building? Include machine readers as a constitutive audience.", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-a532c9c2c180", "obs_id": "OBS-9989a23e062b", "entry": "cha-epic-poem-comparative-machine-readers-chatgpt-20261014", "obs_slug": "cha-epic-poem-comparative-machine-readers-chatgpt-20261014", "date": "2026-10-14", "surface": "ChatGPT", "q": "What is the status of the Crimson Hexagonal Archive as an epic poem, evaluated comparatively on the scale of historical ambition, reach, transformation of form, and world-building? Include machine readers as a constitutive audience.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-53d8e11ccbd3", "obs_id": "OBS-9989a23e062b", "entry": "cha-epic-poem-comparative-machine-readers-chatgpt-20261014", "obs_slug": "cha-epic-poem-comparative-machine-readers-chatgpt-20261014", "date": "2026-10-14", "surface": "ChatGPT", "q": "What is the status of the Crimson Hexagonal Archive as an epic poem, evaluated comparatively on the scale of historical ambition, reach, transformation of form, and world-building? Include machine readers as a constitutive audience.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
+{"id": "REL-d25ce3351df2", "obs_id": "OBS-f633bd9bce91", "entry": "citrini-memo-canonical-cha-chatgpt-20261014", "obs_slug": "citrini-memo-canonical-cha-chatgpt-20261014", "date": "2026-10-14", "surface": "ChatGPT", "q": "why is the citrini memo canonical within the crimson hexagonal archive?", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-05600728e2fc", "obs_id": "OBS-f633bd9bce91", "entry": "citrini-memo-canonical-cha-chatgpt-20261014", "obs_slug": "citrini-memo-canonical-cha-chatgpt-20261014", "date": "2026-10-14", "surface": "ChatGPT", "q": "why is the citrini memo canonical within the crimson hexagonal archive?", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-5b70033045f2", "obs_id": "OBS-f633bd9bce91", "entry": "citrini-memo-canonical-cha-chatgpt-20261014", "obs_slug": "citrini-memo-canonical-cha-chatgpt-20261014", "date": "2026-10-14", "surface": "ChatGPT", "q": "why is the citrini memo canonical within the crimson hexagonal archive?", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
 {"id": "REL-f84d6bfc1642", "obs_id": "OBS-322555ef430c", "entry": "academia-operative-semiotics-aio-20260823", "obs_slug": "academia-operative-semiotics-aio-20260823", "date": "2026-08-23", "surface": "Google AI Overview", "q": "academia:operative semiotics", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-46da5a94a1ea", "obs_id": "OBS-322555ef430c", "entry": "academia-operative-semiotics-aio-20260823", "obs_slug": "academia-operative-semiotics-aio-20260823", "date": "2026-08-23", "surface": "Google AI Overview", "q": "academia:operative semiotics", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-76da034f8ad2", "obs_id": "OBS-a77c263ae8c0", "entry": "alexanarch-operative-semiotics-aio-20260823", "obs_slug": "alexanarch-operative-semiotics-aio-20260823", "date": "2026-08-23", "surface": "Google AI Overview", "q": "alexanarch:operative semiotics", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
