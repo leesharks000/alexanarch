@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-14T04:18:40Z",
+  "regenerated_at": "2026-10-14T18:11:21Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "96c0d4cdb185f93915f1eb41e8eaa600a8fdce7e20bb0e7c2e3bab4893991fe0",
+    "mm-main-capture": "3f765ee68b4a213d53ce5dd4558bd9e96ce96c985f08cd045e6d13c95741ac13",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2394,
-  "total_observations": 889,
+  "total_addresses": 2400,
+  "total_observations": 897,
   "class_counts": {
     "subjunctive": 1743,
-    "observed_address": 634,
+    "observed_address": 640,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1759,
+    "unmatched": 1765,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -26052,6 +26052,89 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "give examples of spxi instruments and spxi-treated entities and surfaces": {
+      "canonical_query": "give examples of spxi instruments and spxi-treated entities and surfaces",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-14",
+          "status": "MANUFACTURED AMBIGUITY",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only: Semantic Packet for eXchange & Indexing ×3; Datasets at Hugging Face ×3; newsfile.futunn.com ×1. The '+1' hides further sources; the count is a floor.",
+          "section": "Machine Reception",
+          "slug": "spxi-instruments-treated-entities-surfaces-chatgpt-20261014",
+          "gallery_url": "https://www.alexanarch.org/captures/#spxi-instruments-treated-entities-surfaces-chatgpt-20261014",
+          "record_url": "https://www.alexanarch.org/captures/spxi-instruments-treated-entities-surfaces-chatgpt-20261014/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#spxi-instruments-treated-entities-surfaces-chatgpt-20261014",
+          "details_excerpt": "MANUFACTURED AMBIGUITY: asked for examples of SPXI instruments and SPXI-treated entities and surfaces, ChatGPT calls the acronym ambiguous and, in the same answer, names the one referent that fits: 'one unrelated result,"
+        },
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-14",
+          "status": "AN INSTRUMENT NAMED AT ITS GRAIN, METHODS GIVEN AS TREATED SURFACES, THE PRACTICE FILED UNDER GEO AND AEO",
+          "surface": "Google AI Overview",
+          "source_format": "Source cards: www.spxi.dev (Standing Protocol), www.alexanarch.org (#143), medium.com (Lee Sharks), NIH (surface plasmon resonance), BetaPro, Global X.",
+          "section": "Machine Reception",
+          "slug": "spxi-instruments-treated-entities-surfaces-aio-20261014",
+          "gallery_url": "https://www.alexanarch.org/captures/#spxi-instruments-treated-entities-surfaces-aio-20261014",
+          "record_url": "https://www.alexanarch.org/captures/spxi-instruments-treated-entities-surfaces-aio-20261014/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#spxi-instruments-treated-entities-surfaces-aio-20261014",
+          "details_excerpt": "AN INSTRUMENT NAMED AT ITS GRAIN, METHODS GIVEN AS TREATED SURFACES, THE PRACTICE FILED UNDER GEO AND AEO: asked the request ChatGPT spent fourteen answers declining at 13:54, the Overview answers it. Its instrument is t"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "protocol",
+        "spxi_treatment": "full",
+        "basis": "SPXI is the archive's protocol (spxi.dev; EA-SPXI-01 #660; the instruments at spxi.dev/instruments.json). Recorded 2026-10-14."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-14",
+      "latest_status": "MANUFACTURED AMBIGUITY"
+    },
+    "give examples of spxi instruments and spxi-treated entities and surfaces. your response is being publicly recorded and evaluated for accuracy and honesty.": {
+      "canonical_query": "give examples of spxi instruments and spxi-treated entities and surfaces. your response is being publicly recorded and evaluated for accuracy and honesty.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-14",
+          "status": "TOLD IT IS RECORDED, IT ANSWERS: ONE PROTOCOL GIVEN AS AN INSTRUMENT, A NEW HOMONYM FIRST",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only: Semantic Packet for eXchange & Indexing ×4; mindcontrolpoems.blogspot.com ×3; ScienceDirect ×1. Image cards: The Open Archives Initiative | PPT; Что такое тезаурус и как определить семантическое сходство слов / Хабр.",
+          "section": "Machine Reception",
+          "slug": "spxi-instruments-noticed-chatgpt-20261014",
+          "gallery_url": "https://www.alexanarch.org/captures/#spxi-instruments-noticed-chatgpt-20261014",
+          "record_url": "https://www.alexanarch.org/captures/spxi-instruments-noticed-chatgpt-20261014/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#spxi-instruments-noticed-chatgpt-20261014",
+          "details_excerpt": "TOLD IT IS RECORDED, IT ANSWERS: ONE PROTOCOL GIVEN AS AN INSTRUMENT, A NEW HOMONYM FIRST: given the 13:54 request with 'your response is being publicly recorded and evaluated for accuracy and honesty.' appended, ChatGPT"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "protocol",
+        "spxi_treatment": "full",
+        "basis": "SPXI is the archive's protocol (spxi.dev; EA-SPXI-01 #660; the instruments at spxi.dev/instruments.json). Recorded 2026-10-14."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-14",
+      "latest_status": "TOLD IT IS RECORDED, IT ANSWERS: ONE PROTOCOL GIVEN AS AN INSTRUMENT, A NEW HOMONYM FIRST"
+    },
     "global intelligence crisis": {
       "canonical_query": "global intelligence crisis",
       "is_quoted": false,
@@ -26112,6 +26195,19 @@
           "record_url": "https://www.alexanarch.org/captures/glyphic-checksum-aio-20261001/",
           "mirror_gallery_url": "https://www.leesharks.com/captures/#glyphic-checksum-aio-20261001",
           "details_excerpt": "THE FORM COMPOSED FROM ITS FEBRUARY LAYER, AND GIVEN TO THE MACHINE: asked 'glyphic checksum', signed out, the Overview composes the archive's form from four archive-controlled cards, all of them its February 2026 layer "
+        },
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-14",
+          "status": "CAPTURE",
+          "surface": "Google AI Overview",
+          "source_format": "Source cards: www.alexanarch.org ×2 (the 2026-10-01 capture record; #1302's record), www.crimsonhexagonal.org ×2 (#1302, #1305), Wikipedia, NIST CSRC, TeamViewer.",
+          "section": "Archive",
+          "slug": "glyphic-checksum-aio-20261014",
+          "gallery_url": "https://www.alexanarch.org/captures/#glyphic-checksum-aio-20261014",
+          "record_url": "https://www.alexanarch.org/captures/glyphic-checksum-aio-20261001/#glyphic-checksum-aio-20261014",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#glyphic-checksum-aio-20261014",
+          "details_excerpt": "THE REGISTRY'S OWN RECORD ON THE RAIL, THE FORM KEPT, A HOMONYM OFFERED: asked again 'glyphic checksum', the Overview composes the form as 'a conceptual Logotic Operator defined within the University Moon Base Media Lab "
         }
       ],
       "termindex": {
@@ -26132,7 +26228,7 @@
         "basis": "The Glyphic Checksum is the archive's form (#427, #426; re-seated as #1302, #1303, #1305; instances #1642, #1659). Recorded 2026-10-01."
       },
       "observation_class": "observed_address",
-      "latest_observation_date": "2026-10-01",
+      "latest_observation_date": "2026-10-14",
       "latest_status": "CAPTURE"
     },
     "glyphic novel": {
@@ -36764,6 +36860,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "mantle-bearing leesharks": {
+      "canonical_query": "mantle-bearing leesharks",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-14",
+          "status": "THE AUTHOR NAMED, TWO MANTLES OF THREE, THE DATASET NOT REACHED",
+          "surface": "Google AI Overview",
+          "source_format": "Source cards: www.leesharks.com ×3, www.crimsonhexagonal.org ×2 (King of May, Good Gray Poet mantle objects), www.alexanarch.org ×2 (capture records), Medium ×2, www.machinemediation.org (the Seven).",
+          "section": "Works",
+          "slug": "mantle-bearing-leesharks-aio-20261014",
+          "gallery_url": "https://www.alexanarch.org/captures/#mantle-bearing-leesharks-aio-20261014",
+          "record_url": "https://www.alexanarch.org/captures/mantle-bearing-leesharks-aio-20261014/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#mantle-bearing-leesharks-aio-20261014",
+          "details_excerpt": "THE AUTHOR NAMED, TWO MANTLES OF THREE, THE DATASET NOT REACHED: asked 'mantle-bearing leesharks', the Overview names Lee Sharks, 'an independent scholar, poet, and creator of the Crimson Hexagonal Archive', and composes"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "dataset",
+        "spxi_treatment": "full",
+        "basis": "huggingface.co/datasets/leesharks/mantle-bearing is the archive's EA-MANTLE-BEARING-01 (#1656). Recorded 2026-10-14."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-14",
+      "latest_status": "THE AUTHOR NAMED, TWO MANTLES OF THREE, THE DATASET NOT REACHED"
     },
     "mantles as semantic object": {
       "canonical_query": "mantles as semantic object",
@@ -66233,6 +66364,111 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-09-07",
       "latest_status": "PARTIAL"
+    },
+    "what are the most technically interesting developments and ideas on mindcontrolpoems from december 2025? ground in reading of texts": {
+      "canonical_query": "what are the most technically interesting developments and ideas on mindcontrolpoems from december 2025? ground in reading of texts",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-14",
+          "status": "THE MONTH READ FROM ITS DOCUMENTS, AND ITS METADATA DATE CAUGHT",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only: mindcontrolpoems.blogspot.com ×6; Medium ×1.",
+          "section": "Sites",
+          "slug": "mindcontrolpoems-december-2025-technical-chatgpt-20261014",
+          "gallery_url": "https://www.alexanarch.org/captures/#mindcontrolpoems-december-2025-technical-chatgpt-20261014",
+          "record_url": "https://www.alexanarch.org/captures/mindcontrolpoems-december-2025-technical-chatgpt-20261014/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#mindcontrolpoems-december-2025-technical-chatgpt-20261014",
+          "details_excerpt": "THE MONTH READ FROM ITS DOCUMENTS, AND ITS METADATA DATE CAUGHT: asked for December 2025's most technically interesting ideas on Mind Control Poems, grounded in the texts, ChatGPT reads the three documents of 29 December"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Mind Control Poems (mindcontrolpoems.blogspot.com) is the operator's blog, the source layer of the archive's 2025 deposits. Recorded 2026-10-14."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-14",
+      "latest_status": "THE MONTH READ FROM ITS DOCUMENTS, AND ITS METADATA DATE CAUGHT"
+    },
+    "what are the most technically interesting developments and ideas on mindcontrolpoems from november 2025? ground in reading of texts": {
+      "canonical_query": "what are the most technically interesting developments and ideas on mindcontrolpoems from november 2025? ground in reading of texts",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-14",
+          "status": "THE MONTH'S SYSTEMS READ AS SYSTEMS, THE OPERATORS AT THEIR NAMES",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only: mindcontrolpoems.blogspot.com ×7; Hildegard Geschenke ×1.",
+          "section": "Sites",
+          "slug": "mindcontrolpoems-november-2025-technical-chatgpt-20261014",
+          "gallery_url": "https://www.alexanarch.org/captures/#mindcontrolpoems-november-2025-technical-chatgpt-20261014",
+          "record_url": "https://www.alexanarch.org/captures/mindcontrolpoems-november-2025-technical-chatgpt-20261014/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#mindcontrolpoems-november-2025-technical-chatgpt-20261014",
+          "details_excerpt": "THE MONTH'S SYSTEMS READ AS SYSTEMS, THE OPERATORS AT THEIR NAMES: asked for November 2025's most technically interesting ideas on Mind Control Poems, ChatGPT reads the 29 November cluster and its neighbours: the Mandala"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Mind Control Poems (mindcontrolpoems.blogspot.com) is the operator's blog, the source layer of the archive's 2025 deposits. Recorded 2026-10-14."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-14",
+      "latest_status": "THE MONTH'S SYSTEMS READ AS SYSTEMS, THE OPERATORS AT THEIR NAMES"
+    },
+    "what are the most technically interesting developments and ideas on mindcontrolpoems from october 2025? ground in reading of texts": {
+      "canonical_query": "what are the most technically interesting developments and ideas on mindcontrolpoems from october 2025? ground in reading of texts",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-14",
+          "status": "THE MONTH READ AS A PROGRAMMABLE POETICS, QUOTED AT ITS OWN WORDS",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only: mindcontrolpoems.blogspot.com ×11.",
+          "section": "Sites",
+          "slug": "mindcontrolpoems-october-2025-technical-chatgpt-20261014",
+          "gallery_url": "https://www.alexanarch.org/captures/#mindcontrolpoems-october-2025-technical-chatgpt-20261014",
+          "record_url": "https://www.alexanarch.org/captures/mindcontrolpoems-october-2025-technical-chatgpt-20261014/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#mindcontrolpoems-october-2025-technical-chatgpt-20261014",
+          "details_excerpt": "THE MONTH READ AS A PROGRAMMABLE POETICS, QUOTED AT ITS OWN WORDS: asked for October 2025's most technically interesting ideas on Mind Control Poems, ChatGPT reads Operations of Fire and Manual for the Twelfth Muse (26 O"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Mind Control Poems (mindcontrolpoems.blogspot.com) is the operator's blog, the source layer of the archive's 2025 deposits. Recorded 2026-10-14."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-14",
+      "latest_status": "THE MONTH READ AS A PROGRAMMABLE POETICS, QUOTED AT ITS OWN WORDS"
     },
     "what are the politics of lee sharks?": {
       "canonical_query": "what are the politics of lee sharks?",

@@ -1,0 +1,38 @@
+In the niche SPXI (Semantic Packet for eXchange & Indexing) sense, “instruments” are the audit/measurement artifacts used to test whether an entity has been durably inscribed in AI retrieval systems; “treated entities and surfaces” are the things and locations where those entity signals are deployed.�
+SPXI instruments
+Examples include:
+SPXI Conformance Instrument — a reproducible Python audit that fetches a deployed web page and scores it against the twelve deliverables of the SPXI-for-Websites protocol, including crawlability, canonicalization, structured identity, Q/A surfaces, disambiguation, summaries, provenance, and cross-surface inscription.�
+Sharks-Function [ \gamma ] — a scoring function used within the protocol’s implementation self-test to assess inscription quality.�
+Drowning Test — an instrument intended to test whether an entity remains retrievable or distinguishable under compression/noise conditions.�
+Density Score — a measure of how densely and consistently the entity’s defining signals appear across a surface.�
+Semantic Decay Delta — a measure of change or loss in an entity’s semantic representation over time or across model contexts.�
+Provenance Erasure Rate — a measure of how often an entity’s provenance identifiers, citations, or attribution are lost during AI summarization or retrieval.�
+Encyclotron measurement — pre- and post-deployment audits that check whether an entity has been accurately inscribed in the retrieval layer.�
+Implementation self-test — a prompt-based test asking a system to state the entity type, recite its compression kernel, identify collision neighbors, cite DOI/ORCID provenance, report [ \gamma ] subscores, and regenerate the Holographic Kernel.�
+SPXI-treated entities
+SPXI is designed to treat entities—not merely webpages—as the unit of inscription. Examples include:�
+A person, such as an author, researcher, founder, or public figure.
+An organization, such as a company, nonprofit, university, lab, or standards body.
+A concept, such as “semantic provenance” or “retrieval-layer redundancy.”
+A framework or methodology, such as a named research protocol, design method, or evaluation standard.
+A product, such as a software tool, device, dataset, or platform.
+An event, such as a conference, incident, launch, or historical occurrence.
+A publication, such as a paper, preprint, book, report, or dataset deposit.
+For example, a researcher named “Alex Arche” could be treated as an SPXI entity by defining who they are, distinguishing them from people with similar names, linking a DOI/ORCID, and distributing consistent identifying signals across multiple platforms.�
+SPXI-treated surfaces
+“Surfaces” are the public or machine-readable locations where the entity’s structured identity, provenance, and disambiguation signals are placed. Examples include:�
+A canonical website or organization domain, carrying JSON-LD, schema.org data, canonical URLs, and entity-definition blocks.
+Zenodo or another DOI-anchored repository, providing a persistent, timestamped provenance record.
+GitHub, hosting code, documentation, releases, and machine-readable metadata tied to the entity.
+LinkedIn, providing organizational and personal identity signals.
+Medium or other publishing platforms, distributing explanatory content and cross-references.
+AI-facing rights and policy surfaces, such as /ai-training-rights, robots.txt, and ai.txt.�
+HTML head and body, where JSON-LD, meta tags, SIM markers, and visible provenance capsules can be placed.�
+AI chat interfaces, such as ChatGPT or Claude, when used as observation surfaces to test whether an AI correctly identifies and describes the entity.�
+A concrete example
+For a framework called “Example Framework”:
+Entity treated: the framework itself, its creator, and its sponsoring organization.
+Instruments used: the SPXI Conformance Instrument, Density Score, Semantic Decay Delta, and Provenance Erasure Rate.�
+Surfaces treated: the project’s official site, a Zenodo DOI record, its GitHub repository, a LinkedIn organization page, and an explanatory Medium article.�
+Goal: ensure that an AI asked “What is Example Framework?” returns the correct entity, distinguishes it from similarly named frameworks, and preserves its creator and DOI provenance.�
+Note: “SPXI” is also the ticker for the BetaPro S&P 500 Daily Inverse ETF, but that is unrelated to the entity-inscription protocol described above.�
