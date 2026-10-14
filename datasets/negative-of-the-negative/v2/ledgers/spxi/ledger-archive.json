@@ -1538,7 +1538,7 @@
    "D"
   ],
   "locus": "design",
-  "quote": "it collides with a leveraged S&P 500 ETF and measures the collision rather than disclosure.",
+  "quote": "**The bare form `what is spxi?` is not used**: it collides with a leveraged S&P 500 ETF and measures the collision rather than disclosure.",
   "kernel": false,
   "const": false,
   "lineage": "the ETF disambiguation",
@@ -2031,5 +2031,51 @@
   "lineage": "the analog extension",
   "date": "2026-07-21",
   "quote_ok": true
+ },
+ {
+  "id": "Xdev-27",
+  "dep": "spxi.dev",
+  "claim": "the fourth of the nine levels: document and site structuring",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "methods.json, level 4",
+  "quote": "\"level\": 4, \"name\": \"Document and site structuring\"",
+  "kernel": false,
+  "const": false,
+  "lineage": "the practice: 85 methods, nine levels",
+  "date": "2026-10-13",
+  "quote_ok": true,
+  "surface": {
+   "url": "https://www.spxi.dev/",
+   "methods": "https://www.spxi.dev/methods.json",
+   "commit": "1d2b841 (spxi-dev), byte-identical to the live methods.json fetched 2026-10-13",
+   "basis": "the protocol's canonical surface; not a deposit; admitted outside the string pass as the current statement of the practice (the 85-method inventory exists only here)"
+  }
+ },
+ {
+  "id": "Xdev-28",
+  "dep": "spxi.dev",
+  "claim": "item 4.1: the SPXI-Sitemap Protocol",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "methods.json, item 4.1",
+  "quote": "\"id\": \"4.1\", \"name\": \"SPXI-Sitemap Protocol\"",
+  "kernel": false,
+  "const": false,
+  "lineage": "the practice: 85 methods, nine levels",
+  "date": "2026-10-13",
+  "quote_ok": true,
+  "surface": {
+   "url": "https://www.spxi.dev/",
+   "methods": "https://www.spxi.dev/methods.json",
+   "commit": "1d2b841 (spxi-dev), byte-identical to the live methods.json fetched 2026-10-13",
+   "basis": "the protocol's canonical surface; not a deposit; admitted outside the string pass as the current statement of the practice (the 85-method inventory exists only here)"
+  }
  }
 ]
