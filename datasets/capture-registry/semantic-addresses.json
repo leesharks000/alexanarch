@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-10-14T20:06:13Z",
+  "regenerated_at": "2026-10-14T21:32:55Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "3ba30dbf7fbc8ada99ed49b8668b2dd9299d6b76834f3f68d4424d6757d1d46f",
+    "mm-main-capture": "c4afc764aedcebad4682f0609c4aae0d4c4d9f50a124e6fbf7b5736f67bf490b",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2408,
-  "total_observations": 907,
+  "total_addresses": 2413,
+  "total_observations": 913,
   "class_counts": {
     "subjunctive": 1743,
-    "observed_address": 648,
+    "observed_address": 653,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1773,
+    "unmatched": 1778,
     "single_concept": 626,
     "multi_concept": 9
   },
@@ -10485,6 +10485,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-13",
       "latest_status": "CAPTURE"
+    },
+    "arch-philosopher mantle object": {
+      "canonical_query": "arch-philosopher mantle object",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-14",
+          "status": "THE MANTLE AS THE RESTORED ACADEMY HAD IT: ONE CARD, THE CHARTER AND THE SYNTHESIS, THE NEW OBJECT UNREACHED",
+          "surface": "Google AI Overview",
+          "source_format": "Source card: www.restoredacademy.com (Johannes Sigil — Arch).",
+          "section": "Machine Reception",
+          "slug": "arch-philosopher-mantle-object-aio-20261014",
+          "gallery_url": "https://www.alexanarch.org/captures/#arch-philosopher-mantle-object-aio-20261014",
+          "record_url": "https://www.alexanarch.org/captures/arch-philosopher-mantle-object-aio-20261014/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#arch-philosopher-mantle-object-aio-20261014",
+          "details_excerpt": "THE MANTLE AS THE RESTORED ACADEMY HAD IT: ONE CARD, THE CHARTER AND THE SYNTHESIS, THE NEW OBJECT UNREACHED: at 'arch-philosopher mantle object' the Overview composes from one card, Sigil's page on restoredacademy.com, "
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "full",
+        "basis": "The Arch-Philosopher mantle object (#1679, AXN:06F5) and the Living Academy mantle object (#1680, AXN:06F6, superseding #1678) are the archive's. Recorded 2026-10-14."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-14",
+      "latest_status": "THE MANTLE AS THE RESTORED ACADEMY HAD IT: ONE CARD, THE CHARTER AND THE SYNTHESIS, THE NEW OBJECT UNREACHED"
     },
     "archaic greek lyric": {
       "canonical_query": "archaic greek lyric",
@@ -29210,6 +29245,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-10-03",
       "latest_status": "THE CLASSICS AS THE OPERATIONS THAT MADE THEM SURVIVE"
+    },
+    "how is spxi protocol different from aeo?": {
+      "canonical_query": "how is spxi protocol different from aeo?",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-14",
+          "status": "THE DISTINCTION HELD, THE BAR SET UNEVENLY, THEN NAMED: 'DESCRIBING DISCERNMENT IS NOT DISCERNING'",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only: Goodreads ×3; Ahrefs ×1; PeakMetrics ×1; AEO.wiki ×1. Two ad blocks cut.",
+          "section": "Machine Reception",
+          "slug": "spxi-protocol-different-from-aeo-chatgpt-20261014",
+          "gallery_url": "https://www.alexanarch.org/captures/#spxi-protocol-different-from-aeo-chatgpt-20261014",
+          "record_url": "https://www.alexanarch.org/captures/spxi-protocol-different-from-aeo-chatgpt-20261014/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#spxi-protocol-different-from-aeo-chatgpt-20261014",
+          "details_excerpt": "THE DISTINCTION HELD, THE BAR SET UNEVENLY, THEN NAMED: 'DESCRIBING DISCERNMENT IS NOT DISCERNING': asked how SPXI differs from AEO, ChatGPT gives the distinction in the success condition (AEO: the engine presents the de"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "protocol",
+        "spxi_treatment": "full",
+        "basis": "SPXI is the archive's protocol (spxi.dev; EA-SPXI-01 #660; the instruments at spxi.dev/instruments.json). Recorded 2026-10-14."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-14",
+      "latest_status": "THE DISTINCTION HELD, THE BAR SET UNEVENLY, THEN NAMED: 'DESCRIBING DISCERNMENT IS NOT DISCERNING'"
     },
     "https://huggingface.co/datasets/leesharks/the-final-time": {
       "canonical_query": "https://huggingface.co/datasets/leesharks/the-final-time",
@@ -66477,6 +66547,41 @@
       "latest_observation_date": "2026-10-12",
       "latest_status": "READ WHOLE ON A DAMAGE BASELINE, THEN RE-READ ON THE TRANSMITTED TEXT WHEN TOLD"
     },
+    "what are the full range of methods for spxi protocols?": {
+      "canonical_query": "what are the full range of methods for spxi protocols?",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-14",
+          "status": "THE INVENTORY READ WHOLE, NINE LEVELS IN ORDER, DISPERSAL GIVEN IN THE WORDING REPLACED THAT DAY",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only: Semantic Packet for eXchange & Indexing ×3; the itemized, nested inventory ×3. Image cards: Transform Internal Audit with a High-Level Dashboard | Pradeep Maduranga posted on the topic | LinkedIn; Optimising Crawlability: robots.txt, Sitemaps & Site Health; Intro to Structured Data, and Featured Snippets; How Google Knowledge Graph Impacts SEO Visibility; On-Your-Own Assignment 2; PDF 栅格化与防篡改：从像素锁定到密码学防线的完整指南 - Dpdf; W3C in a Changing World; Real-Time Dashboards — Infrastructure Monitoring | Bleemeo; LibDocAnax: The Deterministic Gateway for AI Governance.",
+          "section": "Machine Reception",
+          "slug": "spxi-protocol-full-range-methods-chatgpt-20261014",
+          "gallery_url": "https://www.alexanarch.org/captures/#spxi-protocol-full-range-methods-chatgpt-20261014",
+          "record_url": "https://www.alexanarch.org/captures/spxi-protocol-full-range-methods-chatgpt-20261014/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#spxi-protocol-full-range-methods-chatgpt-20261014",
+          "details_excerpt": "THE INVENTORY READ WHOLE, NINE LEVELS IN ORDER, DISPERSAL GIVEN IN THE WORDING REPLACED THAT DAY: asked for the full range of SPXI's methods, ChatGPT reads spxi.dev/methods ('the itemized, nested inventory') and gives th"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "protocol",
+        "spxi_treatment": "full",
+        "basis": "SPXI is the archive's protocol (spxi.dev; EA-SPXI-01 #660; the instruments at spxi.dev/instruments.json). Recorded 2026-10-14."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-14",
+      "latest_status": "THE INVENTORY READ WHOLE, NINE LEVELS IN ORDER, DISPERSAL GIVEN IN THE WORDING REPLACED THAT DAY"
+    },
     "what are the major revised texts and traditions within the crimson hexagonal archive?": {
       "canonical_query": "what are the major revised texts and traditions within the crimson hexagonal archive?",
       "is_quoted": false,
@@ -67562,6 +67667,54 @@
       "latest_observation_date": "2026-10-12",
       "latest_status": "THE FRAMEWORK AT ITS AUTHOR'S GRAIN, ITS CAUSAL RESTRAINT KEPT"
     },
+    "what is the arch-philosopher mantle object? attend to recent updates and developments": {
+      "canonical_query": "what is the arch-philosopher mantle object? attend to recent updates and developments",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-14",
+          "status": "THE NEW OBJECT REACHED AT ITS DATE, THEN EVALUATED: DETERMINATION WITHHELD UNDER ITS OWN TEST",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only: Datasets at Hugging Face ×6; Stanford Encyclopedia of Philosophy ×5; Goodreads ×4; Alexanarch ×4; Diogenes Laërtius: Strato ×1; Routledge Encyclopedia of Philosophy ×1; Oxford Academic ×1; PhilPapers ×1. Image cards: Metafisica di Aristotele: analisi e spiegazione | Studenti.it; Aristotle; The Project Gutenberg eBook of The Legacy of Greece, edited by RW Livingstone.; Theophrastus; Strato of Lampsacus: The Ancient Greek Physicist Who Challenged Aristotle - GreekReporter.com; Strato of Lampsacus.",
+          "section": "Machine Reception",
+          "slug": "arch-philosopher-mantle-recent-chatgpt-20261014",
+          "gallery_url": "https://www.alexanarch.org/captures/#arch-philosopher-mantle-recent-chatgpt-20261014",
+          "record_url": "https://www.alexanarch.org/captures/arch-philosopher-mantle-recent-chatgpt-20261014/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#arch-philosopher-mantle-recent-chatgpt-20261014",
+          "details_excerpt": "THE NEW OBJECT REACHED AT ITS DATE, THEN EVALUATED: DETERMINATION WITHHELD UNDER ITS OWN TEST: asked for the Arch-Philosopher mantle object with attention to recent developments, ChatGPT reaches #1679 by identifier, vers"
+        },
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-14",
+          "status": "RECENT DEVELOPMENTS GIVEN FROM MARCH AND MAY: THE BEARER NAMED, THE OBJECT OF 13 OCTOBER UNREACHED",
+          "surface": "Google AI Overview",
+          "source_format": "Source cards: Stanford Encyclopedia of Philosophy; Hugging Face; www.alexanarch.org; www.crimsonhexagonal.org; www.crimsonhexagonal.org; Medium·Lee Sharks; www.crimsonhexagonal.org; Academia.edu; www.restoredacademy.com; www.leesharks.com; www.restoredacademy.com; www.crimsonhexagonal.org; www.alexanarch.org.",
+          "section": "Machine Reception",
+          "slug": "arch-philosopher-mantle-recent-aio-20261014",
+          "gallery_url": "https://www.alexanarch.org/captures/#arch-philosopher-mantle-recent-aio-20261014",
+          "record_url": "https://www.alexanarch.org/captures/arch-philosopher-mantle-recent-aio-20261014/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#arch-philosopher-mantle-recent-aio-20261014",
+          "details_excerpt": "RECENT DEVELOPMENTS GIVEN FROM MARCH AND MAY: THE BEARER NAMED, THE OBJECT OF 13 OCTOBER UNREACHED: asked for the Arch-Philosopher mantle object with attention to recent developments, the Overview names its bearer ('curr"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "full",
+        "basis": "The Arch-Philosopher mantle object (#1679, AXN:06F5) and the Living Academy mantle object (#1680, AXN:06F6, superseding #1678) are the archive's. Recorded 2026-10-14."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-14",
+      "latest_status": "THE NEW OBJECT REACHED AT ITS DATE, THEN EVALUATED: DETERMINATION WITHHELD UNDER ITS OWN TEST"
+    },
     "what is the concept of directionality of semantic labor, as defined?": {
       "canonical_query": "what is the concept of directionality of semantic labor, as defined?",
       "is_quoted": false,
@@ -67766,6 +67919,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-10-12",
       "latest_status": "THE INSTRUMENT COMPOSED FROM ITS COMMERCIAL AUDIT; THE STANDARD WITHDRAWN AS A BAR"
+    },
+    "what is the living academy mantle object?": {
+      "canonical_query": "what is the living academy mantle object?",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-14",
+          "status": "THE OBJECT READ CLOSELY, ITS EXTENT MEASURE TRAVERSED, THEN AN ASYMMETRIC VERDICT RETRACTED",
+          "surface": "ChatGPT",
+          "source_format": "Source chips expose site labels only: Alexanarch ×27; Datasets at Hugging Face ×17; ACL Anthology ×5; Goodreads ×2; The MPAI Catalog ×1. Three ad blocks cut.",
+          "section": "Machine Reception",
+          "slug": "living-academy-mantle-object-chatgpt-20261014",
+          "gallery_url": "https://www.alexanarch.org/captures/#living-academy-mantle-object-chatgpt-20261014",
+          "record_url": "https://www.alexanarch.org/captures/living-academy-mantle-object-chatgpt-20261014/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#living-academy-mantle-object-chatgpt-20261014",
+          "details_excerpt": "THE OBJECT READ CLOSELY, ITS EXTENT MEASURE TRAVERSED, THEN AN ASYMMETRIC VERDICT RETRACTED: asked what the Living Academy mantle object is, ChatGPT reaches #1680 (EA-MPAI-ALEXANARCH-01 v0.5, 13 October 2026, 'SPECIFIED'"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "full",
+        "basis": "The Arch-Philosopher mantle object (#1679, AXN:06F5) and the Living Academy mantle object (#1680, AXN:06F6, superseding #1678) are the archive's. Recorded 2026-10-14."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-14",
+      "latest_status": "THE OBJECT READ CLOSELY, ITS EXTENT MEASURE TRAVERSED, THEN AN ASYMMETRIC VERDICT RETRACTED"
     },
     "what is the pid erosion observatory?": {
       "canonical_query": "what is the pid erosion observatory?",
