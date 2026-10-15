@@ -1,10 +1,10 @@
 {
  "deposit_number": 1252,
- "axn": "AXN:04F5.UNCLASSIFIED.🌹🌲🔐●🎆□",
+ "axn": "AXN:04F5.UNCLASSIFIED.🧭🌔🔩🍂∞✏️",
  "hex": "04F5",
  "family": "UNCLASSIFIED",
- "emoji": "🌹🌲🔐●🎆□",
- "hash": "7375fb9ce79de454d8935629d9b33b00d733fcec02881d5bee6fc9c83999616c",
+ "emoji": "🧭🌔🔩🍂∞✏️",
+ "hash": "50033178ff4305c7182792beb9d5a9d6a4b7243143f7f895a0ee6c9c70b1c3bd",
  "title": "The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charter of the Commission of the Immanent Turning — Charter: Commission of the Immanent Turning",
  "creator": "Lee Sharks",
  "date": "2026-01-26",
@@ -15,14 +15,14 @@
  "root_axn": "AXN:04F5.UNCLASSIFIED",
  "axn_schema_version": "v2",
  "protocol_version": "alexanarch-deposit-protocol/v1",
- "axn_canonical": "7375fb9ce79de454d8935629d9b33b00d733fcec02881d5bee6fc9c83999616c",
+ "axn_canonical": "50033178ff4305c7182792beb9d5a9d6a4b7243143f7f895a0ee6c9c70b1c3bd",
  "clusters": [
-  "Organic",
+  "Navigational",
+  "Celestial",
+  "Instrumental",
   "Organic",
   "Terminal",
-  "Mathematical",
-  "Liminal",
-  "Mathematical"
+  "Scriptural"
  ],
  "axn_reading": "Growth -> Growth -> Closure -> Proof -> Threshold -> Proof",
  "minted_at": "2026-07-19T21:10:03Z",
@@ -87,19 +87,12 @@
  "body_status": {
   "class": "full",
   "lacuna": false,
-  "recovery_status": "COMPLETE",
-  "residual_chars": 5790,
-  "audited_at": "2026-07-19T21:10:03Z",
-  "audit_version": "mint-time-declaration",
-  "measured_prose_words": 415,
-  "measured_at": "2026-07-31",
-  "work_sha256_declared": "b53acc478aa62e8fd12f545d5148070cd903c322875ac61994703438c970ec2e",
-  "work_sha256": "6ee083d0c86f36118ca91e3ac097261ed31aff9a7fb373506041c057398ec031",
-  "description_provenance": {
-   "date": "2026-08-05",
-   "note": "This replaces a batch-restoration stub that described the recovery event rather than the work; recovery provenance is preserved in the record body and in body_status.",
-   "moved": "2026-08-06 — relocated out of the public description field. An editorial note about how a description was produced is apparatus, not description; publishing it to the reader is the same class of defect as the guidance-to-writer articles found in the wiki campaign."
-  }
+  "recovery_status": "RESTORED-20261015",
+  "recovered_from": "https://mindcontrolpoems.blogspot.com/2026/01/charter-of-commission-of-immanent.html",
+  "residual_chars": 19921,
+  "audited_at": "2026-10-15T22:00:12.632011+00:00",
+  "audit_version": "restore_wrong_bodies-20261015",
+  "class_before_restoration": "full"
  },
  "references_concepts": [
   "Assembly Chorus",
@@ -237,7 +230,7 @@
    "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 5790, \"audited_at\": \"2026-07-19T21:10:03Z\", \"audit_version\": \"mint-time-declaration\", \"measured_prose_words\": 415, \""
   }
  ],
- "date_modified": "2026-08-06",
+ "date_modified": "2026-10-15",
  "publisher": "Alexanarch — the Crimson Hexagonal Archive",
  "superseded_fields": {
   "description_placeholder": "The Epistle Triptych: Seed Text, Heteronym Provenance, and Organizational Charter of the Commission of the Immanent Turning — Charter: Commission of the Immanent Turning — Constitution / governance framework in the Crimson Hexagonal Archive. The deposited body carries no introductory prose from which a description can be composed. A description composed from a reading of the work belongs to the description/wiki review stream."
@@ -268,6 +261,18 @@
  "line": "authorship-and-heteronymy",
  "line_parent": "letters",
  "line_basis": "derived",
+ "reading": "Search -> Origin -> Method -> Growth -> Closure -> Text",
+ "restoration": {
+  "fulltext": "restored",
+  "fulltext_source": "https://mindcontrolpoems.blogspot.com/2026/01/charter-of-commission-of-immanent.html",
+  "restored_at": "2026-10-15",
+  "repair_kind": "wrong_body",
+  "identity_basis": "the post is the Charter of the Commission of the Immanent Turning (Hex 11.REV.CHARTER), published 2026-01-26, the deposit's date; the body seated 2026-07-19 was the triptych's Zenodo-metadata post (zenodo-metadata-epistle-triptych.html), shared 0 of its 8-word shingles with the Charter",
+  "axn_before_restoration": "AXN:04F5.UNCLASSIFIED.🌹🌲🔐●🎆□",
+  "hash_before_restoration": "7375fb9ce79de454d8935629d9b33b00d733fcec02881d5bee6fc9c83999616c",
+  "ruled_by": "Lee Sharks, 2026-10-15: \"lets restore the ones we can\" (wrong bodies first, from the blog or elsewhere in the archive); repair standard: the text as he published it. Identity of each post checked by hand; the basis is recorded per record."
+ },
+ "remediation_note": "2026-10-15 RECORD REPAIR (wrong body): the body previously seated here was a different work (wrong body); the published text from https://mindcontrolpoems.blogspot.com/2026/01/charter-of-commission-of-immanent.html seated as canonical; new hash and glyph; the previous body retained as appendix.",
  "_projection": {
   "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
   "record_url": "https://www.alexanarch.org/s/records/1252/",

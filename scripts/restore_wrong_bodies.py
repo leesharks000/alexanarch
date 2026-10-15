@@ -15,7 +15,7 @@ post carries the deposit's DOI or hex, or its exact title and date); the basis i
 
 USAGE: python3 scripts/restore_wrong_bodies.py RULED.json [--dry-run]
        RULED.json = {"<deposit>": {"url": ..., "kind": "wrong_body"|"missing_body", "basis": ...}, ...}
-Report: data/restoration-wrong-bodies-2026-10-15.json
+Report: --report (default data/restoration-wrong-bodies-2026-10-15.json; give each later run its own)
 """
 import argparse, datetime, hashlib, json, re, sys
 from pathlib import Path
@@ -43,6 +43,7 @@ KIND = {'wrong_body': ('the body previously seated here was a different work (wr
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('ruled'); ap.add_argument('--dry-run', action='store_true')
+    ap.add_argument('--report', default=str(REPORT), help='report path (one per run; never overwrite an earlier run)')
     a = ap.parse_args()
     ruled = {int(k): v for k, v in json.load(open(a.ruled)).items()}
     reg = json.load(open(ROOT / 'data' / 'registry.json'))
@@ -105,7 +106,7 @@ def main():
         json.dump(reg, open(ROOT / 'data' / 'registry.json', 'w'), ensure_ascii=False, indent=2)
         json.dump({'run_at': datetime.datetime.now(datetime.UTC).isoformat(), 'ruling': RULING,
                    'counts': {k: len(v) for k, v in out.items()}, **out},
-                  open(REPORT, 'w'), ensure_ascii=False, indent=1)
+                  open(a.report, 'w'), ensure_ascii=False, indent=1)
     for k, v in out.items():
         for x in v:
             print(k.upper()[:4], x)
