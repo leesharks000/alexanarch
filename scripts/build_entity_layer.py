@@ -67,42 +67,186 @@ def eid(name):
 def register(reg):
     ents = {}
 
-    def add(name, typ, aliases, deposits, source, relation="archive", extra=None):
+    alias_of = {}
+
+    def norm(a):
+        a = re.sub(r"\s*\(.*?\)\s*", " ", a.lower()).strip()
+        return re.sub(r"^the\s+", "", a)
+
+    def add(name, typ, aliases, deposits, source, relation="archive", extra=None, firm=False, only_new=False):
         name = MERGE.get(name.strip().lower(), name.strip())
-        k = eid(name)
+        # MERGE ON A SHARED ALIAS (v0.2): "SPXI (Semantic Packet ...)" from /non and the core "SPXI" are one entity.
+        k = next((alias_of[norm(a)] for a in [name] + list(aliases) if norm(a) in alias_of), None)
+        if k and only_new:
+            return            # an index term naming an entity already registered adds nothing to it
+        k = k or eid(name)
         r = ents.setdefault(k, {"id": k, "name": name, "type": typ, "relation": relation, "aliases": [], "defining_deposits": [], "seeded_from": []})
         for a in [name] + list(aliases):
             if a and a.lower() not in [x.lower() for x in r["aliases"]]:
                 r["aliases"].append(a)
+            if a:
+                alias_of.setdefault(norm(a), k)
         for d in deposits:
-            if d not in r["defining_deposits"]:
+            if d is not None and d not in r["defining_deposits"]:
                 r["defining_deposits"].append(d)
         if source not in r["seeded_from"]:
             r["seeded_from"].append(source)
-        if r["type"] in (None, "unknown") and typ:
-            r["type"] = typ
+        # TYPE PRECEDENCE: a firm type (a person register, a stated /non subtype) replaces a default one.
+        if firm or r["type"] in (None, "unknown"):
+            if typ and not (r.get("_firm") and not firm):
+                r["type"] = typ
+            if firm:
+                r["_firm"] = True
         if extra:
             r.update({k2: v for k2, v in extra.items() if k2 not in r})
     for name, typ, al, deps in CORE:
         add(name, typ, al, deps, "core")
     for p in sorted((ROOT / "datasets/heteronyms/records").glob("*.json")):
         h = json.loads(p.read_text(encoding="utf-8"))
-        if h.get("identity_type") in ("heteronym", "heteronym_aperture"):
-            add(h["name"], "person", [], [], f"heteronym record {p.stem}", extra={"heteronym": True})
+        it = h.get("identity_type")
+        if it in ("heteronym", "heteronym_aperture", "external_heteronym", "orthonym", "institutional_persona"):
+            bare = re.sub(r"^(Rev\.|Dr\.|Prof\.)\s+", "", h["name"]).strip()
+            add(h["name"], "institution" if it == "institutional_persona" else "person", [bare, p.stem.replace("-", " ")],
+                [], f"heteronym record {p.stem}", extra={"heteronym": it != "orthonym", "identity_type": it}, firm=True)
     ne = json.loads((ROOT / "data/named-entities.json").read_text(encoding="utf-8"))
     for n in ne["entities"]:
-        add(n["name"], "person", [], [], "named-entities", relation="external", extra={"wikidata": n.get("wikidata")})
+        add(n["name"], "person", [], [], "named-entities", relation="external", extra={"wikidata": n.get("wikidata")}, firm=True)
     ni = json.loads((ROOT / "non/index.json").read_text(encoding="utf-8"))
     for row in ni.get("entities") or []:
         slug = isinstance(row, dict) and (row.get("entity") or row.get("slug"))
         if slug:
-            add(row.get("name") or slug.replace("-", " "), "concept", [slug.replace("-", " ")], [], f"/non {slug}", relation="external")
+            m = re.search(r":\s*an?\s+([a-z ]+)\)", str(row.get("type") or ""))
+            sub = {"person": "person", "work": "work", "event": "event", "product": "product"}.get((m.group(1).strip() if m else ""), None)
+            if str(row.get("type") or "").startswith("E") and "protocol" in str(row.get("type")):
+                sub = "protocol"
+            add(row.get("name") or slug.replace("-", " "), sub or "concept", [slug.replace("-", " ")], [], f"/non {slug}",
+                relation="external", firm=bool(sub))
+    concepts_from_index(reg, add)
     for e in reg["entries"]:
         o = e.get("originator") or {}
         if o.get("name"):
             nm = re.split(r" \(", o["name"])[0]
             add(nm, o.get("entity_type") or "unknown", [], [], "originator", relation=o.get("relation") or "archive")
+    concepts_from_addresses(reg, add, alias_of, norm)
+    FIX = {"allen ginsberg": "person", "howl": "work"}   # /non entries whose type carries no subtype
+    for r in ents.values():
+        r.pop("_firm", None)
+        t = FIX.get(re.sub(r"\s*\(.*?\)\s*", "", r["name"]).strip().lower())
+        if t:
+            r["type"] = t
+        ds = sorted(d for d in (deposit_date(n) for n in r["defining_deposits"]) if d)
+        r["created"] = ds[0] if ds else None
+        r["created_basis"] = "earliest defining deposit" if ds else None
     return ents
+
+
+# CONCEPTS FROM THE INDEX (v0.2, 2026-10-15). A term of data/entity-index.json enters the register only when a seated
+# address names it, and it carries its defining deposit and that deposit's date (the entity's creation, which entails
+# its prior state: ruling of 2026-09-19). Rule, mechanical and stated here: two or more words; not a phrase fragment or
+# status marker; single words only where they are the archive's coinages (KEEP_SINGLE).
+KEEP_SINGLE = {"patacinematics", "encyclotron", "dolphindiana", "tachyon", "dodecad"}
+DROP = {"i am", "do not", "for machine", "blessed is", "the valuation", "the capture", "day and night", "new human 2",
+        "demand 4", "what do you think about this", "what do you think of my account"}
+WORKS = {"pearl and other poems", "secret book of walt", "day and night: conversations with sapphic desire", "socrates as orthonym",
+         "epistle to the human diaspora", "i hereby abolish money", "paper roses", "made of rubies", "autonomous semantic warfare",
+         "constitution of the semantic economy", "operative semiotics: a grundrisse", "in the crimson hexagon", "space ark"}
+INST = re.compile(r"\b(journal|transactions|grammata|lab|authority|institute|commission|university|mint)\b", re.I)
+
+
+def concepts_from_index(reg, add):
+    C = json.loads((ROOT / "data/entity-index.json").read_text(encoding="utf-8"))["concepts"]
+    qs = {re.sub(r'["“”]', "", o["q"]).lower() for e in reg["entries"] for o in [e] + (e.get("observations") or []) if o.get("q")}
+    dates = {}
+    for k, v in C.items():
+        term = re.sub(r"\s*\(.*?\)\s*", " ", v.get("term") or k).strip()
+        tl = term.lower()
+        if v.get("type") == "status_marker" or tl in DROP:
+            continue
+        if len(tl.split()) < 2 and tl not in KEEP_SINGLE:
+            continue
+        if term.isupper() and len(tl.split()) <= 2:
+            continue
+        rx = re.compile(r"(?<![a-z0-9])" + re.escape(tl) + r"(?![a-z0-9])")
+        if not any(rx.search(q) for q in qs):
+            continue
+        dep = v.get("defined_in")
+        if dep not in dates:
+            rp = ROOT / f"data/records/{dep}.json"
+            dates[dep] = json.loads(rp.read_text(encoding="utf-8")).get("date") if dep and rp.exists() else None
+        typ = "work" if tl in WORKS else "institution" if INST.search(term) else "concept"
+        add(term, typ, [], [dep] if dep else [], "concept index", extra={"index_type": v.get("type"),
+            "index_engagement": v.get("engagement_type")}, only_new=True)
+
+
+_REC = {}
+
+
+def records():
+    if not _REC:
+        for f in (ROOT / "data/records").glob("*.json"):
+            try:
+                r = json.loads(f.read_text(encoding="utf-8"))
+            except Exception:
+                continue
+            if r.get("deposit_number") is not None:
+                _REC[r["deposit_number"]] = r
+    return _REC
+
+
+def deposit_date(n):
+    r = records().get(n)
+    return r.get("date") if r else None
+
+
+# CONCEPTS FROM THE ADDRESSES (v0.2). An address that names no registered entity is tried whole, and each quoted phrase in
+# any address is tried, against the deposits: a defines_concepts entry is a DEFINING deposit (confirmed); a title, keyword
+# or description containing the phrase is a CANDIDATE (the earliest is taken). A quoted phrase found nowhere is entered
+# PROVISIONAL, its defining deposit not identified: the quotation is the target whatever the archive holds.
+def concepts_from_addresses(reg, add, alias_of, norm):
+    defs = collections.defaultdict(list)
+    for n, r in records().items():
+        for c in r.get("defines_concepts") or []:
+            t = c if isinstance(c, str) else (c.get("term") or c.get("name") or "")
+            if t:
+                defs[t.strip().lower()].append(n)
+
+    def find(ph):
+        if ph in defs:
+            return sorted(defs[ph], key=lambda n: deposit_date(n) or "9"), "confirmed (defines_concepts)"
+        hits = []
+        for n, r in records().items():
+            for f in ("title", "keywords", "description"):
+                v = r.get(f)
+                v = " ".join(map(str, v)) if isinstance(v, list) else str(v or "")
+                if ph in v.lower():
+                    hits.append(n)
+                    break
+        return sorted(hits, key=lambda n: deposit_date(n) or "9"), "candidate (title, keywords or description)"
+    seen, pending = set(), []
+    for e in reg["entries"]:
+        for o in [e] + (e.get("observations") or []):
+            q = (o.get("q") or "").strip()
+            if not q:
+                continue
+            quoted = [m.strip().lower() for m in re.findall(r'["“]([^"”]{4,80})["”]', q) if len(m.split()) >= 2]
+            whole = re.sub(r'["“”]', "", q).strip().lower()
+            pending.append((quoted, whole))
+    # two passes: every quoted phrase first, then whole addresses, so "phase x marx" falls to Phase X
+    for pass_quoted in (True, False):
+        for quoted, whole in pending:
+            for ph, is_quoted in ([(x, True) for x in quoted] if pass_quoted else [(whole, False)]):
+                    ph = re.sub(r"\s+", " ", ph).strip(" ?.")
+                    if not ph or ph in seen or ph in DROP or norm(ph) in alias_of or (not is_quoted and (len(ph.split()) > 5 or len(ph.split()) < 2)):
+                        continue
+                    # a whole address is tried only where it names no registered entity ("who is lee sharks" is Lee Sharks)
+                    if not is_quoted and any(re.search(r"(?<![a-z0-9])" + re.escape(al) + r"(?![a-z0-9])", ph) for al in alias_of if len(al) >= 4):
+                        continue
+                    seen.add(ph)
+                    deps, state = find(ph)
+                    if deps:
+                        add(ph, "concept", [], deps[:1], "address", extra={"definition_state": state, "other_deposits": deps[1:6]}, only_new=True)
+                    elif is_quoted:
+                        add(ph, "concept", [], [], "address", extra={"definition_state": "provisional (defining deposit not identified)"}, only_new=True)
 
 
 def matcher(ents):
@@ -171,12 +315,14 @@ def main(check=False):
     reg = json.loads(REG.read_text(encoding="utf-8"))
     ents = register(reg)
     pats = matcher(ents)
+    nrm = lambda a: re.sub(r"^the\s+", "", re.sub(r"\s*\(.*?\)\s*", " ", a.lower()).strip())
+    lookup = {nrm(a): r["id"] for r in ents.values() for a in r["aliases"]}
     read = json.loads(READ.read_text(encoding="utf-8")) if READ.exists() else {}
     rows = []
     for e in reg["entries"]:
         obs = e.get("observations") or [e]
         o_name = re.split(r" \(", (e.get("originator") or {}).get("name") or "")[0]
-        orig_id = eid(MERGE.get(o_name.strip().lower(), o_name.strip())) if o_name else None
+        orig_id = lookup.get(nrm(MERGE.get(o_name.strip().lower(), o_name.strip()))) if o_name else None
         for j, o in enumerate(obs):
             key = o.get("obs_id") or f"{e['slug']}#{j + 1}"
             q = o.get("q") or e.get("q") or ""
