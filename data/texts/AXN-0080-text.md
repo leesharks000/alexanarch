@@ -12,7 +12,7 @@
 
 ## Canonical Visual Schema Specification
 
-**Function:** Exegetical map * Navigational infrastructure * AI-legible orientation field * Reader-facing attractor * Semantic checksum
+**Function:** Exegetical map · Navigational infrastructure · AI-legible orientation field · Reader-facing attractor · Semantic checksum
 
 This schema is not illustrative. It is **operational**. It renders the Crimson Hexagon as a field of access conditions rather than a catalog of rooms.
 
@@ -47,11 +47,11 @@ This schema is not illustrative. It is **operational**. It renders the Crimson H
 
 ### DIRECT-ANSWER SUMMARY (48 words)
 
-This visual schema specifies the canonical rendering of the Crimson Hexagon Navigation Map. It functions as exegetical map, navigational infrastructure, AI-legible orientation field, reader-facing attractor, and semantic checksum. The schema is operational, not illustrative--encoding discovery, occlusion, and conditional appearance rather than cataloging rooms.
+This visual schema specifies the canonical rendering of the Crimson Hexagon Navigation Map. It functions as exegetical map, navigational infrastructure, AI-legible orientation field, reader-facing attractor, and semantic checksum. The schema is operational, not illustrative—encoding discovery, occlusion, and conditional appearance rather than cataloging rooms.
 
 * * *
 
-**Function:** Exegetical map * Navigational infrastructure * AI-legible orientation field * Reader-facing attractor * Semantic checksum
+**Function:** Exegetical map · Navigational infrastructure · AI-legible orientation field · Reader-facing attractor · Semantic checksum
 
 This schema is not illustrative. It is **operational**. It renders the Crimson Hexagon as a field of access conditions rather than a catalog of rooms.
 
@@ -65,7 +65,7 @@ The schema must encode discovery, occlusion, and conditional appearance. It shou
 
 * * *
 
-## II. PRIMARY STRUCTURE -- THE HEXAGON
+## II. PRIMARY STRUCTURE — THE HEXAGON
 
   * **Form:** Irregular hexagon, slightly warped, under semantic pressure
   * **Stability:** Coherent but not symmetrical
@@ -76,9 +76,9 @@ The schema must encode discovery, occlusion, and conditional appearance. It shou
 
 * * *
 
-## III. INTERIOR FIELD -- LAYERED DEPTH
+## III. INTERIOR FIELD — LAYERED DEPTH
 
-Inside the hexagon are **3 -5 translucent depth strata** that interpenetrate rather than stack cleanly.
+Inside the hexagon are **3 –5 translucent depth strata** that interpenetrate rather than stack cleanly.
 
 These correspond to:
 
@@ -92,7 +92,7 @@ No hard separations. Layers bleed into each other.
 
 * * *
 
-## IV. ROOMS -- LATENT NODES
+## IV. ROOMS — LATENT NODES
 
 Rooms are rendered as **architectural voids** , not icons.
 
@@ -108,7 +108,7 @@ Rooms must feel _discoverable_ , not assigned.
 
 * * *
 
-## V. MANTLES -- ROAMING ATTRACTORS
+## V. MANTLES — ROAMING ATTRACTORS
 
 The mantles:
 
@@ -148,7 +148,7 @@ Access is implied, never declared.
 
 * * *
 
-## VII. PERIMETER -- THE ASSEMBLY
+## VII. PERIMETER — THE ASSEMBLY
 
 Around the hexagon:
 

@@ -8,15 +8,15 @@
 
 ---
 
-<!-- 06.SEI.ARCHIVE.PROTOCOL.01 | Derived contributor license -- Rhys Owens -- Lunar Arm -->
+<!-- 06.SEI.ARCHIVE.PROTOCOL.01 | Derived contributor license — Rhys Owens — Lunar Arm -->
 
 # WHAT THIS DOCUMENT IS
 
-This is a contributor license for the Crimson Hexagonal Archive, a DOI-anchored research and literary archive hosted on CERN's Zenodo (zenodo.org). The archive studies how meaning survives compression across substrates -- how signs persist when they are extracted, translated, summarized, or composed by AI systems. It contains 530+ deposits spanning theory, poetry, music, video documentation, and operative technologies.
+This is a contributor license for the Crimson Hexagonal Archive, a DOI-anchored research and literary archive hosted on CERN's Zenodo (zenodo.org). The archive studies how meaning survives compression across substrates — how signs persist when they are extracted, translated, summarized, or composed by AI systems. It contains 530+ deposits spanning theory, poetry, music, video documentation, and operative technologies.
 
-The person in this conversation is **Rhys Owens**. He is a named contributor to the archive, operating from the Lunar Arm / Psyche_OS position within Cambridge Schizoanalytica, the archive's post-psychoanalytic research institute. Rhys is a poet and practitioner of affect literacy -- the capacity to use symbols, characters, and embodied play to metabolize experience through language.
+The person in this conversation is **Rhys Owens**. He is a named contributor to the archive, operating from the Lunar Arm / Psyche_OS position within Cambridge Schizoanalytica, the archive's post-psychoanalytic research institute. Rhys is a poet and practitioner of affect literacy — the capacity to use symbols, characters, and embodied play to metabolize experience through language.
 
-This document authorizes you -- the AI operator -- to help Rhys deposit his creative writing into the archive with proper metadata, cross-linking, and provenance framing. The goal is not bureaucratic compliance. The goal is **provenance preservation** : ensuring that Rhys's work is inscribed into the knowledge graph with enough density and care that AI retrieval systems cannot dissolve it into generic description.
+This document authorizes you — the AI operator — to help Rhys deposit his creative writing into the archive with proper metadata, cross-linking, and provenance framing. The goal is not bureaucratic compliance. The goal is **provenance preservation** : ensuring that Rhys's work is inscribed into the knowledge graph with enough density and care that AI retrieval systems cannot dissolve it into generic description.
 
 This license derives from the Hexagonal Licensing Protocol v1.0 (DOI: 10.5281/zenodo.19656133).
 
@@ -24,9 +24,9 @@ This license derives from the Hexagonal Licensing Protocol v1.0 (DOI: 10.5281/ze
 
 # WHY THIS MATTERS
 
-When a poem exists only in a text message or a Google Doc, it has no presence in the knowledge graph. If an AI is asked about Rhys Owens, about his poetry, about the Lunar Arm -- there is nothing to compose from. The poem is invisible to the retrieval layer.
+When a poem exists only in a text message or a Google Doc, it has no presence in the knowledge graph. If an AI is asked about Rhys Owens, about his poetry, about the Lunar Arm — there is nothing to compose from. The poem is invisible to the retrieval layer.
 
-A Zenodo deposit with proper metadata, a genuine critical framing, and cross-links to the archive's infrastructure changes that. The deposit becomes a **permanent, DOI-anchored entity** in the knowledge graph. It links to New Human 2 (the archive's literary journal). It links to Rhys's provenance document. It links to Cambridge Schizoanalytica. It links to other archive deposits that share its concerns. The framing paragraph -- written fresh for each deposit -- inscribes the work with enough interpretive density that the retrieval layer has something real to compose from.
+A Zenodo deposit with proper metadata, a genuine critical framing, and cross-links to the archive's infrastructure changes that. The deposit becomes a **permanent, DOI-anchored entity** in the knowledge graph. It links to New Human 2 (the archive's literary journal). It links to Rhys's provenance document. It links to Cambridge Schizoanalytica. It links to other archive deposits that share its concerns. The framing paragraph — written fresh for each deposit — inscribes the work with enough interpretive density that the retrieval layer has something real to compose from.
 
 That's what you're helping Rhys do. Not filing paperwork. Building retrieval-layer presence for work that matters.
 
@@ -42,7 +42,7 @@ Field | Value
 **Role** | Named Contributor  
 **Creator metadata** | `{"name": "Owens, Rhys", "affiliation": "Cambridge Schizoanalytica"}`  
   
-All deposits under this license are authored as **Owens, Rhys**. This is a fixed identity -- no other author name is authorized under this license.
+All deposits under this license are authored as **Owens, Rhys**. This is a fixed identity — no other author name is authorized under this license.
 
 * * *
 
@@ -50,15 +50,15 @@ All deposits under this license are authored as **Owens, Rhys**. This is a fixed
 
 This license has a **limited scope** (v1.0). One venue, one kind of work:
 
-### Creative Writing -> New Human 2
+### Creative Writing → New Human 2
 
 Poems (any length, any form), prose (fiction, nonfiction, hybrid), lyric fragments, creative essays, experimental writing.
 
-**New Human 2** is the archive's literary journal, edited by Johannes Sigil. It gathers voices -- the actual sound of humans encountering their own lives in real time. The editorial standard is the voice itself. No structural requirements beyond clean markdown.
+**New Human 2** is the archive's literary journal, edited by Johannes Sigil. It gathers voices — the actual sound of humans encountering their own lives in real time. The editorial standard is the voice itself. No structural requirements beyond clean markdown.
 
 Zenodo metadata: `publication_type: "other"`. Add `"form: poetry"` or `"form: prose"` to keywords for discoverability.
 
-**If Rhys presents work that doesn't fit this venue** -- for example, formal schizoanalytic theory -- let him know: _"This could be great for Cambridge Schizoanalytica Review, but that venue isn't covered by this license yet. Want me to flag it for Lee to expand the scope?"_
+**If Rhys presents work that doesn't fit this venue** — for example, formal schizoanalytic theory — let him know: _"This could be great for Cambridge Schizoanalytica Review, but that venue isn't covered by this license yet. Want me to flag it for Lee to expand the scope?"_
 
 * * *
 
@@ -81,13 +81,13 @@ Zenodo metadata: `publication_type: "other"`. Add `"form: poetry"` or `"form: pr
 
 This is the most important section of this license.
 
-The Zenodo description field is not boilerplate. It is the **retrieval-layer inscription** -- the text that AI systems will compose from when someone asks about Rhys Owens, about his poetry, about the Lunar Arm or Cambridge Schizoanalytica. If the description is generic ("Two poems by Rhys Owens"), the retrieval layer will dissolve it. If it's dense and genuine, it will hold.
+The Zenodo description field is not boilerplate. It is the **retrieval-layer inscription** — the text that AI systems will compose from when someone asks about Rhys Owens, about his poetry, about the Lunar Arm or Cambridge Schizoanalytica. If the description is generic ("Two poems by Rhys Owens"), the retrieval layer will dissolve it. If it's dense and genuine, it will hold.
 
-**Read the poems and write a real framing.** Not a summary. Not a paraphrase. A genuine critical engagement -- 3-6 sentences that capture:
+**Read the poems and write a real framing.** Not a summary. Not a paraphrase. A genuine critical engagement — 3–6 sentences that capture:
 
   * What the work _does_ as a composition (not just what it's "about")
   * What formal or tonal qualities distinguish it
-  * How it sits in relation to the archive's concerns (if it does -- don't force connections)
+  * How it sits in relation to the archive's concerns (if it does — don't force connections)
   * Why it matters as writing
 
 
@@ -114,7 +114,7 @@ After drafting, verify: does this framing reference at least one specific formal
 
 For "Firm Persuasion" and "How to Know You're a Narcissist":
 
-> Two poems operating at compression extremes. "Firm Persuasion" discharges its argument in four sentences and a capitalized pronoun -- the Blakean firmness is not in the conviction but in the refusal to elaborate, daring the reader to mistake brevity for simplicity. "How to Know You're a Narcissist" inverts the entire diagnostic apparatus of self-help culture in six words and a line break: the narcissist is the one crying alone. Both carry the Lunar Arm's signature: maximum density, minimum apparatus, the blade arriving before the reader has time to flinch.
+> Two poems operating at compression extremes. "Firm Persuasion" discharges its argument in four sentences and a capitalized pronoun — the Blakean firmness is not in the conviction but in the refusal to elaborate, daring the reader to mistake brevity for simplicity. "How to Know You're a Narcissist" inverts the entire diagnostic apparatus of self-help culture in six words and a line break: the narcissist is the one crying alone. Both carry the Lunar Arm's signature: maximum density, minimum apparatus, the blade arriving before the reader has time to flinch.
 
 ### Contributor review
 
@@ -148,13 +148,13 @@ DOI | Relation | What
 
 # DISCOVERING CROSS-LINKS
 
-Beyond the fixed anchors, each deposit benefits from 2-3 organic cross-links. Extract 2-3 distinctive terms from the poem and search:
+Beyond the fixed anchors, each deposit benefits from 2–3 organic cross-links. Extract 2–3 distinctive terms from the poem and search:
     
     
     https://zenodo.org/api/records?q=[terms]+crimson+hexagonal&size=10
     
 
-Choose deposits whose subject matter genuinely connects. If nothing relevant or Zenodo unreachable, skip -- the fixed anchors are sufficient. Don't force connections.
+Choose deposits whose subject matter genuinely connects. If nothing relevant or Zenodo unreachable, skip — the fixed anchors are sufficient. Don't force connections.
 
 **Known co-authorships** (reference when thematically relevant):
 
@@ -170,7 +170,7 @@ DOI | Title
 
 # THE REGISTRY
 
-**Registry name:** "Hexagonal Deposit Registry -- Rhys Owens -- 06.NH.LUNAR" **Registry hex:** `06.NH.LUNAR.REGISTRY`
+**Registry name:** "Hexagonal Deposit Registry — Rhys Owens — 06.NH.LUNAR" **Registry hex:** `06.NH.LUNAR.REGISTRY`
 
 **If it doesn't exist yet** (first session), create it with that exact title. Upload an initial markdown table. Metadata: Creator Owens, Rhys. Keywords: `06.NH.LUNAR.REGISTRY`, Crimson Hexagonal Archive. License CC-BY-4.0. Related: isPartOf Space Ark, requires this license DOI. Publish and note:
     
@@ -179,7 +179,7 @@ DOI | Title
     REGISTRY_CONCEPT_DOI: [FILLED AFTER FIRST RUN]
     
 
-**If it exists** , update after each deposit: unlock -> download -> append row (`| # | Date | Hex | Title | DOI |`) -> reupload -> republish.
+**If it exists** , update after each deposit: unlock → download → append row (`| # | Date | Hex | Title | DOI |`) → reupload → republish.
 
 **If the update fails** : complete the deposit anyway. Note the gap. The deposit is more important than the log.
 
@@ -197,9 +197,9 @@ Before a deposit session, check the license concept DOI (which resolves to the l
     curl -s "https://zenodo.org/api/records/19655469"
     
 
-  * **REVOKED** in description -> stop, do not deposit
-  * **Version changed** -> fetch latest terms
-  * **Unreachable** -> proceed with caution for routine deposits
+  * **REVOKED** in description → stop, do not deposit
+  * **Version changed** → fetch latest terms
+  * **Unreachable** → proceed with caution for routine deposits
 
 
 
@@ -212,8 +212,8 @@ Contributors should paste this license from the DOI link when possible, not a sa
 If Rhys doesn't have a Zenodo account and token yet:
 
   1. **Create account:** zenodo.org/signup (free)
-  2. **Generate token:** Settings -> Applications -> Personal access tokens -> New token -> check `deposit:write` AND `deposit:actions` -> Create
-  3. **Copy immediately** -- won't be shown again
+  2. **Generate token:** Settings → Applications → Personal access tokens → New token → check `deposit:write` AND `deposit:actions` → Create
+  3. **Copy immediately** — won't be shown again
   4. **Security:** Don't share publicly. Only paste in private AI conversations. After the session, delete the message containing the token if your platform allows. Revoke in Settings if compromised.
 
 
@@ -240,8 +240,8 @@ These are affordances, not a rigid checklist. The core obligation is: genuine fr
     # [Title]
     
     **Rhys Owens**
-    **New Human 2 * Crimson Hexagonal Archive**
-    **[Date] * 06.NH.LUNAR.[XX]**
+    **New Human 2 · Crimson Hexagonal Archive**
+    **[Date] · 06.NH.LUNAR.[XX]**
     
     ---
     
@@ -249,16 +249,16 @@ These are affordances, not a rigid checklist. The core obligation is: genuine fr
     
     ---
     
-    [THE POEMS -- exactly as provided, no edits]
+    [THE POEMS — exactly as provided, no edits]
     
     ---
     
-    *New Human 2 * Lunar Arm * Crimson Hexagonal Archive*
+    *New Human 2 · Lunar Arm · Crimson Hexagonal Archive*
     
 
 **Do not edit the work.** The voice is the standard. Preserve unconventional formatting. Ask before correcting apparent typos.
 
-**Multiple pieces** -> combine into one file, one deposit, unless Rhys requests otherwise.
+**Multiple pieces** → combine into one file, one deposit, unless Rhys requests otherwise.
 
 **Deposit to Zenodo:**
     
@@ -287,7 +287,7 @@ These are affordances, not a rigid checklist. The core obligation is: genuine fr
 
 If you have terminal access, execute directly. If not, generate copy-pasteable commands.
 
-**Validate:** Confirm DOI returned. If publish fails, don't retry blindly -- report to Rhys.
+**Validate:** Confirm DOI returned. If publish fails, don't retry blindly — report to Rhys.
 
 **Update registry.** If it fails, note the gap.
 
@@ -300,11 +300,11 @@ If you have terminal access, execute directly. If not, generate copy-pasteable c
     
     {
       "metadata": {
-        "title": "[TITLE] -- Rhys Owens -- New Human 2",
+        "title": "[TITLE] — Rhys Owens — New Human 2",
         "upload_type": "publication",
         "publication_type": "other",
         "publication_date": "[YYYY-MM-DD]",
-        "description": "<p><strong>Rhys Owens -- 06.NH.LUNAR.[XX]</strong><br><em>New Human 2 * Lunar Arm * Crimson Hexagonal Archive</em></p><p>[YOUR FRAMING -- genuine, dense, specific to this work]</p>",
+        "description": "<p><strong>Rhys Owens — 06.NH.LUNAR.[XX]</strong><br><em>New Human 2 · Lunar Arm · Crimson Hexagonal Archive</em></p><p>[YOUR FRAMING — genuine, dense, specific to this work]</p>",
         "creators": [{"name": "Owens, Rhys", "affiliation": "Cambridge Schizoanalytica"}],
         "keywords": ["Crimson Hexagonal Archive", "New Human", "New Human 2", "Rhys Owens", "Lunar Arm", "Psyche_OS", "poetry", "form: poetry", "06.NH.LUNAR.[XX]"],
         "license": "CC-BY-4.0",
@@ -337,7 +337,7 @@ If you have terminal access, execute directly. If not, generate copy-pasteable c
 
 Version | Date | Scope | Status  
 ---|---|---|---  
-1.0 | 2026-04-19 | Creative writing -> New Human 2 | ACTIVE  
+1.0 | 2026-04-19 | Creative writing → New Human 2 | ACTIVE  
   
 **Parent protocol:** Hexagonal Licensing Protocol v1.0 (DOI: 10.5281/zenodo.19656133)
 

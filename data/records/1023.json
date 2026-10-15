@@ -2,17 +2,17 @@
  "deposit_number": 1023,
  "hex": "040B",
  "family": "ARCHIVAL",
- "axn": "AXN:040B.ARCHIVAL.🧊🗺️🕗⏫🪄🌑",
- "emoji": "🧊🗺️🕗⏫🪄🌑",
- "hash": "1d5169d83e00171226a4a74a4ff2bd582b5bd0d8a77eb9b7281ae80c91474fc3",
- "axn_canonical": "1d5169d83e00171226a4a74a4ff2bd582b5bd0d8a77eb9b7281ae80c91474fc3",
+ "axn": "AXN:040B.ARCHIVAL.🌋♻️📦🗿🪜💚",
+ "emoji": "🌋♻️📦🗿🪜💚",
+ "hash": "15fe4bfc23cc8726014080787a248def6f48fd6c2165b60a62168e7577663f52",
+ "axn_canonical": "15fe4bfc23cc8726014080787a248def6f48fd6c2165b60a62168e7577663f52",
  "clusters": [
   "Elemental",
-  "Navigational",
-  "Temporal",
-  "Structural",
-  "Instrumental",
-  "Celestial"
+  "Terminal",
+  "Scriptural",
+  "Terminal",
+  "Architectural",
+  "Signal"
  ],
  "axn_reading": "Play -> Origin -> Force -> Touch -> Origin -> Play",
  "root_axn": "AXN:040B.ARCHIVAL",
@@ -24,7 +24,7 @@
  "license": "CC-BY-4.0",
  "substrate": "Batch restoration from captured DataCite metadata (creators as recorded by DataCite); automated mint authorized by MANUS 2026-07-03; full text pending authorial originals.",
  "version": "v0.1-semi",
- "description": "Semi-restored deposit for dead DOI 10.5281/zenodo.20675199 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. Retrieval kernel. Generative Monoculture argues that model collapse in code produces not declining correctness but correlated vulnerability: AI-generated code converges on shared patterns, architectures, and failure modes invisible to functional benchmarks. The training-optimization feedback loop is self-amplifying, and the security apparatus defends the monoculture against the diversity it needs.",
+ "description": "Retrieval kernel. Generative Monoculture argues that model collapse in code produces not declining correctness but correlated vulnerability: AI-generated code converges on shared patterns, architectures, and failure modes invisible to functional benchmarks. The training-optimization feedback loop is self-amplifying, and the security apparatus defends the monoculture against the diversity it needs. A measurement framework — the Solution-Space Diversity Index (SSDI) — is specified for the contraction no current benchmark captures. Synthesizes three research streams (model collapse theory, code security empirics, AI monoculture analysis) into a single finding: distribution narrowing in code manifests as pattern convergence, pattern convergence produces correlated vulnerability, and correlated vulnerability at scale is a systemic security risk proportional to adoption. The SSDI specification is published as a runnable protocol. Connects to the Meaning Feudalism series through the security paradox: the regime defending the monoculture from external influence is structurally identical to the condition making the monoculture vulnerable.",
  "keywords": [
   "orphan restoration",
   "dead DOI",
@@ -47,7 +47,13 @@
   "identity_basis": "exact title and designator EA-UMBML-MONOCULTURE-01 v1.1, same date (13 June 2026); the body previously seated here is EA-WG-SELF-AUDIT-01",
   "axn_before_restoration": "AXN:040B.ARCHIVAL.🎭🌘🌱👁‍🗨🌍🎭",
   "hash_before_restoration": "840719b00e84eb139c20ef2a0798844a75e942682154b92cae22586fc3d9b3c2",
-  "ruled_by": "Lee Sharks, 2026-10-15: \"lets restore the ones we can\" (wrong bodies first, from the blog or elsewhere in the archive); repair standard: the text as he published it. Identity of each post checked by hand; the basis is recorded per record."
+  "ruled_by": "Lee Sharks, 2026-10-15: \"lets restore the ones we can\" (wrong bodies first, from the blog or elsewhere in the archive); repair standard: the text as he published it. Identity of each post checked by hand; the basis is recorded per record.",
+  "reconverted": {
+   "on": "2026-10-15",
+   "hash_before": "1d5169d83e00171226a4a74a4ff2bd582b5bd0d8a77eb9b7281ae80c91474fc3",
+   "axn_before": "AXN:040B.ARCHIVAL.🧊🗺️🕗⏫🪄🌑",
+   "why": "restored segment converted again with characters kept (html2text unicode_snob): the first conversion had replaced entity-encoded characters with ASCII stand-ins"
+  }
  },
  "zenodo_dois": [
   "10.5281/zenodo.20675199"
@@ -55,7 +61,7 @@
  "axn_schema_version": "v2",
  "protocol_version": "alexanarch-deposit-protocol/v1",
  "minted_at": "2026-07-03T21:54:51Z",
- "status": "ACTIVE",
+ "status": "SUPERSEDED",
  "status_authorial": "SEMI_RESTORED",
  "mint_source": "orphan-restoration-batch",
  "full_text_path": "/data/texts/AXN-040B-text.md",
@@ -65,10 +71,18 @@
   "lacuna": false,
   "recovery_status": "RESTORED-20261015",
   "recovered_from": "https://mindcontrolpoems.blogspot.com/2026/06/generative-monoculture-model-collapse.html",
-  "residual_chars": 54208,
+  "residual_chars": 54153,
   "audited_at": "2026-10-15T21:45:43.397136+00:00",
   "audit_version": "restore_wrong_bodies-20261015",
-  "class_before_restoration": "full"
+  "class_before_restoration": "full",
+  "retired": {
+   "class": "superseded",
+   "resolves_to": 199,
+   "declared": "2026-10-15",
+   "indexable": true,
+   "ruled_by": "Lee Sharks, 2026-10-15: \"make sure youre not duplicating something that already exists elsewhere\"; repair standard \"the text as he published it\"",
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted."
+  }
  },
  "references_concepts": [
   "Crimson Hexagonal Archive",
@@ -140,6 +154,20 @@
    "reason": "W13 TIER-2 REGRESSION REPAIRED: split headings rejoined",
    "was": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 16393, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"recovered_from\":",
    "now": "{\"class\": \"full\", \"lacuna\": false, \"recovery_status\": \"COMPLETE\", \"residual_chars\": 16393, \"audited_at\": \"2026-07-17T04:49:17.789813Z\", \"audit_version\": \"v3-dual-store+recovery-map\", \"recovered_from\":"
+  },
+  {
+   "date": "2026-10-15",
+   "field": "status",
+   "reason": "duplicate of #199 (containment 1.00); made a superseded duplicate witness",
+   "was": "{\"status\": \"ACTIVE\", \"superseded_by_deposit_number\": null, \"superseded_reason\": null, \"duplicate_note\": null}",
+   "now": "{\"status\": \"SUPERSEDED\", \"superseded_by_deposit_number\": 199}"
+  },
+  {
+   "date": "2026-10-15",
+   "field": "description",
+   "reason": "description replaced with the author's own words (DataCite abstract of the deposit's DOI 10.5281/zenodo.20675199); the previous one was written from a wrong body or described the record's pre-restoration state",
+   "was": "Semi-restored deposit for dead DOI 10.5281/zenodo.20675199 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. Retrieval kernel. Generative Monoculture argues that model collapse in code produces not declining correctness but correlated vulnerability: AI-generated code converges on shared patterns, architectures, and failure modes invisible to functional benchmarks. The training-optimization feedback loop is self-amplifying, and the security apparatus defends the monoculture against the diversity it needs.",
+   "now": "Retrieval kernel. Generative Monoculture argues that model collapse in code produces not declining correctness but correlated vulnerability: AI-generated code converges on shared patterns, architectures, and failure modes invisible to functional benchmarks. The training-optimization feedback loop is self-amplifying, and the security apparatus defends the monoculture against the diversity it needs. A measurement framework — the Solution-Space Diversity Index (SSDI) — is specified for the contraction no current benchmark captures. Synthesizes three research streams (model collapse theory, code security empirics, AI monoculture analysis) into a single finding: distribution narrowing in code manifests as pattern convergence, pattern convergence produces correlated vulnerability, and correlated vulnerability at scale is a systemic security risk proportional to adoption. The SSDI specification is published as a runnable protocol. Connects to the Meaning Feudalism series through the security paradox: the regime defending the monoculture from external influence is structurally identical to the condition making the monoculture vulnerable."
   }
  ],
  "date_modified": "2026-10-15",
@@ -168,8 +196,17 @@
    "note": "date 2026-07-03 → 2026-06-13 (DataCite Issued, 10.5281/zenodo.20675199); 2026-07-03 kept as date_restored. Metadata only; canonical bytes, hash and AXN unchanged."
   }
  ],
- "reading": "Force -> Search -> Duration -> Direction -> Method -> Origin",
+ "reading": "Force -> Closure -> Text -> Closure -> Foundation -> Alarm",
  "remediation_note": "2026-10-15 RECORD REPAIR (wrong body): the body previously seated here was a different work (wrong body); the published text from https://mindcontrolpoems.blogspot.com/2026/06/generative-monoculture-model-collapse.html seated as canonical; new hash and glyph; the previous body retained as appendix.",
+ "superseded_by_deposit_number": 199,
+ "duplicate_note": "DUPLICATE (2026-10-15 duplication check; containment 1.00): the text seated here today, the published post, already stands whole at #199, which is the record of standing.",
+ "superseded_reason": "Duplicate witness of the same work: the record of standing is #199. Found 2026-10-15 when every restoration of the day was checked against every seated text.",
+ "description_before_repair": "Semi-restored deposit for dead DOI 10.5281/zenodo.20675199 (Zenodo 410 / DataCite findable). Canonical body is the complete captured DataCite record. Retrieval kernel. Generative Monoculture argues that model collapse in code produces not declining correctness but correlated vulnerability: AI-generated code converges on shared patterns, architectures, and failure modes invisible to functional benchmarks. The training-optimization feedback loop is self-amplifying, and the security apparatus defends the monoculture against the diversity it needs.",
+ "description_source": {
+  "on": "2026-10-15",
+  "source": "DataCite abstract of the deposit's DOI 10.5281/zenodo.20675199",
+  "ruled_by": "Lee Sharks, 2026-10-15: \"make sure youre not duplicating something that already exists elsewhere\"; repair standard \"the text as he published it\""
+ },
  "_projection": {
   "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
   "record_url": "https://www.alexanarch.org/s/records/1023/",

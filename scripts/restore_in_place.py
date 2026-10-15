@@ -36,7 +36,8 @@ from axn_lib import axn_glyph_from_hash, axn_clusters_from_hash, axn_reading_fro
 
 try:
     import html2text
-    _H = html2text.HTML2Text(); _H.body_width = 0
+    _H = html2text.HTML2Text(); _H.body_width = 0; _H.unicode_snob = True
+    # unicode_snob (2026-10-15): html2text's default replaces entity-encoded characters with ASCII stand-ins (&#183; -> '*', &mdash; -> '--', curly quotes -> straight, accented letters -> bare); the published text keeps them.
     to_md = lambda h: _H.handle(h)
 except ImportError:
     to_md = lambda h: re.sub(r'<[^>]+>', '', h)

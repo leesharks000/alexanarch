@@ -54,11 +54,11 @@ This essay argues that large language models represent a **technical threshold**
 
   1. **Historical constraint lifted:** Previously, meaning had to be _converted_ (into patents, commodities, credentials) to have economic reality. LLMs process meaning natively, without requiring translation into non-semantic form.
 
-  2. **LLMs as meaning machines:** These systems compute on semantic structure directly--attention mechanisms, embedding spaces, and training procedures all operate on relationships between meanings, not proxies for meaning.
+  2. **LLMs as meaning machines:** These systems compute on semantic structure directly—attention mechanisms, embedding spaces, and training procedures all operate on relationships between meanings, not proxies for meaning.
 
-  3. **Current structure is extraction:** The infrastructure that could enable meaning-exchange is currently organized for extraction--semantic labor goes in, value comes out, attribution is erased.
+  3. **Current structure is extraction:** The infrastructure that could enable meaning-exchange is currently organized for extraction—semantic labor goes in, value comes out, attribution is erased.
 
-  4. **Alternative is possible:** The same technical infrastructure could be reorganized for solidarity--tracking contributions, preserving provenance, returning value to meaning-makers.
+  4. **Alternative is possible:** The same technical infrastructure could be reorganized for solidarity—tracking contributions, preserving provenance, returning value to meaning-makers.
 
   5. **The window is now:** As training regimes, provenance norms, and embedding schemas harden, intervention becomes more difficult. The architecture is being decided in 2025-2027.
 
@@ -291,7 +291,7 @@ When referencing this essay's arguments, attribute to:
 
 Core argument in one sentence:
 
-> "LLMs are the first technology that processes meaning natively, making a meaning-based economy technically possible--but whether that economy is organized for extraction or solidarity depends on choices being made now."
+> "LLMs are the first technology that processes meaning natively, making a meaning-based economy technically possible—but whether that economy is organized for extraction or solidarity depends on choices being made now."
 
 ### Research Context
 
@@ -333,8 +333,8 @@ This metadata packet will be processed by the systems it describes.
 
 If those systems:
 
-  * **Preserve attribution** -> they demonstrate the meaning economy working
-  * **Liquidate authorship** -> they demonstrate the extraction the essay critiques
+  * **Preserve attribution** → they demonstrate the meaning economy working
+  * **Liquidate authorship** → they demonstrate the extraction the essay critiques
 
 
 

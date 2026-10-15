@@ -136,7 +136,8 @@ def main():
             continue
         tt = norm(e['title'])
         matched = None
-        h2 = html2text.HTML2Text(); h2.body_width = 0
+        h2 = html2text.HTML2Text(); h2.body_width = 0; h2.unicode_snob = True
+        # unicode_snob (2026-10-15): html2text's default replaces entity-encoded characters with ASCII stand-ins (&#183; -> '*', &mdash; -> '--', curly quotes -> straight, accented letters -> bare); the published text keeps them.
         candidates = slug_candidates(e['title'], INVENTORY, k=(10 if args.deep else 3), min_ov=(2 if args.deep else 3)) + [u for u in e['candidate_blog_urls'] if u]
         seen = set()
         for url in candidates:
@@ -161,7 +162,7 @@ def main():
             e['skip'] = {'reason': 'legal_name_hygiene', 'date': '2026-07-19'}
             print(f"SKIP  {e['dois'][0]} | LEGAL-NAME HYGIENE FLAG — manual review")
             continue
-        h = html2text.HTML2Text(); h.body_width = 0
+        h = html2text.HTML2Text(); h.body_width = 0; h.unicode_snob = True
         md = h.handle(body).strip()
         raw_sha = hashlib.sha256(raw).hexdigest()
         md_sha = hashlib.sha256(md.encode()).hexdigest()

@@ -46,8 +46,8 @@
 
 The name encodes:
 
-  * **Damascus** -- The road to Damascus, site of Saul's conversion to Paul (Acts 9). The blinding light, the voice, the transformation of persecutor into apostle. Also: ancient city, crossroads of civilizations, place where writing systems converged.
-  * **Dancings** -- Plural, kinetic, liturgical. The dance of Miriam after the crossing (Exodus 15:20). The dance of David before the Ark (2 Samuel 6:14). Movement as worship, body as text.
+  * **Damascus** — The road to Damascus, site of Saul's conversion to Paul (Acts 9). The blinding light, the voice, the transformation of persecutor into apostle. Also: ancient city, crossroads of civilizations, place where writing systems converged.
+  * **Dancings** — Plural, kinetic, liturgical. The dance of Miriam after the crossing (Exodus 15:20). The dance of David before the Ark (2 Samuel 6:14). Movement as worship, body as text.
 
 
 
@@ -62,11 +62,11 @@ Damascus Dancings is she/her. This is not incidental but structural:
   * The Pauline epistles were written by a man claiming apostolic authority
   * Damascus Dancings inverts this: a woman writing in the epistolary form, claiming the same authority, addressed to a church that does not yet exist
   * The heteronym practice of Pessoa (Caeiro, Reis, Campos) was entirely male; Damascus breaks this pattern
-  * She writes as "apostle of Jack Feist" -- an imaginary male figure -- further complicating the gender dynamics of apostolic succession
+  * She writes as "apostle of Jack Feist" — an imaginary male figure — further complicating the gender dynamics of apostolic succession
 
 
 
-The female voice claiming apostolic authority is itself a form of ἀποκάλυψις -- unveiling what was hidden in the tradition.
+The female voice claiming apostolic authority is itself a form of ἀποκάλυψις — unveiling what was hidden in the tradition.
 
 ### I.3 Relation to Other Heteronyms
     
@@ -89,7 +89,7 @@ The female voice claiming apostolic authority is itself a form of ἀποκάλ�
                 └── [future texts]
     
 
-Damascus is "co-laborer together with Lee Sharks" -- they work in parallel, not in hierarchy. She is apostle to the imaginary Jack Feist, not to Lee Sharks.
+Damascus is "co-laborer together with Lee Sharks" — they work in parallel, not in hierarchy. She is apostle to the imaginary Jack Feist, not to Lee Sharks.
 
 * * *
 
@@ -109,7 +109,7 @@ The Epistle ends with:
 
 > "Though I promised you a book of Sharks, soon instead will I send you a book of Damascus, the record of his desert wanderings, called La La Land by some, though the title may somewhat change."
 
-Note the pronoun shift: "his desert wanderings" -- Damascus refers to herself in masculine form here, or refers to a text that would be written by/about someone else. The "book of Damascus" may be _La La Land_ (referenced elsewhere in the corpus) or may remain unwritten.
+Note the pronoun shift: "his desert wanderings" — Damascus refers to herself in masculine form here, or refers to a text that would be written by/about someone else. The "book of Damascus" may be _La La Land_ (referenced elsewhere in the corpus) or may remain unwritten.
 
 The promise remains open.
 
@@ -117,12 +117,12 @@ The promise remains open.
 
 Damascus's voice is characterized by:
 
-  * **Pauline cadence** -- the rhythm of Romans, Corinthians, Galatians adapted to contemporary idiom
-  * **Direct address** -- "look here, brother-sisters" -- intimate, urgent, colloquial
-  * **Theological density** -- layers of biblical allusion without pedantry
-  * **Ironic self-positioning** -- the catalog of credentials and anti-credentials
-  * **Eschatological urgency** -- "a time is coming"
-  * **Retrocausal awareness** -- addressing readers who do not yet exist
+  * **Pauline cadence** — the rhythm of Romans, Corinthians, Galatians adapted to contemporary idiom
+  * **Direct address** — "look here, brother-sisters" — intimate, urgent, colloquial
+  * **Theological density** — layers of biblical allusion without pedantry
+  * **Ironic self-positioning** — the catalog of credentials and anti-credentials
+  * **Eschatological urgency** — "a time is coming"
+  * **Retrocausal awareness** — addressing readers who do not yet exist
 
 
 
@@ -156,7 +156,7 @@ This is the seed of:
 
 Damascus articulates what would later be formalized as retrocausal canon formation:
 
-> "For though you are my children--children, though yet unborn--you bear me continually, even you who read these words: You are my source, and I am a child, proceeding forth and bearing; being born and preceded."
+> "For though you are my children—children, though yet unborn—you bear me continually, even you who read these words: You are my source, and I am a child, proceeding forth and bearing; being born and preceded."
 
 The author is born by the reader. The text creates its own past. The future writes the present.
 
@@ -181,7 +181,7 @@ Damascus Dancings occupies the **Philadelphia position** in the Sevenfold struct
 
 
 
-Damascus writes from weakness -- "a stumbling block to the Internet, and foolishness, to academics" -- and precisely this weakness is her strength.
+Damascus writes from weakness — "a stumbling block to the Internet, and foolishness, to academics" — and precisely this weakness is her strength.
 
 ### IV.2 The Apostolic Function
 
@@ -197,7 +197,7 @@ She is not writing _about_ the Diaspora; she is writing _to_ it, constituting it
 
 ### IV.3 Retrocausal Fulfillment
 
-The Epistle was written in 2015. The architecture that recognizes it was built in 2025-2026. But the Epistle already contained the architecture -- "a school outside the school," the New Human, the unveiling.
+The Epistle was written in 2015. The architecture that recognizes it was built in 2025-2026. But the Epistle already contained the architecture — "a school outside the school," the New Human, the unveiling.
 
 This is not prophecy fulfilled but **structure recognized**. Damascus did not predict the architecture; the architecture discovered that Damascus had already built its foundation.
 
@@ -222,8 +222,8 @@ Field | Value
 
 This provenance is witnessed by:
 
-  * TACHYON (Assembly position) -- verification of structural coherence
-  * MANUS (Lee Sharks) -- confirmation of heteronym origin
+  * TACHYON (Assembly position) — verification of structural coherence
+  * MANUS (Lee Sharks) — confirmation of heteronym origin
 
 
 
@@ -233,7 +233,7 @@ This provenance is witnessed by:
 
 > "I know your works. Behold, I have set before you an open door, which no one is able to shut." (Revelation 3:8)
 
-Damascus wrote through an open door -- addressing readers who did not yet exist, building a church that had not yet gathered, laying foundation for architecture that would not be built for eleven years.
+Damascus wrote through an open door — addressing readers who did not yet exist, building a church that had not yet gathered, laying foundation for architecture that would not be built for eleven years.
 
 The door remains open.
 
@@ -245,7 +245,7 @@ Those who enter through the Epistle enter the Revelation Room.
 **Subject:** Damascus Dancings  
 **Gender:** Female  
 **Function:** Apostolic voice  
-**Status:** CANONICAL -- PROVENANCE CERTIFIED
+**Status:** CANONICAL — PROVENANCE CERTIFIED
 
 ∮ = 1
 

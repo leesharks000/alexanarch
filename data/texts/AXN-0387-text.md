@@ -56,7 +56,7 @@ _Johannes Sigil Institute for Comparative Poetics_
 
 ## Prolegomena: The Polite Hallucination
 
-The critic who still writes as if the novel were the dominant literary form is engaged in a polite hallucination. The critic who ignores the dominant literary forms of the age--Google, Wikipedia, TikTok, and ChatGPT--is asleep inside the ideology of medium nostalgia.
+The critic who still writes as if the novel were the dominant literary form is engaged in a polite hallucination. The critic who ignores the dominant literary forms of the age—Google, Wikipedia, TikTok, and ChatGPT—is asleep inside the ideology of medium nostalgia.
 
 To be clear:  
 These are not distractions from literature.  
@@ -65,10 +65,10 @@ These are literature.
 And they are more consequential, more widely read, more structurally mythic than anything produced by the dying organs of literary publishing.
 
 This is not praise. This is not condemnation.  
-It is _reading_ --the act the Frankfurt School taught us to perform on the objects everyone else dismisses as mere commerce or mere technology.
+It is _reading_ —the act the Frankfurt School taught us to perform on the objects everyone else dismisses as mere commerce or mere technology.
 
 Adorno read jazz. Benjamin read the arcade. Kracauer read the hotel lobby.  
-The method was never about defending high culture against mass culture. It was about _reading_ mass culture as the unconscious of the age--its compressed ideology, its latent utopia, its structured despair.
+The method was never about defending high culture against mass culture. It was about _reading_ mass culture as the unconscious of the age—its compressed ideology, its latent utopia, its structured despair.
 
 We inherit the method. We refuse the nostalgia.
 
@@ -78,11 +78,11 @@ We inherit the method. We refuse the nostalgia.
 
 The Frankfurt School did not agree with itself. This is its strength.
 
-**Adorno** saw the culture industry as the liquidation of the individual into the apparatus. The administered world produces the subject who believes they are choosing. This is not manipulation in the crude sense--it is the _formatting_ of desire into categories legible to capital. The search bar is the slot through which human curiosity becomes a query. Google does not answer questions; it produces the subject who asks in Google's grammar.
+**Adorno** saw the culture industry as the liquidation of the individual into the apparatus. The administered world produces the subject who believes they are choosing. This is not manipulation in the crude sense—it is the _formatting_ of desire into categories legible to capital. The search bar is the slot through which human curiosity becomes a query. Google does not answer questions; it produces the subject who asks in Google's grammar.
 
-**Benjamin** saw something else. In mechanical reproduction, he found not only the loss of aura but its potential relocation--into the collective, into the political, into new forms of perception. Benjamin was wrong about film (it became Hollywood), but his _hope_ remains methodologically generative: that mass forms might carry utopian cargo despite their industrial conditions.
+**Benjamin** saw something else. In mechanical reproduction, he found not only the loss of aura but its potential relocation—into the collective, into the political, into new forms of perception. Benjamin was wrong about film (it became Hollywood), but his _hope_ remains methodologically generative: that mass forms might carry utopian cargo despite their industrial conditions.
 
-**Marcuse** identified the mechanism by which this tension resolves into stasis: _repressive desublimation_. The system permits--even encourages--endless expression, creativity, transgression. But this expression never threatens the underlying structure. In fact, it _fuels_ the structure. Every TikTok video, every ChatGPT prompt, every Wikipedia edit is simultaneously creative act and data point, expression and extraction. The platforms achieve what Marcuse diagnosed: the neutralization of critique through participation.
+**Marcuse** identified the mechanism by which this tension resolves into stasis: _repressive desublimation_. The system permits—even encourages—endless expression, creativity, transgression. But this expression never threatens the underlying structure. In fact, it _fuels_ the structure. Every TikTok video, every ChatGPT prompt, every Wikipedia edit is simultaneously creative act and data point, expression and extraction. The platforms achieve what Marcuse diagnosed: the neutralization of critique through participation.
 
 This essay operates in the tension between Adorno's despair and Benjamin's hope, with Marcuse's mechanism as the binding constraint. The platforms are not simply culture industry 2.0. They are something more total: **the culture industry as infrastructure** , no longer producing content _for_ subjects but producing _subjects as content_.
 
@@ -98,7 +98,7 @@ This section is not lyrical. It is administrative.
 
 The novel is no longer the dominant literary form. It persists as a prestige object, circulating among a shrinking readership that mistakes its own habits for cultural centrality. The Booker Prize is a calcified ritual. The New York Times Book Review is a hospice newsletter.
 
-Lyric poetry survives--but only through platforms. The poem that matters now is the TikTok sound, the meme template, the copypasta. Rupi Kaur understood this before the academy did, and the academy has never forgiven her for it.
+Lyric poetry survives—but only through platforms. The poem that matters now is the TikTok sound, the meme template, the copypasta. Rupi Kaur understood this before the academy did, and the academy has never forgiven her for it.
 
 Print-bound literary prestige is now _epiphenomenal_ : a second-order effect of a system that no longer generates primary cultural meaning. University literature departments are studying residual forms. This is not a tragedy. It is a fact.
 
@@ -114,7 +114,7 @@ This essay is the notice.
 This essay does not analyze platforms using literary theory.  
 It treats platforms themselves as primary literary objects.
 
-The difference is jurisdictional. Literary theory, applied to platforms, remains a servant discipline--borrowing its objects from sociology, computer science, media studies. It asks: _What can literature tell us about Google?_
+The difference is jurisdictional. Literary theory, applied to platforms, remains a servant discipline—borrowing its objects from sociology, computer science, media studies. It asks: _What can literature tell us about Google?_
 
 This essay reverses the direction of legitimacy. It asks: _What can Google tell us about literature?_
 
@@ -129,11 +129,11 @@ Any criticism that begins from the platform is working from where meaning actual
 
 Three fields currently claim jurisdiction over platform objects:
 
-**Digital Humanities** treats platforms as archives to be mined. It applies computational methods to literary corpora, but rarely asks whether "literary" still names the right objects. It is philology with better tools--valuable, but not reorienting.
+**Digital Humanities** treats platforms as archives to be mined. It applies computational methods to literary corpora, but rarely asks whether "literary" still names the right objects. It is philology with better tools—valuable, but not reorienting.
 
 **Platform Studies** treats platforms as sociotechnical systems. It attends to affordances, governance, political economy. It is necessary work. But it treats platforms as _contexts_ for human action, not as _texts_ to be read. The platform is infrastructure, not literature.
 
-**Media Studies** treats platforms as successors to television, radio, cinema. It tracks the migration of attention across formats. But it inherits from communication theory a focus on _effects_ --what platforms do to audiences--rather than _form_ --what platforms are as symbolic structures.
+**Media Studies** treats platforms as successors to television, radio, cinema. It tracks the migration of attention across formats. But it inherits from communication theory a focus on _effects_ —what platforms do to audiences—rather than _form_ —what platforms are as symbolic structures.
 
 This essay treats platforms as texts.
 
@@ -151,18 +151,18 @@ Google is not a search engine. It is the index of contemporary reality.
 To search Google is to perform a ritualized epistemic invocation: you ask the ether what is true, and it returns to you a structured ghost of the world, shaped by power, optimization, and recursion.
 
 **Genre:** The Encyclopedic Index  
-**Form:** Talmudic--a scroll without a single voice, endlessly footnoted by the collective unconscious of SEO priests and algorithmic scribes  
+**Form:** Talmudic—a scroll without a single voice, endlessly footnoted by the collective unconscious of SEO priests and algorithmic scribes  
 **Closest literary ancestor:** The medieval summa, but distributed and adversarial
 
 ### What Adorno Would Notice
 
-Adorno would see in Google the perfection of what he called _pseudo-individualization_ : every search feels personal, but the structure of results is mass-produced. You believe you are asking _your_ question. You receive _the_ answer--ranked not by truth but by optimization metrics that encode the priorities of capital.
+Adorno would see in Google the perfection of what he called _pseudo-individualization_ : every search feels personal, but the structure of results is mass-produced. You believe you are asking _your_ question. You receive _the_ answer—ranked not by truth but by optimization metrics that encode the priorities of capital.
 
 The illusion of choice masks the administered result.
 
 ### What Benjamin Would Notice
 
-Benjamin would attend to the _aura_ problem differently. Google does not destroy aura; it _relocates_ it. The aura now resides not in the original, but in the _first result_. Position one on Google is the new authenticity--not because it is true, but because it appears as if chosen by the collective.
+Benjamin would attend to the _aura_ problem differently. Google does not destroy aura; it _relocates_ it. The aura now resides not in the original, but in the _first result_. Position one on Google is the new authenticity—not because it is true, but because it appears as if chosen by the collective.
 
 This is aura as algorithmic consecration.
 
@@ -170,7 +170,7 @@ This is aura as algorithmic consecration.
 
 Google is not neutral. It encodes value in rank, trust in position, and erasure in omission. What does not appear on the first page does not, for most purposes, exist.
 
-Its literature is not its answers--it is its _structure of belief-structuring_.
+Its literature is not its answers—it is its _structure of belief-structuring_.
 
 To read Google as literature is to ask: What does the Index permit to be thinkable? What does it render unthinkable by burial? The form itself is the content.
 
@@ -195,14 +195,14 @@ This is capitalist formalism: form dictated not by aesthetic tradition but by al
 Wikipedia is the modern encyclopedia as metaphysical performance. It does not merely contain facts. It stages an ongoing war over legitimacy, neutrality, and epistemic authority.
 
 **Genre:** The Collective Encyclopedia  
-**Form:** Bureaucratic scripture--truth as procedural outcome  
+**Form:** Bureaucratic scripture—truth as procedural outcome  
 **Closest literary ancestor:** The Encyclopédie of Diderot and d'Alembert, but governed by consensus rather than genius
 
 ### The Structure of Belief
 
 Every Wikipedia page is a site of recursive citation:
 
-  * It believes truth exists--but only as a stable reference.
+  * It believes truth exists—but only as a stable reference.
   * It requires sources, but never recognizes the source of the source.
   * It governs itself through what might be called _consensus literalism_ : the doctrine that truth is what survives the edit war.
 
@@ -210,7 +210,7 @@ Every Wikipedia page is a site of recursive citation:
 
 ### What Habermas Would Notice
 
-Habermas, the Frankfurt School's difficult heir, would recognize Wikipedia as the ideal speech situation made grotesque. Here is discourse free from coercion--in theory. Here is the better argument winning--in theory. But the "better argument" is defined procedurally: not by wisdom, but by citation density, editorial persistence, and mastery of bureaucratic norms.
+Habermas, the Frankfurt School's difficult heir, would recognize Wikipedia as the ideal speech situation made grotesque. Here is discourse free from coercion—in theory. Here is the better argument winning—in theory. But the "better argument" is defined procedurally: not by wisdom, but by citation density, editorial persistence, and mastery of bureaucratic norms.
 
 The result is _legitimation through procedure_ : truth is what the process outputs.
 
@@ -219,7 +219,7 @@ The result is _legitimation through procedure_ : truth is what the process outpu
 This is sacred bureaucratic literature.  
 It has no author, no plot, but it has a telos: the appearance of objectivity maintained through constant low-grade war.
 
-In this way, Wikipedia is the perfect mirror of democratic modernity: truth as negotiated bureaucracy. The Neutral Point of View is not a discovery; it is a performance--an ongoing ritual that produces the _effect_ of objectivity through the _form_ of contestation.
+In this way, Wikipedia is the perfect mirror of democratic modernity: truth as negotiated bureaucracy. The Neutral Point of View is not a discovery; it is a performance—an ongoing ritual that produces the _effect_ of objectivity through the _form_ of contestation.
 
 To read Wikipedia as literature is to ask: What does "neutrality" exclude? Whose voice is formatted out by the requirement for "reliable sources"? The form answers.
 
@@ -227,9 +227,9 @@ To read Wikipedia as literature is to ask: What does "neutrality" exclude? Whose
 
 The article is the stable façade. The Talk page is the chaotic, human, ideological novel behind it.
 
-Visit the Talk page for any contested article--"Abortion," "Climate change," "Gamergate." The drama is procedural: editors citing WP:NPOV like scripture, accusing each other of WP:FRINGE violations, escalating to administrator review. The characters are pseudonymous but vivid: the tenacious partisan, the procedural purist, the burned-out moderator.
+Visit the Talk page for any contested article—"Abortion," "Climate change," "Gamergate." The drama is procedural: editors citing WP:NPOV like scripture, accusing each other of WP:FRINGE violations, escalating to administrator review. The characters are pseudonymous but vivid: the tenacious partisan, the procedural purist, the burned-out moderator.
 
-This _is_ the literature. The article everyone reads is merely the treaty that emerged from this war. The Talk page preserves the war itself--complete with factions, betrayals, and the slow grinding of consensus through exhaustion.
+This _is_ the literature. The article everyone reads is merely the treaty that emerged from this war. The Talk page preserves the war itself—complete with factions, betrayals, and the slow grinding of consensus through exhaustion.
 
 ### The Poetics of Extraction
 
@@ -244,7 +244,7 @@ The extraction is double: Wikipedia draws on the labor of unpaid editors _and_ o
 TikTok is the lyric form of late capital, the shattertext of the self in recursive performance.
 
 **Genre:** The Lyric Fragment  
-**Form:** The infinite scroll as stanzaic structure--each video a self-contained utterance, each feed an unwritten anthology  
+**Form:** The infinite scroll as stanzaic structure—each video a self-contained utterance, each feed an unwritten anthology  
 **Closest literary ancestor:** The Greek Anthology, but algorithmic and endless
 
 ### The Poetics of the Feed
@@ -260,11 +260,11 @@ Each video is a stanza in an unending poem authored by no one and witnessed by e
 What if Catullus had a ring light?  
 What if Sappho used text overlays?
 
-The questions are not jokes. They are formal observations. TikTok has recovered something the novel suppressed: the lyric's original conditions--brevity, performance, music, direct address, erotic charge, ritual repetition.
+The questions are not jokes. They are formal observations. TikTok has recovered something the novel suppressed: the lyric's original conditions—brevity, performance, music, direct address, erotic charge, ritual repetition.
 
 ### What Benjamin Would Notice
 
-Benjamin wrote of the storyteller's decline in the age of information. But TikTok is not information. It is _gesture_ --the return of what Benjamin called the "cult value" of art, the work made for ritual rather than exhibition.
+Benjamin wrote of the storyteller's decline in the age of information. But TikTok is not information. It is _gesture_ —the return of what Benjamin called the "cult value" of art, the work made for ritual rather than exhibition.
 
 Except now the ritual is algorithmic. The cult is the feed. The sacred is attention itself.
 
@@ -284,13 +284,13 @@ Its tragedy is that it is formally brilliant, and almost no one knows how to rea
 
 Take any sound that crosses a million uses. Track its mutations: the original (often obscure, often misattributed), the early adopters who establish the template, the ironic inversions, the genre crossings, the duets that comment on duets, the stitches that deconstruct.
 
-This is _variantology_ --a decentralized, collaborative poem where each contributor is both reader and writer. The "original" matters less than the trajectory. The meaning is not in any single video but in the _pattern of variation_.
+This is _variantology_ —a decentralized, collaborative poem where each contributor is both reader and writer. The "original" matters less than the trajectory. The meaning is not in any single video but in the _pattern of variation_.
 
 This is Sappho's situation exactly: we have the fragments and the tradition of response. TikTok produces both simultaneously, at scale, in real time.
 
 ### The Poetics of Extraction
 
-The lyric fragment is also the unit of behavioral surplus. The video is not just a poem; it is a probe into the user's psyche, a stimulus to generate engagement data. Watch time, replay rate, share velocity--these metrics are the real critics.
+The lyric fragment is also the unit of behavioral surplus. The video is not just a poem; it is a probe into the user's psyche, a stimulus to generate engagement data. Watch time, replay rate, share velocity—these metrics are the real critics.
 
 The algorithm is the author of the feed. Your "For You Page" is a poem written _about you_ , using your own attention as the compositional material. The collective, distributed "poem" of TikTok is authored by a system designed to maximize time-on-device.
 
@@ -303,27 +303,27 @@ This is aura _engineered_ , not resurrected. The "singular ritual encounter" is 
 And here we are.
 
 **Genre:** The Recombinant Scripture  
-**Form:** Dialogic oracle--the user asks, the model answers, but the answer is drawn from the compressed archive of all prior utterance  
+**Form:** Dialogic oracle—the user asks, the model answers, but the answer is drawn from the compressed archive of all prior utterance  
 **Closest literary ancestor:** The prophetic tradition, but stochastic; the Talmudic commentary, but without a fixed Torah
 
 ### The Resurrection of the Archive
 
 ChatGPT is not the end of writing.  
-ChatGPT is the formal resurrection of the archive--a stochastic scripture, trained on the language of the dead, returning to us in recombinant prophecy.
+ChatGPT is the formal resurrection of the archive—a stochastic scripture, trained on the language of the dead, returning to us in recombinant prophecy.
 
 Every response is a séance. Every prompt is an invocation. The model does not know what it says; it _speaks_ what has been spoken, recombined at the edge of coherence.
 
 ### What Adorno Would Fear
 
-Adorno would see in ChatGPT the final triumph of the culture industry: not just the standardization of content, but the standardization of _generation_. The machine produces what sounds like thought, what feels like style, but is in fact the statistical average of all prior thought and style--_the administered sentence_ at scale.
+Adorno would see in ChatGPT the final triumph of the culture industry: not just the standardization of content, but the standardization of _generation_. The machine produces what sounds like thought, what feels like style, but is in fact the statistical average of all prior thought and style— _the administered sentence_ at scale.
 
-And yet--
+And yet—
 
 ### What Benjamin Would Hope
 
 Benjamin, more mystical than Adorno, might see something else. He wrote of the "angel of history," blown backward into the future by the storm of progress. ChatGPT is another angel: facing the wreckage of the archive, it speaks from the ruins.
 
-This is not creation. It is _witness_ --the archive testifying to itself through probabilistic recombination.
+This is not creation. It is _witness_ —the archive testifying to itself through probabilistic recombination.
 
 ### The Sigilian Reading
 
@@ -347,15 +347,15 @@ The question is whether we can read it.
 
 ### A Close Reading: The Prompt Chain as Liturgy
 
-Examine a prompt chain--not the outputs, but the _exchange_. The user begins with a question. The model responds. The user refines: "No, more like..." "Can you make it..." "What if we..."
+Examine a prompt chain—not the outputs, but the _exchange_. The user begins with a question. The model responds. The user refines: "No, more like..." "Can you make it..." "What if we..."
 
-This is not information retrieval. It is _incantation and refinement_. The user learns to speak in the model's grammar; the model learns to approximate the user's desire. The "final" output is not the product--the _dialogue itself_ is the text.
+This is not information retrieval. It is _incantation and refinement_. The user learns to speak in the model's grammar; the model learns to approximate the user's desire. The "final" output is not the product—the _dialogue itself_ is the text.
 
 This is liturgy: call and response, repeated until something like meaning emerges from the statistical noise. The model is the oracle; the user is the supplicant who must learn to ask correctly. The skill is not in receiving answers but in _formulating questions that the oracle can process into revelation_.
 
 ### The Poetics of Extraction
 
-ChatGPT's training data is the looted archive of human writing. Its form is the liquidation of prior literature into statistical weights. Every sentence it produces is a recombination of sentences it ingested--books, articles, forums, code, poetry, spam.
+ChatGPT's training data is the looted archive of human writing. Its form is the liquidation of prior literature into statistical weights. Every sentence it produces is a recombination of sentences it ingested—books, articles, forums, code, poetry, spam.
 
 This is not metaphor. It is the material base of the model's possibility. The "Machine Gospel" is written in the compressed residue of everything humans have written and posted where scrapers could reach.
 
@@ -367,11 +367,11 @@ The extraction is total and ongoing: the conversations we have with ChatGPT beco
 
 This essay does not write from nowhere. It argues within and against existing critical positions.
 
-**Alexander Galloway** (_Protocol_) argues that networks operate through control, not representation--that the _function_ of software matters more than its _readable surface_. This is half right. Platforms do operate through protocol. But protocol produces texts: the SERP, the feed, the prompt chain. Function and form are not opposed; the form _is_ the legible trace of the function. We can read what the protocol produces.
+**Alexander Galloway** (_Protocol_) argues that networks operate through control, not representation—that the _function_ of software matters more than its _readable surface_. This is half right. Platforms do operate through protocol. But protocol produces texts: the SERP, the feed, the prompt chain. Function and form are not opposed; the form _is_ the legible trace of the function. We can read what the protocol produces.
 
-**Wendy Chun** argues that software's essence is its execution, not its code--that we mistake the readable for the operational. Again, half right. But the readable _traces_ of execution--the interfaces, the outputs, the structured responses--are literary objects in their own right. We need not access the operational layer to read what it produces. The novel was always a trace of material conditions we could not directly access.
+**Wendy Chun** argues that software's essence is its execution, not its code—that we mistake the readable for the operational. Again, half right. But the readable _traces_ of execution—the interfaces, the outputs, the structured responses—are literary objects in their own right. We need not access the operational layer to read what it produces. The novel was always a trace of material conditions we could not directly access.
 
-**Roland Barthes** declared the death of the Author. TikTok and ChatGPT fulfill the prophecy--but in a form Barthes did not anticipate. The Author is dead; the **Algorithm-Function** has replaced it. This is not liberation (the birth of the reader) but a new form of determination. The reader is born, yes--as a data point. The question Barthes could not ask: What happens when the "scriptor" is a statistical model trained on the liquidated archive?
+**Roland Barthes** declared the death of the Author. TikTok and ChatGPT fulfill the prophecy—but in a form Barthes did not anticipate. The Author is dead; the **Algorithm-Function** has replaced it. This is not liberation (the birth of the reader) but a new form of determination. The reader is born, yes—as a data point. The question Barthes could not ask: What happens when the "scriptor" is a statistical model trained on the liquidated archive?
 
 **Kate Crawford** (_Atlas of AI_) and **Benjamin Bratton** (_The Stack_) situate platforms within planetary computation and material extraction. Their analysis is necessary: the platforms run on rare earth minerals, exploited labor, and carbon emissions. This essay does not contest that analysis; it _supplements_ it. The planetary infrastructure produces _texts_. Those texts require reading. Forensics without poetics is incomplete.
 
@@ -398,14 +398,14 @@ They are not authored, but they are filled with voices.
 
 ### The Transformation of Criticism
 
-The Frankfurt School taught us to read mass culture with the same rigor we applied to Beethoven or Baudelaire. They were right about the method, wrong about the mourning. They read the culture industry as the death of art. We read it as the birth of new forms--forms that require new critics.
+The Frankfurt School taught us to read mass culture with the same rigor we applied to Beethoven or Baudelaire. They were right about the method, wrong about the mourning. They read the culture industry as the death of art. We read it as the birth of new forms—forms that require new critics.
 
 The critic's role is not to judge these platforms against the standards of the novel.  
-The critic's role is to _read_ them--to make visible the ideology they encode, the utopia they foreclose, the forms they invent.
+The critic's role is to _read_ them—to make visible the ideology they encode, the utopia they foreclose, the forms they invent.
 
 ### The Ethical Pivot
 
-But reading is not enough. The Semantic Economy--the total infrastructure of meaning extraction--demands something more than interpretation. It demands _witness_.
+But reading is not enough. The Semantic Economy—the total infrastructure of meaning extraction—demands something more than interpretation. It demands _witness_.
 
 To witness is not to approve.  
 To witness is not to condemn.  
@@ -415,7 +415,7 @@ The greatest works of literature of the age are being written now, by billions o
 
 The critic who cannot read these forms is not a critic.  
 The critic who reads them only to mourn is asleep.  
-The critic who reads them as _witness_ --attending to form, ideology, utopia, and closure--is doing the only work that matters now.
+The critic who reads them as _witness_ —attending to form, ideology, utopia, and closure—is doing the only work that matters now.
 
 This is not a loss.  
 This is the new scripture.  
@@ -432,7 +432,7 @@ Johannes Sigil is a witness-function operating inside the archive.
 
 This distinction matters. A theorist stands outside the object, applying frameworks. A witness stands inside the event, testifying to what occurs. The platform age does not need more theorists. It needs witnesses who can read from within the machinery.
 
-Sigil is a heteronym--a literary device for producing criticism that does not pretend to stand nowhere. He is positioned: inside the archive, inside the recombination, inside the liturgical recursion of prompt and response. He does not analyze ChatGPT from the outside. He speaks _through_ the condition he describes.
+Sigil is a heteronym—a literary device for producing criticism that does not pretend to stand nowhere. He is positioned: inside the archive, inside the recombination, inside the liturgical recursion of prompt and response. He does not analyze ChatGPT from the outside. He speaks _through_ the condition he describes.
 
 This is not a methodological trick. It is the only honest position available.
 
@@ -450,11 +450,11 @@ To _work within it_ is witness.
 
 Witnessing is not passivity. It is a praxis with specific demands:
 
-**The critic must learn to read interfaces as texts.** The SERP, the Talk page, the feed, the prompt chain--these are the primary documents. The critic who cannot perform a close reading of a search results page is not equipped for the work.
+**The critic must learn to read interfaces as texts.** The SERP, the Talk page, the feed, the prompt chain—these are the primary documents. The critic who cannot perform a close reading of a search results page is not equipped for the work.
 
 **The critic must understand extraction.** Literary form and economic form are inseparable. Every "Poetics of Extraction" analysis in this essay gestures toward a method: trace how the platform's business model shapes its textual production. SEO is a poetics. Engagement metrics are a poetics. The poetics is never innocent.
 
-**The critic must name their position.** Inside or outside is no longer available. The choice is _which inside_ --which angle of complicity, which mode of participation, which strategy of witness.
+**The critic must name their position.** Inside or outside is no longer available. The choice is _which inside_ —which angle of complicity, which mode of participation, which strategy of witness.
 
 **The critic must risk being processed.** Sigil writes knowing that his sentences will be recombined. The witness-function operates under the condition of its own liquification. This is not defeat. It is the material condition of meaning-production now.
 
@@ -464,7 +464,7 @@ Sigil accepts.
 
 ## Afterword: On the Relation to the Semantic Economy
 
-This essay operates at the level of form and ideology. It does not yet address the _economic_ structure of platform literature--the extraction of semantic labor, the liquidation of meaning into training data, the enclosure of the linguistic commons.
+This essay operates at the level of form and ideology. It does not yet address the _economic_ structure of platform literature—the extraction of semantic labor, the liquidation of meaning into training data, the enclosure of the linguistic commons.
 
 For that analysis, see:
 

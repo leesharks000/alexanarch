@@ -28,7 +28,8 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from restore_from_blog import fetch, extract_post
 from legal_name import contains_legal_name  # hashed guard (b18dfa7c88)
 import html2text
-_H = html2text.HTML2Text(); _H.body_width = 0
+_H = html2text.HTML2Text(); _H.body_width = 0; _H.unicode_snob = True
+# unicode_snob (2026-10-15): html2text's default replaces entity-encoded characters with ASCII stand-ins (&#183; -> '*', &mdash; -> '--', curly quotes -> straight, accented letters -> bare); the published text keeps them.
 to_md = lambda h: _H.handle(h)
 # html2text escapes markdown-significant characters ("0\\.", "\\+"); the record renderer does not read escapes and
 # would show the backslash. Drop an escape unless the published HTML itself carries that sequence (2026-10-15).
