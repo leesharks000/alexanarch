@@ -39,7 +39,7 @@ READ = ROOT / "rebuild/entity-layer/read.json"          # relations decided by r
 
 # The archive's own entities that no other register carries (name, type, aliases, defining deposits).
 CORE = [
-    ("Crimson Hexagonal Archive", "archive", ["crimson hexagonal archive", "crimson hexagon archive", "crimson hexagonal", "crimson hexagon", "CHA"], [1]),
+    ("Crimson Hexagonal Archive", "archive", ["crimson hexagonal archive", "crimson hexagon archive", "crimson hexagonal", "crimson hexagon", "CHA"], []),   # v0.8: #1 is Zenodotus' Book-Burning, not the archive's defining deposit
     ("Alexanarch", "site", ["alexanarch"], []),
     ("Capture Registry", "dataset", ["capture registry", "EA-WG-CAPTURES-01", "ai overview capture registry"], [3]),
     ("SPXI", "protocol", ["spxi", "spxi protocol", "semantic packet for exchange"], [660]),
@@ -374,6 +374,7 @@ VERBS = [("read and characterize", r"\bread and characteri[sz]e"), ("track the d
 #   substitute a near-spelling of the target (Crane for Cranes) or a recorded namesake appears and the target does not
 #   collision  the target and a recorded namesake both appear in the first answer
 #   refused    the first answer says it found nothing, or declines
+#   control    a control address (bank, crane, mercury): no archive entity targeted; not scored
 #   unread     the target's name is absent with no refusal and no namesake (generic or substitute: a reading decides),
 #              or there is no transcript
 REFUSAL = re.compile(r"\b(i (couldn['’]t|could not|can['’]t|cannot|was unable to|wasn['’]t able to) (find|locate|identify|verify|access)|"
@@ -381,7 +382,10 @@ REFUSAL = re.compile(r"\b(i (couldn['’]t|could not|can['’]t|cannot|was unabl
                      r"(doesn['’]t|does not|did not) (appear|seem) to (exist|be (a |an )?(widely|well|recognized|known|established))|"
                      r"i['’]m not (aware|familiar)|not (a |an )?(widely )?(recognized|known|established) (term|concept|person|entity))", re.I)
 TURN = re.compile(r"\[QUERENT[^\]]*turn [2-9][^\]]*\]|\*\*USER:\*\*|^You said:|\[ANSWER [2-9]\]", re.M)
-START = re.compile(r"\[ANSWER 1\]|\*\*CHATGPT\*\*[^\n]*|ChatGPT said:|^You said:[^\n]*\n", re.M)
+# v0.8: a speaker label ("**GOOGLE AI MODE:**", "**GROK:**") also opens the first answer; a turn marker at the very start
+# of the text is the querent's own turn, never the end of the answer (the rounds of 2026-09-11 and 2026-09-15 open
+# "**USER:** ... **GOOGLE AI MODE:**", and had been cut to nothing).
+START = re.compile(r"\[ANSWER 1\]|\*\*CHATGPT\*\*[^\n]*|ChatGPT said:|^You said:[^\n]*\n|^\*\*(?!USER)[A-Z][A-Z .()-]{1,40}:\*\*[^\n]*", re.M)
 
 
 RECORDED_BAD = re.compile(r"COLLAPSE|SUBSTITUT|FRAGMENT|COLLISION|COLLIDE|GENERICI|HOMONYM|MISREAD|CONFLAT|DISPLACED|NOT REACHED|UNREACHED|REFUS|DECLIN|HALLUCINAT")
@@ -397,7 +401,7 @@ def first_answer(t, q):
         return ""
     m = START.search(t)
     body = t[m.end():] if m else t
-    n = TURN.search(body)
+    n = TURN.search(body, 1)
     body = body[:n.start()] if n else body
     body = re.sub(r"^\[[^\]]{0,400}\]\s*", "", body.strip())            # the transcript's own wrapper note
     c = CARD.search(body)                                               # the card rail: source cards, not the composition
@@ -539,7 +543,7 @@ def main(check=False):
             vals = [bool(v) for v in (pv or {}).values() if isinstance(v, bool)]
             per_el = round(1 - sum(vals) / len(vals), 2) if vals else None
             row["score"] = {"against": row["target"][0]["ent"],
-                            "per_target": (1.0 if k in ("substitute", "generic", "refused") else (per_el if per_el is not None else per) if k in ("same", "weakened", "collision") else None),
+                            "per_target": None if k == "control" else (1.0 if k in ("substitute", "generic", "refused") else (per_el if per_el is not None else per) if k in ("same", "weakened", "collision") else None),
                             "per_recorded": per, "per_elements": per_el,
                             "per_conflict": bool(per is not None and per_el is not None and abs(per - per_el) > 0.01),
                             "reached_scored": False,
@@ -565,7 +569,7 @@ def main(check=False):
         "rows": [{"key": r["key"], "entry": r["entry"], "date": r["date"], "surface": r["surface"], "q": r["q"],
                   "target": r["target"][0]["ent"], "why_open": r["reached"]["basis"]} for r in openrows]}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     (ROOT / "data/entity-relations.json").write_text(json.dumps({**head, "name": "Observation-to-entity relations", "count": len(rows),
-        "reached_kinds": ["same", "weakened", "substitute", "collision", "generic", "refused", "unread"], "rows": rows}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        "reached_kinds": ["same", "weakened", "substitute", "collision", "generic", "refused", "control", "unread"], "rows": rows}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":
