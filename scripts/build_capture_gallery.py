@@ -874,6 +874,36 @@ def main():
             _mk = '<div id="captures">'
         if _mk in page:
             page = page.replace(_mk, cur + "\n" + _mk, 1)
+    # THE COMPLETE INDEX, EARLY (2026-10-15). The page is ~12.6 MB of HTML and Googlebot reads the first
+    # 2 MB of an HTML resource (Google, "Inside Googlebot", March 2026); links to only 108 of the 666 capture
+    # records fell inside that prefix, the rest beyond where the crawler stops. One plain-HTML row per
+    # address — the issued query, its record page, dates, surfaces — sits directly under the canonical
+    # statement, ahead of the data-flow notes and the cards, so every record is linked within the first
+    # ~0.25 MB. Collapsed for a reader; ordinary markup for a fetcher. Same A–Z order as the cards. Each row
+    # links the capture's own record page (/captures/{slug}/, cf. build_capture_records.record_url) and its
+    # card on this page (#slug). The cards, their anchors and the record pages are untouched.
+    IDX_B, IDX_E = "<!-- CAP-INDEX-BEGIN -->", "<!-- CAP-INDEX-END -->"
+    page = re.sub(re.escape(IDX_B) + r".*?" + re.escape(IDX_E) + r"\n?", "", page, flags=re.S)
+    _rows = []
+    for e in entries:
+        _slug = e.get("slug") or ""
+        _ds = sorted({str(x) for x in (e.get("dates") or [e.get("date")]) if x})
+        _sf = [str(x) for x in (e.get("surfaces") or [e.get("surface")]) if x]
+        _dt = _ds[0] if len(_ds) < 2 else f"{_ds[0]} – {_ds[-1]} ({len(_ds)})"
+        _rows.append(f'<li><a href="/captures/{html.escape(_slug)}/">{html.escape(str(e.get("q") or _slug))}</a>'
+                     f' <span class="ci-m">{html.escape(_dt)} · {html.escape(", ".join(dict.fromkeys(_sf)))}'
+                     f' · <a href="#{html.escape(_slug)}">card</a></span></li>')
+    cap_index = (f'{IDX_B}\n<details id="cap-index" style="font-size:.88em;margin:0 0 12px">'
+                 f'<summary><b>Index of all {len(entries)} addresses</b> — each links its record page '
+                 f'(<code>/captures/{{slug}}/</code>) and its card below</summary>'
+                 f'<style>#cap-index ol{{margin:8px 0 0 1.4em;padding:0;line-height:1.5}}'
+                 f'#cap-index .ci-m{{color:var(--dim);font-size:.9em}}</style>'
+                 f'<ol>' + "".join(_rows) + f'</ol></details>\n{IDX_E}\n')
+    for _mk in ('<details id="capture-flow"', '<div class="stats" id="stats">', '<div id="captures">'):
+        if _mk in page:
+            page = page.replace(_mk, cap_index + _mk, 1)
+            break
+
     # TITLE AND DESCRIPTION FROM THE DATA (2026-10-01). The title carried a name nobody searches
     # ("AI Overview Captures") and the description counts frozen at 453 / 401.
     page = re.sub(r'<title>.*?</title>', '<title>AI Overview Capture Registry (EA-WG-CAPTURES-01) — canonical record — Alexanarch</title>', page, count=1, flags=re.S)
