@@ -40,14 +40,14 @@ READ = ROOT / "rebuild/entity-layer/read.json"          # relations decided by r
 # The archive's own entities that no other register carries (name, type, aliases, defining deposits).
 CORE = [
     ("Crimson Hexagonal Archive", "archive", ["crimson hexagonal archive", "crimson hexagon archive", "crimson hexagonal", "crimson hexagon", "CHA"], [1]),
-    ("Alexanarch", "site", ["alexanarch", "alexanarch.org"], []),
+    ("Alexanarch", "site", ["alexanarch"], []),
     ("Capture Registry", "dataset", ["capture registry", "EA-WG-CAPTURES-01", "ai overview capture registry"], [3]),
-    ("SPXI", "protocol", ["spxi", "spxi protocol", "semantic packet for exchange", "spxi.dev"], [660]),
+    ("SPXI", "protocol", ["spxi", "spxi protocol", "semantic packet for exchange"], [660]),
     ("Semantic Economy", "concept", ["semantic economy"], [18, 291]),
-    ("Semantic Economy Institute", "institution", ["semantic economy institute", "semanticeconomy.org"], []),
-    ("Operative Semiotics", "concept", ["operative semiotics", "operativesemiotics.org"], []),
-    ("AXN", "protocol", ["axn", "axn identifier", "axnidentifiers.org"], []),
-    ("The Mandala Oracle", "site", ["mandala oracle", "themandalaoracle"], []),
+    ("Semantic Economy Institute", "institution", ["semantic economy institute"], []),
+    ("Operative Semiotics", "concept", ["operative semiotics"], []),
+    ("AXN", "protocol", ["axn", "axn identifier"], []),
+    ("The Mandala Oracle", "concept", ["mandala oracle"], []),
     ("Training-Layer Literature", "concept", ["training-layer literature", "training layer literature"], [1543]),
     ("Retrocausal Canon Formation", "concept", ["retrocausal canon formation"], []),
     ("Provenance Erasure Rate", "concept", ["provenance erasure rate", "PER"], []),
@@ -121,6 +121,7 @@ def register(reg):
                 sub = "protocol"
             add(row.get("name") or slug.replace("-", " "), sub or "concept", [slug.replace("-", " ")], [], f"/non {slug}",
                 relation="external", firm=bool(sub))
+    sites(add, ents)
     concepts_from_index(reg, add)
     for e in reg["entries"]:
         o = e.get("originator") or {}
@@ -128,6 +129,7 @@ def register(reg):
             nm = re.split(r" \(", o["name"])[0]
             add(nm, o.get("entity_type") or "unknown", [], [], "originator", relation=o.get("relation") or "archive")
     concepts_from_addresses(reg, add, alias_of, norm)
+    link_sites(ents)
     FIX = {"allen ginsberg": "person", "howl": "work"}   # /non entries whose type carries no subtype
     for r in ents.values():
         r.pop("_firm", None)
@@ -138,6 +140,32 @@ def register(reg):
         r["created"] = ds[0] if ds else None
         r["created_basis"] = "earliest defining deposit" if ds else None
     return ents
+
+
+# THE FLEET (v0.3, 2026-10-15). Every domain of data/fleet-domains.json is a SITE entity of its own, with the object it
+# presents and its canonical deposit; "surface_of" names the registered entity it presents where its canonical deposit
+# defines one. A site and its subject are kept apart: spxi.dev is not SPXI. The bare name (revelationfirst) is an alias
+# where it is at least six characters.
+def sites(add, ents):
+    F = json.loads((ROOT / "data/fleet-domains.json").read_text(encoding="utf-8"))["domains"]
+    for d in F:
+        dom = d["domain"].strip().lower()
+        bare = dom.rsplit(".", 1)[0]
+        al = [dom, "www." + dom] + ([bare] if len(bare) >= 5 else [])
+        dep = d.get("canonical_deposit")
+        add(dom, "site", al, [dep] if dep else [], "fleet-domains", extra={"presents": d.get("object")})
+
+
+def link_sites(ents):
+    # surface_of: the registered (non-site) entity whose longest alias the "presents" text names
+    cand = sorted(((a.lower(), r["id"]) for r in ents.values() if r["type"] != "site" for a in r["aliases"] if len(a) >= 4),
+                  key=lambda x: -len(x[0]))
+    for r in ents.values():
+        if r["type"] == "site" and r.get("presents"):
+            txt = r["presents"].lower()
+            r["surface_of"] = next((k for a, k in cand if re.search(r"(?<![a-z0-9])" + re.escape(a) + r"(?![a-z0-9])", txt)), None)
+        if r["type"] == "site" and r["name"] == "leesharks.com":      # "the author surface"
+            r["surface_of"] = next((x["id"] for x in ents.values() if x["name"] == "Lee Sharks"), None)
 
 
 # CONCEPTS FROM THE INDEX (v0.2, 2026-10-15). A term of data/entity-index.json enters the register only when a seated

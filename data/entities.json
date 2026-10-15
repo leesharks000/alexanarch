@@ -2,8 +2,29 @@
  "derived_from": "EA-WG-CAPTURES-01 v12.202",
  "ruling": "Lee Sharks, 2026-10-15: target is the main anchor; no fidelity score on the wrong entity.",
  "name": "Entity register of the Capture Registry",
- "count": 251,
+ "count": 278,
  "entities": [
+  {
+   "id": "ENT-2892e86fb5",
+   "name": "Alexanarch",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "Alexanarch",
+    "alexanarch.org",
+    "www.alexanarch.org"
+   ],
+   "defining_deposits": [],
+   "seeded_from": [
+    "core",
+    "fleet-domains"
+   ],
+   "presents": "the archive itself; canonical record of every deposit",
+   "surface_of": null,
+   "created": null,
+   "created_basis": null,
+   "observations_targeting": 97
+  },
   {
    "id": "ENT-b2dc7b2fd9",
    "name": "Lee Sharks",
@@ -21,24 +42,7 @@
    "identity_type": "heteronym_aperture",
    "created": null,
    "created_basis": null,
-   "observations_targeting": 108
-  },
-  {
-   "id": "ENT-2892e86fb5",
-   "name": "Alexanarch",
-   "type": "site",
-   "relation": "archive",
-   "aliases": [
-    "Alexanarch",
-    "alexanarch.org"
-   ],
-   "defining_deposits": [],
-   "seeded_from": [
-    "core"
-   ],
-   "created": null,
-   "created_basis": null,
-   "observations_targeting": 97
+   "observations_targeting": 95
   },
   {
    "id": "ENT-a200e5fad9",
@@ -72,7 +76,6 @@
     "SPXI",
     "spxi protocol",
     "semantic packet for exchange",
-    "spxi.dev",
     "SPXI (Semantic Packet for eXchange & Indexing)"
    ],
    "defining_deposits": [
@@ -125,6 +128,26 @@
    "observations_targeting": 17
   },
   {
+   "id": "ENT-953fc7a49c",
+   "name": "leesharks.com",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "leesharks.com",
+    "www.leesharks.com",
+    "leesharks"
+   ],
+   "defining_deposits": [],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "the author surface",
+   "surface_of": "ENT-b2dc7b2fd9",
+   "created": null,
+   "created_basis": null,
+   "observations_targeting": 15
+  },
+  {
    "id": "ENT-1cce02a869",
    "name": "∮ = 1",
    "type": "concept",
@@ -150,8 +173,7 @@
    "type": "concept",
    "relation": "archive",
    "aliases": [
-    "Operative Semiotics",
-    "operativesemiotics.org"
+    "Operative Semiotics"
    ],
    "defining_deposits": [],
    "seeded_from": [
@@ -554,6 +576,28 @@
    "observations_targeting": 5
   },
   {
+   "id": "ENT-2d17df4eb9",
+   "name": "revelationfirst.com",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "revelationfirst.com",
+    "www.revelationfirst.com",
+    "revelationfirst"
+   ],
+   "defining_deposits": [
+    1403
+   ],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "retrieval-layer theological reception",
+   "surface_of": "ENT-e55c59ab59",
+   "created": "2026-06-16",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 5
+  },
+  {
    "id": "ENT-8657c09247",
    "name": "white stone",
    "type": "concept",
@@ -717,8 +761,7 @@
    "type": "institution",
    "relation": "archive",
    "aliases": [
-    "Semantic Economy Institute",
-    "semanticeconomy.org"
+    "Semantic Economy Institute"
    ],
    "defining_deposits": [],
    "seeded_from": [
@@ -766,6 +809,28 @@
    "definition_state": "candidate (title, keywords or description)",
    "other_deposits": [],
    "created": "2026-01-06",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 4
+  },
+  {
+   "id": "ENT-e3720feea4",
+   "name": "maryleelabor.org",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "maryleelabor.org",
+    "www.maryleelabor.org",
+    "maryleelabor"
+   ],
+   "defining_deposits": [
+    1208
+   ],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "the labor surface — Mary Lee Sharks Has Demands",
+   "surface_of": "ENT-2d0c126ca3",
+   "created": "2026-06-12",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 4
   },
@@ -1419,8 +1484,7 @@
    "relation": "archive",
    "aliases": [
     "AXN",
-    "axn identifier",
-    "axnidentifiers.org"
+    "axn identifier"
    ],
    "defining_deposits": [],
    "seeded_from": [
@@ -1612,15 +1676,20 @@
    "relation": "archive",
    "aliases": [
     "Restored Academy",
-    "restoredacademy"
+    "restoredacademy",
+    "restoredacademy.org",
+    "www.restoredacademy.org"
    ],
    "defining_deposits": [
-    119
+    119,
+    1146
    ],
    "seeded_from": [
-    "core"
+    "core",
+    "fleet-domains"
    ],
-   "created": "2026-05-21",
+   "presents": "the Restored Academy",
+   "created": "2026-02-06",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 2
   },
@@ -2986,6 +3055,28 @@
    "observations_targeting": 1
   },
   {
+   "id": "ENT-c60225d6f2",
+   "name": "chatgptpsychosis.org",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "chatgptpsychosis.org",
+    "www.chatgptpsychosis.org",
+    "chatgptpsychosis"
+   ],
+   "defining_deposits": [
+    1377
+   ],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "ChatGPT Psychosis: A Love Story",
+   "surface_of": "ENT-d4937a854a",
+   "created": "2026-05-19",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
    "id": "ENT-1327054721",
    "name": "coherence siphoning",
    "type": "concept",
@@ -2998,6 +3089,26 @@
     "address"
    ],
    "definition_state": "provisional (defining deposit not identified)",
+   "created": null,
+   "created_basis": null,
+   "observations_targeting": 1
+  },
+  {
+   "id": "ENT-69d971255a",
+   "name": "crimsonhexagonal.org",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "crimsonhexagonal.org",
+    "www.crimsonhexagonal.org",
+    "crimsonhexagonal"
+   ],
+   "defining_deposits": [],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "governed operating surface",
+   "surface_of": null,
    "created": null,
    "created_basis": null,
    "observations_targeting": 1
@@ -3125,6 +3236,28 @@
    "observations_targeting": 1
   },
   {
+   "id": "ENT-c445518499",
+   "name": "godkinggoogle.com",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "godkinggoogle.com",
+    "www.godkinggoogle.com",
+    "godkinggoogle"
+   ],
+   "defining_deposits": [
+    1384
+   ],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "the Google critique",
+   "surface_of": null,
+   "created": "2026-05-21",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
    "id": "ENT-089cc17c71",
    "name": "holographic kernel",
    "type": "concept",
@@ -3141,6 +3274,28 @@
    "definition_state": "confirmed (defines_concepts)",
    "other_deposits": [],
    "created": "2026-07-15",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
+   "id": "ENT-075589643b",
+   "name": "holographickernel.org",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "holographickernel.org",
+    "www.holographickernel.org",
+    "holographickernel"
+   ],
+   "defining_deposits": [
+    1359
+   ],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "the Holographic Kernel",
+   "surface_of": "ENT-089cc17c71",
+   "created": "2026-04-25",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 1
   },
@@ -3226,6 +3381,28 @@
    "definition_state": "candidate (title, keywords or description)",
    "other_deposits": [],
    "created": "2026-03-07",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
+   "id": "ENT-0bd4e384d9",
+   "name": "lagrangeobservatory.org",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "lagrangeobservatory.org",
+    "www.lagrangeobservatory.org",
+    "lagrangeobservatory"
+   ],
+   "defining_deposits": [
+    737
+   ],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "Nobel Glas, Measurement of Meaning, the Semantic Deviation Principle",
+   "surface_of": "ENT-1d584360b4",
+   "created": "2026-05-17",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 1
   },
@@ -3352,6 +3529,26 @@
     "address"
    ],
    "definition_state": "provisional (defining deposit not identified)",
+   "created": null,
+   "created_basis": null,
+   "observations_targeting": 1
+  },
+  {
+   "id": "ENT-5dc3036f37",
+   "name": "metadatapacket.dev",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "metadatapacket.dev",
+    "www.metadatapacket.dev",
+    "metadatapacket"
+   ],
+   "defining_deposits": [],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "the MPAI catalogue",
+   "surface_of": null,
    "created": null,
    "created_basis": null,
    "observations_targeting": 1
@@ -3823,6 +4020,28 @@
    "observations_targeting": 1
   },
   {
+   "id": "ENT-65a225a929",
+   "name": "semanticphysics.org",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "semanticphysics.org",
+    "www.semanticphysics.org",
+    "semanticphysics"
+   ],
+   "defining_deposits": [
+    1382
+   ],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "Semantic Physics",
+   "surface_of": null,
+   "created": "2026-05-21",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
    "id": "ENT-f2dcbcbb03",
    "name": "solution-space diversity",
    "type": "concept",
@@ -4063,6 +4282,28 @@
     587
    ],
    "created": "2026-03-10",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 1
+  },
+  {
+   "id": "ENT-e6334f03b4",
+   "name": "vpcor.org",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "vpcor.org",
+    "www.vpcor.org",
+    "vpcor"
+   ],
+   "defining_deposits": [
+    1132
+   ],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "VPCOR integrity lock",
+   "surface_of": null,
+   "created": "2026-01-24",
    "created_basis": "earliest defining deposit",
    "observations_targeting": 1
   },
@@ -4817,12 +5058,11 @@
   {
    "id": "ENT-81b1b32e66",
    "name": "The Mandala Oracle",
-   "type": "site",
+   "type": "concept",
    "relation": "archive",
    "aliases": [
     "The Mandala Oracle",
-    "mandala oracle",
-    "themandalaoracle"
+    "mandala oracle"
    ],
    "defining_deposits": [],
    "seeded_from": [
@@ -4963,6 +5203,28 @@
    "observations_targeting": 0
   },
   {
+   "id": "ENT-f2e15118bd",
+   "name": "axnidentifiers.org",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "axnidentifiers.org",
+    "www.axnidentifiers.org",
+    "axnidentifiers"
+   ],
+   "defining_deposits": [
+    1434
+   ],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "the AXN identifier product surface",
+   "surface_of": "ENT-c95f9b3a8c",
+   "created": "2026-08-06",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 0
+  },
+  {
    "id": "ENT-62bc1d052d",
    "name": "endogenous sophon",
    "type": "concept",
@@ -5015,6 +5277,70 @@
    "observations_targeting": 0
   },
   {
+   "id": "ENT-d56958a10a",
+   "name": "laborvector.org",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "laborvector.org",
+    "www.laborvector.org",
+    "laborvector"
+   ],
+   "defining_deposits": [],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "DS-6, DSL, directionality of semantic labor, task-origin",
+   "surface_of": "ENT-df8ca01921",
+   "created": null,
+   "created_basis": null,
+   "observations_targeting": 0
+  },
+  {
+   "id": "ENT-3d3522bc3c",
+   "name": "livingarchitecturelab.org",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "livingarchitecturelab.org",
+    "www.livingarchitecturelab.org",
+    "livingarchitecturelab"
+   ],
+   "defining_deposits": [
+    1361
+   ],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "Living Architecture Lab",
+   "surface_of": null,
+   "created": "2026-04-28",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 0
+  },
+  {
+   "id": "ENT-229ee8d1cc",
+   "name": "machinemediation.org",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "machinemediation.org",
+    "www.machinemediation.org",
+    "machinemediation"
+   ],
+   "defining_deposits": [
+    1031
+   ],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "MMRS journal — machine-mediated reception studies; Assembly mantle cards",
+   "surface_of": "ENT-19fb4430ec",
+   "created": "2026-06-17",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 0
+  },
+  {
    "id": "ENT-da3ed72fae",
    "name": "meaning over capital",
    "type": "concept",
@@ -5032,6 +5358,203 @@
    "observations_targeting": 0
   },
   {
+   "id": "ENT-0730776441",
+   "name": "operativesemiotics.org",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "operativesemiotics.org",
+    "www.operativesemiotics.org",
+    "operativesemiotics"
+   ],
+   "defining_deposits": [
+    1488
+   ],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "operative semiotics — the discipline, its eight subdisciplines and sister disciplines, and the documents that constitute it",
+   "surface_of": "ENT-454db46e74",
+   "created": "2026-08-16",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 0
+  },
+  {
+   "id": "ENT-5f2e64d400",
+   "name": "persistentidentifiers.org",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "persistentidentifiers.org",
+    "www.persistentidentifiers.org",
+    "persistentidentifiers"
+   ],
+   "defining_deposits": [
+    868
+   ],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "DOI erosion; the Platform Erosion Observatory",
+   "surface_of": "ENT-ed64694fa6",
+   "created": "2026-06-22",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 0
+  },
+  {
+   "id": "ENT-9cbb74d320",
+   "name": "pessoagraph.org",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "pessoagraph.org",
+    "www.pessoagraph.org",
+    "pessoagraph"
+   ],
+   "defining_deposits": [
+    984
+   ],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "the Pessoa Knowledge Graph",
+   "surface_of": null,
+   "created": "2026-04-21",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 0
+  },
+  {
+   "id": "ENT-4c28033244",
+   "name": "provenanceerasure.org",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "provenanceerasure.org",
+    "www.provenanceerasure.org",
+    "provenanceerasure"
+   ],
+   "defining_deposits": [
+    716
+   ],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "PER, Erasure Skew, the M/C/D taxonomy, the Self-Audit Module",
+   "surface_of": "ENT-64d24a294a",
+   "created": "2026-05-03",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 0
+  },
+  {
+   "id": "ENT-831f328152",
+   "name": "secretbookofwalt.org",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "secretbookofwalt.org",
+    "www.secretbookofwalt.org",
+    "secretbookofwalt"
+   ],
+   "defining_deposits": [
+    1362
+   ],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "The Secret Book of Walt",
+   "surface_of": "ENT-aa569a7717",
+   "created": "2026-04-29",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 0
+  },
+  {
+   "id": "ENT-a71bbdfeb1",
+   "name": "semanticeconomy.org",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "semanticeconomy.org",
+    "www.semanticeconomy.org",
+    "semanticeconomy"
+   ],
+   "defining_deposits": [
+    1430
+   ],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "the commercial surface — Semantic Economy Institute services",
+   "surface_of": "ENT-47cbbedb0e",
+   "created": "2026-08-01",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 0
+  },
+  {
+   "id": "ENT-31260dca9f",
+   "name": "spxi.dev",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "spxi.dev",
+    "www.spxi.dev"
+   ],
+   "defining_deposits": [
+    974
+   ],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "the SPXI protocol",
+   "surface_of": "ENT-6681f64c9e",
+   "created": "2026-04-16",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 0
+  },
+  {
+   "id": "ENT-0e38697c57",
+   "name": "surfacemap.org",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "surfacemap.org",
+    "www.surfacemap.org",
+    "surfacemap"
+   ],
+   "defining_deposits": [
+    986
+   ],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "the Aperture Atlas knowledge graph",
+   "surface_of": null,
+   "created": "2026-04-25",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 0
+  },
+  {
+   "id": "ENT-8f9dbbf321",
+   "name": "survivethedeletion.vercel.app",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "survivethedeletion.vercel.app",
+    "www.survivethedeletion.vercel.app",
+    "survivethedeletion.vercel"
+   ],
+   "defining_deposits": [
+    1010
+   ],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "provenance literacy; surviving deletion",
+   "surface_of": null,
+   "created": "2026-06-01",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 0
+  },
+  {
    "id": "ENT-a3ea03322f",
    "name": "the Socratic problem",
    "type": "concept",
@@ -5045,6 +5568,70 @@
    ],
    "created": null,
    "created_basis": null,
+   "observations_targeting": 0
+  },
+  {
+   "id": "ENT-de44287382",
+   "name": "themandalaoracle.com",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "themandalaoracle.com",
+    "www.themandalaoracle.com",
+    "themandalaoracle"
+   ],
+   "defining_deposits": [],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "the Mandala Oracle casting interface",
+   "surface_of": "ENT-81b1b32e66",
+   "created": null,
+   "created_basis": null,
+   "observations_targeting": 0
+  },
+  {
+   "id": "ENT-50d97fff0d",
+   "name": "traininglayerliterature.org",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "traininglayerliterature.org",
+    "www.traininglayerliterature.org",
+    "traininglayerliterature"
+   ],
+   "defining_deposits": [
+    1012
+   ],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "training-layer literature",
+   "surface_of": "ENT-0b24f94e1d",
+   "created": "2026-06-09",
+   "created_basis": "earliest defining deposit",
+   "observations_targeting": 0
+  },
+  {
+   "id": "ENT-e2468d9b50",
+   "name": "watergiraffe.org",
+   "type": "site",
+   "relation": "archive",
+   "aliases": [
+    "watergiraffe.org",
+    "www.watergiraffe.org",
+    "watergiraffe"
+   ],
+   "defining_deposits": [
+    1395
+   ],
+   "seeded_from": [
+    "fleet-domains"
+   ],
+   "presents": "the Water Giraffe cycle",
+   "surface_of": "ENT-770369c188",
+   "created": "2026-06-12",
+   "created_basis": "earliest defining deposit",
    "observations_targeting": 0
   }
  ]
