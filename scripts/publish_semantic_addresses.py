@@ -26,7 +26,11 @@ Design:
     - Full alphabetical list of all addresses with links
     - Grouped by observation_class
 
-Sitemap update: adds all N address URLs alongside the existing /addresses/.
+Sitemap update (2026-10-15, Lee's ruling): per-address pages are NOT submitted and are served
+noindex,follow. "i dont see that they need separate indexing at all." Search Console held 2,420
+address URLs against 45 indexed; they spent the crawl on the lowest-value pages while 6,675 URLs
+sat discovered-not-fetched. The pages stay published, linked and followed (they carry links to
+records and captures); only /addresses/ itself remains in sitemap.xml and indexable.
 """
 from __future__ import annotations
 
@@ -249,6 +253,8 @@ def render_address_page(slug: str, addr: dict, related_deposits: list[int],
         f'<meta name="description" content="Semantic address {esc(display_query)}. {esc(obs_class_label)}. Canonical retrieval query in the Alexanarch archive.">'
         f'<script type="application/ld+json">{json.dumps(jsonld)}</script>'
         f'<link rel="canonical" href="{page_url}">'
+        # 2026-10-15: not separately indexed (see module docstring); links are still followed.
+        '<meta name="robots" content="noindex,follow">'
         f'<meta name="citation_title" content="Semantic address: {esc(display_query)}">'
         '<meta name="citation_author" content="Lee Sharks">'
         '<meta name="citation_journal_title" content="Alexanarch">'
@@ -420,7 +426,7 @@ def render_index_page(addresses: dict, slug_map: dict) -> str:
 
 
 def update_sitemap(slug_map: dict) -> None:
-    """Add /addresses/{slug}/ URLs to sitemap.xml, replacing prior address URLs."""
+    """Strip /addresses/{slug}/ URLs from sitemap.xml (they are noindex; /addresses/ itself stays)."""
     if not SITEMAP.exists():
         print(f"  ! sitemap not found at {SITEMAP}")
         return
@@ -441,34 +447,11 @@ def update_sitemap(slug_map: dict) -> None:
         txt,
     )
 
-    # Inject new URLs immediately after the /addresses/ line
-    addr_index_re = re.compile(
-        r"(<url><loc>https://(?:www\.)?alexanarch\.org/addresses/</loc>[^\n]*</url>)"
-    )
-    m = addr_index_re.search(txt)
-    if not m:
-        # Fallback: append before </urlset>
-        insertion_point = txt.rfind("</urlset>")
-        header = txt[:insertion_point]
-        tail = txt[insertion_point:]
-    else:
-        header = txt[:m.end()]
-        tail = txt[m.end():]
-
-    lines = []
-    for slug in sorted(set(slug_map.values())):
-        lines.append(
-            # www: the canonical host every address page declares (the apex 308-redirects to it)
-            f'  <url><loc>https://www.alexanarch.org/addresses/{slug}/</loc>'
-            f'<changefreq>weekly</changefreq><priority>0.6</priority></url>'
-        )
-    injection = "\n" + "\n".join(lines) + "\n"
-
-    # 2026-09-25: the strip above removes the address lines but not the line breaks around them, and the
-    # injection adds its own, so every run grew the sitemap by one blank line. Normalise the seam instead.
-    new_txt = header.rstrip("\n") + "\n" + injection + tail.lstrip("\n")
-    SITEMAP.write_text(new_txt, encoding="utf-8")
-    print(f"  ✓ sitemap.xml updated: {len(slug_map)} address URLs")
+    # 2026-10-15: nothing is injected. Per-address pages are noindex and a sitemap lists only
+    # pages that ask to be indexed (the 2026-09-06 rule in regenerate_sitemap). The strip above
+    # stays, so a sitemap that still carries address lines is cleaned on the next run.
+    SITEMAP.write_text(txt, encoding="utf-8")
+    print(f"  ✓ sitemap.xml: per-address URLs not submitted ({len(slug_map)} pages served noindex,follow)")
 
 
 N_ADDRESSES = 0  # set in main(); the footer and index state the live count (was a hard-coded 1,995)

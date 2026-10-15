@@ -164,7 +164,13 @@ machine index: <a href="/api/axn-index.json">/api/axn-index.json</a></p>
               open(ROOT/'data/api/axn-index.json','w'), ensure_ascii=False, separators=(",",":"))
     with open(ROOT/'sitemap-axn.xml','w') as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
-        for hx in sorted(idx): f.write(f'  <url><loc>https://www.alexanarch.org/s/axn/{hx}/</loc></url>\n')
+        # 2026-10-15: <lastmod> added. The AXN page changes when its record changes, so it carries the
+        # record's own last modification (record_modification.last_modified: date_modified, else the
+        # deposit date); a disambiguation page carries the latest of its records. Never the run date.
+        for hx in sorted(idx):
+            lm = max(((e.get('date_modified') or e.get('date') or '')[:10] for e in byhex[hx]), default='')
+            lm_tag = f'<lastmod>{lm}</lastmod>' if lm else ''
+            f.write(f'  <url><loc>https://www.alexanarch.org/s/axn/{hx}/</loc>{lm_tag}</url>\n')
         f.write('</urlset>\n')
     print(f"axn resolver: {len(idx)} hexes ({sum(1 for v in idx.values() if v.get('disambiguation'))} disambiguation)")
 

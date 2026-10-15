@@ -42,7 +42,7 @@ def main():
         e = m.get('envelope') or {}
         if m.get('axn') in by_axn and m.get('dead_doi') and e.get('archive_membership') in ('confirmed', 'probable') and e.get('identifier_validity') in STATE and e.get('relationship') in REL:
             rows.append(m)
-    urls = []; built = 0
+    urls = []; built = 0; lastmods = {}
     for m in rows:
         doi = m['dead_doi'].strip(); d = by_axn[m['axn']]; n = d['deposit_number']
         path = f"/s/doi/{doi}/"; can = BASE + path; rec = f"{BASE}/s/records/{n}/"
@@ -95,12 +95,17 @@ def main():
         p = ROOT / path.lstrip('/')
         if not check:
             p.mkdir(parents=True, exist_ok=True); (p/'index.html').write_text(body, encoding='utf-8')
-        urls.append(can); built += 1
+        # 2026-10-15: per-URL <lastmod>. The page says what the record says and what the DOI's state was
+        # last verified as, so it changes when either does: the later of the record's last modification
+        # and the envelope's last_verified. Was the run date on all 1,783 URLs.
+        lm = max([x for x in ((d.get('date_modified') or d.get('date') or '')[:10],
+                              str(e.get('last_verified') or '')[:10]) if x], default='')
+        urls.append(can); lastmods[can] = lm; built += 1
     if check:
         ok = all((ROOT/u[len(BASE)+1:]/'index.html').exists() for u in urls)
         print(f"doi-shadow --check: {len(rows)} mappings with live records; pages on disk: {'ok' if ok else 'MISSING'}"); return 0 if ok else 1
     today = datetime.date.today().isoformat()
-    xml = ['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'] + [f'  <url><loc>{u}</loc><lastmod>{today}</lastmod><priority>0.5</priority></url>' for u in urls] + ['</urlset>']
+    xml = ['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'] + [f'  <url><loc>{u}</loc>' + (f'<lastmod>{lastmods[u]}</lastmod>' if lastmods.get(u) else '') + '<priority>0.5</priority></url>' for u in urls] + ['</urlset>']
     (ROOT/'sitemap-doi.xml').write_text('\n'.join(xml)+'\n')
     (ROOT/'data/doi-shadow-urls.json').write_text(json.dumps({"generated": today, "count": len(urls), "urls": urls}, indent=1))
     print(f"  ✓ doi shadow pages: {built} of {len(idx.get('mappings',[]))} mappings — pages only for DOIs the index verified (tombstone / registered-withdrawn / erased) AND whose archive membership is confirmed or probable; rejected (other author, collision), unresolved, unverified and fragment DOIs get no page → sitemap-doi.xml")

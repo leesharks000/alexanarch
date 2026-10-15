@@ -256,14 +256,16 @@ def update_sitemap(dataset_names: list[str]) -> None:
 
     # Strip any prior per-dataset URLs (dedup for re-runs)
     txt = re.sub(
-        r"[ \t]*<url><loc>https://alexanarch\.org/datasets/[a-z0-9-]+/</loc>[^<]*(?:<[^>]+>[^<]*)*</url>\n?",
+        # 2026-10-15: bounded to one line and both hosts — the same greedy cross-line pattern that
+        # deleted records #1637–#1642 from the sitemap in publish_semantic_addresses (fixed 2026-09-27).
+        r"[ \t]*<url><loc>https://(?:www\.)?alexanarch\.org/datasets/[a-z0-9-]+/</loc>[^\n]*</url>\n?",
         "",
         txt,
     )
 
     # Inject after the /datasets/ index line
     idx_re = re.compile(
-        r"(<url><loc>https://alexanarch\.org/datasets/</loc>[^<]*(?:<[^>]+>[^<]*)*</url>)"
+        r"(<url><loc>https://(?:www\.)?alexanarch\.org/datasets/</loc>[^\n]*</url>)"
     )
     m = idx_re.search(txt)
     if not m:
@@ -277,11 +279,11 @@ def update_sitemap(dataset_names: list[str]) -> None:
     lines = []
     for name in sorted(dataset_names):
         lines.append(
-            f'  <url><loc>https://alexanarch.org/datasets/{name}/</loc>'
+            f'  <url><loc>https://www.alexanarch.org/datasets/{name}/</loc>'
             f'<changefreq>monthly</changefreq><priority>0.7</priority></url>'
         )
     injection = "\n" + "\n".join(lines) + "\n"
-    SITEMAP.write_text(header + injection + tail, encoding="utf-8")
+    SITEMAP.write_text(header.rstrip("\n") + injection + tail.lstrip("\n"), encoding="utf-8")
     print(f"  ✓ sitemap: {len(lines)} dataset URLs")
 
 

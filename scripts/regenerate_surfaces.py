@@ -692,8 +692,13 @@ def regenerate_sitemap(reg, dry_run=False):
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     lines = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    # 2026-10-15: static and browse URLs carry NO <lastmod>. They were stamped with the run date on
+    # every regeneration, which claims a change whether or not one happened — the very thing the
+    # record lines below were fixed to stop (record_modification.py: "date_modified means THE RECORD
+    # CHANGED — not that a script ran"). Absence is a truthful claim; a run date is not. Only the
+    # record URLs, whose dates are the record's own, assert a modification.
     for url, priority in STATIC_URLS:
-        lines.append(f'  <url><loc>{esc_xml(url)}</loc><lastmod>{today}</lastmod><priority>{priority}</priority></url>')
+        lines.append(f'  <url><loc>{esc_xml(url)}</loc><priority>{priority}</priority></url>')
 
     deposits = sorted(
         reg["deposits"],
@@ -733,11 +738,11 @@ def regenerate_sitemap(reg, dry_run=False):
         # but no longer competes with /s/records/N/ as an independent crawl
         # target. (Supersedes the 2026-07-17 regression note: the paper layer
         # is preserved by record-page links + /papers/ directory, not sitemap.)
-    # WS1: paginated browse sections (self-canonical pages; lastmod = today, they regenerate with the registry)
+    # WS1: paginated browse sections (self-canonical pages; no lastmod — see the static URLs above)
     sec = REPO_ROOT / "data" / "browse-sections-urls.json"
     if sec.exists():
         for u in json.loads(sec.read_text()).get("urls", []):
-            lines.append(f'  <url><loc>{esc_xml(u)}</loc><lastmod>{today}</lastmod><priority>0.6</priority></url>')
+            lines.append(f'  <url><loc>{esc_xml(u)}</loc><priority>0.6</priority></url>')
     lines.append("</urlset>")
     out = "\n".join(lines) + "\n"
 
