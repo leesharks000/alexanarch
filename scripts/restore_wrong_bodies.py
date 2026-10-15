@@ -14,7 +14,7 @@ The candidate list is ruled, not gated: each entry was matched to its post and i
 post carries the deposit's DOI or hex, or its exact title and date); the basis is recorded per record.
 
 USAGE: python3 scripts/restore_wrong_bodies.py RULED.json [--dry-run] [--report PATH]
-       RULED.json = {"<deposit>": {"url": ..., "kind": "wrong_body"|"missing_body"|"truncated_body"|"missing_part", "basis": ...,
+       RULED.json = {"<deposit>": {"url": ..., "kind": "wrong_body"|"missing_body"|"other_edition"|"truncated_body"|"missing_part", "basis": ...,
                                    "part_heading": ... (missing_part only)}, ...}
        missing_part (ruling 2026-10-15, "flesh it out wherever the full text is available"): the deposit's own
        file list names a part that was never seated; the recovered part is added after the seated body.
@@ -46,6 +46,9 @@ KIND = {'wrong_body': ('the body previously seated here was a different work (wr
                        'body previously seated here — a different work, superseded'),
         'missing_body': ("the body previously seated here was only the deposit's metadata capture (missing body)",
                          'metadata-capture body, superseded'),
+        'other_edition': ("the body previously seated here was another edition of the work, not the one published on the "
+                          "deposit's date (ruling 2026-10-15: \"keep dates and posts synced\")",
+                          'edition previously seated here, superseded'),
         'truncated_body': ('the body previously seated here was cut short (truncated body)',
                            'truncated body previously seated here, superseded'),
         # a part the deposit names (its own file list) that was never seated; the seated body stays as it is

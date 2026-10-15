@@ -23,13 +23,13 @@ Look at two images.
 
 The first is a watercolor drawing. An anthropomorphic dinosaur in a white fedora and white beard, jacket rendered in loose graphite crosshatching, mouth open, red tongue visible, teeth irregularly exposed. The face is aqua-teal, rendered in mixed media — pencil marks over watercolor wash. The background is pale yellow. The image is playful, local, eventful. It reads first as a character someone drew.
 
-![Figure 1. Watercolor portrait of Lee Sharks. Mixed media, approximately 2024.](https://claude.ai/chat/fig1_watercolor_sharks.jpg)
+[Figure 1. Watercolor portrait of Lee Sharks. Mixed media, approximately 2024.](https://mindcontrolpoems.blogspot.com/2026/02/all-spoils-of-babylon-curatorial.html)
 
 *Figure 1. Watercolor portrait of Lee Sharks. Mixed media on paper. Pale yellow wash background, aqua-teal face, white fedora and beard, open mouth with red tongue, graphite suit jacket. The image reads as character before it reads as authority.*
 
 The second is a generated portrait derived from that drawing through prompt-guided transformation. The subject remains recognizably the same broad figure cluster — reptilian head, fedora, beard, suit collar — but the visual regime has changed completely: deep green monochrome, engraving-style line texture, volumetric facial modeling, controlled three-quarter pose, dramatic chiaroscuro, and a background field that recruits currency-adjacent associations. It reads first as a figure someone prints.
 
-![Figure 2. Intaglio-style portrait of Lee Sharks. AI-generated, 2026.](https://claude.ai/chat/fig2_dinosaur_portrait.png)
+[Figure 2. Intaglio-style portrait of Lee Sharks. AI-generated, 2026.](https://mindcontrolpoems.blogspot.com/2026/02/all-spoils-of-babylon-curatorial.html)
 
 *Figure 2. Intaglio-style portrait of Lee Sharks. AI-generated through prompt-guided transformation. Green monochrome, engraving-style line texture, formal three-quarter profile, suit jacket, ornamental border elements. The same subject, reclassified.*
 

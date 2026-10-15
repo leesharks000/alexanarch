@@ -47,3 +47,18 @@ Thornburgh registry), #982 (pessoagraph visualization), #959 (Hexagonal OS build
 from this session (403).
 - a. Grant this session access to data-rhizome, or attach the files; each is then seated with the duplicate check.
 - b. Leave held: each keeps its current body, and its page states the body is a different work.
+
+## Rulings (Lee Sharks, 2026-10-15 19:45)
+1. "keep dates and posts synced." — #282 seated with the post of 2026-01-09, #324 with the post of 2026-01-17
+   (kind other_edition; the 2013 text kept as appendix). Standing rule: a record's text, seated from the blog, is the
+   post of the record's own date.
+2. "recompute." — the six AXNs re-derived from the canonical text (scripts/repair_rulings_20261015.py).
+3. "leave them." — in-text "[pending]" DOIs stay as published.
+4. "only if you can inspect it, im not tracking down individual figures - why not link to the relevant blog post
+   generally?" — the six figure links in #502/#507/#509 now link to the post of the record's date.
+5. "the blog often holds only the most up to date version, it was often my practice to overpaste rapid updates."
+   — version mismatches between a record's title and its text stay; the blog is not used to replace a record's text
+   on the ground of version.
+6. "whatever." — off-blog wrong bodies stay held.
+Readers approved for the remaining reading: "yes im open to readers, long as they have provenance" — each reading
+carries read ranges, verbatim quotes with lines (checked), and its transcript is audited for the lines it opened.

@@ -16,11 +16,11 @@
 
 Look at two images. They are both the front of a United States twenty-dollar bill. They both depict, officially, the same man: Andrew Jackson, seventh President. They are both produced from the same master die — the same lines cut into the same hardened steel at the Bureau of Engraving and Printing in 1928. No burin has touched that die since. The lines are identical.
 
-![Figure 1. Series 1990 $20 bill (pre-redesign). Portrait centered inside ornamental oval, dense dark crosshatching. The face is small, flat, subordinate — it reads as icon.](https://claude.ai/chat/fig1_series1990_twenty.jpg)
+[Figure 1. Series 1990 $20 bill (pre-redesign). Portrait centered inside ornamental oval, dense dark crosshatching. The face is small, flat, subordinate — it reads as icon.](https://mindcontrolpoems.blogspot.com/2026/02/whose-face-is-on-twenty-curatorial.html)
 
 *Figure 1. Series 1990 $20 (pre-redesign). Portrait centered inside ornamental oval, dense dark crosshatching. The face is small, flat, subordinate. It reads as icon — "president on money."*
 
-![Figure 2. Post-redesign $20 (Series 1996/2004). Portrait enlarged, off-center, oval removed, lighter background. Annotated comparison with Epstein photograph.](https://claude.ai/chat/fig2_comparison_annotated.jpg)
+[Figure 2. Post-redesign $20 (Series 1996/2004). Portrait enlarged, off-center, oval removed, lighter background. Annotated comparison with Epstein photograph.](https://mindcontrolpoems.blogspot.com/2026/02/whose-face-is-on-twenty-curatorial.html)
 
 *Figure 2. Post-redesign $20 (Series 1996/2004) alongside annotated comparison. Portrait enlarged, moved off-center, oval removed, lighter fine-line background. The face is the dominant element — three-dimensional, volumetric, individually legible. Red annotations mark positionally specific asymmetric correspondences.*
 

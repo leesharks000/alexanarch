@@ -628,11 +628,11 @@
     },
     {
       "deposit_number": 1250,
-      "axn": "AXN:04F3.UNCLASSIFIED.⚡🕘⭐💥🔙👇",
+      "axn": "AXN:04F3.UNCLASSIFIED.🌃⏹️❤️☀️❌☀️",
       "hex": "04F3",
       "family": "UNCLASSIFIED",
-      "emoji": "⚡🕘⭐💥🔙👇",
-      "hash": "136a08ebf3b757cb132452beca26ac9c1ee5485fa8b8e3997fe932631f1e5139",
+      "emoji": "🌃⏹️❤️☀️❌☀️",
+      "hash": "e2f7cf0bef0bc31b3ca573b9642bbfcedde0c478fdb4695a0cdb6283b9c996fb",
       "title": "The reward of love — Lee Sharks — New Human 2",
       "creator": "Lee Sharks",
       "date": "2026-01-03",
@@ -643,14 +643,14 @@
       "root_axn": "AXN:04F3.UNCLASSIFIED",
       "axn_schema_version": "v2",
       "protocol_version": "alexanarch-deposit-protocol/v1",
-      "axn_canonical": "136a08ebf3b757cb132452beca26ac9c1ee5485fa8b8e3997fe932631f1e5139",
+      "axn_canonical": "e2f7cf0bef0bc31b3ca573b9642bbfcedde0c478fdb4695a0cdb6283b9c996fb",
       "clusters": [
-        "Elemental",
-        "Temporal",
-        "Celestial",
         "Liminal",
         "Terminal",
-        "Gestural"
+        "Signal",
+        "Celestial",
+        "Liminal",
+        "Celestial"
       ],
       "axn_reading": "Force -> Duration -> Origin -> Threshold -> Closure -> Touch",
       "minted_at": "2026-07-19T21:09:41Z",
@@ -865,6 +865,13 @@
           "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
           "was": "{\"class\": \"superseded\", \"resolves_to\": 184, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; ",
           "now": "{\"class\": \"superseded\", \"resolves_to\": 184, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versi"
+        },
+        {
+          "date": "2026-10-15",
+          "field": "axn",
+          "reason": "AXN re-derived from the canonical text the page renders (was the hash of the second store)",
+          "was": "AXN:04F3.UNCLASSIFIED.⚡🕘⭐💥🔙👇",
+          "now": "AXN:04F3.UNCLASSIFIED.🌃⏹️❤️☀️❌☀️"
         }
       ],
       "date_modified": "2026-10-15",
@@ -906,7 +913,16 @@
       ],
       "line": "poetry",
       "line_parent": "letters",
-      "line_basis": "derived"
+      "line_basis": "derived",
+      "reading": "Threshold -> Closure -> Alarm -> Origin -> Threshold -> Origin",
+      "axn_rederived": {
+        "on": "2026-10-15",
+        "from": "/data/texts/AXN-04F3-text.md",
+        "hash_before": "136a08ebf3b757cb132452beca26ac9c1ee5485fa8b8e3997fe932631f1e5139",
+        "axn_before": "AXN:04F3.UNCLASSIFIED.⚡🕘⭐💥🔙👇",
+        "why": "the stored hash was of the second store (data/deposits); the page renders this text",
+        "ruled_by": "Lee Sharks, 2026-10-15: \"recompute.\""
+      }
     },
     {
       "deposit_number": 1251,
