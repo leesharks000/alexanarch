@@ -128,18 +128,17 @@ TEXTS_DIR = REPO_ROOT / "data" / "texts"
 
 
 def _repaired_canonical(d):
-    """2026-10-15: after a recorded body repair the canonical store (registry full_text_path, which the AXN hash is
-    taken from) IS the repaired text, and the other store holds the text before the repair. Longest-wins would pick
-    the older copy whenever the repair shortened the text (a wrong body replaced, "--" become "—"). For a record
-    carrying a repair record whose canonical file hashes to the registry hash, use the canonical file. Every other
-    record keeps longest-wins until the two stores are mapped (data/repair-maps/two-stores-2026-10-15.json)."""
+    """2026-10-15: render the CANONICAL text — the registry full_text_path, the bytes the AXN hash is taken from and
+    the record page renders — whenever that file hashes to the registry hash. Longest-wins across data/texts and
+    data/deposits served the other store whenever it was the longer: a pre-repair copy after a repair shortened the
+    text, and on #1250 a July restoration from the wrong post (the page shows the poem, the PDF showed the Ezra Pound
+    piece). Where no canonical file matches the registry hash, longest-wins stands as before (the 2026-07-17 guard
+    against truncated stores). Where the other store holds published material the canonical text lacks, that is
+    repaired in the canonical text (data/repair-maps/two-stores-2026-10-15.json), not by rendering the other store."""
     import hashlib
-    rs = d.get('restoration') or {}
-    if not (rs.get('restored_at') == '2026-10-15' or rs.get('reconverted') or d.get('text_reconverted')):
-        return None
     fp = (d.get('full_text_path') or '').lstrip('/')
     p = REPO_ROOT / fp if fp else None
-    if not p or not p.exists():
+    if not p or not p.exists() or p.suffix.lower() not in ('.md', '.txt'):
         return None
     b = p.read_bytes()
     if hashlib.sha256(b).hexdigest() != d.get('hash'):
