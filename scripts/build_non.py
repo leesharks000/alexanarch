@@ -903,7 +903,8 @@ def main():
                     "p_words": counts["p_words"], "n_register": len(regs), "traversal_counts": counts["traversal"],
                     "date": last, "record_url": url, "json_url": url + "entity.json", "address_url": addr_url,
                     "sha256": hashlib.sha256(ej.encode()).hexdigest()})
-        sm.append(f"  <url><loc>{url}</loc><lastmod>{last}</lastmod></url>")
+        # 2026-10-15: the page date — a confirmed join ("Observations of this entity") changes the page
+        sm.append(f"  <url><loc>{url}</loc><lastmod>{CJ.page_date(last, CJ.non_date(k))}</lastmod></url>")
 
         # the card on /non/
         if P:

@@ -157,3 +157,39 @@ def non_block(entity):
             '<h3 style="font-size:1em;margin:0 0 4px">Observations of this entity</h3><ul>'
             + "".join(_line(r0, rs, "") for r0, rs in rows)
             + f'</ul><p class="meta" style="font-size:.85em">Confirmed by reading; from <a href="/data/capture-joins.json">the capture join</a> ({esc(src)}).</p></div>')
+
+
+# ── PAGE DATES (2026-10-15) ───────────────────────────────────────────────────────────────────────────────
+# A page that renders a join changed on the day the join was confirmed, whatever its record's own dates say
+# (record_modification.py: date_modified tracks the RECORD; it deliberately does not move for projections).
+# The sitemap <lastmod> and the WebPage dateModified are page dates, so each renderer above has a date
+# function here that selects EXACTLY what it renders and returns the latest decision date among the rows it
+# shows (the date a reader confirmed the relation; else the observation date). "" when the page renders no
+# join. Deterministic: an unchanged join file gives unchanged dates.
+
+def _rs_date(rs):
+    return max([str((r.get("decision") or {}).get("date") or r.get("date") or "")[:10] for r in rs] or [""])
+
+
+def deposit_date(n):
+    by_obs, _ = load()
+    obj = f"deposit:{n}"
+    return max([_rs_date(rs) for rs in by_obs.values()
+                if any(r["verb"] in ("appeared_in", "mentions") and r["object"] == obj for r in rs)] or [""])
+
+
+def entry_date(slug):
+    by_obs, _ = load()
+    return max([_rs_date(rs) for rs in by_obs.values() if rs[0]["entry"] == slug] or [""])
+
+
+def non_date(entity):
+    by_obs, _ = load()
+    obj = f"non:{entity}"
+    return max([_rs_date(rs) for rs in by_obs.values()
+                if any(r["verb"] in ("about", "corrected_by") and r["object"] == obj for r in rs)] or [""])
+
+
+def page_date(*dates):
+    """The latest of the given dates (record date, join date …), ignoring empties."""
+    return max([str(d)[:10] for d in dates if d] or [""])

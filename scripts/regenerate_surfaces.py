@@ -69,6 +69,7 @@ REGISTRY_PATH = REPO_ROOT / "data" / "registry.json"
 # receipt log is the structural complement to the discipline of running
 # scripts/pre_overwrite.py before any ad-hoc edit.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import capture_join_render as _CJ_dates  # page dates for the sitemap (2026-10-15)
 try:
     from overwrite_guard import issue_auto_receipt
     _OVERWRITE_GUARD_AVAILABLE = True
@@ -731,7 +732,9 @@ def regenerate_sitemap(reg, dry_run=False):
         # (see scripts/record_modification.py). Absence means unmodified since
         # deposit — a truthful claim — so we fall back to the publication date
         # rather than stamping today and teaching crawlers to discount the field.
-        last = esc_xml(d.get("date_modified") or d.get("date") or today)
+        # 2026-10-15: the PAGE date — the later of the record's own last modification and the latest capture
+        # join the page renders ("Read in composition"), which record_modification deliberately does not count.
+        last = esc_xml(_CJ_dates.page_date(d.get("date_modified") or d.get("date"), _CJ_dates.deposit_date(n)) or today)
         lines.append(
             f'  <url><loc>https://www.alexanarch.org/s/records/{n}/</loc>'
             f'<lastmod>{last}</lastmod><priority>0.8</priority></url>'

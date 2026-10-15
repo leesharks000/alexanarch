@@ -340,6 +340,7 @@ def build():
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for r in toc:
         last = max(x for x in r["dates"] if x) if any(r["dates"]) else reg.get("date")
+        last = CJ.page_date(last, CJ.entry_date(r["slug"]))  # 2026-10-15: a confirmed join changes the page
         sm.append(f"  <url><loc>{r['record_url']}</loc><lastmod>{last}</lastmod></url>")
     sm.append("</urlset>\n")
     # SPXI instrument label (method 0.9), from data/spxi-instruments.json (2026-10-14): visible line, meta and JSON-LD

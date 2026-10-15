@@ -20,6 +20,17 @@ _DOI_INDEX_CACHE = None
 
 
 _DOI_STATE_CACHE = None
+def _page_modified(d, dn):
+    """{"dateModified": page date} for the record page's WebPage (2026-10-15), or {} if none is known.
+    Page date = later of the record's last modification and the latest capture join the page renders."""
+    try:
+        from scripts import capture_join_render as _CJp
+        pd = _CJp.page_date(d.get('date_modified') or d.get('date'), _CJp.deposit_date(dn))
+    except Exception:
+        pd = d.get('date_modified') or d.get('date')
+    return {"dateModified": pd} if pd else {}
+
+
 def _doi_state(doi):
     """identifier_validity from the resolution index envelope → short phrase (2026-09-04)."""
     global _DOI_STATE_CACHE
@@ -1071,7 +1082,9 @@ def regenerate_static_page(d, eidx, registry=None):
         "publisher": {"@type": "Organization", "name": "Alexanarch"},
         "keywords": ", ".join(d.get('keywords', []) if isinstance(d.get('keywords'), list) else []),
         "url": _rec_url,
-        "mainEntityOfPage": {"@type": "WebPage", "@id": _rec_url},
+        # 2026-10-15: the WebPage carries the PAGE date (record's last modification or the latest capture join
+        # this page renders, whichever is later); the ScholarlyArticle keeps the work's own dates.
+        "mainEntityOfPage": {"@type": "WebPage", "@id": _rec_url, **_page_modified(d, dn)},
         "inLanguage": "en",
         "isPartOf": {"@type": "Collection", "name": "Alexanarch",
                      "url": "https://www.alexanarch.org/"},
