@@ -272,8 +272,9 @@ def deposit_date(n):
 
 
 # CONCEPTS FROM THE ADDRESSES (v0.2). An address that names no registered entity is tried whole, and each quoted phrase in
-# any address is tried, against the deposits: a defines_concepts entry is a DEFINING deposit (confirmed); a title, keyword
-# or description containing the phrase is a CANDIDATE (the earliest is taken). A quoted phrase found nowhere is entered
+# any address is tried, against the deposits: a defines_concepts entry is a DEFINING deposit (confirmed); a title or
+# keyword containing the phrase is a CANDIDATE (the earliest is taken; descriptions dropped in v0.6, since a description
+# can mention a term it does not define: "sappho future reader" had been given #1546, a paper on suppression). A quoted phrase found nowhere is entered
 # PROVISIONAL, its defining deposit not identified: the quotation is the target whatever the archive holds.
 def concepts_from_addresses(reg, add, alias_of, norm):
     defs = collections.defaultdict(list)
@@ -288,13 +289,13 @@ def concepts_from_addresses(reg, add, alias_of, norm):
             return sorted(defs[ph], key=lambda n: deposit_date(n) or "9"), "confirmed (defines_concepts)"
         hits = []
         for n, r in records().items():
-            for f in ("title", "keywords", "description"):
+            for f in ("title", "keywords"):        # v0.6: a description can mention a term it does not define
                 v = r.get(f)
                 v = " ".join(map(str, v)) if isinstance(v, list) else str(v or "")
                 if ph in v.lower():
                     hits.append(n)
                     break
-        return sorted(hits, key=lambda n: deposit_date(n) or "9"), "candidate (title, keywords or description)"
+        return sorted(hits, key=lambda n: deposit_date(n) or "9"), "candidate (title or keywords)"
     seen, pending = set(), []
     for e in reg["entries"]:
         for o in [e] + (e.get("observations") or []):
@@ -325,7 +326,9 @@ def concepts_from_addresses(reg, add, alias_of, norm):
 def matcher(ents):
     pats = []
     for r in ents.values():
-        for a in r["aliases"]:
+        als = list(r["aliases"])
+        als += [re.sub(r"^the\s+", "", a, flags=re.I) for a in als if re.match(r"the\s+\S+\s+\S+", a, re.I)]   # "The X Y" also as "X Y"
+        for a in dict.fromkeys(als):
             if len(a) < 3 and a not in ("CHA",):
                 continue
             if a in ("PER", "AXN", "CHA"):

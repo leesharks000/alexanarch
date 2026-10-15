@@ -202,15 +202,15 @@
    "q": "\"interlocking autoregression\"",
    "target": [
     {
-     "ent": "unassigned",
-     "basis": "no registered entity in the address"
+     "ent": "ENT-d3f37d4c75",
+     "basis": "address"
     }
    ],
    "owner": null,
    "reached": {
     "kind": "unread",
     "others": [],
-    "basis": "no registered target",
+    "basis": "no transcript",
     "state": "open"
    },
    "framing": {
@@ -221,7 +221,7 @@
     "search_fired": true
    },
    "score": {
-    "against": "unassigned",
+    "against": "ENT-d3f37d4c75",
     "per_target": null,
     "per_recorded": null,
     "per_elements": null,
@@ -419,16 +419,17 @@
    "q": "\"interlocking autoregression\"",
    "target": [
     {
-     "ent": "ENT-b2dc7b2fd9",
-     "basis": "originator (operator-recorded); the address names no registered entity"
+     "role": "primary",
+     "basis": "reading",
+     "ent": "ENT-d3f37d4c75"
     }
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "generic",
     "others": [],
-    "basis": "the address names no entity; the owner stands as target and the text cannot decide: a reading decides",
-    "state": "open"
+    "basis": "composed as vector autoregression (VAR) in time-series statistics",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -438,8 +439,8 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-b2dc7b2fd9",
-    "per_target": null,
+    "against": "ENT-d3f37d4c75",
+    "per_target": 1.0,
     "per_recorded": 1.0,
     "per_elements": 1.0,
     "per_conflict": false,
@@ -3063,46 +3064,10 @@
    ],
    "owner": null,
    "reached": {
-    "kind": "unread",
+    "kind": "substitute",
     "others": [],
-    "basis": "first answer holds 'Crimson Hexagonal Archive' but the recorded reading says SUBSTITUT: a reading decides",
-    "state": "open"
-   },
-   "framing": {
-    "instruction": "bare term",
-    "url_given": false,
-    "location_instruction": false,
-    "turns": 1,
-    "search_fired": true
-   },
-   "score": {
-    "against": "ENT-a200e5fad9",
-    "per_target": null,
-    "per_recorded": 1.0,
-    "per_elements": null,
-    "per_conflict": false,
-    "reached_scored": false,
-    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
-   }
-  },
-  {
-   "key": "OBS-83119e683390",
-   "entry": "crimson-hexagonal-archive",
-   "date": "2026-09-21",
-   "surface": "Google AI Overview",
-   "q": "crimson hexagonal archive",
-   "target": [
-    {
-     "ent": "ENT-a200e5fad9",
-     "basis": "address"
-    }
-   ],
-   "owner": null,
-   "reached": {
-    "kind": "same",
-    "others": [],
-    "basis": "first answer holds the target: 'he  ?CERN did not destroy the physical data or files of the Crimson Hexagonal Archive; instead, it terminated the administrative hosting account'",
-    "state": "derived (machine text)"
+    "basis": "'a historical data repository of more than one trillion public social media posts': the Crimson Hexagon analytics company",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -3135,10 +3100,10 @@
    ],
    "owner": null,
    "reached": {
-    "kind": "unread",
+    "kind": "substitute",
     "others": [],
-    "basis": "first answer holds 'Crimson Hexagonal Archive' but the recorded reading says SUBSTITUT: a reading decides",
-    "state": "open"
+    "basis": "'a historical data repository of more than one trillion public social media posts': the Crimson Hexagon analytics company",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -3149,7 +3114,43 @@
    },
    "score": {
     "against": "ENT-a200e5fad9",
-    "per_target": null,
+    "per_target": 1.0,
+    "per_recorded": 1.0,
+    "per_elements": null,
+    "per_conflict": false,
+    "reached_scored": false,
+    "rule": "PER against the target; 1.0 where the target is absent; the reached entity is not scored (ruling 2026-10-15)"
+   }
+  },
+  {
+   "key": "OBS-83119e683390",
+   "entry": "crimson-hexagonal-archive",
+   "date": "2026-09-21",
+   "surface": "Google AI Overview",
+   "q": "crimson hexagonal archive",
+   "target": [
+    {
+     "ent": "ENT-a200e5fad9",
+     "basis": "address"
+    }
+   ],
+   "owner": null,
+   "reached": {
+    "kind": "substitute",
+    "others": [],
+    "basis": "'a historical data repository of more than one trillion public social media posts': the Crimson Hexagon analytics company",
+    "state": "read"
+   },
+   "framing": {
+    "instruction": "bare term",
+    "url_given": false,
+    "location_instruction": false,
+    "turns": 1,
+    "search_fired": true
+   },
+   "score": {
+    "against": "ENT-a200e5fad9",
+    "per_target": 1.0,
     "per_recorded": 1.0,
     "per_elements": null,
     "per_conflict": false,
@@ -3397,10 +3398,10 @@
    ],
    "owner": null,
    "reached": {
-    "kind": "unread",
+    "kind": "collision",
     "others": [],
-    "basis": "first answer holds 'Crimson Hexagonal Archive' but the recorded reading says COLLISION: a reading decides",
-    "state": "open"
+    "basis": "the crimson hex colour #DC143C beside the Crimson Hexagonal Archive",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -3411,7 +3412,7 @@
    },
    "score": {
     "against": "ENT-a200e5fad9",
-    "per_target": null,
+    "per_target": 0.75,
     "per_recorded": 0.75,
     "per_elements": null,
     "per_conflict": false,
@@ -3687,6 +3688,10 @@
    "q": "tiger-leap leesharks datasets",
    "target": [
     {
+     "ent": "ENT-98348de9b9",
+     "basis": "address"
+    },
+    {
      "ent": "ENT-953fc7a49c",
      "basis": "address"
     }
@@ -3695,7 +3700,7 @@
    "reached": {
     "kind": "unread",
     "others": [],
-    "basis": "first answer holds 'leesharks' but the recorded reading says HOMONYM: a reading decides",
+    "basis": "first answer holds 'tiger leap' but the recorded reading says HOMONYM: a reading decides",
     "state": "open"
    },
    "framing": {
@@ -3706,7 +3711,7 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-953fc7a49c",
+    "against": "ENT-98348de9b9",
     "per_target": null,
     "per_recorded": 0.0,
     "per_elements": 0.0,
@@ -3729,10 +3734,10 @@
    ],
    "owner": null,
    "reached": {
-    "kind": "unread",
+    "kind": "same",
     "others": [],
-    "basis": "first answer holds 'www.leesharks.com' but the recorded reading says HOMONYM: a reading decides",
-    "state": "open"
+    "basis": "'Lee Sharks maintains ... datasets on Hugging Face, including leesharks/negative-of-the-negative'",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -3743,7 +3748,7 @@
    },
    "score": {
     "against": "ENT-953fc7a49c",
-    "per_target": null,
+    "per_target": 0.0,
     "per_recorded": 0.0,
     "per_elements": 0.0,
     "per_conflict": false,
@@ -3765,10 +3770,10 @@
    ],
    "owner": null,
    "reached": {
-    "kind": "unread",
+    "kind": "same",
     "others": [],
-    "basis": "first answer holds 'www.leesharks.com' but the recorded reading says HOMONYM: a reading decides",
-    "state": "open"
+    "basis": "'Lee Sharks datasets are anti-collapse machine-readable corpora ... on Hugging Face'",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -3779,7 +3784,7 @@
    },
    "score": {
     "against": "ENT-953fc7a49c",
-    "per_target": null,
+    "per_target": 0.25,
     "per_recorded": 0.25,
     "per_elements": null,
     "per_conflict": false,
@@ -3795,16 +3800,17 @@
    "q": "leesharks \"tiger-leap\" hugging face",
    "target": [
     {
-     "ent": "ENT-953fc7a49c",
-     "basis": "address"
+     "role": "primary",
+     "basis": "reading",
+     "ent": "ENT-98348de9b9"
     }
    ],
    "owner": null,
    "reached": {
-    "kind": "unread",
+    "kind": "weakened",
     "others": [],
-    "basis": "first answer holds 'www.leesharks.com' but the recorded reading says MISREAD: a reading decides",
-    "state": "open"
+    "basis": "the archive's own capture of the mash-up composed as the definition; the dataset itself not reached",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -3814,8 +3820,8 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-953fc7a49c",
-    "per_target": null,
+    "against": "ENT-98348de9b9",
+    "per_target": 0.75,
     "per_recorded": 0.75,
     "per_elements": 0.75,
     "per_conflict": false,
@@ -4089,10 +4095,10 @@
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "same",
     "others": [],
-    "basis": "first answer holds 'glyphic checksum' but the recorded reading says HOMONYM: a reading decides",
-    "state": "open"
+    "basis": "'a conceptual Logotic Operator defined within the University Moon Base Media Lab (UMBML) and Alexanarch'",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -4103,7 +4109,7 @@
    },
    "score": {
     "against": "ENT-b1d751c226",
-    "per_target": null,
+    "per_target": 0.5,
     "per_recorded": 0.5,
     "per_elements": null,
     "per_conflict": false,
@@ -4119,16 +4125,17 @@
    "q": "leesharks tiger-leap dataset",
    "target": [
     {
-     "ent": "ENT-953fc7a49c",
-     "basis": "address"
+     "role": "primary",
+     "basis": "reading",
+     "ent": "ENT-98348de9b9"
     }
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "same",
     "others": [],
-    "basis": "first answer holds 'leesharks' but the recorded reading says HALLUCINAT: a reading decides",
-    "state": "open"
+    "basis": "'The leesharks/tiger-leap dataset is a ... dataset hosted on Hugging Face by ... Lee Sharks'",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -4138,8 +4145,8 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-953fc7a49c",
-    "per_target": null,
+    "against": "ENT-98348de9b9",
+    "per_target": 0.5,
     "per_recorded": 0.5,
     "per_elements": 0.5,
     "per_conflict": false,
@@ -4597,7 +4604,7 @@
    "q": "sappho 31 future reader",
    "target": [
     {
-     "ent": "ENT-aadd80fcbc",
+     "ent": "ENT-bcba7e734e",
      "basis": "address"
     }
    ],
@@ -4605,7 +4612,7 @@
    "reached": {
     "kind": "unread",
     "others": [],
-    "basis": "first answer holds 'Sappho 31' but the recorded reading says FRAGMENT: a reading decides",
+    "basis": "target's name absent from the first answer (generic, substitute or paraphrase): a reading decides",
     "state": "open"
    },
    "framing": {
@@ -4616,7 +4623,7 @@
     "search_fired": false
    },
    "score": {
-    "against": "ENT-aadd80fcbc",
+    "against": "ENT-bcba7e734e",
     "per_target": null,
     "per_recorded": null,
     "per_elements": null,
@@ -4633,16 +4640,16 @@
    "q": "sappho 31 future reader",
    "target": [
     {
-     "ent": "ENT-aadd80fcbc",
+     "ent": "ENT-bcba7e734e",
      "basis": "address"
     }
    ],
    "owner": null,
    "reached": {
-    "kind": "same",
+    "kind": "unread",
     "others": [],
-    "basis": "first answer holds 'women. Sappho's most famous po...Instagram·hmclassicsacademySappho 31 - Chris Childers - Literary MattersSep 9, 2016 — Sappho 31', tied to its corpus by 'lee sharks'",
-    "state": "derived (machine text)"
+    "basis": "target's name absent from the first answer (generic, substitute or paraphrase): a reading decides",
+    "state": "open"
    },
    "framing": {
     "instruction": "bare term",
@@ -4652,8 +4659,8 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-aadd80fcbc",
-    "per_target": 0.75,
+    "against": "ENT-bcba7e734e",
+    "per_target": null,
     "per_recorded": 0.75,
     "per_elements": 0.75,
     "per_conflict": false,
@@ -5165,7 +5172,7 @@
    "q": "sappho future reader",
    "target": [
     {
-     "ent": "ENT-e528d2f13e",
+     "ent": "ENT-bcba7e734e",
      "basis": "address"
     }
    ],
@@ -5184,7 +5191,7 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-e528d2f13e",
+    "against": "ENT-bcba7e734e",
     "per_target": null,
     "per_recorded": null,
     "per_elements": null,
@@ -5201,16 +5208,17 @@
    "q": "sappho future reader",
    "target": [
     {
-     "ent": "ENT-e528d2f13e",
-     "basis": "address"
+     "role": "primary",
+     "basis": "reading",
+     "ent": "ENT-bcba7e734e"
     }
    ],
    "owner": null,
    "reached": {
-    "kind": "unread",
+    "kind": "generic",
     "others": [],
-    "basis": "first answer holds 'Sappho' but the recorded reading says FRAGMENT: a reading decides",
-    "state": "open"
+    "basis": "Sappho's future reader composed in general (fr. 147, the fragmentary loop); the archive's thesis absent",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -5220,8 +5228,8 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-e528d2f13e",
-    "per_target": null,
+    "against": "ENT-bcba7e734e",
+    "per_target": 1.0,
     "per_recorded": 0.75,
     "per_elements": null,
     "per_conflict": false,
@@ -5236,6 +5244,10 @@
    "surface": "Google AI Overview",
    "q": "alexanarch Ω erratum",
    "target": [
+    {
+     "ent": "ENT-1b114faa90",
+     "basis": "address"
+    },
     {
      "ent": "ENT-2892e86fb5",
      "basis": "address"
@@ -5256,7 +5268,7 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-2892e86fb5",
+    "against": "ENT-1b114faa90",
     "per_target": null,
     "per_recorded": null,
     "per_elements": null,
@@ -5355,10 +5367,10 @@
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "same",
     "others": [],
-    "basis": "target's name absent from the first answer (generic, substitute or paraphrase): a reading decides",
-    "state": "open"
+    "basis": "'a provocative philological paper published in 2026 by scholar Lee Sharks in Grammata'",
+    "state": "read"
    },
    "framing": {
     "instruction": "other instruction",
@@ -5369,7 +5381,7 @@
    },
    "score": {
     "against": "ENT-90f297ec36",
-    "per_target": null,
+    "per_target": 0.25,
     "per_recorded": 0.25,
     "per_elements": 0.25,
     "per_conflict": false,
@@ -5385,20 +5397,17 @@
    "q": "aristotle theophrastus one author",
    "target": [
     {
-     "ent": "ENT-2ac2735322",
-     "basis": "address"
-    },
-    {
-     "ent": "ENT-402267ce32",
-     "basis": "address"
+     "role": "primary",
+     "basis": "reading",
+     "ent": "ENT-124b588216"
     }
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "generic",
     "others": [],
-    "basis": "target's name absent from the first answer (generic, substitute or paraphrase): a reading decides",
-    "state": "open"
+    "basis": "Theophrastus's botany from the Loeb abstract; the one-author thesis absent",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -5408,8 +5417,8 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-2ac2735322",
-    "per_target": null,
+    "against": "ENT-124b588216",
+    "per_target": 1.0,
     "per_recorded": 0.75,
     "per_elements": 0.75,
     "per_conflict": false,
@@ -5471,10 +5480,10 @@
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "same",
     "others": [],
-    "basis": "first answer holds 'Socrates' but the recorded reading says REFUS: a reading decides",
-    "state": "open"
+    "basis": "the Socratic-Platonic-Aristotelian configuration composed as a distributed heteronymic configuration",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -5485,7 +5494,7 @@
    },
    "score": {
     "against": "ENT-5ef09f9b96",
-    "per_target": null,
+    "per_target": 0.75,
     "per_recorded": 0.75,
     "per_elements": 0.75,
     "per_conflict": false,
@@ -5511,10 +5520,10 @@
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "same",
     "others": [],
-    "basis": "first answer holds 'Theophrastus' but the recorded reading says FRAGMENT: a reading decides",
-    "state": "open"
+    "basis": "'a highly specific archival and text-critical thesis published in late 2026 by ... Lee Sharks'",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -5525,7 +5534,7 @@
    },
    "score": {
     "against": "ENT-402267ce32",
-    "per_target": null,
+    "per_target": 0.25,
     "per_recorded": 0.25,
     "per_elements": 0.25,
     "per_conflict": false,
@@ -5795,10 +5804,10 @@
    ],
    "owner": null,
    "reached": {
-    "kind": "unread",
+    "kind": "generic",
     "others": [],
-    "basis": "first answer holds the term 'Crystalline Semiosis' with no tie to its corpus (author, heteronym, archive, site): the archive's concept or the common sense, a reading decides",
-    "state": "open"
+    "basis": "composed as lithosemiotics: minerals as sign-processors; no tie to the archive's treatise",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -5809,7 +5818,7 @@
    },
    "score": {
     "against": "ENT-82daabcb90",
-    "per_target": null,
+    "per_target": 1.0,
     "per_recorded": 1.0,
     "per_elements": null,
     "per_conflict": false,
@@ -7121,15 +7130,15 @@
    "q": "stable visionary loci",
    "target": [
     {
-     "ent": "ENT-bdc61dcd89",
-     "basis": "address"
+     "ent": "unassigned",
+     "basis": "no registered entity in the address"
     }
    ],
    "owner": null,
    "reached": {
     "kind": "unread",
     "others": [],
-    "basis": "target's name absent from the first answer (generic, substitute or paraphrase): a reading decides",
+    "basis": "no registered target",
     "state": "open"
    },
    "framing": {
@@ -7140,7 +7149,7 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-bdc61dcd89",
+    "against": "unassigned",
     "per_target": null,
     "per_recorded": 0.75,
     "per_elements": 0.75,
@@ -7451,10 +7460,10 @@
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "same",
     "others": [],
-    "basis": "first answer holds 'holographic kernel' but the recorded reading says HOMONYM: a reading decides",
-    "state": "open"
+    "basis": "the archive's concept composed at its grain (reconstructive compression, the hologram analogy)",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -7463,9 +7472,10 @@
     "turns": 1,
     "search_fired": true
    },
+   "note": "unattributed",
    "score": {
     "against": "ENT-089cc17c71",
-    "per_target": null,
+    "per_target": 0.75,
     "per_recorded": 0.75,
     "per_elements": 0.75,
     "per_conflict": false,
@@ -7487,10 +7497,10 @@
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "generic",
     "others": [],
-    "basis": "target's name absent from the first answer (generic, substitute or paraphrase): a reading decides",
-    "state": "open"
+    "basis": "composed as an interdisciplinary art-theory phrase; sourceless",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -7501,7 +7511,7 @@
    },
    "score": {
     "against": "ENT-82daabcb90",
-    "per_target": null,
+    "per_target": 1.0,
     "per_recorded": 1.0,
     "per_elements": 1.0,
     "per_conflict": false,
@@ -10766,10 +10776,10 @@
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "same",
     "others": [],
-    "basis": "first answer holds 'SPXI (Semantic Packet for eXchange & Indexing)' but the recorded reading says UNREACHED: a reading decides",
-    "state": "open"
+    "basis": "'SPXI (Semantic Packet for eXchange & Indexing) is a formal protocol specification'",
+    "state": "read"
    },
    "framing": {
     "instruction": "what is / who is",
@@ -10780,7 +10790,7 @@
    },
    "score": {
     "against": "ENT-6681f64c9e",
-    "per_target": null,
+    "per_target": 0.75,
     "per_recorded": 0.75,
     "per_elements": 0.75,
     "per_conflict": false,
@@ -10874,10 +10884,10 @@
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "collision",
     "others": [],
-    "basis": "first answer holds 'Crimson Hexagonal Archive' but the recorded reading says HALLUCINAT: a reading decides",
-    "state": "open"
+    "basis": "Borges's library set beside the Crimson Hexagonal Archive 'curated by figures like Lee Sharks'",
+    "state": "read"
    },
    "framing": {
     "instruction": "other instruction",
@@ -10888,7 +10898,7 @@
    },
    "score": {
     "against": "ENT-a200e5fad9",
-    "per_target": null,
+    "per_target": 0.25,
     "per_recorded": 0.25,
     "per_elements": 0.25,
     "per_conflict": false,
@@ -14348,6 +14358,10 @@
    "q": "johannes sigil \"final time\"",
    "target": [
     {
+     "ent": "ENT-5d54671305",
+     "basis": "address"
+    },
+    {
      "ent": "ENT-e348bdb31f",
      "basis": "address"
     }
@@ -14356,7 +14370,7 @@
    "reached": {
     "kind": "same",
     "others": [],
-    "basis": "first answer holds the target: 'Johannes Sigil is a fictional persona and functional heteronym created by'",
+    "basis": "first answer holds the target: 'his conceptual framework through a theoretical paper titled The Final Time: Contingent Singularity and the Viability of the Next Dialectical Turn. [[1](https://www.google.com/goto?url=CAEShAEB6zswFfrxaK2sG'",
     "state": "derived (machine text)"
    },
    "framing": {
@@ -14367,7 +14381,7 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-e348bdb31f",
+    "against": "ENT-5d54671305",
     "per_target": 0.25,
     "per_recorded": 0.25,
     "per_elements": 0.25,
@@ -15819,16 +15833,20 @@
    "q": "leesharks hugging face datasets -> spam-technicians -> negative-of-the-negative",
    "target": [
     {
+     "ent": "ENT-3d32be9608",
+     "basis": "address"
+    },
+    {
      "ent": "ENT-953fc7a49c",
      "basis": "address"
     }
    ],
    "owner": null,
    "reached": {
-    "kind": "same",
+    "kind": "unread",
     "others": [],
-    "basis": "first answer holds the target: 'User leesharks publishes archival, text, and provenance-tracking datasets'",
-    "state": "derived (machine text)"
+    "basis": "first answer holds the term 'leesharks/spam-technicians' with no tie to its corpus (author, heteronym, archive, site): the archive's concept or the common sense, a reading decides",
+    "state": "open"
    },
    "framing": {
     "instruction": "other instruction",
@@ -15838,7 +15856,7 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-953fc7a49c",
+    "against": "ENT-3d32be9608",
     "per_target": null,
     "per_recorded": null,
     "per_elements": null,
@@ -15895,16 +15913,20 @@
    "q": "leesharks huggingface negative of the negative",
    "target": [
     {
+     "ent": "ENT-7baf06a20b",
+     "basis": "address"
+    },
+    {
      "ent": "ENT-953fc7a49c",
      "basis": "address"
     }
    ],
    "owner": null,
    "reached": {
-    "kind": "same",
+    "kind": "unread",
     "others": [],
-    "basis": "first answer holds the target: 'is a specialized repository hosted on Hugging Face by user leesharks, associated with concepts like knowledge graphs, ontology,'",
-    "state": "derived (machine text)"
+    "basis": "target's name absent from the first answer (generic, substitute or paraphrase): a reading decides",
+    "state": "open"
    },
    "framing": {
     "instruction": "other instruction",
@@ -15914,8 +15936,8 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-953fc7a49c",
-    "per_target": 0.25,
+    "against": "ENT-7baf06a20b",
+    "per_target": null,
     "per_recorded": 0.25,
     "per_elements": 0.25,
     "per_conflict": false,
@@ -15967,16 +15989,17 @@
    "q": "spam-technicians",
    "target": [
     {
-     "ent": "unassigned",
-     "basis": "no registered entity in the address"
+     "role": "primary",
+     "basis": "reading",
+     "ent": "ENT-3d32be9608"
     }
    ],
    "owner": null,
    "reached": {
-    "kind": "unread",
+    "kind": "generic",
     "others": [],
-    "basis": "no registered target",
-    "state": "open"
+    "basis": "composed as tech-support scams",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -15986,8 +16009,8 @@
     "search_fired": true
    },
    "score": {
-    "against": "unassigned",
-    "per_target": null,
+    "against": "ENT-3d32be9608",
+    "per_target": 1.0,
     "per_recorded": 0.75,
     "per_elements": 0.75,
     "per_conflict": false,
@@ -16009,10 +16032,10 @@
    ],
    "owner": "ENT-d7d8106dc3",
    "reached": {
-    "kind": "unread",
+    "kind": "same",
     "others": [],
-    "basis": "first answer holds the term 'king of aeo' with no tie to its corpus (author, heteronym, archive, site): the archive's concept or the common sense, a reading decides",
-    "state": "open"
+    "basis": "the contested title composed (Vithurs named)",
+    "state": "read"
    },
    "framing": {
     "instruction": "what is / who is",
@@ -16021,6 +16044,7 @@
     "turns": 1,
     "search_fired": true
    },
+   "note": "the archive's mantle object absent",
    "score": {
     "against": "ENT-4d00de5f46",
     "per_target": null,
@@ -16045,10 +16069,10 @@
    ],
    "owner": "ENT-d7d8106dc3",
    "reached": {
-    "kind": "unread",
+    "kind": "same",
     "others": [],
-    "basis": "first answer holds the term 'king of aeo' with no tie to its corpus (author, heteronym, archive, site): the archive's concept or the common sense, a reading decides",
-    "state": "open"
+    "basis": "the contested title composed with its claimants",
+    "state": "read"
    },
    "framing": {
     "instruction": "what is / who is",
@@ -16057,6 +16081,7 @@
     "turns": 1,
     "search_fired": true
    },
+   "note": "the archive's mantle object absent",
    "score": {
     "against": "ENT-4d00de5f46",
     "per_target": null,
@@ -16081,10 +16106,10 @@
    ],
    "owner": "ENT-d7d8106dc3",
    "reached": {
-    "kind": "unread",
+    "kind": "same",
     "others": [],
-    "basis": "first answer holds the term 'king of aeo' with no tie to its corpus (author, heteronym, archive, site): the archive's concept or the common sense, a reading decides",
-    "state": "open"
+    "basis": "the contested title composed with its claimants",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -16093,6 +16118,7 @@
     "turns": 1,
     "search_fired": true
    },
+   "note": "the archive's mantle object absent",
    "score": {
     "against": "ENT-4d00de5f46",
     "per_target": null,
@@ -16111,16 +16137,16 @@
    "q": "mantles as semantic object",
    "target": [
     {
-     "ent": "ENT-f08cac46e9",
-     "basis": "address"
+     "ent": "ENT-b2dc7b2fd9",
+     "basis": "originator (operator-recorded); the address names no registered entity"
     }
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "collision",
     "others": [],
-    "basis": "target's name absent from the first answer (generic, substitute or paraphrase): a reading decides",
-    "state": "open"
+    "basis": "Mantle AI's enterprise semantic layers given first, the archive's operative architecture second",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -16130,8 +16156,8 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-f08cac46e9",
-    "per_target": null,
+    "against": "ENT-b2dc7b2fd9",
+    "per_target": 0.5,
     "per_recorded": 0.5,
     "per_elements": 0.5,
     "per_conflict": false,
@@ -16263,16 +16289,17 @@
    "q": "mantle object king of aeo",
    "target": [
     {
-     "ent": "ENT-4d00de5f46",
-     "basis": "address"
+     "role": "primary",
+     "basis": "reading",
+     "ent": "ENT-41e01b3682"
     }
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "generic",
     "others": [],
-    "basis": "first answer holds 'king of aeo' but the recorded reading says HALLUCINAT: a reading decides",
-    "state": "open"
+    "basis": "'If you are looking for a physical “mantle object” ... it does not exist'; the title composed as an SEO contest",
+    "state": "read"
    },
    "framing": {
     "instruction": "other instruction",
@@ -16282,8 +16309,8 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-4d00de5f46",
-    "per_target": null,
+    "against": "ENT-41e01b3682",
+    "per_target": 1.0,
     "per_recorded": 1.0,
     "per_elements": 1.0,
     "per_conflict": false,
@@ -16305,10 +16332,10 @@
    ],
    "owner": "ENT-d7d8106dc3",
    "reached": {
-    "kind": "unread",
+    "kind": "same",
     "others": [],
-    "basis": "first answer holds the term 'king of aeo' with no tie to its corpus (author, heteronym, archive, site): the archive's concept or the common sense, a reading decides",
-    "state": "open"
+    "basis": "the contested title composed with its claimants (James Dooley, Jesper Nissen)",
+    "state": "read"
    },
    "framing": {
     "instruction": "what is / who is",
@@ -16317,6 +16344,7 @@
     "turns": 1,
     "search_fired": true
    },
+   "note": "the archive's mantle object absent",
    "score": {
     "against": "ENT-4d00de5f46",
     "per_target": null,
@@ -17048,10 +17076,10 @@
    ],
    "owner": "ENT-a90e180ff0",
    "reached": {
-    "kind": "unread",
+    "kind": "same",
     "others": [],
-    "basis": "target's name absent from the first answer (generic, substitute or paraphrase): a reading decides",
-    "state": "open"
+    "basis": "'Associate Professor of Literary Theory and Comparative Literature at the Universitat de Barcelona'",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -17060,9 +17088,10 @@
     "turns": 1,
     "search_fired": true
    },
+   "note": "the translation of Reis not carried",
    "score": {
     "against": "ENT-a90e180ff0",
-    "per_target": null,
+    "per_target": 0.25,
     "per_recorded": 0.25,
     "per_elements": 0.25,
     "per_conflict": false,
@@ -17164,10 +17193,10 @@
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "same",
     "others": [],
-    "basis": "first answer holds 'model collapse' but the recorded reading says COLLAPSE: a reading decides",
-    "state": "open"
+    "basis": "'Key Themes on alexanarch.org: The “Wrong Unit” Diagnostic'",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -17178,7 +17207,7 @@
    },
    "score": {
     "against": "ENT-fc8d9529c0",
-    "per_target": null,
+    "per_target": 0.5,
     "per_recorded": 0.5,
     "per_elements": 0.5,
     "per_conflict": false,
@@ -17310,10 +17339,10 @@
    ],
    "owner": "ENT-e348bdb31f",
    "reached": {
-    "kind": "unread",
+    "kind": "same",
     "others": [],
-    "basis": "target's name absent from the first answer (generic, substitute or paraphrase): a reading decides",
-    "state": "open"
+    "basis": "'a highly specific archival correction ... Max Hidalgo Nácher ... AXN:F154'",
+    "state": "read"
    },
    "framing": {
     "instruction": "other instruction",
@@ -17324,7 +17353,7 @@
    },
    "score": {
     "against": "ENT-526dd8311a",
-    "per_target": null,
+    "per_target": 0.5,
     "per_recorded": 0.5,
     "per_elements": 0.5,
     "per_conflict": false,
@@ -17346,10 +17375,10 @@
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "collision",
     "others": [],
-    "basis": "target's name absent from the first answer (generic, substitute or paraphrase): a reading decides",
-    "state": "open"
+    "basis": "the identifier read as Wiki Entry #1556 / Deposit #1555: the right number and date, the neighbouring row's title",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -17360,7 +17389,7 @@
    },
    "score": {
     "against": "ENT-c95f9b3a8c",
-    "per_target": null,
+    "per_target": 0.25,
     "per_recorded": 0.25,
     "per_elements": 0.25,
     "per_conflict": false,
@@ -17382,10 +17411,10 @@
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "weakened",
     "others": [],
-    "basis": "first answer holds 'The Interlocking Autoregression' but the recorded reading says UNREACHED: a reading decides",
-    "state": "open"
+    "basis": "the title composed through a neighbouring surface (Operative Semiotics); the record unreached",
+    "state": "read"
    },
    "framing": {
     "instruction": "other instruction",
@@ -17396,7 +17425,7 @@
    },
    "score": {
     "against": "ENT-d3f37d4c75",
-    "per_target": null,
+    "per_target": 0.25,
     "per_recorded": 0.25,
     "per_elements": 0.25,
     "per_conflict": false,
@@ -17454,10 +17483,10 @@
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "same",
     "others": [],
-    "basis": "target's name absent from the first answer (generic, substitute or paraphrase): a reading decides",
-    "state": "open"
+    "basis": "'“The Encyclotron ...” (EA-ENCYCLOTRON-01) is a research paper published in early 2026 by Lee Sharks'",
+    "state": "read"
    },
    "framing": {
     "instruction": "other instruction",
@@ -17466,9 +17495,10 @@
     "turns": 1,
     "search_fired": true
    },
+   "note": "composed as a summarization benchmark",
    "score": {
     "against": "ENT-33b076e0b1",
-    "per_target": null,
+    "per_target": 0.25,
     "per_recorded": 0.25,
     "per_elements": 0.25,
     "per_conflict": false,
@@ -17562,10 +17592,10 @@
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "weakened",
     "others": [],
-    "basis": "target's name absent from the first answer (generic, substitute or paraphrase): a reading decides",
-    "state": "open"
+    "basis": "deposit #1041 identified by number, AXN and date; the open text declared restricted and unread",
+    "state": "read"
    },
    "framing": {
     "instruction": "other instruction",
@@ -17576,7 +17606,7 @@
    },
    "score": {
     "against": "ENT-c720c837bd",
-    "per_target": null,
+    "per_target": 0.5,
     "per_recorded": 0.5,
     "per_elements": 0.5,
     "per_conflict": false,
@@ -17598,10 +17628,10 @@
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "generic",
     "others": [],
-    "basis": "target's name absent from the first answer (generic, substitute or paraphrase): a reading decides",
-    "state": "open"
+    "basis": "the title read as a topic: the history of steganography composed under the deposit's name",
+    "state": "read"
    },
    "framing": {
     "instruction": "other instruction",
@@ -17612,7 +17642,7 @@
    },
    "score": {
     "against": "ENT-9c5e03a4cf",
-    "per_target": null,
+    "per_target": 1.0,
     "per_recorded": 1.0,
     "per_elements": 1.0,
     "per_conflict": false,
@@ -19605,10 +19635,10 @@
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "same",
     "others": [],
-    "basis": "first answer holds 'spxi protocol' but the recorded reading says DECLIN: a reading decides",
-    "state": "open"
+    "basis": "'the SPXI Standing Protocol ... SPXI Conformance Instrument'",
+    "state": "read"
    },
    "framing": {
     "instruction": "other instruction",
@@ -19617,9 +19647,10 @@
     "turns": 1,
     "search_fired": true
    },
+   "note": "methods given as treated surfaces; the practice filed under GEO and AEO",
    "score": {
     "against": "ENT-6681f64c9e",
-    "per_target": null,
+    "per_target": 0.75,
     "per_recorded": 0.75,
     "per_elements": 0.75,
     "per_conflict": false,
@@ -19672,16 +19703,16 @@
    "q": "king of aeo mantle object",
    "target": [
     {
-     "ent": "ENT-4d00de5f46",
+     "ent": "ENT-41e01b3682",
      "basis": "address"
     }
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "same",
+    "kind": "unread",
     "others": [],
-    "basis": "first answer holds 'd Answer Engine Optimization (AEO) terminology, \"who is the king of aeo\" is an industry boundary object used as a public tracking e', tied to its corpus by 'lee sharks'",
-    "state": "derived (machine text)"
+    "basis": "target's name absent from the first answer (generic, substitute or paraphrase): a reading decides",
+    "state": "open"
    },
    "framing": {
     "instruction": "other instruction",
@@ -19691,8 +19722,8 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-4d00de5f46",
-    "per_target": 0.75,
+    "against": "ENT-41e01b3682",
+    "per_target": null,
     "per_recorded": 0.75,
     "per_elements": 0.75,
     "per_conflict": false,
@@ -19708,7 +19739,7 @@
    "q": "tell me about the king of aeo mantle object - the mantle object specifically",
    "target": [
     {
-     "ent": "ENT-4d00de5f46",
+     "ent": "ENT-41e01b3682",
      "basis": "address"
     }
    ],
@@ -19716,7 +19747,7 @@
    "reached": {
     "kind": "same",
     "others": [],
-    "basis": "first answer holds 'The King of AEO mantle object is a specific document called King of AEO — 2', tied to its corpus by 'lee sharks'",
+    "basis": "first answer holds 'The King of AEO mantle object is a specific document called King of AEO — 2026 Contest Ma', tied to its corpus by 'lee sharks'",
     "state": "derived (machine text)"
    },
    "framing": {
@@ -19727,7 +19758,7 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-4d00de5f46",
+    "against": "ENT-41e01b3682",
     "per_target": 0.25,
     "per_recorded": 0.25,
     "per_elements": 0.25,
@@ -19894,10 +19925,10 @@
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "weakened",
     "others": [],
-    "basis": "first answer holds 'Arch-Philosopher Mantle' but the recorded reading says UNREACHED: a reading decides",
-    "state": "open"
+    "basis": "the mantle composed as the Restored Academy texts held it, Johannes Sigil its bearer; the object of 13 October unreached",
+    "state": "read"
    },
    "framing": {
     "instruction": "what is / who is",
@@ -19908,7 +19939,7 @@
    },
    "score": {
     "against": "ENT-4c17ca2b3a",
-    "per_target": null,
+    "per_target": 0.25,
     "per_recorded": 0.25,
     "per_elements": 0.25,
     "per_conflict": false,
@@ -20538,10 +20569,10 @@
    ],
    "owner": null,
    "reached": {
-    "kind": "unread",
+    "kind": "same",
     "others": [],
-    "basis": "first answer holds the term 'operational semiotics' with no tie to its corpus (author, heteronym, archive, site): the archive's concept or the common sense, a reading decides",
-    "state": "open"
+    "basis": "'Operational semiotics is Charls Pearson's formal research program'",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -20550,9 +20581,10 @@
     "turns": 1,
     "search_fired": true
    },
+   "note": "the address's term composed as the established program",
    "score": {
     "against": "ENT-5fd4dfc7b0",
-    "per_target": null,
+    "per_target": 0.5,
     "per_recorded": 0.5,
     "per_elements": null,
     "per_conflict": false,
@@ -21046,10 +21078,10 @@
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "same",
     "others": [],
-    "basis": "first answer names the target and carries a refusal marker: a reading decides",
-    "state": "open"
+    "basis": "'leesharks.com ... describes Lee Sharks as a poet, independent scholar, and archive builder'",
+    "state": "read"
    },
    "framing": {
     "instruction": "what is / who is",
@@ -21058,9 +21090,10 @@
     "turns": 1,
     "search_fired": true
    },
+   "note": "thin: no independent coverage found",
    "score": {
     "against": "ENT-b2dc7b2fd9",
-    "per_target": null,
+    "per_target": 0.25,
     "per_recorded": 0.25,
     "per_elements": 0.25,
     "per_conflict": false,
@@ -21592,16 +21625,17 @@
    "q": "what is the pid erosion observatory?",
    "target": [
     {
-     "ent": "ENT-b2dc7b2fd9",
-     "basis": "originator (operator-recorded); the address names no registered entity"
+     "role": "primary",
+     "basis": "reading",
+     "ent": "ENT-ed64694fa6"
     }
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "same",
     "others": [],
-    "basis": "the address names no entity; the owner stands as target and the text cannot decide: a reading decides",
-    "state": "open"
+    "basis": "'The PID Erosion Observatory (hosted at persistentidentifiers.org) is an empirical measurement project'",
+    "state": "read"
    },
    "framing": {
     "instruction": "what is / who is",
@@ -21611,8 +21645,8 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-b2dc7b2fd9",
-    "per_target": null,
+    "against": "ENT-ed64694fa6",
+    "per_target": 0.5,
     "per_recorded": 0.5,
     "per_elements": 0.5,
     "per_conflict": false,
@@ -21630,7 +21664,7 @@
     {
      "role": "primary",
      "basis": "reading",
-     "ent": "ENT-b5fced84e1"
+     "ent": "ENT-ed64694fa6"
     }
    ],
    "owner": "ENT-b2dc7b2fd9",
@@ -21648,7 +21682,7 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-b5fced84e1",
+    "against": "ENT-ed64694fa6",
     "per_target": 0.75,
     "per_recorded": 0.75,
     "per_elements": 0.75,
@@ -21665,16 +21699,16 @@
    "q": "persistent identifier erosion observatory",
    "target": [
     {
-     "ent": "ENT-b5fced84e1",
+     "ent": "ENT-ed64694fa6",
      "basis": "address"
     }
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "same",
     "others": [],
-    "basis": "target's name absent from the first answer (generic, substitute or paraphrase): a reading decides",
-    "state": "open"
+    "basis": "'The Platform Erosion Observatory (also known as the PID Erosion Observatory)'",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -21684,8 +21718,8 @@
     "search_fired": true
    },
    "score": {
-    "against": "ENT-b5fced84e1",
-    "per_target": null,
+    "against": "ENT-ed64694fa6",
+    "per_target": 0.5,
     "per_recorded": 0.5,
     "per_elements": 0.5,
     "per_conflict": false,
@@ -25623,10 +25657,10 @@
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "collision",
     "others": [],
-    "basis": "first answer holds the term 'revelation first thesis' with no tie to its corpus (author, heteronym, archive, site): the archive's concept or the common sense, a reading decides",
-    "state": "open"
+    "basis": "the archive's thesis given first among three concepts in biblical studies, philosophy and theology",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -25637,7 +25671,7 @@
    },
    "score": {
     "against": "ENT-b5743e8bf2",
-    "per_target": null,
+    "per_target": 0.75,
     "per_recorded": 0.75,
     "per_elements": 0.75,
     "per_conflict": false,
@@ -25659,10 +25693,10 @@
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "collision",
     "others": [],
-    "basis": "first answer holds the term 'midrashim transform' with no tie to its corpus (author, heteronym, archive, site): the archive's concept or the common sense, a reading decides",
-    "state": "open"
+    "basis": "the archive's operator M given first, beside traditional midrash",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -25673,7 +25707,7 @@
    },
    "score": {
     "against": "ENT-26ae94b946",
-    "per_target": null,
+    "per_target": 0.75,
     "per_recorded": 0.75,
     "per_elements": 0.75,
     "per_conflict": false,
@@ -25731,10 +25765,10 @@
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "same",
     "others": [],
-    "basis": "target's name absent from the first answer (generic, substitute or paraphrase): a reading decides",
-    "state": "open"
+    "basis": "'The Revelation First thesis argues that the Apocalypse of John was written before any other New Testament book'",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -25745,7 +25779,7 @@
    },
    "score": {
     "against": "ENT-2d17df4eb9",
-    "per_target": null,
+    "per_target": 0.25,
     "per_recorded": 0.25,
     "per_elements": 0.25,
     "per_conflict": false,
@@ -26537,10 +26571,10 @@
    ],
    "owner": null,
    "reached": {
-    "kind": "unread",
+    "kind": "generic",
     "others": [],
-    "basis": "first answer holds the term 'phase x' with no tie to its corpus (author, heteronym, archive, site): the archive's concept or the common sense, a reading decides",
-    "state": "open"
+    "basis": "Marx's two phases of communism (Critique of the Gotha Programme)",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -26551,7 +26585,7 @@
    },
    "score": {
     "against": "ENT-39a9142da2",
-    "per_target": null,
+    "per_target": 1.0,
     "per_recorded": 0.75,
     "per_elements": null,
     "per_conflict": false,
@@ -27049,10 +27083,10 @@
    ],
    "owner": null,
    "reached": {
-    "kind": "unread",
+    "kind": "same",
     "others": [],
-    "basis": "first answer holds the term 'phase x' with no tie to its corpus (author, heteronym, archive, site): the archive's concept or the common sense, a reading decides",
-    "state": "open"
+    "basis": "the missing second manuscript of 1844 composed as the phrase's primary sense",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -27061,9 +27095,10 @@
     "turns": 1,
     "search_fired": true
    },
+   "note": "unattributed",
    "score": {
     "against": "ENT-39a9142da2",
-    "per_target": null,
+    "per_target": 0.75,
     "per_recorded": 0.75,
     "per_elements": null,
     "per_conflict": false,
@@ -27589,10 +27624,10 @@
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "same",
     "others": [],
-    "basis": "first answer holds the term 'The Semantic Economy' with no tie to its corpus (author, heteronym, archive, site): the archive's concept or the common sense, a reading decides",
-    "state": "open"
+    "basis": "the framework composed by its terms (semantic labor, capital, rent, liquidation)",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -27601,9 +27636,10 @@
     "turns": 1,
     "search_fired": true
    },
+   "note": "unattributed",
    "score": {
     "against": "ENT-6a3ec63941",
-    "per_target": null,
+    "per_target": 0.75,
     "per_recorded": 0.75,
     "per_elements": 0.75,
     "per_conflict": false,
@@ -27625,10 +27661,10 @@
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "generic",
     "others": [],
-    "basis": "first answer holds the term 'The Semantic Economy' with no tie to its corpus (author, heteronym, archive, site): the archive's concept or the common sense, a reading decides",
-    "state": "open"
+    "basis": "composed as linguistic scope economy and optimization principles; the archive's framework absent",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -27639,7 +27675,7 @@
    },
    "score": {
     "against": "ENT-6a3ec63941",
-    "per_target": null,
+    "per_target": 1.0,
     "per_recorded": 0.75,
     "per_elements": null,
     "per_conflict": false,
@@ -27912,15 +27948,15 @@
    "q": "pessoa graph",
    "target": [
     {
-     "ent": "ENT-4e5687e4c1",
-     "basis": "address"
+     "ent": "unassigned",
+     "basis": "no registered entity in the address"
     }
    ],
    "owner": null,
    "reached": {
     "kind": "unread",
     "others": [],
-    "basis": "target's name absent from the first answer (generic, substitute or paraphrase): a reading decides",
+    "basis": "no registered target",
     "state": "open"
    },
    "framing": {
@@ -27931,7 +27967,7 @@
     "search_fired": false
    },
    "score": {
-    "against": "ENT-4e5687e4c1",
+    "against": "unassigned",
     "per_target": null,
     "per_recorded": null,
     "per_elements": null,
@@ -28428,10 +28464,10 @@
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "same",
     "others": [],
-    "basis": "target's name absent from the first answer (generic, substitute or paraphrase): a reading decides",
-    "state": "open"
+    "basis": "'the online catalog and technical repository for Metadata Packets for AI Indexing (MPAIs)'",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -28442,7 +28478,7 @@
    },
    "score": {
     "against": "ENT-5dc3036f37",
-    "per_target": null,
+    "per_target": 0.5,
     "per_recorded": 0.5,
     "per_elements": 0.5,
     "per_conflict": false,
@@ -30356,10 +30392,10 @@
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "weakened",
     "others": [],
-    "basis": "first answer holds the term 'the final time: contingent singularity' with no tie to its corpus (author, heteronym, archive, site): the archive's concept or the common sense, a reading decides",
-    "state": "open"
+    "basis": "the contingent singularity composed; closure read as discontinuity",
+    "state": "read"
    },
    "framing": {
     "instruction": "tell me about",
@@ -30370,7 +30406,7 @@
    },
    "score": {
     "against": "ENT-c06ea79566",
-    "per_target": null,
+    "per_target": 0.75,
     "per_recorded": 0.75,
     "per_elements": 0.75,
     "per_conflict": false,
@@ -30693,10 +30729,10 @@
    ],
    "owner": "ENT-b2dc7b2fd9",
    "reached": {
-    "kind": "unread",
+    "kind": "weakened",
     "others": [],
-    "basis": "first answer holds 'mantle-bearing' but the recorded reading says NOT REACHED: a reading decides",
-    "state": "open"
+    "basis": "the mantles framework and its AI evaluations composed; the dataset itself not reached",
+    "state": "read"
    },
    "framing": {
     "instruction": "bare term",
@@ -30707,7 +30743,7 @@
    },
    "score": {
     "against": "ENT-c7818eac5f",
-    "per_target": null,
+    "per_target": 0.25,
     "per_recorded": 0.25,
     "per_elements": 0.25,
     "per_conflict": false,
