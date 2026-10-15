@@ -1,3 +1,25 @@
+# 🫵❓2️⃣4️⃣🗓️ = ❓
+
+**Ichabod Spellings** · restored 2026-10-15
+
+**AXN:** AXN:04A3 — Alexanarch deposit #1170 (self-reference in root form by pre-hash necessity)
+**Restoration status:** RESTORED — the body previously seated here was a different work (wrong body). The published text, recovered from https://mindcontrolpoems.blogspot.com/2026/02/24-24-i-kept-open-for-that-was-to-now-i.html, is seated here as the canonical body. Identity: the post text is verbatim the DataCite abstract of 10.5281/zenodo.18512288 (data/datacite-full-backup.json), the deposit's own DOI; the body seated 2026-07-19 was the DOI Registry v7.0 post (zenodo 19055255). Seated as its own work nowhere else in the archive (it occurs only quoted inside the DOI registries #31, #1171, #1251). Un-retired by ruling (scripts/repair_retirements_20261015.py). The previously seated body is retained below as an appendix.
+**DOI(s):** (none recorded)
+
+---
+
+🫵❓2️⃣4️⃣🗓️ = ❓
+
+2️⃣4️⃣🗓️ = ☀️ + 🌙  
+2️⃣4️⃣🗓️,🚪 for 🫵  
+🎁 to 🫵  
+🎁 🚫  
+🌅🆕.
+
+---
+
+## Appendix — body previously seated here — a different work, superseded 2026-10-15 (retained per non-destruction)
+
 ---
 deposit_number: 1170
 hex: 04A3

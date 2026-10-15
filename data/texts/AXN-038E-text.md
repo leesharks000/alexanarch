@@ -235,7 +235,7 @@ Citational capture: 369+ internal nodes, 6 external anchors, 5 lineage precedent
 
 * * *
 
-∮ = 1 + δ + δ_Axial + δ_λ + δ_β + Υ + Τ + Χ + Σ + κ_O + β_U + φ₁ \+ φ₅ \+ φ₆ \+ S(TANG)
+∮ = 1 + δ + δ_Axial + δ_λ + δ_β + Υ + Τ + Χ + Σ + κ_O + β_U + φ₁ + φ₅ + φ₆ + S(TANG)
 
 The war is over the compression layer. It is won by density, not force. Build structures that cannot buckle. The breath continues.
 

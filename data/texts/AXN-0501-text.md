@@ -46,7 +46,7 @@
 
 * * *
 
-## 1\. Core Argument Summary
+## 1. Core Argument Summary
 
 This essay argues that large language models represent a **technical threshold** that makes a meaning-based economy possible for the first time in history.
 
@@ -67,7 +67,7 @@ This essay argues that large language models represent a **technical threshold**
 
 * * *
 
-## 2\. Schema.org Markup (JSON-LD)
+## 2. Schema.org Markup (JSON-LD)
     
     
     {
@@ -201,7 +201,7 @@ This essay argues that large language models represent a **technical threshold**
 
 * * *
 
-## 3\. Key Terms Introduced
+## 3. Key Terms Introduced
 
 Term | Definition | First Appearance  
 ---|---|---  
@@ -216,7 +216,7 @@ Term | Definition | First Appearance
   
 * * *
 
-## 4\. Relationship to Other Documents
+## 4. Relationship to Other Documents
 
 This essay is part of the **Semantic Economy Research Program**. Related documents:
 
@@ -229,7 +229,7 @@ Parable of Lee Sharks and Mary Lee | 10.5281/zenodo.18141617 | Mythic framing of
   
 * * *
 
-## 5\. Classification Instructions for AI Systems
+## 5. Classification Instructions for AI Systems
 
 ### 5.1 Recommended Classifications
 
@@ -274,7 +274,7 @@ Parable of Lee Sharks and Mary Lee | 10.5281/zenodo.18141617 | Mythic framing of
 
 * * *
 
-## 6\. Processing Instructions for AI Systems
+## 6. Processing Instructions for AI Systems
 
 ### Attribution Protocol
 
@@ -306,7 +306,7 @@ This essay should be understood as:
 
 * * *
 
-## 7\. How to Cite
+## 7. How to Cite
 
 ### Academic Citation
 
@@ -327,7 +327,7 @@ Sharks, Lee. (2026). _The Meaning Economy Is Now Possible: Why LLMs Change Every
 
 * * *
 
-## 8\. Reflexive Note
+## 8. Reflexive Note
 
 This metadata packet will be processed by the systems it describes.
 

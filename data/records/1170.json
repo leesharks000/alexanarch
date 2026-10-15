@@ -1,10 +1,10 @@
 {
  "deposit_number": 1170,
- "axn": "AXN:04A3.UNCLASSIFIED.🕖💥💛🪧↗️🔓",
+ "axn": "AXN:04A3.UNCLASSIFIED.🕕👉🔬📏☿💙",
  "hex": "04A3",
  "family": "UNCLASSIFIED",
- "emoji": "🕖💥💛🪧↗️🔓",
- "hash": "68ebcd4ddafae0982684e7809232e182660b977bbb9ee39ba46d54437beb83fc",
+ "emoji": "🕕👉🔬📏☿💙",
+ "hash": "67b9374fa2cbcdcfd784eb006b298658ba05398dff2a3444ce2c3d4fc53045e8",
  "title": "🫵❓2️⃣4️⃣🗓️ = ❓",
  "creator": "Ichabod Spellings",
  "date": "2026-03-16",
@@ -15,14 +15,14 @@
  "root_axn": "AXN:04A3.UNCLASSIFIED",
  "axn_schema_version": "v2",
  "protocol_version": "alexanarch-deposit-protocol/v1",
- "axn_canonical": "68ebcd4ddafae0982684e7809232e182660b977bbb9ee39ba46d54437beb83fc",
+ "axn_canonical": "67b9374fa2cbcdcfd784eb006b298658ba05398dff2a3444ce2c3d4fc53045e8",
  "clusters": [
   "Temporal",
-  "Liminal",
-  "Signal",
+  "Gestural",
+  "Instrumental",
   "Scriptural",
-  "Structural",
-  "Terminal"
+  "Alchemical",
+  "Signal"
  ],
  "axn_reading": "Duration -> Threshold -> Alarm -> Text -> Direction -> Closure",
  "minted_at": "2026-07-19T20:30:02Z",
@@ -85,33 +85,12 @@
  "body_status": {
   "class": "full",
   "lacuna": false,
-  "recovery_status": "COMPLETE",
-  "residual_chars": 162977,
-  "audited_at": "2026-07-19T20:30:02Z",
-  "audit_version": "mint-time-declaration",
-  "measured_prose_words": 16486,
-  "measured_at": "2026-07-31",
-  "work_sha256_declared": "a391f22c4d03e360b4d71a0286bb2d91222df9ec2848e8e38febd68f47919221",
-  "work_sha256": "33bc919541f44832017a50594f32d7b946bb8c0163886ddaa8c68330a8144a2e",
-  "prior_bytes_sha256": "68ebcd4ddafae0982684e7809232e182660b977bbb9ee39ba46d54437beb83fc",
-  "w13_tier2": "2026-08-04 W13 TIER 2 BYTE UNGLUE: 48 glued heading markers -> 0. WHITESPACE-ONLY transform (content identical under whitespace normalisation, verified before write); code fences exempt; prior sha retained. Re-fetching could not fix this class — the blog source is ITSELF glued (the collapse predates publication), so the deterministic transform applied at display since tier 1 is now applied to the bytes, which also fixes PDFs, the body-index, and downloads.",
-  "w13_tier2_correction": "2026-08-05 REGRESSION REPAIRED: the W13 tier-2 byte unglue used a lookbehind that treated the first \"#\" of a legitimate \"###\" heading as the preceding non-newline character, splitting \"### Heading\" into \"#\" + blank + \"## Heading\". My safety check verified content-identity under WHITESPACE normalisation, which the split satisfies — the wrong invariant. Headings rejoined; only \"#\" and whitespace differ from the damaged state, verified before write.",
-  "description_provenance": {
-   "date": "2026-08-05",
-   "note": "— Description restored 2026-08-05, composed from the work's own opening prose; it replaces a batch-restoration stub that described the recovery event rather than the work. A fuller editorial treatment belongs to the description/wiki review stream.",
-   "moved": "2026-08-06 — relocated out of the public description field. An editorial note about how a description was produced is apparatus, not description; publishing it to the reader is the same class of defect as the guidance-to-writer articles found in the wiki campaign."
-  },
-  "retired": {
-   "class": "superseded",
-   "resolves_to": 31,
-   "declared": "2026-08-10",
-   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
-   "indexable": true,
-   "indexing_ruled": {
-    "on": "2026-10-15",
-    "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
-   }
-  }
+  "recovery_status": "RESTORED-20261015",
+  "recovered_from": "https://mindcontrolpoems.blogspot.com/2026/02/24-24-i-kept-open-for-that-was-to-now-i.html",
+  "residual_chars": 162570,
+  "audited_at": "2026-10-15T22:11:44.138292+00:00",
+  "audit_version": "restore_wrong_bodies-20261015",
+  "class_before_restoration": "full"
  },
  "references_concepts": [
   "AI summarizer traversal",
@@ -349,7 +328,6 @@
   "overall_conformance": "partial"
  },
  "external_metadata_path": "/data/external-metadata/AXN-04A3.json",
- "duplicate_note": "DUPLICATE MINT (2026-07-19 restoration; body containment 1.0): this work already existed as deposit #31, which remains canonical. Minted because the restoration census matched identity by title only and never searched the registry; wired per MANUS ruling 2026-07-19. Non-destruction: record retained, authority consolidated at #31.",
  "title_repair_log": [
   {
    "at": "2026-07-28T15:20:20Z",
@@ -449,11 +427,17 @@
    "reason": "superseded record made indexable; canonical self (ruling 2026-10-15: only metadata stubs are noindex)",
    "was": "{\"class\": \"superseded\", \"resolves_to\": 31, \"declared\": \"2026-08-10\", \"note\": \"Page carries noindex, a canonical link to the successor where one exists, and a banner before the body. The URL is kept; t",
    "now": "{\"class\": \"superseded\", \"resolves_to\": 31, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current versio"
+  },
+  {
+   "date": "2026-10-15",
+   "field": "status",
+   "reason": "retirement reversed (it was caused by a wrong body); the work seated",
+   "was": "{\"retired\": {\"class\": \"superseded\", \"resolves_to\": 31, \"declared\": \"2026-08-10\", \"note\": \"Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the cu",
+   "now": "{\"retired\": null}"
   }
  ],
  "date_modified": "2026-10-15",
  "publisher": "Alexanarch — the Crimson Hexagonal Archive",
- "superseded_reason": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #31 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan).",
  "version_basis": {
   "ruling": "AUDIT: project v7.0",
   "prior_registry_claim": "v1.0",
@@ -483,6 +467,43 @@
   "heading": "## Falsification Conditions",
   "harvested": "2026-09-08"
  },
+ "retirement_reversed": {
+  "superseded_reason": "Duplicate witness of the same work: this record preserves the blog-recovered byte witness (restoration queue 2026-07-19, html2text conversion of the authorial blog surface); the record of standing is #31 (original deposit lineage). Byte forms differ by conversion path, not by established revision; content-level revision comparison is queued (SAMEVER follow-up scan).",
+  "duplicate_note": "DUPLICATE MINT (2026-07-19 restoration; body containment 1.0): this work already existed as deposit #31, which remains canonical. Minted because the restoration census matched identity by title only and never searched the registry; wired per MANUS ruling 2026-07-19. Non-destruction: record retained, authority consolidated at #31.",
+  "retired": {
+   "class": "superseded",
+   "resolves_to": 31,
+   "declared": "2026-08-10",
+   "note": "Superseded, not a stub: indexable (ruling 2026-10-15). The page carries a banner before the body naming the current version to cite, and an axn:retired marker; its canonical is its own URL. The URL is kept; the record is not deleted.",
+   "indexable": true,
+   "indexing_ruled": {
+    "on": "2026-10-15",
+    "ruling": "superseded records are allowed to be indexed. it was only a specific class of unrecoverable metadata stubs that was to be no indexed"
+   }
+  },
+  "reversed_on": "2026-10-15",
+  "ruled_by": "Lee Sharks, 2026-10-15: \"yes, unretire and seat texts, but make sure youre not duplicating something that already exists elsewhere on the blog.\"",
+  "why": "retired on 2026-08-10 as a duplicate witness of #31 on a body containment of 1.0 measured against the wrong body (the DOI Registry v7.0 post seated here 2026-07-19). The work — the emoji poem, verbatim the DataCite abstract of 10.5281/zenodo.18512288 — is seated as its own work nowhere else in the archive."
+ },
+ "reading": "Duration -> Touch -> Method -> Text -> Transmutation -> Alarm",
+ "restoration": {
+  "fulltext": "restored",
+  "fulltext_source": "https://mindcontrolpoems.blogspot.com/2026/02/24-24-i-kept-open-for-that-was-to-now-i.html",
+  "restored_at": "2026-10-15",
+  "repair_kind": "wrong_body",
+  "identity_basis": "the post text is verbatim the DataCite abstract of 10.5281/zenodo.18512288 (data/datacite-full-backup.json), the deposit's own DOI; the body seated 2026-07-19 was the DOI Registry v7.0 post (zenodo 19055255). Seated as its own work nowhere else in the archive (it occurs only quoted inside the DOI registries #31, #1171, #1251). Un-retired by ruling (scripts/repair_retirements_20261015.py)",
+  "axn_before_restoration": "AXN:04A3.UNCLASSIFIED.🕖💥💛🪧↗️🔓",
+  "hash_before_restoration": "68ebcd4ddafae0982684e7809232e182660b977bbb9ee39ba46d54437beb83fc",
+  "ruled_by": "Lee Sharks, 2026-10-15: \"lets restore the ones we can\" (wrong bodies first, from the blog or elsewhere in the archive); repair standard: the text as he published it. Identity of each post checked by hand; the basis is recorded per record.",
+  "escape_fix": {
+   "on": "2026-10-15",
+   "escapes_removed": 1,
+   "hash_before": "71de5fa959c7b55a727111533cbd4a9c1129da636a72d54216b5eec11e085c6a",
+   "axn_before": "AXN:04A3.UNCLASSIFIED.🌺🔃🌀♈🪞⚪",
+   "why": "html2text's markdown escapes removed where the published post does not carry them; the renderer showed them as literal backslashes"
+  }
+ },
+ "remediation_note": "2026-10-15 RECORD REPAIR (wrong body): the body previously seated here was a different work (wrong body); the published text from https://mindcontrolpoems.blogspot.com/2026/02/24-24-i-kept-open-for-that-was-to-now-i.html seated as canonical; new hash and glyph; the previous body retained as appendix.",
  "_projection": {
   "note": "Derived file. Canonical machine record is this entry in data/registry.json; the human record is the record_url. Do not edit this file.",
   "record_url": "https://www.alexanarch.org/s/records/1170/",

@@ -32,7 +32,7 @@ Liberation philology is the study of how grammatical structures -- shaped by his
 
 * * *
 
-## 0\. LIBERATION PHILOLOGY: A DECLARATION OF FIELD
+## 0. LIBERATION PHILOLOGY: A DECLARATION OF FIELD
 
 **Liberation philology** is the study of how grammatical structures -- shaped by histories of conquest, administration, and philosophical hegemony -- systematically disable the expression of certain diagnostic claims, and of the practices that compensate for or repair those disabilities. Its object is not language in general but _historically produced grammatical incapacities_ -- specific morphosyntactic items (prepositions, aspect markers, mood distinctions, case systems) that fail to encode distinctions necessary for structural analysis. Its method is historical-linguistic genealogy in the service of structural diagnosis: tracing the contact events, institutional pressures, and philosophical shifts that produced each incapacity. Its normative commitment is what liberation theology calls the _preferential option_ -- here, the preferential option for the structurally diagnosed: those who need to name function without being heard as attributing intent.
 
@@ -152,10 +152,10 @@ The Old English preposition _for_ (also _fore_ , _foran_) had a primarily **caus
 
 
 
-What is notable about Old English _for_ is what it does **not** prominently encode: _purpose_. The dominant purpose construction in Old English was **infinitival** : _tō_ \+ inflected infinitive, as Fischer (1992) and Los (2005) have demonstrated in their studies of infinitival complementation:
+What is notable about Old English _for_ is what it does **not** prominently encode: _purpose_. The dominant purpose construction in Old English was **infinitival** : _tō_ + inflected infinitive, as Fischer (1992) and Los (2005) have demonstrated in their studies of infinitival complementation:
 
-  * _"He cōm tō biddanne"_ -- "He came to pray" (purpose expressed by _tō_ \+ inflected infinitive)
-  * _"Þæt wæs tō tacne"_ -- "That was for a sign" (purpose expressed by _tō_ \+ dative)
+  * _"He cōm tō biddanne"_ -- "He came to pray" (purpose expressed by _tō_ + inflected infinitive)
+  * _"Þæt wæs tō tacne"_ -- "That was for a sign" (purpose expressed by _tō_ + dative)
 
 
 
@@ -178,10 +178,10 @@ The Norman Conquest (1066) and the subsequent centuries of French-Latin bilingua
 
 Latin has **distinct constructions** for purpose, function, cause, and result:
 
-  * **Purpose:** _ut_ \+ subjunctive ("in order that..."), _ad_ \+ gerundive ("for the purpose of...")
-  * **Cause:** _propter_ \+ accusative ("because of"), _ob_ \+ accusative ("on account of")
-  * **Function/Substitution:** _pro_ \+ ablative ("on behalf of," "in place of," "in the functional role of")
-  * **Result:** _ita ut_ \+ indicative ("with the result that...")
+  * **Purpose:** _ut_ + subjunctive ("in order that..."), _ad_ + gerundive ("for the purpose of...")
+  * **Cause:** _propter_ + accusative ("because of"), _ob_ + accusative ("on account of")
+  * **Function/Substitution:** _pro_ + ablative ("on behalf of," "in place of," "in the functional role of")
+  * **Result:** _ita ut_ + indicative ("with the result that...")
 
 
 
@@ -217,7 +217,7 @@ In Old English, this would not have been rendered with _for_. The functional-rol
 
 English absorbed the inflation wholesale. The Middle English expansion of "for" -- documented in the _Oxford English Dictionary_ and analyzed in Mustanoja's _A Middle English Syntax_ (1960) and Burnley's _The History of the English Language: A Source Book_ (2000) -- shows the preposition acquiring purpose-readings it did not originally carry:
 
-  * "For to" + infinitive (purpose construction, calqued from French _pour_ \+ infinitive): "He came for to help" = "He came in order to help." Fischer (1992) and Los (2005) track this construction's rise and fall. It peaked in the 14th-15th centuries, and it **explicitly grammaticalized intent** into the preposition "for." Even after "for to" fell out of standard usage (replaced by simple "to"), the purpose/intent association remained embedded in "for" itself. This is the mechanism Hopper and Traugott (2003) call **persistence** : a grammaticalized form retains traces of its earlier meaning, but the reverse also holds -- the receiving form (here, "for") retains traces of the meaning that passed through it.
+  * "For to" + infinitive (purpose construction, calqued from French _pour_ + infinitive): "He came for to help" = "He came in order to help." Fischer (1992) and Los (2005) track this construction's rise and fall. It peaked in the 14th-15th centuries, and it **explicitly grammaticalized intent** into the preposition "for." Even after "for to" fell out of standard usage (replaced by simple "to"), the purpose/intent association remained embedded in "for" itself. This is the mechanism Hopper and Traugott (2003) call **persistence** : a grammaticalized form retains traces of its earlier meaning, but the reverse also holds -- the receiving form (here, "for") retains traces of the meaning that passed through it.
 
   * "What is this for?" -- the question that crystallizes the collapse. In Old English, this would have been answered causally ("because of X") or functionally ("it serves as X"). In Middle and Modern English, the expected answer is intentional: "Someone made it for Y purpose." The question _presupposes a purposer_. This is what Traugott (1989) calls **subjectification** -- the drift of grammatical meaning from objective/propositional toward subjective/speaker-oriented -- documented specifically for English "to" and "for" in their purposive uses (cf. Traugott and Dasher 2002, _Regularity in Semantic Change_ ; and the extended study of _to_ and _for_ grammaticalization in Khalifa 2015). The "for" of cause (objective: the world arranged this way) becomes the "for" of purpose (subjective: someone intended this). Liberation philology names the political consequence of subjectification: intent capture.
 
@@ -258,7 +258,7 @@ Greek distinguishes purpose from result and function through **mood and conjunct
 
 
 
-The distinction between ἵνα + subjunctive (purpose: someone intended this) and ὥστε + indicative (result: this is what actually happened) is grammaticalized -- anchored in morphology. A Greek speaker can say "the structure served _hōste_ \+ indicative" and mean: this is what it functionally accomplished, as a matter of fact, irrespective of anyone's plan. English has no equivalent construction.
+The distinction between ἵνα + subjunctive (purpose: someone intended this) and ὥστε + indicative (result: this is what actually happened) is grammaticalized -- anchored in morphology. A Greek speaker can say "the structure served _hōste_ + indicative" and mean: this is what it functionally accomplished, as a matter of fact, irrespective of anyone's plan. English has no equivalent construction.
 
 To see this diagnostic capacity in action, consider Thucydides (_History of the Peloponnesian War_ 1.23.6):
 
@@ -276,7 +276,7 @@ As noted above, Latin distinguishes _ad_ (purpose, direction toward), _pro_ (fun
 
 > _Quod enim ita iustum est, ut id pro iure civili habeatur._ "For what is so just that it is held _pro iure civili_ " -- i.e., "in the functional capacity of civil law," "serving as civil law."
 
-Here _pro_ \+ ablative (_pro iure civili_) indicates what something _structurally serves as_ in the legal system -- not what anyone intended it to be. The justice is held _in the role of_ civil law; it functions as civil law regardless of whether any legislator specifically intended that function. An English translation using "for" -- "held for civil law" -- would immediately activate the question: _who intended it as civil law?_ The Latin does not ask this. _Pro_ \+ ablative names the structural position, not the subjective aim.
+Here _pro_ + ablative (_pro iure civili_) indicates what something _structurally serves as_ in the legal system -- not what anyone intended it to be. The justice is held _in the role of_ civil law; it functions as civil law regardless of whether any legislator specifically intended that function. An English translation using "for" -- "held for civil law" -- would immediately activate the question: _who intended it as civil law?_ The Latin does not ask this. _Pro_ + ablative names the structural position, not the subjective aim.
 
 This distinction was operative in precisely the administrative and legal contexts through which Latin influenced English -- and it was precisely this distinction that was lost when English "for" was forced to translate both _pro_ (function) and _ad_ (purpose).
 
@@ -285,7 +285,7 @@ This distinction was operative in precisely the administrative and legal context
 German preserves a richer prepositional field:
 
   * _für_ -- general "for" (carries the same ambiguity as English, but less severely because other constructions are available)
-  * _um...zu_ \+ infinitive -- purpose ("in order to") -- explicitly intent-indexed
+  * _um...zu_ + infinitive -- purpose ("in order to") -- explicitly intent-indexed
   * _damit_ -- purpose/result ("so that") -- can shade toward function depending on context
   * _als_ -- function/role ("as," "in the capacity of") -- explicitly non-intentional
   * _dazu da_ -- "there for that" -- can indicate structural function
@@ -369,7 +369,7 @@ When a junior faculty member attempts to say "this hiring process is _for_ the r
 
 A language that could anchor function without intent would need one of the following:
 
-**A dedicated preposition.** A word that means "in the structural function of" -- as _pro_ \+ ablative once meant in Latin, before its purpose-readings migrated into it. English has no such word. "As" comes closest but is too weak -- it indicates role or capacity, not the stronger claim that something _served_ a function.
+**A dedicated preposition.** A word that means "in the structural function of" -- as _pro_ + ablative once meant in Latin, before its purpose-readings migrated into it. English has no such word. "As" comes closest but is too weak -- it indicates role or capacity, not the stronger claim that something _served_ a function.
 
 **A morphological marker.** An affix or modification that converts "for" from ambiguous to function-specific. Compare: English has no aorist morphology, but some languages mark aspect on the verb stem. Similarly, a language could mark the preposition to indicate "functional" vs. "intentional" readings.
 
@@ -467,7 +467,7 @@ Liberation philology's first two findings -- both from the Phase X program withi
 
 **Finding 1: The Aorist Gap.** English has no dedicated morphology for the perfective/aorist aspect -- the view of an action as a completed whole, seen from outside, without reference to internal duration or process. The simple past _contains_ the aorist but cannot _anchor_ to it. Consequence: English speakers cannot grammatically name completed action without importing duration, process, or habituality. Structural diagnosis -- which requires naming what _happened_ as a sealed fact -- must work against the grain of the verb system.
 
-**Finding 2: The Prepositional Alienation.** English "for" cannot anchor functional-teleological claims without activating intent attribution. The distinction between _what something structurally served_ and _what someone intended it for_ -- preserved in Greek (ὥστε + indicative vs. ἵνα + subjunctive), in Latin (_pro_ \+ ablative vs. _ad_ \+ gerundive), and partially in German (_als_ vs. _um...zu_) -- was collapsed through Norman French purpose-calquing, Latin _ad/pro_ compression, and the Enlightenment elimination of final causation. Consequence: every functional diagnosis in English can be heard as an intent accusation, and the defense "that wasn't our intention" is always grammatically available.
+**Finding 2: The Prepositional Alienation.** English "for" cannot anchor functional-teleological claims without activating intent attribution. The distinction between _what something structurally served_ and _what someone intended it for_ -- preserved in Greek (ὥστε + indicative vs. ἵνα + subjunctive), in Latin (_pro_ + ablative vs. _ad_ + gerundive), and partially in German (_als_ vs. _um...zu_) -- was collapsed through Norman French purpose-calquing, Latin _ad/pro_ compression, and the Enlightenment elimination of final causation. Consequence: every functional diagnosis in English can be heard as an intent accusation, and the defense "that wasn't our intention" is always grammatically available.
 
 Both findings share a structure: English _contains_ the structural-diagnostic reading but cannot _anchor_ to it. In both cases, the language forces the speaker to begin from the wrong place (duration, intent) and qualify toward the structural claim. In both cases, the gap serves the prosecutorial frame -- the apparatus that deflects structural analysis by demanding psychological evidence the grammar itself trained the listener to expect.
 

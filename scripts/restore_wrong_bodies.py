@@ -13,8 +13,11 @@ glyph, AXN recomposed in the same hex and family, restoration dict and remediati
 The candidate list is ruled, not gated: each entry was matched to its post and its identity checked by hand (the
 post carries the deposit's DOI or hex, or its exact title and date); the basis is recorded per record.
 
-USAGE: python3 scripts/restore_wrong_bodies.py RULED.json [--dry-run]
-       RULED.json = {"<deposit>": {"url": ..., "kind": "wrong_body"|"missing_body", "basis": ...}, ...}
+USAGE: python3 scripts/restore_wrong_bodies.py RULED.json [--dry-run] [--report PATH]
+       RULED.json = {"<deposit>": {"url": ..., "kind": "wrong_body"|"missing_body"|"missing_part", "basis": ...,
+                                   "part_heading": ... (missing_part only)}, ...}
+       missing_part (ruling 2026-10-15, "flesh it out wherever the full text is available"): the deposit's own
+       file list names a part that was never seated; the recovered part is added after the seated body.
 Report: --report (default data/restoration-wrong-bodies-2026-10-15.json; give each later run its own)
 """
 import argparse, datetime, hashlib, json, re, sys
@@ -27,6 +30,10 @@ from legal_name import contains_legal_name  # hashed guard (b18dfa7c88)
 import html2text
 _H = html2text.HTML2Text(); _H.body_width = 0
 to_md = lambda h: _H.handle(h)
+# html2text escapes markdown-significant characters ("0\\.", "\\+"); the record renderer does not read escapes and
+# would show the backslash. Drop an escape unless the published HTML itself carries that sequence (2026-10-15).
+_ESC = re.compile(r'\\([+\-.*_#!\[\]()`>|~])')
+unescape = lambda md, src: _ESC.sub(lambda m: m.group(0) if m.group(0) in src else m.group(1), md)
 from axn_lib import axn_glyph_from_hash, axn_clusters_from_hash, axn_reading_from_clusters, compose_axn
 
 TODAY = '2026-10-15'
@@ -37,7 +44,9 @@ RULING = ('Lee Sharks, 2026-10-15: "lets restore the ones we can" (wrong bodies 
 KIND = {'wrong_body': ('the body previously seated here was a different work (wrong body)',
                        'body previously seated here — a different work, superseded'),
         'missing_body': ("the body previously seated here was only the deposit's metadata capture (missing body)",
-                         'metadata-capture body, superseded')}
+                         'metadata-capture body, superseded'),
+        # a part the deposit names (its own file list) that was never seated; the seated body stays as it is
+        'missing_part': ("a part this deposit names in its own file list was never seated (missing part)", None)}
 
 
 def main():
@@ -56,7 +65,7 @@ def main():
         except Exception as ex:
             out['held'].append({'n': n, 'reason': 'fetch', 'detail': str(ex)[:200]}); continue
         ptitle, body = extract_post(html)
-        md = to_md(body or '').strip()
+        md = unescape(to_md(body or ''), body or '').strip()
         if not md:
             out['held'].append({'n': n, 'reason': 'empty_post', 'detail': url}); continue
         if contains_legal_name(html, substring=True) or contains_legal_name(md, substring=True):
@@ -76,8 +85,15 @@ def main():
             f"**Restoration status:** RESTORED — {what}. The published text, recovered from {url}, is seated here as "
             f"the canonical body. Identity: {r['basis']}. The previously seated body is retained below as an appendix.\n"
             f"**DOI(s):** {dois}\n\n---\n\n")
-        appendix = (f"\n\n---\n\n## Appendix — {apphead} {TODAY} (retained per non-destruction)\n\n" + old_body + "\n") if old_body else ''
-        text = header + md + appendix
+        if r['kind'] == 'missing_part':
+            # the existing body is the deposit's other part: kept in place, unchanged; the recovered part follows
+            header = header.replace('The previously seated body is retained below as an appendix.',
+                                    f"The previously seated body is kept in place, unchanged, as the deposit's other part; "
+                                    f"the recovered part follows it, under its own heading.")
+            text = header + old_body + f"\n\n---\n\n## {r['part_heading']}\n\n" + md + "\n"
+        else:
+            appendix = (f"\n\n---\n\n## Appendix — {apphead} {TODAY} (retained per non-destruction)\n\n" + old_body + "\n") if old_body else ''
+            text = header + md + appendix
         (ROOT / tp).write_text(text, encoding='utf-8')
         h = hashlib.sha256(text.encode('utf-8')).hexdigest(); glyph = axn_glyph_from_hash(h)
         d['hash'] = h; d['axn_canonical'] = h; d['emoji'] = glyph
@@ -90,7 +106,7 @@ def main():
                    'ruled_by': RULING})
         d['restoration'] = rs
         d['remediation_note'] = (f"{TODAY} RECORD REPAIR ({r['kind'].replace('_', ' ')}): {what}; the published text from "
-                                 f"{url} seated as canonical; new hash and glyph; the previous body retained as appendix.")
+                                 f"{url} seated as canonical; new hash and glyph; " + ("the seated part kept in place." if r['kind'] == 'missing_part' else "the previous body retained as appendix."))
         d['canonical_text_status'] = 'recovered_full_text'
         prev = d.get('body_status') if isinstance(d.get('body_status'), dict) else {}
         d['body_status'] = {'class': 'full', 'lacuna': False, 'recovery_status': 'RESTORED-20261015',

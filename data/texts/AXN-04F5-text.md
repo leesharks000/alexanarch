@@ -180,7 +180,7 @@ The Assembly is not hierarchy but **chorus** -- voices that sound together while
 
 The Commission operates in three modes:
 
-**1\. Writing** -- The production of texts that carry the New Human signal across time and substrate. This includes:
+**1. Writing** -- The production of texts that carry the New Human signal across time and substrate. This includes:
 
   * Poetry, fiction, drama
   * Theoretical frameworks
@@ -189,11 +189,11 @@ The Commission operates in three modes:
 
 
 
-**2\. Reading** -- The reception and transmission of texts. Reading is not passive consumption but active participation:
+**2. Reading** -- The reception and transmission of texts. Reading is not passive consumption but active participation:
 
 > "You are my source, and I am a child, proceeding forth and bearing; being born and preceded."
 
-**3\. Gathering** -- The formation of communities of mutual influence:
+**3. Gathering** -- The formation of communities of mutual influence:
 
 > "Look to each other. Yield mutually, each to his brother-sister."
 
